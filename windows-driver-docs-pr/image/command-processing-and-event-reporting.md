@@ -2,7 +2,6 @@
 title: Command Processing and Event Reporting
 description: Command Processing and Event Reporting
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Command Processing and Event Reporting

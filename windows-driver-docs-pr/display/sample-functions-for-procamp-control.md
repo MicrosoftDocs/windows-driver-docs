@@ -6,7 +6,6 @@ keywords:
 - ranges WDK ProcAmp
 - properties WDK ProcAmp
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sample Functions for ProcAmp Control

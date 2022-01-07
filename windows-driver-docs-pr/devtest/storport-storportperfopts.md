@@ -9,7 +9,6 @@ api_name:
 - StorPortPerfOpts
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortPerfOpts rule (storport)

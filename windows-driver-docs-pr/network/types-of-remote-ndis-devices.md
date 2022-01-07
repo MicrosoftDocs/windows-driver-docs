@@ -4,7 +4,6 @@ description: Types of Remote NDIS Devices
 keywords:
 - Remote NDIS WDK networking , supported devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Types of Remote NDIS Devices

@@ -10,7 +10,6 @@ keywords:
 - client objects WDK Winsock Kernel
 - WskRegister
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering a Winsock Kernel Application

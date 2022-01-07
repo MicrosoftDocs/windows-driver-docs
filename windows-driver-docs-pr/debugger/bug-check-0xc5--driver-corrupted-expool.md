@@ -9,7 +9,6 @@ api_name:
 - DRIVER_CORRUPTED_EXPOOL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC5: DRIVER\_CORRUPTED\_EXPOOL

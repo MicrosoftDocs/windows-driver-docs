@@ -4,10 +4,11 @@ description: WDI_TLV_CIPHER_KEY_ID is a TLV that contains a cipher key ID for OI
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CIPHER_KEY_ID Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CIPHER\_KEY\_ID
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_CIPHER\_KEY\_ID is a TLV that contains a cipher key ID for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](./oid-wdi-set-add-cipher-keys.md) and [OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS](./oid-wdi-set-delete-cipher-keys.md).

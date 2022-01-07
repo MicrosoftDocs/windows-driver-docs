@@ -2,10 +2,9 @@
 title: Peronal hotspot communication channels
 description: Peronal hotspot communication channels
 ms.date: 07/05/2019
-ms.localizationpriority: medium
 ---
 
-# Peronal hotspot communication channels
+# Personal hotspot communication channels
 
 
 Because the mobile broadband interface is not directly attached to the computer, information from the operator must be exchanged by using the personal hotspot device, as shown in the following figure:

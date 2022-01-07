@@ -6,7 +6,6 @@ keywords:
 - redirector drivers WDK , Windows NT
 - kernel network redirectors WDK , Windows NT
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Network Redirector Design in Windows NT

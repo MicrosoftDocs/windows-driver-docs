@@ -3,7 +3,6 @@ title: Get RPC Cell Information
 description: Get RPC Cell Information
 keywords: ["RPC cell information"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Get RPC Cell Information

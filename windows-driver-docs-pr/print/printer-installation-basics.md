@@ -2,7 +2,6 @@
 title: Printer Installation Basics
 description: Printer Installation Basics
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Printer Installation Basics

@@ -5,7 +5,6 @@ keywords:
 - Winsock Kernel WDK networking , about Winsock Kernel
 - WSK WDK networking , about Winsock Kernel
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Winsock Kernel
@@ -15,7 +14,7 @@ Winsock Kernel (WSK) is a kernel-mode [Network Programming Interface (NPI)](netw
 
 Kernel-mode network modules targeted for Windows Vista and later versions of Microsoft Windows should use WSK instead of [TDI](/previous-versions/windows/hardware/network/ff565094(v=vs.85)) because WSK provides improved performance and easier programming. Filter drivers should implement the [Windows Filtering Platform](introduction-to-windows-filtering-platform-callout-drivers.md) on Windows Vista, and TDI clients should implement WSK.
 
-**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](introduction-to-windows-filtering-platform-callout-drivers.md) or [Winsock Kernel](/windows-hardware/drivers/ddi/_netvista/) instead.
+**Note**  TDI will not be supported in Microsoft Windows versions after Windows Vista. Use [Windows Filtering Platform](introduction-to-windows-filtering-platform-callout-drivers.md) or [Winsock Kernel](/windows-hardware/drivers/ddi/_netvista/#winsock-kernel-wsk) instead.
 
  
 

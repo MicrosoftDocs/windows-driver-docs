@@ -11,7 +11,6 @@ keywords:
 - INKLEVELS
 - translating 8-bit-per-pixel halftone indexes WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Translating 8-Bit-Per-Pixel Halftone Indexes to Ink Levels

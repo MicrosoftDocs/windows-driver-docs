@@ -3,7 +3,6 @@ title: Windows Device Experience List
 description: Windows Device Experience List
 ms.topic: article
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows Device Experience List

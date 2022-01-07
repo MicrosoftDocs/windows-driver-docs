@@ -5,7 +5,6 @@ keywords:
 - macroblocks WDK DirectX VA , deblocking filter commands
 - deblocking filter commands WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Deblocking Filter Commands

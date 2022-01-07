@@ -2,7 +2,6 @@
 title: Best Practices for Testing Download of Device Metadata Packages
 description: Best Practices for Testing the Download of Device Metadata Packages
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Best Practices for Testing the Download of Device Metadata Packages

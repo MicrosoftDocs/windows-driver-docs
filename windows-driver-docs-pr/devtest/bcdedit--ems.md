@@ -9,7 +9,6 @@ api_name:
 - BCDEdit /ems
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # BCDEdit /ems

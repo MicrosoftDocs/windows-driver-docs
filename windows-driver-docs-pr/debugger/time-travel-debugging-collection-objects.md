@@ -2,7 +2,6 @@
 title: TTD Collection Objects
 description: Learn about the range model objects associated with time travel debugging. See example usage and view additional available resources.
 ms.date: 09/25/2017
-ms.localizationpriority: medium
 ---
 
 # TTD Collection Objects

@@ -8,7 +8,6 @@ keywords:
 - removing party from multipoint calls
 - incoming drop party requests WDK CoNDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Incoming Request to Drop a Party from a Multipoint Call

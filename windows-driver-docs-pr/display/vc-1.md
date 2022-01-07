@@ -4,7 +4,6 @@ description: VC-1
 keywords:
 - VC-1 video compression WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # VC-1

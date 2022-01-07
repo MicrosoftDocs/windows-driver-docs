@@ -9,7 +9,6 @@ keywords:
 - Device setup WDK device installations , registry
 - driver registry RunOnce key WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # RunOnce Registry Key

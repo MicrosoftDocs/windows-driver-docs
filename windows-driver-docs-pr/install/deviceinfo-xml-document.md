@@ -2,7 +2,6 @@
 title: DeviceInfo XML Document
 description: DeviceInfo XML Document
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DeviceInfo XML Document

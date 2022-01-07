@@ -2,7 +2,6 @@
 title: Storport Event Log Extensions
 description: Storport Event Log Extensions
 ms.date: 06/13/2019
-ms.localizationpriority: medium
 ---
 
 # Storport Event Log Extensions

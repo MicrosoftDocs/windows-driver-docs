@@ -2,7 +2,6 @@
 title: Data-driven Testing in Scripting Languages
 description: Data-driven Testing in Scripting Languages
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # <span id="taef.data-driven_testing_in_scripting_languages"></span>Data-driven Testing in Scripting Languages

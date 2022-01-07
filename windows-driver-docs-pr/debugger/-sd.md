@@ -9,7 +9,6 @@ api_name:
 - sd
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !sd

@@ -8,7 +8,6 @@ keywords:
 - properties WDK networking
 - displaying network configuration properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Displaying and Changing Properties

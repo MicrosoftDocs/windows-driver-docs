@@ -5,7 +5,6 @@ keywords:
 - I/O work items WDK NDIS
 - I/O WDK kernel , NDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS I/O Work Items

@@ -9,7 +9,6 @@ keywords:
 - render DMA engines WDK audio
 - capture DMA engines WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Allocating DMA Engines

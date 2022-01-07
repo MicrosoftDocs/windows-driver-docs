@@ -4,7 +4,6 @@ description: The NDIS_STATUS_PM_CAPABILITIES_CHANGE status indicates a change in
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_PM_CAPABILITIES_CHANGE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_PM\_CAPABILITIES\_CHANGE

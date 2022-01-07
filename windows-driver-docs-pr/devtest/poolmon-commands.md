@@ -2,7 +2,6 @@
 title: PoolMon Commands
 description: PoolMon Commands
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PoolMon Commands

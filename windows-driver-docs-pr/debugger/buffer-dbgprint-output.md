@@ -3,7 +3,6 @@ title: Buffer DbgPrint Output
 description: Buffer DbgPrint Output
 keywords: ["Buffer DbgPrint Output (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Buffer DbgPrint Output

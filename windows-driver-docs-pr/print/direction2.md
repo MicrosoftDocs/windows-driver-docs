@@ -2,7 +2,6 @@
 title: Direction property
 description: Determines the order in which multiple logical pages are placed on the media.
 ms.date: 09/07/2021
-ms.localizationpriority: medium
 ---
 
 # Direction property

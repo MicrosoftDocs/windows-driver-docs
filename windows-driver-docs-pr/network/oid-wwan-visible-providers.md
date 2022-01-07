@@ -4,7 +4,6 @@ description: OID_WWAN_VISIBLE_PROVIDERS returns a list of network providers curr
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_VISIBLE_PROVIDERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_VISIBLE\_PROVIDERS

@@ -9,7 +9,6 @@ api_name:
 - imgreloc
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !imgreloc

@@ -2,7 +2,6 @@
 title: LE hang detection
 description: This section describes LE hang detection in WDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # LE hang detection

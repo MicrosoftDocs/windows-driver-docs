@@ -7,7 +7,6 @@ keywords:
 - rendering results visible WDK DirectX 8.0
 - visible results WDK DirectX 8.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # New DDSCAPS2 Flags

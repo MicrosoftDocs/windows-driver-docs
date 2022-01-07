@@ -2,7 +2,6 @@
 title: Friendly Names for Audio Endpoint Devices
 description: Friendly Names for Audio Endpoint Devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Friendly Names for Audio Endpoint Devices

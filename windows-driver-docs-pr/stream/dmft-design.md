@@ -2,7 +2,6 @@
 title: Device MFT design guide
 description: This topic outlines the design of a device-wide extension running in user mode that can be used to perform post-processing common to all streams.
 ms.date: 08/10/2021
-ms.localizationpriority: medium
 ---
 
 # Device MFT design guide
@@ -146,6 +145,10 @@ Since this is an *m x n* MFT, there can be repercussions on input streaming pin'
 
 DTM handles [METransformInputStreamStateChanged](./metransforminputstreamstatechanged.md) notifications from Device MFT to change the mediatype and state on Device MFT input and Devproxy output under these conditions.
 
+### Preferred Output Mediatypes of Device MFT 
+
+It is highly recommended that the Device MFT produce using NV12 format. YUY2 is the next best alternative. MJPEG and RGB media types are not recommended.
+
 ### Flush Device MFT
 
 Two types of flushing are needed while managing Device MFT:
@@ -166,7 +169,7 @@ All the events that were posted prior to flush are dropped by Device MFT Manager
 
 ### Drain of Device MFT
 
-Device MFT will not receive s separate drain message since there is no need for drain in a live capture source.
+Device MFT will not receive a separate drain message since there is no need for drain in a live capture source.
 
 ### Photo trigger
 

@@ -2,7 +2,6 @@
 title: V4 Printer Driver Rendering
 description: For rendering print jobs into the page description language for a print device, the v4 print driver model uses the XPSDrv Render Module.
 ms.date: 08/27/2021
-ms.localizationpriority: medium
 ---
 
 # V4 Printer Driver Rendering

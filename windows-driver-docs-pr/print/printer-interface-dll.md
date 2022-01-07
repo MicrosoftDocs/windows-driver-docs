@@ -8,7 +8,6 @@ keywords:
 - user interface WDK printer interface DLL
 - configuration options user interface WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Printer Interface DLL

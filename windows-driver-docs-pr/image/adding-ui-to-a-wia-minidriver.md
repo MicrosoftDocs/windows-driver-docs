@@ -2,7 +2,6 @@
 title: Adding UI to a WIA Minidriver
 description: Adding UI to a WIA Minidriver
 ms.date: 07/18/2018
-ms.localizationpriority: medium
 ---
 
 # Adding UI to a WIA Minidriver

@@ -3,7 +3,6 @@ title: Setting Device Object Properties in the Registry
 description: Setting Device Object Properties in the Registry
 keywords: ["device objects WDK kernel , registry", "registry WDK device objects"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Device Object Properties in the Registry

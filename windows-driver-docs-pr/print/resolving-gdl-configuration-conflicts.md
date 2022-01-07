@@ -11,7 +11,6 @@ keywords:
 - ConflictPriority directive WDK GDL
 - FeatureType directive WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Resolving GDL Configuration Conflicts

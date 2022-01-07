@@ -3,7 +3,6 @@ title: Overview of NDIS Debugging
 description: Overview of NDIS Debugging
 keywords: ["NDIS debugging, overview"]
 ms.date: 05/14/2020
-ms.localizationpriority: medium
 ---
 
 # Overview of NDIS Debugging

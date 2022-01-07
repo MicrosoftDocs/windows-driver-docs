@@ -4,7 +4,6 @@ description: Network Driver Programming Considerations
 keywords:
 - network drivers WDK , programming considerations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Network Driver Programming Considerations

@@ -9,7 +9,6 @@ api_name:
 - WIN32K_HANDLE_MANAGER
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x137: WIN32K\_HANDLE\_MANAGER

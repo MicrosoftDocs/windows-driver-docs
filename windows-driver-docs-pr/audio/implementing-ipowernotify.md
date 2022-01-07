@@ -6,7 +6,6 @@ keywords:
 - notifications WDK audio
 - power-state change notifications WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Implementing IPowerNotify

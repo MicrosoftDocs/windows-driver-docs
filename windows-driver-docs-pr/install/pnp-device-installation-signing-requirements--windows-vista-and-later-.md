@@ -9,7 +9,6 @@ keywords:
 - PnP WDK driver signing
 - Plug and Play WDK driver signing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PnP Device Installation Signing Requirements
@@ -22,7 +21,7 @@ The [Windows Hardware Lab Kit (Windows HLK)](/windows-hardware/test/hlk/windows-
 
 A valid WHQL release signature verifies that the driver complies with the requirements of the HCK, verifies the identity of the publisher, and verifies that the driver has not been altered.
 
-To be considered signed by PnP device installation, the [catalog file](catalog-files.md) of the [driver package](driver-packages.md) must be signed by WHQL or signed by a third-party [release certificate](release-certificates.md) (a [Software Publisher Certificate (SPC)](software-publisher-certificate.md) or a commercial release certificate). A WHQL release signature should be used if one can be obtained. A third-party release signature verifies the identity of the publisher and that the driver has not been altered. However, unlike a WHQL release signature, a third-party release signature does not verify driver functionality.
+To be considered signed by PnP device installation, the [catalog file](catalog-files.md) of the [driver package](driver-packages.md) must be signed by WHQL or signed by a third-party [release certificate](release-certificates.md) (a [Software Publisher Certificate (SPC)](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates) or a commercial release certificate). A WHQL release signature should be used if one can be obtained. A third-party release signature verifies the identity of the publisher and that the driver has not been altered. However, unlike a WHQL release signature, a third-party release signature does not verify driver functionality.
 
 Also be aware that for 64-bit versions of Windows Vista and later versions of Windows, the kernel-mode code signing policy further requires that a kernel-mode driver be signed by WHQL or by an SPC.
 

@@ -7,7 +7,6 @@ keywords:
 - registering audio subdevices WDK
 - deregistering audio subdevices WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Dynamic Subdevice Registration and Unregistration

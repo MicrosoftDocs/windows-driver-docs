@@ -5,7 +5,6 @@ keywords:
 - GPD files WDK Unidrv , multiple
 - multiple GPD files WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Multiple GPD Files in a Minidriver

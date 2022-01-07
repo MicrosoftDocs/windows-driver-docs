@@ -4,7 +4,6 @@ description: NDIS Driver Stack
 keywords:
 - driver stacks WDK networking , NDIS basic configuration
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS Driver Stack

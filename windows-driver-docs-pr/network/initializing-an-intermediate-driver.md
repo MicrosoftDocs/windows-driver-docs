@@ -6,7 +6,6 @@ keywords:
 - intermediate drivers WDK networking , initializing
 - initializing intermediate drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing an Intermediate Driver

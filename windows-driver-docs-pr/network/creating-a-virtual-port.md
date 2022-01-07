@@ -2,7 +2,6 @@
 title: Creating a Virtual Port
 description: Creating a Virtual Port
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Virtual Port

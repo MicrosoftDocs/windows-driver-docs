@@ -2,7 +2,6 @@
 title: Querying NDIS QoS Parameters
 description: Querying NDIS QoS Parameters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Querying NDIS QoS Parameters

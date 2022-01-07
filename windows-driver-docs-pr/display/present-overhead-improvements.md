@@ -2,7 +2,6 @@
 title: Present overhead improvements
 description: Improvements to internal swap buffers to reduce GPU processing loads
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Present overhead improvements

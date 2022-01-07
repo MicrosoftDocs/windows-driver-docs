@@ -5,7 +5,6 @@ keywords:
 - surface negotiation WDK GDI , surface coordinates
 - surface coordinates WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Surface Coordinates

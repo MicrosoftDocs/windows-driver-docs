@@ -3,7 +3,6 @@ title: Writing an Unload Routine
 description: Writing an Unload Routine
 keywords: ["standard driver routines WDK kernel , Unload routines", "driver routines WDK kernel , Unload routines", "routines WDK kernel , Unload routines", "Unload routines WDK kernel", "Unload routines WDK kernel , about Unload routines", "replacing drivers", "driver replacements WDK kernel", "unloading drivers", "reloading drivers WDK kernel", "driver unloading WDK kernel", "driver reloading WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Writing an Unload Routine

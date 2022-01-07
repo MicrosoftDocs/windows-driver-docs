@@ -2,7 +2,6 @@
 title: WIA Security Best Practices
 description: WIA Security Best Practices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Security Best Practices

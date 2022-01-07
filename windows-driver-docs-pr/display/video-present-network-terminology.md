@@ -5,7 +5,6 @@ keywords:
 - video present networks WDK display , terminology
 - VidPN WDK display , terminology
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Video Present Network Terminology

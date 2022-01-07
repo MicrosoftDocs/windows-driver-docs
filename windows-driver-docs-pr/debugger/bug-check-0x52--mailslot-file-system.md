@@ -9,7 +9,6 @@ api_name:
 - MAILSLOT_FILE_SYSTEM
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x52: MAILSLOT\_FILE\_SYSTEM

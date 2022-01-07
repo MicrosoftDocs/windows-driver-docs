@@ -4,7 +4,6 @@ description: Drivers that maintain process-specific context information must han
 ms.date: 08/12/2017
 keywords:
  - IRP_MJ_CLEANUP Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_CLEANUP

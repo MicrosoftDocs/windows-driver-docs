@@ -4,7 +4,6 @@ description: Retrieving Information About a Protected Output
 keywords:
 - OPM WDK display , retrieving protected output information
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Retrieving Information About a Protected Output

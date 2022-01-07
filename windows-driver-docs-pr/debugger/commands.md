@@ -3,7 +3,6 @@ title: Commands
 description: Commands
 keywords: ["commands, reference"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Commands

@@ -15,7 +15,6 @@ keywords:
 - attributes WDK WDTF
 - Boolean logic WDK WDTF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Simple Data Evaluation Language Overview

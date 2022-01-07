@@ -3,7 +3,6 @@ title: Using Performance Monitor to Find a User-Mode Memory Leak
 description: Using Performance Monitor to Find a User-Mode Memory Leak
 keywords: ["memory leak, user-mode, performance monitor"]
 ms.date: 05/23/2017
-ms.localizationpriority: high 
 ---
 
 # Using Performance Monitor to Find a User-Mode Memory Leak

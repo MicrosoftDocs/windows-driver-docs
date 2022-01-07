@@ -8,7 +8,6 @@ keywords:
 - initializing video miniport drivers
 - VIDEO_HW_INITIALIZATION_DATA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Claiming Legacy Resources

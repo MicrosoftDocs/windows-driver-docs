@@ -2,7 +2,6 @@
 title: PwrTest Syntax
 description: You run PwrTest from a Command Prompt window. You can select and configure PwrTest Scenarios using command options.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

@@ -3,7 +3,6 @@ title: Choosing Which Public Symbols to Remove
 description: Choosing Which Public Symbols to Remove
 keywords: ["PDBCopy, removing public symbols", "symbols, AgeStore"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Choosing Which Public Symbols to Remove

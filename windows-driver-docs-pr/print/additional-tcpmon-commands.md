@@ -7,7 +7,6 @@ keywords:
 - Xcv commands WDK print
 - TCPMON Xcv commands WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Additional TCPMON Commands

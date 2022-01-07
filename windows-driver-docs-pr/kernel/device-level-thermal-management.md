@@ -1,7 +1,6 @@
 ---
 title: Device-Level Thermal Management
 description: Starting with Windows 8, Windows supports device-level thermal management for kernel-mode device drivers.
-ms.localizationpriority: medium
 ms.date: 07/21/2021
 ---
 

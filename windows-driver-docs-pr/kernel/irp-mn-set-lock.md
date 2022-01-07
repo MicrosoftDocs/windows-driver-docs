@@ -4,7 +4,6 @@ description: Bus drivers must handle this IRP for their child devices (child PDO
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_SET_LOCK Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_SET\_LOCK

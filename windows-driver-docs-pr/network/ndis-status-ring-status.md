@@ -4,7 +4,6 @@ description: The NDIS_STATUS_RING_STATUS status indicates the ring status of a l
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_RING_STATUS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_RING\_STATUS

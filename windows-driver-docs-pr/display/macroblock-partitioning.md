@@ -9,7 +9,6 @@ keywords:
 - prediction blocks WDK DirectX VA
 - macroblocks WDK DirectX VA , partitioning
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Macroblock Partitioning

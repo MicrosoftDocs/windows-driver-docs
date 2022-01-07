@@ -5,7 +5,6 @@ keywords:
 - helper objects WDK audio , registry key objects
 - registry key objects WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registry Key Objects

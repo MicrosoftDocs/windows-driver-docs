@@ -5,7 +5,6 @@ keywords:
 - CoNDIS WAN drivers WDK networking , implementing
 - WAN miniport drivers WDK networking , implementing drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Implementing CoNDIS WAN Miniport Drivers

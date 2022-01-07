@@ -2,7 +2,6 @@
 title: Initializing a VF Miniport Driver
 description: Initializing a VF Miniport Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing a VF Miniport Driver

@@ -2,7 +2,6 @@
 title: Locking and Unlocking Best Practices
 description: Locking and Unlocking Best Practices
 ms.date: 07/18/2018
-ms.localizationpriority: medium
 ---
 
 # Locking and Unlocking Best Practices

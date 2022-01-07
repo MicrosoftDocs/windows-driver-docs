@@ -5,7 +5,6 @@ keywords:
 - add-registry-sections WDK networking , ISDN adapters
 - ISDN adapters WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying ISDN Keys and Values for an ISDN Adapter

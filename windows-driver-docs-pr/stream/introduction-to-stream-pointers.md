@@ -9,7 +9,6 @@ keywords:
 - reference counts WDK stream pointers
 - counting references WDK stream pointers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Stream Pointers

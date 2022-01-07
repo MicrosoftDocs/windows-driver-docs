@@ -9,7 +9,6 @@ api_name:
 - FailD0EntryIoTargetState
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # FailD0EntryIoTargetState rule (kmdf)

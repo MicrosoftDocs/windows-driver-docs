@@ -14,7 +14,6 @@ keywords:
 - video decoding WDK DirectX VA , off-host VLD bitstream processing
 - decoding video WDK DirectX VA , off-host VLD bitstream processing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Off-Host VLD Bitstream Decoding Operation

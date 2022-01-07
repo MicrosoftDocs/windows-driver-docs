@@ -7,7 +7,6 @@ keywords:
 - FILE_DELETE_ON_CLOSE
 - delete on close WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Delete on Close

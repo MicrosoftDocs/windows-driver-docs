@@ -9,7 +9,6 @@ api_name:
 - KERNEL_STACK_LOCKED_AT_EXIT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x94: KERNEL\_STACK\_LOCKED\_AT\_EXIT

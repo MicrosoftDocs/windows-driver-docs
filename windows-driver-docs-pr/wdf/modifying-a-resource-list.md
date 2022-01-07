@@ -6,7 +6,6 @@ keywords:
 - hardware resources WDK KMDF , resource lists
 - resource lists WDK KMDF , modifying
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Modifying a Resource List

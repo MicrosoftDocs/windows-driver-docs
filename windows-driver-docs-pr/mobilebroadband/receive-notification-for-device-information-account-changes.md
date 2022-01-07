@@ -2,7 +2,6 @@
 title: Receive notification for device information account changes
 description: Receive notification for device information account changes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Receive notification for device information account changes

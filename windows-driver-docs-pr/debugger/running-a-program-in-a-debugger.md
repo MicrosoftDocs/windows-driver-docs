@@ -3,7 +3,6 @@ title: Running a Program in a Debugger
 description: Running a Program in a Debugger
 keywords: ["GFlags, running a program in a debugger"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Running a Program in a Debugger

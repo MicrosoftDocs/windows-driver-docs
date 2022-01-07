@@ -2,7 +2,6 @@
 title: MB Device Readiness
 description: MB Device Readiness
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # MB Device Readiness

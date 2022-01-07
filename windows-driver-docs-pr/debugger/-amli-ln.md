@@ -9,7 +9,6 @@ api_name:
 - amli ln
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !amli ln

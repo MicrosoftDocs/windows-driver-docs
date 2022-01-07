@@ -6,7 +6,6 @@ keywords:
 - PCL XL vector graphics WDK Unidrv , separator page escape codes
 - escape codes WDK PCL XL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PCL Separator Page Escape Codes

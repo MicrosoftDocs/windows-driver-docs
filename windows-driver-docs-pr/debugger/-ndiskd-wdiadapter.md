@@ -9,7 +9,6 @@ api_name:
 - ndiskd.wdiadapter
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.wdiadapter

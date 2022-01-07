@@ -5,7 +5,6 @@ keywords:
 - nonstandard display modes WDK DirectX 9.0 , switching between standard and nonstandard modes
 - switching between standard and nonstandard modes WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Switching Between Standard and Nonstandard Modes

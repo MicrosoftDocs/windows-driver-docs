@@ -4,7 +4,6 @@ description: Bus drivers typically handle this request for their child devices (
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_EJECT Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_EJECT

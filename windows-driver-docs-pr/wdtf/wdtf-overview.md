@@ -9,7 +9,6 @@ keywords:
 - WDTF WDK , about Windows Device Testing Framework
 - test scripts WDK WDTF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDTF Architecture and Overview

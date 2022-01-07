@@ -6,7 +6,6 @@ keywords:
 - data types WDK GDL , problems with template data types
 - data types WDK GDL , compound
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Compound Template Data Type Issues

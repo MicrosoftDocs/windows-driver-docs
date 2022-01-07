@@ -4,7 +4,6 @@ description: The miniport driver that supports NDIS Quality of Service (QoS) iss
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_QOS_OPERATIONAL_PARAMETERS_CHANGE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHANGE

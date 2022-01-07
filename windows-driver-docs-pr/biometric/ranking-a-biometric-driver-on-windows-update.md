@@ -5,7 +5,6 @@ keywords:
 - biometric drivers WDK , ranking on Windows Update
 - ranking biometric drivers WDK biometric
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Ranking a Biometric Driver on Windows Update

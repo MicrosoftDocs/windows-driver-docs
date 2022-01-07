@@ -9,7 +9,6 @@ keywords:
 - fixed-cell spacing WDK GDI
 - size WDK GDI halftoning
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Halftoning

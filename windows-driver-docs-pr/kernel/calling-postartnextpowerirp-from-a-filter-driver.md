@@ -3,7 +3,6 @@ title: Calling PoStartNextPowerIrp from a Filter Driver
 description: Calling PoStartNextPowerIrp from a Filter Driver
 keywords: ["power IRPs WDK kernel , PoStartNextPowerIrp", "PoStartNextPowerIrp", "filter drivers WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Calling PoStartNextPowerIrp from a Filter Driver

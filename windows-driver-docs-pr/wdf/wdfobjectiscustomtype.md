@@ -4,7 +4,6 @@ description: The WdfObjectIsCustomType macro determines whether a framework obje
 keywords:
  - WdfObjectIsCustomType macro
 ms.date: 08/23/2017
-ms.localizationpriority: medium
 ---
 
 # WdfObjectIsCustomType macro

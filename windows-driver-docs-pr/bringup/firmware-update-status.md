@@ -2,7 +2,6 @@
 title: Firmware update status
 description: It is expected that all firmware updates will be applied, and the results of all updates reflected in the ESRT on the subsequent invocation of the Windows OS loader.
 ms.date: 07/21/2020
-ms.localizationpriority: medium
 ---
 
 # Firmware update status

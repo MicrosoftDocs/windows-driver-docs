@@ -5,7 +5,6 @@ keywords:
 - parallel devices WDK , installing
 - parallel ports WDK , installing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Parallel Ports and Devices

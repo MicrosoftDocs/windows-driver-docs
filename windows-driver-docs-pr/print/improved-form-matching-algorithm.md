@@ -5,7 +5,6 @@ keywords:
 - matching algorithm WDK forms
 - form matching algorithm WDK printer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Improved Form Matching Algorithm

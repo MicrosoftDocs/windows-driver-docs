@@ -12,7 +12,6 @@ keywords:
 - color space WDK DirectDraw
 - converting color space
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectDraw and Color Space Conversion

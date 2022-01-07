@@ -14,7 +14,6 @@ keywords:
 - CoNDIS WDK networking , MCM drivers
 - MCM drivers WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Connection-Oriented Environment

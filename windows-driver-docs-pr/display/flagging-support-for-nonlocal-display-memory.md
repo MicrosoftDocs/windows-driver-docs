@@ -10,7 +10,6 @@ keywords:
 - memory WDK DirectDraw AGP , compatibility
 - compatibility WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Flagging Support for Nonlocal Display Memory

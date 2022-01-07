@@ -10,7 +10,6 @@ keywords:
 - decoding video WDK DirectX VA , motion compensation prediction
 - video decoding WDK DirectX VA , motion compensation prediction
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Motion-Compensated Prediction

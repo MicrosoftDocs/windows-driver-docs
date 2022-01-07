@@ -5,7 +5,6 @@ keywords:
 - enumerating installed devices WDK
 - installed devices WDK , enumerating
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enumerating Installed Devices

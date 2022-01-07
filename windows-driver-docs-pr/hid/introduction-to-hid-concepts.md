@@ -10,7 +10,6 @@ keywords:
 - accelerometers
 - gyroscope
 ms.date: 02/28/2020
-ms.localizationpriority: medium
 ---
 
 # HID Application Programming Interface (API)

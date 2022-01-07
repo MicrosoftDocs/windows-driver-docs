@@ -2,7 +2,6 @@
 title: WIA Compatibility Layer Data Transfer Design
 description: WIA Compatibility Layer Data Transfer Design
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Compatibility Layer Data Transfer Design

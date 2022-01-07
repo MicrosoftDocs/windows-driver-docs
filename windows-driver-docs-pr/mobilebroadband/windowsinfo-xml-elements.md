@@ -2,7 +2,6 @@
 title: WindowsInfo XML elements list
 description: WindowsInfo XML elements list
 ms.date: 07/05/2019
-ms.localizationpriority: medium
 ---
 
 # WindowsInfo XML elements list

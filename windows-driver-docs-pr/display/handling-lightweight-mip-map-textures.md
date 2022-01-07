@@ -5,7 +5,6 @@ keywords:
 - MIP map textures WDK DirectX 9.0 , lightweight
 - lightweight MIP-map textures WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Lightweight MIP Map Textures

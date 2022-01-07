@@ -12,7 +12,6 @@ keywords:
 - printer configuration WDK , autoconfiguration
 - queues WDK printer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Printer Autoconfiguration

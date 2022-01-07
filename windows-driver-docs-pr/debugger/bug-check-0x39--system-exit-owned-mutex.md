@@ -9,7 +9,6 @@ api_name:
 - SYSTEM_EXIT_OWNED_MUTEX
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x39: SYSTEM\_EXIT\_OWNED\_MUTEX

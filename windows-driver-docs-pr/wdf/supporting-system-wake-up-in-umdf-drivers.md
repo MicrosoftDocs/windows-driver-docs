@@ -5,7 +5,6 @@ keywords:
 - power management WDK UMDF , system wake-up
 - system wake-up WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting System Wake-Up in UMDF Drivers

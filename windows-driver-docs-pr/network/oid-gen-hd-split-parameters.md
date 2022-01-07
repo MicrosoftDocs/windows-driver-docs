@@ -4,7 +4,6 @@ description: As a set, NDIS and overlying drivers or user-mode applications use 
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_HD_SPLIT_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_HD\_SPLIT\_PARAMETERS

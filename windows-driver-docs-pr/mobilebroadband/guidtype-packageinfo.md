@@ -2,7 +2,6 @@
 title: GUIDType (PackageInfo)
 description: GUIDType (PackageInfo)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GUIDType (PackageInfo)

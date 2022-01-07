@@ -3,7 +3,6 @@ title: DispatchShutdown Routines
 description: DispatchShutdown Routines
 keywords: ["IRP_MJ_SHUTDOWN I/O function code", "dispatch routines WDK kernel , DispatchShutdown routine", "DispatchShutdown routine", "shutdown dispatch routines WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # DispatchShutdown Routines

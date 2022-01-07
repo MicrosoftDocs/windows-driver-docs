@@ -2,7 +2,6 @@
 title: WIA Item Property and Location Changes
 description: WIA Item Property and Location Changes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Item Property and Location Changes

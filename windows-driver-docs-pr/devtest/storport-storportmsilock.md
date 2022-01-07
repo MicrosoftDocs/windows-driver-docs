@@ -9,7 +9,6 @@ api_name:
 - StorPortMSILock
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortMSILock rule (storport)

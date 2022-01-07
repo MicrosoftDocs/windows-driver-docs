@@ -3,7 +3,6 @@ title: Obtaining Device Configuration Information at IRQL DISPATCH_LEVEL
 description: Obtaining Device Configuration Information at IRQL DISPATCH_LEVEL
 keywords: ["I/O WDK kernel , device configuration space", "device configuration space WDK I/O", "configuration space WDK I/O", "space WDK I/O", "DISPATCH_LEVEL WDK", "BUS_INTERFACE_STANDARD", "driver stacks WDK configuration info"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Obtaining Device Configuration Information at IRQL = DISPATCH\_LEVEL

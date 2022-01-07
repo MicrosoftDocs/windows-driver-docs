@@ -3,7 +3,6 @@ title: Breaking Into the Debugger
 description: Breaking Into the Debugger
 keywords: ["breaking into the debugger", "DebugBreak function", "DbgBreakPoint function", "KdBreakPoint function", "DbgBreakPointWithStatus function", "KdBreakPointWithStatus function", "ASSERT macro", "ASSERTMSG macro"]
 ms.date: 07/20/2020
-ms.localizationpriority: medium
 ---
 
 # Breaking Into the Debugger

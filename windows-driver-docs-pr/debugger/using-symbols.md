@@ -3,7 +3,6 @@ title: Using Symbols
 description: Using Symbols
 keywords: ["Debugger Engine, symbols", "symbols"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using Symbols

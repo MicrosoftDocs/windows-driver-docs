@@ -2,7 +2,6 @@
 title: Enabling Hardware Access
 description: Enabling Hardware Access
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling Hardware Access

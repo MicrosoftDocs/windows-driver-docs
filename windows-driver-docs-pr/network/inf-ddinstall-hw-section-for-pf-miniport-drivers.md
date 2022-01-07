@@ -2,7 +2,6 @@
 title: INF DDInstall.HW Section for PF Miniport Drivers
 description: INF DDInstall.HW Section for PF Miniport Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # INF DDInstall.HW Section for PF Miniport Drivers

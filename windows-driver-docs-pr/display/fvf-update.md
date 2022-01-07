@@ -4,7 +4,6 @@ description: FVF Update
 keywords:
 - FVF WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # FVF Update

@@ -8,7 +8,6 @@ keywords:
 - standby tests WDK printer
 - hibernate tests WDK printer
 ms.date: 06/11/2020
-ms.localizationpriority: medium
 ---
 
 # Power Management

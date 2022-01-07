@@ -2,7 +2,6 @@
 title: Device Installation Application Not Included in Driver Package
 description: Device Installation Application Not Included in the Driver Package
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Installation Application Not Included in the Driver Package

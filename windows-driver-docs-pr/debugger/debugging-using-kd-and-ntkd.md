@@ -2,7 +2,6 @@
 title: Debugging Using KD and NTKD
 description: This section describes how to perform basic debugging tasks using the KD and NTKD debuggers.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging Using KD and NTKD

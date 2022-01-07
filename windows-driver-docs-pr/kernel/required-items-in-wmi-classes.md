@@ -3,7 +3,6 @@ title: Required Items in WMI Classes
 description: Required Items in WMI Classes
 keywords: ["classes WDK WMI", "WMI WDK kernel , classes"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Required Items in WMI Classes

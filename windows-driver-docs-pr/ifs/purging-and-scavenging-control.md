@@ -9,7 +9,6 @@ keywords:
 - FOBX structure
 - cleanup FOBX structures WDK network redirectors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Purging and Scavenging Control

@@ -3,7 +3,6 @@ title: Percent of Camera video and stream failures
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of instances where a camera device failed to use the video and streaming feature
 ms.topic: article
 ms.date: 05/20/2019
-ms.localizationpriority: medium
 ---
 
 # Percent of Camera video and stream failures

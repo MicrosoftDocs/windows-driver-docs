@@ -7,7 +7,6 @@ keywords:
 - identifiers WDK device , generic
 - generic device identifiers WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Generic Identifiers

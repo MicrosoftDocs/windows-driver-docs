@@ -4,7 +4,6 @@ description: As a set, the OID_GEN_PROTOCOL_OPTIONS OID specifies a bitmask that
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_PROTOCOL_OPTIONS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_PROTOCOL\_OPTIONS

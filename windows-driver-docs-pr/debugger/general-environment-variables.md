@@ -3,7 +3,6 @@ title: General Environment Variables
 description: General Environment Variables
 keywords: ["environment variables, general", "_NO_DEBUG_HEAP environment variable", "_NT_ALT_SYMBOL_PATH environment variable", "_NT_DEBUG_HISTORY_SIZE environment variable", "_NT_DEBUG_LOG_FILE_APPEND environment variable", "_NT_DEBUG_LOG_FILE_OPEN environment variable", "_NT_DEBUGGER_EXTENSION_PATH environment variable", "_NT_EXECUTABLE_IMAGE_PATH environment variable", "_NT_SOURCE_PATH environment variable"]
 ms.date: 05/05/2021
-ms.localizationpriority: medium
 ---
 
 # General Environment Variables

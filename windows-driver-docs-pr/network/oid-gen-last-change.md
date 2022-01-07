@@ -4,7 +4,6 @@ description: As a query, use the OID_GEN_LAST_CHANGE OID to determine the time o
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_LAST_CHANGE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_LAST\_CHANGE

@@ -9,7 +9,6 @@ api_name:
 - rcdrkd.rcdrsettraceprefix
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rcdrkd.rcdrsettraceprefix

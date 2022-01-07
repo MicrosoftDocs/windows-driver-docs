@@ -9,7 +9,6 @@ api_name:
 - KsIrqlPinCallbacks
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # KsIrqlPinCallbacks rule ()

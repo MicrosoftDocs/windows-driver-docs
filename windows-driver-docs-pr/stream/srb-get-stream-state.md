@@ -2,7 +2,6 @@
 title: SRB\_GET\_STREAM\_STATE
 description: SRB\_GET\_STREAM\_STATE
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # SRB\_GET\_STREAM\_STATE

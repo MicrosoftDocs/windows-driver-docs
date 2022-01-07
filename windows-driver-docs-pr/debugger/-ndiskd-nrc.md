@@ -2,14 +2,13 @@
 title: ndiskd.nrc
 description: The ndiskd.nrc extension displays information about a NET_PACKET_FRAGMENT structure.
 keywords: ["ndiskd.nrc Windows Debugging"]
-ms.date: 06/17/2020
+ms.date: 10/11/2021
 topic_type:
 - apiref
 api_name:
 - ndiskd.nrc
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.nrc
@@ -55,50 +54,25 @@ To obtain a handle for a NET\_PACKET, follow these steps:
 3. Click the "More Information" link to the right of the NetAdapter's NETADAPTER object to run the [**!ndiskd.cxadapter**](-ndiskd-cxadapter.md) extension.
 4. Enter the **!ndiskd.cxadapter** command with the *-datapath* parameter to see that NETADAPTER's datapath queues.
 5. Click on the handle for one of the datapath queues.
-6. Click on the handle for that datapath queue's ring buffer. TBD - Does this work with nrc?
-7. Click on the "List all elements" link at the bottom of the ring buffer details to see the elements it contains. TBD TBD TBD
-8. Click on one of the NET\_RING\_COLLECTION objects TBD.
+6. Click on the handle for that datapath queue's ring buffer. 
+7. Click on the "List all elements" link at the bottom of the ring buffer details to see the elements it contains.
+8. Click on one of the NET RING COLLECTION objects.
 
 For details on Steps 1-4 of this procedure, see the examples on the **!ndiskd.cxadapter** topic. For details on Step 5 of this procedure, see the examples on the [**!ndiskd.netqueue**](-ndiskd-netqueue.md) topic. For details on Steps 6-7 of this procedure, see the examples on the [**!ndiskd.netrb**](-ndiskd-netrb.md) topic.
 
-In the following example, look for the handle for the TBD of this NET\_RING\_COLLECTION, ffffffTBDffffffffff.
+In the following example, the handle for the NET\_RING\_COLLECTION, ffff8b82fbcf94b0 is used with the nrc command.
 
-```console
-0: kd> !ndiskd.nrc ffffffTBDffffffffff
+```dbgcmd
+0: kd> !ndiskd.nrc fffff8b82fbcf94b0 
 
+NET RING COLLECTION ffff8b82fbcf94b0
 
-TBD
+Packet Ring         ffff8b82f8e75000 
+Fragment Ring       ffff8b8300961000
 
-TBD
-
-TBD
-
-```
-
-This example shows the use of the -packet option and shows TBD.
-
-```console
-0: kd> !ndiskd.nrc ffffffTBDffffffffff -packet
-
-TBD
-
-TBD
-
-TBD
-
-```
-
-This example shows the use of the -fragment (or dump? TBD) option and shows TBD.
-
-```console
-0: kd> !ndiskd.nrc ffffffTBDffffffffff -fragment
-
-TBD
-
-TBD
-
-TBD
-
+List only packets
+List only fragments
+List all elements
 ```
 
 ## See also

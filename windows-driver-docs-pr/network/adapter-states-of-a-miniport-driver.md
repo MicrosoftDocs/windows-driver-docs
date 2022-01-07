@@ -10,7 +10,6 @@ keywords:
 - Halted state WDK networking
 - S
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adapter States of a Miniport Driver

@@ -7,7 +7,6 @@ keywords:
 - GPD files WDK XPSDrv
 - PPD files WDK XPSDrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Configuration Modules Based on GPD or PPD Files

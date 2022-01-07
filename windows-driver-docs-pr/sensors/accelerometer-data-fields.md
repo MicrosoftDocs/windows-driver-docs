@@ -2,7 +2,6 @@
 title: Accelerometer data fields
 description: This topic provides information about the data fields that are specific to the accelerometer.
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Accelerometer data fields

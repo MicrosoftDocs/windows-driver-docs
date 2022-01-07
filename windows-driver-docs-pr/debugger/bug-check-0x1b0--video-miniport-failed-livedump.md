@@ -9,7 +9,6 @@ api_name:
 - VIDEO_MINIPORT_FAILED_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1B0: VIDEO\_MINIPORT\_FAILED\_LIVEDUMP
@@ -30,13 +29,13 @@ The VIDEO\_MINIPORT\_FAILED\_LIVEDUMP bug check has a value of 0x000001B0.
 |4| Reserved. |
 
 
-## ## Cause
+## Cause
 The DXGKRNL detected a problem and has captured a live dump to collect debug information. These livedumps are triggered by dxgkrnl when a video miniport driver failed.
 
 (This code can never be used for a real bugcheck; it is used to identify live dumps.)
 
 
-## ## See Also-
+## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

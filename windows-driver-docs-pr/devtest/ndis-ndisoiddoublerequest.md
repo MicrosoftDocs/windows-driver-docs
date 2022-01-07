@@ -9,7 +9,6 @@ api_name:
 - NdisOidDoubleRequest
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisOidDoubleRequest rule (ndis)

@@ -5,7 +5,6 @@ keywords:
 - printer options WDK Unidrv , standard
 - standard options WDK Unidrv
 ms.date: 08/02/2021
-ms.localizationpriority: medium
 ---
 
 # Standard options

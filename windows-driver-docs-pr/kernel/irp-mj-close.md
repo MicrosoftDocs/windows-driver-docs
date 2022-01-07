@@ -4,7 +4,6 @@ description: Every driver must handle close requests in a DispatchClose routine,
 ms.date: 08/12/2017
 keywords:
  - IRP_MJ_CLOSE Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_CLOSE

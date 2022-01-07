@@ -9,7 +9,6 @@ api_name:
 - TERMINAL_SERVER_DRIVER_MADE_INCORRECT_MEMORY_REFERENCE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xCF: TERMINAL\_SERVER\_DRIVER\_MADE\_INCORRECT\_MEMORY\_REFERENCE

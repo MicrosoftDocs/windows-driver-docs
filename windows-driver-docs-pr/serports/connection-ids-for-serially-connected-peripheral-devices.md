@@ -2,7 +2,6 @@
 title: Connection IDs for Serially Connected Peripheral Devices
 description: If you write a driver for a peripheral device that is connected to a serial port managed by SerCx2, the list of hardware resources that the driver receives includes a connection ID that encapsulates the device connection information from the platform firmware.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Connection IDs for Serially Connected Peripheral Devices

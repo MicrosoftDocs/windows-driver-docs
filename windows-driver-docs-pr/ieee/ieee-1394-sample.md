@@ -2,7 +2,6 @@
 title: IEEE 1394 Sample
 description: IEEE 1394 Sample
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IEEE 1394 Sample

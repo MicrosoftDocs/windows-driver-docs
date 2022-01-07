@@ -13,7 +13,6 @@ keywords:
 - DigitalOutputDisable flag
 - CopyProtect flag
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Content IDs and Content Rights

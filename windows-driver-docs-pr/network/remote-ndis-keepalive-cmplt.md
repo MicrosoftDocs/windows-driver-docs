@@ -2,7 +2,6 @@
 title: 'REMOTE_NDIS_KEEPALIVE_CMPLT'
 description: 'A Remote NDIS device will respond to a REMOTE_NDIS_KEEPALIVE_MSG message from the host by sending back a REMOTE_NDIS_KEEPALIVE_CMPLT response message.'
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # REMOTE\_NDIS\_KEEPALIVE\_CMPLT

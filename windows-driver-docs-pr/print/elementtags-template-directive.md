@@ -4,7 +4,6 @@ description: ElementTags Template Directive
 keywords:
 - ElementTags directive WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ElementTags Template Directive

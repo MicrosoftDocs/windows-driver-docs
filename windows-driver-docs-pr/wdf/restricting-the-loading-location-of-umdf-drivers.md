@@ -9,7 +9,6 @@ keywords:
 - loading locations WDK UMDF
 - INF files WDK UMDF , loading locations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Restricting the Loading Location of UMDF Drivers

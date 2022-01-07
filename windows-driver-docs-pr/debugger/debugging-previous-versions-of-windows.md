@@ -2,7 +2,6 @@
 title: Debugging Previous Versions of Windows
 description: Learn about debugging previous versions of Windows. See topics for debugging different Windows versions and view additional available information.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging Previous Versions of Windows

@@ -7,7 +7,6 @@ keywords:
 - print server clustering WDK
 - converting print monitors for clustered print servers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Converting Print Monitors for Use with Clustered Print Servers

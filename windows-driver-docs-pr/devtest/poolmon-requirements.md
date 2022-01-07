@@ -8,7 +8,6 @@ keywords:
 - Memory Pool Monitor WDK , displays
 - files WDK PoolMon
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PoolMon Requirements

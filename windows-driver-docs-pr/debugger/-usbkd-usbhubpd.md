@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbhubpd
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbhubpd

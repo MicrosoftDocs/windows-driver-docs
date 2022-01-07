@@ -2,7 +2,6 @@
 title: Data Transfer Between Legacy Application and Windows Vista Driver
 description: Data Transfer Between Legacy Application and Windows Vista Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Data Transfer Between Legacy Application and Windows Vista Driver

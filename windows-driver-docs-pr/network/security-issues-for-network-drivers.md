@@ -5,7 +5,6 @@ keywords:
 - network drivers WDK , security
 - security WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Security Issues for Network Drivers

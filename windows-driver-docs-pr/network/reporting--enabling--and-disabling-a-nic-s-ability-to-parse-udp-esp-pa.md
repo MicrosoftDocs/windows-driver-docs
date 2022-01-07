@@ -5,7 +5,6 @@ keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , parsing capabilities
 - parsing capabilities WDK IPsec offload
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting, Enabling, and Disabling a NIC's Ability to Parse UDP-ESP Packets

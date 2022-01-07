@@ -6,7 +6,6 @@ keywords:
 - output buffers WDK audio
 - buffer size WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Output Buffer Size

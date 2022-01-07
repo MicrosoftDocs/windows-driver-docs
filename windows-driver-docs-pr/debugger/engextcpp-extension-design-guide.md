@@ -3,7 +3,6 @@ title: EngExtCpp Extension Design Guide
 description: EngExtCpp Extension Design Guide
 keywords: ["EngExtCpp extensions, design guide"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # EngExtCpp Extension Design Guide

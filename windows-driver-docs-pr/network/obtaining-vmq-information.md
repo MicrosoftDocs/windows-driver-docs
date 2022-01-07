@@ -2,7 +2,6 @@
 title: Obtaining VMQ Information
 description: Obtaining VMQ Information
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Obtaining VMQ Information

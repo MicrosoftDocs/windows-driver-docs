@@ -9,7 +9,6 @@ api_name:
 - asd
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !asd

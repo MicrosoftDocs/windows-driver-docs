@@ -2,7 +2,6 @@
 title: Accessing Kernel-Mode Drivers for Still Image Devices
 description: Accessing Kernel-Mode Drivers for Still Image Devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing Kernel-Mode Drivers for Still Image Devices

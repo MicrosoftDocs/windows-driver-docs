@@ -5,7 +5,6 @@ keywords:
 - deinterlacing WDK DirectX VA , 64-bit
 - 64-bit WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Deinterlacing on 64-bit Operating Systems

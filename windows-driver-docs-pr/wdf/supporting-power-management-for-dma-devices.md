@@ -8,7 +8,6 @@ keywords:
 - DMA enabler objects WDK KMDF
 - enabler objects WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Power Management for DMA Devices

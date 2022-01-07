@@ -6,7 +6,6 @@ keywords:
 - porting legacy filter drivers
 - legacy filter drivers WDK file system minifilter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Guidelines for Porting Legacy Filter Drivers

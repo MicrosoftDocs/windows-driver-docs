@@ -9,7 +9,6 @@ api_name:
 - wudfext.wudfdownkmirp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wudfext.wudfdownkmirp

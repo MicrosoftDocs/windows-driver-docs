@@ -5,7 +5,6 @@ keywords:
 - SetupAPI functions WDK , log files
 - log files WDK SetupAPI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # File Log Functions

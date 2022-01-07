@@ -2,7 +2,6 @@
 title: Microsoft Bluetooth Test Platform Setup
 description: How to set up the Microsoft Bluetooth Test Platform Setup 
 ms.date: 06/09/2021
-ms.localizationpriority: medium
 ---
 
 # Setting up the Bluetooth Test Platform (BTP)

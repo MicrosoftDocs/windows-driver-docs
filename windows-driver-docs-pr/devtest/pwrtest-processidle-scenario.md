@@ -2,7 +2,6 @@
 title: PwrTest ProcessIdle Scenario
 description: The PwrTest ProcessIdle Scenario forces background maintenance tasks to run (now rather than at their scheduled time) and monitors their progress.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PwrTest ProcessIdle Scenario

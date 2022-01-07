@@ -6,7 +6,6 @@ keywords:
 - decoder minidrivers WDK DVD , data streams
 - streams WDK DVD decoder
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DVD Data Streams

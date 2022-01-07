@@ -2,7 +2,6 @@
 title: Proximity Sensor Property
 description: This property is an optional enumeration property.
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Proximity Sensor Property

@@ -2,7 +2,6 @@
 title: Connect your sensor to the Sharks Cove board
 description: This topic provides guidance on how to connect your sensor test board to the Sharks Cove board.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Connect your sensor to the Sharks Cove board

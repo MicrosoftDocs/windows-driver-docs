@@ -10,7 +10,6 @@ keywords:
 - informational checks WDK
 - tracing output checks WDK
 ms.date: 05/08/2020
-ms.localizationpriority: medium
 ---
 
 # What the Checked Build Checks

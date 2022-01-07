@@ -12,7 +12,6 @@ keywords:
 - parser WDK GDL , escaping special XML characters
 - escaping special XML characters WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # XSD Template Data Types

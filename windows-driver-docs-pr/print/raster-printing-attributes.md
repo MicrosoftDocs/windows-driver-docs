@@ -5,7 +5,6 @@ keywords:
 - raster printing attributes WDK Unidrv
 - general printer attributes WDK Unidrv , raster
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Raster Printing Attributes

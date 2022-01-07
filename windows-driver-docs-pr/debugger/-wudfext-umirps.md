@@ -9,7 +9,6 @@ api_name:
 - wudfext.umirps
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wudfext.umirps

@@ -6,7 +6,6 @@ keywords:
 - ASSERTs WDK checked builds
 - errors WDK checked builds
 ms.date: 05/08/2020
-ms.localizationpriority: medium
 ---
 
 # Checked Build ASSERTs

@@ -4,7 +4,6 @@ description: Option File Examples
 keywords:
 - options files WDK Static Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Option File Examples

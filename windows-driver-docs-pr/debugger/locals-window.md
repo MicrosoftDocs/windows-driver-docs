@@ -3,7 +3,6 @@ title: Viewing and Editing Local Variables in WinDbg
 description: In WinDbg, you can view local variables by entering commands, by using the Locals window, or by using the Watch window.
 keywords: ["debugging information windows, Locals window", "Locals window", "memory, Locals window"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Viewing and Editing Local Variables in WinDbg

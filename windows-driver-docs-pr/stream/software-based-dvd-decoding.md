@@ -6,7 +6,6 @@ keywords:
 - decoder minidrivers WDK DVD , software-based DVD decoding
 - software-based DVD decoding WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Software-based DVD Decoding

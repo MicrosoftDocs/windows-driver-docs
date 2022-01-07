@@ -10,7 +10,6 @@ keywords:
 - speed WDK IEEE 1394 bus
 - allocating bandwidth
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Up Isochronous Transfer for IEEE 1394 Devices

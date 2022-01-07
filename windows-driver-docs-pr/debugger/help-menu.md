@@ -3,7 +3,6 @@ title: Help Menu
 description: Help Menu
 keywords: ["Help Menu (complete listing)", "graphical interface, help menu"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Help Menu

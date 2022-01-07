@@ -9,7 +9,6 @@ keywords:
 - low-power states WDK KMDF
 - system sleeping states WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Idle Power-Down

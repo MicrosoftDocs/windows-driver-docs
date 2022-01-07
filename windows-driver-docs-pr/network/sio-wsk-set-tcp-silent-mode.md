@@ -4,7 +4,6 @@ description: The SIO_WSK_SET_TCP_SILENT_MODE socket I/O control operation allows
 ms.date: 07/18/2017
 keywords:
  - SIO_WSK_SET_TCP_SILENT_MODE control code Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SIO\_WSK\_SET\_TCP\_SILENT\_MODE control code

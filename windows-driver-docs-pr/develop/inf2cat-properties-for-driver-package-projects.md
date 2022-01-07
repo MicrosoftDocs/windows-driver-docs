@@ -2,7 +2,6 @@
 title: Inf2Cat Properties for Driver Package Projects
 description: Sets the properties for the Inf2Cat tool. The Inf2Cat tool can be used to create catalog files for any driver package that has an INF file.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Inf2Cat Properties for Driver Package Projects

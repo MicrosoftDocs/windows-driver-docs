@@ -9,7 +9,6 @@ api_name:
 - j (Execute If - Else)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # j (Execute If - Else)
@@ -82,7 +81,7 @@ You can also use the **j** command inside other commands. For example, you can u
 0:000> bp `mysource.cpp:143` "j (poi(MyVar)>0n20) ''; 'gc' "
 ```
 
-For more information about the syntax for conditional breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).
+This style of conditional breakpoint is no longer recommended, as a simpler form is now available in the debugger. For more information about the syntax of conditional breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).
 
 ## <span id="see_also"></span>See also
 

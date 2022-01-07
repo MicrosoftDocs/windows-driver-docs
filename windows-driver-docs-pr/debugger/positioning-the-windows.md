@@ -3,7 +3,6 @@ title: Positioning the Windows
 description: Positioning the Windows
 keywords: ["debugging information windows, positioning", "floating windows"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Positioning the Windows

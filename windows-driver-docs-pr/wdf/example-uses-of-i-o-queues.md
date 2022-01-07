@@ -21,7 +21,6 @@ keywords:
 - WdfIoQueueDispatchSequential
 - WdfIoQueueDispatchManual
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example Uses of I/O Queues

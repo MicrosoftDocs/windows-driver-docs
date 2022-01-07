@@ -8,7 +8,6 @@ keywords:
 - SIDs WDK file systems
 - well known identifiers WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Security Identifier

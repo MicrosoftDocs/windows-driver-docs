@@ -4,7 +4,6 @@ description: WDI_TLV_TCP_SET_OFFLOAD_PARAMETERS is a TLV that contains TCP offlo
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_TCP_SET_OFFLOAD_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_TCP\_SET\_OFFLOAD\_PARAMETERS

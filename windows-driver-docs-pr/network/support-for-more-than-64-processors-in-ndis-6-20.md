@@ -4,7 +4,6 @@ description: Support for More than 64 Processors in NDIS 6.20
 keywords:
 - NDIS 6.20 WDK , support for more than 64 processors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Support for More than 64 Processors in NDIS 6.20

@@ -4,7 +4,6 @@ description: This IRP queries a device to determine whether the system power sta
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_QUERY_POWER Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_POWER

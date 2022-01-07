@@ -9,7 +9,6 @@ api_name:
 - WORKER_INVALID
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xE4: WORKER\_INVALID

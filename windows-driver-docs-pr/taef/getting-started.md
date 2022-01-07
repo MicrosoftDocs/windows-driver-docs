@@ -2,7 +2,6 @@
 title: Getting Started with TAEF
 description: Getting Started with Test Authoring and Execution Framework (TAEF)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Getting Started

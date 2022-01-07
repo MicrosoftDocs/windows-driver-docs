@@ -2,7 +2,6 @@
 title: Overview of the Enhanced Storage Certificate Management Tool
 description: Overview of the Enhanced Storage Certificate Management Tool
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of the Enhanced Storage Certificate Management Tool

@@ -3,7 +3,6 @@ title: Window Close All Error Windows
 description: Window Close All Error Windows
 keywords: ["Window Close All Error Windows"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Window | Close All Error Windows

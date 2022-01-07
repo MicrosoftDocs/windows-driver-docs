@@ -9,7 +9,6 @@ keywords:
 - saving boot options
 - boot options WDK , backing up
 ms.date: 07/03/2018
-ms.localizationpriority: medium
 ---
 
 # Backing Up the Boot.ini File

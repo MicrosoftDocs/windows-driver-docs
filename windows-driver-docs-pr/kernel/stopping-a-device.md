@@ -3,7 +3,6 @@ title: Stopping a Device
 description: Stopping a Device
 keywords: ["PnP WDK kernel , stopping devices", "Plug and Play WDK kernel , stopping devices", "stopping PnP devices", "stop IRPs WDK PnP"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Stopping a Device

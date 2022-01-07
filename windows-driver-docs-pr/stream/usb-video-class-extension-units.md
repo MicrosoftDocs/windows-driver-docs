@@ -8,7 +8,6 @@ keywords:
 - extension units WDK USB Video Class
 - user-mode plug-ins WDK USB Video Class
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB Video Class Extension Units

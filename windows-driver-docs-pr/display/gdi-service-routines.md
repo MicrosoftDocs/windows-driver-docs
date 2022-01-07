@@ -7,7 +7,6 @@ keywords:
 - drawing WDK GDI , service routines
 - service routines WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI Service Routines

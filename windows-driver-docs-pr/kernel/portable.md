@@ -3,7 +3,6 @@ title: Portable drivers
 description: Portable
 keywords: ["portable drivers WDK kernel", "platform-dependent definitions WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Portable

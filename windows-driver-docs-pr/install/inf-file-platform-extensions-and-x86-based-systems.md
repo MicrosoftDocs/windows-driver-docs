@@ -4,7 +4,6 @@ description: INF File Platform Extensions and x86-Based Systems
 keywords:
 - x86 INF file platform extensions WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # INF File Platform Extensions and x86-Based Systems

@@ -2,7 +2,6 @@
 title: Auto-Configured Scanning
 description: Auto-Configured Scanning
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Auto-Configured Scanning

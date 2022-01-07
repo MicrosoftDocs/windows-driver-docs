@@ -6,7 +6,6 @@ keywords:
 - header files WDK DirectX 8.0
 - DIRECT3D_VERSION
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DIRECT3D\_VERSION

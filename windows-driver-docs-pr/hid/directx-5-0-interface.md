@@ -14,7 +14,6 @@ keywords:
 - joysticks WDK HID , versions
 - VJoyD WDK HID , versions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 #  DirectX 5.0 Interface

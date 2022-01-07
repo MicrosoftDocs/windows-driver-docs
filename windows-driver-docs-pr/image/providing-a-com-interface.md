@@ -2,7 +2,6 @@
 title: Providing a COM Interface
 description: Providing a COM Interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Providing a COM Interface

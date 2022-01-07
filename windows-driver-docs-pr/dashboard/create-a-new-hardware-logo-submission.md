@@ -2,7 +2,6 @@
 title: Create a new WLK device certification submission
 description: Create a new WLK device certification submission
 ms.topic: article
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

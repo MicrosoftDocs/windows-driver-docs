@@ -5,7 +5,6 @@ keywords:
 - printer drivers WDK , 64-bit
 - 64-bit WDK printer
 ms.date: 08/25/2020
-ms.localizationpriority: medium
 ---
 
 # Writing 64-Bit Printer Drivers

@@ -2,7 +2,6 @@
 title: Custom Port Feature Status
 description: Custom Port Feature Status
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Custom Port Feature Status

@@ -9,7 +9,6 @@ api_name:
 - MdlAfterReqCompletedRead
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # MdlAfterReqCompletedRead rule (kmdf)

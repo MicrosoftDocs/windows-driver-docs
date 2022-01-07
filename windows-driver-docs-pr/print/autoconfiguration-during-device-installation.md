@@ -5,7 +5,6 @@ keywords:
 - autoconfiguration WDK printer , during device installations
 - printer autoconfiguration WDK printer , during device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Autoconfiguration During Device Installation

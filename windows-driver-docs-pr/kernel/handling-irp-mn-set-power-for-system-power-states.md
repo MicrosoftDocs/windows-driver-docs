@@ -3,7 +3,6 @@ title: Handling IRP_MN_SET_POWER for System Power States
 description: Handling IRP_MN_SET_POWER for System Power States
 keywords: ["IRP_MN_SET_POWER", "system power states WDK kernel , IRP_MN_SET_POWER", "set-power IRPs WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling IRP\_MN\_SET\_POWER for System Power States

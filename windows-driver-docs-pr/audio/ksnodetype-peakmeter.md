@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 04/21/2020
-ms.localizationpriority: medium
 ---
 
 # KSNODETYPE\_PEAKMETER

@@ -2,7 +2,6 @@
 title: Secure Boot
 description: Secure Boot
 ms.date: 08/13/2021
-ms.localizationpriority: medium
 ---
 
 # Secure Boot

@@ -2,7 +2,6 @@
 title: Property Sheet Extensions
 description: Property Sheet Extensions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Property Sheet Extensions

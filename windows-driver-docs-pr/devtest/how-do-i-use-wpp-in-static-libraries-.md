@@ -2,7 +2,6 @@
 title: How do I use WPP in static libraries
 description: How do I use WPP in static libraries
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How do I use WPP in static libraries?

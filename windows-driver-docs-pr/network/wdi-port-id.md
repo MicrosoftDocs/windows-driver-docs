@@ -4,7 +4,6 @@ description: This topic describes the WDI_PORT_ID data type for WDI miniport dri
 keywords:
 - WDI_PORT_ID, WDK WDI_PORT_ID network drivers
 ms.date: 11/27/2017
-ms.localizationpriority: medium
 ---
 
 # WDI_PORT_ID

@@ -3,7 +3,6 @@ title: View Command Browser
 description: View Command Browser
 keywords: ["View Command Browser", "command browser window, View Command Browser"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # View | Command Browser

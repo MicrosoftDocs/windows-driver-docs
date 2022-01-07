@@ -2,7 +2,6 @@
 title: NDIS QoS Requirements for Data Center Bridging
 description: NDIS QoS Requirements for Data Center Bridging
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS QoS Requirements for Data Center Bridging

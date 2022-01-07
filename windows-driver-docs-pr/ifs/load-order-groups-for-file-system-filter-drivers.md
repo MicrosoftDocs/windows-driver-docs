@@ -8,7 +8,6 @@ keywords:
 - loading drivers WDK file system
 - load order groups WDK file system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Load Order Groups for File System Filter Drivers

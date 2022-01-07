@@ -7,7 +7,6 @@ keywords:
 - preprocessor directives WDK GDL , syntax
 - syntax WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Preprocessor Syntax

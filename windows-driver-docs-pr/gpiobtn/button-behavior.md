@@ -1,7 +1,6 @@
 ---
 title: Button behavior
 description: This topic describes the expected behavior of hardware buttons.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

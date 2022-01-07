@@ -9,7 +9,6 @@ api_name:
 - atom
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !atom

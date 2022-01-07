@@ -9,7 +9,6 @@ api_name:
 - nstree
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !nstree

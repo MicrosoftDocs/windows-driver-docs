@@ -9,7 +9,6 @@ api_name:
 - INSTALL_MORE_MEMORY
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x7D: INSTALL\_MORE\_MEMORY

@@ -2,7 +2,6 @@
 title: General Printing Attributes
 description: General Printing Attributes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # General Printing Attributes

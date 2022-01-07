@@ -6,7 +6,6 @@ keywords:
 - memory types WDK display
 - resource memory types WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying Memory Type for a Resource

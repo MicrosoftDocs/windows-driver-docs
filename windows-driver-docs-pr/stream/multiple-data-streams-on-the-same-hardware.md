@@ -5,7 +5,6 @@ keywords:
 - multiple data streams WDK DVD decoder
 - stream numbers supported WDK DVD decoder
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Multiple Data Streams on the same Hardware

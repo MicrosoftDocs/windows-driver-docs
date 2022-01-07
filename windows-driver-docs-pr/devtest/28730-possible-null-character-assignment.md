@@ -2,7 +2,6 @@
 title: C28730 warning
 description: Warning C28730 Possible assignment of '\\0' directly to a pointer.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28730"
 ---

@@ -8,7 +8,6 @@ keywords:
 - codecs WDK AVStream , hardware
 - codecs WDK AVStream , hardware, merit validation
 ms.date: 06/16/2020
-ms.localizationpriority: medium
 ---
 
 # Codec merit validation

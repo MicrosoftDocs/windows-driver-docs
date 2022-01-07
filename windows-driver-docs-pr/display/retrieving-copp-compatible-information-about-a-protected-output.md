@@ -4,7 +4,6 @@ description: The display miniport driver can receive requests to retrieve COPP-c
 keywords:
 - OPM WDK display , retrieving COPP-compatible information
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

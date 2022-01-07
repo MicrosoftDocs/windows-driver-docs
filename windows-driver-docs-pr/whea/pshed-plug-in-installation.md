@@ -14,7 +14,6 @@ keywords:
 - PSHED plug-ins WDK WHEA , installing
 - installing PSHED plug-ins WDK WHEA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PSHED Plug-In Installation

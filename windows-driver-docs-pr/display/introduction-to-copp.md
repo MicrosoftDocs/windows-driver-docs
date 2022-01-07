@@ -7,7 +7,6 @@ keywords:
 - COPP WDK DirectX VA , about COPP
 - protected video WDK COPP , about COPP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to COPP

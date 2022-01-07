@@ -8,7 +8,6 @@ keywords:
 - enumerating device information WDK
 - SetupDiEnumDeviceInfo
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Information Sets

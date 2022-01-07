@@ -8,7 +8,6 @@ keywords:
 - stream aborts WDK AV/C streaming
 - canceling streams
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Abort a Stream

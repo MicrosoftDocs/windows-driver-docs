@@ -2,7 +2,6 @@
 title: Output Merger Stage
 description: Output Merger Stage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Output Merger Stage

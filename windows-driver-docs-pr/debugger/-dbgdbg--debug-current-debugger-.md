@@ -9,7 +9,6 @@ api_name:
 - .dbgdbg (Debug Current Debugger)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .dbgdbg (Debug Current Debugger)

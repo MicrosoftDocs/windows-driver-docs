@@ -8,7 +8,6 @@ keywords:
 - monochrome pointers WDK Windows 2000 display
 - color pointers WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Pointer Drawing

@@ -8,7 +8,6 @@ keywords:
 - unregistering SAPs
 - removing SAPs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Deregistering a SAP

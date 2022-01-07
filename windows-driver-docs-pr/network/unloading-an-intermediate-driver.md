@@ -7,7 +7,6 @@ keywords:
 - unloading intermediate drivers
 - cleaning up after install or uninstall WDK NDIS intermediate
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Unloading an Intermediate Driver

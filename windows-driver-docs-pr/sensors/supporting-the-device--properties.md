@@ -2,7 +2,6 @@
 title: Support for device properties
 description: Support for device properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Support for device properties

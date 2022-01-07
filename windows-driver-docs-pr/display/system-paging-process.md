@@ -2,7 +2,6 @@
 title: System paging process
 description: Most paging operations occur in a context of the system paging process. The only exception is the page table update from the UpdateGpuVirtualAddress callback, which occurs in a special companion context and occurs synchronous of rendering.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # System paging process

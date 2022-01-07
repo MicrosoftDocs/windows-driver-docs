@@ -2,7 +2,6 @@
 title: WIA Error Handling Architecture
 description: WIA Error Handling Architecture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Error Handling Architecture

@@ -8,7 +8,6 @@ keywords:
 - stacks WDK IEEE 1394 bus
 - device stacks WDK IEEE 1394 bus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # The IEEE 1394 Driver Stack

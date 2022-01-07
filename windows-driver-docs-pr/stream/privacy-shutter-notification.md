@@ -2,7 +2,6 @@
 title: Privacy shutter notification
 description: Provides guidance for OEMs and ODMs that are adding a mechanism to detect the state of the physical camera privacy shutter.
 ms.date: 06/24/2021
-ms.localizationpriority: medium
 ---
 
 # Privacy shutter notification
@@ -26,6 +25,8 @@ In addition to the use of the existing **KSPROPERTY** control, **KSPROPERTY_CAME
 The **KSEVENT** is issued by using the same Set GUID and Id as the **KSPROPERTY** is using.
 
 To clarify what is shown in the diagram above, the OS is expecting the AVS driver to implement mechanism, if the driver developer chooses to support this feature, to get and listen state changes that the shutter sensor is generating. The OS queries the state via the **KSPROPERTY** get method and issue a waiting **KSEVENT** that the driver will signal when the shutter state is changed. The shutter state change should not prevent the camera from functioning, for example, to cause an error situation.
+
+**NOTE:** If the AVS driver supports this feature but the underlying hardware does not, the AVS driver shall return not supported error when the OS issues the **KSEVENT** registration.
 
 ## KSPROPERTY
 

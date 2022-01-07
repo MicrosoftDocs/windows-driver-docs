@@ -2,7 +2,6 @@
 title: Metadata
 description: Metadata
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Metadata

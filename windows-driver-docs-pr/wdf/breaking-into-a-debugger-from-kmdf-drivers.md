@@ -5,7 +5,6 @@ keywords:
 - debugging drivers WDK KMDF , breaking into the debugger
 - breaking into the debugger WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Breaking into a Debugger from KMDF Drivers

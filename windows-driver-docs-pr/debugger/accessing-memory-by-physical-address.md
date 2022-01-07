@@ -3,7 +3,6 @@ title: Accessing Memory by Physical Address
 description: Accessing Memory by Physical Address
 keywords: ["physical address, accessing memory"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing Memory by Physical Address

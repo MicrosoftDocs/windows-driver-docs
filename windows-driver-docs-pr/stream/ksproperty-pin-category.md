@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_PIN\_CATEGORY
-description: The client uses the KSPROPERTY\_PIN\_CATEGORY property to retrieve the category of a pin factory.
+title: KSPROPERTY_PIN_CATEGORY
+description: The client uses the KSPROPERTY_PIN_CATEGORY property to retrieve the category of a pin factory.
 keywords: ["KSPROPERTY_PIN_CATEGORY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,53 +10,22 @@ api_location:
 - ks.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 11/03/2021
 ---
 
-# KSPROPERTY\_PIN\_CATEGORY
+# KSPROPERTY_PIN_CATEGORY
 
+The client uses the **KSPROPERTY_PIN_CATEGORY** property to retrieve the category of a pin factory.
 
-The client uses the KSPROPERTY\_PIN\_CATEGORY property to retrieve the category of a pin factory.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_pin_category_ks"></span><span id="DDK_KSPROPERTY_PIN_CATEGORY_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property Descriptor Type</th>
-<th>Property Value Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
-<td><p>GUID</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property Descriptor Type | Property Value Type |
+|--|--|--|--|--|
+| Yes | No | Pin | [**KSP_PIN**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin) | GUID |
 
 ## Remarks
 
-The **PinId** member of the KSP\_PIN structure specifies the pin factory for which to return the category GUID.
+The **PinId** member of the KSP_PIN structure specifies the pin factory for which to return the category GUID.
 
 The KS filter uses this property to indicate the standard functional *Category* of pins instantiated by the pin factory.
 
@@ -64,21 +33,8 @@ Stream minidrivers do not need to handle this property directly; the stream clas
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ks.h (include Ks.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ks.h (include Ks.h)
 
 ## See also
 
-
-[**KSP\_PIN**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)
-
+[**KSP_PIN**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)

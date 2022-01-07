@@ -9,7 +9,6 @@ api_name:
 - PP0_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x8F: PP0\_INITIALIZATION\_FAILED

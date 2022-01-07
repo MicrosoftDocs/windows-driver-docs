@@ -2,7 +2,6 @@
 title: Microsoft Bluetooth Test Platform supported hardware
 description: Bluetooth Test Platform (BTP) supported hardware.
 ms.date: 06/09/2021
-ms.localizationpriority: medium
 ---
 
 # Bluetooth Test Platform supported hardware

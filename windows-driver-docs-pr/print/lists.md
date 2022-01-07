@@ -6,7 +6,6 @@ keywords:
 - listing attributes WDK GPD files
 - LIST keyword
 ms.date: 09/07/2021
-ms.localizationpriority: medium
 ---
 
 # Lists (GPD language)

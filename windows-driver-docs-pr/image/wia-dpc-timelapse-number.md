@@ -1,6 +1,6 @@
 ---
-title: WIA\_DPC\_TIMELAPSE\_NUMBER
-description: The WIA\_DPC\_TIMELAPSE\_NUMBER property contains the number of images that the device attempts to capture during a time-lapse capture.
+title: WIA_DPC_TIMELAPSE_NUMBER
+description: The WIA_DPC_TIMELAPSE_NUMBER property contains the number of images that the device attempts to capture during a time-lapse capture.
 keywords: ["WIA_DPC_TIMELAPSE_NUMBER Imaging Devices"]
 topic_type:
 - apiref
@@ -10,48 +10,21 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 09/30/2021
 ---
 
-# WIA\_DPC\_TIMELAPSE\_NUMBER
+# WIA_DPC_TIMELAPSE_NUMBER
 
+The WIA_DPC_TIMELAPSE_NUMBER property contains the number of images that the device attempts to capture during a time-lapse capture.
 
-The WIA\_DPC\_TIMELAPSE\_NUMBER property contains the number of images that the device attempts to capture during a time-lapse capture.
+Property Type: VT_I4
 
-## <span id="ddk_wia_dpc_timelapse_number_si"></span><span id="DDK_WIA_DPC_TIMELAPSE_NUMBER_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_NONE, WIA\_PROP\_LIST, or WIA\_PROP\_RANGE
+Valid Values: WIA_PROP_NONE, WIA_PROP_LIST, or WIA_PROP_RANGE
 
 Access Rights: Read/write
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Obsolete in Windows Vista and later operating systems and should no longer be used. However, this property is still defined in Windows Vista for compatibility with applications and devices designed for Windows Server 2003, Windows XP, and previous versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Version:** Obsolete in Windows Vista and later operating systems and should not be used.
 
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

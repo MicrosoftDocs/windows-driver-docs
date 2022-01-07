@@ -6,7 +6,6 @@ keywords:
 - datagram sockets WDK Winsock Kernel
 - WskReceiveFrom
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Receiving Data over a Datagram Socket

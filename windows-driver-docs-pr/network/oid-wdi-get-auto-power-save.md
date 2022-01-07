@@ -4,10 +4,11 @@ description: OID_WDI_GET_AUTO_POWER_SAVE gets the power save state of the port.
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_GET_AUTO_POWER_SAVE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_GET\_AUTO\_POWER\_SAVE
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_GET\_AUTO\_POWER\_SAVE gets the power save state of the port.

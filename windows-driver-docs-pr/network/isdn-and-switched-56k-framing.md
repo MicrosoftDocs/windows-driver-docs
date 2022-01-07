@@ -9,7 +9,6 @@ keywords:
 - WAN packet framing WDK networking , ISDN framing
 - WAN packet framing WDK networking , Switched 56K framing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ISDN and Switched 56K Framing

@@ -3,7 +3,6 @@ title: Interacting with the Engine
 description: Interacting with the Engine
 keywords: ["Debugger Engine API, use"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Interacting with the Engine

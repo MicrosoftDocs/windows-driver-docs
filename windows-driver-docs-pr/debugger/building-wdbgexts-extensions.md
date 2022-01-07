@@ -3,7 +3,6 @@ title: Building WdbgExts Extensions
 description: Building WdbgExts Extensions
 keywords: ["Build utility (build.exe), building WdbgExts extensions", "WdbgExts extensions, building", "WdbgExts extensions, compiling"]
 ms.date: 10/22/2018
-ms.localizationpriority: medium
 ---
 
 # Building WdbgExts Extensions

@@ -6,7 +6,6 @@ keywords:
 - data-driven tests
 - SDEL query
 ms.date: 11/20/2017
-ms.localizationpriority: medium
 ---
 
 # Run the tests

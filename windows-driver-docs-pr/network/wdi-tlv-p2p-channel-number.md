@@ -4,10 +4,11 @@ description: WDI_TLV_P2P_CHANNEL_NUMBER is a TLV that contains Wi-Fi Direct chan
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_CHANNEL_NUMBER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_CHANNEL\_NUMBER
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_CHANNEL\_NUMBER is a TLV that contains Wi-Fi Direct channel number information.

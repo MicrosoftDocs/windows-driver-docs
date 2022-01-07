@@ -2,7 +2,6 @@
 title: Cancellation of Data Transfers in Windows XP
 description: Cancellation of Data Transfers in Windows XP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Cancellation of Data Transfers in Windows XP

@@ -6,7 +6,6 @@ keywords:
 - 64-bit WDK DirectX VA
 - DXVA_DeinterlaceBltEx
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Deinterlacing and Compositing on 64-bit Operating Systems

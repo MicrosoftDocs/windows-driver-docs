@@ -7,7 +7,6 @@ keywords:
 - PSCRIPT1 data type WDK print processor
 - Postscript data WDK print processor
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PSCRIPT1 Data Type

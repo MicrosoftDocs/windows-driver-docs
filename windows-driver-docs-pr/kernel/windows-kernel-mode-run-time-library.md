@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Run-Time Library
 description: Windows Kernel-Mode Run-Time Library
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

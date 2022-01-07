@@ -4,7 +4,6 @@ description: WDI_TLV_OFFLOAD_SCOPE is a TLV that contains Rx coalesce offload ca
 ms.date: 10/05/2017
 keywords:
  - WDI_TLV_OFFLOAD_SCOPE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_OFFLOAD_SCOPE

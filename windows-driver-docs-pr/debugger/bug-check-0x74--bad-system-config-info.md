@@ -9,7 +9,6 @@ api_name:
 - BAD_SYSTEM_CONFIG_INFO
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x74: BAD\_SYSTEM\_CONFIG\_INFO

@@ -9,7 +9,6 @@ api_name:
 - LOCKED_PAGES_TRACKER_CORRUPTION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xD9: LOCKED\_PAGES\_TRACKER\_CORRUPTION

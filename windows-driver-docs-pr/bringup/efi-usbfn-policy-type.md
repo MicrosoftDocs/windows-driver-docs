@@ -2,7 +2,6 @@
 title: EFI_USBFN_POLICY_TYPE
 description: The EFI_USBFN_POLICY_TYPE enumeration contains values used to indicate the type of endpoint.
 ms.date: 08/23/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_USBFN_POLICY_TYPE

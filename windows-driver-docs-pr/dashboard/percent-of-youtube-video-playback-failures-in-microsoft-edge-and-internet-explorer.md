@@ -3,7 +3,6 @@ title: Percent of YouTube video playback failures in Microsoft Edge and Internet
 description: The measure aggregates telemetry from a 7-day sliding window into a percent of YouTube playback errors in Microsoft Edge or Internet Explorer
 ms.topic: article
 ms.date: 05/20/2019
-ms.localizationpriority: medium
 ---
 
 # Percent of YouTube video playback failures in Microsoft Edge and Internet Explorer

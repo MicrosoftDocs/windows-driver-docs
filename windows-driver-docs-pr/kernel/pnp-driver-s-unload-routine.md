@@ -3,7 +3,6 @@ title: PnP Driver's Unload Routine
 description: PnP Driver's Unload Routine
 keywords: ["Unload routines WDK kernel , PnP drivers", "PnP Unload routine WDK kernel", "Plug and Play Unload routine WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # PnP Driver's Unload Routine

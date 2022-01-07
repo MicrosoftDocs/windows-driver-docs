@@ -4,7 +4,6 @@ description: WSK_TRANSPORT_LIST_QUERY
 ms.date: 07/18/2017
 keywords:
  - WSK_TRANSPORT_LIST_QUERY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WSK\_TRANSPORT\_LIST\_QUERY

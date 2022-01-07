@@ -3,7 +3,6 @@ title: Reading Restart Records from a CLFS Stream
 description: Reading Restart Records from a CLFS Stream
 keywords: ["Common Log File System WDK kernel , restart records", "CLFS WDK kernel , restart records", "restart records WDK CLFS", "reading restart records"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Reading Restart Records from a CLFS Stream

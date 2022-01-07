@@ -8,7 +8,6 @@ keywords:
 - framework objects WDK KMDF , I/O request objects
 - request objects WDK KMDF , about request objects
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Framework Request Objects

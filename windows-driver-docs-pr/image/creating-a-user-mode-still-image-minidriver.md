@@ -2,7 +2,6 @@
 title: Creating a User-Mode Still Image Minidriver
 description: Creating a User-Mode Still Image Minidriver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a User-Mode Still Image Minidriver

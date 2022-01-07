@@ -5,7 +5,6 @@ keywords:
 - NDIS network interfaces WDK , architecture
 - network interfaces WDK , architecture
 ms.date: 02/28/2019
-ms.localizationpriority: medium
 ---
 
 # NDIS Network Interface Architecture

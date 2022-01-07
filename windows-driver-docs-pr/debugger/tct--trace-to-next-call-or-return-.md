@@ -9,7 +9,6 @@ api_name:
 - tct (Trace to Next Call or Return)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # tct (Trace to Next Call or Return)

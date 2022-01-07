@@ -4,7 +4,6 @@ description: As a set, the OID_GEN_TRANSPORT_HEADER_OFFSET OID indicates the siz
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_TRANSPORT_HEADER_OFFSET Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_TRANSPORT\_HEADER\_OFFSET

@@ -2,7 +2,6 @@
 title: Definitions and Variables Used in the Examples
 description: Definitions and Variables Used in the Examples
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Definitions and Variables Used in the Examples

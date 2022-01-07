@@ -6,7 +6,6 @@ keywords:
 - events WDK video capture
 - EVENTSETID_TUNER
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tuner Events

@@ -2,7 +2,6 @@
 title: Validating a hybrid system configuration
 description: A decription of the procedure to validate a hybrid system.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Validating a hybrid system configuration

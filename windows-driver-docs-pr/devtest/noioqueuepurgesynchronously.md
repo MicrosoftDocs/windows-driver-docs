@@ -9,7 +9,6 @@ api_name:
 - NoIoQueuePurgeSynchronously
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NoIoQueuePurgeSynchronously rule (kmdf)

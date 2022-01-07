@@ -13,7 +13,6 @@ keywords:
 - process pins WDK AVStream
 - frames WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # AVStream Splitters

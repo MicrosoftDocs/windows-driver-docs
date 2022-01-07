@@ -3,7 +3,6 @@ title: Events
 description: Events
 keywords: ["Debugger Engine, events"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Events

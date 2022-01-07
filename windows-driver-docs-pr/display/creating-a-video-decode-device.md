@@ -5,7 +5,6 @@ keywords:
 - video decoding WDK DirectX VA , creating decode devices
 - decoding video WDK DirectX VA , creating decode devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Video Decode Device

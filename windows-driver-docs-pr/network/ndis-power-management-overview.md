@@ -2,7 +2,6 @@
 title: NDIS Power Management Overview
 description: NDIS Power Management Overview
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS Power Management Overview

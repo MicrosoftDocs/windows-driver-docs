@@ -4,7 +4,6 @@ description: ACPI Keyboard Shortcut Logic
 keywords:
 - ACPI hotkeys WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ACPI Keyboard Shortcut Logic

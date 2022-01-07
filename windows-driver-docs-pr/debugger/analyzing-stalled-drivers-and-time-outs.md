@@ -3,7 +3,6 @@ title: Analyzing Stalled Drivers and Time-Outs
 description: Analyzing Stalled Drivers and Time-Outs
 keywords: ["SCSI Miniport Debugging, hangs and time-outs"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Analyzing Stalled Drivers and Time-Outs

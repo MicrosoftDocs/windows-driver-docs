@@ -2,7 +2,6 @@
 title: Driver Verifier What's New
 description: Driver Verifier is available in all versions of Windows starting with Windows 2000. Each version introduces new features and checks for finding bugs in Windows drivers. This section summarizes the changes and provides links to related documentation.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver Verifier: What's New
@@ -15,6 +14,9 @@ ms.localizationpriority: medium
 * [Driver Verifier in Windows 7](#driver-verifier-in-windows-7-updated-october-22-2012)
 * [Driver Verifier in Windows Vista](#driver-verifier-in-windows-vista-updated-february-9-2009)
 * [Driver Verifier in Windows XP](#driver-verifier-in-windows-xp-updated-december-4-2001)
+
+## Driver Verifier in Windows 11 (*Updated: September 30, 2021*)
+Starting with Windows 11, many flags are now enabled without reboot using a different command syntax than the [volatile syntax](./using-volatile-settings.md). See [Driver Verifier Command Syntax](./verifier-command-line.md) for more information about the new syntax.
 
 ## Driver Verifier in Windows 10 (*Updated: May 8, 2018*)
 

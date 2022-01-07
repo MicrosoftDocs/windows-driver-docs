@@ -4,7 +4,6 @@ description: Debugging a NetAdapterCx client driver
 keywords:
 - debugging NetAdapterCx client drivers, debugging NetAdapterCx client drivers
 ms.date: 06/17/2020
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

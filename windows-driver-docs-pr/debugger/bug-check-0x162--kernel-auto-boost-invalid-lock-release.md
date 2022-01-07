@@ -9,7 +9,6 @@ api_name:
 - KERNEL_AUTO_BOOST_INVALID_LOCK_RELEASE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x162: KERNEL\_AUTO\_BOOST\_INVALID\_LOCK\_RELEASE

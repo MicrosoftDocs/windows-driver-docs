@@ -3,7 +3,6 @@ title: Process Servers (User Mode)
 description: Process Servers (User Mode)
 keywords: ["remote debugging through a process server", "process server", "process server, overview", "smart client (user mode)", "DbgSrv", "DbgSrv, overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Process Servers (User Mode)

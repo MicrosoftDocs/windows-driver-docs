@@ -3,7 +3,6 @@ title: Show loader snaps
 description: Show loader snaps
 keywords: ["Show loader snaps (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Show loader snaps

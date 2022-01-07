@@ -6,7 +6,6 @@ keywords:
 - driver development tools WDK , INF files
 - INF files WDK Driver Development Tools
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tools for INF Files
@@ -15,39 +14,11 @@ ms.localizationpriority: medium
 ## <span id="ddk_tools_for_inf_files_tools"></span><span id="DDK_TOOLS_FOR_INF_FILES_TOOLS"></span>
 
 
-## <span id="in_this_section"></span>In this section
+## In this section
 
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Topic</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><a href="stampinf.md" data-raw-source="[Stampinf](stampinf.md)">Stampinf</a></p></td>
-<td align="left"><p>Stampinf (Stampinf.exe) is a tool that you can use to update common INF and INX file directives when you build the driver.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><a href="infverif.md" data-raw-source="[InfVerif](infverif.md)">InfVerif</a></p></td>
-<td align="left"><p>InfVerif (InfVerif.exe) is a tool that you can use to test a driver INF file. In addition to reporting INF syntax problems, the tool reports if the INF file is universal.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
- 
-
-
-
-
-
+| Topic    | Description                                                                                                                                                                |
+|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Stampinf | Stampinf (Stampinf.exe) is a tool that you can use to update common INF and INX file directives when you build the driver.                                                 |
+| InfVerif | InfVerif (InfVerif.exe) is a tool that you can use to test a driver INF file. In addition to reporting INF syntax problems, the tool reports if the INF file is universal. |
+| Inf2Cat| [Inf2Cat (Inf2Cat.exe)](/windows-hardware/drivers/devtest/inf2cat) is a command-line tool that determines whether a driver package's INF file can be digitally-signed for a specified list of Windows versions.|

@@ -6,7 +6,6 @@ keywords:
 - NDIS miniport drivers WDK , architecture
 - connectionless drivers WDK networking
 ms.date: 11/26/2018
-ms.localizationpriority: medium
 ---
 
 # Miniport drivers

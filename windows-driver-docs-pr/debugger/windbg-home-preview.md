@@ -2,7 +2,6 @@
 title: WinDbg Preview - Home Menu
 description: This section describes how to use the home menu in the WinDbg preview debugger.
 ms.date: 09/10/2019
-ms.localizationpriority: medium
 ---
 
 # WinDbg Preview - Home Menu

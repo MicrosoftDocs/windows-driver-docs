@@ -7,7 +7,6 @@ keywords:
 - functional VidPN WDK display
 - determining VidPN supported WDK display
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

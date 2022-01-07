@@ -13,7 +13,6 @@ keywords:
 - ENCAPIPARAM_BITRATE
 - ENCAPIPARAM_PEAK_BITRATE
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Encoder Implementation and Support

@@ -2,7 +2,6 @@
 title: Handling Client-Implemented Sequences
 description: The optional EvtSpbControllerLock and EvtSpbControllerUnlock event callback functions perform complementary operations.
 ms.date: 09/14/2021
-ms.localizationpriority: medium
 ---
 
 # Handling Client-Implemented Sequences

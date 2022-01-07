@@ -2,7 +2,6 @@
 title: WDM Equivalents for WDF Buffer Pointers
 description: WDM Equivalents for WDF Buffer Pointers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDM Equivalents for WDF Buffer Pointers

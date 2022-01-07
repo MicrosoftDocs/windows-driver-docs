@@ -2,7 +2,6 @@
 title: Configuring a Computer to Support Release-Signing
 description: Configuring a Computer to Support Release-Signing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Configuring a Computer to Support Release-Signing

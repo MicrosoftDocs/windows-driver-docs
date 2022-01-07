@@ -2,7 +2,6 @@
 description: Guidance for the Hardware Vendor
 title: Guidance for the Hardware Vendor
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Guidance for the Hardware Vendor

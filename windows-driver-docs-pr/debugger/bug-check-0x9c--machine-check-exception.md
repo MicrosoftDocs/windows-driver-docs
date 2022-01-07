@@ -9,7 +9,6 @@ api_name:
 - MACHINE_CHECK_EXCEPTION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x9C: MACHINE\_CHECK\_EXCEPTION

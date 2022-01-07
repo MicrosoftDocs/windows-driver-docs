@@ -2,7 +2,6 @@
 title: WIA Item Tree Architecture
 description: WIA Item Tree Architecture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Item Tree Architecture

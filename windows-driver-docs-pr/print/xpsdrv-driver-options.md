@@ -4,7 +4,6 @@ description: XPSDrv Driver Options
 keywords:
 - Version 3 XPS drivers WDK XPSDrv , options
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # XPSDrv Driver Options

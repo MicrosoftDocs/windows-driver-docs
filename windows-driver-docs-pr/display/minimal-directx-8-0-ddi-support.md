@@ -4,7 +4,6 @@ description: Minimal DirectX 8.0 DDI Support
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , minimal support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Minimal DirectX 8.0 DDI Support

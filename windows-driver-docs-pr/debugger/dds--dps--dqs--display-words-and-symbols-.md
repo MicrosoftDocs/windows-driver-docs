@@ -9,7 +9,6 @@ api_name:
 - dds, dps, dqs (Display Words and Symbols)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # dds, dps, dqs (Display Words and Symbols)

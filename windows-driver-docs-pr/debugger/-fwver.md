@@ -9,7 +9,6 @@ api_name:
 - fwver
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !fwver

@@ -6,7 +6,6 @@ keywords:
 - network INF files WDK , ControlFlags section
 - ControlFlags section WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ControlFlags Section in a Network INF File

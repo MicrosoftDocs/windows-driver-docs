@@ -4,7 +4,6 @@ description: Point and Print with Driver Packages
 keywords:
 - Point and Print WDK , packages
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Point and Print with Driver Packages

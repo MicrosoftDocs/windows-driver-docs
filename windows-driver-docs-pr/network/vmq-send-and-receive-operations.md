@@ -2,7 +2,6 @@
 title: VMQ Send and Receive Operations
 description: VMQ Send and Receive Operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # VMQ Send and Receive Operations

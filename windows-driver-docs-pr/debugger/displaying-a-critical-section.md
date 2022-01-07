@@ -3,7 +3,6 @@ title: Displaying a Critical Section
 description: Displaying a Critical Section
 keywords: ["critical section", "critical section, overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Displaying a Critical Section

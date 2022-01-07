@@ -3,7 +3,6 @@ title: Handling IRP_MN_SET_POWER for Device Power States
 description: Handling IRP_MN_SET_POWER for Device Power States
 keywords: ["IRP_MN_SET_POWER", "device power states WDK kernel", "set-power IRPs WDK kernel", "DispatchPower routine", "passing IRPs down device stack WDK", "device set power IRPs WDK kernel", "power IRPs WDK kernel , device changes", "dispatch routines WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling IRP\_MN\_SET\_POWER for Device Power States

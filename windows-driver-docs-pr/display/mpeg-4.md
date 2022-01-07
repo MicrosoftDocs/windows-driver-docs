@@ -4,7 +4,6 @@ description: MPEG-4
 keywords:
 - MPEG-4 WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MPEG-4

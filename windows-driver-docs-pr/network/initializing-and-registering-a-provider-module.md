@@ -8,7 +8,6 @@ keywords:
 - initializing provider modules
 - NmrRegisterProvider
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing and Registering a Provider Module

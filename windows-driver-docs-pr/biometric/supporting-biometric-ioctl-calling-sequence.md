@@ -6,7 +6,6 @@ keywords:
 - supporting IOCTLs WDK biometric
 - IOCTLs WDK biometric
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Biometric IOCTL Calling Sequence

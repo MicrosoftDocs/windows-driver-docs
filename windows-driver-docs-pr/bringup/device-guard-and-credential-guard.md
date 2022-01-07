@@ -2,7 +2,6 @@
 title: Hypervisor-Protected Code Integrity (HVCI) 
 description: Hypervisor-Protected Code Integrity can use hardware technology and virtualization to isolate the Code Integrity (CI) decision-making function from the rest of the Windows operating system.
 ms.date: 08/10/2021
-ms.localizationpriority: medium
 ---
 
 # Hypervisor-Protected Code Integrity (HVCI)

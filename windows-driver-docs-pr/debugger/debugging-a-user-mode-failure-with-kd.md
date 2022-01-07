@@ -3,7 +3,6 @@ title: Debugging a User-Mode Failure with KD
 description: Debugging a User-Mode Failure with KD
 keywords: ["KD, user-mode debugging with KD"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging a User-Mode Failure with KD

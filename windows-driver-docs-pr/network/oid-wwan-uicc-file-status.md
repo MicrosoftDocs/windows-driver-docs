@@ -4,7 +4,6 @@ description: OID_WWAN_UICC_FILE_STATUS retrieves information about a specified U
 ms.date: 04/09/2019
 keywords: 
  -OID_WWAN_UICC_FILE_STATUS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

@@ -2,7 +2,6 @@
 title: Code Example for Obtaining a Function Instance Object
 description: Code Example for Obtaining a Function Instance Object
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code Example for Obtaining a Function Instance Object

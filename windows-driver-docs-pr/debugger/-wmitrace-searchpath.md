@@ -9,7 +9,6 @@ api_name:
 - wmitrace.searchpath
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wmitrace.searchpath

@@ -3,7 +3,6 @@ title: Kernel-Mode Debugging in Visual Studio
 description: To perform kernel-mode debugging in Microsoft Visual Studio
 keywords: ["kernel-mode debugging visual studio"]
 ms.date: 05/11/2018
-ms.localizationpriority: medium
 ---
 
 # <span id="debugger.performing_kernel-mode_debugging_using_visual_studio"></span>Kernel-Mode Debugging in Visual Studio

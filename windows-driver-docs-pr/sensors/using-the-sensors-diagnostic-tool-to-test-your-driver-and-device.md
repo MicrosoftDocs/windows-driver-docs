@@ -2,7 +2,6 @@
 title: Use the Sensors Diagnostic Tool to test your driver and device
 description: Use the Sensors Diagnostic Tool to test your driver and device
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Use the Sensors Diagnostic Tool to test your driver and device

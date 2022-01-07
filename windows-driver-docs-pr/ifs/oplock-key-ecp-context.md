@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/08/2019
-ms.localizationpriority: medium
 ---
 
 # OPLOCK_KEY_ECP_CONTEXT structure

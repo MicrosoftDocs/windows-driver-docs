@@ -15,7 +15,6 @@ keywords:
 - vendor-supplied installation files WDK networking
 - files WDK network component installs
 ms.date: 01/16/2019
-ms.localizationpriority: medium
 ---
 
 # Components and Files Used for Network Component Installation

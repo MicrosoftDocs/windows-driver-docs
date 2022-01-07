@@ -2,7 +2,6 @@
 title: Configuration Section
 description: Configuration Section
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Configuration Section

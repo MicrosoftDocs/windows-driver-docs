@@ -9,7 +9,6 @@ api_name:
 - irpfind
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !irpfind

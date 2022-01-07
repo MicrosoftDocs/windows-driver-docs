@@ -9,7 +9,6 @@ api_name:
 - StorPortEnablePassive
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortEnablePassive rule (storport)

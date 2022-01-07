@@ -11,7 +11,6 @@ keywords:
 - DrvSetPalette
 - color index WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI Support for Palettes

@@ -9,7 +9,6 @@ api_name:
 - CM_Get_Class_Name_ExW
 api_type:
 - NA
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

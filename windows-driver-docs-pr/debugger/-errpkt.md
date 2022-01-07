@@ -9,7 +9,6 @@ api_name:
 - errpkt
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !errpkt

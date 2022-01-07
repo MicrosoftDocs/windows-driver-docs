@@ -5,7 +5,6 @@ keywords:
 - raster data compression WDK Unidrv
 - compressing raster data WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Unidrv-Supported Compression

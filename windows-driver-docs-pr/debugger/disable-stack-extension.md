@@ -3,7 +3,6 @@ title: Disable stack extension
 description: Disable stack extension
 keywords: ["Disable stack extension (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Disable stack extension

@@ -2,7 +2,6 @@
 title: Intermediate Driver Binding Operations
 description: Intermediate Driver Binding Operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Intermediate Driver Binding Operations

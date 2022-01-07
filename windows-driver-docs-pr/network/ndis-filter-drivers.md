@@ -6,7 +6,6 @@ keywords:
 - NDIS filter drivers WDK , architecture
 - filter modules WDK networking
 ms.date: 11/26/2018
-ms.localizationpriority: medium
 ---
 
 # Filter drivers

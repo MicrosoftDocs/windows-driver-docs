@@ -2,7 +2,6 @@
 title: EFI_USBFN_IO_PROTOCOL.GetEndpointStallState
 description: The GetEndpointStallState function returns the stall state on the specified endpoint.
 ms.date: 08/23/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_USBFN_IO_PROTOCOL.GetEndpointStallState

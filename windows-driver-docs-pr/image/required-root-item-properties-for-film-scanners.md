@@ -2,7 +2,6 @@
 title: Required Root Item Properties for Film Scanners
 description: Required Root Item Properties for Film Scanners
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Required Root Item Properties for Film Scanners

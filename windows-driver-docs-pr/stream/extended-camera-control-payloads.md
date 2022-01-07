@@ -2,7 +2,6 @@
 title: Extended Camera Control Payloads
 description: The control properties within the KSPROPERTYSETID_ExtendedCameraControl property set use a common payload format for getting and setting the property data.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Extended Camera Control Payloads

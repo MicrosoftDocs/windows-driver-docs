@@ -2,7 +2,6 @@
 title: Scanner Status Elements
 description: Scanner Status Elements
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Scanner Status Elements

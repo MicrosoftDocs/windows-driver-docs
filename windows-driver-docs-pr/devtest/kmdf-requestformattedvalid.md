@@ -9,7 +9,6 @@ api_name:
 - RequestFormattedValid
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # RequestFormattedValid rule (kmdf)

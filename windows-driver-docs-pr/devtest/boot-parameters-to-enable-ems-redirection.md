@@ -8,7 +8,6 @@ keywords:
 - EMS redirection WDK boot parameters
 - remote administration WDK boot parameters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Boot Parameters to Enable EMS Redirection

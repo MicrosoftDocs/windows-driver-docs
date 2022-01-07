@@ -2,7 +2,6 @@
 title: Reporting Miracast encode chunks and statistics
 description: Display hardware can process each video frame sent over a Miracast wireless display link by splitting the frame into multiple parts, or encode chunks.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Miracast encode chunks and statistics

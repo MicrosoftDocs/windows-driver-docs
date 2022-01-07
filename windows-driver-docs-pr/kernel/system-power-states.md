@@ -3,7 +3,6 @@ title: System Power States
 description: System Power States
 keywords: ["system power states WDK kernel , about system power states", "state transitions WDK power management", "Sx names WDK power management", "software resumption WDK power management", "resumption WDK power management", "hardware latency WDK power management", "system hardware context WDK power management", "hardware context WDK power management", "context WDK power management", "waking states WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # System Power States

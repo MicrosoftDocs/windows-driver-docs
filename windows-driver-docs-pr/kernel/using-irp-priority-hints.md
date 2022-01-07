@@ -1,7 +1,6 @@
 ---
 title: Using IRP Priority Hints
 description: Using IRP Priority Hints
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

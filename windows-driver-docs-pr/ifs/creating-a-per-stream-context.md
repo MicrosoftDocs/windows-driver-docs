@@ -9,7 +9,6 @@ keywords:
 - allocating per-stream context
 - initializing per-stream context
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Per-Stream Context

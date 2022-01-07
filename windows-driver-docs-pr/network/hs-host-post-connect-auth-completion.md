@@ -4,7 +4,6 @@ description: The HS_HOST_POST_CONNECT_AUTH_COMPLETION function indicates the suc
 keywords: 
 - typedef DWORD (WINAPI HS_HOST_POST_CONNECT_AUTH_COMPLETION) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_HOST\_POST\_CONNECT\_AUTH\_COMPLETION function

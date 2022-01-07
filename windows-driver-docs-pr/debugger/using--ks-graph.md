@@ -3,7 +3,6 @@ title: Using ks.graph
 description: Using ks.graph
 keywords: ["kernel streaming debugging, displaying a graph"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using !ks.graph

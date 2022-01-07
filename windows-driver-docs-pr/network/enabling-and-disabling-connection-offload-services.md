@@ -5,7 +5,6 @@ keywords:
 - connection offload WDK TCP/IP transport , enabling services
 - connection offload WDK TCP/IP transport , disabling services
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling and Disabling Connection Offload Services

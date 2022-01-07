@@ -2,7 +2,6 @@
 title: Defining custom values for sensor constants (previous version)
 description: Defining custom values for sensor constants (previous version)
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Defining custom values for sensor constants (previous version)

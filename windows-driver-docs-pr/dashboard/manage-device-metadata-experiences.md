@@ -3,7 +3,6 @@ title: Manage Device Metadata Experiences
 description: Manage Device Metadata Experiences
 ms.topic: article
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Manage Device Metadata Experiences

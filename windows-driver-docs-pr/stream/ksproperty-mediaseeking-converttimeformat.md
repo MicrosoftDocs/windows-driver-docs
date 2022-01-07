@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_MEDIASEEKING\_CONVERTTIMEFORMAT
-description: The KSPROPERTY\_MEDIASEEKING\_CONVERTTIMEFORMAT property converts the specified media time from one supported format to another.
+title: KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT
+description: The KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT property converts the specified media time from one supported format to another.
 keywords: ["KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,73 +10,27 @@ api_location:
 - ks.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/22/2021
 ---
 
-# KSPROPERTY\_MEDIASEEKING\_CONVERTTIMEFORMAT
+# KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT
 
+The **KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT** property converts the specified media time from one supported format to another.
 
-The KSPROPERTY\_MEDIASEEKING\_CONVERTTIMEFORMAT property converts the specified media time from one supported format to another.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_mediaseeking_converttimeformat_ks"></span><span id="DDK_KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property Descriptor Type</th>
-<th>Property Value Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p>None</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksp_timeformat" data-raw-source="[&lt;strong&gt;KSP_TIMEFORMAT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_timeformat)"><strong>KSP_TIMEFORMAT</strong></a></p></td>
-<td><p>LONGLONG</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-## Remarks
-
-Also see [KS Properties](./ks-properties.md).
+| Get | Set | Target | Property Descriptor Type | Property Value Type |
+|--|--|--|--|--|
+| Yes | No | None | [**KSP_TIMEFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_timeformat) | LONGLONG |
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ks.h (include Ks.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ks.h (include Ks.h)
 
 ## See also
 
+[KS Properties](ks-properties.md)
 
-[**KSP\_TIMEFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_timeformat)
+[**KSP_TIMEFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_timeformat)
 
-[KSPROPSETID\_MediaSeeking](kspropsetid-mediaseeking.md)
-
+[KSPROPSETID_MediaSeeking](kspropsetid-mediaseeking.md)

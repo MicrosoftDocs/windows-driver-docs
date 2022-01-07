@@ -16,31 +16,21 @@
         href: step-3--the-driver-for-the-device-is-installed.md
     - name: "Components"
       items: 
-      - name: "System-provided Device Installation Components"
-        href: system-provided-device-installation-components.md
       - name: "Plug and Play Manager"
         href: pnp-manager.md
       - name: "Driver Store"
         href: driver-store.md
-      - name: "Vendor-provided Device Installation Components"
-        href: vendor-provided-device-installation-components.md
-    - name: "Installation Files"
-      items: 
-      - name: "Device Installation Files"
-        href: device-installation-files.md
-      - name: "Sample Device Installation Files"
-        href: sample-device-installation-files.md
     - name: "Device Installation Types"
       href: device-installation-types.md
-    - name: "How Windows Selects Drivers"
+    - name: "How Windows Selects Driver Packages"
       items: 
-      - name: "Overview of the Driver Selection Process"
+      - name: "Overview of the Driver Package Selection Process"
         href: overview-of-the-driver-selection-process.md
-      - name: "How Windows selects a driver for a device"
+      - name: "How Windows selects a driver package for a device"
         href: how-windows-selects-a-driver-for-a-device.md
-    - name: "How Windows Ranks Drivers"
+    - name: "How Windows Ranks Driver Packages"
       items: 
-        - name: "How Windows Ranks Drivers"
+        - name: "How Windows Ranks Driver Packages"
           href: how-setup-ranks-drivers--windows-vista-and-later-.md
         - name: "Signature Categories and Driver Installation"
           href: signature-categories-and-driver-installation.md
@@ -52,11 +42,9 @@
           href: feature-score--windows-vista-and-later-.md
         - name: "Identifier Score"
           href: identifier-score--windows-vista-and-later-.md
-        - name: "Driver Rank Ranges"
-          href: driver-rank-ranges--windows-vista-and-later-.md
-        - name: "Driver Rank Example"
+        - name: "Driver Package Rank Example"
           href: driver-rank-example--windows-vista-and-later-.md
-        - name: "Driver Rank Information in the SetupAPI Log"
+        - name: "Driver Package Rank Information in the SetupAPI Log"
           href: driver-rank-information-in-the-setupapi-log.md
         - name: "AllSigningEqual Group Policy"
           href: allsigningequal-group-policy.md
@@ -70,8 +58,8 @@
       href: components-of-a-driver-package.md
     - name: "Installation Component Overview"
       href: installation-component-overview.md
-    - name: "Supplying an INF File"
-      href: supplying-an-inf-file.md
+    - name: "Sample Device Installation Files"
+      href: sample-device-installation-files.md
   - name: "INF Files"
     items: 
     - name: "Overview of INF Files"
@@ -818,6 +806,8 @@
     href: inf-version-section.md
 - name: "INF Directives"
   items: 
+  - name: "INF AddAutoLogger and UpdateAutoLogger Directives"
+    href: inf-addupdateautologger-directive.md
   - name: "INF AddComponent Directive"
     href: inf-addcomponent-directive.md
   - name: "INF AddEventProvider Directive"
@@ -898,10 +888,6 @@
     href: enumerating-installed-device-interface-classes.md
   - name: "Accessing the Properties of Installed Device Interfaces"
     href: accessing-the-properties-of-installed-device-interface-classes.md
-  - name: "Modifying Registry Keys by Class Installers and Co-installers"
-    href: modifying-registry-keys-by-class-installers-and-co-installers.md
-  - name: "Modifying Registry Values by Class Installers and Co-installers"
-    href: modifying-registry-values-by-class-installers-and-co-installers.md
   - name: "Deleting the Registry Keys of a Device"
     href: deleting-the-registry-keys-of-a-device.md
   - name: "Calling SetupAPI Functions"
@@ -926,8 +912,6 @@
     href: installing-a-new-bus-driver.md
   - name: "Using Custom Hardware IDs and Compatible IDs"
     href: using-custom-hardware-ids-and-compatible-ids.md
-  - name: "Installing a New Device Setup Class for a Bus"
-    href: installing-a-new-device-setup-class-for-a-bus.md
   - name: "Installing Private Builds of In-box Drivers"
     href: installing-private-builds-of-in-box-drivers--windows-vista-and-later-.md
   - name: "Overview of Installing Private Builds of In-box Drivers"

@@ -18,7 +18,6 @@ keywords:
 - memory WDK DirectDraw , configuration options
 - display memory WDK DirectDraw , configuration options
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Memory Configurations

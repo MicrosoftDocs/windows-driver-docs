@@ -9,7 +9,6 @@ api_name:
 - Irql_IM_Function
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Irql\_IM\_Function rule (ndis)

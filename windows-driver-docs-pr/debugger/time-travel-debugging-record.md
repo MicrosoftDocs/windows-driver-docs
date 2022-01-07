@@ -2,7 +2,6 @@
 title: Time Travel Debugging - Record a trace 
 description: This section describes how to record time travel traces.
 ms.date: 01/23/2020
-ms.localizationpriority: medium
 ---
 
 #  Time Travel Debugging - Record a trace

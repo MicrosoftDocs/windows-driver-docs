@@ -2,7 +2,6 @@
 title: I (Windows Debugger Glossary)
 description: Glossary page - I
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # I

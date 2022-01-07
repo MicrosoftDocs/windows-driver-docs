@@ -7,7 +7,6 @@ keywords:
 - locations WDK INF files
 - media WDK INF files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Target Media for INF Files

@@ -3,7 +3,6 @@ title: User-Mode Extensions
 description: User-Mode Extensions
 keywords: ["extension commands ( commands), user-mode extensions", "ntsdexts.dll (user-mode extensions)", "uext.dll (user-mode extensions)", "user-mode extensions (ntsdexts.dll and uext.dll)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # User-Mode Extensions

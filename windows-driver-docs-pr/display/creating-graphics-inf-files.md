@@ -10,7 +10,6 @@ keywords:
 - graphics INF files WDK Windows 2000 display
 - geninf.exe
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Graphics INF Files

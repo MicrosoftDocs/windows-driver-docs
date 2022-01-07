@@ -9,7 +9,6 @@ api_name:
 - HAL_IOMMU_INTERNAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1D9: HAL\_IOMMU\_INTERNAL\_ERROR
@@ -46,10 +45,10 @@ The HAL\_IOMMU\_INTERNAL\_ERROR bug check has a value of 0x000001D9. It indicate
      Parameter 3 - Pointer to the IOMMU domain object
 ```
 
-## ## Cause
+## Cause
 
 An internal error was detected in the HAL IOMMU library.
 
-## ## See Also-
+## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)

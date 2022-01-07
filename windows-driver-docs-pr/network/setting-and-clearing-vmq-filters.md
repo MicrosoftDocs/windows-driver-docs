@@ -2,7 +2,6 @@
 title: Setting and Clearing VMQ Filters
 description: Setting and Clearing VMQ Filters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting and Clearing VMQ Filters

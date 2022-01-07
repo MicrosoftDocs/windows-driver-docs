@@ -1,6 +1,6 @@
 ---
-title: WIA\_DPC\_FOCUS\_METERING\_MODE
-description: The WIA\_DPC\_FOCUS\_METERING\_MODE property specifies the mode that a camera uses to automatically adjust the focus.
+title: WIA_DPC_FOCUS_METERING_MODE
+description: The WIA_DPC_FOCUS_METERING_MODE property specifies the mode that a camera uses to automatically adjust the focus.
 keywords: ["WIA_DPC_FOCUS_METERING_MODE Imaging Devices"]
 topic_type:
 - apiref
@@ -10,77 +10,30 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 09/29/2021
 ---
 
-# WIA\_DPC\_FOCUS\_METERING\_MODE
+# WIA_DPC_FOCUS_METERING_MODE
 
+The WIA_DPC_FOCUS_METERING_MODE property specifies the mode that a camera uses to automatically adjust the focus.
 
-The WIA\_DPC\_FOCUS\_METERING\_MODE property specifies the mode that a camera uses to automatically adjust the focus.
+Property Type: VT_I4
 
-## <span id="ddk_wia_dpc_focus_metering_mode_si"></span><span id="DDK_WIA_DPC_FOCUS_METERING_MODE_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_LIST
+Valid Values: WIA_PROP_LIST
 
 Access Rights: Read/write
 
 ## Remarks
 
-The following table describes the constants that are valid with the WIA\_DPC\_FOCUS\_METERING\_MODE property.
+The following table describes the constants that are valid with the WIA_DPC_FOCUS_METERING_MODE property.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>FOCUSMETERING_CENTERSPOT</p></td>
-<td><p>Adjust the focus based on a center spot.</p></td>
-</tr>
-<tr class="even">
-<td><p>FOCUSMETERING_MULTISPOT</p></td>
-<td><p>Adjust the focus based on a multispot pattern.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Value | Definition |
+|--|--|
+| FOCUSMETERING_CENTERSPOT | Adjust the focus based on a center spot. |
+| FOCUSMETERING_MULTISPOT | Adjust the focus based on a multispot pattern. |
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Obsolete in Windows Vista and later operating systems and should no longer be used. However, this property is still defined in Windows Vista for compatibility with applications and devices designed for Windows Server 2003, Windows XP, and previous versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Version:** Obsolete in Windows Vista and later operating systems and should not be used.
 
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

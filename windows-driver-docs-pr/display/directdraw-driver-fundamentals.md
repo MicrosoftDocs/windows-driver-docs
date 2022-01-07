@@ -2,7 +2,6 @@
 title: DirectDraw Driver Fundamentals
 description: DirectDraw Driver Fundamentals
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectDraw Driver Fundamentals

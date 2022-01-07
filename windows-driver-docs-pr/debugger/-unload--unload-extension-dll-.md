@@ -9,7 +9,6 @@ api_name:
 - .unload (Unload Extension DLL)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .unload (Unload Extension DLL)

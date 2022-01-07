@@ -9,7 +9,6 @@ api_name:
 - facs
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !facs

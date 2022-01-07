@@ -9,7 +9,6 @@ api_name:
 - gs
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !gs

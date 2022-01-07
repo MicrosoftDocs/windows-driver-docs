@@ -3,7 +3,6 @@ title: Allocating an Adapter Channel for Packet-Based DMA
 description: Allocating an Adapter Channel for Packet-Based DMA
 keywords: ["system DMA WDK kernel , packet-based", "packet-based DMA WDK kernel", "DMA transfers WDK kernel , packet-based", "allocating adapter channels", "adapter channel allocations WDK kernel", "AllocateAdapterChannel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Allocating an Adapter Channel for Packet-Based DMA

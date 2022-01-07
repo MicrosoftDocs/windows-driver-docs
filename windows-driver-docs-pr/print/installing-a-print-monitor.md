@@ -8,7 +8,6 @@ keywords:
 - language monitors WDK print , installing
 - port monitors WDK print , installing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing a Print Monitor

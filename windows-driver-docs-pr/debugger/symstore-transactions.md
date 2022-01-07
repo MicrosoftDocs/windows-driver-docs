@@ -3,7 +3,6 @@ title: SymStore Transactions
 description: SymStore Transactions
 keywords: ["SymStore, transactions"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # SymStore Transactions

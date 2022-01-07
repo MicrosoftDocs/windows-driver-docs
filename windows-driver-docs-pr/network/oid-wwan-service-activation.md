@@ -4,7 +4,6 @@ description: OID_WWAN_SERVICE_ACTIVATION instructs miniport drivers to initiate 
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SERVICE_ACTIVATION Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_SERVICE\_ACTIVATION

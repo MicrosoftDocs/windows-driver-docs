@@ -4,7 +4,6 @@ description: WDI_TLV_CREATE_PORT_PARAMETERS is a TLV that contains parameters fo
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CREATE_PORT_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CREATE\_PORT\_PARAMETERS

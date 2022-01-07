@@ -2,7 +2,6 @@
 title: Direct3D hardware requirements in Windows 8
 description: This topic describes hardware requirements to support Microsoft Direct3D in Windows 8.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Direct3D hardware requirements in Windows 8

@@ -14,7 +14,6 @@ keywords:
 - D3dCreateSurfaceEx
 - DdDestroySurface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating and Destroying DirectDraw Surfaces

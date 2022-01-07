@@ -6,7 +6,6 @@ keywords:
 - StaticDV WDK , limitations
 - SDV WDK , limitations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Static Driver Verifier General Tool and Technical Limitations

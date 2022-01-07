@@ -2,7 +2,6 @@
 title: WIA Item Flags for Film Scanners
 description: WIA Item Flags for Film Scanners
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Item Flags for Film Scanners

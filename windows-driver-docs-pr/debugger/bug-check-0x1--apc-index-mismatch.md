@@ -9,7 +9,6 @@ api_name:
 - APC_INDEX_MISMATCH
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1: APC\_INDEX\_MISMATCH

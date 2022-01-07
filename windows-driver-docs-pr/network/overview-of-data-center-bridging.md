@@ -2,7 +2,6 @@
 title: Overview of Data Center Bridging
 description: Overview of Data Center Bridging
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of Data Center Bridging

@@ -4,7 +4,6 @@ description: Crash Dump and Hibernation Support
 keywords:
 - crash dump WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Crash Dump and Hibernation Support

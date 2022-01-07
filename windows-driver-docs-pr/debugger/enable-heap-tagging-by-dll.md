@@ -3,7 +3,6 @@ title: Enable heap tagging by DLL
 description: Enable heap tagging by DLL
 keywords: ["Enable heap tagging by DLL (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Enable heap tagging by DLL

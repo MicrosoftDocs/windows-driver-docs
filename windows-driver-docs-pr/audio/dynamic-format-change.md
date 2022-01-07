@@ -2,7 +2,6 @@
 title: Dynamic Format Change
 description: Dynamic Format Change
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Dynamic Format Change

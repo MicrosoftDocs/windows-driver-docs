@@ -2,7 +2,6 @@
 title: Mapping WIA Properties with the Same IDs and Names
 description: Mapping WIA Properties with the Same IDs and Names
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mapping WIA Properties with the Same IDs and Names

@@ -9,7 +9,6 @@ api_name:
 - SMB_REDIRECTOR_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1A7: SMB\_REDIRECTOR\_LIVEDUMP
@@ -42,7 +41,7 @@ The SMB redirector has detected a problem and has captured a kernel dump to coll
     4 - Reserved.
 ```
 
-## ## Cause
+## Cause
 
 The SMB redirector has detected a problem and has captured a kernel dump to collect debug information.
 
@@ -56,6 +55,6 @@ When this registry key is set and the RDR times out on IO, a livedump will occur
 
 (This code can never be used for a real bugcheck; it is used to identify live dumps.)
 
-## ## See Also-
+## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)

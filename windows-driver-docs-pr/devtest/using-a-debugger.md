@@ -4,7 +4,6 @@ description: Using a Debugger
 keywords:
 - debugging drivers WDK , debuggers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using a Debugger

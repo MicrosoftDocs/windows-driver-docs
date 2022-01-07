@@ -13,7 +13,6 @@ keywords:
 - frames WDK video port extensions
 - National Television Systems Committee WDK VPEs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NTSC and Interlaced Data

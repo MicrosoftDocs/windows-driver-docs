@@ -7,7 +7,6 @@ keywords:
 - IDD objects
 - Indirect display driver, UMDF objects
 - IDD, UMDF objects
-ms.localizationpriority: medium
 ---
 
 # IddCx Objects

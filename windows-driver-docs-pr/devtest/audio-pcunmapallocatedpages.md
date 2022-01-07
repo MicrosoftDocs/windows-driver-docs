@@ -9,7 +9,6 @@ api_name:
 - PcUnmapAllocatedPages
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PcUnmapAllocatedPages rule (audio)

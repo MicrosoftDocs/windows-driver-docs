@@ -7,7 +7,6 @@ keywords:
 - color management WDK print
 - printer driver color management WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Color Management for Printers

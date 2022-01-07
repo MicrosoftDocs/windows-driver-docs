@@ -1,13 +1,12 @@
 ---
 title: EFI_CHECKSIG_PROTOCOL.EfiCheckSignatureAndHash
 description: Provides information about EFI_CHECKSIG_PROTOCOL.EfiCheckSignatureAndHash.
-ms.date: 08/20/2021
-ms.localizationpriority: medium
+ms.date: 09/28/2021
 ---
 
 # EFI_CHECKSIG_PROTOCOL.EfiCheckSignatureAndHash
 
-This function verifies the signature on the catalog file in the FFU against the PK on the device. It also verifies that the hash of the table of hashes matches the hash specified in the catalog file.
+This function verifies the signature on the catalog file in the Full Flash Update (FFU) against the PK on the device. It also verifies that the hash of the table of hashes matches the hash specified in the catalog file.
 
 ## Syntax
 
@@ -57,3 +56,7 @@ The call to this function is synchronous.
 ## Requirements
 
 **Header:** User generated
+
+## See also
+
+[Capture and apply Windows Full Flash Update (FFU) images](/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu)

@@ -2,7 +2,6 @@
 title: What is the TMC file
 description: What is the TMC file
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # What is the TMC file?

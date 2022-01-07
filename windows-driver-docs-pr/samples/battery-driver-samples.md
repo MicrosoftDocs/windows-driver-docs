@@ -2,7 +2,6 @@
 title: Battery driver samples
 description: The battery driver sample in this directory provides a starting point for writing a custom driver for your device.
 ms.date: 11/15/2019
-ms.localizationpriority: medium
 ---
 
 # Battery driver samples

@@ -4,7 +4,6 @@ description: This topic describes appendix information for the Mobile Plans prog
 keywords:
 - Windows Mobile Plans appendix, Mobile Plans appendix mobile operators
 ms.date: 07/05/2019
-ms.localizationpriority: medium
 ---
 
 # Mobile Plans general appendix

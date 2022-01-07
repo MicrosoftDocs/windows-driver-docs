@@ -2,7 +2,6 @@
 title: Set Request and Response Schemas
 description: The Set request schema and corresponding response schema definition, and an example of each, are below.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Set Request and Response Schemas

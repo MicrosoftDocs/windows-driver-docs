@@ -5,7 +5,6 @@ keywords:
 - Plotter Driver WDK print , samples
 - MSPlot WDK print , samples
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sample Plotter Driver Files

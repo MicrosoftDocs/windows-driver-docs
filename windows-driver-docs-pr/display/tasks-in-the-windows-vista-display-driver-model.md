@@ -5,7 +5,6 @@ keywords:
 - display driver model WDK Windows Vista , tasks
 - Windows Vista display driver model WDK , tasks
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tasks in the Windows Display Driver Model (WDDM)

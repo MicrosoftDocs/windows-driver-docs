@@ -6,7 +6,6 @@ keywords:
 - VGA WDK video miniport , SvgaHwIoPortXxx functions
 - SvgaHwIoPortXxx functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Validating Instructions in SvgaHwIoPortXxx

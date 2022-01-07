@@ -2,7 +2,6 @@
 title: What is the syntax of the complex types definition
 description: What is the syntax of the complex types definition
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # What is the syntax of the complex types definition?

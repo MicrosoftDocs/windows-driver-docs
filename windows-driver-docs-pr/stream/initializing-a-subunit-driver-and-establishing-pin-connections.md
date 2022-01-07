@@ -14,7 +14,6 @@ keywords:
 - external plug connections WDK AV/C
 - KSPIN_DESCRIPTOR
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing a Subunit Driver and Establishing Pin Connections

@@ -2,7 +2,6 @@
 title: Wi-Fi Hotspot Offloading Overview
 description: Wi-Fi Hotspot Offloading Overview
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Wi-Fi Hotspot Offloading Overview

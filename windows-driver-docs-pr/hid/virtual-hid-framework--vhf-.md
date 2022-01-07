@@ -2,7 +2,6 @@
 title: Write a HID source driver by using Virtual HID Framework (VHF)
 description: Learn about writing a HID source driver that reports HID data to the operating system.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Write a HID source driver by using Virtual HID Framework (VHF)
@@ -19,9 +18,9 @@ ms.localizationpriority: medium
 
 **Important APIs**
 
--   [Virtual HID Framework Callback Functions](/windows-hardware/drivers/ddi/_hid/#callback-functions)
--   [Virtual HID Framework Methods](/windows-hardware/drivers/ddi/_hid/#functions)
--   [Virtual HID Framework Structures](/windows-hardware/drivers/ddi/_hid/#functions)
+-   [Virtual HID Framework Callback Functions](/windows-hardware/drivers/ddi/vhf/#callback-functions)
+-   [Virtual HID Framework Methods](/windows-hardware/drivers/ddi/vhf/#functions)
+-   [Virtual HID Framework Structures](/windows-hardware/drivers/ddi/vhf/#structures)
 
 Learn about writing a HID source driver that reports HID data to the operating system.
 

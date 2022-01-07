@@ -9,7 +9,6 @@ api_name:
 - DoubleCompleteWorkItem
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DoubleCompleteWorkItem rule (ndis)

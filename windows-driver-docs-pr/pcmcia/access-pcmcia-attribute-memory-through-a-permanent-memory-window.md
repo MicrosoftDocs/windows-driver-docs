@@ -5,7 +5,6 @@ keywords:
 - attribute memory WDK PCMCIA bus , permanent-assigned memory window
 - permanent memory window WDK PCMCIA bus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Access PCMCIA Attribute Memory Through a Permanent Memory Window

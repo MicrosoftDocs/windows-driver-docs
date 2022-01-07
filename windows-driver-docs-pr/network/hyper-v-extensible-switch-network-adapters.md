@@ -2,7 +2,6 @@
 title: Hyper-V Extensible Switch Network Adapters Topics
 description: Hyper-V Extensible Switch Network Adapters Topics
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hyper-V Extensible Switch Network Adapters Topics

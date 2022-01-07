@@ -6,7 +6,6 @@ keywords:
 - initializing header-data split providers
 - header-data split providers WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing a Header-Data Split Provider

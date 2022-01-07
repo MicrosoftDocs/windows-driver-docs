@@ -3,7 +3,6 @@ title: Defining WMI Instance Names
 description: Defining WMI Instance Names
 keywords: ["WMI WDK kernel , event blocks", "event blocks WDK WMI", "data blocks WDK WMI", "WMI WDK kernel , data blocks", "blocks WDK WMI", "dynamic instance names WDK WMI", "static instance names WDK WMI", "instance names WDK WMI", "WMI WDK kernel , instance names"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Defining WMI Instance Names

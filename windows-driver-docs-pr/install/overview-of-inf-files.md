@@ -9,7 +9,6 @@ keywords:
 - installing devices WDK , INF files
 - Install a driver by using an INF file
 ms.date: 08/05/2021
-ms.localizationpriority: High
 ---
 
 # Overview of INF Files
@@ -20,7 +19,7 @@ Windows uses setup information (INF) files to install the following components f
 
 -   Device-specific configuration or settings to bring the device online.
 
-An INF file is a text file that contains all the information that [device installation components](/previous-versions/ff541277(v=vs.85)) used to install a driver. Windows installs drivers using INF files. This information includes the following:
+An INF file is a text file that contains all the information that device installation components used to install a driver. Windows installs drivers using INF files. This information includes the following:
 
 -   Driver name and location
 -   Driver version information

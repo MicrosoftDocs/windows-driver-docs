@@ -7,7 +7,6 @@ keywords:
 - in-box autoconfiguration support WDK printer
 - in-box autoconfiguration support WDK printer , about in-box autoconfiguration support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # In-Box Support for Autoconfiguration

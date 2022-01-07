@@ -11,7 +11,6 @@ keywords:
 - notifications WDK PnP , NDIS protocol drivers
 - event notifications WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling PnP Events and Power Management Events in a Protocol Driver

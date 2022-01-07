@@ -2,7 +2,6 @@
 title: Namespaces for WIA Drivers
 description: Namespaces for WIA Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Namespaces for WIA Drivers

@@ -9,7 +9,6 @@ api_name:
 - mapic
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !mapic

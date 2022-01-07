@@ -9,7 +9,6 @@ api_name:
 - .logappend (Append Log File)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .logappend (Append Log File)

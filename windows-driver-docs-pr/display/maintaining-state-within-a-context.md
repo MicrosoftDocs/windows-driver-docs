@@ -7,7 +7,6 @@ keywords:
 - internal states WDK Direct3D
 - public states WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Maintaining State Within a Context

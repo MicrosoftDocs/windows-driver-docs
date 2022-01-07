@@ -2,7 +2,6 @@
 title: Known issues
 description: This topic identifies known issues in the tool outupt.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Known issues

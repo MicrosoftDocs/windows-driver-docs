@@ -9,7 +9,6 @@ api_name:
 - ks.dump
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.dump

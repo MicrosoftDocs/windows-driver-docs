@@ -4,7 +4,6 @@ description: This topic describes the GUID_NDIS_GEN_INTERRUPT_MODERATION GUID fo
 keywords:
 - GUID_NDIS_GEN_INTERRUPT_MODERATION, WDK GUID_NDIS_GEN_INTERRUPT_MODERATION network drivers
 ms.date: 11/22/2017
-ms.localizationpriority: medium
 ---
 
 # GUID_NDIS_GEN_INTERRUPT_MODERATION

@@ -9,7 +9,6 @@ keywords:
 - HwContext pointer
 - HwScsiFindAdapter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Use the HwContext Pointer to HwScsiFindAdapter Correctly

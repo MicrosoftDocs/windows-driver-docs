@@ -9,7 +9,6 @@ api_name:
 - sym
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !sym

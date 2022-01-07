@@ -2,7 +2,6 @@
 title: Authoring Tests
 description: Authoring Tests
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Authoring Tests

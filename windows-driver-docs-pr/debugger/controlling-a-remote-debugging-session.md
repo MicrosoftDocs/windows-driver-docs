@@ -3,7 +3,6 @@ title: Controlling a Remote Debugging Session
 description: Controlling a Remote Debugging Session
 keywords: ["remote debugging through the debugger, controlling a session"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Controlling a Remote Debugging Session

@@ -11,58 +11,58 @@ keywords:
 - .sys files
 - SYS files
 - .cat files
-ms.date: 05/09/2018
-ms.localizationpriority: High
+ms.date: 12/09/2021
 ---
 
 # Components of a Driver Package
 
-
-
-
-
-The following components are necessary to install and support a device on a Windows operating system:
-
-<a href="" id="the-device-itself"></a>**The device itself**  
-If you plan to design and build a new device, follow industry hardware standards. When you follow these standards, you are more likely to have a streamlined development process as well as lower your support costs. Not only do test suites exist for such devices, but, in many cases, generic drivers exist for standard types. Therefore, you might not have to write a new driver.
-
-<a href="" id="the-driver-package-for-the-device"></a>**The driver package for the device**  
 A driver package includes all the software components that you must supply to ensure that your device is supported with Windows. Typically, a driver package contains the following components:
 
--   Driver files
+-   INF file
 
--   Installation files
+-   Catalog file
+
+-   Driver files
 
 -   Other files
 
 A brief description of each component of a driver package follows.
 
-### Driver Files
+The WDK includes various sample driver packages. For more information, see [Sample Device Installation Files](sample-device-installation-files.md)
 
-The driver is the part of the package that provides the I/O interface for a device. Typically, a driver is a dynamic-link library (DLL) with the .*sys* file name extension. Long file names are allowed, except for *boot-start drivers*. When a device is installed, Windows copies the *.sys* file to the *%SystemRoot%\\system32\\drivers* directory.
 
-The software that is required to support a particular device depends on the features of the device and the bus or port to which it connects. Microsoft ships drivers for many common devices and nearly all buses with the operating system. If your device can be serviced by one of these drivers, you might have to write only a device-specific *minidriver*. A minidriver handles device-specific features on behalf of a system-supplied driver. For some types of devices, even a minidriver is not necessary. For example, modems can typically be supported with just installation files.
+## INF file
 
-### Installation Files
+Every driver package must include an INF file, which the device installation components read when installing the device. An INF file is not an installation script. It is an ASCII or Unicode (UTF-16 only) text file that provides device and driver information, including the driver files, registry entries, device IDs, [catalog files](catalog-files.md), and version information that is required to install driver package on a device.
 
-In addition to the device and the driver, a driver package also contains one or more of the following files that provide driver installation:
+The exact contents and format of the INF file depend on the [device setup class](./overview-of-device-setup-classes.md) that the INF declares itself as being in. [Summary of INF Sections](summary-of-inf-sections.md) describes the information that is required in each type of INF. In general, per-manufacturer information is located in an [**INF *Models* section**](inf-models-section.md). Entries in the **Models** section refer to [**INF *DDInstall* sections**](inf-ddinstall-section.md) that contain model-specific details.
 
--   A device setup information (INF) file
+The [InfVerif](../devtest/infverif.md) tool, which is provided in the *\\tools* directory of the Microsoft Windows Driver Kit (WDK), checks the syntax and structure of all cross-class INF sections and directives, together with the class-specific extensions for all setup classes except for Printers.
 
-    An INF file contains information that the [system-provided device installation components](system-provided-device-installation-components.md) use to install support for the device. Windows copies this file to the %*SystemRoot*%\\*inf* directory when it installs the device. Every device must have an INF file.
+Starting with Windows 2000, you can use a single INF file for installation on all versions of the Windows operating system. For more information, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md). If your device will be sold in the international market, you should [create an international INF file](creating-international-inf-files.md). Depending on the localities involved, an international INF file might have to be a Unicode (UTF-16) file instead of ASCII.
 
-    For more information, see [Supplying an INF File](supplying-an-inf-file.md).
+A good way to create an INF file for your driver is to modify one of the samples that the WDK provides. Most of the WDK sample drivers include INF files in the same directory as the sample driver.
 
--   A driver [catalog (.cat) file](catalog-files.md)
+For more information about INF files, see [Creating an INF File](overview-of-inf-files.md), the documentation for [InfVerif](../devtest/infverif.md), the device-specific documentation in the WDK, and the INF files that are supplied with sample drivers for devices similar to yours.
 
-    A driver catalog file contains a cryptographic hash of each file in the driver package. Windows uses these hashes to verify that the package was not altered after it was published. To ensure that the catalog file is not altered, it should be [digitally signed](digital-signatures.md).
+## Catalog file
 
-    For information about how to sign drivers, see [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md) and [Signing Drivers during Development and Test](./introduction-to-test-signing.md).
+A driver catalog file contains a cryptographic hash of each file in the driver package. Windows uses these hashes to verify that the package was not altered after it was published. To ensure that the catalog file is not altered, it must be [digitally signed](digital-signatures.md) with a digital signature that would be trusted by the systems that should use this driver package.
 
-### Other Files
+A vendor obtains release digital signatures by submitting its driver package to the Windows Hardware Quality Lab (WHQL) for testing and signing. WHQL returns the package with a catalog file (.*cat* file). For more information, see [WHQL release signatures](whql-release-signature.md).
 
-A driver package can also contain other files, such as a device installation application, a device icon, device property pages, and so forth. For more information, see the following topics:
+For information about how to sign drivers, see [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md) and [Signing Drivers during Development and Test](./introduction-to-test-signing.md).
+
+The INF file must reference the catalog file with a *CatalogFile* directive in the [**INF *Version* section**](inf-version-section.md) of the INF.
+
+## Driver Files
+
+In most cases, a driver package will contain one or more driver services that should be part of the [device stack](../gettingstarted/device-nodes-and-device-stacks.md) for the device the driver package is installed on. For more information on driver services, see [Choosing a Driver Model](../gettingstarted/choosing-a-driver-model.md). The driver service is the part of the package that provides the I/O interface for a device. Typically, a driver is a dynamic-link library (DLL) with the .*sys* file name extension. Long file names are allowed, except for *boot-start drivers*.
+
+The software that is required to support a particular device depends on the features of the device and the bus or port to which it connects. Microsoft ships drivers for many common devices. If your device can be serviced by one of these drivers, you might have to write only a device-specific *minidriver*. A minidriver handles device-specific features on behalf of a system-supplied driver. For some types of devices, even a minidriver is not necessary. For example, modems can typically be supported with just installation files.
+
+## Other Files
+
+A driver package can also contain other files, such as hardware calibration settings, a Win32 service, a device icon, or a driver library file (such as for video drivers). For more information, see the following topic:
 
 [Providing Icons for a Device](providing-vendor-icons-for-the-shell-and-autoplay.md)
-
-[Installing a Boot-Start Driver](installing-a-boot-start-driver.md)

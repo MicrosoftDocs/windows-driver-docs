@@ -2,7 +2,6 @@
 title: Summary property
 description: A brief description of the current state of the device.
 ms.date: 09/08/2021
-ms.localizationpriority: medium
 ---
 
 # Summary property

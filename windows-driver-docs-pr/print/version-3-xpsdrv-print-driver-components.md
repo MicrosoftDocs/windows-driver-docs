@@ -9,7 +9,6 @@ keywords:
 - Version 3 XPS drivers WDK XPSDrv , about Version 3 XPS drivers
 - XPSDrv printer drivers WDK , Version 3 XPS drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Version 3 XPSDrv Print Driver Components

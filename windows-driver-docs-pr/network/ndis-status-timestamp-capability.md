@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_TIMESTAMP_CAPABILITY status in
 ms.date: 01/31/2021
 keywords:
  - NDIS_STATUS_TIMESTAMP_CAPABILITY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_TIMESTAMP_CAPABILITY

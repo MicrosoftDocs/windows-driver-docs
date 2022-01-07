@@ -2,7 +2,6 @@
 title: Declaring Functions Using Function Role Types for WDM Drivers
 description: Declaring Functions Using Function Role Types for WDM Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Declaring Functions Using Function Role Types for WDM Drivers

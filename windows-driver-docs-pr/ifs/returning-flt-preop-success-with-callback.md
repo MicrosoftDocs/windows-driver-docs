@@ -4,7 +4,6 @@ description: Returning FLT_PREOP_SUCCESS_WITH_CALLBACK
 keywords:
 - FLT_PREOP_SUCCESS_WITH_CALLBACK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Returning FLT\_PREOP\_SUCCESS\_WITH\_CALLBACK

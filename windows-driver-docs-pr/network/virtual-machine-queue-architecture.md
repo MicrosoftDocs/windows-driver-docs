@@ -1,15 +1,11 @@
 ---
-title: Virtual Machine Queue Architecture
-description: Virtual Machine Queue Architecture
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+title: Virtual Machine Queue (VMQ) Architecture
+description: The NDIS virtual machine queue (VMQ) architecture provides several advantages for virtualization.
+ms.date: 11/30/2021
+ms.custom: contperf-fy22q2
 ---
 
-# Virtual Machine Queue Architecture
-
-
-
-
+# Virtual Machine Queue (VMQ) Architecture
 
 The NDIS virtual machine queue (VMQ) architecture provides advantages for virtualization such as:
 
@@ -24,6 +20,12 @@ This section provides high-level information about the NDIS VMQ interface. You s
 This section includes the following topics:
 
 [Introduction to NDIS Virtual Machine Queue (VMQ)](introduction-to-ndis-virtual-machine-queue--vmq-.md)
+
+[VMQ Components](vmq-components.md)
+
+[VMQ Receive Queues](vmq-receive-queues.md)
+
+[VMQ Receive Filters](vmq-receive-filters.md)
 
 [Security Issues with NDIS Virtual Machine (VM) Shared Memory](security-issues-with-ndis-virtual-machine--vm--shared-memory.md)
 

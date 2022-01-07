@@ -3,7 +3,6 @@ title: The VSSDump Tool
 description: The VSSDump Tool
 keywords: ["SrcSrv, VSSDump tool", "VSSDump tool"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # The VSSDump Tool

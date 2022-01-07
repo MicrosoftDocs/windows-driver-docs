@@ -2,7 +2,6 @@
 title: Supporting Graphics DDI Color and Pattern Functions
 description: Supporting Graphics DDI Color and Pattern Functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Graphics DDI Color and Pattern Functions

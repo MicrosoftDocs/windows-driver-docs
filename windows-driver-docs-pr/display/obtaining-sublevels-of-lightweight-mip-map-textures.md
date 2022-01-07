@@ -5,7 +5,6 @@ keywords:
 - MIP map textures WDK DirectX 9.0 , obtaining sublevels
 - lightweight MIP-map textures WDK DirectX 9.0 , obtaining sublevels
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Obtaining Sublevels of Lightweight MIP Map Textures

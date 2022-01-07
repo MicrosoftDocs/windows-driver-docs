@@ -6,7 +6,6 @@ keywords:
 - free builds WDK
 - retail builds WDK
 ms.date: 05/08/2020
-ms.localizationpriority: medium
 ---
 
 # Checked and Free Build Differences

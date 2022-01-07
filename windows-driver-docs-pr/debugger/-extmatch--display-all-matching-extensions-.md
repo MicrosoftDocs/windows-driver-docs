@@ -9,7 +9,6 @@ api_name:
 - .extmatch (Display All Matching Extensions)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .extmatch (Display All Matching Extensions)

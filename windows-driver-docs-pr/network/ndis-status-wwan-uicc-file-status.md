@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_UICC_FILE_STATUS notifica
 ms.date: 04/09/2019
 keywords: 
  -NDIS_STATUS_WWAN_UICC_FILE_STATUS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

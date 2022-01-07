@@ -3,7 +3,6 @@ title: Processing WMI IRPs in a DispatchSystemControl Routine
 description: Processing WMI IRPs in a DispatchSystemControl Routine
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI", "DispatchSystemControl routine"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Processing WMI IRPs in a DispatchSystemControl Routine

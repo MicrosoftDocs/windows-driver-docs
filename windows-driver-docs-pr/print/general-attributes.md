@@ -6,7 +6,6 @@ keywords:
 - general printer attributes WDK Unidrv
 - general printer attributes WDK Unidrv , about general printer attributes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # General Attributes

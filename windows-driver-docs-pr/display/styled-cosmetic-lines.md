@@ -9,7 +9,6 @@ keywords:
 - styled cosmetic lines WDK GDI
 - cosmetic lines WDK GDI , styled
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Styled Cosmetic Lines

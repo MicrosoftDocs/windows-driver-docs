@@ -9,7 +9,6 @@ api_name:
 - VIDEO_DXGKRNL_FATAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x113: VIDEO\_DXGKRNL\_FATAL\_ERROR

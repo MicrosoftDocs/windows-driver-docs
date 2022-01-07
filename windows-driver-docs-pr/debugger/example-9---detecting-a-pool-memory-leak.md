@@ -3,7 +3,6 @@ title: Example 9 Detecting a Pool Memory Leak
 description: Example 9 Detecting a Pool Memory Leak
 keywords: ["PoolMon, PoolMon and GFlags"]
 ms.date: 10/12/2018
-ms.localizationpriority: medium
 ---
 
 # Example 9: Detecting a Pool Memory Leak

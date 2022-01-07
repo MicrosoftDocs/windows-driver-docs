@@ -3,7 +3,6 @@ title: sel (WinDbg)
 description: sel
 keywords: ["sel extension (obsolete)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # !sel

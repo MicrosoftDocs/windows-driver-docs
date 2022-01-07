@@ -12,7 +12,6 @@ keywords:
 - TDR tests, WHLK
 - TDR tests, Windows Hardware Lab Kit
 ms.date: 03/30/2021
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q3
 ---
 

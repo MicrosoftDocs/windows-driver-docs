@@ -3,7 +3,6 @@ title: Help Search
 description: Help Search
 keywords: ["Help Search", "help file, Help Search"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Help | Search

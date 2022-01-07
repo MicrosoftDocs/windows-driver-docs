@@ -6,7 +6,6 @@ keywords:
 - video miniport driver bug-check data WDK DirectX 9.0
 - bug-check data size WDK DirectX 9.0
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

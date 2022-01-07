@@ -7,7 +7,6 @@ keywords:
 - printer configuration WDK
 - printer drivers WDK , configuring
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Printer Configuration

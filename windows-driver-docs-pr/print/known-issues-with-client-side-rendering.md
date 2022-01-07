@@ -4,7 +4,6 @@ description: Known Issues with Client-Side Rendering
 keywords:
 - client-side rendering WDK print , known issues
 ms.date: 01/24/2019
-ms.localizationpriority: medium
 ---
 
 # Known Issues with Client-Side Rendering

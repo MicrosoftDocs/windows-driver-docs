@@ -9,7 +9,6 @@ api_name:
 - WORKER_THREAD_INVALID_STATE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1D2: WORKER\_THREAD\_INVALID\_STATE 

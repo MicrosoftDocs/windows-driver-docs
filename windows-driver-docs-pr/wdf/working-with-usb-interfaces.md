@@ -8,7 +8,6 @@ keywords:
 - interface objects WDK KMDF
 - alternate USB interface settings WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Working with USB Interfaces

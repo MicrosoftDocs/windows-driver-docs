@@ -6,7 +6,6 @@ keywords:
 - UMDF WDK , tasks
 - user-mode drivers WDK UMDF , tasks
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # UMDF Driver Tasks

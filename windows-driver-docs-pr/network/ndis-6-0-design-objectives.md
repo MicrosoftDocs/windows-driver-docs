@@ -4,7 +4,6 @@ description: NDIS 6.0 Design Objectives
 keywords:
 - NDIS WDK , about NDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS 6.0 Design Objectives

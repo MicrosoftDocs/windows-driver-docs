@@ -9,7 +9,6 @@ api_name:
 - ATTEMPTED_WRITE_TO_READONLY_MEMORY
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xBE: ATTEMPTED\_WRITE\_TO\_READONLY\_MEMORY

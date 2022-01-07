@@ -6,7 +6,6 @@ keywords:
 - data types WDK print processor
 - TEXT data type WDK print processor
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # TEXT Data Type

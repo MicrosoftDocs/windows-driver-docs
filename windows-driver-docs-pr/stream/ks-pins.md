@@ -10,7 +10,6 @@ keywords:
 - pin connections WDK kernel streaming
 - kernel streaming WDK , pins
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # KS Pins

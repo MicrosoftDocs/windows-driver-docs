@@ -3,7 +3,6 @@ title: Disable protected DLL verification
 description: Disable protected DLL verification
 keywords: ["Disable protected DLL verification (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Disable protected DLL verification

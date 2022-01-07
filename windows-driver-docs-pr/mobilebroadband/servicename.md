@@ -2,7 +2,6 @@
 title: ServiceName
 description: ServiceName
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ServiceName

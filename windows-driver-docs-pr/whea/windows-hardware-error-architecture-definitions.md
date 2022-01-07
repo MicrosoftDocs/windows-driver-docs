@@ -6,8 +6,7 @@ keywords:
 - WHEA WDK , terminology
 - hardware errors WDK WHEA , terminology
 - errors WDK WHEA , terminology
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 11/29/2021
 ---
 
 # Windows Hardware Error Architecture Definitions
@@ -58,7 +57,7 @@ A processor-specific register that is used by system software to implement certa
 An interrupt that the processor reports to the operating system regardless of the processor's current interrupt priority level. An NMI is usually signaled when the platform detects a fatal hardware error condition.
 
 <a href="" id="pci-express-advanced-error-reporting--pcie-aer-"></a>PCI Express Advanced Error Reporting (PCIe AER)  
-An optional extended capability of PCI Express that provides more robust error reporting than the standard PCI Express error reporting mechanism. For more information about PCIe AER, see the [PCI Express Specification](https://go.microsoft.com/fwlink/p/?linkid=69486).
+An optional extended capability of PCI Express that provides more robust error reporting than the standard PCI Express error reporting mechanism. For more information about PCIe AER, see the [PCI Express Specification](https://pcisig.com/specifications/pciexpress/).
 
 <a href="" id="platform-specific-hardware-error-driver--pshed-"></a>Platform-Specific Hardware Error Driver (PSHED)  
 A WHEA component that provides an abstraction of the hardware error reporting facilities of the underlying platform. Microsoft provides PSHEDs for each processor architecture. Platform vendors can supplement the PSHED functionality by implementing PSHED plug-ins that take advantage of platform-specific capabilities.

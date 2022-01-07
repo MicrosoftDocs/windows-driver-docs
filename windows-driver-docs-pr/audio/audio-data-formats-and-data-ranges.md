@@ -2,7 +2,6 @@
 title: Audio Data Formats and Data Ranges
 description: Audio Data Formats and Data Ranges
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Audio Data Formats and Data Ranges

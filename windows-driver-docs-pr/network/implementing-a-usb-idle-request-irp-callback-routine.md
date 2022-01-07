@@ -2,7 +2,6 @@
 title: Implementing a USB Idle Request IRP Callback Routine
 description: Implementing a USB Idle Request IRP Callback Routine
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Implementing a USB Idle Request IRP Callback Routine

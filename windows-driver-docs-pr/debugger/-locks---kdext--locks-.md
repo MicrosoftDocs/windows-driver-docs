@@ -9,7 +9,6 @@ api_name:
 - locks ( kdext .locks)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !locks (!kdext\*.locks)

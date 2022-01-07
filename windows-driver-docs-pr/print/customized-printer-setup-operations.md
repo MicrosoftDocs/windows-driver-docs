@@ -5,7 +5,6 @@ keywords:
 - customized printer setup operations WDK
 - INF files WDK print , customized setup operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Customized Printer Setup Operations
@@ -21,7 +20,7 @@ It is not possible to install a device using a server-side installation when eit
 
 Setup also stops a server-side installation if the driver's rank is 0x8000 or larger. The installation can proceed when a user with administrative privileges logs on, at which time Setup restarts the device installation as a client-side installation. For a driver whose rank is 0x1000 or larger, and is not, therefore, a hardware ID match, Setup launches the Found New Hardware Wizard in the New Device DLL, which prompts the user for a driver to install.
 
-If the INF file for a signed driver contains a **VendorSetup** entry, and the rank of the driver is less than 0x1000, Setup does not launch the Found New Hardware Wizard. For more information, see [Device Installation Components](/previous-versions/ff541277(v=vs.85)) and [How Setup Selects Drivers](../install/how-windows-selects-a-driver-for-a-device.md).
+If the INF file for a signed driver contains a **VendorSetup** entry, and the rank of the driver is less than 0x1000, Setup does not launch the Found New Hardware Wizard. For more information, see [How Setup Selects Drivers](../install/how-windows-selects-a-driver-for-a-device.md).
 
 The format for the **VendorSetup** entry is as follows:
 

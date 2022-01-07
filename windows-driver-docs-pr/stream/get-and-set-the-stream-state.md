@@ -10,7 +10,6 @@ keywords:
 - KSSTATE_PAUSE
 - KSSTATE_RUN
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Get and Set the Stream State

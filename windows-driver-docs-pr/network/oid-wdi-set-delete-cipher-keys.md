@@ -4,11 +4,12 @@ description: OID_WDI_SET_DELETE_CIPHER_KEYS deletes cipher keys from the device'
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_DELETE_CIPHER_KEYS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS deletes cipher keys from the device's cipher key table.

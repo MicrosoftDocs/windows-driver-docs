@@ -4,7 +4,6 @@ description: Filtering Layer
 keywords:
 - filtering layer WDK Windows Filtering Platform
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Filtering Layer

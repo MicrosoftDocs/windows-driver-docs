@@ -2,7 +2,6 @@
 title: Developing apps using multiple PDP contexts
 description: Developing apps using multiple PDP contexts
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Developing apps using multiple PDP contexts
@@ -518,7 +517,7 @@ Audio streaming apps can play audio or video streams using a special PDP context
 
 ![streaming app workflow.](images/mb-pdp-fig6.jpg)
 
-You can use [Player Framework](https://archive.codeplex.com/?p=playerframework) or other video frameworks based on the [WinInet](/windows/desktop/WinInet/portal) APIs.
+You can use video frameworks based on the [WinInet](/windows/desktop/WinInet/portal) APIs.
 
 ## InstantGo
 

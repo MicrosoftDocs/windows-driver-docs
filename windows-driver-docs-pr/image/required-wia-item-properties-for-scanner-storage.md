@@ -2,7 +2,6 @@
 title: Required WIA Item Properties for Scanner Storage
 description: Required WIA Item Properties for Scanner Storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Required WIA Item Properties for Scanner Storage

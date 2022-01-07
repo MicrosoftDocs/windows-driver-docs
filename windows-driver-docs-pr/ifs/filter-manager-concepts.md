@@ -6,7 +6,6 @@ keywords:
 - altitudes WDK file system minifilter
 - filter manager WDK file system minifilter , architecture
 ms.date: 08/10/2021
-ms.localizationpriority: medium
 ---
 
 # Filter Manager Concepts

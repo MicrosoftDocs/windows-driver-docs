@@ -3,7 +3,6 @@ title: Handling a Wait/Wake IRP in a Bus Driver (PDO)
 description: Handling a Wait/Wake IRP in a Bus Driver (PDO)
 keywords: ["receiving wait/wake IRPs", "wait/wake IRPs WDK power management , receiving", "bus drivers WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling a Wait/Wake IRP in a Bus Driver (PDO)

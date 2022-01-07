@@ -8,7 +8,6 @@ keywords:
 - Extension Unit controls WDK USB Video Class
 - controls WDK USB Video Class
 ms.date: 06/16/2020
-ms.localizationpriority: medium
 ---
 
 # Device Requirements for USB Video Class Extension Units

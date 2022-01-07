@@ -1,6 +1,6 @@
 ---
-title: WIA\_DPC\_SHARPNESS
-description: The WIA\_DPC\_SHARPNESS property indicates the perceived sharpness of a captured image.
+title: WIA_DPC_SHARPNESS
+description: The WIA_DPC_SHARPNESS property indicates the perceived sharpness of a captured image.
 keywords: ["WIA_DPC_SHARPNESS Imaging Devices"]
 topic_type:
 - apiref
@@ -10,52 +10,25 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 09/30/2021
 ---
 
-# WIA\_DPC\_SHARPNESS
+# WIA_DPC_SHARPNESS
 
+The WIA_DPC_SHARPNESS property indicates the perceived sharpness of a captured image.
 
-The WIA\_DPC\_SHARPNESS property indicates the perceived sharpness of a captured image.
+Property Type: VT_I4
 
-## <span id="ddk_wia_dpc_sharpness_si"></span><span id="DDK_WIA_DPC_SHARPNESS_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_LIST or WIA\_PROP\_RANGE
+Valid Values: WIA_PROP_LIST or WIA_PROP_RANGE
 
 Access Rights: Read/write
 
 ## Remarks
 
-The WIA\_DPC\_SHARPNESS property can use either a list of values or a range of values. The minimum value represents the least amount of sharpness, and the maximum value represents the maximum sharpness. Typically, a value in the middle of the range represents normal, or default, sharpness.
+The WIA_DPC_SHARPNESS property can use either a list of values or a range of values. The minimum value represents the least amount of sharpness, and the maximum value represents the maximum sharpness. Typically, a value in the middle of the range represents normal, or default, sharpness.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Obsolete in Windows Vista and later operating systems and should no longer be used. However, this property is still defined in Windows Vista for compatibility with applications and devices designed for Windows Server 2003, Windows XP, and previous versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Version:** Obsolete in Windows Vista and later operating systems and should not be used.
 
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

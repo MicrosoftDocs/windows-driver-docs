@@ -4,7 +4,6 @@ description: Allocating Nonpaged Display Memory
 keywords:
 - nonpaged display memory WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Allocating Nonpaged Display Memory

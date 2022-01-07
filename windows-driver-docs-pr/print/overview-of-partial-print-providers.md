@@ -6,7 +6,6 @@ keywords:
 - network print providers WDK , partial print providers
 - partial print providers WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of Partial Print Providers

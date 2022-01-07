@@ -1,7 +1,6 @@
 ---
 title: Indicator testing
 description: This topic describes common indicator step procedures and examples.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

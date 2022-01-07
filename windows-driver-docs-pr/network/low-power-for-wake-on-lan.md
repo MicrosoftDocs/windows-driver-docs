@@ -2,7 +2,6 @@
 title: Low Power for Wake on LAN
 description: Low Power for Wake on LAN
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Low Power for Wake on LAN

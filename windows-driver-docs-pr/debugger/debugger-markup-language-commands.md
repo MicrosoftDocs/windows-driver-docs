@@ -3,7 +3,6 @@ title: Using Debugger Markup Language
 description: Debugger commands can provide output in plain text or in an enhanced format that uses Debugger Markup Language (DML). Output that is enhanced with DML includes links.
 keywords: ["Debugger Markup Language", "DML", "Enhanced debugger commands"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using Debugger Markup Language

@@ -7,7 +7,6 @@ keywords:
 - states WDK smart card
 - vendor-supplied drivers WDK smart card , reader states
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Smart Card Reader States

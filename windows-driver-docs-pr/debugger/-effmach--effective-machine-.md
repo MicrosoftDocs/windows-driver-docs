@@ -9,7 +9,6 @@ api_name:
 - .effmach (Effective Machine)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .effmach (Effective Machine)

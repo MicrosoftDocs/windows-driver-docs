@@ -3,7 +3,6 @@ title: MB Radio State
 description: Learn the architecture and flows of Cellular Radio State, and how to test and debug it.
 keywords: Airplane Mode, Cellular Radio State, MB Radio Power State
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # MB Radio State

@@ -2,7 +2,6 @@
 description: This topic describes how to use Xperf with Netmon to analyze USB trace data.
 title: Overview of using Xperf with USB ETW
 ms.date: 09/16/2021
-ms.localizationpriority: medium
 ---
 
 # Overview of using Xperf with USB ETW

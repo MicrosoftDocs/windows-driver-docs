@@ -9,7 +9,6 @@ api_name:
 - WORKER_THREAD_RETURNED_WHILE_ATTACHED_TO_SILO
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x19A: WORKER\_THREAD\_RETURNED\_WHILE\_ATTACHED\_TO\_SILO

@@ -1,7 +1,6 @@
 ---
 title: Get Injected Errors (Function Index 18)
 description: This function returns information about errors currently being injected.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

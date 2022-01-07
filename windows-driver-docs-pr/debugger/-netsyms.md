@@ -2,7 +2,6 @@
 title: .netsyms (Disable Network Symbol Loading)
 description: .netsyms (Disable Network Symbol Loading)
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # .netsyms (Disable Network Symbol Loading)

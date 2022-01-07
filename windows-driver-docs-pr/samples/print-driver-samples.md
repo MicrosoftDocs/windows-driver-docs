@@ -2,7 +2,6 @@
 title: Print driver samples
 description: The driver samples in this directory provide a starting point for writing a custom print driver for your device.
 ms.date: 12/02/2019
-ms.localizationpriority: medium
 ---
 
 # Print driver samples

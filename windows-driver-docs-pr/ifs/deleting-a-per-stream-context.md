@@ -8,7 +8,6 @@ keywords:
 - tracking per-stream context WDK file system
 - deleting per-stream context
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Deleting a Per-Stream Context

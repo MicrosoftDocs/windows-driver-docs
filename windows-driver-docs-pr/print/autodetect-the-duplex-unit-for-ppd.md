@@ -8,7 +8,6 @@ keywords:
 - detecting duplex unit
 - duplex unit WDK printer autoconfiguration
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Autodetect the Duplex Unit for PPD

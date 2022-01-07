@@ -11,7 +11,6 @@ keywords:
 - shadowing WDK Direct3D
 - decals WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Stencil Planes

@@ -3,7 +3,6 @@ title: Filtering the LogViewer Function List
 description: Filtering the LogViewer Function List
 keywords: ["LogViewer, filtering the LogViewer function list"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Filtering the LogViewer Function List

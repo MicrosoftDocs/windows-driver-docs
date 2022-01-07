@@ -2,7 +2,6 @@
 title: Bluetooth Low Energy Functions
 description: List of Bluetooth Low Energy functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bluetooth Low Energy functions

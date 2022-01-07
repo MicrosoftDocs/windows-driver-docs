@@ -2,7 +2,6 @@
 title: Hyper-V Extensible Switch Control Path Topics
 description: Hyper-V Extensible Switch Control Path Topics
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hyper-V Extensible Switch Control Path Topics

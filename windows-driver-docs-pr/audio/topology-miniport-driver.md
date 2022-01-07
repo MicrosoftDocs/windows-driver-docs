@@ -12,7 +12,6 @@ keywords:
 - distinguished node identifiers WDK audio
 - mixing audio WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Topology Miniport Driver

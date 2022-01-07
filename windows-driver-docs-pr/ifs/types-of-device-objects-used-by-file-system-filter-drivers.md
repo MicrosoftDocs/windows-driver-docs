@@ -9,7 +9,6 @@ keywords:
 - CDOs WDK file system
 - FDOs WDK file system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Types of Device Objects Used by File System Filter Drivers

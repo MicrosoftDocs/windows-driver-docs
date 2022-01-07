@@ -5,7 +5,6 @@ keywords:
 - Direct3D WDK Windows 2000 display , cross platform development
 - cross-platform development WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Cross Platform Direct3D Driver Development

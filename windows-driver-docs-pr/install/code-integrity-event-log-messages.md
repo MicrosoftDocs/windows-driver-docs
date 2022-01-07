@@ -2,7 +2,6 @@
 title: Code Integrity Event Log Messages
 description: Code Integrity Event Log Messages
 ms.date: 06/07/2021
-ms.localizationpriority: medium
 ---
 
 # Code Integrity Event Log Messages

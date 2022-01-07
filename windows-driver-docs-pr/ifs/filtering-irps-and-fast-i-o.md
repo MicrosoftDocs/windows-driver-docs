@@ -12,7 +12,6 @@ keywords:
 - dispatch routines WDK file system
 - I/O requests WDK file system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Filtering IRPs and Fast I/O

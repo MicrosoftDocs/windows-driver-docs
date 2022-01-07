@@ -8,7 +8,6 @@ keywords:
 - European Union symbol WDK print
 - ADHasEuro
 ms.date: 09/02/2021
-ms.localizationpriority: medium
 ---
 
 # AddEuro feature

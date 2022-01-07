@@ -9,7 +9,6 @@ keywords:
 - port drivers WDK audio , miniport drivers
 - port drivers WDK audio , Port Class
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting a Device

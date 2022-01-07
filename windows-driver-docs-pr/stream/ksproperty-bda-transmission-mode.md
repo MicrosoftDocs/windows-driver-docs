@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_BDA\_TRANSMISSION\_MODE
-description: Clients use KSPROPERTY\_BDA\_TRANSMISSION\_MODE to control the setting on a demodulator node for how broadcast signals are transmitted.
+title: KSPROPERTY_BDA_TRANSMISSION_MODE
+description: Clients use KSPROPERTY_BDA_TRANSMISSION_MODE to control the setting on a demodulator node for how broadcast signals are transmitted.
 keywords: ["KSPROPERTY_BDA_TRANSMISSION_MODE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,77 +10,31 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/14/2021
 ---
 
-# KSPROPERTY\_BDA\_TRANSMISSION\_MODE
+# KSPROPERTY_BDA_TRANSMISSION_MODE
 
+Clients use **KSPROPERTY_BDA_TRANSMISSION_MODE** to control the setting on a demodulator node for how broadcast signals are transmitted.
 
-Clients use KSPROPERTY\_BDA\_TRANSMISSION\_MODE to control the setting on a demodulator node for how broadcast signals are transmitted.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_bda_transmission_mode_ks"></span><span id="DDK_KSPROPERTY_BDA_TRANSMISSION_MODE_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Filter</p></td>
-<td><p>KSP_NODE</p></td>
-<td><p>TransmissionMode</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | Yes | Filter | [**KSP_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node) | [**TransmissionMode**](/previous-versions/windows/desktop/mstv/transmissionmode) |
 
 ## Remarks
 
-The returned value from the TransmissionMode enumerated type identifies a setting for how broadcast signals are transmitted.
+The returned value from the **TransmissionMode** enumerated type identifies a setting for how broadcast signals are transmitted.
 
-The **NodeId** member of KSP\_NODE specifies the identifier of the demodulator node.
+The **NodeId** member of **KSP_NODE** specifies the identifier of the demodulator node.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Bdamedia.h (include Bdamedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** bdamedia.h (include Bdamedia.h)
 
 ## See also
 
-
-[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
 [**TransmissionMode**](/previous-versions/windows/desktop/mstv/transmissionmode)
-
- 
-

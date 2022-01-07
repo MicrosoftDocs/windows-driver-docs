@@ -6,7 +6,6 @@ keywords:
 - compressing raster data WDK Unidrv
 - customized raster data compression WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Customized Compression

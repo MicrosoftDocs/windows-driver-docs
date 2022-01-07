@@ -9,7 +9,6 @@ api_name:
 - Irql_CallManager_Function
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Irql\_CallManager\_Function rule (ndis)

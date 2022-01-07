@@ -20,7 +20,6 @@ keywords:
 - communication channels WDK networking
 - Remote NDIS WDK networking , message encapsulation
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Remote NDIS Concepts and Definitions

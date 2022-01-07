@@ -8,7 +8,6 @@ keywords:
 - HID API
 - HID Collection
 ms.date: 02/26/2020
-ms.localizationpriority: medium
 ---
 
 # HID Clients Overview

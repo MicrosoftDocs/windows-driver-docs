@@ -9,7 +9,6 @@ api_name:
 - n (Set Number Base)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # n (Set Number Base)

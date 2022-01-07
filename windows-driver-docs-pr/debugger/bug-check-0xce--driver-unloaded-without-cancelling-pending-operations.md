@@ -9,7 +9,6 @@ api_name:
 - DRIVER_UNLOADED_WITHOUT_CANCELLING_PENDING_OPERATIONS
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xCE: DRIVER\_UNLOADED\_WITHOUT\_CANCELLING\_PENDING\_OPERATIONS

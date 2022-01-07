@@ -3,7 +3,6 @@ title: MASM Expressions vs. C++ Expressions
 description: MASM Expressions vs.
 keywords: ["expressions, MASM and C++", "MASM expressions, MASM vs. C++", "C++ expressions, C++ vs. MASM"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # MASM Expressions vs. C++ Expressions

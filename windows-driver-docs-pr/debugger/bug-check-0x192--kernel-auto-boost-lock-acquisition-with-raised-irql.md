@@ -9,7 +9,6 @@ api_name:
 - KERNEL_AUTO_BOOST_LOCK_ACQUISITION_WITH_RAISED_IRQL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x192: KERNEL\_AUTO\_BOOST\_LOCK\_ACQUISITION\_WITH\_RAISED\_IRQL

@@ -1,7 +1,6 @@
 ---
 title: Physical buttons
 description: Hardware buttons let users perform many common tasks that do not have a convenient user interface alternative.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

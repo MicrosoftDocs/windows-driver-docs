@@ -9,7 +9,6 @@ api_name:
 - InitFreeNull
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # InitFreeNull rule (kmdf)

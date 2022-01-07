@@ -4,7 +4,6 @@ description: Cellular COM API Reference
 keywords:
 - Cellular COM API Reference WDK, Cellular COM API Windows Phone 8.1
 ms.date: 12/07/2017
-ms.localizationpriority: medium
 ---
 
 # Cellular COM API Reference

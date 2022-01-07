@@ -4,10 +4,11 @@ description: WDI_TLV_HOTSPOT_DOMAIN_PARTNER is an unused TLV.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_HOTSPOT_DOMAIN_PARTNER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_HOTSPOT\_DOMAIN\_PARTNER
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_HOTSPOT\_DOMAIN\_PARTNER is an unused TLV.

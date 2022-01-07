@@ -7,7 +7,6 @@ keywords:
 - duplicating stream pointers WDK AVStream
 - copying stream pointers WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Cloning Stream Pointers

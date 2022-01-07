@@ -8,7 +8,6 @@ keywords:
 - synchronization WDK AVStream
 - state transitions WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Filter Control Mutex in AVStream

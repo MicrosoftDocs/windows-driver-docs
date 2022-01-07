@@ -9,7 +9,6 @@ api_name:
 - .cxr (Display Context Record)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .cxr (Display Context Record)

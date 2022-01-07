@@ -3,7 +3,6 @@ title: Percent of SWDRM playback failures on Netflix
 description: The measure aggregates telemetry from a 90-day sliding window into a percent of SWDRM playback errors in video services
 ms.topic: article
 ms.date: 12/20/2019
-ms.localizationpriority: medium
 ---
 
 # Percent of SWDRM playback failures on Netflix

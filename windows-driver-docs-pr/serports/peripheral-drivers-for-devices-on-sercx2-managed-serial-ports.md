@@ -2,7 +2,6 @@
 title: Peripheral Drivers for Devices on SerCx2-Managed Serial Ports
 description: Typically, a serial port managed by SerCx2 is permanently connected to a peripheral device.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Peripheral Drivers for Devices on SerCx2-Managed Serial Ports

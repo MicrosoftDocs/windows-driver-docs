@@ -2,7 +2,6 @@
 title: Windows Hello camera driver bring up guide
 description: This topic discusses how to enable face authentication for an infrared (IR) camera and is meant for original equipment manufacturers (OEMs) and independent hardware vendors (IHVs).
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Camera driver bring up guide

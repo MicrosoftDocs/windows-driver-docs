@@ -8,7 +8,6 @@ keywords:
 - video content for deinterlacing WDK DirectX VA
 - video content for frame-rate conversion WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Video Content for Deinterlace and Frame-Rate Conversion

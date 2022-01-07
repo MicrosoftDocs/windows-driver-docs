@@ -12,7 +12,6 @@ keywords:
 - specialized I/O targets WDK KMDF
 - I/O targets WDK KMDF , types
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to I/O Targets

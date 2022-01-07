@@ -9,7 +9,6 @@ api_name:
 - MBR_CHECKSUM_MISMATCH
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x8B: MBR\_CHECKSUM\_MISMATCH

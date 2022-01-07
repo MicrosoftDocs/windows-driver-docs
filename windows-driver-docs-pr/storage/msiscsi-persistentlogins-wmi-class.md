@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_PersistentLogins WMI Class
 description: MSiSCSI\_PersistentLogins WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdffindobjects
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdffindobjects

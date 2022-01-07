@@ -2,7 +2,6 @@
 title: GPIO Extensions
 description: The General Purpose Input/Output (GPIO) extension commands display the software state of GPIO controllers.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # GPIO Extensions

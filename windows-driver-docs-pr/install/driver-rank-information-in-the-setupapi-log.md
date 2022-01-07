@@ -1,36 +1,40 @@
 ---
-title: Driver Rank Information in the SetupAPI Log
-description: Driver Rank Information in the SetupAPI Log
+title: Driver Package Rank Information in the SetupAPI Log
+description: Driver Package Rank Information in the SetupAPI Log
 keywords:
 - SetupAPI logging WDK Windows Vista , driver rank information
 - signature indicators WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
-# Driver Rank Information in the SetupAPI Log
+# Driver Package Rank Information in the SetupAPI Log
 
-
-Windows uses a signature indicator to represent the signature type. Windows saves this information in a [driver store](driver-store.md) database for internal use.
-
-When Windows installs a driver, SetupAPI adds a *Rank* entry that logs the driver rank in hexadecimal format and a Signer Score entry that logs the signature type. The following is an excerpt from a SetupAPI device log that shows, in bold font style, an example of a Rank entry and an example of a Signer Score entry. In this excerpt, the Rank entry indicates that the driver has a rank of "0x0dff0000" and the Signer Score entry indicates that the driver is an inbox driver.
+When Windows is selecting a driver package to install, the SetupAPI log typically has a *Rank* entry that logs the driver rank in hexadecimal format and a *Signer Score* entry that logs the signature type. The following is an excerpt from a SetupAPI device log that shows an example of a Rank entry and an example of a Signer Score entry. In this excerpt, the Rank entry indicates that the driver has a rank of "0x00FF3101" and the Signer Score entry indicates that the driver is an inbox driver.
 
 ```cpp
-     dvi:      Created Driver Node:
-     dvi:           HardwareID   - ROOT\UPDATE
-     dvi:           InfName      - D:\Windows\System32\DriverStore\FileRepository\machine.inf_36c3d8da\machine.inf
-     dvi:           DevDesc      - Microcode Update Device
-     dvi:           DrvDesc      - Microcode Update Device
-     dvi:           Provider     - Microsoft
-     dvi:           Mfg          - (Standard system devices)
-     dvi:           InstallSec   - UPDATE_DRV
-     dvi:           ActualSec    - UPDATE_DRV
-     dvi:           Rank         - 0x0dff0000
-     dvi:           Signer       - Microsoft Windows Component Publisher
-     dvi:           Signer Score - INBOX
-     dvi:           DrvDate      - 10/01/2002
-     dvi:           Version      - 6.0.5270.8
+     utl:      Driver Node:
+     utl:           Status         - Outranked
+     utl:           Driver INF     - input.inf (C:\WINDOWS\System32\DriverStore\FileRepository\input.inf_amd64_3c85f2862c8bffeb\input.inf)
+     utl:           Class GUID     - {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+     utl:           Driver Version - 06/21/2006,10.0.22475.1000
+     utl:           Configuration  - USB\Class_03&SubClass_01 [HID_Inst.NT]
+     utl:           Driver Rank    - 00FF3101
+     utl:           Signer Score   - Inbox (0D000003)
 ```
+
+Or, in some scenarios, the logging may appear more like this excerpt where the Rank entry indicates that the driver has a rank of "0x00ff0005" and the Signer Score entry indicates that the driver is an inbox driver.
+```cpp
+     dvi:           Created Driver Node:
+     dvi:                HardwareID   - GenCdRom
+     dvi:                InfName      - C:\WINDOWS\System32\DriverStore\FileRepository\cdrom.inf_amd64_9f14c614df704f62\cdrom.inf
+     dvi:                DevDesc      - CD-ROM Drive
+     dvi:                Section      - cdrom_install
+     dvi:                Rank         - 0x00ff0005
+     dvi:                Signer Score - INBOX
+     dvi:                DrvDate      - 06/21/2006
+     dvi:                Version      - 10.0.22475.1000
+```
+
 
 The following is a list of the Signer Score entries that Windows logs in the SetupAPI device log for each type of signature:
 
@@ -55,7 +59,7 @@ The following is a list of the Signer Score entries that Windows logs in the Set
 <a href="" id="unsigned-driver"></a>Unsigned driver  
 "Signer Score - Not digitally signed"
 
-For more information about driver ranking, see [How Windows Ranks Drivers (Windows Vista and Later)](how-setup-ranks-drivers--windows-vista-and-later-.md).
+For more information about driver ranking, see [How Windows Ranks Drivers](how-setup-ranks-drivers--windows-vista-and-later-.md).
 
  
 

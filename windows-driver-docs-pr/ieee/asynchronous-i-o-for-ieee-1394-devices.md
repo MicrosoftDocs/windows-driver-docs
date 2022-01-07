@@ -11,7 +11,6 @@ keywords:
 - transferring data WDK IEEE 1394 bus
 - PDOs WDK IEEE 1394 bus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Asynchronous I/O for IEEE 1394 Devices

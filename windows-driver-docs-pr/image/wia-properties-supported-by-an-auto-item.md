@@ -2,7 +2,6 @@
 title: WIA Properties Supported by an Auto Item
 description: WIA Properties Supported by an Auto Item
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Properties Supported by an Auto Item

@@ -6,7 +6,6 @@ keywords:
 - schema extensions WDK TCP/IP
 - driver-specific queries WDK printer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # TCP/IP Schema Extensions for Driver-Specific Queries

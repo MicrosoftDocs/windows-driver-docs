@@ -3,7 +3,6 @@ title: Processing a Synchronous Driver Notification
 description: Processing a Synchronous Driver Notification
 keywords: ["driver notification WDK dynamic hardware partitioning , processing", "synchronous driver notification WDK dynamic hardware partitioning , processing", "registering for driver notification WDK dynamic hardware partitioning , synchronous"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Processing a Synchronous Driver Notification

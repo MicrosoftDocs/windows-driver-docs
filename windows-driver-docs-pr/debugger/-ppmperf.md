@@ -9,7 +9,6 @@ api_name:
 - ppmperf
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ppmperf

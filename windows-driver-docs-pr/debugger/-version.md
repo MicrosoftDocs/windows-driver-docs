@@ -9,7 +9,6 @@ api_name:
 - version
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !version

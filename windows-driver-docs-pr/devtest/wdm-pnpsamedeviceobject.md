@@ -9,7 +9,6 @@ api_name:
 - PnpSameDeviceObject
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PnpSameDeviceObject rule (wdm)

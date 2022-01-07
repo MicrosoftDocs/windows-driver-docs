@@ -2,7 +2,6 @@
 title: Power-Up Sequence for a Bus Driver
 description: Power-Up Sequence for a Bus Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Power-Up Sequence for a Bus Driver

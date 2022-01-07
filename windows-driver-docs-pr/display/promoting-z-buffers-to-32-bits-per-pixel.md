@@ -6,7 +6,6 @@ keywords:
 - color buffers WDK DirectX 9.0
 - D3DFORMAT_OP_ZSTENCIL_WITH_ARBITRARY_COLOR_DEPTH
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Promoting Z Buffers to 32 Bits Per Pixel

@@ -8,7 +8,6 @@ keywords:
 - GUIDs WDK networking
 - Windows Management Instrumentation WDK networking , GUIDs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Filling in an NDIS\_GUID Structure

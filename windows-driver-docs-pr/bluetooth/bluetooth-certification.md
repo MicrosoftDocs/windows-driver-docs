@@ -2,7 +2,6 @@
 title: Bluetooth Certification
 description: Describes Windows Hardware Certification Program requirements for Bluetooth radios
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bluetooth Certification

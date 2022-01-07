@@ -9,7 +9,6 @@ api_name:
 - CTRL+\ (Debug Current Debugger)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CTRL+\\ (Debug Current Debugger)

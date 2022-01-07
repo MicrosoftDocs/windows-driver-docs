@@ -9,7 +9,6 @@ api_name:
 - obja
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !obja

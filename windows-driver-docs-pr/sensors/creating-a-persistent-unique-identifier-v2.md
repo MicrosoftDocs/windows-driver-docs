@@ -2,7 +2,6 @@
 title: Creating a persistent unique identifier for a universal drivers based sensor
 description: Creating a persistent unique identifier for a universal drivers based driver
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Creating a persistent unique identifier for a sensor

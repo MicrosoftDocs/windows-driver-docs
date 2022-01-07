@@ -11,7 +11,6 @@ api_location:
 api_type:
 - DllExport
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # DriverEntry of Display Miniport Driver function

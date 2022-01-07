@@ -2,7 +2,6 @@
 title: Design the landing page of a mobile broadband app
 description: Design the landing page of a mobile broadband app
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Design the landing page of a mobile broadband app
@@ -97,7 +96,7 @@ You can customize your mobile broadband app to suit your individual branding sty
 
 -   [Adding controls and content](/previous-versions/windows/apps/hh465393(v=win.10))
 
--   [Make great UWP apps](https://msdn.microsoft.com/library/windows/apps/hh464920)
+-   [Make great UWP apps](/windows/uwp/get-started/create-uwp-apps)
 
 -   [Laying out your UI](/previous-versions/windows/apps/hh465304(v=win.10))
 

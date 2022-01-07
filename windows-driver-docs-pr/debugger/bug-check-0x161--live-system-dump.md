@@ -9,7 +9,6 @@ api_name:
 - LIVE_SYSTEM_DUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x161: LIVE\_SYSTEM\_DUMP

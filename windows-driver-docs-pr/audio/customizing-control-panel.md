@@ -2,7 +2,6 @@
 title: Customizing Control Panel
 description: Customizing Control Panel
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Customizing Control Panel

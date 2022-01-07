@@ -8,7 +8,6 @@ keywords:
 - INF files WDK device installations , directives
 - directives WDK INF files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # General Syntax Rules for INF Files
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 An INF file is a text file organized into named sections. Some sections have system-defined names and some sections have names determined by the writer of the INF file.
 
-Each section contains section-specific entries that are interpreted by [device installation components](/previous-versions/ff541277(v=vs.85)) (class installers, co-installers, SetupAPI). Some entries begin with a predefined keyword. These entries are called *directives*.
+Each section contains section-specific entries that are interpreted by device installation components. Some entries begin with a predefined keyword. These entries are called *directives*.
 
 Some INF file entries are basically pointers from one section to another, for a specific purpose. For example, an [**INF AddReg directive**](inf-addreg-directive.md) identifies a section that contains entries that instruct Windows to modify the registry. These entries sometimes include additional arguments (required or optional) for Windows to interpret during installation.
 

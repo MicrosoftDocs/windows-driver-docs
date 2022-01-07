@@ -4,7 +4,6 @@ description: The ACPI_ENUM_CHILD_LENGTH_FROM_CHILD macro calculates the size, in
 keywords: 
 - ACPI_ENUM_CHILD_LENGTH_FROM_CHILD macro ACPI Devices
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # ACPI_ENUM_CHILD_LENGTH_FROM_CHILD macro

@@ -3,7 +3,6 @@ title: Supporting Asynchronous I/O
 description: Supporting Asynchronous I/O
 keywords: ["asynchronous I/O WDK kernel", "I/O WDK kernel , asynchronous mode", "status information WDK I/O requests"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Asynchronous I/O

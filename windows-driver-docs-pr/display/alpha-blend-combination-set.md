@@ -4,7 +4,6 @@ description: Alpha-Blend Combination Set
 keywords:
 - alpha-blend combination set WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Alpha-Blend Combination Set

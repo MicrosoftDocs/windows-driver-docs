@@ -4,7 +4,6 @@ description: The PnP manager sends this IRP to a device stack so the function dr
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_FILTER_RESOURCE_REQUIREMENTS Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS

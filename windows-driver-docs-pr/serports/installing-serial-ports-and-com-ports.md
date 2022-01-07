@@ -6,7 +6,6 @@ keywords:
 - COM ports WDK serial devices
 - Serial driver WDK , COM ports
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Serial Ports and COM Ports

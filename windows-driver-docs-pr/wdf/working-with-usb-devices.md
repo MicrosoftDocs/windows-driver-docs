@@ -15,7 +15,6 @@ keywords:
 - status information WDK KMDF , USB I/O targets
 - device objects WDK KMDF
 ms.date: 06/24/2019
-ms.localizationpriority: medium
 ---
 
 # Working with USB Devices

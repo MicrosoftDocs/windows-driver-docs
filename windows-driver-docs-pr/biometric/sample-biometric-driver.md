@@ -4,7 +4,6 @@ description: Sample Biometric Driver
 keywords:
 - biometric drivers WDK , sample drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sample Biometric Driver

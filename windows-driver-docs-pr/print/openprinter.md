@@ -4,7 +4,6 @@ description: OpenPrinter
 keywords:
 - OpenPrinter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # OpenPrinter

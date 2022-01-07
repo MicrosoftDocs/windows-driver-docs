@@ -2,7 +2,6 @@
 title: PnPUtil Return Values
 description: PnPUtil Return Values
 ms.date: 08/02/2021
-ms.localizationpriority: medium
 ---
 
 # PnPUtil Return Values

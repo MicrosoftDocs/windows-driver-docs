@@ -2,7 +2,6 @@
 description: Supporting I/O
 title: Supporting I/O
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting I/O

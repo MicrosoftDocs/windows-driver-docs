@@ -2,7 +2,6 @@
 title: Retrieve ConnectionProfile objects for a MobileBroadbandAccount
 description: Retrieve ConnectionProfile objects for a MobileBroadbandAccount
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Retrieve ConnectionProfile objects for a MobileBroadbandAccount

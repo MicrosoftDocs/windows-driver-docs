@@ -2,7 +2,6 @@
 title: Main I/O Path
 description: Main I/O Path
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Main I/O Path

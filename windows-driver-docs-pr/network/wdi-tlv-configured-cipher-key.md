@@ -4,7 +4,6 @@ description: WDI_TLV_CONFIGURED_CIPHER_KEY is a TLV that contains a list of conf
 ms.date: 05/07/2021
 keywords:
  - WDI_TLV_CONFIGURED_CIPHER_KEY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI_TLV_CONFIGURED_CIPHER_KEY

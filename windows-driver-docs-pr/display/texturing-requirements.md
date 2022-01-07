@@ -5,7 +5,6 @@ keywords:
 - texture sizes WDK Direct3D
 - texture filtering WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Texturing Requirements

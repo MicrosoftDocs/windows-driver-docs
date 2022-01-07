@@ -2,7 +2,6 @@
 title: Layout Section
 description: Layout Section
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Layout Section

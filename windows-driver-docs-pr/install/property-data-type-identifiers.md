@@ -4,7 +4,6 @@ description: Property-Data-Type Identifiers
 keywords:
 - device properties WDK device installations , property-data-type identifiers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Property-Data-Type Identifiers

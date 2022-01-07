@@ -4,7 +4,6 @@ description: Installing UPS Minidrivers
 keywords:
 - UPS minidrivers WDK , installing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing UPS Minidrivers

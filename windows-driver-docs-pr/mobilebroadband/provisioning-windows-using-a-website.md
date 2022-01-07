@@ -2,7 +2,6 @@
 title: Provisioning Windows using a website
 description: Provisioning Windows using a website
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Provisioning Windows using a website

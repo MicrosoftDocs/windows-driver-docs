@@ -7,7 +7,6 @@ keywords:
 - ESP-protected packets WDK IPsec offload , NIC removed and
 - AH-protected packets WDK IPsec offload , NIC removed and
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Impact of Network Interface Changes on IPsec Offloads

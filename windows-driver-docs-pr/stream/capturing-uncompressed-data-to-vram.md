@@ -7,7 +7,6 @@ keywords:
 - formats WDK VRAM capture
 - pin VRAM processing WDK AVStream
 ms.date: 06/16/2020
-ms.localizationpriority: medium
 ---
 
 # Capturing uncompressed data to VRAM

@@ -2,7 +2,6 @@
 title: Example 8 Enlarging the User-Mode Stack Trace Database
 description: Example 8 Enlarging the User-Mode Stack Trace Database
 ms.date: 10/12/2018
-ms.localizationpriority: medium
 ---
 
 # Example 8: Enlarging the User-Mode Stack Trace Database

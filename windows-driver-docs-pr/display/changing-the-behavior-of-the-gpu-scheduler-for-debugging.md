@@ -4,7 +4,6 @@ description: Changing the Behavior of the GPU Scheduler for Debugging
 keywords:
 - GPU scheduler changes WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Changing the Behavior of the GPU Scheduler for Debugging

@@ -18,7 +18,6 @@ keywords:
 - lines WDK GDI
 - drawing WDK GDI , brushes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Realizing Brushes

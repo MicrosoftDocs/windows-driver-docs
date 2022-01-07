@@ -9,7 +9,6 @@ api_name:
 - CLUSTER_CSV_STATE_TRANSITION_INTERVAL_TIMEOUT_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x16F: CLUSTER\_CSV\_STATE\_TRANSITION\_INTERVAL\_TIMEOUT\_LIVEDUMP
@@ -44,7 +43,7 @@ The CLUSTER\_CSV\_STATE\_TRANSITION\_INTERVAL\_TIMEOUT\_LIVEDUMP bug check has a
 
 4  Waiting for volume to transition to the Active state.
 
-## ## Cause
+## Cause
 
 The Cluster Shared Volume next state transition request has not arrived.
 
@@ -53,10 +52,10 @@ The system generated a live dump for analysis of the delay.
 (This code can never be used for a real bugcheck.)
 
 
-## ## Resolution
+## Resolution
  
 
-## ## See Also-
+## See Also-
 
 [Troubleshooting Hangs Using Live Dump (Blog)](https://techcommunity.microsoft.com/t5/Failover-Clustering/bg-p/FailoverClustering)
 

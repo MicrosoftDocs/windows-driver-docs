@@ -2,7 +2,6 @@
 title: ServiceInfo XML Example
 description: ServiceInfo XML Example
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ServiceInfo XML Example

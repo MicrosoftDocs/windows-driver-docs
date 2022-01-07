@@ -6,7 +6,6 @@ keywords:
 - security WDK file systems , adding security checks
 - security checks WDK file systems , IRP_MJ_CREATE
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_CREATE Dispatch Routine

@@ -7,7 +7,6 @@ keywords:
 - freezing queues WDK storage
 - frozen queues WDK storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Storage Class Driver's ReleaseQueue Routine

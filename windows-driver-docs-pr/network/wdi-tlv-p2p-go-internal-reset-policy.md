@@ -4,10 +4,11 @@ description: WDI_TLV_P2P_GO_INTERNAL_RESET_POLICY is a TLV that contains the pol
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_GO_INTERNAL_RESET_POLICY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_GO\_INTERNAL\_RESET\_POLICY
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_GO\_INTERNAL\_RESET\_POLICY is a TLV that contains the policy used by the firmware for operating channel selection after a Wi-Fi Direct GO Reset is stopped/restarted.

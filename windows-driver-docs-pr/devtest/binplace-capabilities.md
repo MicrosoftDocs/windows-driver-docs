@@ -7,7 +7,6 @@ keywords:
 - splitting files
 - moving files WDK BinPlace
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # BinPlace Capabilities

@@ -6,7 +6,6 @@ keywords:
 - programming with GDL WDK
 - printer drivers WDK , programming with GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Programming Guide

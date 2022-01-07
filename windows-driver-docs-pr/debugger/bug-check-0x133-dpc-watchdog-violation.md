@@ -9,7 +9,6 @@ api_name:
 - DPC_WATCHDOG_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x133 DPC\_WATCHDOG\_VIOLATION

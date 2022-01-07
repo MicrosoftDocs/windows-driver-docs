@@ -4,7 +4,6 @@ description: Sending Data from a Protocol Driver
 keywords:
 - sending data WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sending Data from a Protocol Driver

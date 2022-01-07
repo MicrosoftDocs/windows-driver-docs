@@ -2,7 +2,6 @@
 title: Automatically Generated Object Names
 description: Automatically Generated Object Names
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Automatically Generated Object Names

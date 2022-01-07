@@ -7,7 +7,6 @@ keywords:
 - prediction planes WDK DirectX VA
 - macroblocks WDK DirectX VA , prediction
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Prediction Planes

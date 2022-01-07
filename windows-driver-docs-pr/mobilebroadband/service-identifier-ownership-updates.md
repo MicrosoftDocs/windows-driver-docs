@@ -2,7 +2,6 @@
 title: Service identifier ownership updates
 description: Service identifier ownership updates
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Service identifier ownership updates

@@ -9,7 +9,6 @@ api_name:
 - CTRL+F (Break to KD)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CTRL+F (Break to KD)

@@ -5,7 +5,6 @@ keywords:
 - TraceView WDK , errors
 - errors WDK TraceView
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Resolving TraceView Errors

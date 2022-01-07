@@ -7,7 +7,6 @@ keywords:
 - North American Broadcast Teletext Standard WDK video capture
 - NABTS WDK video capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NABTS Categories

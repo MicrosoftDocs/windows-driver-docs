@@ -5,7 +5,6 @@ keywords:
 - WDM audio drivers WDK , vendor options
 - audio drivers WDK , vendor options
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Vendor Audio Driver Options

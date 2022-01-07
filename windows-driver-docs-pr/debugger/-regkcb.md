@@ -9,7 +9,6 @@ api_name:
 - regkcb
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !regkcb

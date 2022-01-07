@@ -3,7 +3,6 @@ title: Event Filters
 description: Event Filters
 keywords: ["Debugger Engine API, event filters"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Event Filters

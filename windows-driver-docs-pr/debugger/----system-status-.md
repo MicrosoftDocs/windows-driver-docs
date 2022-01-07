@@ -9,7 +9,6 @@ api_name:
 - (System Status)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # || (System Status)

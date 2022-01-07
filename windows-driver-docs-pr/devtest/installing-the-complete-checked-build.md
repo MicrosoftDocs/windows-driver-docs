@@ -5,7 +5,6 @@ keywords:
 - checked builds WDK , installing
 - complete checked build WDK
 ms.date: 05/08/2020
-ms.localizationpriority: medium
 ---
 
 # Installing the Complete Checked Build

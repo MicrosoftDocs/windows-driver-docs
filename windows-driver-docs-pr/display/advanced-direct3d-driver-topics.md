@@ -6,7 +6,6 @@ keywords:
 - Direct3D WDK Windows 2000 display , advanced driver topics
 - Windows 2000 display driver model WDK , advanced Direct3D driver topics
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Advanced Direct3D Driver Topics

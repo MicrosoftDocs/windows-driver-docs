@@ -9,7 +9,6 @@ api_name:
 - uf (Unassemble Function)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # uf (Unassemble Function)

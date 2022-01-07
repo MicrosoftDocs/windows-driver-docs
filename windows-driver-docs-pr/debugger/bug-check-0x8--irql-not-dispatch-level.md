@@ -9,7 +9,6 @@ api_name:
 - IRQL_NOT_DISPATCH_LEVEL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x8: IRQL\_NOT\_DISPATCH\_LEVEL

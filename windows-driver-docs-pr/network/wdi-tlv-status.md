@@ -4,10 +4,11 @@ description: WDI_TLV_STATUS is a TLV that contains a status value.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_STATUS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_STATUS
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_STATUS is a TLV that contains a status value.

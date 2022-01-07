@@ -2,7 +2,6 @@
 title: Protocol Driver Send and Receive Operations
 description: Protocol Driver Send and Receive Operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Protocol Driver Send and Receive Operations

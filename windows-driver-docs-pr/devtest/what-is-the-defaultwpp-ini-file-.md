@@ -2,7 +2,6 @@
 title: What is the Defaultwpp.ini file
 description: What is the Defaultwpp.ini file
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # What is the Defaultwpp.ini file?

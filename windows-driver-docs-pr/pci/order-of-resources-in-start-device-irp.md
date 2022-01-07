@@ -5,7 +5,6 @@ keywords:
 - order of resources WDK PCI
 - start-device IRP WDK PCI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Order of Resources in Start-Device IRP

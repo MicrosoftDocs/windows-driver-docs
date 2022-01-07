@@ -9,7 +9,6 @@ api_name:
 - DeviceCreateFail
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DeviceCreateFail rule (kmdf)

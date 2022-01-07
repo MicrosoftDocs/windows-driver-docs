@@ -9,7 +9,6 @@ api_name:
 - BufAfterReqCompletedWriteA
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # BufAfterReqCompletedWriteA rule (kmdf)

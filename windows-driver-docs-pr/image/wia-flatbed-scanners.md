@@ -2,7 +2,6 @@
 title: WIA Flatbed Scanners
 description: WIA Flatbed Scanners
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Flatbed Scanners

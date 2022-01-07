@@ -2,7 +2,6 @@
 title: Input Buffer Order Example 4
 description: Input Buffer Order Example 4
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Input Buffer Order Example 4

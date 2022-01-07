@@ -2,7 +2,6 @@
 title: Adding Image Format Support
 description: Adding Image Format Support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding Image Format Support

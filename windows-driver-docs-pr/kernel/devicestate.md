@@ -3,7 +3,6 @@ title: DeviceState
 description: DeviceState
 keywords: ["DeviceState"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # DeviceState

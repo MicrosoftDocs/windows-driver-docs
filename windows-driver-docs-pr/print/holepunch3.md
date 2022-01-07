@@ -2,7 +2,6 @@
 title: HolePunch property
 description: Contains all of the information that describes the device hole punch attachment.
 ms.date: 09/07/2021
-ms.localizationpriority: medium
 ---
 
 # HolePunch property

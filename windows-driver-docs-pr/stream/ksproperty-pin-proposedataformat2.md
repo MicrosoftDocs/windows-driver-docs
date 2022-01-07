@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 07/13/2021
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY_PIN_PROPOSEDATAFORMAT2

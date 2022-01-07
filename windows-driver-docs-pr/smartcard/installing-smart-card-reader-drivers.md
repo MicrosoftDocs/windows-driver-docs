@@ -5,7 +5,6 @@ keywords:
 - smart card drivers WDK , installing
 - vendor-supplied drivers WDK smart card , installing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Smart Card Reader Drivers

@@ -9,7 +9,6 @@ api_name:
 - MarkStartDevice
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # MarkStartDevice rule (wdm)

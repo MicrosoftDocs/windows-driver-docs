@@ -5,7 +5,6 @@ ms.date: 10/19/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-ms.localizationpriority: medium
 ---
 
 # Adaptive refresh for playing 24 fps video content

@@ -2,7 +2,6 @@
 title: SpbAccelerometer driver cookbook
 description: SpbAccelerometer driver cookbook
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SpbAccelerometer driver cookbook

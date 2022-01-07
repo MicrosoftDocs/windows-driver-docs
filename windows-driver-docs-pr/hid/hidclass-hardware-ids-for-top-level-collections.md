@@ -16,7 +16,6 @@ keywords:
 - collections WDK HID , hardware IDs
 - top-level collections WDK HID
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # HIDClass Hardware IDs for Top-Level Collections

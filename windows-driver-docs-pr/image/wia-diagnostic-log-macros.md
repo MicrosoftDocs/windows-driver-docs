@@ -2,7 +2,6 @@
 title: WIA Diagnostic Log Macros
 description: WIA Diagnostic Log Macros
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Diagnostic Log Macros

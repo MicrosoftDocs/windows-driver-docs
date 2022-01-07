@@ -2,7 +2,6 @@
 title: Locking rule set (WDM)
 description: Use these rules to verify that your driver correctly manages shared resources.
 ms.date: 05/21/2018
-ms.localizationpriority: medium
 ---
 
 # Locking rule set (WDM)

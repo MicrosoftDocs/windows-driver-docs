@@ -3,7 +3,6 @@ title: Using PDBCopy
 description: Using PDBCopy
 keywords: ["PDBCopy, using"]
 ms.date: 10/25/2019
-ms.localizationpriority: medium
 ---
 
 # Using PDBCopy

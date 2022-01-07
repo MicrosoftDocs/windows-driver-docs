@@ -3,7 +3,6 @@ title: DumpChk
 description: DumpChk
 keywords: ["DumpChk"]
 ms.date: 09/17/2017
-ms.localizationpriority: medium
 ---
 
 # DumpChk

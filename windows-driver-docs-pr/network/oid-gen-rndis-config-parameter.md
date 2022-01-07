@@ -4,7 +4,6 @@ description: As a set, the OID_GEN_RNDIS_CONFIG_PARAMETER is used to set device-
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_RNDIS_CONFIG_PARAMETER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_RNDIS\_CONFIG\_PARAMETER

@@ -9,7 +9,6 @@ api_name:
 - ELAM_DRIVER_DETECTED_FATAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x178: ELAM\_DRIVER\_DETECTED\_FATAL\_ERROR

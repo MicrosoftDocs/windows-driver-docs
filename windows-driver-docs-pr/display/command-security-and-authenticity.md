@@ -5,7 +5,6 @@ keywords:
 - commands WDK COPP
 - command exchange WDK COPP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Command Security and Authenticity

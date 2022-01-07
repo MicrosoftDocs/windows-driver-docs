@@ -2,7 +2,6 @@
 title: Checking the Oplock State of an IRP_MJ_CLEANUP operation
 description: Checking the Oplock State of an IRP_MJ_CLEANUP operation
 ms.date: 11/25/2019
-ms.localizationpriority: medium
 ---
 
 # Checking the Oplock State of an IRP_MJ_CLEANUP operation

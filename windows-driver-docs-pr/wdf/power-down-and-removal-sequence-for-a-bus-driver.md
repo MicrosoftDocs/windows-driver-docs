@@ -2,7 +2,6 @@
 title: Power-Down and Removal Sequence for a Bus Driver
 description: Power-Down and Removal Sequence for a Bus Driver
 ms.date: 03/28/2019
-ms.localizationpriority: medium
 ---
 
 # Power-Down and Removal Sequence for a Bus Driver

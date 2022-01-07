@@ -4,7 +4,6 @@ description: Side Effects of Using the Checked Build
 keywords:
 - checked builds WDK , performance impact
 ms.date: 05/08/2020
-ms.localizationpriority: medium
 ---
 
 # Side Effects of Using the Checked Build

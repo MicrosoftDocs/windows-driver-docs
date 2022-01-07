@@ -4,7 +4,6 @@ description: Driver-Specific Bins
 keywords:
 - device-specific bins WDK printer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver-Specific Bins

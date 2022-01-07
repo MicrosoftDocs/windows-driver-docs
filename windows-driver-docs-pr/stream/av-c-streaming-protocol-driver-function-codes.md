@@ -2,7 +2,6 @@
 title: AV/C Streaming Protocol Driver Function Codes
 description: The AV/C Streaming filter driver intercepts IRPs on their way down the device stack.
 ms.date: 07/27/2021
-ms.localizationpriority: medium
 ---
 
 # AV/C Streaming Protocol Driver Function Codes

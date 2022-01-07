@@ -9,7 +9,6 @@ keywords:
 - INF files WDK network
 - network INF files WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Network INF Files

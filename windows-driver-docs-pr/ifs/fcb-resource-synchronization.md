@@ -9,7 +9,6 @@ keywords:
 - synchronization WDK RDBSS
 - file control block structure WDK RDBSS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # FCB Resource Synchronization

@@ -3,7 +3,6 @@ title: Using PnP Notification
 description: Using PnP Notification
 keywords: ["notifications WDK PnP"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using PnP Notification

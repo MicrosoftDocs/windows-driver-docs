@@ -3,7 +3,6 @@ title: Setting Up Kernel-Mode Debugging
 description: This section describes how to set up kernel-mode debugging.
 keywords: ["Kernel-mode debugging", "Setting up kernel-mode debugging"]
 ms.date: 02/20/2020
-ms.localizationpriority: medium
 ---
 
 # <span id="debugger.setting_up_kernel-mode_debugging_in_windbg__cdb__or_ntsd"></span>Setting Up Kernel-Mode Debugging

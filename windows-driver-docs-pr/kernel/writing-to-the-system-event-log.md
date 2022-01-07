@@ -3,7 +3,6 @@ title: Writing to the System Event Log
 description: Writing to the System Event Log
 keywords: ["NTSTATUS values WDK kernel", "dump data WDK kernel", "predefined error codes WDK kernel", "system event logs WDK kernel", "property sheets WDK errors", "Event Viewer WDK kernel", "sample log entry property sheets WDK kernel", "log entries WDK kernel", "entries WDK error logs"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Writing to the System Event Log

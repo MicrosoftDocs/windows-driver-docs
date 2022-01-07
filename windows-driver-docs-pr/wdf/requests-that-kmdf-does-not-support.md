@@ -2,7 +2,6 @@
 title: Requests That KMDF Does Not Support
 description: Requests That KMDF Does Not Support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Requests That KMDF Does Not Support

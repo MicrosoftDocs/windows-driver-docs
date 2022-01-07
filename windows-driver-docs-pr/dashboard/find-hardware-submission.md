@@ -3,7 +3,6 @@ title: Find and manage your hardware submission
 description: Learn how to find a specific Windows hardware submission by searching with text or by selecting driver attributes in a keyword search.
 ms.topic: article
 ms.date: 09/24/2018
-ms.localizationpriority: medium
 ---
 
 # Find a hardware submission

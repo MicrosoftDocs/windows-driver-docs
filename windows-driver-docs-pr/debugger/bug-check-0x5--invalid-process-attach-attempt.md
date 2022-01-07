@@ -9,7 +9,6 @@ api_name:
 - INVALID_PROCESS_ATTACH_ATTEMPT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x5: INVALID\_PROCESS\_ATTACH\_ATTEMPT

@@ -6,7 +6,6 @@ keywords:
 - removing instances of DirectX VA device objects
 - DirectX Video Acceleration WDK Windows 2000 display , deleting instances
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Deleting Instances of DirectX VA Device Objects

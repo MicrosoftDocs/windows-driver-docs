@@ -6,7 +6,6 @@ keywords:
 - texture transforms WDK Direct3D
 - transforms WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Texture Coordinate Transformations

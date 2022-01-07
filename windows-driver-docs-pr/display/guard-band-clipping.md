@@ -6,7 +6,6 @@ keywords:
 - guard band clipping WDK Direct3D
 - clipping WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Guard Band Clipping

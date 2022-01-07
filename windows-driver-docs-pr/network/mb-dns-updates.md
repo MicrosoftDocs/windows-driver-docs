@@ -2,7 +2,6 @@
 title: MB DNS Updates
 description: MB DNS Updates
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MB DNS Updates

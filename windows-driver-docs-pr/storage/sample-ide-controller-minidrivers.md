@@ -5,7 +5,6 @@ keywords:
 - IDE controller minidrivers WDK storage , samples
 - storage IDE controller minidrivers WDK , samples
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sample IDE Controller Minidrivers

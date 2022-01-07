@@ -4,7 +4,6 @@ description: WDI_TLV_TCP_OFFLOAD_CAPABILITIES is a TLV that contains TCP/IP offl
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_TCP_OFFLOAD_CAPABILITIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_TCP\_OFFLOAD\_CAPABILITIES

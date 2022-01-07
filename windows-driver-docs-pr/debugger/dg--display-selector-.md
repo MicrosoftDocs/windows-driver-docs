@@ -9,7 +9,6 @@ api_name:
 - dg (Display Selector)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # dg (Display Selector)

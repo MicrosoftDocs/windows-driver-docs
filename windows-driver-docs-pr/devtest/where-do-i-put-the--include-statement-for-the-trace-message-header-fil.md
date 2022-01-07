@@ -2,7 +2,6 @@
 title: Where do I put the #include statement for the trace message header file
 description: Where do I put the #include statement for the trace message header file
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Where do I put the \#include statement for the trace message header file?

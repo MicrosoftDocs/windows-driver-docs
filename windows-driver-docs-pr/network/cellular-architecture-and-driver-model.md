@@ -2,7 +2,6 @@
 title: Cellular architecture and implementation
 description: The cellular architecture for Windows 10.
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q4
 ---
 

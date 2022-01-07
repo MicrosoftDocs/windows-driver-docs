@@ -11,7 +11,6 @@ keywords:
 - drawing WDK GDI , curves
 - brushes WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Drawing Lines and Curves

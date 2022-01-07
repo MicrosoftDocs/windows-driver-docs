@@ -2,7 +2,6 @@
 title: Printer Property
 description: Printer Property
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Printer Property

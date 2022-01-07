@@ -8,7 +8,6 @@ keywords:
 - target computers WDK checked builds
 - null modem cables WDK
 ms.date: 05/08/2020
-ms.localizationpriority: medium
 ---
 
 # The Checked Build and the Debugger

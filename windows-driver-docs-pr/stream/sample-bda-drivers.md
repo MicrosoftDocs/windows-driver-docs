@@ -6,7 +6,6 @@ keywords:
 - Broadcast Driver Architecture WDK AVStream , sample drivers
 - BDA WDK AVStream , sample drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sample BDA Drivers

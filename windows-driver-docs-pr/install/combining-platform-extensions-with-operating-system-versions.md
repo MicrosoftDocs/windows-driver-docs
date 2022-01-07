@@ -1,8 +1,7 @@
 ---
 title: Combining Platform Extensions with Operating System Versions
 description: Combining Platform Extensions with Operating System Versions
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 01/06/2022
 ---
 
 # Combining Platform Extensions with Operating System Versions
@@ -31,132 +30,11 @@ Specifies that the target operating system is NT-based. Windows 2000 and later v
 Identifies the hardware platform. If specified, this must be **x86**, **ia64**, or **amd64**. If not specified, the associated INF *Models* section can be used with any hardware platform.
 
 <a href="" id="osmajorversion"></a>*OSMajorVersion*  
-A number that represents the major version number for the operating system. The following table defines the major version for the Windows operating systems.
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Windows version</th>
-<th align="left">Major version</th>
-</tr>
-</thead>
-<tbody>
-<tr class="even">
-<td align="left"><p>Windows 10</p></td>
-<td align="left"><p>10</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2012 R2</p></td>
-<td align="left"><p>6</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 8.1</p></td>
-<td align="left"><p>6</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2012</p></td>
-<td align="left"><p>6</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 8</p></td>
-<td align="left"><p>6</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2008 R2</p></td>
-<td align="left"><p>6</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 7</p></td>
-<td align="left"><p>6</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2008</p></td>
-<td align="left"><p>6</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Vista</p></td>
-<td align="left"><p>6</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2003</p></td>
-<td align="left"><p>5</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows XP</p></td>
-<td align="left"><p>5</p></td>
-</tr>
-</tbody>
-</table>
-
+A number that represents the major version number for the operating system. For a table listing major versions for the Windows operating systems, see [*OSMajorVersion*](./inf-manufacturer-section.md#osmajorversion).
  
 
 <a href="" id="osminorversion"></a>*OSMinorVersion*  
-A number that represents the minor version number for the operating system. The following table defines the minor version for the Windows operating systems.
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Windows version</th>
-<th align="left">Minor version</th>
-</tr>
-</thead>
-<tbody>
-<tr class="even">
-<td align="left"><p>Windows 10</p></td>
-<td align="left"><p>0</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2012 R2</p></td>
-<td align="left"><p>3</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 8.1</p></td>
-<td align="left"><p>3</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2012</p></td>
-<td align="left"><p>2</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 8</p></td>
-<td align="left"><p>2</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2008 R2</p></td>
-<td align="left"><p>1</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 7</p></td>
-<td align="left"><p>1</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2008</p></td>
-<td align="left"><p>0</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Vista</p></td>
-<td align="left"><p>0</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2003</p></td>
-<td align="left"><p>2</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows XP</p></td>
-<td align="left"><p>1</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+A number that represents the minor version number for the operating system. For a table listing minor versions for the Windows operating systems, see [*OSMinorVersion*](./inf-manufacturer-section.md#osminorversion).
 
 <a href="" id="producttype"></a>*ProductType*
 

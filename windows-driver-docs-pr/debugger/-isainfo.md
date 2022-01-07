@@ -9,7 +9,6 @@ api_name:
 - isainfo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !isainfo

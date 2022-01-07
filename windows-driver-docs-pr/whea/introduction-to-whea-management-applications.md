@@ -7,7 +7,6 @@ keywords:
 - WHEA WDK , management applications
 - Windows Hardware Error Architecture WDK , management applications
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to WHEA Management Applications

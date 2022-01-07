@@ -4,7 +4,6 @@ description: OID_PNP_REMOVE_WAKE_UP_PATTERN
 ms.date: 08/08/2017
 keywords: 
  -OID_PNP_REMOVE_WAKE_UP_PATTERN Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_PNP\_REMOVE\_WAKE\_UP\_PATTERN

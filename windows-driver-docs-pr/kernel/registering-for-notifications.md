@@ -3,7 +3,6 @@ title: Registering for Notifications
 description: Registering for Notifications
 keywords: ["filtering registry calls WDK kernel , registering for notifications", "registry filtering drivers WDK kernel , registering for notifications", "registering filter registry call notifications", "pre-notification option WDK filter registry call", "post-notification option WDK filter registry call", "notifications WDK filter registry call"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Registering for Notifications

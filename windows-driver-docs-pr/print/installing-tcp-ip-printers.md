@@ -4,7 +4,6 @@ description: Networked printers that use TCP/IP can take advantage of features o
 keywords:
 - TCP/IP WDK printer
 ms.date: 08/13/2021
-ms.localizationpriority: medium
 ---
 
 # Installing TCP/IP printers

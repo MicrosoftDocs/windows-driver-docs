@@ -11,7 +11,6 @@ keywords:
 - update coinstallers WDK UMDF
 - INF files WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using the UMDF Co-installer

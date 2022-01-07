@@ -9,7 +9,6 @@ keywords:
 - Indirect display driver implementation
 - IDD implementation
 ms.date: 09/28/2020
-ms.localizationpriority: medium
 ---
 
 # Indirect display driver overview

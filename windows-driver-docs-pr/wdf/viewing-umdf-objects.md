@@ -6,7 +6,6 @@ keywords:
 - UMDF WDK , debugging scenarios, viewing UMDF objects
 - UMDF WDK , viewing UMDF objects
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Viewing UMDF Objects

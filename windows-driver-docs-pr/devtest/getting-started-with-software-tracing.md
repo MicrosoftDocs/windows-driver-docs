@@ -2,7 +2,6 @@
 title: Getting Started with Software Tracing
 description: Getting Started with Software Tracing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Getting Started with Software Tracing

@@ -9,7 +9,6 @@ api_name:
 - deadlock
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !deadlock

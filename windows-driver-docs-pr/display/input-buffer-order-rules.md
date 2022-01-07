@@ -5,7 +5,6 @@ keywords:
 - input buffers WDK DirectX VA
 - deinterlacing WDK DirectX VA , input buffer order
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Input Buffer Order Rules

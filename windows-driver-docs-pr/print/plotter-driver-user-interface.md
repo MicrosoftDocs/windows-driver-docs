@@ -6,7 +6,6 @@ keywords:
 - MSPlot WDK print , user interface
 - user interface WDK MSPlot
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Plotter Driver User Interface

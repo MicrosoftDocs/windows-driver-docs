@@ -9,7 +9,6 @@ api_name:
 - PREVIOUS_FATAL_ABNORMAL_RESET_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x175: PREVIOUS\_FATAL\_ABNORMAL\_RESET\_ERROR

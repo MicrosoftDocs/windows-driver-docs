@@ -2,7 +2,6 @@
 title: Using Activity Identifiers
 description: Using Activity Identifiers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Activity Identifiers

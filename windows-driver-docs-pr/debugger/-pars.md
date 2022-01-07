@@ -9,7 +9,6 @@ api_name:
 - pars
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pars

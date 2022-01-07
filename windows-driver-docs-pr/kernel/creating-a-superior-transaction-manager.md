@@ -3,7 +3,6 @@ title: Creating a Superior Transaction Manager
 description: Creating a Superior Transaction Manager
 keywords: ["transaction managers WDK KTM", "superior transaction managers WDK KTM", "enlistments WDK KTM , superior enlistments", "superior enlistments WDK KTM", "enlistments WDK KTM , subordinate enlistments", "subordinate enlistments WDK KTM"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Superior Transaction Manager

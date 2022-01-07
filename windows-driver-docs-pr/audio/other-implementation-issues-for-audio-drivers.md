@@ -2,7 +2,6 @@
 title: Other Implementation Issues for Audio Drivers
 description: Other Implementation Issues for Audio Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Other Implementation Issues for Audio Drivers

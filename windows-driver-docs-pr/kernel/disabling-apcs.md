@@ -3,7 +3,6 @@ title: Disabling APCs
 description: Disabling APCs
 keywords: ["asynchronous procedure calls WDK kernel", "APCs WDK kernel", "disabling APCs", "critical regions WDK kernel", "guarded regions WDK kernel", "raising current IRQLs"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Disabling APCs

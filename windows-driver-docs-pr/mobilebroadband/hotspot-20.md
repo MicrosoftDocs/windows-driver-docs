@@ -2,7 +2,6 @@
 title: Hotspot 2.0
 description: Hotspot 2.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hotspot 2.0

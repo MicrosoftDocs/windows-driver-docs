@@ -2,7 +2,6 @@
 title: Overview of Packet Coalescing
 description: Overview of Packet Coalescing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of Packet Coalescing

@@ -9,7 +9,6 @@ api_name:
 - iovirp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !iovirp

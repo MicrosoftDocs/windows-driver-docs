@@ -9,7 +9,6 @@ keywords:
 - MiniportRestart
 - starting miniport adapters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Starting an Adapter

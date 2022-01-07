@@ -9,7 +9,6 @@ api_name:
 - KsDeviceMutex
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # KsDeviceMutex rule ()

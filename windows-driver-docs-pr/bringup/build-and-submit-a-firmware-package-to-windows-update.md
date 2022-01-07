@@ -2,7 +2,6 @@
 title: Build and submit a firmware package to Windows Update (WU)
 description: Provides information about how to build and submit a firmware package to Windows Update (WU).
 ms.date: 08/18/2021
-ms.localizationpriority: medium
 ---
 
 # Build and submit a firmware package to Windows Update (WU)

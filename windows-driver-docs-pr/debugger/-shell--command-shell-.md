@@ -9,7 +9,6 @@ api_name:
 - .shell (Command Shell)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .shell (Command Shell)

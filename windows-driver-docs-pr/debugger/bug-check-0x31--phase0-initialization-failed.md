@@ -9,7 +9,6 @@ api_name:
 - PHASE0_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x31: PHASE0\_INITIALIZATION\_FAILED

@@ -9,7 +9,6 @@ api_name:
 - usbkd.urbfunc
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.urbfunc

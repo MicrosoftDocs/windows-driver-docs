@@ -2,7 +2,6 @@
 title: Enable silent process exit monitoring
 description: Enable silent process exit monitoring
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Enable silent process exit monitoring

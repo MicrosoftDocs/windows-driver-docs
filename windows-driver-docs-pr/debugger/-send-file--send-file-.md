@@ -9,7 +9,6 @@ api_name:
 - .send_file (Send File)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .send\_file (Send File)

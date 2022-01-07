@@ -9,7 +9,6 @@ api_name:
 - c (Compare Memory)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # c (Compare Memory)

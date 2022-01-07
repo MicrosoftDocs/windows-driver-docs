@@ -2,7 +2,6 @@
 title: Receiving Remote NDIS QoS Parameters
 description: Receiving Remote NDIS QoS Parameters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Receiving Remote NDIS QoS Parameters

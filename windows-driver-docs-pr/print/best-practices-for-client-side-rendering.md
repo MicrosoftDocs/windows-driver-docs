@@ -4,7 +4,6 @@ description: Best Practices for Client-Side Rendering
 keywords:
 - client-side rendering WDK print , best practices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Best Practices for Client-Side Rendering

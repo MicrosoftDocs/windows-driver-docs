@@ -2,7 +2,6 @@
 title: Fusion sensor implementation details
 description: This section provides implementation details about the Windows fusion sensor driver stack.
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Fusion sensor implementation details

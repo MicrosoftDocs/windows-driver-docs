@@ -6,7 +6,6 @@ keywords:
 - storage peripherals WDK , power requests
 - power requests WDK storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Power Requests to Storage Peripherals

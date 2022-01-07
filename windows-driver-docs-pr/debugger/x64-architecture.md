@@ -3,7 +3,6 @@ title: x64 Architecture
 description: x64 Architecture
 keywords: ["x64 processor, architecture", "registers, on an x64 processor", "x64 processor, registers"]
 ms.date: 01/28/2021
-ms.localizationpriority: medium
 ---
 
 # x64 Architecture

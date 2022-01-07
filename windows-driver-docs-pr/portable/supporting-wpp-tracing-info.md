@@ -2,7 +2,6 @@
 description: Supporting WPP Tracing
 title: Supporting WPP Tracing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting WPP Tracing

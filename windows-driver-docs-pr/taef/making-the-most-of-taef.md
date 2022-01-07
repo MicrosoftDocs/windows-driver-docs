@@ -2,7 +2,6 @@
 title: Making the Most of TAEF
 description: Making the Most of TAEF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Making the Most of TAEF

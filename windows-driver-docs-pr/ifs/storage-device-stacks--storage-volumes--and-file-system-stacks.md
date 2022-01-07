@@ -7,7 +7,6 @@ keywords:
 - device objects WDK file system
 - volumes WDK file system
 ms.date: 10/16/2019
-ms.localizationpriority: medium
 ---
 
 # Storage Device Stacks, Storage Volumes, and File System Stacks

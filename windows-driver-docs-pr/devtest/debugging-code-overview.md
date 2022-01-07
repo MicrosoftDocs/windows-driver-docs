@@ -6,7 +6,6 @@ keywords:
 - debugging code WDK
 - debugging code WDK , about debugging code
 ms.date: 07/20/2020
-ms.localizationpriority: medium
 ---
 
 # Debugging Code Overview

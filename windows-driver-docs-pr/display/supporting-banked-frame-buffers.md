@@ -12,7 +12,6 @@ keywords:
 - spanning multiple banks
 - multiple banks in frame buffer WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Banked Frame Buffers

@@ -13,7 +13,6 @@ keywords:
 - panes WDK Static Driver Verifier
 - Static Driver Verifier Report WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Static Driver Verifier Report

@@ -9,7 +9,6 @@ api_name:
 - PROCESSOR_DRIVER_INTERNAL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x143: PROCESSOR\_DRIVER\_INTERNAL

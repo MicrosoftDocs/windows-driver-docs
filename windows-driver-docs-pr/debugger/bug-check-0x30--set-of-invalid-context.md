@@ -9,7 +9,6 @@ api_name:
 - SET_OF_INVALID_CONTEXT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x30: SET\_OF\_INVALID\_CONTEXT

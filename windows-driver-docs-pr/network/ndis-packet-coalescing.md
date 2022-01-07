@@ -2,7 +2,6 @@
 title: Introduction to NDIS Packet Coalescing
 description: Introduction to NDIS Packet Coalescing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to NDIS Packet Coalescing

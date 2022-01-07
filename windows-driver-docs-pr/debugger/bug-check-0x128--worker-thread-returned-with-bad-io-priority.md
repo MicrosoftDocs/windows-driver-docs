@@ -9,7 +9,6 @@ api_name:
 - WORKER_THREAD_RETURNED_WITH_BAD_IO_PRIORITY
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x128: WORKER\_THREAD\_RETURNED\_WITH\_BAD\_IO\_PRIORITY

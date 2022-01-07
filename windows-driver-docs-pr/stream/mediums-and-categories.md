@@ -11,7 +11,6 @@ keywords:
 - mediums WDK video capture
 - pin connections WDK video capture
 ms.date: 06/18/2020
-ms.localizationpriority: medium
 ---
 
 # Mediums and categories

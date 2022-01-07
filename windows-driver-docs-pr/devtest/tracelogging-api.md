@@ -2,7 +2,6 @@
 title: TraceLogging API
 description: TraceLogging API
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # TraceLogging API

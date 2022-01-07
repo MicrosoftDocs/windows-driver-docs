@@ -9,7 +9,6 @@ api_name:
 - address
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !address

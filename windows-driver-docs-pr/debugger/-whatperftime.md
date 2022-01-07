@@ -9,7 +9,6 @@ api_name:
 - whatperftime
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !whatperftime

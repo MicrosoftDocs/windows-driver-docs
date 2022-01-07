@@ -9,7 +9,6 @@ api_name:
 - ca
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ca

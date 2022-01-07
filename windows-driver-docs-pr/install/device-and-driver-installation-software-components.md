@@ -2,7 +2,6 @@
 title: Device and Driver Installation Software Components
 description: Device and Driver Installation Software Components
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device and Driver Installation Software Components

@@ -15,7 +15,6 @@ keywords:
 - filter types WDK AVStream
 - pin types WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # AVStream Descriptors

@@ -9,7 +9,6 @@ api_name:
 - ReqCompletionRoutine
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ReqCompletionRoutine rule (kmdf)

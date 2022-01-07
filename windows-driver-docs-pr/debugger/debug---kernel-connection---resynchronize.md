@@ -3,7 +3,6 @@ title: Debug Kernel Connection Resynchronize
 description: Debug Kernel Connection Resynchronize
 keywords: ["Debug Kernel Connection Resynchronize", "synchronizing with the target computer, Debug Kernel Connection Resynchronize"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Kernel Connection | Resynchronize

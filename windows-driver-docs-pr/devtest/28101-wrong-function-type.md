@@ -5,7 +5,6 @@ keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
 ms.date: 05/01/2020
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28101"
 ---

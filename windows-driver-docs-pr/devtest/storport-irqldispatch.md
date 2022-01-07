@@ -9,7 +9,6 @@ api_name:
 - IrqlDispatch
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlDispatch rule (storport)

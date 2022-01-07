@@ -4,7 +4,6 @@ description: An overlying driver issues an object identifier (OID) method reques
 ms.date: 08/08/2017
 keywords: 
  -OID_NIC_SWITCH_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_NIC\_SWITCH\_PARAMETERS

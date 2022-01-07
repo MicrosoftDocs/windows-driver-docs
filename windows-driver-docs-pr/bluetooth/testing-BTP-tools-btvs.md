@@ -2,7 +2,6 @@
 title: Microsoft Bluetooth Test Platform - BTVS
 description: Bluetooth Test Platform (BTP) Bluetooth Virtual Sniffer.
 ms.date: 1/12/2021
-ms.localizationpriority: medium
 
 ---
 # Bluetooth Virtual Sniffer (btvs.exe)

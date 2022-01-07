@@ -3,7 +3,6 @@ title: Using a Driver-Defined Callback Object
 description: Using a Driver-Defined Callback Object
 keywords: ["callback objects WDK kernel", "driver-defined callback objects WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using a Driver-Defined Callback Object

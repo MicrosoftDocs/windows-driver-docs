@@ -2,7 +2,6 @@
 title: PROPSETID\_ALLOCATOR\_CONTROL
 description: PROPSETID\_ALLOCATOR\_CONTROL
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # PROPSETID\_ALLOCATOR\_CONTROL

@@ -5,7 +5,6 @@ keywords:
 - Boot.ini files WDK
 - boot options WDK , Boot.ini files
 ms.date: 04/22/2019
-ms.localizationpriority: medium
 ---
 
 # Boot Options in a Boot.ini File

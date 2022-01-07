@@ -4,7 +4,6 @@ description: OID_WWAN_LTE_ATTACH_CONFIG enables the operating system to query or
 ms.date: 08/22/2018
 keywords: 
  -OID_WWAN_LTE_ATTACH_CONFIG Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID_WWAN_LTE_ATTACH_CONFIG

@@ -6,7 +6,6 @@ keywords:
 - ACPI control methods WDK , input buffer structures
 - ACPI control methods WDK , SendDownStreamIrp code sample
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # Evaluating ACPI Control Methods Synchronously

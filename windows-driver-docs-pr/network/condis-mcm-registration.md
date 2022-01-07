@@ -6,7 +6,6 @@ keywords:
 - miniport call managers WDK networking , registering CoNDIS miniport call managers
 - registering miniport call managers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # CoNDIS MCM Registration

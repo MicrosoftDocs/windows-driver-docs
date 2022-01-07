@@ -6,7 +6,6 @@ keywords:
 - vertex shaders WDK DirectX 9.0 , shader 3.0 support
 - pixel shaders WDK DirectX 9.0 , shader 3.0 support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Capabilities for Shader 3 Support

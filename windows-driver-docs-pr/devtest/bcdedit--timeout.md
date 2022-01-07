@@ -9,7 +9,6 @@ api_name:
 - BCDEdit /timeout
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # BCDEdit /timeout

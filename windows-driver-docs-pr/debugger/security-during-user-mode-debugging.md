@@ -3,7 +3,6 @@ title: Security During User-Mode Debugging
 description: Security During User-Mode Debugging
 keywords: ["security considerations, user-mode debugging"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Security During User-Mode Debugging

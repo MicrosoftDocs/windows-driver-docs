@@ -4,7 +4,6 @@ description: Using Session Protocol
 keywords:
 - session protocol WDK SANs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Session Protocol

@@ -3,7 +3,6 @@ title: Removing a Device in a Function Driver
 description: Removing a Device in a Function Driver
 keywords: ["function drivers WDK PnP", "DispatchPnP routine"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Removing a Device in a Function Driver

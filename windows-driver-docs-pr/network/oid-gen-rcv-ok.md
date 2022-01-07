@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_RCV_OK OID specifies the number of frames t
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_RCV_OK Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_RCV\_OK

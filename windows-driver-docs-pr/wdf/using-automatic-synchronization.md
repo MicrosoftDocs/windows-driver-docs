@@ -18,7 +18,6 @@ keywords:
 - WdfSynchronizationScopeNone
 - WdfSynchronizationScopeInheritFromParent
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Automatic Synchronization

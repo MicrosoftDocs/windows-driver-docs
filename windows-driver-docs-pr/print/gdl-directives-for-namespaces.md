@@ -10,7 +10,6 @@ keywords:
 - namespaces WDK GDL , directives
 - namespace directives WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Directives for Namespaces

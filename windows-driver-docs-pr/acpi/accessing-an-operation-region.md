@@ -7,7 +7,6 @@ keywords:
 - function drivers WDK ACPI , operation regions
 - WDM function drivers WDK ACPI , operation regions
 ms.date: 04/14/2021
-ms.localizationpriority: medium
 ---
 
 # Accessing an Operation Region

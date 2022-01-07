@@ -6,7 +6,6 @@ keywords:
 - WLAN adapters WDK , removing
 - removing WLAN adapters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # 802.11 WLAN Adapter Removal

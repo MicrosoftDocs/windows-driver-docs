@@ -12,7 +12,6 @@ keywords:
 - allocated port state WDK NDIS
 - port numbers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Allocating an NDIS Port

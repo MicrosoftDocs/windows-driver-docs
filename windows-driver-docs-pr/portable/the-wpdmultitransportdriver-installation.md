@@ -2,7 +2,6 @@
 description: Installing the WpdMultiTransportDriver Sample
 title: Installing the WpdMultiTransportDriver Sample
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing the WpdMultiTransportDriver Sample

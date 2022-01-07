@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_OFFLOAD_ENCASPULATION_CHANGE s
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_OFFLOAD_ENCASPULATION_CHANGE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_OFFLOAD\_ENCASPULATION\_CHANGE

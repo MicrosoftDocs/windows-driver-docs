@@ -9,7 +9,6 @@ api_name:
 - ppmperfpolicy
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ppmperfpolicy

@@ -5,7 +5,6 @@ keywords:
 - COM interfaces WDK print , creating plug-ins
 - plug-ins WDK print , creating
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating the Plug-In

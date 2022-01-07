@@ -9,7 +9,6 @@ keywords:
 - motion compensation WDK DirectX VA
 - callbacks WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mapping the Deinterlace DDI to DirectDraw and DirectX VA

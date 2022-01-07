@@ -8,7 +8,6 @@ keywords:
 - DWPS WDK
 - Device Profile for Web Services WDK
 ms.date: 05/20/2020
-ms.localizationpriority: medium
 ---
 
 # Referenced Namespaces

@@ -10,7 +10,6 @@ keywords:
 - rules WDK Static Driver Verifier
 - rule list files WDK Static Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Static Driver Verifier Rule List File

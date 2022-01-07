@@ -6,7 +6,6 @@ keywords:
 - UI plug-ins WDK print , accessing driver settings
 - status information WDK print plug-ins
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing Driver Settings from UI Plug-Ins

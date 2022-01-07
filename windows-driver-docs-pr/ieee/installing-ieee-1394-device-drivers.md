@@ -5,7 +5,6 @@ keywords:
 - IEEE 1394 WDK buses , driver installations
 - 1394 WDK buses , driver installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing IEEE 1394 Device Drivers

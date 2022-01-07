@@ -4,10 +4,11 @@ description: WDI_TLV_HESSID is a TLV that contains a list of HESSIDs.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_HESSID Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_HESSID
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_HESSID is a TLV that contains a list of HESSIDs.

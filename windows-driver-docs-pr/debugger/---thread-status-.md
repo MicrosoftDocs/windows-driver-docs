@@ -9,7 +9,6 @@ api_name:
 - ~ (Thread Status)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ~ (Thread Status)

@@ -4,10 +4,11 @@ description: WDI_TLV_ADDITIONAL_PROBE_REQUEST_DEFAULT_IES is a TLV that contains
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ADDITIONAL_PROBE_REQUEST_DEFAULT_IES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ADDITIONAL\_PROBE\_REQUEST\_DEFAULT\_IES
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_ADDITIONAL\_PROBE\_REQUEST\_DEFAULT\_IES is a TLV that contains additional probe request IEs.

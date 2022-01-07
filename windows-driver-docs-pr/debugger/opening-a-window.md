@@ -3,7 +3,6 @@ title: Opening a Window
 description: Opening a Window
 keywords: ["debugging information windows, opening"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Opening a Window

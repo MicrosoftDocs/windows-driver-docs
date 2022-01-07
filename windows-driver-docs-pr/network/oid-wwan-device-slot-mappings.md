@@ -4,7 +4,6 @@ description: OID_WWAN_DEVICE_SLOT_MAPPING_INFO sets or returns the device-slot m
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_DEVICE_SLOT_MAPPING_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO

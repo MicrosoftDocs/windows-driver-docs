@@ -2,7 +2,6 @@
 title: Using the IStiUSD Escape Method
 description: Using the IStiUSD Escape Method
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using the IStiUSD Escape Method

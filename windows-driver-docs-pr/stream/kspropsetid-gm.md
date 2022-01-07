@@ -2,7 +2,6 @@
 title: KSPROPSETID\_GM
 description: KSPROPSETID\_GM
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_GM

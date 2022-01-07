@@ -4,7 +4,6 @@ description: Drivers of devices with internal caches for data and drivers that m
 ms.date: 08/12/2017
 keywords:
  - IRP_MJ_FLUSH_BUFFERS Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_FLUSH\_BUFFERS

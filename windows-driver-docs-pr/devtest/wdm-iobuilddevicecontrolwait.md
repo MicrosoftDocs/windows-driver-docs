@@ -9,7 +9,6 @@ api_name:
 - IoBuildDeviceControlWait
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoBuildDeviceControlWait rule (wdm)

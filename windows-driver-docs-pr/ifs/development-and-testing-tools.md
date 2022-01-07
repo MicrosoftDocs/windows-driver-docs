@@ -8,7 +8,6 @@ keywords:
 - Filter Verifier WDK file system minifilter
 - Verifier utility
 ms.date: 08/21/2020
-ms.localizationpriority: medium
 ---
 
 # Development and Testing Tools

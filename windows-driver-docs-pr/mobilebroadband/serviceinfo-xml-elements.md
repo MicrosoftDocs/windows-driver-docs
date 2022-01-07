@@ -2,7 +2,6 @@
 title: ServiceInfo XML elements list
 description: ServiceInfo XML elements list
 ms.date: 07/05/2019
-ms.localizationpriority: medium
 ---
 
 # ServiceInfo XML elements list

@@ -7,7 +7,6 @@ keywords:
 - PCL XL vector graphics WDK Unidrv , about PCL XL vector graphics
 - PCL-6 WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PCL XL (PCL-6) Vector Graphics Support

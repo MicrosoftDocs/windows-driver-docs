@@ -2,7 +2,6 @@
 title: Running InfVerif from the command line
 description: This topic lists the options that are available when you run InfVerif.exe from the command line.
 ms.date: 04/28/2020
-ms.localizationpriority: medium
 ---
 
 # Running InfVerif from the command line

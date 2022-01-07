@@ -9,7 +9,6 @@ api_name:
 - wrmsr (Write MSR)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # wrmsr (Write MSR)

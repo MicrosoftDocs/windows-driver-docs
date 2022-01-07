@@ -13,7 +13,6 @@ keywords:
 - surfaces WDK DirectDraw , capability bits
 - primary surfaces WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectDraw Surfaces

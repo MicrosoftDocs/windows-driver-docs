@@ -9,7 +9,6 @@ api_name:
 - HARDWARE_INTERRUPT_STORM
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF2: HARDWARE\_INTERRUPT\_STORM

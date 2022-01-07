@@ -9,7 +9,6 @@ api_name:
 - EvtIoStopCancel
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # EvtIoStopCancel rule (kmdf)

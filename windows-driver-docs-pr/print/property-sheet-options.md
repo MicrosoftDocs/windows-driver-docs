@@ -8,7 +8,6 @@ keywords:
 - property sheets WDK print
 - selectable property sheet page items WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Property Sheet Options

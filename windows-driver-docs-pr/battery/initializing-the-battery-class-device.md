@@ -7,7 +7,6 @@ keywords:
 - registering battery devices
 - initializing battery devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing the Battery Class Device

@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfumdevstack
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfumdevstack

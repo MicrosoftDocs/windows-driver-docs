@@ -7,7 +7,6 @@ keywords:
 - Web pages WDK printer , customizing
 - INF files WDK print , customized print Web pages
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Customized Print Web Pages

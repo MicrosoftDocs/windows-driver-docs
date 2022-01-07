@@ -2,7 +2,6 @@
 title: KSPROPSETID\_Wave
 description: KSPROPSETID\_Wave
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_Wave

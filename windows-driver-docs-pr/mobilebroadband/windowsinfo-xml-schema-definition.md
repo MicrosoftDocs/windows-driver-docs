@@ -2,7 +2,6 @@
 title: WindowsInfo XML Schema Definition
 description: WindowsInfo XML Schema Definition
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WindowsInfo XML Schema Definition

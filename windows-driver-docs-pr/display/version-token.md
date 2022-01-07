@@ -2,7 +2,6 @@
 title: Version Token
 description: Version Token
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # Version Token

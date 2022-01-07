@@ -2,7 +2,6 @@
 title: Testing Sensor Events
 description: The Sensor Diagnostic Tool lets you test support for events in your driver and firmware.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Testing Sensor Events

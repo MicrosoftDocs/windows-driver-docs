@@ -2,7 +2,6 @@
 title: Scanner Configuration Elements
 description: Scanner Configuration Elements
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Scanner Configuration Elements

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/25/2020
-ms.localizationpriority: medium
 ---
 
 # FSCTL_SET_REPARSE_POINT_EX control code

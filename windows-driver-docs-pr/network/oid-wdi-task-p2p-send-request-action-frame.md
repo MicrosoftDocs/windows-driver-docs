@@ -4,11 +4,12 @@ description: OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME is issued to the device 
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_P2P\_SEND\_REQUEST\_ACTION\_FRAME
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_TASK\_P2P\_SEND\_REQUEST\_ACTION\_FRAME is issued to the device to send a Wi-Fi Direct Public Action Frame Request.

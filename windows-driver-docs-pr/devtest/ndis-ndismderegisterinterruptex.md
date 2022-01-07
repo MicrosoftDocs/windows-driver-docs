@@ -9,7 +9,6 @@ api_name:
 - NdisMDeregisterInterruptEx
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisMDeregisterInterruptEx rule (ndis)

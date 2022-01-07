@@ -5,10 +5,11 @@ ms.assetid:
 ms.date: 05/06/2021
 keywords:
  - WDI_TLV_CIPHER_KEY_GCMP_256_KEY Network Drivers Starting with Windows 10, Version 2004
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CIPHER\_KEY\_GCMP\_256\_KEY
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 WDI\_TLV\_CIPHER\_KEY\_GCMP\_256\_KEY is a TLV that contains GCMP 256 cipher algorithm key data for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](./oid-wdi-set-add-cipher-keys.md).
 

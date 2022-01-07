@@ -3,7 +3,6 @@ title: View Disassembly
 description: View Disassembly
 keywords: ["View Disassembly"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # View | Disassembly

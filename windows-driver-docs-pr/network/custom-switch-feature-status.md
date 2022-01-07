@@ -2,7 +2,6 @@
 title: Custom Switch Feature Status
 description: Custom Switch Feature Status
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Custom Switch Feature Status

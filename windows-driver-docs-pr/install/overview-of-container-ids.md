@@ -4,7 +4,6 @@ description: Overview of Container IDs
 keywords:
 - container IDs WDK , about
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of Container IDs

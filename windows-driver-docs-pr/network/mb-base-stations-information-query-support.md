@@ -4,7 +4,6 @@ description: MB base stations information query support
 keywords:
 - MB base stations information query, Mobile Broadband base stations information query
 ms.date: 08/14/2017
-ms.localizationpriority: medium
 ---
 
 # MB base stations information query support
@@ -172,7 +171,7 @@ The MBIM_UMTS_MRL_INFO structure contains information about a neighboring UMTS c
 | 12 | 4 | CellID | UINT32 | The Cell ID (0-268435455). Use 0xFFFFFFFF when this information is not available. |
 | 16 | 4 | UARFCN | UINT32 | The UTRA Absolute Radio Frequency Channel Number for the serving cell (0-16383). Use 0xFFFFFFFF when this information is not available. |
 | 20 | 4 | PrimaryScramblingCode | UINT32 | The Primary Scrambling Code of the serving cell (0-511). Use 0xFFFFFFFF when this information is not available. |
-| 24 | 4 | RSCP | INT32 | The Received Signal Code Power of  the serving cell. The range is -120 to -25, in units of 1dBm. Use 0xFFFFFFFF when this information is not available. |
+| 24 | 4 | RSCP | INT32 | The Received Signal Code Power of  the serving cell. The range is -120 to -25, in units of 1dBm. Use 0 when this information is not available. |
 | 28 | 4 | ECNO | INT32 | The signal to noise ratio of the serving cell; the ratio of the received energy per PN chip for the CPICH to the total received. The range is -50 to 0, in units of 1dBm. Use 1 when this information is not available. |
 | 32 | 4 | PathLoss | UINT32 | The path loss of the serving cell (46-173). Use 0xFFFFFFFF when this information is not available. |
 | 36 |   | DataBuffer | DATABUFFER | The data buffer containing *ProviderId*. |

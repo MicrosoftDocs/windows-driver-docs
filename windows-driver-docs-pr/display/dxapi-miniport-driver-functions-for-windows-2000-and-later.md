@@ -8,7 +8,6 @@ keywords:
 - field skipping WDK DirectDraw
 - bus mastering WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DxApi Miniport Driver Functions For Windows 2000 and Later

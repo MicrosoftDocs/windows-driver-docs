@@ -2,7 +2,6 @@
 title: Overview of Single Root I/O Virtualization (SR-IOV)
 description: Overview of Single Root I/O Virtualization (SR-IOV)
 ms.date: 11/17/2020
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q2
 ---
 

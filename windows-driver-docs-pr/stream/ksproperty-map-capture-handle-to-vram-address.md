@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_MAP\_CAPTURE\_HANDLE\_TO\_VRAM\_ADDRESS
-description: The KSPROPERTY\_MAP\_CAPTURE\_HANDLE\_TO\_VRAM\_ADDRESS property returns the capture driver's mapping of a VRAM surface handle to a VRAM physical address.To use VRAM transport, a capture minidriver must support this property.
+title: KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS
+description: The KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS property returns the capture driver's mapping of a VRAM surface handle to a VRAM physical address.To use VRAM transport, a capture minidriver must support this property.
 keywords: ["KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,52 +10,24 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/22/2021
 ---
 
-# KSPROPERTY\_MAP\_CAPTURE\_HANDLE\_TO\_VRAM\_ADDRESS
+# KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS
 
-
-The KSPROPERTY\_MAP\_CAPTURE\_HANDLE\_TO\_VRAM\_ADDRESS property returns the capture driver's mapping of a VRAM surface handle to a VRAM physical address.
+The **KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS** property returns the capture driver's mapping of a VRAM surface handle to a VRAM physical address.
 
 To use VRAM transport, a capture minidriver must support this property.
 
-### Usage Summary Table
+## Usage Summary Table
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-vram_surface_info_property_s" data-raw-source="[&lt;strong&gt;VRAM_SURFACE_INFO_PROPERTY_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-vram_surface_info_property_s)"><strong>VRAM_SURFACE_INFO_PROPERTY_S</strong></a></p></td>
-<td><p>DWORD</p></td>
-</tr>
-</tbody>
-</table>
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | No | Pin | [**VRAM_SURFACE_INFO_PROPERTY_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-vram_surface_info_property_s) | DWORD |
 
- 
+## Return value
 
-### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
-
-A KSPROPERTY\_MAP\_CAPTURE\_HANDLE\_TO\_VRAM\_ADDRESS returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error code.
+A **KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS** returns **STATUS_SUCCESS** to indicate that it has completed successfully. Otherwise, the request returns an appropriate error code.
 
 ## Remarks
 
@@ -63,21 +35,10 @@ The capture driver should perform the mapping in the handler for this property.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
 
-
 [**KSPROPERTY**](ksproperty-structure.md)
 
+[**VRAM_SURFACE_INFO_PROPERTY_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-vram_surface_info_property_s)

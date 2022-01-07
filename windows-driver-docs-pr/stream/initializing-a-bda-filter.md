@@ -6,7 +6,6 @@ keywords:
 - initializing BDA filters
 - initial filter instance WDK BDA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing a BDA Filter

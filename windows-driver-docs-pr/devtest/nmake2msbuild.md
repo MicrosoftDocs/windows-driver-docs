@@ -2,7 +2,6 @@
 title: Nmake2MsBuild
 description: The Nmake2MsBuild utility generates a Visual Studio project for a driver that was built using a previous version of the WDK from your driver's source code files, and from the sources, dirs, and makefile.inc files.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Nmake2MsBuild

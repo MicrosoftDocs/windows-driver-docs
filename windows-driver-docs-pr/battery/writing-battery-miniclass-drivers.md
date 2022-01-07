@@ -9,7 +9,6 @@ keywords:
 - battery class drivers WDK
 - battery class drivers WDK , about battery class drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Writing Battery Miniclass Drivers

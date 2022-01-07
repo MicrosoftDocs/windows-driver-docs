@@ -9,7 +9,6 @@ api_name:
 - MEMORY1_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x65: MEMORY1\_INITIALIZATION\_FAILED

@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_EXTXPORT\_MEDIUM\_INFO
-description: The KSPROPERTY\_EXTXPORT\_MEDIUM\_INFO property retrieves information about an external device's medium.
+title: KSPROPERTY_EXTXPORT_MEDIUM_INFO
+description: The KSPROPERTY_EXTXPORT_MEDIUM_INFO property retrieves information about an external device's medium.
 keywords: ["KSPROPERTY_EXTXPORT_MEDIUM_INFO Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,77 +10,33 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/20/2021
 ---
 
-# KSPROPERTY\_EXTXPORT\_MEDIUM\_INFO
+# KSPROPERTY_EXTXPORT_MEDIUM_INFO
 
+The **KSPROPERTY_EXTXPORT_MEDIUM_INFO** property retrieves information about an external device's medium.
 
-The KSPROPERTY\_EXTXPORT\_MEDIUM\_INFO property retrieves information about an external device's medium.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_extxport_medium_info_ks"></span><span id="DDK_KSPROPERTY_EXTXPORT_MEDIUM_INFO_KS"></span>
+| Get | Set | Target | Property descriptor type      | Property value type |
+|-----|-----|--------|-------------------------------|---------------------|
+| Yes | No  | Device | [**KSPROPERTY_EXTXPORT_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s) | [**MEDIUM_INFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-medium_info) |
 
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p>Device</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTXPORT_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)"><strong>KSPROPERTY_EXTXPORT_S</strong></a></p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-medium_info" data-raw-source="[&lt;strong&gt;MEDIUM_INFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-medium_info)"><strong>MEDIUM_INFO</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-The property value (operation data) is a MEDIUM\_INFO structure that describes the media loaded into the external device. For example cassette tape, tape grade and write protection.
+The property value (operation data) is a **MEDIUM_INFO** structure that describes the media loaded into the external device. For example cassette tape, tape grade and write protection.
 
 ## Remarks
 
-The **MediumInfo** member of the KSPROPERTY\_EXTXPORT\_S structure specifies the information.
+The **MediumInfo** member of the **KSPROPERTY_EXTXPORT_S** structure specifies the information.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
 
-
 [**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY\_EXTXPORT\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)
+[**KSPROPERTY_EXTXPORT_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)
 
-[**MEDIUM\_INFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-medium_info)
-
+[**MEDIUM_INFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-medium_info)

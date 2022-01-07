@@ -9,7 +9,6 @@ keywords:
 - physical layer WDK networking
 - Windows network architecture WDK
 ms.date: 09/04/2020
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q1
 ---
 

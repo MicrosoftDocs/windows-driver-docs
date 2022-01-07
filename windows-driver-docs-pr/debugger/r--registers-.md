@@ -9,7 +9,6 @@ api_name:
 - r (Registers)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # r (Registers)

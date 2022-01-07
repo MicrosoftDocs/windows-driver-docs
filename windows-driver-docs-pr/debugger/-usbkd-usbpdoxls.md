@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbpdoxls
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbpdoxls

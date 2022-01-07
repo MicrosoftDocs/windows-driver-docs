@@ -4,7 +4,6 @@ description: OID_WWAN_UICC_APP_LIST retrieves a list of applications in a UICC a
 ms.date: 04/08/2019
 keywords: 
  -OID_WWAN_UICC_APP_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

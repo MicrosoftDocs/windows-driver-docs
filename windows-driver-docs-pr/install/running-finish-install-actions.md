@@ -2,7 +2,6 @@
 title: Running Finish-Install Actions
 description: Running Finish-Install Actions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Running Finish-Install Actions

@@ -4,7 +4,6 @@ description: CM_PROB_PHANTOM
 keywords:
 - CM_PROB_PHANTOM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code 45 - CM_PROB_PHANTOM

@@ -3,7 +3,6 @@ title: Calling PoStartNextPowerIrp
 description: Calling PoStartNextPowerIrp
 keywords: ["power IRPs WDK kernel , PoStartNextPowerIrp", "PoStartNextPowerIrp"]
 ms.date: 07/21/2021
-ms.localizationpriority: medium
 ---
 
 # Calling PoStartNextPowerIrp

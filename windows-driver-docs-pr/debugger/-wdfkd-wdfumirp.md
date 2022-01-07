@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfumirp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfumirp

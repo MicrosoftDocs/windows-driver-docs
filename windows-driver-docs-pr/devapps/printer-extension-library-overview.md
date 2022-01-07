@@ -2,7 +2,6 @@
 title: Printer extension library overview for UWP device apps
 description: This topic introduces the printer extension library, a library that helps device manufacturers write UWP device apps for their printer.
 ms.date: 08/13/2021
-ms.localizationpriority: medium
 ---
 
 # Printer extension library overview for UWP device apps

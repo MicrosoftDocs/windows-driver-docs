@@ -6,7 +6,6 @@ keywords:
 - removing trace sessions
 - TraceView WDK , removing trace
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Removing a Trace Session

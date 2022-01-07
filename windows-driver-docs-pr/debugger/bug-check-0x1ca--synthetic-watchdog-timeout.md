@@ -9,7 +9,6 @@ api_name:
 - SYNTHETIC_WATCHDOG_TIMEOUT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1CA: SYNTHETIC\_WATCHDOG\_TIMEOUT

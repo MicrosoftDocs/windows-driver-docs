@@ -4,7 +4,6 @@ description: An overlying driver can obtain the parameters for a virtual port (V
 ms.date: 08/08/2017
 keywords: 
  -OID_NIC_SWITCH_VPORT_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_NIC\_SWITCH\_VPORT\_PARAMETERS

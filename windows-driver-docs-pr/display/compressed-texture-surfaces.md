@@ -11,7 +11,6 @@ keywords:
 - DirectDraw compressed textures WDK Windows 2000 display
 - compressed texture surfaces WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Compressed Texture Surfaces

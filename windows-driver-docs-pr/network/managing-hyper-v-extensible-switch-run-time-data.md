@@ -2,7 +2,6 @@
 title: Managing Hyper-V Extensible Switch Run-Time Data
 description: Managing Hyper-V Extensible Switch Run-Time Data
 ms.date: 12/04/2018
-ms.localizationpriority: medium
 ---
 
 # Managing Hyper-V Extensible Switch Run-Time Data

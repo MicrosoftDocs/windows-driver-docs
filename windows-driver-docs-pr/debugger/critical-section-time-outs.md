@@ -3,7 +3,6 @@ title: Critical Section Time Outs
 description: Critical Section Time Outs
 keywords: ["critical section, debugging critical section time outs"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Critical Section Time Outs

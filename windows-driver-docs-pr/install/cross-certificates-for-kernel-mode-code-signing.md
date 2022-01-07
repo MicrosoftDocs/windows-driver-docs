@@ -2,7 +2,6 @@
 title: Cross-Certificates for Kernel Mode Code Signing
 description: This information describes how to obtain and use cross-certificates for code-signing kernel-mode binary files for Microsoft Windows.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Cross-Certificates for Kernel Mode Code Signing

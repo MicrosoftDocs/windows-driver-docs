@@ -9,7 +9,6 @@ keywords:
 - preempting DMA buffers WDK display
 - DMA buffers WDK display , preemption
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Splitting a DMA Buffer

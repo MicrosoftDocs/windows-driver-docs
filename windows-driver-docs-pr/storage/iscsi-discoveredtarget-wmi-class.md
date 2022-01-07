@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_DiscoveredTarget WMI Class
 description: ISCSI\_DiscoveredTarget WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

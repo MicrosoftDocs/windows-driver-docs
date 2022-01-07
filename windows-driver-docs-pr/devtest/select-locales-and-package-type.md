@@ -4,7 +4,6 @@ description: Select locales and package type in the Device Metadata Authoring Wi
 keywords:
 - Select locales and package type in the Device Metadata Authoring Wizard
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Select locales and package type in the Device Metadata Authoring Wizard

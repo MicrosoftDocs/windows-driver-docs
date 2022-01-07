@@ -9,7 +9,6 @@ keywords:
 - print jobs WDK , rendering
 - banding WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Rendering a Print Job

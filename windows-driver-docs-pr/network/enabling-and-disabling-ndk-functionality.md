@@ -2,7 +2,6 @@
 title: Enabling and Disabling NDK Functionality
 description: To enable or disable NDK functionality, NDIS issues an OID_NDK_SET_STATE OID request. An NDK-capable miniport driver must register support for this OID in its MiniportOidRequest function.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling and Disabling NDK Functionality

@@ -3,7 +3,6 @@ title: Protocol Driver Synchronous OID Requests
 description: This topic describes miniport adapter Synchronous OID requests
 keywords: Protocol driver Synchronous OID Requests Interface, Protocol driverSynchronous OID call, Protocol driverWDK Synchronous OIDs, Protocol driverSynchronous OID request
 ms.date: 09/28/2017
-ms.localizationpriority: medium
 ---
 
 # Protocol Driver Synchronous OID Requests

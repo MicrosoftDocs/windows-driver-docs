@@ -2,7 +2,6 @@
 title: Data Class Interface
 description: Data Class Interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Data Class Interface

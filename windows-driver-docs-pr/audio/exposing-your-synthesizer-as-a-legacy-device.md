@@ -5,7 +5,6 @@ keywords:
 - synthesizers WDK audio , legacy devices
 - legacy device support WDK DirectMusic
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Exposing Your Synthesizer as a Legacy Device

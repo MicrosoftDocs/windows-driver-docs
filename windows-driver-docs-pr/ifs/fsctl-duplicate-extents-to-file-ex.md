@@ -12,7 +12,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # FSCTL\_DUPLICATE\_EXTENTS\_TO\_FILE\_EX control code

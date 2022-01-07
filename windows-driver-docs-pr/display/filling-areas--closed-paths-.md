@@ -9,7 +9,6 @@ keywords:
 - paths WDK GDI , closed
 - closed paths WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Filling Areas (Closed Paths)

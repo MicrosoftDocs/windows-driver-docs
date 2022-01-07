@@ -6,7 +6,6 @@ keywords:
 - HID collections WDK , preparsed data
 - preparsed data WDK HID
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Obtaining Preparsed Data

@@ -2,7 +2,6 @@
 title: Test-Signing a Driver Package's Catalog File
 description: Test-Signing a Driver Package's Catalog File
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Test-Signing a Driver Package's Catalog File

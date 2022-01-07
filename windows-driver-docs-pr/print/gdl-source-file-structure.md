@@ -13,7 +13,6 @@ keywords:
 - GDL WDK , values
 - values WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Source File Structure

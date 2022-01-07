@@ -4,10 +4,11 @@ description: WDI_TLV_DOT11_RESET_PARAMETERS is a TLV that contains parameters fo
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_DOT11_RESET_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_DOT11\_RESET\_PARAMETERS
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_DOT11\_RESET\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_TASK\_DOT11\_RESET](./oid-wdi-task-dot11-reset.md).

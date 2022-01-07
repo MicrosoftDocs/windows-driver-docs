@@ -4,7 +4,6 @@ description: The ACPI_METHOD_SET_ARGUMENT_BUFFER macro sets the members of an AC
 keywords: 
 - ACPI_METHOD_SET_ARGUMENT_BUFFER macro ACPI Devices
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # ACPI_METHOD_SET_ARGUMENT_BUFFER macro

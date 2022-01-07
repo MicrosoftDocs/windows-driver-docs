@@ -2,7 +2,6 @@
 title: Idle Power Management Hard Disk Drive Idle Timeout
 description: Idle Power Management Hard Disk Drive Idle Timeout
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Idle Power Management Hard Disk Drive Idle Timeout

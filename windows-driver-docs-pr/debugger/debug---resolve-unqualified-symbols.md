@@ -3,7 +3,6 @@ title: Debug Resolve Unqualified Symbols
 description: Debug Resolve Unqualified Symbols
 keywords: ["Debug Resolve Unqualified Symbols"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Resolve Unqualified Symbols

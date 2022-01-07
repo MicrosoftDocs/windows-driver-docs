@@ -4,7 +4,6 @@ description: WDI_TLV_PHY_DATA_RATE_LIST is a TLV that contains a list of data ra
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PHY_DATA_RATE_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PHY\_DATA\_RATE\_LIST

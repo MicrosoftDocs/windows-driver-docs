@@ -7,7 +7,6 @@ keywords:
 - Trace Tree pane WDK Static Driver Verifier
 - tracing WDK Static Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Trace Tree Pane

@@ -1,7 +1,6 @@
 ---
 title: Convertible testing
 description: This topic describes tests for convertibles.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

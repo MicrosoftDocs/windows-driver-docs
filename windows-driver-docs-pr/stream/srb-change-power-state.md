@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 08/25/2020
-ms.localizationpriority: medium
 ---
 
 # SRB_CHANGE_POWER_STATE

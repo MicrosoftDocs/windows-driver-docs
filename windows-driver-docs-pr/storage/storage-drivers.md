@@ -4,7 +4,6 @@ description: Storage Drivers
 keywords:
 - storage drivers WDK
 ms.date: 10/08/2019
-ms.localizationpriority: medium
 ---
 
 # About Storage Drivers

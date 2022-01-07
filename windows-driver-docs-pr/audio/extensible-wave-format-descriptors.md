@@ -14,7 +14,6 @@ keywords:
 - WAVEFORMATEX structure
 - WDM audio data formats WDK
 ms.date: 06/30/2020
-ms.localizationpriority: medium
 ---
 
 # Extensible Wave-Format Descriptors

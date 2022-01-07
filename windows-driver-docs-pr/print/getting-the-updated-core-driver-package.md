@@ -2,7 +2,6 @@
 title: Getting the Updated Core Driver Package
 description: Getting the Updated Core Driver Package
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Getting the Updated Core Driver Package

@@ -2,7 +2,6 @@
 title: HID Extensions
 description: This section describes the Human Interface Device (HID) debugger extension commands.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # HID Extensions

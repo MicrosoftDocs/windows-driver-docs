@@ -4,10 +4,11 @@ description: WDI_TLV_PHY_LIST is an unused TLV.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PHY_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PHY\_LIST
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_PHY\_LIST is an unused TLV.

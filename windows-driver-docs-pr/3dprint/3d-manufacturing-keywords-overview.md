@@ -2,7 +2,6 @@
 title: 3D manufacturing keywords overview
 description: The Print Schema 3D manufacturing keywords identify possible settings for a device's capabilities or selected settings for a device configuration.
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # 3D manufacturing keywords overview

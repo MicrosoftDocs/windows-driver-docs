@@ -3,7 +3,6 @@ title: Repeaters
 description: Repeaters
 keywords: ["remote debugging through a repeater", "repeater", "repeater, overview", "DbEngPrx", "DbEngPrx, overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Repeaters

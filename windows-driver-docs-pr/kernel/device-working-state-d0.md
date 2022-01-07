@@ -3,7 +3,6 @@ title: Device Working State D0
 description: Device Working State D0
 keywords: ["device power states WDK kernel", "Dx names WDK power management", "device working state WDK power management", "continuous power WDK kernel", "delays WDK power management", "working states WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Device Working State D0

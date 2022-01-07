@@ -2,7 +2,6 @@
 title: WIA-TWAIN Risks
 description: WIA-TWAIN Risks
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA-TWAIN Risks

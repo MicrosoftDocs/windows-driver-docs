@@ -9,7 +9,6 @@ api_name:
 - EvtSurpriseRemoveNoSuspendQueue
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # EvtSurpriseRemoveNoSuspendQueue rule (kmdf)

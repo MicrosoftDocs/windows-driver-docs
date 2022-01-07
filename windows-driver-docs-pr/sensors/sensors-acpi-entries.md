@@ -2,7 +2,6 @@
 title: Sensors ACPI entries
 description: This topic describes the advanced configuration and power management interface (ACPI) entries that are specific to sensors in Windows 10.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sensors ACPI entries

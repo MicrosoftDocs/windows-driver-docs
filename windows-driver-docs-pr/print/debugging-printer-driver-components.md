@@ -8,7 +8,6 @@ keywords:
 - macros WDK printer
 - global variables WDK debugging
 ms.date: 06/04/2020
-ms.localizationpriority: medium
 ---
 
 # Debugging Printer Driver Components

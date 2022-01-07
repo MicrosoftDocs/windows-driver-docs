@@ -3,7 +3,6 @@ title: Registering and Queuing a CustomDpc Routine
 description: A driver registers a CustomDpc routine for a device object by calling KeInitializeDpc after it has created the device object. The driver can make this call from its AddDevice routine, or from DispatchPnP code that handles IRP_MN_START_DEVICE requests.
 keywords: ["CustomDpc", "registering CustomDpc routine", "queuing CustomDpc routine"]
 ms.date: 07/22/2021
-ms.localizationpriority: medium
 ---
 
 # Registering and Queuing a CustomDpc Routine

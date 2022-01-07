@@ -9,7 +9,6 @@ api_name:
 - PowerDownFail
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PowerDownFail rule (wdm)

@@ -4,7 +4,6 @@ description: Drivers that support WMI on Microsoft Windows 98 and Microsoft Wind
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_REGINFO Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_REGINFO

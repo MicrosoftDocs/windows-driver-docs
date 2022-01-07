@@ -3,7 +3,6 @@ title: Enabling NDIS Debug Tracing
 description: Enabling NDIS Debug Tracing
 keywords: ["NDIS debugging, debug tracing"]
 ms.date: 05/12/2020
-ms.localizationpriority: medium
 ---
 
 # Enabling NDIS Debug Tracing

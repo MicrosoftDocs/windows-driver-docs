@@ -2,7 +2,6 @@
 title: Backchannel Communication from a VF Miniport Driver
 description: Backchannel Communication from a VF Miniport Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Backchannel Communication from a VF Miniport Driver

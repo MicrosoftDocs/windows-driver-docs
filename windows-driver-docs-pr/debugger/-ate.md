@@ -9,7 +9,6 @@ api_name:
 - ate
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ate

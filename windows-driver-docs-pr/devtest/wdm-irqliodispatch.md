@@ -9,7 +9,6 @@ api_name:
 - IrqlIoDispatch
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlIoDispatch rule (wdm)

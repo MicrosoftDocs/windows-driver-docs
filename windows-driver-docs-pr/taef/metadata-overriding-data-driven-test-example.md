@@ -2,7 +2,6 @@
 title: Metadata Overriding Data Driven Test Example
 description: Metadata Overriding Data Driven Test Example
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Metadata Overriding Data Driven Test Example

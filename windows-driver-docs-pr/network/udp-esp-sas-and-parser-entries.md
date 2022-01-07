@@ -8,7 +8,6 @@ keywords:
 - security associations WDK IPsec offload
 - SAs WDK IPsec offload
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # UDP-ESP SAs and Parser Entries

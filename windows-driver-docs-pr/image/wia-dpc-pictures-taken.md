@@ -1,6 +1,6 @@
 ---
-title: WIA\_DPC\_PICTURES\_TAKEN
-description: The WIA\_DPC\_PICTURES\_TAKEN property contains the number of pictures that a camera has taken. The WIA minidriver creates and maintains this property.
+title: WIA_DPC_PICTURES_TAKEN
+description: The WIA_DPC_PICTURES_TAKEN property contains the number of pictures that a camera has taken. The WIA minidriver creates and maintains this property.
 keywords: ["WIA_DPC_PICTURES_TAKEN Imaging Devices"]
 topic_type:
 - apiref
@@ -10,48 +10,21 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 09/30/2021
 ---
 
-# WIA\_DPC\_PICTURES\_TAKEN
+# WIA_DPC_PICTURES_TAKEN
 
+The WIA_DPC_PICTURES_TAKEN property contains the number of pictures that a camera has taken. The WIA minidriver creates and maintains this property.
 
-The WIA\_DPC\_PICTURES\_TAKEN property contains the number of pictures that a camera has taken. The WIA minidriver creates and maintains this property.
+Property Type: VT_I4
 
-## <span id="ddk_wia_dpc_pictures_taken_si"></span><span id="DDK_WIA_DPC_PICTURES_TAKEN_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Obsolete in Windows Vista and later operating systems and should no longer be used. However, this property is still defined in Windows Vista for compatibility with applications and devices designed for Windows Server 2003, Windows XP, and previous versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Version:** Obsolete in Windows Vista and later operating systems and should not be used.
 
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

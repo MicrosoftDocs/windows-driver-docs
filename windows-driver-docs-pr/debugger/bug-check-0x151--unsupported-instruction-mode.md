@@ -9,7 +9,6 @@ api_name:
 - UNSUPPORTED_INSTRUCTION_MODE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x151: UNSUPPORTED\_INSTRUCTION\_MODE

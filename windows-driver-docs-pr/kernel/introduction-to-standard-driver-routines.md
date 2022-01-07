@@ -3,7 +3,6 @@ title: Introduction to Standard Driver Routines
 description: Introduction to Standard Driver Routines
 keywords: ["standard driver routines WDK kernel , about standard driver routines", "driver routines WDK kernel , about standard driver routines", "routines WDK kernel , about standard driver routines", "IRPs WDK kernel , standard driver routines", "required standard routines WDK kernel", "optional standard routines WDK kernel"]
 ms.date: 08/02/2021
-ms.localizationpriority: medium
 ---
 
 # Introduction to Standard Driver Routines

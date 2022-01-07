@@ -3,7 +3,6 @@ title: Logging Errors
 description: Logging Errors
 keywords: ["errors WDK kernel", "logs WDK kernel", "logging errors WDK kernel", "log files WDK kernel", "messages WDK error logs"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Logging Errors

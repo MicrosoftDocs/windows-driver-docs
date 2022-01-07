@@ -5,7 +5,6 @@ keywords:
 - connection-oriented sockets WDK Winsock Kernel
 - WskReceive
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Receiving Data over a Connection-Oriented Socket

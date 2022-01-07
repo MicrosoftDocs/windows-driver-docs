@@ -3,7 +3,6 @@ title: Methods of Controlling Breakpoints
 description: Methods of Controlling Breakpoints
 keywords: ["breakpoints, controlling"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Methods of Controlling Breakpoints

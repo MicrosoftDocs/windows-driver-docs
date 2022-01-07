@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_TargetPortalGroup WMI Class
 description: ISCSI\_TargetPortalGroup WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

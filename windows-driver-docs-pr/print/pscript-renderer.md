@@ -6,7 +6,6 @@ keywords:
 - Pscript WDK print , renderer
 - renderer WDK Pscript
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Pscript Renderer

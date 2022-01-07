@@ -9,7 +9,6 @@ api_name:
 - isr
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !isr

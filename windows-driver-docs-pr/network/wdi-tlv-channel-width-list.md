@@ -4,10 +4,11 @@ description: WDI_TLV_CHANNEL_WIDTH_LIST is a TLV that contains a list of channel
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CHANNEL_WIDTH_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CHANNEL\_WIDTH\_LIST
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_CHANNEL\_WIDTH\_LIST is a TLV that contains a list of channel widths.

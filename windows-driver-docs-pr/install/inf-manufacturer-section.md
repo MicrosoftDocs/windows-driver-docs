@@ -10,7 +10,6 @@ api_name:
 api_type:
 - NA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # INF Manufacturer Section
@@ -96,9 +95,16 @@ Starting with Windows Server 2003 SP1, Architecture must be specified in [**INF 
 <a href="" id="osmajorversion"></a>*OSMajorVersion*  
 A number that represents the operating system's major version number. The following table defines the major version for the Windows operating system.
 
+> [!NOTE]
+> To differentiate between specific Windows 10 and 11 releases in an INF file, you need to use [*BuildNumber*](#buildnumber).
+
 | Windows version        | Major version |
 |------------------------|---------------|
-| Windows 10             | 10            |
+| Windows 11   | 10            |
+| Windows Server 2022 | 10            |
+| Windows Server 2019 | 10            |
+| Windows Server 2016 | 10            |
+| Windows 10 (all releases)   | 10            |
 | Windows Server 2012 R2 | 6             |
 | Windows 8.1            | 6             |
 | Windows Server 2012    | 6             |
@@ -119,7 +125,11 @@ A number that represents the operating system's minor version number. The follow
 
 | Windows version        | Minor version |
 |------------------------|---------------|
-| Windows 10             | 0             |
+| Windows 11   | 0            |
+| Windows Server 2022 | 0            |
+| Windows Server 2019 | 0            |
+| Windows Server 2016 | 0            |
+| Windows 10 (all releases)   | 0            |
 | Windows Server 2012 R2 | 3             |
 | Windows 8.1            | 3             |
 | Windows Server 2012    | 2             |
@@ -174,9 +184,11 @@ A number representing a combination of one or more of the VER_SUITE_xxxx flags d
 If one or more suite mask values are specified, the INF is used only if the operating system matches all the specified product suites. If the INF supports multiple product suite combinations for a single operating system version, multiple *TargetOSVersion* entries are required.
 
 <a href="" id="buildnumber"></a>*BuildNumber*  
-A number that represents the minimum OS build number of the Windows 10 release to which the section is applicable, starting with build 14310 or later.
+A number that represents the minimum OS build number of the Windows release to which the section is applicable, starting with build 14310 or later.
 
-The build number is assumed to be relative to some specific OS major/minor version only, and may be reset for some future OS major/minor version.  Any build number specified by the *TargetOSVersion* decoration is evaluated only when the OS major/minor version of the *TargetOSVersion* matches the current OS (or AltPlatformInfo) version exactly.  If the current OS version is greater than the OS version specified by the *TargetOSVersion* decoration (OSMajorVersion,OSMinorVersion), the section is considered applicable regardless of the build number specified. Likewise, if the current OS version is less than the OS version specified by *TargetOSVersion* decoration, the section is not applicable.
+The build number is assumed to be relative to some specific OS major/minor version only, and may be reset for some future OS major/minor version.
+
+Any build number specified by the *TargetOSVersion* decoration is evaluated only when the OS major/minor version of the *TargetOSVersion* matches the current OS (or AltPlatformInfo) version exactly.  If the current OS version is greater than the OS version specified by the *TargetOSVersion* decoration (OSMajorVersion,OSMinorVersion), the section is considered applicable regardless of the build number specified. Likewise, if the current OS version is less than the OS version specified by *TargetOSVersion* decoration, the section is not applicable.
 
 If build number is supplied, the OS version and BuildNumber of the *TargetOSVersion* decoration must both be greater than the OS version and build number of the Windows 10 build 14310 where this decoration was first introduced.  Earlier versions of the operating system without these changes (for example, Windows 10 build 10240) will not parse unknown decorations, so an attempt to target these earlier builds will actually prevent that OS from considering the decoration valid at all.
 

@@ -2,7 +2,6 @@
 title: Proximity sensor thresholds
 description: This topic provides information about the proximity sensor thresholds.
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Proximity sensor thresholds

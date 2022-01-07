@@ -2,7 +2,6 @@
 title: Sample INF Models Sections for Target Operating Systems
 description: Sample INF Models Sections for One or More Target Operating Systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sample INF Models Sections for One or More Target Operating Systems

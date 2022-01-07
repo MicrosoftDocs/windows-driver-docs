@@ -10,7 +10,6 @@ keywords:
 - system crash testing WDK
 - crash testing WDK
 ms.date: 06/28/2018
-ms.localizationpriority: medium
 ---
 
 # Tools for Testing Drivers

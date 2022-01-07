@@ -9,7 +9,6 @@ api_name:
 - fileobj
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !fileobj

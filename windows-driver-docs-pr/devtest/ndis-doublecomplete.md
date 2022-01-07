@@ -9,7 +9,6 @@ api_name:
 - DoubleComplete
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DoubleComplete rule (ndis)

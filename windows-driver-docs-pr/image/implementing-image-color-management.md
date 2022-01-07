@@ -2,7 +2,6 @@
 title: Implementing Image Color Management
 description: Implementing Image Color Management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Implementing Image Color Management

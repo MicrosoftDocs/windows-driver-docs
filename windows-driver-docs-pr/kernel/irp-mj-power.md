@@ -4,7 +4,6 @@ description: All drivers must be prepared to service IRP_MJ_POWER requests in a 
 ms.date: 08/12/2017
 keywords:
  - IRP_MJ_POWER Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_POWER

@@ -10,7 +10,6 @@ keywords:
 - printer options WDK Unidrv , about printer options
 - Unidrv WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Printer Options

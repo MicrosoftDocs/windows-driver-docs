@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/31/2019
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_RTAUDIO\_PRESENTATION\_POSITION

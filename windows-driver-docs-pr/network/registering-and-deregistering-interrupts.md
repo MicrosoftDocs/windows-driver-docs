@@ -9,7 +9,6 @@ keywords:
 - registering interrupts
 - deregistering interrupts
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering and Deregistering Interrupts

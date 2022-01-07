@@ -4,7 +4,6 @@ description: UPS Minidriver Functionality
 keywords:
 - UPS minidrivers WDK , functionality
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # UPS Minidriver Functionality

@@ -1,7 +1,6 @@
 ---
 title: HBAScsiID WMI Class
 description: HBAScsiID WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -10,7 +10,6 @@ keywords:
 - paths WDK SDV
 - compile-time static verification tool WDK
 ms.date: 06/14/2019
-ms.localizationpriority: medium
 ---
 
 # Static Driver Verifier

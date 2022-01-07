@@ -4,10 +4,11 @@ description: WDI_TLV_FT_REASSOC_PARAMETERS is a TLV that contains reassociation 
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_FT_REASSOC_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_FT\_REASSOC\_PARAMETERS
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_FT\_REASSOC\_PARAMETERS is a TLV that contains reassociation parameters for Fast Transition.

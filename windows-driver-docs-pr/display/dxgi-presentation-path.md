@@ -2,7 +2,6 @@
 title: DXGI Presentation Path
 description: DXGI Presentation Path
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DXGI Presentation Path

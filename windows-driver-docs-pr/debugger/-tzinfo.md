@@ -9,7 +9,6 @@ api_name:
 - tzinfo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !tzinfo

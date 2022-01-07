@@ -5,7 +5,6 @@ keywords:
 - GDI-supplied halftoning WDK Unidrv
 - minidriver-supplied halftoning WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Minidriver-Supplied Halftone Patterns

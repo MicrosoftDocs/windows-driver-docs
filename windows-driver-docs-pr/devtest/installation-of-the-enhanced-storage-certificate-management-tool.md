@@ -2,7 +2,6 @@
 title: Installation of the Enhanced Storage Certificate Management Tool
 description: Installation of the Enhanced Storage Certificate Management Tool
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installation of the Enhanced Storage Certificate Management Tool

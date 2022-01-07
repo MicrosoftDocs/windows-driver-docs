@@ -9,7 +9,6 @@ api_name:
 - ubc
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ubc

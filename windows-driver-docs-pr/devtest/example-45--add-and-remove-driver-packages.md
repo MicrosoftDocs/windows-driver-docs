@@ -2,7 +2,6 @@
 title: Example 45 Add and Remove Driver Packages
 description: Example 45 Add and Remove Driver Packages
 ms.date: 01/25/2021
-ms.localizationpriority: medium
 ---
 
 # Example 45: Add and Remove Driver Packages

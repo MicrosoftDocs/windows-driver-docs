@@ -4,7 +4,6 @@ description: Fourth Part of Macroblock Control Command Structure
 keywords:
 - macroblocks WDK DirectX VA , generic command structure
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Fourth Part of Macroblock Control Command Structure

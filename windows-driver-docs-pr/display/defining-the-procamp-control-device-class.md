@@ -4,7 +4,6 @@ description: Defining the ProcAmp Control Device Class
 keywords:
 - ProcAmp WDK DirectX VA , defining device class
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Defining the ProcAmp Control Device Class

@@ -9,7 +9,6 @@ api_name:
 - searchpte
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !searchpte

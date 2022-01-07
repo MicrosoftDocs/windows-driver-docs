@@ -2,7 +2,6 @@
 title: Hyper-V Extensible Switch Status Indications
 description: Hyper-V Extensible Switch Status Indications
 ms.date: 07/18/2017
-ms.localizationpriority: medium
 ---
 
 # Hyper-V Extensible Switch Status Indications

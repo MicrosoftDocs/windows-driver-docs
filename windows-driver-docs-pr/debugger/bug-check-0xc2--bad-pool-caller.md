@@ -9,7 +9,6 @@ api_name:
 - BAD_POOL_CALLER
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC2: BAD\_POOL\_CALLER

@@ -9,7 +9,6 @@ api_name:
 - PANIC_STACK_SWITCH
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x2B: PANIC\_STACK\_SWITCH

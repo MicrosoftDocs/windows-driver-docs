@@ -2,7 +2,6 @@
 title: PROPSETID\_VIDCAP\_VIDEODECODER
 description: PROPSETID\_VIDCAP\_VIDEODECODER
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # PROPSETID\_VIDCAP\_VIDEODECODER

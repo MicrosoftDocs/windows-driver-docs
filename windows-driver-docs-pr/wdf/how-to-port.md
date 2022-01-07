@@ -2,7 +2,6 @@
 title: Steps in Porting
 description: Steps in Porting
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Steps in Porting

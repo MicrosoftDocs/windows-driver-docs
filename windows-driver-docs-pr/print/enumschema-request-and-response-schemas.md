@@ -2,7 +2,6 @@
 title: EnumSchema Request and Response Schemas
 description: The EnumSchema request schema and corresponding response schema definition, and an example of each, are below.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # EnumSchema Request and Response Schemas

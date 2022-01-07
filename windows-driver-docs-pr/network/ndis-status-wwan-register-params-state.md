@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_REGISTER_PARAMS_STATE not
 ms.date: 05/13/2021
 keywords: 
  -NDIS_STATUS_WWAN_REGISTER_PARAMS_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WWAN_REGISTER_PARAMS_STATE

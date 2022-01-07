@@ -2,7 +2,6 @@
 title: Vendor-Extended Features
 description: Vendor-Extended Features
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Vendor-Extended Features

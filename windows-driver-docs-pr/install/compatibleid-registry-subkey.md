@@ -2,7 +2,6 @@
 title: CompatibleID Registry Subkey
 description: CompatibleID Registry Subkey
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # CompatibleID Registry Subkey

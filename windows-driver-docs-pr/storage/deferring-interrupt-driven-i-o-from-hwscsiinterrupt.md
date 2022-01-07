@@ -7,7 +7,6 @@ keywords:
 - interrupts WDK SCSI
 - deferred interrupt-driven I/O WDK SCSI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Deferring Interrupt-Driven I/O from HwScsiInterrupt

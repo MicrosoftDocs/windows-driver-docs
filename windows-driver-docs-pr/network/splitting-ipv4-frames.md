@@ -5,7 +5,6 @@ keywords:
 - Ethernet frame splitting WDK networking , IPv4 frames
 - IPv4 frames WDK header-data split
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Splitting IPv4 Frames

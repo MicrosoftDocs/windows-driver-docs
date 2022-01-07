@@ -9,7 +9,6 @@ api_name:
 - THIRD_PARTY_FILE_SYSTEM_FAILURE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x108: THIRD\_PARTY\_FILE\_SYSTEM\_FAILURE

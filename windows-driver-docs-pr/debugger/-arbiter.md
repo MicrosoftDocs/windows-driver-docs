@@ -9,7 +9,6 @@ api_name:
 - arbiter
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !arbiter

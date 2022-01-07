@@ -2,7 +2,6 @@
 title: WOL Patterns for NDIS Power Management
 description: WOL Patterns for NDIS Power Management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WOL Patterns for NDIS Power Management

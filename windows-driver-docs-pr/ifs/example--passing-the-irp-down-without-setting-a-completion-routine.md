@@ -5,7 +5,6 @@ keywords:
 - IRP dispatch routines WDK file system , passing IRP down
 - passing IRPs down device stack WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example: Passing the IRP Down Without Setting a Completion Routine

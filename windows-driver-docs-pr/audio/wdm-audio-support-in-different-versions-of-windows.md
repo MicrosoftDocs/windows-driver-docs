@@ -2,7 +2,6 @@
 title: WDM Audio Support in Different Versions of Windows
 description: WDM Audio Support in Different Versions of Windows
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDM Audio Support in Different Versions of Windows

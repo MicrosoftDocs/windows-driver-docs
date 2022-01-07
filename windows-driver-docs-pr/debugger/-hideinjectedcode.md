@@ -9,7 +9,6 @@ api_name:
 - .hideinjectedcode (Hide Injected Code)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .hideinjectedcode (Hide Injected Code)

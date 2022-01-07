@@ -2,7 +2,6 @@
 title: EFI_USBFN_IO_PROTOCOL.StartController
 description: The StartController function supplies power to the USB controller if needed and initializes hardware and internal data structures.
 ms.date: 08/23/2021
-ms.localizationpriority: medium
 ---
 
 # EFI_USBFN_IO_PROTOCOL.StartController

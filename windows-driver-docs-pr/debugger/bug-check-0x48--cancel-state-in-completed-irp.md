@@ -9,7 +9,6 @@ api_name:
 - CANCEL_STATE_IN_COMPLETED_IRP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x48: CANCEL\_STATE\_IN\_COMPLETED\_IRP

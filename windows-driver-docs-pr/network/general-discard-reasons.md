@@ -4,7 +4,6 @@ description: This section describes General discard reasons for Windows Filterin
 keywords:
 - General discard reasons network drivers
 ms.date: 11/09/2017
-ms.localizationpriority: medium
 ---
 
 # General discard reasons

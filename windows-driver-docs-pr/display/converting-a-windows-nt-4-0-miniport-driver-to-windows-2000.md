@@ -5,7 +5,6 @@ keywords:
 - video miniport drivers WDK Windows 2000 , multiple Windows versions, converting a Windows NT 4.0 driver
 - converting video miniport drivers WDK Windows 2000
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Converting a Windows NT 4.0 Miniport Driver to Windows 2000

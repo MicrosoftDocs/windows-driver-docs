@@ -2,7 +2,6 @@
 title: Accessing Device Interface Properties before Windows Vista
 description: Accessing Device Interface Properties before Windows Vista
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing Device Interface Properties before Windows Vista

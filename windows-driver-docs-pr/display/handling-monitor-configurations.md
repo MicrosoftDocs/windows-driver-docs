@@ -2,7 +2,6 @@
 title: Handling Monitor Configurations
 description: Handling Monitor Configurations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Monitor Configurations

@@ -3,7 +3,6 @@ title: EngExtCpp Extensions
 description: EngExtCpp Extensions
 keywords: ["EngExtCpp extensions", "extensions, ExtEngCpp"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # EngExtCpp Extensions

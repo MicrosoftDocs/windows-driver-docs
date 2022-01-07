@@ -1,7 +1,6 @@
 ---
 title: Touchscreen laptop system testing
 description: This topic describes tests for touchscreen laptop systems.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

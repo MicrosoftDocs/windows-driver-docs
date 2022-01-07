@@ -6,7 +6,6 @@ keywords:
 - NDIS timer services WDK
 - initializing NDIS timers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing NDIS Timers

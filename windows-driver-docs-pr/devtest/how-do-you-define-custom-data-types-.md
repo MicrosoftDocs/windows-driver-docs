@@ -2,7 +2,6 @@
 title: How do you define custom data types
 description: How do you define custom data types
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How do you define custom data types?

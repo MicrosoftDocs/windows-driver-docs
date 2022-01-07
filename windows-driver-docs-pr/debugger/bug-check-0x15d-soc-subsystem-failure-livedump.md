@@ -9,7 +9,6 @@ api_name:
 - Bug Check 0x14B SOC_SUBSYSTEM_FAILURE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x15D: SOC\_SUBSYSTEM\_FAILURE\_LIVEDUMP

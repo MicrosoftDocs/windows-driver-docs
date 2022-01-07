@@ -2,7 +2,6 @@
 title: WinDbg Preview - Scripting Menu
 description: This section describes how to use scripting in the WinDbg preview debugger.
 ms.date: 01/20/2020
-ms.localizationpriority: medium
 ---
 
 # WinDbg Preview - Scripting Menu

@@ -3,7 +3,6 @@ title: Extensions for Debugging SCSI Miniport Drivers
 description: Extensions for Debugging SCSI Miniport Drivers
 keywords: ["SCSI Miniport Debugging, useful extensions"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Extensions for Debugging SCSI Miniport Drivers

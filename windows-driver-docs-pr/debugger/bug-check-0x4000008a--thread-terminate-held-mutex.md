@@ -9,7 +9,6 @@ api_name:
 - THREAD_TERMINATE_HELD_MUTEX
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x4000008A: THREAD\_TERMINATE\_HELD\_MUTEX

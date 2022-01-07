@@ -4,10 +4,11 @@ description: WDI_TLV_SEND_ACTION_FRAME_REQUEST_PARAMETERS is a TLV that contains
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SEND_ACTION_FRAME_REQUEST_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_SEND\_ACTION\_FRAME\_REQUEST\_PARAMETERS
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_SEND\_ACTION\_FRAME\_REQUEST\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_TASK\_SEND\_REQUEST\_ACTION\_FRAME](./oid-wdi-task-send-request-action-frame.md).

@@ -2,7 +2,6 @@
 title: YUV-RGB data range conversions
 description: Effect of input data range on expected video conversion behavior
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # <span id="display.yuv-rgb_data_range_conversions"></span>YUV-RGB data range conversions

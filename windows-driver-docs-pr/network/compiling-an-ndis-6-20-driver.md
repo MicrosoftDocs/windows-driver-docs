@@ -5,7 +5,6 @@ keywords:
 - NDIS 6.20 WDK , compiling a driver
 - compiling an NDIS 6.20 driver WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Compiling an NDIS 6.20 Driver

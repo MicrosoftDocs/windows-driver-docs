@@ -9,7 +9,6 @@ api_name:
 - KERNEL_WMI_INTERNAL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x14A: KERNEL\_WMI\_INTERNAL

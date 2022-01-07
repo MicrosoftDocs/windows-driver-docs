@@ -9,7 +9,6 @@ api_name:
 - .attach (Attach to Process)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .attach (Attach to Process)

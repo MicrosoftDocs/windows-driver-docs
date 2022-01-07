@@ -2,7 +2,6 @@
 title: Executing Data-driven tests
 description: Executing Data-driven tests
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # <span id="taef.executing_data-driven_tests"></span>Executing Data-driven tests

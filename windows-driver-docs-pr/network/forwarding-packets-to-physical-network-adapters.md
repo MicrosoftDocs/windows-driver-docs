@@ -2,7 +2,6 @@
 title: Forwarding Packets to Physical Network Adapters
 description: Forwarding Packets to Physical Network Adapters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Forwarding Packets to Physical Network Adapters

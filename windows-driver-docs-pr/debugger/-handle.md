@@ -9,7 +9,6 @@ api_name:
 - handle
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !handle

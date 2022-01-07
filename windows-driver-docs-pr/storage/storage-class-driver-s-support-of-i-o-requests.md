@@ -7,7 +7,6 @@ keywords:
 - I/O requests WDK storage
 - IRPs WDK storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Storage Class Driver's Support of I/O Requests

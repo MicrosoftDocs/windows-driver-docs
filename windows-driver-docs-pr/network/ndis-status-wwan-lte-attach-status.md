@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_LTE_ATTACH_STATUS notific
 ms.date: 08/23/2018
 keywords: 
  -NDIS_STATUS_WWAN_LTE_ATTACH_STATUS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS_STATUS_WWAN_LTE_ATTACH_STATUS

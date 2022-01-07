@@ -9,7 +9,6 @@ keywords:
 - SRC WDK audio , hardware acceleration
 - sample-rate conversion WDK audio , hardware acceleration
 ms.date: 10/27/2017
-ms.localizationpriority: medium
 ---
 
 # DirectSound Hardware Acceleration in WDM Audio

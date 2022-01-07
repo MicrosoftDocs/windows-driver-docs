@@ -3,7 +3,6 @@ title: DriverEntry's Optional Responsibilities
 description: DriverEntry's Optional Responsibilities
 keywords: ["DriverEntry WDK kernel , optional responsibilities", "claiming hardware resources", "executive worker threads WDK kernel", "worker threads WDK kernel", "system-space memory allocations WDK kernel", "system resource storage WDK kernel", "storing system resources", "hardware resource claiming WDK kernel", "resource claiming WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # DriverEntry's Optional Responsibilities

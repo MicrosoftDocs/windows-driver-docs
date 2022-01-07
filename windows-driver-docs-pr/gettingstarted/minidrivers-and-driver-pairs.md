@@ -2,7 +2,6 @@
 title: Minidrivers, Miniport drivers, and driver pairs
 description: A minidriver or a miniport driver acts as half of a driver pair.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Minidrivers, Miniport drivers, and driver pairs

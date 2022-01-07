@@ -9,7 +9,6 @@ api_name:
 - .elsif
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .elsif

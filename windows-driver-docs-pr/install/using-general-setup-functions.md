@@ -5,7 +5,6 @@ keywords:
 - SetupAPI functions WDK , general Setup functions
 - general Setup functions WDK SetupAPI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using General Setup Functions

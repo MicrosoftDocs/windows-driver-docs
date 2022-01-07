@@ -2,7 +2,6 @@
 title: 64-Bit WIA Driver Components
 description: 64-Bit WIA Driver Components
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # 64-Bit WIA Driver Components

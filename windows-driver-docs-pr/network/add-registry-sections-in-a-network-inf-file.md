@@ -10,7 +10,6 @@ keywords:
 - Ndi key WDK networking
 - values WDK network INF files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Add-registry-sections in a Network INF File

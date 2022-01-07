@@ -9,7 +9,6 @@ keywords:
 - PCM formats WDK audio
 - audio non-PCM formats WDK
 ms.date: 10/27/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Non-PCM Wave Formats

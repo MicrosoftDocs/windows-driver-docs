@@ -2,7 +2,6 @@
 title: SAL 2.0 Annotations for Windows Drivers
 description: The Microsoft Source Code Annotation Language (SAL) includes annotations that are specific to the analysis of Windows drivers and the related kernel code.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SAL 2.0 Annotations for Windows Drivers

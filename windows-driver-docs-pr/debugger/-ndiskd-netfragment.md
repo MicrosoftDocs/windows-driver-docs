@@ -9,7 +9,6 @@ api_name:
 - ndiskd.netfragment
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.netfragment

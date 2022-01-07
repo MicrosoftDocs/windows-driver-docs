@@ -2,67 +2,75 @@
 title: Debugging CSRSS
 description: Debugging CSRSS
 keywords: ["CSRSS debugging", "NTSD, debugging CSRSS", "controlling the user-mode debugger from the kernel debugger, debugging CSRSS"]
-ms.date: 05/23/2017
-ms.localizationpriority: medium
+ms.date: 12/22/2021
 ---
 
 # Debugging CSRSS
 
-
 ## <span id="ddk_debugging_csrss_with_ntsd_dbg"></span><span id="DDK_DEBUGGING_CSRSS_WITH_NTSD_DBG"></span>
 
+The Client Server Run-Time Subsystem (CSRSS) is the user-mode process that controls the underlying layer for the Windows environment. 
 
-The Client Server Run-Time Subsystem (CSRSS) is the user-mode process that controls the underlying layer for the Windows environment. There are a number of problems that make it necessary to debug CSRSS itself.
+> [!NOTE]
+> Starting in Windows 10, CSRSS is a protected process and can only be debugged in kernel mode.
+>
 
-Debugging CSRSS is also useful when the Windows subsystem terminates unexpectedly with a [**Bug Check 0xC000021A**](bug-check-0xc000021a--winlogin-fatal-error.md) (WINLOGON\_FATAL\_ERROR). In this case, debugging CSRSS will catch the failure before it gets to an "unexpected" point.
+For general information on protected processes, as well as additional specifics on Windows protected, critical code such as wininit and csrss, see *Windows Internals* by Pavel Yosifovich, Mark E. Russinovich, David A. Solomon, and Alex Ionescu.
 
-### <span id="controlling_ntsd_from_the_kernel_debugger"></span><span id="CONTROLLING_NTSD_FROM_THE_KERNEL_DEBUGGER"></span>Controlling NTSD from the Kernel Debugger
 
-The easiest way to debug CSRSS is to use NTSD and [control it from the kernel debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md).
+### <span id="starting_ntsd"></span><span id="STARTING_NTSD"></span>Display CSRSS Process Information
 
-### <span id="enabling_csrss_debugging"></span><span id="ENABLING_CSRSS_DEBUGGING"></span>Enabling CSRSS Debugging
+To examine CSRSS, some information is available using kernel debugging.
 
-CSRSS debugging must be enabled before you can proceed. If the target computer is running a *free build* of Windows, you will have to enable CSRSS debugging through the Global Flags Utility (GFlags).
-
-To do this, start the GFlags utility, select the **System Registry** radio button, and select **Enable debugging of Win32 subsystem**.
-
-Alternatively, you can use the following GFlags command-line:
+Use the [**!process**](-process.md) extension to display information about processes associated with csrss.exe.
 
 ```dbgcmd
-gflags /r +20000 
+0: kd> !process 0 0 csrss.exe
+PROCESS ffffe381a583b080
+    SessionId: 0  Cid: 027c    Peb: e0c93ef000  ParentCid: 0270
+    DirBase: 115478000  ObjectTable: ffffaa87786b67c0  HandleCount: 722.
+    Image: csrss.exe
+
+PROCESS ffffe381a68ab140
+    SessionId: 1  Cid: 02f4    Peb: 186a447000  ParentCid: 02dc
+    DirBase: 143c0e000  ObjectTable: ffffaa87786b5200  HandleCount: 445.
+    Image: csrss.exe
 ```
 
-Or, if you prefer, you can edit the registry key manually instead of using GFlags. Open the following registry key:
+Take either of the associated processes, and set the context to that location using the [**.process (Set Process Context)**](-process--set-process-context-.md) command.
 
-```text
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager 
+```dbgcmd
+0: kd> .process /r /p ffffe381a583b080
+Implicit process is now ffffe381`a583b080
+Loading User Symbols
 ```
 
-Edit the **GlobalFlag** value entry (of type REG\_DWORD) and set the bit 0x00020000.
+Now use the [**dt (Display Type)**](dt--display-type-.md) command to show the process structure directly:
 
-After using GFlags or manually editing the registry, you must reboot for the changes to take effect.
+```dbgcmd
+0: kd> dt csrss!_csr_process
+   +0x000 ClientId         : _CLIENT_ID
+   +0x010 ListLink         : _LIST_ENTRY
+   +0x020 ThreadList       : _LIST_ENTRY
+   +0x030 NtSession        : Ptr64 _CSR_NT_SESSION
+   +0x038 ClientPort       : Ptr64 Void
+   +0x040 ClientViewBase   : Ptr64 Char
+   +0x048 ClientViewBounds : Ptr64 Char
+   +0x050 ProcessHandle    : Ptr64 Void
+   +0x058 SequenceNumber   : Uint4B
+   +0x05c Flags            : Uint4B
+   +0x060 DebugFlags       : Uint4B
+   +0x064 ReferenceCount   : Int4B
+   +0x068 ProcessGroupId   : Uint4B
+   +0x06c ProcessGroupSequence : Uint4B
+   +0x070 LastMessageSequence : Uint4B
+   +0x074 NumOutstandingMessages : Uint4B
+   +0x078 ShutdownLevel    : Uint4B
+   +0x07c ShutdownFlags    : Uint4B
+   +0x080 Luid             : _LUID
+   +0x088 ServerDllPerProcessData : [1] Ptr64 Void
+```
 
-### <span id="starting_ntsd"></span><span id="STARTING_NTSD"></span>Starting NTSD
-
-Because you will be controlling the user-mode debugger from the kernel debugger, you will need to set up a kernel debugging connection. See [Getting Set Up for Debugging](getting-set-up-for-debugging.md) for details.
-
-After the registry has been properly configured, it is a simple matter of starting NTSD as follows:
-
-**ntsd --**
-
-See [Controlling the User-Mode Debugger from the Kernel Debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md) for an explanation of how to proceed.
-
-You will have to set your symbol path to a location on your host computer or to some other location on your network. When CSRSS is being debugged, network authentication on the target computer will not work properly.
-
-Note that you may see an "in page io error" message. This is another manifestation of a hardware failure.
-
-When the debugging session ends, the debugger will detach from CSRSS while the CSRSS process is still running. This avoids termination of the CSRSS process itself.
-
- 
-
- 
-
-
-
+The [!peb](-peb.md) extension can be used to display additional information about the process environment block (PEB).
 
 

@@ -2,7 +2,6 @@
 title: MobileBroadbandInfo XML elements list
 description: MobileBroadbandInfo XML elements list
 ms.date: 07/05/2019
-ms.localizationpriority: medium
 ---
 
 # MobileBroadbandInfo XML elements list

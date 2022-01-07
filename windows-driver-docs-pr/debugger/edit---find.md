@@ -3,7 +3,6 @@ title: Edit Find
 description: Edit Find
 keywords: ["Edit Find"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Edit | Find

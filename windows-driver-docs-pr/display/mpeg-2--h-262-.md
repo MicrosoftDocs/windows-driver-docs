@@ -5,7 +5,6 @@ keywords:
 - MPEG-2 WDK DirectX VA
 - H.262 WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MPEG-2 (H.262)

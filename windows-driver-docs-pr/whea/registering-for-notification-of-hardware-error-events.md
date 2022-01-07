@@ -8,7 +8,6 @@ keywords:
 - WHEA WDK , registering for event notifications
 - Windows Hardware Error Architecture WDK , registering for event notifications
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering for Notification of Hardware Error Events

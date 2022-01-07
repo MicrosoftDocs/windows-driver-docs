@@ -2,7 +2,6 @@
 title: Accessing Registry Entry Values Under the Class Registry Key
 description: Accessing Registry Entry Values Under the Class Registry Key
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing Registry Entry Values Under the Class Registry Key

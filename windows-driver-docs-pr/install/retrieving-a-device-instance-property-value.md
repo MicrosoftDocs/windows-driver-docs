@@ -2,7 +2,6 @@
 title: Retrieving A Device Instance Property Value
 description: Retrieving A Device Instance Property Value
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Retrieving A Device Instance Property Value

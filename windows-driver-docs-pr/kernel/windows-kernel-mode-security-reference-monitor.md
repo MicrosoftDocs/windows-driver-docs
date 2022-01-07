@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Security Reference Monitor
 description: Windows Kernel-Mode Security Reference Monitor
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -2,7 +2,6 @@
 title: Print Schema keywords for 3D manufacturing
 description: The Print Schema keywords for 3D manufacturing is a supplemental specification to the Print Schema Specification.
 ms.date: 08/17/2021
-ms.localizationpriority: medium
 ---
 
 # Print Schema keywords for 3D manufacturing

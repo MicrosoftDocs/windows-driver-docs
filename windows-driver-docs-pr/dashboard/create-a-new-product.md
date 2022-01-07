@@ -3,7 +3,6 @@ title: Create a new product
 description: Use this method in the Microsoft Hardware API to create a new hardware product.
 ms.date: 04/05/2018
 ms.topic: article
-ms.localizationpriority: medium
 ---
 
 # Create a new product

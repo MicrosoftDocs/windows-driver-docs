@@ -4,7 +4,6 @@ description: Using Multiple Multiple-Head Adapters
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , adapters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Multiple Multiple-Head Adapters

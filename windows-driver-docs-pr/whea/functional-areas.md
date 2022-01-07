@@ -5,7 +5,6 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , functional areas
 - PSHED plug-ins WDK WHEA , functional areas
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Functional Areas

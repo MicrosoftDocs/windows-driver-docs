@@ -4,7 +4,6 @@ description: This section describes metadata fields at each filtering layer for 
 keywords:
 - Metadata fields at each filtering layer network drivers
 ms.date: 11/09/2017
-ms.localizationpriority: medium
 ---
 
 # Metadata fields at each filtering layer

@@ -3,7 +3,6 @@ title: Window MDI Emulation
 description: Window MDI Emulation
 keywords: ["Window MDI Emulation"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Window | MDI Emulation

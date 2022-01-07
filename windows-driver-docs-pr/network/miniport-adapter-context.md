@@ -6,7 +6,6 @@ keywords:
 - context WDK miniport adapter
 - miniport adapters WDK networking , context
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Miniport Adapter Context

@@ -2,7 +2,6 @@
 title: Application Items and Driver Items
 description: Application Items and Driver Items
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Application Items and Driver Items

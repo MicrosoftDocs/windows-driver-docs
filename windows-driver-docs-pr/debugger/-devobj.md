@@ -9,7 +9,6 @@ api_name:
 - devobj
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !devobj

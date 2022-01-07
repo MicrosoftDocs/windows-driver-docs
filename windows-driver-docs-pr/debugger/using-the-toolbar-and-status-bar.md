@@ -3,7 +3,6 @@ title: Using the Toolbar and Status Bar
 description: Using the Toolbar and Status Bar
 keywords: ["toolbar (WinDbg)", "toolbar (WinDbg), overview", "buttons (WinDbg Toolbar)", "buttons (WinDbg Toolbar), overview", "status bar", "status bar, overview", "WinDbg, toolbar", "WinDbg, status bar", "WinDbg, buttons"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using the Toolbar and Status Bar

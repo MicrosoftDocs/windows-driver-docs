@@ -2,7 +2,6 @@
 title: Querying and Changing RSC State
 description: This section describes how to query or change the current receive segment coalescing (RSC) state of an RSC-capable miniport driver.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Querying and Changing RSC State

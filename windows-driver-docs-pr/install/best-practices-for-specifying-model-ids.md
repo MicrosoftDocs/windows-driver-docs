@@ -2,7 +2,6 @@
 title: Best Practices for Specifying Model IDs
 description: Best Practices for Specifying Model IDs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Best Practices for Specifying Model IDs

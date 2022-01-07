@@ -6,7 +6,6 @@ keywords:
 - Memory Pool Monitor WDK , examples
 - examples WDK PoolMon
 ms.date: 07/02/2017
-ms.localizationpriority: medium
 ---
 
 # PoolMon Examples

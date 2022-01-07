@@ -2,7 +2,6 @@
 title: VMQ Filter Operations
 description: VMQ Filter Operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # VMQ Filter Operations

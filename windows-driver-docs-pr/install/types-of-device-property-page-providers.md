@@ -2,7 +2,6 @@
 title: Types of Device Property Page Providers
 description: Types of Device Property Page Providers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Types of Device Property Page Providers

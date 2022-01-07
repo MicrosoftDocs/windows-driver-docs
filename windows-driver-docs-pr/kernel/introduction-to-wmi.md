@@ -3,7 +3,6 @@ title: Introduction to WMI
 description: Introduction to WMI
 keywords: ["WMI WDK kernel , about Windows Management Instrumentation"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to WMI

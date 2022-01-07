@@ -2,7 +2,6 @@
 title: B (Windows Debugger Glossary)
 description: Glossary page - B
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # B

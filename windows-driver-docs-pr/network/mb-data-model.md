@@ -2,7 +2,6 @@
 title: MB Data Model
 description: MB Data Model
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MB Data Model

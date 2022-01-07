@@ -4,7 +4,6 @@ description: Creating KMDF Miniport Drivers
 keywords:
 - miniport drivers WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating KMDF Miniport Drivers

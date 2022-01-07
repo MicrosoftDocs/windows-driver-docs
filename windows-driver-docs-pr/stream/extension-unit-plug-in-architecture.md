@@ -10,7 +10,6 @@ keywords:
 - plug-in DLL WDK USB Video Class
 - extension unit
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Extension Unit Plug-In Architecture

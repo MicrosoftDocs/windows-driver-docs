@@ -9,7 +9,6 @@ api_name:
 - pte
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pte

@@ -2,7 +2,6 @@
 title: Using ACPI for Device Container Grouping
 description: Using ACPI for Device Container Grouping
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using ACPI for Device Container Grouping

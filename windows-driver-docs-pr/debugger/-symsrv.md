@@ -9,7 +9,6 @@ api_name:
 - symsrv
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !symsrv

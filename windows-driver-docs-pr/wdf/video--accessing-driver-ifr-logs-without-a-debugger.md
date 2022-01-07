@@ -3,7 +3,6 @@ title: Video Accessing driver IFR logs without a debugger
 description: This topic contains a video tutorial that shows how a driver can access IFR logs without a debugger attached.
 Search.SourceType: Video
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Video: Accessing driver IFR logs without a debugger

@@ -2,7 +2,6 @@
 title: Support for TWAIN-Compatible Applications
 description: Support for TWAIN-Compatible Applications
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Support for TWAIN-Compatible Applications

@@ -2,7 +2,6 @@
 title: WDI USB Selective Suspend Topics
 description: To save power, a USB device (such as a Wi-Fi NIC on USB) may go to low power state when idle. WDI supports the LE by utilizing NDIS native support for USB Selective Suspend.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDI USB Selective Suspend Topics

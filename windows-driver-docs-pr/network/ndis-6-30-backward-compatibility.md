@@ -2,7 +2,6 @@
 title: NDIS 6.30 Backward Compatibility
 description: NDIS 6.30 adds backward compatibility features to those that apply to NDIS 6.20 and NDIS 6.0 drivers.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS 6.30 Backward Compatibility

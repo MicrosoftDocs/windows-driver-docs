@@ -4,10 +4,11 @@ description: WDI_TLV_FT_INITIAL_ASSOC_PARAMETERS is a TLV that contains initial 
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_FT_INITIAL_ASSOC_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_FT\_INITIAL\_ASSOC\_PARAMETERS
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_FT\_INITIAL\_ASSOC\_PARAMETERS is a TLV that contains initial association parameters for Fast Transition.

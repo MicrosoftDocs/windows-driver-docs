@@ -3,7 +3,6 @@ title: Edit Go to Line
 description: Edit Go to Line
 keywords: ["Edit Go to Line"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Edit | Go to Line

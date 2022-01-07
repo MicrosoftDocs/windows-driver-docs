@@ -9,7 +9,6 @@ api_name:
 - BCDEdit /enum
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # BCDEdit /enum

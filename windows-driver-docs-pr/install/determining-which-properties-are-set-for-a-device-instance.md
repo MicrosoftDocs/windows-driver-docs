@@ -2,7 +2,6 @@
 title: Determining Which Properties Are Set for a Device Instance
 description: Determining Which Properties Are Set for a Device Instance
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Determining Which Properties Are Set for a Device Instance

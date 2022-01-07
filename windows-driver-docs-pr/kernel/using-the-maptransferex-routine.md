@@ -1,7 +1,6 @@
 ---
 title: Using the MapTransferEx Routine
 description: The MapTransferEx routine initializes a set of previously allocated DMA resources and starts a DMA transfer.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

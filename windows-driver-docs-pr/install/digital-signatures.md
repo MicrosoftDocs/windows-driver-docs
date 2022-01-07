@@ -12,7 +12,6 @@ keywords:
 - driver signing WDK
 - certificates WDK , about digital signatures
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Digital Signatures

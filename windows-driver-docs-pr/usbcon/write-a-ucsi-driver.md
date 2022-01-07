@@ -2,7 +2,6 @@
 description: Describes the behavior of the UCSI class extension that implements the UCSI specification in a transport agnostic way.
 title: Write a UCSI client driver
 ms.date: 09/30/2018
-ms.localizationpriority: medium
 ---
 
 # Write a UCSI client driver

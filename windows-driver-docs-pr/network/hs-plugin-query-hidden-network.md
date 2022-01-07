@@ -4,7 +4,6 @@ description: The HS_PLUGIN_QUERY_HIDDEN_NETWORK function returns the network ide
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_QUERY_HIDDEN_NETWORK) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_PLUGIN\_QUERY\_HIDDEN\_NETWORK function

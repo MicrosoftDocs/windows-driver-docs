@@ -4,7 +4,6 @@ description: This topic describes the WSK_CLIENT data type for WSK applications.
 keywords:
 - WSK_CLIENT, WDK WSK_CLIENT network drivers
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WSK_CLIENT

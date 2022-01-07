@@ -2,7 +2,6 @@
 title: New AVStream Interfaces for Windows 8
 description: Provides information about AVStream streaming media driver interfaces that are new or updated for Windows 8.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # New AVStream Interfaces for Windows 8

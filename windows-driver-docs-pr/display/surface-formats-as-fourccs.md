@@ -8,7 +8,6 @@ keywords:
 - surface formats WDK DirectX 8.0
 - FOURCCs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Surface Formats as FOURCCs

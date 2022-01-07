@@ -6,7 +6,6 @@ keywords:
 - deinterlacing WDK DirectX VA , ProcAmp control
 - ProcAmp WDK DirectX VA , deinterlace container device
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Deinterlace Container Device for ProcAmp Control

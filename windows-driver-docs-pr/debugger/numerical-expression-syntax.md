@@ -3,7 +3,6 @@ title: Numerical Expression Syntax
 description: Numerical Expression Syntax
 keywords: ["expressions", "numerical expressions", "MASM expressions", "C++ expressions", "syntax rules for commands, numerical expressions", "syntax rules for commands, MASM expressions", "syntax rules for commands, C++ expressions"]
 ms.date: 04/26/2021
-ms.localizationpriority: medium
 ---
 
 # Numerical Expression Syntax

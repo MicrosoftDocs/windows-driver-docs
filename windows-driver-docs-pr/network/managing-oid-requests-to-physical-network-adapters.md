@@ -2,7 +2,6 @@
 title: Managing OID Requests to Physical Network Adapters
 description: Managing OID Requests to Physical Network Adapters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing OID Requests to Physical Network Adapters

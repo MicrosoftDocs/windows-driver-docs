@@ -9,7 +9,6 @@ keywords:
 - Windows Hardware Error Architecture WDK , error injection
 - injecting hardware errors WDK WHEA
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # Getting Error Injection Capabilities

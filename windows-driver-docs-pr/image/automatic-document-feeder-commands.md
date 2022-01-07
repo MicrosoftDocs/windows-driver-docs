@@ -2,7 +2,6 @@
 title: Automatic Document Feeder Commands
 description: Automatic Document Feeder Commands
 ms.date: 11/09/2020
-ms.localizationpriority: medium
 ---
 
 # Automatic Document Feeder Commands

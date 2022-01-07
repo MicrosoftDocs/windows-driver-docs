@@ -2,7 +2,6 @@
 title: Enumerating Receive Filters on a Virtual Port
 description: Enumerating Receive Filters on a Virtual Port
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enumerating Receive Filters on a Virtual Port

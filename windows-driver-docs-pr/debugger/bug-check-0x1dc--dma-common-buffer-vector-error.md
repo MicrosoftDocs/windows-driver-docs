@@ -9,7 +9,6 @@ api_name:
 - DMA_COMMON_BUFFER_VECTOR_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1DC: DMA\_COMMON\_BUFFER\_VECTOR\_ERROR
@@ -51,11 +50,11 @@ x02 : Vector not empty.
 0x05 : Common buffer leaked.
 ```
 
-## ## Cause
+## Cause
 
 A driver has misused the DMA vectored common buffer APIs. The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
-## ## See Also-
+## See Also-
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

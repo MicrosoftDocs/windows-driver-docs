@@ -2,7 +2,6 @@
 title: Adding WPP Software Tracing to a Windows Driver
 description: To use WPP software tracing in a trace provider, such as a kernel-mode driver or a user-mode application, you need to add code (or instrument) the driver source files and modify the driver project. This section will describe those steps.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding WPP Software Tracing to a Windows Driver

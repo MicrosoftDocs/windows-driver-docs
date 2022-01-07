@@ -6,7 +6,6 @@ keywords:
 - linear aperture-space segments WDK display
 - aperture-space segments WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Linear Aperture-Space Segments

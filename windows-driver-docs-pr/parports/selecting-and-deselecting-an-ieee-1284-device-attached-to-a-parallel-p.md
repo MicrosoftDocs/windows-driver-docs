@@ -5,7 +5,6 @@ keywords:
 - IEEE 1284 WDK
 - parallel ports WDK , IEEE 1284 devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Selecting and Deselecting an IEEE 1284 Device Attached to a Parallel Port

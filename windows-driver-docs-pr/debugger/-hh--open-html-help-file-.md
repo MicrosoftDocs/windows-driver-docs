@@ -9,7 +9,6 @@ api_name:
 - .hh (Open HTML Help File)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .hh (Open HTML Help File)

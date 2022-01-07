@@ -6,7 +6,6 @@ keywords:
 - Plug and Play WDK PCMCIA bus
 - PnP WDK PCMCIA bus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Access PCMCIA Attribute Memory by Using a Plug and Play I/O Request

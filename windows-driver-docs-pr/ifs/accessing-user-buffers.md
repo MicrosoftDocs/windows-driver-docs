@@ -6,7 +6,6 @@ keywords:
 - buffers WDK file system minifilter
 - user buffers WDK file system minifilter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing User Buffers

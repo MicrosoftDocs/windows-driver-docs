@@ -2,7 +2,6 @@
 title: V (Windows Debugger Glossary)
 description: Glossary page - V
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # V

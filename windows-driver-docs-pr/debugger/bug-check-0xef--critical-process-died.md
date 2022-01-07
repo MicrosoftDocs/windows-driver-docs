@@ -9,7 +9,6 @@ api_name:
 - CRITICAL_PROCESS_DIED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xEF: CRITICAL\_PROCESS\_DIED

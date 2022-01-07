@@ -9,7 +9,6 @@ api_name:
 - exca
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !exca

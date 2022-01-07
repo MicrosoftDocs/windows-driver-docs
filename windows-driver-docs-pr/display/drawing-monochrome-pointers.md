@@ -8,7 +8,6 @@ keywords:
 - monochrome pointers WDK Windows 2000 display
 - black-and-white pointers WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Drawing Monochrome Pointers

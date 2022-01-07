@@ -2,7 +2,6 @@
 description: Representing Functionality
 title: Representing Functionality
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Representing Functionality

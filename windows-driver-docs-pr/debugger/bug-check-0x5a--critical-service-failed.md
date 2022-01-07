@@ -9,7 +9,6 @@ api_name:
 - CRITICAL_SERVICE_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x5A: CRITICAL\_SERVICE\_FAILED

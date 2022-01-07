@@ -2,7 +2,6 @@
 title: Avoiding debugger searches for unneeded symbols
 description: Why does symbol loading sometimes take so long? That depends on whether the symbol name is qualified or unqualified.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Avoiding debugger searches for un-needed symbols

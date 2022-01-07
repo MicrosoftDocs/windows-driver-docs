@@ -2,7 +2,6 @@
 title: Modify the sample to support another sensor
 description: Modify the sample to support another sensor
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Modify the sample to support another sensor

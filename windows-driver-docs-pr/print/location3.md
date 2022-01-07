@@ -2,7 +2,6 @@
 title: Location (staple)
 description: This property contains all the value entries that pertain to the location of staples on output pages.
 ms.date: 07/07/2020
-ms.localizationpriority: medium
 ---
 
 # Location (staple)

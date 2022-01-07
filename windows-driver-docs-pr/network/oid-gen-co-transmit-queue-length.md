@@ -4,7 +4,6 @@ description: This topic describes the OID_GEN_CO_TRANSMIT_QUEUE_LENGTH object id
 keywords:
 - OID_GEN_CO_TRANSMIT_QUEUE_LENGTH
 ms.date: 11/02/2017
-ms.localizationpriority: medium
 ---
 
 # OID_GEN_CO_TRANSMIT_QUEUE_LENGTH

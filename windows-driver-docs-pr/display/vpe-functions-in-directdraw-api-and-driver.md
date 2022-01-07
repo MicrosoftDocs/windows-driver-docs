@@ -9,7 +9,6 @@ keywords:
 - VPEs WDK DirectDraw , functions
 - functions WDK video port extensions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # VPE Functions in DirectDraw API and Driver

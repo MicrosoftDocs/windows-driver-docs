@@ -4,10 +4,11 @@ description: WDI_TLV_REPLAY_COUNTER is a TLV that contains a UINT64 value that r
 ms.date: 05/07/2021
 keywords:
  - WDI_TLV_REPLAY_COUNTER Network Drivers Starting with Windows 10, Version 2004
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_REPLAY\_COUNTER
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 WDI\_TLV\_REPLAY\_COUNTER is a TLV that contains a UINT64 value that represents a replay counter.
 

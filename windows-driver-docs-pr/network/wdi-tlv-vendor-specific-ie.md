@@ -4,10 +4,11 @@ description: WDI_TLV_VENDOR_SPECIFIC_IE is a TLV that contains a list of vendor-
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_VENDOR_SPECIFIC_IE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_VENDOR\_SPECIFIC\_IE
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_VENDOR\_SPECIFIC\_IE is a TLV that contains a list of vendor-specific IEs.

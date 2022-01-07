@@ -9,7 +9,6 @@ api_name:
 - unsafeallocate
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # UnSafeAllocatePool rule (kmdf)

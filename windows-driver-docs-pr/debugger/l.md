@@ -2,7 +2,6 @@
 title: L (Windows Debugger Glossary)
 description: Glossary page - L
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # L
