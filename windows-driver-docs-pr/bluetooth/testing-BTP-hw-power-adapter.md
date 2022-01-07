@@ -24,8 +24,8 @@ The power adapter chosen must meet the following specification:
 - 9V DC
 - 1A (minimum)
 - Positive Center
-- 2.1mm id barrel
-- 5.5mm od barrel
+- 2.1mm inner diameter (id) barrel
+- 5.5mm outer diameter (od) barrel
 
 ## Availability
 
