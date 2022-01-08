@@ -4,7 +4,7 @@ description: Bluetooth Test Platform (BTP) battery tests.
 ms.date: 06/09/2021
 ---
 
-# BTP battery Tests
+# BTP Battery Tests
 
 The BTP battery tests verify the ability of the local system to observe battery level changes on a paired remote device.
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform package
 description: Bluetooth Test Platform (BTP) software package.
-ms.date: 06/09/2021
+ms.date: 01/06/2022
 ---
 
 # The BTP Software Package
@@ -13,21 +13,21 @@ The BTP software package contains several tools to be used for testing Bluetooth
 The Bluetooth Test Platform (BTP) software package contains tools for testing the interoperability of Bluetooth enabled peripherals and systems with the Windows Bluetooth stack. The included documentation provides a brief overview of the ways to configure the hardware and suggests topologies for best test coverage. Procedural information about how to run the tests and collect trace events from the Bluetooth Windows stack are included. Click the following button to download the latest version.
 
 > [!div class="nextstepaction"]
-> [Download the current release of BTP](https://download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.9.0.msi)
-
+> [Download the current release of BTP](https://download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.10.1.msi)
 
 ## Version Updates
 
 | Version | Changes |
-|---------|---------|
-|1.9.0     | - Improved support for BTP devices using custom DLL plugins.</br> - Fixed an issue affecting the audio mute/unmute tests in certain Windows builds.</br> - Several other fixes and improvements to test reliability. |
-|1.8.0     | - Added Wi-Fi with Bluetooth audio and HID co-existence tests.</br>- Added mute and unmute audio tests.</br>- Added option to record audio played during tests to a local file.</br>- Fixed issue that could cause the Bluefruit Feather to incorrectly report its Bluetooth address.</br>- Fixed issue with running current audio tests on older Windows builds.</br>- Several other fixes and improvements to test reliability. |
-|1.7.2     | - Added Wi-Fi and Bluetooth audio co-existence tests.</br>- Added support for Bluefruit Feather (nRF52840) with full parity to existing Bluefruit support.</br>- Added tests for all types of pairing key negotiations using the Bluefruit Feather.</br>- Fixed issue where failures would occur in a tight loop if a device was unplugged mid-test.</br>- Several fixes and improvements to test reliability. |
-|1.6.2     | - No longer require a WDK installation to run BTP tests.</br>- Added quick keystroke HID tests to more easily catch key repeats and other performance issues.</br>- Added quick keystroke and mouse movement after idle HID tests that are useful for loop execution.</br>- Added reconnection latency measurement to HID tests.</br>- Added reconnection after idle disconnection HID tests.</br>- Several fixes and improvements to test reliability. |
-|1.5.1     | - Added BTVS and BTETLParse diagnostic tools.</br>- Several fixes and improvements to test reliability. |
-|1.4.0     | - Added keyboard latency test to HID tests.</br> - Added mouse tests to HID tests.</br> - Added audio + HID scenario tests. </br> - Added battery tests.</br> - Fixed issue causing tests to fail to load when running in older Windows releases.</br> - Fixed scripts that failed when running on non-native CMD/PowerShell environments.</br> - Several fixes and improvements to test reliability. |
-|1.3.1     | -  Added audio tests capable of exercising A2DP and HFP.</br> - Added audio volume validation and glitch detection via an FPGA on the Traduci.</br> - Renamed tests to shorter and more user friendly names.</br> - Several fixes and improvements to test reliability. |
-|1.2.1     | - Moving BTP from private preview to public.</br> - Added experimental SleepTests demonstrating a new capability of the Traduci of executing delayed commands.</br> - Several fixes and improvements to test reliability. |
+| --- | --- |
+| 1.10.1 | - Added power state HID tests.</br> - Several other fixes and improvements to test reliability. |
+| 1.9.0 | - Improved support for BTP devices using custom DLL plugins.</br> - Fixed an issue affecting the audio mute/unmute tests in certain Windows builds.</br> - Several other fixes and improvements to test reliability. |
+| 1.8.0 | - Added Wi-Fi with Bluetooth audio and HID co-existence tests.</br>- Added mute and unmute audio tests.</br>- Added option to record audio played during tests to a local file.</br>- Fixed issue that could cause the Bluefruit Feather to incorrectly report its Bluetooth address.</br>- Fixed issue with running current audio tests on older Windows builds.</br>- Several other fixes and improvements to test reliability. |
+| 1.7.2 | - Added Wi-Fi and Bluetooth audio co-existence tests.</br>- Added support for Bluefruit Feather (nRF52840) with full parity to existing Bluefruit support.</br>- Added tests for all types of pairing key negotiations using the Bluefruit Feather.</br>- Fixed issue where failures would occur in a tight loop if a device was unplugged mid-test.</br>- Several fixes and improvements to test reliability. |
+| 1.6.2 | - No longer require a WDK installation to run BTP tests.</br>- Added quick keystroke HID tests to more easily catch key repeats and other performance issues.</br>- Added quick keystroke and mouse movement after idle HID tests that are useful for loop execution.</br>- Added reconnection latency measurement to HID tests.</br>- Added reconnection after idle disconnection HID tests.</br>- Several fixes and improvements to test reliability. |
+| 1.5.1 | - Added BTVS and BTETLParse diagnostic tools.</br>- Several fixes and improvements to test reliability. |
+| 1.4.0 | - Added keyboard latency test to HID tests.</br> - Added mouse tests to HID tests.</br> - Added audio + HID scenario tests. </br> - Added battery tests.</br> - Fixed issue causing tests to fail to load when running in older Windows releases.</br> - Fixed scripts that failed when running on non-native CMD/PowerShell environments.</br> - Several fixes and improvements to test reliability. |
+| 1.3.1 | -  Added audio tests capable of exercising A2DP and HFP.</br> - Added audio volume validation and glitch detection via an FPGA on the Traduci.</br> - Renamed tests to shorter and more user friendly names.</br> - Several fixes and improvements to test reliability. |
+| 1.2.1 | - Moving BTP from private preview to public.</br> - Added experimental SleepTests demonstrating a new capability of the Traduci of executing delayed commands.</br> - Several fixes and improvements to test reliability. |
 
 ## Tools in the package
 
@@ -45,6 +45,7 @@ The Bluetooth Test Platform (BTP) software package contains tools for testing th
 | RunBatteryTests | - Provided as a CMD script and a PowerShell script.</br>- Runs battery tests.</br>- Supports custom arguments if provided</br> | RunBatteryTests.bat</br>RunBatteryTests.ps1 |
 | RunWiFiAudioScenarioTests | - Provided as a CMD script and a PowerShell script.</br>- Runs Wi-Fi and audio scenario tests.</br>- Supports custom arguments if provided</br> | RunWiFiAudioScenarioTests.bat</br>RunWiFiAudioScenarioTests.ps1 |
 | RunWiFiAudioHidScenarioTests | - Provided as a CMD script and a PowerShell script.</br>- Runs Wi-Fi, audio, and HID scenario tests.</br>- Supports custom arguments if provided</br> | RunWiFiAudioHidScenarioTests.bat</br>RunWiFiAudioHidScenarioTests.ps1 |
+| RunPowerStateTests | - Provided as a CMD script and a PowerShell script.</br>- Runs the power state tests.</br>- Supports custom arguments if provided</br> | RunPowerStateTests.bat</br>RunPowerStateTests.ps1 |
 | Bluefruit Feather Firmware | - Compiled binaries for Bluefruit Feather device. | BtpBluefruit_nRF52840.ino.zip |
 | ESP32 Firmware | - Compiled binaries for ESP32wifi device. | WiFi-ESP32.ino</br>WiFi-ESP32.ino.partitions |
 
@@ -59,11 +60,11 @@ The files listed in this table are available in X86, AMD64, and ARM64 architectu
 | GenericSerialIO | - Binary needed to support BTP devices that use Windows serial communication. | Microsoft.Bluetooth.TestPlatform.GenericSerialIO.dll |
 | HidTests | - Test binary for Bluetooth HID tests.</br> - Can be run using TAEF or via the provided scripts. | TaefHidTests.dll |
 | PairingTests | - Test binary for Bluetooth Pairing tests.</br> - Can be run using TAEF or via the provided scripts. | TaefPairingTests.dll |
-| SleepTests | - Experimental test binary for Bluetooth Sleep tests.</br> - Can be run using TAEF. </br>**Note:** This is not currently fully supported. | TaefSleepTests.dll |
 | AudioTests | -  Test binary for Bluetooth Audio tests.</br> - Can be run using TAEF. | TaefAudioTests.dll |
 | AudioHidScenarioTests | - Test binary for Bluetooth Audio and HID scenario tests.</br> - Can be run using TAEF. | TaefAudioHidScenarioTests.dll |
 | BatteryTests | - Test binary for Bluetooth battery tests.</br> - Can be run using TAEF. | TaefBatteryTests.dll |
 | WiFiCoexScenarioTests | - Test binary for Bluetooth and Wi-Fi coexistence tests.</br> - Can be run using TAEF. | TaefWiFiCoexScenarioTests.dll |
+| PowerStateTests | - Test binary for Bluetooth power state tests.</br> - Can be run using TAEF. | TaefPowerStateTests.dll |
 | TraduciCmd | - Command line tool for querying and changing the state of the Traduci, including debug commands.</br> - Used for firmware update to Traduci hardware. | TraduciCmd.exe |
 | BTETLParse | - Command line tool for extracting HCI traces from supported ETL files. | BTETLParse.exe |
 | BTVS | - Graphical tool for streaming live HCI traces in supported formats (such as Ellisys, Frontline, and Wireshark).</br> - Only available for the x86 architecture. | btvs.exe |
