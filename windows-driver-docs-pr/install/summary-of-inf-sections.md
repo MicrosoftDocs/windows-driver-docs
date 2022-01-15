@@ -90,16 +90,3 @@ This section is required in every INF file to define each **%**<em>strkey</em>**
 Some sections listed here, especially those with *Install* in their names, can contain directives that reference additional INF-writer-defined sections. Each directive causes particular operations to be performed on the items listed under the appropriate type of INF-writer-defined section during the installation process.
 
 The set of valid entries and directives for any particular section in the previous list is section-specific and shown in the formal syntax of the reference for each of these sections. Additionally, see [Summary of INF Directives](summary-of-inf-directives.md) for a summary of the most commonly used directives.
-
-Optional entries and directives within each such section are shown enclosed in brackets, as for example:
-
-```
-[Version]
-...
-[ExtensionId={nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}]
-...
-```
-The **ExtensionID** entry in a **\[Version\]** section is optional in the sense that it is required for [Extension INFs](using-an-extension-inf-file.md) but not present in other types of driver packages.
-
- 
-

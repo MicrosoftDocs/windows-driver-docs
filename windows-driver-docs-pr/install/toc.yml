@@ -64,8 +64,16 @@
     items: 
     - name: "Overview of INF Files"
       href: overview-of-inf-files.md
+    - name: "General Syntax Rules for INF Files"
+      href: general-syntax-rules-for-inf-files.md
+    - name: "General Guidelines for INF Files"
+      href: general-guidelines-for-inf-files.md
     - name: "Looking at an INF File"
       href: looking-at-an-inf-file.md
+    - name: "Summary of INF Sections"
+      href: summary-of-inf-sections.md
+    - name: "Summary of INF Directives"
+      href: summary-of-inf-directives.md
     - name: "Using a Universal INF File"
       href: using-a-universal-inf-file.md
     - name: "Using an Extension INF File"
@@ -74,14 +82,6 @@
       href: using-an-extension-inf-file-template.md
     - name: "Updating Device Firmware using Windows Update"
       href: updating-device-firmware-using-windows-update.md
-    - name: "Summary of INF Sections"
-      href: summary-of-inf-sections.md
-    - name: "Summary of INF Directives"
-      href: summary-of-inf-directives.md
-    - name: "General Guidelines for INF Files"
-      href: general-guidelines-for-inf-files.md
-    - name: "General Syntax Rules for INF Files"
-      href: general-syntax-rules-for-inf-files.md
     - name: "Specifying the Source and Target Locations for Device Files"
       href: specifying-the-source-and-target-locations-for-device-files.md
     - name: "Source Media for INF Files"
