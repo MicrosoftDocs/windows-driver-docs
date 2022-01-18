@@ -68,7 +68,7 @@ Note the following about the implied hierarchy of an INF file:
 
 - Each [*Models*](inf-models-section.md) section specifies some number of entries; in the example they start with **%**<em>xxx</em>.DeviceDesc<strong>%</strong> tokens.
 
-  Each such **%**<em>xxx</em>.DeviceDesc<strong>%</strong> token references some number of per-models [*DDInstall*](inf-ddinstall-section) sections (Ser_Inst and Inp_Inst) for that manufacturer's product line, with each entry identifying a single device (\*PNP0F0C and \*PNP0F0D, hence the "DeviceDesc" shown here) or a set of compatible models of a device.
+  Each such **%**<em>xxx</em>.DeviceDesc<strong>%</strong> token references some number of per-models [*DDInstall*](inf-ddinstall-section.md) sections (Ser_Inst and Inp_Inst) for that manufacturer's product line, with each entry identifying a single device (\*PNP0F0C and \*PNP0F0D, hence the "DeviceDesc" shown here) or a set of compatible models of a device.
 
 - Each such *DDInstall*-type *Xxx*_Inst section, in turn, can have certain system-defined extensions appended and/or can contain directives that reference additional INF-writer-defined sections. For example, the full INF file that is shown as fragments in the previous example also has a Ser_Inst<strong>.Services</strong> section, and its Ser_Inst section has a [**CopyFiles**](inf-copyfiles-directive.md) directive that references a Ser_CopyFiles section elsewhere in this INF file.
 
