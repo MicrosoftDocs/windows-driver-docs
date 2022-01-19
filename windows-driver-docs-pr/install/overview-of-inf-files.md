@@ -13,7 +13,7 @@ ms.date: 01/13/2022
 
 # Overview of INF Files
 
-An setup information (INF) file is a text file in a [driver package](driver-packages.md) that contains all of the information that device installation components use to install a driver package on a device. Windows uses INF files to install the following components for a device:
+A setup information (INF) file is a text file in a [driver package](driver-packages.md) that contains all of the information that device installation components use to install a driver package on a device. Windows uses INF files to install the following components for a device:
 
 -   One or more drivers that support the device.
 
