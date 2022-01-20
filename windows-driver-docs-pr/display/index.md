@@ -7,8 +7,6 @@ keywords:
 - miniport drivers WDK display
 ms.date: 10/10/2019
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Display Devices Design Guide

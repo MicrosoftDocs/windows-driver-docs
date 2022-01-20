@@ -4,8 +4,6 @@ description: The Microsoft Windows Device Testing Framework (WDTF) enables you t
 ms.assetid: cff552f0-5dde-4fe7-996c-0a496d845edc
 ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Windows Device Testing Framework (WDTF) design guide

@@ -6,8 +6,6 @@ keywords:
 - Network Adapter Class Extension, Network Adapter WDF Class Extension, NetAdapterCx, NetCx
 ms.date: 08/27/2019
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.custom: 19H1
 ---
 

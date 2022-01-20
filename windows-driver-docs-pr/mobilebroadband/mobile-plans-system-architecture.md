@@ -5,8 +5,6 @@ keywords:
 - Windows Mobile Plans mobile operators
 ms.date: 07/31/2019
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Mobile Plans system architecture

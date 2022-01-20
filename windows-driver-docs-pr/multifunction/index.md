@@ -13,8 +13,6 @@ keywords:
 - INF files WDK multifunction devices
 ms.date: 08/13/2021
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Multifunction device driver design guide

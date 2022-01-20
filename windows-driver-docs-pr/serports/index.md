@@ -4,8 +4,6 @@ description: You can design a driver or application that uses the serial I/O req
 ms.assetid: 66120e14-20dc-4220-b340-c05cbc59dac8
 ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Serial Controller Driver Design Guide

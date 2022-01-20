@@ -4,8 +4,6 @@ description: This section describes how to write a driver for a simple periphera
 ms.assetid: 7E9F688B-F473-4343-A1E0-525273391935
 ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Simple Peripheral Bus (SPB) Driver Design Guide

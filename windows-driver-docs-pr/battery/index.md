@@ -4,8 +4,6 @@ description: Battery Devices Design Guide
 ms.assetid: d8eecfcb-6c06-40d1-8c78-b8c88eb890f2
 ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Battery Devices Design Guide

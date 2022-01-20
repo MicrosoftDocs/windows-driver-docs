@@ -6,8 +6,6 @@ keywords:
 - get started with drivers
 ms.date: 08/06/2021
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Getting started with Windows drivers

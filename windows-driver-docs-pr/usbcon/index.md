@@ -3,8 +3,6 @@ description: Universal Serial Bus (USB) provides an expandable, hot-pluggable Pl
 title: Universal Serial Bus (USB)
 ms.date: 09/16/2021
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Universal Serial Bus (USB)

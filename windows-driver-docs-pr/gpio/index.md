@@ -4,8 +4,6 @@ description: This section describes how to write a driver for a general-purpose 
 ms.assetid: D11E72AC-2B0D-4325-8BD0-9AE9B21AFD8D
 ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # General-Purpose I/O (GPIO) Driver Design Guide
