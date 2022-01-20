@@ -73,7 +73,7 @@
         "**/audio/*.md": "audio",
         "**/battery/*.md": "battery",
         "**/biometric/*.md": "biometric",
-        "**/bluetooth/*.md": "bluetooth",
+        "**/bluetooth/*": "bluetooth",
         "**/bringup/*.md": "bringup",
         "**/cfu/*.md": "cfu",
         "**/dashboard/*.md": "dashboard",
