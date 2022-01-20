@@ -12,8 +12,6 @@ keywords:
 - framework objects WDK KMDF
 ms.date: 04/22/2021
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # What's New for WDF Drivers in Windows 10

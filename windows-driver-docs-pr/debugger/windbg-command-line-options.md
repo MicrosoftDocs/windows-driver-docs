@@ -4,8 +4,6 @@ description: First-time users of WinDbg should begin with the Debugging Using Wi
 keywords: ["WinDbg Command-Line Options Windows Debugging"]
 ms.date: 08/10/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

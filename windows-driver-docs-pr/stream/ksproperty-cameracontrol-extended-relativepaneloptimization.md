@@ -12,8 +12,6 @@ api_type:
 - HeaderDef
 ms.date: 07/07/2020
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_RELATIVEPANELOPTIMIZATION

@@ -3,8 +3,6 @@ title: WinDbg Preview - Command line startup options
 description: This section covers the command line startup options for the WinDbg Preview debugger.
 ms.date: 09/11/2019
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # WinDbg Preview - Command line startup options

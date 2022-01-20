@@ -10,8 +10,6 @@ keywords:
 - CX
 ms.date: 12/10/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # NFC CX quick start guide

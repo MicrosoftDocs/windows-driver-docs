@@ -4,8 +4,6 @@ description: The blackboxbsd extension displays the secondary boot information f
 keywords: ["blackboxbsd Windows Debugging"]
 ms.date: 12/06/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
