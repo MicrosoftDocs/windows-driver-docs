@@ -88,10 +88,6 @@
       href: copying-inf-files.md
     - name: "Creating INF Files for Multiple Platforms and Operating Systems"
       href: creating-inf-files-for-multiple-platforms-and-operating-systems.md
-    - name: "INF File Platform Extensions and x64-Based Systems"
-      href: inf-file-platform-extensions-and-x64-based-systems.md
-    - name: "INF File Platform Extensions and x86-Based Systems"
-      href: inf-file-platform-extensions-and-x86-based-systems.md
     - name: "Cross-Platform INF Files"
       href: cross-platform-inf-files.md
     - name: "Combining Platform Extensions with Other Section Name Extensions"

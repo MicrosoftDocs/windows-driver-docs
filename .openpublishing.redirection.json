@@ -36,6 +36,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/install/inf-file-platform-extensions-and-x64-based-systems.md",
+            "redirect_URL": "/windows-hardware/drivers/install/creating-inf-files-for-multiple-platforms-and-operating-systems",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/inf-file-platform-extensions-and-x86-based-systems.md",
+            "redirect_URL": "/windows-hardware/drivers/install/creating-inf-files-for-multiple-platforms-and-operating-systems",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/install/obtaining-a-software-publisher-certificate--spc-.md",
             "redirect_URL": "/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates",
             "redirect_document_id": false
