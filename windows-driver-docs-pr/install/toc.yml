@@ -84,10 +84,6 @@
       href: updating-device-firmware-using-windows-update.md
     - name: "Specifying the Source and Target Locations for Device Files"
       href: specifying-the-source-and-target-locations-for-device-files.md
-    - name: "Source Media for INF Files"
-      href: source-media-for-inf-files.md
-    - name: "Target Media for INF Files"
-      href: target-media-for-inf-files.md
     - name: "Copying INF Files"
       href: copying-inf-files.md
     - name: "Creating INF Files for Multiple Platforms and Operating Systems"
