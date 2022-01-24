@@ -377,6 +377,48 @@
       href: checked-build-asserts.md
   - name: "Application Verifier"
     href: application-verifier.md
+# Auto-expanded node
+    items: 
+    - name: "Application Verifier - Features"
+      href: application-verifier-features.md
+    - name: "Application Verifier - Testing Applications"
+      href: application-verifier-testing-applications.md
+    - name: "Application Verifier - Tests within Application Verifier"
+      href: application-verifier-tests-within-application-verifier.md
+    - name: "Application Verifier - Stop Codes and Definitions"
+      href: application-verifier-stop-codes-and-definitions.md
+# Auto-expanded node
+      items: 
+      - name: "Application Verifier - Stop Codes - Basics"
+        href: application-verifier-stop-codes-basics.md
+      - name: "Application Verifier - Stop Codes - Compatibility"
+        href: application-verifier-stop-codes-compatibility.md
+      - name: "Application Verifier - Stop Codes - Cuzz"
+        href: application-verifier-stop-codes-cuzz.md
+      - name: "Application Verifier - Stop Codes - Low Resource Simulation"
+        href: application-verifier-stop-codes-low-resource-simulation.md
+      - name: "Application Verifier - Stop Codes - LuaPriv"
+        href: application-verifier-stop-codes-luapriv.md
+      - name: "Application Verifier - Stop Codes - Miscellaneous"
+        href: application-verifier-stop-codes-miscellaneous.md
+      - name: "Application Verifier - Stop Codes - Networking"
+        href: application-verifier-stop-codes-networking.md
+      - name: "Application Verifier - Stop Codes - NTLM"
+        href: application-verifier-stop-codes-ntlm.md
+      - name: "Application Verifier - Stop Codes - Printing"
+        href: application-verifier-stop-codes-printing.md
+      - name: "Application Verifier - Stop Codes - Webservices"
+        href: application-verifier-stop-codes-webservices.md
+      - name: "Application Verifier - Stop Codes - Services"
+        href: application-verifier-stop-codes-Services.md
+      - name: "Application Verifier - Stop Codes - Perf"
+        href: application-verifier-stop-codes-perf.md
+      - name: "Application Verifier - Stop Codes - Hangs"
+        href: application-verifier-stop-codes-hangs.md
+    - name: "Application Verifier - Debugging Application Verifier Stops"
+      href: application-verifier-debugging-application-verifier-stops.md
+    - name: "Application Verifier - Frequently Asked Questions"
+      href: application-verifier-faqs.md
   - name: "Code Analysis for Drivers"
 # Auto-expanded node
     items: 
