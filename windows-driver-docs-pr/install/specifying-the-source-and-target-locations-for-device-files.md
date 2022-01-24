@@ -6,7 +6,7 @@ ms.date: 01/21/2022
 
 # Specifying the Source and Target Locations for Device Files
 
-When Windows processes copy, rename, and delete file statements in an INF file, it determines the source and target locations for the files. To determine these locations, it examines various INF file sections and entries, including [**SourceDisksNames**](inf-sourcedisksnames-section.md), [**SourceDisksFiles**](inf-sourcedisksfiles-section.md), and [**DestinationDirs**](inf-destinationdirs-section).
+When Windows processes copy, rename, and delete file statements in an INF file, it determines the source and target locations for the files. To determine these locations, it examines various INF file sections and entries, including [**SourceDisksNames**](inf-sourcedisksnames-section.md), [**SourceDisksFiles**](inf-sourcedisksfiles-section.md), and [**DestinationDirs**](inf-destinationdirs-section.md).
 
 This describes how Windows determines source and target locations, and provides guidelines to help you correctly specify these locations.
 
@@ -26,4 +26,4 @@ Files referenced by the INF should have file names that are as vendor-specific a
 
 An INF file specifies the target location for device files that have a [**DestinationDirs**](inf-destinationdirs-section.md) section. This section should always be specified in the same INF file as the section with the copy, rename, or delete statements.
 
-If an INF has copy, rename, or delete sections but no [**DestinationDirs**](inf-destinationdirs-section) section and the INF uses an **Include** directive to include other INF files, Windows searches the included INF files for target location information. However, the order in which Windows searches the included files is not predictable. Therefore, there is a risk that Windows will, for example, copy files to a location not intended by the INF writer. To avoid such confusion, always specify a [**DestinationDirs**](inf-destinationdirs-section) section in an INF that lists all copy, rename, or delete sections in that INF.
+If an INF has copy, rename, or delete sections but no [**DestinationDirs**](inf-destinationdirs-section.md) section and the INF uses an **Include** directive to include other INF files, Windows searches the included INF files for target location information. However, the order in which Windows searches the included files is not predictable. Therefore, there is a risk that Windows will, for example, copy files to a location not intended by the INF writer. To avoid such confusion, always specify a [**DestinationDirs**](inf-destinationdirs-section.md) section in an INF that lists all copy, rename, or delete sections in that INF.
