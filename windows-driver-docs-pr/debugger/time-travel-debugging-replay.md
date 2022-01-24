@@ -67,7 +67,7 @@ ntdll!LdrpInitializeProcess+0x1bd9:
 7774f83c 0f8450e8ffff    je      ntdll!LdrpInitializeProcess+0x42f (7774e092) [br=1]
 ```
 
-You an also use the [t (Trace)](t--trace-.md) command to navigate in the trace.
+You can also use the [t (Trace)](t--trace-.md) command to navigate in the trace.
 
 ```dbgcmd
 0:000> t
