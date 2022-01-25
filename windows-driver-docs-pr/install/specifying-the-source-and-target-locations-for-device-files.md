@@ -8,7 +8,7 @@ ms.date: 01/21/2022
 
 When Windows processes copy, rename, and delete file statements in an INF file, it determines the source and target locations for the files. To determine these locations, it examines various INF file sections and entries, including [**SourceDisksNames**](inf-sourcedisksnames-section.md), [**SourceDisksFiles**](inf-sourcedisksfiles-section.md), and [**DestinationDirs**](inf-destinationdirs-section.md).
 
-This describes how Windows determines source and target locations, and provides guidelines to help you correctly specify these locations.
+This page describes how Windows determines source and target locations, and provides guidelines to help you correctly specify these locations.
 
 ## Source Media for INF Files
 
