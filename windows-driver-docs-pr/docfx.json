@@ -68,6 +68,7 @@
     },
     "fileMetadata": {
       "ms.technology": {
+        "*": "whats-new-and-downloads",
         "**/3dprint/*": "3dprint",
         "**/acpi/*": "acpi",
         "**/audio/*": "audio",
