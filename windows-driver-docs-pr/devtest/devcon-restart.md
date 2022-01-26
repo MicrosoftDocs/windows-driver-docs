@@ -14,7 +14,7 @@ ms.date: 04/20/2017
 
 # DevCon Restart
 
-Stops and restarts the specified devices. Valid only on the local computer.
+Stops and restarts the specified devices. 
 
 ```
     devcon [/r] restart {* | ID [ID ...] | =class [ID [ID ...]]}
