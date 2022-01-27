@@ -9,12 +9,12 @@ api_name:
 - DevCon SetHwID
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 01/26/2022
 ---
 
 # DevCon SetHwID
 
-Adds, deletes, and changes the order of hardware IDs of root-enumerated devices on a local or remote computer.
+Adds, deletes, and changes the order of hardware IDs of root-enumerated devices.
 
 ```
     devcon [/m:\\computer] sethwid {* | ID [ID ...] | =class [ID [ID ...]]} := [ = | + | - | ! ]HardwareIDs ...
@@ -25,10 +25,11 @@ Adds, deletes, and changes the order of hardware IDs of root-enumerated devices 
 <span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>
 Runs the command on the specified remote computer. The backslashes are required.
 
-**Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access is unavailable.
+>[!NOTE]
+> The ability to run DevCon commands on a remote computer, is not available on versions of Windows after Windows 7.
 
-<span id="______________"></span> **\***
-Represents all devices on the computer.
+<span id="______________"></span>  `*` 
+The asterisk represents all devices on the computer.  
 
 <span id="_______ID______"></span><span id="_______id______"></span> *ID*
 Specifies all or part of a hardware ID, compatible ID, or device instance ID of a device. When specifying multiple IDs, type a space between each ID. IDs that include an ampersand character (**&**) must be enclosed in quotation marks.
@@ -48,12 +49,12 @@ The following special characters modify the ID parameter.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong><em></strong></p></td>
-<td align="left"><p>Matches any character or no character. Use the wildcard character (</em>) to create an ID pattern, for example, <em>disk</em>.</p></td>
+<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p>Matches any character or no character. Use the wildcard character (*) to create an ID pattern, for example, *disk.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>@</strong></p></td>
-<td align="left"><p>Indicates a device instance ID, for example, <strong><xref href="ROOT\FTDISK\0000" data-throw-if-not-resolved="False" data-raw-source="@ROOT\FTDISK\0000"></xref></strong>.</p></td>
+<td align="left"><p>Indicates a device instance ID, for example, @ROOT\FTDISK\0000.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>'</strong></p>
@@ -73,7 +74,7 @@ Specifies one or more hardware IDs.
 
 If the hardware IDs are not preceded by a symbol parameter (**+**, **-**, **=**, **!**), DevCon adds or moves the specified hardware IDs to the end of the list of hardware IDs for the device in the specified order. This is equivalent to the - parameter.
 
-<span id="_"></span>=  
+<span id="_"></span>**=**  
 Replaces the list of hardware IDs for the device with the specified hardware IDs in the specified order.
 
 <span id="______________"></span> **+**

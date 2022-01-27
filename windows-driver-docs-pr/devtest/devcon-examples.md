@@ -10,7 +10,7 @@ keywords:
 - commands WDK DevCon
 - Example 44 Forcibly update the HAL
 - HAL update example
-ms.date: 04/20/2017
+ms.date: 01/26/2022
 ---
 
 # Device Console (DevCon.exe) Examples
@@ -552,13 +552,13 @@ PCIIDE\IDECHANNEL\4&37E53584&0&1
 
 ### <span id="ddk_example_13_list_resources_of_device_on_a_remote_computer_by_id_too"></span><span id="DDK_EXAMPLE_13_LIST_RESOURCES_OF_DEVICE_ON_A_REMOTE_COMPUTER_BY_ID_TOO"></span><a name="ddk_example_13_list_resources_of_device_on_a_remote_computer_by_id_too"></a>Example 13: List resources of device on a remote computer by ID
 
-The following command uses the [**DevCon Resources**](devcon-resources.md) operation to list the resources allocated to the system timer on Server01, a remote computer. The command uses the hardware ID of the system timer, ACPI\\PNP0100, to specify the device.
+The following command uses the [**DevCon Resources**](devcon-resources.md) operation to list the resources allocated to the system timer. The command uses the hardware ID of the system timer, ACPI\\PNP0100, to specify the device.
 
 ```
-devcon /m:\\Server01 resources *PNP0100
+devcon resources *PNP0100
 ```
 
-In response, DevCon displays the resources of the Server01 system timer.
+In response, DevCon displays the resources of the system timer.
 
 ```
 ROOT\*PNP0100\PNPBIOS_8
@@ -572,7 +572,7 @@ ROOT\*PNP0100\PNPBIOS_8
 The following command uses the device instance ID of the remote system timer in the DevCon resources command. The at character (**@**) indicates that the string is a device instance ID, not a hardware ID or compatible ID.
 
 ```
-devcon /m:\\Server01 resources @ACPI\PNP0100\4&b4063f4&0
+devcon resources @ACPI\PNP0100\4&b4063f4&0
 ```
 
 ### <span id="ddk_example_14_display_the_driver_stack_for_storage_devices_tools"></span><span id="DDK_EXAMPLE_14_DISPLAY_THE_DRIVER_STACK_FOR_STORAGE_DEVICES_TOOLS"></span><a name="ddk_example_14_display_the_driver_stack_for_storage_devices_tools"></a>Example 14: Display the driver stack for storage devices
