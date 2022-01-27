@@ -36,6 +36,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/install/inf-file-platform-extensions-and-x64-based-systems.md",
+            "redirect_URL": "/windows-hardware/drivers/install/creating-inf-files-for-multiple-platforms-and-operating-systems",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/inf-file-platform-extensions-and-x86-based-systems.md",
+            "redirect_URL": "/windows-hardware/drivers/install/creating-inf-files-for-multiple-platforms-and-operating-systems",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/install/obtaining-a-software-publisher-certificate--spc-.md",
             "redirect_URL": "/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates",
             "redirect_document_id": false
@@ -61,8 +71,18 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/install/source-media-for-inf-files.md",
+            "redirect_URL": "/windows-hardware/drivers/install/specifying-the-source-and-target-locations-for-device-files",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/install/supplying-an-inf-file.md",
             "redirect_URL": "/windows-hardware/drivers/install/components-of-a-driver-package",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/target-media-for-inf-files.md",
+            "redirect_URL": "/windows-hardware/drivers/install/specifying-the-source-and-target-locations-for-device-files",
             "redirect_document_id": false
         },
         {

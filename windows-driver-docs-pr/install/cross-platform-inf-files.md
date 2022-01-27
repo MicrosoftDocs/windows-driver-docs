@@ -11,11 +11,7 @@ ms.date: 04/20/2017
 # Cross-Platform INF Files
 
 
-The simplest strategy for cross-platform INF files is to create a separate INF file for each platform type because this approach is the easiest to create and maintain. For more information about how to create platform-specific INF files, see the following topics:
-
-[Creating INF Files for x64-Based Systems (Windows XP and later)](inf-file-platform-extensions-and-x64-based-systems.md#creating-inf-files-for-x64-based-systems--windows-xp-and-later-)
-
-[Creating INF Files for x86-Based Systems (Windows 2000 and Later)](inf-file-platform-extensions-and-x86-based-systems.md#creating-inf-files-for-x86-based-systems--windows-2000-and-later-)
+The simplest strategy for cross-platform INF files is to create a separate INF file for each platform type because this approach is the easiest to create and maintain. For more information about how to create platform-specific INF files, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
 You can create a single cross-operating system and cross-platform INF file for a device if the device does not have operating system-specific installation requirements. For example, if the files or registry settings that support a device differ between operating system versions for a given platform, you cannot, in general, create a single INF file for that platform type that is supported by all operating system versions.
 
