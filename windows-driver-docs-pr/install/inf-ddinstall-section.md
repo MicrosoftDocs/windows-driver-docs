@@ -91,8 +91,6 @@ For example, the system INF files for device drivers that depend on the system's
 Include= ks.inf[, [kscaptur.inf,] [ksfilter.inf]]...
 ```
 
-For more information about the **Include** entry and restrictions on its use, see [Specifying the Source and Target Locations for Device Files](specifying-the-source-and-target-locations-for-device-files.md).
-
 <a href="" id="needs-inf-section-name--inf-section-name----"></a>**Needs=**<em>inf-section-name</em>\[**,**<em>inf-section-name</em>\]...  
 This optional entry specifies sections within system-supplied INF files that must be processed during the installation of this device. Typically, such a named section is a *DDInstall* (or <em>DDInstall</em>**.**<em>xxx</em>) section within one of the INF files that are listed in an **Include** entry. However, it can be any section that is referenced within such a *DDInstall* or <em>DDInstall</em>**.**<em>xxx</em> section of the included INF.
 
@@ -102,7 +100,7 @@ For example, the INF files for device drivers that have the preceding **Include*
 Needs= KS.Registration[, KSCAPTUR.Registration | KSCAPTUR.Registration.NT, MSPCLOCK.Installation]
 ```
 
-**Needs** entries cannot be nested. For more information about the **Needs** entry and restrictions on its use, see [Specifying the Source and Target Locations for Device Files](specifying-the-source-and-target-locations-for-device-files.md).
+**Needs** entries cannot be nested.
 
 <a href="" id="delfiles-file-list-section--file-list-section----"></a>**Delfiles=**<em>file-list-section</em>\[**,**<em>file-list-section</em>\]...  
 This directive references one or more INF-writer-defined sections listing files on the target to be deleted.

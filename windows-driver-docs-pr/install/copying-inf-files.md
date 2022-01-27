@@ -4,30 +4,16 @@ description: Copying INF Files
 keywords:
 - INF files WDK device installations , copying
 - copying INF files
-ms.date: 04/20/2017
+ms.date: 01/21/2022
 ---
 
 # Copying INF Files
 
+It is sometimes necessary to stage other [driver packages](driver-packages.md) into the [Driver Store](driver-store.md) of the system as part of staging a primary driver package.  For example, the driver package for the root of a multifunction device might stage the driver packages for the device's individual functions so that Windows has these driver packages available as it installs the device's functions.
 
+To stage other [driver packages](driver-packages.md) into the [Driver Store](driver-store.md) of the system, an INF file can use the [**INF CopyINF directive**](inf-copyinf-directive.md).
 
-
-
-It is sometimes necessary to copy INF files during device installation so that Windows can find them without repetitively displaying user prompts. For example, the base INF file for a multifunction device might copy the INF files for the device's individual functions so that Windows can find these INF files without prompting the user each time it installs one of the device's functions.
-
-To copy INF files, an INF file can use the [**INF CopyINF directive**](inf-copyinf-directive.md).
-
-Doing so will:
-
--   Install the appropriate catalog file, if it exists, along with the INF file.
-
--   Give the INF file a unique name so that it does not overwrite any other INF files, and will not be overwritten by other INF files.
-
--   Retain the path of the source medium from which device files are to be copied.
-
--   Ensure compatibility with future versions of Windows.
-
-Installation software must never copy INF files directly into a system's *%SystemRoot%/inf* directory. Copying INF files by using techniques not described in this section will invalidate a driver's digital signature.
+Installation software must never copy INF files directly into a system's *%SystemRoot%/inf* directory or Driver Store directory.
 
  
 
