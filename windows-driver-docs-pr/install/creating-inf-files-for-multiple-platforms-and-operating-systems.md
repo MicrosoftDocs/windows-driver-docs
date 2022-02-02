@@ -6,7 +6,7 @@ keywords:
 - multiple operating systems WDK , INF files
 - cross-platform INF files WDK
 - operating systems WDK , cross-operating system INF files
-ms.date: 01/21/2022
+ms.date: 02/02/2022
 ---
 
 # Creating INF Files for Multiple Platforms and Operating Systems
@@ -62,7 +62,7 @@ The following table summarizes the system-supported platform extensions that can
 
 On Windows Server 2003 Service Pack 1 (SP1) and later, INF files must *decorate* entries in the [**INF Models section**](inf-models-section.md) with **.ntia64**, **.ntarm**, **.ntarm64** or **.ntamd64** platform extensions to specify non-x86 target operating system versions. These platform extensions are not required in INF files for x86-based target operating system versions, but are strongly recommended. The same platform extension decoration or **.nt** platform extension is optional on all other sections that support platform extensions.
 
-[!NOTE] We highly recommend that you always decorate entries in the [**INF Models section**](inf-models-section.md) with platform extensions for target operating systems of Windows XP and later versions of Windows. For x86-based hardware platforms, you should avoid the use of the **.nt** platform extension and use **.ntx86** instead.
+> [!NOTE] We highly recommend that you always decorate entries in the [**INF Models section**](inf-models-section.md) with platform extensions for target operating systems of Windows XP and later versions of Windows. For x86-based hardware platforms, you should avoid the use of the **.nt** platform extension and use **.ntx86** instead.
 
 For sections that support optional platform extensions, Windows selects which section to process, as follows:
 
@@ -72,9 +72,9 @@ For sections that support optional platform extensions, Windows selects which se
 
 3. If a <em>section-name</em>**.nt** section does not exist, Windows processes a *section-name* section that does not include a platform extension.
 
-For sections where **.nt** and **.nt<em>\<architecture></em>** platform extensions are optional, the simplest approach to create and to maintain a cross-platform system INF file is not to use platform extensions on those section names and include the **.nt<em>\<architecture></em>** extension only on the names of [**INF Models section**](inf-models-section.md) sections.
+For sections where **.nt** and **.nt<em>\<architecture></em>** platform extensions are optional, the simplest approach to create and to maintain a cross-platform system INF file is not to use platform extensions on those section names and include the **.nt<em>\<architecture></em>** extension only on the names of [**INF Models section**](inf-models-section.md) sections. However, this assumes that the INF file does not need to copy architecture specific versions of files and that install settings are the same across architectures. For more advanced scenarios for cross-platform INFs, see [Combining Platform Extensions with Other Section Name Extensions](combining-platform-extensions-with-other-section-name-extensions.md).
 
-To create such a cross-platform INF file, do the following:
+To create such a simple cross-platform INF file, do the following:
 
 1. Create a valid INF file that contains the generic entries that are required in all INF files, as described in [General Guidelines for INF Files](general-guidelines-for-inf-files.md).
 
