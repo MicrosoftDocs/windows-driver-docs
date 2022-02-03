@@ -61,6 +61,21 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/install/sample-inf-file-for-device-installation-on-multiple-versions-of-windows.md",
+            "redirect_URL": "/windows-hardware/drivers/install/combining-platform-extensions-with-operating-system-versions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/sample-inf-models-sections-for-one-or-more-target-operating-system.md",
+            "redirect_URL": "/windows-hardware/drivers/install/combining-platform-extensions-with-operating-system-versions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/sample-inf-models-sections-for-only-one-target-operating-system.md",
+            "redirect_URL": "/windows-hardware/drivers/install/combining-platform-extensions-with-operating-system-versions",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/install/signing-a-catalog-file-with-an-spc.md",
             "redirect_URL": "/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates",
             "redirect_document_id": false

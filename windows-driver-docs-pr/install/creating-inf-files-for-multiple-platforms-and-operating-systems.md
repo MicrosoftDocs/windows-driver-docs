@@ -108,4 +108,3 @@ To create such a simple cross-platform INF file, do the following:
 -   [Cross-Platform INF Files](cross-platform-inf-files.md)
 -   [Combining Platform Extensions with Other Section Name Extensions](combining-platform-extensions-with-other-section-name-extensions.md)
 -   [Combining Platform Extensions with Operating System Versions](combining-platform-extensions-with-operating-system-versions.md)
--   [Sample INF File for Device Installation on Multiple Versions of Windows](sample-inf-file-for-device-installation-on-multiple-versions-of-windows.md)
