@@ -5,7 +5,7 @@ keywords:
 - emulation drivers WDK IEEE 1394 bus
 - hardware emulation drivers WDK IEEE 1394 bus
 - virtual devices WDK IEEE 1394 bus
-ms.date: 02/02/2022
+ms.date: 04/20/2017
 ms.custom: contperf-fy22q3
 ---
 
