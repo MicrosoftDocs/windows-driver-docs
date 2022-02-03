@@ -60,6 +60,7 @@ VOID QueryHwErrorEvents(VOID) {
     EvtClose(QueryHandle);
   }
 }
+```
 
 > [!NOTE]
 > All of the **Evt_Xxx_** functions and the EVT\_*XXX* data types that were used in the previous examples are documented in the [Windows Event Log](/windows/win32/wes/windows-event-log) section in the Microsoft Windows SDK documentation.
