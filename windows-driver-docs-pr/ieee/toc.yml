@@ -51,7 +51,7 @@
   - name: "IEEE 1394 Hardware Emulation Drivers"
     href: ieee-1394-hardware-emulation-drivers.md
   - name: "How drivers manage IEEE 1394 virtual devices"
-    href: creating-ieee-1394-virtual-devices.md
+    href: how-drivers-manage-ieee-1934-virtual-devices.md
   - name: "Supporting Requests in IEEE 1394 Virtual Device Drivers"
     href: supporting-requests-in-ieee-1394-virtual-device-drivers.md
 - name: "1394 Samples and Diagnostic Tools"

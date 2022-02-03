@@ -1,6 +1,16 @@
 {
     "redirections": [
         {
+            "source_path": "windows-driver-docs-pr/ieee/removing-ieee-1394-virtual-devices.md",
+            "redirect_URL": "/windows-hardware/drivers/ieee/how-drivers-manage-ieee-1934-virtual-devices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ieee/creating-ieee-1394-virtual-devices.md",
+            "redirect_URL": "/windows-hardware/drivers/ieee/how-drivers-manage-ieee-1934-virtual-devices",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/install/system-provided-device-installation-components.md",
             "redirect_URL": "/windows-hardware/drivers/install/overview-of-device-and-driver-installation",
             "redirect_document_id": false
