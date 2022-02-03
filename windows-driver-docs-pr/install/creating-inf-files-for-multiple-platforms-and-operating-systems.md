@@ -62,7 +62,8 @@ The following table summarizes the system-supported platform extensions that can
 
 On Windows Server 2003 Service Pack 1 (SP1) and later, INF files must *decorate* entries in the [**INF Models section**](inf-models-section.md) with **.ntia64**, **.ntarm**, **.ntarm64** or **.ntamd64** platform extensions to specify non-x86 target operating system versions. These platform extensions are not required in INF files for x86-based target operating system versions, but are strongly recommended. The same platform extension decoration or **.nt** platform extension is optional on all other sections that support platform extensions.
 
-> [!NOTE] We highly recommend that you always decorate entries in the [**INF Models section**](inf-models-section.md) with platform extensions for target operating systems of Windows XP and later versions of Windows. For x86-based hardware platforms, you should avoid the use of the **.nt** platform extension and use **.ntx86** instead.
+> [!NOTE] 
+> We highly recommend that you always decorate entries in the [**INF Models section**](inf-models-section.md) with platform extensions for target operating systems of Windows XP and later versions of Windows. For x86-based hardware platforms, you should avoid the use of the **.nt** platform extension and use **.ntx86** instead.
 
 For sections that support optional platform extensions, Windows selects which section to process, as follows:
 
