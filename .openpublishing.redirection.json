@@ -51,6 +51,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/install/opening-and-closing-an-inf-file.md",
+            "redirect_URL": "/windows-hardware/drivers/install/accessing-inf-files-from-a-setup-application",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/install/release-signing-a-driver-file.md",
             "redirect_URL": "/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates",
             "redirect_document_id": false
@@ -58,6 +63,11 @@
         {
             "source_path": "windows-driver-docs-pr/install/release-signing-driver-packages.md",
             "redirect_URL": "/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/retrieving-information-from-an-inf-file.md",
+            "redirect_URL": "/windows-hardware/drivers/install/accessing-inf-files-from-a-setup-application",
             "redirect_document_id": false
         },
         {

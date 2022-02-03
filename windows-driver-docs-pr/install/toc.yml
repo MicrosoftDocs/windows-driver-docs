@@ -102,10 +102,6 @@
       href: using-dirids.md
     - name: "Accessing INF Files from a Device Installation Application"
       href: accessing-inf-files-from-a-setup-application.md
-    - name: "Opening and Closing an INF File"
-      href: opening-and-closing-an-inf-file.md
-    - name: "Retrieving Information from an INF File"
-      href: retrieving-information-from-an-inf-file.md
     - name: "Providing Icons for a Device"
       href: providing-vendor-icons-for-the-shell-and-autoplay.md
   - name: "Driver Signing"
