@@ -1,17 +1,16 @@
 ---
 title: Combining Platform Extensions with Operating System Versions
 description: Combining Platform Extensions with Operating System Versions
-ms.date: 01/06/2022
+ms.date: 02/02/2022
 ---
 
 # Combining Platform Extensions with Operating System Versions
-
 
 Within the [**INF Manufacturer section**](inf-manufacturer-section.md) of an INF file, you can supply [**INF *Models* sections**](inf-models-section.md) that are specific to various versions of the Windows operating system. These version-specific *Models* sections are identified by using the *TargetOSVersion* decoration.
 
 Within the same INF file, different [**INF *Models* sections**](inf-models-section.md) can be specified for different versions of the operating system. The specified versions indicate target operating system versions with which the INF *Models* sections will be used. If no versions are specified, Windows uses a *Models* section without the *TargetOSVersion* decoration for all versions of all operating systems.
 
-### *TargetOSVersion* decoration format
+## *TargetOSVersion* decoration format
 
 The following example shows the correct format of the *TargetOSVersion* decoration for Windows XP through Windows 10, version 1511:
 
@@ -27,7 +26,7 @@ Each field is defined as follows:
 Specifies that the target operating system is NT-based. Windows 2000 and later versions of Windows are all NT-based.
 
 <a href="" id="architecture"></a>*Architecture*  
-Identifies the hardware platform. If specified, this must be **x86**, **ia64**, or **amd64**. If not specified, the associated INF *Models* section can be used with any hardware platform.
+Identifies the hardware platform. For more information on architecture platform decorations on *Models* sections, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
 <a href="" id="osmajorversion"></a>*OSMajorVersion*  
 A number that represents the major version number for the operating system. For a table listing major versions for the Windows operating systems, see [*OSMajorVersion*](./inf-manufacturer-section.md#osmajorversion).
@@ -76,9 +75,9 @@ Any build number specified by the *TargetOSVersion* decoration is evaluated only
 
 If build number is supplied, the OS version and BuildNumber of the *TargetOSVersion* decoration must both be greater than the OS version and build number of the Windows 10 build 14310 where this decoration was first introduced.  Earlier versions of the operating system without these changes (for example, Windows 10 build 10240) will not parse unknown decorations, so an attempt to target these earlier builds will actually prevent that OS from considering the decoration valid at all.
 
-### <a href="" id="how-setup-processes-targetosversion-decorations"></a>How Windows processes *TargetOSVersion* decorations
+## <a href="" id="how-setup-processes-targetosversion-decorations"></a>How Windows processes *TargetOSVersion* decorations
 
-When you install a device or driver on a host operating system, Windows follows these steps to process the [**INF *Models* sections**](inf-models-section.md) within an INF file:
+When you install a driver package on a device, Windows follows these steps to process the [**INF *Models* sections**](inf-models-section.md) within an INF file:
 
 1.  If one or more [**INF *Models* sections**](inf-models-section.md) have the *TargetOS* decoration, Windows selects the INF *Models* section that is closest to the attributes for the host operating system.
 
@@ -92,25 +91,69 @@ When you install a device or driver on a host operating system, Windows follows 
 
     For example, if an INF *Models* section has a platform extension of **ntx86**, Windows selects that section if the host operating system is Microsoft Windows 2000 or later version of Windows on an x86-based system.
 
-    Similarly, if an [**INF *Models* sections**](inf-models-section.md) has no platform extension, Windows selects that section if the host operating system is Windows 2000 or later version of Windows on any supported hardware platform.
+3.  If Windows cannot find a matching [**INF *Models* section**](inf-models-section.md), it will not install that driver package on the device.
 
-3.  If Windows cannot find a matching [**INF *Models* section**](inf-models-section.md), it will not use the INF file to install the device or driver.
+## Sample INF *Models* sections with *TargetOSVersion* decorations
 
-### Sample INF *Models* sections with*TargetOSVersion* decorations
+### Apply to a particular OS version and later
 
-The following topics provide samples of how to decorate platform extensions for target operating systems within an [**INF *Models* section**](inf-models-section.md):
+This INF excerpt shows how you can specify that a driver package only applies to a particular OS version and later.
 
-[Sample INF *Models* Sections for One or More Target Operating Systems](sample-inf-models-sections-for-one-or-more-target-operating-system.md)
+```inf
+[Manufacturer]
+%ManufacturerName% = ExampleModelsSection,NTamd64.10.0...17134
 
-[Sample INF *Models* Sections for Only One Target Operating System](sample-inf-models-sections-for-only-one-target-operating-system.md)
+; This driver package applies to Windows 10 1803 (build 17134) and later only
 
-[Sample INF File for Device Installation on Multiple Versions of Windows](sample-inf-file-for-device-installation-on-multiple-versions-of-windows.md)
+[ExampleModelsSection.NTamd64.10.0...17134]
+%DeviceDesc%=ExampleInstallSection,ExampleHardwareId
 
- 
+[ExampleInstallSection]
+...
+```
 
- 
+### Apply to only a single OS version
 
+This INF excerpt shows how you can specify that a driver package only applies to a single OS version.
 
+```inf
+[Manufacturer]
+%ManufacturerName% = ExampleModelsSection,NTamd64.10.0...17134,NTamd64.10.0...17763
 
+; This driver package applies to Windows 10 1803 (build 17134)
 
+[ExampleModelsSection.NTamd64.10.0...17134]
+%DeviceDesc%=ExampleInstallSection,ExampleHardwareId
 
+; However, this driver package does nothing on Windows 10 1809 (build 17763) and later
+[ExampleModelsSection.NTamd64.10.0...17763]
+; intentionally left empty
+
+[ExampleInstallSection]
+...
+```
+
+### Apply to multiple OS versions with different settings
+
+This INF excerpt shows how you can specify that a driver package should go through different installation instructions for different OS versions.
+
+```inf
+[Manufacturer]
+%ManufacturerName% = ExampleModelsSection,NTamd64.6.1,NTamd64.10.0
+
+; This driver package applies to Windows 7 and later
+
+[ExampleModelsSection.NTamd64.6.1]
+%DeviceDesc%=ExampleInstallSection_Win7,ExampleHardwareId
+
+; However, this driver package has different installation instructions on Windows 10 and later
+
+[ExampleModelsSection.NTamd64.10.0]
+%DeviceDesc%=ExampleInstallSection_Win10,ExampleHardwareId
+
+[ExampleInstallSection_Win7]
+...
+
+[ExampleInstallSection_Win10]
+...
+```

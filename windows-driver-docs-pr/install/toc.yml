@@ -94,12 +94,6 @@
       href: combining-platform-extensions-with-other-section-name-extensions.md
     - name: "Combining Platform Extensions with Operating System Versions"
       href: combining-platform-extensions-with-operating-system-versions.md
-    - name: "Sample INF Models Sections for One or More Target Operating Systems"
-      href: sample-inf-models-sections-for-one-or-more-target-operating-system.md
-    - name: "Sample INF Models Sections for Only One Target Operating System"
-      href: sample-inf-models-sections-for-only-one-target-operating-system.md
-    - name: "Sample INF File for Device Installation on Multiple Versions of Windows"
-      href: sample-inf-file-for-device-installation-on-multiple-versions-of-windows.md
     - name: "Creating International INF Files"
       href: creating-international-inf-files.md
     - name: "Specifying Driver Load Order"
@@ -108,10 +102,6 @@
       href: using-dirids.md
     - name: "Accessing INF Files from a Device Installation Application"
       href: accessing-inf-files-from-a-setup-application.md
-    - name: "Opening and Closing an INF File"
-      href: opening-and-closing-an-inf-file.md
-    - name: "Retrieving Information from an INF File"
-      href: retrieving-information-from-an-inf-file.md
     - name: "Providing Icons for a Device"
       href: providing-vendor-icons-for-the-shell-and-autoplay.md
   - name: "Driver Signing"
