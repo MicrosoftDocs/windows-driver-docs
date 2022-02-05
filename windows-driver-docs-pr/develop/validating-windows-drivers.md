@@ -32,7 +32,7 @@ If there are no errors, the INF meets the [Driver Package Isolation](driver-isol
 
 For example, the [INF AddEventProvider Directive](../install/inf-addeventprovider-directive.md) is available starting in Windows 10, version 1809. To use this directive in an INF targeting an OS version before Windows 10, version 1809, decorate both the install section using legacy INF syntax for registering ETW event providers as well as the install section using the updated syntax.
 
-For sample code showing how to use OS decorations, see [Sample INF Models Sections for One or More Target Operating Systems](../install/sample-inf-models-sections-for-one-or-more-target-operating-system.md).
+For sample code showing how to use OS decorations, see [Combining Platform Extensions with Operating System Versions](../install/combining-platform-extensions-with-operating-system-versions.md).
 
 ## Driver Verifier Driver Isolation Checks
 
