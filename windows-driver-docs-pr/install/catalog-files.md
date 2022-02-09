@@ -25,7 +25,7 @@ PnP device installation considers the digital signature of a [driver package](dr
 
 Similarly, changes to a device's hardware or firmware require a revised [device ID](device-ids.md) value so that the system can detect the updated device and install the correct driver. Because the revised device ID value must appear in the INF file, you must either resubmit the package to WHQL for a new signature or generate a new [Authenticode](authenticode.md) signature for the driver package. You must do this even if the driver binaries do not change.
 
-The **CatalogFile** directive in the [**INF Version section**](inf-version-section.md) of the driver's [INF file](overview-of-inf-files.md) specifies the name of the catalog file for the driver package. During driver installation, the operating system uses the **CatalogFile** directive to identify and validate the catalog file. The system copies the catalog file to the *%SystemRoot%\\CatRoot* directory and the INF file to the *%SystemRoot%\\Inf* directory.
+The **CatalogFile** directive in the [**INF Version section**](inf-version-section.md) of the driver's [INF file](overview-of-inf-files.md) specifies the name of the catalog file for the driver package. During driver installation, the operating system uses the **CatalogFile** directive to identify and validate the catalog file. The system copies the catalog file to the CatRoot directory under the system directory returned by [GetSystemDirectory](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getsystemdirectoryw), e.g., *%SystemRoot%\\System32\\CatRoot* and the INF file to the *%SystemRoot%\\Inf* directory.
 
 ### Guidelines for Catalog Files
 
