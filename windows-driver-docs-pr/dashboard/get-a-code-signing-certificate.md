@@ -2,34 +2,32 @@
 title: Get a code signing certificate
 description: Get a code signing certificate
 ms.topic: article
-ms.date: 07/22/2021
+ms.date: 02/10/2022
 ---
 
 # Get a code signing certificate
 
-Before you can establish a Partner Center account, you need to get a code signing certificate to secure your digital information. This certificate is the accepted standard for establishing your company’s ownership of the code you submit. It allows you to digitally sign PE binaries, such as .exe, .cab, .dll, .ocx, .msi, .xpi and .xap files.
+Before you can establish a Partner Center account, you need to get a code signing certificate to secure your digital information. This certificate is the accepted standard for establishing your company's ownership of the code you submit. It allows you to digitally sign PE binaries, such as .exe, .cab, .dll, .ocx, .msi, .xpi and .xap files.
 
 ## Step 1: Obtain an EV certificate
 
-- Microsoft requires an extended validation (EV) code signing certificate from partners enrolled and authorized for kernel mode code signing as part of the Microsoft Trusted Root Certificate Program. If you already have an approved EV certificate from one of these authorities, you can use it to establish a Partner Center account. If you don’t have a certificate, you’ll need to buy a new one.
+- Microsoft requires an extended validation (EV) code signing certificate from partners enrolled and authorized for kernel mode code signing as part of the Microsoft Trusted Root Certificate Program. If you already have an approved EV certificate from one of these authorities, you can use it to establish a Partner Center account. If you don't have a certificate, you'll need to buy a new one.
 
 ## Step 2: Buy a new code signing certificate
 
-If you don’t have an approved EV code signing certificate, you can buy one from one of the certificate authorities below.
+If you don't have an approved EV code signing certificate, you can buy one from one of the certificate authorities shown below.
 
 ### Extended validation code signing certificates
 
-- [Buy an SSL.com EV code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
+The following certificate authorities are listed in alphabetical order.
 
-- [Buy a Certum EV code signing cert](https://shop.certum.eu/data-safety/code-signing-certificates/certum-ev-code-sigining.html)
-
-- [Buy an Entrust EV code signing cert](https://www.entrustdatacard.com/products/digital-signing-certificates/code-signing-certificates)
-
-- [Buy a GlobalSign EV code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
-
-- [Buy a Sectigo (formerly Comodo) EV code signing certificate](https://go.microsoft.com/fwlink/?linkid=863208)
-
-- [Buy a DigiCert EV code signing certificate](https://www.digicert.com/order/order-1.php)
+- [Certum EV code signing certificate](https://shop.certum.eu/data-safety/code-signing-certificates/certum-ev-code-sigining.html)
+- [DigiCert EV code signing certificate](https://www.digicert.com/order/order-1.php)
+- [Entrust EV code signing certificate](https://www.entrustdatacard.com/products/digital-signing-certificates/code-signing-certificates)
+- [GlobalSign EV code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
+- [IdenTrust EV code signing certificate](https://www.identrust.com/certificates/trustid-ev-code-signing)
+- [Sectigo (formerly Comodo) EV code signing certificate](https://go.microsoft.com/fwlink/?linkid=863208)
+- [SSL.com EV code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
 
 ## Step 3: Retrieve code signing certificates
 
@@ -44,9 +42,8 @@ For step-by-step instructions, see [Add or Update a code signing certificate](up
 
 ## Next steps
 
-- If you’re setting up a new Partner Center account, follow the steps in [Register for the Hardware Program](register-for-the-hardware-program.md).
-
-- If you’ve already set up a Partner Center account and need to renew a certificate, follow the steps in [Add or Update a code signing certificate](update-a-code-signing-certificate.md).
+- If you're setting up a new Partner Center account, follow the steps in [Register for the Hardware Program](register-for-the-hardware-program.md).
+- If you've already set up a Partner Center account and need to renew a certificate, follow the steps in [Add or Update a code signing certificate](update-a-code-signing-certificate.md).
 
 ## FAQ
 
