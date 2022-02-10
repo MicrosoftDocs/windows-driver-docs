@@ -1,17 +1,13 @@
 ---
 title: Driver flighting
 description: Distribute your driver within defined Windows Insider rings. Driver flighting provides automatic monitoring and evaluation.
-ms.date: 02/07/2022
+ms.date: 02/10/2022
 ms.topic: article
 ---
 
 # Driver flighting
 
 Driver flighting in the Partner Center enables you to distribute your driver within defined Windows Insider rings, while providing automatic monitoring and evaluation. A report of your driver's performance will be generated after the completion of a flight, enabling you to evaluate its critical functionality and update scenarios. Upon a successful flight and approval from Microsoft, the driver will be distributed publicly through Windows Update.
-
-The following video provides an overview for the driver flighting program in more detail:
-
-<iframe width="960" height="540" src="https://www.youtube.com/embed/4AnguNhq8FE" title="Benefits of driver promotion" frameborder="0" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
 ## Signing up for driver flighting
 
