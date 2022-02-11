@@ -190,8 +190,6 @@
       href: test-signing-a-driver-file.md
     - name: "Verifying the Signature of a Test-Signed Driver File"
       href: verifying-the-signature-of-a-test-signed-driver-file.md
-    - name: "Creating a Catalog File for a Test-Signed Driver Package"
-      href: creating-a-catalog-file-for-a-test-signed-driver-package.md
     - name: "Test-Signing a Catalog File"
       href: test-signing-a-catalog-file.md
     - name: "Verifying the Signature of a Test-Signed Catalog File"

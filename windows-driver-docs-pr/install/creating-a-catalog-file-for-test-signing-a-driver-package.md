@@ -4,7 +4,7 @@ description: Creating a Catalog File for Test-Signing a Driver Package
 keywords:
 - test signing driver packages WDK , catalog files
 - catalog files WDK driver signing , creating
-ms.date: 04/20/2017
+ms.date: 02/11/2022
 ---
 
 # Creating a Catalog File for Test-Signing a Driver Package
@@ -14,19 +14,13 @@ The catalog (*.cat*) file contains the digital signature for all the files which
 
 There are two ways to create a [catalog file](catalog-files.md):
 
--   If the driver package is installed through an INF file, use the [**Inf2Cat**](../devtest/inf2cat.md) tool to create the catalog file. Inf2Cat automatically includes all the files in the driver package that are referenced within the package's INF file. For more information about how to use the Inf2Cat tool, see [Using Inf2Cat to Create a Catalog File](using-inf2cat-to-create-a-catalog-file.md).
+-   The [**Inf2Cat**](../devtest/inf2cat.md) tool can be used to create the catalog file. Inf2Cat automatically includes all the files in the driver package that are referenced within the package's INF file. For more information about how to use the Inf2Cat tool, see [Using Inf2Cat to Create a Catalog File](using-inf2cat-to-create-a-catalog-file.md).
 
--   If the driver package is not installed through an INF file, use the [MakeCat](/windows/win32/seccrypto/makecat) tool to create a catalog file by using a manually-created Catalog Definition File (*.cdf*).
+-   The [MakeCat](/windows/win32/seccrypto/makecat) tool can be used to create a catalog file by using a manually-created Catalog Definition File (*.cdf*). For more information about how to use the MakeCat tool, see [Using MakeCat to Create a Catalog File](using-makecat-to-create-a-catalog-file.md).
 
-    For example, if the driver package is installed through an application, you may want to create a catalog file to digitally-sign all kernel-mode binary components of the package, such as the driver and any supporting *.dll* files. For more information about how to use the MakeCat tool, see [Using MakeCat to Create a Catalog File](using-makecat-to-create-a-catalog-file.md).
+If the driver package contains a *boot-start driver*, you additionally have to embed a digital signature within the driver binary. For more information about this procedure, see [Test-Signing a Driver through an Embedded Signature](test-signing-a-driver-through-an-embedded-signature.md).
 
-A catalog file is not needed to install the following types of drivers:
+## See also
 
--   A *boot-start driver*.
-
--   A driver that is installed by using an application that does not use a [catalog file](catalog-files.md).
-
-For these types of drivers, you have to embed a digital signature within the driver. For more information about this procedure, see [Test-Signing a Driver through an Embedded Signature](test-signing-a-driver-through-an-embedded-signature.md).
-
-For more information about how to create catalog files, see [Creating a Catalog File for a Test-Signed Driver Package](creating-a-catalog-file-for-a-test-signed-driver-package.md).
-
+* [Creating a Catalog File for a PnP Driver Package](creating-a-catalog-file-for-a-pnp-driver-package.md)
+* [Creating a Catalog File for a Non-PnP Driver Package](creating-a-catalog-file-for-a-non-pnp-driver-package.md)

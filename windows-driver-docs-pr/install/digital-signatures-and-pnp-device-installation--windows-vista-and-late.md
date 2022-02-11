@@ -63,7 +63,7 @@ Windows Vista and later versions of Windows include the following features that 
     -   If the [AllSignersEqual group policy](./allsigningequal-group-policy.md) is disabled, the operating system ranks drivers that are signed with a Microsoft signature higher than drivers that are signed with a third-party signature. This ranking occurs even if a driver that is signed with a third-party signature is, in all other ways, a better match for a device.
     -   If the [AllSignersEqual group policy](./allsigningequal-group-policy.md) is enabled, the operating system ranks all digitally signed drivers equally.
 
-    **Note**  Starting with Windows 7, the [AllSignersEqual group policy](./allsigningequal-group-policy.md) is enabled by default. In Windows Vista and Windows Server 2008, the **AllSignersEqual** group policy is disabled by default. IT departments can override the default ranking behavior by enabling or disabling the **AllSignersEqual** group policy.
+    **Note** Starting with Windows 7, the [AllSignersEqual group policy](./allsigningequal-group-policy.md) is enabled by default. In Windows Vista and Windows Server 2008, the **AllSignersEqual** group policy is disabled by default. IT departments can override the default ranking behavior by enabling or disabling the **AllSignersEqual** group policy.
 
      
 
@@ -81,7 +81,7 @@ Before installing a driver, Windows analyzes the [driver package's](driver-packa
 
 -   **Unsigned.** These drivers are either unsigned or have an invalid signature. Valid signatures must be created by using a certificate that was issued by a trusted CA.
 
-Starting with Windows Vista, when the operating system installs a driver on a computer for the first time, it preinstalls, or stages, the driver in the [driver store](driver-store.md). To preinstall a driver, Windows copies the driver package to the driver store and saves a copy of the driver package's INF file in the system INF directory. Windows subsequently will silently install a driver for a matching device by using the copy of the driver package in the driver store. User interaction is not required when Windows installs a preinstalled driver for a device.
+Starting with Windows Vista, when the operating system installs a driver on a computer for the first time, it preinstalls, or stages, the driver in the [driver store](driver-store.md). Windows subsequently will silently install a driver for a matching device by using the copy of the driver package in the driver store. User interaction is not required when Windows installs a preinstalled driver for a device.
 
 Whether Windows will preinstall a [driver package](driver-packages.md) depends on the signature category, user credentials, and user interaction, as follows:
 
