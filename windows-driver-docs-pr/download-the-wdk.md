@@ -46,7 +46,7 @@ The following editions of Visual Studio 2019 support driver development for this
 * [Download Visual Studio Professional 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=16)
 * [Download Visual Studio Enterprise 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=16)
 
-When you install Visual Studio 2019, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included and is displayed in the right-hand **Summary** pane. If the default SDK is not the version of the SDK that is compatible with the Windows 11 WDK (22000.1), please use the SDK download link in step 2 below.
+When you install Visual Studio 2019, select the **Desktop development with C++** workload. The Windows 11 Software Development Kit (SDK) is automatically included and is displayed in the right-hand **Summary** pane. If the default SDK is not the version of the SDK that is compatible with the Windows 11 WDK (22000.1), please use the SDK download link in step 2 below.
 
 WDK has Spectre mitigation enabled by default but requires Spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for. Additionally, developing drivers for ARM/ARM64/ARM64EC require the build tools for these architectures to also be installed with Visual Studio. To locate these items, you will need to know the latest version of MSVC installed on your system.
 
