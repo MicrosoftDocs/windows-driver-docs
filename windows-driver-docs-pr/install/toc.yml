@@ -476,7 +476,7 @@
       href: installing-an-in-box-driver-or-a-preinstalled-driver.md
     - name: "Software-First Installation"
       href: software-first-installation.md
-    - name: "Checking for In-Progress Installations"
+    - name: "How a Device Installation Application checks for in-progress device installations"
       href: checking-for-in-progress-installations.md
     - name: "Determining Whether a Device Is Plugged In"
       href: determining-whether-a-device-is-plugged-in.md
