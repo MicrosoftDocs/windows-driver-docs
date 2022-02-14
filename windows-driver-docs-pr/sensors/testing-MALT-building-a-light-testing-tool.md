@@ -4,7 +4,7 @@ author: windows-driver-content
 description: This topic provides instructions on how to use the MALT (Microsoft Ambient Light Tool) as a light and color testing solution.
 ms.assetid: d045b771-b536-457c-897b-ecb6517bf0a8
 
-ms.date: 07/08/2021
+ms.date: 02/14/2022
 ---
 
 # Building a light and color testing tool (MALT)
@@ -46,7 +46,7 @@ The enclosure we used for laptops was 16"x16"x12", with a 10"x10" aperture at th
 An effective light enclosure will provide a sterile light environment where light cast on the device under test will be from the controlled light source and not environmental. The following are examples of light boxes.
 
 - [Custom 3D printed case](https://github.com/Microsoft/busiotools/tree/master/sensors/Tools/MALT/Schematics/enclosure)
-- [Storage tote](https://www.sterilite.com/SelectProduct.html?id=955&ProductCategory=182&section=1)
+- [Storage tote](https://www.sterilite.com/product-page.html?product=15253V06)
 - Cardboard box
 
 The enclosure needs to be large enough for the SUT and remove it from external light influence. The light fixture can be placed on top or mounted inside the enclosure.
