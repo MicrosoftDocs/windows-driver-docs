@@ -4,7 +4,7 @@ metadata:
   description: Firmware WEG - Frequently asked questions (FAQ)
   ms.date: 05/07/2018
   ms.localizationpriority: medium
-    
+  ms.topic: faq
 title: "Firmware WEG: Frequently asked questions (FAQ)"
 summary: |
   The following FAQ came about due to the number of machines still using Windows 7.
@@ -133,4 +133,3 @@ additionalContent: |
     [Windows 10 Specifications - Microsoft](https://www.microsoft.com/windows/windows-10-specifications)
           
     [Update to add support for TPM 2.0 in Windows 7 and Windows Server 2008 R2](https://support.microsoft.com/help/2920188/update-to-add-support-for-tpm-2-0-in-windows-7-and-windows-server-2008)
-
