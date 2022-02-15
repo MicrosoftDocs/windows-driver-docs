@@ -7,7 +7,7 @@ keywords:
 - WHEA WDK , disabling error sources
 - errors WDK WHEA , disabling error sources
 - hardware error sources WDK WHEA , disabling
-- disabling an error sourc
+- disabling an error source
 ms.date: 02/14/2022
 ---
 
