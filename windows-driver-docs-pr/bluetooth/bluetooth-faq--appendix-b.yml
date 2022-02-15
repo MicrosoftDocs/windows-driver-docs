@@ -4,7 +4,7 @@ metadata:
   description: This appendix includes an example of how to implement a vendor-provided INF file that references Bth.inf.
   ms.date: 04/20/2017
   ms.localizationpriority: medium
-    
+  ms.topic: faq
 title: 'Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista'
 summary: |
 

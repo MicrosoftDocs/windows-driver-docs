@@ -4,7 +4,7 @@ metadata:
   description: The following are common questions, scenarios, and issues that a driver developer may encounter when developing a bus driver to support Bluetooth functionality.
   ms.date: 04/20/2017
   ms.localizationpriority: medium
-    
+  ms.topic: faq
 title: Transport Bus Driver FAQ
 summary: The following are common questions, scenarios, and issues that a driver developer may encounter when developing a bus driver to support Bluetooth functionality.
 
