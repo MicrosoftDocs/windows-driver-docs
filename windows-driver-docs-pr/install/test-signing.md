@@ -358,32 +358,32 @@ Installing the driver package:
 Uninstalling the driver package:
 A driver package should not be removed from the system while a device is still using it.  If the device needs to be removed in order to remove the driver package, a device can be removed using the Devcon tool using the “remove” switch. “devcon.exe /?” shows all the switches for this tool. To get specific information on using a switch, “help” should be added as shown below for the “remove” switch.
 
-    ```cpp
-    devcon.exe help remove
-    ```
+```cpp
+devcon.exe help remove
+```
 
 After the device has been removed, to remove the driver, two commands are necessary. Use the first command with “dp_enum” switch to find the driver inf file name corresponding to the driver package installed in the computer.
 
-    ```cpp
-    devcon dp_enum
-    ```
+```cpp
+devcon dp_enum
+```
 
 This command will show the list of all oemNnn.inf files corresponding to a driver package, where Nnn is a decimal number with the Class information and the Provide information as shown below.
 
-    ```cpp
-    oem39.inf
-        Provider: Intel
-        Class: Network adapters
-    oem4.inf
-        Provider: Dell
-        Class: ControlVault Device
-    ```
+```cpp
+oem39.inf
+    Provider: Intel
+    Class: Network adapters
+oem4.inf
+    Provider: Dell
+    Class: ControlVault Device
+```
 
 To remove the corresponding driver package from the DriverStore, use the next command shown below for the Intel “Network Adapters” driver:
 
-    ```cpp
-    devcon.exe dp_delete oem39.inf
-    ```
+```cpp
+devcon.exe dp_delete oem39.inf
+```
 
 ### Verify that the Test-Signed Driver Is Operating Correctly
 
