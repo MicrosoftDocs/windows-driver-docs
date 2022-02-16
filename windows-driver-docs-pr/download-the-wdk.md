@@ -34,7 +34,7 @@ You can run the Windows 11 WDK on Windows 7 and later, and use it to develop dri
 ## Download and install the Windows 11 WDK
 
 > [!NOTE]
-> Visual Studio 2022 is not currently supported by the WDK. This page will be updated when that changes.
+> Visual Studio 2022 is not supported by the Windows 11 WDK. To use Visual Studio 2022 to develop and test drivers, download the preview version of the kit. For details, see [Installing preview versions of the Windows Driver Kit (WDK)](./installing-preview-versions-wdk.md).
 
 ### ![download icon.](images/download-install.png) Step 1: Install Visual Studio 2019
 
