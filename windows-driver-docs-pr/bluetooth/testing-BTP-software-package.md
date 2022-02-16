@@ -19,7 +19,7 @@ The Bluetooth Test Platform (BTP) software package contains tools for testing th
 
 | Version | Changes |
 | --- | --- |
-| 1.11.1 | - Added call tests. |
+| 1.11.1 | - Fixed crash when running standby HID power tests without an installed virtual power button.</br> - Added explicit firmware version checks for Bluefruit Feather.</br> - Several other fixes and improvements to test reliability. |
 | 1.10.1 | - Added power state HID tests.</br> - Several other fixes and improvements to test reliability. |
 | 1.9.0 | - Improved support for BTP devices using custom DLL plugins.</br> - Fixed an issue affecting the audio mute/unmute tests in certain Windows builds.</br> - Several other fixes and improvements to test reliability. |
 | 1.8.0 | - Added Wi-Fi with Bluetooth audio and HID co-existence tests.</br>- Added mute and unmute audio tests.</br>- Added option to record audio played during tests to a local file.</br>- Fixed issue that could cause the Bluefruit Feather to incorrectly report its Bluetooth address.</br>- Fixed issue with running current audio tests on older Windows builds.</br>- Several other fixes and improvements to test reliability. |
