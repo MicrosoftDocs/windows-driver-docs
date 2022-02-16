@@ -1,6 +1,6 @@
 ---
 title: DevCon Resources
-description: Lists the resources allocated to the specified devices. Resources are assignable and addressable bus paths, such as DMA channels, I/O ports, IRQ, and memory addresses. Valid on local and remote computers.
+description: Lists the resources allocated to the specified devices. Resources are assignable and addressable bus paths, such as DMA channels, I/O ports, IRQ, and memory addresses. 
 keywords:
 - DevCon Resources Driver Development Tools
 topic_type:
@@ -9,23 +9,18 @@ api_name:
 - DevCon Resources
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 02/11/2022
 ---
 
 # DevCon Resources
 
-Lists the resources allocated to the specified devices. Resources are assignable and addressable bus paths, such as DMA channels, I/O ports, IRQ, and memory addresses. Valid on local and remote computers.
+Lists the resources allocated to the specified devices. Resources are assignable and addressable bus paths, such as DMA channels, I/O ports, IRQ, and memory addresses. 
 
 ```
-    devcon [/m:\\computer] resources {* | ID [ID ...] | =class [ID [ID...]]}
+    devcon resources {* | ID [ID ...] | =class [ID [ID...]]}
 ```
 
 ## <span id="ddk_devcon_resources_tools"></span><span id="DDK_DEVCON_RESOURCES_TOOLS"></span>Parameters
-
-<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>
-Runs the command on the specified remote computer. The backslashes are required.
-
-**Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and later versions of Windows, the Group Policy disables remote access to the service by default.
 
 <span id="______________"></span> **\***
 Represents all devices on the computer.
@@ -70,13 +65,12 @@ You can also specify hardware IDs, compatible IDs, device instance IDs, or ID pa
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-The **/m** parameter must precede the operation name (**resources**). Otherwise, DevCon ignores the **/m** parameter and displays the resources allocated to devices on the local computer without returning a syntax error.
 
 ### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
 devcon resources *
-devcon /m:\\server01 resources =media
+devcon resources =media
 devcon resources acpi* *port*
 devcon resources =class port* (by class and hardware ID)
 devcon resources =class @port*(by class and device instance ID)
@@ -86,4 +80,4 @@ devcon resources =class @port*(by class and device instance ID)
 
 [Example 12: List resources of a class of devices](devcon-examples.md#ddk_example_12_list_resources_of_a_class_of_devices_tools)
 
-[Example 13: List resources of device on a remote computer by ID](devcon-examples.md#ddk_example_13_list_resources_of_device_on_a_remote_computer_by_id_too)
+[Example 13: List resources of device by ID](devcon-examples.md#ddk_example_13_list_resources_of_device_on_a_remote_computer_by_id_too)

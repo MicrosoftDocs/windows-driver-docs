@@ -31,15 +31,6 @@ A DevCon Dp\_enum command lists the OEM\*.inf files in the %windir%/Inf on the l
 devcon dp_enum
 ```
 
-### <span id="examples"></span><span id="EXAMPLES"></span>Examples
-
-[Example 45: Add and Remove Driver Packages](example-45--add-and-remove-driver-packages.md)
-
-
-
-
-
-
 
 
 

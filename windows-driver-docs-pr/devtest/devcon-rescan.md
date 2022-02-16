@@ -1,6 +1,6 @@
 ---
 title: DevCon Rescan
-description: Uses Windows Plug and Play features to update the device list for the computer. Valid on local and remote computers.
+description: Uses Windows Plug and Play features to update the device list for the computer. 
 keywords:
 - DevCon Rescan Driver Development Tools
 topic_type:
@@ -9,34 +9,24 @@ api_name:
 - DevCon Rescan
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 02/11/2022
 ---
 
 # DevCon Rescan
 
 
-Uses Windows Plug and Play features to update the device list for the computer. Valid on local and remote computers.
+Uses Windows Plug and Play features to update the device list for the computer. 
 
 ```
-    devcon [/m:\\computer] [/r] rescan 
+    devcon [/r] rescan 
 ```
 
 ## <span id="ddk_devcon_rescan_tools"></span><span id="DDK_DEVCON_RESCAN_TOOLS"></span>Parameters
-
-
-<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>   
-Runs the command on the specified remote computer. The backslashes are required.
-
-**Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access is unavailable.
-
-
 
 <span id="________r______"></span><span id="________R______"></span> **/r**   
 Conditional reboot. Reboots the system after completing an operation only if a reboot is required to make a change effective.
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
-
-The **/m** parameter must precede the operation name (**rescan**). Otherwise, DevCon ignores the **/m** parameter and scans the local computer without returning a syntax error.
 
 Rescanning can cause the Plug and Play manager to detect new devices and to install device drivers without warning.
 
@@ -46,7 +36,6 @@ Rescanning can detect some non-Plug and Play devices, particularly those that ca
 
 ```
 devcon rescan
-devcon /m:\\Server01 rescan
 ```
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example

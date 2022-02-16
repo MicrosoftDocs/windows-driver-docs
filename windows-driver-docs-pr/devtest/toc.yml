@@ -41,11 +41,24 @@
       href: configure-the-machine-for-testing.md
     - name: "Run the Tests"
       href: run-the-tests.md
+  - name: "PnPUtil"
+# Auto-expanded node
+    items: 
+    - name: "PnPUtil"
+      href: pnputil.md
+    - name: "PnPUtil Command Syntax"
+      href: pnputil-command-syntax.md
+    - name: "PnPUtil Examples"
+      href: pnputil-examples.md
+    - name: "PnPUtil Return Values"
+      href: pnputil-return-values.md
   - name: "Windows Device Console (Devcon.exe)"
 # Auto-expanded node
     items: 
     - name: "Windows Device Console (Devcon.exe)"
       href: devcon.md
+    - name: "Device Console (DevCon.exe) Examples"
+      href: devcon-examples.md
     - name: "Device Console (DevCon.exe) Commands"
 # Auto-expanded node
       items: 
@@ -99,24 +112,6 @@
         href: devcon-dp-enum.md
       - name: "DevCon Dp_delete"
         href: devcon-dp-delete.md
-    - name: "Device Console (DevCon.exe) Examples"
-# Auto-expanded node
-      items: 
-      - name: "Device Console (DevCon.exe) Examples"
-        href: devcon-examples.md
-      - name: "Example 45: Add and Remove Driver Packages"
-        href: example-45--add-and-remove-driver-packages.md
-  - name: "PnPUtil"
-# Auto-expanded node
-    items: 
-    - name: "PnPUtil"
-      href: pnputil.md
-    - name: "PnPUtil Command Syntax"
-      href: pnputil-command-syntax.md
-    - name: "PnPUtil Examples"
-      href: pnputil-examples.md
-    - name: "PnPUtil Return Values"
-      href: pnputil-return-values.md
   - name: "Additional Test Tools"
 # Auto-expanded node
     items: 

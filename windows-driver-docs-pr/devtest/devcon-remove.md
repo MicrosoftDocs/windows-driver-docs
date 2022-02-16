@@ -9,7 +9,7 @@ api_name:
 - DevCon Remove
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 02/11/2022
 ---
 
 # DevCon Remove

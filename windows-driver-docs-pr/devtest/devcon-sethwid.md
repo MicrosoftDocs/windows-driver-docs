@@ -1,6 +1,6 @@
 ---
 title: DevCon SetHwID
-description: Adds, deletes, and changes the order of hardware IDs of root-enumerated devices on a local or remote computer.
+description: Adds, deletes, and changes the order of hardware IDs of root-enumerated devices on a local computer.
 keywords:
 - DevCon SetHwID Driver Development Tools
 topic_type:
@@ -9,7 +9,7 @@ api_name:
 - DevCon SetHwID
 api_type:
 - NA
-ms.date: 01/26/2022
+ms.date: 02/11/2022
 ---
 
 # DevCon SetHwID
@@ -17,16 +17,10 @@ ms.date: 01/26/2022
 Adds, deletes, and changes the order of hardware IDs of root-enumerated devices.
 
 ```
-    devcon [/m:\\computer] sethwid {* | ID [ID ...] | =class [ID [ID ...]]} := [ = | + | - | ! ]HardwareIDs ...
+    devcon sethwid {* | ID [ID ...] | =class [ID [ID ...]]} := [ = | + | - | ! ]HardwareIDs ...
 ```
 
 ## <span id="ddk_devcon_sethwid_tools"></span><span id="DDK_DEVCON_SETHWID_TOOLS"></span>Parameters
-
-<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>
-Runs the command on the specified remote computer. The backslashes are required.
-
->[!NOTE]
-> The ability to run DevCon commands on a remote computer, is not available on versions of Windows after Windows 7.
 
 <span id="______________"></span>  `*` 
 The asterisk represents all devices on the computer.  
@@ -110,9 +104,9 @@ devcon sethwid @ROOT\LEGACY_BEEP\0000 := !beep legacy
 
 [Example 40: Assign a hardware ID to a legacy device](devcon-examples.md#ddk_example_40_assign_a_hardware_id_to_a_legacy_device_tools)
 
-[Example 41: Add a hardware ID to all legacy devices on a remote computer](devcon-examples.md#ddk_example_41_add_a_hardware_id_to_all_legacy_devices_on_a_remote_com)
+[Example 41: Add a hardware ID to all legacy devices](devcon-examples.md#ddk_example_41_add_a_hardware_id_to_all_legacy_devices_on_a_remote_com)
 
-[Example 42: Delete a hardware ID from all legacy devices on a remote computer](devcon-examples.md#ddk_example_42_delete_a_hardware_id_from_all_legacy_devices_on_a_remot)
+[Example 42: Delete a hardware ID from all legacy devices](devcon-examples.md#ddk_example_42_delete_a_hardware_id_from_all_legacy_devices_on_a_remot)
 
 [Example 43: Add, delete, and replace hardware IDs](devcon-examples.md#ddk_example_43_add_delete_and_replace_hardwareids_tools)
 

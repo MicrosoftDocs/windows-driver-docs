@@ -38,17 +38,8 @@ This command calls the **SetupCopyOEMInf** function with no *CopyStyle* flags. *
 ### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
-devcon dp_add C:\WinDDK\5322\src\general\toaste
-r\inf\i386\toaster.inf
+devcon dp_add C:\WinDDK\5322\src\general\toaster\inf\i386\toaster.inf
 ```
-
-### <span id="examples"></span><span id="EXAMPLES"></span>Examples
-
-[Example 45: Add and Remove Driver Packages](example-45--add-and-remove-driver-packages.md)
-
-
-
-
 
 
 

@@ -15,13 +15,13 @@ keywords:
 - restarting devices
 - device management WDK DevCon
 - listing device information WDK
-ms.date: 04/20/2017
+ms.date: 02/11/2022
 ---
 
 # Windows Device Console (Devcon.exe)
 
-> [!NOTE]
-> Please use the [PnPUtil](pnputil.md) tool instead of DevCon.
+> [!IMPORTANT]
+> PnPUtil ships with every release of Windows and makes use of the most reliable and secure APIs available and it’s use is recommended. For more information on using the PnPutil, instead of devcon, see [PnPUtil](pnputil.md) .
 
 DevCon (Devcon.exe), the Device Console, is a command-line tool that displays detailed information about devices on computers running Windows. You can use DevCon to enable, disable, install, configure, and remove devices.
 
@@ -49,15 +49,12 @@ DevCon (Devcon.exe) is included when you install the WDK, Visual Studio, and the
 
 Windows driver developers and testers can use DevCon to verify that a driver is installed and configured correctly, including the proper INF files, driver stack, driver files, and driver package. You can also use the DevCon commands (enable, disable, install, start, stop, and continue) in scripts to test the driver.
 
-DevCon is a command-line tool that performs device management functions on local computers and remote computers.
-
-> [!NOTE]
-> To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run Windows 8 and later operating systems, the remote access is unavailable.
+DevCon is a command-line tool that performs device management functions on local computers.
  
 
 Devcon features include:
 
--   **Display driver and device info** DevCon can display the following properties of drivers and devices on local computers, and remote computers (running Windows XP and earlier):
+-   **Display driver and device info** DevCon can display the following properties of drivers and devices on local computers:
     -   Hardware IDs, compatible IDs, and device instance IDs. These identifiers are described in detail in [Device Identification Strings](../install/device-identification-strings.md).
     -   [Device setup classes](../install/overview-of-device-setup-classes.md)
     -   The devices in a device setup class
@@ -67,7 +64,7 @@ Devcon features include:
     -   Device status
     -   Expected driver stack
     -   Third-party driver packages in the driver store
--   **Search for devices** DevCon can search for devices on a local or remote computer by hardware ID, device instance ID, or device setup class.
+-   **Search for devices** DevCon can search for devices on a local computer by hardware ID, device instance ID, or device setup class.
 
 -   **Change device settings** DevCon can change the status or configuration of Plug and Play (PnP) devices on the local computer in the following ways:
     -   Enable a device

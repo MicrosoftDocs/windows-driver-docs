@@ -9,17 +9,20 @@ api_name:
 - DevCon Install
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 02/11/2022
 ---
 
 # DevCon Install
-
 
 Creates a new, root-enumerated devnode for a non-Plug and Play device and installs its supporting software. Valid only on the local computer.
 
 ```
     devcon [/r] install INFfile HardwareID 
 ```
+
+
+> [!IMPORTANT]
+> PnPUtil ships with every release of Windows and makes use of the most reliable and secure APIs available and it’s use is recommended. For more information on using the PnPutil, instead of devcon, see [PnPUtil](pnputil.md).
 
 ## <span id="ddk_devcon_install_tools"></span><span id="DDK_DEVCON_INSTALL_TOOLS"></span>Parameters
 
