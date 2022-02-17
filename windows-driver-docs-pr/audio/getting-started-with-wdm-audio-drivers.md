@@ -7,11 +7,10 @@ keywords:
 - WDM audio drivers WDK , about WDM audio drivers
 - vendor-supplied drivers WDK audio
 - custom audio drivers WDK
-ms.date: 04/20/2017
+ms.date: 02/17/2022
 ---
 
 # WDM Audio Drivers Overview
-
 
 [Windows Driver Model](../kernel/writing-wdm-drivers.md) (WDM) audio drivers make use of the [kernel streaming](../stream/kernel-streaming.md) (KS) components, which operate in kernel mode and are part of the operating system.
 
@@ -29,6 +28,8 @@ In making all of the previously mentioned decisions, the hardware vendor must we
 
 This section includes the following topics:
 
+[Universal Windows Drivers for Audio](audio-universal-drivers.md)
+
 [Universal Audio Architecture](universal-audio-architecture.md)
 
 [Audio Signal Processing Modes](audio-signal-processing-modes.md)
@@ -38,4 +39,3 @@ This section includes the following topics:
 [Specifying the Topology](specifying-the-topology.md)
 
 [Specifying Pin Data Ranges](specifying-pin-data-ranges.md)
-
