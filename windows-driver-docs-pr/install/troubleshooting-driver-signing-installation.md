@@ -38,7 +38,7 @@ Several common ways to troubleshoot problems with loading signed or test signed 
 
 As explained before, any driver installation information will be logged (appended) to the setupapi.dev.log file in the %windir%\\inf directory. When testing your driver package install, if the file is renamed before a driver is installed, a new log file will be generated. A new log file will be easier to search for important logs from a new driver install. However, the log file should not be renamed as part of a production scenario. The log file can be opened in any text editing software.
 
-The first left most column may have a single exclamation mark “!” or multiple exclamation marks “!!!”. The single exclamation mark is a warning message, but the triple exclamation mark indicates a failure.
+The left most column may have a single exclamation mark “!” or multiple exclamation marks “!!!”. The single exclamation mark is a warning message, but the triple exclamation mark indicates a failure.
 
 You will see the following single exclamation mark when you install a driver package release signed with a CA vendor provided SPC certificate. These are warnings that the cat file has not been verified yet.
 

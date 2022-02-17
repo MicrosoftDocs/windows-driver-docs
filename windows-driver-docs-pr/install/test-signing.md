@@ -1,7 +1,7 @@
 ---
 title: Test Signing
 description: Windows 64-bit editions require all software running in kernel mode, including drivers, to be digitally signed in order to be loaded.
-ms.date: 02/14/2022
+ms.date: 02/16/2022
 ---
 
 # Test Signing
@@ -63,7 +63,7 @@ The following procedure describes the steps to test sign a driver package:
 
 Any of the five shortcuts for command prompt will have, makecert.exe, inf2cat.exe, signtool.exe, certmgr.exe, etc., commands.
 
-You may choose the most general, “Developer Command Prompt for VS2013”. The shortcuts can be pinned down to the Task Bar for easy access.
+You may choose the most general, "Developer Command Prompt for VS2013". The shortcuts can be pinned down to the Task Bar for easy access.
 
 >[!NOTE]
 >Please note that with Visual Studio, instead of the command tool approach of driver signing, you can also use the Visual Studio 2013 development environment (also known as the IDE) to sign a driver package. Please refer to [Appendix 2: Signing Drivers with Visual Studio](appendix-2--signing-drivers-with-visual-studio.md) for more information.
@@ -227,11 +227,11 @@ tstamd64.cat specifies the name of the catalog file, which will be digitally-sig
 
     Within the WDK 7.1 installation directory, the toaster sample is located in the src\\general\\toaster\\toastpkg\\toastcd\\ directory. The Windows 8 or 8.1 WDK samples are to be downloaded from the Microsoft download site. The samples do not come with the Windows 8 or 8.1 Windows Driver Kit.
 
-    The catalog file when opened by double clicking the file in Windows Explorer, you will see the following screen shot. Note that “View Signature” is now highlighted.
+    The catalog file when opened by double clicking the file in Windows Explorer, you will see the following screen shot. Note that "View Signature" is now highlighted.
 
     ![screen shot showing general information of the security catalog file.](images/tutorialsecuritycatalogfilegeneraltab.png)
 
-    If you select “View Signature”, you will see the screen shot below providing the next viewing option from “View Certificate”, which then will give the option of “Install Certificate” from the dialog itself. Below, we are providing the preferred command line option of installing the certificate using the certmgr.exe tool.
+    If you select "View Signature", you will see the screen shot below providing the next viewing option from "View Certificate", which then will give the option of "Install Certificate" from the dialog itself. Below, we are providing the preferred command line option of installing the certificate using the certmgr.exe tool.
 
     ![screen shot showing general information about the digital signature's details.](images/tutorialdriversignaturedetails.png)
 
@@ -281,7 +281,7 @@ The following procedure describes the steps to use on either machine to test the
 
     CertificateStore
 
-    Specifies the certificate store, trustedpublisher, similarly for “localMachine root".
+    Specifies the certificate store, trustedpublisher, similarly for "localMachine root".
 
     Reboot the computer. You can now run Certmgr.msc and verify that the ContosoTest.cer is visible in the above two locations. If it is not visible, then another way to install the certificate is to open the certificate and install it on the above two nodes and verify again.
 
@@ -326,20 +326,20 @@ After the system has rebooted in Step 2, the test-signed driver package can be i
 1. By using the OS provided [Pnputil (pnputil.exe)](../devtest/pnputil.md) tool.
 2. By using the Devcon (devcon.exe) tool, which is a WDK command line tool for installing drivers, but not redistributable. The sample code of Devcon tool is provided in the WDK. To redistribute, you can implement your own Devcon tool from the sample code and can redistribute your version of the tool.
 
-### To install and uninstall the driver package by using PnpUtil
+### To install and uninstall the driver package using PnpUtil
 
 Installing the driver package:
 1. Open an elevated command window and set the default directory to c:\\toaster.
 2. Run one of the following commands:
-    * To just stage the driver package: <em>pnputil /add-driver toaster.inf</em>
-    * To stage the driver and install it on existing devices: <em>pnputil /add-driver toaster.inf /install </em>
+    * To just stage the driver package: `pnputil /add-driver toaster.inf`
+    * To stage the driver and install it on existing devices: `pnputil /add-driver toaster.inf /install`
 
 Uninstalling the driver package:
 1. Open an elevated command window.
-2. Identify the name of the OEM INF that corresponds to the driver package that you want to remove from the list returned by <em>pnputil /enum-drivers</em>
-3. Run: <em>pnputil /delete-driver \<OEM INF name> /uninstall</em>
+2. Identify the name of the OEM INF that corresponds to the driver package that you want to remove from the list returned by `pnputil /enum-drivers`
+3. Run: `pnputil /delete-driver \<OEM INF name> /uninstall`
 
-### To install and uninstall the driver package by using DevCon
+### To install and uninstall the driver package using DevCon
 
 Installing the driver package:
 1. Open an elevated command window and set the default directory to c:\\toaster.
@@ -352,17 +352,17 @@ Installing the driver package:
     It is advisable to use quotes around &lt;hwid&gt;. For the toaster sample, it will be:
 
     ```cpp
-    devcon.exe update c:\toaster\toaster.inf “{b85b7c50-6a01-11d2-b841-00c04fad5171}\MsToaster”
+    devcon.exe update c:\toaster\toaster.inf "{b85b7c50-6a01-11d2-b841-00c04fad5171}\MsToaster"
     ```
 
 Uninstalling the driver package:
-A driver package should not be removed from the system while a device is still using it.  If the device needs to be removed in order to remove the driver package, a device can be removed using the Devcon tool using the “remove” switch. “devcon.exe /?” shows all the switches for this tool. To get specific information on using a switch, “help” should be added as shown below for the “remove” switch.
+A driver package should not be removed from the system while a device is still using it.  If the device needs to be removed in order to remove the driver package, a device can be removed using the Devcon tool using the "remove" switch. `devcon.exe /?` shows all the switches for this tool. To get specific information on using a switch, "help" should be added as shown below for the "remove" switch.
 
 ```cpp
 devcon.exe help remove
 ```
 
-After the device has been removed, to remove the driver, two commands are necessary. Use the first command with “dp_enum” switch to find the driver inf file name corresponding to the driver package installed in the computer.
+After the device has been removed, to remove the driver, two commands are necessary. Use the first command with "dp_enum" switch to find the driver inf file name corresponding to the driver package installed in the computer.
 
 ```cpp
 devcon dp_enum
@@ -379,7 +379,7 @@ oem4.inf
     Class: ControlVault Device
 ```
 
-To remove the corresponding driver package from the DriverStore, use the next command shown below for the Intel “Network Adapters” driver:
+To remove the corresponding driver package from the DriverStore, use the next command shown below for the Intel "Network Adapters" driver:
 
 ```cpp
 devcon.exe dp_delete oem39.inf

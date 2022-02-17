@@ -1,14 +1,14 @@
 ---
 title: Test-Signing a Driver through an Embedded Signature
 description: Test-Signing a Driver through an Embedded Signature
-ms.date: 04/20/2017
+ms.date: 02/16/2022
 ---
 
 # Test-Signing a Driver through an Embedded Signature
 
 A signed [catalog file](catalog-files.md) is all that you must have to correctly install and load most [driver packages](driver-packages.md). However, embedded-signing might also be an option. Embedded-signing refers to adding a digital signature to the driver's binary image file itself, instead of saving the digital signature in a catalog file. As a result, the driver's binary image is modified when the driver is embedded-signed.
 
-Embedded-signing of kernel-mode binaries are required whenever the driver is a boot-start driver. In 64-bit versions of Windows Vista and later versions of Windows, the kernel-mode code signing requirements state that a *boot-start driver* must have an embedded signature.
+Embedded-signing of kernel-mode binaries is required whenever the driver is a boot-start driver. In 64-bit versions of Windows Vista and later versions of Windows, the kernel-mode code signing requirements state that a *boot-start driver* must have an embedded signature.
 
 As with [catalog files](catalog-files.md), [**SignTool**](../devtest/signtool.md) is used to embed a digital signature within kernel-mode binary files by using a test certificate. The following command line shows how to run SignTool to do the following:
 

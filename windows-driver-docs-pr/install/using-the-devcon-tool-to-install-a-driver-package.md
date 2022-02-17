@@ -21,7 +21,7 @@ To install the driver package through DevCon, do the following:
     This command-line specifies the location of the driver package's INF file (*c:\\toaster\\toastpkg.inf*) and the toaster device's hardware identifier (ID), which is specified within the INF file.
 
 > [!NOTE]
-> Devcon's "install" command will create a root enumerated device with the hardware ID that you specify before attempting to install the driver package. If the system already has hardware that the driver package is intended to install on, use "devcon update" instead.
+> Devcon's "install" command creates a root enumerated device with the hardware ID that you specify before attempting to install the driver package. If the system already has hardware that the driver package is intended to install on, use "devcon update" instead.
  
 
  

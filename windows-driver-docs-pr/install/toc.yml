@@ -246,7 +246,7 @@
       href: signing-a-catalog-file-with-a-commercial-release-certificate.md
     - name: "Verifying the Signature of a Catalog File Signed by a Commercial Release Certificate"
       href: verifying-the-signature-of-a-catalog-file-signed-by-a-commercial-relea.md
-    - name: "Creating a Catalog File for a Non-PnP Driver Package"
+    - name: "Creating a Catalog File for a Non-PnP Driver"
       href: creating-a-catalog-file-for-a-non-pnp-driver-package.md
     - name: "Installing a Release-Signed Catalog File for a Non-PnP Driver"
       href: installing-a-release-signed-catalog-file-for-a-non-pnp-driver.md
