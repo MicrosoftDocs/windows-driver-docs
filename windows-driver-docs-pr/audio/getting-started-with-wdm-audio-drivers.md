@@ -28,14 +28,18 @@ In making all of the previously mentioned decisions, the hardware vendor must we
 
 This section includes the following topics:
 
-[Universal Windows Drivers for Audio](audio-universal-drivers.md)
+- [Universal Windows Drivers for Audio](audio-universal-drivers.md)
 
-[Universal Audio Architecture](universal-audio-architecture.md)
+- [Universal Audio Architecture](universal-audio-architecture.md)
 
-[Audio Signal Processing Modes](audio-signal-processing-modes.md)
+- [Roadmap for Developing WDM Audio Drivers](roadmap-for-developing-wdm-audio-drivers.md)
 
-[Custom Audio Drivers](custom-audio-drivers.md)
+- [Custom Audio Driver Type Decision Tree](custom-audio-driver-type-decision-tree.md)
 
-[Specifying the Topology](specifying-the-topology.md)
+- [Audio Signal Processing Modes](audio-signal-processing-modes.md)
 
-[Specifying Pin Data Ranges](specifying-pin-data-ranges.md)
+- [Custom Audio Drivers](custom-audio-drivers.md)
+
+- [Specifying the Topology](specifying-the-topology.md)
+
+- [Specifying Pin Data Ranges](specifying-pin-data-ranges.md)
