@@ -1,10 +1,10 @@
 ---
-title: Bluetooth Version and Profile Support in Previous Windows Versions
-description: Bluetooth Version and Profile Support in Previous Windows Versions
-ms.date: 09/14/2021
+title: Bluetooth version and profile support in previous Windows versions
+description: Bluetooth version and profile support in previous Windows versions
+ms.date: 02/16/2022
 ---
 
-# Bluetooth Version and Profile Support in Previous Windows Versions
+# Bluetooth version and profile support in previous Windows versions
 
 > [!NOTE]
 > Looking for drivers for your Bluetooth audio device? See [Fix connections to Bluetooth audio devices and wireless displays](https://go.microsoft.com/fwlink/p/?LinkID=623629).
@@ -16,22 +16,24 @@ ms.date: 09/14/2021
 
 The following previous versions of Windows include in-box support for Bluetooth wireless technology:
 
-* All SKUs of Windows 8.1
-* All SKUs of Windows 8
-* All SKUs of Windows 7
-* All SKUs of Windows Vista
-* All SKUs of Windows XP with Service Pack 2 (SP2) and later
+- All SKUs of Windows 10
+- All SKUs of Windows 8.1
+- All SKUs of Windows 8
+- All SKUs of Windows 7
+- All SKUs of Windows Vista
+- All SKUs of Windows XP with Service Pack 2 (SP2) and later
 
 > [!NOTE]
 > The Windows XP with Service Pack 1 (SP1) release supported Bluetooth wireless technology, but did so with a driver that was available only to PC system partners. Windows XP with Service Pack 2 (SP2) integrated Bluetooth wireless technology support into a regular service pack release and was available to all customers.
 
 The following previous versions of Windows **do not** have in-box support for Bluetooth wireless technology:
 
-* All SKUs of Windows Server 2012
-* All SKUs of Windows Server 2008 R2
-* All SKUs of Windows Server 2008
-* All SKUs of Windows Server 2003
-* All SKUs of Windows 2000
+- All SKUs of Windows Server 2016
+- All SKUs of Windows Server 2012
+- All SKUs of Windows Server 2008 R2
+- All SKUs of Windows Server 2008
+- All SKUs of Windows Server 2003
+- All SKUs of Windows 2000
 
 Although these versions of Windows do not have in-box Bluetooth wireless technology support, third-party Bluetooth drivers might be available from independent hardware vendors (IHVs).
 
@@ -43,46 +45,51 @@ Windows 8 is Bluetooth Smart Ready, it supports Bluetooth version 4.0, and is a
 
 Windows support for different versions of the Bluetooth specification depends on the Windows version, as shown in the following table:
 
-| Windows version                         | Version 1.1 | Version 2.0 | Version 2.0 with EDR | Version 2.1 | Version 2.1 with EDR | Version 4.0 | Version 4.1 |
-|-----------------------------------------|-------------|-------------|----------------------|-------------|----------------------|-------------|-------------|
-| Windows 8.1                             | X           | X           | X                    | X           | X                    | X           |             |
-| Windows 8                               | X           | X           | X                    | X           | X                    | X           |             |
-| Windows 7                               | X           | X           | X                    | X           | X                    |             |             |
-| Windows Vista with Service Pack 2 (SP2) | X           | X           | X                    | X           | X                    |             |             |
-| Windows Vista with Service Pack 1 (SP1) | X           | X           | X                    | *           |                      |             |             |
-| Windows Vista                           | X           | X           | X                    |             |                      |             |             |
-| Windows XP                              | X           | X           | X                    |             |                      |             |             |
+| Windows version                         | V 1.1 | V 2.0 | V 2.0 with EDR | V 2.1 | V 2.1 with EDR | V 4.0 | V 4.1 | V 5.0 |
+|-----------------------------------------|-------|-------|----------------|-------|----------------|-------|-------|-------|
+| Windows 10                              | X     | X     | X              | X     | X              | X     | X     | X     |
+| Windows 8.1                             | X     | X     | X              | X     | X              | X     |       |       |
+| Windows 8                               | X     | X     | X              | X     | X              | X     |       |       |
+| Windows 7                               | X     | X     | X              | X     | X              |       |       |       |
+| Windows Vista with Service Pack 2 (SP2) | X     | X     | X              | X     | X              |       |       |       |
+| Windows Vista with Service Pack 1 (SP1) | X     | X     | X              | *     |                |       |       |       |
+| Windows Vista                           | X     | X     | X              |       |                |       |       |       |
+| Windows XP                              | X     | X     | X              |       |                |       |       |       |
 
 \* EDR support starting in Windows Vista and later is enhanced relative to the Bluetooth stack for Windows XP.
 
 \*\* Windows Vista with SP1 supports Bluetooth version 2.1 if it includes a package that was made available only to system partners. Windows Vista with SP2 integrated the Bluetooth version 2.1 support into the service pack release so that it is available to all customers.
 
+## What's new in Windows 10?
+
+To learn more about the new features and hardware developer recommendations for the different versions of Windows 10, see [Bluetooth](/windows-hardware/design/component-guidelines/bluetooth) in the [Hardware component guidelines](/windows-hardware/design/component-guidelines/components) section.
+
 ## What's new in Windows 8.1?
 
 Windows 8.1 includes the following enhancements to the Bluetooth stack and related software:
 
-* Inbox radio management control for Bluetooth version 4.0 radios.
-* Windows Runtime API support for [**RFCOMM**](/uwp/api/Windows.Devices.Bluetooth.Rfcomm) and [**GATT**](/uwp/api/Windows.Devices.Bluetooth.GenericAttributeProfile) protocol access.
+- Inbox radio management control for Bluetooth version 4.0 radios.
+- Windows Runtime API support for [**RFCOMM**](/uwp/api/Windows.Devices.Bluetooth.Rfcomm) and [**GATT**](/uwp/api/Windows.Devices.Bluetooth.GenericAttributeProfile) protocol access.
 
 ## What's new in Windows 8?
 
 Windows 8 includes the following enhancements to the Bluetooth stack and related software:
 
-* Support for Bluetooth version 4.0:
-  * Bluetooth Low Energy support allows Windows to connect with Bluetooth Smart peripherals.
-  * eL2CAP enables enhanced re-transmission and flow control for profiles that require this functionality.
-* An extensible transport model allowing support for Bluetooth radios on non-USB buses
-* Support for the HFP, A2DP, and AVRCP Profiles
+- Support for Bluetooth version 4.0:
+  - Bluetooth Low Energy support allows Windows to connect with Bluetooth Smart peripherals.
+  - eL2CAP enables enhanced re-transmission and flow control for profiles that require this functionality.
+- An extensible transport model allowing support for Bluetooth radios on non-USB buses
+- Support for the HFP, A2DP, and AVRCP Profiles
 
 ## What is new in Windows 7?
 
 Windows 7 includes the following enhancements to the Bluetooth stack and related software:
 
-* Support for Bluetooth version 2.1:
-  * Secure Simple Pairing allows Windows to determine the best pairing method to use between devices, rather than requiring users to make that determination.
-  * Extended Inquiry Response enables sharing a device's friendly name much earlier in the pairing process.
-* An improved user experience that enhances management of Bluetooth devices
-* Improved installation of USB Bluetooth radios
+- Support for Bluetooth version 2.1:
+  - Secure Simple Pairing allows Windows to determine the best pairing method to use between devices, rather than requiring users to make that determination.
+  - Extended Inquiry Response enables sharing a device's friendly name much earlier in the pairing process.
+- An improved user experience that enhances management of Bluetooth devices
+- Improved installation of USB Bluetooth radios
 
 Any USB device with a USB\\Class\_E0&SubClass\_01&Prot\_01 hardware ID will install as a *Generic Bluetooth Adapter*.
 
@@ -90,11 +97,11 @@ Any USB device with a USB\\Class\_E0&SubClass\_01&Prot\_01 hardware ID will inst
 
 Windows Vista includes the following enhancements to the Bluetooth stack and related software:
 
-* Improved enhanced data rate (EDR) performance
-* Adaptive frequency hopping (AFH). This feature improves the coexistence of Bluetooth radios and 802.11 (Wi-Fi) network adapters, both of which operate in the 2.4-GHz frequency range
-* Synchronous connection-oriented (SCO) link support. This support is necessary for the headset and hands-free profiles
-* Kernel-mode device driver interface (DDI) support for Logical Link Control and Adaptation Protocol (L2CAP), Service Discovery Protocol (SDP), and SCO.
-* New Bluetooth hardware IDs, which are listed in the following table:
+- Improved enhanced data rate (EDR) performance
+- Adaptive frequency hopping (AFH). This feature improves the coexistence of Bluetooth radios and 802.11 (Wi-Fi) network adapters, both of which operate in the 2.4-GHz frequency range
+- Synchronous connection-oriented (SCO) link support. This support is necessary for the headset and hands-free profiles
+- Kernel-mode device driver interface (DDI) support for Logical Link Control and Adaptation Protocol (L2CAP), Service Discovery Protocol (SDP), and SCO.
+- New Bluetooth hardware IDs, which are listed in the following table:
 
 | Vendor identifier (VID) | Product identifier | Description                                       |
 |-------------------------|--------------------|---------------------------------------------------|
@@ -117,11 +124,92 @@ Windows Vista includes the following enhancements to the Bluetooth stack and re
 
 ## Which Bluetooth profiles have in-box support in previous versions of Windows?
 
-### Windows 8.1 and Windows 8 In-Box Bluetooth Profiles
+### Windows 10 for desktop editions in-box Bluetooth profiles
+
+Windows 10 (Version 1803) supports Bluetooth version 5.0 and the following Bluetooth user profiles:
+
+- Advanced Audio Distribution Profile (A2DP 1.2)
+- Audio/Video Control Transport Protocol Target (AVCTP 1.4)
+- Audio/Video Distribution Transport Protocol (AVDTP 1.2)
+- Audio/Video Remote Control Profile (AVRCP 1.6.1)
+- Battery Service over GATT Profile (1.0) 
+- Bluetooth LE Generic Attribute (GATT) Client
+- Bluetooth LE Generic Attribute (GATT) Server
+- Bluetooth Network Encapsulation Protocol (BNEP 1.0)
+- Device ID Profile (DID 1.3)
+- Device Information Service over GATT Profile (DIS 1.1)
+- Dial-up Networking Profile (DUN 1.1)
+- Generic Access Profile (GAP)
+- Generic Audio/Video Distribution Profile (GAVDP 1.2)
+- Hands-Free Profile (HFP 1.6) 
+- Hardcopy Cable Replacement Profile (HCRP 1.2)
+- HID over GATT Profile (HOGP 1.0) 
+- Human Interface Device (HID 1.1)
+- Human Interface Device Service (HIDS)
+- Interoperability (IOP)
+- Logical Link Control and Adaptation Protocol (L2CAP)
+- Object Push Profile (OPP 1.1)
+- Personal Area Networking User Profile (PANU 1.0)
+- RFCOMM (1.1 with TS 07.10)
+- Scan Parameters Profile Client over GATT Profile (ScPP 2.1)
+- Security Manager Protocol (SMP)
+- Serial Port Profile (SPP 1.2)
+- Service Discovery Protocol (SDP)
+
+### Windows 10 Mobile in-box Bluetooth profiles
+
+- Advanced Audio Distribution Profile (A2DP 1.2)
+- Audio/Video Remote Control Profile (AVRCP 1.3)
+- Bluetooth LE Generic Attribute (GATT) Client
+- Device ID Profile (DID 1.3)
+- Hands-Free Profile (HFP 1.6) 
+- HID over GATT Profile (HOGP 1.0) 
+- Human Interface Device (HID 1.1)
+- Message Access Profile (1.1)
+- Object Push Profile (OPP 1.1)
+- Personal Area Network Access Point (PAN NAP 1.0)
+- Phone Book Access Profile (PBAP 1.1)
+- Serial Port Profile (SPP 1.2)
+
+#### Windows 10 for desktop editions in-box Bluetooth profiles
+
+| Profile | Description |
+| --- | --- |
+| GATT | Bluetooth LE Generic Attribute (GATT) Client |
+| A2DP 1.2 | Advanced Audio Distribution Profile |
+| AVRCP 1.3 | Audio/Video Remote Control Profile |
+| DI 1.3 | Device ID Profile |
+| DUN 1.1 | Dial-Up Networking |
+| HCRP 1.0 | Hardcopy Cable Replacement Profile |
+| HFP 1.5 | Hands-Free Profile |
+| HID 1.1 | Human Interface Device |
+| HOGP 1.0 | HID over GATT Profile |
+| OPP 1.1 | Object Push Profile |
+| PANU 1.0 | Personal Area Network User |
+| SPP 1.2 | Serial Port Profile |
+
+#### Windows 10 Mobile in-box Bluetooth profiles
+
+| Profile | Description |
+| --- | --- |
+| GATT | Bluetooth LE Generic Attribute (GATT) Client |
+| A2DP 1.2 | Advanced Audio Distribution Profile |
+| AVRCP 1.3 | Audio/Video Remote Control Profile |
+| DI 1.3 | Device ID Profile |
+| HFP 1.6 | Hands-Free Profile |
+| HID 1.1 | Human Interface Device |
+| HOGP 1.0 | HID over GATT Profile |
+| MAP 1.1 | Message Access Profile |
+| OPP 1.1 | Object Push Profile |
+| PAN NAP 1.0 | Personal Area Network Access Point |
+| PBAP 1.1 | Phone Book Access Profile |
+| SPP 1.2 | Serial Port Profile |
+
+### Windows 8.1 and Windows 8 in-box Bluetooth profiles
 
 Because Windows 8.1, Windows 8, Windows 7, and Windows Vista provide both kernel-mode and user-mode programming interfaces for their Bluetooth stacks, hardware and software vendors can implement additional profiles in both kernel mode and user mode. We encourage vendors that create such profiles to test their software by using the appropriate [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) test suites and have their software packages digitally signed
 
-### Windows 7 and Windows Vista In-Box Bluetooth Profiles
+### Windows 7 and Windows Vista in-box Bluetooth profiles
 
 Windows 7 and Windows Vista include additional and updated Bluetooth profiles as listed in the following table:
 
@@ -179,4 +267,4 @@ Windows Vista with SP2 and Windows 7 also support the user-mode RFComm and Blu
 
 ## See also
 
-* [Bluetooth Support in Windows 10](general-bluetooth-support-in-windows.md)
+- [Bluetooth Support in Windows 10](general-bluetooth-support-in-windows.md)
