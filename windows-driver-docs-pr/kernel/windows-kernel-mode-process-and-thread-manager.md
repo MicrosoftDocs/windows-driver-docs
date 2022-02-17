@@ -17,6 +17,8 @@ If threads from different processes attempt to use the same resource at the same
 
 Routines that provide a direct interface to the process and thread manager are usually prefixed with the letters "**Ps**"; for example, **PsCreateSystemThread**. For a list of kernel DDIs, see [Windows kernel](/windows-hardware/drivers/ddi/_kernel/).
 
+## <a name="best"></a>Best practices for implementing process and thread-related callback functions
+
 This set of guidelines applies to these callback routines:
 
 [_PCREATE_PROCESS_NOTIFY_ROUTINE_](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pcreate_process_notify_routine)
