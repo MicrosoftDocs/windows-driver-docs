@@ -69,5 +69,5 @@ The following components are blocked from executing on Windows 10 S:
 -   wscript.exe
 -   wsl.exe
 
-> [!NEXT]
+> [!NOTE]
 > To ensure your Windows app will operate correctly on devices that run Windows 10 in S mode, please review the [test guidance](/windows/uwp/porting/desktop-to-uwp-test-windows-s) for apps.

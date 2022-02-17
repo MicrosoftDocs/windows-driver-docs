@@ -1,11 +1,10 @@
 ---
 title: Using the DevCon Tool to Install a Driver Package
 description: Using the DevCon Tool to Install a Driver Package
-ms.date: 04/20/2017
+ms.date: 02/11/2022
 ---
 
 # Using the DevCon Tool to Install a Driver Package
-
 
 The example in this topic uses the *ToastPkg* sample [driver package](driver-packages.md). Within the WDK installation directory, the package's source files are located in the *src\\general\\toaster\\toastpkg\\toastcd* directory. After you have built and digitally-signed this driver package, copy the driver package to the directory *c:\\toaster* on the test computer.
 
@@ -21,6 +20,8 @@ To install the driver package through DevCon, do the following:
 
     This command-line specifies the location of the driver package's INF file (*c:\\toaster\\toastpkg.inf*) and the toaster device's hardware identifier (ID), which is specified within the INF file.
 
+> [!NOTE]
+> Devcon's "install" command creates a root enumerated device with the hardware ID that you specify before attempting to install the driver package. If the system already has hardware that the driver package is intended to install on, use "devcon update" instead.
  
 
  

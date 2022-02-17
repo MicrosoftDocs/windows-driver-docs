@@ -12,7 +12,7 @@ ms.date: 04/20/2017
 
 Newer versions of the WDK integrated with Visual Studio support driver signing directly in the IDE:
 
-[Signing a Driver During Development and Testing](/windows-hardware/drivers)
-[Signing a Driver for Public Release](/windows-hardware/drivers)
+* [Signing a Driver During Development and Testing](/windows-hardware/drivers)
+* [Signing a Driver for Public Release](/windows-hardware/drivers)
  
 

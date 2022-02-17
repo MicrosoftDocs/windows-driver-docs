@@ -31,6 +31,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/install/creating-a-catalog-file-for-a-test-signed-driver-package.md",
+            "redirect_URL": "/windows-hardware/drivers/install/creating-a-catalog-file-for-test-signing-a-driver-package",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/install/determining-an-spc-s-cross-certificate.md",
             "redirect_URL": "/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates",
             "redirect_document_id": false
