@@ -21,7 +21,6 @@ Features and purchasing information for supported devices can be found at [Suppo
 - [RN42](testing-BTP-hw-rn42.md) (as HID Device)
 - [Bluefruit Friend](testing-BTP-hw-bluefruit-Friend.md) (as HID Device)
 - [Bluefruit Feather](testing-BTP-hw-bluefruit-Feather.md) (as HID Device)
-- [BM 64-EVB](testing-BTP-hw-bm64.md)  (as Audio Device)
 - [RN52](testing-BTP-hw-rn52.md) (as Audio Device)
 
 ## Running the Audio and HID Scenario Tests
@@ -37,8 +36,6 @@ You can also include the optional parameter `-VerboseLogs` at the end to get a m
 
 When using the Traduci, as a test starts the red LED next to the 12-pin adapter will turn on once the command from the test to power the Pmod device has been sent. This LED will be turned off at the end of every test. If it is on at the start of the next test due the previous test failing, we will attempt to power it down and power it back on to return it to a known state. If the power cycle fails, the test will fail due to the Pmod device being in an unknown state.
 
-When using the BM-64-EVB, red and blue LEDs will flash in patterns for indicting steps of the process such as powering on, pairing, and playing audio.
-
 ## Capturing Logs
 
 To capture the Bluetooth logs, follow the instructions for the [busiotools for Windows Repo on GitHub](https://github.com/microsoft/busiotools/blob/master/bluetooth/tracing/readme.md).
@@ -48,8 +45,3 @@ To parse the Bluetooth logs, follow the instructions for the [BTETLParse tool](t
 ## Known issues
 
 - Stress tests: Tests run in a tight loop using an LE device may cause pairing or unpairing to fail.
-
-- BM64 EVB has the following 2 known test failures:
-
-  - `BluetoothTests::TaefAudioHidScenarioTests::VoiceAndKeyboardTest`
-  - `BluetoothTests::TaefAudioHidScenarioTests::MusicAndKeyboardTest`
