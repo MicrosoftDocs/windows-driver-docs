@@ -481,7 +481,7 @@ const ULONG WIFI_DEFAULT_IDLE_TIMEOUT_HINT_MS = 3u * 1000u; // 3 seconds
 WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS  idleSettings;
 WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT(&idleSettings,IdleCanWakeFromS0);
 
-idleSettings.IdleTimeout = WIFI_DEFAULT_IDLE_TIMEOUT_HINT_MS; //3 s
+idleSettings.IdleTimeout = WIFI_DEFAULT_IDLE_TIMEOUT_HINT_MS; // 3 seconds
 idleSettings.IdleTimeoutType = SystemManagedIdleTimeoutWithHint;
     status = WdfDeviceAssignS0IdleSettings(DeviceContext->WdfDevice, &idleSettings);
 
