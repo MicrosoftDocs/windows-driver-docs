@@ -170,6 +170,8 @@
       href: configuring-the-test-computer-to-support-test-signing.md
     - name: "Enable Loading of Test Signed Drivers"
       href: the-testsigning-boot-configuration-option.md
+    - name: "Enable Loading of Preproduction Signed Drivers"
+      href: preproduction-driver-signing-and-install.md
     - name: "Enabling Code Integrity Event Logging and System Auditing"
       href: enabling-code-integrity-event-logging-and-system-auditing.md
     - name: "Verifying the Test Signature"
