@@ -1,7 +1,7 @@
 ---
 title: Bluetooth version and profile support in Windows 11
 description: Provides information about Bluetooth version and profile support in Windows 11
-ms.date: 02/16/2022
+ms.date: 02/22/2022
 ---
 
 # Bluetooth version and profile support in Windows 11
@@ -14,7 +14,7 @@ ms.date: 02/16/2022
 
 ## Which Bluetooth versions does Windows 11 support?
 
-Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile support the following Bluetooth versions:
+Windows 11 editions (Home, Pro, Enterprise, and Education) support the following Bluetooth versions:
 
 - Version 1.1
 - Version 2.0
@@ -24,91 +24,56 @@ Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Wind
 - Version 4.0
 - Version 4.1
 - Version 5.0
+- Version 5.1
 
 Windows Server 2019 does not support Bluetooth.
 
 ## Which Bluetooth profiles have in-box support in Windows 11?
 
-### Windows 11 in-box Bluetooth profiles
+### Core specification
 
-Windows 11 (Version 21H2) supports Bluetooth version 5.0 and the following Bluetooth user profiles:
+Windows 11 supports Bluetooth core specification 5.1, including the following:
 
-- Advanced Audio Distribution Profile (A2DP 1.2)
-- Audio/Video Control Transport Protocol Target (AVCTP 1.4)
-- Audio/Video Distribution Transport Protocol (AVDTP 1.2)
-- Audio/Video Remote Control Profile (AVRCP 1.6.1)
-- Battery Service over GATT Profile (1.0) 
-- Bluetooth LE Generic Attribute (GATT) Client
-- Bluetooth LE Generic Attribute (GATT) Server
-- Bluetooth Network Encapsulation Protocol (BNEP 1.0)
-- Device ID Profile (DID 1.3)
-- Device Information Service over GATT Profile (DIS 1.1)
-- Dial-up Networking Profile (DUN 1.1)
-- Generic Access Profile (GAP)
-- Generic Audio/Video Distribution Profile (GAVDP 1.2)
-- Hands-Free Profile (HFP 1.6) 
-- Hardcopy Cable Replacement Profile (HCRP 1.2)
-- HID over GATT Profile (HOGP 1.0) 
-- Human Interface Device (HID 1.1)
-- Human Interface Device Service (HIDS)
-- Interoperability (IOP)
-- Logical Link Control and Adaptation Protocol (L2CAP)
-- Object Push Profile (OPP 1.1)
-- Personal Area Networking User Profile (PANU 1.0)
-- RFCOMM (1.1 with TS 07.10)
-- Scan Parameters Profile Client over GATT Profile (ScPP 2.1)
-- Security Manager Protocol (SMP)
-- Serial Port Profile (SPP 1.2)
-- Service Discovery Protocol (SDP)
+| Profile or protocol                        | Abreviation |
+|--------------------------------------------|-------------|
+| 4.0 Host Controller Interface              | HCI         |
+| Attribute Protocol                         | ATT         |
+| Generic Access Profile                     | GAP         |
+| Generic Attribute Profile                  | GATT        |
+| Host Controller Interface                  | HCI         |
+| Logical Link Control and Adaption Protocol | L2CAP       |
+| Service Discovery Protocol                 | SDP         |
+| Security Manager Protocol                  | SMP         |
 
-### Windows 10 Mobile in-box Bluetooth profiles
+### GATT profiles and services
 
-- Advanced Audio Distribution Profile (A2DP 1.2)
-- Audio/Video Remote Control Profile (AVRCP 1.3)
-- Bluetooth LE Generic Attribute (GATT) Client
-- Device ID Profile (DID 1.3)
-- Hands-Free Profile (HFP 1.6) 
-- HID over GATT Profile (HOGP 1.0) 
-- Human Interface Device (HID 1.1)
-- Message Access Profile (1.1)
-- Object Push Profile (OPP 1.1)
-- Personal Area Network Access Point (PAN NAP 1.0)
-- Phone Book Access Profile (PBAP 1.1)
-- Serial Port Profile (SPP 1.2)
+| Profile or service             | Abreviation | Version |
+|--------------------------------|-------------|---------|
+| Device Information Service     | DIS         | 1.1     |
+| HID over GATT Profile          | HOGP        | 1.0     |
+| Scan Parameters Profile client | ScPP        | 2.1     |
 
-#### Windows 10 for desktop editions in-box Bluetooth profiles
+### Traditional Bluetooth profiles and protocols
 
-| Profile | Description |
-| --- | --- |
-| GATT | Bluetooth LE Generic Attribute (GATT) Client |
-| A2DP 1.2 | Advanced Audio Distribution Profile |
-| AVRCP 1.3 | Audio/Video Remote Control Profile |
-| DI 1.3 | Device ID Profile |
-| DUN 1.1 | Dial-Up Networking |
-| HCRP 1.0 | Hardcopy Cable Replacement Profile |
-| HFP 1.5 | Hands-Free Profile |
-| HID 1.1 | Human Interface Device |
-| HOGP 1.0 | HID over GATT Profile |
-| OPP 1.1 | Object Push Profile |
-| PANU 1.0 | Personal Area Network User |
-| SPP 1.2 | Serial Port Profile |
+Windows 11 (version 21H2) supports Bluetooth version 5.1 and the following Bluetooth profiles and protocols:
 
-#### Windows 10 Mobile in-box Bluetooth profiles
-
-| Profile | Description |
-| --- | --- |
-| GATT | Bluetooth LE Generic Attribute (GATT) Client |
-| A2DP 1.2 | Advanced Audio Distribution Profile |
-| AVRCP 1.3 | Audio/Video Remote Control Profile |
-| DI 1.3 | Device ID Profile |
-| HFP 1.6 | Hands-Free Profile |
-| HID 1.1 | Human Interface Device |
-| HOGP 1.0 | HID over GATT Profile |
-| MAP 1.1 | Message Access Profile |
-| OPP 1.1 | Object Push Profile |
-| PAN NAP 1.0 | Personal Area Network Access Point |
-| PBAP 1.1 | Phone Book Access Profile |
-| SPP 1.2 | Serial Port Profile |
+| Profile or protocol                         | Abreviation | Version |
+|---------------------------------------------|-------------|---------|
+| Advanced Audio Distribution Profile         | A2DP        | 1.3.2   |
+| Audio/Video Control Transport Protocol      | AVCTP       | 1.4     |
+| Audio Video Distribution Transport Protocol | AVDTP       | 1.3     |
+| A/V Remote Control Profile                  | AVRCP       | 1.6.2   |
+| Bluetooth Network Encapsulation Protocol    | BNEP        | 1.0     |
+| Device ID                                   | DID         | 1.3     |
+| Dial Up Networking Profile                  | DUN         | 1.1     |
+| Generic A/V Distribution Profile            | GAVDP       | 1.3     |
+| Hands-Free Profile                          | HFP         | 1.7.2   |
+| Hard Copy Replacement Profile 1.2           | HRCP        | 1.1     |
+| Human Interface Device                      | HID         | 1.1.1   |
+| Object Push Profile                         | OPP         | 1.1     |
+| Personal Area Network Profile               | PAN         | 1.0     |
+| Radio Frequency Communication               | RFCOMM      | 1.1     |
+| Serial Port Profile                         | SPP         | 1.2     |
 
 ## New features and recommendations for Windows 11 and later
 

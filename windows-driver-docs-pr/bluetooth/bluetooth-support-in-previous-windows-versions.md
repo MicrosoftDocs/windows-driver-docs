@@ -1,7 +1,7 @@
 ---
 title: Bluetooth version and profile support in previous Windows versions
 description: Bluetooth version and profile support in previous Windows versions
-ms.date: 02/16/2022
+ms.date: 02/22/2022
 ---
 
 # Bluetooth version and profile support in previous Windows versions
@@ -45,9 +45,9 @@ Windows 8 is Bluetooth Smart Ready, it supports Bluetooth version 4.0, and is a
 
 Windows support for different versions of the Bluetooth specification depends on the Windows version, as shown in the following table:
 
-| Windows version                         | V 1.1 | V 2.0 | V 2.0 with EDR | V 2.1 | V 2.1 with EDR | V 4.0 | V 4.1 | V 5.0 |
+| Windows version                         | V 1.1 | V 2.0 | V 2.0 with EDR | V 2.1 | V 2.1 with EDR | V 4.0 | V 4.1 | V 5.1 |
 |-----------------------------------------|-------|-------|----------------|-------|----------------|-------|-------|-------|
-| Windows 10                              | X     | X     | X              | X     | X              | X     | X     | X     |
+| Windows 10 (version 2004)               | X     | X     | X              | X     | X              | X     | X     | X     |
 | Windows 8.1                             | X     | X     | X              | X     | X              | X     |       |       |
 | Windows 8                               | X     | X     | X              | X     | X              | X     |       |       |
 | Windows 7                               | X     | X     | X              | X     | X              |       |       |       |
@@ -124,86 +124,51 @@ Windows Vista includes the following enhancements to the Bluetooth stack and re
 
 ## Which Bluetooth profiles have in-box support in previous versions of Windows?
 
-### Windows 10 for desktop editions in-box Bluetooth profiles
+### Windows 10 in-box Bluetooth profiles
 
-Windows 10 (Version 1803) supports Bluetooth version 5.0 and the following Bluetooth user profiles:
+Windows 10 (version 2004) supports Bluetooth version 5.1.
 
-- Advanced Audio Distribution Profile (A2DP 1.2)
-- Audio/Video Control Transport Protocol Target (AVCTP 1.4)
-- Audio/Video Distribution Transport Protocol (AVDTP 1.2)
-- Audio/Video Remote Control Profile (AVRCP 1.6.1)
-- Battery Service over GATT Profile (1.0) 
-- Bluetooth LE Generic Attribute (GATT) Client
-- Bluetooth LE Generic Attribute (GATT) Server
-- Bluetooth Network Encapsulation Protocol (BNEP 1.0)
-- Device ID Profile (DID 1.3)
-- Device Information Service over GATT Profile (DIS 1.1)
-- Dial-up Networking Profile (DUN 1.1)
-- Generic Access Profile (GAP)
-- Generic Audio/Video Distribution Profile (GAVDP 1.2)
-- Hands-Free Profile (HFP 1.6) 
-- Hardcopy Cable Replacement Profile (HCRP 1.2)
-- HID over GATT Profile (HOGP 1.0) 
-- Human Interface Device (HID 1.1)
-- Human Interface Device Service (HIDS)
-- Interoperability (IOP)
-- Logical Link Control and Adaptation Protocol (L2CAP)
-- Object Push Profile (OPP 1.1)
-- Personal Area Networking User Profile (PANU 1.0)
-- RFCOMM (1.1 with TS 07.10)
-- Scan Parameters Profile Client over GATT Profile (ScPP 2.1)
-- Security Manager Protocol (SMP)
-- Serial Port Profile (SPP 1.2)
-- Service Discovery Protocol (SDP)
+### Core specification
 
-### Windows 10 Mobile in-box Bluetooth profiles
+Windows 10 supports Bluetooth core specification 5.1, including the following:
 
-- Advanced Audio Distribution Profile (A2DP 1.2)
-- Audio/Video Remote Control Profile (AVRCP 1.3)
-- Bluetooth LE Generic Attribute (GATT) Client
-- Device ID Profile (DID 1.3)
-- Hands-Free Profile (HFP 1.6) 
-- HID over GATT Profile (HOGP 1.0) 
-- Human Interface Device (HID 1.1)
-- Message Access Profile (1.1)
-- Object Push Profile (OPP 1.1)
-- Personal Area Network Access Point (PAN NAP 1.0)
-- Phone Book Access Profile (PBAP 1.1)
-- Serial Port Profile (SPP 1.2)
+| Profile or protocol                        | Abreviation |
+|--------------------------------------------|-------------|
+| 4.0 Host Controller Interface              | HCI         |
+| Attribute Protocol                         | ATT         |
+| Generic Access Profile                     | GAP         |
+| Generic Attribute Profile                  | GATT        |
+| Logical Link Control and Adaption Protocol | L2CAP       |
+| Service Discovery Protocol                 | SDP         |
+| Security Manager Protocol                  | SMP         |
 
-#### Windows 10 for desktop editions in-box Bluetooth profiles
+### GATT profiles and services
 
-| Profile | Description |
-| --- | --- |
-| GATT | Bluetooth LE Generic Attribute (GATT) Client |
-| A2DP 1.2 | Advanced Audio Distribution Profile |
-| AVRCP 1.3 | Audio/Video Remote Control Profile |
-| DI 1.3 | Device ID Profile |
-| DUN 1.1 | Dial-Up Networking |
-| HCRP 1.0 | Hardcopy Cable Replacement Profile |
-| HFP 1.5 | Hands-Free Profile |
-| HID 1.1 | Human Interface Device |
-| HOGP 1.0 | HID over GATT Profile |
-| OPP 1.1 | Object Push Profile |
-| PANU 1.0 | Personal Area Network User |
-| SPP 1.2 | Serial Port Profile |
+| Profile or service             | Abreviation | Version |
+|--------------------------------|-------------|---------|
+| Device Information Service     | DIS         | 1.1     |
+| HID over GATT Profile          | HOGP        | 1.0     |
+| Scan Parameters Profile client | ScPP        | 2.1     |
 
-#### Windows 10 Mobile in-box Bluetooth profiles
+### Traditional Bluetooth profiles and protocols
 
-| Profile | Description |
-| --- | --- |
-| GATT | Bluetooth LE Generic Attribute (GATT) Client |
-| A2DP 1.2 | Advanced Audio Distribution Profile |
-| AVRCP 1.3 | Audio/Video Remote Control Profile |
-| DI 1.3 | Device ID Profile |
-| HFP 1.6 | Hands-Free Profile |
-| HID 1.1 | Human Interface Device |
-| HOGP 1.0 | HID over GATT Profile |
-| MAP 1.1 | Message Access Profile |
-| OPP 1.1 | Object Push Profile |
-| PAN NAP 1.0 | Personal Area Network Access Point |
-| PBAP 1.1 | Phone Book Access Profile |
-| SPP 1.2 | Serial Port Profile |
+| Profile or protocol                         | Abreviation | Version |
+|---------------------------------------------|-------------|---------|
+| Advanced Audio Distribution Profile         | A2DP        | 1.3.2   |
+| Audio/Video Control Transport Protocol      | AVCTP       | 1.4     |
+| Audio Video Distribution Transport Protocol | AVDTP       | 1.3     |
+| A/V Remote Control Profile                  | AVRCP       | 1.6.2   |
+| Bluetooth Network Encapsulation Protocol    | BNEP        | 1.0     |
+| Device ID                                   | DID         | 1.3     |
+| Dial Up Networking Profile                  | DUN         | 1.1     |
+| Generic A/V Distribution Profile            | GAVDP       | 1.3     |
+| Hands-Free Profile                          | HFP         | 1.7.2   |
+| Hard Copy Replacement Profile 1.2           | HRCP        | 1.1     |
+| Human Interface Device                      | HID         | 1.1.1   |
+| Object Push Profile                         | OPP         | 1.1     |
+| Personal Area Network Profile               | PAN         | 1.0     |
+| Radio Frequency Communication               | RFCOMM      | 1.1     |
+| Serial Port Profile                         | SPP         | 1.2     |
 
 ### Windows 8.1 and Windows 8 in-box Bluetooth profiles
 
