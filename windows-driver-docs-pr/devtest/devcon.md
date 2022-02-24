@@ -15,29 +15,28 @@ keywords:
 - restarting devices
 - device management WDK DevCon
 - listing device information WDK
+ms.custom: contperf-fy22q3
 ms.date: 02/11/2022
 ---
 
 # Windows Device Console (Devcon.exe)
 
-> [!IMPORTANT]
-> PnPUtil ships with every release of Windows and makes use of the most reliable and secure APIs available and it’s use is recommended. For more information on using the PnPutil, instead of devcon, see [PnPUtil](pnputil.md) .
-
 DevCon (Devcon.exe), the Device Console, is a command-line tool that displays detailed information about devices on computers running Windows. You can use DevCon to enable, disable, install, configure, and remove devices.
 
-DevCon runs on Microsoft Windows 2000 and later versions of Windows.
+> [!IMPORTANT]
+> PnPUtil ships with every release of Windows and makes use of the most reliable and secure APIs available and it’s use is recommended. For more information on using the PnPutil, instead of devcon, see [PnPUtil](pnputil.md).
 
 ## Where can I download DevCon?
 
 DevCon (Devcon.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see [Windows Hardware Downloads](../download-the-wdk.md).
 
-- **Windows Driver Kit (WDK) 8 and Windows Driver Kit (WDK) 8.1** (installation path)
+- **Windows Driver Kit (WDK) and Windows Driver Kit (WDK) X.Y** (installation path)
 - *%WindowsSdkDir%\tools\x64\devcon.exe*
 - *%WindowsSdkDir%\tools\x86\devcon.exe*
 - *%WindowsSdkDir%\tools\arm\devcon.exe*
 
 > [!NOTE]
-> The Visual Studio environment variable, *%WindowsSdkDir%*, represents the path to the Windows kits directory where the kits are installed, for example, *C:\Program Files (x86)\Windows Kits\8.1*.
+> The Visual Studio environment variable, *%WindowsSdkDir%*, represents the path to the Windows kits directory where the kits are installed, for example, *C:\Program Files (x86)\Windows Kits\10*.
 
 ## In this section
 

@@ -9,17 +9,20 @@ api_name:
 - Device Console (DevCon.exe) Commands
 api_type:
 - NA
+ms.custom: contperf-fy22q3 
 ms.date: 02/11/2022
 ---
 
 # Device Console (DevCon.exe) Commands
-
 
 DevCon (DevCon.exe) is a command line tool that can display detailed information about devices on computers running Windows. You can also use DevCon to enable, disable, install, configure, and remove devices. DevCon uses the following syntax.
 
 ```
 devcon [/r] command [arguments] 
 ```
+
+> [!IMPORTANT]
+> PnPUtil ships with every release of Windows and makes use of the most reliable and secure APIs available and it’s use is recommended. For more information on using the PnPutil, instead of devcon, see [PnPUtil](pnputil.md).
 
 ## <span id="ddk_devcon_general_commands_tools"></span><span id="DDK_DEVCON_GENERAL_COMMANDS_TOOLS"></span>Parameters
 

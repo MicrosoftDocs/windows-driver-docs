@@ -10,6 +10,7 @@ keywords:
 - commands WDK DevCon
 - Example 44 Forcibly update the HAL
 - HAL update example
+ms.custom: contperf-fy22q3 
 ms.date: 01/26/2022
 ---
 
@@ -19,7 +20,6 @@ ms.date: 01/26/2022
 > PnPUtil ships with every release of Windows and makes use of the most reliable and secure APIs available and it’s use is recommended. For more information on using the PnPutil, instead of devcon, see [PnPUtil](pnputil.md).
 
 ## <span id="ddk_devcon_examples_tools"></span><span id="DDK_DEVCON_EXAMPLES_TOOLS"></span>
-
 
 This section provides examples of the following Device Console (DevCon.exe) commands:
 
