@@ -2,37 +2,56 @@
 title: D3D12 video encoding
 description: Learn about D3D12 video encoding
 keywords:
-- Direct3D version 10.1 WDK Windows 7 display , extended format
-- extended format WDK Windows 7 display
-ms.date: 08/23/2021
+- Direct3D12 video encoding
+- WDDM 3.0 , video encoding
+ms.date: 02/16/2022
 ms.localizationpriority: medium
 ---
 
 # D3D12 video encoding
 
-Starting in Windows 11 (WDDM 3.0), video encoding was added to D3D12. This feature provides a coherent set of encoding APIs that are consistent with the D3D12 framework, and allows optimal usage of hardware encoding with D3D12 in a low-level fashion. The video encode API provides access to the video encode hardware acceleration capabilities for different scenarios such as Internet of Things (IoT), Cloud, Media APIs, machine learning and game streaming.
+This page provides general information and guidance for driver developers regarding the Direct3D video encoding feature. For additional information, including application-level specifics, see the [D3D Video Encoding Specification](https://microsoft.github.io/DirectX-Specs/d3d/D3D12VideoEncoding.html).
 
-<!--- QUESTIONS:
-What is the helper layer called?
-Which blocks in the image are relevant to driver writers?
-Where is image encoding spec/DDIs?
- --->
+## About Direct3D 12 video encoding
+
+Prior to Windows 11 (WDDM 3.0), DirectX 12 provided application- and driver-level interfaces (APIs and DDIs) to support GPU acceleration for several video applications, including video decoding, video processing, and motion estimation.
+
+Starting in Windows 11, D3D12 added a video encoding feature to the existing video API/DDI family. This feature provides a coherent set of encoding APIs/DDIs that are consistent with the existing D3D12 framework, and allows developers to perform video encoding using GPU-accelerated video engines.
+
+The video encode framework provides access to the video encode hardware acceleration capabilities for different scenarios such as Internet of Things (IoT), cloud, media APIs, machine learning and game streaming.
+
+## Reporting video encoding support and capabilities
+
+The video-related support framework was extended to allow drivers to report video encoding support and capabilities.
+
+* **D3D12DDI_FEATURE_VERSION_VIDEO_0083_0** is the version number that defines the first full implementation of all D3D12 video encode milestones, introduced in Windows 11 (WDDM 3.0).
+* A driver provides pointers to the core video support callback functions that it supports, including the following callbacks introduced for video encoding support, in the [**D3D12DDI_DEVICE_FUNCS_VIDEO_0082_0**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_device_funcs_video_0082_0) structure:
+
+* [**PFND3D12DDI_CALCPRIVATEVIDEOENCODERSIZE_0082_0**](/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_calcprivatevideoencodersize_0082_0)
+* [**PFND3D12DDI_CREATEVIDEOENCODER_0082_0**](/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_createvideoencoder_0082_0)
+* [**PFND3D12DDI_DESTROYVIDEOENCODER_0080**](/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_destroyvideoencoder_0080)
+* [**PFND3D12DDI_CALCPRIVATEVIDEOENCODERHEAPSIZE_0080_2**](/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_calcprivatevideoencoderheapsize_0080_2)
+* [**PFND3D12DDI_CREATEVIDEOENCODERHEAP_0080_2**](/windows-hardware/drivers/ddi/d3d12umddi/)
+* [**PFND3D12DDI_DESTROYVIDEOENCODERHEAP_0080**](/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_destroyvideoencoderheap_0080)
+
+## Creating the video encoder
+
+## Create the video encoder heap
+
+## Encode a frame
+
+## Resolve?? Stats?? etc
+
+## Destroy the video encoder and associated heap
+
 
 A system-supplied helper layer was developed on top of this API interface to provide a higher level entry point for users that need a higher level interface.
-
-This spec covers video encoding; D3D12 image encoding is covered separately.
-
-## Video encoding on D3D11
-
-Video encoding on D3D11 is done via an extension mechanism, passing through parameters to D3D11 drivers. Hardware-specific Media Foundation transforms are provided by IHVs, who know which extensions to use in order to communicate with the drivers. In this way, applications can make use of video encoding capabilities via [Media Foundation](/windows/win32/medfound/microsoft-media-foundation-sdk).
-
-The D3D12 API provides a consistent and unified interface to expose the low level hardware acceleration capabilities that can be used to write video encoding applications.
 
 ## Scenarios
 
 ### OneCore
 
-The D3D12 video API enables portable hardware-accelerated video encoding on newer platforms where only D3D12 is available. This includes the various OneCore SKUs used by cloud compute and IoT platforms. Video encoding acceleration will be now available in this scenarios without the need for using platform specific solutions.
+The D3D12 video API enables portable hardware-accelerated video encoding on newer platforms where only D3D12 is available. This includes the various OneCore SKUs used by cloud compute and IoT platforms. Video encoding acceleration will be now available in these scenarios without the need for using platform-specific solutions.
 
 ### Media APIs
 
@@ -46,117 +65,23 @@ The D3D12 video encode API enables efficient interoperability between D3D12 vide
 
 The D3D12 video encode API enables game streaming scenarios that require a highly performant low level API.
 
-## Codecs support extensibility
+## Supported codecs
 
-The main supported codecs are H264 and HEVC, but with open extensibility for newer codecs such as AV1. The codec-specific aspects of the API are delegated to codec-specific structures and their access to union types. The extension process to support a new codec is the following:
+Starting in Windows 11, the supported codecs are H.264 and HEVC, but the D3D12 video encoding framework provides open extensibility for newer codecs such as AV1. The codec-specific aspects of the framework's interface are delegated to codec-specific structures and their access to union types.
 
-1. Extend the codecs enum with the new codec.
-2. Create the codec-specific support flags and configuration structures and add it to the respective union types.
-3. Create the codec-specific picture control structures and add it to the respective union types.
-4. (If applicable) Extend the API to add new subregion partition modes following the same pattern exposed in this API for slice-based subregion partitioning. A common example is adding support for tiles, which can be combined with
+For example, the [**D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_0082_0**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_codec_configuration_0082_0) structure contains a union with pointers to codec-specific [**D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_0082_0**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_codec_configuration_h264_0082_0) and [**D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC_0082_0**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_video_encoder_codec_configuration_hevc_0082_0) structures that contain the codec-specific configuration information.
 
-<!--- Above sentence is incomplete: "combined with" what?? --->
-
-Note: To preserve the binary interface compatibility on extensibility, the union types always contain pointers to the codec-specific structures. The union types will always have a constant size based on the pointer size of the host architecture. This decision also prevents structures holding members of (or containing anonymous) union types from changing their type sizes when extending the interface. Some of the unions today only contain pointers to enum types, but to be consistent with this, they were also referenced as pointers in the case a new codec requires some more complex type than an enum to represent those concepts.
-
-## Responsibilities separation between D3D12 API and Helper layer
-
-The D3D12 API is designed to be a lower level API than the D3D11-like APIs, giving more control to the host in some aspects such as final bitstream header coding, frame reference management and exposing more complex synchronization mechanisms and explicit memory management.
-
-The optional separate helper layer placed on top of this API interface has responsibilities such as the following:
-
-* Produces the full encoded bitstream based on the D3D12 API payload output and subregion (eg. slice) headers. This includes handling SEI, VUI, VPS, SPS, PPS, and so forth.
-
-* A reference picture management component that manages the reconstructed picture allocations and residency, B-frame reordering, and reference frames usage strategy.
-
-* Delegation pattern for some of the D3D12 API features such as rate control, intra-refresh, encoder support cap queries, and so forth.
-
-* Maps some of the finer grain control to higher level concepts, abstracting some of the lower level configuration options such as codec config flags.
-
-* Overall, provides a higher level API for Video Encode by taking care of the D3D12 explicit memory management and synchronization aspects of this API into a simpler and higher level interface. This includes managing the command recording and submission, resource barriers, reference picture management related allocations and residency policies, etc.
-
-The following diagram shows the D3D12 API versus helper layer interaction.
-
-:::image type="content" source="images/d3d12-api-vs-helper-layer-interaction.jpg" alt-text="Shows the D3D12 API versus helper layer interaction.":::
-
-The term "host" in this documentation refers to any user of the D3D12 lower level API. The helper layer is a particular instance of a host that takes care of some of the low level responsibilities and provides a higher level interface for entry level end users. Advanced users can use the D3D12 API directly without the helper layer.
+To preserve the binary interface compatibility on extensibility, the union types always contain pointers to the codec-specific structures. The union types have a constant size based on the pointer size of the host architecture. This decision also prevents structures holding members of (or containing anonymous) union types from changing their type sizes when extending the interface. Some of the unions only contain pointers to enum types; to be consistent, these enum types are also referenced as pointers in the case a new codec requires some more complex type than an enum to represent those concepts.
 
 ## API and DDI similarities
 
-The next sections detail the API and DDI for video encoding. In many cases, the DDI is extremely similar to the API. The structures and enumerations which are basically the same (differing solely in name convention) are not repeated in the this specification. We include just the DDI structures/enumerations and functions that differ substantially from the API.
+The next sections detail the API and DDI for video encoding. In many cases, the device driver interface (DDI) is extremely similar to the application-level programming interface (API).
 
-
-DirectX VA permits one or more stages of the video decoding process to be divided between the *host CPU* and the video hardware accelerator. The accelerator executes the [motion-compensated prediction](motion-compensated-prediction.md) (MCP), and can also execute the inverse discrete-cosine transform (IDCT) and the variable-length decoding (VLD) stages of the decoding process.
-
-The DirectX VA API decodes a single video stream. Support of multiple video streams requires a separate DirectX VA session for each video stream (for example, a separate pair of output and input pins for the video decoder and acceleration driver to use in filter graph operation). For more information about a filter graph, see [KS Minidriver Architecture](../stream/ks-minidriver-architecture.md).
 
  
 
 ## DDIs???????????????????
 
-<!--- What is WDK-equivalent for 3.1.1. ENUM: D3D12_FEATURE_VIDEO:? --->
-
-3.1.2
-Yes, use   ENUM: d3d12umddi.D3D12DDI_VIDEO_ENCODER_CODEC_0080
-
-<!--- What is WDK-equivalent for
-3.1.3. STRUCT: D3D12_FEATURE_DATA_VIDEO_ENCODER_CODEC
-
---->
-
-3.1.4. ENUM: D3D12DDI_VIDEO_ENCODER_PROFILE_H264_0080
-3.1.5. ENUM: D3D12DDI_VIDEO_ENCODER_PROFILE_HEVC_0080
-Yes, use  3.1.6: struct D3D12DDI_VIDEO_ENCODER_PROFILE_DESC_0080_2
-3.1.7 enum: D3D12DDI_VIDEO_ENCODER_LEVELS_H264_0080
-3.1.8 enum D3D12DDI_VIDEO_ENCODER_TIER_HEVC_0080
-3.1.9 enum D3D12DDI_VIDEO_ENCODER_LEVELS_HEVC_0080
-3.1.10 struct D3D12DDI_VIDEO_ENCODER_LEVEL_TIER_CONSTRAINTS_HEVC_0080
-3.1.11 struct D3D12DDI_VIDEO_ENCODER_LEVEL_SETTING_0080_2
-3.1.12 struct D3D12DDICAPS_VIDEO_ENCODER_PROFILE_LEVEL_DATA_0080_2
-3.1.13 struct D3D12DDI_VIDEO_ENCODER_PICTURE_RESOLUTION_RATIO_DESC_0080
-3.1.14 struct D3D12DDICAPS_VIDEO_ENCODER_OUTPUT_RESOLUTION_RATIOS_COUNT_DATA_0080_2
-3.1.15 struct D3D12DDI_VIDEO_ENCODER_PICTURE_RESOLUTION_DESC_0080
-3.1.16 struct D3D12DDICAPS_VIDEO_ENCODER_OUTPUT_RESOLUTION_DATA_0080_2
-3.1.17 struct D3D12DDICAPS_VIDEO_ENCODER_INPUT_FORMAT_DATA_0080_2
-3.1.18 enum D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_MODE_0080
-3.1.19 struct D3D12DDICAPS_VIDEO_ENCODER_RATE_CONTROL_MODE_DATA_0080
-3.1.20 enum D3D12DDI_VIDEO_ENCODER_INTRA_REFRESH_MODE_0080
-3.1.21 struct D3D12DDICAPS_VIDEO_ENCODER_INTRA_REFRESH_MODE_DATA_0080_2
-3.1.22 enum D3D12DDI_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_MODE_0080
-3.1.23 struct D3D12DDICAPS_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_MODE_DATA_0080_2
-3.1.24 enum D3D12DDI_VIDEO_ENCODER_HEAP_FLAGS_0080
-3.1.25 struct D3D12DDIARG_CREATE_VIDEO_ENCODER_HEAP_0080_2
-3.1.26 struct D3D12DDICAPS_VIDEO_ENCODER_HEAP_SIZE_DATA_0080_2
-3.1.27 enum D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_H264_FLAGS_0080
-3.1.28 enum D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_SLICES_DEBLOCKING_MODES_0082_0
-3.1.29 enum D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_SLICES_DEBLOCKING_MODE_FLAGS_0082_0
-3.1.30 struct D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_H264_0082_0
-3.1.31 enum D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_HEVC_FLAGS_0083_0
-3.1.32 enum D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC_CUSIZE_0080
-3.1.33 enum D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC_TUSIZE_0082_0
-3.1.34 struct D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_HEVC_0082_0
-3.1.35 struct D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_0082_0
-3.1.36 struct D3D12DDICAPS_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_DATA_0082_0
-3.1.37 struct D3D12DDI_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_H264_0080_2
-3.1.38 struct D3D12DDI_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_HEVC_0080_2
-3.1.39 struct D3D12DDI_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_0080_2
-3.1.40 struct D3D12DDICAPS_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_DATA_0080_2
-3.1.41 enum D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAGS_0082_0
-3.1.42 enum D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_DIRECT_MODES_0080
-3.1.43 enum D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_FLAGS_0080
-3.1.44 struct D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_0080_2
-3.1.45 enum D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC_FLAGS_0082_0
-3.1.46 struct D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC_0082_0
-Yes, use 3.1.47 struct D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_0080_2
-3.1.48 struct D3D12DDI_VIDEO_ENCODER_INTRA_REFRESH_0080
-Yes, use  3.1.49 enum D3D12DDI_VIDEO_ENCODER_MOTION_ESTIMATION_PRECISION_MODE_0080
-3.1.50 struct D3D12DDI_VIDEO_ENCODER_RESOLUTION_SUPPORT_LIMITS_0080_2
-3.1.51 enum D3D12DDI_VIDEO_ENCODER_VALIDATION_FLAGS_0082_0
-3.1.52 struct D3D12DDI_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_H264_0082_0
-3.1.53 struct D3D12DDI_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_HEVC_0082_0
-3.1.54 struct D3D12DDI_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_0082_0
-3.1.55 struct D3D12DDICAPS_VIDEO_ENCODER_SUPPORT_DATA_0082_0
-3.1.56 struct D3D12DDICAPS_VIDEO_ENCODER_RESOURCE_REQUIREMENTS_DATA_0080_2
 
 ## 3.2 Video encoder DDI support
 
@@ -255,12 +180,17 @@ Substantially different structs/funcs:
 
 ## Testing
 
-See spec for several HLK tests to document
+The following tests are included as part of the [Windows Hardware Lab Kit (WHLK)](/windows-hardware/test/hlk/). See the WHLK for details.
 
-## High-level host usage flow example for the D3D12 API
-
-
-
-# Questions for Sil
-
-What is DataSize for various structs/enums?
+| Test Name | Description |
+| --------- | ----------- |
+| CreateVideoEncoder | Validates the creation of VideoEncoder/VideoEncoderHeap based on the reported CheckFeatureSupport related cases. |
+| SingleEncodeH264/HEVC | QR-code based tests for structural image basic checks. The input images sequence is stamped with predefined QR content, then encoded and decoded, and finally checked to ensure that the output values (and to some extent, quality), are what is expected. |
+| EncodeProfileLevelSuggestionsH264/HEVC | Validates that the D3D12_FEATURE_DATA_VIDEO_ENCODER_SUPPORT.SuggestedProfile/Level values are as expected based on H.264/HEVC specifications and on the configurations passed as input to D3D12_FEATURE_DATA_VIDEO_ENCODER_SUPPORT. |
+| EncodeHeapSizeCap | Validates increasing memory footprint with different increasing input arguments. |
+| SimpleGOPEncodeH264/HEVC(10bit) | Transcodes an input video using different resolutions, GOP patterns, slice modes and other codec configurations, and validates the output encoded video against the input video stream difference is acceptable. This comparison is done using peak signal to noise ratio (PSNR). |
+| EncodeSubregions/ResolutionReconfiguration | Validates on-the-fly reconfigurations. |
+| EncodeH264LongTermReferences | Validates the use of long term picture references. |
+| EncodeIntraRefresh | Validates a simple scenario of intra-refresh with an open IPP...P...P... GOP. |
+| VideoEncodeCommandListFeatures | Validates Predication and Markers for Video encode command lists. |
+| VideoEncodeTimestamps | Validates Timestamps for Video encode command lists. |
