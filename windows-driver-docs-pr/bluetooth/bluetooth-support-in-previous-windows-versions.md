@@ -180,4 +180,4 @@ Windows 7 introduced new Ex versions of previous APIs to provide enhanced funct
 
 ## See also
 
-- [Bluetooth Support in Windows 11](general-bluetooth-support-in-windows.md)
+- [Bluetooth version and profile support in Windows 11](general-bluetooth-support-in-windows.md)
