@@ -122,7 +122,7 @@ Windows 10 supports Bluetooth core specification 5.1, including the following:
 | Generic A/V Distribution Profile            | GAVDP        | 1.3     |
 | Hands-Free Profile                          | HFP          | 1.7.2   |
 | Hard Copy Replacement Profile 1.2           | HRCP         | 1.1     |
-| Human Interface Device                      | HID          | 1.1.1   |
+| Human Interface Device                      | HID          | 1.1     |
 | Object Push Profile                         | OPP          | 1.1     |
 | Personal Area Network Profile               | PAN          | 1.0     |
 | Radio Frequency Communication               | RFCOMM       | 1.1     |
