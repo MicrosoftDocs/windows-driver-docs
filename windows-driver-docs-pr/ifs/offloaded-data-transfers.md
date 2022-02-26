@@ -1,7 +1,7 @@
 ---
 title: Windows Offloaded Data Transfers
 description: Transferring data between computers or within the same computer is a frequent file system activity.
-ms.date: 09/30/2021
+ms.date: 02/25/2022
 keywords:
 - offloaded data transfers
 - Windows offloaded data transfers
@@ -101,7 +101,9 @@ The filter opt-in model can be enabled or disabled based on the value present in
 
 ### Testing
 
-To check the supported features of the stack, there is an updated command within the fltmc utility. Run **fltmc instances –v \[volume\]:** as an elevated user, and check the *SprtFtrs* column. If the *SprtFtrs* value for a filter is set to 0, it implies that the filter is blocking offload on this volume. If the *SprtFtrs* field is set to 3, both offload operations are supported.
+To check a filter's supported features of the stack, use the fltmc utility. Run **fltmc instances –v \[volume\]:** as an elevated user, and check the *SprtFtrs* column:
+
+* If the *SprtFtrs* value is 0x00, it implies that the filter is blocking offload on this volume. If *SprtFtrs* is set to 0x03, both offload operations are supported.
 
 ### Checking Feature Support in IRP Processing
 
