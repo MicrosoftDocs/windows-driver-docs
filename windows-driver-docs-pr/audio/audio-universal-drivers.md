@@ -1,24 +1,24 @@
 ---
 title: Universal Windows Drivers for Audio
 description: In Windows 10 you can write a universal audio driver that will work across many types of hardware.
-ms.date: 10/18/2019
+ms.date: 02/17/2022
 ---
 
 # Universal Windows Drivers for Audio
 
-In Windows 10 you can write a universal audio driver that will work across many types of hardware. This topics discusses the benefits of this approach as well as the differences between different platforms. In addition to the Universal Windows drivers for audio, Windows continues to support previous audio driver technologies, such as WDM.
+In Windows 10 you can write a universal audio driver that will work across many types of hardware. This topic discusses the benefits of this approach as well as the differences between platforms. In addition to the Universal Windows drivers for audio, Windows continues to support previous audio driver technologies, such as WDM.
 
 ## Getting Started with Universal Windows drivers for Audio
 
-IHVs can develop a Universal Windows driver that works on all devices (desktops, laptops, tablets, phones). This can reduces development time and cost for initial development and later code maintenance.
+IHVs can develop a Universal Windows driver that works on all devices (desktops, laptops, tablets, phones). This can reduce development time and cost for initial development and later code maintenance.
 
-These tools are available to develop Universal Windows driver support:
+These tools are available to develop Universal Windows drivers:
 
-- Visual Studio 2015 Support: There is a driver setting to set “Target Platform” equal to “Universal”. For more information about setting up the driver development environment, see [Getting Started with Universal Windows Drivers](/windows-hardware/drivers).
+- Visual Studio 2015: Set "Target Platform" equal to "Universal". For more information about setting up the driver development environment, see [Getting Started with Universal Windows Drivers](/windows-hardware/drivers).
 
-- APIValidator Tool: You can use the ApiValidator.exe tool to verify that the APIs that your driver calls are valid for a Universal Windows driver. This tool is part of the Windows Driver Kit (WDK) for Windows 10, and runs automatically if you are using Visual Studio 2015 . For more information, see [Validating Universal Windows Drivers](/windows-hardware/drivers).
+- APIValidator Tool: You can use the ApiValidator.exe tool to verify that the APIs your driver calls are valid for a Universal Windows driver. This tool is part of the Windows Driver Kit (WDK) for Windows 10, and runs automatically if you are using Visual Studio 2015. For more information, see [Validating Universal Windows Drivers](/windows-hardware/drivers).
 
-- Updated DDI reference documentation: The DDI reference documentation is being updated to indicate which DDIs are supported by Universal Windows drivers. For more information, see [Audio Devices Reference](/previous-versions/ff536192(v=vs.85)).
+- DDI reference documentation: The DDI reference documentation is updated to indicate which DDIs are supported by Universal Windows drivers. For more information, see [Audio Devices Reference](/previous-versions/ff536192(v=vs.85)).
 
 ## Create a Universal Audio Driver
 
@@ -26,11 +26,11 @@ For step-by-step guidance, see [Getting Started with Universal Windows Drivers](
 
 1. Load the universal audio sysvad sample to use as starting point for your universal audio driver. Alternatively, start with the empty WDM driver template and add in code from the universal sysvad sample as needed for your audio driver.
 
-2. In the project properties, set Target Platform to "Universal".
+1. In the project properties, set Target Platform to "Universal".
 
-3. Create an installation package: If your target is device running Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), use a configurable INF file. If your target is device running Windows 10 Mobile, use PkgGen to generate an .spkg file.
+1. Create an installation package: If your target is device running Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), use a configurable INF file. If your target is device running Windows 10 Mobile, use PkgGen to generate an .spkg file.
 
-4. Build, install, deploy, and debug the driver for Windows 10 for desktop editions or Windows 10 Mobile.
+1. Build, install, deploy, and debug the driver for Windows 10 for desktop editions or Windows 10 Mobile.
 
 ## Sample Code
 
@@ -62,13 +62,13 @@ Follow this process to convert an existing audio driver to a Universal Windows d
 
 1. Determine whether your existing driver calls will run on OneCoreUAP Windows. Check the requirements section of the reference pages. For more information see [Audio Devices Reference](/previous-versions/ff536192(v=vs.85)).
 
-2. Recompile your driver as a Universal Windows driver. In the project properties, set Target Platform to "Universal".
+1. Recompile your driver as a Universal Windows driver. In the project properties, set Target Platform to "Universal".
 
-3. Use the ApiValidator.exe tool to verify that the DDIs that your driver calls are valid for a Universal Windows driver. This tool is part of the Windows Driver Kit (WDK) for Windows 10, and runs automatically if you are using Visual Studio 2015. For more information, see [Validating Universal Windows Drivers](/windows-hardware/drivers).
+1. Use the ApiValidator.exe tool to verify that the DDIs that your driver calls are valid for a Universal Windows driver. This tool is part of the Windows Driver Kit (WDK) for Windows 10, and runs automatically if you are using Visual Studio 2015. For more information, see [Validating Universal Windows Drivers](/windows-hardware/drivers).
 
-4. If the driver calls interfaces that are not part of OneCoreUAP, compiler displays errors.
+1. If the driver calls interfaces that are not part of OneCoreUAP, the compiler reports errors.
 
-5. Replace those calls with alternate calls, or create a code workaround, or write a new driver.
+1. Replace those calls with alternate calls, or create a code workaround, or write a new driver.
 
 ## Creating a componentized audio driver installation
 
@@ -166,7 +166,7 @@ For third party-defined audio driver/APO registry keys, use HKR with the excepti
 
 ### Use a Windows Service to facilitate UWP <-> APO communication
 
-A Windows Service is not strictly required for management of user-mode components like APOs, however, if your design includes an RPC server to facilitate UWP <-> APO communication, we recommend implementing that functionality in a Windows Service that then controls the APO running in the audio engine.  
+A Windows Service is not strictly required for management of user-mode components like APOs. However, if your design includes an RPC server to facilitate UWP <-> APO communication, we recommend implementing that functionality in a Windows Service that then controls the APO running in the audio engine.  
 
 ## Building the Sysvad Universal Audio Sample for Windows 10 Desktop
 
@@ -204,11 +204,10 @@ Follow these steps to install the driver using the PnpUtil on the target system.
 
     **pnputil -i -a tabletaudiosample.inf**
 
-2. The sysvad driver install should complete. If there are any errors you can examine this file for additional information: `%windir%\inf\setupapi.dev.log`
+1. The sysvad driver install should complete. If there are any errors you can examine this file for additional information: `%windir%\inf\setupapi.dev.log`
 
-3. In Device Manager, on the View menu, choose Devices by type. In the device tree, locate Microsoft Virtual Audio Device (WDM) - Sysvad Sample. This is typically under the Sound, video and game controllers node.
+1. In Device Manager, on the View menu, choose Devices by type. In the device tree, locate Microsoft Virtual Audio Device (WDM) - Sysvad Sample. This is typically under the Sound, video and game controllers node.
 
-4. On the target computer, open Control Panel and navigate to **Hardware and Sound** &gt; **Manage audio devices**. In the Sound dialog box, select the speaker icon labeled as Microsoft Virtual Audio Device (WDM) - Sysvad Sample, then select Set Default, but do not select OK. This will keep the Sound dialog box open.
+1. On the target computer, open Control Panel and navigate to **Hardware and Sound** &gt; **Manage audio devices**. In the Sound dialog box, select the speaker icon labeled as Microsoft Virtual Audio Device (WDM) - Sysvad Sample, then select Set Default, but do not select OK. This will keep the Sound dialog box open.
 
-5. Locate an MP3 or other audio file on the target computer and double-click to play it. Then in the Sound dialog box, verify that there is activity in the volume level indicator associated with the Microsoft Virtual Audio Device (WDM) - Sysvad Sample driver.
-
+1. Locate an MP3 or other audio file on the target computer and double-click to play it. Then in the Sound dialog box, verify that there is activity in the volume level indicator associated with the Microsoft Virtual Audio Device (WDM) - Sysvad Sample driver.

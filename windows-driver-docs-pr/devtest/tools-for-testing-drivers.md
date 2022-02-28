@@ -19,8 +19,8 @@ ms.date: 06/28/2018
 
 -   [Device Fundamentals Tests](device-fundamentals-tests.md)
 -   [Data-driven System Fundamentals tests](data-driven-system-fundamentals-tests.md)
--   [Windows Device Console (Devcon.exe)](devcon.md)
 -   [PnPUtil](pnputil.md)
+-   [Windows Device Console (Devcon.exe)](devcon.md)
 
 
 **Additional Test Tools**

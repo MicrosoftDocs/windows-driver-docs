@@ -13,12 +13,13 @@ The BTP software package contains several tools to be used for testing Bluetooth
 The Bluetooth Test Platform (BTP) software package contains tools for testing the interoperability of Bluetooth enabled peripherals and systems with the Windows Bluetooth stack. The included documentation provides a brief overview of the ways to configure the hardware and suggests topologies for best test coverage. Procedural information about how to run the tests and collect trace events from the Bluetooth Windows stack are included. Click the following button to download the latest version.
 
 > [!div class="nextstepaction"]
-> [Download the current release of BTP](https://download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.10.1.msi)
+> [Download the current release of BTP](https://download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.11.1.msi)
 
 ## Version Updates
 
 | Version | Changes |
 | --- | --- |
+| 1.11.1 | - Fixed crash when running standby HID power tests without an installed virtual power button.</br> - Added explicit firmware version checks for Bluefruit Feather.</br> - Several other fixes and improvements to test reliability. |
 | 1.10.1 | - Added power state HID tests.</br> - Several other fixes and improvements to test reliability. |
 | 1.9.0 | - Improved support for BTP devices using custom DLL plugins.</br> - Fixed an issue affecting the audio mute/unmute tests in certain Windows builds.</br> - Several other fixes and improvements to test reliability. |
 | 1.8.0 | - Added Wi-Fi with Bluetooth audio and HID co-existence tests.</br>- Added mute and unmute audio tests.</br>- Added option to record audio played during tests to a local file.</br>- Fixed issue that could cause the Bluefruit Feather to incorrectly report its Bluetooth address.</br>- Fixed issue with running current audio tests on older Windows builds.</br>- Several other fixes and improvements to test reliability. |

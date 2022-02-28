@@ -41,7 +41,7 @@ Starting with the February 2022 Windows Insider Preview (WIP) release of the WDK
 
 Q. Can drivers targeting  Windows 8.1, Windows 8, and Windows 7 be built?
 
-A. No – you will need to install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine.
+A. No – you will need to install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine. For details, see [Download the Windows Driver Kit (WDK)](./download-the-wdk.md).
 
 Q. Why can't the WDK continue supporting 32 bit/ARM kernel-mode drivers?
 

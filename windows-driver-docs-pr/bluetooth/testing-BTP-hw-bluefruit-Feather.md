@@ -39,8 +39,8 @@ When you first get new hardware, the bootloader needs to be updated. You should 
 
 1. Plug the Bluefruit Feather device into a PC via a micro-USB cable.
 1. Follow the [Adafruit](https://learn.adafruit.com/introducing-the-adafruit-nrf52840-feather/update-bootloader) instructions to update the bootloader.
-    - Use version 3.2_s140_6.1.1 of the bootloader.
-    - The correct package to download should have the name "feather_nrf52840_express_bootloader-0.3.2_s140_6.1.1.zip". It can be found on the [0.3.2 release page](https://github.com/adafruit/Adafruit_nRF52_Bootloader/releases/tag/0.3.2).
+    - Use version 0.6.3_s140_6.1.1 of the bootloader.
+    - The correct package to download should have the name "feather_nrf52840_express_bootloader-0.6.3_s140_6.1.1.zip". It can be found on the [0.6.3 release page](https://github.com/adafruit/Adafruit_nRF52_Bootloader/releases/tag/0.6.3).
 
 ### Updating the firmware
 
