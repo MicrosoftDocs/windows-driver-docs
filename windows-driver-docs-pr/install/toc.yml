@@ -108,62 +108,18 @@
     items: 
     - name: "Driver Signing"
       href: driver-signing.md
-    - name: "Digital Signatures"
-      href: digital-signatures.md
-    - name: "Authenticode Digital Signatures"
-      href: authenticode.md
-    - name: "Catalog Files and Digital Signatures"
-      href: catalog-files.md
-    - name: "Embedded Signatures in a Driver File"
-      href: embedded-signatures-in-a-driver-file.md
-    - name: "Digital Signatures and PnP Device Installation"
-      href: digital-signatures-and-pnp-device-installation--windows-vista-and-late.md
-    - name: "Digital Certificates"
-      href: digital-certificates.md
-    - name: "Certificate Stores"
-      href: certificate-stores.md
-    - name: "Local Machine and Current User Certificate Stores"
-      href: local-machine-and-current-user-certificate-stores.md
-    - name: "Trusted Root Certification Authorities Certificate Store"
-      href: trusted-root-certification-authorities-certificate-store.md
-    - name: "Trusted Publishers Certificate Store"
-      href: trusted-publishers-certificate-store.md
     - name: "Kernel-Mode Code Signing Policy"
       href: kernel-mode-code-signing-policy--windows-vista-and-later-.md
     - name: "Windows 10 in S mode Driver Requirements"
       href: Windows10SDriverRequirements.md
-    - name: "Managing the Signing Process"
-      href: managing-the-signing-process.md
-    - name: "Kernel-Mode Code Signing Requirements"
-      href: kernel-mode-code-signing-requirements--windows-vista-and-later-.md
-    - name: "PnP Device Installation Signing Requirements"
-      href: pnp-device-installation-signing-requirements--windows-vista-and-later-.md
     - name: "Authenticode Signing of Third-party CSPs"
       href: authenticode-signing-of-csps.md
     - name: "Managing the Digital Signature or Code Signing Keys"
       href: managing-the-digital-signature-or-code-signing-keys.md
     - name: "Cross-Certificates for Kernel Mode Code Signing"
       href: cross-certificates-for-kernel-mode-code-signing.md
-    - name: "Using Inf2Cat to Create a Catalog File"
-      href: using-inf2cat-to-create-a-catalog-file.md
-    - name: "Using MakeCat to Create a Catalog File"
-      href: using-makecat-to-create-a-catalog-file.md
-    - name: "Installing a Catalog File by using CryptCATAdminAddCatalog"
-      href: installing-a-catalog-file-by-using-cryptcatadminaddcatalog.md
-    - name: "Installing a Catalog File by using SignTool"
-      href: installing-a-catalog-file-by-using-signtool.md
     - name: "Installing an Unsigned Driver during Development and Test"
       href: installing-an-unsigned-driver-during-development-and-test.md
-    - name: "Personal Information Exchange (.pfx) Files"
-      href: personal-information-exchange---pfx--files.md
-    - name: "Importing an SPC into a Certificate Store"
-      href: importing-an-spc-into-a-certificate-store.md
-    - name: "Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates"
-      href: deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md
-    - name: "Creating a Catalog File for a PnP Driver Package "
-      href: creating-a-catalog-file-for-a-pnp-driver-package.md
-    - name: "Creating a Catalog File for a Non-PnP Driver"
-      href: creating-a-catalog-file-for-a-non-pnp-driver-package.md
     - name: "Windows Driver Signing Tutorial"
       href: windows-driver-signing-tutorial.md
     - name: "Appendix 1: Enforcing Kernel-Mode Signature Verification in Kernel Debugging Mode"
@@ -174,6 +130,56 @@
       href: appendix-3--enable-code-integrity-event-logging-and-system-auditing.md
     - name: "Appendix 4: Driver Signing Issues"
       href: appendix-4--driver-signing-issues.md
+    - name: "Digital Signatures"
+      items: 
+      - name: "Digital Signatures"
+        href: digital-signatures.md
+      - name: "Authenticode Digital Signatures"
+        href: authenticode.md
+      - name: "Embedded Signatures in a Driver File"
+        href: embedded-signatures-in-a-driver-file.md
+      - name: "Digital Signatures and PnP Device Installation"
+        href: digital-signatures-and-pnp-device-installation--windows-vista-and-late.md
+      - name: "Managing the Signing Process"
+        href: managing-the-signing-process.md
+      - name: "Kernel-Mode Code Signing Requirements"
+        href: kernel-mode-code-signing-requirements--windows-vista-and-later-.md
+      - name: "PnP Device Installation Signing Requirements"
+        href: pnp-device-installation-signing-requirements--windows-vista-and-later-.md
+    - name: "Catalog Files"
+      items: 
+      - name: "Catalog Files and Digital Signatures"
+        href: catalog-files.md
+      - name: "Using Inf2Cat to Create a Catalog File"
+        href: using-inf2cat-to-create-a-catalog-file.md
+      - name: "Using MakeCat to Create a Catalog File"
+        href: using-makecat-to-create-a-catalog-file.md
+      - name: "Installing a Catalog File by using SignTool"
+        href: installing-a-catalog-file-by-using-signtool.md
+      - name: "Installing a Catalog File by using CryptCATAdminAddCatalog"
+        href: installing-a-catalog-file-by-using-cryptcatadminaddcatalog.md
+      - name: "Creating a Catalog File for a PnP Driver Package "
+        href: creating-a-catalog-file-for-a-pnp-driver-package.md
+      - name: "Creating a Catalog File for a Non-PnP Driver"
+        href: creating-a-catalog-file-for-a-non-pnp-driver-package.md
+    - name: "Certificates"
+      items: 
+      - name: "Digital Certificates"
+        href: digital-certificates.md
+      - name: "Certificate Stores"
+        href: certificate-stores.md
+      - name: "Local Machine and Current User Certificate Stores"
+        href: local-machine-and-current-user-certificate-stores.md
+      - name: "Trusted Root Certification Authorities Certificate Store"
+        href: trusted-root-certification-authorities-certificate-store.md
+      - name: "Trusted Publishers Certificate Store"
+        href: trusted-publishers-certificate-store.md
+      - name: "Personal Information Exchange (.pfx) Files"
+        href: personal-information-exchange---pfx--files.md
+      - name: "Importing an SPC into a Certificate Store"
+        href: importing-an-spc-into-a-certificate-store.md
+      - name: "Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates"
+        href: deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md
     - name: "Test Signing"
       items: 
       - name: "Introduction to Test-Signing"
