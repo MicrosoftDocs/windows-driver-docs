@@ -2,7 +2,7 @@
 title: Get a code signing certificate
 description: Get a code signing certificate
 ms.topic: article
-ms.date: 02/10/2022
+ms.date: 02/28/2022
 ---
 
 # Get a code signing certificate
@@ -32,9 +32,6 @@ The following certificate authorities are listed in alphabetical order.
 ## Step 3: Retrieve code signing certificates
 
 Once the certificate authority has verified your contact information and your certificate purchase is approved, follow their directions to retrieve the certificate.
-
-> [!NOTE]
-> You must use the same computer and browser to buy and retrieve your certificate.
 
 ## Step 4: Add the certificates to your account on Partner Center
 
@@ -100,4 +97,4 @@ This table summarizes the driver signing requirements for Windows.
 
 \*Configuration dependent – With Windows 10 Enterprise edition, organizations can use Windows Defender Application Control (WDAC) to define custom signing requirements. For more information about WDAC, see [Planning and getting started on the Windows Defender Application Control deployment process](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
-(1) Driver signing is required for manufacturers building retail products (i.e. for a non-development purpose) with IoT Core. For a list of approved Certificate Authorities (CAs), see [Cross-Certificates for Kernel Mode Code Signing](../install/cross-certificates-for-kernel-mode-code-signing.md). Note that if UEFI Secure Boot is enabled, then drivers must be signed.
+(1) Driver signing is required for manufacturers building retail products (i.e. for a non-development purpose) with IoT Core. For a list of approved Certificate Authorities (CAs), see [Cross-Certificates for Kernel Mode Code Signing](../install/cross-certificates-for-kernel-mode-code-signing.md). If UEFI Secure Boot is enabled, then drivers must be signed.
