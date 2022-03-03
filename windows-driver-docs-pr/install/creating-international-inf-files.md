@@ -12,10 +12,6 @@ ms.date: 04/20/2017
 
 # Creating International INF Files
 
-
-
-
-
 Creating installations for international markets requires providing locale-specific INF files and, possibly, locale-specific driver files.
 
 An INF file that will be used in an international market should use **%**<em>strkey</em>**%** tokens for all user-viewable text. The strings are defined in an INF **Strings** section, which is typically at the end of the INF file.
@@ -77,9 +73,9 @@ LocaleSubDir="German"
 
 ### Creating Unicode INF Files
 
-If an INF file contains characters that fall outside the ASCII range (that is, outside the range of 0-127), the INF file should be in Unicode format. One way to create a Unicode INF file is to use an application such as Notepad to save it in Unicode format. If the INF is not in Unicode format, Windows uses the current locale to translate characters. If the INF file is in Unicode format, Windows uses the full Unicode character set.
+If an INF file contains characters that fall outside the ASCII range (that is, outside the range of 0-127), the INF file should be in Unicode (UTF-16) format. One way to create a Unicode INF file is to use an application such as Notepad to save it in Unicode (UTF-16) format. If the INF is not in Unicode (UTF-16) format, Windows uses the current locale to translate characters. If the INF file is in Unicode (UTF-16) format, Windows uses the full Unicode character set.
 
-Some applications, such as Notepad, allow you to create a Unicode file in either little-endian or big-endian format. Windows supports INF files that use either format.
+Some applications, such as Notepad, allow you to create a Unicode (UTF-16) file in either little-endian or big-endian format. Windows supports INF files that use either format.
 
  
 

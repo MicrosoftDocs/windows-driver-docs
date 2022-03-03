@@ -3,8 +3,6 @@ title: Bring up
 description: This section of the partner documentation is designed for hardware engineers and developers who need to understand how to get started with bringing up hardware on Windows 10.
 ms.date: 08/13/2021
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Bring up guide

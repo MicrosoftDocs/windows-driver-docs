@@ -9,23 +9,18 @@ api_name:
 - DevCon FindAll
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 02/11/2022
 ---
 
 # DevCon FindAll
 
-Finds all devices on the computer, including devices that were once attached to the computer but have been detached or moved. (These are known as nonpresent devices or *phantom* devices.) The **DevCon FindAll** operation also finds devices that are enumerated differently as a result of a BIOS change. Valid on local and remote computers.
+Finds all devices on the computer, including devices that were once attached to the computer but have been detached or moved. (These are known as nonpresent devices or *phantom* devices.) The **DevCon FindAll** operation also finds devices that are enumerated differently as a result of a BIOS change. 
 
 ```
-    devcon [/m:\\computer] findall {* | ID [ID ...] | =class [ID [ID ...]]}
+    devcon findall {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
 ## <span id="ddk_devcon_findall_tools"></span><span id="DDK_DEVCON_FINDALL_TOOLS"></span>Parameters
-
-<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>
-Runs the command on the specified remote computer. The backslashes are required.
-
-**Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and later versions of Windows, the Group Policy disables remote access to the service by default.
 
 <span id="______________"></span> **\***
 Represents all devices on the computer.
@@ -69,8 +64,6 @@ Specifies the device setup class of the devices. The equal sign (**=**) identifi
 You can also specify hardware IDs, compatible IDs, device instance IDs, or ID patterns following the class name. Type a space between each ID or pattern. DevCon finds devices in the class that match the specified IDs.
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
-
-The **/m** parameter must precede the operation name (**findall**). Otherwise, DevCon ignores the **/m** parameter and searches the local computer without returning a syntax error.
 
 To find only devices that are currently attached to the computer, use the [**DevCon Find**](devcon-find.md) operation.
 

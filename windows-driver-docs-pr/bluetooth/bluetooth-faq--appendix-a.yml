@@ -4,7 +4,7 @@ metadata:
   description: This appendix describes the procedure for installing an in-box Bluetooth driver on new hardware in Windows Vista
   ms.date: 04/20/2017
   ms.localizationpriority: medium
-    
+  ms.topic: faq
 title: 'Appendix A: How to Install an In-Box Bluetooth Driver on New Hardware in Windows Vista'
 summary: This appendix describes the procedure for forcing the Bluetooth driver that is included with Windows Vista to install on a new Bluetooth radio. Windows XP SP2 uses a similar procedure, although some of the details are different.
 

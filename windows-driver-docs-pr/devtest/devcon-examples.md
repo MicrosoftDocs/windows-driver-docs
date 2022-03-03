@@ -10,14 +10,16 @@ keywords:
 - commands WDK DevCon
 - Example 44 Forcibly update the HAL
 - HAL update example
-ms.date: 04/20/2017
+ms.custom: contperf-fy22q3 
+ms.date: 01/26/2022
 ---
 
 # Device Console (DevCon.exe) Examples
 
+> [!IMPORTANT]
+> PnPUtil ships with every release of Windows and makes use of the most reliable and secure APIs available and it’s use is recommended. For more information on using the PnPutil, instead of devcon, see [PnPUtil](pnputil.md).
 
 ## <span id="ddk_devcon_examples_tools"></span><span id="DDK_DEVCON_EXAMPLES_TOOLS"></span>
-
 
 This section provides examples of the following Device Console (DevCon.exe) commands:
 
@@ -33,13 +35,11 @@ This section provides examples of the following Device Console (DevCon.exe) comm
 
 [Example 4: List classes on the local computer](#ddk_example_4_list_classes_on_the_local_computer_tools)
 
-[Example 5: List classes on the remote computer](#ddk_example_5_list_classes_on_the_remote_computer_tools)
-
 ### <span id="devcon_listclass"></span><span id="DEVCON_LISTCLASS"></span>DevCon ListClass
 
 [Example 6: List the devices in a device setup class](#ddk_example_6_list_the_devices_in_a_device_setup_class_tools)
 
-[Example 7: List the devices in multiple classes on a remote computer](#ddk_example_7_list_the_devices_in_multiple_classes_on_a_remote_compute)
+[Example 7: List the devices in multiple classes](#ddk_example_7_list_the_devices_in_multiple_classes_on_a_remote_compute)
 
 ### <span id="devcon_driverfiles"></span><span id="DEVCON_DRIVERFILES"></span>DevCon DriverFiles
 
@@ -57,7 +57,7 @@ This section provides examples of the following Device Console (DevCon.exe) comm
 
 [Example 12: List resources of a class of devices](#ddk_example_12_list_resources_of_a_class_of_devices_tools)
 
-[Example 13: List resources of device on a remote computer by ID](#ddk_example_13_list_resources_of_device_on_a_remote_computer_by_id_too)
+[Example 13: List resources of device by ID](#ddk_example_13_list_resources_of_device_on_a_remote_computer_by_id_too)
 
 ### <span id="devcon_stack"></span><span id="DEVCON_STACK"></span>DevCon Stack
 
@@ -65,7 +65,7 @@ This section provides examples of the following Device Console (DevCon.exe) comm
 
 [Example 15: Find the setup class of a device](#ddk_example_15_find_the_setup_class_of_a_device_tools)
 
-[Example 16: Display the stack for related devices on a remote computer](#ddk_example_16_display_the_stack_for_related_devices_on_a_remote_compu)
+[Example 16: Display the stack for related devices](#ddk_example_16_display_the_stack_for_related_devices_on_a_remote_compu)
 
 ### <span id="devcon_status"></span><span id="DEVCON_STATUS"></span>DevCon Status
 
@@ -73,7 +73,7 @@ This section provides examples of the following Device Console (DevCon.exe) comm
 
 [Example 18: Display the status of a device by device instance ID](#ddk_example_18_display_the_status_of_a_device_by_device_instance_id_to)
 
-[Example 19: Display the status of related devices on a remote computer](#ddk_example_19_display_the_status_of_related_devices_on_a_remote_compu)
+[Example 19: Display the status of related devices](#ddk_example_19_display_the_status_of_related_devices_on_a_remote_compu)
 
 ### <span id="devcon_find"></span><span id="DEVCON_FIND"></span>DevCon Find
 
@@ -143,9 +143,9 @@ This section provides examples of the following Device Console (DevCon.exe) comm
 
 [Example 40: Assign a hardware ID to a legacy device](#ddk_example_40_assign_a_hardware_id_to_a_legacy_device_tools)
 
-[Example 41: Add a hardware ID to all legacy devices on a remote computer](#ddk_example_41_add_a_hardware_id_to_all_legacy_devices_on_a_remote_com)
+[Example 41: Add a hardware ID to all legacy devices](#ddk_example_41_add_a_hardware_id_to_all_legacy_devices_on_a_remote_com)
 
-[Example 42: Delete a hardware ID from all legacy devices on a remote computer](#ddk_example_42_delete_a_hardware_id_from_all_legacy_devices_on_a_remot)
+[Example 42: Delete a hardware ID from all legacy devices](#ddk_example_42_delete_a_hardware_id_from_all_legacy_devices_on_a_remot)
 
 [Example 43: Add, delete, and replace hardware IDs](#ddk_example_43_add_delete_and_replace_hardwareids_tools)
 
@@ -153,7 +153,7 @@ This section provides examples of the following Device Console (DevCon.exe) comm
 
 ### <span id="devcon_dp_add__dp_deleted__dp_enum"></span><span id="DEVCON_DP_ADD__DP_DELETED__DP_ENUM"></span>DevCon dp\_add, dp\_deleted, dp\_enum
 
-[Example 45: Add and Remove Driver Packages](example-45--add-and-remove-driver-packages.md)
+[Example 45: Add and Remove Driver Packages](#ddk_example_45_add_remove)
 
 ### <span id="ddk_example_1_find_all_hardware_ids_tools"></span><span id="DDK_EXAMPLE_1_FIND_ALL_HARDWARE_IDS_TOOLS"></span><a name="ddk_example_1_find_all_hardware_ids_tools"></a>Example 1: Find all hardware IDs
 
@@ -171,16 +171,6 @@ The following command uses the wildcard character (**\***) to represent all devi
 
 ```
 devcon hwids * > hwids.txt
-```
-
-The following command finds the hardware IDs of devices on a remote computer, Server01. It uses the **/m** parameter to specify the name of the remote computer. The command redirects the output to the server01\_hwids.txt file for later reference.
-
-**Note**   This command fails unless the user has the required permissions on the remote computer. To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run Windows Driver Kit (WDK) 8.1 and Windows Driver Kit (WDK) 8, the remote access is unavailable.
-
- 
-
-```
-devcon /m:\\server01 hwids * > server01_hwids.txt
 ```
 
 ### <span id="ddk_example_2_find_hardware_ids_by_using_a_pattern_tools"></span><span id="DDK_EXAMPLE_2_FIND_HARDWARE_IDS_BY_USING_A_PATTERN_TOOLS"></span><a name="ddk_example_2_find_hardware_ids_by_using_a_pattern_tools"></a>Example 2: Find hardware IDs by using a pattern
@@ -254,22 +244,6 @@ The following command displays all device classes on the computer. It uses the r
 devcon classes > classes.txt
 ```
 
-### <span id="ddk_example_5_list_classes_on_the_remote_computer_tools"></span><span id="DDK_EXAMPLE_5_LIST_CLASSES_ON_THE_REMOTE_COMPUTER_TOOLS"></span><a name="ddk_example_5_list_classes_on_the_remote_computer_tools"></a>Example 5: List classes on the remote computer
-
-The following command uses the [**DevCon Classes**](devcon-classes.md) operation to list the device setup classes on a remote computer, Server01:
-
-```
-devcon /m:\\server01 classes
-```
-
-Because the output is lengthy and used repeatedly, save the output in a text file for reference.
-
-The following command uses the redirection character (**&gt;**) to save the command output in the server01\_classes.txt file.
-
-```
-devcon /m:\\server01 classes > server01_classes.txt
-```
-
 ### <span id="ddk_example_6_list_the_devices_in_a_device_setup_class_tools"></span><span id="DDK_EXAMPLE_6_LIST_THE_DEVICES_IN_A_DEVICE_SETUP_CLASS_TOOLS"></span><a name="ddk_example_6_list_the_devices_in_a_device_setup_class_tools"></a>Example 6: List the devices in a device setup class
 
 The following command uses the [**DevCon ListClass**](devcon-listclass.md) operation to list the devices in Net, the device setup class for network adapters.
@@ -337,22 +311,22 @@ ROOT\MS_PTIMINIPORT\0000
 6 matching device(s) found.
 ```
 
-### <span id="ddk_example_7_list_the_devices_in_multiple_classes_on_a_remote_compute"></span><span id="DDK_EXAMPLE_7_LIST_THE_DEVICES_IN_MULTIPLE_CLASSES_ON_A_REMOTE_COMPUTE"></span><a name="ddk_example_7_list_the_devices_in_multiple_classes_on_a_remote_compute"></a>Example 7: List the devices in multiple classes on a remote computer
+### <span id="ddk_example_7_list_the_devices_in_multiple_classes_on_a_remote_compute"></span><span id="DDK_EXAMPLE_7_LIST_THE_DEVICES_IN_MULTIPLE_CLASSES_ON_A_REMOTE_COMPUTE"></span><a name="ddk_example_7_list_the_devices_in_multiple_classes_on_a_remote_compute"></a>Example 7: List the devices in multiple classes
 
-The following command uses the [**DevCon ListClass**](devcon-listclass.md) operation to list the devices in the DiskDrive, CDROM, and TapeDrive classes on Server01, a remote computer.
-
-```
-devcon /m:\\server01 listclass diskdrive cdrom tapedrive
-```
-
-In response, DevCon displays the devices in those classes on the remote computer.
+The following command uses the [**DevCon ListClass**](devcon-listclass.md) operation to list the devices in the DiskDrive, CDROM, and TapeDrive classes.
 
 ```
-Listing 1 device(s) for setup class "DiskDrive" (Disk drives) on \\server01.
+devcon listclass diskdrive cdrom tapedrive
+```
+
+In response, DevCon displays the devices in those classes.
+
+```
+Listing 1 device(s) for setup class "DiskDrive" (Disk drives).
 IDE\DISKWDC_WD204BA_____________________________16.13M16\4457572D414D3730323136333938203120202020: WDC WD204BA
-Listing 1 device(s) for setup class "CDROM" (DVD/CD-ROM drives) on \\server01.
+Listing 1 device(s) for setup class "CDROM" (DVD/CD-ROM drives).
 IDE\CDROMSAMSUNG_DVD-ROM_SD-608__________________2.2_____\4&13B4AFD&0&0.0.0: SAMSUNG DVD-ROM SD-608
-No devices for setup class "TapeDrive" (Tape drives) on \\server01.
+No devices for setup class "TapeDrive" (Tape drives).
 ```
 
 ### <span id="ddk_example_8_list_all_driver_files_tools"></span><span id="DDK_EXAMPLE_8_LIST_ALL_DRIVER_FILES_TOOLS"></span><a name="ddk_example_8_list_all_driver_files_tools"></a>Example 8: List all driver files
@@ -550,15 +524,15 @@ PCIIDE\IDECHANNEL\4&37E53584&0&1
 3 matching device(s) found.
 ```
 
-### <span id="ddk_example_13_list_resources_of_device_on_a_remote_computer_by_id_too"></span><span id="DDK_EXAMPLE_13_LIST_RESOURCES_OF_DEVICE_ON_A_REMOTE_COMPUTER_BY_ID_TOO"></span><a name="ddk_example_13_list_resources_of_device_on_a_remote_computer_by_id_too"></a>Example 13: List resources of device on a remote computer by ID
+### <span id="ddk_example_13_list_resources_of_device_on_a_remote_computer_by_id_too"></span><span id="DDK_EXAMPLE_13_LIST_RESOURCES_OF_DEVICE_ON_A_REMOTE_COMPUTER_BY_ID_TOO"></span><a name="ddk_example_13_list_resources_of_device_on_a_remote_computer_by_id_too"></a>Example 13: List resources of device by ID
 
-The following command uses the [**DevCon Resources**](devcon-resources.md) operation to list the resources allocated to the system timer on Server01, a remote computer. The command uses the hardware ID of the system timer, ACPI\\PNP0100, to specify the device.
+The following command uses the [**DevCon Resources**](devcon-resources.md) operation to list the resources allocated to the system timer. The command uses the hardware ID of the system timer, ACPI\\PNP0100, to specify the device.
 
 ```
-devcon /m:\\Server01 resources *PNP0100
+devcon resources *PNP0100
 ```
 
-In response, DevCon displays the resources of the Server01 system timer.
+In response, DevCon displays the resources of the system timer.
 
 ```
 ROOT\*PNP0100\PNPBIOS_8
@@ -566,13 +540,13 @@ ROOT\*PNP0100\PNPBIOS_8
     Device has the following resources reserved:
         IO  : 0040-005f
         IRQ : 0
-1 matching device(s) found on \\server01.
+1 matching device(s) found.
 ```
 
-The following command uses the device instance ID of the remote system timer in the DevCon resources command. The at character (**@**) indicates that the string is a device instance ID, not a hardware ID or compatible ID.
+The following command uses the device instance ID of the system timer in the DevCon resources command. The at character (**@**) indicates that the string is a device instance ID, not a hardware ID or compatible ID.
 
 ```
-devcon /m:\\Server01 resources @ACPI\PNP0100\4&b4063f4&0
+devcon resources "@ACPI\PNP0100\4&b4063f4&0"
 ```
 
 ### <span id="ddk_example_14_display_the_driver_stack_for_storage_devices_tools"></span><span id="DDK_EXAMPLE_14_DISPLAY_THE_DRIVER_STACK_FOR_STORAGE_DEVICES_TOOLS"></span><a name="ddk_example_14_display_the_driver_stack_for_storage_devices_tools"></a>Example 14: Display the driver stack for storage devices
@@ -641,17 +615,17 @@ LPTENUM\MICROSOFTRAWPORT\5&CA97D7E&0&LPT1
 1 matching device(s) found.
 ```
 
-### <span id="ddk_example_16_display_the_stack_for_related_devices_on_a_remote_compu"></span><span id="DDK_EXAMPLE_16_DISPLAY_THE_STACK_FOR_RELATED_DEVICES_ON_A_REMOTE_COMPU"></span><a name="ddk_example_16_display_the_stack_for_related_devices_on_a_remote_compu"></a>Example 16: Display the stack for related devices on a remote computer
+### <span id="ddk_example_16_display_the_stack_for_related_devices_on_a_remote_compu"></span><span id="DDK_EXAMPLE_16_DISPLAY_THE_STACK_FOR_RELATED_DEVICES_ON_A_REMOTE_COMPU"></span><a name="ddk_example_16_display_the_stack_for_related_devices_on_a_remote_compu"></a>Example 16: Display the stack for related devices
 
-The following command uses the **DevCon Stack** operation to display the expected stack for miniport driver devices on Server01, a remote computer. It searches for devices in the Net setup class that have "miniport" in their hardware ID or compatible ID.
+The following command uses the **DevCon Stack** operation to display the expected stack for miniport driver devices. It searches for devices in the Net setup class that have "miniport" in their hardware ID or compatible ID.
 
 Note that this command first limits the search to the Net setup class and then finds the "miniport" string. It does not find devices other than those in the Net setup class.
 
 ```
-devcon /m:\\server01 stack =net *miniport*
+devcon stack =net *miniport*
 ```
 
-In response, DevCon displays the expected stack for miniport drivers on Server01.
+In response, DevCon displays the expected stack for miniport drivers.
 
 ```
 ROOT\MS_L2TPMINIPORT\0000
@@ -680,10 +654,10 @@ ROOT\MS_PTIMINIPORT\0000
         Raspti
     Lower filters:
         PtiLink
-4 matching device(s) found on \\Server01.
+4 matching device(s) found.
 ```
 
-### <span id="ddk_example_17_display_the_status_of_all_devices_on_the_local_computer"></span><span id="DDK_EXAMPLE_17_DISPLAY_THE_STATUS_OF_ALL_DEVICES_ON_THE_LOCAL_COMPUTER"></span><a name="ddk_example_17_display_the_status_of_all_devices_on_the_local_computer"></a>Example 17: Display the status of all devices on the local computer
+### <span id="ddk_example_17_display_the_status_of_all_devices_on_the_local_computer"></span><span id="DDK_EXAMPLE_17_DISPLAY_THE_STATUS_OF_ALL_DEVICES_ON_THE_LOCAL_COMPUTER"></span><a name="ddk_example_17_display_the_status_of_all_devices_on_the_local_computer"></a>Example 17: Display the status of all devices
 
 The following command uses the [**DevCon Status**](devcon-status.md) operation to find the status of all devices on the local computer. It then saves the status in the status.txt file for logging or later review. The command uses the wildcard character (**\***) to represent all devices and the redirection character (*<em>&gt;</em>*) to redirect the output to the status.txt file.
 
@@ -710,9 +684,9 @@ PCI\VEN_8086&DEV_1130&SUBSYS_00000000&REV_02\3&29E81982&0&00
 1 matching device(s) found.
 ```
 
-### <span id="ddk_example_19_display_the_status_of_related_devices_on_a_remote_compu"></span><span id="DDK_EXAMPLE_19_DISPLAY_THE_STATUS_OF_RELATED_DEVICES_ON_A_REMOTE_COMPU"></span><a name="ddk_example_19_display_the_status_of_related_devices_on_a_remote_compu"></a>Example 19: Display the status of related devices on a remote computer
+### <span id="ddk_example_19_display_the_status_of_related_devices_on_a_remote_compu"></span><span id="DDK_EXAMPLE_19_DISPLAY_THE_STATUS_OF_RELATED_DEVICES_ON_A_REMOTE_COMPU"></span><a name="ddk_example_19_display_the_status_of_related_devices_on_a_remote_compu"></a>Example 19: Display the status of related devices
 
-The following command uses the [**DevCon Status**](devcon-status.md) operation to display the status of particular storage-related devices on Server01, a remote computer. It searches for the following devices:
+The following command uses the [**DevCon Status**](devcon-status.md) operation to display the status of particular storage-related devices. It searches for the following devices:
 
 -   Disk drive, GenDisk
 
@@ -731,7 +705,7 @@ The following command uses the [**DevCon Status**](devcon-status.md) operation t
 In the command, each ID is separated from the others by spaces. Note that GenDisk and GenCdRom are compatible IDs, whereas the other IDs are hardware IDs.
 
 ```
-devcon /m:\\server01 status GenDisk GenCdRom FDC\GENERIC_FLOPPY_DRIVE STORAGE\Volume ROOT\DMIO ROOT\FTDISK ACPI\PNP0700
+devcon status GenDisk GenCdRom FDC\GENERIC_FLOPPY_DRIVE STORAGE\Volume ROOT\DMIO ROOT\FTDISK ACPI\PNP0700
 ```
 
 In response, DevCon displays the status of each device.
@@ -767,15 +741,15 @@ STORAGE\VOLUME\1&30A96598&0&SIGNATUREEA1AA9C7OFFSET1770DF800LENGTH3494AEA00
 STORAGE\VOLUME\1&30A96598&0&SIGNATUREEA1AA9C7OFFSET7E00LENGTH1770CFC00
     Name: Generic volume
     Driver is running.
-11 matching device(s) found on \\Server01.
+11 matching device(s) found.
 ```
 
 ### <span id="ddk_example_20_find_devices_by_hardware_id_pattern_tools"></span><span id="DDK_EXAMPLE_20_FIND_DEVICES_BY_HARDWARE_ID_PATTERN_TOOLS"></span><a name="ddk_example_20_find_devices_by_hardware_id_pattern_tools"></a>Example 20: Find devices by hardware ID pattern
 
-The following command uses the [**DevCon Find**](devcon-find.md) operation to search for mouse devices on Server01, a remote computer. Specifically, the command searches the Server01 computer for devices whose hardware ID or compatible ID includes "mou."
+The following command uses the [**DevCon Find**](devcon-find.md) operation to search for mouse devices. Specifically, the command searches the computer for devices whose hardware ID or compatible ID includes "mou.", and would not find a "moose" driver.
 
 ```
-devcon /m:\\Server01 find *mou*
+devcon find *mou*
 ```
 
 In this case, DevCon found both two mouse devices.
@@ -1277,12 +1251,6 @@ Scanning for new hardware.
 Scanning completed.
 ```
 
-You can also use a **DevCon Rescan** command on a remote computer. The following command runs the **DevCon Rescan** operation on Server01, a remote computer, by adding the **/m** parameter to the command.
-
-```
-devcon /m:\\server01 rescan
-```
-
 ### <span id="ddk_example_38_restart_a_device_tools"></span><span id="DDK_EXAMPLE_38_RESTART_A_DEVICE_TOOLS"></span><a name="ddk_example_38_restart_a_device_tools"></a>Example 38: Restart a device
 
 The following command uses the [**DevCon Restart**](devcon-restart.md) operation to restart the loopback adapter on the local computer. The command limits the search to the Net setup class and, within that class, specifies the device instance ID of the loopback adapter, @\'**ROOT\\\*MSLOOP\\0000**. The at character (**@**) identifies the string as an device instance ID. The single quote character (**'**), which requests a literal search, prevents DevCon from interpreting the asterisk in the ID as a wildcard character.
@@ -1332,14 +1300,14 @@ ROOT\LEGACY_BEEP\0000                              : beep
 Modified 1 hardware ID(s).
 ```
 
-### <span id="ddk_example_41_add_a_hardware_id_to_all_legacy_devices_on_a_remote_com"></span><span id="DDK_EXAMPLE_41_ADD_A_HARDWARE_ID_TO_ALL_LEGACY_DEVICES_ON_A_REMOTE_COM"></span><a name="ddk_example_41_add_a_hardware_id_to_all_legacy_devices_on_a_remote_com"></a>Example 41: Add a hardware ID to all legacy devices on a remote computer
+### <span id="ddk_example_41_add_a_hardware_id_to_all_legacy_devices_on_a_remote_com"></span><span id="DDK_EXAMPLE_41_ADD_A_HARDWARE_ID_TO_ALL_LEGACY_DEVICES_ON_A_REMOTE_COM"></span><a name="ddk_example_41_add_a_hardware_id_to_all_legacy_devices_on_a_remote_com"></a>Example 41: Add a hardware ID to all legacy devices
 
-The following command uses the [**DevCon SetHwID**](devcon-sethwid.md) operation to add the hardware ID, legacy, to the list of hardware IDs for all legacy devices on the Server1 remote computer.
+The following command uses the [**DevCon SetHwID**](devcon-sethwid.md) operation to add the hardware ID, legacy, to the list of hardware IDs for all legacy devices.
 
-The command uses the **-** symbol parameter to add the new hardware ID to the end of the hardware ID list for the device, in case a preferred hardware ID has been created for one of the devices. It uses the **/m** parameter to specify the remote computer. It also uses a device instance ID pattern, `@ROOT\LEGACY\*`, to identify the legacy devices on the computer, that is, all devices whose device instance ID begins with `ROOT\LEGACY*`.
+The command uses the **-** symbol parameter to add the new hardware ID to the end of the hardware ID list for the device, in case a preferred hardware ID has been created for one of the devices. It also uses a device instance ID pattern, `@ROOT\LEGACY\*`, to identify the legacy devices on the computer, that is, all devices whose device instance ID begins with `ROOT\LEGACY*`.
 
 ```
-devcon /m:\\Server1 sethwid @ROOT\LEGACY* := -legacy
+devcon sethwid @ROOT\LEGACY* := -legacy
 ```
 
 In response, DevCon displays the resulting hardware ID lists for all affected devices.
@@ -1364,14 +1332,14 @@ For example, the following command displays the status of all legacy devices.
 devcon status legacy
 ```
 
-### <span id="ddk_example_42_delete_a_hardware_id_from_all_legacy_devices_on_a_remot"></span><span id="DDK_EXAMPLE_42_DELETE_A_HARDWARE_ID_FROM_ALL_LEGACY_DEVICES_ON_A_REMOT"></span><a name="ddk_example_42_delete_a_hardware_id_from_all_legacy_devices_on_a_remot"></a>Example 42: Delete a hardware ID from all legacy devices on a remote computer
+### <span id="ddk_example_42_delete_a_hardware_id_from_all_legacy_devices_on_a_remot"></span><span id="DDK_EXAMPLE_42_DELETE_A_HARDWARE_ID_FROM_ALL_LEGACY_DEVICES_ON_A_REMOT"></span><a name="ddk_example_42_delete_a_hardware_id_from_all_legacy_devices_on_a_remot"></a>Example 42: Delete a hardware ID from all legacy devices
 
-The following command uses the [**DevCon SetHwID**](devcon-sethwid.md) operation to delete the hardware ID, **legacy**, from the list of hardware IDs for all legacy devices on the Server1 remote computer.
+The following command uses the [**DevCon SetHwID**](devcon-sethwid.md) operation to delete the hardware ID, **legacy**, from the list of hardware IDs for all legacy devices.
 
-The command uses the **/m** parameter to specify the remote computer. It uses the hardware ID, **legacy**, to identify all devices that have that hardware ID. Then, it uses the **!** symbol parameter to delete the **legacy** hardware ID.
+The command uses the hardware ID, **legacy**, to identify all devices that have that hardware ID. Then, it uses the **!** symbol parameter to delete the **legacy** hardware ID.
 
 ```
-devcon /m:\\Server1 sethwid legacy := !legacy
+devcon sethwid legacy := !legacy
 ```
 
 In response, DevCon displays the resulting hardware ID lists for all affected devices.
@@ -1475,6 +1443,75 @@ Then, DevCon displays the following success message.
 ```
 Updating drivers for acpiapic_mp from c:\windows\inf\hal.inf.
 Drivers updated successfully.
+```
+
+
+### <span id="ddk_example_45_add_remove"></span><span id="DDK_EXAMPLE_45_ADD_REMOVE"></span><a name="ddk_example_45_add_remove"></a>Example 45: Add and Remove Driver Packages
+
+The following examples show how to use DevCon to add, delete, and display third-party (OEM) driver packages in the driver store.
+
+The first command, a [**DevCon Dp\_add**](devcon-dp-add.md) command, copies the INF file for the Toaster sample driver in the WDK to the driver store, that is, to the %Windir%\\inf directory. The command includes the fully qualified path to the INF file for the Toaster sample driver.
+
+This command is intended for third-party (OEM) drivers and devices, but you can use the Toaster sample to test the commands.
+
+```
+devcon dp_add C:\WinDDK\5322\src\general\toaster\inf\i386\toaster.inf
+```
+
+In response, DevCon reports that it added the Toaster INF file to the driver store and named it Oem2.inf.
+
+```
+Driver Package 'oem2.inf' added.
+```
+
+Before copying it to the driver store, Windows compares the binary version of the INF file to the binary versions of the INF files in the driver store to be sure that it is not adding a duplicate file. For example, if you repeat the command to add Toaster.inf to the driver store, DevCon does not create a new OEM\*.inf file. It just reports the name of the existing file, as shown in the following DevCon output.
+
+```
+devcon dp_add C:\WinDDK\5322\src\general\toaster\inf\i386\toaster.inf
+Driver Package 'oem2.inf' added.
+
+devcon dp_add C:\WinDDK\5322\src\general\toaster\inf\i386\toaster.inf
+Driver Package 'oem2.inf' added.
+```
+
+To remove the driver package for the Toaster driver from the driver store, you must use the OEM\*.inf file name for the driver. To find the file name for the driver, use the [**DevCon Dp\_enum**](devcon-dp-enum.md) command.
+
+The following command lists all of the OEM driver packages and a few of their properties.
+
+```
+devcon dp_enum
+```
+
+In response, DevCon generates the following display:
+
+```
+c:\WinDDK\5322\tools\devcon\i386>devcon dp_enum
+The following 3rd party Driver Packages are on this machine:
+oem2.inf
+    Provider: Microsoft
+    Class: unknown
+```
+
+This information indicates that the driver package supplied by Microsoft with the unspecified device class (Toaster) is named OEM2.inf. You can use this information to delete the driver package associated with the file.
+
+The following command deletes the OEM2.inf file from the driver store, along with its associated precompiled INF (.pnf) and catalog (.cat) files. The command uses the OEM\*.inf file name.
+
+```
+devcon dp_delete oem2.inf
+```
+
+In response, DevCon displays a message that indicates the command succeeded:
+
+```
+Driver Package 'oem2.inf' deleted.
+```
+
+The OEM\*.inf file name is required in the [**DevCon Dp\_delete**](devcon-dp-delete.md) command. If you try to use the original name of the INF file, the command fails, as shown in the following DevCon output.
+
+```
+devcon dp_delete C:\WinDDK\5322\src\general\toaster.inf
+Deleting the specified Driver Package from the machine failed.
+devcon failed.
 ```
 
  

@@ -40,7 +40,7 @@
     href: building-for-onecore.md
   - name: "Building Drivers for Different Versions of Windows"
     href: building-drivers-for-different-versions-of-windows.md
-  - name: "Building ARM64 Drivers with the WDK"
+  - name: "Building Arm64 Drivers with the WDK"
     href: building-arm64-drivers.md
   - name: "Using the Enterprise WDK 10"
     href: using-the-enterprise-wdk.md

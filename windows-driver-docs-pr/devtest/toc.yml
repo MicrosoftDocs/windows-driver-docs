@@ -41,11 +41,24 @@
       href: configure-the-machine-for-testing.md
     - name: "Run the Tests"
       href: run-the-tests.md
+  - name: "PnPUtil"
+# Auto-expanded node
+    items: 
+    - name: "PnPUtil"
+      href: pnputil.md
+    - name: "PnPUtil Command Syntax"
+      href: pnputil-command-syntax.md
+    - name: "PnPUtil Examples"
+      href: pnputil-examples.md
+    - name: "PnPUtil Return Values"
+      href: pnputil-return-values.md
   - name: "Windows Device Console (Devcon.exe)"
 # Auto-expanded node
     items: 
     - name: "Windows Device Console (Devcon.exe)"
       href: devcon.md
+    - name: "Device Console (DevCon.exe) Examples"
+      href: devcon-examples.md
     - name: "Device Console (DevCon.exe) Commands"
 # Auto-expanded node
       items: 
@@ -99,24 +112,6 @@
         href: devcon-dp-enum.md
       - name: "DevCon Dp_delete"
         href: devcon-dp-delete.md
-    - name: "Device Console (DevCon.exe) Examples"
-# Auto-expanded node
-      items: 
-      - name: "Device Console (DevCon.exe) Examples"
-        href: devcon-examples.md
-      - name: "Example 45: Add and Remove Driver Packages"
-        href: example-45--add-and-remove-driver-packages.md
-  - name: "PnPUtil"
-# Auto-expanded node
-    items: 
-    - name: "PnPUtil"
-      href: pnputil.md
-    - name: "PnPUtil Command Syntax"
-      href: pnputil-command-syntax.md
-    - name: "PnPUtil Examples"
-      href: pnputil-examples.md
-    - name: "PnPUtil Return Values"
-      href: pnputil-return-values.md
   - name: "Additional Test Tools"
 # Auto-expanded node
     items: 
@@ -336,47 +331,6 @@
     href: tools-for-verifying-drivers.md
   - name: "Static and Dynamic Verification Tools"
     href: static-and-dynamic-verification-tools.md
-  - name: "Survey of Verification Tools"
-    href: survey-of-verification-tools.md
-  - name: "Checked Build of Windows"
-# Auto-expanded node
-    items: 
-    - name: "Checked Build of Windows"
-      href: checked-build-of-windows.md
-    - name: "Checked and Free Build Differences"
-      href: checked-and-free-build-differences.md
-    - name: "Using the Checked Build of Windows"
-# Auto-expanded node
-      items: 
-      - name: "Using the Checked Build of Windows"
-        href: using-the-checked-build.md
-      - name: "What the Checked Build Checks"
-        href: what-the-checked-build-checks.md
-      - name: "How the Checked Build Indicates a Problem"
-        href: how-the-checked-build-indicates-a-problem.md
-      - name: "Side Effects of Using the Checked Build"
-        href: side-effects-of-using-the-checked-build.md
-      - name: "The Checked Build and the Debugger"
-        href: the-checked-build-and-the-debugger.md
-      - name: "The Checked Build and Driver Verifier"
-        href: the-checked-build-and-driver-verifier.md
-    - name: "Installing the Checked Build of Windows"
-# Auto-expanded node
-      items: 
-      - name: "Installing the Checked Build of Windows"
-        href: installing-the-checked-build.md
-      - name: "Installing the Complete Checked Build"
-        href: installing-the-complete-checked-build.md
-      - name: "Installing Just the Checked Operating System and HAL (For Windows Vista and Later)"
-        href: installing-just-the-checked-operating-system-and-hal--for-windows-vist.md
-      - name: "Installing Just the Checked Operating System and HAL (For Windows XP and Windows Server 2003)"
-        href: installing-just-the-checked-operating-system-and-hal--for-windows-xp-a.md
-    - name: "Checked Build Breakpoints and Messages"
-      href: checked-build-breakpoints-and-messages.md
-    - name: "Checked Build ASSERTs"
-      href: checked-build-asserts.md
-  - name: "Application Verifier"
-    href: application-verifier.md
   - name: "Code Analysis for Drivers"
 # Auto-expanded node
     items: 
@@ -617,69 +571,66 @@
     items: 
     - name: "Driver Verifier"
       href: driver-verifier.md
-    - name: "Driver Verifier"
-# Auto-expanded node
-      items: 
-      - name: "Driver Verifier: What's new"
-        href: driver-verifier--what-s-new.md
-      - name: "Driver Verifier Command Syntax"
-        href: verifier-command-line.md
-      - name: "Driver Verifier Options"
-        href: driver-verifier-options.md
-      - name: "Automatic Checks"
-        href: automatic-checks.md
-      - name: "Special Pool"
-        href: special-pool.md
-      - name: "Force IRQL Checking"
-        href: force-irql-checking.md
-      - name: "Low Resources Simulation"
-        href: low-resources-simulation.md
-      - name: "Pool Tracking"
-        href: pool-tracking.md
-      - name: "I/O Verification"
-        href: i-o-verification.md
-      - name: "Deadlock Detection"
-        href: deadlock-detection.md
-      - name: "Enhanced I/O Verification"
-        href: enhanced-i-o-verification.md
-      - name: "DMA Verification"
-        href: dma-verification.md
-      - name: "Force Pending I/O Requests"
-        href: force-pending-i-o-requests.md
-      - name: "Security Checks"
-        href: security-checks.md
-      - name: "IRP Logging"
-        href: irp-logging.md
-      - name: "Miscellaneous Checks"
-        href: miscellaneous-checks.md
-      - name: "Storport Verification"
-        href: dv-storport-verification.md
-      - name: "SCSI Verification"
-        href: scsi-verification.md        
-      - name: "Power Framework Delay Fuzzing"
-        href: concurrency-stress-test.md
-      - name: "DDI compliance checking"
-        href: ddi-compliance-checking.md
-      - name: "Invariant MDL Checking for Stack"
-        href: invariant-mdl-checking-for-stack.md
-      - name: "Invariant MDL Checking for Driver"
-        href: invariant-mdl-checking-for-driver.md
-      - name: "Stack Based Failure Injection"
-        href: stack-based-failure-injection.md
-      - name: "Systematic low resources simulation"
-        href: systematic-low-resource-simulation.md
-      - name: "NDIS/WIFI verification"
-        href: ndis-wifi-verification.md
-      - name: "Kernel synchronization delay fuzzing"
-        href: kernel-synchronization-delay-fuzzing.md
-      - name: "VM switch verification"
-        href: vm-switch-verification.md
-      - name: "Port/miniport interface checking"
-        href: port-miniport-interface-checking.md
-      - name: "Code integrity checking"
-        href: code-integrity-checking.md
-      - name: "WDF verification"
-        href: wdf-verification.md
+    - name: "Driver Verifier Command Syntax"
+      href: verifier-command-line.md
+    - name: "Driver Verifier Options"
+      href: driver-verifier-options.md
+    - name: "Automatic Checks"
+      href: automatic-checks.md
+    - name: "Special Pool"
+      href: special-pool.md
+    - name: "Force IRQL Checking"
+      href: force-irql-checking.md
+    - name: "Low Resources Simulation"
+      href: low-resources-simulation.md
+    - name: "Pool Tracking"
+      href: pool-tracking.md
+    - name: "I/O Verification"
+      href: i-o-verification.md
+    - name: "Deadlock Detection"
+      href: deadlock-detection.md
+    - name: "Enhanced I/O Verification"
+      href: enhanced-i-o-verification.md
+    - name: "DMA Verification"
+      href: dma-verification.md
+    - name: "Force Pending I/O Requests"
+      href: force-pending-i-o-requests.md
+    - name: "Security Checks"
+      href: security-checks.md
+    - name: "IRP Logging"
+      href: irp-logging.md
+    - name: "Miscellaneous Checks"
+      href: miscellaneous-checks.md
+    - name: "Storport Verification"
+      href: dv-storport-verification.md
+    - name: "SCSI Verification"
+      href: scsi-verification.md        
+    - name: "Power Framework Delay Fuzzing"
+      href: concurrency-stress-test.md
+    - name: "DDI compliance checking"
+      href: ddi-compliance-checking.md
+    - name: "Invariant MDL Checking for Stack"
+      href: invariant-mdl-checking-for-stack.md
+    - name: "Invariant MDL Checking for Driver"
+      href: invariant-mdl-checking-for-driver.md
+    - name: "Stack Based Failure Injection"
+      href: stack-based-failure-injection.md
+    - name: "Systematic low resources simulation"
+      href: systematic-low-resource-simulation.md
+    - name: "NDIS/WIFI verification"
+      href: ndis-wifi-verification.md
+    - name: "Kernel synchronization delay fuzzing"
+      href: kernel-synchronization-delay-fuzzing.md
+    - name: "VM switch verification"
+      href: vm-switch-verification.md
+    - name: "Port/miniport interface checking"
+      href: port-miniport-interface-checking.md
+    - name: "Code integrity checking"
+      href: code-integrity-checking.md
+    - name: "WDF verification"
+      href: wdf-verification.md
+    - name: "Driver Verifier: What's new"
+      href: driver-verifier--what-s-new.md
     - name: "Using Driver Verifier"
 # Auto-expanded node
       items: 
@@ -731,6 +682,203 @@
         href: debugging-ddi-compliance-bugs----driver-verifier-detected-violation--c4---0x000200--.md
       - name: "Debugging NDIS/WiFi time-out errors - DRIVER_VERIFIER_DETECTED_VIOLATION (C4)"
         href: debugging-ndis-wifi-timeouts---driver-verifier-detected-violation--c4---0x92003--etc-.md
+  - name: "Static Driver Verifier"
+# Auto-expanded node
+    items: 
+    - name: "Static Driver Verifier"
+      href: static-driver-verifier.md
+    - name: "Using Static Driver Verifier to Find Defects in Windows Drivers"
+      href: using-static-driver-verifier-to-find-defects-in-drivers.md
+    - name: "Static Driver Verifier commands (MSBuild)"
+      href: -static-driver-verifier-commands--msbuild-.md
+    - name: "Introducing Static Driver Verifier"
+      href: introducing-static-driver-verifier.md
+# Auto-expanded node
+      items: 
+      - name: "Introducing Static Driver Verifier"
+        href: introducing-static-driver-verifier.md
+      - name: "Understanding Static Driver Verifier"
+        href: understanding-static-driver-verifier.md
+      - name: "Static Driver Verifier Concepts"
+# Auto-expanded node
+        items: 
+        - name: "Static Driver Verifier Concepts"
+          href: static-driver-verifier-concepts.md
+        - name: "Static Driver Verifier Rule"
+          href: static-driver-verifier-rule.md
+        - name: "Operating System Model"
+          href: operating-system-model.md
+        - name: "Verification Engine"
+          href: verification-engine.md
+        - name: "Verification Process"
+          href: verification-process.md
+        - name: "Passing and Failing a Verification"
+          href: passing-and-failing-a-verification.md
+        - name: "Library Processing in Static Driver Verifier"
+# Auto-expanded node
+          items: 
+          - name: "Library Processing in Static Driver Verifier"
+            href: library-processing-in-static-driver-verifier.md
+          - name: "Processing a Library"
+            href: processing-a-library.md
+          - name: "Reprocessing a Library"
+            href: reprocessing-a-library.md
+      - name: "Supported Drivers"
+        href: supported-drivers.md
+      - name: "Static Driver Verifier Limitations"
+# Auto-expanded node
+        items: 
+        - name: "Static Driver Verifier Limitations"
+          href: static-driver-verifier-limitations.md
+        - name: "Determining if Static Driver Verifier supports your driver or library"
+          href: determining-if-static-driver-verifier-supports-your-driver-or-library.md
+        - name: "Static Driver Verifier General Tool and Technical Limitations"
+          href: static-driver-verifier-general-tool-and-technical-limitations.md
+        - name: "Using the _analysis_assume Function to Suppress False Defects"
+          href: using-the--analysis-assume-function-to-suppress-false-defects.md
+        - name: "Using __sdv_save_request and __sdv_retrieve_request for Deferred Procedure Calls"
+          href: using---sdv-save-request-and---sdv-retrieve-request-for-deferred-proce.md
+        - name: "Using __sdv_save_adapter_context to Track Adapter Context Fields"
+          href: using---sdv-save-adapter-context-to-track-adapter-context-fields.md
+    - name: "Using Static Driver Verifier"
+# Auto-expanded node
+      items: 
+      - name: "Using Static Driver Verifier"
+        href: using-static-driver-verifier.md
+      - name: "Using Function Role Type Declarations"
+# Auto-expanded node
+        items: 
+        - name: "Using Function Role Type Declarations"
+          href: using-function-role-type-declarations.md
+        - name: "Declaring Functions by Using Function Role Types for KMDF Drivers"
+          href: declaring-functions-by-using-function-role-types-for-kmdf-drivers.md
+        - name: "Declaring Functions Using Function Role Types for WDM Drivers"
+          href: declaring-functions-using-function-role-types-for-wdm-drivers.md
+        - name: "Declaring Functions by Using Function Role Types for NDIS Drivers"
+          href: declaring-functions-by-using-function-role-types-for-ndis-drivers.md
+        - name: "Declaring Functions by Using Function Role Types for Storport Drivers"
+          href: declaring-functions-by-using-function-role-types-for-storport-drivers.md
+      - name: "Scanning the Driver"
+        href: scanning-the-driver.md
+      - name: "Interpreting Static Driver Verifier Results"
+        href: interpreting-static-driver-verifier-results.md
+      - name: "Using the Static Driver Verifier Report"
+        href: using-the-static-driver-verifier-report.md
+      - name: "Recommendations for Troubleshooting Static Driver Verifier"
+        href: recommendations-for-troubleshooting-static-driver-verifier.md
+      - name: "Using SDV and the Sample Drivers"
+        href: using-sdv-and-the-sample-drivers.md
+    - name: "Static Driver Verifier Report"
+# Auto-expanded node
+      items: 
+      - name: "Static Driver Verifier Report"
+        href: static-driver-verifier-report.md
+      - name: "Trace Viewer"
+# Auto-expanded node
+        items: 
+        - name: "Trace Viewer"
+          href: defect-viewer.md
+        - name: "Understanding the Trace Viewer"
+          href: understanding-the-defect-viewer.md
+        - name: "Opening and Closing the Trace Viewer"
+          href: opening-and-closing-the-defect-viewer.md
+        - name: "Resizing the Defect Viewer Windows"
+          href: resizing-the-defect-viewer-windows.md
+        - name: "Changing the Text Size in the Defect Viewer"
+          href: changing-the-text-size-in-the-defect-viewer.md
+      - name: "Static Driver Verifier Report Panes"
+# Auto-expanded node
+        items: 
+        - name: "Static Driver Verifier Report Panes"
+          href: static-driver-verifier-report-panes.md
+        - name: "Trace Tree Pane"
+# Auto-expanded node
+          items: 
+          - name: "Trace Tree Pane"
+            href: trace-tree-pane.md
+          - name: "Understanding the Trace Tree Pane"
+            href: understanding-the-trace-tree-pane.md
+          - name: "Color Coding in the Trace Tree Pane"
+            href: color-coding-in-the-trace-tree-pane.md
+          - name: "Trace Tree Pane Actions"
+            href: trace-tree-pane-actions.md
+          - name: "Saving Defect Traces"
+            href: saving-defect-traces.md
+        - name: "Source Code Pane"
+# Auto-expanded node
+          items: 
+          - name: "Source Code Pane"
+            href: source-code-pane.md
+          - name: "Understanding the Source Code Pane"
+            href: understanding-the-source-code-pane.md
+          - name: "Using the Source Code Pane"
+            href: using-the-source-code-pane.md
+          - name: "Source Code Pane Actions"
+            href: source-code-pane-actions.md
+          - name: "Files in the Source Code Pane"
+            href: files-in-the-source-code-pane.md
+          - name: "Color Coding in the Source Code Pane"
+            href: color-coding-in-the-source-code-pane.md
+        - name: "State Pane"
+          href: state-pane.md
+    - name: "Static Driver Verifier Reference"
+# Auto-expanded node
+      items: 
+      - name: "Static Driver Verifier Reference"
+        href: static-driver-verifier-reference.md
+      - name: "Static Driver Verifier KMDF Function Declarations"
+        href: static-driver-verifier-kmdf-function-declarations.md
+      - name: "Static Driver Verifier NDIS Function Declarations"
+        href: static-driver-verifier-ndis-function-declarations.md
+      - name: "Static Driver Verifier Input Files"
+# Auto-expanded node
+        items: 
+        - name: "Static Driver Verifier Input Files"
+          href: static-driver-verifier-input-files.md
+        - name: "Static Driver Verifier Rule List File"
+          href: static-driver-verifier-rule-list-file.md
+        - name: "Static Driver Verifier Options File"
+# Auto-expanded node
+          items: 
+          - name: "Static Driver Verifier Options File"
+            href: static-driver-verifier-options-file.md
+          - name: "Global and Local Options Files"
+            href: global-and-local-options-files.md
+          - name: "Option File Fields"
+            href: option-file-fields.md
+          - name: "Option File Examples"
+            href: option-file-examples.md
+      - name: "Static Driver Verifier Output Files"
+# Auto-expanded node
+        items: 
+        - name: "Static Driver Verifier Output Files"
+          href: static-driver-verifier-output-files.md
+        - name: "Command-Line Output"
+          href: command-line-output.md
+        - name: "Sdv-map.h"
+# Auto-expanded node
+          items: 
+          - name: "Sdv-map.h"
+            href: sdv-map-h.md
+          - name: "Understanding the Sdv-map.h File"
+            href: understanding-the-sdv-map-h-file.md
+          - name: "Format of the Sdv-map.h File"
+            href: format-of-the-sdv-map-h-file.md
+          - name: "Approving the Sdv-map.h File"
+            href: approving-the-sdv-map-h-file.md
+          - name: "Duplicate Entry Points for a Function Role Type "
+            href: duplicate-entry-points-for-a-function-role-type.md
+      - name: "Static Driver Verifier Error Codes"
+        href: static-driver-verifier-error-codes.md
+      - name: "Static Driver Verifier Error Messages"
+# Auto-expanded node
+        items: 
+        - name: "Static Driver Verifier Error Messages"
+          href: static-driver-verifier-error-messages.md
+        - name: "The process cannot access the file &lt;Path&gt; because it is being used by another process"
+          href: the-process-cannot-access-the-file---path---because-it-is-being-used-b.md
+      - name: "Static Driver Verifier Diagnostics"
+        href: static-driver-verifier-diagnostics.md
   - name: "DDI Compliance Rules"
 # Auto-expanded node
     items: 
@@ -1803,203 +1951,6 @@
           href: storport-pagedcode.md
         - name: "StorPortStatusPending"
           href: storport-storportstatuspending.md  
-  - name: "Static Driver Verifier"
-# Auto-expanded node
-    items: 
-    - name: "Static Driver Verifier"
-      href: static-driver-verifier.md
-    - name: "Using Static Driver Verifier to Find Defects in Windows Drivers"
-      href: using-static-driver-verifier-to-find-defects-in-drivers.md
-    - name: "Static Driver Verifier commands (MSBuild)"
-      href: -static-driver-verifier-commands--msbuild-.md
-    - name: "Introducing Static Driver Verifier"
-      href: introducing-static-driver-verifier.md
-# Auto-expanded node
-      items: 
-      - name: "Introducing Static Driver Verifier"
-        href: introducing-static-driver-verifier.md
-      - name: "Understanding Static Driver Verifier"
-        href: understanding-static-driver-verifier.md
-      - name: "Static Driver Verifier Concepts"
-# Auto-expanded node
-        items: 
-        - name: "Static Driver Verifier Concepts"
-          href: static-driver-verifier-concepts.md
-        - name: "Static Driver Verifier Rule"
-          href: static-driver-verifier-rule.md
-        - name: "Operating System Model"
-          href: operating-system-model.md
-        - name: "Verification Engine"
-          href: verification-engine.md
-        - name: "Verification Process"
-          href: verification-process.md
-        - name: "Passing and Failing a Verification"
-          href: passing-and-failing-a-verification.md
-        - name: "Library Processing in Static Driver Verifier"
-# Auto-expanded node
-          items: 
-          - name: "Library Processing in Static Driver Verifier"
-            href: library-processing-in-static-driver-verifier.md
-          - name: "Processing a Library"
-            href: processing-a-library.md
-          - name: "Reprocessing a Library"
-            href: reprocessing-a-library.md
-      - name: "Supported Drivers"
-        href: supported-drivers.md
-      - name: "Static Driver Verifier Limitations"
-# Auto-expanded node
-        items: 
-        - name: "Static Driver Verifier Limitations"
-          href: static-driver-verifier-limitations.md
-        - name: "Determining if Static Driver Verifier supports your driver or library"
-          href: determining-if-static-driver-verifier-supports-your-driver-or-library.md
-        - name: "Static Driver Verifier General Tool and Technical Limitations"
-          href: static-driver-verifier-general-tool-and-technical-limitations.md
-        - name: "Using the _analysis_assume Function to Suppress False Defects"
-          href: using-the--analysis-assume-function-to-suppress-false-defects.md
-        - name: "Using __sdv_save_request and __sdv_retrieve_request for Deferred Procedure Calls"
-          href: using---sdv-save-request-and---sdv-retrieve-request-for-deferred-proce.md
-        - name: "Using __sdv_save_adapter_context to Track Adapter Context Fields"
-          href: using---sdv-save-adapter-context-to-track-adapter-context-fields.md
-    - name: "Using Static Driver Verifier"
-# Auto-expanded node
-      items: 
-      - name: "Using Static Driver Verifier"
-        href: using-static-driver-verifier.md
-      - name: "Using Function Role Type Declarations"
-# Auto-expanded node
-        items: 
-        - name: "Using Function Role Type Declarations"
-          href: using-function-role-type-declarations.md
-        - name: "Declaring Functions by Using Function Role Types for KMDF Drivers"
-          href: declaring-functions-by-using-function-role-types-for-kmdf-drivers.md
-        - name: "Declaring Functions Using Function Role Types for WDM Drivers"
-          href: declaring-functions-using-function-role-types-for-wdm-drivers.md
-        - name: "Declaring Functions by Using Function Role Types for NDIS Drivers"
-          href: declaring-functions-by-using-function-role-types-for-ndis-drivers.md
-        - name: "Declaring Functions by Using Function Role Types for Storport Drivers"
-          href: declaring-functions-by-using-function-role-types-for-storport-drivers.md
-      - name: "Scanning the Driver"
-        href: scanning-the-driver.md
-      - name: "Interpreting Static Driver Verifier Results"
-        href: interpreting-static-driver-verifier-results.md
-      - name: "Using the Static Driver Verifier Report"
-        href: using-the-static-driver-verifier-report.md
-      - name: "Recommendations for Troubleshooting Static Driver Verifier"
-        href: recommendations-for-troubleshooting-static-driver-verifier.md
-      - name: "Using SDV and the Sample Drivers"
-        href: using-sdv-and-the-sample-drivers.md
-    - name: "Static Driver Verifier Report"
-# Auto-expanded node
-      items: 
-      - name: "Static Driver Verifier Report"
-        href: static-driver-verifier-report.md
-      - name: "Trace Viewer"
-# Auto-expanded node
-        items: 
-        - name: "Trace Viewer"
-          href: defect-viewer.md
-        - name: "Understanding the Trace Viewer"
-          href: understanding-the-defect-viewer.md
-        - name: "Opening and Closing the Trace Viewer"
-          href: opening-and-closing-the-defect-viewer.md
-        - name: "Resizing the Defect Viewer Windows"
-          href: resizing-the-defect-viewer-windows.md
-        - name: "Changing the Text Size in the Defect Viewer"
-          href: changing-the-text-size-in-the-defect-viewer.md
-      - name: "Static Driver Verifier Report Panes"
-# Auto-expanded node
-        items: 
-        - name: "Static Driver Verifier Report Panes"
-          href: static-driver-verifier-report-panes.md
-        - name: "Trace Tree Pane"
-# Auto-expanded node
-          items: 
-          - name: "Trace Tree Pane"
-            href: trace-tree-pane.md
-          - name: "Understanding the Trace Tree Pane"
-            href: understanding-the-trace-tree-pane.md
-          - name: "Color Coding in the Trace Tree Pane"
-            href: color-coding-in-the-trace-tree-pane.md
-          - name: "Trace Tree Pane Actions"
-            href: trace-tree-pane-actions.md
-          - name: "Saving Defect Traces"
-            href: saving-defect-traces.md
-        - name: "Source Code Pane"
-# Auto-expanded node
-          items: 
-          - name: "Source Code Pane"
-            href: source-code-pane.md
-          - name: "Understanding the Source Code Pane"
-            href: understanding-the-source-code-pane.md
-          - name: "Using the Source Code Pane"
-            href: using-the-source-code-pane.md
-          - name: "Source Code Pane Actions"
-            href: source-code-pane-actions.md
-          - name: "Files in the Source Code Pane"
-            href: files-in-the-source-code-pane.md
-          - name: "Color Coding in the Source Code Pane"
-            href: color-coding-in-the-source-code-pane.md
-        - name: "State Pane"
-          href: state-pane.md
-    - name: "Static Driver Verifier Reference"
-# Auto-expanded node
-      items: 
-      - name: "Static Driver Verifier Reference"
-        href: static-driver-verifier-reference.md
-      - name: "Static Driver Verifier KMDF Function Declarations"
-        href: static-driver-verifier-kmdf-function-declarations.md
-      - name: "Static Driver Verifier NDIS Function Declarations"
-        href: static-driver-verifier-ndis-function-declarations.md
-      - name: "Static Driver Verifier Input Files"
-# Auto-expanded node
-        items: 
-        - name: "Static Driver Verifier Input Files"
-          href: static-driver-verifier-input-files.md
-        - name: "Static Driver Verifier Rule List File"
-          href: static-driver-verifier-rule-list-file.md
-        - name: "Static Driver Verifier Options File"
-# Auto-expanded node
-          items: 
-          - name: "Static Driver Verifier Options File"
-            href: static-driver-verifier-options-file.md
-          - name: "Global and Local Options Files"
-            href: global-and-local-options-files.md
-          - name: "Option File Fields"
-            href: option-file-fields.md
-          - name: "Option File Examples"
-            href: option-file-examples.md
-      - name: "Static Driver Verifier Output Files"
-# Auto-expanded node
-        items: 
-        - name: "Static Driver Verifier Output Files"
-          href: static-driver-verifier-output-files.md
-        - name: "Command-Line Output"
-          href: command-line-output.md
-        - name: "Sdv-map.h"
-# Auto-expanded node
-          items: 
-          - name: "Sdv-map.h"
-            href: sdv-map-h.md
-          - name: "Understanding the Sdv-map.h File"
-            href: understanding-the-sdv-map-h-file.md
-          - name: "Format of the Sdv-map.h File"
-            href: format-of-the-sdv-map-h-file.md
-          - name: "Approving the Sdv-map.h File"
-            href: approving-the-sdv-map-h-file.md
-          - name: "Duplicate Entry Points for a Function Role Type "
-            href: duplicate-entry-points-for-a-function-role-type.md
-      - name: "Static Driver Verifier Error Codes"
-        href: static-driver-verifier-error-codes.md
-      - name: "Static Driver Verifier Error Messages"
-# Auto-expanded node
-        items: 
-        - name: "Static Driver Verifier Error Messages"
-          href: static-driver-verifier-error-messages.md
-        - name: "The process cannot access the file &lt;Path&gt; because it is being used by another process"
-          href: the-process-cannot-access-the-file---path---because-it-is-being-used-b.md
-      - name: "Static Driver Verifier Diagnostics"
-        href: static-driver-verifier-diagnostics.md
   - name: "CodeQL and the Static Tools Logo Test"
 # Auto-expanded node
     items: 
@@ -2028,6 +1979,55 @@
         href: codeql-windows-driver-badoverflowguard.md 
       - name: "HardcodedIVCNG (Windows Driver CodeQL Query)"
         href: codeql-windows-driver-hardcodedivcng.md 
+- name: "Additional Driver Verification Tools"
+# Auto-expanded node
+  items: 
+  - name: "Additional Driver Verification Tools"
+    href: additional-driver-verification-tools.md
+  - name: "Application Verifier"
+    href: application-verifier.md
+# Auto-expanded node
+    items: 
+    - name: "Application Verifier - Features"
+      href: application-verifier-features.md
+    - name: "Application Verifier - Testing Applications"
+      href: application-verifier-testing-applications.md
+    - name: "Application Verifier - Tests within Application Verifier"
+      href: application-verifier-tests-within-application-verifier.md
+    - name: "Application Verifier - Stop Codes and Definitions"
+      href: application-verifier-stop-codes-and-definitions.md
+# Auto-expanded node
+      items: 
+      - name: "Application Verifier - Stop Codes - Basics"
+        href: application-verifier-stop-codes-basics.md
+      - name: "Application Verifier - Stop Codes - Compatibility"
+        href: application-verifier-stop-codes-compatibility.md
+      - name: "Application Verifier - Stop Codes - Cuzz"
+        href: application-verifier-stop-codes-cuzz.md
+      - name: "Application Verifier - Stop Codes - Low Resource Simulation"
+        href: application-verifier-stop-codes-low-resource-simulation.md
+      - name: "Application Verifier - Stop Codes - LuaPriv"
+        href: application-verifier-stop-codes-luapriv.md
+      - name: "Application Verifier - Stop Codes - Miscellaneous"
+        href: application-verifier-stop-codes-miscellaneous.md
+      - name: "Application Verifier - Stop Codes - Networking"
+        href: application-verifier-stop-codes-networking.md
+      - name: "Application Verifier - Stop Codes - NTLM"
+        href: application-verifier-stop-codes-ntlm.md
+      - name: "Application Verifier - Stop Codes - Printing"
+        href: application-verifier-stop-codes-printing.md
+      - name: "Application Verifier - Stop Codes - Webservices"
+        href: application-verifier-stop-codes-webservices.md
+      - name: "Application Verifier - Stop Codes - Services"
+        href: application-verifier-stop-codes-Services.md
+      - name: "Application Verifier - Stop Codes - Perf"
+        href: application-verifier-stop-codes-perf.md
+      - name: "Application Verifier - Stop Codes - Hangs"
+        href: application-verifier-stop-codes-hangs.md
+    - name: "Application Verifier - Debugging Application Verifier Stops"
+      href: application-verifier-debugging-application-verifier-stops.md
+    - name: "Application Verifier - Frequently Asked Questions"
+      href: application-verifier-faqs.md
   - name: "WDF Verifier Control Application"
 # Auto-expanded node
     items: 
@@ -2063,6 +2063,43 @@
       href: wdf-driver-call-tracer--wdfcalltracer-.md
     - name: "KMDF Functions that Return NSTATUS Codes"
       href: wdftester-functions-that-return-nstatus-codes.md
+  - name: "Checked Build of Windows"
+# Auto-expanded node
+    items: 
+    - name: "Checked Build of Windows"
+      href: checked-build-of-windows.md
+    - name: "Checked and Free Build Differences"
+      href: checked-and-free-build-differences.md
+    - name: "Using the Checked Build of Windows"
+# Auto-expanded node
+      items: 
+      - name: "Using the Checked Build of Windows"
+        href: using-the-checked-build.md
+      - name: "What the Checked Build Checks"
+        href: what-the-checked-build-checks.md
+      - name: "How the Checked Build Indicates a Problem"
+        href: how-the-checked-build-indicates-a-problem.md
+      - name: "Side Effects of Using the Checked Build"
+        href: side-effects-of-using-the-checked-build.md
+      - name: "The Checked Build and the Debugger"
+        href: the-checked-build-and-the-debugger.md
+      - name: "The Checked Build and Driver Verifier"
+        href: the-checked-build-and-driver-verifier.md
+    - name: "Installing the Checked Build of Windows"
+# Auto-expanded node
+      items: 
+      - name: "Installing the Checked Build of Windows"
+        href: installing-the-checked-build.md
+      - name: "Installing the Complete Checked Build"
+        href: installing-the-complete-checked-build.md
+      - name: "Installing Just the Checked Operating System and HAL (For Windows Vista and Later)"
+        href: installing-just-the-checked-operating-system-and-hal--for-windows-vist.md
+      - name: "Installing Just the Checked Operating System and HAL (For Windows XP and Windows Server 2003)"
+        href: installing-just-the-checked-operating-system-and-hal--for-windows-xp-a.md
+    - name: "Checked Build Breakpoints and Messages"
+      href: checked-build-breakpoints-and-messages.md
+    - name: "Checked Build ASSERTs"
+      href: checked-build-asserts.md
 - name: "Tools for Software Tracing"
 # Auto-expanded node
   items: 

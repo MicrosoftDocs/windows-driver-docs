@@ -4,8 +4,6 @@ description: File systems driver design guide
 ms.assetid: 62DE75F7-0211-4173-AF45-84B2DDFDC95C
 ms.date: 09/10/2020
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # File systems driver design guide

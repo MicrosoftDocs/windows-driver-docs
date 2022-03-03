@@ -4,7 +4,7 @@ metadata:
   title: USB in Windows - FAQ
   ms.date: 04/20/2017
   ms.localizationpriority: medium
-    
+  ms.topic: faq
 title: USB in Windows - FAQ
 summary: |
   This topic presents frequently asked questions for driver developers who are new to developing and integrating USB devices and drivers with Windows operating systems.  

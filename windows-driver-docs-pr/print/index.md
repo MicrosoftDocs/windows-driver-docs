@@ -7,8 +7,6 @@ keywords:
 - print WDK See printing
 ms.date: 08/13/2021
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Printer driver design guide

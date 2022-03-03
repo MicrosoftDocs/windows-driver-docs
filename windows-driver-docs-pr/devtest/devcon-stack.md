@@ -9,23 +9,18 @@ api_name:
 - DevCon Stack
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 02/11/2022
 ---
 
 # DevCon Stack
 
-Displays the expected driver stack for the specified devices, and the GUID and the name of the device setup class for each device. Valid on local and remote computers.
+Displays the expected driver stack for the specified devices, and the GUID and the name of the device setup class for each device. 
 
 ```
-    devcon [/m:\\computer] stack {* | ID [ID ...] | =class [ID [ID...]]}
+    devcon stack {* | ID [ID ...] | =class [ID [ID...]]}
 ```
 
 ## <span id="ddk_devcon_stack_tools"></span><span id="DDK_DEVCON_STACK_TOOLS"></span>Parameters
-
-<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>
-Runs the command on the specified remote computer. The backslashes are required.
-
-**Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access is unavailable.
 
 <span id="______________"></span> **\***
 Represents all devices on the computer.
@@ -68,8 +63,6 @@ Specifies the device setup class of the devices. The equal sign (**=**) identifi
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-The **/m** parameter must precede the operation name (**stack**). Otherwise, DevCon ignores the **/m** parameter and displays the stack of device drivers on the local computer without returning a syntax error.
-
 The **DevCon Stack** operation displays the expected driver stack for a device. Although the actual driver stack typically matches the expected stack, variations are possible.
 
 To investigate a device problem, compare the expected driver stack from the stack operation with the actual drivers that the device uses, as displayed by the [**DevCon DriverFiles**](devcon-driverfiles.md) operation.
@@ -77,9 +70,9 @@ To investigate a device problem, compare the expected driver stack from the stac
 ### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
-devcon /m:\\Server01 stack * > Server01Stack.txt
+devcon stack pci*
+devcon stack * > Stack.txt
 devcon stack ISAPNP\ReadDataPort
-devcon /m:\\Server01 stack pci*
 devcon stack =multifunction
 ```
 
@@ -89,4 +82,4 @@ devcon stack =multifunction
 
 [Example 15: Find the setup class of a device](devcon-examples.md#ddk_example_15_find_the_setup_class_of_a_device_tools)
 
-[Example 16: Display the stack for related devices on a remote computer](devcon-examples.md#ddk_example_16_display_the_stack_for_related_devices_on_a_remote_compu)
+[Example 16: Display the stack for related devices](devcon-examples.md#ddk_example_16_display_the_stack_for_related_devices_on_a_remote_compu)

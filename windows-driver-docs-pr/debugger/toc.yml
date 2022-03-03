@@ -2635,10 +2635,10 @@
       href: bug-check-0x16d--invalid-slot-allocator-flags.md
     - name: "Bug Check 0x16E: ERESOURCE_INVALID_RELEASE"
       href: bug-check-0x16e--eresource-invalid-release.md
-    - name: "Bug Check 0x170: CRYPTO_LIBRARY_INTERNAL_ERROR"
-      href: bug-check-0x170--crypto-library-internal-error.md
-    - name: "Bug Check 0x171: CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG"
-      href: bug-check-0x171--cluster-csv-clussvc-disconnect-watchdog.md
+    - name: "Bug Check 0x170: CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG"
+      href: bug-check-0x170--cluster-csv-clussvc-disconnect-watchdog.md
+    - name: "Bug Check 0x171: CRYPTO_LIBRARY_INTERNAL_ERROR"
+      href: bug-check-0x171--crypto-library-internal-error.md
     - name: "Bug Check 0x173: COREMSGCALL_INTERNAL_ERROR"
       href: bug-check-0x173--coremsgcall-internal-error.md
     - name: "Bug Check 0x174: COREMSG_INTERNAL_ERROR"

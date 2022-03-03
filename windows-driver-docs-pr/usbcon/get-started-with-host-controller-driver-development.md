@@ -26,5 +26,5 @@ Here are the device stacks loaded for the host controller driver:
 ![ucx device stack.](images/ucx-device-stack.png)
 
 ## Related topics
-[Universal Serial Bus (USB) Drivers](../index.yml)  
+[Universal Serial Bus (USB) Drivers](./index.md)  
 [USB Driver Development Guide](usb-driver-development-guide.md)

@@ -1,6 +1,6 @@
 ---
 title: DevCon Find
-description: Finds all devices that are currently attached to the computer. Displays the device instance ID and device description. Valid on local and remote computers.
+description: Finds all devices that are currently attached to the computer. Displays the device instance ID and device description. 
 keywords:
 - DevCon Find Driver Development Tools
 topic_type:
@@ -9,23 +9,18 @@ api_name:
 - DevCon Find
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 02/11/2022
 ---
 
 # DevCon Find
 
-Finds all devices that are currently attached to the computer. Displays the device instance ID and device description. Valid on local and remote computers.
+Finds all devices that are currently attached to the computer. Displays the device instance ID and device description. 
 
 ```
-    devcon [/m:\\computer] find {* | ID [ID ...] | =class [ID [ID ...]]}
+    devcon find {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
 ## <span id="ddk_devcon_find_tools"></span><span id="DDK_DEVCON_FIND_TOOLS"></span>Parameters
-
-<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>
-Runs the command on the specified remote computer. The backslashes are required.
-
-**Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access is unavailable.
 
 <span id="______________"></span> **\***
 Represents all devices on the computer.
@@ -70,8 +65,6 @@ You can also specify hardware IDs, compatible IDs, device instance IDs, or ID pa
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-The **/m** parameter must precede the operation name (**find**). Otherwise, DevCon ignores the **/m** parameter and searches the local computer without returning a syntax error.
-
 You can use the **DevCon Find** operation to find devices that are not currently attached to the computer by specifying the full device instance ID of the device instead of a hardware ID or ID pattern. Specifying the full device instance ID overrides the restriction on the **DevCon Find** operation that limits it to attached devices.
 
 The **DevCon Find** operation with a single class argument is the same as the [**DevCon ListClass**](devcon-listclass.md) operation.
@@ -83,7 +76,6 @@ To find all devices, including those that are not currently attached to the comp
 ```
 devcon find *
 devcon find =media *pnp*
-devcon /m:\\Server01 find *mou*
 devcon find @*hub*
 ```
 

@@ -9,8 +9,6 @@ keywords:
 - HID WDK
 ms.date: 02/28/2020
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Introduction to Human Interface Devices (HID)

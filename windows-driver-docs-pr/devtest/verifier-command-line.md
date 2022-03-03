@@ -9,7 +9,7 @@ api_name:
 - Driver Verifier Command Syntax
 api_type:
 - NA
-ms.date: 06/28/2021
+ms.date: 02/16/2022
 ---
 
 # Driver Verifier Command Syntax
@@ -35,7 +35,7 @@ verifier /flags 7 /driver beep.sys disksdd.sys
   verifier /dif [<ruleclass_1> <ruleclass_2> ...] /now /driver NAME [NAME ...]
   verifier /query
   verifier /querysettings
-  verifier /bootmode [persistent | disableafterfail | oneboot]
+  verifier /bootmode [persistent | resetonbootfail | resetonunusualshutdown | oneboot]
   verifier /bc <number_of_reboots>
   verifier /reset
   verifier /faults [Probability] [PoolTags] [Applications] [DelayMins]
@@ -108,7 +108,7 @@ You can use the **/volatile** parameter with some Driver Verifier **/flags** opt
   verifier /rules [OPTION ...]
   verifier /query
   verifier /querysettings
-  verifier /bootmode [persistent | disableafterfail | oneboot]
+  verifier /bootmode [persistent | resetonbootfail | resetonunusualshutdown | oneboot]
   verifier /reset
   verifier /faults [Probability] [PoolTags] [Applications] [DelayMins]
   verifier /faultssystematic [OPTION ...]
@@ -186,7 +186,7 @@ Controls whether the settings for Driver Verifier are enabled after a reboot. To
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">Boot <em>mode</em></th>
+<th align="left">Bootmode</th>
 <th align="left">Description</th>
 </tr>
 </thead>
@@ -196,8 +196,8 @@ Controls whether the settings for Driver Verifier are enabled after a reboot. To
 <td align="left"><p>Ensures that the Driver Verifier settings persist (stay in effect) over many reboots. This is the default setting.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span id="disableafterfail"></span><span id="DISABLEAFTERFAIL"></span><strong>disableafterfail</strong></p></td>
-<td align="left"><p>If Windows fails to start, this setting disables Driver Verifier for subsequent reboots.</p></td>
+<td align="left"><p><span id="resetonbootfail "></span><span id="resetonbootfail "></span><strong>resetonbootfail </strong></p></td>
+<td align="left"><p>Disables Driver Verifier for subsequent reboots if the system failed to start.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="oneboot"></span><span id="ONEBOOT"></span><strong>oneboot</strong></p></td>
@@ -205,7 +205,7 @@ Controls whether the settings for Driver Verifier are enabled after a reboot. To
 </tr>
 <tr class="even">
 <td align="left"><p><span id="resetonunusualshutdown"></span><span id="RESETONUNUSUALSHUTDOWN"></span><strong>resetonunusualshutdown</strong></p></td>
-<td align="left"><p>(Introduced in Windows 10, build 1709) Driver Verifier will persist until an unusual shutdown occurs. Its abbrevation, <strong>'rous'</strong>, can be used.
+<td align="left"><p>(Introduced in Windows 10, build 1709) Driver Verifier will persist until an unusual shutdown occurs. Its abbreviation, <strong>'rous'</strong>, can be used.
 </p></td>
 </tr>
 </tbody>

@@ -1,7 +1,7 @@
 ---
 title: Test Signing
 description: Windows 64-bit editions require all software running in kernel mode, including drivers, to be digitally signed in order to be loaded.
-ms.date: 04/20/2017
+ms.date: 02/16/2022
 ---
 
 # Test Signing
@@ -63,7 +63,7 @@ The following procedure describes the steps to test sign a driver package:
 
 Any of the five shortcuts for command prompt will have, makecert.exe, inf2cat.exe, signtool.exe, certmgr.exe, etc., commands.
 
-You may choose the most general, “Developer Command Prompt for VS2013”. The shortcuts can be pinned down to the Task Bar for easy access.
+You may choose the most general, "Developer Command Prompt for VS2013". The shortcuts can be pinned down to the Task Bar for easy access.
 
 >[!NOTE]
 >Please note that with Visual Studio, instead of the command tool approach of driver signing, you can also use the Visual Studio 2013 development environment (also known as the IDE) to sign a driver package. Please refer to [Appendix 2: Signing Drivers with Visual Studio](appendix-2--signing-drivers-with-visual-studio.md) for more information.
@@ -139,7 +139,7 @@ You may choose the most general, “Developer Command Prompt for VS2013”. The 
     ClassGuid={B85B7C50-6A01-11d2-B841-00C04FAD5171}
     Provider=%ToastRUs%
     DriverVer=09/21/2006,6.0.5736.1
-    CatalogFile.NTx86  = tostx86.cat
+    CatalogFile.NTx86 = tostx86.cat
     CatalogFile.NTIA64 = tostia64.cat
     CatalogFile.NTAMD64 = tstamd64.cat
     ```
@@ -149,7 +149,7 @@ You may choose the most general, “Developer Command Prompt for VS2013”. The 
     Inf2Cat creates the catalog file tstamd64.cat if the command-line argument /os:7_X64 is used. Similarly, the tool creates the catalog file toastx86.cat if the /os:XP_X86, option is used, similarly for Server2008R2_IA64. In case, only one catalog file is desired, then only one entry in the INF file as shown below will suffice.
 
     ```cpp
-    CatalogFile.NT  = toaster.cat
+    CatalogFile.NT = toaster.cat
     ```
 
     Or,
@@ -227,11 +227,11 @@ tstamd64.cat specifies the name of the catalog file, which will be digitally-sig
 
     Within the WDK 7.1 installation directory, the toaster sample is located in the src\\general\\toaster\\toastpkg\\toastcd\\ directory. The Windows 8 or 8.1 WDK samples are to be downloaded from the Microsoft download site. The samples do not come with the Windows 8 or 8.1 Windows Driver Kit.
 
-    The catalog file when opened by double clicking the file in Windows Explorer, you will see the following screen shot. Note that “View Signature” is now highlighted.
+    The catalog file when opened by double clicking the file in Windows Explorer, you will see the following screen shot. Note that "View Signature" is now highlighted.
 
     ![screen shot showing general information of the security catalog file.](images/tutorialsecuritycatalogfilegeneraltab.png)
 
-    If you select “View Signature”, you will see the screen shot below providing the next viewing option from “View Certificate”, which then will give the option of “Install Certificate” from the dialog itself. Below, we are providing the preferred command line option of installing the certificate using the certmgr.exe tool.
+    If you select "View Signature", you will see the screen shot below providing the next viewing option from "View Certificate", which then will give the option of "Install Certificate" from the dialog itself. Below, we are providing the preferred command line option of installing the certificate using the certmgr.exe tool.
 
     ![screen shot showing general information about the digital signature's details.](images/tutorialdriversignaturedetails.png)
 
@@ -281,7 +281,7 @@ The following procedure describes the steps to use on either machine to test the
 
     CertificateStore
 
-    Specifies the certificate store, trustedpublisher, similarly for “localMachine root".
+    Specifies the certificate store, trustedpublisher, similarly for "localMachine root".
 
     Reboot the computer. You can now run Certmgr.msc and verify that the ContosoTest.cer is visible in the above two locations. If it is not visible, then another way to install the certificate is to open the certificate and install it on the above two nodes and verify again.
 
@@ -321,125 +321,69 @@ The following procedure describes the steps to use on either machine to test the
 
 ## Installing, Uninstalling and Loading the Test-Signed Driver Package
 
-After the system has rebooted in Step 2, the test-signed driver package can be installed and loaded. There are four ways to install a driver package:
+After the system has rebooted in Step 2, the test-signed driver package can be installed and loaded. There are two ways to install a driver package:
 
-1. By using the Dpinst (dpinst.exe) tool, which is a WDK command line tool for installing drivers and is redistributable.
+1. By using the OS provided [Pnputil (pnputil.exe)](../devtest/pnputil.md) tool.
 2. By using the Devcon (devcon.exe) tool, which is a WDK command line tool for installing drivers, but not redistributable. The sample code of Devcon tool is provided in the WDK. To redistribute, you can implement your own Devcon tool from the sample code and can redistribute your version of the tool.
-3. By using the OS provided Pnputil (pnputil.exe) tool.
-4. By using the Windows Add Hardware Wizard.
 
-Dpinst and Pnputil pre-installs the driver package, whereas with Devcon and Windows Add Hardware Wizard, the driver as well as the device can be installed. Pre-installing a driver helps the OS find the driver when a device is connected to the computer.
+### To install and uninstall the driver package using PnpUtil
 
-### To install (and uninstall) the driver package by using DPInst
-
+Installing the driver package:
 1. Open an elevated command window and set the default directory to c:\\toaster.
-2. Dpinst.exe is provided in the WDK redist directory the x86 version, the amd64 version and the ia64 version. Copy the relevant version to the c:\\toaster directory and run the following command.
+2. Run one of the following commands:
+    * To just stage the driver package: `pnputil /add-driver toaster.inf`
+    * To stage the driver and install it on existing devices: `pnputil /add-driver toaster.inf /install`
 
-    ```cpp
-    dpinst.exe  /PATH  c:\toaster
-    ```
+Uninstalling the driver package:
+1. Open an elevated command window.
+2. Identify the name of the OEM INF that corresponds to the driver package that you want to remove from the list returned by `pnputil /enum-drivers`
+3. Run: `pnputil /delete-driver \<OEM INF name> /uninstall`
 
-    The above command will install all the drivers corresponding to all the inf files. You can also use “.” without the quotes from the current directory. “dpinst.exe /?” shows all the switches for this tool.
+### To install and uninstall the driver package using DevCon
 
-    The /U switch on the driver inf file will remove the driver package from the DriverStore’s FileRepository (%SystemRoot%\\System32\\ DriverStore\\FileRepository) directory provided the device associated with the driver has been removed. With Dpinst tool a driver can be removed just by referring to the inf file of the driver.
-
-    ```cpp
-    dpinst.exe  /U  toaster.inf
-    ```
-
-### To install the driver package by using DevCon
-
+Installing the driver package:
 1. Open an elevated command window and set the default directory to c:\\toaster.
-2. Devcon.exe is provided in the WDK tool directory the x86 version, the amd64 version and the ia64 version. Copy the relevant version to the c:\\toaster directory and run the following command. This command will install the driver as well as the device.
+2. Devcon.exe is provided in the WDK tool directory the x86 version, the amd64 version and the ia64 version. Copy the relevant version to the c:\\toaster directory and run the following command.
 
     ```cpp
-    devcon.exe  install <inf> <hwid>
+    devcon.exe update <inf> <hwid>
     ```
 
     It is advisable to use quotes around &lt;hwid&gt;. For the toaster sample, it will be:
 
     ```cpp
-    devcon.exe  install  c:\toaster\toaster.inf  “{b85b7c50-6a01-11d2-b841-00c04fad5171}\MsToaster”
+    devcon.exe update c:\toaster\toaster.inf "{b85b7c50-6a01-11d2-b841-00c04fad5171}\MsToaster"
     ```
 
-    A device can be removed using the Devcon tool using the “remove” switch. “devcon.exe /?” shows all the switches for this tool. To get specific information, on using a switch “help” should be added as shown below for the “remove” switch.
+Uninstalling the driver package:
+A driver package should not be removed from the system while a device is still using it.  If the device needs to be removed in order to remove the driver package, a device can be removed using the Devcon tool using the "remove" switch. `devcon.exe /?` shows all the switches for this tool. To get specific information on using a switch, "help" should be added as shown below for the "remove" switch.
 
-    ```cpp
-    devcon.exe help remove
-    ```
+```cpp
+devcon.exe help remove
+```
 
-    The above commands provides the following information.
+After the device has been removed, to remove the driver, two commands are necessary. Use the first command with "dp_enum" switch to find the driver inf file name corresponding to the driver package installed in the computer.
 
-    Removes devices with the specified hardware or instance ID. Valid only on the local computer. (To reboot when necessary, include -r .)
+```cpp
+devcon dp_enum
+```
 
-    ```cpp
-    devcon [-r] remove <id> [<id>...]
-    devcon [-r] remove =<class> [<id>...]
-    <class>      Specifies a device setup class.
-    Examples of <id>:
-     *              - All devices
-     ISAPNP\PNP0501 - Hardware ID
-     *PNP*          - Hardware ID with wildcards  (* matches anything)
-     @ISAPNP\*\*    - Instance ID with wildcards  (@ prefixes instance ID)
-     '*PNP0501      - Hardware ID with apostrophe (' prefixes literal match - matches exactly as typed, including the asterisk.)
-    ```
+This command will show the list of all oemNnn.inf files corresponding to a driver package, where Nnn is a decimal number with the Class information and the Provide information as shown below.
 
-    After a device has been removed, to remove the driver, two commands are necessary. Use the first command with “dp_enum” switch to find the driver inf file name corresponding to the driver package installed in the computer.
+```cpp
+oem39.inf
+    Provider: Intel
+    Class: Network adapters
+oem4.inf
+    Provider: Dell
+    Class: ControlVault Device
+```
 
-    ```cpp
-    devcon  dp_enum
-    ```
+To remove the corresponding driver package from the DriverStore, use the next command shown below for the Intel "Network Adapters" driver:
 
-    This command will show the list of all oemNnn.inf files corresponding to a driver package, where Nnn is a decimal number with the Class information and the Provide information as shown below.
-
-    ```cpp
-    oem39.inf
-        Provider: Intel
-        Class: Network adapters
-    oem4.inf
-        Provider: Dell
-        Class: ControlVault Device
-    ```
-
-    To remove the corresponding driver package from the DriverStore, use the next command shown below for the Intel “Network Adapters” driver:
-
-    ```cpp
-    devcon.exe dp_delete oem39.inf
-    ```
-
-### To install the driver package by using PnpUtil
-
-1. Open an elevated command window and set the default directory to c:\\toaster.
-2. Run the following command which will show all the available switches. Use of the switches is self-explanatory, no need to show any examples.
-
-   ```cpp
-   C:\Windows\System32\pnputil.exe /?
-
-    Microsoft PnP Utility
-    Usage:
-    ------
-    pnputil.exe [-f | -i] [ -? | -a | -d | -e ] <INF name>
-    Examples:
-    pnputil.exe -a a:\usbcam\USBCAM.INF      -> Add package specified by USBCAM.INF
-    pnputil.exe -a c:\drivers\*.inf          -> Add all packages in c:\drivers\
-    pnputil.exe -i -a a:\usbcam\USBCAM.INF   -> Add and install driver package
-    pnputil.exe -e                           -> Enumerate all 3rd party packages
-    pnputil.exe -d oem0.inf                  -> Delete package oem0.inf
-    pnputil.exe -f -d oem0.inf               -> Force delete package oem0.inf
-    pnputil.exe -?                           -> This usage screen
-    ```
-
-### To install the driver package by using the Add Hardware Wizard
-
-1. Open an elevated command window
-2. Run hdwwiz.cpl to start the Add Hardware Wizard, and select Next to go to the second page
-3. Select Advanced Option and select Next
-4. Select Show all devices from the list box and select Next
-5. Select the Have Disk option
-6. Enter the path to the folder that contains the C:\\toaster driver package
-7. Select the inf file and select Open
-8. Select OK
-9. Select Next in the next two pages, and then select Finish to complete the installation
+```cpp
+devcon.exe dp_delete oem39.inf
+```
 
 ### Verify that the Test-Signed Driver Is Operating Correctly
 

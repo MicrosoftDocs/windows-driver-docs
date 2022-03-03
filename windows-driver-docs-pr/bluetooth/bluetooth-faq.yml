@@ -4,7 +4,7 @@ metadata:
   description: This FAQ section provides information about Bluetooth wireless technology support for the Windows family of operating systems.
   ms.date: 04/20/2017
   ms.localizationpriority: medium
-    
+  ms.topic: faq
 title: Bluetooth FAQ
 summary: |
   This FAQ section provides information about Bluetooth wireless technology support for the Windows family of operating systems. It is intended primarily for independent hardware vendors (IHVs) who are new to the Bluetooth ecosystem on Windows and addresses topics of interest to both hardware and software developers.

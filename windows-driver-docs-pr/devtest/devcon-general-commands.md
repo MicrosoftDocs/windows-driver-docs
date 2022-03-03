@@ -9,34 +9,29 @@ api_name:
 - Device Console (DevCon.exe) Commands
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.custom: contperf-fy22q3 
+ms.date: 02/11/2022
 ---
 
 # Device Console (DevCon.exe) Commands
 
-
 DevCon (DevCon.exe) is a command line tool that can display detailed information about devices on computers running Windows. You can also use DevCon to enable, disable, install, configure, and remove devices. DevCon uses the following syntax.
 
 ```
-devcon [/m:\\computer] [/r] command [arguments] 
+devcon [/r] command [arguments] 
 ```
+
+> [!IMPORTANT]
+> PnPUtil ships with every release of Windows and makes use of the most reliable and secure APIs available and it’s use is recommended. For more information on using the PnPutil, instead of devcon, see [PnPUtil](pnputil.md).
 
 ## <span id="ddk_devcon_general_commands_tools"></span><span id="DDK_DEVCON_GENERAL_COMMANDS_TOOLS"></span>Parameters
 
 
 **Note**  To change the status or configuration of a device, you must be a member of the Administrators group on the computer.
-
  
-
 The parameters in a DevCon command must appear in the order shown in the syntax. If parameters are not in order, DevCon ignores them, but does not display a syntax error. Instead, it processes the command with the remaining parameters.
 
 For help on command syntax, you can use the following commands in a Command Prompt window: **DevCon help** or **DevCon help** *command*.
-
-<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>
-Runs the command on the specified remote computer. The backslashes are required.
-**Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and later versions of Windows, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access feature is unavailable.
-
- 
 
 <span id="________r______"></span><span id="________R______"></span> **/r**
 Conditional reboot. Reboots the system after completing an operation only if a reboot is required to make a change effective.
@@ -125,16 +120,13 @@ For example, **devcon hwids \*pnp\* \*mou\*** returns devices that include eithe
 If a command includes a device setup class, DevCon first limits the search to the setup class and then returns devices in the class that match any of the ID patterns, that is, it assumes an "and" between the class and the IDs and an "or" between each of the ID arguments.
 
 For example, **devcon hwids =media \*pnp\* \*microsoft\*** returns devices in the media device setup class that include either "pnp" or "microsoft" in their hardware ID or compatible ID.
-
-**Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and later versions of Windows, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access feature is unavailable.
-
  
 
 ### <span id="ddk_rebooting_and_restarting_tools"></span><span id="DDK_REBOOTING_AND_RESTARTING_TOOLS"></span><a name="ddk-rebooting-and-restarting-tools"></a>Rebooting and restarting
 
 DevCon provides two methods to reboot the operating system and one method to restart devices.
 
--   The **/r** parameter is a conditional reboot that reboots the operating system only if a reboot is required to make the accompanying operation effective. This parameter is valid only in commands that include a DevCon operation. It can reboot the system on a local computer or a remote computer (Windows XP and earlier).
+-   The **/r** parameter is a conditional reboot that reboots the operating system only if a reboot is required to make the accompanying operation effective. This parameter is valid only in commands that include a DevCon operation. It can reboot the system on a local computer.
 
 -   The **DevCon Reboot** operation forces the operating system to reboot. It is valid only on a local computer, and it cannot be combined with other operations. Instead of using the reboot operation, users typically add the **/r** parameter to commands.
 

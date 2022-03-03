@@ -10,7 +10,7 @@ ms.date: 08/07/2018
 
 The following figure shows the order in which NetAdapterCx calls a client driver's event callback functions when bringing a device to the fully operational state, starting from the Device Arrived state at the bottom of the figure:
 
-<img src="images/netadaptercx-powerup.png" alt="Device enumeration and power-up sequence for NetAdapterCx client driver" title="Device enumeration and power-up sequence for NetAdapterCx client driver" />
+<img src="images/netadaptercx-powerup-1.png" alt="Device enumeration and power-up sequence for NetAdapterCx client driver" title="Device enumeration and power-up sequence for NetAdapterCx client driver" />
 
 The broad horizontal lines mark the steps that are involved in starting a device. The column on the left side of the figure describes the step, and the column on the right lists the event callbacks that accomplish it. Steps marked with blue text are specific to NetAdapterCx, while other steps are common to all WDF-based drivers.
 

@@ -7,8 +7,6 @@ keywords:
 - data streaming WDK
 ms.date: 06/24/2021
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 
 ---
 

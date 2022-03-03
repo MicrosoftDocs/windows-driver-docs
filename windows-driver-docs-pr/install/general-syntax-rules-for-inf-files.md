@@ -7,14 +7,10 @@ keywords:
 - sections WDK INF files
 - INF files WDK device installations , directives
 - directives WDK INF files
-ms.date: 04/20/2017
+ms.date: 01/14/2022
 ---
 
 # General Syntax Rules for INF Files
-
-
-
-
 
 An INF file is a text file organized into named sections. Some sections have system-defined names and some sections have names determined by the writer of the INF file.
 
@@ -24,7 +20,7 @@ Some INF file entries are basically pointers from one section to another, for a 
 
 Other INF file entries do not point to other sections, but supply information that Windows uses during installation, such as file names, registry values, hardware configuration information, flags, and so on. For example, an [**INF DriverVer directive**](inf-driverver-directive.md) supplies driver version information.
 
-When Windows begins an installation, it first looks for an [**INF Version section**](inf-version-section.md) to verify the validity of the INF file and to determine where installation files are located. Then it starts the installation by finding an [**INF Manufacturer section**](inf-manufacturer-section.md). This section contains directives to [**INF *Models* sections**](inf-models-section.md), which in turn provide directives leading to various [**INF *DDInstall* sections**](inf-ddinstall-section.md), based on the hardware ID of the device being installed.
+When Windows begins an installation, it first looks for an [**INF Version section**](inf-version-section.md) to verify the validity of the INF file. Then it starts the installation by finding an [**INF Manufacturer section**](inf-manufacturer-section.md). This section contains directives to [**INF *Models* sections**](inf-models-section.md), which in turn provide directives leading to various [**INF *DDInstall* sections**](inf-ddinstall-section.md), based on the hardware ID of the device being installed.
 
 The following syntax rules govern the required and optional contents of INF files, the format of section names by using string tokens, and line format, continuation, and comments.
 
@@ -34,9 +30,9 @@ The following syntax rules govern the required and optional contents of INF file
 
 ### <a href="" id="required-and-optional-contents"></a> Required and Optional Contents
 
-- The set of required and optional sections, entries, and directives in any particular INF file depends on the type of device/driver or component (such as an application or device class installer DLL) to be installed.
+- The set of required and optional sections, entries, and directives in any particular INF file depends on the type of device/driver or component to be installed.
 
-- The set of sections, section-specific entries, and directives required to install any particular device and its drivers also depends somewhat on the corresponding class installer. For more information about how the system-supplied class installers handle device-type-specific INF files, see the device-type specific documentation in the WDK.
+- The set of sections, section-specific entries, and directives required to install any particular device and its drivers also depends somewhat on the corresponding class installer, if one exists. For more information about how the system-supplied class installers handle device-type-specific INF files, see the device-type specific documentation in the WDK.
 
 - Within syntax definitions, optional entries are delimited by *unbolded* brackets (\[,\]). On the other hand, *bold* brackets (**\[**, **\]**) are required elements of the entry in which they are contained. In the following example, the brackets around **Version** are required, while the brackets around **Class**=*class-name* indicate this entry is optional.
 

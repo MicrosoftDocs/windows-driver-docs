@@ -6,8 +6,6 @@ keywords:
 - Power Metering and Budgeting WDK , design guide
 ms.date: 10/09/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Power Metering and Budgeting Design Guide

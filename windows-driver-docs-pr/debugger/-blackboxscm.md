@@ -4,8 +4,6 @@ description: The blackboxscmextension displays service control manager (scm) sec
 keywords: ["blackboxscm Windows Debugging"]
 ms.date: 01/02/2019
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:

@@ -3,8 +3,6 @@ title: Partner app development
 description: Learn about Partner app development scenarios that require functionality such as access to system APIs.
 ms.date: 08/12/2021
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Partner app development

@@ -33,6 +33,9 @@ You can run the Windows 11 WDK on Windows 7 and later, and use it to develop dri
 
 ## Download and install the Windows 11 WDK
 
+> [!NOTE]
+> Visual Studio 2022 is not supported by the Windows 11 WDK. To use Visual Studio 2022 to develop and test drivers, download the preview version of the kit. For details, see [Installing preview versions of the Windows Driver Kit (WDK)](./installing-preview-versions-wdk.md).
+
 ### ![download icon.](images/download-install.png) Step 1: Install Visual Studio 2019
 
 The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](/visualstudio/releases/2019/system-requirements).
@@ -43,9 +46,9 @@ The following editions of Visual Studio 2019 support driver development for this
 * [Download Visual Studio Professional 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=16)
 * [Download Visual Studio Enterprise 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=16)
 
-When you install Visual Studio 2019, select the **Desktop development with C++** workload. The Windows 10 Software Development Kit (SDK) is automatically included and is displayed in the right-hand **Summary** pane. Note that the version of the SDK that is compatible with the Windows 11 WDK may not be the default installed with Visual Studio. To get the compatible version of the SDK please use the link in step 2 below. 
+When you install Visual Studio 2019, select the **Desktop development with C++** workload. The Windows 11 Software Development Kit (SDK) is automatically included and is displayed in the right-hand **Summary** pane. If the default SDK is not the version of the SDK that is compatible with the Windows 11 WDK (22000.1), please use the SDK download link in step 2 below.
 
-WDK has Spectre mitigation enabled by default but requires spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for. Additionally, developing drivers for ARM/ARM64/ARM64EC require the build tools for these architectures to also be installed with Visual Studio. To locate these items, you will need to know the latest version of MSVC installed on your system.
+WDK has Spectre mitigation enabled by default but requires Spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for. Additionally, developing drivers for ARM/ARM64/ARM64EC require the build tools for these architectures to also be installed with Visual Studio. To locate these items, you will need to know the latest version of MSVC installed on your system.
 
 To find the latest version of MSVC installed on your system, in **Visual Studio Installer** go to **workload page**, on the right pane under **installation details**, expand **Desktop development with C++** and locate the **MSVC v142 - VS 2019 C++ x64/x86 build tools (V14.xx)** - note where **xx** should be the highest version available.
 
@@ -97,7 +100,7 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 >4.    Launch devenv.exe from the same environment, using the full file path. 
 >Example: `"C:\Program Files (x86)\Microsoft Visual Studio\2019\\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`
 >
->Note that the Visual Studio major version should match with the version in the EWDK. For example, Visual Studio 2019 works with the EWDK that contain VS16.X build tools. 
+>Note that the Visual Studio major version should match with the version in the EWDK. For example, Visual Studio 2019 works with the EWDK that contain VS16.X build tools. For a list of Visual Studio 2019 version numbers, see [Visual Studio 2019 Releases](/visualstudio/releases/2019/history).
 
 <br>
 

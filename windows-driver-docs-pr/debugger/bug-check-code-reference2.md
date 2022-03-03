@@ -366,8 +366,8 @@ The following table provides links to bug check codes.
 | 0x0000016C | [**INVALID\_RUNDOWN\_PROTECTION\_FLAGS**](bug-check-0x16c--invalid-rundown-protection-flags.md)                                                   |
 | 0x0000016D | [**INVALID\_SLOT\_ALLOCATOR\_FLAGS**](bug-check-0x16d--invalid-slot-allocator-flags.md)                                                           |
 | 0x0000016E | [**ERESOURCE\_INVALID\_RELEASE**](bug-check-0x16e--eresource-invalid-release.md)                                                                  |
-| 0x00000170 | [**CRYPTO\_LIBRARY\_INTERNAL\_ERROR**](bug-check-0x170--crypto-library-internal-error.md)                                                         |
-| 0x00000171 | [**CLUSTER\_CSV\_CLUSSVC\_DISCONNECT\_WATCHDOG**](bug-check-0x171--cluster-csv-clussvc-disconnect-watchdog.md)                                    |
+| 0x00000170 | [**CLUSTER\_CSV\_CLUSSVC\_DISCONNECT\_WATCHDOG**](bug-check-0x170--cluster-csv-clussvc-disconnect-watchdog.md)                                    |
+| 0x00000171 | [**CRYPTO\_LIBRARY\_INTERNAL\_ERROR**](bug-check-0x171--crypto-library-internal-error.md)                                                         |
 | 0x00000173 | [**COREMSGCALL\_INTERNAL\_ERROR**](bug-check-0x173--coremsgcall-internal-error.md)                                                                |
 | 0x00000174 | [**COREMSG\_INTERNAL\_ERROR**](bug-check-0x174--coremsg-internal-error.md)                                                                        |
 | 0x00000178 | [**ELAM\_DRIVER\_DETECTED\_FATAL\_ERROR**](bug-check-0x175--elam-driver-detected-fatal-error.md)                                                  |

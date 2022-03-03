@@ -48,12 +48,10 @@ This directive references an INF-writer-defined *update-autologger-install-secti
 <a href="" id="include-filename-inf--filename2-inf----"></a>**Include=**<em>filename</em>**.inf**\[**,**<em>filename2</em>**.inf**\]...  
 This optional entry specifies one or more additional system-supplied INF files that contain sections needed to install this device. If this entry is specified, a **Needs** entry is also usually required.
 
-For more information about the **Include** entry and restrictions on its use, see [Specifying the Source and Target Locations for Device Files](specifying-the-source-and-target-locations-for-device-files.md).
-
 <a href="" id="needs-inf-section-name--inf-section-name----"></a>**Needs=**<em>inf-section-name</em>\[**,**<em>inf-section-name</em>\]...  
 This optional entry specifies the section that must be processed during the installation of this device. Typically, the section is a <em>DDInstall</em>**.Events** section within a system-supplied INF file that is listed in an **Include** entry. However, it can be any section that is referenced within a <em>DDInstall</em>**.Events** section.
 
-**Needs** entries cannot be nested. For more information about the **Needs** entry and restrictions on its use, see [Specifying the Source and Target Locations for Device Files](specifying-the-source-and-target-locations-for-device-files.md).
+**Needs** entries cannot be nested.
 
 ## Remarks
 

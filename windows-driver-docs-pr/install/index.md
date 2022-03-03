@@ -4,8 +4,6 @@ description: This section explains how devices and drivers are installed in Wind
 ms.assetid: 5bb4d9d3-9dcb-4820-a6ad-0345f7645c82
 ms.date: 08/05/2021
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Device and Driver Installation

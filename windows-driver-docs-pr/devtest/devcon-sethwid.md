@@ -1,6 +1,6 @@
 ---
 title: DevCon SetHwID
-description: Adds, deletes, and changes the order of hardware IDs of root-enumerated devices on a local or remote computer.
+description: Adds, deletes, and changes the order of hardware IDs of root-enumerated devices on a local computer.
 keywords:
 - DevCon SetHwID Driver Development Tools
 topic_type:
@@ -9,26 +9,21 @@ api_name:
 - DevCon SetHwID
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 02/11/2022
 ---
 
 # DevCon SetHwID
 
-Adds, deletes, and changes the order of hardware IDs of root-enumerated devices on a local or remote computer.
+Adds, deletes, and changes the order of hardware IDs of root-enumerated devices.
 
 ```
-    devcon [/m:\\computer] sethwid {* | ID [ID ...] | =class [ID [ID ...]]} := [ = | + | - | ! ]HardwareIDs ...
+    devcon sethwid {* | ID [ID ...] | =class [ID [ID ...]]} := [ = | + | - | ! ]HardwareIDs ...
 ```
 
 ## <span id="ddk_devcon_sethwid_tools"></span><span id="DDK_DEVCON_SETHWID_TOOLS"></span>Parameters
 
-<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>
-Runs the command on the specified remote computer. The backslashes are required.
-
-**Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access is unavailable.
-
-<span id="______________"></span> **\***
-Represents all devices on the computer.
+<span id="______________"></span>  `*` 
+The asterisk represents all devices on the computer.  
 
 <span id="_______ID______"></span><span id="_______id______"></span> *ID*
 Specifies all or part of a hardware ID, compatible ID, or device instance ID of a device. When specifying multiple IDs, type a space between each ID. IDs that include an ampersand character (**&**) must be enclosed in quotation marks.
@@ -48,12 +43,12 @@ The following special characters modify the ID parameter.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong><em></strong></p></td>
-<td align="left"><p>Matches any character or no character. Use the wildcard character (</em>) to create an ID pattern, for example, <em>disk</em>.</p></td>
+<td align="left"><p><strong>*</strong></p></td>
+<td align="left"><p>Matches any character or no character. Use the wildcard character (*) to create an ID pattern, for example, *disk.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>@</strong></p></td>
-<td align="left"><p>Indicates a device instance ID, for example, <strong><xref href="ROOT\FTDISK\0000" data-throw-if-not-resolved="False" data-raw-source="@ROOT\FTDISK\0000"></xref></strong>.</p></td>
+<td align="left"><p>Indicates a device instance ID, for example, @ROOT\FTDISK\0000.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>'</strong></p>
@@ -73,7 +68,7 @@ Specifies one or more hardware IDs.
 
 If the hardware IDs are not preceded by a symbol parameter (**+**, **-**, **=**, **!**), DevCon adds or moves the specified hardware IDs to the end of the list of hardware IDs for the device in the specified order. This is equivalent to the - parameter.
 
-<span id="_"></span>=  
+<span id="_"></span>**=**  
 Replaces the list of hardware IDs for the device with the specified hardware IDs in the specified order.
 
 <span id="______________"></span> **+**
@@ -109,9 +104,9 @@ devcon sethwid @ROOT\LEGACY_BEEP\0000 := !beep legacy
 
 [Example 40: Assign a hardware ID to a legacy device](devcon-examples.md#ddk_example_40_assign_a_hardware_id_to_a_legacy_device_tools)
 
-[Example 41: Add a hardware ID to all legacy devices on a remote computer](devcon-examples.md#ddk_example_41_add_a_hardware_id_to_all_legacy_devices_on_a_remote_com)
+[Example 41: Add a hardware ID to all legacy devices](devcon-examples.md#ddk_example_41_add_a_hardware_id_to_all_legacy_devices_on_a_remote_com)
 
-[Example 42: Delete a hardware ID from all legacy devices on a remote computer](devcon-examples.md#ddk_example_42_delete_a_hardware_id_from_all_legacy_devices_on_a_remot)
+[Example 42: Delete a hardware ID from all legacy devices](devcon-examples.md#ddk_example_42_delete_a_hardware_id_from_all_legacy_devices_on_a_remot)
 
 [Example 43: Add, delete, and replace hardware IDs](devcon-examples.md#ddk_example_43_add_delete_and_replace_hardwareids_tools)
 

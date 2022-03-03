@@ -469,3 +469,20 @@ Tells WiFiCx that a peer has been disconnected. This causes the framework to sto
 
 ![Peer lifetime](images/PeerDemux.png)
 
+## Power policy changes
+
+For power management, client drivers should use the NETPOWERSETTINGS object [like other types of NetAdapterCx client drivers](configuring-power-management.md).
+
+To support device idling when the system is in its working (S0) state, the driver must call [**WdfDeviceAssignS0IdleSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings) and set the **IdleTimeoutType**  member of [**WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) to **SystemManagedIdleTimeoutWithHint**:
+
+```cpp
+const ULONG WIFI_DEFAULT_IDLE_TIMEOUT_HINT_MS = 3u * 1000u; // 3 seconds
+...
+WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS  idleSettings;
+WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT(&idleSettings,IdleCanWakeFromS0);
+
+idleSettings.IdleTimeout = WIFI_DEFAULT_IDLE_TIMEOUT_HINT_MS; // 3 seconds
+idleSettings.IdleTimeoutType = SystemManagedIdleTimeoutWithHint;
+    status = WdfDeviceAssignS0IdleSettings(DeviceContext->WdfDevice, &idleSettings);
+
+```
