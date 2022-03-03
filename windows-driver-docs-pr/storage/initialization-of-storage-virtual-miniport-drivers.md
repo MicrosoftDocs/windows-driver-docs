@@ -19,9 +19,9 @@ Design considerations are unique to various VMiniports, so implementation specif
 
 This section lists the more prominent functions, callbacks, and structures that a VMiniport implements/uses. Some functions and callbacks are required; the optional callbacks are unique to a VMiniport's design.
 
-* [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize), which is the first routine that the operating system calls after [the VMiniport is loaded](##loading-a-vminiport). This routine is required.
+* [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize), which is the first routine that the operating system calls after the VMiniport is loaded. This routine is required.
 
-* [**HW_INITIALIZATION_DATA**](/windows-hardware/drivers/ddi/storport/ns-storport-_hw_initialization_data-r1), which is a Vminiport-allocated and initialized structure that the VMiniport passes to Storport during [initialization](##initializing-a-vminiport-driver). The VMiniport provides pointers to its callback functions in this structure.
+* [**HW_INITIALIZATION_DATA**](/windows-hardware/drivers/ddi/storport/ns-storport-_hw_initialization_data-r1), which is a Vminiport-allocated and initialized structure that the VMiniport passes to Storport during [initialization](#vminiport-initialization). The VMiniport provides pointers to its callback functions in this structure.
 
   The following callback routines are required:
 
@@ -57,15 +57,15 @@ This section lists the more prominent functions, callbacks, and structures that 
 
   The Vminiport driver sets other fields as needed. Unused fields must be set to zero.
 
-* [**PORT_CONFIGURATION_INFORMATION**](ns-storport-_port_configuration_information.md), which is a Storport-allocated structure. Storport initializes some **PORT_CONFIGURATION_INFORMATION** members and then passed it to the VMiniport's [**HwFindAdapter**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter) callback, where the VMiniport completes the initialization. Since this structure is pre-initialized by Storport, **HWFindAdapter** must not zero out the structure. A VMiniport must set **VirtualDevice** to TRUE.
+* [**PORT_CONFIGURATION_INFORMATION**](/windows-hardware/drivers/ddi/storport/ns-storport-_port_configuration_information), which is a Storport-allocated structure. Storport initializes some **PORT_CONFIGURATION_INFORMATION** members and then passed it to the VMiniport's [**HwFindAdapter**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter) callback, where the VMiniport completes the initialization. Since this structure is pre-initialized by Storport, **HWFindAdapter** must not zero out the structure. A VMiniport must set **VirtualDevice** to TRUE.
 
-## VMiniport driver initialization
+## VMiniport initialization
 
-The VMiniport has three stages of initialization.
+A VMiniport has three stages of initialization.
 
 * In the first stage, the VMiniport's [*DriverEntry*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine calls [**StorPortInitialize**](/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize) with a pointer to its initialized [**HW_INITIALIZATION_DATA**](/windows-hardware/drivers/ddi/storport/ns-storport-_hw_initialization_data-r1) structure.
 
-* Storport calls the VMiniport's [**HwFindAdapter**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter) callback with a Storport-allocated and partially initialized [**PORT_CONFIGURATION_INFORMATION**](ns-storport-_port_configuration_information.md) structure. The principal function of **HwFindAdapter** is to complete the initialization of **PORT_CONFIGURATION_INFORMATION**, including setting the **VirtualDevice** member to TRUE.
+* Storport calls the VMiniport's [**HwFindAdapter**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter) callback with a Storport-allocated and partially initialized [**PORT_CONFIGURATION_INFORMATION**](/windows-hardware/drivers/ddi/storport/ns-storport-_port_configuration_information) structure. The principal function of **HwFindAdapter** is to complete the initialization of **PORT_CONFIGURATION_INFORMATION**, including setting the **VirtualDevice** member to TRUE.
 
 * After [**HwFindAdapter**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter) successfully returns, Storport calls the VMiniport's [**HwInitialize**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_initialize) callback to complete initialization of the VMiniport.
 
