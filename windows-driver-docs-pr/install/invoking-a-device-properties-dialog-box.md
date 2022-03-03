@@ -1,7 +1,7 @@
 ---
 title: Invoking a Device Properties Dialog Box
 description: Invoking a Device Properties Dialog Box
-ms.date: 04/20/2017
+ms.date: 03/03/2022
 ---
 
 # Invoking a Device Properties Dialog Box
@@ -17,13 +17,4 @@ For information about how to call **DeviceProperties_RunDLL**, see the following
 
 [DeviceProperties_RunDLL Function Prototype](deviceproperties-rundll-function-prototype.md)
 
-For more information about invoking **DeviceProperties_RunDLL**, see the [Knowledge Base article 815320](https://go.microsoft.com/fwlink/p/?linkid=3100&ID=815320) on the [Microsoft Help and Support](https://go.microsoft.com/fwlink/p/?linkid=8713) website.
-
- 
-
- 
-
-
-
-
-
+For more information about invoking **DeviceProperties_RunDLL**, see the [How to invoke the device Properties dialog box from the application or from a command prompt](https://support.microsoft.com/en-us/topic/how-to-invoke-the-device-properties-dialog-box-from-the-application-or-from-a-command-prompt-ca8ba122-ec37-2bbe-432d-6ff831f05fcd).
