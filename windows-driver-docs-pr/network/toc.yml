@@ -154,6 +154,8 @@
     href: overview-of-ndis-versions.md
   - name: "Introductions to NDIS 6.0 and later"
     items:
+    - name: "Introduction to NDIS 6.86"
+      href: introduction-to-ndis-6-86.md
     - name: "Introduction to NDIS 6.85"
       href: introduction-to-ndis-6-85.md
     - name: "Introduction to NDIS 6.84"
@@ -306,6 +308,8 @@
       href: ndis-object-version-issues-for-wmi.md
   - name: "Porting NDIS Drivers to Newer NDIS Versions"
     items: 
+    - name: "Porting NDIS 6.x drivers to NDIS 6.86"
+      href: porting-ndis-6-x-drivers-to-ndis-6-86.md
     - name: "Porting NDIS 6.x drivers to NDIS 6.85"
       href: porting-ndis-6-x-drivers-to-ndis-6-85.md
     - name: "Porting NDIS 6.x drivers to NDIS 6.84"

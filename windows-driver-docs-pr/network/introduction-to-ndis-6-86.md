@@ -34,11 +34,11 @@ In addition, an NDIS 6.86 driver must be compliant with the following requiremen
 
 ## Compiling an NDIS 6.86 driver
 
-The WDK for Windows 10, version 21H2 supports header versioning. Header versioning makes sure that NDIS 6.86 drivers use the appropriate NDIS 6.86 data structures at compile time.
+The WDK for Windows Server 2022 supports header versioning. Header versioning makes sure that NDIS 6.86 drivers use the appropriate NDIS 6.86 data structures at compile time.
 
 Add the following compiler settings to the Visual Studio project for your driver:
 
 - For a miniport driver, add `NDIS686_MINIPORT=1`.
 - For a filter or protocol driver, add `NDIS686=1`.
 
-For information on building a driver with the Windows 10, version 21H2 release of the WDK, see [Building a Driver](../develop/building-a-driver.md).
+For information on building a driver with the Windows Server 2022 release of the WDK, see [Building a Driver](../develop/building-a-driver.md).
