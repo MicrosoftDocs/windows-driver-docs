@@ -11,7 +11,7 @@ keywords:
 - release-signing drivers WDK , driver packages
 - release-signing driver packages WDK
 - release-signing driver packages WDK , about test signing driver packages
-ms.date: 04/20/2017
+ms.date: 03/03/2022
 ---
 
 # How to Release-Sign a Driver Package
@@ -21,19 +21,17 @@ This section provides the basic steps that you have to follow when you release-s
 
 -   Obtaining a [Software Publisher Certificate (SPC)](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates) from a commercial certificate authority (CA).
 
+-   Release-signing a driver binary through an embedded signature. You have to embed a digital signature within the driver binary if the driver binary is a *boot-start driver*.
+
 -   Preparing a [driver package](driver-packages.md) for release-signing. This includes creating a [catalog file](catalog-files.md), which contains the digital signature for the driver package.
 
 -   Release-signing the driver package's catalog file.
 
--   Release-signing a driver through an embedded signature. You have to embed a digital signature within the driver if the driver is a *boot-start driver*.
-
 Each topic in this section describes a separate procedure in the release-signing process, and provides the general information that you have to understand about the procedure. In addition, each topic points you to other topics that provide detailed information about the procedure.
 
-**Note**  This section discusses the steps involved when a driver publisher has to manually release-sign a driver package. The [Hardware Certification Kit (HCK)](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) has [test categories](/windows-hardware/test/hlk/) for a variety of device types. If a test category for the device type is included in this list, the driver publisher should obtain a [WHQL release signature](whql-release-signature.md) for the driver package instead of manually release-signing the driver package.
+**Note**  This section discusses the steps involved when a driver package publisher has to manually release-sign a driver package. The [Hardware Certification Kit (HCK)](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) has [test categories](/windows-hardware/test/hlk/) for a variety of device types. If a test category for the device type is included in this list, the driver publisher should obtain a [WHQL release signature](whql-release-signature.md) for the driver package instead of manually release-signing the driver package.
 
- 
-
-Throughout this section, separate computers are used for the various processes involved in release-signing a driver. These computers are referred to as follows:
+Throughout this section, separate computers are used for the various processes involved in release-signing a driver package. These computers are referred to as follows:
 
 <a href="" id="--------signing-computer"></a> **Signing computer**  
 This is the computer that is used to release-sign a driver package for Windows Vista and later versions of Windows. This computer must be running Windows XP SP2 or later versions of Windows. To use the [driver signing tools](../devtest/tools-for-signing-drivers.md), this computer must have the Windows Vista and later versions of the Windows Driver Kit (WDK) installed.
