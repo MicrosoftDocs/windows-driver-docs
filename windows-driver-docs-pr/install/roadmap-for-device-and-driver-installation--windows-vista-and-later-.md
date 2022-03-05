@@ -37,7 +37,7 @@ To install a device and driver in the Windows operating system, follow these st
 
 -   Step 5: Preproduction-sign your driver package to test with Secure Boot.
 
-    Preproduction-signing refers to using the WHQL/WHCP preproduction certificate to sign a prerelease version of a [driver package](driver-packages.md) for use on retail/production systems without having to enable TESTSINGING. This capability allows developers to test drivers with Secure Boot on before release-signing their driver package. 
+    Preproduction-signing refers to using the WHQL/WHCP preproduction certificate to sign a prerelease version of a [driver package](driver-packages.md) for use on retail/production systems without having to enable TESTSIGNING. This capability allows developers to test drivers with Secure Boot on before release-signing their driver package. 
 
     For more information, see [Preproduction Driver Signing and Testing](./preproduction-driver-signing-and-install.md).
 
