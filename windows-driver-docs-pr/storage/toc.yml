@@ -478,13 +478,13 @@
   - name: "Storage Virtual Miniport Drivers"
 # Auto-expanded node
     items: 
-    - name: "About Storage VMiniport Drivers"
+    - name: "About Storage virtual miniport drivers"
       href: overview-of-storage-virtual-miniport-drivers.md
-    - name: "When is a VMiniport Driver Appropriate?"
+    - name: "When is a VMiniport driver appropriate?"
       href: storage-virtual-miniport-drivers--when-are-they-appropriate-.md
-    - name: "Initialization"
+    - name: "Implementing a Storport VMiniport"
       href: initialization-of-storage-virtual-miniport-drivers.md
-    - name: "Crash Dump and Hibernation Support"
+    - name: "Crash dump and hibernation support"
       href: crash-dump-and-hibernation-support.md
   - name: "Storage Filter Drivers"
 # Auto-expanded node
