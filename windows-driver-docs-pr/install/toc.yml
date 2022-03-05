@@ -204,6 +204,8 @@
         href: configuring-the-test-computer-to-support-test-signing.md
       - name: "Enable Loading of Test Signed Drivers"
         href: the-testsigning-boot-configuration-option.md
+      - name: "Enable Loading of Preproduction Signed Drivers"
+        href: preproduction-driver-signing-and-install.md
       - name: "Verifying the Test Signature"
         href: verifying-the-test-signature.md
       - name: "Installing a Test-Signed Driver Package on the Test Computer"
