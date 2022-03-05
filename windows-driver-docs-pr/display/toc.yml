@@ -10,6 +10,8 @@
   - name: "What's new for Windows display and graphics drivers"
 # Auto-expanded node
     items:
+    - name: "What's new for Windows 11 display and graphics drivers"
+      href: what-s-new-for-windows-11-display-and-graphics-drivers.md
     - name: "What's new for Windows 10 display and graphics drivers"
       href: what-s-new-for-windows-10-display-and-graphics-drivers.md
     - name: "What's new for prior WDDM 2.X versions for Windows 10 display and graphics drivers"
@@ -20,11 +22,15 @@
       href: what-s-new-for-windows-8-display-drivers.md
     - name: "What's new for Windows 7 display drivers (WDDM 1.1)"
       href: what-s-new-for-windows-7-display-drivers--wddm-1-1-.md
-  - name: "WDDM 2.4 Features"
+  - name: "WDDM 3.0 features"
+    items:
+    - name: "D3D12 video encoding"
+      href: video-encoding-d3d12.md
+  - name: "WDDM 2.4 features"
     items:
     - name: "IOMMU-based GPU isolation"
       href: iommu-based-gpu-isolation.md
-  - name: "WDDM 2.1 Features"
+  - name: "WDDM 2.1 features"
     href: wddm-2-1-features.md
   - name: "WDDM 2.0 and Windows 10"
 # Auto-expanded node
