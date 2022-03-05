@@ -38,7 +38,7 @@ Use of the EnableUefiSbTest tool is optional, and the Microsoft test keys can be
 EnableUefiSbTest.exe /dump
 ```
 
-If Secure Boot is disabled and the keys have been successfully cleared, the following output is expected be by the tool:
+If Secure Boot is disabled and the keys have been successfully cleared, the following output is expected:
 
 ```PowerShell
 PS C:\> .\EnableUefiSbTest.exe /dump
