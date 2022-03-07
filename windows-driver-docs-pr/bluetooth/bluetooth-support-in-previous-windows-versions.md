@@ -1,7 +1,7 @@
 ---
 title: Bluetooth version and profile support in previous Windows versions
 description: Bluetooth version and profile support in previous Windows versions
-ms.date: 02/25/2022
+ms.date: 03/07/2022
 ---
 
 # Bluetooth version and profile support in previous Windows versions
@@ -10,7 +10,7 @@ ms.date: 02/25/2022
 > Looking for drivers for your Bluetooth audio device? See [Fix connections to Bluetooth audio devices and wireless displays](https://go.microsoft.com/fwlink/p/?LinkID=623629).
 
 > [!NOTE]
-> For information about Bluetooth support in Windows 10, see [Bluetooth Support in Windows 10](general-bluetooth-support-in-windows.md).
+> For information about Bluetooth support in Windows 11, see [Bluetooth Support in Windows 11](general-bluetooth-support-in-windows.md).
 
 ## Which previous versions of Windows support Bluetooth wireless technology?
 
@@ -18,17 +18,11 @@ The following previous versions of Windows include in-box support for Bluetooth 
 
 - All SKUs of Windows 10
 - All SKUs of Windows 8.1
-- All SKUs of Windows 8
-- All SKUs of Windows 7
 
 The following previous versions of Windows **do not** have in-box support for Bluetooth wireless technology:
 
 - All SKUs of Windows Server 2016
 - All SKUs of Windows Server 2012
-- All SKUs of Windows Server 2008 R2
-- All SKUs of Windows Server 2008
-- All SKUs of Windows Server 2003
-- All SKUs of Windows 2000
 
 Although these versions of Windows do not have in-box Bluetooth wireless technology support, third-party Bluetooth drivers might be available from independent hardware vendors (IHVs).
 
@@ -44,8 +38,6 @@ Windows support for different versions of the Bluetooth specification depends on
 |-----------------------------------------|-------|-------|----------------|-------|----------------|-------|-------|-------|
 | Windows 10 (version 2004)               | X     | X     | X              | X     | X              | X     | X     | X     |
 | Windows 8.1                             | X     | X     | X              | X     | X              | X     |       |       |
-| Windows 8                               | X     | X     | X              | X     | X              | X     |       |       |
-| Windows 7                               | X     | X     | X              | X     | X              |       |       |       |
 
 ## What's new in Windows 10?
 
@@ -57,28 +49,6 @@ Windows 8.1 includes the following enhancements to the Bluetooth stack and rela
 
 - Inbox radio management control for Bluetooth version 4.0 radios.
 - Windows Runtime API support for [**RFCOMM**](/uwp/api/Windows.Devices.Bluetooth.Rfcomm) and [**GATT**](/uwp/api/Windows.Devices.Bluetooth.GenericAttributeProfile) protocol access.
-
-## What's new in Windows 8?
-
-Windows 8 includes the following enhancements to the Bluetooth stack and related software:
-
-- Support for Bluetooth version 4.0:
-  - Bluetooth Low Energy support allows Windows to connect with Bluetooth Smart peripherals.
-  - eL2CAP enables enhanced re-transmission and flow control for profiles that require this functionality.
-- An extensible transport model allowing support for Bluetooth radios on non-USB buses
-- Support for the HFP, A2DP, and AVRCP Profiles
-
-## What is new in Windows 7?
-
-Windows 7 includes the following enhancements to the Bluetooth stack and related software:
-
-- Support for Bluetooth version 2.1:
-  - Secure Simple Pairing allows Windows to determine the best pairing method to use between devices, rather than requiring users to make that determination.
-  - Extended Inquiry Response enables sharing a device's friendly name much earlier in the pairing process.
-- An improved user experience that enhances management of Bluetooth devices
-- Improved installation of USB Bluetooth radios
-
-Any USB device with a USB\\Class\_E0&SubClass\_01&Prot\_01 hardware ID will install as a *Generic Bluetooth Adapter*.
 
 ## Which Bluetooth profiles have in-box support in previous versions of Windows?
 
@@ -128,37 +98,9 @@ Windows 10 supports Bluetooth core specification 5.1, including the following:
 | Radio Frequency Communication               | RFCOMM       | 1.1     |
 | Serial Port Profile                         | SPP          | 1.2     |
 
-### Windows 8.1 and Windows 8 in-box Bluetooth profiles
+### Windows 8.1 in-box Bluetooth profiles
 
-Because Windows 8.1, Windows 8, and Windows 7 provide both kernel-mode and user-mode programming interfaces for their Bluetooth stacks, hardware and software vendors can implement additional profiles in both kernel mode and user mode. We encourage vendors that create such profiles to test their software by using the appropriate [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) test suites and have their software packages digitally signed
-
-### Windows 7 in-box Bluetooth profiles
-
-Windows 7 includes additional and updated Bluetooth profiles as listed in the following table:
-
-| Profile   | Description                         |
-|-----------|-------------------------------------|
-| HID 1.1   | Human Interface Device              |
-| PANU      | Personal Area Network User          |
-| SPP       | Serial Port Profile                 |
-| OPP       | Object Push Profile                 |
-| DUN       | Dial-Up Networking                  |
-| HCRP      | Hard Copy Replacement Profile       |
-| HFP 1.5   | Hands-Free Profile                  |
-| A2DP 1.2  | Advanced Audio Distribution Profile |
-| AVRCP 1.3 | Audio/Video Remote Control Profile  |
-| HOGP      | HID over GATT Profile               |
-
-Windows included in-box support for the following Bluetooth profiles:
-
-| Profile | Description                   |
-|---------|-------------------------------|
-| HID 1.0 | Human Interface Device        |
-| PANU    | Personal Area Network User    |
-| SPP     | Serial Port Profile           |
-| OPP     | Object Push Profile           |
-| DUN     | Dial-Up Networking            |
-| HCRP    | Hard Copy Replacement Profile |
+Because Windows 8.1 provides both kernel-mode and user-mode programming interfaces for their Bluetooth stacks, hardware and software vendors can implement additional profiles in both kernel mode and user mode. We encourage vendors that create such profiles to test their software by using the appropriate [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) test suites and have their software packages digitally signed
 
 ## Do users have to re-pair their Bluetooth devices after they upgrade a system to Windows 8.1?
 
@@ -169,14 +111,6 @@ Therefore, pairing information is preserved if users upgrade from Windows 8 to 
 ## What programming interfaces were introduced in Windows 8.1?
 
 Windows 8.1 introduces new Windows Runtime APIs for accessing the [**RFCOMM**](/uwp/api/Windows.Devices.Bluetooth.Rfcomm) (over standard Bluetooth) and [**GATT**](/uwp/api/Windows.Devices.Bluetooth.GenericAttributeProfile) (over Bluetooth Low Energy).
-
-## What programming interfaces were introduced in Windows 8?
-
-Windows 8 introduces new APIs for accessing Bluetooth Smart peripherals via Bluetooth Low Energy, creating a bus driver for non-USB Bluetooth controllers via an extensible transport model, and creating enhanced L2CAP channels. For more information about these APIs, see [Bluetooth Devices Reference](/windows/win32/api/_bltooth/).
-
-## What programming interfaces were introduced in Windows 7?
-
-Windows 7 introduced new Ex versions of previous APIs to provide enhanced functionality. For example, the BluetoothAuthenticateDeviceEx function lets out-of-band data be passed into the function call for the device that is being authenticated. Similarly, the [**BluetoothRegisterForAuthenticationEx**](/windows/win32/api/bluetoothapis/nf-bluetoothapis-bluetoothregisterforauthenticationex) function includes pin request and numeric comparison functionality. Also, the [**BluetoothSendAuthenticationResponseEx**](/windows/win32/api/bluetoothapis/nf-bluetoothapis-bluetoothsendauthenticationresponseex) function is called when an authentication request to send the numeric comparison response is received. For more information about the new Ex versions of these APIs, see [Bluetooth Functions](/windows/desktop/Bluetooth/bluetooth-functions).
 
 ## See also
 
