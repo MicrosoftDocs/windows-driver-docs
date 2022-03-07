@@ -10,7 +10,7 @@ ms.date: 03/07/2022
 > Looking for drivers for your Bluetooth audio device? See [Fix connections to Bluetooth audio devices and wireless displays](https://go.microsoft.com/fwlink/p/?LinkID=623629).
 
 > [!NOTE]
-> For information about Bluetooth support prior to Windows 10, see [Bluetooth Support in Previous Windows Versions](bluetooth-support-in-previous-windows-versions.md).
+> For information about Bluetooth support prior to Windows 11, see [Bluetooth Support in Previous Windows Versions](bluetooth-support-in-previous-windows-versions.md).
 
 ## Which Bluetooth versions does Windows 11 support?
 
@@ -67,7 +67,7 @@ Windows 11 (version 21H2) supports Bluetooth version 5.1 and the following Bluet
 
 ## New features and recommendations for Windows 11 and later
 
-To learn more about the new features and hardware developer recommendations for the different versions of Windows 10, see [Bluetooth](/windows-hardware/design/component-guidelines/bluetooth) in the [Hardware component guidelines](/windows-hardware/design/component-guidelines/components) section.
+To learn more about the new features and hardware developer recommendations for the different versions of Windows 11, see [Bluetooth](/windows-hardware/design/component-guidelines/bluetooth) in the [Hardware component guidelines](/windows-hardware/design/component-guidelines/components) section.
 
 ## Related topics
 

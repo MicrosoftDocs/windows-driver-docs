@@ -100,11 +100,11 @@ Windows 10 supports Bluetooth core specification 5.1, including the following:
 
 ### Windows 8.1 in-box Bluetooth profiles
 
-Because Windows 8.1 provides both kernel-mode and user-mode programming interfaces for their Bluetooth stacks, hardware and software vendors can implement additional profiles in both kernel mode and user mode. We encourage vendors that create such profiles to test their software by using the appropriate [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) test suites and have their software packages digitally signed
+Because Windows 8.1 provides both kernel-mode and user-mode programming interfaces for its Bluetooth stacks, hardware and software vendors can implement additional profiles in both kernel mode and user mode. We encourage vendors that create such profiles to test their software by using the appropriate [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) test suites and have their software packages digitally signed
 
 ## Do users have to re-pair their Bluetooth devices after they upgrade a system to Windows 8.1?
 
-If users upgrade from Windows 7 to Windows 8.1, they must perform a clean installation of Windows 8.1. In this situation, any Bluetooth software that the OEM provides must be re-installed and all devices must be re-paired. If users upgrade from Windows 8 to Windows 8.1, complex devices such as phones might require re pairing so that third-party drivers will reload. However, a simpler device such as a keyboard or a mouse does not require re-pairing.
+If users upgrade from Windows 7 to Windows 8.1, they must perform a clean installation of Windows 8.1. In this situation, any Bluetooth software that the OEM provides must be re-installed and all devices must be re-paired. If users upgrade from Windows 8 to Windows 8.1, complex devices such as phones might require re-pairing so that third-party drivers will reload. However, a simpler device such as a keyboard or a mouse does not require re-pairing.
 
 Therefore, pairing information is preserved if users upgrade from Windows 8 to Windows 8.1 for some devices, primarily Bluetooth keyboards, mice, and audio devices. This ensures that customers are not required to use a wired keyboard and mouse to upgrade their Windows version. They can use their Bluetooth keyboard and mouse for the entire procedure.
 
