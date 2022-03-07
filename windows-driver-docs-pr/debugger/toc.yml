@@ -494,17 +494,11 @@
           href: the-srctool-utility.md
         - name: "The PDBStr Tool"
           href: the-pdbstr-tool.md
-        - name: "The VSSDump Tool"
-          href: the-vssdump-tool.md
       - name: "Source Control Systems"
 # Auto-expanded node
         items: 
         - name: "Source Control Systems"
           href: source-control-systems.md
-        - name: "Using Visual SourceSafe"
-          href: using-visual-sourcesafe.md
-        - name: "Debugging with Visual SourceSafe"
-          href: debugging-with-visual-sourcesafe.md
         - name: "Using CVS"
           href: using-cvs.md
         - name: "Using Other Source Control Systems"

@@ -186,7 +186,7 @@
         href: introduction-to-test-signing.md
       - name: "How to Test-Sign a Driver Package"
         href: how-to-test-sign-a-driver-package.md
-      - name: "How to Install a Test-signed Driver Required for Windows Setup and Boot"
+      - name: "How to Install a Test-signed Driver Package Required for Windows Setup and Boot"
         href: how-to-install-test-signed-driver-for-setup-and-boot.md
       - name: "Creating Test Certificates"
         href: creating-test-certificates.md
@@ -198,7 +198,7 @@
         href: creating-a-catalog-file-for-test-signing-a-driver-package.md
       - name: "Test-Signing a Driver Package's Catalog File"
         href: test-signing-a-driver-package-s-catalog-file.md
-      - name: "Test-Signing a Driver through an Embedded Signature"
+      - name: "Test-Signing a Driver Binary through an Embedded Signature"
         href: test-signing-a-driver-through-an-embedded-signature.md
       - name: "Configuring the Test Computer to Support Test-Signing"
         href: configuring-the-test-computer-to-support-test-signing.md
@@ -250,7 +250,7 @@
         href: creating-a-catalog-file-for-release-signing-a-driver-package.md
       - name: "Release-Signing a Driver Package's Catalog File"
         href: release-signing-a-driver-package-s-catalog-file.md
-      - name: "Release-Signing a Driver through an Embedded Signature"
+      - name: "Release-Signing a Driver Binary through an Embedded Signature"
         href: release-signing-a-driver-through-an-embedded-signature.md
       - name: "Verifying the Release-Signature"
         href: verifying-the-release-signature.md

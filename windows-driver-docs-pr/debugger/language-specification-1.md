@@ -133,7 +133,7 @@ Describes how to build the command to extract the file from source control. This
 Lists environment variables to be created during the file extraction. This is a string. Separate multiple entries with a backspace character (\\b). This is an optional variable.
 
 <span id="SRCSRVVERCTRL"></span><span id="srcsrvverctrl"></span>**SRCSRVVERCTRL**  
-Specifies the version control system in use. For Perforce, this is perforce. For Visual SourceSafe, this is vss. For Team Foundation Server, this is tfs. This variable is used to persist server errors. This is an optional variable.
+Specifies the version control system in use. For Perforce, this is perforce. For Team Foundation Server, this is tfs. This variable is used to persist server errors. This is an optional variable.
 
 <span id="SRCSRVVERRDESC"></span><span id="srcsrvverrdesc"></span>**SRCSRVVERRDESC**  
 Specifies the text to display when the version control client is unable to contact the server that contains the source files to extract. SrcSrv uses this value to check for connection problems. This is an optional variable.
