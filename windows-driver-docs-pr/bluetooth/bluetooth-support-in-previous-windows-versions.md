@@ -1,7 +1,7 @@
 ---
 title: Bluetooth version and profile support in previous Windows versions
 description: Bluetooth version and profile support in previous Windows versions
-ms.date: 03/07/2022
+ms.date: 03/08/2022
 ---
 
 # Bluetooth version and profile support in previous Windows versions
@@ -48,7 +48,7 @@ To learn more about the new features and hardware developer recommendations for 
 Windows 8.1 includes the following enhancements to the Bluetooth stack and related software:
 
 - Inbox radio management control for Bluetooth version 4.0 radios.
-- Windows Runtime API support for [**RFCOMM**](/uwp/api/Windows.Devices.Bluetooth.Rfcomm) and [**GATT**](/uwp/api/Windows.Devices.Bluetooth.GenericAttributeProfile) protocol access.
+- Windows Runtime API support for [RFCOMM](/uwp/api/Windows.Devices.Bluetooth.Rfcomm) and [GATT](/uwp/api/Windows.Devices.Bluetooth.GenericAttributeProfile) protocol access.
 
 ## Which Bluetooth profiles have in-box support in previous versions of Windows?
 
