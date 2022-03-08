@@ -6,7 +6,7 @@ keywords:
 - Testing drivers
 - Testing pre-production drivers
 - Pre-prodution driver signing and testing
-ms.date: 02/22/2022
+ms.date: 03/08/2022
 ---
 
 # How to Test Preproduction Drivers with Secure Boot Enabled
@@ -76,7 +76,7 @@ copy-item <path_to_p7b> S:/EFI/Microsoft/Boot/SecureBootPolicy.p7b
 
 **Note: The Windows kernel requires the Secure Boot policy file in the form of “SecureBootPolicy.p7b” so the name and file format must not be modified.**
 
-**Note: If the validations are being performed on a WCOS system (e.g. HoloLens OS, SurfaceHub OS, Windows 10x), the corresponding .pol policy files must also be copied over to S:/EFI/Microsoft/Boot/Policies. Additionally, /EFI/Microsoft/Boot/Policies/FullDebugPolicy.pol must be deleted before rebooting.**
+**Note: If the validations are being performed on a HoloLens 2, the corresponding .pol policy files must also be copied over to S:/EFI/Microsoft/Boot/Policies. Additionally, /EFI/Microsoft/Boot/Policies/FullDebugPolicy.pol must be deleted before rebooting.**
 
 6. Reboot the system to allow the Windows kernel to refresh the policies. Secure Boot is now re-enabled and provisioned automatically by the provisioning tool. This can be validated by re-running EnableUefiSbTest.exe /dump as admin and validating that only the dbx and OemId values are empty (“Not Found”).
 
@@ -93,7 +93,7 @@ mountvol s: /s
 rm  S:/EFI/Microsoft/Boot/SecureBootPolicy.p7b
 ```
 
-**Note: If the validations are being performed on a WCOS system (e.g. HoloLens OS, Surface Hub OS, Windows 10x), the .pol policy files must also be removed from S:/EFI/Microsoft/Boot/Policies.**
+**Note: If the validations are being performed on a HoloLens 2, the .pol policy files must also be removed from S:/EFI/Microsoft/Boot/Policies.**
 
 2. Boot into the system’s UEFI menu and reconfigure Secure Boot keys to factory settings.
 
