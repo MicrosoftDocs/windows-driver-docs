@@ -5,7 +5,8 @@ keywords:
 - in-progress installations WDK
 - checking in-progress installations
 - verifying in-progress installations
-ms.date: 04/20/2017
+ms.custom: contperf-fy22q3
+ms.date: 03/08/2022
 ---
 
 # How a Device Installation Application checks for in-progress device installations
