@@ -56,10 +56,12 @@
     href: bluetooth/index.md
   - name: "Component Firmware Update (CFU)"
     href: cfu/index.md
-  - name: "Display drivers"
+  - name: "Display and graphics drivers"
     href: display/index.md
   - name: "Driver Development Tools"
     href: devtest/index.md
+  - name: "File systems and minifilter drivers"
+    href: ifs/index.md
   - name: "Getting started with Windows drivers"
     href: gettingstarted/index.md
   - name: "GNSS drivers"
@@ -74,8 +76,6 @@
     href: ieee/index.md
   - name: "Imaging device drivers"
     href: image/index.md
-  - name: "Installable file system drivers"
-    href: ifs/index.md
   - name: "Kernel-mode driver technology"
     href: kernel/index.md
   - name: "Mobile broadband"
