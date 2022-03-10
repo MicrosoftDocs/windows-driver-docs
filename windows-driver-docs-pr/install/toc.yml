@@ -80,6 +80,8 @@
       href: using-an-extension-inf-file.md
     - name: "Using an Extension INF File Template"
       href: using-an-extension-inf-file-template.md
+    - name: "Using a Component INF File"
+      href: using-a-component-inf-file.md
     - name: "Updating Device Firmware using Windows Update"
       href: updating-device-firmware-using-windows-update.md
     - name: "Specifying the Source and Target Locations for Device Files"
@@ -498,14 +500,12 @@
       href: using-device-manager-to-uninstall-devices-and-driver-packages.md
     - name: "Using SetupAPI to Uninstall Devices and Driver Packages"
       href: using-setupapi-to-uninstall-devices-and-driver-packages.md
-  - name: "Updating Driver Files"
-    href: updating-driver-files.md
-  - name: "Creating Secure Device Installations"
-    href: creating-secure-device-installations.md
-  - name: "Using a Component INF File"
-    href: using-a-component-inf-file.md
-  - name: "Pairing a driver with a Universal Windows Platform (UWP) app"
-    href: pairing-app-and-driver-versions.md
+    - name: "Updating Driver Files"
+      href: updating-driver-files.md
+    - name: "Creating Secure Device Installations"
+      href: creating-secure-device-installations.md
+    - name: "Pairing a driver with a Universal Windows Platform (UWP) app"
+      href: pairing-app-and-driver-versions.md
   - name: "Device Identification"
     items: 
       - name: "Device Identification Strings"
