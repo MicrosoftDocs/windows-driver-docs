@@ -1,9 +1,9 @@
-- name: "Design Guide"
+- name: "Design Guides"
   href: index.md
-- name: "Windows Display Driver Model (WDDM) Design Guide"
+- name: "Windows Display Driver Model (WDDM) design guide"
 # Auto-expanded node
   items: 
-  - name: "Windows Display Driver Model (WDDM) Design Guide"
+  - name: "WDDM overview"
     href: windows-vista-display-driver-model-design-guide.md
   - name: "Roadmap for the Windows Display Driver Model (WDDM)"
     href: roadmap-for-developing-drivers-for-the-windows-vista-display-driver-mo.md
@@ -1194,10 +1194,10 @@
         href: dxgiddi-h---reserved.md
       - name: "DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS"
         href: dxgi-ddi-multiplane-overlay-stereo-caps.md
-- name: "Windows 2000 Display Driver Model (XDDM) Design Guide"
+- name: "Legacy: Windows 2000 Display Driver Model (WDDM) design guide"
 # Auto-expanded node
   items: 
-  - name: "Windows 2000 Display Driver Model (XDDM) Design Guide"
+  - name: "XDDM overview"
     href: windows-2000-display-driver-model-design-guide.md
   - name: "Roadmap for the Windows 2000 Display Driver Model (XDDM)"
     href: roadmap-for-developing-drivers-for-the-windows-2000-display-driver-mod.md

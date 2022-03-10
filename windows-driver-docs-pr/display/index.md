@@ -1,24 +1,23 @@
 ---
-title: Display Devices Design Guide
-description: Display Devices Design Guide
-ms.assetid: 0cbd75a3-49c3-4805-8f97-ab3551d0c6ee
+title: Driver design guides for display and graphics devices
+description: Display and graphics device driver Design Guide
 keywords:
-- display drivers WDK
+- display driver development WDK , Windows
+- graphics driver development WDK , Windows
 - miniport drivers WDK display
-ms.date: 10/10/2019
+ms.date: 03/10/2022
+ms.custom: contperf-fy22q3
 ms.topic: article
 ---
 
-# Display Devices Design Guide
+# Driver design guides for display and graphics devices
 
-Welcome to the Windows Display Driver Design Guide. This section includes:
+The following design guides are provided for developers of display and graphics drivers on Windows. For information about available "Video driver samples", see [Windows driver samples](../samples/index.md).
 
-- [Windows Display Driver Model (WDDM) Design Guide](windows-vista-display-driver-model-design-guide.md)
+- [Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md)
 
-  WDDM is the display/graphics driver architecture available starting with Windows Vista. Drivers that adhere to WDDM run only on Windows Vista and later.
+  WDDM is the display/graphics driver architecture available starting with Windows Vista. Drivers that adhere to WDDM run on Windows Vista and later.
 
-- [Windows 2000 Display Driver Model (XDDM) Design Guide](windows-2000-display-driver-model-design-guide.md)
+- [Legacy: Windows 2000 Display Driver Model (XDDM)](windows-2000-display-driver-model-design-guide.md)
 
-  XDDM is the display/graphics driver architecture available for Windows 2000 through Windows Vista and Windows 7. XDDM and VGA drivers will not compile on Windows 8 and later versions. If display hardware is attached to a Windows 8 computer without a driver that is certified to support WDDM 1.2 or later, the system defaults to running the Microsoft Basic Display Driver.
-
-- [Display Samples](display-samples.md)
+  XDDM was the display/graphics driver architecture available for Windows 2000 through Windows Vista and Windows 7 only.

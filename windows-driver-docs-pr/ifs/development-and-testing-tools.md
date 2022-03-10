@@ -1,5 +1,5 @@
 ---
-title: Development and Testing Tools
+title: Tools for minifilter development and testing
 description: Development and Testing Tools
 keywords:
 - filter manager WDK file system minifilter , tools
@@ -7,12 +7,12 @@ keywords:
 - fltkd debugger extension WDK file system minifilter
 - Filter Verifier WDK file system minifilter
 - Verifier utility
-ms.date: 08/21/2020
+ms.date: 03/10/2022
 ---
 
-# Development and Testing Tools
+# Tools for minifilter development and testing
 
-Several filter manager tools are available for use. Minifilter driver developers are also encouraged to use general-purpose kernel-mode development and testing tools, such as PREfast with driver-specific rules.
+This page lists a few tools that are specifically for developing a minifilter. Minifilter driver developers are also encouraged to use other [driver development tools](../devtest/index.md) available through the Windows Driver Kit (WDK).
 
 ## Fltmc.exe Command
 
