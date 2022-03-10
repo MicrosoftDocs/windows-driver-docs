@@ -6,19 +6,19 @@ ms.date: 04/20/2017
 
 # Device Metadata Package Structure
 
-
 Each device metadata package has the following directory structure:
-
+```
 PackageInfo.xml
 
-DeviceInformation
-DeviceInfo.xml
-*DeviceIcon*.ico
+DeviceInformation\
+    DeviceInfo.xml
+    *DeviceIcon*.ico
 
-WindowsInformation
-WindowsInfo.xml
+WindowsInformation\
+    WindowsInfo.xml
 
-DeviceStage
+DeviceStage\
+```
 When you create a device metadata package, XML documents and icon files are stored in the following directories:
 
 -   The [PackageInfo XML document](packageinfo-xml-document.md) is at the root of the directory. The name of this XML document must be PackageInfo.xml.
@@ -35,11 +35,7 @@ When you create a device metadata package, XML documents and icon files are stor
 
     **Note**  Device Stage is supported for a limited number of device classes.
 
-
-
-
 More information about Windows Device Experience, Device Stage, and the Device Stage XML schema can be found in the [Microsoft Device Experience Development Kit](../download-the-wdk.md).
-
 
 When you create a device metadata package, you should follow these guidelines:
 
