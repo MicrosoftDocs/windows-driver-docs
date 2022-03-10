@@ -1,7 +1,7 @@
 ---
 title: Time Travel Debugging - Overview
 description: This section describes time travel debugging.
-ms.date: 01/17/2020
+ms.date: 03/09/2022
 ---
 
 # Time Travel Debugging - Overview
@@ -47,9 +47,9 @@ To use TTD, you need to run the debugger elevated. Install WinDbg Preview using 
 
 To learn more about TTD see these videos.
 
-[Defrag Tools 185](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-185-Time-Travel-Debugging-Introduction) - Ivette and JamesP go over the basics of TTD and demo some features in WinDbg Preview
+[Defrag Tools 185](/shows/defrag-tools/185-time-travel-debugging-introduction) - Ivette and JamesP go over the basics of TTD and demo some features in WinDbg Preview
 
-[Defrag Tools 186](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-186-Time-Travel-Debugging-Advanced) - Jordi and JCAB demo more great features of TTD in WinDbg Preview
+[Defrag Tools 186](/shows/defrag-tools/186-time-travel-debugging-advanced) - Jordi and JCAB demo more great features of TTD in WinDbg Preview
 
 [CppCon (YouTube)](https://www.youtube.com/watch?v=l1YJTg_A914) - Jordi, Ken and JamesM presented TTD in WinDbg Preview at CppCon 2017
 

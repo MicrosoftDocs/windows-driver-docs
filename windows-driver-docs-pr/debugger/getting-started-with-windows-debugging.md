@@ -89,7 +89,7 @@ This documentation assumes a knowledge of Windows internals. To learn more about
 Additional resources include the following books and videos:
 -  *Inside Windows Debugging: Practical Debugging and Tracing Strategies* by Tarik Soulami
 -   *Advanced Windows Debugging* by Mario Hewardt and Daniel Pravat
--   [Defrag Tools](https://channel9.msdn.com/Shows/Defrag-Tools), episodes 13 through 29, about WinDbg
+-   [Defrag Tools](/shows/defrag-tools/), episodes 13 through 29, all about WinDbg.
 
 
 ### See also

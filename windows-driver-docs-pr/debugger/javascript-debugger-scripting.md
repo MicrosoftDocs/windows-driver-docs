@@ -1,7 +1,7 @@
 ---
 title: JavaScript Debugger Scripting
 description: This topic describes how to use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger.
-ms.date: 02/26/2021
+ms.date: 03/09/2022
 ---
 
 # JavaScript Debugger Scripting
@@ -27,7 +27,7 @@ These two topics provide additional information about working with JavaScript in
 
 ## JavaScript Scripting Video
 
-[Defrag Tools #170](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-170-Debugger-JavaScript-Scripting) - Andy and Bill demonstrate JavaScript extensibility and scripting abilities in the debugger.
+[Defrag Tools #170](/shows/defrag-tools/170-debugger-javascript-scripting) - Andy and Bill demonstrate JavaScript extensibility and scripting abilities in the debugger.
 
 
 ## <span id="Provider"></span><span id="provider"></span><span id="PROVIDER"></span>The Debugger JavaScript Provider

@@ -92,7 +92,7 @@ For more information see the following topics:
 
 [Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)
 
-The Defrag Tools show on Channel 9 - <https://channel9.msdn.com/Shows/Defrag-Tools>
+[The Defrag Tools shows](/shows/defrag-tools/)
 
 ## Using Driver Verifier to Gather Information
 

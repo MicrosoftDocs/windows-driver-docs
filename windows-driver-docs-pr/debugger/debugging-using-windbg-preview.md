@@ -1,7 +1,7 @@
 ---
 title: Debugging Using WinDbg Preview
 description: This section describes how to perform basic debugging tasks using the WinDbg preview debugger.
-ms.date: 01/16/2020
+ms.date: 03/09/2022
 ---
 
 # Debugging Using WinDbg Preview
@@ -139,13 +139,13 @@ The debugger team blog, although now inactive, includes tips and tricks.
 
 ## Videos
 
-Watch these episodes of the [Defrag Tools](https://channel9.msdn.com/Shows/Defrag-Tools) show to see Windbg Preview in action.
+Watch these episodes of the [Defrag Tools](</shows/defrag-tools/>) show to see Windbg Preview in action.
   
-- [Defrag Tools #182](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-182-WinDbg-Preview-Part-1) - Tim, Chad, and Andy go over the basics of WinDbg Preview and some of the features.
-- [Defrag Tools #183](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-183-WinDbg-Preview-Part-2) - Nick, Tim, and Chad use WinDbg Preview and go over a quick demo.
-- [Defrag Tools #184](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-184-JavaScript-in-WinDbg-Preview) - Bill and Andrew walk through the scripting features in WinDbg Preview.
-- [Defrag Tools #185](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-185-Time-Travel-Debugging-Introduction) - James and Ivette provide and introduction to Time Travel Debugging.
-- [Defrag Tools #186](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-186-Time-Travel-Debugging-Advanced) - James and JCAB covers advanced Time Travel Debugging.
+- [Defrag Tools #182](/shows/defrag-tools/182-windbg-preview-part-1) - Tim, Chad, and Andy go over the basics of WinDbg Preview and some of the features.
+- [Defrag Tools #183](/shows/defrag-tools/183-windbg-preview-part-2) - Nick, Tim, and Chad use WinDbg Preview and go over a quick demo.
+- [Defrag Tools #184](/shows/defrag-tools/184-javascript-in-windbg-preview) - Bill and Andrew walk through the scripting features in WinDbg Preview.
+- [Defrag Tools #185](/shows/defrag-tools/185-time-travel-debugging-introduction) - James and Ivette provide and introduction to Time Travel Debugging.
+- [Defrag Tools #186](/shows/defrag-tools/186-time-travel-debugging-advanced) - James and JCAB covers advanced Time Travel Debugging.
 
 ## Next Steps
 

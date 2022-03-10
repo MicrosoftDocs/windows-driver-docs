@@ -30,7 +30,7 @@ Another useful tool for testing an NDIS driver is NDIS Verifier. For more inform
 
 ## NDIS Debugging Resources
 
-Episode 175 of the Defrag Tools show covers NDIS debugging - [Defrag Tools #175 - Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack).
+Episode 175 of the Defrag Tools show covers NDIS debugging - [Defrag Tools #175 - Debugging the Network Stack](/shows/defrag-tools/175-debugging-network-stack).
 
 The NDIS team blog archives are available at [The NDIS blog](/archive/blogs/ndis/).
 

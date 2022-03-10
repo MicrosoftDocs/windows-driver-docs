@@ -125,4 +125,3 @@ To investigate if this bug check is caused by defective RAM hardware, run the Wi
 
 [Windows Kernel-Mode Memory Manager](../kernel/windows-kernel-mode-memory-manager.md)
 
-[Channel 9 video on memory compression](https://channel9.msdn.com/Blogs/Seth-Juarez/Memory-Compression-in-Windows-10-RTM)

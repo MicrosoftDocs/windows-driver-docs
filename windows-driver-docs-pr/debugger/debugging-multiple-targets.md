@@ -128,7 +128,7 @@ For addtional information on debugging see the following resources.
 
 **Video**
 
-The Defrag Tools Show WinDbg Episodes 13-29 [https://channel9.msdn.com/Shows/Defrag-Tools](https://channel9.msdn.com/Shows/Defrag-Tools) 
+The Defrag Tools Show WinDbg Episodes 13-29: </shows/defrag-tools/>
 
 
 
