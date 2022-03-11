@@ -4,16 +4,12 @@ description: Using General Setup Functions
 keywords:
 - SetupAPI functions WDK , general Setup functions
 - general Setup functions WDK SetupAPI
-ms.date: 04/20/2017
+ms.date: 03/11/2022
 ---
 
 # Using General Setup Functions
 
-
-
-
-
-This section summarizes the general Setup functions. *Device installation applications* can use these functions to do the following:
+This section summarizes the general Setup functions. Applications can use these functions to do the following:
 
 -   Read and process INF files.
 
@@ -23,9 +19,8 @@ This section summarizes the general Setup functions. *Device installation applic
 
 -   Create a log of files moved during an installation.
 
--   Write log entries to the [SetupAPI text logs](setupapi-text-logs.md).
-
-Installation software typically uses these functions together with [device installation functions](/previous-versions/ff541299(v=vs.85)) and [PnP configuration manager functions](/previous-versions/ff549713(v=vs.85)).
+> [!NOTE]
+> The general setup functions are intended to be used with INF files that are not [driver package](driver-packages.md) INF files if an application is using processing of an INF file to install various of its own components.  For driver packages, the standard driver package and device installation APIs should be used.
 
 The general Setup functions listed in this section are described in detail in the Microsoft Windows SDK documentation.
 
@@ -48,8 +43,3 @@ This section includes the following topics:
 [File Log Functions](file-log-functions.md)
 
 [User Interface Functions](user-interface-functions.md)
-
-[SetupAPI Logging Functions](setupapi-logging-functions.md)
-
- 
-

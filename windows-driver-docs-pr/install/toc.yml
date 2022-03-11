@@ -354,24 +354,8 @@
     items:
     - name: "SetupAPI"
       href: setupapi.md
-    - name: "Using General Setup Functions"
-      href: using-general-setup-functions.md
     - name: "INF File Processing Functions"
       href: inf-file-processing-functions.md
-    - name: "Disk Prompting and Error Handling Functions"
-      href: disk-prompting-and-error-handling-functions.md
-    - name: "File Queuing Functions"
-      href: file-queuing-functions.md
-    - name: "Default Queue Callback Routine Functions"
-      href: default-queue-callback-routine-functions.md
-    - name: "Cabinet File Function"
-      href: cabinet-file-function.md
-    - name: "Disk-Space List Functions"
-      href: disk-space-list-functions.md
-    - name: "MRU Source List Functions"
-      href: mru-source-list-functions.md
-    - name: "File Log Functions"
-      href: file-log-functions.md
     - name: "User Interface Functions"
       href: user-interface-functions.md
     - name: "SetupAPI Logging Functions"
@@ -744,6 +728,26 @@
       href: locationpath-registry-subkey.md
     - name: "* Registry Subkey"
       href: --registry-subkey.md
+  - name: "Deprecated Functionality"
+    items:
+    - name: "General Setup Operations"
+      items:
+      - name: "Using General Setup Functions"
+        href: using-general-setup-functions.md
+      - name: "Disk Prompting and Error Handling Functions"
+        href: disk-prompting-and-error-handling-functions.md
+      - name: "File Queuing Functions"
+        href: file-queuing-functions.md
+      - name: "Default Queue Callback Routine Functions"
+        href: default-queue-callback-routine-functions.md
+      - name: "Cabinet File Function"
+        href: cabinet-file-function.md
+      - name: "Disk-Space List Functions"
+        href: disk-space-list-functions.md
+      - name: "MRU Source List Functions"
+        href: mru-source-list-functions.md
+      - name: "File Log Functions"
+        href: file-log-functions.md
 - name: "INF Sections"
   items: 
   - name: "INF ClassInstall32 Section"
