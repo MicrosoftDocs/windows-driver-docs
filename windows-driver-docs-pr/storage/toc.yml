@@ -295,7 +295,7 @@
       href: storage-miniport-drivers.md
     - name: "Communicating with a storage port driver"
       href: communicating-with-a-storage-port-driver.md
-    - name: "SCSI Miniport Drivers"
+    - name: "SCSI miniport drivers"
 # Auto-expanded node
       items: 
       - name: "Overview"
