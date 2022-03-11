@@ -31,8 +31,6 @@ The following tables provide summaries of the following types of functions:
 
 [Driver Information Functions](#ddk-setupdi-driver-information-functions-dg)
 
-[Driver Selection Functions](#ddk-setupdi-driver-selection-functions-dg)
-
 [Device Installation Handlers](#ddk-setupdi-device-installation-handlers-dg)
 
 [Device Installation Customization Functions](#ddk-setupdi-device-installation-customization-functions-dg)
