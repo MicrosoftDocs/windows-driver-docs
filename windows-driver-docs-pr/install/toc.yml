@@ -410,20 +410,22 @@
         href: invoking-a-device-properties-dialog-box-from-a-command-line-prompt.md
       - name: "DeviceProperties_RunDLL Function Prototype"
         href: deviceproperties-rundll-function-prototype.md
-    - name: "Writing a Device Installation Application"
-      href: writing-a-device-installation-application.md
-    - name: "Guidelines for Writing Device Installation Applications"
-      href: guidelines-for-writing-device-installation-applications.md
-    - name: "Installing Device-Specific Applications"
-      href: installing-device-specific-applications.md
-    - name: "Device Installation Application Not Included in the Driver Package"
-      href: device-installation-application-not-included-in-the-driver-package.md
-    - name: "Device Installation Application that is Included in the Driver Package"
-      href: device-installation-application-that-is-included-in-the-driver-package.md
-    - name: "Device Installation Application Started through AutoRun"
-      href: device-installation-application-started-through-autorun.md
-    - name: "Guidelines for Starting Device Installation Applications through Co-installers"
-      href: guidelines-for-starting-device-installation-applications-through-co-in.md
+    - name: "Device Installation Applications"
+      items:
+      - name: "Writing a Device Installation Application"
+        href: writing-a-device-installation-application.md
+      - name: "Guidelines for Writing Device Installation Applications"
+        href: guidelines-for-writing-device-installation-applications.md
+      - name: "Installing Device-Specific Applications"
+        href: installing-device-specific-applications.md
+      - name: "Device Installation Application Not Included in the Driver Package"
+        href: device-installation-application-not-included-in-the-driver-package.md
+      - name: "Device Installation Application that is Included in the Driver Package"
+        href: device-installation-application-that-is-included-in-the-driver-package.md
+      - name: "Device Installation Application Started through AutoRun"
+        href: device-installation-application-started-through-autorun.md
+      - name: "Guidelines for Starting Device Installation Applications through Co-installers"
+        href: guidelines-for-starting-device-installation-applications-through-co-in.md
     - name: "Preloading Driver Packages"
       href: preloading-driver-packages.md
     - name: "Preinstalling Driver Packages"
