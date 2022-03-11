@@ -8,6 +8,7 @@ keywords:
 - SCSI miniport drivers WDK storage , about SCSI miniport drivers
 - HBA WDK SCSI
 ms.date: 03/10/2022
+ms.custom: contperf-fy22q3
 ---
 
 # SCSI miniport driver overview
