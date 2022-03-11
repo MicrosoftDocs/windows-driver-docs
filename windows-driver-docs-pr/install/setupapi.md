@@ -24,7 +24,7 @@ The Setup Application Programming Interface (SetupAPI) is a system component tha
 Device installation software can use these functions to perform custom operations in [*class installers*](writing-class-installers-and-co-installers.md), [*co-installers*](writing-a-co-installer.md), and [*device installation applications*](writing-a-device-installation-application.md).
 
 > [!NOTE]
-> Setupapi is not supported on all editions of Windows.  When possible, you should use lower layer APIs such as those available via [CfgMgr32.dll](/windows/win32/api/cfgmgr32/).  See [Porting from SetupApi to CfgMgr32](porting-from-setupapi-to-cfgmgr32.md) for tips.
+> SetupApi is not supported on all editions of Windows.  When possible, you should use lower layer APIs such as those available via [CfgMgr32.dll](/windows/win32/api/cfgmgr32/).  See [Porting from SetupApi to CfgMgr32](porting-from-setupapi-to-cfgmgr32.md) for tips.
 
 This section contains the following topics, which provide general information about how to use the [general Setup functions](using-general-setup-functions.md) and [device installation functions](using-device-installation-functions.md) that are provided by SetupAPI:
 

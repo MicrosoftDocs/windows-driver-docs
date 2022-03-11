@@ -4,14 +4,10 @@ description: Using Device Installation Functions
 keywords:
 - SetupAPI functions WDK , device installation functions
 - device installation functions WDK SetupAPI
-ms.date: 04/20/2017
+ms.date: 03/11/2022
 ---
 
 # Using Device Installation Functions
-
-
-
-
 
 This section summarizes the [device installation functions](/previous-versions/ff541299(v=vs.85)). By using the device installation functions, the installation software can perform the following types of operations:
 
@@ -26,8 +22,6 @@ This section summarizes the [device installation functions](/previous-versions/f
 -   Manage device interfaces.
 
 -   Manage icons and other bitmaps.
-
-To perform device installation operations that are not supported by the SetupAPI functions described in this section, call the appropriate [general Setup functions](/previous-versions/ff544985(v=vs.85)) or [PnP Configuration Manager functions](/previous-versions/ff549717(v=vs.85)) (CM_*Xxx* functions<em>).</em>
 
 The following tables provide summaries of the following types of functions:
 
@@ -65,38 +59,35 @@ The following tables provide summaries of the following types of functions:
 <tbody>
 <tr class="odd">
 <td align="left"><p><a href="/windows/win32/api/newdev/nf-newdev-diinstalldevice" data-raw-source="[&lt;strong&gt;DiInstallDevice&lt;/strong&gt;](/windows/win32/api/newdev/nf-newdev-diinstalldevice)"><strong>DiInstallDevice</strong></a></p></td>
-<td align="left"><p>Installs a specified driver that is preinstalled in the <a href="driver-store.md" data-raw-source="[driver store](driver-store.md)">driver store</a> on a PnP device that is present in the system. (Windows Vista and later versions of Windows)</p></td>
+<td align="left"><p>Installs a specified driver package that is preinstalled in the <a href="driver-store.md" data-raw-source="[driver store](driver-store.md)">driver store</a> on a PnP device that is present in the system. (Windows Vista and later versions of Windows)</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="/windows/win32/api/newdev/nf-newdev-diinstalldrivera" data-raw-source="[&lt;strong&gt;DiInstallDriver&lt;/strong&gt;](/windows/win32/api/newdev/nf-newdev-diinstalldrivera)"><strong>DiInstallDriver</strong></a></p></td>
-<td align="left"><p>Preinstalls a driver in the driver store and then installs the driver on matching PnP devices that are present in the system. (Windows Vista and later versions of Windows)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><a href="/windows/win32/api/newdev/nf-newdev-dirollbackdriver" data-raw-source="[&lt;strong&gt;DiRollbackDriver&lt;/strong&gt;](/windows/win32/api/newdev/nf-newdev-dirollbackdriver)"><strong>DiRollbackDriver</strong></a></p></td>
-<td align="left"><p>Rolls back the driver that is installed on a specified device to the backup driver set for the device. (Windows Vista and later versions of Windows)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><a href="/windows/win32/api/newdev/nf-newdev-dishowupdatedevice" data-raw-source="[&lt;strong&gt;DiShowUpdateDevice&lt;/strong&gt;](/windows/win32/api/newdev/nf-newdev-dishowupdatedevice)"><strong>DiShowUpdateDevice</strong></a></p></td>
-<td align="left"><p>Displays the Hardware Update wizard for a specified device. (Windows Vista and later versions of Windows)</p></td>
-</tr>
-<tr class="odd">
 <td align="left"><p><a href="/windows/win32/api/newdev/nf-newdev-diuninstalldevice" data-raw-source="[&lt;strong&gt;DiUninstallDevice&lt;/strong&gt;](/windows/win32/api/newdev/nf-newdev-diuninstalldevice)"><strong>DiUninstallDevice</strong></a></p></td>
-<td align="left"><p>Uninstalls a device and removes its device node (<a href="/windows-hardware/drivers/#wdkgloss-devnode" data-raw-source="&lt;em&gt;devnode&lt;/em&gt;"><em>devnode</em></a>) ) from the system. (Windows 7 and later versions of Windows)</p></td>
+<td align="left"><p>Uninstalls a device and removes its device node (<a href="/windows-hardware/drivers/#wdkgloss-devnode" data-raw-source="&lt;em&gt;devnode&lt;/em&gt;"><em>devnode</em></a>) from the system. (Windows 7 and later versions of Windows)</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><a href="/windows/win32/api/newdev/nf-newdev-diinstalldriverw" data-raw-source="[&lt;strong&gt;DiInstallDriver&lt;/strong&gt;](/windows/win32/api/newdev/nf-newdev-diinstalldriverw)"><strong>DiInstallDriver</strong></a></p></td>
+<td align="left"><p>Preinstalls a driver package in the driver store and then installs the driver package on matching PnP devices that are present in the system. (Windows Vista and later versions of Windows)</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="/windows-hardware/drivers/install/installselecteddriver" data-raw-source="[&lt;strong&gt;InstallSelectedDriver&lt;/strong&gt;](./installselecteddriver.md)"><strong>InstallSelectedDriver</strong></a></p></td>
-<td align="left"><p>Installs a selected driver on a selected device.</p></td>
+<td align="left"><p><a href="/windows/win32/api/newdev/nf-newdev-diuninstalldriverw" data-raw-source="[&lt;strong&gt;DiUninstallDriver&lt;/strong&gt;](/windows/win32/api/newdev/nf-newdev-diuninstalldriverw)"><strong>DiUninstallDriver</strong></a></p></td>
+<td align="left"><p>Removes a driver package from the Driver Store. (Windows 10 Version 1703 and later versions of Windows)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="/windows/win32/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa" data-raw-source="[&lt;strong&gt;UpdateDriverForPlugAndPlayDevices&lt;/strong&gt;](/windows/win32/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa)"><strong>UpdateDriverForPlugAndPlayDevices</strong></a></p></td>
-<td align="left"><p>Updates the function driver that is installed for matching PnP devices that are present in the system.</p></td>
+<td align="left"><p>Updates the driver package that is installed for matching PnP devices that are present in the system.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><a href="/windows/win32/api/newdev/nf-newdev-dirollbackdriver" data-raw-source="[&lt;strong&gt;DiRollbackDriver&lt;/strong&gt;](/windows/win32/api/newdev/nf-newdev-dirollbackdriver)"><strong>DiRollbackDriver</strong></a></p></td>
+<td align="left"><p>Rolls back the driver package that is installed on a specified device to the backup driver package set for the device. (Windows Vista and later versions of Windows)</p></td>
 </tr>
 </tbody>
 </table>
 
- 
-
 ### <a href="" id="ddk-setupdi-device-information-functions-dg"></a>Device Information Functions
+
+> [!NOTE]
+> SetupApi is not supported on all editions of Windows.  When possible, you should use lower layer APIs such as those available via [CfgMgr32.dll](/windows/win32/api/cfgmgr32/).  See [Porting from SetupApi to CfgMgr32](porting-from-setupapi-to-cfgmgr32.md) for tips.
 
 <table>
 <colgroup>
@@ -214,31 +205,6 @@ The following tables provide summaries of the following types of functions:
 
  
 
-### <a href="" id="ddk-setupdi-driver-selection-functions-dg"></a>Driver Selection Functions
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><a href="/windows/win32/api/setupapi/nf-setupapi-setupdiaskforoemdisk" data-raw-source="[&lt;strong&gt;SetupDiAskForOEMDisk&lt;/strong&gt;](/windows/win32/api/setupapi/nf-setupapi-setupdiaskforoemdisk)"><strong>SetupDiAskForOEMDisk</strong></a></p></td>
-<td align="left"><p>Displays a dialog that asks the user for the path of an OEM installation disk.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><a href="/windows/win32/api/setupapi/nf-setupapi-setupdiselectoemdrv" data-raw-source="[&lt;strong&gt;SetupDiSelectOEMDrv&lt;/strong&gt;](/windows/win32/api/setupapi/nf-setupapi-setupdiselectoemdrv)"><strong>SetupDiSelectOEMDrv</strong></a></p></td>
-<td align="left"><p>Selects a driver for a device by using an OEM path supplied by the user.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><a href="/windows/win32/api/setupapi/nf-setupapi-setupdiselectdevice" data-raw-source="[&lt;strong&gt;SetupDiSelectDevice&lt;/strong&gt;](/windows/win32/api/setupapi/nf-setupapi-setupdiselectdevice)"><strong>SetupDiSelectDevice</strong></a></p></td>
-<td align="left"><p>Default handler for the DIF_SELECTDEVICE request.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
 ### <a href="" id="ddk-setupdi-device-installation-handlers-dg"></a>Device Installation Handlers
 
 <table>
@@ -294,6 +260,10 @@ The following tables provide summaries of the following types of functions:
 <tr class="even">
 <td align="left"><p><a href="/windows/win32/api/setupapi/nf-setupapi-setupdiselectbestcompatdrv" data-raw-source="[&lt;strong&gt;SetupDiSelectBestCompatDrv&lt;/strong&gt;](/windows/win32/api/setupapi/nf-setupapi-setupdiselectbestcompatdrv)"><strong>SetupDiSelectBestCompatDrv</strong></a></p></td>
 <td align="left"><p>The default handler for the DIF_SELECTBESTCOMPATDRV request.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><a href="/windows/win32/api/setupapi/nf-setupapi-setupdiselectdevice" data-raw-source="[&lt;strong&gt;SetupDiSelectDevice&lt;/strong&gt;](/windows/win32/api/setupapi/nf-setupapi-setupdiselectdevice)"><strong>SetupDiSelectDevice</strong></a></p></td>
+<td align="left"><p>Default handler for the DIF_SELECTDEVICE request.</p></td>
 </tr>
 </tbody>
 </table>
@@ -449,6 +419,9 @@ The following tables provide summaries of the following types of functions:
 
 ### <a href="" id="ddk-setupdi-device-interface-functions-dg"></a>Device Interface Functions
 
+> [!NOTE]
+> SetupApi is not supported on all editions of Windows.  When possible, you should use lower layer APIs such as those available via [CfgMgr32.dll](/windows/win32/api/cfgmgr32/).  See [Porting from SetupApi to CfgMgr32](porting-from-setupapi-to-cfgmgr32.md) for tips.
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -527,6 +500,9 @@ The following tables provide summaries of the following types of functions:
 
 ### <a href="" id="ddk-setupdi-device-property-functions-dg"></a>Device Property Functions (Windows Vista and Later)
 
+> [!NOTE]
+> SetupApi is not supported on all editions of Windows.  When possible, you should use lower layer APIs such as those available via [CfgMgr32.dll](/windows/win32/api/cfgmgr32/).  See [Porting from SetupApi to CfgMgr32](porting-from-setupapi-to-cfgmgr32.md) for tips.
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -587,6 +563,9 @@ The following tables provide summaries of the following types of functions:
  
 
 ### <a href="" id="ddk-setupdi-registry-functions-dg"></a>Registry Functions
+
+> [!NOTE]
+> SetupApi is not supported on all editions of Windows.  When possible, you should use lower layer APIs such as those available via [CfgMgr32.dll](/windows/win32/api/cfgmgr32/).  See [Porting from SetupApi to CfgMgr32](porting-from-setupapi-to-cfgmgr32.md) for tips.
 
 <table>
 <colgroup>
