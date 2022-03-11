@@ -8,26 +8,22 @@ keywords:
 - digital signatures WDK , Authenticode
 - verifying Authenticode signatures
 - checking Authenticode signatures
-ms.date: 04/20/2017
+ms.date: 03/11/2022
 ---
 
 # Using SetupAPI To Verify Driver Authenticode Signatures
 
-
-
-
-
-You can use the following procedures to verify that a driver has a valid Authenticode [digital signature](digital-signatures.md). These procedures are supported starting with Microsoft Windows Server 2003.
+You can use the following procedures to verify that a driver package has a valid Authenticode [digital signature](digital-signatures.md). These procedures are supported starting with Microsoft Windows Server 2003.
 
 ### To determine whether a driver has a valid Authenticode signature
 
 Check the DNF_AUTHENTICODE_SIGNED flag.
 
-If a driver has a valid Authenticode signature, Windows sets this flag in the **Flags** member of the driver node's [**SP_DRVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_drvinstall_params) structure. (Also be aware that Windows sets the DNF_INF_IS_SIGNED flag if the driver has a [WHQL release signature](whql-release-signature.md), if it is a system-supplied driver, or if it has an Authenticode signature.)
+If a driver package has a valid Authenticode signature, Windows sets this flag in the **Flags** member of the driver node's [**SP_DRVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_drvinstall_params) structure. (Also be aware that Windows sets the DNF_INF_IS_SIGNED flag if the driver has a [WHQL release signature](whql-release-signature.md), if it is a system-supplied driver, or if it has an Authenticode signature.)
 
 ### To verify that an INF file has a valid Authenticode signature
 
-1.  Call the [INF file processing function](inf-file-processing-functions.md) **SetupVerifyInfFile**.
+1.  Call [**SetupVerifyInfFile**](/windows/win32/api/setupapi/nf-setupapi-setupverifyinffilew).
 
 2.  Check the error code that was returned by the function.
 
