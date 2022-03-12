@@ -63,6 +63,61 @@ Now the driver is free to call the trace function as needed. For example: `Trace
 
 For more info, see [WPP_INIT_TRACING](/previous-versions/windows/hardware/drivers/ff556193(v=vs.85)) and [WPP_CLEANUP](/previous-versions/windows/hardware/drivers/ff556183(v=vs.85)).
 
+## How to add timestamp information to the default log
+
+Starting in WDK Insider Preview build 22557, drivers can add timestamps to log entries that are then viewable using [**!rcdrkd.rcdrlogdump**](../debugger/-rcdrkd-rcdrlogdump.md) or [**!wdfkd.wdflogdump**](../debugger/-wdfkd-wdflogdump.md), for example:
+
+```dbgcmd
+0: kd> !rcdrlogdump SampleDriver
+Sample Log 1: 02/03/2022-15:32:11.838 NativeMethodInterfaceRequest - interface successfully copied!
+```
+
+To add timestamps to log entries, modify the driver's INF file as follows.
+ 
+For a kernel-mode driver:
+
+```inf
+[IfrSample_Service_Inst] 
+DisplayName    = %IfrSample.SvcDesc%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\IfrSample.sys
+; =============== START TIMESTAMP ADDITION
+AddReg = IfrSample_Service_Inst.AddReg
+ 
+[IfrSample_Service_Inst.AddReg]
+HKR, "Parameters", "WppRecorder_UseTimeStamp", %REG_DWORD%, 1
+; =============== END TIMESTAMP ADDITION
+
+[Strings]
+REG_DWORD = 0x00010001
+```
+
+For a UMDF driver:
+
+```inf 
+[IfrSampleUm_Install] 
+UmdfLibraryVersion=$UMDFVERSION$
+ServiceBinary=%13%\IfrSampleUm.dll
+; =============== START TIMESTAMP ADDITION
+AddReg=IfrSampleUm_Install.AddReg
+ 
+[IfrSampleUm_Install.AddReg]
+HKR, "Parameters", "WppRecorder_UseTimeStamp", %REG_DWORD%,
+; =============== END TIMESTAMP ADDITION
+```
+
+If you would like more precise timestamps, in addition to **WppRecorder_UseTimeStamp**, add **WppRecorder_PreciseTimeStamp** using the same syntax shown above.
+
+Precise timestamps look like this:
+
+```dbgcmd
+1: kd> !rcdrlogdump IfrSample 
+DriverLog 1: 02/03/2022-16:16:25.9571373 DriverEntry - Reg path = \REGISTRY\MACHINE\SYSTEM\ControlSet001\Services\IfrSample
+DriverLog 2: 02/03/2022-16:16:25.9571377 DriverEntry - Demonstrate usage of NTSTATUS: 0xc000000d(STATUS_INVALID_PARAMETER)
+```
+
 ## How to send trace messages to a custom log
 
 This only applies to kernel-mode drivers (KMDF or WDM).
@@ -80,6 +135,15 @@ To set up custom logs, the driver must include `<WppRecorder.h>`. Then call the 
 
 The driver also needs to define a new trace macro that takes the log handle as the first parameter. For an example, see the [Toaster Sample Driver](https://github.com/microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured/trace.h).
 
+## How to add timestamp information to a custom log
+
+If your driver calls [**WppRecorderLogCreate**](/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) to create additional log handles, it is possible to enable timestamps for some log handles but not others.
+
+> [!IMPORTANT]
+> To do this, you must update your driver to target WDK Insider Preview build 22557 and later by setting [NTDDI_VERSION](/windows/win32/WinProg/using-the-windows-headers).
+
+Then, in addition to adding the **WppRecorder_UseTimeStamp** entry to the driver's INF file as shown above, you'll need to add a single line for each log handle that should use timestamps.
+For a code example, see [**WppRecorderLogCreate**](/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate).
 
 ## How to view trace messages in the debugger
 
