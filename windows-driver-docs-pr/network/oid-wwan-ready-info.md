@@ -1,7 +1,7 @@
 ---
 title: OID_WWAN_READY_INFO
 description: OID_WWAN_READY_INFO returns the device ready-state, which includes its Subscriber Identity Module (SIM card).
-ms.date: 08/08/2017
+ms.date: 03/10/2022
 keywords: 
  -OID_WWAN_READY_INFO Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -13,6 +13,8 @@ ms.localizationpriority: medium
 OID\_WWAN\_READY\_INFO returns the device ready-state, which includes its Subscriber Identity Module (SIM card). This typically occurs at the beginning of any session.
 
 Set requests are not supported.
+
+The host can query the ready-state from either the active SIM slot or inactive SIM slot in the device if the device supports dual SIM slots. This OID's payload contains an [**NDIS_WWAN_QUERY_READY_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-ndis_wwan_query_ready_info) structure, which in turn contains a [**WWAN_QUERY_READY_INFO**](wdk-ddi-src\content\wwan\ns-wwan-wwan_query_ready_info) structure that specifies the UICC slot ID.
 
 Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_READY\_INFO**](ndis-status-wwan-ready-info.md) status notification containing an [**NDIS\_WWAN\_READY\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_ready_info) structure that indicates the MB device's ready-state when completing query requests.
 
@@ -63,6 +65,10 @@ Miniport drivers should follow these steps to provide a good user experience:
 [**NDIS\_WWAN\_READY\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_ready_info)
 
 [**NDIS\_STATUS\_WWAN\_READY\_INFO**](ndis-status-wwan-ready-info.md)
+
+[**NDIS_WWAN_QUERY_READY_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-ndis_wwan_query_ready_info)
+
+[**WWAN_QUERY_READY_INFO**](wdk-ddi-src\content\wwan\ns-wwan-wwan_query_ready_info)
 
 [MB device Readiness](./mb-device-readiness.md)
 

@@ -2866,6 +2866,8 @@
         href: ndis-status-wwan-supported-device-services.md
       - name: "NDIS_STATUS_WWAN_SYS_CAPS"
         href: ndis-status-wwan-sys-caps.md
+      - name: "NDIS_STATUS_WWAN_UE_POLICY_STATE"
+        href: ndis-status-wwan-ue-policy-state.md
       - name: "NDIS_STATUS_WWAN_UICC_APP_LIST"
         href: ndis-status-wwan-uicc-app-list.md
       - name: "NDIS_STATUS_WWAN_UICC_BINARY_RESPONSE"
@@ -5494,6 +5496,8 @@
       href: oid-wwan-subscribe-device-service-events.md
     - name: "OID_WWAN_SYS_CAPS_INFO"
       href: oid-wwan-sys-caps.md
+    - name: "OID_WWAN_UE_POLICY"
+      href: oid-wwan-ue-policy.md
     - name: "OID_WWAN_UICC_ACCESS_BINARY"
       href: oid-wwan-uicc-access-binary.md
     - name: "OID_WWAN_UICC_ACCESS_RECORD"

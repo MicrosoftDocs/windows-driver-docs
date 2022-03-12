@@ -1,6 +1,6 @@
 ---
 title: OID_WWAN_UICC_ATR
-description: OID_WWAN_UICC_ATR
+description: An OID_WWAN_UICC_ATR query request is sent to a modem miniport adapter to get the UICC smart card's Answer to Reset (ATR) information.
 keywords:
 - MB UICC reset, Mobile Broadband UICC reset, Mobile Broadband miniport driver UICC reset
 ms.date: 02/24/2022
