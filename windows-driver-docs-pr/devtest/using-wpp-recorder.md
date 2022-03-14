@@ -72,7 +72,7 @@ Starting in WDK Insider Preview build 22557, drivers can add timestamps to log e
 Sample Log 1: 02/03/2022-15:32:11.838 NativeMethodInterfaceRequest - interface successfully copied!
 ```
 
-To add timestamps to log entries, modify the driver's INF file as follows.
+To add timestamps to log entries, add the lines between the comment markers below to the driver's INF file.
  
 For a kernel-mode driver:
 
