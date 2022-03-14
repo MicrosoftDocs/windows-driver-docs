@@ -139,7 +139,7 @@ The driver also needs to define a new trace macro that takes the log handle as t
 
 If your driver calls [**WppRecorderLogCreate**](/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) to create additional log handles, it is possible to enable timestamps for some log handles but not others.
 
-Then you need to add a single line to the driver code for each log handle that should use timestamps.
+To do this you need to add a single line to the driver code for each log handle that should use timestamps.
 For a code example, see [**WppRecorderLogCreate**](/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate).
 
 > [!NOTE]
