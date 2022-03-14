@@ -139,11 +139,11 @@ The driver also needs to define a new trace macro that takes the log handle as t
 
 If your driver calls [**WppRecorderLogCreate**](/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) to create additional log handles, it is possible to enable timestamps for some log handles but not others.
 
-> [!IMPORTANT]
-> To do this, you must update your driver to target WDK Insider Preview build 22557 and later by setting [NTDDI_VERSION](/windows/win32/WinProg/using-the-windows-headers).
-
-Then, in addition to adding the **WppRecorder_UseTimeStamp** entry to the driver's INF file as shown above, you'll need to add a single line for each log handle that should use timestamps.
+Then you need to add a single line to the driver code for each log handle that should use timestamps.
 For a code example, see [**WppRecorderLogCreate**](/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate).
+
+> [!NOTE]
+> This functionality is only available starting in WDK Insider Preview build 22557. For info on targeting a specific release, see [Building Drivers for Different Versions of Windows](/windows-hardware/drivers/develop/building-drivers-for-different-versions-of-windows).
 
 ## How to view trace messages in the debugger
 
