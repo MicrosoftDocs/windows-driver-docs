@@ -2764,6 +2764,8 @@
       href: mb-esim-mbim-ready-state-guidance.md
     - name: "MB NDIS Status Notifications"
       items: 
+      - name: "NDIS_STATUS_WWAN_ATR_INFO"
+        href: ndis-status-wwan-atr-info.md
       - name: "NDIS_STATUS_WWAN_AUTH_RESPONSE"
         href: ndis-status-wwan-auth-response.md
       - name: "NDIS_STATUS_WWAN_BASE_STATIONS_INFO"
@@ -2864,6 +2866,8 @@
         href: ndis-status-wwan-supported-device-services.md
       - name: "NDIS_STATUS_WWAN_SYS_CAPS"
         href: ndis-status-wwan-sys-caps.md
+      - name: "NDIS_STATUS_WWAN_UE_POLICY_STATE"
+        href: ndis-status-wwan-ue-policy-state.md
       - name: "NDIS_STATUS_WWAN_UICC_APP_LIST"
         href: ndis-status-wwan-uicc-app-list.md
       - name: "NDIS_STATUS_WWAN_UICC_BINARY_RESPONSE"
@@ -2874,6 +2878,8 @@
         href: ndis-status-wwan-uicc-record-response.md
       - name: "NDIS_STATUS_WWAN_UICC_RESET_INFO"
         href: ndis-status-wwan-uicc-reset-info.md
+      - name: "NDIS_STATUS_WWAN_UICC_TERMINAL_CAPABILITY_INFO"
+        href: ndis-status-wwan-uicc-terminal-capability-info.md
       - name: "NDIS_STATUS_WWAN_USSD"
         href: ndis-status-wwan-ussd.md
       - name: "NDIS_STATUS_WWAN_VENDOR_SPECIFIC"
@@ -5490,16 +5496,22 @@
       href: oid-wwan-subscribe-device-service-events.md
     - name: "OID_WWAN_SYS_CAPS_INFO"
       href: oid-wwan-sys-caps.md
+    - name: "OID_WWAN_UE_POLICY"
+      href: oid-wwan-ue-policy.md
     - name: "OID_WWAN_UICC_ACCESS_BINARY"
       href: oid-wwan-uicc-access-binary.md
     - name: "OID_WWAN_UICC_ACCESS_RECORD"
       href: oid-wwan-uicc-access-record.md
     - name: "OID_WWAN_UICC_APP_LIST"
       href: oid-wwan-uicc-app-list.md
+    - name: "OID_WWAN_UICC_ATR"
+      href: oid-wwan-uicc-atr.md
     - name: "OID_WWAN_UICC_FILE_STATUS"
       href: oid-wwan-uicc-file-status.md
     - name: "OID_WWAN_UICC_RESET"
       href: oid-wwan-uicc-reset.md
+    - name: "OID_WWAN_UICC_TERMINAL_CAPABILITY"
+      href: oid-wwan-uicc-terminal-capability.md
     - name: "OID_WWAN_USSD"
       href: oid-wwan-ussd.md
     - name: "OID_WWAN_VENDOR_SPECIFIC"
