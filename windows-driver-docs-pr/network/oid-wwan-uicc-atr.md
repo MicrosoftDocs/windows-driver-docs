@@ -21,7 +21,7 @@ For more info, see [MB low level UICC access](mb-low-level-uicc-access.md).
 
 ## Requirements
 
-**Version**: Windows 10, version 1709
+**Version**: Windows 10, version 1607
 **Header**: Ntddndis.h (include Ndis.h)
 
 ## See also

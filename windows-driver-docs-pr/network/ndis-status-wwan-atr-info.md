@@ -15,8 +15,8 @@ This notification uses the [**NDIS_WWAN_ATR_INFO**](/windows-hardware/drivers/dd
 
 ## Requirements
 
-**Version**: Windows 10, version 1709
-**Header**: Ndis.h
+**Version**: Windows 10, version 1607
+**Header**: Ntddndis.h (include Ndis.h)
 
 ## See also
 

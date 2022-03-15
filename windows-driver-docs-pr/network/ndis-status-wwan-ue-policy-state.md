@@ -16,6 +16,11 @@ Miniport drivers can also send unsolicited events with this notification.
 
 This notification uses the [**NDIS_STATUS_WWAN_UE_POLICY_STATE**](ndis-status-wwan-ue-policy-state.md) structure.
 
+## Requirements
+
+**Version**: Windows 11, version 21H2
+**Header**: Ntddndis.h (include Ndis.h)
+
 ## See also
 
 [**NDIS_STATUS_WWAN_UE_POLICY_STATE**](ndis-status-wwan-ue-policy-state.md)

@@ -15,7 +15,7 @@ This notification uses the [**NDIS_WWAN_UICC_TERMINAL_CAPABILITY_INFO**](/window
 
 ## Requirements
 
-**Version**: Windows 10, version 1709
+**Version**: Windows 10, version 1607
 **Header**: Ndis.h
 
 ## See also
