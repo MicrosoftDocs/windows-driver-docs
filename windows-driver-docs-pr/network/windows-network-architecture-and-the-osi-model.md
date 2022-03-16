@@ -1,6 +1,6 @@
 ---
 title: Windows Network Architecture and the OSI Model
-description: Windows Network Architecture and the OSI Model
+description: Windows network architecture and how Windows network drivers implement the bottom four layers of the OSI model.
 keywords:
 - OSI reference model WDK networking
 - transport layer WDK networking
@@ -8,15 +8,15 @@ keywords:
 - MAC layer WDK networking
 - physical layer WDK networking
 - Windows network architecture WDK
-ms.date: 09/04/2020
-ms.custom: contperf-fy21q1
+ms.date: 03/16/2022
+ms.custom: contperf-fy22q4
 ---
 
 # Windows Network Architecture and the OSI Model
 
-This topic discusses the Windows network architecture and how Windows network drivers implement the bottom four layers of the OSI model.
+This topic discusses the Windows network architecture and how Windows network drivers implement the *bottom four* layers of the OSI model.
 
-If you are looking for general information on all seven layers of the model, see the [OSI model](https://en.wikipedia.org/wiki/OSI_model).
+For general information on all seven layers of the model, see the [OSI model](https://en.wikipedia.org/wiki/OSI_model).
 
 The Microsoft Windows operating systems use a network architecture that is based on the seven-layer networking model developed by the International Organization for Standardization (ISO). 
 
@@ -26,7 +26,7 @@ The following diagram illustrates the OSI model.
 
 ![diagram illustrating the osi reference model.](images/101osi.png)
 
-Microsoft Windows network drivers implement the bottom four layers of the OSI model.
+Microsoft Windows [network drivers](ndis-drivers.md) implement the bottom four layers of the OSI model. 
 
 ## Physical Layer  
 The physical layer is the lowest layer of the OSI model. This layer manages the reception and transmission of the unstructured raw bit stream over a physical medium. It describes the electrical/optical, mechanical, and functional interfaces to the physical medium. The physical layer carries the signals for all of the higher layers. 

@@ -1,11 +1,11 @@
 ---
-title: Introduction to Receive Side Scaling
-description: Introduction to Receive Side Scaling
+title: Introduction to Receive Side Scaling (RSS)
+description: RSS is a network driver technology that enables the efficient distribution of network receive processing across multiple CPUs in multiprocessor systems.
 keywords:
 - receive-side scaling WDK networking , about receive-side scaling
 - RSS WDK networking , about receive-side scaling
 - CPU determination WDK RSS
-ms.date: 09/04/2020
+ms.date: 03/16/2022
 ms.custom: contperf-fy21q1
 ---
 

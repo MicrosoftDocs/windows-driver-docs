@@ -4,7 +4,7 @@ description: In Windows, devices are represented by device nodes in the Plug and
 keywords:
 - device node
 - device stack
-ms.date: 04/20/2017
+ms.date: 03/16/2022
 ---
 
 # Device nodes and device stacks
