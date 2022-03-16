@@ -53,9 +53,9 @@ For a UMDF driver:
 
 ## How to configure Inflight Trace Recorder parameters
 
-You can configure the IFR by setting the following optional registry values under the driver's [Parameter key](../wdf/introduction-to-registry-keys-for-drivers.md).
+You can configure the IFR by setting the following optional registry entries under the driver's [Parameter key](../wdf/introduction-to-registry-keys-for-drivers.md).
 
-Use the following registry values:
+Use the following registry entries:
 
 **LogPages:  REG_DWORD**
 
@@ -67,14 +67,17 @@ The default setting of zero causes the IFR to log errors, warnings, and informat
 
 **WppRecorder_UseTimeStamp: REG_DWORD** (available starting in WDK Insider Preview build 22557)
 
-Drivers set this value to add timestamps to log entries that are then viewable using [**!rcdrkd.rcdrlogdump**](../debugger/-rcdrkd-rcdrlogdump.md) or [**!wdfkd.wdflogdump**](../debugger/-wdfkd-wdflogdump.md), for example:
+Drivers set this entry to one to add timestamps to log entries that are then viewable using [**!rcdrkd.rcdrlogdump**](../debugger/-rcdrkd-rcdrlogdump.md) or [**!wdfkd.wdflogdump**](../debugger/-wdfkd-wdflogdump.md).
 
-```dbgcmd
-0: kd> !rcdrlogdump SampleDriver
-Sample Log 1: 02/03/2022-15:32:11.838 NativeMethodInterfaceRequest - interface successfully copied!
-```
+**WppRecorder_PreciseTimeStamp: REG_DWORD** (available starting in WDK Insider Preview build 22557)
 
-Example for a kernel-mode driver:
+If you would like more precise timestamps, in addition to **WppRecorder_UseTimeStamp**, add **WppRecorder_PreciseTimeStamp** using the same syntax shown above.
+
+### Examples
+
+In the following examples, add the lines between the start and end comments to set the number of log pages to two and turn on timestamps.
+
+For a kernel-mode driver:
 
 ```inf
 [IfrSample_Service_Inst] 
@@ -83,41 +86,31 @@ ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
 StartType      = 3               ; SERVICE_DEMAND_START
 ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
 ServiceBinary  = %12%\IfrSample.sys
-; =============== START TIMESTAMP ADDITION
+; =============== START
 AddReg = IfrSample_Service_Inst.AddReg
  
 [IfrSample_Service_Inst.AddReg]
+HKR, "Parameters", "LogPages", %REG_DWORD%, 2
 HKR, "Parameters", "WppRecorder_UseTimeStamp", %REG_DWORD%, 1
-; =============== END TIMESTAMP ADDITION
+; =============== END
 
 [Strings]
 REG_DWORD = 0x00010001
 ```
 
-Example for a UMDF driver:
+For a UMDF driver:
 
 ```inf 
 [IfrSampleUm_Install] 
 UmdfLibraryVersion=$UMDFVERSION$
 ServiceBinary=%13%\IfrSampleUm.dll
-; =============== START TIMESTAMP ADDITION
+; =============== START
 AddReg=IfrSampleUm_Install.AddReg
  
 [IfrSampleUm_Install.AddReg]
+HKR, "Parameters", "LogPages", %REG_DWORD%, 2
 HKR, "Parameters", "WppRecorder_UseTimeStamp", %REG_DWORD%, 1
-; =============== END TIMESTAMP ADDITION
-```
-
-**WppRecorder_PreciseTimeStamp: REG_DWORD** (available starting in WDK Insider Preview build 22557)
-
-If you would like more precise timestamps, in addition to **WppRecorder_UseTimeStamp**, add **WppRecorder_PreciseTimeStamp** using the same syntax shown above.
-
-Precise timestamps look like this:
-
-```dbgcmd
-1: kd> !rcdrlogdump IfrSample 
-DriverLog 1: 02/03/2022-16:16:25.9571373 DriverEntry - Reg path = \REGISTRY\MACHINE\SYSTEM\ControlSet001\Services\IfrSample
-DriverLog 2: 02/03/2022-16:16:25.9571377 DriverEntry - Demonstrate usage of NTSTATUS: 0xc000000d(STATUS_INVALID_PARAMETER)
+; =============== END
 ```
 
 ## How to send trace messages to the default log
