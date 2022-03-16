@@ -5,8 +5,8 @@ keywords:
 - Secure Boot enabled
 - Testing drivers
 - Testing pre-production drivers
-- Pre-prodution driver signing and testing
-ms.date: 03/08/2022
+- Pre-production driver signing and testing
+ms.date: 03/15/2022
 ---
 
 # How to test pre-production drivers with Secure Boot enabled
