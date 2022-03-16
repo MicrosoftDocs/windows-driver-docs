@@ -1,9 +1,9 @@
 ---
 title: Concepts for all driver developers
-description: In this section, concepts needed for all driver developers are described.
+description: This section describes essential concepts for all driver developers.
 keywords:
 - driver fundamentals
-ms.date: 04/20/2017
+ms.date: 03/16/2022
 ---
 
 # Concepts for all driver developers

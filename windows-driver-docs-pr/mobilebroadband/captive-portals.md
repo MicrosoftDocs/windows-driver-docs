@@ -1,7 +1,7 @@
 ---
 title: Captive portals
-description: Captive portals
-ms.date: 04/20/2017
+description: A captive portal is a restricted network connection in which all client HTTP requests are redirected to the provider’s web site.
+ms.date: 03/16/2022
 ---
 
 # Captive portals
@@ -15,7 +15,7 @@ Several problems exist by using such an experience:
 
 -   If the initial connection attempted is made over Secure Sockets Layer (SSL), the browser displays a security warning to the user before the user is redirected to the captive portal. This creates a confusing experience for users because they must ignore the security warning to get connected.
 
-Windows 8, Windows 8.1, and Windows 10 support captive portal networks by immediately opening the web browser if a captive portal is detected. The user sees your branded web page in the foreground of their device, which helps them to understand what actions they should take to authenticate by using the captive portal.
+Windows supports captive portal networks by immediately opening the web browser if a captive portal is detected. The user sees your branded web page in the foreground of their device, which helps them to understand what actions they should take to authenticate by using the captive portal.
 
 Windows provides mechanisms that can let users bypass captive portals on subsequent connection attempts. However, the captive portal is always the experience that is encountered by a first-time user.
 
@@ -48,7 +48,7 @@ To avoid false positive or false negative test results, your captive portal shou
 ## <span id="touchfr"></span><span id="TOUCHFR"></span>Touch-friendly web pages
 
 
-The Windows 8, Windows 8.1, and Windows 10 experience is designed to be touch-first. This extends to web pages. Consider laying out your web page with larger, easy-to-target controls for a touch user. Use layouts that do not require excessive scrolling to interact with, and break flows into multiple pages if necessary. For more information on touch-friendly web design, see [Designing for Touch Input](/previous-versions/windows/desktop/ms695008(v=vs.85)).
+The Windows experience is designed to be touch-first. This extends to web pages. Consider laying out your web page with larger, easy-to-target controls for a touch user. Use layouts that do not require excessive scrolling to interact with, and break flows into multiple pages if necessary. For more information on touch-friendly web design, see [Designing for Touch Input](/previous-versions/windows/desktop/ms695008(v=vs.85)).
 
 ## <span id="pap"></span><span id="PAP"></span>Provision after purchase
 
@@ -65,7 +65,7 @@ Passing an XML provisioning file enables the operating system to automatically c
 ## <span id="appinst"></span><span id="APPINST"></span>Offer app installation
 
 
-The richest experience of Windows 8, Windows 8.1, and Windows 10 is through the use of a mobile broadband app. It is not possible to allow access to only one app in the Microsoft Store through a captive portal, so the app cannot be installed prior to the user obtaining Internet connectivity. However, after the user has authenticated, consider directing them to the Microsoft Store to install your mobile broadband app.
+The richest experience of Windows is through the use of a mobile broadband app. It is not possible to allow access to only one app in the Microsoft Store through a captive portal, so the app cannot be installed prior to the user obtaining Internet connectivity. However, after the user has authenticated, consider directing them to the Microsoft Store to install your mobile broadband app.
 
 ## <span id="related_topics"></span>Related topics
 
