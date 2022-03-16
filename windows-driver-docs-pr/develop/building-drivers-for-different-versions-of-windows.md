@@ -20,6 +20,8 @@ If you are targeting Windows 7, Windows 8, or Windows 8.1, set **TargetVersion**
 If you are targeting Windows 10 or Windows 11, set both **TargetVersion** and **_NT_TARGET_VERSION**, for example `<TargetVersion>Windows10</TargetVersion>
 <_NT_TARGET_VERSION>0xA000006</_NT_TARGET_VERSION>`.
 
+**_NT_TARGET_VERSION** values are listed in the Sdkddkver.h header file in the form `NTDDI_WIN10_*`, for example `#define NTDDI_WIN10_RS5 0x0A000006`.
+
 ## <span id="Guidelines_that_apply_to_building_kernel-mode_drivers"></span><span id="guidelines_that_apply_to_building_kernel-mode_drivers"></span><span id="GUIDELINES_THAT_APPLY_TO_BUILDING_KERNEL-MODE_DRIVERS"></span>Guidelines that apply to building kernel-mode drivers
 
 
