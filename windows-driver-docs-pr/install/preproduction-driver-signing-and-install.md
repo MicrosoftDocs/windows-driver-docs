@@ -76,7 +76,7 @@ copy-item <path_to_p7b> S:/EFI/Microsoft/Boot/SecureBootPolicy.p7b
 
 **Note: The Windows kernel requires the Secure Boot policy file in the form of `SecureBootPolicy.p7b` so the name and file format must not be modified.**
 
-1. For devices not running Desktop-based Windows, copy the corresponding `PreProductionPolicy.pol` to `\EFI\Microsoft\Boot\Policies`. Then delete `FullDebugPolicy.pol` from `\EFI\Microsoft\Boot\Policies` and reboot.
+1. For devices not running Desktop-based Windows, copy the corresponding `PreProductionPolicy.pol` to `\EFI\Microsoft\Boot\Policies`. Then delete `FullDebugPolicy.pol` from `\EFI\Microsoft\Boot\Policies`.
 
 1. Reboot the system to allow the Windows kernel to refresh the policies. Secure Boot is now re-enabled and provisioned automatically by the provisioning tool. This can be validated by re-running EnableUefiSbTest.exe /dump as admin and validating that only the dbx and OemId values are empty (“Not Found”).
 
