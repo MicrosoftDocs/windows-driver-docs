@@ -30,10 +30,9 @@ The file system uses **Flags** to track which access rights have been granted in
 
 If traverse privilege has not previously been granted, the file system must do a traverse check on each directory along the path to the file being opened. In the partial code snippet below, the traverse check is done using a generic routine, typically used for most security checks:
 
-{
-
 ```cpp
 
+{
 // accessParams is passed to the file system and is normally based
 // on the fields of the same name from the IRP.
 
@@ -112,4 +111,4 @@ This function performs a generic security check. This function must deal with th
 
 - It must account for the MAXIMUM_ALLOWED option (see *ntifs.h*). The MAXIMUM_ALLOWED option specifies that the file system should set the access to the maximum possible access allowed by the file system (read/write/delete, for example). Very few applications use the MAXIMUM_ALLOWED option because this option is not supported on the FASTFAT file system. Because the MAXIMUM_ALLOWED option bit is not one of the access bits that the FASTFAT file system recognizes, it rejects access requests to the given file. An application that attempts to open a file on a FASTFAT volume with the MAXIMUM_ALLOWED option set will find that the request fails. For details, see the **FatCheckFileAccess** function in the Acchksup.c source file of the FASTFAT sample code that the WDK contains.
 
-Note that for a simple traverse check, the requested access would be FILE_TRAVERSE and the security descriptor would be that of the directory through which the caller is attempting to traverse, not the requested access from the original IRP_MJ_CREATE IRP.
+Note that for a simple traverse check, the requested access would be **FILE_TRAVERSE** and the security descriptor would be that of the directory through which the caller is attempting to traverse, not the requested access from the original **IRP_MJ_CREATE** IRP.
