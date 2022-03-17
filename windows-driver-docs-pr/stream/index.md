@@ -5,7 +5,7 @@ keywords:
 - streaming media WDK
 - media streaming WDK
 - data streaming WDK
-ms.date: 06/24/2021
+ms.date: 03/16/2022
 ms.topic: article
 
 ---
@@ -16,11 +16,13 @@ Use the guidance in this section to design and implement drivers for devices tha
 
 ## New and updated content for Windows 11
 
+[Camera privacy controls](camera-privacy-controls.md)
+
+[Privacy shutter notification](privacy-shutter-notification.md)
+
 [Digital Window overview](digital-window-overview.md)
 
 [Microsoft extensions to USB Video Class 1.5 specification](uvc-extensions-1-5.md)
-
-[Privacy shutter notification](privacy-shutter-notification.md)
 
 [Create device property keys from the MS OS descriptor in USB Video Class (UVC) camera firmware](create-camera-device-property-keys-from-ms-os-descriptor.md)
 
