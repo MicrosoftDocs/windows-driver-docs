@@ -10,13 +10,12 @@ keywords:
 - installing devices WDK , SetupAPI
 - functions WDK SetupAPI
 - device installations WDK , SetupAPI
-ms.date: 04/20/2017
+ms.date: 03/11/2022
 ---
 
 # SetupAPI
 
-
-The Setup application programming interface (SetupAPI) is a system component that provides two sets of functions:
+The Setup Application Programming Interface (SetupAPI) is a system component that provides two sets of functions:
 
 -   [General setup functions](using-general-setup-functions.md)
 
@@ -24,7 +23,8 @@ The Setup application programming interface (SetupAPI) is a system component tha
 
 Device installation software can use these functions to perform custom operations in [*class installers*](writing-class-installers-and-co-installers.md), [*co-installers*](writing-a-co-installer.md), and [*device installation applications*](writing-a-device-installation-application.md).
 
-For device installation applications, Driver Install Frameworks (DIFx) provides high-level tools that abstract the low-level SetupAPI operations that install Plug and Play (PnP) function drivers and manage the association between application software and the drivers. If the DIFx tools provide the functionality that an installation application requires to install PnP drivers and application software for devices, the installation application should use the DIFx tools instead of directly calling SetupAPI functions. However, co-installers and class installers are Microsoft Win32 DLLs that assist the default installation operation by performing custom operations for a device or all devices in a [device setup class](./overview-of-device-setup-classes.md). These operations typically require direct calls to Win32 functions and SetupAPI functions.
+> [!NOTE]
+> SetupApi is not supported on all editions of Windows.  When possible, you should use lower layer APIs such as those available via [CfgMgr32.dll](/windows/win32/api/cfgmgr32/).  See [Porting from SetupApi to CfgMgr32](porting-from-setupapi-to-cfgmgr32.md) for tips.
 
 This section contains the following topics, which provide general information about how to use the [general Setup functions](using-general-setup-functions.md) and [device installation functions](using-device-installation-functions.md) that are provided by SetupAPI:
 

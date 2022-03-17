@@ -354,24 +354,8 @@
     items:
     - name: "SetupAPI"
       href: setupapi.md
-    - name: "Using General Setup Functions"
-      href: using-general-setup-functions.md
     - name: "INF File Processing Functions"
       href: inf-file-processing-functions.md
-    - name: "Disk Prompting and Error Handling Functions"
-      href: disk-prompting-and-error-handling-functions.md
-    - name: "File Queuing Functions"
-      href: file-queuing-functions.md
-    - name: "Default Queue Callback Routine Functions"
-      href: default-queue-callback-routine-functions.md
-    - name: "Cabinet File Function"
-      href: cabinet-file-function.md
-    - name: "Disk-Space List Functions"
-      href: disk-space-list-functions.md
-    - name: "MRU Source List Functions"
-      href: mru-source-list-functions.md
-    - name: "File Log Functions"
-      href: file-log-functions.md
     - name: "User Interface Functions"
       href: user-interface-functions.md
     - name: "SetupAPI Logging Functions"
@@ -394,90 +378,54 @@
       href: obtaining-the-original-source-path-of-an-installed-inf-file.md
     - name: "Guidelines for Using SetupAPI"
       href: guidelines-for-using-setupapi.md
-    - name: "DIFx Guidelines"
-      href: difx-guidelines.md
-    - name: "Device and Driver Installation Software Components"
-      href: device-and-driver-installation-software-components.md
-    - name: "Writing a Co-installer"
-      href: writing-a-co-installer.md
-    - name: "Co-installer Operation"
-      href: co-installer-operation.md
-    - name: "Co-installer Interface"
-      href: co-installer-interface.md
-    - name: "Co-installer Functionality"
-      href: co-installer-functionality.md
-    - name: "Handling DIF Codes"
-      href: handling-dif-codes.md
-    - name: "Registering a Co-installer"
-      href: registering-a-co-installer.md
-    - name: "Registering a Device-Specific Co-installer"
-      href: registering-a-device-specific-co-installer.md
-    - name: "Registering a Class Co-installer"
-      href: registering-a-class-co-installer.md
-    - name: "Calling the Default DIF Code Handlers"
-      href: calling-the-default-dif-code-handlers.md
-    - name: "Finish-Install Actions"
-      href: finish-install-actions--windows-vista-and-later-.md
-    - name: "Overview of Finish-Install Actions"
-      href: overview-of-finish-install-actions.md
-    - name: "How Finish-Install Actions are Processed"
-      href: how-finish-install-actions-are-processed.md
-    - name: "Marking a Device as having a Finish Install Action to Perform"
-      href: setting-the-configflag-finishinstall-action-device-configuration-flag.md
-    - name: "Running Finish-Install Actions"
-      href: running-finish-install-actions.md
-    - name: "Running the Default Finish-Install Action"
-      href: running-the-default-finish-install-action.md
-    - name: "Implementing Finish-Install Actions"
-      href: implementing-finish-install-actions.md
-    - name: "Guidelines for Implementing Finish-Install Actions"
-      href: guidelines-for-implementing-finish-install-actions.md
-    - name: "Code Example: Finish-Install Actions in a Class Installer"
-      href: code-example--finish-install-actions-in-a-class-installer.md
-    - name: "Code Example: Finish-Install Actions in a Co-installer"
-      href: code-example--finish-install-actions-in-a-co-installer.md
-    - name: "Overview of Device Property Pages"
-      href: overview-of-device-property-pages.md
-    - name: "How Device Property Pages are Displayed"
-      href: how-device-property-pages-are-displayed.md
-    - name: "Types of Device Property Page Providers"
-      href: types-of-device-property-page-providers.md
-    - name: "General Requirements for Device Property Page Providers"
-      href: general-requirements-for-device-property-page-providers.md
-    - name: "Creating Custom Property Pages"
-      href: creating-custom-property-pages.md
-    - name: "Property Page Callback Function"
-      href: property-page-callback-function.md
-    - name: "Handling Windows Messages for Property Pages"
-      href: handling-windows-messages-for-property-pages.md
-    - name: "Sample Custom Property Page"
-      href: sample-custom-property-page.md
-    - name: "Specific Requirements for Device Property Page Providers (Co-Installers)"
-      href: specific-requirements-for-device-property-page-providers--class-instal.md
-    - name: "Specific Requirements for Device Property Page Providers (Property Page Extension DLLs)"
-      href: specific-requirements-for-device-property-page-providers--property-pag.md
-    - name: "Invoking a Device Properties Dialog Box"
-      href: invoking-a-device-properties-dialog-box.md
-    - name: "Invoking a Device Properties Dialog Box Programmatically in an Installation Application"
-      href: invoking-a-device-properties-dialog-box-programmatically-in-an-install.md
-    - name: "Invoking a Device Properties Dialog Box from a Command-line Prompt"
-      href: invoking-a-device-properties-dialog-box-from-a-command-line-prompt.md
-    - name: "DeviceProperties_RunDLL Function Prototype"
-      href: deviceproperties-rundll-function-prototype.md
-    - name: "Writing a Device Installation Application"
-      href: writing-a-device-installation-application.md
-    - name: "Guidelines for Writing Device Installation Applications"
-      href: guidelines-for-writing-device-installation-applications.md
-    - name: "Installing Device-Specific Applications"
-      href: installing-device-specific-applications.md
-    - name: "Device Installation Application Not Included in the Driver Package"
-      href: device-installation-application-not-included-in-the-driver-package.md
-    - name: "Device Installation Application that is Included in the Driver Package"
-      href: device-installation-application-that-is-included-in-the-driver-package.md
-    - name: "Device Installation Application Started through AutoRun"
-      href: device-installation-application-started-through-autorun.md
-    - name: "Guidelines for Starting Device Installation Applications through Co-installers"
-      href: guidelines-for-starting-device-installation-applications-through-co-in.md
+    - name: "Device Property Pages"
+      items:
+      - name: "Overview of Device Property Pages"
+        href: overview-of-device-property-pages.md
+      - name: "How Device Property Pages are Displayed"
+        href: how-device-property-pages-are-displayed.md
+      - name: "Types of Device Property Page Providers"
+        href: types-of-device-property-page-providers.md
+      - name: "General Requirements for Device Property Page Providers"
+        href: general-requirements-for-device-property-page-providers.md
+      - name: "Creating Custom Property Pages"
+        href: creating-custom-property-pages.md
+      - name: "Property Page Callback Function"
+        href: property-page-callback-function.md
+      - name: "Handling Windows Messages for Property Pages"
+        href: handling-windows-messages-for-property-pages.md
+      - name: "Sample Custom Property Page"
+        href: sample-custom-property-page.md
+      - name: "Specific Requirements for Device Property Page Providers (Property Page Extension DLLs)"
+        href: specific-requirements-for-device-property-page-providers--property-pag.md
+      - name: "Specific Requirements for Device Property Page Providers (Co-Installers)"
+        href: specific-requirements-for-device-property-page-providers--class-instal.md
+    - name: "Device Properties Dialog Box"
+      items:
+      - name: "Invoking a Device Properties Dialog Box"
+        href: invoking-a-device-properties-dialog-box.md
+      - name: "Invoking a Device Properties Dialog Box Programmatically in an Installation Application"
+        href: invoking-a-device-properties-dialog-box-programmatically-in-an-install.md
+      - name: "Invoking a Device Properties Dialog Box from a Command-line Prompt"
+        href: invoking-a-device-properties-dialog-box-from-a-command-line-prompt.md
+      - name: "DeviceProperties_RunDLL Function Prototype"
+        href: deviceproperties-rundll-function-prototype.md
+    - name: "Device Installation Applications"
+      items:
+      - name: "Writing a Device Installation Application"
+        href: writing-a-device-installation-application.md
+      - name: "Guidelines for Writing Device Installation Applications"
+        href: guidelines-for-writing-device-installation-applications.md
+      - name: "Installing Device-Specific Applications"
+        href: installing-device-specific-applications.md
+      - name: "Device Installation Application Not Included in the Driver Package"
+        href: device-installation-application-not-included-in-the-driver-package.md
+      - name: "Device Installation Application that is Included in the Driver Package"
+        href: device-installation-application-that-is-included-in-the-driver-package.md
+      - name: "Device Installation Application Started through AutoRun"
+        href: device-installation-application-started-through-autorun.md
+      - name: "Guidelines for Starting Device Installation Applications through Co-installers"
+        href: guidelines-for-starting-device-installation-applications-through-co-in.md
     - name: "Preloading Driver Packages"
       href: preloading-driver-packages.md
     - name: "Preinstalling Driver Packages"
@@ -744,6 +692,72 @@
       href: locationpath-registry-subkey.md
     - name: "* Registry Subkey"
       href: --registry-subkey.md
+  - name: "Deprecated Functionality"
+    items:
+    - name: "General Setup Operations"
+      items:
+      - name: "Using General Setup Functions"
+        href: using-general-setup-functions.md
+      - name: "Disk Prompting and Error Handling Functions"
+        href: disk-prompting-and-error-handling-functions.md
+      - name: "File Queuing Functions"
+        href: file-queuing-functions.md
+      - name: "Default Queue Callback Routine Functions"
+        href: default-queue-callback-routine-functions.md
+      - name: "Cabinet File Function"
+        href: cabinet-file-function.md
+      - name: "Disk-Space List Functions"
+        href: disk-space-list-functions.md
+      - name: "MRU Source List Functions"
+        href: mru-source-list-functions.md
+      - name: "File Log Functions"
+        href: file-log-functions.md
+    - name: "Class and Co Installers"
+      items:
+      - name: "Device and Driver Installation Software Components"
+        href: device-and-driver-installation-software-components.md
+      - name: "Writing a Co-installer"
+        href: writing-a-co-installer.md
+      - name: "Co-installer Operation"
+        href: co-installer-operation.md
+      - name: "Co-installer Interface"
+        href: co-installer-interface.md
+      - name: "Co-installer Functionality"
+        href: co-installer-functionality.md
+      - name: "Handling DIF Codes"
+        href: handling-dif-codes.md
+      - name: "Registering a Co-installer"
+        href: registering-a-co-installer.md
+      - name: "Registering a Device-Specific Co-installer"
+        href: registering-a-device-specific-co-installer.md
+      - name: "Registering a Class Co-installer"
+        href: registering-a-class-co-installer.md
+      - name: "Calling the Default DIF Code Handlers"
+        href: calling-the-default-dif-code-handlers.md
+    - name: "Finish Install Actions"
+      items:
+      - name: "Finish-Install Actions"
+        href: finish-install-actions--windows-vista-and-later-.md
+      - name: "Overview of Finish-Install Actions"
+        href: overview-of-finish-install-actions.md
+      - name: "How Finish-Install Actions are Processed"
+        href: how-finish-install-actions-are-processed.md
+      - name: "Marking a Device as having a Finish Install Action to Perform"
+        href: setting-the-configflag-finishinstall-action-device-configuration-flag.md
+      - name: "Running Finish-Install Actions"
+        href: running-finish-install-actions.md
+      - name: "Running the Default Finish-Install Action"
+        href: running-the-default-finish-install-action.md
+      - name: "Implementing Finish-Install Actions"
+        href: implementing-finish-install-actions.md
+      - name: "Guidelines for Implementing Finish-Install Actions"
+        href: guidelines-for-implementing-finish-install-actions.md
+      - name: "Code Example: Finish-Install Actions in a Class Installer"
+        href: code-example--finish-install-actions-in-a-class-installer.md
+      - name: "Code Example: Finish-Install Actions in a Co-installer"
+        href: code-example--finish-install-actions-in-a-co-installer.md
+    - name: "DIFx Guidelines"
+      href: difx-guidelines.md
 - name: "INF Sections"
   items: 
   - name: "INF ClassInstall32 Section"
