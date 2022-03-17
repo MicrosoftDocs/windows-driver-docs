@@ -1,5 +1,15 @@
 - name: "Streaming media devices design guide"
   href: index.md
+- name: "Camera privacy controls"
+# Auto-expanded node
+  items: 
+  - name: "Camera privacy controls"
+    href: camera-privacy-controls.md
+- name: "Privacy shutter notification"
+# Auto-expanded node
+  items: 
+  - name: "Privacy shutter notification"
+    href: privacy-shutter-notification.md
 - name: "Device firmware update for USB devices without using a co-installer"
 # Auto-expanded node
   items: 
@@ -15,11 +25,7 @@
   items: 
   - name: "Digital Window overview"
     href: digital-window-overview.md
-- name: "Privacy shutter notification"
-# Auto-expanded node
-  items: 
-  - name: "Privacy shutter notification"
-    href: privacy-shutter-notification.md
+
 - name: "USB Video Class (UVC) camera implementation guide"
 # Auto-expanded node
   items: 
