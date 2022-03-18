@@ -1,7 +1,7 @@
 ---
 title: How Devices and Driver Packages are Uninstalled
 description: How Devices and Driver Packages are Uninstalled
-ms.date: 10/07/2020
+ms.date: 03/18/2022
 ms.custom: contperf-fy21q2
 ---
 
@@ -28,7 +28,7 @@ For info on how an end user can uninstall a device, see  [Using Device Manager t
 To delete a [driver package](driver-packages.md) from the [driver store](driver-store.md), do one of the following:
 
 * From the command prompt, use `pnputil /delete-driver <example.inf> /uninstall`. For info on PnPUtil commands, see [PnPUtil Command Syntax](../devtest/pnputil-command-syntax.md).
-* On Windows 10, version 1703 or later, a device installation application can call [**DiUninstallDriverW**](/windows/win32/api/newdev/nf-newdev-diuninstalldriverw).
+* Starting in Windows 10, version 1703, a device installation application can call [**DiUninstallDriverW**](/windows/win32/api/newdev/nf-newdev-diuninstalldriverw).
 * On earlier versions of Windows, a device installation application should first issue a [**DIF_REMOVE**](./dif-remove.md) request or call the [**DiUninstallDevice**](/windows/win32/api/newdev/nf-newdev-diuninstalldevice) function to uninstall all devices and then call [**SetupUninstallOEMInf**](/windows/win32/api/setupapi/nf-setupapi-setupuninstalloeminfa) to remove the driver.
 
 Deleting a driver package from the driver store removes associated metadata from the PnP manager's internal database and deletes related INF files from the system INF directory.

@@ -1,12 +1,12 @@
 ---
 description: The Network Monitor tool (NetMon.exe) is a Windows-based application that you can use to view traces from WPD components.
 title: Using the Network Monitor Tool
-ms.date: 04/20/2017
+ms.date: 03/18/2022
 ---
 
 # Using the Network Monitor Tool
 
-The Network Monitor tool (*NetMon.exe*) is a Windows-based application that you can use to view traces from WPD components. The tool replaces *WpdMon.exe* and provides a new means of collecting and viewing WPD traces in Windows 8.
+The Network Monitor tool (*NetMon.exe*) is an archived Windows-based application that you can use to view traces from WPD components. Starting in Windows 8, the tool replaced *WpdMon.exe*.
 
 ## Installing and Configuring NetMon.exe
 
@@ -24,7 +24,7 @@ To install and configure the Network Monitor tool, complete the following steps.
 
 4. Configure the *NetMon.exe* options by using the Tools/Options dialog:
    1. In the **General** tab, select the **Use fixed width font in Frame Summary** box.
-   2. In the **Color Rules** tab, select **Open** and then select \\Program Files (x86)\\Windows Kits\\8.0\\Tools\\x86\\Network Monitor Parsers\\wpd\\wpd.nmcr. Select **Open**, followed by **OK.**
+   2. In the **Color Rules** tab, select **Open** and then select `Program Files (x86)\Windows Kits\8.0\Tools\x86\Network Monitor Parsers\wpd\wpd.nmcr`. Select **Open**, followed by **OK.**
 
 After you complete these steps, *NetMon.exe* is ready to examine WPD trace files. To begin collecting traces, follow the instructions in the next section, Collecting Traces.
 
