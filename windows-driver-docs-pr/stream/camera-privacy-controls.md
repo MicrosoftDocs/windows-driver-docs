@@ -1,7 +1,7 @@
 ---
 title: Camera privacy controls
 description: Provides device design guidance for privacy shutters and kill switches, considerations for shutter state sensing, and how shutters are expected to interact with existing HLK requirements for indicator LEDs.
-ms.date: 03/17/2022
+ms.date: 03/18/2022
 ---
 
 # Camera privacy controls
@@ -125,7 +125,7 @@ LED requirements must follow the requirements specified [Common LED requirements
 
 ![camera is actively streaming](images/camera-privacy-controls-8.png)
 
-For designs featuring both an IR and RGB camera, some manufacturers may wish to turn off the IR illuminator LED if the IR camera is used while the shutter is closed. We recommend against this as it adds a lot of complexity for little value; the IR camera will generally only be active if Windows Hello is running, and Windows Hello displays a message during this time that it's trying to log you in, but the shutter is closed. See [Kill switch implementation] (#kill-switch-implementation) for details.
+For designs featuring both an IR and RGB camera, some manufacturers may wish to turn off the IR illuminator LED if the IR camera is used while the shutter is closed. We recommend against this as it adds a lot of complexity for little value; the IR camera will generally only be active if Windows Hello is running, and Windows Hello displays a message during this time that it's trying to log you in, but the shutter is closed. See [Kill switch implementation](#kill-switch-implementation) for details.
 
 However, if an 840nm (visible) IR illuminator LED is not the only in-use indicator LED for the IR camera (for example, a normal visible white/green/blue LED is illuminated when the IR camera is active), then a design may turn the IR illuminator LED OFF when the shutter is closed.
 
