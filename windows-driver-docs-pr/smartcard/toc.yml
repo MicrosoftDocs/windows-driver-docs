@@ -57,7 +57,7 @@
     href: minidriver-registration.md
 - name: "Smart Card Reader States"
   href: smart-card-reader-states.md
-- name: "Installing Smart Card Reader Drivers"
+- name: "Writing an INF file for a Smart Card Reader Driver"
   href: installing-smart-card-reader-drivers.md
 - name: "Registering a WDM Smart Card Reader Driver"
   href: registering-a-wdm-smart-card-reader-driver.md
