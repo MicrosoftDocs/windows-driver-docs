@@ -68,7 +68,7 @@ The [!analyze](-analyze.md) debug extension displays information about the bug c
 The driver name returned in parameter 2 should point to the offending driver.
 
 
-## See Also-
+## See Also
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

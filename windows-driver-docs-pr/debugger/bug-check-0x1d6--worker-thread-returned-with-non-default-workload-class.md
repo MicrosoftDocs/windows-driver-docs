@@ -34,7 +34,7 @@ The WORKER\_THREAD\_RETURNED\_WITH\_NON\_DEFAULT\_WORKLOAD\_CLASS bug check has 
 A worker thread changed its workload class and did not revert it before returning.
 
 
-## See Also-
+## See Also
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

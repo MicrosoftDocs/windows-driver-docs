@@ -116,7 +116,7 @@ to other servers.
 (This code can never be used for a real bugcheck; it is used to identify live dumps.)
 
 
-## See Also-
+## See Also
 
 [Troubleshooting a Failover Cluster using Windows Error Reporting](/windows-server/failover-clustering/troubleshooting-using-wer-reports)
 

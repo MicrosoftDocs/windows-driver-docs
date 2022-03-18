@@ -35,7 +35,7 @@ A thread failed to detach from a silo before exiting.
 
 
 
-## See Also-
+## See Also
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

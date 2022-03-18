@@ -1,6 +1,6 @@
 ---
-title: Installing an Advanced Properties Page for a COM Port
-description: Installing an Advanced Properties Page for a COM Port
+title: Create an Advanced Properties Page for a COM Port
+description: Create an Advanced Properties Page for a COM Port
 keywords:
 - advanced COM port properties page WDK serial devices
 - COM ports WDK serial devices
@@ -9,10 +9,10 @@ keywords:
 - port numbers WDK serial devices
 - FIFO control parameters WDK serial devices
 - COM port numbers WDK serial devices
-ms.date: 04/20/2017
+ms.date: 03/17/2022
 ---
 
-# Installing an Advanced Properties Page for a COM Port
+# Create an Advanced Properties Page for a COM Port
 
 The advanced property page displays a default user dialog box for setting FIFO control parameters and selecting a COM port number. However, you can override the default dialog box by supplying a custom dialog box.
 

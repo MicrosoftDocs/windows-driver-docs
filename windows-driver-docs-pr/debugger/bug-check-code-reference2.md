@@ -1,7 +1,7 @@
 ---
 title: Bug Check Code Reference
 description: This section contains descriptions of the common bug checks, including the parameters passed to the blue screen.
-ms.date: 12/07/2020
+ms.date: 03/10/2022
 ---
 
 # Bug Check Code Reference
@@ -48,7 +48,7 @@ For more information, see:
 
 ## Live Dumps
 
- Live Dump stop codes to not reset the OS, but allow for the capture of memory information for abnormal situations where the operating system can continue. For information about live dumps, see [Bug Check Code Reference - Live Dump](bug-check-code-reference-live-dump.md)
+ Live Dump stop codes to not reset the OS, but allow for the capture of memory information for abnormal situations where the operating system can continue. For information about live dumps, see [Bug Check Code Reference - Live Dump](bug-check-code-reference-live-dump.md).
 
 ## Bug Check Codes
 
@@ -421,3 +421,9 @@ The following table provides links to bug check codes.
 | 0xC000021A | [**WINLOGON\_FATAL\_ERROR**](bug-check-0xc000021a--winlogin-fatal-error.md)                                              |
 | 0xC0000221 | [**STATUS\_IMAGE\_CHECKSUM\_MISMATCH**](bug-check-0xc0000221--status-image-checksum-mismatch.md)                                                  |
 | 0xDEADDEAD | [**MANUALLY\_INITIATED\_CRASH1**](bug-check-0xdeaddead--manually-initiated-crash1.md)                                                             |
+
+## See also
+
+[General Tips for Blue Screens](general-troubleshooting-tips.md)
+
+[Blue Screen Data](blue-screen-data.md)

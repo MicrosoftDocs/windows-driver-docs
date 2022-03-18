@@ -40,7 +40,7 @@ A Cluster Service call to the volsnap to query snapshot information took too lon
 ## Resolution
  
 
-## See Also-
+## See Also
 
 [Troubleshooting Hangs Using Live Dump (Blog)](https://techcommunity.microsoft.com/t5/Failover-Clustering/bg-p/FailoverClustering)
 

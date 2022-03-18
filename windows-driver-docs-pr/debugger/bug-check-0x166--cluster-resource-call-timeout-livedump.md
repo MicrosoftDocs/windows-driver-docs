@@ -69,7 +69,7 @@ A Cluster Resource call took longer than configured timeout. The system generate
 ## Resolution
  
 
-## See Also-
+## See Also
 
 [Troubleshooting Hangs Using Live Dump (Blog)](https://techcommunity.microsoft.com/t5/Failover-Clustering/bg-p/FailoverClustering)
 

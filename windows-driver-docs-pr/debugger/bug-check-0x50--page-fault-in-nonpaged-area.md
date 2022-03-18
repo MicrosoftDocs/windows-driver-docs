@@ -2,7 +2,7 @@
 title: Bug Check 0x50 PAGE_FAULT_IN_NONPAGED_AREA
 description: The PAGE_FAULT_IN_NONPAGED_AREA bug check has a value of 0x00000050. This indicates that invalid system memory has been referenced. 
 keywords: ["Bug Check 0x50 PAGE_FAULT_IN_NONPAGED_AREA", "PAGE_FAULT_IN_NONPAGED_AREA"]
-ms.date: 04/18/2019
+ms.date: 03/15/2022
 topic_type:
 - apiref
 api_name:
@@ -13,15 +13,12 @@ api_type:
 
 # Bug Check 0x50: PAGE\_FAULT\_IN\_NONPAGED\_AREA
 
-
 The PAGE\_FAULT\_IN\_NONPAGED\_AREA bug check has a value of 0x00000050. This indicates that invalid system memory has been referenced. Typically the memory address is wrong or the memory address is pointing at freed memory.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
-
 ## PAGE\_FAULT\_IN\_NONPAGED\_AREA Parameters
-
 
 <table>
 <colgroup>
@@ -69,8 +66,17 @@ The PAGE\_FAULT\_IN\_NONPAGED\_AREA bug check has a value of 0x00000050. This in
 <tr class="even">
 <td align="left"><p>4</p></td>
 <td align="left"><p>Type of page fault</p>
-<p>0x03 - NONPAGED_BUGCHECK_WRONG_SESSION - An attempted reference to a session space address was made in the context of a process that has no session.  Typically this means the caller is improperly trying to access a session address without correctly obtaining an object reference to the correct process and attaching to it first. This bugcheck & subtype was last used in Windows 10 RS3.  In Windows 10 RS4 and above, this error is instead surfaced as 0x02 (NONPAGED_BUGCHECK_NOT_PRESENT_PAGE_TABLE).</p>
-<p>0x04 - NONPAGED_BUGCHECK_VA_NOT_CANONICAL - An attempted reference to a non-canonical (illegal) virtual address (Parameter 1) was attempted.  The caller should not ever be trying to access this address.</p>
+<p> 0x0 - NONPAGED_BUGCHECK_FREED_PTE - The address referenced is on a page table entry marked as free. 
+</p>
+<p> 0x2 - NONPAGED_BUGCHECK_NOT_PRESENT_PAGE_TABLE
+The address referenced does not have a valid active page table entry.
+</p>
+<p>0x03 - NONPAGED_BUGCHECK_WRONG_SESSION - An attempted reference to a session space address was made in the context of a process that has no session.  Typically this means the caller is improperly trying to access a session address without correctly obtaining an object reference to the correct process and attaching to it first. This bugcheck & subtype was last used in Windows 10 RS3.  In Windows 10 RS4 and above, this error is instead surfaced as 0x02 (NONPAGED_BUGCHECK_NOT_PRESENT_PAGE_TABLE).
+</p>
+<p>0x04 - NONPAGED_BUGCHECK_VA_NOT_CANONICAL - An attempted reference to a non-canonical (illegal) virtual address (Parameter 1) was attempted.  The caller should not ever be trying to access this address.
+</p>
+<p>0xF - NONPAGED_BUGCHECK_USER_VA_ACCESS_INCONSISTENT - Kernel mode code attempted to access a user mode virtual address when such access is not allowed. 
+</p>
 </td>
 </tr>
 </tbody>
@@ -85,8 +91,7 @@ Bug check 0x50 can be caused by the installation of a faulty system service or f
 
 It could also occur after the installation of faulty hardware or in the event of failure of installed hardware (usually related to defective RAM, be it main memory, L2 RAM cache, or video RAM).
 
-
-## Remarks---
+## Remarks
 
 **Event Log:**
 Check the System Log in Event Viewer for additional error messages that might help pinpoint the device or driver that is causing the error. For more information, see [Open Event Viewer](https://support.microsoft.com/hub/4338813/windows-help#1TC=windows-7). Look for critical errors in the system log that occurred in the same time window as the blue screen.
@@ -105,11 +110,13 @@ Run the Windows Memory Diagnostics tool, to test the physical memory. Select the
 
 **Resolving a faulty hardware problem:** If hardware has been added to the system recently, remove it to see if the error recurs. If existing hardware has failed, remove or replace the faulty component. You should run hardware diagnostics supplied by the system manufacturer. For details on these procedures, see the owner's manual for your computer.
 
-For general blue screen troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
+For general blue screen troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md) and [Advanced troubleshooting for Stop error or blue screen error issue](/windows/client-management/troubleshoot-stop-errors).
 
 ## Resolution
 
-Typically, the referenced address is in freed memory or is simply invalid. This cannot be protected by a **try - except** handler -- it can only be protected by a probe or similar programming techniques.
+To determine the specific cause and to create a code fix, programming experience and access to the source code of the faulting module, is required. 
+
+Typically, the referenced address is in freed memory or is simply invalid. This cannot be protected by a **try - except** handler -- it can only be protected by a probe or similar programming techniques. For information on buffer handling and probes in file system drivers, see [Buffer Handling](/windows-hardware/drivers/ifs/buffer-handling). For information on best practices for driver development, and common mistakes made by driver developers, see [Surface Team Driver Development Best Practices](/windows-hardware/drivers/kernel/surface-team-driver-development-best-practices).
 
 Use the [**!analyze**](-analyze.md) debug extension with the -v verbose option to display information about the bug check to work to determine the root cause.
 
@@ -144,7 +151,7 @@ Use the .trap command provided in the !analyze output to set the context.
 TRAP_FRAME:  fffff98112e8b3d0 -- (.trap 0xfffff98112e8b3d0)
 ```
 
- Use debugger commands such as use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to investigate the faulting code.
+Use debugger commands such as use [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) to investigate the faulting code.
 
 Use the `lm t n` to list modules that are loaded in the memory.
 
@@ -216,6 +223,14 @@ The `!pte` and `!pool` command may also be used to examine memory.
 
 Use `!memusage` and to examine the general state of the system memory. 
 
+For more information on Windows memory usage, see [Windows Internals 7th Edition Part 1](/sysinternals/resources/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
+
 **Driver Verifier**
 
-Driver Verifier is a tool that runs in real time to examine the behavior of drivers. For example, Driver Verifier checks the use of memory resources, such as memory pools. If it sees errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. The driver verifier manager is built into Windows and is available on all Windows PCs. To start the driver verifier manager, type *Verifier* at a command prompt. You can configure which drivers you would like to verify. The code that verifies drivers adds overhead as it runs, so try and verify the smallest number of drivers as possible. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
+Driver Verifier is a tool that runs in real time to examine the behavior of drivers. For example, Driver Verifier checks the use of memory resources, such as memory pools. If it sees errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. The driver verifier manager is built into Windows and is available on all Windows PCs. Use Driver Verifier to track down the specific cause of a failure.
+
+To start the driver verifier manager, type *Verifier* at a command prompt. You can configure which drivers you would like to verify. The code that verifies drivers adds overhead as it runs, so try and verify the smallest number of drivers as possible. If a faulting driver was identified, select it.  For more information, see [Driver Verifier](../devtest/driver-verifier.md).
+
+## See also
+
+[Bug Check Code Reference](bug-check-code-reference2.md)

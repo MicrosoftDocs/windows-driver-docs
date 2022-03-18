@@ -42,7 +42,7 @@ Run `!rcdrkd.rcdrlogdump UcmUcsiCx` for more information on the cause of this fa
 For more information on analyzing this bug check, see this blog post - [Debugging UCSI firmware failures](https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/Debugging-UCSI-firmware-failures/ba-p/283226).
 
 
-## See Also-
+## See Also
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

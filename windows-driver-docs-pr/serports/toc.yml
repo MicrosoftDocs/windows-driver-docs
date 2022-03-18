@@ -139,26 +139,17 @@
     href: registry-settings-for-serenum.md
   - name: "COM Port Database"
     href: com-port-database.md
-  - name: "Installing Serial Devices"
+  - name: "Programming Serial Devices Installation"
 # Auto-expanded node
     items: 
-    - name: "Installing Serial Devices"
+    - name: "Programming Serial Device Installation"
       href: installing-serial-devices.md
-    - name: "Installing Serial Ports and COM Ports"
-# Auto-expanded node
-      items: 
-      - name: "Installing Serial Ports and COM Ports"
-        href: installing-serial-ports-and-com-ports.md
-      - name: "Installing Plug and Play Serial Ports and COM Ports"
-        href: installing-plug-and-play-serial-ports-and-com-ports.md
-      - name: "Installing Legacy COM Ports"
-        href: installing-legacy-com-ports.md
-    - name: "Installing an Advanced Properties Page for a COM Port"
+    - name: "Programming Installation of Serial Ports and COM Ports"
+      href: installing-serial-ports-and-com-ports.md
+    - name: "Programming Installation for Plug and Play Serial Ports and COM Ports"
+      href: installing-plug-and-play-serial-ports-and-com-ports.md
+    - name: "Create an Advanced Properties Page for a COM Port"
       href: installing-an-advanced-properties-page-for-a-com-port.md
-    - name: "Installing Serial Devices that Use a 16550 UART-Compatible Interface"
-      href: installing-serial-devices-that-use-a-16550-uart-compatible-interface.md
-    - name: "Installing Serenum Devices"
-      href: installing-serenum-devices.md
 - name: "Serial IRP major function codes"
   href: serial-irp-major-function-codes.md
 - name: "Serial Port Console Redirection Table (SPCR)"

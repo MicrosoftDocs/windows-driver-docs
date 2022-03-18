@@ -1,7 +1,7 @@
 ---
 title: BCDEdit /set
 description: The BCDEdit /set command sets a boot entry option value in the Windows boot configuration data store (BCD) for Windows.
-ms.date: 01/25/2021
+ms.date: 03/16/2022
 keywords: ["BCDEdit /set Driver Development Tools"]
 topic_type:
 - apiref
@@ -17,7 +17,7 @@ ms.custom: contperf-fy21q2
 The **BCDEdit /set** command sets a boot entry option value in the Windows boot configuration data store (BCD). Use the **BCDEdit /set** command to configure specific boot entry elements, such as kernel debugger settings, memory options, or options that enable test-signed kernel-mode code or load alternate hardware abstraction layer (HAL) and kernel files. To remove a boot entry option, use the [**BCDEdit /deletevalue**](bcdedit--deletevalue.md) command.
 
 > [!CAUTION]
-> Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using the **BCDEdit /set** command could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings.
+> Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using the **BCDEdit /set** command could render your computer inoperable. As an alternative, use the Startup settings or the System Configuration utility (MSConfig.exe) to change boot settings.
 
 > [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
@@ -142,7 +142,7 @@ bcdedit /set {current} onetimeadvancedoptions on
 **bootuxdisabled** \[ **on** | **off** \]  
 Disables boot graphics.
 
-**graphicsmodedisabled** \[ **on** | **off** \]    
+**graphicsmodedisabled** \[ **on** | **off** \]
 Indicates whether graphics mode is disabled and boot applications must use text mode display.
 
 **graphicsresolution**  
@@ -151,19 +151,32 @@ Defines the graphics resolution, 1024x768, 800x600,1024x600, etc.
 **highestmode** \[ **on** | **off** \]  
 Enables boot applications to use the highest graphical mode exposed by the firmware.
 
-**novga** \[ **on** | **off** \]  
-Disables the use of VGA modes entirely.
-
-**vga** \[ **on** | **off** \]  
-Forces the use of the VGA display driver.
 
 ## Hardware Abstraction Layer (HAL) & KERNEL
 
 **hal** *file*  
 Directs the operating system loader to load an alternate HAL file. The specified file must be located in the %SystemRoot%\\system32 directory.
 
+**halbreakpoint** \[ **yes** | **no** \]  
+Enables the special hardware abstraction layer (HAL) breakpoint.
+
 **kernel** *file*  
 Directs the operating system loader to load an alternate kernel. The specified file must be located in the %SystemRoot%\\system32 directory.
+
+**useplatformclock** \[ **yes** | **no** \]  
+Forces the use of the platform clock as the system's performance counter.
+
+> [!NOTE]
+> This option should only be used for debugging.
+
+**forcelegacyplatform** \[ **yes** | **no** \]  
+Forces the OS to assume the presence of legacy PC devices like CMOS and keyboard controllers.
+
+> [!NOTE]
+> This option should only be used for debugging.
+
+**tscsyncpolicy** \[ **Default** | **Legacy** | **Enhanced** \]  
+Controls the times stamp counter synchronization policy. This option should only be used for debugging. Can be Default, Legacy or Enhanced.
 
 ## Verification Settings
 
@@ -192,7 +205,7 @@ Enables, disables, and configures Data Execution Prevention (DEP), a set of hard
 ## Processor Settings
 
 **groupsize** *maxsize*  
-Sets the maximum number of logical processors in a single processor group, where *maxsize* is any power of 2 between 1 and 64 inclusive. By default, processor groups have a maximum size of 64 logical processors. You can use this boot configuration setting to override the size and makeup of a computer's processor groups for testing purposes. [Processor groups](/windows/win32/procthread/processor-groups) provide support for computers with greater than 64 logical processors. This boot option is available on 64-bit versions of Windows 7 and Windows Server 2008 R2 and later versions. This boot option has no effect on the 32-bit versions of Windows 7.
+Sets the maximum number of logical processors in a single processor group, where *maxsize* is any power of 2 between 1 and 64 inclusive. Must be an integer of power of 2. By default, processor groups have a maximum size of 64 logical processors. You can use this boot configuration setting to override the size and makeup of a computer's processor groups for testing purposes. [Processor groups](/windows/win32/procthread/processor-groups) provide support for computers with greater than 64 logical processors. This boot option is available on 64-bit versions of Windows 7 and Windows Server 2008 R2 and later versions. This boot option has no effect on the 32-bit versions of Windows 7.
 
 Use the **groupsize** option if you want to force multiple groups and the computer has 64 or fewer active logical processors. For more information about using this option, see [Boot Parameters to Test Drivers for Multiple Processor Group Support](./boot-parameters-to-test-drivers-for-multiple-processor-group-support.md).
 
@@ -238,7 +251,7 @@ Enables or disables Physical Address Extension (PAE). When PAE is enabled, the s
 
 The **pae** parameter is valid only on boot entries for 32-bit versions of Windows that run on computers with x86-based and x64-based processors. On 32-bit versions of Windows (prior to Windows 8) , PAE is disabled by default. However, Windows automatically enables PAE when the computer is configured for hot-add memory devices in memory ranges beyond the 4 GB region, as defined by the Static Resource Affinity Table (SRAT). *Hot-add memory* supports memory devices that you can add without rebooting or turning off the computer. In this case, because PAE must be enabled when the system starts, it is enabled automatically so that the system can immediately address extended memory that is added between restarts. Hot-add memory is supported only on Windows Server 2008, Datacenter Edition; Windows Server 2008 for Itanium-Based Systems; and on the datacenter and enterprise editions of all later versions of Windows Server. Moreover, for versions of Windows prior to Windows Server 2008, hot-add memory is supported only on computers with an ACPI BIOS, an x86 processor, and specialized hardware. For Windows Server 2008 and later versions of Windows Server, it is supported for all processor architectures.
 
-On a computer that supports hardware-enabled Data Execution Prevention (DEP) and is running a 32-bit version of the Windows operating system that supports DEP, PAE is automatically enabled when DEP is enabled and, on all 32-bit versions of the Windows operating system, except Windows Server 2003 with SP1, PAE is disabled when you disable DEP. To enable PAE when DEP is disabled, you must enable PAE explicitly, by using **/set nx AlwaysOff** and **/set pae ForceEnable**. For more information about DEP, see [Boot Parameters to Configure DEP and PAE](./boot-parameters-to-configure-dep-and-pae.md).
+On a computer that supports hardware-enabled Data Execution Prevention (DEP) and is running a 32-bit version of the Windows operating system that supports DEP, PAE is automatically enabled when DEP is enabled and, on all 32-bit versions of the Windows operating system, PAE is disabled when you disable DEP. To enable PAE when DEP is disabled, you must enable PAE explicitly, by using **/set nx AlwaysOff** and **/set pae ForceEnable**. For more information about DEP, see [Boot Parameters to Configure DEP and PAE](./boot-parameters-to-configure-dep-and-pae.md).
 
 For more information about using the **pae** parameter and the other parameters that affect PAE configuration, see [Boot Parameters to Configure DEP and PAE](./boot-parameters-to-configure-dep-and-pae.md).
 
@@ -260,6 +273,53 @@ For example, the following command sets the physical address limit at 1 GB. You 
 bcdedit /set {49916baf-0e08-11db-9af4-000bdbd316a0} truncatememory 0x40000000
 ```
 
+## VESA, PCI, VGA, and TPM
+
+**usefirmwarepcisettings** \[ **yes** | **no** \]  
+Enables or disables the use of BIOS-configured peripheral component interconnect (PCI) resources.
+
+**msi** \[ **Default** | **ForceDisable** \]  
+Can be Default or ForceDisable.
+
+**vga** \[ **on** | **off** \]  
+Forces the use of the VGA display driver.
+
+**novga** \[ **on** | **off** \]  
+Disables the use of VGA modes entirely.
+
+**tpmbootentropy** \[ **default** | **ForceEnable** | **ForceDisable**\]  
+Determines whether entropy is gathered from the trusted platform module (TPM) to help seed the random number generator in the operating system.
+
+## Processors and APICs
+
+**clustermodeaddressing** \[ **integer** \]  
+Defines the maximum number of processors to include in a single Advanced Programmable Interrupt Controller (APIC) cluster.
+
+**configflags** \[ **integer** \]  
+Specifies processor-specific configuration flags.
+
+**maxproc** \[ **yes** | **no** \]  
+Reports the maximum number of processors in the system.
+
+**numproc** \[ **integer** \]  
+Uses only the specified number of processors.
+
+**onecpu** \[ **yes** | **no** \]  
+Forces only the boot CPU to be used.
+
+**restrictapicluster** \[ **integer** \]  
+Defines the largest APIC cluster number to be used by the system.
+
+**usephysicaldestination** \[ **yes** | **no** \]  
+Forces the use of the physical APIC.
+
+**uselegacyapicmode** \[ **yes** | **no** \]  
+Forces legacy APIC mode, even if the processors and chipset support extended APIC mode.
+
+**x2apicpolicy** \[ **enable** | **disable** | **default** \]  
+Enables or disables the use of extended APIC mode, if supported. The system defaults to using extended APIC mode if it is available. Can be Enabled, Disabled or Default.
+
+
 ## Additional Settings
 
 **disabledynamictick** \[ **yes** | **no** \]  
@@ -268,32 +328,8 @@ Enables and disables dynamic timer tick feature.
 > [!NOTE]
 > This option should only be used for debugging.
 
-**forcelegacyplatform** \[ **yes** | **no** \]  
-Forces the OS to assume the presence of legacy PC devices like CMOS and keyboard controllers.
-
-> [!NOTE]
-> This option should only be used for debugging.
-
 **pciexpress** \[ **default** | **forcedisable**\]  
 Enables or disables PCI Express functionality. If the computer platform supports the PCI Express features and the ACPI \_OSC method grants control of the features to the operating system, Windows enables the advanced features through the PCI Express Native Control feature (this is the default). Use the **forcedisable** option to override the advanced PCI Express features and use legacy PCI Express behavior. For more information, see [Enabling PCI Express Native Control in Windows](/previous-versions/windows/hardware/design/dn631753(v=vs.85)).
-
-**tpmbootentropy** \[ **default** | **ForceEnable** | **ForceDisable**\]  
-Determines whether entropy is gathered from the trusted platform module (TPM) to help seed the random number generator in the operating system.
-
-**tscsyncpolicy** \[ **Default** | **Legacy** | **Enhanced** \]  
-Controls the times stamp counter synchronization policy. This option should only be used for debugging.
-
-**usefirmwarepcisettings** \[ **yes** | **no** \]  
-Enables or disables the use of BIOS-configured peripheral component interconnect (PCI) resources.
-
-**useplatformclock** \[ **yes** | **no** \]  
-Forces the use of the platform clock as the system's performance counter.
-
-> [!NOTE]
-> This option should only be used for debugging.
-
-**uselegacyapicmode** \[ **yes** | **no** \]  
-Used to force legacy APIC mode, even if the processors and chipset support extended APIC mode.
 
 **useplatformtick** \[ **yes** | **no** \]  
 Forces the clock to be backed by a platform source, no synthetic timers are allowed. The option is available starting in Windows 8 and Windows Server 2012.
@@ -304,8 +340,6 @@ Forces the clock to be backed by a platform source, no synthetic timers are allo
 **xsavedisable** \[ **0** | **1** \]  
 When set to a value other than zero (0), disables XSAVE processor functionality in the kernel.
 
-**x2apicpolicy** \[ **enable** | **disable** \]  
-Enables or disables the use of extended APIC mode, if supported. The system defaults to using extended APIC mode if it is available.
 
 ## Debugger Settings
 
@@ -324,10 +358,10 @@ Use the **BCDEdit / hypervisorsettings** option to set or display the hypervisor
 **hypervisordebug** \[ **On** | **Off** \]  
 Controls whether the hypervisor debugger is enabled.
 
-## Hypervisor Settings
+**hypervisordebugtype** \[ **SERIAL** | **1394** | **NET** \] 
+Can be SERIAL, 1394, or NET. For more infomation, see [BCDEdit /hypervisorsettings](bcdedit--hypervisorsettings.md).
 
-**hypervisoriommupolicy** \[ **default** | **enable** | **disable**\]  
-Controls whether the hypervisor uses an Input Output Memory Management Unit (IOMMU).
+## Hypervisor Settings
 
 **hypervisorlaunchtype** \[ **Off** | **Auto** \]  
 Controls the hypervisor launch options. If you are setting up a debugger to debug Hyper-V on a target computer, set this option to **Auto** on the target computer. For more information, see [Create a Virtual Machine with Hyper-V](/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine).
@@ -347,11 +381,28 @@ Specifies the total number of virtual processors in the root partition that can 
 **hypervisoruselargevtlb** \[ **yes** | **no**\]  
 Increases virtual Translation Lookaside Buffer (TLB) size.
 
-## Emergency Management Services
+**hypervisoriommupolicy** \[ **default** | **enable** | **disable**\]  
+Controls whether the hypervisor uses an Input Output Memory Management Unit (IOMMU).
 
-The BCDEdit /ems option enables or disables Emergency Management Services (EMS) for the specified operating system boot entry. For more information, see [BCDEdit /ems](bcdedit--ems.md).
+## Drivers and System Root
+
+**driverloadfailurepolicy** \[ **Fatal** | **UseErrorControl**\]  
+Can be Fatal or UseErrorControl.
+
+**osdevice** \[ **device**\]  
+Defines the device that contains the system root.
+
+**systemroot** \[ **string**\]  
+Defines the path to the system root.
+
+**ems** \[ **On** | **Off** \]  
+Enables kernel Emergency Management Services. The BCDEdit /ems option enables or disables kernel Emergency Management Services (EMS) for the specified operating system boot entry. For more information, see [BCDEdit /ems](bcdedit--ems.md).
 
 The BCDEdit /emssettings option sets the global Emergency Management Services (EMS) settings for the computer. For more information, see  For more information, see [BCDEdit /emssettings](bcdedit--emssettings.md).
+
+## Virtual Secure Mode
+**vmslaunchtype** \[ **Off** | **Auto**\]  
+Controls the Virtual Secure Mode launch type. Can be Off or Auto. For more information, see [Manage Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage).
 
 ## Event Logging
 
@@ -385,7 +436,7 @@ DTrace (DTrace.exe) is a command-line tool that displays system information and 
 
 **Minimum supported server**: Windows Server 2008
 
-## See also
+## Related topics
 
 - [BCDEdit Options Reference](bcd-boot-options-reference.md)
 - [BCDEdit /deletevalue](bcdedit--deletevalue.md)

@@ -46,7 +46,7 @@ Additional information is available in the dump's secondary data streams.
 ## Resolution
  
 
-## See Also-
+## See Also
 
 [Troubleshooting Hangs Using Live Dump (Blog)](https://techcommunity.microsoft.com/t5/Failover-Clustering/bg-p/FailoverClustering)
 

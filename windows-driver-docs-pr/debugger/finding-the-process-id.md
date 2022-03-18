@@ -2,7 +2,7 @@
 title: Finding the Process ID
 description: Finding the Process ID
 keywords: ["process, process ID (PID)", "PID (process ID)", "TList, related techniques", "Task Manager"]
-ms.date: 01/29/2021
+ms.date: 03/10/2022
 ms.custom: contperf-fy21q3
 ---
 
@@ -10,15 +10,15 @@ ms.custom: contperf-fy21q3
 
 Each process running in Windows is assigned a unique decimal number called the process ID (PID). This number is used in a number of ways, for example to specify the process when attaching a debugger to it.
 
-This topic describes how you can determine the PID for a given app using Task Manager, the tasklist Windows command, the TList utility, or the debugger.
+This topic describes how you can determine the PID for a given app using Task Manager, the tasklist Windows command, the TList utility, the PowerShell Get-Process command, or the debugger.
 
 ## Task Manager
 
 Task Manager can be opened in a number of ways, but the simplest is to select Ctrl+Alt+Delete, and then select **Task Manager**.
 
-In Windows 10, first click **More details** to expand the information displayed.  From the **Processes** tab, select the **Details** tab to see the process ID listed in the *PID* column.
+In Windows, first click **More details** to expand the information displayed.  From the **Processes** tab, select **Details** to see the process ID listed in the *PID* column.
 
-![partial screen shot of task manager in Windows 10, showing process numbers, sorted by user name.](images/process-id-task-manager-windows-10.png)
+![partial screen shot of task manager in Windows 11, showing process numbers, sorted by user name.](images/process-id-task-manager-windows-11.png)
 
 Click on any column name to sort. You can right click a process name to see more options for a process.
 
@@ -93,6 +93,10 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 
 For more information, see [Get-Process](/powershell/module/microsoft.powershell.management/get-process).
 
-## CSRSS and user-mode drivers
+## Additional resources
 
-To debug a user-mode driver running on another computer, debug the Client Server Run-Time Subsystem (CSRSS) process. For more information, see [Debugging CSRSS](debugging-csrss.md).
+To learn more about Windows internals (including memory usage, context, threads, and processes), review additional resources, such as [*Windows Internals*](/sysinternals/resources/windows-internals) by Mark Russinovich, David Solomon, and Alex Ionescu.
+
+
+
+

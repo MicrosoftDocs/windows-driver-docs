@@ -2,7 +2,7 @@
 title: Bug Check 0x9F DRIVER_POWER_STATE_FAILURE
 description: This bug check has a value of 0x0000009F. This bug check indicates that the driver is in an inconsistent or invalid power state.
 keywords: ["Bug Check 0x9F DRIVER_POWER_STATE_FAILURE", "DRIVER_POWER_STATE_FAILURE"]
-ms.date: 05/23/2017
+ms.date: 03/10/2022
 topic_type:
 - apiref
 api_name:
@@ -22,81 +22,28 @@ The DRIVER\_POWER\_STATE\_FAILURE bug check has a value of 0x0000009F. This bug 
 
 Parameter 1 indicates the type of violation.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Parameter 1</th>
-<th align="left">Parameter 2</th>
-<th align="left">Parameter 3</th>
-<th align="left">Parameter 4</th>
-<th align="left">Cause</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>0x1</p></td>
-<td align="left"><p>The device object</p></td>
-<td align="left"><p>Reserved</p></td>
-<td align="left"><p>Reserved</p></td>
-<td align="left"><p>The device object that is being freed still has an outstanding power request that it has not completed.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0x2</p></td>
-<td align="left"><p>The target device's device object, if it is available</p></td>
-<td align="left"><p>The device object</p></td>
-<td align="left"><p>The driver object, if it is available</p></td>
-<td align="left"><p>The device object completed the I/O request packet (IRP) for the system power state request, but it did not call <strong>PoStartNextPowerIrp</strong>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>0x3</p></td>
-<td align="left"><p>The physical device object (PDO) of the stack</p></td>
-<td align="left"><p>nt!TRIAGE_9F_POWER.</p></td>
-<td align="left"><p>The blocked IRP</p></td>
-<td align="left"><p>A device object has been blocking an IRP for too long a time.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0x4</p></td>
-<td align="left"><p>Time-out value, in seconds.</p></td>
-<td align="left"><p>The thread currently holding onto the Plug-and-Play (PnP) lock.</p></td>
-<td align="left"><p>nt!TRIAGE_9F_PNP.</p></td>
-<td align="left"><p>The power state transition timed out waiting to synchronize with the PnP subsystem.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>0x5</p></td>
-<td align="left"><p>Physical Device Object of the stack</p></td>
-<td align="left"><p></p>The POP_FX_DEVICE object</td>
-<td align="left"><p>Reserved - 0</p></td>
-<td align="left"><p>The device failed to complete a directed power transition within the required amount of time.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0x6</p></td>
-<td align="left"><p>The POP_FX_DEVICE object</p></td>
-<td align="left"><p>Indicates if this was a Directed Power Down(1) or Power Up(0) completion.</p></td>
-<td align="left"><p>Reserved - 0</p></td>
-<td align="left"><p></p>The device did not complete its Directed Power Transition callback successfully.</td>
-</tr>
-<tr class="odd">
-<td align="left"><p>0x500</p></td>
-<td align="left"><p>Reserved</p></td>
-<td align="left"><p>The target device's device object, if available</p></td>
-<td align="left"><p>Device object</p></td>
-<td align="left"><p>The device object completed the IRP for the system power state request, but it did not call <strong>PoStartNextPowerIrp</strong>.</p></td>
-</tr>
-</tbody>
-</table>
+|Parameter 1|Parameter 2|Parameter 3|Parameter 4|Cause|
+|---------- |---------- |---------- |---------- |---- |
+|0x1|The device object|Reserved|Reserved|The device object that is being freed still has an outstanding power request that it has not completed.|
+|0x2|The target device's device object, if it is available|The device object|The driver object, if it is available|The device object completed the I/O request packet (IRP) for the system power state request, but it did not call PoStartNextPowerIrp.|
+|0x3|The physical device object (PDO) of the stack|nt!TRIAGE_9F_POWER.|The blocked IRP|A device object has been blocking an IRP for too long a time.|
+|0x4|Time-out value, in seconds.|The thread currently holding onto the Plug-and-Play (PnP) lock.|nt!TRIAGE_9F_PNP.|The power state transition timed out waiting to synchronize with the PnP subsystem.|
+|0x5|Physical Device Object of the stack|The POP_FX_DEVICE object|Reserved - 0|The device failed to complete a directed power transition within the required amount of time.|
+|0x6|The POP_FX_DEVICE object|Indicates if this was a Directed Power Down(1) or Power Up(0) completion.|Reserved - 0|The device did not complete its Directed Power Transition callback successfully.|
+|0x500|Reserved|The target device's device object, if available|Device object|The device object completed the IRP for the system power state request, but it did not call PoStartNextPowerIrp.|
 
 ## Cause
 
-For a description of the possible causes, see the description of each code in the Parameters section.
+For a description of the possible causes, see the description of each code in the Parameters section. Common causes include:
+
+- Device object freed w/ outstanding uncompleted power request
+- Power state transition timed out
+- Device object blocking an IRP
+- Completed IRP but did not call PoStartNextPowerIrp
 
 ## Resolution
+
+To determine the specific cause and to create a code fix, programming experience and access to the source code of the faulting module is required. 
 
 **Debugging bug check 0x9F when Parameter 1 equals 0x3**
 
@@ -118,6 +65,8 @@ kd>!analyze -v
     Arg3: fffff8000386c3d8, nt!TRIAGE_9F_POWER on Win7 and higher, otherwise the Functional Device Object of the stack
     Arg4: fffffa800ab61bd0, The blocked IRP
 ```
+
+If a driver that is responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use [**dx** (display debugger object model expression)](dx--display-visualizer-variables-.md), a debugger command, to display this: `dx KiBugCheckDriver`.
 
 The nt!TRIAGE\_9F\_POWER structure provides additional bug check information that might help you determine the cause of this bug check. The structure can provide a list of all outstanding power IRPs, a list of all power IRP worker threads, and a pointer to the delayed system worker queue.
 
@@ -296,7 +245,7 @@ To help you determine the cause of the error, consider the following questions:
 
 - Refer to the additional techniques described above under parameter 0x3.
 
-## Remarks---
+## Remarks
 
 If you are not equipped to debug this problem using the techniques described above, you can use some basic troubleshooting techniques.
 
@@ -313,3 +262,12 @@ If you are not equipped to debug this problem using the techniques described abo
 - You can try running the hardware diagnostics supplied by the system manufacturer.
 
 - Check with the manufacturer to see if an updated system ACPI/BIOS or other firmware is available.
+
+
+## <span id="see_also"></span>See also
+
+[Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md)
+
+[Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
+
+[Bug Check Code Reference](bug-check-code-reference2.md)

@@ -41,7 +41,7 @@ The system generated a live dump for analysis of the delay.
 ## Resolution
  
 
-## See Also-
+## See Also
 
 [Troubleshooting Hangs Using Live Dump (Blog)](https://techcommunity.microsoft.com/t5/Failover-Clustering/bg-p/FailoverClustering)
 

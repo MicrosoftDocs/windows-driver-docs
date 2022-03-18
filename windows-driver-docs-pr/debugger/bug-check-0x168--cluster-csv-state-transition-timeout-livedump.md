@@ -53,7 +53,7 @@ A Cluster Shared Volume state transition took too long. The system generated a l
 ## Resolution
  
 
-## See Also-
+## See Also
 
 [Troubleshooting Hangs Using Live Dump (Blog)](https://techcommunity.microsoft.com/t5/Failover-Clustering/bg-p/FailoverClustering)
 

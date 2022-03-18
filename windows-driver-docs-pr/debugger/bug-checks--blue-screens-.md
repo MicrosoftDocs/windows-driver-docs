@@ -2,7 +2,7 @@
 title: Bug Checks (Blue Screens)
 description: This topic covers bug checks (Blue Screens)
 keywords: bug check, blue screen, kernel error, stop error, stop code
-ms.date: 05/23/2017
+ms.date: 03/10/2022
 ---
 
 # Bug Checks (Blue Screens)

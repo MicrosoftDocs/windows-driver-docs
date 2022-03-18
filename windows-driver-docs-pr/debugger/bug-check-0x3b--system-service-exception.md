@@ -2,7 +2,7 @@
 title: Bug Check 0x3B SYSTEM_SERVICE_EXCEPTION
 description: The SYSTEM_SERVICE_EXCEPTION bug check has a value of 0x0000003B. This indicates that an exception happened while executing a routine that transitions from non-privileged code to privileged code.
 keywords: ["Bug Check 0x3B SYSTEM_SERVICE_EXCEPTION", "SYSTEM_SERVICE_EXCEPTION"]
-ms.date: 03/24/2019
+ms.date: 03/14/2022
 topic_type:
 - apiref
 api_name:
@@ -21,41 +21,18 @@ The SYSTEM\_SERVICE\_EXCEPTION bug check has a value of 0x0000003B. This indicat
 
 ## SYSTEM\_SERVICE\_EXCEPTION parameters
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>1</p></td>
-<td align="left"><p>The exception that caused the bug check. </p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>2</p></td>
-<td align="left"><p>The address of the instruction that caused the bug check</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>3</p></td>
-<td align="left"><p>The address of the context record for the exception that caused the bug check</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4</p></td>
-<td align="left"><p>0</p></td>
-</tr>
-</tbody>
-</table>
-
+|Parameter|Description|
+|--- |--- |
+|1|The exception that caused the bug check.|
+|2|The address of the instruction that caused the bug check|
+|3|The address of the context record for the exception that caused the bug check|
+|4|0 (Not used)|
 
 ## Cause
 
-This stop code indicates that executing code had an exception, and the thread that was below it is a system thread.
+This stop code indicates that executing code had an exception, and the thread that was below it, is a system thread.
+
+This can happen because a NULL pointer dereferenced​ or a random incorrect address was accessed. This in turn can be caused my memory being freed prematurely​, or data structure corruption.
 
 The exception information that is returned in parameter 1 is described in [NTSTATUS values](/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55). The exception codes are defined in *ntstatus.h*, a header file provided by the [Windows Driver Kit](../index.yml). (For more info, see [Header files in the Windows Driver Kit](../gettingstarted/header-files-in-the-windows-driver-kit.md)). 
 
@@ -70,6 +47,8 @@ Common exception codes include:
     A memory access violation occurred. (Parameter 4 of the bug check is the address that the driver attempted to access.)
 
 ## Resolution
+
+To determine the specific cause and to create a code fix, programming experience and access to the source code of the faulting module is required. 
 
 To debug this problem, use the [**.cxr** (display context record)](-cxr--display-context-record-.md) command with Parameter 3, and then use [**kb** (display stack backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md). You can also set a breakpoint in the code that precedes this stop code and attempt to single-step forward into the faulting code. Use the [**u**, **ub**, **uu** (unassemble)](u--unassemble-.md) commands to see the assembly program code.
 
@@ -93,9 +72,18 @@ For more information about WinDbg and **!analyze**, see the following topics:
 
  - [Analyzing a kernel-mode dump file with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
+For more information on Windows memory usage, see [Windows Internals 7th Edition Part 1](/sysinternals/resources/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
+
+
 ### Identify the driver
 
 If a driver that is responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use [**dx** (display debugger object model expression)](dx--display-visualizer-variables-.md), a debugger command, to display this: `dx KiBugCheckDriver`.
+
+
+```dbgcmd
+kd> dx KiBugCheckDriver
+KiBugCheckDriver                 : 0xffffe10b9991e3e8 : "nvlddmkm.sys" [Type: _UNICODE_STRING *]
+```
 
 Use the [**!error**](-error.md) extension to display information about the exception code in parameter 1. Following is an example of output from **!error**.
 
@@ -132,3 +120,12 @@ For general troubleshooting of Windows bug check codes, follow these suggestions
 -   If you recently added hardware to the system, try removing or replacing it. Or check with the manufacturer to see if any patches are available.
 
 For additional general troubleshooting information, see [Blue screen data](blue-screen-data.md).
+
+
+## See Also
+
+[Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md)
+
+[Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
+
+[Bug Check Code Reference](bug-check-code-reference2.md)

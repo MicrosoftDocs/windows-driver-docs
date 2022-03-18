@@ -1,14 +1,17 @@
 ---
-title: Installing Serial Ports and COM Ports
-description: Installing Serial Ports and COM Ports
+title: Programming Installation of Serial Ports and COM Ports
+description: Programming Installation of Serial Ports and COM Ports
 keywords:
 - serial ports WDK
 - COM ports WDK serial devices
 - Serial driver WDK , COM ports
-ms.date: 04/20/2017
+ms.date: 03/17/2022
 ---
 
-# Installing Serial Ports and COM Ports
+# Programming Installation of Serial Ports and COM Ports
+
+> [!NOTE]
+> This topic describes programming traditional COM ports. For information on USB attached serial ports, see [USB serial driver (Usbser.sys)](/windows-hardware/drivers/usbcon/usb-driver-installation-based-on-compatible-ids).
 
 For most devices, the Ports [device setup class](../install/overview-of-device-setup-classes.md) and the Serial function driver provide the functionality required to operate serial ports and COM ports. To install serial ports and COM ports using these system-supplied components, do the following:
 
@@ -18,8 +21,6 @@ For most devices, the Ports [device setup class](../install/overview-of-device-s
 
 For more information about installing serial ports and COM ports using the Ports device setup class and the Serial function driver, see the following topics:
 
-[Installing Plug and Play Serial Ports and COM Ports](installing-plug-and-play-serial-ports-and-com-ports.md)
-
-[Installing Legacy COM Ports](installing-legacy-com-ports.md)
+[Programming Installation for Plug and Play Serial Ports and COM Ports](installing-plug-and-play-serial-ports-and-com-ports.md)
 
 If you do a custom installation of a COM port, you must comply with the COM port requirements that are defined in [Configuration of COM Ports](configuration-of-com-ports.md).

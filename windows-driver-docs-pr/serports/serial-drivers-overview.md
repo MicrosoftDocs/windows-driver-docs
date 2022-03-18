@@ -1,7 +1,7 @@
 ---
 title: Serial Controller Drivers Overview
 description: All versions of Windows provide driver support for serial controller devices.
-ms.date: 04/20/2017
+ms.date: 03/17/2022
 ---
 
 # Serial Controller Drivers Overview
@@ -16,9 +16,9 @@ The Windows driver samples repository on GitHub contains the source code for the
 
 ## SerCx and SerCx2
 
-Starting with Windows 8, SerCx is a system-supplied component that supports serial communication between integrated circuits on a printed circuit board. SerCx is an extension to the Kernel-Mode Driver Framework (KMDF). This extension simplifies the development of custom drivers for serial controllers. SerCx assists an extension-based serial controller driver by handling many of the processing tasks that are common to serial controllers. This driver communicates with SerCx through the [SerCx device driver interface](/windows-hardware/drivers/ddi/index).
+Starting with Windows 8, SerCx is a system-supplied component that supports serial communication between integrated circuits on a printed circuit board. SerCx is an extension to the Kernel-Mode Driver Framework (KMDF). This extension simplifies the development of custom drivers for serial controllers. SerCx assists an extension-based serial controller driver by handling many of the processing tasks that are common to serial controllers. This driver communicates with SerCx through the [SerCx device driver interface](/windows-hardware/drivers/ddi/_serports).
 
-Starting with Windows 8.1, SerCx is superceded by SerCx2. SerCx2 has many improvements over SerCx to reduce the size and complexity of serial controller drivers. In particular, SerCx2 relieves the serial controller driver of the processing work required to manage time-outs, and to coordinate I/O transactions that compete for access to the serial controller. As a result, the serial controller driver is smaller and simpler. The hardware vendor for the serial controller supplies an extension-based serial controller driver that manages the hardware-specific functions in the serial controller, and that relies on SerCx2 to perform generic serial-controller tasks. This driver communicates with SerCx2 through the [SerCx2 device driver interface](/windows-hardware/drivers/ddi/index).
+Starting with Windows 8.1, SerCx is superceded by SerCx2. SerCx2 has many improvements over SerCx to reduce the size and complexity of serial controller drivers. In particular, SerCx2 relieves the serial controller driver of the processing work required to manage time-outs, and to coordinate I/O transactions that compete for access to the serial controller. As a result, the serial controller driver is smaller and simpler. The hardware vendor for the serial controller supplies an extension-based serial controller driver that manages the hardware-specific functions in the serial controller, and that relies on SerCx2 to perform generic serial-controller tasks. This driver communicates with SerCx2 through the [SerCx2 device driver interface](/windows-hardware/drivers/ddi/_serports).
 
 For more information about SerCx2, see [Using Version 2 of the Serial Framework Extension (SerCx2)](using-version-2-of-the-serial-framework-extension.md).
 
@@ -26,25 +26,7 @@ For general information about the driver framework, see [Using WDF to Develop a 
 
 ## In this section
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="serial-i-o-request-interface.md" data-raw-source="[Serial I/O Request Interface](serial-i-o-request-interface.md)">Serial I/O Request Interface</a></p></td>
-<td><p>To control a peripheral device that is connected to a port on a serial controller, a client application or peripheral device driver sends I/O requests to the port.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="differences-between-sercx2-and-serial-sys.md" data-raw-source="[Differences Between SerCx2.sys and Serial.sys](differences-between-sercx2-and-serial-sys.md)">Differences Between SerCx2.sys and Serial.sys</a></p></td>
-<td><p>Although the inbox Sercx2.sys and Serial.sys driver components both implement the <a href="serial-i-o-request-interface.md" data-raw-source="[serial I/O request interface](serial-i-o-request-interface.md)">serial I/O request interface</a>, these components are not interchangeable. They are designed to meet different sets of requirements.</p></td>
-</tr>
-</tbody>
-</table>
+|Topic-|Description|
+|----- |---------- |
+|[Serial I/O Request Interface](serial-i-o-request-interface.md)|To control a peripheral device that is connected to a port on a serial controller, a client application or peripheral device driver sends I/O requests to the port.|
+|[Differences Between SerCx2.sys and Serial.sys](differences-between-sercx2-and-serial-sys.md)|Although the inbox Sercx2.sys and Serial.sys driver components both implement the [serial I/O request interface](serial-i-o-request-interface.md), these components are not interchangeable. They are designed to meet different sets of requirements.|

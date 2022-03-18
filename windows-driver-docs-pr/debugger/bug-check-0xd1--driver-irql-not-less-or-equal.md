@@ -2,7 +2,7 @@
 title: Bug Check 0xD1 DRIVER_IRQL_NOT_LESS_OR_EQUAL
 description: The DRIVER_IRQL_NOT_LESS_OR_EQUAL bug check has a value of 0x000000D1. This indicates that a kernel-mode driver attempted to access pageable memory at a process IRQL that was too high.
 keywords: ["Bug Check 0xD1 DRIVER_IRQL_NOT_LESS_OR_EQUAL", "DRIVER_IRQL_NOT_LESS_OR_EQUAL"]
-ms.date: 03/28/2019
+ms.date: 03/14/2022
 topic_type:
 - apiref
 api_name:
@@ -61,6 +61,8 @@ The DRIVER\_IRQL\_NOT\_LESS\_OR\_EQUAL bug check has a value of 0x000000D1. This
 
 ## Cause
 
+To determine the cause requires the Windows debugger, programming experience and access to the source code for the faulting module.
+
 Typically, when this error occurs, a driver has tried to access an address that is pageable (or that is completely invalid) while the interrupt request level (IRQL) was too high. This can be caused by:
 
  - Dereferencing a bad pointer (such as a NULL or freed pointer) while executing at or above DISPATCH_LEVEL.
@@ -80,11 +82,15 @@ Possible causes for the page fault include the following events:
 - The function call was made to a function in another driver, and that driver was unloaded.
 
 - The function was called by using a function pointer that was an invalid pointer.
-
+ 
+For more information on Windows IRQLs, see [Windows Internals 7th Edition Part 1](/sysinternals/resources/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
 
 ## Resolution
 
-If the problem is caused by the driver that you are developing, make sure that the function that was executing at the time of the bug check is (1) not marked as pageable or (2) does not call any other inline functions that could be paged out.
+If the problem is caused by the driver that you are developing, make sure that the function that was executing at the time of the bug check is:
+
+- Not marked as pageable
+- Does not call any other inline functions that could be paged out.
 
 The [**!analyze**](-analyze.md) debugger extension displays information about the bug check and can be helpful in determining the root cause. The following example is output from **!analyze**.
 
@@ -99,6 +105,14 @@ Arg1: fffff808add27150, memory referenced
 Arg2: 0000000000000002, IRQL
 Arg3: 0000000000000000, value 0 = read operation, 1 = write operation
 Arg4: fffff808adc386a6, address which referenced memory
+```
+
+If a driver that is responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**. You can use [**dx** (display debugger object model expression)](dx--display-visualizer-variables-.md), a debugger command, to display this: `dx KiBugCheckDriver`.
+
+
+```dbgcmd
+0: kd> dx KiBugCheckDriver
+KiBugCheckDriver                 : 0xffffc6092de892c8 : "Wdf01000.sys" [Type: _UNICODE_STRING *]
 ```
 
 If a trap frame is available in the dump file, use the [**.trap**](-trap--display-trap-frame-.md) command to set your context to the provided address.

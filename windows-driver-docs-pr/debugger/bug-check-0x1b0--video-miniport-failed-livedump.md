@@ -35,7 +35,7 @@ The DXGKRNL detected a problem and has captured a live dump to collect debug inf
 (This code can never be used for a real bugcheck; it is used to identify live dumps.)
 
 
-## See Also-
+## See Also
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

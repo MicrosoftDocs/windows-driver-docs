@@ -48,7 +48,7 @@ The TTM\_WATCHDOG\_TIMEOUT bug check has a value of 0x000001A0. It indicates tha
 The terminal topology manager detected that for the configured timeouts some device specific operations did not complete.
 
 
-## See Also-
+## See Also
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

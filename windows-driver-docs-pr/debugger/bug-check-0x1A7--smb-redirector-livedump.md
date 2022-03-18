@@ -55,6 +55,6 @@ When this registry key is set and the RDR times out on IO, a livedump will occur
 
 (This code can never be used for a real bugcheck; it is used to identify live dumps.)
 
-## See Also-
+## See Also
 
 [Bug Check Code Reference](bug-check-code-reference2.md)

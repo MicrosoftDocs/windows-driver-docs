@@ -94,7 +94,7 @@ This bugcheck is generated when the kernel detects that critical kernel code or 
 3) A hardware corruption occurred, e.g. failing RAM holding kernel code or data.
 
 
-## See Also-
+## See Also
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

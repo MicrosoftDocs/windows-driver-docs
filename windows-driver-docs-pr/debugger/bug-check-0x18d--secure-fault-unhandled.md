@@ -49,6 +49,6 @@ This bug check indidates that a secure fault originated by the secure kernel cou
 A secure fault originated by the secure kernel could not be handled.
 
 
-## See Also-
+## See Also
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
