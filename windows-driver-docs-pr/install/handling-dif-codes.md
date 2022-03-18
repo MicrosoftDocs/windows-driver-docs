@@ -11,9 +11,8 @@ ms.date: 04/20/2017
 
 # Handling DIF Codes
 
-
-
-
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 *Device installation applications* send [device installation function codes](/previous-versions/ff541307(v=vs.85)) (DIF codes) to installers by calling [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller). This function, in turn, calls the installer's entry point function. For a description of installer entry points, see:
 

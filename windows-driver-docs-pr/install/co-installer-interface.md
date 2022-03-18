@@ -9,6 +9,8 @@ ms.date: 04/20/2017
 
 # Co-installer Interface
 
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 A co-installer's interface consists of an exported entry point function and an associated data structure.
 

@@ -9,6 +9,8 @@ ms.date: 04/20/2017
 
 # Code Example: Finish-Install Actions in a Co-installer
 
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 In this example, a co-installer performs the following operations to support finish-install actions:
 

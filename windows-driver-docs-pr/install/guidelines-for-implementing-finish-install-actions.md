@@ -6,6 +6,8 @@ ms.date: 04/20/2017
 
 # Guidelines for Implementing Finish-Install Actions
 
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 Finish-install actions can be run by an *installer* (a class installer, class co-installer, or device co-installer). In its finish-install actions, an installer can run an executable program, create a process, create a thread, or execute code in the device driver installation finish-install process.
 
