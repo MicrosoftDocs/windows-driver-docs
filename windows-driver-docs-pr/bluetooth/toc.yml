@@ -56,7 +56,7 @@
   items: 
   - name: "Bluetooth FAQ"
     href: bluetooth-faq.yml
-  - name: "Bluetooth Version and Profile Support in Windows 10"
+  - name: "Bluetooth Version and Profile Support in Windows 11"
     href: general-bluetooth-support-in-windows.md
   - name: "Bluetooth Version and Profile Support in Previous Windows Versions"
     href: bluetooth-support-in-previous-windows-versions.md
