@@ -34,6 +34,14 @@ For a display driver that uses the [deinterlacing DDI](deinterlacing-and-frame-r
 
 The [ProcAmp control DDI](procamp-control-processing.md) extends DirectX VA to support ProcAmp control and post processing of video content by graphics device drivers. The DDI maps to the existing DirectDraw and DirectX VA DDI. The DDI is not accessible through the **IAMVideoAccelerator** interface. The ProcAmp control DDI is available in Microsoft DirectX 9.0 and later versions only.
 
-The [Implementation of Current Standards](implementation-of-current-standards.md) topic details the hardware accelerator and software decoder requirements that must be met for the following, motion-compensated video codec standards: ITU-T H.261, MPEG-1, MPEG-2 (H.262), ITU-T H.263, MPEG-4, MPEG-4 AVC (H.264), and VC-1.
+The hardware accelerator and software decoder requirements that must be met for the various motion-compensated video codec standards can be found under the following topics:
+
+- [ITU-T H.261](itu-t-h-261.md)
+- [MPEG-1](mpeg-1.md)
+- [MPEG-2 (H.262)](mpeg-2--h-262-.md)
+- [ITU-T H.263](itu-t-h-263.md)
+- [MPEG-4](mpeg-4.md)
+- [MPEG-4 AVC (H.264)](mpeg-4-avc--h-264-.md)
+- [VC-1](vc-1.md)
 
 There are no tools supplied with DirectX VA. For more information about tools supplied for Windows media support, see the Windows Media Porting Kit.
