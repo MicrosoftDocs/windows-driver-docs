@@ -1,7 +1,7 @@
 ---
 title: DCH Design Principles and Best Practices
 description: Describes DCH principles for Windows drivers.
-ms.date: 04/28/2020
+ms.date: 03/18/2022
 ---
 
 # DCH Design Principles and Best Practices
@@ -20,9 +20,9 @@ There are three design principles to consider for a Windows Driver to be DCH-com
 
 The acronym "DCH" refers to the principles listed above. Please refer to the [DCH-Compliant Driver Package Example](dch-example.md) page to see how a driver sample can apply DCH design principles.
 
-## Overview 
+## Overview
 
-Driver packages that are DCH-compliant contain an INF file and binaries that install and run on [Universal Windows Platform (UWP)-based editions of Windows 10](target-platforms.md). They also install and run on other editions of Windows 10 that share a common set of interfaces.
+Driver packages that are DCH-compliant contain an INF file and binaries that install and run on [Universal Windows Platform (UWP)-based editions of Windows](target-platforms.md). They also install and run on other editions of Windows 10 and 11 that share a common set of interfaces.
 
 DCH-compliant driver binaries can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md), or the Windows Driver Model (WDM).
 
@@ -52,7 +52,7 @@ To create a driver package that follows DCH design principles, follow these step
 
 ## Best practices
 
-*  If you're using the **Windows Driver Kit (WDK) Version 2004** with the latest available Visual Studio, set the **Target Platform** value in the driver project properties to `Windows Driver`.  This automatically adds the correct libraries, and it runs the proper INF validation and ApiValidator as a part of build.  To do this:
+*  If you're using the Windows Driver Kit (WDK) with the latest available Visual Studio, set the **Target Platform** value in the driver project properties to `Windows Driver`.  This automatically adds the correct libraries, and it runs the proper INF validation and ApiValidator as a part of build.  To do this:
 
     1. Open the driver project properties.
     2. Select **Driver Settings**.
