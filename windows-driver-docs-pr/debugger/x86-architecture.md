@@ -2,7 +2,7 @@
 title: x86 Architecture
 description: x86 Architecture
 keywords: ["x86 processor, architecture", "registers, on an x86 processor", "x86 processor, registers", "x86 processor, calling conventions", "x86 processor, data types"]
-ms.date: 05/23/2017
+ms.date: 03/18/2022
 ---
 
 # x86 Architecture
@@ -220,105 +220,19 @@ In the preceding example, the two-letter codes at the end of the second line are
 
 The following table lists the x86 flags:
 
-Flag Code
-Flag Name
-Value
-Flag Status
-Status Description
-**of**
-
-Overflow Flag
-
-0
-1
-**nvov**
-
-No overflow
-Overflow
-**df**
-
-Direction Flag
-
-0
-1
-**updn**
-
-Direction up
-Direction down
-**if**
-
-Interrupt Flag
-
-0
-1
-**diei**
-
-Interrupts disabled
-Interrupts enabled
-**sf**
-
-Sign Flag
-
-0
-1
-**plng**
-
-Positive (or zero)
-Negative
-**zf**
-
-Zero Flag
-
-0
-1
-**nzzr**
-
-Nonzero
-Zero
-**af**
-
-Auxiliary Carry Flag
-
-0
-1
-**naac**
-
-No auxiliary carry
-Auxiliary carry
-**pf**
-
-Parity Flag
-
-0
-1
-**pepo**
-
-Parity even
-Parity odd
-**cf**
-
-Carry Flag
-
-0
-1
-**nccy**
-
-No carry
-Carry
-**tf**
-
-Trap Flag
-
-If **tf** equals 1, the processor will raise a STATUS\_SINGLE\_STEP exception after the execution of one instruction. This flag is used by a debugger to implement single-step tracing. It should not be used by other applications.
-
-**iopl**
-
-I/O Privilege Level
-
-This is a two-bit integer, with values between zero and 3. It is used by the operating system to control access to hardware. It should not be used by applications.
-
+| Flag Code | Flag Name            | Value | Flag Status | Description                               |
+|-----------|----------------------|-------|-------------|-------------------------------------------|
+| **of**    | Overflow Flag        | 0  1  | **nvov**    | No overflow - Overflow                    |
+| **df**    | Direction Flag       | 0  1  | **updn**    | Direction up - Direction down             |
+| **if**    | Interrupt Flag       | 0  1  | **diei**    | Interrupts disabled -  Interrupts enabled |
+| **sf**    | Sign Flag            | 0  1  | **plng**    | Positive (or zero) -  Negative            |
+| **zf**    | Zero Flag            | 0  1  | **nzzr**    | Nonzero -  Zero                           |
+| **af**    | Auxiliary Carry Flag | 0  1  | **naac**    | No auxiliary carry - Auxiliary carry      |
+| **pf**    | Parity Flag          | 0  1  | **pepo**    | Parity even - Parity odd                  |
+| **cf**    | Carry Flag           | 0 1   | **nccy**    | No carry -  Carry                         |
+| **tf**    | Trap Flag            |       |             |If **tf** equals 1, the processor will raise a STATUS\_SINGLE\_STEP exception after the execution of one instruction. This flag is used by a debugger to implement single-step tracing. It should not be used by other applications. |
+| **iopl**  | I/O Privilege Level  |       |             |I/O Privilege Level This is a two-bit integer, with values between zero and 3. It is used by the operating system to control access to hardware. It should not be used by applications. |
  
-
 When registers are displayed as a result of some command in the Debugger Command window, it is the *flag status* that is displayed. However, if you want to change a flag using the [**r (Registers)**](r--registers-.md) command, you should refer to it by the *flag code*.
 
 In the Registers window of WinDbg, the flag code is used to view or alter flags. The flag status is not supported.

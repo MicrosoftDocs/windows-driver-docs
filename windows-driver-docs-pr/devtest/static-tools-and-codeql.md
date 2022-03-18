@@ -4,7 +4,7 @@ description: Using Static tools and CodeQL on Windows driver source code to disc
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 02/03/2021
+ms.date: 03/18/2022
 ---
 
 # CodeQL and the Static Tools Logo Test
@@ -45,11 +45,11 @@ We will use the [CodeQL command line tools (CLI)](https://codeql.github.com/docs
 ```command
 C:\> mkdir C:\codeql-home
 ```
-
-2. Navigate to the Github [CodeQL Download Page](https://github.com/github/codeql-cli-binaries/releases/tag/v2.4.6)
-3. Download version **2.4.6** of the zip file if you are certifying a driver for the Windows Hardware Compatibility Program in 2021. For example for 64 bit Windows "codeql-win64.zip". 
-4. Unzip the codeql folder in the zip file to a directory, for example,  `C:\codeql-home\codeql\`.
-5. Confirm that the CodeQL command works by displaying the help.
+2. Refer to [Windows Driver Developer Supplemental Tools](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools) for the latest information on the current version of the CodeQL tools. 
+3. Navigate to the Github [CodeQL Download Page](https://github.com/github/codeql-cli-binaries/releases/) for the required release.
+4. Download the zip file if you are certifying a driver for the Windows Hardware Compatibility Program. For example for 64 bit Windows "codeql-win64.zip".
+5. Unzip the codeql folder in the zip file to a directory, for example,  `C:\codeql-home\codeql\`.
+6. Confirm that the CodeQL command works by displaying the help.
 
 ```command
 C:\codeql-home\codeql\>codeql --help
