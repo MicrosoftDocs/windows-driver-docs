@@ -899,16 +899,14 @@
           href: handling-existing-monitor-configurations.md
       - name: "Determining Whether a Platform is Mobile or Desktop"
         href: determining-whether-a-platform-is-mobile-or-desktop.md
-    - name: "Connecting and Configuring Displays"
+    - name: "Interface to connect and configure displays"
 # Auto-expanded node
       items: 
-      - name: "Connecting and Configuring Displays"
+      - name: "Connecting and configuring displays"
         href: connecting-and-configuring-displays.md
       - name: "CCD Concepts"
 # Auto-expanded node
         items: 
-        - name: "CCD Concepts"
-          href: ccd-concepts.md
         - name: "Forced Versus Connected Targets"
           href: forced-versus-connected-targets.md
         - name: "Path Priority Order"
@@ -2284,18 +2282,16 @@
   - name: "DirectX Video Acceleration"
 # Auto-expanded node
     items: 
-    - name: "DirectX Video Acceleration"
+    - name: "About DXVA Version 1.0"
       href: directx-video-acceleration.md
-    - name: "Introduction to DirectX VA"
+    - name: "DirectX VA Support"
 # Auto-expanded node
       items: 
-      - name: "Introduction to DirectX VA"
+      - name: "DXVA v1.0 support overview"
         href: introduction-to-directx-va.md
-      - name: "Implementation of Current Standards"
+      - name: "Standards supported by DXVA v1.0"
 # Auto-expanded node
         items: 
-        - name: "Implementation of Current Standards"
-          href: implementation-of-current-standards.md
         - name: "ITU-T H.261"
           href: itu-t-h-261.md
         - name: "MPEG-1"

@@ -1,80 +1,42 @@
 ---
 title: Upgrading Firmware for an NVMe Device
 description: Updates to the firmware on an NVMe storage device are issued to the miniport driver for that device. 
-ms.date: 04/20/2017
+ms.date: 03/18/2022
 ---
 
 # Upgrading Firmware for an NVMe Device
 
-
 Updates to the firmware on an NVMe storage device are issued to the miniport driver for that device. Function commands for getting firmware information, downloading, and activating firmware images are issued to the miniport.
 
-## <span id="Firmware_upgrade_process"></span><span id="firmware_upgrade_process"></span><span id="FIRMWARE_UPGRADE_PROCESS"></span>Firmware upgrade process
+## Firmware upgrade process
 
+NVMe devices certified for Windows are capable of updating their firmware while the device is in operation. Firmware is updated using the [**IOCTL_SCSI_MINIPORT**](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_miniport) request containing the associated firmware control data formatted in an SRB. The update process involves:
 
-NVMe devices certified for Windows are capable of updating their firmware while the device is in operation. Firmware is updated using the [**IOCTL\_SCSI\_MINIPORT**](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_miniport) request containing with the associated firmware control data formatted in an SRB. The update process involves:
+1. Gather the firmware slot information to determine where to place the update. There are a few considerations in deciding where the firmware update will reside.
 
-1.  Gather the firmware slot information to determine where to place the update. There are a few considerations in deciding where the firmware update will reside.
-
-    -   How many slots are available?
-    -   How many slots can hold an update? Some slots are read-only or hold images that must be retained if the ability to revert to a prior image is desired.
-    -   Which slot contains the current active firmware image (the running firmware)?
+   - How many slots are available?
+   - How many slots can hold an update? Some slots are read-only or hold images that must be retained if the ability to revert to a prior image is desired.
+   - Which slot contains the current active firmware image (the running firmware)?
 
     In order to update the device, a slot is chosen that is writeable and not currently active. All existing image data in the selected slot is overwritten when the update is completed.
 
-2.  Download the new firmware image for a selected slot. Depending on the size of the image, this occurs in a single transfer operation or in successive transfers of multiple portions of the image. A portion of an image is limited by **min**(*Controller Maximum Transfer Size*, 512 KB).
-3.  In order to make the downloaded image the active firmware image, it is assigned to slot. The active firmware slot is then switched from the currently used slot to the slot assigned to the downloaded image. Depending on the type of download and the changes in the firmware image, a reboot of the system may be required. This is determined by the NVMe controller.
+2. Download the new firmware image for a selected slot. Depending on the size of the image, this occurs in a single transfer operation or in successive transfers of multiple portions of the image. A portion of an image is limited by **min**(*Controller Maximum Transfer Size*, 512 KB).
 
-## <span id="Miniport_firmware_control_requests"></span><span id="miniport_firmware_control_requests"></span><span id="MINIPORT_FIRMWARE_CONTROL_REQUESTS"></span>Miniport firmware control requests
+3. In order to make the downloaded image the active firmware image, it is assigned to slot. The active firmware slot is then switched from the currently used slot to the slot assigned to the downloaded image. Depending on the type of download and the changes in the firmware image, a reboot of the system may be required. This is determined by the NVMe controller.
 
+## Miniport firmware control requests
 
-Each function command is set in a **FIRMWARE\_REQUEST\_BLOCK** structure which is included with an [**SRB\_IO\_CONTROL**](/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-_srb_io_control) in the buffer of an [**IOCTL\_SCSI\_MINIPORT**](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_miniport) request. The **ControlCode** member of **SRB\_IO\_CONTROL** is set to **IOCTL\_SCSI\_MINIPORT\_FIRMWARE** to indicate a miniport firmware operation. Each function command has a related information structure located after the **FIRMWARE\_REQUEST\_BLOCK**. The following table lists each function command and the structures included in the system buffer for **IOCTL\_SCSI\_MINIPORT**.
+Each function command is set in a **FIRMWARE_REQUEST_BLOCK** structure which is included with an [**SRB_IO_CONTROL**](/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-_srb_io_control) in the buffer of an [**IOCTL_SCSI_MINIPORT**](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_miniport) request. The **ControlCode** member of **SRB_IO_CONTROL** is set to **IOCTL_SCSI_MINIPORT_FIRMWARE** to indicate a miniport firmware operation. Each function command has a related information structure located after the **FIRMWARE_REQUEST_BLOCK**. The following table lists each function command and the structures included in the system buffer for **IOCTL_SCSI_MINIPORT**.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Function</th>
-<th align="left">Input data</th>
-<th align="left">Output data</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>FIRMWARE_FUNCTION_GET_INFO</p></td>
-<td align="left"><p>SRB_IO_CONTROL +</p>
-<p>FIRMWARE_REQUEST_BLOCK</p></td>
-<td align="left"><p>SRB_IO_CONTROL +</p>
-<p>FIRMWARE_REQUEST_BLOCK +</p>
-<p>STORAGE_FIRMWARE_SLOT_INFO</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>FIRMWARE_FUNCTION_DOWNLOAD</p></td>
-<td align="left"><p>SRB_IO_CONTROL +</p>
-<p>FIRMWARE_REQUEST_BLOCK +</p>
-<p>STORAGE_FIRMWARE_DOWNLOAD</p></td>
-<td align="left"><p>SRB_IO_CONTROL</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>FIRMWARE_FUNCTION_ACTIVATE</p></td>
-<td align="left"><p>SRB_IO_CONTROL +</p>
-<p>FIRMWARE_REQUEST_BLOCK +</p>
-<p>STORAGE_FIRMWARE_ACTIVATE</p></td>
-<td align="left"><p>SRB_IO_CONTROL</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Function | Input data | Output data |
+| -------- | ---------- | ----------- |
+| FIRMWARE_FUNCTION_GET_INFO | SRB_IO_CONTROL + FIRMWARE_REQUEST_BLOCK | SRB_IO_CONTROL + FIRMWARE_REQUEST_BLOCK + STORAGE_FIRMWARE_SLOT_INFO |
+| FIRMWARE_FUNCTION_DOWNLOAD | SRB_IO_CONTROL + FIRMWARE_REQUEST_BLOCK + STORAGE_FIRMWARE_DOWNLOAD | SRB_IO_CONTROL |
+| FIRMWARE_FUNCTION_ACTIVATE | SRB_IO_CONTROL + FIRMWARE_REQUEST_BLOCK + STORAGE_FIRMWARE_ACTIVATE | SRB_IO_CONTROL |
 
 The firmware functions and associated structures are defined in *ntddscsi.h*.
 
-## <span id="Firmware_slot_information"></span><span id="firmware_slot_information"></span><span id="FIRMWARE_SLOT_INFORMATION"></span>Firmware slot information
-
+## Firmware slot information
 
 Firmware images are maintained on the device in locations called slots. It is necessary to find an available slot for the firmware image to reside when it is activated after a download. To find an available slot, an upgrade utility can send an information query to the device to receive the slot information descriptors. The following example function shows how to retrieve the information for all the firmware slots on a selected NVMe device.
 
@@ -204,17 +166,16 @@ Return Value:
 }
 ```
 
-Slot information is returned in an array of **STORAGE\_FIRMWARE\_SLOT\_INFO** structures. Each structure indicates the activation status and availability of the firmware slot. Conditions for availability are:
+Slot information is returned in an array of **STORAGE_FIRMWARE_SLOT_INFO** structures. Each structure indicates the activation status and availability of the firmware slot. Conditions for availability are:
 
--   The **ReadOnly** member is set to 0.
--   The slot is not the active slot indicated by slot number in the **ActiveSlot** member of **STORAGE\_FIRMWARE\_INFO**.
--   The **PendingActiveSlot** member of **STORAGE\_FIRMWARE\_INFO** is set to STORAGE\_FIRMWARE\_INFO\_INVALID\_SLOT.
--   The **PendingActiveSlot** member of **STORAGE\_FIRMWARE\_INFO** is not set to the desired slot.
+- The **ReadOnly** member is set to 0.
+- The slot is not the active slot indicated by slot number in the **ActiveSlot** member of **STORAGE_FIRMWARE_INFO**.
+- The **PendingActiveSlot** member of **STORAGE_FIRMWARE_INFO** is set to STORAGE_FIRMWARE_INFO_INVALID_SLOT.
+- The **PendingActiveSlot** member of **STORAGE_FIRMWARE_INFO** is not set to the desired slot.
 
 Also, if the slot status meets the conditions for availability but the **Info** string contains valid revision data, that is nonzero bytes, then the slot contains a valid firmware image but it may be replaced. All zeros in the **Info** string indicate an empty slot.
 
-## <span id="Example__Firmware_upgrade_-_slot_selection__download__and_activation"></span><span id="example__firmware_upgrade_-_slot_selection__download__and_activation"></span><span id="EXAMPLE__FIRMWARE_UPGRADE_-_SLOT_SELECTION__DOWNLOAD__AND_ACTIVATION"></span>Example: Firmware upgrade - slot selection, download, and activation
-
+## Example: Firmware upgrade - slot selection, download, and activation
 
 An upgrade utility will perform the three steps mentioned earlier to update the firmware in the controller. As an example, the following upgrade routine contains code for each step in the process. The slot discovery step, shown in the *DeviceGetFirmwareInfo* example, is called by the upgrade routine to select an available slot. The image download and activation steps are demonstrated directly following slot selection. Within each step, the use of the corresponding function command is shown.
 
@@ -572,13 +533,10 @@ Exit:
 }
 ```
 
-**Note**  Downloading multiple firmware images simultaneously is not supported. A single firmware download is always followed by a single firmware activation.
-
- 
+> [!NOTE]
+>
+> Downloading multiple firmware images simultaneously is not supported. A single firmware download is always followed by a single firmware activation.
 
 A firmware image already resident in a slot can be reactivated by using just the activate function command with the corresponding slot number.
 
-The **IOCTL\_SCSI\_MINIPORT\_FIRMWARE** control code for SRB I/O control is available starting with Windows 8.1.
-
- 
-
+The **IOCTL_SCSI_MINIPORT_FIRMWARE** control code for SRB I/O control is available starting with Windows 8.1.

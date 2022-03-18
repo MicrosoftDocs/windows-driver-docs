@@ -1,18 +1,18 @@
 ---
-title: Introduction to DirectX VA
+title: DXVA v1.0 support overview
 description: Introduction to DirectX VA
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , about DirectX Video Acceleration
 - Video Acceleration WDK DirectX , about DirectX Video Acceleration
 - VA WDK DirectX , about DirectX Video Acceleration
-ms.date: 04/20/2017
+ms.date: 03/18/2022
 ---
 
-# Introduction to DirectX VA
+# DXVA v1.0 support overview
 
-DirectX Video Acceleration (VA) allows video processing operations that are frequently executed and simple to be performed by a hardware accelerator. Confining less complex video processing operations to the accelerator allows video decoding acceleration to be accomplished for various video standards with minimal customization to the accelerator. Video processing operations that are less frequently executed and more complex, such as bitstream parsing and variable-length decoding (VLD), can be performed on the host CPU.
+DirectX Video Acceleration Version 1.0 (DXVA) allows video processing operations that are frequently executed and simple to be performed by a hardware accelerator. Confining less complex video processing operations to the accelerator allows video decoding acceleration to be accomplished for various video standards with minimal customization to the accelerator. Video processing operations that are less frequently executed and more complex, such as bitstream parsing and variable-length decoding (VLD), can be performed on the host CPU.
 
-The DirectX VA API and corresponding [motion compensation](motion-compensation.md) DDI provide support for the following operations:
+The DXVA Version 1.0 API and corresponding [motion compensation](motion-compensation.md) DDI provide support for the following operations:
 
 - [Alpha blending](directx-va-operations.md) for purposes such as DVD subpicture support.
 
@@ -28,7 +28,7 @@ The information presented here is applicable to both application and device driv
 
 For sample code used for decoding Windows media video format, see the Windows media sample drivers in the Windows Media Porting Kit. The Windows Media Porting Kit is used to convert audio and video to Windows media format.
 
-For support of Windows media format, the Windows Media Video Codec version 9 or higher must be used. Windows Media Video Codecs version 8 supplied with Windows XP do not support DirectX VA.
+For support of Windows media format, the Windows Media Video Codec version 9 or higher must be used.
 
 For a display driver that uses the [deinterlacing DDI](deinterlacing-and-frame-rate-conversion.md), video content must be interlaced and properly marked as interlaced. The video mixing renderer (VMR) uses the VIDEOINFOHEADER2 structure in conjunction with the deinterlacing DDI to deinterlace and perform frame-rate conversion. For more information about the VIDEOINFOHEADER2 structure, see the Windows SDK documentation.
 

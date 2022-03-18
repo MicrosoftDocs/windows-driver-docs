@@ -4,7 +4,7 @@ description: Describes timeout detection and recovery (TDR) for the Windows Disp
 keywords:
 - TDR (timeout detection and recovery) WDK display
 - TDR (timeout detection and recovery) WDK graphics
-ms.date: 10/06/2020
+ms.date: 03/18/2022
 ms.custom: contperf-fy21q2
 ---
 

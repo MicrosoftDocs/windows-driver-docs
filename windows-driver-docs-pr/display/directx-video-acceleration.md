@@ -1,49 +1,27 @@
 ---
-title: DirectX Video Acceleration
+title: About DXVA Version 1.0
 description: DirectX Video Acceleration
 keywords:
-- DirectX Video Acceleration WDK Windows 2000 display
+- DirectX Video Acceleration version 1.0 WDK Windows 2000 display
 - Video Acceleration WDK DirectX
 - motion compensation WDK
 - VA WDK DirectX
 - accelerators WDK DirectX
 - display driver model WDK Windows 2000 , DirectX Video Acceleration
 - Windows 2000 display driver model WDK , DirectX Video Acceleration
-ms.date: 04/20/2017
+ms.date: 03/18/2022
 ---
 
-# DirectX Video Acceleration
+# About DXVA Version 1.0
 
+This section contains information about DirectX Video Acceleration Version 1.0 (DirectX VA or DXVA), which is supported in Windows 2000 or later versions. DXVA Version 2.0 is available starting in Windows Vista.
 
-## <span id="ddk_directx_video_acceleration_gg"></span><span id="DDK_DIRECTX_VIDEO_ACCELERATION_GG"></span>
+DXVA is an application programming interface (API) and a corresponding [motion compensation](motion-compensation.md) device driver interface (DDI) for acceleration of digital video decoding. The following additional DDIs are also provided as part of DirectX VA:
 
+- A [deinterlacing DDI](./deinterlace-ddi.md) for deinterlacing and frame-rate conversion of video content.
 
-This section contains information about Microsoft DirectX Video Acceleration (DirectX VA). This is an application programming interface (API) and a corresponding [motion compensation](motion-compensation.md) device driver interface (DDI) for acceleration of digital video decoding. The following additional DDIs are also provided as part of DirectX VA:
+- A [ProcAmp DDI](./procamp-control-ddi.md) to support ProcAmp control and postprocessing of video content.
 
--   A [deinterlacing DDI](./deinterlace-ddi.md) for deinterlacing and frame-rate conversion of video content.
+- A [COPP DDI](sample-functions-for-copp.md) for protecting video content.
 
--   A [ProcAmp DDI](./procamp-control-ddi.md) to support ProcAmp control and postprocessing of video content.
-
--   A [COPP DDI](sample-functions-for-copp.md) for protecting video content.
-
-Driver writers who are creating DirectX VA drivers for Microsoft Windows XP with Service Pack 1 (SP1) and later should use the *dxva.h* header file. This contains the structures and enumerations used for video acceleration and deinterlacing, and frame-rate conversion.
-
-This section includes the following topics:
-
-[Introduction to DirectX VA](introduction-to-directx-va.md)
-
-[Video Decoding](video-decoding.md)
-
-[Deinterlacing and Frame-Rate Conversion](deinterlacing-and-frame-rate-conversion.md)
-
-[ProcAmp Control Processing](procamp-control-processing.md)
-
-[COPP Processing](copp-processing.md)
-
-[Example Code for DirectX VA Devices](example-code-for-directx-va-devices.md)
-
-[DirectX VA Data Flow Management](directx-va-data-flow-management.md)
-
-[DirectX VA Operations](directx-va-operations.md)
-
-[Defining Accelerator Capabilities](defining-accelerator-capabilities.md)
+The *dxva.h* header file contains the structures and enumerations used for video acceleration and deinterlacing, and frame-rate conversion.
