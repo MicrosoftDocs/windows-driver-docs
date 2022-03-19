@@ -6,44 +6,44 @@ keywords:
 - client-side profile drivers WDK Bluetooth
 - server-side profile drivers WDK Bluetooth
 - INF files WDK Bluetooth
-ms.date: 05/29/2020
+ms.date: 03/18/2022
 ---
 
-# Installing a Bluetooth Device
+# Installing a Bluetooth device
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer experiencing Bluetooth device installation issues see [Pair a Bluetooth device in Windows](https://support.microsoft.com/help/15290/windows-connect-bluetooth-device)
 
 There are two installation types for Bluetooth profile drivers:
 
-- **Client-side installation** for remote devices where the remote device advertises its services and the computer connects to it. Examples include: mouse devices, keyboards, and printers.
+- **Client-side installation** for remote devices where the remote device advertises its services and the computer connects to it. Examples include: mice, keyboards, and printers.
 
-- **Server-side installation** where the computer advertises services and remote devices can connect to the computer to use those services. For example, a vendor could author a server-side installation to enable a PDA to print to a printer attached to the computer.
+- **Server-side installation** where the computer advertises services and remote devices can connect to the computer to use those services. For example, a vendor could author a server-side installation to enable a mobile device to print to a printer attached to the computer.
 
 These two installation types require different installation procedures.
 
-## Installing a Client-side Profile Driver
+## Installing a client-side profile driver
 
 A user that wants to use a Bluetooth-enabled device will bring the device within range of the computer and initiate a connection from the computer to the remote device using the following installation sequence for a client-side profile driver.
 
-1. Launch Bluetooth Devices in **Control Panel** to find all devices within range of the computer.
+1. Select **Add a Bluetooth device** in **Control Panel** to find all devices within range of the computer.
 
 2. Select the device to pair with.
 
-3. Pair (or bond) the device with the local radio. This may or may not involve a PIN exchange.
+3. Pair the device with the local radio. This may or may not involve a PIN exchange.
 
 4. The local radio issues an SDP inquiry to identify the services supported on the remote device.
 
-5. The **Found New Hardware Wizard** searches for appropriate drivers on the local hard disk drive, and/or on Windows Update.
+5. The **Found New Hardware Wizard** searches for appropriate drivers on the local hard disk drive, and on Windows Update.
 
 6. If the **Found New Hardware Wizard** does not find an appropriate driver for the device, it prompts the user to insert the profile driver installation media that contains the profile driver's device setup information file (INF file).
 
-## Installing a Server-side Profile Driver
+## Installing a server-side profile driver
 
 The Bluetooth driver stack supports service GUIDs as defined by the Bluetooth SIG, as well as custom GUIDs (that is, GUIDs that are not defined by the Bluetooth SIG).
 
 > [!NOTE]
-> The **Guidgen.exe** tool provided with the Microsoft Windows SDK can be used to create custom GUIDs.
+> The **guidgen.exe** tool provided with the Microsoft Windows SDK can be used to create custom GUIDs.
 
 A user-mode installation application must be written to expose computer functionality that remote Bluetooth devices can use.
 
@@ -67,7 +67,7 @@ Tp.Privileges[0].Attributes = SE_PRIVILEGE_ENABLED;
 AdjustTokenPrivileges(procToken, FALSE, &tp, sizeof(TOKEN_PRIVILEGES), (PTOKEN_PRIVILEGES) NULL, (PDWORD)NULL)
 ```
 
-## Profile Driver INF file
+## Profile driver INF file
 
 A profile driver's INF file contains information about a Bluetooth device for client-side installation. For a server-side installation, the INF file specifies a device ID that corresponds to the service GUID created by the installation application. All Bluetooth devices are members of the **Bluetooth** class. The Bluetooth class installer (*Bthci.dll*) assists in installing profile drivers.
 
