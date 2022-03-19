@@ -1,22 +1,14 @@
 ---
-description: In this topic, you will learn about how a WinUSB device is recognized in Windows 8.
+description: In this topic, you will learn about how a WinUSB device is recognized by Windows.
 title: WinUSB Device
 ms.date: 03/18/2022
 ---
 
 # WinUSB Device
 
-In this topic, you will learn about how a *WinUSB device* is recognized in Windows 8.
+In this topic, you will learn about how a WinUSB device is recognized by Windows.
 
 The information in this topic applies to you if you are an OEM or independent hardware vendor (IHV) developing a device for which you want to use Winusb.sys as the function driver and want to load the driver automatically without having to provide a custom INF.
-
-- [WinUSB Device](#winusb-device)
-  - [What is a WinUSB device](#what-is-a-winusb-device)
-  - [WinUSB device installation by using the in-box Winusb.inf](#winusb-device-installation-by-using-the-in-box-winusbinf)
-    - [About using the USBDevice class:](#about-using-the-usbdevice-class)
-  - [How to change the device description for a WinUSB device](#how-to-change-the-device-description-for-a-winusb-device)
-  - [How to configure a WinUSB device](#how-to-configure-a-winusb-device)
-  - [Related topics](#related-topics)
 
 ## What is a WinUSB device
 
@@ -94,7 +86,7 @@ The new class property is not supported on earlier versions of Windows. To have 
 
 To identify a USB device as a WinUSB device, the device firmware must have Microsoft OS Descriptors. For information about the descriptors, see the specifications described here: [Microsoft OS Descriptors](microsoft-defined-usb-descriptors.md).
 
-**Supporting extended feature descriptors**
+### Supporting extended feature descriptors
 
 In order for the USB driver stack to know that the device supports extended feature descriptors, the device must define an OS string descriptor that is stored at string index 0xEE. During enumeration, the driver stack queries for the string descriptor. If the descriptor is present, the driver stack assumes that the device contains one or more OS feature descriptors and the data that is required to retrieve those feature descriptors.
 
@@ -102,13 +94,13 @@ The retrieved string descriptor has a **bMS\_VendorCode** field value. The value
 
 For information about how to define an OS string descriptor, see "The OS String Descriptor" in the specifications described here: [Microsoft OS Descriptors](microsoft-defined-usb-descriptors.md).
 
-**Setting the compatible ID**
+### Setting the compatible ID
 
 An extended compat ID OS feature descriptor that is required to match the in-box Winusb.inf and load the WinUSB driver module.
 
 The extended compat ID OS feature descriptor includes a header section followed by one or more function sections depending on whether the device is a composite or non-composite device. The header section specifies the length of the entire descriptor, number of function sections, and version number. For a non-composite device, the header is followed by one function section associated with the device's only interface. The **compatibleID** field of that section must specify "WINUSB" as the field value. For a composite device, there are multiple function sections. The **compatibleID** field of each function section must specify "WINUSB".
 
-**Registering a device interface GUID**
+### Registering a device interface GUID
 
 An extended properties OS feature descriptor that is required to register its device interface GUID. The GUID is required to find the device from an application or service, configure the device, and perform I/O operations.
 
@@ -133,11 +125,9 @@ The extended properties OS feature descriptor includes a header section that is 
 </tbody>
 </table>
 
- 
-
 During device enumeration, The USB driver stack then retrieves the **DeviceInterfaceGUID** value from the extended properties OS feature descriptor and registers the device in the device's hardware key. An application can retrieve the value by using **SetupDiXxx** APIs (See [**SetupDiOpenDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendevregkey)). For more information, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
-**Enabling or disabling WinUSB power management features**
+### Enabling or disabling WinUSB power management features
 
 Before Windows 8, to configure power management features of WinUSB, you had to write registry entry values in the **HW.AddReg** section of your custom INF.
 
@@ -145,15 +135,13 @@ In Windows 8, you can specify power settings in device. You can report values t
 
 For information about power management features of WinUSB, see [WinUSB Power Management](winusb-power-management.md).
 
-| Property name            | Description                                                                                                                                                                                                                                                                                                                               |
-|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DeviceIdleEnabled        | This value is set to 1 to indicate that the device can power down when idle (selective suspend).                                                                                                                                                                                                                                          |
-| DefaultIdleState         | This value is set to 1 to indicate that the device can be suspended when idle by default.                                                                                                                                                                                                                                                 |
-| DefaultIdleTimeout       | This value is set to 5000 in milliseconds to indicate the amount of time in milliseconds to wait before determining that a device is idle.                                                                                                                                                                                                |
+| Property name | Description |
+|--|--|
+| DeviceIdleEnabled | This value is set to 1 to indicate that the device can power down when idle (selective suspend). |
+| DefaultIdleState | This value is set to 1 to indicate that the device can be suspended when idle by default. |
+| DefaultIdleTimeout | This value is set to 5000 in milliseconds to indicate the amount of time in milliseconds to wait before determining that a device is idle. |
 | UserSetDeviceIdleEnabled | This value is set to 1 to allow the user to control the ability of the device to enable or disable USB selective suspend. A check box **Allow the computer to turn off this device to save power** on the device **Power Management** property page and the user can check or uncheck the box to enable or disable USB selective suspend. |
-| SystemWakeEnabled        | This value is set to 1 to allow the user to control the ability of the device to wake the system from a low-power state. When enabled, the **Allow this device to wake the computer** check box appears in the device power management property page. The user can check or uncheck the box to enable or disable USB system wake.         |
-
- 
+| SystemWakeEnabled | This value is set to 1 to allow the user to control the ability of the device to wake the system from a low-power state. When enabled, the **Allow this device to wake the computer** check box appears in the device power management property page. The user can check or uncheck the box to enable or disable USB system wake. |
 
 For example, to enable selective suspend on the device, add a custom property section that sets the **bPropertyName** field to a Unicode string, "DeviceIdleEnabled" and **wPropertyNameLength** to 36 bytes. Set the **bPropertyData** field to "0x00000001". The property values are stored as little-endian 32-bit integers.
 
@@ -168,4 +156,5 @@ This image shows sample settings for a WinUSB device.
 For additional examples, see the specifications on [Microsoft OS Descriptors](microsoft-defined-usb-descriptors.md).
 
 ## Related topics
+
 [Microsoft-Defined USB Descriptors](microsoft-defined-usb-descriptors.md)
