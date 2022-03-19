@@ -43,7 +43,7 @@ A user that wants to use a Bluetooth-enabled device will bring the device within
 The Bluetooth driver stack supports service GUIDs as defined by the Bluetooth SIG, as well as custom GUIDs (that is, GUIDs that are not defined by the Bluetooth SIG).
 
 > [!NOTE]
-> The **Guidgen.exe** tool provided with the Microsoft Windows SDK can be used to create custom GUIDs.
+> The **guidgen.exe** tool provided with the Microsoft Windows SDK can be used to create custom GUIDs.
 
 A user-mode installation application must be written to expose computer functionality that remote Bluetooth devices can use.
 

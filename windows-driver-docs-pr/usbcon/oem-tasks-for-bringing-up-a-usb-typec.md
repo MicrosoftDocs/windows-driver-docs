@@ -1,7 +1,7 @@
 ---
 description: Windows support for USB Type-C connector and tasks for OEMs who are building USB Type-C systems.
 title: Windows support for USB Type-C connectors
-ms.date: 04/20/2017
+ms.date: 03/18/2022
 ---
 
 # Windows support for USB Type-C connectors
@@ -54,8 +54,8 @@ Consider recommendations for the design and development of USB components, inclu
 Use this flow chart to determine a solution for your USB Type-C system.
 ![Drivers.](images/drivers-c.png)
 
-|If your system...| Recommended solution...|
-|---|---|
+| If your system... | Recommended solution... |
+|--|--|
 | Does not implement PD state machines | Write a client driver to the UcmTcpciCx class extension.</br></br>[Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md) |
 | Implements PD state machines in hardware or firmware and support USB Type-C Connector System Software Interface (UCSI) over ACPI | Load the Microsoft provided in-box drivers, UcmUcsiCx.sys and UcmUcsiAcpiClient.sys.</br></br>See [UCSI driver](ucsi.md). |
 | Implements PD state machines in hardware or firmware, but either does not support UCSI, or support UCSI but requires a transport other than ACPI | Write a client driver for the UcmCx class extension.</br></br>[Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)</br></br>[Write a USB Type-C Policy Manager client driver](policy-manager-client.md) |
@@ -77,11 +77,9 @@ Use this flow chart to determine a solution for your USB Type-C system.
 
 Perform various functional and stress tests on systems and devices that expose a USB Type-C connector.
 
-[Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md) - Run USB tests included in the Windows Hardware Lab Kit (HLK) for Windows 10.
-> Run USB function HLK tests with a C-to-A cable (search for **Windows USB Device** in the HLK
-
-Certification/Compliance
-Attend Power Delivery and USB Type-C compliance workshops hosted by the standards bodies.
+- **[Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md)**: Run USB tests included in the Windows Hardware Lab Kit (HLK).
+- **Run USB function HLK tests with a C-to-A cable**: Search for *Windows USB Device* in the HLK.
+- **Certification and compliance**: Attend power delivery and USB Type-C compliance workshops hosted by the standards bodies.
 
 ## See also
 

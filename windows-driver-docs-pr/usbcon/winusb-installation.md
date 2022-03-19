@@ -8,6 +8,9 @@ ms.date: 03/18/2022
 
 For certain Universal Serial Bus (USB) devices, such as devices that are accessed by only a single application, you can install [WinUSB](winusb.md) (*Winusb.sys*) in the device's kernel-mode stack as the USB device's function driver instead of implementing a driver.
 
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer experiencing USB problems, see [Troubleshoot common USB problems](https://support.microsoft.com/help/17614/windows-10-troubleshoot-common-usb-problems)
+
 ## Automatic installation of WinUSB without an INF file
 
 As an OEM or independent hardware vendor (IHV), you can build your device so that the *Winusb.sys* gets installed automatically on Windows 8 and later versions of the operating system. Such a device is called a WinUSB device and does not require you to write a custom INF file that references in-box *Winusb.inf*.

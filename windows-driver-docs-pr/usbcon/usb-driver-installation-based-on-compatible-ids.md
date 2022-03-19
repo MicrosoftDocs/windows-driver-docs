@@ -6,6 +6,9 @@ ms.date: 03/18/2022
 
 # USB serial driver (Usbser.sys)
 
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer experiencing USB problems, see [Troubleshoot common USB problems](https://support.microsoft.com/help/17614/windows-10-troubleshoot-common-usb-problems)
+
 ## Versions supported
 
 - Windows 11
