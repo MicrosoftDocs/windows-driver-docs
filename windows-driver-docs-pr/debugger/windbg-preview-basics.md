@@ -1,7 +1,7 @@
 ---
 title: WinDbg Preview Basics 
 description: This section describes the basic capabilities of WinDbg preview debugger.
-ms.date: 05/02/2019
+ms.date: 03/21/2022
 ---
 
 # WinDbg Preview Basics
@@ -46,7 +46,7 @@ ms.date: 05/02/2019
 
 ## Videos
 
-Watch these episodes of [Defrag Tools](/shows/Shows/Defrag-Tools) to see Windbg Preview in action.  
+Watch these episodes of [Defrag Tools](/shows/defrag-tools) to see Windbg Preview in action.  
 
 | Title               | Description        |
 |-------------------- |--------------------|

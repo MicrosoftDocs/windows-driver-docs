@@ -3,7 +3,7 @@ title: Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)
 description: Start here for an overview of Debugging Tools for Windows. This tool set includes WinDbg and other debuggers.
 ms.assetid: 938ef180-84de-442f-9b6c-1138c2fc8d5a
 keywords: ["Debugging Tools for Windows", "Windows debugging", "Windows Debugger", "Kernel debugging", "Kernel debugger", "WinDbg"]
-ms.date: 03/10/2022
+ms.date: 03/21/2022
 ms.topic: article
 ---
 
@@ -74,4 +74,4 @@ In addition to the debuggers, Debugging Tools for Windows includes a set of tool
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
-For additional information related to Debugging Tools for Windows, see [Debugging Resources](debugging-resources.md). For information on what's new in the debugger, see [WinDbg Preview - What's New](/drivers/debugger/windbg-what-is-new-preview.md).
+For additional information related to Debugging Tools for Windows, see [Debugging Resources](debugging-resources.md). For information on what's new in the debugger, see [WinDbg Preview - What's New](windbg-what-is-new-preview.md).
