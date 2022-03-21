@@ -181,12 +181,12 @@
     href: properties-for-wia-video-minidrivers.md
   - name: "Properties for WIA File System Minidrivers"
     href: properties-for-wia-file-system-minidrivers.md
-- name: "64-Bit and WIA"
+- name: "64-bit and WIA"
 # Auto-expanded node
   items: 
-  - name: "64-Bit and WIA"
+  - name: "64-bit and WIA"
     href: 64-bit-and-wia.md
-  - name: "64-Bit WIA Driver Components"
+  - name: "64-bit WIA driver components"
     href: 64-bit-wia-driver-components.md
   - name: "32-Bit and 64-Bit WIA Interoperability"
     href: 32-bit-and-64-bit-wia-interoperability.md
@@ -518,10 +518,10 @@
   items: 
   - name: "WIA with Web Services for Devices"
     href: wia-with-web-services-for-devices.md
-  - name: "Installing a WIA Scanner Driver with WSD"
+  - name: "Install a WIA scanner driver with WSD"
 # Auto-expanded node
     items: 
-    - name: "Installing a WIA Scanner Driver with WSD"
+    - name: "Install a WIA scanner driver with WSD"
       href: installing-a-wia-scanner-driver-with-wsd.md
     - name: "Sample INF File for a Web Services Scanner"
       href: sample-inf-file-for-a-web-services-scanner.md
@@ -836,10 +836,10 @@
         href: page-orientation.md
       - name: "Page Size and Orientation Code Examples"
         href: page-size-and-orientation-code-examples.md
-    - name: "TWAIN Compatibility"
+    - name: "TWAIN compatibility"
 # Auto-expanded node
       items: 
-      - name: "TWAIN Compatibility"
+      - name: "TWAIN compatibility"
         href: twain-compatibility.md
       - name: "WIA-TWAIN Driver Design Considerations"
 # Auto-expanded node

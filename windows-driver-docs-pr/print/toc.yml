@@ -102,7 +102,7 @@
       href: v4-printer-driver-development-best-practices.md
     - name: "Working with the Driver Store"
       href: working-with-the-driver-store.md
-    - name: "Working well with enhanced Point and Print"
+    - name: "Working with enhanced Point and Print"
       href: working-well-with-enhanced-point-and-print.md
     - name: "V4 Printer Driver Security Considerations"
       href: v4-printer-driver-security-considerations.md
@@ -2015,10 +2015,10 @@
         href: tvot-trackbar.md
       - name: "TVOT_UDARROW"
         href: tvot-udarrow.md
-  - name: "Color Management for Printers"
+  - name: "Color management for printers"
 # Auto-expanded node
     items: 
-    - name: "Color Management for Printers"
+    - name: "Color management for printers"
       href: color-management-for-printers.md
     - name: "Enabling Color Management"
       href: enabling-color-management.md
@@ -2250,10 +2250,10 @@
       href: installing-print-drivers-from-a-web-page.md
   - name: "Terminal Server Printing"
     href: terminal-server-printing.md
-  - name: "Microsoft USB Printer Driver (Usbprint.sys)"
+  - name: "Microsoft USB printer driver (Usbprint.sys)"
 # Auto-expanded node
     items: 
-    - name: "Microsoft USB Printer Driver (Usbprint.sys)"
+    - name: "Microsoft USB printer driver (Usbprint.sys)"
       href: usb-printing.md
     - name: "Programming Considerations for USBPRINT"
       href: programming-considerations-for-usbprint.md

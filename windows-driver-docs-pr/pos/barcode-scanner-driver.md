@@ -1,7 +1,7 @@
 ---
 title: Barcode scanner driver sample
 description: The barcode scanner driver sample demonstrates how to create a universal driver for a barcode scanner and is intended to be used as a template for creating a new barcode scanner driver.
-ms.date: 09/07/2017
+ms.date: 03/21/2022
 ---
 
 # Barcode scanner driver sample
@@ -19,7 +19,7 @@ The barcode scanner driver sample demonstrates how to create a universal driver 
 The Windows Software Development Kit (SDK) 10 is also required, but this is installed as part of Microsoft Visual Studio.
 
 > [!NOTE]
-> The sample driver does not require any barcode scanner hardware to function because it operates on a software device. If you have a hardware device you wish to use with the sample, you can still use the driver by adding the device's hardware ID to the INF file.
+> The sample driver does not require any barcode scanner hardware to function because it operates on a software device. If you have a hardware device you wish to use with the sample, you can still use the driver by adding the device hardware ID to the INF file.
 
 ## Download and extract the sample
 
@@ -63,10 +63,10 @@ The [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples
 
     In that folder, you will see the following files:
 
-    | File                        | Description                                                                  |
-    |-----------------------------|------------------------------------------------------------------------------|
-    | SampleBarcodeScannerDrv.dll | The driver file.                                                             |
-    | SampleBarcodeScannerDrv.inf | An INF file that contains information needed to install the driver.          |
+    | File | Description |
+    |--|--|
+    | SampleBarcodeScannerDrv.dll | The driver file. |
+    | SampleBarcodeScannerDrv.inf | An INF file that contains information needed to install the driver. |
     | samplebarcodescannerdrv.cat | A signed catalog file, which serves as the signature for the entire package. |
 
 1. Identify the path to the Device Console utility (devcon.exe) that matches your OS and driver platform. The default locations for the x64 version is `C:\Program Files (x86)\Windows Kits\10\Tools\x64`.
@@ -75,13 +75,13 @@ The [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples
 
     `<devcon_path>\devcon.exe install SampleBarcodeScannerDrv.inf Root\SampleBarcodeScannerDrv`
 
-1. You will see a **Windows Security** dialog informing you that the publisher of the driver can't be verified. This is because the driver was signed with a test certificate. Select **Install this driver software anyway**. In a moment, you will see confirmation that your driver was installed correctly.
+1. You will see a **Windows Security** dialog informing you that the publisher of the driver can not be verified. This is because the driver was signed with a test certificate. Select **Install this driver software anyway**. In a moment, you will see confirmation that your driver was installed correctly.
 
-If the Device Console utility wasn't able to install the driver, confirm that you were using the one that matches your current OS platform and the platform of the driver.
+If the Device Console utility was not able to install the driver, confirm that you were using the one that matches your current OS platform and the platform of the driver.
 
 ## View the device in Device Manager
 
-1. Open Device Manager. This can be done many ways, but if you're still in a command prompt then type `devmgmt`.
+1. Open Device Manager. This can be done many ways, but if you are still in a command prompt, type `devmgmt`.
 
 1. In Device Manager, choose **Devices by type** from the **View** menu.
 
