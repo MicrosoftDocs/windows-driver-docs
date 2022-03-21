@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 
 The example below shows a C# .cs file with a simple single test class that demostrates C# tests markup. (Please note that this example is for demonstrational purpose only, so it will not compile or run.)
 
-```cpp
+```CSharp
 1    using Microsoft.VisualStudio.TestTools.UnitTesting;
 2    using System;
 3    using System.Collections;
