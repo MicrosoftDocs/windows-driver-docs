@@ -13,9 +13,8 @@ ms.date: 04/20/2017
 
 # Co-installer Operation
 
-
-
-
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 Co-installers are called by SetupAPI, as shown in the following figure.
 

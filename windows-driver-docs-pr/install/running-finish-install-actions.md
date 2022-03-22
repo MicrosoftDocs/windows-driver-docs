@@ -6,6 +6,8 @@ ms.date: 04/20/2017
 
 # Running Finish-Install Actions
 
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 In Windows 8, and later versions of Windows, finish-install actions do not automatically run as part of device installation. When a device is installed with a driver that includes a finish-install action, the finish-install action will not automatically run. Instead, Windows prompts a user to “Finish installing device software” in the Notifications area or in Windows Action Center. Installing device software requires administrator permissions. If installation fails, the software must prompt the user to try the installation again. Installing supporting software that should accompany a driver can still be accomplished with a finish-install action, but it will not be installed automatically.
 

@@ -10,6 +10,9 @@ ms.custom: contperf-fy22q2
 
 # Registering a Device-Specific Co-installer
 
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
+
 To register a device-specific co-installer, add the following sections to the device's INF file:
 
 ```inf

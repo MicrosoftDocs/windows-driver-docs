@@ -12,10 +12,8 @@ ms.date: 04/20/2017
 
 # Finish-Install Actions
 
-
-**Note**  Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
-
- 
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 *Finish-install actions* allow the installer to complete installation operations.
 
