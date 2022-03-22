@@ -2742,14 +2742,12 @@
       href: mb-esim-profile-operations-tat.md
     - name: "MB reset and recovery"
       items:
-      - name: "MB Device-based Reset and Recovery and Hang Detection"
-        items: 
-        - name: "MB Device-based Reset and Recovery"
-          href: mb-device-based-reset-and-recovery.md
-        - name: "MB hang detection"
-          href: mb-hang-detection.md
-        - name: "MB Device Reset and Recovery (RnR) trace"
-          href: mb-device-based-reset-and-recovery-trace.md
+      - name: "MB Device-based Reset and Recovery"
+        href: mb-device-based-reset-and-recovery.md
+      - name: "MB hang detection"
+        href: mb-hang-detection.md
+      - name: "MB Device Reset and Recovery (RnR) trace"
+        href: mb-device-based-reset-and-recovery-trace.md
     - name: "MB SAR Platform Support"
       href: mb-sar-platform-support.md
     - name: "MB base stations information query support"
