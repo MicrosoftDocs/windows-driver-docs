@@ -2731,7 +2731,11 @@
     - name: "MB eSIM Operations"
       href: mb-esim-operations.md
     - name: "MB Firmware Upgrade for eSIM"
-      href: mb-fw-upgrade-for-esim.md
+      items:
+      - name: "Firmware Upgrade for eSIM"
+        href: mb-fw-upgrade-for-esim.md
+      - name: "MB modem reset operations"
+        href: mb-modem-reset-operations.md
     - name: "eSIM Download and Install Log Filter"
       href: mb-esim-download-install-tat.md
     - name: "eSIM Profile Operations Log Filter"
@@ -2746,8 +2750,6 @@
           href: mb-hang-detection.md
         - name: "MB Device Reset and Recovery (RnR) trace"
           href: mb-device-based-reset-and-recovery-trace.md
-      - name: "MB modem reset operations"
-        href: mb-modem-reset-operations.md
     - name: "MB SAR Platform Support"
       href: mb-sar-platform-support.md
     - name: "MB base stations information query support"
