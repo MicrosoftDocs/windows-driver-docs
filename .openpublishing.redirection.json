@@ -61,6 +61,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/install/installing-device-specific-applications.md",
+            "redirect_URL": "/windows-hardware/drivers/install/writing-a-device-installation-application",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/install/obtaining-a-software-publisher-certificate--spc-.md",
             "redirect_URL": "/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates",
             "redirect_document_id": false

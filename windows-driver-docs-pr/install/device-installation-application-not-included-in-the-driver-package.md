@@ -6,6 +6,8 @@ ms.date: 04/20/2017
 
 # Device Installation Application Not Included in the Driver Package
 
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 This method describes a way through which a co-installer, by using [finish-install actions](finish-install-actions--windows-vista-and-later-.md), can start a *device installation application* to install device-specific applications.
 
