@@ -507,6 +507,8 @@
       href: storage-filter-driver-s-iocompletion-routines.md
     - name: "Handling PnP Paging Requests"
       href: handling-pnp-paging-requests.md
+    - name: "Enhanced Storage class driver"
+      href: ehstor-driver.md
   - name: "Crash Dump Filter Drivers"
 # Auto-expanded node
     items: 
