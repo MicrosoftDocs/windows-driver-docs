@@ -28,6 +28,8 @@ Drivers for x86 systems can call [**KeSaveExtendedProcessorState**](/windows-har
 
 The 64-bit compiler does not use the MMX/x87 registers for floating point operations. Instead, it uses the SSE registers. x64 kernel mode code is not allowed to access the MMX/x87 registers. The compiler also takes care of properly saving and restoring the SSE state, therefore, calls to [**KeSaveExtendedProcessorState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesaveextendedprocessorstate) and [**KeRestoreExtendedProcessorState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestoreextendedprocessorstate) are unnecessary and floating point operations can be used in ISRs. Use of other extended processor features such as AVX, requires saving and restoring extended state. For more information see [Using extended processor features in Windows drivers](floating-point-support-for-64-bit-drivers.md).
 
+Note: ARM64 in general, is similar to AMD64 in that you don’t need to call save floating point state first. However, code that needs to be portable to x86 on kernels may still need to do that to be cross-platform.
+
 ## Example
 
 
