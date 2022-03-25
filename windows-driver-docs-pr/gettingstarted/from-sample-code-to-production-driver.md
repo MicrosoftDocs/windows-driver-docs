@@ -5,14 +5,14 @@ keywords:
 - WDK Windows Driver Kit Sample Drivers Tips
 - From Sample Code to Production Driver
 - What to Change in the WDK Samples
-ms.date: 03/21/2022
+ms.date: 03/24/2022
 ---
 
 # From Sample Code to Production Driver - What to Change in the Samples
 
 This topic describes important changes that need to be made to the WDK sample drivers before releasing device drivers based on the sample code.
 
-In addition to the changes described here, all drivers should make use of the best practices described in [Creating Reliable Kernel-Mode Drivers](/windows-hardware/drivers/kernel/creating-reliable-kernel-mode-drivers) and in [Surface Team Driver Development Best Practices](/drivers/kernel/surface-team-driver-development-best-practices).  All drivers should also adhere to the guidelines provided in [Driver Security Guidance](/windows-hardware/drivers/driversecurity/). 
+In addition to the changes described here, all drivers should make use of the best practices described in [Creating Reliable Kernel-Mode Drivers](/windows-hardware/drivers/kernel/creating-reliable-kernel-mode-drivers) and in [Surface Team Driver Development Best Practices](/windows-hardware/drivers/kernel/surface-team-driver-development-best-practices).  All drivers should also adhere to the guidelines provided in [Driver Security Guidance](/windows-hardware/drivers/driversecurity/). 
 
 ## WDK Driver Samples - Unique Identifiers
 
@@ -29,8 +29,6 @@ The exact items that you must change vary from one sample to the next, but in ge
 - Pool tags
 
 - I/O control code (IOCTL) definitions
-
-- User-mode driver framework (UMDF) driver object class ID
 
 - Names of any files that are copied to the system folder
 
@@ -165,19 +163,6 @@ For example, the Osrusbfx2 sample includes the following definition for IOCTL_OS
 </pre>
 
 A sample-based driver for a different device would require modifications to this definition.
-
-## UMDF Driver Object Class ID
-
-If you use a UMDF sample, you must change the class ID for the driver object. This value is typically defined as MYDRIVER_CLASS_ID in the Internal.h header file, although a few samples define it in a different header file.
-
-The following example is from the Skeleton driver's Internal.h header file. You can find this file in %WinDDK\Src\Umdf\Skeleton.
-
-<pre class="codeSample">
-#define MYDRIVER_CLASS_ID   { <b><i>0xd4112073, 0xd09b, 0x458f,</i></b> \
-        { <b><i>0xa5, 0xaa, 0x35, 0xef, 0x21, 0xee, 0xf5, 0xde</i></b> } } 
-</pre>
-
-If you base a driver on the Skeleton sample, you would change the definition shown above in bold to the unique class ID for your driver object.
 
 ## File Names
 
@@ -317,8 +302,6 @@ Before you release a driver that is based on a WDK sample, replace any sample-sp
 - Use pool tags that identify your driver and do not conflict with any known tags.
 
 - Define IOCTL codes that are appropriate for your driver and device.
-
-- Use a unique class ID for a UMDF driver object.
 
 - Update the names of any files that are copied to the system folder.
 
