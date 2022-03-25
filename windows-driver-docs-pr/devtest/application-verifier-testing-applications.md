@@ -7,7 +7,7 @@ keywords:
 - Application Verifier
 - AppVerif.exe
 - user-mode application testing
-ms.date: 01/12/2022
+ms.date: 03/25/2022
 ---
 
 # Application Verifier - Testing Applications
@@ -22,13 +22,13 @@ To deliver reliable Windows applications:
 
 Thread-pool checks are enabled by default under the "Basics" check heading. As this is included in the default setting, users need only to run Application Verifier on their code with the default settings to leverage these and other important checks.
 
-## Installing and configuring Application Verifier
+## Configuring Application Verifier
 
 ### Debugger setup 
 
 The application being verified should run under a user-mode debugger or the system should run under a kernel debugger since it will break into a debugger when an error occurs. See [Application Verifier - Debugging Application Verifier Stops](application-verifier-debugging-application-verifier-stops.md) for more debugger details. 
 
-### Settings 
+### Settings
 
 Application Verifier cannot be enabled for a running process. As a result, you need to make settings as described below and then start the application. The settings are persistent until explicitly deleted. Therefore, no matter how many times you launch an application it will start with AppVerifier enabled until the settings are deleted.
 
@@ -40,7 +40,7 @@ Enable verifier for the application(s) you wish to test using. From the command 
 
 From the user interface: Add your application by right clicking within the Applications area and selecting Add Application. Select the Basics from the Tests area. Click the Save button. 
 
-Notes: 
+Notes:
 
 /verify will enable the basics tests
 
@@ -94,8 +94,8 @@ All data created during AppVerifier analysis is stored in the %USERPROFILE%\AppV
 
 To view the XML files, you can use any tool to view the XML, for example importing into Microsoft Excel - Import the XML file into Excel and use filters or Pivot Tables to reorganize and analyze the collected data.
 
-## Using the Command Line 
- 
+## Using the Command Line
+
 Application Verifier can be used via the UI or by using command line options. 
 
 Following are examples of how to use the command line (below are the details): 
@@ -370,11 +370,3 @@ Not Continuable - a checkbox that when selected will not allow you to continue w
 [Application Verifier - Debugging Application Verifier Stops](application-verifier-debugging-application-verifier-stops.md)
   
 [Application Verifier - Frequently Asked Questions](application-verifier-faqs.md)
-
-
- 
-
-
-
-
-

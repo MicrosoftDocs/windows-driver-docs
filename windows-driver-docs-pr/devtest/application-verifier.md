@@ -7,7 +7,7 @@ keywords:
 - Application Verifier
 - AppVerif.exe
 - user-mode application testing
-ms.date: 01/11/2022
+ms.date: 03/25/2022
 ---
 
 # Application Verifier - Overview
@@ -25,6 +25,8 @@ Application Verifier (AppVerif.exe) is a *dynamic verification* tool for user-mo
 Application Verifier can detect errors in any user-mode applications that are not based on managed code, including user-mode drivers. It finds subtle programming errors that might be difficult to detect during standard application testing or driver testing.
 
 You can use Application Verifier alone or in conjunction with a user-mode debugger. The current user must be a member of the Administrators group on the computer.
+
+## Installing AppVerifier
 
 Application Verifier is included in the [Windows Software Development Kit](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) (SDK). To install Application Verifier, check the box for it, during installation of the SDK.
 
