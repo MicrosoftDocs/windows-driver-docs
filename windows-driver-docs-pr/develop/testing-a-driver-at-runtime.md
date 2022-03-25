@@ -10,7 +10,7 @@ The WDK extensions to Visual Studio provide a device testing interface that enab
 
 ### <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
--   A Driver Package that is ready to install. You must first create and build your driver and a Driver Package is automatically created for installation when built with a WDK 10 and higher. For more information, see [Building a Driver](building-a-driver.md).
+-   A Driver Package that is ready to install. You must first create and build your driver. Starting in Windows 10 WDK versions, a Driver Package is automatically created for installation. For more information, see [Building a Driver](building-a-driver.md).
 -   The driver must be test signed. For more information, see [Signing a Driver](signing-a-driver.md).
 -   A test computer (or computers). The test computer must be on the same network as the computer that you are using for development. Both computers must be connected to the same domain, or both connected to the network under the same workgroup. The test computer should be running the version of Windows that you want to target for testing. 
 -   A device to be tested.
