@@ -186,6 +186,28 @@ HKR,,DllPath,%%SystemRoot%%\System32\myDll.sys
 </td>
 </tr>
 <tr>
+<td><strong>1280/1281: Class name and ClassGuid mismatch</strong></td>
+<td>These errors indicate that your INF uses a well-known Class or ClassGuid, but one of these values is inconsistent.  For example, given the following well-known Class/ClassGuid pair:
+<pre>
+Class = Sample
+ClassGuid = {78A1C341-4539-11d3-B88D-00C04FAD5171}
+</pre>
+  
+The following generates a 1280 error because the ClassGuid is well-known but the Class does not match:
+<pre>
+Class = ContosoDevices
+ClassGuid = {78A1C341-4539-11d3-B88D-00C04FAD5171}
+</pre>
+  
+The following generates a 1281 error because the Class is well-known but the ClassGuid does not match:
+<pre>
+Class = Sample
+ClassGuid = {99f58d4a-8093-4968-a93e-f74b26bb7f0a}
+</pre>
+  
+</td>
+</tr>
+<tr>
 <td><strong>1285: Cannot specify [ClassInstall32] section for Microsoft-defined class.</strong></td>
 <td>As of Windows 10, IHV-supplied INFs are not allowed to use a [ClassInstall32] in an INF of any Microsoft-defined class.
 </td>
