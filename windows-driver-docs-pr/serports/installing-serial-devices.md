@@ -9,7 +9,7 @@ ms.date: 03/17/2022
 # Programming Serial Device Installation
 
 > [!NOTE]
-> This topic describes programming traditional COM ports. For information on USB attached serial ports, see [USB serial driver (Usbser.sys)](/windows-hardware/drivers/usbcon/usb-driver-installation-based-on-compatible-ids).
+> This topic describes programming traditional COM ports. For information on USB attached serial ports, see [USB serial driver (Usbser.sys)](../usbcon/usb-driver-installation-based-on-compatible-ids.md).
 
 This section includes the following topics about programming installation for serial devices:
 

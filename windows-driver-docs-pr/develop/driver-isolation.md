@@ -191,7 +191,7 @@ The `%ProgramData%` user-mode environment variable is available for user-mode co
 
 ### Property State
 
-Both devices and device interfaces support storing state via the PnP [property model](/windows-hardware/drivers/install/unified-device-property-model--windows-vista-and-later-).  The property model allows for structured property data to be stored against a device or device interface.  This is meant for smaller data that reasonably fits into the property types supported by the property model.
+Both devices and device interfaces support storing state via the PnP [property model](../install/unified-device-property-model--windows-vista-and-later-.md).  The property model allows for structured property data to be stored against a device or device interface.  This is meant for smaller data that reasonably fits into the property types supported by the property model.
 
 To access device properties, these APIs can be used:
 * WDM drivers
@@ -243,4 +243,3 @@ For more information about device interfaces, see:
 * [Using Device Interfaces](../wdf/using-device-interfaces.md)
 * [Registering for Notification of Device Interface Arrival and Device Removal](../install/registering-for-notification-of-device-interface-arrival-and-device-removal.md)
 * [Registering for Device Interface Change Notification](../kernel/registering-for-device-interface-change-notification.md)
-

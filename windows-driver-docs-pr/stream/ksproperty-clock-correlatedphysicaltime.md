@@ -21,7 +21,7 @@ Clients use the **KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME** property to compare 
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| Yes | No | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSCORRELATED_TIME**](/windows-hardware/drivers/ddi/ks/ns-ks-kscorrelated_time) |
+| Yes | No | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSCORRELATED_TIME**](/windows-hardware/drivers/ddi/ks/ns-ks-kscorrelated_time) |
 
 ## Remarks
 

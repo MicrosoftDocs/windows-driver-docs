@@ -146,4 +146,4 @@ debug                   Yes
 ```
 ## See Also
 
-[Editing Boot Options](/windows-hardware/drivers/devtest/editing-boot-options)
+[Editing Boot Options](./editing-boot-options.md)

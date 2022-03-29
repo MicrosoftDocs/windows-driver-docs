@@ -47,7 +47,7 @@ To install a device and driver in the Windows operating system, follow these st
     [Driver packages](driver-packages.md) are release-signed through either:
 
     - A [WHQL Release Signature](whql-release-signature.md) obtained through the [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/) (for Windows 10/11), or the [Windows Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) (for Windows 8/8.1 and older operating systems).
-    - A release signature created through a [Software Publisher Certificate (SPC)](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates).
+    - A release signature created through a [Software Publisher Certificate (SPC)](./deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md).
 
     For more information, see [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md).
 

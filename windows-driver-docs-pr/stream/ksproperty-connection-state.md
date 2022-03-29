@@ -21,7 +21,7 @@ The **KSPROPERTY_CONNECTION_STATE** property sets the current run state of the p
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| No | Yes | Filter or Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSSTATE**](/windows-hardware/drivers/ddi/ks/ne-ks-ksstate) |
+| No | Yes | Filter or Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSSTATE**](/windows-hardware/drivers/ddi/ks/ne-ks-ksstate) |
 
 ## Remarks
 

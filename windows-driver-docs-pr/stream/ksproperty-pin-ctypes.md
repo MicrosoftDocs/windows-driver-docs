@@ -21,7 +21,7 @@ Clients use the **KSPROPERTY_PIN_CTYPES** property to determine how many pin typ
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| Yes | No | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | ULONG |
+| Yes | No | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | ULONG |
 
 ## Remarks
 

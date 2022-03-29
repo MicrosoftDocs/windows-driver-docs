@@ -21,7 +21,7 @@ Clients use the **KSPROPERTY_CLOCK_RESOLUTION** property to determine the precis
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| Yes | No | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSRESOLUTION**](/windows-hardware/drivers/ddi/ks/ns-ks-ksresolution) |
+| Yes | No | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSRESOLUTION**](/windows-hardware/drivers/ddi/ks/ns-ks-ksresolution) |
 
 ## Remarks
 

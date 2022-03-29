@@ -21,7 +21,7 @@ The **KSPROPERTY_MEDIASEEKING_FORMATS** property retrieves the media time format
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| Yes | No | Filter | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | PVOID |
+| Yes | No | Filter | [**KSPROPERTY**](./ksproperty-structure.md) | PVOID |
 
 ## Remarks
 
@@ -35,4 +35,4 @@ This property can return a multiple item property. The requester is responsible 
 
 [KSPROPSETID_MediaSeeking](kspropsetid-mediaseeking.md)
 
-[**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure)
+[**KSPROPERTY**](./ksproperty-structure.md)

@@ -21,7 +21,7 @@ The **KSPROPERTY_MEDIASEEKING_STOPPOSITION** property retrieves the stop media t
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| Yes | No | Filter | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | LONGLONG |
+| Yes | No | Filter | [**KSPROPERTY**](./ksproperty-structure.md) | LONGLONG |
 
 ## Remarks
 
@@ -35,4 +35,4 @@ The stop media time is the time that can be set if a stop time is supported by t
 
 [KSPROPSETID_MediaSeeking](kspropsetid-mediaseeking.md)
 
-[**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure)
+[**KSPROPERTY**](./ksproperty-structure.md)

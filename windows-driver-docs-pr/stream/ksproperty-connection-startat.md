@@ -21,7 +21,7 @@ KSPROPERTY_CONNECTION_STARTAT is an optional property that is implemented by fil
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| No | Yes | Filter | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSRELATIVEEVENT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksrelativeevent) |
+| No | Yes | Filter | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSRELATIVEEVENT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksrelativeevent) |
 
 ## Remarks
 

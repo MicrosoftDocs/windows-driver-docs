@@ -21,7 +21,7 @@ The **KSPROPERTY_MEDIASEEKING_DURATION** property retrieves the media duration o
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| Yes | No | Filter | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | LONGLONG |
+| Yes | No | Filter | [**KSPROPERTY**](./ksproperty-structure.md) | LONGLONG |
 
 ## Remarks
 
@@ -35,4 +35,4 @@ This property returns the media duration as a value of type LONGLONG.
 
 [KSPROPSETID_MediaSeeking](kspropsetid-mediaseeking.md)
 
- [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure)  
+ [**KSPROPERTY**](./ksproperty-structure.md)

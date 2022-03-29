@@ -21,7 +21,7 @@ AVStream clients use the **KSPROPERTY_CONNECTION_ALLOCATORFRAMING_EX** property 
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| Yes | No | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSALLOCATOR_FRAMING_EX**](/windows-hardware/drivers/ddi/ks/ns-ks-ksallocator_framing_ex) |
+| Yes | No | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSALLOCATOR_FRAMING_EX**](/windows-hardware/drivers/ddi/ks/ns-ks-ksallocator_framing_ex) |
 
 ## Remarks
 

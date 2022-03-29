@@ -10,7 +10,7 @@ ms.custom: contperf-fy23q3
 
 
 An [asynchronous procedure call (APC)](/windows/win32/sync/asynchronous-procedure-calls) is a function that executes asynchronously.
-APCs are similar to [deferred procedure calls (DPCs)](/windows-hardware/drivers/kernel/introduction-to-dpc-objects), but unlike DPCs, APCs execute within the context of a particular thread.
+APCs are similar to [deferred procedure calls (DPCs)](./introduction-to-dpc-objects.md), but unlike DPCs, APCs execute within the context of a particular thread.
 Drivers (other than file systems and file-system filter drivers) do not use APCs directly, but other parts of the operating system do, so you need to be aware of how APCs work.
 
 The Windows operating system uses three kinds of APCs:
@@ -23,4 +23,3 @@ The Windows operating system uses three kinds of APCs:
 
  
 For a list of IRQLs from lowest to highest priority, see [Managing Hardware Priorities](./managing-hardware-priorities.md).
- 

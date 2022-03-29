@@ -12,7 +12,7 @@ ms.date: 03/24/2022
 
 This topic describes important changes that need to be made to the WDK sample drivers before releasing device drivers based on the sample code.
 
-In addition to the changes described here, all drivers should make use of the best practices described in [Creating Reliable Kernel-Mode Drivers](/windows-hardware/drivers/kernel/creating-reliable-kernel-mode-drivers) and in [Surface Team Driver Development Best Practices](/windows-hardware/drivers/kernel/surface-team-driver-development-best-practices).  All drivers should also adhere to the guidelines provided in [Driver Security Guidance](/windows-hardware/drivers/driversecurity/). 
+In addition to the changes described here, all drivers should make use of the best practices described in [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md) and in [Surface Team Driver Development Best Practices](../kernel/surface-team-driver-development-best-practices.md).  All drivers should also adhere to the guidelines provided in [Driver Security Guidance](../driversecurity/index.md). 
 
 ## WDK Driver Samples - Unique Identifiers
 
@@ -132,7 +132,7 @@ The KMDF Toaster Filter driver names its device object in the Filter.h header fi
 
 As with the symbolic link name, you should change the string to describe your driver.
 
-Remember that named device objects can represent a security risk. Physical device objects (PDOs) must have names, and most such names are system generated instead of explicitly assigned by a driver. Other device objects should be named only if they represent control device objects, which are used for sideband communication between an application and a driver. Both the kernel-mode driver framework (KMDF) and the Windows Driver Model (WDM) enable you to let Windows generate the name. This approach ensures that the name of the device object is unique and that unprivileged users cannot access it. For details, see [Controlling Device Namespace Access](/windows-hardware/drivers/kernel/controlling-device-namespace-access) and [Controlling Device Access in KMDF Drivers](/windows-hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers).
+Remember that named device objects can represent a security risk. Physical device objects (PDOs) must have names, and most such names are system generated instead of explicitly assigned by a driver. Other device objects should be named only if they represent control device objects, which are used for sideband communication between an application and a driver. Both the kernel-mode driver framework (KMDF) and the Windows Driver Model (WDM) enable you to let Windows generate the name. This approach ensures that the name of the device object is unique and that unprivileged users cannot access it. For details, see [Controlling Device Namespace Access](../kernel/controlling-device-namespace-access.md) and [Controlling Device Access in KMDF Drivers](../wdf/controlling-device-access-in-kmdf-drivers.md).
 
 ## Pool Tags
 
@@ -323,16 +323,16 @@ Before you release a driver that is based on a WDK sample, replace any sample-sp
 
 ### WDK Topics
 
-[Defining and Exporting New GUIDs](/windows-hardware/drivers/kernel/defining-and-exporting-new-guids) 
+[Defining and Exporting New GUIDs](../kernel/defining-and-exporting-new-guids.md) 
 
-[Controlling Device Access in  KMDF Drivers](/windows-hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers) 
+[Controlling Device Access in  KMDF Drivers](../wdf/controlling-device-access-in-kmdf-drivers.md) 
 
-[Developing, Testing, and Deploying Drivers](/windows-hardware/drivers/develop/)
+[Developing, Testing, and Deploying Drivers](../develop/index.md)
 
-[Creating Reliable Kernel-Mode Drivers](/windows-hardware/drivers/kernel/creating-reliable-kernel-mode-drivers) 
+[Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md) 
 
 [Surface Team Driver Development Best Practices](/drivers/kernel/surface-team-driver-development-best-practices) 
 
-[Driver Security Guidance](/windows-hardware/drivers/driversecurity/)
+[Driver Security Guidance](../driversecurity/index.md)
 
 [Write your first driver](writing-your-first-driver.md)

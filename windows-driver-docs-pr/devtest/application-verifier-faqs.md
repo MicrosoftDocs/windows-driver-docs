@@ -44,7 +44,7 @@ Make sure you are running the latest release. Consider trying the same app on a 
 
 AppVerifier cares about the interfaces between the operating system and the application. As a result, unless your managed code is performing interop against native APIs that have to do with Heaps, Handles, Critical Section, etc. your test cases are not going to give you any interaction with the interfaces that are verified. 
 
-We recommend leveraging the Managed Debugging Assistants for verifying your managed code. Read more about them at [Debugging Managed Code Using the Windows Debugger](/windows-hardware/drivers/debugger/debugging-managed-code).
+We recommend leveraging the Managed Debugging Assistants for verifying your managed code. Read more about them at [Debugging Managed Code Using the Windows Debugger](../debugger/debugging-managed-code.md).
 
  
 ## Debugger Questions 
@@ -57,7 +57,7 @@ The Basics verification layer within Application Verifier require that you run y
 
 *How do I run my application under a debugger?*
 
-See the Debugger install and setup topics - [Getting Started with Windows Debugging](/windows-hardware/drivers/debugger/getting-started-with-windows-debugging)
+See the Debugger install and setup topics - [Getting Started with Windows Debugging](../debugger/getting-started-with-windows-debugging.md)
 
 *How do I test stack expansion without any other instrumentation?*
 
@@ -233,4 +233,3 @@ To inspect resources allocated by a loaded DLL or EXE, use the !avrf -leak debug
 [Application Verifier - Stop Codes and Definitions](application-verifier-stop-codes-and-definitions.md)
 
 [Application Verifier - Debugging Application Verifier Stops](application-verifier-debugging-application-verifier-stops.md)
-

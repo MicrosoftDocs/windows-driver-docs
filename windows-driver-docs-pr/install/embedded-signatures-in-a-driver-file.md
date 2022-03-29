@@ -12,7 +12,7 @@ ms.date: 04/20/2017
 
 # Embedded Signatures in a Driver File
 
-In 64-bit versions of Windows Vista and later versions of Windows, the kernel-mode code signing requirements state that a released kernel-mode *boot-start driver* must have an embedded [Software Publisher Certificate (SPC)](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates) signature. An embedded signature is not required for drivers that are not boot-start drivers.
+In 64-bit versions of Windows Vista and later versions of Windows, the kernel-mode code signing requirements state that a released kernel-mode *boot-start driver* must have an embedded [Software Publisher Certificate (SPC)](./deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md) signature. An embedded signature is not required for drivers that are not boot-start drivers.
 
 > [!NOTE]
 > Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows Server 2016 kernel-mode drivers must be signed by the Windows Hardware Dev Center Dashboard, which requires an EV certificate. For more info about these changes, see [Driver Signing Changes in Windows 10](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Driver-Signing-changes-in-Windows-10-version-1607/ba-p/364894).
@@ -24,6 +24,4 @@ In addition to the load-time signature requirement that is enforced by the kerne
 Embedded signatures do not interfere with the signature of a catalog file because the thumbprints that are contained in a catalog file and the thumbprint in an embedded signature selectively exclude the signature part of the driver file.
 
 Driver files are signed by using the [SignTool](installing-a-catalog-file-by-using-signtool.md) tool.
-
- 
 

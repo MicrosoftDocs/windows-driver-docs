@@ -6,7 +6,7 @@ ms.date: 04/20/2017
 
 # Signing a Catalog File with a Commercial Release Certificate
 
-Use the following [**SignTool**](../devtest/signtool.md) command to sign the [catalog file](catalog-files.md) of a kernel-mode [driver package](driver-packages.md) with a [commercial release certificate](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates).
+Use the following [**SignTool**](../devtest/signtool.md) command to sign the [catalog file](catalog-files.md) of a kernel-mode [driver package](driver-packages.md) with a [commercial release certificate](./deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md).
 
 >[!NOTE]
 >For 32-bit versions of Windows Vista and later versions of Windows, only a commercial release certificate can be used to sign kernel-mode drivers to be released on these Windows versions.

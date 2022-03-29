@@ -21,7 +21,7 @@ The **KSPROPERTY_DVDCOPY_CHLG_KEY** property transfers the bus challenge keys th
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| Yes | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KS_DVDCOPY_CHLGKEY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_chlgkey) |
+| Yes | Yes | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KS_DVDCOPY_CHLGKEY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_chlgkey) |
 
 The property value (operation data) is a KS_DVDCOPY_CHLGKEY structure that describes the bus challenge key.
 

@@ -23,7 +23,7 @@ To use VRAM transport, a capture minidriver must support this property.
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| Yes | No | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | GUID |
+| Yes | No | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | GUID |
 
 ## Return value
 

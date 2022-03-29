@@ -21,7 +21,7 @@ User-mode clients use this property to get or set a camera's video stabilization
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| Yes | Yes | Filter | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_videostabilization_mode_s) |
+| Yes | Yes | Filter | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_videostabilization_mode_s) |
 
 ## Remarks
 

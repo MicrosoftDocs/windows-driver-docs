@@ -16,7 +16,7 @@ ms.custom: contperf-fy22q1
 
 ## Overview
 
-This page describes Windows Offloaded Data Transfer (ODX) from a storage perspective. For information related to file systems and minifilters, see [Offloaded Data Transfers](/windows-hardware/drivers/ifs/offloaded-data-transfers).
+This page describes Windows Offloaded Data Transfer (ODX) from a storage perspective. For information related to file systems and minifilters, see [Offloaded Data Transfers](../ifs/offloaded-data-transfers.md).
 
 [Windows ODX](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831628(v=ws.11)) introduces a tokenized operation to move data on storage devices. A source file and a destination file can be on the same volume, two different volumes hosted by the same machine, a local volume and a remote volume through Server Message Block (SMB2 or SMB3), or two volumes on two different machines through SMB2 or SMB3. ODX was introduced in Windows 8.
 

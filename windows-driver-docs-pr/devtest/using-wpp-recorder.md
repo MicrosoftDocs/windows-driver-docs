@@ -149,7 +149,7 @@ To do this you need to add a single line to the driver code for each log handle 
 For a code example, see [**WppRecorderLogCreate**](/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate).
 
 > [!NOTE]
-> This functionality is available starting in WDK Insider Preview build 22557. For info on targeting a specific release, see [Building Drivers for Different Versions of Windows](/windows-hardware/drivers/develop/building-drivers-for-different-versions-of-windows).
+> This functionality is available starting in WDK Insider Preview build 22557. For info on targeting a specific release, see [Building Drivers for Different Versions of Windows](../develop/building-drivers-for-different-versions-of-windows.md).
 
 ## How to view trace messages in the debugger
 

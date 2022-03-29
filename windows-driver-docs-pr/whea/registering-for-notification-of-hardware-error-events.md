@@ -14,7 +14,7 @@ ms.date: 02/03/2022
 
 To register to be notified about new hardware error events, an application creates a subscription to all events that are raised by the **Microsoft-Windows-Kernel-WHEA/Errors** channel.
 
-This channel is recommended for server scenarios. While the data is not immediately human readable, it is an ACPI/UEFI-defined [Common Platform Error Record (CPER)](/windows-hardware/drivers/whea/error-records).
+This channel is recommended for server scenarios. While the data is not immediately human readable, it is an ACPI/UEFI-defined [Common Platform Error Record (CPER)](./error-records.md).
 In comparison with the **Microsoft-Windows-WHEA-Logger** provider, this format provides much more detail on the exact specifics of each hardware error event.
 
 The following code example shows how to register for the notification of new hardware error events.

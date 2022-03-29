@@ -173,7 +173,5 @@ For more information about the driver components in the figure, see the followin
 
 [AV/C Client Drivers](/windows-hardware/drivers/ddi/_stream/index)
 
-[IEEE 1394 Bus](/windows-hardware/drivers/ieee/)
-
- 
+[IEEE 1394 Bus](../ieee/index.md)
 

@@ -20,7 +20,7 @@ Use [**SignTool**](../devtest/signtool.md) to embed a signature in a driver file
 
 ## Using a MakeCert Test Certificate or a Commercial Test Certificate to Embed a Test Signature in a Driver File
 
-Use the following SignTool command to embed a signature in a driver file by using a [MakeCert test certificate](makecert-test-certificate.md) or a [commercial test certificate](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates).
+Use the following SignTool command to embed a signature in a driver file by using a [MakeCert test certificate](makecert-test-certificate.md) or a [commercial test certificate](./deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md).
 
 ```cpp
 SignTool sign /v /s TestCertStoreName /n TestCertName /t http://timestamp.digicert.com DriverFileName.sys

@@ -21,7 +21,7 @@ The **KSPROPERTY_MEDIASEEKING_TIMEFORMAT** property retrieves the current media 
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| Yes | No | Filter | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | GUID |
+| Yes | No | Filter | [**KSPROPERTY**](./ksproperty-structure.md) | GUID |
 
 ## Remarks
 
@@ -35,4 +35,4 @@ The property sets the current media time format that is returned as a time forma
 
 [KSPROPSETID_MediaSeeking](kspropsetid-mediaseeking.md)
 
-[**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure)
+[**KSPROPERTY**](./ksproperty-structure.md)

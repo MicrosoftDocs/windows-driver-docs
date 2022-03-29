@@ -19,7 +19,7 @@ The **KSEVENT_DEVICE_PREEMPTED** event is triggered when a device has been preem
 
 | Get | Set | Target | Event descriptor type | Event value type |
 |--|--|--|--|--|
-| No | Yes | Filter | [**KSEVENT**](/windows-hardware/drivers/stream/ksevent-structure) | [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata) |
+| No | Yes | Filter | [**KSEVENT**](./ksevent-structure.md) | [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata) |
 
 ## Remarks
 

@@ -21,7 +21,7 @@ The KSPROPERTY_AUDDECOUT_CUR_MODE property indicates the current audio output mo
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| Yes | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | DWORD |
+| Yes | Yes | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | DWORD |
 
 The property value (operation data) is a DWORD that represents the current output mode of the audio decoder.
 

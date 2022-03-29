@@ -17,7 +17,7 @@ The DPC\_WATCHDOG\_VIOLATION bug check has a value of 0x00000133. This bug check
 
 The value of Parameter 1 indicates whether a single DPC exceeded a timeout, or whether the system cumulatively spent an extended period of time at IRQL DISPATCH\_LEVEL or above. DPCs should not run longer than 100 microseconds and ISRs should not run longer than 25 microseconds, however the actual timeout values on the system are set much higher.
 
-For more information about DPCs, see [Introduction to DPC Objects](/windows-hardware/drivers/kernel/introduction-to-dpc-objects) and [Windows Internals 7th Edition Part 1](/sysinternals/resources/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
+For more information about DPCs, see [Introduction to DPC Objects](../kernel/introduction-to-dpc-objects.md) and [Windows Internals 7th Edition Part 1](/sysinternals/resources/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
@@ -203,7 +203,3 @@ If you are not equipped to use the Windows debugger to this problem, you should 
 [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
-
-
-
-

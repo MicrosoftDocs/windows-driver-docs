@@ -21,7 +21,7 @@ Clients use the **KSPROPERTY_CLOCK_STATE** property to determine the streaming s
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| Yes | No | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSSTATE**](/windows-hardware/drivers/ddi/ks/ne-ks-ksstate) |
+| Yes | No | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSSTATE**](/windows-hardware/drivers/ddi/ks/ne-ks-ksstate) |
 
 ## Requirements
 
