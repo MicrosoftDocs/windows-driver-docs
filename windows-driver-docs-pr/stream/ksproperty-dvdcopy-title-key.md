@@ -21,7 +21,7 @@ The **KSPROPERTY_DVDCOPY_TITLE_KEY** property retrieves the title key informatio
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| No | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KS_DVDCOPY_TITLEKEY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_titlekey) |
+| No | Yes | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KS_DVDCOPY_TITLEKEY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_titlekey) |
 
 The property value (operation data) is a **KS_DVDCOPY_TITLEKEY** structure that describes the current title key.
 

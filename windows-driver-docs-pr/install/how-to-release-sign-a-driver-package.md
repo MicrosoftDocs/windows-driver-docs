@@ -19,7 +19,7 @@ ms.date: 03/03/2022
 
 This section provides the basic steps that you have to follow when you release-sign a [driver package](driver-packages.md). This includes the following:
 
--   Obtaining a [Software Publisher Certificate (SPC)](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates) from a commercial certificate authority (CA).
+-   Obtaining a [Software Publisher Certificate (SPC)](./deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md) from a commercial certificate authority (CA).
 
 -   Release-signing a driver binary through an embedded signature. You have to embed a digital signature within the driver binary if the driver binary is a *boot-start driver*.
 
@@ -43,7 +43,7 @@ When discussing the release-signing process, the topics of this section use the 
 
 This section contains the following topics:
 
-[Obtaining a Software Publisher Certificate (SPC)](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates)
+[Obtaining a Software Publisher Certificate (SPC)](./deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md)
 
 [Creating a Catalog File for Release-Signing a Driver Package](creating-a-catalog-file-for-release-signing-a-driver-package.md)
 

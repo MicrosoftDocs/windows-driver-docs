@@ -23,7 +23,7 @@ To use VRAM transport, a capture minidriver must support this property.
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| Yes | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**CAPTURE_MEMORY_ALLOCATION_FLAGS**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-capture_memory_allocation_flags) |
+| Yes | Yes | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**CAPTURE_MEMORY_ALLOCATION_FLAGS**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-capture_memory_allocation_flags) |
 
 ## Return value
 

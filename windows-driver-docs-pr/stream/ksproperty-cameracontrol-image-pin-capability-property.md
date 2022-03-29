@@ -19,7 +19,7 @@ User-mode clients use this property to identify whether the camera's image pin a
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| Yes | No | Filter | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_image_pin_capability_s) |
+| Yes | No | Filter | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_image_pin_capability_s) |
 
 ## Remarks
 

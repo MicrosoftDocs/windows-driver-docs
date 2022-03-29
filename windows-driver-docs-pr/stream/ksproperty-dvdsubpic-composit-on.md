@@ -21,7 +21,7 @@ The **KSPROPERTY_DVDSUBPIC_COMPOSIT_ON** property enables or disables the displa
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| No | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | **KSPROPERTY_COMPOSIT_ON** |
+| No | Yes | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | **KSPROPERTY_COMPOSIT_ON** |
 
   [**KSPROPERTY**]: /windows-hardware/drivers/stream/ksproperty-structure
 

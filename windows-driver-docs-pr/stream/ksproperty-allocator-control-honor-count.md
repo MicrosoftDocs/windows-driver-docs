@@ -21,7 +21,7 @@ The **KSPROPERTY_ALLOCATOR_CONTROL_HONOR_COUNT** property informs the Overlay Mi
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| Yes | No | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | DWORD |
+| Yes | No | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | DWORD |
 
 The property value (operation data) is a DWORD that specifies how the Overlay Mixer is to calculate the number of and use of overlay surfaces.
 

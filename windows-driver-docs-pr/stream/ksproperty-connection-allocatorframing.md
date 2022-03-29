@@ -21,7 +21,7 @@ In the stream class model, clients use the KSPROPERTY_CONNECTION_ALLOCATORFRAMIN
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| Yes | No | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSALLOCATOR_FRAMING**](/windows-hardware/drivers/ddi/ks/ns-ks-ksallocator_framing) |
+| Yes | No | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSALLOCATOR_FRAMING**](/windows-hardware/drivers/ddi/ks/ns-ks-ksallocator_framing) |
 
 ## Remarks
 

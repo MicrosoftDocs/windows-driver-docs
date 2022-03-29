@@ -92,7 +92,7 @@ The following code is from the [Aec APO MFX sample - AecApoMfx.cpp](https://gith
 
 #### IApoAcousticEchoCancellation
 
-The  [IApoAcousticEchoCancellation interface](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iapoacousticechocancellation) has no explicit methods on it. Its purpose is to identify an AEC APO to the audio engine. This interface may only be implemented by mode effects (MFX) on capture endpoints. Implementing this interface on any other APO will lead to a failure in loading that APO. For general information about MFX, see [Audio Processing Objects Architecture](/windows-hardware/drivers/audio/audio-processing-object-architecture).
+The  [IApoAcousticEchoCancellation interface](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iapoacousticechocancellation) has no explicit methods on it. Its purpose is to identify an AEC APO to the audio engine. This interface may only be implemented by mode effects (MFX) on capture endpoints. Implementing this interface on any other APO will lead to a failure in loading that APO. For general information about MFX, see [Audio Processing Objects Architecture](./audio-processing-object-architecture.md).
 
 If the mode effect on a capture endpoint is implemented as a series of chained APOs, only the APO closest to the device may implement this interface.
 APOs that implement this interface will be offered the APO_CONNECTION_PROPERTY_V2 structure in its call to [IAudioProcessingobjectRT::APOProcess](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess). The APO can check for a APO_CONNECTION_PROPERTY_V2_SIGNATURE signature on the connection property and typecast the incoming APO_CONNECTION_PROPERTY structure to a APO_CONNECTION_PROPERTY_V2 structure. 
@@ -247,7 +247,7 @@ This is the recommended buffer behavior for AEC.
 
 ## Settings Framework
 
-The Settings Framework allows APOs to expose methods for querying and modifying the property store for audio effects ("FX Property Store") on an audio endpoint. This framework can be used by APOs and by Hardware Support Apps (HSA) that wish to communicate settings to that APO. HSAs can be Universal Windows Platform (UWP) apps and require a special capability to invoke the APIs in the Settings Framework. For more information about HSA apps, see [UWP device apps](/windows-hardware/drivers/devapps).
+The Settings Framework allows APOs to expose methods for querying and modifying the property store for audio effects ("FX Property Store") on an audio endpoint. This framework can be used by APOs and by Hardware Support Apps (HSA) that wish to communicate settings to that APO. HSAs can be Universal Windows Platform (UWP) apps and require a special capability to invoke the APIs in the Settings Framework. For more information about HSA apps, see [UWP device apps](../devapps/index.md).
 
 ### FxProperty Store Structure
 

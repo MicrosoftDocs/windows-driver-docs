@@ -13,7 +13,7 @@ ms.custom: contperf-fy22q1
 
 # Windows Offloaded Data Transfers
 
-This page describes Windows Offloaded Data Transfer (ODX) from a file system and minifilter perspective. For information related to storage, see [Windows Storage Offloaded Data Transfers](/windows-hardware/drivers/storage/offloaded-data-transfer).
+This page describes Windows Offloaded Data Transfer (ODX) from a file system and minifilter perspective. For information related to storage, see [Windows Storage Offloaded Data Transfers](../storage/offloaded-data-transfer.md).
 
 Transferring data between computers or within the same computer is a frequent file system activity. Using the standard **ReadFile** and **WriteFile** functions work well from a functional point of view, but it involves heavy data movement through all levels of the system and potentially across a network. This can affect the availability of the systems involved in the transfer and the network connecting the systems. The advanced capabilities available with many storage subsystems provide a more efficient means of performing the ‘heavy lifting’ task of data movement.
 

@@ -21,7 +21,7 @@ The **KSPROPERTY_CONNECTION_ACQUIREORDERING** property is an optional property t
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| Yes | No | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | BOOL |
+| Yes | No | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | BOOL |
 
 ## Remarks
 

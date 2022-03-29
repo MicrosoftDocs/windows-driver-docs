@@ -31,5 +31,4 @@ Where:
 
 -   The **-f** option configures Pvk2Pfx to replace an existing *.pfx* file if one exists.
 
-For more information about SPCs and their management, see [Software Publisher Certificate (SPC)](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates).
-
+For more information about SPCs and their management, see [Software Publisher Certificate (SPC)](./deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md).

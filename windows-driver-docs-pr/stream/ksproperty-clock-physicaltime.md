@@ -21,7 +21,7 @@ Clients use the **KSPROPERTY_CLOCK_PHYSICAL_TIME** property to determine the cur
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| Yes | No | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | LONGLONG |
+| Yes | No | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | LONGLONG |
 
 ## Remarks
 

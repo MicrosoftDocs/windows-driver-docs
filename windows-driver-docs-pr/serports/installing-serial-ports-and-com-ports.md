@@ -11,7 +11,7 @@ ms.date: 03/17/2022
 # Programming Installation of Serial Ports and COM Ports
 
 > [!NOTE]
-> This topic describes programming traditional COM ports. For information on USB attached serial ports, see [USB serial driver (Usbser.sys)](/windows-hardware/drivers/usbcon/usb-driver-installation-based-on-compatible-ids).
+> This topic describes programming traditional COM ports. For information on USB attached serial ports, see [USB serial driver (Usbser.sys)](../usbcon/usb-driver-installation-based-on-compatible-ids.md).
 
 For most devices, the Ports [device setup class](../install/overview-of-device-setup-classes.md) and the Serial function driver provide the functionality required to operate serial ports and COM ports. To install serial ports and COM ports using these system-supplied components, do the following:
 

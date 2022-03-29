@@ -70,8 +70,6 @@ pwrtest /directedfx
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
-[Introduction to the Directed Power Management Framework](/windows-hardware/drivers/kernel/introduction-to-the-directed-power-management-framework)
+[Introduction to the Directed Power Management Framework](../kernel/introduction-to-the-directed-power-management-framework.md)
 
 [Directed FX System Verification Test](/windows-hardware/test/hlk/testref/def16163-9118-4d4a-b559-37873befa12e)
-
-[PwrTest DirectedFx Scenario](/windows-hardware/drivers/devtest/pwrtest-directedfx-scenario)

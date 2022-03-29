@@ -11,7 +11,7 @@ If you are [writing drivers for different versions of Windows](../gettingstarted
 ## <span id="Guidelines_that_apply_to_building_both_user-mode_and_kernel-mode_drivers"></span><span id="guidelines_that_apply_to_building_both_user-mode_and_kernel-mode_drivers"></span><span id="GUIDELINES_THAT_APPLY_TO_BUILDING_BOTH_USER-MODE_AND_KERNEL-MODE_DRIVERS"></span>Guidelines that apply to building both user-mode and kernel-mode drivers
 
 
--   Build your drivers using the target configurations and platforms that the WDK provides. Always use the latest version of the WDK that supports the version of Windows that you want to target. For info about WDK and operating system version support, see [Installing preview versions of the Windows Driver Kit](/windows-hardware/drivers/installing-preview-versions-wdk) and [Download the Windows Driver Kit](/windows-hardware/drivers/download-the-wdk).
+-   Build your drivers using the target configurations and platforms that the WDK provides. Always use the latest version of the WDK that supports the version of Windows that you want to target. For info about WDK and operating system version support, see [Installing preview versions of the Windows Driver Kit](../installing-preview-versions-wdk.md) and [Download the Windows Driver Kit](../download-the-wdk.md).
 -   If your driver must run only on a single version of Windows, build the driver for the target configuration and platform that matches your target Windows version.
 -   If you want your driver to run on multiple versions of Windows, but without features that are available only on newer versions, build the driver for the oldest version that you want the driver to support.
 
@@ -124,5 +124,3 @@ If you are targeting Windows 10 or Windows 11, set both **TargetVersion** and **
 
 * [Writing drivers for different versions of Windows](../gettingstarted/platforms-and-driver-versions.md)
 * [Building a Driver](building-a-driver.md)
- 
-

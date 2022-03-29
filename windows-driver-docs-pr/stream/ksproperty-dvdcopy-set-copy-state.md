@@ -21,7 +21,7 @@ The **KSPROPERTY_DVDCOPY_SET_COPY_STATE** property sets the copy state of the DV
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| Yes | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KS_DVDCOPY_SET_COPY_STATE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_set_copy_state) |
+| Yes | Yes | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KS_DVDCOPY_SET_COPY_STATE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_set_copy_state) |
 
 The property value (operation data) is a KS_DVDCOPY_SET_COPY_STATE structure that describes the copyright protection state of the DVD decoder stream.
 

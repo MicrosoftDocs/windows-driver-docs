@@ -21,7 +21,7 @@ The **KSPROPERTY_DVDCOPY_DVD_KEY1** property retrieves the first bus key that is
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| No | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KS_DVDCOPY_BUSKEY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_buskey) |
+| No | Yes | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KS_DVDCOPY_BUSKEY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_buskey) |
 
 The property value (operation data) is a KS_DVDCOPY_BUSKEY structure that describes the DVD decoders first bus key.
 

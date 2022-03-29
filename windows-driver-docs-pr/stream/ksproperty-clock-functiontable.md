@@ -23,7 +23,7 @@ This property fills in a [**KSCLOCK_FUNCTIONTABLE**](/windows-hardware/drivers/d
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| Yes | No | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSCLOCK_FUNCTIONTABLE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksclock_functiontable) |
+| Yes | No | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSCLOCK_FUNCTIONTABLE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksclock_functiontable) |
 
 ## Remarks
 

@@ -21,7 +21,7 @@ The KS_AM_RATE_ExactRateChange property is not yet implemented.
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| Yes | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KS_AM_ExactRateChange**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_exactratechange) |
+| Yes | Yes | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KS_AM_ExactRateChange**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ks_am_exactratechange) |
 
 The property value (operation data) is a **KS_AM_ExactRateChange** structure.
 

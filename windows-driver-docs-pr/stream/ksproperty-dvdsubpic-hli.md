@@ -21,7 +21,7 @@ The **KSPROPERTY_DVDSUBPIC_HLI** property specifies the rectangle of the subpict
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| No | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSPROPERTY_SPHLI**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sphli) |
+| No | Yes | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSPROPERTY_SPHLI**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sphli) |
 
 The property value (operation data) is a **KSPROPERTY_SPHLI** structure that describes the DVD highlight information to change.
 

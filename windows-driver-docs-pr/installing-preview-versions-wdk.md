@@ -34,7 +34,7 @@ Starting with the February 2022 Windows Insider Preview (WIP) release of the WDK
 **Notes**
 
 * Device-specific user-mode drivers: Certain device-specific stacks (for example graphics) will continue to have x86/ARM32 user-mode components to support x86/ARM32 apps.
-* Testing drivers: As with previous driver kits, WDK continues to support running tests directly in Visual Studio. The WDK major version must match the target OS major version. For details, see [Testing a Driver](/windows-hardware/drivers/develop/testing-a-driver).
+* Testing drivers: As with previous driver kits, WDK continues to support running tests directly in Visual Studio. The WDK major version must match the target OS major version. For details, see [Testing a Driver](./develop/testing-a-driver.md).
 
 
 **FAQ**

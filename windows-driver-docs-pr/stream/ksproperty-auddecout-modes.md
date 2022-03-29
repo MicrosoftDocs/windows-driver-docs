@@ -23,7 +23,7 @@ This property is read-only.
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| Yes | No | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | DWORD |
+| Yes | No | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | DWORD |
 
 The property value (operation data) is a DWORD that represents a bitmask of the audio output modes that the audio decoder supports.
 

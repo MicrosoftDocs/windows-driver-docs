@@ -19,7 +19,7 @@ The **KSEVENT_CAMERACONTROL_ZOOM** event is triggered when a camera zoom operati
 
 | Get | Set | Target | Event descriptor type | Event value type |
 |--|--|--|--|--|
-| No | Yes | Filter | [**KSEVENT**](/windows-hardware/drivers/stream/ksevent-structure) | [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata) |
+| No | Yes | Filter | [**KSEVENT**](./ksevent-structure.md) | [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata) |
 
 ## Remarks
 

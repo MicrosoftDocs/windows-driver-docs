@@ -21,7 +21,7 @@ The **KSPROPERTY_GENERAL_COMPONENTID** property is an optional property that all
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| Yes | No | Filter | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSCOMPONENTID**](/windows-hardware/drivers/ddi/ks/ns-ks-kscomponentid) |
+| Yes | No | Filter | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSCOMPONENTID**](/windows-hardware/drivers/ddi/ks/ns-ks-kscomponentid) |
 
 ## Remarks
 
@@ -33,6 +33,6 @@ The [**KSCOMPONENTID**](/windows-hardware/drivers/ddi/ks/ns-ks-kscomponentid) st
 
 ## See also
 
-[**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure)  
+[**KSPROPERTY**](./ksproperty-structure.md)  
 
 [**KSCOMPONENTID**](/windows-hardware/drivers/ddi/ks/ns-ks-kscomponentid)

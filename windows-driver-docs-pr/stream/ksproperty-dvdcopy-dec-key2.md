@@ -21,7 +21,7 @@ The **KSPROPERTY_DVDCOPY_DEC_KEY2** property retrieves the second bus key that i
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| Yes | No | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KS_DVDCOPY_BUSKEY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_buskey) |
+| Yes | No | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KS_DVDCOPY_BUSKEY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_buskey) |
 
 The property value (operation data) is a **KS_DVDCOPY_BUSKEY** structure that describes the DVD decoder's second bus key.
 

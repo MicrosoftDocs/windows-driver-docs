@@ -21,7 +21,7 @@ User-mode clients use this property to get or set a camera's flash control chara
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| Yes | Yes | Filter | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSPROPERTY_CAMERACONTROL_FLASH_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_flash_s) |
+| Yes | Yes | Filter | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSPROPERTY_CAMERACONTROL_FLASH_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_flash_s) |
 
 ## Remarks
 

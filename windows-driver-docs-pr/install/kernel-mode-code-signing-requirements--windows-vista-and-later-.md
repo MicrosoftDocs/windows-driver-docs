@@ -29,7 +29,7 @@ For info about signing and dashboard submission, see [Get drivers signed by Micr
 <a href="" id="--------64-bit-versions-of-windows-starting-with-"></a> **64-bit versions of Windows starting with Windows Vista**  
 The kernel-mode code signing policy requires that a kernel-mode driver be signed as follows:
 
--   A kernel-mode boot-start driver must have an embedded [Software Publisher Certificate (SPC)](/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates) signature. This applies to any type of PnP or non-PnP kernel-mode boot-start driver.
+-   A kernel-mode boot-start driver must have an embedded [Software Publisher Certificate (SPC)](./deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md) signature. This applies to any type of PnP or non-PnP kernel-mode boot-start driver.
 
 -   A non-PnP kernel-mode driver that is not a boot-start driver must have either a [catalog file](catalog-files.md) with an SPC signature or the driver file must include an embedded SPC signature.
 

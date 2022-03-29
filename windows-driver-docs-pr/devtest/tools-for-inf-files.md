@@ -14,8 +14,6 @@ ms.date: 04/20/2017
 
 | Topic | Description |
 | --- | --- |
-| Stampinf | [Stampinf (Stampinf.exe)](/windows-hardware/drivers/devtest/stampinf) is a tool that you can use to update common INF and INX file directives when you build the driver. |
-| InfVerif | [InfVerif (InfVerif.exe)](/windows-hardware/drivers/devtest/infverif) is a tool that you can use to test a driver INF file. In addition to reporting INF syntax problems, the tool reports if the INF file is universal. |
-| Inf2Cat | [Inf2Cat (Inf2Cat.exe)](/windows-hardware/drivers/devtest/inf2cat) is a command-line tool that determines whether a driver package's INF file can be digitally-signed for a specified list of Windows versions. |
-
-
+| Stampinf | [Stampinf (Stampinf.exe)](./stampinf.md) is a tool that you can use to update common INF and INX file directives when you build the driver. |
+| InfVerif | [InfVerif (InfVerif.exe)](./infverif.md) is a tool that you can use to test a driver INF file. In addition to reporting INF syntax problems, the tool reports if the INF file is universal. |
+| Inf2Cat | [Inf2Cat (Inf2Cat.exe)](./inf2cat.md) is a command-line tool that determines whether a driver package's INF file can be digitally-signed for a specified list of Windows versions. |

@@ -21,7 +21,7 @@ A single Windows test device will not be able to run all power state tests, as s
 
 ## Provisioning the System Under Test
 
-Systems under test (SUTs) must be provisioned for the power state tests before they are run. Follow the instructions to provision the PC for power tests provided by the WDK 10 document [Provision a computer for driver deployment and testing (WDK 10)](/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1)
+Systems under test (SUTs) must be provisioned for the power state tests before they are run. Follow the instructions to provision the PC for power tests provided by the WDK 10 document [Provision a computer for driver deployment and testing (WDK 10)](../gettingstarted/provision-a-target-computer-wdk-8-1.md)
 
 ## Supported devices
 

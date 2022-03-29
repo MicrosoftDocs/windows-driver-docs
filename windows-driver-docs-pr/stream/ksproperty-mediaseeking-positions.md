@@ -21,7 +21,7 @@ The **KSPROPERTY_MEDIASEEKING_POSITIONS** property sets the media time and/or th
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| No | Yes | Filter | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSPROPERTY_POSITIONS**](/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_positions) |
+| No | Yes | Filter | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSPROPERTY_POSITIONS**](/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_positions) |
 
 ## Remarks
 
@@ -35,4 +35,4 @@ The **KSPROPERTY_POSITIONS** structure specifies the current position and stop p
 
 [**KSPROPERTY_POSITIONS**](/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_positions)
 
-[**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure)
+[**KSPROPERTY**](./ksproperty-structure.md)

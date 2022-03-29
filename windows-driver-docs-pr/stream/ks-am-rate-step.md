@@ -21,7 +21,7 @@ The **KS_AM_RATE_Step** property is not yet implemented.
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |-----|-----|--------|--------------------------|---------------------|
-| No  | Yes | Pin    | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure)   | **KS_AM_Step**          |
+| No  | Yes | Pin    | [**KSPROPERTY**](./ksproperty-structure.md)   | **KS_AM_Step**          |
 
   [**KSPROPERTY**]: /windows-hardware/drivers/stream/ksproperty-structure
 

@@ -46,7 +46,7 @@ It is theoretically possible to control Application Verifier through a kernel de
 
 ### Installing the debugging tools
 
-To download the latest version of the tools, see [Download Debugging Tools for Windows](/windows-hardware/drivers/debugger/debugger-download-tools).
+To download the latest version of the tools, see [Download Debugging Tools for Windows](../debugger/debugger-download-tools.md).
 
 ### Configuring Hardware for User-Mode Debugging
 
@@ -76,7 +76,7 @@ if you are performing remote debugging, the symbol file location depends on the 
 
 The debugger uses a variety of environment variables to indicate a number of important settings.
 
-For more information on debuggers, see [Getting Started with Windows Debugging](/windows-hardware/drivers/debugger/getting-started-with-windows-debugging)
+For more information on debuggers, see [Getting Started with Windows Debugging](../debugger/getting-started-with-windows-debugging.md)
 
 ### Configuring Application Verifier with the Debugger using the Command line
 
@@ -105,7 +105,7 @@ Flags should be a sum of the bits representing the desired options. The individu
 
 ## Debugging with !avrf 
  
-The !avrf extension controls the settings of Application Verifier and displays a variety of output produced by Application Verifier. For additional information about the !arvrf extension, see [!avrf](/windows-hardware/drivers/debugger/-avrf) in the debugger docs.
+The !avrf extension controls the settings of Application Verifier and displays a variety of output produced by Application Verifier. For additional information about the !arvrf extension, see [!avrf](../debugger/-avrf.md) in the debugger docs.
 
 ### Syntax
 
@@ -384,7 +384,7 @@ You may also want to look at some logs at this point. You may want to use the .r
  
 ### !cs debugger extension
 
-!cs can be used in both user-mode debugger and kernel debugger to display information about critical sections in the current process. For additional information about the !cs extension, see [!cs](/windows-hardware/drivers/debugger/-cs) in the debugger docs.
+!cs can be used in both user-mode debugger and kernel debugger to display information about critical sections in the current process. For additional information about the !cs extension, see [!cs](../debugger/-cs.md) in the debugger docs.
 
 Matching symbols with type information is required, especially for ntdll.dll.
 
@@ -573,7 +573,7 @@ Displayed 1 exception log entries.
 
 ## Debugging Handles Errors 
  
-!htrace can be used in both user-mode debugger and kernel debugger to display stack trace information for one or all the handles in a process. This information is available if handle tracing is enabled for the process – automatically enabled if handle checking is enabled in the application verifier. Stack traces are saved every time the process is opening or closing a handle or when it is referencing an invalid handle.  For additional information about the !htrace extension, see [!htrace](/windows-hardware/drivers/debugger/-htrace) in the debugger docs.
+!htrace can be used in both user-mode debugger and kernel debugger to display stack trace information for one or all the handles in a process. This information is available if handle tracing is enabled for the process – automatically enabled if handle checking is enabled in the application verifier. Stack traces are saved every time the process is opening or closing a handle or when it is referencing an invalid handle.  For additional information about the !htrace extension, see [!htrace](../debugger/-htrace.md) in the debugger docs.
 
 The kernel debugger syntax for this extension is:
 
@@ -760,7 +760,7 @@ Dumped 0x3 stack traces.
  
 ### Heap verifier debugger extension
 
-The heap verifier debugger extension is part of the !heap extension (NT heap debugger extension). Simple help can be obtained with !heap -? or more extensive with !heap -p -? . The current extension does not detect on its own if page heap is enabled for a process and act accordingly. For now the user of the extension needs to know that page heap is enabled and use commands prefixed by !heap -p . For additional information about the !htrace extension, see [!heap](/windows-hardware/drivers/debugger/-heap) in the debugger docs.
+The heap verifier debugger extension is part of the !heap extension (NT heap debugger extension). Simple help can be obtained with !heap -? or more extensive with !heap -p -? . The current extension does not detect on its own if page heap is enabled for a process and act accordingly. For now the user of the extension needs to know that page heap is enabled and use commands prefixed by !heap -p . For additional information about the !htrace extension, see [!heap](../debugger/-heap.md) in the debugger docs.
 
 `!heap -p`
 
@@ -996,10 +996,4 @@ To read this output, remember that the entries are dumped starting with the most
 [Application Verifier - Frequently Asked Questions](application-verifier-faqs.md)
 
  
-
- 
-
-
-
-
 

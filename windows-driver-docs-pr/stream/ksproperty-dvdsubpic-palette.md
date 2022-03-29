@@ -21,7 +21,7 @@ The **KSPROPERTY_DVDSUBPIC_PALETTE** property specifies the color palette that t
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| No | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSPROPERTY_SPPAL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sppal) |
+| No | Yes | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSPROPERTY_SPPAL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksproperty_sppal) |
 
 The property value (operation data) is a **KSPROPERTY_SPPAL** structure that describes the color palette to use for the subpicture display in the YUV color format.
 

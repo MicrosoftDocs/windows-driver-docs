@@ -21,7 +21,7 @@ The **KSPROPERTY_DVDCOPY_DISC_KEY** property retrieves the disc key information 
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| No | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KS_DVDCOPY_DISCKEY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_disckey) |
+| No | Yes | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KS_DVDCOPY_DISCKEY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvdcopy_disckey) |
 
 The property value (operation data) is a **KS_DVDCOPY_DISCKEY** structure that describes the DVD's disc key.
 

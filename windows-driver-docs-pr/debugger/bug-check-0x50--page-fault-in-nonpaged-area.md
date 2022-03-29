@@ -116,7 +116,7 @@ For general blue screen troubleshooting information, see [**Blue Screen Data**](
 
 To determine the specific cause and to create a code fix, programming experience and access to the source code of the faulting module, is required. 
 
-Typically, the referenced address is in freed memory or is simply invalid. This cannot be protected by a **try - except** handler -- it can only be protected by a probe or similar programming techniques. For information on buffer handling and probes in file system drivers, see [Buffer Handling](/windows-hardware/drivers/ifs/buffer-handling). For information on best practices for driver development, and common mistakes made by driver developers, see [Surface Team Driver Development Best Practices](/windows-hardware/drivers/kernel/surface-team-driver-development-best-practices).
+Typically, the referenced address is in freed memory or is simply invalid. This cannot be protected by a **try - except** handler -- it can only be protected by a probe or similar programming techniques. For information on buffer handling and probes in file system drivers, see [Buffer Handling](../ifs/buffer-handling.md). For information on best practices for driver development, and common mistakes made by driver developers, see [Surface Team Driver Development Best Practices](../kernel/surface-team-driver-development-best-practices.md).
 
 Use the [**!analyze**](-analyze.md) debug extension with the -v verbose option to display information about the bug check to work to determine the root cause.
 

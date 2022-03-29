@@ -21,7 +21,7 @@ The **KSPROPERTY_MEDIASEEKING_AVAILABLE** property retrieves the media time span
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| Yes | No | Filter | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSPROPERTY_MEDIAAVAILABLE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_mediaavailable) |
+| Yes | No | Filter | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSPROPERTY_MEDIAAVAILABLE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_mediaavailable) |
 
 ## Remarks
 
@@ -37,4 +37,4 @@ k
 
 [KSPROPSETID_MediaSeeking](kspropsetid-mediaseeking.md)
 
-[**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure)
+[**KSPROPERTY**](./ksproperty-structure.md)

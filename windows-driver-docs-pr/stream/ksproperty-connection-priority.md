@@ -21,7 +21,7 @@ Clients use the **KSPROPERTY_CONNECTION_PRIORITY** property to get or set the pr
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| Yes | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSPRIORITY**](/windows-hardware/drivers/ddi/ks/ns-ks-kspriority) |
+| Yes | Yes | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSPRIORITY**](/windows-hardware/drivers/ddi/ks/ns-ks-kspriority) |
 
 ## Remarks
 

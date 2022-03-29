@@ -51,7 +51,7 @@ KSStudio provides the following features:
 
 The KsStudio utility (Ksstudio.exe) is included with the software tools in the Microsoft Windows Driver Kit (WDK). 
 
-To install KsStudio download the WDK and run the WDK setup application. For more information, see [Download the Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
+To install KsStudio download the WDK and run the WDK setup application. For more information, see [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
 
 Setup installs the platform-specific versions of KsStudio.exe in the x86, and amd64 subdirectories of the tools directory.
 
@@ -87,10 +87,5 @@ These two windows show details and statistics on the IRPs received by all specif
 [KSStudio - KS Monitor](ksstudio-utility-ks-monitor.md)
 
 [KSStudio - Usage Examples](ksstudio-utility-usage-examples.md)
-
-
- 
-
-
 
 

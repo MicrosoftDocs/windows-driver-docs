@@ -21,7 +21,7 @@ Clients use the **KSPROPERTY_CONNECTION_DATAFORMAT** property to set the current
 
 | Get | Set | Target | Property descriptor type | Property value type |
 |--|--|--|--|--|
-| No | Yes | Pin | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | [**KSDATAFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) |
+| No | Yes | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSDATAFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) |
 
 ## Remarks
 

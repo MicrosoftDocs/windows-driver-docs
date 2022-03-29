@@ -21,7 +21,7 @@ ms.date: 10/22/2021
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| Yes | No | Filter | [**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure) | LONGLONG |
+| Yes | No | Filter | [**KSPROPERTY**](./ksproperty-structure.md) | LONGLONG |
 
 ## Remarks
 
@@ -35,4 +35,4 @@ The media time is returned as a value of type LONGLONG.
 
 [KSPROPSETID_MediaSeeking](kspropsetid-mediaseeking.md)
 
-[**KSPROPERTY**](/windows-hardware/drivers/stream/ksproperty-structure)
+[**KSPROPERTY**](./ksproperty-structure.md)

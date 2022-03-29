@@ -21,9 +21,8 @@ An emulation driver can emulate actual IEEE hardware by adding a unit directory 
 
 Microsoft provides a virtual device mechanism that vendors can use to implement emulation drivers.
 
-For information about how to create a virtual device, see [Creating IEEE 1394 Virtual Devices](/windows-hardware/drivers/ieee/how-drivers-manage-ieee-1934-virtual-devices).
+For information about how to create a virtual device, see [Creating IEEE 1394 Virtual Devices](./how-drivers-manage-ieee-1934-virtual-devices.md).
 
-For information about how to remove a virtual device, see [Removing IEEE 1394 Virtual Devices](/windows-hardware/drivers/ieee/how-drivers-manage-ieee-1934-virtual-devices).
+For information about how to remove a virtual device, see [Removing IEEE 1394 Virtual Devices](./how-drivers-manage-ieee-1934-virtual-devices.md).
 
 With just a few exceptions, the emulation driver can use the complete 1394 DDI in the same way that a function driver for a real device would. For an explanation of differences in the way real and virtual devices use the 1394 DDI, see [Supporting Requests in IEEE 1394 Virtual Device Drivers](./supporting-requests-in-ieee-1394-virtual-device-drivers.md).
-

@@ -11,7 +11,7 @@ ms.date: 12/06/2021
 
 # Obtaining PCI Segment Values
 
-To obtain the Segment value for PCI Multi-Segment, use the [DEVPKEY_Device_LocationInfo](/windows-hardware/drivers/install/devpkey-device-locationinfo) key.
+To obtain the Segment value for PCI Multi-Segment, use the [DEVPKEY_Device_LocationInfo](../install/devpkey-device-locationinfo.md) key.
 
 Supported methods to obtain this property are:
 
