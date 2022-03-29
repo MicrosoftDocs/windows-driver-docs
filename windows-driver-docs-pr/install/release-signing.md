@@ -54,7 +54,7 @@ Microsoft provides a specific cross-certificate for each CA that issues SPCs for
 
 In order to use an SPC to sign a driver in a manner that complies with the [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md), the certificate information must first be contained in a Personal Information Exchange (*.pfx*) file. The information that is contained in the *.pfx* file must then be added to the Personal certificate store of the local computer that signs a driver.
 
-A CA might issue a *.pfx* file that contains the necessary certificate information. If so, you can add the .*pfx* file to the Personal certificate store by following the instructions described in [Installing a .pfx File in the Personal Certificate Store](./deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md#installing-a-pfx-file-in-the-personal-certificate-store).
+A CA might issue a *.pfx* file that contains the necessary certificate information. If so, you can add the .*pfx* file to the Personal certificate store by following the instructions described in [Installing a .pfx File in the Personal Certificate Store](./deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md).
 
 However, a CA might issue the following pairs of files:
 
