@@ -370,10 +370,6 @@
       href: using-setupapi-to-verify-driver-authenticode-signatures.md
     - name: "Determining the Parent of a Device"
       href: determining-the-parent-of-a-device.md
-    - name: "Obtaining the Parent of a Device in the Device Tree"
-      href: obtaining-the-parent-of-a-device-in-the-device-tree.md
-    - name: "Determining the Parent of a Nonpresent Device"
-      href: determining-the-parent-of-a-nonpresent-device.md
     - name: "Obtaining the Original Source Path of an Installed INF File"
       href: obtaining-the-original-source-path-of-an-installed-inf-file.md
     - name: "Guidelines for Using SetupAPI"
