@@ -59,7 +59,7 @@ The DEVPKEY_DEVICE_Manufacturer device property represents the name of the manuf
 
 The value of DEVPKEY_DEVICE_Manufacturer is set by the *manufacturer-identifier* entry value for a device that is supplied by the [**INF Manufacturer section**](./inf-manufacturer-section.md) of the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_DEVICE_Manufacturer.
+You can call [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_DEVICE_Manufacturer.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_Manufacturer property key. Instead, you can use the corresponding SPDRP_MFG identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 

@@ -63,7 +63,7 @@ When you group all the devnodes that originated from an instance of a single dev
 
 The DEVPKEY_Device_ContainerId can be used to determine the device container grouping of *devnodes* in a system. For a given devnode, you can determine all the devnodes that belong to the same container by completing the following steps:
 
--   Call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to query DEVPKEY_Device_ContainerId for the given devnode. Windows returns the ContainerID *GUID* value for the device container to which that devnode belongs.
+-   Call [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to query DEVPKEY_Device_ContainerId for the given devnode. Windows returns the ContainerID *GUID* value for the device container to which that devnode belongs.
 
 -   Enumerate all devnodes on the computer and query each devnode for its DEVPKEY_Device_ContainerId. Each ContainerId value that matches the ContainerId value of the original devnode is part of same container.
 

@@ -73,7 +73,7 @@ A resource identifier must be an integer value, which corresponds to a resource 
 
 -   If the supplied identifier is positive, for example, the value *n*, Windows uses the resource in the executable file whose identifier is the n+1 lowest value in the executable file. For example, if the value of *n* is 1, Windows uses the resource whose identifier has the second lowest value in the executable file.
 
-You can set the value of DEVPKEY_DrvPkg_Icon by an [**INF AddProperty directive**](./inf-addproperty-directive.md) that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs the device. You can retrieve the value of DEVPKEY_DrvPkg_Icon by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
+You can set the value of DEVPKEY_DrvPkg_Icon by an [**INF AddProperty directive**](./inf-addproperty-directive.md) that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs the device. You can retrieve the value of DEVPKEY_DrvPkg_Icon by calling [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
 The following is an example of how to use an INF **AddProperty** directive to set DEVPKEY_DrvPkg_Icon for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 

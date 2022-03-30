@@ -60,7 +60,7 @@ The DEVPKEY_Device_DriverInfSection device property represents the name of the [
 
 Windows sets the value of the PKEY_Device_DriverInfSection property.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of PKEY_Device_DriverInfSection.
+You can call [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of PKEY_Device_DriverInfSection.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the PKEY_Device_DriverInfSection property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **InfSection** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](./accessing-device-driver-properties.md).
 
