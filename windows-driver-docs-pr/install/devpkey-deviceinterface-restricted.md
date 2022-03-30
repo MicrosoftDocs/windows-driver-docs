@@ -57,22 +57,8 @@ You can call [**CM_Get_Device_Interface_Property**](/windows/win32/api/cfgmgr32/
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available starting with Windows 8.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Devpkey.h (include Devpkey.h)</td>
-</tr>
-</tbody>
-</table>
+**Version**: Windows 8 and later versions of Windows
+**Header**: Devpkey.h (include Devpkey.h)
 
 ## See also
 
