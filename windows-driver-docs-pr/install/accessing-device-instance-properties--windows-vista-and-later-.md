@@ -20,6 +20,9 @@ In Windows Vista and later versions of Windows, applications and installers can
 -   [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
 
     The **SetupDiSetDeviceProperty** function [sets a device property for a device instance](setting-a-device-instance-property-value.md).
+    
+> [!NOTE]
+> SetupApi is not supported on all editions of Windows.  When possible, you should use lower layer APIs such as those available via [CfgMgr32.dll](/windows/win32/api/cfgmgr32/). See [Porting from SetupApi to CfgMgr32](porting-from-setupapi-to-cfgmgr32.md) for tips.
 
 For information about how to access device properties on Windows Server 2003, Windows XP, and Windows 2000, see [Using SetupAPI and Configuration Manager to Access Device Properties](using-setupapi-and-configuration-manager-to-access-device-properties.md).
 
