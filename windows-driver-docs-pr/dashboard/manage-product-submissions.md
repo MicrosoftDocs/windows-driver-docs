@@ -16,7 +16,7 @@ https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/
 Methods for managing product submissions
 
 | Method | URI | Description |
-|--|--|--|
+|:-|:-|:-|
 | GET | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}` | [Get status/data for a specific product](get-a-product.md) |
 | GET | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionId}` | [Get status/data for a specific submission of a product](get-a-submission.md) |
 | POST | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/products` | [Create a new product](create-a-new-product.md) |
