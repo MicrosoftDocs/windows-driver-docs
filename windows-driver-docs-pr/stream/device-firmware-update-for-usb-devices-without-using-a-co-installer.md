@@ -2,6 +2,7 @@
 title: Device firmware update For USB devices without using a co-installer
 description: Outlines a recommended method to update USB device firmware without a co-installer.
 ms.date: 03/21/2022
+ms.custom: contperf-fy22q3
 ---
 
 # Device firmware update For USB devices without using a co-installer
