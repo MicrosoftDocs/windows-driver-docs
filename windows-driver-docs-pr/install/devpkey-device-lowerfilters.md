@@ -59,7 +59,7 @@ The DEVPKEY_Device_LowerFilters device property represents a list of the service
 
 The value of the DEVPKEY_Device_LowerFilters property is set when a lower-level device filter driver is installed for a device. For more information about how to install a device filter driver, see [Installing a Filter Driver](./installing-a-filter-driver.md).
 
-You can call [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) and [**CM_Set_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_set_devnode_propertyw) or [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) to retrieve and set the value of DEVPKEY_Device_LowerFilters.
+You can call [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_LowerFilters.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_LowerFilters property key. Instead, you can use the corresponding SPDRP_LOWERFILTERS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
