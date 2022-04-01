@@ -51,7 +51,7 @@ The value DEVPKEY_Numa_Proximity_Domain is a numeric value that represents a dom
 
 Typically, the operating system sets the value of DEVPKEY_Numa_Proximity_Domain by retrieving the corresponding information from system firmware.
 
-You can retrieve the value of DEVPKEY_Numa_Proximity_Domain by calling **IoSetDevicePropertyData** or **IoGetDevicePropertyData** in a device driver.
+You can retrieve the value of DEVPKEY_Numa_Proximity_Domain by calling **IoGetDevicePropertyData** in a device driver.
 
 You can also call [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Numa_Proximity_Domain.
 
