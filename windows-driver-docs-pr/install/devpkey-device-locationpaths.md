@@ -59,7 +59,7 @@ The DEVPKEY_Device_LocationPaths device property represents the location of a de
 
 Windows sets the value of DEVPKEY_Device_LocationPaths.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_LocationPaths.
+You can call [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_LocationPaths.
 
 Windows Server 2003 supports this property, but does not support the DEVPKEY_Device_LocationPaths property key. Instead, you can use the corresponding SPDRP_LOCATION_PATHS identifier to access the value of the property on Windows Server 2003. For information about how to access this property value on Windows Server 2003, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 

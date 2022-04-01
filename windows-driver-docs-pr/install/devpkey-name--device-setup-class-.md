@@ -51,7 +51,7 @@ You can use the value of DEVPKEY_NAME to identify a device setup class to an end
 
 If DEVPKEY_DeviceClass_Name is set, the value of DEVPKEY_NAME is the same as the value of the [**DEVPKEY_DeviceClass_Name**](devpkey-deviceclass-name.md) device property. Otherwise, the DEVPKEY_NAME value is the same as the value of the [**DEVPKEY_DeviceClass_ClassName**](devpkey-deviceclass-classname.md) device property.
 
-You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_NAME for a device setup class.
+You can call [**CM_Get_Class_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_class_propertyw) or [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) to retrieve the value of DEVPKEY_NAME for a device setup class.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support a corresponding name property. However, these earlier versions of Windows do support properties that correspond to DEVPKEY_DeviceClass_Name and DEVPKEY_DeviceClass_ClassName.
 

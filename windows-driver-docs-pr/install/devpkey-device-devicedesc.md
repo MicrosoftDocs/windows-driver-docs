@@ -59,7 +59,7 @@ The DEVPKEY_Device_DeviceDesc device property represents a description of a devi
 
 The value of DEVPKEY_Device_DeviceDesc is set by the *device-description* entry value that is supplied by the [**INF Models section**](./inf-models-section.md) of the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_DEVICE_DeviceDesc.
+You can call [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_DEVICE_DeviceDesc.
 
 You can retrieve the value of the [**DEVPKEY_NAME**](devpkey-name--device-instance-.md) device instance property to retrieve the name of the device as it should appear in a user interface item.
 

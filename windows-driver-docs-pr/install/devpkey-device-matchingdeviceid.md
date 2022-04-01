@@ -60,7 +60,7 @@ The DEVPKEY_Device_MatchingDeviceId device property represents the [hardware ID]
 
 Windows sets the value of DEVPKEY_Device_MatchingDeviceId. The hardware IDs and compatible IDs for a device are supplied by the *device-description* entries that are included in the [**INF *Models* section**](./inf-ddinstall-section.md) of the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of PKEY_Device_MatchingDeviceId.
+You can call [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_MatchingDeviceId.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_MatchingDeviceId property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **MatchingDeviceId** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](./accessing-device-driver-properties.md).
 

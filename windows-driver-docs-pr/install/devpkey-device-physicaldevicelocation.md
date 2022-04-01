@@ -59,7 +59,7 @@ The DEVPKEY_Device_PhysicalDeviceLocation device property encapsulates the physi
 
 Windows sets the value of DEVPKEY_Device_PhysicalDeviceLocation with the physical device location information. The format of the information is defined in the ACPI 4.0a Specification, section 6.1.6.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_PhysicalDeviceLocation.
+You can call [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_PhysicalDeviceLocation.
 
 ## Requirements
 

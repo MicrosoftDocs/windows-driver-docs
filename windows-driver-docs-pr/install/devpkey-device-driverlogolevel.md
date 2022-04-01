@@ -55,7 +55,7 @@ The DEVPKEY_Device_DriverLogoLevel device property represents the Microsoft Wind
 
 Windows sets the value of DEVPKEY_Device_DriverLogoLevel.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DriverLogoLevel.
+You can call [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DriverLogoLevel.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property.
 
