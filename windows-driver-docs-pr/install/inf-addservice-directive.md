@@ -271,7 +271,7 @@ SubType=trigger-subtype
 ...
 ```
 
-### Service-Trigger-Install Section Entries and Values:
+### Service-Trigger-Install-Section Entries and Values:
 **TriggerType**=*trigger-type*
 
 Specifies the service trigger event type in one of the following numeric values, expressed either in decimal or, as is shown in the following list, hexadecimal notation:
@@ -329,7 +329,7 @@ Action=failure-action-type,delay
 ...
 ```
 
-### Service-Failure-Actions-Install Section Entries and Values:
+### Service-Failure-Actions-Install-Section Entries and Values:
 **ResetPeriod**=*reset-period*
 
 Specifies the time after which to reset the failure count to zero if there are no failures, in seconds. The failure count is not reset by default when a reset period is not specified.
