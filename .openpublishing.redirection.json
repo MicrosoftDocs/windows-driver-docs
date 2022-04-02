@@ -41,6 +41,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/install/determining-the-parent-of-a-nonpresent-device.md",
+            "redirect_URL": "/windows-hardware/drivers/install/determining-the-parent-of-a-device",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/install/device-installation-files.md",
             "redirect_URL": "/windows-hardware/drivers/install/components-of-a-driver-package",
             "redirect_document_id": false
@@ -68,6 +73,11 @@
         {
             "source_path": "windows-driver-docs-pr/install/obtaining-a-software-publisher-certificate--spc-.md",
             "redirect_URL": "/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/obtaining-the-parent-of-a-device-in-the-device-tree.md",
+            "redirect_URL": "/windows-hardware/drivers/install/determining-the-parent-of-a-device",
             "redirect_document_id": false
         },
         {
