@@ -416,16 +416,6 @@
         href: writing-a-device-installation-application.md
       - name: "Guidelines for Writing Device Installation Applications"
         href: guidelines-for-writing-device-installation-applications.md
-      - name: "Installing Device-Specific Applications"
-        href: installing-device-specific-applications.md
-      - name: "Device Installation Application Not Included in the Driver Package"
-        href: device-installation-application-not-included-in-the-driver-package.md
-      - name: "Device Installation Application that is Included in the Driver Package"
-        href: device-installation-application-that-is-included-in-the-driver-package.md
-      - name: "Device Installation Application Started through AutoRun"
-        href: device-installation-application-started-through-autorun.md
-      - name: "Guidelines for Starting Device Installation Applications through Co-installers"
-        href: guidelines-for-starting-device-installation-applications-through-co-in.md
     - name: "Preloading Driver Packages"
       href: preloading-driver-packages.md
     - name: "Preinstalling Driver Packages"
@@ -756,8 +746,16 @@
         href: code-example--finish-install-actions-in-a-class-installer.md
       - name: "Code Example: Finish-Install Actions in a Co-installer"
         href: code-example--finish-install-actions-in-a-co-installer.md
+      - name: "Device Installation Application Not Included in the Driver Package"
+        href: device-installation-application-not-included-in-the-driver-package.md
+      - name: "Device Installation Application that is Included in the Driver Package"
+        href: device-installation-application-that-is-included-in-the-driver-package.md
+      - name: "Guidelines for Starting Device Installation Applications through Co-installers"
+        href: guidelines-for-starting-device-installation-applications-through-co-in.md
     - name: "DIFx Guidelines"
       href: difx-guidelines.md
+    - name: "Device Installation Application Started through AutoRun"
+      href: device-installation-application-started-through-autorun.md
 - name: "INF Sections"
   items: 
   - name: "INF ClassInstall32 Section"
