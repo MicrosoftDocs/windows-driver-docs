@@ -416,8 +416,6 @@
         href: writing-a-device-installation-application.md
       - name: "Guidelines for Writing Device Installation Applications"
         href: guidelines-for-writing-device-installation-applications.md
-      - name: "Installing Device-Specific Applications"
-        href: installing-device-specific-applications.md
     - name: "Preloading Driver Packages"
       href: preloading-driver-packages.md
     - name: "Preinstalling Driver Packages"
