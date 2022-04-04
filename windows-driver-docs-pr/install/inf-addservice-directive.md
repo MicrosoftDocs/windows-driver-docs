@@ -118,8 +118,9 @@ ServiceBinary=path-to-service
 [Dependencies=depend-on-item-name[,depend-on-item-name]
 [Security="security-descriptor-string"]...]
 [ServiceSidType=value]
-[DelayedAutoStart=true/false]
+[DelayedAutoStart=value]
 [AddTrigger=service-trigger-install-section[, service-trigger-install-section, ...]]
+[FailureActions=service-failure-actions-install-section]
 ```
 
 Each *service-install-section* must have at least the **ServiceType**, **StartType**, **ErrorControl**, and **ServiceBinary** entries as shown here. However, the remaining entries are optional.
@@ -242,13 +243,13 @@ For more information about how to specify security descriptors, see [Creating Se
 
 This entry can use any valid value as described in [SERVICE_SID_INFO](/windows/win32/api/winsvc/ns-winsvc-service_sid_info).
 
-<a href="" id="description-description-string"></a>**DelayedAutoStart**=*true/false*
+<a href="" id="description-description-string"></a>**DelayedAutoStart**=*value*
 
 **Note:** This value can only be used for *Win32 Services* and is only available with Windows 10 2004 and above.
 
 Contains the delayed auto-start setting of an auto-start service.
 
-If this member is TRUE, the service is started after other auto-start services are started plus a short delay. Otherwise, the service is started during system boot.
+If this member is 0x0, the service is started during system boot. Otherwise, the service is started after other auto-start services are started plus a short delay.
 
 This setting is ignored unless the service is an auto-start service.
 
@@ -256,9 +257,9 @@ For more information, see [this page](/windows/win32/api/winsvc/ns-winsvc-servic
 
 <a href="" id="description-description-string"></a>**AddTrigger**=*service-trigger-install-section [, service-trigger-install-section, ...]*
 
-Specifies the trigger events to be registered for the Win32 service so that the service can be started or stopped when a trigger event occurs. For more information about service trigger events, see [Service Trigger Events](/windows/desktop/Services/service-trigger-events).
+Specifies the trigger events to be registered for the *Win32 service* so that the service can be started or stopped when a trigger event occurs. For more information about service trigger events, see [Service Trigger Events](/windows/desktop/Services/service-trigger-events).
 
-Each named service-trigger-install section referenced by an AddTrigger directive has the following format:
+Each named *service-trigger-install-section* referenced by an AddTrigger directive has the following format:
 
 ```
 [service-trigger-install-section]
@@ -270,7 +271,7 @@ SubType=trigger-subtype
 ...
 ```
 
-### Service-Trigger-Install Section Entries and Values:
+### Service-Trigger-Install-Section Entries and Values:
 **TriggerType**=*trigger-type*
 
 Specifies the service trigger event type in one of the following numeric values, expressed either in decimal or, as is shown in the following list, hexadecimal notation:
@@ -278,7 +279,7 @@ Specifies the service trigger event type in one of the following numeric values,
 **0x1** (SERVICE_TRIGGER_TYPE_DEVICE_INTERFACE_ARRIVAL)
 Indicates that event is triggered when a device of the specified device interface class arrives or is present when the system starts. 
 
-For more information, see [SERVICE_TRIGGER structure](/windows/win32/api/winsvc/ns-winsvc-service_trigger)
+For more information, see [SERVICE_TRIGGER structure](/windows/win32/api/winsvc/ns-winsvc-service_trigger).
 
 **Action**=*action-type*
 
@@ -288,7 +289,7 @@ Specifies the action to take when the specified trigger event occurs.
 
 **0x2** (SERVICE_TRIGGER_ACTION_SERVICE_STOP) stops the service when the specified trigger event occurs.
 
-For more information, see [SERVICE_TRIGGER structure](/windows/win32/api/winsvc/ns-winsvc-service_trigger)
+For more information, see [SERVICE_TRIGGER structure](/windows/win32/api/winsvc/ns-winsvc-service_trigger).
 
 **SubType**=*trigger-subtype*
 
@@ -309,6 +310,44 @@ For more information, see [SERVICE_TRIGGER_SPECIFIC_DATA_ITEM structure](/window
 The best practice for using the **AddTrigger** directive is to trigger start the service on device interface arrival. For more information, see [Win32 Services Interacting with Devices](./best-practices-win32services-interacting-with-devices.md).
 
 **Note: AddTrigger** syntax is only available in **Windows 10 Version 2004** and forward.
+
+**FailureActions**=*service-failure-actions-install-section*
+
+Optionally specifies the action the service controller should take when a service fails.
+
+The service control manager counts the number of times each service has failed since the system booted. The count is reset to 0 if the service has not failed for reset-period seconds. When the service fails for the Nth time, the service controller performs the action specified in element N of the Action list. If N is greater than the number of Actions, the service controller repeats the last action in the list.
+
+The *service-failure-actions-install-section* referenced by a FailureActions directive has the following format:
+
+```
+[service-failure-actions-install-section]
+
+[ResetPeriod=reset-period]
+[NonCrashFailures=value]
+Action=failure-action-type,delay
+[Action=failure-action-type,delay]
+...
+```
+
+### Service-Failure-Actions-Install-Section Entries and Values:
+**ResetPeriod**=*reset-period*
+
+Specifies the time after which to reset the failure count to zero if there are no failures, in seconds. The failure count is not reset by default when a reset period is not specified.
+
+For more information, see [SERVICE_FAILURE_ACTIONSW structure](/windows/win32/api/winsvc/ns-winsvc-service_failure_actionsw).
+
+**NonCrashFailures**=*value*
+
+Contains the failure actions flag setting of a service. The setting determines when failure actions are to be executed. A value of 0x0 indicates False and a value of 0x1 indicates True.
+
+For more information, see [SERVICE_FAILURE_ACTIONS_FLAG structure (winsvc.h)](/windows/win32/api/winsvc/ns-winsvc-service_failure_actions_flag).
+
+**Action**=*failure-action-type*,*delay*
+
+Specifies an action that the service control manager can perform. Multiple Action entries form an ordered list of failure actions.
+For more information, see [SC_ACTION structure](/windows/win32/api/winsvc/ns-winsvc-sc_action).
+
+**Note: FailureActions** syntax can only be used for *Win32 Services* and is available starting in Windows 11 Insider Preview Build 22581.
 
 
 ### Specifying Driver Load Order
