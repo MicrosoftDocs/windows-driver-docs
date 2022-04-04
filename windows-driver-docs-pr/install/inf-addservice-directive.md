@@ -340,14 +340,14 @@ For more information, see [SERVICE_FAILURE_ACTIONSW structure](/windows/win32/ap
 
 Contains the failure actions flag setting of a service. The setting determines when failure actions are to be executed. A value of 0x0 indicates False and a value of 0x1 indicates True.
 
-For more information, see [this page](/windows/win32/api/winsvc/ns-winsvc-service_failure_actions_flag).
+For more information, see [SERVICE_FAILURE_ACTIONS_FLAG structure (winsvc.h)](/windows/win32/api/winsvc/ns-winsvc-service_failure_actions_flag).
 
 **Action**=*failure-action-type*,*delay*
 
 Specifies an action that the service control manager can perform. Multiple Action entries form an ordered list of failure actions.
 For more information, see [SC_ACTION structure](/windows/win32/api/winsvc/ns-winsvc-sc_action).
 
-**Note: FailureActions** syntax can only be used for *Win32 Services* and is only available in **Windows 11 Version WDK 22581** and forward.
+**Note: FailureActions** syntax can only be used for *Win32 Services* and is available starting in Windows 11 Insider Preview Build 22581.
 
 
 ### Specifying Driver Load Order
