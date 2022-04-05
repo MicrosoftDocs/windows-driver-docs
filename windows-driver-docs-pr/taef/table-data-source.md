@@ -268,7 +268,7 @@ Associating the XML Table with a given test method in managed code is very simil
 
 Notice that the Second function is not data-driven. **You may choose to have only some of your tests to be data driven. You also have the option of having each test have its table defined in a different XML file.**
 
-In Line 36, you define a private TestContext property - like VSTS recommends (<https://msdn2.microsoft.com/library/ms404699(VS.80).aspx>). You also define public assessors to this property (lines 30 through 34). Internally TAEF loads the dictionary property of TestContext with the corresponding data set in focus.
+In Line 36, you define a private TestContext property - like VSTS recommends [TestContext Class](/dotnet/api/microsoft.visualstudio.testtools.unittesting.testcontext). You also define public assessors to this property (lines 30 through 34). Internally TAEF loads the dictionary property of TestContext with the corresponding data set in focus.
 
 TestContext is defined in Microsoft.VisualStudio.TestTools.UnitTesting. See line 3 in the example above. You should already be including this as a reference in your managed test authoring. **So, no additional references are required for authoring data driven tests.**
 
