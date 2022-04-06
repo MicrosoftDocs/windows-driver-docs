@@ -47,51 +47,36 @@ Configures Inf2Cat to verify that a [driver package's](../install/driver-package
 
 |Windows version|Version identifier|
 |--- |--- |
-|Windows 10 x86 19H1 Edition|10_19H1_X86|
-|Windows 10 x64 19H1 Edition|10_19H1_X64|
-|Windows 10 ARM64 19H1 Edition|10_19H1_ARM64|
-|Windows 10 x86 RS5 Edition|10_RS5_X86|
-|Windows 10 x64 RS5 Edition|10_RS5_X64|
-|Windows 10 ARM64 RS5 Edition|10_RS5_ARM64|
-|Windows Server RS5 x64 Edition|ServerRS5_X64|
-|Windows Server RS5 ARM64 Edition|ServerRS5_ARM64|
-|Windows 10 x86 RS4 Edition|10_RS4_X86|
-|Windows 10 x64 RS4 Edition|10_RS4_X64|
-|Windows 10 ARM64 RS4 Edition|10_RS4_ARM64|
-|Windows 10 x86 RS3 Edition|10_RS3_X86|
-|Windows 10 x64 RS3 Edition|10_RS3_X64|
-|Windows 10 ARM64 RS3 Edition|10_RS3_ARM64|
-|Windows 10 x86 RS2 Edition|10_RS2_X86|
-|Windows 10 x64 RS2 Edition|10_RS2_X64|
-|Windows 10 x86 RS1 Edition|10_AU_X86|
-|Windows 10 x64 RS1 Edition|10_AU_X64|
+|Windows 11 x64 Edition|10_CO_X64|
+|Windows 11 ARM64 Edition|10_CO_ARM64|
+|Windows Server 2022 x64 Edition|ServerFE_X64|
+|Windows Server 2022 ARM64 Edition|ServerFE_ARM64|
+|Windows 10, version 21H2, 21H1, 20H2, 2004 x86 Edition|10_VB_X86|
+|Windows 10, version 21H2, 21H1, 20H2, 2004 x64 Edition|10_VB_X64|
+|Windows 10, version 21H2, 21H1, 20H2, 2004 ARM64 Edition|10_VB_ARM64|
+|Windows 10, version 1909, 1903 x86 Edition|10_19H1_X86|
+|Windows 10, version 1909, 1903 x64 Edition|10_19H1_X64|
+|Windows 10, version 1909, 1903 ARM64 Edition|10_19H1_ARM64|
+|Windows 10, version 1809 x86 Edition|10_RS5_X86|
+|Windows 10, version 1809 x64 Edition|10_RS5_X64|
+|Windows 10, version 1809 ARM64 Edition|10_RS5_ARM64|
+|Windows Server 2019 x64 Edition|ServerRS5_X64|
+|Windows Server 2019 ARM64 Edition|ServerRS5_ARM64|
+|Windows 10, version 1803 x86 Edition|10_RS4_X86|
+|Windows 10, version 1803 x64 Edition|10_RS4_X64|
+|Windows 10, version 1803 ARM64 Edition|10_RS4_ARM64|
+|Windows 10, version 1709 x86 Edition|10_RS3_X86|
+|Windows 10, version 1709 x64 Edition|10_RS3_X64|
+|Windows 10, version 1709 ARM64 Edition|10_RS3_ARM64|
+|Windows 10, version 1703 x86 Edition|10_RS2_X86|
+|Windows 10, version 1703 x64 Edition|10_RS2_X64|
+|Windows 10, version 1607 x86 Edition|10_AU_X86|
+|Windows 10, version 1607 x64 Edition|10_AU_X64|
 |Windows Server 2016 x64 Edition|SERVER2016_X64|
 |Windows 10 x86 Edition|10_X86|
 |Windows 10 x64 Edition|10_X64|
 |Windows Server 2016|Server10_X64|
 |Windows Server 2016 on ARM|Server10_ARM64|
-|Windows 8.1 x86 Edition|6_3_X86|
-|Windows 8.1 x64 Edition|6_3_X64|
-|Windows 8.1 ARM Edition|6_3_ARM|
-|Windows Server 2012 R2|Server6_3_X64|
-|Windows 8 x64 Edition|8_X64|
-|Windows 8 x86 Edition|8_X86|
-|Windows 8 ARM Edition|8_ARM|
-|Windows Server 2012|Server8_X64|
-|Windows Server 2008 R2 x64 Edition|Server2008R2_X64|
-|Windows Server 2008 R2 Itanium Edition|Server2008R2_IA64|
-|Windows 7 x64 Edition|7_X64|
-|Windows 7 x86 Edition|7_X86|
-|Windows Server 2008 x64 Edition|Server2008_X64|
-|Windows Server 2008 Itanium Edition|Server2008_IA64|
-|Windows Server 2008 x86 Edition|Server2008_X86|
-|Windows Vista x64 Edition|Vista_X64|
-|Windows Vista x86 Edition|Vista_X86|
-|Windows XP x64 Edition|XP_X64|
-|Windows XP x86 Edition|XP_X86|
-|Windows Server 2003 x64 Edition|Server2003_X64|
-|Windows Server 2003 Itanium Edition|Server2003_IA64|
-|Windows Server 2003 x86 Edition|Server2003_X86|
 
 > [!NOTE]
 > Starting with Windows Server 2008 R2, Windows server operating systems will no longer support x86-based platforms.
