@@ -1,7 +1,7 @@
 ---
 title: Storage Firmware Update (SFU) driver
 description: Provides implementation details for the Storage Firmware Update (SFU) driver.
-ms.date: 10/07/2020
+ms.date: 04/07/2022
 ms.topic: article
 ---
 
@@ -149,7 +149,7 @@ The StorFwUpdate component does not perform any validation (signature verificati
 
 ## Storage drive firmware update example
 
-Since both INFs require CHIDs for Windows Update distribution, hardware partners can validate the solution locally using PNPUTIL.EXE as shown below.
+Since both INFs require CHIDs for Windows Update distribution, hardware partners can validate the solution locally using [PNPUTIL.EXE](../devtest/pnputil.md) as shown below.
 
 ### Requirements
 

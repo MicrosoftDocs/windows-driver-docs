@@ -1,7 +1,7 @@
 ---
 title: SPI tests in MITT
 description: SPI test modules that are included in the MITT software package.
-ms.date: 04/27/2021
+ms.date: 04/07/2022
 ---
 
 # SPI tests in MITT
@@ -38,57 +38,56 @@ Perform these steps on the system under test that has the I<sup>2</sup>C control
 
 1. Install WITTTest driver included in the MITT software package by running this command:
 
-    **pnputil –a witttest.inf**
+    **pnputil -a witttest.inf**
 
-    ![intall witt driver for the mitt board.](images/mitt-install-witt.png)
+    ![install witt driver for the mitt board.](images/mitt-install-witt.png)
 
     >[!NOTE]
-    >PnpUtil.exe is included in %SystemRoot%\\System32.
+    >[PnpUtil.exe](../devtest/pnputil.md) is included in %SystemRoot%\\System32.
 
 2. Modify the system ACPI and include this ASL table. You can use the [Microsoft ASL compiler](../bringup/microsoft-asl-compiler.md).
 
     >[!NOTE]
     >Change "\\\\\_SB\_.SPI1" to ACPI entry name for the SPI controller to test as shown here. It defines three test targets with SPI frequency at 1Mhz, 5Mhz, and 20Mhz.
 
-``` syntax
-Device(TP1) {
-    Name (_HID, "SPT0001")
-    Name (_CID, "WITTTest")
-    Method(_CRS, 0x0, NotSerialized)
-    {
-      Name (RBUF, ResourceTemplate ()
-      {
-          SpiSerialBus (0x0000, PolarityLow, FourWireMode, 0x08,ControllerInitiated, 0x000F4240, ClockPolarityLow,ClockPhaseFirst, "\\_SB.SPI1", 0x00, ResourceConsumer, , )
-      })
-      Return(RBUF)
+    ```asl
+    Device(TP1) {
+        Name (_HID, "SPT0001")
+        Name (_CID, "WITTTest")
+        Method(_CRS, 0x0, NotSerialized)
+        {
+          Name (RBUF, ResourceTemplate ()
+          {
+              SpiSerialBus (0x0000, PolarityLow, FourWireMode, 0x08,ControllerInitiated, 0x000F4240, ClockPolarityLow,ClockPhaseFirst, "\\_SB.SPI1", 0x00, ResourceConsumer, , )
+          })
+          Return(RBUF)
+        }
     }
-}
-Device(TP2) {
-    Name (_HID, "SPT0002")
-    Name (_CID, "WITTTest")
-    Method(_CRS, 0x0, NotSerialized)
-    {
-      Name (RBUF, ResourceTemplate ()
-      {
-          SpiSerialBus (0x0000, PolarityLow, FourWireMode, 0x08,ControllerInitiated, 0x004c4b40, ClockPolarityLow,ClockPhaseFirst, "\\_SB.SPI1", 0x00, ResourceConsumer, , )
-      })
-      Return(RBUF)
+    Device(TP2) {
+        Name (_HID, "SPT0002")
+        Name (_CID, "WITTTest")
+        Method(_CRS, 0x0, NotSerialized)
+        {
+          Name (RBUF, ResourceTemplate ()
+          {
+              SpiSerialBus (0x0000, PolarityLow, FourWireMode, 0x08,ControllerInitiated, 0x004c4b40, ClockPolarityLow,ClockPhaseFirst, "\\_SB.SPI1", 0x00, ResourceConsumer, , )
+          })
+          Return(RBUF)
+        }
     }
-}
-Device(TP3) {
-    Name (_HID, "SPT0003")
-    Name (_CID, "WITTTest")
-    Method(_CRS, 0x0, NotSerialized)
-    {
-      Name (RBUF, ResourceTemplate ()
-      {
-          SpiSerialBus (0x0000, PolarityLow, FourWireMode, 0x08,ControllerInitiated, 0x01312d00, ClockPolarityLow,ClockPhaseFirst, "\\_SB.SPI1", 0x00, ResourceConsumer, , )
-      })
-      Return(RBUF)
+    Device(TP3) {
+        Name (_HID, "SPT0003")
+        Name (_CID, "WITTTest")
+        Method(_CRS, 0x0, NotSerialized)
+        {
+          Name (RBUF, ResourceTemplate ()
+          {
+              SpiSerialBus (0x0000, PolarityLow, FourWireMode, 0x08,ControllerInitiated, 0x01312d00, ClockPolarityLow,ClockPhaseFirst, "\\_SB.SPI1", 0x00, ResourceConsumer, , )
+          })
+          Return(RBUF)
+        }
     }
-}
-
-```
+    ```
 
 ## SPI automation tests
 

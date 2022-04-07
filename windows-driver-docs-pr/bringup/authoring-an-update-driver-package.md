@@ -1,7 +1,7 @@
 ---
 title: Authoring an update driver package
 description: This topic provides information about authoring an update driver package and provides example INF file settings and configurations.
-ms.date: 08/17/2021
+ms.date: 04/07/2022
 ---
 
 # Authoring an update driver package
@@ -317,7 +317,7 @@ After the driver package is signed, it can be installed using one of the followi
 
     1. Use the "Browse my computer for driver software" option to locate and install a newer firmware resource update driver package onto the firmware resource device. This operation will ensure that the specified firmware resource update driver package is in fact newer than any existing firmware resource update driver package that might already be on the firmware resource device before adding it to the Windows Driver Store and initiating an installation.
 
-- **pnputil**. For automated testing, the pnputil command line utility can be used from an Administrator-elevated command prompt to import a firmware resource update driver package into the Windows Driver Store and initiate a device installation on any/all applicable firmware resource devices that are presently using an older firmware resource version, as established by the DriverVer of their currently installed driver package INF file or a lack of a 3rd party supplied driver package INF file altogether. For example, use the following command line to add and install X:\\firmware.inf:
+- **pnputil**. For automated testing, the [PnpUtil](../devtest/pnputil.md) command line utility can be used from an Administrator-elevated command prompt to import a firmware resource update driver package into the Windows Driver Store and initiate a device installation on any/all applicable firmware resource devices that are presently using an older firmware resource version, as established by the DriverVer of their currently installed driver package INF file or a lack of a 3rd party supplied driver package INF file altogether. For example, use the following command line to add and install X:\\firmware.inf:
 
     ```console
     pnputil -i -a X:\firmware.inf
