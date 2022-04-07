@@ -2721,6 +2721,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/install/accessing-registry-entry-values-under-the-class-registry-key.md",
+            "redirect_URL": "/windows-hardware/drivers/install/accessing-device-setup-class-properties",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/install/adding-software-components-with-an-inf-file.md",
             "redirect_URL": "/windows-hardware/drivers/install/using-a-component-inf-file",
             "redirect_document_id": false
@@ -2738,6 +2743,21 @@
         {
             "source_path": "windows-driver-docs-pr/install/creating-an-extensible-inf-file.md",
             "redirect_URL": "/windows-hardware/drivers/install/using-an-extension-inf-file",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/determining-which-properties-are-set-for-a-device-class.md",
+            "redirect_URL": "/windows-hardware/drivers/install/accessing-device-class-properties--windows-vista-and-later-",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/determining-which-properties-are-set-for-a-device-instance.md",
+            "redirect_URL": "/windows-hardware/drivers/install/accessing-device-instance-properties--windows-vista-and-later-",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/determining-which-properties-are-set-for-a-device-interface.md",
+            "redirect_URL": "/windows-hardware/drivers/install/accessing-device-interface-properties--windows-vista-and-later-",
             "redirect_document_id": false
         },
         {
@@ -2806,8 +2826,48 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/install/retrieving-a-device-class-property-value.md",
+            "redirect_URL": "/windows-hardware/drivers/install/accessing-device-class-properties--windows-vista-and-later-",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/retrieving-a-device-instance-property-value.md",
+            "redirect_url": "/windows-hardware/drivers/install/accessing-device-instance-properties--windows-vista-and-later-",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/retrieving-a-device-interface-property-value.md",
+            "redirect_URL": "/windows-hardware/drivers/install/accessing-device-interface-properties--windows-vista-and-later-",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/retrieving-spcrp-xxx-properties.md",
+            "redirect_URL": "/windows-hardware/drivers/install/accessing-device-setup-class-properties",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/install/selecting-the-appropriate-signature-type.md",
             "redirect_url": "/windows-hardware/drivers/install/digital-signatures-and-pnp-device-installation--windows-vista-and-late",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/setting-a-device-class-property-value.md",
+            "redirect_URL": "/windows-hardware/drivers/install/accessing-device-class-properties--windows-vista-and-later-",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/setting-a-device-instance-property-value.md",
+            "redirect_url": "/windows-hardware/drivers/install/accessing-device-instance-properties--windows-vista-and-later-",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/setting-a-device-interface-property-value.md",
+            "redirect_URL": "/windows-hardware/drivers/install/accessing-device-interface-properties--windows-vista-and-later-",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/setting-spcrp-xxx-properties.md",
+            "redirect_URL": "/windows-hardware/drivers/install/accessing-device-setup-class-properties",
             "redirect_document_id": false
         },
         {
@@ -2853,6 +2913,11 @@
         {
             "source_path": "windows-driver-docs-pr/install/using-dpinst-to-uninstall-driver-packages.md",
             "redirect_URL": "/windows-hardware/drivers/install/difx-guidelines",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/using-setupapi-to-access-device-properties--windows-vista-and-later-.md",
+            "redirect_URL": "/windows-hardware/drivers/install/accessing-properties",
             "redirect_document_id": false
         },
         {

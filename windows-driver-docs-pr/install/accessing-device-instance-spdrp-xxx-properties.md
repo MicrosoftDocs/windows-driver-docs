@@ -1,68 +1,50 @@
 ---
-title: Accessing Device Instance SPDRP_Xxx Properties
+title: Accessing Device Instance Properties (Prior to Windows Vista)
 description: Accessing Device Instance SPDRP_Xxx Properties
-ms.date: 04/20/2017
+ms.date: 04/04/2022
 ---
 
-# Accessing Device Instance SPDRP_Xxx Properties
+# Accessing Device Instance Properties (Prior to Windows Vista)
 
+In Windows Vista and later versions of Windows, the [unified device property model](unified-device-property-model--windows-vista-and-later-.md) supports the device instance properties that correspond to the CM_DRP_Xxx identifiers that are defined in *cfgmgr32.h* and the SPDRP_Xxx identifiers that are defined in *Setupapi.h*. These properties characterize the configuration of a device instance. The unified device property model uses [property keys](property-keys.md) to represent these properties. Windows Server 2003, Windows XP, and Windows 2000 also support these device properties. However, these earlier versions of Windows do not support the property keys of the unified device property model. Instead, these earlier Windows versions use the CM_DRP_*Xxx* or SPDRP_*Xxx* identifiers to represent and access the device instance properties.
 
-In Windows Vista and later versions of Windows, the [unified device property model](unified-device-property-model--windows-vista-and-later-.md) supports the device instance properties that correspond to the SPDRP_Xxx identifiers that are defined in *Setupapi.h*. These properties characterize the configuration of a device instance. The unified device property model uses [property keys](property-keys.md) to represent these properties. Windows Server 2003, Windows XP, and Windows 2000 also support these device driver properties. However, these earlier versions of Windows do not support the property keys of the unified device property model. Instead, these earlier Windows versions use the SPDRP_*Xxx* identifiers to represent and access the device instance properties.
+To maintain compatibility with these earlier versions of Windows, Windows Vista and later versions also support using CM_DRP_Xxx or SPDRP_Xxx identifiers to access device instance properties. However, you should use the corresponding property keys to access these properties on Windows Vista and later versions of Windows.
 
-To maintain compatibility with these earlier versions of Windows, Windows Vista and later versions also support using SPDRP_Xxx identifiers to access device instance properties. However, you should use the corresponding property keys to access these properties on Windows Vista and later versions of Windows.
+For a list of the system-defined device instance properties that have corresponding CM_DRP_Xxx or SPDRP_Xxx identifiers, see the following table.
 
-For a list of the system-defined device instance properties that have corresponding SPDRP_Xxx identifiers, see [Device Properties That Have Corresponding SPDRP_Xxx Identifiers](/previous-versions/ff541469(v=vs.85)). The device instance properties are listed by the property keys that you use to access the properties in Windows Vista and later versions of Windows. The information that is provided with each property key includes the corresponding SPDRP_*Xxx* identifiers that you can use to access the property on Windows Server 2003, Windows XP, and Windows 2000.
+|Unified property model property | CM_DRP_Xxx value | SPDRP_Xxx value |
+| --- | --- | ---|
+| [**DEVPKEY_Device_DeviceDesc**](devpkey-device-devicedesc.md) | CM_DRP_DEVICEDESC | SPDRP_DEVICEDESC |
+| [**DEVPKEY_Device_HardwareIds**](devpkey-device-hardwareids.md) | CM_DRP_HARDWAREID | SPDRP_HARDWAREID |
+| [**DEVPKEY_Device_CompatibleIds**](devpkey-device-compatibleids.md) | CM_DRP_COMPATIBLEIDS | SPDRP_COMPATIBLEIDS |
+| [**DEVPKEY_Device_Service**](devpkey-device-service.md) | CM_DRP_SERVICE | SPDRP_SERVICE |
+| [**DEVPKEY_Device_Class**](devpkey-device-class.md) | CM_DRP_CLASS | SPDRP_CLASS |
+| [**DEVPKEY_Device_ClassGuid**](devpkey-device-classguid.md) | CM_DRP_CLASSGUID | SPDRP_CLASSGUID |
+| [**DEVPKEY_Device_ConfigFlags**](devpkey-device-configflags.md) | CM_DRP_CONFIGFLAGS | SPDRP_CONFIGFLAGS |
+| [**DEVPKEY_Device_Manufacturer**](devpkey-device-manufacturer.md) | CM_DRP_MFG | SPDRP_MFG |
+| [**DEVPKEY_Device_FriendlyName**](devpkey-device-friendlyname.md) | CM_DRP_FRIENDLYNAME | SPDRP_FRIENDLYNAME |
+| [**DEVPKEY_Device_LocationInfo**](devpkey-device-locationinfo.md) | CM_DRP_LOCATION_INFORMATION | SPDRP_LOCATION_INFORMATION |
+| [**DEVPKEY_Device_PDOName**](devpkey-device-pdoname.md) | CM_DRP_PHYSICAL_DEVICE_OBJECT_NAME | SPDRP_PHYSICAL_DEVICE_OBJECT_NAME |
+| [**DEVPKEY_Device_Capabilities**](devpkey-device-capabilities.md) | CM_DRP_CAPABILITIES | SPDRP_CAPABILITIES |
+| [**DEVPKEY_Device_UINumber**](devpkey-device-uinumber.md) | CM_DRP_UI_NUMBER | SPDRP_UI_NUMBER |
+| [**DEVPKEY_Device_BusTypeGuid**](devpkey-device-bustypeguid.md) | CM_DRP_BUSTYPEGUID | SPDRP_BUSTYPEGUID |
+| [**DEVPKEY_Device_LegacyBusType**](devpkey-device-legacybustype.md)] | CM_DRP_LEGACYBUSTYPE | SPDRP_LEGACYBUSTYPE |
+| [**DEVPKEY_Device_BusNumber**](devpkey-device-busnumber.md) | CM_DRP_BUSNUMBER | SPDRP_BUSNUMBER |
+| [**DEVPKEY_Device_EnumeratorName**](devpkey-device-enumeratorname.md) | CM_DRP_ENUMERATOR_NAME | SPDRP_ENUMERATOR_NAME |
+| [**DEVPKEY_Device_Security**](devpkey-device-security.md) | CM_DRP_SECURITY | SPDRP_SECURITY |
+| [**DEVPKEY_Device_SecuritySDS**](devpkey-device-securitysds.md) | CM_DRP_SECURITY_SDS | SPDRP_SECURITY_SDS |
+| [**DEVPKEY_Device_DevType**](devpkey-device-devtype.md) | CM_DRP_DEVTYPE | SPDRP_DEVTYPE |
+| [**DEVPKEY_Device_Exclusive**](devpkey-device-exclusive.md) | CM_DRP_EXCLUSIVE | SPDRP_EXCLUSIVE |
+| [**DEVPKEY_Device_Characteristics**](devpkey-device-characteristics.md) | CM_DRP_CHARACTERISTICS | SPDRP_CHARACTERISTICS |
+| [**DEVPKEY_Device_Address**](devpkey-device-address.md) | CM_DRP_ADDRESS | SPDRP_ADDRESS |
+
 
 For information about how to use property keys to access device instance properties in Windows Vista and later versions of Windows, see [Accessing Device Instance Properties (Windows Vista and Later)](accessing-device-instance-properties--windows-vista-and-later-.md).
 
-### Accessing a Device Property
+## Accessing a Device Property
 
-To access device instance properties that correspond to the SPDRP_*Xxx* identifiers on Windows Server 2003, Windows XP, and Windows 2000, use the following SetupAPI functions:
+To access device instance properties that correspond to the CM_DRP_*Xxx* or SPDRP_*Xxx* identifiers on Windows Server 2003, Windows XP, and Windows 2000, use the following functions:
 
--   [**SetupDiGetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya)
+-   [**CM_Get_DevNode_Registry_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_registry_propertyw) or [**SetupDiGetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya) to retrieve a property.
 
-    This function retrieves a device property that is specified by a SPDRP_*Xxx* identifier.
-
--   [**SetupDiSetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya)
-
-    This function sets the device property that is specified by a SPDRP_*Xxx* identifier.
-
-### Retrieving a Device Property
-
-To retrieve a device property on Windows Server 2003, Windows XP, and Microsoft Windows 2000, follow these steps:
-
-1.  Call **SetupDiGetDeviceRegistryProperty** to retrieve the size, in bytes, of the property value. Supply the following parameter values:
-
-    -   Set *DeviceInfoSet* to a handle to a device information set that contains the device instance for which to retrieve the requested property value.
-    -   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that represents the device instance for which to retrieve the requested property value.
-    -   Set *Property* to an SPDRP_*Xxx* identifier. For a list of these identifiers and a description of the corresponding device properties, see the description of the *Property* parameter that is included with [**SetupDiSetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya).
-    -   Set *PropertyRegDataType* to a pointer to a DWORD-typed variable.
-    -   Set *PropertyBuffer* to **NULL**.
-    -   Set *PropertyBufferSize* to zero.
-    -   Set *RequiredSize* to a pointer to a DWORD-typed variable that receives, the size, in bytes of the property value.
-
-    In response to the call to [**SetupDiSetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya), **SetupDiGetDeviceRegistryProperty** sets \**RequiredSize* to the size, in bytes, of the buffer that is required to retrieve the property value, logs the error code ERROR_INSUFFICIENT_BUFFER, and returns **FALSE**. A subsequent call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return the most recently logged error code.
-
-2.  Call **SetupDiGetDeviceRegistryProperty** again and supply the same parameter values that were supplied in the first call, except for the following changes:
-
-    -   Set *PropertyBuffer* to a pointer to a BYTE-typed buffer that receives the requested property value.
-    -   Set *PropertyBufferSize* to the size, in bytes, of the *PropertyBuffer* buffer. The first call to **SetupDiGetDeviceRegistryProperty** retrieved the required size of the PropertyBuffer buffer in \**RequiredSize*.
-
-    If the second call to **SetupDiGetDeviceRegistryProperty** succeeds, **SetupDiGetDeviceRegistryProperty** sets \**PropertyRegDataType* to the registry data type of the property value, sets the *PropertyBuffer* buffer to the property value, sets \**RequiredSize* to the size, in bytes, of the property value that was retrieved, and returns **TRUE**. If the function call fails, **SetupDiGetDeviceRegistryProperty** returns **FALSE** and a call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return the logged error code.
-
-### Setting a Device Property
-
-To set a device property on Windows Server 2003, Windows XP, and Windows 2000, call [**SetupDiSetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya) and supply the following parameter values:
-
--   Set *DeviceInfoSet* to a handle to a device information set that contains the device instance for which to set property value.
-
--   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that represents the device instance for which to set property value.
-
--   Set *Property* to an SPDRP_*Xxx* identifier.
-
--   Set *PropertyBuffer* to a pointer to a BYTE-typed buffer that contains the property value.
-
--   Set *PropertyBufferSize* to the size, in bytes, of the property value that is supplied in the *PropertyBuffer* buffer.
-
-If this call to **SetupDiSetDeviceRegistryProperty** succeeds, **SetupDiSetDeviceRegistryProperty** sets the device instance property and returns **TRUE**. If the function call fails, **SetupDiSetDeviceRegistryProperty** returns **FALSE** and a call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return the logged error code.
-
+-   [**CM_Set_DevNode_Registry_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_set_devnode_registry_propertyw) or [**SetupDiSetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya) to set a property.

@@ -570,34 +570,16 @@
         href: properties-and-related-system-defined-items.md
       - name: "INF File Entry Values That Modify Device Properties"
         href: inf-file-entry-values-that-modify-device-properties--windows-vista-and.md
-      - name: "SetupAPI"
+      - name: "Accessing Properties"
         items: 
-        - name: "Using SetupAPI to Access Device Properties"
-          href: using-setupapi-to-access-device-properties--windows-vista-and-later-.md
+        - name: "Accessing Properties"
+          href: accessing-properties.md
         - name: "Accessing Device Instance Properties"
           href: accessing-device-instance-properties--windows-vista-and-later-.md
-        - name: "Determining Which Properties Are Set for a Device Instance"
-          href: determining-which-properties-are-set-for-a-device-instance.md
-        - name: "Retrieving A Device Instance Property Value"
-          href: retrieving-a-device-instance-property-value.md
-        - name: "Setting a Device Instance Property Value"
-          href: setting-a-device-instance-property-value.md
         - name: "Accessing Device Class Properties"
           href: accessing-device-class-properties--windows-vista-and-later-.md
-        - name: "Determining Which Properties Are Set for a Device Class"
-          href: determining-which-properties-are-set-for-a-device-class.md
-        - name: "Retrieving a Device Class Property Value"
-          href: retrieving-a-device-class-property-value.md
-        - name: "Setting a Device Class Property Value"
-          href: setting-a-device-class-property-value.md
         - name: "Accessing Device Interface Properties"
           href: accessing-device-interface-properties--windows-vista-and-later-.md
-        - name: "Determining Which Properties are Set for a Device Interface"
-          href: determining-which-properties-are-set-for-a-device-interface.md
-        - name: "Retrieving a Device Interface Property Value"
-          href: retrieving-a-device-interface-property-value.md
-        - name: "Setting a Device Interface Property Value"
-          href: setting-a-device-interface-property-value.md
         - name: "Using the INF AddProperty Directive and the INF DelProperty Directive"
           href: using-the-inf-addproperty-directive-and-the-inf-delproperty-directive.md
     - name: "Device Property Model (Windows Server 2003, Windows XP, and Windows 2000)"
@@ -608,7 +590,7 @@
         href: inf-file-entry-values-that-modify-device-properties.md
       - name: "Using SetupAPI and Configuration Manager to Access Device Properties"
         href: using-setupapi-and-configuration-manager-to-access-device-properties.md
-      - name: "Accessing Device Instance SPDRP_Xxx Properties"
+      - name: "Accessing Device Instance Properties"
         href: accessing-device-instance-spdrp-xxx-properties.md
       - name: "Retrieving a Device Instance Identifier"
         href: retrieving-a-device-instance-identifier.md
@@ -620,23 +602,15 @@
         href: retrieving-device-relations.md
       - name: "Accessing Device Setup Class Properties"
         href: accessing-device-setup-class-properties.md
-      - name: "Retrieving SPCRP_Xxx Properties"
-        href: retrieving-spcrp-xxx-properties.md
-      - name: "Setting SPCRP_Xxx Properties"
-        href: setting-spcrp-xxx-properties.md
       - name: "Accessing the Friendly Name and Class Name of a Device Setup Class"
         href: accessing-the-friendly-name-and-class-name-of-a-device-setup-class.md
       - name: "Accessing Icon Properties of a Device Setup Class"
         href: accessing-icon-properties-of-a-device-setup-class.md
-      - name: "Accessing Registry Entry Values Under the Class Registry Key"
-        href: accessing-registry-entry-values-under-the-class-registry-key.md
-      - name: "Accessing the Co-installers Registry Entry Value of a Device Setup Class"
-        href: accessing-the-co-installers-registry-entry-value-of-a-device-setup-cla.md
       - name: "Accessing Device Interface Class Properties"
         href: accessing-device-interface-class-properties.md
       - name: "Accessing Device Interface Properties"
         href: accessing-device-interface-properties.md
-      - name: "Accessing Custom Device Properties"
+      - name: "Accessing Custom Settings"
         href: accessing-custom-device-properties.md
   - name: "System Restarts"
     items: 
@@ -720,6 +694,8 @@
         href: registering-a-class-co-installer.md
       - name: "Calling the Default DIF Code Handlers"
         href: calling-the-default-dif-code-handlers.md
+      - name: "Accessing the Co-installers Registry Entry Value of a Device Setup Class"
+        href: accessing-the-co-installers-registry-entry-value-of-a-device-setup-cla.md
     - name: "Finish Install Actions"
       items:
       - name: "Finish-Install Actions"
