@@ -1,7 +1,7 @@
 ---
 title: CFU virtual HID device firmware update simulation
 description: Provides a walkthrough of a simulated firmware update on a virtual HID device.
-ms.date: 10/01/2020
+ms.date: 04/07/2022
 ms.topic: article
 ---
 
@@ -114,7 +114,7 @@ This section provides an example of installing a firmware update on the sample [
 
     `pnputil /add-driver CfuVirtualHidDeviceFwUpdate.inf /install`
 
-    This command will return the PnP Utility output. For example:
+    This command will return the [PnP Utility](../devtest/pnputil.md) output. For example:
 
     ![pnp utility output.](images/install-cfu-virtual-device-firmware-update-2.png)
 

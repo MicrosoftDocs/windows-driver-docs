@@ -1,7 +1,7 @@
 ---
 title: Universal Windows Drivers for Audio
 description: In Windows 10 you can write a universal audio driver that will work across many types of hardware.
-ms.date: 02/17/2022
+ms.date: 04/07/2022
 ---
 
 # Universal Windows Drivers for Audio
@@ -111,7 +111,7 @@ The traditional INF files continue to be available in the SYSVAD sample.
 
 | File name                      | Description                                                                    |
 |--------------------------------|--------------------------------------------------------------------------------|
-| tabletaudiosample.inf          | A desktop monolitic INF file that contains all of the information needed to install the driver. |
+| tabletaudiosample.inf          | A desktop monolithic INF file that contains all of the information needed to install the driver. |
 
 ### APO vendor specific tuning parameters and feature configuration
 
@@ -184,9 +184,7 @@ Complete the following steps to build the sysvad sample for Windows 10 desktop.
    C:\Program Files (x86)\Windows Kits\10\src\audio\sysvad\x64\Debug\package
    ```
 
-5. Navigate to the Tools folder in your WDK installation and locate the PnpUtil tool. For example, look in the following folder: C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\x64\\PnpUtil.exe .
-
-6. Copy the following files to the system that you want to install the sysvad driver:
+5. Copy the following files to the system that you want to install the sysvad driver:
 
 |File|Description|
 |----|----|
@@ -198,7 +196,7 @@ Complete the following steps to build the sysvad sample for Windows 10 desktop.
 
 ## Install and test the driver
 
-Follow these steps to install the driver using the PnpUtil on the target system.
+Follow these steps to install the driver using the [PnpUtil](../devtest/pnputil.md) on the target system.
 
 1. Open and Administrator command prompt and type the following in the directory that you copied the driver files to.
 

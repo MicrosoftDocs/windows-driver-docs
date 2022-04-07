@@ -1,7 +1,7 @@
 ---
 title: I2C controller tests in MITT
 description: I<sup>2</sup>C test modules that are included in the MITT software package can be used to test data transfers for an I<sup>2</sup>C controller and its driver. The MITT board acts as a client device connected to the I<sup>2</sup>C bus.
-ms.date: 04/27/2021
+ms.date: 04/07/2022
 ---
 
 # I2C controller tests in MITT
@@ -44,92 +44,92 @@ Perform these steps on the system under test that has the I<sup>2</sup>C control
 
 1. Install WITTTest driver included in the MITT software package by running this command:
 
-    **pnputil –a witttest.inf**
+    **pnputil -a witttest.inf**
 
-    ![intall witt driver for the mitt board.](images/mitt-install-witt.png)
+    ![install witt driver for the mitt board.](images/mitt-install-witt.png)
 
->[!NOTE]
->PnpUtil.exe is included in %SystemRoot%\\System32.
+    >[!NOTE]
+    >[PnpUtil.exe](../devtest/pnputil.md) is included in %SystemRoot%\\System32.
 
 2. Modify the system ACPI and include this ASL table. You can use the [Microsoft ASL compiler](../bringup/microsoft-asl-compiler.md).
 
-  >[!NOTE]
->Change "\\\\\_SB\_.I2C2" to ACPI entry name for the I<sup>2</sup>C controller to test.
+    >[!NOTE]
+    >Change "\\\\\_SB\_.I2C2" to ACPI entry name for the I<sup>2</sup>C controller to test.
 
-``` syntax
-//TP1 100Khz Standard Target Device(TP1)
-Device(TP1) {
-    Name (_HID, "STK0001")
-    Name (_CID, "WITTTest")
-    Method(_CRS, 0x0, NotSerialized)
-    {
-      Name (RBUF, ResourceTemplate ()
-      {
-        I2CSerialBus ( 0x11, ControllerInitiated, 100000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
-      })
-      Return(RBUF)
+    ```asl
+    //TP1 100Khz Standard Target Device(TP1)
+    Device(TP1) {
+        Name (_HID, "STK0001")
+        Name (_CID, "WITTTest")
+        Method(_CRS, 0x0, NotSerialized)
+        {
+          Name (RBUF, ResourceTemplate ()
+          {
+            I2CSerialBus ( 0x11, ControllerInitiated, 100000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
+          })
+          Return(RBUF)
+        }
     }
-}
-
-//TP2 400Khz  Fast Target
-Device(TP2) {
-    Name (_HID, "STK0002")
-    Name (_CID, "WITTTest")
-    Method(_CRS, 0x0, NotSerialized)
-    {
-      Name (RBUF, ResourceTemplate ()
-      {
-        I2CSerialBus ( 0x12, ControllerInitiated, 400000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
-      })
-      Return(RBUF)
+    
+    //TP2 400Khz  Fast Target
+    Device(TP2) {
+        Name (_HID, "STK0002")
+        Name (_CID, "WITTTest")
+        Method(_CRS, 0x0, NotSerialized)
+        {
+          Name (RBUF, ResourceTemplate ()
+          {
+            I2CSerialBus ( 0x12, ControllerInitiated, 400000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
+          })
+          Return(RBUF)
+        }
     }
-}
-
-//TP3 1 Mhz  FastPlus Target
-Device(TP3) {
-    Name (_HID, "STK0003")
-    Name (_CID, "WITTTest")
-    Method(_CRS, 0x0, NotSerialized)
-    {
-      Name (RBUF, ResourceTemplate ()
-      {
-        I2CSerialBus ( 0x13, ControllerInitiated, 1000000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
-      })
-      Return(RBUF)
+    
+    //TP3 1 Mhz  FastPlus Target
+    Device(TP3) {
+        Name (_HID, "STK0003")
+        Name (_CID, "WITTTest")
+        Method(_CRS, 0x0, NotSerialized)
+        {
+          Name (RBUF, ResourceTemplate ()
+          {
+            I2CSerialBus ( 0x13, ControllerInitiated, 1000000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
+          })
+          Return(RBUF)
+        }
     }
-}
-
-//TP4 1.4 Mhz High Speed, optional target
-Device(TP4) {
-    Name (_HID, "STK0004")
-    Name (_CID, "WITTTest")
-    Method(_CRS, 0x0, NotSerialized)
-    {
-      Name (RBUF, ResourceTemplate ()
-      {
-        I2CSerialBus ( 0x14, ControllerInitiated, 1400000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
-      })
-      Return(RBUF)
+    
+    //TP4 1.4 Mhz High Speed, optional target
+    Device(TP4) {
+        Name (_HID, "STK0004")
+        Name (_CID, "WITTTest")
+        Method(_CRS, 0x0, NotSerialized)
+        {
+          Name (RBUF, ResourceTemplate ()
+          {
+            I2CSerialBus ( 0x14, ControllerInitiated, 1400000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
+          })
+          Return(RBUF)
+        }
     }
-}
-
-//TP5 3.4 Mhz High Speed, optional target
-Device(TP5) {
-    Name (_HID, "STK0005")
-    Name (_CID, "WITTTest")
-    Method(_CRS, 0x0, NotSerialized)
-    {
-      Name (RBUF, ResourceTemplate ()
-      {
-        I2CSerialBus ( 0x15, ControllerInitiated, 3400000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
-      })
-      Return(RBUF)
+    
+    //TP5 3.4 Mhz High Speed, optional target
+    Device(TP5) {
+        Name (_HID, "STK0005")
+        Name (_CID, "WITTTest")
+        Method(_CRS, 0x0, NotSerialized)
+        {
+          Name (RBUF, ResourceTemplate ()
+          {
+            I2CSerialBus ( 0x15, ControllerInitiated, 3400000,AddressingMode7Bit, "\\_SB_.I2C2",,, , )
+          })
+          Return(RBUF)
+        }
     }
-}
-```
+    ```
 
->[!NOTE]
->Only TP1-3 are required to run MITT I<sup>2</sup>C tests. TP4 and TP5 are optional targets.
+    >[!NOTE]
+    >Only TP1-3 are required to run MITT I<sup>2</sup>C tests. TP4 and TP5 are optional targets.
 
 ## I<sup>2</sup>C automation tests
 
