@@ -1,19 +1,16 @@
 ---
 title: Retrieving the Status and Problem Code for a Device Instance
 description: Retrieving the Status and Problem Code for a Device Instance
-ms.date: 02/28/2020
+ms.date: 04/05/2022
 ---
 
 # Retrieving the Status and Problem Code for a Device Instance
 
+In Windows Vista and later versions of Windows, the [unified device property model](unified-device-property-model--windows-vista-and-later-.md) includes a [device status property](devpkey-device-devnodestatus.md) and a [problem code property](devpkey-device-problemcode.md). The unified device property model uses [property keys](property-keys.md) to represent these properties.
 
-In Windows Vista and later versions of Windows, the [unified device property model](unified-device-property-model--windows-vista-and-later-.md) includes a device status property and a problem code property. The unified device property model uses [property keys](property-keys.md) to represent these properties.
+Windows Server 2003, Windows XP, and Windows 2000 do not support the property keys of the unified property model, nor do they support corresponding registry entry values that represent these properties. However, the corresponding information can be retrieved by calling the [**CM_Get_DevNode_Status**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_status) function. To maintain compatibility with earlier versions of Windows, Windows Vista and later versions also support **CM_Get_DevNode_Status**. However, you should use the property keys of the unified device property model to access the device properties.
 
-Windows Server 2003, Windows XP, and Windows 2000 do not support the property keys of the unified property model, nor do they support corresponding registry entry values that represent these properties. However, the corresponding information can be retrieved by calling the [**CM_Get_DevNode_Status**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_status) function. To maintain compatibility with earlier versions of Windows, Windows Vista and later versions also support **CM_Get_DevNode_Status**. However, you should use the property keys of the unified device property model to access the device driver properties.
-
-Additionally, in Windows 8 and later versions of Windows, there is also a problem status property.  This property contains a [NTSTATUS](../kernel/using-ntstatus-values.md) value that may contain additional information relating to a problem code set on the device.  If the problem status value is STATUS_SUCCESS, then no additional information relating to the problem code was available when the problem code was set on the device.
-
-The device driver properties are listed by the property key identifiers that you use to access the property in Windows Vista and later versions.
+Additionally, in Windows 8 and later versions of Windows, there is also a [problem status property](devpkey-device-problemstatus.md).  This property contains a [NTSTATUS](../kernel/using-ntstatus-values.md) value that may contain additional information relating to a problem code set on the device.  If the problem status value is STATUS_SUCCESS, then no additional information relating to the problem code was available when the problem code was set on the device.
 
 For information about how to use property keys to access device driver properties in Windows Vista and later versions, see [Accessing Device Instance Properties (Windows Vista and Later)](accessing-device-instance-properties--windows-vista-and-later-.md).
 
@@ -31,7 +28,7 @@ If the call to **CM_Get_DevNode_Status** succeeds, **CM_Get_DevNode_Status** ret
 
 ## Using Device Manager to find problem code and problem status for a device
 
-When there is a problem with a device, device manager will overlay the icon for the device in the tree view with a yellow triangle with an exclamation mark in it.  By right clicking on the device and choosing Properties, a dialog will appear with more information about the device. The problem code appears on the **General** tab, in the **Device status** field.
+When there is a problem with a device, Device Manager will overlay the icon for the device in the tree view with a yellow triangle with an exclamation mark in it.  By right clicking on the device and choosing Properties, a dialog will appear with more information about the device. The problem code appears on the **General** tab, in the **Device status** field.
 
 The [**Problem status**](devpkey-device-problemstatus.md) property appears in the **Property** dropdown on the **Details** tab for the device in Device Manager.
 
@@ -51,7 +48,7 @@ DevNode 0x8ad6ab78 for PDO 0x81635c30
   Problem Status = 0xc00000bb
 ```
 
-You can also view problem code and problem status by issuing [**!devnode**] (../debugger/-devnode.md) on a DEVICE_NODE address:
+You can also view problem code and problem status by issuing [**!devnode**](../debugger/-devnode.md) on a DEVICE_NODE address:
 
 ```
 0: kd> !devnode 0x8ad6ab78 
@@ -64,5 +61,6 @@ DevNode 0x8ad6ab78 for PDO 0x81635c30
 
 ## See Also
  
+* [**DEVPKEY_Device_DevNodeStatus**](devpkey-device-devnodestatus.md)
 * [**DEVPKEY_Device_ProblemCode**](devpkey-device-problemcode.md)
 * [**DEVPKEY_Device_ProblemStatus**](devpkey-device-problemstatus.md)
