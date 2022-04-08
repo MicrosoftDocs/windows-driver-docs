@@ -40,7 +40,7 @@ Where:
 
 In versions of Windows prior to Windows 10, Version 2004 (OS build 19041.488 or higher), the device ID format for a small computer system interface (SCSI) device is as follows:
 
-`SCSI\\t\*v(8)p(16)r(4)`
+`SCSI\t*v(8)p(16)r(4)`
 
 Where:
 
@@ -79,25 +79,25 @@ The SCSI Port driver currently returns the following device type strings, the fi
 
 An example of a device ID for a disk drive would be as follows:
 
-`SCSI\\DiskSEAGATE_ST39102LW_______0004`
+`SCS\\DiskSEAGATE_ST39102LW_______0004`
 
 There are four hardware IDs in addition to the device ID:
 
-`SCSI\\t\*v(8)p(16)`
+`SCSI\t*v(8)p(16)`
 
-`SCSI\\t\*v(8)`
+`SCSI\t*v(8)`
 
-`SCSI\\v(8)p(16)r(1)`
+`SCSI\v(8)p(16)r(1)`
 
 `V(8)p(16)r(1)`
 
 In the third and fourth of these additional identifiers, *r(1)* represents just the first character of the revision identifier. These hardware IDs are illustrated by the following examples:
 
-`SCSI\\DiskSEAGATE_ST39102LW_______`
+`SCSI\DiskSEAGATE_ST39102LW_______`
 
-`SCSI\\DiskSEAGATE_`
+`SCSI\DiskSEAGATE_`
 
-`SCSI\\DiskSEAGATE_ST39102LW_______0`
+`SCSI\DiskSEAGATE_ST39102LW_______0`
 
 `SEAGATE_ST39102LW_______0`
 

@@ -456,54 +456,58 @@
         href: instance-ids.md
       - name: "Device Instance ID"
         href: device-instance-ids.md
-      - name: "Container ID"
-        href: container-ids.md
-      - name: "Overview of Container IDs"
-        href: overview-of-container-ids.md
-      - name: "How Container IDs are Generated"
-        href: how-container-ids-are-generated.md
-      - name: "Container IDs Generated from a Bus-Specific Unique ID"
-        href: container-ids-generated-from-a-bus-specific-unique-id.md
-      - name: "How USB Devices are Assigned Container IDs"
-        href: how-usb-devices-are-assigned-container-ids.md
-      - name: "Using ACPI to Configure USB Ports on a Computer"
-        href: using-acpi-to-configure-usb-ports-on-a-computer.md
-      - name: "Best Practices for Supporting Container IDs on USB Devices"
-        href: best-practices-for-supporting-container-ids-on-usb-devices.md
-      - name: "Using Microsoft OS ContainerID Descriptors"
-        href: using-microsoft-os-containerid-descriptors.md
-      - name: "Using the USB Removable Capability for Device Container Grouping"
-        href: using-the-usb-removable-capability-for-device-container-grouping.md
-      - name: "Avoiding Device Container Conflicts"
-        href: avoiding-device-container-conflicts.md
-      - name: "Container IDs for Bluetooth Devices"
-        href: container-ids-for-bluetooth-devices.md
-      - name: "Container IDs for PnP-X Devices"
-        href: container-ids-for-pnp-x-devices.md
-      - name: "Container IDs for DPWS Devices"
-        href: container-ids-for-dpws-devices.md
-      - name: "Container IDs for UPnP Devices"
-        href: container-ids-for-upnp-devices.md
-      - name: "Container IDs for 1394 Devices"
-        href: container-ids-for-1394-devices.md
-      - name: "Container IDs for eSATA Devices"
-        href: container-ids-for-esata-devices.md
-      - name: "Container IDs for PCI Express Devices"
-        href: container-ids-for-pci-express-devices.md
-      - name: "Container IDs Generated from the Removable Device Capability"
-        href: container-ids-generated-from-the-removable-device-capability.md
-      - name: "Overview of the Removable Device Capability"
-        href: overview-of-the-removable-device-capability.md
-      - name: "How Container IDs are Generated from the Removable Device Capability"
-        href: how-container-ids-are-generated-from-the-removable-device-capability.md
-      - name: "Container IDs Generated from a Removable Device Capability Override"
-        href: container-ids-generated-from-a-removable-device-capability-override.md
-      - name: "Using ACPI for Device Container Grouping"
-        href: using-acpi-for-device-container-grouping.md
-      - name: "Verifying the Implementation of Container IDs"
-        href: verifying-the-implementation-of-container-ids.md
-      - name: "Troubleshooting the Implementation of Container IDs"
-        href: troubleshooting-the-implementation-of-container-ids.md
+      - name: "Container IDs"
+        items: 
+        - name: "Container ID"
+          href: container-ids.md
+        - name: "Overview of Container IDs"
+          href: overview-of-container-ids.md
+        - name: "How Container IDs are Generated"
+          href: how-container-ids-are-generated.md
+        - name: "Container IDs Generated from a Bus-Specific Unique ID"
+          href: container-ids-generated-from-a-bus-specific-unique-id.md
+        - name: "Container IDs for USB Devices"
+          items: 
+          - name: "How USB Devices are Assigned Container IDs"
+            href: how-usb-devices-are-assigned-container-ids.md
+          - name: "Using ACPI to Configure USB Ports on a Computer"
+            href: using-acpi-to-configure-usb-ports-on-a-computer.md
+          - name: "Best Practices for Supporting Container IDs on USB Devices"
+            href: best-practices-for-supporting-container-ids-on-usb-devices.md
+          - name: "Using Microsoft OS ContainerID Descriptors"
+            href: using-microsoft-os-containerid-descriptors.md
+          - name: "Using the USB Removable Capability for Device Container Grouping"
+            href: using-the-usb-removable-capability-for-device-container-grouping.md
+          - name: "Avoiding Device Container Conflicts"
+            href: avoiding-device-container-conflicts.md
+        - name: "Container IDs for Bluetooth Devices"
+          href: container-ids-for-bluetooth-devices.md
+        - name: "Container IDs for PnP-X Devices"
+          href: container-ids-for-pnp-x-devices.md
+        - name: "Container IDs for DPWS Devices"
+          href: container-ids-for-dpws-devices.md
+        - name: "Container IDs for UPnP Devices"
+          href: container-ids-for-upnp-devices.md
+        - name: "Container IDs for 1394 Devices"
+          href: container-ids-for-1394-devices.md
+        - name: "Container IDs for eSATA Devices"
+          href: container-ids-for-esata-devices.md
+        - name: "Container IDs for PCI Express Devices"
+          href: container-ids-for-pci-express-devices.md
+        - name: "Container IDs Generated from the Removable Device Capability"
+          href: container-ids-generated-from-the-removable-device-capability.md
+        - name: "Overview of the Removable Device Capability"
+          href: overview-of-the-removable-device-capability.md
+        - name: "How Container IDs are Generated from the Removable Device Capability"
+          href: how-container-ids-are-generated-from-the-removable-device-capability.md
+        - name: "Container IDs Generated from a Removable Device Capability Override"
+          href: container-ids-generated-from-a-removable-device-capability-override.md
+        - name: "Using ACPI for Device Container Grouping"
+          href: using-acpi-for-device-container-grouping.md
+        - name: "Verifying the Implementation of Container IDs"
+          href: verifying-the-implementation-of-container-ids.md
+        - name: "Troubleshooting the Implementation of Container IDs"
+          href: troubleshooting-the-implementation-of-container-ids.md
       - name: "Generic Identifiers"
         href: generic-identifiers.md
       - name: "Identifiers for PCI Devices"
