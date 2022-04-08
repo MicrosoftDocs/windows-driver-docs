@@ -9,6 +9,7 @@ api_name:
 - (Evaluate C++ Expression)
 api_type:
 - NA
+adobe-target: true
 ---
 
 # ?? (Evaluate C++ Expression)
