@@ -10,6 +10,8 @@
     href: driver-isolation.md
   - name: "Run From Driver Store"
     href: run-from-driver-store.md
+  - name: "Supporting multiple operating system versions"
+    href: support-multiple-os-versions.md
   - name: "API Layering"
     href: api-layering.md
   - name: "Building a Windows driver"
