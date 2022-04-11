@@ -534,24 +534,28 @@
         href: identifiers-generated-by-usbprint-sys.md
   - name: "Device Classes"
     items: 
-      - name: "Overview of Device Setup Classes"
-        href: overview-of-device-setup-classes.md
-      - name: "Creating a New Device Setup Class"
-        href: creating-a-new-device-setup-class.md
-      - name: "Overview of Device Interface Classes"
-        href: overview-of-device-interface-classes.md
-      - name: "Registering a Device Interface Class"
-        href: registering-a-device-interface-class.md
-      - name: "Enabling and Disabling a Device Interface Instance"
-        href: enabling-and-disabling-a-device-interface-instance.md
-      - name: "Using a Device Interface"
-        href: using-a-device-interface.md
-      - name: "Registering for Notification of Device Interface Arrival and Device Removal"
-        href: registering-for-notification-of-device-interface-arrival-and-device-removal.md
       - name: "Setup Classes Versus Interface Classes"
         href: setup-classes-versus-interface-classes.md
       - name: "Device Information Sets"
         href: device-information-sets.md
+      - name: "Device Setup Classes"
+        items: 
+        - name: "Overview of Device Setup Classes"
+          href: overview-of-device-setup-classes.md
+        - name: "Creating a New Device Setup Class"
+          href: creating-a-new-device-setup-class.md
+      - name: "Device Interface Classes"
+        items: 
+        - name: "Overview of Device Interface Classes"
+          href: overview-of-device-interface-classes.md
+        - name: "Registering a Device Interface Class"
+          href: registering-a-device-interface-class.md
+        - name: "Enabling and Disabling a Device Interface Instance"
+          href: enabling-and-disabling-a-device-interface-instance.md
+        - name: "Using a Device Interface"
+          href: using-a-device-interface.md
+        - name: "Registering for Notification of Device Interface Arrival and Device Removal"
+          href: registering-for-notification-of-device-interface-arrival-and-device-removal.md
   - name: "Device Properties"
     items: 
     - name: "Overview of Device Properties"
