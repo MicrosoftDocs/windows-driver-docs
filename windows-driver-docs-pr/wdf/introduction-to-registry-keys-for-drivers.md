@@ -25,6 +25,9 @@ Drivers typically use a set of system-defined registry keys to store or access d
 
     The driver's **Parameters** key can contain configuration information for your driver and can be accessed by calling [**WdfDriverOpenParametersRegistryKey**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriveropenparametersregistrykey). For Kernel-Mode Driver Framework (KMDF) drivers, this key is located in the appropriate **Services** tree for the driver. For User-Mode Driver Framework (UMDF) drivers, this key is located in the **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services** tree, under the driver's service name. The subkey for the driver always uses the driver's service name, even if the driver binary's file name differs from the service name.
 
+> [!NOTE]
+> UMDF does not support creating subkeys.
+
     When the system calls your driver's [**DriverEntry**](./driverentry-for-kmdf-drivers.md) routine, it passes the driver a path to the driver's key in the appropriate **Services** tree. Your driver must pass this path to [**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate). Subsequently, the driver can obtain the path by calling [**WdfDriverGetRegistryPath**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivergetregistrypath).
 
 -   Software key
