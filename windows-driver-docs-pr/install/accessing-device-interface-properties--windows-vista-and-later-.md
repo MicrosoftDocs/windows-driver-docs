@@ -1,17 +1,17 @@
 ---
-title: Accessing Device Interface Properties
-description: Accessing Device Interface Properties
-ms.date: 04/04/2022
+title: Accessing device interface properties
+description: Learn more about how to access device interface properties.
+ms.date: 04/12/2022
 ---
 
-# Accessing Device Interface Properties
+# Accessing device interface properties
 
-In Windows Vista and later versions of Windows, applications and installers can access [device interface properties](/previous-versions/ff541409(v=vs.85)) by calling the following functions.
+In Windows Vista and later versions of Windows, applications and installers can access [device interface properties](accessing-device-interface-properties.md) by calling the following functions.
 
 > [!NOTE]
 > SetupApi is not supported on all editions of Windows.  When possible, you should use lower layer APIs such as those available via [CfgMgr32.dll](/windows/win32/api/cfgmgr32/). See [Porting from SetupApi to CfgMgr32](porting-from-setupapi-to-cfgmgr32.md) for tips.
 
-For information about how to access device interface properties on Windows Server 2003, Windows XP, and Windows 2000, see Accessing Device Interface Properties.
+For information about how to access device interface properties on Windows Server 2003, Windows XP, and Windows 2000, see [Accessing device interface properties](accessing-device-interface-properties.md).
 
 ## Retrieving properties
 

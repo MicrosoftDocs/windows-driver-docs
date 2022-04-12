@@ -1,17 +1,17 @@
 ---
-title: Accessing Device Class Properties
-description: Accessing Device Class Properties
-ms.date: 04/04/2022
+title: Accessing device class properties
+description: Learn more about how to access device class properties.
+ms.date: 04/12/2022
 ---
 
-# Accessing Device Class Properties
+# Accessing device class properties
 
-In Windows Vista and later versions of Windows, applications and installers can access [device setup class properties](/previous-versions/ff542239(v=vs.85)) and [device interface class properties](/previous-versions/ff541406(v=vs.85)) by calling the following functions.
+In Windows Vista and later versions of Windows, applications and installers can access [device setup class properties](accessing-device-setup-class-properties.md) and [device interface class properties](accessing-device-interface-class-properties.md) by calling the following functions.
 
 > [!NOTE]
 > SetupApi is not supported on all editions of Windows.  When possible, you should use lower layer APIs such as those available via [CfgMgr32.dll](/windows/win32/api/cfgmgr32/). See [Porting from SetupApi to CfgMgr32](porting-from-setupapi-to-cfgmgr32.md) for tips.
 
-For information about how to access device class properties on Windows Server 2003, Windows XP, and Windows 2000, see [Accessing Device Setup Class Properties](accessing-device-setup-class-properties.md) and [Accessing Device Interface Class Properties](accessing-device-interface-class-properties.md).
+For information about how to access device class properties on Windows Server 2003, Windows XP, and Windows 2000, see [Accessing device setup class properties](accessing-device-setup-class-properties.md) and [Accessing device interface class properties](accessing-device-interface-class-properties.md).
 
 ## Retrieving properties
 
