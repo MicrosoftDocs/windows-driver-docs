@@ -331,7 +331,7 @@ Before you release a driver that is based on a WDK sample, replace any sample-sp
 
 [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md) 
 
-[Surface Team Driver Development Best Practices](/drivers/kernel/surface-team-driver-development-best-practices) 
+[Surface Team Driver Development Best Practices](../kernel/surface-team-driver-development-best-practices.md) 
 
 [Driver Security Guidance](../driversecurity/index.md)
 
