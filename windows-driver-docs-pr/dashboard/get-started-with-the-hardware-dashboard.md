@@ -39,7 +39,7 @@ If you have drivers that you want to distribute with Windows Update or share wit
   * [Expire a driver from Windows Update](expire-a-driver-from-windows-update.md)
   * [View partner shipping labels for a shared driver](viewing-shipping-labels-for-your-shared-driver.md)
 
-## Step 4: Publish your certified driver
+## Step 5: Publish your certified driver
 
 Now that your driver has passed the review process in the Partner Hardware dashboard, it then becomes eligible for the hardware compatibility or certification program. In addition, you can publish it to the [Windows Server Catalog](https://www.windowsservercatalog.com/ ) and the [Windows Certified Products List](windows-certified-products-list.md) by providing an announcement date in your submission.
 
