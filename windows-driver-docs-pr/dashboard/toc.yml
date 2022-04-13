@@ -4,6 +4,8 @@
   href: hardware-dashboard-faq.yml
 - name: "Getting Started"
   items: 
-  - name: "Register for hardware program"
+  - name: "Getting started with the Hardware dashboard"
     href: get-started-with-the-hardware-dashboard.md
-  
+  items: 
+  - name: "Register for the Windows Hardware Program"
+    href: get-started-with-the-hardware-dashboard.md

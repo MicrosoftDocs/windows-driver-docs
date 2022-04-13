@@ -1,47 +1,43 @@
 ---
-title: Register for the Hardware Program
-description: Register for the Hardware Program
+title: Register for the Microsoft Windows Hardware Developer Program
+description: How to register for the Microsoft Windows Hardware Developer Program
 ms.topic: article
 ms.date: 04/20/2017
 ---
 
-# Register for the Hardware Program
+# How to register for the Microsoft Windows Hardware Developer Program
 
-Your organization's administrator must [register](https://go.microsoft.com/fwlink/?LinkID=828002) for the Windows Hardware Dev Center program.
+This article shows you how to register for the Microsoft Windows Hardware Developer Program.
 
-> [!Note]
-> If you need support during this process please open a support ticket here: https://developer.microsoft.com/windows/support.  
->- Select **Contact us**,  **Dashboard issue**, and then **Hardware submissions & signing (all OS version)** from the dropdown.  
->- Live Chat and Email support hours are 8am-8pm CST Monday-Friday.  SLA for an initial response is 24-48 hours for email support.
-
-## Before you sign up
-
-Review the following requirements before you start the registration process.
+## Prerequisites
 
 - If you have an existing organization Dev Center account that you want to use for the Hardware program, sign in with it before you begin registration.
 
-- You must have an Extended Validation (EV) code signing certificate. Check whether your organization already has a code signing certificate. If your organization already has a certificate, have the certificate available as you will be asked to sign a file. If your organization does not have a certificate, you will need to buy one as part of the registration process.
+- You must have an Extended Validation (EV) code signing certificate. Check whether your organization already has a code signing certificate. If your company already has a certificate, have the certificate available, as you will be asked to sign a file. If your organization doesn't have a certificate, you'll need to buy one as part of the registration process.
 
     For information about code signing certificates and how to get a certificate, see [Get a code signing certificate](get-a-code-signing-certificate.md).
 
-- You will need to sign in with your organization’s Azure Active Directory (Azure AD) [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) account. If you don’t know whether your organization has an Azure AD directory, contact your IT department. If your organization doesn’t have an Azure AD directory, you must be able to create one.
+- You'll need to sign in with your organization’s Azure Active Directory (Azure AD) [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) account. If you don’t know whether your organization has an Azure AD directory, contact your IT department. If your organization doesn’t have an Azure AD directory, you'll be able to create one for free during the registration process'
 
 - You must have the authority to sign legal agreements on behalf of your organization.
 
-## Registration steps
+## Register for the Hardware Developer Program
 
-There are five main steps to the Hardware Program registration.
+To register for the Hardware Developer Program:
 
-1. Get a code signing certificate
+1. Go to the [Hardware Developer Program registration page](https://go.microsoft.com/fwlink/?LinkID=828002).
 
-    - Ensure you have a code signing certificate
+1. Read the prerequisites to make sure you have what you need, and then select **Next**.
 
-    - If you do not have a certificate, you must buy one and have it available.
+    :::image type="content" source="./images/register-for-the-hardware-program/registration-start.png" alt-text="Screenshot of the first page of the Hardware Developer Program registration process. The 'Next' button is selected.":::
 
-2. Download signtool.exe
-    - signtool.exe is available as part of the [Windows SDK download](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
+1. If your organization has an Azure AD global administrator account, select **Sign in to Azure AD**. If your organization doesn't have an Azure AD directory, select **Create a new directory for free** and follow the directions to create an account.
 
-3. Sign and upload the file provided to you within the **Sign and upload** portion of the registration process.
+    :::image type="content" source="./images/register-for-the-hardware-program/registration-work-account.png" alt-text="Screenshot of the Azure AD page of the Hardware Developer Program registration process. The 'Sign in to Azure AD' button is selected.":::
+
+1. Download `signtool.exe`. `signtool.exe` is available as part of the [Windows SDK download](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+
+1. Sign and upload the file provided to you within the **Sign and upload** portion of the registration process.
     > [!NOTE]
     > The following three steps no longer need to be completed within the same browser session.
 
@@ -70,3 +66,7 @@ After your registration is complete, additional administrative tasks are availab
 - [Manage users and permissions](managing-user-roles.md)
 
 When you are finished with any administrative tasks, you are ready to create your first hardware submission. See [Hardware submissions](hardware-certification-submissions.md) for information and instructions.
+
+## Support
+
+If you need support during the registration process, you can [open a support ticket](https://aka.ms/AAgnelg).  

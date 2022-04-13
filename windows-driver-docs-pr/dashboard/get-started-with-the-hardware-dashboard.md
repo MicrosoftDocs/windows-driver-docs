@@ -5,22 +5,22 @@ ms.topic: article
 ms.date: 04/13/2022
 ---
 
-# Getting started with the Microsoft Partner Center Hardware dashboard
+# Getting started with Partner Center Hardware dashboard
 
 This article shows you how to get started using the Partner Center Hardware dashboard.
 
-## Step 1: Register for the Windows Hardware Developer Program
+## Step 1: Register for the Hardware Developer Program
 
-To access the Hardware dashboard, your company's administrator must [register for the Windows Hardware Dev Center program](https://go.microsoft.com/fwlink/?LinkID=828002). To learn more about the registration process, see [Register for the Windows Hardware Developer Program](register-for-the-hardware-program.md).
+To register for the Hardware Developer Program, follow the steps in [How to register for the Microsoft Windows Hardware Developer Program](register-for-the-hardware-program.md).
 
-## Step 2: Design, create, and test your hardware and drivers
+## Step 2: Test your hardware and drivers
 
 Now that your company is registered in the Hardware Developer program, you'll need to design, create, and test your hardware and drivers. To ensure that your drivers and hardware run on Windows systems as your customers expect you'll need to participate in either one of the following programs:
 
  * [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/) (for Windows 10 and above)
  * [Windows Hardware Certification Program](/previous-versions/windows/hardware/hck/jj125187(v=vs.85)) (for Windows 8/8.1 and older operating systems).
 
-## Step 3: Submit your hardware and drivers for the compatibility program or certification
+## Step 3: Submit for certification and compatibility
 
 Once you've properly tested your drivers, you can now [create a new hardware submission](create-a-new-hardware-submission.md) in the [Partner Hardware dashboard](https://go.microsoft.com/fwlink/?LinkID=828002).
 
@@ -33,7 +33,7 @@ If you have drivers that you want to distribute with Windows Update or share wit
   * [Expire a driver from Windows Update](expire-a-driver-from-windows-update.md)
   * [View partner shipping labels for a shared driver](viewing-shipping-labels-for-your-shared-driver.md)
 
-## Step 5: Publish your certified driver
+## Step 5: Publish your driver
 
 Now that your driver has passed the review process in the Partner Hardware dashboard, it then becomes eligible for the hardware compatibility or certification program. In addition, you can publish it to the [Windows Server Catalog](https://www.windowsservercatalog.com/ ) and the [Windows Certified Products List](windows-certified-products-list.md) by providing an announcement date in your submission.
 
