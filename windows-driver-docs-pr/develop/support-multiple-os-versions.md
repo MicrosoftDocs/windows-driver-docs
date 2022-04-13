@@ -1,7 +1,7 @@
 ---
 title: Supporting multiple operating system versions
 description: This page describes how to make a driver package support different functionality on multiple operating system versions.
-ms.date: 04/11/2022
+ms.date: 04/12/2022
 ---
 
 # Supporting multiple operating system versions
@@ -16,48 +16,11 @@ See [Combining platform extensions with operating system versions](../install/co
 
 ## Runtime support
 
-When trying to alter behavior at runtime to support multiple operating system versions, it is recommended you check for feature or API availability whenever possible instead of trying to check if the code is running on a certain OS version or later.  For example, if there is an API that you want to use if it is available, you can attempt to dynamically locate it instead of statically linking to it.  If you are able to locate it, you can use it, however, if it is not present in your current running environment, you can fall back to some alternative behavior.
+When trying to alter behavior at runtime to support multiple operating system versions, it is recommended you check for feature or API availability whenever possible instead of trying to check if the code is running on a certain operating system version or later.  For example, if there is an API that you want to use if it is available, you can attempt to dynamically locate it instead of statically linking to it.  If you are able to locate it, you can use it, however, if it is not present in your current running environment, you can fall back to some alternative behavior.
 
 ### Kernel mode
 
-In kernel mode, you can use [MmGetSystemRoutineAddress](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemroutineaddress) or [MmGetSystemRoutineAddressEx](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemroutineaddressex) to check if a particular API you want to use is available in your current running environment and to get a function pointer to use in order to call that API.
-
-For example:
-
-```cpp
-typedef
-NTSTATUS
-(*PFN_IoOpenDriverRegistryKey)(
-    PDRIVER_OBJECT     DriverObject,
-    DRIVER_REGKEY_TYPE RegKeyType,
-    ACCESS_MASK        DesiredAccess,
-    ULONG              Flags,
-    PHANDLE            DriverRegKey
-    );
-
-VOID ExampleFunction(VOID) {
-    NTSTATUS status = STATUS_UNSUCCESSFUL;
-    HANDLE persistentStateKey = NULL;
-    PFN_IoOpenDriverRegistryKey pfnIoOpenDriverRegistryKey = NULL;
-    UNICODE_STRING functionName = {0};
-
-    RtlInitUnicodeString(&functionName, L"IoOpenDriverRegistryKey");
-    pfnIoOpenDriverRegistryKey = (PFN_IoOpenDriverRegistryKey)MmGetSystemRoutineAddress(&functionName);
-
-    if (pfnIoOpenDriverRegistryKey != NULL) {
-        // Open a key to where state can be stored under the driver service
-        status = pfnIoOpenDriverRegistryKey(g_GlobalStructure.DriverObject,
-                                            DriverRegKeyPersistentState,
-                                            KEY_WRITE,
-                                            0,
-                                            &persistentStateKey);
-    } else {
-        // Fall back to opening up a different location to store state in
-    }
-
-    // Use the opened registry key
-}
-```
+For kernel mode, see [Writing drivers for different versions of Windows](../gettingstarted/platforms-and-driver-versions.md) for more information on how to support multiple versions of Windows from a single driver.
 
 ### User mode
 
