@@ -7,13 +7,7 @@ ms.date: 04/13/2022
 
 # Getting started with the Microsoft Partner Center Hardware dashboard
 
-This article shows you how to get started using the Partner Center Hardware dashboard by showing you how to:
-
-> [!div class="checklist"]
-> * Register in the Windows Hardware Developer Program
-> * Test your drivers through compatibility and certification programs
-> * Set up distribution for your drivers using shipping labels
-> * Publish your certified driver to Windows Server Catalog and Windows Certified Product List
+This article shows you how to get started using the Partner Center Hardware dashboard.
 
 ## Step 1: Register for the Windows Hardware Developer Program
 
