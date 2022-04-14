@@ -9,24 +9,32 @@ ms.topic: article
 
 To prepare your hardware for the Windows Hardware Compatibility Program for Windows 10 (or the separate certification program for previous operating systems), you must create and submit an **.hlkx** file (for Windows 10) or **.hckx** file (for previous operating systems). This file is created using the Windows HLK Studio (or Windows HCK Studio, for previous operating systems) and contains all of the test results, drivers, and symbols for your product. Submitting this file allows the dashboard to review your test results, evaluate any drivers tested, and return Microsoft digitally signed catalog files.
 
-## To create a submission file
+## Prerequisites
 
-For information about creating and digitally signing an **.hlkx** file, see the [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
+* Make sure your dashboard account is registered for the Windows Hardware Developer Program. For information on how to register, see [How to register for the Windows Hardware Developer Program](register-for-the-hardware-program.md).
 
-For information about creating and digitally signing an **.hckx** file, see the [Windows HCK Getting Started Guide](/previous-versions/windows/hardware/hck/jj123537(v=vs.85)).
+* For drivers compatible with Windows 10 and above, you'll need to have a **.hlkx** file that's been digitally signed. For information about creating and digitally signing an  **.hlkx** file, see the [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
 
-## To submit a file
+* For drivers compatible with Windows 8/8.1 and older operating systems, you'll need to have an **.hckx** file that's been digitally signed. For information about creating and digitally signing an  **.hckx** file, see the [Windows HCK Getting Started Guide](/previous-versions/windows/hardware/hck/jj123537(v=vs.85)).
 
-1. Make sure your dashboard account is registered for the [Hardware Developer Program](https://partner.microsoft.com/dashboard/Registration/Hardware).
+## Create a hardware submission
 
-1. Sign in to the [Partner Center](https://partner.microsoft.com/dashboard), and then select **Submit new hardware**. This loads the submission creation wizard.
+1. Go to [Partner Center](https://partner.microsoft.com/dashboard) and sign in using your credentials.
 
-1. In the **Packages and signing properties** section, choose a name for your driver submission. This name can be used to search for and organize your driver submissions. Note: If you share your driver with another company, they will see this name.
+1. Select **Submit new hardware**.
+
+    :::image type="content" source="./images/create-a-new-hardware-submission/hardware-list.png" alt-text="Screenshot of the the list of submitted hardware list.":::
+
+1. In the **Packages and signing properties** section, choose a product name for your driver submission. This name can be used to search for and organize your driver submissions.
+
+>[!NOTE]
+>If you share your driver with another company, they will see this name.
 
 1. Either drag and drop, or browse to the **.hlkx/.hckx** file that you want to submit. The file will begin to upload.
-   :::image type="content" source="images/drivers-name.png" alt-text="Screenshot that shows the driver name field.":::
 
-1. It is at this point that the submission portal determines what Product Type is being submitted. Then, at the Submission page, the portal presents any questionnaire that may be required for a product being submitted for Windows Server certification. For all products submitted for Windows Server certification or signing where the submission portal presents a questionnaire, you must complete the questionnaire. The submission will not complete unless the questionaire is completed.
+   :::image type="content" source="./images/create-a-new-hardware-submission/hardware-submit.png" alt-text="Screenshot that shows the new hardware submission form.":::
+
+1. Complete any questionnaires that are presented.  The portal presents any questionnaire that's required for the product type being submitted for Windows Server certification. The submission won't complete until you complete the questionnaire.
 
 1. If you wish to test a driver prior to release, you can select the checkbox labled "Perform test-signing for Win10 and above" OR "Perform test-signing for OS below Win10 (legacy)". Test-signed drivers are similar to drivers signed for public release, but do not require HLK testing. They are also not distributed through Windows Update, but can be downloaded from the hardware submission site. They can be installed on test machines only. For more information about test-signing driver packages, see [WHQL Test Signature Program](../install/whql-test-signature-program.md) and [How to test-sign a driver package](../install/how-to-test-sign-a-driver-package.md).
 

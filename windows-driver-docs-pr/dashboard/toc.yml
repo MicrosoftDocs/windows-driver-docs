@@ -4,7 +4,11 @@
   href: hardware-dashboard-faq.yml
 - name: "Getting started"
   href: get-started-with-the-hardware-dashboard.md
-- name: "Dashboard Administration"
+- name: "Hardware Submissions"
+  items:
+  - name: "Create a new hardware submission"
+    href: create-a-new-hardware-submission.md
+- name: "Using the hardware dashboard"
   items:
   - name: "Register for the Windows Hardware Program"
     href: register-for-the-hardware-program.md 
