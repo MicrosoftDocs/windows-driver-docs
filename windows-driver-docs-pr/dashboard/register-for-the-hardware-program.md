@@ -31,41 +31,49 @@ To register for the Hardware Developer Program:
 
     :::image type="content" source="./images/register-for-the-hardware-program/registration-start.png" alt-text="Screenshot of the first page of the Hardware Developer Program registration process. The 'Next' button is selected.":::
 
-1. If your organization has an Azure AD global administrator account, select **Sign in to Azure AD**. If your organization doesn't have an Azure AD directory, select **Create a new directory for free** and follow the directions to create an account.
+1. If your organization has an Azure AD global administrator account, select **Sign in to Azure AD**. If your organization doesn't have an Azure AD directory, select **Create a new directory for free**. Follow the directions to create an account and sign in with your new global administrator user name and password.
 
     :::image type="content" source="./images/register-for-the-hardware-program/registration-work-account.png" alt-text="Screenshot of the Azure AD page of the Hardware Developer Program registration process. The 'Sign in to Azure AD' button is selected.":::
 
-1. Download `signtool.exe`. `signtool.exe` is available as part of the [Windows SDK download](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+1. Now that you've signed in to Azure AD, select the country or region where you live or where your business is located.
 
-1. Sign and upload the file provided to you within the **Sign and upload** portion of the registration process.
+    :::image type="content" source="./images/register-for-the-hardware-program/registration-select-country.png" alt-text="Screenshot of the Account country page of the Hardware Developer Program registration process. ":::
+
+>[!IMPORTANT]
+Once you complete your account information, you can't change your country/region.
+
+1. Enter your company display name. Customers will see your apps, add-ins, extensions, or services listed under this name.
+
+   :::image type="content" source="./images/register-for-the-hardware-program/registration-company-name.png" alt-text="Screenshot of the Company display name textbox in the Hardware Developer Program registration process. The textbox has the value 'Contoso Display Name' ":::
+
+1. Enter your personal contact info. Microsoft will use this info for account verification and to contact you. When you're done, select **Next** at the top of the page.
+
+   :::image type="content" source="./images/register-for-the-hardware-program/registration-personal-info.png" alt-text="Screenshot of the 'Your personal contact info' section in the Hardware Developer Program registration process.":::
+
+1. You are now in the **Certificate** section of the registration process. In order to secure your digital information, you must use your company's Extended Validation (EV) code signing certificate. If your company doesn't have an EV certificate, you can purchase one from an authorized certificate authority. Once you have your code signing certificate, select **Next**.
+
+   :::image type="content" source="./images/register-for-the-hardware-program/registration-ev-cert.png" alt-text="Screenshot of the 'Get a code signing certificate' section in the Hardware Developer Program registration process.":::
+
+1. Now you'll need to sign and upload your file. Follow the steps as directed on the **Registration - Sign and upload your file** page.
+
     > [!NOTE]
-    > The following three steps no longer need to be completed within the same browser session.
+    > You can sign the signable file with your certificate offline and return later to upload it. When you return, be sure to sign in with your Azure AD global administrator account to resume the process.
 
-    1. Download the provided signable file.
-    2. Sign the file with signtool.exe and your code signing certificate.
-    3. Upload the signed file. Your organization name and ID number is extracted from the signed file.
+1. After you've uploaded your file, select **Next** at the bottom of the page.
 
-4. Sign in with an Azure AD Global administrator account
+1. Review all of your information, and then select **Submit**.
 
-    - If your organization already has an Azure AD directory, sign in with a [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) account.
-
-    - If your organization does not have an Azure AD directory, you must create one and sign in.
-
-5. Account details
-
-    - Enter in account details, such as your organization display name and personal contact information.
-
-    - Sign the required hardware developer legal agreements, located in the account settings tab as shown below:
-
-        ![an image showing the 'agreements' button.](images/legal-agreements-location.png)
-
-## After registration
+## Next Steps
 
 After your registration is complete, additional administrative tasks are available:
 
-- [Manage users and permissions](managing-user-roles.md)
+> [!div class="nextstepaction"]
+> [Manage users and permissions](managing-user-roles.md)
 
-When you are finished with any administrative tasks, you are ready to create your first hardware submission. See [Hardware submissions](hardware-certification-submissions.md) for information and instructions.
+To learn how to create your first hardware submission, see:
+
+> [!div class="nextstepaction"]
+> [Hardware submissions](hardware-certification-submissions.md).
 
 ## Support
 
