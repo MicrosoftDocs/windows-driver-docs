@@ -4,7 +4,7 @@
   href: hardware-dashboard-faq.yml
 - name: "Getting started"
   href: get-started-with-the-hardware-dashboard.md
-- name: "Dashboard Management"
+- name: "Dashboard Administration"
   items:
   - name: "Register for the Windows Hardware Program"
     href: register-for-the-hardware-program.md 
