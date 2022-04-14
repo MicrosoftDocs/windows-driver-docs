@@ -2,9 +2,13 @@
   href: index.yml
 - name: "Overview"
   href: hardware-dashboard-faq.yml
-- name: "Getting Started"
-  items: 
-  - name: "Getting started with the Hardware dashboard"
-    href: get-started-with-the-hardware-dashboard.md
+- name: "Getting started"
+  href: get-started-with-the-hardware-dashboard.md
+- name: "Dashboard Management"
+  items:
   - name: "Register for the Windows Hardware Program"
-    href: register-for-the-hardware-program.md
+    href: register-for-the-hardware-program.md 
+  - name: "Manage Code Signing Certificate"
+    href: update-a-code-signing-certificate.md 
+  - name: "Manage User Roles"
+    href: managing-user-roles.md 

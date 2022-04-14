@@ -40,7 +40,7 @@ To register for the Hardware Developer Program:
     :::image type="content" source="./images/register-for-the-hardware-program/registration-select-country.png" alt-text="Screenshot of the Account country page of the Hardware Developer Program registration process. ":::
 
 >[!IMPORTANT]
-Once you complete your account information, you can't change your country/region.
+>Once you complete your account information, you can't change your country/region.
 
 1. Enter your company display name. Customers will see your apps, add-ins, extensions, or services listed under this name.
 
@@ -64,8 +64,6 @@ Once you complete your account information, you can't change your country/region
 1. Review all of your information, and then select **Submit**.
 
 ## Next Steps
-
-After your registration is complete, additional administrative tasks are available:
 
 > [!div class="nextstepaction"]
 > [Manage users and permissions](managing-user-roles.md)
