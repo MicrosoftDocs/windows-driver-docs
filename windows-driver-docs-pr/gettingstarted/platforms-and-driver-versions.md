@@ -115,7 +115,7 @@ This code example, which is from the driver's initialization code, determines wh
 ...
 
 // Are we running on Windows 7 or later?
-if (RtlIsNtDdiVersionAvailable(NTDDI_WIN7) ) {
+if (RtlIsNtDdiVersionAvailable(NTDDI_WIN7)) {
 
     // Yes... Windows 7 or later it is!
     RtlInitUnicodeString(&funcName, L"KeAcquireInStackQueuedSpinLock");
@@ -123,7 +123,7 @@ if (RtlIsNtDdiVersionAvailable(NTDDI_WIN7) ) {
     // Get a pointer to Windows implementation of KeAcquireInStackQueuedSpinLock
     // into our variable "AcquireInStackQueued"
     AcquireInStackQueued = (PAISQSL) MmGetSystemRoutineAddress(&funcName);
- }
+}
 
 ...
 
