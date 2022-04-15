@@ -4,7 +4,7 @@
   href: hardware-dashboard-faq.yml
 - name: "Getting started"
   href: get-started-with-the-hardware-dashboard.md
-- name: "Hardware Submissions"
+- name: "Hardware submissions"
   items:
   - name: "Create a new hardware submission"
     href: create-a-new-hardware-submission.md
