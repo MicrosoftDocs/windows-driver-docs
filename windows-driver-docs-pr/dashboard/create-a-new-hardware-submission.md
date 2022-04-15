@@ -17,7 +17,7 @@ This article describes how to create a new hardware submission in the Partner Ce
 
 * For drivers compatible with Windows 8/8.1 and older operating systems, you'll need to have an **.hckx** file that's been digitally signed. For information about creating and digitally signing an  **.hckx** file, see the [Windows HCK Getting Started Guide](/previous-versions/windows/hardware/hck/jj123537(v=vs.85)).
 
-## Create a hardware submission
+## Submit your new hardware
 
 1. Go to [Partner Center](https://partner.microsoft.com/dashboard) and sign in using your credentials.
 
