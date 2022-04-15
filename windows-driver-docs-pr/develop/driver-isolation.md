@@ -1,7 +1,7 @@
 ---
 title: Driver package isolation
 description: This page describes driver isolation, a requirement for a Windows Driver.
-ms.date: 04/14/2022
+ms.date: 04/15/2022
 ---
 
 # Driver package isolation
@@ -20,7 +20,7 @@ The following table shows some example legacy driver practices that are no longe
 | Hardcodes path to global registry locations | Uses HKR and system-supplied functions for relative location of registry and file state |
 | Runtime file writes to any location | Files are written relative to locations supplied by the operating system |
 
-For help in determining if your driver package meets driver package isolation requirements, see [Validating windows drivers](./validating-windows-drivers.md).
+For help in determining if your driver package meets driver package isolation requirements, see [Validating Windows Drivers](./validating-windows-drivers.md).
 
 ## Run from driver store
 
