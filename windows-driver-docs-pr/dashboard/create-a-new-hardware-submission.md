@@ -55,7 +55,7 @@ This article describes how to create a new hardware submission in the Partner Ce
    | Announcement date | Enter the date when you want your product included on the Windows Server Catalog, the Windows Certified Product List, and the Universal Driver List. |
    | Marketing names | Enter the marketing name(s) for your submission. Marketing names allow you to provide aliases for your product. You can provide as many names as you want.|
 
-   :::image type="content" source="images/drivers-certification.png" alt-text="Screenshot that shows the certification section.":::
+   :::image type="content" source="images/create-a-new-hardware-submission/hardware-certification.png" alt-text="Screenshot that shows the certification section.":::
 
 1. Select **Submit** at the bottom of the page.
 
@@ -63,7 +63,7 @@ This article describes how to create a new hardware submission in the Partner Ce
 
 1. You can monitor the progress of your submission with the progress tracker at the top of the page. Once all steps show a green check, the submission is complete and your organization will receive a notification in the dashboard header.
 
-   :::image type="content" source="images/drivers-allgreen-new.png" alt-text="Screenshot that shows the progress tracker.":::
+   :::image type="content" source="images/create-a-new-hardware-submission/hardware-progress-tracker.png" alt-text="Screenshot that shows the progress tracker.":::
 
 1. Review the results. If your submission failed, make any necessary changes and resubmit.
 
