@@ -1,7 +1,7 @@
 ---
 description: Universal Serial Bus (USB) provides an expandable, hot-pluggable Plug and Play serial interface that ensures a standard, low-cost connection for peripheral devices such as keyboards, mice, joysticks, printers, scanners, storage devices, modems, and video conferencing cameras. Migration to USB is recommended for all peripheral devices that use legacy ports such as PS/2, serial, and parallel ports. The USB-IF is a Special Interest Groups (SIGs) that maintains the Official USB Specification, test specifications and tools. Windows operating systems include native support for USB host controllers, hubs, and devices and systems that comply with the official USB specification. Windows also provides programming interfaces that you can use to develop device drivers and applications that communicate with a USB device.
 title: Universal Serial Bus (USB)
-ms.date: 09/16/2021
+ms.date: 04/18/2022
 ms.topic: article
 ---
 
@@ -13,7 +13,7 @@ The USB-IF is a Special Interest Groups (SIGs) that maintains the [Official USB 
 
 Windows operating systems include native support for USB host controllers, hubs, and devices and systems that comply with the official USB specification. Windows also provides programming interfaces that you can use to develop [device drivers](usb-driver-development-guide.md) and [applications](developing-windows-applications-that-communicate-with-a-usb-device.md) that communicate with a USB device.
 
-[![usb for device builders.](images/icon-dev.png)](building-usb-devices-for-windows.md)[![usb for driver developers](images/icon-driver.png)](usb-driver-development-guide.md)[![usb for app developers](images/icon-app.png)](developing-windows-applications-that-communicate-with-a-usb-device.md)[![usb hck certification](images/icon-cert.png)](windows-hardware-certification-kit-tests-for-usb.md)
+[![USB for device builders icon](images/icon-dev.png)](building-usb-devices-for-windows.md)[![USB for driver developers icon](images/icon-driver.png)](usb-driver-development-guide.md)[![USB for app developers icon](images/icon-app.png)](developing-windows-applications-that-communicate-with-a-usb-device.md)[![USB HCK certification icon](images/icon-cert.png)](windows-hardware-certification-kit-tests-for-usb.md)
 
 <table>
 <colgroup>
@@ -103,10 +103,11 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p>Miscellaneous resources based on frequently asked questions from developers who are new to developing USB devices and drivers that work with Windows operating systems.</p>
 <p></p>
 <p><strong>USB-related videos</strong></p>
-<a href="https://channel9.msdn.com/Events/Build/2013/3-924a" data-raw-source="[UWP apps for USB devices](https://channel9.msdn.com/Events/Build/2013/3-924a)">UWP apps for USB devices</a>
-<a href="https://channel9.msdn.com/events/BUILD/BUILD2011/HW-256T" data-raw-source="[Understanding USB 3.0 in Windows 8](https://channel9.msdn.com/events/BUILD/BUILD2011/HW-256T)">Understanding USB 3.0 in Windows 8</a>
-<a href="https://channel9.msdn.com/events/BUILD/BUILD2011/HW-773T" data-raw-source="[Building great USB 3.0 devices](https://channel9.msdn.com/events/BUILD/BUILD2011/HW-773T)">Building great USB 3.0 devices</a>
-<a href="https://channel9.msdn.com/events/BUILD/BUILD2011/HW-258P" data-raw-source="[USB Debugging Innovations in Windows 8 (Part I, II, & III)](https://channel9.msdn.com/events/BUILD/BUILD2011/HW-258P)">USB Debugging Innovations in Windows 8 (Part I, II, & III)</a>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/events/build-build2011/hw-256t" data-raw-source="[Understanding USB 3.0 in Windows 8](https://docs.microsoft.com/en-us/events/build-build2011/hw-256t)">Understanding USB 3.0 in Windows 8</a></li>
+<li><a href="https://docs.microsoft.com/en-us/events/build-build2011/hw-773t" data-raw-source="[Building great USB 3.0 devices](https://docs.microsoft.com/en-us/events/build-build2011/hw-773t)">Building great USB 3.0 devices</a></li>
+<li><a href="https://docs.microsoft.com/en-us/events/build-build2011/hw-258p" data-raw-source="[USB Debugging Innovations in Windows 8 (Part I, II, & III)](https://docs.microsoft.com/en-us/events/build-build2011/hw-258p)">USB Debugging Innovations in Windows 8 (Part I, II, & III)</a></li>
+</ul>
 <p><strong>USB hardware for learning</strong></p>
 <a href="microsoft-usb-test-tool--mutt--devices.md" data-raw-source="[MUTT devices](microsoft-usb-test-tool--mutt--devices.md)">MUTT devices</a>
 <p>MUTT and SuperMUTT devices and the accompanying software package are integrated into the HCK suite of USB tests. They provide automated testing that can be used during the development cycle of USB controllers, devices and systems, especially stress testing.</p>
