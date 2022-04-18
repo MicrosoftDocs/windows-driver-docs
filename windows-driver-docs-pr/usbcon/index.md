@@ -104,9 +104,9 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p></p>
 <p><strong>USB-related videos</strong></p>
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/events/build-build2011/hw-256t" data-raw-source="[Understanding USB 3.0 in Windows 8](https://docs.microsoft.com/en-us/events/build-build2011/hw-256t)">Understanding USB 3.0 in Windows 8</a></li>
-<li><a href="https://docs.microsoft.com/en-us/events/build-build2011/hw-773t" data-raw-source="[Building great USB 3.0 devices](https://docs.microsoft.com/en-us/events/build-build2011/hw-773t)">Building great USB 3.0 devices</a></li>
-<li><a href="https://docs.microsoft.com/en-us/events/build-build2011/hw-258p" data-raw-source="[USB Debugging Innovations in Windows 8 (Part I, II, & III)](https://docs.microsoft.com/en-us/events/build-build2011/hw-258p)">USB Debugging Innovations in Windows 8 (Part I, II, & III)</a></li>
+<li><a href="https://docs.microsoft.com/events/build-build2011/hw-256t" data-raw-source="[Understanding USB 3.0 in Windows 8](https://docs.microsoft.com/events/build-build2011/hw-256t)">Understanding USB 3.0 in Windows 8</a></li>
+<li><a href="https://docs.microsoft.com/events/build-build2011/hw-773t" data-raw-source="[Building great USB 3.0 devices](https://docs.microsoft.com/events/build-build2011/hw-773t)">Building great USB 3.0 devices</a></li>
+<li><a href="https://docs.microsoft.com/events/build-build2011/hw-258p" data-raw-source="[USB Debugging Innovations in Windows 8 (Part I, II, & III)](https://docs.microsoft.com/events/build-build2011/hw-258p)">USB Debugging Innovations in Windows 8 (Part I, II, & III)</a></li>
 </ul>
 <p><strong>USB hardware for learning</strong></p>
 <a href="microsoft-usb-test-tool--mutt--devices.md" data-raw-source="[MUTT devices](microsoft-usb-test-tool--mutt--devices.md)">MUTT devices</a>
