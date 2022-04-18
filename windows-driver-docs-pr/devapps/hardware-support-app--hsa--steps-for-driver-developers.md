@@ -443,6 +443,6 @@ The following schema is also valid as of Windows 10, version 1809.  It enables a
 
 [Custom Capability Driver Sample](https://aka.ms/customcapabilitydriversample )
 
-[Sideload apps in Windows 10](/windows/deploy/sideload-apps-in-windows-10)
+[Sideload apps in Windows 10](/windows/application-management/sideload-apps-in-windows-10)
 
 [FAQ on Custom Capabilities](FAQ-on-custom-capabilities.yml)
