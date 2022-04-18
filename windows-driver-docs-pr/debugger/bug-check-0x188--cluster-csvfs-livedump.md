@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x188 CLUSTER_CSVFS_LIVEDUMP
-description: The CLUSTER_CSVFS_LIVEDUMP bug check has a value of 0x00000188. This indicates that CSVFS initiated this livedump to help debug an inconsistent state.
+description: The CLUSTER_CSVFS_LIVEDUMP live dump has a value of 0x00000188. This indicates that CSVFS initiated this livedump to help debug an inconsistent state.
 keywords: ["Bug Check 0x188 CLUSTER_CSVFS_LIVEDUMP", "CLUSTER_CSVFS_LIVEDUMP"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,7 +14,9 @@ api_type:
 # Bug Check 0x188: CLUSTER\_CSVFS\_LIVEDUMP
 
 
-The CLUSTER\_CSVFS\_LIVEDUMP bug check has a value of 0x00000188. This indicates that CSVFS initiated this livedump to help debug an inconsistent state.
+The CLUSTER\_CSVFS\_LIVEDUMP live dump has a value of 0x00000188. This indicates that CSVFS initiated this livedump to help debug an inconsistent state.
+
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).

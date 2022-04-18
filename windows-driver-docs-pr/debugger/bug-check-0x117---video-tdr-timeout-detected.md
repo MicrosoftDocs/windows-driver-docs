@@ -91,7 +91,7 @@ The [**!analyze**](-analyze.md) debug extension displays information about the b
 
 VIDEO_TDR_TIMEOUT_DETECTED (117)
 The display driver failed to respond in timely fashion.
-(This code can never be used for a real bugcheck.)
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 Arguments:
 Arg1: 8975d500, Optional pointer to internal TDR recovery context (TDR_RECOVERY_CONTEXT).
 Arg2: 9a02381e, The pointer into responsible device driver module (e.g owner tag).

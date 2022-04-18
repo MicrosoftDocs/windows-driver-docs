@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x1C5 IO_THREADPOOL_DEADLOCK_LIVEDUMP
-description: The IO_THREADPOOL_DEADLOCK_LIVEDUMP bug check has a value of 0x000001C5. This indicates a kernel mode threadpool encountered a deadlock situation.
+description: The IO_THREADPOOL_DEADLOCK_LIVEDUMP live dump has a value of 0x000001C5. This indicates a kernel mode threadpool encountered a deadlock situation.
 keywords: ["Bug Check 0x1C5 IO_THREADPOOL_DEADLOCK_LIVEDUMP", "IO_THREADPOOL_DEADLOCK_LIVEDUMP"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,11 +14,12 @@ api_type:
 # Bug Check 0x1C5: IO\_THREADPOOL\_DEADLOCK\_LIVEDUMP
 
 
-The IO\_THREADPOOL\_DEADLOCK\_LIVEDUMP bug check has a value of 0x000001C5. This indicates a kernel mode threadpool encountered a deadlock situation.
+The IO\_THREADPOOL\_DEADLOCK\_LIVEDUMP live dump has a value of 0x000001C5. This indicates a kernel mode threadpool encountered a deadlock situation.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 ## IO\_THREADPOOL\_DEADLOCK\_LIVEDUMP Parameters
 

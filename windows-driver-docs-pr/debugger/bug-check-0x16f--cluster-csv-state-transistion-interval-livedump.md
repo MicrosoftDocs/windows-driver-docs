@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x16F CLUSTER_CSV_STATE_TRANSITION_INTERVAL_TIMEOUT_LIVEDUMP
-description: The CLUSTER_CSV_STATE_TRANSITION_INTERVAL_TIMEOUT_LIVEDUMP bug check has a value of 0x0000016F. This indicates that a Cluster Shared Volume next state transition request has not arrived.
+description: The CLUSTER_CSV_STATE_TRANSITION_INTERVAL_TIMEOUT_LIVEDUMP live dump has a value of 0x0000016F. This indicates that a Cluster Shared Volume next state transition request has not arrived.
 keywords: ["Bug Check 0x16F CLUSTER_CSV_STATE_TRANSITION_INTERVAL_TIMEOUT_LIVEDUMP", "CLUSTER_CSV_STATE_TRANSITION_INTERVAL_TIMEOUT_LIVEDUMP"]
 ms.date: 01/03/2019
 topic_type:
@@ -13,7 +13,7 @@ api_type:
 
 # Bug Check 0x16F: CLUSTER\_CSV\_STATE\_TRANSITION\_INTERVAL\_TIMEOUT\_LIVEDUMP
 
-The CLUSTER\_CSV\_STATE\_TRANSITION\_INTERVAL\_TIMEOUT\_LIVEDUMP bug check has a value of 0x0000016F. This indicates that a Cluster Shared Volume next state transition request has not arrived.
+The CLUSTER\_CSV\_STATE\_TRANSITION\_INTERVAL\_TIMEOUT\_LIVEDUMP live dump has a value of 0x0000016F. This indicates that a Cluster Shared Volume next state transition request has not arrived.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
@@ -49,7 +49,7 @@ The Cluster Shared Volume next state transition request has not arrived.
 
 The system generated a live dump for analysis of the delay.
 
-(This code can never be used for a real bugcheck.)
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 
 ## Resolution

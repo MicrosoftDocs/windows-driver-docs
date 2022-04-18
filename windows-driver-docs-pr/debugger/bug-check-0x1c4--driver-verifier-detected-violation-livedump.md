@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x1C4 DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP
-description: The DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP bug check has a value of 0x000001C4.
+description: The DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP live dump has a value of 0x000001C4.
 keywords: ["Bug Check 0x1C4 DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP", "DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP"]
 ms.date: 05/23/2017
 topic_type:
@@ -13,13 +13,10 @@ api_type:
 
 # Bug Check 0x1C4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP
 
-
-The DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP bug check has a value of 0x000001C4. This indicates that a device driver attempting to corrupt the system has been detected. This is because the driver was specified in the registry as being suspect (by the administrator) and the kernel has enabled substantial checking of this driver. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
+The DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP live dump has a value of 0x000001C4. This indicates that a device driver attempting to corrupt the system has been detected. This is because the driver was specified in the registry as being suspect (by the administrator) and the kernel has enabled substantial checking of this driver. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
-
 
 ## DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP Parameters
 
@@ -30,6 +27,7 @@ The DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP bug check has a value of 0x0
 |3| See Values below. |
 |4| See Values below. |
 
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 **Values**
 

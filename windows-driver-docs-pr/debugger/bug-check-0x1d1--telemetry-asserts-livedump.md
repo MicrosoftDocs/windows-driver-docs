@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x1D1 TELEMETRY_ASSERTS_LIVEDUMP
-description: The TELEMETRY_ASSERTS_LIVEDUMP bug check has a value of 0x000001D1.
+description: The TELEMETRY_ASSERTS_LIVEDUMP live dump has a value of 0x000001D1.
 keywords: ["Bug Check 0x1D1 TELEMETRY_ASSERTS_LIVEDUMP", "TELEMETRY_ASSERTS_LIVEDUMP"]
 ms.date: 04/19/2018
 topic_type:
@@ -17,7 +17,7 @@ api_type:
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
-The TELEMETRY_ASSERTS_LIVEDUMP bug check has a value of 0x000001D1. 
+The TELEMETRY_ASSERTS_LIVEDUMP live dump has a value of 0x000001D1. 
 
 A Telemetry Assert verification failed.
 

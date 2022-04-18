@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x17D PDC_UNEXPECTED_REVOCATION_LIVEDUMP
-description: The PDC_UNEXPECTED_REVOCATION_LIVEDUMP bug check has a value of 0x0000017D. It indicates that an activator has been revoked unexpectedly.
+description: The PDC_UNEXPECTED_REVOCATION_LIVEDUMP live dump has a value of 0x0000017D. It indicates that an activator has been revoked unexpectedly.
 keywords: ["Bug Check 0x17D PDC_UNEXPECTED_REVOCATION_LIVEDUMP", "PDC_UNEXPECTED_REVOCATION_LIVEDUMP"]
 ms.date: 01/04/2019
 topic_type:
@@ -13,7 +13,7 @@ api_type:
 
 # Bug Check 0x17D: PDC\_UNEXPECTED\_REVOCATION\_LIVEDUMP
 
-The PDC\_UNEXPECTED\_REVOCATION\_LIVEDUMP bug check has a value of 0x0000017D. It indicates that an activator has been revoked unexpectedly.
+The PDC\_UNEXPECTED\_REVOCATION\_LIVEDUMP live dump has a value of 0x0000017D. It indicates that an activator has been revoked unexpectedly.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
@@ -36,7 +36,7 @@ An activator has been revoked unexpectedly.
 
 A livedump is created to provide information to investigate.
 
-(This code can never be used for a real bugcheck.)
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 
 

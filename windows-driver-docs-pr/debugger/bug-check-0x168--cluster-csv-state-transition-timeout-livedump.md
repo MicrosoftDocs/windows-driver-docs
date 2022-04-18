@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x168 CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP
-description: The CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP bug check has a value of 0x00000168. This indicates that a Cluster Shared Volume state transition took too long.
+description: The CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP live dump has a value of 0x00000168. This indicates that a Cluster Shared Volume state transition took too long.
 keywords: ["Bug Check 0x168 CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP", "CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP"]
 ms.date: 01/03/2019
 topic_type:
@@ -13,7 +13,7 @@ api_type:
 
 # Bug Check 0x168: CLUSTER\_CSV\_STATE\_TRANSITION\_TIMEOUT\_LIVEDUMP
 
-The CLUSTER\_CSV\_STATE\_TRANSITION\_TIMEOUT\_LIVEDUMP bug check has a value of 0x00000168. This indicates that a Cluster Shared Volume state transition took too long.
+The CLUSTER\_CSV\_STATE\_TRANSITION\_TIMEOUT\_LIVEDUMP live dump has a value of 0x00000168. This indicates that a Cluster Shared Volume state transition took too long.
 
 
 > [!IMPORTANT]
@@ -48,7 +48,7 @@ The CLUSTER\_CSV\_STATE\_TRANSITION\_TIMEOUT\_LIVEDUMP bug check has a value of 
 
 A Cluster Shared Volume state transition took too long. The system generated a live dump for analysis of the delay.
 
-(This code can never be used for a real bugcheck.)
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 ## Resolution
  

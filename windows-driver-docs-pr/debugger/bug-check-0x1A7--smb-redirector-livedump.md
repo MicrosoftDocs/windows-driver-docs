@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x1A7 SMB_REDIRECTOR_LIVEDUMP
-description: The SMB_REDIRECTOR_LIVEDUMP bug check has a value of 0x000001A7. It indicates that the SMB redirector has detected a problem and has captured a kernel dump to collect debug information.
+description: The SMB_REDIRECTOR_LIVEDUMP live dump has a value of 0x000001A7. It indicates that the SMB redirector has detected a problem and has captured a kernel dump to collect debug information.
 keywords: ["Bug Check 0x1A7 SMB_REDIRECTOR_LIVEDUMP", "SMB_REDIRECTOR_LIVEDUMP"]
 ms.date: 01/10/2019
 topic_type:
@@ -13,7 +13,7 @@ api_type:
 
 # Bug Check 0x1A7: SMB\_REDIRECTOR\_LIVEDUMP
 
-The SMB\_REDIRECTOR\_LIVEDUMP bug check has a value of 0x000001A7. It indicates that the SMB redirector has detected a problem and has captured a kernel dump to collect debug information.
+The SMB\_REDIRECTOR\_LIVEDUMP live dump has a value of 0x000001A7. It indicates that the SMB redirector has detected a problem and has captured a kernel dump to collect debug information.
 
 
 > [!IMPORTANT]
