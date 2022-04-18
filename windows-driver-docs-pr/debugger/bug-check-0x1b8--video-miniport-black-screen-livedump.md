@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x1B8 VIDEO_MINIPORT_BLACK_SCREEN_LIVEDUMP
-description: The VIDEO_MINIPORT_BLACK_SCREEN_LIVEDUMP bug check has a value of 0x000001B8. It indicates that a user initiated MINIPORT live dump for black screen scenarios has occurred.
+description: The VIDEO_MINIPORT_BLACK_SCREEN_LIVEDUMP live dump has a value of 0x000001B8. It indicates that a user initiated MINIPORT live dump for black screen scenarios has occurred.
 keywords: ["Bug Check 0x1B8 VIDEO_MINIPORT_BLACK_SCREEN_LIVEDUMP", "VIDEO_MINIPORT_BLACK_SCREEN_LIVEDUMP"]
 ms.date: 02/20/2020
 topic_type:
@@ -13,7 +13,7 @@ api_type:
 
 # Bug Check 0x1B8: VIDEO\_MINIPORT\_BLACK\_SCREEN\_LIVEDUMP
 
-The VIDEO\_MINIPORT\_BLACK\_SCREEN\_LIVEDUMP bug check has a value of 0x000001B8. It indicates that a user initiated MINIPORT live dump for black screen scenarios has occurred.
+The VIDEO\_MINIPORT\_BLACK\_SCREEN\_LIVEDUMP live dump has a value of 0x000001B8. It indicates that a user initiated MINIPORT live dump for black screen scenarios has occurred.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).

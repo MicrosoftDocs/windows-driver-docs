@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x198 UFX_LIVEDUMP
-description: The UFX_LIVEDUMP bug check has a value of 0x00000198. This indicates that a UFX live dump occurred.
+description: The UFX_LIVEDUMP live dump has a value of 0x00000198. This indicates that a UFX live dump occurred.
 keywords: ["Bug Check 0x198 UFX_LIVEDUMP", "UFX_LIVEDUMP"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,7 +14,9 @@ api_type:
 # Bug Check 0x198: UFX\_LIVEDUMP
 
 
-The UFX\_LIVEDUMP bug check has a value of 0x00000198. This indicates that a UFX live dump occurred.
+The UFX\_LIVEDUMP live dump has a value of 0x00000198. This indicates that a UFX live dump occurred.
+
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).

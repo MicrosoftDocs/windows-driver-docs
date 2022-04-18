@@ -1,6 +1,6 @@
 ---
 title: Bug Check 1CC EXRESOURCE_TIMEOUT_LIVEDUMP 
-description: The EXRESOURCE_TIMEOUT_LIVEDUMP bug check has a value of 0x000001CC.
+description: The EXRESOURCE_TIMEOUT_LIVEDUMP live dump has a value of 0x000001CC.
 keywords: ["Bug Check 0x1CC EXRESOURCE_TIMEOUT_LIVEDUMP", "EXRESOURCE_TIMEOUT_LIVEDUMP"]
 ms.date: 04/19/2018
 topic_type:
@@ -17,10 +17,11 @@ api_type:
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
-The EXRESOURCE_TIMEOUT_LIVEDUMP bug check has a value of 0x000001CC.
+The EXRESOURCE_TIMEOUT_LIVEDUMP live dump has a value of 0x000001CC.
 
 A kernel ERESOURCE has timed out. This can indicate a deadlock condition or heavy contention which can cause performance issues.
 
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 ## EXRESOURCE\_TIMEOUT\_LIVEDUMP Parameters
 

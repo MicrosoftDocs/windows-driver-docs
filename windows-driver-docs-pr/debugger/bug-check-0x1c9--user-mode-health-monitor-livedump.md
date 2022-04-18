@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x1C9 USER_MODE_HEALTH_MONITOR_LIVEDUMP
-description: The USER_MODE_HEALTH_MONITOR_LIVEDUMP bug check has a value of 0x000001C9. It indicates that one or more critical user mode components failed to satisfy a health check.
+description: The USER_MODE_HEALTH_MONITOR_LIVEDUMP live dump has a value of 0x000001C9. It indicates that one or more critical user mode components failed to satisfy a health check.
 keywords: ["Bug Check 0x1C9 USER_MODE_HEALTH_MONITOR_LIVEDUMP", "USER_MODE_HEALTH_MONITOR_LIVEDUMP"]
 ms.date: 01/10/2019
 topic_type:
@@ -13,7 +13,7 @@ api_type:
 
 # Bug Check 0x1C9: USER\_MODE\_HEALTH\_MONITOR\_LIVEDUMP
 
-The USER\_MODE\_HEALTH\_MONITOR\_LIVEDUMP bug check has a value of 0x000001C9. It indicates that one or more critical user mode components failed to satisfy a health check.
+The USER\_MODE\_HEALTH\_MONITOR\_LIVEDUMP live dump has a value of 0x000001C9. It indicates that one or more critical user mode components failed to satisfy a health check.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).

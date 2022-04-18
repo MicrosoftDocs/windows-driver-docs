@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x19D CLUSTER_SVHDX_LIVEDUMP
-description: The CLUSTER_SVHDX_LIVEDUMP bug check has a value of 0x0000019D. This indicates that SVHDX initiated this livedump to help debug an inconsistent state.
+description: The CLUSTER_SVHDX_LIVEDUMP live dump has a value of 0x0000019D. This indicates that SVHDX initiated this livedump to help debug an inconsistent state.
 keywords: ["Bug Check 0x19D CLUSTER_SVHDX_LIVEDUMP", "CLUSTER_SVHDX_LIVEDUMP"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,11 +14,12 @@ api_type:
 # Bug Check 0x19D: CLUSTER\_SVHDX\_LIVEDUMP
 
 
-The CLUSTER\_SVHDX\_LIVEDUMP bug check has a value of 0x0000019D. This indicates that SVHDX initiated this livedump to help debug an inconsistent state.
+The CLUSTER\_SVHDX\_LIVEDUMP live dump has a value of 0x0000019D. This indicates that SVHDX initiated this livedump to help debug an inconsistent state.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 ## CLUSTER\_SVHDX\_LIVEDUMP Parameters
 

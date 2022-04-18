@@ -20,6 +20,8 @@ The UCMUCSI_LIVEDUMP live dump has a value of 0x000001D4. This indicates that th
 
 The UcmUcsiCx.sys is the included UCSI Class Extension. For more information, see [USB Type-C Connector System Software Interface (UCSI) driver](../usbcon/ucsi.md).
 
+(This code can never be used for a real bug check; it is used to identify live dumps.)
+
 ## UCMUCSI\_LIVEDUMP Parameters
 
 Parameter | Description

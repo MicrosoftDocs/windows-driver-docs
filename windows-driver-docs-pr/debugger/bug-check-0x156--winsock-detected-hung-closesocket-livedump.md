@@ -1,8 +1,8 @@
 ---
 title: Bug Check 0x156 WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP
-description: The WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP bug check has a value of 0x00000156. This indicates that Winsock detected a hung transport endpoint close request.
+description: The WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP live dump has a value of 0x00000156. This indicates that Winsock detected a hung transport endpoint close request.
 keywords: ["Bug Check 0x156 WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP", "WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP"]
-ms.date: 05/23/2017
+ms.date: 04/18/2022
 topic_type:
 - apiref
 api_name:
@@ -14,11 +14,12 @@ api_type:
 # Bug Check 0x156: WINSOCK\_DETECTED\_HUNG\_CLOSESOCKET\_LIVEDUMP
 
 
-The WINSOCK\_DETECTED\_HUNG\_CLOSESOCKET\_LIVEDUMP bug check has a value of 0x00000156. This indicates that Winsock detected a hung transport endpoint close request.
+The WINSOCK\_DETECTED\_HUNG\_CLOSESOCKET\_LIVEDUMP live dump has a value of 0x00000156. This indicates that Winsock detected a hung transport endpoint close request.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 ## WINSOCK\_DETECTED\_HUNG\_CLOSESOCKET\_LIVEDUMP Parameters
 
@@ -37,7 +38,7 @@ The WINSOCK\_DETECTED\_HUNG\_CLOSESOCKET\_LIVEDUMP bug check has a value of 0x00
 <tbody>
 <tr class="odd">
 <td align="left">1</td>
-<td align="left">AFD endpoint pointer (!afdkd.endp &lt;ptr&gt;)</td>
+<td align="left">AFD endpoint pointer (!afdkd.endp &lt;ptr&gt;) The !afdkd debugger extension is only available to hardware development partners. </td>
 </tr>
 <tr class="even">
 <td align="left">2</td>
@@ -63,6 +64,8 @@ The WINSOCK\_DETECTED\_HUNG\_CLOSESOCKET\_LIVEDUMP bug check has a value of 0x00
 ## Cause
 
 While processing a closesocket request, Winsock detected a hung transport endpoint close request. The system generated a live dump for analysis, then the closesocket request was completed without waiting for the completion of hung transport endpoint close request.
+
+
 
  
 

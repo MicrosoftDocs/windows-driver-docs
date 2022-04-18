@@ -52,4 +52,4 @@ An Endpoint Context structure holds context information for a single endpoint. I
 
 ## Related topics
 
-[USB Debugging Innovations in Windows 8](https://channel9.msdn.com/Events/BUILD/BUILD2011/HW-258P)
+[USB Debugging Innovations in Windows 8](/events/build-build2011/hw-258p)

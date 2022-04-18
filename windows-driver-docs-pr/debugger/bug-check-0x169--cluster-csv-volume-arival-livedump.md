@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x169 CLUSTER_CSV_VOLUME_ARRIVAL_LIVEDUMP
-description: The CLUSTER_CSV_VOLUME_ARRIVAL_LIVEDUMP bug check has a value of 0x00000169. This indicates that Cluster Shared Volume Manager was asked to create a new volume device object, and volume has not arrived in time.
+description: The CLUSTER_CSV_VOLUME_ARRIVAL_LIVEDUMP live dump has a value of 0x00000169. This indicates that Cluster Shared Volume Manager was asked to create a new volume device object, and volume has not arrived in time.
 keywords: ["Bug Check 0x169 CLUSTER_CSV_VOLUME_ARRIVAL_LIVEDUMP", "CLUSTER_CSV_VOLUME_ARRIVAL_LIVEDUMP"]
 ms.date: 01/03/2019
 topic_type:
@@ -13,7 +13,7 @@ api_type:
 
 # Bug Check 0x169: CLUSTER\_CSV\_VOLUME\_ARRIVAL\_LIVEDUMP
 
-The CLUSTER\_CSV\_VOLUME\_ARRIVAL\_LIVEDUMP bug check has a value of 0x00000169. This indicates that Cluster Shared Volume Manager was asked to create a new volume device object, and volume has not arrived in time.
+The CLUSTER\_CSV\_VOLUME\_ARRIVAL\_LIVEDUMP live dump has a value of 0x00000169. This indicates that Cluster Shared Volume Manager was asked to create a new volume device object, and volume has not arrived in time.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
@@ -36,7 +36,7 @@ The Cluster Shared Volume Manager was asked to create a new volume device object
 
 The system generated a live dump for analysis of the delay.
 
-(This code can never be used for a real bugcheck.)
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 ## Resolution
  

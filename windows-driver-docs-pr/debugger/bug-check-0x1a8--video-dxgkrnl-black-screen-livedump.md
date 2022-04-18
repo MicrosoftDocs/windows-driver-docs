@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x1A8 VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP
-description: The VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP bug check has a value of 0x000001A8. It indicates that a user initiated DXGKRNL live dump for black screen scenarios has occurred.
+description: The VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP live dump has a value of 0x000001A8. It indicates that a user initiated DXGKRNL live dump for black screen scenarios has occurred.
 keywords: ["Bug Check 0x1A8 VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP", "VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP"]
 ms.date: 01/28/2018
 topic_type:
@@ -13,7 +13,7 @@ api_type:
 
 # Bug Check 0x1A8: VIDEO\_DXGKRNL\_BLACK\_SCREEN\_LIVEDUMP
 
-The VIDEO\_DXGKRNL\_BLACK\_SCREEN\_LIVEDUMP bug check has a value of 0x000001A8. It indicates that a user initiated DXGKRNL live dump for black screen scenarios has occurred.
+The VIDEO\_DXGKRNL\_BLACK\_SCREEN\_LIVEDUMP live dump has a value of 0x000001A8. It indicates that a user initiated DXGKRNL live dump for black screen scenarios has occurred.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).

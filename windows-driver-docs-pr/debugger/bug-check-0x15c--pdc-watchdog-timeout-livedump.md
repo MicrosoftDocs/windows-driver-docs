@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x15C PDC_WATCHDOG_TIMEOUT_LIVEDUMP
-description: The PDC_WATCHDOG_TIMEOUT_LIVEDUMP bug check has a value of 0x0000015C that indicates that a system component failed to respond, preventing entering or exiting connected standby.
+description: The PDC_WATCHDOG_TIMEOUT_LIVEDUMP live dump has a value of 0x0000015C that indicates that a system component failed to respond, preventing entering or exiting connected standby.
 keywords: ["Bug Check 0x15C PDC_WATCHDOG_TIMEOUT_LIVEDUMP", "PDC_WATCHDOG_TIMEOUT_LIVEDUMP"]
 ms.date: 05/23/2017
 topic_type:
@@ -14,10 +14,12 @@ api_type:
 # Bug Check 0x15C: PDC\_WATCHDOG\_TIMEOUT\_LIVEDUMP
 
 
-The PDC\_WATCHDOG\_TIMEOUT\_LIVEDUMP bug check has a value of 0x0000015C. This indicates that a system component failed to respond within the allocated time period, preventing the system from entering or exiting connected standby.
+The PDC\_WATCHDOG\_TIMEOUT\_LIVEDUMP live dump has a value of 0x0000015C. This indicates that a system component failed to respond within the allocated time period, preventing the system from entering or exiting connected standby.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 
 ## PDC\_WATCHDOG\_TIMEOUT\_LIVEDUMP Parameters
