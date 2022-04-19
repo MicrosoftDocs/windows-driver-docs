@@ -9,9 +9,18 @@ ms.date: 04/19/2022
 
 This article provides information on the types of code signing certificates and requirements for submitting drivers to the Partner Center Hardware dashboard.
 
+For more information on driver signing requirements see the following pages:
+
 - [Driver Signing Changes in Windows 10](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Driver-Signing-changes-in-Windows-10/ba-p/364859)
 - [Driver Signing changes in Windows 10, version 1607](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Driver-Signing-changes-in-Windows-10-version-1607/ba-p/364894)
 - [Update on Sysdev EV Certificate requirement](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Update-on-Sysdev-EV-Certificate-requirement/ba-p/364879)
+
+## EV certificate signed drivers
+
+- Your Hardware Dev Center dashboard account must have at least one EV certificate associated with it to submit binaries for attestation signing or to submit binaries for HLK certification.
+- Your registered EV certificate must be valid at the time of submission.
+- While Microsoft strongly recommends that you sign individual submissions with an EV certificate, you can alternatively sign submissions with an Authenticode signing certificate that is also registered to your Partner Center account.
+- All certificates must be SHA2 and signed with the `/fd sha256` SignTool command line switch.
 
 ## HLK tested and dashboard signed drivers
 
@@ -28,13 +37,6 @@ This article provides information on the types of code signing certificates and 
 - Windows Server 2016 and greater will not accept attested device and filter driver signing submissions.
 - The dashboard will only sign device and filter drivers that have successfully passed the HLK tests.
 - Windows Server 2016 and greater will only load dashboard signed drivers that have successfully passed the HLK tests.
-
-## EV certificate signed drivers
-
-- Your Hardware Dev Center dashboard account must have at least one EV certificate associated with it to submit binaries for attestation signing or to submit binaries for HLK certification.
-- Your registered EV certificate must be valid at the time of submission.
-- While Microsoft strongly recommends that you sign individual submissions with an EV certificate, you can alternatively sign submissions with an Authenticode signing certificate that is also registered to your Partner Center account.
-- All certificates must be SHA2 and signed with the `/fd sha256` SignTool command line switch.
 
 ## Windows Defender Application Control
 

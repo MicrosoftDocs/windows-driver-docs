@@ -1,39 +1,47 @@
 ---
-title: Get an extended validation (EV) code signing certificate
-description: Get an extended validation (EV) code signing certificate
+title: Manage code signing certificates
+description: Manage code signing certificates
 ms.topic: article
 ms.date: 02/28/2022
 ---
 
-# Get an extended validation (EV) code signing certificate
+# Manage code signing certificates
 
-This article describes how to get an extended validation (EV) code signing certificate. If you've already set up a Partner Center account and need to renew a certificate, see [Add or Update a code signing certificate](update-a-code-signing-certificate.md).
+This article describes how to get, add, and update code signing certificates to the Hardware dashboard.
 
-Microsoft requires, as part of the Microsoft Trusted Root Certificate Program, an EV code signing certificate to register for and create a Partner Center account.
+As a Partner Center administrator, you're responsible for adding, updating, and retiring driver certificates. When the original certificate expires, you'll need to get a new certificate and upload a new file signed with your new digital certificate.
 
-Your account must adhere to the following rules:
+For more information on rules for driver signing, see [Driver Signing changes in Windows 10, version 1607](https://techcommunity.microsoft.com/t5/windows-hardware-certification/driver-signing-changes-in-windows-10-version-1607/ba-p/364894) in the [Windows Hardware Certification blog](https://techcommunity.microsoft.com/t5/windows-hardware-certification/bg-p/WindowsHardwareCertification).
 
-* Your registered EV certificate must be valid at the time of submission.
-* While Microsoft strongly recommends that you sign individual submissions with an EV certificate, you can alternatively sign submissions with an Authenticode signing certificate that is also registered to your Partner Center account.
-* All certificates must be SHA2 and signed with the `/fd sha256` SignTool command line switch.
+## Prerequisites
 
-If you already have an approved EV certificate from one of these authorities, you can use it to establish a Partner Center account.
+* Make sure that your company is registered for the Hardware Developer program. To register, follow the steps in [How to register for the Microsoft Windows Hardware Developer Program](register-for-the-hardware-program.md).
 
-## Buy a new EV certificate
+## Get or renew a code signing certificate
 
-To buy a new EV certificate:
+To get a new code signing certificate:
 
-1. Go to the page of one the following certificate authorities and follow the directions for purchase:
+1. Determine which certificate you need. For more information, see [Code signing certificates](code-signing-certificates.md).
 
-    * [DigiCert EV code signing certificate](https://www.digicert.com/order/order-1.php)
-    * [Entrust EV code signing certificate](https://www.entrustdatacard.com/products/digital-signing-certificates/code-signing-certificates)
-    * [GlobalSign EV code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
-    * [SSL.com EV code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
+1. If you are reusing a certificate, move on to step 5.
+
+1. Go to the page of one the following certificate authorities and follow their directions for purchase:
+
+    * [DigiCert code signing certificate](https://www.digicert.com/order/order-1.php)
+    * [Entrust code signing certificate](https://www.entrustdatacard.com/products/digital-signing-certificates/code-signing-certificates)
+    * [GlobalSign code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
+    * [SSL.com code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
 
 1. Once the certificate authority has verified your contact information and your certificate purchase is approved, follow their directions to retrieve the certificate.
 
-## Next steps
+1. Go to [Partner Center](https://partner.microsoft.com/dashboard) and sign in using with administrator credentials.
 
-> [!div class="nextstepaction"]
-> [Add or Update a code signing certificate](update-a-code-signing-certificate.md)
+1. Select the gear icon in the upper right, then select **Developer settings**, then **Manage Certificates** on the left pane.
 
+1. Select **Add a new certificate**, then select **Next**.
+
+1. Download *Signablefile.bin* and sign it with the new digital certificate for your company using [SignTool](/windows/win32/seccrypto/signtool) with the `/fd sha256` switch and appropriate SHA-2 timestamp.
+
+1. Upload the signed file to Partner Center.
+
+## Retire a code signing certificate

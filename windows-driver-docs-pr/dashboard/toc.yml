@@ -8,11 +8,13 @@
   items:
   - name: "Create a new hardware submission"
     href: create-a-new-hardware-submission.md
+  - name: "Code signing certificates"
+    href: code-signing-certificates.md 
 - name: "Using the hardware dashboard"
   items:
-  - name: "Register for the Windows Hardware Program"
+  - name: "Register for the Windows Hardware program"
     href: register-for-the-hardware-program.md 
-  - name: "Manage Code Signing Certificate"
-    href: update-a-code-signing-certificate.md 
+  - name: "Manage code signing certificates"
+    href: get-a-code-signing-certificate.md 
   - name: "Manage users"
     href: managing-user-roles.md 

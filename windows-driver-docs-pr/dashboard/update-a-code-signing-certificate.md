@@ -28,9 +28,9 @@ If you're registering your company on dashboard for the first time, see [Get sta
 
 ## To add or update a code signing certificate
 
-### Step 1: Renew your code signing certificate 
+### Step 1: Renew your code signing certificate
 
-1. Determine which type of code signing certificate you need. For more information, see [Get a code signing certificate](./get-a-code-signing-certificate.md).
+1. Determine which type of code signing certificate you need. For more information, see [code-singing-certificate](./code-signing-certificate.md).
 1. Get a new certificate or reuse an existing certificate.
 1. Once you receive your verified certificate from the certificate authority, proceed to **Step 2** to download and sign the "Signablefile.bin"
 

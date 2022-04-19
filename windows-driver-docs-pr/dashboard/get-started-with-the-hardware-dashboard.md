@@ -13,9 +13,20 @@ This article shows you how to get started using the Partner Center Hardware dash
 
 Your Hardware Dev Center dashboard account must have at least one extended validation (EV) certificate associated with it to submit binaries for attestation signing or to submit binaries for HLK certification.
 
-For more information on rules for driver signing, see [Driver Signing changes in Windows 10, version 1607](https://techcommunity.microsoft.com/t5/windows-hardware-certification/driver-signing-changes-in-windows-10-version-1607/ba-p/364894) in the [Windows Hardware Certification blog](https://techcommunity.microsoft.com/t5/windows-hardware-certification/bg-p/WindowsHardwareCertification).
+The following rules apply:
 
-If you already have an approved EV certificate from one of the following authorities, you can use it to establish a Partner Center account. If you don't have a certificate, follow the steps in [Get an EV certificate](get-a-code-signing-certificate.md).
+* Your registered EV certificate must be valid at the time of submission.
+* While Microsoft strongly recommends that you sign individual submissions with an EV certificate, you can alternatively sign submissions with an Authenticode signing certificate that is also registered to your Partner Center account.
+* All certificates must be SHA2 and signed with the `/fd sha256` SignTool command line switch.
+
+If you already have an approved EV certificate from one of the following authorities, you can use it to establish a Partner Center account. If you don't have an EV certificate, go to the page of one the following certificate authorities and follow their directions for purchase:
+
+  * [DigiCert code signing certificate](https://www.digicert.com/order/order-1.php)
+  * [Entrust code signing certificate](https://www.entrustdatacard.com/products/digital-signing-certificates/code-signing-certificates)
+  * [GlobalSign code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
+  * [SSL.com code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
+
+Once the certificate authority has verified your contact information and your certificate purchase is approved, follow their directions to retrieve the certificate.
 
 To learn about how to manage your certificates in the Hardware dashboard, see [Manage code signing certificates](update-a-code-signing-certificate.md).
 
