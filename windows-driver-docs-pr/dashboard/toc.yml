@@ -14,5 +14,5 @@
     href: register-for-the-hardware-program.md 
   - name: "Manage Code Signing Certificate"
     href: update-a-code-signing-certificate.md 
-  - name: "User management"
+  - name: "Manage users"
     href: managing-user-roles.md 

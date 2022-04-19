@@ -5,6 +5,10 @@ ms.topic: article
 ms.date: 09/10/2021
 ---
 
+# Manage code signing certificates
+
+One is a code signing operation that identifies an organization to the dashboard. This is a signature on the package you plan to submit, and it’s a requirement that the dashboard imposes on partners so that the dashboard to prevent malicious people outside your organization from making submissions using your credentials – which could harm your reputation!
+
 # Add or update a code signing certificate
 
 As a Partner Center administrator, you're responsible for keeping your digital certificate information up to date. When the original certificate expires, you'll need to get a new certificate and upload a new file signed with your new digital certificate.
@@ -24,7 +28,7 @@ If you're registering your company on dashboard for the first time, see [Get sta
 
 ## To add or update a code signing certificate
 
-### Step 1: Renew your code signing certificate if needed  
+### Step 1: Renew your code signing certificate 
 
 1. Determine which type of code signing certificate you need. For more information, see [Get a code signing certificate](./get-a-code-signing-certificate.md).
 1. Get a new certificate or reuse an existing certificate.

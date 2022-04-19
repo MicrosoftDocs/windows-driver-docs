@@ -9,22 +9,32 @@ ms.date: 04/13/2022
 
 This article shows you how to get started using the Partner Center Hardware dashboard.
 
-## Step 1: Register for the Hardware Developer Program
+## Step 1: Get an EV code signing certificate
 
-To register for the Hardware Developer Program, follow the steps in [How to register for the Microsoft Windows Hardware Developer Program](register-for-the-hardware-program.md).
+Your Hardware Dev Center dashboard account must have at least one extended validation (EV) certificate associated with it to submit binaries for attestation signing or to submit binaries for HLK certification.
 
-## Step 2: Test your hardware and drivers
+For more information on rules for driver signing, see [Driver Signing changes in Windows 10, version 1607](https://techcommunity.microsoft.com/t5/windows-hardware-certification/driver-signing-changes-in-windows-10-version-1607/ba-p/364894) in the [Windows Hardware Certification blog](https://techcommunity.microsoft.com/t5/windows-hardware-certification/bg-p/WindowsHardwareCertification).
 
-Now that your company is registered in the Hardware Developer program, you'll need to design, create, and test your hardware and drivers. To ensure that your drivers and hardware run on Windows systems as your customers expect you'll need to participate in either one of the following programs:
+If you already have an approved EV certificate from one of the following authorities, you can use it to establish a Partner Center account. If you don't have a certificate, follow the steps in [Get an EV certificate](get-a-code-signing-certificate.md).
+
+To learn about how to manage your certificates in the Hardware dashboard, see [Manage code signing certificates](update-a-code-signing-certificate.md).
+
+## Step 2: Register for the Hardware Developer Program
+
+Now that you have your EV certificate ready, you can now register for the Hardware Developer Program. To register, follow the steps in [How to register for the Microsoft Windows Hardware Developer Program](register-for-the-hardware-program.md).
+
+## Step 3: Test your hardware and drivers
+
+Now that your company is registered in the Hardware Developer program, you'll need to design, create, and test your hardware and drivers. To ensure that your drivers and hardware run on Windows systems as your customers expect, you'll need to participate in either one of the following programs:
 
  * [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/) (for Windows 10 and above)
  * [Windows Hardware Certification Program](/previous-versions/windows/hardware/hck/jj125187(v=vs.85)) (for Windows 8/8.1 and older operating systems).
 
-## Step 3: Submit for certification and compatibility
+## Step 4: Submit for certification and compatibility
 
 Once you've properly tested your drivers, you can now [create a new hardware submission](create-a-new-hardware-submission.md) in the [Partner Hardware dashboard](https://go.microsoft.com/fwlink/?LinkID=828002).
 
-## Step 4: Manage driver distribution
+## Step 5: Manage driver distribution
 
 If you have drivers that you want to distribute with Windows Update or share with another company, see [Manage driver distribution with shipping labels](manage-driver-distribution-by-submission.md), which covers common driver distribution tasks such as:
 
@@ -33,7 +43,7 @@ If you have drivers that you want to distribute with Windows Update or share wit
   * [Expire a driver from Windows Update](expire-a-driver-from-windows-update.md)
   * [View partner shipping labels for a shared driver](viewing-shipping-labels-for-your-shared-driver.md)
 
-## Step 5: Publish your driver
+## Step 6: Publish your driver
 
 Now that your driver has passed the review process in the Partner Hardware dashboard, it then becomes eligible for the hardware compatibility or certification program. In addition, you can publish it to the [Windows Server Catalog](https://www.windowsservercatalog.com/ ) and the [Windows Certified Products List](windows-certified-products-list.md) by providing an announcement date in your submission.
 
