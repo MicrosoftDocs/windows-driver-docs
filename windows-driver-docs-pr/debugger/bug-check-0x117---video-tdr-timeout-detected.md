@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x117 VIDEO_TDR_TIMEOUT_DETECTED
-description: The VIDEO_TDR_TIMEOUT_DETECTED bug check has a value of 0x00000117. This indicates that the display driver failed to respond in a timely fashion.
+description: The VIDEO_TDR_TIMEOUT_DETECTED live dump has a value of 0x00000117. This indicates that the display driver failed to respond in a timely fashion.
 keywords: ["Bug Check 0x117 VIDEO_TDR_TIMEOUT_DETECTED", "VIDEO_TDR_TIMEOUT_DETECTED"]
 ms.date: 05/23/2017
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 
 # Bug Check 0x117: VIDEO\_TDR\_TIMEOUT\_DETECTED
 
+The VIDEO\_TDR\_TIMEOUT\_DETECTED live dump has a value of 0x00000117. This indicates that the display driver failed to respond in a timely fashion.
 
-The VIDEO\_TDR\_TIMEOUT\_DETECTED bug check has a value of 0x00000117. This indicates that the display driver failed to respond in a timely fashion.
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
 
 ## VIDEO\_TDR\_TIMEOUT\_DETECTED Parameters
 
@@ -54,7 +54,6 @@ The VIDEO\_TDR\_TIMEOUT\_DETECTED bug check has a value of 0x00000117. This indi
 </tbody>
 </table>
 
- 
 
 ## Cause
 

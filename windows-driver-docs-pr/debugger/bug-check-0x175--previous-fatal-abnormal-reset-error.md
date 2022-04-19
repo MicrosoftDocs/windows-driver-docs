@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x175 PREVIOUS_FATAL_ABNORMAL_RESET_ERROR
-description: The PREVIOUS_FATAL_ABNORMAL_RESET_ERROR bug check has a value of 0x00000175.
+description: The PREVIOUS_FATAL_ABNORMAL_RESET_ERROR live dump has a value of 0x00000175.
 keywords: ["Bug Check 0x175 PREVIOUS_FATAL_ABNORMAL_RESET_ERROR", "PREVIOUS_FATAL_ABNORMAL_RESET_ERROR"]
 ms.date: 05/23/2017
 topic_type:
@@ -13,8 +13,9 @@ api_type:
 
 # Bug Check 0x175: PREVIOUS\_FATAL\_ABNORMAL\_RESET\_ERROR
 
+The PREVIOUS\_FATAL\_ABNORMAL\_RESET\_ERROR live dump has a value of 0x00000175. This indicates that an unrecoverable system error occurred or the system has abnormally reset on Windows phone devices. The system generated a live dump to collect device crash data from the previous error.
 
-The PREVIOUS\_FATAL\_ABNORMAL\_RESET\_ERROR bug check has a value of 0x00000175. This indicates that an unrecoverable system error occurred or the system has abnormally reset on Windows phone devices. The system generated a live dump to collect device crash data from the previous error.
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
