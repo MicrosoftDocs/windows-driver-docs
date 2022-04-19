@@ -9,7 +9,7 @@ ms.date: 09/10/2021
 
 One is a code signing operation that identifies an organization to the dashboard. This is a signature on the package you plan to submit, and it’s a requirement that the dashboard imposes on partners so that the dashboard to prevent malicious people outside your organization from making submissions using your credentials – which could harm your reputation!
 
-# Add or update a code signing certificate
+## Add or update a code signing certificate
 
 As a Partner Center administrator, you're responsible for keeping your digital certificate information up to date. When the original certificate expires, you'll need to get a new certificate and upload a new file signed with your new digital certificate.
 
