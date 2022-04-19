@@ -370,7 +370,7 @@ The following table provides links to bug check codes.
 | 0x00000171 | [**CRYPTO\_LIBRARY\_INTERNAL\_ERROR**](bug-check-0x171--crypto-library-internal-error.md)                                                         |
 | 0x00000173 | [**COREMSGCALL\_INTERNAL\_ERROR**](bug-check-0x173--coremsgcall-internal-error.md)                                                                |
 | 0x00000174 | [**COREMSG\_INTERNAL\_ERROR**](bug-check-0x174--coremsg-internal-error.md)                                                                        |
-| 0x00000178 | [**ELAM\_DRIVER\_DETECTED\_FATAL\_ERROR**](bug-check-0x175--elam-driver-detected-fatal-error.md)                                                  |
+| 0x00000178 | [**ELAM\_DRIVER\_DETECTED\_FATAL\_ERROR**](bug-check-0x178--elam-driver-detected-fatal-error.md)                                                  |
 | 0x0000017B | [**PROFILER\_CONFIGURATION\_ILLEGAL**](bug-check-0x17b--profiler-configuration-illegal.md)                                                        | 
 | 0x0000017E | [**MICROCODE\_REVISION\_MISMATCH**](bug-check-0x17e--microcode-revision-mismatch.md)                                                              | 
 | 0x00000187 | [**VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD**](bug-check-0x187--video-dwminit-timeout-fallback-bdd.md)                                              |
