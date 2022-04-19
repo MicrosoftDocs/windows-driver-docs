@@ -13,7 +13,7 @@ This article shows you how to register for the Microsoft Windows Hardware Develo
 
 - If you have an existing organization Dev Center account that you want to use for the Hardware program, sign in with it before you begin registration.
 
-- You must have an Extended Validation (EV) code signing certificate. Check whether your organization already has a code signing certificate. If your company already has a certificate, have the certificate available. If your organization doesn't have a certificate, you'll need to [purchase and EV certificate](get-started-with-the-hardware-dashboard.md#get-an-ev-code-signing-certificate).
+- You must have an Extended Validation (EV) code signing certificate. Check whether your organization already has a code signing certificate. If your company already has a certificate, have the certificate available. If your organization doesn't have a certificate, you'll need to [purchase and EV certificate](get-started-with-the-hardware-dashboard.md#step-1:-get-an-ev-code-signing-certificate).
 
 - You'll need to sign in with your organization’s Azure Active Directory (Azure AD) [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) account. If you don’t know whether your organization has an Azure AD directory, contact your IT department. If your organization doesn’t have an Azure AD directory, you'll be able to create one for free during the registration process'
 
