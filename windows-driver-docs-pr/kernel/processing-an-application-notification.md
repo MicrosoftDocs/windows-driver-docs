@@ -153,7 +153,7 @@ OnDeviceChange(
 
 ### MFC applications
 
-The MFC framework processes the messages that are sent to an MFC-based application's window(s). An MFC-based application must implement an [OnDeviceChange](https://go.microsoft.com/fwlink/p/?linkid=97894) member function for the application's window class that receives the WM\_DEVICECHANGE messages.
+The MFC framework processes the messages that are sent to an MFC-based application's window(s). An MFC-based application must implement an [CWnd::OnDeviceChange](https://docs.microsoft.com/en-us/cpp/mfc/reference/cwnd-class?view=msvc-170#ondevicechange) member function for the application's window class that receives the WM\_DEVICECHANGE messages.
 
 The following code example shows how to implement an **OnDeviceChange** member function in an MFC-based application:
 
