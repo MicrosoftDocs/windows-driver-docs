@@ -8671,7 +8671,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "windows-driver-docs-pr/dashboard/code-signing-cert-manage.md",
+            "source_path": "windows-driver-docs-pr/dashboard/update-a-code-signing-certificate.md",
             "redirect_URL": "/windows-driver-docs-pr/dashboard/code-signing-cert-manage",
             "redirect_document_id": false
         },

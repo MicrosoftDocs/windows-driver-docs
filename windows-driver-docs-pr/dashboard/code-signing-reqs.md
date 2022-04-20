@@ -34,7 +34,7 @@ The following rules apply:
 * While Microsoft strongly recommends that you sign individual submissions with an EV certificate, you can alternatively sign submissions with an Authenticode signing certificate that is also registered to your Partner Center account.
 * All certificates must be SHA2 and signed with the `/fd sha256` SignTool command line switch.
 
-If you already have an approved EV certificate from one of the following authorities, you can use it to establish a Partner Center account. If you don't have an EV certificate, go to the page of [one the certificate authorities](#where-to-get-code-signing-certificates) and follow their directions for purchase.
+If you already have an approved EV certificate from a certificate authorities, you can use it to establish a Partner Center account. If you don't have an EV certificate, chose [one the certificate authorities](#where-to-get-code-signing-certificates) and follow their directions for purchase.
 
 Once the certificate authority has verified your contact information and your certificate purchase is approved, follow their directions to retrieve the certificate.
 
