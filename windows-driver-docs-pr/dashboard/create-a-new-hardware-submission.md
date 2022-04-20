@@ -19,7 +19,7 @@ This article describes how to create a new hardware submission in the Partner Ce
 
 ## Submit your new hardware
 
-1. Go to [the Partner Center Hardware dashboard](https://partner.microsoft.com/en-us/dashboard/hardware/Search) and sign in using your credentials.
+1. Go to [the Partner Center Hardware dashboard](https://partner.microsoft.com/dashboard/hardware/Search) and sign in using your credentials.
 
 1. Select **Submit new hardware**.
 
