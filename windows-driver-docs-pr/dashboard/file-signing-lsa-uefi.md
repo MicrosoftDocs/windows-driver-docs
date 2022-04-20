@@ -17,7 +17,7 @@ This article shows you how to create a new UEFI or LSA submission for file signi
 
 ## Create a new UEFI or LSA submission
 
-1. Go to [Partner Center](https://partner.microsoft.com/dashboard) and sign in using your credentials.
+1. Go to [the Partner Center Hardware dashboard](https://partner.microsoft.com/en-us/dashboard/hardware/Search) and sign in using your credentials.
 
 1. On the left menu, select **File Signing Services**.
 

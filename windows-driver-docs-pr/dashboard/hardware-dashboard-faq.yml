@@ -92,7 +92,7 @@ sections:
         answer: |
           ### My driver signing submission fails with the error “There are files at the root of the cabinet” or “\#No .inf files found in driver directory/directories: XYZ”
           
-          The failure is caused by an incorrect .cab file structure. The .cab structure was created with driver files in the root folder of the .cab file instead of having them in a subfolder. See [Attestation signing a kernel driver for public release](attestation-signing-a-kernel-driver-for-public-release.md) for instructions on how to create a proper .cab file for your driver signing submission.
+          The failure is caused by an incorrect .cab file structure. The .cab structure was created with driver files in the root folder of the .cab file instead of having them in a subfolder. See [Attestation signing a kernel driver for public release](code-signing-attestation.md) for instructions on how to create a proper .cab file for your driver signing submission.
           
           ### "It looks like your package is corrupt or missing important information. Ensure you are using the latest version of the kit, regenerate your package, and try again. If you continue to experience the issue, contact Support."
           

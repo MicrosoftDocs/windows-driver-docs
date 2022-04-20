@@ -60,4 +60,4 @@ You can continue to use the Partner Center Hardware dashboard to:
 To learn more about attestation signing your drivers on the Sysdev dashboard, see
 
 > [!div class="nextstepaction"]
-> [Attestation signing a kernel driver for public release](attestation-signing-a-kernel-driver-for-public-release.md).
+> [Attestation signing a kernel driver for public release](code-signing-attestation.md).

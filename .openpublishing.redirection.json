@@ -8689,6 +8689,13 @@
             "source_path": "windows-driver-docs-pr/dashboard/adding-or-removing-users.md",
             "redirect_URL": "/windows-driver-docs-pr/dashboard/users-manage",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/attestation-signing-a-kernel-driver-for-public-release.md",
+            "redirect_URL": "/windows-driver-docs-pr/dashboard/code-signing-attestation",
+            "redirect_document_id": false
         }
+
+
     ]
 }

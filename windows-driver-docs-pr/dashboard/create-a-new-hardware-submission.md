@@ -19,13 +19,13 @@ This article describes how to create a new hardware submission in the Partner Ce
 
 ## Submit your new hardware
 
-1. Go to [Partner Center](https://partner.microsoft.com/dashboard) and sign in using your credentials.
+1. Go to [the Partner Center Hardware dashboard](https://partner.microsoft.com/en-us/dashboard/hardware/Search) and sign in using your credentials.
 
 1. Select **Submit new hardware**.
 
     :::image type="content" source="./images/create-a-new-hardware-submission/hardware-list.png" alt-text="Screenshot of the the list of submitted hardware list.":::
 
-1. In the **Packages and signing properties** section, choose a product name for your driver submission. This name can be used to search for and organize your driver submissions.
+1. In the **Packages and signing properties** section, enter a product name for your driver submission. This name can be used to search for and organize your driver submissions.
 
 >[!NOTE]
 >If you share your driver with another company, they will see this name.
