@@ -28,3 +28,58 @@
     href: register-for-the-hardware-program.md 
   - name: "Manage users"
     href: users-manage.md 
+- name: "Hardware dashboard API"
+  items: 
+  - name: "Getting started with the Hardware dashboard API"
+    href: dashboard-api.md
+  - name: "Product data API"
+    items: 
+    - name: "Get product data"
+      href: get-product-data.md
+    - name: "Get all products"
+      href: get-all-products.md
+    - name: "Get a product"
+      href: get-a-product.md
+    - name: "Get all submissions"
+      href: get-all-submissions.md
+    - name: "Get a submission"
+      href: get-a-submission.md
+  - name: "Product submission APIs"
+    items: 
+    - name: "Manage product submissions"
+      href: manage-product-submissions.md
+    - name: "Create a new product"
+      href: create-a-new-product.md
+    - name: "Create a new submission for a product"
+      href: create-a-new-submission-for-a-product.md
+    - name: "Commit a product submission"
+      href: commit-a-product-submission.md
+    - name: "Update submission data"
+      href: update-submission-data.md
+    - name: "Update product data"
+      href: update-product-data.md
+  - name: "APIs to get shipping label data"
+    items: 
+    - name: "Get shipping label data"
+      href: get-shipping-labels.md
+    - name: "Get all shipping labels"
+      href: get-all-shipping-labels.md
+    - name: "Get a shipping label"
+      href: get-a-shipping-label.md
+  - name: "APIs to manage shipping labels"
+    items:
+    - name: "Manage shipping labels"
+      href: manage-shipping-labels.md
+    - name: "Create a new shipping label"
+      href: create-a-new-shipping-label.md
+    - name: "Update a shipping label"
+      href: update-a-shipping-label.md
+    - name: "Cancel a shipping label"
+      href: cancel-a-shipping-label.md
+  - name: "Get audience data"
+    href: get-audience-data.md
+  - name: "Driver package metadata"
+    href: driver-package-metadata.md
+    items:
+    - name: "Create Publisher Driver Metadata"
+      href: create-publisher-metadata.md
