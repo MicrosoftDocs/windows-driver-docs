@@ -20,11 +20,9 @@
   items:
   - name: "Create a new hardware submission"
     href: create-a-new-hardware-submission.md
-
-
 - name: "Dashboard administration"
   items:
   - name: "Register for the Windows Hardware program"
     href: register-for-the-hardware-program.md 
   - name: "Manage users"
-    href: managing-user-roles.md 
+    href: users-manage.md 

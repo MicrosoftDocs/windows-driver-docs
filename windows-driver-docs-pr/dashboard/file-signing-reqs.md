@@ -11,7 +11,7 @@ You can use the Partner Center Hardware dashboard to digitally sign [Local Secur
 
 ## LSA plugins and UEFI firmware
 
-- LSA plugins and UEFI firmware signing requires an [extended validation (EV) code signing certificate](code-signing-req.md#ev-certificate-signed-drivers).
+- LSA plugins and UEFI firmware signing requires an [extended validation (EV) code signing certificate](code-signing-reqs.md#ev-certificate-signed-drivers).
 - All LSA and UEFI submissions must be a single, signed CAB library file, and contain all files required for signing.
 - This file should contain no folders and only the binaries or .efi files to be signed.
 - **UEFI FIRMWARE ONLY** - The CAB file signature must match the [Authenticode certificate](../install/authenticode.md) for your organization.

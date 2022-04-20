@@ -8672,17 +8672,22 @@
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/code-signing-cert-manage.md",
-            "redirect_URL": "windows-driver-docs-pr/dashboard/code-signing-cert-manage",
+            "redirect_URL": "/windows-driver-docs-pr/dashboard/code-signing-cert-manage",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/get-a-code-signing-certificate.md",
-            "redirect_URL": "windows-driver-docs-pr/dashboard/code-signing-cert-manage",
+            "redirect_URL": "/windows-driver-docs-pr/dashboard/code-signing-cert-manage",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/lsa-and-uefi-file-signing.md",
-            "redirect_URL": "windows-driver-docs-pr/dashboard/file-signing-reqs",
+            "redirect_URL": "/windows-driver-docs-pr/dashboard/file-signing-reqs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/adding-or-removing-users.md",
+            "redirect_URL": "/windows-driver-docs-pr/dashboard/users-manage",
             "redirect_document_id": false
         }
     ]
