@@ -6,13 +6,13 @@
   href: get-started-with-the-hardware-dashboard.md
 - name: "Driver code signing"
   items:
-  - name: "Driver code signing requirements"
+  - name: "Requirements"
     href: code-signing-reqs.md 
   - name: "Manage code signing certificates"
     href: code-signing-cert-manage.md 
 - name: "File signing services"
   items:
-  - name: "File signing requirements"
+  - name: "Requirements"
     href: file-signing-reqs.md
   - name: "Manage file signing submissions"
     href: file-signing-manage.md 
