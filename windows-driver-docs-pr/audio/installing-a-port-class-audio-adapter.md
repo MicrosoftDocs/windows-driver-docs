@@ -22,16 +22,20 @@ ms.date: 04/20/2017
 
 This section describes the device-class-specific information that a vendor should include in an INF file to install a port-class audio adapter. For a description of the general INF file requirements and options for all device classes, see [Device Installation Overview](../install/overview-of-device-and-driver-installation.md).
 
-The description of the required INF file entries in this section is based on a hypothetical XYZ Audio Device. The driver for this device is contained in a file named Xyzaudio.sys. Example **Manufacturer** and **Models** sections for the device are shown in the following:
+The description of the required INF file entries in this section is based on a hypothetical XYZ Audio Device. The driver for this device is contained in a file named Xyzaudio.sys. Example **Manufacturer**, **Models** and  **DDInstall** sections for the device are shown in the following:
 
 ```inf
-  [VendorName]  ; Manufacturer section
-  %XYZ-Audio-Device-Description%=XYZ-Audio-Device, <Plug and Play hardware ID>
-  [XYZ-Audio-Device]  ; Models section
+  [Manufacturer]  ; Manufacturer section
+  %ManufacturerName%=XYZ-Audio-Device, NTX86
+  [XYZ-Audio-Device.NTX86]  ; Models section
+  %XYZ-Audio-Device-Description%=XYZ-Audio-Device.Registration, <Plug and Play hardware ID>
+  [XYZ-Audio-Device.Registration.NTX86]  ; DDInstall section
+  Include=ks.inf, wdmaudio.inf
+  Needs=KS.Registration, WDMAUDIO.Registration
   AddReg=XYZ-Audio-Device.AddReg
 ```
 
-For more information, see [**INF AddReg Directive**](../install/inf-addreg-directive.md).
+For more information, see [**INF Manufacturer Section**](../install/inf-manufacturer-section.md), [**INF Models Section**](../install/inf-models-section.md), [**INF DDInstall Section**](../install/inf-ddinstall-section.md) and [**INF AddReg Directive**](../install/inf-addreg-directive.md). The values of the **Include** and **Needs** directives are explained in [Installing Core System Components for an Audio Adapter](./installing-core-system-components-for-an-audio-adapter.md) and [Installing in Windows](./installing-in-windows.md).
 
 For additional examples, see the INF files included in the SYVAD audio sample. For more information, see [Sample Audio Drivers](sample-audio-drivers.md) and [Universal Windows Drivers for Audio](audio-universal-drivers.md).
 
