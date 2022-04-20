@@ -13,7 +13,7 @@ For more information on rules for driver signing, see [Driver Signing changes in
 
 ## Prerequisites
 
-* Register for the Hardware Developer program. If you're not yet registered, follow the steps in [How to register for the Microsoft Windows Hardware Developer Program](register-for-the-hardware-program.md#step-1:-get-an-ev-code-signing-certificate).
+Register for the Hardware Developer program. If you're not yet registered, follow the steps in [How to register for the Microsoft Windows Hardware Developer Program](register-for-the-hardware-program.md).
 
 ## Get or renew a code signing certificate
 

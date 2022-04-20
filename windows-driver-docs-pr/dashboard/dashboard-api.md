@@ -42,7 +42,7 @@ After you have completed the above prerequisites we must now assign the appropri
 
     ![an image showing the Hardware tab in the Roles section.](images/hardware-tab-in-roles-section.png)
 
-    Select **Driver Submitter**, **Shipping Label owner**, and if available, **Shipping Label promoter**.  [Learn more about these roles](./managing-user-roles.md)
+    Select **Driver Submitter**, **Shipping Label owner**, and if available, **Shipping Label promoter**.  [Learn more about these roles](./users-manage.md)
     
 
 ## Obtain an Azure AD access token

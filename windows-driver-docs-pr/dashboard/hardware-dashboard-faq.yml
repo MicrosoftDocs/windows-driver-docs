@@ -51,7 +51,7 @@ sections:
       - question: |
           Adding additional users or grant additional roles to users in my company
         answer: |
-          See [Managing User Roles](managing-user-roles.md) for more information.
+          See [Managing User Roles](users-manage.md) for more information.
           
       - question: |
           Managing submissions

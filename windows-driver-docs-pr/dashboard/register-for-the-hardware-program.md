@@ -64,7 +64,7 @@ To register for the Hardware Developer Program:
 ## Next Steps
 
 > [!div class="nextstepaction"]
-> [Manage users and permissions](managing-user-roles.md)
+> [Manage users and permissions](users-manage.md)
 
 To learn how to create your first hardware submission, see:
 
