@@ -27,7 +27,7 @@ For background, there are two code signing operations to consider:
 
 You must have an EV certificate bound to your company to access submission features in the dashboard.
 
-To confirm the certificate that is used to identify your organization within the Partner Center, see [Update a code signing certificate](./update-a-code-signing-certificate.md).
+To confirm the certificate that is used to identify your organization within the Partner Center, see [Update a code signing certificate](./code-signing-cert-manage.md).
 
 After you sign in to Partner Center and you are ready to sign your submission, you can use either a standard code signing cert or an EV code signing cert. This is true for all operating system versions, not just Windows 10.
 

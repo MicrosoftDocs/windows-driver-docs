@@ -1,26 +1,42 @@
 ---
-title: Code signing certificates
-description: Code signing certificates
+title: Driver code signing requirements
+description: Driver code signing requirements
 ms.topic: article
 ms.date: 04/19/2022
 ---
 
-# Code signing certificates
+# Driver code signing requirements
 
-This article provides information on the types of code signing certificates and requirements for submitting drivers to the Partner Center Hardware dashboard.
+This article provides general information on the types of code signing available for your drivers, as well as the associated requirements for those drivers.
 
-For more information on driver signing requirements see the following pages:
+For more extensive information on driver signing requirements see the following pages:
 
 - [Driver Signing Changes in Windows 10](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Driver-Signing-changes-in-Windows-10/ba-p/364859)
 - [Driver Signing changes in Windows 10, version 1607](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Driver-Signing-changes-in-Windows-10-version-1607/ba-p/364894)
 - [Update on Sysdev EV Certificate requirement](https://techcommunity.microsoft.com/t5/Windows-Hardware-Certification/Update-on-Sysdev-EV-Certificate-requirement/ba-p/364879)
 
+## Where to get code signing certificates
+
+Code signing certificates can be purchased from one of the following certificate authorities:
+
+- [DigiCert code signing certificate](https://www.digicert.com/order/order-1.php)
+- [Entrust code signing certificate](https://www.entrustdatacard.com/products/digital-signing-certificates/code-signing-certificates)
+- [GlobalSign code signing certificate](https://go.microsoft.com/fwlink/p/?LinkId=620888)
+- [SSL.com code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
+
 ## EV certificate signed drivers
 
-- Your Hardware Dev Center dashboard account must have at least one EV certificate associated with it to submit binaries for attestation signing or to submit binaries for HLK certification.
-- Your registered EV certificate must be valid at the time of submission.
-- While Microsoft strongly recommends that you sign individual submissions with an EV certificate, you can alternatively sign submissions with an Authenticode signing certificate that is also registered to your Partner Center account.
-- All certificates must be SHA2 and signed with the `/fd sha256` SignTool command line switch.
+Your Hardware Dev Center dashboard account must have at least one extended validation (EV) certificate associated with it to submit binaries for attestation signing or to submit binaries for HLK certification.
+
+The following rules apply:
+
+* Your registered EV certificate must be valid at the time of submission.
+* While Microsoft strongly recommends that you sign individual submissions with an EV certificate, you can alternatively sign submissions with an Authenticode signing certificate that is also registered to your Partner Center account.
+* All certificates must be SHA2 and signed with the `/fd sha256` SignTool command line switch.
+
+If you already have an approved EV certificate from one of the following authorities, you can use it to establish a Partner Center account. If you don't have an EV certificate, go to the page of [one the certificate authorities](#where-to-get-code-signing-certificates) and follow their directions for purchase.
+
+Once the certificate authority has verified your contact information and your certificate purchase is approved, follow their directions to retrieve the certificate.
 
 ## HLK tested and dashboard signed drivers
 
@@ -28,9 +44,10 @@ For more information on driver signing requirements see the following pages:
 
 ## Windows 10 attestation signed drivers
 
-- A dashboard signed driver using attestation signing will only work on Windows 10 and later.
+- A dashboard driver using attestation signing will only work on Windows 10 and later.
 - An attestation signed driver will only work for Windows 10. The driver will not work for other versions of Windows, such as Windows 7, Windows 8.1, or Windows Server 2016 and greater.
 - Attestation signing supports Windows 10 kernel mode and user mode drivers.
+- Driver Update Acceptable (DUA) doesn't support attestation signed drivers.
 
 ## Windows Server signed drivers
 

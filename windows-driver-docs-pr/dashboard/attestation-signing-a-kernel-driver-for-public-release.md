@@ -39,7 +39,7 @@ To attestation sign a kernel mode driver complete the following steps:
 
 Before you can submit binaries to the dashboard for signing, you need to acquire an extended validation (EV) code signing certificate to secure your digital information. EV certificates are the accepted standard for establishing ownership of the code you submit.
 
-Follow the steps in [Get a code signing certificate](get-a-code-signing-certificate.md) to set up your EV certificate.
+Follow the steps in [Get a code signing certificate](code-signing-cert-manage.md) to set up your EV certificate.
 
 ## Allowable PE signatures and binaries
 

@@ -7,23 +7,21 @@ ms.date: 02/28/2022
 
 # Manage code signing certificates
 
-This article describes how to get, add, and update code signing certificates to the Hardware dashboard.
-
-As a Partner Center administrator, you're responsible for adding, updating, and retiring driver certificates. When the original certificate expires, you'll need to get a new certificate and upload a new file signed with your new digital certificate.
+As a Partner Center administrator, you're responsible for adding, updating, and retiring driver certificates when they expire. This article describes how to get, add, and update code signing certificates to the Hardware dashboard.
 
 For more information on rules for driver signing, see [Driver Signing changes in Windows 10, version 1607](https://techcommunity.microsoft.com/t5/windows-hardware-certification/driver-signing-changes-in-windows-10-version-1607/ba-p/364894) in the [Windows Hardware Certification blog](https://techcommunity.microsoft.com/t5/windows-hardware-certification/bg-p/WindowsHardwareCertification).
 
 ## Prerequisites
 
-* Make sure that your company is registered for the Hardware Developer program. To register, follow the steps in [How to register for the Microsoft Windows Hardware Developer Program](register-for-the-hardware-program.md).
+* Register for the Hardware Developer program. If you're not yet registered, follow the steps in [How to register for the Microsoft Windows Hardware Developer Program](register-for-the-hardware-program.md#step-1:-get-an-ev-code-signing-certificate).
 
 ## Get or renew a code signing certificate
 
 To get a new code signing certificate:
 
-1. Determine which certificate you need. For more information, see [Code signing certificates](code-signing-certificates.md).
+1. Determine which certificate you need. To help you choose which certificate to get, see [Driver signing requirements and limitations](code-signing-reqs.md).
 
-1. If you are reusing a certificate, move on to step 5.
+1. If you're re-using a certificate, move on to step 5.
 
 1. Go to the page of one the following certificate authorities and follow their directions for purchase:
 
