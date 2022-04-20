@@ -1,11 +1,11 @@
 ---
-title: Attestation signing for Windows 10 and above
-description: Attestation signing for Windows 10 and above
+title: Attestation sign Windows 10+ drivers
+description: Attestation sign Windows 10+ drivers
 ms.topic: article
 ms.date: 04/20/2022
 ---
 
-# Attestation signing for Windows 10 and above
+# Attestation sign Windows 10+ drivers
 
 This article describes how to sign a driver using attestation signing. For detailed information and requirements for attestation signing, see [Windows 10 attestation signed drivers](code-signing-reqs.md#windows-10-attestation-signed-drivers).
 
