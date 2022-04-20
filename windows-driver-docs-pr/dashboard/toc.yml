@@ -4,7 +4,7 @@
   href: hardware-dashboard-faq.yml
 - name: "Getting started"
   href: get-started-with-the-hardware-dashboard.md
-- name: "Driver code signing"
+- name: "Driver code signing" 
   items:
   - name: "Requirements"
     href: code-signing-reqs.md 
