@@ -165,7 +165,7 @@ The Windows smart card class minidriver performs the following discovery process
 
     | Entry name                      | Type   | Value                                     |
     |---------------------------------|--------|-------------------------------------------|
-    | 80000001                        | String | Card's minidriver file location, either a file name in the driver repository or the path to a vendor supplied minidriver file. The inbox mini driver file name is msclmd.dll. |
+    | 80000001                        | String | Card's minidriver location, either a filename in the driver repository or path to a vendor supplied minidriver. The inbox driver is msclmd.dll. |
     | ATR                             | Binary | Card's ATR                                |
     | ATRMask                         | Binary | Card's ATR Mask                           |
     | Crypto Provider                 | String | Microsoft Base Smart Card Crypto Provider |
