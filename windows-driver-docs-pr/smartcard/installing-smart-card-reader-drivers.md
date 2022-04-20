@@ -28,7 +28,7 @@ HKLM, System\CurrentControlSet\Services\CertPropSvc,Start,0x00010001,2
 ```
 
 > [!NOTE]
-> Starting Windows 11, the smartcard subsystem configures the smartcard services. Vendors are no longer required to add the `Reader.Install.AddReg` registry keys listed above.
+> Starting with Windows 11, the smartcard subsystem configures the smartcard services. Vendors are no longer required to add the `Reader.Install.AddReg` registry keys listed above.
 
 Vendors that supply their own UMDF reader driver need a registry setting to allow PnP filter drivers to sit on top of the UMDF reflector. Specifically, in the driver INF file, this entry is needed:
 
