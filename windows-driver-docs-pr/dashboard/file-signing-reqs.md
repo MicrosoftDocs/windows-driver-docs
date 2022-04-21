@@ -24,7 +24,7 @@ You can use the Partner Center Hardware dashboard to digitally sign [Local Secur
 
 To learn how to file sign an LSA plugin or UEFI firmware in the Hardware dashboard:
 > [!div class="nextstepaction"]
->[File sign an LSA plugin or UEFI firmware](file-signing-lsa-uefi.md)
+>[File sign an LSA plugin or UEFI firmware](file-signing-manage.md)
 
 For more information on Microsoft UEFI signing policies and pre-submission testing see:
 
