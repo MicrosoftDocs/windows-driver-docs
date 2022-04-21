@@ -437,7 +437,7 @@
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/file-signing-services.md",
-            "redirect_URL": "/windows-hardware/drivers/dashboard/lsa-and-uefi-file-signing",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/file-signing-manage",
             "redirect_document_id": false
         },
         {
