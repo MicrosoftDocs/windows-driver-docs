@@ -52,6 +52,8 @@ To create a PSHED plug-in driver for Windows Vista and later versions of Windows
     -   The changes to WHEA that have been made since Windows Vista.
 
         For more information about these changes, see [New Information for Windows Hardware Error Architecture](new-information-for-windows-hardware-error-architecture.md).
+     
+    -   The default PSHED plugin version is V2. If you want to register a V1 plugin , use the V1 data packet ([**WHEA_PSHED_PLUGIN_REGISTRATION_PACKET_V1**](./ns-ntddk-whea_pshed_plugin_registration_packet_v1.md)). Remember, a V1 plugin does not have the ability to be unregistered. If you try to unregister, a bugcheck may occur.
 
 -   Step 5: Develop, build, test and debug your PSHED plug-in.
 
