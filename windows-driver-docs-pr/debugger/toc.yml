@@ -587,16 +587,16 @@
         href: x64-instructions.md
       - name: "Annotated x64 Disassembly"
         href: annotated-x64-disassembly.md
-  - name: "Debugger Engine and Extension APIs"
+  - name: "Debugger Programming Extension APIs"
 # Auto-expanded node
     items: 
-    - name: "Debugger Engine and Extension APIs"
+    - name: "Debugger Programming Extension APIs"
       href: debugger-engine-and-extension-apis.md
-    - name: "Debugger Engine Introduction"
-      href: introduction.md
     - name: "Debugger Engine Overview"
 # Auto-expanded node
       items: 
+      - name: "Debugger Engine Introduction"
+        href: introduction.md
       - name: "Debugger Engine Overview"
         href: debugger-engine-overview.md
       - name: "Debugging Session and Execution Model"
@@ -793,6 +793,13 @@
         href: metadata-files-for-analysis-extensions.md
       - name: "Failure Analysis Entries"
         href: failure-analysis-entries.md
+    - name: "KDNET Debugger Transport Exensibility"
+# Auto-expanded node
+      items: 
+      - name: "How to develop KDNET extensibility modules"
+        href: how-to-develop-kdnet-extensibility-modules.md
+      - name: "KDSerial extensibility code samples"
+        href: kdserial-extensibility-code-samples.md
   - name: "Debugger Programming Reference"
     href: debugger-programming-reference.md
   - name: "Debug Engine Interfaces"

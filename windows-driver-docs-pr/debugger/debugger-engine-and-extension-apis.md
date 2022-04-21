@@ -1,11 +1,10 @@
 ---
-title: Debugger Engine and Extension APIs
-description: Debugger Engine and Extension APIs
-ms.date: 11/28/2017
+title: Debugger Programming Extension APIs
+description: This topic describes the Debugger Programming Extension APIs
+ms.date: 04/13/2022
 ---
 
-# Debugger Engine and Extension APIs
-
+# Debugger Programming Extension APIs
 
 This section includes:
 
@@ -23,14 +22,15 @@ This section includes:
 
 [Using JavaScript to Extend the Capabilities of the Debugger](#javascript)
 
+[Develop KDNET transport extensibility modules](how-to-develop-kdnet-extensibility-modules.md)
+
 ## <span id="ddk_introduction_dbx"></span><span id="DDK_INTRODUCTION_DBX"></span>
 
-
-This documentation describes how to use the debugger engine and how to write extensions that will run in WinDbg, KD, CDB, and NTSD. These debugger extensions can be used when performing user-mode or kernel-mode debugging on Microsoft Windows.
+This documentation describes how to use interfaces scuh as those provided by the debugger engine to write extensions that will run in WinDbg, KD, CDB, and NTSD. These debugger extensions can be used when performing user-mode or kernel-mode debugging.
 
 ### <span id="debugger_engine"></span><span id="DEBUGGER_ENGINE"></span>Debugger Engine
 
-The debugger engine provides an interface for examining and manipulating debugging targets in user-mode and kernel-mode on Microsoft Windows.
+The debugger engine provides an interface for examining and manipulating debugging targets in user-mode and kernel-mode.
 
 The debugger engine can acquire targets, set breakpoints, monitor events, query symbols, read and write memory, and control threads and processes in a target.
 
@@ -40,7 +40,6 @@ The debugger engine API is specified by the prototypes in the header file dbgeng
 
 For more information, see [Debugger Engine Overview](debugger-engine-overview.md) and [Using the Debugger Engine API](using-the-debugger-engine-api.md).
 
-.
 
 ### <span id="extensions"></span><span id="EXTENSIONS"></span>Extensions
 
@@ -66,24 +65,19 @@ The easiest way to write new debugger extensions is to study the sample extensio
 
 ## <span id="Analysis"></span><span id="analysis"></span><span id="ANALYSIS"></span>Writing Custom Analysis Debugger Extensions
 
-
 You can extend the capabilities of the [**!analyze**](-analyze.md) debugger command by writing an analysis extension plugin. By providing an analysis extension plugin, you can participate in the analysis of a bug check or an exception in a way that is specific to your own component or application. When you write an analysis extension plugin, you also write a metadata file that describes the situations for which you want your plugin to be called. When **!analyze** runs, it locates, loads, and runs the appropriate analysis extension plugins. For more information, see [Writing Custom Analysis Debugger Extensions](writing-custom-analysis-debugger-extensions.md)
 
 ## <span id="DML"></span><span id="dml"></span>Customizing Debugger Output Using DML
-
 
 You can customize debugger output using DML. For more information see [Customizing Debugger Output Using DML](customizing-debugger-output-using-dml.md).
 
 ## <span id="JavaScript"></span><span id="javascript"></span><span id="JAVASCRIPT"></span>Using JavaScript to Extend the Capabilities of the Debugger
 
+Use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger. JavaScript providers bridge a scripting language to the debugger's internal object model. The JavaScript debugger scripting provider, allows the for use of JavaScript with the debugger. For more information, see [JavaScript Debugger Scripting]
+(javascript-debugger-scripting.md).
 
-Use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger. JavaScript providers bridge a scripting language to the debugger's internal object model. The JavaScript debugger scripting provider, allows the for use of JavaScript with the debugger. For more information, see [JavaScript Debugger Scripting](javascript-debugger-scripting.md).
+## Develop KDNET transport extensibility modules
 
- 
+The KDNET transport can be extended to run on any hardware through the use of a separate hardware driver extensibility module dll.  KDNET transport extensibility modules are developed by network card vendors to add kernel debugging support to specific network cards.
 
- 
-
-
-
-
-
+KDNET is a kernel debug transport that enables kernel debugging of windows over a network. It is designed so that the hardware support layer is built into a separate module from the network packet processing and kernel interface layer. This hardware driver support layer is called a KDNET extensibility module. For more information, see [Develop KDNET transport extensibility modules](how-to-develop-kdnet-extensibility-modules.md).
