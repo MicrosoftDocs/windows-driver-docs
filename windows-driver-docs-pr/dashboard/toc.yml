@@ -16,7 +16,7 @@
   items:
   - name: "Requirements"
     href: file-signing-reqs.md
-  - name: "Manage file signing submissions"
+  - name: "File sign an LSA plugin or UEFI firmware binary"
     href: file-signing-manage.md
 - name: "Hardware submissions"
   items:
