@@ -12,7 +12,7 @@
     href: code-signing-cert-manage.md 
   - name: "Attestation sign Windows 10+ drivers"
     href: code-signing-attestation.md 
-- name: "File signing services"
+- name: "File signing"
   items:
   - name: "Requirements"
     href: file-signing-reqs.md
