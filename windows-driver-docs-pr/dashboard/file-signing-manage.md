@@ -17,7 +17,7 @@ This article shows you how to create a new UEFI or LSA submission for file signi
 
 ## Create a new UEFI or LSA submission
 
-1. Go to [the Partner Center Hardware dashboard](https://partner.microsoft.com/dashboard/hardware/Search) and sign in using your credentials.
+1. Go to [Partner Center Hardware dashboard](https://partner.microsoft.com/dashboard/hardware/Search) and sign in using your credentials.
 
 1. On the left menu, select **File Signing Services**.
 
@@ -30,13 +30,22 @@ This article shows you how to create a new UEFI or LSA submission for file signi
 
 1. On the submission page, drag or select the CAB file you want to submit.
 
-      :::image type="content" source="images/code-signing-lsa-uefi/lsa-submission.png" alt-text="A screenshot showing the the LSA submission form.":::
+      :::image type="content" source="images/file-signing-manage/submission-form.png" alt-text="A screenshot showing the LSA submission form.":::
 
 1. Select **Submit**.
 
-Once your submission has been processed, you’ll receive a notification with your submission ID.
+Once your submission has been processed, you’ll receive a notification with your submission ID and you'll be able to download the signed package.
 
-## Next Steps
+## View UEFI or LSA submission details
 
-> [!div class="nextstepaction"]
-> [Manage your file signing submission](file-signing-manage.md).
+1. Go to [Partner Center Hardware dashboard](https://partner.microsoft.com/dashboard/hardware/Search) and sign in using your credentials.
+
+1. On the left menu, select **File Signing Services**.
+
+1. In the search box, enter the Product Name or the submission ID of the UEFI or LSA submission.
+
+    :::image type="content" source="images/file-signing-manage/submissions-search.png" alt-text="A screenshot showing the submission list, and highlighting the search box.":::
+
+1. Select the submission to view details.
+
+    :::image type="content" source="images/file-signing-manage/submission-details.png" alt-text="A screenshot showing the details of a submission.":::

@@ -17,7 +17,7 @@
   - name: "Requirements"
     href: file-signing-reqs.md
   - name: "Manage file signing submissions"
-    href: file-signing-reqs.md
+    href: file-signing-manage.md
 - name: "Hardware submissions"
   items:
   - name: "Create a new hardware submission"

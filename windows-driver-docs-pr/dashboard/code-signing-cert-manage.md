@@ -19,7 +19,7 @@ Register for the Hardware Developer program. If you're not yet registered, follo
 
 To get a new code signing certificate:
 
-1. Determine which certificate you need. To help you choose a certificate, see [Driver signing requirements and limitations](code-signing-reqs.md).
+1. Determine which certificate you need. To help you choose a certificate, see [Driver signing requirements](code-signing-reqs.md).
 
 1. If you're re-using a certificate, move on to step 5.
 
