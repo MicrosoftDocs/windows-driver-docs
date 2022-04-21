@@ -23,7 +23,7 @@ ms.date: 03/23/2022
 
 *Device installation applications* **can** do the following:
 
--   [Install device-specific applications](installing-device-specific-applications.md)
+-   [Install device-specific applications](./writing-a-device-installation-application.md)
 
     **Note**  We highly recommend that your device-specific application is created as a Universal Windows Platform (UWP) app and associated with your driver package instead of using a *device installation application* to install a device-specific application. See [Pairing a driver with a Universal Windows Platform (UWP) app](./pairing-app-and-driver-versions.md) for more information.
 
