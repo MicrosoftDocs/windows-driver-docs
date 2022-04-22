@@ -6,7 +6,7 @@ ms.date: 04/19/2022
 ---
 
 # Driver code signing requirements
-
+ 
 This article provides general information on the types of code signing available for your drivers, as well as the associated requirements for those drivers.
 
 For more extensive information on driver signing requirements see the following pages:
