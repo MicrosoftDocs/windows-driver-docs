@@ -21,7 +21,7 @@
 - name: "Hardware submissions"
   items:
   - name: "Create a new hardware submission"
-    href: create-a-new-hardware-submission.md
+    href: hardware-submission-create.md
   - name: Create a WLK hardware submission package
     href: hardware-submission-wlk.md
 - name: "Dashboard administration"
