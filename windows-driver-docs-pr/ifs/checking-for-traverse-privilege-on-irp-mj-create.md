@@ -9,7 +9,7 @@ keywords:
 - paths WDK file systems
 - generic security checks WDK file systems
 - SeChangeNotifyPrivilege
-ms.date: 03/16/2022
+ms.date: 04/21/2022
 ---
 
 # Checking for Traverse Privilege on IRP_MJ_CREATE
@@ -82,6 +82,7 @@ If traverse privilege has not previously been granted, the file system must do a
         //
             AccessParams.AccessState->PreviouslyGrantedAccess |= 
                 AccessParams.GrantedAccess;
+        }
 
         if (maxDesired) {
 
