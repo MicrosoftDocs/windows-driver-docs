@@ -11,7 +11,6 @@ For drivers compatible with Windows Server 2008 (and below) hardware for certifi
 
 This article describes how to use WST to create your submission package and submit it to the Hardware dashboard.
 
-
 ## Prerequisites
 
 * Make sure your [dashboard account](https://partner.microsoft.com/dashboard) is registered for the Windows Hardware Developer Program. For information on how to register, see [How to register for the Windows Hardware Developer Program](register-for-the-hardware-program.md).
