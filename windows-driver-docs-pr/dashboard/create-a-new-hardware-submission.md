@@ -17,7 +17,7 @@ With the Partner Center Hardware dashboard, you can submit your Windows tested d
 
 * For drivers compatible with Windows 8/8.1 and older operating systems, you'll need to have an **.hckx** file that's been digitally signed. For information about creating and digitally signing an  **.hckx** file, see the [Windows HCK Getting Started Guide](/previous-versions/windows/hardware/hck/jj123537(v=vs.85)).
 
-* For drivers compatible with Windows Server 2008 (and below) hardware for certification, you must use the Winqual Submission Tool (Winqual.exe) to create an WLK hardware submission package. To learn how to create a WLK submission package, see [Create a new WLK hardware submission](winqual-submission-tool--winqualiexe-.md).
+* For drivers compatible with Windows Server 2008 (and below) hardware for certification, you must use the Winqual Submission Tool (Winqual.exe) to create an WLK hardware submission package. To learn how to create a WLK submission package, see [Create a new WLK hardware submission](hardware-submission-wlk.md).
 
 ## Submit your new hardware
 
