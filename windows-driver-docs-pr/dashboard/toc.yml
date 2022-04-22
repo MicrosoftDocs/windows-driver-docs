@@ -23,7 +23,7 @@
   - name: "Create a new hardware submission"
     href: create-a-new-hardware-submission.md
   - name: Create a WLK hardware submission package
-    href: winqual-submission-tool--winqualexe-.md
+    href: hardware-submission-wlk.md
 - name: "Dashboard administration"
   items:
   - name: "Register for the Windows Hardware program"
