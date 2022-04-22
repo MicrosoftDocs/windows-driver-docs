@@ -15,7 +15,7 @@ This article describes how to use WST to create your submission package and subm
 
 * Make sure your [dashboard account](https://partner.microsoft.com/dashboard) is registered for the Windows Hardware Developer Program. For information on how to register, see [How to register for the Windows Hardware Developer Program](register-for-the-hardware-program.md).
 
-* Download the[Windows Hardware Lab Kit (HLK)](https://docs.microsoft.com/windows-hardware/test/hlk/). Be sure to test your driver or drivers with the appropriate certification kit on each operating system that you want certification for. You'll need the WLK test results (.CPK file) for your driver that you want to submit for certification.
+* Download the[Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/). Be sure to test your driver or drivers with the appropriate certification kit on each operating system that you want certification for. You'll need the WLK test results (.CPK file) for your driver that you want to submit for certification.
 
 ## Install the Winqual submission tool
 
@@ -33,13 +33,13 @@ To create a systems or driver submission package:
 
 1. In Windows search, enter "WST" to find the Windows Submission tool, and then select **Winqual Submission Tool**.
 
-    :::image type="content" source="./images/winqual-submission-tool--winqualexe-/wst-windows-search.png" alt-text="Screenshot of Windows search result for 'WST'.":::
+    :::image type="content" source="./images/hardware-submission-wlk/wst-windows-search.png" alt-text="Screenshot of Windows search result for 'WST'.":::
 
 1. When you open the tool, a **Welcome** screen appears. Select **OK**.
 
 1. If a new version of WST is available, you'll receive a prompt to install the new version. Select **OK**.
 
-    :::image type="content" source="./images/winqual-submission-tool--winqualexe-/wst-update-prompt.png" alt-text="Screenshot of WST prompt to update the WST.":::
+    :::image type="content" source="./images/hardware-submission-wlk/wst-update-prompt.png" alt-text="Screenshot of WST prompt to update the WST.":::
 
     >[!NOTE]
     >If the version check fails, you'll receive a warning message, which can be disabled by selecting the **Don't show this message again** check box.  To re-enable this dialog box, click **Tools**, click **Options**, and then select the **Warn if update check fails** check box.
@@ -48,7 +48,7 @@ To create a systems or driver submission package:
 
 1. Select **+ Add** to open the **Add DTM Results:** dialog.
 
-    :::image type="content" source="./images/winqual-submission-tool--winqualexe-/wst-add-test-results.png" alt-text="Screenshot of WST showing how to add test results. 'Add' button is selected.":::
+    :::image type="content" source="./images/hardware-submission-wlk/wst-add-test-results.png" alt-text="Screenshot of WST showing how to add test results. 'Add' button is selected.":::
 
 1. Select **Load** to add the .CPK file (WLK test results) to the submission package, and then select **OK**.
 
@@ -66,7 +66,7 @@ To create a systems or driver submission package:
 
 1. (Optional) Select **Browse...**, to add a README file (**.docx**, **.doc**, or **.txt**) to the submission package.
 
-    :::image type="content" source="./images/winqual-submission-tool--winqualexe-/wst-add-readme.png" alt-text="Screenshot of WST showing how to add README file. 'Browse...' button is selected.":::
+    :::image type="content" source="./images/hardware-submission-wlk/wst-add-readme.png" alt-text="Screenshot of WST showing how to add README file. 'Browse...' button is selected.":::
 
 1. Select **> Create Package**.  The submission package is created with the same name as the .xml file at the same location.
 
