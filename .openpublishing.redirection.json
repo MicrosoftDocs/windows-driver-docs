@@ -8694,7 +8694,13 @@
             "source_path": "windows-driver-docs-pr/dashboard/attestation-signing-a-kernel-driver-for-public-release.md",
             "redirect_URL": "/windows-driver-docs-pr/dashboard/code-signing-attestation",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/winqual-submission-tool--winqualiexe-.md",
+            "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-wlk",
+            "redirect_document_id": false
         }
+
 
 
     ]

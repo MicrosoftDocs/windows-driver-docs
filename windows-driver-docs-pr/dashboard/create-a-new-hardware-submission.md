@@ -7,7 +7,7 @@ ms.topic: article
 
 # Create a new hardware submission
 
-This article describes how to create a new hardware submission in the Partner Center Hardware dashboard.
+With the Partner Center Hardware dashboard, you can submit your Windows tested drivers for certification. This article describes how to create a new hardware submission in the Partner Center Hardware dashboard.
 
 ## Prerequisites
 
@@ -17,9 +17,11 @@ This article describes how to create a new hardware submission in the Partner Ce
 
 * For drivers compatible with Windows 8/8.1 and older operating systems, you'll need to have an **.hckx** file that's been digitally signed. For information about creating and digitally signing an  **.hckx** file, see the [Windows HCK Getting Started Guide](/previous-versions/windows/hardware/hck/jj123537(v=vs.85)).
 
+* For drivers compatible with Windows Server 2008 (and below) hardware for certification, you must use the Winqual Submission Tool (Winqual.exe) to create an WLK hardware submission package. To learn how to create a WLK submission package, see [Create a new WLK hardware submission](winqual-submission-tool--winqualiexe-.md).
+
 ## Submit your new hardware
 
-1. Go to [the Partner Center Hardware dashboard](https://partner.microsoft.com/dashboard/hardware/Search) and sign in using your credentials.
+1. Go to [Partner Center Hardware dashboard](https://partner.microsoft.com/dashboard/hardware/Search) and sign in using your credentials.
 
 1. Select **Submit new hardware**.
 
@@ -30,7 +32,7 @@ This article describes how to create a new hardware submission in the Partner Ce
 >[!NOTE]
 >If you share your driver with another company, they will see this name.
 
-1. Either drag or browse to the **.hlkx/.hckx** file that you want to submit.
+1. Either drag or browse to the **.hlkx/.hckx** file that you want to submit. If you are submitting WLK hardware, you must submit a .CAB file. For more information on WLK hardware submissions, see see [Create a new WLK hardware submission](winqual-submission-tool--winqualiexe-.md).
 
    :::image type="content" source="./images/create-a-new-hardware-submission/hardware-submit.png" alt-text="Screenshot that shows the new hardware submission form.":::
 
