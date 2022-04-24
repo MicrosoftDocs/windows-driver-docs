@@ -31,7 +31,7 @@ For information about how to obtain a WHQL test signature, send email to <winqua
 
 ### Disable Secure Boot
 
-1. If BitLocker is enabled on the boot disk it needs to be suspended before disabling secure boot in [UEFI](/windows-hardware/drivers/bringup/uefi-in-windows). For more information, see [Suspend BitLocker protection for non-Microsoft software updates](/troubleshoot/windows-client/windows-security/suspend-bitlocker-protection-non-microsoft-updates).
+1. If BitLocker is enabled on the boot disk it needs to be suspended before disabling secure boot in [UEFI](../bringup/uefi-in-windows.md). For more information, see [Suspend BitLocker protection for non-Microsoft software updates](/troubleshoot/windows-client/windows-security/suspend-bitlocker-protection-non-microsoft-updates).
 
 1. Secure boot must be disabled to install the WHQL test certificate. For more information, see [Disabling Secure Boot](/windows-hardware/manufacture/desktop/disabling-secure-boot).
 

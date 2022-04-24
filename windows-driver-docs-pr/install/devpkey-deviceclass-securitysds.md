@@ -61,7 +61,7 @@ You can set the value of DEVPKEY_DeviceClass_SecuritySDS either during or after 
 
 You can retrieve the value of DEVPKEY_DeviceClass_SecuritySDS by calling [**CM_Get_Class_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_class_propertyw) or [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw). You can set DEVPKEY_DeviceClass_SecuritySDS by calling [**CM_Set_Class_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_set_class_propertyw) or [**SetupDiSetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclasspropertyw).
 
-Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_DeviceClass_SecuritySDS property key. On these earlier versions of Windows, you can use the SPCRP_SECURITY_SDS identifier to access the value of this property. For information about how to access the value of this property, see [Retrieving Device Setup Class SPCRP_Xxx Properties](./retrieving-spcrp-xxx-properties.md) and [Setting Device Setup Class SPCRP_Xxx Properties](./setting-spcrp-xxx-properties.md).
+Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_DeviceClass_SecuritySDS property key. On these earlier versions of Windows, you can use the SPCRP_SECURITY_SDS identifier to access the value of this property. For information about how to access the value of this property, see [Retrieving Device Setup Class SPCRP_Xxx Properties](./accessing-device-setup-class-properties.md) and [Setting Device Setup Class SPCRP_Xxx Properties](./accessing-device-setup-class-properties.md).
 
 ## Requirements
 
@@ -79,6 +79,4 @@ Windows Server 2003 and Windows XP support this property, but do not support the
 [**SetupDiSetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclasspropertyw)
 
 [**SetupDiSetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclasspropertyexw)
-
- 
 
