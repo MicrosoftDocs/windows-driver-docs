@@ -86,4 +86,4 @@ A driver may be rejected for several reasons. Most commonly, rejection is caused
 
 - [Create a new hardware submission](create-a-new-hardware-submission.md)
 - [Managing hardware submissions in the Partner Center](manage-your-hardware-submissions.md)
-- [Get drivers signed by Microsoft for multiple Windows versions](get-drivers-signed-by-microsoft-for-multiple-windows-versions.md)
+- [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started.md)

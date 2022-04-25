@@ -66,7 +66,7 @@ sections:
           
           ### Getting a single cat file if drivers are uniform for all operating systems
           
-          Make sure your final package has a single driver folder on the **Package** tab and the driver’s properties include all the operating systems you have tested. For more information, see [Walkthrough: How to get a driver signed by Microsoft for multiple versions of Windows](get-drivers-signed-by-microsoft-for-multiple-windows-versions.md).
+          Make sure your final package has a single driver folder on the **Package** tab and the driver’s properties include all the operating systems you have tested. For more information, see [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started.md).
           
           ### Adding new marketing names to the approved submission
           

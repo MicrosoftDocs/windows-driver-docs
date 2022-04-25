@@ -13,7 +13,7 @@ With the Partner Center Hardware dashboard, you can submit your Windows tested d
 
 * Make sure your [dashboard account](https://partner.microsoft.com/dashboard) is registered for the Windows Hardware Developer Program. For information on how to register, see [How to register for the Windows Hardware Developer Program](register-for-the-hardware-program.md).
 
-* For drivers compatible with Windows 10 and above, you'll need to have a **.hlkx** file that's been digitally signed. For information about creating and digitally signing an  **.hlkx** file, see the [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
+* For drivers compatible with Windows 10 and above, you'll need to submit a digitally signed HLK file. To learn how to create a digitally signing an HLK file, see the [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
 
 * For drivers compatible with Windows 8/8.1 and older operating systems, you'll need to have an **.hckx** file that's been digitally signed. For information about creating and digitally signing an  **.hckx** file, see the [Windows HCK Getting Started Guide](/previous-versions/windows/hardware/hck/jj123537(v=vs.85)).
 
@@ -75,7 +75,7 @@ With the Partner Center Hardware dashboard, you can submit your Windows tested d
 > [Managing hardware submissions in the Partner Center](manage-your-hardware-submissions.md)
 
 > [!div class="nextstepaction"]
-> [Get drivers signed by Microsoft for multiple Windows versions](get-drivers-signed-by-microsoft-for-multiple-windows-versions.md)
+> [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started.md)
 
 > [!div class="nextstepaction"]
 > [Distribute your driver with Driver flighting](driver-flighting.md)

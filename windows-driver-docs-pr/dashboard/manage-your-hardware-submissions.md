@@ -33,5 +33,5 @@ Note that in your submissions, you may only use ExtensionIDs that are registered
 ## Related topics
 
 - [Create a new hardware submission](create-a-new-hardware-submission.md)
-- [Get drivers signed by Microsoft for multiple Windows versions](get-drivers-signed-by-microsoft-for-multiple-windows-versions.md)
+- [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started.md)
 - [Driver flighting](driver-flighting.md)

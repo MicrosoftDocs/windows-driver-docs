@@ -8704,7 +8704,14 @@
             "source_path": "windows-driver-docs-pr/dashboard/create-a-new-hardware-submission.md",
             "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-create",
             "redirect_document_id": false
+        }        ,
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/get-drivers-signed-by-microsoft-for-multiple-windows-versions.md",
+            "redirect_URL": "/windows-driver-docs-pr/test/hlk/getstarted/windows-hlk-getting-started",
+            "redirect_document_id": false
         }
+
+
 
         
 

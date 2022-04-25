@@ -40,11 +40,11 @@ Once the certificate authority has verified your contact information and your ce
 
 ## HLK tested and dashboard signed drivers
 
- A dashboard signed driver that has passed the HLK tests will work on Windows Vista through Windows 10, including Windows Server editions. This is the recommended method for driver signing, because it allows a single process for all OS versions. In addition, HLK tested drivers demonstrate that a manufacturer has rigorously tested their hardware to meet all of Microsoft's requirements with regards to reliability, security, power efficiency, serviceability, and performance, so as to provide a great Windows experience. This includes compliance with industry standards and adherence with Microsoft specifications for technology-specific features, helping to ensure correct installation, deployment, connectivity and interoperability. For more information about the HLK, see [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/index).
+ A dashboard signed driver that has passed the HLK tests will work on Windows Vista through Windows 10, including Windows Server editions.  HLK testing is the recommended method for driver signing, because it will sign a driver for all OS versions. In addition, HLK tested drivers demonstrate that a manufacturer has rigorously tested their hardware to meet all of Microsoft's requirements with regards to reliability, security, power efficiency, serviceability, and performance, so as to provide a great Windows experience. This includes compliance with industry standards and adherence with Microsoft specifications for technology-specific features, helping to ensure correct installation, deployment, connectivity and interoperability. To learn how to create an HLK tested driver for your dashboard submission see [Create an HLK tested driver submission](code-signing-hlk-tested.md).
 
 ## Windows 10 attestation signed drivers
 
-Windows device installation uses digital signatures to verify the integrity of driver packages and to verify the identity of the software publisher who provided the driver packages. For Windows 10 Desktop and later systems, you can submit your drivers for attestation signing, which doesn't require HLK testing. However, attestation signing will only work on Windows 10 Desktop and later versions of Windows. An attestation signed driver won't work for other versions of Windows, such as Windows Server 2016, Windows 8, or Windows 7. Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers don't need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers. For drivers that need to run on previous versions of Windows, you should [submit HLK/HCK test logs for Windows certification](./hardware-certification-submissions.md).
+Windows device installation uses digital signatures to verify the integrity of driver packages and to verify the identity of the software publisher who provided the driver packages. For Windows 10 Desktop and later systems, you can submit your drivers for attestation signing, which doesn't require HLK testing. However, attestation signing will only work on Windows 10 Desktop and later versions of Windows. An attestation signed driver won't work for other versions of Windows, such as Windows Server 2016, Windows 8, or Windows 7. Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers don't need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers. For drivers that need to run on previous versions of Windows, you should [submit HLK/HCK test logs for Windows certification](./hardware-certification-submissions.md). 
 
 Attestation signing has the following properties.
 
@@ -78,6 +78,9 @@ Attestation signing has the following properties.
    - .msi
    - .xpi
    - .xap
+
+
+For information on how to create an attestation signed driver for Windows 10+ drivers, see [Attestation sign Windows 10+ drivers](code-signing-attestation.md).
 
 ## Windows Server signed drivers
 
