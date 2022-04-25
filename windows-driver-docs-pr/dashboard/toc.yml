@@ -2,9 +2,9 @@
   href: index.yml
 - name: "Overview"
   href: hardware-dashboard-faq.yml
-- name: "Get started with hardware submissions"
+- name: "Get started with hardware dashboard"
   href: get-started-dashboard-submissions.md
-- name: "How to use the hardware dashboard"
+- name: "Code signing"
   items:
   - name: "Requirements"
     href: code-signing-reqs.md 
