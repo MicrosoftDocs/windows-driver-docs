@@ -50,7 +50,7 @@ or
 
 You can also search by using multiple attributes. Multiple attributes behave as if they are in an AND operator combination. For example, if you search for both product name and submission status (**@ProductName:"test" @SubmissionStatus:"Failed"**) the dashboard returns only those records that match **both** product name and submission status.
 
-:::image type="content" source="./images/hardware-submission-search/two-attribute-search.png" alt-text="Screenshot of the Drivers page in the hardware dashboard, in which two attributes, @ProductName:"test" and @SubmissionStatus:"Failed", are entered. Results all have "test" in the product name as well as "Failed" in the submission status.":::
+:::image type="content" source="./images/hardware-submission-search/two-attribute-search.png" alt-text="Screenshot of the Drivers page in the hardware dashboard, in which two attributes, @ProductName:'test' and @SubmissionStatus:'Failed', are entered. Results all have 'test' in the product name as well as 'Failed' in the submission status.":::
 
 You can use the following driver attributes for keyword searches:
 
