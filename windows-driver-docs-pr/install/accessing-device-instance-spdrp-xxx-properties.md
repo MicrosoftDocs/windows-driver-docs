@@ -28,7 +28,7 @@ For a list of the system-defined device instance properties that have correspond
 | [**DEVPKEY_Device_Capabilities**](devpkey-device-capabilities.md) | CM_DRP_CAPABILITIES | SPDRP_CAPABILITIES |
 | [**DEVPKEY_Device_UINumber**](devpkey-device-uinumber.md) | CM_DRP_UI_NUMBER | SPDRP_UI_NUMBER |
 | [**DEVPKEY_Device_BusTypeGuid**](devpkey-device-bustypeguid.md) | CM_DRP_BUSTYPEGUID | SPDRP_BUSTYPEGUID |
-| [**DEVPKEY_Device_LegacyBusType**](devpkey-device-legacybustype.md)] | CM_DRP_LEGACYBUSTYPE | SPDRP_LEGACYBUSTYPE |
+| [**DEVPKEY_Device_LegacyBusType**](devpkey-device-legacybustype.md) | CM_DRP_LEGACYBUSTYPE | SPDRP_LEGACYBUSTYPE |
 | [**DEVPKEY_Device_BusNumber**](devpkey-device-busnumber.md) | CM_DRP_BUSNUMBER | SPDRP_BUSNUMBER |
 | [**DEVPKEY_Device_EnumeratorName**](devpkey-device-enumeratorname.md) | CM_DRP_ENUMERATOR_NAME | SPDRP_ENUMERATOR_NAME |
 | [**DEVPKEY_Device_Security**](devpkey-device-security.md) | CM_DRP_SECURITY | SPDRP_SECURITY |
