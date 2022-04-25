@@ -1,26 +1,13 @@
 ---
-title: Hardware submissions
-description: Hardware submissions
+title: How to use the hardware dashboard
+description: How to use the hardware dashboard
 ms.topic: article
-ms.date: 04/20/2017
+ms.date: 04/25/2022
 ---
 
-# Hardware submissions
+# How to use the hardware dashboard
 
-The Windows Hardware Compatibility Program (for Windows 10) and the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems) enable you to design, create, and test your hardware and drivers before you submit the final version through the Partner Center. For more information, see the [Windows hardware certification](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) page. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
-
-To develop your device, download the [Windows Driver Kit (WDK)](../download-the-wdk.md).
-
-To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](/windows-hardware/test/hlk/windows-hardware-lab-kit) for Windows 10.
-
-After you develop and test your product, you can submit the results with a hardware submission.
-
-> [!NOTE]
-> We strongly encourage you to include public driver symbols as part your HLK package. See [Public Symbols and Private Symbols](../devtest/public-symbols-and-private-symbols.md) to learn how to create public symbols.  See [Step 8: Create a submission package](/windows-hardware/test/hlk/getstarted/step-8-create-a-submission-package) to learn how to include symbols with your package. Note that any .pdb files in your submission will be removed before being published.
-
-- To submit an HLK or HCK package, see [Create a new hardware submission](create-a-new-hardware-submission.md).
-
-- To submit a WLK package, see [Create a new WLK device certification submission](create-a-new-hardware-logo-submission.md) for more information.
+This article describes how to use the hardware dashboard during the Hardware submission process. If you haven't yet begun the submission process, see [Getting started with the hardware submission process](get-started-hardware-submissions.md).
 
 ## Drivers summary page
 

@@ -1,13 +1,15 @@
 ---
-title: Getting started with the Microsoft Partner Center Hardware dashboard
-description: Getting started with the Microsoft Partner Center Hardware dashboard
+title: Getting started with the hardware submission process
+description: Getting started with the hardware submission process
 ms.topic: article
 ms.date: 04/13/2022
 ---
 
-# Getting started with Partner Center Hardware dashboard
+# Getting started with the hardware submission process
 
-This article shows you how to get started using the Partner Center Hardware dashboard.
+With the Windows Hardware Compatibility Program (for Windows 10) and the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems) you can design, create, and test your hardware and drivers before you submit the final version through the Partner Center Hardware dashboard for certification. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
+
+This article describes how to get started with the hardware submission process. We'll take you through each step of the process, from getting an extended validation (EV), to registration, and finally, to driver publication and certification.
 
 ## Step 1: Get an EV code signing certificate
 
@@ -26,7 +28,7 @@ Now that your company is registered in the Hardware Developer program, you'll ne
 
 ## Step 4: Submit for certification and compatibility
 
-Once you've properly tested your drivers, you can now [create a new hardware submission](create-a-new-hardware-submission.md) in the [Partner Hardware dashboard](https://go.microsoft.com/fwlink/?LinkID=828002).
+Once you've properly tested your drivers, you can now [create a new hardware submission](create-a-new-hardware-submission.md).
 
 ## Step 5: Manage driver distribution
 
@@ -52,12 +54,13 @@ You can continue to use the Partner Center Hardware dashboard to:
 ## Next Steps
 
 > [!div class="nextstepaction"]
+> [How to use the hardware dashboard](get-started-hardware-dashboard.md).
+
+> [!div class="nextstepaction"]
 > [Manage your hardware driver submissions](manage-your-hardware-submissions.md).
 
 > [!div class="nextstepaction"]
 > [Find your hardware driver submissions](find-hardware-submission.md).
 
-To learn more about attestation signing your drivers on the Sysdev dashboard, see
-
 > [!div class="nextstepaction"]
-> [Attestation signing a kernel driver for public release](code-signing-attestation.md).
+> [Attestation sign Windows 10+ drivers](code-signing-attestation.md).

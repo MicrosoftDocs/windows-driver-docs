@@ -2,7 +2,9 @@
   href: index.yml
 - name: "Overview"
   href: hardware-dashboard-faq.yml
-- name: "Getting started"
+- name: "Get started with hardware submissions"
+  href: get-started-dashboard-submissions.md
+- name: "How to use the hardware dashboard"
   href: get-started-with-the-hardware-dashboard.md
 - name: "Driver code signing" 
   items:
