@@ -72,7 +72,7 @@ To create a systems or driver submission package:
 
 1. If errors are encountered, entries with the errors will be highlighted in red. To view the errors again, select **View Errors**. Before the package can be created, all errors must be fixed. You can fix errors by editing the entry and updating the driver or the test result.
 
-1. When all errors are fixed, you select **> Create Package**.
+1. When all errors are fixed, select **> Create Package**.
 
 ## Next Steps
 
