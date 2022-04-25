@@ -12,9 +12,7 @@ To share a driver with one of your partners, [create a hardware submission](crea
 
 **Note**  Shared drivers can only be shared by the organization that originally created it. An organization that receives a shared driver cannot share it again.
 
- 
-
-1. [Search the hardware submission](hardware-submission-search.md) that contains the driver you want to share.
+1. [Search the hardware submission](hardware-submission-manage.md#search-for-hardware-submissions) that contains the driver you want to share.
 
 2. Go to the **Distribution** section of the hardware submission and select **New shipping label**.
 

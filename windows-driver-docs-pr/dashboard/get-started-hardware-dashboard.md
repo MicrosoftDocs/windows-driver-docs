@@ -7,7 +7,7 @@ ms.date: 04/25/2022
 
 # How to use the hardware dashboard
 
-This article describes how to use the hardware dashboard during the Hardware submission process. If you haven't yet begun the submission process, see [Getting started with the hardware submission process](get-started-hardware-submissions.md).
+This article describes how to use the hardware dashboard during the Hardware submission process. 
 
 
 ## Hardware submission page

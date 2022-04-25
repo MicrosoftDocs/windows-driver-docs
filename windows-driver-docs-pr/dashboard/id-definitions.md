@@ -1,11 +1,11 @@
 ---
-title: Windows Partner Center ID Definitions
-description: Windows Partner Center ID Definitions
+title: Dashboard product and shipping label IDs
+description: Dashboard product and shipping label IDs
 ms.topic: article 
-ms.date: 04/20/2017
+ms.date: 04/24/2022
 ---
 
-# Dashboard ID definitions
+# Dashboard product and shipping label IDs
 
 This topic defines the identification numbers associated with Partner Center submissions.
 
@@ -19,32 +19,14 @@ The Partner Center lists each of these IDs on the driver details page of your pr
 
 ## ID definitions
 
-<table>
-<thead>
-<tr class="header">
-<th>ID Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Shared product ID</p></td>
-<td><p>This identifier is shared across all accounts who have access to a driver. The Shared product ID allows you to easily communicate about specific submissions and track submission updates across multiple organizations. In most cases, this is the ID you will want to track and share with others.</p></td>
-</tr>
-<tr class="even">
-<td><p>Private Product ID</p></td>
-<td><p>The private product ID is the top level identifier that is generated with each new product creation. This ID is most useful for personal reference of specific products, and predicting their URLs.
-&gt; [!NOTE]
-&gt; when you share a driver with someone else, they will be assigned a new private product ID. If you want to communicate about a product, use the Shared Product ID.
-</p>
-</td>
-</tr>
-<tr class="odd">
-<td><p>Submission ID</p></td>
-<td><p>This identifier represents the individual packages you upload to a Product. The initial submission, and all submission updates each have a unique identifier. This ID is most useful for tracking updates using the Driver Update Acceptable (DUA) process within a product. See <a href="/windows-hardware/drivers/dashboard/manage-your-hardware-submissions" data-raw-source="[Manage your hardware submissions](./manage-your-hardware-submissions.md)">Manage your hardware submissions</a> for more details. </p></td>
-</tr>
-</tbody>
-</table>
+|ID Name|Description|
+|----|----|
+|Shared product ID|This identifier is shared across all accounts who have access to a driver. The Shared product ID allows you to easily communicate about specific submissions and track submission updates across multiple organizations. In most cases, this is the ID you will want to track and share with others.|
+| Private Product ID|The private product ID is the top level identifier that is generated with each new product creation. This ID is most useful for personal reference of specific products, and predicting their URLs.|
+
+>[!NOTE]
+>When you share a driver with someone else, they will be assigned a new private product ID. If you want to communicate about a product, use the Shared Product ID.
+|Submission ID|This identifier represents the individual packages you upload to a Product. The initial submission, and all submission updates each have a unique identifier. This ID is most useful for tracking updates using the Driver Update Acceptable (DUA) process within a product. See [Manage hardware submissions](/windows-hardware/drivers/dashboard/hardware-submission-manage.md).
 
 Shipping labels also contain two additional IDs:
 
