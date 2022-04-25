@@ -4,7 +4,7 @@
   href: hardware-dashboard-faq.yml
 - name: "Get started with hardware dashboard"
   href: get-started-dashboard-submissions.md
-- name: "Code signing"
+- name: "Driver code signing"
   items:
   - name: "Requirements"
     href: code-signing-reqs.md 
