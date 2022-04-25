@@ -4,6 +4,16 @@
   href: hardware-dashboard-faq.yml
 - name: "Get started with hardware dashboard"
   href: get-started-dashboard-submissions.md
+- name: "Hardware submissions"
+  items:
+  - name: "Create a new hardware submission"
+    href: hardware-submission-create.md
+  - name: Manage hardware submissions
+    href: hardware-submission-manage.md
+  - name: Create a WLK hardware submission package
+    href: hardware-submission-wlk.md
+  - name: "Submission ID definitions"
+    href: id-definitions.md
 - name: "Driver code signing"
   items:
   - name: "Requirements"
@@ -18,16 +28,6 @@
     href: file-signing-reqs.md
   - name: "File sign an LSA plugin or UEFI firmware binary"
     href: file-signing-manage.md
-- name: "Hardware submissions"
-  items:
-  - name: "Create a new hardware submission"
-    href: hardware-submission-create.md
-  - name: Create a WLK hardware submission package
-    href: hardware-submission-wlk.md
-  - name: Manage hardware submissions
-    href: hardware-submission-manage.md
-  - name: "Submission ID definitions"
-    href: id-definitions.md
 - name: "Dashboard administration"
   items:
   - name: "Register for the Windows Hardware program"
