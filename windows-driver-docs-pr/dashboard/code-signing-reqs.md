@@ -58,7 +58,7 @@ Attestation signing has the following properties.
 
 - Attestation signing requires driver folder names to contain no special characters, no UNC file share paths, and to be less than 40 characters long.
 
-- When a driver receives attestation signing, it's not [Windows Certified](hardware-certification-submissions.md). An attestation signature from Microsoft indicates that the driver can be trusted by Windows, but because the driver has not been tested in HLK Studio, there are no assurances made around compatibility, functionality, and so on.
+- When a driver receives attestation signing, it's not Windows Certified. An attestation signature from Microsoft indicates that the driver can be trusted by Windows, but because the driver has not been tested in HLK Studio, there are no assurances made around compatibility, functionality, and so on.
 
 - DUA (Driver Update Acceptable) doesn't support drivers signed using attestation.
 

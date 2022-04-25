@@ -1,11 +1,11 @@
 ---
-title: Find and manage your hardware submission
+title: Search for a hardware submission
 description: Learn how to find a specific Windows hardware submission by searching with text or by selecting driver attributes in a keyword search.
 ms.topic: article
 ms.date: 09/24/2018
 ---
 
-# Find a hardware submission
+# Search for a hardware submission
 
 All hardware submissions that have been submitted by your organization are displayed on the **Drivers** page of the hardware dashboard. To find a specific hardware submission, you can search using either:
 
@@ -37,7 +37,8 @@ For example, the search phrase **mydriver** returns submissions with the product
 
 You can search for drivers by driver attributes using the keyword search. When you type an at symbol (**\@**) in the search box, the dashboard displays a list of the usable attributes. 
 
-![Screenshot of the Drivers page in the hardware dashboard, with @ symbol entered into the text box. A list of available attributes shows under @ symbol.](images/ampersand-search.png)
+
+:::image type="content" source="./images/hardware-submission-search/ampersand-search.png" alt-text="Screenshot of the Drivers page in the hardware dashboard, with @ symbol entered into the text box. A list of available attributes shows under @ symbol.":::
 
 As you enter text after @ symbol, the list narrows to match the criteria. When you click one of the prepopulated values, it appears in the search box in the form **(@*ParameterName*: "")**. Do not modify the parameter name or the format, other than to enter a string between the quotation marks (**""**). Search phrase can be a complete search value or partial one. For example, to search for drivers  by operating system codes you could use either:
 
@@ -49,7 +50,7 @@ or
 
 You can also search by using multiple attributes. Multiple attributes behave as if they are in an AND operator combination. For example, if you search for both product name and submission status (**@ProductName:"test" @SubmissionStatus:"Failed"**) the dashboard returns only those records that match **both** product name and submission status.
 
-![Screenshot of the Drivers page in the hardware dashboard, in which two attributes, @ProductName:"test" and @SubmissionStatus:"Failed", are entered. Results all have "test" in the product name as well as "Failed" in the submission status.](images/two-attribute-search.png)
+:::image type="content" source="./images/hardware-submission-search/two-attribute-search.png" alt-text="Screenshot of the Drivers page in the hardware dashboard, in which two attributes, @ProductName:"test" and @SubmissionStatus:"Failed", are entered. Results all have "test" in the product name as well as "Failed" in the submission status.":::
 
 You can use the following driver attributes for keyword searches:
 

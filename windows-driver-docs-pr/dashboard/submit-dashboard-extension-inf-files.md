@@ -158,7 +158,7 @@ Yes.  If multiple systems use the same settings, or if you want to customize set
 
 ### Hardware Dev Center
 
-* [Hardware submissions](hardware-certification-submissions.md)
+* [Hardware submissions](hardware-submission-create.md)
 
 * [Driver flighting](driver-flighting.md)
 

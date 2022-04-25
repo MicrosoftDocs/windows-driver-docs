@@ -5,8 +5,6 @@
 - name: "Get started with hardware submissions"
   href: get-started-dashboard-submissions.md
 - name: "How to use the hardware dashboard"
-  href: get-started-with-the-hardware-dashboard.md
-- name: "Driver code signing" 
   items:
   - name: "Requirements"
     href: code-signing-reqs.md 
@@ -26,6 +24,8 @@
     href: hardware-submission-create.md
   - name: Create a WLK hardware submission package
     href: hardware-submission-wlk.md
+  - name: Search for a hardware driver submission
+    href: hardware-submission-search.md
   - name: "Submission ID definitions"
     href: id-definitions.md
 - name: "Dashboard administration"

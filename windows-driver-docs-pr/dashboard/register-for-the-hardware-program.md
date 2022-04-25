@@ -69,7 +69,7 @@ To register for the Hardware Developer Program:
 To learn how to create your first hardware submission, see:
 
 > [!div class="nextstepaction"]
-> [Hardware submissions](hardware-certification-submissions.md).
+> [Hardware submissions](hardware-submission-create.md).
 
 ## Support
 
