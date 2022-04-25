@@ -1,11 +1,11 @@
 ---
-title: Dashboard product and shipping label IDs
-description: Dashboard product and shipping label IDs
+title: Dashboard submission product and shipping label IDs
+description: Dashboard submission product and shipping label IDs
 ms.topic: article 
 ms.date: 04/24/2022
 ---
 
-# Dashboard product and shipping label IDs
+# Dashboard submission product and shipping label IDs
 
 This topic defines the identification numbers associated with Partner Center submissions.
 

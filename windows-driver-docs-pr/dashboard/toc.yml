@@ -12,7 +12,7 @@
     href: hardware-submission-manage.md
   - name: Create a WLK hardware submission package
     href: hardware-submission-wlk.md
-  - name: "Submission ID definitions"
+  - name: "Submission IDs"
     href: id-definitions.md
 - name: "Driver code signing"
   items:
