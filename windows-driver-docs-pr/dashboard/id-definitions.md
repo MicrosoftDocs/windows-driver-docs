@@ -53,8 +53,12 @@ Shipping labels also contain two additional IDs:
 |Shipping Label ID | This identifier is used for internal tracking, and is assigned to any shipping labels that are assigned to a product. In most cases, you will not need to know the Shipping Label ID.|
 |Promotion Request ID | If your Shipping Label requires a manual review from Microsoft, it will be given a Promotion Request ID. This represents your unique shipping label in the Driver Shiproom. You should include this Id in any support inquiry.|
 
-## Related topics
+## Next Steps
 
-* [Manage your hardware submissions](./manage-your-hardware-submissions.md)
+> [!div class="nextstepaction"]
+> [Manage hardware submissions](hardware-submission-manage.md)
 
-* [Manage driver distribution with shipping labels](./manage-driver-distribution-by-submission.md)
+> [!div class="nextstepaction"]
+> [Manage driver distribution with shipping labels](./manage-driver-distribution-by-submission.md)
+
+

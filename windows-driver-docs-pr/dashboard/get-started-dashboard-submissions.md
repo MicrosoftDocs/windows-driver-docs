@@ -54,13 +54,13 @@ You can continue to use the Partner Center Hardware dashboard to:
 ## Next Steps
 
 > [!div class="nextstepaction"]
-> [How to use the hardware dashboard](get-started-hardware-dashboard.md).
+> [Create a hardware submission](hardware-submission-create.md)
 
 > [!div class="nextstepaction"]
-> [Manage your hardware driver submissions](manage-your-hardware-submissions.md).
+> [Manage hardware submission](hardware-submission-manage.md)
 
 > [!div class="nextstepaction"]
-> [Find your hardware driver submissions](find-hardware-submission.md).
+> [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started.md)
 
 > [!div class="nextstepaction"]
 > [Attestation sign Windows 10+ drivers](code-signing-attestation.md).

@@ -72,10 +72,11 @@ With the Partner Center Hardware dashboard, you can submit your Windows tested d
 ## Next Steps
 
 > [!div class="nextstepaction"]
-> [Managing hardware submissions in the Partner Center](manage-your-hardware-submissions.md)
+> [Manage hardware submission](hardware-submission-manage.md)
 
 > [!div class="nextstepaction"]
 > [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started.md)
 
 > [!div class="nextstepaction"]
 > [Distribute your driver with Driver flighting](driver-flighting.md)
+

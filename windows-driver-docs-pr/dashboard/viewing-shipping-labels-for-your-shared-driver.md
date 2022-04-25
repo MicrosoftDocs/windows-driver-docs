@@ -10,7 +10,7 @@ ms.date: 04/20/2017
 
 After you share a driver with a partner, the partner can create shipping labels for your driver. To view a list of partner shipping labels for your shared driver, follow the steps below.
 
-1.  [Find the hardware submission](manage-your-hardware-submissions.md) that contains the shared driver.
+1.  [Search the hardware submission](hardware-submission-manage.md#search-for-hardware-submissions) that contains the shared driver.
 
 2.  Go to the **Distribution** section of the hardware submission. You can view a list of shipping labels for this shared driver.
 

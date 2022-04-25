@@ -26,7 +26,7 @@ This section shows you how to manage your packages.
 
 Select **Upload new** to upload a new package.
 
-Select **Download DUA shell** to download the DUA shell package. For information about how to update a submission using DUA, see [Manage hardware submissions](manage-your-hardware-submissions.md).
+Select **Download DUA shell** to download the DUA shell package. For information about how to update a submission using DUA, see [Manage hardware submissions](hardware-submission-manage.md).
 
 The uploaded package list displays your uploaded packages for this submission. Select the caret to expand a package. This shows you the submission ID and allows you to select **Download package** to download the package.
 

@@ -8722,11 +8722,16 @@
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/find-hardware-submission.md",
-            "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-search",
+            "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-manage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/manage-your-hardware-submissions.md",
+            "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-manage",
             "redirect_document_id": false
         }
 
-
+        
 
 
        

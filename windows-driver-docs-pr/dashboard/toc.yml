@@ -24,8 +24,8 @@
     href: hardware-submission-create.md
   - name: Create a WLK hardware submission package
     href: hardware-submission-wlk.md
-  - name: Search for a hardware driver submission
-    href: hardware-submission-search.md
+  - name: Manage hardware submissions
+    href: hardware-submission-manage.md
   - name: "Submission ID definitions"
     href: id-definitions.md
 - name: "Dashboard administration"

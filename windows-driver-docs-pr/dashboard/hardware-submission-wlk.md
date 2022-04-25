@@ -77,15 +77,13 @@ To create a systems or driver submission package:
 ## Next Steps
 
 > [!div class="nextstepaction"]
-> [Create a new hardware submission in the Partner Center](create-a-new-hardware-submission.md)
+> [Create for a hardware submission](hardware-submission-create.md)
 
 > [!div class="nextstepaction"]
-> [Managing hardware submissions in the Partner Center](manage-your-hardware-submissions.md)
- 
+> [Manage hardware submissions](hardware-submission-manage.md)
 
- 
+> [!div class="nextstepaction"]
+> [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started.md)
 
-
-
-
-
+> [!div class="nextstepaction"]
+> [Distribute your driver with Driver flighting](driver-flighting.md)

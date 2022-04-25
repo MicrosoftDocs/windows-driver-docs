@@ -82,8 +82,14 @@ A driver may be rejected for several reasons. Most commonly, rejection is caused
 - The device class being targeted may have specific CHID targeting requirements that you failed to properly follow.  Some device classes require CHID like Firmware and other classes forbid the use of CHID like Display.  Be sure you have entered your information correctly.
 - Using hardware IDs that unintentionally targets other OEMs.
 
-## Related topics
+## Next Steps
 
-- [Create a new hardware submission](create-a-new-hardware-submission.md)
-- [Managing hardware submissions in the Partner Center](manage-your-hardware-submissions.md)
-- [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started.md)
+> [!div class="nextstepaction"]
+> [Create a hardware submission](hardware-submission-create.md)
+
+> [!div class="nextstepaction"]
+> [Manage hardware submissions](hardware-submission-manage.md)
+
+> [!div class="nextstepaction"]
+> [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started.md)
+
