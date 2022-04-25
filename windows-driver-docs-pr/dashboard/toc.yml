@@ -24,6 +24,8 @@
     href: hardware-submission-create.md
   - name: Create a WLK hardware submission package
     href: hardware-submission-wlk.md
+  - name: "Submission ID definitions"
+    href: id-definitions.md
 - name: "Dashboard administration"
   items:
   - name: "Register for the Windows Hardware program"
