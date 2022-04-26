@@ -75,7 +75,5 @@ landingContent:
         links:
           - text: Getting started with the hardware dashboard
             url: get-started-with-the-hardware-dashboard.md
-          - text: Hardware dashboard FAQ
-            url: hardware-dashboard-faq.yml
           - text: LSA and UEFI file signing
             url: lsa-and-uefi-file-signing.md
