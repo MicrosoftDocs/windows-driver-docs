@@ -6,7 +6,9 @@ ms.date: 04/19/2022
 ---
 
 # Driver code signing requirements
- 
+
+Your drivers must be signed with a certificate before you submit them to the Hardware dashboard. Your organization can associate any number of certificates with its dashboard account, and each one of your submissions must be signed with any one of those certificates. There's no restriction on the number of certificates (both extended validation (EV) and Standard) associated with your organization.
+
 This article provides general information on the types of code signing available for your drivers, as well as the associated requirements for those drivers.
 
 For more extensive information on driver signing requirements see the following pages:
@@ -26,8 +28,7 @@ Code signing certificates can be purchased from one of the following certificate
 
 ## EV certificate signed drivers
 
-Your Hardware Dev Center dashboard account must have at least one extended validation (EV) certificate associated with it to submit binaries for attestation signing or to submit binaries for HLK certification.
-
+Your Hardware Dev Center dashboard account must have at least one EV certificate associated with it to submit binaries for attestation signing or to submit binaries for HLK certification. 
 The following rules apply:
 
 * Your registered EV certificate must be valid at the time of submission.

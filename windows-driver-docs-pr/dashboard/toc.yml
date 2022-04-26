@@ -1,7 +1,5 @@
 - name: "Partner Center for Windows Hardware"
   href: index.yml
-- name: "Overview"
-  href: hardware-dashboard-faq.yml
 - name: "Get started with hardware dashboard"
   href: get-started-dashboard-submissions.md
 - name: "Hardware submissions"
@@ -89,5 +87,3 @@
     items:
     - name: "Create Publisher Driver Metadata"
       href: create-publisher-metadata.md
-
- 

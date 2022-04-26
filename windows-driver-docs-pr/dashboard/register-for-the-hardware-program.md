@@ -7,7 +7,17 @@ ms.date: 04/20/2017
 
 # How to register for the Microsoft Windows Hardware Developer Program
 
-This article shows you how to register for the Microsoft Windows Hardware Developer Program.
+This article shows you how to register for the Microsoft Windows Hardware Developer Program. When you register for the the Hardware Developer Program, you will be prompted to sign the Windows Compatibility Program and Driver Quality Attestment Testing Agreement (ver 2.0). In addition, you can also sign the following agreements if you are using features or assets that apply to those agreements:
+
+- Windows Logo License Agreement (ver 2018)
+
+- UEFI (Unified Extensible Firmware Interface) Firmware Agreement (ver 1.0)
+
+- Windows Analytics Agreement (ver 2.0)
+
+- Microsoft Collaborate Program Agreement (ver 1.0)
+
+- Windows Desktop Applications Program Agreement (ver 1.0)
 
 ## Prerequisites
 

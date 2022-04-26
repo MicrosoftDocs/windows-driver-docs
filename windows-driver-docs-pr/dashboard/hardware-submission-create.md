@@ -9,6 +9,11 @@ ms.topic: article
 
 With the Partner Center Hardware dashboard, you can submit your Windows tested drivers for certification. This article describes how to create a new hardware submission in the Partner Center Hardware dashboard.
 
+All hardware submissions to the dashboard will be processed within 5 business days or less, depending on whether the submission requires manual review. Manual review may be required if your submission's tests fail, if it doesn't have a valid filter applied, or due to an internal business policy.
+
+>[!NOTE]
+> In order to make Windows 10 more secure without affecting performance, all binaries are now receiving embedded signatures. This applies to all submissions for certification, not only Windows 10 submissions.
+
 ## Prerequisites
 
 * Make sure your [dashboard account](https://partner.microsoft.com/dashboard) is registered for the Windows Hardware Developer Program. For information on how to register, see [How to register for the Windows Hardware Developer Program](register-for-the-hardware-program.md).
@@ -59,6 +64,9 @@ With the Partner Center Hardware dashboard, you can submit your Windows tested d
 
    :::image type="content" source="images/create-a-new-hardware-submission/hardware-certification.png" alt-text="Screenshot that shows the certification section.":::
 
+>[!IMPORTANT]
+>Make sure to check the announcement date that's been set. Once the announcement date has passed, you won't be able to add a new name.
+
 1. Select **Submit** at the bottom of the page.
 
 1. The **Distribution** section is used to publish your driver to Windows Update. For information about how to use the **Distribution** section, see [Manage driver distribution with shipping labels](manage-driver-distribution-by-submission.md).
@@ -68,6 +76,48 @@ With the Partner Center Hardware dashboard, you can submit your Windows tested d
    :::image type="content" source="images/create-a-new-hardware-submission/hardware-progress-tracker.png" alt-text="Screenshot that shows the progress tracker.":::
 
 1. Review the results. If your submission failed, make any necessary changes and resubmit.
+
+## Troubleshoot submission errors
+
+### Files missing errors
+
+Your error message is one of the following:
+
+* **There are files at the root of the cabinet.**
+* **No .inf files found in driver directory/directories: XYZ.**
+
+The failure is caused by an incorrect .cab file structure. The .CAB structure was created with driver files in the root folder of the .CAB file instead of having them in a subfolder. For instructions on how to create a proper .CAB file for your driver signing submissions, see [Attestation sign Windows 10+ drivers](code-signing-attestation.md).
+
+### Package is corrupt or missing information error
+
+Your error message is:
+
+**It looks like your package is corrupt or missing important information. Ensure you are using the latest version of the kit, regenerate your package, and try again. If you continue to experience the issue, contact Support.**
+
+If you continue to experience issues with your package submission, [contact support](support-contact.md).
+
+### Zip64 error
+
+Your error message is:
+
+**File is using Zip64(4gb+file Size)**
+
+This error is caused when the uploaded archive's filetype is .zip64 instead of .zip. This is caused by a large filesize. To fix this error, repackage the submission using the below steps.
+
+1. Rename the current .hckx/hlkx file to .zip.
+2. Extract to a folder.
+3. Open the folder.
+4. Select all items, then select and hold (or right-click) and select **Send to Compressed zip folder**.
+5. Rename the new .zip folder as .hckx/.hlkx.
+6. Upload the new .hckx/.hlkx file.
+
+### Failed to open DUA package
+
+Your error message is:
+
+**Failed to open package: Not compatible with a version (3.2.0.0) with this instance package manager**
+
+Use [HLK studio](/windows-hardware/test/hlk/user/install-standalone-hlk-studio) to open the downloaded DUA shell package and to create DUA submission.
 
 ## Next Steps
 
