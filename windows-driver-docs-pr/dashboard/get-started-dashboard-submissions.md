@@ -50,6 +50,22 @@ You can continue to use the Partner Center Hardware dashboard to:
 
 * Use the dashboard API to programmatically work with submissions.
 
+## Step 7: Share a link to a Windows Certification Verification Report
+
+Once your driver has been certified, you can share the verification report with a sharable URL. This URL allows the report to be accessed and downloaded without prior authorization or access to the Partner Center. The sharable URL contains three identification numbers separated by slashes as shown below:
+
+`https://developer.microsoft.com/dashboard/hardware/driver/DownloadCertificationReport/<SellerID>/<PrivateProductID>/<SubmissionID>`
+
+The identification numbers used in the URL, and their locations are as follows:
+  
+  | Component | Description |
+  | ---       | ---         |
+  |SellerID   | The identification number of your partner account. This can be found on the account management page, under **Account settings**. |
+  |PrivateProductID | The identification number generated with each product creation. Located on the driver details page for your product. See [Dashboard ID definitions](./id-definitions.md) for more information. |
+  |SubmissionID | The idenfication number given to each submission and submission update. Located on the driver details page for your product. See [Dashboard ID definitions](./id-definitions.md) for more information. |
+  
+To create a sharable link, replace **SellerID**, **PrivateProductID**, and **SubmissionID** in the example URL above with the appropriate identification numbers.
+
 ## Next Steps
 
 > [!div class="nextstepaction"]
