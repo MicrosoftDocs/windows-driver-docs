@@ -12,7 +12,6 @@ This article describes how you can use Partner Center User Management to manage 
 
 The Partner Center uses Azure Active Directory for user management. For some actions, such as creating a new user or deleting a user, you'll need to use your developer portal Global Admin account credentials. The Global Admin account is the account that was used to register for the Hardware program. If your account was migrated from Sysdev, your Global Admin was notified via e-mail. If you've lost or are unsure of your Global Admin credentials, please contact support.  The developer portal Global Admin account credentials are not the same as the Azure AD Global Admin account credentials.
 
-
 ## Add existing users
 
 To add existing users, you'll need to have the Manager role assigned to your Partner Center account.
@@ -62,7 +61,17 @@ To invite users:
 
 1. On the left menu, select **User management**.
 
-1. Select **+Invite users**
+1. Select **+ Invite users**.
+
+   :::image type="content" source="images/managing-user-roles/user-management-invite-users.png" alt-text="Screenshot that shows the user management page. The link to invite users is selected.":::
+
+1. Enter the email addresses of the users you wish to invite, separated by commas or semi-colons.
+
+   :::image type="content" source="images/managing-user-roles/user-management-invite-users-dialog.png" alt-text="Screenshot that shows the user invite dialog.":::
+
+1. Select **Next**.
+
+
 
 
 ## Change a user's role
