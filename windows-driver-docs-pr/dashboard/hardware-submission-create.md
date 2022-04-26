@@ -34,8 +34,8 @@ All hardware submissions to the dashboard will be processed within 5 business da
 
 1. In the **Packages and signing properties** section, enter a product name for your driver submission. This name can be used to search for and organize your driver submissions.
 
->[!NOTE]
->If you share your driver with another company, they will see this name.
+    >[!NOTE]
+    >If you share your driver with another company, they will see this name.
 
 1. Either drag or browse to the **.hlkx/.hckx** file that you want to submit. If you're submitting WLK hardware, you must submit a .CAB file. To learn how to create a WLK **.cab** file submission, see see [Create a WLK hardware submission package](winqual-submission-tool--winqualiexe-.md).
 
@@ -64,8 +64,8 @@ All hardware submissions to the dashboard will be processed within 5 business da
 
    :::image type="content" source="images/create-a-new-hardware-submission/hardware-certification.png" alt-text="Screenshot that shows the certification section.":::
 
->[!IMPORTANT]
->Make sure to check the announcement date that's been set. Once the announcement date has passed, you won't be able to add a new name.
+    >[!IMPORTANT]
+    >Make sure to check the announcement date that's been set. Once the announcement date has passed, you won't be able to add a new name.
 
 1. Select **Submit** at the bottom of the page.
 
