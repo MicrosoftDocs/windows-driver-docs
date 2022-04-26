@@ -12,7 +12,7 @@ This topic describes USB device-specific registry entries.
 
 The registry entries described in this topic are found under this key:
 
-```syntax
+```output
 HKEY_LOCAL_MACHINE
    SYSTEM
       CurrentControlSet
