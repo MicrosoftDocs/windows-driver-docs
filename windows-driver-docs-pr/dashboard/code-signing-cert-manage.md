@@ -43,3 +43,11 @@ To get a new code signing certificate:
 1. Upload the signed file to Partner Center.
 
 ## Retire a code signing certificate
+
+1. Go to [Partner Center](https://partner.microsoft.com/dashboard) and sign in using with administrator credentials.
+
+1. Select the gear icon in the upper right, then select **Developer settings**, then **Manage Certificates** on the left pane.
+
+1. Move through the page to find the certificate you wish to remove.
+
+1. Under the **Action** column of the certificate, select **Remove**.
