@@ -5,7 +5,7 @@
 - name: "Register for the Windows Hardware program"
   href: register-for-the-hardware-program.md 
 - name: "Manage dashboard users"
-    href: users-manage.md 
+  href: users-manage.md 
 - name: "Hardware submissions"
   items:
   - name: "Create a new hardware submission"
