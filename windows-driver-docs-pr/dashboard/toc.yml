@@ -2,6 +2,10 @@
   href: index.yml
 - name: "Get started with hardware dashboard"
   href: get-started-dashboard-submissions.md
+- name: "Register for the Windows Hardware program"
+    href: register-for-the-hardware-program.md 
+- name: "Manage dashboard users"
+    href: users-manage.md 
 - name: "Hardware submissions"
   items:
   - name: "Create a new hardware submission"
@@ -26,12 +30,6 @@
     href: file-signing-reqs.md
   - name: "File sign an LSA plugin or UEFI firmware binary"
     href: file-signing-manage.md
-- name: "Dashboard administration"
-  items:
-  - name: "Register for the Windows Hardware program"
-    href: register-for-the-hardware-program.md 
-  - name: "Manage users"
-    href: users-manage.md 
 - name: "Hardware dashboard API"
   items: 
   - name: "Getting started with the Hardware dashboard API"

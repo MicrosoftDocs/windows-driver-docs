@@ -14,7 +14,7 @@ You must Sign-in using your Partner Center Hardware dashboard username and passw
 Select Contact us, Dashboard issue, and then Hardware submissions & signing (all OS version) from the dropdown. Live Chat and Email support hours are 8am-8pm CST Monday-Friday. SLA for an initial response is 24-48 hours for email support.
 
 
-# Sharing a link to a Windows Certification Verification Report
+## Sharing a link to a Windows Certification Verification Report
 * A sharable URL contains three identification numbers separated by slashes as shown below: `https://developer.microsoft.com/dashboard/hardware/driver/DownloadCertificationReport/SellerID/PrivateProductID/SubmissionID`
     
     * The identification numbers used in the URL, and their locations are as follows:
