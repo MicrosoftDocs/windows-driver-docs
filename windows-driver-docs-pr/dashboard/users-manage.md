@@ -6,7 +6,7 @@ ms.date: 04/20/2017
 ---
 
 
-# Manage users
+# Manage dashboard users
 
 This article describes how you can use Partner Center User Management to manage your Hardware dashboard users.
 

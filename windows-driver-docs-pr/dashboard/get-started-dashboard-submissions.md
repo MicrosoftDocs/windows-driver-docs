@@ -5,7 +5,7 @@ ms.topic: article
 ms.date: 04/13/2022
 ---
 
-# Getting started with the hardware submission process
+# Get started with the hardware submission process
 
 With the Windows Hardware Compatibility Program (for Windows 10) and the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems) you can design, create, and test your hardware and drivers before you submit the final version through the Partner Center Hardware dashboard for certification. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
 

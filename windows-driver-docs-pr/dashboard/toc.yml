@@ -1,6 +1,6 @@
 - name: "Partner Center for Windows Hardware"
   href: index.yml
-- name: "Get started with hardware dashboard"
+- name: "Get started with hardware submissions"
   href: get-started-dashboard-submissions.md
 - name: "Register for the Windows Hardware program"
   href: register-for-the-hardware-program.md 
