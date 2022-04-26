@@ -6,41 +6,19 @@ ms.date: 03/18/2022
 
 # USB Device Registry Entries
 
-This topic describes the device-specific registry entries.
-
-## Find device information after it enumerates on Windows
-
-**View the device interface GUID, Hardware Id, and device class information about your device**
-
-1. Find this registry key and note the **DeviceInstance** value:
-
-    **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\DeviceClasses\\**
-
-    ![usb hardware id.](images/deviceinstance.png)
-
-1. Find the device instance registry key and get the device interface GUID:
-
-    **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\USB\\&lt;hardware id&gt;\\&lt;instance id&gt;\\Device Parameters**
-
-    ![usb device interface guid.](images/device-interface-guid2.png)
-
-1. Under the device instance key, note the device class, subclass, and protocol codes:
-
-    **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\USB**
-
-    ![usb device class subclass protocol codes.](images/deviceclass.png)
+This topic describes device-specific registry entries.
 
 ## Registry settings for configuring USB driver stack behavior
 
 The registry entries described in this topic are found under this key:
 
-```cpp
+```syntax
 HKEY_LOCAL_MACHINE
    SYSTEM
       CurrentControlSet
          Control
             usbflags
-               <VVVVPPPPRRRR>
+               <vvvvpppprrrrr>
                   <Device-specific registry entry>
 ```
 
@@ -51,7 +29,8 @@ In the ***vvvvpppprrrrr*** key,
 - ***rrrr*** is a 4-digit hexadecimal number that contains the revision number of the device.
 
 The vendor ID, product ID, and revision number values are obtained from the [USB device descriptor](usb-device-descriptors.md).
-The following table describes the possible registry entries for the ***vvvvpppprrrrr*** key. The USB driver stack considers these entries as read-only values.
+
+The following table describes the possible registry entries for the ***vvvvpppprrrrr*** key. The USB driver stack considers these entries to be read-only values.
 
 <table>
   <thead>
@@ -68,7 +47,7 @@ The following table describes the possible registry entries for the ***vvvvppppr
         <p>REG_BINARY</p>
       </td>
       <td>
-        <p>Indicates whether the operating system queried the device for <a href="microsoft-defined-usb-descriptors.md" data-raw-source="[Microsoft-Defined USB Descriptors](microsoft-defined-usb-descriptors.md)">Microsoft-Defined USB Descriptors</a>. If the previously-attempted OS descriptor query was successful, the value contains the vendor code from the OS string descriptor.</p>
+        <p>Indicates whether the operating system queried the device for <a href="microsoft-defined-usb-descriptors.md" data-raw-source="[Microsoft-defined USB descriptors](microsoft-defined-usb-descriptors.md)">Microsoft-defined USB descriptors</a>. If the previously-attempted OS descriptor query was successful, the value contains the vendor code from the OS string descriptor.</p>
       </td>
       <td>
         <ul>
@@ -110,6 +89,30 @@ The following table describes the possible registry entries for the ***vvvvppppr
   </tbody>
 </table>
 
+## Find device information after it enumerates on Windows
+
+**View the device interface GUID, Hardware Id, and device class information about your device**
+
+1. Find this registry key and note the **DeviceInstance** value:
+
+    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\`
+
+    :::image type="content" source="images/deviceinstance.png" alt-text="Screenshot of USB hardware ID in Windows RegEdit.":::
+
+1. Find the device instance registry key and get the device interface GUID:
+
+    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\<hardware id>\<instance id>\Device Parameters`
+
+    :::image type="content" source="images/device-interface-guid2.png" alt-text="Screenshot of USB device interface GUID in Windows RegEdit.":::
+
+1. Under the device instance key, note the device class, subclass, and protocol codes:
+
+    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB`
+
+    :::image type="content" source="images/deviceclass.png" alt-text="Screenshot of USB device class subclass protocol codes in Windows RegEdit.":::
+
 ## Related topics
 
-[Microsoft-provided USB drivers](system-supplied-usb-drivers.md)  
+- [USB device descriptor](usb-device-descriptors.md)
+- [Microsoft-defined USB descriptors](microsoft-defined-usb-descriptors.md)
+- [Microsoft-provided USB drivers](system-supplied-usb-drivers.md)  
