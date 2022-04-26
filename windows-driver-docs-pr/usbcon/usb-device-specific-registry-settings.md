@@ -1,12 +1,12 @@
 ---
-description: This topic describes the device-specific registry entries.
-title: USB Device Registry Entries
-ms.date: 03/18/2022
+description: This topic describes USB device-specific registry entries.
+title: USB device registry entries
+ms.date: 04/25/2022
 ---
 
-# USB Device Registry Entries
+# USB device registry entries
 
-This topic describes device-specific registry entries.
+This topic describes USB device-specific registry entries.
 
 ## Registry settings for configuring USB driver stack behavior
 
@@ -113,6 +113,6 @@ The following table describes the possible registry entries for the ***vvvvppppr
 
 ## Related topics
 
+- [Microsoft-provided USB drivers](system-supplied-usb-drivers.md)  
 - [USB device descriptor](usb-device-descriptors.md)
 - [Microsoft-defined USB descriptors](microsoft-defined-usb-descriptors.md)
-- [Microsoft-provided USB drivers](system-supplied-usb-drivers.md)  
