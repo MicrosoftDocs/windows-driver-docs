@@ -41,6 +41,13 @@ Another area where the printer manufacturers can improve and differentiate is pr
 | PrintTicket | Collection of various print related features and their values used to capture the user's intent for a given print job. |
 | PrintSupportExtension | PSA background task responsible for providing printer constraint extension capabilities. |
 
+## Print support namespace
+The samples below reference a **printsupport** namespace, which is defined as:
+
+```xml
+    xmlns:printsupport="http://schemas.microsoft.com/appx/manifest/printsupport/windows10"
+```
+
 ## Print support settings UI
 
 When a user is about to print a document, they often would like to set some preferences with which to print it. For example, they may choose to print a document in landscape orientation. They may also take advantage of a custom feature that their printer supports. Windows provides default UI to show custom preferences, but the user may not understand them as there are no appropriate icons or descriptions. Windows may also be using the wrong UI control to present it. Such a custom feature is best presented by an app that understands the feature completely. This is the motivation behind offering an API that lets the printer manufacturers create apps tailored to the various printer models they make.
@@ -49,7 +56,7 @@ A new UAP extension contract will be created with a new category named "windows.
 
 ```xml
 <Extensions>
-    <uap4:Extension Category="windows.printSupportSettingsUI"
+    <printsupport:Extension Category="windows.printSupportSettingsUI" 
         EntryPoint="PsaSample.PsaSettingsUISample"/>
 </Extensions>
 ```
@@ -335,7 +342,7 @@ To support printer extension constraints, a new background task type, PrintSuppo
 
 ```xml
 <Extensions>
-    <uap4:Extension Category="windows.printSupportExtension"
+    <printsupport:Extension Category="windows.printSupportExtension" 
         EntryPoint="PsaBackgroundTasks.PrintSupportExtension"/>
 </Extensions>
 ```
@@ -434,7 +441,7 @@ A new **printSupportWorkflow** background task type has been defined. The Packag
 
 ```xml
 <Extensions>
-    <uap4:Extension Category="windows.printSupportWorkflow"
+    <printsupport:Extension Category="windows.printSupportWorkflow" 
         EntryPoint="PsaBackgroundTasks.PrintSupportWorkflowSample"/>
 </Extensions>
 ```
@@ -447,7 +454,7 @@ A new **ActivationKind** called **PrintSupportJobUI** is defined. This does not 
 
 ```xml
 <Extensions>
-    <uap4:Extension Category="windows.printSupportJobUI"
+    <printsupport:Extension Category="windows.printSupportJobUI" 
         EntryPoint="PsaSample.PrintSupportJobUISample"/>
 </Extensions>
 ```
