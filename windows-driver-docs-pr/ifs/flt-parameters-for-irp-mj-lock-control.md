@@ -50,10 +50,10 @@ Key value to be assigned to the byte-range lock.
 Starting byte offset within the file of the range to be locked.
 
 **ProcessId**  
-Opaque pointer to the process ID for the process that requested the byte-range lock.
+Opaque pointer to the process object for the process that requested the byte-range lock.  This is only valid for FastIO requests.  This field should therefore never be set when using this structure to issue a lock control function.
 
 **FailImmediately**  
-Boolean value specifying whether the lock request should fail if the lock cannot be granted immediately. This member is set to **FALSE** if the requesting thread can be put into a wait state until the request is granted or **TRUE** if it cannot.
+Boolean value specifying whether the lock request should fail if the lock cannot be granted immediately. This member is set to **FALSE** if the requesting thread can be put into a wait state until the request is granted or **TRUE** if it cannot.  
 
 **ExclusiveLock**  
 Boolean value specifying whether an exclusive lock is requested. This member is set to **TRUE** if an exclusive lock is requested or **FALSE** if a shared lock is requested.
