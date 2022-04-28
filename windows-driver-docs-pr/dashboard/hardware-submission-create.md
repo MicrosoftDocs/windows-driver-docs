@@ -16,7 +16,7 @@ All hardware submissions to the dashboard will be processed within 5 business da
 
 ## Prerequisites
 
-* Make sure your [dashboard account](https://partner.microsoft.com/dashboard) is registered for the Windows Hardware Developer Program. For information on how to register, see [How to register for the Windows Hardware Developer Program](register-for-the-hardware-program.md).
+* Make sure your [dashboard account](https://partner.microsoft.com/dashboard) is registered for the Windows Hardware Developer Program. For information on how to register, see [How to register for the Windows Hardware Developer Program](hardware-program-register.md).
 
 * For drivers compatible with Windows 10 and above, you'll need to submit a digitally signed HLK file. To learn how to create a digitally signing an HLK file, see the [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
 
@@ -37,7 +37,7 @@ All hardware submissions to the dashboard will be processed within 5 business da
     >[!NOTE]
     >If you share your driver with another company, they will see this name.
 
-1. Either drag or browse to the **.hlkx/.hckx** file that you want to submit. If you're submitting WLK hardware, you must submit a .CAB file. To learn how to create a WLK **.cab** file submission, see see [Create a WLK hardware submission package](winqual-submission-tool--winqualiexe-.md).
+1. Either drag or browse to the **.hlkx/.hckx** file that you want to submit. If you're submitting WLK hardware, you must submit a .CAB file. To learn how to create a WLK **.cab** file submission, see see [Create a WLK hardware submission package](hardware-submission-wlk.md).
 
    :::image type="content" source="./images/create-a-new-hardware-submission/hardware-submit.png" alt-text="Screenshot that shows the new hardware submission form.":::
 

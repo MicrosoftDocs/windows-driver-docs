@@ -37,30 +37,30 @@ To register for the Hardware Developer Program:
 
 1. Read the prerequisites to make sure you have what you need, and then select **Next**.
 
-    :::image type="content" source="./images/register-for-the-hardware-program/registration-start.png" alt-text="Screenshot of the first page of the Hardware Developer Program registration process. The 'Next' button is selected.":::
+    :::image type="content" source="./images/hardware-program-register/registration-start.png" alt-text="Screenshot of the first page of the Hardware Developer Program registration process. The 'Next' button is selected.":::
 
 1. If your organization has an Azure AD global administrator account, select **Sign in to Azure AD**. If your organization doesn't have an Azure AD directory, select **Create a new directory for free**. Follow the directions to create an account and sign in with your new global administrator user name and password.
 
-    :::image type="content" source="./images/register-for-the-hardware-program/registration-work-account.png" alt-text="Screenshot of the Azure AD page of the Hardware Developer Program registration process. The 'Sign in to Azure AD' button is selected.":::
+    :::image type="content" source="./images/hardware-program-register/registration-work-account.png" alt-text="Screenshot of the Azure AD page of the Hardware Developer Program registration process. The 'Sign in to Azure AD' button is selected.":::
 
 1. Now that you've signed in to Azure AD, select the country or region where you live or where your business is located.
 
-    :::image type="content" source="./images/register-for-the-hardware-program/registration-select-country.png" alt-text="Screenshot of the Account country page of the Hardware Developer Program registration process. ":::
+    :::image type="content" source="./images/hardware-program-register/registration-select-country.png" alt-text="Screenshot of the Account country page of the Hardware Developer Program registration process. ":::
 
 >[!IMPORTANT]
 >Once you complete your account information, you can't change your country/region.
 
 1. Enter your company display name. Customers will see your apps, add-ins, extensions, or services listed under this name.
 
-   :::image type="content" source="./images/register-for-the-hardware-program/registration-company-name.png" alt-text="Screenshot of the Company display name textbox in the Hardware Developer Program registration process. The textbox has the value 'Contoso Display Name' ":::
+   :::image type="content" source="./images/hardware-program-register/registration-company-name.png" alt-text="Screenshot of the Company display name textbox in the Hardware Developer Program registration process. The textbox has the value 'Contoso Display Name' ":::
 
 1. Enter your personal contact info. Microsoft will use this info for account verification and to contact you. When you're done, select **Next** at the top of the page.
 
-   :::image type="content" source="./images/register-for-the-hardware-program/registration-personal-info.png" alt-text="Screenshot of the 'Your personal contact info' section in the Hardware Developer Program registration process.":::
+   :::image type="content" source="./images/hardware-program-register/registration-personal-info.png" alt-text="Screenshot of the 'Your personal contact info' section in the Hardware Developer Program registration process.":::
 
 1. You are now in the **Certificate** section of the registration process. In order to secure your digital information, you must use your company's Extended Validation (EV) code signing certificate. If your company doesn't have an EV certificate, you can purchase one from an authorized certificate authority. Once you have your code signing certificate, select **Next**.
 
-   :::image type="content" source="./images/register-for-the-hardware-program/registration-ev-cert.png" alt-text="Screenshot of the 'Get a code signing certificate' section in the Hardware Developer Program registration process.":::
+   :::image type="content" source="./images/hardware-program-register/registration-ev-cert.png" alt-text="Screenshot of the 'Get a code signing certificate' section in the Hardware Developer Program registration process.":::
 
 1. Now you'll need to sign and upload your file. Follow the steps as directed on the **Registration - Sign and upload your file** page.
 
@@ -74,7 +74,7 @@ To register for the Hardware Developer Program:
 ## Next Steps
 
 > [!div class="nextstepaction"]
-> [Manage users and permissions](users-manage.md)
+> [Manage users and permissions](hardware-dashboard-users-manage.md)
 
 To learn how to create your first hardware submission, see:
 

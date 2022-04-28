@@ -62,7 +62,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Register for the hardware program
-            url: register-for-the-hardware-program.md
+            url: hardware-program-register.md
           - text: Add or remove users
             url: adding-or-removing-users.md
           - text: Add a code signing certificate

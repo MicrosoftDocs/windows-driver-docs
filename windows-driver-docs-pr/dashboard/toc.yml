@@ -3,9 +3,9 @@
 - name: "Get started with hardware submissions"
   href: get-started-dashboard-submissions.md
 - name: "Register for the Windows Hardware program"
-  href: register-for-the-hardware-program.md 
+  href: hardware-program-register.md 
 - name: "Manage dashboard users"
-  href: users-manage.md 
+  href: hardware-dashboard-users-manage.md 
 - name: "Hardware submissions"
   items:
   - name: "Create a new hardware submission"
@@ -15,7 +15,7 @@
   - name: Create a WLK hardware submission package
     href: hardware-submission-wlk.md
   - name: "Submission IDs"
-    href: id-definitions.md
+    href: hardware-submission-ids.md
 - name: "Driver code signing"
   items:
   - name: "Requirements"

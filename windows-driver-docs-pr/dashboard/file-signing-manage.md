@@ -11,7 +11,7 @@ This article shows you how to create a new UEFI or LSA submission for file signi
 
 ## Prerequisites
 
-* Register for the Hardware Developer program. If you're not yet registered, follow the steps in [How to register for the Microsoft Windows Hardware Developer Program](register-for-the-hardware-program.md).
+* Register for the Hardware Developer program. If you're not yet registered, follow the steps in [How to register for the Microsoft Windows Hardware Developer Program](hardware-program-register.md).
 
 * Read and understand the [requirements for LSA plugins and UEFI firmware](file-signing-reqs.md)
 

@@ -13,7 +13,7 @@ This article describes how to use WST to create your submission package and subm
 
 ## Prerequisites
 
-* Make sure your [dashboard account](https://partner.microsoft.com/dashboard) is registered for the Windows Hardware Developer Program. For information on how to register, see [How to register for the Windows Hardware Developer Program](register-for-the-hardware-program.md).
+* Make sure your [dashboard account](https://partner.microsoft.com/dashboard) is registered for the Windows Hardware Developer Program. For information on how to register, see [How to register for the Windows Hardware Developer Program](hardware-program-register.md).
 
 * Download the[Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/). Be sure to test your driver or drivers with the appropriate certification kit on each operating system that you want certification for. You'll need the WLK test results (.CPK file) for your driver that you want to submit for certification.
 

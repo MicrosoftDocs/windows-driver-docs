@@ -17,7 +17,7 @@ Your Hardware Dev Center dashboard account must have at least one extended valid
 
 ## Step 2: Register for the Hardware Developer Program
 
-Now that you have your EV certificate ready, you can now register for the Hardware Developer Program. To register, follow the steps in [How to register for the Microsoft Windows Hardware Developer Program](register-for-the-hardware-program.md).
+Now that you have your EV certificate ready, you can now register for the Hardware Developer Program. To register, follow the steps in [How to register for the Microsoft Windows Hardware Developer Program](hardware-program-register.md).
 
 ## Step 3: Test your hardware and drivers
 
@@ -61,8 +61,8 @@ The identification numbers used in the URL, and their locations are as follows:
   | Component | Description |
   | ---       | ---         |
   |SellerID   | The identification number of your partner account. This can be found on the account management page, under **Account settings**. |
-  |PrivateProductID | The identification number generated with each product creation. Located on the driver details page for your product. See [Dashboard ID definitions](./id-definitions.md) for more information. |
-  |SubmissionID | The idenfication number given to each submission and submission update. Located on the driver details page for your product. See [Dashboard ID definitions](./id-definitions.md) for more information. |
+  |PrivateProductID | The identification number generated with each product creation. Located on the driver details page for your product. See [Dashboard ID definitions](./hardware-submission-ids.md) for more information. |
+  |SubmissionID | The idenfication number given to each submission and submission update. Located on the driver details page for your product. See [Dashboard ID definitions](./hardware-submission-ids.md) for more information. |
   
 To create a sharable link, replace **SellerID**, **PrivateProductID**, and **SubmissionID** in the example URL above with the appropriate identification numbers.
 

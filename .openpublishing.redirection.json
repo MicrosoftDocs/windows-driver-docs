@@ -352,7 +352,7 @@
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/create-and-manage-your-profile.md",
-            "redirect_URL": "/windows-hardware/drivers/dashboard/register-for-the-hardware-program",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-program-register",
             "redirect_document_id": false
         },
         {
@@ -8687,7 +8687,7 @@
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/adding-or-removing-users.md",
-            "redirect_URL": "/windows-driver-docs-pr/dashboard/users-manage",
+            "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-dashboard-users-manage",
             "redirect_document_id": false
         },
         {
@@ -8729,7 +8729,18 @@
             "source_path": "windows-driver-docs-pr/dashboard/manage-your-hardware-submissions.md",
             "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-manage",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "create-a-new-hardware-logo-submission.md",
+            "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-wlk",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "id-definitions.md",
+            "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-ids",
+            "redirect_document_id": false
         }
+        
 
         
 
