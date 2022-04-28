@@ -10,7 +10,7 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 04/28/2022
 ---
 
 # FLT_PARAMETERS for IRP_MJ_LOCK_CONTROL union
@@ -65,8 +65,8 @@ IRP_MJ_LOCK_CONTROL can be an IRP-based I/O operation or a fast I/O operation.
 
 ## Requirements
 
-|   |   |
-| - | - |
+| Requirement | Description |
+| ----------- | ----------- |
 | Header| *fltkernel.h* (include *fltkernel.h*) |
 
 ## See also
