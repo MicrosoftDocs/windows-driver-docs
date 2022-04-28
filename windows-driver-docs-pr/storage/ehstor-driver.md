@@ -4,7 +4,7 @@ description: Learn more about ehstorclass.sys
 keywords:
 - Enhanced storage class driver, WDK
 - ehstorclass.sys, WDK
-ms.date: 04/21/2022
+ms.date: 04/28/2022
 ---
 
 # Enhanced Storage class driver
@@ -13,6 +13,6 @@ The Enhanced Storage class driver (*ehstorclass.sys*) is a system-supplied lower
 
 One of *ehstorclass*'s Enhanced Storage capabilities is the ability to manage device-level security. Clients can use this functionality to enable and manage storage device built-in encryption and access control as defined by the TCG Opal standard.
 
-A client sends IOCTLs defined in [ehstorioctl.h](/windows-hardware/drivers/ddi/ehstorioctl) to the *ehstorclass* driver for handling. Each enhanced storage function driver (that handles a silo) has its own specific set of IOCTLs. For the built-in security function, the IOCTLs are defined in [*ehstorbandmgmt.h*](/windows-hardware/drivers/ddi/ehstorbandmgmt/).
+A client sends IOCTLs defined in [*ehstorioctl.h*](/windows-hardware/drivers/ddi/ehstorioctl) to the *ehstorclass* driver for handling. Each enhanced storage function driver (that handles a silo) has its own specific set of IOCTLs. For the built-in security function, the IOCTLs are defined in [*ehstorbandmgmt.h*](/windows-hardware/drivers/ddi/ehstorbandmgmt/).
 
 See [Enhanced Storage](/previous-versions/windows/desktop/enstor/enhanced-storage-portal) for more information. See [Encrypted Hard Drive](/windows/security/information-protection/encrypted-hard-drive) for an overview of how enhanced storage security feature is integrated in Windows.
