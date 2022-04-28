@@ -66,7 +66,7 @@ In the Configuring mode, the tool does not display any window. The enabling or d
 
 ### Known issues with USBLPM
 
-Before you test selective suspend for a SuperSpeed hub, you should perform the following steps to disable selective suspend.
+Before you test USBLPM for a SuperSpeed hub, you should perform the following steps to disable selective suspend.
 
 1. In Device Manager, right-click on the **SuperSpeed hub** and select **Properties**.
 2. Click the **Power Management** tab.
