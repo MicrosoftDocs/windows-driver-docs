@@ -88,14 +88,6 @@ Your error message is one of the following:
 
 The failure is caused by an incorrect .cab file structure. The .CAB structure was created with driver files in the root folder of the .CAB file instead of having them in a subfolder. For instructions on how to create a proper .CAB file for your driver signing submissions, see [Attestation sign Windows 10+ drivers](code-signing-attestation.md).
 
-### Package is corrupt or missing information error
-
-Your error message is:
-
-**It looks like your package is corrupt or missing important information. Ensure you are using the latest version of the kit, regenerate your package, and try again. If you continue to experience the issue, contact Support.**
-
-If you continue to experience issues with your package submission, [contact support](support-contact.md).
-
 ### Zip64 error
 
 Your error message is:

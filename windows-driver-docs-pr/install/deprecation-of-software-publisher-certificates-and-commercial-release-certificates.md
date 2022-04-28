@@ -19,7 +19,7 @@ For policy requirements, see [Windows 10 Kernel Mode Code Signing Requirements](
 
 Existing [cross-signed root certificates](cross-certificates-for-kernel-mode-code-signing.md) with kernel mode code signing capabilities will continue working until expiration. All software publisher certificates, commercial release certificates, and commercial test certificates that chain back to these root certificates also become invalid on the same schedule.
 
-To get your driver signed, first [Register for the Windows Hardware Dev Center program](../dashboard/register-for-the-hardware-program.md).
+To get your driver signed, first [Register for the Windows Hardware Dev Center program](../dashboard/hardware-program-register.md).
 
 ## Frequently asked questions
 
@@ -137,4 +137,4 @@ If you have challenges signing your driver with WHCP, please report the specific
 
 ## Related information
 
-* [Register for the Hardware Program](../dashboard/register-for-the-hardware-program.md)
+* [Register for the Hardware Program](../dashboard/hardware-program-register.md)

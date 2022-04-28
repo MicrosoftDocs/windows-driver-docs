@@ -23,7 +23,7 @@ For info about signing and dashboard submission, see [Get drivers signed by Micr
 ### <a href="" id="kernel-mode-code-signing-requirements-for-public-release-of-a-driver"></a> Kernel-Mode Code Signing Requirements for Public Release of a Driver
 
 > [!NOTE]
-> Starting with Windows 10, version 1607, Windows will not load any new kernel mode drivers which are not signed by the Microsoft through the [Hardware Dev Center](../dashboard/register-for-the-hardware-program.md).  Valid signatures can be obtained by either [Hardware Certification](../dashboard/hardware-certification-submissions.md) or [Attestation](../dashboard/attestation-signing-a-kernel-driver-for-public-release.md). 
+> Starting with Windows 10, version 1607, Windows will not load any new kernel mode drivers which are not signed by the Microsoft through the [Hardware Dev Center](../dashboard/hardware-program-register.md).  Valid signatures can be obtained by either [Hardware Certification](../dashboard/hardware-certification-submissions.md) or [Attestation](../dashboard/attestation-signing-a-kernel-driver-for-public-release.md). 
 
 
 <a href="" id="--------64-bit-versions-of-windows-starting-with-"></a> **64-bit versions of Windows starting with Windows Vista**  
