@@ -134,19 +134,19 @@
       items:
       - name: "Currently Available BTP Tests"
         href: testing-BTP-Tests.md
-      - name: "Testing Bluetooth Pairing"
+      - name: "Pairing"
         href: testing-BTP-tests-pairing.md
-      - name: "Testing Bluetooth HID"
+      - name: "HID"
         href: testing-BTP-tests-hid.md
-      - name: "Testing Bluetooth Audio"
+      - name: "Audio"
         href: testing-BTP-tests-audio.md
-      - name: "Testing Bluetooth Audio and HID"
+      - name: "Audio + HID"
         href: testing-BTP-tests-audio-hid.md
-      - name: "Testing Bluetooth and Wi-Fi"
+      - name: "Bluetooth + Wi-Fi"
         href: testing-BTP-tests-wifi.md
-      - name: "Testing Bluetooth Battery"
+      - name: "Battery"
         href: testing-BTP-tests-battery.md
-      - name: "Testing Bluetooth Power States"
+      - name: "Power States"
         href: testing-BTP-tests-power-state-hid.md
     - name: "BTP Diagnostic Tools"
       items:

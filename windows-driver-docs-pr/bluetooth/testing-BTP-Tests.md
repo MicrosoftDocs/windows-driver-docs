@@ -5,7 +5,7 @@ ms.date: 2/14/2020
 
 ---
 
-# Currently supported BTP tests
+# Currently Available BTP Tests
 
 These are the currently supported tests. Additional tests are planned and under development by both Microsoft and partners. If you need additional test functionality please contact BTPSupport@microsoft.com so we can collaborate.
 
