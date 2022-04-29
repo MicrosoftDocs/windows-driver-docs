@@ -108,7 +108,7 @@
         href: testing-BTP-setup-software.md
       - name: "BTP Package Setup"
         href: testing-BTP-setup-package.md
-      name: "Hardware"
+    - name: "Hardware"
       items:
       - name: "Supported Hardware"
         href: testing-BTP-hw.md
