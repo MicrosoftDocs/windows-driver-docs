@@ -16,7 +16,7 @@ ms.date: 10/17/2018
 # DEVPKEY_Device_CompatibleIds
 
 
-The DEVPKEY_DEVICE_CompatibleIds device property represents the list of compatible identifiers for a device instance.
+The DEVPKEY_DEVICE_CompatibleIds device property represents the list of [compatible identifiers](./compatible-ids.md) for a device instance.
 
 <table>
 <colgroup>
