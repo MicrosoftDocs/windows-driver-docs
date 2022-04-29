@@ -7,7 +7,7 @@ ms.date: 2/14/2020
 
 # Currently supported BTP tests
 
-These are the currently supported tests. Additional tests are planned and under development. Updates will be listed here as they become available.
+These are the currently supported tests. Additional tests are planned and under development by both Microsoft and partners. If you need additional test functionality please contact BTPSupport@microsoft.com so we can collaborate.
 
 - [Pairing Tests](testing-BTP-tests-pairing.md)
 - [HID Tests](testing-BTP-tests-hid.md)

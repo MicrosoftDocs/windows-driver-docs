@@ -6,20 +6,19 @@ ms.date: 01/06/2022
 
 # The BTP Software Package
 
-The BTP software package contains everything that needs to be installed on your test machine to test the interoperability of Bluetooth enabled devices with the Windows Bluetooth stack. The included documentation provides information about how to configure the hardware and suggests topologies for the best test coverage as well as the details for how to run the tests and collect logs.
+The BTP software package contains several tools to be used for testing Bluetooth scenarios.
 
 ## Download the BTP Software Package
 
-Click the following button to download the latest version. 
-> The installer should be run on the machine that will be executing the tests. After installation, do not copy, move or delete files. If you have a problem with your installation, use Windows "Add or Remove Programs" to completely uninstall BTP. Then do a clean install with the msi.
+The Bluetooth Test Platform (BTP) software package contains tools for testing the interoperability of Bluetooth enabled peripherals and systems with the Windows Bluetooth stack. The included documentation provides a brief overview of the ways to configure the hardware and suggests topologies for best test coverage. Procedural information about how to run the tests and collect trace events from the Bluetooth Windows stack are included. Click the following button to download the latest version.
 
-### [Download the current release of BTP](https://download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.11.1.msi)
+> [!div class="nextstepaction"]
+> [Download the current release of BTP](https://download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.11.1.msi)
 
 ## Version Updates
 
 | Version | Changes |
 | --- | --- |
-| 1.12.2 | - Added support for the BM62 radio.</br>- Added Wi-Fi Co-existence tests
 | 1.11.1 | - Fixed crash when running standby HID power tests without an installed virtual power button.</br> - Added explicit firmware version checks for Bluefruit Feather.</br> - Several other fixes and improvements to test reliability. |
 | 1.10.1 | - Added power state HID tests.</br> - Several other fixes and improvements to test reliability. |
 | 1.9.0 | - Improved support for BTP devices using custom DLL plugins.</br> - Fixed an issue affecting the audio mute/unmute tests in certain Windows builds.</br> - Several other fixes and improvements to test reliability. |
@@ -49,7 +48,7 @@ Click the following button to download the latest version.
 | RunWiFiAudioHidScenarioTests | - Provided as a CMD script and a PowerShell script.</br>- Runs Wi-Fi, audio, and HID scenario tests.</br>- Supports custom arguments if provided</br> | RunWiFiAudioHidScenarioTests.bat</br>RunWiFiAudioHidScenarioTests.ps1 |
 | RunPowerStateTests | - Provided as a CMD script and a PowerShell script.</br>- Runs the power state tests.</br>- Supports custom arguments if provided</br> | RunPowerStateTests.bat</br>RunPowerStateTests.ps1 |
 | Bluefruit Feather Firmware | - Compiled binaries for Bluefruit Feather device. | BtpBluefruit_nRF52840.ino.zip |
-| ESP32 Firmware | - Compiled binaries for ESP32wifi device. | WiFi-ESP32.ino.bin</br>WiFi-ESP32.ino.partitions.bin |
+| ESP32 Firmware | - Compiled binaries for ESP32wifi device. | WiFi-ESP32.ino</br>WiFi-ESP32.ino.partitions |
 
 ### Architecture Dependent Binaries
 

@@ -98,55 +98,49 @@
     href: testing-Bluetooth-main.md
   - name: "Bluetooth Test Platform (BTP)"
     items:
-    - name: "BTP Overview"
+    - name: "Bluetooth Test Platform Overview"
       href: testing-BTP-Overview.md
-    - name: "BTP Setup"
-      items:
-      - name: "BTP Hardware Setup"
-        href: testing-BTP-setup-hardware.md
-      - name: "BTP Software Setup"
-        href: testing-BTP-setup-software.md
-      - name: "BTP Package Setup"
-        href: testing-BTP-setup-package.md
+    - name: "Setting Up BTP"
+      href: testing-BTP-setup.md
+    - name: "BTP Software"
+      href: testing-BTP-software-package.md
     - name: "BTP Hardware"
       items:
-      - name: "BTP Test Execution Hardware"
+      - name: "Supported Hardware"
         href: testing-BTP-hw.md
+      - name: "RN42"
+        href: testing-BTP-hw-rn42.md
       - name: "Bluefruit Feather"
         href: testing-BTP-hw-bluefruit-Feather.md
       - name: "Bluefruit Friend"
         href: testing-BTP-hw-bluefruit-Friend.md
-      - name: "BM62"
-        href: testing-BTP-bm62.md
-      - name: "BM-64-EVB board"
-        href: testing-BTP-hw-bm64.md
-      - name: "Human Device Adapter"
-        href: testing-BTP-human-device-adapter.md
-      - name: "Model 2433 ESP32"
-        href: testing-BTP-hw-esp32.md
-      - name: "Traduci Power Adapter"
-        href: testing-BTP-hw-power-adapter.md
-      - name: "RN42"
-        href: testing-BTP-hw-rn42.md
       - name: "RN52"
         href: testing-BTP-hw-rn52.md
+      - name: "BM-64-EVB board"
+        href: testing-BTP-hw-bm64.md
+      - name: "Model 2433 ESP32"
+        href: testing-BTP-hw-esp32.md
+      - name: "Human Device Adapter"
+        href: testing-BTP-human-device-adapter.md
+      - name: "Traduci Power Adapter"
+        href: testing-BTP-hw-power-adapter.md
     - name: "BTP Tests"
       items:
       - name: "Currently Available BTP Tests"
         href: testing-BTP-Tests.md
-      - name: "Pairing"
+      - name: "Testing Bluetooth Pairing"
         href: testing-BTP-tests-pairing.md
-      - name: "HID"
+      - name: "Testing Bluetooth HID"
         href: testing-BTP-tests-hid.md
-      - name: "Audio"
+      - name: "Testing Bluetooth Audio"
         href: testing-BTP-tests-audio.md
-      - name: "Audio + HID"
+      - name: "Testing Bluetooth Audio and HID"
         href: testing-BTP-tests-audio-hid.md
-      - name: "Bluetooth + Wi-Fi"
+      - name: "Testing Bluetooth and Wi-Fi"
         href: testing-BTP-tests-wifi.md
-      - name: "Battery"
+      - name: "Testing Bluetooth Battery"
         href: testing-BTP-tests-battery.md
-      - name: "Power States"
+      - name: "Testing Bluetooth Power States"
         href: testing-BTP-tests-power-state-hid.md
     - name: "BTP Diagnostic Tools"
       items:

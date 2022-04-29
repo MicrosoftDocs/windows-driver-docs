@@ -4,7 +4,7 @@ description: Bluetooth Test Platform (BTP) Human Device Adapter (HDA) Setup and 
 ms.date: 11/13/2020
 ---
 
-# Human Device Adapter
+# Bluetooth Test Platform - Human Device Adapter
 
 The Human Device Adapter (HDA) is a do-it-yourself way to manually interact with [Bluetooth Test Platform (BTP)](testing-BTP-Overview.md), allowing use of devices with BTP that have not yet been automated. For example, the HDA would make it possible to interact with a purchased headset that otherwise has no clear way to connect to BTP. The HDA enables manual user testing between a Windows Device and your prototyping hardware without the use of external hardware, such as Traduci. As such, all that is required to set up is a PC that supports Bluetooth and your own test device.  
 
