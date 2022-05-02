@@ -10,7 +10,7 @@ keywords:
 - software tracing WDK , formatting messages
 - tracing WDK , DTrace
 - trace message format files WDK
-ms.date: 11/04/2019
+ms.date: 05/02/2022
 ---
 
 # DTrace ETW
@@ -132,7 +132,7 @@ CPU     ID                    FUNCTION:NAME
 
 This example script uses Microsoft-Windows-Kernel-Memory ETW provider to dump NUMA node memory. Page size can be converted to size in KB by multiplying by 4. For general information on NUMA see [NUMA Support](/windows/win32/procthread/numa-support).
 
-This code is also located at <https://github.com/microsoft/DTrace-on-Windows/blob/master/samples/windows/etw/numamemstats.d>
+This code is also located at <https://github.com/microsoft/DTrace-on-Windows/blob/windows/samples/windows/etw/numamemstats.d>
 
 ```dtrace
 typedef struct KernelMemInfoEvent
