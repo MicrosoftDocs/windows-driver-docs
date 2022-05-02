@@ -10,7 +10,7 @@ keywords:
 - software tracing WDK , formatting messages
 - tracing WDK , DTrace
 - trace message format files WDK
-ms.date: 11/04/2019
+ms.date: 05/02/2022
 ---
 
 # DTrace Code Samples
@@ -28,7 +28,7 @@ For detailed information about DTrace see the [OpenDTrace Speciﬁcation version
 
 Additional D scripts applicable for Windows scenarios are available in the samples directory of the DTrace source code.
 
-[https://github.com/microsoft/DTrace-on-Windows/tree/master/samples/windows](https://github.com/microsoft/DTrace-on-Windows/tree/master/samples/windows)
+[https://github.com/microsoft/DTrace-on-Windows/tree/windows/samples/windows](https://github.com/microsoft/DTrace-on-Windows/tree/windows/samples/windows)
 
 A set of useful opentrace toolkit scripts is available at [https://github.com/opendtrace/toolkit](https://github.com/opendtrace/toolkit).
 
