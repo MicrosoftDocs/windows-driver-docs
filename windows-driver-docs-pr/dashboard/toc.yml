@@ -63,11 +63,11 @@
     items:
     - name: "Create Publisher Driver Metadata"
       href: create-publisher-metadata.md
- - name: "Driver flighting"
-   items:
-   - name: "Overview of driver flighting"
+- name: "Driver flighting"
+  items:
+  - name: "Overview of driver flighting"
     href: driver-flighting.md
-   - name: "Other Policies"
+    - name: "Other Policies"
     items:
     - name: "Overview of other policies"
       href: other-policies.md
