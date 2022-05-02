@@ -31,7 +31,7 @@
   - name: "File sign an LSA plugin or UEFI firmware binary"
     href: file-signing-manage.md
 - name: "Shipping labels"
-  items: 
+  items:  
   - name: "Manage driver distribution with shipping labels"
     href: manage-driver-distribution-by-submission.md
   - name: "Publishing restrictions"
