@@ -50,7 +50,7 @@ Total crashes in communication and collaboration applications = Count(crashes in
 
 Total communication and collaboration applications runtime = Sum(runtime of communication and collaboration applications, for each machine that has the driver)
 
-Runtime in years = total runtime of communication and collaboration applications in seconds ∗ 60 (minute) ∗ 60 (hour) ∗ 24 (day) ∗ 365 (year)
+Runtime in years = total runtime of communication and collaboration applications in seconds  / 60 (minute) ∗ 60 (hour) ∗ 24 (day) ∗ 365 (year)
 
 ### Final Calculation
 
