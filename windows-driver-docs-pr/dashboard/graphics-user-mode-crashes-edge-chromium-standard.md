@@ -30,10 +30,6 @@ Total Edge Chromium crashes = Count(Edge Chromium crashes on machines that have 
 
 Total Edge Chromium runtime = Sum(Edge Chromium runtime for each machine that has the driver)
 
-Runtime in years = total Edge Chromium runtime in seconds ∗ 60 (minute) ∗ 60 (hour) ∗ 24 (day) ∗ 365 (year)
-
-For example, for Edge Chromium measure, it would be:
-
 Runtime in years = total runtime of Edge Chromium in seconds /( 60 (minute) * 60 (hour) * 24 (day) * 365 (year))
 
 

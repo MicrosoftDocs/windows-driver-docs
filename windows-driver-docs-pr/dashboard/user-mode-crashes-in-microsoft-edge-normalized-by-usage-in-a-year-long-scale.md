@@ -29,7 +29,7 @@ This measure is normalized, by usage, in a year-long scale.
 1. The measure aggregates telemetry from a 7-day sliding window into a **ratio of crashes in Microsoft Edge, caused by the graphics drivers, over total runtime in years**
 2. *Total Microsoft Edge crashes = count(Microsoft Edge crashes on machines that have the driver)*
 3. *Total Microsoft Edge runtime = sum(Microsoft Edge runtime for each machine that has the driver)*
-4. *Runtime in years = total Microsoft Edge runtime \* 60 (minute) \* 60 (hour) \* 24 (day) \* 365 (year)*
+4. *Runtime in years = total Microsoft Edge runtime in seconds / (60 (minute) * 60 (hour) * 24 (day) * 365 (year))
 
 ### Final calculation
 
