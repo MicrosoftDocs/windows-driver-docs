@@ -18,12 +18,12 @@ Starting with Windows Vista, the kernel-mode code signing policy controls wheth
 
 Virtual drivers have the same requirements as actual hardware drivers. In other words, they must comply with the requirements for the OS version for which they are targeted.
 
-For info about signing and dashboard submission, see [Get drivers signed by Microsoft for multiple Windows versions](../dashboard/get-drivers-signed-by-microsoft-for-multiple-windows-versions.md).
+For info about signing and dashboard submission, see [Get started with dashboard submissions](../dashboard/get-started-dashboard-submissions.md).
 
 ### <a href="" id="kernel-mode-code-signing-requirements-for-public-release-of-a-driver"></a> Kernel-Mode Code Signing Requirements for Public Release of a Driver
 
 > [!NOTE]
-> Starting with Windows 10, version 1607, Windows will not load any new kernel mode drivers which are not signed by the Microsoft through the [Hardware Dev Center](../dashboard/hardware-program-register.md).  Valid signatures can be obtained by either [Hardware Certification](../dashboard/hardware-certification-submissions.md) or [Attestation](../dashboard/attestation-signing-a-kernel-driver-for-public-release.md). 
+> Starting with Windows 10, version 1607, Windows will not load any new kernel mode drivers which are not signed by the Microsoft through the [Hardware Dev Center](../dashboard/hardware-program-register.md).  Valid signatures can be obtained by either [Hardware Certification](../dashboard/hardware-submission-create.md) or [Attestation](../dashboard/code-signing-attestation.md). 
 
 
 <a href="" id="--------64-bit-versions-of-windows-starting-with-"></a> **64-bit versions of Windows starting with Windows Vista**  

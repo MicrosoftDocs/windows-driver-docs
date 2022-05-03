@@ -8731,12 +8731,12 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "create-a-new-hardware-logo-submission.md",
+            "source_path": "windows-driver-docs-pr/dashboard/create-a-new-hardware-logo-submission.md",
             "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-wlk",
             "redirect_document_id": false
         },
         {
-            "source_path": "id-definitions.md",
+            "source_path": "windows-driver-docs-pr/dashboard/id-definitions.md",
             "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-ids",
             "redirect_document_id": false
         }
