@@ -57,7 +57,7 @@ This section describes how to submit and publish an INF package. See the highlig
 
 ### Submitting your packages to the Partner Center
 
-Create a new submission for each of the packages created above and upload them to the Hardware Dev Center.  Afterwards, create a shipping label for the ones you want share or publish. See [Create a new hardware submission](./create-a-new-hardware-submission.md) and [Manage driver distribution with shipping labels](./manage-driver-distribution-by-submission.md) for more information.
+Create a new submission for each of the packages created above and upload them to the Hardware Dev Center.  Afterwards, create a shipping label for the ones you want share or publish. See [Create a new hardware submission](./hardware-submission-create.md) and [Manage driver distribution with shipping labels](./manage-driver-distribution-by-submission.md) for more information.
 
 #### ExtensionID
 

@@ -70,7 +70,7 @@ The following C# code example demonstrates how to upload a package to Azure Blob
     To confirm the submission status, review the **commitStatus** value in the response body. This value should change from **CommitReceived** to **CommitComplete** if the request succeeds or to **CommitFailed** if there are errors in the request.
 
    >[!NOTE]
-   >The main Search page refreshes about every 10 minutes. To view all of your results as you create them, click **Driver List Page (all)**, at the top of the **Drivers** page of the Partner Center. Although the page takes some time to process and load if you have a lot of submissions, both successful and unsuccessful submissions should be listed when it does load. For more info, see [Find a hardware submission](./find-hardware-submission.md).
+   >The main Search page refreshes about every 10 minutes. To view all of your results as you create them, click **Driver List Page (all)**, at the top of the **Drivers** page of the Partner Center. Although the page takes some time to process and load if you have a lot of submissions, both successful and unsuccessful submissions should be listed when it does load. For more info, see [Find a hardware submission](./hardware-submission-manage.md#search-for-hardware-submissions).
 
 ## Code examples
 

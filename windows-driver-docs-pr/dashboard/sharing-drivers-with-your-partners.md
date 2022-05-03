@@ -8,7 +8,7 @@ ms.date: 04/20/2017
 # Share a driver with a partner
 
 
-To share a driver with one of your partners, [create a hardware submission](create-a-new-hardware-submission.md) and follow the steps below.
+To share a driver with one of your partners, [create a hardware submission](hardware-submission-create.md) and follow the steps below.
 
 **Note**  Shared drivers can only be shared by the organization that originally created it. An organization that receives a shared driver cannot share it again.
 

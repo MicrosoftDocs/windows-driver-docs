@@ -11,7 +11,7 @@ This article describes how to use the hardware dashboard during the Hardware sub
 
 ## Hardware submission page
 
-A hardware submission page contains information about a specific hardware submission, including status, packages, certification info, and shipping labels. For information about how to create a hardware submission, see [Create a new hardware submission](create-a-new-hardware-submission.md).
+A hardware submission page contains information about a specific hardware submission, including status, packages, certification info, and shipping labels. For information about how to create a hardware submission, see [Create a new hardware submission](hardware-submission-create.md).
 
 ![screenshot that shows a hardware submission page.](images/hardware-submission-page.png)
 
@@ -143,6 +143,6 @@ The status graphic displays the publish status for each shipping label. A green 
 
 ## In this section
 
-- [Create a new hardware submission](create-a-new-hardware-submission.md)
+- [Create a new hardware submission](hardware-submission-create.md)
 
-- [Manage hardware submissions](manage-your-hardware-submissions.md)
+- [Manage hardware submissions](hardware-submission-manage.md)

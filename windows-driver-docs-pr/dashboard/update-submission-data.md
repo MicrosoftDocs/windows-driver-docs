@@ -7,7 +7,7 @@ ms.date: 04/05/2018
 
 # Update submission data 
 
-Use this method in the Microsoft Hardware API to update details of a submission. Prior to using this method ensure you have created a submission. For details, see [create a new submission](create-a-new-hardware-submission.md).
+Use this method in the Microsoft Hardware API to update details of a submission. Prior to using this method ensure you have created a submission. For details, see [create a new submission](hardware-submission-create.md).
 
 
 ## Prerequisites

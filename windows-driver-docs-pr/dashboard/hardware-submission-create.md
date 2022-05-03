@@ -30,7 +30,7 @@ All hardware submissions to the dashboard will be processed within 5 business da
 
 1. Select **Submit new hardware**.
 
-    :::image type="content" source="./images/create-a-new-hardware-submission/hardware-list.png" alt-text="Screenshot of the the list of submitted hardware list.":::
+    :::image type="content" source="./images/hardware-submission-create/hardware-list.png" alt-text="Screenshot of the the list of submitted hardware list.":::
 
 1. In the **Packages and signing properties** section, enter a product name for your driver submission. This name can be used to search for and organize your driver submissions.
 
@@ -39,7 +39,7 @@ All hardware submissions to the dashboard will be processed within 5 business da
 
 1. Either drag or browse to the **.hlkx/.hckx** file that you want to submit. If you're submitting WLK hardware, you must submit a .CAB file. To learn how to create a WLK **.cab** file submission, see see [Create a WLK hardware submission package](hardware-submission-wlk.md).
 
-   :::image type="content" source="./images/create-a-new-hardware-submission/hardware-submit.png" alt-text="Screenshot that shows the new hardware submission form.":::
+   :::image type="content" source="./images/hardware-submission-create/hardware-submit.png" alt-text="Screenshot that shows the new hardware submission form.":::
 
 1. If you wish to test a driver prior to release, select either **Perform test-signing for Win10 and above** or **Perform test-signing for OS below Win10 (legacy)**. Test-signed drivers are similar to drivers signed for public release, but don't require HLK testing. They're also not distributed through Windows Update, but can be downloaded from the hardware submission site. They can be installed on test machines only. For more information about test-signing driver packages, see [WHQL Test Signature Program](../install/whql-test-signature-program.md) and [How to test-sign a driver package](../install/how-to-test-sign-a-driver-package.md).
 
@@ -50,7 +50,7 @@ All hardware submissions to the dashboard will be processed within 5 business da
     >[!NOTE]
     > If you're signing a driver package for a single architecture, only include logs for the intended architecture. For example, to sign for x64 only, submit only the x64 logs.
 
-    :::image type="content" source="./images/create-a-new-hardware-submission/hardware-signatures.png" alt-text="Screenshot that shows possible signatures for a driver submission, and the finalize button.":::
+    :::image type="content" source="./images/hardware-submission-create/hardware-signatures.png" alt-text="Screenshot that shows possible signatures for a driver submission, and the finalize button.":::
 
 1. In the **Certification** section, complete the following information:
 
@@ -62,7 +62,7 @@ All hardware submissions to the dashboard will be processed within 5 business da
    | Announcement date | Enter the date when you want your product included on the Windows Server Catalog, the Windows Certified Product List, and the Universal Driver List. |
    | Marketing names | Enter the marketing name(s) for your submission. Marketing names allow you to provide aliases for your product. You can provide as many names as you want.|
 
-   :::image type="content" source="images/create-a-new-hardware-submission/hardware-certification.png" alt-text="Screenshot that shows the certification section.":::
+   :::image type="content" source="images/hardware-submission-create/hardware-certification.png" alt-text="Screenshot that shows the certification section.":::
 
     >[!IMPORTANT]
     >Make sure to check the announcement date that's been set. Once the announcement date has passed, you won't be able to add a new name.
@@ -73,7 +73,7 @@ All hardware submissions to the dashboard will be processed within 5 business da
 
 1. You can monitor the progress of your submission with the progress tracker at the top of the page. Once all steps show a green check, the submission is complete and your organization will receive a notification in the dashboard header.
 
-   :::image type="content" source="images/create-a-new-hardware-submission/hardware-progress-tracker.png" alt-text="Screenshot that shows the progress tracker.":::
+   :::image type="content" source="images/hardware-submission-create/hardware-progress-tracker.png" alt-text="Screenshot that shows the progress tracker.":::
 
 1. Review the results. If your submission failed, make any necessary changes and resubmit.
 

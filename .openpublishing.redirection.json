@@ -8717,7 +8717,7 @@
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/hardware-certification-submissions.md",
-            "redirect_URL": "/windows-driver-docs-pr/dashboard/get-started-dashboard-submissions",
+            "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-create",
             "redirect_document_id": false
         },
         {
