@@ -28,7 +28,7 @@ Now that your company is registered in the Hardware Developer program, you'll ne
 
 ## Step 4: Submit for certification and compatibility
 
-Once you've properly tested your drivers, you can now [create a new hardware submission](create-a-new-hardware-submission.md). 
+Once you've properly tested your drivers, you can now [create a new hardware submission](hardware-submission-create.md). 
 ## Step 5: Manage driver distribution
 
 If you have drivers that you want to distribute with Windows Update or share with another company, see [Manage driver distribution with shipping labels](manage-driver-distribution-by-submission.md), which covers common driver distribution tasks such as:
