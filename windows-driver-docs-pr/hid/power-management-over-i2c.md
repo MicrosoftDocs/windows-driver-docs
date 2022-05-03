@@ -26,7 +26,7 @@ Below is a short summary of how devices should behave during the connected stand
 | Rotation Lock | No | Must not process | D3 |
 | Generic Desktop Controls - Volume Up - Volume Down - Channel Down - Channel Up - Fast Forward - Track Forward - Track Back - Play - Pause - Record - Track Stop | No | Must process | D0 |
 
-For more information about connected standby please refer to the [Understanding Connected Standby](https://docs.microsoft.com/events/build-build2011/hw-456t) video.
+For more information about connected standby please refer to the [Understanding Connected Standby](/events/build-build2011/hw-456t) video.
 
 ### Supporting connected standby in HID I<sup>2</sup>C Devices
 
