@@ -65,7 +65,7 @@ landingContent:
     - linkListType: concept
       links:
           - text: Overview of driver flighting
-            url: driver-flighting.
+            url: driver-flighting.md
           - text: Overview of driver measures
             url: overview-of-microsoft-driver-measure-dictionary.md
 
