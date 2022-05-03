@@ -40,6 +40,15 @@ landingContent:
           - text: Create a device metadata experience
             url: create-a-device-metadata-experience.md
 
+  - title: Code and file signing
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Manage code signing certificates
+            url: code-signing-cert-manage.md
+          - text: File sign an LSA plugin or UEFI firmware binary
+            url: file-signing-manage.md
+
   - title: Driver distribution
     linkLists:
       - linkListType: concept
@@ -71,11 +80,3 @@ landingContent:
           - text: Manage product submissions
             url: manage-product-submissions.md
 
-  - title: Code and file signing
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Manage code signing certificates
-            url: code-signing-cert-manage.md
-          - text: File sign an LSA plugin or UEFI firmware binary
-            url: file-signing-manage.md
