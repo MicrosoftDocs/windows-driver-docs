@@ -7,13 +7,15 @@ ms.date: 04/25/2022
 
 # How to use the hardware dashboard
 
-This article describes how to use the hardware dashboard during the Hardware submission process. 
+This article describes how to use the hardware dashboard during the Hardware submission process.
 
 ## Hardware submission page
 
-A hardware submission page contains information about a specific hardware submission, including status, packages, certification info, and shipping labels. For information about how to create a hardware submission, see [Create a new hardware submission](hardware-submission-create.md).
+The hardware submission page contains information about a specific hardware submission, including status, packages, certification info, and shipping labels. For information about how to create a hardware submission, see [Create a new hardware submission](hardware-submission-create.md).
 
 ![screenshot that shows a hardware submission page.](images/hardware-submission-page.png)
+
+    :::image type="content" source="./images/code-signing-attestation/hardware-list.png" alt-text="Screenshot of the the list of submitted hardware.":::
 
 The left side of the page contains a list of the 10 most recently viewed submissions.
 
