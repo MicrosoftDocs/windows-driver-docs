@@ -18,20 +18,28 @@ metadata:
 
 landingContent: 
   # Card
-  - title: Hardware Submissions
+  - title: Get started with hardware dashboard
+    linkLists:
+      - linkListType:  get-started
+        links:
+          - text: Get started with the hardware submission process
+            url: get-started-dashboard-submissions.md
+          - text: Register for the Microsoft Windows Hardware Developer Program
+            url: hardware-program-register.md
+          - text: Manage dashboard users
+            url: hardware-dashboard-users-manage.md
+
+  - title: Hardware submissions
     linkLists:
       - linkListType: learn
         links:
           - text: Create a new driver submission
-            url: create-a-new-hardware-submission.md
+            url: hardware-submission-create.md
           - text: Manage your hardware submissions
-            url: manage-your-hardware-submissions.md
-          - text: Driver flighting
-            url: driver-flighting.md
+            url: hardware-submission-manage.md
           - text: Create a device metadata experience
             url: create-a-device-metadata-experience.md
 
-  
   - title: Driver distribution
     linkLists:
       - linkListType: concept
@@ -43,7 +51,14 @@ landingContent:
           - text: Working with extension INF files
             url: submit-dashboard-extension-inf-files.md
 
-
+  - title: Driver flighting
+    linkLists:
+    - linkListType: concept
+      links:
+          - text: Overview of driver flighting
+            url: driver-flighting.
+          - text: Overview of driver measures
+            url: overview-of-microsoft-driver-measure-dictionary.md
 
   - title:  Hardware dashboard API
     linkLists:
@@ -56,24 +71,11 @@ landingContent:
           - text: Manage product submissions
             url: manage-product-submissions.md
 
-
-  - title: Dashboard administration
+  - title: Code and file signing
     linkLists:
       - linkListType: overview
         links:
-          - text: Register for the hardware program
-            url: hardware-program-register.md
-          - text: Add or remove users
-            url: adding-or-removing-users.md
-          - text: Add a code signing certificate
+          - text: Manage code signing certificates
             url: code-signing-cert-manage.md
-
-
-  - title: Dashboard information
-    linkLists:
-      - linkListType: get-started
-        links:
-          - text: Getting started with the hardware dashboard
-            url: get-started-with-the-hardware-dashboard.md
-          - text: LSA and UEFI file signing
-            url: lsa-and-uefi-file-signing.md
+          - text: File sign an LSA plugin or UEFI firmware binary
+            url: file-signing-manage.md
