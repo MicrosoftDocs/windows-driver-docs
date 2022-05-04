@@ -14,7 +14,7 @@ The HDA allows you to test with a variety of peripherals. These could be off-the
 
 <br><br>
 ## BM64EVB, Bluefruit 52
-todo: add setup information
+These devices connect to the system under test (SUT) directly using a USB cable and not through the Traduci. Refer to the specific peripheral page for further hardware setup.
 
 <br><br>
 ## RN42, RN52, Bluefruit, BM62
