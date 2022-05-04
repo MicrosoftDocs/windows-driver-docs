@@ -282,7 +282,7 @@
       href: service-number.md
     - name: "Trusted certificates"
       href: trusted-certificates.md
-- name: "hardware dashboard API"
+- name: "Hardware dashboard API"
   items: 
   - name: "Getting started with the hardware dashboard API"
     href: dashboard-api.md
