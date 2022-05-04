@@ -132,4 +132,4 @@ Multiple attributes behave as if they are in an AND operator combination. For ex
 
 ## Next Steps
 
-[View hardware submission details](hardware-submission-details.md)
+[View hardware submission details](hardware-submission-manage.md)
