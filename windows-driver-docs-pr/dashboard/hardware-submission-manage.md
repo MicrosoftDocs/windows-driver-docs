@@ -75,7 +75,7 @@ You can also view and download signed files, the initial package, or the certifi
 
 ## View and edit certification information
 
-1. Go to your [hardware submission details page](#view-your-hardware-submission).
+1. Go to your [hardware submission details page](#view-your-hardware-submission-details).
 
 2. Move through the page to the **Certification** section.
 
