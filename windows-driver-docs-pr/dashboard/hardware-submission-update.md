@@ -55,7 +55,7 @@ DUA submissions can only be created off of an initial submission. DUA submission
 
 1. Move down through the page, and then select **Download DUA shell** to download the DUA shell package.
 
-    :::image type="content" source="./images/hardware-submission-manage/hardware-download-dua.png" alt-text="Screenshot that shows the DUA download button for a driver submission":::
+    :::image type="content" source="./images/hardware-submission-update/hardware-download-dua.png" alt-text="Screenshot that shows the DUA download button for a driver submission":::
 
 1. Create a DUA submission from a DUA Shell. For information on how to create a DUA submission, see see [Create a driver only update package](/windows-hardware/test/hlk/user/create-a-driver-only-update-package).
 
@@ -71,7 +71,7 @@ You can also view and download signed files, the initial package, or the certifi
 
 2. Choose which files you want to download.
 
-    :::image type="content" source="./images/hardware-submission-manage/hardware-download-packages.png" alt-text="Screenshot that shows file download options for a driver submission":::
+    :::image type="content" source="./images/hardware-submission-update/hardware-download-packages.png" alt-text="Screenshot that shows file download options for a driver submission":::
 
 ## View and edit certification information
 
@@ -81,7 +81,7 @@ You can also view and download signed files, the initial package, or the certifi
 
 3. Select **See more info**.
 
-    :::image type="content" source="./images/hardware-submission-manage/hardware-certification-view.png" alt-text="Screenshot that shows the certification section for a driver submission":::
+    :::image type="content" source="./images/hardware-submission-update/hardware-certification-view.png" alt-text="Screenshot that shows the certification section for a driver submission":::
 
 4. You can now review the certification information that you provided, which includes the following information:
 
