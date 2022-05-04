@@ -22,14 +22,17 @@ The BM62 is a dual-mode Bluetooth v5.0 radio designed for use in headsets, speak
 - [Audio tests](testing-BTP-tests-audio.md)
 - [Audio & HID tests](testing-BTP-tests-audio-hid.md) (as an audio device)
 - [Wi-Fi coexistence tests](testing-BTP-tests-wifi.md) (as an audio device)
-> This radio supports audio streaming but has many known audio quality problems. Do not use it for audio quality validation.
+
 
 ## Required Hardware
 
-The PMOD + Audio header BM62 device can be purchased via [MCCI](https://store.mcci.com/collections/frontpage/products/model-2435-bm62-audio-capable-radio-sled).
+The Pmod + Audio header BM62 device can be purchased via [MCCI](https://store.mcci.com/collections/frontpage/products/model-2435-bm62-audio-capable-radio-sled).
 
-> The BM62 device can <b>only</b> be plugged into the Traduci board 12-pin port labeled 'JA'.
+### BM62 Device on a BTP-compatible sled
 :::image type="content" source="images/BM62_Traduci.png" alt-text="Photo of the BM62 attached to the Traduci.":::
+
+> [!NOTE]
+> The BM62 device can **only** be plugged into the Traduci board 12-pin port labeled 'JA'.
 
 ## Features
 
@@ -39,7 +42,3 @@ The PMOD + Audio header BM62 device can be purchased via [MCCI](https://store.mc
 - Supports Bluetooth dual-mode (BDR/EDR/BLE)
 - Supports AAC and SBC codecs
 - Heavily featured, surface mount module
-
-## Known test failures
-
- With version 1.7.2 both standalone audio tests will fail as will some audio-HID tests due to backend architecture changes. If this breaks you, please file a bug or email btpsupport@microsoft.com

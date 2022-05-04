@@ -14,5 +14,5 @@ These are the currently supported tests. Additional tests are planned and under 
 - [Audio Tests](testing-BTP-tests-audio.md)
 - [Audio and HID Scenario Tests](testing-BTP-tests-audio-hid.md)
 - [Battery Tests](testing-BTP-tests-battery.md)
-- [Wi-Fi and Bluetooth Audio Coexistence Tests](testing-BTP-tests-wifi.md)
+- [Wi-Fi and Bluetooth Coexistence Tests](testing-BTP-tests-wifi.md)
 - [Power State HID tests](testing-BTP-tests-power-state-hid.md)

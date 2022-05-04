@@ -114,7 +114,7 @@
         href: testing-BTP-hw.md
       - name: "BM62"
         href: testing-BTP-hw-bm62.md
-      - name: "BM-64-EVB board"
+      - name: "BM64"
         href: testing-BTP-hw-bm64.md
       - name: "RN42"
         href: testing-BTP-hw-rn42.md
