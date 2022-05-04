@@ -10,10 +10,11 @@
   items:
   - name: "Create a new hardware submission"
     href: hardware-submission-create.md
-  - name: Manage hardware submissions
-    href: hardware-submission-manage.md
   - name: View hardware submissions
     href: hardware-submissions-view.md
+  - name: Update a hardware submission
+    href: hardware-submission-update.md
+
   - name: Create a WLK hardware submission package
     href: hardware-submission-wlk.md
   - name: "Submission IDs"

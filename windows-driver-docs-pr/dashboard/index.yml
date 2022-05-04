@@ -35,8 +35,8 @@ landingContent:
         links:
           - text: Create a new driver submission
             url: hardware-submission-create.md
-          - text: Manage your hardware submissions
-            url: hardware-submission-manage.md
+          - text: Update your hardware submission
+            url: hardware-submission-update.md
           - text: View your hardware submissions
             url: hardware-submissions-view.md
           - text: Create a device metadata experience

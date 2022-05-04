@@ -132,4 +132,5 @@ Multiple attributes behave as if they are in an AND operator combination. For ex
 
 ## Next Steps
 
-[View hardware submission details](hardware-submission-manage.md)
+> [!div class="nextstepaction"]
+> [Update a hardware submission](hardware-submission-update.md)

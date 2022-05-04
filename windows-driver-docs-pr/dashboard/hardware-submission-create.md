@@ -114,7 +114,10 @@ Use [HLK studio](/windows-hardware/test/hlk/user/install-standalone-hlk-studio) 
 ## Next Steps
 
 > [!div class="nextstepaction"]
-> [Manage hardware submission](hardware-submission-manage.md)
+> [View hardware submissions](hardware-submissions-view.md)
+
+> [!div class="nextstepaction"]
+> [Update a hardware submission](hardware-submission-update.md)
 
 > [!div class="nextstepaction"]
 > [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started.md)

@@ -1,13 +1,13 @@
 ---
-title: Manage hardware submissions
-description: Learn how to manage view your hardware submission details, including status, packages, certification info, and shipping labels.
+title: Update a hardware submission
+description: Learn how to update hardware submission details, including status, packages, certification info, and shipping labels.
 ms.topic: article
 ms.date: 04/24/2022
 ---
 
-# Manage hardware submissions
+# Update a hardware submission
 
-Using the hardware dashboard, can view and manage your hardware submission details, including status, packages, certification info, and shipping labels.
+Using the hardware dashboard, can view and update hardware submission details, including status, packages, certification info, and shipping labels.
 
 ## Prerequisites
 
@@ -23,15 +23,15 @@ To view your hardware submission details:
 
 3. In the **Private Product ID** column, select your driver's ID.
 
-    :::image type="content" source="./images/hardware-submission-manage/hardware-select.png" alt-text="Screenshot that shows a selected hardware driver submission":::
+    :::image type="content" source="./images/hardware-submission-update/hardware-select.png" alt-text="Screenshot that shows a selected hardware driver submission":::
 
 4. You can monitor the progress of your submission with the progress tracker. Once all steps show a green check, the submission is complete and your company will receive a notification.
 
-    :::image type="content" source="./images/hardware-submission-manage/hardware-details.png" alt-text="Screenshot that shows a hardware submission page":::
+    :::image type="content" source="./images/hardware-submission-update/hardware-details.png" alt-text="Screenshot that shows a hardware submission page":::
 
 ## Update your hardware submission
 
-There are two different options for updating your drivers:
+There are two different options for updating your hardware submission:
 
 - **Driver Update Acceptable (DUA) process (not available for drivers signed with attestation).**
 After you submit your product for the Windows Hardware Compatibility Program for Windows 10 (or the certification program for previous Windows versions), you can then update it through the dashboard. 

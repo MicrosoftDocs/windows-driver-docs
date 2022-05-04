@@ -26,7 +26,7 @@ The Partner Center lists each of these IDs on the driver details page of your pr
 
 >[!NOTE]
 >When you share a driver with someone else, they will be assigned a new private product ID. If you want to communicate about a product, use the Shared Product ID.
-|Submission ID|This identifier represents the individual packages you upload to a Product. The initial submission, and all submission updates each have a unique identifier. This ID is most useful for tracking updates using the Driver Update Acceptable (DUA) process within a product. See [Manage hardware submissions](/windows-hardware/drivers/dashboard/hardware-submission-manage.md).
+|Submission ID|This identifier represents the individual packages you upload to a Product. The initial submission, and all submission updates each have a unique identifier. This ID is most useful for tracking updates using the Driver Update Acceptable (DUA) process within a product.
 
 Shipping labels also contain two additional IDs:
 
@@ -38,7 +38,10 @@ Shipping labels also contain two additional IDs:
 ## Next Steps
 
 > [!div class="nextstepaction"]
-> [Manage hardware submissions](hardware-submission-manage.md)
+> [View hardware submissions](hardware-submissions-view.md)
+
+> [!div class="nextstepaction"]
+> [Update a hardware submission](hardware-submission-update.md)
 
 > [!div class="nextstepaction"]
 > [Manage driver distribution with shipping labels](./manage-driver-distribution-by-submission.md)

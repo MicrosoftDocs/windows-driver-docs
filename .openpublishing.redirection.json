@@ -8727,7 +8727,7 @@
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/manage-your-hardware-submissions.md",
-            "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-manage",
+            "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-update",
             "redirect_document_id": false
         },
         {
@@ -8739,9 +8739,14 @@
             "source_path": "windows-driver-docs-pr/dashboard/id-definitions.md",
             "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-ids",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/hardware-certification-submissions.md",
+            "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submissions-view",
+            "redirect_document_id": false
         }
         
-
+       
         
 
 
