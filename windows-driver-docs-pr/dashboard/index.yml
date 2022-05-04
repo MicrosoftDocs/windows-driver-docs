@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Partner Center for Windows Hardware
-summary: Create and manage system and driver submissions. Info for hardware certification and submission, shipping labels, Hardware dashboard API, dashboard administration, and driver distribution through Windows Update. Replaces the legacy (Sysdev) dashboard.
+summary: Create and manage system and driver submissions. Info for hardware certification and submission, shipping labels, hardware dashboard API, dashboard administration, and driver distribution through Windows Update. Replaces the legacy (Sysdev) dashboard.
 
 metadata: 
   author: eliotseattle
@@ -37,6 +37,8 @@ landingContent:
             url: hardware-submission-create.md
           - text: Manage your hardware submissions
             url: hardware-submission-manage.md
+          - text: View your hardware submissions
+            url: hardware-submissions-view.md
           - text: Create a device metadata experience
             url: create-a-device-metadata-experience.md
 
@@ -69,7 +71,7 @@ landingContent:
           - text: Overview of driver measures
             url: overview-of-microsoft-driver-measure-dictionary.md
 
-  - title:  Hardware dashboard API
+  - title:  hardware dashboard API
     linkLists:
       - linkListType: reference
         links:

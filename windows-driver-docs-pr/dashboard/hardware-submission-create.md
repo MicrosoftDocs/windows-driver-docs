@@ -7,7 +7,7 @@ ms.topic: article
 
 # Create a new hardware submission
 
-With the Partner Center Hardware dashboard, you can submit your Windows tested drivers for certification. This article describes how to create a new hardware submission in the Partner Center Hardware dashboard.
+With the Partner Center hardware dashboard, you can submit your Windows tested drivers for certification. This article describes how to create a new hardware submission in the Partner Center hardware dashboard.
 
 All hardware submissions to the dashboard will be processed within 5 business days or less, depending on whether the submission requires manual review. Manual review may be required if your submission's tests fail, if it doesn't have a valid filter applied, or due to an internal business policy.
 
@@ -26,7 +26,7 @@ All hardware submissions to the dashboard will be processed within 5 business da
 
 ## Submit your new hardware
 
-1. Go to [Partner Center Hardware dashboard](https://partner.microsoft.com/dashboard/hardware/Search) and sign in using your credentials.
+1. Go to [Partner Center hardware dashboard](https://partner.microsoft.com/dashboard/hardware/Search) and sign in using your credentials.
 
 1. Select **Submit new hardware**.
 

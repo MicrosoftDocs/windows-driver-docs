@@ -7,7 +7,7 @@ ms.date: 04/19/2022
 
 # Driver code signing requirements
 
-Your drivers must be signed with a certificate before you submit them to the Hardware dashboard. Your organization can associate any number of certificates with its dashboard account, and each one of your submissions must be signed with any one of those certificates. There's no restriction on the number of certificates (both extended validation (EV) and Standard) associated with your organization.
+Your drivers must be signed with a certificate before you submit them to the hardware dashboard. Your organization can associate any number of certificates with its dashboard account, and each one of your submissions must be signed with any one of those certificates. There's no restriction on the number of certificates (both extended validation (EV) and Standard) associated with your organization.
 
 This article provides general information on the types of code signing available for your drivers, as well as the associated requirements for those drivers.
 

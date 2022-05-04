@@ -126,7 +126,7 @@ To create the CAB file:
 
 ### Submit the EV signed Cab file using the Partner Center
 
-1. Go to [Partner Center Hardware dashboard](https://partner.microsoft.com/dashboard/hardware/Search) and sign in using your credentials.
+1. Go to [Partner Center hardware dashboard](https://partner.microsoft.com/dashboard/hardware/Search) and sign in using your credentials.
 
 1. Select **Submit new hardware**.
 

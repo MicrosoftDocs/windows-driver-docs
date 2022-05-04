@@ -7,7 +7,7 @@ ms.date: 04/19/2022
 
 # LSA plugin or UEFI firmware signing requirements
 
-You can use the Partner Center Hardware dashboard to digitally sign [Local Security Authority (LSA)](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection) plugins and [UEFI firmware](/windows-hardware/design/device-experiences/oem-uefi) binaries, to enable them to be installed on windows devices.
+You can use the Partner Center hardware dashboard to digitally sign [Local Security Authority (LSA)](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection) plugins and [UEFI firmware](/windows-hardware/design/device-experiences/oem-uefi) binaries, to enable them to be installed on windows devices.
 
 ## LSA plugins and UEFI firmware
 
@@ -22,7 +22,7 @@ You can use the Partner Center Hardware dashboard to digitally sign [Local Secur
 
 ## Next Steps
 
-To learn how to file sign an LSA plugin or UEFI firmware in the Hardware dashboard:
+To learn how to file sign an LSA plugin or UEFI firmware in the hardware dashboard:
 > [!div class="nextstepaction"]
 >[File sign an LSA plugin or UEFI firmware](file-signing-manage.md)
 

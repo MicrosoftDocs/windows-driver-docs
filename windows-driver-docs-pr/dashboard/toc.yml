@@ -12,6 +12,8 @@
     href: hardware-submission-create.md
   - name: Manage hardware submissions
     href: hardware-submission-manage.md
+  - name: View hardware submissions
+    href: hardware-submissions-view.md
   - name: Create a WLK hardware submission package
     href: hardware-submission-wlk.md
   - name: "Submission IDs"
@@ -279,9 +281,9 @@
       href: service-number.md
     - name: "Trusted certificates"
       href: trusted-certificates.md
-- name: "Hardware dashboard API"
+- name: "hardware dashboard API"
   items: 
-  - name: "Getting started with the Hardware dashboard API"
+  - name: "Getting started with the hardware dashboard API"
     href: dashboard-api.md
   - name: "Product data API"
     items: 

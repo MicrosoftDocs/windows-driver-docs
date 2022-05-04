@@ -9,7 +9,7 @@ ms.date: 04/22/2022
 
 For drivers compatible with Windows Server 2008 (and below) hardware for certification, you'll need to use the Winqual Submission Tool (WST), to create a submission package for Microsoft Windows Hardware Certification. The tool collects information about the type of submission prepared, and gathers all the logs, drivers, and symbols required for submission.
 
-This article describes how to use WST to create your submission package and submit it to the Hardware dashboard.
+This article describes how to use WST to create your submission package and submit it to the hardware dashboard.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ This article describes how to use WST to create your submission package and subm
 
 ## Install the Winqual submission tool
 
-1. Go to [Partner Center Hardware dashboard](https://partner.microsoft.com/dashboard/hardware/Search) and sign in using your credentials.
+1. Go to [Partner Center hardware dashboard](https://partner.microsoft.com/dashboard/hardware/Search) and sign in using your credentials.
 
 1. On the left menu, select **Drivers**.
 

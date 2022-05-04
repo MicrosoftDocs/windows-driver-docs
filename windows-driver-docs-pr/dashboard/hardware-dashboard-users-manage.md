@@ -8,7 +8,7 @@ ms.date: 04/20/2017
 
 # Manage dashboard users
 
-This article describes how you can use Partner Center User Management to manage your Hardware dashboard users.
+This article describes how you can use Partner Center User Management to manage your hardware dashboard users.
 
 The Partner Center uses Azure Active Directory for user management. For some actions, such as creating a new user or deleting a user, you'll need to use your developer portal Global Admin account credentials. The Global Admin account is the account that was used to register for the Hardware program. If your account was migrated from Sysdev, your Global Admin was notified via e-mail. If you've lost or are unsure of your Global Admin credentials, please contact support.  The developer portal Global Admin account credentials are not the same as the Azure AD Global Admin account credentials.
 
@@ -76,7 +76,7 @@ To invite users:
 
 ## Change a user's role
 
-For Hardware dashboard users, the following roles are available:
+For hardware dashboard users, the following roles are available:
 
 | Role                           | Description             |
 |--------------------------------|--------------|
@@ -107,7 +107,7 @@ To change a user’s role:
 
 1. In the user’s details, move through the page until you see **Roles applicable to developer programs**, and select the ones you want to assign to the user.
 
-   :::image type="content" source="images/managing-user-roles/user-management-roles.png" alt-text="Screenshot that shows the various available for Hardware dashboard users.":::
+   :::image type="content" source="images/managing-user-roles/user-management-roles.png" alt-text="Screenshot that shows the various available for hardware dashboard users.":::
 
 1. Select **Update**.
 

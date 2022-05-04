@@ -7,7 +7,7 @@ ms.date: 04/13/2022
 
 # Get started with the hardware submission process
 
-With the Windows Hardware Compatibility Program (for Windows 10) and the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems) you can design, create, and test your hardware and drivers before you submit the final version through the Partner Center Hardware dashboard for certification. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
+With the Windows Hardware Compatibility Program (for Windows 10) and the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems) you can design, create, and test your hardware and drivers before you submit the final version through the Partner Center hardware dashboard for certification. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
 
 This article describes how to get started with the hardware submission process. We'll take you through each step of the process, from getting an extended validation (EV), to registration, and finally, to driver publication and certification.
 
@@ -41,9 +41,9 @@ If you have drivers that you want to distribute with Windows Update or share wit
 
 ## Step 6: Publish your driver
 
-Now that your driver has passed the review process in the Partner Hardware dashboard, it then becomes eligible for the hardware compatibility or certification program. In addition, you can publish it to the [Windows Server Catalog](https://www.windowsservercatalog.com/ ) and the [Windows Certified Products List](windows-certified-products-list.md) by providing an announcement date in your submission.
+Now that your driver has passed the review process in the Partner hardware dashboard, it then becomes eligible for the hardware compatibility or certification program. In addition, you can publish it to the [Windows Server Catalog](https://www.windowsservercatalog.com/ ) and the [Windows Certified Products List](windows-certified-products-list.md) by providing an announcement date in your submission.
 
-You can continue to use the Partner Center Hardware dashboard to:
+You can continue to use the Partner Center hardware dashboard to:
 
 * Customize your driver after initial certification (DUA).
 
