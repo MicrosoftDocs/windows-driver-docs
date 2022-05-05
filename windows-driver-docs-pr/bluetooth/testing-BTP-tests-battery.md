@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform - BTP battery tests
 description: Bluetooth Test Platform (BTP) battery tests.
-ms.date: 06/09/2021
+ms.date: 05/05/2022
 ---
 
 # BTP Battery Tests
@@ -26,7 +26,7 @@ Navigate to the folder where the BTP package was extracted. It will typically be
 - `RunBatteryTests.bat <device name>` from an elevated command prompt or
 - `RunBatteryTests.ps1 <device name>` from an elevated PowerShell console
 
-Information on available device name parameters can be found in [Bluetooth Test Platform supported hardware](testing-BTP-hw.md#supported-devices).
+Information on available device name parameters can be found in [Bluetooth Test Platform supported hardware](testing-BTP-hw.md).
 
 You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP.
 

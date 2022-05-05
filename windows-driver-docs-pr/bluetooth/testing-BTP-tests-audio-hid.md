@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform - Audio and HID scenario tests
 description: Bluetooth Test Platform (BTP) Audio and HID Scenario tests.
-ms.date: 06/09/2021
+ms.date: 05/05/2022
 ---
 
 # BTP Audio and HID Scenario Tests
@@ -30,7 +30,7 @@ Navigate to the folder where the BTP package was extracted. It will typically be
 - `RunAudioHidScenarioTests.bat <audio device name> <hid device name>` from an elevated command prompt or
 - `RunAudioHidScenarioTests.ps1 <audio device name> <hid device name>` from an elevated PowerShell console
 
-Information on available device name parameters can be found [Bluetooth Test Platform supported hardware](testing-BTP-hw.md#supported-devices).
+Information on available device name parameters can be found [Bluetooth Test Platform supported hardware](testing-BTP-hw.md).
 
 You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP.
 
