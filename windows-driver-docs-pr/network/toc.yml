@@ -2742,7 +2742,7 @@
       href: mb-esim-profile-operations-tat.md
     - name: "MB eSIM MBIM ready state guidance"
       href: mb-esim-mbim-ready-state-guidance.md
-    - name: "Access to an eSIM in the inactive SIM slot"
+    - name: "Access an eSIM in the inactive SIM slot"
       href: access-to-esim-in-inactive-sim-slot.md
     - name: "MB reset and recovery"
       items:
