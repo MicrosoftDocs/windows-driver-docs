@@ -40,7 +40,7 @@ This following tables summarizes the available command line options.
 | -k \[ConnectType\] | Starts a kernel debugging session.  If **-k** is used without any *ConnectType* options following it, it must be the final entry on the command line. |
 |        -kqm        | Starts KD in quiet mode.                                                                |
 |        -kl         | Starts a kernel debugging session on the same machine as the debugger.                                         |
-| -kx *ExdiOptions*  | Starts a kernel debugging session using an EXDI driver.                                                |
+| -kx *ExdiOptions*  | Starts a kernel debugging session using an EXDI driver. For more information about EXDI, see [Configuring the EXDI Debugger Transport](configuring-the-exdi-debugger-transport.md). |
 |         -d         | After a reboot, the debugger will break into the target computer as soon as a kernel module is loaded.                         |
 
 **User Mode Options**
