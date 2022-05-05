@@ -1,6 +1,6 @@
 ---
 title: Access to an eSIM in an inactive SIM slot
-description:  
+description: MBIMEx 4.0 supports full access to an eSIM in the inactive slot of a DSSA modem.
 keywords:
 - Access to eSIM in inactive SIM slot
 ms.date: 05/04/2022
