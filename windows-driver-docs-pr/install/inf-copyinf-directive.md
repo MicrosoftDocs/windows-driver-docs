@@ -9,11 +9,10 @@ api_name:
 - INF CopyINF Directive
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 05/05/2022
 ---
 
 # INF CopyINF Directive
-
 
 A **CopyINF** directive causes specified INF files to be copied to the target system. The **CopyINF** directive is supported in Windows XP and later versions of Windows.
 
@@ -41,7 +40,7 @@ The following points apply to the **CopyINF** directive:
 
     Windows copies the specified INF files into a system directory path that it will search during device installations.
 
--   The INF files that are specified in the **CopyINF** directive must reside in the same directory as the INF file that contains the **CopyINF** directive.
+-   The INF files that are specified in the **CopyINF** directive must reside in the same directory as the INF file that contains the **CopyINF** directive or in a subdirectory of that directory. If the INF file resides in a subdirectory, the **CopyINF** directive should include the full relative path to that INF file. For example, `CopyINF=SubDir1\SubDir2\Example.inf`.
 -   You must include all INF files on each disk of a multidisk installation.
 
 Starting with Windows Vista, the following points also apply to the **CopyINF** directive:
