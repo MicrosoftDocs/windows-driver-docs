@@ -44,6 +44,10 @@
         href: setting-up-a-null-modem-cable-connection.md
       - name: "Setting Up 2PF Kernel-Mode Debugging using KDNET"
         href: setting-up-kernel-mode-debugging-using-2pf.md
+      - name: "Setting Up QEMU Kernel-Mode Debugging using EXDI"
+        href: setting-up-qemu-kernel-mode-debugging-using-exdi.md
+      - name: "Configuring the EXDI Debugger Transport"
+        href: configuring-the-exdi-debugger-transport.md
       - name: "Setting Up Kernel-Mode Debugging over USB EEM on an ARM device using KDNET"
         href: setting-up-kernel-mode-debugging-over-usb-eem-arm-kdnet.md
       - name: "Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually"
@@ -3264,6 +3268,8 @@
         href: -event-code--display-event-code-.md
       - name: ".eventlog (Display Recent Events)"
         href: -eventlog--display-recent-events-.md
+      - name: ".exdicmd (EXDI Command)"
+        href: -exdicmd--exdi-command-.md
       - name: ".exepath (Set Executable Path)"
         href: -exepath--set-executable-path-.md
       - name: ".expr (Choose Expression Evaluator)"
