@@ -80,7 +80,7 @@ We will use the [CodeQL command line tools (CLI)](https://codeql.github.com/docs
      execute   [Deep plumbing] Low-level commands that need special JVM options.
      version   Show the version of the CodeQL toolchain.
      generate  Generate formatted QL documentation.
-```
+   ```
 
 ### Clone the repository to access the driver-specific queries
 
