@@ -85,15 +85,18 @@ If your driver specified `PO_FX_VERSION_V1` previously, note that `PO_FX_DEVICE_
 
 For device classes that follow a port/miniport driver model, system-supplied port drivers typically handle power policy ownership.  Most miniports are not expected to require any code changes to opt into DFx, as the corresponding port driver is expected to handle DFx support.
 
-## Guidance for 3rd party miniports of KS.sys
+## Guidance for third-party miniports of KS.sys
 
-Starting with Vibranium (aka 20H1/19041), KS.sys opts-out of DFx and related HLK requirements by default. 3rd party minports of KS.sys can opt-in to DFx and related HLK by registering itself with PoFx and adding KsDFxSupportEnable registry key to the INF. 
+Starting with Vibranium (aka 20H1/19041), KS.sys opts-out of DFx and related HLK requirements by default. Third-party minports of KS.sys can opt-in to DFx and related HLK by registering itself with PoFx and adding KsDFxSupportEnable registry key to the INF. 
 
-Drivers can register itself with PoFx by using the implementation mentioned in [this section](/windows-hardware/drivers/kernel/introduction-to-the-directed-power-management-framework#requirements-for-wdm-non-miniport-drivers) and additionally, the following line needs to be added in the [AddReg directive](/windows-hardware/drivers/install/inf-addreg-directive) section.
+A drivers can register itself with PoFx by using the implementation mentioned in [this section](/windows-hardware/drivers/kernel/introduction-to-the-directed-power-management-framework#requirements-for-wdm-non-miniport-drivers). Additionally, the following line needs to be added in the [AddReg directive](/windows-hardware/drivers/install/inf-addreg-directive) section.
 
-	HKR, , KSDFxSupportEnable, 0x00010001, 1
+```inf
+HKR, , KSDFxSupportEnable, 0x00010001, 1
+```
 	
-The AddReg section can be invoked by either the device's [DDInstall.HW] section or the driver's [service-install-section]. Adding it in the [DDInstall.HW] section changes only that particular device. This is useful if the same driver is used for different VID/PID combinations, but DFx needs to be enabled only for a specific device. 
+The AddReg section can be invoked by either the device's [DDInstall.HW] section or the driver's [service-install-section]. Adding it in the [DDInstall.HW] section changes only that particular device. This is useful if the same driver is used for different VID/PID combinations, but DFx needs to be enabled only for a specific device.
+
 Adding the AddReg section in the [service-install-section] opts-in DFx for all devices using that driver.
 
 ## Testing
