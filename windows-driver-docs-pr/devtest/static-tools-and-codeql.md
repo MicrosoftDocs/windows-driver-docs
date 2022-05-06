@@ -4,7 +4,7 @@ description: Using Static tools and CodeQL on Windows driver source code to disc
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 03/18/2022
+ms.date: 05/06/2022
 ---
 
 # CodeQL and the Static Tools Logo Test
@@ -56,41 +56,41 @@ We will use the [CodeQL command line tools (CLI)](https://codeql.github.com/docs
 
 1. Confirm that the CodeQL command works by displaying the help.
 
-```command
-C:\codeql-home\codeql\>codeql --help
-Usage: codeql <command> <argument>...
-Create and query CodeQL databases, or work with the QL language.
+   ```command
+   C:\codeql-home\codeql\>codeql --help
+   Usage: codeql <command> <argument>...
+   Create and query CodeQL databases, or work with the QL language.
 
-GitHub makes this program freely available for the analysis of open-source software and certain other uses, but it is
-not itself free software. Type codeql --license to see the license terms.
+   GitHub makes this program freely available for the analysis of open-source software and certain other uses, but it is
+   not itself free software. Type codeql --license to see the license terms.
 
-      --license              Show the license terms for the CodeQL toolchain.
-Common options:
-  -h, --help                 Show this help text.
-  -v, --verbose              Incrementally increase the number of progress messages printed.
-  -q, --quiet                Incrementally decrease the number of progress messages printed.
-Some advanced options have been hidden; try --help -v for a fuller view.
-Commands:
-  query     Compile and execute QL code.
-  bqrs      Get information from .bqrs files.
-  database  Create, analyze and process CodeQL databases.
-  dataset   [Plumbing] Work with raw QL datasets.
-  test      Execute QL unit tests.
-  resolve   [Deep plumbing] Helper commands to resolve disk locations etc.
-  execute   [Deep plumbing] Low-level commands that need special JVM options.
-  version   Show the version of the CodeQL toolchain.
-  generate  Generate formatted QL documentation.
+         --license              Show the license terms for the CodeQL toolchain.
+   Common options:
+     -h, --help                 Show this help text.
+     -v, --verbose              Incrementally increase the number of progress messages printed.
+     -q, --quiet                Incrementally decrease the number of progress messages printed.
+   Some advanced options have been hidden; try --help -v for a fuller view.
+   Commands:
+     query     Compile and execute QL code.
+     bqrs      Get information from .bqrs files.
+     database  Create, analyze and process CodeQL databases.
+     dataset   [Plumbing] Work with raw QL datasets.
+     test      Execute QL unit tests.
+     resolve   [Deep plumbing] Helper commands to resolve disk locations etc.
+     execute   [Deep plumbing] Low-level commands that need special JVM options.
+     version   Show the version of the CodeQL toolchain.
+     generate  Generate formatted QL documentation.
 ```
 
 ### Clone the repository to access the driver-specific queries
 
 1. Navigate to the [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).
 
-2. [Clone](https://github.com/git-guides/git-clone) the repository to download all CodeQL queries and [query suites](https://codeql.github.com/docs/codeql-cli/creating-codeql-query-suites/) with driver-specific queries.  
+1. [Clone](https://github.com/git-guides/git-clone) the repository to download all CodeQL queries and [query suites](https://codeql.github.com/docs/codeql-cli/creating-codeql-query-suites/) with driver-specific queries.  
 
-```command
-C:\codeql-home\>git clone https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools.git --recursive -b RELEASE_BRANCH
-```
+   ```command
+   C:\codeql-home\>git clone https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools.git --recursive -b RELEASE_BRANCH
+   ```
 
 Replace RELEASE_BRANCH with the appropriate branch depending on the OS you are certifying for, per the following table:
 
@@ -134,7 +134,6 @@ codeql database create --help
 ```
 
 In this example, CodeQL uses the MSBuild compiler to process the C++ code to prepare it to be analyzed.
-
 
 > [!NOTE]
 > CodeQL does not require MSBuild or Visual Studio to be used. See [supported languges and frameworks](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/) for a list of which compilers are supported.
@@ -421,46 +420,46 @@ In this example, a small batch file is created in the target location and called
 
 1. Create a small batch file that re-creates the CodeQL database and then runs the desired queries using that up to date database.  In this example, the batch file will be named `RunCodeQLRebuildQuery.bat`. Modify the paths shown in the example  batch file to match your directory locations.
 
-```command
-ECHO ">>> Running CodeQL Security Rule V 1.0 <<<"
-ECHO ">>> Removing previously created rules database <<<"
-rmdir /s/q C:\codeql-home\databases\kmdf
-CALL C:\codeql-home\codeql\codeql\codeql.cmd database create -l=cpp -s="C:\codeql-home\drivers\kmdf" -c "msbuild /p:Configuration=Release /p:Platform=x64 C:\codeql-home\drivers\kmdf\kmdfecho.sln /t:rebuild /p:PostBuildEventUseInBuild=false " "C:\codeql-home\databases\kmdf" -j 0
-CALL C:\codeql-home\codeql\codeql\codeql database analyze "C:\codeql-home\databases\kmdf" "C:\codeql-home\Windows-Driver-Developer-Supplemental-Tools\codeql\codeql-queries\cpp\ql\src\Likely Bugs\Underspecified Functions" --format=sarifv2.1.0 --output=C:\codeql-home\databases\kmdf.sarif -j 0 --rerun
-ECHO ">>> Loading SARIF Results in Visual Studio <<<"
-CALL devenv /Edit C:\codeql-home\databases\kmdf.sarif
-SET ERRORLEVEL = 0
-```
+   ```command
+   ECHO ">>> Running CodeQL Security Rule V 1.0 <<<"
+   ECHO ">>> Removing previously created rules database <<<"
+   rmdir /s/q C:\codeql-home\databases\kmdf
+   CALL C:\codeql-home\codeql\codeql\codeql.cmd database create -l=cpp -s="C:\codeql-home\drivers\kmdf" -c "msbuild /p:Configuration=Release /p:Platform=x64 C:\codeql-home\drivers\kmdf\kmdfecho.sln /t:rebuild /p:PostBuildEventUseInBuild=false " "C:\codeql-home\databases\kmdf" -j 0
+   CALL C:\codeql-home\codeql\codeql\codeql database analyze "C:\codeql-home\databases\kmdf" "C:\codeql-home\Windows-Driver-Developer-Supplemental-Tools\codeql\codeql-queries\cpp\ql\src\Likely Bugs\Underspecified Functions" --format=sarifv2.1.0 --output=C:\codeql-home\databases\kmdf.sarif -j 0 --rerun
+   ECHO ">>> Loading SARIF Results in Visual Studio <<<"
+   CALL devenv /Edit C:\codeql-home\databases\kmdf.sarif
+   SET ERRORLEVEL = 0
+   ```
 
-2. The [devenv.exe / Edit](/visualstudio/ide/reference/edit-devenv-exe) option is used in the batch file to open the SARIF results file in the existing instance of Visual Studio. To view the SARIF results install the [Microsoft SARIF Viewer for Visual Studio](https://marketplace.visualstudio.com/items?itemName=WDGIS.MicrosoftSarifViewer). Refer to the instructions on that page for more information.
+1. The [devenv.exe / Edit](/visualstudio/ide/reference/edit-devenv-exe) option is used in the batch file to open the SARIF results file in the existing instance of Visual Studio. To view the SARIF results install the [Microsoft SARIF Viewer for Visual Studio](https://marketplace.visualstudio.com/items?itemName=WDGIS.MicrosoftSarifViewer). Refer to the instructions on that page for more information.
 
-3. In the driver project, navigate to project properties. In the  **Configuration** pull down, select the build configuration that you wish to check with CodeQL. For example for the *Release* configuration. Because creating the CodeQL database and running the queries takes a few minutes, you may decide to not run CodeQL on the Debug configurations of your project.
+1. In the driver project, navigate to project properties. In the  **Configuration** pull down, select the build configuration that you wish to check with CodeQL. For example for the *Release* configuration. Because creating the CodeQL database and running the queries takes a few minutes, you may decide to not run CodeQL on the Debug configurations of your project.
 
-4. Select **Build Events** and **Post-Build Event** in the driver project properties.
+1. Select **Build Events** and **Post-Build Event** in the driver project properties.
 
-5. Provide a path to the batch file and a description of the post build event.
+1. Provide a path to the batch file and a description of the post build event.
 
 ![Visual Studio post build event configuration showing a batch file configured as a command line option.](images/codeql-visual-studio-post-build-event.png)
 
-6. When the project builds, at the end of the build output, the results from the running the batch file will be displayed.
+1. When the project builds, at the end of the build output, the results from the running the batch file will be displayed.
 
-```command
-...
+   ```command
+   ...
 
-1>Starting evaluation of codeql-cpp\Likely Bugs\Underspecified Functions\MistypedFunctionArguments.ql.
-1>Starting evaluation of codeql-cpp\Likely Bugs\Underspecified Functions\TooManyArguments.ql.
-1>Starting evaluation of codeql-cpp\Likely Bugs\Underspecified Functions\TooFewArguments.ql.
-1>Starting evaluation of codeql-cpp\Likely Bugs\Underspecified Functions\ImplicitFunctionDeclaration.ql.
-1>[1/4 eval 4.4s] Evaluation done; writing results to codeql-cpp\Likely Bugs\Underspecified Functions\TooManyArguments.bqrs.
-1>[2/4 eval 4.4s] Evaluation done; writing results to codeql-cpp\Likely Bugs\Underspecified Functions\TooFewArguments.bqrs.
-1>[3/4 eval 4.5s] Evaluation done; writing results to codeql-cpp\Likely Bugs\Underspecified Functions\ImplicitFunctionDeclaration.bqrs.
-1>[4/4 eval 5.2s] Evaluation done; writing results to codeql-cpp\Likely Bugs\Underspecified Functions\MistypedFunctionArguments.bqrs.
-1>Shutting down query evaluator.
-1>Interpreting results.
-1>">>> Loading SARIF Results in Visual Studio <<<"
-```
+   1>Starting evaluation of codeql-cpp\Likely Bugs\Underspecified Functions\MistypedFunctionArguments.ql.
+   1>Starting evaluation of codeql-cpp\Likely Bugs\Underspecified Functions\TooManyArguments.ql.
+   1>Starting evaluation of codeql-cpp\Likely Bugs\Underspecified Functions\TooFewArguments.ql.
+   1>Starting evaluation of codeql-cpp\Likely Bugs\Underspecified Functions\ImplicitFunctionDeclaration.ql.
+   1>[1/4 eval 4.4s] Evaluation done; writing results to codeql-cpp\Likely Bugs\Underspecified Functions\TooManyArguments.bqrs.
+   1>[2/4 eval 4.4s] Evaluation done; writing results to codeql-cpp\Likely Bugs\Underspecified Functions\TooFewArguments.bqrs.
+   1>[3/4 eval 4.5s] Evaluation done; writing results to codeql-cpp\Likely Bugs\Underspecified Functions\ImplicitFunctionDeclaration.bqrs.
+   1>[4/4 eval 5.2s] Evaluation done; writing results to codeql-cpp\Likely Bugs\Underspecified Functions\MistypedFunctionArguments.bqrs.
+   1>Shutting down query evaluator.
+   1>Interpreting results.
+   1>">>> Loading SARIF Results in Visual Studio <<<"
+   ```
 
-7. Review the SARIF file results and work to remediate any issues that are identified. For more information, see [View Analysis](#view-analysis) earlier in this topic.
+1. Review the SARIF file results and work to remediate any issues that are identified. For more information, see [View Analysis](#view-analysis) earlier in this topic.
 
 ## Frequently Asked Questions (FAQ's)
 
@@ -473,7 +472,7 @@ See the latest WHCP requirements for further details for when this requirement t
 The motivation for requiring CodeQL to be run on driver source code can be summarized by two main reasons:
 
 1. Security of Windows is paramount.  Requiring CodeQL to be run on driver source code is one step in helping improve the security of components which get certified by Microsoft.
-2. CodeQL is [used at Microsoft](https://msrc-blog.microsoft.com/2018/08/16/vulnerability-hunting-with-semmle-ql-part-1/) to find security defects and  CodeQL queries are actively developed by security engineers at Microsoft.  Microsoft is committed to ensuring that its hardware ecosystem benefits from the same high-quality tooling that is used at Microsoft.
+1. CodeQL is [used at Microsoft](https://msrc-blog.microsoft.com/2018/08/16/vulnerability-hunting-with-semmle-ql-part-1/) to find security defects and  CodeQL queries are actively developed by security engineers at Microsoft.  Microsoft is committed to ensuring that its hardware ecosystem benefits from the same high-quality tooling that is used at Microsoft.
 
 #### Which license governs the usage of CodeQL for driver developers?
 
