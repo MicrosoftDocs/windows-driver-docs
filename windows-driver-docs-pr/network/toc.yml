@@ -2740,6 +2740,10 @@
       href: mb-esim-download-install-tat.md
     - name: "eSIM Profile Operations Log Filter"
       href: mb-esim-profile-operations-tat.md
+    - name: "MB eSIM MBIM ready state guidance"
+      href: mb-esim-mbim-ready-state-guidance.md
+    - name: "Access an eSIM in the inactive SIM slot"
+      href: access-to-esim-in-inactive-sim-slot.md
     - name: "MB reset and recovery"
       items:
       - name: "MB Device-based Reset and Recovery"
@@ -2770,8 +2774,8 @@
         href: mbimex-2.0-5g-nsa-support.md
       - name: "MBIMEx 3.0 – 5G SA Phase 1 support"
         href: mbimex-3.0-5g-sa-phase-1-support.md
-    - name: "MB eSIM MBIM ready state guidance"
-      href: mb-esim-mbim-ready-state-guidance.md
+      - name: "MBIMEx 4.0 – 5G SA Phase 2 support"
+        href: mbimex-4.0-5g-sa-phase-2-support.md
     - name: "MB NDIS Status Notifications"
       items: 
       - name: "NDIS_STATUS_WWAN_AUTH_RESPONSE"
