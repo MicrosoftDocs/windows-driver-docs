@@ -9,26 +9,26 @@ ms.date: 03/18/2022
 
 # CodeQL and the Static Tools Logo Test
 
-Microsoft is committed to mitigating the attack surface for the Windows operating system, and ensuring that third party drivers meet a strong security bar is critical to accomplishing that goal.  One step in setting this security bar that Microsoft is taking is adding a new requirement to the [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility) (WHCP).  This requirement states that all driver submissions must use the [CodeQL](https://securitylab.github.com/tools/codeql) engine on driver source code and fix any violations that are deemed **“Must-Fix”**.
+Microsoft is committed to mitigating the attack surface for the Windows operating system, and ensuring that third party drivers meet a strong security bar is critical to accomplishing that goal.  One step in setting this security bar that Microsoft is taking is adding a new requirement to the [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility) (WHCP).  This requirement states that all driver submissions must use the [CodeQL](https://securitylab.github.com/tools/codeql) engine on driver source code and fix any violations that are deemed **"Must-Fix"**.
 
 [CodeQL](https://securitylab.github.com/tools/codeql), by GitHub, is a powerful static analysis technology for securing software. The combination of an extensive suite of high-value security queries and a robust platform make it an invaluable tool for securing third party driver code.
 
 Usage of CodeQL for the purpose of WHCP testing is acceptable under the **[Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) End User License Agreement**.  For WHCP participants, the HLK's EULA overwrites GitHub's CodeQL Terms and Conditions.  The HLK EULA states that CodeQL **can be used** during automated analysis, CI or CD, as part of normal engineering processes for the purposes of analyzing drivers to be submitted and certified as part of the WHCP.
 
-The requirement to analyze the driver source code and fix any **“Must-Fix”** violations will be enforced by the [Static Tools Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
+The requirement to analyze the driver source code and fix any **"Must-Fix"** violations will be enforced by the [Static Tools Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
 
 This topic describes how to:
 
 - Use CodeQL to analyze your driver source code for known high impact security issues.
 - Ensure the Static Tools Logo Test can consume the results of running CodeQL.
-- Determine which **“Must-Fix”** [queries](#must-fix-queries) must be run without error for certification, as part of the WHCP.
+- Determine which **"Must-Fix"** [queries](#must-fix-queries) must be run without error for certification, as part of the WHCP.
 
 ## Concepts for CodeQL
 
 **CodeQL** is the analysis engine used by developers to perform security analysis.  A **CodeQL database** is a directory containing:
 
 - Queryable data, extracted from driver source code.
-- A source reference, for displaying query results directly in source code.  A **query** can be thought of as a “check” or “rule”.  Each query represents a distinct security vulnerability that is being searched for. For more information, see [Writing queries](https://codeql.github.com/docs/writing-codeql-queries/codeql-queries/) in the CodeQL docs.
+- A source reference, for displaying query results directly in source code.  A **query** can be thought of as a "check" or "rule".  Each query represents a distinct security vulnerability that is being searched for. For more information, see [Writing queries](https://codeql.github.com/docs/writing-codeql-queries/codeql-queries/) in the CodeQL docs.
 - Query results.
 - Log files generated during database creation, query execution, and other operations.
 
@@ -42,14 +42,19 @@ We will use the [CodeQL command line tools (CLI)](https://codeql.github.com/docs
 
 1. The first task will be to create a directory to contain CodeQL.  This example will use `C:\codeql-home\`
 
-```command
-C:\> mkdir C:\codeql-home
-```
-2. Refer to [Windows Driver Developer Supplemental Tools](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools) for the latest information on the current version of the CodeQL tools. 
-3. Navigate to the Github [CodeQL Download Page](https://github.com/github/codeql-cli-binaries/releases/) for the required release.
-4. Download the zip file if you are certifying a driver for the Windows Hardware Compatibility Program. For example for 64 bit Windows "codeql-win64.zip".
-5. Unzip the codeql folder in the zip file to a directory, for example,  `C:\codeql-home\codeql\`.
-6. Confirm that the CodeQL command works by displaying the help.
+   ```command
+   C:\> mkdir C:\codeql-home
+   ```
+
+1. Refer to [Windows Driver Developer Supplemental Tools](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools) for the version of the CodeQL tools required for use with the desired branch of Microsoft's QL libraries. See [Clone the repository to access the driver-specific queries](#clone-the-repository-to-access-the-driver-specific-queries) for a table showing the available branches. Using a different version may result in a database incompatible with these libraries.
+
+1. Navigate to the Github [CodeQL Download Page](https://github.com/github/codeql-cli-binaries/releases/) for the required release.
+
+1. Download the zip file if you are certifying a driver for the Windows Hardware Compatibility Program. For example for 64 bit Windows "codeql-win64.zip".
+
+1. Unzip the codeql folder in the zip file to a directory, for example,  `C:\codeql-home\codeql\`.
+
+1. Confirm that the CodeQL command works by displaying the help.
 
 ```command
 C:\codeql-home\codeql\>codeql --help
@@ -150,7 +155,7 @@ Run the following commands to create a new CodeQL database under *C:\codeql-home
 C:\codeql-home>C:\codeql-home\codeql\codeql.cmd database create -l=cpp -s=C:\codeql-home\drivers\kmdf -c "msbuild /t:rebuild "C:\codeql-home\drivers\kmdf\kmdfecho.sln" /p:UseSharedCompilation=false" "C:\codeql-home\databases\kmdf" -j 0
 ```
 
-The *“-j 0”* flag indicates to use as many threads as there are CPU’s in the import step of creating the database.
+The *"-j 0"* flag indicates to use as many threads as there are CPU's in the import step of creating the database.
 
 This example uses this argument to find and build the driver project. The msbuild command must be available in the path.
 
@@ -187,7 +192,7 @@ codeql database analyze <database> <path to query, suite or directory>
 --output=<output file directory>\output file name> 
 -j 0
 ```
-The *“-j 0”* flag indicates to use as many threads as there are CPU’s in the analysis portion.
+The *"-j 0"* flag indicates to use as many threads as there are CPU's in the analysis portion.
 
 Display help on the codeql database analyze command using the `--help` parameter.
 
@@ -484,7 +489,7 @@ The Static Tools Logo Test in the HLK is the test that enforces this requirement
 
 #### Are all defects reported by CodeQL true defects?
 
-Every CodeQL 	query has a varying level of precision.  The goal is to minimize false positives, but they will happen by definition.  The set of "Must-Fix" queries have been hand-picked because after extensive testing, nearly 0 false positives were observed.  If you are seeing false positives from a query in the set of "Must-Fix" queries, **email stlogohelp@microsoft.com** immediately.
+Every CodeQL   query has a varying level of precision.  The goal is to minimize false positives, but they will happen by definition.  The set of "Must-Fix" queries have been hand-picked because after extensive testing, nearly 0 false positives were observed.  If you are seeing false positives from a query in the set of "Must-Fix" queries, **email stlogohelp@microsoft.com** immediately.
 
 #### Does a query's classification of either "warning" or "error" matter for the purposes of the Static Tools Logo Test?
 
