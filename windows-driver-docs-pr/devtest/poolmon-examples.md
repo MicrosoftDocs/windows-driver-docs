@@ -5,7 +5,7 @@ keywords:
 - PoolMon WDK , examples
 - Memory Pool Monitor WDK , examples
 - examples WDK PoolMon
-ms.date: 07/02/2017
+ms.date: 05/06/2022
 ---
 
 # PoolMon Examples
@@ -90,9 +90,15 @@ The **/(** parameter and the parentheses keys are toggle switches. When PoolMon 
 
 You can use the PoolMon **/g** parameter to display the names of Windows components and commonly used drivers that assign each pool tag. If you find a problem in allocations with a particular tag, this feature helps you identify the offending component or driver.
 
-The components and drivers are listed in the Mapped\_Driver column, the right-most column in the display. The data for the Mapped\_Driver column comes from pooltag.txt, a file installed with PoolMon.
+The components and drivers are listed in the Mapped\_Driver column, the right-most column in the display. The data for the Mapped\_Driver column comes from pooltag.txt, a file installed with the WDK.
 
 The following command displays memory allocated with tags that begin with **NtF**. (It uses the question mark character (**?**) as a wildcard.) The **/g** parameter adds the Mapped\_Driver column.
+
+```
+poolmon /iNtF? /g "C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\triage\pooltag.txt"
+```
+
+You can also copy the pooltag.txt file to the same location as poolmon. This allows this usage.
 
 ```
 poolmon /iNtF? /g
@@ -121,9 +127,9 @@ The resulting display lists allocations with tags beginning in **NtF**. The righ
  NtFv Paged       551 (   0)       551 (   0)     0       0 (     0)      0 [ntfs.sys  -  ViewSup.c]
 ```
 
-Pooltag.txt is extensive, but it is not a complete list of all tags used in Windows. When a tag that appears in the display is not included in pooltag.txt, PoolMon displays "Unknown driver" in the Mapped\_Driver column for the tag. When this occurs, you can use the **/c** parameter to search the drivers on the local system and determine whether they assign the tag.
+Pooltag.txt is extensive, but it is not a complete list of all tags used in Windows. When a tag that appears in the display is not included in pooltag.txt, PoolMon displays "Unknown driver" in the Mapped\_Driver column for the tag. When this occurs, you can use the **/c** parameter to search the drivers (on a 32 bit system) and determine whether they assign the tag. (PoolMon cannot generate a local tag file on 64-bit versions of Windows and the -c option is not available.)
 
-The following examples demonstrate this method.
+The following examples demonstrate this method on a 32 bit system.
 
 The following command uses the **/i** parameter to list allocations with tags that end in MEM. The **/g** parameter adds the driver name to the display from the pooltag.txt file.
 
@@ -149,7 +155,7 @@ The following command starts PoolMon. It uses the **/i** parameter to list alloc
 poolmon /i?MEM /c
 ```
 
-If you do not specify a local tag file and PoolMon cannot find a localtag.txt file , it creates one, as shown in the following screen messages. (PoolMon cannot generate a local tag file on 64-bit versions of Windows.)
+If you do not specify a local tag file and PoolMon cannot find a localtag.txt file , it creates one, as shown in the following screen messages. 
 
 ```
 d:\tools\poolmon>poolmon /?MEM /c
@@ -222,11 +228,10 @@ This example suggests a procedure for using PoolMon to detect a memory leak.
 
 The following example demonstrates using PoolMon to investigate a pool memory leak from a suspected printer driver. In this example, PoolMon displays data that Windows collects about memory allocations with the Dsrd tag.
 
-Printer drivers assign the Drsd tag when they allocate Graphical Device Interface (GDI) objects and associated memory. If a printer driver has an object leak, the memory allocated with the Drsd tag also will leak.
+Some printer drivers assign the Drsd tag when they allocate Graphical Device Interface (GDI) objects and associated memory. If a printer driver has an object leak, the memory allocated with the Drsd tag also will leak.
 
 **Note**   Before running the steps in this example, ensure that the printer you are using will not be interrupted until you are finished. Otherwise, the results may be invalid.
 
- 
 
 At the command line, type the following:
 
@@ -260,7 +265,7 @@ When the memory management for the printer driver is working properly, the value
 
 ### <span id="For_More_Information"></span><span id="for_more_information"></span><span id="FOR_MORE_INFORMATION"></span>For More Information
 
-If you believe you have identified a leaking driver, go to the [Microsoft support](https://support.microsoft.com/) website and search the Knowledge Base for relevant articles.
+If you believe you have identified a leaking driver, go to the [Microsoft support](https://support.microsoft.com/) website and search the Knowledge Base for relevant articles, or contact the vendor if this is a third party driver.
 
 ### <span id="ddk_example_5_monitor_a_terminal_server_session_tools"></span><span id="DDK_EXAMPLE_5_MONITOR_A_TERMINAL_SERVER_SESSION_TOOLS"></span>Example 5: Monitor a Terminal Server Session
 
