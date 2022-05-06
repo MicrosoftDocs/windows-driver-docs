@@ -42,7 +42,7 @@ We will use the [CodeQL command line tools (CLI)](https://codeql.github.com/docs
 
 1. The first task will be to create a directory to contain CodeQL. This example will use `C:\codeql-home\`
 
-   ```command
+   ```console
    C:\> mkdir C:\codeql-home
    ```
 
@@ -56,7 +56,7 @@ We will use the [CodeQL command line tools (CLI)](https://codeql.github.com/docs
 
 1. Confirm that the CodeQL command works by displaying the help.
 
-   ```command
+   ```console
    C:\codeql-home\codeql\>codeql --help
    Usage: codeql <command> <argument>...
    Create and query CodeQL databases, or work with the QL language.
@@ -88,7 +88,7 @@ We will use the [CodeQL command line tools (CLI)](https://codeql.github.com/docs
 
 1. [Clone](https://github.com/git-guides/git-clone) the repository to download all CodeQL queries and [query suites](https://codeql.github.com/docs/codeql-cli/creating-codeql-query-suites/) with driver-specific queries.
 
-   ```command
+   ```console
    C:\codeql-home\>git clone https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools.git --recursive -b RELEASE_BRANCH
    ```
 
@@ -101,7 +101,7 @@ Replace RELEASE_BRANCH with the appropriate branch depending on the OS you are c
 
 If you have already cloned the repository and need to switch to a different branch, you can switch to the appropriate branch by running git fetch and git checkout from your local copy of the repository:
 
-```command
+```console
 C:\codeql-home\Windows-Driver-Developer-Supplemental-Tools>git fetch --all
 C:\codeql-home\Windows-Driver-Developer-Supplemental-Tools>git checkout RELEASE_BRANCH
 ```
@@ -117,19 +117,19 @@ The next steps create a CodeQL database that you can use for analysis.
 
 Create a directory to keep CodeQL databases (the databases folder). This example will use *C:\codeql-home\databases*
 
-```command
+```console
 mkdir C:\codeql-home\databases
 ```
 
 In general, the command used to create a CodeQL database will look like the following:
 
-```command
+```console
 codeql database create -l=[cpp/csharp/python/java/javascript/go/xml] -s=<path to source code> -c=<command to build> <database folder>\<project name> -j 0
 ```
 
 For help using the database create command, type:
 
-```command
+```console
 codeql database create --help
 ```
 
@@ -146,7 +146,7 @@ This example will process the evaluate the kmdfecho.sln driver sample, which is 
 
 Run the following commands to create a new CodeQL database under *C:\codeql-home\databases\kmdf*.
 
-```command
+```console
 C:\codeql-home>C:\codeql-home\codeql\codeql.cmd database create -l=cpp -s=C:\codeql-home\drivers\kmdf -c "msbuild /t:rebuild "C:\codeql-home\drivers\kmdf\kmdfecho.sln" /p:UseSharedCompilation=false" "C:\codeql-home\databases\kmdf" -j 0
 ```
 
@@ -154,7 +154,7 @@ The *"-j 0"* flag indicates to use as many threads as there are CPU's in the imp
 
 This example uses this argument to find and build the driver project. The msbuild command must be available in the path.
 
-```command
+```console
 msbuild /t:rebuild "C:\codeql-home\drivers\kmdf\kmdfecho.sln"
 ```
 
@@ -180,7 +180,7 @@ For the purposes of this example, it is assumed that the suite of queries to be 
 
 The *"database analyze"* command to execute analysis uses the following syntax:
 
-```command
+```console
 codeql database analyze <database> <path to query, suite or directory>
 --search-path=<path to search for packages>
 --format=[csv/sarif-latest/sarifv1/sarifv2/sarifv2.1.0/graphtext/dgml]
@@ -192,7 +192,7 @@ The *"-j 0"* flag indicates to use as many threads as there are CPU's in the ana
 
 Display help on the codeql database analyze command using the `--help` parameter.
 
-```command
+```console
 C:\codeql-home\codeql>codeql database analyze --help
 Usage: codeql database analyze [OPTIONS] <database> [<query|dir|suite>...]
 Analyze a database, producing meaningful results in the context of the source code.
@@ -206,13 +206,13 @@ in SARIF or another interpreted format.
 
 To evaluate the *windows_driver_recommended.qls* query suite against the kmdf echo driver with the results returned in SARIF format use the command below. The *windows_driver_recommended.qls* query suite is a superset of all queries that Microsoft has deemed as valuable for driver developers. Read more about query suites in the ["Query Suites"](#query-suites) section below.
 
-```command
+```console
 C:\codeql-home>c:\codeql-home\codeql\codeql.cmd database analyze "C:\codeql-home\databases\kmdf" windows_driver_recommended.qls --format=sarifv2.1.0 --output=C:\codeql-home\databases\kmdfecho1.sarif -j 0
 ```
 
 Output similar to the following should be displayed:
 
-```command
+```console
 Running queries.
 Compiling query plan for C:\codeql-home\Windows-Driver-Developer-Supplemental-Tools\codeql\codeql-queries\cpp\ql\src\Best Practices\Likely Errors\OffsetUseBeforeRangeCheck.ql.
 [1/22] Found in cache: C:\codeql-home\Windows-Driver-Developer-Supplemental-Tools\codeql\codeql-queries\cpp\ql\src\Best Practices\Likely Errors\OffsetUseBeforeRangeCheck.ql.
@@ -320,7 +320,7 @@ For [database version](https://codeql.github.com/docs/codeql-cli/manual/version/
 
 Use the codeql version command to display the version of the codeql exe.
 
-```command
+```console
 C:\codeql-home\codeql\>codeql version
 CodeQL command-line toolchain release 2.4.0.
 Copyright (C) 2019-2020 GitHub, Inc.
@@ -418,7 +418,7 @@ In this example, a small batch file is created in the target location and called
 
 1. Create a small batch file that re-creates the CodeQL database and then runs the desired queries using that up to date database. In this example, the batch file will be named `RunCodeQLRebuildQuery.bat`. Modify the paths shown in the example  batch file to match your directory locations.
 
-   ```command
+   ```console
    ECHO ">>> Running CodeQL Security Rule V 1.0 <<<"
    ECHO ">>> Removing previously created rules database <<<"
    rmdir /s/q C:\codeql-home\databases\kmdf
@@ -441,7 +441,7 @@ In this example, a small batch file is created in the target location and called
 
 1. When the project builds, at the end of the build output, the results from the running the batch file will be displayed.
 
-   ```command
+   ```console
    ...
 
    1>Starting evaluation of codeql-cpp\Likely Bugs\Underspecified Functions\MistypedFunctionArguments.ql.
