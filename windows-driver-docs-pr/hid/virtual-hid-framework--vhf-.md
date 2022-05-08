@@ -261,4 +261,4 @@ HKR,,"LowerFilters",0x00010000,"vhf"
 ```
 
 ## Related topics
-[Human Interface Device](https://developer.microsoft.com/windows/hardware)
+[Human Interface Devices](https://docs.microsoft.com/windows-hardware/drivers/ddi/_hid/)
