@@ -640,7 +640,7 @@ WfpTransportReceiveClassify(
  gInjectionHandle,
  netBufferList,
                         NULL);
- if (injectionState == <mark type="enumval">FWPS_PACKET_INJECTED_BY_SELF</mark> ||
+ if (injectionState == FWPS_PACKET_INJECTED_BY_SELF ||
  injectionState == FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF)
    {
  classifyOut->actionType = FWP_ACTION_PERMIT;
@@ -660,7 +660,7 @@ WfpTransportReceiveClassify(
    // be inspected from the ALE receive/accept layer. Alternatively, 
    // the callout can use the combination of 
    // FWP_CONDITION_FLAG_REQUIRES_ALE_CLASSIFY and 
-   // <mark type="enumval">FWP_MATCH_FLAGS_NONE_SET</mark> when you set up
+   // FWP_MATCH_FLAGS_NONE_SET when you set up
    // filter conditions for the incoming transport layer.
    //
    // Beginning with Windows Vista SP1 and Windows Server 2008,
