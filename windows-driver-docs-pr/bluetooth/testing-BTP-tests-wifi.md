@@ -1,12 +1,12 @@
 ---
 title: Microsoft Bluetooth Test Platform - Wi-Fi and Bluetooth coexistence
 description: Bluetooth Test Platform (BTP) Wi-Fi and Bluetooth coexistence tests.
-ms.date: 07/26/2021
+ms.date: 05/05/2022
 ---
 
-# BTP Wi-Fi and Bluetooth coexistence tests
+# Bluetooth Test Platform Wi-Fi and Bluetooth coexistence tests
 
-The BTP Bluetooth and Wi-Fi coexistence tests verify the ability of the local system to pair with Bluetooth device(s), connect to a Wi-Fi access point, and stream data over Wi-Fi while simultaneously validating Bluetooth functionality and monitoring Bluetooth throughput. Bluetooth and Wi-Fi performance are reported to the user, and performance of Bluetoooth audio and HID streams are validated using glitch detection and traffic analysis.
+The BTP Bluetooth and Wi-Fi coexistence tests verify the ability of the local system to pair with Bluetooth device(s), connect to a Wi-Fi access point, and stream data over Wi-Fi while simultaneously validating Bluetooth functionality and monitoring Bluetooth throughput. Bluetooth and Wi-Fi performance are reported to the user, and performance of Bluetooth audio and HID streams are validated using glitch detection and traffic analysis.
 
 ## Setting up for testing
 
@@ -35,7 +35,7 @@ If you would like to also validate HID functionality at the same time, then run 
 - `RunWiFiAudioHidScenarioTests.bat <Wi-Fi device name> <Bluetooth audio device name> <Bluetooth HID device name>` from an elevated command prompt or
 - `RunWiFiAudioHidScenarioTests.ps1 <Wi-Fi device name> <Bluetooth audio device name> <Bluetooth HID device name>` from an elevated PowerShell console
 
-Information on available device name parameters can be found in [Bluetooth Test Platform supported hardware](testing-BTP-hw.md#supported-devices).
+Information on available device name parameters can be found in [Bluetooth Test Platform supported hardware](testing-BTP-hw.md).
 
 You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP.
 

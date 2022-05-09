@@ -127,7 +127,7 @@
       - name: "Model 2433 ESP32"
         href: testing-BTP-hw-esp32.md
       - name: "Human Device Adapter"
-        href: testing-BTP-human-device-adapter.md
+        href: testing-BTP-hw-human-device-adapter.md
       - name: "Traduci Power Adapter"
         href: testing-BTP-hw-power-adapter.md
     - name: "BTP Tests"
