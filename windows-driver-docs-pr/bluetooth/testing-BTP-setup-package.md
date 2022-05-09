@@ -1,10 +1,10 @@
 ---
-title: Microsoft Bluetooth Test Platform software package
-description: Describes the Bluetooth Test Platform (BTP) software package.
-ms.date: 05/05/2022
+title: Microsoft Bluetooth Test Platform package
+description: Bluetooth Test Platform (BTP) software package.
+ms.date: 01/06/2022
 ---
 
-# The Bluetooth Test Platform software package
+# The BTP Software Package
 
 The BTP software package contains everything that needs to be installed on your test machine to test the interoperability of Bluetooth enabled devices with the Windows Bluetooth stack. The included documentation provides information about how to configure the hardware and suggests topologies for the best test coverage as well as the details for how to run the tests and collect logs.
 
@@ -14,7 +14,8 @@ Click the following button to download the latest version.
 > [!NOTE]
 > The installer should be run on the machine that will be executing the tests. After installation, do not copy, move or delete files. If you have a problem with your installation, use Windows "Add or Remove Programs" to completely uninstall BTP. Then do a clean install with the msi.
 
-### [Download the current release of BTP](https://download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.11.1.msi)
+> [!div class="nextstepaction"]
+> [Download the current release of BTP](https://download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.12.2.msi)
 
 ## Version Updates
 
