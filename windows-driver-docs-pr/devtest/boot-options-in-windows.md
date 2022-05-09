@@ -21,7 +21,7 @@ ms.date: 03/16/2022
 
 # Overview of Boot Options in Windows
 
-The Windows boot loader architecture includes a firmware-independent boot configuration and storage system called *Boot Configuration Data* (BCD) and a boot option editing tool, BCDEdit (BCDEdit.exe). During development, you can use BCDEdit to configure boot options for debugging, testing, and troubleshooting your driver on computers running Windows 10, Windows 8, Windows Server 2012, Windows 7, and Windows Server 2008.
+The Windows boot loader architecture includes a firmware-independent boot configuration and storage system called *Boot Configuration Data* (BCD) and a boot option editing tool, BCDEdit (BCDEdit.exe). During development, you can use BCDEdit to configure boot options for debugging, testing, and troubleshooting your driver on computers running Windows 11, Windows 10, Windows 8, Windows Server 2012, Windows 7, and Windows Server 2008.
 
 > [!CAUTION]
 > Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using BCDEdit could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings.
