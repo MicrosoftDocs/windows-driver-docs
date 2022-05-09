@@ -102,11 +102,11 @@
       href: testing-BTP-Overview.md
     - name: "Setting up BTP"
       items:
-      - name: "BTP Hardware Setup"
+      - name: "Hardware Setup"
         href: testing-BTP-setup-hardware.md
-      - name: "BTP Software Setup"
+      - name: "Software Setup"
         href: testing-BTP-setup-software.md
-      - name: "BTP Package Setup"
+      - name: "Package Setup"
         href: testing-BTP-setup-package.md
     - name: "Hardware"
       items:

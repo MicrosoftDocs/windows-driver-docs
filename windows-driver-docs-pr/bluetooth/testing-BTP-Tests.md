@@ -9,10 +9,12 @@ ms.date: 2/14/2020
 
 These are the currently supported tests. Additional tests are planned and under development by both Microsoft and partners. If you need additional test functionality please contact BTPSupport@microsoft.com so we can collaborate.
 
-- [Pairing Tests](testing-BTP-tests-pairing.md)
-- [HID Tests](testing-BTP-tests-hid.md)
-- [Audio Tests](testing-BTP-tests-audio.md)
-- [Audio and HID Scenario Tests](testing-BTP-tests-audio-hid.md)
-- [Battery Tests](testing-BTP-tests-battery.md)
-- [Wi-Fi and Bluetooth Coexistence Tests](testing-BTP-tests-wifi.md)
-- [Power State HID tests](testing-BTP-tests-power-state-hid.md)
+| Tests | Supported Hardware |
+| --- | --- |
+| [Pairing Tests](testing-BTP-tests-pairing.md) | rn42, bluefruit52, bluefruit, rn52, bm62, bm64, HDA |
+| [HID Tests](testing-BTP-tests-hid.md) | rn42, bluefruit52, bluefruit |
+| [Audio Tests](testing-BTP-tests-audio.md) | rn52, bm62, HDA |
+| [Audio and HID Scenario Tests](testing-BTP-tests-audio-hid.md) | rn42, bluefruit52, bluefruit, rn52, bm62, HDA |
+| [Battery Tests](testing-BTP-tests-battery.md) | bluefruit52, bluefruit, HDA |
+| [Wi-Fi and Bluetooth Coexistence Tests](testing-BTP-tests-wifi.md) | rn42, bluefruit52, bluefruit, rn52, bm62 |
+| [Power State HID tests](testing-BTP-tests-power-state-hid.md) | rn42, bluefruit52 |
