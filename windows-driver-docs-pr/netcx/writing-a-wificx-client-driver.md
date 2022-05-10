@@ -81,7 +81,7 @@ Commands are exchanged through a set of callback functions provided by the clien
 
 - If the command is a task command, the client driver needs to later send the associated M4 indication by calling [**WifiDeviceReceiveIndication**](/windows-hardware/drivers/ddi/wificx/nf-wificx-wifidevicereceiveindication) and pass the indication buffer with a WDI header that contains the same message ID as contained in the M1.
 
-- Unsolicited indications are also notified via **WifiDeviceReceiveIndication**, but with the message ID set to **0**.
+- Unsolicited indications are also notified via **WifiDeviceReceiveIndication**, but with the **TransactionId** member of [**WDI_MESSAGE_HEADER**](/windows-hardware/drivers/ddi/dot11wificxintf/ns-dot11wificxintf-wdi_message_header) set to **0**.
 
 ![Flow chart showing WiFiCx driver command message handling.](images/wificx_command1.png)
 
