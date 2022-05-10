@@ -1214,3 +1214,4 @@ HRESULT CSwapAPOSFX::SetAudioSystemEffectState(GUID effectId, AUDIO_SYSTEMEFFECT
     return E_NOTFOUND;
 }
 ```
+
