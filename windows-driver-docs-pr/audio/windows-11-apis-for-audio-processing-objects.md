@@ -1214,3 +1214,15 @@ HRESULT CSwapAPOSFX::SetAudioSystemEffectState(GUID effectId, AUDIO_SYSTEMEFFECT
     return E_NOTFOUND;
 }
 ```
+
+## Using WM LFX and GFX APOs
+
+Inf's that use WM LFX and GFX APOs can do so in one of the following ways - 
+
+- Using INF DDInstall Section.
+   Use mssysfx.CopyFilesAndRegisterCapX from wdmaudio.inf by adding the following entries -
+   Include=wdmaudio.inf
+   Needs=mssysfx.CopyFilesAndRegisterCapX
+
+- Directly referencing these APOs for stream and mode effects.
+   Use {C9453E73-8C5C-4463-9984-AF8BAB2F5447} as the WM LFX APO and "{13AB3EBD-137E-4903-9D89-60BE8277FD17}" as the WM GFX APO.
