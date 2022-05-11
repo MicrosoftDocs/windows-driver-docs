@@ -460,6 +460,15 @@ If DSSA is supported on the device, there are some scenarios where slot switch i
     - If the SIM is inserted in the physical slot while the selected slot is embedded, a toast is displayed asking if the user wants switch to the physical slot.
     - If user selects "Yes" then the slot is switched.
 
+Use this registry key to configure auto-switch. It does not exist by default.  
+  
+**Location:** HKLM\Software\Microsoft\Cellular\MVSettings\DeviceSpecific\CellUX  
+**Key:** EnableAutoSlotSwitch  
+**Type:** REG_DWORD  
+**Value:**  1 | 0 (default, disabled)  
+  
+  
+
 ![SIM insertion flow.](images/SIM_insert.png)
 
 ## Hardware Lab Kit (HLK) Tests
