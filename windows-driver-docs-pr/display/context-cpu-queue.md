@@ -22,7 +22,7 @@ Here, the application submitted work for the GPU at the point of the leftmost re
 
 The layout of the Context CPU Queue is similar to the layout of the GPU Hardware Queue.
 
-![Context CPU Queue and the GPU Hardware Queue](\Image\context-cpu-queues03.png)
+![Details of the Context GPU Queue](\Image\context-cpu-queues03.png)
 
 ## Color Key
 The leftmost rectangle shows the color key for all work items (Queue Packets) in the Context CPU Queue. This color key helps when identifying where the GPU Hardware Queue is spending its time.

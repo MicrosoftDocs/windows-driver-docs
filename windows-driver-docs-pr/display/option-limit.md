@@ -1,5 +1,5 @@
 ---
-title: Option: Limit
+title: "Option: Limit"
 description: "This option causes GPUView to filter unimportant events and objects to prevent GPUView from using too much memory."
 ms.date: 05/10/2022
 ---

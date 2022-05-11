@@ -1,6 +1,6 @@
 ---
 title: Memory View Menu
-description: The Segment Viewer window has its own menu, *Actions*. If you click the *Actions* menu, you get a submenu with the following items on it:
+description: "The Segment Viewer window has its own menu, *Actions*."
 ms.date: 05/10/2022
 ---
 

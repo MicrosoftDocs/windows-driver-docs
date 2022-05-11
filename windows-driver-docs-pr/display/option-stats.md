@@ -1,5 +1,5 @@
 ---
-title: Option: Stats
+title: "Option: Stats"
 description: "This option causes GPUView to process all events in an ETL file."
 ms.date: 05/10/2022
 ---
