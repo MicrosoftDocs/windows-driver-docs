@@ -43,7 +43,7 @@ Change
 :::column span="2":::
 This column holds either text or a graphic that indicates where the most recent memory operation occurred. If the current view time is next to a memory operation where memory is marked, the column will read marked. If the memory has been discarded, the column will show a left-pointing red triangle. If the item is paged in, the graphic will be a right-pointing yellow triangle, as in the following diagram.
 
-![alt text](segment-viewer-window-02.png)
+![alt text](./images/segment-viewer-window-02.png)
 :::column-end:::
 :::row-end:::
 :::row:::

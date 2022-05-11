@@ -787,7 +787,7 @@
           - name: "GPUView Menu Options"
             href: gpuview-menu-options.md
           - name: "Information Logged After Loading"
-            href: information-logged-after-loadingt.md
+            href: information-logged-after-loading.md
           - name: "Loading Large ETL Files"
             href: loading-large-etl-files.md
         - name: "GPUView's Main Display"

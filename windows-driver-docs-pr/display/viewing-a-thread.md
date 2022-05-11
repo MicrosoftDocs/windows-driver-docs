@@ -28,7 +28,7 @@ The gray area to the right of the name, the Thread Execution Area, represents ti
 
 ## Thread Execution Interval
 
-![Thread Execution Area](\Image\viewing-a-thread04.png)
+![Thread Execution Interval](\Image\viewing-a-thread04.png)
 
 In this case, the white rectangles represent when the thread actually ran. This diagram shows two Thread Execution Intervals.
 
