@@ -50,7 +50,7 @@ Finally, across the bottom of the application there is a status bar that provide
 - The number of lost events during the time the event file was captured 
 - The number of lost buffers 
 - The pointer size 
-- The client view display level summary-of-gpuview-controls.md
+- The client view display level
 - The time in the file that corresponds to the mouse position (when the Track Mouse Cursor option is enabled) 
 - The time length of the mouse selection 
 
