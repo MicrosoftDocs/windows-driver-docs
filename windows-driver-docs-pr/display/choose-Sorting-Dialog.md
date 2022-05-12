@@ -8,7 +8,7 @@ ms.date: 05/10/2022
 
 With the *Choose sorting* dialog, the user can customize the layout of the Segment viewer. The following diagram is a screen shot that shows the *Choose sorting* dialog.
 
-![Segment Viewer Merged.et](\Image\choose-sorting-dialog.png) 
+![Segment Viewer Merged.et](/Images/choose-sorting-dialog.png) 
 
 The sorting of the data in the main Segment Viewer window is based on the elements found in the *Active comparers* list. Values can be moved from the *Inactive comparers* list to the *Active comparers* list by selecting the specific item and pressing the arrow button that divides the lists. 
 

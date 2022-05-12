@@ -10,7 +10,7 @@ The Segment Viewer displays information about the memory layout at a particular 
 
 A typical screen shot of the Segment Viewer window looks like the following. 
 
-![Segment Viewer Merged.et](\Image\segment-viewer-window-01.png) 
+![Segment Viewer Merged.et](/Images/segment-viewer-window-01.png) 
 
 The area above the virtual scroll bar is a fixed area that is divided into four different sections. 
 

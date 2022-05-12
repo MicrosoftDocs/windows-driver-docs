@@ -8,12 +8,12 @@ ms.date: 05/10/2022
 
 The Termination Charts are both adapter- and process-specific. They show memory that is submitted for discarding. It basically adds up the amount of memory waiting to be discarded. The color key shows Local, System, and DMA buffer memory. The following diagrams show these charts.
 
-![Adapter Level](\Image\adapter-level.png)
+![Adapter Level](/Images/adapter-level.png)
 
 > [!NOTE]
 > That the Termination Charts at the adapter level are displayed in their own blue gradient area just above the associated adapter.
 
-![Process Level](\Image\process-level.png)
+![Process Level](/Images/process-level.png)
 
 In the case of the process Termination Chart, the chart is shown between the Context CPU Queue and the first thread. 
 

@@ -8,7 +8,7 @@ ms.date: 05/10/2022
 
 The Present Charts are process-specific. They are shown below the Context CPU Queue and above the threads. As can be seen in the following diagram, the Present Charts are broken into a Frames Per Second (FPS) and Latency chart. 
 
-![Present Charts](\Image\present-charts.png)
+![Present Charts](/Images/present-charts.png)
 
 The Frames Per Second Chart shows the frame rate. The key for the frame rate is red. 
 

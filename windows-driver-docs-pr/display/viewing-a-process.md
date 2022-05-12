@@ -8,7 +8,7 @@ ms.date: 05/10/2022
 
 Each process gets its own display area in the main GPUView window. The following diagram shows a zoomed-in screen shot of a Process Area in GPUView. A process may, or may not, have a Context CPU Queue. The Context CPU Queue exists only if the process created a graphics device to render to. The majority of processes in GPUView do not have Context CPU Queues (View Level 6 to see all processes and threads). By default, GPUView typically displays processes with Context CPU Queues.
 
-![Area GPUView](\Image\area-gpuview.png) 
+![Area GPUView](/Images/area-gpuview.png) 
 
 ## Name
 The process ID and name are displayed in the upper left-hand corner of the Process Area. In this case, the process ID is 5760 and the process name is SchBillboard.exe.
