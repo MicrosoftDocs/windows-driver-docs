@@ -10,3 +10,4 @@ The **Module Info** dialog box displays all the kernel mode modules loaded on th
 
 The information displayed in the dialog's list takes the form module name, followed by the version, followed by the friendly name and corporation. Video drivers are fairly easy to find in this list. 
 
+![module info dialog box 1](\Images\module-info-dialog-box-1.png)
