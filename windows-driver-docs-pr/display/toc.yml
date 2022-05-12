@@ -783,7 +783,7 @@
             - name: "Option: File"
               href: option-file.md
           - name: "Displaying More or Fewer Threads"
-            href: displaying-more or-fewer-threads.md
+            href: displaying-more-or-fewer-threads.md
           - name: "GPUView Menu Options"
             href: gpuview-menu-options.md
           - name: "Information Logged After Loading"
@@ -855,7 +855,7 @@
           - name: "Exporting Data to a File"
             href: choose-Sorting-Dialog.md
           - name: "Other Visual Items of the Segment Viewer Window"
-            href: Other Visual Items of the Segment Viewer Window.md
+            href: other-visual-items-of-the-segment-viewer-window.md
     - name: "XPS rasterization on the GPU"
       href: xps-rasterization-on-the-gpu.md
     - name: "Timeout Detection and Recovery"
