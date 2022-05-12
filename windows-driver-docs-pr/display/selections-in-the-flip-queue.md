@@ -6,9 +6,11 @@ ms.date: 05/10/2022
 
 # Selections in the Flip Queue
 
-### Flip Queue Entry  
+**Flip Queue Entry**  
 
 The Flip Queue Entry has data of the following form.
+
+![selections in the flip queue 1](\Images\selections-in-the-flip-queue-1.png)
 
 Creation Time: The start of the object lifetime. 
 Destruction Time: The end of the object lifetime. 
