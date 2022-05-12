@@ -11,9 +11,8 @@ ms.date: 05/05/2022
 The Bluetooth Test Platform (BTP) can validate Bluetooth scenarios with several different hardware platforms.
 
 - Retail devices and in-development can be validated using the [Human Device Adapter (HDA)](testing-btp-hw-human-device-adapter.md)
-- Windows hardware and drivers can be validated with PC-to-PC testing.
 - 3rd party peripherals can be validated with custom device adapters.
-- Windows OS can be validated with the [Traduci board](testing-btp-setup-hardware.md) and specific peripherals.
+- The full integration of the Windows OS, radio and over-the-air interop can be validated with the [Traduci board](testing-btp-setup-hardware.md) and specific peripherals.
 
 ## Supported peripherals
 

@@ -13,7 +13,7 @@ ms.date: 05/05/2022
 3. Ensure BitLocker is **disabled**.
 
 
-4. . If using the Traduci, plug it into the SUT before doing step 5.
+4. If using the Traduci, plug it into the SUT before doing step 5.
     
 5.  From an elevated command line on the SUT, navigate to the `C:\BTP` directory and run `ConfigureMachineForBTP.bat` to configure the test machine. A reboot may be required.
 

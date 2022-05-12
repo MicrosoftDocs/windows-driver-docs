@@ -88,7 +88,7 @@ The optional parameter `-VerboseLogs` can be added to provide a more verbose out
 
 ## HDA log capture
 
-If problems are encountered Bluetooth logs can be captured Bluetooth logs by following instructions at [Busiotools for Windows Repo on GitHub for Log Capturing](https://github.com/Microsoft/busiotools/tree/master/bluetooth/tracing), or by using the scrip option `-VerboseLogs` when starting the tests.
+If problems are encountered Bluetooth logs can be captured Bluetooth logs by following instructions at [Busiotools for Windows Repo on GitHub for Log Capturing](https://github.com/Microsoft/busiotools/tree/master/bluetooth/tracing), or by using the script option `-VerboseLogs` when starting the tests.
 
 ## See also
 
