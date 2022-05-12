@@ -10,13 +10,13 @@ The following figure shows a zoomed-in screen shot of the main UI with a focus o
 
 The following diagram represents just over three frames of data. With this snapshot, the first two VSync locations are drawn to help denote frames. (For more information, see [Event Listing Dialog Box](event-listing-dialog-box.md) for the check boxes to enable the VSyncs.) 
 
-![Flip Queue](/Images/flip-queue.png) 
+![Flip Queue](images/flip-queue.png) 
 
 The thing to notice with the Flip Queues is that it is broken up into a solid-color section and a crosshatched section. The solid-color section represents the time when the application (in this case DWM) is working to produce the content that needs to be displayed. The crosshatched section represents the idle time that the data waits for the flip moment (the VSync). 
 
 Zooming in on the center frame shows the alignment to the VSyncs. 
 
-![Flip Queue present packet](/Images/flip-queue-present-packet.png) 
+![Flip Queue present packet](images/flip-queue-present-packet.png) 
 
 Here it is a little clearer that Flip Queue 0 is aligned to the blue VSync line and Flip Queue 1 is aligned to the green VSync line. Also notice that the second present packet is selected in the DWM Context CPU Queue (highlighted in red), and GPUView has highlighted the Flip Queue present packet that is associated. 
 
@@ -24,7 +24,7 @@ Looking more closely at that Flip Queue present packet, you see that the solid-c
 
 The following diagram shows the association with the second monitor. 
 
-![Second Moniter](/Images/second-moniter.png)
+![Second Moniter](images/second-moniter.png)
 
 Here, the DWM Present Packet just above the previous one is selected (highlighted in red here) and GPUView has highlighted the corresponding Flip Queue packet. Notice that the work, time that the GPU spent processing the data in the DMA packet, took longer than the first frame. The result is that the information is shown to the user at the end of the second frame.
 

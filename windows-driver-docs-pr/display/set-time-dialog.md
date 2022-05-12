@@ -10,4 +10,4 @@ To view the *Set time* dialog, visit the *Segment Viewer Actions* menu and selec
 
 The *Set time* dialog looks like the following. 
 
-![Set Time](/Images/set-time-dialog.png) 
+![Set Time](images/set-time-dialog.png) 

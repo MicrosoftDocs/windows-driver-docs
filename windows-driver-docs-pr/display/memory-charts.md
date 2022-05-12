@@ -10,14 +10,14 @@ The Memory Charts show local and system memory usage over time. The graphs are b
 
 The following diagram is a screen shot of the memory associated with an adapter. 
 
-![Memory Associated](/Images/memory -associated.png)
+![Memory Associated](images/memory -associated.png)
 
 > [!NOTE]
 > That when GPUView displays memory associated with an adapter, it creates a blue gradient area above the GPU Hardware Queue. 
 
 When viewing a Memory Chart associated with a process, the view is slightly different. 
 
-![Memory Associated](/Images/memory-chart-associated.png)
+![Memory Associated](images/memory-chart-associated.png)
 
 Notice in this case that the Memory Chart is located below the Context CPU Queue and above the threads. It is also contained within the same green gradient area reserved for the individual process. 
 

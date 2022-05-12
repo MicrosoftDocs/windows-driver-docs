@@ -8,39 +8,39 @@ ms.date: 05/10/2022
 
 This topic provides information about what the user views when looking at the GPU Hardware Queue. This first diagram is a simple zoomed-in view of the GPU Hardware Queue.
 
-![gpu hardware queue01](/Images/gpu-hardware-queue01.png)
+![gpu hardware queue01](images/gpu-hardware-queue01.png)
 
 The GPU Hardware Queue represents workflow on the hardware. In these workflow queues, the item on the bottom of the stack of rectangles represents the work that is currently executing. The rectangles stacked above it represent work that is in waiting.
 
-![gpu hardware queue02](/Images/gpu-hardware-queue02.png)
+![gpu hardware queue02](images/gpu-hardware-queue02.png)
 
 In the preceding diagram, the DMA packet inside the red ellipse represents the work that the hardware was executing, and the DMA packet in the black ellipse represents the second packet of two that the video scheduler placed down on the hardware. They are packets in waiting.
 
-![gpu hardware queue03](/Images/gpu-hardware-queue03.png)
+![gpu hardware queue03](images/gpu-hardware-queue03.png)
 
 Notice that the end of a rectangle does not mean the end of the functional lifetime of the object. Here, inside the red ellipse, when the hardware finished with the present packet (item on the bottom), the DMA packet in waiting now transitions into the DMA packet being processed by the hardware. At this transition point, the topmost DMA packet in waiting advances (down) one step closer to actually running on the hardware.
 
 Zooming out just a little bit and left-clicking the top DMA packet produces the following diagram.
 
-![gpu hardware queue04](/Images/gpu-hardware-queue04.png)
+![gpu hardware queue04](images/gpu-hardware-queue04.png)
 
 This DMA packet was selected by left-clicking it. Notice that the packet has three transitional points while it is in the queue. The entire time span of this object is considered time in the hardware queue, but only the last section (rightmost where it is on the bottom of the stack) is counted as execution time on the hardware. 
 
 The color coding is also important. The color for each DMA packet corresponds to a particular Context CPU Queue in a particular Process. 
 
-![gpu hardware queue05](/Images/gpu-hardware-queue05.png)
+![gpu hardware queue05](images/gpu-hardware-queue05.png)
 
 Zooming out a little from the previous diagram, the associated process is (6584) SchBillboard.exe. It has the matching color and matching selection in process Context CPU Queue. 
 
 There is also the text in the upper right-hand corner of the GPU Hardware Queue area. It can be seen in the following diagram. 
 
-![gpu hardware queue06](/Images/gpu-hardware-queue06.png)
+![gpu hardware queue06](images/gpu-hardware-queue06.png)
 
 The first item is the count of DMA packets that received execution time on the hardware. The second value is the time of these executing packets. The third is the percentage of the viewport area where DMA packets were executing on the hardware. 
 
 ## Types of DMA Packets
 
-![gpu hardware queue07](/Images/gpu-hardware-queue07.png)
+![gpu hardware queue07](images/gpu-hardware-queue07.png)
 
 Four types of DMA packets are found in the GPU Hardware Queue. 
 

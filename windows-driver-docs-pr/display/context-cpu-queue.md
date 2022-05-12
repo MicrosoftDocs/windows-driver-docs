@@ -8,13 +8,13 @@ ms.date: 05/10/2022
 
 The following is a zoomed-in screen shot that shows the GPU Hardware Queue along with the Context CPU Queues of four processes.
 
-![Context CPU Queues of four processes](/Images/context-cpu-queues01.png) 
+![Context CPU Queues of four processes](images/context-cpu-queues01.png) 
 
 The association between the Context CPU Queue items and the items in the GPU Hardware Queue is one of the most fundamental relationships in GPUView. In the preceding diagram, the leftmost red arrow points to the Context CPU Queue color key. The bottom red arrow points to a corresponding data item in the Context CPU Queue and the uppermost red arrow points to a DMA Packet in the GPU Hardware Queue that came from the Dwm.exe process's Context CPU Queue. At any moment in time, you can see what application (Process) has work down on the GPU by looking at the color of the blocks in the GPU Hardware Queue. 
 
 Because Windows virtualizes the video hardware, the work that is performed in the Context CPU Queue represents the graphics workload queued to the hardware, but not actually being processed by the hardware. The following diagram may help with seeing the relationship between the Context CPU Queue and the GPU Hardware Queue. 
 
-![Context CPU Queue and the GPU Hardware Queue](/Images/context-cpu-queues02.png) 
+![Context CPU Queue and the GPU Hardware Queue](images/context-cpu-queues02.png) 
 
 Here, the application submitted work for the GPU at the point of the leftmost red arrow. Already in the queue were two other work items, denoted by the leftmost light blue arrows. Looking above in the GPU Hardware Queue, you see that some other processes had work down on the GPU, and it is not until much later that you finally see the first two work items for the application run in the GPU Hardware Queue (light blue arrows in the GPU Hardware Queue). Eventually, the highlighted work item (Queue Packet) makes it into the GPU Hardware Queue (denoted by the black arrow) and shortly thereafter runs to completion (two yellow arrows). Just after that, the application finally sees the work as being done (rightmost red arrow). Even through the Work Item (Queue Packet) took only 1.5 milliseconds to execute on the hardware, it had to wait for its turn on this very busy machine. To the application, it took about 28 milliseconds from the time it was submitted to the time it was completed.
 
@@ -22,7 +22,7 @@ Here, the application submitted work for the GPU at the point of the leftmost re
 
 The layout of the Context CPU Queue is similar to the layout of the GPU Hardware Queue.
 
-![Details of the Context GPU Queue](/Images/context-cpu-queues03.png)
+![Details of the Context GPU Queue](images/context-cpu-queues03.png)
 
 ## Color Key
 The leftmost rectangle shows the color key for all work items (Queue Packets) in the Context CPU Queue. This color key helps when identifying where the GPU Hardware Queue is spending its time.
