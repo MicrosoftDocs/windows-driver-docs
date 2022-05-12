@@ -12,14 +12,14 @@ The following two diagrams illustrate this association. Notice that the *Vid MM 
 
 The following two diagrams show this relationship. The first one is a clip of the *Object Details* dialog. 
 
-![Object Details Merged.et](\Image\object-details-merged.png) 
+![Object Details Merged.et](.\images\object-details-merged.png) 
 
 The next is a clip of the Segment Viewer window.
 
-![Segment Viewer](\Image\segment-viewer.png)
+![Segment Viewer](.\images\segment-viewer.png)
 
 ## Empty Memory Space
  
 If a block of the Segment address space does not contain video content, it is known as empty space. The Segment Viewer window shows this empty space using gray crosshatches, as shown in the following diagram.
 
-![Empty Memory Space](\Image\empty-memory-space.png)
+![Empty Memory Space](.\images\empty-memory-space.png)
