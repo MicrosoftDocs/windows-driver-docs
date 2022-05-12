@@ -28,8 +28,3 @@ This adjustable thread-viewing functionality comes in handy when you view smalle
 
 > [!NOTE]
 > The difference between levels 2 and 3 and levels 4 and 5 is that there is a cutoff point. The difference from level 2 to level 4 is that the cutoff point is 100 functions. If at least 100 functions are called in the current view window, level 2 displays the thread. If fewer than 100 functions are called in the current view window, the thread is not displayed until you view level 4. Likewise, the difference from level 3 to level 5 is that the cutoff point is 10 percent of the interval (current-view area). If the thread runs for at least 10 percent of the interval, level 3 displays the thread. If the thread runs for less than 10 percent of the interval, the thread is not displayed until you view level 5. 
-
-
-
-
-  
