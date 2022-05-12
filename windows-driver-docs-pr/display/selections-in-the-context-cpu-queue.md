@@ -6,9 +6,11 @@ ms.date: 05/10/2022
 
 # Selections in the Context CPU Queue  
 
-### Standard Queue Packet  
+**Standard Queue Packet**    
 
 The standard queue packet has the time measurements similar to the Standard Dma Packet. Its display takes the following form.
+
+![selections in the context cpu queue 1](\Images\selections-in-the-context-cpu-queue-1.png)
 
 Type: The first line is the type of object displayed. 
 Submission Sequence: The unique number for submission. 
