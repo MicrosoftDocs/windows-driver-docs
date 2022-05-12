@@ -21,5 +21,5 @@ To find out more about Image Color Management and a particular class of output d
 
 [Color Management for Printers](../print/color-management-for-printers.md)
 
-[Color Management for Still Image Devices](images/color-management-for-still-image-devices.md)
+![Color Management for Still Image Devices](images/color-management-for-still-image-devices.md)
 
