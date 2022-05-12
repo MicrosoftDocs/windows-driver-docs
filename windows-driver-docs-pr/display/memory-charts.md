@@ -10,7 +10,7 @@ The Memory Charts show local and system memory usage over time. The graphs are b
 
 The following diagram is a screen shot of the memory associated with an adapter. 
 
-![Memory Associated](images/memory-associated.png)
+![Memory Associated with an Adapter](images/memory-associated.png)
 
 > [!NOTE]
 > That when GPUView displays memory associated with an adapter, it creates a blue gradient area above the GPU Hardware Queue. 
