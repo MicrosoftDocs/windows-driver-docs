@@ -853,7 +853,7 @@
           - name: "Choose Columns Dialog"
             href: choose-columns-dialog.md
           - name: "Exporting Data to a File"
-            href: choose-Sorting-Dialog.md
+            href: exporting-data-to-a-file.md
           - name: "Other Visual Items of the Segment Viewer Window"
             href: other-visual-items-of-the-segment-viewer-window.md
     - name: "XPS rasterization on the GPU"
