@@ -10,13 +10,13 @@ The **Goto** dialog box is a navigational helper. When sharing ETL files, a user
 
 The following figure shows the **Goto** dialog box when the **Duration** check box is selected.
 
-![goto dialog box 1](\Images\goto dialog box 1.png)
+![goto dialog box 1](\Images\goto-dialog-box-1.png)
 
 In the preceding figure, the **Start** value is used for the left side of the main window. The **Duration** value corresponds to the amount of time that the main window displays from the Start location.
 
 The following figure shows the **Goto** dialog box when the **Duration** check box is cleared.
 
-![goto dialog box 2](\Images\goto dialog box 2.png)
+![goto dialog box 2](\Images\goto-dialog-box-2.png)
 
 In the preceding figure, the **Start** value is used for the left side of the main window. The difference between the **Start** and **end** values corresponds to the amount of time for which the main window is displayed. 
 
