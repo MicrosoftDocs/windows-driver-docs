@@ -21,8 +21,8 @@ Each level builds upon the last level by providing more information as the level
 
 You can use the following syntax with this option:  
 
-Gpuview /l 3 
-Gpuview -Limit 5 
+Gpuview /l 3   
+Gpuview -Limit 5  
 
 This adjustable thread-viewing functionality comes in handy when you view smaller blocks of time. As you zoom in and out, the number of threads that GPUView displays remains constant. The smaller block of time that you want to analyze might display a number of threads that contain no information. In this situation, you can press PLUS SIGN (+) followed by MINUS SIGN (-) to make GPUView recalculate the display area.   
 
