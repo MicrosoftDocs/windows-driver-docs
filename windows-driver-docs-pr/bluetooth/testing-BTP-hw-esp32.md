@@ -8,18 +8,18 @@ ms.date: 08/30/2021
 
 ## Overview
 
-The Model 2433 ESP32 is a custom ESP32 board with a 12-pin adapter fit for the Traduci that exercises Wi-Fi connections for BTP. The ESP32 is a microcontorller with integrated Wi-Fi and dual-mode Bluetooth designed for use in IOT devices. More information can be found via the ESP32 page from [**Espressif**](https://www.espressif.com/en/products/socs/esp32).
+The ESP32 is a microcontroller with integrated Wi-Fi and dual-mode Bluetooth designed for use in IoT devices. The Model 2433 ESP32 is a custom ESP32 board with a 12-pin adapter fit for the Traduci that exercises Wi-Fi connections for BTP. More information can be found via the ESP32 page from [**Espressif**](https://www.espressif.com/en/products/socs/esp32).
 The Model 2433 ESP32 allows the ESP32 to be utilized as a Traduci sled device. More information can be found via the Model 2433 ESP32 page from [**MCCI**](https://store.mcci.com/products/esp32-sled) or [**Digilent**](https://digilent.com/shop/pmod-esp32-wireless-communication-module).
 
 | Device Name | Parameter | Usage Example |
 | --- | --- | --- |
-| ESP32 Wi-Fi | esp32wifi | RunWiFiCoexScenarioTests.bat rn52 esp32wifi |
+| ESP32 Wi-Fi | esp32wifi | RunWiFiCoexScenarioTests.bat esp32wifi rn52 |
 
 :::image type="content" source="images/ESP32.png" alt-text="Photo of the Model 2433 ESP32.":::
 
 ## Suported Tests
 
-- [Wi-Fi coexistence tests](testing-BTP-tests-wifi.md) (as an Access Point device)
+- [Wi-Fi coexistence tests](testing-BTP-tests-wifi.md) (as a Wi-Fi Access Point device)
 
 ### ESP32 Device on BTP-compatible sled
 

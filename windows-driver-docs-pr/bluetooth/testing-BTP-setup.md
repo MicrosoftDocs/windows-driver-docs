@@ -1,7 +1,7 @@
 ---
-title: Microsoft Bluetooth Test Platform Setup
-description: How to set up the Microsoft Bluetooth Test Platform Setup 
-ms.date: 06/09/2021
+title: Microsoft Bluetooth Test Platform setup
+description: How to set up the Microsoft Bluetooth Test Platform
+ms.date: 05/13/2022
 ---
 
 # Setting up the Bluetooth Test Platform (BTP)
@@ -29,7 +29,7 @@ To plug a peripheral device into a port on the Traduci, orient the Traduci so th
 
 ## Software Setup
 
-1. Download the [BTP software package](testing-BTP-software-package.md), which will install all required files to the `C:\BTP` directory.
+1. Download the [BTP setup package](testing-BTP-setup-package.md), which will install all required files to the `C:\BTP` directory.
 
 2. Ensure [Secure boot](/windows-hardware/design/device-experiences/oem-secure-boot) is **disabled**.
 
