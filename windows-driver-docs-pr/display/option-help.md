@@ -6,7 +6,7 @@ ms.date: 05/10/2022
 
 # Option: Help  
 
-Gpuview /? 
-Gpuview /h 
-Gpuview /help 
+Gpuview /?  
+Gpuview /h  
+Gpuview /help  
 
