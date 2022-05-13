@@ -98,15 +98,15 @@
     href: testing-Bluetooth-main.md
   - name: "Bluetooth Test Platform (BTP)"
     items:
-    - name: "BTP Overview"
+    - name: "BTP overview"
       href: testing-BTP-Overview.md
     - name: "Setting up BTP"
       items:
-      - name: "Hardware Setup"
+      - name: "Hardware setup"
         href: testing-BTP-setup-hardware.md
-      - name: "Software Setup"
+      - name: "Software setup"
         href: testing-BTP-setup-software.md
-      - name: "Package Setup"
+      - name: "Get the BTP software package"
         href: testing-BTP-setup-package.md
     - name: "Hardware"
       items:
