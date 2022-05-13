@@ -22,6 +22,7 @@ The nRF51 is a Low Energy (LE) radio from Nordic Semiconductor capable of behavi
 - [Human Interface Device (HID) tests](testing-BTP-tests-hid.md)
 - [Battery tests](testing-BTP-tests-battery.md)
 - [Audio & HID tests](testing-BTP-tests-audio-hid.md) (as a HID device)
+- [Wi-Fi coexistence tests](testing-BTP-tests-wifi.md) (as a HID device)
 
 ## Hardware
 

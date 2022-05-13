@@ -1,7 +1,7 @@
 ---
 title: Microsoft Bluetooth Test Platform - Pairing
 description: Bluetooth Test Platform (BTP) pairing tests.
-ms.date: 06/09/2021
+ms.date: 05/05/2022
 ---
 
 # BTP Pairing Tests
@@ -23,7 +23,7 @@ Features and purchasing information for supported devices can be found at [Suppo
 - [Bluefruit Feather](testing-BTP-hw-bluefruit-Feather.md)
 - [BM 64-EVB](testing-BTP-hw-bm64.md)
 - [RN52](testing-BTP-hw-rn52.md)
-- [Human Device Adapter](testing-BTP-human-device-adapter.md)
+- [Human Device Adapter](testing-BTP-hw-human-device-adapter.md)
 
 ## Running the pairing tests
 
@@ -32,7 +32,7 @@ Navigate to the folder where the BTP package was extracted. It will typically be
 - `RunPairingTests.bat <device name>` from an elevated command prompt or
 - `RunPairingTests.ps1 <device name>` from an elevated PowerShell console
 
-Information on available device name parameters can be found in [Bluetooth Test Platform supported hardware](testing-BTP-hw.md#supported-devices).
+Information on available device name parameters can be found in [Bluetooth Test Platform supported hardware](testing-BTP-hw.md).
 
 You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP.
 

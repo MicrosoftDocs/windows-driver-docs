@@ -23,6 +23,7 @@ The nRF52840 is a Low Energy (LE) radio from Nordic Semiconductor capable of beh
 - [Battery tests](testing-BTP-tests-battery.md)
 - [Audio & HID tests](testing-BTP-tests-audio-hid.md) (as a HID device)
 - [Power State HID tests](testing-BTP-tests-power-state-hid.md)
+- [Wi-Fi coexistence tests](testing-BTP-tests-wifi.md) (as a HID device)
 
 ## Hardware
 
