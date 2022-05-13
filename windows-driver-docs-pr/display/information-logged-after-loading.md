@@ -24,7 +24,7 @@ Friendly name
 The friendly name that GPUView associates with the GUID for reference. 
 
 Level  
-A value that GPUView assigns to the event. You can use this value with the /Limit command-line option. For more information about how this value is used, see Option: Limit.
+A value that GPUView assigns to the event. You can use this value with the /**Limit** command-line option. For more information about how this value is used, see [Option: Limit](option-limit.md).
 
 ### FuncStats.txt  
 FuncStats.txt is a text file that contains information about all profiled functions that GPUView is aware of. GPUView scans all processes and threads and summarizes the hit count and time spent in the functions. FuncStats.txt is useful for quickly determining whether a particular function was called during the generation of the ETL file.

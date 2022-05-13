@@ -12,8 +12,7 @@ The following diagram is a screen shot of the memory associated with an adapter.
 
 ![Memory Associated with an Adapter](images/memory-associated.png)
 
-> [!NOTE]
-> That when GPUView displays memory associated with an adapter, it creates a blue gradient area above the GPU Hardware Queue. 
+Note that when GPUView displays memory associated with an adapter, it creates a blue gradient area above the GPU Hardware Queue. 
 
 When viewing a Memory Chart associated with a process, the view is slightly different. 
 
@@ -23,5 +22,4 @@ Notice in this case that the Memory Chart is located below the Context CPU Queue
 
 In either case, the key shows that local video memory is shown in red and system memory is shown in blue. The size of DMA Packets is shown in green. The scale is relative to the largest amount of allocated memory at one given time. 
 
-> [!NOTE] 
-> That with the two Memory Charts above, the scales are radically different. For the adapter Memory Chart it tops out at 339,574,784, whereas the process Memory Chart tops out at 22,200,320, which makes the adapter memory an order of magnitude larger than this particular process. 
+Note that with the two Memory Charts above, the scales are radically different. For the adapter Memory Chart it tops out at 339,574,784, whereas the process Memory Chart tops out at 22,200,320, which makes the adapter memory an order of magnitude larger than this particular process.

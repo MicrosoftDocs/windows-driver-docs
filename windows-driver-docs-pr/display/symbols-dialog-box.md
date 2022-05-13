@@ -20,14 +20,14 @@ The following diagram is a screen shot showing that GPUView has not used symbols
 
 Notice that the first thread name in the csrss.exe process is winsrv.dll+0x42B0. Viewing the same file with symbols enabled, you get the following.  
 
-Notice that the thread name has changed to winsrv.dll!StartCreateSystemThreads.  
-
 ![symbols dialog box 3](\Images\symbols-dialog-box-3.png)
 
-**Resolve Symbols**  
+Notice that the thread name has changed to winsrv.dll!StartCreateSystemThreads.  
+
+## Resolve Symbols
 
 To turn on symbol resolution, select the Resolve Symbols check box and then press the **Ok** button. During the processing of the **Ok** button, the symbol changes will be applied. 
 
-**Use Symbol Server**  
+## Use Symbol Server
 
 If **Use Symbol Server** is selected before the **Ok** button is pressed, GPUView uses the standard symbol path to locate symbols. When doing so, it follows the standard symbol lookup that XPerfView.exe does in GPUView's parent directory. For more information, see XPerfView documentation.

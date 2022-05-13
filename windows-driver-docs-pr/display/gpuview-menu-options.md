@@ -6,6 +6,8 @@ ms.date: 05/10/2022
 
 # GPUView Menu Options  
 
+This section describes GPUView's menu options.
+
 **File->Exit**  
 Exits the GPUView program.  
 

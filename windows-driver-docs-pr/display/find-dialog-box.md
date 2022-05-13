@@ -18,22 +18,22 @@ The process and thread names are found along the left-hand side of GPUView's mai
 
 Any part of the displayed name can be part of the search. As shown in this diagram, the hexadecimal offsets can be part of the search. If symbols are enabled, the offsets are resolved into the user-friendly names, which helps considerably when performing the searches.  
 
-**Find Next button**  
+## Find Next button
 
 This button is linked to the ENTER key. Pressing the button or pressing the ENTER key activates a search for the string in the **Find what** edit control. When a match is found, the dialog scrolls that match into view. If no match is found, the dialog issues the standard system message beep. Note that the search is performed considering the view levels shown in the main window. If the search string matches a process or thread that is not currently displayed at the current view level, the view level is adjusted to show the process or thread. This makes it easier to find hidden threads and processes. 
 
-**Cancel**  
+## Cancel
 
 Terminates the dialog without saving settings.
 
-**Done**  
+## Done
 
 Terminates the dialog and saves settings.
 
-**Processes and Threads check boxes**  
+## Processes and Threads check boxes
 
 When the search is performed, the process and thread lists are considered only if the corresponding check box is selected.
 
-**Direction**  
+## Direction
 
 The dialog remembers the current search location. This means that you can search up or down. The default search direction is down.

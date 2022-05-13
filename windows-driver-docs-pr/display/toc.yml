@@ -773,6 +773,7 @@
           - name: "Arrow on Event Line"
             href: arrow-on-event-line.md
           - name: "GPUView Command-Line Options"
+            href: gpuview-command-line-options.md          
             items:
             - name: "Option: Help"
               href: option-help.md
@@ -807,6 +808,7 @@
           - name: "Viewing a Thread"
             href: viewing-a-thread.md
           - name: "Charts in the Main Window"
+            href: charts-in-the-main-window.md
             items:
             - name: "Memory Charts"
               href: memory-charts.md

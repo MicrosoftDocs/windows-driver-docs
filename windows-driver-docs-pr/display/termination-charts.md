@@ -10,8 +10,7 @@ The Termination Charts are both adapter- and process-specific. They show memory 
 
 ![Adapter Level](images/adapter-level.png)
 
-> [!NOTE]
-> That the Termination Charts at the adapter level are displayed in their own blue gradient area just above the associated adapter.
+Note that the Termination Charts at the adapter level are displayed in their own blue gradient area just above the associated adapter.
 
 ![Process Level](images/process-level.png)
 

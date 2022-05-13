@@ -12,7 +12,7 @@ GPUView is shipped with the Windows Performance Toolkit (WPT) as an installable 
 
 The MSI file installs the following files.
 
-| Files Purpose                                                                                           | Purpose                                                                      |
+| Files                                                                                           | Purpose                                                                      |
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | EULA.rtf                                                                                                | Legal agreement                                                              |
 | GPUView.chm                                                                                             | GPUView help file                                                            |
@@ -20,7 +20,7 @@ The MSI file installs the following files.
 | GPUView.exe                                                                                             | Program for viewing ETL files with video data                                |
 | AEplugin.dll, DWMPlugin.dll, FWPlugin.dll, MFPlugin.dll, NTPlugin.dll, DxPlugin.dll, and DxgkPlugin.dll | Plug-ins that are used to interpret events                                   |
 | DxEtw.dll and Perf_gpuv.dll                                                                             | DLLs used by GPUView for internal processing and accessing xperf information |
-| CoreTPlugin.dll                                                                                         | Plug-in that is used for the Statistical Options dialog box                  |
+| CoreTPlugin.dll                                                                                         | Plug-in that is used for the **Statistical Options** dialog box                  |
 | Log.cmd, Circularlog.cmd                                                                                | Script to turn on and off the appropriate information for logging            |
 
 The MSI file is self-extracting. It installs (or uninstalls) GPUView on your operating system. The default installation directory is in the \Microsoft Windows Performance Toolkit directory. You can choose the Custom Installation option for custom placement of the binaries and corresponding support files.

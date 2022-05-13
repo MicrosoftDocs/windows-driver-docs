@@ -6,7 +6,7 @@ ms.date: 05/10/2022
 
 # Selections in the Flip Queue
 
-**Flip Queue Entry**  
+## Flip Queue Entry
 
 The Flip Queue Entry has data of the following form.
 
