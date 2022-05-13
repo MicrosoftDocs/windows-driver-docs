@@ -21,9 +21,8 @@ There are several different filter levels. Examples of the different levels can 
 
 You can use the following syntax with this option:  
 
-Gpuview /l 3 
-Gpuview -Limit 5   
+Gpuview /l 3  
+Gpuview -Limit 5  
 
 > [!NOTE]
 > If you specify a level greater than the supported levels, GPUView ignores the input, sets the level to the default level, and loads typically. If you do not specify a level, which is the default, GPUView automatically loads as if you specified level 4 on the command line. If you specify more than one level, GPUView does not load. 
-
