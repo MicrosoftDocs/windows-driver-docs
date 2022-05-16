@@ -23,7 +23,8 @@ A REG\_SZ value that defines the interfaces to which the component can bind at i
 <a href="" id="lowerrange"></a>**LowerRange**  
 A REG\_SZ value that defines the interfaces to which the component can bind at its lower edge. For physical adapters, this interface should always be the network media, such as Ethernet, to which the adapter connects.
 
-**Note**  The **DefUpper** and **DefLower** values in Windows 95/98/Me network INF files, however, are not supported for INF files that will be used on Windows 2000 and later versions of the operating system.
+> [!NOTE]
+> The **DefUpper** and **DefLower** values in Windows 95/98/Me network INF files, however, are not supported for INF files that will be used on Windows 2000 and later versions of the operating system.
 
  
 
@@ -207,8 +208,9 @@ The following table lists the Microsoft-supplied **LowerRange** values:
 
 The **UpperRange** and **LowerRange** values specify the types of interfaces -- not the actual components -- to which a component can bind. The binding engine binds a network component to all components that provide the specified interface at the appropriate (upper or lower) edge. For example, a protocol with a **LowerRange** of ndis5 binds to all components that have an **UpperRange** of ndis5, such as physical or virtual adapters.
 
-<div class="alert"><b>Note</b> NDIS LWF drivers cannot attach to adapters that have nolower in their <b>LowerRange</b> of their INF file. NDIS LWF drivers are not allowed to have nolower in their <b>FilterMediaTypes</b>. </div>
-<div> </div>
+> [!NOTE] 
+> NDIS LWF drivers cannot attach to adapters that have nolower in their **LowerRange** of their INF file. NDIS LWF drivers are not allowed to have nolower in their FilterMediaTypes.
+
 If an NDIS 5.x Net component (adapter) works only with one or more specific protocols, then its **UpperRange** should be assigned one or more protocol-specific values, such as ndis5\_atalk, ndis5\_dlc, ndis5\_ip, ndis5\_ipx, ndis5\_nbf, or ndis5\_streams. Such a net class component should not be assigned an **UpperRange** value of ndis5, because this would cause that component to bind to all protocols that provide an ndis5 lower edge.
 
 An INF-file-writer can define and use vendor-specific **UpperRange** and **LowerRange** values for private binding interfaces. For example, if a vendor wants to bind its adapter only to its own proprietary protocol driver, the INF-file-writer could specify **XXX** for the **UpperRange** of the adapter and **XXX** for the **LowerRange** of the proprietary protocol. The Windows 2000 binding engine will bind all components that have an **UpperRange** of **XXX** (in this case, the adapter) with all components that have a **LowerRange** of **XXX** (in this case, the proprietary protocol).
