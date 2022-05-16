@@ -1,10 +1,11 @@
 ---
 description: Install WinUSB (Winusb.sys) in the device's kernel-mode stack as the USB device's function driver instead of implementing a driver.
-title: WinUSB (Winusb.sys) installation
-ms.date: 03/18/2022
+title: WinUSB (Winusb.sys) installation for developers
+ms.date: 05/16/2022
+ms.custom: contperf-fy22q4
 ---
 
-# WinUSB (Winusb.sys) installation
+# WinUSB (Winusb.sys) installation for developers
 
 For certain Universal Serial Bus (USB) devices, such as devices that are accessed by only a single application, you can install [WinUSB](winusb.md) (*Winusb.sys*) in the device's kernel-mode stack as the USB device's function driver instead of implementing a driver.
 
