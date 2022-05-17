@@ -89,7 +89,7 @@ For device classes that follow a port/miniport driver model, system-supplied por
 
 Starting with Windows 10, version 2004 (also known as 20H1 or build 19041), KS.sys opts-out of DFx and related HLK requirements by default. Third-party minports of KS.sys can opt-in to DFx and related HLK by registering itself with PoFx and adding KsDFxSupportEnable registry key to the INF. 
 
-A driver can register itself with PoFx by using the implementation mentioned in [this section](/windows-hardware/drivers/kernel/introduction-to-the-directed-power-management-framework#requirements-for-wdm-non-miniport-drivers). Additionally, the following line needs to be added in the [AddReg directive](/windows-hardware/drivers/install/inf-addreg-directive) section.
+A driver can register itself with PoFx by using the implementation mentioned in [this section](#requirements-for-wdm-non-miniport-drivers). Additionally, the following line needs to be added in the [AddReg directive](../install/inf-addreg-directive.md) section.
 
 ```inf
 HKR, , KSDFxSupportEnable, 0x00010001, 1
