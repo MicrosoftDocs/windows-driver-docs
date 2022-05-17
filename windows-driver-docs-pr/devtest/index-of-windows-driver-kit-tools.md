@@ -17,7 +17,7 @@ keywords:
 - GUIDGen WDK
 - GUID Generator WDK
 - GUIDGen.exe WDK
-ms.date: 08/17/2021
+ms.date: 05/17/2022
 ---
 
 # Index of Windows Driver Kit Tools
@@ -72,7 +72,7 @@ The information in the following tables describes the tools that are useful for 
 |----|----|----|
 |WpdDeviceInspector (WpdDeviceInspector.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\WpdDeviceInspector.exe</br>%WindowsSdkDir%\tools\x86\WpdDeviceInspector.exe|Queries a WPD driver and generates a comprehensive HTML report that describes your device and its capabilities. For example, you can use it to retrieve a list of supported device commands and objects. And, this tool will generate a list of all properties supported by each object.</br>WDK Documentation:</br>[Windows Portable Devices](/windows/win32/windows-portable-devices)</br>[WPD Driver Development Tools](../portable/familiarizing-yourself-with-the-sample-driver.md)|
 |WpdInfo (WpdInfo.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\WpdInfo.exe</br>%WindowsSdkDir%\tools\x86\WpdInfo.exe|Performs common WPD operations such as: opening and closing a device, creating or deleting objects on a device, and issuing device commands.</br>WDK Documentation:</br>[Windows Portable Devices](/windows/win32/windows-portable-devices)</br>[WPD Driver Development Tools](../portable/familiarizing-yourself-with-the-sample-driver.md)|
-|Microsoft Network Monitor (NetMon.exe)</br>**WDK tool:** No|Download the Microsoft Network Monitor</br>[NetMon.exe](https://www.microsoft.com/download/details.aspx?displaylang=en&id=4865)|Displays trace information from WPD components. This tool replaces WpdMon.exe which had shipped in previous versions of the WDK.</br>WDK Documentation:</br>[Windows Portable Devices](/windows/win32/windows-portable-devices)</br>[WPD Driver Development Tools](../portable/familiarizing-yourself-with-the-sample-driver.md), see [Using the Network Monitor Tool](../portable/using-the-netmon-tool.md).|
+|Microsoft Network Monitor (NetMon.exe)</br>**WDK tool:** No|Download the Microsoft Network Monitor</br>[NetMon.exe](https://go.microsoft.com/fwlink/p/?linkid=248501)|Displays trace information from WPD components. This tool replaces WpdMon.exe which had shipped in previous versions of the WDK.</br>WDK Documentation:</br>[Windows Portable Devices](/windows/win32/windows-portable-devices)</br>[WPD Driver Development Tools](../portable/familiarizing-yourself-with-the-sample-driver.md), see [Using the Network Monitor Tool](../portable/using-the-netmon-tool.md).|
 
 ### Printer Drivers
 
