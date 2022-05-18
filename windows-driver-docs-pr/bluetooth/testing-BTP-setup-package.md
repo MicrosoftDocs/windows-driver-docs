@@ -56,7 +56,7 @@ Click the following button to download the latest version.
 
 ### Architecture dependent binaries
 
-The files listed in this table are available in X86, AMD64, and ARM64 architectures. The installer will extract one instance of each per architecture.
+The files listed in this table are available in X86, AMD64, and Arm64 architectures. The installer will extract one instance of each per architecture.
 
 | Test Tool | Description | Filename |
 | --- | --- | --- |

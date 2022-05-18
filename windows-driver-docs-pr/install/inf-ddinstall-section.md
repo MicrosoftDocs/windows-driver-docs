@@ -210,8 +210,8 @@ Except for devices that have no associated files to be transferred from the sour
 - An <em>install-section-name</em>**.ntx86** section that specifies the entries for device/driver installations specific to x86-based platforms.
 - An <em>install-section-name</em>**.ntia64** section that specifies the entries for device/driver installations specific to Itanium-based platforms.
 - An <em>install-section-name</em>**.ntamd64** section that specifies the entries for device/driver installations specific to x64-based platforms.
-- An <em>install-section-name</em>**.ntarm** section that specifies the entries for device/driver installations specific to ARM-based platforms.
-- An <em>install-section-name</em>**.ntarm64** section that specifies the entries for device/driver installations specific to ARM64-based platforms.
+- An <em>install-section-name</em>**.ntarm** section that specifies the entries for device/driver installations specific to Arm-based platforms.
+- An <em>install-section-name</em>**.ntarm64** section that specifies the entries for device/driver installations specific to Arm64-based platforms.
 
 
 - An *install-section-name* or <em>install-section-name</em>**.nt** section that specifies the entries for device/driver installations that are not specific to a particular hardware platform.

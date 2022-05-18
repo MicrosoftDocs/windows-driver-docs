@@ -308,7 +308,7 @@ displayCommPackets | Flag if ‘yes’, then we will display the RSP protocol co
 enableThrowExceptionOnMemoryErrors | This attribute will be checked by the GDB server client when there is a GDB error response packet (E0x) to determine if the client should throw an exception and stop reading memory.
 qSupportedPacket | This allows configuring the GDB client to request which xml register architecture file should be sent by the GDB server HW debugger following the xml target description file (basically, the client will inform the GDB server which architectures are supported by the client, currently, the client does support the x64 architecture).
 ExdiGdbServerTargetData | Specifies the parameters related to the hardware Target that is debugged by the GdbServer session.
-targetArchitecture | String containing the target hardware architecture. Possible values: X86, X64, ARM, ARM64. Currently, the exdiGdbSrv.dll supports only X86 and ARM.
+targetArchitecture | String containing the target hardware architecture. Possible values: X86, X64, Arm, Arm64. Currently, the exdiGdbSrv.dll supports only X86 and Arm.
 targetFamily    | String containing the target hardware family. Possible values: ProcessorFamilyX86, ProcessorFamilyX64, ProcessorFamilyARM, ProcessorFamilyARM64.
 numberOfCores   | Number of processor cores that the target support. This parameter will be validated when we use a multi-Gdbserver session (T32-GdbServer session). The below ‘MultiCoreGdbServerSessions’ attribute should be set to ‘yes’.
 EnableSseContext | Flag if ‘yes’, then the ‘g’ context RSP packet will include floating point registers values. This parameter makes sense only for Intel family targets.
@@ -346,12 +346,12 @@ Size | This is the register size in bytes.
     <!--  QEMU SW simulator GDB server configuration  -->
     <ExdiTarget Name="QEMU">
     <ExdiGdbServerConfigData agentNamePacket="" uuid="72d4aeda-9723-4972-b89a-679ac79810ef" displayCommPackets="yes" debuggerSessionByCore="no" enableThrowExceptionOnMemoryErrors="yes" qSupportedPacket="qSupported:xmlRegisters=aarch64,i386">
-    <ExdiGdbServerTargetData targetArchitecture="ARM64" targetFamily="ProcessorFamilyARM64" numberOfCores="1" EnableSseContext="no" heuristicScanSize="0xfffe" targetDescriptionFile="target.xml"/>
+    <ExdiGdbServerTargetData targetArchitecture="Arm64" targetFamily="ProcessorFamilyARM64" numberOfCores="1" EnableSseContext="no" heuristicScanSize="0xfffe" targetDescriptionFile="target.xml"/>
     <GdbServerConnectionParameters MultiCoreGdbServerSessions="no" MaximumGdbServerPacketLength="1024" MaximumConnectAttempts="3" SendPacketTimeout="100" ReceivePacketTimeout="3000">
     <Value HostNameAndPort="LocalHost:1234"/>
     </GdbServerConnectionParameters>
     <ExdiGdbServerMemoryCommands GdbSpecialMemoryCommand="no" PhysicalMemory="no" SupervisorMemory="no" HypervisorMemory="no" SpecialMemoryRegister="no" SystemRegistersGdbMonitor="no" SystemRegisterDecoding="no"> </ExdiGdbServerMemoryCommands>
-        <ExdiGdbServerRegisters Architecture = "ARM64" FeatureNameSupported = "sys">
+        <ExdiGdbServerRegisters Architecture = "Arm64" FeatureNameSupported = "sys">
             <Entry Name ="X0"  Order = "0" Size = "8" />
             <Entry Name ="X1"  Order = "1" Size = "8" />
             <Entry Name ="X2"  Order = "2" Size = "8" />

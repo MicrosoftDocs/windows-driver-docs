@@ -150,12 +150,12 @@ The following table describes the various driver package INF sections and fields
 <td></td>
 <td><p>Firmware,</p>
 <p>NTarm</p></td>
-<td>Identifies the &lt;Models&gt;] section that defines the firmware resource devices supported by this driver package, including their target driver platforms. In this example, the drivers are only targeted for the ARM-based NT platform and the [&lt;Models&gt;] section is [Firmware.NTarm].</td>
+<td>Identifies the &lt;Models&gt;] section that defines the firmware resource devices supported by this driver package, including their target driver platforms. In this example, the drivers are only targeted for the Arm-based NT platform and the [&lt;Models&gt;] section is [Firmware.NTarm].</td>
 </tr>
 <tr class="odd">
 <td><strong>[Firmware.NTarm]</strong></td>
 <td></td>
-<td>[&lt;Models&gt;] section for the ARM-based NT platform that lists all firmware resource devices for which updates are defined. Each hardware model line specifies a [&lt;DDInstall&gt;] section and its associated hardware ID match.</td>
+<td>[&lt;Models&gt;] section for the Arm-based NT platform that lists all firmware resource devices for which updates are defined. Each hardware model line specifies a [&lt;DDInstall&gt;] section and its associated hardware ID match.</td>
 </tr>
 <tr class="even">
 <td>%FirmwareDesc%</td>

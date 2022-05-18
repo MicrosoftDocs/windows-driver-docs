@@ -1,16 +1,16 @@
 ---
-title: Setting Up Kernel-Mode Debugging over USB EEM on an ARM device using KDNET
-description: Debugging Tools for Windows supports kernel debugging over a USB cable using EEM on an ARM device. This topic describes how to set up USB EEM on an ARM device using the kdnet.exe utility.
+title: Setting Up Kernel-Mode Debugging over USB EEM on an Arm device using KDNET
+description: Debugging Tools for Windows supports kernel debugging over a USB cable using EEM on an Arm device. This topic describes how to set up USB EEM on an Arm device using the kdnet.exe utility.
 ms.date: 11/23/2020
 ---
 
-# Setting Up Kernel-Mode Debugging over USB EEM on an ARM device using KDNET
+# Setting Up Kernel-Mode Debugging over USB EEM on an Arm device using KDNET
 
-Debugging Tools for Windows supports kernel debugging over a USB cable using EEM on an ARM device. This topic describes how to set up USB EEM on an ARM device using the kdnet.exe utility.
+Debugging Tools for Windows supports kernel debugging over a USB cable using EEM on an Arm device. This topic describes how to set up USB EEM on an Arm device using the kdnet.exe utility.
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*.
 
-## Kernel-Mode USB EEM ARM device requirements
+## Kernel-Mode USB EEM Arm device requirements
 
 The following is required:
 
@@ -42,7 +42,7 @@ On the Surface Pro X, use the lower of the two USB C ports is used for KDNET EEM
 
 To specify the debugging port that will be used, busparm is used. Typically just the first busparam is used and it’s either 0 or 1 depending on the device.
 
-ARM devices use ACPI DBG2 table for configuring the debugger, where the busparams points to the DBG2 table entry. Typically, devices don't use busparams=0, since the 0 DBG2 table entry is normally reserved for the serial device COM.
+Arm devices use ACPI DBG2 table for configuring the debugger, where the busparams points to the DBG2 table entry. Typically, devices don't use busparams=0, since the 0 DBG2 table entry is normally reserved for the serial device COM.
 
 Use the kdnet.exe utility to display the parameter information for controllers that support KDNET-EEM-USB transport debugging.
 

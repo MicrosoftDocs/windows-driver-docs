@@ -61,7 +61,7 @@ You can enter one of the following machine types.
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>arm</strong></p></td>
-<td align="left"><p>Use an ARM64 processor mode.</p></td>
+<td align="left"><p>Use an Arm64 processor mode.</p></td>
 </tr>
 </tr>
 <tr class="evenodd">
