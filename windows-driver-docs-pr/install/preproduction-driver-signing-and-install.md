@@ -15,7 +15,8 @@ On retail and production systems, the Windows kernel only trusts and loads drive
 
 Now, the Windows kernel supports loading pre-production drivers signed with the WHQL/WHCP pre-production certificate. The WHQL/WHCP signature accessible through the Microsoft Hardware Developer Center (HDC).
 
-## Getting your driver pre-production signed by Hardware Dev Center (HDC)
+## Prerequisites
+- [Sign your pre-production drivers with Partner Center Hardware dashboard](../dashboard/create-a-new-hardware-submission.md)
 
 The first step is to submit your driver to HDC to request pre-production signing.
 
