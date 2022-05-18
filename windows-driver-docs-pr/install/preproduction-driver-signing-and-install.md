@@ -25,7 +25,7 @@ Once you have a driver that has been pre-production signed, you're ready to prov
 
 The provisioning tools and payload are provided in [Windows Insider Preview WDK](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK) version 22557 and above.
 
-Use of the EnableUefiSbTest tool is optional, and the Microsoft test keys can be manually provisioned. The Microsoft test key must be included in the Secure Boot database (DB) and the Secure Boot Configuration Policy (SBCP) to enable trust for the pre-production driver signer is Microsoft test signed.
+Use of the EnableUefiSbTest tool is optional, and the Microsoft test keys can be manually provisioned. The Microsoft test key must be included in the Secure Boot database (DB) and the Secure Boot Configuration Policy (SBCP) to enable trust for the pre-production WHQL/WHCP driver signature.
 
 > [!NOTE]
 > When provisioning any of the Secure Boot databases, never production sign a payload with the Microsoft test keys inside.
