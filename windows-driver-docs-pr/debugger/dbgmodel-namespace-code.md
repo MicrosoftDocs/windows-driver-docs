@@ -22,7 +22,7 @@ For an end-to-end example of how this namespace and objects and be used, see the
 
 |Name|Return Type|Signature|Description|
 |--- |--- |--- |--- |
-|CreateDisassembler| [disassembler](dbgmodel-object-disassembler.md)|CreateDisassembler([architecture])|Creates a disassembler object of the specified architecture. Architecture may be one of "Arm", "Arm64", "X64", or "X86". If the architecture is not specified, X64 is assumed. |
+|CreateDisassembler| [disassembler](dbgmodel-object-disassembler.md)|CreateDisassembler([architecture])|Creates a disassembler object of the specified architecture. Architecture may be one of "ARM", "ARM64", "X64", or "X86". If the architecture is not specified, X64 is assumed. |
 |TraceDataFlow|[collection](dbgmodel-namespace-collections.md) of [instructions](dbgmodel-object-instruction.md)|TraceDataFlow([address])|Looks at the instruction at the specified *address* (or the current instruction pointer if no address is specified) and all of its source operands. This method walks backwards through the control flow of the function looking for any instruction which influenced the source operands of the traced instruction. **This method requires loading the CodeFlow extension found in the [CodeFlow.js sample](https://github.com/Microsoft/WinDbg-Samples/tree/master/CodeFlow).**|
 
 ## Remarks
