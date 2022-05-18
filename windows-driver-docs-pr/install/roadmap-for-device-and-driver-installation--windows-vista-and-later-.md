@@ -35,7 +35,13 @@ To install a device and driver in the Windows operating system, follow these st
 
     For more information, see [Signing Drivers during Development and Test](./introduction-to-test-signing.md).
 
--   Step 5: Release-sign your driver package for distribution.
+-   Step 5: Preproduction-sign your driver package to test with Secure Boot.
+
+    Preproduction-signing refers to using the WHQL/WHCP preproduction certificate to sign a prerelease version of a [driver package](driver-packages.md) for use on retail/production systems without having to enable TESTSIGNING. This capability allows developers to test drivers with Secure Boot on before release-signing their driver package. 
+
+    For more information, see [Preproduction Driver Signing and Testing](./preproduction-driver-signing-and-install.md).
+
+-   Step 6: Release-sign your driver package for distribution.
 
     After you have tested and verified your [driver package](driver-packages.md), you should release-sign the driver package. Release-signing identifies the publisher of a driver package. While this step is optional, driver packages should be release-signed for the following reasons:
 
@@ -51,7 +57,7 @@ To install a device and driver in the Windows operating system, follow these st
 
     For more information, see [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md).
 
--   Step 6: Distribute your driver package.
+-   Step 7: Distribute your driver package.
 
     The final step is to distribute the [driver package](driver-packages.md). If your driver package meets the quality standards that are defined in the the [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/) (for Windows 10/11), or the [Windows Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) (for Windows 8/8.1 and older operating systems), you can distribute it through Microsoft Windows Update program. For more information, see [Publishing a driver to Windows Update](../dashboard/publish-a-driver-to-windows-update.md).
 
