@@ -56,7 +56,7 @@ For info about the latest **released** versions of the WDK, see [Download the Wi
 * The WDK now supports Visual Studio 2022.  All editions are supported.  The WDK no longer supports Visual Studio 2019.
 * Download from [Visual Studio 2022](/visualstudio/releases/2022).
 * Select workload: **Development with C++**.
-* For Arm64 and ARM64EC drivers, you must additionally install the component: **Individual components -> Compilers, build tools, and runtimes -> Visual C++ compilers and libraries for Arm64/ARM64EC**. Note that the WDK has Spectre mitigation enabled by default but requires Spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for.
+* For Arm64 and Arm64EC drivers, you must additionally install the component: **Individual components -> Compilers, build tools, and runtimes -> Visual C++ compilers and libraries for Arm64/Arm64EC**. Note that the WDK has Spectre mitigation enabled by default but requires Spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for.
 
 ### 2. Disable strong name validation
 
