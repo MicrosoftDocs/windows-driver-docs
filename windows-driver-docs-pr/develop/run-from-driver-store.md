@@ -1,18 +1,26 @@
 ---
 title: Run From Driver Store
 description: This page describes how to make use of 'run from driver store' concepts in a driver package.
-ms.date: 11/10/2021
+ms.date: 05/12/2022
 ---
 
 # Run From Driver Store
 
-An INF that is using 'run from [Driver Store](../install/driver-store.md)' means that the INF uses [**DIRID 13**](../install/using-dirids.md) to specify the location for driver package files on install.
+An INF that is using 'run from [Driver Store](../install/driver-store.md)' means that the INF uses [**DIRID 13**](../install/using-dirids.md) to specify the location for [driver package](../install/driver-packages.md) files on install.
 
 For a 'run from Driver Store' file payloaded by an INF, the *subdir* listed in the [**SourceDisksFiles**](../install/inf-sourcedisksfiles-section.md) entry for the file in the INF **must** match the subdir listed in the [**DestinationDirs**](../install/inf-destinationdirs-section.md) entry for the file in the INF.
 
 Additionally, a [**CopyFiles**](../install/inf-copyfiles-directive.md) directive cannot be used to rename a file that is run from Driver Store. These restrictions are required so that the installation of an INF on a device does not result in the creation of new files in the Driver Store directory.
 
 Since [**SourceDisksFiles**](../install/inf-sourcedisksfiles-section.md) entries cannot have multiple entries with the same filename and CopyFiles cannot be used to rename a file, every 'run from Driver Store' file that an INF references must have a unique file name.
+
+Driver packages have general support for 'run from Driver Store' starting with Windows 10 1709. However, certain device stacks may place additional restrictions on files you need to provide that plug into that stack. Some examples are these device stacks that did not support 'run from Driver Store' until Windows 10 1803:
+
+- UMDF driver binaries: See [Restricting the Loading Location of UMDF Drivers](../wdf/restricting-the-loading-location-of-umdf-drivers.md) for more information
+
+- UEFI firmware update: See [Authoring an update driver package](../bringup/authoring-an-update-driver-package.md) for more information
+
+If providing a binary that plugs into a particular device stack, please consult the documentation for the specific device stack you are plugging into to check if it supports providing a full file path to the binary and if there are any restrictions on that full file path. If it supports providing a full file path to the binary with no restrictions on that path, then it should support the file being 'run from Driver Store'.
 
 ## Dynamically finding and loading files from the Driver Store
 
@@ -22,7 +30,7 @@ Sometimes there is a need for a component to load a file that is part of a drive
 
 When a file in a driver package needs to load another file from the same driver package, one potential option for dynamically discovering that file is to determine the directory that this file is running from and to load the other file relative to that directory.
 
-A WDM or KMDF driver that is running from the Driver Store on Windows 10 version 1803 and later which needs to access other files from its driver package should call [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdriverdirectory) with *DriverDirectoryImage* as the directory type to get the directory path that the driver was loaded from. Alternatively for drivers that need to support OS versions before Windows 10 version 1803, use [**IoQueryFullDriverPath**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioqueryfulldriverpath) to find the driver's path, get the directory path it was loaded from, and look for files relative to that path.  If the kernel mode driver is a KMDF driver, it can use [**WdfDriverWdmGetDriverObject**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverwdmgetdriverobject) to retrieve the WDM driver object to pass to IoQueryFullDriverPath. 
+A WDM or KMDF driver that is running from the Driver Store on Windows 10 version 1803 and later which needs to access other files from its driver package should call [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdriverdirectory) with *DriverDirectoryImage* as the directory type to get the directory path that the driver was loaded from. Alternatively for drivers that need to support OS versions before Windows 10 version 1803, use [**IoQueryFullDriverPath**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioqueryfulldriverpath) to find the driver's path, get the directory path it was loaded from, and look for files relative to that path.  If the kernel mode driver is a KMDF driver, it can use [**WdfDriverWdmGetDriverObject**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverwdmgetdriverobject) to retrieve the WDM driver object to pass to IoQueryFullDriverPath.
 
 Usermode binaries can use [**GetModuleHandleExW**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandleexw) and [**GetModuleFileNameW**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) to determine where the driver was loaded from.  For example, a UMDF driver binary may do something like the following:
 
@@ -43,8 +51,9 @@ In some scenarios, a driver package may contain a file that is intended to be lo
 
 Here are a couple of examples of scenarios that may involve loading files from a driver package:
 
-* A user mode DLL in a driver package provides an interface for communicating with a driver in the driver package.
-* An [extension driver package](../install/using-an-extension-inf-file.md) contains a configuration file that is loaded by the driver in the base driver package.
+- A user mode DLL in a driver package provides an interface for communicating with a driver in the driver package.
+
+- An [extension driver package](../install/using-an-extension-inf-file.md) contains a configuration file that is loaded by the driver in the base driver package.
 
 In these situations, the driver package should set some state on a device or device interface that indicates the path of the file that is expected to be loaded.
 
