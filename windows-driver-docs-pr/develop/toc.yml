@@ -22,6 +22,8 @@
     href: dch-example.md
   - name: "Debugging a Windows Driver"
     href: debugging-a-windows-driver.md
+  - name: "Porting an INF to follow driver package isolation"
+    href: porting-inf-to-windows-driver.md
 - name: "Building Drivers"
   items: 
   - name: "Creating a New Device Function Driver"
