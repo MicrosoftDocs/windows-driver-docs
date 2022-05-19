@@ -36,6 +36,10 @@ Windows 7|Windows Server 2008 R2 SP1|
 
 The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](/visualstudio/releases/2019/system-requirements).
 
+> [!NOTE]
+> Visual Studio 2022 is not supported by the Windows 11, version 21H2 WDK. To use Visual Studio 2022 to develop and test drivers, download the Windows 11, version 22H2 WDK. For details, see [Download the Windows Driver Kit (WDK)](./download-the-wdk).
+
+
 The following table indicates which Visual Studio version is required for the different releases of the WDK.
 
 | Targeted versions of Windows      | Edition(s) of Visual Studio            |
