@@ -11,7 +11,7 @@ This topic describes how to set up QEMU Kernel-Mode Debugging using EXDI. The Wi
 
 The scenario described uses a Windows x64 Virtual Machine and a QEMU GDB server, also running on Windows.
 
-It is possible to  connect to other operating systems serving as the host, such as Linux. QEMU, the virtualization and machine emulation software, can run on numerous architectures, such as x64 and ARM64. The ExdiGdb debugging server also supports other processors, for example it is possible to use WinDbg to debug QEMU running on ARM64. This provides multiple options, to debug a Windows VMs, so the Windows VM can be HW debugged via the available QEMU GDB server connected to the Debugger Host EXDI GDB server client.
+It is possible to  connect to other operating systems serving as the host, such as Linux. QEMU, the virtualization and machine emulation software, can run on numerous architectures, such as x64 and Arm64. The ExdiGdb debugging server also supports other processors, for example it is possible to use WinDbg to debug QEMU running on Arm64. This provides multiple options, to debug a Windows VMs, so the Windows VM can be HW debugged via the available QEMU GDB server connected to the Debugger Host EXDI GDB server client.
 
 For general information on setting up configuring and troubleshooting EXDI connections, see [Configuring the EXDI Debugger Transport](configuring-the-exdi-debugger-transport.md).
 
@@ -44,7 +44,7 @@ In this topic, we will describe the process to attach to a QEMU Virtual Windows 
 
 ## Download and Install QEMU On Windows
 
-QEMU is a generic and open source machine emulator and virtualizer that causes dynamic translation. When QEMU is used as a machine emulator - it can run OS’s and programs made for one processor (such as an ARM64) on a different machine (a x64 PC). It can also can run/host virtual machines images for different OS's (Windows/Linux/Mac).
+QEMU is a generic and open source machine emulator and virtualizer that causes dynamic translation. When QEMU is used as a machine emulator - it can run OS’s and programs made for one processor (such as an Arm64) on a different machine (a x64 PC). It can also can run/host virtual machines images for different OS's (Windows/Linux/Mac).
 
 QEMU can use other hypervisors like KVM to use CPU extensions (HVM) for virtualization. When QEMU is used as a virtualizer, QEMU achieves near native performances by executing the guest code directly on the host CPU. QEMU can take advantage of OS hypervisor features to offload CPU and MMU emulation to real hardware.
 
