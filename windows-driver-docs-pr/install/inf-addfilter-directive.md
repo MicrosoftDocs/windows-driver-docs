@@ -8,7 +8,7 @@ ms.date: 05/11/2022
 
 Each **AddFilter** directive describes the installation a driver service as a declarative filter into either a filter position or level.  This directive is supported in Windows 10 version 1903 and later.
 
-Rather than use a registry value to specify a specific list of upper or lower filters to be added to the device stack, declarative filters registers filters using metadata.  This metadata is this used to generate the final list of filters at the time the device is started.  Declarative filters can be used in conjunction with the legacy model of using the UpperFilters/LowerFilters registry values.  For more information on the declarative filter model, please see [Device filter driver ordering](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/device-filter-driver-ordering).
+Rather than use a registry value to specify a specific list of upper or lower filters to be added to the device stack, declarative filters registers filters using metadata.  This metadata is this used to generate the final list of filters at the time the device is started.  Declarative filters can be used in conjunction with the legacy model of using the UpperFilters/LowerFilters registry values.  For more information on the declarative filter model, please see [Device filter driver ordering](/windows-hardware/drivers/develop/device-filter-driver-ordering).
 
 An **AddFilter** directive is used within an [**INF *DDInstall*.Filters**](inf-ddinstall-software-section.md) section.
 
@@ -45,7 +45,7 @@ An **AddFilter** directive must reference a named *filter-install-section* elsew
 ```
 
 >[!NOTE]
->In each *filter-install-section*, either the filter position or the filter level must defined, but not both.  See [device filter driver ordering](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/device-filter-driver-ordering) for full details on defining filter metadata
+>In each *filter-install-section*, either the filter position or the filter level must defined, but not both.  See [device filter driver ordering](/windows-hardware/drivers/develop/device-filter-driver-ordering) for full details on defining filter metadata
 
 ## [filter-install-section]: FilterLevel
 
@@ -53,7 +53,7 @@ An **AddFilter** directive must reference a named *filter-install-section* elsew
 
 **FilterLevel** specifies the name of a filter level defined by the base INF of the device.  The filter is registered with that level name, and the final list of filters is determined when the device starts by assembling the filter list from the registered filters in accordance with the filter level metadata supplied by the base driver.  In the event that the specified filter level is not defined in the base driver's metadata, the filter is not added to the stack.
 
-For full details on the process of defining the filter level metadata and how the final filter list is assembled, see [device filter driver ordering](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/device-filter-driver-ordering).
+For full details on the process of defining the filter level metadata and how the final filter list is assembled, see [device filter driver ordering](/windows-hardware/drivers/develop/device-filter-driver-ordering).
 
 ## [filter-install-section]: FilterPosition
 
@@ -63,4 +63,4 @@ For full details on the process of defining the filter level metadata and how th
 
 ## See Also
 
-[Device filter driver ordering](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/device-filter-driver-ordering)
+[Device filter driver ordering](/windows-hardware/drivers/develop/device-filter-driver-ordering)
