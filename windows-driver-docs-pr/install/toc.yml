@@ -376,6 +376,8 @@
       href: obtaining-the-original-source-path-of-an-installed-inf-file.md
     - name: "Guidelines for Using SetupAPI"
       href: guidelines-for-using-setupapi.md
+    - name: "Device Installations on 64-Bit Systems"
+      href: device-installations-on-64-bit-systems.md
     - name: "Device Property Pages"
       items:
       - name: "Overview of Device Property Pages"
@@ -630,8 +632,6 @@
       href: avoiding-system-restarts-during-device-installations.md
     - name: "Initiating System Restarts During Device Installations"
       href: initiating-system-restarts-during-device-installations.md
-    - name: "Device Installations on 64-Bit Systems"
-      href: device-installations-on-64-bit-systems.md
   - name: "Registry"
     items:
     - name: "Registry Trees and Keys"
