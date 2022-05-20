@@ -1,7 +1,7 @@
 ---
 title: StorNVMe command set support
 description: Describes the command set support provided by StoreNVMe
-ms.date: 11/19/2021
+ms.date: 05/20/2022
 ---
 
 # StorNVMe command set support
@@ -68,10 +68,10 @@ In addition to the above, the table below includes the following information for
 | 8h  | Write Zeroes  | Yes  |   |   | N,Z  | |
 | 9h  | Dataset Management  | Yes  | Yes  |   | N,Z  | Only TRIM (Deallocate). SCSIOP_UNMAP for [IOCTL_SCSI_PASS_THROUGH](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) |
 | Ch  | Verify  | Yes  |   |   | N,Z  | |
-| Dh  | Reservation Register  | Yes  |   |   | A,N,Z  | |
-| Eh  | Reservation Report    | Yes  |   |   | A,N,Z  | |
-| 11h | Reservation Acquire   | Yes  |   |   | A,N,Z  | |
-| 15h | Reservation Release   | Yes  |   |   | A,N,Z  | |
+| Dh  | Reservation Register  | Yes  |   |   | A,N,Z  | From Windows 11, Windows Server 2022. |
+| Eh  | Reservation Report    | Yes  |   |   | A,N,Z  | From Windows 11, Windows Server 2022. |
+| 11h | Reservation Acquire   | Yes  |   |   | A,N,Z  | From Windows 11, Windows Server 2022. |
+| 15h | Reservation Release   | Yes  |   |   | A,N,Z  | From Windows 11, Windows Server 2022. |
 | 19h | Copy  | Yes  |   |   | N,Z  | From Windows 11, Windows Server 2022. Reserved for Microsoft internal use. |
 | 79h | Zone Management Send     | Yes  | Yes  |   | Z  | From Windows 11, Windows Server 2022. Reserved for Microsoft internal use. |
 | 7Ah | Zone Management Receive  | Yes  | Yes  |   | Z  | From Windows 11, Windows Server 2022. Reserved for Microsoft internal use. |
