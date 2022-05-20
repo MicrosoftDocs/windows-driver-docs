@@ -11,7 +11,7 @@ Driver package isolation is a requirement for [Windows Drivers](./getting-starte
 > [!NOTE]
 > While driver package isolation is required for Windows Drivers, Windows Desktop Drivers still benefit from it through improved resiliency and serviceability.
 
-The following table shows some example legacy driver practices that are no longer allowed for Windows Drivers in the left column along with the required behavior for Windows Drivers in the right column.
+The following table shows some example legacy driver package practices that are no longer allowed for Windows Drivers in the left column along with the required behavior for Windows Drivers in the right column.
 
 | Non-isolated driver | Isolated driver |
 |--|--|
@@ -20,7 +20,7 @@ The following table shows some example legacy driver practices that are no longe
 | Hardcodes path to global registry locations | Uses HKR and system-supplied functions for relative location of registry and file state |
 | Runtime file writes to any location | Files are written relative to locations supplied by the operating system |
 
-For help in determining if your driver package meets driver package isolation requirements, see [Validating Windows Drivers](./validating-windows-drivers.md).
+For help in determining if your driver package meets driver package isolation requirements, see [Validating Windows Drivers](./validating-windows-drivers.md). For examples of how to update an INF to meet driver package isolation requirements, see [Porting an INF to follow driver package isolation](porting-inf-to-windows-driver.md).
 
 ## Run from driver store
 
