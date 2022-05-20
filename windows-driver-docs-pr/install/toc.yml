@@ -648,20 +648,22 @@
       href: hklm-system-currentcontrolset-hardwareprofiles-registry-tree.md
     - name: "RunOnce Registry Key"
       href: runonce-registry-key.md
-    - name: "DeviceOverrides Registry Key"
-      href: deviceoverrides-registry-key.md
-    - name: "HardwareID Registry Subkey"
-      href: hardwareid-registry-subkey.md
-    - name: "CompatibleID Registry Subkey"
-      href: compatibleid-registry-subkey.md
-    - name: "LocationPaths Registry Subkey"
-      href: locationpaths-registry-subkey.md
-    - name: "ChildLocationPaths Registry Subkey"
-      href: childlocationpaths-registry-subkey.md
-    - name: "LocationPath Registry Subkey"
-      href: locationpath-registry-subkey.md
-    - name: "* Registry Subkey"
-      href: --registry-subkey.md
+    - name: "DeviceOverrides"
+      items:
+      - name: "DeviceOverrides Registry Key"
+        href: deviceoverrides-registry-key.md
+      - name: "HardwareID Registry Subkey"
+        href: hardwareid-registry-subkey.md
+      - name: "CompatibleID Registry Subkey"
+        href: compatibleid-registry-subkey.md
+      - name: "LocationPaths Registry Subkey"
+        href: locationpaths-registry-subkey.md
+      - name: "ChildLocationPaths Registry Subkey"
+        href: childlocationpaths-registry-subkey.md
+      - name: "LocationPath Registry Subkey"
+        href: locationpath-registry-subkey.md
+      - name: "* Registry Subkey"
+        href: --registry-subkey.md
   - name: "Deprecated Functionality"
     items:
     - name: "General Setup Operations"
