@@ -57,17 +57,17 @@ All other FADT settings retain their meanings from the previous version, ACPI 4.
 
 ## Multiple APIC Description Table (MADT)
 
-In PC implementations of ACPI, the Multiple APIC Description Table (MADT) and PC-specific interrupt controller descriptors are used to describe the system interrupt model. For ARM-based SoC platforms, ACPI 5.0 adds descriptors for the ARM Holdings' Generic Interrupt Controller (GIC) and GIC Distributor. Windows includes inbox support for the GIC and GIC Distributor. For more information about these descriptors, see sections 5.2.12.14, "GIC Structure", and 5.2.12.15, "GIC Distributor Structure", of the [ACPI 5.0 specification](https://uefi.org/specifications).
+In PC implementations of ACPI, the Multiple APIC Description Table (MADT) and PC-specific interrupt controller descriptors are used to describe the system interrupt model. For Arm-based SoC platforms, ACPI 5.0 adds descriptors for the Arm Holdings' Generic Interrupt Controller (GIC) and GIC Distributor. Windows includes inbox support for the GIC and GIC Distributor. For more information about these descriptors, see sections 5.2.12.14, "GIC Structure", and 5.2.12.15, "GIC Distributor Structure", of the [ACPI 5.0 specification](https://uefi.org/specifications).
 
-The interrupt controller descriptor structures are listed immediately after the Flags field in the MADT. For ARM platforms, one descriptor is listed for each GIC, followed by one for each GIC Distributor. The GIC corresponding to the boot processor must be the first entry in the list of interrupt controller descriptors.
+The interrupt controller descriptor structures are listed immediately after the Flags field in the MADT. For Arm platforms, one descriptor is listed for each GIC, followed by one for each GIC Distributor. The GIC corresponding to the boot processor must be the first entry in the list of interrupt controller descriptors.
 
 ## Generic Timer Description Table (GTDT)
 
-As with the interrupt controller, there is a standard timer description table in ACPI. For ARM systems that utilize the GIT timer, ACPI's GTDT can be used to leverage the built-in support for the GIT in Windows.
+As with the interrupt controller, there is a standard timer description table in ACPI. For Arm systems that utilize the GIT timer, ACPI's GTDT can be used to leverage the built-in support for the GIT in Windows.
 
 ## Core System Resources Table (CSRT)
 
-Core System Resources (CSRs) are shared hardware functions such as interrupt controllers, timers and DMA controllers to which the operating system must serialize access. Where industry standards exist for features such as timers and interrupt controllers (on both x86 and ARM architectures), Windows builds in support for these features based on the standard tables described in ACPI (for example, MADT and GTDT). However, until the industry converges on DMA controller interface standards, there is a need to support some non-standard devices in the operating system.
+Core System Resources (CSRs) are shared hardware functions such as interrupt controllers, timers and DMA controllers to which the operating system must serialize access. Where industry standards exist for features such as timers and interrupt controllers (on both x86 and Arm architectures), Windows builds in support for these features based on the standard tables described in ACPI (for example, MADT and GTDT). However, until the industry converges on DMA controller interface standards, there is a need to support some non-standard devices in the operating system.
 
 Windows supports the concept of HAL extensions to address this issue. HAL extensions are SoC-specific modules, implemented as DLLs, that adapt the Windows HAL to a specific hardware interface of a specific class of CSR required by Windows. In order to identify and load these non-standard CSR modules, Microsoft has defined a new ACPI table. This table, which has a reserved signature of "CSRT" in the ACPI specification, must be included in the RSDT if non-standard CSRs are used on the platform.
 

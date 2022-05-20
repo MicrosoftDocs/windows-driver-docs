@@ -55,8 +55,8 @@ One of the following strings should be used for your driverArchitecture string:
 
 - X86
 - X64
-- ARM
-- ARM64
+- Arm
+- Arm64
 
 **Do not include ".sys" as part of your driverName string**
 
