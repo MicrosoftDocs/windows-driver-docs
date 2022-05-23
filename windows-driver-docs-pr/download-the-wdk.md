@@ -70,9 +70,9 @@ MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
 
 This SDK must be installed separately until available through Visual Studio
 
-### ![download icon.](images/download-install.png) Step 3: Install Windows 11 WDK
+### ![download icon.](images/download-install.png) Step 3: Install Windows 11, version 22H2 WDK
 
-* [Download WDK for Windows 11, version 22H2 ](https://go.microsoft.com/fwlink/?linkid=2166289)
+* [Download WDK for Windows 11, version 22H2 ](https://go.microsoft.com/fwlink/?linkid=2196230)
 
 The WDK Visual Studio extension is included in the default WDK installation.
 
@@ -81,7 +81,7 @@ The WDK Visual Studio extension is included in the default WDK installation.
 
 ## Enterprise WDK (EWDK)
 
-The EWDK is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17.1.5 and MSVC toolset v14.28.  To get started, mount the ISO and run **LaunchBuildEnv**.
+The EWDK is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17.1.5 and MSVC toolset v14.31.  To get started, mount the ISO and run **LaunchBuildEnv**.
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
