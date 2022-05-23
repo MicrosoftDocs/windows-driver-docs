@@ -11,7 +11,7 @@ ms.keywords: IoCheckFileObjectOpenedAsCopyDestination
 req.header: ntifs.h
 req.include-header: Wdm.h, Ntddk.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Windows 11, version 22H1
+req.target-min-winverclnt: Windows 11, version 22H2
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -44,7 +44,7 @@ api_name:
 
 ## -description
 
-The **IoCheckFileObjectOpenedAsCopyDestination** routine checks whether a file was previously opened with copy intent as the destination file.
+The **IoCheckFileObjectOpenedAsCopyDestination** routine checks whether a file was previously opened with copy intent as a destination file.
 
 ## -parameters
 
@@ -54,16 +54,14 @@ Pointer to the destination file object to check for copy intent.
 
 ## -returns
 
-**IoCheckFileObjectOpenedAsCopyDestination** returns TRUE if the file object represents a destination file that was previously opened with copy file intent; otherwise it returns FALSE.
+**IoCheckFileObjectOpenedAsCopyDestination** returns TRUE if the file object represents a destination file that was previously opened with copy file intent; otherwise it returns FALSE. A return value of TRUE only signals the intent at create time; it does not mean that all operations on the file object are all part of copies.
 
 ## -remarks
-
-The presence of the **EX_CREATE_FLAG_FILE_DEST_OPEN_FOR_COPY** flag is not enough to ensure that writes on the file object are trustworthy, as any user-mode process can provide these flags at create time.
 
 See [**IoCheckFileObjectOpenedAsCopySource**](nf-ntifs-iocheckfileobjectopenedascopysource.md)
  for sample code that shows how to check if a file object was opened with copy intent.
 
-See [Copying files in kernel mode](km-file-copy.md) for more information.
+See [Kernel-mode file copy and detecting copy file scenarios](km-file-copy.md) for more information.
 
 ## -see-also
 

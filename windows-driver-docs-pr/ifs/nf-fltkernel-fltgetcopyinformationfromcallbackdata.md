@@ -11,7 +11,7 @@ ms.keywords: FltGetCopyInformationFromCallbackData
 req.header: fltkernel.h
 req.include-header:
 req.target-type: Universal
-req.target-min-winverclnt: Windows 11, version 22H1
+req.target-min-winverclnt: Windows 11, version 22H2
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
