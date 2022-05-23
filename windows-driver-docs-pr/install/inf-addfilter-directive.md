@@ -8,7 +8,7 @@ ms.date: 05/11/2022
 
 Each **AddFilter** directive describes the installation of a driver service as a declarative filter into either a filter position or level.  This directive is supported in Windows 10 version 1903 and later.
 
-Rather than use a registry value to specify a specific list of upper or lower filters to be added to the device stack, declarative filters registers filters using metadata.  This metadata is this used to generate the final list of filters at the time the device is started.  Declarative filters can be used in conjunction with the legacy model of using the UpperFilters/LowerFilters registry values.  For more information on the declarative filter model, please see [Device filter driver ordering](/windows-hardware/drivers/develop/device-filter-driver-ordering).
+Rather than use a registry value to specify a specific list of upper or lower filters to be added to the device stack, declarative filters register filters using metadata.  This metadata is used to generate the final list of filters at the time the device is started.  Declarative filters can be used in conjunction with the legacy model of using the UpperFilters/LowerFilters registry values.  For more information on the declarative filter model, please see [Device filter driver ordering](/windows-hardware/drivers/develop/device-filter-driver-ordering).
 
 An **AddFilter** directive is used within an [**INF *DDInstall*.Filters**](inf-ddinstall-software-section.md) section.
 
