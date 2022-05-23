@@ -758,6 +758,8 @@
     href: inf-ddinstall-events-section.md
   - name: "INF DDInstall.FactDef Section"
     href: inf-ddinstall-factdef-section.md
+  - name: "INF DDInstall.Filters Section"
+    href: inf-ddinstall-filters-section.md
   - name: "INF DDInstall.HW Section"
     href: inf-ddinstall-hw-section.md
   - name: "INF DDInstall.Interfaces Section"
@@ -800,6 +802,8 @@
     href: inf-addcomponent-directive.md
   - name: "INF AddEventProvider Directive"
     href: inf-addeventprovider-directive.md
+  - name: "INF AddFilter Directive"
+    href: inf-addfilter-directive.md
   - name: "INF AddInterface Directive"
     href: inf-addinterface-directive.md
   - name: "INF AddPowerSetting Directive"
