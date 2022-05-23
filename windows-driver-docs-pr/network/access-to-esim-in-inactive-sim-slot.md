@@ -3,14 +3,14 @@ title: Access an eSIM in an inactive SIM slot
 description: MBIMEx 4.0 supports full access to an eSIM in the inactive SIM slot of a DSSA modem.
 keywords:
 - Access to eSIM in inactive SIM slot
-ms.date: 05/04/2022
+ms.date: 05/23/2022
 ---
 
 # Access an eSIM in the inactive SIM slot
 
-Before the Windows 11 2022 release, all eSIM access related CIDs in the MBIM interface target the SIM in the active SIM slot in DSSA modems. Active SIM slot refers to the SIM slot in a DSSA modem whose SIM is mapped to the device for active use for registration and data connection (or the only SIM slot in a single-SIM modem). As a result, eSIM functionality is applicable only if an eSIM resides in the active SIM slot in a DSSA modem. If an eSIM resides in the inactive slot in a DSSA modem, there is no access to the eSIM. 
+Before the Windows 11, version 22H2 release, all eSIM access related CIDs in the MBIM interface target the SIM in the active SIM slot in DSSA modems. Active SIM slot refers to the SIM slot in a DSSA modem whose SIM is mapped to the device for active use for registration and data connection (or the only SIM slot in a single-SIM modem). As a result, eSIM functionality is applicable only if an eSIM resides in the active SIM slot in a DSSA modem. If an eSIM resides in the inactive slot in a DSSA modem, there is no access to the eSIM. 
 
-In the Windows 11 Insider Preview Build 22610 release, [MBIMEx 4.0](mbimex-4.0-5g-sa-phase-2-support.md) introduces access to an eSIM in the inactive SIM slot. MBIMEx 4.0 extends the following CIDs with a slot ID element (and other necessary information) to support full access to an eSIM in the inactive slot of a DSSA modem, in addition to the eSIM in the active SIM slot.
+In the Windows 11, version 22H2 release, [MBIMEx 4.0](mbimex-4.0-5g-sa-phase-2-support.md) introduces access to an eSIM in the inactive SIM slot. MBIMEx 4.0 extends the following CIDs with a slot ID element (and other necessary information) to support full access to an eSIM in the inactive slot of a DSSA modem, in addition to the eSIM in the active SIM slot.
 
 * MBIM_CID_MS_UICC_ATR
 * MBIM_CID_MS_UICC_OPEN_CHANNEL
