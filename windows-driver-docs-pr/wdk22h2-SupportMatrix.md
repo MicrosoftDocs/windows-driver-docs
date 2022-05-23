@@ -21,7 +21,7 @@ Windows 11, version 22H2 WDK/EWDK <b>will</b> support:
  
 In addition to the change in OS support, Windows 11, version 22H2 WDK/EWDK will only support running on Visural Studio 2022 release .  
  
-The Windows 11, version 22H2 WDK/EWDK <b>will not</b> support: 
+Windows 11, version 22H2 WDK/EWDK <b>will not</b> support: 
 
 •	Building Kernel Mode drivers for X86 and ARM32 </br>
 •	Building and testing drivers for Windows 7, Windows 8.0, Windows 8.1, and Windows 10 (x86/arm32) </br>
