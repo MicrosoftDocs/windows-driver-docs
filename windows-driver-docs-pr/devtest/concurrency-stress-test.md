@@ -7,7 +7,7 @@ ms.date: 04/20/2017
 # Power Framework Delay Fuzzing
 
 >[!Note]
-> **This check is deprecated starting in Windows 10 Insider Preview Build 19042 and above**
+> **This check is deprecated starting in Windows 10 Build 19042 and above**
 
 The Power Framework Delay Fuzzing option randomizes thread schedules to help detect concurrency bugs in drivers that use the [power management framework (PoFx)](../kernel/overview-of-the-power-management-framework.md). This option is not recommended for drivers that do not directly utilize the power management framework (PoFx).
 

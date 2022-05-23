@@ -22,7 +22,7 @@ For general information about DTrace on Windows, see [DTrace](dtrace.md).
 For detailed information about DTrace see the [OpenDTrace Speciﬁcation version 1.0](https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-924.pdf) at the University Of Cambridge.
 
 > [!NOTE]
-> DTrace is supported in the Insider builds of Windows after version 18980 and Windows Server Insider Preview Build 18975.
+> DTrace is supported in the Insider builds of Windows after version 18980 and Windows Server build 18975.
 
 ## Additional sample scripts
 

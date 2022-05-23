@@ -18,7 +18,7 @@ ms.date: 11/14/2019
 DTrace (DTrace.exe) is a command-line tool that displays system information and events. DTrace is an open source tracing platform ported to windows. DTrace was originally developed for the Solaris operating system.  It provides dynamic instrumentation of both user/kernel functions, the ability to script using the D-language, speculative tracing. In addition, DTrace has Windows OS specific extensions like ETW instrumentation, ETW event generation, system call probes and live dump capture capabilities.  
 
 > [!NOTE]
-> DTrace is supported in the Insider builds of Windows after version 18980 and Windows Server Insider Preview Build 18975.
+> DTrace is supported in the Insider builds of Windows after version 18980 and Windows Server Build 18975.
 
 The DTrace on Windows Github site is located here:
 
@@ -166,7 +166,7 @@ Traceext.sys (trace extension) is a Windows kernel extension driver, which allow
 
 ## Installing DTrace under Windows
 
-1. Check that you are running a supported version of Windows. The current download of DTrace is supported in the Insider builds of 20H1 Windows after version 18980 and Windows Server Insider Preview Build 18975. *Installing this version of DTrace on older versions of Windows can lead to system instability and is not recommended.*
+1. Check that you are running a supported version of Windows. The current download of DTrace is supported in the Insider builds of 20H1 Windows after version 18980 and Windows Server Build 18975. *Installing this version of DTrace on older versions of Windows can lead to system instability and is not recommended.*
 
    The archived version of DTrace for 19H1 is available at [Archived Download DTrace on Windows](https://www.microsoft.com/download/58091). Note that this version of DTrace is no longer supported.
 
