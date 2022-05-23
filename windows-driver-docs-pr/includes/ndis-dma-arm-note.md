@@ -1,12 +1,12 @@
 ---
-description: "Note to discourage NDIS DMA use on ARM/ARM64 processors"
-title: Note to discourage NDIS DMA use on ARM/ARM64 processors
+description: "Note to discourage NDIS DMA use on Arm/Arm64 processors"
+title: Note to discourage NDIS DMA use on Arm/Arm64 processors
 ms.date: 10/17/2018
 ms.topic: include
 ---
 
 > [!CAUTION]
-> For ARM and ARM64 processors, we strongly recommend that NDIS driver writers use WDF DMA or WDM DMA instead of NDIS Scatter/Gather DMA.
+> For Arm and Arm64 processors, we strongly recommend that NDIS driver writers use WDF DMA or WDM DMA instead of NDIS Scatter/Gather DMA.
 >
 > For more information about WDF DMA, see [Handling DMA Operations in KMDF Drivers](../wdf/introduction-to-dma-in-windows-driver-framework.md).
 >

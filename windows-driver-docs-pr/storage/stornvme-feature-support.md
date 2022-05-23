@@ -1,7 +1,7 @@
 ---
 title: NVMe feature and extended capability support
 description: Describes NVMe features supported by StorNVMe
-ms.date: 11/19/2021
+ms.date: 05/20/2022
 ---
 
 # NVMe feature and extended capability support
@@ -44,7 +44,7 @@ The following table lists Features and Extended Capabilities defined in the NVM 
 | Predictable Latency Mode      | 8.18 | 8.16 |     |     |  |  |
 | Read Recovery Level           | 8.16 | 8.17 |     |     |  |  |
 | Replay Protected Memory Block | 8.10 | 8.18 |     |     |  |  |
-| Reservations                  | 8.8  | 8.19 | 5.5 | 5.1 |  |  |
+| Reservations                  | 8.8  | 8.19 | 5.5 | 5.1 |  | From Windows 11, Windows Server 2022.  |
 | Reset Zone Recommended        |      |      |     | 5.4 |  | From Windows 11, Windows Server 2022. Reserved for Microsoft internal use. |
 | Rotational Media              |      | 8.20 |  |  |  |  |
 | Sanitize Operations           | 8.15 | 8.21 | 5.6 |  | Yes | [IOCTL_STORAGE_PROTOCOL_COMMAND](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command). WinPE only prior to Windows 11, Windows Server 2022 |

@@ -76,7 +76,7 @@ For information on what is new on the WinDbg Preview debugger, see [WinDbg Previ
 - [Support for Open Enclave debugging](./debugger/open-enclave-debugging.md)- WinDbg Preview can now debug Open Enclave (OE) applications.
 - For user mode time travel debugging, a new timeline window displays a visual representation of important events in your trace: exceptions, breakpoints, function calls, and memory accesses. For more information, see [WinDbg Preview - Timeline](./debugger/windbg-timeline-preview.md).
 
-Updates and addtions to debug transport topics, such as [Setting Up KDNET Network Kernel Debugging Automatically](./debugger/setting-up-a-network-debugging-connection-automatically.md), [Setting Up Kernel-Mode Debugging over USB EEM on an ARM device using KDNET](./debugger/setting-up-kernel-mode-debugging-over-usb-eem-arm-kdnet.md) and [Setting Up 2PF Kernel-Mode Debugging using KDNET](./debugger/setting-up-kernel-mode-debugging-using-2pf.md).
+Updates and addtions to debug transport topics, such as [Setting Up KDNET Network Kernel Debugging Automatically](./debugger/setting-up-a-network-debugging-connection-automatically.md), [Setting Up Kernel-Mode Debugging over USB EEM on an Arm device using KDNET](./debugger/setting-up-kernel-mode-debugging-over-usb-eem-arm-kdnet.md) and [Setting Up 2PF Kernel-Mode Debugging using KDNET](./debugger/setting-up-kernel-mode-debugging-using-2pf.md).
 
 Bugcheck stop code topic addtions and updates, including listing live dump codes in a new section - 
 [Kernel Live Dump Code Reference](./debugger/bug-check-code-reference-live-dump.md).

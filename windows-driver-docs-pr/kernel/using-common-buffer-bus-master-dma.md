@@ -33,7 +33,7 @@ In addition, the caller must supply the following:
 
     On computers with x86-based, x64-based, and Itanium-based processors, cached memory is enabled. 
 
-    On computers with ARM or ARM 64-based processors, the operating system does not automatically enable cached memory for all devices. The system relies on the ACPI_CCA method for each device to determine whether the device is cache-coherent. 
+    On computers with Arm or Arm 64-based processors, the operating system does not automatically enable cached memory for all devices. The system relies on the ACPI_CCA method for each device to determine whether the device is cache-coherent. 
 
 -   A pointer to a driver-defined variable that will contain the device-accessible base *Logical Address* for the buffer (BufferLogicalAddress in the previous diagram) on return from **AllocateCommonBuffer**
 

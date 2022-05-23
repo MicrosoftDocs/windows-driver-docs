@@ -23,7 +23,7 @@ In contrast, existing user-mode drivers may require modification to compile as W
 ## Creating a New Windows Driver Project in Microsoft Visual Studio
 
 1.  Create a new driver from a template (**File->New Project->Create New Project->Project Type->Driver->Select the template of interest**).
-2.  After you create the project, in the Solution Explorer pane, select and hold (or right-click) the solution and choose **Configuration Manager**. Set **Active solution configuration** to the desired target Windows version, and set **Active solution platform** to **Win32** or **x64**. If **ARM** is not listed, choose **&lt;New...&gt;** to build for ARM.
+2.  After you create the project, in the Solution Explorer pane, select and hold (or right-click) the solution and choose **Configuration Manager**. Set **Active solution configuration** to the desired target Windows version, and set **Active solution platform** to **Win32** or **x64**. If **Arm** is not listed, choose **&lt;New...&gt;** to build for Arm.
 
     If you choose Windows 10, the driver model defaults to **Universal**.
 
@@ -41,7 +41,7 @@ In contrast, existing user-mode drivers may require modification to compile as W
 ## Creating a New Universal Application or DLL Project in Microsoft Visual Studio
 
 1.	Create a new driver from a template (**File->New Project->Create New Project->Project Type->Driver->Select the template of interest**) and choose **Empty Desktop Application for Drivers (Universal)** or **Empty Dll for Drivers (Universal)**.
-2.	After you create the project, in the Solution Explorer pane, select and hold (or right-click) the solution and choose **Configuration Manager**. Set **Active solution configuration** to the desired target Windows version, and set **Active solution platform** to **Win32** or **x64**. If ARM is not listed, choose **<New...>** to build for ARM.
+2.	After you create the project, in the Solution Explorer pane, select and hold (or right-click) the solution and choose **Configuration Manager**. Set **Active solution configuration** to the desired target Windows version, and set **Active solution platform** to **Win32** or **x64**. If Arm is not listed, choose **<New...>** to build for Arm.
 If you choose Windows 10, the application model defaults to **Universal**.
 To change the target platform manually, select and hold (or right-click) the driver project and choose Properties. Under **Configuration Properties->Driver Settings->General**, find the **Target Platform** entry.
 3.	Build the solution.

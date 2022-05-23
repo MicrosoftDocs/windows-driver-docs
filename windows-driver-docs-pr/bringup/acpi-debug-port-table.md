@@ -30,7 +30,7 @@ References and resources discussed here are listed at the end of this paper.
 | November 29, 2011 | First publication. |
 | May 22, 2012 | Updates to Table 3 per final supported platforms for Windows 8. |
 | August 10, 2015 | Updated patent notice. |
-| October 6, 2015 | Added new serial debugging subtypes (ARM SBSA UART, ARM DCC) |
+| October 6, 2015 | Added new serial debugging subtypes (Arm SBSA UART, Arm DCC) |
 | December 10, 2015 | Added new serial debugging subtype (BCM2835) |
 | May 31, 2017 | Added new serial debugging subtype (i.MX6, Generic Address Structure 16550-compatible) |
 | June 11, 2020 | Added new serial debugging subtype (SDM845v2) |
@@ -97,7 +97,7 @@ Table 1 defines the fields in DBG2.
 | Serial | 0x8000 | 0x0000 | Fully 16550-compatible |
 |  |  | 0x0001 | 16550 subset compatible with DBGP Revision 1 |
 |  |  | 0x0002 | MAX311xE SPI UART |
-|  |  | 0x0003 | ARM PL011 UART |
+|  |  | 0x0003 | Arm PL011 UART |
 |  |  | 0x0004 | MSM8x60 (e.g. 8960) |
 |  |  | 0x0005 | Nvidia 16550 |
 |  |  | 0x0006 | TI OMAP |
@@ -107,9 +107,9 @@ Table 1 defines the fields in DBG2.
 |  |  | 0x000A | SAM5250 |
 |  |  | 0x000B | Intel USIF |
 |  |  | 0x000C | i.MX 6 |
-|  |  | 0x000D | (deprecated) ARM SBSA (2.x only) Generic UART supporting only 32-bit accesses |
-|  |  | 0x000E | ARM SBSA Generic UART |
-|  |  | 0x000F | ARM DCC |
+|  |  | 0x000D | (deprecated) Arm SBSA (2.x only) Generic UART supporting only 32-bit accesses |
+|  |  | 0x000E | Arm SBSA Generic UART |
+|  |  | 0x000F | Arm DCC |
 |  |  | 0x0010 | BCM2835 |
 |  |  | 0x0011 | SDM845 with clock rate of 1.8432 MHz |
 |  |  | 0x0012 | 16550-compatible with parameters defined in Generic Address Structure |

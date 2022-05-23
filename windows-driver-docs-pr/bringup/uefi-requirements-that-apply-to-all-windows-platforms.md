@@ -51,7 +51,7 @@ For more details about specific requirements, see the sections after the table.
 | EFI PXE base code protocol | 21.3 |  |
 | EFI boot integrity services protocol | 21.5 |  |
 | EFI serial IO protocol | 11.8 |  |
-| UEFI ARM binding | 2.3.5 | Explicit Windows requirement |
+| UEFI Arm binding | 2.3.5 | Explicit Windows requirement |
 | **Security requirements** |  |  |
 | Secure boot | 27.0 | Explicit Windows requirement |
 | Boot manager requirements | 3.1, 3.3 | Explicit Windows requirement |
@@ -114,15 +114,15 @@ Windows has security requirements in the areas of Secure Boot, Measured Boot, Cr
 
 The firmware boot manager must support the default boot behavior defined in section 3.3 of the specification. Additionally, for support of multi-boot, globally-defined variables and the Boot Manager requirements of section 3.1 of the specification are required.
 
-## UEFI ARM binding requirements
+## UEFI Arm binding requirements
 
-The UEFI ARM Binding includes requirements specific to the ARM platform needed in order to be UEFI spec compliant. Windows requires everything in the ARM binding that is applicable to ARMv7. Because Windows does not support anything previous to ARMv7, requirements in the binding that are specific to ARMv6k and below are optional.
+The UEFI Arm Binding includes requirements specific to the Arm platform needed in order to be UEFI spec compliant. Windows requires everything in the Arm binding that is applicable to ARMv7. Because Windows does not support anything previous to ARMv7, requirements in the binding that are specific to ARMv6k and below are optional.
 
-The binding specifies for example how the MMU should be configured, and how physical memory should be mapped. The binding also specifies that calls made to UEFI protocols and services should be done in only the ARM ISA, meaning that software running in Thumb2 or Thumb would need to switch back to ARM mode before calling UEFI functions.
+The binding specifies for example how the MMU should be configured, and how physical memory should be mapped. The binding also specifies that calls made to UEFI protocols and services should be done in only the Arm ISA, meaning that software running in Thumb2 or Thumb would need to switch back to Arm mode before calling UEFI functions.
 
-## UEFI ARM multiprocessor startup requirements
+## UEFI Arm multiprocessor startup requirements
 
-Microsoft has developed a protocol for starting multiple ARM cores on a multi-processor UEFI platform. This protocol is required by Windows on ARM platforms that do not support the [Power State Coordination Interface (PSCI)](https://developer.arm.com/documentation/den0022/latest). Platforms that do support PSCI must not use this protocol. For more information about this protocol, see the [Multiprocessor startup on UEFI ARM-based platforms](https://acpica.org/sites/acpica/files/MP%20Startup%20for%20ARM%20platforms.docx) document on the ACPI Component Architecture (ACPICA) Web site.
+Microsoft has developed a protocol for starting multiple Arm cores on a multi-processor UEFI platform. This protocol is required by Windows on Arm platforms that do not support the [Power State Coordination Interface (PSCI)](https://developer.arm.com/documentation/den0022/latest). Platforms that do support PSCI must not use this protocol. For more information about this protocol, see the [Multiprocessor startup on UEFI Arm-based platforms](https://acpica.org/sites/acpica/files/MP%20Startup%20for%20ARM%20platforms.docx) document on the ACPI Component Architecture (ACPICA) Web site.
 
 ## Platform setup requirements
 

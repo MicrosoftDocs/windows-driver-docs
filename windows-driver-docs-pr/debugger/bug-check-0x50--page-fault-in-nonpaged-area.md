@@ -49,7 +49,7 @@ The PAGE\_FAULT\_IN\_NONPAGED\_AREA bug check has a value of 0x00000050. This in
 <p><strong>2:</strong> Write operation</p>
 <p><strong>10:</strong> Execute operation</p>
 
-<p><i> After Windows 1507 (TH1) Version - ARM </i></p>
+<p><i> After Windows 1507 (TH1) Version - Arm </i></p>
 <p><strong>0:</strong> Read operation</p>
 <p><strong>1:</strong> Write operation</p>
 <p><strong>8:</strong> Execute operation</p>
