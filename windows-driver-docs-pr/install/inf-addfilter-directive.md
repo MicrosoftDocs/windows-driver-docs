@@ -51,7 +51,7 @@ An **AddFilter** directive must reference a named *filter-install-section* elsew
 
 `FilterLevel = {LevelName}`
 
-**FilterLevel** specifies the name of a filter level defined by the [base driver package](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/using-an-extension-inf-file) of the device.  The filter is registered with that level name, and the final list of filters is determined when the device starts by assembling the filter list from the registered filters in accordance with the filter level metadata supplied by the base driver package.  In the event that the specified filter level is not defined in the base driver package's metadata, the filter is not added to the stack.
+**FilterLevel** specifies the name of a filter level defined by the [base driver package]/windows-hardware/drivers/install/using-an-extension-inf-file) of the device.  The filter is registered with that level name, and the final list of filters is determined when the device starts by assembling the filter list from the registered filters in accordance with the filter level metadata supplied by the base driver package.  In the event that the specified filter level is not defined in the base driver package's metadata, the filter is not added to the stack.
 
 For full details on the process of defining the filter level metadata and how the final filter list is assembled, see [device filter driver ordering](/windows-hardware/drivers/develop/device-filter-driver-ordering).
 
