@@ -11,7 +11,7 @@ ms.keywords: EXTENDED_CREATE_INFORMATION
 req.header: ntifs.h
 req.include-header: Wdm.h, Ntddk.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Windows 11, version 22H1
+req.target-min-winverclnt: Windows 11, version 22H2
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,7 +50,7 @@ The **EXTENDED_CREATE_INFORMATION** structure is the **EaBuffer** field in [**Nt
 
 ### -field ExtendedCreateFlags
 
-Flags for the extended create. Can be one of the following values. When either of these flags are specified, [**NtCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile)'s file object is marked as opened for copy intent in its **FileObjectExtension**. Filters can check for this stored state by calling [**IoCheckFileObjectOpenedAsCopySource**](nf-ntifs-iocheckfileobjectopenedascopysource.md) or [**IoCheckFileObjectOpenedAsCopyDestination**](nf-ntifs-iocheckfileobjectopenedascopydestination.md)
+Flags for the extended create. **ExtendedCreateFlags** can be one of the following values. When either of these flags are specified, [**NtCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile)'s file object is marked as opened for copy intent in its **FileObjectExtension**. Filters can check for this stored state by calling [**IoCheckFileObjectOpenedAsCopySource**](nf-ntifs-iocheckfileobjectopenedascopysource.md) or [**IoCheckFileObjectOpenedAsCopyDestination**](nf-ntifs-iocheckfileobjectopenedascopydestination.md)
 
 | Flag | Meaning |
 | ---- | ------- |

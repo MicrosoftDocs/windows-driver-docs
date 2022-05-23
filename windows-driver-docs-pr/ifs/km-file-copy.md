@@ -11,11 +11,11 @@ ms.date: 05/24/2022
 
 # Kernel-mode file copy and detecting copy file scenarios
 
-The ability to do trusted file copy in kernel mode was introduced in Windows 11, version 22H1, including the ability for filters to easily detect copy scenarios. This functionality is particularly useful for antivirus filters (AVs), allowing them to determine whether they can defer or entirely skip scanning both the source and destination files during copy.
+The ability to do trusted file copy in kernel mode was introduced in Windows 11, version 22H2, including the ability for filters to easily detect copy scenarios. This functionality is particularly useful for antivirus filters (AVs), allowing them to determine whether they can defer or entirely skip scanning both the source and destination files during copy.
 
 To ensure that kernel-mode read and write operations are safely marked as part of a copy operation:
 
-* The **FILE_CONTAINS_EXTENDED_CREATE_INFORMATION** flag and [**EXTENDED_CREATE_INFORMATION**](ns-ntifs-extended_create_information.md) structure were added to signal copy intent at create time via [**NtCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile). The **EXTENDED_CREATE_INFORMATION** structure acts as a wrapper around **NtCreateFile**'s existing **EaBuffer** parameter. This implementation choice was made because there are limited open values for **CreateOptions**. The copy information allows AVs to skip the scan of the source file on open.
+* The **FILE_CONTAINS_EXTENDED_CREATE_INFORMATION** flag and [**EXTENDED_CREATE_INFORMATION**](ns-ntifs-extended_create_information.md) structure were added to signal copy intent at create time via [**NtCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile). The **EXTENDED_CREATE_INFORMATION** structure acts as a wrapper around **NtCreateFile**'s existing **EaBuffer** parameter.
 
   When the **FILE_CONTAINS_EXTENDED_CREATE_INFORMATION** flag is specified, the I/O manager interprets the **EaBuffer** and **EaLength** parameters as an **EXTENDED_CREATE_INFORMATION** structure, and will parse that structure's fields as if they were provided directly to **NtCreateFile**. Underlying filters will experience no change in behavior of extended attributes.
 
