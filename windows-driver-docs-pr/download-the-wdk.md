@@ -19,7 +19,7 @@ The WDK is used to develop, test, and deploy drivers for Windows.
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://aka.ms/wipwdk). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](installing-preview-versions-wdk.md).
 
-## Windows 11 WDK runtime requirements
+## Windows 11, version 22H2 WDK runtime requirements
 
 You can run the Windows 11 WDK on Windows 7 and later, and use it to develop drivers for these operating systems:
 
@@ -31,66 +31,63 @@ You can run the Windows 11 WDK on Windows 7 and later, and use it to develop dri
 |Windows 8|Windows Server 2012|
 |Windows 7|Windows Server 2008 R2 SP1|
 
-## Download and install the Windows 11 WDK
+## Download and install the Windows 11, version 22H2 WDK
 
-> [!NOTE]
-> Visual Studio 2022 is not supported by the Windows 11 WDK. To use Visual Studio 2022 to develop and test drivers, download the preview version of the kit. For details, see [Installing preview versions of the Windows Driver Kit (WDK)](./installing-preview-versions-wdk.md).
+### ![download icon.](images/download-install.png) Step 1: Install Visual Studio 2022
 
-### ![download icon.](images/download-install.png) Step 1: Install Visual Studio 2019
+The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2022 System Requirements](/visualstudio/releases/2022/system-requirements).
 
-The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](/visualstudio/releases/2019/system-requirements).
+The following editions of Visual Studio 2022 support driver development for this release:
 
-The following editions of Visual Studio 2019 support driver development for this release:
+* [Download Visual Studio Community 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=17)
+* [Download Visual Studio Professional 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=17)
+* [Download Visual Studio Enterprise 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=17)
 
-* [Download Visual Studio Community 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16)
-* [Download Visual Studio Professional 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=16)
-* [Download Visual Studio Enterprise 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=16)
-
-When you install Visual Studio 2019, select the **Desktop development with C++** workload. The Windows 11 Software Development Kit (SDK) is automatically included and is displayed in the right-hand **Summary** pane. If the default SDK is not the version of the SDK that is compatible with the Windows 11 WDK (22000.1), please use the SDK download link in step 2 below.
+When you install Visual Studio 2022, select the **Desktop development with C++** workload. The Windows 11, version 22H2 Software Development Kit (SDK) that is compatible with the Windows 11, version 22H2 WDK is not yet automatically included in Visual Studio. Please use the SDK download link in step 2 below.
 
 WDK has Spectre mitigation enabled by default but requires Spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for. Additionally, developing drivers for Arm/Arm64/Arm64EC require the build tools for these architectures to also be installed with Visual Studio. To locate these items, you will need to know the latest version of MSVC installed on your system.
 
-To find the latest version of MSVC installed on your system, in **Visual Studio Installer** go to **workload page**, on the right pane under **installation details**, expand **Desktop development with C++** and locate the **MSVC v142 - VS 2019 C++ x64/x86 build tools (V14.xx)** - note where **xx** should be the highest version available.
+To find the latest version of MSVC installed on your system, in **Visual Studio Installer** go to **workload page**, on the right pane under **installation details**, expand **Desktop development with C++** and locate the **MSVC v143 - VS 2022 C++ x64/x86 build tools (Latest)**.
 
-With this information (v14.xx), go to **Individual components** and search for **v14.xx**. This will return the tool sets for all architectures, including Spectre mitigated libs. Select the driver architecture you are developing for. Alternatively you can search for 'Latest' and the most recent version of MSVC will be displayed to select.
+With this information (Latest), go to **Individual components** and search for **Latest**. This will return the tool sets for all architectures, including Spectre mitigated libs. Select the driver architecture you are developing for. 
 
 For example, searching for Latest returns the following:
 
 ```console
-MSVC v142 - VS 2019 C++ Arm build tools (Latest)
-MSVC v142 - VS 2019 C++ Arm Spectre-mitigated libs (Latest)
-MSVC v142 - VS 2019 C++ Arm64 build tools (Latest)
-MSVC v142 - VS 2019 C++ Arm64 Spectre-mitigated libs (Latest)
-MSVC v142 - VS 2019 C++ Arm64EC build tools (Latest - experimental)
-MSVC v142 - VS 2019 C++ Arm64EC Spectre-mitigated libs (Latest - experimental)
-MSVC v142 - VS 2019 C++ x64/x86 build tools (Latest)
-MSVC v142 - VS 2019 C++ x64/x86 Spectre-mitigated libs (Latest)
+MSVC v143 - VS 2022 C++ Arm build tools (Latest)
+MSVC v143 - VS 2022 C++ Arm Spectre-mitigated libs (Latest)
+MSVC v143 - VS 2022 C++ Arm64 build tools (Latest)
+MSVC v143 - VS 2022 C++ Arm64 Spectre-mitigated libs (Latest)
+MSVC v143 - VS 2022 C++ Arm64EC build tools (Latest - experimental)
+MSVC v143 - VS 2022 C++ Arm64EC Spectre-mitigated libs (Latest - experimental)
+MSVC v143 - VS 2022 C++ x64/x86 build tools (Latest)
+MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
 ```
 
-### ![download icon.](images/download-install.png) Step 2: Install Windows 11 SDK (22000.1)
+### ![download icon.](images/download-install.png) Step 2: Install Windows 11, version 22H2 SDK
 
-* [Download Windows 11 SDK (22000.1)](https://go.microsoft.com/fwlink/?linkid=2166460)
+* [Download Windows 11, version 22H2 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
 
 This SDK must be installed separately until available through Visual Studio
 
-### ![download icon.](images/download-install.png) Step 3: Install Windows 11 WDK
+### ![download icon.](images/download-install.png) Step 3: Install Windows 11, version 22H2 WDK
 
-* [Download WDK for Windows 11](https://go.microsoft.com/fwlink/?linkid=2166289)
+* [Download WDK for Windows 11, version 22H2 ](https://go.microsoft.com/fwlink/?linkid=2196230)
 
 The WDK Visual Studio extension is included in the default WDK installation.
 
 > [!TIP]
-> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2019\WDK.vsix.
+> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2022\10.0.22621.0\WDK.vsix.
 
 ## Enterprise WDK (EWDK)
 
-The EWDK is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2019 Build Tools 16.9.2 and MSVC toolset v14.28.  To get started, mount the ISO and run **LaunchBuildEnv**.
+The EWDK is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17.1.5 and MSVC toolset v14.31.  To get started, mount the ISO and run **LaunchBuildEnv**.
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
-### ![download icon.](images/download-install.png) Windows 11 EWDK with Visual Studio Build Tools
+### ![download icon.](images/download-install.png) Windows 11, version 22H2 EWDK with Visual Studio Build Tools
 
-* [Download the Windows 11 EWDK](/legal/windows/hardware/enterprise-wdk-license-2019-New)
+* [Download the Windows 11, version 22H2 EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
 
 > You can use the Visual Studio interface with the build tools provided in the EWDK.
 >
@@ -98,9 +95,9 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 >2.    Run `LaunchBuildEnv.cmd`.
 >3.    In the environment created in step 2, type **SetupVSEnv**, and then press **Enter**.
 >4.    Launch devenv.exe from the same environment, using the full file path. 
->Example: `"C:\Program Files (x86)\Microsoft Visual Studio\2019\\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`
+>Example: `"C:\Program Files (x86)\Microsoft Visual Studio\2022\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`
 >
->Note that the Visual Studio major version should match with the version in the EWDK. For example, Visual Studio 2019 works with the EWDK that contain VS16.X build tools. For a list of Visual Studio 2019 version numbers, see [Visual Studio 2019 Releases](/visualstudio/releases/2019/history).
+>Note that the Visual Studio major version should match with the version in the EWDK. For example, Visual Studio 2022 works with the EWDK that contain VS17.X build tools. For a list of Visual Studio 2022 version numbers, see [Visual Studio 2022 Releases](/visualstudio/releases/2022/history).
 
 <br>
 
