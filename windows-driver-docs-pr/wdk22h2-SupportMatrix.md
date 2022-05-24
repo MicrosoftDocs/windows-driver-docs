@@ -19,7 +19,8 @@ Windows 11, version 22H2 WDK/EWDK <b>will</b> support:
 * Building and testing drivers for Windows 11 and Windows 10 (x64/arm64 only) </br>
 * Side by side (SxS) support with previous WDK/EWDK </br>
  
-In addition to the change in OS support, Windows 11, version 22H2 WDK/EWDK will only support running on Visural Studio 2022 release .  
+In addition to the change in OS support, Windows 11, version 22H2 WDK/EWDK will only support running on Visual Studio 2022 release. 
+
  
 Windows 11, version 22H2 WDK/EWDK <b>will not</b> support: 
 
