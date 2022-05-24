@@ -347,7 +347,7 @@ For more information, see [SERVICE_FAILURE_ACTIONS_FLAG structure (winsvc.h)](/w
 Specifies an action that the service control manager can perform. Multiple Action entries form an ordered list of failure actions.
 For more information, see [SC_ACTION structure](/windows/win32/api/winsvc/ns-winsvc-sc_action).
 
-**Note: FailureActions** syntax can only be used for *Win32 Services* and is available starting in Windows 11 Insider Preview Build 22581.
+**Note: FailureActions** syntax can only be used for *Win32 Services* and is available starting in Windows 11, version 22H2.
 
 
 ### Specifying Driver Load Order

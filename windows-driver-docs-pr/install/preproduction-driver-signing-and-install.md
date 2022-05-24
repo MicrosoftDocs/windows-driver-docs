@@ -6,7 +6,7 @@ keywords:
 - Testing drivers
 - Testing pre-production drivers
 - Pre-production driver signing and testing
-ms.date: 03/15/2022
+ms.date: 05/24/2022
 ---
 
 # How to test pre-production drivers with Secure Boot enabled
@@ -24,7 +24,7 @@ The first step is to submit your driver to HDC to request pre-production signing
 
 Once you have a driver that has been pre-production signed, you're ready to provision your test computer so that the driver will run on it.
 
-The provisioning tools and payload are provided in [Windows Insider Preview WDK](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK) version 22557 and above.
+The provisioning tools and payload are provided starting in Windows 11, version 22H2.
 
 Use of the EnableUefiSbTest tool is optional, and the Microsoft test keys can be manually provisioned. The Microsoft test key must be included in the Secure Boot database (DB) and the Secure Boot Configuration Policy (SBCP) to enable trust for the pre-production WHQL/WHCP driver signature.
 
