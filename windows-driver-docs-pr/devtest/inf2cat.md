@@ -47,8 +47,10 @@ Configures Inf2Cat to verify that a [driver package's](../install/driver-package
 
 |Windows version|Version identifier|
 |--- |--- |
-|Windows 11 x64 Edition|10_CO_X64|
-|Windows 11 ARM64 Edition|10_CO_ARM64|
+|Windows 11, version 22H2 x64 Edition|10_NI_X64|
+|Windows 11, version 22H2 ARM64 Edition|10_NI_ARM64|
+|Windows 11, version 21H2 x64 Edition|10_CO_X64|
+|Windows 11, version 21H2 ARM64 Edition|10_CO_ARM64|
 |Windows Server 2022 x64 Edition|ServerFE_X64|
 |Windows Server 2022 ARM64 Edition|ServerFE_ARM64|
 |Windows 10, version 21H2, 21H1, 20H2, 2004 x86 Edition|10_VB_X86|
