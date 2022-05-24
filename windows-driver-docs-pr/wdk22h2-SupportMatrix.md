@@ -40,7 +40,7 @@ Windows 11, version 22H2 WDK/EWDK <b>will not</b> support:
 |Build arm64 Kerel Mode drivers|Yes|Yes|Yes|
 |Build Windows 7 drivers|No|Yes|Yes|
 |Build Windows 8.1 drivers|No|Yes|Yes|
-|Build Windows 10 drivers|Yes(see Kernal Mode Limitations)|Yes|Yes|
+|Build Windows 10 drivers|Yes(see Kernel Mode Limitations)|Yes|Yes|
 |Build Windows 11 drivers|Yes|Yes|Yes|
 |Test drivers|WDK version must match target OS version|WDK version must match target OS version|WDK version must match target OS version|
 
