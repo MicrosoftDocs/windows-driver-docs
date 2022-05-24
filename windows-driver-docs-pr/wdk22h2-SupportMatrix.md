@@ -29,30 +29,17 @@ Windows 11, version 22H2 WDK/EWDK <b>will not</b> support:
 * Building WDF driver that requires WDF redistributable Co-installers   </br>
 * Visual Studio 2019</br>
 
+Notes:
 
-|WDK version|Windows 11, version 22H2|Windows 11, version 22H1| Windows 10 family of WDK's|
-|-|-|-|-|
-|Take advantage of Windows 11, version 21H1|Yes|Yes|No|
-|Take advantage of Windows 11, version 21H2|Yes|No|No|
-|Build x86 Kernel Mode drivers|No|Yes|Yes|
-|Build arm32 Kerel Mode drivers|No|Yes|Yes|
-|Build x64 Kerel Mode drivers|Yes|Yes|Yes|
-|Build arm64 Kerel Mode drivers|Yes|Yes|Yes|
-|Build Windows 7 drivers|No|Yes|Yes|
-|Build Windows 8.1 drivers|No|Yes|Yes|
-|Build Windows 10 drivers|Yes(see Kernel Mode Limitations)|Yes|Yes|
-|Build Windows 11 drivers|Yes|Yes|Yes|
-|Test drivers|WDK version must match target OS version|WDK version must match target OS version|WDK version must match target OS version|
-
-* <b>Features:</b> WDK for Windows 11, version 22H2 is required to take advantage of new features in Windows 11, version 22H2 host OS.  WDK for Windows 11, version 21H2 is required to take advantage of new features in Windows 11, version 21H2 host OS.  And so on. </br>
+* <b>Features:</b> WDK for Windows 11, version 22H2 is required to take advantage of new features in Windows 11, version 22H2 host OS.  
 * <b>Device specific User Mode drivers:</b> Certain device specific stacks (for example graphics) will continue to have x86/arm32 UM components to support x86/arm32 apps.  </br>
 * <b>Testing drivers:</b> WDK supports running tests directly in [Visual Studio](https://docs.microsoft.com/en-us/windows-hardware/drivers/develop/testing-a-driver).  The WDK major version must match the target OS major version, this is the same behavior as previously released WDK’s. Meaning Windows 11, version 22H2 WDK will support testing on Windows 11, version 22H2, however Windows 11, version 22H2 WDK will not support testing on Windows 11, version 21H1. </br>
-* <b>WDK Side by side support:</b>  Multiple WDKs can be installed SxS [details to be written down].  Multiple EWDKs can run concurrently on same PC and even be part of same build system. </br>
+* <b>WDK Side by side support:</b>  Multiple WDKs can be installed SxS and multiple EWDKs can run concurrently on same PC and even be part of same build system. </br>
 
 
 
 ## SxS Limitations
-In a SxS installation of VNext WDK and an older version, if you want to use the older version WDK to build WDF 1.11 driver (most likely because you need to target pre-Win10 OS) msbuild will report failure that it cannot find WDF coinstaller. To work around this limitation, before install VNext WDK, please backup the folder "\program files (x86)\windows kit\10\redist\wdf" and restore it afterwards. Alternatively, if you have already installed the VNext WDK, please install the MSI file at [WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) on a spare machine, and then copy redist folder to the above folder. Ref: <https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/installation-components-for-kmdf-drivers> 
+In a SxS installation of Windows 11, version 22H2 WDK and an older version, if you want to use the older version WDK to build WDF 1.11 driver (most likely because you need to target pre-Win10 OS) msbuild will report failure that it cannot find WDF coinstaller. To work around this limitation, before installing Windows 11, version 22H2 WDK, please backup the folder "\program files (x86)\windows kit\10\redist\wdf" and restore it afterwards. Alternatively, if you have already installed the Windows 11, version 22H2 WDK, please install the MSI file at [WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) on a spare machine, and then copy redist folder to the above folder. Ref: <https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/installation-components-for-kmdf-drivers> 
 
 
 
