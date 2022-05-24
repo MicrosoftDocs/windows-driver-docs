@@ -74,26 +74,6 @@ Windows 11, version 22H2 introduces the following mobile broadband features:
 
 - [How to test pre-production drivers with Secure Boot enabled](./install/preproduction-driver-signing-and-install.md)
 
-## TechName2
-
-- link
-- link
-
-New API pages:
-
-- link
-- link
-- 
-## TechName3
-
-- link
-- link
-
-New API pages:
-
-- link
-- link
-
 ## Related Topics
 
 For information on what was new for drivers in past Windows releases, see the following pages:
