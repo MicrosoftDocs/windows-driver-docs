@@ -57,9 +57,9 @@ C++** workload. The Windows 10 Software Development Kit (SDK) is
 automatically included and is displayed in the right-hand **Summary**
 pane.
 
-To develop drivers for ARM/ARM64, choose **Individual components** and
+To develop drivers for Arm/Arm64, choose **Individual components** and
 under **Compilers, build tools, and runtimes** select **Visual C++
-compilers and libraries for ARM/ARM64**.
+compilers and libraries for Arm/Arm64**.
 
 ### Install the Windows SDK to target Windows 10, versions 1607 and 1703
 

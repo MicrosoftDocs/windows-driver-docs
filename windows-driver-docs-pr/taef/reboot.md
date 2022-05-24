@@ -72,7 +72,7 @@ Te.exe /rebootStateFile:MyRestartFile.xml
 
 TAEF will create the file specified to store its state (which tests have already been executed, any TAEF command or environment options, etc.) and resume from where it left off when it resumes after the restart. TAEF handles re-executing itself once the machine comes up again after the restart.
 
-Note that this option does not work on ARM machines due to the removal of a feature that TAEF depends on to resume the tests after reboot (RunOnce key).
+Note that this option does not work on Arm machines due to the removal of a feature that TAEF depends on to resume the tests after reboot (RunOnce key).
 
 \* So long as you are not using any incompatible execution features (currently [Parallel](parallel.md) and [Test Modes](test-modes.md)).
 

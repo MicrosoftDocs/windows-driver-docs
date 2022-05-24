@@ -45,7 +45,7 @@ The following editions of Visual Studio 2022 support driver development for this
 
 When you install Visual Studio 2022, select the **Desktop development with C++** workload. The Windows 11, version 22H2 Software Development Kit (SDK) that is compatible with the Windows 11, version 22H2 WDK is not yet automatically included in Visual Studio. Please use the SDK download link in step 2 below.
 
-WDK has Spectre mitigation enabled by default but requires Spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for. Additionally, developing drivers for ARM/ARM64/ARM64EC require the build tools for these architectures to also be installed with Visual Studio. To locate these items, you will need to know the latest version of MSVC installed on your system.
+WDK has Spectre mitigation enabled by default but requires Spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for. Additionally, developing drivers for Arm/Arm64/Arm64EC require the build tools for these architectures to also be installed with Visual Studio. To locate these items, you will need to know the latest version of MSVC installed on your system.
 
 To find the latest version of MSVC installed on your system, in **Visual Studio Installer** go to **workload page**, on the right pane under **installation details**, expand **Desktop development with C++** and locate the **MSVC v143 - VS 2022 C++ x64/x86 build tools (Latest)**.
 
@@ -54,12 +54,12 @@ With this information (Latest), go to **Individual components** and search for *
 For example, searching for Latest returns the following:
 
 ```console
-MSVC v143 - VS 2022 C++ ARM build tools (Latest)
-MSVC v143 - VS 2022 C++ ARM Spectre-mitigated libs (Latest)
-MSVC v143 - VS 2022 C++ ARM64 build tools (Latest)
-MSVC v143 - VS 2022 C++ ARM64 Spectre-mitigated libs (Latest)
-MSVC v143 - VS 2022 C++ ARM64EC build tools (Latest - experimental)
-MSVC v143 - VS 2022 C++ ARM64EC Spectre-mitigated libs (Latest - experimental)
+MSVC v143 - VS 2022 C++ Arm build tools (Latest)
+MSVC v143 - VS 2022 C++ Arm Spectre-mitigated libs (Latest)
+MSVC v143 - VS 2022 C++ Arm64 build tools (Latest)
+MSVC v143 - VS 2022 C++ Arm64 Spectre-mitigated libs (Latest)
+MSVC v143 - VS 2022 C++ Arm64EC build tools (Latest - experimental)
+MSVC v143 - VS 2022 C++ Arm64EC Spectre-mitigated libs (Latest - experimental)
 MSVC v143 - VS 2022 C++ x64/x86 build tools (Latest)
 MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
 ```

@@ -32,7 +32,7 @@ The following is required:
 
 - A network connection between the target and host.
 
-- Windows 10 Insider Preview Build 21313 and later.
+- Windows 10 Build 21313 and later.
 
 ## Supported 2PF Network Cards
 

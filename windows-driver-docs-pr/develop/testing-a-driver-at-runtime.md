@@ -45,13 +45,13 @@ To make driver testing on different test targets easier, tests are scheduled to 
 2.  In the **Driver Test Group Explorer** window, select the **Create a new test group** button. Or, select **New Test Group** from the **Driver** menu.
 3.  In the **Driver Test Group** window for the group that you created, type a name in **Test Group Name** text box to identify the group. The default name is Driver Test Group\_*nnnnn*, where *nnnnn* represents the number of the test group
 4.  Select **Add/Remove Tests**.
-5.  In the **Add or Remove Driver Tests** dialog box, you can specify the driver test category and architecture (All, x86, x64, ARM). By default all tests are shown. To view the test categories, select the folders in the Driver Test Categories drop-down list.
+5.  In the **Add or Remove Driver Tests** dialog box, you can specify the driver test category and architecture (All, x86, x64, Arm). By default all tests are shown. To view the test categories, select the folders in the Driver Test Categories drop-down list.
 
     For example, in WDK 8, to select all of the Device Fundamentals tests that are used in the [Windows Hardware Certification Kit (HCK)](/windows-hardware/test/hlk/), select **All Tests**, **Certification**, and **Device Fundamentals**. For information about the tests, see [How to select and configure the Device Fundamentals Tests](how-to-select-and-configure-the-device-fundamental-tests.md).
 
     In WDK 8.1, the Device Fundamentals tests are under **All Tests**, **HCK Tests**, **Certification**, and **Device Fundamentals** folder. In WDK 8.1 the Driver Test Categories include the HCK (Basic) Tests. See [How to run the HCK Test Suites in WDK 8.1](run-the-hck-test-suites-in-the-wdk.md) for more information.
 
-6.  Be sure that you select the tests that match the architecture of the intended test computer (x86, x64, ARM). Use the **Architecture Filter** to show only those tests that will run on your test computer.
+6.  Be sure that you select the tests that match the architecture of the intended test computer (x86, x64, Arm). Use the **Architecture Filter** to show only those tests that will run on your test computer.
 7.  Select **&gt;&gt;** to add the selected tests.
 
 ### <span id="Configure_test_parameters"></span><span id="configure_test_parameters"></span><span id="CONFIGURE_TEST_PARAMETERS"></span>Step 4: Configure test parameters

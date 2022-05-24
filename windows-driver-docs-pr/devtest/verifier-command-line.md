@@ -435,7 +435,7 @@ Activates the specified options after the next reboot. This number can be entere
 <td align="left"><p>32768</p></td>
 <td align="left"><p>0x8000 (bit 15)</p></td>
 <td align="left"></td>
-<td align="left"><p><a href="concurrency-stress-test.md" data-raw-source="[Power Framework Delay Fuzzing](concurrency-stress-test.md)">Power Framework Delay Fuzzing</a> (Starting with Windows 8) <b>(Deprecated in Windows 10 Insider Preview Build 19042 and above)</b></p></td>
+<td align="left"><p><a href="concurrency-stress-test.md" data-raw-source="[Power Framework Delay Fuzzing](concurrency-stress-test.md)">Power Framework Delay Fuzzing</a> (Starting with Windows 8) <b>(Deprecated in Windows 10 Build 19042 and above)</b></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>65536</p></td>
@@ -453,13 +453,13 @@ Activates the specified options after the next reboot. This number can be entere
 <td align="left"><p>262144</p></td>
 <td align="left"><p>0x40000 (bit 18)</p></td>
 <td align="left"></td>
-<td align="left"><p><a href="systematic-low-resource-simulation.md" data-raw-source="[Systematic low resources simulation](systematic-low-resource-simulation.md)">Systematic low resources simulation</a> (Starting with Windows 8.1) <b>(Deprecated in Windows 10 Insider Preview Build 19042 and above)</b></p></td>
+<td align="left"><p><a href="systematic-low-resource-simulation.md" data-raw-source="[Systematic low resources simulation](systematic-low-resource-simulation.md)">Systematic low resources simulation</a> (Starting with Windows 8.1) <b>(Deprecated in Windows 10 Build 19042 and above)</b></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>524288</p></td>
 <td align="left"><p>0x80000 (bit 19)</p></td>
 <td align="left"></td>
-<td align="left"><p><a href="ddi-compliance-checking.md#ddi_compliance_checking_additional" data-raw-source="[DDI compliance checking (additional)](ddi-compliance-checking.md#ddi_compliance_checking_additional)">DDI compliance checking (additional)</a> (Starting with Windows 8.1) <b>(Deprecated in Windows 10 Insider Preview Build 19042 and above)</b></p></td>
+<td align="left"><p><a href="ddi-compliance-checking.md#ddi_compliance_checking_additional" data-raw-source="[DDI compliance checking (additional)](ddi-compliance-checking.md#ddi_compliance_checking_additional)">DDI compliance checking (additional)</a> (Starting with Windows 8.1) <b>(Deprecated in Windows 10 Build 19042 and above)</b></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2097152</p></td>
@@ -471,7 +471,7 @@ Activates the specified options after the next reboot. This number can be entere
 <td align="left"><p>8388608</p></td>
 <td align="left"><p>0x800000 (bit 23)</p></td>
 <td align="left"></td>
-<td align="left"><p><a href="kernel-synchronization-delay-fuzzing.md" data-raw-source="[Kernel synchronization delay fuzzing](kernel-synchronization-delay-fuzzing.md)">Kernel synchronization delay fuzzing</a> (Starting with Windows 8.1) <b>(Deprecated in Windows 10 Insider Preview Build 19042 and above)</b></p></td>
+<td align="left"><p><a href="kernel-synchronization-delay-fuzzing.md" data-raw-source="[Kernel synchronization delay fuzzing](kernel-synchronization-delay-fuzzing.md)">Kernel synchronization delay fuzzing</a> (Starting with Windows 8.1) <b>(Deprecated in Windows 10 Build 19042 and above)</b></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>16777216</p></td>
