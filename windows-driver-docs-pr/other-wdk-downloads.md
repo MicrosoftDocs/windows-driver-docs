@@ -15,7 +15,7 @@ The Windows Driver Kit (WDK) is used to develop, test, and deploy Windows Driver
 This topic contains information about earlier versions of the Windows Driver Kit (WDK),
 Enterprise WDK (EWDK), and additional downloads for support purposes. To develop drivers,
 use the latest public versions of the Windows Driver Kit (WDK) and tools, available for
-download on [Download the Windows Driver Kit (WDK)](download-the-wdk.md).
+download on [Download the Windows Driver Kit (WDK)](./download-the-wdk.md).
 
 To use these earlier versions, you must *first* install the version of
 Visual Studio that is appropriate for your targeted platform.
@@ -37,7 +37,7 @@ Windows 7|Windows Server 2008 R2 SP1|
 The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](/visualstudio/releases/2019/system-requirements).
 
 > [!NOTE]
-> Visual Studio 2022 is not supported by the Windows 11, version 21H2 WDK. To use Visual Studio 2022 to develop and test drivers, download the Windows 11, version 22H2 WDK. For details, see [Download the Windows Driver Kit (WDK)](./download-the-wdk).
+> Visual Studio 2022 is not supported by the Windows 11, version 21H2 WDK. To use Visual Studio 2022 to develop and test drivers, download the Windows 11, version 22H2 WDK. For details, see [Download the Windows Driver Kit (WDK)](./download-the-wdk.md).
 
 
 The following table indicates which Visual Studio version is required for the different releases of the WDK.
