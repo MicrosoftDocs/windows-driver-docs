@@ -14,22 +14,28 @@ ms.custom: 19H1
 
 The WDK is used to develop, test, and deploy drivers for Windows.
 
-* [Learn what's new in driver development](what-s-new-in-driver-development.md)
-* [Review known issues](wdk-known-issues.md)
+* [Learn what's new in driver development](./what-s-new-in-driver-development.md)
+* [Review known issues](./wdk-known-issues.md)
 
-[Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://aka.ms/wipwdk). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](installing-preview-versions-wdk.md).
+[Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://aka.ms/wipwdk). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](./installing-preview-versions-wdk.md).
 
-## Windows 11, version 22H2 WDK runtime requirements
+Starting with the Windows 11, version 22H2 release of the WDK and EWDK, the kits support:
 
-You can run the Windows 11 WDK on Windows 7 and later, and use it to develop drivers for these operating systems:
+* Visual Studio 2022 exclusively
+* Building and testing kernel-mode drivers for x64 and Arm64
+* Building and testing drivers for Windows 10, Windows Server 2016 and later client and server versions
+* Side by side (SxS) support with previous WDK/EWDK
 
-|Client OS|Server OS|
-|-|-|
-|Windows 11|Windows Server 2022|
-|Windows 10|Windows Server 2019, Windows Server 2016|
-|Windows 8.1|Windows Server 2012 R2|
-|Windows 8|Windows Server 2012|
-|Windows 7|Windows Server 2008 R2 SP1|
+Multiple WDKs and EWDKs can be installed concurrently on the same computer and even be part of same build system. You can run the Windows 11, version 22H2 WDK on Windows 7 and later.
+
+To target Windows 8.1, Windows 8, and Windows 7, you will need to install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see [Other WDK downloads](./other-wdk-downloads.md).
+
+Certain device-specific stacks (for example graphics) continue to have x86/ARM32 user-mode components to support x86/ARM32 apps.
+
+Starting with this release, WDF redistributable co-installers are no longer supported.
+
+> [!NOTE]
+> On a computer that has both the Windows 11, version 22H2 WDK and an older WDK, when building a WDF 1.11 driver, msbuild fails because it cannot find the WDF coinstaller. To fix this problem, before installing Windows 11, version 22H2 WDK, back up the folder `\Program files (x86)\windows kit\10\redist\wdf` and restore it afterwards. Alternatively, if you have already installed the Windows 11, version 22H2 WDK, install the MSI file at [WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) on a separate computer and copy the `redist` folder to the above folder. For more information, see [Redistributable Framework Components](/windows-hardware/drivers/wdf/installation-components-for-kmdf-drivers).
 
 ## Download and install the Windows 11, version 22H2 WDK
 
@@ -43,7 +49,7 @@ The following editions of Visual Studio 2022 support driver development for this
 * [Download Visual Studio Professional 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=17)
 * [Download Visual Studio Enterprise 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=17)
 
-When you install Visual Studio 2022, select the **Desktop development with C++** workload. The Windows 11, version 22H2 Software Development Kit (SDK) that is compatible with the Windows 11, version 22H2 WDK is not yet automatically included in Visual Studio. Please use the SDK download link in step 2 below.
+When you install Visual Studio 2022, select the **Desktop development with C++** workload. The Windows 11, version 22H2 Software Development Kit (SDK) that is compatible with the Windows 11, version 22H2 WDK is not included in Visual Studio. Please use the SDK download link in step 2 below.
 
 WDK has Spectre mitigation enabled by default but requires Spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for. Additionally, developing drivers for Arm/Arm64/Arm64EC require the build tools for these architectures to also be installed with Visual Studio. To locate these items, you will need to know the latest version of MSVC installed on your system.
 
@@ -118,3 +124,7 @@ To download the driver samples, do one of the following:
 * [Download the Windows HLK](/windows-hardware/test/hlk/windows-hardware-lab-kit)
 * [Download the Windows Debugging Tools (WinDbg)](./debugger/debugger-download-tools.md)
 * [Download Windows Symbol Packages](./debugger/debugger-download-symbols.md)
+
+## See also
+
+* [Windows 11 hardware requirements](/windows/whats-new/windows-11-requirements)
