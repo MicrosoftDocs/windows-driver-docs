@@ -68,7 +68,7 @@ Windows 11, version 22H2 introduces the following mobile broadband features:
 
 ## Driver Security
 
-- New  code scanning CodeQL rules and updated installation directions, are now available. For more information, see [CodeQL and the Static Tools Logo Test]( /windows-hardware/drivers/devtest/static-tools-and-codeq).
+- New  code scanning CodeQL rules and updated installation directions, are now available. For more information, see [CodeQL and the Static Tools Logo Test](/windows-hardware/drivers/devtest/static-tools-and-codeql).
 
 ## Provisioning support for loading pre-production drivers
 

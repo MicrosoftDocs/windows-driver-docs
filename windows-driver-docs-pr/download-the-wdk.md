@@ -6,7 +6,7 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 07/12/2021
+ms.date: 05/31/2022
 ms.custom: 19H1
 ---
 
@@ -103,7 +103,7 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 >4.    Launch devenv.exe from the same environment, using the full file path. 
 >Example: `"C:\Program Files (x86)\Microsoft Visual Studio\2022\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`
 >
->Note that the Visual Studio major version should match with the version in the EWDK. For example, Visual Studio 2022 works with the EWDK that contain VS17.X build tools. For a list of Visual Studio 2022 version numbers, see [Visual Studio 2022 Releases](/visualstudio/releases/2022/history).
+>Note that the Visual Studio major version should match with the version in the EWDK. For example, Visual Studio 2022 works with the EWDK that contain VS17.X build tools. For a list of Visual Studio 2022 version numbers, see [Visual Studio 2022 Releases](/visualstudio/releases/2022/release-history).
 
 <br>
 
