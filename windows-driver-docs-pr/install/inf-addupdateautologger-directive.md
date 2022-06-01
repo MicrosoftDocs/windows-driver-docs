@@ -27,7 +27,7 @@ UpdateAutoLogger=session-name,update-autologger-install-section
 ## Entries
 
 <a href="" id="session-name"></a>*session-name*  
-Specifies the name of the AutoLogger session that will be added. This name needs to be unique among the set of AutoLogger sessions on a machine.
+Specifies the name of the AutoLogger session that will be added. This name needs to be unique among the set of AutoLogger sessions on a machine. It is recommended that the session name include the name of your company or an abbreviation of your company name so it does not conflict with the name of a session from another company.
 
 <a href="" id="SessionGUID"></a>*SessionGUID*  
 Specifies the GUID value that identifies the AutoLogger session. This can be expressed as an explicit GUID value of the form `{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}` or as a %strkey% token defined to `{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}` in a [**Strings**](inf-strings-section.md) section of the INF file.
