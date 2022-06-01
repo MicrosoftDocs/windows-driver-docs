@@ -1,5 +1,10 @@
 - name: "Bring up"
   href: index.md
+- name: "Firmware Attack Surface Reduction (FASR)"
+# Auto-expanded node
+  items: 
+  - name: "Firmware Attack Surface Reduction (FASR)"
+    href: firmware-attack-surface-reduction.md
 - name: "Firmware Windows Engineering Guide (WEG)"
 # Auto-expanded node
   items: 
