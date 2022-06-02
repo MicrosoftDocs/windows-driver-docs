@@ -6,11 +6,14 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 05/31/2022
-ms.custom: 19H1
+ms.date: 06/02/2022
 ---
 
 # Download the Windows Driver Kit (WDK)
+
+> [!NOTE]
+> Due to a regression, it's not possible to debug drivers within the Visual Studio interface when using Visual Studio 2022 version 17.2.0 and the Windows 11, version 22H2 WDK. To work around the problem, use a version of Visual Studio earlier than 17.2.0. Debugging with WinDbg is not affected.
+> The following error messages are related to the regression: `The service ‘Microsoft.VisualStudio.Shell.Interop.SVsUIShell’ must be installed for this feature to work. Ensure that this service is available` and `The 'Microsoft.Windows.Tools.WinIDE.Debugger.DebuggerPackage, DebuggerPackage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null' package did not load correctly.`
 
 The WDK is used to develop, test, and deploy drivers for Windows.
 
