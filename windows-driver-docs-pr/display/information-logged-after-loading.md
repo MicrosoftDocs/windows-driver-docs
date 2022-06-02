@@ -13,7 +13,7 @@ GuidStats.txt is a text file that lists all the different GUIDs that GPUView is 
 
 The following table describes the overview information that GuidStats.txt provides for each GUID:  
 
-
+|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Hit count      | The number of times that an event of a particular type occurred in the ETL file.                                                                                                                    |
 | Bytes consumed | The amount of memory that was allocated to store the event's data.                                                                                                                                  |
