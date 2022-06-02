@@ -10,7 +10,7 @@ In October 2019, Microsoft worked closely with our OEM and Silicon partners to l
 
 More can be done to enhance the security posture of all Windows devices, including those without D-RTM. To help close this gap, Microsoft has started working with partners to overcome the compatibility issues that have prevented memory protections from being applied in UEFI firmware by developing a set of open-sourced SMM security enhancements to provide additional flexibility for OEMs to leverage.
 
-To reflect this commitment to firmware security, the definition of Secured-core PC has been updated to include a broader range of devices.
+To reflect this commitment to firmware security, we have identified a new approach to ensure that devices can meet the firmware protection requirements of Secured-core PCs.
 
 ## FASR Overview
 
@@ -75,7 +75,7 @@ In the past, S-RTM could be implemented in more devices due to its lack of depen
 
 ### Minimize the firmware components in the OS boot path
 
-One way to trust S-RTM measurements is to reduce the firmware components allowed to execute to a minimal set. If all devices using S-RTM used the same set of firmware components, the operating system would only need to trust a single set of expected PCR values for those known and trusted components. Therefore, the new Secured-core PC definition permits S-RTM when the set of boot firmware is verified to only contain Microsoft signed software that can be attested to by Windows. To better understand how these firmware components differ to those in a normal PC boot, let's examine the boot process before and after.
+One way to trust S-RTM measurements is to reduce the firmware components allowed to execute to a minimal set. If all devices using S-RTM used the same set of firmware components, the operating system would only need to trust a single set of expected PCR values for those known and trusted components. With this SRTM-based approach, a device can be considered to have met the firmware protection requirement of Secured-core PCs when the set of boot firmware is verified to only contain Microsoft signed software that can be attested to by Windows. To better understand how these firmware components differ to those in a normal PC boot, let's examine the boot process before and after.
 
 Due to the flexibility and the rich set of features offered by modern PC firmware, the code that executes prior to the operating system results in an increased attack surface. The following diagram shows an example of a traditional S-RTM boot flow.
 
