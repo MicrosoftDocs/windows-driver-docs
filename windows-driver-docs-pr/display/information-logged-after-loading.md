@@ -14,8 +14,8 @@ GuidStats.txt is a text file that lists all the different GUIDs that GPUView is 
 The following table describes the overview information that GuidStats.txt provides for each GUID:  
 
 
-| Hit count      | The number of times that an event of a particular type occurred in the ETL file.                                                                                                                    |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Hit count      | The number of times that an event of a particular type occurred in the ETL file.                                                                                                                    |
 | Bytes consumed | The amount of memory that was allocated to store the event's data.                                                                                                                                  |
 | Friendly name  | The friendly name that GPUView associates with the GUID for reference.                                                                                                                              |
 | Level          | A value that GPUView assigns to the event. You can use this value with the /**Limit** command-line option. For more information about how this value is used, see [Option: Limit](option-limit.md). |

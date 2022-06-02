@@ -828,6 +828,8 @@
             href: module-info-dialog-box.md
           - name: "Object Details Dialog Box"
             items:
+            - name: "Object Details Dialog Box"
+              href: object-details-dialog-box.md
             - name: "Selections in the GPU Hardware Queue"
               href: selections-in-the-gpu-hardware-queue.md
             - name: "Selections in the Flip Queue"
