@@ -55,13 +55,13 @@ With a TPM present, each firmware component can also update or extend the approp
 
 Now that we have examined the role of a root of trust and how Measured Boot is used, we will look at two common approaches to establishing a root of trust for reporting a measurement chain to the TPM: static and dynamic.
 
-A Static Root of Trust for Measurement (S-RTM) establishes trust at system reset and requires that trust be maintained throughout the entire boot process. If trust is compromised at any point in the boot process, it is irrecoverable until system reset. The following diagram shows the Static Root of Trust Measurement.
+A Static Root of Trust for Measurement (S-RTM) establishes trust at system reset and requires that trust be maintained throughout the entire boot process. If trust is compromised at any point in the boot process, it is irrecoverable until system reset. The following diagram illustrates how S-RTM is used on the certified boot path.
 
-![static root of trust measurement](images/fasr-1.png)
+![static root of trust measurement](images/fasr-srtm.png)
 
-In contrast, Dynamic Root of Trust for Measurement (D-RTM) only trusts a small portion of the early chipset initialization firmware code, as well as a hardware agent that is used to re-establish trust dynamically during the boot. The system can initially boot into untrusted firmware code but—shortly after launch—reverts to a trusted state by taking control of all CPUs and forcing them down a well-known and measured path. The following diagram shows the Dynamic Root of Trust Measurement.
+In contrast, Dynamic Root of Trust for Measurement (D-RTM) only trusts a small portion of the early chipset initialization firmware code, as well as a hardware agent that is used to re-establish trust dynamically during the boot. The system can initially boot into untrusted firmware code but—shortly after launch—reverts to a trusted state by taking control of all CPUs and forcing them down a well-known and measured path. The following diagram provides an overview of a traditional D-RTM flow.
 
-![dynamic root of trust measurement](images/fasr-2.png)
+![dynamic root of trust measurement](images/fasr-drtm.png)
 
 There is a tradeoff between S-RTM and D-RTM. S-RTM does not require special hardware capabilities but does require software to better account for the code that executed during the entire boot. D-RTM requires special hardware capabilities but allows software to launch into a trusted state dynamically during the lifetime of the system.
 
@@ -206,9 +206,9 @@ The following table indicates the broad security pillars or goals of Secured-cor
 |  | Direct Memory Access (DMA) Protection |
 | Defend against firmware level attacks (see note below) | System Guard Secure Launch (D-RTM) or S-RTM (FASR FW) |
 |  | System Management Mode (SMM) Isolation or Standalone MM with MM Supervisor (FASR FW) |
-| Protect the OS from execution of unverified code | Memory Integrity (also known as HVCI) | 
-| Provide advanced identity verification and protection | Windows Hello | 
-| Protect critical data in case of lost or stolen devices | BitLocker encryption | 
+| Protect the OS from execution of unverified code | Memory Integrity (also known as HVCI) |
+| Provide advanced identity verification and protection | Windows Hello |
+| Protect critical data in case of lost or stolen devices | BitLocker encryption |
 
 > [!NOTE]
 > If the system does not have advanced security capabilities to support D-RTM, the firmware protection requirements can be met using a combination of S-RTM and Standalone MM with MM Supervisor, both of which are offered by the FASR firmware.
