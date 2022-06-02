@@ -32,9 +32,9 @@ The following table shows example images of how this works:
 
 | Mode | Example image |
 |--|--|
-| **Shallow Focus & Blur Off** | ![background segmentation portrait blur off.](images/backgroundsegmentation-portrait-blur-off.png) |
-| **Shallow Focus On** | ![background segmentation portrait on.](images/backgroundsegmentation-portrait-on.png) |
-| **Blur On** | ![background segmentation blur on.](images/backgroundsegmentation-blur-on.png) |
+| **Blur Off** | ![background segmentation portrait blur off.](images/backgroundsegmentation-portrait-blur-off.png) |
+| **Shallow Focus On and Blur On** | ![background segmentation portrait on.](images/backgroundsegmentation-portrait-on.png) |
+| **Shallow Focus Off and Blur On** | ![background segmentation blur on.](images/backgroundsegmentation-blur-on.png) |
 
 ## Usage summary table
 
