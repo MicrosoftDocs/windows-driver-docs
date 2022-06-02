@@ -20,7 +20,7 @@ DTrace provides a facility to capture live dump from within the D-script using l
  DTrace live dump provides the ability to trigger the dump at the exact point where the error occurred. For instance, the error could be a function returning an error. You can use DTrace to hook into this function return and trigger a live dump when the return value is "error".
 
 > [!NOTE]
-> DTrace is supported in the Insider builds of Windows after version 18980 and Windows Server Insider Preview Build 18975.
+> DTrace is supported in the Insider builds of Windows after version 18980 and Windows Server Build 18975.
 
 For general information about working with DTrace on Windows, see [DTrace](dtrace.md).
 

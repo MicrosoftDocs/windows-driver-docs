@@ -8,16 +8,15 @@ keywords:
 - installing devices WDK , registry
 - Device setup WDK device installations , registry
 - driver registry RunOnce key WDK device installations
-ms.date: 04/20/2017
+ms.date: 05/20/2022
 ---
 
 # RunOnce Registry Key
 
+All versions of Windows support a registry key, **RunOnce**, which can be used to specify commands that the system will execute one time and then delete. Creation of **RunOnce** registry keys can be done from a [driver package](driver-packages.md).
 
-
-
-
-All versions of Windows support a registry key, **RunOnce**, which can be used to specify commands that the system will execute one time and then delete.
+> [!NOTE]
+> Creation of a **RunOnce** registry key for anything other than software-only SWENUM devices is not compliant with [driver package isolation](../develop/driver-isolation.md) and cannot be done from a [Windows Driver](../develop/getting-started-with-windows-drivers.md).
 
 In Windows 8 and Windows 8.1, **RunOnce** entries for installation of software-only SWENUM devices are processed during device installation. Other **RunOnce** entries are added to the **RunOnce** key. These are applied the next time the system processes the **RunOnce** key. Device installation does not force the system to process **RunOnce** entries.
 
@@ -59,7 +58,7 @@ Consider the following guidelines when you create a *value* string entry:
 
 The following code example shows the *add-registry-section* entry that stores a command and its arguments under the **RunOnce** key:
 
-```cpp
+```inf
 ;; WDMAud swenum install
 
 HKLM,%RunOnce%,"WDM_WDMAUD",,\

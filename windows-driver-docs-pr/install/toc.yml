@@ -206,6 +206,8 @@
         href: configuring-the-test-computer-to-support-test-signing.md
       - name: "Enable Loading of Test Signed Drivers"
         href: the-testsigning-boot-configuration-option.md
+      - name: "Enable Loading of Preproduction Signed Drivers"
+        href: preproduction-driver-signing-and-install.md
       - name: "Verifying the Test Signature"
         href: verifying-the-test-signature.md
       - name: "Installing a Test-Signed Driver Package on the Test Computer"
@@ -374,6 +376,8 @@
       href: obtaining-the-original-source-path-of-an-installed-inf-file.md
     - name: "Guidelines for Using SetupAPI"
       href: guidelines-for-using-setupapi.md
+    - name: "Device Installations on 64-Bit Systems"
+      href: device-installations-on-64-bit-systems.md
     - name: "Device Property Pages"
       items:
       - name: "Overview of Device Property Pages"
@@ -628,8 +632,6 @@
       href: avoiding-system-restarts-during-device-installations.md
     - name: "Initiating System Restarts During Device Installations"
       href: initiating-system-restarts-during-device-installations.md
-    - name: "Device Installations on 64-Bit Systems"
-      href: device-installations-on-64-bit-systems.md
   - name: "Registry"
     items:
     - name: "Registry Trees and Keys"
@@ -646,20 +648,22 @@
       href: hklm-system-currentcontrolset-hardwareprofiles-registry-tree.md
     - name: "RunOnce Registry Key"
       href: runonce-registry-key.md
-    - name: "DeviceOverrides Registry Key"
-      href: deviceoverrides-registry-key.md
-    - name: "HardwareID Registry Subkey"
-      href: hardwareid-registry-subkey.md
-    - name: "CompatibleID Registry Subkey"
-      href: compatibleid-registry-subkey.md
-    - name: "LocationPaths Registry Subkey"
-      href: locationpaths-registry-subkey.md
-    - name: "ChildLocationPaths Registry Subkey"
-      href: childlocationpaths-registry-subkey.md
-    - name: "LocationPath Registry Subkey"
-      href: locationpath-registry-subkey.md
-    - name: "* Registry Subkey"
-      href: --registry-subkey.md
+    - name: "DeviceOverrides"
+      items:
+      - name: "DeviceOverrides Registry Key"
+        href: deviceoverrides-registry-key.md
+      - name: "HardwareID Registry Subkey"
+        href: hardwareid-registry-subkey.md
+      - name: "CompatibleID Registry Subkey"
+        href: compatibleid-registry-subkey.md
+      - name: "LocationPaths Registry Subkey"
+        href: locationpaths-registry-subkey.md
+      - name: "ChildLocationPaths Registry Subkey"
+        href: childlocationpaths-registry-subkey.md
+      - name: "LocationPath Registry Subkey"
+        href: locationpath-registry-subkey.md
+      - name: "* Registry Subkey"
+        href: --registry-subkey.md
   - name: "Deprecated Functionality"
     items:
     - name: "General Setup Operations"
@@ -754,6 +758,8 @@
     href: inf-ddinstall-events-section.md
   - name: "INF DDInstall.FactDef Section"
     href: inf-ddinstall-factdef-section.md
+  - name: "INF DDInstall.Filters Section"
+    href: inf-ddinstall-filters-section.md
   - name: "INF DDInstall.HW Section"
     href: inf-ddinstall-hw-section.md
   - name: "INF DDInstall.Interfaces Section"
@@ -796,6 +802,8 @@
     href: inf-addcomponent-directive.md
   - name: "INF AddEventProvider Directive"
     href: inf-addeventprovider-directive.md
+  - name: "INF AddFilter Directive"
+    href: inf-addfilter-directive.md
   - name: "INF AddInterface Directive"
     href: inf-addinterface-directive.md
   - name: "INF AddPowerSetting Directive"

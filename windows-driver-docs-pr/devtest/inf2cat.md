@@ -47,27 +47,29 @@ Configures Inf2Cat to verify that a [driver package's](../install/driver-package
 
 |Windows version|Version identifier|
 |--- |--- |
-|Windows 11 x64 Edition|10_CO_X64|
-|Windows 11 ARM64 Edition|10_CO_ARM64|
+|Windows 11, version 22H2 x64 Edition|10_NI_X64|
+|Windows 11, version 22H2 Arm64 Edition|10_NI_ARM64|
+|Windows 11, version 21H2 x64 Edition|10_CO_X64|
+|Windows 11, version 21H2 Arm64 Edition|10_CO_ARM64|
 |Windows Server 2022 x64 Edition|ServerFE_X64|
-|Windows Server 2022 ARM64 Edition|ServerFE_ARM64|
+|Windows Server 2022 Arm64 Edition|ServerFE_ARM64|
 |Windows 10, version 21H2, 21H1, 20H2, 2004 x86 Edition|10_VB_X86|
 |Windows 10, version 21H2, 21H1, 20H2, 2004 x64 Edition|10_VB_X64|
-|Windows 10, version 21H2, 21H1, 20H2, 2004 ARM64 Edition|10_VB_ARM64|
+|Windows 10, version 21H2, 21H1, 20H2, 2004 Arm64 Edition|10_VB_ARM64|
 |Windows 10, version 1909, 1903 x86 Edition|10_19H1_X86|
 |Windows 10, version 1909, 1903 x64 Edition|10_19H1_X64|
-|Windows 10, version 1909, 1903 ARM64 Edition|10_19H1_ARM64|
+|Windows 10, version 1909, 1903 Arm64 Edition|10_19H1_ARM64|
 |Windows 10, version 1809 x86 Edition|10_RS5_X86|
 |Windows 10, version 1809 x64 Edition|10_RS5_X64|
-|Windows 10, version 1809 ARM64 Edition|10_RS5_ARM64|
+|Windows 10, version 1809 Arm64 Edition|10_RS5_ARM64|
 |Windows Server 2019 x64 Edition|ServerRS5_X64|
-|Windows Server 2019 ARM64 Edition|ServerRS5_ARM64|
+|Windows Server 2019 Arm64 Edition|ServerRS5_ARM64|
 |Windows 10, version 1803 x86 Edition|10_RS4_X86|
 |Windows 10, version 1803 x64 Edition|10_RS4_X64|
-|Windows 10, version 1803 ARM64 Edition|10_RS4_ARM64|
+|Windows 10, version 1803 Arm64 Edition|10_RS4_ARM64|
 |Windows 10, version 1709 x86 Edition|10_RS3_X86|
 |Windows 10, version 1709 x64 Edition|10_RS3_X64|
-|Windows 10, version 1709 ARM64 Edition|10_RS3_ARM64|
+|Windows 10, version 1709 Arm64 Edition|10_RS3_ARM64|
 |Windows 10, version 1703 x86 Edition|10_RS2_X86|
 |Windows 10, version 1703 x64 Edition|10_RS2_X64|
 |Windows 10, version 1607 x86 Edition|10_AU_X86|
@@ -76,7 +78,7 @@ Configures Inf2Cat to verify that a [driver package's](../install/driver-package
 |Windows 10 x86 Edition|10_X86|
 |Windows 10 x64 Edition|10_X64|
 |Windows Server 2016|Server10_X64|
-|Windows Server 2016 on ARM|Server10_ARM64|
+|Windows Server 2016 on Arm|Server10_ARM64|
 
 > [!NOTE]
 > Starting with Windows Server 2008 R2, Windows server operating systems will no longer support x86-based platforms.

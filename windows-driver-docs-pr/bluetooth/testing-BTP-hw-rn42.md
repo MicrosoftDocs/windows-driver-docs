@@ -22,6 +22,7 @@ The RN42 is a Basic Rate (BR) radio from Roving Networks capable of behaving as 
 - [Human Interface Device (HID) tests](testing-BTP-tests-hid.md)
 - [Audio & HID tests](testing-BTP-tests-audio-hid.md) (as a HID device)
 - [Power State HID tests](testing-BTP-tests-power-state-hid.md)
+- [Wi-Fi coexistence tests](testing-BTP-tests-wifi.md) (as a HID device)
 
 ## Hardware
 

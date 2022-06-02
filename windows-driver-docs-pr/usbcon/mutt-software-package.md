@@ -44,7 +44,7 @@ Changes for version 2.9.4
 Changes for version 2.9.3
 
 - Fix driver signing issue
-- Include ARM64 test tools
+- Include Arm64 test tools
 
 Changes for version 2.9
 

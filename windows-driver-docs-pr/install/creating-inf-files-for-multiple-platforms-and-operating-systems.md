@@ -41,11 +41,11 @@ The following table summarizes the system-supported platform extensions that can
 </tr>
 <tr class="even">
 <td align="left"><p><strong>.ntarm</strong></p></td>
-<td align="left"><p>The section contains instructions for installing a device or set of device-compatible models on ARM-based systems that are supported by Windows 8 and later.</p></td>
+<td align="left"><p>The section contains instructions for installing a device or set of device-compatible models on Arm-based systems that are supported by Windows 8 and later.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>.ntarm64</strong></p></td>
-<td align="left"><p>The section contains instructions for installing a device or set of device-compatible models on ARM64-based systems that are supported by Windows 10 version 1709 and later.</p></td>
+<td align="left"><p>The section contains instructions for installing a device or set of device-compatible models on Arm64-based systems that are supported by Windows 10 version 1709 and later.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>.nt</strong></p></td>

@@ -1,22 +1,23 @@
 ---
 title: Microsoft Bluetooth Test Platform - Wi-Fi and Bluetooth coexistence
 description: Bluetooth Test Platform (BTP) Wi-Fi and Bluetooth coexistence tests.
-ms.date: 07/26/2021
+ms.date: 05/05/2022
 ---
 
-# BTP Wi-Fi and Bluetooth coexistence tests
+# Bluetooth Test Platform Wi-Fi and Bluetooth coexistence tests
 
-The BTP Bluetooth and Wi-Fi coexistence tests verify the ability of the local system to pair with Bluetooth device(s), connect to a Wi-Fi access point, and stream data over Wi-Fi while simultaneously validating Bluetooth functionality and monitoring Bluetooth throughput. Bluetooth and Wi-Fi performance are reported to the user, and performance of Bluetoooth audio and HID streams are validated using glitch detection and traffic analysis.
+The BTP Bluetooth and Wi-Fi coexistence tests verify the ability of the local system to pair with Bluetooth device(s), connect to a Wi-Fi access point, and stream data over Wi-Fi while simultaneously validating Bluetooth functionality and monitoring Bluetooth throughput. Bluetooth and Wi-Fi performance are reported to the user, and performance of Bluetooth audio and HID streams are validated using glitch detection and traffic analysis.
 
 ## Setting up for testing
 
-When using a Pmod device with the Traduci, first check that the green power indicator, an optional yellow test LED, and 3 orange LEDs on the Traduci are on. Confirm that the SUT's Bluetooth radio is powered on and that the appropriate device(s) are correctly plugged in to the Traduci. Currently the ESP32 device can **only** be plugged into JD. Similarly, the RN52 device can **only** be plugged into JA. More detailed information on setting up can be found at [Setting up BTP](testing-BTP-setup.md).
+When using a Pmod device with the Traduci, first check that the green power indicator, an optional yellow test LED, and 3 orange LEDs on the Traduci are on. Confirm that the SUT's Bluetooth radio is powered on and that the appropriate device(s) are correctly plugged in to the Traduci. Currently the ESP32 device can **only** be plugged into JD. Similarly, the audio device (RN52 or BM62) device can **only** be plugged into JA. More detailed information on setting up can be found at [Setting up BTP](testing-BTP-setup.md).
 
 Features and purchasing information for supported devices can be found at [Supported BTP Hardware](testing-BTP-hw.md).
 
 ## Supported devices
 
 - [ESP32](testing-BTP-hw-esp32.md) (as Wi-Fi Access Point device)
+- [BM62](testing-BTP-hw-bm62.md) (as Audio Device)
 - [RN52](testing-BTP-hw-rn52.md) (as Audio Device)
 - [RN42](testing-BTP-hw-rn42.md) (as HID Device)
 - [Bluefruit Friend](testing-BTP-hw-bluefruit-Friend.md) (as HID Device)
@@ -34,7 +35,7 @@ If you would like to also validate HID functionality at the same time, then run 
 - `RunWiFiAudioHidScenarioTests.bat <Wi-Fi device name> <Bluetooth audio device name> <Bluetooth HID device name>` from an elevated command prompt or
 - `RunWiFiAudioHidScenarioTests.ps1 <Wi-Fi device name> <Bluetooth audio device name> <Bluetooth HID device name>` from an elevated PowerShell console
 
-Information on available device name parameters can be found in [Bluetooth Test Platform supported hardware](testing-BTP-hw.md#supported-devices).
+Information on available device name parameters can be found in [Bluetooth Test Platform supported hardware](testing-BTP-hw.md).
 
 You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP.
 
@@ -50,4 +51,4 @@ To parse the Bluetooth logs, follow the instructions for the [BTETLParse tool](t
 
 - Stress tests: Tests run in a tight loop using an LE device may cause pairing or unpairing to fail.
 - Running Wi-Fi and Bluetooth coexistence tests without disconnecting from any VPN sessions will cause failures.
-- Currently these tests may fail for some ARM64 devices. We are working on resolving this issue.
+- Currently these tests may fail for some Arm64 devices. We are working on resolving this issue.

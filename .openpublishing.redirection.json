@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+            "source_path": "windows-driver-docs-pr/wdk22h2-supportmatrix.md",
+            "redirect_URL": "/windows-hardware/drivers/download-the-wdk",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/ieee/removing-ieee-1394-virtual-devices.md",
             "redirect_URL": "/windows-hardware/drivers/ieee/how-drivers-manage-ieee-1934-virtual-devices",
             "redirect_document_id": false

@@ -65,10 +65,10 @@ Do not display these devices on Itanium-based computers that are running Windows
 Do not display these devices on x64-based computers that are running Windows XP or later versions of Windows.
 
 <a href="" id="-ntarm"></a>**.ntarm**  
-Do not display these devices on ARM-based computers that are running Windows XP or later versions of Windows.
+Do not display these devices on Arm-based computers that are running Windows XP or later versions of Windows.
 
 <a href="" id="-ntarm64"></a>**.ntarm64**  
-Do not display these devices on ARM64-based computers that are running Windows XP or later versions of Windows.
+Do not display these devices on Arm64-based computers that are running Windows XP or later versions of Windows.
 
 
 

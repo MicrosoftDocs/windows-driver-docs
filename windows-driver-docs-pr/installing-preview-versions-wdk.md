@@ -14,41 +14,6 @@ ms.date: 02/16/2022
 
 This page contains installation instructions for Insider Preview (pre-release) versions of the Windows Driver Kit (WDK). The  download links for the latest pre-release version of the WDK and the EWDK are on  [https://www.microsoft.com/software-download/windowsinsiderpreviewWDK](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK).  
 
-
-## Supported Configurations
-
-Starting with the February 2022 Windows Insider Preview (WIP) release of the WDK and EWDK, the kits support:
-
-* Visual Studio 2022 exclusively
-* Building and testing kernel-mode drivers for x64 and ARM64
-* Building and testing drivers for Windows 11 and Windows 10
-* Side by side (SxS) support with previous WDK/EWDK
-
-> [!NOTE]
-> The following are not supported:
-> * Visual Studio 2019
-> * Building kernel-mode drivers for x86 and ARM32
-> * Building and testing drivers for Windows 7, Windows 8, Windows 8.1
-> * Building WDF drivers that require WDF redistributable co-installers
-
-**Notes**
-
-* Device-specific user-mode drivers: Certain device-specific stacks (for example graphics) will continue to have x86/ARM32 user-mode components to support x86/ARM32 apps.
-* Testing drivers: As with previous driver kits, WDK continues to support running tests directly in Visual Studio. The WDK major version must match the target OS major version. For details, see [Testing a Driver](./develop/testing-a-driver.md).
-
-
-**FAQ**
-
-Q. Can drivers targeting  Windows 8.1, Windows 8, and Windows 7 be built?
-
-A. No – you will need to install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine. For details, see [Download the Windows Driver Kit (WDK)](./download-the-wdk.md).
-
-Q. Why can't the WDK continue supporting 32 bit/ARM kernel-mode drivers?
-
-A. The WDK comes from the same code base as Windows 11. Now that the codebase only supports x64 and ARM64, the x86 and ARM kernel mode libraries are no longer produced.
-
-For info about the latest **released** versions of the WDK, see [Download the Windows Driver Kit (WDK)](download-the-wdk.md). For downloads of earlier versions of the WDK, see [Other WDK downloads](other-wdk-downloads.md).  
-
 ## Install Windows Driver Kit (WDK) Insider Preview
 
 ### 1. Install Visual Studio
@@ -56,7 +21,7 @@ For info about the latest **released** versions of the WDK, see [Download the Wi
 * The WDK now supports Visual Studio 2022.  All editions are supported.  The WDK no longer supports Visual Studio 2019.
 * Download from [Visual Studio 2022](/visualstudio/releases/2022).
 * Select workload: **Development with C++**.
-* For ARM64 and ARM64EC drivers, you must additionally install the component: **Individual components -> Compilers, build tools, and runtimes -> Visual C++ compilers and libraries for ARM64/ARM64EC**. Note that the WDK has Spectre mitigation enabled by default but requires Spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for.
+* For Arm64 and Arm64EC drivers, you must additionally install the component: **Individual components -> Compilers, build tools, and runtimes -> Visual C++ compilers and libraries for Arm64/Arm64EC**. Note that the WDK has Spectre mitigation enabled by default but requires Spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for.
 
 ### 2. Disable strong name validation
 

@@ -10,7 +10,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 06/24/2021
+ms.date: 05/16/2022
 ms.topic: article
 ---
 
@@ -22,52 +22,76 @@ This property controls an in-stream correction that a driver can perform to enab
 
 Examples of setting KSPROPERTY controls can be found in the [AVStream Camera Sample Driver](https://github.com/microsoft/Windows-driver-samples/tree/master/avstream/avscamera) on GitHub.
 
+## Portrait mode update to KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION control
+
+Starting in Windows 11, version 22H2, Portrait mode has been introduced to the existing background segmentation control as an optional capability.
+
+ **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_PORTRAITMODE** is a new flag added to the KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION control that is used to control the Bokeh (Portrait mode) on the driver. This is a version of Background blur ([**KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION**](/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-backgroundsegmentation)), where the emphasis is less on privacy and more on making the background of the user look like from a higher quality camera with depth of field effect. This visually will make the foreground subject stand out, similar to how portrait mode photography on many mobile phones has become popular.
+
+The following table shows example images of how this works:
+
+| Mode | Example image |
+|--|--|
+| **Portrait & Blur Off** | ![background segmentation portrait blur off.](images/backgroundsegmentation-portrait-blur-off.png) |
+| **Portrait On** | ![background segmentation portrait on.](images/backgroundsegmentation-portrait-on.png) |
+| **Blur On** | ![background segmentation blur on.](images/backgroundsegmentation-blur-on.png) |
+
 ## Usage summary table
 
 | Scope | Control | Type |
 |--|--|--|
 | Version 1 | Filter | Synchronous |
 
-The following flags can be placed in the **KSCAMERA_EXTENDEDPROP_HEADER.Flags** field to control background blur. The default should be **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_OFF**.
+The following flags can be placed in the **KSCAMERA_EXTENDEDPROP_HEADER.Flags** field to control portrait mode.
 
 ```cpp
-#define KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_OFF    0x0000000000000000
-#define KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_BLUR   0x0000000000000001
-#define KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_MASK   0x0000000000000002
+#define KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_OFF          0x0000000000000000
+#define KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_BLUR         0x0000000000000001
+#define KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_MASK         0x0000000000000002
+#define KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_PORTRAITMODE 0x0000000000000004
 ```
 
-If the driver supports this control, it must support at least one capability flag (**KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_BLUR**) and **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_OFF**.
+If the driver supports this control, it must support BACKGROUNDSEMENTATION_OFF and one or more of the other flags.
 
 If the driver does not support background segmentation, the driver should not implement this control.
 
-The SET call of this control shall take effect even when the video or photo pin is in the **KSSTATE_RUN** state. In a GET call, driver should return the current settings in the Flags field.
+The SET call of this control shall take effect even when the video or photo pin is in the KSSTATE_RUN state. In a GET call, driver should return the current settings in Flags field.
 
 The following table describes the flag capabilities.
 
 | Flag | Description |
 |--|--|
-| **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_OFF** | This is a mandatory capability. When specified, the background blur is disabled in the driver. |
-| **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_BLUR** | This is an optional capability. When specified, background blur is enabled in the driver. |
-| **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_MASK** | This is an optional capability. When specified, background mask metadata production is enabled in the driver (if possible given the MediaType used as expressed via the set of  **KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION_CONFIGCAPS** returned in the Size field of the **KSCAMERA_EXTENDEDPROP_HEADER**). Note that this can be supported not only for color cameras but also depth and IR cameras. |
+| **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_OFF** | This is a mandatory capability. When specified, the background segmentation is disabled in the driver. This is the default value. |
+| **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_BLUR** | This is an optional capability. When specified, background blur is enabled in the driver and applies to frame if possible. |
+| **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_MASK** | This is an optional capability. When specified, background mask metadata production is enabled in the driver (if possible given the MediaType used as expressed via the set of KSPROPERTY_CAMERACONTROL_EXTENDED_ BACKGROUNDSEGMENTATION_CONFIGCAPS returned in the *Size* field of the KSCAMERA_EXTENDEDPROP_HEADER). Note that this can be supported not only for color cameras but also depth and IR cameras. |
+| **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_PORTRAITMODE** | This is an optional capability. When specified, the portrait mode is enabled in the driver. |
 
-The following table contains the descriptions and requirements for the [KSCAMERA_EXTENDEDPROP_HEADER](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
+> [!NOTE]
+> From a SET perspective, **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_PORTRAITMODE** and **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_BLUR** need to be exclusive, however they can be set along with **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_MASK**.
+
+The table below contains the descriptions and requirements for the [KSCAMERA_EXTENDEDPROP_HEADER](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
 | Member | Description |
 |--|--|
 | Version | This must be 1. |
-| PinId | KSCAMERA_EXTENDEDPROP_FILTERSCOPE (0xFFFFFFFF) |
-| Size | If the Capability field exposes support for **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_MASK**, this must be sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + N * sizeof(KSPROPERTY_CAMERACONTROL_EXTENDED_ BACKGROUNDSEGMENTATION_CONFIGCAPS), where N can be inferred from (size - sizeof(KSCAMERA_EXTENDEDPROP_HEADER)) / sizeof(KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION_CONFIGCAPS).<br><br>If the Capability field only exposes support for KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_BLUR, then this can also just be sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(KSCAMERA_EXTENDEDPROP_VALUE) but be aware that the DDI consumer will not know in advance in which stream configuration blur will be applied.<br><br>Note that for a SET call, only the **KSCAMERA_EXTENDEDPROP_HEADER** is considered. |
-| Result | Indicates the error results of the last SET operation. If no SET operation has taken place, this must be 0. |
-| Capability | Must be a bit wise **OR** of the supported ***KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_XXX*** flags defined above. |
-| Flags | This is a read/write field. This can be any one of the ***KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_XXX*** flags defined above. |
+| PinId | This must be **KSCAMERA_EXTENDEDPROP_FILTERSCOPE** (0xFFFFFFFF). |
+| Size | This must be **sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(KSCAMERA_EXTENDEDPROP_VALUE)**. |
+| Result | Unused, must be 0. |
+| Capability | Must be a bitwise OR of the supported **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION _*** flags defined above. |
+| Flags | This is a read/write field. This can be any one of the **KSCAMERA_EXTENDEDPROP_ BACKGROUNDSEGMENTATION_*** flags
+defined above. From a SET perspective, PORTRAITMODE and BLUR need to be exclusive, however they can be set along with MASK. |
 
 ## Requirements
 
-**Minimum supported client:** Windows 11
+**Minimum supported client:** Windows 11, version 22H2
 
 **Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
+
+[Background segmentation portrait mode and eye gaze stare mode driver sample](background-segmentation-portrait-mode-eye-gaze-stare-mode-driver-sample.md)
+
+[KSPROPERTY_CAMERACONTROL_EXTENDED_EYEGAZECORRECTION](ksproperty-cameracontrol-extended-eyegazecorrection.md)
 
 [KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_CONFIGCAPS](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kscamera_extendedprop_backgroundsegmentation_configcaps)
 

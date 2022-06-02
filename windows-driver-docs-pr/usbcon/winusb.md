@@ -1,11 +1,11 @@
 ---
-title: Introduction to WinUSB (Winusb.sys)
+title: Introduction to WinUSB for developers
 description: This section describes the generic WinUSB driver (Winusb.sys) and its user-mode component (Winusb.dll) provided by Microsoft for all USB devices.
-ms.date: 12/10/2021
-ms.custom: contperf-fy21q4, contperf-fy22q2
+ms.date: 05/16/2022
+ms.custom: contperf-fy22q4
 ---
 
-# Introduction to WinUSB (Winusb.sys)
+# Introduction to WinUSB for developers
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer experiencing USB problems, see [Troubleshoot common USB problems](https://support.microsoft.com/help/17614/windows-10-troubleshoot-common-usb-problems)
@@ -30,7 +30,6 @@ This section includes info on:
 You'll also find detailed code examples that show how apps and USB devices communicate.
 
 > [!NOTE]
->
 > Windows 7 supports WinUSB on x86-based, x64-based, and Itanium-based systems. More recent versions of Windows support WinUSB on x86-based and x64-based systems.
 >
 > WinUSB supports isochronous transfers starting in Windows 8.
