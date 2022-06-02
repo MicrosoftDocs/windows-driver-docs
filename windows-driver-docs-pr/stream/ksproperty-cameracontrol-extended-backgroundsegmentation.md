@@ -42,7 +42,7 @@ The following table shows example images of how this works:
 |--|--|--|
 | Version 1 | Filter | Synchronous |
 
-The following flags can be placed in the **KSCAMERA_EXTENDEDPROP_HEADER.Flags** field to control portrait mode.
+The following flags can be placed in the **KSCAMERA_EXTENDEDPROP_HEADER.Flags** field to control shallow focus mode.
 
 ```cpp
 #define KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_OFF          0x0000000000000000
