@@ -26,7 +26,7 @@ Notice that the thread name has changed to winsrv.dll!StartCreateSystemThreads.
 
 ## Resolve Symbols
 
-To turn on symbol resolution, select the Resolve Symbols check box and then press the **Ok** button. During the processing of the **Ok** button, the symbol changes will be applied. 
+To turn on symbol resolution, select the **Resolve Symbols** check box and then press the **Ok** button. During the processing of the **Ok** button, the symbol changes will be applied. 
 
 ## Use Symbol Server
 

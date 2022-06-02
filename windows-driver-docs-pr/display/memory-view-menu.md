@@ -6,13 +6,13 @@ ms.date: 05/10/2022
 
 # Memory View Menu
 
-The Segment Viewer window has its own menu, Actions. If you click the Actions menu, you get a submenu with the following items on it:
+The Segment Viewer window has its own menu, **Actions**. If you click the **Actions** menu, you get a submenu with the following items on it:
 
 **State change** - brings up a submenu.
 
-   **Next change** - advances the display to the next memory operation.
+&nbsp;&nbsp;&nbsp; **Next change** - advances the display to the next memory operation.
 
-   **Previous change** - regresses to display the previous memory operation. 
+&nbsp;&nbsp;&nbsp; **Previous change** - regresses to display the previous memory operation. 
   
 **Go to time** - brings up the *Set time* dialog.
 

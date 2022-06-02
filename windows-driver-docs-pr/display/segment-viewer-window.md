@@ -6,7 +6,9 @@ ms.date: 05/10/2022
 
 # Segment Viewer Window
 
-The Segment Viewer displays information about the memory layout at a particular instant of time for a particular memory segment. The Segment Viewer window can be launched by either pressing the **Segment Viewer** button after bringing up the Object Details of a Standard Dma Packet in the GPU Hardware Queue or by double-clicking the segment in the **Object Viewer Dialog Object** tree control. 
+The Segment Viewer displays information about the memory layout at a particular instant of time for a particular memory segment. You can use the Segment Viewer window and its associated functionality in GPUView to view the memory layout and memory placement over time.
+
+The Segment Viewer window can be launched by either pressing the **Segment Viewer** button after bringing up the Object Details of a Standard Dma Packet in the GPU Hardware Queue or by double-clicking the segment in the **Object Viewer Dialog Object** tree control. 
 
 A typical screen shot of the Segment Viewer window looks like the following. 
 

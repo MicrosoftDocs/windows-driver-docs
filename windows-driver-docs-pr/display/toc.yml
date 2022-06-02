@@ -701,7 +701,7 @@
       - name: "Updates for IddCx versions 1.4 and later"
         href: iddcx1.4-updates.md
       - name: "IddCx 1.4 updates for console and remote IDDs"
-        href: "iddcx1.4-updates-for-console-and-remote-idds.md"
+        href: iddcx1.4-updates-for-console-and-remote-idds.md
       - name: "IddCx 1.4 updates for remote IDDs"
         href: iddcx1.4-updates-for-remote-idds.md
       - name: "Building IddCx v1.4 drivers"
