@@ -64,7 +64,7 @@ The following table describes the flag capabilities.
 | **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_OFF** | This is a mandatory capability. When specified, the background segmentation is disabled in the driver. This is the default value. |
 | **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_BLUR** | This is an optional capability. When specified, background blur is enabled in the driver and applies to frame if possible. |
 | **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_MASK** | This is an optional capability. When specified, background mask metadata production is enabled in the driver (if possible given the MediaType used as expressed via the set of KSPROPERTY_CAMERACONTROL_EXTENDED_ BACKGROUNDSEGMENTATION_CONFIGCAPS returned in the *Size* field of the KSCAMERA_EXTENDEDPROP_HEADER). Note that this can be supported not only for color cameras but also depth and IR cameras. |
-| **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_SHALLOWFOCUS** | This is an optional capability. When specified, the portrait mode is enabled in the driver. |
+| **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_SHALLOWFOCUS** | This is an optional capability. When specified together with KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_BLUR , the shallow focus is enabled in the driver. |
 
 > [!NOTE]
 > From a SET perspective, **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_SHALLOWFOCUS** needs to be added along with **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_BLUR** to take effect;  They can also be set along with **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_MASK**.
@@ -78,8 +78,7 @@ The table below contains the descriptions and requirements for the [KSCAMERA_EXT
 | Size | This must be **sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(KSCAMERA_EXTENDEDPROP_VALUE)**. |
 | Result | Unused, must be 0. |
 | Capability | Must be a bitwise OR of the supported **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION _*** flags defined above. |
-| Flags | This is a read/write field. This can be any one of the **KSCAMERA_EXTENDEDPROP_ BACKGROUNDSEGMENTATION_*** flags
-defined above. From a SET perspective, PORTRAITMODE and BLUR need to be exclusive, however they can be set along with MASK. |
+| Flags | This is a read/write field. This can be any one of the **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION _*** flags defined above except SHALLOWFOCUS (which needs to be set together with BLUR to take effect), or valid combinations of the bits. From a SET perspective, shallow focus mode will be enabled only when both SHALLOWFOCUS and BLUR are set at the same time, they can be set along with MASK.|
 
 ## Requirements
 
