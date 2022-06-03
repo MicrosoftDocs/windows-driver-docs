@@ -1,12 +1,12 @@
 ---
 title: Introduction to NDIS 6.84
 description: This section introduces NDIS 6.84 and describes changes from NDIS 6.83. NDIS 6.84 is included in Windows 10, version 2004.
-ms.date: 03/04/2022
+ms.date: 06/03/2022
 ---
 
 # Introduction to NDIS 6.84
 
-This topic introduces Network Driver Interface Specification (NDIS) 6.84 and describes its major design additions. NDIS 6.84 is included in Windows 10, version 2004 and Windows Server 2019 and later.
+This topic introduces Network Driver Interface Specification (NDIS) 6.84 and describes its major design additions. NDIS 6.84 is included in Windows 10, version 2004 and Windows Server 2022 and later.
 
 NDIS 6.84 is a minor version update to NDIS 6.83. For more information about porting NDIS 6.x drivers to NDIS 6.84, see [Porting NDIS 6.x drivers to NDIS 6.84](porting-ndis-6-x-drivers-to-ndis-6-84.md).
 
