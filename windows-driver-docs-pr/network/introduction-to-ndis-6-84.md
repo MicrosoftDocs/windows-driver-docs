@@ -30,7 +30,7 @@ In addition, an NDIS 6.84 driver must be compliant with the following requiremen
 
   * Protocol drivers must set the **Header** member of [**NDIS_PROTOCOL_DRIVER_CHARACTERISTICS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_protocol_driver_characteristics): Set **Revision** to NDIS_PROTOCOL_CHARACTERISTICS_REVISION_2 and **Size** to NDIS_SIZEOF_PROTOCOL _DRIVER_CHARACTERISTICS_REVISION_2.
 
-- NDIS 6.84 miniport drivers for Windows 10, version 2004 and Windows Server 2019 and later must use the NDIS 6.84 versions of data structures.
+- NDIS 6.84 miniport drivers for Windows 10, version 2004 and Windows Server 2022 and later must use the NDIS 6.84 versions of data structures.
 
 ## Compiling an NDIS 6.84 driver
 
