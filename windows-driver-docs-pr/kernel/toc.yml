@@ -1340,8 +1340,8 @@
         href: introduction-to-application-notification.md
       - name: "Registering for Application Notification"
         href: registering-for-application-notification.md
-      - name: "Processing an Application Notification"
-        href: processing-an-application-notification.md
+      - name: "Processing WM_DEVICECHANGE messages"
+        href: processing-wm_devicechange-messages.md
   - name: "NTSTATUS Values"
     items: 
     - name: "Using NTSTATUS Values"
