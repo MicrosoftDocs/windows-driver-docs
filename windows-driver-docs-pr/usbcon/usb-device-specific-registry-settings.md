@@ -26,7 +26,7 @@ HKEY_LOCAL_MACHINE
                   <Device-specific registry entry>
 ```
 
-In the ***vvvvpppprrrrr*** key,
+In the ***vvvvpppprrrr*** key,
 
 - ***vvvv*** is a 4-digit hexadecimal number that identifies the vendor
 - ***pppp*** is a 4-digit hexadecimal number that identifies the product
