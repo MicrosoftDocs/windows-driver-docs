@@ -20,20 +20,21 @@ FASR supports two boot paths:
 
 1. **Certified boot path:**
 
-* Only code trusted, signed, and integrated by Microsoft is allowed to execute.
-* Tampering of the boot path is detectable by the operating system.
+    - Only code trusted, signed, and integrated by Microsoft is allowed to execute.
 
-The figure below shows the FASR S-RTM boot flow on the certified boot path. This boot path does helps prevent unexpected platform firmware code from executing. However, it does make use of some platform-specific data provided by the custom boot path. The following diagram shows FASR boot flow on certified boot path.
+    - Tampering of the boot path is detectable by the operating system.
 
-![F A S R boot flow on certified boot path](images/fasr-5.png)
+    The figure below shows the FASR S-RTM boot flow on the certified boot path. This boot path does helps prevent unexpected platform firmware code from executing. However, it does make use of some platform-specific data provided by the custom boot path. The following diagram shows FASR boot flow on certified boot path.
+
+    ![F A S R boot flow on certified boot path](images/fasr-5.png)
 
 2. **Custom boot path:** All platform firmware code can execute. Boot-critical information specific to a particular OEM/platform is converted into data on the custom boot path and used by the certified boot path to configure the system properly on that boot path. The following diagram shows the FASR boot flow on custom boot path.
 
-![F A S R boot flow on custom boot path](images/fasr-6.png)
+    ![F A S R boot flow on custom boot path](images/fasr-6.png)
 
-A FASR device enabled for Secured-core PC compliance, defaults to the certified boot path unless an event has occurred that causes the boot to switch to the custom boot path early in the firmware boot process. Examples of such events include a firmware update, the user requested a firmware UI, or the user has chosen to disable Secured-core PC meaning they will always boot on the custom boot path until it is reenabled.
+    A FASR device enabled for Secured-core PC compliance, defaults to the certified boot path unless an event has occurred that causes the boot to switch to the custom boot path early in the firmware boot process. Examples of such events include a firmware update, the user requested a firmware UI, or the user has chosen to disable Secured-core PC meaning they will always boot on the custom boot path until it is reenabled.
 
-Note that the custom boot can be used to boot any operating system or third-party software as supported by the platform firmware on a FASR capable device, but Windows will not recognize the boot on the custom boot path as Secured-core PC compliant.
+    Note that the custom boot can be used to boot any operating system or third-party software as supported by the platform firmware on a FASR capable device, but Windows will not recognize the boot on the custom boot path as Secured-core PC compliant.
 
 To better understand the security technologies behind FASR, we would like to share a quick overview of the Windows boot process.
 
@@ -217,4 +218,4 @@ The following table indicates the broad security pillars or goals of Secured-cor
 
 These are some of the investments that Microsoft has made to address the growing number of firmware attacks that are prevalent across the industry today. By using open-sourced code for these changes, we are empowering our partners to leverage some of these security benefits which will, in turn, benefit the broader ecosystem and industry at large.
 
-The primary goal of the Secured-core PC initiative is to help ensure that customers have access to some of the most advanced security capabilities available for Windows PCs. With some of these firmware changes, we're one step closer towards realizing that goal, and have updated the firmware protection requirements of Secured-core PCs to reflect this inclusion. Learn more about Secured-core PCs [here](/windows/business/windows-11-secured-core-computers#:~:text=Secured-core%20PCs%20are%20the%20most%20secure%20Windows%2010,with%20integrated%20hardware%2C%20firmware%2C%20software%2C%20and%20identity%20protection).
+The primary goal of the Secured-core PC initiative is to help ensure that customers have access to some of the most advanced security capabilities available for Windows PCs. With some of these firmware changes, we're one step closer towards realizing that goal, and have updated the firmware protection requirements of Secured-core PCs to reflect this inclusion. Learn more about Secured-core PCs [here](https://www.microsoft.com/windows/business/windows-11-secured-core-computers#:~:text=Secured-core%20PCs%20are%20the%20most%20secure%20Windows%2010,with%20integrated%20hardware%2C%20firmware%2C%20software%2C%20and%20identity%20protection).
