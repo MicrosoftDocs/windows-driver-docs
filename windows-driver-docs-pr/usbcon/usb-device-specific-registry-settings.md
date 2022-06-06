@@ -34,7 +34,7 @@ In the ***vvvvpppprrrr*** key,
 
 The vendor ID, product ID, and revision number values are obtained from the [USB device descriptor](usb-device-descriptors.md). The [USB_DEVICE_DESCRIPTOR](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_device_descriptor) structure describes a device descriptor.
 
-The following table describes the possible registry entries for the ***vvvvpppprrrrr*** key. The USB driver stack considers these entries to be read-only values.
+The following table describes the possible registry entries for the ***vvvvpppprrrr*** key. The USB driver stack considers these entries to be read-only values.
 
 <table>
   <thead>
