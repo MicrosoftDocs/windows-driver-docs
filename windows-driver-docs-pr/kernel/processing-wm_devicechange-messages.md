@@ -2,7 +2,7 @@
 title: Processing WM_DEVICECHANGE messages
 description: Processing WM_DEVICECHANGE messages
 ms.date: 06/06/2022
-ms.custom: contperf-fy23q1
+ms.custom: contperf-fy22q4
 ---
 
 # Processing WM_DEVICECHANGE messages
