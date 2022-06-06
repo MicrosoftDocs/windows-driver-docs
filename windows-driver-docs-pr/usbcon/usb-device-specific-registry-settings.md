@@ -1,12 +1,16 @@
 ---
 description: This topic describes USB device-specific registry entries.
 title: USB device registry entries
-ms.date: 04/25/2022
+ms.date: 06/06/2022
+ms.custom: contperf-fy22q4
 ---
 
 # USB device registry entries
 
 This topic describes USB device-specific registry entries.
+
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer experiencing USB problems, see [Troubleshoot common USB problems](https://support.microsoft.com/help/17614/windows-10-troubleshoot-common-usb-problems)
 
 ## Registry settings for configuring USB driver stack behavior
 
@@ -18,7 +22,7 @@ HKEY_LOCAL_MACHINE
       CurrentControlSet
          Control
             usbflags
-               <vvvvpppprrrrr>
+               <vvvvpppprrrr>
                   <Device-specific registry entry>
 ```
 
@@ -28,7 +32,7 @@ In the ***vvvvpppprrrrr*** key,
 - ***pppp*** is a 4-digit hexadecimal number that identifies the product
 - ***rrrr*** is a 4-digit hexadecimal number that contains the revision number of the device.
 
-The vendor ID, product ID, and revision number values are obtained from the [USB device descriptor](usb-device-descriptors.md).
+The vendor ID, product ID, and revision number values are obtained from the [USB device descriptor](usb-device-descriptors.md). The [USB_DEVICE_DESCRIPTOR](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_device_descriptor) structure describes a device descriptor.
 
 The following table describes the possible registry entries for the ***vvvvpppprrrrr*** key. The USB driver stack considers these entries to be read-only values.
 
@@ -47,7 +51,7 @@ The following table describes the possible registry entries for the ***vvvvppppr
         <p>REG_BINARY</p>
       </td>
       <td>
-        <p>Indicates whether the operating system queried the device for <a href="microsoft-defined-usb-descriptors.md" data-raw-source="[Microsoft-defined USB descriptors](microsoft-defined-usb-descriptors.md)">Microsoft-defined USB descriptors</a>. If the previously-attempted OS descriptor query was successful, the value contains the vendor code from the OS string descriptor.</p>
+        <p>Indicates whether the operating system queried the device for <strong><a href="microsoft-defined-usb-descriptors.md" data-raw-source="[Microsoft-defined USB descriptors](microsoft-defined-usb-descriptors.md)">Microsoft-defined USB descriptors</a></strong>. If the previously-attempted OS descriptor query was successful, the value contains the vendor code from the OS string descriptor.</p>
       </td>
       <td>
         <ul>
@@ -91,7 +95,7 @@ The following table describes the possible registry entries for the ***vvvvppppr
 
 ## Find device information after it enumerates on Windows
 
-**View the device interface GUID, Hardware Id, and device class information about your device**
+View the device interface GUID, Hardware Id, and [device class](supported-usb-classes.md#usb-device-classes) information about your device
 
 1. Find this registry key and note the **DeviceInstance** value:
 
@@ -105,7 +109,7 @@ The following table describes the possible registry entries for the ***vvvvppppr
 
     :::image type="content" source="images/device-interface-guid2.png" alt-text="Screenshot of USB device interface GUID in Windows RegEdit.":::
 
-1. Under the device instance key, note the device class, subclass, and protocol codes:
+1. Under the device instance key, note the [device class](supported-usb-classes.md#usb-device-classes), subclass, and protocol codes:
 
     `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB`
 
@@ -113,6 +117,7 @@ The following table describes the possible registry entries for the ***vvvvppppr
 
 ## Related topics
 
-- [Microsoft-provided USB drivers](system-supplied-usb-drivers.md)  
+- [Microsoft-provided USB drivers](system-supplied-usb-drivers.md)
 - [USB device descriptor](usb-device-descriptors.md)
+- [USB device class drivers included in Windows](supported-usb-classes.md)
 - [Microsoft-defined USB descriptors](microsoft-defined-usb-descriptors.md)
