@@ -10,7 +10,7 @@ The **Object Viewer** dialog box tracks different objects throughout the life sp
 
 The **Object Viewer** dialog resembles the **Event Listing** dialog in that it also uses the **Start Time** and **End Time** controls along with the time adjustment buttons. It differs in that rather than tracking events, the **Object Viewer** tracks objects that are created by GPUView when it processes events. These objects include: Adapters, Segments, Global Allocations, Processes, Devices, Contexts, Device Allocations, DMA Packets, and Queue Packets. The following diagram shows a number of these objects.
 
-![object viewer dialog box 1](\Images\object-viewer-dialog-box-1.png)
+![object viewer dialog box 1](./images/object-viewer-dialog-box-1.png)
 
 Many of the objects that are displayed in this dialog have direct equivalents in the GPUView main window. The adapters will map to the GPU Hardware Queue. The Processes map to the process space and the association between processes and Contexts are also shown here. If you navigate into the Context items in the tree view, you will also find all the Queue Packets that are displayed on that Context CPU Queue in the main window.
 
@@ -26,7 +26,7 @@ In the upper-right corner of the dialog box, is the **Details Area** control tha
 
 In the lower right-hand corner is a list that represents the history of an object, if it has some form of history. Events that GPUView logged against a particular object are listed in this list. In the following diagram, a memory block is selected that is known to have history.
 
-![object viewer dialog box 2](\Images\object-viewer-dialog-box-2.png)
+![object viewer dialog box 2](./images/object-viewer-dialog-box-2.png)
 
 The preceding figure shows that all the events in the history list correspond to the single selected allocation from the **Object tree** control.  
 
