@@ -24,7 +24,7 @@ To add existing users:
 1. On the left menu, select **User management**.
 
 1. Select **+ Add user**
-   :::image type="content" source="images/managing-user-roles/user-management-add-user.png" alt-text="Screenshot that shows where to select '+ Add user' to add a user.":::
+   :::image type="content" source="images/hardware-dashboard-users-manage/user-management-add-user.png" alt-text="Screenshot that shows where to select '+ Add user' to add a user.":::
 
 1. Search for and then select the users that you wish to add.
 
@@ -44,12 +44,12 @@ To create a new user:
 
 1. Enter the details for your new user. You'll need their first and last names, as well as a custom user name that they'll use to login. You can also add them to any groups you’ve already created in your directory. Finally, you can grant them any roles they need for the Hardware Program.
 
-   :::image type="content" source="images/managing-user-roles/user-management-roles.png" alt-text="Screenshot that shows the new user screen, and the details required for registering a new user.":::
+   :::image type="content" source="images/hardware-dashboard-users-manage/user-management-roles.png" alt-text="Screenshot that shows the new user screen, and the details required for registering a new user.":::
 
 1. Select **Save**. This will add the user to your account with the selected permission, and generate a one-time use password.
 
     >![!IMPORTANT]
-    > Make sure you print or save this page for the new user. You will not be able to recover this password after > you leave this page.
+    > Make sure you print or save this page for the new user. You will not be able to recover this password after you leave this page.
 
 ## Invite users
 
@@ -63,16 +63,13 @@ To invite users:
 
 1. Select **+ Invite users**.
 
-   :::image type="content" source="images/managing-user-roles/user-management-invite-users.png" alt-text="Screenshot that shows the user management page. The link to invite users is selected.":::
+   :::image type="content" source="images/hardware-dashboard-users-manage/user-management-invite-users.png" alt-text="Screenshot that shows the user management page. The link to invite users is selected.":::
 
 1. Enter the email addresses of the users you wish to invite, separated by commas or semi-colons.
 
-   :::image type="content" source="images/managing-user-roles/user-management-invite-users-dialog.png" alt-text="Screenshot that shows the user invite dialog.":::
+   :::image type="content" source="images/hardware-dashboard-users-manage/user-management-invite-users-dialog.png" alt-text="Screenshot that shows the user invite dialog.":::
 
 1. Select **Next**.
-
-
-
 
 ## Change a user's role
 
@@ -101,13 +98,13 @@ To change a user’s role:
 
 1. In the search bar, type in the user you want to find.
 
-   :::image type="content" source="images/managing-user-roles/user-management-search.png" alt-text="Screenshot that shows the search entry field for finding a user.":::
+   :::image type="content" source="images/hardware-dashboard-users-manage/user-management-search.png" alt-text="Screenshot that shows the search entry field for finding a user.":::
 
 1. Select the name of the user.
 
 1. In the user’s details, move through the page until you see **Roles applicable to developer programs**, and select the ones you want to assign to the user.
 
-   :::image type="content" source="images/managing-user-roles/user-management-roles.png" alt-text="Screenshot that shows the various available for hardware dashboard users.":::
+   :::image type="content" source="images/hardware-dashboard-users-manage/user-management-roles.png" alt-text="Screenshot that shows the various available for hardware dashboard users.":::
 
 1. Select **Update**.
 
@@ -125,4 +122,4 @@ To delete users:
 
 1. To the right of the name of the user, select **Delete**.
 
-   :::image type="content" source="images/managing-user-roles/user-management-delete.png" alt-text="Screenshot that shows where to select 'Delete' to delete a user.":::
+   :::image type="content" source="images/hardware-dashboard-users-manage/user-management-delete.png" alt-text="Screenshot that shows where to select 'Delete' to delete a user.":::
