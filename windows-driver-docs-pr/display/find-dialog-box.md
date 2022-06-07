@@ -8,13 +8,13 @@ ms.date: 05/10/2022
 
 The **Find** dialog box helps the user find specific processes or threads in the main window of GPUView. The following diagram is a screen shot of the dialog.  
 
-![find dialog box 1](\Images\find-dialog-box-1.png)
+![find dialog box 1](./images/find-dialog-box-1.png)
 
 When the dialog is first displayed, the keyboard focus is placed in the **Find what** edit control. The **Find** dialog uses the text that the user enters to find substrings in the Process or Thread names so that when a match is found, it can be scrolled into view. As soon as the user enters text into the **Find what** control, the **Find Next** button is enabled so that searches can be performed. 
 
 The process and thread names are found along the left-hand side of GPUView's main window, as shown with the following screen shot. 
 
-![find dialog box 2](\Images\find-dialog-box-2.png)
+![find dialog box 2](./images/find-dialog-box-2.png)
 
 Any part of the displayed name can be part of the search. As shown in this diagram, the hexadecimal offsets can be part of the search. If symbols are enabled, the offsets are resolved into the user-friendly names, which helps considerably when performing the searches.  
 
