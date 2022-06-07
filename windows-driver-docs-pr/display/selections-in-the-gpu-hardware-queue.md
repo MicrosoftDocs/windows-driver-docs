@@ -10,13 +10,13 @@ ms.date: 05/10/2022
 
 The following diagram is a screen shot of the **Object Details** dialog when a Dma Packet is selected.  
 
-![selections in the gpu hardware queue 1](\Images\selections-in-the-gpu-hardware-queue-1.png)
+![selections in the gpu hardware queue 1](./images/selections-in-the-gpu-hardware-queue-1.png)
 
 ## Header  
 
 All the objects displayed by the **Object Details** dialog have a standard header that looks like the following.
 
-![selections in the gpu hardware queue 2](\Images\selections-in-the-gpu-hardware-queue-2.png)
+![selections in the gpu hardware queue 2](./images/selections-in-the-gpu-hardware-queue-2.png)
 
 Creation Time: The time at which the object was created.  
 Process: The owning process ID and name.  
@@ -26,7 +26,7 @@ Context: The handle of the owning context. If selected, will be found when press
 
 All of the standard DMA Packets have a body that looks like the following.  
 
-![selections in the gpu hardware queue 3](\Images\selections-in-the-gpu-hardware-queue-3.png)
+![selections in the gpu hardware queue 3](./images/selections-in-the-gpu-hardware-queue-3.png)
 
 Type: The first line is the type of object displayed.  
 Submission Fence: All DMA packets submitted to the hardware have a fence ID. Generally, these are ordered numbers that are always increasing in value.  
@@ -45,7 +45,7 @@ Queue Packet: The number of patch locations, which are locations in the Queue Pa
 
 All of the memory references take the following form.
 
-![selections in the gpu hardware queue 4](\Images\selections-in-the-gpu-hardware-queue-4.png)
+![selections in the gpu hardware queue 4](./images/selections-in-the-gpu-hardware-queue-4.png)
 
 The first column is the address of the device-specific memory block. The second column is the global memory allocation as seen by the adapter. The third column is the memory read or write attribute. The fourth column is the memory placement attribute. The fifth column denotes either aperture or system memory. The sixth and seventh columns represent the size. 
 
@@ -61,7 +61,7 @@ The Paging Dma Packet is scheduled by the video kernel during memory management 
 
 The only real difference between these objects and the standard Dma Packets is shown with the following diagram. 
 
-![selections in the gpu hardware queue 5](\Images\selections-in-the-gpu-hardware-queue-5.png)
+![selections in the gpu hardware queue 5](./images/selections-in-the-gpu-hardware-queue-5.png)
 
 Operation: This can be a number of types, but typically is Discard or Fill Memory.  
 Adapter Allocation: The address of memory.  
