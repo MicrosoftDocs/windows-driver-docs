@@ -65,7 +65,7 @@ The following constants can be useful for setting the value of *Level*. They are
 #define   DPFLTR_WARNING_LEVEL   1
 #define   DPFLTR_TRACE_LEVEL     2
 #define   DPFLTR_INFO_LEVEL      3
-#define   DPFLTR_MASK    0x8000000
+#define   DPFLTR_MASK   0x80000000
 ```
 
 One easy way to use the *Level* parameter is to always use values between 0 and 31 -- using the bits 0, 1, 2, 3 with the meaning given by DPFLTR\_*XXXX*\_LEVEL, and using the other bits to mean whatever you choose.
