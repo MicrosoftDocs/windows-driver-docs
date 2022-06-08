@@ -8691,11 +8691,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "windows-driver-docs-pr/dashboard/code-signing-cert-manage.md",
-            "redirect_URL": "/windows-hardware/drivers/dashboard/code-signing-cert-manage",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "windows-driver-docs-pr/dashboard/update-a-code-signing-certificate.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/code-signing-cert-manage",
             "redirect_document_id": false
@@ -8743,11 +8738,6 @@
         {
             "source_path": "windows-driver-docs-pr/dashboard/hardware-certification-submissions.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-submission-create",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "windows-driver-docs-pr/dashboard/hardware-submission-update.md",
-            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-submission-update",
             "redirect_document_id": false
         },
         {
