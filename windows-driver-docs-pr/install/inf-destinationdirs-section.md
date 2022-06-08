@@ -9,7 +9,7 @@ api_name:
 - INF DestinationDirs Section
 api_type:
 - NA
-ms.date: 06/03/2022
+ms.date: 06/08/2022
 ---
 
 # INF DestinationDirs section
@@ -28,7 +28,7 @@ A **DestinationDirs** section specifies the target destination directory or dire
 **DefaultDestDir=**_dirid_[,_subdir_]  
 Specifies the default destination directory for all copy, delete, and/or rename operations on files that are not explicitly listed in a _file-list-section_ referenced by other entries here. To ensure that file operations always occur in the correct directory, an INF file that includes **Include** and **Needs** entries should not specify a default destination directory. For more information, see the following Remarks section.
 
-_file-list-section_**=**_dirid_[,_subdir_]] ...
+_file-list-section_**=**_dirid_[,_subdir_]] ...  
 Specifies the INF-writer-determined name of a section referenced by a [**CopyFiles**](inf-copyfiles-directive.md), [**RenFiles**](inf-renfiles-directive.md), or [**DelFiles**](inf-delfiles-directive.md) directive elsewhere in the INF file. Such an entry is optional if this section has a **DefaultDestDir** entry and all copy-file operations specified in this INF have the same target destination. However, any _file-list-section_ referenced by a **RenFiles** or **DelFiles** directive elsewhere in the INF must be listed here.
 
 _dirid_  
