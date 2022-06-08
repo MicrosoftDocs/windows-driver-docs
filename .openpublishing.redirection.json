@@ -361,6 +361,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/dashboard/register-for-the-hardware-program.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-program-register",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/dashboard/create-and-manage-your-profile.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-program-register",
             "redirect_document_id": false
@@ -8671,7 +8676,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "windows-driver-docs-pr/wdf/what-s-new-for-wdf-drivers.md",
+            "source_path": "windows-hardware/wdf/what-s-new-for-wdf-drivers.md",
             "redirect_URL": "/windows-hardware/drivers/wdf/index",
             "redirect_document_id": false
         },
@@ -8682,67 +8687,72 @@
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/update-a-code-signing-certificate.md",
-            "redirect_URL": "/windows-driver-docs-pr/dashboard/code-signing-cert-manage",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/code-signing-cert-manage",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/get-a-code-signing-certificate.md",
-            "redirect_URL": "/windows-driver-docs-pr/dashboard/code-signing-cert-manage",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/code-signing-cert-manage",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/lsa-and-uefi-file-signing.md",
-            "redirect_URL": "/windows-driver-docs-pr/dashboard/file-signing-reqs",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/file-signing-reqs",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/adding-or-removing-users.md",
-            "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-dashboard-users-manage",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-dashboard-users-manage",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/attestation-signing-a-kernel-driver-for-public-release.md",
-            "redirect_URL": "/windows-driver-docs-pr/dashboard/code-signing-attestation",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/code-signing-attestation",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/winqual-submission-tool--winqualiexe-.md",
-            "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-wlk",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-submission-wlk",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/create-a-new-hardware-submission.md",
-            "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-create",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-submission-create",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/get-drivers-signed-by-microsoft-for-multiple-windows-versions.md",
-            "redirect_URL": "/windows-driver-docs-pr/test/hlk/getstarted/windows-hlk-getting-started",
+            "redirect_URL": "/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/get-started-with-the-hardware-dashboard.md",
-            "redirect_URL": "/windows-driver-docs-pr/dashboard/get-started-dashboard-submissions",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/get-started-dashboard-submissions",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/hardware-certification-submissions.md",
-            "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-create",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-submission-create",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/hardware-submission-update.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-submission-update",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/manage-your-hardware-submissions.md",
-            "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-update",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-submission-update",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/create-a-new-hardware-logo-submission.md",
-            "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-wlk",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-submission-wlk",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/id-definitions.md",
-            "redirect_URL": "/windows-driver-docs-pr/dashboard/hardware-submission-ids",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-submission-ids",
             "redirect_document_id": false
         }
         
