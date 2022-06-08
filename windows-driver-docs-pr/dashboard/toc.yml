@@ -1,211 +1,38 @@
 - name: "Partner Center for Windows Hardware"
   href: index.yml
-- name: "Hardware Program dashboard FAQ"
-  href: hardware-dashboard-faq.yml
+- name: "Get started with hardware submissions"
+  href: get-started-dashboard-submissions.md
+- name: "Register for the Windows Hardware program"
+  href: hardware-program-register.md 
+- name: "Manage dashboard users"
+  href: hardware-dashboard-users-manage.md 
 - name: "Hardware submissions"
-  items: 
-  - name: "Hardware submissions overview"
-    href: hardware-certification-submissions.md
+  items:
   - name: "Create a new hardware submission"
-    href: create-a-new-hardware-submission.md
-  - name: "Manage hardware submissions"
-    href: manage-your-hardware-submissions.md
-  - name: "Find a hardware submission"
-    href: find-hardware-submission.md
-  - name: "Submitting a WLK device certification"
-    items: 
-    - name: "Creating a new WLK device certification submission"
-      href: create-a-new-hardware-logo-submission.md
-    - name: "Using the Winqual Submission Tool (winqual.exe)"
-      href: winqual-submission-tool--winqualexe-.md
-  - name: "ID definitions"
-    href: id-definitions.md
-  - name: "Attestation signing a kernel driver for public release"
-    href: attestation-signing-a-kernel-driver-for-public-release.md
-  - name: "How to get a driver signed by Microsoft for multiple versions of Windows"
-    href: get-drivers-signed-by-microsoft-for-multiple-windows-versions.md
-  - name: "Validating driver updates for Modern Standby systems "
-    href: validating-driver-updates-for-modern-standby-systems.md
-  - name: "Driver flighting"
-    items:
-    - name: "Overview of driver flighting"
-      href: driver-flighting.md
-    - name: "Other Policies"
-      items:
-      - name: "Overview of other policies"
-        href: other-policies.md
-      - name: "Extension INF Targeting Rules"
-        href: extension-inf-targeting-rules.md
-      - name: "Establish HWID or CHID targeting relationship"
-        href: establish-relationship-for-chid-targeting.md
-      - name: "Driver Release Cadence"
-        href: driver-release-cadence.md
-    - name: "Microsoft driver measures"
-      href: overview-of-microsoft-driver-measure-dictionary.md
-    - name: "Driver measure attributes"
-      href: measure-attributes.md
-    - name: "Failure reports"
-      items:
-      - name: "Cohort failure report"
-        href: IDR-cohort-report.md
-      - name: "Plug and Play failure report"
-        href: pnp-failure-report.md
-      - name: "Reliability failure report"
-        href: reliability-failure-report.md
-    - name: "Systemic measures"
-      items:
-      - name: "Driver installation measures"
-        items:
-        - name: "Percent of machines where the driver install process completes successfully"
-          href: pct-machines-where-driver-install-completes-successfully.md
-        - name: "Machines that reported a PnP error code within two days of installing a driver update"
-          href: pct-machines-installed-driver-update-and-reported-pnp-error-within-2-days.md
-      - name: "Reliability measures"
-        items:
-        - name: "Percentage of machines without a kernel mode crash"
-          href: pct-machines-without-kernel-mode-crash.md
-        - name: "Percentage of machines without a live kernel dump"
-          href: pct-machines-without-live-kernel-dump.md
-    - name: "Device class measures"
-      items:
-      - name: "Audio"
-        items:
-        - name: "Audio measures"
-          href: audio-measures.md
-        - name: "Percentage of machines with at least one audio stream initialization failure"
-          href: pct-machines-with-at-least-one-audio-stream-initialization-failure.md
-        - name: "Percent of machines with subpar stream initialization success rate"
-          href: pct-machines-with-subpar-stream-initialization-success-rate.md
-        - name: "Percent of machines with at least one audio crash"
-          href: percent-machines-with-at-least-one-audio-crash.md
-        - name: "Percent of machines with at least one audio hang"
-          href: pct-machines-with-at-least-one-audio-hang.md
-      - name: "Camera"
-        items:
-        - name: "Camera measures"
-          href: camera-measures.md
-        - name: "Percent of Camera initialization failures"
-          href: camera-initialization-failure-rate.md
-        - name: "Percent of Camera preview failures"
-          href: camera-preview-failure-rate.md
-        - name: "Percent of Camera photo capture failures"
-          href: camera-photo-failure-rate.md
-        - name: "Percent of Camera video and stream failures"
-          href: camera-video-and-stream-failure-rate.md
-      - name: "Fingerprint"
-        items:
-        - name: "Fingerprint measures"
-          href: fingerprint-measures.md
-        - name: "Success Rate of Fingerprint Enrollment"
-          href: success-rate-fingerprint-enrollment.md
-        - name: "Success Rate of Fingerprint Signin Experience"
-          href: success-rate-fingerprint-signin-experience.md
-      - name: "Firmware"
-        items:
-        - name: "Firmware measures"
-          href: firmware-measures.md
-        - name: "Percent of machines reporting successful firmware installation from ESRT"
-          href: ESRT-pct-machines-reporting-successful-firmware-installation.md
-        - name: "Percent of machinces exceeded firmware max retry limit from ESRT"
-          href: ESRT-pct-machines-exceed-max-retry.md
-        - name: "Percent of machines with WHEA error after firmware installation"
-          href: ESRT-pct-machines-WHEA-error.md
-        - name: "Percent of machines with abnormal shutdown not due to bugcheck or power button"
-          href: ESRT-pct-machines-ABS.md
-        - name: "Percent of machines that successfully installed firmware and not heartbeat within 7 days"
-          href: ESRT-7-day-brick-detector.md
-        - name: "Percent of machines that successfully installed firmware and not heartbeat within 14 days"
-          href: ESRT-14-day-brick-detector.md
-        - name: "Percent of machines with pending firmware updates due to Bitlocker Risk"
-          href: ESRT-pct-machines-blocked-bitlocker.md
-        - name: "Percent of machines updated and successfully unlocked bitlocker recovery"
-          href: ESRT-pct-machines-entered-bitlocker-recovery.md
-      - name: "Graphics"
-        items:
-        - name: "Graphics measures"
-          href: graphics-measures.md
-        - name: "Standard and Expanded audience measures"
-          items:
-          - name: "Myriad of machines that had a stop error caused by a discrete graphics driver crash"
-            href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-standard.md
-          - name: "Myriad of machines that had a stop error caused by an integrated GPU driver crash"
-            href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-integrated-standard.md
-          - name: "Myriad of machines that had a TDR caused by a graphics driver crash"
-            href: myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-standard.md
-          - name: "Myriad of machines with integrated GPU that had a TDR caused by a graphics driver crash"
-            href: graphics-tdr-integrated-gpu.md
-          - name: "Myriad of of drivers that were rolled back or re-installed within 2 days of installation"
-            href: myriad-drivers-rolled-back-standard.md
-          - name: "Number of user mode crashes in Microsoft Photos app"
-            href: user-mode-reliability-for-crashes-in-microsoft-photos-app-expanded.md
-          - name: "Number of user mode for crashes in creative applications"
-            href: graphics-drivers-health-user-mode-reliability-for-crashes-in-creative-apps-expanded.md
-          - name: "Number of user mode crashes in top Microsoft apps"
-            href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale-expanded.md
-          - name: "Number of user mode crashes in Microsoft Edge"
-            href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale-expanded.md
-          - name: "User mode crashes in Microsoft Edge Chromium"
-            href: graphics-user-mode-crashes-edge-chromium-standard.md
-          - name: "Number of user mode crashes in Windows components"
-            href: user-mode-reliability-for-crashes-in-windows-components.md
-          - name: "Crashes in communication and collaboration apps"
-            href: graphics-user-mode-crashes-collaboration-standard.md
-          - name: "Number of user mode crashes or TDRs in UWP gaming applications"
-            href: number-user-mode-crashes-in-UWP-gaming-applications.md
-          - name: "Number of user mode crashes or TDRs in Win32 gaming applications"
-            href: number-user-mode-crashes-in-win32-gaming-applications.md
-          - name: "Percent of devices with WinML Runtime Errors"
-            href: pct-devices-winml-runtime-error.md
-        - name: "Ecosystem audience measures"
-          items:
-          - name: "Myriad of machines that had a stop error caused by a graphics driver crash (ecosystem)"
-            href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-ecosystem.md
-          - name: "Myriad of machines that had a stop error caused by an integrated graphics driver crash (ecosystem)"
-            href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-integrated-ecosystem.md
-          - name: "Myriad of machines that had a TDR caused by a graphics driver crash (ecosystem)"
-            href: myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-ecosystem.md
-          - name: "Myriad of machines with integrated GPU that had a TDR caused by graphics driver crash (ecosystem)"
-            href: graphics-ecosystem-integrated-gpu-with-tdr.md
-          - name: "Myriad of drivers that were rolled back or re-installed within 2 days of installation"
-            href: myriad-drivers-rolled-back-ecosystem.md
-          - name: "Number of user mode crashes in Microsoft Edge"
-            href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale.md
-          - name: "User mode crashes in Microsoft Edge Chromium (ecosystem)"
-            href: graphics-user-mode-crashes-edge-chromium-ecosystem.md
-          - name: "Number of user mode crashes in top Microsoft apps"
-            href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale.md
-          - name: "Number of user mode crashes in creative apps"
-            href: graphics-drivers-health-user-mode-reliability-for-crashes-in-creative-apps.md
-          - name: "Number of user mode crashes in Microsoft Photos app (ecosystem)"
-            href: user-mode-reliability-for-crashes-in-microsoft-photos-app.md
-          - name: "Number of user mode crashes in Windows components (ecosystem)"
-            href: user-mode-reliability-for-crashes-in-windows-components-ecosystem.md
-          - name: "Crashes in communication and collaboration apps (ecosystem)"
-            href: graphics-user-mode-crashes-collaboration-ecosystem.md
-          - name: "Percent of devices with WinML Runtime Errors (Ecosystem)"
-            href: pct-devices-winml-runtime-error-ecosystem.md
-          - name: "Percent of SWDRM playback failures on Netflix"
-            href: pct-swdrm-playback-failures-on-netflix.md
-          - name: "Ecosystem Netflix HWDRM Quality Comparison"
-            href: ecosystem-netflix-hwdrm-quality-comparison.md
-      - name: "Wi-Fi"
-        items:
-        - name: "Wi-Fi Measures"
-          href: wi-fi-measures.md
-        - name: "Wi-Fi connection failures from devices and access-point pairs with more than 50% signal quality"
-          href: percent-of-wifi-connection-failures-from-the-top-95-percent-of-device-ap-pairs.md
-        - name: "Internet connection failures of device and access-point pairs with more than 50% signal quality"
-          href: percent-of-internet-connection-failures-from-the-top-95-percent-of-device-ap-pairs.md
-        - name: "Percentage of Wi-Fi sessions ending in a disconnection with more than 50% signal quality"
-          href: pct-wi-fi-sessions-ending-in-unexpected-disconnect.md
-    - name: "Appendix"
-      href: measure-appendix.md
-    - name: "Glossary"
-      href: measures-glossary.md
-  - name: "Working with extension INF files"
-    href: submit-dashboard-extension-inf-files.md
-  - name: "Bug Management"
-    href: bug-management.md
+    href: hardware-submission-create.md
+  - name: View hardware submissions
+    href: hardware-submissions-view.md
+  - name: Update a hardware submission
+    href: hardware-submission-update.md
+
+  - name: Create a WLK hardware submission package
+    href: hardware-submission-wlk.md
+  - name: "Submission IDs"
+    href: hardware-submission-ids.md
+- name: "Driver code signing"
+  items:
+  - name: "Requirements"
+    href: code-signing-reqs.md 
+  - name: "Manage code signing certificates"
+    href: code-signing-cert-manage.md 
+  - name: "Attestation sign Windows 10+ drivers"
+    href: code-signing-attestation.md 
+- name: "File signing"
+  items:
+  - name: "Requirements"
+    href: file-signing-reqs.md
+  - name: "File sign an LSA plugin or UEFI firmware binary"
+    href: file-signing-manage.md
 - name: "Shipping labels"
   items: 
   - name: "Manage driver distribution with shipping labels"
@@ -216,6 +43,8 @@
     href: publish-a-driver-to-windows-update.md
   - name: "Understanding Windows Update Automatic and Optional Rules for Driver Distribution"
     href: understanding-windows-update-automatic-and-optional-rules-for-driver-distribution.md
+  - name: "Validating driver updates for Modern Standby systems "
+    href: validating-driver-updates-for-modern-standby-systems.md
   - name: "Share a driver with a partner"
     href: sharing-drivers-with-your-partners.md
   - name: "Expire a driver from Windows Update"
@@ -232,9 +61,230 @@
     href: publishing-for-test-distribution.md
   - name: Gradual rollout
     href: gradual-rollout.md
+  - name: "Driver package metadata"
+    href: driver-package-metadata.md
+    items:
+    - name: "Create Publisher Driver Metadata"
+      href: create-publisher-metadata.md
+- name: "Driver flighting"
+  items:
+  - name: "Overview of driver flighting"
+    href: driver-flighting.md
+  - name: "Other Policies"
+    items:
+    - name: "Overview of other policies"
+      href: other-policies.md
+    - name: "Extension INF Targeting Rules"
+      href: extension-inf-targeting-rules.md
+    - name: "Establish HWID or CHID targeting relationship"
+      href: establish-relationship-for-chid-targeting.md
+    - name: "Driver Release Cadence"
+      href: driver-release-cadence.md
+  - name: "Microsoft driver measures"
+    href: overview-of-microsoft-driver-measure-dictionary.md
+  - name: "Driver measure attributes"
+    href: measure-attributes.md
+  - name: "Failure reports"
+    items:
+    - name: "Cohort failure report"
+      href: IDR-cohort-report.md
+    - name: "Plug and Play failure report"
+      href: pnp-failure-report.md
+    - name: "Reliability failure report"
+      href: reliability-failure-report.md
+  - name: "Systemic measures"
+    items:
+    - name: "Driver installation measures"
+      items:
+      - name: "Percent of machines where the driver install process completes successfully"
+        href: pct-machines-where-driver-install-completes-successfully.md
+      - name: "Machines that reported a PnP error code within two days of installing a driver update"
+        href: pct-machines-installed-driver-update-and-reported-pnp-error-within-2-days.md
+    - name: "Reliability measures"
+      items:
+      - name: "Percentage of machines without a kernel mode crash"
+        href: pct-machines-without-kernel-mode-crash.md
+      - name: "Percentage of machines without a live kernel dump"
+        href: pct-machines-without-live-kernel-dump.md
+  - name: "Device class measures"
+    items:
+    - name: "Audio"
+      items:
+      - name: "Audio measures"
+        href: audio-measures.md
+      - name: "Percentage of machines with at least one audio stream initialization failure"
+        href: pct-machines-with-at-least-one-audio-stream-initialization-failure.md
+      - name: "Percent of machines with subpar stream initialization success rate"
+        href: pct-machines-with-subpar-stream-initialization-success-rate.md
+      - name: "Percent of machines with at least one audio crash"
+        href: percent-machines-with-at-least-one-audio-crash.md
+      - name: "Percent of machines with at least one audio hang"
+        href: pct-machines-with-at-least-one-audio-hang.md
+    - name: "Camera"
+      items:
+      - name: "Camera measures"
+        href: camera-measures.md
+      - name: "Percent of Camera initialization failures"
+        href: camera-initialization-failure-rate.md
+      - name: "Percent of Camera preview failures"
+        href: camera-preview-failure-rate.md
+      - name: "Percent of Camera photo capture failures"
+        href: camera-photo-failure-rate.md
+      - name: "Percent of Camera video and stream failures"
+        href: camera-video-and-stream-failure-rate.md
+    - name: "Fingerprint"
+      items:
+      - name: "Fingerprint measures"
+        href: fingerprint-measures.md
+      - name: "Success Rate of Fingerprint Enrollment"
+        href: success-rate-fingerprint-enrollment.md
+      - name: "Success Rate of Fingerprint Signin Experience"
+        href: success-rate-fingerprint-signin-experience.md
+    - name: "Firmware"
+      items:
+      - name: "Firmware measures"
+        href: firmware-measures.md
+      - name: "Percent of machines reporting successful firmware installation from ESRT"
+        href: ESRT-pct-machines-reporting-successful-firmware-installation.md
+      - name: "Percent of machinces exceeded firmware max retry limit from ESRT"
+        href: ESRT-pct-machines-exceed-max-retry.md
+      - name: "Percent of machines with WHEA error after firmware installation"
+        href: ESRT-pct-machines-WHEA-error.md
+      - name: "Percent of machines with abnormal shutdown not due to bugcheck or power button"
+        href: ESRT-pct-machines-ABS.md
+      - name: "Percent of machines that successfully installed firmware and not heartbeat within 7 days"
+        href: ESRT-7-day-brick-detector.md
+      - name: "Percent of machines that successfully installed firmware and not heartbeat within 14 days"
+        href: ESRT-14-day-brick-detector.md
+      - name: "Percent of machines with pending firmware updates due to Bitlocker Risk"
+        href: ESRT-pct-machines-blocked-bitlocker.md
+      - name: "Percent of machines updated and successfully unlocked bitlocker recovery"
+        href: ESRT-pct-machines-entered-bitlocker-recovery.md
+    - name: "Graphics"
+      items:
+      - name: "Graphics measures"
+        href: graphics-measures.md
+      - name: "Standard and Expanded audience measures"
+        items:
+        - name: "Myriad of machines that had a stop error caused by a discrete graphics driver crash"
+          href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-standard.md
+        - name: "Myriad of machines that had a stop error caused by an integrated GPU driver crash"
+          href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-integrated-standard.md
+        - name: "Myriad of machines that had a TDR caused by a graphics driver crash"
+          href: myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-standard.md
+        - name: "Myriad of machines with integrated GPU that had a TDR caused by a graphics driver crash"
+          href: graphics-tdr-integrated-gpu.md
+        - name: "Myriad of of drivers that were rolled back or re-installed within 2 days of installation"
+          href: myriad-drivers-rolled-back-standard.md
+        - name: "Number of user mode crashes in Microsoft Photos app"
+          href: user-mode-reliability-for-crashes-in-microsoft-photos-app-expanded.md
+        - name: "Number of user mode for crashes in creative applications"
+          href: graphics-drivers-health-user-mode-reliability-for-crashes-in-creative-apps-expanded.md
+        - name: "Number of user mode crashes in top Microsoft apps"
+          href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale-expanded.md
+        - name: "Number of user mode crashes in Microsoft Edge"
+          href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale-expanded.md
+        - name: "User mode crashes in Microsoft Edge Chromium"
+          href: graphics-user-mode-crashes-edge-chromium-standard.md
+        - name: "Number of user mode crashes in Windows components"
+          href: user-mode-reliability-for-crashes-in-windows-components.md
+        - name: "Crashes in communication and collaboration apps"
+          href: graphics-user-mode-crashes-collaboration-standard.md
+        - name: "Number of user mode crashes or TDRs in UWP gaming applications"
+          href: number-user-mode-crashes-in-UWP-gaming-applications.md
+        - name: "Number of user mode crashes or TDRs in Win32 gaming applications"
+          href: number-user-mode-crashes-in-win32-gaming-applications.md
+        - name: "Percent of devices with WinML Runtime Errors"
+          href: pct-devices-winml-runtime-error.md
+      - name: "Ecosystem audience measures"
+        items:
+        - name: "Myriad of machines that had a stop error caused by a graphics driver crash (ecosystem)"
+          href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-ecosystem.md
+        - name: "Myriad of machines that had a stop error caused by an integrated graphics driver crash (ecosystem)"
+          href: myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-integrated-ecosystem.md
+        - name: "Myriad of machines that had a TDR caused by a graphics driver crash (ecosystem)"
+          href: myriad-of-machines-that-had-tdr-caused-by-crash-in-graphics-driver-binary-ecosystem.md
+        - name: "Myriad of machines with integrated GPU that had a TDR caused by graphics driver crash (ecosystem)"
+          href: graphics-ecosystem-integrated-gpu-with-tdr.md
+        - name: "Myriad of drivers that were rolled back or re-installed within 2 days of installation"
+          href: myriad-drivers-rolled-back-ecosystem.md
+        - name: "Number of user mode crashes in Microsoft Edge"
+          href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale.md
+        - name: "User mode crashes in Microsoft Edge Chromium (ecosystem)"
+          href: graphics-user-mode-crashes-edge-chromium-ecosystem.md
+        - name: "Number of user mode crashes in top Microsoft apps"
+          href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale.md
+        - name: "Number of user mode crashes in creative apps"
+          href: graphics-drivers-health-user-mode-reliability-for-crashes-in-creative-apps.md
+        - name: "Number of user mode crashes in Microsoft Photos app (ecosystem)"
+          href: user-mode-reliability-for-crashes-in-microsoft-photos-app.md
+        - name: "Number of user mode crashes in Windows components (ecosystem)"
+          href: user-mode-reliability-for-crashes-in-windows-components-ecosystem.md
+        - name: "Crashes in communication and collaboration apps (ecosystem)"
+          href: graphics-user-mode-crashes-collaboration-ecosystem.md
+        - name: "Percent of devices with WinML Runtime Errors (Ecosystem)"
+          href: pct-devices-winml-runtime-error-ecosystem.md
+        - name: "Percent of SWDRM playback failures on Netflix"
+          href: pct-swdrm-playback-failures-on-netflix.md
+        - name: "Ecosystem Netflix HWDRM Quality Comparison"
+          href: ecosystem-netflix-hwdrm-quality-comparison.md
+    - name: "Wi-Fi"
+      items:
+      - name: "Wi-Fi Measures"
+        href: wi-fi-measures.md
+      - name: "Wi-Fi connection failures from devices and access-point pairs with more than 50% signal quality"
+        href: percent-of-wifi-connection-failures-from-the-top-95-percent-of-device-ap-pairs.md
+      - name: "Internet connection failures of device and access-point pairs with more than 50% signal quality"
+        href: percent-of-internet-connection-failures-from-the-top-95-percent-of-device-ap-pairs.md
+      - name: "Percentage of Wi-Fi sessions ending in a disconnection with more than 50% signal quality"
+        href: pct-wi-fi-sessions-ending-in-unexpected-disconnect.md
+  - name: "Appendix"
+    href: measure-appendix.md
+  - name: "Glossary"
+    href: measures-glossary.md
+- name: "Device Metadata"
+  items:
+  - name: "The Device Metadata Experience"
+    items: 
+    - name: "Creating a Device Metadata Experience"
+      href: create-a-device-metadata-experience.md
+    - name: "Creating a Preview Package"
+      href: creating-a-preview-package.md
+  - name: "Managing Device Metadata Experiences"
+    href: manage-device-metadata-experiences.md
+  - name: "Submitting a Device Metadata Package"
+    items: 
+    - name: "Submission and validation"
+      href: submit-a-device-metadata-package--dashboard-help-.md
+    - name: "Create the LocaleInfo.xml Submission File"
+      href: create-the-localeinfoxml-submission-file.md
+    - name: "Submit a PC device manifest package"
+      href: submit-a-pc-device-manifest-package.md
+    - name: "Submit a mobile broadband device manifest package"
+      href: submit-a-mobile-broadband-device-manifest-package.md
+    - name: "Submit a Multiple-locale device manifest package"
+      href: submit-a-multiple-locale-device-manifest-package.md
+    - name: "Submit a Bulk Metadata Package"
+      href: submit-a-bulk-metadata-package.md
+    - name: "Errors and Solutions When Submitting Device Metadata Experiences"
+      href: errors-and-solutions-when-submitting-device-metadata-experiences.md
+  - name: "Device Metadata Business Rules"
+    href: device-metadata-business-rules.md
+  - name: "Mobile broadband experience"
+    items: 
+    - name: "Create a mobile broadband experience"
+      href: create-a-mobile-broadband-experience.md
+    - name: "Developer and preview mode"
+      href: developer-and-preview-mode.md
+    - name: "Service icon requirements"
+      href: service-icon-requirements.md
+    - name: "Service number"
+      href: service-number.md
+    - name: "Trusted certificates"
+      href: trusted-certificates.md
 - name: "Hardware dashboard API"
   items: 
-  - name: "Getting started with the Hardware dashboard API"
+  - name: "Getting started with the hardware dashboard API"
     href: dashboard-api.md
   - name: "Product data API"
     items: 
@@ -282,67 +332,6 @@
       href: cancel-a-shipping-label.md
   - name: "Get audience data"
     href: get-audience-data.md
-  - name: "Driver package metadata"
-    href: driver-package-metadata.md
-    items:
-    - name: "Create Publisher Driver Metadata"
-      href: create-publisher-metadata.md
-- name: "File signing LSA plugins and UEFI firmware"
-  href: lsa-and-uefi-file-signing.md
-- name: "Dashboard Administration"
-  items:
-  - name: "Get started with the Hardware Program"
-    href: get-started-with-the-hardware-dashboard.md
-  - name: "Register for the Hardware Program"
-    href: register-for-the-hardware-program.md
-  - name: "Adding or Removing Users"
-    href: adding-or-removing-users.md
-  - name: "Managing User Roles"
-    href: managing-user-roles.md
-  - name: "Get a code signing certificate"
-    href: get-a-code-signing-certificate.md
-  - name: "Add or Update a code signing certificate"
-    href: update-a-code-signing-certificate.md
-- name: "Device Metadata"
-  items:
-  - name: "The Device Metadata Experience"
-    items: 
-    - name: "Creating a Device Metadata Experience"
-      href: create-a-device-metadata-experience.md
-    - name: "Creating a Preview Package"
-      href: creating-a-preview-package.md
-  - name: "Managing Device Metadata Experiences"
-    href: manage-device-metadata-experiences.md
-  - name: "Submitting a Device Metadata Package"
-    items: 
-    - name: "Submission and validation"
-      href: submit-a-device-metadata-package--dashboard-help-.md
-    - name: "Create the LocaleInfo.xml Submission File"
-      href: create-the-localeinfoxml-submission-file.md
-    - name: "Submit a PC device manifest package"
-      href: submit-a-pc-device-manifest-package.md
-    - name: "Submit a mobile broadband device manifest package"
-      href: submit-a-mobile-broadband-device-manifest-package.md
-    - name: "Submit a Multiple-locale device manifest package"
-      href: submit-a-multiple-locale-device-manifest-package.md
-    - name: "Submit a Bulk Metadata Package"
-      href: submit-a-bulk-metadata-package.md
-    - name: "Errors and Solutions When Submitting Device Metadata Experiences"
-      href: errors-and-solutions-when-submitting-device-metadata-experiences.md
-  - name: "Device Metadata Business Rules"
-    href: device-metadata-business-rules.md
-  - name: "Mobile broadband experience"
-    items: 
-    - name: "Create a mobile broadband experience"
-      href: create-a-mobile-broadband-experience.md
-    - name: "Developer and preview mode"
-      href: developer-and-preview-mode.md
-    - name: "Service icon requirements"
-      href: service-icon-requirements.md
-    - name: "Service number"
-      href: service-number.md
-    - name: "Trusted certificates"
-      href: trusted-certificates.md
 - name: "Windows Device Experience List"
   href: windows-device-experience-list.md
 - name: "Windows Certified Products List"

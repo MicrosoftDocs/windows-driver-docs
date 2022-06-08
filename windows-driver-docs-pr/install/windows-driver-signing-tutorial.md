@@ -18,7 +18,7 @@ Starting with Windows Vista, x64-based versions of Windows require all software
 
 Microsoft provides the following two ways to digitally sign drivers:
 
-1.  [Certify your driver with Microsoft](/windows-hardware/test/hlk/) and Microsoft will provide a signature for it. When your driver package passes the certification tests, it can be signed by [Windows Hardware Quality Labs (WHQL)](../dashboard/get-started-with-the-hardware-dashboard.md). If your driver package is signed by WHQL, it can be distributed through the Windows Update program or other Microsoft-supported distribution mechanisms.
+1.  [Certify your driver with Microsoft](/windows-hardware/test/hlk/) and Microsoft will provide a signature for it. When your driver package passes the certification tests, it can be signed by [Windows Hardware Quality Labs (WHQL)](../dashboard/get-started-dashboard-submissions.md). If your driver package is signed by WHQL, it can be distributed through the Windows Update program or other Microsoft-supported distribution mechanisms.
 2.  Vendors or driver developers can obtain a software publishing certificate (SPC) from a Microsoft authorized Certificate Authority (CA) and use it to sign kernel mode and user mode binaries by themselves.
 
 In the case of boot-start drivers during system start, drivers that are loaded by the system loader (Windows Vista and later versions of Windows), vendors must use a Software Publishers Certificate (SPC) to embed-sign their driver binary image file.

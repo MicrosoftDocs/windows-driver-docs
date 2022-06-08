@@ -1,16 +1,16 @@
 ---
-title: Hardware dashboard API
+title: hardware dashboard API
 description: The Microsoft Hardware APIs programmatically query and create submissions for hardware products within your organization's Partner Center account.
 ms.topic: article
 ms.date: 09/21/2018
 ---
 
-# Hardware dashboard API
+# hardware dashboard API
 
 Use the *Microsoft Hardware APIs* to programmatically query and create submissions for hardware products within your organization's Partner Center account. These APIs are useful if your account manages many products, and you want to automate and optimize the submission process for these assets. These APIs use Azure Active Directory (Azure AD) to authenticate the calls from your app or service.
 The following steps describe the end-to-end process of using the Microsoft Hardware API:
 
-1. These APIs can only be used by accounts that belong to the Hardware [Partner Center program](./get-started-with-the-hardware-dashboard.md).
+1. These APIs can only be used by accounts that belong to the Hardware [Partner Center program](./get-started-dashboard-submissions.md).
 
 2. Make sure that you have completed the prerequisites below.
 
@@ -42,7 +42,7 @@ After you have completed the above prerequisites we must now assign the appropri
 
     ![an image showing the Hardware tab in the Roles section.](images/hardware-tab-in-roles-section.png)
 
-    Select **Driver Submitter**, **Shipping Label owner**, and if available, **Shipping Label promoter**.  [Learn more about these roles](./managing-user-roles.md)
+    Select **Driver Submitter**, **Shipping Label owner**, and if available, **Shipping Label promoter**.  [Learn more about these roles](./hardware-dashboard-users-manage.md)
     
 
 ## Obtain an Azure AD access token
@@ -78,7 +78,7 @@ The following sample provides detailed code that demonstrate how to use the Micr
 
 * [C# sample](https://download.microsoft.com/download/C/F/4/CF404E53-87A0-4204-BA13-A64B09A237C1/HardwareApiCSharpSample.zip)
 
-[Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+[hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
 
 [Surface Dev Center Manager tool (GitHub)](https://github.com/Microsoft/SDCM)
 

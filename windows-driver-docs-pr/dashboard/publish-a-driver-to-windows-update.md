@@ -8,9 +8,9 @@ ms.date: 04/20/2017
 # Publish a driver to Windows Update
 
 
-To publish a driver to Windows Update, [create a hardware submission](create-a-new-hardware-submission.md) and then follow the steps below.
+To publish a driver to Windows Update, [create a hardware submission](hardware-submission-create.md) and then follow the steps below.
 
-1. [Find the hardware submission](manage-your-hardware-submissions.md) that contains the driver you want to distribute.
+1. [Search for the hardware submission](hardware-submissions-view.md) that contains the driver you want to distribute.
 
 2. Go to the **Distribution** section of the hardware submission and select **New shipping label**.
 
