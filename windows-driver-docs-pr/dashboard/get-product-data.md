@@ -395,6 +395,7 @@ The following table lists Operating system Family Codes and their descriptions.
 | Windows_v100_VB | Windows 10 version 2004 |
 | Windows_v100Server_FE | Windows - Server, version 21H2 |
 | Windows_v100_CO | Windows - Client, version 21H2 |
+| Windows_v100_NI | Windows 11 Client, version 22H2 |
 
 ### List of Operating System Codes
 
@@ -462,6 +463,8 @@ The following table lists Operating System Codes and their descriptions.
 |WINDOWS_v100_SERVER_ARM64_FE_FULL | Windows - Server, version 21H2 Arm64 |
 |WINDOWS_v100_X64_CO_FULL | Windows - Client, version 21H2 x64 |
 |WINDOWS_v100_ARM64_CO_FULL | Windows - Client, version 21H2 Arm64 |
+|WINDOWS_v100_X64_NI_FULL | Windows 11 Client, version 22H2 x64 |
+|WINDOWS_v100_ARM64_NI_FULL | Windows 11 Client, version 22H2 Arm64 |
 
 ## Error codes
 
