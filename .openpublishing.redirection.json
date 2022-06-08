@@ -8676,7 +8676,7 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "windows-hardware/wdf/what-s-new-for-wdf-drivers.md",
+            "source_path": "windows-driver-docs-pr/wdf/what-s-new-for-wdf-drivers.md",
             "redirect_URL": "/windows-hardware/drivers/wdf/index",
             "redirect_document_id": false
         },
