@@ -9,7 +9,7 @@ api_name:
 - INF DDInstall.WMI Section
 api_type:
 - NA
-ms.date: 06/02/2022
+ms.date: 06/08/2022
 ---
 
 # INF DDInstall.WMI section
@@ -30,10 +30,10 @@ WMIInterface={WmiClassGUID},[flags,]WMI-class-section
 
 ## Entries
 
-_WmiClassGUID_
+_WmiClassGUID_  
 Specifies a GUID value that identifies a WMI class.
 
-_flags_
+_flags_  
 Specifies one of the following bitmask flags:
 
 0x00000001 (SCWMI_CLOBBER_SECURITY)  

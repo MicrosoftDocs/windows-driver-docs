@@ -9,7 +9,7 @@ api_name:
 - INF Models Section
 api_type:
 - NA
-ms.date: 06/06/2022
+ms.date: 06/08/2022
 ---
 
 # INF Models section
@@ -31,10 +31,10 @@ device-description=install-section-name,[hw-id][,compatible-id...]
 
 ## Entries
 
-_device-description_
+_device-description_  
 Identifies a device to be installed, expressed as any unique combination of visible characters or as a **%**_strkey_**%** token defined in an [**INF Strings section**](inf-strings-section.md). The maximum length, in characters, of a device description is LINE_LEN.
 
-_install-section-name_
+_install-section-name_  
 Specifies the undecorated name of the INF install sections to be used for the device (and compatible models of device, if any). For more information, see [**INF _DDInstall_ Section**](inf-ddinstall-section.md).
 
 _hw-id_  
@@ -43,10 +43,10 @@ Specifies a vendor-defined [Hardware ID](hardware-ids.md) string that identifies
 _enumerator\enumerator-specific-device-id_  
 Is the typical format for individual PnP devices reported to the PnP manager by a single enumerator. For example, `USB\VID_045E&PID_00B` identifies the Microsoft HID keyboard device on a USB bus. Depending on the enumerator, such a specification can even include the device's hardware revision number as, for example, `PCI\VEN_1011&DEV_002&SUBSYS_00000000&REV_02`.
 
-_*enumerator-specific-device-id_
+_*enumerator-specific-device-id_  
 Indicates with the asterisk (*) that the device is supported by more than one enumerator. For example, `*PNP0F01` identifies the Microsoft serial mouse, which also has a compatible-id specification of `SERENUM\PNP0F01`.
 
-_device-class-specific-ID_
+_device-class-specific-ID_  
 Is an I/O bus-specific format, as described in the hardware specification for the bus, for the hardware IDs of all peripheral devices on that type of I/O bus.
 
 _compatible-id_  

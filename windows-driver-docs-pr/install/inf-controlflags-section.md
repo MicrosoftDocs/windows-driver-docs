@@ -9,7 +9,7 @@ api_name:
 - INF ControlFlags Section
 api_type:
 - NA
-ms.date: 06/01/2022
+ms.date: 06/08/2022
 ---
 
 # INF ControlFlags section
@@ -36,10 +36,10 @@ ExcludeFromSelect=device-identification-string[,device-identification-string] ..
 
 ## Entries
 
-_device-identification-string_
+_device-identification-string_  
 Identifies a [hardware ID](hardware-ids.md) or [compatible ID](compatible-ids.md) that was specified in a per-manufacturer [**INF Models section**](inf-models-section.md). Each string must be separated from the next with a comma (,).
 
-**ExcludeFromSelect**
+**ExcludeFromSelect**  
 Removes all (if * is specified) or the specified list of devices from certain user interface displays, from which a user is expected to select a particular device for installation.
 
 For Windows 2000 and later versions of Windows, the specified devices are displayed by the Found New Hardware Wizard and the Hardware Update Wizard.
@@ -49,10 +49,10 @@ To exclude a set of OS-incompatible or platform-incompatible devices from this d
 **.nt**  
 Do not display these devices on computers that are running Windows 2000 or later versions of Windows.
 
-**.ntx86**
+**.ntx86**  
 Do not display these devices on x86-based computers that are running Windows 2000 or later versions of Windows.
 
-**.ntia64**
+**.ntia64**  
 Do not display these devices on Itanium-based computers that are running Windows XP or later versions of Windows.
 
 **.ntamd64**  

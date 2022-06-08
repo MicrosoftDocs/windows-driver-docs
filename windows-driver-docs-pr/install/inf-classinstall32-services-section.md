@@ -9,7 +9,7 @@ api_name:
 - INF ClassInstall32.Services Section
 api_type:
 - NA
-ms.date: 06/01/2022
+ms.date: 06/08/2022
 ---
 
 # INF ClassInstall32.Services section
@@ -41,16 +41,16 @@ INF files typically use the **ClassInstall32.Services** section with at least on
 
 ## Entries
 
-**AddService=**_ServiceName_,[_flags_],_service-install-section_[,_event-log-install-section_[,[_EventLogType_][,_EventName_]]]...
+**AddService=**_ServiceName_,[_flags_],_service-install-section_[,_event-log-install-section_[,[_EventLogType_][,_EventName_]]]...  
 This directive references an INF-writer-defined _service-install-section_ and, possibly, an _event-log-install-section_ elsewhere in the INF file for the drivers of the device class covered by the [**ClassInstall32**](inf-classinstall32-section.md) section. For more information, see [**INF AddService Directive**](inf-addservice-directive.md).
 
-**DelService=**_ServiceName_[,[_flags_][,[_EventLogType_][,_EventName_]]]...
+**DelService=**_ServiceName_[,[_flags_][,[_EventLogType_][,_EventName_]]]...  
 This directive removes a previously installed service from the target computer. This directive is very rarely used. For more information, see [**INF DelService Directive**](inf-delservice-directive.md).
 
-**Include=**_filename_.**inf**[,_filename2_.**inf**]...
+**Include=**_filename_.**inf**[,_filename2_.**inf**]...  
 This optional entry specifies one or more additional system-supplied named INF files that contain sections needed to install this device class. If this entry is specified, usually so is a **Needs** entry.
 
-**Needs=**_inf-section-name_[,_inf-section-name_]...
+**Needs=**_inf-section-name_[,_inf-section-name_]...  
 This optional entry specifies the particular named section that must be processed during the installation of this device class. Typically, such a named section is an **ClassInstall32.Services** section within a system-supplied INF file that is listed in an **Include** entry. However, it can be any section that is referenced within such a **ClassInstall32.Services** section.
 
 ## Remarks

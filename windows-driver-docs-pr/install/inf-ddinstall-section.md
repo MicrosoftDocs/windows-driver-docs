@@ -9,7 +9,7 @@ api_name:
 - INF DDInstall Section
 api_type:
 - NA
-ms.date: 06/02/2022
+ms.date: 06/08/2022
 ---
 
 # INF DDInstall section
@@ -57,7 +57,7 @@ Not all valid entries are supported in a [Universal INF](using-a-universal-inf-f
 
 ### Supported in a Universal INF
 
-**DriverVer=**_mm/dd/yyyy_[,_x.y.v.z_]
+**DriverVer=**_mm/dd/yyyy_[,_x.y.v.z_]  
 This optional entry specifies version information for the [driver package](driver-packages.md).
 
 For information about how to specify this entry, see [**INF DriverVer Directive**](inf-driverver-directive.md).

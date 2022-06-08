@@ -9,7 +9,7 @@ api_name:
 - INF DDInstall.Events Section
 api_type:
 - NA
-ms.date: 06/01/2022
+ms.date: 06/08/2022
 ---
 
 # INF DDInstall.Events section
@@ -42,7 +42,7 @@ This directive references an INF-writer-defined _event-provider-install-section_
 **AddAutoLogger=**_session-name_,{_SessionGUID_},_add-autologger-install-section_  
 This directive references an INF-writer-defined _add-autologger-install-section_ elsewhere in the INF file for the drivers of the devices covered by this _DDInstall_ section. For more information, see [**INF AddAutoLogger and UpdateAutoLogger Directives**](inf-addupdateautologger-directive.md).
 
-**UpdateAutoLogger=**_session-name_,_update-autologger-install-section_
+**UpdateAutoLogger=**_session-name_,_update-autologger-install-section_  
 This directive references an INF-writer-defined _update-autologger-install-section_ elsewhere in the INF file for the drivers of the devices covered by this _DDInstall_ section. For more information, see [**INF AddAutoLogger and UpdateAutoLogger Directives**](inf-addupdateautologger-directive.md).
 
 **Include=**_filename_.**inf**[,_filename2_.**inf**]...  

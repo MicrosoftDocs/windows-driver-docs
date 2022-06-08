@@ -35,7 +35,7 @@ For more information about how to create a GUID, see [Using GUIDs in Drivers](..
 _install-interface-section_  
 References an INF-writer-defined section, possibly with any of the system-defined extensions, elsewhere in this INF.
 
-_flags_
+_flags_  
 If specified, this entry must be zero.
 
 ## Remarks

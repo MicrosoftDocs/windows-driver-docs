@@ -9,7 +9,7 @@ api_name:
 - INF ClassInstall32 Section
 api_type:
 - NA
-ms.date: 06/01/2022
+ms.date: 06/08/2022
 ---
 
 # INF ClassInstall32 section
@@ -43,14 +43,14 @@ AddReg=add-registry-section[,add-registry-section]...
 
 ## Entries
 
-**AddReg=**_add-registry-section_[,_add-registry-section_]...
+**AddReg=**_add-registry-section_[,_add-registry-section_]...  
 References one or more named sections that contain class-specific value entries to be written into the registry. Typically, this is used to give the new device setup class at least a friendly name that other components can later retrieve from the registry and use to open installed devices of this new device class or to "install" any property-page provider for this device setup class, and so forth.
 
 An **HKR** specification in any _add-registry-section_ designates the registry key that contains settings for that class. For additional information, see the following **Remarks** section.
 
 For more information, see [**INF AddReg Directive**](inf-addreg-directive.md).
 
-**AddProperty=**_add-property-section_[,_add-property-section_]...
+**AddProperty=**_add-property-section_[,_add-property-section_]...  
 (Windows Vista and later versions of Windows) References one or more INF file sections that modify [device properties](device-properties.md) that are set for a [device setup class](./overview-of-device-setup-classes.md). You should use an [**INF AddProperty directive**](inf-addproperty-directive.md) only to set a device setup class property that is new to Windows Vista or later versions of Windows operating systems.
 
 For device class properties that were introduced earlier on Windows Server 2003, Windows XP, or Windows 2000, and that have corresponding registry entry values, you should continue to use an [**INF AddReg directives**](inf-addreg-directive.md) to set the device setup class property. These guidelines apply to system-defined properties and custom properties.
@@ -65,46 +65,46 @@ For more information, see [**INF CopyFiles Directive**](inf-copyfiles-directive.
 > [!NOTE]
 > System-supplied INF files for device setup classes do not use this directive in this section.
 
-**DelReg=**_del-registry-section_[,_del-registry-section_]...
+**DelReg=**_del-registry-section_[,_del-registry-section_]...  
 References one or more named sections in which value entries or keys are specified to be removed from the registry during installation of the class installer.
 
 However, if a particular **{**_SetupClassGUID_**}** already exists as an installed class, the system setup code subsequently ignores the **ClassInstall32** section of any INF that specifies the same GUID value in its **Version** section. Consequently, an INF cannot replace an existing class installer or modify its behavior from a **ClassInstall32** section.
 
 For more information, see [**INF DelReg Directive**](inf-delreg-directive.md).
 
-**DelProperty=**_del-property-section_[,_del-property-section_]...
+**DelProperty=**_del-property-section_[,_del-property-section_]...  
 (Windows Vista and later versions of Windows) References one or more INF file sections that delete [device properties](device-properties.md) that are set for a [device setup class](./overview-of-device-setup-classes.md). You should use an [**INF DelProperty directive**](inf-delproperty-directive.md) only to delete a device setup class property that is new to Windows Vista or later versions of Windows operating systems.
 
 For device class properties that were introduced earlier on Windows Server 2003, Windows XP, or Windows 2000, and that have corresponding registry entry values, you should continue to use an [**INF DelReg directives**](inf-delreg-directive.md) to delete the device setup class property. These guidelines apply to system-defined properties and custom properties.
 
 For more information about how to use the **DelProperty** directive, see [Using the INF AddProperty Directive and the INF DelProperty Directive](using-the-inf-addproperty-directive-and-the-inf-delproperty-directive.md).
 
-**Delfiles=**_file-list-section_[,_file-list-section_]...
+**Delfiles=**_file-list-section_[,_file-list-section_]...  
 References one or more named sections in which previously installed class-relevant files on the destination are specified for deletion.
 
 For more information, see [**INF DelFiles Directive**](inf-delfiles-directive.md).
 
-**Renfiles=**_file-list-section_[,_file-list-section_]...
+**Renfiles=**_file-list-section_[,_file-list-section_]...  
 References one or more named sections in which class-relevant files to be renamed on the destination are listed.
 
 For more information, see [**INF RenFiles Directive**](inf-renfiles-directive.md).
 
-**BitReg=**_bit-registry-section_[,_bit-registry-section_]...
+**BitReg=**_bit-registry-section_[,_bit-registry-section_]...  
 Is valid in this section but almost never used.
 
 For more information, see [**INF BitReg Directive**](inf-bitreg-directive.md).
 
-**UpdateInis=**_update-ini-section_[,_update-ini-section_]...
+**UpdateInis=**_update-ini-section_[,_update-ini-section_]...  
 Is valid in this section but almost never used.
 
 For more information, see [**INF UpdateInis Directive**](inf-updateinis-directive.md).
 
-**UpdateIniFields=**_update-inifields-section_[,_update-inifields-section_]...
+**UpdateIniFields=**_update-inifields-section_[,_update-inifields-section_]...  
 Is valid in this section but almost never used.
 
 For more information, see [**INF UpdateIniFields Directive**](inf-updateinifields-directive.md).
 
-**Ini2Reg=**_ini-to-registry-section_[,_ini-to-registry-section_]...
+**Ini2Reg=**_ini-to-registry-section_[,_ini-to-registry-section_]...  
 Is valid in this section but almost never used.
 
 For more information, see [**INF UpdateIniFields Directive**](inf-updateinifields-directive.md).
