@@ -9,7 +9,7 @@ api_name:
 - INF Version Section
 api_type:
 - NA
-ms.date: 06/06/2022
+ms.date: 06/08/2022
 ---
 
 # INF Version section
@@ -79,7 +79,7 @@ For a new [device setup class](./overview-of-device-setup-classes.md), the INF m
 > [!NOTE]
 > This entry is required for device drivers that are installed through the PnP manager.
 
-**ExtensionId**={xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}
+**ExtensionId**={xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}  
 Specifies the extension ID GUID when authoring an [extension INF](using-an-extension-inf-file.md). The GUID value is formatted as shown here, where each _x_ is a hexadecimal digit.
 
 When creating the initial version of an extension INF, the INF must specify a newly generated **ExtensionId** value. However, when updating an existing extension INF, the **ExtensionId** must remain the same so that multiple related versions of the extension INF are versioned against each other instead of being treated as independent extension INFs that may be simultaneously installed on the same device instance. For more information about how to author extension INFs, see [Using an Extension INF File](using-an-extension-inf-file.md).
@@ -87,7 +87,7 @@ When creating the initial version of an extension INF, the INF must specify a ne
 > [!NOTE]
 > This entry is only required when creating an extension INF, as identified by specifying `Class = Extension` and `ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}`.
 
-**ClassVer=**_major_**.**_minor_
+**ClassVer=**_major_**.**_minor_  
 Reserved for system use unless explicitly required by a device class such as Printer. For example, see [V4 Driver INF](../print/v4-driver-inf.md).
 
 **Provider=%**_INF-creator_**%**  
