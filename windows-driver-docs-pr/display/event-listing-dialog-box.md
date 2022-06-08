@@ -13,7 +13,7 @@ The following figure shows a screen shot of what you might see when you open the
 > [!NOTE]
 > When the **Event Listing** dialog box is initially created, it reads the current viewport time and makes it the default time period. The GUID List represents all the different types of events that GPUView finds in the ETL file.
 
-![event listing dialog box 1](\Images\event-listing-dialog-box-1.png)
+![event listing dialog box 1](./images/event-listing-dialog-box-1.png)
 
 The following sections describe the **Event Listing** dialog box.  
 

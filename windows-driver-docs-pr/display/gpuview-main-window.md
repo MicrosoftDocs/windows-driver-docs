@@ -12,7 +12,7 @@ Because GPUView is a specialized tool that understands graphics operations, the 
 
 Logically, the passage of time is displayed from left to right. Items that perform some operation in time are displayed along the timeline in rows or workflow queues.
 
-![GPUView Display](\Images\gpuview-merged.png)
+![GPUView Display](./images/gpuview-merged.png)
 The following sections describe the GPUView display.
 
 ## Application Title Bar

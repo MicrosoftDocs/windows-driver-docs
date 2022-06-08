@@ -10,17 +10,17 @@ The **Symbols** dialog box is used for resolving symbols. If symbols are availab
 
 When the dialog is first launched, it looks like the following figure.  
 
-![symbols dialog box 1](\Images\symbols-dialog-box-1.png)
+![symbols dialog box 1](./images/symbols-dialog-box-1.png)
 
 When GPUView processes the events in the trace it is viewing, it reconstructs the Windows build location based on the Windows build number and machine architecture. Externally, this will not be a valid path. In any case, if you know the location of the symbols that GPUView should use to resolve information in the file, enter the path or semicolon-separated paths in the **Path for resolving symbols** control.  
 
 The following diagram is a screen shot showing that GPUView has not used symbols to resolve thread names.  
 
-![symbols dialog box 2](\Images\symbols-dialog-box-2.png)
+![symbols dialog box 2](./images/symbols-dialog-box-2.png)
 
 Notice that the first thread name in the csrss.exe process is winsrv.dll+0x42B0. Viewing the same file with symbols enabled, you get the following.  
 
-![symbols dialog box 3](\Images\symbols-dialog-box-3.png)
+![symbols dialog box 3](./images/symbols-dialog-box-3.png)
 
 Notice that the thread name has changed to winsrv.dll!StartCreateSystemThreads.  
 
