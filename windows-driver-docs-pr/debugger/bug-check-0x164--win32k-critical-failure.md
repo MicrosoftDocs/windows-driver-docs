@@ -96,10 +96,9 @@ The WIN32K\_CRITICAL\_FAILURE bug check has a value of 0x00000164. This indicate
 </tbody>
 </table>
 
- 
 
- 
-
+## Resolution 
+The [**!analyze**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-analyze) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
 
 
