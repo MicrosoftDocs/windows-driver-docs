@@ -1,7 +1,7 @@
 ---
 title: Getting started with MALT
 description: How to upload firmware to the MALT and how to calibrate it using SensorExplorer.
-ms.date: 07/08/2021
+ms.date: 06/14/2022
 ---
 
 # Getting started with MALT
@@ -18,7 +18,7 @@ This topic defines how to upload firmware to the MALT as well as how to calibrat
 
 ![Hardware Setup Picture for MALT](images/MALTSetup.png)
 
-1. Connect an **Arduino Mega** to your device using a [USB 2.0 cable Type A/B](https://store.arduino.cc/usa/usb-2-0-cable-type-a-b).
+1. Connect an **Arduino Mega** to your device using a [USB 2.0 cable Type A/B](https://store-usa.arduino.cc/products/usb-2-0-cable-type-a-b).
 
 1. Connect the MALT Controller Board to the back pins of the Arduino Mega using the rainbow ribbon cable.
 
