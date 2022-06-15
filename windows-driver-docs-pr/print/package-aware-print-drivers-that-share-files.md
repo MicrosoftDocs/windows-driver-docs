@@ -33,7 +33,7 @@ CoreDriverSections="{D20EA372-DD35-4950-9ED8-A6335AFE79F0},
  UNIDRV.OEM, UNIDRV_DATA, TTFSUB.OEM"
 ```
 
-In Windows Vista, the reference to Ntprint.inf is no longer necessary because Unidrv is packaged as a core driver and is referred to by its globally unique identifier (GUID). When using core drivers, do not use the **DataSection** keyword, but instead refer to this section from the **CoreDriverSections** keyword.
+As of Windows Vista, do not include Ntprint.inf because Unidrv is packaged as a core driver and is referred to by its globally unique identifier (GUID). When using core drivers, do not use the **DataSection** keyword, but instead refer to this section from the **CoreDriverSections** keyword.
 
 Core print package files are listed in the following table.
 
