@@ -33,9 +33,9 @@ Drivers should use the following NDIS macros and functions to access and manipul
 
 [**NdisFreeNetBufferListContext**](/windows-hardware/drivers/ddi/nblapi/nf-nblapi-ndisfreenetbufferlistcontext)
 
-[**NET\_BUFFER\_LIST\_CONTEXT\_DATA\_START**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_context_data_start)
+[**NET\_BUFFER\_LIST\_CONTEXT\_DATA\_START**](/windows-hardware/drivers/ddi/nblaccessors/nf-nblaccessors-net_buffer_list_context_data_start)
 
-[**NET\_BUFFER\_LIST\_CONTEXT\_DATA\_SIZE**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_context_data_size)
+[**NET\_BUFFER\_LIST\_CONTEXT\_DATA\_SIZE**](/windows-hardware/drivers/ddi/nblaccessors/nf-nblaccessors-net_buffer_list_context_data_size)
 
  
 
