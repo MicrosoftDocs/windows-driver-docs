@@ -179,8 +179,17 @@ HRESULT CSampleMft::EyeGazeCorrectionHandler(
             //   
             // Use the extended value to make changes to the property.. refer documentation   
             // PKSCAMERA_EXTENDEDPROP_VALUE extendedValue = (PKSCAMERA_EXTENDEDPROP_VALUE)(payload + sizeof(KSCAMERA_EXTENDEDPROP_HEADER));   
-                             //   
-            SetEyeGazeCorrectionMode(extendedHeader->Flags);   
+            //
+            if ( (extendedHeader->Flags == KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_ON) ||
+                 (extendedHeader->Flags == (KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_ON | KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_STAREMODE)) ||
+                 (extendedHeader->Flags == KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_OFF) )
+            {
+                SetEyeGazeCorrectionMode (extendedHeader->Flags);   
+            }
+            else
+            {
+                RETURN_HR(E_INVALIDARG);
+            } 
             *bytesReturned = sizeof(PKSCAMERA_EXTENDEDPROP_HEADER) + sizeof(KSCAMERA_EXTENDEDPROP_VALUE);   
         }   
         else  
@@ -206,7 +215,7 @@ HRESULT CSampleMft::EyeGazeCorrectionHandler(
             //   
             // Use the extended value to make changes to the property.. refer documentation   
             // PKSCAMERA_EXTENDEDPROP_VALUE extendedValue = (PKSCAMERA_EXTENDEDPROP_VALUE)(payload +sizeof(KSCAMERA_EXTENDEDPROP_HEADER));   
-                             //   
+            //   
             extendedHeader->Capability = KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_OFF |  
                                          KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_ON |   
                                          KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_STAREMODE;   
