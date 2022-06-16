@@ -36,12 +36,11 @@ The camera driver documentation has been updated with information on background 
 
 The [Print support app (PSA) design guide](./devapps/print-support-app-design-guide.md) has been updated with information about new PSA functionality available starting in Windows 11, version 22H2.
 
-- [Display name localization and PDL Passthrough API integration](./devapps/print-support-app-design-guide.md?branch=release-nickel#display-name-localization-and-pdl-passthrough-api-integration)
-- [Page level feature support and operation attributes](./devapps/print-support-app-design-guide.md?branch=release-nickel#page-level-feature-support-and-operation-attributes)
-- [Enhancing the print dialog with PSA](./devapps/print-support-app-design-guide.md?branch=release-nickel#enhancing-the-print-dialog-with-psa)
-- [PDL conversion with host-based processing flags](./devapps/print-support-app-design-guide.md?branch=release-nickel#pdl-conversion-with-host-based-processing-flags)
-- [Set Print Device Capabilities (PDC) update policy](./devapps/print-support-app-design-guide.md?branch=release-nickel#set-print-device-capabilities-pdc-update-policy)
-
+- Display name localization and PDL Passthrough API integration
+- Page level feature support and operation attributes
+- Enhancing the print dialog with PSA
+- PDL conversion with host-based processing flags
+- Set Print Device Capabilities (PDC) update policy
 
 ## Mobile broadband
 
