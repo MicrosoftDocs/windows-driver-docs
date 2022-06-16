@@ -69,7 +69,7 @@ The following table describes the flag capabilities.
 | **KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_STARE** | This is an optional capability. When specified together with KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_ON, the stare/teleprompter mode is enabled in the driver. |
 
 > [!NOTE]
-> From a SET perspective, the stare mode will be enabled only when both KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_STARE and KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_ON are set at the same time. KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_OFF needs to be exclusive to the other two bits.
+> From a SET perspective, the stare mode will be enabled only when both **KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_STARE** and **KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_ON** are set at the same time. **KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_OFF** needs to be exclusive to the other two bits.
 
 The table below contains the descriptions and requirements for the [KSCAMERA_EXTENDEDPROP_HEADER](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
@@ -80,7 +80,7 @@ The table below contains the descriptions and requirements for the [KSCAMERA_EXT
 | Size | This must be **sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(KSCAMERA_EXTENDEDPROP_VALUE)**. |
 | Result | Unused, must be 0. |
 | Capability | Must be a bitwise OR of the supported **KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_*** flags defined above. |
-| Flags | This is a read/write field. This can be any one of the KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_* flags defined above except STARE(which needs to be set together with ON to take effect), or valid combinations of the bits. From a SET perspective, the stare mode will be enabled only when both EYEGAZECORRECTION_STARE and EYEGAZECORRECTION_ON are set at the same time. EYEGAZECORRECTION_OFF needs to be exclusive to the other two bits. |
+| Flags | This is a read/write field. This can be any one of the KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_* flags defined above except STARE(which needs to be set together with ON to take effect), or valid combinations of the bits. From a SET perspective, the stare mode will be enabled only when both KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_STARE and KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_ON are set at the same time. KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_OFF needs to be exclusive to the other two bits. |
 
 ## Requirements
 
