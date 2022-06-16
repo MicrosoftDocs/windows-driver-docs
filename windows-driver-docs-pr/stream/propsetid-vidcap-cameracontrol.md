@@ -60,7 +60,7 @@ With the introduction of the [USB Video Class Driver](./usb-video-class-driver.m
 The DirectShow **IAMCameraControl** interface (see the Microsoft DirectShow documentation in the Windows Software Development Kit (SDK)) provides access to the properties of this set.
 
 > [!NOTE]
-> Face-based ROI coordinates for 3A are calculated relative to the active field of view of the camera. If the field of view has been modified due to ue of a control such as Zoom, Pan or Tilt or [Digital Window](/windows-hardware/drivers/stream/digital-window-overview), the camera is responsible for mapping the provided 3A ROI coordinates back to the sensor's full field of view, considering the current zoom/pan window.
+> Face-based ROI coordinates for 3A are calculated relative to the active field of view of the camera. If the field of view has been modified due to ue of a control such as Zoom, Pan or Tilt or [Digital Window](./digital-window-overview.md), the camera is responsible for mapping the provided 3A ROI coordinates back to the sensor's full field of view, considering the current zoom/pan window.
 
 ## Windows 8 extended camera control properties
 

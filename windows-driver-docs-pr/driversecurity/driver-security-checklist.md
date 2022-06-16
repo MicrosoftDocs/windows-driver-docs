@@ -417,7 +417,7 @@ If you don't have suitable staff to review you code internally, consider engagin
 
 **Security checklist item \#12:** *Use the Windows partner portal to properly sign your driver for distribution.*
 
-Before you release a driver package to the public, we recommend that you submit the package for certification. For more information, see [Test for performance and compatibility](/windows-hardware/test/index), [Get started with the Hardware program](../dashboard/get-started-with-the-hardware-dashboard.md), [Hardware Dashboard Services](../dashboard/index.yml), and [Attestation signing a kernel driver for public release](../dashboard/attestation-signing-a-kernel-driver-for-public-release.md).
+Before you release a driver package to the public, we recommend that you submit the package for certification. For more information, see [Test for performance and compatibility](/windows-hardware/test/index), [Get started with the Hardware program](../dashboard/get-started-dashboard-submissions.md), [Hardware Dashboard Services](../dashboard/index.yml), and [Attestation signing a kernel driver for public release](../dashboard/code-signing-attestation.md).
 
 ## Use code analysis in Visual Studio to investigate driver security
 

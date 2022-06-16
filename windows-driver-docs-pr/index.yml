@@ -129,7 +129,7 @@ additionalContent:
           url: ./dashboard/manage-shipping-labels.md
         - title: Get a code signing certificate
           summary: Learn how to get a code signing certificate to secure your digital information.
-          url: ./dashboard/get-a-code-signing-certificate.md
+          url: ./dashboard/code-signing-cert-manage.md
     # Section
     - title: Resources
       items:
