@@ -1,10 +1,10 @@
 ---
-title: Combining Platform Extensions with Operating System Versions
-description: Combining Platform Extensions with Operating System Versions
-ms.date: 02/02/2022
+title: Combining platform extensions with operating system versions
+description: Provides information on combining platform extensions with operating system versions
+ms.date: 06/15/2022
 ---
 
-# Combining Platform Extensions with Operating System Versions
+# Combining platform extensions with operating system versions
 
 Within the [**INF Manufacturer section**](inf-manufacturer-section.md) of an INF file, you can supply [**INF *Models* sections**](inf-models-section.md) that are specific to various versions of the Windows operating system. These version-specific *Models* sections are identified by using the *TargetOSVersion* decoration.
 
@@ -14,28 +14,27 @@ Within the same INF file, different [**INF *Models* sections**](inf-models-secti
 
 The following example shows the correct format of the *TargetOSVersion* decoration for Windows XP through Windows 10, version 1511:
 
-**nt**\[*Architecture*\]\[**.**\[*OSMajorVersion*\]\[**.**\[*OSMinorVersion*\]\[**.**\[*ProductType*\]\[**.**\[*SuiteMask*\]\]\]\]\]
+**nt**[*Architecture*][**.**[*OSMajorVersion*][**.**[*OSMinorVersion*][**.**[*ProductType*][**.**[*SuiteMask*]]]]]
 
 Starting with Windows 10, version 1607 (Build 14310 and later), the correct format of the *TargetOSVersion* decoration includes *BuildNumber*:
 
-**nt**\[*Architecture*\]\[**.**\[*OSMajorVersion*\]\[**.**\[*OSMinorVersion*\]\[**.**\[*ProductType*\]\[**.**\[*SuiteMask*\]\]\[**.**\[*BuildNumber*\]\]\]\]\]
+**nt**[*Architecture*][**.**[*OSMajorVersion*][**.**[*OSMinorVersion*][**.**[*ProductType*][**.**[*SuiteMask*]][**.**[*BuildNumber*]]]]]
 
 Each field is defined as follows:
 
-<a href="" id="nt"></a>**nt**  
+**nt**  
 Specifies that the target operating system is NT-based. Windows 2000 and later versions of Windows are all NT-based.
 
-<a href="" id="architecture"></a>*Architecture*  
+*Architecture*  
 Identifies the hardware platform. For more information on architecture platform decorations on *Models* sections, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
-<a href="" id="osmajorversion"></a>*OSMajorVersion*  
-A number that represents the major version number for the operating system. For a table listing major versions for the Windows operating systems, see *OSMajorVersion* in [INF Manufacturer section](./inf-manufacturer-section.md).
+*OSMajorVersion*  
+A number that represents the major version number for the operating system. For a table listing major versions for the Windows operating systems, see *OSMajorVersion* in [INF Manufacturer section](inf-manufacturer-section.md).
 
-<a href="" id="osminorversion"></a>*OSMinorVersion*  
-A number that represents the minor version number for the operating system. For a table listing minor versions for the Windows operating systems, see *OSMinorVersion* in [INF Manufacturer section](./inf-manufacturer-section.md).
+*OSMinorVersion*  
+A number that represents the minor version number for the operating system. For a table listing minor versions for the Windows operating systems, see *OSMinorVersion* in [INF Manufacturer section](inf-manufacturer-section.md).
 
-<a href="" id="producttype"></a>*ProductType*
-
+*ProductType*  
 A number that represents *one* of the VER_NT_*xxxx* flags defined in *Winnt.h*, such as the following:
 
 **0x0000001** (VER_NT_WORKSTATION)
@@ -46,27 +45,35 @@ A number that represents *one* of the VER_NT_*xxxx* flags defined in *Winnt.h*, 
 
 If a product type is specified, the INF file will be used only if the operating system matches the specified product type. If the INF file supports multiple product types for a single operating system version, multiple *TargetOSVersion* entries are required.
 
-*SuiteMask*
-
+*SuiteMask*  
 A number that represents *a combination of* one or more of the VER_SUITE_*xxxx* flags defined in *Winnt.h*. These flags include the following:
 
 **0x00000001** (VER_SUITE_SMALLBUSINESS)  
+
 **0x00000002** (VER_SUITE_ENTERPRISE)  
+
 **0x00000004** (VER_SUITE_BACKOFFICE)  
+
 **0x00000008** (VER_SUITE_COMMUNICATIONS)  
+
 **0x00000010** (VER_SUITE_TERMINAL)  
+
 **0x00000020** (VER_SUITE_SMALLBUSINESS_RESTRICTED)  
+
 **0x00000040** (VER_SUITE_EMBEDDEDNT)  
+
 **0x00000080** (VER_SUITE_DATACENTER)  
+
 **0x00000100** (VER_SUITE_SINGLEUSERTS)  
+
 **0x00000200** (VER_SUITE_PERSONAL)  
+
 **0x00000400** (VER_SUITE_SERVERAPPLIANCE)  
 
 If one or more suite mask values are specified, the INF file will be used only if the operating system matches all the specified product suites. If the INF file supports multiple product suite combinations for a single operating system version, multiple *TargetOSVersion* entries are required.
 
-*BuildNumber*
-
-Specifies the minimum OS build number of the Windows 10 release to which the section applies, starting with build 14310 or later.
+*BuildNumber*  
+Specifies the minimum OS build number of the Windows 10 release to which the section applies, starting with build 14310 or later. For a table listing build numbers for the Windows operating systems, see *BuildNumber* in [INF Manufacturer section](inf-manufacturer-section.md).
 
 The build number is assumed to be relative to some specific OS major/minor version only, and may be reset for some future OS major/minor version.
 
@@ -74,11 +81,11 @@ Any build number specified by the *TargetOSVersion* decoration is evaluated only
 
 If build number is supplied, the OS version and BuildNumber of the *TargetOSVersion* decoration must both be greater than the OS version and build number of the Windows 10 build 14310 where this decoration was first introduced.  Earlier versions of the operating system without these changes (for example, Windows 10 build 10240) will not parse unknown decorations, so an attempt to target these earlier builds will actually prevent that OS from considering the decoration valid at all.
 
-## <a href="" id="how-setup-processes-targetosversion-decorations"></a>How Windows processes *TargetOSVersion* decorations
+## How Windows processes *TargetOSVersion* decorations
 
 When you install a driver package on a device, Windows follows these steps to process the [**INF *Models* sections**](inf-models-section.md) within an INF file:
 
-1.  If one or more [**INF *Models* sections**](inf-models-section.md) have the *TargetOS* decoration, Windows selects the INF *Models* section that is closest to the attributes for the host operating system.
+1. If one or more [**INF *Models* sections**](inf-models-section.md) have the *TargetOS* decoration, Windows selects the INF *Models* section that is closest to the attributes for the host operating system.
 
     For example, if an INF *Models* section has a *TargetOS* decoration of **ntx86.5.1**, Windows selects that section if the host operating system is running Windows XP or later version of Windows on an x86-based system.
 
@@ -86,11 +93,11 @@ When you install a driver package on a device, Windows follows these steps to pr
 
     If an INF *Models* section has a *TargetOS* decoration of **nt.10.0...14393**, Windows selects that section if the host operating system is running a Windows 10 build equal to or greater than 14393 on any supported hardware platform.
 
-2.  If none of the [**INF *Models* sections**](inf-models-section.md) have a *TargetOS* decoration that matches the host operating system, Windows selects the *Models* section that has either a matching platform extension or no platform extension.
+1. If none of the [**INF *Models* sections**](inf-models-section.md) have a *TargetOS* decoration that matches the host operating system, Windows selects the *Models* section that has either a matching platform extension or no platform extension.
 
     For example, if an INF *Models* section has a platform extension of **ntx86**, Windows selects that section if the host operating system is Microsoft Windows 2000 or later version of Windows on an x86-based system.
 
-3.  If Windows cannot find a matching [**INF *Models* section**](inf-models-section.md), it will not install that driver package on the device.
+1. If Windows cannot find a matching [**INF *Models* section**](inf-models-section.md), it will not install that driver package on the device.
 
 ## Sample INF *Models* sections with *TargetOSVersion* decorations
 
