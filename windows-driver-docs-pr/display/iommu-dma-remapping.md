@@ -1,80 +1,95 @@
 ---
-title: IOMMU-based GPU isolation
-description: IOMMU-based GPU isolation allows *Dxgkrnl* to restrict access to system memory from the GPU by making use of IOMMU hardware.
-ms.date: 06/03/2022
+title: IOMMU DMA remapping
+description: In the IOMMU model each process has a single virtual address space that is shared between the CPU and graphics processing unit (GPU) and is managed by the OS memory manager.
+ms.date: 06/16/2022
 ---
 
-# IOMMU-based GPU isolation
+# IOMMU DMA remapping
 
-This page describes the IOMMU-based GPU isolation feature for IOMMU-capable devices, introduced in Windows 10 version 1803 (WDDM 2.4). See [IOMMU DMA remapping](iommu-dma-remapping.md) for more recent IOMMU updates.
+This page describes the IOMMU DMA remapping feature that was introduced in Windows 11 22H2 (WDDM 3.0). See [IOMMU DMA remapping](iommu-dma-remapping.md) for past reference.
 
 ## Overview
 
-IOMMU-based GPU isolation allows *Dxgkrnl* to restrict access to system memory from the GPU by making use of IOMMU hardware. The OS can provide logical addresses, instead of physical addresses, which can be used to restrict the device’s access of system memory to only the memory it should be able to access by ensuring that memory accesses over PCIe are translated by the IOMMU to valid and accessible physical pages.
+Up until WDDM 3.0, *dxgkrnl* only supported IOMMU isolation through 1:1 physical remapping, meaning the logical pages accessed by the GPU were translated to the same physical page number. IOMMU DMA remapping allows the GPU to access memory through logical addresses which are no longer mapped 1:1; that is, *dxgkrnl* is able to provide logically contiguous address ranges.
 
-If the logical address accessed by the device is not valid, the device will not get access to the physical memory. This prevents a range of exploits that allow an attacker to gain access to physical memory via a compromised hardware device and read the contents of system memory that are not needed for the device’s operation.
+*Dxgkrnl* requires that GPUs are able to access all of physical memory in order for the device to start. If the highest visible address of the GPU does not exceed the highest physical address that is installed on the system, *dxgkrnl* will fail the initialization of the adapter. Upcoming servers and high end workstations can be configured with over 1TB of memory which crosses the common 40-bit address space limitation of many GPUs. DMA remapping will be used as a mechanism to allow GPUs to work in this environment.
 
-Starting in Windows 10 version 1803, this feature is, by default, only enabled for PCs where Windows Defender Application Guard is enabled for Microsoft Edge (i.e. container virtualization). We plan to measure the performance impact of the feature, and if the cost is determined to be low enough, we will investigate the possibility of enabling the feature even on native systems where virtualization is not enabled.
+At startup time, *dxgkrnl* will determine if logical remapping is necessary by comparing the device's highest accessible physical address to the memory installed on the system. If necessary, DMA remapping will be used to map a logical address range that is within the GPU's visible bounds to any physical memory on the system. For example, if the GPU has a limit of 1TB, then *dxgkrnl* will allocate logical addresses from [0, 1TB) which can then map to any physical memory on the system through the IOMMU.
 
-For development purposes, the actual IOMMU remapping functionality is enabled or disabled through the following registry key:
+## Logical versus physical adapters
 
-``` registry
-HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers
-DWORD: IOMMUFlags
+*Dxgkrnl* distinguishes between the concept of a logical and physical adapter. A physical adapter represents an individual hardware device that may or may not be linked with other devices in an [LDA chain](linked-display-adapter.md). A logical adapter represents one or more linked physical adapters.
 
-0x01 Enabled
-     * Enables creation of domain and interaction with HAL
+A single IOMMU DMA domain is created per logical adapter and attached to all physical adapters that are linked. This means all physical adapters share the same domain and the same view of physical memory.
 
-0x02 EnableMappings
-     * Maps all physical memory to the domain
-     * EnabledMappings is only valid if Enabled is also set. Otherwise no action is performed
+## Integrated versus discrete GPU support
 
-0x04 EnableAttach
-     * Attaches the domain to the device(s)
-     * EnableAttach is only valid if EnableMappings is also set. Otherwise no action is performed
+Because IOMMU DMA remapping offers little value to integrated GPUs which should, by definition, already be designed to access all physical memory in the system, implementing support on integrated parts is optional but recommended.
 
-0x08 BypassDriverCap
-     * Allows IOMMU functionality regardless of support in driver caps. If the driver does not indicate support for the IOMMU and this bit is not set, the enabled bits are ignored.
+Discrete GPUs must support IOMMU DMA remapping, which is a requirement for WDDM 3.0 certification.
 
-0x10 AllowFailure
-     * Ignore failures in IOMMU enablement and allow adapter creation to succeed anyway.
-     * This value cannot override the behavior when created a secure VM, and only applies to forced IOMMU enablement at device startup time using this registry key.
+## DDI changes
+
+The following DDI changes were made to support IOMMU DMA remapping.
+
+### Driver caps
+
+Two [**DXGK_QUERYADAPTERINFOTYPE**] driver caps are required to support linear remapping:
+
+* The driver must inform *Dxgkrnl* about its physical memory restrictions; that is, about its highest visible physical address.
+* The driver must indicate its support for IOMMU linear remapping. By indicating support, the driver is indicating that all of the DDIs described below are supported and used.
+
+Both of these caps must be provided before *Dxgkrnl* starts the device via [**DXGKDDI_START_DEVICE**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device) so that the device can be created and attached to an IOMMU domain before any memory can be accessed. Linear remapping can only be done if no existing physical memory is referenced by the device.
+
+``` C++
+
+typedef enum _DXGK_QUERYADAPTERINFOTYPE
+{
+    ...
+#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM2_9)
+    DXGKQAITYPE_PHYSICAL_MEMORY_CAPS = 34,
+    DXGKQAITYPE_IOMMU_CAPS           = 35,
+#endif //  DXGKDDI_INTERFACE_VERSION
+} DXGK_QUERYADAPTERINFOTYPE;
+
+typedef struct _DXGK_PHYSICAL_ADAPTER_CAPS
+{
+    PHYSICAL_ADDRESS HighestVisibleAddress;
+} DXGK_PHYSICAL_ADAPTER_CAPS;
+
+typedef struct _DXGK_IOMMU_CAPS
+{
+    union
+    {
+        struct
+        {
+            UINT32 IommuIsolationSupported  :  1;
+            UINT32 IommuIsolationRequired   :  1;
+            UINT32 DmaRemappingSupported    :  1;
+            UINT32 Reserved                 : 29;
+        };
+        UINT32 Value;
+    };
+} DXGK_IOMMU_CAPS;
 ```
 
-If this feature is enabled, the IOMMU is enabled shortly after the adapter starts. All driver allocations made prior to this time will be mapped when it does get enabled.
 
-Additionally, if the velocity staging key 14688597 is set to enabled, the IOMMU is activated when a secure virtual machine is created. For now, this staging key is disabled by default to allow self-hosting without proper IOMMU support.
 
-While enabled, starting a secure virtual machine will fail if the driver does not provide IOMMU support.
+To support logical remapping, DDIs were added to provide better control over physical memory that can be mapped to the GPU and/or CPU, and to ensure that any DDIs consuming memory addresses are updated to understand that these are logical.
 
-There is currently no way to disable the IOMMU after it has been enabled.
 
-## Memory access
 
-*Dxgkrnl* ensures that all memory accessible by the GPU will be remapped through the IOMMU to ensure that this memory is accessible. The physical memory that the GPU needs to access can currently be broken down into four categories:
 
-* Driver specific allocations made through MmAllocateContiguousMemory- or MmAllocatePagesForMdl-style functions (including the SpecifyCache and extended variations) must be mapped to the IOMMU prior to being accessed by the GPU. Instead of calling the *Mm* APIs, *Dxgkrnl* provides callbacks to the kernel-mode driver to allow the allocation and remapping in one step. Any memory intended to be GPU-accessible must go through these callbacks, or the GPU will not be able to access this memory.
 
-* All memory accessed by the GPU during paging operations, or mapped via the GpuMmu must be mapped to the IOMMU. This process is entirely internal to the Video Memory Manager (VidMm), which is a sub-component of *Dxgkrnl*. VidMm handles mapping and unmapping the logical address space any time the GPU is expected to access this memory. This includes mapping the backing store of an allocation for the entire duration during a transfer to or from VRAM or the entire time in which it is mapped to the sysmem or aperture segments, and mapping/unmapping monitored fences.
 
-* During power transitions, the driver might need to save portions of hardware-reserved memory. To handle this, *Dxgkrnl* provides a mechanism for the driver to specify how much memory will be needed up front to store this data. The exact amount of memory required by the driver can change dynamically, but *Dxgkrnl* will take a commit charge on the upper bound at the time the adapter is initialized to ensure that physical pages can be obtained when required. *Dxgkrnl* is responsible for ensuring this memory is locked and mapped to the IOMMU for the transfer during power transitions.
 
-* For any hardware reserved resources, VidMm ensures that the IOMMU resources are correctly mapped by the time the device is attached to the IOMMU. This includes memory reported by memory segments reported with [**PopulatedFromSystemMemory**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentflags). For reserved memory (e.g. firmware/BIOD reserved) that is not exposed via VidMm segments, *Dxgkrnl* will make a[**DXGKDDI_QUERYADAPTERINFO**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo) call to query all reserved memory ranges that the driver will need mapped ahead of time. See [Hardware reserved memory](#hardware-reserved-memory) for details.
 
-## Domain assignment
 
-During initialization of the hardware, *Dxgkrnl* creates a domain for each logical adapter on the system. The domain manages the logical address space and tracks page tables and other necessary data for the mappings. All physical adapters in a single logical adapter will all belong to the same domain. *Dxgkrnl* will track all mapped physical memory through the new allocation callback routines, as well as any memory allocated by VidMm itself.
 
-The domain will be attached to the device the first time a secure virtual machine is created, or shortly after the device is started if the above registry key is used.
 
-## Exclusive access
 
-Some chip sets do not support atomically swapping the logical address domain when there are pending PCI transactions on the bus. To accommodate this, *Dxgkrnl* has two DDIs for exclusive hardware access. These DDIs form a begin/end pairing where *Dxgkrnl* requests that the hardware be completely silent over the bus. *Dxgkrnl* will ensure that any pending work scheduled on the hardware completes, and then enter this exclusive access region. During this time, *Dxgkrnl* will assign the domain to the device. *Dxgkrnl* will not make any requests of the driver or hardware between these calls.
-Both DDIs are documented below.
 
-## DDI Changes
 
-The following DDI changes were made to support IOMMU-based GPU isolation:
 
 * The **IoMmuSecureModeSupported** cap was added to [**DXGK_VIDMMCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidmmcaps)
 * The [**DXGKQAITYPE_FRAMEBUFFERSAVESIZE**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_queryadapterinfotype) enum value and [**DXGK_FRAMEBUFFERSAVEAREA**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_framebuffersavearea) structure were added
