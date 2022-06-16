@@ -40,7 +40,7 @@ Certain device-specific stacks (for example graphics) continue to have x86/ARM32
 Starting with this release, WDF redistributable co-installers are no longer supported.
 
 > [!NOTE]
-> On a computer that has both the Windows 11, version 22H2 WDK and an older WDK, when building a WDF 1.11 driver, msbuild fails because it cannot find the WDF coinstaller. To fix this problem, before installing Windows 11, version 22H2 WDK, back up the folder `\Program files (x86)\windows kit\10\redist\wdf` and restore it afterwards. Alternatively, if you have already installed the Windows 11, version 22H2 WDK, install the MSI file at [WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) on a separate computer and copy the `redist` folder to the above folder. For more information, see [Redistributable Framework Components](/windows-hardware/drivers/wdf/installation-components-for-kmdf-drivers).
+> On a computer that has both the Windows 11, version 22H2 WDK and an older WDK, when building a WDF 1.11 driver, msbuild fails because it cannot find the WDF coinstaller. To fix this problem, before installing Windows 11, version 22H2 WDK, back up the folder `\Program files (x86)\windows kit\10\redist\wdf` and restore it afterwards. Alternatively, if you have already installed the Windows 11, version 22H2 WDK, install the MSI file at [WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) on a separate computer and copy the `redist` folder to the above folder. For more information, see [Redistributable Framework Components](./wdf/installation-components-for-kmdf-drivers.md).
 
 ## Download and install the Windows 11, version 22H2 WDK
 
