@@ -22,7 +22,7 @@ This property ID controls an in-stream correction that a driver can perform to e
 
 Examples of setting KSPROPERTY controls can be found in the [AVStream Camera Sample Driver](https://github.com/microsoft/Windows-driver-samples/tree/master/avstream/avscamera) on GitHub.
 
-## Stare mode update to KSPROPERTY_CAMERACONTROL_EXTENDED_EYEGAZECORRECTION control
+## Update to KSPROPERTY_CAMERACONTROL_EXTENDED_EYEGAZECORRECTION control
 
 Starting in Windows 11, version 22H2, Stare mode has been introduced to existing eye gaze correction control as an optional capability.
 
