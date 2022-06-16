@@ -1,7 +1,7 @@
 ---
 title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
-ms.date: 08/20/2021
+ms.date: 05/27/2022
 ---
 
 # Driver security checklist
@@ -53,6 +53,8 @@ In addition to avoiding the issues associated with a driver being attacked, many
 ![empty checkbox.](images/checkbox.png)[Use code validation tools](#use-additional-code-validation-tools)
 
 ![empty checkbox.](images/checkbox.png)[Review debugger techniques and extensions](#review-debugger-techniques-and-extensions)
+
+![empty checkbox.](images/checkbox.png)[Understand how drivers are reported using the Microsoft Vulnerable and Malicious Driver Reporting Center](#microsoft-vulnerable-and-malicious-driver-reporting-center)
 
 ![empty checkbox.](images/checkbox.png)[Review secure coding resources](#review-secure-coding-resources)
 
@@ -165,6 +167,13 @@ Handle zero-length buffers correctly. For more information, see [Errors in Direc
 - Validate pointers embedded in buffered I/O requests. For more information, see [Errors in Referencing User-Space Addresses](../kernel/errors-in-referencing-user-space-addresses.md).
 
 - Validate any address in the user space before trying to use it, using APIs such as [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) when appropriate.
+
+
+#### MSR model-specific register reads and writes
+ 
+Compiler intrinsics, such as [__readmsr](/cpp/intrinsics/readmsr) and [__writemsr](/cpp/intrinsics/writemsr) can be used to access the model-specific registers. If this access is required, the driver must always check that the register to read or write to is constrained to the expected index or range. 
+
+For more information, and code examples, see [Providing the ability to read/write MSRs](driver-security-dev-best-practices.md#providing-the-ability-to-read-and-write-msrs) in [Development Security Best Practices for Windows driver developers](driver-security-dev-best-practices.md).
 
 #### TOCTOU vulnerabilities
 
@@ -700,6 +709,12 @@ The !tokenfields extension displays the names and offsets of the fields within t
 The !sid extension displays the security identifier (SID) at the specified address. For more information, see [**!sid**](../debugger/-sid.md).
 
 The !sd extension displays the security descriptor at the specified address. For more information, see [**!sd**](../debugger/-sd.md).
+
+## Microsoft Vulnerable and Malicious Driver Reporting Center
+
+Anyone can submit a questionable driver using the Microsoft Vulnerable and Malicious Driver Reporting Center. Refer to this blog entry for information on how  drivers are submitted for analysis - [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/)
+
+The Reporting Center can scan and analyze Windows drivers built for x86 and x64 architectures. Vulnerable and malicious scanned drivers are flagged for analysis and investigation by Microsoft’s Vulnerable Driver team. After vulernable drivers are confirmed, an appropriate notification occurs, they are added to the vulnerable driver blocklist. For more information about that, see [Microsoft recommended driver block rules](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules). These rules are aplied by default to Hypervisor-protected code integrity (HVCI) enabled devices and Windows 10 in S mode. 
 
 ## Review secure coding resources
 

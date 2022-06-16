@@ -10,3 +10,5 @@
     href: windows-security-model.md
   - name: "Evaluate HVCI driver compatibility"
     href: use-device-guard-readiness-tool.md
+  - name: "Development security practices for Windows driver developers"
+    href: driver-security-dev-best-practices.md
