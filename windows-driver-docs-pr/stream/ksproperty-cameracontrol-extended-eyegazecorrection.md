@@ -69,7 +69,7 @@ The following table describes the flag capabilities.
 | **KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_STARE** | This is an optional capability. When specified together with KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_ON, the stare/teleprompter mode is enabled in the driver. |
 
 > [!NOTE]
-> From a SET perspective, the stare mode will be enabled only when both EYEGAZECORRECTION_STARE and EYEGAZECORRECTION_ON are set at the same time. EYEGAZECORRECTION_OFF needs to be exclusive to the other two bits.
+> From a SET perspective, the stare mode will be enabled only when both KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_STARE and KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_ON are set at the same time. KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_OFF needs to be exclusive to the other two bits.
 
 The table below contains the descriptions and requirements for the [KSCAMERA_EXTENDEDPROP_HEADER](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
