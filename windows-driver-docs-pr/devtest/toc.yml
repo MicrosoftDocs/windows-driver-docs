@@ -875,7 +875,7 @@
         items: 
         - name: "Static Driver Verifier Error Messages"
           href: static-driver-verifier-error-messages.md
-        - name: "The process cannot access the file &lt;Path&gt; because it is being used by another process"
+        - name: "The process cannot access the file <Path> because it is being used by another process"
           href: the-process-cannot-access-the-file---path---because-it-is-being-used-b.md
       - name: "Static Driver Verifier Diagnostics"
         href: static-driver-verifier-diagnostics.md
