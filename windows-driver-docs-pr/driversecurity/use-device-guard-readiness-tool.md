@@ -360,3 +360,7 @@ You can use the verifier command line /query option to display the current drive
 ```console
 verifier /query
 ```
+
+### See Also
+
+[Driver security checklist](driver-security-checklist.md)

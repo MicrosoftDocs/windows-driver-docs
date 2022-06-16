@@ -349,3 +349,7 @@ To expand your knowledge of software threats, review the available public databa
 -   Common Weakness Enumeration: <https://cwe.mitre.org/>
 -   Common Attack Pattern Enumeration and Classification: <https://capec.mitre.org/index.html>
 -   NIST maintains a site that describes how vulnerabilities are cataloged: <https://samate.nist.gov/BF/>
+
+### See Also
+
+[Driver security checklist](driver-security-checklist.md)
