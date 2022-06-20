@@ -1,7 +1,7 @@
 ---
 title: Run From Driver Store
-description: This page describes how to make use of 'run from driver store' concepts in a driver package.
-ms.date: 05/12/2022
+description: This page describes how to make use of 'run from Driver Store' concepts in a driver package.
+ms.date: 06/20/2022
 ---
 
 # Run From Driver Store
@@ -114,3 +114,145 @@ By default, a driver package cannot be removed from the system if it is still in
 ### Testing private binaries
 
 When developing a driver package, if there is a need to replace a particular executable file from the driver package with a private version instead of fully rebuilding and replacing the driver package on the system, then it is recommended that a kernel debugger is used along with the [**.kdfiles**](../debugger/-kdfiles--set-driver-replacement-map-.md) command.  Since the full path to the file in the Driver Store should not be hardcoded, it is recommended that in the .kdfiles mapping, the *OldDriver* file name is just the direct name of the file with no preceding path information.  To facilitate this (and other scenarios), names of files in driver packages should be as unique as possible so it does not match the name of a file from an unrelated driver package on the system.
+
+## Porting an INF to use run from Driver Store
+
+If you have an existing driver package with an INF that does not use run from Driver Store and are porting it to use run from Driver Store, the following examples show some common file usage in INFs and patterns on updating those files to be run from DriverStore.
+
+### Service binary
+
+If your INF adds a service and the binary is not run from Driver Store, then your INF may look like:
+
+```inf
+[DestinationDirs]
+ ; Copy the file to %windir%\system32\drivers
+ Example_CopyFiles = 12
+
+[ExampleDDInstall]
+CopyFiles = Example_CopyFiles
+
+[Example_CopyFiles]
+ExampleBinary.sys
+
+[ExampleDDInstall.Services]
+AddService = ExampleService,0x2,Example_Service_Inst
+
+[Example_Service_Inst]
+DisplayName   = %SvcDesc%
+ServiceType   = %SERVICE_KERNEL_DRIVER%
+StartType     = %SERVICE_DEMAND_START%
+ErrorControl  = %SERVICE_ERROR_NORMAL%
+; Point at the file in %windir%\system32\drivers
+ServiceBinary = %12%\ExampleBinary.sys
+```
+
+To move this file to be run from the Driver Store, you would need to update the DestinationDirs entry for where the file will be copied to and update the ServiceBinary directive referencing the location of this file.
+
+```inf
+[DestinationDirs]
+; Update the destination to DIRID 13
+Example_CopyFiles = 13
+
+[ExampleDDInstall]
+CopyFiles = Example_CopyFiles
+
+[Example_CopyFiles]
+ExampleBinary.sys
+
+[ExampleDDInstall.Services]
+AddService = ExampleService,0x2,Example_Service_Inst
+
+[Example_Service_Inst]
+DisplayName   = %SvcDesc%
+ServiceType   = %SERVICE_KERNEL_DRIVER%
+StartType     = %SERVICE_DEMAND_START%
+ErrorControl  = %SERVICE_ERROR_NORMAL%
+; Point at the run from Driver Store file using DIRID 13
+ServiceBinary = %13%\ExampleBinary.sys
+```
+
+### UMDF driver binary
+
+If your INF adds a UMDF driver and the binary is not run from Driver Store, then your INF may look like:
+
+```inf
+[DestinationDirs]
+; Copy the file to %windir%\system32\drivers\UMDF
+Example_CopyFiles = 12, UMDF
+
+[ExampleDDInstall]
+CopyFiles = Example_CopyFiles
+
+[Example_CopyFiles]
+ExampleUmdfDriver.dll
+
+[ExampleDDInstall.Wdf]
+UmdfService = ExampleUmdfDriver,Example_UMDF_Inst
+...
+
+[Example_UMDF_Inst]
+; Point at the file in %windir%\system32\drivers\UMDF
+ServiceBinary = %12%\UMDF\ExampleUmdfDriver.dll
+...
+```
+
+To move this file to be run from the Driver Store, you would need to update the DestinationDirs entry for where the file will be copied to and update the ServiceBinary directive referencing the location of this file.
+
+```inf
+[DestinationDirs]
+; Update the destination to DIRID 13
+Example_CopyFiles = 13
+
+[ExampleDDInstall]
+CopyFiles = Example_CopyFiles
+
+[Example_CopyFiles]
+ExampleUmdfDriver.dll
+
+[ExampleDDInstall.Wdf]
+UmdfService = ExampleUmdfDriver,Example_UMDF_Inst
+...
+
+[Example_UMDF_Inst]
+; Point at the run from Driver Store file using DIRID 13
+ServiceBinary = %13%\ExampleUmdfDriver.dll
+...
+```
+
+### Other files
+
+If your INF adds a file that may be loaded by other components and is not run from Driver Store, then your INF may look like the following. In this example, only the name of the file is written to the device's registry state. Components that read this registry value to determine what file to load would be depending on the file being in `%windir%\system32` or be depending on [LoadLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw)'s search order being able to find the file.
+
+```inf
+[DestinationDirs]
+; Copy the file to %windir%\system32
+Example_CopyFiles = 11
+
+[ExampleDDInstall]
+CopyFiles=Example_CopyFiles
+AddReg=Example_AddReg
+
+[Example_CopyFiles]
+ExampleFile.dll
+
+[Example_AddReg]
+HKR,,FileLocation,,"ExampleFile.dll"
+```
+
+To move this file to be run from the Driver Store, you would need to update the DestinationDirs entry for where the file will be copied to and update the location saved in the device's state. This requires components that read that registry value to be able to handle that registry value being the full path to a file instead of a file relative to `%windir%\system32`.
+
+```inf
+[DestinationDirs]
+Example_CopyFiles = 13 ; update the destination to DIRID 13
+
+[ExampleDDInstall]
+CopyFiles=Example_CopyFiles
+AddReg=Example_AddReg
+
+[Example_CopyFiles]
+ExampleFile.dll
+
+[Example_AddReg]
+; Point at the run from Driver Store file using DIRID 13
+HKR,,FileLocation,,"%13%\ExampleFile.dll"
+```
