@@ -10,7 +10,7 @@ api_location:
 - Ntifs.h
 api_type:
 - HeaderDef
-ms.date: 06/17/2022
+ms.date: 06/22/2022
 ---
 
 # FSCTL_LMR_QUERY_INFO control code
@@ -88,3 +88,5 @@ The size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter.
 |   |   |
 | - | - |
 | Header | *Ntifs.h* (include Ntifs.h) |
+| Minimum supported client | Windows 10 version 1809, and Windows 10 version 2004 and above versions |
+| Minimum supported server | Windows Server 2019 |
