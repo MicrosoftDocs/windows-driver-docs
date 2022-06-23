@@ -16,9 +16,9 @@ To discover the [device setup classes](./overview-of-device-setup-classes.md) th
 
 To safely discover the installed device setup classes, and to query and modify the properties of a setup class, follow these steps:
 
-1.  Use [**SetupDiBuildClassInfoList**](/windows/win32/api/setupapi/nf-setupapi-setupdibuildclassinfolist) or [**SetupDiBuildClassInfoListEx**](/windows/win32/api/setupapi/nf-setupapi-setupdibuildclassinfolistexa) to retrieve the set of device setup classes that are currently installed on the system.
+1.  Use [**SetupDiBuildClassInfoList**](/windows/win32/api/setupapi/nf-setupapi-setupdibuildclassinfolist) to retrieve the set of device setup classes that are currently installed on the system.
 
-2.  Use [**SetupDiGetClassDescription**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdescriptiona) or [**SetupDiGetClassDescriptionEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdescriptionexa) to retrieve the description of an installed setup class.
+2.  Use [**SetupDiGetClassDescription**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdescriptiona) to retrieve the description of an installed setup class.
 
 3.  Use [**SetupDiGetClassRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassregistrypropertya) to query the setup class properties and [**SetupDiSetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya) to set the setup class properties.
 
