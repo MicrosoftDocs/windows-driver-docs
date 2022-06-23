@@ -822,6 +822,8 @@
       href: fsctl-is-volume-dirty.md
     - name: "FSCTL_LMR_GET_LINK_TRACKING_INFORMATION"
       href: fsctl-lmr-get-link-tracking-information.md
+    - name: "FSCTL_LMR_QUERY_INFO"
+      href: fsctl-lmr-query-info.md
     - name: "FSCTL_MARK_AS_SYSTEM_HIVE"
       href: fsctl-mark-as-system-hive.md
     - name: "FSCTL_MARK_VOLUME_DIRTY"
