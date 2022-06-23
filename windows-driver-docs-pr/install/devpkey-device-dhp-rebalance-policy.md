@@ -73,22 +73,8 @@ You can access the DEVPKEY_Device_DHP_Rebalance_Policy property by calling [**CM
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows Server 2008 and later versions of Windows Server.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Devpkey.h (include Devpkey.h)</td>
-</tr>
-</tbody>
-</table>
+**Version**: Windows Server 2008 and later versions of Windows Server
+**Header**: Devpkey.h (include Devpkey.h)
 
 ## See also
 
