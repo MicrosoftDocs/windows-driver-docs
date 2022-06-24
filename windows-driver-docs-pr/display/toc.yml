@@ -26,6 +26,8 @@
     items:
     - name: "D3D12 video encoding"
       href: video-encoding-d3d12.md
+    - name: "IOMMU DMA remapping"
+      href: iommu-dma-remapping.md
   - name: "WDDM 2.4 features"
     items:
     - name: "IOMMU-based GPU isolation"

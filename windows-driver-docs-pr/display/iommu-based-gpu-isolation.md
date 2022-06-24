@@ -1,7 +1,7 @@
 ---
 title: IOMMU-based GPU isolation
 description: IOMMU-based GPU isolation allows *Dxgkrnl* to restrict access to system memory from the GPU by making use of IOMMU hardware.
-ms.date: 06/03/2022
+ms.date: 06/24/2022
 ---
 
 # IOMMU-based GPU isolation
