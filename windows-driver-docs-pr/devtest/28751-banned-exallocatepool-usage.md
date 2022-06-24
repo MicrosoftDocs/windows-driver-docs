@@ -12,7 +12,7 @@ f1_keywords:
 **warning C28751: Banned API Usage ExAllocatePool**\
 _Banned usage of ExAllocatePool and its variants: ExAllocatePool is a banned API for improved error handling purposes._ 
 
-This warning indicates that a function is being used that has been banned and has a more robust or secure replacement. This specific warning indicates the use of ExAllocatePool or one of its variants, which are deprecated. See [this article](Transition to ExAllocatePool2 API - OSGWiki ) for further information. A list of all banned functions covered by this error and recommended replacements can be found below: 
+This warning indicates that a function is being used that has been banned and has a more robust or secure replacement. This specific warning indicates the use of ExAllocatePool or one of its variants, which are deprecated. See [this article](/windows-hardware/drivers/kernel/updating-deprecated-exallocatepool-calls) for further information. A list of all banned functions covered by this error and recommended replacements can be found below: 
 
 ## Banned Functions 
 | banned API | replacement(s) |
