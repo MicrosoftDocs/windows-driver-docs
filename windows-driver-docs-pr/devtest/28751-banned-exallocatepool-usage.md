@@ -15,7 +15,7 @@ _Banned usage of ExAllocatePool and its variants: ExAllocatePool is a banned API
 This warning indicates that a function is being used that has been banned and has a more robust or secure replacement. This specific warning indicates the use of ExAllocatePool or one of its variants, which are deprecated. See [this article](/windows-hardware/drivers/kernel/updating-deprecated-exallocatepool-calls) for further information. A list of all banned functions covered by this error and recommended replacements can be found below: 
 
 ## Banned Functions 
-| banned API | replacement(s) |
+| Banned API | Replacement Function(s) |
 | -----------|----------------|
 |```ExAllocatePool```| ```ExAllocatePool2``` |
 |```ExAllocatePoolWithTag```| ```ExAllocatePool2```|
