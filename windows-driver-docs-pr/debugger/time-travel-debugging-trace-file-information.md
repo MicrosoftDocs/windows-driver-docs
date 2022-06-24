@@ -95,7 +95,7 @@ TTD does not set a maximum size of trace files to allow for complex long running
 
 ### Trace file size factors
 
-It is not possible to provide and exact estimate of the the trace file size but there are a few rules of thumb to help you understand TTD file sizes.
+It is not possible to provide and exact estimate of the trace file size but there are a few rules of thumb to help you understand TTD file sizes.
 
 The following factors can affect the size of the trace file:
 
