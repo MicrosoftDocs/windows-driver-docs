@@ -1,6 +1,6 @@
 ---
 title: DEVPKEY_Device_SafeRemovalRequired
-description: DEVPKEY_Device_SafeRemovalRequired
+description: The DEVPKEY_Device_SafeRemovalRequired device property represents a Boolean value that indicates whether a hot-plug device instance requires safe removal from the computer.
 keywords: ["DEVPKEY_Device_SafeRemovalRequired Device and Driver Installation"]
 topic_type:
 - apiref
@@ -10,46 +10,21 @@ api_location:
 - Devpkey.h
 api_type:
 - HeaderDef
-ms.date: 10/17/2018
+ms.date: 06/24/2022
 ---
 
 # DEVPKEY_Device_SafeRemovalRequired
 
-
 The DEVPKEY_Device_SafeRemovalRequired device property represents a Boolean value that indicates whether a hot-plug device instance requires safe removal from the computer.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr>
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Property key</strong></p></td>
-<td align="left"><p>DEVPKEY_Device_SafeRemovalRequired</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p><a href="devprop-type-boolean.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_BOOLEAN&lt;/strong&gt;](devprop-type-boolean.md)"><strong>DEVPROP_TYPE_BOOLEAN</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Property access</strong></p></td>
-<td align="left"><p>Read-only access by installation applications and installers</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Localized?</strong></p></td>
-<td align="left"><p>No</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Value |
+|--|--|
+| Property key | DEVPKEY_Device_SafeRemovalRequired |
+| Property-data-type identifier | [**DEVPROP_TYPE_BOOLEAN**](devprop-type-boolean.md) |
+| Property access | Read-only access by installation applications and installers |
+| Localized? | No |
 
- 
+  [**DEVPROP_TYPE_BOOLEAN**]: devprop-type-boolean.md
 
 ## Remarks
 
@@ -57,39 +32,33 @@ If this property for a hot-plug device instance has a value of DEVPROP_TRUE, the
 
 **Note**   If the device instance is a removable media device, such as an optical disk drive, the device instance must have media inserted and must have the DEVPKEY_Device_SafeRemovalRequired property value of DEVPROP_TRUE. If both are true, the device instance is displayed in the **Safely Remove Hardware** program.
 
- 
-
 Windows Plug and Play (PnP) determines that the hot-plug device instance requires safe removal from the system if the following are true:
 
--   The device instance is currently connected to the system.
+- The device instance is currently connected to the system.
 
--   The device instance is either started or can be ejected automatically by the system.
+- The device instance is either started or can be ejected automatically by the system.
 
--   The CM_DEVCAP_SURPRISEREMOVALOK device capability bit for the device instance is not set. For more information about device capabilities, see [**SetupDiGetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya).
+- The CM_DEVCAP_SURPRISEREMOVALOK device capability bit for the device instance is not set. For more information about device capabilities, see [**SetupDiGetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya).
 
--   The device instance does not have the [**DEVPKEY_Device_SafeRemovalRequiredOverride**](devpkey-device-saferemovalrequiredoverride.md) device property set to DEVPROP_FALSE.
+- The device instance does not have the [**DEVPKEY_Device_SafeRemovalRequiredOverride**](devpkey-device-saferemovalrequiredoverride.md) device property set to DEVPROP_FALSE.
 
-    **Note**   PnP unconditionally determines that the hot-plug device requires safe removal if the DEVPKEY_Device_SafeRemovalRequiredOverride device property is set to DEVPROP_TRUE.
+> [!NOTE]
+> PnP unconditionally determines that the hot-plug device requires safe removal if the DEVPKEY_Device_SafeRemovalRequiredOverride device property is set to DEVPROP_TRUE.
 
-     
-
--   The device instance is either directly removable from its parent device instance or has a removable ancestor in its device tree.
+- The device instance is either directly removable from its parent device instance or has a removable ancestor in its device tree.
 
 You can call [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_SafeRemovalRequired.
 
 ## Requirements
 
 **Version**: Windows 7 and later versions of Windows
+
 **Header**: Devpkey.h (include Devpkey.h)
 
 ## See also
-
 
 [**DEVPKEY_Device_SafeRemovalRequiredOverride**](devpkey-device-saferemovalrequiredoverride.md)
 
 [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
 [**SetupDiGetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya)
-
- 
-

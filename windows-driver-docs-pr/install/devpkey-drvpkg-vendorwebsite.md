@@ -1,6 +1,6 @@
 ---
 title: DEVPKEY_DrvPkg_VendorWebSite
-description: DEVPKEY_DrvPkg_VendorWebSite
+description: The DEVPKEY_DrvPkg_VendorWebSite device property represents a vendor URL for a device instance.
 keywords: ["DEVPKEY_DrvPkg_VendorWebSite Device and Driver Installation"]
 topic_type:
 - apiref
@@ -10,19 +10,19 @@ api_location:
 - Devpkey.h
 api_type:
 - HeaderDef
-ms.date: 10/17/2018
+ms.date: 06/24/2022
 ---
 
 # DEVPKEY_DrvPkg_VendorWebSite
 
 The DEVPKEY_DrvPkg_VendorWebSite device property represents a vendor URL for a device instance.
 
-|Attribute|Value|
-|----|----|
-|**Property key**|DEVPKEY_DrvPkg_VendorWebSite|
-|**Property-data-type identifier**|[DEVPROP_TYPE_STRING](devprop-type-string.md)">|
-|**Property access**|Read-only access by installation applications and installers|
-|**Localized?**|Yes|
+| Attribute | Value |
+|--|--|
+| Property key | DEVPKEY_DrvPkg_VendorWebSite |
+| Property-data-type identifier | [DEVPROP_TYPE_STRING](devprop-type-string.md) |
+| Property access | Read-only access by installation applications and installers |
+| Localized? | Yes |
 
 ## Remarks
 
@@ -49,10 +49,9 @@ DeviceVendorWebsite,,,,"http://www.microsoft.com/redirect?prod=DSC530&rev=34"
 
 ## Requirements
 
-|Requirement|Description|
-|----|----|
-|Version|Available in Windows Vista and later versions of Windows.|
-|Header|Devpkey.h (include Devpkey.h)|
+**Version**: Windows Vista and later versions of Windows
+
+**Header**: Devpkey.h (include Devpkey.h)
 
 ## See also
 

@@ -1,6 +1,6 @@
 ---
 title: DEVPKEY_DrvPkg_Icon
-description: DEVPKEY_DrvPkg_Icon
+description: The DEVPKEY_DrvPkg_Icon device property represents a list of device icons that Windows uses to visually represent a device instance.
 keywords: ["DEVPKEY_DrvPkg_Icon Device and Driver Installation"]
 topic_type:
 - apiref
@@ -10,40 +10,19 @@ api_location:
 - Devpkey.h
 api_type:
 - HeaderDef
-ms.date: 10/17/2018
+ms.date: 06/24/2022
 ---
 
 # DEVPKEY_DrvPkg_Icon
 
-
 The DEVPKEY_DrvPkg_Icon device property represents a list of device icons that Windows uses to visually represent a device instance.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Property key</strong></p></td>
-<td align="left"><p>DEVPKEY_DrvPkg_Icon</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p><a href="devprop-type-string-list.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_STRING_LIST&lt;/strong&gt;](devprop-type-string-list.md)"><strong>DEVPROP_TYPE_STRING_LIST</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Property access</strong></p></td>
-<td align="left"><p>Read-only access by installation applications and installers</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Localized?</strong></p></td>
-<td align="left"><p>Yes</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Attribute | Value |
+|--|--|
+| Property key | DEVPKEY_DrvPkg_Icon |
+| Property-data-type identifier | [**DEVPROP_TYPE_STRING_LIST**](devprop-type-string-list.md) |
+| Property access | Read-only access by installation applications and installers |
+| Localized | Yes |
 
 ## Remarks
 
@@ -53,9 +32,9 @@ The first icon in the list is used as the default. Additional icons can be suppl
 
 The icon list is a NULL-separated list of icon specifiers. An icon specifier is either a path of an icon file (\*.ico) or an icon-resource specifier, as follows:
 
--   The format of the path to an icon file is *DirectoryPath\\filename.ico.*
+- The format of the path to an icon file is *DirectoryPath\\filename.ico.*
 
--   An icon-resource specifier has the following entries:
+- An icon-resource specifier has the following entries:
 
     ```cpp
     @executable-file-path,resource-identifier
@@ -67,11 +46,11 @@ For example, the icon specifier"@shell32.dll,-30" represents the executable file
 
 A resource identifier must be an integer value, which corresponds to a resource within the executable file, as follows:
 
--   If the supplied identifier is negative, Windows uses the resource in the executable file whose identifier is equal to the absolute value of the supplied identifier.
+- If the supplied identifier is negative, Windows uses the resource in the executable file whose identifier is equal to the absolute value of the supplied identifier.
 
--   If the supplied identifier is zero, Windows uses the resource in the executable file whose identifier has the lowest value in the execuable file.
+- If the supplied identifier is zero, Windows uses the resource in the executable file whose identifier has the lowest value in the executable file.
 
--   If the supplied identifier is positive, for example, the value *n*, Windows uses the resource in the executable file whose identifier is the n+1 lowest value in the executable file. For example, if the value of *n* is 1, Windows uses the resource whose identifier has the second lowest value in the executable file.
+- If the supplied identifier is positive, for example, the value *n*, Windows uses the resource in the executable file whose identifier is the n+1 lowest value in the executable file. For example, if the value of *n* is 1, Windows uses the resource whose identifier has the second lowest value in the executable file.
 
 You can set the value of DEVPKEY_DrvPkg_Icon by an [**INF AddProperty directive**](./inf-addproperty-directive.md) that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs the device. You can retrieve the value of DEVPKEY_DrvPkg_Icon by calling [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
@@ -91,16 +70,13 @@ DeviceIcon,,,,"SomeResource.dll,-2","SomeIcon.icon"
 ## Requirements
 
 **Version**: Windows Vista and later versions of Windows
+
 **Header**: Devpkey.h (include Devpkey.h)
 
 ## See also
-
 
 [**INF AddProperty Directive**](./inf-addproperty-directive.md)
 
 [**INF *DDInstall* Section**](./inf-ddinstall-section.md)
 
 [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-
- 
-
