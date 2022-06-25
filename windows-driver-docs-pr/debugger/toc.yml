@@ -2532,6 +2532,8 @@
       href: bug-check-0x122---whea-internal-error.md
     - name: "Bug Check 0x123: CRYPTO_SELF_TEST_FAILURE"
       href: bug-check-0x123--crypto-self-test-failure-.md
+    - name: "Bug Check 0x124:  WHEA_UNCORRECTABLE_ERROR"
+      href: bug-check-0x124---whea-uncorrectable-error.md
     - name: "Bug Check 0x125: NMR_INVALID_STATE"
       href: bug-check-0x125--nmr-invalid-state.md
     - name: "Bug Check 0x126: NETIO_INVALID_POOL_CALLER"
@@ -2634,6 +2636,8 @@
       href: bug-check-0x162--kernel-auto-boost-invalid-lock-release.md
     - name: "Bug Check 0x163: WORKER_THREAD_TEST_CONDITION"
       href: bug-check-0x162--worker-thread-test-condition.md
+    - name: "Bug Check 0x164: WIN32K_CRITICAL_FAILURE"
+      href: bug-check-0x164--win32k-critical-failure.md      
     - name: "Bug Check 0x16C: INVALID_RUNDOWN_PROTECTION_FLAGS"
       href: bug-check-0x16c--invalid-rundown-protection-flags.md
     - name: "Bug Check 0x16D: INVALID_SLOT_ALLOCATOR_FLAGS"
@@ -2759,6 +2763,8 @@
       href: bug-check-0x141---video-engine-timeout-detected.md
     - name: "Bug Check 0x142: VIDEO_TDR_APPLICATION_BLOCKED"
       href: bug-check-0x142--video-tdr-application-blocked.md
+    - name: "Bug Check 0x144: BUGCODE_USB3_DRIVER"
+      href: bug-check-0x144--bugcode-usb3-driver.md      
     - name: "Bug Check 0x156: WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP"
       href: bug-check-0x156--winsock-detected-hung-closesocket-livedump.md
     - name: "Bug Check 0x15C: PDC_WATCHDOG_TIMEOUT_LIVEDUMP"
