@@ -16,7 +16,7 @@ Using one of these APIs indicates that you are testing to see if memory is mappe
 There are no 1:1 replacement APIs for this rule. Instead, we recommend reevaluating your code to avoid the need to utilize these functions. 
 
 ## Banned Functions
-| banned API |
+| Banned API |
 | -----------|
 |```IsBadCodePtr```|
 |```IsBadHugeReadPtr```|
