@@ -9,7 +9,7 @@ f1_keywords:
 # C28719
 
 
-**warning C28719: Banned API Usage**\
+**Warning C28719: Banned API Usage**\
 _Banned API Usage:  *function name* is a Banned API as listed in dontuse.h for security purposes._
 
 This warning indicates that a function is being used that has been banned and has a more robust or secure replacement.
