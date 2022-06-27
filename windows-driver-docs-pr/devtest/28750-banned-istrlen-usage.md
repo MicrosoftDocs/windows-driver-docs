@@ -10,7 +10,7 @@ f1_keywords:
 
 
 **Warning C28750: Banned API Usage lstrlen**\
-_Banned usage of lstrlen and its variants: *function_name* is a banned API for improved error handling purposes._
+Example output: ```Banned usage of lstrlen and its variants: *function_name* is a banned API for improved error handling purposes.```
 
 This warning indicates that a function is being used that has been banned and has a more robust or secure replacement. This specific error indicates usage of lstrlen or a variant thereof. The lstrlen function and its variants are banned because they fail to transmit exceptions. This can cause error conditions to occur much later, potentially on a different thread. This makes the error conditions harder to diagnose. In addition, equivalent substitute functions can be optimized by the compiler and avoid the performance overhead of exception handlers (_try and _except blocks).  
 
@@ -23,7 +23,7 @@ A list of all banned functions covered by this error and recommended replacement
 ## Example
 
 The following code generates this warning: 
-```
+```cpp
 int example_func(char* in)
 { 
     int size = lstrlen(in);
@@ -31,7 +31,7 @@ int example_func(char* in)
 } 
 ```
 This is due to the use of the unsafe function lstrlen. To fix this issue, we can use the strlen as the replacement, making sure to check if the pointer is NULL: 
-```
+```cpp
 int example_func(char* in) 
 { 
     if (in != NULL)
