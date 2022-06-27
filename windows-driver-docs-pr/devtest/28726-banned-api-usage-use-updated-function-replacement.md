@@ -16,7 +16,7 @@ This warning indicates that a function is being used that has been banned and ha
  ## Example 
 
 The following code generates this warning: 
-```
+```cpp
 void example_func() 
 { 
     char user_input[10]; 
@@ -24,7 +24,7 @@ void example_func()
 } 
 ```
 This is due to the use of the unsafe function scanf. scanf does place any limit on the size of the data copied to the buffer. To fix this issue, we can use scanf_s, the safe replacement to this function. scanf_s requires the developer to specify how many bytes are intended to be copied. scanf_s will ensure only that many bytes are copied. For example, the following code is safe: 
-```
+```cpp
 void example_func() 
 { 
     char user_input[10]; 
