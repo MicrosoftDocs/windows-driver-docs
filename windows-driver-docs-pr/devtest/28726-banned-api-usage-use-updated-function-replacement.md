@@ -33,7 +33,7 @@ void example_func()
 ```
 ## Banned Functions 
 _NOTE: This list is actively being updated and improved_
-| banned API | replacement(s) | rationale / notes |
+| Banned API | Replacement(s) | Rationale / Notes |
 | -----------|----------------|--------------|
 |```_itoa```| ```_itoa_s``` | Does not NULL-terminate |
 |```_i64toa```| ```_i64toa_s``` | Does not NULL-terminate |
