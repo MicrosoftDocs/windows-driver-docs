@@ -18,7 +18,7 @@ A list of all banned functions covered by this error, why they are banned, and r
 ## Example 
 
 The following code generates this warning: 
-```
+```cpp
 void example_func(PSTR src) 
 { 
     char dst[100]; 
@@ -30,7 +30,7 @@ strcpy does not check if the destination buffer is large enough to fit the sourc
 To fix this issue, we can use strcpy_s, C++11’s safe replacement to this function.
 strcpy_s has a third parameter (the size of the destination buffer) to ensure only that many bytes are copied.
 For example, the following code is safe: 
-```
+```cpp
 void example_func(PSTR src) 
 { 
     char dst[100]; 
@@ -39,7 +39,7 @@ void example_func(PSTR src)
 ```
 ## Banned Functions  
 _NOTE: This list is actively being updated and improved_
- | banned API | replacement(s) | rationale / notes |
+ | Banned API | Replacement(s) | Rationale / Notes |
 | -----------|----------------|--------------|
 |```_fstrcat```| |
 |```_fstrcpy```| |
