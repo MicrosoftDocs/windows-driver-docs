@@ -99,6 +99,9 @@ The table below contains the descriptions and requirements for the **KSCAMERA\_E
 </tbody>
 </table>
 
+## Adjustable Output Window Considerations
+The 3A ROI coordinates sent to the camera are sent relative to the current output window of the camera. If the field of view has been modified due to use of a control such as [Zoom, Pan or Tilt](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/propsetid-vidcap-cameracontrol) or [Digital Window](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/digital-window-overview), the camera is responsible for mapping the provided coordinates back to the sensor's full field of view, taking the current output window into consideration to ensure that the camera's 3A algorithm is targeting the correct spot.
+
 ## Requirements
 
 <table>

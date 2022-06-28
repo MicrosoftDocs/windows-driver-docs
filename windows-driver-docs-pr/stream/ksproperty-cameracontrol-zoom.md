@@ -34,6 +34,8 @@ The **Value** member of the **KSPROPERTY_CAMERACONTROL_S** structure specifies t
 
 Every video capture minidriver that supports this property must define a range and default value for this property. The range for the device must be 10 through 600. The default value must be 10.
 
+For cameras using the [Platform DMFT](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/uvc-camera-implementation-guide#platform-device-mft) for face-based 3A, the Zoom control impacts the output window of the camera. The face coordinates produced by the Platform DMFT will be relative to this modified output window, so the camera is responsible for remapping the ROI coordinates to the camera's full field of view when the current field of view is modified by the Zoom control.
+
 ## Requirements
 
 **Header:** ksmedia.h (include Ksmedia.h)
