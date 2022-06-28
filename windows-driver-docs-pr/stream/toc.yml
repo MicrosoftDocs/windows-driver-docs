@@ -1,14 +1,11 @@
 - name: "Streaming media devices design guide"
   href: index.md
-- name: "Camera privacy controls"
+- name: "Camera privacy controls (shutters and kill switches)"
 # Auto-expanded node
   items: 
-  - name: "Camera privacy controls"
+  - name: "Camera privacy shutters and kill switches"
     href: camera-privacy-controls.md
-- name: "Privacy shutter notification"
-# Auto-expanded node
-  items: 
-  - name: "Privacy shutter notification"
+  - name: "Privacy shutter/switch notification"
     href: privacy-shutter-notification.md
 - name: "Background segmentation portrait mode and eye gaze stare mode driver sample"
 # Auto-expanded node

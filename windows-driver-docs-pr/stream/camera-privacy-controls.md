@@ -1,10 +1,10 @@
 ---
-title: Camera privacy controls
+title: Camera privacy shutters and kill switches
 description: Provides device design guidance for privacy shutters and kill switches, considerations for shutter state sensing, and how shutters are expected to interact with existing HLK requirements for indicator LEDs.
 ms.date: 03/18/2022
 ---
 
-# Camera privacy controls
+# Camera privacy shutters and kill switches
 
 This topic provides device design guidance for privacy shutters or kill switches, considerations for shutter state sensing, and how shutters are expected to interact with existing HLK requirements for indicator LEDs.
 
@@ -224,7 +224,7 @@ HLK requires that the indicator LED be ON when the ISP is capturing sensor data.
 
 The state of the kill switch should be reported through CT_PRIVACY_CONTROL (if originating from a UVC device), or KSPROPERTY_CAMERACONTROL_PRIVACY (if originating from an AVStream or DMFT driver). The state of the Camera Kill Switch should be reported whenever the ISP is out of D3.
 
-See [Privacy shutter notification](privacy-shutter-notification.md) for more details.
+See [Privacy shutter/switch notification](privacy-shutter-notification.md) for more details.
 
 ![kill switch state reporting](images/camera-privacy-controls-10.png)
 

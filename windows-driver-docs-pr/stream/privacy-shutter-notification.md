@@ -1,32 +1,43 @@
 ---
-title: Privacy shutter notification
-description: Provides guidance for OEMs and ODMs that are adding a mechanism to detect the state of the physical camera privacy shutter.
+title: Privacy shutter/switch notification
+description: Provides guidance for OEMs and ODMs that are adding a mechanism to detect the state of the physical camera privacy shutter or kill switch.
 ms.date: 06/24/2021
 ---
 
-# Privacy shutter notification
+# Privacy shutter/switch notification
 
-A physical shutter to block an integrated camera and provide a better privacy experience for end users is now a common requirement for OEM and IHV devices. These are often physical covers over the lens that do not prevent cameras from being accessed via existing camera APIs, but will cause the image or video stream to be black or dark. This raises potential issues where applications that are accessing the camera are not usable but are unaware of this. End users can also be unaware that their camera device is blocked by a shutter and may be confused about why their camera is not working.
+Some camera manufacturers may wish to include physical shutters or kill switches that can block the camera using a physical control unable to be overridden by software. These features are not encouraged due to the risk of inadvertent activation and resulting customer confusion, but if implemented, they must follow the guidance described in [Camera privacy shutters and kill switches](camera-privacy-controls.md), including to report the state of the shutter/switch. 
 
-To address these concerns, this topic Provides guidance for OEMs and ODMs that will be adding a mechanism to detect the state of the physical camera privacy shutter. This topic also describes the controls and structures that camera driver developers will use to publish the privacy shutter state to the OS.
+When a shutter is closed or a kill switch is active, the camera continues to be fully functional to Windows and applications using existing camera APIs, but the image or video stream will be black or dark (or replaced with a static image, such as a picture of the device with an arrow pointing to the location of the physical control). This raises potential issues where applications that are accessing the camera are not aware that the camera is occluded, and end users who unintentionally activated the physical control may be confused about why their camera is not working as expected.
 
-In addition to the privacy shutter feature, the OS implements camera occlusion detection where a front faced camera (FFC) is occluded by the device lid when the [lid switch close action](/windows-hardware/customize/power-settings/power-button-and-lid-settings-lid-switch-close-action) is set to "Do Nothing", for example, a computer will not go to sleep or power off when the lid is closed. An example scenario could be a docked laptop with external monitors in use while the laptop's lid is closed. There may be some device form factors where this behavior is not wanted, therefore, a mechanism to opt-out of device lid occlusion detection is defined below.
+To address these concerns, cameras implementing shutters or kill switches must implement a mechanism to detect the state of the shutter/switch and report it to the operating system. This topic provides guidance for OEMs and ODMs that will be implementing this reporting mechanism, and also describes the controls and structures that camera driver developers will use to publish the shutter/switch state to the OS.
+
+In addition to the privacy shutter/switch notification feature, the OS implements camera occlusion detection where a front faced camera (FFC) is occluded by the device lid when the [lid switch close action](/windows-hardware/customize/power-settings/power-button-and-lid-settings-lid-switch-close-action) is set to "Do Nothing", for example, a computer will not go to sleep or power off when the lid is closed. An example scenario could be a docked laptop with external monitors in use while the laptop's lid is closed. There may be some device form factors where this behavior is not wanted, therefore, a mechanism to opt-out of device lid occlusion detection is defined below.
 
 ## Architectural overview
 
-The [**KSPROPERTY_CAMERACONTROL_PRIVACY**](./ksproperty-cameracontrol-privacy.md) control is used when the OS is querying the current state from a camera driver. It should only be used as a Get property. Driver developers should not support the **KSPROPERTY_CAMERACONTROL_PRIVACY** control Set property in their drivers.
+The [**KSPROPERTY_CAMERACONTROL_PRIVACY**](./ksproperty-cameracontrol-privacy.md) control is used when the OS is querying the current state from a camera driver. It should only be used as a Get property. Driver developers must not support the **KSPROPERTY_CAMERACONTROL_PRIVACY** control Set property in their drivers.
+
+> [!NOTE]
+> Cameras implementing privacy shutters or kill switches must conform to the requirements described in [Camera privacy shutters and kill switches](camera-privacy-controls.md).
 
 In the USB Video Class (UVC) driver, the **KSPROPERTY_CAMERACONTROL_PRIVACY** control is mapped to the **CT_PRIVACY_CONTROL** property defined in the [UVC v1.5 Class Specification](https://www.usb.org/sites/default/files/USB_Video_Class_1_5.zip).
 
 ![diagram illustrating the privacy shutter notification architecture](images/privacy-shutter-notification.png)
 
-In addition to the use of the existing **KSPROPERTY** control, **KSPROPERTY_CAMERACONTROL_PRIVACY**, a new **KSEVENT** calling flow is introduced so the camera driver can signal when the camera's privacy shutter state is changed if there are clients registering for that **KSEVENT**.
+In addition to the use of the existing **KSPROPERTY** control, **KSPROPERTY_CAMERACONTROL_PRIVACY**, a new **KSEVENT** calling flow is introduced so the camera driver can signal when the camera's privacy shutter/switch state is changed if there are clients registering for that **KSEVENT**.
 
 The **KSEVENT** is issued by using the same Set GUID and Id as the **KSPROPERTY** is using.
 
-To clarify what is shown in the diagram above, the OS is expecting the AVS driver to implement mechanism, if the driver developer chooses to support this feature, to get and listen state changes that the shutter sensor is generating. The OS queries the state via the **KSPROPERTY** get method and issue a waiting **KSEVENT** that the driver will signal when the shutter state is changed. The shutter state change should not prevent the camera from functioning, for example, to cause an error situation.
+To clarify what is shown in the diagram above, the OS is expecting the AVS driver to implement mechanism, if the driver developer chooses to support this feature, to get and listen state changes that the shutter sensor is generating. The OS queries the state via the **KSPROPERTY** get method and issue a waiting **KSEVENT** that the driver will signal when the shutter state is changed. The shutter/switch state change must not prevent the camera from functioning, for example, to cause an error situation.
 
 **NOTE:** If the AVS driver supports this feature but the underlying hardware does not, the AVS driver shall return not supported error when the OS issues the **KSEVENT** registration.
+
+## Sensing and Reporting methods
+
+Some cameras sense shutter state using a pixel analysis algorithm running in the Image Signal Processor (ISP) firmware. This imposes a limitation on those cameras that the camera must be actively streaming to sense and report the shutter state. See [Shutter state sensing and reporting](camera-privacy-controls.md#shutter-state-sensing-and-reporting) for more details about when and how the camera must report its shutter/switch state.
+
+Similarly, application developers utilizing the camera occlusion signal must not utilize the reported shutter state unless the camera is actively streaming. See [CameraOcclusionInfo Class](/uwp/api/windows.media.devices.cameraocclusioninfo?view=winrt-22000&preserve-view=true) for more details.
 
 ## KSPROPERTY
 
