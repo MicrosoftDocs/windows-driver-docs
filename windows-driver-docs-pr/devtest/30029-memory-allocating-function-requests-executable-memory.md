@@ -9,7 +9,7 @@ f1_keywords:
 # C30029
 
 
-Warning C30029: Banned Mem Allocation NoType\
+**Warning C30029: Banned Mem Allocation NoType**\
 Example output: ```Warning: Calling a memory allocating function which requests executable memory```
 
 This warning indicates that a function is being used that has been banned and has a more robust or secure replacement. This specific error indicates the use of an API that allocates only executable nonpaged pool. This should only be used if executable memory is required. See [this article](/en-us/windows-hardware/drivers/kernel/no-execute-nonpaged-pool) for more information. There are no parameters you can supply that will change this behavior. The only way to fix this issue is to use an alternative function that allows for allocation of non-executable nonpaged pool memory. A list of all banned functions covered by this error and the recommended replacements can be found after the following example: 
