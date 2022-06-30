@@ -339,6 +339,9 @@ HKR,,EnablePlatformDmft,0x00010001,0x00000001
 
 In Windows 10, version 1703, if a device opts in to use PDMFT then all features that are supported by the PDMFT are enabled (based on the device capabilities). Granular configuration of PDMFT features is not supported.
 
+> [!NOTE]
+> Face-based ROI coordinates are calculated relative to the field of view of the image transmitted into the PDMFT. If the field of view has been modified due to use of a control such as [Zoom, Pan or Tilt](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/propsetid-vidcap-cameracontrol) or [Digital Window](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/digital-window-overview), the camera is responsible for mapping the provided coordinates back to the sensor's full field of view, considering the current zoom/pan window.
+
 ## Face Auth Profile via MS OS Descriptors
 
 Windows 10 RS5 now enforces a Face Auth Profile V2 requirement for any camera with Windows Hello support. For MIPI based systems with custom camera driver stack, this support can be published either via an INF (or an Extension INF) or through a user mode plug in (Device MFT).
