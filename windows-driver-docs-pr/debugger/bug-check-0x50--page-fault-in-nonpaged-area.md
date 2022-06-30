@@ -170,7 +170,7 @@ ffffffff`00000100  ?? ?? ?? ?? ?? ?? ?? ??-?? ?? ?? ?? ?? ?? ?? ??  ????????????
 ```
 In this case doesn't look like there is data in this area of memory in parameter 1, which is the area of memory that was attempting to be read.
 
-Use the [!address](-address.md) command to look at parameter 3 which is the address of the the instruction which referenced the bad memory.
+Use the [!address](-address.md) command to look at parameter 3 which is the address of the instruction which referenced the bad memory.
 
 ```dbgcmd
 2: kd> !address fffff80240d322f9

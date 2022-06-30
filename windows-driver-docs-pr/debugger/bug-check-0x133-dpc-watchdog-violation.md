@@ -167,7 +167,7 @@ Cast the address of the nt!DPC_WATCHDOG_GLOBAL_TRIAGE_BLOCK to display informati
    +0x00c DpcWatchdogProfileLength : 0x8200
 ```
 
-Use the [!dpcs](-dpcs.md) command to display the the queued DPCs.
+Use the [!dpcs](-dpcs.md) command to display the queued DPCs.
 
 ```dbgcmd
 3: kd> !dpcs

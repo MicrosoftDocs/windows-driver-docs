@@ -1,7 +1,7 @@
 ---
 title: Registry Entries for StorPort Miniport Drivers
 description: StorPort defines a set of registry entries to configure the behavior of StorPort and miniport operations.
-ms.date: 10/27/2021
+ms.date: 06/24/2022
 ---
 
 # Registry Entries for StorPort Miniport Drivers
@@ -165,7 +165,9 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 * Value:
   * Default: 250
   * Units: milliseconds
-* Description: When the miniport reports device-busy by setting **SRB_STATUS_BUSY** in the **SrbStatus** of a **SRB**, StorPort pauses the unit queue and waits for the specified amount time before starting sending I/O requests again.
+* Description: When the miniport reports device-busy, StorPort pauses the unit queue and waits for the specified amount time before starting to send I/O requests again. To report device-busy, the miniport must do the following:
+  * Set **SRB_STATUS_BUSY** in the **SrbStatus** of a **SRB**
+  * Set the **SRB**’s **ScsiStatus** member to either *not* equal **SCSISTAT_QUEUE_FULL** or to equal **SCSISTAT_BUSY**.
 * Applies: Starting with Windows Server 2003.
 
 ### Name: BusyRetryCount

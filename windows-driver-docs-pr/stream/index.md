@@ -25,9 +25,9 @@ Use the guidance in this section to design and implement drivers for devices tha
 
 ## New and updated content for Windows 11
 
-[Camera privacy controls](camera-privacy-controls.md)
+[Camera privacy shutters and kill switches](camera-privacy-controls.md)
 
-[Privacy shutter notification](privacy-shutter-notification.md)
+[Privacy shutter/switch notification](privacy-shutter-notification.md)
 
 [Digital Window overview](digital-window-overview.md)
 

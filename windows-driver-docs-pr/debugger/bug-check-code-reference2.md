@@ -306,14 +306,15 @@ The following table provides links to bug check codes.
 | 0x0000011B | [**DRIVER\_RETURNED\_HOLDING\_CANCEL\_LOCK**](bug-check-0x11b---driver-returned-holding-cancel-lock.md)                                           |
 | 0x0000011C | [**ATTEMPTED\_WRITE\_TO\_CM\_PROTECTED\_STORAGE**](bug-check-0x11c--attempted-write-to-cm-protected-storage.md)                                   |
 | 0x0000011D | [**EVENT\_TRACING\_FATAL\_ERROR**](bug-check-0x11d---event-tracing-fatal-error.md)                                                                |
-| 0x0000011E | [**TOO\_MANY\_RECURSIVE\_FAULTS**](bug-check-0x11e--too-many-recursive-faults.md)                                                                |
-| 0x0000011F | [**INVALID\_DRIVER\_HANDLE**](bug-check-0x11f--invalid-driver-handle.md)                                                                         |
-| 0x00000120 | [**BITLOCKER\_FATAL\_ERROR**](bug-check-0x120--bitlocker-fatal-error-.md)                                                                        |
+| 0x0000011E | [**TOO\_MANY\_RECURSIVE\_FAULTS**](bug-check-0x11e--too-many-recursive-faults.md)                                                                 |
+| 0x0000011F | [**INVALID\_DRIVER\_HANDLE**](bug-check-0x11f--invalid-driver-handle.md)                                                                          |
+| 0x00000120 | [**BITLOCKER\_FATAL\_ERROR**](bug-check-0x120--bitlocker-fatal-error-.md)                                                                         |
 | 0x00000121 | [**DRIVER\_VIOLATION**](bug-check-0x121---driver-violation.md)                                                                                    |
 | 0x00000122 | [**WHEA\_INTERNAL\_ERROR**](bug-check-0x122---whea-internal-error.md)                                                                             |
-| 0x00000123 | [**CRYPTO\_SELF\_TEST\_FAILURE**](bug-check-0x123--crypto-self-test-failure-.md)                                                                 |
-| 0x00000125 | [**NMR\_INVALID\_STATE**](bug-check-0x125--nmr-invalid-state.md)                                                                                 |
-| 0x00000126 | [**NETIO\_INVALID\_POOL\_CALLER**](bug-check-0x126--netio-invalid-pool-caller.md)                                                                |
+| 0x00000123 | [**CRYPTO\_SELF\_TEST\_FAILURE**](bug-check-0x123--crypto-self-test-failure-.md)                                                                  |
+| 0x00000124 | [**WHEA\_UNCORRECTABLE\_ERROR**](bug-check-0x124---whea-uncorrectable-error.md)                                                                   |
+| 0x00000125 | [**NMR\_INVALID\_STATE**](bug-check-0x125--nmr-invalid-state.md)                                                                                  |
+| 0x00000126 | [**NETIO\_INVALID\_POOL\_CALLER**](bug-check-0x126--netio-invalid-pool-caller.md)                                                                 |
 | 0x00000127 | [**PAGE\_NOT\_ZERO**](bug-check-0x127---page-not-zero.md)                                                                                         |
 | 0x00000128 | [**WORKER\_THREAD\_RETURNED\_WITH\_BAD\_IO\_PRIORITY**](bug-check-0x128--worker-thread-returned-with-bad-io-priority.md)                          |
 | 0x00000129 | [**WORKER\_THREAD\_RETURNED\_WITH\_BAD\_PAGING\_IO\_PRIORITY**](bug-check-0x129--worker-thread-returned-with-bad-paging-io-priority.md)           |
@@ -332,7 +333,7 @@ The following table provides links to bug check codes.
 | 0x00000136 | [**VHD\_BOOT\_HOST\_VOLUME\_NOT\_ENOUGH\_SPACE**](bug-check-0x136--vhd-boot-host-volume-not-enough-space.md)                                      |
 | 0x00000137 | [**WIN32K\_HANDLE\_MANAGER**](bug-check-0x137--win32k-handle-manager.md)                                                                          |
 | 0x00000138 | [**GPIO\_CONTROLLER\_DRIVER\_ERROR**](bug-check-0x138-gpio-controller-driver-error.md)                                                            |
-| 0x00000139 | [**KERNEL\_SECURITY\_CHECK\_FAILURE**](bug-check-0x139--kernel-security-check-failure.md)                                              |
+| 0x00000139 | [**KERNEL\_SECURITY\_CHECK\_FAILURE**](bug-check-0x139--kernel-security-check-failure.md)                                                         |
 | 0x0000013A | [**KERNEL\_MODE\_HEAP\_CORRUPTION**](bug-check-0x13a--kernel-mode-heap-corruption.md)                                                             |
 | 0x0000013B | [**PASSIVE\_INTERRUPT\_ERROR**](bug-check-0x13b--passive-interrupt-error.md)                                                                      |
 | 0x0000013C | [**INVALID\_IO\_BOOST\_STATE**](bug-check-0x13c--invalid-io-boost-state.md)                                                                       |
@@ -363,6 +364,7 @@ The following table provides links to bug check codes.
 | 0x00000160 | [**WIN32K\_ATOMIC\_CHECK\_FAILURE**](bug-check-0x160--win32k-atomic-check-failure.md)                                                             |
 | 0x00000162 | [**KERNEL\_AUTO\_BOOST\_INVALID\_LOCK\_RELEASE**](bug-check-0x162--kernel-auto-boost-invalid-lock-release.md)                                     |
 | 0x00000163 | [**WORKER\_THREAD\_TEST\_CONDITION**](bug-check-0x162--worker-thread-test-condition.md)                                                           |
+| 0x00000164 | [**WIN32K\_CRITICAL\_FAILURE**](bug-check-0x164--win32k-critical-failure.md)                                                                      |
 | 0x0000016C | [**INVALID\_RUNDOWN\_PROTECTION\_FLAGS**](bug-check-0x16c--invalid-rundown-protection-flags.md)                                                   |
 | 0x0000016D | [**INVALID\_SLOT\_ALLOCATOR\_FLAGS**](bug-check-0x16d--invalid-slot-allocator-flags.md)                                                           |
 | 0x0000016E | [**ERESOURCE\_INVALID\_RELEASE**](bug-check-0x16e--eresource-invalid-release.md)                                                                  |
@@ -376,7 +378,7 @@ The following table provides links to bug check codes.
 | 0x00000187 | [**VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD**](bug-check-0x187--video-dwminit-timeout-fallback-bdd.md)                                              |
 | 0x00000189 | [**BAD\_OBJECT\_HEADER**](bug-check-0x189--bad-object-header.md)                                                                                  |
 | 0x0000018B | [**SECURE\_KERNEL\_ERROR**](bug-check-0x18b--secure-kernel-error.md)                                                                              |
-| 0x0000018C | [**HYPERGUARD\_VIOLATION**](bug-check-0x18c--hyperguard-violation.md)                                                                              |   
+| 0x0000018C | [**HYPERGUARD\_VIOLATION**](bug-check-0x18c--hyperguard-violation.md)                                                                             |   
 | 0x0000018D | [**SECURE\_FAULT\_UNHANDLED**](bug-check-0x18d--secure-fault-unhandled.md)                                                                        | 
 | 0x0000018E | [**KERNEL\_PARTITION\_REFERENCE\_VIOLATION**](bug-check-0x18e--kernel-partition-reference-violation.md)                                           |
 | 0x00000191 | [**PF\_DETECTED\_CORRUPTION**](bug-check-0x191--pf-detected-corruption.md)                                                                        |

@@ -1,12 +1,12 @@
 ---
 title: IOMMU-based GPU isolation
-description: In the IOMMU model each process has a single virtual address space that is shared between the CPU and graphics processing unit (GPU) and is managed by the OS memory manager.
-ms.date: 07/22/2021
+description: IOMMU-based GPU isolation allows *Dxgkrnl* to restrict access to system memory from the GPU by making use of IOMMU hardware.
+ms.date: 06/24/2022
 ---
 
-# IOMMU model
+# IOMMU-based GPU isolation
 
-This page describes the IOMMU-based GPU isolation feature for IOMMU-capable devices, which was introduced in Windows 10 version 1803 (WDDM 2.4).
+This page describes the IOMMU-based GPU isolation feature for IOMMU-capable devices, introduced in Windows 10 version 1803 (WDDM 2.4). See [IOMMU DMA remapping](iommu-dma-remapping.md) for more recent IOMMU updates.
 
 ## Overview
 
