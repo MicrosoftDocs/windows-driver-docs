@@ -21,9 +21,11 @@ The **KSPROPERTY_CAMERACONTROL_PRIVACY** property specifies whether to prevent v
 
 | Get | Set | Target | Property Descriptor Type | Property Value Type |
 |--|--|--|--|--|
-| Yes | Yes | Filter or node | [**KSPROPERTY_CAMERACONTROL_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s) or [**KSPROPERTY_CAMERACONTROL_NODE_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s) | LONG |
+| Yes | No* | Filter or node | [**KSPROPERTY_CAMERACONTROL_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s) or [**KSPROPERTY_CAMERACONTROL_NODE_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s) | LONG |
 
 The property value (operation data) is a LONG that specifies whether privacy mode is enable or disabled. A value of 0 indicates that the camera sensor can capture video images, and a value of 1 indicates that the camera sensor is prevented from capturing video images.
+
+[*] Starting with Windows 11, **Set** support is disallowed on this control. Software-controllable privacy modes (e.g., control of camera blanking features, electromechanical shutter states, etc.) provide a false sense of security since they can be reversed by any application that writes this property. Camera privacy features such as shutters or kill switches must be exclusively controlled via physical interaction with the device, as described in [Camera privacy shutters and kill switches](camera-privacy-controls.md). 
 
 ## Remarks
 
