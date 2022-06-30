@@ -38,7 +38,7 @@ Every video capture minidriver that supports this property must define a range a
 
 The **Value** member of the **KSPROPERTY_CAMERACONTROL_S** structure specifies the pan setting.
 
-For cameras using the [Platform DMFT](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/uvc-camera-implementation-guide#platform-device-mft) for face-based 3A, the Pan control impacts the output window of the camera. The face coordinates produced by the Platform DMFT will be relative to this modified output window, so the camera is responsible for remapping the ROI coordinates to the camera's full field of view when the current field of view is modified by the Pan control.
+For cameras using the [Platform DMFT](https://docs.microsoft.com/en-us/windows-hardware/drivers/stream/uvc-camera-implementation-guide#platform-device-mft) for face-based 3A, the Pan control impacts the output window of the camera. The face coordinates produced by the Platform DMFT will be relative to this modified output window, so the camera is responsible for remapping the ROI coordinates to the camera's full field of view when the current field of view is modified by the Pan control. Depending on where the field of view modification occurs, the coordinate mapping may need to be bidirectional. For example, if the field of view modification is implemented in a component after the Platform DMFT in the driver chain, ROI coordinates provided by the application need to be mapped back to the full field of view before sending down to the camera and ROI coordinates calculated in the Platform DMFT need to be mapped to the modified field of view before being sent to an app requesting them.
 
 ## Requirements
 
