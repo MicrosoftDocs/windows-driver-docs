@@ -387,19 +387,19 @@
         href: network-redirector-design-in-windows-nt.md
       - name: "Network redirector design in Windows 2000"
         href: network-redirector-design-in-windows-2000.md
-      - name: "The redirected drive buffering subSystem"
+      - name: "The Redirected Drive Buffering SubSystem (RDBSS)"
         href: the-redirected-drive-buffering-subsystem.md
-      - name: "Oplock semantics"
+      - name: "Oplocks and network redirectors"
 # Auto-expanded node
         items:
-        - name: "Oplock overview"
+        - name: "Using oplocks for network redirector performance"
           href: oplock-overview.md
         - name: "Granting oplocks"
           href: granting-oplocks.md
         - name: "Breaking oplocks"
 # Auto-expanded node
           items:
-          - name: "Overview"
+          - name: "Overview of breaking oplocks"
             href: breaking-oplocks.md
           - name: "IRP_MJ_CREATE"
             href: irp-mj-create2.md
