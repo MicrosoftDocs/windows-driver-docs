@@ -182,8 +182,6 @@
           href: graphics-drivers-health-user-mode-reliability-for-crashes-in-creative-apps-expanded.md
         - name: "Number of user mode crashes in top Microsoft apps"
           href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale-expanded.md
-        - name: "Number of user mode crashes in Microsoft Edge"
-          href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale-expanded.md
         - name: "User mode crashes in Microsoft Edge Chromium"
           href: graphics-user-mode-crashes-edge-chromium-standard.md
         - name: "Number of user mode crashes in Windows components"
