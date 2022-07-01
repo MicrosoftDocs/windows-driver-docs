@@ -748,120 +748,117 @@
       href: user-mode-driver-logging.md
     - name: "Disabling Frame Pointer Omission (FPO) optimization"
       href: disabling-frame-pointer-omission--fpo--optimization.md
-    - name: "Using GPUView"
-      href: using-gpuview.md
+    - name: "GPUView"
 # Auto-expanded node
-      items: 
-      - name: "GPUView"
-        href: gpuview.md
-        # Auto-expanded node
+      items:
+      - name: "About GPUView"
+        href: using-gpuview.md
+      - name: "Getting Started with GPUView"
         items: 
-        - name: "Getting Started with GPUView"
-          items: 
-          - name: "Installing GPUView"
-            href: installing-gpuview.md
-          - name: "Enabling Logging of DirectX Video Acceleration Version 2 and Direct3D Version 9 Events"
-            href: enabling-logging-of-directx-video-acceleration-version-2-and-direct3d-version-9-events.md
-          - name: "Generating a Trace for GPUView"
-            href: generating-a-trace-for-gpuview.md
-        - name: "User Input and Menu Functionality"
-          items: 
-          - name: "Summary of GPUView Controls"
-            href: summary-of-gpuview-controls.md
-          - name: "Keyboard Functionality"
-            href: keyboard-functionality.md
-          - name: "Mouse Functionality"
-            href: mouse-functionality.md
-          - name: "Arrow on Event Line"
-            href: arrow-on-event-line.md
-          - name: "GPUView Command-Line Options"
-            href: gpuview-command-line-options.md          
-            items:
-            - name: "Option: Help"
-              href: option-help.md
-            - name: "Option: Stats"
-              href: option-stats.md
-            - name: "Option: Limit"
-              href: option-limit.md
-            - name: "Option: File"
-              href: option-file.md
-          - name: "Displaying More or Fewer Threads"
-            href: displaying-more-or-fewer-threads.md
-          - name: "GPUView Menu Options"
-            href: gpuview-menu-options.md
-          - name: "Information Logged After Loading"
-            href: information-logged-after-loading.md
-          - name: "Loading Large ETL Files"
-            href: loading-large-etl-files.md
-        - name: "GPUView's Main Display"
+        - name: "Installing GPUView"
+          href: installing-gpuview.md
+        - name: "Enabling Logging of DirectX Video Acceleration Version 2 and Direct3D Events"
+          href: enabling-logging-of-directx-video-acceleration-version-2-and-direct3d-version-9-events.md
+        - name: "Generating a Trace for GPUView"
+          href: generating-a-trace-for-gpuview.md
+      - name: "User Input and Menu Functionality"
+        items: 
+        - name: "Summary of GPUView Controls"
+          href: summary-of-gpuview-controls.md
+        - name: "Keyboard Functionality"
+          href: keyboard-functionality.md
+        - name: "Mouse Functionality"
+          href: mouse-functionality.md
+        - name: "Arrow on Event Line"
+          href: arrow-on-event-line.md
+        - name: "GPUView Command-Line Options"
+          href: gpuview-command-line-options.md          
           items:
-          - name: "GPUView Main Window"
-            href: gpuview-main-window.md
-          - name: "GPUView Zoomed Main Window"
-            href: gpuview-zoomed-main-window.md
-          - name: "GPU Hardware Queue"
-            href: gpu-hardware-queue.md
-          - name: "GPUView Flip Queue"
-            href: gpuview-flip-queue.md
-          - name: "Viewing a Process"
-            href: viewing-a-process.md
-          - name: "Context CPU Queue"
-            href: context-cpu-queue.md
-          - name: "Viewing a Thread"
-            href: viewing-a-thread.md
-          - name: "Charts in the Main Window"
-            href: charts-in-the-main-window.md
-            items:
-            - name: "Memory Charts"
-              href: memory-charts.md
-            - name: "Present Charts"
-              href: present-charts.md
-            - name: "Reference Charts"
-              href: reference-charts.md
-            - name: "Termination Charts"
-              href: termination-charts.md
-        - name: "GPUView Dialogs"
+          - name: "Option: Help"
+            href: option-help.md
+          - name: "Option: Stats"
+            href: option-stats.md
+          - name: "Option: Limit"
+            href: option-limit.md
+          - name: "Option: File"
+            href: option-file.md
+        - name: "Displaying More or Fewer Threads"
+          href: displaying-more-or-fewer-threads.md
+        - name: "GPUView Menu Options"
+          href: gpuview-menu-options.md
+        - name: "Information Logged After Loading"
+          href: information-logged-after-loading.md
+        - name: "Loading Large ETL Files"
+          href: loading-large-etl-files.md
+      - name: "GPUView's Main Display"
+        items:
+        - name: "GPUView Main Window"
+          href: gpuview-main-window.md
+        - name: "GPUView Zoomed Main Window"
+          href: gpuview-zoomed-main-window.md
+        - name: "GPU Hardware Queue"
+          href: gpu-hardware-queue.md
+        - name: "GPUView Flip Queue"
+          href: gpuview-flip-queue.md
+        - name: "Viewing a Process"
+          href: viewing-a-process.md
+        - name: "Context CPU Queue"
+          href: context-cpu-queue.md
+        - name: "Viewing a Thread"
+          href: viewing-a-thread.md
+        - name: "Charts in the Main Window"
+          href: charts-in-the-main-window.md
           items:
-          - name: "Event Listing Dialog Box"
-            href: event-listing-dialog-box.md
-          - name: "Object Viewer Dialog Box"
-            href: object-viewer-dialog-box.md
-          - name: "Module Info Dialog Box"
-            href: module-info-dialog-box.md
+          - name: "Memory Charts"
+            href: memory-charts.md
+          - name: "Present Charts"
+            href: present-charts.md
+          - name: "Reference Charts"
+            href: reference-charts.md
+          - name: "Termination Charts"
+            href: termination-charts.md
+      - name: "GPUView Dialogs"
+        items:
+        - name: "Event Listing Dialog Box"
+          href: event-listing-dialog-box.md
+        - name: "Object Viewer Dialog Box"
+          href: object-viewer-dialog-box.md
+        - name: "Module Info Dialog Box"
+          href: module-info-dialog-box.md
+        - name: "Object Details Dialog Box"
+          items:
           - name: "Object Details Dialog Box"
-            items:
-            - name: "Object Details Dialog Box"
-              href: object-details-dialog-box.md
-            - name: "Selections in the GPU Hardware Queue"
-              href: selections-in-the-gpu-hardware-queue.md
-            - name: "Selections in the Flip Queue"
-              href: selections-in-the-flip-queue.md
-            - name: "Selections in the Context CPU Queue"
-              href: selections-in-the-context-cpu-queue.md
-            - name: "Elements of the Dialog"
-              href: elements-of-the-dialog.md
-          - name: "Find Dialog Box"
-            href: find-dialog-box.md
-          - name: "Goto Dialog Box"
-            href: goto-dialog-box.md
-          - name: "Symbols Dialog Box"
-            href: symbols-dialog-box.md
-        - name: "Segment Viewer"
-          items:
-          - name: "Segment Viewer Window"
-            href: segment-viewer-window.md
-          - name: "Memory View Menu"
-            href: memory-view-menu.md
-          - name: "Set Time Dialog"
-            href: set-time-dialog.md
-          - name: "Choose Sorting Dialog"
-            href: choose-Sorting-Dialog.md
-          - name: "Choose Columns Dialog"
-            href: choose-columns-dialog.md
-          - name: "Exporting Data to a File"
-            href: exporting-data-to-a-file.md
-          - name: "Other Visual Items of the Segment Viewer Window"
-            href: other-visual-items-of-the-segment-viewer-window.md
+            href: object-details-dialog-box.md
+          - name: "Selections in the GPU Hardware Queue"
+            href: selections-in-the-gpu-hardware-queue.md
+          - name: "Selections in the Flip Queue"
+            href: selections-in-the-flip-queue.md
+          - name: "Selections in the Context CPU Queue"
+            href: selections-in-the-context-cpu-queue.md
+          - name: "Elements of the Dialog"
+            href: elements-of-the-dialog.md
+        - name: "Find Dialog Box"
+          href: find-dialog-box.md
+        - name: "Goto Dialog Box"
+          href: goto-dialog-box.md
+        - name: "Symbols Dialog Box"
+          href: symbols-dialog-box.md
+      - name: "Segment Viewer"
+        items:
+        - name: "Segment Viewer Window"
+          href: segment-viewer-window.md
+        - name: "Memory View Menu"
+          href: memory-view-menu.md
+        - name: "Set Time Dialog"
+          href: set-time-dialog.md
+        - name: "Choose Sorting Dialog"
+          href: choose-Sorting-Dialog.md
+        - name: "Choose Columns Dialog"
+          href: choose-columns-dialog.md
+        - name: "Exporting Data to a File"
+          href: exporting-data-to-a-file.md
+        - name: "Other Visual Items of the Segment Viewer Window"
+          href: other-visual-items-of-the-segment-viewer-window.md
     - name: "XPS rasterization on the GPU"
       href: xps-rasterization-on-the-gpu.md
     - name: "Timeout Detection and Recovery"
