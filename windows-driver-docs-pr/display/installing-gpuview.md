@@ -6,9 +6,9 @@ ms.date: 06/30/2022
 
 # Installing GPUView
 
-GPUView and other files that are associated with it are included with the [Windows Performance Toolkit (WPT)](/windows-hardware/test/wpt/, installed with the [Windows Assessment and Deployment Kit (ADK)](/windows-hardware/get-started/adk-install) as an installable option of the WPT MSI (Microsoft Software Intaller).
+GPUView and other files associated with it are included with the [Windows Performance Toolkit (WPT)](/windows-hardware/test/wpt/), which is an installable option of the [Windows Assessment and Deployment Kit (ADK)](/windows-hardware/get-started/adk-install).
 
-The WPT MSI installs several files and directories. The following table lists a few GPUView-specific files.
+The WPT MSI (Microsoft Software Installer) installs several files and directories. The following table lists a few GPUView-specific files.
 
 | File | Purpose |
 | ---- | ------- |
