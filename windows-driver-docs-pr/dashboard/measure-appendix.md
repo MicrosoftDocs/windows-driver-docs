@@ -64,16 +64,6 @@ ms.date: 05/20/2019
 |SAI.exe|
 |FL.exe|
 
-## Display Issues
-
-|Application|
-|----|
-|Display running with bad resolution|
-|Screen flickering|
-|Display not functioning|
-|Unexpected orientation|
-|Non-optimal display settings turned on|
-
 ## Audio Initialization Benign Failure Codes
 
 ### Common Benign Errors

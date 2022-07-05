@@ -20,7 +20,7 @@ This measure is monitoring how often Windows components (dwm.exe, shell, logon u
 | **Measurement criteria** | Aggregation of machines |
 | **Minimum instances** | 10,000 machines |
 | **Passing criteria** | <= 15 crashes per 10,000 machines |
-| **Measure ID** | 22725967 |
+| **Measure ID** | 21839288 |
 
 ## Calculation
 

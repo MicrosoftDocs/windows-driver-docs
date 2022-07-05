@@ -22,7 +22,7 @@ During a user's session, crash in graphics driver binary may cause stop error re
 | **Passing criteria** | <= 3/10,000 machines experience a stop error |
 | **High failure rate target** | <= 3,000 |
 | **High failure minimum population** | 20 machines |
-| **Measure ID** | 23253553 |
+| **Measure ID** | 26647341 |
 
 ## Calculation
 

@@ -40,7 +40,7 @@ Examples of communication and collaboration applications considered for this mea
 | **Measurement criteria** | Aggregation of communication and collaboration application runtime in years |
 | **Minimum population** | 10,000 hours of communication and collaboration application runtime |
 | **Passing criteria** | <= 1 crash per Year of cumulative runtime |
-| **Measure ID** | 25912714 |
+| **Measure ID** | 31470142 |
 
 ## Calculation
 
