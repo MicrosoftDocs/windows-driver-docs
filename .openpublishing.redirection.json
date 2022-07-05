@@ -377,7 +377,7 @@
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/dashboard-faq.md",
-            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-dashboard-faq",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/index",
             "redirect_document_id": false
         },
         {
@@ -402,6 +402,8 @@
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/download-failure-cabs.md",
+
+
             "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-api",
             "redirect_document_id": false
         },
@@ -8758,6 +8760,11 @@
         {
             "source_path": "windows-driver-docs-pr/dashboard/user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale-expanded.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/get-drivers-signed-by-microsoft-for-multiple-windows-versions.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-submission-create",
             "redirect_document_id": false
         }
         
