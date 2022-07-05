@@ -483,6 +483,8 @@
     href: format-negotiation.md
   - name: "Dynamic Format Change"
     href: dynamic-format-change.md
+  - name: "Combine Custom and Windows APOs"
+    href: combine-custom-and-windows-apos.md
 - name: "Windows Audio Processing Objects"
 # Auto-expanded node
   items: 
