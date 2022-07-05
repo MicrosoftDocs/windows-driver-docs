@@ -9,11 +9,10 @@ f1_keywords:
 # C30030
 
 
-warning C30030: Calling a memory allocating function and passing a parameter that indicates executable memory
+**Warning C30030: Banned Mem Allocation Unsafe**\
+Example output: ```Calling a memory allocating function and passing a parameter that indicates executable memory```
 
-BANNED\_MEM\_ALLOCATION\_UNSAFE
-
-Some APIs have parameters that configure whether memory is executable or not. This error indicates that parameters are used that result in executable NonPagedPool being allocated. You should use one of the available options to request non-executable memory.
+Some APIs have parameters that configure whether memory is executable or not. This error indicates that parameters are used that result in executable NonPagedPool being allocated. You should use one of the available options to request non-executable memory. A list of all banned functions and flags covered by this error and the recommended replacements can be found at the bottom of this page.
 
 ## <span id="For_defects_involving_the_parameter_types_MM_PAGE_PRIORITY_and_POOL_TYPE"></span><span id="for_defects_involving_the_parameter_types_mm_page_priority_and_pool_type"></span><span id="FOR_DEFECTS_INVOLVING_THE_PARAMETER_TYPES_MM_PAGE_PRIORITY_AND_POOL_TYPE"></span>For defects involving the parameter types **MM\_PAGE\_PRIORITY** and **POOL\_TYPE**
 
@@ -247,7 +246,16 @@ MmAllocateContiguousNodeMemory(       numberOfBytes,
                                       MM_ANY_NODE_OK
                                       ); 
 ```
-
+## Banned Functions
+| Banned API | Replacement(s) | Rationale / Notes |
+| -----------|----------------|-------|
+|```MmMapIoSpace()```|```MmMapIoSpaceEx()```|
+|```ExInitializeNPagedLookasideList()```|<ul><li>Please OR/set the flag parameter with/to ```POOL_NX_ALLOCATION```</li><li>Or by using the ```POOL_NX_OPTIN_AUTO``` / ```POOL_NX_OPTIN``` methods above</li></ul>|
+|```MmAllocateContiguousMemorySpecifyCache()```|```MmAllocateContiguousNodeMemory()```|
+## Banned Flags
+| Banned Flag | Replacement(s) | Rationale / Notes |
+| -----------|----------------|-------|
+|```MM_PAGE_PRIORITY```| <ul><li>```POOL_NX_OPTIN_AUTO``` - This supports creating multiple binaries for different versions of Windows</li><li>```POOL_NX_OPTIN``` (+ ```ExInitializeDriverRuntime(DrvRtPoolNxOptIn)```) - This supports a single binary running on different versions of windows</li><li>```PagePriority``` / ```MdlMappingNoExecute``` - This will work on Windows 8 and later</li></ul> |
 ## <span id="related_topics"></span>Related topics
 
 
