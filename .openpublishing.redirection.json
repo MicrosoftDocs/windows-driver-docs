@@ -8728,11 +8728,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "windows-driver-docs-pr/dashboard/get-drivers-signed-by-microsoft-for-multiple-windows-versions.md",
-            "redirect_URL": "/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started",
-            "redirect_document_id": false
-        },
-        {
             "source_path": "windows-driver-docs-pr/dashboard/get-started-with-the-hardware-dashboard.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/get-started-dashboard-submissions",
             "redirect_document_id": false
