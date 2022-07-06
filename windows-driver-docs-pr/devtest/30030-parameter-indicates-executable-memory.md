@@ -38,13 +38,13 @@ Use one of the following options:
 
 The following setting in the sources file would allow the warning should an executable parameter be supplied in an API call:
 
-```
+```cpp
 C_DEFINES=$(C_DEFINES)
 ```
 
 The following setting in the sources file avoids the warning:
 
-```
+```cpp
 C_DEFINES=$(C_DEFINES) -DPOOL_NX_OPTIN_AUTO=1
 ```
 
@@ -52,19 +52,19 @@ C_DEFINES=$(C_DEFINES) -DPOOL_NX_OPTIN_AUTO=1
 
 The following code in the sources file generates a warning:
 
-```
+```cpp
 C_DEFINES=$(C_DEFINES)
 ```
 
 The following code in the sources file avoids the warning:
 
-```
+```cpp
 C_DEFINES=$(C_DEFINES) -DPOOL_NX_OPTIN=1
 ```
 
 In **DriverEntry()**, before any memory allocation takes place:
 
-```
+```cpp
 NTSTATUS
 DriverEntry (
     _In_ PDRIVER_OBJECT DriverObject,
@@ -83,13 +83,13 @@ For the **MM\_PAGE\_PRIORITY** type you can fix this by adding the **MdlMappingN
 
 The following code generates a warning:
 
-```
+```cpp
 pPtr = MmGetSystemAddressForMdlSafe( pMdl, NormalPagePriority);
 ```
 
 The following code avoids the warning:
 
-```
+```cpp
 pPtr = MmGetSystemAddressForMdlSafe( pMdl, NormalPagePriority | MdlMappingNoExecute);
 ```
 
@@ -99,13 +99,13 @@ For the **POOL\_TYPE** type you can fix this by changing the request type to the
 
 The following code generates a warning:
 
-```
+```cpp
 ExAllocatePoolWithTag(NonPagedPool, numberOfBytes, 'xppn');
 ```
 
 The following code avoids the warning:
 
-```
+```cpp
 ExAllocatePoolWithTag(NonPagedPoolNx, numberOfBytes, 'xppn');
 ```
 
@@ -113,7 +113,7 @@ ExAllocatePoolWithTag(NonPagedPoolNx, numberOfBytes, 'xppn');
 
 There has been a change in the [**ExInitializeNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializenpagedlookasidelist) routine that now enables you to specify non-executable nonpaged pool memory. For example, the following code generates this warning:
 
-```
+```cpp
 ExInitializeNPagedLookasideList(pLookaside,
                 NULL,
                 NULL,
@@ -125,7 +125,7 @@ ExInitializeNPagedLookasideList(pLookaside,
 
 The following code avoids this warning:
 
-```
+```cpp
 ExInitializeNPagedLookasideList(pLookaside,
                 NULL,
                 NULL,
@@ -149,7 +149,7 @@ Change:
 
 The following code generates a warning:
 
-```
+```cpp
 Status = ZwMapViewOfSection(   handle,
                 NtCurrentProcess(),
                 Address,
@@ -165,7 +165,7 @@ Status = ZwMapViewOfSection(   handle,
 
 The following code avoids this warning:
 
-```
+```cpp
 Status = ZwMapViewOfSection(   handle,
                 NtCurrentProcess(),
                 Address,
@@ -191,7 +191,7 @@ Change:
 
 The following code generates a warning:
 
-```
+```cpp
 MmAllocateContiguousMemorySpecifyCache(       numberOfBytes,
                                               lowestAddress,
                                               highestAddress,
@@ -202,7 +202,7 @@ MmAllocateContiguousMemorySpecifyCache(       numberOfBytes,
 
 The following code avoids this warning if cached memory is not required:
 
-```
+```cpp
 MmAllocateContiguousMemorySpecifyCache(       numberOfBytes,
                                               lowestAddress,
                                               highestAddress,
@@ -213,7 +213,7 @@ MmAllocateContiguousMemorySpecifyCache(       numberOfBytes,
 
 The following code generates a warning:
 
-```
+```cpp
 MmAllocateContiguousMemorySpecifyCacheNode(   numberOfBytes,
                                               lowestAddress,
                                               highestAddress,
@@ -225,7 +225,7 @@ MmAllocateContiguousMemorySpecifyCacheNode(   numberOfBytes,
 
 The following code avoids this warning if cached memory is required:
 
-```
+```cpp
 MmAllocateContiguousNodeMemory(       numberOfBytes,
                                       lowestAddress,
                                       highestAddress,
@@ -237,7 +237,7 @@ MmAllocateContiguousNodeMemory(       numberOfBytes,
 
 The following code use the alternative API when cached memory is not required:
 
-```
+```cpp
 MmAllocateContiguousNodeMemory(       numberOfBytes,
                                       lowestAddress,
                                       highestAddress,
