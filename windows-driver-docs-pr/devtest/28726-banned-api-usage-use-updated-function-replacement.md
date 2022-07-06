@@ -23,7 +23,7 @@ void example_func()
     scanf(“%s”, input); // scanf is banned for security purposes 
 } 
 ```
-This is due to the use of the unsafe function scanf. scanf does place any limit on the size of the data copied to the buffer. To fix this issue, we can use scanf_s, the safe replacement to this function. scanf_s requires the developer to specify how many bytes are intended to be copied. scanf_s will ensure only that many bytes are copied. For example, the following code is safe: 
+This is due to the use of the unsafe function scanf. scanf does place any limit on the size of the data copied to the buffer. To fix this issue, we can use scanf_s, the safer replacement to this function. scanf_s requires the developer to specify how many bytes are intended to be copied. scanf_s will ensure only that many bytes are copied. For example, the following code is safer: 
 ```cpp
 void example_func() 
 { 
