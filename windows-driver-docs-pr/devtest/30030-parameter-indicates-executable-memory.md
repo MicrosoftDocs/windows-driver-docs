@@ -253,8 +253,6 @@ MmAllocateContiguousNodeMemory(       numberOfBytes,
 |```ExInitializeNPagedLookasideList()```|<ul><li>Please OR/set the flag parameter with/to ```POOL_NX_ALLOCATION```</li><li>Or by using the ```POOL_NX_OPTIN_AUTO``` / ```POOL_NX_OPTIN``` methods above</li></ul>|
 |```MmAllocateContiguousMemorySpecifyCache()```|```MmAllocateContiguousNodeMemory()```|
 ## Banned Flags
-| Banned Flag | Replacement(s) | Rationale / Notes |
-| -----------|----------------|-------|
 <table>
 <thead>
 <tr>
