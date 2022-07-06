@@ -255,7 +255,30 @@ MmAllocateContiguousNodeMemory(       numberOfBytes,
 ## Banned Flags
 | Banned Flag | Replacement(s) | Rationale / Notes |
 | -----------|----------------|-------|
-|```MM_PAGE_PRIORITY```| <ul><li>```POOL_NX_OPTIN_AUTO``` - This supports creating multiple binaries for different versions of Windows</li><li>```POOL_NX_OPTIN``` (+ ```ExInitializeDriverRuntime(DrvRtPoolNxOptIn)```) - This supports a single binary running on different versions of windows</li><li>```PagePriority``` / ```MdlMappingNoExecute``` - This will work on Windows 8 and later</li></ul> |
+<table>
+<thead>
+<tr>
+  <th>Banned Flag</th>
+  <th>Replacement(s)</th>
+  <th>Rationale/Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="3"><code>MM_PAGE_PRIORITY</code></td>
+  <td><code>POOL_NX_OPTIN_AUTO</code></td>
+  <td>This supports creating multiple binaries for different versions of Windows</td>
+</tr>
+<tr>
+  <td><code>POOL_NX_OPTIN</code>(+ <code>ExInitializeDriverRuntime(DrvRtPoolNxOptIn)</code>)</td>
+  <td>This supports a single binary running on different versions of windows</td>
+</tr>
+<tr>
+  <td><code>PagePriority</code> / <code>MdlMappingNoExecute</code></td>
+  <td>This will work on Windows 8 and later</td>
+</tr>
+</tbody>
+</table>
 ## <span id="related_topics"></span>Related topics
 
 
