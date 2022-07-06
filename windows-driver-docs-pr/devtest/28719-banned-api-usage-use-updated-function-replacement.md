@@ -27,9 +27,9 @@ void example_func(PSTR src)
 ```
 This is due to the use of the unsafe function strcpy.
 strcpy does not check if the destination buffer is large enough to fit the source data.
-To fix this issue, we can use strcpy_s, C++11’s safe replacement to this function.
+To fix this issue, we can use strcpy_s, C++11’s safer replacement to this function.
 strcpy_s has a third parameter (the size of the destination buffer) to ensure only that many bytes are copied.
-For example, the following code is safe: 
+For example, the following code is safer: 
 ```cpp
 void example_func(PSTR src) 
 { 
