@@ -2287,7 +2287,7 @@
       - name: "Virtual Machine Queue (VMQ) Overview"
         href: virtual-machine-queue-architecture.md
       - name: "Introduction to NDIS Virtual Machine Queue (VMQ)"
-        href: introduction-to-ndis-virtual-machine-queue-architecture.md
+        href: introduction-to-ndis-virtual-machine-queue--vmq-.md
       - name: "VMQ Components"
         href: vmq-components.md
       - name: "VMQ Receive Queues"
