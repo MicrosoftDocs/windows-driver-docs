@@ -7,7 +7,7 @@ ms.date: 04/20/2017
 # Supporting NVGRE in RSS and VMQ Receive Task Offloads
 
 
-NDIS 6.30 (Windows Server 2012) introduces [Network Virtualization using Generic Routing Encapsulation (NVGRE)](network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md). NDIS miniport drivers and NICs that perform [Receive Side Scaling](receive-scaling.md) (RSS) and [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md) receive task offloads should do so in a way that supports NVGRE.
+NDIS 6.30 (Windows Server 2012) introduces [Network Virtualization using Generic Routing Encapsulation (NVGRE)](network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md). NDIS miniport drivers and NICs that perform [Receive Side Scaling](receive-scaling.md) (RSS) and [Virtual Machine Queue (VMQ)](virtual-machine-queue-architecture.md) receive task offloads should do so in a way that supports NVGRE.
 
 **Note**  This page assumes that you are familiar with the information in [Offloading the Segmentation of Large TCP Packets](offloading-the-segmentation-of-large-tcp-packets.md).
 

@@ -8248,6 +8248,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/network/virtual-machine-queue--vmq-.md",
+            "redirect_URL": "/previous-versions/windows/hardware/network/virtual-machine-queue-architecture",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/network/virtual-wifi-implementation-guidelines.md",
             "redirect_URL": "/previous-versions/windows/hardware/wireless/virtual-wifi-implementation-guidelines",
             "redirect_document_id": false

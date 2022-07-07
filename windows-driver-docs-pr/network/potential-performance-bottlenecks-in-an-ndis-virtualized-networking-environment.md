@@ -42,7 +42,7 @@ To address performance issues, the virtual machine queue (VMQ) interface allows:
 
  
 
-For more information about the VMQ interface, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md).
+For more information about the VMQ interface, see [Virtual Machine Queue (VMQ)](virtual-machine-queue-architecture.md).
 
 ### Overcoming Performance Bottlenecks with SR-IOV
 
