@@ -34,7 +34,7 @@ For information about writing VMQ drivers, see [Writing VMQ Drivers](writing-vmq
 
 This section includes the following topics:
 
-[Introduction to NDIS Virtual Machine Queue (VMQ)](introduction-to-ndis-virtual-machine-queue-architecture.md)
+[Introduction to NDIS Virtual Machine Queue (VMQ)](introduction-to-ndis-virtual-machine-queue--vmq-.md)
 
 [VMQ Components](vmq-components.md)
 
