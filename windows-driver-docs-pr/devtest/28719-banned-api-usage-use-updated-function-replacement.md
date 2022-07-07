@@ -9,7 +9,7 @@ f1_keywords:
 # C28719
 
 
-**Warning C28719: Banned API Usage**\
+**Warning C28719: Banned API Usage (BANNED_API_USAGE)**\
 Example output: ```Banned API Usage:  *function name* is insecure and has been marked deprecated.```
 
 This warning indicates that a function is being used that has been banned and has a more robust or secure replacement.
