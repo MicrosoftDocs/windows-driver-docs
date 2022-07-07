@@ -9,7 +9,7 @@ f1_keywords:
 # C28750
 
 
-**Warning C28750: Banned API Usage lstrlen**\
+**Warning C28750: Banned API Usage lstrlen (BANNED_API_USAGE_LSTRLEN)**\
 Example output: ```Banned usage of lstrlen and its variants: *function_name* is a banned API for improved error handling purposes.```
 
 This warning indicates that a function is being used that has been banned and has a more robust or secure replacement. This specific error indicates usage of lstrlen or a variant thereof. The lstrlen function and its variants are banned because they fail to transmit exceptions. This can cause error conditions to occur much later, potentially on a different thread. This makes the error conditions harder to diagnose. In addition, equivalent substitute functions can be optimized by the compiler and avoid the performance overhead of exception handlers (_try and _except blocks).  
