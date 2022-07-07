@@ -8766,7 +8766,16 @@
             "source_path": "windows-driver-docs-pr/dashboard/get-drivers-signed-by-microsoft-for-multiple-windows-versions.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-submission-create",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
+            "redirect_document_id": false
         }
+        
+
+
+
         
         
        
