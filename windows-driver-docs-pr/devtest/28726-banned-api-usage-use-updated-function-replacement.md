@@ -9,7 +9,7 @@ f1_keywords:
 # C28726
 
 
-**Warning C28726: Banned API Usage L2**\
+**Warning C28726: Banned API Usage L2 (BANNED_API_USAGEL2)**\
 Example output: ```Banned API Usage:  *function name* is insecure and has been marked deprecated.```
 
 This warning indicates that a function is being used that has been banned and has a more robust or secure replacement. This specific error indicates that the banned function has potential to overflow a buffer. A list of all banned functions covered by this error, why they are banned, and recommended replacements can be found after the following example: 
