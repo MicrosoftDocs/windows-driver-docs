@@ -206,8 +206,6 @@
           href: graphics-ecosystem-integrated-gpu-with-tdr.md
         - name: "Myriad of drivers that were rolled back or re-installed within 2 days of installation"
           href: myriad-drivers-rolled-back-ecosystem.md
-        - name: "Number of user mode crashes in Microsoft Edge"
-          href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale.md
         - name: "User mode crashes in Microsoft Edge Chromium (ecosystem)"
           href: graphics-user-mode-crashes-edge-chromium-ecosystem.md
         - name: "Number of user mode crashes in top Microsoft apps"
