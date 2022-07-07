@@ -33,32 +33,33 @@ void example_func()
 ```
 ## Banned Functions 
 _NOTE: This list is actively being updated and improved_
+
 | Banned API | Replacement(s) | Rationale / Notes |
 | -----------|----------------|--------------|
 |```_itoa```| ```_itoa_s``` | Does not NULL-terminate |
 |```_i64toa```| ```_i64toa_s``` | Does not NULL-terminate |
 |```_i64tow```| ```_i64tow_s``` | Does not NULL-terminate |
-|```_mbccpy```| ```_mbccpy_s``` |
-|```_mbscpy```| ```_mbscpy_s``` |
-|```_mbsnbcpy```| ```_mbsnbcpy_s```|
-|```_mbsnbcat```| ```_mbsnbcat_s``` |
-|```_mbsncat```| ```_mbsncat_s``` |
-|```_mbsncpy```| ```_mbsncpy_s``` |
-|```_mbstok```| ```_mbstok_s``` |
-|```_snscanf```| ```_snscanf_s``` |
-|```_snwscanf```| ```_snwscanf_s``` |
-|```_ui64toa```| ```ui64toa_s``` |
-|```_ui64tow```| ```_ui64tow_s``` |
-|```_ultoa```| ```_ultoa_s``` |
-|```CharToOemA```| |
-|```CharToOemBuffA```| |
-|```CharToOemBuffW```| |
-|```CharToOemW```| |
-|```OemToCharA```| |
-|```OemToCharBuffA```| |
-|```OemToCharBuffW```| |
+|```_mbccpy```| ```_mbccpy_s``` | |
+|```_mbscpy```| ```_mbscpy_s``` | |
+|```_mbsnbcpy```| ```_mbsnbcpy_s```| |
+|```_mbsnbcat```| ```_mbsnbcat_s``` | |
+|```_mbsncat```| ```_mbsncat_s``` | |
+|```_mbsncpy```| ```_mbsncpy_s``` | |
+|```_mbstok```| ```_mbstok_s``` | |
+|```_snscanf```| ```_snscanf_s``` | |
+|```_snwscanf```| ```_snwscanf_s``` | |
+|```_ui64toa```| ```ui64toa_s``` | |
+|```_ui64tow```| ```_ui64tow_s``` | |
+|```_ultoa```| ```_ultoa_s``` | |
+|```CharToOemA```| | |
+|```CharToOemBuffA```| | |
+|```CharToOemBuffW```| | |
+|```CharToOemW```| | |
+|```OemToCharA```| | |
+|```OemToCharBuffA```| | |
+|```OemToCharBuffW```| | |
 |```scanf```| ```scanf_s``` | Limited error detection |
 |```sscanf```| ```sscanf_s``` | Limited error detection |
 |```wmemcpy```| ```wmemcpy_s``` | Limited error detection |
-|```wnsprintfW```| |
-|```wscanf```| ```wscanf_s``` |
+|```wnsprintfW```| | |
+|```wscanf```| ```wscanf_s``` | |
