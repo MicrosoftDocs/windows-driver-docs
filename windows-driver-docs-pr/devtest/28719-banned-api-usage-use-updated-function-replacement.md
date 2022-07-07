@@ -39,7 +39,7 @@ void example_func(PSTR src)
 ```
 ## Banned Functions  
 _NOTE: This list is actively being updated and improved_
- | Banned API | Replacement(s) | Rationale / Notes |
+| Banned API | Replacement(s) | Rationale / Notes |
 | -----------|----------------|--------------|
 |```_fstrcat```| |
 |```_fstrcpy```| |
