@@ -39,120 +39,114 @@ void example_func(PSTR src)
 ```
 ## Banned Functions  
 _NOTE: This list is actively being updated and improved_
- | Banned API | Replacement(s) | Rationale / Notes |
+
+| Banned API | Replacement(s) | Rationale / Notes |
 | -----------|----------------|--------------|
-|```_fstrcat```| |
-|```_fstrcpy```| |
-|```_fstrncat```| |
-|```_fstrncpy```| |
-|```_ftccat```| |
-|```_ftccpy```| |
-|```_ftcscat```| |
-|```_ftcscpy```| |
+|```_fstrcat```| | |
+|```_fstrcpy```| | |
+|```_fstrncat```| | |
+|```_fstrncpy```| | |
+|```_ftccat```| | |
+|```_ftccpy```| | |
+|```_ftcscat```| | |
+|```_ftcscpy```| | |
 |```_getts```| ```StringCbGets```, ```StringCbGetsEx```, ```StringCchGets```, ```StringCchGetsEx```, ```gets_s``` | No size limit on data |
-|```_gettws```| ```gets_s```|
-|```_getws```| ```_getws_s```|
-|```_mbccat```| |
-|```_makepath```| ```_makepath_s``` |
+|```_gettws```| ```gets_s```| |
+|```_getws```| ```_getws_s```| |
+|```_mbccat```| | |
+|```_makepath```| ```_makepath_s``` | |
 |```_mbscat```| ```_mbscat_s``` | |
 |```_snprintf```| ```_snprintf_s```| Does not NULL-terminate |
-|```_sntprintf```| |
-|```_sntscanf```| |
+|```_sntprintf```| | |
+|```_sntscanf```| | |
 |```_snwprintf```| ```_snwprintf_s```, ```StringCbPrintf```, ```StringCbPrintf_l```, ```StringCbPrintf_lEx```, ```StringCbPrintfEx```, ```StringCchPrintf```, ```StringCchPrintfEx``` | Does not NULL-terminate |
-|```_splitpath```| ```_splitpath_s``` |
+|```_splitpath```| ```_splitpath_s``` | |
 |```_stprintf```| ```StringCbPrintf```, ```StringCbPrintf_l```, ```StringCbPrintf_lEx```, ```StringCbPrintfEx```, ```StringCchPrintf```, ```StringCchPrintfEx``` | Limited error detection |
-|```_stscanf```| |
-|```_tccat```| |
-|```_tccpy```| |
-|```_tcscat```| |
+|```_stscanf```| | |
+|```_tccat```| | |
+|```_tccpy```| | |
+|```_tcscat```| | |
 |```_tcscpy```| ```StringCbCopy```, ```StringCbCopyEx```, ```StringCchCopy```, ```StringCchCopyEx``` | Limited error detection |
 |```_tcsncat```| |
 |```_tcsncpy```| ```StringCbCopyN```, ```StringCbCopyNEx```, ```StringCchCopyN```, ```StringCchCopyNEx```| Limited error detection |
-|```_tmakepath```| |
-|```_tscanf```| |
-|```_tsplitpath```| |
+|```_tmakepath```| | |
+|```_tscanf```| | |
+|```_tsplitpath```| | |
 |```_vsnprintf```| ```_vsnprintf_s```, ```StringCchVPrintf```, ```StringCchVPrintf_l```, ```StringCchVPrintf_lEx```, ```StringCchVPrintfEx```| Limited error detection |
 |```_vsntprintf```| ```StringCbVPrintf```, ```StringCbVPrintf_l```, ```StringCbVPrintf_lEx```, ```StringCbVPrintfEx```, ```StringCchVPrintf```, ```StringCchVPrintf_l```, ```StringCchVPrintf_lEx```, ```StringCchVPrintfEx```| Limited error detection |
 |```_vsnwprintf```| ```_vsnwprintf_s```, ```StringCbVPrintf```, ```StringCbVPrintf_l```, ```StringCbVPrintf_lEx```, ```StringCbVPrintfEx```| Limited error detection |
 |```_vstprintf```| ```StringCbVPrintf```, ```StringCbVPrintf_l```, ```StringCbVPrintf_lEx```, ```StringCbVPrinfEx```, ```StringCchVPrintf```, ```StringCchVPrintf_l```, ```StringCchVPrintf_lEx```, ```StringCchVPrintfEx```| No maximum length |
-|```_wmakepath```| ```_wmakepath_s```|
-|```_wsplitpath```| ```_wsplitpath_s``` |
-|```OemToCharW```| |
+|```_wmakepath```| ```_wmakepath_s```| |
+|```_wsplitpath```| ```_wsplitpath_s``` | |
+|```OemToCharW```| | |
 |```StrCat```| ```StringCbCat```, ```StringCbCatEx```, ```StringCchCat```, ```StringCchCatEx```| Limited error detection |
-|```StrCatA```| |
+|```StrCatA```| | |
 |```StrCatBuff```| ```StringCbCat```, ```StringCbCatEx```, ```StringCchCat```, ```StringCchCatEx``` | No NULL-termination |
-|```StrCatBuffA```| |
-|```StrCatBuffW```| |
-|```StrCatChainW```| |
-|```StrCatN```| |
-|```StrCatNA```| |
-|```StrCatNW```| |
-|```StrCatW```| |
+|```StrCatBuffA```| | |
+|```StrCatBuffW```| | |
+|```StrCatChainW```| | |
+|```StrCatN```| | |
+|```StrCatNA```| | |
+|```StrCatNW```| | |
+|```StrCatW```| | |
 |```StrCpy```| ```StringCbCopy```, ```StringCbCopyEx```, ```StringCchCopy```, ```StringCchCopyEx``` | No bounds checking |
-|```StrCpyA```| |
-|```StrCpyN```| |
-|```StrCpyNA```| |
-|```StrCpyNW```| |
-|```strcpyW```| |
-|```StrCpyW```| |
+|```StrCpyA```| | |
+|```StrCpyN```| | |
+|```StrCpyNA```| | |
+|```StrCpyNW```| | |
+|```strcpyW```| | |
+|```StrCpyW```| | |
 |```StrNCat```| ```StringCbCatN```, ```StringCbCatNEx```, ```StringCchCatN```, ```StringCchCatNEx``` | Limited error detection |
-|```StrNCatA```| |
-|```StrNCatW```| |
-|```StrNCpy```| |
-|```StrNCpyA```| |
-|```StrNCpyW```| |
+|```StrNCatA```| | |
+|```StrNCatW```| | |
+|```StrNCpy```| | |
+|```StrNCpyA```| | |
+|```StrNCpyW```| | |
 |```gets```| ```gets_s```, ```fgets```, ```StringCbGets```, ```StringCbGetsEx```, ```StringCchGets```, ```StringCchGetsEx``` | Deprecated by C11 standard |
 |```lstrcat```| ```StringCbCat```, ```StringCbCatEx```, ```StringCchCat```, ```StringCchCatEx``` | Limited error detection |
-|```lstrcatA```| |
-|```lstrcatn```| |
-|```lstrcatnA```| |
-|```lstrcatnW```| |
-|```lstrcatW```| |
+|```lstrcatA```| | |
+|```lstrcatn```| | |
+|```lstrcatnA```| | |
+|```lstrcatnW```| | |
+|```lstrcatW```| | |
 |```lstrcpy```| ```StringCbCopy```, ```StringCbCopyEx```, ```StringCchCopy```, ```StringCchCopyEx``` | Limited error detection |
-|```lstrcpyA```| |
-|```lstrcpyn```| |
-|```lstrcpynA```| |
-|```lstrcpynW```| |
-|```lstrcpyW```| |
-|```snscanf```| |
-|```snwscanf```| |
+|```lstrcpyA```| | |
+|```lstrcpyn```| | |
+|```lstrcpynA```| | |
+|```lstrcpynW```| | |
+|```lstrcpyW```| | |
+|```snscanf```| | |
+|```snwscanf```| | |
 |```sprintf```| ```sprintf_s```| Limited error detection |
-|```sprintfA```| |
-|```sprintfW```| |
-|```lstrncat```| |
-|```makepath```| |
-|```nsprintf```| |
+|```sprintfA```| | |
+|```sprintfW```| | |
+|```lstrncat```| | |
+|```makepath```| | |
+|```nsprintf```| | |
 |```strcat```| ```strcat_s```, ```StringCbCat```, ```StringCbCatEx```, ```StringCchCat```, ```StringCchCatEx```, ```strlcat``` | Limited error detection |
-|```strcatA```| |
-|```strcatW```| |
+|```strcatA```| | |
+|```strcatW```| | |
 |```strcpy```| ```strcpy_s```, ```StringCbCopy```, ```StringCbCopyEx```, ```StringCchCopy```, ```StringCchCopyEx```, ```strlcpy``` | No bounds checking |
-|```strcpyA```| |
+|```strcpyA```| | |
 |```strncat```| ```strncat_s```, ```StringCbCatN```, ```StringCbCatNEx```, ```StringCchCatN```, ```StringCchCatNEx```, ```strlcat```| Limited error detection |
 |```strncpy```| ```strncpy_s```, ```StringCbCopyN```, ```StringCbCopyNEx```, ```StringCchCopyN```, ```StringCchCopyNEx```, ```strlcpy``` | Limited error detection |
 |```swprintf```| ```swprintf_s``` ```StringCbPrintf```, ```StringCbPrintf_l```, ```StringCbPrintf_lEx```, ```StringCbPrintf```, ```StringCbPrintfEx``` | Limited error detection |
-|```ualstrcpyW```| |
+|```ualstrcpyW```| | |
 |```vsnprintf```| ```vsnprintf_s```, ```StringCbVPrintf```, ```StringCbVPrintf_l```, ```StringCbVPrintf_lEx```, ```StringCbVPrintfEx```, ```StringCchVPrintf```, ```StringCchVPrintf_l```, ```StringCchVPrintf_lEx```, ```StringCchVPrintfEx```| Limited error detection |
 |```vsprintf```| ```vsprintf_s```, ```StringCbVPrintf```, ```StringCbVPrintf_l```, ```StringCbVPrintf_lEx```, ```StringCbVPrintfEx```, ```StringCchVPrintf```, ```StringCchVPrintf_l```, ```StringCchVPrintf_lEx```, ```StringCchVPrintfEx```, ```vasprintf``` | Limited error detection |
-|```vswprintf```| ```vswprintf_s``` |
+|```vswprintf```| ```vswprintf_s``` | |
 |```wcscat```| ```wcscat_s```, ```StringCbCat```, ```StringCbCatEx```, ```StringCchCat```, ```StringCchCatEx```, ```wcslcat``` | Limited error detection |
 |```wcscpy```| ```wcscpy_s```, ```StringCbCopy```, ```StringCbCopyEx```, ```StringCchCopy```, ```StringCchCopyEx```, ```wcslcpy``` | No bounds checking |
 |```wcsncat```| ```wcsncat_s```, ```wcslcat``` | Limited error detection |
 |```wcsncpy```| ```wcsncpy_s```, ```StringCbCopyN```, ```StringCbCopyNEx```, ```StringCchCopyN```, ```StringCchCopyNEx```, ```wcslcpy``` | Limited error detection |
 |```wnsprintf```| ```StringCbPrintf```, ```StringCbPrintf_l```, ```StringCbPrintf_lEx```, ```StringCbPrintfEx```, ```StringCchPrintf```, ```StringCchPrintfEx``` | No NULL-termination |
-|```wnsprintfA```| |
+|```wnsprintfA```| | |
 |```wsprintf```| | No NULL-termination |
-|```wsprintfA```| |
-|```wsprintfW```| |
+|```wsprintfA```| | |
+|```wsprintfW```| | |
 |```wvnsprintf```| ```StringCbVPrintf```, ```StringCbVPrintf_l```, ```StringCbVPrintf_lEx```, ```StringCbVPrintfEx```, ```StringCchVPrintf```, ```StringCchVPrintf_l```, ```StringCchVPrintf_lEx```, ```StringCchVPrintfEx``` | No NULL-termination |
-|```wvnsprintfA```| |
-|```wvnsprintfW```| |
+|```wvnsprintfA```| | |
+|```wvnsprintfW```| | |
 |```wvsprintf```| ```StringCbVPrintf```, ```StringCbVPrintf_l```, ```StringCbVPrintf_lEx```, ```StringCbVPrintfEx```, ```StringCchVPrintf```, ```StringCchVPrintf_l```, ```StringCchVPrintf_lEx```, ```StringCchVPrintfEx```| No NULL-termination |
-|```wvsprintfA```| |
-|```wvsprintfW```| |
-
- 
-
-
-
-
-
+|```wvsprintfA```| | |
+|```wvsprintfW```| | |
