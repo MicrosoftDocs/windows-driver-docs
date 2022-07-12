@@ -43,15 +43,23 @@ The following parameters appear on the blue screen.
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
-<td align="left"><p>Reserved</p></td>
+<td align="left"><p>0: Any failure of 2nd call to internal routine PsInitSystem </p>
+<p> 2: Error when opening a system DLL </p>
+<p> 3: Error when creating section for system DLL </p>
+ <p> 4: Error when accessing section for system DLL </p>
+ <p> 5: Error when mapping view of section for system DLL </p>
+ <p> 6: Error finding any of one set of functions in system DLL </p>
+ <p> 7: Error finding any of second set of functions in system DLL </p>
+ <p> 8: Error finding any of third set of functions in system DLL </p>
+ <p> Error getting section information for system DLL (Windows Vista and later) </p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
-<td align="left"><p>Reserved</p></td>
+<td align="left"><p>index to identify system DLL when the 2nd parameter is 2</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>4</p></td>
-<td align="left"><p>Reserved</p></td>
+<td align="left"><p>0</p></td>
 </tr>
 </tbody>
 </table>
@@ -62,7 +70,7 @@ The following parameters appear on the blue screen.
 
 Any part of the disk subsystem can cause the PROCESS1\_INITIALIZATION\_FAILED bug check, including bad disks, bad or incorrect cables, mixing different ATA-type devices on the same chain, or drives that are not available because of hardware regeneration.
 
-This bug check can also be caused by a missing file from the boot partition or by a driver that a user accidentally disabled in the **Drivers** tab.
+This bug check can also be caused by the system not being able to access to the file ntdll.dll, either because it is missing or corrupt, or if the catroot folder is missing, or by a driver that a user accidentally disabled in the **Drivers** tab.
 
  
 ## Resolution
