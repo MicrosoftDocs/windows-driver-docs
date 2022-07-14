@@ -1,7 +1,7 @@
 ---
 title: KSPIN_MEDIUM structure (ks.h)
 description: The KSPIN_MEDIUM structure identifies a specific connection on a communication bus.
-ms.date: 07/07/2021
+ms.date: 07/14/2022
 ms.custom: contperf-fy22q1
 ---
 
@@ -14,7 +14,7 @@ The **KSPIN_MEDIUM** structure identifies a specific connection on a communicati
 
 ```cpp
 struct KSPIN_MEDIUM {
-  GUID  Set;
+  GUID Set;
   ULONG Id;
   ULONG Flags;
 };

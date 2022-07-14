@@ -1,7 +1,7 @@
 ---
 title: KSPIN_INTERFACE structure (ks.h)
 description: The KSPIN_INTERFACE structure describes a specific interface within an interface set.
-ms.date: 07/07/2021
+ms.date: 07/14/2022
 ms.custom: contperf-fy22q1
 ---
 
@@ -13,7 +13,7 @@ The **KSPIN_INTERFACE** structure describes a specific interface within an inter
 
 ```cpp
 struct KSPIN_INTERFACE {
-  GUID  Set;
+  GUID Set;
   ULONG Id;
   ULONG Flags;
 };
