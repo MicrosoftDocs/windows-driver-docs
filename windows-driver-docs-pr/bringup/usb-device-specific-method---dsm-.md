@@ -22,6 +22,7 @@ The _DSM control method parameters for the post-reset processing function for du
 ### Return (Function 1)
 
 None
+
 The Windows inbox drivers only support USB controllers in host mode. After each controller reset, the USB driver will invoke the _DSM function index 1 to perform any controller-specific initialization required to configure the USB controller to operate in host mode.
 
 When this function is used, the _DSM method must appear under the USB controller device.
