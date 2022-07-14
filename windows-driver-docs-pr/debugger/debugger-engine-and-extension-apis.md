@@ -26,7 +26,7 @@ This section includes:
 
 ## <span id="ddk_introduction_dbx"></span><span id="DDK_INTRODUCTION_DBX"></span>
 
-This documentation describes how to use interfaces scuh as those provided by the debugger engine to write extensions that will run in WinDbg, KD, CDB, and NTSD. These debugger extensions can be used when performing user-mode or kernel-mode debugging.
+This documentation describes how to use interfaces such as those provided by the debugger engine to write extensions that will run in WinDbg, KD, CDB, and NTSD. These debugger extensions can be used when performing user-mode or kernel-mode debugging.
 
 ### <span id="debugger_engine"></span><span id="DEBUGGER_ENGINE"></span>Debugger Engine
 
