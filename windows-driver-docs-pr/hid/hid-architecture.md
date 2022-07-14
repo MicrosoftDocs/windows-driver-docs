@@ -72,13 +72,13 @@ Windows supports the following top-level collections:
 | 0x0084 | 0x0004 | Yes | Yes | Yes | HID UPS Battery | Shared |
 | 0x008C | 0x0002 | No | Yes (Windows 8.1 and later) | Yes | Barcode Scanner (hidscanner.dll) | Shared |
 
-In the preceding table, the access mode for input HID clients is *Exclusive* to prevent other HID clients from intercepting or receiving global input state when they are not the target recipient of that input. Therefore, for security reasons RIM (Raw Input Manager) opens all such devices exclusively. 
+In the preceding table, the access mode for input HID clients is *exclusive* to prevent other HID clients from intercepting or receiving global input state when they are not the target recipient of that input. For security reasons, Raw Input Manager (RIM) opens all such devices exclusively.
 
-If device is opened in *Exclusive* mode by  RIM (Raw Input Manager) user can still open HID device interface without requesting read and write permissions and obtain HID device information via HIDClass support routines (HidD\_GetXxx).
+If a device is opened in *exclusive* mode by RIM, the user can still open a HID device interface without requesting read and write permissions and obtain HID device information via HIDClass support routines (HidD\_GetXxx).
 
-Sharing mode allows multiple applications to access the device. For example, multiple applications can access a barcode scanner to inquire about device capabilities and retrieve statistics. However, retrieving decoded data from a barcode scanner is done in Exclusive mode. Usages are defined by the [USB-IF Usage Tables](https://usb.org/document-library/hid-usage-tables-121).
+Sharing mode allows multiple applications to access a device. For example, multiple applications can access a barcode scanner to inquire about device capabilities and retrieve statistics. However, retrieving decoded data from a barcode scanner is done in *exclusive* mode. Usages are defined by the [USB-IF Usage Tables](https://usb.org/document-library/hid-usage-tables-121).
 
-*Multiple: Sensors usages from 0x00 – 0xFF are segmented for different purposes. For example 0x10 indicates a biometric sensor; 0x40 indicates a light sensor. Those allocations are not contiguous. For the list of sensor usages, see  [USB-IF Device Class Definitions for HID](https://www.usb.org/document-library/device-class-definition-hid-111). For information about sensors usages that are supported in Windows, [HID Sensors Usages](/windows-hardware/design/whitepapers/hid-sensors-usages).
+*Multiple: Sensors usages from 0x00 – 0xFF are segmented for different purposes. For example 0x10 indicates a biometric sensor; 0x40 indicates a light sensor. Those allocations are not contiguous. For the list of sensor usages, see [USB-IF Device Class Definitions for HID](https://www.usb.org/document-library/device-class-definition-hid-111). For information about sensors usages that are supported in Windows, [HID Sensors Usages](/windows-hardware/design/whitepapers/hid-sensors-usages).
 
 ## The HID Transport Driver
 
