@@ -6,7 +6,7 @@ ms.topic: article
 ms.date: 07/15/2022
 ---
 
-# PresentAt on Netflix app (Software Digital Rights Management) where the % of machines hit one or more media engine errors
+#  Percent of machines using PresentAt on Netflix app (Software Digital Rights Management) that hit one or more media engine errors
 
 ## Description
 
