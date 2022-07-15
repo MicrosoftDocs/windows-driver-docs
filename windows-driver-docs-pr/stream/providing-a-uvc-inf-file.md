@@ -29,8 +29,8 @@ To do so, include the following code in the INF file, here arbitrarily named *Xu
 
 [Version]
 Signature="$Windows NT$"
-Class=Image
-ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
+Class=Camera
+ClassGuid={ca3e7ab9-b4c3-4ae6-8251-579ef933890f}
 Provider=%CompanyName%
 
 [SourceDisksNames]
@@ -56,8 +56,8 @@ The device-specific INF file is matched with the device based on the VID/PID ide
 %MyDevice.DeviceDesc%=MyDevice,USB\Vid_XXXX&Pid_XXXX&MI_XX
 
 [MyDevice]
-Include=usbvideo.inf, ks.inf, kscaptur.inf, dshowext.inf
-Needs=USBVideo.NT, KS.Registration, KSCAPTUR.Registration.NT, DSHOWEXT.Registration
+Include=usbvideo.inf, ks.inf, kscaptur.inf
+Needs=USBVideo.NT, KS.Registration, KSCAPTUR.Registration.NT
 AddReg=MyDevice.Plugins
 CopyFiles=MyDevice.CopyList
 ```
@@ -120,9 +120,9 @@ The following INF section shows how to populate interface-specific registry entr
 
 ```inf
 [MyDevice.Interfaces]
-AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,MyDevice.Interface
-AddInterface=%KSCATEGORY_RENDER%,GLOBAL,MyDevice.Interface
-AddInterface=%KSCATEGORY_VIDEO%,GLOBAL,MyDevice.Interface
+AddInterface=%KSCATEGORY_CAPTURE%,<Custom GUID/Global>,MyDevice.Interface
+AddInterface=%KSCATEGORY_VIDEO_CAMERA%,<Custom GUID/Global>,MyDevice.Interface
+AddInterface=%KSCATEGORY_VIDEO%,<Custom GUID/Global>,MyDevice.Interface
 
 [MyDevice.Interface]
 AddReg=MyDevice.Interface.AddReg
@@ -169,7 +169,7 @@ This final section supplies missing definitions for the INF.
 Plugin.CLSID="{zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz}"
 ProxyVCap.CLSID="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
 XU_GUID="{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}"
-KSCATEGORY_RENDER="{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_VIDEO_CAMERA="{E5323777-F976-4f5b-9B55-B94699C46E44}"
 KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
 KSCATEGORY_VIDEO="{6994AD05-93EF-11D0-A3CC-00A0C9223196}"
 
