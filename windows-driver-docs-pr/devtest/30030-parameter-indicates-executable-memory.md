@@ -250,7 +250,7 @@ MmAllocateContiguousNodeMemory(       numberOfBytes,
 | Banned API | Replacement(s) | Rationale / Notes |
 | -----------|----------------|-------|
 |```ExInitializeNPagedLookasideList()```|<ul><li>Please OR/set the flag parameter with/to ```POOL_NX_ALLOCATION```</li><li>Or by using the ```POOL_NX_OPTIN_AUTO``` / ```POOL_NX_OPTIN``` methods [above](/windows-hardware/drivers/devtest/30030-parameter-indicates-executable-memory#for-defects-involving-the-parameter-types-mm_page_priority-and-pool_type)</li></ul>|
-|```MmAllocateContiguousMemorySpecifyCache()```|```MmAllocateContiguousNodeMemory()```|
+|```MmAllocateContiguousMemorySpecifyCache()```|```MmAllocateContiguousNodeMemory()```|See [above](/windows-hardware/drivers/devtest/30030-parameter-indicates-executable-memory#for-defects-involving-cache-types) for more information|
 ## Banned Flags
 <table>
 <thead>
