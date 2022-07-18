@@ -9,7 +9,7 @@ f1_keywords:
 # C30030
 
 
-**Warning C30030: Banned Mem Allocation Unsafe**\
+**Warning C30030: Banned Mem Allocation Unsafe (BANNED_MEM_ALLOCATION_UNSAFE)**\
 Example output: ```Calling a memory allocating function and passing a parameter that indicates executable memory```
 
 Some APIs have parameters that configure whether memory is executable or not. This error indicates that parameters are used that result in executable NonPagedPool being allocated. You should use one of the available options to request non-executable memory. A list of all banned functions and flags covered by this error and the recommended replacements can be found at the bottom of this page.
@@ -249,8 +249,7 @@ MmAllocateContiguousNodeMemory(       numberOfBytes,
 ## Banned Functions
 | Banned API | Replacement(s) | Rationale / Notes |
 | -----------|----------------|-------|
-|```MmMapIoSpace()```|```MmMapIoSpaceEx()```|
-|```ExInitializeNPagedLookasideList()```|<ul><li>Please OR/set the flag parameter with/to ```POOL_NX_ALLOCATION```</li><li>Or by using the ```POOL_NX_OPTIN_AUTO``` / ```POOL_NX_OPTIN``` methods above</li></ul>|
+|```ExInitializeNPagedLookasideList()```|<ul><li>Please OR/set the flag parameter with/to ```POOL_NX_ALLOCATION```</li><li>Or by using the ```POOL_NX_OPTIN_AUTO``` / ```POOL_NX_OPTIN``` methods [above](/windows-hardware/drivers/devtest/30030-parameter-indicates-executable-memory#for-defects-involving-the-parameter-types-mm_page_priority-and-pool_type)</li></ul>|
 |```MmAllocateContiguousMemorySpecifyCache()```|```MmAllocateContiguousNodeMemory()```|
 ## Banned Flags
 <table>
@@ -263,21 +262,37 @@ MmAllocateContiguousNodeMemory(       numberOfBytes,
 </thead>
 <tbody>
 <tr>
-  <td rowspan="3"><code>MM_PAGE_PRIORITY</code></td>
+  <td rowspan="3"><code>MM_PAGE_PRIORITY</code><br><br>See <a href="/windows-hardware/drivers/devtest/30030-parameter-indicates-executable-memory#for-defects-involving-the-parameter-types-mm_page_priority-and-pool_type">above</a> for more information</td>
   <td><code>POOL_NX_OPTIN_AUTO</code></td>
   <td>This supports creating multiple binaries for different versions of Windows</td>
 </tr>
 <tr>
   <td><code>POOL_NX_OPTIN</code>(+ <code>ExInitializeDriverRuntime(DrvRtPoolNxOptIn)</code>)</td>
-  <td>This supports a single binary running on different versions of windows</td>
+  <td>This supports a single binary running on different versions of Windows</td>
 </tr>
 <tr>
   <td><code>PagePriority</code> / <code>MdlMappingNoExecute</code></td>
   <td>This will work on Windows 8 and later</td>
 </tr>
+<tr>
+  <td><code>PAGE_EXECUTE</code></td>
+  <td><code>PAGE_NOACCESS</code></td>
+  <td rowspan="4">See <a href="/windows-hardware/drivers/devtest/30030-parameter-indicates-executable-memory#for-defects-involving-page-protections">above</a> for more information</td>
+</tr>
+<tr>
+  <td><code>PAGE_EXECUTE_READ</code></td>
+  <td><code>PAGE_READONLY</code></td>
+</tr>
+<tr>
+  <td><code>PAGE_EXECUTE_READWRITE</code></td>
+  <td><code>PAGE_READWRITE</code></td>
+</tr>
+<tr>
+  <td><code>PAGE_EXECUTE_WRITECOPY</code></td>
+  <td><code>PAGE_WRITECOPY</code></td>
+</tr>
 </tbody>
 </table>
-## <span id="related_topics"></span>Related topics
 
-
+## Related topics
 [**POOL\_TYPE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type)
