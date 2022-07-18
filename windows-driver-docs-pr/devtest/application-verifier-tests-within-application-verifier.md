@@ -659,9 +659,9 @@ The Hangs tests for the use of APIs that cause the system to become unresponsive
 ## ARM64EC Support
 
 The following providers do not support ARM64EC, and therefore will crash a program running in ARM64EC:
--  [Cuzz](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/application-verifier-tests-within-application-verifier#cuzz)
--  [LuaPriv](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/application-verifier-tests-within-application-verifier#luapriv)
--  [Printing](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/application-verifier-tests-within-application-verifier#printing)
+-  [Cuzz](#cuzz)
+-  [LuaPriv](#luapriv)
+-  [Printing](#printing)
 
 ## See Also
 
@@ -676,9 +676,3 @@ The following providers do not support ARM64EC, and therefore will crash a progr
 [Application Verifier - Debugging Application Verifier Stops](application-verifier-debugging-application-verifier-stops.md)
   
 [Application Verifier - Frequently Asked Questions](application-verifier-faqs.md)
-
-
-
-
-
-
