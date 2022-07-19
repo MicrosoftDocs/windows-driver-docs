@@ -131,7 +131,7 @@
     - name: "Error handling"
       href: error-handling-for-spi.md
     - name: "D3Hot Support for HidSpiCx devices"
-      href: d3-support-for-hidspicx.md
+      href: d3hot-support-for-hidspicx.md
 - name: "Non-HID legacy devices and drivers"
   items: 
   - name: "Non-HID legacy devices"

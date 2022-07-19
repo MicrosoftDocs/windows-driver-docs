@@ -11,16 +11,16 @@ Starting Windows 11 22000, HidSpiCx provides support for a D3Hot power policy, a
 ## Behavior
 Enabling the D3Hot power policy has the following effects:
 - If a HIDSPI device goes to the HIDSPI `OFF` power state, it will be reset when transitioning back to `D0` (HIDSPI `ON` power state)
-- If a HIDSPI device goes to the HIDSPI `SLEEP` power state in `D1` or `D2`, it will **not** be reset on `Dx` to `D0` transition (HIDSPI `ON` power state).
-- If a HIDSPI device goes to the HIDSPI `SLEEP` power state in `D3`:
+- If a HIDSPI device goes to the HIDSPI `SLEEP` power state (armed for wake) in `D1` or `D2`, it will **not** be reset on `Dx` to `D0` transition (HIDSPI `ON` power state).
+- If a HIDSPI device goes to the HIDSPI `SLEEP` power state (armed for wake) in `D3`:
     - If a `D3COLD_SUPPORT_INTERFACE` is exposed by the parent bus, and a call to the interface indicates that a `D3Cold` transition has occurred, the device will be reset on `D3Cold` to `D0` transition (HIDSPI `ON` power state).
     - If a `D3COLD_SUPPORT_INTERFACE` is exposed by the parent bus, and a call to the interface indicates that a `D3Cold` transition has **not** occurred, the device will **not** be reset on `D3Hot` to `D0` transition (HIDSPI `ON` power state).
     - If a `D3COLD_SUPPORT_INTERFACE` is **not** exposed by the parent bus, it is assumed the device does not support `D3Cold`, and it will **not** be reset on `D3` to `D0` transition.
 
 Without the D3Hot power policy, the default behavior is:
 - If a HIDSPI device goes to the HIDSPI `OFF` power state, it will be reset when transitioning back to `D0` (HIDSPI `ON` power state)
-- If a HIDSPI device goes to the HIDSPI `SLEEP` power state in `D1` or `D2`, it will **not** be reset on `Dx` to `D0` transition (HIDSPI `ON` power state).
-- If a HIDSPI device goes to the HIDSPI `SLEEP` or `OFF` power state in `D3`, it **will be reset** on `D3` to `D0` transition (HIDSPI `ON` power state).
+- If a HIDSPI device goes to the HIDSPI `SLEEP` power state (armed for wake) in `D1` or `D2`, it will **not** be reset on `Dx` to `D0` transition (HIDSPI `ON` power state).
+- If a HIDSPI device goes to the HIDSPI `SLEEP` (armed for wake) or `OFF` power state (not armed for wake) in `D3`, it **will be reset** on `D3` to `D0` transition (HIDSPI `ON` power state).
 
 ## Configuration
 To use the D3Hot power policy, HidSpiCx client drivers may opt-in by adding the `UseD3HotPowerPolicy` device property via the HWA driver INF 
