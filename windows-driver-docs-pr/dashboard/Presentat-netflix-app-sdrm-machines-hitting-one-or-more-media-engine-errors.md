@@ -20,7 +20,7 @@ Examples of media engine errors can be found here: [Errors Online: Error lookup]
 
 | Attribute | Value |
 |--|--|
-| **Audience** | Machines with a WDDM 3.1+ graphics driver that supports displayables, which is a feature in Direct 3D 11  [D3D11_FEATURE enumeration (d3d11.h)](https://docs.microsoft.com/en-us/windows/win32/api/d3d11/ne-d3d11-d3d11_feature) - Win32 apps, and is running the Netflix app. |
+| **Audience** | Machines with a WDDM 3.1+ graphics driver that supports displayables, which is a feature in Direct 3D 11  [D3D11_FEATURE enumeration (d3d11.h)](/windows/win32/api/d3d11/ne-d3d11-d3d11_feature) - Win32 apps, and is running the Netflix app. |
 | **Time period** | 7-day sliding window |
 | **Measurement criteria** | Percent of machines |
 | **Minimum population** | 100 machines |

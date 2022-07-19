@@ -26,7 +26,7 @@ Examples of setting KSPROPERTY controls can be found in the [AVStream Camera Sam
 
 Starting in Windows 11, version 22H2, Shallow focus mode has been introduced to the existing background segmentation control as an optional capability.
 
- **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_SHALLOWFOCUS** is a new flag added to the KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION control that is used to control the Bokeh (shallow focus mode) on the driver. This is a version of Background blur ([**KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION**](/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-backgroundsegmentation)), where the emphasis is less on privacy and more on making the background of the user look like from a higher quality camera with depth of field effect. This visually will make the foreground subject stand out, similar to how portrait mode photography on many mobile phones has become popular.
+ **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_SHALLOWFOCUS** is a new flag added to the KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION control that is used to control the Bokeh (shallow focus mode) on the driver. This is a version of Background blur **KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION**, where the emphasis is less on privacy and more on making the background of the user look like from a higher quality camera with depth of field effect. This visually will make the foreground subject stand out, similar to how portrait mode photography on many mobile phones has become popular.
 
 The following table shows example images of how this works:
 

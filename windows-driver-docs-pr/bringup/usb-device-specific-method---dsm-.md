@@ -68,7 +68,7 @@ When this function is used, the _DSM method must appear under the USB port devic
 
 ## Function 5: Disable U1 and U2 transitions for a port
 
-When this _DSM method returns 0x01 the USB bus driver disables U1 and U2 transitions for the port. If it returns 0x00 the USB bus driver falls back to its default heuristics for U1 and U2 transitions described in [U1 and U2 transitions](/windows-hardware/drivers/usbcon/u1-and-u2-transitions).
+When this _DSM method returns 0x01 the USB bus driver disables U1 and U2 transitions for the port. If it returns 0x00 the USB bus driver falls back to its default heuristics for U1 and U2 transitions described in [U1 and U2 transitions](../usbcon/u1-and-u2-transitions.md).
 
 The _DSM method must appear under a USB3 port. It is available starting with Windows 10, version 2004 (Vibranium).
 
