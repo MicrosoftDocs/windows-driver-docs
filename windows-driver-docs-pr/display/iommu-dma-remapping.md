@@ -124,12 +124,9 @@ The following table lists the DDIs and associated input structures introduced to
 | -------- | ----------------------------- |
 | [**DXGKCB_CREATEPHYSICALMEMORYOBJECT**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_createphysicalmemoryobject) | [**DXGKARGCB_CREATE_PHYSICAL_MEMORY_OBJECT**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkargcb_create_physical_memory_object) |
 | [**DXGKCB_DESTROYPHYSICALMEMORYOBJECT**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_destroyphysicalmemoryobject) | [**DXGKARGCB_DESTROY_PHYSICAL_MEMORY_OBJECT**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkargcb_destroy_physical_memory_object) |
-|   |   |
 | [**DXGKCB_MAPPHYSICALMEMORY**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_mapphysicalmemory) | [**DXGKARGCB_MAP_PHYSICAL_MEMORY**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkargcb_map_physical_memory) |
 | [**DXGKCB_UNMAPPHYSICALMEMORY**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_unmapphysicalmemory) | [**DXGKARGCB_UNMAP_PHYSICAL_MEMORY**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkargcb_unmap_physical_memory) |
-|   |   |
 | [**DXGKCB_ALLOCATEADL**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_allocateadl) | [**DXGKARGCB_ALLOCATE_ADL**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkargcb_allocate_adl) |
 | [**DXGKCB_FREEADL**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_freeadl) |
-|   |   |
 | [**DXGKCB_OPENPHYSICALMEMORYOBJECT**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_openphysicalmemoryobject) | [**DXGKARGCB_OPEN_PHYSICAL_MEMORY_OBJECT**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkargcb_open_physical_memory_object) |
 | [**DXGKCB_CLOSEPHYSICALMEMORYOBJECT**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_closephysicalmemoryobject) | [**DXGKARGCB_CLOSE_PHYSICAL_MEMORY_OBJECT**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkargcb_close_physical_memory_object) |
