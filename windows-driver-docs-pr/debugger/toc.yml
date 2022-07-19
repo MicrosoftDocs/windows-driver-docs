@@ -1796,6 +1796,8 @@
     href: symbols.md
   - name: "Microsoft public symbol server"
     href: microsoft-public-symbols.md
+  - name: "Microsoft public symbol server EULA"
+    href: microsoft-public-symbols-eula.md
   - name: "Symbol path for Windows debuggers"
     href: symbol-path.md
   - name: "Using a Symbol Server"

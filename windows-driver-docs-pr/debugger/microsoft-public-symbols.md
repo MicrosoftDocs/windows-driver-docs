@@ -48,6 +48,8 @@ For more information about working with symbols, see the [Symbol path for Window
 The Microsoft Symbol Server provides compressed versions of the symbol files. The files have an underscore at the end of the filename’s extension to indicate that they are compressed. For example, the PDB for ntdll.dll is available as ntdll.pd\_. When SymProxy downloads a compressed file, it will store the file decompressed in the local file system. The DontUncompress registry key can be set to disable this behavior in SymProxy.
 
 
+**Microsoft License Terms - Microsoft Symbol Server**
 
+Microsoft makes certain symbols, binary code and other executables available via the Microsoft Symbol Server for use in debugging and testing of the user’s software in connection with Microsoft software, and not for any unauthorized use.  Please refer to the [Microsoft License Terms - Microsoft Symbol Server](./microsoft-public-symbols-eula.md).
  
 
