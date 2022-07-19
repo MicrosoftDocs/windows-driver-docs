@@ -32,7 +32,7 @@ The SYSTEM\_SERVICE\_EXCEPTION bug check has a value of 0x0000003B. This indicat
 
 This stop code indicates that executing code had an exception, and the thread that was below it, is a system thread.
 
-This can happen because a NULL pointer dereferenced​ or a random incorrect address was accessed. This in turn can be caused my memory being freed prematurely​, or data structure corruption.
+This can happen because a NULL pointer dereferenced​ or a random incorrect address was accessed. This in turn can be caused by memory being freed prematurely​, or data structure corruption.
 
 The exception information that is returned in parameter 1 is described in [NTSTATUS values](/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55). The exception codes are defined in *ntstatus.h*, a header file provided by the [Windows Driver Kit](../index.yml). (For more info, see [Header files in the Windows Driver Kit](../gettingstarted/header-files-in-the-windows-driver-kit.md)). 
 
