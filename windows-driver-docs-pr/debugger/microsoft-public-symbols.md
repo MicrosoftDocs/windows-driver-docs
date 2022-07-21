@@ -50,6 +50,6 @@ The Microsoft Symbol Server provides compressed versions of the symbol files. Th
 
 **Microsoft License Terms - Microsoft Symbol Server**
 
-Microsoft makes certain symbols, binary code and other executables available via the Microsoft Symbol Server for use in debugging and testing of the user’s software in connection with Microsoft software, and not for any unauthorized use.  Please refer to the [Microsoft License Terms - Microsoft Symbol Server](./microsoft-public-symbols-eula.md).
+Microsoft makes certain symbols, binary code and other executables available via the Microsoft Symbol Server for use in debugging and testing of the user’s software in connection with Microsoft software, and not for any unauthorized use.  Please refer to the [Microsoft License Terms - Microsoft Symbol Server](https://review.docs.microsoft.com/en-us/legal/windows-sdk/microsoft-symbol-server-license-terms).
  
 
