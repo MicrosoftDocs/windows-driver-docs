@@ -8,7 +8,7 @@
     href: threat-modeling-for-drivers.md
   - name: "Windows security model for driver developers"
     href: windows-security-model.md
-  - name: "Evaluate HVCI driver compatibility"
-    href: use-device-guard-readiness-tool.md
+  - name: "Implement HVCI compatible code"
+    href: implement-hvci-compatible-code.md
   - name: "Development security practices for Windows driver developers"
     href: driver-security-dev-best-practices.md

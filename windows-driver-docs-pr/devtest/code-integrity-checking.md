@@ -85,4 +85,4 @@ You can activate code integrity checking for one or more drivers by using Driver
 
 ## Related topics
 
-[Evaluate HVCI driver compatibility](../driversecurity/use-device-guard-readiness-tool.md)
+[Implement HVCI compatibile code](../driversecurity/implement-hvci-compatible-code.md)

@@ -1,7 +1,7 @@
 ---
 title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
-ms.date: 05/27/2022
+ms.date: 07/20/2022
 ---
 
 # Driver security checklist
@@ -32,7 +32,7 @@ In addition to avoiding the issues associated with a driver being attacked, many
 
 ![empty checkbox.](images/checkbox.png)[Follow driver secure coding guidelines](#follow-driver-secure-coding-guidelines)
 
-![empty checkbox.](images/checkbox.png)[Validate HVCI compatibility](#validate-hvci-compatibility)
+![empty checkbox.](images/checkbox.png)[Implement HVCI compatible code](#implement-hvci-compatible-code)
 
 ![empty checkbox.](images/checkbox.png)[Follow technology specific code best practices](#follow-technology-specific-code-best-practices)
 
@@ -187,7 +187,7 @@ To manage this risk, copy any parameters that need to be validated from the user
 
 - Device drivers must properly handle various user-mode, as well as kernel to kernel I/O, requests.
 
-To allow drivers to support HVCI virtualization, there are additional memory requirements. For more information, see [HVCI Compatibility](#validate-hvci-compatibility) later in this article.
+To allow drivers to support HVCI virtualization, there are additional memory requirements. For more information, see [Implement HVCI compatible code](#implement-hvci-compatible-code) later in this article.
 
 ### Handles
 
@@ -337,7 +337,7 @@ For more information, see the following articles:
 
 [Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md)
 
-## Validate HVCI compatibility
+## Implement HVCI compatible code
 
 **Security checklist item \#8:** *Validate that your driver uses memory so that it is HVCI compatible.*
 
@@ -355,9 +355,9 @@ To implement HVCI compatible code, make sure your driver code does the following
 - Does not load data files as executable
 - Section alignment is a multiple of 0x1000 (PAGE\_SIZE). E.g. DRIVER\_ALIGNMENT=0x1000
 
-For more information about using the tool and a list of incompatible memory calls, see [Evaluate HVCI driver compatibility](use-device-guard-readiness-tool.md).
+For more information about using the tool and a list of incompatible memory calls, see [Implement HVCI compatible code](implement-hvci-compatible-code.md).
 
-For more information about the related system fundamentals security test, see [Device Guard - Compliance Test](/windows-hardware/test/hlk/testref/10c242b6-49f6-491d-876c-c39b22b36abc) and [Driver Compatibility with Device Guard](/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard).
+For more information about the related system fundamentals security test, see [HyperVisor Code Integrity Readiness Test](/windows-hardware/test/hlk/testref/b972fc52-2468-4462-9799-6a1898808c86) and [Hypervisor-Protected Code Integrity (HVCI)](/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard).
 
 ## Follow technology-specific code best practices
 

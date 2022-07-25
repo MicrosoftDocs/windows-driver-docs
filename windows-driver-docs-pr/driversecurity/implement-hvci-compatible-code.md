@@ -1,26 +1,12 @@
 ---
-title: Evaluate HVCI driver compatibility
+title: Implement HVCI compatible code
 description: Follow these steps to use to evaluate HVCI driver compatibility of your driver code.
-ms.date: 05/26/2020
+ms.date: 07/20/2022
 ---
 
-# Evaluate HVCI driver compatibility
+# Implement HVCI compatible code
 
-## Overview
-
-The DGReadiness tool is designed to check a number of requirements for creating a PC that supports a variety of security enhancement features. This section describes how to use the tool to evaluate the ability of a driver to run in a Hypervisor-protected Code Integrity (HVCI) environment.
-
-OS and Hardware requirements for testing HVCI driver compatibility:
-
-1. Windows: Available on all versions of Windows, such as Windows Pro, Windows 10 Enterprise, Windows Server, and Windows 10 IoT Enterprise (Not supported in S Mode).
-
-2. Hardware: Recent hardware that supports virtualization extension with SLAT.
-
-To use the readiness tool to evaluate the additional requirements, such as secure boot, refer to the readme.txt file included in the readiness tool download.
-
-For more information about the related device fundamentals test, see [Device.DevFund tests](/windows-hardware/test/hlk/testref/device-devfund-tests).
-
-## Implement HVCI compatible code
+This section describes how to implement Hypervisor-protected Code Integrity (HVCI) compatible code.
 
 To implement HVCI compatible code, make sure your driver code does the following:
 
@@ -91,119 +77,11 @@ The following list of DDIs that are not reserved for system use may be impacted:
 | [**WdfRegistryQueryMemory**](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistryquerymemory)                                             |
 
 
-## Using the DGReadiness tool
+## Use the code integrity tests in the HLK to test HVCI driver compatibility:
 
-To use DGReadiness Tool, complete the following steps:
+For more information about the related system fundamentals security test, see [HyperVisor Code Integrity Readiness Test](/windows-hardware/test/hlk/testref/b972fc52-2468-4462-9799-6a1898808c86) and [Hypervisor-Protected Code Integrity (HVCI)](/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard).
 
--   **Prepare the test PC**
-
-    *Enable Virtualization Based Protection of Code Integrity* - Run the System Information app (msinfo32). Look for the following item: “Virtualization based security”. It should show: “Running”.
-
-    Alternatively, there is also a WMI interface for checking using management tools that can be used to display information in PowerShell.
-
-    ```console
-    Get-CimInstance –ClassName Win32_DeviceGuard –Namespace root\Microsoft\Windows\DeviceGuard
-    ```
-
-    *Disable "Device Guard"* - Note that while running the Readiness Tool, "Device Guard" must be disabled on the PC under test, as it might prevent the driver from loading, and the driver won’t be available for the Readiness Tool to test.
-
-    *Optionally Enable Test Signing* - To allow for the installation of unsigned development drivers, you may want to enable test signing using BCDEdit.
-
-    ```console
-    bcdedit /set TESTSIGNING ON
-    ```
-
--   **Install test drivers**
-
-    Install the desired test driver(s) on the target test PC.
-
-    **Important**  After you have tested the development driver and worked through any code issues, retest the final production driver. In addition, use the HLK to test the driver. For more information, see [HyperVisor Code Integrity Readiness Test](/windows-hardware/test/hlk/testref/b972fc52-2468-4462-9799-6a1898808c86).
-
-
-
--   **Install the DGReadiness Tool**
-
-    **Warning**  
-    As the DGReadiness Tool changes registry values and may impact features such as secure boot, use a test PC that doesn't contain any data or applications. After the tests have been run, you may want to re-install Windows to re-establish your desired security configuration.
-
-    1. Download the tool from here: [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
-
-    2. Unzip the tool on the target test machine.
-
--   **Configure PowerShell to allow for the execution of unsigned scripts.**
-
-    The Readiness Tool is a PowerShell script. To work with the Readiness Tool script, open an Administrator PowerShell script.
-
-    If Execution-Policy is not already set to allow running script, then you should manually set it as shown here.
-
-    ```powershell
-    Set-ExecutionPolicy Unrestricted
-    ```
-
--   **Run the readiness tool to enable HVCI**
-
-    1. In Powershell, locate the directory into which you unzipped the Readiness Tool.
-
-    2. Run the Readiness Tool to enable HVCI.
-
-    ```powershell
-    DG_Readiness_Tool.ps1 -Enable HVCI
-    ```
-
-    3. When directed, reboot the PC.
-
--   **Run the script to evaluate HVCI capability**
-
-    1. Run the Readiness Tool to evaluate the ability of the drivers to support HVCI.
-
-    ```powershell
-    DG_Readiness_Tool.ps1 -Capable HVCI
-    ```
-
--   **Evaluate the output**
-
-    The output to the screen is color coded.
-
-    |       Category    |  Description                                                                                      |
-    |-------------------|---------------------------------------------------------------------------------------------------|
-    | Red - Errors      | Elements are missing or not configured that will prevent enabling and using DG/CG.                |
-    | Yellow - Warnings | This device can be used to enable and use DG/CG, but additional security benefits will be absent. |
-    | Green - Messages  | This device is fully compliant with DG/CG requirements.                                           |
-
-    In addition to the output to the screen, by default, the log file with detailed output is located at C:\\DGLogs
-
-    There are five steps (or sections) in the output of the tool. Step 1 contains the is the driver compatibility information.
-
-    ```text
-     ====================== Step 1 Driver Compat ====================== 
-    ```
-
-    Drivers displayed in green have no identified HVCI compatibility issues. If you are interested in evaluating a specific driver, if the driver name is displayed in green and is active and loaded, it has passed the HVCI compatibility test.
-
-    Locate the "InCompatible HVCI Kernel Driver Modules" section shown below, towards the end of the log.
-
-    ```text
-    InCompatible HVCI Kernel Driver Modules found
-
-    Module: TestDriver1.sys
-        Reason: section alignment failures:             9
-    Module: TestDriver2.sys
-        Reason: execute pool type count:                3
-    ```
-
-    In the sample shown above, two drivers are identified as incompatible. TestDriver1.sys has a memory section alignment failure and TestDriver2.sys has a pool that is configured to use executable memory area.
-
-    The statistics for the seven types of device driver incompatibilities are also available using the !verifier debugger extension. For more information on the !verifier extension, see [**!verifier**](../debugger/-verifier.md).
-
-    ```text
-            Execute Pool Type Count:                3
-            Execute Page Protection Count:          0
-            Execute Page Mapping Count:             0
-            Execute-Write Section Count:            0
-            Section Alignment Failures:             0
-            Unsupported Relocs Count:               0
-            IAT in Executable Section Count:        0
-    ```
+For more information about the related device fundamentals test, see [Device.DevFund tests](/windows-hardware/test/hlk/testref/device-devfund-tests).
 
 Use the following table to interpret the output and determine what driver code changes are needed to fix the different types of HVCI incompatibilities.
 
@@ -333,17 +211,6 @@ BAD_STRUCT MayHaveStraddleRelocations[4096] = { // as a global variable
 There are other situations involving the use of assembler code, where this issue can also occur.
 
 ---------
-
-## Script customization
-
-Below is the list of Regkeys and their values for customization of the script to HVCI and Credential Guard without UEFI Lock.
-
-To enable HVCI and CG without UEFI Lock:
-
-```reg
-REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f' 
-REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f' 
-```
 
 ## Driver Verifier code integrity
 
