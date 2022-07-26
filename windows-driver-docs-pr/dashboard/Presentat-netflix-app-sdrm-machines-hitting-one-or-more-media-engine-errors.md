@@ -1,7 +1,6 @@
 ---
 title: PresentAt - Netflix app (Software Digital Rights Management) % of machines hitting one or more media engine errors
-description: % of machines using Present AT that hit one or more media engine errors during video playback on the Netflix app, which supports Software Digital Rights Management (SWDRM). This measure monitors media engine errors that arise for driver versions using Present AT on Netflix app. 
-
+description: Percent of machines using Present AT that hit one or more media engine errors during video playback on the Netflix app, which supports Software Digital Rights Management (SWDRM). This measure monitors media engine errors that arise for driver versions using Present AT on Netflix app. 
 ms.topic: article
 ms.date: 07/15/2022
 ---
@@ -12,7 +11,7 @@ ms.date: 07/15/2022
 
 During a user's session, a machine hits one or more media engine errors during video playback on the Netflix app, which supports Software Digital Rights Management (SWDRM). This measure monitors media engine errors that arise for driver versions using Present AT on Netflix app.
 
-Examples of media engine errors can be found here: [Errors Online: Error lookup](windowsinternalservices.azurewebsites.net)
+Examples of media engine errors can be found here: [Errors Online: Error lookup](https://windowsinternalservices.azurewebsites.net)
 
 
 

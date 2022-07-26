@@ -85,8 +85,21 @@ The size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter.
 
 ## Requirements
 
-|   |   |
-| - | - |
-| Header | *Ntifs.h* (include Ntifs.h) |
-| Minimum supported client | Windows 10 version 1809, and Windows 10 version 2004 and above versions |
-| Minimum supported server | Windows Server 2019 |
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Header</p></td>
+<td align="left">Ntifs.h (include Ntifs.h)</td>
+<tr class="even">
+<td align="left"><p>Minimum supported client</p></td>
+<td align="left">Windows 10 version 1809, and Windows 10 version 2004 and above versions </td>
+<tr class="odd">
+<td align="left"><p>Minimum supported server</p></td>
+<td align="left">Windows Server 2019</td>
+</tr>
+</tbody>
+</table>
