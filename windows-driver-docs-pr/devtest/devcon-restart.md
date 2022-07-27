@@ -84,4 +84,4 @@ devcon restart =printer *desk*
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
-[Example 38: Restart a device](devcon-examples.md#ddk_example_38_restart_a_device_tools)
+[Example 38: Restart a device](devcon-examples.md#example-38-restart-a-device)
