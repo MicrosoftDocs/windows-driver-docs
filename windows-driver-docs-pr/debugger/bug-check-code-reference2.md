@@ -1,7 +1,7 @@
 ---
 title: Bug Check Code Reference
 description: This section contains descriptions of the common bug checks, including the parameters passed to the blue screen.
-ms.date: 03/10/2022
+ms.date: 07/27/2022
 ---
 
 # Bug Check Code Reference
@@ -28,7 +28,7 @@ A driver has failed to complete a power IRP within a specific time.
 Arguments:
 Arg1: 0000000000000003, A device object has been blocking an Irp for too long a time
 Arg2: 0000000000000000, Physical Device Object of the stack
-Arg3: 0000000000000000, nt!TRIAGE_9F_POWER on Win7 and higher, otherwise the Functional Device Object of the stack
+Arg3: 0000000000000000, nt!_TRIAGE_9F_POWER on Win7 and higher, otherwise the Functional Device Object of the stack
 Arg4: 0000000000000000, The blocked IRP
 ```
 

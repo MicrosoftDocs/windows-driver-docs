@@ -13,7 +13,7 @@ This topic outlines the design of a device-wide extension running in user mode t
 ## Terminology
 
 | Term | Description |
-|--|--|
+|------|-------------|
 | KS | Kernel Streaming driver |
 | AvStream | Audio Video Streaming driver model |
 | Filter | Object that represents a device instance |
@@ -257,7 +257,7 @@ Device MFTs must use the following messages to inform DTM about the availability
 
 ### Thread Requirements
 
-Device MFT must not create its own threads. Instead, it must use [Media Foundation Work Queues](https://docs.microsoft.com/en-us/windows/win32/medfound/work-queues), which are allocated based on the ID passed to the DMFT through the [IMFRealTimeClientEx](/windows/win32/api/mfidl/nn-mfidl-imfrealtimeclientex) interface. This is to make sure that all the threads running in the Device MFT gets the correct priority at which the capture pipeline is running and avoid thread priority inversions.
+Device MFT must not create its own threads. Instead, it must use [Media Foundation Work Queues](/windows/win32/medfound/work-queues), which are allocated based on the ID passed to the DMFT through the [IMFRealTimeClientEx](/windows/win32/api/mfidl/nn-mfidl-imfrealtimeclientex) interface. This is to make sure that all the threads running in the Device MFT gets the correct priority at which the capture pipeline is running and avoid thread priority inversions.
 
 ### InputStream Requirements
 
