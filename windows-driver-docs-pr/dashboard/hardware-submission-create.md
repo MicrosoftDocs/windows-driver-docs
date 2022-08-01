@@ -41,7 +41,7 @@ All hardware submissions to the dashboard will be processed within 5 business da
 
    :::image type="content" source="./images/hardware-submission-create/hardware-submit.png" alt-text="Screenshot that shows the new hardware submission form.":::
 
-1. If you wish to test a driver prior to release, select either **Perform test-signing**. Test-signed drivers are similar to drivers signed for public release, but don't require HLK testing. They're also not distributed through Windows Update, but can be downloaded from the hardware submission site. They can be installed on test machines only. For more information about test-signing driver packages, see [WHQL Test Signature Program](../install/whql-test-signature-program.md) and [How to test-sign a driver package](../install/how-to-test-sign-a-driver-package.md).
+1. If you wish to test a driver prior to release, select **Perform test-signing**. Test-signed drivers are similar to drivers signed for public release, but don't require HLK testing. They're also not distributed through Windows Update, but can be downloaded from the hardware submission site. They can be installed on test machines only. For more information about test-signing driver packages, see [WHQL Test Signature Program](../install/whql-test-signature-program.md) and [How to test-sign a driver package](../install/how-to-test-sign-a-driver-package.md).
 
 1. Complete any other any questionnaires that are presented.  The portal presents any questionnaire that's required for the product type being submitted for Windows Server certification.
 
