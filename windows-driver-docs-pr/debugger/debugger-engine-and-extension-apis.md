@@ -1,7 +1,7 @@
 ---
 title: Debugger Programming Extension APIs
 description: This topic describes the Debugger Programming Extension APIs
-ms.date: 04/13/2022
+ms.date: 08/01/2022
 ---
 
 # Debugger Programming Extension APIs
@@ -73,8 +73,7 @@ You can customize debugger output using DML. For more information see [Customizi
 
 ## <span id="JavaScript"></span><span id="javascript"></span><span id="JAVASCRIPT"></span>Using JavaScript to Extend the Capabilities of the Debugger
 
-Use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger. JavaScript providers bridge a scripting language to the debugger's internal object model. The JavaScript debugger scripting provider, allows the for use of JavaScript with the debugger. For more information, see [JavaScript Debugger Scripting]
-(javascript-debugger-scripting.md).
+Use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger. JavaScript providers bridge a scripting language to the debugger's internal object model. The JavaScript debugger scripting provider, allows the for use of JavaScript with the debugger. For more information, see [JavaScript Debugger Scripting](javascript-debugger-scripting.md).
 
 ## Develop KDNET transport extensibility modules
 
