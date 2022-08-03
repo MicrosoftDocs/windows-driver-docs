@@ -217,18 +217,8 @@
     items:
     - name: "Kernel-mode file copy and detecting copy file scenarios"
       href: km-file-copy.md
-    - name: "EXTENDED_CREATE_INFORMATION"
-      href: ns-ntifs-extended_create_information.md
-    - name: "IoCheckFileObjectOpenedAsCopySource"
-      href: nf-ntifs-iocheckfileobjectopenedascopysource.md
-    - name: "IoCheckFileObjectOpenedAsCopyDestination"
-      href: nf-ntifs-iocheckfileobjectopenedascopydestination.md
     - name: "NtCopyFileChunk"
       href: nf-ntifs-ntcopyfilechunk.md
-    - name: "FltGetCopyInformationFromCallbackData"
-      href: nf-fltkernel-fltgetcopyinformationfromcallbackdata.md
-    - name: "COPY_INFORMATION"
-      href: ns-ntifs-copy_information.md
 - name: "File system legacy filter drivers"
   # Auto-expanded node L1
   items:
