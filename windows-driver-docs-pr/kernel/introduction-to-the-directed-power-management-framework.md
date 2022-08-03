@@ -1,7 +1,7 @@
 ---
 title: Introduction to the Directed Power Management Framework
 description: Describes the Directed Power Management Framework, or DFx, which is part of the Power Framework, or PoFx, version 3.
-ms.date: 04/02/2021
+ms.date: 08/03/2022
 ms.custom: 19H1
 ---
 
@@ -51,7 +51,8 @@ Provide pointers to these callbacks in a [PO_FX_DEVICE_V3](/windows-hardware/dri
 To get DFx support, a driver must:
 
 * Provide the `PO_FX_DIRECTED_POWER*` callbacks when registering for PoFx
-* Call [**PoFxReportDevicePoweredOn**](/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxreportdevicepoweredon) from its [PO_FX_DIRECTED_POWER_UP_CALLBACK](/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_up_callback) callback function on resume from Sx transitions
+* Call [**PoFxReportDevicePoweredOn**](/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxreportdevicepoweredon) from its [PO_FX_DIRECTED_POWER_UP_CALLBACK](/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_up_callback) callback function on return from idle
+* Call [**PoFxReportDevicePoweredOn**](/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxreportdevicepoweredon) on resume from Sx transition. If this is a WDF driver, it needs to [preprocess](/windows-hardware/drivers/wdf/preprocessing-and-postprocessing-irps) IRP_MN_SET_POWER. The preprocessing callback should only proceed if `Parameters.Power.Type == SystemPowerState`.
 
 ## Example
 
