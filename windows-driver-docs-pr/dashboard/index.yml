@@ -81,5 +81,5 @@ landingContent:
             url: get-product-data.md
           - text: Manage product submissions
             url: manage-product-submissions.md
-            - text: Manage preproduction signing submissions
-              url: manage-preprod-submissions.md
+          - text: Manage preproduction signing submissions
+            url: manage-preprod-submissions.md
