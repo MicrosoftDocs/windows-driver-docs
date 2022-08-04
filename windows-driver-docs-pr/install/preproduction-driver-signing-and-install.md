@@ -21,7 +21,7 @@ The Windows kernel supports loading pre-production drivers signed with the WHQL/
 
 - [Sign your pre-production drivers with Partner Center Hardware dashboard](../dashboard/hardware-submission-create.md)
 
-- Download *EnableUefiSbTest.exe* from the WDK. The default setup location of the *EnableUefiSbTest* tool is **C:\Program Files (x86)\Windows Kits\10\tools\\{arch}\SecureBoot\EnableSB**. `{arch}` can be one of `{am64, x86, arm, arm64}`. The policies are located under the same SecureBoot directory:**C:\Program Files (x86)\Windows Kits\10\tools\\{arch}\SecureBoot\Policies**. 
+- Download *EnableUefiSbTest.exe* from the WDK. The default setup location of the *EnableUefiSbTest* tool is **C:\Program Files (x86)\Windows Kits\10\tools\{arch}\SecureBoot\EnableSB**. `{arch}` can be one of `{amd64, x86, arm, arm64}`. The policies are located under the same SecureBoot directory:**C:\Program Files (x86)\Windows Kits\10\tools\{arch}\SecureBoot\Policies**. 
 
 ## Enable support for the pre-production WHQL/WHCP Signature
 
