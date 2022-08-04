@@ -82,4 +82,4 @@ landingContent:
           - text: Manage product submissions
             url: manage-product-submissions.md
             - text: Manage preproduction signing submissions
-            url: managing-preprod-submissions.md
+              url: manage-preprod-submissions.md
