@@ -3,7 +3,7 @@ title: Manage Preprod submissions
 description: Manage Preprod driver submissions to Hardware Dev Center to get them signed for preproduction testing.
 ---
 
-# Manage Product Submissions
+# Manage Preprod Submissions
 
 Use the following methods in *Microsoft Hardware APIs* to manage preprod submissions and for getting your driver packages signed by Microsoft for preproduction testing use. For an introduction to Microsoft Hardware APIs, including prerequisites for using the API, see [Hardware dashboard API](dashboard-api.md).
 
