@@ -20,7 +20,7 @@ All hardware submissions to the dashboard will be processed within 5 business da
 
 1. Use the table below to determine which signed file you'll need to create for your submission.
     
-    | Operating system | Required signed file type | Description
+    | Operating system | Required signed file type | Guidance|
     |--------------------|--------------------------|---------------|
     | Windows 11, Windows 10, and Windows Server versions beginning with Windows Server 2016 | A Windows Hardware Lab kit *.hlk* file | [Find and download the correct version of the HLK](/windows-hardware/test/hlk/) based on the compatible system. </br></br>**Note:** The Windows 10 version 22H2 release won't bring updates to the Windows Hardware Compatibility Program (WHCP) and will follow the same guidelines as Windows 10, version 2004. For more information, see [WHCP guidance for Windows 10, version 22H2](https://techcommunity.microsoft.com/t5/windows-hardware-certification/whcp-guidance-for-windows-10-version-22h2/ba-p/3586362). |
     | Windows 8/8.1 and older | A Windows Hardware Certification Kit *.hckx* file | To learn how to create and digitally sign an  *.hckx* file, see the [Windows HCK Getting Started Guide](/previous-versions/windows/hardware/hck/jj123537(v=vs.85)) |
