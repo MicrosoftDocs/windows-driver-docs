@@ -19,13 +19,13 @@ All hardware submissions to the dashboard will be processed within 5 business da
 1. Make sure your [dashboard account](https://partner.microsoft.com/dashboard) is registered for the Windows Hardware Developer Program. For information on how to register, see [How to register for the Windows Hardware Developer Program](hardware-program-register.md).
 
 1. Use the table below to determine which signed file you'll need to create for your submission.
-
-| Operating system | Required signed file type | Description
-|--------------------|--------------------------|---------------|
-| Windows 11, Windows 10, and Windows Server versions beginning with Windows Server 2016 | A Windows Hardware Lab kit *.hlk* file | [Find and download the correct version of the HLK](/windows-hardware/test/hlk/) based on the compatible system. </br></br>**Note:** The Windows 10 version 22H2 release won't bring updates to the Windows Hardware Compatibility Program (WHCP) and will follow the same guidelines as Windows 10, version 2004. For more information, see [WHCP guidance for Windows 10, version 22H2](https://techcommunity.microsoft.com/t5/windows-hardware-certification/whcp-guidance-for-windows-10-version-22h2/ba-p/3586362). |
-| Windows 8/8.1 and older | A Windows Hardware Certification Kit *.hckx* file | To learn how to create and digitally sign an  *.hckx* file, see the [Windows HCK Getting Started Guide](/previous-versions/windows/hardware/hck/jj123537(v=vs.85)) |
-| Windows Server 2008 and older  | A WLK hardware submission package *.cab* file | To learn how to create a WLK submission package, see [Create a new WLK hardware submission](hardware-submission-wlk.md). |
-
+    
+    | Operating system | Required signed file type | Description
+    |--------------------|--------------------------|---------------|
+    | Windows 11, Windows 10, and Windows Server versions beginning with Windows Server 2016 | A Windows Hardware Lab kit *.hlk* file | [Find and download the correct version of the HLK](/windows-hardware/test/hlk/) based on the compatible system. </br></br>**Note:** The Windows 10 version 22H2 release won't bring updates to the Windows Hardware Compatibility Program (WHCP) and will follow the same guidelines as Windows 10, version 2004. For more information, see [WHCP guidance for Windows 10, version 22H2](https://techcommunity.microsoft.com/t5/windows-hardware-certification/whcp-guidance-for-windows-10-version-22h2/ba-p/3586362). |
+    | Windows 8/8.1 and older | A Windows Hardware Certification Kit *.hckx* file | To learn how to create and digitally sign an  *.hckx* file, see the [Windows HCK Getting Started Guide](/previous-versions/windows/hardware/hck/jj123537(v=vs.85)) |
+    | Windows Server 2008 and older  | A WLK hardware submission package *.cab* file | To learn how to create a WLK submission package, see [Create a new WLK hardware submission](hardware-submission-wlk.md). |
+    
 
 ## Submit your new hardware
 
