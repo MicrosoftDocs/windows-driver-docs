@@ -48,7 +48,7 @@ We will use the [CodeQL command line tools (CLI)](https://codeql.github.com/docs
 
 1. Refer to [Windows Driver Developer Supplemental Tools](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools) for the version of the CodeQL tools required for use with the desired branch of Microsoft's QL libraries. See [Clone the repository to access the driver-specific queries](#clone-the-repository-to-access-the-driver-specific-queries) for a table showing the available branches. Using a different version may result in a database incompatible with these libraries.
 
-1. Navigate to the Github [CodeQL Download Page](https://github.com/github/codeql-cli-binaries/releases/) for the required release.
+1. Navigate to the GitHub [CodeQL Download Page](https://github.com/github/codeql-cli-binaries/releases/) for the required release.
 
 1. Download the zip file if you are certifying a driver for the Windows Hardware Compatibility Program. For example for 64 bit Windows "codeql-win64.zip".
 
