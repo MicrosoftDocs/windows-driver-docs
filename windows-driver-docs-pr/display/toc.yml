@@ -698,6 +698,14 @@
       href: indirect-display-driver-model-overview.md
     - name: "IddCx objects"
       href: iddcx-objects.md
+    - name: "Debugging indirect display drivers"
+      href: indirect-display-debugging.md
+    - name: "IddCx v1.8 updates"
+      href: iddcx1.8-updates.md
+    - name: "IddCx v1.7 updates"
+      href: iddcx1.7-updates.md
+    - name: "IddCx v1.6 updates"
+      href: iddcx1.6-updates.md
     - name: "IddCx v1.4 updates"
       items:
       - name: "Updates for IddCx versions 1.4 and later"
@@ -708,12 +716,8 @@
         href: iddcx1.4-updates-for-remote-idds.md
       - name: "Building IddCx v1.4 drivers"
         href: building-iddcx1.4-drivers.md
-    - name: "IddCx v1.6 updates"
-      href: iddcx1.6-updates.md
-    - name: "EvtIddCxMonitorAssignSwapChain error handling"
-      href: idd-evtiddcxmonitorassignswapchain-error-handling.md
-    - name: "Debugging indirect display drivers"
-      href: indirect-display-debugging.md
+      - name: "EvtIddCxMonitorAssignSwapChain error handling"
+        href: idd-evtiddcxmonitorassignswapchain-error-handling.md
   - name: "Tasks in the Windows Display Driver Model (WDDM)"
 # Auto-expanded node
     items: 
