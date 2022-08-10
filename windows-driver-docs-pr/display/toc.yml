@@ -700,6 +700,10 @@
       href: iddcx-objects.md
     - name: "Debugging indirect display drivers"
       href: indirect-display-debugging.md
+    - name: "IddCx versions"
+      href: iddcx-versions.md
+    - name: "IddCx v1.9 updates"
+      href: iddcx1.9-updates.md
     - name: "IddCx v1.8 updates"
       href: iddcx1.8-updates.md
     - name: "IddCx v1.7 updates"

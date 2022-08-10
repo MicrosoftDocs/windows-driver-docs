@@ -1,7 +1,7 @@
 ---
 title: Updates for IddCx versions 1.8 and later
 description: IddCx version 1.8 updates for console and remote indirect display drivers
-ms.date: 08/05/2022
+ms.date: 08/09/2022
 keywords:
 - IddCx version 1.8
 - Console and remote indirect display driver, IddCx versions 1.8 and later
@@ -14,7 +14,7 @@ keywords:
 
 # Updates for IddCx versions 1.8 and later
 
-This page describes the changes made in IddCx 1.8.
+This page describes the changes made in IddCx 1.8. A single indirect display driver (IDD) binary built against IddCx 1.8 can run on Windows 10, version 1803 and above using runtime checks to verify whether DDI changes in IddCx 1.8 are available on that system. See [Building a WDF driver for multiple versions of Windows](/windows-hardware/drivers/wdf/building-a-wdf-driver-for-multiple-versions-of-windows) for more info.
 
 ## Updated IddCxGetVersion version
 
