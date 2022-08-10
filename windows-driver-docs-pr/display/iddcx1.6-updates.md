@@ -1,7 +1,7 @@
 ---
 title: Updates for IddCx versions 1.6 and later
 description: IddCx version 1.6 updates for console and remote indirect display drivers
-ms.date: 10/20/2020
+ms.date: 08/09/2022
 keywords:
 - Console and remote indirect display driver, IddCx versions 1.6 and later
 - Console and remote IDD, IddCx versions 1.6 and later
@@ -19,7 +19,7 @@ The release prior to IddCx version 1.6 was version 1.4. IddCx version 1.5 contai
 
 ## Updated IddCxGetVersion version
 
-The IddCx version returned by [**IddCxGetVersion**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxgetversion) on Windows 10, version 20H2 was updated to IDDCX_VERSION_MANGANESE (0x1600).
+The IddCx version returned by [**IddCxGetVersion**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxgetversion) on Windows 10, version 20H2 was updated to IDDCX_VERSION_MANGANESE (0x1600). See [IddCx versions](iddcx-versions.md) for a complete list of IddCx-related version information.
 
 ## WPP information in public IddCx symbols
 
@@ -27,7 +27,7 @@ Starting with IddCx version 1.6, the public IddCx symbol files contain all the W
 
 ## Ability to access buffers allocated in system memory
 
-In certain scenarios, swapchain buffers are resident in system memory; for example, when the render adapter being used is WARP (Windows Advanced Rasterization Platform, the system-supplied software renderer). IddCx 1.6 adds the following OS callbacks that allow the driver to access buffers in system memory while avoiding a sub-resource copy:
+In certain scenarios, swapchain buffers are resident in system memory; for example, when the render adapter being used is WARP (Windows Advanced Rasterization Platform, the system-supplied software renderer). IddCx 1.6 adds the following OS callbacks that allow the driver to access buffers in system memory thus avoiding a sub-resource copy:
 
 * [**IddCxSwapChainInSystemMemory**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchaininsystemmemory) allows an IDD to check whether the buffers for a swapchain are resident in system memory. The result of this callback remains constant throughout the lifetime of the swapchain. The driver should check the value of this callback in its[**EvtIddCxMonitorAssignSwapChain**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_assign_swapchain) callback and set up state to release and acquire buffers.
 

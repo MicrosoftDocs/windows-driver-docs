@@ -1,7 +1,7 @@
 ---
 title: Updates for IddCx versions 1.7 and later
 description: IddCx version 1.7 updates for console and remote indirect display drivers
-ms.date: 08/05/2022
+ms.date: 08/09/2022
 keywords:
 - IddCx version 1.7
 - Console and remote indirect display driver, IddCx versions 1.7 and later
@@ -18,7 +18,7 @@ This page describes the changes made in IddCx 1.7. A single indirect display dri
 
 The IddCx 1.7 changes fall into the following categories:
 
-* The [**IddCxGetVersion**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxgetversion) version was updated (console and remote).
+* The [**IddCxGetVersion**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxgetversion) version was updated (console and remote). See [IddCx versions](iddcx-versions.md) for a complete list of IddCx-related version information.
 * An improved mouse cursor DDI was added (available for console and remote but only useful from remote).
 * The **IDDCX_ADAPTER_FLAGS_CAN_USE_MOVE_REGIONS** adapter flag was deprecated (console and remote).
 
