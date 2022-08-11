@@ -1,7 +1,7 @@
 ---
 title: Updates for IddCx versions 1.9 and later
 description: IddCx version 1.9 updates for console and remote indirect display drivers
-ms.date: 08/09/2022
+ms.date: 08/11/2022
 keywords:
 - IddCx version 1.9
 - Console and remote indirect display driver, IddCx versions 1.9 and later
@@ -32,12 +32,10 @@ The [**IddCxSetRealtimeGPUPriority**](/windows-hardware/drivers/ddi/iddcx/nf-idd
 
 ## Required IddCx 1.9 driver INF update to disallow UMDF process pooling
 
-To reduce the surface for abuse of **IddCxSetRealtimeGPUPriority** for denial of service attacks, IddCx 1.9 drivers are not allowed to share process with other UMDF drivers. An IddCx 1.9 driver need to add the following in their inf file.
+To reduce the surface for abuse of **IddCxSetRealtimeGPUPriority** for denial of service attacks, IddCx 1.9 drivers are not allowed to share process with other UMDF drivers. An IddCx 1.9 driver needs to add the following in their inf file.
 
 ``` Registry
 HKR, "WUDF", "DeviceGroupId", %REG_SZ%, "<DriverGroupName>" 
 ```
 
 See the INF file in the [GitHub IndirectDisplay sample](https://github.com/microsoft/windows-driver-samples/tree/main/video/IndirectDisplay) for an example.
-
-An [HLK test](/windows-hardware/test/hlk/) was added to verify an IddCx 1.9 driver's INF prior to WHQL certification.

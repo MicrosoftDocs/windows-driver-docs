@@ -6,7 +6,7 @@ keywords:
 - Copying files in kernel mode
 - Kernel-mode file copy
 - Kernel-mode file copy detection scenarios
-ms.date: 08/02/2022
+ms.date: 08/11/2022
 ---
 
 # Kernel-mode file copy and detecting copy file scenarios
@@ -15,7 +15,7 @@ The ability to do trusted file copy in kernel mode was introduced in Windows 11,
 
 To ensure that kernel-mode read and write operations are safely marked as part of a copy operation:
 
-* The **FILE_CONTAINS_EXTENDED_CREATE_INFORMATION** flag and [**EXTENDED_CREATE_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-extended_create_information) structure were added to signal copy intent at create time via [**NtCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile). The **EXTENDED_CREATE_INFORMATION** structure acts as a wrapper around **NtCreateFile**'s existing **EaBuffer** parameter.
+* The **FILE_CONTAINS_EXTENDED_CREATE_INFORMATION** flag and [**EXTENDED_CREATE_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-extended_create_information) structure were added to signal copy intent at create time via [**NtCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile). The **EXTENDED_CREATE_INFORMATION** structure acts as a wrapper around **NtCreateFile**'s existing **EaBuffer** parameter.
 
   When the **FILE_CONTAINS_EXTENDED_CREATE_INFORMATION** flag is specified, the I/O manager interprets the **EaBuffer** and **EaLength** parameters as an **EXTENDED_CREATE_INFORMATION** structure, and will parse that structure's fields as if they were provided directly to **NtCreateFile**. Underlying filters will experience no change in behavior of extended attributes.
 
