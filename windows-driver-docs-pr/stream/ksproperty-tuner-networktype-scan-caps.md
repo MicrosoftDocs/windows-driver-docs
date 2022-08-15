@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_TUNER\_NETWORKTYPE\_SCAN\_CAPS
@@ -54,11 +53,9 @@ The KSPROPERTY\_TUNER\_NETWORKTYPE\_SCAN\_CAPS property describes the scanning c
 
 The property value (operation data) is a KSPROPERTY\_TUNER\_NETWORKTYPE\_SCAN\_CAPS\_S structure that specifies the scanning capabilities for a network type.
 
-Remarks
--------
+## Remarks
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

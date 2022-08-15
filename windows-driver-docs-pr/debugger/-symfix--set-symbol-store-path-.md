@@ -9,7 +9,6 @@ api_name:
 - .symfix (Set Symbol Store Path)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .symfix (Set Symbol Store Path)
@@ -59,8 +58,7 @@ Specifies the directory to be used as a local symbol cache. If this directory do
 
 For details, see [Using Symbol Servers and Symbol Stores](symbol-stores-and-symbol-servers.md).
 
-Remarks
--------
+## Remarks
 
 The following example shows how to use **.symfix** to set a new symbol path that points to the Microsoft symbol store.
 

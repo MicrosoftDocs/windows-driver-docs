@@ -1,7 +1,7 @@
 ---
 title: IrqlRtlPassive rule (wdm)
-description: The IrqlRtlPassive rule specifies that the driver calls RtlDeleteRegistryValue only when it is executing at IRQL�  PASSIVE\_LEVEL.
-ms.date: 05/21/2018
+description: The IrqlRtlPassive rule specifies that the driver calls RtlDeleteRegistryValue only when it is executing at IRQL equal to PASSIVE_LEVEL.
+ms.date: 07/21/2021
 keywords: ["IrqlRtlPassive rule (wdm)"]
 topic_type:
 - apiref
@@ -9,21 +9,17 @@ api_name:
 - IrqlRtlPassive
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlRtlPassive rule (wdm)
 
+The IrqlRtlPassive rule specifies that the driver calls [**RtlDeleteRegistryValue**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtldeleteregistryvalue) only when it is executing at IRQL equal to PASSIVE_LEVEL.
 
-The IrqlRtlPassive rule specifies that the driver calls [**RtlDeleteRegistryValue**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtldeleteregistryvalue) only when it is executing at IRQL = PASSIVE\_LEVEL.
+**Driver model:** **WDM**
 
-**Driver model: WDM**
+**Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER_VERIFIER_DETECTED_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x0002001E)
 
-**Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x0002001E)
-
-
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -64,9 +60,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
- 
-
-Applies to
-----------
+## Applies to
 
 [**RtlDeleteRegistryValue**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtldeleteregistryvalue)

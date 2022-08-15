@@ -21,7 +21,6 @@ keywords:
 - IEEE 1394 WDK audio
 - WDM audio components WDK
 ms.date: 05/08/2018
-ms.localizationpriority: medium
 ---
 
 # Kernel-Mode WDM Audio Components
@@ -158,7 +157,7 @@ To work with the system-supplied drivers, hardware vendors should design their a
 
 -   Updates to the AV/C Audio Subunit Specifications currently in process
 
-These specifications are available at the [1394 Trade Association](https://1394ta.org/) website. The AVCAudio driver supports a subset of the features that are described in these specifications.
+These specifications are described on the IEEE [1394 Wiki Page](https://ieee1394.wiki.kernel.org/index.php/Specifications) website. The AVCAudio driver supports a subset of the features that are described in these specifications.
 
 When an audio device identifies itself as an IEEE 1394-compliant audio device during Plug and Play device enumeration, the system automatically loads the AVCAudio driver to drive the device. AVCAudio drives the device directly, without the aid of a proprietary adapter driver. This means that a device that complies with the appropriate IEEE 1394 specifications requires no proprietary adapter driver.
 
@@ -166,7 +165,7 @@ Microsoft recommends that hardware vendors use the AVCAudio driver for their IEE
 
 The following figure shows the driver hierarchy for an IEEE 1394 audio device in Windows XP. In Windows XP and later, all of the driver components shown in this figure are provided by Microsoft with the operating system.
 
-![diagram illustrating the driver hierarchy for a 1394 audio device](images/avcaudio.png)
+![diagram illustrating the driver hierarchy for a 1394 audio device.](images/avcaudio.png)
 
 For more information about the driver components in the figure, see the following sections:
 
@@ -174,7 +173,5 @@ For more information about the driver components in the figure, see the followin
 
 [AV/C Client Drivers](/windows-hardware/drivers/ddi/_stream/index)
 
-[IEEE 1394 Bus](https://developer.microsoft.com/windows/hardware)
-
- 
+[IEEE 1394 Bus](../ieee/index.md)
 

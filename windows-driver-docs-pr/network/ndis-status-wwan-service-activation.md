@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_SERVICE_ACTIVATION notifi
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_WWAN_SERVICE_ACTIVATION Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_SERVICE\_ACTIVATION
@@ -16,13 +15,11 @@ Miniport drivers cannot use this notification to send unsolicited events.
 
 This notification uses the NDIS\_WWAN\_SERVICE\_ACTIVATION\_STATUS structure.
 
-Remarks
--------
+## Remarks
 
 Miniport drivers must return the service activation status in response to an OID set request of [OID\_WWAN\_SERVICE\_ACTIVATION](oid-wwan-service-activation.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -4,10 +4,11 @@ description: OID_WDI_TASK_DISCONNECT is used to terminate a connection with a pe
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_DISCONNECT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_DISCONNECT
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_TASK\_DISCONNECT is used to terminate a connection with a peer.
@@ -41,8 +42,7 @@ When the port gets disconnected from the network, it sends the disassociation in
 
 Before the disassociation indication is sent, the port must clear the state associated with the peer. This includes any keys and 802.1x port authorization information associated with the peer. The port must not trigger a roam on its own.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

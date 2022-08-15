@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ScannerConfiguration element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **ScannerConfiguration** element is a collection of elements that describes the scanner's configurable capabilities.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScannerConfiguration>
@@ -26,8 +24,7 @@ Usage
 </wscn:ScannerConfiguration>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 

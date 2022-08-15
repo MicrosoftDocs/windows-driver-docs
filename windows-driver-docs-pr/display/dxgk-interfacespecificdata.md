@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # DXGK\_INTERFACESPECIFICDATA structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The DXGK\_INTERFACESPECIFICDATA structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_INTERFACESPECIFICDATA {
@@ -35,8 +33,7 @@ typedef struct _DXGK_INTERFACESPECIFICDATA {
 } DXGK_INTERFACESPECIFICDATA;
 ```
 
-Members
--------
+## Members
 
 **hAdapter**
 Reserved for system use.
@@ -62,8 +59,7 @@ Reserved for system use.
 **pfnGetCaptureAddressCb**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

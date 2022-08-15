@@ -9,7 +9,6 @@ api_name:
 - StorPortEnablePassive
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortEnablePassive rule (storport)
@@ -19,8 +18,7 @@ This rule verifies that **StorPortEnablePassiveInitialization** is not called fr
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +43,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**StorPortEnablePassiveInitialization**](/windows-hardware/drivers/ddi/storport/nf-storport-storportenablepassiveinitialization)

@@ -4,7 +4,6 @@ description: WDI_TLV_ENABLE_WAKE_EVENTS is a TLV that contains the enabled wake 
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ENABLE_WAKE_EVENTS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ENABLE\_WAKE\_EVENTS
@@ -34,8 +33,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

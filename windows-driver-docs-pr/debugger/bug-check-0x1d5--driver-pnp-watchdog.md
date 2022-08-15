@@ -9,7 +9,6 @@ api_name:
 - DRIVER_PNP_WATCHDOG
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1D5: DRIVER\_PNP\_WATCHDOG
@@ -32,13 +31,11 @@ The DRIVER\_PNP\_WATCHDOG bug check has a value of 0x000001D5. This indicates th
 
 
 ## Cause
------
 
 This indicates that a driver has failed to complete a PnP operation within a specific time. The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 
 ## See Also
-----------
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

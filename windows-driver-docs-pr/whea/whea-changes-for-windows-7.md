@@ -7,7 +7,6 @@ keywords:
 - Windows 7 WDK WHEA
 - Windows 7 WDK WHEA , WHEA changes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WHEA Changes for Windows 7

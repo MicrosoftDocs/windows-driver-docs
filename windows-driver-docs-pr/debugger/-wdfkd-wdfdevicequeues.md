@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfdevicequeues
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfdevicequeues
@@ -39,8 +38,7 @@ KMDF 1, UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md) and [**!wdfkd.wdfqueue**](-wdfkd-wdfqueue.md).
 
-Remarks
--------
+## Remarks
 
 The following example shows the display from the **!wdfkd.wdfdevicequeues** extension.
 

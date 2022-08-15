@@ -4,7 +4,6 @@ description: WDI_TLV_CHECKSUM_OFFLOAD_CAPABILITIES is a TLV that contains checks
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CHECKSUM_OFFLOAD_CAPABILITIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CHECKSUM\_OFFLOAD\_CAPABILITIES
@@ -32,8 +31,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

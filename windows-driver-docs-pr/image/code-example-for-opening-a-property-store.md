@@ -2,7 +2,6 @@
 title: Code Example for Opening a Property Store
 description: Code Example for Opening a Property Store
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code Example for Opening a Property Store

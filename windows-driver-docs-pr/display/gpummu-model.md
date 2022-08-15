@@ -2,7 +2,6 @@
 title: GpuMmu model
 description: In the GpuMmu model, the graphics processing unit (GPU) has its own memory management unit (MMU) which translates per-process GPU virtual addresses to physical addresses.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GpuMmu model
@@ -26,7 +25,7 @@ Access to an invalid range of GPU virtual addresses results in an access violati
 
 The *GpuMmu* model is illustrated below:
 
-![gpummu model](images/gpummu-model.1.png)
+![gpummu model.](images/gpummu-model.1.png)
 
  
 

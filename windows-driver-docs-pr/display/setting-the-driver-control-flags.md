@@ -2,7 +2,6 @@
 title: Setting the Driver Control Flags
 description: Setting the Driver Control Flags
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting the Driver Control Flags

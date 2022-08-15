@@ -1,7 +1,6 @@
 ---
 title: MSFC\_HBAAdapterMethods WMI Class
 description: MSFC\_HBAAdapterMethods WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

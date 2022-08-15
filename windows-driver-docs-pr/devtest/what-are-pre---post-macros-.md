@@ -2,7 +2,6 @@
 title: What are PRE / POST macros
 description: What are PRE / POST macros
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # What are PRE / POST macros?

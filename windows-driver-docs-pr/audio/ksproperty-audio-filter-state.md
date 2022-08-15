@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_FILTER\_STATE
@@ -46,7 +45,7 @@ The KSPROPERTY\_AUDIO\_FILTER\_STATE property is used to query a GFX filter for 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>Array of GUIDs</p></td>
 </tr>
 </tbody>
@@ -60,15 +59,13 @@ The property data (operation data) is an array of GUIDs. Each GUID in the array 
 
 A KSPROPERTY\_AUDIO\_FILTER\_STATE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The size of the array of GUIDs that this property returns depends on the number of property sets that the filter supports. Before retrieving the array, a client first queries the size of the property's GUID array by sending the miniport driver's property handler a KSPROPERTY\_AUDIO\_FILTER\_STATE get-property request with a zero-length property-value buffer. The handler responds by returning the required buffer size and the status code STATUS\_BUFFER\_OVERFLOW. For more information, see [Audio Property Handlers](./audio-property-handlers.md).
 
 With the array of GUIDs from a KSPROPERTY\_AUDIO\_FILTER\_STATE get-property request, the operating system can serially interrogate the properties within each property set. This information enables the operating system to restore the state of a GFX filter object at the time that the filter is instantiated, and also to save the state of a GFX filter object at the time that the filter is destroyed. When saving or restoring the state of the GFX filter, the operating system serializes its requests for the properties in each property set, as described in [KS Properties](../stream/ks-properties.md). The purpose for saving and restoring the GFX filter's state is to preserve any changes the user has made to the filter's settings, and to make the settings persistent across successive instantiations of the filter. .
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -86,5 +83,4 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
-
+[**KSPROPERTY**](../stream/ksproperty-structure.md)

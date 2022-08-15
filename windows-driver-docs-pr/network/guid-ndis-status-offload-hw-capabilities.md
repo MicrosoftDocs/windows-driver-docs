@@ -4,7 +4,6 @@ description: This topic describes the GUID_NDIS_STATUS_OFFLOAD_HW_CAPABILITIES G
 keywords:
 - GUID_NDIS_STATUS_OFFLOAD_HW_CAPABILITIES, WDK GUID_NDIS_STATUS_OFFLOAD_HW_CAPABILITIES network drivers
 ms.date: 11/22/2017
-ms.localizationpriority: medium
 ---
 
 # GUID_NDIS_STATUS_OFFLOAD_HW_CAPABILITIES

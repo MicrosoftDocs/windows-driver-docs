@@ -7,7 +7,6 @@ keywords:
 - SFD WDK storage , IoCompletion
 - IoCompletion
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Storage Filter Driver's IoCompletion Routines

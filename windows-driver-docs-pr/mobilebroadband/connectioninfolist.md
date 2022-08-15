@@ -2,7 +2,6 @@
 title: ConnectionInfoList
 description: ConnectionInfoList
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ConnectionInfoList

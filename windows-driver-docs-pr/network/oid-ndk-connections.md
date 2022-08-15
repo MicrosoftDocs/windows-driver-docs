@@ -4,7 +4,6 @@ description: As a query, NDIS and overlying drivers or user-mode applications us
 ms.date: 08/08/2017
 keywords: 
  -OID_NDK_CONNECTIONS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_NDK\_CONNECTIONS
@@ -14,15 +13,13 @@ As a query, NDIS and overlying drivers or user-mode applications use the OID\_ND
 
 NDIS 6.30 and later miniport drivers that provide NDK services must support this OID. Otherwise, this OID is optional.
 
-Remarks
--------
+## Remarks
 
-NDIS issues this OID to obtain the list of active Network Direct connections from an adapter. The adapter must return the list of connections with the [**NDIS\_NDK\_CONNECTIONS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_ndk_connections) structure at the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure.
+NDIS issues this OID to obtain the list of active Network Direct connections from an adapter. The adapter must return the list of connections with the [**NDIS\_NDK\_CONNECTIONS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_ndk_connections) structure at the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure.
 
 This structure is variable-sized based on the number of connections that are returned. The size of the connection array, as element count, is specified in the **Count** member.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -54,7 +51,7 @@ Requirements
 
 [**NDIS\_NDK\_CONNECTIONS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_ndk_connections)
 
-[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
  
 

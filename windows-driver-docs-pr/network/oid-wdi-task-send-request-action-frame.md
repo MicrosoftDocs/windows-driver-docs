@@ -4,11 +4,12 @@ description: OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME requests that the device sen
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_SEND\_REQUEST\_ACTION\_FRAME
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_TASK\_SEND\_REQUEST\_ACTION\_FRAME requests that the device sends an Action Frame Request to another device.
@@ -44,8 +45,7 @@ The host may decide to abort this operation and continue/retry the public action
 
 [NDIS\_STATUS\_WDI\_INDICATION\_SEND\_REQUEST\_ACTION\_FRAME\_COMPLETE](ndis-status-wdi-indication-send-request-action-frame-complete.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

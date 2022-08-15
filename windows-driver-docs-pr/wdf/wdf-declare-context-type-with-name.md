@@ -4,7 +4,6 @@ description: The WDF_DECLARE_CONTEXT_TYPE_WITH_NAME macro creates an accessor me
 keywords:
  - WDF_DECLARE_CONTEXT_TYPE_WITH_NAME macro
 ms.date: 08/23/2017
-ms.localizationpriority: medium
 ---
 
 # WDF_DECLARE_CONTEXT_TYPE_WITH_NAME macro
@@ -14,8 +13,7 @@ ms.localizationpriority: medium
 
 The WDF_DECLARE_CONTEXT_TYPE_WITH_NAME macro creates an accessor method with a specified name for a driver's object-specific context space.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void WDF_DECLARE_CONTEXT_TYPE_WITH_NAME(
@@ -24,8 +22,7 @@ void WDF_DECLARE_CONTEXT_TYPE_WITH_NAME(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *_contexttype*   
 The structure type name of a driver-defined structure that describes the contents of an object's context space.
@@ -33,18 +30,15 @@ The structure type name of a driver-defined structure that describes the content
 *_castingfunction*   
 A C-language routine name. The macro uses this name as the name for the accessor method that it creates for the object's context space.
 
-Return value
-------------
+## Return value
 
 This macro does not return a value.
 
-Remarks
--------
+## Remarks
 
 For more information about using this macro, see [Framework Object Context Space](./framework-object-context-space.md).
 
-Examples
---------
+## Examples
 
 The following code example defines a context structure (MY_REQUEST_CONTEXT) for a request object. Then, the example invokes the WDF_DECLARE_CONTEXT_TYPE_WITH_NAME macro to register the structure and specify that the context accessor method will be named **RequestGetMyContext**.
 
@@ -82,8 +76,7 @@ if (!NT_SUCCESS(status)) {
 pMyContext = RequestGetMyContext(Request);
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

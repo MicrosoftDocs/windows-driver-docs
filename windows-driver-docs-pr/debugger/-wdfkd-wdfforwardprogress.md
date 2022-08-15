@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfforwardprogress
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfforwardprogress
@@ -39,8 +38,7 @@ KMDF 1
 
 For more information about how to debug Kernel-Mode Driver Framework (KMDF) drivers, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 This extension will succeed only if the specified framework queue object is configured to support forward progress. If this extension is used with other objects, an error message will be displayed.
 

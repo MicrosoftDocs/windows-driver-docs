@@ -1,8 +1,7 @@
 ---
 title: Updating Device Firmware using Windows Update
 description: This topic describes how to update your device's firmware using the Windows Update (WU) service.
-ms.date: 08/24/2017
-ms.localizationpriority: medium
+ms.date: 08/05/2021
 ---
 
 # Updating Device Firmware using Windows Update
@@ -44,11 +43,11 @@ Submit your firmware update package as a separate driver submission.
 
 The existing function driver can implement the firmware update mechanism, as shown in the following diagram:
 
-![Using Windows Update to deliver firmware update via existing function driver](images/single-devnode.png)
+![Using Windows Update to deliver firmware update via existing function driver.](images/single-devnode.png)
 
 Alternatively, if you want to update the function driver and the firmware update driver separately, create a second device node, on which you will install the firmware update driver.  The following diagram shows how one device can have two separate device nodes:
 
-![Using Windows Update to deliver firmware update via separate device node](images/two-devnodes.png)
+![Using Windows Update to deliver firmware update via separate device node.](images/two-devnodes.png)
 
 In this case, the function and firmware device nodes must have different hardware IDs in order to be targeted independently.
 
@@ -69,7 +68,7 @@ ComponentIDs = ComponentDeviceId
 
 In the above INF sample, `ComponentIDs = ComponentDeviceId` indicates that the child device will have a hardware ID of `SWC\ComponentDeviceId`.  When installed, this INF creates the following device hierarchy:
 
-![Parent device, primary device, AddComponent device](images/component-device-hierarchy.png)
+![Parent device, primary device, AddComponent device.](images/component-device-hierarchy.png)
 
 For future firmware updates, update the INF and binary file containing the firmware payload.
 

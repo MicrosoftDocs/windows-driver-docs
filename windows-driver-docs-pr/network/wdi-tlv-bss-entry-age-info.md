@@ -4,10 +4,11 @@ description: WDI_TLV_BSS_ENTRY_AGE_INFO is a TLV that contains age information f
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BSS_ENTRY_AGE_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_BSS\_ENTRY\_AGE\_INFO
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_BSS\_ENTRY\_AGE\_INFO is a TLV that contains age information for a BSS entry.
@@ -51,8 +52,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

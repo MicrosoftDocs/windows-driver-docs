@@ -4,7 +4,6 @@ description: WDI_TLV_ADAPTER_RESUME_REQUIRED is a TLV that specifies if adapter 
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ADAPTER_RESUME_REQUIRED Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ADAPTER\_RESUME\_REQUIRED
@@ -47,8 +46,7 @@ The size (in bytes) of a UINT8.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

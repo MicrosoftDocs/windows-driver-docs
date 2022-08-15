@@ -9,7 +9,6 @@ api_name:
 - IrqlObPassive
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlObPassive rule (wdm)
@@ -22,8 +21,7 @@ The **IrqlObPassive** rule specifies that the driver calls [**ObReferenceObjectB
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x0002001B)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -66,7 +64,6 @@ Use the following steps to run an analysis of your code:
 
  
 
-Applies to
-----------
+## Applies to
 
 [**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle)

@@ -2,7 +2,6 @@
 title: '[Version] section directives'
 description: This topic describes [Version] section directives in the INF.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # \[Version\] section directives

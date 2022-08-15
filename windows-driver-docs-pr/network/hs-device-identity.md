@@ -5,7 +5,6 @@ keywords:
 - HS_DEVICE_IDENTITY structure Network Drivers Starting with Windows Vista
 - PHS_DEVICE_IDENTITY structure pointer Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_DEVICE\_IDENTITY structure
@@ -15,8 +14,7 @@ ms.localizationpriority: medium
 
 The **HS\_DEVICE\_IDENTITY** structure contains information about the device model and manufacturer.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HS_DEVICE_IDENTITY {
@@ -28,8 +26,7 @@ typedef struct _HS_DEVICE_IDENTITY {
 } HS_DEVICE_IDENTITY, *PHS_DEVICE_IDENTITY;
 ```
 
-Members
--------
+## Members
 
 **dwSystemType**  
 The type of SIM, whether GSM or CDMA.
@@ -46,8 +43,7 @@ Another name for the phone manufacturer and model.
 **wszDeviceModel**  
 The device model name.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

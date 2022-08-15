@@ -2,7 +2,6 @@
 title: About WIA properties
 description: About WIA properties
 ms.date: 07/09/2018
-ms.localizationpriority: medium
 ---
 
 # About WIA properties

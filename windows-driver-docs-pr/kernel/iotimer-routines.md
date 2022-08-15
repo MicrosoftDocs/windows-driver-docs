@@ -3,7 +3,6 @@ title: IoTimer Routines
 description: IoTimer Routines
 keywords: ["synchronization WDK kernel , timers", "IoTimer", "device time-outs WDK kernel", "time-outs WDK kernel", "timing operations WDK kernel", "timeout device I/O operations WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # IoTimer Routines

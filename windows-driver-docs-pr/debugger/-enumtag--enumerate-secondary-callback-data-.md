@@ -9,7 +9,6 @@ api_name:
 - .enumtag (Enumerate Secondary Callback Data)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .enumtag (Enumerate Secondary Callback Data)
@@ -53,8 +52,7 @@ The **.enumtag** command displays secondary bug check callback data and all data
 
 For more information and for other ways of displaying this data, see [Reading Bug Check Callback Data](reading-bug-check-callback-data.md).
 
-Remarks
--------
+## Remarks
 
 You can use the **.enumtag** command only after a bug check has occurred or when you are debugging a kernel-mode crash dump file.
 

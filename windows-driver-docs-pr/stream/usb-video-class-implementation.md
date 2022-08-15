@@ -1,12 +1,11 @@
 ---
-title: USB Video Class Implementation
-description: USB Video Class implementation
+title: USB Video Class implementation
+description: Provides implementation details for the Microsoft-provided USB Video Class (UVC) driver (usbvideo.sys).
 keywords:
 - USB Video Class drivers WDK AVStream , implementing
 - Video Class drivers WDK USB , implementing
 - UVC drivers WDK AVStream , implementing
-ms.date: 06/19/2020
-ms.localizationpriority: medium
+ms.date: 05/16/2022
 ---
 
 # USB Video Class implementation

@@ -4,7 +4,6 @@ description: WDI_TLV_VIRTUALIZATION_ATTRIBUTES is a TLV that contains virtualiza
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_VIRTUALIZATION_ATTRIBUTES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_VIRTUALIZATION\_ATTRIBUTES
@@ -31,8 +30,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

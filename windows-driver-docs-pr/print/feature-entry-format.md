@@ -5,7 +5,6 @@ keywords:
 - printer features WDK Unidrv , entry format
 - formats WDK printer features
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Feature Entry Format

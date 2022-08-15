@@ -1,25 +1,20 @@
 ---
-title: Getting started with Windows drivers
-description: Getting started with Windows drivers
-ms.assetid: 92258ae0-5535-4f90-aa80-573ee543a0d6
+title: Getting started with drivers on Windows
+description: Start here to learn fundamental concepts about drivers.
 keywords:
 - Write a driver
 - get started with drivers
-ms.date: 04/20/2017
+ms.date: 08/06/2021
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
-# Getting started with Windows drivers
-
+# Getting started with drivers on Windows
 
 Start here to learn fundamental concepts about drivers.
 
 You should already be familiar with the [C programming language](/cpp/c-language/c-language-reference), and you should understand the ideas of function pointers, callback functions, and event handlers. If you are going to write a driver based on User-Mode Driver Framework 1.x, you should be familiar with [C++ and COM](/windows/win32/learnwin32/learn-to-program-for-windows).
 
-## <span id="in_this_section"></span>In this section
-
+## In this section
 
 -   [What is a driver?](what-is-a-driver-.md)
 -   [Do you need to write a driver?](do-you-need-to-write-a-driver-.md)
@@ -30,8 +25,7 @@ You should already be familiar with the [C programming language](/cpp/c-language
 -   [Provision a computer for driver deployment and testing (WDK 10)](provision-a-target-computer-wdk-8-1.md)
 -   [Concepts for all driver developers](concepts-and-knowledge-for-all-driver-developers.md)
 
-## <span id="related_topics"></span>Related topics
-
+## Related topics
 
 [Windows Driver Kit (WDK)](../index.yml)
 

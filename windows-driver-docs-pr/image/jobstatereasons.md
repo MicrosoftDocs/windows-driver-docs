@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # JobStateReasons element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **JobStateReasons** element contains all additional information about why a job is in its current state.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobStateReasons>
@@ -26,8 +24,7 @@ Usage
 </wscn:JobStateReasons>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -72,8 +69,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **JobStateReasons** element contains a list of [**JobStateReason**](jobstatereason.md) elements, each of which specifies one reason why a job is in its current state.
 

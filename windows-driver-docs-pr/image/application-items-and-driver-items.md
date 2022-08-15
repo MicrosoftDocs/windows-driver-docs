@@ -2,7 +2,6 @@
 title: Application Items and Driver Items
 description: Application Items and Driver Items
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Application Items and Driver Items
@@ -25,7 +24,7 @@ Applications typically use the **IWiaItem** object to read, validate, and write 
 
 The following diagram shows the relationship of application items to driver items.
 
-![diagram illustrating the relationship between application items and driver items](images/art-5.png)
+![diagram illustrating the relationship between application items and driver items.](images/art-5.png)
 
 As the diagram illustrates, each imaging application has its own separate copy of the item tree. The root item in an application item tree contains a pointer back to the root item in the device item tree.
 

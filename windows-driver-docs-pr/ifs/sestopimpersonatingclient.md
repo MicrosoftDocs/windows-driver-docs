@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # SeStopImpersonatingClient routine
@@ -19,30 +18,25 @@ ms.localizationpriority: medium
 
 The **SeStopImpersonatingClient** routine ends the calling thread's impersonation of a user.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID SeStopImpersonatingClient(void);
 ```
 
-Parameters
-----------
+## Parameters
 
 This routine has no parameters.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 A server thread can impersonate a user by calling the [**SeImpersonateClientEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seimpersonateclientex) routine. When the thread is done impersonating the user, it calls the **SeStopImpersonatingClient** routine to end the impersonation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

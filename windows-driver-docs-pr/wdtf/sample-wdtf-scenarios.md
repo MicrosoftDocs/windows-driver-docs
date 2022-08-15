@@ -8,7 +8,6 @@ keywords:
 - scripts WDK WDTF
 - test scripts WDK WDTF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sample WDTF Scenarios

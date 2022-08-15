@@ -13,12 +13,11 @@ keywords:
 - ENCAPIPARAM_BITRATE
 - ENCAPIPARAM_PEAK_BITRATE
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Encoder Implementation and Support
 
-In Windows XP Service Pack 1, Microsoft defined three kernel streaming property sets and one enumeration in *ksmedia.h* to support video-only encoder devices. Each property set contains a single property. In other words, each property receives its own property set. If your driver makes *get*-property or *Set*-property calls, then specify the property set's GUID (as defined in *ksmedia.h*) in the **Set** member of the [**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier) structure and zero in the **Id** member when you set up the call:
+In Windows XP Service Pack 1, Microsoft defined three kernel streaming property sets and one enumeration in *ksmedia.h* to support video-only encoder devices. Each property set contains a single property. In other words, each property receives its own property set. If your driver makes *get*-property or *Set*-property calls, then specify the property set's GUID (as defined in *ksmedia.h*) in the **Set** member of the [**KSPROPERTY**](ksproperty-structure.md) structure and zero in the **Id** member when you set up the call:
 
 <table>
 <colgroup>

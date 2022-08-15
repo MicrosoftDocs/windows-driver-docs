@@ -4,7 +4,6 @@ description: The NDIS_STATUS_WW_INDICATION status is the same as the NDIS_STATUS
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WW_INDICATION Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WW\_INDICATION
@@ -12,13 +11,11 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_WW\_INDICATION status is the same as the [**NDIS\_STATUS\_MEDIA\_SPECIFIC\_INDICATION**](ndis-status-media-specific-indication.md) status.
 
-Remarks
--------
+## Remarks
 
 For more information about NDIS\_STATUS\_WW\_INDICATION, see [OID\_WW\_GEN\_INDICATION\_REQUEST](/previous-versions/windows/hardware/network/ff561411(v=vs.85)).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

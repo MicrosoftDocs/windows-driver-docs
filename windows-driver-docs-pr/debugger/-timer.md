@@ -1,5 +1,5 @@
 ---
-title: timer
+title: timer (WinDbg)
 description: The timer extension displays a detailed listing of all system timer use.
 keywords: ["timer Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - timer
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !timer
@@ -49,8 +48,7 @@ The **!timer** extension displays a detailed listing of all system timer use.
 
 For information about timer objects, see the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 The **!timer** extension displays the timer tree, which stores all timer objects in the system.
 

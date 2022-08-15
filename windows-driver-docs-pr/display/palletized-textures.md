@@ -6,7 +6,6 @@ keywords:
 - textures WDK DirectX 8.0
 - palletized textures WDK DirectX 8.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Palletized Textures

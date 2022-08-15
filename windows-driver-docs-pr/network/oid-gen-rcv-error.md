@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_RCV_ERROR OID specifies the number of frame
 ms.date: 11/01/2019
 keywords: 
  -OID_GEN_RCV_ERROR Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_RCV\_ERROR
@@ -29,15 +28,13 @@ Supported.
 <a href="" id="ndis-5-1-drivers"></a>NDIS 5.1 drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 The count is identical to the *ifInErrors* counter described in RFC 2863.
 
 For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

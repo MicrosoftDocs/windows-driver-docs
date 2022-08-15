@@ -5,7 +5,6 @@ keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , vertex buffers, creation handling
 - vertex buffers WDK DirectX 8.0 , creation handling on Windows 2000
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Vertex Buffer Creation Handling on Windows 2000

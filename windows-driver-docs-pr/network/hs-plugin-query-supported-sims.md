@@ -4,7 +4,6 @@ description: The HS_PLUGIN_QUERY_SUPPORTED_SIMS function returns the list of SIM
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_QUERY_SUPPORTED_SIMS) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_PLUGIN\_QUERY\_SUPPORTED\_SIMS function
@@ -14,8 +13,7 @@ ms.localizationpriority: medium
 
 The **HS\_PLUGIN\_QUERY\_SUPPORTED\_SIMS** function returns the list of SIMs that the plugin supports.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_PLUGIN_QUERY_SUPPORTED_SIMS)(
@@ -24,8 +22,7 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *\*pNetworkIdentity* \[in, optional\]  
 The [**HS\_NETWORK\_IDENTITY**](hs-network-identity.md) structure that uniquely identifies the network.
@@ -33,18 +30,15 @@ The [**HS\_NETWORK\_IDENTITY**](hs-network-identity.md) structure that uniquely 
 *\*pSupportedSIMs* \[in, out\]  
 Pointer to an array of one or more [**HS\_PLUGIN\_SUPPORTED\_SIMS**](hs-plugin-supported-sims.md) structures that contains the list of supported SIMs.
 
-Return value
-------------
+## Return value
 
 This function is called by the host to communicate with the plugin and does not return a value.
 
-Remarks
--------
+## Remarks
 
 If the *pNetworkIdentity* parameter exists then only those SIM identities required for connecting to the specified network must be provided, otherwise the entire list of SIMs for connecting to all networks must be provided.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -3,7 +3,6 @@ title: Security Issues for I/O Control Codes
 description: Security Issues for I/O Control Codes
 keywords: ["I/O control codes WDK kernel , security", "control codes WDK IOCTLs , security", "IOCTLs WDK kernel , security", "security WDK IOCTLs"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Security Issues for I/O Control Codes
@@ -32,7 +31,7 @@ When processing IOCTL codes within a driver, use the following rules:
 
 -   Always zero driver-allocated buffers that will contain data intended for an application that originated an IOCTL request. That way, you will not accidentally copy sensitive data to the application.
 
--   For METHOD\_IN\_DIRECT and METHOD\_OUT\_DIRECT transfers, follow the rules above. Additionally, check for a **NULL** return value from [**MmGetSystemAddressForMdlSafe**](./mm-bad-pointer.md), which indicates that mapping failed or that a zero-length buffer was supplied.
+-   For METHOD\_IN\_DIRECT and METHOD\_OUT\_DIRECT transfers, follow the rules above. Additionally, check for a **NULL** return value from [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe), which indicates that mapping failed or that a zero-length buffer was supplied.
 
 -   For METHOD\_NEITHER transfers, follow the rules that are provided in [Using Neither Buffered Nor Direct I/O](using-neither-buffered-nor-direct-i-o.md).
 

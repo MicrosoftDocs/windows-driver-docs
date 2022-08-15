@@ -2,7 +2,6 @@
 title: Testing Sensor Events
 description: The Sensor Diagnostic Tool lets you test support for events in your driver and firmware.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Testing Sensor Events
@@ -23,7 +22,7 @@ The following procedure describes how to configure the diagnostic tool to captur
 
 The following illustration shows the tool after it begins capturing accelerometer events.
 
-![sensor diagnostic tool: capturing accelerometer events](images/sdt-events.png)
+![sensor diagnostic tool: capturing accelerometer events.](images/sdt-events.png)
 
 
 ## Logging Event Data to an XML File

@@ -2,7 +2,6 @@
 description: The goal of controller testing is to generate a complete set of possible traffic patterns from hubs and devices.
 title: USB host controller testing with MUTT devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB host controller testing with MUTT devices
@@ -38,7 +37,7 @@ Consider the following configurations for xHCI controllers under test:
 -   Attach SuperMUTTs to half the available ports. Attach SuperMUTT Pack devices to the remaining ports. For SuperMUTT Packs, attach downstream SuperMUTT devices.
 -   You can have a complex topology. For example, consider a controller with four ports. The following image shows an example topology.
 
-    ![example xhci controller topology](images/fig12-xhci-controller-topology.png)
+    ![example xhci controller topology.](images/fig12-xhci-controller-topology.png)
 
 ## Related topics
 [USB](../index.yml)  

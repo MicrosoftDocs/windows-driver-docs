@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_VISIBLE_PROVIDERS notific
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_WWAN_VISIBLE_PROVIDERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_VISIBLE\_PROVIDERS
@@ -16,11 +15,9 @@ Miniport drivers cannot use this notification to send unsolicited events.
 
 This notification uses the [**NDIS\_WWAN\_VISIBLE\_PROVIDERS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_visible_providers) structure.
 
-Remarks
--------
+## Remarks
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

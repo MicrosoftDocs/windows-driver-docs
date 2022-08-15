@@ -4,6 +4,15 @@
   href: windows-threshold--what-s-new-for-audio.md
 - name: "Windows Audio Architecture"
   href: windows-audio-architecture.md
+- name: "ACX - Audio Class Extensions"
+# Auto-expanded node
+  items: 
+  - name: "ACX - Audio Class Extensions Overview"
+    href: acx-audio-class-extensions-overview.md
+  - name: "ACX - Summary of ACX Objects"
+    href: acx-summary-of-objects.md
+  - name: "ACX - Multi stack cross driver communications"
+    href: acx-audio-multi-stack.md
 - name: "WDM Audio Drivers Overview"
 # Auto-expanded node
   items: 
@@ -92,6 +101,8 @@
       href: audio-property-handlers.md
     - name: "Basic Support Queries for Audio Properties"
       href: basic-support-queries-for-audio-properties.md
+    - name: "Default Audio Endpoint Selection Starting in Windows 10"
+      href: default-audio-endpoint-selection.md
     - name: "Audio Endpoint Builder Algorithm"
       href: audio-endpoint-builder-algorithm.md
     - name: "Dynamic Subdevice Registration and Unregistration"
@@ -343,6 +354,10 @@
     href: voice-activation.md
   - name: "USB Audio 2.0 Drivers"
     href: usb-2-0-audio-drivers.md
+  - name: "Supporting audio posture"
+    href: supporting-audio-posture.md
+  - name: "Windows 11 APIs for Audio Processing Object"
+    href: windows-11-apis-for-audio-processing-objects.md
   - name: "Audio Hardware Resource Management"
     href: audio-hardware-resource-management.md
   - name: "Bluetooth Bypass Guidelines for Audio Drivers"
@@ -477,6 +492,8 @@
     href: format-negotiation.md
   - name: "Dynamic Format Change"
     href: dynamic-format-change.md
+  - name: "Combine Custom and Windows APOs"
+    href: combine-custom-and-windows-apos.md
 - name: "Windows Audio Processing Objects"
 # Auto-expanded node
   items: 

@@ -9,7 +9,6 @@ api_name:
 - threadfields
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !threadfields
@@ -49,8 +48,7 @@ The **!threadfields** extension displays the names and offsets of the fields wit
 
 For information about the ETHREAD block, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 This extension command is not available in Windows XP or later versions of Windows. Instead, use the [**dt (Display Type)**](dt--display-type-.md) command to show the ETHREAD structure directly:
 

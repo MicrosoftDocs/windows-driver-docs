@@ -9,7 +9,6 @@ api_name:
 - IrqlKeRaiseLower2
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlKeRaiseLower2 rule (wdm)
@@ -21,8 +20,7 @@ This rule permits nested calls to **KeRaiseIrql**, **KeRaiseIrqlToDpcLevel** and
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,13 +45,11 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**KeLowerIrql**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kelowerirql)
 [**KeRaiseIrql**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keraiseirql)
-See also
---------
+## See also
 
 [**IrqlKeDispatchLte**](wdm-irqlkedispatchlte.md)
 [**IrqlKeRaiseLower**](wdm-irqlkeraiselower.md)

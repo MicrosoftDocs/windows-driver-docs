@@ -9,7 +9,6 @@ api_name:
 - PcTimedWaveRtStreamSetState
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PcTimedWaveRtStreamSetState rule (audio)
@@ -22,8 +21,7 @@ The PcTimedWaveRtStreamSetState rule specifies that a ProtCls miniport driver ma
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x00072001)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

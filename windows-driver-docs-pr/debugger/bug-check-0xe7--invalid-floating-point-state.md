@@ -9,7 +9,6 @@ api_name:
 - INVALID_FLOATING_POINT_STATE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xE7: INVALID\_FLOATING\_POINT\_STATE
@@ -65,8 +64,7 @@ Parameter 1 indicates which validity check failed. Parameter 4 is not used. The 
 
  
 
-Cause
------
+## Cause
 
 While restoring the previously-saved floating-point state for a thread, the state was found to be invalid.
 

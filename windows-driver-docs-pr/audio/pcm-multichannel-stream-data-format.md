@@ -4,7 +4,6 @@ description: PCM Multichannel Stream Data Format
 keywords:
 - PCM multichannel stream data formats WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PCM Multichannel Stream Data Format

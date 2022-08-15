@@ -2,7 +2,6 @@
 title: Container ID support for displays
 description: Describes Container ID support for displays--visual representation of devices that are embedded within a display or monitor device.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Container ID support for displays
@@ -36,7 +35,7 @@ New capabilities in monitor devices can provide a better user experience. In par
 
 It's important to visually represent the connectivity and state of these devices to the user in an intuitive way. The **Devices and Printers** page was introduced with Windows 7. As shown here, the **Devices and Printers** folder shows the user the installed devices that are connected to the PC, providing a simple way to check on a printer, music player, camera, mouse, or digital picture frame (to name just a few). At the same time, this page groups those devices that are contained within the same piece of hardware to make it easier for users to discover all their drivers.
 
-![visual representation of the devices and printers folder](images/visualdevicesprintersfolder.jpg)
+![visual representation of the devices and printers folder.](images/visualdevicesprintersfolder.jpg)
 
 With Windows 7 Microsoft introduced the concept of a *container ID* for devices: "a system-supplied device identification string that uniquely groups the functional devices associated with a single-function or multifunction device installed in the computer." (See [Container IDs](../install/container-ids.md).) The devices are grouped if they contain the same container ID.
 

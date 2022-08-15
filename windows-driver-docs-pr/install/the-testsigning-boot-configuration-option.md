@@ -1,8 +1,7 @@
 ---
 title: Loading Test Signed Code
 description: Describes how to enable loading of test signed drivers using the TESTSIGNING option with BCDEdit tool
-ms.date: 02/15/2021
-ms.localizationpriority: medium
+ms.date: 01/06/2022
 ms.custom: contperf-fy21q3
 ---
 
@@ -34,6 +33,9 @@ To enable test-signed code, use the following BCDEdit command line:
 Bcdedit.exe -set TESTSIGNING ON
 ```
 
+> [!NOTE]
+> Starting in Windows 10, version 1507, if you have Memory Integrity / HVCI (Hypervisor Code Integrity) enabled, you must test-sign the binary using any self-created test cert. An unsigned binary is not supported.
+
 To disable use of test-signed code, use the following BCDEdit command line:
 
 ```cmd
@@ -42,7 +44,7 @@ Bcdedit.exe -set TESTSIGNING OFF
 
 The following figure shows the result of using the BCDEdit command line to enable test-signing.
 
-![Screen shot of the results of using testsigning, a boot configuration option](images/driver-signing-enable-vista-test-signing.png)
+![Screen shot of the results of using testsigning, a boot configuration option.](images/driver-signing-enable-vista-test-signing.png)
 
 
 ## Behavior of Windows when loading test-signed code is enabled

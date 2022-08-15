@@ -7,7 +7,6 @@ keywords:
 - queued requests WDK storage
 - queues WDK storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Queuing Storage Requests

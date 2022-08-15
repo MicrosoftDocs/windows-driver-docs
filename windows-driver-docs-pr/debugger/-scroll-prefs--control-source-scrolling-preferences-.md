@@ -9,7 +9,6 @@ api_name:
 - .scroll_prefs (Control Source Scrolling Preferences)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .scroll\_prefs (Control Source Scrolling Preferences)
@@ -58,8 +57,7 @@ This command is available only in WinDbg and cannot be used in script files.
 
  
 
-Remarks
--------
+## Remarks
 
 When this command is used with no parameters, the current source scrolling preferences are displayed.
 

@@ -4,7 +4,6 @@ description: The HS_PLUGIN_PRE_CONNECT_INIT function is called to notify the plu
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_PRE_CONNECT_INIT) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_PLUGIN\_PRE\_CONNECT\_INIT function
@@ -14,8 +13,7 @@ ms.localizationpriority: medium
 
 The **HS\_PLUGIN\_PRE\_CONNECT\_INIT** function is called to notify the plugin to initialize its state when a connection to a hotspot network is in progress.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_PLUGIN_PRE_CONNECT_INIT)(
@@ -23,19 +21,16 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *\*pNetworkIdentity* \[in\]  
 Pointer to the [**HS\_NETWORK\_IDENTITY**](hs-network-identity.md) structure for the target network.
 
-Return value
-------------
+## Return value
 
 This function is called by the host to communicate with the plugin and does not return a value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

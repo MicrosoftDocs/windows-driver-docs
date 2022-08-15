@@ -7,7 +7,6 @@ keywords:
 - destination surfaces WDK DirectX VA
 - substream surfaces WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supplying Video Substream and Destination Surfaces

@@ -4,7 +4,6 @@ description: WMI sends this IRP to query or update a driver's registration infor
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_REGINFO_EX Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_REGINFO\_EX
@@ -16,13 +15,11 @@ If a driver calls [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf
 
 On Microsoft Windows XP and later operating systems, drivers that support WMI must handle this IRP. Drivers that support Microsoft Windows 98 and Windows 2000 must also handle [**IRP\_MN\_REGINFO**](irp-mn-reginfo.md).
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_SYSTEM\_CONTROL**](irp-mj-system-control.md)
 
-When Sent
----------
+## When Sent
 
 On Windows XP and later, WMI sends this IRP to query or update a driver's registration information after the driver has called [**IoWMIRegistrationControl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol). On Windows 98 and Windows 2000, WMI sends the **IRP\_MN\_REGINFO** request instead.
 
@@ -91,8 +88,7 @@ STATUS\_BUFFER\_TOO\_SMALL
 
 On success, a driver sets **Irp-&gt;IoStatus.Information** to the number of bytes written to the buffer at **Parameters.WMI.Buffer**.
 
-Operation
----------
+## Operation
 
 If a driver handles an **IRP\_MN\_REGINFO\_EX** request itself, it should do so only if **Parameters.WMI.ProviderId** points to the same device object as the pointer that the driver passed to [**IoWMIRegistrationControl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol). Otherwise, the driver must forward the request to the next-lower driver.
 
@@ -118,8 +114,7 @@ A driver can use the same **WMIREGINFO** structures to remove, add, or update bl
 
 WMI does not send an **IRP\_MN\_REGINFO\_EX** request after a driver calls [**IoWMIRegistrationControl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol) with WMIREG\_ACTION\_DEREGISTER, because WMI requires no further information from the driver. A driver typically deregisters its blocks in response to an [**IRP\_MN\_REMOVE\_DEVICE**](irp-mn-remove-device.md) request.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

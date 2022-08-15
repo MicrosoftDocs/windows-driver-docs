@@ -4,7 +4,6 @@ description: OID_802_3_MAXIMUM_LIST_SIZE
 ms.date: 08/08/2017
 keywords: 
  -OID_802_3_MAXIMUM_LIST_SIZE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_802\_3\_MAXIMUM\_LIST\_SIZE
@@ -17,8 +16,7 @@ NDIS and overlying protocol drivers use the OID\_802\_3\_MAXIMUM\_LIST\_SIZE OID
 
 This multicast address list is shared by all protocol drivers that are bound to the miniport adapter. Because it is a shared resource, a protocol driver can receive **NDIS\_STATUS\_MULTICAST\_FULL** from the miniport adapter in response to an [OID\_802\_3\_MULTICAST\_LIST](oid-802-3-multicast-list.md) OID set request, even if the number of elements in the list is less than the number that NDIS previously returned for an OID\_802\_3\_MAXIMUM\_LIST\_SIZE OID query request.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

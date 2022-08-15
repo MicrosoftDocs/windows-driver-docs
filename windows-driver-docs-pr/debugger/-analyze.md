@@ -1,5 +1,5 @@
 ---
-title: analyze
+title: analyze (WinDbg)
 description: The analyze extension displays information about the current exception or bug check.
 keywords: ["analyze Windows Debugging"]
 ms.date: 09/17/2018
@@ -9,7 +9,6 @@ api_name:
 - analyze
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !analyze
@@ -76,8 +75,7 @@ Ext.dll
 
 For sample analysis of a user-mode exception and of a kernel-mode stop error (that is, crash), and for more information about how **!analyze** uses the triage.ini file, see [Using the !analyze Extension](using-the--analyze-extension.md).
 
-Remarks
--------
+## Remarks
 
 In user mode, **!analyze** displays information about the current exception.
 

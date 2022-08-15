@@ -4,7 +4,6 @@ description: OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS is used to set or query t
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS
@@ -22,8 +21,7 @@ On error miniports should set the **uStatus** member of NDIS\_WWAN\_PREFERRED\_M
 
 The **Rssi** and **ErrorRate** members of WWAN\_PROVIDER2 structure should be set if available.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

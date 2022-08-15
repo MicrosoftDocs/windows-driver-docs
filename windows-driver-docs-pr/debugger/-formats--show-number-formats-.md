@@ -9,7 +9,6 @@ api_name:
 - .formats (Show Number Formats)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .formats (Show Number Formats)
@@ -52,8 +51,7 @@ Specifies the expression to evaluate. For more information about the syntax, see
 
  
 
-Remarks
--------
+## Remarks
 
 The evaluated expression is displayed in hexadecimal, decimal, octal, and binary formats, as well as single-precision and double-precision floating-point format. ASCII character formats are also displayed when the bytes correspond to standard ASCII characters. The expression is also interpreted as a time stamp if it is in the allowed range.
 

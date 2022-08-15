@@ -1,5 +1,5 @@
 ---
-title: acpiinf
+title: acpiinf (WinDbg)
 description: The acpiinf extension displays information on the configuration of the ACPI, including system tables and the contents of the ACPI fixed feature hardware.
 keywords: ["acpiinf Windows Debugging"]
 ms.date: 09/17/2018
@@ -9,7 +9,6 @@ api_name:
 - acpiinf
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !acpiinf

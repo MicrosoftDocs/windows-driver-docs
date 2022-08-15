@@ -3,7 +3,6 @@ title: PnP Components
 description: PnP Components
 keywords: ["PnP WDK kernel , components", "Plug and Play WDK kernel , components", "software components WDK PnP", "PnP drivers WDK kernel", "user-mode PnP manager WDK", "kernel-mode PnP manager WDK", "PnP managers WDK", "PnP components WDK user-mode"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # PnP Components
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 The following figure shows the components that work together to support PnP.
 
-![diagram illustrating plug and play software components](images/pnpcomp.png)
+![diagram illustrating plug and play software components.](images/pnpcomp.png)
 
 The PnP manager has two parts: the kernel-mode PnP manager and the user-mode PnP manager. The kernel-mode PnP manager interacts with operating system components and drivers to configure, manage, and maintain devices. The user-mode PnP manager interacts with user-mode setup components, such as Class Installers, to configure and install devices. The user-mode PnP manager also interacts with applications to, for example, register an application for notification of device changes and notify the application when a device event occurs.
 

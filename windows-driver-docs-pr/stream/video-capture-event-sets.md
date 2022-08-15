@@ -7,7 +7,6 @@ keywords:
 - streaming event sets WDK video capture
 - event sets WDK video capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Video Capture Event Sets

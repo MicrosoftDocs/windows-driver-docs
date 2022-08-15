@@ -9,7 +9,6 @@ api_name:
 - .allow_image_mapping (Allow Image Mapping)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .allow\_image\_mapping (Allow Image Mapping)
@@ -60,8 +59,7 @@ Allows image files to be mapped.
 
  
 
-Remarks
--------
+## Remarks
 
 With no parameters, **.allow\_image\_mapping** will display whether image file mapping is currently allowed. By default, this mapping is allowed.
 

@@ -10,7 +10,6 @@ keywords:
 - Inter-Filter Communicator WDK XPSDrv
 - IFC WDK XPSDrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # XPSDrv Render Module
@@ -20,7 +19,7 @@ The render module of an XPSDrv printer driver contains the filters that render t
 
 The following diagram shows a filter pipeline.
 
-![diagram illustrating a filter pipeline](images/xps-pipeline.png)
+![diagram illustrating a filter pipeline.](images/xps-pipeline.png)
 
 Microsoft provides the following XPS driver components:
 

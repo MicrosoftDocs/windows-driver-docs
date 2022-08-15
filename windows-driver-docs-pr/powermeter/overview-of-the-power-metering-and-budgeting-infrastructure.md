@@ -4,7 +4,6 @@ description: Overview of the Power Metering and Budgeting Infrastructure
 keywords:
 - Power Metering and Budgeting WDK , overview
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of the Power Metering and Budgeting Infrastructure
@@ -30,7 +29,7 @@ Multiple power meters could be installed in a computer system, with each power m
 
 The following figure provides an overview of the PMB infrastructure.
 
-![diagram overview of the power metering and budgeting (pmb) infrastructure ](images/powermeter-1.png)
+![diagram overview of the power metering and budgeting (pmb) infrastructure .](images/powermeter-1.png)
 
 PMB consists of the following components:
 

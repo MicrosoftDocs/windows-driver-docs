@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # DXGK\_PRESENTALLOCATIONINFO structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The DXGK\_PRESENTALLOCATIONINFO structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_PRESENTALLOCATIONINFO {
@@ -32,8 +30,7 @@ typedef struct _DXGK_PRESENTALLOCATIONINFO {
 } DXGK_PRESENTALLOCATIONINFO;
 ```
 
-Members
--------
+## Members
 
 **hDeviceSpecificAllocation**
 Reserved for system use.
@@ -50,8 +47,7 @@ Reserved for system use.
 **PhysicalAdapterIndex**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -2,7 +2,6 @@
 title: What happens to NULL strings in tracing code
 description: What happens to NULL strings in tracing code
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # What happens to NULL strings in tracing code?

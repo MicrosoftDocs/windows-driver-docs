@@ -2,7 +2,6 @@
 title: DirectMusic User-Mode Synth and Synth Sink Interfaces
 description: DirectMusic User-Mode Synth and Synth Sink Interfaces
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # DirectMusic User-Mode Synth and Synth Sink Interfaces

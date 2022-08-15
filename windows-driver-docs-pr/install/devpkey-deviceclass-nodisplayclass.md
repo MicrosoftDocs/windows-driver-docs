@@ -10,7 +10,6 @@ api_location:
 - Devpkey.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -56,19 +55,17 @@ The DEVPKEY_DeviceClass_NoDisplayClass device property represents a Boolean flag
 
  
 
-Remarks
--------
+## Remarks
 
 If the value of DEVPKEY_DeviceClass_NoDisplayClass is set to DEVPROP_TRUE, Device Manager does not display devices in the device setup class. If this value is not set to DEVPROP_TRUE, the Device Manager does display devices in the device setup class.
 
 The **NoDisplayClass** registry value for a device setup class can be set by an [**INF AddReg directive**](./inf-addreg-directive.md) that is included in the [**INF ClassInstall32 section**](./inf-classinstall32-section.md) of the INF file that installs the class.
 
-You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_NoDisplayClass.
+You can call [**CM_Get_Class_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_class_propertyw) or [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) to retrieve the value of DEVPKEY_DeviceClass_NoDisplayClass.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_NoDisplayClass property key. You can access the value of this property by accessing the corresponding **NoDisplayClass** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](./accessing-registry-entry-values-under-the-class-registry-key.md).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_NoDisplayClass property key. You can access the value of this property by accessing the corresponding **NoDisplayClass** registry value under the class registry key. For information about how to access value entries under the class registry key, see [Accessing Registry Entry Values Under the Class Registry Key](./accessing-device-setup-class-properties.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)
@@ -82,8 +79,3 @@ Requirements
 [**INF ClassInstall32 Section**](./inf-classinstall32-section.md)
 
 [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
-
-[**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
-
- 
-

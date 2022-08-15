@@ -2,7 +2,6 @@
 title: Backchannel Communication from a VF Miniport Driver
 description: Backchannel Communication from a VF Miniport Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Backchannel Communication from a VF Miniport Driver
@@ -36,7 +35,7 @@ The PF miniport driver manages access to the specified VF configuration block in
 
 The following figure shows the process involved in reading and writing VF configuration blocks over the SR-IOV backchannel interface.
 
-![image shows various configuration blocks moving between vf miniport driver, ndis, and pf miniport driver](images/sriov-vf-backchannel.png)
+![image shows various configuration blocks moving between vf miniport driver, ndis, and pf miniport driver.](images/sriov-vf-backchannel.png)
 
  
 

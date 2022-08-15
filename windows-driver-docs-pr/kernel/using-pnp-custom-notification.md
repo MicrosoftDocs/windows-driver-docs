@@ -3,7 +3,6 @@ title: Using PnP Custom Notification
 description: Using PnP Custom Notification
 keywords: ["notifications WDK PnP , custom", "custom notifications WDK PnP", "notifications WDK PnP , target device changes", "target device change notifications WDK PnP", "EventCategoryTargetDeviceChange notification"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using PnP Custom Notification

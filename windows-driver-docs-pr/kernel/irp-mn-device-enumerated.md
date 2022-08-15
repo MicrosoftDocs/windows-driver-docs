@@ -4,7 +4,6 @@ description: The PnP manager uses this I/O request packet (IRP) to notify bus dr
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_DEVICE_ENUMERATED Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_DEVICE\_ENUMERATED
@@ -16,13 +15,11 @@ The PnP manager uses this I/O request packet (IRP) to notify bus drivers that a 
 
 0x19
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP just before user mode is notified with GUID\_DEVICE\_ENUMERATED. This IRP allows drivers to provide a preprocess routine for IRP\_MN\_DEVICE\_ENUMERATED, such as filling in additional device properties. This IRP primarily allows drivers to set device properties for the physical device object (PDO) by using [**IoSetDevicePropertyData**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdevicepropertydata).
 
@@ -41,8 +38,7 @@ None
 
 A driver that handles this IRP sets [Irp-&gt;IoStatus.Status](./i-o-status-blocks.md) to STATUS\_SUCCESS or an appropriate error status.
 
-Operation
----------
+## Operation
 
 The **IRP\_MN\_DEVICE\_ENUMERATED** IRP is sent to the bus driver's PDO to indicate that the bus driver PDO exists.
 
@@ -51,8 +47,7 @@ The **IRP\_MN\_DEVICE\_ENUMERATED** IRP is sent to the bus driver's PDO to indic
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

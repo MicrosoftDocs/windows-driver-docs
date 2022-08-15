@@ -9,7 +9,6 @@ api_name:
 - NsRemoveLockMnRemove
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NsRemoveLockMnRemove rule (wdm)
@@ -19,8 +18,7 @@ The **NsRemoveLockMnRemove** rule verifies a driver does not return STATUS\_NOT\
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +43,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoAcquireRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioacquireremovelock)

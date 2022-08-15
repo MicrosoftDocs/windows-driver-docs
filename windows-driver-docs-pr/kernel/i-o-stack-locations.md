@@ -3,7 +3,6 @@ title: I/O Stack Locations
 description: I/O Stack Locations
 keywords: ["IRPs WDK kernel , I/O stack locations", "I/O stack locations WDK kernel", "stack locations WDK kernel", "layered driver I/O stack locations WDK kernel", "IRPs WDK kernel , contents", "IO_STACK_LOCATION structure"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # I/O Stack Locations
@@ -22,7 +21,7 @@ The [Processing IRPs in Layered Drivers](example-i-o-request---the-details.md#dd
 
 The following figure shows the contents of the IRP in more detail.
 
-![diagram illustrating the contents of i/o stack location in an irp](images/2irpios.png)
+![diagram illustrating the contents of i/o stack location in an irp.](images/2irpios.png)
 
 As shown in the figure, each driver-specific I/O stack location in an IRP contains the following general information:
 

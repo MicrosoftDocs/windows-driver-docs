@@ -6,7 +6,6 @@ keywords:
 - BDA WDK AVStream , security
 - security WDK BDA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introducing Threats to a BDA Minidriver
@@ -25,7 +24,7 @@ The following paths can possibly introduce BDA minidriver threats:
 
 The following diagram shows how BDA minidriver threats can be introduced:
 
-![diagram illustrating how bda minidriver threats can be introduced](images/bdathret.png)
+![diagram illustrating how bda minidriver threats can be introduced.](images/bdathret.png)
 
  
 

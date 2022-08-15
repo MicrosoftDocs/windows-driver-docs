@@ -3,7 +3,6 @@ title: Transaction Notifications
 description: Transaction Notifications
 keywords: ["notifications WDK KTM", "transactions WDK KTM , notifications", "resource managers WDK KTM , notifications", "Kernel Transaction Manager WDK , notifications", "KTM WDK , notifications", "superior transaction managers WDK KTM"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Transaction Notifications

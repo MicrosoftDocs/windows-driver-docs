@@ -15,27 +15,23 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Iasphelp::CalcJobETA method
 
 The **CalcJobETA** method enables an ASP Web page to calculate the time at which a print job is to be completed.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT CalcJobETA();
 ```
 
-Parameters
-----------
+## Parameters
 
 This method has no parameters.
 
-Return value
-------------
+## Return value
 
 The following table shows possible return values for this method.
 
@@ -92,8 +88,7 @@ objPrinter.Open strPrinter
 objPrinter.CalcJobETA
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

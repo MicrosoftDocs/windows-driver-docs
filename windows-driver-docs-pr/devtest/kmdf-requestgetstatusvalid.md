@@ -9,7 +9,6 @@ api_name:
 - RequestGetStatusValid
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # RequestGetStatusValid rule (kmdf)
@@ -22,8 +21,7 @@ The **RequestGetStatusValid** rule that specifies that [**WdfRequestGetStatus**]
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -48,8 +46,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfRequestGetStatus**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestgetstatus)
 [**WdfRequestSend**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend)

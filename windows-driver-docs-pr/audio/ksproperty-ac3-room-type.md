@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AC3\_ROOM\_TYPE
@@ -46,7 +45,7 @@ The KSPROPERTY\_AC3\_ROOM\_TYPE property specifies the type and calibration of t
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksac3_room_type" data-raw-source="[&lt;strong&gt;KSAC3_ROOM_TYPE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksac3_room_type)"><strong>KSAC3_ROOM_TYPE</strong></a></p></td>
 </tr>
 </tbody>
@@ -60,15 +59,13 @@ The property value (operation data) is a KSAC3\_ROOM\_TYPE structure that specif
 
 A KSPROPERTY\_AC3\_ROOM\_TYPE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 This property provides information about the production environment of the AC-3-encoded stream. The property value is not typically used by the AC-3 decoder, but might be used by other audio components.
 
 If the encoded stream does not specify a room type, the property request returns an error code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -86,7 +83,6 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](../stream/ksproperty-structure.md)
 
 [**KSAC3\_ROOM\_TYPE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksac3_room_type)
-

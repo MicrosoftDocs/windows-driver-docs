@@ -9,7 +9,6 @@ api_name:
 - validatelist
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !validatelist
@@ -48,8 +47,7 @@ The address of the doubly-linked list.
 
  
 
-Remarks
--------
+## Remarks
 
 To stop execution, press Ctrl+Break (in WinDbg) or Ctrl+C (in KD).
 

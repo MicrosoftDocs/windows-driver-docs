@@ -2,7 +2,6 @@
 description: Support for capability commands (WpdBasicHardwareDriver sample)
 title: Support for capability commands (WpdBasicHardwareDriver sample)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Support for capability commands (WpdBasicHardwareDriver sample)

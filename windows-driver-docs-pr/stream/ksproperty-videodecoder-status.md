@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_VIDEODECODER\_STATUS
@@ -56,8 +55,7 @@ The KSPROPERTY\_VIDEDECODER\_STATUS property retrieves status information from t
 
 The property value (operation data) is a KSPROPERTY\_VIDEODECODER\_STATUS\_S structure that specifies the present status of a video decoding device, such as number of lines in the incoming analog signal and whether the signal is locked in.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -75,7 +73,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_VIDEODECODER\_STATUS\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videodecoder_status_s)
 

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIOENGINE enumeration
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The properties contained in the [KSPROPSETID\_AudioEngine](kspropsetid-audioengine.md) property set are defined by this enumeration and must be supported by a [**KSNODETYPE\_AUDIO\_ENGINE**](ksnodetype-audio-engine.md) node.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum  { 
@@ -36,8 +34,7 @@ typedef enum  {
 } KSPROPERTY_AUDIOENGINE;
 ```
 
-Constants
----------
+## Constants
 
 <span id="KSPROPERTY_AUDIOENGINE_LFXENABLE"></span><span id="ksproperty_audioengine_lfxenable"></span>**KSPROPERTY\_AUDIOENGINE\_LFXENABLE**  
 Specifies the ID for the [**KSPROPERTY\_AUDIOENGINE\_LFXENABLE**](ksproperty-audioengine-lfx-enable.md) property.
@@ -66,8 +63,7 @@ Specifies the ID for the [**KSPROPERTY\_AUDIOENGINE\_LOOPBACK\_PROTECTION**](ksp
 <span id="KSPROPERTY_AUDIOENGINE_VOLUMELEVEL"></span><span id="ksproperty_audioengine_volumelevel"></span>**KSPROPERTY\_AUDIOENGINE\_VOLUMELEVEL**  
 Specifies the ID for the [**KSPROPERTY\_AUDIOENGINE\_VOLUMELEVEL**](ksproperty-audioengine-volumelevel.md) property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

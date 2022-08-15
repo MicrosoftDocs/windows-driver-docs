@@ -1,5 +1,5 @@
 ---
-title: isr
+title: isr (WinDbg)
 description: The isr extension displays the Itanium Interruption Status Register (ISR) at the specified address.
 keywords: ["ISR (Interruption Status Register)", "Interruption Status Register (ISR)", "isr Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - isr
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !isr
@@ -66,8 +65,7 @@ Displays details about all ISR fields, including those that are ignored or reser
 
 This extension command can only be used with an Itanium target computer.
 
-Remarks
--------
+## Remarks
 
 Here are a couple of examples of output from this extension:
 

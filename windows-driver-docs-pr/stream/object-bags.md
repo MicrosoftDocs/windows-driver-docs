@@ -11,7 +11,6 @@ keywords:
 - AVStream descriptors WDK
 - descriptors WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Object Bags

@@ -4,7 +4,6 @@ description: WDI_TLV_WAKE_PACKET_EAPOL_REQUEST_ID_MESSAGE is a TLV that contains
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_WAKE_PACKET_EAPOL_REQUEST_ID_MESSAGE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_WAKE\_PACKET\_EAPOL\_REQUEST\_ID\_MESSAGE
@@ -31,8 +30,7 @@ The size (in bytes) of a UINT32.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

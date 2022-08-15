@@ -9,7 +9,6 @@ api_name:
 - PASSIVE_INTERRUPT_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x13B: PASSIVE\_INTERRUPT\_ERROR

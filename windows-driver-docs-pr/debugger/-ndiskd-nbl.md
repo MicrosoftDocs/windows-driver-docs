@@ -9,7 +9,6 @@ api_name:
 - ndiskd.nbl
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.nbl
@@ -66,8 +65,7 @@ Shows the current owner of the NBL.
 
 Ndiskd.dll
 
-Examples
---------
+## Examples
 
 In the following example, NBL tracking has been enabled to extract a handle for an NBL from the NBL log. For more information about NBL tracking and the NBL log, see [**!ndiskd.nbllog**](-ndiskd-nbllog.md).
 
@@ -99,7 +97,7 @@ NET_BUFFER ffffdf8014952610
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
+[Debugging the Network Stack](/shows/defrag-tools/175-debugging-network-stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 

@@ -8,7 +8,6 @@ keywords:
 - system-defined IOCTL_VIDEO_XXX requests WDK video miniport
 - IOCTL_VIDEO_XXX requests WDK video miniport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # System-Defined IOCTL_VIDEO_XXX Requests

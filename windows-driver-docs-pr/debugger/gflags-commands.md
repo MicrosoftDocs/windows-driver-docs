@@ -9,7 +9,6 @@ api_name:
 - GFlags Commands
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # GFlags Command Overview

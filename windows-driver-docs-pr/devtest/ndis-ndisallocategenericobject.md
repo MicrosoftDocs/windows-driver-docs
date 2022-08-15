@@ -9,7 +9,6 @@ api_name:
 - NdisAllocateGenericObject
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisAllocateGenericObject rule (ndis)
@@ -21,8 +20,7 @@ The rule uses three different states. The state changes when an NDIS generic obj
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisAllocateGenericObject**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocategenericobject)
 [**NdisFreeGenericObject**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreegenericobject)

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPA\_UPLOAD\_ITEM\_SIZE
@@ -25,8 +24,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read/write
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

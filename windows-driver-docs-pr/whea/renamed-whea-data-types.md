@@ -7,7 +7,6 @@ keywords:
 - hardware errors WDK WHEA , renamed data types
 - renamed data types WDK WHEA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Renamed WHEA Data Types

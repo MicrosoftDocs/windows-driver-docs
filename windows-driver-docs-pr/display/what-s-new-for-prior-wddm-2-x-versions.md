@@ -1,8 +1,7 @@
 ---
 title: Features added in prior WDDM 2.X versions
 description: Describes features in prior Windows 10 releases for display and graphics drivers
-ms.date: 03/24/2020
-ms.localizationpriority: medium
+ms.date: 08/10/2021
 ms.custom: seodec18, 19H1
 ---
 
@@ -164,10 +163,10 @@ For more details, see [GPU virtual memory in WDDM 2.0](gpu-virtual-memory-in-wdd
 
 ### Driver residency
 
-* The video memory manager makes sure that allocations are resident in memory before submitting command buffers to the driver. To facilitate this functionality, new user mode driver device driver interfaces (DDIs) have been added ([*MakeResident*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_makeresidentcb), [*TrimResidency*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_trimresidencyset), [*Evict*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_evictcb)).
-* The allocation and patch location list is being phased out because it is not necessary in the new model.
-* User mode drivers are now responsible for handling allocation tracking and several new DDIs have been added to enable this.
+* The video memory manager ensures that allocations are resident in memory before submitting command buffers to the driver. To facilitate this functionality, user-mode driver device driver interfaces (DDIs) were added ([*MakeResident*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_makeresidentcb), [*TrimResidency*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_trimresidencyset), [*Evict*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_evictcb)).
+* The allocation and patch location list is phased out because it is not necessary in the WDDM 2.0 model.
+* User-mode drivers are now responsible for handling allocation tracking. Several DDIs were added to enable this.
 * Drivers are given memory budgets and expected to adapt under memory pressure. This allows Universal Windows drivers to function across application platforms.
-* New DDIs have been added for process synchronization and context monitoring.
+* DDIs were added for process synchronization and context monitoring.
 
 For more details, see [Driver residency in WDDM 2.0](driver-residency-in-wddm-2-0.md).

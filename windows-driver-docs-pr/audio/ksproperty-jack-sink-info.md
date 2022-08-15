@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_JACK\_SINK\_INFO
@@ -59,8 +58,7 @@ The property value (instance data) is a KSJACK\_SINK\_INFORMATION structure.
 
 A KSPROPERTY\_JACK\_SINK\_INFO property request returns information in a **KSJACK\_SINK\_INFORMATION** structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

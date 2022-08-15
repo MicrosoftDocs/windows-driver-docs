@@ -4,7 +4,6 @@ description: NDIS miniport drivers and MUX intermediate drivers use the NDIS_STA
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_TASK_OFFLOAD_HARDWARE_CAPABILITIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_TASK\_OFFLOAD\_HARDWARE\_CAPABILITIES
@@ -12,8 +11,7 @@ ms.localizationpriority: medium
 
 NDIS miniport drivers and MUX intermediate drivers use the **NDIS\_STATUS\_TASK\_OFFLOAD\_HARDWARE\_CAPABILITIES** status indication to notify NDIS and overlying drivers that there has been change in the task offload hardware capabilities of the underlying NIC.
 
-Remarks
--------
+## Remarks
 
 If an underlying NIC is added or deleted, the overall set of hardware capabilities that is associated with a miniport driver or MUX intermediate driver can change. For example, if a miniport driver issues the **NDIS\_STATUS\_TASK\_OFFLOAD\_HARDWARE\_CAPABILITIES** status indication, specifying that it cannot support Large Send Offload (LSO), the NIC can no longer be configured to support LSO.
 
@@ -21,8 +19,7 @@ The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardw
 
 For more information about task offload hardware capabilities, see [OID\_TCP\_OFFLOAD\_HARDWARE\_CAPABILITIES](./oid-tcp-offload-hardware-capabilities.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

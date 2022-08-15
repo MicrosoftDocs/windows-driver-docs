@@ -1,5 +1,5 @@
 ---
-title: qlocks
+title: qlocks (WinDbg)
 description: The qlocks extension displays the state of all queued spin locks.
 keywords: ["qlocks Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - qlocks
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !qlocks
@@ -49,8 +48,7 @@ The **!qlocks** extension displays the state of all queued spin locks.
 
 For information about spin locks, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 This command is useful only on a multiprocessor system.
 

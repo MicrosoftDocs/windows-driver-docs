@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # D3DKMT\_WDDM\_1\_3\_CAPS structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_WDDM_1_3_CAPS {
@@ -36,8 +34,7 @@ typedef struct _D3DKMT_WDDM_1_3_CAPS {
 } D3DKMT_WDDM_1_3_CAPS;
 ```
 
-Members
--------
+## Members
 
 **SupportMiracast**
 
@@ -49,8 +46,7 @@ Members
 
 **Reserved**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

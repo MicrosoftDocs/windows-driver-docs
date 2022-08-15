@@ -2,7 +2,6 @@
 title: Static Driver Verifier KMDF Function Declarations
 description: Static Driver Verifier KMDF Function Declarations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Static Driver Verifier KMDF Function Declarations

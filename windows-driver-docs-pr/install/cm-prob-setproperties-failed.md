@@ -4,7 +4,6 @@ description: CM_PROB_SETPROPERTIES_FAILED
 keywords:
 - CM_PROB_SETPROPERTIES_FAILED
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code 50 - CM_PROB_SETPROPERTIES_FAILED

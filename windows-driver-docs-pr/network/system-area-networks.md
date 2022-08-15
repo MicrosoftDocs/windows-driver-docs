@@ -8,7 +8,6 @@ keywords:
 - addresses WDK SANs
 - linking computer clusters WDK SANs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # System Area Networks Overview

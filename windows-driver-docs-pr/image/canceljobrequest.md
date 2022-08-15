@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # CancelJobRequest element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **CancelJobRequest** operation enables a client to cancel a scan job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:CancelJobRequest>
@@ -26,13 +24,11 @@ Usage
 </wscn:CancelJobRequest>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 None
 
@@ -60,8 +56,7 @@ None
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 [**JobId**](jobid.md)
 

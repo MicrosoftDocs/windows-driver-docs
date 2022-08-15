@@ -4,10 +4,11 @@ description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_FT_ASSOC_PARAMS_NEE
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_FT_ASSOC_PARAMS_NEEDED Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_FT\_ASSOC\_PARAMS\_NEEDED
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_FT\_ASSOC\_PARAMS\_NEEDED to request parameters for 802.11r roaming.
@@ -33,8 +34,7 @@ For a connection where Initial Mobility Domain is successfully done, the LE shou
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

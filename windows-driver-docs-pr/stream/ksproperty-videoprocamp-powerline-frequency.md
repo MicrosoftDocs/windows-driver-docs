@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_VIDEOPROCAMP\_POWERLINE\_FREQUENCY
@@ -95,15 +94,13 @@ The property value (operation data) is a LONG that specifies the local power lin
 
  
 
-Remarks
--------
+## Remarks
 
 When making a set request, the client should supply one of the values in the preceding table in the **Value** member of the KSPROPERTY\_VIDEOPROCAMP\_NODE\_S structure.
 
 When making a get request, the client receives one of the values in the preceding table in the **Value** member of the KSPROPERTY\_VIDEOPROCAMP\_NODE\_S structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -121,7 +118,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_VIDEOPROCAMP\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videoprocamp_s)
 

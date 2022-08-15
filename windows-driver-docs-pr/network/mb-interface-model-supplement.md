@@ -2,7 +2,6 @@
 title: MB Interface Model supplement
 description: This section provides supplemental information for the MB Interface Model (MBIM)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MB Interface Model Supplement
@@ -90,7 +89,7 @@ To retrieve the information stored in the string, a standard GET\_DESCRIPTOR req
 
 *Standard Get\_Descriptor String Request*
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="16%" />
 <col width="16%" />
@@ -157,7 +156,7 @@ To retrieve a Microsoft OS feature descriptor, a special GET\_MS\_DESCRIPTOR req
 
 *Standard device request format*
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="16%" />
 <col width="16%" />

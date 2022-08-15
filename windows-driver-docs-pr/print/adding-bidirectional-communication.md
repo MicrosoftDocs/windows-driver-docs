@@ -8,7 +8,6 @@ keywords:
 - bidirectional communication WDK print
 - bidi communication WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding Bidirectional Communication
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The spooler provides support for bidirectional ("BiDi") communication between an application or driver and a printer. This support enables the application or driver to send one or more requests to the printer, and the printer to respond to these requests.
 
-![diagram illustrating bidirectional support architecture](images/bidi.png)
+![diagram illustrating bidirectional support architecture.](images/bidi.png)
 
 ### Bidirectional Communication Requirements
 

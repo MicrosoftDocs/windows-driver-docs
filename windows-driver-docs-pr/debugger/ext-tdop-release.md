@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # EXT\_TDOP\_RELEASE
@@ -28,8 +27,7 @@ Specifies the instance of the [**DEBUG\_TYPED\_DATA**](/windows-hardware/drivers
 <span id="Status"></span><span id="status"></span><span id="STATUS"></span>**Status**  
 Receives the status code returned by this sub-operation. This is the same as the value returned by [**Request**](request.md).
 
-Remarks
--------
+## Remarks
 
 EXT\_TDOP\_RELEASE is a value in the [**EXT\_TDOP**](/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop) enumeration.
 

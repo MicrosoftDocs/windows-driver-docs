@@ -10,7 +10,6 @@ api_location:
 - Devpkey.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -56,17 +55,15 @@ The DEVPKEY_DeviceClass_Characteristics device property represents the default d
 
  
 
-Remarks
--------
+## Remarks
 
 DEVPKEY_DeviceClass_Characteristics should only be set when a device setup class is installed and not modified later. For information about how to install a device setup class and setting this property, see [**INF ClassInstall32 Section**](./inf-classinstall32-section.md) and the information about the registry entry value **DeviceCharacteristics** that is provided in the "Special *value-entry-name* Keywords" section of [**INF AddReg Directive**](./inf-addreg-directive.md).
 
-You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_Characteristics.
+You can call [**CM_Get_Class_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_class_propertyw) or [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) to retrieve the value of DEVPKEY_DeviceClass_Characteristics.
 
-Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_DeviceClass_Characteristics property key. On these earlier versions of Windows, you can use the SPCRP_CHARACTERISTICS identifier to access the value of this property. For information about how to access the value of this property, see [Retrieving Device Setup Class SPCRP_Xxx Properties](./retrieving-spcrp-xxx-properties.md).
+Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_DeviceClass_Characteristics property key. On these earlier versions of Windows, you can use the SPCRP_CHARACTERISTICS identifier to access the value of this property. For information about how to access the value of this property, see [Retrieving Device Setup Class SPCRP_Xxx Properties](./accessing-device-setup-class-properties.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)
@@ -82,8 +79,3 @@ Requirements
 [**INF ClassInstall32 Section**](./inf-classinstall32-section.md)
 
 [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
-
-[**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
-
- 
-

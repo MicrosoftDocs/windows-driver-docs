@@ -6,7 +6,6 @@ keywords:
 - binaries WDK display
 - free binaries WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing Checked Binaries

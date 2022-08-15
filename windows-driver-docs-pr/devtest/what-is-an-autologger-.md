@@ -2,7 +2,6 @@
 title: What is an autologger
 description: What is an autologger
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # What is an autologger?

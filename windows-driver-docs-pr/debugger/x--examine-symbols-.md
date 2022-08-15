@@ -9,7 +9,6 @@ api_name:
 - x (Examine Symbols)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # x (Examine Symbols)
@@ -112,8 +111,7 @@ Because this pattern is matched to a symbol, the match is not case sensitive, an
 
  
 
-Remarks
--------
+## Remarks
 
 The following command finds all of the symbols in MyModule that contain the string "spin".
 

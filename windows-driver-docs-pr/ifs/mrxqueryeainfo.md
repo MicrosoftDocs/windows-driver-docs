@@ -11,7 +11,6 @@ api_location:
 api_type:
 - UserDefined
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # MRxQueryEaInfo routine
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The *MRxQueryEaInfo* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector query extended attribute information on a file system object.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxQueryEaInfo;
@@ -31,14 +29,12 @@ NTSTATUS MRxQueryEaInfo(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxQueryEaInfo* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -105,8 +101,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 RDBSS issues a call to *MRxQueryEaInfo* in response to receiving an [**IRP\_MJ\_QUERY\_EA**](irp-mj-query-ea.md) request.
 
@@ -130,8 +125,7 @@ The **QueryEa.IndexSpecified** member is set to nonzero if **IrpSp-&gt;Flags** h
 
 On success, *MRxQueryEaInfo* should set the **Info.LengthRemaininging** member of the RX\_CONTEXT structure to the length of extended attribute information returned and also update the **Fobx-&gt;OffsetOfNextEaToReturn** member. If the call to *MRxQueryEaInfo* was successful, RDBSS sets the **IoStatus.Information** member of the IRP to **IrpSp-&gt;Parameters.QueryEa.Length** minus the **Info.LengthRemaining** member of RX\_CONTEXT.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

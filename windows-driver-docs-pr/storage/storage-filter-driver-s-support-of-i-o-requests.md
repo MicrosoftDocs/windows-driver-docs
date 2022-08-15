@@ -7,7 +7,6 @@ keywords:
 - SFD WDK storage , I/O request support
 - IRPs WDK storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Storage Filter Driver's Support of I/O Requests

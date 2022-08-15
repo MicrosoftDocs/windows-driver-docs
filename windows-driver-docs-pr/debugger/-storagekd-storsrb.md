@@ -9,7 +9,6 @@ api_name:
 - storagekd.storsrb
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !storagekd.storsrb
@@ -44,8 +43,7 @@ Specifies the address of the SRB.
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example of the **!storagekd.storsrb** display:
 

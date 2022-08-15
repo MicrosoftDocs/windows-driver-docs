@@ -5,7 +5,6 @@ keywords:
 - request objects WDK KMDF , ownership
 - ownership WDK KMDF , I/O requests
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Request Ownership

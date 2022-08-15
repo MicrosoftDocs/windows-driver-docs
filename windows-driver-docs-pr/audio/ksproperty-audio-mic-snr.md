@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_MIC\_SNR
@@ -57,8 +56,7 @@ The property value (operation data) is of type LONG and contains the SNR informa
 
 A KSPROPERTY\_AUDIO\_MIC\_SNR property request returns a STATUS\_SUCCESS upon successful completion of the request. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The audio driver can obtain microphone SNR for each microphone. This property allows this information to be retrieved from driver.
 
@@ -66,8 +64,7 @@ For Windows 10 voice recognition experiences such as Cortana to accurately detec
 
 KSPROPERTY\_AUDIO\_MIC\_SNR is available beginning with Windows 10, version 1607.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

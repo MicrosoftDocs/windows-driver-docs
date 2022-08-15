@@ -2,7 +2,6 @@
 title: Hyper-V Extensible Switch Ports Topics
 description: Hyper-V Extensible Switch Ports Topics
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hyper-V Extensible Switch Ports Topics

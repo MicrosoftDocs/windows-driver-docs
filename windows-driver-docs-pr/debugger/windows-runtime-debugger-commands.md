@@ -3,7 +3,6 @@ title: Windows Runtime Debugging
 description: You can use the following debugger extensions to debug code that uses data types defined by the Windows Runtime.
 keywords: ["Windows Runtime", "WinRT", "HSTRING"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Windows Runtime Debugging

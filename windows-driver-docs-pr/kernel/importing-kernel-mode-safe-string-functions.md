@@ -3,7 +3,6 @@ title: Importing Kernel-Mode Safe String Functions
 description: Importing Kernel-Mode Safe String Functions
 keywords: ["importing safe string functions", "inline safe string function versions WDK kernel", "library safe string function versions WDK kernel", "byte-counted functions WDK kernel", "character-counted functions WDK kernel", "safe string functions WDK"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Importing Kernel-Mode Safe String Functions

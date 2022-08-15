@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_VIDEOPROCAMP\_BRIGHTNESS
@@ -56,8 +55,7 @@ The KSPROPERTY\_VIDEOPROCAMP\_BRIGHTNESS property controls the brightness settin
 
 The property value (operation data) is a LONG that specifies a camera's brightness setting. This value is expressed in IRE units multiplied by 100 for NTSC sources. For non-NTSC sources, the units are arbitrary, with 0 representing blanking and 10000 representing pure white.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEOPROCAMP\_S structure specifies the brightness.
 
@@ -65,8 +63,7 @@ Brightness is also known as the black level. Modifying the brightness setting sh
 
 Every video capture minidriver must define a range and default value for this property. The required range must be -10000 through +10000. The default value must be 750 (7.5 IRE).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -84,7 +81,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_VIDEOPROCAMP\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videoprocamp_s)
 

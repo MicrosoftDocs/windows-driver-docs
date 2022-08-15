@@ -9,7 +9,6 @@ api_name:
 - UsbDeviceCreateTarget
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # UsbDeviceCreateTarget rule (kmdf)
@@ -21,8 +20,7 @@ For example, the [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfd
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfUsbTargetDeviceCreate**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreate)
 [**WdfUsbTargetDeviceCreateWithParameters**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters)

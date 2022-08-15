@@ -3,7 +3,6 @@ title: Receive Side Scaling Version 2 (RSSv2)
 description: This topic describes Receive Side Scaling Version 2 (RSSv2)
 keywords: Receive Side Scaling Version 2, RSSv2, Receive Side Scaling Version 2 WDK, RSSv2 network drivers
 ms.date: 10/12/2017
-ms.localizationpriority: medium
 ---
 
 # Receive Side Scaling Version 2 (RSSv2)

@@ -9,7 +9,6 @@ api_name:
 - IrqlExFree2
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlExFree2 rule (wdm)
@@ -19,8 +18,7 @@ The **IrqlExFree2** rule specifies that [**ExFreePool**](/windows-hardware/drive
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**ExAllocatePoolWithTagPriority**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority)
 [**ExFreePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreepoolwithtag)

@@ -3,7 +3,6 @@ title: Processing IRPs in an Intermediate-Level Driver
 description: Processing IRPs in an Intermediate-Level Driver
 keywords: ["IRPs WDK kernel , processing examples", "IoCompletion routines", "IoSetCompletionRoutine", "mirror drivers WDK IRPs", "allocating IRPs", "IoCallDriver"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Processing IRPs in an Intermediate-Level Driver
@@ -34,7 +33,7 @@ The driver shown in the following figure has the following characteristics:
 
 ### <a href="" id="irp-path-through-intermediate-driver-routines"></a>
 
-![diagram illustrating an irp path through intermediate driver routines](images/4hiddirp.png)
+![diagram illustrating an irp path through intermediate driver routines.](images/4hiddirp.png)
 
 As the figure shows, the I/O manager creates an IRP and sends it to the driver's dispatch routine for the given major function code. Assuming the function code is [**IRP\_MJ\_WRITE**](./irp-mj-write.md), the dispatch routine is **DDDispatchWrite**. The intermediate driver's I/O stack location is shown in the middle, with an indefinite number of I/O stack locations for higher- and lower-level drivers shown shaded.
 

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 05/22/2018
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_PRINTER\_ENDORSER\_ORDER
@@ -28,8 +27,7 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The following table describes the constants that are valid with the [**WIA\_IPS\_PREVIEW\_TYPE**](wia-ips-preview-type.md) property.
 
@@ -60,8 +58,7 @@ The following table describes the constants that are valid with the [**WIA\_IPS\
 
 This property must be supported by all Imprinter/Endorser data source items. There is no required default value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

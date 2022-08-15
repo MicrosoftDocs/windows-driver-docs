@@ -4,7 +4,6 @@ description: The miniport driver that supports NDIS Quality of Service (QoS) iss
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_QOS_REMOTE_PARAMETERS_CHANGE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE
@@ -18,8 +17,7 @@ When the miniport driver makes this status indication, it sets the **StatusBuffe
 
  
 
-Remarks
--------
+## Remarks
 
 The miniport driver uses the DCBX protocol to receive the QoS parameters for a remote peer. The miniport driver resolves its operational NDIS QoS parameters based on its local and remote QoS settings. Once the operational parameters are resolved, the miniport driver configures the network adapter with these parameters for QoS packet transmission.
 
@@ -49,8 +47,7 @@ For more information on how the miniport driver issues an **NDIS\_STATUS\_QOS\_R
 
 For more information about the remote NDIS QoS parameters, see [Overview of NDIS QoS Parameters](./overview-of-ndis-qos-parameters.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

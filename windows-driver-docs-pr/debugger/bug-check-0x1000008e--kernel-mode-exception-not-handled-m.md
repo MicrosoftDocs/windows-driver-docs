@@ -9,7 +9,6 @@ api_name:
 - KERNEL_MODE_EXCEPTION_NOT_HANDLED_M
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1000008E: KERNEL\_MODE\_EXCEPTION\_NOT\_HANDLED\_M

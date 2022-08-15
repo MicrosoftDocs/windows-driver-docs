@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x15F CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP
-description: The CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP bug check has a value of 0x0000015F. This indicates that a connected standby watchdog timeout has occurred.
+description: The CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP live dump has a value of 0x0000015F. This indicates that a connected standby watchdog timeout has occurred.
 keywords: ["Bug Check 0x15F CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP", "CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP"]
 ms.date: 05/23/2017
 topic_type:
@@ -9,17 +9,17 @@ api_name:
 - CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x15F: CONNECTED\_STANDBY\_WATCHDOG\_TIMEOUT\_LIVEDUMP
 
 
-The CONNECTED\_STANDBY\_WATCHDOG\_TIMEOUT\_LIVEDUMP bug check has a value of 0x0000015F. This indicates that a connected standby watchdog timeout has occurred.
+The CONNECTED\_STANDBY\_WATCHDOG\_TIMEOUT\_LIVEDUMP live dump has a value of 0x0000015F. This indicates that a connected standby watchdog timeout has occurred.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 ## CONNECTED\_STANDBY\_WATCHDOG\_TIMEOUT\_LIVEDUMP Parameters
 
@@ -77,8 +77,7 @@ The CONNECTED\_STANDBY\_WATCHDOG\_TIMEOUT\_LIVEDUMP bug check has a value of 0x0
 
  
 
-Cause
------
+## Cause
 
 This machine is exhibiting behavior that reduces screen-off battery life. Typically this is caused by CPU activity, device activity, or devices being in an insufficient idle state.
 

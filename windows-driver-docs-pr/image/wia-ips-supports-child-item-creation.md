@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION
@@ -25,13 +24,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 Items that support the [**WIA\_IPS\_SEGMENTATION**](wia-ips-segmentation.md) property and the WIA\_USE\_SEGMENTATION\_FILTER value must also support the WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION property and have it set to **TRUE**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

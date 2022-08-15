@@ -1,6 +1,6 @@
 ---
-title: KSMETHOD\_BDA\_CREATE\_PIN\_FACTORY
-description: Clients use KSMETHOD\_BDA\_CREATE\_PIN\_FACTORY to create a pin factory for a filter.
+title: KSMETHOD_BDA_CREATE_PIN_FACTORY
+description: Clients use KSMETHOD_BDA_CREATE_PIN_FACTORY to create a pin factory for a filter.
 keywords: ["KSMETHOD_BDA_CREATE_PIN_FACTORY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,48 +10,27 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/12/2021
 ---
 
-# KSMETHOD\_BDA\_CREATE\_PIN\_FACTORY
+# KSMETHOD_BDA_CREATE_PIN_FACTORY
 
+Clients use KSMETHOD_BDA_CREATE_PIN_FACTORY to create a pin factory for a filter.
 
-Clients use KSMETHOD\_BDA\_CREATE\_PIN\_FACTORY to create a pin factory for a filter.
+## Specifying This Method
 
-## <span id="ddk_ksmethod_bda_create_pin_factory_ks"></span><span id="DDK_KSMETHOD_BDA_CREATE_PIN_FACTORY_KS"></span>
+KSM_PIN with the **Flags** member of the **Method** member set to KSMETHOD_TYPE_READ.
 
-
-### <span id="Specifying_This_Method"></span><span id="specifying_this_method"></span><span id="SPECIFYING_THIS_METHOD"></span>Specifying This Method
-
-KSM\_PIN with the **Flags** member of the **Method** member set to KSMETHOD\_TYPE\_READ.
-
-### <span id="Method_Data"></span><span id="method_data"></span><span id="METHOD_DATA"></span>Method Data
+## Method Data
 
 ULONG, representing the identifier of the pin factory.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Bdamedia.h (include Bdamedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** bdamedia.h (include Bdamedia.h)
 
 ## See also
 
-
 [**BdaMethodCreatePin**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdamethodcreatepin)
 
-[**KSM\_PIN**](/windows-hardware/drivers/ddi/bdasup/ns-bdasup-_ksm_pin)
-
- 
-
+[**KSM_PIN**](/windows-hardware/drivers/ddi/bdasup/ns-bdasup-_ksm_pin)

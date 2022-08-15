@@ -9,7 +9,6 @@ api_name:
 - IrqlExApcLteInline
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlExApcLteInline rule (wdm)
@@ -19,8 +18,7 @@ The **IrqlExApcLteInline** rule specifies that DDIs are only called at proper IR
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

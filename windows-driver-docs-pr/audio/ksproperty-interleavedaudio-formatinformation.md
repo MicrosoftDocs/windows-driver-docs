@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 07/11/2019
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_INTERLEAVEDAUDIO_FORMATINFORMATION

@@ -1,5 +1,5 @@
 ---
-title: imggp
+title: imggp (WinDbg)
 description: The imggp extension displays the global pointer (GP) directory entry value for a 64-bit image.
 keywords: ["global pointer (GP)", "GP (global pointer)", "imggp Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - imggp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !imggp

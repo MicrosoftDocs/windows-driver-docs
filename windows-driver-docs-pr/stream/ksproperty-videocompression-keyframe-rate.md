@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_VIDEOCOMPRESSION\_KEYFRAME\_RATE
@@ -56,13 +55,11 @@ The KSPROPERTY\_VIDEOCOMPRESSION\_KEYFRAME\_RATE property controls the key frame
 
 The property value (operation data) is a LONG that specifies the key frame rate.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEOCOMPRESSION\_S structure specifies the property setting.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -80,7 +77,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_VIDEOCOMPRESSION\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocompression_s)
 

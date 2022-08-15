@@ -5,7 +5,6 @@ keywords:
 - task offload WDK TCP/IP transport , current settings
 - current task load settings WDK TCP/IP offload
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Determining the Current Task Offload Settings

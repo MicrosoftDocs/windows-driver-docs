@@ -9,7 +9,6 @@ api_name:
 - rdmsr (Read MSR)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # rdmsr (Read MSR)
@@ -52,8 +51,7 @@ Specifies the address of the MSR.
 
  
 
-Remarks
--------
+## Remarks
 
 The **rdmsr** command can display MSR's on x86-based and x64-based platforms. The MSR definitions are platform-specific.
 

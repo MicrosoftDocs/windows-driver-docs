@@ -9,7 +9,6 @@ api_name:
 - Init_DeRegisterInterrupt
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Init\_DeRegisterInterrupt rule (ndis)
@@ -21,8 +20,7 @@ Register of interrupts, which usually happen during initialization, should be un
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisMDeregisterInterruptEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismderegisterinterruptex)
 [**NdisMRegisterInterruptEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterinterruptex)

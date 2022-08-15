@@ -11,7 +11,6 @@ api_location:
 api_type:
 - UserDefined
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # MRxExtendForNonCache routine
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The *MRxExtendForNonCache* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector extend a file when the file is not being cached by the cache manager.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_EXTENDFILE_CALLDOWN MRxExtendForNonCache;
@@ -33,8 +31,7 @@ ULONG MRxExtendForNonCache(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
@@ -45,13 +42,11 @@ A pointer to the LARGE\_INTEGER value indicating the byte count of the new file 
 *pNewAllocationSize* \[out\]  
 A pointer to the LARGE\_INTEGER for storing the new allocation size when [**MRxExtendForCache**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_extendfile_calldown) returns.
 
-Return value
-------------
+## Return value
 
 *MRxExtendForNonCache* returns STATUS\_SUCCESS on success or an error code on failure.
 
-Remarks
--------
+## Remarks
 
 *MRxExtendForNonCache* handles network requests to extend the file for non-cached I/O.
 
@@ -63,8 +58,7 @@ Before calling *MRxExtendForNonCache*, RDBSS modifies the following members in t
 
 A network mini-redirector that caches file or directory information may need to invalidate its cache information when the file is extended.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

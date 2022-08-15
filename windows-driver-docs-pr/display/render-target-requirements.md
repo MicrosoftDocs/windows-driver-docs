@@ -7,7 +7,6 @@ keywords:
 - buffers WDK Direct3D
 - depth buffers WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Render Target Requirements

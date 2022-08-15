@@ -2,12 +2,11 @@
 title: USB 3.0 Extensions
 description: This section describes the USB 3.0 debugger extension commands.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # USB 3.0 Extensions
 
-This section describes the USB 3.0 debugger extension commands. These commands display information from data structures maintained by three drivers in the USB 3.0 stack: the USB 3.0 hub driver, the USB host controller extension driver, and the USB 3.0 host controller driver. For more information about these three drivers, see [USB host-side drivers in Windows](../usbcon/usb-3-0-driver-stack-architecture.md). For an explanation of the data structures used by the drivers in the USB 3.0 stack, see [USB 3.0 Data Structures](usb-3-0-data-structures.md) and Part 2 of the [USB Debugging Innovations in Windows 8](https://channel9.msdn.com/Events/BUILD/BUILD2011/HW-258P) video.
+This section describes the USB 3.0 debugger extension commands. These commands display information from data structures maintained by three drivers in the USB 3.0 stack: the USB 3.0 hub driver, the USB host controller extension driver, and the USB 3.0 host controller driver. For more information about these three drivers, see [USB host-side drivers in Windows](../usbcon/usb-3-0-driver-stack-architecture.md). For an explanation of the data structures used by the drivers in the USB 3.0 stack, see [USB 3.0 Data Structures](usb-3-0-data-structures.md) and Part 2 of the [USB Debugging Innovations in Windows 8](/events/build-build2011/hw-258p) video.
 
 The USB 3.0 debugger extension commands are implemented in Usb3kd.dll. To load the Usb3kd commands, enter **.load usb3kd.dll** in the debugger.
 
@@ -15,7 +14,7 @@ The USB 3.0 debugger extension commands are implemented in Usb3kd.dll. To load t
 
 The USB 3.0 tree contains all USB 3.0 host controllers and all hubs and devices that are connected to USB 3.0 host controllers. The following diagram shows an example of a USB 3.0 tree.
 
-![usb 3.0 tree showing a mix of usb 3.0 and usb 2.0 devices roots and controllers](images/usb3tree01.png)
+![usb 3.0 tree showing a mix of usb 3.0 and usb 2.0 devices roots and controllers.](images/usb3tree01.png)
 
 The tree shown in the diagram has two USB 3.0 host controllers. Notice that not every device shown in the diagram is a USB 3.0 device. But all of the devices shown (including the hubs) are part of the USB 3.0 tree, because each device is on a branch that originates at a USB 3.0 host controller.
 

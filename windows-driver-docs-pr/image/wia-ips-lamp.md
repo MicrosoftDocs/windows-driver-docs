@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_LAMP
@@ -25,8 +24,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The WIA\_IPS\_LAMP property enables the programmatic control of the scanner lamp; this lamp could be a dedicated lamp (for a transparency adapter) or the main scanner lamp (for dedicated film scanners).
 
@@ -57,8 +55,7 @@ The following table describes the constants that are valid with WIA\_IPS\_LAMP.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

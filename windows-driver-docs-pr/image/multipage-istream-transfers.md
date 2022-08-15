@@ -2,7 +2,6 @@
 title: Multipage IStream Transfers
 description: Multipage IStream Transfers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Multipage IStream Transfers

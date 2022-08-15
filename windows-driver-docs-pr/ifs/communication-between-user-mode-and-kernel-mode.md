@@ -9,7 +9,6 @@ keywords:
 - user-mode communication WDK file system minifilter
 - ports WDK , file system minifilter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Communication Between User Mode and Kernel Mode

@@ -9,7 +9,6 @@ api_name:
 - StorPortMSILock
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortMSILock rule (storport)
@@ -19,8 +18,7 @@ Miniport drivers are required to acquire the MSI spin lock for a message if, and
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

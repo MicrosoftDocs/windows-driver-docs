@@ -7,7 +7,6 @@ keywords:
 - trace message prefix WDK Tracefmt
 - custom trace message prefix WDK Tracefmt
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example 7: Customizing the Trace Message Prefix

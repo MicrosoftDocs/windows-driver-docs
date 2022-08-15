@@ -2,7 +2,6 @@
 title: Standardized INF Keywords for VMQ
 description: Standardized INF Keywords for VMQ
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for VMQ
@@ -10,108 +9,36 @@ ms.localizationpriority: medium
 
 The following standardized INF keywords are defined to enable or disable support for the virtual machine queue (VMQ) features of network adapters.
 
-<a href="" id="-vmq"></a>**\*VMQ**  
+**\*VMQ**  
 A value that describes whether the device has enabled or disabled the VMQ feature.
 
-<a href="" id="-vmqlookaheadsplit"></a>**\*VMQLookaheadSplit**  
+**\*VMQLookaheadSplit**  
 A value that describes whether the device has enabled or disabled the ability to split receive buffers into lookahead and post-lookahead buffers. The miniport driver reports this capability with the NDIS\_RECEIVE\_FILTER\_LOOKAHEAD\_SPLIT\_SUPPORTED flag in the **SupportedQueueProperties** member of the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure. For more information about this feature, see [Shared Memory in Receive Buffers](shared-memory-in-receive-buffers.md).
 
 **Note**  Starting with NDIS 6.30, splitting packet data into separate lookahead buffers is no longer supported. Starting with Windows Server 2012, this INF keyword is obsolete.
 
 
 
-<a href="" id="-vmqvlanfiltering"></a>**\*VMQVlanFiltering**  
+**\*VMQVlanFiltering**  
 A value that describes whether the device has enabled or disabled the ability to filter network packets by using the VLAN identifier in the media access control (MAC) header. The miniport driver reports this capability with the NDIS\_RECEIVE\_FILTER\_MAC\_HEADER\_VLAN\_ID\_SUPPORTED flag in **SupportedMacHeaderFields** member of the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure.
 
-<a href="" id="-rssorvmqpreference"></a>**\*RssOrVmqPreference**  
+**\*RssOrVmqPreference**  
 A value that defines whether VMQ capabilities should be enabled instead of receive side scaling (RSS) capabilities.
 
 This is a hidden keyword value that must not be specified in the INF file and is not displayed in **Advanced** property page for the network adapter. For more information, see [Handling VMQ and RSS INF Keywords](#vmq-rss).
 
 VMQ standardized INF keywords are enumeration keywords. The following table describes the possible INF entries for the VMQ standardized INF keywords.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">SubkeyName</th>
-<th align="left">ParamDesc</th>
-<th align="left">Value</th>
-<th align="left">EnumDesc</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong><em>VMQ</strong></p></td>
-<td align="left"><p>Virtual Machine Queues</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1 (Default)</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong></em>VMQLookaheadSplit</strong></p></td>
-<td align="left"><p>VMQ Lookahead Split</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p>
-<div class="alert">
-<strong>Note</strong>  Starting with NDIS 6.30, this keyword is no longer supported.
-</div>
-<div>
-
-</div></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1 (Default)</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong><em>VMQVlanFiltering</strong></p></td>
-<td align="left"><p>VMQ VLAN Filtering</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>Disabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1 (Default)</p></td>
-<td align="left"><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong></em>RssOrVmqPreference</strong></p></td>
-<td align="left"><p>Note: The ParamDesc and EnumDesc entries for this subkey cannot be used in either INF files or a user interface. For more information, see <a href="#vmq-rss" data-raw-source="[Handling VMQ and RSS INF Keywords](#vmq-rss)">Handling VMQ and RSS INF Keywords</a>.</p></td>
-<td align="left"><p>0 (Default)</p></td>
-<td align="left"><div class="alert">
-<strong>Note</strong>  Report RSS capabilities
-</div>
-<div>
-
-</div></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"><p>1</p></td>
-<td align="left"><div class="alert">
-<strong>Note</strong><br/><p>Report VMQ capabilities</p>
-</div>
-<div>
-
-</div></td>
-</tr>
-</tbody>
-</table>
+|SubkeyName|ParamDesc|Value|EnumDesc|
+|--- |--- |--- |--- |
+|**\*VMQ**|Virtual Machine Queues|0|Disabled|
+|||1 (Default)|Enabled|
+|**\*VMQLookaheadSplit**|VMQ Lookahead Split|0|Disabled **Note** Starting with NDIS 6.30, this keyword is no longer supported.|
+|||1 (Default)|Enabled|
+|**\*VMQVlanFiltering**|VMQ VLAN Filtering|0|Disabled|
+|||1 (Default)|Enabled|
+|**\*RssOrVmqPreference**|Note: The ParamDesc and EnumDesc entries for this subkey cannot be used in either INF files or a user interface. For more information, see [Handling VMQ and RSS INF Keywords](#vmq-rss).|0 (Default)|**Note** Report RSS capabilities|
+|||1|**Note**  Report VMQ capabilities|
 
 
 
@@ -173,48 +100,12 @@ When NDIS calls the [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/
 
 The following table describes how the miniport driver determines RSS or VMQ preference and advertises capabilities based on registry keywords:
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left"><em>RssOrVmqPreference</th>
-<th align="left"></em>VMQ</th>
-<th align="left">*RSS</th>
-<th align="left">VMQ or RSS capabilities advertised</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>1</p></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>N/A</p></td>
-<td align="left"><p>VMQ</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>1</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>N/A</p></td>
-<td align="left"><p>None</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>0, or not present in registry</p></td>
-<td align="left"><p>N/A</p></td>
-<td align="left"><p>1</p></td>
-<td align="left"><p>RSS</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0, or not present in registry</p></td>
-<td align="left"><p>N/A</p></td>
-<td align="left"><p>0</p></td>
-<td align="left"><p>None</p></td>
-</tr>
-</tbody>
-</table>
+|**\*RssOrVmqPreference**|**\*VMQ**|**\*RSS**|VMQ or RSS capabilities advertised|
+|--- |--- |--- |--- |
+|1|1|N/A|VMQ|
+|1|0|N/A|None|
+|0, or not present in registry|N/A|1|RSS|
+|0, or not present in registry|N/A|0|None|
 
 
 
@@ -226,80 +117,24 @@ The following table describes how the miniport driver determines RSS or VMQ pref
 
 If the miniport driver supports VMQ and the VMQ interface is enabled on the network adapter, the driver must not read the following RSS INF entries:
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">SubkeyName</th>
-<th align="left">ParamDesc</th>
-<th align="left">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p></p>
-<p><strong><em>RssMaxProcNumber</strong></p></td>
-<td align="left"><p>The maximum processor number of the RSS interface.</p></td>
-<td align="left"><p>0 through (MAXIMUM_PROC_PER_GROUP-1),</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p>
-<p><strong></em>MaxRssProcessors</strong></p></td>
-<td align="left"><p>The maximum number of RSS processors.</p></td>
-<td align="left"><p>1 through MAXIMUM_PROC_PER_SYSTEM.</p></td>
-</tr>
-</tbody>
-</table>
+|SubkeyName|ParamDesc|Value|
+|--- |--- |--- |
+|**\*RssMaxProcNumber**|The maximum processor number of the RSS interface.|0 through (MAXIMUM_PROC_PER_GROUP-1),|
+|**\*MaxRssProcessors**|The maximum number of RSS processors.|1 through MAXIMUM_PROC_PER_SYSTEM.|
 
 
 
 The miniport driver that supports VMQ must not read the following subkeys under the **HKEY\_LOCAL\_MACHINE**\\**SYSTEM**\\**CurrentControlSet**\\**services**\\**VMSMP**\\**Parameters** registry key.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">SubkeyName</th>
-<th align="left">ParamDesc</th>
-<th align="left">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p></p>
-<p><strong>TenGigVmqEnabled</strong></p></td>
-<td align="left"><p>Enable or disable VMQ on all 10 gigabits per second (Gbps) network adapters.</p></td>
-<td align="left"><p>0=System default (disabled for Windows Server 2008 R2).</p>
-<p>1=Enabled.</p>
-<p>2=Explicitly disabled.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p>
-<p><strong>BelowTenGigVmqEnabled</strong></p></td>
-<td align="left"><p>Enable or disable VMQ on all network adapters that support less than 10 Gbps.</p></td>
-<td align="left"><p>0=System default (disabled for Windows Server 2008 R2).</p>
-<p>1=Enabled.</p>
-<p>2=Explicitly disabled.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p>
-<p><strong><em>RssMaxProcNumber</strong></p></td>
-<td align="left"><p>The maximum processor number of the RSS interface.</p></td>
-<td align="left"><p>0 through (MAXIMUM_PROC_PER_GROUP-1),</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p>
-<p><strong></em>MaxRssProcessors</strong></p></td>
-<td align="left"><p>The maximum number of RSS processors.</p></td>
-<td align="left"><p>1 through MAXIMUM_PROC_PER_SYSTEM.</p></td>
-</tr>
-</tbody>
-</table>
+|SubkeyName|ParamDesc|Value|
+|--- |--- |--- |
+|**\*TenGigVmqEnabled**|Enable or disable VMQ on all 10 gigabits per second (Gbps) network adapters.|0=System default (disabled for Windows Server 2008 R2).|
+|||1=Enabled.|
+|||2=Explicitly disabled.|
+|**\*BelowTenGigVmqEnabled**|Enable or disable VMQ on all network adapters that support less than 10 Gbps.|0=System default (disabled for Windows Server 2008 R2).|
+|||1=Enabled.|
+|||2=Explicitly disabled.|
+|**\*RssMaxProcNumber**|The maximum processor number of the RSS interface.|0 through (MAXIMUM_PROC_PER_GROUP-1),|
+|**\*MaxRssProcessors**|The maximum number of RSS processors.|1 through MAXIMUM_PROC_PER_SYSTEM.|
+
+

@@ -3,7 +3,6 @@ title: Interrupt Affinity
 description: Interrupt Affinity
 keywords: ["interrupt service routines WDK kernel , affinity", "ISRs WDK kernel , affinity", "affinity policy WDK interrupts", "IRQ_DEVICE_POLICY", "processor affinity WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Interrupt Affinity
@@ -18,7 +17,7 @@ Administrators can set the following entries under the **\\Interrupt Management\
 -   **DevicePolicy** is a REG\_DWORD value that specifies an affinity policy. Each possible setting corresponds to a [**IRQ\_DEVICE\_POLICY**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_irq_device_policy) value.
 
 
--   **AssignmentSetOverride** is a REG\_BINARY value that specifies a [**KAFFINITY**](#about-kaffinity) mask. If **DevicePolicy** is 0x04 (**IrqPolicySpecifiedProcessors**), then this mask specifies a set of processors to assign the device's interrupts to.
+-   **AssignmentSetOverride** can be a REG_BINARY, REG_DWORD, or REG_QWORD value that specifies a [**KAFFINITY**](#about-kaffinity) mask. For REG_BINARY, size must be less than or equal to the KAFFINITY size for the platform, and input byte order is little endian. If **DevicePolicy** is 0x04 (**IrqPolicySpecifiedProcessors**), then this mask specifies a set of processors to assign the device's interrupts to.
 
 The following table lists the [**IRQ\_DEVICE\_POLICY**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_irq_device_policy) values, and the corresponding registry setting for **DevicePolicy**. For more information about the meaning of each value, see [**IRQ\_DEVICE\_POLICY**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_irq_device_policy).
 

@@ -10,7 +10,6 @@ api_name:
 api_type:
 - NA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DevCon DriverNodes
@@ -80,6 +79,6 @@ devcon drivernodes =usb pci* usb*
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 10: List driver packages by hardware ID pattern](devcon-examples.md#ddk_example_10_list_driver_packages_by_hardware_id_pattern_tools)
+[Example 10: List driver packages by hardware ID pattern](devcon-examples.md#example-10-list-driver-packages-by-hardware-id-pattern)
 
-[Example 11: List driver packages by device instance ID pattern](devcon-examples.md#ddk_example_11_list_driver_packages_by_device_instance_id_pattern_tool)
+[Example 11: List driver packages by device instance ID pattern](devcon-examples.md#example-11-list-driver-packages-by-device-instance-id-pattern)

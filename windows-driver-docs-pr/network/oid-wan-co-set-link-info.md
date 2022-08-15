@@ -4,7 +4,6 @@ description: The OID_WAN_CO_SET_LINK_INFO OID requests the miniport driver to se
 ms.date: 08/08/2017
 keywords: 
  -OID_WAN_CO_SET_LINK_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WAN\_CO\_SET\_LINK\_INFO
@@ -58,13 +57,11 @@ For asynchronous media types, logical bits 0-31 indicate the respective byte to 
 <a href="" id="recvaccm"></a>**RecvACCM**  
 As described for **SendACCM**.
 
-Remarks
--------
+## Remarks
 
 Possible values for **SendFramingBits** and **RecvFramingBits** include any the underlying driver returned in response to the [OID\_WAN\_CO\_GET\_INFO](oid-wan-co-get-info.md) query.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

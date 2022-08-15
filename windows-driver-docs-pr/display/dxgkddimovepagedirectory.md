@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # DxgkDdiMovePageDirectory function
@@ -21,8 +20,7 @@ ms.localizationpriority: medium
 
 The *DxgkDdiMovePageDirectory* function is reserved for system use. Do not implement it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 NTSTATUS APIENTRY DxgkDdiMovePageDirectory(
@@ -31,8 +29,7 @@ NTSTATUS APIENTRY DxgkDdiMovePageDirectory(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hContext* \[in\]
 This parameter is reserved for system use.
@@ -40,8 +37,7 @@ This parameter is reserved for system use.
 *pMovePageDirectory* \[in, out\]
 This parameter is reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -9,7 +9,6 @@ api_name:
 - UsbKmdfIrql2
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # UsbKmdfIrql2 rule (kmdf)
@@ -19,8 +18,7 @@ The **UsbKmdfIrql2** rule specifies that a KMDF driver should not call USB-speci
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfUsbInterfaceGetConfiguredPipe**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbinterfacegetconfiguredpipe)  
 [**WdfUsbInterfaceGetConfiguredSettingIndex**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbinterfacegetconfiguredsettingindex)  

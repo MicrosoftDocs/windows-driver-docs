@@ -3,7 +3,6 @@ title: Using Clients and the Engine
 description: Using Clients and the Engine
 keywords: ["DbgEng Extensions, engine client objects"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using Clients and the Engine

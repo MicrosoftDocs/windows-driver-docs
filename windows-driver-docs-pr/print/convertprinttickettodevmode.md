@@ -4,7 +4,6 @@ description: Describes IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode
 keywords:
 - ConvertPrintTicketToDevMode
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ConvertPrintTicketToDevMode overview
@@ -14,4 +13,4 @@ Unidrv and PScript5 print drivers fill in the public and private parts of the [*
 
 The following illustration shows the order of the calls to **IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode** when the driver calls **ConvertPrintTicketToDevMode**.
 
-![diagram illustrating the convertprinttickettodevmode calling sequence](images/ptpcpt2dm-uml.gif)
+![diagram illustrating the convertprinttickettodevmode calling sequence.](images/ptpcpt2dm-uml.gif)

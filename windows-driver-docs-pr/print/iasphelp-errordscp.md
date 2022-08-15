@@ -15,15 +15,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_ErrorDscp method
 
 The **ErrorDscp** property enables an ASP Web page to convert an error code to a descriptive string.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_ErrorDscp(
@@ -32,8 +30,7 @@ HRESULT get_ErrorDscp(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *lErrCode* \[in\]  
 Specifies the error code to be converted to a descriptive string.
@@ -41,8 +38,7 @@ Specifies the error code to be converted to a descriptive string.
 *pVal* \[out\]  
 A caller-supplied pointer to a location that receives the descriptive string that corresponds to the error code in the *lErrCode* parameter.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -92,8 +88,7 @@ objPrinter.Open strPrinter
 ErrorString = objPrinter.ErrorDscp(ErrorCode)
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

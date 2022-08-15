@@ -1,8 +1,7 @@
 ---
 title: Minimum UEFI requirements for Windows on SoC platforms
-description: Minimum UEFI requirements for Windows on SoC platforms
-ms.date: 05/22/2020
-ms.localizationpriority: medium
+description: Provides information about minimum UEFI requirements for Windows on SoC platforms.
+ms.date: 08/19/2021
 ---
 
 # Minimum UEFI requirements for Windows on SoC platforms
@@ -19,7 +18,7 @@ Windows supports firmware revisions based on the Unified Extensible Firmware Int
 ## In this section
 
 | Topic | Description |
-| --- | --- |
+|--|--|
 | [UEFI requirements that apply to all Windows editions on SoC platforms](uefi-requirements-that-apply-to-all-windows-platforms.md) | Describes UEFI requirements that apply to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile. |
 | [UEFI requirements for Windows 10 Mobile](uefi-requirements-specific-to-windows-mobile.md) | Devices that run Windows 10 Mobile must meet additional requirements described in this topic. |
 | [UEFI requirements for USB flashing support](uefi-requirements-for-usb-flashing-support.md) | Microsoft provides several USB-based flashing solutions for use in engineering and manufacturing environments. In order for a device to be used with these tools, the UEFI environment on the device must meet the requirements listed in this topic. |

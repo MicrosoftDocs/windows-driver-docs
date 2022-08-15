@@ -4,7 +4,6 @@ description: Rectangular Memory Allocation
 keywords:
 - rectangular memory allocation WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Rectangular Memory Allocation
@@ -25,7 +24,7 @@ A rectangular heap can be as large as a contiguous region of available memory, b
 
 The following diagram illustrates rectangular memory allocation.
 
-![diagram illustrating rectangular memory allocation](images/ddfig5.png)
+![diagram illustrating rectangular memory allocation.](images/ddfig5.png)
 
 In the preceding figure, the starting point (indicated by the **fpStart** member of the [**VIDEOMEMORY**](/windows/win32/api/ddrawint/ns-ddrawint-videomemory) structure) of the rectangular heap is calculated by adding the width of the primary surface to the starting address of the primary surface. The width and height are also calculated to give the dimensions of the rectangular heap. If any memory remains below the Windows caches, a heap could be created there.
 

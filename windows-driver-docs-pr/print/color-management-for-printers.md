@@ -1,22 +1,19 @@
 ---
-title: Color Management for Printers
-description: Color Management for Printers
+title: Color management for printers
+description: Describes operations that printer drivers must perform to support color management.
 keywords:
 - printer driver customizing WDK , color management
 - customizing printer drivers WDK , color management
 - color management WDK print
 - printer driver color management WDK
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 03/21/2022
 ---
 
-# Color Management for Printers
+# Color management for printers
 
+This section describes operations that printer drivers must perform to support color management.
 
-
-
-
-This section describes the operations that printer drivers must perform to support color management. The following topics are provided:
+## In this section
 
 [Enabling Color Management](enabling-color-management.md)
 
@@ -25,11 +22,3 @@ This section describes the operations that printer drivers must perform to suppo
 [Locating ICC Profiles](locating-icc-profiles.md)
 
 [Installing ICC Profiles](installing-icc-profiles.md)
-
- 
-
- 
-
-
-
-

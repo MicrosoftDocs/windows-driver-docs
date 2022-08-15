@@ -9,7 +9,6 @@ api_name:
 - wudfext.umdevstacks
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wudfext.umdevstacks
@@ -39,7 +38,6 @@ Wudfext.dll
 
  
 ### Remarks
--------
 
 The **!wudfext.umdevstacks** extension displays the framework interface objects that are associated with each device stack. For more information about using the output from **!wudfext.umdevstacks**, see [**!wudfext.umdevstack**](-wudfext-umdevstack.md).
 

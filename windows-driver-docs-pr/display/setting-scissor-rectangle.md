@@ -5,7 +5,6 @@ keywords:
 - scissor rectangle WDK DirectX 9.0
 - rectangular clipping region WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Scissor Rectangle

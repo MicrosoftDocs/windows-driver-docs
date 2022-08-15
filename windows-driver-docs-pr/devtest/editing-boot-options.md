@@ -8,7 +8,6 @@ keywords:
 - custom boot options WDK
 - boot entries WDK
 ms.date: 04/23/2019
-ms.localizationpriority: medium
 ---
 
 # Editing Boot Options

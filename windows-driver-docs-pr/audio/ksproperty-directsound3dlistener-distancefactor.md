@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_DIRECTSOUND3DLISTENER\_DISTANCEFACTOR
@@ -60,8 +59,7 @@ The property value (operation data) is of type FLOAT and specifies the distance 
 
 A KSPROPERTY\_DIRECTSOUND3DLISTENER\_DISTANCEFACTOR property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 Distances for KSPROPSETID\_DirectSound3DBuffer and KSPROPSETID\_DirectSound3DListener properties are expressed in units of meters times a distance factor.
 
@@ -71,8 +69,7 @@ A client can change the distance units for the **KSPROPSETID\_DirectSound3DBuffe
 
 DirectSound uses this property to implement the **IDirectSound3DListener::GetDistanceFactor** and **IDirectSound3DListener::SetDistanceFactor** methods, which are described in the Microsoft Windows SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

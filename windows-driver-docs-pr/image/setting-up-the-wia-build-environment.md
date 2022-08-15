@@ -2,7 +2,6 @@
 title: Setting Up the WIA Build Environment
 description: Setting Up the WIA Build Environment
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Up the WIA Build Environment

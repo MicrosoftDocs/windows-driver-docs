@@ -9,7 +9,6 @@ api_name:
 - UNMOUNTABLE_BOOT_VOLUME
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xED: UNMOUNTABLE\_BOOT\_VOLUME
@@ -55,8 +54,7 @@ The UNMOUNTABLE\_BOOT\_VOLUME bug check has a value of 0x000000ED. This indicate
 </tbody>
 </table>
 
-Resolution
-----------
+## Resolution
 
 If you are debugging this error, use the !analyze -v extension. This extension displays relevant data specific error to the error.
 

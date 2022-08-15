@@ -9,7 +9,6 @@ api_name:
 - Irql_Filter_Driver_Function
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Irql\_Filter\_Driver\_Function rule (ndis)
@@ -36,8 +35,7 @@ The NDIS functions for filter drivers include the following:
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -62,8 +60,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisEnumerateFilterModules**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisenumeratefiltermodules)
 [**NdisFCancelSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfcancelsendnetbufferlists)

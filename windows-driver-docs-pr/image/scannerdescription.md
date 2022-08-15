@@ -9,14 +9,12 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ScannerDescription element
 
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScannerDescription>
@@ -24,13 +22,11 @@ Usage
 </wscn:ScannerDescription>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 None
 
@@ -81,8 +77,7 @@ None
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 [**GetScannerElementsRequest**](getscannerelementsrequest.md)
 

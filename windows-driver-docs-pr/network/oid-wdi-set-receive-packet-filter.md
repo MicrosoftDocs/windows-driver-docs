@@ -4,7 +4,6 @@ description: OID_WDI_SET_RECEIVE_PACKET_FILTER defines a bitmask filter for data
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_RECEIVE_PACKET_FILTER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
@@ -35,8 +34,7 @@ If set, the port shall only notify the host of packets which match the provided 
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

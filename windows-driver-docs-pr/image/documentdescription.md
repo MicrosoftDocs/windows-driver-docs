@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # DocumentDescription element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **DocumentDescription** element defines all of the description attributes that pertain to the basic creation information of the currently identified [**Document**](document.md) element.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:DocumentDescription>
@@ -26,8 +24,7 @@ Usage
 </wscn:DocumentDescription>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 

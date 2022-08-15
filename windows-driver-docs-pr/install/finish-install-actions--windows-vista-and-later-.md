@@ -8,15 +8,12 @@ keywords:
 - class installers WDK device installations , finish-install actions
 - co-installers WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Finish-Install Actions
 
-
-**Note**  Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
-
- 
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 *Finish-install actions* allow the installer to complete installation operations.
 

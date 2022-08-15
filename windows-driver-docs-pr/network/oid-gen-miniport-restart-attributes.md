@@ -4,7 +4,6 @@ description: The OID_GEN_MINIPORT_RESTART_ATTRIBUTES OID identifies general attr
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_MINIPORT_RESTART_ATTRIBUTES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_MINIPORT\_RESTART\_ATTRIBUTES
@@ -20,15 +19,13 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Not requested.
 
-Remarks
--------
+## Remarks
 
 The OID\_GEN\_MINIPORT\_RESTART\_ATTRIBUTES OID is not used to issue OID query or set requests.
 
 If the **Oid** member in the [**NDIS\_RESTART\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_restart_attributes) structure is OID\_GEN\_MINIPORT\_RESTART\_ATTRIBUTES, the **Data** member of the structure contains an [**NDIS\_RESTART\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_restart_general_attributes) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

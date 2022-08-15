@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # DestinationResponse element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **DestinationResponse** element contains the response information for a single [**ScanDestination**](scandestination.md) registration.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:DestinationResponse>
@@ -26,8 +24,7 @@ Usage
 </wscn:DestinationResponse>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -75,8 +72,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **DestinationResponse** element contains the [**ClientContext**](clientcontext.md) element from its matching [**ScanDestination**](scandestination.md) element so that the client can identify the response. **DestinationResponse** also contains a [**DestinationToken**](destinationtoken.md) element for use in all [**CreateScanJobRequest**](createscanjobrequest.md) operation elements from this destination.
 

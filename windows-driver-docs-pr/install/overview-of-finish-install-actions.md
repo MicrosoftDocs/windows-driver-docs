@@ -2,11 +2,12 @@
 title: Overview of Finish-Install Actions
 description: Overview of Finish-Install Actions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of Finish-Install Actions
 
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 If an *installer* (a class installer, class co-installer, or device co-installer) provides finish-install actions for a device, Windows runs the finish-install actions *after* all other device installation operations for the device have completed, and the device has been started. On a new system, finish-install actions run the first time that the operating system is started after Windows is finished.
 

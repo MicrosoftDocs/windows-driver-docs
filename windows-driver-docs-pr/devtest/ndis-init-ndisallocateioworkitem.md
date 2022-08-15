@@ -9,7 +9,6 @@ api_name:
 - Init_NdisAllocateIoWorkItem
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Init\_NdisAllocateIoWorkItem rule (ndis)
@@ -22,8 +21,7 @@ The **Init\_NdisAllocateIoWorkItem** rule specifies that if [**NdisAllocateIoWor
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -48,8 +46,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisAllocateIoWorkItem**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocateioworkitem)
 [**NdisFreeIoWorkItem**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreeioworkitem)

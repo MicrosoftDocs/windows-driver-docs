@@ -4,7 +4,6 @@ description: As a set request, NDIS and overlying protocol drivers use the OID_8
 ms.date: 08/08/2017
 keywords: 
  -OID_802_3_DELETE_MULTICAST_ADDRESS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_802\_3\_DELETE\_MULTICAST\_ADDRESS
@@ -20,10 +19,9 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Not requested.
 
-Remarks
--------
+## Remarks
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains the 6-byte address to be deleted from the multicast address list.
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains the 6-byte address to be deleted from the multicast address list.
 
 The OID\_802\_3\_DELETE\_MULTICAST\_ADDRESS OID request can delete only one address. To delete more than one address, the protocol driver must issue multiple OID\_802\_3\_DELETE\_MULTICAST\_ADDRESS OID requests.
 
@@ -72,8 +70,7 @@ The miniport driver's [*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

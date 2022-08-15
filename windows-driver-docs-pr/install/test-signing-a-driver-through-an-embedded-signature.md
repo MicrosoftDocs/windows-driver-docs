@@ -1,19 +1,14 @@
 ---
-title: Test-Signing a Driver through an Embedded Signature
-description: Test-Signing a Driver through an Embedded Signature
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+title: Test-Signing a Driver Binary through an Embedded Signature
+description: Test-Signing a Driver Binary through an Embedded Signature
+ms.date: 03/03/2022
 ---
 
-# Test-Signing a Driver through an Embedded Signature
+# Test-Signing a Driver Binary through an Embedded Signature
 
-A signed [catalog file](catalog-files.md) is all that you must have to correctly install and load most [driver packages](driver-packages.md). However, embedded-signing might also be an option. Embedded-signing refers to adding a digital signature to the driver's binary image file itself, instead of saving the digital signature in a catalog file. As a result, the driver's binary image is modified when the driver is embedded-signed.
+A signed [catalog file](catalog-files.md) is all that you must have to correctly install and load most [driver packages](driver-packages.md). However, embedded-signing of some binaries in the driver package might also be required for some scenarios. Embedded-signing refers to adding a digital signature to the driver's binary image file itself, instead of relying on the digital signature in a catalog file. As a result, the driver's binary image is modified when the driver is embedded-signed.
 
-Embedded-signing of kernel-mode binaries (for example, drivers and associated .dll files) are required whenever:
-
--   The driver is a boot-start driver. In 64-bit versions of Windows Vista and later versions of Windows, the kernel-mode code signing requirements state that a *boot-start driver* must have an embedded signature. This is required regardless of whether the driver's driver package has a digitally-signed catalog file.
-
-- The driver is installed through a driver package that does not include a catalog file.
+Embedded-signing of kernel-mode binaries is required whenever the driver is a boot-start driver. In 64-bit versions of Windows Vista and later versions of Windows, the kernel-mode code signing requirements state that a *boot-start driver* must have an embedded signature. Note that this is in addition to the catalog file of the driver package needing to meet [PnP Device Installation Signing Requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md).
 
 As with [catalog files](catalog-files.md), [**SignTool**](../devtest/signtool.md) is used to embed a digital signature within kernel-mode binary files by using a test certificate. The following command line shows how to run SignTool to do the following:
 

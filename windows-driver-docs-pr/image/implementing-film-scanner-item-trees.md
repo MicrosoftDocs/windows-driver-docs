@@ -2,7 +2,6 @@
 title: Implementing Film Scanner Item Trees
 description: Implementing Film Scanner Item Trees
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Implementing Film Scanner Item Trees

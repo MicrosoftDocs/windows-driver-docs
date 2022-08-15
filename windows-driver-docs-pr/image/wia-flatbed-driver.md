@@ -2,7 +2,6 @@
 title: WIA Flatbed Driver
 description: WIA Flatbed Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Flatbed Driver

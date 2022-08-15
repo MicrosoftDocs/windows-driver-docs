@@ -6,7 +6,6 @@ keywords:
 - multiple processor support WDK networking
 - processors WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Multiprocessor Support in Network Drivers

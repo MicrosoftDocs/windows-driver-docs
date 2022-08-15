@@ -3,7 +3,6 @@ title: Synchronous OID request interface in NDIS 6.80
 description: This topic describes the new Synchronous OID request interface in NDIS 6.80
 keywords: Synchronous OID Requests Interface, Synchronous OID call, WDK Synchronous OIDs, Synchronous OID request
 ms.date: 09/28/2017
-ms.localizationpriority: medium
 ---
 
 # Synchronous OID request interface in NDIS 6.80
@@ -20,7 +19,7 @@ The following table describes the differences between Regular OIDs, Direct OIDs,
 
 | Attribute | Regular OID | Direct OID | Synchronous OID |
 | --- | --- | --- | --- |
-| Payload | [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) | NDIS_OID_REQUEST | NDIS_OID_REQUEST |
+| Payload | [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) | NDIS_OID_REQUEST | NDIS_OID_REQUEST |
 | OID types | Stats, Query, Set, Method | Stats, Query, Set, Method | Stats, Query, Set, Method |
 | Can be issued by | Protocols, filters | Protocols, filters | Protocols, filters |
 | Can be completed by | Miniports, filters | Miniports, filters | Miniports, filters |
@@ -43,15 +42,15 @@ Conceptually, all OID requests are issued from a higher driver and are completed
 
 In the most common case, a protocol driver issues an OID request and all filters simply pass the OID request down, unmodified. The following figure illustrates this common scenario.
 
-![Typical OID path originated from a protocol](images/synchronous_oids_oid_path_full.png "Typical OID path originated from a protocol")
+![Typical OID path originated from a protocol.](images/synchronous_oids_oid_path_full.png "Typical OID path originated from a protocol")
 
 However, any filter module is allowed to intercept the OID request and complete it. In that case, the request does not pass through to lower drivers, as shown in the following diagram.
 
-![Typical OID path originated from a protocol and intercepted by a filter](images/synchronous_oids_oid_path_intercepted.png "Typical OID path originated from a protocol and intercepted by a filter")
+![Typical OID path originated from a protocol and intercepted by a filter.](images/synchronous_oids_oid_path_intercepted.png "Typical OID path originated from a protocol and intercepted by a filter")
 
 In some cases, a filter module may decide to originate its own OID request. This request starts at the filter module's level and only traverses lower drivers, as the following diagram shows.
 
-![Typical OID path originated from a filter](images/synchronous_oids_oid_path_filter_originated.png "Typical OID path originated from a filter")
+![Typical OID path originated from a filter.](images/synchronous_oids_oid_path_filter_originated.png "Typical OID path originated from a filter")
 
 All OID requests have this basic flow: a higher driver (either a protocol or filter driver) issues a request and a lower driver (either a miniport or filter driver) completes it.
 
@@ -59,11 +58,11 @@ All OID requests have this basic flow: a higher driver (either a protocol or fil
 
 Regular or Direct OID requests are dispatched recursively. The following diagram shows the function call sequence. Note that the sequence itself is much like the sequence described in the diagrams from the previous section, but is arranged to show the recursive nature of the requests.
 
-![Function call sequence for Regular and Direct OID requests](images/synchronous_oids_regular_oid_request_sequence.png "Function call sequence for Regular and Direct OID requests")
+![Function call sequence for Regular and Direct OID requests.](images/synchronous_oids_regular_oid_request_sequence.png "Function call sequence for Regular and Direct OID requests")
 
 If there are enough filters installed, NDIS will be forced to allocate a new thread stack to keep recursing deeper.
 
-NDIS considers an [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure to be valid for only a single hop along the stack. If a filter driver wants to pass the request down to the next lower driver (which is the case for the vast majority of OIDs), the filter driver *must* insert several dozen lines of boilerplate code to clone the OID request. This boilerplate has several problems:
+NDIS considers an [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure to be valid for only a single hop along the stack. If a filter driver wants to pass the request down to the next lower driver (which is the case for the vast majority of OIDs), the filter driver *must* insert several dozen lines of boilerplate code to clone the OID request. This boilerplate has several problems:
 
 1. It forces a memory allocation to clone the OID. Hitting the memory pool is both slow and makes it impossible to guarantee forward progress of the OID request.
 2. The OID structure design must remain the same over time because all filter drivers hard-code the mechanics of copying the contents of one NDIS_OID_REQUEST to another.
@@ -83,13 +82,13 @@ After an OID is completed, Complete calls are invoked for each filter driver, st
 
 The following diagram illustrates the typical case, where a protocol issues a Synchronous OID request and the filters do not intercept the request.
 
-![Function call sequence for Synchronous OID requests](images/synchronous_oids_synchronous_oid_request_sequence.png "Function call sequence for Synchronous OID requests")
+![Function call sequence for Synchronous OID requests.](images/synchronous_oids_synchronous_oid_request_sequence.png "Function call sequence for Synchronous OID requests")
 
 Note that the call model for Synchronous OIDs is iterative. This keeps stack usage bounded by a constant, eliminating the need to ever expand the stack.
 
 If a filter driver intercepts a Synchronous OID in its Issue handler, the OID is not given to lower filters or the NIC driver. However, Complete handlers for higher filters are still invoked, as shown in the following diagram:
 
-![Function call sequence for Synchronous OID requests with an interception by a filter](images/synchronous_oids_synchronous_oid_request_sequence_intercepted.png "Function call sequence for Synchronous OID requests with an interception by a filter")
+![Function call sequence for Synchronous OID requests with an interception by a filter.](images/synchronous_oids_synchronous_oid_request_sequence_intercepted.png "Function call sequence for Synchronous OID requests with an interception by a filter")
 
 #### Minimal memory allocations
 

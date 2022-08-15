@@ -11,7 +11,6 @@ keywords:
 - indexed palettes WDK Windows 2000 display
 - RGB colors WDK Windows 2000 display
 ms.date: 10/11/2019
-ms.localizationpriority: medium
 ---
 
 # Managing Display Palettes

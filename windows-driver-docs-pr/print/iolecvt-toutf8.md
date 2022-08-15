@@ -15,15 +15,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IOleCvt::ToUtf8 method
 
 The **ToUtf8** property enables an ASP Web page to translate a string of Unicode characters to the UTF-8 format.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 [propget, id(1), helpstring("property ToUtf8")] HRESULT ToUtf8(
@@ -32,8 +30,7 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrUnicode* \[in\]  
 Caller-supplied string to be converted to UTF-8 format.
@@ -41,8 +38,7 @@ Caller-supplied string to be converted to UTF-8 format.
 *pVal* \[out, retval\]  
 Caller supplied pointer to a location that will receive the converted string.
 
-Return value
-------------
+## Return value
 
 <table>
 <colgroup>
@@ -83,8 +79,7 @@ Function Write (strUnicode)
 End Function
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

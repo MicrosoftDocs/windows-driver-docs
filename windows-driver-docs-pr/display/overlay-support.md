@@ -10,7 +10,6 @@ keywords:
 - surfaces WDK DirectDraw , overlay
 - surfaces WDK DirectDraw , flipping
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overlay support

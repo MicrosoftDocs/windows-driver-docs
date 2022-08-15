@@ -9,7 +9,6 @@ api_name:
 - MEMORY_IMAGE_CORRUPT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xA2: MEMORY\_IMAGE\_CORRUPT
@@ -64,8 +63,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 
  
 
-Cause
------
+## Cause
 
 A cyclic redundancy check (CRC) check on the memory range has failed.
 

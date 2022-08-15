@@ -8,18 +8,12 @@ keywords:
 - co-installers WDK device installations , about co-installers
 - coinstallers WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Writing a Co-installer
 
-
-
-
-
-**Note**  Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
-
- 
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 A co-installer is a Microsoft Win32 DLL that assists in device installation. Co-installers are called by SetupAPI as "helpers" for Class Installers. For example, a vendor can provide a co-installer to write device-specific information to the registry that cannot be handled by the INF file.
 

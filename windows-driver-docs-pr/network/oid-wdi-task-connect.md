@@ -4,11 +4,12 @@ description: OID_WDI_TASK_CONNECT requests that the IHV component connects to an
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_CONNECT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_CONNECT
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_TASK\_CONNECT requests that the IHV component connects to an Access Point or to a Wi-Fi Direct GO.
@@ -67,8 +68,7 @@ The connection parameters must not have MFPEnabled and HostFIPSModeEnabled both 
 
 [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

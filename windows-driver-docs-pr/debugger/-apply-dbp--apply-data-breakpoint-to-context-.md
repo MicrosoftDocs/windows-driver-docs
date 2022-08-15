@@ -9,7 +9,6 @@ api_name:
 - .apply_dbp (Apply Data Breakpoint to Context)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .apply\_dbp (Apply Data Breakpoint to Context)
@@ -56,8 +55,7 @@ Specifies the address of a register context (CONTEXT structure) in memory to whi
 
 For more information about breakpoints controlled by the processor, see [Processor Breakpoints (ba Breakpoints)](processor-breakpoints---ba-breakpoints-.md). For more information about the register context (thread context), see [Register Context](changing-contexts.md#register-context).
 
-Remarks
--------
+## Remarks
 
 Breakpoints that are controlled by the processor are called *data breakpoints* or *processor breakpoints*. These breakpoints are created by the [**ba (Break on Access)**](ba--break-on-access-.md) command.
 

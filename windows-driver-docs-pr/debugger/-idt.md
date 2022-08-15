@@ -1,5 +1,5 @@
 ---
-title: idt
+title: idt (WinDbg)
 description: The idt extension displays the interrupt service routines (ISRs) for a specified interrupt dispatch table (IDT).
 keywords: ["ISR (interrupt service routine)", "IDT (interrupt dispatch table)", "idt Windows Debugging"]
 ms.date: 05/13/2020
@@ -9,7 +9,6 @@ api_name:
 - idt
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !idt
@@ -60,8 +59,7 @@ This extension command can only be used with an x64-based or x86-based target co
 
 For information about ISRs and IDTs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from this extension:
 

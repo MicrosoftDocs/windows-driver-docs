@@ -3,7 +3,6 @@ title: Function Drivers
 description: Function Drivers
 keywords: ["function drivers WDK WDM", "raw mode WDK WDM", "WDM function drivers WDK"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Function Drivers

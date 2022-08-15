@@ -2,7 +2,6 @@
 description: This topic describes how a client driver can build a USB Request Block (URB) to transfer data to and from isochronous endpoints in a USB device.
 title: How to transfer data to USB isochronous endpoints
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to transfer data to USB isochronous endpoints
@@ -92,7 +91,7 @@ Consider an example high-speed endpoint with the following characteristics indic
 
 After the client driver selects a configuration, **MaximumPacketSize** for the isochronous pipe indicates 3,072 bytes (total transactions \* **wMaxPacketSize**). The additional transactions allow the client driver to transfer 3,072 bytes in every microframe, and total 24,576 bytes in one frame. The following illustration shows how often an isochronous packet is transferred in one microframe for high-speed transmissions.
 
-![isochronous transfer](images/iso-packets.png)
+![isochronous transfer.](images/iso-packets.png)
 
 Consider an example SuperSpeed endpoint with these characteristics indicated in the endpoint and SuperSpeed endpoint companion descriptors:
 
@@ -104,7 +103,7 @@ Consider an example SuperSpeed endpoint with these characteristics indicated in 
 
 In preceding example, even though maximum number of bytes can be calculated as **wMaxPacketSize** \* (**bMaxBurst** +1) \* (**Mult** + 1) resulting in 49,152 bytes, the device limits the value to the **wBytesPerInterval** value that is 45,000 bytes. That value is also reflected in **MaximumPacketSize** 45,000. The client driver must only use the **MaximumPacketSize** value. In this example, the request can be divided into three burst transactions. The first two burst transactions each contain 16 chunks of **wMaxPacketSize**. The last burst transaction contains 12 chunks to hold the remaining bytes. This image shows the polling interval and bytes transferred through an isochronous packet for SuperSpeed transmission.
 
-![superspeed isochronous](images/iso-packets-superspeed.png)
+![superspeed isochronous.](images/iso-packets-superspeed.png)
 
 The following procedure describes how to build a request for an isochronous transfer.
 
@@ -120,8 +119,7 @@ This example in this topic simplifies USBSAMP implementation of isochronous tran
 
 The following procedure elaborates the preceding steps and shows calculations and routines that a client driver can use to build and send an isochronous transfer request for a high-speed isochronous endpoint. The values used in the procedure are based on the example endpoint characteristics described earlier.
 
-Instructions
-------------
+## Instructions
 
 ### <a href="" id="get-the-size-of-an-isochronous-packet--"></a>Step 1: Get the size of an isochronous packet.
 
@@ -238,8 +236,7 @@ Total length transferred is 360,000 bytes.
 
 The **UrbIsochronousTransfer.IsoPacket\[i\]**.Length member does not imply the length of each packet of the isochronous URB. **IsoPacket\[i\].Length** is updated by the USB driver stack to indicate the actual number of bytes that are received from the device for isochronous IN transfers. For isochronous OUT transfers, the driver stack ignores the value that is set in **IsoPacket\[i\].Length**.
 
-Remarks
--------
+## Remarks
 
 **Specify the starting USB frame number for the transfer**
 

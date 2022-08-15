@@ -9,7 +9,6 @@ api_name:
 - .bpsync (Synchronize Threads at Breakpoint)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .bpsync (Synchronize Threads at Breakpoint)
@@ -57,8 +56,7 @@ Allows other threads to continue executing when one thread has reached a breakpo
 
  
 
-Remarks
--------
+## Remarks
 
 With no parameters. the **.bpsync** command displays the current rule governing breakpoint synchronization behavior.
 

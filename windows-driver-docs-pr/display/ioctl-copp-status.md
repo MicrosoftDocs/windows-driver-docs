@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # IOCTL\_COPP\_Status control code
@@ -42,8 +41,7 @@ The miniport driver returns a pointer to a [**DXVA\_COPPStatusOutput**](/windows
 
 The miniport driver sets the **Information** member of the [**STATUS\_BLOCK**](/windows-hardware/drivers/ddi/video/ns-video-_status_block) structure to sizeof(DXVA\_COPPStatusOutput).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

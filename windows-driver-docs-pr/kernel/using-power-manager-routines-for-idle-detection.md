@@ -3,7 +3,6 @@ title: Using Power Manager Routines for Idle Detection
 description: Using Power Manager Routines for Idle Detection
 keywords: ["idle detection WDK power management", "PoRegisterDeviceForIdleDetection", "PoSetDeviceBusy", "power manager WDK kernel", "idle time-outs WDK power management", "time-outs WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using Power Manager Routines for Idle Detection
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-The power manager provides support for idle detection through the [**PoRegisterDeviceForIdleDetection**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-poregisterdeviceforidledetection) and [**PoSetDeviceBusy**](./mm-bad-pointer.md) routines.
+The power manager provides support for idle detection through the [**PoRegisterDeviceForIdleDetection**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-poregisterdeviceforidledetection) and [**PoSetDeviceBusy**](/windows-hardware/drivers/ddi/wdm/nf-wdm-posetdevicebusy) routines.
 
 To enable idle detection for its device, a device power policy owner calls **PoRegisterDeviceForIdleDetection** and specifies:
 
@@ -28,7 +27,7 @@ A driver can register its device for idle detection any time after the device ha
 
 The time-out values for any given device should be proportional to the device's power-up latency and based on observed device behavior. For devices of certain types, a driver can specify conservation and performance time-out values of -1 to use the standard power policy time-outs for the device class. See the device-specific documentation for details.
 
-When the device is in use, the driver must call [**PoSetDeviceBusy**](./mm-bad-pointer.md), passing the pointer returned by **PoRegisterDeviceForIdleDetection**. **PoSetDeviceBusy** resets the idle counter, thus restarting the idle countdown for the device. The driver should call **PoSetDeviceBusy** on every I/O operation.
+When the device is in use, the driver must call [**PoSetDeviceBusy**](/windows-hardware/drivers/ddi/wdm/nf-wdm-posetdevicebusy), passing the pointer returned by **PoRegisterDeviceForIdleDetection**. **PoSetDeviceBusy** resets the idle counter, thus restarting the idle countdown for the device. The driver should call **PoSetDeviceBusy** on every I/O operation.
 
 To determine whether the device is idle, the power manager compares the value of the idle counter with the driver-specified idle time-out value for the current system power policy (either conservation or performance). See the Microsoft Windows SDK for functions pertaining to the system power policy.
 

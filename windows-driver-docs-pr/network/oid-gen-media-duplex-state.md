@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_MEDIA_DUPLEX_STATE OID returns the duplex s
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_MEDIA_DUPLEX_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_MEDIA\_DUPLEX\_STATE
@@ -20,8 +19,7 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Not requested. For NDIS interface providers only.
 
-Remarks
--------
+## Remarks
 
 NDIS uses this OID to query the duplex state of an [NDIS network interface](./ndis-network-interfaces2.md) provider. Only NDIS interface providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
 
@@ -31,8 +29,7 @@ Miniport drivers supply the media duplex state during initialization and provide
 
 To specify the duplex state in a miniport driver, set the **MediaDuplexState** member of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure that the miniport driver passes to the [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,5 +1,5 @@
 ---
-title: .printf
+title: .printf (WinDbg)
 description: The .printf token behaves like the printf statement in C.
 keywords: [".printf Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - .printf
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .printf
@@ -179,8 +178,7 @@ Specifies arguments for the format string, as in **printf**. The number of argum
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
-Remarks
--------
+## Remarks
 
 The color settings that you can choose by using the *Options* parameter are by default all set to black text on a white background. To make best use of these options, you must first use [View | Options](view---options.md) to open the Options dialog box and change the color settings for Debugger Command window messages.
 
@@ -190,11 +188,11 @@ The following example shows how to include a DML tag in the format string.
 .printf /D "Click <link cmd=\".chain /D\">here</link> to see extensions DLLs."
 ```
 
-![screen shot of dml link in command browser window](images/printf01.png)
+![screen shot of dml link in command browser window.](images/printf01.png)
 
 The output shown in the preceding image has a link that you can click to execute the command specified in the `<link>` tag. The following image shows the result of clicking the link.
 
-![screen shot of dml output in command browser window](images/printf02.png)
+![screen shot of dml output in command browser window.](images/printf02.png)
 
 For information about DML tags, see dml.doc in the installation folder for Debugging Tools for Windows.
 

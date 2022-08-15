@@ -2,7 +2,6 @@
 title: Writing WIA Item Properties by an Application
 description: Writing WIA Item Properties by an Application
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Writing WIA Item Properties by an Application

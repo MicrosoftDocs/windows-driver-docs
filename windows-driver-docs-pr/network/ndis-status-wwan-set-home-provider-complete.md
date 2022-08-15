@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLET
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WWAN_SET_HOME_PROVIDER_COMPLETE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_SET\_HOME\_PROVIDER\_COMPLETE
@@ -14,8 +13,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_SET\_HOME\_PROVIDER\_COMPLETE notif
 
 This notification uses the [**NDIS\_WWAN\_SET\_HOME\_PROVIDER**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_home_provider) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

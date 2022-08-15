@@ -9,7 +9,6 @@ api_name:
 - SignalEventInCompletion
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # SignalEventInCompletion rule (wdm)
@@ -21,8 +20,7 @@ In this case, the completion routine will not be called.
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest)
 [**IoBuildSynchronousFsdRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildsynchronousfsdrequest)

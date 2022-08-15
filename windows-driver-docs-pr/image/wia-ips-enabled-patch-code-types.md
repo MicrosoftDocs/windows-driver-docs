@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_ENABLED\_PATCH\_CODE\_TYPES
@@ -28,15 +27,13 @@ Valid Values: WIA\_PROP\_NONE (single 'array'/vector value)
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The valid values for the **WIA\_IPS\_ENABLED\_PATCH\_CODE\_TYPES** property are the same WIA\_PATCH\_CODE\_ values that are defined for the [**WIA\_IPS\_SUPPORTED\_PATCH\_CODE\_TYPES**](wia-ips-supported-patch-code-types.md) property.
 
 This property is required for all Patch Code Reader items.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

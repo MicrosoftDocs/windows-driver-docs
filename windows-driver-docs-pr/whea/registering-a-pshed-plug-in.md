@@ -6,7 +6,6 @@ keywords:
 - registering PSHED plug-ins WDK WHEA
 - PSHED plug-ins WDK WHEA , registering
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering a PSHED Plug-In
@@ -16,9 +15,9 @@ A PSHED plug-in registers itself with the PSHED by calling the [**PshedRegisterP
 
 A PSHED plug-in can call [**PshedIsSystemWheaEnabled**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pshedissystemwheaenabled) to check whether the system is WHEA-enabled before it calls **PshedRegisterPlugin**.
 
-After a PSHED plug-in has successfully registered itself with the PSHED, it cannot be deregistered for the duration of the operating system session. Therefore, a registered PSHED plug-in must not be unloaded from the system or a bug check might occur. Therefore, PSHED plug-ins do not implement an [**Unload**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) function.
+There are two versions of PSHED plugins. The major difference between the two are that V2 plugins can be deregistered. After a V1 PSHED plug-in has successfully registered itself with the PSHED, it cannot be deregistered for the duration of the operating system session. Therefore, a registered PSHED plug-in must not be unloaded from the system or a bug check might occur. V2 plugins do allow deregistering. 
 
-The following code example demonstrates registering a PSHED plug-in that participates in error information retrieval and error record persistence.
+The following code example demonstrates registering a PSHED plug-in that participates in error information retrieval and error record persistence. Note the V1 and V2 differences.
 
 ```cpp
 // Prototypes for the callback functions for
@@ -74,7 +73,34 @@ NTSTATUS
     IN ULONGLONG  ErrorRecordId
     );
 
-// The PSHED plug-in registration packet
+// The PSHED plug-in registration packet for a V1 PSHED plugin
+WHEA_PSHED_PLUGIN_REGISTRATION_PACKET_V1 RegPacket =
+{
+  sizeof(WHEA_PSHED_PLUGIN_REGISTRATION_PACKET_V1),
+ WHEA_PSHED_PLUGIN_REGISTRATION_PACKET_V1,
+ NULL,
+ PshedFAErrorInfoRetrieval | PshedFAErrorRecordPersistence,
+  0,
+  {
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    WriteErrorRecord,
+    ReadErrorRecord,
+    ClearErrorRecord,
+    RetrieveErrorInfo,
+    FinalizeErrorRecord,
+    ClearErrorStatus,
+    NULL,
+    NULL,
+    NULL
+  }
+}
+
+// The PSHED plug-in registration packet for a V2 PSHED plugin
 WHEA_PSHED_PLUGIN_REGISTRATION_PACKET RegPacket =
 {
   sizeof(WHEA_PSHED_PLUGIN_REGISTRATION_PACKET),
@@ -98,11 +124,12 @@ WHEA_PSHED_PLUGIN_REGISTRATION_PACKET RegPacket =
     NULL,
     NULL,
     NULL
-  }
+  },
+  PluginHandle
 }
 
 //
-// The PSHED plug-in's DriverEntry function
+// The PSHED plug-in's DriverEntry function for a V1 PSHED Plugin
 //
 NTSTATUS
   DriverEntry(
@@ -115,7 +142,7 @@ NTSTATUS
 
   ...
 
-  // No unload function
+  // No unload function for V1 PSHED plugins
   DriverObject->DriverUnload = NULL;
 
   // Query if the system is WHEA-enabled
@@ -148,5 +175,53 @@ NTSTATUS
   // Return success
   return STATUS_SUCCESS;
 }
-```
 
+
+//
+// The PSHED plug-in's DriverEntry function for a V2 PSHED Plugin
+//
+NTSTATUS
+  DriverEntry(
+    IN PDRIVER_OBJECT DriverObject,
+    IN PUNICODE_STRING RegistryPath
+    )
+{
+  BOOLEAN IsWheaEnabled;
+  NTSTATUS Status;
+
+  ...
+
+  // There is an unload function for V2 PSHED plugin
+  DriverObject->DriverUnload = PluginUnload;
+
+  // Query if the system is WHEA-enabled
+  IsWheaEnabled =
+    PshedIsSystemWheaEnabled(
+      );
+
+  // Check result
+  if (IsWheaEnabled == FALSE)
+  {
+    // Return "not supported" status
+    return STATUS_NOT_SUPPORTED;
+  }
+
+  // Register the PSHED plug-in
+  Status =
+    PshedRegisterPlugin(
+      &RegPacket
+      );
+
+  // Check status
+  if (Status != STATUS_SUCCESS)
+  {
+    // Handle error
+    ...
+  }
+
+  ...
+
+  // Return success
+  return STATUS_SUCCESS;
+}
+```

@@ -9,7 +9,6 @@ api_name:
 - WHEA_INTERNAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x122: WHEA\_INTERNAL\_ERROR
@@ -109,6 +108,9 @@ The WHEA\_INTERNAL\_ERROR bug check has a value of 0x00000122. This bug check in
 </table>
 
  
+## Remarks
+
+The [**!analyze**](./-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 If Parameter 1 is equal to 0x6, 0x9, 0xA, or 0xB, one of the other parameters contains the error source type. The following table gives possible values for the error source type.
 
@@ -128,11 +130,4 @@ If Parameter 1 is equal to 0x6, 0x9, 0xA, or 0xB, one of the other parameters co
 | 0x0B  | Itanium corrected platform error     |
 
  
-
- 
-
- 
-
-
-
 

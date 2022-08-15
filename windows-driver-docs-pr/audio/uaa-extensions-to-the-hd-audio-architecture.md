@@ -7,7 +7,6 @@ keywords:
 - UAA WDK
 - Universal Audio Architecture WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # UAA Extensions to the HD Audio Architecture

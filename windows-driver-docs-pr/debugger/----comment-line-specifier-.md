@@ -9,7 +9,6 @@ api_name:
 - (Comment Line Specifier)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # \* (Comment Line Specifier)
@@ -20,8 +19,7 @@ If the asterisk ( **\*** ) character is at the start of a command, then the rest
     * [any text]
 ```
 
-Remarks
--------
+## Remarks
 
 The **\*** token is parsed like any other debugger command. Therefore, if you want to create a comment after another command, you must precede the **\*** token with a semicolon.
 

@@ -4,7 +4,6 @@ description: Getting started with hardware codec support in AVStream
 keywords:
 - hardware codec support WDK AVStream , using
 ms.date: 06/18/2020
-ms.localizationpriority: medium
 ---
 
 # Getting started with hardware codec support in AVStream
@@ -17,7 +16,7 @@ The AVStream model remains unchanged in Windows 7 and requires only a few additi
 
 The transcoding topology is shown in the following diagram:
 
-![diagram illustrating transcoding topology](images/hw-transcoding.png)
+![diagram illustrating transcoding topology.](images/hw-transcoding.png)
 
 For best performance, the media processing that is shown in the bottom row of the diagram should occur in dedicated hardware. In this scenario, dedicated transcode hardware is known as Secured Hardware Encoder Decoder (SHED). SHED can be packaged either as a plug-in module for the motherboard or as an integrated feature on the display adapter.
 

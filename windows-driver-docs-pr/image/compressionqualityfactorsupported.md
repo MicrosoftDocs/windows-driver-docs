@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # CompressionQualityFactorSupported element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **CompressionQualityFactorSupported** element specifies the range of compression quality factors that the scan device supports.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:CompressionQualityFactorSupported>
@@ -26,8 +24,7 @@ Usage
 </wscn:CompressionQualityFactorSupported>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -72,8 +69,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The compression quality factor is an integer value that you use for a lossy compression type to determine the amount of acceptable image loss during compression. The higher the requested fidelity, the larger the resulting file size will be.
 

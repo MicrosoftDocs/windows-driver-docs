@@ -9,7 +9,6 @@ api_name:
 - PdoInitFreeDeviceCreateType4
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PdoInitFreeDeviceCreateType4 rule (kmdf)
@@ -21,8 +20,7 @@ If your driver encounters an error when it calls [**WdfDriverCreate**](/windows-
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate)
 [**WdfDeviceInitFree**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitfree)

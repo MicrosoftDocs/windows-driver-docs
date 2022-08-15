@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # FilmScanMode element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The optional **FilmScanMode** element specifies the exposure type of the film to be scanned.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:FilmScanMode wscn:MustHonor=""                   wscn:Override=""                   wscn:UsedDefault=""
@@ -29,8 +27,7 @@ Usage
 </wscn:FilmScanMode wscn:MustHonor=""                   wscn:Override=""                   wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -72,8 +69,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 You can both extend and subset the allowed values for this element.
 
@@ -104,8 +100,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **FilmScanMode** element is valid only if the [**InputSource**](inputsource.md) element is set to a value of **Film**.
 

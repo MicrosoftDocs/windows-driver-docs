@@ -2,7 +2,6 @@
 title: Transmission Selection Algorithms (TSAs)
 description: Transmission Selection Algorithms (TSAs)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Transmission Selection Algorithms (TSAs)

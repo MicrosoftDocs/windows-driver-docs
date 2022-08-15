@@ -4,7 +4,6 @@ description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_CREATE_PORT_COMPLET
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_CREATE_PORT_COMPLETE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_CREATE\_PORT\_COMPLETE
@@ -27,8 +26,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_CREATE\_PORT\_COMPLETE to in
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

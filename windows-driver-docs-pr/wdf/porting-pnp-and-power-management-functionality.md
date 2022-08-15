@@ -2,7 +2,6 @@
 title: Porting PnP and Power Management
 description: Porting PnP and Power Management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Porting PnP and Power Management

@@ -7,7 +7,6 @@ keywords:
 - CatalogFile directive WDK display
 - LayoutFile directive WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Omitting LayoutFile and CatalogFile Information

@@ -4,10 +4,11 @@ description: WDI_TLV_GET_AUTO_POWER_SAVE is a TLV that contains auto power save 
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_GET_AUTO_POWER_SAVE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_GET\_AUTO\_POWER\_SAVE
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_GET\_AUTO\_POWER\_SAVE is a TLV that contains auto power save information for [OID\_WDI\_GET\_AUTO\_POWER\_SAVE](./oid-wdi-get-auto-power-save.md).
@@ -45,8 +46,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

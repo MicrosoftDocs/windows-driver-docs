@@ -7,7 +7,6 @@ keywords:
 - VBI WDK video capture
 - vertical blanking interval WDK video capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Videoport VBI Category

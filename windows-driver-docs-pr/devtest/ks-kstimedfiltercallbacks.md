@@ -9,7 +9,6 @@ api_name:
 - KsTimedFilterCallbacks
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # KsTimedFilterCallbacks rule ()
@@ -22,8 +21,7 @@ The KsTimedFilterCallbacks rule specifies that a kernel-streaming (KS) miniport 
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x00082003)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

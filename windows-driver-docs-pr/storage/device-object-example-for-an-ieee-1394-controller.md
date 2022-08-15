@@ -7,7 +7,6 @@ keywords:
 - IEEE 1394 controller example WDK storage
 - PCI IEEE 1394 controller example WDK storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Object Example for an IEEE 1394 Controller
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 The following figure shows the device objects that are created for system with a PCI IEEE 1394 controller with an IEEE 1394 CD-ROM attached. Device objects for devices attached to the SCSI adapter are described in [Device Object Example for a SCSI HBA](device-object-example-for-a-scsi-hba.md).
 
-![Device objects that are created for system with a PCI IEEE 1394 controller with an IEEE 1394 CD-ROM attached](images/kg201-3.png)
+![Device objects that are created for system with a PCI IEEE 1394 controller with an IEEE 1394 CD-ROM attached.](images/kg201-3.png)
 
 Device Object Tree for a CD-ROM Device on an IEEE 1394 Controller
 

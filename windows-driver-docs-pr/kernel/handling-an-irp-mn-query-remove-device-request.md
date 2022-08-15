@@ -3,7 +3,6 @@ title: Handling an IRP_MN_QUERY_REMOVE_DEVICE Request
 description: Handling an IRP_MN_QUERY_REMOVE_DEVICE Request
 keywords: ["IRP_MN_QUERY_REMOVE_DEVICE"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling an IRP\_MN\_QUERY\_REMOVE\_DEVICE Request
@@ -70,7 +69,7 @@ In response to an **IRP\_MN\_QUERY\_REMOVE\_DEVICE**, a driver must do the follo
 
     -   Set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
-    -   Set up the next stack location with [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) and pass the IRP to the next lower driver with [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
+    -   Set up the next stack location with [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) and pass the IRP to the next lower driver with [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
     -   Propagate the status from **IoCallDriver** as the return status from the *DispatchPnP* routine.
 

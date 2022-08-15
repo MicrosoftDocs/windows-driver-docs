@@ -9,7 +9,6 @@ api_name:
 - MUP_FILE_SYSTEM
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x103: MUP\_FILE\_SYSTEM
@@ -78,8 +77,7 @@ Parameter 1 identifies the type of violation.
 
  
 
-Remarks
--------
+## Remarks
 
 The MUP maintains context information on a per-file object basis for all file objects it handles.
 

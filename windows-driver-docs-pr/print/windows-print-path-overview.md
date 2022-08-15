@@ -7,7 +7,6 @@ keywords:
 - GDI print path WDK XPSDrv
 - XPS print path WDK XPSDrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows Print Path Overview
@@ -28,7 +27,7 @@ The two conversion options are:
 
 The following illustration shows the different print path and conversion options of the XPSDrv subsystem.
 
-![diagram illustrating the different print-path and conversion options of the xpsdrv subsystem](images/printpathoverview.png)
+![diagram illustrating the different print-path and conversion options of the xpsdrv subsystem.](images/printpathoverview.png)
 
 For more information about configuring the filter pipeline service, see [Filter Pipeline Configuration File](filter-pipeline-configuration-file.md).
 

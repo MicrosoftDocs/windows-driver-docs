@@ -12,7 +12,6 @@ keywords:
 - mapping TAPE_STATUS values
 - status values WDK tape
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Processing Tape Device Control Requests

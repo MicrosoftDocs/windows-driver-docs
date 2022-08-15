@@ -1,11 +1,10 @@
 ---
-title: C28167
+title: C28167 warning
 description: Warning C28167 The function changes the IRQL and does not restore the IRQL before it exits. It should be annotated to reflect the change or the IRQL should be restored.
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28167"
 ---

@@ -5,7 +5,6 @@ keywords:
 - Print Tickets WDK , organization
 - hierarchy WDK Print Ticket
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Print Ticket Organization
@@ -25,7 +24,7 @@ The hierarchical nature of Print Tickets enables elements in lower-level Print T
 
 The following figure shows the relationships among the different levels of PrintTicket documents and how this merge is performed.
 
-![print ticket hierarchy](images/ptpcmerge1.gif)
+![print ticket hierarchy.](images/ptpcmerge1.gif)
 
  
 

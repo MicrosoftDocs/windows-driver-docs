@@ -9,7 +9,6 @@ api_name:
 - .kill (Kill Process)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .kill (Kill Process)
@@ -70,8 +69,7 @@ In kernel mode, this command is supported on Microsoft Windows Server 2003 and l
 
  
 
-Remarks
--------
+## Remarks
 
 In user mode, this command ends a process that is being debugged. If the debugger is attached to a child process, you can use **.kill** to end the child process without ending the parent process. For more information, see Examples.
 
@@ -79,8 +77,7 @@ In kernel mode, this command schedules the selected process on the target comput
 
 You cannot use this command during local kernel debugging.
 
-Examples
---------
+## Examples
 
 **Using .childdbg**
 
@@ -125,8 +122,7 @@ When you start WinDbg or CDB, you can use the **-o** parameter to tell the debug
 
 For more information, see [**WinDbg Command-Line Options**](windbg-command-line-options.md) and [**CDB Command-Line Options**](cdb-command-line-options.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

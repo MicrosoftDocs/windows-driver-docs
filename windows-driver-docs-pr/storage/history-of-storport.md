@@ -2,7 +2,6 @@
 title: History of Storport
 description: History of Storport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # History of Storport

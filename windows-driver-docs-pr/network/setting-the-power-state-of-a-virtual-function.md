@@ -2,7 +2,6 @@
 title: Setting the Power State of a Virtual Function
 description: Setting the Power State of a Virtual Function
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting the Power State of a Virtual Function

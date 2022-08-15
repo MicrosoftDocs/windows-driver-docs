@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ScannerStatus element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **ScannerStatus** element contains the current status of the scanner-related information that automata (such as time and changing conditions in the scanner) control.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScannerStatus>
@@ -26,8 +24,7 @@ Usage
 </wscn:ScannerStatus>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 

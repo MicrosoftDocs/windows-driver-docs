@@ -7,7 +7,6 @@ keywords:
 - DirectDraw WDK Windows 2000 display , return values
 - errors WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Return Values for DirectDraw

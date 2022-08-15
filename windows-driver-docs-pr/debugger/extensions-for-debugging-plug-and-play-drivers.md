@@ -3,7 +3,6 @@ title: Extensions for Debugging Plug and Play Drivers
 description: Extensions for Debugging Plug and Play Drivers
 keywords: ["Plug and Play (PnP), extensions", "extensions, plug and play"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Extensions for Debugging Plug and Play Drivers

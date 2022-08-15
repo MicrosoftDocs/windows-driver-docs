@@ -4,7 +4,6 @@ description: The VERIFY_IS_IRQL_PASSIVE_LEVEL macro breaks into the kernel debug
 keywords:
  - VERIFY_IS_IRQL_PASSIVE_LEVEL macro
 ms.date: 08/23/2017
-ms.localizationpriority: medium
 ---
 
 # VERIFY_IS_IRQL_PASSIVE_LEVEL macro
@@ -14,25 +13,21 @@ ms.localizationpriority: medium
 
 The **VERIFY_IS_IRQL_PASSIVE_LEVEL** macro breaks into the kernel debugger if the driver is not executing at IRQL = PASSIVE_LEVEL.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID VERIFY_IS_IRQL_PASSIVE_LEVEL(void);
 ```
 
-Parameters
-----------
+## Parameters
 
 This macro has no parameters.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 The code for the **VERIFY_IS_IRQL_PASSIVE_LEVEL** macro is included in your driver's binary when you build your driver in a release configuration or a debug configuration. 
 
@@ -46,8 +41,7 @@ For more information about registry entries that you can use to debug your drive
 
 For more information about debugging your driver, see [Debugging a KMDF Driver](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md).
 
-Examples
---------
+## Examples
 
 The following code example breaks into the kernel debugger if the driver is not executing at IRQL = PASSIVE_LEVEL.
 
@@ -55,8 +49,7 @@ The following code example breaks into the kernel debugger if the driver is not 
 VERIFY_IS_IRQL_PASSIVE_LEVEL();
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

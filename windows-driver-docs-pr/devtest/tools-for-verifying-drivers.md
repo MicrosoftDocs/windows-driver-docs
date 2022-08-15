@@ -6,8 +6,7 @@ keywords:
 - driver development tools WDK , verifying drivers
 - verifying drivers WDK
 - driver verification WDK
-ms.date: 06/04/2020
-ms.localizationpriority: medium
+ms.date: 02/18/2022
 ---
 
 # Tools for verifying drivers
@@ -18,23 +17,11 @@ These verification tools are described in the WDK documentation and recommended 
 
 For best results, use all of the tools that can run on your driver. If you omit any of these tools, you might miss a serious bug in your driver.
 
-> [!NOTE]
-> Checked builds were available on older versions of Windows, before Windows 10 version 1803.
-> Use tools such as Driver Verifier and GFlags to check driver code in later versions of Windows.
-
 This section begins with a brief discussion of the characteristics of code verification tools and a survey of the tools included in the WDK and in Windows or available from Microsoft.
 
 This section includes:
 
 [Static and Dynamic Verification Tools](static-and-dynamic-verification-tools.md)
-
-[Survey of Verification Tools](survey-of-verification-tools.md)
-
-[DDI Compliance Rules](./static-driver-verifier-rules.md)
-
-[Checked Build of Windows](checked-build-of-windows.md)
-
-[Application Verifier](application-verifier.md)
 
 [Code Analysis for Drivers](code-analysis-for-drivers.md)
 
@@ -42,9 +29,9 @@ This section includes:
 
 [Static Driver Verifier](static-driver-verifier.md)
 
-[WDF Verifier Control Application](wdf-verifier-control-application.md)
+[DDI Compliance Rules](./static-driver-verifier-rules.md)
 
-[WdfTester: WDF Driver Testing Toolset](wdftester--wdf-driver-testing-toolset.md)
+[CodeQL and the Static Tools Logo Test](static-tools-and-codeql.md)
 
 ## Other tools
 

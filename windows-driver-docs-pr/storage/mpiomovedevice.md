@@ -10,7 +10,6 @@ api_location:
 - MPIOwmi.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -19,8 +18,7 @@ ms.date: 10/17/2018
 
 The MPIOMoveDevice method is used to set the active path on the device.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void MPIOMoveDevice(
@@ -30,8 +28,7 @@ void MPIOMoveDevice(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *DiskOrdinal*   
 A 32-bitfield that specifies the MPIO disk ordinal value.
@@ -42,18 +39,15 @@ A 32-bitfield that specifies the flags that are associated with the device move.
 *PathID*   
 A 64-bitfield that specifies the path that is associated with the device.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MPIO\_WMI\_METHODS WMI class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -7,7 +7,6 @@ keywords:
 - storage drivers WDK , CD-ROM
 - IOCTLs WDK CD-ROM
 ms.date: 12/15/2019
-ms.localizationpriority: medium
 ---
 
 # Introduction to CD-ROM drivers

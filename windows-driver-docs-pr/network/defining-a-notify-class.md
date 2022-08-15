@@ -6,7 +6,6 @@ keywords:
 - network notify objects WDK , notify classes
 - notify classes WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Defining a Notify Class

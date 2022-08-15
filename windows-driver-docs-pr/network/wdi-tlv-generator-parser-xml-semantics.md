@@ -2,7 +2,6 @@
 title: WDI TLV generator/parser XML semantics
 description: The TLV generator/parser XML file is a list of messages, containers (TLVs), and property groups (structs). This topic covers the XML syntax.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDI TLV generator/parser XML semantics

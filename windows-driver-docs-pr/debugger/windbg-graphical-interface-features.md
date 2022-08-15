@@ -3,7 +3,6 @@ title: WinDbg Graphical Interface Features
 description: WinDbg Graphical Interface Features
 keywords: ["WinDbg, graphical interface (reference)", "graphical interface, details"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # WinDbg Graphical Interface Features

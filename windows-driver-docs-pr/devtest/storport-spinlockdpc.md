@@ -9,7 +9,6 @@ api_name:
 - SpinLockDpc
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # SpinLockDpc rule (storport)
@@ -19,8 +18,7 @@ This rule verifies that a call to **KeAcquireSpinLockRaiseToDpc** is promptly fo
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**KeAcquireSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock)
 [**KeAcquireSpinLockRaiseToDpc**](/previous-versions/windows/hardware/drivers/ff551928(v=vs.85))

@@ -13,7 +13,6 @@ keywords:
 - testing sensor data retrieval
 - testing sensor property support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Testing Sensor Functionality

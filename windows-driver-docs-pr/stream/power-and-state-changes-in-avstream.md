@@ -6,7 +6,6 @@ keywords:
 - power changes WDK , AVStream
 - state changes WDK , AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Power and State Changes in AVStream
@@ -42,5 +41,4 @@ In this scenario, steps 5 and 6 are the steps that are reversed from the expecte
 
 Additionally, when an application is streaming and the system initiates a power down sequence, a capture graph that is running is always placed in a pause state. If the graph was already stopped, it remains stopped.
 
- 
 

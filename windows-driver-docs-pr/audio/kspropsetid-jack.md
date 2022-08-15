@@ -2,7 +2,6 @@
 title: KSPROPSETID\_Jack
 description: KSPROPSETID\_Jack
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_Jack

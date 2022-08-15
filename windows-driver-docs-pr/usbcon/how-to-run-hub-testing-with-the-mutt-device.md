@@ -2,7 +2,6 @@
 description: The goal of hub testing is to generate a complete set of possible traffic patterns from devices. You can test disconnect scenarios by adding an upstream SuperMUTT pack.
 title: USB hub testing with MUTT devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB hub testing with MUTT devices
@@ -34,7 +33,7 @@ Before you run the MUTT test commands at an elevated command prompt, make sure y
 -   Attach SuperMUTTs to half of the available ports. Attach MUTT devices to the remaining ports.
 -   Attach a SuperMutt Pack upstream of the hub under test and downstream ports have equal number of SuperMUTT and MUTT devices as shown in the following figure:
 
-    ![test connect/disconnect](images/fig14-topology-connect-disconnect.png)
+    ![test connect/disconnect.](images/fig14-topology-connect-disconnect.png)
 
 ## Related topics
 [USB](../index.yml)  

@@ -9,7 +9,6 @@ api_name:
 - .lines (Toggle Source Line Support)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .lines (Toggle Source Line Support)
@@ -62,8 +61,7 @@ Turns source line support on or off. If you do not specify parameters for **.lin
 
 For more information about source debugging and related commands, see [Debugging in Source Mode](debugging-in-source-mode.md).
 
-Remarks
--------
+## Remarks
 
 You must enable source line support before you can perform source-level debugging. This support enables the debugger to load source line symbols.
 

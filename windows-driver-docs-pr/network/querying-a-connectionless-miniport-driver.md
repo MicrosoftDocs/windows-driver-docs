@@ -4,7 +4,6 @@ description: Querying a Connectionless Miniport Driver
 keywords:
 - connectionless drivers WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Querying a Connectionless Miniport Driver
@@ -13,13 +12,13 @@ ms.localizationpriority: medium
 
 
 
-To query OIDs that a connectionless miniport driver maintains, a bound protocol calls [**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) and passes an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure that specifies the object (OID) that is being queried and that points to a buffer into which NDIS eventually writes the requested information.
+To query OIDs that a connectionless miniport driver maintains, a bound protocol calls [**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) and passes an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure that specifies the object (OID) that is being queried and that points to a buffer into which NDIS eventually writes the requested information.
 
 If NDIS does not respond for the miniport driver, the call to **NdisOidRequest** causes NDIS to call the miniport driver's [*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) function, which returns the requested information to NDIS. *MiniportOidRequest* can complete synchronously or asynchronously with a call to [**NdisMOidRequestComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete).
 
 NDIS can also call a miniport driver's *MiniportOidRequest* function on its own behalf--for example, after the miniport driver's *MiniportInitializeEx* function has returned NDIS\_STATUS\_SUCCESS--to query the miniport driver's capabilities, status, or statistics. The following diagram illustrates querying a connectionless miniport driver.
 
-![diagram illustrating querying a connectionless miniport driver](images/fig5-2.png)
+![diagram illustrating querying a connectionless miniport driver.](images/fig5-2.png)
 
 NDIS responds to many OID requests on behalf of the miniport driver. The miniport driver reports many of its OID values during initialization and in status indications. For more information about OID values that are reported in attributes, see [**NDIS\_MINIPORT\_ADAPTER\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_attributes) and the related attributes structures.
 

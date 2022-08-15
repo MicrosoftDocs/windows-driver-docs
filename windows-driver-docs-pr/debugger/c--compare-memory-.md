@@ -9,7 +9,6 @@ api_name:
 - c (Compare Memory)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # c (Compare Memory)
@@ -59,8 +58,7 @@ The starting address of the second memory range to be compared. The size of this
 
 For an overview of memory manipulation and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
-Remarks
--------
+## Remarks
 
 If the two areas are not identical, the debugger will display all memory addresses in the first range where they do not agree.
 

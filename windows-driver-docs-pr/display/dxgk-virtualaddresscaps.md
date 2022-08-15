@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # \_DXGK\_VIRTUALADDRESSCAPS structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The DXGK\_VIRTUALADDRESSCAPS structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_VIRTUALADDRESSCAPS {
@@ -41,8 +39,7 @@ typedef struct _DXGK_VIRTUALADDRESSCAPS {
 } DXGK_VIRTUALADDRESSCAPS;
 ```
 
-Members
--------
+## Members
 
 **PrivilegedMemorySupported**
 Reserved for system use.
@@ -74,8 +71,7 @@ Reserved for system use.
 **IdealGPUPageSize**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

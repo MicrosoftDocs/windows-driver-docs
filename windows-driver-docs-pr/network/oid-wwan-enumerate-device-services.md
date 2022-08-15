@@ -4,7 +4,6 @@ description: OID_WWAN_ENUMERATE_DEVICE_SERVICES returns the list of device servi
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_ENUMERATE_DEVICE_SERVICES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICES
@@ -16,8 +15,7 @@ Set requests are not supported.
 
 Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS**](./ndis-status-wwan-device-service-supported-commands.md) status notification containing a [**NDIS\_WWAN\_SUPPORTED\_DEVICE\_SERVICES**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_supported_device_services) structure that provides the list of supported device service GUIDs.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

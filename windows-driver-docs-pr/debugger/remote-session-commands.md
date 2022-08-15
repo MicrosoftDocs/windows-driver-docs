@@ -3,7 +3,6 @@ title: Remote Session Commands
 description: Remote Session Commands
 keywords: ["Remote Tool, remote session commands"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Remote Session Commands

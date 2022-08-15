@@ -7,15 +7,16 @@ keywords:
 - WHEA WDK , disabling error sources
 - errors WDK WHEA , disabling error sources
 - hardware error sources WDK WHEA , disabling
-- disabling an error sourc
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+- disabling an error source
+ms.date: 02/14/2022
 ---
 
 # Disabling an Error Source
 
-
 A user-mode application can disable an [error source](hardware-errors-and-error-sources.md) by calling the [**WHEAErrorSourceMethods::DisableErrorSourceRtn**](/windows-hardware/drivers/ddi/_whea/) method.
+
+> [!NOTE]
+> The following error sources cannot be disabled: **WheaErrSrcTypeMCE**, **WheaErrSrcTypeNMI**, **WheaErrSrcTypeINIT**, **WheaErrSrcTypeBOOT**
 
 The following code example shows how to disable an error source.
 

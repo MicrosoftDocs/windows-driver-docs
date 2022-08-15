@@ -9,7 +9,6 @@ api_name:
 - .dvalloc (Allocate Memory)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .dvalloc (Allocate Memory)
@@ -61,8 +60,7 @@ Specifies the amount of memory to be allocated, in bytes. The amount of memory a
 
  
 
-Remarks
--------
+## Remarks
 
 The **.dvalloc** command calls **VirtualAllocEx** to allocate new memory for the target process. The allocated memory permits reading, writing, and execution.
 

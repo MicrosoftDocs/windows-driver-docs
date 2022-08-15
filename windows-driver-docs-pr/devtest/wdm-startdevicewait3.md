@@ -9,7 +9,6 @@ api_name:
 - StartDeviceWait3
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StartDeviceWait3 rule (wdm)
@@ -19,8 +18,7 @@ The **StartDeviceWait3** rule specifies that the driver should not call [**KeWai
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoSetCompletionRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine)
 [**KeWaitForSingleObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitforsingleobject)

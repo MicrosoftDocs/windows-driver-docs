@@ -4,7 +4,6 @@ description: OID_WWAN_SMS_SEND sends SMS text messages to another MB device.
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SMS_SEND Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_SMS\_SEND
@@ -18,8 +17,7 @@ Set requests use the [**NDIS\_WWAN\_SMS\_SEND**](/windows-hardware/drivers/ddi/n
 
 Miniport drivers process this OID asynchronously, and should return an NDIS\_STATUS\_INDICATION\_REQUIRED provisional response to any set requests. Miniport drivers should send an [**NDIS\_STATUS\_WWAN\_SMS\_SEND**](ndis-status-wwan-sms-send.md) indication when they have completed the transaction.
 
-Remarks
--------
+## Remarks
 
 For more information about using this OID, see [WWAN SMS Operations](./mb-sms-operations.md).
 
@@ -31,8 +29,7 @@ GSM-based devices are expected to support only PDU-mode SMS text messages. CDMA-
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support SMS text messages, or the ability to send SMS text messages.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -3,7 +3,6 @@ title: Device Tree
 description: Device Tree
 keywords: ["devnodes WDK PnP", "nonpresent devices WDK", "PnP WDK kernel , device trees", "Plug and Play WDK kernel , device trees", "removal relations WDK PnP", "ejection relations WDK PnP", "device trees WDK PnP", "trees WDK PnP", "device nodes WDK PnP", "child devices WDK PnP", "hierarchy WDK PnP", "relationships WDK PnP"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Device Tree
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 The PnP manager maintains a device tree that keeps track of the devices in the system. The following figure shows the device tree for a sample system configuration.
 
-![sample pnp device tree](images/devtree.png)
+![sample pnp device tree.](images/devtree.png)
 
 The device tree contains information about the devices present on the system. The PnP manager builds this tree when the machine boots, using information from drivers and other components, and updates the tree as devices are added or removed.
 

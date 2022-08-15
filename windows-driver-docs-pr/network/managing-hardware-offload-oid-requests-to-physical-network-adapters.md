@@ -2,7 +2,6 @@
 title: Managing Hardware Offload OID Requests to Physical Network Adapters
 description: Managing Hardware Offload OID Requests to Physical Network Adapters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing Hardware Offload OID Requests to Physical Network Adapters
@@ -16,11 +15,11 @@ In this configuration, an extensible switch extension is exposed to every networ
 
 The following figure shows an example of an extensible switch team for NDIS 6.40 (Windows Server 2012 R2) and later.
 
-![diagram of extensible switch team for ndis 6.40](images/vswitch-oid-controlpath2-ndis640.png)
+![diagram of extensible switch team for ndis 6.40.](images/vswitch-oid-controlpath2-ndis640.png)
 
 The following figure shows an example of an extensible switch team for NDIS 6.30 (Windows Server 2012).
 
-![diagram of extensible switch team for ndis 6.30](images/vswitch-oid-controlpath2.png)
+![diagram of extensible switch team for ndis 6.30.](images/vswitch-oid-controlpath2.png)
 
 **Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*.
 
@@ -81,7 +80,7 @@ The following VMQ OID requests are encapsulated:
 
 The forwarding extension can veto OID requests of [OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE](./oid-receive-filter-allocate-queue.md) and [OID\_RECEIVE\_FILTER\_SET\_FILTER](./oid-receive-filter-set-filter.md) by completing the request with a status code other than NDIS\_STATUS\_SUCCESS. However, the extension must not veto the other VMQ OID requests.
 
-For more information about the VMQ hardware offload technology, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md).
+For more information about the VMQ hardware offload technology, see [Virtual Machine Queue (VMQ)](virtual-machine-queue-architecture.md).
 
 The forwarding extension must follow these guidelines for handling hardware offload OID requests:
 
@@ -113,7 +112,7 @@ The forwarding extension must follow these guidelines for handling hardware offl
 
     The **SourceNicIndex** member must be set to **NDIS\_SWITCH\_DEFAULT\_NIC\_INDEX**.
 
--   When the extension calls [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) to forward the OID request, it must set the *OidRequest* parameter to a pointer to an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure for an [OID\_SWITCH\_NIC\_REQUEST](./oid-switch-nic-request.md) OID request.
+-   When the extension calls [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) to forward the OID request, it must set the *OidRequest* parameter to a pointer to an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure for an [OID\_SWITCH\_NIC\_REQUEST](./oid-switch-nic-request.md) OID request.
 
 For more information on how the extension filters OID requests, see [Filtering OID Requests in an NDIS Filter Driver](filtering-oid-requests-in-an-ndis-filter-driver.md).
 

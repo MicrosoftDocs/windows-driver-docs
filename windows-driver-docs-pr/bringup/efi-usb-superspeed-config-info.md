@@ -1,13 +1,12 @@
 ---
 title: EFI_USB_SUPERSPEED_CONFIG_INFO
-description: EFI_USB_SUPERSPEED_CONFIG_INFO
-ms.date: 05/21/2020
-ms.localizationpriority: medium
+description: The EFI_USB_SUPERSPEED_CONFIG_INFO structure defines the supported USB SuperSpeed port configuration to the USB function driver.
+ms.date: 08/23/2021
 ---
 
-# EFI\_USB\_SUPERSPEED\_CONFIG\_INFO
+# EFI_USB_SUPERSPEED_CONFIG_INFO
 
-The **EFI\_USB\_SUPERSPEED\_CONFIG\_INFO** structure is used to define the supported USB SuperSpeed port configuration to the USB function driver.
+The **EFI_USB_SUPERSPEED_CONFIG_INFO** structure defines the supported USB SuperSpeed port configuration to the USB function driver.
 
 ## Syntax
 
@@ -21,17 +20,15 @@ typedef struct
 
 ## Members
 
-### ConfigDescriptor
+**ConfigDescriptor**
+An EFI_USB_CONFIG_DESCRIPTOR structure that contains the configuration descriptor for the USB function device.
 
-An EFI\_USB\_CONFIG\_DESCRIPTOR structure that contains the configuration descriptor for the USB function device.
-
-### InterfaceInfoTable
-
-An [EFI\_USB\_SUPERSPEED\_INTERFACE\_INFO](efi-usb-superspeed-interface-info.md) structure that describes the supported USB SuperSpeed interfaces.
+**InterfaceInfoTable**
+An [EFI_USB_SUPERSPEED_INTERFACE_INFO](efi-usb-superspeed-interface-info.md) structure that describes the supported USB SuperSpeed interfaces.
 
 ## Remarks
 
-The **EFI\_USB\_CONFIG\_DESCRIPTOR** structure is defined in the UEFI specification version 2.3 and later. For more information, visit the [UEFI.org](https://uefi.org/specifications) website.
+The **EFI_USB_CONFIG_DESCRIPTOR** structure is defined in the UEFI specification version 2.3 and later. For more information, visit the [UEFI.org](https://uefi.org/specifications) website.
 
 ## Requirements
 

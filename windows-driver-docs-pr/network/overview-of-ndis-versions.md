@@ -1,13 +1,13 @@
 ---
 title: Overview of NDIS versions
-description: Overview of NDIS versions
+description: This NDIS versions overview is targeted at Windows Vista and later operating systems and NDIS 6.0 and later drivers. 
 keywords:
 - network drivers WDK , NDIS versions
 - NDIS WDK , versions in network drivers
 - backward compatibility WDK networking
 - compatibility WDK networking
-ms.date: 05/03/2019
-ms.localizationpriority: medium
+ms.date: 08/06/2021
+ms.custom: contperf-fy21q4
 ---
 
 # Overview of NDIS versions
@@ -70,3 +70,9 @@ Windows operating system, Microsoft Windows Driver Kit (WDK), and Driver Develop
 |   |   | For more information about NDIS 6.82 features, see [Introduction to NDIS 6.82](introduction-to-ndis-6-82.md). |
 | Windows 10, version 1903 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.83 | X | X | X |
 |   |   | For more information about NDIS 6.83 features, see [Introduction to NDIS 6.83](introduction-to-ndis-6-83.md). |
+| Windows 10, version 2004 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.84 | X | X | X |
+|   |   | For more information about NDIS 6.84 features, see [Introduction to NDIS 6.84](introduction-to-ndis-6-84.md). |
+| Windows Server 2022 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.85 | X | X | X |
+|   |   | For more information about NDIS 6.85 features, see [Introduction to NDIS 6.85](introduction-to-ndis-6-85.md). |
+| Windows 11, version 21H2 | See [Download kits for Windows hardware development](https://go.microsoft.com/fwlink/p/?linkid=239721). | 6.86 | X | X | X |
+|   |   | For more information about NDIS 6.86 features, see [Introduction to NDIS 6.86](introduction-to-ndis-6-86.md). |

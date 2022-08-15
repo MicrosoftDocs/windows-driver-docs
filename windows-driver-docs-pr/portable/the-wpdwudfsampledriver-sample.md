@@ -2,7 +2,6 @@
 description: The WpdWudfSampleDriver Sample
 title: The WpdWudfSampleDriver Sample
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # The WpdWudfSampleDriver Sample

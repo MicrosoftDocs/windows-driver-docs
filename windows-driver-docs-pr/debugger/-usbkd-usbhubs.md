@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbhubs
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbhubs
@@ -43,8 +42,7 @@ The output is verbose. For example, **!usbhubs rv** displays verbose output abou
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is an example of verbose output from the **!usbhubs** command.
 

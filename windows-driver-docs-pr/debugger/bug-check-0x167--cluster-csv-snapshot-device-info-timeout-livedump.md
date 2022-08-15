@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x167 CLUSTER_CSV_SNAPSHOT_DEVICE_INFO_TIMEOUT_LIVEDUMP
-description: The CLUSTER_CSV_SNAPSHOT_DEVICE_INFO_TIMEOUT_LIVEDUMP bug check has a value of 0x00000167. This indicates that a Cluster  Service call to the volsnap to query snapshot information took too long.
+description: The CLUSTER_CSV_SNAPSHOT_DEVICE_INFO_TIMEOUT_LIVEDUMP live dump has a value of 0x00000167. This indicates that a Cluster  Service call to the volsnap to query snapshot information took too long.
 keywords: ["Bug Check 0x167 CLUSTER_CSV_SNAPSHOT_DEVICE_INFO_TIMEOUT_LIVEDUMP", "CLUSTER_CSV_SNAPSHOT_DEVICE_INFO_TIMEOUT_LIVEDUMP"]
 ms.date: 01/03/2019
 topic_type:
@@ -9,7 +9,6 @@ api_name:
 - CLUSTER_CSV_SNAPSHOT_DEVICE_INFO_TIMEOUT_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x167: CLUSTER\_CSV\_SNAPSHOT\_DEVICE\_INFO\_TIMEOUT\_LIVEDUMP
@@ -33,18 +32,15 @@ The CLUSTER\_CSV\_SNAPSHOT\_DEVICE\_INFO\_TIMEOUT\_LIVEDUMPP bug check has a val
 
 
 ## Cause
------
 
 A Cluster Service call to the volsnap to query snapshot information took too long.
 
-(This code can never be used for a real bugcheck.)
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 ## Resolution
-----------
  
 
 ## See Also
-----------
 
 [Troubleshooting Hangs Using Live Dump (Blog)](https://techcommunity.microsoft.com/t5/Failover-Clustering/bg-p/FailoverClustering)
 

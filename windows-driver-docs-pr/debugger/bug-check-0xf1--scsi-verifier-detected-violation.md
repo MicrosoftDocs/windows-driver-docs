@@ -9,7 +9,6 @@ api_name:
 - SCSI_VERIFIER_DETECTED_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF1: SCSI\_VERIFIER\_DETECTED\_VIOLATION
@@ -142,13 +141,11 @@ Parameter 1 identifies the type of violation.
 
  
 
-Cause
------
+## Cause
 
 See the description of each code in the Parameters section for an explanation of the cause.
 
-Resolution
-----------
+## Resolution
 
 This bug check can only occur when Driver Verifier has been instructed to monitor one or more drivers. If you did not intend to use Driver Verifier, you should deactivate it. You might consider removing the driver which caused this problem as well.
 

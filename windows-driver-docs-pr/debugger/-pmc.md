@@ -1,5 +1,5 @@
 ---
-title: pmc
+title: pmc (WinDbg)
 description: The pmc extension displays the Performance Monitor Counter (PMC) register at the specified address.
 keywords: ["Performance Monitor Counter (PMC)", "pmc Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - pmc
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pmc

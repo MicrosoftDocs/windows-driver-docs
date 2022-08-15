@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # FSCTL\_DELETE\_REPARSE\_POINT control code
@@ -45,8 +44,7 @@ Not used with this operation; set to **NULL**.
 <a href="" id="outputbufferlength"></a>*OutputBufferLength*  
 Not used with this operation; set to zero.
 
-Status block
-------------
+## Status block
 
 [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS or an appropriate NTSTATUS value such as one of the following:
 
@@ -62,8 +60,7 @@ The reparse tag specified by the caller did not match the tag of the reparse poi
 <a href="" id="status-reparse-attribute-conflict"></a>STATUS\_REPARSE\_ATTRIBUTE\_CONFLICT  
 The reparse point is a third-party reparse point, and the reparse GUID specified by the caller did not match the GUID of the reparse point to be deleted. This is an error code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

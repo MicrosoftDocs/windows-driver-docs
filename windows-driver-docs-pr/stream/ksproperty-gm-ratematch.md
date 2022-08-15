@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_GM\_RATEMATCH
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The KSPROPERTY\_GM\_RATEMATCH property is not currently supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -9,7 +9,6 @@ api_name:
 - PAGE_FAULT_BEYOND_END_OF_ALLOCATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xCD: PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION
@@ -60,15 +59,13 @@ The PAGE\_FAULT\_BEYOND\_END\_OF\_ALLOCATION bug check has a value of 0x000000CD
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
-Cause
------
+## Cause
 
 The driver allocated *n* bytes of memory from the special pool. Subsequently, the system referenced more than *n* bytes from this pool. This usually indicates a system-driver synchronization problem.
 
 For information about the special pool, consult the Driver Verifier section of the Windows Driver Kit.
 
-Remarks
--------
+## Remarks
 
 This cannot be protected by a **try - except** handler -- it can only be protected by a probe.
 

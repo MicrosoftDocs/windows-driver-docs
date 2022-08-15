@@ -1,6 +1,6 @@
 ---
 title: Bug Check 17C PDC_LOCK_WATCHDOG_LIVEDUMP
-description: The PDC_LOCK_WATCHDOG_LIVEDUMP bug check has a value of 0x0000017C. This indicates that a thread has been holding the PDC lock for too long.
+description: The PDC_LOCK_WATCHDOG_LIVEDUMP live dump has a value of 0x0000017C. This indicates that a thread has been holding the PDC lock for too long.
 keywords: ["Bug Check 17C PDC_LOCK_WATCHDOG_LIVEDUMP", "PDC_LOCK_WATCHDOG_LIVEDUMP"]
 ms.date: 01/04/2019
 topic_type:
@@ -9,12 +9,11 @@ api_name:
 - PDC_LOCK_WATCHDOG_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 17C: PDC\_LOCK\_WATCHDOG\_LIVEDUMP
 
-The PDC\_LOCK\_WATCHDOG\_LIVEDUMP bug check has a value of 0x0000017C. This indicates that a thread has been holding the PDC lock for too long.
+The PDC\_LOCK\_WATCHDOG\_LIVEDUMP live dump has a value of 0x0000017C. This indicates that a thread has been holding the PDC lock for too long.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
@@ -31,10 +30,9 @@ The PDC\_LOCK\_WATCHDOG\_LIVEDUMP bug check has a value of 0x0000017C. This indi
 
 
 ## Cause
------
 A thread has been holding the PDC lock for too long. A livedump is created to provide information to investigate. 
 
-(This code can never be used for a real bugcheck.)
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 ## Resolution
 -----
@@ -43,7 +41,6 @@ Use the debugger [!thread](-thread.md) command to display the thread holding the
 
 
 ## See Also
-----------
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

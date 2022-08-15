@@ -4,10 +4,11 @@ description: WDI_TLV_P2P_PROVISION_SERVICE_ATTRIBUTES is a TLV that contains Wi-
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_PROVISION_SERVICE_ATTRIBUTES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_PROVISION\_SERVICE\_ATTRIBUTES
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_PROVISION\_SERVICE\_ATTRIBUTES is a TLV that contains Wi-Fi Direct Provision Service attributes.
@@ -42,8 +43,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

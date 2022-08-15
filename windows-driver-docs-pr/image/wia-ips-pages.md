@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_PAGES
@@ -25,8 +24,7 @@ Valid Values: WIA\_PROP\_RANGE (zero through the maximum number of pages that th
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application reads WIA\_IPS\_PAGES to determine a document feeder's page capacity. The application sets this property to the maximum number of pages it is willing to scan in the current WIA session. The WIA minidriver creates and maintains this property.
 
@@ -60,8 +58,7 @@ If you set WIA\_IPS\_PAGES to 1, the scanner will process one of the sides of th
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,5 +1,5 @@
 ---
-title: ruleinfo
+title: ruleinfo (WinDbg)
 description: The ruleinfo command displays information about a Driver Verifier rule.
 keywords: ["ruleinfo Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ruleinfo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ruleinfo
@@ -37,8 +36,7 @@ Sub-state information about the violation. This is the fourth argument of the **
 
 ext.dll
 
-Remarks
--------
+## Remarks
 
 This command applies only to rules in the Driver Verifier extension; that is, rules that have an ID greater than or equal to 0x10000.
 

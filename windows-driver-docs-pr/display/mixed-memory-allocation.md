@@ -4,7 +4,6 @@ description: Mixed Memory Allocation
 keywords:
 - mixed memory allocation WDK DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mixed Memory Allocation
@@ -17,7 +16,7 @@ Linear and rectangular memory heaps can be mixed and matched in any fashion, if 
 
 As shown in the following figure, if sufficient memory remains below the primary surface, this area can be made into a linear heap that can be used for a back buffer.
 
-![diagram illustrating mixed memory allocation](images/ddfig6.png)
+![diagram illustrating mixed memory allocation.](images/ddfig6.png)
 
 The preceding figure shows a linear piece of memory below the primary surface (Heap 1) and a rectangular piece of memory that is reclaimed by DirectDraw to the right of the primary surface (Heap 2).
 

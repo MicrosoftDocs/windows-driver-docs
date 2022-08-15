@@ -11,7 +11,6 @@ keywords:
 - network data WDK , Ethernet driver requirements
 - data WD
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Ethernet Send and Receive Operations

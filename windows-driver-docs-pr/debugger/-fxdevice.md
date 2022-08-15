@@ -1,5 +1,5 @@
 ---
-title: fxdevice
+title: fxdevice (WinDbg)
 description: The fxdevice extension displays summary information about all Power Management Framework (PoFx) registered devices. This command can be used only during kernel-mode debugging.
 keywords: ["fxdevice Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - fxdevice
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !fxdevice
@@ -49,8 +48,7 @@ Provides the address of the FxDevice to display.
 
  
 
-Remarks
--------
+## Remarks
 
 The !fxdevice extension displays the following information when it is present on the target system.
 

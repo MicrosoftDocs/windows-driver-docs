@@ -3,7 +3,6 @@ title: State Transitions for PnP Devices
 description: State Transitions for PnP Devices
 keywords: ["PnP WDK kernel , state transitions", "Plug and Play WDK kernel , state transitions", "state transitions WDK PnP", "device states WDK PnP"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # State Transitions for PnP Devices
@@ -16,7 +15,7 @@ On a PnP system, a device transitions through various PnP states as it is config
 
 The following figure shows the PnP states for a device and how a device transitions from one state to another.
 
-![diagram illustrating device states from the plug and play perspective](images/pnp-states.png)
+![diagram illustrating device states from the plug and play perspective.](images/pnp-states.png)
 
 Starting at the top left of the previous figure, a PnP device is physically present in the system because either the user just inserted the device or the device was present at boot time. The device is not yet known to the system software.
 

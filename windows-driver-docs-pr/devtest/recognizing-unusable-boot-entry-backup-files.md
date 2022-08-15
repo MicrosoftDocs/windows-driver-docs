@@ -5,7 +5,6 @@ keywords:
 - NVRAM boot options WDK ,
 - EFI NVRAM boot options WDK ,
 ms.date: 07/02/2018
-ms.localizationpriority: medium
 ---
 
 # Recognizing Unusable Boot Entry Backup Files

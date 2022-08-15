@@ -9,11 +9,12 @@ keywords:
 - actions WDK finish-install
 - DI_FLAGSEX_FINISHINSTALL_ACTION
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How Finish-Install Actions are Processed
 
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 Finish-install actions for a device are processed in the same way by an *installer* (a class installer, class co-installer, or device co-installer), regardless of whether the installation was a [*hardware-first installation*](hardware-first-installation.md) or the installation is initiated by running an installation program such as the Found New Hardware Wizard, the Update Driver Software Wizard, or a vendor-supplied installation program (a [*software-first installation*](software-first-installation.md)).
 

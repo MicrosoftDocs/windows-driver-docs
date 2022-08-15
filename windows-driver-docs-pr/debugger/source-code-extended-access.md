@@ -4,7 +4,6 @@ description: Learn more about Source Code Extended Access
 ms.assetid: 7a81a0b2-5472-453c-8aca-bf2cfd7386e1
 keywords: ["SourceLink, DebugInfoD, debugging"]
 ms.date: 04/27/2021
-ms.localizationpriority: medium
 ---
 
 # Source Code Extended Access
@@ -52,6 +51,6 @@ The srv* allows native source link version 1 or version 2 files to be downloaded
 
 [Using a Source Server](using-a-source-server.md)
 
-[Source Link](https://docs.microsoft.com/dotnet/standard/library-guidance/sourcelink)
+[Source Link](/dotnet/standard/library-guidance/sourcelink)
 
 [ELFUTILS DEBUGINFOD](https://sourceware.org/elfutils/Debuginfod.html)

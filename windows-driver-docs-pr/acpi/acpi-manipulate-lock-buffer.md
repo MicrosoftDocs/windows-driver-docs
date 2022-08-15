@@ -1,39 +1,21 @@
 ---
 title: ACPI_MANIPULATE_LOCK_BUFFER structure
-description: The ACPI_MANIPULATE_LOCK_BUFFER macro is reserved for internal use only with an IOCTL_ACPI_ACQUIRE_GLOBAL_LOCK and IIOCTL_ACPI_RELEASE_GLOBAL_LOCK.
+description: The ACPI_MANIPULATE_LOCK_BUFFER macro is reserved for internal use only with an IOCTL_ACPI_ACQUIRE_GLOBAL_LOCK and IOCTL_ACPI_RELEASE_GLOBAL_LOCK.
 keywords: 
 - ACPI_MANIPULATE_LOCK_BUFFER structure ACPI Devices
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 08/17/2021
 ---
 
-# ACPI\_MANIPULATE\_LOCK\_BUFFER structure
+# ACPI_MANIPULATE_LOCK_BUFFER structure
 
+The ACPI_MANIPULATE_LOCK_BUFFER macro is reserved for internal use only with an [**IOCTL_ACPI_ACQUIRE_GLOBAL_LOCK**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_acquire_global_lock) and [**IOCTL_ACPI_RELEASE_GLOBAL_LOCK**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_release_global_lock).
 
-The ACPI\_MANIPULATE\_LOCK\_BUFFER macro is reserved for internal use only with an [**IOCTL\_ACPI\_ACQUIRE\_GLOBAL\_LOCK**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_acquire_global_lock) and [**IOCTL\_ACPI\_RELEASE\_GLOBAL\_LOCK**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_release_global_lock).
+## Requirements
 
-Requirements
-------------
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p>Header</p></td>
-<td>Acpiioct.h (include Acpiioct.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** acpiioct.h (include Acpiioct.h)
 
 ## See also
 
+[**IOCTL_ACPI_ACQUIRE_GLOBAL_LOCK**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_acquire_global_lock)
 
-[**IOCTL\_ACPI\_ACQUIRE\_GLOBAL\_LOCK**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_acquire_global_lock)
-
-[**IOCTL\_ACPI\_RELEASE\_GLOBAL\_LOCK**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_release_global_lock)
-
- 
-
+[**IOCTL_ACPI_RELEASE_GLOBAL_LOCK**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_release_global_lock)

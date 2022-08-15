@@ -6,7 +6,6 @@ keywords:
 - HwScsiStartIo
 - SRB_FUNCTION_PROTOCOL_COMMAND
 ms.date: 05/23/2019
-ms.localizationpriority: medium
 ---
 
 # Handling SRB_FUNCTION_PROTOCOL_COMMAND

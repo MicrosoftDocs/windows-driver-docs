@@ -4,7 +4,6 @@ description: As a set, the OID_GEN_PROTOCOL_OPTIONS OID specifies a bitmask that
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_PROTOCOL_OPTIONS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_PROTOCOL\_OPTIONS
@@ -29,8 +28,7 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 A protocol informs NDIS of its properties, which can optionally take advantage of them. If the protocol driver does not set its flags on a binding, NDIS assumes they are all clear.
 
@@ -42,8 +40,7 @@ Specifies that packets can be indicated at the worst-case estimate of packet siz
 <a href="" id="ndis-prot-option-no-loopback"></a>NDIS\_PROT\_OPTION\_NO\_LOOPBACK  
 Specifies that the protocol does not require loopback support on the binding.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

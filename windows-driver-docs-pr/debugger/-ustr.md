@@ -1,5 +1,5 @@
 ---
-title: ustr
+title: ustr (WinDbg)
 description: The ustr extension displays a UNICODE_STRING structure.
 keywords: ["strings", "UNICODE_STRING structure", "ustr Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ustr
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ustr
@@ -52,8 +51,7 @@ Specifies the hexadecimal address of the UNICODE\_STRING structure.
 
 For more information about UNICODE\_STRING structures, see the Microsoft Windows SDK documentation.
 
-Remarks
--------
+## Remarks
 
 Unicode strings are counted 16-bit character strings, as defined in the following structure:
 

@@ -3,7 +3,6 @@ title: Providing IoTimer Context Information
 description: Providing IoTimer Context Information
 keywords: ["IoTimer", "IoInitializeTimer"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Providing IoTimer Context Information

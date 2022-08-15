@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AC3\_DOWNMIX
@@ -46,7 +45,7 @@ The KSPROPERTY\_AC3\_DOWNMIX property specifies whether the program channels in 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksac3_downmix" data-raw-source="[&lt;strong&gt;KSAC3_DOWNMIX&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksac3_downmix)"><strong>KSAC3_DOWNMIX</strong></a></p></td>
 </tr>
 </tbody>
@@ -60,13 +59,11 @@ The property value (operation data) is a KSAC3\_DOWNMIX structure that specifies
 
 A KSPROPERTY\_AC3\_DOWNMIX property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 Downmixing is required if the number of channels being output by the decoder is less than the number of channels encoded in the AC-3 stream.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -84,7 +81,6 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](../stream/ksproperty-structure.md)
 
 [**KSAC3\_DOWNMIX**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksac3_downmix)
-

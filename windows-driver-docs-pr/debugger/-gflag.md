@@ -1,5 +1,5 @@
 ---
-title: gflag
+title: gflag (WinDbg)
 description: The gflag extension sets or displays the global flags.
 keywords: ["gflag Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - gflag
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !gflag
@@ -63,8 +62,7 @@ Ntsdexts.dll</td>
 
 You can also set these flags by using the Global Flags utility (Gflags.exe).
 
-Remarks
--------
+## Remarks
 
 If you do not specify any arguments, the **!gflag** extension displays the current global flag settings.
 

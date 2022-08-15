@@ -9,7 +9,6 @@ api_name:
 - HwStorPortProhibitedDDIs
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # HwStorPortProhibitedDDIs rule (storport)
@@ -19,8 +18,7 @@ This rule contains a list of WDM DDIs (excluding interlocked functions) that sho
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoReadPartitionTable**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioreadpartitiontable)  
 [**IoReadPartitionTableEx**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioreadpartitiontableex)  
@@ -254,7 +251,7 @@ Applies to
 [**KeTryToAcquireGuardedMutex**](/previous-versions/ff553307(v=vs.85))  
 [**KeTryToAcquireSpinLockAtDpcLevel**](/previous-versions/ff553317(v=vs.85))  
 [**KeWaitForMultipleObjects**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects)  
-[**KeWaitForMutexObject**](https://msdn.microsoft.com/library/windows/hardware/ff553344)  
+[**KeWaitForMutexObject**](/windows-hardware/drivers/ddi/wdm/)  
 [**KeWaitForSingleObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitforsingleobject)  
 [**MmAllocateNonCachedMemory**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmallocatenoncachedmemory)  
 [**MmAllocatePagesForMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatepagesformdl)  

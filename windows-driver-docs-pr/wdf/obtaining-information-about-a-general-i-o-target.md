@@ -5,7 +5,6 @@ keywords:
 - general I/O targets WDK KMDF , information about
 - status information WDK KMDF , general I/O targets
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Obtaining Information About a General I/O Target

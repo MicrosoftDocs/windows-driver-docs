@@ -6,7 +6,6 @@ keywords:
 - leading edge stream pointers WDK AVStream
 - trailing edge stream pointers WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Leading and Trailing Edge Stream Pointers
@@ -62,7 +61,7 @@ As a result of the frame reference count rules described in [Introduction to Str
 
 In the following diagram, the oldest frames are at the bottom. New frames arrive at the top. The number in each frame is the reference count for that frame. When the stream pointers advance, they move up in this diagram.
 
-![diagram illustrating avstream stream pointers referencing pin queues](images/cnstream4.png)
+![diagram illustrating avstream stream pointers referencing pin queues.](images/cnstream4.png)
 
 The leftmost queue shows how the minidriver can use a trailing edge to create a working set of frames. Each frame between the leading and trailing edge has a reference count of one despite the fact that no stream pointers reference these frames.
 

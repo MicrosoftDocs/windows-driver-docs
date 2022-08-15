@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # DEBUG\_REQUEST\_SET\_LOCAL\_IMPLICIT\_COMMAND\_LINE
@@ -25,8 +24,7 @@ The new implicit command line. The type of *InBuffer* is a pointer to a Unicode 
 <span id="OutBuffer"></span><span id="outbuffer"></span><span id="OUTBUFFER"></span>*OutBuffer*  
 Not used.
 
-Remarks
--------
+## Remarks
 
 The implicit command line can be used as the command line when creating a process. The process creation options ([**DEBUG\_CREATE\_PROCESS\_OPTIONS**](/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_create_process_options)) contain an option for using the implicit command line instead of a supplied command line when creating a process.
 

@@ -9,7 +9,6 @@ api_name:
 - WORKER_INVALID
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xE4: WORKER\_INVALID
@@ -98,8 +97,7 @@ Parameter 1 indicates the code position.
 
  
 
-Cause
------
+## Cause
 
 This is usually caused by a driver freeing memory which still contains an executive work item.
 

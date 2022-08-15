@@ -4,7 +4,6 @@ description: The HS_PLUGIN_DISCONNECT_FROM_NETWORK function notifies the plugin 
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_DISCONNECT_FROM_NETWORK) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_PLUGIN\_DISCONNECT\_FROM\_NETWORK function
@@ -14,8 +13,7 @@ ms.localizationpriority: medium
 
 The **HS\_PLUGIN\_DISCONNECT\_FROM\_NETWORK** function notifies the plugin that the device will be disconnected from the network.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_PLUGIN_DISCONNECT_FROM_NETWORK)(
@@ -23,19 +21,16 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *\*pNetworkIdentity* \[in\]  
 Pointer to the [**HS\_NETWORK\_IDENTITY**](hs-network-identity.md) structure for the network from which the device is to be disconnected.
 
-Return value
-------------
+## Return value
 
 This function is called by the host to communicate with the plugin and does not return a value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

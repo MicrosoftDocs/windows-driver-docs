@@ -2,7 +2,6 @@
 description: The driver for the function controller informs the operating system about the charging levels that its USB Type-C connector supports and notifies the battery subsystem when it can begin charging and the maximum amount of current the device can draw.
 title: Bring up the function controller on a USB Type-C Windows system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bring up the function controller on a USB Type-C Windows system
@@ -34,7 +33,7 @@ This topic assumes that the function controller manages a single connector (UFP)
 
 There are two drivers that manage the operations of a function controller. The pair is the Microsoft-provided USB function class extension and its client driver. The class extension reports information sent by the client driver to the operating system. The client driver communicates with the hardware by using hardware interfaces. See, [USB device-side drivers in Windows](usb-device-side-drivers-in-windows.md).
 
-![usb function controller driver](images/function-controller.png)
+![usb function controller driver.](images/function-controller.png)
 
 -   If your system uses ChipIdea and Synopsys controllers.
     1.  Load the Microsoft provided in-box client drivers for ChipIdea and Synopsys controllers.

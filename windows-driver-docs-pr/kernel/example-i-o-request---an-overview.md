@@ -3,7 +3,6 @@ title: Example I/O Request - An Overview
 description: Example I/O Request - An Overview
 keywords: ["opening file objects", "named file objects WDK kernel", "file objects WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Example I/O Request - An Overview
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 The following figure shows an overview of what happens when a subsystem opens a file object representing a data file on behalf of an application.
 
-![diagram illustrating opening a file object](images/2opendev.png)
+![diagram illustrating opening a file object.](images/2opendev.png)
 
 1.  The subsystem calls an I/O system service to open a named file.
 

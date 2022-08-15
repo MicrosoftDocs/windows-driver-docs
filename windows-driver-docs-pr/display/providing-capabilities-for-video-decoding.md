@@ -12,17 +12,34 @@ keywords:
 - D3DDDICAPS_GETDECODECOMPRESSEDBUFFERINFO
 - D3DDDICAPS_GETDECODECONFIGURATIONCOUNT
 - D3DDDICAPS_GETDECODECONFIGURATIONS
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 10/22/2021
 ---
 
-# Providing Capabilities for Video Decoding
+# Providing capabilities for video decoding
 
+## How to query video decoding capabilities
 
-When its [**GetCaps**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps) function is called, the user-mode display driver provides the following capabilities for video decoding based on the request type (which is specified in the **Type** member of the [**D3DDDIARG\_GETCAPS**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_getcaps) structure that the *GetCaps* function's *pData* parameter points to):
+To query the video decoding capabilities of a user-mode display driver (UMD), the D3D runtime calls the UMD's [**GetCaps**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps) function with one of the following [request types](/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_d3dddicaps_type) specified in the **Type** member of the [**D3DDDIARG_GETCAPS**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_getcaps) structure passed to **GetCaps**:
 
-<span id="D3DDDICAPS_GETDECODEGUIDCOUNT_and_D3DDDICAPS_GETDECODEGUIDS_request_types"></span><span id="d3dddicaps_getdecodeguidcount_and_d3dddicaps_getdecodeguids_request_types"></span><span id="D3DDDICAPS_GETDECODEGUIDCOUNT_AND_D3DDDICAPS_GETDECODEGUIDS_REQUEST_TYPES"></span>D3DDDICAPS\_GETDECODEGUIDCOUNT and D3DDDICAPS\_GETDECODEGUIDS request types  
-The user-mode display driver returns the number and a list of the following GUIDs that it supports for video acceleration (VA) decoding. The Microsoft Direct3D runtime first requests the number of GUIDs followed by a request for the list of supported GUIDs.
+* D3DDDICAPS_GETDECODEGUIDCOUNT
+* D3DDDICAPS_GETDECODEGUIDS
+* D3DDDICAPS_GETDECODERTFORMATCOUNT
+* D3DDDICAPS_GETDECODERTFORMATS
+* D3DDDICAPS_GETDECODECOMPRESSEDBUFFERINFOCOUNT
+* D3DDDICAPS_GETDECODECOMPRESSEDBUFFERINFO
+* D3DDDICAPS_GETDECODECONFIGURATIONCOUNT
+* D3DDDICAPS_GETDECODECONFIGURATIONS
+
+[**GetCaps**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps) returns the following:
+
+* The UMD's capabilities for the request type, in the buffer that the **pData** member of [**D3DDDIARG_GETCAPS**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_getcaps) points to. The UMD must allocate a buffer large enough to hold the capabilities.
+* The size (in bytes) of the buffer containing the capabilities, in **DataSize**.
+
+The following subtopics list the possible request types and their associated video decoding capabilities.
+
+## D3DDDICAPS_GETDECODEGUIDCOUNT and D3DDDICAPS_GETDECODEGUIDS request types
+
+The Direct3D runtime calls [**GetCaps**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps) to request the number of GUIDs, then calls **GetCaps** again with a request for the list of supported GUIDs. The UMD returns the number and then a list of GUIDs from the following list that it supports for video acceleration (VA) decoding. The [**D3DDDIARG_GETCAPS**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_getcaps).**pInfo** member is NULL for both of these request types.
 
 ```cpp
 DEFINE_GUID(DXVADDI_ModeMPEG2_MoComp, 0xe6a9f44b, 0x61b0, 0x4563,0x9e,0xa4,0x63,0xd2,0xa3,0xc6,0xfe,0x66);
@@ -70,14 +87,14 @@ DEFINE_GUID(DXVADDI_ModeVC1_D,   0x1b81beA3, 0xa0c7, 0x11d3,0xb9,0x84,0x00,0xc0,
 #define DXVADDI_ModeH264_VLD_FGT  DXVADDI_ModeH264_F
 ```
 
-<span id="D3DDDICAPS_GETDECODERTFORMATCOUNT_and_D3DDDICAPS_GETDECODERTFORMATS_request_types"></span><span id="d3dddicaps_getdecodertformatcount_and_d3dddicaps_getdecodertformats_request_types"></span><span id="D3DDDICAPS_GETDECODERTFORMATCOUNT_AND_D3DDDICAPS_GETDECODERTFORMATS_REQUEST_TYPES"></span>D3DDDICAPS\_GETDECODERTFORMATCOUNT and D3DDDICAPS\_GETDECODERTFORMATS request types  
-The user-mode display driver returns the number and a list of render target formats that it supports for a particular DirectX VA decode type. The Direct3D runtime specifies the GUID for a particular DirectX VA decode type in a variable that the **pInfo** member of [**D3DDDIARG\_GETCAPS**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_getcaps) points to.
+## D3DDDICAPS_GETDECODERTFORMATCOUNT and D3DDDICAPS_GETDECODERTFORMATS request types
 
-<span id="D3DDDICAPS_GETDECODECOMPRESSEDBUFFERINFOCOUNT_and_D3DDDICAPS_GETDECODECOMPRESSEDBUFFERINFO_request_types"></span><span id="d3dddicaps_getdecodecompressedbufferinfocount_and_d3dddicaps_getdecodecompressedbufferinfo_request_types"></span><span id="D3DDDICAPS_GETDECODECOMPRESSEDBUFFERINFOCOUNT_AND_D3DDDICAPS_GETDECODECOMPRESSEDBUFFERINFO_REQUEST_TYPES"></span>D3DDDICAPS\_GETDECODECOMPRESSEDBUFFERINFOCOUNT and D3DDDICAPS\_GETDECODECOMPRESSEDBUFFERINFO request types  
-The user-mode display driver returns the number of and information about the compressed buffer types that are required to accelerate the video decode. The Direct3D runtime specifies a [**DXVADDI\_DECODEINPUT**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_decodeinput) structure for a particular DirectX VA decode type in a variable that the **pInfo** member of D3DDDIARG\_GETCAPS points to. The user-mode display driver returns information about the compressed buffer types in an array of [**DXVADDI\_DECODEBUFFERINFO**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_decodebufferinfo) structures that the **pData** member of D3DDDIARG\_GETCAPS specifies.
+The Direct3D runtime specifies the GUID for a particular DirectX VA decode type in a variable that the **pInfo** member of [**D3DDDIARG_GETCAPS**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_getcaps) points to. The UMD returns the number and then a list of render target formats that it supports for a particular DirectX VA decode type.
 
-<span id="D3DDDICAPS_GETDECODECONFIGURATIONCOUNT_and_D3DDDICAPS_GETDECODECONFIGURATIONS_request_types"></span><span id="d3dddicaps_getdecodeconfigurationcount_and_d3dddicaps_getdecodeconfigurations_request_types"></span><span id="D3DDDICAPS_GETDECODECONFIGURATIONCOUNT_AND_D3DDDICAPS_GETDECODECONFIGURATIONS_REQUEST_TYPES"></span>D3DDDICAPS\_GETDECODECONFIGURATIONCOUNT and D3DDDICAPS\_GETDECODECONFIGURATIONS request types  
-The user-mode display driver returns the number and a list of accelerated decode configurations that it supports for a particular DirectX VA decode type. The Direct3D runtime specifies a DXVADDI\_DECODEINPUT structure for a particular DirectX VA decode type in a variable that the **pInfo** member of D3DDDIARG\_GETCAPS points to. The user-mode display driver returns accelerated decode configurations in an array of [**DXVADDI\_CONFIGPICTUREDECODE**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_configpicturedecode) structures that the **pData** member of D3DDDIARG\_GETCAPS specifies.
+## D3DDDICAPS_GETDECODECOMPRESSEDBUFFERINFOCOUNT and D3DDDICAPS_GETDECODECOMPRESSEDBUFFERINFO request types
 
- 
+The Direct3D runtime specifies a [**DXVADDI_DECODEINPUT**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_decodeinput) structure for a particular DirectX VA decode type in a variable that the **pInfo** member of [**D3DDDIARG_GETCAPS**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_getcaps) points to. The UMD returns the number of and information about the compressed buffer types that are required to accelerate the video decode. The UMD returns information about the compressed buffer types in an array of [**DXVADDI_DECODEBUFFERINFO**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_decodebufferinfo) structures that the **pData** member of D3DDDIARG_GETCAPS specifies.
 
+## D3DDDICAPS_GETDECODECONFIGURATIONCOUNT and D3DDDICAPS_GETDECODECONFIGURATIONS request types
+
+The Direct3D runtime specifies a [**DXVADDI_DECODEINPUT**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_decodeinput) structure for a particular DirectX VA decode type in a variable that the **pInfo** member of D3DDDIARG_GETCAPS points to. The UMD returns the number and a list of accelerated decode configurations that it supports for a particular DirectX VA decode type. The UMD returns accelerated decode configurations in an array of [**DXVADDI_CONFIGPICTUREDECODE**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_configpicturedecode) structures that the **pData** member of D3DDDIARG_GETCAPS specifies.

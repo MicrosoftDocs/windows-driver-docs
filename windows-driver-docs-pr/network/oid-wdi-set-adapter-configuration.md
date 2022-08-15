@@ -4,11 +4,12 @@ description: OID_WDI_SET_ADAPTER_CONFIGURATION configures the adapter. It is an 
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_ADAPTER_CONFIGURATION Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_ADAPTER\_CONFIGURATION
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_SET\_ADAPTER\_CONFIGURATION configures the adapter. It is an optional property and can only be sent before any ports are created.
@@ -91,8 +92,7 @@ OID\_WDI\_SET\_ADAPTER\_CONFIGURATION configures the adapter. It is an optional 
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # EXT\_TDOP\_OUTPUT\_SIMPLE\_VALUE
@@ -28,8 +27,7 @@ Specifies the typed data whose value will be printed.
 <span id="Status"></span><span id="status"></span><span id="STATUS"></span>**Status**  
 Receives the status code returned by this sub-operation. This is the same as the value returned by [**Request**](request.md).
 
-Remarks
--------
+## Remarks
 
 The value is formatted and is sent to the debugger engine's [output callbacks](./using-input-and-output.md#output-callbacks).
 

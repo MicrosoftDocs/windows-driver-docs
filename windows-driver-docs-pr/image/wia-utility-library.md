@@ -2,7 +2,6 @@
 title: WIA Utility Library
 description: WIA Utility Library
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Utility Library

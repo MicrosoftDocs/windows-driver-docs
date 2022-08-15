@@ -1,5 +1,5 @@
 ---
-title: amli do
+title: amli do (WinDbg)
 description: The amli do extension displays an AML data object.
 keywords: ["amli do Windows Debugging"]
 ms.date: 09/17/2018
@@ -9,7 +9,6 @@ api_name:
 - amli do
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !amli do

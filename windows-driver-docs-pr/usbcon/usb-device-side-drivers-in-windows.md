@@ -2,7 +2,6 @@
 description: Describes the architecture of the USB function stack.
 title: USB device-side drivers in Windows
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB device-side drivers in Windows
@@ -19,7 +18,7 @@ In a single configuration device, a USB device can define one or more interfaces
 
 The USB function stack is conceptualized in this image:
 
-![usb function stack](images/usb-fn.png)
+![usb function stack.](images/usb-fn.png)
 
 **Applications and Services**
 

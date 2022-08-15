@@ -5,11 +5,10 @@ keywords:
 - display drivers WDK Windows 2000 , multiple monitors
 - multiple monitors WDK
 - multiple-monitor systems WDK Windows 2000 display
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 03/18/2022
 ---
 
-# Multiple-Monitor Support in the Display Driver
+# Multiple-Monitor Support in an XDDM Display Driver
 
 Multiple-monitor support is provided by Windows 2000 and later; therefore, display driver writers must not implement any special code to provide this support.
 

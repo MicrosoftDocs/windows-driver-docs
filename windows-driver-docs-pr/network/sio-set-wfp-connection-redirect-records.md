@@ -4,7 +4,6 @@ description: The SIO_SET_WFP_CONNECTION_REDIRECT_RECORDS socket I/O control oper
 ms.date: 08/08/2017
 keywords: 
  -SIO_SET_WFP_CONNECTION_REDIRECT_RECORDS control code Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS control code
@@ -83,8 +82,7 @@ For more information about WSK IRP handling, see [Using IRPs with Winsock Kernel
 
 The client can get the status of the IRP by checking *Irp-&gt;IoStatus.Status*. *Irp-&gt;IoStatus.Status* will be set to **STATUS\_SUCCESS** if the request is successful. Otherwise, it will contain **STATUS\_INTEGER\_OVERFLOW**, or **STATUS\_ACCESS\_DENIED** if the call is not successful.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

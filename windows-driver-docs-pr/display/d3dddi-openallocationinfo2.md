@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # D3DDDI\_OPENALLOCATIONINFO2 structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DDDI_OPENALLOCATIONINFO2 {
@@ -32,8 +30,7 @@ typedef struct _D3DDDI_OPENALLOCATIONINFO2 {
 } D3DDDI_OPENALLOCATIONINFO2;
 ```
 
-Members
--------
+## Members
 
 **hAllocation**
 
@@ -45,8 +42,7 @@ Members
 
 **Reserved**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

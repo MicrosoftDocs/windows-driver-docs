@@ -1,5 +1,5 @@
 ---
-title: reg
+title: reg (WinDbg)
 description: The reg extension displays and searches through registry data.
 keywords: ["reg Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - reg
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !reg
@@ -148,8 +147,7 @@ Kdexts.dll
 
 For information about the registry and its components, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 Here is an example. First use **!reg hivelist** to get a list of hive addresses.
 

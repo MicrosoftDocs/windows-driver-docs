@@ -2,7 +2,6 @@
 title: ESC_TWAIN_CAPABILITY Escape Code
 description: ESC_TWAIN_CAPABILITY Escape Code
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ESC\_TWAIN\_CAPABILITY Escape Code

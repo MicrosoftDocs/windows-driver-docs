@@ -3,7 +3,6 @@ title: Introduction to Thread Objects
 description: Introduction to Thread Objects
 keywords: ["thread objects WDK kernel", "system-process threads WDK kernel", "device-dedicated threads WDK kernel", "system worker threads WDK kernel", "worker threads WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Thread Objects

@@ -4,7 +4,6 @@ description: WDI_TLV_CHECKSUM_OFFLOAD_V4_RX_PARAMETERS is a TLV that contains pa
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CHECKSUM_OFFLOAD_V4_RX_PARAMETERS (0xD2) Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CHECKSUM\_OFFLOAD\_V4\_RX\_PARAMETERS (0xD2)
@@ -71,8 +70,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

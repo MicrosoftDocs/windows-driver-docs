@@ -9,7 +9,6 @@ api_name:
 - AGP_GART_CORRUPTION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x105: AGP\_GART\_CORRUPTION
@@ -57,13 +56,11 @@ The AGP\_GART\_CORRUPTION bug check has a value of 0x00000105. This indicates th
 
  
 
-Cause
------
+## Cause
 
 This bug check is typically caused by improper direct memory access (DMA) by a driver.
 
-Resolution
-----------
+## Resolution
 
 Enable Driver Verifier for any unsigned drivers. Remove them or disable them one by one until the erring driver is identified.
 

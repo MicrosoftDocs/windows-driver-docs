@@ -3,7 +3,6 @@ title: Kernel-Mode Dump Files
 description: Kernel-Mode Dump Files
 keywords: ["dump file, kernel mode"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Kernel-Mode Dump Files

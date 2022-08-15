@@ -7,7 +7,6 @@ keywords:
 - hardware codec support WDK AVStream , end of stream
 - AVStream hardware codec support WDK , handling end of stream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling End of Stream in AVStream Codecs

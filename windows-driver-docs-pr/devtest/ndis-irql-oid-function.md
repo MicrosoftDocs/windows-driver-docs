@@ -9,7 +9,6 @@ api_name:
 - Irql_OID_Function
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Irql\_OID\_Function rule (ndis)
@@ -19,8 +18,7 @@ The **Irql\_OID\_Function** rule specifies that the NDIS OID request DDIs must b
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisAllocateCloneOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatecloneoidrequest)
 [**NdisCancelOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscanceloidrequest)

@@ -1,17 +1,14 @@
 ---
 title: EFI_CHECKSIG_PROTOCOL.EfiCheckSignatureAndHash
-description: EFI_CHECKSIG_PROTOCOL.EfiCheckSignatureAndHash
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+description: Provides information about EFI_CHECKSIG_PROTOCOL.EfiCheckSignatureAndHash.
+ms.date: 09/28/2021
 ---
 
-# EFI\_CHECKSIG\_PROTOCOL.EfiCheckSignatureAndHash
+# EFI_CHECKSIG_PROTOCOL.EfiCheckSignatureAndHash
 
-
-This function verifies the signature on the catalog file in the FFU against the PK on the device. It also verifies that the hash of the table of hashes matches the hash specified in the catalog file.
+This function verifies the signature on the catalog file in the Full Flash Update (FFU) against the PK on the device. It also verifies that the hash of the table of hashes matches the hash specified in the catalog file.
 
 ## Syntax
-
 
 ```cpp
 typedef EFI_STATUS
@@ -26,74 +23,40 @@ typedef EFI_STATUS
 
 ## Parameters
 
+*This*  
+[in] A pointer to the **EFI_CHECKSIG_PROTOCOL** instance.
 
-<a href="" id="this"></a>*This*  
-\[in\] A pointer to the **EFI\_CHECKSIG\_PROTOCOL** instance.
+*pbCatalogData*  
+[in] A pointer to the catalog data.
 
-<a href="" id="pbcatalogdata"></a>*pbCatalogData*  
-\[in\] A pointer to the catalog data.
+*cbCatalogData*  
+[in] The size of the catalog data in bytes.
 
-<a href="" id="cbcatalogdata"></a>*cbCatalogData*  
-\[in\] The size of the catalog data in bytes.
+*pbHashTableData*  
+[in] A pointer to the hash table data.
 
-<a href="" id="pbhashtabledata"></a>*pbHashTableData*  
-\[in\] A pointer to the hash table data.
-
-<a href="" id="cbhashtabledata"></a>*cbHashTableData*  
-\[in\] The size of the hash table data in bytes.
+*cbHashTableData*  
+[in] The size of the hash table data in bytes.
 
 ## Return Value
 
-
 Returns one of the following status codes.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>EFI_SUCCESS</p></td>
-<td><p>The function returned successfully and the catalog signature of the hash table is valid.</p></td>
-</tr>
-<tr class="even">
-<td><p>EFI_SECURITY_VIOLATION</p></td>
-<td><p>The catalog signature or the hash table is not valid.</p></td>
-</tr>
-<tr class="odd">
-<td><p>EFI_INVALID_PARAMETER</p></td>
-<td><p>A parameter is invalid.</p></td>
-</tr>
-<tr class="even">
-<td><p>EFI_NO_MAPPING</p></td>
-<td><p>An internal error occurred; for example, the PK is provisioned incorrectly.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Return code | Description |
+|--|--|
+| EFI_SUCCESS | The function returned successfully and the catalog signature of the hash table is valid. |
+| EFI_SECURITY_VIOLATION | The catalog signature or the hash table is not valid. |
+| EFI_INVALID_PARAMETER | A parameter is invalid. |
+| EFI_NO_MAPPING | An internal error occurred; for example, the PK is provisioned incorrectly. |
 
 ## Remarks
-
 
 The call to this function is synchronous.
 
 ## Requirements
 
-
 **Header:** User generated
 
- 
+## See also
 
- 
-
-
-
-
+[Capture and apply Windows Full Flash Update (FFU) images](/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu)

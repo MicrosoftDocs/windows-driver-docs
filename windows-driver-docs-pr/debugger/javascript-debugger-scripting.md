@@ -1,8 +1,7 @@
 ---
 title: JavaScript Debugger Scripting
 description: This topic describes how to use JavaScript to create scripts that understand debugger objects and extend and customize the capabilities of the debugger.
-ms.date: 02/26/2021
-ms.localizationpriority: medium
+ms.date: 03/09/2022
 ---
 
 # JavaScript Debugger Scripting
@@ -28,7 +27,7 @@ These two topics provide additional information about working with JavaScript in
 
 ## JavaScript Scripting Video
 
-[Defrag Tools #170](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-170-Debugger-JavaScript-Scripting) - Andy and Bill demonstrate JavaScript extensibility and scripting abilities in the debugger.
+[Defrag Tools #170](/shows/defrag-tools/170-debugger-javascript-scripting) - Andy and Bill demonstrate JavaScript extensibility and scripting abilities in the debugger.
 
 
 ## <span id="Provider"></span><span id="provider"></span><span id="PROVIDER"></span>The Debugger JavaScript Provider
@@ -926,7 +925,7 @@ Start actively debugging the script using the **.scriptdebug** command.
 >>> Debug [DebuggableSample <No Position>] >
 ```
 
-Once you see the prompt *>>> Debug [DebuggableSample <No Position>] >* and a request for input, you are
+Once you see the prompt `>>> Debug [DebuggableSample <No Position>] >` and a request for input, you are
 inside the script debugger.  
 
 Use the **.help** command to display a list of commands in the JavaScript Debugging environment.
@@ -939,9 +938,9 @@ Script Debugger Commands (*NOTE* IDs are **PER SCRIPT**):
     ?? <expr>  ......................... Evaluate expression <expr> and display result
     |  ................................. List available scripts
     |<scriptid>s  ...................... Switch context to the given script
-    bc <bpid>  ......................... Clear breakpoint by specified <bpid>
-    bd <bpid>  ......................... Disable breakpoint by specified <bpid>
-    be <bpid>  ......................... Enable breakpoint by specified <bpid>
+    bc \<bpid\>  ......................... Clear breakpoint by specified \<bpid\>
+    bd \<bpid\>  ......................... Disable breakpoint by specified \<bpid\>
+    be \<bpid\>  ......................... Enable breakpoint by specified \<bpid\>
     bl  ................................ List breakpoints
     bp <line>:<column>  ................ Set breakpoint at the specified line and column
     bp <function-name>  ................ Set breakpoint at the (global) function specified by the given name

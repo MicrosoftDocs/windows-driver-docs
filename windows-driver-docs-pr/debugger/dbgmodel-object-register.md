@@ -2,7 +2,6 @@
 title: Debugger Data Model - Register Objects
 description: The registers which are used by operands within machine instructions are described by register objects.
 ms.date: 12/12/2018
-ms.localizationpriority: medium
 ---
 # Register Objects 
 ## Summary

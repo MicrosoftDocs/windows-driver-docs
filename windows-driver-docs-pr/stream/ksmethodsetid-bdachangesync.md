@@ -1,41 +1,27 @@
 ---
-title: KSMETHODSETID\_BdaChangeSync
-description: KSMETHODSETID\_BdaChangeSync
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+title: KSMETHODSETID_BdaChangeSync
+description: KSMETHODSETID_BdaChangeSync is the BDA change sync method set.
+ms.date: 10/12/2021
 ---
 
-# KSMETHODSETID\_BdaChangeSync
+# KSMETHODSETID_BdaChangeSync
 
-
-## <span id="ddk_ksmethodsetid_bdachangesync_ks"></span><span id="DDK_KSMETHODSETID_BDACHANGESYNC_KS"></span>
-
-
-KSMETHODSETID\_BdaChangeSync is the BDA change sync method set. It is used to coordinate a list of property requests on a filter and its pins and nodes.
+**KSMETHODSETID_BdaChangeSync** is the BDA change sync method set. It is used to coordinate a list of property requests on a filter and its pins and nodes.
 
 The following methods are available:
 
-<span id="KSMETHOD_BDA_START_CHANGES"></span><span id="ksmethod_bda_start_changes"></span>[**KSMETHOD\_BDA\_START\_CHANGES**](ksmethod-bda-start-changes.md)  
+[**KSMETHOD_BDA_START_CHANGES**](ksmethod-bda-start-changes.md)  
 Resets a change list and starts keeping track of a new set of changes.
 
-<span id="KSMETHOD_BDA_CHECK_CHANGES"></span><span id="ksmethod_bda_check_changes"></span>[**KSMETHOD\_BDA\_CHECK\_CHANGES**](ksmethod-bda-check-changes.md)  
+[**KSMETHOD_BDA_CHECK_CHANGES**](ksmethod-bda-check-changes.md)  
 Determines whether a list of requested changes will work.
 
-<span id="KSMETHOD_BDA_COMMIT_CHANGES"></span><span id="ksmethod_bda_commit_changes"></span>[**KSMETHOD\_BDA\_COMMIT\_CHANGES**](ksmethod-bda-commit-changes.md)  
+[**KSMETHOD_BDA_COMMIT_CHANGES**](ksmethod-bda-commit-changes.md)  
 Commits a list of requested changes.
 
-<span id="KSMETHOD_BDA_GET_CHANGE_STATE"></span><span id="ksmethod_bda_get_change_state"></span>[**KSMETHOD\_BDA\_GET\_CHANGE\_STATE**](ksmethod-bda-get-change-state.md)  
+[**KSMETHOD_BDA_GET_CHANGE_STATE**](ksmethod-bda-get-change-state.md)  
 Determines the current change state for a filter.
 
-### Comments
+## Comments
 
 This method set is implemented on filters. The network provider filter can use this method set to begin a list of changes, make the changes, then commit them all at once.
-
- 
-
- 
-
-
-
-
-

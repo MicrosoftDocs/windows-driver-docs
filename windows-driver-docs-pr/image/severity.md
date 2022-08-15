@@ -8,17 +8,14 @@ api_name:
 - wscn Severity
 api_type:
 - Schema
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 09/28/2021
 ---
 
 # Severity element
 
-
 The required **Severity** element specifies the severity level of the current [**DeviceCondition**](devicecondition.md) or [**ConditionHistoryEntry**](conditionhistoryentry.md) element.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Severity>
@@ -26,74 +23,32 @@ Usage
 </wscn:Severity>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. One of the following values:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Term</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><span id="Informational"></span><span id="informational"></span><span id="INFORMATIONAL"></span>Informational</p></td>
-<td><p>This condition is purely for user information and has no noticeable effect on the image acquisition process.</p></td>
-</tr>
-<tr class="even">
-<td><p><span id="Warning"></span><span id="warning"></span><span id="WARNING"></span>Warning</p></td>
-<td><p>This condition is not currently affecting processing, but the condition might become Critical if it is not attended to.</p></td>
-</tr>
-<tr class="odd">
-<td><p><span id="Critical"></span><span id="critical"></span><span id="CRITICAL"></span>Critical</p></td>
-<td><p>The device cannot continue processing until this condition is resolved.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Term | Description |
+|--|--|
+| Informational | This condition is purely for user information and has no noticeable effect on the image acquisition process. |
+| Warning | This condition is not currently affecting processing, but the condition might become Critical if it is not attended to. |
+| Critical | The device cannot continue processing until this condition is resolved. |
 
 ## Child elements
-
 
 There are no child elements.
 
 ## Parent elements
 
+| Element |
+|--|
+| [**ConditionHistoryEntry**](conditionhistoryentry.md) |
+| [**DeviceCondition**](devicecondition.md) |
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="conditionhistoryentry.md" data-raw-source="[&lt;strong&gt;ConditionHistoryEntry&lt;/strong&gt;](conditionhistoryentry.md)"><strong>ConditionHistoryEntry</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="devicecondition.md" data-raw-source="[&lt;strong&gt;DeviceCondition&lt;/strong&gt;](devicecondition.md)"><strong>DeviceCondition</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
-Remarks
--------
+## Remarks
 
 The WSD Scan Service determines the **Severity** level that is assigned to each error condition.
 
@@ -101,17 +56,6 @@ You can both extend and subset the allowed values for this element.
 
 ## See also
 
-
 [**ConditionHistoryEntry**](conditionhistoryentry.md)
 
 [**DeviceCondition**](devicecondition.md)
-
- 
-
- 
-
-
-
-
-
-

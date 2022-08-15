@@ -9,7 +9,6 @@ api_name:
 - SpDuplex
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # SpDuplex rule (storport)
@@ -19,8 +18,7 @@ This rule verifies that this miniport is in **Full Duplex** mode. Any driver bui
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

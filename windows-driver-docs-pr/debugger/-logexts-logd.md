@@ -9,7 +9,6 @@ api_name:
 - logexts.logd
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !logexts.logd
@@ -49,8 +48,7 @@ The **!logexts.logd** extension disables logging.
 
 For more information, see [Logger and LogViewer](logger-and-logviewer.md).
 
-Remarks
--------
+## Remarks
 
 This will cause all API hooks to be removed in an effort to allow the program to run freely. COM hooks are not removed, because they cannot be re-enabled at will.
 

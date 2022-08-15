@@ -9,7 +9,6 @@ api_name:
 - TOO_MANY_RECURSIVE_FAULTS
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x11E: TOO\_MANY\_RECURSIVE\_FAULTS

@@ -2,7 +2,6 @@
 title: Sleep Tests (Device Fundamentals)
 description: The Device Fundamentals Sleep tests run I/O and PnP operations on the specified devices, before and after, or during system sleep state transitions.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sleep Tests (Device Fundamentals)

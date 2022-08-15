@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT
@@ -43,7 +42,7 @@ The **KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT** property holds the result data fo
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sounddetector_patternheader" data-raw-source="[&lt;strong&gt;SOUNDDETECTOR_PATTERNHEADER&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sounddetector_patternheader)"><strong>SOUNDDETECTOR_PATTERNHEADER</strong></a></p></td>
 </tr>
 </tbody>
@@ -55,13 +54,11 @@ The **KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT** property holds the result data fo
 
 A [**SOUNDDETECTOR\_PATTERNHEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sounddetector_patternheader) structure followed by the result data payload.
 
-Remarks
--------
+## Remarks
 
 The result data includes a [**SOUNDDETECTOR\_PATTERNHEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sounddetector_patternheader) identifying the format of the result data as well as the OEMDLLCOM object to process the result data.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -89,5 +86,4 @@ Requirements
 
 [**SOUNDDETECTOR\_PATTERNHEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sounddetector_patternheader)
 
-[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
-
+[**KSPROPERTY**](../stream/ksproperty-structure.md)

@@ -2,7 +2,6 @@
 title: WIA Driver Error Handling and Recovery
 description: WIA Driver Error Handling and Recovery
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Driver Error Handling and Recovery

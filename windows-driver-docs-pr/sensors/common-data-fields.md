@@ -2,7 +2,6 @@
 title: Common data fields
 description: This topic shows the common data fields that are included in all sensor-specific data fields.
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Sensor data fields

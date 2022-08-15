@@ -9,7 +9,6 @@ api_name:
 - minipkd.adapter
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !minipkd.adapter
@@ -52,8 +51,7 @@ Specifies the address of an adapter.
 
 For more information, see [SCSI Miniport Debugging](scsi-miniport-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The address of an adapter can be found in the **DevExt** field of the [**!minipkd.adapters**](-minipkd-adapters.md) display.
 

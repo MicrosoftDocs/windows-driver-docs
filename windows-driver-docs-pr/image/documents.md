@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Documents element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **Documents** element contains the actual scan characteristics that are used during image acquisition, plus a collection of all **Document** elements that the scan job contains.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Documents>
@@ -26,8 +24,7 @@ Usage
 </wscn:Documents>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 

@@ -2,7 +2,6 @@
 title: Generating OID Requests from an NDIS Protocol Driver
 description: Generating OID Requests from an NDIS Protocol Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Generating OID Requests from an NDIS Protocol Driver
@@ -15,7 +14,7 @@ To originate an OID request to underlying drivers, a protocol calls the [**NdisO
 
 The following figure illustrates an OID request that is originated by a protocol driver.
 
-![diagram illustrating an oid request originated by a protocol driver](images/protocolrequest.png)
+![diagram illustrating an oid request originated by a protocol driver.](images/protocolrequest.png)
 
 After a protocol driver calls the [**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) function, NDIS calls the request function of the next underlying driver. For more information about how a miniport driver handles OID requests, see [OID Requests for an Adapter](miniport-adapter-oid-requests.md). For more information about how a filter driver handles OID requests, see [Filter Module OID Requests](filter-module-oid-requests.md).
 
@@ -23,7 +22,7 @@ To complete synchronously, **NdisOidRequest** returns NDIS\_STATUS\_SUCCESS or a
 
 If **NdisOidRequest** returns NDIS\_STATUS\_PENDING, NDIS calls the [**ProtocolOidRequestComplete**](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_oid_request_complete) function after the underlying drivers complete the OID request. In this case, NDIS passes the results of the request at the *OidRequest* parameter of *ProtocolOidRequestComplete*. NDIS passes the final status of the request at the *Status* parameter of *ProtocolOidRequestComplete*.
 
-If **NdisOidRequest** returns NDIS\_STATUS\_SUCCESS, it returns the results of a query request in the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure at the *OidRequest* parameter. In this case, NDIS does not call the *ProtocolOidRequestComplete* function.
+If **NdisOidRequest** returns NDIS\_STATUS\_SUCCESS, it returns the results of a query request in the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure at the *OidRequest* parameter. In this case, NDIS does not call the *ProtocolOidRequestComplete* function.
 
 To determine what information was successfully handled by an underlying driver, protocol drivers that issue OID requests must check the value in the **SupportedRevision** member in the NDIS\_OID\_REQUEST structure after the OID request returns. For more information about NDIS version information, see [Specifying NDIS Version Information](specifying-ndis-version-information.md).
 

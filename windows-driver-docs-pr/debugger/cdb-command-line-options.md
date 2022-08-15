@@ -9,7 +9,6 @@ api_name:
 - CDB Command-Line Options
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CDB Command-Line Options

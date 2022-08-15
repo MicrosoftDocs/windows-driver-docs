@@ -3,7 +3,6 @@ title: Using Common-Buffer System DMA
 description: Using Common-Buffer System DMA
 keywords: ["system DMA WDK kernel , common buffer", "common buffer DMA WDK kernel", "DMA transfers WDK kernel , common buffer", "AllocateCommonBuffer", "auto-initialize mode WDK DMA", "continuous DMA WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using Common-Buffer System DMA
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 A driver that uses a system DMA controller's auto-initialize mode must allocate memory for a buffer into which or from which DMA transfers can be carried out. The driver calls [**AllocateCommonBuffer**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pallocate_common_buffer) to get this buffer, typically from the [*DispatchPnP*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine that handles an [**IRP\_MN\_START\_DEVICE**](./irp-mn-start-device.md) request. The following figure shows how a driver allocates the buffer and maps its virtual address range to system physical memory.
 
-![diagram illustrating how a driver allocates a common buffer for system dma](images/3hlsysbf.png)
+![diagram illustrating how a driver allocates a common buffer for system dma.](images/3hlsysbf.png)
 
 As the previous figure shows, a driver takes the following steps to allocate a buffer for system DMA:
 

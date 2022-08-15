@@ -2,7 +2,6 @@
 title: Introduction to Segmentation Filters
 description: Introduction to Segmentation Filters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Segmentation Filters
@@ -19,7 +18,7 @@ The segmentation filter can only be used by applications that support the [IStre
 
 The following figure shows the segmentation filter component running in the application's process.
 
-![diagram illustrating a segmentation filter component running in an application's process](images/wia-components-app-process.png)
+![diagram illustrating a segmentation filter component running in an application's process.](images/wia-components-app-process.png)
 
  
 

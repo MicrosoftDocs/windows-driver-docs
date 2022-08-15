@@ -4,7 +4,6 @@ description: The Hyper-V extensible switch extension issues an object identifier
 ms.date: 08/08/2017
 keywords: 
  -OID_SWITCH_PORT_PROPERTY_ENUM Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_SWITCH\_PORT\_PROPERTY\_ENUM
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 The Hyper-V extensible switch extension issues an object identifier (OID) method request of OID\_SWITCH\_PORT\_PROPERTY\_ENUM to obtain an array. This array contains the provisioned port policies that match the specified criteria. Each element in the array specifies the properties of a policy for a specified extensible switch port.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a buffer. This buffer contains the following data:
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to a buffer. This buffer contains the following data:
 
 -   An [**NDIS\_SWITCH\_PORT\_PROPERTY\_ENUM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_enum_parameters) structure that specifies the parameters for the policy enumeration of a specified port.
 
@@ -22,8 +21,7 @@ The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardwa
 
      
 
-Remarks
--------
+## Remarks
 
 Before it issues an OID method request of OID\_SWITCH\_PORT\_PROPERTY\_ENUM, the extensible switch extension must follow these guidelines:
 
@@ -64,8 +62,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -90,7 +87,7 @@ Requirements
 ****
 [*DereferenceSwitchPort*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_dereference_switch_port)
 
-[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [**NDIS\_SWITCH\_PORT\_PROPERTY\_ENUM\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_enum_info)
 

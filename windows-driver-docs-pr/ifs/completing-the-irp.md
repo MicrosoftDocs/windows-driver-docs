@@ -5,7 +5,6 @@ keywords:
 - IRP dispatch routines WDK file system , completing IRPs
 - completing I/O requests WDK file system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Completing the IRP

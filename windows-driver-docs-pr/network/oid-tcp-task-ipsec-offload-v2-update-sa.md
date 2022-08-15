@@ -4,7 +4,6 @@ description: As a set, the TCP/IP transport uses the OID_TCP_TASK_IPSEC_OFFLOAD_
 ms.date: 08/08/2017
 keywords: 
  -OID_TCP_TASK_IPSEC_OFFLOAD_V2_UPDATE_SA Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_UPDATE\_SA
@@ -18,8 +17,7 @@ As a set, the TCP/IP transport uses the OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_UPDA
 
  
 
-Remarks
--------
+## Remarks
 
 All NDIS 6.1 miniport drivers that support IPsec offload version 2 (IPsecOV2) must support this OID.
 
@@ -27,8 +25,7 @@ When a miniport driver receives this request, the driver should update the speci
 
 The miniport driver receives an [**IPSEC\_OFFLOAD\_V2\_UPDATE\_SA**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ipsec_offload_v2_update_sa) structure that contains information about the update and a pointer to the next IPSEC\_OFFLOAD\_V2\_UPDATE\_SA structure in a linked list.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

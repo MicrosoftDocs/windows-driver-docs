@@ -2,7 +2,6 @@
 title: Handling Active-Both Interrupts
 description: Handling Active-Both Interrupts
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Active-Both Interrupts

@@ -2,7 +2,6 @@
 title: Serial Controller Driver Design for SerCx2
 description: To manage your serial controller, you write a serial controller driver that performs hardware-specific tasks and communicates with SerCx2.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Serial Controller Driver Design for SerCx2

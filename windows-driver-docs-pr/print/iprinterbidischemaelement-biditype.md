@@ -12,15 +12,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaElement::BidiType method
 
 The BidiType method returns the Bidi schema element type.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT BidiType(
@@ -28,19 +26,16 @@ HRESULT BidiType(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pType* \[out, retval\]  
 The returned element type.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -6,7 +6,6 @@ keywords:
 - HwScsiStartIo
 - SRB_FUNCTION_RESET_BUS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling SRB\_FUNCTION\_RESET\_BUS

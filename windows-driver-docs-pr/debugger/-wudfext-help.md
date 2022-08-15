@@ -9,7 +9,6 @@ api_name:
 - wudfext.help
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wudfext.help

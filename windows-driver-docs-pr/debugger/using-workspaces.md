@@ -3,7 +3,6 @@ title: Using Workspaces
 description: Using Workspaces
 keywords: ["workspaces", "workspaces, overview", "WinDbg, workspaces"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using Workspaces

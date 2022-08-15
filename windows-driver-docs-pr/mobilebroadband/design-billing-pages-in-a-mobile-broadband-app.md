@@ -2,7 +2,6 @@
 title: Design billing pages in a mobile broadband app
 description: Design billing pages in a mobile broadband app
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Design billing pages in a mobile broadband app
@@ -10,11 +9,11 @@ ms.localizationpriority: medium
 
 You should provide the user with the ability to view a billing summary, billing history, make payments, or recharge the plan.
 
-![view bill page](images/mb-fig1-viewbillpage.png)
+![view bill page.](images/mb-fig1-viewbillpage.png)
 
 The **Make a payment** form should adhere to form guidelines that are described in [Design purchase flows in a mobile broadband app](design-purchase-flows-in-a-mobile-broadband-app.md). This page can be linked to from the **Billing** page for post-paid plans, and through the **Recharge now** button on the landing page for prepaid plans.
 
-![make payment form](images/mb-fig2-makepaymentform.png)
+![make payment form.](images/mb-fig2-makepaymentform.png)
 
 ## <span id="Quick_summary"></span><span id="quick_summary"></span><span id="QUICK_SUMMARY"></span>Quick summary
 

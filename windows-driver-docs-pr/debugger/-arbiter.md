@@ -1,5 +1,5 @@
 ---
-title: arbiter
+title: arbiter (WinDbg)
 description: The arbiter extension displays the current system resource arbiters and arbitrated ranges.
 keywords: ["arbiter Windows Debugging"]
 ms.date: 09/17/2018
@@ -9,7 +9,6 @@ api_name:
 - arbiter
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !arbiter
@@ -70,8 +69,7 @@ Do not display aliases.
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command.
 
-Remarks
--------
+## Remarks
 
 For each arbiter, **!arbiter** displays each allocated range of system resources, some optional flags, the PDO attached to that range (in other words, the range's owner), and the service name of this owner (if known).
 

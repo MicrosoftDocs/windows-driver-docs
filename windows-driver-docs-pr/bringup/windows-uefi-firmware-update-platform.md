@@ -1,8 +1,7 @@
 ---
 title: Windows UEFI firmware update platform
 description: Windows supports installing system and device firmware updates via driver packages that are processed using the UpdateCapsule function.
-ms.date: 05/26/2020
-ms.localizationpriority: medium
+ms.date: 08/04/2021
 ---
 
 # Windows UEFI firmware update platform
@@ -12,8 +11,11 @@ Windows supports a platform for installing system and device firmware updates vi
 The UEFI firmware update platform guidance is intended for SoC vendors and OEMs who are building hardware platforms that run Windows. The UEFI firmware update platform is supported by the following operating system versions:
 
 - Windows 8
+
 - Windows 8.1
+
 - Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
+
 - Windows 10 Mobile
 
 ## UEFI firmware update support in Windows 10
@@ -49,7 +51,8 @@ For the purposes of updating device firmware, the device firmware can be assigne
 
     It is recommended that device firmware be updated using a discrete firmware update driver package, but device firmware may also be updated with system firmware as part of a single firmware update driver package.
 
-    **Note**  UEFI should not be used to update peripheral devices. UEFI requires devices to be present during reboot to apply a firmware update which cannot be guaranteed with (external, removable) peripheral devices.
+    > [!NOTE]
+    > UEFI should not be used to update peripheral devices. UEFI requires devices to be present during reboot to apply a firmware update which cannot be guaranteed with (external, removable) peripheral devices.
 
 - Driver-updatable device firmware.
 

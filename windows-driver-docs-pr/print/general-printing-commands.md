@@ -2,7 +2,6 @@
 title: General Printing Commands
 description: General Printing Commands
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # General Printing Commands

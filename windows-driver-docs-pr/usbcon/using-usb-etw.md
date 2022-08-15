@@ -2,7 +2,6 @@
 description: This topic provides information about Activity ID GUIDs, how to add those GUIDs in the event trace providers, and view them in Netmon.
 title: Using activity ID GUIDs in USB ETW traces
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using activity ID GUIDs in USB ETW traces
@@ -18,7 +17,7 @@ While viewing combined event traces from other providers in Netmon, right-click 
 
 This image shows you related events from an application, UMDF driver, and Ucx01000.sys (one of the drivers in the USB driver stack).These events have the same activity ID GUID.
 
-![microsoft network monitor](images/netmon-activity.png)
+![microsoft network monitor.](images/netmon-activity.png)
 
 -   [How to add an activity ID GUID in an application](#how-to-add-an-activity-id-guid-in-an-application)
 -   [How to set the activity ID GUID in a UMDF driver](#how-to-set-the-activity-id-guid-in-a-umdf-driver)

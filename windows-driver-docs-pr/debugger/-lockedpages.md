@@ -9,7 +9,6 @@ api_name:
 - lockedpages
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !lockedpages
@@ -33,8 +32,7 @@ Specifies a process. If *Process* is omitted, the current process is used.
 
 Kdexts.dll
 
-Remarks
--------
+## Remarks
 
 You can stop execution at any point by pressing CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
 

@@ -12,7 +12,6 @@ keywords:
 - overriding default frame behavior WDK streaming media
 - circuits WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Frame Injection
@@ -35,7 +34,7 @@ To inject frames into the circuit, call [**KsPinSubmitFrame**](/windows-hardware
 
 The diagram below shows an AVStream filter set composed of a source filter, an *inplace* transform filter, and a rendering filter with the source injecting frames.
 
-![diagram illustrating an avstream filter set](images/inject1.png)
+![diagram illustrating an avstream filter set.](images/inject1.png)
 
  
 

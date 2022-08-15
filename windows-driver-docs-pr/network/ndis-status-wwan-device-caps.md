@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_DEVICE_CAPS notification 
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WWAN_DEVICE_CAPS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_DEVICE\_CAPS
@@ -16,11 +15,9 @@ Miniport drivers cannot use this notification to send unsolicited events.
 
 This notification uses the [**NDIS\_WWAN\_DEVICE\_CAPS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps) structure.
 
-Remarks
--------
+## Remarks
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -4,18 +4,16 @@ description: As a query, protocol drivers can use the OID_PM_PARAMETERS OID to q
 ms.date: 08/08/2017
 keywords: 
  -OID_PM_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_PM\_PARAMETERS
 
 
-As a query, protocol drivers can use the OID\_PM\_PARAMETERS OID to query the power management hardware capabilities of a network adapter that are currently enabled. After a successful return from the OID query request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure.
+As a query, protocol drivers can use the OID\_PM\_PARAMETERS OID to query the power management hardware capabilities of a network adapter that are currently enabled. After a successful return from the OID query request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure.
 
-As a set, protocol drivers can use the OID\_PM\_PARAMETERS OID to enable or disable the current hardware capabilities of a network adapter. The protocol driver provides a pointer to an [**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure in the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure.
+As a set, protocol drivers can use the OID\_PM\_PARAMETERS OID to enable or disable the current hardware capabilities of a network adapter. The protocol driver provides a pointer to an [**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure in the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure.
 
-Remarks
--------
+## Remarks
 
 Starting with NDIS 6.20, overlying protocol and filter drivers use OID\_PM\_PARAMETERS to query and set the power management hardware capabilities of a network adapter that are currently enabled.
 
@@ -44,8 +42,7 @@ The request failed because it tried to enable a capability that the underlying n
 <a href="" id="ndis-status-failure"></a>NDIS\_STATUS\_FAILURE  
 The request failed for reasons other than the preceding reasons.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -67,7 +64,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters)
 

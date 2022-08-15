@@ -7,88 +7,17 @@ keywords:
 - notifications WDK WHEA
 - WHEA WDK , registering for event notifications
 - Windows Hardware Error Architecture WDK , registering for event notifications
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 02/03/2022
 ---
 
 # Registering for Notification of Hardware Error Events
 
+To register to be notified about new hardware error events, an application creates a subscription to all events that are raised by the **Microsoft-Windows-Kernel-WHEA/Errors** channel.
 
-To register to be notified about new hardware error events, an application creates a subscription to all events that are raised by the WHEA provider. The name of the WHEA provider is **Microsoft-Windows-Kernel-WHEA**.
+This channel is recommended for server scenarios. While the data is not immediately human readable, it is an ACPI/UEFI-defined [Common Platform Error Record (CPER)](./error-records.md).
+In comparison with the **Microsoft-Windows-WHEA-Logger** provider, this format provides much more detail on the exact specifics of each hardware error event.
 
-The channel to which the WHEA provider raises the hardware error events is as follows:
-
--   The **System** channel (Windows Vista).
-
--   The **Microsoft-Windows-Kernel-WHEA** channel (Windows Server 2008 and Windows Vista SP1).
-
--   The **Microsoft-Windows-Kernel-WHEA/Errors** channel (Windows 7 and later versions).
-
-### Windows Vista
-
-The following code example shows how to register for the notification of new hardware error events for this version of Windows.
-
-```cpp
-// Prototype for the notification callback function
-DWORD WINAPI HwErrorEventCallback(
-  EVT_SUBSCRIBE_NOTIFY_ACTION Action,
-  PVOID Context,
-  EVT_HANDLE EventHandle
-  );
-
-// Function to create a subscription to all hardware error
-// events that are raised by the WHEA provider.
-EVT_HANDLE SubscribeHwErrorEvents(VOID)
-{
-  EVT_HANDLE SubHandle;
-
-  // Create a subscription to all events that are sent to
-  // the System channel by the WHEA provider.
-  SubHandle =
-    EvtSubscribe(
-      NULL,
-      NULL,
-      L"System", 
-      L"*[System/Provider[@Name=\"Microsoft-Windows-Kernel-WHEA\"]]",
-      NULL,
-      NULL,
-      HwErrorEventCallback,
-      EvtSubscribeToFutureEvents
-      );
-
-   // Return the subscription handle
-   return SubHandle;
-}
-
-// Notification callback function
-DWORD WINAPI HwErrorEventCallback(
-  EVT_SUBSCRIBE_NOTIFY_ACTION Action,
-  PVOID Context,
-  EVT_HANDLE EventHandle
-  )
-{
-  // Check the action
-  if (Action == EvtSubscribeActionDeliver) {
-
-    // Process the hardware error event
-    ProcessHwErrorEvent(EventHandle);
-  }
-
-  // Return success status
-  return ERROR_SUCCESS;
-}
-
-// Function to terminate the subscription
-VOID UnsubscribeHwErrorEvents(EVT_HANDLE SubHandle)
-{
-  // Close the subscription handle
-  EvtClose(SubHandle);
-}
-```
-
-### Windows Server 2008, Windows Vista SP1 and later versions
-
-The following code example shows how to register for the notification of new hardware error events for these versions of Windows.
+The following code example shows how to register for the notification of new hardware error events.
 
 ```cpp
 // Prototype for the notification callback function
@@ -162,9 +91,5 @@ VOID UnsubscribeHwErrorEvents(EVT_HANDLE SubHandle)
 }
 ```
 
-**Note**  All of the **Evt*Xxx*** functions and the EVT\_*XXX* data types that were used in the previous examples are documented in the [Windows Event Log](/windows/win32/wes/windows-event-log) section in the Microsoft Windows SDK documentation.
-
- 
-
- 
-
+> [!NOTE]
+> All of the **Evt*Xxx*** functions and the EVT\_*XXX* data types that were used in the previous examples are documented in the [Windows Event Log](/windows/win32/wes/windows-event-log) section in the Microsoft Windows SDK documentation.

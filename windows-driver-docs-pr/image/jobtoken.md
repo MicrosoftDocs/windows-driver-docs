@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # JobToken element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **JobToken** element contains the device-created token for a new scan job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobToken>
@@ -26,13 +24,11 @@ Usage
 </wscn:JobToken>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. Any valid character string.
 
@@ -63,8 +59,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **JobToken** element is paired with the [**JobId**](jobid.md) element to uniquely represent a specific scan job. **JobToken** is passed to the scan device in the [**RetrieveImageRequest**](retrieveimagerequest.md) operation element to enable the device to verify that the scan requester actually created the scan job.
 

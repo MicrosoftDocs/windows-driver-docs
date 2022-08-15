@@ -9,7 +9,6 @@ api_name:
 - s (Set Current Process)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # |s (Set Current Process)
@@ -59,8 +58,7 @@ Specifies the process to set or display. For more information about the syntax, 
 
 For more information about other methods of displaying or controlling processes and threads, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
-Remarks
--------
+## Remarks
 
 You can specify processes only in user mode.
 

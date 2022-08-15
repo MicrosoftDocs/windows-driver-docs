@@ -3,7 +3,6 @@ title: Get all submissions
 description: This method in the Microsoft Hardware API retrieves data for all submissions of a product.
 ms.topic: article
 ms.date: 04/05/2018
-ms.localizationpriority: medium
 ---
 
 # Get all submissions
@@ -151,4 +150,4 @@ For more info, see [Error codes](get-product-data.md#error-codes).
 
 ## See also
 
-- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+- [hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

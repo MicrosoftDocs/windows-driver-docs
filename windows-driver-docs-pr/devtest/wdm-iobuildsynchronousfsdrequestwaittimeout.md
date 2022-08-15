@@ -9,7 +9,6 @@ api_name:
 - IoBuildSynchronousFsdRequestWaitTimeout
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoBuildSynchronousFsdRequestWaitTimeout rule (wdm)
@@ -19,8 +18,7 @@ The **IoBuildSynchronousFsdRequestWaitTimeout** rule reports a defect if it dete
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoBuildSynchronousFsdRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildsynchronousfsdrequest)
 [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver)

@@ -15,15 +15,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IOleCvt::DecodeUnicodeName method
 
 The **DecodeUnicodeName** property enables an ASP Web page to translate a Unicode string to its ANSI equivalent.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 [propget, id(3), helpstring("property DecodeUnicodeName")] HRESULT DecodeUnicodeName(
@@ -32,8 +30,7 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrSrcName* \[in\]  
 Caller-supplied Unicode string to be translated.
@@ -41,8 +38,7 @@ Caller-supplied Unicode string to be translated.
 *pVal* \[out, retval\]  
 Caller-supplied pointer to a location to receive the translated string.
 
-Return value
-------------
+## Return value
 
 <table>
 <colgroup>
@@ -76,8 +72,7 @@ strEncodedPrinter = Request ( "eprinter" )
 strPrinter = OleCvt.DecodeUnicodeName (strEncodedPrinter)
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

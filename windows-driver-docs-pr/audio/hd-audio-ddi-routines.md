@@ -2,7 +2,6 @@
 title: HD Audio DDI Routines
 description: HD Audio DDI Routines
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # HD Audio DDI Routines

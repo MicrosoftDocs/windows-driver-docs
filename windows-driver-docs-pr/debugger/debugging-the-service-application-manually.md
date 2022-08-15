@@ -2,7 +2,6 @@
 title: Debugging the Service Application Manually
 description: Debugging the Service Application Manually
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging the Service Application Manually

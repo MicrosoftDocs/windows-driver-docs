@@ -4,7 +4,6 @@ description: An overlying driver or user-mode application issues an object ident
 ms.date: 08/08/2017
 keywords: 
  -OID_NIC_SWITCH_ENUM_VPORTS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_NIC\_SWITCH\_ENUM\_VPORTS
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 An overlying driver or user-mode application issues an object identifier (OID) method request of OID\_NIC\_SWITCH\_ENUM\_VPORTS to obtain an array. Each element in the array specifies the attributes of a virtual port (VPort) that has been created on a network adapter's NIC switch.
 
-After a successful return from this OID query request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a buffer that contains the following:
+After a successful return from this OID query request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to a buffer that contains the following:
 
 -   An [**NDIS\_NIC\_SWITCH\_VPORT\_INFO\_ARRAY**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_info_array) structure that defines the number of elements within the array.
 
@@ -22,8 +21,7 @@ After a successful return from this OID query request, the **InformationBuffer**
 
      
 
-Remarks
--------
+## Remarks
 
 Overlying drivers and user-mode applications issue OID query requests of OID\_NIC\_SWITCH\_ENUM\_VPORTS to enumerate the VPorts that are allocated on a network adapter's NIC switch.
 
@@ -79,7 +77,7 @@ When NDIS handles the OID\_NIC\_SWITCH\_ENUM\_VPORTS request, it returns one of 
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_INVALID_LENGTH</p></td>
-<td><p>The information buffer was too short. NDIS sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer was too short. NDIS sets the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="odd">
 <td><p>NDIS_STATUS_FAILURE</p></td>
@@ -90,8 +88,7 @@ When NDIS handles the OID\_NIC\_SWITCH\_ENUM\_VPORTS request, it returns one of 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -118,7 +115,7 @@ Requirements
 
 [**NDIS\_NIC\_SWITCH\_VPORT\_INFO\_ARRAY**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_info_array)
 
-[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [OID\_NIC\_SWITCH\_CREATE\_SWITCH](oid-nic-switch-create-switch.md)
 

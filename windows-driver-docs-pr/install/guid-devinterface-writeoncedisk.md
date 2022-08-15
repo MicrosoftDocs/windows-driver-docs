@@ -10,7 +10,6 @@ api_location:
 - Ntddstor.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,15 +43,13 @@ The GUID_DEVINTERFACE_WRITEONCEDISK [device interface class](./overview-of-devic
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied [storage drivers](../storage/storage-drivers.md) register instances of GUID_DEVINTERFACE_WRITEONCEDISK to notify the operating system and application of the presence of write-once disks, such as a CD-R.
 
 [**WriteOnceDiskClassGuid**](writeoncediskclassguid.md) is an obsolete identifier for the GUID_DEVINTERFACE_WRITEONCEDISK device interface class. For new instances of this class, use GUID_DEVINTERFACE_WRITEONCEDISK instead.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

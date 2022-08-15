@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_DOCUMENT\_HANDLING\_SELECT
@@ -25,8 +24,7 @@ Valid Values: WIA\_PROP\_FLAG
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 An application reads the WIA\_IPS\_DOCUMENT\_HANDLING\_SELECT property to determine the current acquisition source of a scanner, or the application writes this property to set the source and mode of the scanner. In addition, applications use this property to enable and disable duplexer functionality. The WIA minidriver creates and maintains this property.
 
@@ -136,8 +134,7 @@ The following table describes the constants that are valid with Windows XP but a
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

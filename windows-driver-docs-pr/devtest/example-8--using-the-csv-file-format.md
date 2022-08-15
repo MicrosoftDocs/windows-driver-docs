@@ -5,7 +5,6 @@ keywords:
 - Tracefmt WDK , CSV format
 - CSV format WDK Tracefmt
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example 8: Using the CSV File Format

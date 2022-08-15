@@ -4,7 +4,6 @@ description: Details of the IPrintCoreHelper Interface
 keywords:
 - IPrintCoreHelper
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Details of the IPrintCoreHelper Interface

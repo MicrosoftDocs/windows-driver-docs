@@ -4,10 +4,11 @@ description: OID_WDI_GET_NEXT_ACTION_FRAME_DIALOG_TOKEN requests the DialogToken
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_GET_NEXT_ACTION_FRAME_DIALOG_TOKEN Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_GET\_NEXT\_ACTION\_FRAME\_DIALOG\_TOKEN
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_GET\_NEXT\_ACTION\_FRAME\_DIALOG\_TOKEN requests the DialogToken to be used in the next Action frame.
@@ -31,8 +32,7 @@ No additional parameters. The data in the header is sufficient.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

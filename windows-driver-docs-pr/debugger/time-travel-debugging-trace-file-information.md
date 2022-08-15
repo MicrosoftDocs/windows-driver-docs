@@ -2,12 +2,11 @@
 title: Time Travel Debugging - Working with Trace Files 
 description: This section describes how to work with time travel trace files 
 ms.date: 01/22/2020
-ms.localizationpriority: medium
 ---
 
 # Time Travel Debugging - Working with Trace Files
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
+![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png) 
 
 This section describes how to work with files created and consumed by time travel debugging.
 
@@ -26,7 +25,7 @@ Time Travel Debugging uses the following files to debug code execution.
 
 Trace .RUN files can be opened after they are recorded using **File** > **Start debugging** > **Open trace file**.
 
-![File open options showing open trace option highlighted](images/ttd-start-debugging-options.png) 
+![File open options showing open trace option highlighted.](images/ttd-start-debugging-options.png) 
 
 All of the trace output files are stored in the users document folder by default. For example, for User1 the TTD files would be stored here:
 
@@ -37,7 +36,7 @@ You can change the location of the trace files when you start to record. For mor
 
 The most recently used list of files allows you to quickly access previously used target configuration files. Any recently used trace files or dump files are listed as well.
 
-![File open list of .run trace files showing five recently used trace files](images/ttd-recent-trace-files.png) 
+![File open list of .run trace files showing five recently used trace files.](images/ttd-recent-trace-files.png) 
 
 ## Index .IDX files  
 
@@ -96,7 +95,7 @@ TTD does not set a maximum size of trace files to allow for complex long running
 
 ### Trace file size factors
 
-It is not possible to provide and exact estimate of the the trace file size but there are a few rules of thumb to help you understand TTD file sizes.
+It is not possible to provide and exact estimate of the trace file size but there are a few rules of thumb to help you understand TTD file sizes.
 
 The following factors can affect the size of the trace file:
 

@@ -4,7 +4,6 @@ description: As a query, NDIS and overlying drivers use the OID_GEN_BYTES_XMIT O
 ms.date: 11/01/2019
 keywords: 
  -OID_GEN_BYTES_XMIT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_BYTES\_XMIT
@@ -20,8 +19,7 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Not requested. (see Remarks section)
 
-Remarks
--------
+## Remarks
 
 NDIS handles this OID for miniport drivers. See the [OID\_GEN\_STATISTICS](oid-gen-statistics.md) OID for more information about statistics.
 
@@ -29,8 +27,7 @@ The total byte count is the sum of the transmit-directed byte count, transmit-mu
 
 The count is identical to the *ifOutOctets* counter described in RFC 2863.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

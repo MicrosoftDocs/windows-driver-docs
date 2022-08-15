@@ -2,7 +2,6 @@
 description: This topic provides information about steps you can try when a data transfer to a USB pipe fails. The mechanisms described in this topic cover abort, reset, and cycle port operations on bulk, interrupt, and isochronous pipes.
 title: How to recover from USB pipe errors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q3
 ---
 
@@ -59,8 +58,7 @@ To clear an error condition, start with the reset-pipe operation and perform mor
 
 -   The client driver must have a handle to the framework target pipe object. For more information, see [How to enumerate USB pipes](how-to-get-usb-pipe-handles.md).
 
-Instructions
-------------
+## Instructions
 
 ### <a href="" id="determine-the-cause-of-the-error-condition"></a>Step 1: Determine the cause of the error condition
 

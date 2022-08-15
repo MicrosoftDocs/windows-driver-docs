@@ -1,8 +1,7 @@
 ---
 description: The MUTT Connection Exerciser Type-C (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board.
 title: Test USB Type-C systems with USB Type-C ConnEx
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 06/14/2022
 ---
 
 # Test USB Type-C systems with USB Type-C ConnEx
@@ -44,7 +43,7 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 
     The device has one male USB Type-C port (labeled **J1**) to which the SUT is connected. The device also has four other USB ports (labeled **J2**, **J3**, **J4**, **J6**) to which devices can be attached that act as peripherals to the SUT. The device monitors amperage and voltage being drawn from the SUT. You can buy the necessary hardware from [MCCI](https://mcci.com/usb/dev-tools/3201-enhanced-type-c-connection-exerciser/).
 
-    ![USB Type-C ConnEx Connection Exerciser device](images/newconnexc.jpg)
+    ![USB Type-C ConnEx Connection Exerciser device.](images/newconnexc.jpg)
 
 - **Peripheral USB devices**
 
@@ -70,17 +69,17 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 
 - **Arduino Mega 2560 R3**
 
-    [Arduino Mega 2560 R3](https://store.arduino.cc/usa/mega-2560-r3) is used as the microcontroller for the test setup.
+    [Arduino Mega 2560 R3](https://store-usa.arduino.cc/products/arduino-mega-2560-rev3) is used as the microcontroller for the test setup.
 
     ![Shows the Arduino Mega 2560 R3 board.](images/arduino.png)
 
-- **Power adapter for the [Arduino Mega 2560 R3](https://store.arduino.cc/usa/mega-2560-r3) microcontroller**.
+- **Power adapter for the [Arduino Mega 2560 R3](https://store-usa.arduino.cc/products/arduino-mega-2560-rev3) microcontroller**.
 
 - **USB Type-C ConnEx**
 
     The shield has one male USB Type-C port (labeled **J1**) to which the SUT is connected. The shield also has four other USB ports (labeled **J2**, **J3**, **J4**, **J6**) to which devices can be attached that act as peripherals to the SUT. The shield monitors amperage and voltage being drawn from the SUT. You can buy this board from [MCCI](https://store.mcci.com/products/model-3101-type-c-connection-exerciser?variant=17120953798) or [JJG Technologies](http://www.jjgtechnologies.com/typecconne.htm).
 
-    ![USB Type-C ConnEx board](images/connexc-top.png)
+    ![USB Type-C ConnEx board.](images/connexc-top.png)
 
 - **USB A-to-B cable**
 
@@ -109,11 +108,11 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 
     - DTMF shield to run tests on SUTs with a single USB Type-C port. DTMF provides the ability to control the shield from a single-port device with an audio jack after the initial flash of the firmware has been completed.
 
-        ![dtmf shield](images/dtmf.png)
+        ![dtmf shield.](images/dtmf.png)
 
     - 4-pin male-to-male audio cable used to connect the DTMF shield to the SUT. This allows the SUT to control the USB Type-C shield during testing.
 
-        ![3.5mm audio jack](images/audio-jack.png)
+        ![3.5mm audio jack.](images/audio-jack.png)
 
 ## Software requirements
 
@@ -121,7 +120,7 @@ Make sure you meet these requirements:
 
 - Your SUT must have the version of the Windows operating system with which you want to test interoperability.
 - The proxy controller must be running Windows 10.
-- [![download the mutt software package](images/download.png)](https://go.microsoft.com/fwlink/p/?LinkId=786621) and install the latest MUTT software package on the proxy controller.
+- [![download the mutt software package.](images/download.png)](https://go.microsoft.com/fwlink/p/?LinkId=786621) and install the latest MUTT software package on the proxy controller.
  The package is a suite of tools used to run tests with USB Type-C ConnEx. It includes utilities to update the firmware, switch between the peripheral ports, and send requests to simulate test cases. It also contains test driver packages that test the functionality of the buses, its controller, and devices connected to the bus.
 
 - For UCSI based systems we strongly recommended testing with some additional settings to help discover UCSI firmware bugs. This setting will make UCSI firmware issues discoverable and is highly recommended for testing purposes only. Please see [Debugging USCI firmware failures](https://techcommunity.microsoft.com/t5/Microsoft-USB-Blog/Debugging-UCSI-firmware-failures/ba-p/283226) in this blog post.
@@ -173,7 +172,7 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
 Follow this procedure to set up your test environment.
 
-![USB Type-C ConnEx configuration](images/connexc.png)
+![USB Type-C ConnEx configuration.](images/connexc.png)
 
 The configuration should be similar to this image. Note that the USB Type-C port on the microcontroller provides control over USB Type-C ConnEx when connected to a PC.
 
@@ -188,15 +187,15 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
      1. Align the pins of the USB Type-C shield with the receptors on the microcontroller by making sure that the boards are level to each other.
 
-        ![align pins of the USB Type-C ConnEx](images/connexc-align.png)
+        ![align pins of the USB Type-C ConnEx.](images/connexc-align.png)
 
      2. Gently press the two boards together. Be careful not to bend the pins on the shield.
 
-        ![assembling the USB Type-C ConnEx](images/connexc-connect.png)
+        ![assembling the USB Type-C ConnEx.](images/connexc-connect.png)
 
         Your assembled unit should be similar to this image:
 
-        ![connected connex-c board](images/connexc-connect1.png)
+        ![connected connex-c board.](images/connexc-connect1.png)
 
 2. Power the USB Type-C ConnEx from the attached microcontroller by using either the USB Type-B (connected to the proxy controller) or from an external power adapter. The LCD display is similar to this image:
 
@@ -218,11 +217,11 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
     **Caution**  The **J1** connector requires additional support when connecting the SUT. The connector is not sturdy enough to sustain the weight of a device or by itself.
 
-    ![attaching system under test (sut)](images/connexc-connect4.png)
+    ![attaching system under test (sut).](images/connexc-connect4.png)
 
 5. Attach the peripherals to the USB ports labeled **J2**, **J3**, **J4**, **J6**.
 
-    ![attach peripherals to the USB Type-C ConnEx](images/connexc-connect7.png)
+    ![attach peripherals to the USB Type-C ConnEx.](images/connexc-connect7.png)
 
 6. Attach the proxy controller to the microcontroller.
 
@@ -230,19 +229,19 @@ In these steps, you will connect the hardware pieces, update the firmware on the
     - If the proxy controller is a mobile SUT, establish connection by using the audio port. For this connection, you need the DTMF shield.
         1. Connect the DTMF shield to the assembled unit as shown in this image:
 
-            ![dtmf attachment](images/connexc-connect6.png)
+            ![dtmf attachment.](images/connexc-connect6.png)
 
         2. Connect the audio port of the shield to the audio port on the SUT by using a 4-pin male-to-male audio cable.
 
             Your setup should be similar to this image:
 
-            ![attaching system under test (sut) with dtmf](images/connexc-connect5.png)
+            ![attaching system under test (sut) with dtmf.](images/connexc-connect5.png)
 
 7. Make sure USB Type-C ConnEx is recognized by Device Manager on the proxy controller.
     1. Right-click the Start button in the task bar and select **Device Manager**.
     2. Expand the **Ports (COM & LPT)** node and note the COM port that is used by the microcontroller. In this example, it is connected to COM 4.
 
-        ![USB Type-C ConnEx in device manager](images/connexc-connect8.png)
+        ![USB Type-C ConnEx in device manager.](images/connexc-connect8.png)
 
 ## ConnExUtil.exe
 
@@ -252,7 +251,7 @@ Here are the command line options that ConnExUtil.exe supports for controlling t
 | --- | --- | --- |
 | **Device Discovery**</br>List all devices connected to USB Type-C ConnEx | **/list** | For USB connected devices, this option lists the device instance path. For audio connected devices it shows **Audio**.</br></br>To view audio devices, use this in combination with the **/all** parameter. Lists with 1-based index that can be used for input to the **/#** parameter. |
 | **Device Selection**</br>Select all devices connected to USB Type-C ConnEx, including audio. | **/all**  | Optional.</br></br>Without this parameter, the utility addresses USB connected devices. Use this parameter only if an audio connected device is in use. Audio discovery is time consuming and disabled by default. |
-| **Device Selection**</br>Select a specific device connected to USB Type-C ConnEx ‘n’. | **/#** *n* | Optional.</br>Input *n* is a 1-based index of the available devices connected to USB Type-C ConnEx which can be viewed by using the **/list** parameter. Without this parameter, the default behavior is to run each command on all USB Type-C ConnEx boards. |
+| **Device Selection**</br>Select a specific device connected to USB Type-C ConnEx 'n'. | **/#** *n* | Optional.</br>Input *n* is a 1-based index of the available devices connected to USB Type-C ConnEx which can be viewed by using the **/list** parameter. Without this parameter, the default behavior is to run each command on all USB Type-C ConnEx boards. |
 | **Device Command** | **/setPort** *p* | Switch to the specified port *p*.</br></br>Connect a port either by specifying number (1 – 4) or by name (**J2**, **J3**, **J4**, **J6**).</br></br>0 disconnects all ports. |
 | **Device Command** | **/getPort** | Read the currently connected port. |
 | **Device Command** </br>Read amperage/voltage information. | **/volts**</br></br>**/amps**</br></br>**/version** | Read the current voltage.</br></br>Read the current amperage.</br></br>Read the device version. |
@@ -351,7 +350,7 @@ Confirms charging with USB Type-C.
 
 ## FT Case 1: Device Enumeration
 
-![ft case 1: device enumeration](images/ft1.png)
+![ft case 1: device enumeration.](images/ft1.png)
 
 | Port | Device |
 | --- | ---|
@@ -373,7 +372,7 @@ For configuration images related to step 2 -4, see [Get started...](#get-started
 
 ## FT Case 2: Alternate Mode Negotiation
 
-![ft case 2: alternate mode negotiation](images/ft2.png)
+![ft case 2: alternate mode negotiation.](images/ft2.png)
 
 | Port | Device |
 | --- | --- |
@@ -395,7 +394,7 @@ For configuration images related to step 2 -4, see [Get started...](#get-started
 
 ## FT Case 3: Charging and power delivery (PD)
 
-![ft case 3: charging and power delivery (pd)](images/ft3.png)
+![ft case 3: charging and power delivery (pd).](images/ft3.png)
 
 | Port | Device |
 | --- | --- |
@@ -430,7 +429,7 @@ For configuration images related to step 2 -4, see [Get started...](#get-started
 
 ## FT Case 4: Role Swap
 
-![ft case 4: role swap](images/ft4.png)
+![ft case 4: role swap.](images/ft4.png)
 
 | Port | Device |
 | --- | --- |
@@ -457,7 +456,7 @@ For configuration images related to step 2 -4, see [Get started...](#get-started
 
 ## ST Case 1: Device Enumeration
 
-![st case 1: device enumeration](images/ft1.png)
+![st case 1: device enumeration.](images/ft1.png)
 
 | Port | Device |
 | --- | --- |
@@ -482,7 +481,7 @@ For configuration images related to step 2 -4, see [Get started...](#get-started
 
 ## ST Case 2: Charging and power delivery (PD)
 
-![st case 2: charging and power delivery (pd)](images/ft3.png)
+![st case 2: charging and power delivery (pd).](images/ft3.png)
 
 | Port | Device |
 | --- | --- |
@@ -530,7 +529,7 @@ The following stress tests can be adapted from the SuperMUTT test documentation 
 
 The onboard LCD on the USB Type-C ConnEx displays power (volts, amps, and direction). Confirm that it matches expectations from power sources plugged in and actively enabled with the USB Type-C ConnEx .
 
-![confirming charging and power](images/connexc-connect9.png)
+![confirming charging and power.](images/connexc-connect9.png)
 
 ### Confirming device addition on desktops
 

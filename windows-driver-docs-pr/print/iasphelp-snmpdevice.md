@@ -15,15 +15,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_SNMPDevice method
 
 The **SNMPDevice** property enables an ASP Web page to obtain a printer's SNMP device index (as defined by RFC 1759).
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_SNMPDevice(
@@ -31,14 +29,12 @@ HRESULT get_SNMPDevice(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied location to receive a numeric value representing the printer's SNMP device index.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -81,8 +77,7 @@ objPrinter.Open strPrinter
 SNMPDeviceIndex = objPrinter.SNMPDevice
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

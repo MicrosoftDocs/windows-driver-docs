@@ -12,15 +12,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddBlob method
 
 The AddBlob method adds a new response of type BIDI\_BLOB to the collection.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT AddBlob(
@@ -29,8 +27,7 @@ HRESULT AddBlob(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrSchema* \[in\]  
 The schema.
@@ -38,13 +35,11 @@ The schema.
 *pArray* \[in\]  
 The array.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

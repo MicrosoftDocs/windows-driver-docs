@@ -2,7 +2,6 @@
 title: 'REMOTE_NDIS_RESET_CMPLT'
 description: 'A Remote NDIS device will respond to a REMOTE_NDIS_RESET_MSG message from the host by resetting the device and returning the status of the request in the REMOTE_NDIS_RESET_CMPLT message.'
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # REMOTE\_NDIS\_RESET\_CMPLT
@@ -55,8 +54,7 @@ A Remote NDIS device will respond to a [**REMOTE\_NDIS\_RESET\_MSG**](remote-ndi
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

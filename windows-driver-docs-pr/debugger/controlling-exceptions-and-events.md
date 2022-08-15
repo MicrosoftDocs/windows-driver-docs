@@ -3,7 +3,6 @@ title: Controlling Exceptions and Events
 description: Controlling Exceptions and Events
 keywords: ["exceptions", "exceptions, overview", "exceptions, handling", "events", "events, overview", "events, handling"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Controlling Exceptions and Events

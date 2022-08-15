@@ -6,7 +6,6 @@ keywords:
 - network INF files WDK , DDInstall.Services section
 - DDInstall.Services section WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DDInstall.Services Section in a Network INF File

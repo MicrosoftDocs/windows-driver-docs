@@ -3,7 +3,6 @@ title: Myriad of drivers that were rolled back or re-installed within 2 days of 
 description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines that were rolled back or re-installed within 2 days of installation
 ms.topic: article
 ms.date: 05/11/2020
-ms.localizationpriority: medium
 ---
 
 # Myriad of drivers that were rolled back or re-installed within 2 days of installation
@@ -21,7 +20,7 @@ This measure is tracking whether a driver is rolled back or succeeded by another
 |**Measurement criteria**|Machine count|
 |**Minimum population**|5,000 Devices|
 |**Passing criteria**|<= 10 rollbacks per 10,000 devices that installed the driver|
-|**Measure ID**|19564492|
+|**Measure ID**|33480951|
 
 ## Calculation
 

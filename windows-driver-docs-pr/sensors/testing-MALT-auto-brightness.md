@@ -1,17 +1,16 @@
 ---
-title: Testing Auto Brightness
-description: This topic describes how to test auto brightness by using the MALT (Microsoft Ambient Light Tool) tool.
-ms.date: 12/13/2018
-ms.localizationpriority: medium
+title: Testing auto brightness
+description: How to test auto brightness by using the MALT (Microsoft Ambient Light Tool) tool.
+ms.date: 07/08/2021
 ---
 
-# Testing Auto Brightness
+# Testing auto brightness
 
-This topic describes how to test auto brightness by using the MALT (Microsoft Ambient Light Tool) tool. Automatic or Adaptive Brightness refers to screen brightness set automatically by the system in response to the Ambient Light Sensor reading.
+This topic describes how to test auto brightness by using the MALT (Microsoft Ambient Light Tool) tool. Automatic or adaptive brightness refers to screen brightness set automatically by the system in response to the ambient light sensor reading.
 
 ## Set up
 
-Read through the topic [Building a Light Testing Tool (MALT)](testing-MALT-building-a-light-testing-tool.md) to ensure that you have met the requirements for the tests.
+Read through the topic [Building a light testing tool (MALT)](testing-MALT-building-a-light-testing-tool.md) to ensure that you have met the requirements for the tests.
 
 ### Configuring the SUT manually
 
@@ -31,7 +30,7 @@ We highly recommended that you use **MALT_SUT_Setup.bat** to setup MALT and the 
 
 1. Open SensorExplorer and click **MALT** on the left-hand side menu bar.
 
-    ![SensorExplorer MALT page](images/SensorExplorerMALT.png)
+    ![SensorExplorer MALT page.](images/SensorExplorerMALT.png)
 
 2. Verify the connection by clicking **Sensor Data** > **Get ambient brightness**. If MALT is properly set up, the correct lux value will be displayed; otherwise close the app, try re-uploading the Arduino program and checking the Serial Monitor.
 3. Under **Run a Test**, click **Take auto-brightness curve**.
@@ -65,7 +64,7 @@ These steps may vary if you are using a program other than Microsoft Excel 2016.
 1. In your Microsoft Excel .xlsx file, select the two columns with data: "Ambient Lux" and "Screen Lux".
 2. Click **Insert** > **Insert Scatter (X, Y) or Bubble Chart** > **Scatter with straight lines**
 
-![insert scatter plot](images/insertScatter1.png)
+![insert scatter plot.](images/insertScatter1.png)
 
 Now you have a visual representation of the auto brightness response curve measured by the MALT.
 

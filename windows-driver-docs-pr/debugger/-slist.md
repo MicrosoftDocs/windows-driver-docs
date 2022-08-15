@@ -1,5 +1,5 @@
 ---
-title: slist
+title: slist (WinDbg)
 description: The slist extension displays a singly-linked list (SList).
 keywords: ["SList (singly-linked list)", "slist Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - slist
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !slist
@@ -58,8 +57,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
  
 
-Remarks
--------
+## Remarks
 
 If you know the nature of the linked structures, the *Symbol* and *Offset* parameters are very useful. To see the difference, here are two examples; the first omits the *Symbol* and *Offset* parameters, while the second includes them.
 

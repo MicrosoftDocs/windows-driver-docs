@@ -7,7 +7,6 @@ keywords:
 - pixel shaders WDK DirectX 9.0
 - vertex shaders WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Additional Instruction Slots for Shader 3

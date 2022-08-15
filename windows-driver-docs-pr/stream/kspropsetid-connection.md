@@ -2,7 +2,6 @@
 title: KSPROPSETID\_Connection
 description: KSPROPSETID\_Connection
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_Connection

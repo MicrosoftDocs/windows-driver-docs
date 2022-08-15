@@ -10,7 +10,6 @@ api_name:
 api_type:
 - NA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DevCon DriverFiles
@@ -79,6 +78,6 @@ devcon driverfiles =media isapnp*
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 8: List all driver files](devcon-examples.md#ddk_example_8_list_all_driver_files_tools)
+[Example 8: List all driver files](devcon-examples.md#example-8-list-all-driver-files)
 
-[Example 9: List the driver files of a particular device](devcon-examples.md#ddk_example_9_list_the_driver_files_of_a_particular_device_tools)
+[Example 9: List the driver files of a particular device](devcon-examples.md#example-9-list-the-driver-files-of-a-particular-device)

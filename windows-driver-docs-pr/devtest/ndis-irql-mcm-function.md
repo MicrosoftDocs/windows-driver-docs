@@ -9,7 +9,6 @@ api_name:
 - Irql_MCM_Function
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Irql\_MCM\_Function rule (ndis)
@@ -19,8 +18,7 @@ The **Irql\_MCM\_Function** rule specifies that the NDIS MCM functions for drive
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisMCmActivateVc**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmactivatevc)
 [**NdisMCmAddPartyComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmaddpartycomplete)

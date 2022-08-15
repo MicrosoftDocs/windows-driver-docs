@@ -9,7 +9,6 @@ api_name:
 - ph (Step to Next Branching Instruction)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ph (Step to Next Branching Instruction)
@@ -75,8 +74,7 @@ Specifies the number of branching instructions that must be encountered for this
 
 For more information about related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 The **ph** command causes the target to begin executing. This execution continues until a branching instruction is reached or a breakpoint is encountered.
 

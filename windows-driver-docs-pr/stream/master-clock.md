@@ -10,7 +10,6 @@ keywords:
 - current stream time WDK DVD decoder
 - time WDK DVD decoder
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Master Clock

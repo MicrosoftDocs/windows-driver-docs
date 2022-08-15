@@ -1,6 +1,6 @@
 ---
 title: DevCon Status
-description: Displays the status (running, stopped, or disabled) of the driver for devices on the computer. Valid on local and remote computers.
+description: Displays the status (running, stopped, or disabled) of the driver for devices on the computer. 
 keywords:
 - DevCon Status Driver Development Tools
 topic_type:
@@ -9,24 +9,18 @@ api_name:
 - DevCon Status
 api_type:
 - NA
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 02/11/2022
 ---
 
 # DevCon Status
 
-Displays the status (running, stopped, or disabled) of the driver for devices on the computer. Valid on local and remote computers.
+Displays the status (running, stopped, or disabled) of the driver for devices on the computer. 
 
 ```
-    devcon [/m:\\computer] status {* | ID [ID ...] | =class [ID [ID ...]]}
+    devcon status {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
 ## <span id="ddk_devcon_status_tools"></span><span id="DDK_DEVCON_STATUS_TOOLS"></span>Parameters
-
-<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>
-Runs the command on the specified remote computer. The backslashes are required.
-
-**Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access is unavailable.
 
 <span id="______________"></span> **\***
 Represents all devices on the computer.
@@ -72,8 +66,6 @@ You can also specify hardware IDs, compatible IDs, device instance IDs, or ID pa
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-The **/m** parameter must precede the operation name (**status**). Otherwise, DevCon ignores the **/m** parameter and displays the status of device drivers on the local computer without returning a syntax error.
-
 If DevCon cannot determine the status of the device, such as when the device is no longer attached to the computer, DevCon omits the line describing the status from the status display.
 
 The following example shows a successful status command. The text describing the device status appears in bold type.
@@ -96,7 +88,7 @@ STORAGE\VOLUME\1&30A96598&0&SIGNATURE80OFFSET7E0000LENGTH270987600
 ### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
-devcon /m:\\Server01 status *
+devcon status *
 devcon status pci*
 devcon status "PCI\VEN_115D&DEV_0003&SUBSYS_0181115D"
 devcon status =printer
@@ -104,8 +96,8 @@ devcon status =printer
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 17: Display the status of all devices on the local computer](devcon-examples.md#ddk_example_17_display_the_status_of_all_devices_on_the_local_computer)
+[Example 17: Display the status of all devices on the local computer](devcon-examples.md#example-17-display-the-status-of-all-devices)
 
-[Example 18: Display the status of a device by device instance ID](devcon-examples.md#ddk_example_18_display_the_status_of_a_device_by_device_instance_id_to)
+[Example 18: Display the status of a device by device instance ID](devcon-examples.md#example-18-display-the-status-of-a-device-by-device-instance-id)
 
-[Example 19: Display the status of related devices on a remote computer](devcon-examples.md#ddk_example_19_display_the_status_of_related_devices_on_a_remote_compu)
+[Example 19: Display the status of related devices](devcon-examples.md#example-19-display-the-status-of-related-devices)

@@ -9,7 +9,6 @@ api_name:
 - usbkd.urbfunc
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.urbfunc
@@ -32,8 +31,7 @@ The hexadecimal value of a URB function code. These codes are defined in usb.h.
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is an example of the output of **!urbfunc**.
 

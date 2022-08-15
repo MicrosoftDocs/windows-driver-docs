@@ -13,7 +13,6 @@ keywords:
 - EFI NVRAM boot options WDK , viewing
 - boot options WDK , editing
 ms.date: 07/02/2018
-ms.localizationpriority: medium
 ---
 
 # Editing Boot Options in EFI

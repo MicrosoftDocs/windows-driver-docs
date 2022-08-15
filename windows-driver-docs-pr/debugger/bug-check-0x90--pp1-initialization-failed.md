@@ -9,7 +9,6 @@ api_name:
 - PP1_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x90: PP1\_INITIALIZATION\_FAILED
@@ -26,8 +25,7 @@ The PP1\_INITIALIZATION\_FAILED bug check has a value of 0x00000090. This bug ch
 
 None
 
-Cause
------
+## Cause
 
 An error occurred during Phase 1 initialization of the kernel-mode PnP manager.
 

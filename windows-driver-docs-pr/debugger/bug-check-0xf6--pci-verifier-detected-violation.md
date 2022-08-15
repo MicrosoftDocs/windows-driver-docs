@@ -9,7 +9,6 @@ api_name:
 - PCI_VERIFIER_DETECTED_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF6: PCI\_VERIFIER\_DETECTED\_VIOLATION
@@ -55,8 +54,7 @@ Parameter 1 is the only parameter of interest; this identifies the nature of the
 
  
 
-Cause
------
+## Cause
 
 The PCI driver detected an error in a device or BIOS being verified.
 

@@ -2,7 +2,6 @@
 title: ProjectUpgradeTool
 description: The ProjectUpgradeTool takes Microsoft Visual Studio 2012 projects (*.vcxproj) and solution files (*.sln) that were created with the Windows Driver Kit (WDK) for Windows 8 and upgrades them to work with the WDK for Windows 8.1 and Microsoft Visual Studio 2013.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ProjectUpgradeTool
@@ -153,7 +152,7 @@ error : Verification Error: Driver package has no driver version.    C:\Program 
         </When>
     ```
 
-    Change the not equals (!=) to less than ("&lt;").
+    Change the not equals (!=) to less than (`&lt;`).
 
     ```XML
         <When  Condition="'$(VisualStudioVersion)' &lt;'11.0'">
@@ -165,7 +164,7 @@ error : Verification Error: Driver package has no driver version.    C:\Program 
         <When Condition="('$(PlatformToolset)' == 'WindowsApplicationForDrivers8.0') and ('$(VisualStudioVersion)' != '11.0')">
     ```
 
-    And change the not equals (!=) to less than ("&lt;").
+    And change the not equals (!=) to less than (`&lt;`).
 
     ```XML
         <When Condition="('$(PlatformToolset)' == 'WindowsApplicationForDrivers8.0') and ('$(VisualStudioVersion)' &lt;'11.0')">

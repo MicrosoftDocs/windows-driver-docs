@@ -2,7 +2,6 @@
 title: Debugging Tools for Windows New for Windows 10
 description: For Windows 10, Debugging Tools for Windows includes these new features.
 ms.date: 01/22/2019
-ms.localizationpriority: medium
 ---
 
 # Debugging Tools for Windows: New for Windows 10

@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ADFResolutions element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **ADFResolutions** element contains a list of resolutions at which the front or back side of the scanner's automatic document feeder (ADF) can scan.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ADFResolutions>
@@ -26,8 +24,7 @@ Usage
 </wscn:ADFResolutions>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -75,8 +72,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The resolution is specified as a [**Width**](width.md) x [**Height**](height.md) pair, where both **Width** and **Height** are specified in pixels per inch.
 

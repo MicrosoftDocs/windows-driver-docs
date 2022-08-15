@@ -3,7 +3,6 @@ title: Building and Deploying the Localized MOF File
 description: Building and Deploying the Localized MOF File
 keywords: ["MOF files WDK WMI", "localizing MOF files", "MUI versions WDK WMI", "master MOF files WDK WMI", "languages WDK WMI"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Building and Deploying the Localized MOF File

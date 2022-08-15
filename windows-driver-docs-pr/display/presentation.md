@@ -9,7 +9,6 @@ keywords:
 - DDLT_PRESENTATION
 - DDBLT_LAST_PRESENTATION
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Presentation

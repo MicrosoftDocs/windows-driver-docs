@@ -1,13 +1,12 @@
 ---
 title: EFI_USB_SUPERSPEED_DEVICE_INFO
-description: EFI_USB_SUPERSPEED_DEVICE_INFO
-ms.date: 05/21/2020
-ms.localizationpriority: medium
+description: The EFI_USB_SUPERSPEED_DEVICE_INFO structure defines the USB SuperSpeed function device.
+ms.date: 08/23/2021
 ---
 
-# EFI\_USB\_SUPERSPEED\_DEVICE\_INFO
+# EFI_USB_SUPERSPEED_DEVICE_INFO
 
-The **EFI\_USB\_SUPERSPEED\_DEVICE\_INFO** structure is used to define the USB SuperSpeed function device.
+The **EFI_USB_SUPERSPEED_DEVICE_INFO** structure defines the USB SuperSpeed function device.
 
 ## Syntax
 
@@ -22,21 +21,18 @@ typedef struct
 
 ## Members
 
-### DeviceDescriptor
+**DeviceDescriptor**
+An EFI_USB_DEVICE_DESCRIPTOR structure that contains configuration information for the USB device.
 
-An EFI\_USB\_DEVICE\_DESCRIPTOR structure that contains configuration information for the USB device.
+**ConfigInfoTable**
+An [EFI_USB_SUPERSPEED_CONFIG_INFO](efi-usb-superspeed-config-info.md) structure that contains information about the supported USB SuperSpeed configurations.
 
-### ConfigInfoTable
-
-An [EFI\_USB\_SUPERSPEED\_CONFIG\_INFO](efi-usb-superspeed-config-info.md) structure that contains information about the supported USB SuperSpeed configurations.
-
-### BosDescriptor
-
-An [EFI\_USB\_BOS\_DESCRIPTOR](efi-usb-bos-descriptor.md) structure that contains information about the Binary Object Store to the USB function driver.
+**BosDescriptor**
+An [EFI_USB_BOS_DESCRIPTOR](efi-usb-bos-descriptor.md) structure that contains information about the Binary Object Store to the USB function driver.
 
 ## Remarks
 
-The **EFI\_USB\_CONFIG\_DESCRIPTOR** structure is defined in the UEFI specification version 2.3 and later. For more information, visit the [UEFI.org](https://uefi.org/specifications) website.
+The **EFI_USB_CONFIG_DESCRIPTOR** structure is defined in the UEFI specification version 2.3 and later. For more information, visit the [UEFI.org](https://uefi.org/specifications) website.
 
 ## Requirements
 

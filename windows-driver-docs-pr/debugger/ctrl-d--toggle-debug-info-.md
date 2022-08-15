@@ -9,7 +9,6 @@ api_name:
 - CTRL+D (Toggle Debug Info)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CTRL+D (Toggle Debug Info)
@@ -61,8 +60,7 @@ CTRL+ALT+D
 
  
 
-Remarks
--------
+## Remarks
 
 When this is toggled on, the debugger outputs information about the communication between the host computer and the target computer.
 

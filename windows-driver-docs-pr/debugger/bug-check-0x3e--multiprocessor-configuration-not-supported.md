@@ -9,7 +9,6 @@ api_name:
 - MULTIPROCESSOR_CONFIGURATION_NOT_SUPPORTED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x3E: MULTIPROCESSOR\_CONFIGURATION\_NOT\_SUPPORTED
@@ -26,8 +25,7 @@ The MULTIPROCESSOR\_CONFIGURATION\_NOT\_SUPPORTED bug check has a value of 0x000
 
 None
 
-Cause
------
+## Cause
 
 In order to be symmetric, all processors must be of the same type and level. This system contains processors of different types (for example, a Pentium processor and an 80486 processor).
 

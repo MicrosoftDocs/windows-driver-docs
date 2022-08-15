@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_MULTICAST_BYTES_XMIT OID specifies the numb
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_MULTICAST_BYTES_XMIT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_MULTICAST\_BYTES\_XMIT
@@ -29,13 +28,11 @@ Supported.
 <a href="" id="ndis-5-1-drivers"></a>NDIS 5.1 drivers  
 Optional.
 
-Remarks
--------
+## Remarks
 
 For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

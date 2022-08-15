@@ -3,7 +3,6 @@ title: Finding a Memory Leak
 description: Finding a Memory Leak
 keywords: ["memory leak", "memory leak, debugging"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Finding a Memory Leak

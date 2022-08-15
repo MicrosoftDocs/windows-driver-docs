@@ -2,7 +2,6 @@
 title: TTD Calls Objects
 description: This section describes the calls model objects associated with time travel debugging.
 ms.date: 09/25/2017
-ms.localizationpriority: medium
 ---
 
 # TTD Calls Objects

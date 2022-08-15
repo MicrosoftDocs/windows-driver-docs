@@ -2,7 +2,6 @@
 title: Bluetooth user interface
 description: Describes working with the Bluetooth user interface in Windows for software developers and vendors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bluetooth User Interface
@@ -38,7 +37,7 @@ In Windows Vista RTM and Windows Vista with SP1, the Bluetooth notification area
 
 If users want a persistent Bluetooth notification area icon, they can select the **Show the Bluetooth icon in the notification area** check box on the **Options** tab of the Control Panel Bluetooth Settings application.
 
-![bluetooth notification settings](images/bluetoothnotificationsettings.jpg)
+![bluetooth notification settings.](images/bluetoothnotificationsettings.jpg)
 
 **Note**  Even if no Bluetooth icon is in the notification area, you can still use the Control Panel Bluetooth Settings application to perform related tasks such as adding new Bluetooth devices, making the computer discoverable, and so on.
 

@@ -15,15 +15,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_Status method
 
 The **Status** property enables an ASP Web page to determine the printer status.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_Status(
@@ -31,14 +29,12 @@ HRESULT get_Status(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied pointer to a location to receive printer status flags. For more information, see the following Remarks section.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -83,8 +79,7 @@ objPrinter.Open strPrinter
 PtrStatus = objPrinter.Status
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

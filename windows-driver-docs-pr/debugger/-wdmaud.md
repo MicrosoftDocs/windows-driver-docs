@@ -1,5 +1,5 @@
 ---
-title: wdmaud
+title: wdmaud (WinDbg)
 description: Displays a variety of WDM Audio (WDMAud) structures.
 keywords: ["wdmaud Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - wdmaud
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdmaud
@@ -70,8 +69,7 @@ Causes the display to include verbose information.
 
 For information about WDM audio architecture and audio drivers, see the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 The contexts attached to wdmaud.sys (**pContext**) contain most of the state data for each device. Whenever wdmaud.drv is loaded into a new process, wdmaud.sys is notified of its arrival. Whenever wdmaud.drv is unloaded, wdmaud.sys cleans up any allocations made in that context.
 

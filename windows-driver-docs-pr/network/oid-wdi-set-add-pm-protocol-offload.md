@@ -4,7 +4,6 @@ description: OID_WDI_SET_ADD_PM_PROTOCOL_OFFLOAD adds a list of one or more prot
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_ADD_PM_PROTOCOL_OFFLOAD Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
@@ -37,8 +36,7 @@ This property provides information to enable the device/firmware to implement th
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

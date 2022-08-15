@@ -3,7 +3,6 @@ title: Handling an IRP_MN_SURPRISE_REMOVAL Request
 description: Handling an IRP_MN_SURPRISE_REMOVAL Request
 keywords: ["surprise removals WDK PnP", "IRP_MN_SURPRISE_REMOVAL"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling an IRP\_MN\_SURPRISE\_REMOVAL Request
@@ -80,7 +79,7 @@ In response to **IRP\_MN\_SURPRISE\_REMOVAL**, a driver must do the following, i
 
     -   Set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
-    -   Set up the next stack location with [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) and pass the IRP to the next lower driver with [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
+    -   Set up the next stack location with [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) and pass the IRP to the next lower driver with [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
     -   Propagate the status from **IoCallDriver** as the return status from the [*DispatchPnP*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 

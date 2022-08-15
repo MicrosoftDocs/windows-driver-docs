@@ -1,5 +1,5 @@
 ---
-title: ndiskd.vc
+title: ndiskd.vc (WinDbg)
 description: The ndiskd.vc extension displays a Connection-Oriented (CoNDIS) virtual connection (VC).
 keywords: ["ndiskd.vc Windows Debugging"]
 ms.date: 06/26/2020
@@ -9,7 +9,6 @@ api_name:
 - ndiskd.vc
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.vc
@@ -90,7 +89,7 @@ VIRTUAL CALL
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
+[Debugging the Network Stack](/shows/defrag-tools/175-debugging-network-stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 

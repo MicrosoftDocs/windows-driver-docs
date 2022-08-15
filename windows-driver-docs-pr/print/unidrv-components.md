@@ -5,7 +5,6 @@ keywords:
 - Unidrv, components
 - Unidrv WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Unidrv Components
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 Unidrv components consist of DLLs, plus text and binary data files, as illustrated in the following diagram:
 
-![diagram illustrating how unidrv components consist of dlls, plus text and binary data files](images/unidrvcm.png)
+![diagram illustrating how unidrv components consist of dlls, plus text and binary data files.](images/unidrvcm.png)
 
 Components in the diagram include:
 

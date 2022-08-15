@@ -2,7 +2,6 @@
 title: Container IDs Generated from Removable Device Capability Override
 description: Container IDs Generated from a Removable Device Capability Override
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Container IDs Generated from a Removable Device Capability Override
@@ -109,7 +108,7 @@ The result of this override is a single device grouping because all the devnodes
 
 The following diagram shows the resulting device topology and associated container ID assignment.
 
-![diagram illustrating removable device capability override that marks a devnode as not removable](images/containerid-4.png)
+![diagram illustrating removable device capability override that marks a devnode as not removable.](images/containerid-4.png)
 
 The previous example shows a frequently encountered devnode topology: portable computers with devices hardwired to specific bus locations that incorrectly report themselves as removable. Devices that are physically integrated with a computer, such as a Webcam or a biometric (fingerprint) sensor, should not be reported as removable because a user cannot physically separate them from the computer. The removable override lets an independent hardware vendor (IHV) or original equipment manufacturer (OEM) change how the PnP manager interprets the removable device capability, and thereby affects the container ID assignment for the device.
 
@@ -141,7 +140,7 @@ Additionally, the \* registry subkey was specified to indicate that this overrid
 
 The following diagram shows the resulting device topology and associated container ID assignment.
 
-![diagram illustrating removable device capability override that marks a devnode as removable](images/containerid-5.png)
+![diagram illustrating removable device capability override that marks a devnode as removable.](images/containerid-5.png)
 
  
 

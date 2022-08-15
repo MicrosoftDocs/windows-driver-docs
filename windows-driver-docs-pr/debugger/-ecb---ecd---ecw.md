@@ -9,7 +9,6 @@ api_name:
 - ecb, ecd, ecw
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ecb, !ecd, !ecw
@@ -66,8 +65,7 @@ These extension commands can only be used with an x86-based target computer.
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command, and some additional examples. For information about PCI buses, see the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 You cannot use these extension commands to write a sequence of *Data* values. This can only be done by repeated use of this extension.
 

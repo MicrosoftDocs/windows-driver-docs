@@ -3,7 +3,6 @@ title: Control Flow Tokens
 description: Control Flow Tokens
 keywords: ["script file, control flow tokens", "control flow tokens", "debugger command program, control flow tokens"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Control Flow Tokens

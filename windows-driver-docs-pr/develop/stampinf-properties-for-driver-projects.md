@@ -2,7 +2,6 @@
 title: Stampinf Properties for Driver Projects
 description: Sets the properties for the Stampinf tool. You can use Stampinf to update common INF and INX file directives when you build the driver.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Stampinf Properties for Driver Projects
@@ -128,5 +127,5 @@ If you want to add this property page to your project, so that you can run the S
 * [**INF DriverVer directive**](../install/inf-driverver-directive.md)
 * [**INF Version section**](../install/inf-version-section.md)
 * [WDK and Visual Studio build environment](../devtest/wdk-and-visual-studio-build-environment.md)
-* [Stampinf task](https://msdn.microsoft.com/Library/Windows/Hardware/Ff552786_task)
+* [Stampinf task](../devtest/stampinf-task.md)
 * [How to: Use Environment Variables in a Build](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build)

@@ -4,7 +4,6 @@ description: DirectX 9.0 Release Notes
 keywords:
 - DirectX 9.0 release notes WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectX 9.0 Release Notes

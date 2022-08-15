@@ -7,7 +7,6 @@ keywords:
 - graphics drivers WDK Windows 2000 display , fonts, TrueType driver functions
 - TrueType font drivers WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # TrueType Font Driver Functions

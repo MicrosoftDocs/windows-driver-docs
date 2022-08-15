@@ -2,11 +2,12 @@
 title: Starting Device Installation Applications through Co-installers
 description: Guidelines for Starting Device Installation Applications through Co-installers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Guidelines for Starting Device Installation Applications through Co-installers
 
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 The following guidelines must be followed for co-installers which supply finish-install actions (Windows Vista and later versions of Windows) to start *device installation applications*:
 

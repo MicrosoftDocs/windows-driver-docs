@@ -9,7 +9,6 @@ api_name:
 - BC_BLUETOOTH_VERIFIER_FAULT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xBFE: BC\_BLUETOOTH\_VERIFIER\_FAULT
@@ -95,8 +94,7 @@ The BC\_BLUETOOTH\_VERIFIER\_FAULT bug check has a value of 0x00000BFE. This ind
 
 
 
-Resolution
-----------
+## Resolution
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 Parameter 1 describes the type of violation. Look at the call stack to determine the misbehaving driver.

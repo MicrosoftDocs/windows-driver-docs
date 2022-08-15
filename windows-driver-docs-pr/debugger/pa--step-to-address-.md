@@ -9,7 +9,6 @@ api_name:
 - pa (Step to Address)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # pa (Step to Address)
@@ -78,8 +77,7 @@ Specifies a debugger command to execute after the step is performed. This comman
 
 For more information about related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 The **pa** command causes the target to begin executing. This execution continues until the specified instruction is reached or a breakpoint is encountered.
 

@@ -9,7 +9,6 @@ api_name:
 - hidkd.hidtree
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !hidkd.hidtree
@@ -23,7 +22,7 @@ The **!hidkd.hidtree** command displays a list of all device nodes that have a H
 
 This screen shot shows an example of the output of the **!hidtree** command.
 
-![output of the hidtree command](images/hidkd01.png)
+![output of the hidtree command.](images/hidkd01.png)
 
 O
 

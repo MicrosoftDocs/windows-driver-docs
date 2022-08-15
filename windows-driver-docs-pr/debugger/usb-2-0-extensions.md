@@ -2,7 +2,6 @@
 title: USB 2.0 Extensions
 description: This section describes the USB 2.0 debugger extension commands. These commands display information from data structures maintained by drivers in the USB 2.0 driver stack.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # USB 2.0 Extensions
@@ -15,7 +14,7 @@ The USB 2.0 debugger extension commands are implemented in Usbkd.dll. To load th
 
 The USB 2.0 tree contains the device nodes that represent execution units on EHCI host controller devices along with the child nodes that represent hubs and connected devices. This diagram shows an example of a USB 2.0 tree.
 
-![diagram that shows usb 2tree](images/usbkd01.png)
+![diagram that shows usb 2tree.](images/usbkd01.png)
 
 The diagram shows one physical host controller device that has two execution units. Each execution unit appears as a device node in the Plug and Play device tree. One execution unit appears as a UHCI USB host controller node, and the other execution unit shows as an EHCI USB host controller node. Each of those nodes has a child node that represents a USB root hub. Each root hub has a single child node that represents a connected USB device.
 

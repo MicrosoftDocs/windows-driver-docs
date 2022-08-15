@@ -7,7 +7,6 @@ keywords:
 - user-mode drivers WDK UMDF , time-outs
 - time-outs WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Host Process Timeouts in UMDF

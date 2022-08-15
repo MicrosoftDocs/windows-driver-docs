@@ -6,7 +6,6 @@ keywords:
 - decoder minidrivers WDK DVD , hardware-based DVD decoding
 - hardware-based DVD decoding WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hardware-based DVD Decoding
@@ -21,7 +20,7 @@ The white boxes represent software supplied by Microsoft, and the shaded box rep
 
 Computers using Microsoft DVD support both DVD storage and, if the proper decoding hardware or software is present, DVD decoding and playback.
 
-![diagram illustrating a hardware dvd decoding solution](images/hwdvddec.png)
+![diagram illustrating a hardware dvd decoding solution.](images/hwdvddec.png)
 
  
 

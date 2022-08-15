@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # DocumentSizeAutoDetect element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The optional **DocumentSizeAutoDetect** element specifies whether the scan device automatically determines the size of the original scan media.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:DocumentSizeAutoDetect>
@@ -26,13 +24,11 @@ Usage
 </wscn:DocumentSizeAutoDetect>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. A Boolean value that must be 0, false, 1, or true.**falsetrue**
 
@@ -60,8 +56,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 If the specified text value is 1 or **true**, the scan device will automatically determine the size of the original scan media. If the **DocumentSizeAutoDetect** element is specified along with a [**ScanRegion**](scanregion.md) element, the scan region will be ignored if it falls outside of the media size that the device detected.
 

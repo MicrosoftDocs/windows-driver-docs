@@ -9,7 +9,6 @@ api_name:
 - .rrestart (Register for Restart)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .rrestart (Register for Restart)
@@ -21,8 +20,7 @@ The **.rrestart** command registers the debugging session for restart in case of
 .rrestart
 ```
 
-Remarks
--------
+## Remarks
 
 This command does not work for elevated debugger sessions.
 

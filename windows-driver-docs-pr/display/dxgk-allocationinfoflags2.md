@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # \_DXGK\_ALLOCATIONINFOFLAGS2 structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The DXGK\_ALLOCATIONINFOFLAGS2 structure is reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_ALLOCATIONINFOFLAGS2 {
@@ -62,8 +60,7 @@ typedef struct _DXGK_ALLOCATIONINFOFLAGS2 {
 } DXGK_ALLOCATIONINFOFLAGS2;
 ```
 
-Members
--------
+## Members
 
 **CpuVisible**
 
@@ -127,8 +124,7 @@ Members
 
 **Value**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

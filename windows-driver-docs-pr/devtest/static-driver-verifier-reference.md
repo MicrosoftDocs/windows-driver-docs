@@ -6,7 +6,6 @@ keywords:
 - StaticDV WDK , reference
 - SDV WDK , reference
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Static Driver Verifier Reference

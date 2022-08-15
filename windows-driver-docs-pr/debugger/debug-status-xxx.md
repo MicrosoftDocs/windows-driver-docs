@@ -11,7 +11,6 @@ api_location:
 - DbgEng.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ---
 
 # DEBUG\_STATUS\_XXX
@@ -134,8 +133,7 @@ The values in the following table are reverse ordered by precedence; the values 
 
 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

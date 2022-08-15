@@ -1,18 +1,12 @@
 ---
 title: Using SetupAPI to Uninstall Devices and Driver Packages
 description: Using SetupAPI to Uninstall Devices and Driver Packages
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 03/11/2022
 ---
 
 # Using SetupAPI to Uninstall Devices and Driver Packages
 
-
-[SetupAPI](setupapi.md) is a system component that provides two sets of functions:
-
--   [General Setup functions](/previous-versions/ff544985(v=vs.85))
-
--   [Device installation functions](/previous-versions/ff541299(v=vs.85))
+[SetupAPI](setupapi.md) is a system component that provides various sets of functionality, including [Device installation functions](/previous-versions/ff541299(v=vs.85)).
 
 *Device installation applications*, *co-installers*, and *class installers* can use these functions to perform custom operations for device installation. SetupAPI also supports uninstalling the devices and [driver packages](driver-packages.md) that it installs.
 
@@ -38,7 +32,9 @@ For more information about uninstalling driver and driver packages, see [How Dev
 
 Starting with Windows XP, a device installation application can call the [SetupUninstallOEMInf](/windows/win32/api/setupapi/nf-setupapi-setupuninstalloeminfa) function to remove a specified [INF file](overview-of-inf-files.md) from the system INF file directory.
 
-Starting with Windows Vista, this function also removes the [driver package](driver-packages.md), which contains the specified INF file, from the [driver store](driver-store.md).
+Starting with Windows Vista, this function also removes the [driver package](driver-packages.md), which contains the specified INF file, from the [Driver Store](driver-store.md).
+
+Alternatively, a device installation application can call [DiUninstallDriver](/windows/win32/api/newdev/nf-newdev-diuninstalldriverw) to remove a driver package from the Driver Store.
 
 ### <a href="" id="deleting-the-binary-files-of-the-installed-driver"></a> Deleting the Binary Files of the Installed Driver
 

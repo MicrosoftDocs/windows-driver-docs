@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 09/10/2018
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE
@@ -137,8 +136,7 @@ The following table contains the descriptions and requirements for the [**KSCAME
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

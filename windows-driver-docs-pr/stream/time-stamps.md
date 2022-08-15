@@ -7,7 +7,6 @@ keywords:
 - time stamps WDK video capture
 - clocks WDK video capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Time Stamps

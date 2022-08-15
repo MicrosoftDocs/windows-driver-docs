@@ -15,7 +15,6 @@ keywords:
 - timers WDK audio
 - clocks WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Synthesizer Timing

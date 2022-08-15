@@ -4,10 +4,11 @@ description: OID_WDI_SET_ADVERTISEMENT_INFORMATION configures the Information El
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_ADVERTISEMENT_INFORMATION Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_SET\_ADVERTISEMENT\_INFORMATION
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_SET\_ADVERTISEMENT\_INFORMATION configures the Information Elements (IEs) and other advertisement settings to be included in the probe request, probe response, and beacons sent by the specified port. This request is only applicable to Wi-Fi Direct ports.
@@ -46,8 +47,7 @@ No additional data. The data in the header is sufficient.
 [NDIS\_STATUS\_WDI\_INDICATION\_ACTION\_FRAME\_RECEIVED](ndis-status-wdi-indication-action-frame-received.md)
 The adapter must indicate ANQP Action Frame requests for the Service Information if it receives an ANQP request (or any other unknown action frame) from a peer.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

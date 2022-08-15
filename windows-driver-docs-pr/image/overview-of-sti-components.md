@@ -2,7 +2,6 @@
 title: Overview of STI Components
 description: Overview of STI Components
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of STI Components
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 The following diagram illustrates the software components that compose Microsoft STI. Following the diagram is a component list.
 
-![diagram illustrating the microsoft sti components](images/sticomp.png)
+![diagram illustrating the microsoft sti components.](images/sticomp.png)
 
 ### <a href="" id="ddk-imaging-application-si"></a>Imaging Application
 

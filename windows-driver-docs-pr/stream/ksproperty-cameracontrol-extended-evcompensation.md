@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 09/10/2018
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_EVCOMPENSATION
@@ -43,7 +42,7 @@ The EV Compensation property allows adjustment of exposure control by increments
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Filter</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_HEADER&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header)"><strong>KSCAMERA_EXTENDEDPROP_HEADER</strong></a></p></td>
 </tr>
 </tbody>
@@ -71,8 +70,7 @@ The **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/d
 
 This property control is asynchronous and not cancelable.
 
-Remarks
--------
+## Remarks
 
 ### Getting the property
 
@@ -125,8 +123,7 @@ The driver sets the current EV compensation stepping in **Flags**. The members o
 
 When the property is set, a KSPROPERTY\_TYPE\_SET request, the **Flags** member of [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) will contain the EV compensation stepping to use. The new number of step units used for compensation are set in **Value** member of [**KSCAMERA\_EXTENDEDPROP\_EVCOMPENSATION**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_evcompensation).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -4,11 +4,12 @@ description: OID_WDI_SET_END_DWELL_TIME is typically sent during an Action Frame
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_END_DWELL_TIME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_END\_DWELL\_TIME
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_SET\_END\_DWELL\_TIME is typically sent during an Action Frame exchange, either when WDI has to wait some time before sending a followup Action Frame, or when the protocol sequence is complete. This command can be sent on the device port or station port.
@@ -30,8 +31,7 @@ No additional parameters. The data in the header is sufficient.
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

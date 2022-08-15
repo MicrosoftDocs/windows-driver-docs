@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # FSCTL\_REQUEST\_OPLOCK control code
@@ -40,8 +39,7 @@ A bitmask for the associated oplock operations. A file system or filter driver s
 <a href="" id="oplock-fsctrl-flag-all-keys-match--0x00000001-"></a>OPLOCK\_FSCTRL\_FLAG\_ALL\_KEYS\_MATCH (0x00000001)  
 Specifies that the file system has verified that all opportunistic lock keys match on any handle that is currently open. By specifying this flag, the oplock package can grant an oplock of level RW or RWH when more than one open handle to the file exists. For more information about oplock types, see [Overview](./oplock-overview.md).
 
-Status block
-------------
+## Status block
 
 [**FsRtlOplockFsctrlEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrlex) returns one of the following NTSTATUS values for this operation:
 
@@ -74,8 +72,7 @@ Status block
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

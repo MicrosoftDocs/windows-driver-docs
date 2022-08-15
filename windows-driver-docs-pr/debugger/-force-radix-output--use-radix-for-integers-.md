@@ -9,7 +9,6 @@ api_name:
 - .force_radix_output (Use Radix for Integers)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .force\_radix\_output (Use Radix for Integers)
@@ -56,8 +55,7 @@ Displays all integers (except for long integers) in the default radix.
 
  
 
-Remarks
--------
+## Remarks
 
 The **.force\_radix\_output** command affects the output of the [**dt (Display Type)**](dt--display-type-.md) command.
 

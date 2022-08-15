@@ -7,7 +7,6 @@ keywords:
 - notification errors WDK print spooler
 - errors WDK spooler notification
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Notification Errors

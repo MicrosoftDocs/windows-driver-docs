@@ -7,7 +7,6 @@ keywords:
 - DVD 16 9 letterbox height example WDK DirectX VA
 - 16 9 letterbox height example WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DVD 16:9 Letterbox Height in 4:3 Example

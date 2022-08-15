@@ -10,7 +10,6 @@ api_location:
 - Ks.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,15 +43,13 @@ The KSCATEGORY_BRIDGE [device interface class](./overview-of-device-interface-cl
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS audio adapter devices register instances of KSCATEGORY_BRIDGE to indicate to the operating system that the devices support the KSCATEGORY_BRIDGE functional category.
 
 For more information about KSCATEGORY_BRIDGE functional category, see [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

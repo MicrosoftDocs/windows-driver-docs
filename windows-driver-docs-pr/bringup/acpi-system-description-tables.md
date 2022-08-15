@@ -1,8 +1,7 @@
 ---
 title: ACPI system description tables
-description: Implementation of the Advanced Configuration and Power Interface (ACPI) Hardware Specification is not required on SoC-based platforms, but much of the ACPI Software Specification is (or can be) required.
-ms.date: 10/02/2020
-ms.localizationpriority: medium
+description: Implementation of the Advanced Configuration and Power Interface (ACPI) Hardware Specification is not required on SoC-based platforms, but much of the ACPI Software Specification can be required.
+ms.date: 08/17/2021
 ---
 
 # ACPI system description tables
@@ -43,32 +42,32 @@ The Fixed ACPI Hardware Table (FADT) contains important information about the va
 
 - The Flags field within the FADT (offset 112) has two new flags:
 
-    HARDWARE\_REDUCED\_ACPI
+    HARDWARE_REDUCED_ACPI
     Bit offset 20. Indicates that ACPI hardware is not available on this platform. This flag must be set if the ACPI Fixed Hardware Programming Model is not implemented.
 
-    LOW\_POWER\_S0\_IDLE\_CAPABLE
+    LOW_POWER_S0_IDLE_CAPABLE
     Bit offset 21. Indicates that the platform supports low-power idle states within the ACPI S0 system power state that are more energy efficient than any Sx sleep state. If this flag is set, Windows will not try to sleep and resume, but will instead use platform idle states and connected standby.
 
-- The FADT Preferred\_PM\_Profile field (byte offset 45) has a new role entry, "Tablet". This role influences power management policy for the display and input, and affects the display of on-screen keyboards.
+- The FADT Preferred_PM_Profile field (byte offset 45) has a new role entry, "Tablet". This role influences power management policy for the display and input, and affects the display of on-screen keyboards.
 - The "IA-PC Boot Architecture Flags" field (offset 109) has a new "CMOS RTC Not Present" flag (bit offset 5) to indicate that the PC's CMOS RTC is either not implemented, or does not exist at the legacy addresses. If this flag is set, the platform must implement the ACPI Time and Alarm Control Method device. For more information, see the **Control Method Time and Alarm device** section in the [ACPI defined devices](acpi-defined-devices.md) topic.
 - New fields are added to support traditional PC sleep/resume on hardware-reduced ACPI platforms. These fields are ignored by Windows, but must be present in the table for compliance.
-- If the HARDWARE\_REDUCED\_ACPI flag is set, all fields relating to the ACPI Hardware Specification are ignored by the operating system.
+- If the HARDWARE_REDUCED_ACPI flag is set, all fields relating to the ACPI Hardware Specification are ignored by the operating system.
 
 All other FADT settings retain their meanings from the previous version, ACPI 4.0. For more information, see section 5.2.9, "Fixed ACPI Description Table (FADT)", of the [ACPI 5.0 specification](https://uefi.org/specifications).
 
 ## Multiple APIC Description Table (MADT)
 
-In PC implementations of ACPI, the Multiple APIC Description Table (MADT) and PC-specific interrupt controller descriptors are used to describe the system interrupt model. For ARM-based SoC platforms, ACPI 5.0 adds descriptors for the ARM Holdings' Generic Interrupt Controller (GIC) and GIC Distributor. Windows includes inbox support for the GIC and GIC Distributor. For more information about these descriptors, see sections 5.2.12.14, "GIC Structure", and 5.2.12.15, "GIC Distributor Structure", of the [ACPI 5.0 specification](https://uefi.org/specifications).
+In PC implementations of ACPI, the Multiple APIC Description Table (MADT) and PC-specific interrupt controller descriptors are used to describe the system interrupt model. For Arm-based SoC platforms, ACPI 5.0 adds descriptors for the Arm Holdings' Generic Interrupt Controller (GIC) and GIC Distributor. Windows includes inbox support for the GIC and GIC Distributor. For more information about these descriptors, see sections 5.2.12.14, "GIC Structure", and 5.2.12.15, "GIC Distributor Structure", of the [ACPI 5.0 specification](https://uefi.org/specifications).
 
-The interrupt controller descriptor structures are listed immediately after the Flags field in the MADT. For ARM platforms, one descriptor is listed for each GIC, followed by one for each GIC Distributor. The GIC corresponding to the boot processor must be the first entry in the list of interrupt controller descriptors.
+The interrupt controller descriptor structures are listed immediately after the Flags field in the MADT. For Arm platforms, one descriptor is listed for each GIC, followed by one for each GIC Distributor. The GIC corresponding to the boot processor must be the first entry in the list of interrupt controller descriptors.
 
 ## Generic Timer Description Table (GTDT)
 
-As with the interrupt controller, there is a standard timer description table in ACPI. For ARM systems that utilize the GIT timer, ACPI's GTDT can be used to leverage the built-in support for the GIT in Windows.
+As with the interrupt controller, there is a standard timer description table in ACPI. For Arm systems that utilize the GIT timer, ACPI's GTDT can be used to leverage the built-in support for the GIT in Windows.
 
 ## Core System Resources Table (CSRT)
 
-Core System Resources (CSRs) are shared hardware functions such as interrupt controllers, timers and DMA controllers to which the operating system must serialize access. Where industry standards exist for features such as timers and interrupt controllers (on both x86 and ARM architectures), Windows builds in support for these features based on the standard tables described in ACPI (for example, MADT and GTDT). However, until the industry converges on DMA controller interface standards, there is a need to support some non-standard devices in the operating system.
+Core System Resources (CSRs) are shared hardware functions such as interrupt controllers, timers and DMA controllers to which the operating system must serialize access. Where industry standards exist for features such as timers and interrupt controllers (on both x86 and Arm architectures), Windows builds in support for these features based on the standard tables described in ACPI (for example, MADT and GTDT). However, until the industry converges on DMA controller interface standards, there is a need to support some non-standard devices in the operating system.
 
 Windows supports the concept of HAL extensions to address this issue. HAL extensions are SoC-specific modules, implemented as DLLs, that adapt the Windows HAL to a specific hardware interface of a specific class of CSR required by Windows. In order to identify and load these non-standard CSR modules, Microsoft has defined a new ACPI table. This table, which has a reserved signature of "CSRT" in the ACPI specification, must be included in the RSDT if non-standard CSRs are used on the platform.
 

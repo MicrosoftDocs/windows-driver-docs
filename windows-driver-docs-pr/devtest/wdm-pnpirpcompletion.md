@@ -9,7 +9,6 @@ api_name:
 - PnpIrpCompletion
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PnpIrpCompletion rule (wdm)
@@ -27,8 +26,7 @@ The following PnP IRPs are excluded from this rule:
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -53,8 +51,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver)
 [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)

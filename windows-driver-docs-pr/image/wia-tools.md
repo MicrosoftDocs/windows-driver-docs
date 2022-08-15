@@ -2,7 +2,6 @@
 title: WIA Tools
 description: WIA Tools
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Tools

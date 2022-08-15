@@ -6,7 +6,6 @@ keywords:
 - Level 1 I/O Verification WDK Driver Verifier
 - Level 2 I/O Verification WDK Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # I/O Verification
@@ -19,7 +18,7 @@ Driver Verifier has two levels of I/O Verification:
 
 -   *Level 1 I/O Verification* is always active whenever I/O Verification is selected.
 
--   *Level 2 I/O Verification* is always active whenever I/O Verification is selected in Windows XP and later. In Windows 2000, I/O Verification can be configured to include both levels, or just the Level 1 tests.
+-   *Level 2 I/O Verification* is always active whenever I/O Verification is selected in Windows XP and later. 
 
 **See Also:** [Enhanced I/O Verification](enhanced-i-o-verification.md) In Windows 7 and later versions of the Windows operating system, Enhanced I/O Verification is automatically activated when you select I/O Verification. It is not available or necessary to select it as a separate option.
 
@@ -109,15 +108,7 @@ You can activate the I/O Verification feature for one or more drivers by using D
 
     The feature will be active after the next boot.
 
-    In Windows 2000, you can use the **/iolevel** parameter to activate only Level 1 (the default) or both Level 1 and Level 2. In later versions of Windows, both Level 1 and Level 2 are always activated when you activate I/O Verification.
-
-    For example, the following command activates Level 1 and Level 2 I/O verification on a computer running Windows 2000.
-
-    ```
-    verifier /flags 0x10 /iolevel 2 /driver MyDriver.sys
-    ```
-
-    On Windows Vista and later versions of Windows, you can also activate and deactivate I/O Verification without rebooting the computer by adding the **/volatile** parameter to the command. For example:
+    You can also activate and deactivate I/O Verification without rebooting the computer by adding the **/volatile** parameter to the command. For example:
 
     ```
     verifier /volatile /flags 0x10 /adddriver MyDriver.sys

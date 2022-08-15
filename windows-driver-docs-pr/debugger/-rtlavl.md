@@ -1,5 +1,5 @@
 ---
-title: rtlavl
+title: rtlavl (WinDbg)
 description: The rtlavl extension displays the entries of an RTL_AVL_TABLE structure.
 keywords: ["avl tables", "rtlavl Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - rtlavl
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rtlavl
@@ -62,8 +61,7 @@ Displays some brief Help text for this extension in the Debugger Command window.
 
 Use the [**!gentable**](-gentable.md) extension to display AVL tables.
 
-Remarks
--------
+## Remarks
 
 Including the <em>Module</em>**!**<em>Type</em> option causes each entry in the table to be interpreted as having the given type.
 

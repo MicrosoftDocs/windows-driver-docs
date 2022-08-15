@@ -4,7 +4,6 @@ description: WDI_TLV_INDICATION_WAKE_REASON is a TLV that contains a wake reason
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_INDICATION_WAKE_REASON Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_INDICATION\_WAKE\_REASON
@@ -49,8 +48,7 @@ Valid wake reason values are:
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

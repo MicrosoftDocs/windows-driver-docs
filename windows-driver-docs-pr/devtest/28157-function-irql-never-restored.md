@@ -1,11 +1,10 @@
 ---
-title: C28157
+title: C28157 warning
 description: Warning C28157 The IRQL was never restored.
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28157"
 ---

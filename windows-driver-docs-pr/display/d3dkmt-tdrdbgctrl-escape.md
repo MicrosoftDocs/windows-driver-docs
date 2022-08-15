@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # D3DKMT\_TDRDBGCTRL\_ESCAPE structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_TDRDBGCTRL_ESCAPE {
@@ -31,15 +29,13 @@ typedef struct _D3DKMT_TDRDBGCTRL_ESCAPE {
 } D3DKMT_TDRDBGCTRL_ESCAPE;
 ```
 
-Members
--------
+## Members
 
 **TdrControl**
 
 **NodeOrdinal**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

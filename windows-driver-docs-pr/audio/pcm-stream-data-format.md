@@ -4,7 +4,6 @@ description: PCM Stream Data Format
 keywords:
 - PCM stream data formats WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PCM Stream Data Format

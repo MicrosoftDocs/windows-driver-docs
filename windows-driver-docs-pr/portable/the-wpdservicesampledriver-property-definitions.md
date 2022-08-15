@@ -2,7 +2,6 @@
 description: Defining the Service Properties
 title: Defining the Service Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Defining the Service Properties
@@ -18,7 +17,7 @@ In the previous image, the leftmost column in the top pane lists the objects tha
 
 The following image of the *WpdInfo.exe* tool shows the properties that the first contact object supports.
 
-![the wpd information tool](images/wpd_info_service_contact1.png)
+![the wpd information tool.](images/wpd_info_service_contact1.png)
 
 This object supports 14 properties. The first eight properties are general WPD object properties. The last six properties are contact-specific (name, mobile-phone number, email address, and so on).
 

@@ -2,7 +2,6 @@
 title: System paging process
 description: Most paging operations occur in a context of the system paging process. The only exception is the page table update from the UpdateGpuVirtualAddress callback, which occurs in a special companion context and occurs synchronous of rendering.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # System paging process
@@ -22,7 +21,7 @@ The paging process has its own GPU virtual address space, GPU contexts and direc
 
 The virtual address space for the paging process has a pre-defined layout, is initialized during adapter initialization, and every time after the memory content is lost due to power transitions.
 
-![virtual and physical address space](images/system-paging-process.1.png)
+![virtual and physical address space.](images/system-paging-process.1.png)
 
 The DirectX graphics kernel initializes enough page tables and page table entries in the root page table to cover the 1 GB virtual address space. The scratch area is used to temporary map allocations during transfer and fill operations to the Paging process virtual address space. If an allocation does not fit into the virtual address scratch area, the transfer operation will be done in chunks.
 
@@ -59,7 +58,7 @@ A page table covers 4 MB of the address space. So the system page table covers a
 
 As you see, the virtual address range from 0 to 4095 will be invalid.
 
-![page table initialization](images/system-paging-process.2.png)
+![page table initialization.](images/system-paging-process.2.png)
 
  
 

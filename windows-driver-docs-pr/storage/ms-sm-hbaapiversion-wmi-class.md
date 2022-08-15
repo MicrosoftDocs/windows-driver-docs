@@ -1,16 +1,14 @@
 ---
 title: MS\_SM\_HbaApiVersion WMI Class
 description: MS\_SM\_HbaApiVersion WMI Class
-ms.localizationpriority: medium
-ms.date: 10/17/2018
+ms.date: 07/13/2022
 ---
 
-# MS\_SM\_HbaApiVersion WMI Class
+# MS_SM_HbaApiVersion WMI Class
 
+An HBA miniport driver that supports the Storage Management API uses the **MS_SM_HbaApiVersion** class to report the current HBA API version.
 
-An HBA miniport driver that supports the Storage Management API uses the MS\_SM\_HbaApiVersion class to report the current HBA API version.
-
-The MS\_SM\_HbaApiVersion class is defined as follows in *Hbaapi.mof*:
+The **MS_SM_HbaApiVersion** class is defined as follows in *Hbaapi.mof*:
 
 ```cpp
 class MS_SM_HbaApiVersion
@@ -21,11 +19,18 @@ class MS_SM_HbaApiVersion
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the following data structure:
+When this class definition is compiled by the WMI tool suite, it produces the following data structure. There are no methods associated with this WMI class.
 
-[**MS\_SM\_HbaApiVersion**](/previous-versions/windows/hardware/drivers/ff563211(v=vs.85))
+``` cpp
+typedef struct _MS_SM_HbaApiVersion {
+  uint32 WmiHbaApiVersion;
+  uint32 HbaApiVersion;
+  string Description;
+} MS_SM_HbaApiVersion, *PMS_SM_HbaApiVersion;
+```
 
-There are no methods associated with this WMI class.
-
- 
-
+| Member | Meaning |
+| ------ | ------- |
+| **WmiHbaApiVersion** | The version information that the WMI provider supports. |
+| **HbaApiVersion**    | The version that the miniport driver supports. |
+| **Description**      | The description of the HBA. |

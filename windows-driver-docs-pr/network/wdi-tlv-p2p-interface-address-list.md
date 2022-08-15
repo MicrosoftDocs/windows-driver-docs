@@ -4,10 +4,11 @@ description: WDI_TLV_P2P_INTERFACE_ADDRESS_LIST is a TLV that contains an addres
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_INTERFACE_ADDRESS_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_INTERFACE\_ADDRESS\_LIST
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_INTERFACE\_ADDRESS\_LIST is a TLV that contains an address list for a Wi-Fi Direct interface.
@@ -31,8 +32,7 @@ The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](/windows-hardware/dr
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

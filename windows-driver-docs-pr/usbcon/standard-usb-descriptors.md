@@ -2,7 +2,6 @@
 description: A USB device provides information about itself in data structures called USB descriptors. This section provides information about device, configuration, interface, and endpoint descriptors and ways to retrieve them from a USB device.
 title: Standard USB descriptors
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Standard USB descriptors
@@ -28,7 +27,7 @@ Every USB device exposes a device descriptor that indicates the device’s class
 
 For example, let's consider the OSR FX2 board device layout (see USB device layout). At device level, the device exposes a device descriptor and an endpoint descriptor for the default endpoint. At configuration level, the device exposes a configuration descriptor for Configuration 0. At interface level, it exposes one interface descriptor for Alternate Setting 0. At the endpoint level, it exposes three endpoint descriptors.
 
-![usb device descriptor layout](images/device-descriptors.png)
+![usb device descriptor layout.](images/device-descriptors.png)
 
 ## USB device descriptor
 

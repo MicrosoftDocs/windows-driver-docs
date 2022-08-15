@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # \_DXGK\_MULTIPLANE\_OVERLAY\_FILTER structure
@@ -24,8 +23,7 @@ Reserved for system use. Do not use it in your driver.
 
  
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_MULITPLANE_OVERLAY_FILTER {
@@ -35,8 +33,7 @@ typedef struct _DXGK_MULITPLANE_OVERLAY_FILTER {
 } DXGK_MULTIPLANE_OVERLAY_FILTER;
 ```
 
-Members
--------
+## Members
 
 **FilterType**
 
@@ -44,8 +41,7 @@ Members
 
 **Value**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

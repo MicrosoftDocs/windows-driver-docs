@@ -2,7 +2,6 @@
 title: Overview of Virtual Machine Multiple Queues (VMMQ)
 description: Overview of Virtual Machine Multiple Queues (VMMQ)
 ms.date: 02/28/2021
-ms.localizationpriority: medium
 ---
 
 # Overview of Virtual Machine Multiple Queues (VMMQ)
@@ -16,7 +15,7 @@ VMMQ works by efficiently distributing network traffic within the NIC hardware. 
 
 You may want to enable the VMMQ feature to reduce the host CPU consumption and enable higher throughput to the virtual system by spreading the CPU load across multiple processors. You can add VMMQ support to new or existing NDIS 6.60 and later drivers. If an adapter supports VMMQ, the driver is vendor-supplied, and the OS is Windows Server 2019, then VMMQ is enabled by default. If the adapter doesn’t support VMMQ, the driver is system-supplied, or the OS is Windows Server 2016, then VMMQ is disabled by default or not available. If the OS is earlier than Windows Server 2016 then VMMQ is not available.
 
-VMMQ is available for the VPorts exposed in the parent partition regardless of whether the NIC is operating in [SR-IOV](overview-of-single-root-i-o-virtualization--sr-iov-.md) or [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md) mode.
+VMMQ is available for the VPorts exposed in the parent partition regardless of whether the NIC is operating in [SR-IOV](overview-of-single-root-i-o-virtualization--sr-iov-.md) or [Virtual Machine Queue (VMQ)](virtual-machine-queue-architecture.md) mode.
 
 
 

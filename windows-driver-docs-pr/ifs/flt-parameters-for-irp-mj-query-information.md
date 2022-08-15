@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # FLT\_PARAMETERS for IRP\_MJ\_QUERY\_INFORMATION union
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 Union component used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is [**IRP\_MJ\_QUERY\_INFORMATION**](irp-mj-query-information.md).
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef union _FLT_PARAMETERS {
@@ -34,8 +32,7 @@ typedef union _FLT_PARAMETERS {
 } FLT_PARAMETERS, *PFLT_PARAMETERS;
 ```
 
-Members
--------
+## Members
 
 **QueryFileInformation**  
 Structure containing the following members.
@@ -114,15 +111,13 @@ Type of file information to be returned. One of the following:
 **InfoBuffer**  
 Pointer to the output buffer where the file information is to be returned.
 
-Remarks
--------
+## Remarks
 
 The [**FLT\_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP\_MJ\_QUERY\_INFORMATION operations contains the parameters for a query-information operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT\_IO\_PARAMETER\_BLOCK structure.
 
 IRP\_MJ\_QUERY\_INFORMATION can be an IRP-based operation or a fast I/O operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

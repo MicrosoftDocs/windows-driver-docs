@@ -1,5 +1,5 @@
 ---
-title: ube
+title: ube (WinDbg)
 description: The ube extension re-enables a user-space breakpoint.
 keywords: ["ube Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ube
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ube
@@ -48,8 +47,7 @@ Specifies the number of the breakpoint to be enabled. An asterisk (\*) indicates
 
  
 
-Remarks
--------
+## Remarks
 
 This is used to re-enable a breakpoint that was disabled by [**!ubd**](-ubd.md).
 

@@ -2,7 +2,6 @@
 title: Wi-Fi Hotspot Offloading Constants
 description: This section describes the constants that are defined for the Wi-Fi Hotspot Offloading framework.
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # Wi-Fi Hotspot Offloading Constants
@@ -121,8 +120,7 @@ Specifies EAP-AKA’ (AKA Prime) authentication.
 0x00010000  
 Specifies use of custom realm value for network authentication.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

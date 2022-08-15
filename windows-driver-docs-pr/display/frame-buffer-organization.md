@@ -11,7 +11,6 @@ keywords:
 - buffers WDK DirectX VA
 - prediction blocks WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Frame Buffer Organization
@@ -28,7 +27,7 @@ Three video component channels (Y, Cb, Cr) are decoded using interfaces defined 
 
 The following figure shows how video data buffering is implemented in the host and accelerator.
 
-![diagram illustrating video data buffering in host and accelerator systems](images/hostaccsys.png)
+![diagram illustrating video data buffering in host and accelerator systems.](images/hostaccsys.png)
 
  
 

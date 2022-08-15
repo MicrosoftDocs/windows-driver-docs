@@ -2,7 +2,6 @@
 title: Virtualized Networking Topics
 description: Virtualized Networking Topics
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Virtualized Networking Topics
@@ -18,7 +17,7 @@ This section describes the following components of virtualized networking:
 
 [Single Root I/O Virtualization (SR-IOV)](single-root-i-o-virtualization--sr-iov-.md)
 
-[Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md)
+[Virtual Machine Queue (VMQ)](virtual-machine-queue-architecture.md)
 
 [Hyper-V Extensible Switch](hyper-v-extensible-switch.md)
 

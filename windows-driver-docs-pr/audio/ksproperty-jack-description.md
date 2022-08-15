@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_JACK\_DESCRIPTION
@@ -69,8 +68,7 @@ KSJACK\_DESCRIPTION\[0\]
 
 KSJACK\_DESCRIPTION\[N-1\]
 
-Remarks
--------
+## Remarks
 
 Each KSJACK\_DESCRIPTION structure must have information about one jack. For example, an output bridge pin that supports 5.1 audio over three stereo jacks, would require a data buffer of size
 
@@ -78,8 +76,7 @@ sizeof(KSMULTIPLE\_ITEM) + 3 \* sizeof(KSJACK\_DESCRIPTION)
 
 and each KSJACK\_DESCRIPTION structure would have a two-bit ChannelMapping value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -109,5 +106,4 @@ Requirements
 
 [KSMULTIPLE\_ITEM](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)
 
-[KSPROPERTY](/previous-versions/ff564262(v=vs.85))
-
+[KSPROPERTY](../stream/ksproperty-structure.md)

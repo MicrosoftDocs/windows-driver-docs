@@ -2,7 +2,6 @@
 title: Duplicate Entry Points for a Function Role Type
 description: Duplicate Entry Points for a Function Role Type
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Duplicate Entry Points for a Function Role Type

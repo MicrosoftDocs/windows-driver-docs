@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ScannerState element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **ScannerState** element identifies the current state of the scanning portion of the scan device.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScannerState>
@@ -26,13 +24,11 @@ Usage
 </wscn:ScannerState>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. One of the following string values.
 
@@ -71,8 +67,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 [**GetScannerElementsRequest**](getscannerelementsrequest.md)
 

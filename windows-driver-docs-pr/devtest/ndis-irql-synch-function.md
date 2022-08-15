@@ -9,7 +9,6 @@ api_name:
 - Irql_Synch_Function
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Irql\_Synch\_Function rule (ndis)
@@ -19,8 +18,7 @@ The **Irql\_Synch\_Function** rule specifies that the NDIS interrupt and synchro
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NDIS\_RELEASE\_MUTEX**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndis_release_mutex)
 [**NDIS\_WAIT\_FOR\_MUTEX**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndis_wait_for_mutex)

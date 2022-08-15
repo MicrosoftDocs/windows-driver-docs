@@ -10,7 +10,6 @@ api_location:
 - Setupapi.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -21,7 +20,7 @@ A DIF_INSTALLDEVICEFILES request allows an installer to participate in copying t
 
 ### When Sent
 
-The [system-provided device installation components](./system-provided-device-installation-components.md) send this DIF request for a variety of reasons. Some device installation components send this DIF request before DIF_REGISTER_COINSTALLERS, DIF_INSTALLINTERFACES, and DIF_INSTALL_DEVICE to ensure that all the relevant files can be copied before proceeding with the installation. Some device installation components omit this DIF request and expect the files to be copied during the handling of those three DIF requests. In addition, some device installation components send this DIF request to retrieve the list of the files associated with a device.
+The [system-provided device installation components](./overview-of-device-and-driver-installation.md) send this DIF request for a variety of reasons. Some device installation components send this DIF request before DIF_REGISTER_COINSTALLERS, DIF_INSTALLINTERFACES, and DIF_INSTALL_DEVICE to ensure that all the relevant files can be copied before proceeding with the installation. Some device installation components omit this DIF request and expect the files to be copied during the handling of those three DIF requests. In addition, some device installation components send this DIF request to retrieve the list of the files associated with a device.
 
 ### Who Handles
 
@@ -95,12 +94,11 @@ In response to a DIF_INSTALLDEVICEFILES request an installer specifies any neces
 
 If this DIF request is sent during device installation, and the installer returns a Microsoft Win32 error code, Windows stops the installation.
 
-If a [system-provided device installation component](./system-provided-device-installation-components.md) sends this DIF request to retrieve a list of the files associated with a device, the component retrieves the file queue but does not commit the queue.
+If a [system-provided device installation component](./overview-of-device-and-driver-installation.md) sends this DIF request to retrieve a list of the files associated with a device, the component retrieves the file queue but does not commit the queue.
 
 For more information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -127,6 +125,3 @@ Requirements
 [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data)
 
 [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
-
- 
-

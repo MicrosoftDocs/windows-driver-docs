@@ -10,7 +10,6 @@ api_location:
 - Ntddpar.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -19,8 +18,7 @@ ms.date: 10/17/2018
 
 GUID_PARALLEL_DEVICE is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for parallel ports that support an IEEE 1284-compatible hardware interface. For new instances of this class, use the [**GUID_DEVINTERFACE_PARALLEL**](guid-devinterface-parallel.md) class identifier instead.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

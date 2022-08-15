@@ -4,7 +4,6 @@ description: As a query, NDIS and overlying drivers use the OID_GEN_LINK_STATE O
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_LINK_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_LINK\_STATE
@@ -20,8 +19,7 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Not requested. (see Remarks section)
 
-Remarks
--------
+## Remarks
 
 Miniport drivers supply the link state during initialization and provide updates with status indications.
 
@@ -29,8 +27,7 @@ To specify the link state, set the **MediaConnectState**, **MediaDuplexState**, 
 
 If a miniport driver does not support this OID, the driver should return NDIS\_STATUS\_NOT\_SUPPORTED. If the miniport driver supports this OID, it returns the connection state, duplex state, and link speeds in an [**NDIS\_LINK\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_state) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -52,7 +49,7 @@ Requirements
 
 [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes)
 
-[**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header)
+[**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header)
 
 [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes)
 

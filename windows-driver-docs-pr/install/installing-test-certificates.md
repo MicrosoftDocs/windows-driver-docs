@@ -2,7 +2,6 @@
 title: Installing Test Certificates
 description: Installing Test Certificates
 ms.date: 07/20/2020
-ms.localizationpriority: medium
 ---
 
 # Installing Test Certificates
@@ -41,7 +40,7 @@ After the certificate is copied to the Trusted Root Certification Authorities ce
 
 The following screenshot shows the Contoso.com(Test) certificate in the Trusted Root Certification Authorities certificate store.
 
-![screen shot of the trusted root certification authorities certificate store in the mmc certificates snap-in](images/certstore2.png)
+![screen shot of the trusted root certification authorities certificate store in the mmc certificates snap-in.](images/certstore2.png)
 
 You can also view the certificate at the command prompt:
 

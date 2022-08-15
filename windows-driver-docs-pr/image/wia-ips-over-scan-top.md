@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 05/22/2018
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_OVER\_SCAN\_TOP
@@ -28,13 +27,11 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 This property is valid for all programmable image data source items, including Flatbed (WIA\_CATEGORY\_FLATBED) and Feeder (WIA\_CATEGORY\_FEEDER) but only when the [**WIA\_IPS\_OVER\_SCAN**](wia-ips-over-scan.md) property is supported. When it is supported, this property is required.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -4,7 +4,6 @@ description: MB Device-based Reset and Recovery trace
 keywords:
 - MB Device-based Reset and Recovery, Mobile Broadband Device-based Reset and Recovery, Mobile Broadband miniport driver Device-based Reset and Recovery
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # MB Device Reset and Recovery (RnR) trace

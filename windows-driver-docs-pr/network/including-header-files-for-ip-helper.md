@@ -5,7 +5,6 @@ keywords:
 - IP Helper WDK networking , including header files
 - header files WDK IP Helper
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Including Header Files for IP Helper
@@ -31,7 +30,7 @@ Therefore, do not include the following header files in your driver code:
 - Ws2def.h
 - Ws2ipdef.h
 
-For information about the user-mode versions of the IP Helper functions and MIB structures, see the Windows SDK documentation.
+For information about the user-mode versions of the IP Helper functions and MIB structures, see the [Windows SDK IP Helper documentation](/windows/win32/iphlp/ip-helper-start-page).
 
  
 

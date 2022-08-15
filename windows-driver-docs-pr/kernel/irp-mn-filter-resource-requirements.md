@@ -4,7 +4,6 @@ description: The PnP manager sends this IRP to a device stack so the function dr
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_FILTER_RESOURCE_REQUIREMENTS Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS
@@ -22,13 +21,11 @@ Upper and lower-filter drivers do not handle this IRP.
 
 0x0D
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP when it is preparing to allocate resource(s) to a device.
 
@@ -49,14 +46,13 @@ Returned in the I/O status block.
 ## I/O Status Block
 
 
-If a function driver handles this IRP, it handles it on the IRP's way back up the stack. If the function driver handles the IRP successfully, it sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS and sets **Irp-&gt;IoStatus.Information** to a pointer to an [**IO\_RESOURCE\_REQUIREMENTS\_LIST**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_resource_requirements_list) containing the filtered resource requirements. See the "Operation" section below for more information about setting the filtered resource list. If a function driver encounters an error when handling this IRP, it sets the error in **Irp-&gt;IoStatus.Status**. If a function driver does not handle this IRP, it uses [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) to pass the IRP down the stack unchanged.
+If a function driver handles this IRP, it handles it on the IRP's way back up the stack. If the function driver handles the IRP successfully, it sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS and sets **Irp-&gt;IoStatus.Information** to a pointer to an [**IO\_RESOURCE\_REQUIREMENTS\_LIST**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_resource_requirements_list) containing the filtered resource requirements. See the "Operation" section below for more information about setting the filtered resource list. If a function driver encounters an error when handling this IRP, it sets the error in **Irp-&gt;IoStatus.Status**. If a function driver does not handle this IRP, it uses [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) to pass the IRP down the stack unchanged.
 
 Upper and lower-filter drivers do not handle this IRP. Such a driver calls **IoSkipCurrentIrpStackLocation**, passes the IRP down to the next driver, must not modify **Irp-&gt;IoStatus**, and must not complete the IRP.
 
 The parent bus driver does not handle this IRP. It leaves **Irp-&gt;IoStatus** as is and completes the IRP.
 
-Operation
----------
+## Operation
 
 The PnP manager sends an [**IRP\_MN\_QUERY\_RESOURCE\_REQUIREMENTS**](irp-mn-query-resource-requirements.md) request to the parent bus driver for the device, before the function driver has attached its device object to the device stack. To give the function driver an opportunity to modify the device's resource requirements, if appropriate, the PnP manager later sends an **IRP\_MN\_FILTER\_RESOURCE\_REQUIREMENTS** request to the full device stack. The PnP manager sends this IRP before it allocates hardware resources to the device during initial device configuration. The PnP manager might also send this IRP during resource rebalancing.
 
@@ -86,8 +82,7 @@ See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules fo
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

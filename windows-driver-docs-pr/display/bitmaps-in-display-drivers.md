@@ -7,7 +7,6 @@ keywords:
 - bit-block transfers WDK Windows 2000 display
 - off-screen memory WDK Windows 2000 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Bitmaps in Display Drivers

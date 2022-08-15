@@ -9,7 +9,6 @@ api_name:
 - sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions)
@@ -73,8 +72,7 @@ Affects all exceptions that are not otherwise explicitly named for **sx**. For a
 
 For more information about break status and handling status, descriptions of all event codes, a list of the default status for all events, and other methods of controlling this status, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
-Remarks
--------
+## Remarks
 
 The **sx** command displays the list of exceptions for the current process and the list of all nonexception events and displays the default behavior of the debugger for each exception and event.
 

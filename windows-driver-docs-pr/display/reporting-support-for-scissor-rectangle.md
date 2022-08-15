@@ -5,7 +5,6 @@ keywords:
 - scissor rectangle WDK DirectX 9.0 , reporting support
 - rectangular clipping region WDK DirectX 9.0 , reporting support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Support for Scissor Rectangle

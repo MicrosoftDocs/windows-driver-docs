@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_VIDEOCONTROL\_CAPS
@@ -56,13 +55,11 @@ The KSPROPERTY\_VIDEOCONTROL\_CAPS property identifies the video control capabil
 
 The property value (operation data) is a KSPROPERTY\_VIDEOCONTROL\_CAPS\_S structure that specifies the video-control capabilities of a minidriver, such as image flipping or event triggering abilities.
 
-Remarks
--------
+## Remarks
 
 The **VideoControlCaps** member of the KSPROPERTY\_VIDEOCONTROL\_CAPS\_S structure specifies the video control capabilities of the device.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -80,7 +77,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_VIDEOCONTROL\_CAPS\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocontrol_caps_s)
 

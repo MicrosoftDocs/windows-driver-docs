@@ -3,7 +3,6 @@ title: Using PnP Target Device Change Notification
 description: Using PnP Target Device Change Notification
 keywords: ["notifications WDK PnP , target device changes", "target device change notifications WDK PnP", "EventCategoryTargetDeviceChange notification"]
 ms.date: 10/30/2018
-ms.localizationpriority: medium
 ---
 
 # Using PnP Target Device Change Notification

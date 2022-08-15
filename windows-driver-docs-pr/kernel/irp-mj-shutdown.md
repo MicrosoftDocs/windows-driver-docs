@@ -4,7 +4,6 @@ description: Drivers of mass-storage devices that have internal caches for data 
 ms.date: 08/12/2017
 keywords:
  - IRP_MJ_SHUTDOWN Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MJ\_SHUTDOWN
@@ -12,8 +11,7 @@ ms.localizationpriority: medium
 
 Drivers of mass-storage devices that have internal caches for data must handle this request in a [*DispatchShutdown*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine. Drivers of mass-storage devices and intermediate drivers layered over them also must handle this request if an underlying driver maintains internal buffers for data.
 
-When Sent
----------
+## When Sent
 
 Receipt of a shutdown request indicates that a file system driver is sending notice that the system is being shut down.
 
@@ -31,15 +29,13 @@ None
 
 None
 
-Operation
----------
+## Operation
 
 The driver must complete the transfer of any data currently cached in the device or held in the driver's internal buffers before completing the shutdown request.
 
 A driver does not receive an **IRP\_MJ\_SHUTDOWN** request for a device object unless it registers to do so with either [**IoRegisterShutdownNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregistershutdownnotification) or [**IoRegisterLastChanceShutdownNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterlastchanceshutdownnotification).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

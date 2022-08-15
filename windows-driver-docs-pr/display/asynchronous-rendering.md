@@ -9,7 +9,6 @@ keywords:
 - batching DirectDraw drawing calls WDK Windows 2000 display
 - DirectDraw WDK Windows 2000 display , call batches
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Asynchronous Rendering

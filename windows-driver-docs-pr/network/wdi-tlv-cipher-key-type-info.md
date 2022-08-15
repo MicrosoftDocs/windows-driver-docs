@@ -4,10 +4,11 @@ description: WDI_TLV_CIPHER_KEY_TYPE_INFO is a TLV that contains cipher key type
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CIPHER_KEY_TYPE_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CIPHER\_KEY\_TYPE\_INFO
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_CIPHER\_KEY\_TYPE\_INFO is a TLV that contains cipher key type information for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](./oid-wdi-set-add-cipher-keys.md) and [OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS](./oid-wdi-set-delete-cipher-keys.md).
@@ -34,8 +35,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

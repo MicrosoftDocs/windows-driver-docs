@@ -9,7 +9,6 @@ api_name:
 - RequestSendAndForgetNoFormatting2
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # RequestSendAndForgetNoFormatting2 rule (kmdf)
@@ -21,8 +20,7 @@ The **RequestSendAndForgetNoFormatting2** rule specifically checks for the drive
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfIoTargetFormatRequestForInternalIoctl**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetformatrequestforinternalioctl)
 [**WdfIoTargetFormatRequestForInternalIoctlOthers**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetformatrequestforinternalioctlothers)

@@ -2,7 +2,6 @@
 title: Test presence or need for custom WDTF simple I/O action plug-ins
 description: If you have configured a remote computer for testing using Visual Studio, you can run a utility test that displays all the devices that have WDTF Simple I/O plug-ins.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to determine if a custom WDTF Simple I/O Action Plug-in is required for your device
@@ -16,8 +15,7 @@ If you have configured a remote computer for testing using Visual Studio, you ca
 -   Driver Package that is test signed and installed on the test computer. To verify that your driver is correctly installed, see How to test driver package.
 -   Test computers that are configured and provisioned for deployment. See [test a driver at runtime using Visual Studio](/windows-hardware/drivers)
 
-Instructions
-------------
+## Instructions
 
 ### Test your device to see if you need to customize the WDTF Simple I/O Action Plug-in
 

@@ -1,18 +1,17 @@
 ---
-title: Myriad of machines with integrated GPU that had a TDR caused by a crash in the graphics driver binary (Ecosystem)
+title: Myriad of machines with integrated GPU that had a TDR caused by graphics driver crash (ecosystem)
 description: Learn about the measure that evaluates a myriad of machines with integrated GPUs having the driver and encountering TDR due to a graphics driver binary crash.
 ms.topic: article
-ms.date: 06/18/2020
-ms.localizationpriority: medium
+ms.date: 09/02/2021
 ---
 
-# Myriad of machines with integrated GPU that had a TDR caused by a crash in the graphics driver binary (Ecosystem)
+# Myriad of machines with integrated GPU that had a TDR caused by graphics driver crash (ecosystem)
 
 ## Description
 
-During a user's session, crash in the graphics driver binary may cause the machine’s screen to hang or appear completely frozen. A Timeout Detection and Recovery (TDR) event attempts to detect these hangs and dynamically recover to unfreeze the display. Users that have encountered a TDR will be unable to use their computer until the TDR is successful, which causes the screen to flicker. This measure evaluates myriad (out of 10,000) of machines with integrated GPUs having the driver, encountering TDR due to a crash in graphics driver binary.
+During a user's session, a crash in the graphics driver binary may cause the machine's screen to hang or appear completely frozen. A Timeout Detection and Recovery (TDR) event attempts to detect these hangs and dynamically recover to unfreeze the display. Users that have encountered a TDR will be unable to use their computer until the TDR is successful, which causes the screen to flicker. This measure evaluates myriad (out of 10,000) of machines with integrated GPUs having the driver, encountering TDR due to a crash in graphics driver binary.
 
-This is the ecosystem counterpart of [Myriad of machines with integrated GPU that had a TDR caused by a crash in the graphics driver binary](graphics-tdr-integrated-gpu.md) measure.
+This is the ecosystem counterpart of [Myriad of machines with integrated GPU that had a TDR caused by a graphics driver crash](graphics-tdr-integrated-gpu.md) measure.
 
 ## Measure attributes
 
@@ -37,7 +36,7 @@ Ratio of machines that experienced TDR = Machines that experienced a TDR/ Total 
 
 ### Final calculation
 
-Distinct device Hits over Population (DHoP) = Ratio of machines that experienced a TDR * 10,000
+Distinct device Hits over Population (DHoP) = ratio of machines that experienced a TDR * 10,000
 
 In above calculation, the result is normalized to 10,000 machines and the final result can be read as:
 [Distinct device Hits over Population (DHoP)] distinct machines out of 10,000 machines with integrated GPU experienced a TDR due to a crash in the graphics driver binary

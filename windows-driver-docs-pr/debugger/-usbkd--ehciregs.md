@@ -9,7 +9,6 @@ api_name:
 - usbkd._ehciregs
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.\_ehciregs
@@ -35,8 +34,7 @@ The number of root hub port status registers to display.
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to get the address of a **usbehci!\_HC\_OPERATIONAL\_REGISTER** structure. First enter [**!usbkd.usbhcdlist**](-usbkd-usbhcdlist.md).
 

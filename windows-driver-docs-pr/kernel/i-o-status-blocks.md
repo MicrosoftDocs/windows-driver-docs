@@ -3,7 +3,6 @@ title: I/O Status Blocks
 description: I/O Status Blocks
 keywords: ["IRPs WDK kernel , I/O status blocks", "I/O status blocks WDK kernel", "status blocks WDK kernel", "IO_STATUS_BLOCK structure", "status information WDK IRPs", "IRPs WDK kernel , status information"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # I/O Status Blocks

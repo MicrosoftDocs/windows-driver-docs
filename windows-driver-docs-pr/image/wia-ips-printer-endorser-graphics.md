@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS
@@ -28,15 +27,13 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 If **WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS** is supported and set to a value of nonzero (True), the Imprinter/Endorser supports graphic data.
 
 This property is required for all Imprinter/Endorser items, but it can be implemented to always report a value of 0 (False).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -11,7 +11,6 @@ keywords:
 - DDB WDK GDI
 - device-independent bitmaps WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Surface Types

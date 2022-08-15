@@ -6,7 +6,6 @@ keywords:
 - UI plug-ins WDK print , COM interfaces
 - COM interfaces WDK print , user interface plug-ins
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # COM Interfaces for UI Plug-Ins
@@ -31,7 +30,7 @@ The following COM interfaces are defined for communication between Microsoft's p
 
 The following figure shows the inheritance tree for the COM interfaces that are used in UI plug-ins.
 
-![diagram illustrating the inheritance tree for the com interfaces used in ui plug-ins](images/uiintf2.png)
+![diagram illustrating the inheritance tree for the com interfaces used in ui plug-ins.](images/uiintf2.png)
 
  
 

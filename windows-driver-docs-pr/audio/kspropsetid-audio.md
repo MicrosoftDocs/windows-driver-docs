@@ -3,7 +3,6 @@ title: KSPROPSETID\_Audio
 description: KSPROPSETID\_Audio
 keywords: ["KSPROPSETID_Audio"]
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_Audio

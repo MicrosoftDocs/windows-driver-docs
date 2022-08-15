@@ -10,7 +10,6 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,15 +43,13 @@ The KSCATEGORY_ACOUSTIC_ECHO_CANCEL [device interface class](./overview-of-devic
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS audio devices register instances of KSCATEGORY_ACOUSTIC_ECHO_CANCEL to indicate to the operating system that the devices support the KS functional category that performs acoustic echo cancellation.
 
 For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

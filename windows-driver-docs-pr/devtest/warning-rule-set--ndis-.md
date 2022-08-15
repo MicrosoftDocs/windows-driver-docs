@@ -2,7 +2,6 @@
 title: Warning rule set (NDIS)
 description: Learn about using rules (NDIS) to verify that your driver can correctly processes IRPs in various contexts and follow Microsoft recommended best practices.
 ms.date: 05/21/2018
-ms.localizationpriority: medium
 ---
 
 # Warning rule set (NDIS)

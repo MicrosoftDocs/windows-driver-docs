@@ -4,7 +4,6 @@ description: SO_KEEPALIVE
 ms.date: 08/08/2017
 keywords: 
  -SO_KEEPALIVE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SO\_KEEPALIVE
@@ -131,8 +130,7 @@ Keep-alive packets are sent by the underlying network transport. Not all network
 
 For more information about using keep-alive packets, see *RFC 1122*, section 4.2.3.6, "TCP Keep-Alives".
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -4,7 +4,6 @@ description: This topic describes how NetAdapterCx client drivers use net rings 
 keywords:
 - NetAdapterCx Net rings and net ring iterators cancel, NetAdapterCx cancel packet queue
 ms.date: 11/01/2019
-ms.localizationpriority: medium
 ms.custom: Vib
 ---
 

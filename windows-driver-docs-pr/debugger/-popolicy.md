@@ -1,5 +1,5 @@
 ---
-title: popolicy
+title: popolicy (WinDbg)
 description: The popolicy extension displays the power policy of the target computer.
 keywords: ["popolicy Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - popolicy
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !popolicy
@@ -52,8 +51,7 @@ Specifies the address of the power policy structure to display. If this is omitt
 
 To view the system's power capabilities, use the [**!pocaps**](-pocaps.md) extension command. For information about power capabilities and power policy, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 Here is an example of this command's output:
 

@@ -2,7 +2,6 @@
 description: In Windows 8.1, you can write a UWP app that interacts with a USB device.
 title: How to connect to a USB device (UWP app)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to connect to a USB device (UWP app)
@@ -39,7 +38,7 @@ To connect to a USB device, you must first find the device based on various disc
 -   Connect to a USB device with a particular Vendor ID and Product ID without knowing the device interface GUID.
 -   Connect to a USB device which has known device class.
 
-![usb device discovery](images/scenario1-flowchart.png)
+![usb device discovery.](images/scenario1-flowchart.png)
 
 ## Key concepts
 

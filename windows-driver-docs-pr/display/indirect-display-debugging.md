@@ -1,11 +1,10 @@
 ---
 title: Debugging indirect display drivers
 description: Describes debugging techniques for indirect display drivers
-ms.date: 07/17/2020
+ms.date: 08/05/2022
 keywords:
 - Indirect display drivers, debugging
 - IDDs, debugging
-ms.localizationpriority: medium
 ---
 
 # Debugging indirect display drivers
@@ -40,7 +39,8 @@ The Indirect Display Driver Class eXtension (IccDx) has some registry settings t
 | 0x0100 | Unused |
 | 0x0200 | Enable debug overlay, see below |
 | 0x0400 | Overlay colored alpha box over dirty rects in frame; requires 0x0200 to be set |
-| 0x0800 | Overlay pref stats into frame; requires 0x0200 to be set |
+| 0x0800 | Overlay pref stats into frame |
+| 0x2000 | IddCx will query the capture frame registry values every frame; requires 0x0200 to be set |
 
 > [!NOTE]
 >
@@ -225,3 +225,138 @@ Total of 537 Messages from 5 Buffers
 ```
 
 The last line gives the reason for the failure.
+
+## Indirect display screen capture debug functionality
+
+Starting in [Windows build 25164](/windows-insider/flight-hub/), IddCx has the ability to dump the desktop frame that IddCx passes to the driver. This functionality can be used to debug visual issues. It can be combined with the debug overlays like shading dirty regions of a frame.
+
+As IddCx will look for changes in the debug registry setting for frame capture on every frame, there is a master control value in [IddCxDebugCtrl](#iddcxdebugctrl-values) that controls whether IddCx will check the capture registry value each frame. This ensures there is no performance penalty when disabled.
+
+> [!NOTE]
+> This functionality is disabled when the OPM interface is active to the driver.
+
+### Registry values that control the capture
+
+The following registry values are located in **HKLM\System\CurrentControlSet\Control\GraphicsDrivers\IddCxFrameCapture**. This registry folder should be created before the IddCxDebugCtrl value is set.
+
+| Name | Default if missing | Meaning |
+| ---- | ------------------ | ------- |
+| **TriggerUniqueness**  | 0      | When each IddCx swapchain is called to acquire a new frame it will read this value. If **TriggerUniqueness** is non-zero and different from the previously read value then the below values will be read and frame capture will be enabled. |
+| **TargetMask**         | 0xffff | Bitmask, one bit for each target index on the adapter that controls whether the swapchain for that target should be part of this capture sequence. |
+| **CaptureCount**       | 10     | Number of frames that each enabled-for-capture IddCx swapchain should capture. |
+| **SkipFrames**         | 0      | Number of frames to skip between each captured frame. |
+| **CaptureSessionID**   | 0      | The session in which frame capture will be enabled. A value of zero always means the console session. |
+| **ScaleFactor**        | 100    | Controls the scale factor used to decide what the dimensions of the captured file, valid values 1-100
+| **CaptureFolder**      | *c:\IddCxImages* | Folder where capture files will be written. A *c:\IddCxImages* folder will be created if it doesn't exist. |
+
+The capture parameters are stored per target which allows a capture session to span a mode change on a given target.
+
+If a new non-zero **TriggerUniqueness** value is detected while a monitor object is still capturing frames from a previous capture it will stop the current capture and start the newly triggered one.
+
+### Using REG files to control frame capture
+
+REG files are a good way to control the frame captures. One file can set the initial values and another can update **TriggerUniqueness**.
+
+#### REG file to set initial values
+
+``` Registry
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]
+"IddCxDebugCtrl"=dword:2200
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\IddCxFrameCapture]
+"TriggerUniqueness"=dword:0
+```
+
+#### REG file to update TriggerUniqueness
+
+``` Registry
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\IddCxFrameCapture]
+"TriggerUniqueness"=dword:1
+```
+
+### File name and format
+
+The captured frames will be in PNG file format with the following file name format:
+
+S<*Session Id, zero for console*>\_Ad<*Hex value of ID adapter LUID*>\_T<*Hex Value of ID target Idx*>\_Frame<*Frame number from IDDCX_METADATA.PresentationFrameNumber*>\_<*Date in mmddyy format*>\_<*Time in hhmmss*>.png
+
+The following are some example file names:
+
+* S0_Ad8ade_T3_Frame2343_020422_173434.png
+* S0_Ad8ade_T3_Frame2344_020422_173434.png
+* S0_Ad8ade_T3_Frame2345_020422_173435.png
+
+### WPP logging
+
+For each *new* capture session that is started, WPP messages will be logged for each value read in from the registry or set by default.
+
+Each time a frame is captured and written to file, IddCx will add a WPP message that contains the full filename of the image file.
+
+### Example capture setting
+
+#### Capture frames from when a monitor is first connected
+
+The following are the registry values needed in order to capture the first 20 frames of when any monitor is first plugged in, followed by the REG file.
+
+| Registry entry    | Value | Notes |
+| --------------    | ----- | ----- |
+| CaptureCount      | 20    | Set 20 frames rather than the default 10
+| TriggerUniqueness | 1     | Any non-zero value will work as target object starts with zero as store uniqueness
+
+``` Registry
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\IddCxFrameCapture]
+"CaptureCount"=dword:00000014
+"TriggerUniqueness"=dword:00000001
+```
+
+#### Start capture while monitor is active
+
+Given that the swapchains check for a new uniqueness value when the driver acquires each frame, you should set the **TriggerUniqueness** entry last to ensure all the parameters are read as expected. The following example also halves the file resolution in order to save space and writes the capture files in the *c:\frames* folder.
+
+| Registry entry    | Value | Notes |
+| --------------    | ----- | ----- |
+| CaptureCount      | 100   | Set 100 frames rather than the default 10 |
+| ScaleFactor       | 50    | Set 50% resolution to save space |
+| CaptureFolder     | *c:\frames* | Set output folder |
+| TriggerUniqueness | 1     | Any non-zero value will work as the target object starts with zero as store uniqueness |
+
+``` Registry
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\IddCxFrameCapture]
+"CaptureCount"=dword:00000014
+"CaptureFolder"="c:\\frames"
+"ScaleFactor"=dword:00000032
+"TriggerUniqueness"=dword:00000001
+```
+
+#### Capture 10 frames from second target in remote session 3 with 5 frames between each capture
+
+This capture also uses debug overlay to highlight the dirty regions for each of the frames.
+
+| Registry entry    | Value | Notes |
+| --------------    | ----- | ----- |
+| IddCxDebugCtrl    | Bit 0x0400 also set | 0x0400 enables dirty region highlighting, 0x2200 bits also required |
+| CaptureSessionID  | 3     | Enables capture in remote session 3  |
+| TargetMask        | 0x2   | Bit 1 corresponds to target Idx 1 |
+| SkipFrames        | 5     | Skip capturing 5 frames between each capture |
+| TriggerUniqueness | 1     | Any non-zero value will work as target object starts with zero as store uniqueness |
+
+``` Registry
+Windows Registry Editor Version 5.00  
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers]  
+"IddCxDebugCtrl"=dword:2600
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers\IddCxFrameCapture]
+"CaptureSessionID"=dword:00000003
+"TargetMask"=dword:00000002
+"SkipFrames"=dword:00000005    
+"TriggerUniqueness"=dword:00000001
+```

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # D3DKMT\_OUTPUTDUPL\_METADATATYPE enumeration
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _D3DKMT_OUTPUTDUPL_METADATATYPE {
@@ -29,15 +27,13 @@ typedef enum _D3DKMT_OUTPUTDUPL_METADATATYPE {
 } D3DKMT_OUTPUTDUPL_METADATATYPE;
 ```
 
-Constants
----------
+## Constants
 
 <span id="D3DKMT_OUTPUTDUPL_METADATATYPE_DIRTY_RECTS"></span><span id="d3dkmt_outputdupl_metadatatype_dirty_rects"></span>**D3DKMT\_OUTPUTDUPL\_METADATATYPE\_DIRTY\_RECTS**
 
 <span id="D3DKMT_OUTPUTDUPL_METADATATYPE_MOVE_RECTS"></span><span id="d3dkmt_outputdupl_metadatatype_move_rects"></span>**D3DKMT\_OUTPUTDUPL\_METADATATYPE\_MOVE\_RECTS**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

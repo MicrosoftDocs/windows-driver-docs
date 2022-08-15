@@ -1,5 +1,5 @@
 ---
-title: vtop
+title: vtop (WinDbg)
 description: The vtop extension converts a virtual address to the corresponding physical address, and displays other page table and page directory information.
 keywords: ["vtop Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - vtop
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !vtop
@@ -47,8 +46,7 @@ Kdexts.dll
 
 For other methods of achieving these results, see [Converting Virtual Addresses to Physical Addresses](converting-virtual-addresses-to-physical-addresses.md). Also see [**!ptov**](-ptov.md). For information about page tables and page directories, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 To use this command, first use the [**!process**](-process.md) extension to determine the directory base of the process. The page frame number (PFN) of this directory base can be found by removing the three trailing hexadecimal zeros (in other words, by right-shifting the number 12 bits).
 

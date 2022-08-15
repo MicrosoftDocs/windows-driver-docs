@@ -4,7 +4,6 @@ description: The PnP manager uses this IRP to get a device's boot configuration 
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_QUERY_RESOURCES Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_RESOURCES
@@ -18,13 +17,11 @@ Bus drivers must handle this request for their child devices that require hardwa
 
 0x0A
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP when a device is enumerated.
 
@@ -47,8 +44,7 @@ A bus driver that handles this IRP sets **Irp-&gt;IoStatus.Status** to STATUS\_S
 
 On success, a bus driver sets **Irp-&gt;IoStatus.Information** to a pointer to a [**CM\_RESOURCE\_LIST**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_resource_list) that contains the requested information. On an error, the bus driver sets **Irp-&gt;IoStatus.Information** to zero.
 
-Operation
----------
+## Operation
 
 If a bus driver returns a resource list in response to this IRP, it allocates a [**CM\_RESOURCE\_LIST**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_resource_list) from paged memory. The PnP manager frees the buffer when it is no longer needed.
 
@@ -64,8 +60,7 @@ Reserved for system use. Drivers must not send this IRP.
 
 Drivers can call [**IoGetDeviceProperty**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty) to get the boot configuration for a device, in both raw and translated forms.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

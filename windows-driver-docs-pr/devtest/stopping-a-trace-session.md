@@ -6,7 +6,6 @@ keywords:
 - stopping trace sessions
 - TraceView WDK , stopping trace
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Stopping a Trace Session

@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ADF element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The optional **ADF** element describes the capabilities of the automatic document feeder (ADF) that is attached to the scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ADF>
@@ -26,8 +24,7 @@ Usage
 </wscn:ADF>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -75,8 +72,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 If the scan device has an ADF, the WSD Scan Service must provide configuration information for all **ADF** child elements.
 

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_PATCH\_CODE\_READER
@@ -28,8 +27,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The following table describes the required values for the **WIA\_IPS\_PATCH\_CODE\_READER** property.
 
@@ -87,8 +85,7 @@ The following table describes the required values for the [**WIA\_IPA\_FORMAT**]
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

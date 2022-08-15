@@ -1,5 +1,5 @@
 ---
-title: apc
+title: apc (WinDbg)
 description: The apc extension formats and displays the contents of one or more asynchronous procedure calls (APCs).
 keywords: ["apc Windows Debugging"]
 ms.date: 09/17/2018
@@ -9,7 +9,6 @@ api_name:
 - apc
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !apc
@@ -63,8 +62,7 @@ Specifies the address of the kernel APC to be displayed.
 
 For information about APCs, see the Windows Driver Kit (WDK) documentation and Microsoft Windows Internals by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 Without any parameters, **!apc** displays all APCs.
 

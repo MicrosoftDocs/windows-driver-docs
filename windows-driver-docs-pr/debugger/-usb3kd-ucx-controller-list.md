@@ -9,7 +9,6 @@ api_name:
 - usb3kd.ucx_controller_list
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usb3kd.ucx\_controller\_list
@@ -26,7 +25,7 @@ The [**!usb3kd.ucx\_controller\_list**](-usb3kd-device-info.md) command displays
 
 The following screen shot show the output of the [**!ucx\_controller\_list**](-usb3kd-device-info.md) command.
 
-![output of the !ucx\-controller\-list command showing ucx controllers devices and endpoints](images/ucxcontrollerlist01.png)
+![output of the !ucx\-controller\-list command showing ucx controllers devices and endpoints.](images/ucxcontrollerlist01.png)
 
 The output shows that there is one USB 3.0 host controller, which is represented by the line that begins with [**!ucx\_controller**](-usb3kd-ucx-controller.md). You can see that two devices are connected to the controller and that each device has four endpoints.
 
@@ -41,8 +40,7 @@ The output uses [Using Debugger Markup Language (DML)](debugger-markup-language-
 
 Usb3kd.dll
 
-Remarks
--------
+## Remarks
 
 The [**!ucx\_controller\_list**](-usb3kd-device-info.md) command is the parent command for this set of commands.
 
@@ -50,7 +48,7 @@ The [**!ucx\_controller\_list**](-usb3kd-device-info.md) command is the parent c
 -   [**!ucx\_device**](-usb3kd-ucx-device.md)
 -   [**!ucx\_endpoint**](-usb3kd-ucx-endpoint.md)
 
-The USB host controller extension driver (Ucx*Version*.sys) provides a layer of abstraction between the USB 3.0 hub driver and the USB 3.0 host controller driver. The extension driver has its own representation of host controllers, devices, and endpoints. The outputs of the commands in the [**!ucx\_controller\_list**](-usb3kd-device-info.md) family are based on the data structures maintained by the extension driver. For more information about the USB host controller extension driver and the USB 3.0 host controller driver, see [USB Driver Stack Architecture](../usbcon/usb-3-0-driver-stack-architecture.md). For an explanation of the data structures used by the drivers in the USB 3.0 stack, see Part 2 of the [USB Debugging Innovations in Windows 8](https://channel9.msdn.com/Events/BUILD/BUILD2011/HW-258P) video.
+The USB host controller extension driver (Ucx*Version*.sys) provides a layer of abstraction between the USB 3.0 hub driver and the USB 3.0 host controller driver. The extension driver has its own representation of host controllers, devices, and endpoints. The outputs of the commands in the [**!ucx\_controller\_list**](-usb3kd-device-info.md) family are based on the data structures maintained by the extension driver. For more information about the USB host controller extension driver and the USB 3.0 host controller driver, see [USB Driver Stack Architecture](../usbcon/usb-3-0-driver-stack-architecture.md). For an explanation of the data structures used by the drivers in the USB 3.0 stack, see Part 2 of the [USB Debugging Innovations in Windows 8](/events/build-build2011/hw-258p) video.
 
 ## <span id="see_also"></span>See also
 

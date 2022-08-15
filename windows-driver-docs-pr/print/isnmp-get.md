@@ -17,15 +17,13 @@ api_location:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ISNMP::Get method
 
 The `Get` method enables an ASP Web page to obtain the value identified by an SNMP OID.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT Get(
@@ -34,8 +32,7 @@ HRESULT Get(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrOID* \[in\]  
 Caller-supplied pointer to an OID string.
@@ -43,8 +40,7 @@ Caller-supplied pointer to an OID string.
 *varValue* \[out\]  
 Caller-supplied location to receive the OID's value.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -94,8 +90,7 @@ objSNMP.Open strIP, strCommunity, 2, 1000
 OIDValue = objSNMP.Get ("43.18.1.1.2")
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

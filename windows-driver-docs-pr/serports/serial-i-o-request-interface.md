@@ -2,7 +2,6 @@
 title: Serial I/O Request Interface
 description: To control a peripheral device that is connected to a port on a serial controller, a client application or peripheral device driver sends I/O requests to the port.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Serial I/O Request Interface

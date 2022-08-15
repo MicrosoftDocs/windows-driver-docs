@@ -10,7 +10,6 @@ keywords:
 - UMDF WDK , file object to handle I/O, creating and using
 - user-mode drivers WDK UMDF , file object to handle I/O, creating and using
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating and Using Driver-Created File Objects
@@ -26,7 +25,7 @@ Your driver must call the [**IWDFDevice::CreateWdfFile**](/windows-hardware/driv
 
 This create-file request processing is different in the Windows Driver Model (WDM). In WDM, a call to the [**ZwCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile) function causes a create IRP to go to the top of the kernel-mode stack. The following figure shows create-file request processing in UMDF versus WDM:
 
-![create-file request handling in umdf versus wdm](images/drvrcrtfile.gif)
+![create-file request handling in umdf versus wdm.](images/drvrcrtfile.gif)
 
 By calling [**IWDFDevice::CreateWdfFile**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-createwdffile), the driver can create a file object and then send I/O requests during device start, before the whole stack has started.
 

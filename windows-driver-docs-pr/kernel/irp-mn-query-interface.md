@@ -1,10 +1,9 @@
 ---
 title: IRP_MN_QUERY_INTERFACE
 description: The IRP_MN_QUERY_INTERFACE request enables a driver to export a direct-call interface to other drivers.A bus driver that exports an interface must handle this request for its child devices (child PDOs).
-ms.date: 08/12/2017
+ms.date: 07/30/2021
 keywords:
  - IRP_MN_QUERY_INTERFACE Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_INTERFACE
@@ -18,19 +17,20 @@ An "interface" in this context consists of one or more routines, and possibly da
 
 For example, the PCMCIA bus driver exports an interface of type GUID\_PCMCIA\_INTERFACE\_STANDARD that contains routines for operations such as getting the write-protect condition of a PCMCIA memory card. The function driver for such a memory card can send an **IRP\_MN\_QUERY\_INTERFACE** request to the parent PCMCIA bus driver to get pointers to the PCMCIA interface routines.
 
+> [!NOTE]
+> When introducing a new version of an existing interface, create a new GUID instead of revising the **Size** or **Version** fields of the [**INTERFACE**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface) structure. For more info, see [Using Driver-Defined Interfaces](../wdf/using-driver-defined-interfaces.md).
+
 This section describes the query-interface IRP as a general mechanism. Drivers that expose an interface should provide additional information about their specific interface.
 
 ## Value
 
 0x08
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 A driver or system component sends this IRP to get information about an interface exported by a driver for a device.
 
@@ -88,12 +88,11 @@ A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriat
 
 On success, a bus driver sets **Irp-&gt;IoStatus.Information** to zero.
 
-If a function or filter driver does not handle this IRP, it calls [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) and passes the IRP down to the next driver. Such a driver must not modify **Irp-&gt;IoStatus.Status** and must not complete the IRP.
+If a function or filter driver does not handle this IRP, it calls [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) and passes the IRP down to the next driver. Such a driver must not modify **Irp-&gt;IoStatus.Status** and must not complete the IRP.
 
 If a bus driver does not export the requested interface and therefore does not handle this IRP for a child PDO, the bus driver leaves **Irp-&gt;IoStatus.Status** as is and completes the IRP.
 
-Operation
----------
+## Operation
 
 A driver handles this IRP if the parameters specify an interface the driver supports.
 
@@ -129,8 +128,7 @@ See [Handling IRPs](./handling-irps.md) for information about sending IRPs. The 
 
 A driver typically sends this IRP to the top of the device stack in which the driver is attached. If a driver sends this IRP to a different device stack, the driver must register for target device notification on the other device if the other device is not an ancestor of the device that the driver is servicing. Such a driver calls [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification) with an *EventCategory* of **EventCategoryTargetDeviceChange**. When the driver receives notification of type GUID\_TARGET\_DEVICE\_QUERY\_REMOVE, the driver must dereference the interface. The driver can requery for the interface if it receives a subsequent GUID\_TARGET\_DEVICE\_REMOVE\_CANCELLED notification.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -153,6 +151,4 @@ Requirements
 [**INTERFACE**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface)
 
 [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification)
-
- 
 

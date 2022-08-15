@@ -5,7 +5,6 @@ keywords:
 - infrared ports WDK printer
 - IR ports WDK printer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Printer Connected to an Infrared Port

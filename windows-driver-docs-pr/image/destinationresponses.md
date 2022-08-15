@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # DestinationResponses element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **DestinationResponses** element is a collection of all of the responses to a client's scan destination requests.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:DestinationResponses>
@@ -26,8 +24,7 @@ Usage
 </wscn:DestinationResponses>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -69,8 +66,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 A WSD Scan Service must specify one [**DestinationResponse**](destinationresponse.md) child element in a **DestinationResponses** element for each [**ScanDestination**](scandestination.md) element that a client specifies in a **&lt;wse:Subscribe&gt;** request. The **&lt;wse:Subscribe&gt;** element is described in the specification.
 

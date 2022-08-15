@@ -6,7 +6,6 @@ keywords:
 - attribute memory WDK PCMCIA bus
 - attribute memory WDK PCMCIA bus , about attribute memory
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Access Attribute Memory of a PCMCIA Device

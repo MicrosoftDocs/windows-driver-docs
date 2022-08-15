@@ -9,7 +9,6 @@ api_name:
 - IoBuildDeviceControlNoFree
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoBuildDeviceControlNoFree rule (wdm)
@@ -21,8 +20,7 @@ A driver that calls [**IoBuildDeviceIoControlRequest**](/windows-hardware/driver
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest)
 [**IoFreeIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreeirp)

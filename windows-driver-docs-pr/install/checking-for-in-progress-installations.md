@@ -1,17 +1,17 @@
 ---
-title: Checking for In-Progress Installations
-description: Checking for In-Progress Installations
+title: How a Device Installation Application checks for in-progress device installations
+description: How a Device Installation Application determines whether other device installation activities are in progress before performing its installations.
 keywords:
 - in-progress installations WDK
 - checking in-progress installations
 - verifying in-progress installations
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.custom: contperf-fy22q3
+ms.date: 03/08/2022
 ---
 
-# Checking for In-Progress Installations
+# How a Device Installation Application checks for in-progress device installations
 
-Your *device installation application* should determine whether other installation activities are in progress before performing its installations. To make this determination, the device installation application should call [**CMP_WaitNoPendingInstallEvents**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_waitnopendinginstallevents), typically with a zero time-out value. If the return value from this function indicates other installation activities are pending (for example, the Found New Hardware Wizard might be active), the device installation application should exit.
+Your *device installation application* should determine whether other device installation activities are in progress before performing its installations. To make this determination, the device installation application should call [**CMP_WaitNoPendingInstallEvents**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_waitnopendinginstallevents), typically with a zero time-out value. If the return value from this function indicates other installation activities are pending (for example, the Found New Hardware Wizard might be active), the device installation application should exit.
 
 To make your *device installation application* compatible with platforms that do not support **CMP_WaitNoPendingInstallEvents**, the application should include the following code:
 

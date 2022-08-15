@@ -1,6 +1,6 @@
 ---
-title: KSEVENT\_BDA\_PROGRAM\_FLOW\_STATUS\_CHANGED
-description: Clients use KSEVENT\_BDA\_PROGRAM\_FLOW\_STATUS\_CHANGED to request notification when status on program information changes.
+title: KSEVENT_BDA_PROGRAM_FLOW_STATUS_CHANGED
+description: Clients use KSEVENT_BDA_PROGRAM_FLOW_STATUS_CHANGED to request notification when status on program information changes.
 keywords: ["KSEVENT_BDA_PROGRAM_FLOW_STATUS_CHANGED Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,54 +10,33 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/11/2021
 ---
 
-# KSEVENT\_BDA\_PROGRAM\_FLOW\_STATUS\_CHANGED
+# KSEVENT_BDA_PROGRAM_FLOW_STATUS_CHANGED
 
+Clients use **KSEVENT_BDA_PROGRAM_FLOW_STATUS_CHANGED** to request notification when status on program information changes.
 
-Clients use KSEVENT\_BDA\_PROGRAM\_FLOW\_STATUS\_CHANGED to request notification when status on program information changes.
-
-## <span id="ddk_ksevent_bda_program_flow_status_changed_ks"></span><span id="DDK_KSEVENT_BDA_PROGRAM_FLOW_STATUS_CHANGED_KS"></span>
-
-
-### <span id="specifying_this_event"></span><span id="SPECIFYING_THIS_EVENT"></span>Specifying This Event
+## Specifying this event
 
 KSEVENT
 
-### <span id="event_data"></span><span id="EVENT_DATA"></span>Event Data
+## Event data
 
 A KSEVENTDATA structure that describes how to notify about the event.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Bdamedia.h (include Bdamedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** bdamedia.h (include Bdamedia.h)
 
 ## See also
 
-
-[**KSEVENT**](/previous-versions/ff561744(v=vs.85))
+[**KSEVENT**](./ksevent-structure.md)
 
 [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
 
-[**KSPROPERTY\_BDA\_CA\_REMOVE\_PROGRAM**](ksproperty-bda-ca-remove-program.md)
+[**KSPROPERTY_BDA_CA_REMOVE_PROGRAM**](ksproperty-bda-ca-remove-program.md)
 
-[**KSPROPERTY\_BDA\_CA\_SET\_PROGRAM\_PIDS**](ksproperty-bda-ca-set-program-pids.md)
+[**KSPROPERTY_BDA_CA_SET_PROGRAM_PIDS**](ksproperty-bda-ca-set-program-pids.md)
 
-[**KSPROPERTY\_BDA\_ECM\_MAP\_STATUS**](ksproperty-bda-ecm-map-status.md)
-
- 
-
+[**KSPROPERTY_BDA_ECM_MAP_STATUS**](ksproperty-bda-ecm-map-status.md)

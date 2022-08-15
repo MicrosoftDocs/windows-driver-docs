@@ -5,7 +5,6 @@ keywords:
 - GPD files WDK Unidrv , master units
 - master units WDK GPD files
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Master Units

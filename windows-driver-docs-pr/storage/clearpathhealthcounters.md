@@ -10,7 +10,6 @@ api_location:
 - MPIOwmi.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -19,8 +18,7 @@ ms.date: 10/17/2018
 
 The ClearPathHealthCounters method is used to clear all gathered MPIO health statistics for a particular path of an MPIO disk.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void ClearPathHealthCounters(
@@ -28,24 +26,20 @@ void ClearPathHealthCounters(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *PathID*   
 A 64-bitfield that specifies the path that is associated with the device.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MPIO\_WMI\_METHODS WMI class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -4,7 +4,6 @@ description: OID_WWAN_AUTH_CHALLENGE sends an authentication challenge to the MB
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_AUTH_CHALLENGE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_AUTH\_CHALLENGE
@@ -16,8 +15,7 @@ Set requests are not supported.
 
 This is an optional OID. When miniport drivers implement it, they must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an NDIS\_STATUS\_WWAN\_AUTHENTICATION\_RESPONSE status notification containing an NDIS\_WWAN\_AUTHENTICATION\_RESPONSE structure to provide the authentication keys requested based on challenges by the caller when completing query requests.
 
-Remarks
--------
+## Remarks
 
 When processing this OID, miniport drivers can access the SIM card, but should not access the provider network. This OID must work even in Radio OFF or Airplane Mode.
 
@@ -25,8 +23,7 @@ OID\_WWAN\_AUTH\_CHALLENGE supports both second-generation and third-generation 
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support returning one or all authentication methods.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

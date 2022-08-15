@@ -2,7 +2,6 @@
 title: New AVStream Interfaces for Windows 8.1
 description: AVStream streaming media driver interfaces are extended to support new camera platform functionality starting with Windows 8.1.
 ms.date: 05/15/2018
-ms.localizationpriority: medium
 ---
 
 # New AVStream Interfaces for Windows 8.1

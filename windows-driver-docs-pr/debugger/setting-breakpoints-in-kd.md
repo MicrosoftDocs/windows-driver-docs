@@ -2,7 +2,6 @@
 title: Setting Breakpoints in KD
 description: Setting Breakpoints in KD
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Breakpoints in KD

@@ -1,8 +1,7 @@
 ---
 title: Create a partner settings app
 description: Create a partner settings app
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 08/12/2021
 ---
 
 # Create a partner settings app
@@ -11,41 +10,49 @@ OEMs and mobile operators can expose custom settings for device hardware feature
 
 For example, in the **Devices** tab of the **Settings** app, the following pages can each have up to five additional links to custom settings apps:
 
-* Printers & scanners
-* Connected devices
-* Bluetooth
-* Mouse
-* Touchpad
-* Typing
-* Pen and Windows Ink
-* AutoPlay
-* USB
+- Printers & scanners
 
-![Devices list in Settings app](images/devices-list-in-settings.png)
+- Connected devices
+
+- Bluetooth
+
+- Mouse
+
+- Touchpad
+
+- Typing
+
+- Pen and Windows Ink
+
+- AutoPlay
+
+- USB
+
+![Devices list in Settings app.](images/devices-list-in-settings.png)
 
 You can find a list of all level two pages in the [Launch the Windows Settings app](/windows/uwp/launch-resume/launch-settings-app) topic. It is important to note that all links must be relevant to the page they are placed on.
 
 Additionally, you are able to add up to five search terms on each page, which must be relevant to the content on the page. For the best search experience, use specific phrases. Using general and one-word terms may cause your links to not appear in relevant searches.  
 
-For example, if you have a “Fabricam multipen” device, create a search phrase such as “set up fabricam mulitipen” instead of a generic search term such as “pen”.
+For example, if you have a "Fabricam multipen" device, create a search phrase such as "set up fabricam mulitipen" instead of a generic search term such as "pen".
 
 ## Characteristics of partner settings app
 
 Partner settings apps have the following characteristics:
 
-* They are either Universal Windows Platform (UWP) apps, or Windows Phone Silverlight apps.
+- They are either Universal Windows Platform (UWP) apps, or Windows Phone Silverlight apps.
 
-* Users can uninstall them directly, like other app.
+- Users can uninstall them directly, like other app.
 
-* They can be upgraded by updating the settings app in the Store, like other Windows apps.
+- They can be upgraded by updating the settings app in the Store, like other Windows apps.
 
-* They are preinstalled applications installed at first boot.
+- They are preinstalled applications installed at first boot.
 
     As with any other preinstalled application, partners must submit a system settings application to the Windows Dev Center in order to:
-  * Certify the application
-  * Obtain the signed .appx file and license file needed to include the application in a device image.
+  - Certify the application
+  - Obtain the signed .appx file and license file needed to include the application in a device image.
 
-* They are published to a hidden location in the Store that users cannot browse to or find by using search.
+- They are published to a hidden location in the Store that users cannot browse to or find by using search.
 
 ## Creating system settings applications
 
@@ -56,7 +63,7 @@ Partner settings apps have the following characteristics:
 
     If you're writing a settings app targeting Windows Phone, you can also create a Windows Phone Silverlight app.
 
-2. In the application manifest below:
+1. In the application manifest below:
 
     `xmlns:rescap=http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities`
   
@@ -87,7 +94,7 @@ Partner settings apps have the following characteristics:
      </uap:VisualElements>
     ```
 
-3. To be configured as a preinstalled application, submit your settings application to the Windows Dev Center. After receiving a signed .appx file and obtaining a license file, include the application in the device image.
+1. To be configured as a preinstalled application, submit your settings application to the Windows Dev Center. After receiving a signed .appx file and obtaining a license file, include the application in the device image.
 
 ## Updating system settings applications
 

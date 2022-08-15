@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # PlatenMinimumSize element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **PlatenMinimumSize** element specifies the smallest size document that an end user can scan on the flatbed platen.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:PlatenMinimumSize>
@@ -26,8 +24,7 @@ Usage
 </wscn:PlatenMinimumSize>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -72,8 +69,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The [**Width**](width.md) child element specifies the minimum size of media that the platen supports in the fast scan direction. The [**Height**](height.md) child element specifies the minimum size of media that the platen supports in the slow scan direction.
 

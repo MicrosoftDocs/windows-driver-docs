@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPA\_CHANNELS\_PER\_PIXEL
-description: The WIA\_IPA\_CHANNELS\_PER\_PIXEL property contains the number of channels per pixel for an image. The WIA minidriver creates and maintains this property.
+title: WIA_IPA_CHANNELS_PER_PIXEL
+description: The WIA_IPA_CHANNELS_PER_PIXEL property contains the number of channels per pixel for an image. The WIA minidriver creates and maintains this property.
 keywords: ["WIA_IPA_CHANNELS_PER_PIXEL Imaging Devices"]
 topic_type:
 - apiref
@@ -10,45 +10,19 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/04/2021
 ---
 
-# WIA\_IPA\_CHANNELS\_PER\_PIXEL
+# WIA_IPA_CHANNELS_PER_PIXEL
 
+The WIA_IPA_CHANNELS_PER_PIXEL property contains the number of channels per pixel for an image. The WIA minidriver creates and maintains this property.
 
-The WIA\_IPA\_CHANNELS\_PER\_PIXEL property contains the number of channels per pixel for an image. The WIA minidriver creates and maintains this property.
+Property Type: VT_I4
 
-## <span id="ddk_wia_ipa_channels_per_pixel_si"></span><span id="DDK_WIA_IPA_CHANNELS_PER_PIXEL_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

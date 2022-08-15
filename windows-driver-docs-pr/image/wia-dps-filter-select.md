@@ -1,6 +1,6 @@
 ---
-title: WIA\_DPS\_FILTER\_SELECT
-description: The WIA\_DPS\_FILTER\_SELECT property is reserved by Microsoft for future use and is not implemented at this time.
+title: WIA_DPS_FILTER_SELECT
+description: The WIA_DPS_FILTER_SELECT property is reserved by Microsoft for future use and is not implemented at this time.
 keywords: ["WIA_DPS_FILTER_SELECT Imaging Devices"]
 topic_type:
 - apiref
@@ -10,45 +10,19 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 09/30/2021
 ---
 
-# WIA\_DPS\_FILTER\_SELECT
+# WIA_DPS_FILTER_SELECT
 
+The WIA_DPS_FILTER_SELECT property is reserved by Microsoft for future use and is not implemented at this time.
 
-The WIA\_DPS\_FILTER\_SELECT property is reserved by Microsoft for future use and is not implemented at this time.
+Property Type: VT_I4
 
-## <span id="ddk_wia_dps_filter_select_si"></span><span id="DDK_WIA_DPS_FILTER_SELECT_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

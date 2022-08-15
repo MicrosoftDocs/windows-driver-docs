@@ -10,7 +10,6 @@ keywords:
 - flow control gates WDK AVStream
 - processing control gates WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Flow Control Gates in AVStream

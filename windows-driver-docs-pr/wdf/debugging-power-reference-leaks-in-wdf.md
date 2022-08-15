@@ -2,7 +2,6 @@
 title: Debugging Power Reference Leaks in WDF
 description: When a Windows Driver Frameworks (WDF) driver calls WdfDeviceStopIdle, the framework increments the device's power reference count.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging Power Reference Leaks in WDF
@@ -21,7 +20,7 @@ Open the settings list for your driver and right-click the **TrackPower** settin
 
  
 
-![setting track power references in wdfverifier](images/wdfverifier--track-power-references-on.png)
+![setting track power references in wdfverifier.](images/wdfverifier--track-power-references-on.png)
 
 ## Editing the Registry
 

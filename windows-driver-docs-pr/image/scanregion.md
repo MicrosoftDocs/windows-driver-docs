@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ScanRegion element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The optional **ScanRegion** element specifies the area to scan within the input document boundaries.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScanRegion>
@@ -26,8 +24,7 @@ Usage
 </wscn:ScanRegion>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -81,8 +78,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 All **ScanRegion** values represent one-thousandths (1/1000) of an inch.
 

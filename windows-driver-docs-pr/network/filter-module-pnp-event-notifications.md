@@ -8,7 +8,6 @@ keywords:
 - event notifications WDK networking , filter drivers
 - Plug and Play WDK networking , filter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Filter Module PnP Event Notifications
@@ -21,7 +20,7 @@ Filter drivers can receive all the device Plug and Play (PnP) notifications that
 
 The following figure illustrates a filtered device PnP event notification.
 
-![diagram illustrating a filtered device plug and play event notification](images/pnpeventfilter.png)
+![diagram illustrating a filtered device plug and play event notification.](images/pnpeventfilter.png)
 
 Filter drivers provide a [*FilterDevicePnPEventNotify*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_device_pnp_event_notify) function that NDIS calls to pass in device PnP and Power Management event notifications. This is similar to the [*MiniportDevicePnPEventNotify*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_device_pnp_event_notify) function.
 
@@ -29,7 +28,7 @@ Filter drivers can forward device PnP and Power Management events to underlying 
 
 The following figure illustrates a filtered network PnP event notification.
 
-![diagram illustrating a filtered network device plug and play event notification](images/netpnpeventfilter.png)
+![diagram illustrating a filtered network device plug and play event notification.](images/netpnpeventfilter.png)
 
 Filter drivers provide a [*FilterNetPnPEvent*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_net_pnp_event) function that NDIS calls to pass in network PnP and Power Management event notifications. This is similar to the [*ProtocolNetPnPEvent*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_net_pnp_event) function.
 

@@ -1,8 +1,7 @@
 ---
 title: Secure MOR implementation
 description: Describes the behavior and usage for the MemoryOverwriteRequestControlLock UEFI variable, revision 2.
-ms.date: 08/13/2020
-ms.localizationpriority: medium
+ms.date: 08/18/2021
 ---
 
 # Secure MOR implementation
@@ -43,11 +42,13 @@ To prevent advanced memory attacks, the existing system BIOS security mitigation
 
 This mitigation, called *MorLock*, must be implemented on all new systems and not only limited to systems with Trusted Platform Modules. Revision 2 adds a new capability, *unlock*, to mitigate boot performance concerns, especially on large memory systems.
 
-Regarding the ACPI \_DSM control method for setting the MOR bit state (as described in Section 6 of [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.10 (PDF download)](https://trustedcomputinggroup.org/wp-content/uploads/TCG_PlatformResetAttackMitigationSpecification_1.10_published.pdf)), we recommend removing this \_DSM method from modern BIOS implementations.  However, if a BIOS implements this \_DSM method, it must respect the state of MorLock.  If the MorLock is locked, with or without a key, this \_DSM method must fail to change MOR and return a value of 1 corresponding to "General Failure".  No ACPI mechanism is defined to unlock MorLock revision 2.  
+Regarding the ACPI _DSM control method for setting the MOR bit state (as described in Section 6 of [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.10 (PDF download)](https://trustedcomputinggroup.org/wp-content/uploads/TCG_PlatformResetAttackMitigationSpecification_1.10_published.pdf)), we recommend removing this \_DSM method from modern BIOS implementations.  
 
-Note that Windows has not directly invoked this \_DSM method since Windows 7 and considers it deprecated.  Some BIOS *indirectly* invokes this \_DSM method when Windows invokes ACPI \_PTS as an implementation of MOR Auto Detection of Clean Shutdown (as described in Section 2.3 of [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.10 (PDF download)](https://trustedcomputinggroup.org/wp-content/uploads/TCG_PlatformResetAttackMitigationSpecification_1.10_published.pdf)).  
+However, if a BIOS implements this _DSM method, it must respect the state of MorLock.  If the MorLock is locked, with or without a key, this \_DSM method must fail to change MOR and return a value of 1 corresponding to "General Failure".  No ACPI mechanism is defined to unlock MorLock revision 2.  
 
-This ACPI \_PTS implementation of MOR Auto Detection is security deficient and should NOT be used.
+Note that Windows has not directly invoked this \_DSM method since Windows 7 and considers it deprecated.  Some BIOS *indirectly* invokes this \_DSM method when Windows invokes ACPI _PTS as an implementation of MOR Auto Detection of Clean Shutdown (as described in Section 2.3 of [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.10 (PDF download)](https://trustedcomputinggroup.org/wp-content/uploads/TCG_PlatformResetAttackMitigationSpecification_1.10_published.pdf)).  
+
+This ACPI _PTS implementation of MOR Auto Detection is security deficient and should NOT be used.
 
 ## MemoryOverwriteRequestControlLock
 
@@ -71,13 +72,13 @@ When **SetVariable** for `MemoryOverwriteRequestControlLock` is first called by 
 
 Revision 1 implementations only accept a single byte of 0x00 or 0x01 for `MemoryOverwriteRequestControlLock`.
 
-Revision 2 additionally accepts an 8-byte value that represents a shared secret key. If any other value is specified in **SetVariable**, the call fails with status EFI\_INVALID\_PARAMETER. To generate that key, use a high-quality entropy source such as the Trusted Platform Module or hardware random number generator.
+Revision 2 additionally accepts an 8-byte value that represents a shared secret key. If any other value is specified in **SetVariable**, the call fails with status EFI_INVALID_PARAMETER. To generate that key, use a high-quality entropy source such as the Trusted Platform Module or hardware random number generator.
 
 After setting a key, both the caller and firmware should save copies of this key in a confidentiality-protected location, such as SMRAM on IA32/X64 or a service processor with protected storage.
 
 ## Getting the system state
 
-In Revision 2, when the `MemoryOverwriteRequestControlLock` and `MemoryOverwriteRequestControl` variables are locked, invocations of **SetVariable** (for those variables) are first checked against the registered key by using a constant-time algorithm. If both keys are present and match, the variables transition back to an unlocked state. After this first attempt or if no key is registered, subsequent attempts to set this variable fail with EFI\_ACCESS\_DENIED to prevent brute force attacks. In that case, system reboot shall be the only way to unlock the variables.
+In Revision 2, when the `MemoryOverwriteRequestControlLock` and `MemoryOverwriteRequestControl` variables are locked, invocations of **SetVariable** (for those variables) are first checked against the registered key by using a constant-time algorithm. If both keys are present and match, the variables transition back to an unlocked state. After this first attempt or if no key is registered, subsequent attempts to set this variable fail with EFI_ACCESS_DENIED to prevent brute force attacks. In that case, system reboot shall be the only way to unlock the variables.
 
 The operating system detects the presence of `MemoryOverwriteRequestControlLock` and its state by calling **GetVariable**. The system can then lock the current value of `MemoryOverwriteRequestControl` by setting the `MemoryOverwriteRequestControlLock` value to 0x1. Alternatively, it may specify a key to enable unlocking in the future after secret data has been securely purged from memory.
 
@@ -133,23 +134,23 @@ These flowcharts show the expected behavior of your implementation:
 
 ### Initialization
 
-![morlock initialization](images/morlock.png)
+![morlock initialization.](images/morlock.png)
 
 ### SetVariable flow
 
-![morlock programming flow](images/morlock1.png)
+![morlock programming flow.](images/morlock1.png)
 
 ### Unlocked state flow for SetVariable
 
-![morlock unlocked flow](images/morlock2.png)
+![morlock unlocked flow.](images/morlock2.png)
 
 ### Locked state flow for SetVariable
 
-![morlock locked flow](images/morlock3.png)
+![morlock locked flow.](images/morlock3.png)
 
 ### Flow for GetVariable
 
-![morlock getvariable](images/morlock4.png)
+![morlock getvariable.](images/morlock4.png)
 
 ## See also
 

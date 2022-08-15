@@ -4,7 +4,6 @@ description: OID_WWAN_CREATE_MAC requests the miniport driver to create a new ND
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_CREATE_MAC Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_CREATE\_MAC
@@ -16,13 +15,11 @@ Miniport drivers must process set requests asynchronously, initially returning N
 
 Query requests are not supported.
 
-Remarks
--------
+## Remarks
 
 Miniport drivers must process requests to create (activate) new NDIS ports asynchronously in order to prevent deadlocks.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

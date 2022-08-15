@@ -6,7 +6,6 @@ keywords:
 - option attributes WDK Unidrv
 - printer options WDK Unidrv , attributes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Option Attributes

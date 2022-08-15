@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_VIDEOPROCAMP\_BACKLIGHT\_COMPENSATION
@@ -56,13 +55,11 @@ The KSPROPERTY\_VIDEOPROCAMP\_BACKLIGHT\_COMPENSATION property controls the back
 
 The property value (operation data) is a LONG that specifies a camera's back-light compensation setting. This value may be either 0 or 1. The default value for this property is 1. A value of 0 indicates that the back-light compensation is disabled. The default value of 1 indicates that the back-light compensation is enabled.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEOPROCAMP\_S structure specifies whether the backlight compensation is enabled or disabled.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -80,7 +77,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_VIDEOPROCAMP\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videoprocamp_s)
 

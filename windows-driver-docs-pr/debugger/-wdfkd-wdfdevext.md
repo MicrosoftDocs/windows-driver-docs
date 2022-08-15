@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfdevext
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfdevext
@@ -39,8 +38,7 @@ KMDF 1, UMDF 1, UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 Here is an example for HdAudBus.sys, which is a KMDF driver. Use [**!devnode**](-devnode.md) to find a device node that has HdAudBus as its function driver. Take the physical device object (PDO) from the output and pass it to [**!devstack**](-devstack.md). Take the device extension address from the output of **!devstack** and pass it to **!wdfdevext**.
 

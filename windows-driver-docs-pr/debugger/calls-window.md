@@ -3,7 +3,6 @@ title: Viewing the Call Stack in WinDbg
 description: In WinDbg, you can view the call stack by entering commands or by using the Calls window.
 keywords: ["debugging information windows, Calls window", "Calls window", "call stack, Calls window"]
 ms.date: 05/13/2020
-ms.localizationpriority: medium
 ---
 
 # Viewing the Call Stack in WinDbg
@@ -25,7 +24,7 @@ As an alternative to the [**k**](k--kb--kc--kd--kp--kp--kv--display-stack-backtr
 
 The following screen shot shows an example of a Calls window.
 
-![screen shot of the calls window](images/window-calls.png)
+![screen shot of the calls window.](images/window-calls.png)
 
 ## <span id="ddk_calls_window_dbg"></span><span id="DDK_CALLS_WINDOW_DBG"></span>
 
@@ -36,7 +35,7 @@ In user mode, the stack trace is based on the stack of the current thread. For m
 
 In kernel mode, the stack trace is based on the current register context. You can set the register context to match a specific thread, context record, or trap frame. For more information about setting the register context, see [Register Context](changing-contexts.md#register-context).
 
-The Calls window has a toolbar that contains several buttons and has a shortcut menu with additional commands. To access this menu, select and hold (or right-click) the title bar or select the icon near the upper-right corner of the window (![screen shot of the button that displays the calls window toolbar shortcut menu](images/tbcall.png)). The toolbar and menu contain the following buttons and commands:
+The Calls window has a toolbar that contains several buttons and has a shortcut menu with additional commands. To access this menu, select and hold (or right-click) the title bar or select the icon near the upper-right corner of the window (![screen shot of the button that displays the calls window toolbar shortcut menu.](images/tbcall.png)). The toolbar and menu contain the following buttons and commands:
 
 -   **Raw args** displays the first three parameters that are passed to the function. On an x86-based processor, this display includes the first three parameters that are passed to the function ("Args to Child").
 

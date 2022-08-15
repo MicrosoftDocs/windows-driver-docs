@@ -4,7 +4,6 @@ description: Overview of the Driver Coverage Toolkit
 keywords:
 - Driver Coverage Toolkit WDK , about the Driver Coverage Toolkit
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of the Driver Coverage Toolkit
@@ -37,7 +36,7 @@ The [Driver Coverage filter driver](driver-coverage-filter-driver.md) increments
 
 The following figure shows an example of IRP traffic within a driver stack for a device.
 
-![diagram illustrating i/o request packet (irp) traffic within a driver stack for a device](images/coverage-3.png)
+![diagram illustrating i/o request packet (irp) traffic within a driver stack for a device.](images/coverage-3.png)
 
 In this example, the [Driver Coverage filter driver](driver-coverage-filter-driver.md) monitors the following IRPs:
 

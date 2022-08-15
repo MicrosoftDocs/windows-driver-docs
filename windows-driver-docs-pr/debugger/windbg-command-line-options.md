@@ -2,17 +2,14 @@
 title: WinDbg Command-Line Options
 description: First-time users of WinDbg should begin with the Debugging Using WinDbg section.
 keywords: ["WinDbg Command-Line Options Windows Debugging"]
-ms.date: 08/10/2018
+ms.date: 02/28/2022
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 topic_type:
 - apiref
 api_name:
 - WinDbg Command-Line Options
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # WinDbg Command-Line Options
@@ -120,7 +117,7 @@ Allow journaling.
 (Kernel mode only) Starts a kernel debugging session on the same machine as the debugger.
 
 <span id="_______-kx_______ExdiOptions______"></span><span id="_______-kx_______exdioptions______"></span><span id="_______-KX_______EXDIOPTIONS______"></span> **-kx** *ExdiOptions*   
-(Kernel mode only) Starts a kernel debugging session using an EXDI driver. EXDI drivers are not described in this documentation. If you have an EXDI interface to your hardware probe or hardware simulator, please contact Microsoft for debugging information.
+(Kernel mode only) Starts a kernel debugging session using an EXDI driver. For more information about EXDI, see [Configuring the EXDI Debugger Transport](configuring-the-exdi-debugger-transport.md).
 
 <span id="_______-log_o_a__LogFile"></span><span id="_______-log_o_a__logfile"></span><span id="_______-LOG_O_A__LOGFILE"></span> **-log**{**o**|**a**} *LogFile*  
 Begins logging information to a log file. If the specified log file already exists, it will be overwritten if **-logo** is used. If **loga** is used, the output will be appended to the file. For more details, see [Keeping a Log File in WinDbg](keeping-a-log-file-in-windbg.md).

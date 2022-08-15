@@ -2,7 +2,6 @@
 title: Accessing Hardware and Handling Interrupts
 description: Accessing Hardware and Handling Interrupts
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing Hardware and Handling Interrupts

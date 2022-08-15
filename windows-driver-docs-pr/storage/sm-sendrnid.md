@@ -10,7 +10,6 @@ api_location:
 - Hbapiwmi.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -19,8 +18,7 @@ ms.date: 10/17/2018
 
 The SM\_SendRNID WMI method sends a request node identification data (RNID) command to the indicated port.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_SendRNID(
@@ -36,8 +34,7 @@ void SM_SendRNID(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *PortWWN*   
 A worldwide name (WWN) for the local port through which the RNID command is sent. This information is delivered to the miniport driver in the PortWWN member of a SM\_SendRNID\_IN structure.
@@ -66,18 +63,15 @@ The size, in bytes, of the results of the RNID command. The miniport driver retu
 *ResponseBuffer*   
 The results of the RNID command. The miniport driver returns this information in the ResponseBuffer member of a SM\_SendRNID\_OUT structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_FabricAndDomainManagementMethods WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

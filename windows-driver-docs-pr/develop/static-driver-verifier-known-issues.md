@@ -3,15 +3,13 @@ title: Static Driver Verifier Known Issues
 description: "Learn more about: Static Driver Verifier Known Issues - Windows 10 Version 1809"
 ms.date: 11/07/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Static Driver Verifier Known Issues - Windows 10 Version 1809
 
 This page describes common issues you may encounter when using the Static Driver Verifier (SDV) tool in the Windows Driver Kit (WDK). The information below pertains specifically to the version of the tool that ships with Windows 10 October 2018 Update (Version 1809).
 
-Please see [WDK Known Issues](https://social.msdn.microsoft.com/Forums/en-US/96c770a9-19a3-42d0-8d0e-bd200285d980/hardware-development-kits-for-windows-10-version-2004?forum=wdk) for known SDV issues with the latest official WDK.
+Please see [WDK Known Issues](https://social.msdn.microsoft.com/Forums/96c770a9-19a3-42d0-8d0e-bd200285d980/hardware-development-kits-for-windows-10-version-2004?forum=wdk) for known SDV issues with the latest official WDK.
 
 ## InterceptedBuild failures
 

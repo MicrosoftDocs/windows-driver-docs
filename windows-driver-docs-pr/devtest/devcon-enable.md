@@ -10,7 +10,6 @@ api_name:
 api_type:
 - NA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DevCon Enable
@@ -85,6 +84,6 @@ devcon /r enable =printer
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 28: Enable a particular device](devcon-examples.md#ddk_example_28_enable_a_particular_device_tools)
+[Example 28: Enable a particular device](devcon-examples.md#example-28-enable-a-particular-device)
 
-[Example 29: Enable devices by class](devcon-examples.md#ddk_example_29_enable_devices_by_class_tools)
+[Example 29: Enable devices by class](devcon-examples.md#example-29-enable-devices-by-class)

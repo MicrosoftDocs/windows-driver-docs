@@ -2,10 +2,8 @@
 title: Driver Security Guidance
 description: This section contains information on enhancing driver security.
 ms.assetid: 50D09948-8CE2-446F-A208-35F7B3795A6B
-ms.date: 02/23/2017
+ms.date: 05/26/2022
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Driver Security Guidance
@@ -41,13 +39,16 @@ This section contains information on enhancing driver security.
 <td align="left"><p>This topic describes how the Windows security model applies to drivers and explains what driver writers must do to improve the security of their devices.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="use-device-guard-readiness-tool.md" data-raw-source="[Evaluate HVCI driver compatibility](use-device-guard-readiness-tool.md)">Evaluate HVCI driver compatibility</a></p></td>
-<td align="left"><p>This topic describes how to evaluate the ability of a driver to run in a Hypervisor-protected Code Integrity (HVCI) environment. </p></td>
+<td align="left"><p><a href="implement-hvci-compatible-code.md" data-raw-source="[Implement HVCI compatible code](implement-hvci-compatible-code.md)">Evaluate HVCI driver compatibility</a></p></td>
+<td align="left"><p>This topic describes how to implement Hypervisor-protected Code Integrity (HVCI) compatible code. </p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><a href="driver-security-dev-best-practices.md" data-raw-source="[Development security practices for Windows driver developers](driver-security-dev-best-practices.md)">Development security practices for Windows driver developers</a></p></td>
+<td align="left"><p>This topic describes how to write secure code for Windows drivers to prevent abuse and tampering by malicious actors.</p></td>
 </tr>
 </tr>
 </tbody>
 </table>
-
 
  
 ---

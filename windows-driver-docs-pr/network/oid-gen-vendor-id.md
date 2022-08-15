@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_VENDOR_ID OID specifies a three-byte IEEE-r
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_VENDOR_ID Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_VENDOR\_ID
@@ -29,8 +28,7 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 The IEEE code uniquely identifies the vendor and is the same as the three bytes appearing at the beginning of the NIC hardware address.
 
@@ -38,8 +36,7 @@ Vendors without an IEEE-registered code should use the value 0xFFFFFF.
 
 Independent hardware vendor's filter drivers or intermediate drivers might query this OID.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

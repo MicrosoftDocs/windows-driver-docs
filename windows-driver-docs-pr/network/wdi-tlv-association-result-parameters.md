@@ -4,10 +4,11 @@ description: WDI_TLV_ASSOCIATION_RESULT_PARAMETERS is a TLV that contains parame
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ASSOCIATION_RESULT_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ASSOCIATION\_RESULT\_PARAMETERS
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_ASSOCIATION\_RESULT\_PARAMETERS is a TLV that contains parameters for an association result.
@@ -44,8 +45,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

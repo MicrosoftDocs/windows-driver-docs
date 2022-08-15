@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_VLAN_ID OID reports the configured VLAN ide
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_VLAN_ID Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_VLAN\_ID
@@ -31,8 +30,7 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Optional.
 
-Remarks
--------
+## Remarks
 
 The information buffer passed in this request contains an NDIS\_VLAN\_ID data type. This NDIS\_VLAN\_ID value contains the VLAN ID in the 12 least significant bits per the IEEE 802.1Q-2005 standard. Higher order bits of the NDIS\_VLAN\_ID value are reserved and must be set to 0. Note that NDIS defines NDIS\_VLAN\_ID as a ULONG.
 
@@ -44,8 +42,7 @@ During the miniport driver's [*MiniportInitializeEx*](/windows-hardware/drivers/
 VlanId, REG_DWORD
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

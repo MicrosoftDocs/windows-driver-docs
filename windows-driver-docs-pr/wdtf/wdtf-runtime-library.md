@@ -8,7 +8,6 @@ keywords:
 - Installing WDTF
 - driver testing
 ms.date: 08/14/2018
-ms.localizationpriority: medium
 ---
 
 # The WDTF runtime library
@@ -84,7 +83,7 @@ The following table describes the options you can use with the **msiexec** comma
 msiexec /i "Windows Driver Testing Framework (WDTF) Runtime Libraries-x64_en-us.msi" /l* WDTFInstall.log WDTFDir=c:\wdtf WDTF_SKIP_MACHINE_CONFIG=1
 ```
 
-## How to determine if the WDTF runtime library is installed on a compute
+## How to determine if the WDTF runtime library is installed on a computer
 
 You can verify that WDTF was installed correctly by running a command script on the test computer. Running this command creates the file CheckWDTFInstall.log, which contains information on all installed WDTF components.
 

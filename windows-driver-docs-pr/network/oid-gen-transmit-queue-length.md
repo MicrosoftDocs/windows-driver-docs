@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_TRANSMIT_QUEUE_LENGTH OID specifies the num
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_TRANSMIT_QUEUE_LENGTH Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_TRANSMIT\_QUEUE\_LENGTH
@@ -29,15 +28,13 @@ Supported.
 <a href="" id="ndis-5-1-drivers"></a>NDIS 5.1 drivers  
 Optional.
 
-Remarks
--------
+## Remarks
 
 For queries, the number returned is always the total number of packets currently queued. This number can include unsubmitted send requests queued in the NDIS library.
 
 For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

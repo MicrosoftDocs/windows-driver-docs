@@ -1,7 +1,6 @@
 ---
 title: Invalid Key Object Pointers in Registry Notifications
 description: Invalid Key Object Pointers in Registry Notifications
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -2,7 +2,6 @@
 title: Get started with MITT
 description: To run MITT tests, you must install the MITT firmware on a new MITT board. These steps describe how to update the MITT firmware and prepare the host machine for running MITT tests.
 ms.date: 04/27/2021
-ms.localizationpriority: medium
 ---
 
 # Get started with MITT
@@ -29,7 +28,7 @@ To run MITT tests, you need a computer that will run as the host and system unde
 >[!NOTE]
 >If your SUT is a phone, then the host computer, SUT, and MITT board must be configured as shown in this image.
 
-![mitt computer setup](images/mitt-computer-setup.jpg)
+![mitt computer setup.](images/mitt-computer-setup.jpg)
 
 ## Install WDTF Runtime Library
 
@@ -47,7 +46,7 @@ The system under test must be connected to a kernel debugger. Debugging tools ar
 2. Make sure that the board power switch (next to the audio jack) is turned on. The red Power LED should be on.
 3. In Device Manager, locate the device node.
 
-    ![device node for mitt](images/install-mitt.png)
+    ![device node for mitt.](images/install-mitt.png)
 
 4. Right-click on the node and choose **Update Driver Software...**.
 5. Select **Browse my computer for driver software** in the **Update Driver Software** dialog.
@@ -77,7 +76,7 @@ The system under test must be connected to a kernel debugger. Debugging tools ar
 
 14. Run **MuttUtil.exe –UpdateFirmware** again for the second chip, after the first firmware update is complete. The second chip's firmware cannot be updated until the first chip is installed.
 
-    ![mitt firmware upgrade](images/mitt-setup3.png)
+    ![mitt firmware upgrade.](images/mitt-setup3.png)
 
     The preceding output shows a successful installation of the second MITT firmware image. Notice the seven segment on the MITT board. You must see 000X where X is the current version of the MITT firmware.
 

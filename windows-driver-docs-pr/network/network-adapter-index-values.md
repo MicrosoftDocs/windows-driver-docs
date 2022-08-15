@@ -2,7 +2,6 @@
 title: Network Adapter Index Values
 description: Network Adapter Index Values
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Network Adapter Index Values

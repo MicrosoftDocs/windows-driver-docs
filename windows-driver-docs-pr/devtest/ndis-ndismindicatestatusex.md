@@ -9,7 +9,6 @@ api_name:
 - NdisMIndicateStatusEx
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisMIndicateStatusEx rule (ndis)
@@ -19,8 +18,7 @@ The driver must not call [**NdisMIndicateStatusEx**](/windows-hardware/drivers/d
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +43,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex)

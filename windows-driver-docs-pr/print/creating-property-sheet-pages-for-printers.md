@@ -6,7 +6,6 @@ keywords:
 - property sheet pages WDK print , creating
 - property sheet pages WDK print , printer interface DLL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Property Sheet Pages for Printers

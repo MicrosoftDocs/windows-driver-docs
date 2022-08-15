@@ -4,7 +4,6 @@ description: The NDIS_STATUS_SWITCH_NIC_STATUS status indication is used to enca
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_SWITCH_NIC_STATUS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_SWITCH\_NIC\_STATUS
@@ -14,8 +13,7 @@ The **NDIS\_STATUS\_SWITCH\_NIC\_STATUS** status indication is used to encapsula
 
 The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure for this indication contains a pointer to an [**NDIS\_SWITCH\_NIC\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_nic_status_indication) structure.
 
-Remarks
--------
+## Remarks
 
 When an underlying physical network adapter issues an NDIS status indication, it is received by the external network adapter. When this happens, the extensible switch interface performs these steps:
 
@@ -35,8 +33,7 @@ For example, the extension can issue an encapsulated [**NDIS\_STATUS\_RECEIVE\_F
 
 For more information on how to forward or originate **NDIS\_STATUS\_SWITCH\_NIC\_STATUS** indications, see [Managing NDIS Status Indications from Physical Network Adapters](./managing-ndis-status-indications-from-physical-network-adapters.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -4,7 +4,6 @@ description: MB UICC application and file system access
 keywords:
 - MB UICC application and file system access, Mobile Broadband UICC application and file system access
 ms.date: 03/07/2019
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
@@ -20,7 +19,7 @@ The UICC provides a file system and supports a set of applications that can run 
 
 The following diagram from Section 8.1 of the [ETSI TS 102 221 technical specification](https://go.microsoft.com/fwlink/p/?linkid=864594) shows an example card application structure.
 
-![An example UICC application structure](images/mb-uicc-application-structure.png "An example UICC application structure.")
+![An example UICC application structure.](images/mb-uicc-application-structure.png "An example UICC application structure.")
 
 The UICC file system can be regarded as a forest of directory trees. The legacy SIM tree is rooted at a Master File (MF) and contains up to two levels of subdirectories (Dedicated Files, or DFs) containing Elemental Files (EFs) that hold various types of information. The SIM defines DFs under the MF, one of which, DFTelecom, contains information common to multiple access types such as the common phone book. Additional applications are effectively implemented as separate trees, each rooted in its own Application Directory File (ADF). Each ADF is identified by an application identifier that can be up to 128 bits long. A file under the card root (EFDir under the MF in the diagram) contains the application names and corresponding identifiers. Within a tree (the MF or an ADF), DFs and EFs might be identified by a path of file IDs, where a file ID is a 16-bit integer.
 
@@ -93,7 +92,7 @@ The InformationBuffer in MBIM_COMMAND_DONE contains the following MBIM_UICC_APP_
 | 4 |	4	| AppIdOffset | OFFSET | Offset for the application ID in the databuffer. Only the first AppIdSize bytes are meaningful. If the application ID is longer than MBIM_MAXLENGTH_APPID bytes, then AppIdSize specifies the actual length but only the first MBIM_MAXLENGTH_APPID bytes are in this field. This field is valid only when AppType is not MBIMUiccAppTypeMf, MBIMUiccAppTypeMfSIM, or MBIMUiccAppTypeMfRUIM. |
 | 8 |	4	| AppIdSize | SIZE (0..16) | The size of the application ID, in bytes, as defined in Section 8.3 of the ETSI TS 102 221 technical specification. This field is set to zero for the MBIMUiccAppTypeMf, MBIMUiccAppTypeMfSIM, or MBIMUiccAppTypeMfRUIM app types. |
 | 12 |  | AppNameOffset | OFFSET | Offset for the application name in the databuffer. A UTF-8 string specifying the name of the application. The length of this field is specified by AppNameLength. If the length is greater than or equal to MBIM_MAXLENGTH_APPNAME bytes, this field contains the first MBIM_MAXLENGTH_APPNAME - 1 bytes of the name. The string is always null-terminated. |
-| 16 | 4 | AppNameLength | SIZE (0..256) | The length, in characters, of the application name. |
+| 16 | 4 | AppNameLength | SIZE (0..256) | The length, in bytes, of the application name. |
 | 20 | 4 | NumPinKeyRefs | SIZE (0..8) | The number of application PIN key references. In other words, the number of elements of PinKeyRef that are valid. Applications on a virtual R-UIM have no PIN key references. |
 | 24 | 4 | KeyRefOffset | OFFSET | Offset of the PinKeyRef in the DataBuffer. The PinKeyRef is a byte array specifying the application’s PIN key references for different levels of verification (keys for PIN1, PIN2, and possibly a universal PIN), as defined in Table 9.3 and Section 9.4.2 of the ETSI TS 102 221 technical specification. In the case of a single-verification card, or an MBB driver and/or modem that does not support different application keys for different applications, the first byte of the PinKeyRef field must be 0x01 (PIN1) and the second byte must be 0x81 (PIN2), as described in Section 9.5.1 of ETSI TS 102 221. |
 | 28 | 4 | KeyRefSize | SIZE (0..8) | The size of PinKeyRef. |

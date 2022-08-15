@@ -7,7 +7,6 @@ keywords:
 - notifications WDK networking , network configuration
 - network configuration WDK notify ofbject
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Configuring the Network

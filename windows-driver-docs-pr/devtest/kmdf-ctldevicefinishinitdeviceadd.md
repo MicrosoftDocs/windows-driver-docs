@@ -9,7 +9,6 @@ api_name:
 - CtlDeviceFinishInitDeviceAdd
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CtlDeviceFinishInitDeviceAdd rule (kmdf)
@@ -19,8 +18,7 @@ The **CtlDeviceFinishInitDeviceAdd** rule specifies that if a driver creates con
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfControlDeviceInitAllocate**](/windows-hardware/drivers/ddi/wdfcontrol/nf-wdfcontrol-wdfcontroldeviceinitallocate)
 [**WdfControlFinishInitializing**](/windows-hardware/drivers/ddi/wdfcontrol/nf-wdfcontrol-wdfcontrolfinishinitializing)

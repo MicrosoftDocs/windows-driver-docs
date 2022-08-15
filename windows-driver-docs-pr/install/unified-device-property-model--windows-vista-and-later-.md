@@ -3,8 +3,7 @@ title: Unified Device Property Model
 description: Unified Device Property Model
 keywords:
 - device properties WDK device installations , unified device property model
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 04/04/2022
 ---
 
 # Unified Device Property Model
@@ -26,7 +25,7 @@ Windows Vista and later versions of Windows support a unified device property m
 
 -   [INF File Entry Values That Modify Device Properties](inf-file-entry-values-that-modify-device-properties--windows-vista-and.md)
 
--   [Using SetupAPI to Access Device Properties](using-setupapi-to-access-device-properties--windows-vista-and-later-.md)
+-   [Accessing Properties](accessing-properties.md)
 
 -   [Using the INF AddProperty Directive and the INF DelProperty Directive](using-the-inf-addproperty-directive-and-the-inf-delproperty-directive.md)
 

@@ -2,7 +2,6 @@
 title: Setting the Protection Level for a Protected Output
 description: Setting the Protection Level for a Protected Output
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting the Protection Level for a Protected Output

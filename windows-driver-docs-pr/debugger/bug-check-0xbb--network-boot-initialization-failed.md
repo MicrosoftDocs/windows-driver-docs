@@ -9,7 +9,6 @@ api_name:
 - NETWORK_BOOT_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xBB: NETWORK\_BOOT\_INITIALIZATION\_FAILED
@@ -60,8 +59,7 @@ The NETWORK\_BOOT\_INITIALIZATION\_FAILED bug check has a value of 0x000000BB. T
 
  
 
-Cause
------
+## Cause
 
 This error is caused when Windows is booting off a network, and a critical function fails during I/O initialization.
 

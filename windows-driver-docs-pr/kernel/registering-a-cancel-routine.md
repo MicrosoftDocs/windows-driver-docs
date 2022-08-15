@@ -3,7 +3,6 @@ title: Registering a Cancel Routine
 description: Registering a Cancel Routine
 keywords: ["canceling IRPs, registering Cancel routines", "Cancel routines, registering", "registering Cancel routines"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Registering a Cancel Routine

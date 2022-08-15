@@ -5,7 +5,6 @@ keywords:
 - threading WDK display , third level
 - synchronization WDK display , third level
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Threading and Synchronization Third Level

@@ -6,7 +6,7 @@
     items:
     - name: "File system sample code"
       href: file-system-sample-code.md
-    - name: "Installing a file system driver"
+    - name: "Development process for file system driver installation"
       href: installing-a-file-system-driver.md
     - name: "Creating an INF file for a file system driver"
       href: creating-an-inf-file-for-a-file-system-driver.md
@@ -207,6 +207,18 @@
       href: reparse-points.md
     - name: "Reparse point tag request"
       href: reparse-point-tag-request.md
+  - name: "BypassIO"
+    items:
+    - name: "BypassIO for filter drivers"
+      href: bypassio.md
+    - name: "Supporting BypassIO operations"
+      href: bypassio-operations.md
+  - name: "KM file copy and scenarios"
+    items:
+    - name: "Kernel-mode file copy and detecting copy file scenarios"
+      href: km-file-copy.md
+    - name: "NtCopyFileChunk"
+      href: nf-ntifs-ntcopyfilechunk.md
 - name: "File system legacy filter drivers"
   # Auto-expanded node L1
   items:
@@ -365,19 +377,19 @@
         href: network-redirector-design-in-windows-nt.md
       - name: "Network redirector design in Windows 2000"
         href: network-redirector-design-in-windows-2000.md
-      - name: "The redirected drive buffering subSystem"
+      - name: "The Redirected Drive Buffering SubSystem (RDBSS)"
         href: the-redirected-drive-buffering-subsystem.md
-      - name: "Oplock semantics"
+      - name: "Oplocks and network redirectors"
 # Auto-expanded node
         items:
-        - name: "Oplock overview"
+        - name: "Using oplocks for network redirector performance"
           href: oplock-overview.md
         - name: "Granting oplocks"
           href: granting-oplocks.md
         - name: "Breaking oplocks"
 # Auto-expanded node
           items:
-          - name: "Overview"
+          - name: "Overview of breaking oplocks"
             href: breaking-oplocks.md
           - name: "IRP_MJ_CREATE"
             href: irp-mj-create2.md
@@ -800,6 +812,8 @@
       href: fsctl-is-volume-dirty.md
     - name: "FSCTL_LMR_GET_LINK_TRACKING_INFORMATION"
       href: fsctl-lmr-get-link-tracking-information.md
+    - name: "FSCTL_LMR_QUERY_INFO"
+      href: fsctl-lmr-query-info.md
     - name: "FSCTL_MARK_AS_SYSTEM_HIVE"
       href: fsctl-mark-as-system-hive.md
     - name: "FSCTL_MARK_VOLUME_DIRTY"

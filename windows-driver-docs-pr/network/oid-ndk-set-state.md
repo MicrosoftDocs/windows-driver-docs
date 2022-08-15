@@ -4,7 +4,6 @@ description: As a set request, NDIS and overlying drivers use the OID_NDK_SET_ST
 ms.date: 08/08/2017
 keywords: 
  -OID_NDK_SET_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_NDK\_SET\_STATE
@@ -14,10 +13,9 @@ As a set request, NDIS and overlying drivers use the OID\_NDK\_SET\_STATE OID to
 
 NDIS 6.30 and later miniport drivers that provide NDK services must support this OID. Otherwise, this OID is optional.
 
-Remarks
--------
+## Remarks
 
-NDIS issues this OID with the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure pointing to a **BOOLEAN** and **InformationBufferLength** member equal to sizeof(**BOOLEAN**).
+NDIS issues this OID with the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure pointing to a **BOOLEAN** and **InformationBufferLength** member equal to sizeof(**BOOLEAN**).
 
 -   If the **BOOLEAN** value is **TRUE** and the **\*NetworkDirect** keyword value is nonzero, the miniport adapter's NDK functionality must be enabled.
 
@@ -41,8 +39,7 @@ To enable or disable its NDK functionality, the miniport driver's [*MiniportOidR
 
 An NDK-capable miniport driver's [*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) function must return **STATUS\_SUCCESS** for an OID\_NDK\_SET\_STATE OID request unless a failure occurs. The driver must not return **NDIS\_STATUS\_PENDING**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -72,7 +69,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [**NdisMNetPnPEvent**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismnetpnpevent)
 

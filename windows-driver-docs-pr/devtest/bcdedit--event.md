@@ -9,11 +9,10 @@ api_name:
 - BCDEdit /event
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
-BCDEdit /event
-============
+# BCDEdit /event
+
 
 The **/event** enables or disables the remote event logging for the specified boot entry.
 

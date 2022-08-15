@@ -10,7 +10,6 @@ keywords:
 - standard parser-filter WDK GDL
 - SPF WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Standard GDL Parsing

@@ -8,8 +8,7 @@ keywords:
 - HID mouse driver
 - mouse drivers, HID
 - HID mouse driver for Windows
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 03/18/2022
 ---
 
 # Keyboard and mouse HID client drivers
@@ -28,17 +27,17 @@ Windows provides system-supplied HID mapper drivers for HID keyboard, and HID mi
 
 ## Architecture and overview
 
-The following figure illustrates the system-supplied driver stacks for USB keyboard and mouse/touchpad devices.
+The following figure illustrates the system-supplied driver stacks for USB keyboard, mouse, and touchpad devices.
 
 ![keyboard and mouse driver stack diagram, showing the hid class mapper drivers for keyboards and mice, along with the keyboard and mouse class drivers.](images/keyboard-driver-stack.png)
 
 The figure above includes the following components:
 
-- KBDHID.sys – HID client mapper driver for keyboards. Converts HID usages into scancodes to interface with the existing keyboard class driver.
-- MOUHID.sys – HID client mapper driver for mice/touchpads. Converts HID usages into mouse commands (X/Y, buttons, wheel) to interface with the existing keyboard class driver.
-- KBDCLASS.sys – The [keyboard class driver](keyboard-and-mouse-class-drivers.md) maintains functionality for all keyboards and keypads on the system in a secure manner.
-- MOUCLASS.sys – The [mouse class driver](keyboard-and-mouse-class-drivers.md) maintains functionality for all mice / touchpads on the system. The driver does support both absolute and relative pointing devices. This is not the driver for touchscreens as that is managed by a different driver in Windows.
-- HIDCLASS.sys - The [HID class driver](hid-architecture.md#the-hid-class-driver). The HID Class driver is the glue between KBDHID.sys and MOUHID.sys HID clients and various transports (USB, Bluetooth, etc).
+- **KBDHID.sys**: HID client mapper driver for keyboards. Converts HID usages into scancodes to interface with the existing keyboard class driver.
+- **MOUHID.sys**: HID client mapper driver for mice/touchpads. Converts HID usages into mouse commands (X/Y, buttons, wheel) to interface with the existing keyboard class driver.
+- **KBDCLASS.sys**: The [keyboard class driver](keyboard-and-mouse-class-drivers.md) maintains functionality for all keyboards and keypads on the system in a secure manner.
+- **MOUCLASS.sys**: The [mouse class driver](keyboard-and-mouse-class-drivers.md) maintains functionality for all mice / touchpads on the system. The driver does support both absolute and relative pointing devices. This is not the driver for touchscreens as that is managed by a different driver in Windows.
+- **HIDCLASS.sys**: The [HID class driver](hid-architecture.md#the-hid-class-driver). The HID Class driver is the glue between KBDHID.sys and MOUHID.sys HID clients and various transports (USB, Bluetooth, etc).
 
 The system builds the driver stack as follows:
 
@@ -47,7 +46,7 @@ The system builds the driver stack as follows:
 - The keyboard or mouse hid client mapper drivers are loaded on the appropriate FDO.
 - The HID mapper drivers create FDOs for keyboard and mouse, and load the class drivers.
 
-Important notes:
+### Important notes:
 
 - Vendor drivers are not required for keyboards and mice that are compliant with the supported HID Usages and top level collections.
 - Vendors may optionally provide filter drivers in the HID stack to alter/enhance the functionality of these specific TLC.
@@ -61,24 +60,24 @@ Important notes:
 Microsoft provides the following guidance for IHVs writing drivers:
 
 1. Driver developers are allowed to add additional drivers in the form of a filter driver or a new HID Client driver. The criteria are described below:
-    1. Filters Drivers: Driver developers should ensure that their value-add driver is a filter driver and does not replace (or be used in place of) existing Windows HID drivers in the input stack.
+    1. Filters drivers: Driver developers should ensure that their value-add driver is a filter driver and does not replace (or be used in place of) existing Windows HID drivers in the input stack.
         - Filter drivers are allowed in the following scenarios:
             - As an upper filter to kbdhid/mouhid
             - As an upper filter to kbdclass/mouclass
         - Filter drivers are _not_ recommended as a filter between HIDCLASS and HID Transport minidriver
 
-    2. Function Drivers: Alternatively vendors can create a function driver (instead of a filter driver) but only for vendor specific HID PDOs (with a user mode service if necessary).
+    1. Function drivers: Alternatively vendors can create a function driver (instead of a filter driver) but only for vendor specific HID PDOs (with a user mode service if necessary).
 
         Function drivers are allowed in the following scenarios:
 
-        - Only load on the specific vendor’s hardware
+        - Only load on the specific vendor's hardware
 
-    3. Transport Drivers: Windows team does not recommend creating additional HID Transport minidriver as they are complex drivers to write/maintain. If a partner is creating a new HID Transport minidriver, especially on SoC systems, we recommend a detailed architectural review to understand the reasoning and ensure that the driver is developed correctly.
+    1. Transport drivers: Windows team does not recommend creating additional HID Transport minidriver as they are complex drivers to write/maintain. If a partner is creating a new HID Transport minidriver, especially on SoC systems, we recommend a detailed architectural review to understand the reasoning and ensure that the driver is developed correctly.
 
-2. Driver developers should leverage driver Frameworks (KMDF or UMDF) and not rely on WDM for their filter drivers.
-3. Driver developers should reduce the number of kernel-user transitions between their service and the driver stack.
-4. Driver developers should ensure ability to wake the system via both keyboard and touchpad functionality (adjustable by the end user (device manager) or the PC manufacturer). In addition on SoC systems, these devices must be able to wake themselves from a lower powered state while the system is in a working S0 state.
-5. Driver developers should ensure that their hardware is power managed efficiently.
+1. Driver developers should leverage driver Frameworks (KMDF or UMDF) and not rely on WDM for their filter drivers.
+1. Driver developers should reduce the number of kernel-user transitions between their service and the driver stack.
+1. Driver developers should ensure ability to wake the system via both keyboard and touchpad functionality (adjustable by the end user (device manager) or the PC manufacturer). In addition on SoC systems, these devices must be able to wake themselves from a lower powered state while the system is in a working S0 state.
+1. Driver developers should ensure that their hardware is power managed efficiently.
     - Device can go into its lowest power state when the device is idle.
     - Device is in the lowest power state when the system is in a low power state (for example, standby (S3) or connected standby).
 
@@ -100,12 +99,12 @@ For additional details around the keyboard layout, visit Control Panel\\Clock, L
 
 The following table identifies the features supported across different client versions of the Windows operating system.
 
-|Feature|Windows XP|Windows Vista|Windows 7|Windows 8 and later|
-|----|----|----|----|----|
-|Buttons 1-5|Supported (P/2 & HID)|Supported (PS/2 & HID)|Supported (PS/2 & HID)|Supported (PS/2 & HID)|
-|Vertical Scroll Wheel|Supported (PS/2 & HID)|Supported (PS/2 & HID)|Supported (PS/2 & HID)|Supported (PS/2 & HID)|
-|Horizontal Scroll Wheel|Not Supported|Supported(HID only)|Supported(HID only)|Supported(HID only)|
-|Smooth Scroll Wheel Support (Horizontal and Vertical)|Not Supported|Partly Supported|Supported (HID only)|Supported (HID only)|
+| Feature                                               | Windows XP             | Windows Vista          | Windows 7              | Windows 8 and later    |
+|-------------------------------------------------------|------------------------|------------------------|------------------------|------------------------|
+| Buttons 1-5                                           | Supported (P/2 & HID)  | Supported (PS/2 & HID) | Supported (PS/2 & HID) | Supported (PS/2 & HID) |
+| Vertical Scroll Wheel                                 | Supported (PS/2 & HID) | Supported (PS/2 & HID) | Supported (PS/2 & HID) | Supported (PS/2 & HID) |
+| Horizontal Scroll Wheel                               | Not Supported          | Supported(HID only)    | Supported(HID only)    | Supported(HID only)    |
+| Smooth Scroll Wheel Support (Horizontal and Vertical) | Not Supported          | Partly Supported       | Supported (HID only)   | Supported (HID only)   |
 
 ### Activating buttons 4-5 and wheel on PS/2 mice
 
@@ -118,32 +117,32 @@ Note that this is applicable to PS/2 mice only and is not applicable to HID mice
 
 #### Standard PS/2-compatible mouse data packet format (2 Buttons)
 
-|Byte|D7|D6|D5|D4|D3|D2|D1|D0|Comment|
-|------|-------|-------|-------|-------|-----|-----|-----|-----|-----|
-| 1    | Yover | Xover | Ysign | Xsign | Tag | M   | R   | L   | X/Y overvlows and signs, buttons |
-| 2    | X7    | X6    | X5    | X4    | X3  | X2  | X1  | X0  | X data byte                      |
-| 3    | Y7    | Y6    | Y5    | Y4    | Y3  | Y2  | Y1  | Y0  | Y data bytes                     |
+| Byte | D7    | D6    | D5    | D4    | D3  | D2 | D1 | D0 | Comment                          |
+|------|-------|-------|-------|-------|-----|----|----|----|----------------------------------|
+| 1    | Yover | Xover | Ysign | Xsign | Tag | M  | R  | L  | X/Y overflows and signs, buttons |
+| 2    | X7    | X6    | X5    | X4    | X3  | X2 | X1 | X0 | X data byte                      |
+| 3    | Y7    | Y6    | Y5    | Y4    | Y3  | Y2 | Y1 | Y0 | Y data bytes                     |
 
 > [!NOTE]
 > Windows mouse drivers do not check the overflow bits. In case of overflow, the mouse should simply send the maximal signed displacement value.
 
 #### Standard PS/2-compatible mouse data packet format (3 Buttons + VerticalWheel)
 
-| Byte | D7  | D6  | D5    | D4    | D3  | D2  | D1  | D0  | Comment                     |
-|------|-----|-----|-------|-------|-----|-----|-----|-----|-----------------------------|
-| 1    | 0   | 0   | Ysign | Xsign | 1   | M   | R   | L   | X/Y signs and R/L/M buttons |
-| 2    | X7  | X6  | X5    | X4    | X3  | X2  | X1  | X0  | X data byte                 |
-| 3    | Y7  | Y6  | Y5    | Y4    | Y3  | Y2  | Y1  | Y0  | Y data bytes                |
-| 4    | Z7  | Z6  | Z5    | Z4    | Z3  | Z2  | Z1  | Z0  | Z/wheel data byte           |
+| Byte | D7 | D6 | D5    | D4    | D3 | D2 | D1 | D0 | Comment                     |
+|------|----|----|-------|-------|----|----|----|----|-----------------------------|
+| 1    | 0  | 0  | Ysign | Xsign | 1  | M  | R  | L  | X/Y signs and R/L/M buttons |
+| 2    | X7 | X6 | X5    | X4    | X3 | X2 | X1 | X0 | X data byte                 |
+| 3    | Y7 | Y6 | Y5    | Y4    | Y3 | Y2 | Y1 | Y0 | Y data bytes                |
+| 4    | Z7 | Z6 | Z5    | Z4    | Z3 | Z2 | Z1 | Z0 | Z/wheel data byte           |
 
 #### Standard PS/2-compatible mouse data packet format (5 Buttons + VerticalWheel)
 
-| Byte | D7  | D6  | D5    | D4    | D3  | D2  | D1  | D0  | Comment                               |
-|------|-----|-----|-------|-------|-----|-----|-----|-----|---------------------------------------|
-| 1    | 0   | 0   | Ysign | Xsign | 1   | M   | R   | L   | X/Y signs and R/L/M buttons           |
-| 2    | X7  | X6  | X5    | X4    | X3  | X2  | X1  | X0  | X data byte                           |
-| 3    | Y7  | Y6  | Y5    | Y4    | Y3  | Y2  | Y1  | Y0  | Y data bytes                          |
-| 4    | 0   | 0   | B5    | B4    | Z3  | Z2  | Z1  | Z0  | Z/wheel data and buttons 4 and 5 |
+| Byte | D7 | D6 | D5    | D4    | D3 | D2 | D1 | D0 | Comment                          |
+|------|----|----|-------|-------|----|----|----|----|----------------------------------|
+| 1    | 0  | 0  | Ysign | Xsign | 1  | M  | R  | L  | X/Y signs and R/L/M buttons      |
+| 2    | X7 | X6 | X5    | X4    | X3 | X2 | X1 | X0 | X data byte                      |
+| 3    | Y7 | Y6 | Y5    | Y4    | Y3 | Y2 | Y1 | Y0 | Y data bytes                     |
+| 4    | 0  | 0  | B5    | B4    | Z3 | Z2 | Z1 | Z0 | Z/wheel data and buttons 4 and 5 |
 
 >[!IMPORTANT]
 >Notice that the Z/wheel data for a 5-button wheel mouse has been reduced to four bits instead of the 8 bits used in the IntelliMouse-compatible 3-button wheel mode. This reduction is made possible by the fact that the wheel typically cannot generate values beyond the range +7/-8 during any given interrupt period. Windows mouse drivers will sign extend the four Z/wheel data bits when the mouse is in the 5-button wheel mode, and the full Z/wheel data byte when the mouse operates in the 3-button wheel mode.

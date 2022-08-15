@@ -9,7 +9,6 @@ api_name:
 - KsInvalidStreamPointer
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # KsInvalidStreamPointer rule (ks)
@@ -25,8 +24,8 @@ This rule also verifies that [KsStreamPointerDelete](/windows-hardware/drivers/d
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x0008100C)
 
 
-Example
--------
+## Example
+
 
 The following code violates this rule.
 
@@ -46,8 +45,7 @@ This code also violates the rule.
 KsStreamPointerDelete (NULL);
 ```
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -88,8 +86,7 @@ How to test
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 KsStreamPointerDelete
 

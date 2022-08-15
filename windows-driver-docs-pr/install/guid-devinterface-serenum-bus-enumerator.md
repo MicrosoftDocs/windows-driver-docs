@@ -10,7 +10,6 @@ api_location:
 - Ntddser.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,8 +43,7 @@ The GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR [device interface class](./overview
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied enumerator for serial port devices registers instances of GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR to notify the operating system and applications of the presence of serial port devices.
 
@@ -55,8 +53,7 @@ For information about serial devices and drivers, see [Serial Devices and Driver
 
 For information about the device interface class for serial port devices, see [**GUID_DEVINTERFACE_COMPORT**](guid-devinterface-comport.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

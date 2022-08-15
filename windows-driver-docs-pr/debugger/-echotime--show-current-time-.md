@@ -9,7 +9,6 @@ api_name:
 - .echotime (Show Current Time)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .echotime (Show Current Time)
@@ -49,13 +48,19 @@ The **.echotime** command displays the current time.
 
  
 
-Remarks
--------
+## Remarks
 
 The **.echotime** command displays the time to the computer that the debugger is running on.
 
- 
 
+## See also
+
+[.echotimestamps (Show Time Stamps)](-echotimestamps--show-time-stamps-.md)
+ 
+[.time (Display System Time)](-time--display-system-time-.md)
+
+[!runaway](-runaway.md)
+ 
  
 
 

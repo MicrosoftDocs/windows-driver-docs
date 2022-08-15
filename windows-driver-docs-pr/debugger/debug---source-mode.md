@@ -3,7 +3,6 @@ title: Debug Source Mode
 description: Debug Source Mode
 keywords: ["Debug Source Mode", "source debugging, Debug Source Mode", "assembly debugging, Debug Source Mode"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Source Mode
@@ -16,7 +15,7 @@ Select **Source Mode** on the **Debug** menu to switch the debugger to source mo
 
 You can click the **Source mode on** button (shown on the left in the following figure) to change the debugger to source mode or click the **Source mode off** button (shown on the right in the following figure) to change the debugger to assembly mode.
 
-![screen shot of the source mode buttons](images/tbsrcasm.png)
+![screen shot of the source mode buttons.](images/tbsrcasm.png)
 
 When source mode is active, ASM is unavailable on the status bar. When assembly mode is active, ASM is displayed on the status bar.
 

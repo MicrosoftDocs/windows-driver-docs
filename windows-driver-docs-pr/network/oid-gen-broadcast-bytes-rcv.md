@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_BROADCAST_BYTES_RCV OID specifies the numbe
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_BROADCAST_BYTES_RCV Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_BROADCAST\_BYTES\_RCV
@@ -29,13 +28,11 @@ Supported.
 <a href="" id="ndis-5-1-drivers"></a>NDIS 5.1 drivers  
 Optional.
 
-Remarks
--------
+## Remarks
 
 For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

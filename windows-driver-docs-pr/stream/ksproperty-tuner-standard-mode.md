@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_TUNER\_STANDARD\_MODE
@@ -53,13 +52,11 @@ The KSPROPERTY\_TUNER\_STANDARD\_MODE property retrieves a BOOL value that indic
 
 The property value (operation data) is a BOOL that indicates whether the tuning device can automatically detect the tuner standard from the signal itself.
 
-Remarks
--------
+## Remarks
 
 For more information about how the KSPROPERTY\_TUNER\_STANDARD\_MODE property is used, see [Detecting Tuner Standards](./detecting-tuner-standards.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

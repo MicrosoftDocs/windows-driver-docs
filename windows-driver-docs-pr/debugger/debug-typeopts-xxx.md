@@ -12,7 +12,6 @@ api_location:
 - DbgEng.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ---
 
 # DEBUG\_TYPEOPTS\_XXX
@@ -55,15 +54,13 @@ The options are represented by a bit-set with the following bit flags.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 By default, all of the type formatting options are turned off.
 
 For more information about types, see [Types](./types.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

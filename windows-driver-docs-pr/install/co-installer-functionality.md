@@ -4,14 +4,12 @@ description: Co-installer Functionality
 keywords:
 - co-installers WDK device installations , functionality
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Co-installer Functionality
 
-
-
-
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 A co-installer is a user-mode Win32 DLL that typically writes additional configuration information to the registry, or performs other installation tasks that require information that is not available when an INF is written.
 

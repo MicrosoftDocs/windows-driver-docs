@@ -4,7 +4,6 @@ description: OID_WWAN_SMS_CONFIGURATION sets or returns a MB device's SMS text m
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SMS_CONFIGURATION Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_SMS\_CONFIGURATION
@@ -18,8 +17,7 @@ Query requests return the MB device's current SMS text message configuration sto
 
 Set requests use the [**NDIS\_WWAN\_SET\_SMS\_CONFIGURATION**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_sms_configuration) structure to change the SMS text message configuration of the MB device.
 
-Remarks
--------
+## Remarks
 
 For more information about using this OID, see [WWAN SMS Operations](./mb-sms-operations.md).
 
@@ -33,8 +31,7 @@ Miniport drivers should return NDIS\_STATUS\_NOT\_INITIALIZED if the device is i
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support configuring SMS text messages.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

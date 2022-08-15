@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # FSCTL\_SET\_ZERO\_DATA control code
@@ -50,8 +49,7 @@ Not used with this operation; set to **NULL**.
 <a href="" id="outputbufferlength"></a>*OutputBufferLength*  
 Not used with this operation; set to zero.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) returns **STATUS\_SUCCESS** or an appropriate NTSTATUS value.
 
@@ -60,8 +58,7 @@ Status block
 -   **STATUS\_ACCESS\_DENIED** is returned when the **FILE\_ZERO\_DATA\_INFORMATION\_FLAG\_PRESERVE\_CACHED\_DATA** is set from user mode.
 -   **STATUS\_MEDIA\_WRITE\_PROTECTED** is returned if the volume is currently write protected.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -6,7 +6,6 @@ keywords:
 - Plug and Play WDK KMDF , hardware resources
 - hardware resources WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Hardware Resources

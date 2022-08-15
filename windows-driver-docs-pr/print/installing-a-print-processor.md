@@ -9,7 +9,6 @@ keywords:
 - print processors WDK , associating with print queue
 - print queues WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing a Print Processor

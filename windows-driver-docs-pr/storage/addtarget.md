@@ -10,7 +10,6 @@ api_location:
 - Hbapiwmi.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -19,8 +18,7 @@ ms.date: 10/17/2018
 
 The **AddTarget** WMI method configures the WMI provider to inform the WMI client about events that are associated with the indicated targets.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void AddTarget(
@@ -31,8 +29,7 @@ void AddTarget(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HbaPortWWN\[8\]*   
 The worldwide name of the local port whose events the WMI client will receive.
@@ -46,18 +43,15 @@ The scope of the target events to report. If this member is zero, the WMI client
 *HBAStatus*   
 On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**AddTarget\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_addtarget_out) structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [MSFC\_EventControl WMI Class](msfc-eventcontrol-wmi-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

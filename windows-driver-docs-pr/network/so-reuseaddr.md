@@ -4,7 +4,6 @@ description: SO_REUSEADDR
 ms.date: 08/08/2017
 keywords: 
  -SO_REUSEADDR Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SO\_REUSEADDR
@@ -126,8 +125,7 @@ The default state of this socket option is that always sharing the local transpo
 
 For more information about using the SO\_REUSEADDR socket option and its impact on the sharing of local transport addresses between sockets, see [Sharing Transport Addresses](./sharing-transport-addresses.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

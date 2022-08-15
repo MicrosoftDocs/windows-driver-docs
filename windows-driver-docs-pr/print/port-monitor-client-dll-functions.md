@@ -5,7 +5,6 @@ keywords:
 - port monitors WDK print , functions
 - client DLL port monitor functions WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Port Monitor Client DLL Functions

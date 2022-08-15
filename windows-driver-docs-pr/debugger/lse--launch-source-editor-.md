@@ -9,7 +9,6 @@ api_name:
 - lse (Launch Source Editor)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # lse (Launch Source Editor)
@@ -46,8 +45,7 @@ lse
 
  
 
-Remarks
--------
+## Remarks
 
 The **lse** command opens an editor for the current source file. This command is equivalent to clicking **Edit this file** in the shortcut menu of the [Source window](source-window.md) in WinDbg.
 

@@ -9,7 +9,6 @@ api_name:
 - Remote Client Syntax
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Remote Client Syntax

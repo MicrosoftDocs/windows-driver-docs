@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_FORMAT\_SPECIFIERS
@@ -28,8 +27,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The following table describes the constants that are valid for the **WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_FORMAT\_SPECIFIERS** property.
 
@@ -116,8 +114,7 @@ The special sequence L"$$" means the '$' character.
 
 This property is optional for the Imprinter/Endorser data source items. Not supported means that the printer/endorser device does not support any special format sequences.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -5,7 +5,6 @@ keywords:
 - ports WDK NDIS , default
 - NDIS ports WDK , default NDIS ports
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Default NDIS Port

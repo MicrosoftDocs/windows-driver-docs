@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbep
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbep
@@ -32,8 +31,7 @@ Address of a **usbport!\_HCD\_ENDPOINT** structure. To get the endpoint list for
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of a **usbport!\_HCD\_ENDPOINT** structure. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 

@@ -4,7 +4,6 @@ description: Building a NetAdapterCx client driver
 keywords:
 - building a NetAdapterCx client driver, building a NIC driver
 ms.date: 06/05/2017
-ms.localizationpriority: medium
 ---
 
 # Building a NetAdapterCx client driver
@@ -27,4 +26,4 @@ Use the following steps to create a new NetAdapter client driver in Visual Studi
 #include <netadaptercx.h>
 ```
 
-To watch a video that shows how to create a new NetAdapter client driver in Visual Studio, see the [Network Adapter Class Extension: Your First Driver](https://aka.ms/netadapter/video2) video on Channel 9.
+To watch a video that shows how to create a new NetAdapter client driver in Visual Studio, see the [Network Adapter Class Extension: Your First Driver](/teamblog/LearnTVAnnouncement) video on Channel 9.

@@ -4,7 +4,6 @@ description: The NDIS_STATUS_MEDIA_BUSY status indicates that the IRDA media is 
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_MEDIA_BUSY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_MEDIA\_BUSY
@@ -12,13 +11,11 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_MEDIA\_BUSY status indicates that the IRDA media is busy.
 
-Remarks
--------
+## Remarks
 
 For more information about NDIS\_STATUS\_MEDIA\_BUSY, see [OID\_IRDA\_MEDIA\_BUSY](/previous-versions/windows/hardware/network/ff560284(v=vs.85)).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

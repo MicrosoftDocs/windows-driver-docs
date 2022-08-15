@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # FSCTL\_IS\_PATHNAME\_VALID control code
@@ -46,13 +45,11 @@ Not used.
 <a href="" id="outputbufferlength"></a>*OutputBufferLength*  
 Not used.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS if the pathname is well formed. Otherwise, the routine that is used returns the appropriate NTSTATUS error code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

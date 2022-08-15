@@ -2,7 +2,6 @@
 title: Data-driven Class
 description: Data-driven Class
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # <span id="taef.data-driven_class"></span>Data-driven Class

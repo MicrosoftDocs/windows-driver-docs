@@ -1,5 +1,5 @@
 ---
-title: stacks
+title: stacks (WinDbg)
 description: The stacks extension displays information about the kernel stacks.
 keywords: ["stacks Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - stacks
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !stacks
@@ -63,8 +62,7 @@ Kdexts.dll
 
 For information about kernel stacks, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 The **!stacks** extension gives a brief summary of the state of every thread. You can use this extension instead of the [**!process**](-process.md) extension to get a quick overview of the system, especially when debugging multithread issues such as resource conflicts or deadlocks.
 

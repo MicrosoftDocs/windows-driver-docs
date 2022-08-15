@@ -5,7 +5,6 @@ keywords:
 - Direct3D version 11 WDK Windows 7 display , initializing DDI communication
 - Direct3D version 11 WDK Windows Server 2008 R2 display , initializing DDI communication
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing Communication with the Direct3D Version 11 DDI

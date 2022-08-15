@@ -7,7 +7,6 @@ keywords:
 - DP2 stream drawing tokens WDK DirectX 8.0
 - DP2 stream drawing tokens WDK DirectX 8.0 , high order surfaces
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # High Order Surface DP2 Stream Drawing Tokens

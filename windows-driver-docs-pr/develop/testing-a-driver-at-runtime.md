@@ -2,7 +2,6 @@
 title: How to test a driver at runtime using Visual Studio
 description: You can use WDK extensions in Visual Studio to conveniently build, deploy, install, and test a driver on a test computer on your network.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to test a driver at runtime using Visual Studio
@@ -11,14 +10,13 @@ The WDK extensions to Visual Studio provide a device testing interface that enab
 
 ### <span id="Prerequisites"></span><span id="prerequisites"></span><span id="PREREQUISITES"></span>Prerequisites
 
--   A Driver Package that is ready to install. You must first create and build your driver and then create a Driver Package for installation. For more information, see [Building a Driver](building-a-driver.md) and [Creating a Driver Package](creating-a-driver-package.md).
+-   A Driver Package that is ready to install. You must first create and build your driver. Starting in Windows 10 WDK versions, a Driver Package is automatically created for installation. For more information, see [Building a Driver](building-a-driver.md).
 -   The driver must be test signed. For more information, see [Signing a Driver](signing-a-driver.md).
 -   A test computer (or computers). The test computer must be on the same network as the computer that you are using for development. Both computers must be connected to the same domain, or both connected to the network under the same workgroup. The test computer should be running the version of Windows that you want to target for testing. 
 -   A device to be tested.
 -   (*Recommended*) Set up a kernel mode debugging connection to the test computer. To use a network connection for kernel mode debugging, the target computer must be running Windows 8. On computers running Windows 7 or Windows Vista, you can set up a USB, 1394, or a serial connection for kernel mode debugging. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md).
 
-Instructions
-------------
+## Instructions
 
 ### <span id="Configure_computers_for_testing"></span><span id="configure_computers_for_testing"></span><span id="CONFIGURE_COMPUTERS_FOR_TESTING"></span>Step 1: Configure computers for testing
 
@@ -47,13 +45,13 @@ To make driver testing on different test targets easier, tests are scheduled to 
 2.  In the **Driver Test Group Explorer** window, select the **Create a new test group** button. Or, select **New Test Group** from the **Driver** menu.
 3.  In the **Driver Test Group** window for the group that you created, type a name in **Test Group Name** text box to identify the group. The default name is Driver Test Group\_*nnnnn*, where *nnnnn* represents the number of the test group
 4.  Select **Add/Remove Tests**.
-5.  In the **Add or Remove Driver Tests** dialog box, you can specify the driver test category and architecture (All, x86, x64, ARM). By default all tests are shown. To view the test categories, select the folders in the Driver Test Categories drop-down list.
+5.  In the **Add or Remove Driver Tests** dialog box, you can specify the driver test category and architecture (All, x86, x64, Arm). By default all tests are shown. To view the test categories, select the folders in the Driver Test Categories drop-down list.
 
     For example, in WDK 8, to select all of the Device Fundamentals tests that are used in the [Windows Hardware Certification Kit (HCK)](/windows-hardware/test/hlk/), select **All Tests**, **Certification**, and **Device Fundamentals**. For information about the tests, see [How to select and configure the Device Fundamentals Tests](how-to-select-and-configure-the-device-fundamental-tests.md).
 
     In WDK 8.1, the Device Fundamentals tests are under **All Tests**, **HCK Tests**, **Certification**, and **Device Fundamentals** folder. In WDK 8.1 the Driver Test Categories include the HCK (Basic) Tests. See [How to run the HCK Test Suites in WDK 8.1](run-the-hck-test-suites-in-the-wdk.md) for more information.
 
-6.  Be sure that you select the tests that match the architecture of the intended test computer (x86, x64, ARM). Use the **Architecture Filter** to show only those tests that will run on your test computer.
+6.  Be sure that you select the tests that match the architecture of the intended test computer (x86, x64, Arm). Use the **Architecture Filter** to show only those tests that will run on your test computer.
 7.  Select **&gt;&gt;** to add the selected tests.
 
 ### <span id="Configure_test_parameters"></span><span id="configure_test_parameters"></span><span id="CONFIGURE_TEST_PARAMETERS"></span>Step 4: Configure test parameters
@@ -77,8 +75,7 @@ For information about deploying a driver automatically at build time, see [Deplo
 
 -   From the **Driver** menu, select **Test &gt; Run test**. By default, the Run test command runs all of the tests in the currently selected test group.
 
-Remarks
--------
+## Remarks
 
 For information about the driver tests and test categories, see [How to select and configure the Device Fundamentals Tests](how-to-select-and-configure-the-device-fundamental-tests.md). For information about the testing framework, see [Test Authoring and Execution Framework](../taef/index.md) (TAEF) and [Windows Driver Test Framework](../wdtf/index.md) (WDTF).
 

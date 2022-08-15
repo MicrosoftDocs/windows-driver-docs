@@ -9,7 +9,6 @@ api_name:
 - .echocpunum (Show CPU Number)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .echocpunum (Show CPU Number)
@@ -61,8 +60,7 @@ Turns on the display of the processor number.
 
 For more information about how to debug multiprocessor computers, see [Multiprocessor Syntax](multiprocessor-syntax.md).
 
-Remarks
--------
+## Remarks
 
 If you use the **.echocpunum** command without any arguments, the display of processor numbers is turned on or off, and the new state is displayed.
 

@@ -6,7 +6,6 @@ keywords:
 - command buffers WDK display
 - DMA buffers WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Command and DMA Buffers

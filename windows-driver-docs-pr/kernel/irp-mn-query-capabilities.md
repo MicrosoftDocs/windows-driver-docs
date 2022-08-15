@@ -4,7 +4,6 @@ description: The PnP manager sends this IRP to get the capabilities of a device,
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_QUERY_CAPABILITIES Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_CAPABILITIES
@@ -18,13 +17,11 @@ Function and filter drivers can handle this request if they alter the capabiliti
 
 0x09
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP to the bus driver for a device immediately after the device is enumerated. The PnP manager sends this IRP again after all the drivers for a device have started the device. A driver can send this IRP to get the capabilities for a device.
 
@@ -45,12 +42,11 @@ The **Parameters.DeviceCapabilities.Capabilities** member of the [**IO\_STACK\_L
 
 A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriate error status such as STATUS\_UNSUCCESSFUL.
 
-If a function or filter driver does not handle this IRP, it calls [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) and passes the IRP down to the next driver. Such a driver must not modify **Irp-&gt;IoStatus.Status** and must not complete the IRP.
+If a function or filter driver does not handle this IRP, it calls [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) and passes the IRP down to the next driver. Such a driver must not modify **Irp-&gt;IoStatus.Status** and must not complete the IRP.
 
 A bus driver sets **Irp-&gt;IoStatus.Status** and completes the IRP.
 
-Operation
----------
+## Operation
 
 When a device is enumerated, but before the function and filter drivers are loaded for the device, the PnP manager sends an **IRP\_MN\_QUERY\_CAPABILITIES** request to the parent bus driver for the device. The bus driver must set any relevant values in the [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure and return it to the PnP manager.
 
@@ -84,8 +80,7 @@ See [Handling IRPs](./handling-irps.md) for information about sending IRPs. The 
 
 -   Deallocate the IRP and the **DEVICE\_CAPABILITIES** structure when they are no longer needed.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

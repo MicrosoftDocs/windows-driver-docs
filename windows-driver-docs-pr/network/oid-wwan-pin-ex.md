@@ -4,7 +4,6 @@ description: OID_WWAN_PIN_EX sets or returns expanded information related to Per
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_PIN_EX Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_PIN\_EX
@@ -18,8 +17,7 @@ Miniport drivers should send [**NDIS\_STATUS\_WWAN\_PIN\_INFO**](ndis-status-wwa
 
 Callers requesting to set information related to PINs provide an [**NDIS\_WWAN\_SET\_PIN\_EX**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_pin_ex) structure to the miniport driver to send a PIN to the MB device, enable or disable PIN settings, or to change a PIN on the SIM.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

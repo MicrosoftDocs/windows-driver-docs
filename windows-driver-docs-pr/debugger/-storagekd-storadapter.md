@@ -9,7 +9,6 @@ api_name:
 - storagekd.storadapter
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !storagekd.storadapter
@@ -44,8 +43,7 @@ Specifies the address of a Storport adapter device object. If *Address* is omitt
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example of the **!storagekd.storadapter** display:
 

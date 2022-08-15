@@ -2,7 +2,6 @@
 title: KSPROPSETID\_BdaTableSection
 description: KSPROPSETID\_BdaTableSection
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_BdaTableSection

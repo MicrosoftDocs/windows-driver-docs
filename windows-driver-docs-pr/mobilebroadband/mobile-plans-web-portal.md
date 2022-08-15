@@ -4,7 +4,6 @@ description: This topic describes the implementation step for the Mobile Plans p
 keywords:
 - Windows Mobile Plans Web Portal, Mobile Plans implementation mobile operators
 ms.date: 03/25/2019
-ms.localizationpriority: medium
 ---
 
 # Mobile operator web portal
@@ -42,17 +41,20 @@ The following table describes the launch parameters available for eSIM.
 | Parameter name | Description | Example  |
 | --- | --- | --- |
 | eid            | The eSIM Identifier. This is sent only if an eSIM is present.                                                                                                                            | `eid= 89033024010400000100000000009136`          |
-| iccids         | Optional parameter. Specifies the list of ICCIDs from the available profile on an eSIM only. If there are no ICCIDs matching the MO available on the eSIM, this parameter is not sent. | `iccids=8988247000100003319, 988247000100003555` |
+| iccids         | Optional parameter. Specifies the list of ICCIDs from the available profile on an eSIM only. If there are no ICCIDs matching the MO available on the eSIM, this parameter is not sent. If an ICCID has trailing 'F', it is removed. | `iccids=8988247000100003319, 988247000100003555` |
 | imei           | The device's IMEI number.                                                                                                                                                                | `imei=001201234567890`                           |
-| location       | The user’s current physical location with country-level granularity.                                                                                                                    | `location=us`                                    |
+| location       | The two-letter ISO code of the user’s current physical location with country-level granularity.                                                                                                                    | `location=us`                                    |
 | transactionId  | The Transaction ID used for debugging the session. Providers should log this and send it in the notification payload. Maximum size is 64 characters.                                     | `transactionId=waoigFfX00yGH3Vb.1`               |
 | market         | The two-letter ISO code of the region settings in the PC.                                                                                                                                | `market=us`                                      |
 
-The user’s language preference is sent using the Accept-Language header, described in the following table.
+The user’s language preference is sent using the Accept-Language header, described in the following table. Additionally, if there were any errors that occured during a profile download, they are passed as headers in the next request. 
 
 | Header name     | Description  | Example |
 | --- | --- | --- |
 | Accept-Language | The user’s current language settings. The MO portal should render the contents in the specified language if possible. For more information, see [RFC 7231, section 5.3.5: Accept-Language](https://tools.ietf.org/html/rfc7231#section-5.3.5). | `Accept-Language: en-us` |
+| X-MP-LPAError-Codes      | This field provides the error code that has been captured in the LPA. If there are multiple errors, the error codes are passed in a comma-separated list. <p>For a list of possible error codes, see the [ESimOperationStatus enum](/uwp/api/windows.networking.networkoperators.esimoperationstatus).</p> | X-MP-LPAError-Codes: ServerFailure,ServerNotReachable                 |
+| X-MP-LPAError-TimeStamps | This field provides the timestamp of when the error occurred. The format of the timestamp is *Date Time UTC offset*. If there are multiple errors, the timestamps are passed as a comma-separated list.                                                                                                                                 | X-MP-LPAError-TimeStamps: 5/18/2018 11:17:23 PM,5/18/2018 11:27:33 PM |
+| X-MP-LPAError-ICCIDs     | This field provides the ICCID of the eSIM profile that the user attempted to download and install. This ICCID was passed back to the Mobile Plans app when control handoff occurred. Only one ICCID is passed.                                                                                                                       | X-MP-LPAError-ICCIDs: 8988247000101997790                             |
 
 ## Web Portal interface for physical SIMs
 
@@ -65,9 +67,9 @@ The following table describes the launch parameters available for a physical SIM
 
 | Parameter name | Description                                                                                                                                                                              | Example                                          |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| iccid          | Required parameter for a physical SIM. Specifies the ICCID on the physical sim.                                                                                                          | `iccid=8988247000100003319`                      |
+| iccid          | Required parameter for a physical SIM. Specifies the ICCID on the physical sim. If an ICCID has trailing 'F', it is removed.                                                                                                          | `iccid=8988247000100003319`                      |
 | imei           | The device's IMEI number.                                                                                                                                                                | `imei=001201234567890`                           |
-| location       | The user’s current physical location with country-level granularity.                                                                                                                    | `location=us`                                    |
+| location       | The two-letter ISO code of the user’s current physical location with country-level granularity.                                                                                                                    | `location=us`                                    |
 | transactionId  | The Transaction ID used for debugging the session. Providers should log this and send it in the notification payload. Maximum size is 64 characters.                                     | `transactionId=waoigFfX00yGH3Vb.1`               |
 | market         | The two-letter ISO code of the region settings in the PC.                                                                                                                                | `market=us`                                      |
 

@@ -11,7 +11,6 @@ api_location:
 - DbgEng.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ---
 
 # DEBUG\_PROCESS\_XXX
@@ -46,8 +45,7 @@ The process options only apply to live user-mode debugging.
 </tbody>
 </table>
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

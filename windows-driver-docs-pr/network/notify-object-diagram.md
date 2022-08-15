@@ -8,7 +8,6 @@ keywords:
 - subsystem WDK network configuration
 - notifications WDK networking , notifyo object diagram
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Notify Object Diagram
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 The following diagram shows how client applications that install or control networking call the *network configuration subsystem*. This subsystem calls network class installers to install network components and to register notify objects for those components. Notify objects call back to the subsystem to configure the network on behalf of those components that own the objects.
 
-![diagram illustrating how client applications that install or control networking call the network configuration subsystem](images/netcfg.png)
+![diagram illustrating how client applications that install or control networking call the network configuration subsystem.](images/netcfg.png)
 
  
 

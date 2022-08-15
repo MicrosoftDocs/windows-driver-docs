@@ -3,7 +3,6 @@ title: Processor Breakpoints (ba Breakpoints)
 description: Processor Breakpoints (ba Breakpoints)
 keywords: ["breakpoints, processor breakpoints", "breakpoints, data breakpoints", "breakpoints, software breakpoints", "breakpoints, BP versus BA", "software breakpoint", "software breakpoint, overview", "software breakpoint, limitations", "processor breakpoint", "processor breakpoint, overview"]
 ms.date: 05/13/2020
-ms.localizationpriority: medium
 ---
 
 # Processor Breakpoints (ba Breakpoints)

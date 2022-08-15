@@ -10,7 +10,6 @@ api_location:
 - Setupapi.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -102,8 +101,7 @@ If an installer returns an error for this DIF code, typically ERROR_DUPLICATE_FO
 
 For more information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

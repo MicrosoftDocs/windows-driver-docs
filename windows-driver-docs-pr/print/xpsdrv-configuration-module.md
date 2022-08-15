@@ -8,7 +8,6 @@ keywords:
 - notifications WDK XPSDrv
 - event notifications WDK XPSDrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # XPSDrv Configuration Module
@@ -20,7 +19,7 @@ Both Win32-based applications and WPF applications can print to XPSDrv print dri
 
 The following diagram shows the XPSDrv configuration architecture.
 
-![diagram illustrating the xpsdrv configuration architecture](images/xpsconfig.png)
+![diagram illustrating the xpsdrv configuration architecture.](images/xpsconfig.png)
 
 Note that the three objects in the Configuration Module section are mutually exclusive.
 

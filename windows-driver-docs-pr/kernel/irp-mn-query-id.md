@@ -4,7 +4,6 @@ description: Bus drivers must handle requests for BusQueryDeviceID for their chi
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_QUERY_ID Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_ID
@@ -23,13 +22,11 @@ For more information about these identifiers (IDs), see [Device Identification S
 0x13
 
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP when a device is enumerated. A driver might send this IRP to retrieve the instance ID for one of its devices.
 
@@ -52,8 +49,7 @@ A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriat
 
 On success, a driver sets **Irp-&gt;IoStatus.Information** to a WCHAR pointer that points to the requested information. On error, a driver sets **Irp-&gt;IoStatus.Information** to zero.
 
-Operation
----------
+## Operation
 
 If a driver returns ID(s) in response to this IRP, it allocates a WCHAR structure from paged pool to contain the ID(s). The PnP manager frees the structure when it is no longer needed.
 
@@ -139,8 +135,7 @@ In addition to sending the query ID IRP, the driver must call [**IoGetDeviceProp
 
 After the IRP completes and the driver is finished with the ID, the driver must free the ID structure returned by the driver(s) that handled the query IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

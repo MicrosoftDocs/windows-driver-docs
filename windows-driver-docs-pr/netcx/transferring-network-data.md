@@ -4,13 +4,12 @@ description: Introduction to the NetAdapterCx data path
 keywords:
 - NetAdapterCx transferring network data, NetCx transferring network data
 ms.date: 07/01/2019
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # Introduction to the NetAdapterCx data path
 
-To watch a video that introduces the data path model in NetAdapterCx, see the [Network Adapter Class Extension: Data Path](https://aka.ms/netadapter/video3) video on Channel 9.
+To watch a video that introduces the data path model in NetAdapterCx, see the [Network Adapter Class Extension: Data Path](/teamblog/LearnTVAnnouncement) video on Channel 9.
 
 In the NetAdapterCx model, network data is represented by packet descriptors and transferred through packet queues. The OS and the client driver transfer the packet descriptors to each other using a set of ring buffers associated with each packet queue.
 

@@ -9,7 +9,6 @@ api_name:
 - ReqMarkCancelableSend
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ReqMarkCancelableSend rule (kmdf)
@@ -21,8 +20,7 @@ To mark the request as cancelable, the driver must own the request. When the req
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfRequestMarkCancelable**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestmarkcancelable)
 [**WdfRequestMarkCancelableEx**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestmarkcancelableex)

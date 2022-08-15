@@ -6,7 +6,6 @@ keywords:
 - receive-side throttle (RST) WDK NDIS 6.20
 - RST WDK NDIS 6.20
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Receive Side Throttle in NDIS 6.20

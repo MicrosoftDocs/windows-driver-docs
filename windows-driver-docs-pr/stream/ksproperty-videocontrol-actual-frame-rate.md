@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_VIDEOCONTROL\_ACTUAL\_FRAME\_RATE
@@ -57,8 +56,7 @@ The KSPROPERTY\_VIDEOCONTROL\_ACTUAL\_FRAME\_RATE property retrieves the frame r
 
 The property value (operation data) is a KSPROPERTY\_VIDEOCONTROL\_ACTUAL\_FRAME\_RATE\_S structure that specifies actual frame rate information at the time of query, such as the dimensions (width and height) of the image, current actual frame rate, and current maximum available frame rate.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -76,7 +74,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_VIDEOCONTROL\_ACTUAL\_FRAME\_RATE\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocontrol_actual_frame_rate_s)
 

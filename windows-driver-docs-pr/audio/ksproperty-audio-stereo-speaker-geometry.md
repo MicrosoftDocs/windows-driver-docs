@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY
@@ -82,15 +81,13 @@ The preceding parameters are equivalent in meaning (but not equal in value) to t
 
 A KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 DirectSound treats KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY as a filter property on a DAC node, and as a pin property on a 3D node.
 
 For additional information, see [DirectSound Speaker-Configuration Settings](./directsound-speaker-configuration-settings.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

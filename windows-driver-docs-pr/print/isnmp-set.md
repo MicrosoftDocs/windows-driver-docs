@@ -17,15 +17,13 @@ api_location:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ISNMP::Set method
 
 The `Set` method enables an ASP Web page to associate a value with an SNMP OID.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT Set(
@@ -34,8 +32,7 @@ HRESULT Set(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrOID* \[in\]  
 Caller-supplied pointer to an SNMP OID string.
@@ -43,8 +40,7 @@ Caller-supplied pointer to an SNMP OID string.
 *varValue* \[out\]  
 Caller-supplied location containing the OID's value.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -97,8 +93,7 @@ objSNMP.Open strIP, strCommunity, 2, 1000
 objSNMP.Set ("43.18.1.1.2", OIDValue)
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

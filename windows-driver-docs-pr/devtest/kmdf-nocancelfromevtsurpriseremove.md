@@ -9,7 +9,6 @@ api_name:
 - NoCancelFromEvtSurpriseRemove
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NoCancelFromEvtSurpriseRemove rule (kmdf)
@@ -19,8 +18,7 @@ The **NoCancelFromEvtSurpriseRemove** rule specifies that WDF Drivers shouldn’
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfIoQueueDrain**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuedrain)
 [**WdfIoQueueDrainSynchronously**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuedrainsynchronously)

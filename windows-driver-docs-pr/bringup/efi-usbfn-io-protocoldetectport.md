@@ -1,17 +1,14 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.DetectPort
-description: EFI_USBFN_IO_PROTOCOL.DetectPort
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+description: The DetectPort function returns the type of device attached to the USB port.
+ms.date: 08/20/2021
 ---
 
-# EFI\_USBFN\_IO\_PROTOCOL.DetectPort
+# EFI_USBFN_IO_PROTOCOL.DetectPort
 
-
-The **DetectPort** function returns the type of device attached to the USB port.
+The *DetectPort* function returns the type of device attached to the USB port.
 
 ## Syntax
-
 
 ```cpp
 typedef
@@ -24,60 +21,23 @@ EFI_STATUS
 
 ## Parameters
 
+*This*  
+A pointer to the EFI_USBFN_IO_PROTOCOL instance.
 
-<a href="" id="this"></a>*This*  
-A pointer to the EFI\_USBFN\_IO\_PROTOCOL instance.
-
-<a href="" id="porttype"></a>*PortType*  
-A [EFI\_USBFN\_PORT\_TYPE](efi-usbfn-port-type.md) enumeration that indicates the USB port type.
+*PortType*  
+A [EFI_USBFN_PORT_TYPE](efi-usbfn-port-type.md) enumeration that indicates the USB port type.
 
 ## Return values
 
+The function returns one of the following status codes:
 
-This function returns the following values:
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>EFI_SUCCESS</strong></p></td>
-<td><p>The function returned successfully</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>EFI_INVALID_PARAMETER</strong></p></td>
-<td><p>A parameter is invalid</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>EFI_DEVICE_ERROR</strong></p></td>
-<td><p>The physical device reported an error.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>EFI_NOT_READY</strong></p></td>
-<td><p>The physical device is busy or not ready to process this request</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Status code | Description |
+|--|--|
+| EFI_SUCCESS | The function returned successfully. |
+| EFI_INVALID_PARAMETER | A parameter is invalid. |
+| EFI_DEVICE_ERROR | The physical device reported an error. |
+| EFI_NOT_READY | The physical device is busy or not ready to process this request. |
 
 ## Requirements
 
-
 **Header:** User generated
-
- 
-
- 
-
-
-
-

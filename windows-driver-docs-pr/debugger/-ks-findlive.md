@@ -9,7 +9,6 @@ api_name:
 - ks.findlive
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.findlive
@@ -58,8 +57,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The **!ks.findlive** command may not find all possible specified live objects.
 

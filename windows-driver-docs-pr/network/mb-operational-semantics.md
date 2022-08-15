@@ -2,7 +2,6 @@
 title: MB Operational Semantics
 description: MB Operational Semantics
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MB Operational Semantics
@@ -16,11 +15,11 @@ An asynchronous transaction is a three-way handshake that starts with the initia
 
 ### Asynchronous *Set* and *Query* Requests
 
-Many of the *set* and *query* OID requests that are used by the MB Service are processed asynchronously. For more information about *set* and *query* OID requests, see [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request). The "WWAN-specific OIDs" table in the [MB Data Model](mb-data-model.md) topic identifies which OIDs are processed asynchronously.
+Many of the *set* and *query* OID requests that are used by the MB Service are processed asynchronously. For more information about *set* and *query* OID requests, see [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request). The "WWAN-specific OIDs" table in the [MB Data Model](mb-data-model.md) topic identifies which OIDs are processed asynchronously.
 
 The following diagram represents the interaction sequence for an asynchronous *query* transaction between the MB Service and the miniport driver. The labels in bold represent OID identifiers, or transactional flow control, and the labels in regular text represent the important flags within the OID structure.
 
-![diagram illustrating the interaction sequence for an asynchronous query transaction between the mobile broadband service and the miniport driver](images/wwanasyncquerytransaction.png)
+![diagram illustrating the interaction sequence for an asynchronous query transaction between the mobile broadband service and the miniport driver.](images/wwanasyncquerytransaction.png)
 
 The three-way handshake is the same for both *query* and *set* requests.
 
@@ -38,7 +37,7 @@ Except for [OID\_WWAN\_DRIVER\_CAPS](./oid-wwan-driver-caps.md), all other MB-sp
 
 The following diagram represents the interaction sequence for an asynchronous *set* transaction between the MB Service and the miniport driver. The labels in bold represent OID identifiers, or transactional flow control, and the labels in regular text represent the important flags within the OID structure.
 
-![diagram illustrating the interaction sequence for an asynchronous set transaction between the mobile broadband service and the miniport driver](images/wwanasyncsettransaction.png)
+![diagram illustrating the interaction sequence for an asynchronous set transaction between the mobile broadband service and the miniport driver.](images/wwanasyncsettransaction.png)
 
 ### Asynchronous Response
 
@@ -52,7 +51,7 @@ The handshake procedures that miniport drivers and the MB Service must follow ar
 
 Upon receiving an OID request, miniport drivers should perform the following steps:
 
-1.  Allocate memory in kernel mode to copy the contents of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) data structure associated with the OID request.
+1.  Allocate memory in kernel mode to copy the contents of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) data structure associated with the OID request.
 
 2.  Among the request's parameters, ensure that the **RequestId** and **RequestHandle** members of the OID request structure are also copied. These members will be used later in the transactional *indication*.
 

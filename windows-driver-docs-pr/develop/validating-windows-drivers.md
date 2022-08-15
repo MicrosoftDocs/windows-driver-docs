@@ -2,7 +2,6 @@
 title: Validating Universal Windows drivers
 description: You can use the ApiValidator.exe tool to verify that the APIs that your driver calls are valid for a Universal Windows driver.
 ms.date: 04/28/2020
-ms.localizationpriority: medium
 ---
 
 # Validating Windows Drivers
@@ -33,7 +32,7 @@ If there are no errors, the INF meets the [Driver Package Isolation](driver-isol
 
 For example, the [INF AddEventProvider Directive](../install/inf-addeventprovider-directive.md) is available starting in Windows 10, version 1809. To use this directive in an INF targeting an OS version before Windows 10, version 1809, decorate both the install section using legacy INF syntax for registering ETW event providers as well as the install section using the updated syntax.
 
-For sample code showing how to use OS decorations, see [Sample INF Models Sections for One or More Target Operating Systems](../install/sample-inf-models-sections-for-one-or-more-target-operating-system.md).
+For sample code showing how to use OS decorations, see [Combining Platform Extensions with Operating System Versions](../install/combining-platform-extensions-with-operating-system-versions.md).
 
 ## Driver Verifier Driver Isolation Checks
 
@@ -183,10 +182,10 @@ Use this workaround:
 
 ### Known ApiValidator Issues
 
-* ApiValidator does not run on ARM64 because AitStatic does not work on ARM64.
-* ARM64 binaries can be tested on x64 machines but not on an x86 machine.
-* ApiValidator can run on x86 to test x86 binaries and ARM binaries.
-* ApiValidator can run on x64 to test x86, x64, ARM, and ARM64 binaries.
+* ApiValidator does not run on Arm64 because AitStatic does not work on Arm64.
+* Arm64 binaries can be tested on x64 machines but not on an x86 machine.
+* ApiValidator can run on x86 to test x86 binaries and Arm binaries.
+* ApiValidator can run on x64 to test x86, x64, Arm, and Arm64 binaries.
 
 
 

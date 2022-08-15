@@ -1,5 +1,5 @@
 ---
-title: Creating an INF file for a filter driver
+title: Creating an INF file for a minifilter driver
 description: Describes how to create an INF file for a filter driver
 keywords:
 - INF files WDK file system , minifilter drivers
@@ -10,17 +10,16 @@ keywords:
 - ServiceInstall section WDK file system
 - DefaultInstall section WDK file system
 - AddRegistry section WDK file system
-ms.date: 08/21/2020
-ms.localizationpriority: medium
+ms.date: 02/25/2022
 ---
 
-# Creating an INF file for a filter driver
+# Creating an INF file for a minifilter driver
 
 ## Introduction
 
 > [!NOTE]
 >
-> Starting in Windows 10 version 1903, INF requirements for primitive drivers (such as file system filter drivers) have changed. See [Creating a new primitive driver](../develop/creating-a-primitive-driver.md) for details.
+> Starting in Windows 10 version 1903, INF requirements for primitive drivers (such as file system minifilter drivers) changed. See [Creating a new primitive driver](../develop/creating-a-primitive-driver.md) for details.
 
 Filter drivers need an INF file to be installed on the Windows operating system. You'll find sample INF files in the [minifilter samples](https://github.com/microsoft/Windows-driver-samples/tree/master/filesys/miniFilter).
 
@@ -38,7 +37,7 @@ An INF file for a file system filter driver generally contains the following sec
 
 > [!NOTE]
 >
-> Starting with Windows 10 version 1903, the **DefaultUninstall** and **DefaultUninstall.Services** sections are prohibited [(with exception)](../develop/creating-a-primitive-driver.md#legacy-compatibility). These sections were optional in prior OS versions.
+> Starting with Windows 10 version 1903, the **DefaultUninstall** and **DefaultUninstall.Services** sections are prohibited, [(with exception)](../develop/creating-a-primitive-driver.md#legacy-compatibility). These sections were optional in prior OS versions.
 >
 > All drivers running on 64-bit versions of Windows systems must be signed before Windows will load them. See [Signing a driver](../develop/signing-a-driver.md) for more information.
 
@@ -93,7 +92,7 @@ You can create a single INF file to install your driver on multiple versions of 
 The following code example shows a typical [**DefaultInstall**](../install/inf-defaultinstall-section.md) section.
 
 ```cpp
-[DefaultInstall]
+[DefaultInstall.NTamd64]
 OptionDesc = %MinispyServiceDesc%
 CopyFiles = Minispy.DriverFiles, Minispy.UserFiles
 ```
@@ -102,8 +101,8 @@ CopyFiles = Minispy.DriverFiles, Minispy.UserFiles
 
 The [**DefaultInstall.Services**](../install/inf-defaultinstall-services-section.md) section contains an [**AddService**](../install/inf-addservice-directive.md) directive that controls how and when the services of a particular driver are loaded, as shown in the following code example.
 
-```cpp
-[DefaultInstall.Services]
+``` cpp
+[DefaultInstall.NTamd64.Services]
 AddService = %MinispyServiceName%,,Minispy.Service
 ```
 
@@ -214,13 +213,13 @@ In Windows 10 prior to version 1903, the **DefaultUninstall** and **DefaultUnins
 * **DefaultUninstall** contained [**DelFiles**](../install/inf-delfiles-directive.md) and [**DelReg**](../install/inf-delreg-directive.md) directives to remove files and registry entries.
 * **DefaultUninstall.Services** contained [**DelService**](../install/inf-delservice-directive.md) directives to remove the minifilter driver's services. The [**DelService**](../install/inf-delservice-directive.md) directive always specified the SPSVCINST_STOPSERVICE flag (0x00000200) to stop the service before it was deleted.
 
-The following example shows typical **DefaultUninstall** and **DefaultUninstall.Services** sections.
+The following example shows typical **DefaultUninstall** and **DefaultUninstall.Services** sections prior to Windows 10, version 1903.
 
 ```cpp
-[DefaultUninstall]
+[DefaultUninstall.NTamd64]
 DelFiles   = Minispy.DriverFiles, Minispy.UserFiles
 DelReg     = Minispy.DelRegistry
 
-[DefaultUninstall.Services]
+[DefaultUninstall.NTamd64.Services]
 DelService = Minispy,0x200
 ```

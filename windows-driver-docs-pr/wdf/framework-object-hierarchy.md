@@ -6,7 +6,6 @@ keywords:
 - framework objects WDK UMDF , hierarchy
 - hierarchy WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Framework Object Hierarchy
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 The following figure shows the parent-child framework object hierarchy.
 
-![umdf parent-child object hierarchy](images/umdfhierarchy.gif)
+![umdf parent-child object hierarchy.](images/umdfhierarchy.gif)
 
 The lifetime scope of framework objects is determined by their location in the hierarchy and how the objects are created. The lifetime scope of framework objects falls into one of the following categories:
 

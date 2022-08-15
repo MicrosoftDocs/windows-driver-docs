@@ -1,8 +1,7 @@
 ---  
 title: System-Defined Device Setup Classes Available to Vendors  
 description: System-Defined Device Setup Classes Available to Vendors 
-ms.date: 11/20/2020
-ms.localizationpriority: medium
+ms.date: 06/04/2021
 ms.custom: contperf-fy21q1
 ---  
 
@@ -21,6 +20,11 @@ Values in the list can be used to install device drivers on Windows 2000 and lat
 > If you're looking for info on troubleshooting a problem with a CD or DVD drive, see [The CD drive or the DVD drive does not work as expected](https://support.microsoft.com/help/929461/the-cd-drive-or-the-dvd-drive-does-not-work-as-expected-on-a-computer).
 
 ## Device categories and class values 
+
+**Audio Processing Objects (APOs)**  
+Class = AudioProcessingObject  
+ClassGuid = {5989fce8-9cd0-467d-8a6a-5419e31529d4}  
+This class includes Audio processing objects (APOs). For more info, see [Windows Audio Processing Objects](../audio/windows-audio-processing-objects.md).  
 
 **Battery Devices**  
 Class = Battery  
@@ -283,5 +287,4 @@ ClassGuid = {eec5ad98-8080-425f-922a-dabf3de3f69a}
    
   
 
-  
   

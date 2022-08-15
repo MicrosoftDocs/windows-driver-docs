@@ -1,6 +1,6 @@
 ---
-title: AVC\_FUNCTION\_GET\_UNIQUE\_ID
-description: AVC\_FUNCTION\_GET\_UNIQUE\_ID
+title: AVC_FUNCTION_GET_UNIQUE_ID
+description: The AVC_FUNCTION_GET_UNIQUE_ID function code obtains the unique ID of the AV/C unit.
 keywords: ["AVC_FUNCTION_GET_UNIQUE_ID Streaming Media Devices"]
 topic_type:
 - apiref
@@ -8,56 +8,28 @@ api_name:
 - AVC_FUNCTION_GET_UNIQUE_ID
 api_type:
 - NA
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 07/27/2021
 ---
 
-# AVC\_FUNCTION\_GET\_UNIQUE\_ID
+# AVC_FUNCTION_GET_UNIQUE_ID
 
+The AVC_FUNCTION_GET_UNIQUE_ID function code obtains the unique ID of the AV/C unit.
 
-## <span id="ddk_avc_function_get_unique_id_ks"></span><span id="DDK_AVC_FUNCTION_GET_UNIQUE_ID_KS"></span>
+## I/O Status Block
 
-
-The **AVC\_FUNCTION\_GET\_UNIQUE\_ID** function code obtains the unique ID of the AV/C unit.
-
-### I/O Status Block
-
-If successful, the AV/C protocol driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
+If successful, the AV/C protocol driver sets **Irp->IoStatus.Status** to STATUS_SUCCESS.
 
 Possible other return values include:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>STATUS_TIMEOUT</p></td>
-<td><p>The request was made, but no response was received before all time-out and retry processing was complete.</p></td>
-</tr>
-<tr class="even">
-<td><p>STATUS_REQUEST_ABORTED</p></td>
-<td><p>Immediately abort when the IRP completion status is STATUS_REQUEST_ABORTED. This indicates that the device has been removed or is no longer available on the 1394 bus.</p></td>
-</tr>
-<tr class="odd">
-<td><p>STATUS_*</p></td>
-<td><p>Any other return code indicates that an error or warning occurred that was beyond the scope of the AV/C protocol.</p></td>
-</tr>
-</tbody>
-</table>
+| Return value | Description |
+|--|--|
+| STATUS_TIMEOUT | The request was made, but no response was received before all time-out and retry processing was complete. |
+| STATUS_REQUEST_ABORTED | Immediately abort when the IRP completion status is STATUS_REQUEST_ABORTED. This indicates that the device has been removed or is no longer available on the 1394 bus. |
+| STATUS_* | Any other return code indicates that an error or warning occurred that was beyond the scope of the AV/C protocol. |
 
- 
+## Comments
 
-### Comments
-
-This function uses the **UniqueID** member of the AVC\_MULTIFUNC\_IRB structure as shown below.
+This function uses the **UniqueID** member of the AVC_MULTIFUNC_IRB structure as shown below.
 
 ```cpp
 typedef struct _AVC_MULTIFUNC_IRB {
@@ -74,7 +46,7 @@ typedef struct _AVC_MULTIFUNC_IRB {
 } AVC_MULTIFUNC_IRB, *PAVC_MULTIFUNC_IRB;
 ```
 
-The members of the AVC\_UNIQUE\_ID structure are shown below:
+The members of the AVC_UNIQUE_ID structure are shown below:
 
 ```cpp
 typedef struct _AVC_UNIQUE_ID {
@@ -82,27 +54,30 @@ typedef struct _AVC_UNIQUE_ID {
 } AVC_UNIQUE_ID, *PAVC_UNIQUE_ID;
 ```
 
-### Requirements
+## Requirements
 
 **Headers:** Declared in *avc.h*. Include *avc.h*.
 
-### AVC\_MULTIFUNC\_IRB Input
+### AVC_MULTIFUNC_IRB Input
 
 **Common**  
-The **Function** submember of this member must be set to **AVC\_FUNCTION\_GET\_UNIQUE\_ID** from the AVC\_FUNCTION enumeration.
+The **Function** submember of this member must be set to **AVC_FUNCTION_GET_UNIQUE_ID** from the AVC_FUNCTION enumeration.
 
-<span id="UniqueID"></span><span id="uniqueid"></span><span id="UNIQUEID"></span>**UniqueID**  
+**UniqueID**  
 Specifies a GUID representing the unit as a whole. All subunits within the same unit share the same GUID. No two units share the same GUID.
 
 This function code is not supported by virtual instances of *avc.sys*.
 
 The subunit driver uses this function if it must report the device GUID to a controlling application (an application that must know which of the many subunit driver instances belong in the same unit), or if it is building its own AVCPRECONNECTINFO structures for external plugs.
 
-This must be called at IRQL = PASSIVE\_LEVEL.
+This must be called at IRQL = PASSIVE_LEVEL.
 
-### See Also
+## See also
 
-[**AVC\_MULTIFUNC\_IRB**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb), [**AVC\_UNIQUE\_ID**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_unique_id), [**AVCPRECONNECTINFO**](/windows-hardware/drivers/ddi/avc/ns-avc-_avcpreconnectinfo), [**AVC\_FUNCTION**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function)
+[**AVC_MULTIFUNC_IRB**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb)
 
- 
+[**AVC_UNIQUE_ID**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_unique_id)
 
+[**AVCPRECONNECTINFO**](/windows-hardware/drivers/ddi/avc/ns-avc-_avcpreconnectinfo)
+
+[**AVC_FUNCTION**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function)

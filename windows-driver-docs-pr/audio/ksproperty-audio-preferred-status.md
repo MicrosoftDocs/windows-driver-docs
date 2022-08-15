@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_PREFERRED\_STATUS
@@ -46,7 +45,7 @@ The KSPROPERTY\_AUDIO\_PREFERRED\_STATUS property informs a device that it is th
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_preferred_status" data-raw-source="[&lt;strong&gt;KSAUDIO_PREFERRED_STATUS&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_preferred_status)"><strong>KSAUDIO_PREFERRED_STATUS</strong></a></p></td>
 </tr>
 </tbody>
@@ -60,15 +59,13 @@ The property value (operation data) is a structure of type KSAUDIO\_PREFERRED\_S
 
 A KSPROPERTY\_AUDIO\_PREFERRED\_STATUS property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The [SysAudio system driver](./kernel-mode-wdm-audio-components.md#sysaudio-system-driver) uses this property to inform a wave playback, wave record, MIDI, or mixer device when it is selected to be the new preferred device, or when a previously selected preferred device is deselected.
 
 For information about preferred devices, see [**SetupPreferredAudioDevices**](setuppreferredaudiodevices.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -86,9 +83,8 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](../stream/ksproperty-structure.md)
 
 [**KSAUDIO\_PREFERRED\_STATUS**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_preferred_status)
 
 [**SetupPreferredAudioDevices**](setuppreferredaudiodevices.md)
-

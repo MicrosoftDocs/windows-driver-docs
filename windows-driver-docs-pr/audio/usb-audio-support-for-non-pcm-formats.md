@@ -9,7 +9,6 @@ keywords:
 - non-PCM audio formats WDK , AC-3
 - USB Audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB Audio Support for Non-PCM Formats

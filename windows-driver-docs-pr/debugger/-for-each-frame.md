@@ -9,7 +9,6 @@ api_name:
 - for_each_frame
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !for\_each\_frame
@@ -56,8 +55,7 @@ Displays some Help text for this extension in the [Debugger Command window](debu
 
 For more information about the local context, see [Changing Contexts](changing-contexts.md).
 
-Remarks
--------
+## Remarks
 
 If you do not specify any arguments, the **!for\_each\_frame** extension displays a list of all frames and their frame indexes. For a more detailed list of all frames, use the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command.
 

@@ -9,7 +9,6 @@ keywords:
 - ICM WDK GDI
 - color management WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Image Color Management
@@ -22,5 +21,5 @@ To find out more about Image Color Management and a particular class of output d
 
 [Color Management for Printers](../print/color-management-for-printers.md)
 
-[Color Management for Still Image Devices](../image/color-management-for-still-image-devices.md)
+![Color Management for Still Image Devices](../image/color-management-for-still-image-devices.md)
 

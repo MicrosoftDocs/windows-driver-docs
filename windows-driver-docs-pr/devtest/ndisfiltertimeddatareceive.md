@@ -9,7 +9,6 @@ api_name:
 - NdisFilterTimedDataReceive
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisFilterTimedDataReceive rule (ndis)
@@ -17,15 +16,14 @@ ms.localizationpriority: medium
 
 The **NdisFilterTimedDataReceive** rule verifies that an NDIS filter driver completes a receive request by the [*FilterReceiveNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_receive_net_buffer_lists) function before timing out.
 
-You can use a kernel debugger to help identify the cause of the problem. Check RULE\_STATE for PendingNbl, which points to the oldest pending [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list). Use the [**!ndiskd.nbl**](../debugger/-ndiskd-nbl.md) debugger extension. For information about using the debugger, see [Windows Debugging](../debugger/index.md).
+You can use a kernel debugger to help identify the cause of the problem. Check RULE\_STATE for PendingNbl, which points to the oldest pending [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list). Use the [**!ndiskd.nbl**](../debugger/-ndiskd-nbl.md) debugger extension. For information about using the debugger, see [Windows Debugging](../debugger/index.md).
 
 **Driver model: NDIS**
 
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) ( 0x00092012)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

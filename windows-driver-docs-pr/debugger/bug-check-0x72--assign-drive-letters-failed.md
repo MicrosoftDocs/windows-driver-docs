@@ -9,7 +9,6 @@ api_name:
 - ASSIGN_DRIVE_LETTERS_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x72: ASSIGN\_DRIVE\_LETTERS\_FAILED

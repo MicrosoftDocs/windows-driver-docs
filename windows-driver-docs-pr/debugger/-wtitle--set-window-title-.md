@@ -9,7 +9,6 @@ api_name:
 - .wtitle (Set Window Title)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .wtitle (Set Window Title)
@@ -54,8 +53,7 @@ This command cannot be used in script files.
 
  
 
-Remarks
--------
+## Remarks
 
 For CDB, NTSD, or KD, if the **.wtitle** command has not been used, the window title matches the command line used to launch the debugger.
 

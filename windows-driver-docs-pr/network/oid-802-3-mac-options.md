@@ -4,7 +4,6 @@ description: OID_802_3_MAC_OPTIONS
 ms.date: 08/08/2017
 keywords: 
  -OID_802_3_MAC_OPTIONS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_802\_3\_MAC\_OPTIONS
@@ -21,8 +20,7 @@ The underlying driver returns zero, indicating that it supports no options.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

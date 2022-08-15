@@ -4,7 +4,6 @@ description: SIO_WSK_QUERY_INSPECT_ID
 ms.date: 07/18/2017
 keywords:
  - SIO_WSK_QUERY_INSPECT_ID Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SIO\_WSK\_QUERY\_INSPECT\_ID
@@ -69,8 +68,7 @@ If a WSK application calls the **WskControlSocket** function to query the inspec
 
 For more information about conditionally accepting connections, see [Listening for and Accepting Incoming Connections](./listening-for-and-accepting-incoming-connections.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

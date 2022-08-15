@@ -9,7 +9,6 @@ api_name:
 - .outmask (Control Output Mask)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .outmask (Control Output Mask)
@@ -66,8 +65,7 @@ Restores the output mask to the default value. This parameter is equivalent to *
 
  
 
-Remarks
--------
+## Remarks
 
 Each output mask flag enables the debugger to display certain output in the [Debugger Command Window](debugger-command-window.md). If all of the mask flags are set, all output is displayed.
 

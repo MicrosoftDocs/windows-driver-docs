@@ -9,7 +9,6 @@ api_name:
 - QUOTA_UNDERFLOW
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x21: QUOTA\_UNDERFLOW

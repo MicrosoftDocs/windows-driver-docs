@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # BytesPerLine element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **BytesPerLine** element specifies the number of bytes per scan line in the resultant image file.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:BytesPerLine>
@@ -26,13 +24,11 @@ Usage
 </wscn:BytesPerLine>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. An integer value from 0 through 2147483647.
 
@@ -69,8 +65,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The integer value that the WSD Scan Service returns is the total bytes that are required for both the data pixels and any padding that the scanner will add to each scan line.
 

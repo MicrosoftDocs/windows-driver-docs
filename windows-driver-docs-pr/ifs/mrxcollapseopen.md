@@ -11,7 +11,6 @@ api_location:
 api_type:
 - UserDefined
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # MRxCollapseOpen routine
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The *MRxCollapseOpen* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that the network mini-redirector collapse an open file system request onto an existing SRV\_OPEN structure.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxCollapseOpen;
@@ -31,14 +29,12 @@ NTSTATUS MRxCollapseOpen(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxCollapseOpen* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as the following:
 
@@ -63,8 +59,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 *MRxCollapseOpen* is called by RDBSS to collapse an SRV\_OPEN structure locally. The network mini-redirector is consulted to determine if a collapse is possible so there is no reason to call the network mini-redirector twice. If the network mini-redirector decides to collapse the SRV\_OPEN structure, then it will do so and pass back a returnable status. A return value of STATUS\_SUCCESS is a terminating return value. A different return value, for example, STATUS\_MORE\_PROCESSING\_REQUIRED, is considered a non-terminating return value.
 
@@ -76,8 +71,7 @@ Before calling *MRxCollapseOpen*, RDBSS modifies the following members in the RX
 
 If the network mini-redirector decides to collapse the SRV\_OPEN structure, then the **SrvOpen** member of the RX\_CONTEXT structure must be set to the collapsed SRV\_OPEN structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

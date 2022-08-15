@@ -5,7 +5,6 @@ keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , retrieving devices
 - retrieving DirectX VA devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Retrieving DirectX VA Devices

@@ -5,7 +5,6 @@ keywords:
 - autoconfiguration WDK printer , during device installations
 - printer autoconfiguration WDK printer , during device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Autoconfiguration During Device Installation
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 The following figure shows the data flow in autoconfiguration when a device is installed.
 
-![diagram illustrating the data flow in autoconfiguration when a device is installed](images/autocfginstall.png)
+![diagram illustrating the data flow in autoconfiguration when a device is installed.](images/autocfginstall.png)
 
 1.  When a printer is installed, the spooler initializes the driver by calling `DrvPrinterEvent` and passing PRINTER\_EVENT\_INITIALIZE in the call.
 

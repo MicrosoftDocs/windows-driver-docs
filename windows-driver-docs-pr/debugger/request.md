@@ -12,7 +12,6 @@ api_location:
 api_type:
 - COM
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # IDebugAdvanced2::Request method
@@ -20,8 +19,7 @@ ms.localizationpriority: medium
 
 The **Request** method performs a variety of different operations.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT Request(
@@ -34,8 +32,7 @@ HRESULT Request(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Request* \[in\]  
 Specifies which operation to perform. **Request** can be one of the values in the following table. Details of each operation can be found by following the link in the "Request" column.
@@ -124,8 +121,7 @@ Specifies the size of the output buffer *OutBufferSize*. If the type of the outp
 *OutSize* \[out, optional\]  
 Receives the size of the output returned in the output buffer *OutBuffer*. If *OutSize* is **NULL**, this information is not returned.
 
-Return value
-------------
+## Return value
 
 The interpretation of the return value depends on the value of the *Request* parameter. Unless otherwise stated, the following values may be returned.
 
@@ -160,8 +156,7 @@ The interpretation of the return value depends on the value of the *Request* par
 
 This method may also return error values. See [**Return Values**](./hresult-values.md) for more details.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

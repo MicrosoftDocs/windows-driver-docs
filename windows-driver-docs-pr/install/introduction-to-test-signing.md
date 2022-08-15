@@ -4,7 +4,6 @@ description: Introduction to Test-Signing
 keywords:
 - test signing driver packages WDK , about test signing driver packages
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Test-Signing
@@ -32,7 +31,7 @@ A development and test team can participate in the [WHQL Test Signature program]
 
 -   [MakeCert test certificate](makecert-test-certificate.md), which is a digital certificate created by the [**MakeCert**](../devtest/makecert.md) tool.
 
--   [Commercial test certificate](commercial-test-certificate.md), which is a digital certificate that is issued by a CA that is a member of the Microsoft Root Certificate Program.
+-   [Commercial test certificate](./deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md), which is a digital certificate that is issued by a CA that is a member of the Microsoft Root Certificate Program.
 
 -   [Enterprise CA test certificate](enterprise-ca-test-certificate.md), which is a digital certificate that is deployed by an Enterprise CA.
 
@@ -45,8 +44,4 @@ To facilitate early driver development and debugging, you can temporarily disabl
 For information about the most appropriate tools to use to test-sign driver packages, see [Tools for Signing Drivers](../devtest/tools-for-signing-drivers.md).
 
 **Note**  To get a better understanding of the steps that are involved in test-signing driver packages, see [How to Test-Sign a Driver Package](how-to-test-sign-a-driver-package.md). This topic provides a summary of the test-signing process, and steps through many examples of test-signing by using the *ToastPkg* sample [driver package](driver-packages.md) within the Windows Driver Kit (WDK).
-
- 
-
- 
 

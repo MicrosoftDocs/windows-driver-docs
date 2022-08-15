@@ -4,7 +4,6 @@ description: WDI_TLV_PM_PROTOCOL_OFFLOAD_GET is a TLV that contains a protocol o
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PM_PROTOCOL_OFFLOAD_GET Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_GET
@@ -31,8 +30,7 @@ The size (in bytes) of a UINT32.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

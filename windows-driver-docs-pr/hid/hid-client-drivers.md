@@ -2,7 +2,6 @@
 title: HID client drivers
 description: If a system-supplied HID minidriver does not support a device's port or bus, a vendor supplied minidriver is required.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # HID client drivers
@@ -15,7 +14,7 @@ If a system-supplied HID minidriver does not support a device's port or bus, a v
 
 The following figure illustrates a driver stack for a generic HIDClass device (which might use optional and required vendor-supplied components).
 
-![diagram illustrating a driver stack for a generic hidclass device](images/zzhgdrs.png)
+![diagram illustrating a driver stack for a generic hidclass device.](images/zzhgdrs.png)
 
 Windows builds the driver stack as follows:
 

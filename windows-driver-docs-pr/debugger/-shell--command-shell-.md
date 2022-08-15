@@ -9,7 +9,6 @@ api_name:
 - .shell (Command Shell)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .shell (Command Shell)
@@ -75,8 +74,7 @@ Specifies the application command line or Microsoft MS-DOS command to be execute
 
 For other ways of accessing the command shell, see [Using Shell Commands](using-shell-commands.md).
 
-Remarks
--------
+## Remarks
 
 The **.shell** command is not supported when the output of a user-mode debugger is redirected to the kernel debugger. For more information about redirecting output to the kernel debugger (sometimes called NTSD over KD), see [Controlling the User-Mode Debugger from the Kernel Debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md).
 

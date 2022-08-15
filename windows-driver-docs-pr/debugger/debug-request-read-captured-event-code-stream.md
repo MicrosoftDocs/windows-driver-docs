@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # DEBUG\_REQUEST\_READ\_CAPTURED\_EVENT\_CODE\_STREAM
@@ -25,8 +24,7 @@ Not used.
 <span id="OutBuffer"></span><span id="outbuffer"></span><span id="OUTBUFFER"></span>*OutBuffer*  
 The memory at the current event's instruction pointer. Up to 64 bytes of memory may be returned.
 
-Remarks
--------
+## Remarks
 
 The memory returned is a snapshot of the memory taken when the event occurred. It does not reflect any changes that may have been made to the target's memory since the event.
 

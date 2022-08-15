@@ -2,7 +2,6 @@
 title: Examples of Graphics Memory Reporting
 description: Examples of Graphics Memory Reporting
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Examples of Graphics Memory Reporting
@@ -36,15 +35,15 @@ The following screen shots show an NVIDIA TurboCache technology discrete adapter
 
 The following screen shot shows a report of available memory through the **Display** application on Windows Vista.
 
-![screen shot of the windows vista display application](images/reportmemmob1.png)
+![screen shot of the windows vista display application.](images/reportmemmob1.png)
 
 The following screen shot shows a report of available memory through the WinSAT applet on Windows Vista.
 
-![screen shot of the windows vista performance information and tools application](images/reportmemmob2.png)
+![screen shot of the windows vista performance information and tools application.](images/reportmemmob2.png)
 
 The following screen shot shows a report of available memory through the **Display** application on Windows XP.
 
-![screen shot of the windows xp display application](images/reportmemmobxp1.png)
+![screen shot of the windows xp display application.](images/reportmemmobxp1.png)
 
 **Note**   For TurboCache computers like the one shown in the preceding screen shot, the single "Memory Size" number is a combination, but not a total, of dedicated graphics memory and shared system memory. Again, this is not an accurate representation of the total amount of available graphics memory.
 

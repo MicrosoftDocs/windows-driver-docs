@@ -8,7 +8,6 @@ keywords:
 - customize audio volume settings
 - Port Class audio adapters WDK , volume settings
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Customizing HD Audio Driver Volume Settings
@@ -77,7 +76,7 @@ Needs=KS.Registration, WDMAUDIO.Registration
 ...
 ```
 
-For more information about the Include and Needs directives, see [**INF DDInstall Section**](../install/inf-ddinstall-section.md) and [Source Media for INF Files](../install/source-media-for-inf-files.md).
+For more information about the Include and Needs directives, see [**INF DDInstall Section**](../install/inf-ddinstall-section.md).
 
 The following is a sample INF wrapper that wraps the INF file for the Audio Class driver.
 

@@ -1,25 +1,23 @@
 ---
 title: Audio Hardware Resource Management
 description: Windows 10 includes the ability to express concurrency constraints using and XML file.
-ms.date: 10/29/2017
-ms.localizationpriority: medium
+ms.date: 12/03/2021
 ---
 
 # Audio Hardware Resource Management
 
-Windows 10 includes the ability to express concurrency constraints using an XML file. On resource constrained mobile devices the ability to specify priority for specific audio streams can enhance the customer experience.
+Windows 10 includes the ability to express concurrency constraints using an XML file. On resource constrained device the ability to specify priority for specific audio streams can enhance the customer experience.
 
->[!NOTE]
->This mechanism is only available in phones and tablets.
+One challenge with creating a good audio experience on a low cost laptop or tablet device, is that some devices have various concurrency constraints. For example, it is possible that the device can only play up to 6 audio streams concurrently and supports only 2 offload streams. When there is an active video call with real time audio, it is possible that the device supports only 2 audio streams. When the device is capturing audio, the device can only play up to 4 audio streams.
 
-One challenge with creating a good audio experience on a low cost mobile device, is that some devices have various concurrency constraints. For example, it is possible that the device can only play up to 6 audio streams concurrently and supports only 2 offload streams. When there is an active phone call on a mobile device, it is possible that the device supports only 2 audio streams. When the device is capturing audio, the device can only play up to 4 audio streams.
+Windows 10 includes a mechanism to express concurrency constraints to insure that high-priority audio streams will be able to play. If the system does not have enough resources, then low priority streams are terminated. 
 
-Windows 10 includes a mechanism to express concurrency constraints to insure that high-priority audio streams and cellular phone calls will be able to play. If the system does not have enough resources, then low priority streams are terminated. This mechanism is only available in phones and tablets not on desktops or laptops.
+Windows 11 provides additional capabilities with the use of *resource groups* and are covered later in this topic in [Resource Groups - Extended Audio Resource Management](#resource-groups---extended-audio-resource-management). 
 
 To specify constraints complete these two steps.
 
 - Create a concurrency constraints XML file as described in [Specify Concurrency Constraints](#specify-concurrency-resource-constraints).
-- Configure a registry entry to use the custom concurrency constraints XML file as described in [Registry\_Key\_Configuration](#registry-key-configuration).
+- Configure a registry entry to use the custom concurrency constraints XML file as described in [Registry Key Configuration](#registry-key-configuration).
 
 ## Specify Concurrency Resource Constraints
 
@@ -70,7 +68,7 @@ This section can have multiple &lt;ExclusiveEndpoints&gt; nodes. Each ExclusiveE
   </ExclusiveEndpoints>
 ```
 
-The last required section of the XML file defines various resource consumers. This section of the file contains multiple &lt;ResourceConsumer&gt; entries. Each entry identifies information about a resource consumer and their associated resources use. Each resource that is used, must be previously defined in the &lt;Limits&gt; section.
+The next section of the XML file defines various resource consumers. This section of the file contains multiple &lt;ResourceConsumer&gt; entries. Each entry identifies information about a resource consumer and their associated resources use. Each resource that is used, must be previously defined in the &lt;Limits&gt; section.
 
 ```xml
   <ResourceConsumer>
@@ -109,66 +107,169 @@ These are the valid &lt;ConsumerInfo&gt; entries.
 
     &lt;ConnectorType&gt; - The connector type of the resource consumer. Valid values are: Host, Loopback, or Offload.
 
-- &lt;FM&gt; - FM Radio.
-- &lt;KeywordDetector&gt; - Keyword detector used to support Cortana voice interactions.
+- &lt;KeywordDetector&gt; - Keyword detector used to support keyword trigger voice interactions.
 
 The following table summarizes the render audio stream priorities, listed from highest to lowest priority.
 
-|Render audio stream|Priority|
-|----|----|
-| Communications           | 1   |
-| Game Chat                | 2   |
-| Screen Reader            | 3   |
-| Camera Shutter           | 4   |
-| Push To Talk             | 5   |
-| In Call Notification     | 6   |
-| Personal Assistant       | 6   |
-| Speech                   | 7   |
-| Ringtone                 | 8   |
-| Alarm                    | 9   |
-| Movie                    | 10  |
-| Foreground Only Media    | 10  |
-| Background Capable Media | 11  |
-| Media                    | 11  |
-| Sound Effects            | 12  |
-| DTMF                     | 12  |
-| Game Media               | 12  |
-| System                   | 12  |
-| Game Effects             | 12  |
-| Other                    | 13  |
-| Alerts                   | 14  |
+| Render audio stream      | Priority |
+|--------------------------|----------|
+| Communications           | 1        |
+| Game Chat                | 2        |
+| Screen Reader            | 3        |
+| Camera Shutter           | 4        |
+| Push To Talk             | 5        |
+| In Call Notification     | 6        |
+| Personal Assistant       | 6        |
+| Speech                   | 7        |
+| Ringtone                 | 8        |
+| Alarm                    | 9        |
+| Movie                    | 10       |
+| Foreground Only Media    | 10       |
+| Background Capable Media | 11       |
+| Media                    | 11       |
+| Sound Effects            | 12       |
+| DTMF                     | 12       |
+| Game Media               | 12       |
+| System                   | 12       |
+| Game Effects             | 12       |
+| Other                    | 13       |
+| Alerts                   | 14       |
 
 The following table summarizes the capture audio stream priorities, listed from highest to lowest priority.
 
-|Capture audio stream|Priority|
-|----|----|
-| Communications           | 1   |
-| Game Chat                | 2   |
-| Push To Talk             | 4   |
-| Personal Assistant       | 6   |
-| Speech                   | 7   |
-| Background Capable Media | 8   |
-| Media                    | 8   |
-| Other                    | 13  |
-| Game Media               | 15  |
-| Screen Reader            | 15  |
-| Alerts                   | 15  |
-| Foreground Only Media    | 15  |
-| Game Effects             | 15  |
-| Sound Effects            | 15  |
-| DTMF                     | 15  |
-| In Call Notification     | 15  |
-| Alarm                    | 15  |
-| Camera Shutter           | 15  |
-| Movie                    | 15  |
-| Ringtone                 | 15  |
-| System                   | 15  |
+| Capture audio stream     | Priority |
+|--------------------------|----------|
+| Communications           | 1        |
+| Game Chat                | 2        |
+| Push To Talk             | 4        |
+| Personal Assistant       | 6        |
+| Speech                   | 7        |
+| Background Capable Media | 8        |
+| Media                    | 8        |
+| Other                    | 13       |
+| Game Media               | 15       |
+| Screen Reader            | 15       |
+| Alerts                   | 15       |
+| Foreground Only Media    | 15       |
+| Game Effects             | 15       |
+| Sound Effects            | 15       |
+| DTMF                     | 15       |
+| In Call Notification     | 15       |
+| Alarm                    | 15       |
+| Camera Shutter           | 15       |
+| Movie                    | 15       |
+| Ringtone                 | 15       |
+| System                   | 15       |
 
 ### Examples
 
 - Example 1: The user is talking over Skype, using Communications Render and Capture streams. They start a game, which attempts to create a Game Effects stream. If there aren’t enough resources available, the Game Effects stream creation will fail.
 
 - Example 2: The user is playing music. They start an application that creates a Speech stream. If there aren’t enough resources available, the music stream will be terminated and the Speech stream creation will succeed.
+
+## Wildcard Option for TopologyName 
+
+A wildcard option is available for use with the TopologyName tag. This feature can be used to support the dynamic behavior associated with sideband Bluetooth. This option allows the audio driver to create a new set of interfaces for every paired bluetooth peripheral that match a specific pattern. This keeps the user settings for different audio peripherals from being mixed together. 
+
+To do this, it is recommend adding the peripheral hardware id to the audio interface reference string. This can be accomplished by using a hash of the symbolic link for the peripheral. The audio driver Sysvad sample code includes  example implementations for HFP sideband, A2DP sideband, and USB sideband. The example functions are named "CreateFilterNames". This function hashes the symbolic link and combines that with the filter names, to generate the unique filter names for each peripheral.
+
+The resource XML definitions are part of the driver package, and the hardware id's are unknown at the time it is created. 
+
+To support this dynamic matching, an asterisk '*' wildcard option is provided for the last character in the resource XML declaration of the topology name. 
+
+### Example Wildcard TopologyName 
+
+For example, the actual interface reference string could be "BTHFPCapture-00AABBCCDD" and the corresponding entry in the resource XML would be `<TopologyName>BTHFPCapture-*</TopologyName>`. 
+
+All endpoints created by the driver following the "BTHFPCapture-*" pattern would use the same resource definition.
+
+## Resource Groups - Extended Audio Resource Management
+
+Resource groups are available starting in Windows 11.  Resource groups allow endpoints to be assigned to different resource groups that are predefined in XML. Resource groups allow audio resources, such as streams, to be allocated according to defined limits.
+
+Before streams are created, the audio hardware resource manager determines which resource group to use and notifies the driver of the assigned group. When the audio hardware resource manager detects a conflict, the highest priority stream rendering to the highest priority endpoint (the current default) is assigned the preferred resource group, and lower priority streams will receive the next available resource group. This process is repeated until there are no more streams or no more resources. When resources are exhausted, creation of the lowest priority stream(s) will return a failure indicating that there are insufficient resources.
+
+When the resource group is assigned, the audio endpoint is notified of the assigned resource group. The resource XML declares which resource groups are applicable to the endpoint, in order of priority/preference, and the endpoint can be moved between the supported resource groups as needed to meet the overall system resource needs. 
+
+With out resource groups, in releases before Windows 11, the resource management system assumes that hardware resources are limited, but those resources can be moved freely across the audio endpoints (DSP MIPS). For example the system can create up to three offload streams, one communications stream, and one speech stream at a time, across any combination of audio endpoints. When resources are declared and used, they all come from a single pool. This can be thought of as having a single resource group shared across all audio endpoints.  As there was only one resource group, there was no need to notify the driver which group was in use.
+
+### Example Resource Group Scenario
+
+For example if a driver has two audio endpoints and two separated paths for rendering audio, one through a DSP and one without the DSP. Chosen ahead of time, either path can be used for either endpoint, but the endpoint assigned to use the DSP has exclusive use of the DSP and all audio for the endpoint must go through the dsp. i.e. there is zero mixing audio between these two paths.
+
+The DSP would have different resource constraints and capabilities than the endpoint without the DSP. Swapping the resources between the two endpoints would require all audio on both endpoints to be terminated, the hardware reassigned, and then audio could resume. Because the choice about whether to use the DSP or not would need to be made before any streams are created on the endpoint, the decision needs to be made outside of the driver. In the case of a conflict, two applications wanting a DSP feature at the same time, resource groups are used to decide which endpoint gets which resource.
+
+Each resource group is created with its own set of resources, but can also optionally use the globally shared resources as well. For example, *DSPGroup* may be defined to allow for two offload streams and a host speech stream, while *NoDSPGroup* only allows for one offload stream and no host speech streams. This definition would allow for up to three offload streams to be active at one time. There could also be a system wide maximum of up to two offload streams at one time, shared across both DSPGroup and NoDSPGroup.
+
+When a stream is created, it will be assigned to either DSPGroup or NoDSPGroup based on the type of stream being created and the priority of the stream and endpoint. If the created stream is offload it will be assigned DSPGroup, if not then it could be assigned to either DSPGroup or NoDSPGroup.
+
+While an endpoint is assigned to a group, all streams on that endpoint are limited to the stream resources associated to the group. For example, maximum two offload streams available when an endpoint is assigned to DSPGroup.
+
+It can be determined that an endpoint must move from one group to another group, due the priority of streams. For example, if the first offload stream was created on a speaker endpoint, and a new offload stream is being created on the headset endpoint, and there is only one DSPGroup resource set available, the DSPGroup resource will need to be reallocated from the speaker endpoint to the headset endpoint. To do this all speaker DSPGroup streams will be invalidated. DSPGroup would then be allocated to the headset endpoint and the offload stream created. After invalidation the stream recreated by the invalidated apps will encounter that offload is no longer available because they are lower priority than the existing headset endpoint offload user. NoDSPGroup will be assigned to the speaker endpoint, and streams will be limited to the speaker endpoint resource constraints, maximum six host streams possible in the system, for example.
+
+The example described, is simplified. The system allows for any number of groups shared across any number of endpoints. For example, there could be three endpoints, sharing two capable DSP's and one limited DSP, or five endpoints sharing two DSP's and three software paths.
+
+### Example Resource Group XML
+
+This example XML segment defines two resource groups, *DSPGroup* and *NoDSPGroup*.
+
+```xml
+  <Limits>
+    <Resource>
+      <ID>DataBus</ID>
+      <Consumption>8</Consumption>
+    </Resource>
+    <ResourceGroup Name="DSPGroup">
+      <Consumption>1</Consumption>
+      <Resource>
+        <ID>MaxOffload</ID>
+        <Consumption>3</Consumption>
+      </Resource>
+      <Resource>
+        <ID>DspMaxLoopback</ID>
+        <Consumption>1</Consumption>
+      </Resource>
+    </ResourceGroup>
+    <ResourceGroup Name="NoDSPGroup">
+      <Consumption>2</Consumption>
+      <Resource>
+        <ID>MaxHost</ID>
+        <Consumption>2</Consumption>
+      </Resource>
+      <Resource>
+        <ID>MaxLoopback</ID>
+        <Consumption>1</Consumption>
+      </Resource>
+    </ResourceGroup>
+  </Limits>
+```
+
+### Resource Group Allocation Behavior
+
+- At startup, existing global resources will be allocated from the external resource manager. Then, each resource group will have a resource allocated with the external resource manager, with the count equal to the max instances of that group.
+
+- At run time, each endpoint will be associated to only one resource group.
+ 
+- Streams on that endpoint will only have access to the resources within the associated resource group.
+
+- Resources from the original globally shared pool can also be used.
+
+- When the first stream is created on an endpoint, the required endpoint resource constraint will be acquired. When the last stream is closed on the endpoint, the constraint will be released. 
+
+- When an endpoint is assigned a resource group, it needs to be notified of the assigned resource group.
+
+- The assigned resource group will depend upon the priority of the resource group requirements for the currently active streams, and availability.
+
+- When the endpoint resource constraint is acquired, the streams on the endpoint are limited to the global stream resources, and the stream resources within the acquired resource group. They may not acquire a resource available in a different group.
+
+- Resources which are part of the resource group are only used by the endpoint that is currently assigned the resource group.
+
+- Resource groups may optionally contain additional group specific resources. A resource will be allocated from the external resource manager for each resource times the maximum instance count for the resource group. 
+
+- When the resource group assignment is changed, all streams on the endpoint are terminated prior to the change.
+
+- For an endpoint to move from one resource group to another resource group, all streams holding resources from the other group need to be invalidated, and upon stream creation all new resources will be acquired from the new resource group.
+
 
 ## Registry Key Configuration
 
@@ -213,26 +314,45 @@ This is an example XML constraints file from the SYSVAD virtual audio driver sam
     </Resource>
     <Resource>
       <ID>MaxOneRawStreamInPhoneCall</ID>
-      <Consumption>127</Consumption>
+      <Consumption>27</Consumption>
     </Resource>
   </Limits>
-
+  
   <ExclusiveEndpoints>
     <Endpoint>
-      <HWID>Root\sysvad_PhoneAudioSample</HWID>
       <!-- Example of h/w id specified in phoneaudiosample.inf -->
-      <TopologyName>TopologySpeaker</TopologyName>
+      <HWID>Root\sysvad_PhoneAudioSample</HWID>
       <!-- Topology filter reference string-->
-      <PinId>1</PinId>
+      <TopologyName>TopologySpeaker</TopologyName>
       <!-- KSPIN_TOPO_LINEOUT_DEST -->
+      <PinId>1</PinId>
     </Endpoint>
     <Endpoint>
       <!-- Example of h/w id specified in phoneaudiosample.inf -->
       <HWID>Root\sysvad_PhoneAudioSample</HWID>
       <!-- Topology filter reference string-->
-      <TopologyName>TopologyHandsetSpeaker</TopologyName>
+      <TopologyName>TopologyHandsetS*</TopologyName>
       <!-- KSPIN_TOPO_LINEOUT_DEST -->
       <PinId>1</PinId>
+    </Endpoint>
+  </ExclusiveEndpoints>
+
+  <ExclusiveEndpoints>
+    <Endpoint>
+      <!-- Example of h/w id specified in phoneaudiosample.inf -->
+      <HWID>Root\sysvad_PhoneAudioSample</HWID>
+      <!-- Topology filter reference string-->
+      <TopologyName>TopologyMicArray1</TopologyName>
+      <!-- KSPIN_TOPO_MIC_ELEMENTS -->
+      <PinId>0</PinId>
+    </Endpoint>
+    <Endpoint>
+      <!-- Example of h/w id specified in phoneaudiosample.inf -->
+      <HWID>Root\sysvad_PhoneAudioSample</HWID>
+      <!-- Topology filter reference string-->
+      <TopologyName>TopologyHandsetM*</TopologyName>
+      <!-- KSPIN_TOPO_MIC_ELEMENTS -->
+      <PinId>0</PinId>
     </Endpoint>
   </ExclusiveEndpoints>
 
@@ -258,25 +378,6 @@ This is an example XML constraints file from the SYSVAD virtual audio driver sam
   </ResourceConsumer>
 
   <ResourceConsumer>
-    <!-- FM -->
-    <ConsumerInfo>
-      <FM />
-    </ConsumerInfo>
-    <Resource>
-      <ID>MaxTwoOffload</ID>
-      <Consumption>1</Consumption>
-    </Resource>
-    <Resource>
-      <ID>MaxTwoCapture</ID>
-      <Consumption>1</Consumption>
-    </Resource>
-    <Resource>
-      <ID>MaxOneRawStreamInPhoneCall</ID>
-      <Consumption>2</Consumption>
-    </Resource>
-  </ResourceConsumer>
-
-  <ResourceConsumer>
     <!-- Keyword Detector -->
     <ConsumerInfo>
       <KeywordDetector />
@@ -285,6 +386,10 @@ This is an example XML constraints file from the SYSVAD virtual audio driver sam
       <ID>MaxTwoCapture</ID>
       <Consumption>2</Consumption>
     </Resource>
+    <!-- Don't include MaxOneRawStreamInPhoneCall 
+         so we can validate Capture stream causing
+         KD release then PhoneCall releasing Capture
+         and letting KD acquire -->
   </ResourceConsumer>
 
   <ResourceConsumer>
@@ -967,7 +1072,7 @@ This is an example XML constraints file from the SYSVAD virtual audio driver sam
         <!-- Example of h/w id specified in phoneaudiosample.inf -->
         <HWID>Root\sysvad_PhoneAudioSample</HWID>
         <!-- Topology filter reference string-->
-        <TopologyName>TopologyHandsetSpeaker</TopologyName>
+        <TopologyName>TopologyHandsetS*</TopologyName>
         <!-- KSPIN_TOPO_LINEOUT_DEST -->
         <PinId>1</PinId>
         <!--Signal processing mode default-->
@@ -991,7 +1096,7 @@ This is an example XML constraints file from the SYSVAD virtual audio driver sam
       <Stream>
         <HWID>Root\sysvad_PhoneAudioSample</HWID>
         <!-- Example of h/w id specified in phoneaudiosample.inf -->
-        <TopologyName>TopologyHandsetSpeaker</TopologyName>
+        <TopologyName>TopologyHandsetS*</TopologyName>
         <!-- Topology filter reference string-->
         <PinId>1</PinId>
         <!-- KSPIN_TOPO_LINEOUT_DEST -->
@@ -1017,7 +1122,7 @@ This is an example XML constraints file from the SYSVAD virtual audio driver sam
         <!-- Example of h/w id specified in phoneaudiosample.inf -->
         <HWID>Root\sysvad_PhoneAudioSample</HWID>
         <!-- Topology filter reference string-->
-        <TopologyName>TopologyHandsetSpeaker</TopologyName>
+        <TopologyName>TopologyHandsetS*</TopologyName>
         <!-- KSPIN_TOPO_LINEOUT_DEST -->
         <PinId>1</PinId>
         <!--Signal processing mode raw-->
@@ -1042,7 +1147,7 @@ This is an example XML constraints file from the SYSVAD virtual audio driver sam
         <!-- Example of h/w id specified in phoneaudiosample.inf -->
         <HWID>Root\sysvad_PhoneAudioSample</HWID>
         <!-- Topology filter reference string-->
-        <TopologyName>TopologyHandsetSpeaker</TopologyName>
+        <TopologyName>TopologyHandsetS*</TopologyName>
         <!-- KSPIN_TOPO_LINEOUT_DEST -->
         <PinId>1</PinId>
         <!--Signal processing mode default-->
@@ -1497,7 +1602,7 @@ This is an example XML constraints file from the SYSVAD virtual audio driver sam
         <!-- Example of h/w id specified in phoneaudiosample.inf -->
         <HWID>Root\sysvad_PhoneAudioSample</HWID>
         <!-- Topology filter reference string-->
-        <TopologyName>TopologyHandsetMic</TopologyName>
+        <TopologyName>TopologyHandsetM*</TopologyName>
         <!-- KSPIN_TOPO_MIC_ELEMENTS -->
         <PinId>0</PinId>
         <!--Signal processing mode default-->
@@ -1522,7 +1627,7 @@ This is an example XML constraints file from the SYSVAD virtual audio driver sam
         <!-- Example of h/w id specified in phoneaudiosample.inf -->
         <HWID>Root\sysvad_PhoneAudioSample</HWID>
         <!-- Topology filter reference string-->
-        <TopologyName>TopologyHandsetMic</TopologyName>
+        <TopologyName>TopologyHandsetM*</TopologyName>
         <!-- KSPIN_TOPO_MIC_ELEMENTS -->
         <PinId>0</PinId>
         <!--Signal processing mode communications-->
@@ -1547,7 +1652,7 @@ This is an example XML constraints file from the SYSVAD virtual audio driver sam
         <!-- Example of h/w id specified in phoneaudiosample.inf -->
         <HWID>Root\sysvad_PhoneAudioSample</HWID>
         <!-- Topology filter reference string-->
-        <TopologyName>TopologyHandsetMic</TopologyName>
+        <TopologyName>TopologyHandsetM*</TopologyName>
         <!-- KSPIN_TOPO_MIC_ELEMENTS -->
         <PinId>0</PinId>
         <!--Signal processing mode speech-->
@@ -1572,7 +1677,7 @@ This is an example XML constraints file from the SYSVAD virtual audio driver sam
         <!-- Example of h/w id specified in phoneaudiosample.inf -->
         <HWID>Root\sysvad_PhoneAudioSample</HWID>
         <!-- Topology filter reference string-->
-        <TopologyName>TopologyHandsetMic</TopologyName>
+        <TopologyName>TopologyHandsetM*</TopologyName>
         <!-- KSPIN_TOPO_MIC_ELEMENTS -->
         <PinId>0</PinId>
         <!--Signal processing mode notification-->
@@ -1597,7 +1702,7 @@ This is an example XML constraints file from the SYSVAD virtual audio driver sam
         <!-- Example of h/w id specified in phoneaudiosample.inf -->
         <HWID>Root\sysvad_PhoneAudioSample</HWID>
         <!-- Topology filter reference string-->
-        <TopologyName>TopologyHandsetMic</TopologyName>
+        <TopologyName>TopologyHandsetM*</TopologyName>
         <!-- KSPIN_TOPO_MIC_ELEMENTS -->
         <PinId>0</PinId>
         <!--Signal processing mode raw-->

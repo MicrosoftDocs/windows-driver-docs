@@ -1,7 +1,6 @@
 ---
 title: SECURITY\_FLAG\_QUALIFIERS
 description: SECURITY\_FLAG\_QUALIFIERS
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

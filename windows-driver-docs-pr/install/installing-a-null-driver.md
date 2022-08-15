@@ -8,7 +8,6 @@ keywords:
 - null drivers WDK device installations
 - nonexistent drivers WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing a Null Driver

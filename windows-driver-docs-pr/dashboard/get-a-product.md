@@ -3,7 +3,6 @@ title: Get a product
 description: This method in the Microsoft Hardware API retrieves data for a specific product registered to your Windows Dev Center account.
 ms.topic: article
 ms.date: 04/05/2018
-ms.localizationpriority: medium
 ---
 
 # Get a product
@@ -96,4 +95,4 @@ For more info, see [Error codes](get-product-data.md#error-codes).
 
 ## See also
 
-- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+- [hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

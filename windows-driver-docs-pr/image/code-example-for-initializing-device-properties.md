@@ -2,7 +2,6 @@
 title: Code Example for Initializing Device Properties
 description: Code Example for Initializing Device Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code Example for Initializing Device Properties

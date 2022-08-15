@@ -6,7 +6,6 @@ keywords:
 - High Definition Audio (HD Audio), querying
 - queries WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Querying for an HD Audio DDI

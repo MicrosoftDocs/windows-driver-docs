@@ -1,8 +1,7 @@
 ---
 title: ACPI-defined devices
 description: The ACPI 5.0 specification defines a number of device types to represent and control typical platform features.
-ms.date: 08/25/2020
-ms.localizationpriority: medium
+ms.date: 08/16/2021
 ---
 
 # ACPI-defined devices
@@ -21,9 +20,9 @@ This device describes, configures, and reports the status of the platform batter
 
 For more information about battery management in Windows, see [Windows Power and Battery Subsystem Requirements](/windows-hardware/design/component-guidelines/windows-power-and-battery-subsystem-requirements).
 
-### Battery Device-Specific Method (\_DSM)
+### Battery Device-Specific Method (_DSM)
 
-To support the passive thermal management of the battery by the platform, Microsoft defines a \_DSM method to communicate to the platform firmware the thermal throttling limit set by the battery's thermal zone. For more information, see the following:
+To support the passive thermal management of the battery by the platform, Microsoft defines a _DSM method to communicate to the platform firmware the thermal throttling limit set by the battery's thermal zone. For more information, see the following:
 
 - [Battery Device-Specific Method](battery-device-specific-method.md)
 - [Thermal zones](#thermal-zones)
@@ -50,46 +49,46 @@ A thermal zone is defined to include child objects that do the following:
 
 - Identify the devices that are contained in the thermal zone:
 
-  - \_TZD to list the non-processor devices in the thermal zone.
+  - _TZD to list the non-processor devices in the thermal zone.
 
-  - \_PSL to list the processors in the thermal zone.
+  - _PSL to list the processors in the thermal zone.
 
 - Specify thermal thresholds at which actions must be taken:
 
-  - \_PSV to indicate the temperature at which the operating system starts passive cooling control.
+  - _PSV to indicate the temperature at which the operating system starts passive cooling control.
 
-  - \_HOT to indicate the temperature at which the operating system hibernates.
+  - _HOT to indicate the temperature at which the operating system hibernates.
 
-  - \_CRT to indicate the temperature at which the operating system shuts down.
+  - _CRT to indicate the temperature at which the operating system shuts down.
 
 - Describe the thermal zone's passive cooling behavior:
 
-  - \_TC1, \_TC2 for thermal responsiveness.
+  - \_TC1, _TC2 for thermal responsiveness.
 
-  - \_TSP for the appropriate temperature sampling interval for passive cooling of the thermal zone.
+  - _TSP for the appropriate temperature sampling interval for passive cooling of the thermal zone.
 
 - Report the thermal zone's temperature:
 
-  - \_TMP for firmware-reported temperature, or
+  - _TMP for firmware-reported temperature, or
 
-  - \_HID and \_CRS for loading a temperature sensor driver and allocating hardware resources to it.
+  - \_HID and _CRS for loading a temperature sensor driver and allocating hardware resources to it.
 
 - Optionally, receive notifications of additional temperature threshold crossings:
 
-  - \_NTT for specifying additional threshold crossings to be notified of.
+  - _NTT for specifying additional threshold crossings to be notified of.
 
-  - \_DTI for receiving notifications of additional threshold crossings.
+  - _DTI for receiving notifications of additional threshold crossings.
 
 - Optionally, describe the thermal zone's active cooling behavior:
 
-  - \_AL*x* for listing the fans in the thermal zone.
+  - _AL*x* for listing the fans in the thermal zone.
 
-  - \_AC*x* the temperature at which fan *x* must be turned on.
+  - _AC*x* the temperature at which fan *x* must be turned on.
 
 For more information about ACPI thermal zones, see chapter 11, "Thermal Management", in the [ACPI 5.0 specification](https://uefi.org/specifications).
 
 ### Logical processor idling as a thermal mitigation
 
-The platform can indicate to the operating system that processor cores in the thermal zone should be idled (instead of throttled). This is done by including the Processor Aggregator device (ACPI000C) in one or more thermal zones. Windows will park a number of cores when the thermal zone's \_PSV is crossed. The number is either *(1 - &lt;zone passive limit&gt;) \* &lt;the number of cores in the thermal zone&gt;*, or the number of cores reported in \_PUR, whichever is greater. For more information, see section 8.5.1, "Logical Processor Idling", in the [ACPI 5.0 specification](https://uefi.org/specifications).
+The platform can indicate to the operating system that processor cores in the thermal zone should be idled (instead of throttled). This is done by including the Processor Aggregator device (ACPI000C) in one or more thermal zones. Windows will park a number of cores when the thermal zone's \_PSV is crossed. The number is either *(1 - &lt;zone passive limit&gt;) \* &lt;the number of cores in the thermal zone&gt;*, or the number of cores reported in _PUR, whichever is greater. For more information, see section 8.5.1, "Logical Processor Idling", in the [ACPI 5.0 specification](https://uefi.org/specifications).
 
-OEMs can include a Device-Specific Method (\_DSM) to support the Microsoft thermal extensions for Windows. For more information, see [Device-Specific Method for Microsoft Thermal Extensions](device-specific-method-for-microsoft-thermal-extensions.md).
+OEMs can include a Device-Specific Method (_DSM) to support the Microsoft thermal extensions for Windows. For more information, see [Device-Specific Method for Microsoft Thermal Extensions](device-specific-method-for-microsoft-thermal-extensions.md).

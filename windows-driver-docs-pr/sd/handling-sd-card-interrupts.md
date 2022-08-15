@@ -8,7 +8,6 @@ keywords:
 - hardware interrupts WDK SD bus
 - interrupt notifications WDK SD bus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling SD Card Interrupts

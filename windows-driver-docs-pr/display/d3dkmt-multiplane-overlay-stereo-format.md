@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # D3DKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FORMAT enumeration
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT {
@@ -35,8 +33,7 @@ typedef enum D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT {
 } D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT;
 ```
 
-Constants
----------
+## Constants
 
 <span id="DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_MONO"></span><span id="dxgkmt_multiplane_overlay_stereo_format_mono"></span>**DXGKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FORMAT\_MONO**
 
@@ -54,8 +51,7 @@ Constants
 
 <span id="DXGKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT_CHECKERBOARD"></span><span id="dxgkmt_multiplane_overlay_stereo_format_checkerboard"></span>**DXGKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FORMAT\_CHECKERBOARD**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

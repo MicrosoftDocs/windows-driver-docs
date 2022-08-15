@@ -2,7 +2,6 @@
 title: JavaScript API Reference
 description: Use the JavaScript API in combination with a Bidi XML file to provide support over a USB connection to a print device.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # JavaScript API Reference
@@ -253,7 +252,7 @@ This method is called instead of **getStatus**, if the **BidiUSBStatusInterface*
 
 The following diagram provides an overview of the USB Bidi extension architecture, showing the scenario where the **BidiUSBStatusInterface** directive has been specified and communication is therefore routed over an alternate USB interface.
 
-![usb bidi extender architecture with requeststatus method](images/usbbidiext-arch2.png)
+![usb bidi extender architecture with requeststatus method.](images/usbbidiext-arch2.png)
 
 This method is called repeatedly during printing. It is expected that the device will only return data if it is available and the script can understand it. If the device does not support solicited status or there is no need to call this method again, the script should return a value of 2 which will tell the **getStatus** execution thread in USBMon to exit successfully.
 

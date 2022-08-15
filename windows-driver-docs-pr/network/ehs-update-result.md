@@ -4,7 +4,6 @@ description: The eHS_UPDATE_RESULT enumeration indicates the result of a “chec
 keywords: 
 - eHS_UPDATE_RESULT enumeration Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # eHS\_UPDATE\_RESULT enumeration
@@ -14,8 +13,7 @@ ms.localizationpriority: medium
 
 The **eHS\_UPDATE\_RESULT** enumeration indicates the result of a “check for updates” request.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _eHS_UPDATE_RESULT { 
@@ -26,8 +24,7 @@ typedef enum _eHS_UPDATE_RESULT {
 } eHS_UPDATE_RESULT;
 ```
 
-Constants
----------
+## Constants
 
 <a href="" id="hs-update-result-success"></a>**HS\_UPDATE\_RESULT\_SUCCESS**  
 Indicates the update was successful.
@@ -41,13 +38,11 @@ The result of the update request requires the service to unload and reload the p
 <a href="" id="hs-update-result-max"></a>**HS\_UPDATE\_RESULT\_MAX**  
 Indicates an out-of-range value.
 
-Remarks
--------
+## Remarks
 
 The plugin passes this enumeration value to the hotspot plugin host through the [**HS\_HOST\_UPDATE\_CONFIGURATION\_COMPLETION**](hs-host-update-configuration-completion.md) function, which is used to inform the hotspot plugin host of the results of a call to [**HS\_PLUGIN\_CHECK\_FOR\_UPDATES**](hs-plugin-check-for-updates.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

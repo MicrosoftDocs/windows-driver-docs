@@ -9,7 +9,6 @@ api_name:
 - BUGCODE_USB3_DRIVER
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x144: BUGCODE\_USB3\_DRIVER
@@ -390,8 +389,7 @@ The **BUGCODE\_USB3\_DRIVER** bug check has a value of 0x00000144. This is the c
 
  
 
-Remarks
--------
+## Remarks
 
 To query for a USB capability, the client driver must call [**WdfUsbTargetDeviceQueryUsbCapability**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicequeryusbcapability) or [**USBD\_QueryUsbCapability**](/previous-versions/windows/hardware/drivers/hh406230(v=vs.85))
 

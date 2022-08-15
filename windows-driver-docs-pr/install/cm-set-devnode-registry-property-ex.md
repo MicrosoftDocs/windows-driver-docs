@@ -9,7 +9,6 @@ api_name:
 - CM_Set_DevNode_Registry_Property_ExW
 api_type:
 - NA
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

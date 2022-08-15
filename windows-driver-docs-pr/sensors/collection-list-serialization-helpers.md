@@ -2,7 +2,6 @@
 title: Collection list serialization helpers
 description: The collection list serialization helper functions are used by the v2 sensor drivers, for performing serialization-related operations on SENSOR\_COLLECTION\_LIST structures.
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Collection list serialization helpers

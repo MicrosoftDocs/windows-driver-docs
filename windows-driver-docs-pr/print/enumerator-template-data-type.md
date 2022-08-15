@@ -10,7 +10,6 @@ keywords:
 - EnumeratorList directive WDK GDL
 - ElementTags directive WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enumerator Template Data Type

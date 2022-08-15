@@ -1,5 +1,5 @@
 ---
-title: iovirp
+title: iovirp (WinDbg)
 description: The iovirp extension displays detailed information for a specified I/O Verifier IRP.
 keywords: ["I/O Verifier", "iovirp Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - iovirp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !iovirp
@@ -48,8 +47,7 @@ Specifies the address of an IRP tracked by the Driver Verifier. If *IRP* is 0 or
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from this extension:
 

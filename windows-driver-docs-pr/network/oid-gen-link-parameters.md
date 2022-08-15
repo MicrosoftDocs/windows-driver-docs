@@ -4,7 +4,6 @@ description: As a set, NDIS and overlying drivers use the OID_GEN_LINK_PARAMETER
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_LINK_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_LINK\_PARAMETERS
@@ -39,7 +38,7 @@ The NDIS\_LINK\_PARAMETERS structure is defined as follows:
 This structure contains the following members:
 
 <a href="" id="header"></a>**Header**  
-The [**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header) structure for the NDIS\_LINK\_PARAMETERS structure. Set the **Type** member of the structure that **Header** specifies to NDIS\_OBJECT\_TYPE\_DEFAULT, the **Revision** member to NDIS\_LINK\_PARAMETERS\_REVISION\_1, and the **Size** member to NDIS\_SIZEOF\_LINK\_PARAMETERS\_REVISION\_1.
+The [**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header) structure for the NDIS\_LINK\_PARAMETERS structure. Set the **Type** member of the structure that **Header** specifies to NDIS\_OBJECT\_TYPE\_DEFAULT, the **Revision** member to NDIS\_LINK\_PARAMETERS\_REVISION\_1, and the **Size** member to NDIS\_SIZEOF\_LINK\_PARAMETERS\_REVISION\_1.
 
 <a href="" id="mediaduplexstate"></a>**MediaDuplexState**  
 The media duplex state. This value is the same as the value that is returned by the [OID\_GEN\_MEDIA\_DUPLEX\_STATE](oid-gen-media-duplex-state.md) OID.
@@ -80,8 +79,7 @@ The adapter should auto-negotiate the duplex state with the link partner. If thi
 <a href="" id="ndis-link-state-pause-functions-auto-negotiated"></a>NDIS\_LINK\_STATE\_PAUSE\_FUNCTIONS\_AUTO\_NEGOTIATED  
 The miniport driver should auto-negotiate the support for pause frames with the other end. If this flag is not set, the miniport driver should use the pause frame support that is specified in the **PauseFunctions** member.
 
-Remarks
--------
+## Remarks
 
 **Note**  Setting OID\_GEN\_LINK\_PARAMETERS can cause a loss of connectivity. Miniport drivers must reconfigure the miniport adapter when this OID is set. For example, the miniport driver can reset the miniport adapter with the resulting loss of existing connections. The specific mechanism for reconfiguration is application dependent.
 
@@ -89,8 +87,7 @@ Remarks
 
 If the link state of the miniport adapter changes because of the OID\_GEN\_LINK\_PARAMETERS set request, the miniport driver should generate an [**NDIS\_STATUS\_LINK\_STATE**](./ndis-status-link-state.md) status indication to notify NDIS and overlying drivers of the new link state.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -108,7 +105,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header)
+[**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header)
 
 [**NDIS\_STATUS\_LINK\_STATE**](./ndis-status-link-state.md)
 

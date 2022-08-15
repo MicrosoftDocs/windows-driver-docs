@@ -1,7 +1,7 @@
 ---
 title: IddCx 1.4 updates for console and remote IDDs
 description: IddCx version 1.4 updates for console and remote indirect display drivers
-ms.date: 09/28/2020
+ms.date: 08/09/2022
 keywords:
 - Console and remote indirect display driver, IddCx versions 1.4 and later
 - Console and remote IDD, IddCx versions 1.4 and later
@@ -9,7 +9,6 @@ keywords:
 - Console IDD
 - Remote indirect display driver
 - Remote IDD
-ms.localizationpriority: medium
 ---
 
 # IddCx 1.4 updates for console and remote IDDs
@@ -20,7 +19,7 @@ Developers of remote IDDs should also see [IddCx 1.4 updates for remote IDDs](id
 
 ## Update IddCxGetVersion version
 
-The IddCx version returned by [**IddCxGetVersion**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxgetversion) on Windows 10, version 1903 was updated to IDDCX_VERSION_19H1 (0x1400).
+The IddCx version returned by [**IddCxGetVersion**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxgetversion) on Windows 10, version 1903 was updated to IDDCX_VERSION_19H1 (0x1400). See [IddCx versions](iddcx-versions.md) for a complete list of IddCx-related version information.
 
 ## Provide a preferred rendering adapter used to render the desktop into the swapchain
 

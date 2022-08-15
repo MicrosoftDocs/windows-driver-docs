@@ -9,7 +9,6 @@ api_name:
 - KsDeviceMutex
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # KsDeviceMutex rule ()
@@ -22,8 +21,7 @@ The **KsDeviceMutex** rule specifies that a kernel streaming miniport driver use
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x00081001)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

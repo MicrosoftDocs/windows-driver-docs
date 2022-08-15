@@ -2,7 +2,6 @@
 title: Surprise-Removal Sequence
 description: Surprise-Removal Sequence
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Surprise-Removal Sequence
@@ -12,7 +11,7 @@ If the user removes the device without warning, by simply unplugging it without 
 
 The following diagram shows the callbacks that are involved in a surprise removal:
 
-![surprise-removal sequence](images/surprise-removal.png)
+![surprise-removal sequence.](images/surprise-removal.png)
 
 If the device was not in the working state when it was removed, the framework calls the [*EvtDeviceReleaseHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware) event callback immediately after [*EvtDeviceSurpriseRemoval*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_surprise_removal). It omits the intervening steps, which were already performed when the device exited from the working state.
 

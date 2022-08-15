@@ -1,7 +1,6 @@
 ---
 title: Version 3 of the DMA Operations Interface
 description: Version 3 of the DMA operations interface is available starting with Windows 8.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -43,7 +42,7 @@ In version 3 of the DMA operations interface, calls to the [**KeFlushIoBuffers**
 -   **MapTransferEx** ensures that processor data caches are flushed before write (memory-to-device) transfers.
 -   **FlushAdapterBuffersEx** ensures that caches are invalidated after read (device-to-memory) transfers.
 
-On an x86 or x64 processor, the **KeFlushIoBuffers** call performs no operations, and this call, while unnecessary, does not interfere with the operation of the hardware platform. On an ARM processor, calls to **KeFlushIoBuffers** during DMA transfers perform cache operations that are unnecessary and can degrade performance.
+On an x86 or x64 processor, the **KeFlushIoBuffers** call performs no operations, and this call, while unnecessary, does not interfere with the operation of the hardware platform. On an Arm processor, calls to **KeFlushIoBuffers** during DMA transfers perform cache operations that are unnecessary and can degrade performance.
 
  
 

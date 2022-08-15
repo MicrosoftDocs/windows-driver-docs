@@ -4,7 +4,6 @@ description: SIO_WSK_SET_REMOTE_ADDRESS
 ms.date: 07/18/2017
 keywords:
  - SIO_WSK_SET_REMOTE_ADDRESS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SIO\_WSK\_SET\_REMOTE\_ADDRESS
@@ -120,8 +119,7 @@ To clear a fixed remote transport address for a datagram socket, a WSK applicati
 
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to set or clear a fixed remote transport address for a datagram socket.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

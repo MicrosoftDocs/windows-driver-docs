@@ -4,7 +4,6 @@ description: OID_WDI_SET_ENCAPSULATION_OFFLOAD is sent by the OS to indicate tha
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_ENCAPSULATION_OFFLOAD Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
@@ -36,8 +35,7 @@ When this message is received, the LE should indicate its current encapsulation 
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

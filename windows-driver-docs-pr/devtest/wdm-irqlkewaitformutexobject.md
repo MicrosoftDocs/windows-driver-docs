@@ -9,13 +9,12 @@ api_name:
 - IrqlKeWaitForMutexObject
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlKeWaitForMutexObject rule (wdm)
 
 
-The **IrqlKeWaitForMutexObject** rule specifies the driver to call the [**KeWaitForMutexObject**](https://msdn.microsoft.com/library/windows/hardware/ff553344) routine at the proper IRQL based on the value of the *Timeout* parameter:
+The **IrqlKeWaitForMutexObject** rule specifies the driver to call the [**KeWaitForMutexObject**](/windows-hardware/drivers/ddi/wdm/) routine at the proper IRQL based on the value of the *Timeout* parameter:
 
 -   If *Timeout* points to a zero value, the driver is executing at IRQL = DISPATCH\_LEVEL.
 
@@ -23,8 +22,7 @@ The **IrqlKeWaitForMutexObject** rule specifies the driver to call the [**KeWait
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -49,7 +47,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**KeWaitForSingleObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitforsingleobject)

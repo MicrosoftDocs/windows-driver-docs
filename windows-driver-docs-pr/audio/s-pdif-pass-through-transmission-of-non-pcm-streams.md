@@ -10,7 +10,6 @@ keywords:
 - AC-3 WDK audio
 - Sony/Philips digital interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # S/PDIF Pass-Through Transmission of Non-PCM Streams
@@ -33,7 +32,7 @@ If you attempt to send unpadded WMA Pro or AC-3 sync frames to a PortCls adapter
 
 The following figure shows an example application of S/PDIF pass-through transmission.
 
-![diagram illustrating an s/pdif pass-through transmission](images/passthru.png)
+![diagram illustrating an s/pdif pass-through transmission.](images/passthru.png)
 
 The figure shows a PC connected to an external audio/visual (A/V) receiver through a coaxial cable. The cable connects the S/PDIF output port on the PC's audio device to the S/PDIF input port on the A/V receiver.
 

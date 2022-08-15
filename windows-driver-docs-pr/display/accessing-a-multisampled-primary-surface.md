@@ -6,7 +6,6 @@ keywords:
 - multisample rendering WDK DirectX 8.0 , accessing a primary surface
 - rendering multisamples WDK DirectX 8.0 , accessing a primary surface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing a Multisampled Primary Surface

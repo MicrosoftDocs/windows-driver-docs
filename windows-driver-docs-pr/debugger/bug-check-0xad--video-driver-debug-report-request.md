@@ -9,7 +9,6 @@ api_name:
 - VIDEO_DRIVER_DEBUG_REPORT_REQUEST
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xAD: VIDEO\_DRIVER\_DEBUG\_REPORT\_REQUEST
@@ -57,8 +56,7 @@ The VIDEO\_DRIVER\_DEBUG\_REPORT\_REQUEST bug check has a value of 0x000000AD. T
 
  
 
-Remarks
--------
+## Remarks
 
 The video port created a non-fatal minidump on behalf of the video driver during run time because the video driver requested a debug report.
 

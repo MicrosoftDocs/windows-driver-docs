@@ -1,7 +1,6 @@
 ---
 title: NX and Execute Pool Types
 description: To indicate whether memory allocated from a nonpaged pool should be no-execute (NX), you can use two new pool types starting with Windows 8.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

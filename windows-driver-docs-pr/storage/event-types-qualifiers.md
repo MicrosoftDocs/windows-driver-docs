@@ -1,7 +1,6 @@
 ---
 title: EVENT\_TYPES\_QUALIFIERS
 description: EVENT\_TYPES\_QUALIFIERS
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

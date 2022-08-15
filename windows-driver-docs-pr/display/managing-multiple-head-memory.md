@@ -4,7 +4,6 @@ description: Managing Multiple-Head Memory
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , memory management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing Multiple-Head Memory

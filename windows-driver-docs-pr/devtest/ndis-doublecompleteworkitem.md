@@ -9,7 +9,6 @@ api_name:
 - DoubleCompleteWorkItem
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DoubleCompleteWorkItem rule (ndis)
@@ -21,8 +20,7 @@ This rule tracks the OID and verifies that when the driver queues a work item, t
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,7 +45,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisMOidRequestComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete)

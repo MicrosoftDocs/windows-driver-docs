@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 05/22/2018
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_PRINTER\_ENDORSER\_COUNTER
@@ -28,8 +27,7 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The mandatory default value for the **WIA\_IPS\_PRINTER\_ENDORSER\_COUNTER** property is 0 (first page).
 
@@ -37,8 +35,7 @@ The range step value describes the increment value for the printer/endorser coun
 
 This property is required to be supported by all Imprinter/Endorser data source items. The value of 0 (first page) is required.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

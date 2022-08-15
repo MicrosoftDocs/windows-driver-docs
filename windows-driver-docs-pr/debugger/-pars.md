@@ -1,5 +1,5 @@
 ---
-title: pars
+title: pars (WinDbg)
 description: The pars extension displays a specified processor application registers file.
 keywords: ["processor application register", "pars Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - pars
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pars

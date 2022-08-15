@@ -2,7 +2,6 @@
 title: MB SAR Platform Support
 description: MB SAR Platform Support
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # MB SAR Platform Support
@@ -24,7 +23,7 @@ This feature is supported by adding in two new OIDs and CIDs. For IHV partners t
 
 ## Flow
 
-![SAR operation flowchart](images/SAR-flow.png)
+![SAR operation flowchart.](images/SAR-flow.png)
 
 ## MB Interface Update for SAR Platform Support
 

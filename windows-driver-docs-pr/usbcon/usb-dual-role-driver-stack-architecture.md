@@ -2,7 +2,6 @@
 description: USB Dual Role controllers are now supported in Windows, starting with Windows 10.
 title: USB Dual Role Driver Stack Architecture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB Dual Role Driver Stack Architecture
@@ -70,7 +69,7 @@ On a system that has a USB micro-AB connector, the driver makes use of hardware 
 
 The following diagram shows the USB software driver stack for a dual-role controller that uses the URS driver.
 
-![usb role-switch driver stack architecture. ](images/dual-role-arch.png)
+![usb role-switch driver stack architecture.](images/dual-role-arch.png)
 
 Note that the URS driver will never load the Function and Host stacks shown in the preceding diagram simultaneously. The URS driver will load *either* the Function stack, *or* the Host stack - depending on the role of the USB controller.
 

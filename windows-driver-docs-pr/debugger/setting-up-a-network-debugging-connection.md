@@ -3,7 +3,6 @@ title: Setting Up KDNET Network Kernel Debugging Manually
 description: Debugging Tools for Windows supports kernel debugging over a network.
 keywords: ["Network debugging", "Ethernet debugging", "Docking station", "Setting Up Kernel-Mode Debugging over a Network Cable Manually"]
 ms.date: 12/07/2018
-ms.localizationpriority: medium
 ---
 
 # Setting Up KDNET Network Kernel Debugging Manually
@@ -275,7 +274,7 @@ To use IPv6 with the debugger complete these steps.
     bcdedit -deletevalue {dbgsettings} hostip
     ```
 
-3. Set the IPv6 address of the host. There must not be any spaces in the `hostipv6=s:t:u:v:w:x:y:z` string. <YourPort> is is the network port number to use for this target machine, \<YourKey\> is the four part security key, and \<b.d.f\> are the bus device function location numbers for the NIC you want to use for KDNET.
+3. Set the IPv6 address of the host. There must not be any spaces in the `hostipv6=s:t:u:v:w:x:y:z` string. \<YourPort\> is is the network port number to use for this target machine, \<YourKey\> is the four part security key, and \<b.d.f\> are the bus device function location numbers for the NIC you want to use for KDNET.
 
     ```console
     bcdedit /dbgsettings net hostipv6:s:t:u:v:w:x:y:z port:<YourPort> key:<YourKey> busparams:<b.d.f>

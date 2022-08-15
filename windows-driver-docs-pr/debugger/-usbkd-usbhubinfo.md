@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbhubinfo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbhubinfo
@@ -32,8 +31,7 @@ Address of the functional device object (FDO) for a USB hub.
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of the FDO for a USB hub. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 

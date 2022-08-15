@@ -2,15 +2,10 @@
 title: System Sleeping States
 description: System Sleeping States
 keywords: ["system power states WDK kernel , sleeping states", "system sleeping states WDK power management", "sleeping states WDK power management", "S1 WDK power management", "S2 WDK power management", "S3 WDK power management", "S4 WDK power management", "software resumption WDK power management", "resumption WDK power management", "hardware latency WDK power management", "system hardware context WDK power management", "hardware context WDK power management", "context WDK power management", "latency WDK power management"]
-ms.date: 07/30/2020
-ms.localizationpriority: High
+ms.date: 03/18/2022
 ---
 
 # System Sleeping States
-
-
-
-
 
 States S1, S2, S3, and S4 are the sleeping states. A system in one of these states is not performing any computational tasks and appears to be off. Unlike a system in the shutdown state (S5), however, a sleeping system retains memory state, either in RAM or on disk, as specified for each power state below in **System hardware context** sections. The operating system need not be rebooted to return the computer to the working state.
 
@@ -26,53 +21,77 @@ Typically, when the user presses the sleep button, the system goes to the S3 sys
 
 To restrict the system to a subset of Sx states, a user can provide **MaxSleep** and **MinSleep** fields in [SYSTEM_POWER_POLICY structure](/windows/win32/api/winnt/ns-winnt-system_power_policy). Also see [ADMINISTRATOR_POWER_POLICY structure](/windows/win32/api/winnt/ns-winnt-administrator_power_policy). 
 
-### System Power State S1
+## System Power State S1
 
 System power state S1 is a sleeping state with the following characteristics:
 
-<a href="" id="power-consumption"></a>**Power consumption**  
+**Power consumption**
+<ul>
 Less consumption than in S0 and greater than in the other sleep states. Processor clock is off and bus clocks are stopped.
+</ul>
 
-<a href="" id="software-resumption"></a>**Software resumption**  
+**Software resumption**
+<ul>
 Control restarts where it left off.
+</ul>
 
-<a href="" id="hardware-latency"></a>**Hardware latency**  
+**Hardware latency**
+<ul>
 Typically no more than two seconds.
+</ul>
 
-<a href="" id="system-hardware-context"></a>**System hardware context**  
+**System hardware context**
+<ul>
 All context retained and maintained by hardware.
+</ul>
 
 ### System Power State S2
 
 System power state S2 is similar to S1 except that the CPU context and contents of the system cache are lost because the processor loses power. State S2 has the following characteristics:
 
-<a href="" id="power-consumption"></a>**Power consumption**  
+**Power consumption**
+<ul>
 Less consumption than in state S1 and greater than in S3. Processor is off. Bus clocks are stopped; some buses might lose power.
+</ul>
 
-<a href="" id="software-resumption"></a>**Software resumption**  
+**Software resumption**
+<ul>
 After wake-up, control starts from the processor's reset vector.
+</ul>
 
-<a href="" id="hardware-latency"></a>**Hardware latency**  
+**Hardware latency**
+<ul>
 Two seconds or more; greater than or equal to the latency for S1.
+</ul>
 
-<a href="" id="system-hardware-context"></a>**System hardware context**  
+**System hardware context**
+<ul>
 CPU context and system cache contents are lost.
+</ul>
 
 ### System Power State S3
 
 System power state S3 is a sleeping state with the following characteristics:
 
-<a href="" id="power-consumption"></a>**Power consumption**  
+**Power consumption**
+<ul>
 Less consumption than in state S2. Processor is off and some chips on the motherboard also might be off.
+</ul>
 
-<a href="" id="software-resumption"></a>**Software resumption**  
+**Software resumption**
+<ul>
 After the wake-up event, control starts from the processor's reset vector.
+</ul>
 
-<a href="" id="hardware-latency"></a>**Hardware latency**  
+**Hardware latency**
+<ul>
 Almost indistinguishable from S2.
+</ul>
 
-<a href="" id="system-hardware-context"></a>**System hardware context**  
+**System hardware context**
+<ul>
 Only system memory is retained. CPU context, cache contents, and chipset context are lost.
+</ul>
 
 ### System Power State S4
 
@@ -82,17 +101,22 @@ If a computer in state S1, S2, or S3 loses all AC or battery power, it loses sys
 
 State S4 has the following characteristics:
 
-<a href="" id="power-consumption"></a>**Power consumption**  
+**Power consumption**
+<ul>
 Off, except for trickle current to the power button and similar devices.
+</ul>
 
-<a href="" id="software-resumption"></a>**Software resumption**  
+**Software resumption**
+<ul>
 System restarts from the saved hibernate file. If the hibernate file cannot be loaded, rebooting is required. Reconfiguring the hardware while the system is in the S4 state might result in changes that prevent the hibernate file from loading correctly.
+</ul>
 
-<a href="" id="hardware-latency"></a>**Hardware latency**  
+**Hardware latency**
+<ul>
 Long and undefined. Only physical interaction returns the system to the working state. Such interaction might include the user pressing the ON switch or, if the appropriate hardware is present and wake-up is enabled, an incoming ring for the modem or activity on a LAN. The machine can also awaken from a resume timer if the hardware supports it.
+</ul>
 
-<a href="" id="system-hardware-context"></a>**System hardware context**  
+**System hardware context**
+<ul>
 None retained in hardware. The system writes an image of memory in the hibernate file before powering down. When the operating system is loaded, it reads this file and jumps to its previous location.
-
- 
-
+</ul>

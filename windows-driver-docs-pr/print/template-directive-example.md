@@ -5,7 +5,6 @@ keywords:
 - Production directive WDK GDL
 - templates WDK GDL , examples
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Template Directive Example

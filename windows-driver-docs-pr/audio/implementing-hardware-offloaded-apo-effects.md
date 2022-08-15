@@ -2,7 +2,6 @@
 title: Implementing Hardware Offloaded APO Effects
 description: Hardware offloading of audio processing objects (APOs) provides possible performance enhancements, as well as power savings.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hardware Offloaded APO Effects
@@ -26,7 +25,7 @@ Implementing hardware offloaded APOs along with hardware offloaded audio process
 
 The following diagram shows the audio processing objects architecture. The right side of the diagram shows an application communicating down to hardware offloaded OSFX and OMFX effects.
 
-![audio driver architecture showing application calling into sfx mfx and efx effects that then call to drivers and audio hardware](images/audio-hardware-offloaded-apo-overview.png)
+![audio driver architecture showing application calling into sfx mfx and efx effects that then call to drivers and audio hardware.](images/audio-hardware-offloaded-apo-overview.png)
 
 ## Implementing Hardware Offloaded APO Effects
 

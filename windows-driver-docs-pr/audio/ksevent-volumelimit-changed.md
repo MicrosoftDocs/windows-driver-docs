@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSEVENT\_VOLUMELIMIT\_CHANGED
@@ -35,7 +34,7 @@ The KSEVENT\_VOLUMELIMIT\_CHANGED event indicates to the audio stack that the au
 <tbody>
 <tr class="odd">
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="/previous-versions/ff561744(v=vs.85)" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](/previous-versions/ff561744(v=vs.85))"><strong>KSEVENT</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksevent-structure" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](../stream/ksevent-structure.md)"><strong>KSEVENT</strong></a></p></td>
 <td align="left"><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
@@ -45,8 +44,7 @@ The KSEVENT\_VOLUMELIMIT\_CHANGED event indicates to the audio stack that the au
 
 The event value type (operation data) is a **KSEVENTDATA** structure that specifies the notification method to use for this event.
 
-Remarks
--------
+## Remarks
 
 For information about how to implement support for the KSEVENT\_PINCAPS\_VOLUMELIMITCHANGE event, see the **Remarks** section of [**KSEVENT\_PINCAPS\_FORMATCHANGE**](ksevent-pincaps-formatchange.md).
 
@@ -55,9 +53,8 @@ Note that while KSEVENT\_PINCAPS\_FORMATCHANGE is implemented on the Wave filter
 ## <span id="see_also"></span>See also
 
 
-[**KSEVENT**](/previous-versions/ff561744(v=vs.85))
+[**KSEVENT**](../stream/ksevent-structure.md)
 
 [**KSEVENT\_PINCAPS\_FORMATCHANGE**](ksevent-pincaps-formatchange.md)
 
 [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
-

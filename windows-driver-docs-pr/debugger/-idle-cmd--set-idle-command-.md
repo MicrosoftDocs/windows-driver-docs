@@ -9,7 +9,6 @@ api_name:
 - .idle_cmd (Set Idle Command)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .idle\_cmd (Set Idle Command)
@@ -59,8 +58,7 @@ This command cannot be used in script files.
 
  
 
-Remarks
--------
+## Remarks
 
 When **.idle\_cmd** is used with no parameters it displays the current idle command.
 

@@ -1,5 +1,5 @@
 ---
-title: ndiskd.af
+title: ndiskd.af (WinDbg)
 description: The ndiskd.af extension displays a Connection-Oriented NDIS (CoNDIS) address family (AF).
 keywords: ["ndiskd.af Windows Debugging"]
 ms.date: 06/15/2020
@@ -9,7 +9,6 @@ api_name:
 - ndiskd.af
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.af
@@ -109,7 +108,7 @@ CLIENT HANDLERS
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
+[Debugging the Network Stack](/shows/defrag-tools/175-debugging-network-stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 

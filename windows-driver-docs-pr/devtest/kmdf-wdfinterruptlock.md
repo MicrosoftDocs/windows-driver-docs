@@ -9,7 +9,6 @@ api_name:
 - WdfInterruptLock
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # WdfInterruptLock rule (kmdf)
@@ -19,8 +18,7 @@ The **WdfInterruptLock** rule specifies that calls to the [**WdfInterruptAcquire
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfInterruptAcquireLock**](/previous-versions/ff547340(v=vs.85))
 [**WdfInterruptReleaseLock**](/previous-versions/ff547376(v=vs.85))

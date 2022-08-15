@@ -2,7 +2,6 @@
 description: Mapping Object Identifiers
 title: Mapping Object Identifiers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mapping Object Identifiers

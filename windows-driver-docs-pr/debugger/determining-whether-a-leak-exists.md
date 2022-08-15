@@ -2,14 +2,13 @@
 title: Determining Whether a Leak Exists
 description: Determining Whether a Leak Exists
 keywords: ["memory leak, detection"]
-ms.date: 04/30/2021
-ms.localizationpriority: medium
+ms.date: 10/01/2021
 ---
 
 # Determining Whether a Leak Exists
 
 
-If Windows performance is degrading over time and you suspect that a memory leak may be involved, use Windows Performance Monitor to investigate whether there is a memory leak. This process will not tell you what the source of the leak is, nor whether it is user mode or kernel mode. For general information on Performance Monitor, see [Using Performance Monitor](/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc749115).
+If Windows performance is degrading over time and you suspect that a memory leak may be involved, use Windows Performance Monitor to investigate whether there is a memory leak. This process will not tell you what the source of the leak is, nor whether it is user mode or kernel mode. 
 
 Begin by launching Performance Monitor. To open Performance Monitor, use one of the following procedures:
 
@@ -25,7 +24,9 @@ After opening the Performance Monitor, add the following counters to the main Pe
 -   **Paging File**--&gt;**% Usage**
 
 
-Right click on the *Performance Monitor* under *Monitoring Tools* and select **Properties**. Change the update time to 600 seconds to capture a graph of the leak over time. You might also want to log the data to a file for later examination.
+Right click on the *Performance Monitor* under *Monitoring Tools* and select **Properties**. 
+
+To capture a graph of the leak over time, set the *Sample every* time to 600 seconds to measure the value every ten minutes. Set the *Duration* to capture enough activity. For example to set it to 24 hours, the value would be, `60*60*24 = 86,400` You might also want to log the data to a file for later examination.
 
 Start the application or test that you believe is causing the leak. Allow the application or test to run undisturbed for some time; do not use the target computer during this time. Leaks are usually slow and may take hours to detect. Wait for a few hours before deciding whether a leak has occurred.
 

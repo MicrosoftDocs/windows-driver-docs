@@ -1,6 +1,6 @@
 ---
 title: DEVPKEY_DeviceDisplay_Category
-description: DEVPKEY_DeviceDisplay_Category
+description: The DEVPKEY_DeviceDisplay_Category device property represents one or more functional categories that apply to a device instance.
 keywords: ["DEVPKEY_DeviceDisplay_Category Device and Driver Installation"]
 topic_type:
 - apiref
@@ -10,50 +10,21 @@ api_location:
 - Devpkey.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
-ms.date: 10/17/2018
+ms.date: 06/23/2022
 ---
 
 # DEVPKEY_DeviceDisplay_Category
 
-
 The DEVPKEY_DeviceDisplay_Category device property represents one or more functional categories that apply to a device instance.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr>
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Property key</strong></p></td>
-<td align="left"><p>DEVPKEY_DeviceDisplay_Category</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p><a href="devprop-type-string-list.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_STRING_LIST&lt;/strong&gt;](devprop-type-string-list.md)"><strong>DEVPROP_TYPE_STRING_LIST</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Property access</strong></p></td>
-<td align="left"><p>Read-only access by installation applications and installers.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Localized?</strong></p></td>
-<td align="left"><p>No</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Value |
+|--|--|
+| Property key | DEVPKEY_DeviceDisplay_Category |
+| Property-data-type identifier | [**DEVPROP_TYPE_STRING_LIST**](./devprop-type-string-list.md) |
+| Property access | Read-only access by installation applications and installers. |
+| Localized? | No |
 
- 
-
-Remarks
--------
+## Remarks
 
 Device categories for a physical device are specified through the [**DeviceCategory**](/previous-versions/windows/hardware/metadata/ff541101(v=vs.85)) XML element in a [device metadata package](./overview-of-device-metadata-packages.md). Each instance of that device in a system inherits the device categories for that physical device.
 
@@ -67,32 +38,16 @@ If the DEVPKEY_DeviceDisplay_Category device property specifies more than one fu
 
 The **Devices and Printers** user interface in Control Panel displays the primary and secondary functional categories of the device instance. These categories are displayed in the order that is specified in the DEVPKEY_DeviceDisplay_Category device property.
 
-You can access the DEVPKEY_DeviceDisplay_Category property by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
+You can access the DEVPKEY_DeviceDisplay_Category property by calling [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows 7 and later versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Devpkey.h (include Devpkey.h)</td>
-</tr>
-</tbody>
-</table>
+**Version**: Windows 7 and later versions of Windows
+
+**Header**: Devpkey.h (include Devpkey.h)
 
 ## See also
-
 
 [**DeviceCategory**](/previous-versions/windows/hardware/metadata/ff541101(v=vs.85))
 
 [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-

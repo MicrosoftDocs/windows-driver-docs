@@ -3,7 +3,6 @@ title: Debug API Constants
 description: Debug API Constants
 keywords: ["Debugger API Constants", "Debugger Engine API Constants"]
 ms.date: 08/20/2018
-ms.localizationpriority: medium
 ---
 
 # Debug API Constants

@@ -1,13 +1,12 @@
 ---
 title: WinDbg Preview Basics 
 description: This section describes the basic capabilities of WinDbg preview debugger.
-ms.date: 05/02/2019
-ms.localizationpriority: medium
+ms.date: 03/21/2022
 ---
 
 # WinDbg Preview Basics
 
-![Small logo on windbg preview](images/windbgx-preview-logo.png) 
+![Small logo on windbg preview.](images/windbgx-preview-logo.png) 
 
 | Title               | Description        |
 | ------------------- | -------------------|
@@ -47,15 +46,15 @@ ms.localizationpriority: medium
 
 ## Videos
 
-Watch these episodes of [Defrag Tools](https://channel9.msdn.com/Shows/Defrag-Tools) to see Windbg Preview in action.  
+Watch these episodes of [Defrag Tools](/shows/defrag-tools) to see Windbg Preview in action.  
 
 | Title               | Description        |
 |-------------------- |--------------------|
-| [Defrag Tools #182](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-182-WinDbg-Preview-Part-1) |Tim, Chad, and Andy go over the basics of WinDbg Preview and some of the features |
-| [Defrag Tools #183](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-183-WinDbg-Preview-Part-2) | Nick, Tim, and Chad use WinDbg Preview and go over a quick demo |
-| [Defrag Tools #184](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-184-JavaScript-in-WinDbg-Preview) | Bill and Andrew walk through the scripting features in WinDbg Preview |
-| [Defrag Tools #185](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-185-Time-Travel-Debugging-Introduction) | James and Ivette provide and introduction to Time Travel Debugging |
-| [Defrag Tools #186](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-186-Time-Travel-Debugging-Advanced) | James and JCAB covers advanced Time Travel Debugging |
+| [Defrag Tools #182](/shows/defrag-tools/182-windbg-preview-part-1) |Tim, Chad, and Andy go over the basics of WinDbg Preview and some of the features |
+| [Defrag Tools #183](/shows/defrag-tools/183-windbg-preview-part-2) | Nick, Tim, and Chad use WinDbg Preview and go over a quick demo |
+| [Defrag Tools #184](/shows/defrag-tools/184-javascript-in-windbg-preview) | Bill and Andrew walk through the scripting features in WinDbg Preview |
+| [Defrag Tools #185](/shows/defrag-tools/185-time-travel-debugging-introduction) | James and Ivette provide and introduction to Time Travel Debugging |
+| [Defrag Tools #186](/shows/defrag-tools/186-time-travel-debugging-advanced) | James and JCAB covers advanced Time Travel Debugging |
 
 ## Installation and getting connected 
 

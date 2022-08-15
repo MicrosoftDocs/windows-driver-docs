@@ -1,5 +1,5 @@
 ---
-title: token
+title: token (WinDbg)
 description: The token extension displays a formatted view of a security token object.
 keywords: ["token", "security token", "token Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - token
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !token
@@ -56,8 +55,7 @@ The **!token** command is available in kernel-mode and live user-mode debugging.
 
 For information about the kernel-mode TOKEN structure, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. For information about the user-mode TOKEN structure, see the Microsoft Windows SDK documentation.
 
-Remarks
--------
+## Remarks
 
 The TOKEN structure is a security object type that represents an authenticated user process. Every process has an assigned token, which becomes the default token for each thread of that process. However, an individual thread can be assigned a token that overrides this default.
 

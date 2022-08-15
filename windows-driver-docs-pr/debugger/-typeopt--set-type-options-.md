@@ -9,7 +9,6 @@ api_name:
 - .typeopt (Set Type Options)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .typeopt (Set Type Options)
@@ -89,8 +88,7 @@ Causes the debugger to choose the matching symbol with the largest size when the
 
  
 
-Remarks
--------
+## Remarks
 
 Without any arguments, **.typeopt** displays the current symbol options.
 

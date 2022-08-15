@@ -4,7 +4,6 @@ description: WDI_TLV_PHY_SUPPORTED_TX_DATA_RATES_LIST is an unused TLV.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PHY_SUPPORTED_TX_DATA_RATES_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PHY\_SUPPORTED\_TX\_DATA\_RATES\_LIST
@@ -12,8 +11,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_PHY\_SUPPORTED\_TX\_DATA\_RATES\_LIST is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

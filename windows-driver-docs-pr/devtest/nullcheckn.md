@@ -9,7 +9,6 @@ api_name:
 - NullCheck
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NullCheck rule (ndis)
@@ -96,8 +95,7 @@ void Good2(int *x)
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

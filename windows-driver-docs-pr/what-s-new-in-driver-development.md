@@ -1,74 +1,85 @@
 ---
 title: What's new in driver development
-description: This section describes new features for driver development in Windows 10.
-ms.date: 05/22/2020
-ms.localizationpriority: medium
+description: This section describes new features for driver development in Windows 11, version 22H2.
+ms.date: 05/24/2022
 ---
 
-# <a name="top"></a>What's new in driver development
+# <a name="top"></a>What's new in driver development for Windows 11, version 22H2
 
-This section provides information about the new features and updates to Windows driver development in Windows 10.
+This section describes new features and updates for driver development in Windows 11, version 22H2.
 
-## What's new in Windows 10, version 2004 (latest)
+## WPP Recorder
 
-This section describes new features and updates for driver development in Windows 10, version 2004 (Windows 10 May 2020 Update).
+Drivers can add timestamps to Inflight Trace Recorder (IFR) log entries. Timestamps can specify millisecond or tenth of a microsecond granularity.
 
-### Windows Drivers
+- [Inflight Trace Recorder](./devtest/using-wpp-recorder.md)
+- [WPP_RECORDER_TRI_STATE](/windows-hardware/drivers/ddi/wpprecorder/ne-wpprecorder-wpp_recorder_tri_state) enumeration
+- [RECORDER_LOG_CREATE_PARAMS](/windows-hardware/drivers/ddi/wpprecorder/ns-wpprecorder-_recorder_log_create_params) structure
+- [WppRecorderLogCreate](/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) macro (wpprecorder.h)
 
-Windows 10, version 2004 is a transition release for universal drivers. In this release, universal drivers still exist, but are being replaced by Windows Drivers. A Windows Driver is a universal driver with a few additional requirements.
+## ACPI
 
-Windows Drivers are distinguished from Windows Desktop Drivers. While Windows Drivers run on Windows 10X and Windows 10 Desktop editions,  Windows Desktop Drivers run only on Windows 10 Desktop editions.
+The ACPI documentation has been updated with new _OSI string information for Windows 11, version 22H2.
 
-No changes are required to universal drivers for the version 2004 release, but documentation is available now so that you can plan ahead for upcoming changes.
+- [How to Identify the Windows Version in ACPI by Using _OSI](./acpi/winacpi-osi.md) (Updated)
 
-For information about how to build, install, deploy, and debug a Windows Driver, see [Getting Started with Windows Drivers](./develop/getting-started-with-windows-drivers.md).
+## Camera and streaming media drivers
 
-### Windows Hardware Error Architecture (WHEA)
+The camera driver documentation has been updated with information on background segmentation and eye gaze modes available in Windows 11, version 22H2.
 
-WHEA includes a new interface (v2). For info about how to register as an error source and report errors, see [Using WHEA on Windows 10](whea/using-whea-on-windows-10.md).
+- [Background segmentation portrait mode and eye gaze stare mode driver sample](./stream/background-segmentation-portrait-mode-eye-gaze-stare-mode-driver-sample.md) (New)
+- [KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION](./stream/ksproperty-cameracontrol-extended-backgroundsegmentation.md) (Updated)
+- [KSPROPERTY_CAMERACONTROL_EXTENDED_EYEGAZECORRECTION](./stream/ksproperty-cameracontrol-extended-eyegazecorrection.md) (Updated)
+- [USB Video Class (UVC) camera implementation guide](./stream/uvc-camera-implementation-guide.md) (Updated)
 
-### Display and Graphics Drivers
+## Print device apps
 
-Several new and enhanced display and graphics driver features are available in Windows 10, version 2004, including D3D12 mesh shader support, sampler support, raytracing extensions, video motion estimation, and video protected resources support. See [What's New for Windows 10 Display and Graphics Drivers](./display/what-s-new-for-windows-10-display-and-graphics-drivers.md) for more details about these new features.
+The [Print support app (PSA) design guide](./devapps/print-support-app-design-guide.md) has been updated with information about new PSA functionality available starting in Windows 11, version 22H2.
 
-### Storage Drivers
+- Display name localization and PDL Passthrough API integration
+- Page level feature support and operation attributes
+- Enhancing the print dialog with PSA
+- PDL conversion with host-based processing flags
+- Set Print Device Capabilities (PDC) update policy
 
-A storage miniport driver can now get and set more information about a device's internal state, including the ability to reset a device. See [**IOCTL_STORAGE_GET_DEVICE_INTERNAL_LOG**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_get_device_internal_log) and [**StorPortHardwareReset**](/windows-hardware/drivers/ddi/storport/nf-storport-storporthardwarereset) as good starting points.
+## Mobile broadband
 
-### Windows Debugger
+Windows 11, version 22H2 introduces the following mobile broadband features:
 
-#### WinDbg Preview
+- [MBIM Extensions Release number 4.0 (MBIMEx 4.0)](./network/mbimex-4.0-5g-sa-phase-2-support.md) introduces support for 5G SA Phase 2 features. The 5G SA Phase 2 feature set includes support for end-to-end URSP handling and multiple concurrent eMBB network slices.
 
-Updates to [WinDbg Preview](./debugger/debugging-using-windbg-preview.md) to cover new features such as [WinDbg Preview - Timelines](./debugger/windbg-timeline-preview.md). Time travel timelines allows for the visualization of time travel code execution traces.
+- MBIMEx 4.0 introduces [access to an eSIM in the inactive SIM slot](./network/access-to-esim-in-inactive-sim-slot.md).
 
-#### Stop Codes
+- An [errata for MBIMEx 3.0](./network/mbimex-3.0-5g-sa-phase-1-support.md) updates the original MBIMEx 3.0 specification.
 
-- Updates to the [Bug Check Code Reference](./debugger/bug-check-code-reference2.md) topics and the addition of new parameters to topics such as [Bug Check 0x1A: MEMORY_MANAGEMENT](./debugger/bug-check-0x1a--memory-management.md) and [Bug Check 0xC4: DRIVER_VERIFIER_DETECTED_VIOLATION](./debugger/bug-check-0xc4--driver-verifier-detected-violation.md).
+## Audio
 
-- New stop codes such as [Bug Check 0x1DA: HAL_BLOCKED_PROCESSOR_INTERNAL_ERROR](./debugger/bug-check-0x1da--hal-blocked-processor-internal-error.md), [Bug Check 0x1A2: WIN32K_CALLOUT_WATCHDOG_BUGCHECK](./debugger/bug-check-0x1a2--win32k-callout-watchdog-bugcheck.md) and  [Bug Check 0x119: VIDEO_SCHEDULER_INTERNAL_ERROR](./debugger/bug-check-0x119---video-scheduler-internal-error.md).
+- To improve reliability and debuggability new [Windows 11 APIs for Audio Processing Objects](./audio/windows-11-apis-for-audio-processing-objects.md) are available.
+- Windows 11 provides additional capabilities with the use of *resource groups* and these are now discussed [Audio Hardware Resource Management](./audio/audio-hardware-resource-management.md).
+- Audio experience for these devices can be optimized for specific device postures, such as when a device is held in portrait mode. This is described in [Supporting Audio Posture](./audio/supporting-audio-posture.md).
+- KSStudio documentation is now available on line at [KsStudio Utility](./audio/ksstudio-utility.md).
 
-### Driver Security
+## Windows Debugging Tools
 
-Updates to the [Driver security checklist](./driversecurity/driver-security-checklist.md) to use the BinSkim tool.
+- Debugging Tools for Windows supports kernel debugging over a network cable using multiple Physical Functions (PFs) on the supported NICs. This approach improves efficiency of debugging, particularly in traffic heavy cloud environments. For more information see, [Setting Up 2PF Kernel-Mode Debugging using KDNET](./debugger/setting-up-kernel-mode-debugging-using-2pf.md).
+- A new low level OS independent debugger transport – EXDI is described in [Configuring the EXDI Debugger Transport](./debugger/configuring-the-exdi-debugger-transport.md). This transport can connect to virtualized environments such as QEMU, this is described in [Setting Up QEMU Kernel-Mode Debugging using EXDI]( /windows-hardware/drivers/debugger/setting-up-qemu-kernel-mode-debugging-using-exdi).
+- AppVerifier test content is now updated and the documentation is now available online – [Application Verifier - Overview]( /windows-hardware/drivers/devtest/application-verifier).
+
+## Driver Security
+
+- New  code scanning CodeQL rules and updated installation directions, are now available. For more information, see [CodeQL and the Static Tools Logo Test](./devtest/static-tools-and-codeql.md).
+
+## Provisioning support for loading pre-production drivers
+
+- [How to test pre-production drivers with Secure Boot enabled](./install/preproduction-driver-signing-and-install.md)
 
 ## Related Topics
 
 For information on what was new for drivers in past Windows releases, see the following pages:
 
-* [Driver development changes for Windows 10, version 1903](driver-changes-for-windows-10-version-1903.md)
-* [Driver development changes for Windows 10, version 1809](driver-changes-for-windows-10-version-1809.md)
-* [Driver development changes for Windows 10, version 1803](driver-changes-for-windows-10-version-1803.md)
-* [Driver development changes for Windows 10, version 1709](driver-changes-for-windows-10-version-1709.md)
+- [Driver development changes for Windows 11, version 21H2](driver-changes-for-windows-11.md)
+- [Driver development changes for Windows Server 2022](driver-changes-for-windows-server-2022.md)
+- [Driver development changes for Windows 10, version 2004](driver-changes-for-windows-10-version-2004.md)
+- [Driver development changes for Windows 10, version 1903](driver-changes-for-windows-10-version-1903.md)
 
 [Back to Top](#top)
-
-## Deprecated features
-
-The following table describes Windows driver development features that have been removed in Windows 10.
-
-| Driver technology | Feature | Deprecated in |
-|---|---|---|
-| GNSS/Location | [Geolocation driver sample for Windows 8.1](./gnss/sensors-geolocation-driver-sample.md) and related documentation | Windows 10, version 1709 |
-| Mobile Operator Scenarios (Networking) | [AllowStandardUserPinUnlock](./mobilebroadband/allowstandarduserpinunlock.md) | Windows 10, version 1709 |
-| Scan/Image | [WSD (Web Services for Devices) Challenger](./image/challenging-a-disconnected-scanner-with-the-wsd-challenger.md) functionality and related documentation | Windows 10, version 1709 |
-|Mobile Operators| Mobile broadband app experience apps with Sysdev metadata packages are deprecated in favor of MO UWP APPS and COSA. | Windows 10, version 1803|

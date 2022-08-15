@@ -2,7 +2,6 @@
 title: Recommendations for testing driver code and driver package.
 description: When should you start testing? As soon as you have the requirements for your driver, you can begin to design test cases to test that the critical requirements have been implemented.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tips for testing drivers during development
@@ -20,7 +19,7 @@ Use the following suggestions for testing your driver code and driver package.
 
 -   Compile your code using the **Level4 (/W4)** Warnings option. Fixing warnings that are detected by the compiler will increase the quality of the driver code and help eliminate additional defects earlier in the development cycle.
 -   Annotate your code using the Microsoft source code annotation language (SAL) 2.0. The annotations describe how a function uses its parameters—the assumptions it makes about them, and the guarantees it makes when it finishes. The annotations also improve the accuracy of the code analysis tools. For more information about the driver-specific annotations, see [SAL 2.0 Annotations for Drivers](../devtest/sal-2-annotations-for-windows-drivers.md).
--   Use the [tools for verifying drivers](../devtest/tools-for-verifying-drivers.md) while you are developing your driver. For guidelines about when to use specific verification tools, see [Analyzing a Driver using Code Analysis and Verification Tools](analyzing-driver-quality-by-using-code-analysis-tools.md) and the [Survey of Verification Tools](../devtest/survey-of-verification-tools.md).
+-   Use the [tools for verifying drivers](../devtest/tools-for-verifying-drivers.md) while you are developing your driver. For guidelines about when to use specific verification tools, see [Analyzing a Driver using Code Analysis and Verification Tools](analyzing-driver-quality-by-using-code-analysis-tools.md).
 
 **To test your driver package:**
 

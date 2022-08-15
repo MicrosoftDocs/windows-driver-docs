@@ -8,7 +8,6 @@ keywords:
 - exposing filter topology
 - audio filters WDK audio , exposing topology
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Exposing Filter Topology
@@ -96,7 +95,7 @@ PCCONNECTION_DESCRIPTOR MiniportConnections[] =
 
 The following figure shows the topology of the filter that is described by the preceding sample code.
 
-![diagram illustrating a simple filter topology](images/audtop.png)
+![diagram illustrating a simple filter topology.](images/audtop.png)
 
 This filter is a simple example of a [topology filter](topology-filters.md), which an adapter driver forms by binding its [IMiniportTopology](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiporttopology) object to an [IPortTopology](/windows-hardware/drivers/ddi/portcls/nn-portcls-iporttopology) object that the PortCls system driver creates. The filter's input (sink) and output (source) pins are named KSPIN\_WAVEOUT\_SRC and KSPIN\_SPEAKERS\_DST. Both pins carry analog signals. The **mixer** API exposes the connections to these pins as source and destination mixer lines (MIXERLINE\_COMPONENTTYPE\_SRC\_WAVEOUT and MIXERLINE\_COMPONENTTYPE\_DST\_SPEAKERS), respectively.
 

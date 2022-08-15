@@ -9,7 +9,6 @@ api_name:
 - LOCKED_PAGES_TRACKER_CORRUPTION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xD9: LOCKED\_PAGES\_TRACKER\_CORRUPTION
@@ -77,8 +76,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 
  
 
-Cause
------
+## Cause
 
 The error is indicated by the value of Parameter 1.
 

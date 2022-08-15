@@ -9,7 +9,6 @@ api_name:
 - .srcnoisy (Noisy Source Loading)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .srcnoisy (Noisy Source Loading)
@@ -64,8 +63,7 @@ Displays all information displayed by options 1 and 2.
 
  
 
-Remarks
--------
+## Remarks
 
 With no parameters, **.srcnoisy** will display the current status of noisy source loading.
 

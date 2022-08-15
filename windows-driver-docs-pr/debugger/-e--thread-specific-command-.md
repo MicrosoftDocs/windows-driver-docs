@@ -9,7 +9,6 @@ api_name:
 - ~e (Thread-Specific Command)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ~e (Thread-Specific Command)
@@ -61,8 +60,7 @@ Specifies one or more commands to execute. You should separate multiple commands
 
 For more information about other commands that control threads, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
-Remarks
--------
+## Remarks
 
 You can specify threads only in user mode. In kernel mode, the tilde (~) refers to a processor.
 

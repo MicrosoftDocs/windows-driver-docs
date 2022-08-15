@@ -10,7 +10,6 @@ api_name:
 api_type:
 - NA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DevCon ClassFilter
@@ -78,12 +77,12 @@ devcon /r classfilter volume upper !volsnap =!volsnap2
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 23: Display the filter drivers for a setup class](devcon-examples.md#ddk_example_23_display_the_filter_drivers_for_a_setup_class_tools)
+[Example 23: Display the filter drivers for a setup class](devcon-examples.md#example-23-display-the-filter-drivers-for-a-setup-class)
 
-[Example 24: Add a filter driver to a setup class](devcon-examples.md#ddk_example_24_add_a_filter_driver_to_a_setup_class_tools)
+[Example 24: Add a filter driver to a setup class](devcon-examples.md#example-24-add-a-filter-driver-to-a-setup-class)
 
-[Example 25: Insert a filter driver in the class list](devcon-examples.md#ddk_example_25_insert_a_filter_driver_in_the_class_list_tools)
+[Example 25: Insert a filter driver in the class list](devcon-examples.md#example-25-insert-a-filter-driver-in-the-class-list)
 
-[Example 26: Replace a filter driver](devcon-examples.md#ddk_example_26_replace_a_filter_driver_tools)
+[Example 26: Replace a filter driver](devcon-examples.md#example-26-replace-a-filter-driver)
 
-[Example 27: Change the order of filter drivers](devcon-examples.md#ddk_example_27_change_the_order_of_filter_drivers_tools)
+[Example 27: Change the order of filter drivers](devcon-examples.md#example-27-change-the-order-of-filter-drivers)

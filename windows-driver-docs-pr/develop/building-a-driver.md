@@ -2,7 +2,6 @@
 title: Building a Driver with the WDK
 description: This topic describes how to build a driver with the Windows Driver Kit (WDK).
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Visual Studio or MSBuild to build a driver
@@ -46,7 +45,7 @@ You can build a driver from the command line using the **Visual Studio Command P
 
 1.  Open a **Developer Command Prompt for VS2019** window.
 
-    From this window you can use MSBuild.exe to build any Visual Studio project by specifying the project (.VcxProj) or solutions (.Sln) file.
+    From this window you can use MSBuild.exe to build any Visual Studio project by specifying the project (.vcxproj) or solutions (.sln) file.
 
 2.  Navigate to the project directory and enter the **MSbuild** command for your target.
 

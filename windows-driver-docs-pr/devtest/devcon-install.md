@@ -9,34 +9,34 @@ api_name:
 - DevCon Install
 api_type:
 - NA
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 07/26/2022
 ---
 
 # DevCon Install
 
-
 Creates a new, root-enumerated devnode for a non-Plug and Play device and installs its supporting software. Valid only on the local computer.
 
-```
+```console
     devcon [/r] install INFfile HardwareID 
 ```
 
-## <span id="ddk_devcon_install_tools"></span><span id="DDK_DEVCON_INSTALL_TOOLS"></span>Parameters
+> [!IMPORTANT]
+> PnPUtil ships with every release of Windows and makes use of the most reliable and secure APIs available and it's use is recommended. For more information on using PnPutil instead of devcon, see [PnPUtil](pnputil.md).
 
+## Parameters
 
-<span id="________r______"></span><span id="________R______"></span> **/r**   
+**/r**  
 Conditional reboot. Reboots the system after completing an operation when a reboot is required to make the change effective. By default, DevCon does not reboot the system.
 
-<span id="_______INFfile______"></span><span id="_______inffile______"></span><span id="_______INFFILE______"></span> *INFfile*   
+*INFfile*  
 Specifies the full path and file name of the INF file for the device. If you omit the path, DevCon assumes that the file is in the current directory.
 
-<span id="_______HardwareID______"></span><span id="_______hardwareid______"></span><span id="_______HARDWAREID______"></span> *HardwareID*   
+*HardwareID*  
 Specifies a hardware ID for the device.
 
 The specified hardware ID must exactly match the hardware ID of the device. Patterns are not valid. Do not type a single quote character (**'**) to indicate a literal value. For more information, see [Hardware IDs](../install/hardware-ids.md) and [Device Identification Strings](../install/device-identification-strings.md).
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+### Comments
 
 The system might need to be rebooted to make this change effective. To have DevCon reboot the system, add the conditional reboot parameter (**/r**) to the command.
 
@@ -48,21 +48,20 @@ If any step of the **DevCon Install** operation fails, DevCon displays a failure
 
 The **DevCon Install** command creates a new non-Plug and Play device node each time you run it. To update or reinstall drivers, use the [**DevCon Update**](devcon-update.md) command.
 
-### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+### Sample usage
 
-```
+```console
 devcon install c:\windows\inf\newdvc.inf ISAPNP\CSC4324\0
 devcon /r install c:\windows\inf\newdvc.inf ISAPNP\CSC4324\0
 ```
 
-### <span id="examples"></span><span id="EXAMPLES"></span>Examples
+### Examples
 
-[Example 33: Install a device](devcon-examples.md#ddk_example_33_install_a_device_tools)
+[Example 33: Install a device](devcon-examples.md#example-33-install-a-device)
 
-[Example 34: Install a device using unattended setup](devcon-examples.md#ddk_example_34_install_a_device_using_unattended_setup_tools)
+[Example 34: Install a device using unattended setup](devcon-examples.md#example-34-install-a-device-using-unattended-setup)
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Hardware IDs](../install/hardware-ids.md)
 

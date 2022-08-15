@@ -1,8 +1,7 @@
 ---
-title: C30032
+title: C30032 warning
 description: Warning C30032 Calling a memory allocating function and forcing the request of executable memory through use of the POOL_NX_OPTOUT directive.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C30032"
 ---

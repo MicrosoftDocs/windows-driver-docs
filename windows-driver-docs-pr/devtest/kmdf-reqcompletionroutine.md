@@ -9,7 +9,6 @@ api_name:
 - ReqCompletionRoutine
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ReqCompletionRoutine rule (kmdf)
@@ -21,8 +20,7 @@ If a request is not sent synchronously, or is not sent as send and forget, (spec
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,13 +45,11 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfRequestSend**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend)
 [**WdfRequestSetCompletionRoutine**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsetcompletionroutine)
-See also
---------
+## See also
 
 [Completing I/O Requests](../wdf/completing-i-o-requests.md)
 [Synchronizing Cancel and Completion Code](../wdf/synchronizing-cancel-and-completion-code.md)

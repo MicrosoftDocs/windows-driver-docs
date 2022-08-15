@@ -1,5 +1,5 @@
 ---
-title: bugdump
+title: bugdump (WinDbg)
 description: The bugdump extension formats and displays the information contained in the bug check callback buffers.
 keywords: ["bugdump Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - bugdump
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !bugdump
@@ -52,8 +51,7 @@ Specifies the component whose callback data is to be examined. If omitted, all b
 
 For more information, see [Reading Bug Check Callback Data](reading-bug-check-callback-data.md).
 
-Remarks
--------
+## Remarks
 
 This extension can only be used after a bug check has occurred, or when you are debugging a kernel-mode crash dump file.
 

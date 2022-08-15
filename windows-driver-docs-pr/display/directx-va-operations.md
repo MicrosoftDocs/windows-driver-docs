@@ -7,7 +7,6 @@ keywords:
 - VA WDK DirectX , operations
 - bDXVA_Func variable WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DirectX VA Operations

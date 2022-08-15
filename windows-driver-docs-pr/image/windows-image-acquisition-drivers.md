@@ -1,8 +1,7 @@
 ---
 title: Windows Image Acquisition Drivers
-description: Windows Image Acquisition Drivers
-ms.date: 07/18/2018
-ms.localizationpriority: medium
+description: The Windows Image Acquisition (WIA) programming interface documentation explains how to develop a WIA driver that supports communication to imaging devices such as digital cameras and scanners.
+ms.date: 08/10/2021
 ---
 
 # Windows Image Acquisition Drivers
@@ -28,4 +27,3 @@ This section contains the following topics:
 [WIA Samples and Tools](wia-samples-and-tools.md)
 
 [Installing a WIA Minidriver](installing-a-wia-minidriver.md)
-

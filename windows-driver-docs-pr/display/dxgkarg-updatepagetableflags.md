@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # \_DXGKARG\_UPDATEPAGETABLEFLAGS structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The DXGKARG\_UPDATEPAGETABLEFLAGS structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGKARG_UPDATEPAGETABLEFLAGS {
@@ -34,8 +32,7 @@ typedef struct _DXGKARG_UPDATEPAGETABLEFLAGS {
 } DXGKARG_UPDATEPAGETABLEFLAGS;
 ```
 
-Members
--------
+## Members
 
 **LinearAccess**
 Reserved for system use.
@@ -46,8 +43,7 @@ Reserved for system use.
 **Value**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # \_DXGKARG\_CREATEALLOCATION2 structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The DXGKARG\_CREATEALLOCATION2 structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGKARG_CREATEALLOCATION2 {
@@ -33,8 +31,7 @@ typedef struct _DXGKARG_CREATEALLOCATION2 {
 } DXGKARG_CREATEALLOCATION2;
 ```
 
-Members
--------
+## Members
 
 **pPrivateDriverData**
 Reserved for system use.
@@ -54,8 +51,7 @@ Reserved for system use.
 **Flags**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

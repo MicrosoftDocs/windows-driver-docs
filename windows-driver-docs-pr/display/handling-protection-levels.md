@@ -7,7 +7,6 @@ keywords:
 - COPP WDK DirectX VA , protection levels
 - protected video WDK COPP , protection levels
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Protection Levels

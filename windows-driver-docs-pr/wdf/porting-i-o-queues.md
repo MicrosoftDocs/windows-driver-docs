@@ -2,7 +2,6 @@
 title: Porting I/O Queues
 description: Porting I/O Queues
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Porting I/O Queues

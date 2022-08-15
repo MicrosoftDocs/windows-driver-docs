@@ -6,7 +6,6 @@ keywords:
 - IP Helper WDK networking , about
 - network drivers WDK , IP Helper
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IP Helper Overview
@@ -21,7 +20,8 @@ An *interface* is described in the IETF RFC documents as an abstract concept tha
 
 Your driver can use the following kernel-mode functions, MIB structures, and MIB and Network Layer (NL) enumerations to retrieve and modify configuration settings for Transmission Control Protocol/Internet Protocol (TCP/IP) transport on a local computer.
 
-**Note**  When you are developing driver code, follow the instructions for [including header files.](including-header-files-for-ip-helper.md)
+> [!NOTE]
+> When you are developing driver code, follow the instructions for [including header files.](including-header-files-for-ip-helper.md)
 
  
 

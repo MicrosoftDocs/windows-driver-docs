@@ -3,7 +3,6 @@ title: Using Packet-Based Bus-Master DMA
 description: Using Packet-Based Bus-Master DMA
 keywords: ["bus-master DMA WDK kernel", "DMA transfers WDK kernel , bus-master DMA", "adapter objects WDK kernel , bus-master DMA"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using Packet-Based Bus-Master DMA
@@ -18,7 +17,7 @@ To use packet-based DMA, drivers of bus-master DMA devices call the following ge
 
 -   [**AllocateAdapterChannel**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pallocate_adapter_channel) when the driver is ready to program the bus-master adapter for DMA
 
--   [**MmGetMdlVirtualAddress**](./mm-bad-pointer.md) to get an index into the MDL, required as an initial parameter to [**MapTransfer**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer), and **MapTransfer** to make the system physical memory that backs the IRP's buffer device-accessible
+-   [**MmGetMdlVirtualAddress**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlvirtualaddress) to get an index into the MDL, required as an initial parameter to [**MapTransfer**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer), and **MapTransfer** to make the system physical memory that backs the IRP's buffer device-accessible
 
     Note that any driver might need to carry out more than one transfer operation in order to satisfy the current IRP, as explained in [Splitting Transfer Requests](splitting-dma-transfer-requests.md). Drivers of devices that do not have scatter/gather capabilities can call **MapTransfer** once per transfer operation. Drivers of devices that have scatter/gather capabilities can call **MapTransfer** more than once to set up each transfer operation. Alternatively, these drivers can use the system's built-in scatter/gather support, described in [Using Scatter/Gather DMA](using-scatter-gather-dma.md).
 

@@ -9,7 +9,6 @@ api_name:
 - usb3kd.xhci_dumpall
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usb3kd.xhci\_dumpall
@@ -32,7 +31,7 @@ Runs all of the XHCI commands and displays the output of each command.
 
 The following screen shot show the output of the **!xhci\_dumpall**l command.
 
-![output of the !xhci\-dumpall command showing xhci controller information](images/xhcidumpall01.png)
+![output of the !xhci\-dumpall command showing xhci controller information.](images/xhcidumpall01.png)
 
 The output shows that there is one USB 3.0 host controller.
 
@@ -47,8 +46,7 @@ The output uses [Using Debugger Markup Language (DML)](debugger-markup-language-
 
 Usb3kd.dll
 
-Remarks
--------
+## Remarks
 
 The **!xhci\_dumpall** command is the parent command for this set of commands.
 
@@ -62,7 +60,7 @@ The **!xhci\_dumpall** command is the parent command for this set of commands.
 -   [**!xhci\_registers**](-usb3kd-xhci-registers.md)
 -   [**!xhci\_resourceusage**](-usb3kd-xhci-resourceusage.md)
 
-The information displayed by the **!xhci\_dumpall** family of commands is based on data structures maintained by the USB 3.0 host controller driver. For information about the USB 3.0 host controller driver and other drivers in the USB 3.0 stack, see [USB Driver Stack Architecture](../usbcon/usb-3-0-driver-stack-architecture.md). For an explanation of the data structures used by the drivers in the USB 3.0 stack, see Part 2 of the [USB Debugging Innovations in Windows 8](https://channel9.msdn.com/Events/BUILD/BUILD2011/HW-258P) video.
+The information displayed by the **!xhci\_dumpall** family of commands is based on data structures maintained by the USB 3.0 host controller driver. For information about the USB 3.0 host controller driver and other drivers in the USB 3.0 stack, see [USB Driver Stack Architecture](../usbcon/usb-3-0-driver-stack-architecture.md). For an explanation of the data structures used by the drivers in the USB 3.0 stack, see Part 2 of the [USB Debugging Innovations in Windows 8](/events/build-build2011/hw-258p) video.
 
 ## <span id="see_also"></span>See also
 

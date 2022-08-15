@@ -9,7 +9,6 @@ api_name:
 - ks.enumdevobj
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.enumdevobj
@@ -52,8 +51,7 @@ Specifies a pointer to a WDM device object.
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The output from [**!ks.allstreams**](-ks-allstreams.md) can be used as the input for **!ks.enumdevobj**.
 

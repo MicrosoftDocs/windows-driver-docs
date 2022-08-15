@@ -3,7 +3,6 @@ title: Enable heap tail checking
 description: Enable heap tail checking
 keywords: ["Enable heap tail checking (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Enable heap tail checking

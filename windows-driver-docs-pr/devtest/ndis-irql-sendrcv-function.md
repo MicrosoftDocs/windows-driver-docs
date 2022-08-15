@@ -9,7 +9,6 @@ api_name:
 - Irql_SendRcv_Function
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Irql\_SendRcv\_Function rule (ndis)
@@ -19,8 +18,7 @@ The **Irql\_SendRcv\_Function** rule specifies that the send and receive functio
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisCancelSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscancelsendnetbufferlists)
 [**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists)

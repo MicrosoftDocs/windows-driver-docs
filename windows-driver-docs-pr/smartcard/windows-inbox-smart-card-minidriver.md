@@ -2,7 +2,6 @@
 title: Windows Inbox Smart Card Minidriver
 description: Windows Inbox Smart Card Minidriver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows Inbox Smart Card Minidriver
@@ -252,7 +251,7 @@ For cards compliant with GIDS specification with Microsoft Generic Profile, the 
 <tr class="odd">
 <td align="left">A000</td>
 <td align="left">DF1F</td>
-<td align="left"><pre class="syntax" space="preserve"><code>01 6d 73 63 70 00 00 00 00 00 00 00 00 00 00 00
+<td align="left"><pre class="syntax"><code>01 6d 73 63 70 00 00 00 00 00 00 00 00 00 00 00
 00 00 00 00 00 00 00 00 00 00 a0 00 00 00 00 00
 00 00 00 00 00 00 63 61 72 64 69 64 00 00 00 00
 00 20 df 00 00 12 a0 00 00 00 00 00 00 00 00 00
@@ -266,25 +265,25 @@ For cards compliant with GIDS specification with Microsoft Generic Profile, the 
 <tr class="even">
 <td align="left">A010</td>
 <td align="left">DF21</td>
-<td align="left"><pre class="syntax" space="preserve"><code>6d 73 63 70 00 00 00 00</code></pre></td>
+<td align="left"><pre class="syntax"><code>6d 73 63 70 00 00 00 00</code></pre></td>
 <td align="left">\cardapps</td>
 </tr>
 <tr class="odd">
 <td align="left">A010</td>
 <td align="left">DF22</td>
-<td align="left"><pre class="syntax" space="preserve"><code>00 00 00 00 00 00</code></pre></td>
+<td align="left"><pre class="syntax"><code>00 00 00 00 00 00</code></pre></td>
 <td align="left">\cardcf</td>
 </tr>
 <tr class="even">
 <td align="left">A010</td>
 <td align="left">DF23</td>
-<td align="left"><pre class="syntax" space="preserve"><code>&lt;empty 0-byte data object&gt;</code></pre></td>
+<td align="left"><pre class="syntax"><code>&lt;empty 0-byte data object&gt;</code></pre></td>
 <td align="left">mscp\cmapfile</td>
 </tr>
 <tr class="odd">
 <td align="left">A012</td>
 <td align="left">DF20</td>
-<td align="left"><pre class="syntax" space="preserve"><code>&lt;random 16-byte value&gt;</code></pre></td>
+<td align="left"><pre class="syntax"><code>&lt;random 16-byte value&gt;</code></pre></td>
 <td align="left">\cardid</td>
 </tr>
 </tbody>

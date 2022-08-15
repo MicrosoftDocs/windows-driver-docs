@@ -9,7 +9,6 @@ api_name:
 - .writemem (Write Memory to File)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .writemem (Write Memory to File)
@@ -55,8 +54,7 @@ Specifies the memory range to be written to the file. For syntax details, see [A
 
  
 
-Remarks
--------
+## Remarks
 
 The memory is copied literally to the file. It is not parsed in any way.
 

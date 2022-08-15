@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ScanRegionYOffset element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The optional **ScanRegionYOffset** element specifies the distance from the slow scan lead edge to the beginning of the scan region.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScanRegionYOffset wscn:MustHonor=""                        wscn:Override=""                        wscn:UsedDefault=""
@@ -29,8 +27,7 @@ Usage
 </wscn:ScanRegionYOffset wscn:MustHonor=""                        wscn:Override=""                        wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -72,8 +69,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 Required. An integer between 0 and the InputMediaSize height.[**InputMediaSize**](inputmediasize.md)
 
@@ -101,8 +97,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 For more information about the scan region parameters, see [**ScanRegion**](scanregion.md).
 

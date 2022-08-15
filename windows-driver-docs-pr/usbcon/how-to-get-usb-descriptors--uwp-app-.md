@@ -2,7 +2,6 @@
 description: One of the main tasks of interacting with a USB device is to get information about it.
 title: How to get USB descriptors (UWP app)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to get USB descriptors (UWP app)
@@ -70,7 +69,7 @@ String GetDeviceDescriptorAsString (UsbDevice device)
 
 The output is shown here:
 
-![usb device descriptor](images/device-descriptors-app.png)
+![usb device descriptor.](images/device-descriptors-app.png)
 
 ## How to get the configuration descriptor
 
@@ -105,7 +104,7 @@ String GetConfigurationDescriptorAsString(UsbDevice device)
 
 The output is shown here:
 
-![usb configuration descriptor](images/config-desc-app.png)
+![usb configuration descriptor.](images/config-desc-app.png)
 
 ## How to get interface descriptors
 
@@ -158,7 +157,7 @@ String GetInterfaceDescriptorsAsString(UsbDevice device)
 
 The output is shown here:
 
-![usb interface descriptor](images/interface-desc-app.png)
+![usb interface descriptor.](images/interface-desc-app.png)
 
 ## How to get endpoint descriptors
 
@@ -240,7 +239,7 @@ private String GetEndpointDescriptorsAsString(UsbDevice device)
 
 The output is shown here:
 
-![usb endpoint descriptors](images/endpoint-desc-app.png)
+![usb endpoint descriptors.](images/endpoint-desc-app.png)
 
 ## How to get custom descriptors
 

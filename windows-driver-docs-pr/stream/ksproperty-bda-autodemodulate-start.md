@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_BDA\_AUTODEMODULATE\_START
-description: Clients use KSPROPERTY\_BDA\_AUTODEMODULATE\_START to automatically determine the modulation parameters of a demodulator node and demodulate the signal.
+title: KSPROPERTY_BDA_AUTODEMODULATE_START
+description: Clients use KSPROPERTY_BDA_AUTODEMODULATE_START to automatically determine the modulation parameters of a demodulator node and demodulate the signal.
 keywords: ["KSPROPERTY_BDA_AUTODEMODULATE_START Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,70 +10,23 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/13/2021
 ---
 
-# KSPROPERTY\_BDA\_AUTODEMODULATE\_START
+# KSPROPERTY_BDA_AUTODEMODULATE_START
 
+Clients use KSPROPERTY_BDA_AUTODEMODULATE_START to automatically determine the modulation parameters of a demodulator node and demodulate the signal.
 
-Clients use KSPROPERTY\_BDA\_AUTODEMODULATE\_START to automatically determine the modulation parameters of a demodulator node and demodulate the signal.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_bda_autodemodulate_start_ks"></span><span id="DDK_KSPROPERTY_BDA_AUTODEMODULATE_START_KS"></span>
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| No | Yes | Filter | KSP_NODE | None |
 
+## Requirements
 
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>No</p></td>
-<td><p>Yes</p></td>
-<td><p>Filter</p></td>
-<td><p>KSP_NODE</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-Requirements
-------------
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Bdamedia.h (include Bdamedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** bdamedia.h (include Bdamedia.h)
 
 ## See also
 
-
-[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
-
- 
-
+[**KSP_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)

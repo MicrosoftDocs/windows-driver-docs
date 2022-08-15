@@ -4,7 +4,6 @@ description: The HS_PLUGIN_SEND_KEEP_ALIVE function is called by the host to sen
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_SEND_KEEP_ALIVE) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_PLUGIN\_SEND\_KEEP\_ALIVE function
@@ -14,8 +13,7 @@ ms.localizationpriority: medium
 
 The **HS\_PLUGIN\_SEND\_KEEP\_ALIVE** function is called by the host to send a network connection keep-alive message. It will be called at the frequency specified in the **dwKeepAliveTimeMins** member of the plugin's [**HS\_PLUGIN\_PROFILE**](hs-plugin-profile.md) structure.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_PLUGIN_SEND_KEEP_ALIVE)(
@@ -23,20 +21,17 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 This function has no parameters.
 
 **   
 
-Return value
-------------
+## Return value
 
 This function is called by the host to communicate with the plugin and does not return a value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

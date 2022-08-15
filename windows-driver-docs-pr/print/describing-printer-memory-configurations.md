@@ -8,7 +8,6 @@ keywords:
 - memory configurations WDK Unidrv
 - Unidrv WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Describing Printer Memory Configurations

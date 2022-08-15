@@ -7,7 +7,6 @@ keywords:
 - return values WDK SCSI
 - status values WDK SCSI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Return from HwScsiStartIo

@@ -6,7 +6,6 @@ keywords:
 - debugger extensions WDK UMDF
 - extensions WDK debuggers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Summary of Debugger Extensions in Wudfext.dll

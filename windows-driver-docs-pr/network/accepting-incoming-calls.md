@@ -9,7 +9,6 @@ keywords:
 - incoming calls WDK CoNDIS WAN
 - calls WDK CoNDIS WAN
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accepting Incoming Calls

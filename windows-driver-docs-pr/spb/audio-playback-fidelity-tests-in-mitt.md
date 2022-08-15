@@ -2,7 +2,6 @@
 title: Audio playback fidelity tests in MITT
 description: The audio module on the MITT board is used to detect errors that occur at the transport level of the audio device by detecting sine wave frequency accuracy (at zero cross) and counting instances where the frequency or offset is incorrect.
 ms.date: 04/27/2021
-ms.localizationpriority: medium
 ---
 
 # Audio playback fidelity tests in MITT
@@ -17,7 +16,7 @@ The audio module on the MITT board is used to detect errors that occur at the tr
 
 ## Hardware setup
 
-![mitt audio test hardware setup](images/mitttoaudio.jpg)
+![mitt audio test hardware setup.](images/mitttoaudio.jpg)
 
 1. Connect the audio adapter to **JC1** on the MITT board.
 2. LineIn has the input from line out of the audio device on the system under test by using a 1/8" to 1/8" male to male cable. Other audio sources may be connected up with appropriate cabling.

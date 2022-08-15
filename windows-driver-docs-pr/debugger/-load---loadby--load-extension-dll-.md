@@ -9,7 +9,6 @@ api_name:
 - .load, .loadby (Load Extension DLL)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .load, .loadby (Load Extension DLL)
@@ -58,8 +57,7 @@ Specifies the module name of a module that is located in the same directory as t
 
 For more information about how to load, unload, and control extensions, see [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md).
 
-Remarks
--------
+## Remarks
 
 When you use the **.load** command, you must specify the full path.
 

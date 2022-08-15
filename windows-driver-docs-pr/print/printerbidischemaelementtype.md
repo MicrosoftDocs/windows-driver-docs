@@ -12,15 +12,13 @@ api_name:
 api_type:
 - NA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PRINTERBIDISCHEMAELEMENTTYPE enumeration
 
 Specifies the possible values of data transferred in a bidi operation
 
-Syntax
-------
+## Syntax
 
 ```cpp
 typedef enum _PRINTERBIDISCHEMAELEMENTTYPE { 
@@ -35,8 +33,7 @@ typedef enum _PRINTERBIDISCHEMAELEMENTTYPE {
 } PRINTERBIDISCHEMAELEMENTTYPE;
 ```
 
-Constants
----------
+## Constants
 
 **PrinterBidiSchemaElementType\_Null**  
 No data.

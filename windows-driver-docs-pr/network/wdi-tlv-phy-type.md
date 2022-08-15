@@ -4,10 +4,11 @@ description: WDI_TLV_PHY_TYPE is a TLV that contains a PHY type.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PHY_TYPE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PHY\_TYPE
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_PHY\_TYPE is a TLV that contains a PHY type.
@@ -31,8 +32,7 @@ The size (in bytes) of a UINT32.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

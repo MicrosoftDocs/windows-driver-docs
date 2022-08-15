@@ -9,7 +9,6 @@ api_name:
 - DISORDERLY_SHUTDOWN
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF3: DISORDERLY\_SHUTDOWN
@@ -59,8 +58,7 @@ The DISORDERLY\_SHUTDOWN bug check has a value of 0x000000F3. This indicates tha
 
  
 
-Cause
------
+## Cause
 
 Windows attempted to shut down, but there were no free pages available to continue operations.
 

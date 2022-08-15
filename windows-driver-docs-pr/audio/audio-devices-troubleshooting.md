@@ -2,7 +2,6 @@
 title: Audio Devices Troubleshooting
 description: Audio Devices Troubleshooting
 ms.date: 12/19/2019
-ms.localizationpriority: medium
 ---
 
 # Audio Devices Troubleshooting

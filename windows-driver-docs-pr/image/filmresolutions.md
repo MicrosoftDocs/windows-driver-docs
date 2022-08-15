@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # FilmResolutions element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **FilmResolutions** element contains a list of resolutions at which the scanner's film scanning input source can scan.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:FilmResolutions>
@@ -26,8 +24,7 @@ Usage
 </wscn:FilmResolutions>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -72,8 +69,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The resolution is specified as a [**Width**](width.md) x [**Height**](height.md) pair, where both **Width** and **Height** are specified in pixels per inch.
 

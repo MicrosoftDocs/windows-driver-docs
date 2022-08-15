@@ -10,7 +10,6 @@ keywords:
 - texture management WDK Direct3D , filtering
 - texture management WDK Direct3D , blending
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Texture Addressing and Filtering Operations

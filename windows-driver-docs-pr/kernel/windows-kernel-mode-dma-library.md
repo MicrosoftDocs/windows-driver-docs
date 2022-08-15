@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode DMA Library
 description: Windows Kernel-Mode DMA Library
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

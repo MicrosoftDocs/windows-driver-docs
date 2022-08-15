@@ -9,7 +9,6 @@ api_name:
 - DFS_FILE_SYSTEM
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x82: DFS\_FILE\_SYSTEM

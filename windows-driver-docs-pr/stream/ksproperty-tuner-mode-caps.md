@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_TUNER\_MODE\_CAPS
@@ -56,15 +55,13 @@ The KSPROPERTY\_TUNER\_MODE\_CAPS property describes the capabilities of a tunin
 
 The property value (operation data) is a ULONG that specifies a tuner's tuning capabilities.
 
-Remarks
--------
+## Remarks
 
 The **StandardsSupported** member of the KSPROPERTY\_TUNER\_MODE\_CAPS\_S structure specifies the current analog video standard.
 
 For each separate mode (analog TV, digital TV, FM, AM, or DSS), the minidriver reports capabilities such as minimum and maximum frequency, tuning granularity, settling time, and number of inputs.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -82,7 +79,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_TUNER\_MODE\_CAPS\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tuner_mode_caps_s)
 

@@ -7,7 +7,6 @@ keywords:
 - SRB_FUNCTION_WMI
 - WMI WDK SCSI
 ms.date: 10/08/2019
-ms.localizationpriority: medium
 ---
 
 # Handling SRB_FUNCTION_WMI

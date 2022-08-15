@@ -15,8 +15,6 @@ keywords:
 - headers WDK PCI
 ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # PCI driver programming guide
@@ -42,8 +40,9 @@ The following table summarizes the PCIe features that are supported by different
 - [Accessing PCI Device Configuration Space](./accessing-pci-device-configuration-space.md)
 - [I/O Resource Usage Reduction](./i-o-resource-usage-reduction.md)
 - [Order of Resources in Start-Device IRP](./order-of-resources-in-start-device-irp.md)
-- [PCI Express FAQ for Graphics](./pci-express-faq-for-graphics.md)
+- [PCI Express FAQ for Graphics](./pci-express-faq-for-graphics.yml)
 - [PCI Sample](./pci-sample.md)
+- [Obtaining PCI Segment Values](./obtaining-pci-segment-values.md)
 
 ## See Also
 

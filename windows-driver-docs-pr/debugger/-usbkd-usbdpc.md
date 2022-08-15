@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbdpc
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbdpc
@@ -32,8 +31,7 @@ Address of a **usbport!\_XDPC\_CONTEXT** structure. To get the XDPC list for a U
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of a **usbport!\_XDPC\_CONTEXT** structure. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 

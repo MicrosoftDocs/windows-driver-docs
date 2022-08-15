@@ -1,8 +1,7 @@
 ---
 title: Language Specification 1
 description: Language Specification 1
-ms.date: 01/27/2021
-ms.localizationpriority: medium
+ms.date: 09/27/2021
 ---
 
 # Language Specification 1
@@ -116,7 +115,7 @@ The \[ini\] section of the data block contains variables that describe the requi
 <span id="VERSION"></span><span id="version"></span>**VERSION**  
 The language specification version. This variable is required. If you develop a script based on the current language specification, set this value to 1. The SrcSrv client code does not attempt to execute any script that has a value greater than its own. Current versions of SrcSrv use a value of 2.
 
-<span id="VERCTL"></span><span id="verctl"></span>**VERCTL**  
+<span id="VERCTRL"></span><span id="verctrl"></span>**VERCTRL**  
 A string that describes the source version control system. This variable is optional.
 
 <span id="DATETIME"></span><span id="datetime"></span>**DATETIME**  
@@ -134,7 +133,7 @@ Describes how to build the command to extract the file from source control. This
 Lists environment variables to be created during the file extraction. This is a string. Separate multiple entries with a backspace character (\\b). This is an optional variable.
 
 <span id="SRCSRVVERCTRL"></span><span id="srcsrvverctrl"></span>**SRCSRVVERCTRL**  
-Specifies the version control system in use. For Perforce, this is perforce. For Visual SourceSafe, this is vss. For Team Foundation Server, this is tfs. This variable is used to persist server errors. This is an optional variable.
+Specifies the version control system in use. For Perforce, this is perforce. For Team Foundation Server, this is tfs. This variable is used to persist server errors. This is an optional variable.
 
 <span id="SRCSRVVERRDESC"></span><span id="srcsrvverrdesc"></span>**SRCSRVVERRDESC**  
 Specifies the text to display when the version control client is unable to contact the server that contains the source files to extract. SrcSrv uses this value to check for connection problems. This is an optional variable.

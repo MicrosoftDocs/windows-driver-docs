@@ -3,7 +3,6 @@ title: Using an IoTimer Routine
 description: Using an IoTimer Routine
 keywords: ["IoTimer"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using an IoTimer Routine

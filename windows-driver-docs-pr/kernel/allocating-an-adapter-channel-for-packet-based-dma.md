@@ -3,7 +3,6 @@ title: Allocating an Adapter Channel for Packet-Based DMA
 description: Allocating an Adapter Channel for Packet-Based DMA
 keywords: ["system DMA WDK kernel , packet-based", "packet-based DMA WDK kernel", "DMA transfers WDK kernel , packet-based", "allocating adapter channels", "adapter channel allocations WDK kernel", "AllocateAdapterChannel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Allocating an Adapter Channel for Packet-Based DMA
@@ -34,7 +33,7 @@ The *AdapterControl* routine typically does the following:
 
 1.  Saves or initializes whatever context the driver maintains about DMA operations. The context might include the input *MapRegisterBase* handle the driver must pass to [**MapTransfer**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer) and [**FlushAdapterBuffers**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pflush_adapter_buffers) and, possibly, the **Length** of the requested transfer from its I/O stack location in the IRP.
 
-2.  Calls [**MmGetMdlVirtualAddress**](./mm-bad-pointer.md) followed by **MapTransfer**. See [Setting Up the System DMA Controller for Packet-Based DMA](setting-up-the-system-dma-controller-for-packet-based-dma.md).
+2.  Calls [**MmGetMdlVirtualAddress**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlvirtualaddress) followed by **MapTransfer**. See [Setting Up the System DMA Controller for Packet-Based DMA](setting-up-the-system-dma-controller-for-packet-based-dma.md).
 
 3.  Sets up the subordinate device to start the transfer operation.
 

@@ -2,7 +2,6 @@
 title: Debugging Tools for Windows New for Windows 8
 description: Debugging Tools for Windows New for Windows 8
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging Tools for Windows: New for Windows 8

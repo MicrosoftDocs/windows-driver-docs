@@ -9,7 +9,6 @@ api_name:
 - uf (Unassemble Function)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # uf (Unassemble Function)
@@ -77,8 +76,7 @@ Specifies the address of the function to disassemble. For more information about
 
 For more information about assembly debugging and related commands, see [Debugging in Assembly Mode](debugging-in-assembly-mode.md).
 
-Remarks
--------
+## Remarks
 
 The display shows the whole function, according to the function order.
 

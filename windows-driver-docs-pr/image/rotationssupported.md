@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # RotationsSupported element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **RotationsSupported** element contains the list of rotation values that the scanner supports for rotating each image of a scanned document.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:RotationsSupported>
@@ -26,8 +24,7 @@ Usage
 </wscn:RotationsSupported>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -69,8 +66,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must apply all rotation values to the scan data after data acquisition. All rotations must be applied in the clockwise direction.
 

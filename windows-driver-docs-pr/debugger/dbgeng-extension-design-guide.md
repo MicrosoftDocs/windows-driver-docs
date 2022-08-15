@@ -3,7 +3,6 @@ title: DbgEng Extension Design Guide
 description: DbgEng Extension Design Guide
 keywords: ["DbgEng Extensions, Design Guide"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # DbgEng Extension Design Guide

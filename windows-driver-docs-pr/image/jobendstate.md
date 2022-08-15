@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # JobEndState element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **JobEndState** element describes the final state of the current scan job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobEndState>
@@ -26,8 +24,7 @@ Usage
 </wscn:JobEndState>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -87,8 +84,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **JobEndState** element contains child elements that describe various aspects about the end state of a scan job. The WSD Scan Service sends a **JobEndState** element to a client through the [**JobEndStateEvent**](jobendstateevent.md) element.
 

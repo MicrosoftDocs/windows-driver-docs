@@ -2,7 +2,6 @@
 description: Supported Format Retrieval
 title: Supported Format Retrieval
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supported Format Retrieval

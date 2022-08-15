@@ -2,7 +2,6 @@
 title: Miracast user-mode drivers to support wireless displays
 description: To enable Miracast wireless displays, you need to create a standalone, unique DLL that implements a Miracast user-mode driver.
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

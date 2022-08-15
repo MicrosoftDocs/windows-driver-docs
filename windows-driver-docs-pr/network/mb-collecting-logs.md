@@ -2,16 +2,15 @@
 title: MB Collecting Logs
 description: MB Collecting Logs
 ms.date: 03/10/2021
-ms.localizationpriority: medium
 ---
 
-# MobileBroadband Collecting Logs
+# Mobile Broadband Collecting Logs
 
-Follow these steps to collect the logs related to Mobilebroadband on a Windows Desktop Device:
+Follow these steps to collect the logs related to mobile broadband on a Windows Desktop Device:
 ```
 *  Open an Administrator Command Prompt window
 *  Run the below command to start tracing
-    *  netsh trace start wireless_dbg,provisioning overwrite=yes maxSize=999
+    *  netsh trace start wireless_dbg,provisioning overwrite=yes maxSize=999 level=5
 *  <Repro the scenario for which you need to collect logs>
 *  Run the below command to stop tracing
     *  netsh trace stop

@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_XMIT_OK OID specifies the number of frames 
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_XMIT_OK Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_XMIT\_OK
@@ -29,15 +28,13 @@ Supported.
 <a href="" id="ndis-5-1-drivers"></a>NDIS 5.1 drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 OID\_GEN\_XMIT\_OK specifies the number of frames that are transmitted without errors. However, the [OID\_GEN\_STATISTICS](oid-gen-statistics.md) does not include this information.
 
 NOTE: Statistics OIDs are mandatory for NDIS 6.0 and later miniport drivers unless NDIS handles them. For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

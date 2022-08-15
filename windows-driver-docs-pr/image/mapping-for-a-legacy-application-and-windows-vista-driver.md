@@ -2,7 +2,6 @@
 title: Mapping for a Legacy Application and Windows Vista Driver
 description: Mapping for a Legacy Application and Windows Vista Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mapping for a Legacy Application and Windows Vista Driver

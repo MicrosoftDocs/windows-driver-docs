@@ -2,7 +2,6 @@
 title: Supported PrintTicket Features
 description: This section provides information about the PrintTicket features that are supported by the standard XPS filters.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supported PrintTicket Features

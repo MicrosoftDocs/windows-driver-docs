@@ -9,7 +9,6 @@ api_name:
 - NO_USER_MODE_CONTEXT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xE: NO\_USER\_MODE\_CONTEXT

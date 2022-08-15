@@ -2,7 +2,6 @@
 title: SECURITY\_INFORMATION
 description: SECURITY\_INFORMATION
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # SECURITY\_INFORMATION

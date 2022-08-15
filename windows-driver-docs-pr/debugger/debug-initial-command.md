@@ -2,8 +2,7 @@
 title: Debug initial command
 description: Debug initial command
 keywords: ["Debug initial command (global flag)"]
-ms.date: 05/23/2017
-ms.localizationpriority: medium
+ms.date: 12/22/2021
 ---
 
 # Debug initial command
@@ -13,6 +12,11 @@ ms.localizationpriority: medium
 
 
 The **Debug initial command** flag debugs the Client Server Run-time Subsystem (CSRSS) and the WinLogon process.
+
+
+> [!NOTE]
+> Starting in Windows 10, CSRSS is a protected process and can only be debugged in kernel mode.
+>
 
 <table>
 <colgroup>

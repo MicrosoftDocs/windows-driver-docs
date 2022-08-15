@@ -2,7 +2,6 @@
 title: Read data from hardware
 description: This topic shows you how the sample sensor driver reads data from the sensor hardware (the accelerometer) in response to read requests.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Read data from hardware

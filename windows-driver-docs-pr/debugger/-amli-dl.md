@@ -1,5 +1,5 @@
 ---
-title: amli dl
+title: amli dl (WinDbg)
 description: The amli dl extension displays a portion of the AML interpreter's event log.
 keywords: ["amli dl Windows Debugging"]
 ms.date: 09/17/2018
@@ -9,7 +9,6 @@ api_name:
 - amli dl
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !amli dl
@@ -34,8 +33,7 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
-Remarks
--------
+## Remarks
 
 The event log chronicles the most recent 150 events that occurred in the interpreter.
 

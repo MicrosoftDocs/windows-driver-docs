@@ -6,7 +6,6 @@ keywords:
 - AVStream events WDK
 - automation tables WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Event Handling in AVStream

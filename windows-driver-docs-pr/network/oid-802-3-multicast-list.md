@@ -4,7 +4,6 @@ description: As a set request, NDIS and overlying protocol drivers use the OID_8
 ms.date: 08/08/2017
 keywords: 
  -OID_802_3_MULTICAST_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_802\_3\_MULTICAST\_LIST
@@ -21,7 +20,7 @@ NDIS handles OID\_802\_3\_MULTICAST\_LIST query requests for miniport drivers, s
 
 Miniport drivers that support multicast address lists must support OID\_802\_3\_MULTICAST\_LIST set requests.
 
-For a set request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains the multicast address list as an array of addresses.
+For a set request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains the multicast address list as an array of addresses.
 
 -   Each address is an array of 6 bytes.
 -   The **InformationBufferLength** member contains the length, in bytes, of the **InformationBuffer** array.
@@ -42,8 +41,7 @@ The miniport driver can set a limit on the number of multicast addresses that th
 
 For a query request, NDIS returns a multicast address list that is the union of all multicast address lists for all protocol bindings.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

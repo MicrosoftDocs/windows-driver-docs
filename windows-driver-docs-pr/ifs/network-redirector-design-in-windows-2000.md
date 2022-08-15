@@ -9,7 +9,6 @@ keywords:
 - buffering code WDK network redirectors
 - kernel network redirectors WDK , Windows 2000
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Network Redirector Design in Windows 2000
@@ -24,7 +23,7 @@ Windows 2000 introduced a new driver model (often called the mini-redirector ar
 
 A model of this architecture with multiple redirectors is shown below.
 
-![diagram illustrating network redirector design in windows 2000](images/redir-02.png)
+![diagram illustrating network redirector design in windows 2000.](images/redir-02.png)
 
 This RDBSS design change offers several of the following benefits:
 

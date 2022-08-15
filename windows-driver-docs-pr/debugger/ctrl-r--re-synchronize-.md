@@ -9,7 +9,6 @@ api_name:
 - CTRL+R (Re-synchronize)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CTRL+R (Re-synchronize)
@@ -65,8 +64,7 @@ CTRL+ALT+R
 
 For other methods of re-establishing contact with the target, see [Synchronizing with the Target Computer](synchronizing-with-the-target-computer.md).
 
-Remarks
--------
+## Remarks
 
 This attempts to synchronize the host computer with the target computer. Use this key if the target is not responding.
 

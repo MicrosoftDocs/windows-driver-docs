@@ -1,8 +1,7 @@
 ---
 title: Provision a computer for driver deployment and testing (WDK 10)
 description: Provisioning a target or test computer is the process of configuring a computer for automatic driver deployment, testing, and debugging. To provision a computer, use Microsoft Visual Studio.
-ms.date: 05/08/2020
-ms.localizationpriority: medium
+ms.date: 10/29/2021
 ---
 
 # Provision a computer for driver deployment and testing (WDK 10)
@@ -13,8 +12,10 @@ A testing and debugging environment has two computers: the *host computer* and t
 
 The host and target computers must be able to ping each other by name. This might be easier if both computers are joined to the same workgroup or the same network domain. If your computers are in a workgroup, we recommend that you connect the computers with a router rather than a hub or switch.
 
+It is recommended that both the host and target run the same version of Windows.
+
 > [!TIP]
-> For the latest information on the WDK and known issues, see the  [WDK support forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=wdk).
+> For the latest information on the WDK and known issues, see the  [WDK support forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=wdk) and the [Windows Hardware Q&A Forum](/answers/topics/windows-hardware.html).
 
 ## Prepare the target computer for provisioning
 
@@ -24,7 +25,7 @@ The host and target computers must be able to ping each other by name. This migh
 
 3. If Secure Boot is enabled on an x86 or x64 target computer, disable it. For information about Unified Extensible Firmware Interface (UEFI) and Secure Boot, see [UEFI Firmware](/previous-versions/windows/it-pro/windows-8.1-and-8/hh824898(v=win.10)).
 
-    If the target computer uses an ARM processor, install the Windows Debug Policy. This can be done only by Microsoft or the manufacturer of the target computer. You do not need to disable Secure Boot.
+    If the target computer uses an Arm processor, install the Windows Debug Policy. This can be done only by Microsoft or the manufacturer of the target computer. You do not need to disable Secure Boot.
 
 4. On the target computer, run the WDK Test Target Setup MSI that matches the platform of the target computer. You can find the MSI in the Windows Driver Kit (WDK) installation directory under Remote.
 
@@ -57,13 +58,13 @@ Now you're ready to provision the target computer from the host computer in Visu
 
 3. For **Network host name**, enter the name or local IP address of your target computer. Select **Provision device and choose debugger settings**.
 
-    ![screen shot of device configuration dialog box](images/vs2015-device-configuration.png)
+    :::image type="content" source="images/vs2019-device-configuration.png" alt-text="Screen shot of device configuration dialog box.":::
 
 4. Select **Next**.
 
 5. Select a type of debugging connection, and enter the required parameters.
 
-    For more information about setting up debugging over various types of connections, see [Setting Up Kernel-Mode Debugging Manually](../debugger/setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md) in the CHM or online documentation for [Debugging Tools for Windows](../debugger/index.md).
+    For more information about setting up debugging over various types of connections, see [Setting Up KDNET Network Kernel Debugging Manually](../debugger/setting-up-a-network-debugging-connection.md) and the related  documentation for the [Debugging Tools for Windows](../debugger/index.md).
 
 6. The provisioning process takes several minutes and might automatically reboot the target computer once or twice. When provisioning is complete, select **Finish**.
 
@@ -73,3 +74,6 @@ Now you're ready to provision the target computer from the host computer in Visu
 ## See Also
 
 [Deploying a Driver to a Test Computer](../develop/deploying-a-driver-to-a-test-computer.md)
+
+[When you provision a computer (WDK 8.1)](../develop/what-happens-when-you-provision-a-computer--wdk-8-1-.md)
+

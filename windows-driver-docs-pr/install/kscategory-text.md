@@ -10,7 +10,6 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,13 +43,11 @@ The KSCATEGORY_TEXT [device interface class](./overview-of-device-interface-clas
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_TEXT to indicate that the devices support the KSCATEGORY_TEXT functional category.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -14,7 +14,6 @@ keywords:
 - backup privileges WDK file systems
 - restore privileges WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing privileges in a file system

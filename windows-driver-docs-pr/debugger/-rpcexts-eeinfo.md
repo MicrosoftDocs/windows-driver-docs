@@ -9,7 +9,6 @@ api_name:
 - rpcexts.eeinfo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rpcexts.eeinfo
@@ -52,8 +51,7 @@ Specifies the address of the extended error information.
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](rpc-debugging.md).
 
-Remarks
--------
+## Remarks
 
 This extension displays the contents of all records in the extended error information chain.
 

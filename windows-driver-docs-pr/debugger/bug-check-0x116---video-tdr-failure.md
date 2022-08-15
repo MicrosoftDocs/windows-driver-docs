@@ -9,7 +9,6 @@ api_name:
 - VIDEO_TDR_FAILURE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x116: VIDEO\_TDR\_FAILURE
@@ -57,8 +56,7 @@ The VIDEO\_TDR\_FAILURE bug check has a value of 0x00000116. This indicates that
 
 
 
-Cause
------
+## Cause
 
 A common stability problem in graphics occurs when the system appears completely frozen or hung while processing an end-user command or operation. Usually the GPU is busy processing intensive graphics operations, typically during game-play. No screen updates occur, and users assume that their system is frozen. Users usually wait a few seconds and then reboot the system by pressing the power button. Windows tries to detect these problematic hang situations and dynamically recover a responsive desktop.
 
@@ -72,8 +70,7 @@ If the recovery process is successful, a message will be displayed, indicating t
 
 For more information, see Timeout Detection and Recovery (TDR), [TDR Registry Keys](../display/tdr-registry-keys.md) and [TDR changes in Windows 8](../display/tdr-changes-in-windows-8.md) which are located in [Timeout Detection and Recovery (TDR)](../display/timeout-detection-and-recovery.md).
 
-Resolution
-----------
+## Resolution
 
 The GPU is taking more time than permitted to display graphics to your monitor. This behavior can occur for one or more of the following reasons:
 
@@ -215,8 +212,7 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
-Remarks
--------
+## Remarks
 
 **Hardware certification requirements**
 

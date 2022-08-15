@@ -3,7 +3,6 @@ title: Stopping a Device to Rebalance Resources
 description: Stopping a Device to Rebalance Resources
 keywords: ["rebalancing resources WDK PnP", "resource rebalancing WDK PnP", "pausing PnP devices"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Stopping a Device to Rebalance Resources
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 The following figure shows the sequence of IRPs involved in stopping and restarting a device to rebalance resources.
 
-![diagram illustrating stopping a device to rebalance resources](images/stop-irps.png)
+![diagram illustrating stopping a device to rebalance resources.](images/stop-irps.png)
 
 The following notes correspond to the circled numbers in the previous figure:
 

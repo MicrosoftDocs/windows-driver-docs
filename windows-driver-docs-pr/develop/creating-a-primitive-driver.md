@@ -1,8 +1,7 @@
 ---
 title: Creating a primitive driver
 description: Use a primitive driver to handle and manage software that uses INF-based installation but are not necessarily tied to a particular hardware device.
-ms.date: 04/16/2019
-ms.localizationpriority: medium
+ms.date: 03/08/2022
 ms.custom: 19H1
 ---
 
@@ -16,7 +15,7 @@ Prior to Windows 10 version 1903, certain types of software that used INF-based 
 
 Because these pieces of software were not tied to a hardware device, they would install on the whole system regardless of hardware. As a result, there was no guarantee that these pieces of software were properly installed, uninstalled, or handled on OS upgrade.
 
-To improve reliability and guarantee proper behavior of these types of software, especially during OS upgrade and reset scenarios, the Plug and Play platform--starting with Windows 10 version 1903--now handles and manages this type of software package as a top-level entity.
+Starting with Windows 10 version 1903, the Plug and Play platform handles and manages this type of software package as a top-level entity, resulting in improved reliability and guaranteed proper behavior of such software, especially during OS upgrade and reset scenarios.
 
 The types of software that leverage this new platform support are called **primitive drivers.** Primitive drivers continue to use INF-based installation and the underlying platform makes use of the [Driver Store](../install/driver-store.md) to keep track of all relevant files.
 
@@ -44,7 +43,7 @@ Primitive drivers use the same installation and uninstallation APIs as device dr
 
 * \[DefaultInstall\] sections must be architecture decorated, and no undecorated versions may be present.
 
-  * **Correct:** \[DefaultInstall.amd64\]
+  * **Correct:** \[DefaultInstall.NTamd64\]
 
   * **Incorrect:** \[DefaultInstall\]
 
@@ -54,7 +53,7 @@ Primitive drivers use the same installation and uninstallation APIs as device dr
 
 Primitive drivers targeted only for Windows 10 version 1903 and later should use [DiInstallDriver](/windows/win32/api/newdev/nf-newdev-diinstalldriverw) and [DiUninstallDriver](/windows/win32/api/newdev/nf-newdev-diuninstalldriverw) to properly install and uninstall their software in/from the driver store.
 
-Drivers should also use Dirid 13 to properly specify the Driver Store as the desired destination to be installed. For more information about Dirids, see [Using Dirids](../install/using-dirids.md).
+Drivers should also use [Dirid 13](../install/using-dirids.md) to properly specify the Driver Store as the desired destination to be installed.
 
 ## Legacy Compatibility
 
@@ -68,14 +67,13 @@ LegacyUninstall=1
 The \[DefaultInstall\] and \[DefaultUninstall\] sections **must still be architecture decorated**; however, by including the `LegacyUninstall=1`, Windows ignores the \[DefaultUninstall\] section (in Windows 10 version 1903 and later). By doing so, you can include that section in your INF, where it can be used down-level with a legacy install/uninstall application in order to uninstall the primitive driver package.
 
 Beginning with Windows 10 version 1903, if you pass an architecture-decorated \[DefaultInstall\] or
-\[DefaultUninstall\] section in to the [InstallHInfSection](/windows/win32/api/setupapi/nf-setupapi-installhinfsectionw) API in setupapi.dll, the driver package will be checked to determine if it supports primitive driver functionality. If it does support primitive driver functionality, rather than process the specified section in the legacy way, the INF is passed to [DiInstallDriver](/windows/win32/api/newdev/nf-newdev-diinstalldrivera) or [DiUninstallDriver](/windows/win32/api/newdev/nf-newdev-diuninstalldriverw), as appropriate. 
-This way, a single installer can make use of primitive drivers on compatible OS versions and maintain support for previous OS versions.
+\[DefaultUninstall\] section in to the [InstallHInfSection](/windows/win32/api/setupapi/nf-setupapi-installhinfsectionw) API in setupapi.dll, the driver package will be checked to determine if it supports primitive driver functionality. If it does support primitive driver functionality, rather than process the specified section in the legacy way, the INF is passed to [DiInstallDriver](/windows/win32/api/newdev/nf-newdev-diinstalldrivera) or [DiUninstallDriver](/windows/win32/api/newdev/nf-newdev-diuninstalldriverw), as appropriate. This way, a single installer can make use of primitive drivers on compatible OS versions and maintain support for previous OS versions.
 
 ## Converting from a device driver INF
 
 Converting an INF that uses \[Manufacturer\] to one that uses \[DefaultInstall\] requires minor changes to the INF. Unlike a \[Manufacturer\] section, a \[DefaultInstall\] section is both an entry point and an install section. This conceptually combines the \[Manufacturer\], \[Models\], and \[DDInstall\] section into one.
 
-Consider the following device driver INF:
+The following INF will receive an 1297 error in [InfVerif](../devtest/infverif.md) because it doesn't install on any hardware:
 
 ```ini
 [Manufacturer]
@@ -102,7 +100,7 @@ AddReg = MyAddReg
 AddService = MyService,, MyService_Install
 ```
 
-This INF will receive an 1297 error in [InfVerif](../devtest/infverif.md) because it doesn't install on any hardware. This INF can be converted to a \[DefaultInstall\]-based INF, as shown below.
+The above INF can be converted to a \[DefaultInstall\]-based INF, as shown below.
 
 ```ini
 [DefaultInstall.NTamd64]

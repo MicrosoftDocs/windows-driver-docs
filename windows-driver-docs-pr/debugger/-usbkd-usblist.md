@@ -9,7 +9,6 @@ api_name:
 - usbkd.usblist
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usblist
@@ -53,8 +52,7 @@ One of the following list types.
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of a linked list. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 

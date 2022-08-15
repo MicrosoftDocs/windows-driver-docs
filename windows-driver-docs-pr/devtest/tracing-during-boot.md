@@ -8,7 +8,6 @@ keywords:
 - kernel-mode software tracing WDK
 - boot-time tracing WDK , about boot-time tracing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tracing During Boot
@@ -26,7 +25,7 @@ This section describes the following methods of tracing during boot:
 
 -   [Logging to the Global Logger Session](logging-to-the-global-logger-session.md)
 
-    Traces the activity of a driver, or other trace provider, during boot. The provider must be instrumented for tracing. Only one Global Logger session can run at a time. This feature is available in Windows 2000 and later versions of Windows.
+    Traces the activity of a driver, or other trace provider, during boot. The provider must be instrumented for tracing. Only one Global Logger session can run at a time. 
 
 -   **AutoLogger**
 

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_VIDEODECODER\_OUTPUT\_ENABLE
@@ -56,13 +55,11 @@ The KSPROPERTY\_VIDEODECODER\_OUTPUT\_ENABLE property controls the three-state o
 
 The property value (operation data) is a ULONG that specifies the three-state output enable setting. A value of zero indicates three-state output. A nonzero value indicates that the device is actively driving the video port bus.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEODECODER\_S structure specifies the three-output enable setting.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -80,7 +77,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_VIDEODECODER\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videodecoder_s)
 

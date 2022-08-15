@@ -9,7 +9,6 @@ api_name:
 - StorPortFindAdapter
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortFindAdapter rule (storport)
@@ -19,8 +18,7 @@ The [**HwStorFindAdapter**](/windows-hardware/drivers/ddi/storport/nc-storport-h
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

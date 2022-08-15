@@ -6,7 +6,6 @@ keywords:
 - sections WDK printer
 - CopyFiles directive
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Printer INF File CopyFiles Sections

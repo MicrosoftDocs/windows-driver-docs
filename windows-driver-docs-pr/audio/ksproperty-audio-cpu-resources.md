@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_CPU\_RESOURCES
@@ -66,8 +65,7 @@ This node implements its functionality in hardware.
 
 A KSPROPERTY\_AUDIO\_CPU\_RESOURCES property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 This property is used to determine whether the following node types are implemented in hardware or software:
 
@@ -77,8 +75,7 @@ This property is used to determine whether the following node types are implemen
 
 -   Peakmeter node ([**KSNODETYPE\_PEAKMETER**](ksnodetype-peakmeter.md))
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

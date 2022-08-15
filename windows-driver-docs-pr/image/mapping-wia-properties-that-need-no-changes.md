@@ -2,7 +2,6 @@
 title: Mapping WIA Properties That Need No Changes
 description: Mapping WIA Properties That Need No Changes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Mapping WIA Properties That Need No Changes

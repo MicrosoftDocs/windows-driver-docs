@@ -2,7 +2,6 @@
 title: Videos Debugging KMDF Drivers
 description: This topic contains links to a three part video series by Kumar Rajeev that demonstrates how to debug Kernel-Mode Driver Framework (KMDF) drivers.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Videos: Debugging KMDF Drivers

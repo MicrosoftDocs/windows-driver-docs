@@ -4,7 +4,6 @@ description: All PnP drivers must handle this IRP.
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_SURPRISE_REMOVAL Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_SURPRISE\_REMOVAL
@@ -16,13 +15,11 @@ All PnP drivers must handle this IRP.
 
 0x17
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP to notify the drivers for a device that the device is no longer available for I/O operations. This IRP is sent on Windows 2000 and later systems only.
 
@@ -49,8 +46,7 @@ None
 
 A driver must set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS. A driver must not fail this IRP.
 
-Operation
----------
+## Operation
 
 This IRP is handled first by the driver at the top of the device stack and then passed down to each lower driver in the stack.
 
@@ -60,8 +56,7 @@ For more information about this IRP, see [Handling an IRP\_MN\_SURPRISE\_REMOVAL
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

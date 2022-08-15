@@ -3,7 +3,6 @@ title: Debug Break
 description: Debug Break
 keywords: ["Debug Break", "controlling the target, Debug Break"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Break
@@ -18,7 +17,7 @@ In user mode, this command stops the process and its threads, enabling you to re
 
 You can also use this command while the debugger is active. In this situation, the command will truncate long [Debugger Command window](debugger-command-window.md) displays.
 
-The **Break** command is equivalent to pressing CTRL+BREAK or clicking the **Break (Ctrl+Break)** button (![screen shot of the break button](images/tbbreak.png)) on the toolbar.
+The **Break** command is equivalent to pressing CTRL+BREAK or clicking the **Break (Ctrl+Break)** button (![screen shot of the break button.](images/tbbreak.png)) on the toolbar.
 
 ### <span id="ALT_DEL"></span><span id="alt_del"></span>ALT+DEL
 

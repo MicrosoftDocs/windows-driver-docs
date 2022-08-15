@@ -2,7 +2,6 @@
 title: InfVerif Error 1330
 description: InfVerif (InfVerif.exe) is a tool that you can use to test a driver INF file. In addition to reporting INF syntax problems, the tool reports if the INF file is universal.
 ms.date: 03/05/2019
-ms.localizationpriority: medium
 ---
 
 # InfVerif Error 1330 - 1333

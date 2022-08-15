@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPS\_YRES
-description: The WIA\_IPS\_YRES property contains the current vertical resolution setting, in pixels per inch, for a device.
+title: WIA_IPS_YRES
+description: The WIA_IPS_YRES property contains the current vertical resolution setting, in pixels per inch, for a device.
 keywords: ["WIA_IPS_YRES Imaging Devices"]
 topic_type:
 - apiref
@@ -10,68 +10,39 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/05/2021
 ---
 
-# WIA\_IPS\_YRES
+# WIA_IPS_YRES
 
+The WIA_IPS_YRES property contains the current vertical resolution setting, in pixels per inch, for a device.
 
-The WIA\_IPS\_YRES property contains the current vertical resolution setting, in pixels per inch, for a device.
+Property Type: VT_I4
 
-## <span id="ddk_wia_ips_yres_si"></span><span id="DDK_WIA_IPS_YRES_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_RANGE or WIA\_PROP\_LIST
+Valid Values: WIA_PROP_RANGE or WIA_PROP_LIST
 
 Access Rights: Read/write or read-only
 
-Remarks
--------
+## Remarks
 
-An application sets the WIA\_IPS\_YRES property to set the vertical resolution. The WIA minidriver creates and maintains this property.
+An application sets the WIA_IPS_YRES property to set the vertical resolution. The WIA minidriver creates and maintains this property.
 
-If a device can be set to only a single value, create a WIA\_PROP\_LIST type and place the valid value in it. This situation also applies when one resolution setting depends on another resolution. (For example, the vertical resolution can depend on the horizontal resolution.)
+If a device can be set to only a single value, create a WIA_PROP_LIST type and place the valid value in it. This situation also applies when one resolution setting depends on another resolution. (For example, the vertical resolution can depend on the horizontal resolution.)
 
-WIA\_IPS\_YRES is required for all image acquisition-enabled items and stored image items; it is not available for storage items.
+WIA_IPS_YRES is required for all image acquisition-enabled items and stored image items; it is not available for storage items.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
+[**WIA_IPS_XEXTENT**](wia-ips-xextent.md)
 
-[**WIA\_IPS\_XEXTENT**](wia-ips-xextent.md)
+[**WIA_IPS_XPOS**](wia-ips-xpos.md)
 
-[**WIA\_IPS\_XPOS**](wia-ips-xpos.md)
+[**WIA_IPS_XRES**](wia-ips-xres.md)
 
-[**WIA\_IPS\_XRES**](wia-ips-xres.md)
+[**WIA_IPS_YEXTENT**](wia-ips-yextent.md)
 
-[**WIA\_IPS\_YEXTENT**](wia-ips-yextent.md)
-
-[**WIA\_IPS\_YPOS**](wia-ips-ypos.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_IPS_YPOS**](wia-ips-ypos.md)

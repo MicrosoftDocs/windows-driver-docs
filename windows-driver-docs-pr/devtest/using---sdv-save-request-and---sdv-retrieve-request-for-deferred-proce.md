@@ -9,7 +9,6 @@ keywords:
 - AliasWithinDispatch
 - analyzing DPCs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using \_\_sdv\_save\_request and \_\_sdv\_retrieve\_request for Deferred Procedure Calls

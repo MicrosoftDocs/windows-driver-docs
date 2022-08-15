@@ -6,7 +6,6 @@ keywords:
 - virtual machine queue (VMQ) WDK NDIS 6.20
 - VMQ WDK NDIS 6.20
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Virtual Machine Queue (VMQ) in NDIS 6.20
@@ -27,7 +26,7 @@ The VMQ interface in NDIS 6.20 and later supports:
 
 Microsoft Hyper-V network performance enhancements also provide chimney support for Hyper-V child partitions with no driver changes.
 
-For more information about VMQ, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md).
+For more information about VMQ, see [Virtual Machine Queue (VMQ)](virtual-machine-queue-architecture.md).
 
  
 

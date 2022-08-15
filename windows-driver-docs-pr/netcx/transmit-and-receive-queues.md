@@ -4,7 +4,6 @@ description: Transmit and receive queues
 keywords:
 - NetAdapterCx transmit and receive queues, NetCx transmit and receive queues
 ms.date: 01/24/2019
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
@@ -163,7 +162,7 @@ EvtAdapterCreateRxQueue(
 
 The NetAdapter data path is a polling model, and the polling operation on one packet queue is completely independent of other queues. The polling model is implemented by calling the client driver's queue advance callbacks, as shown in the following figure:
 
-![Polling Flow](images/polling.png)
+![Polling Flow.](images/polling.png)
 
 ## Advancing packet queues
 

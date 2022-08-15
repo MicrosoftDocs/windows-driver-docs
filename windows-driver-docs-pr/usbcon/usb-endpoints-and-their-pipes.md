@@ -2,7 +2,6 @@
 description: A USB device has endpoints that are used to for data transfers.
 title: USB endpoints and their pipes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB endpoints and their pipes
@@ -40,7 +39,7 @@ A pipe for an endpoint is opened when the device is configured either by selecti
 
 An unconfigured endpoint is called an endpoint while a configured endpoint is called a pipe.
 
-![usb pipes and endpoints](images/endpoints.png)
+![usb pipes and endpoints.](images/endpoints.png)
 
 ## Related topics
 [Concepts for all USB developers](usb-concepts-for-all-developers.md)  

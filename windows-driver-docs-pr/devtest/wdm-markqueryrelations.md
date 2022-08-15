@@ -9,7 +9,6 @@ api_name:
 - MarkQueryRelations
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # MarkQueryRelations rule (wdm)
@@ -21,8 +20,7 @@ This rule only applies to FDO and FIDO device object of the bus driver when proc
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoAcquireRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioacquireremovelock)
 [**IoAllocateIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp)

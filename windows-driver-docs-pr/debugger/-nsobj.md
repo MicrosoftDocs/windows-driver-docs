@@ -1,5 +1,5 @@
 ---
-title: nsobj
+title: nsobj (WinDbg)
 description: The nsobj extension displays an ACPI namespace object.
 keywords: ["nsobj Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - nsobj
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !nsobj
@@ -37,8 +36,7 @@ Kdexts.dll
 
 For more information, see [ACPI Debugging](acpi-debugging.md).
 
-Remarks
--------
+## Remarks
 
 This extension is equivalent to [**!amli dns**](-amli-dns.md).
 

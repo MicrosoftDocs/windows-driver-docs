@@ -2,7 +2,6 @@
 title: SIM toolkit Overview
 description: SIM toolkit Overview
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SIM toolkit Overview
@@ -25,7 +24,7 @@ Both the SIM toolkit service and user interface are provided by Microsoft.
 
 The following diagram illustrates the main components of SIM toolkit.
 
-![sim toolkit components](images/sim-toolkit-components.png)
+![sim toolkit components.](images/sim-toolkit-components.png)
 
 ### SIM toolkit service
 

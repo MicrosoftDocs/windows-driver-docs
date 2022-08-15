@@ -5,25 +5,20 @@ keywords:
 - installation applications WDK , preinstall driver packages
 - device installation applications WDK , preinstall driver packages
 - preinstalled drivers WDK device installations
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 03/11/2022
 ---
 
 # Preinstalling Driver Packages
 
+To preinstall driver package files, your *device installation application* should follow these steps:
 
-
-
-
-To preinstall driver files, your *device installation application* should follow these steps:
-
-1.  On the target system, create a directory for the driver files. If your device installation application installs an application, the driver files should be stored in a subdirectory of the application directory.
+1.  On the target system, create a directory for the driver package files. If your device installation application installs an application, the driver package files should be stored in a subdirectory of the application directory.
 
 2.  Copy all files in the [driver package](driver-packages.md) from the distribution media to the directory that is created in step (1). The driver package includes the driver or drivers, the INF file, the catalog file, and other installation files.
 
-3.  Call [SetupCopyOEMInf](/windows/win32/api/setupapi/nf-setupapi-setupcopyoeminfa) specifying the INF file in the directory that was created in step (1). Specify SPOST_PATH for the *OEMSourceMediaType* parameter and specify **NULL** for the *OEMSourceMediaLocation* parameter. [SetupCopyOEMInf](/windows/win32/api/setupapi/nf-setupapi-setupcopyoeminfa) copies the INF file for the driver package into the *%SystemRoot%\\Inf* directory on the target system and directs Windows to store the source location of the INF file in its list of preprocessed INF files. [SetupCopyOEMInf](/windows/win32/api/setupapi/nf-setupapi-setupcopyoeminfa) also processes the catalog file, so the PnP manager will install the driver the next time that it recognizes a device that is listed in the INF file.
+3.  Call [SetupCopyOEMInf](/windows/win32/api/setupapi/nf-setupapi-setupcopyoeminfa) specifying the INF file in the directory that was created in step (1). Specify SPOST_PATH for the *OEMSourceMediaType* parameter and specify **NULL** for the *OEMSourceMediaLocation* parameter. [SetupCopyOEMInf](/windows/win32/api/setupapi/nf-setupapi-setupcopyoeminfa) stages the driver package into the [Driver Store](driver-store.md).
 
-When the user plugs in the device, the PnP manager recognizes the device, finds the INF file copied by [SetupCopyOEMInf](/windows/win32/api/setupapi/nf-setupapi-setupcopyoeminfa), and installs the drivers copied in step (2). (For more information about copying INF files, see [Copying INFs](copying-inf-files.md).)
+When the user plugs in the device, the PnP manager recognizes the device, finds the driver package staged by [SetupCopyOEMInf](/windows/win32/api/setupapi/nf-setupapi-setupcopyoeminfa), and installs the driver package on the device.
 
  
 

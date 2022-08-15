@@ -9,7 +9,6 @@ api_name:
 - CTRL+C (Break)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CTRL+C (Break)
@@ -73,8 +72,7 @@ F12
 
 For other methods of issuing this command and an overview of related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 **When Using CDB:**
 

@@ -1,5 +1,5 @@
 ---
-title: memusage
+title: memusage (WinDbg)
 description: The memusage extension displays summary statistics about physical memory use.
 keywords: ["memusage Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - memusage
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !memusage
@@ -127,8 +126,7 @@ Control Valid Standby Dirty Shared Locked PageTables  name
 
 The first column displays the address of the control area structure that describes each mapped structure. Use the [**!ca**](-ca.md) extension command to display these control areas.
 
-Remarks
--------
+## Remarks
 
 You can use the [**!vm**](-vm.md) extension command to analyze virtual memory use. This extension is typically more useful than **!memusage**. For more information about memory management, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 

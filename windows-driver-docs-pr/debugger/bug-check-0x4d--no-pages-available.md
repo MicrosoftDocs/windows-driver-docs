@@ -9,7 +9,6 @@ api_name:
 - NO_PAGES_AVAILABLE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x4D: NO\_PAGES\_AVAILABLE
@@ -31,8 +30,7 @@ The NO\_PAGES\_AVAILABLE bug check has a value of 0x0000004D. This indicates tha
 |4|The most recent modified write error status.|
 
 
-Cause
------
+## Cause
 
 To see general memory statistics, use the [**!vm 3**](-vm.md) extension.
 

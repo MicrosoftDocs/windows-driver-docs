@@ -9,7 +9,6 @@ api_name:
 - InternalIoctlReqs
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # InternalIoctlReqs rule (kmdf)
@@ -21,8 +20,7 @@ All requests presented to the driver in the EVT\_WDF\_IO\_QUEUE\_IO\_INTERNAL\_D
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfIoTargetSendIoctlSynchronously**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetsendioctlsynchronously)
 [**WdfIoTargetSendReadSynchronously**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetsendreadsynchronously)

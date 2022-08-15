@@ -11,7 +11,6 @@ keywords:
 - display driver model WDK Windows 2000 , Direct3D
 - Windows 2000 display driver model WDK , Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Direct3D DDI

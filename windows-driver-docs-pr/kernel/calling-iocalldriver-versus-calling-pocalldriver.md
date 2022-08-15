@@ -3,7 +3,6 @@ title: Calling IoCallDriver versus Calling PoCallDriver
 description: Calling IoCallDriver versus Calling PoCallDriver
 keywords: ["PoCallDriver", "active power IRPs WDK kernel", "power IRPs WDK kernel , IoCallDriver versus PoCallDriver"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Calling IoCallDriver versus Calling PoCallDriver

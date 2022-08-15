@@ -9,7 +9,6 @@ api_name:
 - s (Set Current System)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ||s (Set Current System)
@@ -55,8 +54,7 @@ Specifies the system number to activate. For more information about the syntax, 
 
  
 
-Remarks
--------
+## Remarks
 
 The **||s** command is useful when you are debugging multiple targets or working with multiple dump files.  For more information about these kinds of sessions, see [Debugging Multiple Targets](debugging-multiple-targets.md).
 

@@ -4,7 +4,6 @@ description: The NDIS_STATUS_RESET_START status indicates that a miniport adapte
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_RESET_START Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_RESET\_START
@@ -12,8 +11,7 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_RESET\_START status indicates that a miniport adapter is being reset.
 
-Remarks
--------
+## Remarks
 
 Miniport drivers should not call the [**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) function to signal the start and finish of each reset operation because NDIS notifies overlying drivers when a reset operation begins and ends.
 
@@ -25,8 +23,7 @@ When a protocol driver receives an NDIS\_STATUS\_RESET\_START status indication,
 
 -   Not make any NDIS calls that are directed to the underlying miniport driver, except calls to return resources such as received data buffers with the [**NdisReturnNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisreturnnetbufferlists) function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -5,7 +5,6 @@ keywords:
 - data copying WDK audio
 - copying audio data
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Avoiding Data Copying

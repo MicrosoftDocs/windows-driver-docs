@@ -9,7 +9,6 @@ api_name:
 - AGP_INVALID_ACCESS
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x104: AGP\_INVALID\_ACCESS
@@ -57,13 +56,11 @@ The AGP\_INVALID\_ACCESS bug check has a value of 0x00000104. This indicates tha
 
  
 
-Cause
------
+## Cause
 
 Typically, this bug check is caused by an unsigned or improperly tested video driver. It can also be caused by an old BIOS.
 
-Resolution
-----------
+## Resolution
 
 Check for display driver and computer BIOS updates.
 

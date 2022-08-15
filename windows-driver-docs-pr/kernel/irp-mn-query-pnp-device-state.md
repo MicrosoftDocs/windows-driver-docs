@@ -4,7 +4,6 @@ description: Function, filter, and bus drivers can handle this request.
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_QUERY_PNP_DEVICE_STATE Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE
@@ -16,13 +15,11 @@ Function, filter, and bus drivers can handle this request.
 
 0x14
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP after the drivers for a device return success from the [**IRP\_MN\_START\_DEVICE**](irp-mn-start-device.md) request sent when a device is first started. This IRP is not sent on a start after a stop for resource rebalancing. The PnP manager also sends this IRP when a driver for the device calls [**IoInvalidateDeviceState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicestate).
 
@@ -46,12 +43,11 @@ A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriat
 On success, a driver sets **Irp-&gt;IoStatus.Information** to a [**PNP\_DEVICE\_STATE**](./handling-an-irp-mn-surprise-removal-request.md#about-pnp_device_state) bitmask.
 
 
-If a function or filter driver does not handle this IRP, it calls [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md), does not set an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine, and passes the IRP down to the next driver. Such a driver must not modify **Irp-&gt;IoStatus** and must not complete the IRP.
+If a function or filter driver does not handle this IRP, it calls [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation), does not set an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine, and passes the IRP down to the next driver. Such a driver must not modify **Irp-&gt;IoStatus** and must not complete the IRP.
 
 If a bus driver does not handle this IRP, it leaves **Irp-&gt;IoStatus.Status** as is and completes the IRP.
 
-Operation
----------
+## Operation
 
 This IRP is handled first by the driver at the top of the device stack and then by each next lower driver in the stack.
 
@@ -63,8 +59,7 @@ See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules fo
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

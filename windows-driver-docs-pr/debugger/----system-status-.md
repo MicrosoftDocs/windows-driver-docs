@@ -9,7 +9,6 @@ api_name:
 - (System Status)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # || (System Status)
@@ -54,8 +53,7 @@ Specifies the system to display. If you omit this parameter, all systems that yo
 
  
 
-Remarks
--------
+## Remarks
 
 The **||** command is useful only when you are debugging multiple targets. Many, but not all, multiple-target debugging sessions involve multiple systems. For more information about these sessions, see [Debugging Multiple Targets](debugging-multiple-targets.md).
 

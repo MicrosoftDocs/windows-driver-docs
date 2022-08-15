@@ -4,7 +4,6 @@ description: WSK_TDI_BEHAVIOR
 ms.date: 07/18/2017
 keywords:
  - WSK_TDI_BEHAVIOR Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WSK\_TDI\_BEHAVIOR
@@ -76,8 +75,7 @@ The *Irp* parameter must be **NULL** for this client control operation.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -9,7 +9,7 @@ api_name:
 - (Evaluate C++ Expression)
 api_type:
 - NA
-ms.localizationpriority: medium
+adobe-target: true
 ---
 
 # ?? (Evaluate C++ Expression)
@@ -52,8 +52,7 @@ Specifies the C++ expression to evaluate. For more information about the syntax,
 
  
 
-Remarks
--------
+## Remarks
 
 The **??** command evaluates symbols in the expression in the context of the current thread and process.
 

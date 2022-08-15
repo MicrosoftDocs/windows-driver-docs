@@ -1,5 +1,5 @@
 ---
-title: process
+title: process (WinDbg)
 description: The process extension displays information about the specified process, or about all processes, including the EPROCESS block.
 keywords: ["process Windows Debugging"]
 ms.date: 08/02/2018
@@ -9,7 +9,6 @@ api_name:
 - process
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !process
@@ -71,8 +70,7 @@ Kdexts.dll
 
 For information about processes in kernel mode, see [Changing Contexts](changing-contexts.md). For more information about analyzing processes and threads, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The following is an example of a **!process 0 0** display:
 

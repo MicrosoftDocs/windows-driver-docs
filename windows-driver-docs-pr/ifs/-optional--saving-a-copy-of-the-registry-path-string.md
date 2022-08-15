@@ -6,7 +6,6 @@ keywords:
 - saving RegistryPath string copies
 - copying RegistryPath strings
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # \[Optional\] Saving a Copy of the Registry Path String

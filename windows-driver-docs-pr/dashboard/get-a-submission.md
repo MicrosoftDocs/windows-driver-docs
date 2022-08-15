@@ -3,7 +3,6 @@ title: Get a submission
 description: Retrieves data for a specific submission of a product to the hardware dashboard in the Microsoft Partner Center.
 ms.topic: article
 ms.date: 04/05/2018
-ms.localizationpriority: medium
 ---
 
 # Get a submission
@@ -111,4 +110,4 @@ For more info, see [Error codes](get-product-data.md#error-codes).
 
 ## See also
 
-- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+- [hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

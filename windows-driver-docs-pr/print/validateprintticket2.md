@@ -2,7 +2,6 @@
 title: ValidatePrintTicket print ticket support
 description: This method is called by the print subsystem to validate the contents and format of a PrintTicket object.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ValidatePrintTicket print ticket support

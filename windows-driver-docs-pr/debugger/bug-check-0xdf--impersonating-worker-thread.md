@@ -9,7 +9,6 @@ api_name:
 - IMPERSONATING_WORKER_THREAD
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xDF: IMPERSONATING\_WORKER\_THREAD
@@ -57,8 +56,7 @@ The IMPERSONATING\_WORKER\_THREAD bug check has a value of 0x000000DF. This indi
 
  
 
-Cause
------
+## Cause
 
 A worker thread was impersonating another process, and failed to disable impersonation before it returned.
 

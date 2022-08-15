@@ -9,7 +9,6 @@ api_name:
 - IrqlKeDispatchLte
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlKeDispatchLte rule (wdm)
@@ -56,8 +55,7 @@ The **IrqlKeDispatchLte** rule specifies that the driver calls the following ker
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x00020011)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -100,8 +98,7 @@ Use the following steps to run an analysis of your code:
 
  
 
-Applies to
-----------
+## Applies to
 
 [**KeAcquireSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock)
 [**KeCancelTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kecanceltimer)

@@ -9,11 +9,10 @@ api_name:
 - BCDEdit /displayorder
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
-BCDEdit /displayorder
-============
+# BCDEdit /displayorder
+
 
 The **/displayorder** command sets the display order to be used by the boot manager.
 

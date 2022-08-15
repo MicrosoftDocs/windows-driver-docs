@@ -4,7 +4,6 @@ description: As a query, overlying drivers use the OID_GEN_PCI_DEVICE_CUSTOM_PRO
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_PCI_DEVICE_CUSTOM_PROPERTIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_PCI\_DEVICE\_CUSTOM\_PROPERTIES
@@ -12,8 +11,7 @@ ms.localizationpriority: medium
 
 As a query, overlying drivers use the OID\_GEN\_PCI\_DEVICE\_CUSTOM\_PROPERTIES OID to get the PCI custom properties of a device.
 
-Remarks
--------
+## Remarks
 
 NDIS handles OID\_GEN\_PCI\_DEVICE\_CUSTOM\_PROPERTIES and miniport drivers do not receive an OID query.
 
@@ -23,8 +21,7 @@ NDIS returns an [**NDIS\_PCI\_DEVICE\_CUSTOM\_PROPERTIES**](/windows-hardware/dr
 
 For non-PCI miniport adapters, NDIS fails OID\_GEN\_PCI\_DEVICE\_CUSTOM\_PROPERTIES with the NDIS\_STATUS\_INVALID\_DEVICE\_REQUEST status code.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

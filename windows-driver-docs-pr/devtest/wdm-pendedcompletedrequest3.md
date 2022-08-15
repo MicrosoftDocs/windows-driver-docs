@@ -9,7 +9,6 @@ api_name:
 - PendedCompletedRequest3
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PendedCompletedRequest3 rule (wdm)
@@ -19,8 +18,7 @@ The **PendedCompletedRequest3** rule specifies that a pending IRP should not be 
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver)
 [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)

@@ -1,8 +1,7 @@
 ---
 title: UEFI in Windows
-description: UEFI in Windows
-ms.date: 05/26/2020
-ms.localizationpriority: medium
+description: Provides information about UEFI requirements for running Windows on SoC platforms.
+ms.date: 08/04/2021
 ---
 
 # UEFI in Windows
@@ -19,7 +18,7 @@ In addition to the implementation details outlined in the UEFI specification, th
 ## In this section
 
 | Topic | Description |
-| --- | --- |
+|--|--|
 | [Minimum UEFI requirements for Windows on SoC platforms](minimum-uefi-requirements-for-windows-on-soc-platforms.md) | Unified Extensible Firmware Interface (UEFI) is the required boot firmware for SoC platforms running Windows. This section describes UEFI implementation requirements for running Windows on SoC platforms. Observation and adherence to these requirements will help ensure proper functionality of Windows. |
 | [UEFI protocols for Windows](uefi-protocols-for-windows.md) | This section describes UEFI protocols that are defined by Windows. These protocols expand up on the protocols defined by the UEFI specification, and they are used by Windows to accomplish specific functions during the boot process. |
 | [Windows UEFI firmware update platform](windows-uefi-firmware-update-platform.md) | Windows supports a platform for installing system and device firmware updates via driver packages that are processed by using the UEFI UpdateCapsule function. This platform provides a consistent, reliable firmware update experience, and it improves the discoverability of important system firmware updates for end-users. |
@@ -28,7 +27,7 @@ In addition to the implementation details outlined in the UEFI specification, th
 
 The following diagram shows the main UEFI components for a Windows device
 
-![uefi components for windows phone](images/oem-uefi-components.png)
+![uefi components for windows phone.](images/oem-uefi-components.png)
 
 ## OEM components in the UEFI environment
 

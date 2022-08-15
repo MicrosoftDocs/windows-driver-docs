@@ -2,7 +2,6 @@
 title: Other ACPI namespace objects
 description: For some specific classes of device, there are requirements for additional ACPI namespace objects to appear under those devices in the namespace.
 ms.date: 05/22/2020
-ms.localizationpriority: medium
 ---
 
 # Other ACPI namespace objects
@@ -162,13 +161,11 @@ The [ACPI 5.0 specification](https://uefi.org/specifications) defines the addres
 
 **USB Ports**: Port number (1-n)
 
-
 USB devices connected to a particular port share the address of that port.
 
 If the device connected to a port is a composite USB device, functions within the composite device must use the following address:
 
 **USB function within a Composite USB device**: Port number of the port to which the composite device is connected, PLUS the first Interface number of the function. (Arithmetic addition).
-
 
 For more information, see [Identifying the Location of Internal Cameras](../devapps/identifying-the-location-of-internal-cameras.md).
 

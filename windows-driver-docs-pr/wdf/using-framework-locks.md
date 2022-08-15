@@ -13,7 +13,6 @@ keywords:
 - framework wait locks WDK KMDF
 - framework spin locks WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Framework Locks

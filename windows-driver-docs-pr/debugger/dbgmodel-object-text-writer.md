@@ -2,7 +2,6 @@
 title: Debugger Data Model - Text Wrtier Objects
 description: Writes text to files.
 ms.date: 12/13/2018
-ms.localizationpriority: medium
 ---
 # Text Writer Objects 
 ## Summary

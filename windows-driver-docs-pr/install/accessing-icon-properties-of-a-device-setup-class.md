@@ -2,7 +2,6 @@
 title: Accessing Icon Properties of a Device Setup Class
 description: Accessing Icon Properties of a Device Setup Class
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing Icon Properties of a Device Setup Class

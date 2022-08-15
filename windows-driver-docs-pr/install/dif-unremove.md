@@ -10,7 +10,6 @@ api_location:
 - Setupapi.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -92,8 +91,7 @@ If the class installer encounters an error, the installer should return an appro
 
 For more information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

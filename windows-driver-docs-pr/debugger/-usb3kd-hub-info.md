@@ -9,7 +9,6 @@ api_name:
 - usb3kd.hub_info
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usb3kd.hub\_info
@@ -32,8 +31,7 @@ Address of the device extension for the hub's functional device object (FDO).
 
 Usb3kd.dll
 
-Examples
---------
+## Examples
 
 To obtain the address of the device extension, look at the output of the [**!usb\_tree**](-usb3kd-usb-tree.md) command. In the following example, the address of the device extension for the root hub is 0xfffffa8005ad92d0.
 

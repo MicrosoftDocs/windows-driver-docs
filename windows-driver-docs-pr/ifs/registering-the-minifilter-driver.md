@@ -4,7 +4,6 @@ description: Registering the Minifilter Driver
 keywords:
 - registering minifilter drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering the Minifilter Driver

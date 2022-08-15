@@ -2,7 +2,6 @@
 title: Airplane mode radio management
 description: Starting with Windows 8, the Windows operating system provides support via HID, for airplane mode radio management controls.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Airplane mode radio management
@@ -28,7 +27,7 @@ Windows provides support for the following HID Usages on the Generic Desktop usa
 
 The following is an architectural diagram of the HID Client that provides support for Radio Management / Airplane Mode.
 
-![airplane mode architecture](images/airplane-mode.png)
+![airplane mode architecture.](images/airplane-mode.png)
 
 ShellHW Detection service (SHSVCD.dll) is the HID Client Driver/Service that runs in user mode and provides support for the Radio Management device. It monitors for the presence of a HID Top Level Collection of type
 

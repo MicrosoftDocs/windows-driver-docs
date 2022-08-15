@@ -2,7 +2,6 @@
 title: Device paging queues
 description: Various services exposed by the video memory manager can take a non-trivial amount of time to finish.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device paging queues
@@ -20,7 +19,7 @@ Generally the user mode driver wants to push the synchronization as far as possi
 
 To obtain a reference to the device paging fence object a new **GetDevicePagingFenceObjectCb**device driver interface (DDI) is added to the user mode driver. This is illustrated below:
 
-![device paging queues](images/device-paging-queues.1.png)
+![device paging queues.](images/device-paging-queues.1.png)
 
  
 

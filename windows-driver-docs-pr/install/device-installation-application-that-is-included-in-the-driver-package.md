@@ -2,11 +2,12 @@
 title: Device Installation Application Included in Driver Package
 description: Device Installation Application that is Included in the Driver Package
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Installation Application that is Included in the Driver Package
 
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 This method describes a way through which a co-installer, using [finish-install actions](finish-install-actions--windows-vista-and-later-.md), can start a *device installation application* to install device-specific applications.
 

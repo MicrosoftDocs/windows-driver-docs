@@ -4,7 +4,6 @@ description: WSK_SET_STATIC_EVENT_CALLBACKS
 ms.date: 07/18/2017
 keywords:
  - WSK_SET_STATIC_EVENT_CALLBACKS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WSK\_SET\_STATIC\_EVENT\_CALLBACKS
@@ -67,8 +66,7 @@ For more information about enabling and disabling a socket's event callback func
 
 The *Irp* parameter must be **NULL** for this client control operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

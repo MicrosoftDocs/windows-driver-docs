@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfextendwatchdog
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfextendwatchdog
@@ -42,8 +41,7 @@ KMDF 1
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The framework starts an internal watchdog timer every time it calls a power policy or power event callback function for a driver that is not power pageable (that is, the DO\_POWER\_PAGABLE bit is clear). If the callback function causes paging I/O and therefore blocks, the operating system hangs because no paging device is available to service the request.
 

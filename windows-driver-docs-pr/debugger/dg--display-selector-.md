@@ -9,7 +9,6 @@ api_name:
 - dg (Display Selector)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # dg (Display Selector)
@@ -55,8 +54,7 @@ Specifies the hexadecimal selector value of the last selector to be displayed. I
 
  
 
-Remarks
--------
+## Remarks
 
 No more than 256 selectors can be displayed by this command.
 

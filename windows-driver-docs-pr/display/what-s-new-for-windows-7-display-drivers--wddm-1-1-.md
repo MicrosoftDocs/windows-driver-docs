@@ -2,7 +2,6 @@
 title: What's new for Windows 7 display drivers (WDDM 1.1)
 description: What's new for Windows 7 display drivers (WDDM 1.1)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # What's new for Windows 7 display drivers (WDDM 1.1)

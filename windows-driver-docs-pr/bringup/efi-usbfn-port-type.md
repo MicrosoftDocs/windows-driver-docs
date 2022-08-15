@@ -1,13 +1,12 @@
 ---
 title: EFI_USBFN_PORT_TYPE
-description: EFI_USBFN_PORT_TYPE
-ms.date: 05/21/2020
-ms.localizationpriority: medium
+description: The EFI_USBFN_PORT_TYPE enumeration specifies the USB port type.
+ms.date: 08/23/2021
 ---
 
-# EFI\_USBFN\_PORT\_TYPE
+# EFI_USBFN_PORT_TYPE
 
-This enumeration specifies the USB port type.
+The **EFI_USBFN_PORT_TYPE** enumeration specifies the USB port type.
 
 ## Syntax
 
@@ -25,7 +24,7 @@ typedef enum _EFI_USBFN_PORT_TYPE
 ## Constants
 
 | Value | Description |
-| --- | --- |
+|--|--|
 | EfiUsbUnknownPort | Unknown Port - Driver internal default port type; this is never returned by the driver with a success status code. |
 | EfiUsbStandardDownstreamPort | Standard Downstream Port - Standard USB host. |
 | EfiUsbChargingDownstreamPort | Charging Downstream Port - Standard USB host. |
@@ -34,7 +33,7 @@ typedef enum _EFI_USBFN_PORT_TYPE
 
 ## Remarks
 
-For more information, refer to "Battery Charging Specification, Revision 1.1” on the [USB.org](https://www.usb.org/documents) website.
+For more information, refer to "Battery Charging Specification, Revision 1.1" on the [USB.org](https://www.usb.org/documents) website.
 
 ## Requirements
 

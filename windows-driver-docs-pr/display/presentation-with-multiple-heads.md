@@ -5,7 +5,6 @@ keywords:
 - multiple-head hardware WDK DirectX 9.0 , presentation
 - presentation WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Presentation with Multiple Heads

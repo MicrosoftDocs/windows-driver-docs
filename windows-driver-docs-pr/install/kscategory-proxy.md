@@ -10,7 +10,6 @@ api_location:
 - Ks.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,8 +43,7 @@ The KSCATEGORY_PROXY [device interface class](./overview-of-device-interface-cla
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

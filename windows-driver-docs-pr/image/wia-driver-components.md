@@ -2,7 +2,6 @@
 title: WIA Driver Components
 description: WIA Driver Components
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Driver Components
@@ -19,7 +18,7 @@ The WIA minidriver can be viewed as two logical layers:
 
 The following diagram illustrates the logical breakdown of a WIA minidriver and its components.
 
-![diagram illustrating a wia minidriver and its components](images/art-minidrv.png)
+![diagram illustrating a wia minidriver and its components.](images/art-minidrv.png)
 
 ### WIA Minidriver Interfaces
 

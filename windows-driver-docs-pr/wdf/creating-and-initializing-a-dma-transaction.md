@@ -8,7 +8,6 @@ keywords:
 - DMA transactions WDK KMDF , creating
 - initializing DMA transactions WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating and Initializing a DMA Transaction

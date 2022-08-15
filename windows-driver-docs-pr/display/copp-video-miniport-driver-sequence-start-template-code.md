@@ -4,7 +4,6 @@ description: COPP Video Miniport Driver Sequence Start Template Code
 keywords:
 - sequence start WDK COPP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # COPP Video Miniport Driver Sequence Start Template Code

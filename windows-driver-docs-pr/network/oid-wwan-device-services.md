@@ -4,7 +4,6 @@ description: OID_WWAN_DEVICE_SERVICES returns the list of device services suppor
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_DEVICE_SERVICES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_DEVICE\_SERVICES
@@ -16,8 +15,7 @@ Miniport drivers must process query requests asynchronously, initially returning
 
 Set requests are not supported.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

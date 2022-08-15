@@ -9,7 +9,6 @@ api_name:
 - .exptr (Display Exception Pointers)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .exptr (Display Exception Pointers)

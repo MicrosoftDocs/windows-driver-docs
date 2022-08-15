@@ -10,7 +10,6 @@ api_location:
 - Ntddstor.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,8 +43,7 @@ The GUID_DEVINTERFACE_FLOPPY [device interface class](./overview-of-device-inter
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied storage class driver for floppy disk storage devices registers an instance of GUID_DEVINTERFACE_FLOPPY for a floppy disk storage device.
 
@@ -53,8 +51,7 @@ The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the W
 
 For information about storage drivers, see [Storage Drivers](../storage/storage-drivers.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

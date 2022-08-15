@@ -9,7 +9,6 @@ api_name:
 - IoAllocateIrpSignalEventInCompletion
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoAllocateIrpSignalEventInCompletion rule
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The **IoAllocateIrpSignalEventInCompletion** rule specifies that the driver should call [**KeSetEvent**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesetevent) in the completion routine when the **Irp-&gt;PendingReturned** flag is set and the completion routine is processing a locally created asynchronous IRP.
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -43,8 +41,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoAllocateIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp)
 [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest)

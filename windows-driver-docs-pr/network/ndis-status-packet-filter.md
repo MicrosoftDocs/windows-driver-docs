@@ -4,7 +4,6 @@ description: The NDIS_STATUS_PACKET_FILTER status indicates a packet filter chan
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_PACKET_FILTER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_PACKET\_FILTER
@@ -12,8 +11,7 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_PACKET\_FILTER status indicates a packet filter change to overlying drivers. NDIS generates this status indications for a miniport adapter to notify overlying drivers that there might be a change in the miniport adapter's packet filter setting.
 
-Remarks
--------
+## Remarks
 
 NDIS does not guarantee that the packet filter has changed when NDIS generates the NDIS\_STATUS\_PACKET\_FILTER status indication.
 
@@ -23,8 +21,7 @@ NDIS supplies a bitwise OR of the filter type flags in the **StatusBuffer** memb
 
 The **StatusBufferSize** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure is set to sizeof(ULONG).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -10,7 +10,6 @@ api_location:
 - Devpkey.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -56,17 +55,15 @@ The DEVPKEY_Device_InstallState device property represents the installation stat
 
  
 
-Remarks
--------
+## Remarks
 
 Windows sets the value of DEVPKEY_Device_InstallState to one of the CM_INSTALL_STATE_*Xxx* values that are defined in Cfgmgr32.h. The CM_INSTALL_STATE_*Xxx* values correspond to the [**DEVICE_INSTALL_STATE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_device_install_state) enumeration values.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_InstallState.
+You can call [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_InstallState.
 
 Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_Device_InstallState property key. Instead, you can use the corresponding SPDRP_INSTALL_STATE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

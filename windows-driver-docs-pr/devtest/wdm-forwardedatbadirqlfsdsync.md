@@ -9,7 +9,6 @@ api_name:
 - ForwardedAtBadIrqlFsdSync
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ForwardedAtBadIrqlFsdSync rule
@@ -23,8 +22,7 @@ The **ForwardedAtBadIrqlFsdSync** rule specifies that the driver call [**IoCallD
 -   [**IRP\_MJ\_DEVICE\_CONTROL**](../kernel/irp-mj-device-control.md)
 -   [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](../kernel/irp-mj-internal-device-control.md)
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -49,8 +47,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoBuildSynchronousFsdRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildsynchronousfsdrequest)
 [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver)

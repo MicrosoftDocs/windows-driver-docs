@@ -7,7 +7,6 @@ keywords:
 - sending I/O requests WDK KMDF , synchronous
 - synchronously sending I/O requests WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sending I/O Requests Synchronously

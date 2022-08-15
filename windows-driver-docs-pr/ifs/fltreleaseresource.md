@@ -11,7 +11,6 @@ api_location:
 api_type:
 - DllExport
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # FltReleaseResource routine
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The **FltReleaseResource** routine releases a specified resource owned by the current thread.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID FltReleaseResource(
@@ -28,19 +26,16 @@ VOID FltReleaseResource(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Resource* \[in, out\]  
 Pointer to the opaque ERESOURCE structure for the resource to be released.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 **FltReleaseResource** releases a resource that was previously acquired by calling [**FltAcquireResourceExclusive**](fltacquireresourceexclusive.md) or [**FltAcquireResourceShared**](fltacquireresourceshared.md).
 
@@ -58,8 +53,7 @@ To initialize a resource for reuse, call [**ExReinitializeResourceLite**](/windo
 
 For more information about ERESOURCE structures, see [Introduction to ERESOURCE Routines](../kernel/introduction-to-eresource-routines.md) in the Kernel Architecture Design Guide.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

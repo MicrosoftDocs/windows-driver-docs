@@ -5,7 +5,6 @@ keywords:
 - XPSDrv printer drivers WDK , installing
 - INF files WDK print , XPSDrv printer drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # XPSDrv Installation
@@ -15,7 +14,7 @@ To be properly installed by the spooler, XPSDrv drivers must include the followi
 
 -   The [**CopyFiles**](../install/inf-copyfiles-directive.md) directive of the driver INF file must reference the [filter pipeline configuration file](filter-pipeline-configuration-file.md).
 
--   The Needs directive must reference Xpsdrv.oem. For more information about the Needs directive, see [**INF DDInstall Section**](../install/inf-ddinstall-section.md) and [Source Media for INFs](../install/source-media-for-inf-files.md).
+-   The Needs directive must reference Xpsdrv.oem. For more information about the Needs directive, see [**INF DDInstall Section**](../install/inf-ddinstall-section.md).
 
 -   If the configuration module is based on Unidrv, the Needs directive must reference Unidrv.oem and Xpsgpd.oem. Likewise, if the XPSDrv driver configuration module is based on PScript5, the Needs directive must reference Pscript.oem and Xpsppd.oem.
 

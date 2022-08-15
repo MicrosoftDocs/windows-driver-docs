@@ -4,7 +4,6 @@ description: As a query, NDIS and overlying drivers or user-mode applications us
 ms.date: 08/08/2017
 keywords: 
  -OID_TCP_RSC_STATISTICS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_TCP\_RSC\_STATISTICS
@@ -14,10 +13,9 @@ As a query, NDIS and overlying drivers or user-mode applications use the OID\_TC
 
 NDIS 6.30 and later miniport drivers that provide RSC services must support this OID. Otherwise, this OID is optional.
 
-Remarks
--------
+## Remarks
 
-The **InformationBuffer** member of [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains an [**NDIS\_RSC\_STATISTICS\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rsc_statistics_info) structure.
+The **InformationBuffer** member of [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains an [**NDIS\_RSC\_STATISTICS\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rsc_statistics_info) structure.
 
 The miniport driver must maintain the statistics in the members of the [**NDIS\_RSC\_STATISTICS\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rsc_statistics_info) structure as follows:
 
@@ -26,8 +24,7 @@ The miniport driver must maintain the statistics in the members of the [**NDIS\_
 -   The driver must increment the coalesced events count **CoalesceEvents** member by one every time a SCU is finalized. All such SCUs should have a non-zero **CoalescedSegCount** value.
 -   The driver must increment the abort count in the **Aborts** member by one every time it encounters an exception other than the IP datagram length being exceeded. This count should include the cases where a packet is not coalesced because of hardware resources.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -49,7 +46,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [**NDIS\_RSC\_STATISTICS\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rsc_statistics_info)
 

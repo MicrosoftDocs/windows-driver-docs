@@ -10,7 +10,6 @@ api_location:
 - Ioevent.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,13 +43,11 @@ The GUID_IO_VOLUME_DEVICE_INTERFACE [device interface class](./overview-of-devic
 
  
 
-Remarks
--------
+## Remarks
 
 The GUID_IO_VOLUME_DEVICE_INTERFACE identifier for this device interface class is an alias for the [**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md) device interface class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

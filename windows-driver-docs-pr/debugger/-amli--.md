@@ -1,5 +1,5 @@
 ---
-title: amli
+title: amli (WinDbg)
 description: The amli extension displays some Help text in the Debugger Command window for the amli extension commands.
 keywords: ["amli Windows Debugging"]
 ms.date: 09/17/2018
@@ -9,7 +9,6 @@ api_name:
 - amli
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !amli ?

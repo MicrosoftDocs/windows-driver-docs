@@ -4,7 +4,6 @@ description: WDI_TLV_TCP_RSC_STATISTICS_PARAMETERS is a TLV that contains TCP RS
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_TCP_RSC_STATISTICS_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_TCP\_RSC\_STATISTICS\_PARAMETERS
@@ -34,8 +33,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

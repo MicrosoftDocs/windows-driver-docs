@@ -9,7 +9,6 @@ api_name:
 - UCMUCSI_FAILURE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1D8: UCMUCSI\_FAILURE
@@ -30,7 +29,6 @@ The UCMUCSI\_FAILURE bug check has a value of 0x000001D8. It indicates that the 
 |4| Reserved. |
 
 ## Cause
------
 
 The UcmUcsi driver has encountered an error. The driver has found settings to trigger a system crash instead of a livedump.
 
@@ -45,7 +43,6 @@ For more information on analyzing this bug check, see this blog post - [Debuggin
 
 
 ## See Also
-----------
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

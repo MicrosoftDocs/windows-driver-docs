@@ -9,7 +9,6 @@ api_name:
 - wudfext.umirp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wudfext.umirp
@@ -52,8 +51,7 @@ Specifies the address of the UM IRP to display information about.
 
 For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 You can use the [**!wudfext.umirps**](-wudfext-umirps.md) extension command to display a list of all outstanding UM IRPs in the host process.
 

@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # JobInformation element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The optional **JobInformation** element describes the intended use of the job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobInformation>
@@ -26,13 +24,11 @@ Usage
 </wscn:JobInformation>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. Any valid character string.
 
@@ -60,8 +56,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **JobInformation** value is useful when the client will reuse the scan ticket that is used to create the job.
 

@@ -1,13 +1,12 @@
 ---
 title: Time Travel Debugging - Overview
 description: This section describes time travel debugging.
-ms.date: 01/17/2020
-ms.localizationpriority: medium
+ms.date: 03/09/2022
 ---
 
 # Time Travel Debugging - Overview
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
+![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png) 
 
 ## What is Time Travel Debugging?
 
@@ -23,7 +22,7 @@ TTD is efficient and works to add as little as possible overhead as it captures 
 
 TTD includes a set of debugger data model objects to allow you to query the trace using LINQ. For example, you can use TTD objects to locate when a specific code module was loaded or locate all of the exceptions.
 
-![Example screen shot of WinDbg preview showing time travel command and three timelines](images/ttd-windbgx-screen-shot-example.png)
+![Example screen shot of WinDbg preview showing time travel command and three timelines.](images/ttd-windbgx-screen-shot-example.png)
 
 ## Comparison of Debugging Tools
 
@@ -48,9 +47,9 @@ To use TTD, you need to run the debugger elevated. Install WinDbg Preview using 
 
 To learn more about TTD see these videos.
 
-[Defrag Tools 185](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-185-Time-Travel-Debugging-Introduction) - Ivette and JamesP go over the basics of TTD and demo some features in WinDbg Preview
+[Defrag Tools 185](/shows/defrag-tools/185-time-travel-debugging-introduction) - Ivette and JamesP go over the basics of TTD and demo some features in WinDbg Preview
 
-[Defrag Tools 186](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-186-Time-Travel-Debugging-Advanced) - Jordi and JCAB demo more great features of TTD in WinDbg Preview
+[Defrag Tools 186](/shows/defrag-tools/186-time-travel-debugging-advanced) - Jordi and JCAB demo more great features of TTD in WinDbg Preview
 
 [CppCon (YouTube)](https://www.youtube.com/watch?v=l1YJTg_A914) - Jordi, Ken and JamesM presented TTD in WinDbg Preview at CppCon 2017
 
@@ -91,7 +90,7 @@ For more information on working the trace files, see [Time Travel Debugging - Wo
 
 You may encounter incompatibilities because of how TTD hooks into process to record them. Typically issues arise with anti-virus or other system software that is attempting to track and shadow system memory calls. If you run into issues of with recording, such as an insufficient permission message, try temporarily disabling any anti-virus software.  
 
-Other utilities that attempt to block memory access, can also be problematic, for example, the Microsoft Enhanced Mitigation Experience Toolkit. For more information about EMET, see [The Enhanced Mitigation Experience Toolkit](https://support.microsoft.com/help/2458544/the-enhanced-mitigation-experience-toolkit).
+Other utilities that attempt to block memory access, can also be problematic, for example, the Microsoft Enhanced Mitigation Experience Toolkit. 
 
 Another example of an environment that conflicts with TTD, would be the electron application framework. In this case the trace may record, but a deadlock or crash of the process being recorded is also possible.
 
@@ -146,7 +145,7 @@ Your feedback will help guide time travel development priorities going forward.
 
 - If you have feedback such as a feature that you really want to see or a bug that makes something difficult, use the Feedback Hub.
 
-![Screen shot of feedback hub showing feedback options including the add new feedback button](images/windbgx-feedback.png)
+![Screen shot of feedback hub showing feedback options including the add new feedback button.](images/windbgx-feedback.png)
 
 
 ## Getting started with TTD

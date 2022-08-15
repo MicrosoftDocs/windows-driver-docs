@@ -2,7 +2,6 @@
 title: Porting NDIS 6.x Drivers to NDIS 6.40
 description: NDIS 6.40 is substantially the same as NDIS 6.30. For detailed information about new features for NDIS 6.40, see Introduction to NDIS 6.40.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Porting NDIS 6.x Drivers to NDIS 6.40

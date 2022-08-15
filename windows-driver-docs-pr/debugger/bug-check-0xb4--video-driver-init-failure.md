@@ -9,7 +9,6 @@ api_name:
 - VIDEO_DRIVER_INIT_FAILURE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xB4: VIDEO\_DRIVER\_INIT\_FAILURE
@@ -26,8 +25,7 @@ The VIDEO\_DRIVER\_INIT\_FAILURE bug check has a value of 0x000000B4. This indic
 
 None
 
-Cause
------
+## Cause
 
 The system was not able to go into graphics mode because no display drivers were able to start.
 

@@ -9,7 +9,6 @@ api_name:
 - ZwRegistryOpen
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ZwRegistryOpen rule (wdm)
@@ -41,8 +40,7 @@ This rule does not verify that the driver is holding an open handle to the corre
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -67,8 +65,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**ZwClose**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose)
 [**ZwCreateKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatekey)
@@ -80,7 +77,6 @@ Applies to
 [**ZwQueryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwquerykey)
 [**ZwQueryValueKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwqueryvaluekey)
 [**ZwSetValueKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwsetvaluekey)
-See also
---------
+## See also
 
 [**ZwRegistryCreate**](wdm-zwregistrycreate.md)

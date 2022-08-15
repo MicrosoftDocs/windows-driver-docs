@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ScannerStateReasons element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **ScannerStateReasons** element is a list of [**ScannerStateReason**](scannerstatereason.md) elements that describes all of the reasons why the scanner is in its current state.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScannerStateReasons>
@@ -26,13 +24,11 @@ Usage
 </wscn:ScannerStateReasons>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 None
 
@@ -77,8 +73,7 @@ None
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **ScannerStateReasons** element is a list of **ScannerStateReason** elements, each of which describes a reason why the scanner is in its current state.
 

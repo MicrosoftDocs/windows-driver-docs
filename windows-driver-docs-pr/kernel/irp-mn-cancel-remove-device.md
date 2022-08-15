@@ -4,7 +4,6 @@ description: Learn about the 'IRP_MN_CANCEL_REMOVE_DEVICE' kernel-mode driver ar
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_CANCEL_REMOVE_DEVICE Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_CANCEL\_REMOVE\_DEVICE
@@ -16,13 +15,11 @@ All PnP drivers must handle this IRP.
 
 0x03
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP to inform the drivers for a device that the device will not be removed.
 
@@ -43,8 +40,7 @@ None
 
 A driver must set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS for this IRP. If a driver fails this IRP, the device is left in an inconsistent state.
 
-Operation
----------
+## Operation
 
 This IRP must be handled first by the parent bus driver for a device and then by each higher driver in the device stack.
 
@@ -62,8 +58,7 @@ See [Plug and Play](./introduction-to-plug-and-play.md) for detailed information
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

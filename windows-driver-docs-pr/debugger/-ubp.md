@@ -1,5 +1,5 @@
 ---
-title: ubp
+title: ubp (WinDbg)
 description: The ubp extension sets a breakpoint in user space.
 keywords: ["ubp Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ubp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ubp
@@ -48,8 +47,7 @@ Specifies the hexadecimal virtual address of the location in user space where th
 
  
 
-Remarks
--------
+## Remarks
 
 The **!ubp** extension sets a breakpoint in user space. The breakpoint is set on the actual physical page, not just the virtual page.
 

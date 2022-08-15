@@ -4,7 +4,6 @@ description: Selecting Drivers to be Verified
 keywords:
 - Driver Verifier WDK , driver selections
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Selecting Drivers to be Verified
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_selecting_drivers_to_be_verified_tools"></span><span id="DDK_SELECTING_DRIVERS_TO_BE_VERIFIED_TOOLS"></span>
 
 
-Drivers can be selected for verification by using the [**Verifier Command Line**](verifier-command-line.md), or by using Driver Verifier Manager. There are two versions of Driver Verifier Manager -- one for [Windows 2000](driver-verifier-manager--windows-2000-.md) and one for [Windows XP and later](driver-verifier-manager--windows-xp-and-later-.md).
+Drivers can be selected for verification by using the [**Verifier Command Line**](verifier-command-line.md), or by using [Driver Verifier Manager](driver-verifier-manager--windows-xp-and-later-.md).
 
 ### <span id="verifier_command_line"></span><span id="VERIFIER_COMMAND_LINE"></span>Verifier Command Line
 
@@ -22,12 +21,6 @@ To verify all drivers, use the **/all** parameter.
 To verify a list of drivers, use the **/driver** parameter.
 
 See [**Verifier Command Line**](verifier-command-line.md) for details.
-
-### <span id="driver_verifier_manager__windows_2000_"></span><span id="DRIVER_VERIFIER_MANAGER__WINDOWS_2000_"></span>Driver Verifier Manager (Windows 2000)
-
-To verify all drivers, select the **Settings** tab. Select **Verify all drivers**. Then press **Apply**.
-
-To verify a list of drivers, select the **Settings** tab. Select **Verify selected drivers**. You will see a list of all drivers that were loaded in the system during the most recent boot.
 
 The **Verification Status** column gives the current status for each driver. Possible **Verification Status** values are:
 
@@ -51,7 +44,7 @@ Once you have selected the drivers to verify, press **Apply**.
 
 To deactivate all options and clear the verified driver list, select the **Settings** tab. Press the **Reset All** button. Then press **Apply**.
 
-### <span id="driver_verifier_manager__windows_xp_and_later_"></span><span id="DRIVER_VERIFIER_MANAGER__WINDOWS_XP_AND_LATER_"></span>Driver Verifier Manager (Windows XP and later)
+### <span id="driver_verifier_manager__windows_xp_and_later_"></span><span id="DRIVER_VERIFIER_MANAGER__WINDOWS_XP_AND_LATER_"></span>Driver Verifier Manager
 
 In the Windows XP and later Driver Verifier Manager, selection of drivers must be done after selection of options. See [Selecting Driver Verifier Options](selecting-driver-verifier-options.md) for a description of this first step.
 
@@ -68,8 +61,6 @@ Once the first step has been completed, you will see the **Select what drivers t
 -   To verify drivers built for earlier versions of Windows, select **Automatically select drivers built for older versions of Windows**. A list of these drivers will be displayed. (If no such drivers exist, an error message will appear.)
 
 After you have selected the drivers to be verified, press either **Next** or **Finish**.
-
-If you enabled Disk Integrity Checking, you will see a list of all physical disks attached to your computer. Check the box next to each disk that you wish to verify, and then press **Finish**.
 
 To deactivate all options and clear the verified driver list, start Driver Verifier Manager and select **Delete existing settings** from the first screen. Then press **Finish**.
 

@@ -2,7 +2,6 @@
 description: Use the USB User-Mode Driver template provided with Microsoft Visual Studio to write a UMDF client driver.
 title: How to write your first USB client driver (UMDF)
 ms.date: 06/03/2019
-ms.localizationpriority: medium
 ---
 
 # How to write your first USB client driver (UMDF)
@@ -66,9 +65,9 @@ For instructions about generating UMDF driver code, see [Writing a UMDF driver b
 
 The following screen shots show the **New Project** dialog box for the **USB User-Mode Driver** template.
 
-![visual studio new project options](images/umdf-template-visual-studio-2019.png)
+![visual studio new project options.](images/umdf-template-visual-studio-2019.png)
 
-![visual studio new project options second screen](images/umdf-template-visual-studio-2019-2.png)
+![visual studio new project options second screen.](images/umdf-template-visual-studio-2019-2.png)
 
 This topic assumes that the name of the project is "MyUSBDriver\_UMDF\_". It contains the following files:
 
@@ -266,7 +265,7 @@ The output should be similar to the following:
 
 Let’s take a look at how the framework and the client driver work together to interact with Windows and handle requests sent to the USB device. This illustration shows the modules loaded in the system for a UMDF -based USB client driver.
 
-![user mode client driver architecture](images/umdfstack.png)
+![user mode client driver architecture.](images/umdfstack.png)
 
 The purpose of each module is described here:
 

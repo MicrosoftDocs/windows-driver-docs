@@ -10,7 +10,6 @@ api_location:
 - Ntddmou.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,8 +43,7 @@ The GUID_DEVINTERFACE_MOUSE [device interface class](./overview-of-device-interf
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for mouse devices register instances of this device interface class to notify the operating system and applications of the presence of mouse devices.
 
@@ -57,8 +55,7 @@ The WDK includes sample code for the system-supplied mouse class driver. The mou
 
 For information about the device interface class for keyboard devices, see [**GUID_DEVINTERFACE_KEYBOARD**](guid-devinterface-keyboard.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

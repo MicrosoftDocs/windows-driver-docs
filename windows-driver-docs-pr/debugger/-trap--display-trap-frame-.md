@@ -9,7 +9,6 @@ api_name:
 - .trap (Display Trap Frame)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .trap (Display Trap Frame)
@@ -56,8 +55,7 @@ Hexadecimal address of the trap frame on the target system. Omitting the address
 
 For more information about the register context and other context settings, see [Changing Contexts](changing-contexts.md).
 
-Remarks
--------
+## Remarks
 
 The **.trap** command displays the important registers for the specified trap frame.
 

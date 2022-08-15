@@ -9,18 +9,16 @@ api_name:
 - PagedCodeAtPowerTrans
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PagedCodeAtPowerTrans rule (wdm)
 
 
-The **PagedCodeAtPowerTrans** rule specifies that a driver should not call [**PAGED\_CODE**](../kernel/mm-bad-pointer.md) while responding to a system IRP\_MJ\_POWER Irp (IRP\_MN\_SET\_POWER) and to a device IRP\_MJ\_POWER Irp (IRP\_MN\_SET\_POWER).
+The **PagedCodeAtPowerTrans** rule specifies that a driver should not call [**PAGED_CODE**](../kernel/paged_code.md) while responding to a system IRP\_MJ\_POWER Irp (IRP\_MN\_SET\_POWER) and to a device IRP\_MJ\_POWER Irp (IRP\_MN\_SET\_POWER).
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +43,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
-[**PAGED\_CODE**](../kernel/mm-bad-pointer.md)
+[**PAGED_CODE**](../kernel/paged_code.md)

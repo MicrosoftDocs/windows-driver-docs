@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # \_DXGK\_DMABUFFERCAPS structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The DXGK\_DMABUFFERCAPS structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_DMABUFFERCAPS {
@@ -41,15 +39,13 @@ typedef struct _DXGK_DMABUFFERCAPS {
 } DXGK_DMABUFFERCAPS;
 ```
 
-Members
--------
+## Members
 
 **PresentDmaBuffer**
 
 **PagingDmaBuffer**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

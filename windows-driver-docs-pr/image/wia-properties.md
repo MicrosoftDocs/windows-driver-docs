@@ -2,7 +2,6 @@
 title: WIA Properties
 description: WIA Properties
 ms.date: 05/29/2020
-ms.localizationpriority: medium
 ---
 
 # WIA Properties

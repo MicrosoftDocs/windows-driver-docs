@@ -3,7 +3,6 @@ title: DispatchQueryInformation Routines
 description: DispatchQueryInformation Routines
 keywords: ["dispatch routines WDK kernel , DispatchQueryInformation routine", "DispatchQueryInformation routine", "IRP_MJ_QUERY_INFORMATION I/O function code", "query information dispatch routines WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # DispatchQueryInformation Routines

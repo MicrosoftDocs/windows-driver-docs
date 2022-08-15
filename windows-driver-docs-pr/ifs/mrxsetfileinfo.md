@@ -11,7 +11,6 @@ api_location:
 api_type:
 - UserDefined
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # MRxSetFileInfo routine
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The *MRxSetFileInfo* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector set file information on a file system object.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 PMRX_CALLDOWN MRxSetFileInfo;
@@ -31,14 +29,12 @@ NTSTATUS MRxSetFileInfo(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *RxContext* \[in, out\]  
 A pointer to the RX\_CONTEXT structure. This parameter contains the IRP that is requesting the operation.
 
-Return value
-------------
+## Return value
 
 *MRxSetFileInfo* returns STATUS\_SUCCESS on success or an appropriate NTSTATUS value, such as one of the following:
 
@@ -95,8 +91,7 @@ Return value
 
  
 
-Remarks
--------
+## Remarks
 
 RDBSS issues a call to *MRxSetFileInfo* in response to receiving an [**IRP\_MJ\_SET\_INFORMATION**](irp-mj-set-information.md) request.
 
@@ -108,8 +103,7 @@ The **Info.Buffer** member is set to **Irp-&gt;AssociatedIrp.SystemBuffer**.
 
 The **Info.Length** member is set to **IrpSp-&gt;Parameters.SetFile.Length**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

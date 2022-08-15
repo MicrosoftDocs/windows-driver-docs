@@ -6,7 +6,6 @@ keywords:
 - multiple vertex streams WDK DirectX 8.0
 - vertex multiple streams WDK DirectX 8.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Multiple Vertex Stream Capability

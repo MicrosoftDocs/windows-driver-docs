@@ -9,7 +9,6 @@ api_name:
 - q, qq (Quit)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # q, qq (Quit)
@@ -50,8 +49,7 @@ qq
 
  
 
-Remarks
--------
+## Remarks
 
 In user-mode debugging, the **q** command ends the debugging session and closes the target application.
 

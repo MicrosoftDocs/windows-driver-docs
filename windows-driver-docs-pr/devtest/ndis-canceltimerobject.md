@@ -9,7 +9,6 @@ api_name:
 - CancelTimerObject
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CancelTimerObject rule (ndis)
@@ -21,8 +20,7 @@ The rule uses three different states. The state changes when a timer is set or c
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

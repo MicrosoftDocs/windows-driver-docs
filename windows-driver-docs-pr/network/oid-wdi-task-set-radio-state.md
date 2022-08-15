@@ -4,10 +4,11 @@ description: OID_WDI_TASK_SET_RADIO_STATE is used to set the Wi-Fi radio state f
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_SET_RADIO_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_TASK\_SET\_RADIO\_STATE
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_TASK\_SET\_RADIO\_STATE is used to set the Wi-Fi radio state for the adapter.
@@ -43,8 +44,7 @@ Before the host turns off the radio, it disconnects all peers and stops any Grou
 [NDIS\_STATUS\_WDI\_INDICATION\_RADIO\_STATUS](ndis-status-wdi-indication-radio-status.md)
 This indication is used to report changes in the radio state for the adapter. This is sent both when a software radio change is triggered by the host and when a hardware radio state change is detected by the adapter.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

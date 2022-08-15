@@ -4,7 +4,6 @@ description: WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY is a TLV that contains R
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_80211RSN\_REKEY
@@ -30,8 +29,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | [WDI_TLV_RSN_KEY_INFO](wdi-tlv-rsn-key-info.md) | Rsn Eapol key parameters. |
 | LIST<[WDI_TLV_CONFIGURED_CIPHER_KEY](wdi-tlv-configured-cipher-key.md)> | A list of configured ciphers to be set in [OID_WDI_GET_PM_PROTOCOL_OFFLOAD](oid-wdi-get-pm-protocol-offload.md). Drivers must return any GTK or iGTK keys that are currently configured. |
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

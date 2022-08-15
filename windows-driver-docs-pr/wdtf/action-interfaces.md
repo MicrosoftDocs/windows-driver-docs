@@ -7,8 +7,7 @@ keywords:
 - action interfaces WDK WDTF
 - COM interfaces WDK WDTF
 - interfaces WDK WDTF
-ms.date: 04/24/2018
-ms.localizationpriority: medium
+ms.date: 06/07/2021
 ---
 
 # Action interfaces
@@ -50,7 +49,7 @@ SimpleIO can be easier to use directly, rather than through [IWDTFSimpleIOStress
 
 | Header|
 |-|
-|[WDTFDriverPackageAction.h](/windows-hardware/drivers/ddi/wdtfdriverpackageaction/index)|
+| WDTFDriverPackageAction (Link Pending)|
 |[WDTFDriverSetupDeviceAction.h](/windows-hardware/drivers/ddi/wdtfdriversetupdeviceaction/index)|
 |[WDTFInterfaces.h](/windows-hardware/drivers/ddi/wdtfinterfaces/index) |
 |[WDTFEDTAction.h](/windows-hardware/drivers/ddi/wdtfedtaction/index) |

@@ -9,7 +9,6 @@ api_name:
 - NdisMFreeSharedMemory
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisMFreeSharedMemory rule (ndis)
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +43,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisMFreeSharedMemory**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismfreesharedmemory)

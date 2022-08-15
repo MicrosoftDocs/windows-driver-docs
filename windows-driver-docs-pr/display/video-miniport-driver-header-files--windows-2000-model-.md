@@ -5,7 +5,6 @@ keywords:
 - video miniport drivers WDK Windows 2000 , header files
 - header files WDK video miniport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Video Miniport Driver Header Files (Windows 2000 Model)

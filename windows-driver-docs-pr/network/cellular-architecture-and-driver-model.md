@@ -2,7 +2,7 @@
 title: Cellular architecture and implementation
 description: The cellular architecture for Windows 10.
 ms.date: 03/01/2021
-ms.localizationpriority: medium
+ms.custom: contperf-fy21q4
 ---
 
 # Cellular architecture
@@ -11,7 +11,7 @@ This section describes the elements of the cellular architecture for Windows 10 
 
 ## Windows 10 cellular architecture
 
-![Windows 10 cellular architecture](images/CellularArchitecture.png)
+![Windows 10 cellular architecture.](images/CellularArchitecture.png)
 
 The following describes the elements shown in the Windows 10 cellular architecture:
 
@@ -61,7 +61,7 @@ Country & Operator Settings Asset (COSA) is an OEM configurable database with se
 
 **NetCx**
 
-[Network Adapter WDF Class Extension (NetAdapterCx)](../netcx/index.md) is a driver model that provides the full functionality of the WDK.
+[Network Adapter WDF Class Extension (NetAdapterCx)](../netcx/index.md) is a driver model that enables you to write a KMDF-based client driver for a Network Interface Controller (NIC). NetAdapterCx gives you the power and flexibility of WDF and the networking performance of NDIS, and makes it easy to write a NIC driver.
 
 **MBBCx**
 
@@ -74,7 +74,7 @@ The IHV-implemented "lower edge" cellular device driver implements all of the ad
 
 ### MBB and MBIM Driver Interactions
 
-![windows 10 cellular architecture](images/cellular_mbb_driver_architecture.png)
+![windows 10 cellular architecture.](images/cellular_mbb_driver_architecture.png)
 
 ## Windows 10 cellular implementation requirements
 

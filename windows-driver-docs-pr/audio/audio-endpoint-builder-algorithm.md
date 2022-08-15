@@ -2,11 +2,9 @@
 title: Audio Endpoint Builder Algorithm
 description: Audio Endpoint Builder Algorithm
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Audio Endpoint Builder Algorithm
-
 
 In Windows Vista and later versions of Windows, the AudioEndpointBuilder is a system service that enumerates, initializes, and activates the audio endpoints in a system. This topic provides an overview of the algorithm that is used by the AudioEndpointBuilder service.
 
@@ -60,11 +58,11 @@ If you develop your own audio device driver and INF file to work with your audio
 
         In the following diagram, the KS filter is shown to have two host pins that are connected to a single bridge pin (Speaker).
 
-        ![problematic topology showing ac-3 host pin with hidden endpoint on left side is individual pcm and ac-3]sharing single filter (images/hidden-endpoint-bad.png)
+        ![problematic topology showing ac-3 host pin with hidden endpoint on left side is individual pcm and ac-3 sharing single filter](images/hidden-endpoint-bad.png)
 
         When the AudioEndpointBuilder discovers this bridge pin, it traces a path back to only one of the host pins, sets the default values for the bridge pin, creates and activates a Speaker endpoint, and continues to discover other bridge pins. Thus, the other host pin remains hidden from the AudioEndpointBuilder.
 
-        ![recommended topology with traceable paths between host pins and endpoints](images/hidden-endpoint-good.png)
+        ![recommended topology with traceable paths between host pins and endpoints.](images/hidden-endpoint-good.png)
 
         In the preceding diagram, the problematic topology has been redesigned so that the AudioEndpointBuilder can discover the two host pins (PCM and AC-3/ PCM) because it can now see two bridge pins (Speaker and SPDIF).
 
@@ -72,51 +70,24 @@ If you develop your own audio device driver and INF file to work with your audio
 
         Another type of suboptimal topology is created when one host pin connects to more than one bridge pin. The following diagram shows a topology in which a PCM host pin connects to a Speaker bridge pin and a SPDIF bridge pin.
 
-        ![problematic topology showing two endpoints connected to one host pin with single PCM](images/splitter-bad.png)
+        ![problematic topology showing two endpoints connected to one host pin with single PCM.](images/splitter-bad.png)
 
         In this case the AudioEndpointBuilder discovers one bridge pin and traces a path back to the PCM host pin, sets default values, and then creates and activates a Speaker endpoint. When the AudioEndpointBuilder discovers the next bridge pin, it traces a path back to the same PCM host pin, sets default values, and then creates and activates a SPDIF endpoint. However, although both endpoints have been initialized and activated, streaming to one of them makes it impossible to stream to the other at the same time; in other words, they are mutually exclusive endpoints.
 
         The following diagram shows a redesign of this topology in which separate connections exist. This design makes it possible for the AudioEndpointBuilder to trace a path back to the PCM host pin for each of the two bridge pins.
 
-        ![diagram illustrating recommended topology with traceable paths between host pins and endpoints with two PCMs on left side](images/splitter-good.png)
+        ![diagram illustrating recommended topology with traceable paths between host pins and endpoints with two PCMs on left side.](images/splitter-good.png)
 
 -   Endpoint format. When the audio engine is running in shared mode, the format for the endpoint assumes a specific setting as directed by the INF file at the time of installation. For example, the audio driver for an audio device uses its associated INF file to set the default endpoint to a 44.1-kHz, 16-bit, stereo PCM format. After installation, you must use Control Panel or a third-party application to change the endpoint format.
 
 -   Default device. The endpoint that is set as the default device is selected at the time of installation by using information in the INF file. After installation has completed, you must use Control Panel or a third-party application to select another endpoint to be the default endpoint.
 
 **Note**   If your INF file does not select an endpoint to be set as default during installation, a client application can use the MMDevice API to select an endpoint. The API bases its selection on the form factor rank and whether the endpoint is a render or a capture endpoint. The following table shows the selection order.
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Render rank</th>
-<th align="left">Capture rank</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Speakers</p></td>
-<td align="left"><p>Microphone</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Line-out</p></td>
-<td align="left"><p>Line-in</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>SPDIF</p></td>
-<td align="left"><p>SPDIF</p></td>
-</tr>
-</tbody>
-</table>
-
  
-
+| Render rank | Capture rank |
+|-------------|--------------|
+| Speakers    | Microphone   |
+| Line-out    | Line-in      |
+| SPDIF       | SPDIF        |
  
-
 If you use the MMDevice API to select a default endpoint and the available endpoints are ranked the same, the MMDevice API will alphabetize the Endpoint IDs to determine which endpoint to select as default. For example, if an audio adapter has both line-out and line-in connectors, and the associated INF file does not select either one to be the default at the time of installation, the MMDevice API identifies which Endpoint IDs is first alphabetically and sets that connector as the default. This selection persists after you restart the system because the Endpoint IDs are persistent. However, the selection does not persist if a higher-ranking endpoint (for example, a second adapter with a microphone connector) appears in the system.
-
- 
-

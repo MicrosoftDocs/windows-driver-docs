@@ -1,5 +1,5 @@
 ---
-title: lmi
+title: lmi (WinDbg)
 description: The lmi extension displays detailed information about a module.
 keywords: ["lmi Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - lmi
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !lmi
@@ -48,8 +47,7 @@ Specifies a loaded module, either by name or by base address.
 
  
 
-Remarks
--------
+## Remarks
 
 Module addresses can be determined by using the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) command.
 

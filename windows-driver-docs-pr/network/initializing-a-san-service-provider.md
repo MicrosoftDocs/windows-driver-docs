@@ -6,7 +6,6 @@ keywords:
 - initializing SAN usage
 - SAN service providers WDK , initializing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing a SAN Service Provider
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 The Windows Sockets switch initializes a SAN service provider as described in the following figure.
 
-![diagram illustrating how the windows sockets switch initializes a system area network (san) service provider ](images/apiflow1.png)
+![diagram illustrating how the windows sockets switch initializes a system area network (san) service provider .](images/apiflow1.png)
 
 After Windows loads the Windows Sockets switch DLL into an application's process, the following sequence of events occur.
 

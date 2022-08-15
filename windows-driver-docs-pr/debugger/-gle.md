@@ -1,5 +1,5 @@
 ---
-title: gle
+title: gle (WinDbg)
 description: The gle extension displays the last error value for the current thread.
 keywords: ["thread, error value", "error value", "gle Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - gle
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !gle
@@ -54,8 +53,7 @@ Ntsdexts.dll</td>
 
 For more information about the [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) routine, see the Micorosft Windows SDK documentation.
 
-Remarks
--------
+## Remarks
 
 The **!gle** extension displays the value of [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) and tries to decode this value.
 

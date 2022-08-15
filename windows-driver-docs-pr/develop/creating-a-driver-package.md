@@ -2,7 +2,6 @@
 title: Creating a Driver Package
 description: Creating a Driver Package
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Driver Package
@@ -12,11 +11,11 @@ ms.localizationpriority: medium
 
 A driver *project* is the Microsoft Visual Studio project which produces a driver binary (such as a .sys file), and potentially the driver's INF file.
 
-A driver *package* is the collection of files used to install a driver. The package includes an INF file, and files and binaries referred to by that INF. Visual Studio uses driver packages to automatically deploy and debug your driver to a remote target.
+A driver *package* is the collection of files used during a device installation. A [driver package](../install/driver-packages.md) includes an INF file, as well as files and binaries referenced by that INF. Visual Studio uses driver packages to automatically deploy and debug your driver to a remote target.
 
 A driver package is a separate project which collects output from one or more projects, such as driver projects. The driver package's project, when built, then produces the driver package which Visual Studio uses to deploy the driver.
 
-![visual studio solution explorer driver package project](images/VsSlnExplorer.png)
+![visual studio solution explorer driver package project.](images/VsSlnExplorer.png)
 
 **Note**  
 
@@ -39,7 +38,7 @@ In the Solution Explorer pane, open the driver package project, select and hold 
 
 To remove a reference to an existing project, select and hold (or right-click) the existing project you no longer want to reference and select **Remove**.
 
-![driver package properties](images/VsDrvrPkgProps.png)
+![driver package properties.](images/VsDrvrPkgProps.png)
 
 ## <span id="Multiple_drivers_in_a_solution"></span><span id="multiple_drivers_in_a_solution"></span><span id="MULTIPLE_DRIVERS_IN_A_SOLUTION"></span>Multiple drivers in a solution
 
@@ -50,7 +49,7 @@ In the Solution Explorer pane, open the driver package project, select and hold 
 
 To remove a reference to an existing project, select and hold (or right-click) the existing project you no longer want to reference and select **Remove**.
 
-See the "Toaster Sample Driver" sample for an example of a single solution that contains multiple drivers:![multiple drivers in a single solution](images/MultipleDriversSingleSolution.png)
+See the "Toaster Sample Driver" sample for an example of a single solution that contains multiple drivers:![multiple drivers in a single solution.](images/MultipleDriversSingleSolution.png)
 
 ## <span id="related_topics"></span>Related topics
 

@@ -4,7 +4,6 @@ description: Sending Urgent Data on a SAN
 keywords:
 - urgent data WDK SANs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sending Urgent Data on a SAN

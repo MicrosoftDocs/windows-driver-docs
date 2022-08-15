@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIOENGINE\_MIXFORMAT
@@ -55,13 +54,11 @@ The **KSPROPERTY\_AUDIOENGINE\_MIXFORMAT** property request retrieves the settin
 
 The **KSPROPERTY\_AUDIOENGINE\_MIXFORMAT** property request returns **STATUS\_SUCCESS** to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The mix format that is set on the audio engine node at any point in time must also be supported by the offload pin factory.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

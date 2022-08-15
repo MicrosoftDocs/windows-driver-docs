@@ -3,7 +3,6 @@ title: Points to Consider When Canceling IRPs
 description: Points to Consider When Canceling IRPs
 keywords: ["canceling IRPs, guidelines", "Cancel routines, guidelines", "cancelable IRPs WDK kernel", "current states WDK IRPs"]
 ms.date: 05/08/2018
-ms.localizationpriority: medium
 ---
 
 # Points to Consider When Canceling IRPs

@@ -2,7 +2,6 @@
 title: MB Signal Strength Operations
 description: MB Signal Strength Operations
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # MB Signal Strength Operations
@@ -19,7 +18,7 @@ Be aware that in case of GSM-based devices, miniport drivers should send signal 
 
 The following diagram shows the process that miniport drivers should follow to process signal strength indications. The MB Service adjusts the signal strength-reporting threshold and interval, based on the current device signal strength and how long the device has been idle. These actions are usually performed as part of the power management features provided by the MB Service. The labels in bold are OID identifiers or transactional flow control. The labels in regular text are the important flags within the OID structure.
 
-![diagram illustrating the process that miniport drivers should follow to process signal strength indications](images/wwansignalstrength.png)
+![diagram illustrating the process that miniport drivers should follow to process signal strength indications.](images/wwansignalstrength.png)
 
 To update signal strength indications, use the following procedure:
 

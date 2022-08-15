@@ -6,7 +6,6 @@ keywords:
 - WDTF WDK , tracing events
 - tracing WDK WDTF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling and Viewing WDTF Traces

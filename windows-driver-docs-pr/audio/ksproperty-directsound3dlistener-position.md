@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_DIRECTSOUND3DLISTENER\_POSITION
@@ -60,13 +59,11 @@ The property value (operation data) is a structure of type DS3DVECTOR that speci
 
 A KSPROPERTY\_DIRECTSOUND3DLISTENER\_POSITION property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 DirectSound uses this property to implement the **IDirectSound3DListener::GetPosition** and **IDirectSound3DListener::SetPosition** methods, which are described in the Microsoft Windows SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

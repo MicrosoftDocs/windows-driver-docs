@@ -10,7 +10,6 @@ keywords:
 - data structures WDK networking
 - structures WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NET\_BUFFER Architecture
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-This section provides high level information about [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures and related data structures and functions. NET\_BUFFER structures provide an efficient means to package and manage network data.
+This section provides high level information about [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structures and related data structures and functions. NET\_BUFFER structures provide an efficient means to package and manage network data.
 
 The following topics are included in this section:
 

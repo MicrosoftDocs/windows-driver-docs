@@ -12,7 +12,6 @@ keywords:
 - OIDs WDK networking , management information base
 - operational characteristics WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS Management Information and OIDs

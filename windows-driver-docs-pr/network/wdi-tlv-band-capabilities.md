@@ -4,7 +4,6 @@ description: WDI_TLV_BAND_CAPABILITIES is a TLV that contains the capabilities o
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BAND_CAPABILITIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_BAND\_CAPABILITIES
@@ -32,8 +31,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

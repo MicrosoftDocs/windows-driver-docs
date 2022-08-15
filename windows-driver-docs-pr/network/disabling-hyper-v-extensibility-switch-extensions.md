@@ -2,7 +2,6 @@
 title: Disabling Hyper-V Extensible Switch Extensions
 description: Disabling Hyper-V Extensible Switch Extensions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Disabling Hyper-V Extensible Switch Extensions

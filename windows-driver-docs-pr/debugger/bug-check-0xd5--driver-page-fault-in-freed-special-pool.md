@@ -9,7 +9,6 @@ api_name:
 - DRIVER_PAGE_FAULT_IN_FREED_SPECIAL_POOL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xD5: DRIVER\_PAGE\_FAULT\_IN\_FREED\_SPECIAL\_POOL
@@ -60,15 +59,13 @@ The DRIVER\_PAGE\_FAULT\_IN\_FREED\_SPECIAL\_POOL bug check has a value of 0x000
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
-Cause
------
+## Cause
 
 The Driver Verifier **Special Pool** option has caught the driver accessing memory which was earlier freed.
 
 For information about the special pool, consult the Driver Verifier section of the Windows Driver Kit.
 
-Remarks
--------
+## Remarks
 
 This cannot be protected by a **try - except** handler -- it can only be protected by a probe.
 

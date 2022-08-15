@@ -5,7 +5,6 @@ keywords:
 - WHEA WDK , management operations
 - Windows Hardware Error Architecture WDK , management operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WHEA Management Operations

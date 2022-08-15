@@ -9,11 +9,9 @@ api_name:
 - BCDEdit /timeout
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
-BCDEdit /timeout
-============
+# BCDEdit /timeout
 
 The **BCDEdit /timeout** command sets the time to wait, in seconds, before the boot manager selects a default entry. For information about setting the default entry, run "bcdedit /? default".
 
@@ -32,6 +30,6 @@ Specifies the time to wait, in seconds, before the boot manager selects a defaul
 
 ## Examples
 
-The following command sets the boot manager <timeout> to 30 seconds:
+The following command sets the boot manager \<timeout\> to 30 seconds:
 
 `bcdedit /timeout 30`

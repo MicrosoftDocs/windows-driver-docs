@@ -4,7 +4,6 @@ description: As a set, the OID_GEN_TRANSPORT_HEADER_OFFSET OID indicates the siz
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_TRANSPORT_HEADER_OFFSET Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_TRANSPORT\_HEADER\_OFFSET
@@ -29,8 +28,7 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Optional.
 
-Remarks
--------
+## Remarks
 
 A transport informs miniport drivers and other layered drivers of this header size; these drivers can then use this information when processing packets. For example, a driver could use the sublayer header size obtained from the transport to locate the beginning of higher layer information in packets, such as the start of the IP header; the driver could then parse and adjust the fields of the IP protocol header as appropriate. Transports use a TRANSPORT\_HEADER\_OFFSET structure, defined as follows, to indicate this header size.
 
@@ -69,8 +67,7 @@ For example, if a transport handles packets from the Fiber Distributed Data Inte
 
 This OID is optional for miniport drivers and other layered drivers. Because this OID is optional, drivers are not required to respond to requests that transports make using this OID.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

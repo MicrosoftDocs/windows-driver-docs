@@ -9,7 +9,6 @@ api_name:
 - tt (Trace to Next Return)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # tt (Trace to Next Return)
@@ -75,8 +74,7 @@ Specifies the number of **return** instructions that the debugger must encounter
 
 For more information about related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 The **tt** command causes the target to begin executing. This execution continues until the debugger reaches a **return** instruction or encounters a breakpoint
 

@@ -2,7 +2,6 @@
 title: WIA Compatibility Layer Data Transfers Overview
 description: WIA Compatibility Layer Data Transfers Overview
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Compatibility Layer Data Transfers Overview

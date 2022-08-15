@@ -2,7 +2,6 @@
 title: Print Ticket and Print Capabilities Support
 description: Print Ticket and Print Capabilities Support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Print Ticket and Print Capabilities Support

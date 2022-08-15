@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_VIDEOPROCAMP\_HUE
@@ -56,15 +55,13 @@ The KSPROPERTY\_VIDEOPROCAMP\_HUE property controls the hue setting of the camer
 
 The property value (operation data) is a LONG that specifies a camera's hue setting. The value of the hue setting is expressed in degrees multiplied by 100.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEOPROCAMP\_S structure specifies the hue setting.
 
 Every video capture minidriver must define a range and default value for the **Value** member of this property. The required range must be -18000 to 18000 (-180 to +180 degrees). The default value must be 0.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -82,7 +79,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_VIDEOPROCAMP\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videoprocamp_s)
 

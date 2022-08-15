@@ -1,5 +1,5 @@
 ---
-title: mca
+title: mca (WinDbg)
 description: On an x86 target computer, the mca extension displays the machine check architecture (MCA) registers.
 keywords: ["machine check architecture (MCA)", "MCA (machine check architecture)", "mca Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - mca
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !mca
@@ -77,8 +76,7 @@ Displays to include the platform bus section.
 
 This extension command can only be used with an x86-based target computer.
 
-Remarks
--------
+## Remarks
 
 On an x86 target, **!mca** displays the machine check registers supported by the active processor. It also displays basic CPU information (identical to that displayed by [**!cpuinfo**](-cpuinfo.md)). Here is an example of the output from this extension:
 

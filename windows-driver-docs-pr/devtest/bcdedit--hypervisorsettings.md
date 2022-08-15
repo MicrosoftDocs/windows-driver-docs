@@ -9,15 +9,14 @@ api_name:
 - BCDEdit /hypervisorsettings
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
-BCDEdit /hypervisorsettings
-============
+# BCDEdit /hypervisorsettings
+
 
 The **/hypervisorsettings** command sets or displays the hypervisor debugger settings for the system.
 
-To set an individual hypervisor debugger setting, use "bcdedit /set {hypervisorsettings} <type> <value>". For more information on the set command, see [BCDEdit /set](bcdedit--set.md).
+To set an individual hypervisor debugger setting, use `bcdedit /set {hypervisorsettings} <type> <value>`. For more information on the set command, see [BCDEdit /set](bcdedit--set.md).
 
 ```syntax
 bcdedit /hypervisorsettings [ <debugtype> [DEBUGPORT:<port>] [BAUDRATE:<baud>] [CHANNEL:<channel>] [HOSTIP:<ip>] [PORT:<port>] [BUSPARAMS:<Bus.Device.Function>] ]
@@ -115,7 +114,7 @@ The following command sets the hypervisor debugger settings to serial debugging 
 \<debugtype\> *1394*  
 Specifies an IEEE 1394 (FireWire) connection for debugging. When this option is used, the *channel* option should also be set.
 
-**CHANNEL:***<channel>*
+**CHANNEL:***\<channel\>*
 
 For 1394 debugging, specifies the 1394 channel to be used for debugging.
 
@@ -126,7 +125,7 @@ Defines the PCI bus, device, and function numbers of the debugging device. For e
 
 ## Comments
 
-This command does not enable or disable the hypervisor debugger for any particular OS loader entry. To enable the hypervisor debugger for a particular OS loader entry, use "bcdedit /set <identifier> HYPERVISORDEBUG ON".
+This command does not enable or disable the hypervisor debugger for any particular OS loader entry. To enable the hypervisor debugger for a particular OS loader entry, use `bcdedit /set <identifier> HYPERVISORDEBUG ON`.
 
 For information about identifiers, run "bcdedit /? ID".
 

@@ -3,7 +3,6 @@ title: Types of WDM Drivers
 description: There are three kinds of WDM drivers bus drivers, function drivers, and filter drivers.
 keywords: ["WDM drivers WDK kernel , types", "WDM drivers WDK kernel , layered drivers", "layered drivers WDK kernel", "driver layers WDK WDM", "bus drivers WDK WDM", "function drivers WDK WDM", "filter drivers WDK WDM", "WDM bus drivers WDK", "WDM function drivers WDK", "WDM filter drivers WDK"]
 ms.date: 06/16/2017
-ms.localizationpriority: High
 ---
 
 # Types of WDM Drivers
@@ -26,7 +25,7 @@ It is important for driver developers to understand the different kinds of WDM d
 
 The following figure shows the relationship between the bus driver, function driver, and filter drivers for a device.
 
-![diagram illustrating possible driver layers](images/drvlyr.png)
+![diagram illustrating possible driver layers.](images/drvlyr.png)
 
 Each device typically has a bus driver for the parent I/O bus, a function driver for the device, and zero or more filter drivers for the device. A driver design that requires many filter drivers does not yield optimal performance.
 

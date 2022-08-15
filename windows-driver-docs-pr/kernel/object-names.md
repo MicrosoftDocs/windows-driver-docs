@@ -3,7 +3,6 @@ title: Object Names
 description: Object Names
 keywords: ["object names WDK kernel", "named objects WDK kernel", "unnamed objects WDK kernel", "object names WDK user-mode", "object handles WDK user-mode", "object handles WDK kernel", "handles WDK user-mode", "handles WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Object Names

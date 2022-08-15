@@ -9,7 +9,6 @@ keywords:
 - UI displaying WDK print
 - user interface WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Displaying a UI in Operating Systems Prior to Windows Vista

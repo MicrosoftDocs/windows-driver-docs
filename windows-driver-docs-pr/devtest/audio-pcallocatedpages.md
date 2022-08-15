@@ -9,7 +9,6 @@ api_name:
 - PcAllocatedPages
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PcAllocatedPages rule (audio)
@@ -22,8 +21,7 @@ The PcAllocatedPages rule specifies that a PortCls miniport driver frees previou
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x00071005)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

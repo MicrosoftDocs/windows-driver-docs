@@ -19,7 +19,6 @@ keywords:
 - filter graphs WDK audio
 - speakers WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to WDM Audio Drivers

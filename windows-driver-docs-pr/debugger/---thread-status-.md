@@ -9,7 +9,6 @@ api_name:
 - ~ (Thread Status)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ~ (Thread Status)
@@ -55,8 +54,7 @@ Specifies the thread to display. If you omit this parameter, all threads are dis
 
 For more information and other methods of displaying or controlling processes and threads, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
-Remarks
--------
+## Remarks
 
 You can specify threads only in user mode. In kernel mode, the tilde (**~**) refers to a processor.
 

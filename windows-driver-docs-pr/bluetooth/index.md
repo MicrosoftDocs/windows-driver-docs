@@ -11,8 +11,6 @@ keywords:
 - custom drivers WDK Bluetooth
 ms.date: 04/20/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Bluetooth Profile Drivers
@@ -28,7 +26,7 @@ This section describes Bluetooth profile drivers. The information in this sectio
 
 [Debugging Bluetooth Profile Drivers](debugging-bluetooth-profile-drivers.md)
 
-[Bluetooth FAQ](bluetooth-faq.md)
+[Bluetooth FAQ](bluetooth-faq.yml)
 
 [Transport Bus Driver for Bluetooth Power Control Handling Guidelines](transport-bus-driver-for-bluetooth-power-control-handling-guidelines.md)
 

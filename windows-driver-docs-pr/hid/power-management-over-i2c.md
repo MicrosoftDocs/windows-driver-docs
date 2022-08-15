@@ -1,13 +1,12 @@
 ---
-title: Power management for HID over the I²C
-description: This section describes power management for devices that support HID over the I²C.
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+title: Power management for HID over the I<sup>2</sup>C
+description: This section describes power management for devices that support HID over the I<sup>2</sup>C.
+ms.date: 05/03/2022
 ---
 
 # HID power management over the I2C
 
-This section describes power management for devices that support HID over the I²C transport.
+This section describes power management for devices that support HID over the I<sup>2</sup>C transport.
 
 ## Power management and optimization
 
@@ -19,18 +18,18 @@ Because HID devices are a primary device class in Windows, they must adhere to t
 
 Below is a short summary of how devices should behave during the connected standby power state.
 
-| Input Source                                                                                                                                                    | Indicates User Presence in connected standby | Processed while in connected standby      | Device State when System transitions to connected standby |
-|-|-|-|-|
-| Digitizer                                                                                                                                                       | No                                           | Must not process                          | D3                                                        |
-| Mouse                                                                                                                                                           | Yes                                          | Must process, will exit connected standby | D0                                                        |
-| Keyboard                                                                                                                                                        | Yes                                          | Must process, will exit connected standby | D0                                                        |
-| Rotation Lock                                                                                                                                                   | No                                           | Must not process                          | D3                                                        |
-| Generic Desktop Controls - Volume Up - Volume Down - Channel Down - Channel Up - Fast Forward - Track Forward - Track Back - Play - Pause - Record - Track Stop | No                                           | Must process                              | D0                                                        |
+| Input Source | Indicates User Presence in connected standby | Processed while in connected standby | Device State when System transitions to connected standby |
+|--|--|--|--|
+| Digitizer | No | Must not process | D3 |
+| Mouse | Yes | Must process, will exit connected standby | D0 |
+| Keyboard | Yes | Must process, will exit connected standby | D0 |
+| Rotation Lock | No | Must not process | D3 |
+| Generic Desktop Controls - Volume Up - Volume Down - Channel Down - Channel Up - Fast Forward - Track Forward - Track Back - Play - Pause - Record - Track Stop | No | Must process | D0 |
 
-For more information about connected standby please refer to the [Understanding Connected Standby](https://channel9.msdn.com/events/BUILD/BUILD2011/HW-456T) video.
+For more information about connected standby please refer to the [Understanding Connected Standby](/events/build-build2011/hw-456t) video.
 
-### Supporting connected standby in HID I²C Devices
+### Supporting connected standby in HID I<sup>2</sup>C Devices
 
-Devices on the I²C bus are enumerated by the Advanced Configuration and Power Interface (ACPI). As part of the HID-I²C Protocol Specification, power management for HIDI²C devices is supported by the SET\_POWER command. This command instructs the device to transition in and out of its lower power mode.
+Devices on the I<sup>2</sup>C bus are enumerated by the Advanced Configuration and Power Interface (ACPI). As part of the HID-I<sup>2</sup>C Protocol Specification, power management for HIDI<sup>2</sup>C devices is supported by the SET\_POWER command. This command instructs the device to transition in and out of its lower power mode.
 
-The inbox HIDI²C miniport driver passes along the D-IRP from HIDClass. This allows ACPI to, in turn, power-manage the device.
+The inbox HIDI<sup>2</sup>C miniport driver passes along the D-IRP from HIDClass. This allows ACPI to, in turn, power-manage the device.

@@ -1,18 +1,17 @@
 ---
-title: List
-description: List
+title: List (WSD)
+description: The Web Services for Devices (WSD) `List` construct is a string type that composes a comma-separated list of values specified by the XPath filter query.
 keywords:
 - List construct
-ms.date: 06/08/2020
-ms.localizationpriority: medium
+ms.date: 09/08/2021
 ---
 
-# List
+# List (WSD)
 
 The Web Services for Devices (WSD) `List` construct is a string type that composes a comma-separated list of values specified by the XPath filter query. The `List` construct is defined in WsdBidi.xsd.
 
 | Attribute | Description |
-| --- | --- |
+|--|--|
 | **drvPrinterEvent** | (Optional) A Boolean value that indicates whether the port monitor sends notifications to the driver. A **TRUE** value indicates that the port monitor sends notifications to the driver; **FALSE** indicates that the port monitor does not send notifications to the driver. |
 | **filter** | The XPath query that the WSD monitor applies to the XML document that is specified by the query. See the discussion later in this topic. |
 | **name** | The name of the schema value. |

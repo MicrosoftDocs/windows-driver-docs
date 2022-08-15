@@ -7,11 +7,12 @@ keywords:
 - DI_FLAGSEX_FINISHINSTALL_ACTION
 - DIF_FINISHINSTALL_ACTION
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Implementing Finish-Install Actions
 
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 *Installers* (a class installer, class co-installer, or device co-installer) supply finish-install actions. A finish-install action can run an executable program, create a process, create a thread, or execute code in the device driver installation finish-install process.
 

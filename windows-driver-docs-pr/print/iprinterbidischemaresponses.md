@@ -12,15 +12,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses interface
 
 The IPrinterBidiSchemaResponses interface represents a set of bidi responses populated by USB Bidi Extension JavaScript methods **getSchemas** and **getStatus**.
 
-Members
--------
+## Members
 
 The **IPrinterBidiSchemaResponses** interface inherits from the [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterBidiSchemaResponses** also has these types of members:
 

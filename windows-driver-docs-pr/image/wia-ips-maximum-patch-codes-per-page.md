@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_MAXIMUM\_PATCH\_CODES\_PER\_PAGE
@@ -28,15 +27,13 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 A value of 0 means "no maximum". The application can decrease the current value of this property in order to reduce the time spent on patch code detection and increase the scan speed.
 
 This property is required for all Patch Code Reader items but it can be implemented as a range container containing only the value of 0 (minimum equal with maximum and set to 0, step size of 0).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

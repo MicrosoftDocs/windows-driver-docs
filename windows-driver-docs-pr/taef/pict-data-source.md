@@ -2,7 +2,6 @@
 title: PICT Data Source
 description: PICT Data Source
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PICT Data Source

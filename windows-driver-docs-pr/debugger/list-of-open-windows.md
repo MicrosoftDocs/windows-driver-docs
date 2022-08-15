@@ -3,7 +3,6 @@ title: List of Open Windows
 description: List of Open Windows
 keywords: ["debugging information windows, list of open windows"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # List of Open Windows

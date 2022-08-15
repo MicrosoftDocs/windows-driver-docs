@@ -2,7 +2,6 @@
 description: This topic describes the device capabilities that are required for a Windows app that uses the Windows.Devices.Usb namespace.
 title: How to add USB device capabilities to the app manifest
 ms.date: 01/07/2019
-ms.localizationpriority: medium
 ---
 
 # How to add USB device capabilities to the app manifest
@@ -96,7 +95,7 @@ Here are some examples for defining USB device capabilities:
 </thead>
 <tbody>
 <tr class="odd">
-<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
+<td><pre class="syntax"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
   &lt;Device Id="any"&gt;
     &lt;Function Type="classId:ef 01 01"/&gt;
     &lt;Function Type="name:stillImage"/&gt;
@@ -105,7 +104,7 @@ Here are some examples for defining USB device capabilities:
 <td><p>Allows the app to access any ActiveSync or StillImage interface on any device. The app is not required to specify the vendor/product identifiers because these are known class types.</p></td>
 </tr>
 <tr class="even">
-<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
+<td><pre class="syntax"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
   &lt;Device Id="vidpid:045e 930a"&gt;
     &lt;Function Type="name:vendorSpecific"/&gt;
   &lt;/Device&gt;
@@ -113,7 +112,7 @@ Here are some examples for defining USB device capabilities:
 <td><p>Allows the app to access a vendor-specific interface on the OSR USB Fx2 device.</p></td>
 </tr>
 <tr class="odd">
-<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
+<td><pre class="syntax"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
   &lt;Device Id="vidpid:045e 930a"&gt;
     &lt;Function Type="classId:ff * <em>"/&gt;
   &lt;/Device&gt;
@@ -121,7 +120,7 @@ Here are some examples for defining USB device capabilities:
 <td><p>Allows the app to access a vendor-specific interface on a different version of the OSR USB Fx2 device. Note the classId format: "ff * *". The class code is "ff" followed by a wildcard (</em>) to include any subclass and protocol code.</p></td>
 </tr>
 <tr class="even">
-<td><pre class="syntax" space="preserve"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
+<td><pre class="syntax"><code class="language-xml">&lt;DeviceCapability Name="usb"&gt;
   &lt;Device Id=" vidpid:1234 5678"&gt;
     &lt;Function Type="winUsbId:"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"/&gt;
   &lt;/Device&gt;

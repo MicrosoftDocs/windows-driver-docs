@@ -4,7 +4,6 @@ description: OID_WWAN_DEVICE_SERVICE_SESSION_WRITE directs the miniport driver t
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_DEVICE_SERVICE_SESSION_WRITE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_DEVICE\_SERVICE\_SESSION\_WRITE
@@ -18,8 +17,7 @@ Miniport drivers must process set requests asynchronously, initially returning N
 
 Miniport drivers should return NDIS\_STATUS\_ADAPTER\_NOT\_OPEN if the device service session is not open.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

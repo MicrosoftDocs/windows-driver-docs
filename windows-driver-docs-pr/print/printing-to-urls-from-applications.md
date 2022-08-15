@@ -9,7 +9,6 @@ keywords:
 - print Web pages WDK , printing to URLs
 - Web pages WDK printer , printing to URLs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Printing to URLs from Applications
@@ -54,7 +53,7 @@ Printer data is sent from client to server using the Internet Printing Protocol 
 
 The following figure illustrates the path that print data takes from a client application to a print server spooler, if the client prints to a URL-identified print queue.
 
-![diagram illustrating printing to a url-identified print queue](images/prntpath.png)
+![diagram illustrating printing to a url-identified print queue.](images/prntpath.png)
 
 If both the client and server are Windows 2000 or later systems, as illustrated, RPC protocol is typically (but not always) used for client-server communication. (For more information, see [Installing Print Drivers from a Web Page](installing-print-drivers-from-a-web-page.md).) If the client and server are not both Windows 2000 or later systems, HTTP is used. HTTP is also used for printers that contain internal network cards and support IPP 1.0, and are therefore not connected to a server.
 

@@ -9,7 +9,6 @@ keywords:
 - PDEV WDK GDI
 - DrvEnablePDEV
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PDEV Negotiation

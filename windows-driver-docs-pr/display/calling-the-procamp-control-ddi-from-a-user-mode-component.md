@@ -6,7 +6,6 @@ keywords:
 - user-mode component calls WDK DirectX VA
 - ProcAmp WDK DirectX VA , calling from a user-mode component
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Calling the ProcAmp Control DDI from a User-Mode Component

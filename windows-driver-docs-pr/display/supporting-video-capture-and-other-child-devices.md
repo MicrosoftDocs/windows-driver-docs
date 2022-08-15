@@ -12,7 +12,6 @@ keywords:
 - display driver model WDK Windows Vista , child video capture drivers
 - Windows Vista display driver model WDK , child video capture drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Video Capture and Other Child Devices

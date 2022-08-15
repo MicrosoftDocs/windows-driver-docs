@@ -4,7 +4,6 @@ description: OID_WWAN_VENDOR_SPECIFIC allows miniport drivers to implement vendo
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_VENDOR_SPECIFIC Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_VENDOR\_SPECIFIC
@@ -16,15 +15,13 @@ Query requests are not supported.
 
 Miniport drivers must process set requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_VENDOR\_SPECIFIC**](ndis-status-wwan-vendor-specific.md) status notification containing a vendor-defined structure to implement private objects when they have completed the transaction.
 
-Remarks
--------
+## Remarks
 
 For more information about using this OID, see [WWAN Vendor Specific Operations](./mb-vendor-specific-operations.md).
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support vendor-specific operations.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -2,11 +2,12 @@
 title: Calling the Default DIF Code Handlers
 description: Calling the Default DIF Code Handlers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Calling the Default DIF Code Handlers
 
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 Default DIF code handlers perform system-defined default operations for [DIF codes](/previous-versions//ff541307(v=vs.85)). As described in [Handling DIF Codes](handling-dif-codes.md), [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) calls the default handler for a DIF request after the *class installer* and *co-installer* have first processed the DIF request, but before **SetupDiCallClassInstaller** recalls the co-installers that registered for post-processing of the request.
 

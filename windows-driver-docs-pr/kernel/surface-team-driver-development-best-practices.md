@@ -3,7 +3,6 @@ title: Surface Team Driver Development Best Practices
 description: Surface Team Driver Development Best Practices - Common mistakes made by driver developers to avoid.
 keywords: ["driver development best practices"]
 ms.date: 08/06/2019
-ms.localizationpriority: medium
 ---
 
 # Surface Team Driver Development Best Practices
@@ -153,7 +152,7 @@ Values](./using-ntstatus-values.md).
 
 1. Not running driver verifier with both standard and advanced settings during development and testing. See [Driver Verifier](../devtest/driver-verifier.md). In the advanced settings, it is recommended to enable all rules, except those rules that are related to low resource simulation. It is preferable to run the low resource simulation tests in isolation to make it easier to debug issues.
 2. Not running DevFund test on the driver or the device class the driver is part of with advanced verifier settings enabled. See [How to run the DevFund Tests via the command-line](../devtest/run-devfund-tests-via-the-command-line.md).
-3. Not verifying that the driver is HVCI compliant. See [Evaluate HVCI driver compatibility](../driversecurity/use-device-guard-readiness-tool.md).
+3. Not verifying that the driver is HVCI compliant. See [Implement HVCI compatibile code](../driversecurity/implement-hvci-compatible-code.md).
 4. Not running AppVerifier on WUDFhost.exe during development and testing of user mode drivers. See [Application Verifier](../devtest/application-verifier.md).
 5. Not checking usage of memory using the [\!wdfpoolusage](../debugger/-wdfkd-wdfpoolusage.md)
  debugger extension at runtime to make sure WDF objects are not abandoned. Memory, requests and workitems are common victims of these issues.

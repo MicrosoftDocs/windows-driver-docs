@@ -1,17 +1,14 @@
 ---
 title: EFI_USBFN_ENDPOINT_DIRECTION
-description: EFI_USBFN_ENDPOINT_DIRECTION
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+description: The EFI_USBFN_ENDPOINT_DIRECTION enumeration is used to identify direction of an USB transfer.
+ms.date: 08/20/2021
 ---
 
-# EFI\_USBFN\_ENDPOINT\_DIRECTION
+# EFI_USBFN_ENDPOINT_DIRECTION
 
-
-The **EFI\_USBFN\_ENDPOINT\_DIRECTION** enumeration is used to identify direction of an USB transfer.
+The **EFI_USBFN_ENDPOINT_DIRECTION** enumeration is used to identify direction of an USB transfer.
 
 ## Syntax
-
 
 ```cpp
 typedef enum _EFI_USBFN_ENDPOINT_DIRECTION 
@@ -25,28 +22,18 @@ typedef enum _EFI_USBFN_ENDPOINT_DIRECTION
 
 ## Constants
 
+**EfiUsbEndpointDirectionHostOut**  
+Indicates USB OUT transfer. Direction is from host to device
 
-<a href="" id="efiusbendpointdirectionhostout"></a>**EfiUsbEndpointDirectionHostOut**  
-Indicates USB OUT transfer. D irection is from host to device
-
-<a href="" id="efiusbendpointdirectionhostin"></a>**EfiUsbEndpointDirectionHostIn**  
+**EfiUsbEndpointDirectionHostIn**  
 Indicates USB IN transfer. Direction is from device to host.
 
-<a href="" id="efiusbendpointdirectiondevicetx"></a>**EfiUsbEndpointDirectionDeviceTx**  
+**EfiUsbEndpointDirectionDeviceTx**  
 Indicates USB IN transfer. Direction is from device to host.
 
-<a href="" id="efiusbendpointdirectiondevicerx"></a>**EfiUsbEndpointDirectionDeviceRx**  
+**EfiUsbEndpointDirectionDeviceRx**  
 Indicates USB OUT transfer. Direction is from host to device
 
 ## Requirements
 
-
 **Header:** User generated
-
- 
-
- 
-
-
-
-

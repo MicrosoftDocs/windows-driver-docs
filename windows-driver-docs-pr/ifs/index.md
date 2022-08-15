@@ -1,16 +1,14 @@
 ---
-title: File systems driver design guide
+title: File systems and filter driver design guide
 description: File systems driver design guide
 ms.assetid: 62DE75F7-0211-4173-AF45-84B2DDFDC95C
-ms.date: 09/10/2020
+ms.date: 03/08/2022
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # File systems driver design guide
 
-This section of the WDK provides conceptual information related to file systems and filter drivers. For reference pages that describe the interfaces your driver can implement or call, see the [File System Programming Reference](/windows-hardware/drivers/ddi/_ifsk/).
+This section of the WDK provides design guidelines related to file systems and filter drivers. See the [programming reference](/windows-hardware/drivers/ddi/_ifsk/) for reference pages.
 
 ## File systems
 
@@ -22,7 +20,7 @@ Developing a new file system driver is almost always unnecessary, and requiremen
 
 ## File system filter drivers
 
-A file system filter driver intercepts requests targeted at a file system or another file system filter driver. By intercepting the request before it reaches its intended target, the filter driver can extend or replace functionality provided by the original target of the request. Examples of filter drivers include:
+A file system filter driver, or minifilter, intercepts requests targeted at a file system or another file system filter driver. By intercepting the request before it reaches its intended target, a minifilter can extend or replace functionality provided by the original target of the request. Examples of filter drivers include:
 
 - Anti-virus filters
 - Backup agents

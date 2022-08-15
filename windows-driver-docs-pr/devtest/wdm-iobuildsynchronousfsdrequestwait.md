@@ -9,7 +9,6 @@ api_name:
 - IoBuildSynchronousFsdRequestWait
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoBuildSynchronousFsdRequestWait rule (wdm)
@@ -19,8 +18,7 @@ The **IoBuildSynchronousFsdRequestWait** rule specifies that [**KeWaitForSingleO
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoBuildSynchronousFsdRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildsynchronousfsdrequest)
 [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver)

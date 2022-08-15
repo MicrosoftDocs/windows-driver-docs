@@ -11,7 +11,6 @@ keywords:
 - Winsock Kernel WDK networking , protocol driver support for Winsock
 - network drivers WDK , types
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Learning About Protocol Drivers

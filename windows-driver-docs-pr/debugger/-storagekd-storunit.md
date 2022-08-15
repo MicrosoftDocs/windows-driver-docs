@@ -9,7 +9,6 @@ api_name:
 - storagekd.storunit
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !storagekd.storunit
@@ -44,8 +43,7 @@ Specifies the address of a Storport unit device object. If *Address* is omitted,
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example of the **!storagekd.storunit** display:
 

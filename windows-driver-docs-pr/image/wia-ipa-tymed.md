@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPA\_TYMED
-description: The WIA\_IPA\_TYMED property contains the method setting for image transfer . The WIA minidriver creates and maintains this property.
+title: WIA_IPA_TYMED
+description: The WIA_IPA_TYMED property contains the method setting for image transfer . The WIA minidriver creates and maintains this property.
 keywords: ["WIA_IPA_TYMED Imaging Devices"]
 topic_type:
 - apiref
@@ -10,89 +10,34 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/05/2021
 ---
 
-# WIA\_IPA\_TYMED
+# WIA_IPA_TYMED
 
+The WIA_IPA_TYMED property contains the method setting for image transfer . The WIA minidriver creates and maintains this property.
 
-The WIA\_IPA\_TYMED property contains the method setting for image transfer . The WIA minidriver creates and maintains this property.
+Property Type: VT_I4
 
-## <span id="ddk_wia_ipa_tymed_si"></span><span id="DDK_WIA_IPA_TYMED_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_LIST
+Valid Values: WIA_PROP_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
-An application reads the WIA\_IPA\_TYMED property to determine the minidriver's method of data transfer.
+An application reads the WIA_IPA_TYMED property to determine the minidriver's method of data transfer.
 
-The following table describes the constants that are valid with WIA\_IPA\_TYMED.
+The following table describes the constants that are valid with WIA_IPA_TYMED.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>TYMED_CALLBACK</p></td>
-<td><p>Transfer an image to memory, in bands.</p>
-<p>This constant is obsolete for Windows Vista and later operating systems.</p></td>
-</tr>
-<tr class="even">
-<td><p>TYMED_FILE</p></td>
-<td><p>Transfer an image to a file.</p></td>
-</tr>
-<tr class="odd">
-<td><p>TYMED_MULTIPAGE_CALLBACK</p></td>
-<td><p>Transfer multiple images to memory, in bands.</p>
-<p>This constant is obsolete for Windows Vista and later operating systems.</p></td>
-</tr>
-<tr class="even">
-<td><p>TYMED_MULTIPAGE_FILE</p></td>
-<td><p>Transfer multiple images to a file.</p></td>
-</tr>
-</tbody>
-</table>
+| Value | Definition |
+|--|--|
+| TYMED_CALLBACK | This constant is obsolete. Transfer an image to memory, in bands. |
+| TYMED_FILE | Transfer an image to a file. |
+| TYMED_MULTIPAGE_CALLBACK | This constant is obsolete. Transfer multiple images to memory, in bands. |
+| TYMED_MULTIPAGE_FILE | Transfer multiple images to a file. |
 
- 
+All WIA 2.0 minidrivers must set the initial value of this property to its default value, which is TYMED_FILE.
 
-All WIA 2.0 minidrivers must set the initial value of this property to its default value, which is TYMED\_FILE.
+## Requirements
 
-Requirements
-------------
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

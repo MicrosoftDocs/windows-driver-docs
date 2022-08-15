@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSEVENT\_PINCAPS\_JACKINFOCHANGE
@@ -37,7 +36,7 @@ The `KSEVENT_PINCAPS_JACKINFOCHANGE` event indicates to the audio stack that the
 <tbody>
 <tr class="odd">
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="/previous-versions/ff561744(v=vs.85)" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](/previous-versions/ff561744(v=vs.85))"><strong>KSEVENT</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksevent-structure" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](../stream/ksevent-structure.md)"><strong>KSEVENT</strong></a></p></td>
 <td align="left"><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
@@ -47,13 +46,11 @@ The `KSEVENT_PINCAPS_JACKINFOCHANGE` event indicates to the audio stack that the
 
 The event value type (operation data) is a **KSEVENTDATA** structure that specifies the notification method to use for this event.
 
-Remarks
--------
+## Remarks
 
 For information about how to implement support for the `KSEVENT_PINCAPS_JACKINFOCHANGE` event, see the Remarks section of the [**KSEVENT\_PINCAPS\_FORMATCHANGE**](ksevent-pincaps-formatchange.md) topic.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -75,9 +72,8 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSEVENT**](/previous-versions/ff561744(v=vs.85))
+[**KSEVENT**](../stream/ksevent-structure.md)
 
 [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
 
 [**KSEVENT\_PINCAPS\_FORMATCHANGE**](ksevent-pincaps-formatchange.md)
-

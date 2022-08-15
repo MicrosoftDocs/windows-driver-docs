@@ -2,7 +2,6 @@
 title: Design services and goods pages in a mobile broadband app
 description: Design services and goods pages in a mobile broadband app
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Design services and goods pages in a mobile broadband app
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 
 You can use your mobile broadband app to publicize other related services. Use the recommended layouts to organize various services that you want to promote through the Microsoft Store. An example of service promotion with an organization into categories is provided here.
 
-![services and goods page](images/mb-fig1-services-and-goods-page.png)
+![services and goods page.](images/mb-fig1-services-and-goods-page.png)
 
 ## <span id="Quick_summary"></span><span id="quick_summary"></span><span id="QUICK_SUMMARY"></span>Quick summary
 

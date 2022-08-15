@@ -9,18 +9,16 @@ api_name:
 - PagedCode
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PagedCode rule (storport)
 
 
-This rule verifies that when the [**PAGED\_CODE**](../kernel/mm-bad-pointer.md) macro is called, the driver is at **IRQL &lt; DISPATCH\_LEVEL**. Any code executing at **IRQL &gt;= DISPATCH\_LEVEL** must be in non-paged memory to avoid causing page faults.
+This rule verifies that when the [**PAGED_CODE**](../kernel/paged_code.md) macro is called, the driver is at **IRQL &lt; DISPATCH\_LEVEL**. Any code executing at **IRQL &gt;= DISPATCH\_LEVEL** must be in non-paged memory to avoid causing page faults.
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +43,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
-[**PAGED\_CODE**](../kernel/mm-bad-pointer.md)
+[**PAGED_CODE**](../kernel/paged_code.md)

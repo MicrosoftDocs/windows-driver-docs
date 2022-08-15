@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_DEVICE_SLOT_MAPPING_INFO 
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WWAN_DEVICE_SLOT_MAPPING_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO
@@ -16,8 +15,7 @@ Miniport drivers cannot use this notification to send unsolicited events.
 
 This notification uses the [**NDIS\_WWAN\_DEVICE\_SLOT\_MAPPING\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_slot_mapping_info) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

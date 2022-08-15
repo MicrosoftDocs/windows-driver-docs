@@ -4,7 +4,6 @@ description: SIO_WSK_REGISTER_EXTENSION
 ms.date: 07/18/2017
 keywords:
  - SIO_WSK_REGISTER_EXTENSION Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SIO\_WSK\_REGISTER\_EXTENSION
@@ -68,8 +67,7 @@ The contents of the dispatch table structures are extension interface-specific.
 
 For more information about registering an extension interface, see [Registering an Extension Interface](./registering-an-extension-interface.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

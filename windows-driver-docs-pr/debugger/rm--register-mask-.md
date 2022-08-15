@@ -9,7 +9,6 @@ api_name:
 - rm (Register Mask)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # rm (Register Mask)
@@ -57,8 +56,7 @@ Specifies the mask to use when the debugger displays the registers. *Mask* is a 
 
 
 
-Remarks
--------
+## Remarks
 
 The "m" in the command name must be a lowercase letter.
 

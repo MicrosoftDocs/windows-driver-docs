@@ -8,7 +8,7 @@ metadata:
    author: tedhudek
    ms.author: tedhudek
    ms.topic: hub-page
-   ms.date: 01/14/2020
+   ms.date: 08/05/2021
    ms.localizationpriority: medium
    uhfHeaderId: "MSDocsHeader-WinHW"
    
@@ -72,10 +72,10 @@ conceptualContent:
           itemType: reference
     - title: Build devices
       links:
-        - text: Get started with Windows 10
+        - text: Get started with Windows 11
           url: /windows-hardware/get-started
           itemType: overview
-        - text: Design Windows 10 devices
+        - text: Design Windows 11 devices
           url: /windows-hardware/design
           itemType: overview
         - text: Customize
@@ -129,7 +129,7 @@ additionalContent:
           url: ./dashboard/manage-shipping-labels.md
         - title: Get a code signing certificate
           summary: Learn how to get a code signing certificate to secure your digital information.
-          url: ./dashboard/get-a-code-signing-certificate.md
+          url: ./dashboard/code-signing-cert-manage.md
     # Section
     - title: Resources
       items:
@@ -137,7 +137,7 @@ additionalContent:
           summary: Learn how to create and manage system and driver submissions quickly and easily.
           url: ./dashboard/index.yml
         - title: What's new in driver development
-          summary: Learn about the latest driver development features in Windows 10.
+          summary: Learn about the latest driver development features in Windows 11.
           url: ./what-s-new-in-driver-development.md
         - title: Overview of Driver Technologies
           summary: Entryway to specific Windows driver models, from Bluetooth to USB and more.
@@ -154,4 +154,4 @@ additionalContent:
         - title: WinUSB (Winusb.sys)
           summary: This section describes the generic WinUSB driver (Winusb.sys) and its user-mode component (Winusb.dll) provided by Microsoft for all USB devices.
           url: ./usbcon/winusb.md
-  footer: "[@WindowsDocs on Twitter](https://twitter.com/WindowsDocs) - [OneDevMinute on YouTube](https://aka.ms/OneDevMinute) - [Windows developer support](https://developer.microsoft.com/windows/support) - [Stack Overflow](https://stackoverflow.com/questions/tagged/windows)"
+  footer: "[@WindowsDocs on Twitter](https://twitter.com/WindowsDocs) - [OneDevMinute on YouTube](/shows/One-Dev-Minute/?WT.mc_id=odm-c9-niner) - [Windows developer support](https://developer.microsoft.com/windows/support) - [Stack Overflow](https://stackoverflow.com/questions/tagged/windows)"

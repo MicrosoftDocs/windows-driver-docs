@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # DEBUG\_REQUEST\_GET\_CAPTURED\_EVENT\_CODE\_OFFSET
@@ -35,8 +34,7 @@ The memory at the instruction pointer for the current event is not valid.
 
 This method may also return error values. See [**Return Values**](./hresult-values.md) for more details.
 
-Remarks
--------
+## Remarks
 
 The memory at the instruction pointer for the current event can be read using the [**Request**](request.md) operation's [**DEBUG\_REQUEST\_READ\_CAPTURED\_EVENT\_CODE\_STREAM**](debug-request-read-captured-event-code-stream.md).
 

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIOGFX\_RENDERTARGETDEVICEID
@@ -46,7 +45,7 @@ The KSPROPERTY\_AUDIOGFX\_RENDERTARGETDEVICEID property is used to inform a GFX 
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>WCHAR array</p></td>
 </tr>
 </tbody>
@@ -60,8 +59,7 @@ The property value (operation data) is a WCHAR array that contains the device ID
 
 A KSPROPERTY\_AUDIOGFX\_RENDERTARGETDEVICEID property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The target for this set-only property request is a GFX filter that is configured for use as either a render- or render/capture-GFX filter.
 
@@ -69,8 +67,7 @@ To determine the size of the buffer needed to hold the property value, see [Basi
 
 For additional information about device IDs, see [Device Identification Strings](../install/device-identification-strings.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -88,5 +85,4 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
-
+[**KSPROPERTY**](../stream/ksproperty-structure.md)

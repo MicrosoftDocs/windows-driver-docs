@@ -1,5 +1,5 @@
 ---
-title: pat
+title: pat (WinDbg)
 description: The pat extension displays the Page Attribute Table (PAT) registers for the target processor.
 keywords: ["PAT", "pat Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - pat
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pat

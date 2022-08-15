@@ -15,7 +15,6 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_AspPage method
@@ -23,8 +22,7 @@ ms.localizationpriority: medium
 
 The **AspPage** property enables an ASP Web page to obtain the directory path to the initial ASP file used for describing printer-specific details.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_AspPage(
@@ -33,8 +31,7 @@ HRESULT get_AspPage(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *dwPage* \[in\]  
 Must be 1.
@@ -42,8 +39,7 @@ Must be 1.
 *pVal* \[out\]  
 Caller-supplied pointer to a location to receive a size-prefixed Unicode string specifying the directory path to the initial Web page describing printer-specific details.
 
-Return value
-------------
+## Return value
 
 This method can return one of these values.
 
@@ -92,8 +88,7 @@ The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Ia
     str = objPrinter.ASPPage(1)
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

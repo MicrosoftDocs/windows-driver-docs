@@ -4,7 +4,6 @@ description: This section contains kernel mode network driver topics for the Ntd
 keywords:
 - Ntddndis.h network drivers
 ms.date: 08/08/2017
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
@@ -225,6 +224,13 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_PNP_WAKE_UP_PATTERN_LIST](oid-pnp-wake-up-pattern-list.md)
 * [OID_QOS_CURRENT_CAPABILITIES](oid-qos-current-capabilities.md)
 * [OID_QOS_HARDWARE_CAPABILITIES](oid-qos-hardware-capabilities.md)
+* [OID_QOS_OFFLOAD_CREATE_SQ](oid-qos-offload-create-sq.md)
+* [OID_QOS_OFFLOAD_CURRENT_CAPABILITIES](oid-qos-offload-current-capabilities.md)
+* [OID_QOS_OFFLOAD_DELETE_SQ](oid-qos-offload-delete-sq.md)
+* [OID_QOS_OFFLOAD_ENUM_SQS](oid-qos-offload-enum-sqs.md)
+* [OID_QOS_OFFLOAD_HARDWARE_CAPABILITIES](oid-qos-offload-hardware-capabilities.md)
+* [OID_QOS_OFFLOAD_SQ_STATS](oid-qos-offload-sq-stats.md)
+* [OID_QOS_OFFLOAD_UPDATE_SQ](oid-qos-offload-update-sq.md)
 * [OID_QOS_OPERATIONAL_PARAMETERS](oid-qos-operational-parameters.md)
 * [OID_QOS_PARAMETERS](oid-qos-parameters.md)
 * [OID_QOS_REMOTE_PARAMETERS](oid-qos-remote-parameters.md)

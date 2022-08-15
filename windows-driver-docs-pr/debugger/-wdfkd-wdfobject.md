@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfobject
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfobject
@@ -39,8 +38,7 @@ KMDF 1, UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 If the Kernel-Mode Driver Framework (KMDF) verifier is enabled for a driver and the public handle type was marked for tracking, the display from the **!wdfkd.wdfobject** extension includes the tag tracker (that is, the tracking object), as in the following example.
 

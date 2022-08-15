@@ -4,7 +4,6 @@ description: The OID_WAN_CO_SET_COMP_INFO OID notifies the miniport driver of th
 ms.date: 08/08/2017
 keywords: 
  -OID_WAN_CO_SET_COMP_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WAN\_CO\_SET\_COMP\_INFO
@@ -32,13 +31,11 @@ Specifies a structure containing information about compression capabilities for 
 <a href="" id="recvcapabilities"></a>**RecvCapabilities**  
 Specifies a structure containing information about compression capabilities for receiving data.
 
-Remarks
--------
+## Remarks
 
 For specifics of the NDIS\_WAN\_COMPRESS\_INFO structure, see [OID\_WAN\_GET\_COMP\_INFO](/previous-versions/windows/hardware/network/ff561202(v=vs.85)).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

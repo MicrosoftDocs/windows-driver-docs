@@ -4,16 +4,16 @@ description: WDI_TLV_FT_R1KHID is an unused TLV.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_FT_R1KHID Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_FT\_R1KHID
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_FT\_R1KHID is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

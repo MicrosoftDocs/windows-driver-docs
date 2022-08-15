@@ -4,7 +4,6 @@ description: Bus drivers typically handle this request for their child devices (
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_EJECT Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_EJECT
@@ -16,13 +15,11 @@ Bus drivers typically handle this request for their child devices (child PDOs) t
 
 0x11
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP to direct the appropriate driver or drivers to eject the device from its slot.
 
@@ -47,8 +44,7 @@ On success, a bus driver sets **Irp-&gt;IoStatus.Information** to zero.
 
 If a bus driver does not handle this IRP, it leaves **Irp-&gt;IoStatus.Status** as is and completes the IRP.
 
-Operation
----------
+## Operation
 
 For the device to be ejected, the device must be in the D3 device power state (off) and must be unlocked (if the device supports locking).
 
@@ -62,8 +58,7 @@ Reserved for system use. Drivers must not send this IRP.
 
 Instead, see the reference page for the [**IoRequestDeviceEject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iorequestdeviceeject) routine.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

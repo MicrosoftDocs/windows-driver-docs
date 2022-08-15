@@ -9,7 +9,6 @@ api_name:
 - ~s (Change Current Processor)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ~s (Change Current Processor)
@@ -54,8 +53,7 @@ Specifies the number of the processor to debug.
 
  
 
-Remarks
--------
+## Remarks
 
 You can specify processors only in kernel mode. In user mode, the tilde (~) refers to a thread.
 

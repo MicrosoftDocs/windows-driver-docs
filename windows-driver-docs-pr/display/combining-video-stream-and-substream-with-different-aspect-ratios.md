@@ -8,7 +8,6 @@ keywords:
 - aspect ratios WDK DirectX VA
 - streams combined WDK DirectX VA
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 
@@ -24,7 +23,7 @@ In the following example, the VMR calls the driver with a video stream destinati
 
 The following diagram shows how, in this example, the video stream, video substream, and background color are combined.
 
-![diagram illustrating combining a video stream, video substream, and background color with different aspect ratios](images/trgrect2.png)
+![diagram illustrating combining a video stream, video substream, and background color with different aspect ratios.](images/trgrect2.png)
 
 In the preceding example, the rectangles are as follows:
 

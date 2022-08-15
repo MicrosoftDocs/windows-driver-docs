@@ -9,7 +9,6 @@ api_name:
 - vertarget (Show Target Computer Version)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # vertarget (Show Target Computer Version)

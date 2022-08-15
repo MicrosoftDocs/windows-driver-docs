@@ -10,7 +10,6 @@ keywords:
 - CPSUI WDK print , about CPSUI
 - property sheet pages WDK print , about CPSUI with printer drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using CPSUI with Printer Drivers
@@ -37,7 +36,7 @@ The print spooler, in conjunction with [printer interface DLLs](printer-interfac
 
 The following diagram illustrates these steps.
 
-![diagram illustrating the modules involved in displaying a property sheet](images/usecpsui.png)
+![diagram illustrating the modules involved in displaying a property sheet.](images/usecpsui.png)
 
 As the application user traverses the property sheet pages and modifies option values, the operating system notifies CPSUI of page events and CPSUI, in turn, calls the page event callback supplied by the printer interface DLL. The page event callback handles page events and stores newly selected option values internally, as necessary.
 

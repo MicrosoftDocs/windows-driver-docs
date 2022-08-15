@@ -2,7 +2,6 @@
 title: Device Metadata Error Codes
 description: Device Metadata Error Codes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Metadata Error Codes

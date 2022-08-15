@@ -1,8 +1,7 @@
-﻿---
+---
 title: Download the MITT software package
 description: Download the MITT software package.
 ms.date: 04/27/2021
-ms.localizationpriority: medium
 ---
 
 # Download the MITT software package
@@ -13,14 +12,14 @@ The MITT software package contains several tools to be used to test simple perip
 
 **Size**: 20.2 MB
 
-[**Download the MITT software package**](https://download.microsoft.com/download/7/7/0/7703f03c-9d1f-45fc-a625-9647dc495ee2/mitt.msi)
+[**Download the MITT software package**](https://download.microsoft.com/download/7/7/0/7703F03C-9D1F-45FC-A625-9647DC495EE2/MITT.msi)
 
 ## Tools in the software package
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -81,4 +80,4 @@ The MITT software package contains several tools to be used to test simple perip
 
 ## Related topics
 
-[Get started with MITT](/windows-hardware/drivers/spb/get-started-with-mitt---)
+[Get started with MITT](./get-started-with-mitt---.md)

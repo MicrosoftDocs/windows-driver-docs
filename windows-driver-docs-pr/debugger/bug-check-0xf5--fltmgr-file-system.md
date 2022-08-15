@@ -9,7 +9,6 @@ api_name:
 - FLTMGR_FILE_SYSTEM
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF5: FLTMGR\_FILE\_SYSTEM
@@ -105,13 +104,11 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 
  
 
-Cause
------
+## Cause
 
 The cause of the problem is indicated by the value of Parameter 1. See the table in the Parameters section.
 
-Resolution
-----------
+## Resolution
 
 If Parameter 1 equals **0x66**, you can debug this problem by verifying that your minifilter driver has registered a post-operation callback for this operation. The current operation can be found in the callback data structure. (See Parameter 2.) Use the **!fltkd.cbd** debugger extension.
 

@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_DIRECTED_FRAMES_XMIT OID specifies the numb
 ms.date: 11/01/2019
 keywords: 
  -OID_GEN_DIRECTED_FRAMES_XMIT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_DIRECTED\_FRAMES\_XMIT
@@ -29,15 +28,13 @@ Supported.
 <a href="" id="ndis-5-1-drivers"></a>NDIS 5.1 drivers  
 Optional.
 
-Remarks
--------
+## Remarks
 
 The count is identical to the *ifOutUcastPkts* counter described in RFC 2863.
 
 For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -9,7 +9,6 @@ api_name:
 - wudfext.wudfqueue
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wudfext.wudfqueue
@@ -52,8 +51,7 @@ Specifies the address of the **IWDFIoQueue** interface to display information ab
 
 For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The following is an example of the **!wudfext.wudfqueue** display:
 

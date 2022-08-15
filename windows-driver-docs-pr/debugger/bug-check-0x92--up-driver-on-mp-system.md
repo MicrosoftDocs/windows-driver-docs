@@ -9,7 +9,6 @@ api_name:
 - UP_DRIVER_ON_MP_SYSTEM
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x92: UP\_DRIVER\_ON\_MP\_SYSTEM
@@ -57,8 +56,7 @@ The UP\_DRIVER\_ON\_MP\_SYSTEM bug check has a value of 0x00000092. This bug che
 
  
 
-Cause
------
+## Cause
 
 A driver that is compiled to work only on uniprocessor machines has been loaded, but the Microsoft Windows operating system is running on a multiprocessor system with more than one active processor.
 

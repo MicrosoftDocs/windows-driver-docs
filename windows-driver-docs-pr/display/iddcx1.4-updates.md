@@ -1,11 +1,10 @@
 ---
 title: Updates for IddCx versions 1.4 and later
 description: IddCx version 1.4 updates for indirect display drivers
-ms.date: 09/28/2020
+ms.date: 08/09/2022
 keywords:
 - Indirect display driver, IddCx versions 1.4 and later
 - IDD, IddCx versions 1.4 and later
-ms.localizationpriority: medium
 ---
 
 # Updates for IddCx versions 1.4 and later
@@ -16,4 +15,4 @@ The majority of IddCx 1.4 updates are to support remote session IDDs. Remote IDD
 
 [IddCx 1.4 updates for console and remote IDDs](iddcx1.4-updates-for-console-and-remote-idds.md)
 
-[IddCx 1.4 updates for remote IDDs](iddcx1.4-updates-for-remote-idds.md)
+[IddCx 1.4 updates for remote IDDs only](iddcx1.4-updates-for-remote-idds.md)

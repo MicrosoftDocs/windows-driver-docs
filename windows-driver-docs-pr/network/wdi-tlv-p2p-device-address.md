@@ -4,10 +4,11 @@ description: WDI_TLV_P2P_DEVICE_ADDRESS is a TLV that contains the device addres
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_DEVICE_ADDRESS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_DEVICE\_ADDRESS
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_DEVICE\_ADDRESS is a TLV that contains the device address of the Group Owner.
@@ -31,8 +32,7 @@ The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/d
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

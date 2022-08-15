@@ -3,7 +3,6 @@ title: Failure to Validate Object Handles
 description: Failure to Validate Object Handles
 keywords: ["reliability WDK kernel , object handle validation", "validation failures WDK kernel", "object handles WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Failure to Validate Object Handles

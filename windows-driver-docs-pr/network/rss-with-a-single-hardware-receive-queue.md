@@ -9,7 +9,6 @@ keywords:
 - single receive queue WDK RSS
 - multiple receive queues WDK RSS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # RSS with a Single Hardware Receive Queue
@@ -22,7 +21,7 @@ Miniport drivers can support RSS for NICs that support RSS hash calculation and 
 
 The following figure illustrates RSS processing with a single receive descriptor queue.
 
-![diagram illustrating rss processing with a single receive descriptor queue](images/rssswstack.png)
+![diagram illustrating rss processing with a single receive descriptor queue.](images/rssswstack.png)
 
 In the figure, the dashed arrows represent an alternate path for the receive processing. RSS cannot control the CPU that receives the initial ISR call.
 

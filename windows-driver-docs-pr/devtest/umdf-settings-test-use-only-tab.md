@@ -2,7 +2,6 @@
 title: UMDF Settings (Test Use Only) Tab
 description: This topic details WDF Verifier's UMDF Settings (Test Use Only) page.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # UMDF Settings (Test Use Only) Tab
@@ -12,7 +11,7 @@ This topic details WDF Verifier's **UMDF Settings (Test Use Only)** page. On thi
 
 Use these settings for testing purposes. When you're done testing, click the **Restore Defaults** button. Otherwise, your computer may exhibit significant performance reduction.
 
-![screen grab of umdf settings (test use only) tab](images/wdfverifier-tab4.png)
+![screen grab of umdf settings (test use only) tab.](images/wdfverifier-tab4.png)
 
 By default, the [UMDF In-Flight Recorder (IFR)](../wdf/using-the-framework-s-event-logger.md) is stored in non-paged memory so that the log can be preserved in the event of a system crash. In rare cases, however, you might need to free up space in non-paged memory. For example, perhaps you are stress testing a system with multiple UMDF drivers, [device pooling](../wdf/using-device-pooling-in-umdf-drivers.md) is off, and non-paged memory is at a premium. You can obtain a small increase in available non-paged memory by selecting the **Use Paged pool** box.
 

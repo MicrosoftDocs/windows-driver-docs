@@ -1,8 +1,7 @@
 ---
 title: SR-IOV Architecture
-description: SR-IOV Architecture
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+description: Overview of the single root I/O virtualization (SR-IOV) interface and its components.
+ms.date: 03/16/2022
 ---
 
 # SR-IOV Architecture
@@ -12,7 +11,7 @@ This section provides a brief overview of the single root I/O virtualization (SR
 
 The following figure shows the components of the SR-IOV starting with NDIS 6.30 in Windows Server 2012.
 
-![stack diagram showing sr-iov adapter with a management parent partition and two child partitions containing guest operating systems](images/sriovarchitecture.png)
+![stack diagram showing sr-iov adapter with a management parent partition and two child partitions containing guest operating systems.](images/sriovarchitecture.png)
 
 The SR-IOV interface consists of the following components:
 

@@ -4,7 +4,6 @@ description: WDI_TLV_P2P_ADVERTISED_PREFIX_ENTRY is a TLV that contains a Wi-Fi 
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_ADVERTISED_PREFIX_ENTRY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_ADVERTISED\_PREFIX\_ENTRY
@@ -32,8 +31,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

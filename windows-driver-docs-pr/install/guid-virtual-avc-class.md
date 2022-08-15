@@ -10,7 +10,6 @@ api_location:
 - Avc.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,15 +43,13 @@ The GUID_VIRTUAL_AVC_CLASS [device interface class](./overview-of-device-interfa
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied [AV/C client driver](../stream/av-c-client-drivers2.md) [Avc.sys](../stream/using-avc-sys.md) registers an instance of GUID_VIRTUAL_AVC_CLASS to represent a virtual AV/C device.
 
 For information about the device interface class for AV/C units on a 1394 bus, see [**GUID_AVC_CLASS**](guid-avc-class.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

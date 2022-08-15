@@ -1,17 +1,14 @@
 ---
 title: Using a Universal INF File
 description: If you are building a universal or mobile driver package, you must use a universal INF file.
-ms.date: 04/28/2020
-ms.localizationpriority: medium
+ms.date: 01/14/2022
 ---
 
 # Using a Universal INF File
 
-Some editions of Windows use only a subset of the driver installation methods that are available on Windows 10 Desktop. An INF file for non-Desktop versions of Windows must perform only additive operations that do not depend on the runtime behavior of the system. An INF file with such restricted syntax is called a *universal INF file*.
+Some editions of Windows use only a subset of the driver installation methods that are available on Windows 10 Desktop. An INF file for non-Desktop versions of Windows must perform only additive operations that are fully described in the INF file. An INF file with such restricted syntax is called a *universal INF file*.
 
-A universal INF file installs predictably, with the same result each time. The results of the installation do not depend on the runtime behavior of the system. For example, co-installer references are not valid in a universal INF file because code in an additional DLL cannot be executed on an offline system.
-
-A driver package with a universal INF file can be configured in advance and added to an offline system.
+A universal INF file installs predictably, with the same result each time. The results of the installation do not depend on the execution of components outside of the system provided device installation components. For example, co-installer references are not valid in a universal INF file because requiring code in an additional DLL to run as part of installation means that the system cannot determine the result of the installation just from the INF file.
 
 To test if your INF is universal, use `infverif /u`.
  
@@ -23,7 +20,7 @@ If you are building a Windows Desktop Driver package, you don't have to use a un
 
 ## Which INF sections are invalid in a universal INF file?
 
-You can use any INF section in a universal INF file except for the following:
+You can use any system defined INF section in a universal INF file except for the following:
 
 -   [**INF ClassInstall32 Section**](inf-classinstall32-section.md)
 -   [**INF DDInstall.CoInstallers Section**](inf-ddinstall-coinstallers-section.md)
@@ -36,8 +33,7 @@ The [**INF DefaultInstall Section**](inf-defaultinstall-section.md) is valid onl
 
 ## Which INF directives are invalid in a universal INF file?
 
-
-You can use any INF directive in a universal INF file except for the following:
+You can use any system defined INF directive in a universal INF file except for the following:
 
 -   [**INF BitReg Directive**](inf-bitreg-directive.md)
 -   [**INF DelFiles Directive**](inf-delfiles-directive.md)
@@ -64,13 +60,13 @@ The following directives are valid with some caveats:
 		-	HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows Media Foundation
 		-	HKLM\SOFTWARE\WOW3232Node\Microsoft\Windows Media Foundation
 
--   [**INF CopyFiles Directive**](inf-copyfiles-directive.md) is valid only if the [destination directory](inf-destinationdirs-section.md) is one of the following:
+-   [**INF CopyFiles Directive**](inf-copyfiles-directive.md) is valid only if the [destination directory](inf-destinationdirs-section.md) is one of the following [*dirids*](using-dirids.md):
 
-    -   11 (corresponds to %WINDIR%\\System32)
-    -   12 (corresponds to %WINDIR%\\System32\\Drivers)
-    -   13 (corresponds to the directory under %WINDIR%\\System32\\DriverStore\\FileRepository where the driver is stored)  
-        	**Note:**  CopyFiles may not be used to rename a file for which **DestinationDirs** includes *dirid* 13. Also, *dirid* 13 is only valid on Windows 10 products for a limited subset of device installation scenarios.  Please consult guidance and samples for your specific device class for more details.
-    -   10,SysWOW64 (corresponds to %WINDIR%\\SysWOW64)
+    -   11
+    -   12
+    -   13 (see [Run from Driverstore](../develop/run-from-driver-store.md))  
+        	**Note:**  CopyFiles may not be used to rename a file for which **DestinationDirs** includes *dirid* 13.
+    -   10,SysWOW64
 	-   10,*vendor-specific subdirectory name*  
 			**Note:** In Windows 10, version 1709, using *dirid* 10 with a vendor-specific subdirectory name is valid in a universal INF as measured using the [InfVerif](../devtest/infverif.md) tool.  In later releases, this value may not be supported.  We recommend moving to *dirid* 13.
 

@@ -4,7 +4,6 @@ description: WDI_TLV_SET_ENCAPSULATION_OFFLOAD_V4_PARAMETERS is a TLV that is us
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SET_ENCAPSULATION_OFFLOAD_V4_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V4\_PARAMETERS
@@ -31,8 +30,7 @@ The size (in bytes) of a UINT8.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -7,7 +7,6 @@ keywords:
 - IRPs WDK Winsock Kernel
 - functions WDK Winsock Kernel
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using IRPs with Winsock Kernel Functions

@@ -4,7 +4,6 @@ description: OID_WWAN_USSD sends Unstructured Supplementary Service Data (USSD) 
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_USSD Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_USSD
@@ -20,8 +19,7 @@ Windows does not send an OID\_WWAN\_USSD request to a miniport driver if a previ
 
 When a request is canceled, the miniport driver must respond to both the canceled request and the cancel request.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

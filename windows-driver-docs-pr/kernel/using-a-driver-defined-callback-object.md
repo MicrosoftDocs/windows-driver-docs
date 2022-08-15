@@ -3,7 +3,6 @@ title: Using a Driver-Defined Callback Object
 description: Using a Driver-Defined Callback Object
 keywords: ["callback objects WDK kernel", "driver-defined callback objects WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using a Driver-Defined Callback Object
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 To use a callback object defined by another driver, a driver opens the object, then registers a routine to be called when the callback is triggered, as shown in the following figure. The driver requesting notification must know the name of the callback object and must understand the semantics of the arguments passed to the callback routine.
 
-![diagram illustrating registration for callback notification](images/3reg-cbk.png)
+![diagram illustrating registration for callback notification.](images/3reg-cbk.png)
 
 Before it can open the object, the driver must call [**InitializeObjectAttributes**](/windows/win32/api/ntdef/nf-ntdef-initializeobjectattributes) to create an attribute block, specifying the name of the object. After it has a pointer to an attribute block, it calls [**ExCreateCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-excreatecallback), passing the attribute pointer, a location in which to receive a handle to the callback, and **FALSE** for the *Create* parameter, indicating that it requires an existing callback object.
 

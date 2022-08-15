@@ -4,11 +4,12 @@ description: OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE requests that the IHV com
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_SEND\_AP\_ASSOCIATION\_RESPONSE
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_TASK\_SEND\_AP\_ASSOCIATION\_RESPONSE requests that the IHV component sends an Association Response to a peer device that has recently sent an association request.
@@ -38,8 +39,7 @@ If the send fails for any reason, an empty [NDIS\_STATUS\_WDI\_INDICATION\_SEND\
 
 [NDIS\_STATUS\_WDI\_INDICATION\_SEND\_AP\_ASSOCIATION\_RESPONSE\_COMPLETE](ndis-status-wdi-indication-send-ap-association-response-complete.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

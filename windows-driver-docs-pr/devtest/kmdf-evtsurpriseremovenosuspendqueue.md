@@ -9,7 +9,6 @@ api_name:
 - EvtSurpriseRemoveNoSuspendQueue
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # EvtSurpriseRemoveNoSuspendQueue rule (kmdf)
@@ -19,8 +18,7 @@ The **EvtSurpriseRemoveNoSuspendQueue** rule specifies that WDF Drivers shouldnâ
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfIoQueueDrain**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuedrain)
 [**WdfIoQueueDrainSynchronously**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuedrainsynchronously)

@@ -5,8 +5,7 @@ keywords:
 - Event Tracing for Windows WDK , kernel-mode
 - ETW WDK , kernel-mode
 - kernel-mode ETW WDK software tracing
-ms.date: 07/09/2018
-ms.localizationpriority: medium
+ms.date: 10/26/2021
 ---
 
 # Adding Event Tracing to Kernel-Mode Drivers
@@ -48,10 +47,7 @@ During development, you are most likely interested in tracing events that help y
 
 The instrumentation manifest is an XML file that provides a formal description of the events a provider will raise. The instrumentation manifest identifies the event provider, specifies the channel or channels (up to eight), and describes the events, and templates the events use. Additionally, the instrumentation manifest allows for string localization, so you can localize the trace messages. The event system and event consumers can make use of the structured XML data provided in the manifest to perform queries and analysis.
 
-For information about the instrumentation manifest, see [Writing an Instrumentation Manifest (Windows)](/windows/desktop/WES/writing-an-instrumentation-manifest) and [Using Windows Event Log (Windows)](/windows/desktop/WES/using-windows-event-log).
-
-> [!NOTE]
-> Although you can author an instrumentation manifest manually, you should consider using the ECManGen.exe tool that is included in the %WindowsSdkDir%\\bin\\x64%WindowsSdkDir%\\bin\\x86\\ folder when you install the WDK and Visual Studio. The %WindowsSdkDir% represents the path to the Windows kits directory where this version of the WDK is installed, for example, C:\\Program Files (x86)\\Windows Kits\\8.1. The ECManGen.exe is an application that guides you through creating a manifest from scratch without ever having to use XML tags. Having knowledge of the information in the [Writing an Instrumentation Manifest (Windows)](/windows/desktop/WES/writing-an-instrumentation-manifest) section and in the [EventManifest Schema (Windows)](/windows/desktop/WES/eventmanifestschema-schema) section will help when using the tool.
+For information about the instrumentation manifest, see [Writing an Instrumentation Manifest (Windows)](/windows/desktop/WES/writing-an-instrumentation-manifest), [EventManifest Schema (Windows)](/windows/desktop/WES/eventmanifestschema-schema) and [Using Windows Event Log (Windows)](/windows/desktop/WES/using-windows-event-log).
 
 The following instrumentation manifest shows an event provider that uses the name "Sample Driver." Note that this name doesn't have to be the same as the name of the driver binary. The manifest also specifies a GUID for the provider and the paths to the message and resource files. The message and resource files let ETW know where to locate the resources needed to decode and report the events. These paths point to the location of the driver (.sys) file. The driver must be installed in the specified directory on the target computer.
 

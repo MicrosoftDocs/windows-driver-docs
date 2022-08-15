@@ -1,5 +1,5 @@
 ---
-title: ca
+title: ca (WinDbg)
 description: The ca extension displays information about a control area.
 keywords: ["control area", "ca Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ca
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ca
@@ -102,8 +101,7 @@ If none of the last three flags are specified, all three types of control area a
 
 For information about control areas, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 To get a list of the control areas of all mapped files, use the [**!memusage**](-memusage.md) extension.
 

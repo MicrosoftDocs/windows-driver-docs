@@ -2,7 +2,6 @@
 description: This section introduces you to USB driver development.
 title: First steps for USB client driver development
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # First steps for USB client driver development

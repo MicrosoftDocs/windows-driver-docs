@@ -4,7 +4,6 @@ description: The TCP/IP Const construct defines the data type and value that mus
 keywords:
 - Const construct
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Const (TCP/IP)

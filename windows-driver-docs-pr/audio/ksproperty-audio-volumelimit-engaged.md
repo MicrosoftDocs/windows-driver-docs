@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_VOLUMELIMIT\_ENGAGED
@@ -65,8 +64,7 @@ Whenever the value of the property changes, regardless of whether it is automati
 
 The KSPROPERTY\_AUDIO\_VOLUMELIMIT\_ENGAGED property request returns STATUS\_SUCCESS when the request is successful.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

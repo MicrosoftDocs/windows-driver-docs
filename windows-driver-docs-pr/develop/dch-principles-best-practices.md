@@ -1,8 +1,7 @@
 ---
 title: DCH Design Principles and Best Practices
 description: Describes DCH principles for Windows drivers.
-ms.date: 04/28/2020
-ms.localizationpriority: medium
+ms.date: 03/18/2022
 ---
 
 # DCH Design Principles and Best Practices
@@ -21,9 +20,9 @@ There are three design principles to consider for a Windows Driver to be DCH-com
 
 The acronym "DCH" refers to the principles listed above. Please refer to the [DCH-Compliant Driver Package Example](dch-example.md) page to see how a driver sample can apply DCH design principles.
 
-## Overview 
+## Overview
 
-Driver packages that are DCH-compliant contain an INF file and binaries that install and run on [Universal Windows Platform (UWP)-based editions of Windows 10](target-platforms.md). They also install and run on other editions of Windows 10 that share a common set of interfaces.
+Driver packages that are DCH-compliant contain an INF file and binaries that install and run on [Universal Windows Platform (UWP)-based editions of Windows](target-platforms.md). They also install and run on other editions of Windows 10 and 11 that share a common set of interfaces.
 
 DCH-compliant driver binaries can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md), or the Windows Driver Model (WDM).
 
@@ -53,7 +52,7 @@ To create a driver package that follows DCH design principles, follow these step
 
 ## Best practices
 
-*  If you're using the **Windows Driver Kit (WDK) Version 2004** with the latest available Visual Studio, set the **Target Platform** value in the driver project properties to `Windows Driver`.  This automatically adds the correct libraries, and it runs the proper INF validation and ApiValidator as a part of build.  To do this:
+*  If you're using the Windows Driver Kit (WDK) with the latest available Visual Studio, set the **Target Platform** value in the driver project properties to `Windows Driver`.  This automatically adds the correct libraries, and it runs the proper INF validation and ApiValidator as a part of build.  To do this:
 
     1. Open the driver project properties.
     2. Select **Driver Settings**.
@@ -61,4 +60,4 @@ To create a driver package that follows DCH design principles, follow these step
    
 *  If your INF performs any custom setup actions that depend on the target platform, consider separating them out into an extension INF. You can update an extension INF independently from the base driver package to make it more robust and serviceable. For more information, see [Using an extension INF file](../install/using-an-extension-inf-file.md).
 *  If you want to provide an application that works with your device, include a UWP app. For more information, see [Hardware Support App (HSA): Steps for driver developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).  An OEM can preload such an app by using [DISM - Deployment Image Servicing and Management](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows). Or, users can manually download the app from the Microsoft Store.
-*  In the [**INF DestinationDirs section**](../install/inf-destinationdirs-section.md), set the destination directories to [dirid 13](../install/using-dirids.md) to make the driver run from the [driver store](driver-isolation.md#run-from-driver-store). This setting won't work for some devices.
+*  In the [**INF DestinationDirs section**](../install/inf-destinationdirs-section.md), set the destination directories to [dirid 13](../install/using-dirids.md) to make the driver [run from the driver store](./run-from-driver-store.md). This setting won't work for some devices.

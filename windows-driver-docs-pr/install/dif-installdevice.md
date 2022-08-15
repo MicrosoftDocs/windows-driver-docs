@@ -10,7 +10,6 @@ api_location:
 - Setupapi.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -123,8 +122,7 @@ In the rare situation where the class installer must perform operations after al
 
 6.  Return NO_ERROR if the class installer successfully completed the installation operation or return a Win32 error if the installation operation failed.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

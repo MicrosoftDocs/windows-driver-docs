@@ -1,5 +1,5 @@
 ---
-title: ks.dump
+title: ks.dump (WinDbg)
 description: The ks.dump extension displays the specified object.
 keywords: ["ks.dump Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ks.dump
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.dump
@@ -70,8 +69,7 @@ Show all pin states.
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The **!ks.dump** command recognizes most AVStream objects, including pins, filters, factories, devices, pipes, and stream pointers. This command also recognizes some stream class structures, including stream objects, filter instances, device extensions, and SRBs.
 

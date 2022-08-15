@@ -2,7 +2,6 @@
 title: Rules for coalescing TCP/IP segments
 description: This section defines the rules for coalescing TCP/IP segments in miniport drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Rules for Coalescing TCP/IP Segments
@@ -35,9 +34,9 @@ The following terms are used in the flowcharts:
 |**SEG.TSecr**|The **Timestamp Echo Reply** in the currently received segment.|
 |**H.TSecr**|The **Timestamp Echo Reply** in the currently tracked SCU.|
 
-![flowchart describing the rules for coalescing segments and updating tcp headers](images/rsc-rules1.png)
+![flowchart describing the rules for coalescing segments and updating tcp headers.](images/rsc-rules1.png)
 
-![flowchart describing mechanisms for distinguishing valid duplicate acks and window updates](images/rsc-rules2.png)
+![flowchart describing mechanisms for distinguishing valid duplicate acks and window updates.](images/rsc-rules2.png)
 
 The flowcharts show that the miniport driver may coalesce segments with different ACK numbers. However, the miniport driver must obey the following rules regarding ACK numbers, as shown in the first flowchart above:
 
@@ -95,12 +94,12 @@ The miniport driver may treat a duplicate ACK segment equivalent to a pure ACK a
 
 The TCP timestamp option is the only option that may be legally coalesced. Coalescing segments with this option is left as an implementation-specific decision. If the miniport driver coalesces segments with the timestamp option, then it must follow the rules outlined in the following flowchart:
 
-![flowchart describing rules for coalescing segments with tcp timestamp option](images/rsc-rules3.png)
+![flowchart describing rules for coalescing segments with tcp timestamp option.](images/rsc-rules3.png)
 
 >[!NOTE]
 >The check **SEG.TSval** &gt;= **H.TSval** must be performed using modulo-232 arithmetic similar to that used for TCP sequence numbers. See [RFC 793](https://www.ietf.org/rfc/rfc793.txt), section 3.3.
 
-When indicating a coalesced segment, the following out-of-band information must be indicated as follows by setting the **NetBufferListInfo** member of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure that describes the coalesced segment:
+When indicating a coalesced segment, the following out-of-band information must be indicated as follows by setting the **NetBufferListInfo** member of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure that describes the coalesced segment:
 
 - The number of segments that were coalesced must be stored into the **NetBufferListInfo**\[**TcpRecvSegCoalesceInfo**\].**CoalescedSegCount** member. This number only represents data segments that were coalesced. Pure ACK coalescing is forbidden and window update segments must not be counted as part of this field.
 
@@ -110,7 +109,7 @@ When indicating a coalesced segment, the following out-of-band information must 
 
 The **DupAckCount** and **RscTcpTimestampDelta** members are interpreted if and only if the **CoalescedSegCount** member is greater than zero. If the **CoalescedSegCount** is zero, the segment is treated as a non-coalesced non-RSC segment.
 
-For information about the contents of the **NetBufferListInfo** member, see [**NDIS\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ne-ndis-_ndis_net_buffer_list_info) and [**NDIS\_RSC\_NBL\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_rsc_nbl_info).
+For information about the contents of the **NetBufferListInfo** member, see [**NDIS\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nblinfo/ne-nblinfo-ndis_net_buffer_list_info) and [**NDIS\_RSC\_NBL\_INFO**](/windows-hardware/drivers/ddi/nblrsc/ns-nblrsc-ndis_rsc_nbl_info).
 
 The PSH bit should be ORed for all coalesced segments. In other words, if the PSH bit was set in any of the individual segments, the miniport driver should set the PSH bit in the SCU.
 

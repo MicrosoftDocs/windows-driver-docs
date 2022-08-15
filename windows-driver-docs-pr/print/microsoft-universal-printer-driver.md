@@ -6,17 +6,15 @@ keywords:
 - Unidrv WDK print
 - Universal Printer Driver WDK See Unidrv
 - minidrivers WDK Unidrv
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 08/04/2021
 ---
 
 # Microsoft Universal Printer Driver
 
+The topics in this section show how to add minidrivers to Unidrv to support different printer models.
 
-The Microsoft Universal print driver (Unidrv) is also referred to as the v3 print driver. The topics in this section show how to add minidrivers to Unidrv to support different printer models.
-
-
-
+> [!NOTE]
+> The Microsoft Universal print driver (Unidrv) is also referred to as the v3 print driver.
 
 [Introduction to the Universal Printer Driver](introduction-to-the-universal-printer-driver.md)
 
@@ -61,11 +59,3 @@ The Microsoft Universal print driver (Unidrv) is also referred to as the v3 prin
 [Unidrv Printer Minidriver Versioning](unidrv-printer-minidriver-versioning.md)
 
 [Adding Forms to the Forms Database](adding-forms-to-the-forms-database.md)
-
- 
-
- 
-
-
-
-

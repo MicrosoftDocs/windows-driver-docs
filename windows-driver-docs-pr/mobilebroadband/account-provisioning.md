@@ -2,7 +2,6 @@
 title: Account provisioning
 description: Account provisioning
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Account provisioning
@@ -11,7 +10,7 @@ Provisioning refers to configuring a Windows computer with the information that 
 
 The following diagram illustrates the contents and hierarchy of the provisioning XML file.
 
-![provisioning xml file hierarchy](images/mb-provisioningmetadata.jpg)
+![provisioning xml file hierarchy.](images/mb-provisioningmetadata.jpg)
 
 For more info about the provisioning schema, see [CarrierControlSchema schema](/uwp/schemas/mobilebroadbandschema/carriercontrolschema/schema-root).
 
@@ -294,7 +293,7 @@ This profile configures Windows to connect to an encrypted network by using a SI
       </authEncryption>
       <OneX xmlns="http://www.microsoft.com/networking/OneX/v1">
         <EAcomputeronfig>
-          <!-- The config XML for all EA methods can be found at: https://msdn.microsoft.com/library/cc232996(v=prot.10).aspx -->
+          <!-- The config XML for all EA methods can be found at: https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/44d403cd-4b2b-4519-b475-b48dc7124bfb -->
           <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
             <EapMethod>
               <Type>18</Type>

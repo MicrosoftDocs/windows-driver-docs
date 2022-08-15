@@ -2,7 +2,6 @@
 title: Handling the hotspot authentication event
 description: Handling the hotspot authentication event
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling the hotspot authentication event

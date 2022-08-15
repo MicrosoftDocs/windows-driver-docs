@@ -2,7 +2,6 @@
 title: Authoring Tests in AXE
 description: Authoring Tests in AXE
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Authoring Tests in AXE
@@ -325,7 +324,7 @@ EndGroup: ExplicitRuntimeParameters::ExplicitRuntimeParameters [Passed]
 
 [For a cross machine execution scenario](cross-machine-execution.md), TAEF tries to determine the test dependencies that need to be deployed along with the test for successful test execution. In the case of an AXE test file, TAEF will copy all the files that are in the same folder with a TAEF AXE test to a remote machine for execution.
 
-Cross machine execution of AXE tests to an ARM platform is not currently supported.
+Cross machine execution of AXE tests to an Arm platform is not currently supported.
 
 ## TAEF AXE Support Dependencies
 

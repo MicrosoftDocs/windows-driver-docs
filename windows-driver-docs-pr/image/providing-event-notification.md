@@ -2,7 +2,6 @@
 title: Providing Event Notification
 description: Providing Event Notification
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Providing Event Notification

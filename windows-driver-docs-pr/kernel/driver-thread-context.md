@@ -3,7 +3,6 @@ title: Driver Thread Context
 description: Driver Thread Context
 keywords: ["driver thread context WDK kernel", "thread context WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Driver Thread Context

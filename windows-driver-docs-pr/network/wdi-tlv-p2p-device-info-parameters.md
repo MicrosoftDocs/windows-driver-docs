@@ -4,10 +4,11 @@ description: WDI_TLV_P2P_DEVICE_INFO_PARAMETERS is a TLV that contains Wi-Fi Dir
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_DEVICE_INFO_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_DEVICE\_INFO\_PARAMETERS
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_DEVICE\_INFO\_PARAMETERS is a TLV that contains Wi-Fi Direct device information parameters.
@@ -35,8 +36,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

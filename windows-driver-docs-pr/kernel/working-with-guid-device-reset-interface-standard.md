@@ -3,7 +3,6 @@ title: Working with the GUID_DEVICE_RESET_INTERFACE_STANDARD
 description: Working with the GUID_DEVICE_RESET_INTERFACE_STANDARD
 keywords: ["GUID_DEVICE_RESET_INTERFACE_STANDARD"]
 ms.date: 11/14/2017
-ms.localizationpriority: medium
 ---
 
 # Working with the GUID_DEVICE_RESET_INTERFACE_STANDARD

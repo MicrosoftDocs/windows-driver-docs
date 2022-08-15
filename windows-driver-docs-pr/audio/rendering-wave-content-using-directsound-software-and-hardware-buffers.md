@@ -5,7 +5,6 @@ keywords:
 - DirectSound WDK audio , content rendering
 - wave content rendering WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Rendering Wave Content Using DirectSound Software and Hardware Buffers
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 The following figure shows a configuration of Microsoft Windows Driver Model (WDM) components that renders to DirectSound software and hardware buffers.
 
-![diagram illustrating rendering wave content using directsound software and hardware buffers](images/hwbuf.png)
+![diagram illustrating rendering wave content using directsound software and hardware buffers.](images/hwbuf.png)
 
 See the following for a description of the WDM audio components:
 

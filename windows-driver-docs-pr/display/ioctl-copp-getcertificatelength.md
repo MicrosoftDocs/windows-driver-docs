@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # IOCTL\_COPP\_GetCertificateLength control code
@@ -42,8 +41,7 @@ The miniport driver returns a pointer to a ULONG-typed variable in the VRP **Out
 
 The miniport driver sets the **Information** member of the [**STATUS\_BLOCK**](/windows-hardware/drivers/ddi/video/ns-video-_status_block) structure to sizeof(ULONG).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

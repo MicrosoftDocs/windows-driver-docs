@@ -6,23 +6,18 @@ keywords:
 - driver load order WDK INF files
 - load order WDK INF files
 - service-install-sections WDK INF files
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 02/02/2022
 ---
 
 # Specifying Driver Load Order
 
-
-
-
-
-For most devices, the physical hierarchy of the devices on a computer determines the order in which Windows and the PnP manager load drivers. Windows and the PnP manager configure devices starting with the system root device, and then they configure the child devices of the root device (for example, a PCI adapter), the children of those devices, and so on. The PnP manager loads the drivers for each device as the device is configured, if the drivers were not previously loaded for another device.
+For most systems, the physical hierarchy of the devices on a computer determines the order in which Windows and the PnP manager load drivers. Windows and the PnP manager configure devices starting with the system root device, and then they configure the child devices of the root device (for example, a PCI adapter), the children of those devices, and so on. The PnP manager loads the drivers for each device as the device is configured, if the drivers were not previously loaded for another device.
 
 Settings in the INF file can influence driver load order. This topic describes the relevant values that vendors should specify in the *service-install-section* referenced by a driver's [**INF AddService directive**](inf-addservice-directive.md). Specifically, this topic discusses the **StartType**, **BootFlags**, **LoadOrderGroup**, and **Dependencies** entries.
 
 Drivers should follow these rules for specifying **StartType**:
 
--   PnP driver
+-   PnP driver not needed early in boot
 
     A PnP driver should have a start type of SERVICE_DEMAND_START (0x3), specifying that the PnP manager can load the driver when the PnP manager finds a device that the driver services.
 
@@ -32,7 +27,7 @@ Drivers should follow these rules for specifying **StartType**:
 
 -   Non-*boot-start driver* that detects device(s) that are not PnP-enumerable
 
-    For a device that is not PnP-enumerable, a driver reports the device to the PnP manager by calling [**IoReportDetectedDevice**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioreportdetecteddevice). Such a driver should have the start type SERVICE_SYSTEM_START (0x01) so Windows will load the driver during system initialization.
+    For a device that is not PnP-enumerable, a driver reports the device to the PnP manager by calling [**IoReportRootDevice**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioreportrootdevice) or [**IoReportDetectedDevice**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioreportdetecteddevice). Such a driver should have the start type SERVICE_SYSTEM_START (0x01) so Windows will load the driver during system initialization.
 
     Only drivers that report non-PnP hardware should set this start type. If a driver services both PnP and non-PnP devices, it should set this start type.
 
@@ -48,7 +43,7 @@ A PnP driver should be written so that it can be loaded when Windows configures 
 
     For example, the function driver can be certain that any lower-filter drivers are loaded.
 
-    However, be aware that a driver in the device stack cannot depend on being loaded sequentially after a device's lower drivers, because the driver might are loaded previously when another device was configured.
+    However, be aware that a driver in the device stack cannot depend on being loaded sequentially after a device's lower drivers, because the driver might have been loaded previously when another device was configured.
 
 Filter drivers in a filter group cannot predict their load ordering. For example, if a device has three registered upper-filter drivers, those three drivers will all be loaded after the function driver but could be loaded in any order within their upper-filter group.
 
@@ -58,7 +53,7 @@ To reinforce the importance of setting the correct **StartType** value, the foll
 
 1.  On system startup, the operating system loader loads drivers of type SERVICE_BOOT_START before it transfers control to the kernel. These drivers are in memory when the kernel gets control.
 
-    Boot-start drivers can use INF **LoadOrderGroup** entries to order their loading. (Boot-start drivers are loaded before most of the devices are configured, so their load order cannot be determined by device hierarchy.) The operating system ignores INF **Dependencies** entries for boot-start drivers.
+    Boot-start drivers are loaded before most of the devices are configured, so their load order cannot be determined by device hierarchy. Boot-start drivers can use INF **LoadOrderGroup** entries to order their loading. The operating system ignores INF **Dependencies** entries for boot-start drivers.
 
 2.  The PnP manager calls the **DriverEntry** routines of the SERVICE_BOOT_START drivers so the drivers can service the boot devices.
 

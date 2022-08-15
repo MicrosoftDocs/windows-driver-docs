@@ -2,7 +2,6 @@
 title: Reporting Optional Support for Rendering Operations
 description: Reporting Optional Support for Rendering Operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Optional Support for Rendering Operations

@@ -20,7 +20,6 @@ api_location:
 - DbgEng.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ---
 
 # DEBUG\_OUTPUT\_XXX
@@ -100,8 +99,7 @@ The possible values include the following.
 </tbody>
 </table>
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

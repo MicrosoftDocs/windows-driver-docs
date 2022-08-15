@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # DeviceSettings element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **DeviceSettings** element describes the basic capabilities of the scan device.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:DeviceSettings>
@@ -26,8 +24,7 @@ Usage
 </wscn:DeviceSettings>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -93,8 +90,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **DeviceSettings** element contains the supported values for many of the imaging options that can be set in a [**ScanTicket**](scanticket.md) element for a scan operation. A client can use the values that are returned in **DeviceSettings** to create valid **ScanTicket** elements.
 

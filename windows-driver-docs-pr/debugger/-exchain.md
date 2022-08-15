@@ -1,5 +1,5 @@
 ---
-title: exchain
+title: exchain (WinDbg)
 description: The exchain extension displays the current exception handler chain.
 keywords: ["exchain Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - exchain
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !exchain
@@ -59,8 +58,7 @@ Displays information that is obtained by walking the CRT function tables, even i
 
 The **!exchain** extension is available only for an x86-based target computer.
 
-Remarks
--------
+## Remarks
 
 The **!exchain** extension displays the list of exception handlers for the current thread.
 

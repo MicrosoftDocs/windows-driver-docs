@@ -9,7 +9,6 @@ api_name:
 - .time (Display System Time)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .time (Display System Time)
@@ -54,8 +53,7 @@ Specifies the offset from Greenwich Mean Time, in hours. A negative value of *Ho
 
  
 
-Remarks
--------
+## Remarks
 
 The system time variables control performance counter behavior.
 

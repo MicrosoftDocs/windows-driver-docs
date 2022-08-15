@@ -9,7 +9,6 @@ api_name:
 - wudfext.wudfdevice
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wudfext.wudfdevice
@@ -52,8 +51,7 @@ Specifies the address of the **IWDFDevice** interface to display PnP or power-ma
 
 For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 You can use the **!wudfext.wudfdevice** extension to determine the current PnP or power-management state of the device that the *pWDFDevice* parameter specifies.
 

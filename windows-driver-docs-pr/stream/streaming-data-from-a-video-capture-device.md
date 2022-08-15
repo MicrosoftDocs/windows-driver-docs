@@ -5,7 +5,6 @@ keywords:
 - video capture WDK AVStream , streaming data from
 - capturing video WDK AVStream , streaming data from
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Streaming Data from a Video Capture Device

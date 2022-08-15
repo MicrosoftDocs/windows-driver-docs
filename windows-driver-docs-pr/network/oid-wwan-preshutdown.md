@@ -4,7 +4,6 @@ description: OID_WWAN_PRESHUTDOWN is sent to notify the modem that the system is
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_PRESHUTDOWN Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_PRESHUTDOWN
@@ -18,8 +17,7 @@ Miniport drivers must process set requests asynchronously, initially returning *
 
 Miniport drivers should return **NDIS\_STATUS\_NOT\_SUPPORTED** if they do not support this operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

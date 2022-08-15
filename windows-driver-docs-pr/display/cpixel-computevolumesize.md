@@ -11,7 +11,6 @@ api_location:
 api_type:
 - COM
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # CPixel::ComputeVolumeSize method
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The **CPixel::ComputeVolumeSize** method determines the amount of memory required to allocate a volume.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 static UINT ComputeVolumeSize(
@@ -31,8 +29,7 @@ static UINT ComputeVolumeSize(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *cpWidth*
 Specifies the width in pixels of the volume.
@@ -46,18 +43,15 @@ Specifies the depth in pixels of the volume.
 *Format*
 Uses a value from the D3DFORMAT enumeration to specify the surface format.
 
-Return value
-------------
+## Return value
 
 Returns the size, in bytes, of the volume.
 
-Remarks
--------
+## Remarks
 
 For more information about D3DFORMAT, see the Microsoft DirectX SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -4,7 +4,6 @@ description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_WAKE_REASON to indi
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_WAKE_REASON Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_WAKE\_REASON
@@ -33,8 +32,7 @@ If the wake reason is a wake packet, the NIC should also include the wake packet
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

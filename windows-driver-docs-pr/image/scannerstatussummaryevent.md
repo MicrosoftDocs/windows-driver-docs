@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ScannerStatusSummaryEvent element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **ScannerStatusSummaryEvent** element informs the client that the scan device's status has changed.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScannerStatusSummaryEvent>
@@ -26,8 +24,7 @@ Usage
 </wscn:ScannerStatusSummaryEvent>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -55,15 +52,13 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service should send a **ScannerStatusSummaryEvent** element to the client whenever the scan device's status changes.
 
 The body of **ScannerStatusSummaryEvent** must contain a [**StatusSummary**](statussummary.md) element that describes the changes to the scanner's status.
 
-Examples
---------
+## Examples
 
 The following code example indicates that the scan device is stopped because of a jam in the media feed path.
 

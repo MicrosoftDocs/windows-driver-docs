@@ -2,7 +2,6 @@
 title: Additional Printer Topics
 description: Additional Printer Topics
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Additional Printer Topics

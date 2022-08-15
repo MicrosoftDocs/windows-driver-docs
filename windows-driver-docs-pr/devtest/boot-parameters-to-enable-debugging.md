@@ -13,7 +13,6 @@ keywords:
 - USB 2.0 debugging connection WDK boot parameters
 - null-modem cable WDK boot parameters
 ms.date: 09/21/2020
-ms.localizationpriority: medium
 ---
 
 # Boot Parameters to Enable Debugging
@@ -35,8 +34,7 @@ You can use the **bcdedit** command to view the current debugger boot entries an
 
 To enable boot debugging, use the [**BCDEdit /bootdebug**](./bcdedit--bootdebug.md) command and specify the appropriate boot component. If you wish to perform kernel debugging after Windows starts, use the [**BCDEdit /debug**](./bcdedit--debug.md) command as well. You must also select a debugging connection, just as in normal kernel debugging. For more details, see [**BCDEdit /bootdebug**](./bcdedit--bootdebug.md).
 
-See also
---------
+## See also
 
 For information about Windows debugging tools, see [Windows Debugging](../debugger/index.md).
 

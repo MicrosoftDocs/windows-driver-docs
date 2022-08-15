@@ -1,17 +1,14 @@
 ---
 title: EFI_USBFN_DEVICE_INFO_ID
-description: EFI_USBFN_DEVICE_INFO_ID
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+description: The EFI_USBFN_DEVICE_INFO_ID enumeration is used to identify a specific string in a request to the driver.
+ms.date: 08/20/2021
 ---
 
-# EFI\_USBFN\_DEVICE\_INFO\_ID
-
+# EFI_USBFN_DEVICE_INFO_ID
 
 This enumeration is used to identify a specific string in a request to the driver.
 
 ## Syntax
-
 
 ```cpp
 typedef enum _EFI_USBFN_DEVICE_INFO_ID   
@@ -25,28 +22,18 @@ typedef enum _EFI_USBFN_DEVICE_INFO_ID
 
 ## Constants
 
-
-<a href="" id="efiusbdeviceinfounknown"></a>**EfiUsbDeviceInfoUnknown**  
+**EfiUsbDeviceInfoUnknown**  
 Invalid ID.
 
-<a href="" id="efiusbdeviceinfoserialnumber"></a>**EfiUsbDeviceInfoSerialNumber**  
+**EfiUsbDeviceInfoSerialNumber**  
 A request for the serial number of the USB device.
 
-<a href="" id="efiusbdeviceinfomanufacturername"></a>**EfiUsbDeviceInfoManufacturerName**  
+**EfiUsbDeviceInfoManufacturerName**  
 A request for the manufacturer string.
 
-<a href="" id="efiusbdeviceinfoproductname"></a>**EfiUsbDeviceInfoProductName**  
+**EfiUsbDeviceInfoProductName**  
 A request for the product name of the device.
 
 ## Requirements
 
-
 **Header:** User generated
-
- 
-
- 
-
-
-
-

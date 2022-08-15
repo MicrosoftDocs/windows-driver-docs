@@ -10,7 +10,6 @@ keywords:
 - copy protection WDK video miniport , about copy protection support
 - hardware WDK copy protection
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 

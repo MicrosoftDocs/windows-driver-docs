@@ -7,7 +7,6 @@ keywords:
 - WDM IRPs WDK KMDF , preprocessing and postprocessing
 - IRPs WDK KMDF , preprocessing and postprocessing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Preprocessing and Postprocessing IRPs
@@ -27,9 +26,9 @@ After your driver calls [**WdfDeviceInitAssignWdmIrpPreprocessCallback**](/windo
 
 ### Calling WdfDeviceWdmDispatchPreprocessedIrp
 
-Because the I/O manager adds an additional I/O stack location to the IRP, the [*EvtDeviceWdmIrpPreprocess*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdfdevice_wdm_irp_preprocess) callback function must call [**IoSkipCurrentIrpStackLocation**](../kernel/mm-bad-pointer.md) or [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) (to set up the next I/O stack location in the IRP) before calling [**WdfDeviceWdmDispatchPreprocessedIrp**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicewdmdispatchpreprocessedirp).
+Because the I/O manager adds an additional I/O stack location to the IRP, the [*EvtDeviceWdmIrpPreprocess*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdfdevice_wdm_irp_preprocess) callback function must call [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) or [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) (to set up the next I/O stack location in the IRP) before calling [**WdfDeviceWdmDispatchPreprocessedIrp**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicewdmdispatchpreprocessedirp).
 
-If your driver is preprocessing an IRP, but not postprocessing the IRP, the driver does not need to set an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine for the IRP and can call [**IoSkipCurrentIrpStackLocation**](../kernel/mm-bad-pointer.md), as the following code example shows.
+If your driver is preprocessing an IRP, but not postprocessing the IRP, the driver does not need to set an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine for the IRP and can call [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation), as the following code example shows.
 
 ```cpp
 NTSTATUS
@@ -82,7 +81,7 @@ return WdfDeviceWdmDispatchPreprocessedIrp(Device, Irp);
 
 Your driver must not call [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) (and therefore must not set an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine) if the device object handle that the driver's [*EvtDeviceWdmIrpPreprocess*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdfdevice_wdm_irp_preprocess) callback function receives represents a physical device object (PDO), and if the IRP's major function code is IRP\_MJ\_PNP or IRP\_MJ\_POWER. Otherwise, [Driver Verifier](../devtest/driver-verifier.md) will report an error.
 
-For more information about when to call [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext), [**IoSkipCurrentIrpStackLocation**](../kernel/mm-bad-pointer.md), and [**IoSetCompletionRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine), see [Passing IRPs down the Driver Stack](../kernel/passing-irps-down-the-driver-stack.md).
+For more information about when to call [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext), [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation), and [**IoSetCompletionRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine), see [Passing IRPs down the Driver Stack](../kernel/passing-irps-down-the-driver-stack.md).
 
  
 

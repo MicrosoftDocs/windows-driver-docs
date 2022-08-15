@@ -9,7 +9,6 @@ api_name:
 - ~u (Unfreeze Thread)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ~u (Unfreeze Thread)
@@ -58,8 +57,7 @@ Specifies the thread or threads to unfreeze. For more information about the synt
 
 For more information about how frozen threads behave and a list of other commands that control the freezing and suspending of threads, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
-Remarks
--------
+## Remarks
 
 You can specify threads only in user mode. In kernel mode, the tilde (~) refers to a processor.
 

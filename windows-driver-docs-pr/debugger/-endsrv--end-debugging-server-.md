@@ -9,7 +9,6 @@ api_name:
 - .endsrv (End Debugging Server)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .endsrv (End Debugging Server)
@@ -58,8 +57,7 @@ You can use this command only when you are performing remote debugging through t
 
 For more information about remote debugging, see [Remote Debugging Through the Debugger](remote-debugging-through-the-debugger.md).
 
-Remarks
--------
+## Remarks
 
 You must issue the **.endsrv** command from the debugging server or from one of the debugging clients that are connected to the debugging server.
 

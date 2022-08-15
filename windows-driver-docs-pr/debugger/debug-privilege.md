@@ -3,7 +3,6 @@ title: Debug Privilege
 description: The debug privilege allows someone to debug a process that they wouldn’t otherwise have access to.
 keywords: ["debug privilege", "debug privilege, overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug Privilege
@@ -31,7 +30,7 @@ BOOL SetPrivilege(HANDLE hToken, LPCTSTR lpszPrivilege, BOOL bEnablePrivilege)
 
     if (LookupPrivilegeValue(NULL, lpszPrivilege, &luid))
     {
-        TOKEN_PRIVILEGE tp;
+        TOKEN_PRIVILEGES tp;
 
         tp.PrivilegeCount=1;
         tp.Privileges[0].Luid=luid;

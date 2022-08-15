@@ -10,7 +10,6 @@ api_location:
 - Ks.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ms.custom: 19H1
 ---
@@ -45,8 +44,7 @@ The KSCATEGORY_NETWORK_CAMERA GUID is defined as follows:
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

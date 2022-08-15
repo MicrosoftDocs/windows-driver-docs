@@ -2,7 +2,6 @@
 title: Trace Managed Object Format (MOF) File
 description: Trace Managed Object Format (MOF) File
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Trace Managed Object Format (MOF) File

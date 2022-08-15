@@ -9,7 +9,6 @@ api_name:
 - DriverAttributeChanged
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DriverAttributeChanged rule (kmdf)
@@ -19,8 +18,7 @@ The **DriverAttributeChanged** rule specifies that a driver must not change the 
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +43,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate)

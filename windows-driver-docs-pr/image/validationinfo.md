@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ValidationInfo element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **ValidationInfo** element contains all [**ScanTicket**](scanticket.md) validation information in response to a client's [**ValidateScanTicketRequest**](validatescanticketrequest.md).
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ValidationInfo>
@@ -26,8 +24,7 @@ Usage
 </wscn:ValidationInfo>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -75,8 +72,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **ValidationInfo** element contains elements that define whether the client's [**ScanTicket**](scanticket.md) is valid and, if not, what data the WSD Scan Service changed to make the ticket valid. The Scan Service returns this information in its [**ValidateScanTicketResponse**](validatescanticketresponse.md) operation.
 

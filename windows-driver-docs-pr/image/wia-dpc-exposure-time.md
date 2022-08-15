@@ -1,6 +1,6 @@
 ---
-title: WIA\_DPC\_EXPOSURE\_TIME
-description: The WIA\_DPC\_EXPOSURE\_TIME property corresponds to the shutter speed, in seconds that are scaled by 10,000.
+title: WIA_DPC_EXPOSURE_TIME
+description: The WIA_DPC_EXPOSURE_TIME property corresponds to the shutter speed, in seconds that are scaled by 10,000.
 keywords: ["WIA_DPC_EXPOSURE_TIME Imaging Devices"]
 topic_type:
 - apiref
@@ -10,60 +10,29 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 09/29/2021
 ---
 
-# WIA\_DPC\_EXPOSURE\_TIME
+# WIA_DPC_EXPOSURE_TIME
 
+The WIA_DPC_EXPOSURE_TIME property corresponds to the shutter speed, in seconds that are scaled by 10,000.
 
-The WIA\_DPC\_EXPOSURE\_TIME property corresponds to the shutter speed, in seconds that are scaled by 10,000.
+Property Type: VT_I4
 
-## <span id="ddk_wia_dpc_exposure_time_si"></span><span id="DDK_WIA_DPC_EXPOSURE_TIME_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_RANGE or WIA\_PROP\_LIST
+Valid Values: WIA_PROP_RANGE or WIA_PROP_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
-Typically, a device uses the WIA\_DPC\_EXPOSURE\_TIME property only when the [**WIA\_DPC\_EXPOSURE\_MODE**](wia-dpc-exposure-mode.md) property is set to EXPOSUREMODE\_MANUAL or EXPOSUREMODE\_SHUTTER\_PRIORITY.
+Typically, a device uses the WIA_DPC_EXPOSURE_TIME property only when the [**WIA_DPC_EXPOSURE_MODE**](wia-dpc-exposure-mode.md) property is set to EXPOSUREMODE_MANUAL or EXPOSUREMODE_SHUTTER_PRIORITY.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Obsolete in Windows Vista and later operating systems and should no longer be used. However, this property is still defined in Windows Vista for compatibility with applications and devices designed for Windows Server 2003, Windows XP, and previous versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Version:** Obsolete in Windows Vista and later operating systems and should not be used.
+
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
-
-[**WIA\_DPC\_EXPOSURE\_MODE**](wia-dpc-exposure-mode.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_DPC_EXPOSURE_MODE**](wia-dpc-exposure-mode.md)

@@ -6,7 +6,6 @@ keywords:
 - network notify objects WDK , driver configuration
 - driver configuration WDK network component
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Configuring the Component's Driver

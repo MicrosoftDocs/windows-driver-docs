@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbhcdlistlogs
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbhcdlistlogs
@@ -26,8 +25,7 @@ The **!usbkd.usbhcdlistlogs** command displays a list of all functional device o
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 This example shows a portion of the output of the **!usbhcdlistlogs** command.
 

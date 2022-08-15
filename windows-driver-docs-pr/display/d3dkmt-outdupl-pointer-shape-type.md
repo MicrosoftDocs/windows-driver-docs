@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # D3DKMT\_OUTDUPL\_POINTER\_SHAPE\_TYPE enumeration
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE {
@@ -30,8 +28,7 @@ typedef enum _D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE {
 } D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE;
 ```
 
-Constants
----------
+## Constants
 
 <span id="D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE_MONOCHROME"></span><span id="d3dkmt_outdupl_pointer_shape_type_monochrome"></span>**D3DKMT\_OUTDUPL\_POINTER\_SHAPE\_TYPE\_MONOCHROME**
 
@@ -39,8 +36,7 @@ Constants
 
 <span id="D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE_MASKED_COLOR"></span><span id="d3dkmt_outdupl_pointer_shape_type_masked_color"></span>**D3DKMT\_OUTDUPL\_POINTER\_SHAPE\_TYPE\_MASKED\_COLOR**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

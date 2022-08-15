@@ -9,7 +9,6 @@ api_name:
 - usbkd.usbhcdlist
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usbhcdlist
@@ -26,8 +25,7 @@ The [**!usbkd.usbhcdlist**](-usbkd-usbhcdlist.md) command displays information a
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is an example of a portion of the output of [**!usbhcdlist**](-usbkd-usbhcdlist.md).
 

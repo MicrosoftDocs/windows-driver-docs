@@ -9,7 +9,6 @@ api_name:
 - ReservedDDIs
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ReservedDDIs rule (wdm)
@@ -19,8 +18,7 @@ The **ReservedDDIs** rule verifies that drivers do not call any reserved functio
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

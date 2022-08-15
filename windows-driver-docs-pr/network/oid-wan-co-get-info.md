@@ -4,7 +4,6 @@ description: The OID_WAN_CO_GET_INFO OID requests the miniport driver to return 
 ms.date: 08/08/2017
 keywords: 
  -OID_WAN_CO_GET_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WAN\_CO\_GET\_INFO
@@ -121,8 +120,7 @@ If the WAN miniport driver is called subsequently with OID\_WAN\_CO\_SET\_LINK\_
 <a href="" id="desiredaccm"></a>**DesiredACCM**  
 The Asynchronous Control Character Map is negotiated. This member is relevant only for asynchronous media types.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

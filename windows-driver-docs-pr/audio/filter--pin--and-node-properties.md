@@ -16,7 +16,6 @@ keywords:
 - nodes WDK audio , property overview
 - pins WDK audio , property overview
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Filter, Pin, and Node Properties
@@ -45,7 +44,7 @@ Whether a node-property request specifies a filter or pin handle depends on whet
 
 The following figure shows these three kinds of property request: a pin-property request sent to a pin instance, a node-property request sent to a node (on a filter or pin instance), and a filter-property request sent to a filter instance.
 
-![diagram illustrating filter-, pin-, and node-property requests](images/propreqs.png)
+![diagram illustrating filter-, pin-, and node-property requests.](images/propreqs.png)
 
 Typically, the port driver handles most requests for filter and pin properties, and the miniport driver handles requests for node properties.
 
@@ -165,7 +164,5 @@ For historical reasons, a few audio properties have behavioral quirks that viola
 
 -   As described in [Applying Speaker-Configuration Settings](applying-speaker-configuration-settings.md), a client can change an audio device's speaker configuration by setting the [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](./ksproperty-audio-channel-config.md) property of a 3-D node ([**KSNODETYPE\_3D\_EFFECTS**](./ksnodetype-3d-effects.md)). The speaker-configuration setting is global because it changes the speaker configuration for all streams that are part of the mix that the device plays through the speakers. According to the general rule, a node-property request that affects the filter as a whole should specify a filter handle (plus a node ID). However, this particular property requires a pin handle instead of a filter handle. The pin handle designates the pin instance containing the 3-D node that is the target for the request.
 
--   [**KSPROPERTY\_SYNTH\_VOLUME**](/previous-versions/ff537409(v=vs.85)) and [**KSPROPERTY\_SYNTH\_MASTERCLOCK**](/previous-versions/ff537403(v=vs.85)) are properties of a synth node ([**KSNODETYPE\_SYNTHESIZER**](./ksnodetype-synthesizer.md)). Although both are node properties, requests for these properties do not include node IDs. (Note that the property descriptor for the request is a structure of type [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)), not [**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty).) This behavior violates the general rule that a node property requires a node ID. Despite this discrepancy, a miniport driver that supports either property should supply the property handler through the **Nodes** member of PCFILTER\_DESCRIPTOR (instead of the **Pins** member).
-
- 
+-   [**KSPROPERTY\_SYNTH\_VOLUME**](/previous-versions/ff537409(v=vs.85)) and [**KSPROPERTY\_SYNTH\_MASTERCLOCK**](/previous-versions/ff537403(v=vs.85)) are properties of a synth node ([**KSNODETYPE\_SYNTHESIZER**](./ksnodetype-synthesizer.md)). Although both are node properties, requests for these properties do not include node IDs. (Note that the property descriptor for the request is a structure of type [**KSPROPERTY**](../stream/ksproperty-structure.md), not [**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty).) This behavior violates the general rule that a node property requires a node ID. Despite this discrepancy, a miniport driver that supports either property should supply the property handler through the **Nodes** member of PCFILTER\_DESCRIPTOR (instead of the **Pins** member).
 

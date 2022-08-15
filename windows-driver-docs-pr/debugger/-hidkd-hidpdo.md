@@ -9,7 +9,6 @@ api_name:
 - hidkd.hidpdo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !hidkd.hidpdo
@@ -32,8 +31,7 @@ Address of a PDO. To get the addresses of PDOs that are associated with HID driv
 
 Hidkd.dll
 
-Examples
---------
+## Examples
 
 Here is an example of the output of the **!hidpdo** command. The example first calls [**!hidtree**](-hidkd-hidtree.md) to get the address of a PDO.
 

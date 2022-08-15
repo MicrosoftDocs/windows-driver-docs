@@ -11,7 +11,6 @@ api_location:
 api_type:
 - DllExport
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # CcSetReadAheadGranularityEx routine
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The **CcSetReadAheadGranularityEx** routine sets the read-ahead granularity and enables pipelined read-ahead for a cached file.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID CcSetReadAheadGranularityEx(
@@ -29,8 +27,7 @@ VOID CcSetReadAheadGranularityEx(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *FileObject* \[in\]  
 Pointer to a file object for the cached file whose read-ahead granularity is to be set.
@@ -38,20 +35,17 @@ Pointer to a file object for the cached file whose read-ahead granularity is to 
 *ReadAheadParameters* \[in\]  
 Specifies the read ahead parameters. See [READ_AHEAD_PARAMETERS](read-ahead-parameters.md) for more information.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 Calling **CcSetReadAheadGranularityEx** will enable pipelined read-ahead requests for the file object in *FileObject*. Selecting an appropriate value for *PipelinedRequestSize* will divide read-ahead requests into smaller multiple parallel requests. Callers of **CcSetReadAheadGranularityEx** can tune read-ahead performance by adjusting *PipelinedRequestSize*.
 
 After [**CcInitializeCacheMap**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccinitializecachemap) is called to cache a file, but before **CcSetReadAheadGranularityEx** is called for the cached file, the default read-ahead granularity for the cached file is equal to PAGE\_SIZE.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -9,7 +9,6 @@ api_name:
 - .extpath (Set Extension Path)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .extpath (Set Extension Path)
@@ -59,8 +58,7 @@ Specifies one or more directories to put in the search path. If you do not speci
 
 For more information about the extension search path and loading extension DLLs, see [Loading Debugger Extension DLLs](loading-debugger-extension-dlls.md).
 
-Remarks
--------
+## Remarks
 
 The extension DLL search path is reset to its default value at the start of each debugging session.
 

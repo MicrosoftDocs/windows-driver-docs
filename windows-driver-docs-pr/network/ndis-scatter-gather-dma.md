@@ -9,12 +9,11 @@ keywords:
 - NICs WDK networking , system memory transfers
 - network interface cards WDK networking , s
 ms.date: 06/11/2018
-ms.localizationpriority: medium
 ---
 
 # NDIS Scatter/Gather DMA
 
-[!include[NDIS DMA ARM note](../includes/ndis-dma-arm-note.md)]
+[!include[NDIS DMA Arm note](../includes/ndis-dma-arm-note.md)]
 
 NDIS miniport drivers can use the Scatter/Gather DMA (SGDMA) method to transfer data between a NIC and system memory. A successful DMA transfer requires the physical address of the data to be in an address range that the NIC supports. HAL provides a mechanism for drivers to obtain the physical address list for an MDL chain and, if necessary, will double-buffer the data to a physical address range.
 
@@ -69,12 +68,12 @@ An NDIS miniport driver calls the [**NdisMDeregisterScatterGatherDma**](/windows
 
 ## Allocating and Freeing Scatter/Gather Lists
 
-An NDIS miniport driver calls the [**NdisMAllocateNetBufferSGList**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismallocatenetbuffersglist) function in its [*MiniportSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_send_net_buffer_lists) function. The miniport driver calls **NdisMAllocateNetBufferSGList** once for each [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure that it must map. After the resources become available and HAL has the SG list ready, NDIS calls the driver's [*MiniportProcessSGList*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_process_sg_list) function. NDIS can call *MiniportProcessSGList* before or after the miniport driver's call to **NdisMAllocateNetBufferSGList** returns.
+An NDIS miniport driver calls the [**NdisMAllocateNetBufferSGList**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismallocatenetbuffersglist) function in its [*MiniportSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_send_net_buffer_lists) function. The miniport driver calls **NdisMAllocateNetBufferSGList** once for each [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure that it must map. After the resources become available and HAL has the SG list ready, NDIS calls the driver's [*MiniportProcessSGList*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_process_sg_list) function. NDIS can call *MiniportProcessSGList* before or after the miniport driver's call to **NdisMAllocateNetBufferSGList** returns.
 
-To improve system performance, the scatter/gather list is generated from the network data starting at the beginning of the MDL that is specified at the **CurrentMdl** member of the associated [**NET\_BUFFER\_DATA**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_data) structure. The start of the network data in the SG list is offset from the beginning of the SG list by the value specified in the **CurrentMdlOffset** member of the associated **NET\_BUFFER\_DATA** structure.
+To improve system performance, the scatter/gather list is generated from the network data starting at the beginning of the MDL that is specified at the **CurrentMdl** member of the associated [**NET\_BUFFER\_DATA**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_data) structure. The start of the network data in the SG list is offset from the beginning of the SG list by the value specified in the **CurrentMdlOffset** member of the associated **NET\_BUFFER\_DATA** structure.
 
 While handling a DPC for a send-complete interrupt, and after the miniport driver does not need the SG list any more, the miniport driver should call the [**NdisMFreeNetBufferSGList**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismfreenetbuffersglist) function to free the SG list.
 
-**Note**  Do not call [**NdisMFreeNetBufferSGList**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismfreenetbuffersglist) while the driver or hardware is still accessing the memory that is described by the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure that is associated with the scatter/gather list. 
+**Note**  Do not call [**NdisMFreeNetBufferSGList**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismfreenetbuffersglist) while the driver or hardware is still accessing the memory that is described by the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure that is associated with the scatter/gather list. 
 
 Before accessing received data, miniport drivers must call [**NdisMFreeNetBufferSGList**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismfreenetbuffersglist) to flush the memory cache.

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # FSCTL\_OPLOCK\_BREAK\_NOTIFY control code
@@ -39,8 +38,7 @@ Opaque oplock object pointer for the file.
 <a href="" id="opencount"></a>*OpenCount*  
 Not used with this operation; set to zero.
 
-Status block
-------------
+## Status block
 
 [**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl) returns FLT\_PREOP\_PENDING if the oplock break is underway, and the IRP will be completed when the oplock break completes. (In this case, the IRP can eventually complete with either STATUS\_SUCCESS or STATUS\_CANCELLED.) Otherwise, **FltOplockFsctrl** returns FLT\_PREOP\_COMPLETE.
 
@@ -75,8 +73,7 @@ Status block
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

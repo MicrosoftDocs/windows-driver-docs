@@ -1,7 +1,6 @@
 ---
 title: Finish Firmware Update (Function Index 24)
 description: This function finishes the firmware update operation that a call to Start Firmware Update (Function Index 22) initiated.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

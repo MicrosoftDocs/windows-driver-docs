@@ -2,7 +2,6 @@
 title: Reordering Hyper-V Extensible Switch Extensions
 description: Reordering Hyper-V Extensible Switch Extensions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reordering Hyper-V Extensible Switch Extensions

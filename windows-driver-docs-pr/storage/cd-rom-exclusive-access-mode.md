@@ -8,7 +8,6 @@ keywords:
 - IOCTL_CDROM_EXCLUSIVE_ACCESS
 - CDROM_EXCLUSIVE_LOCK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # CD-ROM Exclusive Access Mode

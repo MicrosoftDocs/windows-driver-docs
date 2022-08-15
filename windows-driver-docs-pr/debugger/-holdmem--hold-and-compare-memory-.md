@@ -9,7 +9,6 @@ api_name:
 - .holdmem (Hold and Compare Memory)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .holdmem (Hold and Compare Memory)
@@ -72,8 +71,7 @@ Compares the specified range to all saved memory ranges. For more information ab
 
 For more information about how to manipulate memory and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
-Remarks
--------
+## Remarks
 
 The **.holdmem** command compares memory ranges byte-for-byte.
 

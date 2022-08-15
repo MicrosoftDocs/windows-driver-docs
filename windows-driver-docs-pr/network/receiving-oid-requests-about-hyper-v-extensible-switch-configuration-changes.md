@@ -2,7 +2,6 @@
 title: Receiving Hyper-V Extensible Switch config change OID requests
 description: Receiving OID Requests about Hyper-V Extensible Switch Configuration Changes
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Receiving OID Requests about Hyper-V Extensible Switch Configuration Changes
@@ -11,11 +10,11 @@ The extensible switch interface notifies underlying extensions about changes to 
 
 The following figure shows the extensible switch control path for OID requests for NDIS 6.40 (Windows Server 2012 R2) and later.
 
-![diagram of the vswitch oid control path for ndis 6.40](images/vswitch-oid-controlpath-ndis640.png)
+![diagram of the vswitch oid control path for ndis 6.40.](images/vswitch-oid-controlpath-ndis640.png)
 
 The following figure shows the extensible switch control path for OID requests for NDIS 6.30 (Windows Server 2012).
 
-![diagram of the vswitch oid control path for ndis 6.30](images/vswitch-oid-controlpath.png)
+![diagram of the vswitch oid control path for ndis 6.30.](images/vswitch-oid-controlpath.png)
 
 **Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*. 
 
@@ -77,7 +76,7 @@ The extensible switch extension must follow these guidelines when its [*FilterOi
 
 -   If the extension does not complete the OID request, it must call [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) to forward the request down the extensible switch driver stack.
 
-    **Note**  Before the driver calls [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest), the driver must call [**NdisAllocateCloneOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatecloneoidrequest) to allocate an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure and transfer the request information to the new structure.
+    **Note**  Before the driver calls [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest), the driver must call [**NdisAllocateCloneOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatecloneoidrequest) to allocate an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure and transfer the request information to the new structure.
 
     The extension should monitor the completion result of the OID request when its [*FilterOidRequestComplete*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_oid_request_complete) function is called. This allows the extension to determine whether the operation on an extensible switch component completed successfully or was vetoed by an underlying extension.
 

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_VIDEOPROCAMP\_GAMMA
@@ -56,15 +55,13 @@ The KSPROPERTY\_VIDEOPROCAMP\_GAMMA property controls a camera's gamma setting. 
 
 The property value (operation data) is a LONG that specifies a camera's gamma setting. The value of the gamma setting is expressed in gamma multiplied by 100.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEOPROCAMP\_S structure specifies the gamma setting.
 
 Every video capture minidriver must define a range and default value for this property. The required range must be 1 through 500. The default value is typically 100 (gamma = 1) or 220 (gamma = 2.2), depending on the display medium and video hardware.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -82,7 +79,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_VIDEOPROCAMP\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videoprocamp_s)
 

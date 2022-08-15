@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # JobSummary element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The optional **JobSummary** element contains a summary about a scan job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobSummary>
@@ -26,8 +24,7 @@ Usage
 </wscn:JobSummary>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -87,8 +84,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 If the parent element of the **JobSummary** element is [**ActiveJobs**](activejobs.md), **JobSummary** contains a summary of information about one job that is currently active within the scan device.
 

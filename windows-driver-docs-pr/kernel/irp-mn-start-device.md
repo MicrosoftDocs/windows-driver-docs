@@ -4,7 +4,6 @@ description: Learn about the 'IRP_MN_START_DEVICE' kernel-mode driver architectu
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_START_DEVICE Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_START\_DEVICE
@@ -16,13 +15,11 @@ All PnP drivers must handle this IRP.
 
 0x00
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP after it has assigned hardware resources, if any, to the device. The device may have been recently enumerated and is being started for the first time, or the device may be restarting after being stopped for resource rebalancing.
 
@@ -49,8 +46,7 @@ A driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriat
 
 If a driver requires some time to run its start operations for a device, it can mark the IRP pending and return STATUS\_PENDING.
 
-Operation
----------
+## Operation
 
 This IRP must be handled first by the parent bus driver for a device and then by each higher driver in the device stack.
 
@@ -66,8 +62,7 @@ For more information about handling a start IRP, see [Starting a Device](./start
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

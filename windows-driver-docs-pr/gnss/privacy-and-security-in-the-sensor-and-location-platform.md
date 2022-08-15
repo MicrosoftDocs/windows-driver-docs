@@ -1,8 +1,7 @@
 ---
 title: Privacy and Security in the Sensor and Location Platform
-description: Privacy and Security in the Sensor and Location Platform
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+description: The sensor and location platform in Windows provides features to help ensure that location data remains private.
+ms.date: 08/25/2021
 ---
 
 # Privacy and Security in the Sensor and Location Platform

@@ -2,7 +2,6 @@
 title: Specifying Hardware IDs for a Multifunction Device
 description: Specifying Hardware IDs for a Multifunction Device
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifying Hardware IDs for a Multifunction Device
@@ -24,7 +23,7 @@ If the device is a multifunction device, a device container combines all the [ha
 
 The following figure shows the relationship between a multifunction device's devnodes and device container.
 
-![diagram illustrating combining hardware ids from multiple devnodes into a single device container](images/hardwareid.png)
+![diagram illustrating combining hardware ids from multiple devnodes into a single device container.](images/hardwareid.png)
 
 Depending on your multifunction device, you can decide which [hardware ID](hardware-ids.md) values are specified by using separate [**HardwareID**](/previous-versions/windows/hardware/metadata/ff546114(v=vs.85)) elements in the [**HardwareIDList**](/previous-versions/windows/hardware/metadata/ff546121(v=vs.85)) element. Multiple hardware IDs can be specified in any order in the **HardwareIDList** element. However, you should be aware of the following points:
 

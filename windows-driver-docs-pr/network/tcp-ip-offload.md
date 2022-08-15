@@ -11,7 +11,6 @@ keywords:
 - connection offload WDK TCP/IP transport
 - packets WDK networking , TCP/IP offload
 ms.date: 06/21/2019
-ms.localizationpriority: medium
 ---
 
 # TCP/IP Offload Overview

@@ -2,7 +2,6 @@
 title: How to fix TraceLogging build errors
 description: This topic describes some common build errors and how to resolve them.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to fix TraceLogging build errors

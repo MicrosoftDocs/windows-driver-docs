@@ -17,27 +17,23 @@ api_location:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ISNMP::Close method
 
 The `Close` method enables an ASP Web page to close a communication path to an SNMP agent.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT Close();
 ```
 
-Parameters
-----------
+## Parameters
 
 This method has no parameters.
 
-Return value
-------------
+## Return value
 
 The method always returns S\_OK.
 
@@ -55,8 +51,7 @@ objSNMP.Open strIP, strCommunity, 2, 1000
 objSNMP.Close
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

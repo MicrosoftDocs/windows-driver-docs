@@ -3,7 +3,6 @@ title: Example WDM Device Stack
 description: Example WDM Device Stack
 keywords: ["device stacks WDK kernel , examples", "joystick WDK device stacks", "functional device objects WDK kernel", "FDO WDK kernel", "physical device objects WDK kernel", "PDOs WDK kernel", "filter DOs WDK kernel", "USB hub device stacks WDK kernel", "USB host controller device stacks WDK kernel", "PCI bus device stacks WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Example WDM Device Stack
@@ -16,7 +15,7 @@ This section describes the device objects created by a possible set of drivers f
 
 The following figure shows the device objects that are created by the sample drivers described in [WDM Driver Layers: An Example](wdm-driver-layers---an-example.md).
 
-![diagram illustrating sample wdm device object layers for a usb joystick](images/joydobj.png)
+![diagram illustrating sample wdm device object layers for a usb joystick.](images/joydobj.png)
 
 Starting at the bottom of this figure, the device objects in the sample device stacks include:
 
@@ -56,7 +55,7 @@ Note that the PDO created by the parent bus driver is always at the bottom of th
 
 The following figure shows the same device stacks as the previous figure, but emphasizes which device objects are created and managed by which drivers.
 
-![diagram illustrating sample device object layers from the driver perspective](images/joydobj2.png)
+![diagram illustrating sample device object layers from the driver perspective.](images/joydobj2.png)
 
 A bus driver spans more than one device stack. A bus driver creates the FDO for its bus adapter/controller and creates a PDO for each of its child devices.
 

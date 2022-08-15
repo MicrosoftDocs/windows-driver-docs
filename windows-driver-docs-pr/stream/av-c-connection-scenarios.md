@@ -16,7 +16,6 @@ keywords:
 - Avc.sys function driver WDK , connections
 - external plug connections WDK AV/C
 ms.date: 03/05/2021
-ms.localizationpriority: medium
 ---
 
 # AV/C Connection Scenarios

@@ -2,7 +2,6 @@
 title: Handling interrupts in UMDF drivers
 description: Handling Interrupts
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling interrupts in UMDF drivers

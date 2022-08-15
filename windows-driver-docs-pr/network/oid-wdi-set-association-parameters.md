@@ -4,11 +4,12 @@ description: OID_WDI_SET_ASSOCIATION_PARAMETERS specifies parameters that the ad
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_ASSOCIATION_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_ASSOCIATION\_PARAMETERS
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_SET\_ASSOCIATION\_PARAMETERS specifies parameters that the adapter can use during association to a set of BSSIDs.
@@ -35,8 +36,7 @@ This command replaces the previously configured list of BSSID-specific associati
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

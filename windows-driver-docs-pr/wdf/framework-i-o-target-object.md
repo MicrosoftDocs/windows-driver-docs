@@ -8,7 +8,6 @@ keywords:
 - IWDFIoTarget
 - targets WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Framework I/O Target Object

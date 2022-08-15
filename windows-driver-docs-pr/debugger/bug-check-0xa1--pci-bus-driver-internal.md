@@ -9,7 +9,6 @@ api_name:
 - PCI_BUS_DRIVER_INTERNAL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xA1: PCI\_BUS\_DRIVER\_INTERNAL

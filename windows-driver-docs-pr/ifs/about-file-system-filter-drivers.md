@@ -6,8 +6,7 @@ keywords:
 - file system filter drivers WDK , about file system filter drivers
 - what is a file system filter driver
 - file system filter drivers are not device drivers
-ms.date: 02/10/2020
-ms.localizationpriority: medium
+ms.date: 08/10/2021
 ---
 
 # About file system filter drivers
@@ -20,12 +19,12 @@ A file system filter driver can filter I/O operations for one or more file syste
 
 There are two file system filter models in Windows:
 
-- The [minifilter model](./filter-manager-concepts.md), in which a filter (also called a minifilter) uses system-supplied Filter Manager support, thus simplifying filter development
+- The [minifilter model](./filter-manager-concepts.md), in which a "minifilter" filter uses system-supplied Filter Manager (*FltMgr*) support, thus simplifying filter development
 
 - The [legacy file system filter model](./about-file-system-legacy-filter-drivers.md)
 
 > [!NOTE]
-> For optimal reliability and performance, use [file system minifilter drivers](./filter-manager-concepts.md) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
+> Filter developers should develop [file system minifilter drivers](./filter-manager-concepts.md) with Filter Manager support instead of legacy file system filter drivers.  See [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md) to port any remaining legacy filters to be minifilter drivers.
 
 ## File system filter drivers are not device drivers
 

@@ -6,8 +6,6 @@ keywords:
 - Power Metering and Budgeting WDK , design guide
 ms.date: 10/09/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Power Metering and Budgeting Design Guide
@@ -26,6 +24,10 @@ This section contains the following topics:
 [Software Defined Batteries](software-defined-batteries.md)
 
 [ACPI Power Meter Interface](acpi-power-meter-interface.md)
+
+[Energy Meter Interface](energy-meter-interface.md)
+
+[EMI naming convention](rail_naming.md)
 
 
 

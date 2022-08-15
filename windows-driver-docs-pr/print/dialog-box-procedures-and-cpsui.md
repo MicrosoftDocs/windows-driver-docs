@@ -9,7 +9,6 @@ keywords:
 - dialog box procedures WDK CPSUI
 - window messages WDK CPSUI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Dialog Box Procedures and CPSUI

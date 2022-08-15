@@ -3,7 +3,6 @@ title: Using Shell Commands
 description: Using Shell Commands
 keywords: ["shell commands", "shell commands, overview"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using Shell Commands

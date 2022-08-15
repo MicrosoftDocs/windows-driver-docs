@@ -2,7 +2,6 @@
 title: APN database overview
 description: APN database overview
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # APN database overview

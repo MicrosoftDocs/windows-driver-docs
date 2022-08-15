@@ -2,7 +2,6 @@
 title: Creating a Device Metadata Package
 description: Describes how to create a Device Metadata Package for your device directly in Visual Studio using the Device Metadata Authoring Wizard.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating a Device Metadata Package

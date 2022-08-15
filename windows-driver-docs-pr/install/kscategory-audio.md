@@ -10,7 +10,6 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,8 +43,7 @@ The KSCATEGORY_AUDIO [device interface class](./overview-of-device-interface-cla
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS audio devices register instances of this device interface class to indicate to the operating system that the devices support the KSCATEGORY_AUDIO functional category.
 
@@ -53,8 +51,7 @@ For information about device interface classes for audio adapters, see [Installi
 
 For information about how to register this functional category in an INF file, see the Help files *INFViewer.html* and *ac97smpl.inf*, which are included with the [AC'97 sample driver](/samples/browse/) in the WDK.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

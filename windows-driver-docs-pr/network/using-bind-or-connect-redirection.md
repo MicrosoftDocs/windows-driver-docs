@@ -2,7 +2,6 @@
 title: Using Bind or Connect Redirection
 description: Using Bind or Connect Redirection
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Bind or Connect Redirection
@@ -97,7 +96,7 @@ To perform redirection inline a callout driver must perform the following steps 
 
 6.  Call [**FwpsApplyModifiedLayerData0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsapplymodifiedlayerdata0) to apply the changes made to the data.
 
-7.  In your proxy service (which could be in user mode or kernel mode), you should query redirect records and contexts as shown in the following example:
+7.  In your proxy service (which could be in user mode or kernel mode), you must query redirect records and contexts as shown in the following example:
 
     ```C++
     BYTE* redirectRecords;
@@ -117,7 +116,7 @@ To perform redirection inline a callout driver must perform the following steps 
     // extract original destination IP and port from above context
     ```
 
-8.  In your proxy service (which could be in user mode or kernel mode), you should set redirect records on the proxy connection socket as shown in the following example to create a new outbound socket:
+8.  In your proxy service (which could be in user mode or kernel mode), you must set redirect records on the proxy connection socket as shown in the following example to create a new outbound socket:
 
     ```C++
     proxySock = WSASocket(…);

@@ -9,7 +9,6 @@ api_name:
 - IoBuildDeviceIoControlSetEvent
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoBuildDeviceIoControlSetEvent rule (wdm)
@@ -19,8 +18,7 @@ The **IoBuildDeviceIoControlSetEvent** rule specifies that a driver that calls [
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest)
 [**KeClearEvent**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keclearevent)

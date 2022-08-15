@@ -10,7 +10,6 @@ keywords:
 - Web Services for Devices API WDK
 - WSDAPI WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WSDAPI Basic Interoperability Tool

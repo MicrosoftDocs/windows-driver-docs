@@ -9,7 +9,6 @@ api_name:
 - CompleteRequest
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CompleteRequest rule (wdm)
@@ -25,8 +24,7 @@ This rule reports a defect if:
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -51,8 +49,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)
 [**IoSetCompletionRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine)

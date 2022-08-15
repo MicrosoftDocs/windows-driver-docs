@@ -4,7 +4,6 @@ description: The NdisQueryMdlOffset macro retrieves the offset within a physical
 ms.date: 07/18/2017
 keywords:
  - NdisQueryMdlOffset macro Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NdisQueryMdlOffset macro
@@ -12,8 +11,7 @@ ms.localizationpriority: medium
 
 The **NdisQueryMdlOffset** macro retrieves the offset within a physical page at which a given MDL buffer begins and the length of the buffer.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID NdisQueryMdlOffset(
@@ -23,8 +21,7 @@ VOID NdisQueryMdlOffset(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *\_Mdl*   
 A pointer to an MDL.
@@ -35,18 +32,15 @@ A pointer to a caller-supplied variable in which this macro returns the zero-bas
 *\_Length*   
 A pointer to a caller-supplied variable in which this macro returns the length, in bytes, of the virtual address range that is specified by the MDL.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 The **NdisQueryMdlOffset** macro provides an MDL-based version of the [**NdisQueryBufferOffset**](/previous-versions/windows/hardware/network/ff554411(v=vs.85)) function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

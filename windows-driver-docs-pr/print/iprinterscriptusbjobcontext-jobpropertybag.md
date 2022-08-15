@@ -12,15 +12,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContext::JobPropertyBag method
 
 Returns the property bag associated with the current print job.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT JobPropertyBag(
@@ -28,24 +26,20 @@ HRESULT JobPropertyBag(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *ppPropertyBag* \[out, retval\]  
 The property bag associated with the current print job.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Remarks
--------
+## Remarks
 
 **JobPropertyBag** is a read-only method. IHV JavaScript functions can use this property bag to store properties or data that is specific to the print job that is currently being processed. This property bag exists for the duration of the current job only.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,14 +1,13 @@
 ---
 title: Hardware Support App (HSA) Steps for Driver Developers
-description: Creating a custom capability to pair a driver with a Hardware Support App (HSA)
+description: Create a custom capability to pair a driver with a Hardware Support App (HSA)
 keywords:
 - Custom , Capabilities
 - UWP Apps
 - custom capabilities
 - UWP
 - Hardware
-ms.date: 08/16/2017
-ms.localizationpriority: medium
+ms.date: 08/13/2021
 ---
 
 # Hardware Support App (HSA): Steps for Driver Developers
@@ -27,19 +26,29 @@ First, reserve a custom capability:
 
 1. Email Microsoft Hardware Support Apps Review (<HSAReview@microsoft.com>) with the following information:
 
-    * Contact information
-    * Company name
-    * Name of the capability (must be unique and reference the owner)
-    * What resources does capability need to access?
-    * Any security or privacy concerns
-    * What data events will be processed to the partner?
-      * Would the events include personal identifiers such as  precise user locations, passwords, IP address, PUID, device ID , CID, username and contact data)?
-      * Do the data events stay on the users device, or is it sent  to partner?
-    * What data does your capability provide access to?
-    * What is the benefit to the end user of this capability?
-    * Include the Microsoft Store App Publisher ID.  To get one, create a skeleton app entry on the Microsoft Store page. For more info on reserving your App PFN, see [Create your app by reserving a name](/windows/uwp/publish/create-your-app-by-reserving-a-name).
+    - Contact information
 
-2. If the request is approved, Microsoft emails back a unique custom capability string name in the format **CompanyName.capabilityName\_PublisherID**.
+    - Company name
+
+    - Name of the capability (must be unique and reference the owner)
+
+    - What resources does capability need to access?
+
+    - Any security or privacy concerns
+
+    - What data events will be processed to the partner?
+
+        - Would the events include personal identifiers such as  precise user locations, passwords, IP address, PUID, device ID , CID, username and contact data)?
+
+        - Do the data events stay on the users device, or is it sent  to partner?
+
+    - What data does your capability provide access to?
+
+    - What is the benefit to the end user of this capability?
+
+    - Include the Microsoft Store App Publisher ID.  To get one, create a skeleton app entry on the Microsoft Store page. For more info on reserving your App PFN, see [Create your app by reserving a name](/windows/uwp/publish/create-your-app-by-reserving-a-name).
+
+1. If the request is approved, Microsoft emails back a unique custom capability string name in the format **CompanyName.capabilityName_PublisherID**.
 
 Now you can use the custom capability to allow access to either an RPC endpoint or a driver.
 
@@ -48,8 +57,10 @@ Now you can use the custom capability to allow access to either an RPC endpoint 
 To allow access to an RPC endpoint to a UWP app that has the custom capability, follow these steps:
 
 1. Call [**DeriveCapabilitySidsFromName**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-derivecapabilitysidsfromname) to convert the custom capability name to a security ID (SID).
-2. Add the SID to your access allowed ACE along with any other SIDs that are needed for the security descriptor of your RPC endpoint.
-3. Create an RPC endpoint using the information from the Security Descriptor.
+
+1. Add the SID to your access allowed ACE along with any other SIDs that are needed for the security descriptor of your RPC endpoint.
+
+1. Create an RPC endpoint using the information from the Security Descriptor.
 
 You can see an implementation of the above in the [RPC server code](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/CustomCapability/Service/Server/RpcServer.cpp) in the [Custom Capability sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomCapability).
 
@@ -59,7 +70,7 @@ To allow access to a driver to a UWP app with the custom capability, add a few l
 
 In the INF file, specify your custom capability as follows:
 
-```cpp
+```inf
 [WDMPNPB003_Device.NT.Interfaces]
 AddInterface= {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz},,AddInterfaceSection
 
@@ -68,14 +79,14 @@ AddProperty= AddInterfaceSection.AddProps
 
 [AddInterfaceSection.AddProps]
 ; DEVPKEY_DeviceInterface_UnrestrictedAppCapabilities
-{026e516e-b814-414b-83cd-856d6fef4822}, 8, 0x2012,, "CompanyName.myCustomCapabilityNameTBD_MyStorePubId"
+{026e516e-b814-414b-83cd-856d6fef4822}, 8, 0x2012,, "CompanyName.myCustomCapabilityName_MyStorePubId"
 ```
 
 Or, do the following in the driver:
 
-```c++
+```cpp
 WDF_DEVICE_INTERFACE_PROPERTY_DATA PropertyData = {};
-WCHAR customCapabilities[] = L”CompanyName.myCustomCapabilityNameTBD_MyStorePubId\0”;
+WCHAR customCapabilities[] = L"CompanyName.myCustomCapabilityName_MyStorePubId\0";
 
 WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT(
    &PropertyData,
@@ -88,10 +99,9 @@ Status = WdfDeviceAssignInterfaceProperty(
     DEVPROP_TYPE_STRING_LIST,
     ARRAYSIZE(customCapabilities),
     reinterpret_cast<PVOID>(customCapabilities));
-
 ```
 
-Replace `zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz` with the GUID for the interface to expose.  Replace *CompanyName* with your company name, *myCustomCapabilityNameTBD* with a name that is unique within your company, and *MyStorePubId* with your publisher store ID.
+Replace `zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz` with the GUID for the interface to expose.  Replace *CompanyName* with your company name, *myCustomCapabilityName* with a name that is unique within your company, and *MyStorePubId* with your publisher store ID.
 
 For an example of the driver code shown immediately above, see the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).
 
@@ -150,8 +160,8 @@ To prepare the SCCD file, first update the custom capability string.  Use the fo
 
 Next, the custom capability owner obtains the Package Family Name (PFN) and the signature hash from the app developer and updates those strings in the SCCD file.
 
->[!NOTE]
->The app does not have to be signed directly with the certificate, but the specified certificate must be part of the cert chain that signs the app.
+> [!NOTE]
+> The app does not have to be signed directly with the certificate, but the specified certificate must be part of the cert chain that signs the app.
 
 After completing the SCCD, the capability owner emails it to Microsoft for signing.  Microsoft returns the signed SCCD to the capability owner.
 
@@ -200,26 +210,11 @@ The resulting signed SCCD will validate in any app package.
 
 Starting in Windows 10 version 1803, apps can declare custom capabilities from one or more SCCD files. Place the SCCD files in the root of the app package.
 
-## Summary
+## Summary of SCCD signing sequence
 
 The following diagram summarizes the sequence described above:
 
-![Getting an SCCD signed](images/signsccd.png)
-
-## See Also
-
-* [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
-* [Intro to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide)
-* [Universal Windows Platform (UWP)](/windows/uwp/design/basics/design-and-ui-intro)
-* [App capabilities](/windows/uwp/packaging/app-capability-declarations)
-* [Develop UWP apps using Visual Studio](/windows/uwp/develop/)
-* [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
-* [Develop UWP apps](/windows/uwp/develop/)
-* [Package an app using the Desktop App Converter (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter)
-* [Custom Capability Sample App](https://go.microsoft.com/fwlink/p/?LinkId=846904)
-* [Custom Capability Driver Sample](https://aka.ms/customcapabilitydriversample )
-* [Sideload apps in Windows 10](/windows/deploy/sideload-apps-in-windows-10)
-* [FAQ on Custom Capabilities](FAQ-on-custom-capabilities.md)
+![Getting an SCCD signed.](images/signsccd.png)
 
 ## SCCD XML Schema
 
@@ -425,3 +420,29 @@ The following schema is also valid as of Windows 10, version 1809.  It enables a
   
 </xs:schema>
 ```
+
+## See also
+
+[Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
+
+[Intro to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide)
+
+[Universal Windows Platform (UWP)](/windows/uwp/design/basics)
+
+[App capabilities](/windows/uwp/packaging/app-capability-declarations)
+
+[Develop UWP apps using Visual Studio](/windows/uwp/develop/)
+
+[Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
+
+[Develop UWP apps](/windows/uwp/develop/)
+
+[Package an app using the Desktop App Converter (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter)
+
+[Custom Capability Sample App](https://github.com/Microsoft/Windows-universal-samples/tree/main/Samples/CustomCapability)
+
+[Custom Capability Driver Sample](https://aka.ms/customcapabilitydriversample )
+
+[Sideload apps in Windows 10](/windows/application-management/sideload-apps-in-windows-10)
+
+[FAQ on Custom Capabilities](FAQ-on-custom-capabilities.yml)

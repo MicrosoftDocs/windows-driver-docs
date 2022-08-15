@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # FSCTL\_GET\_EXTERNAL\_BACKING control code
@@ -50,8 +49,7 @@ Size, in bytes, of the buffer pointed to by *OutputBuffer*.
 <a href="" id="lengthreturned"></a>*LengthReturned*  
 Specifies the number of bytes written into *OutputBuffer* on successful completion.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values.
 
@@ -80,13 +78,11 @@ Status block
 
  
 
-Remarks
--------
+## Remarks
 
 When the backing provider for the data source to update is a WIM file, the output buffer will contain a [**WOF\_EXTERNAL\_INFO**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wof_external_info) structure followed by a [**WIM\_PROVIDER\_EXTERNAL\_INFO**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_wim_provider_external_info) structure. The *OutputBufferLength* must be at least **sizeof**(WOF\_EXTERNAL\_INFO) + **sizeof**(WIM\_PROVIDER\_EXTERNAL\_INFO). When the backing provider is an individually compressed file, the output buffer will contain a **WOF\_EXTERNAL\_INFO** structure followed by a [**FILE\_PROVIDER\_EXTERNAL\_INFO\_V1**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_provider_external_info_v1) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

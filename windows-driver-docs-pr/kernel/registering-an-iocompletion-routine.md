@@ -3,7 +3,6 @@ title: Registering an IoCompletion Routine
 description: Registering an IoCompletion Routine
 keywords: ["IoCompletion routines", "registering IoCompletion routines"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Registering an IoCompletion Routine

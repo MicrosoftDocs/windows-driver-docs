@@ -4,7 +4,6 @@ description: OID_WWAN_DEVICE_SERVICE_COMMAND allows miniport drivers to implemen
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_DEVICE_SERVICE_COMMAND Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_DEVICE\_SERVICE\_COMMAND
@@ -18,8 +17,7 @@ Miniport drivers must process query and set requests asynchronously, initially r
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support the specified device service or operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -4,10 +4,11 @@ description: WDI_TLV_P2P_DEVICE_FILTER_LIST is a TLV that contains a list of Wi-
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_DEVICE_FILTER_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_DEVICE\_FILTER\_LIST
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_DEVICE\_FILTER\_LIST is a TLV that contains a list of Wi-Fi Direct devices and Group Owners to search for during Wi-Fi Direct device discovery.
@@ -31,8 +32,7 @@ The size (in bytes) of the array of [**WDI\_MAC\_ADDRESS**](/windows-hardware/dr
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

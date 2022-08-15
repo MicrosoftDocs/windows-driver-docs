@@ -4,7 +4,6 @@ description: An object identifier (OID) method request of OID_SWITCH_NIC_REQUEST
 ms.date: 08/08/2017
 keywords: 
  -OID_SWITCH_NIC_REQUEST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_SWITCH\_NIC\_REQUEST
@@ -14,10 +13,9 @@ An object identifier (OID) method request of OID\_SWITCH\_NIC\_REQUEST is used t
 
 This OID request is also used to encapsulate OID requests that were issued to other network adapters that are connected to extensible switch ports. In this case, the encapsulated OID request is forwarded through the extensible switch driver stack for inspection by extensions.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_SWITCH\_NIC\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_oid_request) structure. This structure specifies the forwarding information for the OID request. This structure also contains a pointer to the original **NDIS\_OID\_REQUEST** structure of the OID request that is being forwarded.
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS\_SWITCH\_NIC\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_oid_request) structure. This structure specifies the forwarding information for the OID request. This structure also contains a pointer to the original **NDIS\_OID\_REQUEST** structure of the OID request that is being forwarded.
 
-Remarks
--------
+## Remarks
 
 When OID requests arrive at the Hyper-V extensible switch interface, it encapsulates them in order to forward them down the extensible switch control path. These OID requests include the following:
 
@@ -33,7 +31,7 @@ When OID requests arrive at the Hyper-V extensible switch interface, it encapsul
 
 
 
-    -   The **OidRequest** member is set to a pointer to the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure for the encapsulated OID request.
+    -   The **OidRequest** member is set to a pointer to the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure for the encapsulated OID request.
 
     The protocol edge then issues the OID\_SWITCH\_NIC\_REQUEST request to forward the encapsulated OID request down the extensible switch control path to the external network adapter.
 
@@ -65,7 +63,7 @@ A forwarding extension can also issue an OID\_SWITCH\_NIC\_REQUEST in order to f
 
         For example, if the extension is managing hardware offload resources for a child partition, it must set the **SourcePortId** and **SourceNicIndex** members to specify which partition the encapsulated hardware offload OID request is for.
 
-    -   The **OidRequest** member must be set to a pointer to an initialized [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure for the encapsulated OID request.
+    -   The **OidRequest** member must be set to a pointer to an initialized [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure for the encapsulated OID request.
 
 3.  The extension calls [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) to forward the OID request to the specified destination extensible switch port and network adapter.
 
@@ -100,8 +98,7 @@ The underlying miniport edge of the extensible switch completes the OID query re
 
 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -9,7 +9,6 @@ api_name:
 - .ignore_missing_pages (Suppress Missing Page Errors)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .ignore\_missing\_pages (Suppress Missing Page Errors)
@@ -61,8 +60,7 @@ Suppresses the display of missing page errors while debugging a Kernel Memory Du
 
 For more information about how to debug these dump files, see [Kernel Memory Dump](kernel-memory-dump.md).
 
-Remarks
--------
+## Remarks
 
 Without parameters, **.ignore\_missing\_pages** displays the current status of this setting.
 

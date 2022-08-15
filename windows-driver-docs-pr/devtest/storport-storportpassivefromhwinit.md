@@ -9,7 +9,6 @@ api_name:
 - StorPortPassiveFromHwInit
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortPassiveFromHwInit rule (storport)
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +43,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**StorPortEnablePassiveInitialization**](/windows-hardware/drivers/ddi/storport/nf-storport-storportenablepassiveinitialization)

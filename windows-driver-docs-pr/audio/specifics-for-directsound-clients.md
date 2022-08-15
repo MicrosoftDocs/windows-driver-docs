@@ -5,7 +5,6 @@ keywords:
 - DirectSound WDK audio , non-PCM wave formats
 - non-PCM audio formats WDK , DirectSound
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Specifics for DirectSound Clients

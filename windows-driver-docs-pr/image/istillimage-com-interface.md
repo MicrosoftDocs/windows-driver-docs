@@ -2,7 +2,6 @@
 title: IStillImage COM Interface
 description: IStillImage COM Interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IStillImage COM Interface

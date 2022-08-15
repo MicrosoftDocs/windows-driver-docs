@@ -2,7 +2,6 @@
 title: SRB\_SURPRISE\_REMOVAL
 description: SRB\_SURPRISE\_REMOVAL
 ms.date: 08/25/2020
-ms.localizationpriority: medium
 ---
 
 # SRB\_SURPRISE\_REMOVAL

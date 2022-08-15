@@ -1,5 +1,5 @@
 ---
-title: fileobj
+title: fileobj (WinDbg)
 description: The fileobj extension displays detailed information about a FILE_OBJECT structure.
 keywords: ["FILE_OBJECT", "fileobj Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - fileobj
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !fileobj
@@ -52,8 +51,7 @@ Specifies the address of a [FILE_OBJECT](/windows-hardware/drivers/ddi/wdm/ns-wd
 
 For information about file objects, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 If the FILE\_OBJECT structure has an associated cache, **!fileobj** tries to parse and display cache information..
 

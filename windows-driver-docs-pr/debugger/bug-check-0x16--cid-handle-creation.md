@@ -9,7 +9,6 @@ api_name:
 - CID_HANDLE_CREATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x16: CID\_HANDLE\_CREATION

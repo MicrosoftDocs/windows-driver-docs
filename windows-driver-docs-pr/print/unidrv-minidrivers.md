@@ -9,7 +9,6 @@ keywords:
 - GPD files WDK Unidrv , Unidrv capabilities
 - Unidrv WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Unidrv Minidrivers

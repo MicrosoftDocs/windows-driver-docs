@@ -10,7 +10,6 @@ api_location:
 - Setupapi.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -148,8 +147,7 @@ If the DI_ENUMSINGLEINF flag is set in the device installation parameters, the *
 
 For more information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

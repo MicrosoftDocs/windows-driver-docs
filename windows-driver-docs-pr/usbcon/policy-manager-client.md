@@ -2,7 +2,6 @@
 description:  The client driver can participate in the policy decisions for USB Type-C connectors.
 title: Write a USB Type-C Policy Manager client driver
 ms.date: 10/02/2018
-ms.localizationpriority: medium
 ---
 
 # Write a USB Type-C Policy Manager client driver
@@ -11,7 +10,7 @@ The Microsoft-provided USB Type-C Policy Manager monitors the activities of USB 
 
 The Policy Manager gets and coordinates the information from the USB Connector Manager (UCM), USB host controller, and USB function, and your PM client driver. When UI notification is required, the Policy Manager sends the request to system Shell.
 
-![Architechtural block diagram for USB Policy Manager](images/pmclient.png)
+![Architechtural block diagram for USB Policy Manager.](images/pmclient.png)
 
 For a full view of the drivers, see [Architecture: USB Type-C design for a Windows system](./architecture--usb-type-c-in-a-windows-system.md).
 

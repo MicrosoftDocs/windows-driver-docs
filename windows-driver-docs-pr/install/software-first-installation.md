@@ -9,7 +9,6 @@ keywords:
 - AutoRun-enabled installation applications WDK
 - device installations WDK , types
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Software-First Installation
@@ -25,13 +24,11 @@ If the user inserts your distribution medium before plugging in the device, an A
 
 -   [Preinstall driver packages](preinstalling-driver-packages.md)
 
--   Use Microsoft Installer to [install device-specific applications](installing-device-specific-applications.md).
+-   Use Microsoft Installer to [install device-specific applications](./writing-a-device-installation-application.md).
 
 -   If the device is "hot-pluggable," tell the user to plug it in.
 
     If the bus does not provide hot-plug notification, initiate reenumeration by calling [**CM_Reenumerate_DevNode**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_reenumerate_devnode).
 
 -   If the device is not hot-pluggable, tell the user to turn the system off, plug in the device, and turn the system back on.
-
- 
 

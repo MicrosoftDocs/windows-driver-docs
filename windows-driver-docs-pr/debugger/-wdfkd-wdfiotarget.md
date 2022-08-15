@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfiotarget
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfiotarget
@@ -45,8 +44,7 @@ KMDF 1, UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The following example shows a display from the **!wdfkd.wdfiotarget** extension.
 

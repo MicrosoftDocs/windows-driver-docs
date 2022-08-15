@@ -19,7 +19,6 @@ keywords:
 - KSDATARANGE structure
 - data formats WDK audio , examples
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Examples of Audio Data Formats and Data Ranges

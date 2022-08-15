@@ -10,7 +10,6 @@ api_location:
 - Ntddpar.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -19,8 +18,7 @@ ms.date: 10/17/2018
 
 GUID_PARCLASS_DEVICE is an obsolete identifier for the device interface class for devices that are attached to a parallel port. For new instances of this class, use the [**GUID_DEVINTERFACE_PARCLASS**](guid-devinterface-parclass.md) class identifier instead.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

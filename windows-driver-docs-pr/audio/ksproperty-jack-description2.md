@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_JACK\_DESCRIPTION2
@@ -69,13 +68,11 @@ KSJACK\_DESCRIPTION2\[0\]
 
 KSJACK\_DESCRIPTION2\[N-1\]
 
-Remarks
--------
+## Remarks
 
 Each KSJACK\_DESCRIPTION2 structure must only contain information about one jack.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

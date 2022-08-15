@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfhelp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfhelp
@@ -29,8 +28,7 @@ Wdfkd.dll
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The **!wdfkd.wdfhelp** extension is equivalent to the [**!wdfkd.help**](-wdfkd-help.md) extension.
 

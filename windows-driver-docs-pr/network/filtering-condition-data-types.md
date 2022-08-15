@@ -4,7 +4,6 @@ description: This section describes filtering condition data types.
 keywords:
 - Filtering condition data types network drivers
 ms.date: 11/08/2017
-ms.localizationpriority: medium
 ---
 
 # Filtering condition data types

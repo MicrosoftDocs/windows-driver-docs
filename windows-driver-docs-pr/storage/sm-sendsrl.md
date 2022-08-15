@@ -10,7 +10,6 @@ api_location:
 - Hbapiwmi.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -19,8 +18,7 @@ ms.date: 10/17/2018
 
 The SM\_SendSRL WMI method sends a scan remote loop (SRL) command through the indicated port to the indicated domain controller.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void SM_SendSRL(
@@ -35,8 +33,7 @@ void SM_SendSRL(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *HbaPortWWN*   
 A worldwide name (WWN) for the local port through which the SRL command is sent. This information is delivered to the miniport driver in the HbaPortWWN member of a SM\_SendSRL\_IN structure.
@@ -62,18 +59,15 @@ The size, in bytes, of the data that was actually retrieved. The miniport driver
 *RespBuffer*   
 The results of the RPS command. The miniport driver returns this information in the RespBuffer member of a SM\_SendRPS\_OUT structure.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the MS\_SM\_FabricAndDomainManagementMethods WMI Class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

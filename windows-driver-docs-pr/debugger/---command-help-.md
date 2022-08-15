@@ -9,7 +9,6 @@ api_name:
 - (Command Help)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ? (Command Help)
@@ -51,8 +50,7 @@ The question mark (**?**) character displays a list of all commands and operator
 
  
 
-Remarks
--------
+## Remarks
 
 For more information about standard commands, use **?**. For more information about meta-commands, use [**.help**](-help--meta-command-help-.md). For more information about extension commands, use [**!help**](-help.md).
 

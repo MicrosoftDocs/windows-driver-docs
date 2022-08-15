@@ -9,7 +9,6 @@ api_name:
 - NETWORK_BOOT_DUPLICATE_ADDRESS
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xBC: NETWORK\_BOOT\_DUPLICATE\_ADDRESS
@@ -61,8 +60,7 @@ The NETWORK\_BOOT\_DUPLICATE\_ADDRESS bug check has a value of 0x000000BC. This 
 
  
 
-Cause
------
+## Cause
 
 This error indicates that when TCP/IP sent out an ARP for its IP address, it got a response from another machine indicating a duplicate IP address.
 

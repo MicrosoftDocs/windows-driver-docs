@@ -6,12 +6,11 @@ keywords:
 - kdnet
 - 2PF
 ms.date: 04/12/2021
-ms.localizationpriority: medium
 ---
 
 # Debugger 2PF KDNET Support
 
-This topic describes how to enable your miniport NDIS driver for 2PF debugger support to allow increased performance for high speed adapters, often used in data centers. This feature is available in Windows 10 Insider Preview Build 21313 and later.
+This topic describes how to enable your miniport NDIS driver for 2PF debugger support to allow increased performance for high speed adapters, often used in data centers. This feature is available in Windows 11 and later.
 
 When enabling kernel debugging on a NIC, the kernel debugging support takes over the physical device to provide both a kernel debugging and network connection on the box. This works fine on consumer low bandwidth NICs (1-10 Gbps), but on
 high throughput devices that support 10-40+ Gbps the kernel debugging extensibility modules that talk to the hardware generally cannot keep up with the amount of traffic that comes from Windows networking stack, so this degradates overall system performance.
@@ -45,7 +44,7 @@ Bus.dev.fun0.0).
 
 - The kdnet.exe user mode tool configures the 2PF feature using the Windows inbox driver by adding specific IOCTL codes to add/remove KDNET PF.
 
-![system diagram showing two network stacks one supporting 2pf using a combined pci card setup](images/kdnet-2pf-system-diagram.png)
+![system diagram showing two network stacks one supporting 2pf using a combined pci card setup.](images/kdnet-2pf-system-diagram.png)
 
 ## Multiple PFs feature design requirements
 

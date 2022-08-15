@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Contrast element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The optional **Contrast** element specifies the relative amount to reduce or enhance the contrast of the scanned document.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Contrast wscn:Override="" wscn:UsedDefault=""
@@ -28,8 +26,7 @@ Usage
 </wscn:Contrast wscn:Override="" wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -64,8 +61,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 The Contrast value must lie in the range from -1000 through 1000, inclusive.
 
@@ -93,8 +89,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **Contrast** element indicates the relative amount to enhance or reduce the contrast of the scanned document. A value of 0 indicates that the WSD Scan Service should make no adjustments to the scanned contrast.
 

@@ -9,7 +9,6 @@ api_name:
 - rpcexts.getcallinfo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rpcexts.getcallinfo
@@ -65,8 +64,7 @@ Displays some brief Help text for this extension in the Command Prompt window.
 
 For more information about debugging Microsoft Remote Procedure Call (RPC), see [RPC Debugging](rpc-debugging.md).
 
-Remarks
--------
+## Remarks
 
 This extension can only be used with CDB or with user-mode WinDbg.
 

@@ -9,7 +9,6 @@ api_name:
 - .help (Meta-Command Help)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .help (Meta-Command Help)
@@ -56,8 +55,7 @@ Displays output using [Debugger Markup Language](debugger-markup-language-comman
 
  
 
-Remarks
--------
+## Remarks
 
 For more information about meta-commands, use the **.help** command. For more information about standard commands, use the [**?**](---command-help-.md) command. For more information about extension commands, use the [**!help**](-help.md) extension.
 

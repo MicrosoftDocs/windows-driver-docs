@@ -1,5 +1,5 @@
 ---
-title: job
+title: job (WinDbg)
 description: The job extension displays a job object.
 keywords: ["job Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - job
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !job
@@ -61,8 +60,7 @@ Causes the display to include a list of all processes in the job.
 
 For information about job objects, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from this extension:
 

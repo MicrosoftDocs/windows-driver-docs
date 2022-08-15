@@ -7,7 +7,6 @@ keywords:
 - text logs WDK SetupAPI , indented log entries
 - SetupWriteTextLog
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Writing Indented Log Entries

@@ -12,15 +12,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddInt32 method
 
 The AddInt32 method adds a new response of type BIDI\_INT to the collection.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT  AddInt32(
@@ -29,8 +27,7 @@ HRESULT  AddInt32(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrSchema* \[in\]  
 The schema.
@@ -38,13 +35,11 @@ The schema.
 *lValue* \[in\]  
 The new value.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

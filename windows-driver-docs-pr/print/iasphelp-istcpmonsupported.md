@@ -15,15 +15,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_IsTCPMonSupported method
 
 The **IsTCPMonSupported** property enables an ASP Web page to determine if Microsoft's standard TCP/IP [port monitor](./port-monitors.md) is being used with a printer.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_IsTCPMonSupported(
@@ -31,14 +29,12 @@ HRESULT get_IsTCPMonSupported(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 Caller-supplied pointer to a location to receive **TRUE** if the TCP/IP port monitor is being used with the printer, or **FALSE** if it is not.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -81,8 +77,7 @@ objPrinter.Open strPrinter
 UseStdMon = objPrinter.IsTCPMonSupported
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

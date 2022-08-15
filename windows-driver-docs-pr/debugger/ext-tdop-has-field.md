@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # EXT\_TDOP\_HAS\_FIELD
@@ -33,8 +32,7 @@ Receives the status code returned by this sub-operation. This is the same as the
 
 If the typed data contains the member, **Status** receives S\_OK. If the typed data does not contain the member, **Status** receives E\_NOINTERFACE. Other error values might also be returned.
 
-Remarks
--------
+## Remarks
 
 EXT\_TDOP\_HAS\_FIELD is a value in the [**EXT\_TDOP**](/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop) enumeration.
 

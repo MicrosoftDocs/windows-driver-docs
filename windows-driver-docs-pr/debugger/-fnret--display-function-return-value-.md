@@ -9,7 +9,6 @@ api_name:
 - .fnret (Display Function Return Value)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .fnret (Display Function Return Value)
@@ -58,8 +57,7 @@ Specifies the return value to display. If you include *Value*, **.fnret** casts 
 
  
 
-Remarks
--------
+## Remarks
 
 If you include the *Value* parameter, the **.fnret** command only casts this value to the proper type and displays the results.
 

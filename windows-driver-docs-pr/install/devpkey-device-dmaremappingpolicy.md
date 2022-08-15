@@ -10,7 +10,6 @@ api_location:
 - Devpkey.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 07/15/2020
 ---
 
@@ -24,8 +23,7 @@ The value of the DEVPKEY_Device_DmaRemappingPolicy device property indicates the
 **Localized?**: No  
 
  
-Remarks
--------
+## Remarks
 
 | Value | Meaning |
 | ----- | ------- |
@@ -36,8 +34,7 @@ Remarks
 
 You can access the DEVPKEY_Device_DmaRemappingPolicy property by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) and [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Available in Windows 10, version 1803 (Redstone 4)  
 **Header**: Devpkey.h (include Devpkey.h)  

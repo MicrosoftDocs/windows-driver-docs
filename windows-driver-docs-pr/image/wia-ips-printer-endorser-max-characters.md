@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_PRINTER\_ENDORSER\_MAX\_CHARACTERS
@@ -25,13 +24,11 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The **WIA\_IPS\_PRINTER\_ENDORSER\_MAX\_CHARACTERS** property must be supported by all Imprinter/Endorser items. When implemented, the property value **must be** greater than zero (0).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

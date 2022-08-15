@@ -12,7 +12,6 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContextReturnCodes interface
@@ -21,8 +20,7 @@ The IPrinterScriptUsbJobContextReturnCodes interface represents an array of retu
 
 This interface is returned by the [**IPrinterScriptUsbJobContext::ReturnCodes**](iprinterscriptusbjobcontext-returncodes.md) method.
 
-Members
--------
+## Members
 
 The **IPrinterScriptUsbJobContextReturnCodes** interface inherits from the [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterScriptUsbJobContextReturnCodes** also has these types of members:
 
@@ -67,8 +65,7 @@ The **IPrinterScriptUsbJobContextReturnCodes** interface has these methods.
 </tbody>
 </table>
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

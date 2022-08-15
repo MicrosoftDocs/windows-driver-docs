@@ -9,7 +9,6 @@ api_name:
 - CRYPTO_SELF_TEST_FAILURE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x123: CRYPTO\_SELF\_TEST\_FAILURE

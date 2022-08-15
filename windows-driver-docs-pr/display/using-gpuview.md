@@ -1,32 +1,38 @@
 ---
-title: Using GPUView
-description: Using GPUView
-ms.date: 01/23/2019
-ms.localizationpriority: medium
+title: About GPUView
+description: About GPUView
+ms.date: 06/30/2022
+mscustom: contperf-fy22q4
 ---
 
-# Using GPUView
+# About GPUView
 
-GPUView (*GPUView.exe*) is a development tool for determining the performance of the graphics processing unit (GPU) and CPU. It looks at performance with regard to direct memory access (DMA) buffer processing and all other video processing on the video hardware. GPUView is useful for developing display drivers that comply with the Windows Vista display driver model. GPUView is introduced with the release of the Windows 7 operating system.
+GPUView (*GPUView.exe*) is a development tool that reads logged video and kernel events from an event trace log (.etl) file and presents the data graphically to the user.
 
-GPUView and other files that are associated with it are included with the Windows Performance Toolkit (WPT) as an installable option of the WPT MSI. GPUView binaries are available for x86-based, x64-based, and IA64-based architectures. For example, *Wpt\_x86.msi* is for an x86 platform. 
+* Video core developers can use GPUView to determine the performance of the graphics processing unit (GPU) and the central processing unit (CPU) with regard to direct memory access (DMA) buffer processing (and all other video processing) on the video hardware.
+* Developers and testers can use GPUView to show different kinds of events that might lead to unusual conditions like glitches, preparation delays, and poor synchronization.
 
-You can also download GPUView as part of the Windows 7 SDK. After installing the SDK you will need to go to C:\Program Files\Microsoft SDKs\Windows\v7.0\bin and run either wpt_x64.msi or wpt_x86.msi. This will install the Windows Performance Toolkit which contains GPUView. 
+## Quick start for using GPUView
 
-The WPT MSI includes the files that are described in the following table.
+To use GPUView, you'll first need to generate a trace. To do so:
 
-|File|Purpose|
-|----|----|
-|EULA.rtf|Legal agreement|
-|GPUView.chm|GPUView help file|
-|Readme.txt|Any additional information that is not included in the help file|
-|GPUView.exe|Program for viewing ETL files with video data|
-|AEplugin.dll, DWMPlugin.dll, MFPlugin.dll, NTPlugin.dll, DxPlugin.dll, and DxgkPlugin.dll|Plugins to interpret events|
-|CoreTPlugin.dll|Plugin for Statistical Options dialog|
-|Log.cmd|Script to turn on and off the appropriate information for logging|
-|SymbolSearchPath.txt|A text file that sets the symbol path to resolve stackwalk and other events|
+* Open a command prompt with administrative privilege:
+  * Find Start->All Programs->Accessories->Command Prompt
+  * Right click on the command prompt icon and select Run as Administrator.
 
-To use GPUView, go to the command line and run Log.cmd to start event logging. Then run Log.cmd again to stop logging. This will generate several Event Tracing for Windows (\*.ETL) files; these various streams will all be merged together into a single file called Merged.etl which is what GPUView reads. Some examples of logged events are:
+* Once at the command prompt, navigate to the GPUView directory and type the following command:
+
+   ``` Log.cmd ```
+
+* Reproduce the problem (no more than 30 seconds to 1 minute). Then retype the same command:
+
+   ``` Log.cmd ```
+
+   This will generate several Event Tracing for Windows (\*.ETL) files. These various streams will all be merged together into a single file called *Merged.etl* which is what GPUView reads.
+
+* Use GPUView to view the resulting *Merged.ETL* file.
+
+Some examples of logged events are:
 
 * All CPU context switches, including the stack trace and the reason for switching.
 * All kernel mode enters and exits and the stack trace.
@@ -34,6 +40,6 @@ To use GPUView, go to the command line and run Log.cmd to start event logging. T
 * Events reported by the graphics driver, such as command buffer start and end times, and vertical synchronization intervals for each adapter.
 * Many other system events that can affect performance, such as page faults.
 
-You can also read ETL files with XPerf (which is likewise part of the Windows SDK), however it will not understand any of the GPU specific events. Because these log files can be relatively large, you can use the `Log m` command instead which will skip many of the very high frequency events.
+You can also read ETL files with [XPerf](/windows-hardware/test/wpt/xperf-command-line-reference); however, it will not understand any of the GPU specific events. Because these log files can be relatively large, you can use the `Log m` command instead which will skip many of the very high frequency events.
 
 More information, including how to download and use GPUView, can be found on Matthew Fisher's site, [Matt's Webcorner](https://graphics.stanford.edu/~mdfisher/GPUView.html), where he talks about creating GPUView.

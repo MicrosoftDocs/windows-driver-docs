@@ -9,7 +9,6 @@ api_name:
 - DebugBreakUsage
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DebugBreakUsage rule (wdm)
@@ -19,8 +18,7 @@ The **DebugBreakUsage** rule specifies that the driver must not call [**DbgBreak
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

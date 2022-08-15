@@ -3,7 +3,6 @@ title: KSEVENTSETID\_AudioControlChange
 description: KSEVENTSETID\_AudioControlChange
 keywords: ["KSEVENTSETID_AudioControlChange"]
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSEVENTSETID\_AudioControlChange

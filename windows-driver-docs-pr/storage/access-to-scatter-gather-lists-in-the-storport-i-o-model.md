@@ -2,7 +2,6 @@
 title: Access to Scatter/Gather Lists in the Storport I/O Model
 description: Access to Scatter/Gather Lists in the Storport I/O Model
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Access to Scatter/Gather Lists in the Storport I/O Model

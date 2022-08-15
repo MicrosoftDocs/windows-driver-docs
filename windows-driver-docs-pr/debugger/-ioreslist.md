@@ -1,5 +1,5 @@
 ---
-title: ioreslist
+title: ioreslist (WinDbg)
 description: The ioreslist extension displays an IO_RESOURCE_REQUIREMENTS_LIST structure.
 keywords: ["ioreslist Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ioreslist
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ioreslist
@@ -52,8 +51,7 @@ Specifies the hexadecimal address of the IO\_RESOURCE\_REQUIREMENTS\_LIST struct
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For information about the IO\_RESOURCE\_REQUIREMENTS\_LIST structure, see the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from this extension:
 

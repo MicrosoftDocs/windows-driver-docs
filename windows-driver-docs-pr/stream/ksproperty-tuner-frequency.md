@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_TUNER\_FREQUENCY
@@ -56,13 +55,11 @@ The KSPROPERTY\_TUNER\_FREQUENCY property sets or gets the current frequency or 
 
 The property value (operation data) is a ULONG that specifies the current frequency of the tuner. This value is specified in hertz (Hz).
 
-Remarks
--------
+## Remarks
 
 The **Frequency** member of the KSPROPERTY\_TUNER\_FREQUENCY\_S structure specifies the current tuner frequency.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -80,7 +77,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_TUNER\_FREQUENCY\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tuner_frequency_s)
 

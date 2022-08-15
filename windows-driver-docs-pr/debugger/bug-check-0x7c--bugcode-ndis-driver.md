@@ -9,7 +9,6 @@ api_name:
 - BUGCODE_NDIS_DRIVER
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x7C: BUGCODE\_NDIS\_DRIVER
@@ -258,7 +257,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>NDIS_BUGCHECK_OID_REQUEST_INVALID_BUFFER</p>
 <p>A miniport driver or filter driver has completed an OID request illegally. Check that BytesWritten is not greater than the entire length of the buffer.</p></td>
 <td align="left"><p>The address of the specific miniport adapter or filter module block. Run <strong><a href="-ndiskd-netadapter.md" data-raw-source="[!ndiskd.netadapter](-ndiskd-netadapter.md)">!ndiskd.netadapter</a></strong> or <strong><a href="-ndiskd-filter.md" data-raw-source="[!ndiskd.filter](-ndiskd-filter.md)">!ndiskd.filter</a></strong> with this address for more information.</p></td>
-<td align="left"><p>The address to the <strong><a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)">NDIS_OID_REQUEST</a></strong> that was completed illegally. Inspect it with <strong><a href="-ndiskd-oid.md" data-raw-source="[!ndiskd.oid](-ndiskd-oid.md)">!ndiskd.oid</a></strong>.</p></td>
+<td align="left"><p>The address to the <strong><a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)">NDIS_OID_REQUEST</a></strong> that was completed illegally. Inspect it with <strong><a href="-ndiskd-oid.md" data-raw-source="[!ndiskd.oid](-ndiskd-oid.md)">!ndiskd.oid</a></strong>.</p></td>
 <td align="left"><p>0</p></td>
 </tr>
 <tr class="odd">
@@ -294,7 +293,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <tr class="even">
 <td align="left"><p>0x21</p></td>
 <td align="left"><p>NDIS_BUGCHECK_INVALID_OBJECT_HEADER</p>
-<p>A driver created an invalid <strong><a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header" data-raw-source="[NDIS_OBJECT_HEADER](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header)">NDIS_OBJECT_HEADER</a></strong>.</p></td>
+<p>A driver created an invalid <strong><a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header" data-raw-source="[NDIS_OBJECT_HEADER](/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header)">NDIS_OBJECT_HEADER</a></strong>.</p></td>
 <td align="left"><p>The handle of the driver that indicated the illegal status indication. Run <strong><a href="-ndiskd-minidriver.md" data-raw-source="[!ndiskd.minidriver](-ndiskd-minidriver.md)">!ndiskd.minidriver</a></strong> or <strong><a href="-ndiskd-filterdriver.md" data-raw-source="[!ndiskd.filterdriver](-ndiskd-filterdriver.md)">!ndiskd.filterdriver</a></strong> with this handle for more information.</p></td>
 <td align="left"><p>The object with the malformed header. Its interpretation depends on the API being called. For example, if the driver called <strong>NdisAllocateCloneOidRequest</strong>, then cast the object to ndis!NDIS_OID_REQUEST.</p></td>
 <td align="left"><p>0</p></td>
@@ -407,7 +406,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>The value of Parameter 4 depends on the value of Parameter 2. Each number in this list corresponds to the same hexadecimal value in Parameter 2.</p>
 <ul>
 <li>0x01 : 0</li>
-<li>0x02 : The NET_PNP_EVENT_CODE of the stuck event. For more information about these codes, see <strong><a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event" data-raw-source="[NET_PNP_EVENT](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event)">NET_PNP_EVENT</a></strong>..</li>
+<li>0x02 : The NET_PNP_EVENT_CODE of the stuck event. For more information about these codes, see <strong><a href="/windows-hardware/drivers/ddi/netpnp/ns-netpnp-_net_pnp_event" data-raw-source="[NET_PNP_EVENT](/windows-hardware/drivers/ddi/netpnp/ns-netpnp-_net_pnp_event)">NET_PNP_EVENT</a></strong>..</li>
 <li>0x03 : The NDIS_STATUS code of the stuck indication. Use <strong><a href="-ndiskd-help.md" data-raw-source="[!ndiskd.help](-ndiskd-help.md)">!ndiskd.help</a></strong> to decode it.</li>
 <li>0x04 : 0</li>
 <li>0x11 : 0</li>
@@ -433,7 +432,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <tr class="even">
 <td align="left"><p>0x27</p></td>
 <td align="left"><p>NDIS_BUGCHECK_LEAKED_NBL</p>
-<p>A driver has leaked a <strong><a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list" data-raw-source="[NET_BUFFER_LIST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list)">NET_BUFFER_LIST</a></strong> structure. Check with <strong><a href="-ndiskd-pendingnbls.md" data-raw-source="[!ndiskd.pendingnbls](-ndiskd-pendingnbls.md)">!ndiskd.pendingnbls</a></strong> to see any NBLs that are still pending on this driver.</p></td>
+<p>A driver has leaked a <strong><a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list" data-raw-source="[NET_BUFFER_LIST](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list)">NET_BUFFER_LIST</a></strong> structure. Check with <strong><a href="-ndiskd-pendingnbls.md" data-raw-source="[!ndiskd.pendingnbls](-ndiskd-pendingnbls.md)">!ndiskd.pendingnbls</a></strong> to see any NBLs that are still pending on this driver.</p></td>
 <td align="left"><p>Where the leak was detected. Possible values:</p>
 <ul>
 <li><p>0x01 : The leak was detected by the NBL tracker. The driver that is currently deregistering or unbinding is the most likely cause. Look at the callstack of the bugchecking thread. Drivers must not unbind or deregister while they still hold active NBLs.</p></li>
@@ -446,13 +445,11 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 
  
 
-Cause
------
+## Cause
 
 Parameter 1 indicates the specific cause of the BUGCODE\_NDIS\_DRIVER bug check.
 
-Remarks
--------
+## Remarks
 
 The BUGCODE\_NDIS\_DRIVER bugcheck indendifies problems in network drivers. Often, the problem is caused by a NDIS miniport driver. You can get a complete list of NDIS miniport drivers by using [**!ndiskd.netadapter**](-ndiskd-netadapter.md). You can get a bigger picture overview of the network stack with [**!ndiskd.netreport**](-ndiskd-netreport.md).
 

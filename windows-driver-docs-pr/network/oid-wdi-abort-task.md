@@ -4,10 +4,11 @@ description: OID_WDI_ABORT_TASK is a property that is sent down to cancel a spec
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_ABORT_TASK Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_ABORT\_TASK
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_ABORT\_TASK is a property that is sent down to cancel a specific pending task.
@@ -36,124 +37,54 @@ Contains a status of NDIS\_STATUS\_SUCCESS. There is no additional payload.
 ## Examples
 
 
+
 Original input task command:
 
-Field
-Subfield
-Type
-Value
-NDIS\_OID\_REQUEST
-Oid
-NDIS\_OID
-OID(WDI\_TASK\_SCAN)
-InputBufferLength
-UINT32
-0x210 (example)
-InformationBuffer
-PVOID
-Pointer to memory block containing WDI\_MESSAGE\_HEADER + TLV payload
-WDI\_MESSAGE\_HEADER
-PortId
-UINT16
-0x0001 (example)
-Reserved
-UINT16
-N/A
-WiFiStatus
-NDIS\_STATUS
-N/A
-TransactionId
-UINT32
-0x1111 (example)
-IhvSpecificId
-UINT32
-N/A
-TLV Payload
-TLV Payload
-Various
-Payload data
+|Field|Subfield|Type|Value|
+|--- |--- |--- |--- |
+|NDIS\_OID\_REQUEST|Oid|NDIS\_OID|OID(WDI\_TASK\_SCAN)|
+|--- |InputBufferLength|UINT32|0x210 (example)|
+|---|InformationBuffer|PVOID|Pointer to memory block containing WDI\_MESSAGE\_HEADER + TLV payload|
+|WDI\_MESSAGE\_HEADER|PortId|UINT16|0x0001 (example)|
+|--- |Reserved|UINT16|N/A|
+|--- |WiFiStatus|NDIS\_STATUS|N/A|
+|--- |TransactionId|UINT32|0x1111 (example)|
+|--- |IhvSpecificId|UINT32|N/A|
+|TLV Payload|TLV Payload|Various|Payload data|
  
 
 Abort task input command (with message header):
 
-Field
-Subfield
-Type
-Value
-NDIS\_OID\_REQUEST
-Oid
-NDIS\_OID
-OID(WDI\_ABORT\_TASK)
-InputBufferLength
-UINT32
-sizeof(WDI\_MESSAGE\_HEADER) + sizeof(WDI\_TLV\_CANCEL\_PARAMETERS)
-InformationBuffer
-PVOID
-Pointer to memory block containing WDI\_MESSAGE\_HEADER + TLV payload
-WDI\_MESSAGE\_HEADER
-PortId
-UINT16
-0x0001 (example)
-Reserved
-UINT16
-N/A
-WiFiStatus
-NDIS\_STATUS
-N/A
-TransactionId
-UINT32
-0x2222 (example)
-IhvSpecificId
-UINT32
-0
-WDI\_TLV\_CANCEL\_PARAMETERS
-OriginalTaskOid
-NDIS\_OID
-OID(WDI\_TASK\_SCAN)
-OriginalPortId
-UINT16
-0x0001 (example)
-OriginalTransactionId
-UINT32
-0x1111 (example)
+|Field|Subfield|Type|Value|
+|--- |--- |--- |--- |
+|NDIS\_OID\_REQUEST|Oid|NDIS\_OID|OID(WDI\_ABORT\_TASK)|
+|--- |InputBufferLength|UINT32|sizeof(WDI\_MESSAGE\_HEADER) + sizeof(WDI\_TLV\_CANCEL\_PARAMETERS)|
+|---|InformationBuffer|PVOID|Pointer to memory block containing WDI\_MESSAGE\_HEADER + TLV payload|
+|WDI\_MESSAGE\_HEADER|PortId|UINT16|0x0001 (example)|
+|--- |Reserved|UINT16|N/A|
+|--- |WiFiStatus|NDIS\_STATUS|N/A|
+|--- |TransactionId|UINT32|0x2222 (example)|
+|--- |IhvSpecificId|UINT32|0|
+|WDI\_TLV\_CANCEL\_PARAMETERS|OriginalTaskOid|NDIS\_OID|OID(WDI\_TASK\_SCAN)|
+|--- |OriginalPortId|UINT16|0x0001 (example)|
+|--- |OriginalTransactionId|UINT32|0x1111 (example)|
  
 
 Abort task command result:
 
-Field
-Subfield
-Type
-Value
-NDIS\_OID\_REQUEST
-Oid
-NDIS\_OID
-OID(WDI\_TASK\_SCAN)
-OutputBufferLength
-UINT32
-sizeof(WDI\_MESSAGE\_HEADER)
-InformationBuffer
-PVOID
-Pointer to memory block containing WDI\_MESSAGE\_HEADER
-WDI\_MESSAGE\_HEADER
-PortId
-UINT16
-0x0001 (example)
-Reserved
-UINT16
-N/A
-WiFiStatus
-NDIS\_STATUS
-NDIS\_STATUS\_SUCCESS
-TransactionId
-UINT32
-0x2222 (example)
-IhvSpecificId
-UINT32
-N/A
+|Field|Subfield|Type|Value|
+|--- |--- |--- |--- |
+|NDIS\_OID\_REQUEST|Oid|NDIS\_OID|OID(WDI\_TASK\_SCAN)|
+|---|OutputBufferLength|UINT32|sizeof(WDI\_MESSAGE\_HEADER)|
+|---|InformationBuffer|PVOID|Pointer to memory block containing WDI\_MESSAGE\_HEADER|
+|WDI\_MESSAGE\_HEADER|PortId|UINT16|0x0001 (example)|
+|---|Reserved|UINT16|N/A|
+|---|WiFiStatus|NDIS\_STATUS|NDIS\_STATUS\_SUCCESS|
+|---|TransactionId|UINT32|0x2222 (example)|
+|---|IhvSpecificId|UINT32|N/A|
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

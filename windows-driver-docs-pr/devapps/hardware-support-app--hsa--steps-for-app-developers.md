@@ -7,8 +7,7 @@ keywords:
 - custom capabilities
 - UWP
 - Hardware
-ms.date: 01/21/2021
-ms.localizationpriority: medium
+ms.date: 08/11/2021
 ---
 
 # Hardware Support App (HSA): Steps for App Developers
@@ -53,7 +52,7 @@ To generate the signature hash, run `C:\Windows\System32\certutil.exe -dump Cert
 
 Look for the signature hash near the bottom and ensure it's SHA256.  Otherwise, use a SHA256 cert to sign your app.  The result should look like this:
 
-```cpp
+```output
 Signature Hash:
 ca9fc964db7e0c2938778f4559946833e7a8cfde0f3eaa07650766d4764e86c4
 ```
@@ -93,15 +92,16 @@ Next, modify your [app package manifest](/uwp/schemas/appxpackage/appx-package-m
 
 Then copy the SCCD file to the package root of the appx package. In Visual Studio's solution explorer, right-click on "project-&gt; Add -&gt; Existing Item…" to add the SCCD to your project.
 
-![Adding an SCCD file into the appx package](images/addSCCDToAppx.png)
+![Adding an SCCD file into the appx package.](images/addSCCDToAppx.png)
 
 Mark the SCCD as build content by right clicking on the SCCD file and changing **Content** to **True**.  For a C# project, use the property `Build Action = Content`, and for a JavaScript project, use `Package Action = Content`.
 
-![Marking SCCD as content](images/markSCCDAsContent.png)
+![Marking SCCD as content.](images/markSCCDAsContent.png)
 
 Finally, right-click the project, select **Store**, then **Create App Packages**.
 
-**Note**: There is no support for UWP apps with custom capabilities on mobile platforms.
+> [!NOTE]
+> There is no support for UWP apps with custom capabilities on mobile platforms.
 
 ## Install the App
 
@@ -139,4 +139,4 @@ When the target machine is in Developer Mode, you can try the following steps to
 
 [Intro to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide)
 
-[Universal Windows Platform (UWP)](/windows/uwp/design/basics/design-and-ui-intro)
+[Universal Windows Platform (UWP)](/windows/uwp/design/basics)

@@ -10,7 +10,6 @@ api_location:
 - Devpropdef.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -19,8 +18,7 @@ ms.date: 10/17/2018
 
 In Windows Vista and later versions of Windows, the DEVPROP_TYPE_NULL identifier represents a special base-data-type identifier that indicates that a device property exists. However, that the property has no value that is associated with the property.
 
-Remarks
--------
+## Remarks
 
 Use this base-property-type identifier with the device property functions to delete the value that is associated with a device property.
 
@@ -40,8 +38,7 @@ To set a property whose data type is DEVPROP_TYPE_NULL, call the corresponding *
 
 A call to a **SetupDiGet*Xxx*** property function that attempts to retrieve a device property that has no value will succeed and set the \**PropertyType* parameter to DEVPROP_TYPE_NULL.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

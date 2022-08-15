@@ -9,7 +9,6 @@ keywords:
 - completing I/O requests WDK file system
 - IRP completion routines WDK file system , about IRP completion routines
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using IRP Completion Routines

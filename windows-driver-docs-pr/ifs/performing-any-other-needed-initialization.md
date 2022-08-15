@@ -2,7 +2,6 @@
 title: Performing Any Other Needed Initialization
 description: Performing Any Other Needed Initialization
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Performing Any Other Needed Initialization

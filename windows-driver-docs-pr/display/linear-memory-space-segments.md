@@ -6,7 +6,6 @@ keywords:
 - linear memory-space segments WDK display
 - memory-space segments WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Linear Memory-Space Segments
@@ -31,7 +30,7 @@ The driver sets the **Flags** member of the [**DXGK\_SEGMENTDESCRIPTOR**](/windo
 
 The following figure shows a visual representation of a linear memory-space segment.
 
-![diagram illustrating a linear memory-space segment](images/memspac.png)
+![diagram illustrating a linear memory-space segment.](images/memspac.png)
 
  
 

@@ -7,7 +7,6 @@ keywords:
 - reserved keywords WDK
 - Define directive WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # \#Define Preprocessor Directive

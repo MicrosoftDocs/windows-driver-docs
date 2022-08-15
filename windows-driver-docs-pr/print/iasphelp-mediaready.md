@@ -15,15 +15,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_MediaReady method
 
 The **MediaReady** property enables an ASP Web page to obtain a set of strings that name all of the paper forms for the printer that are currently available for use.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_MediaReady(
@@ -31,14 +29,12 @@ HRESULT get_MediaReady(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 A caller-supplied location to receive a pointer to a set of strings that name all of the paper forms for a printer that are currently available for use.
 
-Return value
-------------
+## Return value
 
 This property returns one of the values in the following table.
 
@@ -83,8 +79,7 @@ objPrinter.Open strPrinter
 MediaReadyArray = objPrinter.MediaReady
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

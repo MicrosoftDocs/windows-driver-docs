@@ -9,7 +9,6 @@ api_name:
 - .netuse (Control Network Connections)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .netuse (Control Network Connections)
@@ -64,8 +63,7 @@ Specifies the password that is associated with the *User* account. You must encl
 
  
 
-Remarks
--------
+## Remarks
 
 The **.netuse** command behaves like the **net use** Microsoft MS-DOS command.
 

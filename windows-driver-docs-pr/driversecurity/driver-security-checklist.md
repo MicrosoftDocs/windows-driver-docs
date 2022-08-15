@@ -1,8 +1,7 @@
 ---
 title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
-ms.date: 03/13/2020
-ms.localizationpriority: medium
+ms.date: 07/20/2022
 ---
 
 # Driver security checklist
@@ -21,41 +20,43 @@ In addition to avoiding the issues associated with a driver being attacked, many
 
 **Security checklist:** *Complete the security task described in each of these topics.*
 
-![empty checkbox](images/checkbox.png)[Confirm that a kernel driver is required](#confirm-that-a-kernel-driver-is-required)
+![empty checkbox.](images/checkbox.png)[Confirm that a kernel driver is required](#confirm-that-a-kernel-driver-is-required)
 
-![empty checkbox](images/checkbox.png)[Use the driver frameworks](#use-the-driver-frameworks)
+![empty checkbox.](images/checkbox.png)[Use the driver frameworks](#use-the-driver-frameworks)
 
-![empty checkbox](images/checkbox.png)[Control access to software only drivers](#control-access-to-software-only-drivers)
+![empty checkbox.](images/checkbox.png)[Control access to software only drivers](#control-access-to-software-only-drivers)
 
-![empty checkbox](images/checkbox.png)[Do not production sign test driver code](#do-not-production-sign-test-code)
+![empty checkbox.](images/checkbox.png)[Do not production sign test driver code](#do-not-production-sign-test-code)
 
-![empty checkbox](images/checkbox.png)[Perform threat analysis](#perform-threat-analysis)
+![empty checkbox.](images/checkbox.png)[Perform threat analysis](#perform-threat-analysis)
 
-![empty checkbox](images/checkbox.png)[Follow driver secure coding guidelines](#follow-driver-secure-coding-guidelines)
+![empty checkbox.](images/checkbox.png)[Follow driver secure coding guidelines](#follow-driver-secure-coding-guidelines)
 
-![empty checkbox](images/checkbox.png)[Validate HVCI compatibility](#validate-hvci-compatibility)
+![empty checkbox.](images/checkbox.png)[Implement HVCI compatible code](#implement-hvci-compatible-code)
 
-![empty checkbox](images/checkbox.png)[Follow technology specific code best practices](#follow-technology-specific-code-best-practices)
+![empty checkbox.](images/checkbox.png)[Follow technology specific code best practices](#follow-technology-specific-code-best-practices)
 
-![empty checkbox](images/checkbox.png)[Perform peer code review](#perform-peer-code-review)
+![empty checkbox.](images/checkbox.png)[Perform peer code review](#perform-peer-code-review)
 
-![empty checkbox](images/checkbox.png)[Manage driver access control](#manage-driver-access-control)
+![empty checkbox.](images/checkbox.png)[Manage driver access control](#manage-driver-access-control)
 
-![empty checkbox](images/checkbox.png)[Enhance device installation security](#enhance-device-installation-security)
+![empty checkbox.](images/checkbox.png)[Enhance device installation security](#enhance-device-installation-security)
 
-![empty checkbox](images/checkbox.png)[Execute proper release driver signing](#execute-proper-release-driver-signing)
+![empty checkbox.](images/checkbox.png)[Execute proper release driver signing](#execute-proper-release-driver-signing)
 
-![empty checkbox](images/checkbox.png)[Use code analysis in Visual Studio to investigate driver security](#use-code-analysis-in-visual-studio-to-investigate-driver-security)
+![empty checkbox.](images/checkbox.png)[Use code analysis in Visual Studio to investigate driver security](#use-code-analysis-in-visual-studio-to-investigate-driver-security)
 
-![empty checkbox](images/checkbox.png)[Use Static Driver Verifier to Check for Vulnerabilities](#use-static-driver-verifier-to-check-for-vulnerabilities)
+![empty checkbox.](images/checkbox.png)[Use Static Driver Verifier to Check for Vulnerabilities](#use-static-driver-verifier-to-check-for-vulnerabilities)
 
-![empty checkbox](images/checkbox.png)[Check code with BinSkim Binary Analyzer](#check-code-with-the-binskim-binary-analyzer)
+![empty checkbox.](images/checkbox.png)[Check code with BinSkim Binary Analyzer](#check-code-with-the-binskim-binary-analyzer)
 
-![empty checkbox](images/checkbox.png)[Use code validation tools](#use-additional-code-validation-tools)
+![empty checkbox.](images/checkbox.png)[Use code validation tools](#use-additional-code-validation-tools)
 
-![empty checkbox](images/checkbox.png)[Review debugger techniques and extensions](#review-debugger-techniques-and-extensions)
+![empty checkbox.](images/checkbox.png)[Review debugger techniques and extensions](#review-debugger-techniques-and-extensions)
 
-![empty checkbox](images/checkbox.png)[Review secure coding resources](#review-secure-coding-resources)
+![empty checkbox.](images/checkbox.png)[Understand how drivers are reported using the Microsoft Vulnerable and Malicious Driver Reporting Center](#microsoft-vulnerable-and-malicious-driver-reporting-center)
+
+![empty checkbox.](images/checkbox.png)[Review secure coding resources](#review-secure-coding-resources)
 
 [Summary of key takeaways](#summary-of-key-takeaways)
 
@@ -113,7 +114,7 @@ In considering security, a common methodology is to create specific threat model
 
 This article provides driver specific guidance for creating a lightweight threat model: [Threat modeling for drivers](threat-modeling-for-drivers.md). The article provides an example driver threat model diagram that can be used as a starting point for your driver.
 
-![Sample data flow diagram for hypothetical kernel-mode driver](images/sampledataflowdiagramkernelmodedriver.gif)
+![Sample data flow diagram for hypothetical kernel-mode driver.](images/sampledataflowdiagramkernelmodedriver.gif)
 
 Security Development Lifecycle (SDL) best practices and associated tools can be used by IHVs and OEMs to improve the security of their products. For more information see [SDL recommendations for OEMs](../bringup/security-overview.md#sdl-recommendations-for-oems).
 
@@ -167,6 +168,13 @@ Handle zero-length buffers correctly. For more information, see [Errors in Direc
 
 - Validate any address in the user space before trying to use it, using APIs such as [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) when appropriate.
 
+
+#### MSR model-specific register reads and writes
+ 
+Compiler intrinsics, such as [__readmsr](/cpp/intrinsics/readmsr) and [__writemsr](/cpp/intrinsics/writemsr) can be used to access the model-specific registers. If this access is required, the driver must always check that the register to read or write to is constrained to the expected index or range. 
+
+For more information, and code examples, see [Providing the ability to read/write MSRs](driver-security-dev-best-practices.md#providing-the-ability-to-read-and-write-msrs) in [Development Security Best Practices for Windows driver developers](driver-security-dev-best-practices.md).
+
 #### TOCTOU vulnerabilities
 
 There is a [potential time of check to time of use](https://en.wikipedia.org/wiki/Time_of_check_to_time_of_use) (TOCTOU) vulnerability when using direct I/O (for IOCTLs or for Read/Write).  Be aware that the driver is accessing the user data buffer, the user can simultaneously be accessing it.
@@ -179,7 +187,7 @@ To manage this risk, copy any parameters that need to be validated from the user
 
 - Device drivers must properly handle various user-mode, as well as kernel to kernel I/O, requests.
 
-To allow drivers to support HVCI virtualization, there are additional memory requirements. For more information, see [HVCI Compatibility](#validate-hvci-compatibility) later in this article.
+To allow drivers to support HVCI virtualization, there are additional memory requirements. For more information, see [Implement HVCI compatible code](#implement-hvci-compatible-code) later in this article.
 
 ### Handles
 
@@ -329,7 +337,7 @@ For more information, see the following articles:
 
 [Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md)
 
-## Validate HVCI compatibility
+## Implement HVCI compatible code
 
 **Security checklist item \#8:** *Validate that your driver uses memory so that it is HVCI compatible.*
 
@@ -347,9 +355,9 @@ To implement HVCI compatible code, make sure your driver code does the following
 - Does not load data files as executable
 - Section alignment is a multiple of 0x1000 (PAGE\_SIZE). E.g. DRIVER\_ALIGNMENT=0x1000
 
-For more information about using the tool and a list of incompatible memory calls, see [Evaluate HVCI driver compatibility](use-device-guard-readiness-tool.md).
+For more information about using the tool and a list of incompatible memory calls, see [Implement HVCI compatible code](implement-hvci-compatible-code.md).
 
-For more information about the related system fundamentals security test, see [Device Guard - Compliance Test](/windows-hardware/test/hlk/testref/10c242b6-49f6-491d-876c-c39b22b36abc) and [Driver Compatibility with Device Guard](/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard).
+For more information about the related system fundamentals security test, see [HyperVisor Code Integrity Readiness Test](/windows-hardware/test/hlk/testref/b972fc52-2468-4462-9799-6a1898808c86) and [Hypervisor-Protected Code Integrity (HVCI)](/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard).
 
 ## Follow technology-specific code best practices
 
@@ -418,7 +426,7 @@ If you don't have suitable staff to review you code internally, consider engagin
 
 **Security checklist item \#12:** *Use the Windows partner portal to properly sign your driver for distribution.*
 
-Before you release a driver package to the public, we recommend that you submit the package for certification. For more information, see [Test for performance and compatibility](/windows-hardware/test/index), [Get started with the Hardware program](../dashboard/get-started-with-the-hardware-dashboard.md), [Hardware Dashboard Services](../dashboard/index.yml), and [Attestation signing a kernel driver for public release](../dashboard/attestation-signing-a-kernel-driver-for-public-release.md).
+Before you release a driver package to the public, we recommend that you submit the package for certification. For more information, see [Test for performance and compatibility](/windows-hardware/test/index), [Get started with the Hardware program](../dashboard/get-started-dashboard-submissions.md), [Hardware Dashboard Services](../dashboard/index.yml), and [Attestation signing a kernel driver for public release](../dashboard/code-signing-attestation.md).
 
 ## Use code analysis in Visual Studio to investigate driver security
 
@@ -507,24 +515,36 @@ Follow these steps to validate that the security compile options are properly co
 
 1. Download and install the cross platform [.NET Core SDK](https://dotnet.microsoft.com/download).
 
-2. There are a number of options to download BinSkim, such as a NuGet package. In this example we will download a zip file with BinSkim from here: <https://github.com/microsoft/binskim> and install it on a 64 bit Windows PC.
+2. Confirm Visual Studio is installed. For information on downloading and installing Visual Studio see [Install Visual Studio](/visualstudio/install/install-visual-studio).
 
-3. Select the **Clone or download** button on <https://github.com/microsoft/binskim> and select **Download Zip**.
+3. There are a number of options to download BinSkim, such as a NuGet package. In this example we will use the git clone option to download from here: <https://github.com/microsoft/binskim> and install it on a 64 bit Windows PC.
 
-4. Select the downloaded zip file and unzip it, for example to `C:\binskim-master`.
+4. Open a Visual Studio Developer Command Prompt window and create a directory, for example `C:\binskim-master`. 
 
-5. Confirm Visual Studio is installed. For information on downloading and installing Visual Studio see [Install Visual Studio](/visualstudio/install/install-visual-studio).
-
-6. Open a Visual Studio Developer Command Prompt window and move to the directory that you unzipped the files to.  
+   ```console
+   C:\> Md \binskim-master
+   ```
+5. Move to that directory that you just created.  
 
    ```console
    C:\> Cd \binskim-master
    ```
-
-7. Run **BuildAndTest.cmd** at the root of the enlistment to ensure that release build succeeds, and that all tests pass.
+6. Use the git clone command to download all of the needed files.  
 
    ```console
-   C:\binskim-master> BuildAndTest.cmd
+   C:\binskim-master> git clone --recurse-submodules https://github.com/microsoft/binskim.git
+   ```
+
+7. Move to the new `binskim` dirctory that the clone command created.  
+
+   ```console
+   C:\> Cd \binskim-master\binskim
+   ```
+
+7. Run **BuildAndTest.cmd** to ensure that release build succeeds, and that all tests pass.
+
+   ```console
+   C:\binskim-master\binskim> BuildAndTest.cmd
 
    Welcome to .NET Core 3.1!
    ---------------------
@@ -532,25 +552,25 @@ Follow these steps to validate that the security compile options are properly co
 
    ...
 
-   C:\binskim-master\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64\BinSkim.Sdk.dll
+   C:\binskim-master\binskim\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64\BinSkim.Sdk.dll
    1 File(s) copied
-   C:\binskim-master\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\linux-x64\BinSkim.Sdk.dll
+   C:\binskim-master\binskim\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\linux-x64\BinSkim.Sdk.dll
    1 File(s) copied
 
    ...
 
    ```
 
-8. The build process creates a set of directories with the BinSkim executables. Move to the win-x64 bit build output directory.  
+8. The build process creates a set of directories with the BinSkim executables. Move to the win-x64 build output directory.  
 
    ```console
-   C:\binskim-master> Cd \binskim-master\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64>
+   C:\binskim-master\binskim> Cd \binskim-master\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64>
    ```
 
 9. Display help for the analyze option.
 
    ```console
-   C:\binskim-master\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64> BinSkim help analyze
+   C:\binskim-master\binskim\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64> BinSkim help analyze
 
    BinSkim PE/MSIL Analysis Driver 1.6.0.0
 
@@ -581,13 +601,13 @@ For more information about sympath, see [Symbol path for Windows debuggers](../d
 1. Execute the following command to analyze a compiled driver binary. Update the target path to point to your complied driver .sys file.
 
    ```console
-   C:\binskim-master\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64> BinSkim analyze "C:\Samples\KMDF_Echo_Driver\echo.sys"
+   C:\binskim-master\binskim\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64> BinSkim analyze "C:\Samples\KMDF_Echo_Driver\echo.sys"
    ```
 
 2. For additional information add the verbose option like this.
 
    ```console
-   C:\binskim-master\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64> BinSkim analyze "C:\Samples\KMDF_Echo_Driver\osrusbfx2.sys" --verbose
+   C:\binskim-master\binskim\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64> BinSkim analyze "C:\Samples\KMDF_Echo_Driver\osrusbfx2.sys" --verbose
    ```
 
    > [!NOTE]
@@ -624,7 +644,7 @@ For more information about sympath, see [Symbol path for Windows debuggers](../d
 
 To enable these warnings in Visual Studio, under C/C++ in the property pages for the project, remove the values that you don't wish to exclude in **Disable Specific Warnings**.
 
-![dialog box for disable specific warnings in Visual Studio 2019](images/disable-specific-warnings-dialog.png)
+![dialog box for disable specific warnings in Visual Studio 2019.](images/disable-specific-warnings-dialog.png)
 
 The default compile options in Visual Studio for driver projects can disable warnings such as the following. These warnings will be reported by BinSkim.
 
@@ -678,14 +698,6 @@ Consider the development of custom domain-specific security tests. To develop ad
 
 **Security checklist item \#17:** *Review these debugger tools and consider their use in your development debugging workflow.*
 
-### !exploitable Crash Analyzer
-
-The !exploitable Crash Analyzer is a Windows debugger extensions that parses crash logs looking for unique issues. It also examines the type of crash and tries to determine whether the error is something that could be exploited by a malicious hacker.
-
-Microsoft Security Engineering Center (MSEC), created the !exploitable Crash Analyzer. You can download the from codeplex: <https://msecdbg.codeplex.com/>.
-
-For more information, see [!Exploitable crash analyzer version 1.6](https://www.microsoft.com/security/blog/2013/06/13/exploitable-crash-analyzer-version-1-6/) and the Channel 9 video [!exploitable Crash Analyzer](https://channel9.msdn.com/blogs/pdcnews/bang-exploitable-security-analyzer).
-
 ### Security related debugger commands
 
 The !acl extension formats and displays the contents of an access control list (ACL). For more information, see [Determining the ACL of an Object](../debugger/determining-the-acl-of-an-object.md) and [**!acl**](../debugger/-acl.md).
@@ -697,6 +709,12 @@ The !tokenfields extension displays the names and offsets of the fields within t
 The !sid extension displays the security identifier (SID) at the specified address. For more information, see [**!sid**](../debugger/-sid.md).
 
 The !sd extension displays the security descriptor at the specified address. For more information, see [**!sd**](../debugger/-sd.md).
+
+## Microsoft Vulnerable and Malicious Driver Reporting Center
+
+Anyone can submit a questionable driver using the Microsoft Vulnerable and Malicious Driver Reporting Center. Refer to this blog entry for information on how  drivers are submitted for analysis - [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/)
+
+The Reporting Center can scan and analyze Windows drivers built for x86 and x64 architectures. Vulnerable and malicious scanned drivers are flagged for analysis and investigation by Microsoft’s Vulnerable Driver team. After vulernable drivers are confirmed, an appropriate notification occurs, they are added to the vulnerable driver blocklist. For more information about that, see [Microsoft recommended driver block rules](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules). These rules are aplied by default to Hypervisor-protected code integrity (HVCI) enabled devices and Windows 10 in S mode. 
 
 ## Review secure coding resources
 

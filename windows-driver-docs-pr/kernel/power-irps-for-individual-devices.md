@@ -3,7 +3,6 @@ title: Power IRPs for Individual Devices
 description: Power IRPs for Individual Devices
 keywords: ["power IRPs WDK kernel , devices", "device power IRPs WDK kernel", "power sequence values WDK kernel", "working state returns WDK power management", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Power IRPs for Individual Devices
@@ -38,7 +37,7 @@ A driver sends a device power IRP for any of the following reasons:
 
 The following figure shows the sequence of steps that occur to send, forward, and complete a device power IRP.
 
-![diagram illustrating the path of a device power irp](images/devpoirp.png)
+![diagram illustrating the path of a device power irp.](images/devpoirp.png)
 
 As the previous figure shows, a device power IRP is sent, forwarded, and completed in the following steps:
 

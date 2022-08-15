@@ -1,7 +1,6 @@
 ---
 title: MSFC\_VirtualFibrePortAttributes WMI Class
 description: MSFC\_VirtualFibrePortAttributes WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

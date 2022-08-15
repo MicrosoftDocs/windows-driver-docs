@@ -2,7 +2,6 @@
 title: Using cross-adapter resources in a hybrid system
 description: A Windows Display Driver Model (WDDM) driver can support a hybrid system, where cross-adapter resources are shared between an integrated GPU and a discrete GPU.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # <span id="display.using_cross-adapter_resources_in_a_hybrid_system"></span>Using cross-adapter resources in a hybrid system

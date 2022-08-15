@@ -9,7 +9,6 @@ api_name:
 - .logfile (Display Log File Status)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .logfile (Display Log File Status)

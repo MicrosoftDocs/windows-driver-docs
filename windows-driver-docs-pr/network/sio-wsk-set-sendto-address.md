@@ -4,7 +4,6 @@ description: SIO_WSK_SET_SENDTO_ADDRESS
 ms.date: 07/18/2017
 keywords:
  - SIO_WSK_SET_SENDTO_ADDRESS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SIO\_WSK\_SET\_SENDTO\_ADDRESS
@@ -121,8 +120,7 @@ To clear a fixed destination transport address for a datagram socket, a WSK appl
 
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to set or clear a fixed destination transport address for a datagram socket.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

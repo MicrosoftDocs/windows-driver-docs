@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # \_RxFreePool function
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 **\_RxFreePool** releases memory that was previously allocated using **\_RxAllocatePoolWithTag**.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID _RxFreePool(
@@ -30,8 +28,7 @@ VOID _RxFreePool(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Buffer*   
 A pointer to the buffer of pool memory to be released.
@@ -42,13 +39,11 @@ A pointer to the source file name where the memory allocation occurred. This par
 *LineNumber*   
 The line number in the source file where the memory allocation occurred. This parameter is not currently used.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 It is recommended that the **RxFreePool** macro be called instead of using this routine directly. On retail builds, this macro is defined to call **ExFreePool**.
 
@@ -56,8 +51,7 @@ Memory allocated with [**\_RxAllocatePoolWithTag**](-rxallocatepoolwithtag.md) s
 
 The **\_RxFreePool** routine calls **ExFreePool**.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

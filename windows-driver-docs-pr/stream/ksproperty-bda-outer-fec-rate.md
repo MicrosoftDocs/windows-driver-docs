@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_BDA\_OUTER\_FEC\_RATE
-description: Clients use KSPROPERTY\_BDA\_OUTER\_FEC\_RATE to control the binary convolution scheme used for the outer forward error correction (FEC) type of a demodulator node.
+title: KSPROPERTY_BDA_OUTER_FEC_RATE
+description: Clients use KSPROPERTY_BDA_OUTER_FEC_RATE to control the binary convolution scheme used for the outer forward error correction (FEC) type of a demodulator node.
 keywords: ["KSPROPERTY_BDA_OUTER_FEC_RATE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,79 +10,31 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/13/2021
 ---
 
-# KSPROPERTY\_BDA\_OUTER\_FEC\_RATE
+# KSPROPERTY_BDA_OUTER_FEC_RATE
 
+Clients use **KSPROPERTY_BDA_OUTER_FEC_RATE** to control the binary convolution scheme used for the outer forward error correction (FEC) type of a demodulator node.
 
-Clients use KSPROPERTY\_BDA\_OUTER\_FEC\_RATE to control the binary convolution scheme used for the outer forward error correction (FEC) type of a demodulator node.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_bda_outer_fec_rate_ks"></span><span id="DDK_KSPROPERTY_BDA_OUTER_FEC_RATE_KS"></span>
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | Yes | Filter | [**KSP_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node) | [**BinaryConvolutionCodeRate**](/previous-versions/windows/desktop/mstv/binaryconvolutioncoderate) |
 
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Filter</p></td>
-<td><p>KSP_NODE</p></td>
-<td><p>BinaryConvolutionCodeRate</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-Remarks
--------
+## Remarks
 
 The returned value from the BinaryConvolutionCodeRate enumerated type identifies a binary convolution scheme.
 
-The **NodeId** member of KSP\_NODE specifies the identifier of the demodulator node.
+The **NodeId** member of **KSP_NODE** specifies the identifier of the demodulator node.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Bdamedia.h (include Bdamedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** bdamedia.h (include Bdamedia.h)
 
 ## See also
 
-
 [**BinaryConvolutionCodeRate**](/previous-versions/windows/desktop/mstv/binaryconvolutioncoderate)
 
-[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
-
- 
-
+[**KSP_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)

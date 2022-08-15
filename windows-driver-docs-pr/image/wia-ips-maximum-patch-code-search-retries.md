@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_MAXIMUM\_PATCH\_CODE\_SEARCH\_RETRIES
@@ -28,13 +27,11 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 This property is required for all Patch Code Reader items. The property can be implemented to support a range containing one single value, including 0 (no retries).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

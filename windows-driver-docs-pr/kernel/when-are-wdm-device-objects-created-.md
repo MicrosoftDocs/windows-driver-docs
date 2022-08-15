@@ -3,7 +3,6 @@ title: When Are WDM Device Objects Created
 description: When Are WDM Device Objects Created
 keywords: ["device objects WDK kernel , when created", "layered device objects WDK kernel", "functional device objects WDK kernel", "FDO WDK kernel", "physical device objects WDK kernel", "PDOs WDK kernel", "filter DOs WDK kernel", "device stacks WDK kernel , device object layers possible", "attaching device objects"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # When Are WDM Device Objects Created?
@@ -16,7 +15,7 @@ This section describes each kind of device object and mentions when each is crea
 
 The following figure shows the possible kinds of device objects that can be attached in a device stack, representing the drivers handling I/O requests for a device.
 
-![diagram illustrating possible device object layers for a device](images/objlyr.png)
+![diagram illustrating possible device object layers for a device.](images/objlyr.png)
 
 Starting at the bottom of this figure:
 

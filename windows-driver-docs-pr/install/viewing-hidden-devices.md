@@ -12,7 +12,6 @@ keywords:
 - showing nonpresent devices
 - displaying nonpresent devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Viewing Hidden Devices

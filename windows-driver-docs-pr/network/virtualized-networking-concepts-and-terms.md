@@ -2,7 +2,6 @@
 title: Virtualized Networking Concepts and Terms
 description: Virtualized Networking Concepts and Terms
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Virtualized Networking Concepts and Terms
@@ -194,7 +193,7 @@ A VM network adapter can be configured to access either the Hyper-V external, in
 <a href="" id="virtual-machine-queue--vmq-"></a>Virtual Machine Queue (VMQ)  
 A VMQ-capable network adapter uses DMA to transfer all incoming frames directly to VM memory. VMQ also improves network throughput by distributing the processing of network traffic for multiple VMs among multiple processors.
 
-For more information, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md).
+For more information, see [Virtual Machine Queue (VMQ)](virtual-machine-queue-architecture.md).
 
 **Note**  VMQ is supported in NDIS 6.20 and later versions of NDIS.
 
@@ -205,7 +204,7 @@ The PCI bus driver that runs in the guest operating system of a Hyper-V child pa
 
 The VPCI driver is a Hyper-V VSC and communicates with the VPCI VSP that runs in the management operating system in the Hyper-V parent partition. Communication between the VPCI VSP and VSC components occurs over VMBUS.
 
-For more information about the VPCI interface, see [GUID\_PCI\_VIRTUALIZATION\_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/hh451143).
+For more information about the VPCI interface, see [GUID\_PCI\_VIRTUALIZATION\_INTERFACE](/previous-versions/windows/hardware/drivers/hh406642(v=vs.85)).
 
 <a href="" id="virtualization-stack"></a>Virtualization Stack  
 A collection of software components that manages the creation and execution of child partitions under Hyper-V. The virtualization stack manages the access by child partitions to the hardware resources on the host computer. The virtualization stack runs in the Hyper-V parent partition.

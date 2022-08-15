@@ -8,7 +8,6 @@ api_name:
 - DIF_MOVEDEVICE
 api_type:
 - NA
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

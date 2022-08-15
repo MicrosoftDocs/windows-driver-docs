@@ -2,7 +2,6 @@
 title: USB Bidi Extender
 description: Describes Bidi support for USB device using a combination of a Bidi XML file and a Javascript file known as a USB Bidi extender.
 ms.date: 06/11/2018
-ms.localizationpriority: medium
 ---
 
 # USB Bidi Extender
@@ -25,7 +24,7 @@ In Windows 8.1 the v4 driver model has been extended to provide support for hos
 
 The following diagram provides an overview of the USB Bidi extension architecture, showing the scenario where the **getStatus** method is used to obtain unsolicited status from the device via the USBPrint interface.
 
-![usb bidi extender architecture with getstatus method](images/usbbidiext-arch.png)
+![usb bidi extender architecture with getstatus method.](images/usbbidiext-arch.png)
 
 For more information about working with a USB printer, see [USB Printing](usb-printing.md).
 

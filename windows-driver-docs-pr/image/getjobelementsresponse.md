@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # GetJobElementsResponse element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **GetJobElementsResponse** element returns the job-related information that a client requests.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:GetJobElementsResponse>
@@ -26,8 +24,7 @@ Usage
 </wscn:GetJobElementsResponse>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -55,15 +52,13 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must support the **GetJobElementsResponse** operation.
 
 A client calls **GetJobElementsRequest** to determine the values of job-related elements for the job that [**JobId**](jobid.md) identifies. The WSD Scan Service must respond with a **GetJobElementsResponse** element that contains the requested information. The information that the Scan Service returns must fully comply with the scan job-related portion of the schema.
 
-Examples
---------
+## Examples
 
 In the following code example, the Scan Service returns the job status for the job that JobId 1 identifies.
 

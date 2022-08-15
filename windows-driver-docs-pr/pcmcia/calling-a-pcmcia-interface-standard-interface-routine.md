@@ -2,7 +2,6 @@
 title: Calling a PCMCIA_INTERFACE_STANDARD Interface Routine
 description: Calling a PCMCIA_INTERFACE_STANDARD Interface Routine
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Calling a PCMCIA\_INTERFACE\_STANDARD Interface Routine

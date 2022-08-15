@@ -1,5 +1,5 @@
 ---
-title: dbgprint
+title: dbgprint (WinDbg)
 description: The dbgprint extension displays a string that was previously sent to the DbgPrint buffer.
 keywords: ["dbgprint Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - dbgprint
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !dbgprint
@@ -49,8 +48,7 @@ The **!dbgprint** extension displays a string that was previously sent to the **
 
 For information about **DbgPrint**, **KdPrint**, **DbgPrintEx**, and **KdPrintEx**, see [Sending Output to the Debugger](sending-output-to-the-debugger.md).
 
-Remarks
--------
+## Remarks
 
 The kernel-mode routines **DbgPrint**, **KdPrint**, **DbgPrintEx**, and **KdPrintEx** send a formatted string to a buffer on the target computer. The string is automatically displayed in the Debugger Command window on the host computer unless such printing has been disabled.
 

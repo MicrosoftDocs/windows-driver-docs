@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_STREAM\_ALLOCATOR
@@ -46,7 +45,7 @@ The KSPROPERTY\_STREAM\_ALLOCATOR property is an optional property that should b
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>HANDLE</p></td>
 </tr>
 </tbody>
@@ -54,8 +53,7 @@ The KSPROPERTY\_STREAM\_ALLOCATOR property is an optional property that should b
 
  
 
-Remarks
--------
+## Remarks
 
 The returned value is always a **NULL** handle. However, support is determined by whether the call returns successfully.
 
@@ -63,8 +61,7 @@ The property sets the handle of the allocator assigned to the stream connection 
 
 An allocator handle is obtained and can be used to set the allocator for another filter pin. A filter using the allocator must reference the object to obtain a pointer to a file object and dereference the file object when a new allocator is assigned or when the connection is closed. The property can also be queried to determine if this connection point supports providing an allocator.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -82,5 +79,4 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
-
+[**KSPROPERTY**](ksproperty-structure.md)

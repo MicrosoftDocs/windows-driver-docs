@@ -10,7 +10,6 @@ api_location:
 - WindowsSideShowDriverEvents.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,13 +43,11 @@ The GUID_DEVINTERFACE_SIDESHOW [device interface class](./overview-of-device-int
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for Windows Sideshow-compatible devices register instances of GUID_DEVINTERFACE_SIDESHOW to notify the system and applications of the presence of Windows SideShow devices.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

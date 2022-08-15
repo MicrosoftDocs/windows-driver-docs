@@ -1,8 +1,7 @@
 ---
 title: Bug Check Code Reference
 description: This section contains descriptions of the common bug checks, including the parameters passed to the blue screen.
-ms.date: 12/07/2020
-ms.localizationpriority: high
+ms.date: 07/27/2022
 ---
 
 # Bug Check Code Reference
@@ -29,7 +28,7 @@ A driver has failed to complete a power IRP within a specific time.
 Arguments:
 Arg1: 0000000000000003, A device object has been blocking an Irp for too long a time
 Arg2: 0000000000000000, Physical Device Object of the stack
-Arg3: 0000000000000000, nt!TRIAGE_9F_POWER on Win7 and higher, otherwise the Functional Device Object of the stack
+Arg3: 0000000000000000, nt!_TRIAGE_9F_POWER on Win7 and higher, otherwise the Functional Device Object of the stack
 Arg4: 0000000000000000, The blocked IRP
 ```
 
@@ -49,7 +48,7 @@ For more information, see:
 
 ## Live Dumps
 
- Live Dump stop codes to not reset the OS, but allow for the capture of memory information for abnormal situations where the operating system can continue. For information about live dumps, see [Bug Check Code Reference - Live Dump](bug-check-code-reference-live-dump.md)
+ Live Dump stop codes to not reset the OS, but allow for the capture of memory information for abnormal situations where the operating system can continue. For information about live dumps, see [Bug Check Code Reference - Live Dump](bug-check-code-reference-live-dump.md).
 
 ## Bug Check Codes
 
@@ -163,7 +162,7 @@ The following table provides links to bug check codes.
 | 0x00000068 | [**FILE\_INITIALIZATION\_FAILED**](bug-check-0x68--file-initialization-failed.md)                                                                 |
 | 0x00000069 | [**IO1\_INITIALIZATION\_FAILED**](bug-check-0x69--io1-initialization-failed.md)                                                                   |
 | 0x0000006A | [**LPC\_INITIALIZATION\_FAILED**](bug-check-0x6a--lpc-initialization-failed.md)                                                                   |
-| 0x0000006B | [**PROCESS1\_INITIALIZATION\_FAILE**](bug-check-0x6b--process1-initialization-failed.md)D                                                         |
+| 0x0000006B | [**PROCESS1\_INITIALIZATION\_FAILED**](bug-check-0x6b--process1-initialization-failed.md)                                                         |
 | 0x0000006C | [**REFMON\_INITIALIZATION\_FAILED**](bug-check-0x6c--refmon-initialization-failed.md)                                                             |
 | 0x0000006D | [**SESSION1\_INITIALIZATION\_FAILED**](bug-check-0x6d--session1-initialization-failed.md)                                                         |
 | 0x0000006E | [**SESSION2\_INITIALIZATION\_FAILED**](bug-check-0x6e--session2-initialization-failed.md)                                                         |
@@ -227,7 +226,7 @@ The following table provides links to bug check codes.
 | 0x000000C2 | [**BAD\_POOL\_CALLER**](bug-check-0xc2--bad-pool-caller.md)                                                                                       |
 | 0x000000C4 | [**DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](bug-check-0xc4--driver-verifier-detected-violation.md)                                                |
 | 0x000000C5 | [**DRIVER\_CORRUPTED\_EXPOOL**](bug-check-0xc5--driver-corrupted-expool.md)                                                                       |
-| 0x000000C6 | [**DRIVER\_CAUGHT\_MODIFYING\_FREED\_POO**](bug-check-0xc6--driver-caught-modifying-freed-pool.md)L                                               |
+| 0x000000C6 | [**DRIVER\_CAUGHT\_MODIFYING\_FREED\_POOL**](bug-check-0xc6--driver-caught-modifying-freed-pool.md)                                               |
 | 0x000000C7 | [**TIMER\_OR\_DPC\_INVALID**](bug-check-0xc7--timer-or-dpc-invalid.md)                                                                            |
 | 0x000000C8 | [**IRQL\_UNEXPECTED\_VALUE**](bug-check-0xc8--irql-unexpected-value.md)                                                                           |
 | 0x000000C9 | [**DRIVER\_VERIFIER\_IOMANAGER\_VIOLATION**](bug-check-0xc9--driver-verifier-iomanager-violation.md)                                              |
@@ -307,14 +306,15 @@ The following table provides links to bug check codes.
 | 0x0000011B | [**DRIVER\_RETURNED\_HOLDING\_CANCEL\_LOCK**](bug-check-0x11b---driver-returned-holding-cancel-lock.md)                                           |
 | 0x0000011C | [**ATTEMPTED\_WRITE\_TO\_CM\_PROTECTED\_STORAGE**](bug-check-0x11c--attempted-write-to-cm-protected-storage.md)                                   |
 | 0x0000011D | [**EVENT\_TRACING\_FATAL\_ERROR**](bug-check-0x11d---event-tracing-fatal-error.md)                                                                |
-| 0x0000011E | [**TOO\_MANY\_RECURSIVE\_FAULTS**](bug-check-0x11e--too-many-recursive-faults.md)                                                                |
-| 0x0000011F | [**INVALID\_DRIVER\_HANDLE**](bug-check-0x11f--invalid-driver-handle.md)                                                                         |
-| 0x00000120 | [**BITLOCKER\_FATAL\_ERROR**](bug-check-0x120--bitlocker-fatal-error-.md)                                                                        |
+| 0x0000011E | [**TOO\_MANY\_RECURSIVE\_FAULTS**](bug-check-0x11e--too-many-recursive-faults.md)                                                                 |
+| 0x0000011F | [**INVALID\_DRIVER\_HANDLE**](bug-check-0x11f--invalid-driver-handle.md)                                                                          |
+| 0x00000120 | [**BITLOCKER\_FATAL\_ERROR**](bug-check-0x120--bitlocker-fatal-error-.md)                                                                         |
 | 0x00000121 | [**DRIVER\_VIOLATION**](bug-check-0x121---driver-violation.md)                                                                                    |
 | 0x00000122 | [**WHEA\_INTERNAL\_ERROR**](bug-check-0x122---whea-internal-error.md)                                                                             |
-| 0x00000123 | [**CRYPTO\_SELF\_TEST\_FAILURE**](bug-check-0x123--crypto-self-test-failure-.md)                                                                 |
-| 0x00000125 | [**NMR\_INVALID\_STATE**](bug-check-0x125--nmr-invalid-state.md)                                                                                 |
-| 0x00000126 | [**NETIO\_INVALID\_POOL\_CALLER**](bug-check-0x126--netio-invalid-pool-caller.md)                                                                |
+| 0x00000123 | [**CRYPTO\_SELF\_TEST\_FAILURE**](bug-check-0x123--crypto-self-test-failure-.md)                                                                  |
+| 0x00000124 | [**WHEA\_UNCORRECTABLE\_ERROR**](bug-check-0x124---whea-uncorrectable-error.md)                                                                   |
+| 0x00000125 | [**NMR\_INVALID\_STATE**](bug-check-0x125--nmr-invalid-state.md)                                                                                  |
+| 0x00000126 | [**NETIO\_INVALID\_POOL\_CALLER**](bug-check-0x126--netio-invalid-pool-caller.md)                                                                 |
 | 0x00000127 | [**PAGE\_NOT\_ZERO**](bug-check-0x127---page-not-zero.md)                                                                                         |
 | 0x00000128 | [**WORKER\_THREAD\_RETURNED\_WITH\_BAD\_IO\_PRIORITY**](bug-check-0x128--worker-thread-returned-with-bad-io-priority.md)                          |
 | 0x00000129 | [**WORKER\_THREAD\_RETURNED\_WITH\_BAD\_PAGING\_IO\_PRIORITY**](bug-check-0x129--worker-thread-returned-with-bad-paging-io-priority.md)           |
@@ -333,7 +333,7 @@ The following table provides links to bug check codes.
 | 0x00000136 | [**VHD\_BOOT\_HOST\_VOLUME\_NOT\_ENOUGH\_SPACE**](bug-check-0x136--vhd-boot-host-volume-not-enough-space.md)                                      |
 | 0x00000137 | [**WIN32K\_HANDLE\_MANAGER**](bug-check-0x137--win32k-handle-manager.md)                                                                          |
 | 0x00000138 | [**GPIO\_CONTROLLER\_DRIVER\_ERROR**](bug-check-0x138-gpio-controller-driver-error.md)                                                            |
-| 0x00000139 | [**KERNEL\_SECURITY\_CHECK\_FAILURE**](bug-check-0x139--kernel-security-check-failure.md)                                              |
+| 0x00000139 | [**KERNEL\_SECURITY\_CHECK\_FAILURE**](bug-check-0x139--kernel-security-check-failure.md)                                                         |
 | 0x0000013A | [**KERNEL\_MODE\_HEAP\_CORRUPTION**](bug-check-0x13a--kernel-mode-heap-corruption.md)                                                             |
 | 0x0000013B | [**PASSIVE\_INTERRUPT\_ERROR**](bug-check-0x13b--passive-interrupt-error.md)                                                                      |
 | 0x0000013C | [**INVALID\_IO\_BOOST\_STATE**](bug-check-0x13c--invalid-io-boost-state.md)                                                                       |
@@ -364,20 +364,21 @@ The following table provides links to bug check codes.
 | 0x00000160 | [**WIN32K\_ATOMIC\_CHECK\_FAILURE**](bug-check-0x160--win32k-atomic-check-failure.md)                                                             |
 | 0x00000162 | [**KERNEL\_AUTO\_BOOST\_INVALID\_LOCK\_RELEASE**](bug-check-0x162--kernel-auto-boost-invalid-lock-release.md)                                     |
 | 0x00000163 | [**WORKER\_THREAD\_TEST\_CONDITION**](bug-check-0x162--worker-thread-test-condition.md)                                                           |
+| 0x00000164 | [**WIN32K\_CRITICAL\_FAILURE**](bug-check-0x164--win32k-critical-failure.md)                                                                      |
 | 0x0000016C | [**INVALID\_RUNDOWN\_PROTECTION\_FLAGS**](bug-check-0x16c--invalid-rundown-protection-flags.md)                                                   |
 | 0x0000016D | [**INVALID\_SLOT\_ALLOCATOR\_FLAGS**](bug-check-0x16d--invalid-slot-allocator-flags.md)                                                           |
 | 0x0000016E | [**ERESOURCE\_INVALID\_RELEASE**](bug-check-0x16e--eresource-invalid-release.md)                                                                  |
-| 0x00000170 | [**CRYPTO\_LIBRARY\_INTERNAL\_ERROR**](bug-check-0x170--crypto-library-internal-error.md)                                                         |
-| 0x00000171 | [**CLUSTER\_CSV\_CLUSSVC\_DISCONNECT\_WATCHDOG**](bug-check-0x171--cluster-csv-clussvc-disconnect-watchdog.md)                                    |
+| 0x00000170 | [**CLUSTER\_CSV\_CLUSSVC\_DISCONNECT\_WATCHDOG**](bug-check-0x170--cluster-csv-clussvc-disconnect-watchdog.md)                                    |
+| 0x00000171 | [**CRYPTO\_LIBRARY\_INTERNAL\_ERROR**](bug-check-0x171--crypto-library-internal-error.md)                                                         |
 | 0x00000173 | [**COREMSGCALL\_INTERNAL\_ERROR**](bug-check-0x173--coremsgcall-internal-error.md)                                                                |
 | 0x00000174 | [**COREMSG\_INTERNAL\_ERROR**](bug-check-0x174--coremsg-internal-error.md)                                                                        |
-| 0x00000178 | [**ELAM\_DRIVER\_DETECTED\_FATAL\_ERROR**](bug-check-0x175--elam-driver-detected-fatal-error.md)                                                  |
+| 0x00000178 | [**ELAM\_DRIVER\_DETECTED\_FATAL\_ERROR**](bug-check-0x178--elam-driver-detected-fatal-error.md)                                                  |
 | 0x0000017B | [**PROFILER\_CONFIGURATION\_ILLEGAL**](bug-check-0x17b--profiler-configuration-illegal.md)                                                        | 
 | 0x0000017E | [**MICROCODE\_REVISION\_MISMATCH**](bug-check-0x17e--microcode-revision-mismatch.md)                                                              | 
 | 0x00000187 | [**VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD**](bug-check-0x187--video-dwminit-timeout-fallback-bdd.md)                                              |
 | 0x00000189 | [**BAD\_OBJECT\_HEADER**](bug-check-0x189--bad-object-header.md)                                                                                  |
 | 0x0000018B | [**SECURE\_KERNEL\_ERROR**](bug-check-0x18b--secure-kernel-error.md)                                                                              |
-| 0x0000018C | [**HYPERGUARD\_VIOLATION**](bug-check-0x18c--hyperguard-violation.md)                                                                              |   
+| 0x0000018C | [**HYPERGUARD\_VIOLATION**](bug-check-0x18c--hyperguard-violation.md)                                                                             |   
 | 0x0000018D | [**SECURE\_FAULT\_UNHANDLED**](bug-check-0x18d--secure-fault-unhandled.md)                                                                        | 
 | 0x0000018E | [**KERNEL\_PARTITION\_REFERENCE\_VIOLATION**](bug-check-0x18e--kernel-partition-reference-violation.md)                                           |
 | 0x00000191 | [**PF\_DETECTED\_CORRUPTION**](bug-check-0x191--pf-detected-corruption.md)                                                                        |
@@ -422,3 +423,9 @@ The following table provides links to bug check codes.
 | 0xC000021A | [**WINLOGON\_FATAL\_ERROR**](bug-check-0xc000021a--winlogin-fatal-error.md)                                              |
 | 0xC0000221 | [**STATUS\_IMAGE\_CHECKSUM\_MISMATCH**](bug-check-0xc0000221--status-image-checksum-mismatch.md)                                                  |
 | 0xDEADDEAD | [**MANUALLY\_INITIATED\_CRASH1**](bug-check-0xdeaddead--manually-initiated-crash1.md)                                                             |
+
+## See also
+
+[General Tips for Blue Screens](general-troubleshooting-tips.md)
+
+[Blue Screen Data](blue-screen-data.md)

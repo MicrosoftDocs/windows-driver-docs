@@ -11,7 +11,6 @@ api_location:
 - wdbgexts.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ---
 
 # DBG\_DUMP\_FIELD\_XXX
@@ -84,8 +83,7 @@ The following flags can be present.
 
 In addition, the result of the macro DBG\_DUMP\_RECUR\_LEVEL(*Level*) can be added to the bit-set to specify how deep into structures to recurse. *Level* can be a number between 0 and 15.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

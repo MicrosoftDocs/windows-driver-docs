@@ -9,7 +9,6 @@ api_name:
 - .call (Call Function)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .call (Call Function)
@@ -70,8 +69,7 @@ Clears any existing call on the current thread, and resets the context of the cu
 
  
 
-Remarks
--------
+## Remarks
 
 The specified function is called by the current thread of the current process.
 

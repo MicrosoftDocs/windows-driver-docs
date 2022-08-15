@@ -9,7 +9,6 @@ api_name:
 - z (Execute While)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # z (Execute While)
@@ -66,8 +65,7 @@ Specifies the condition to test. If this condition evaluates to a nonzero value,
 
  
 
-Remarks
--------
+## Remarks
 
 In many debugger commands, the semicolon is used to separate unrelated commands. However, in the **z** command, a semicolon separates the "z" from the *Command* parameter.
 

@@ -4,7 +4,6 @@ description: An overlying driver issues an OID method request of OID_PM_GET_PROT
 ms.date: 08/08/2017
 keywords: 
  -OID_PM_GET_PROTOCOL_OFFLOAD Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_PM\_GET\_PROTOCOL\_OFFLOAD
@@ -12,10 +11,9 @@ ms.localizationpriority: medium
 
 An overlying driver issues an OID method request of OID\_PM\_GET\_PROTOCOL\_OFFLOAD to obtain parameter settings for a low power protocol offload from a network adapter.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure initially contains a pointer to a ULONG protocol offload identifier. After a successful return from the OID method request, the **InformationBuffer** member of the **NDIS\_OID\_REQUEST** structure contains a pointer to an [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload) structure.
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure initially contains a pointer to a ULONG protocol offload identifier. After a successful return from the OID method request, the **InformationBuffer** member of the **NDIS\_OID\_REQUEST** structure contains a pointer to an [**NDIS\_PM\_PROTOCOL\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_protocol_offload) structure.
 
-Remarks
--------
+## Remarks
 
 NDIS 6.20 and later protocol drivers use OID\_PM\_GET\_PROTOCOL\_OFFLOAD method OID to retrieve parameter settings for a low power protocol offload from a network adapter.
 
@@ -41,8 +39,7 @@ The NDIS version of the miniport driver is below 6.20.
 <a href="" id="ndis-status-failure"></a>NDIS\_STATUS\_FAILURE  
 The request failed for reasons other than the preceding reasons.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

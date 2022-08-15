@@ -4,7 +4,6 @@ description: The NdisQueryMdl macro retrieves the buffer length, and optionally 
 ms.date: 07/18/2017
 keywords:
  - NdisQueryMdl macro Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NdisQueryMdl macro
@@ -12,8 +11,7 @@ ms.localizationpriority: medium
 
 The **NdisQueryMdl** macro retrieves the buffer length, and optionally the base virtual address, from an MDL.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID NdisQueryMdl(
@@ -24,8 +22,7 @@ VOID NdisQueryMdl(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *\_Mdl*   
 A pointer to an MDL.
@@ -41,20 +38,17 @@ A pointer to a caller-supplied variable in which this macro returns the base vir
 A pointer to a caller-supplied variable in which this macro returns the length, in bytes, of the virtual address range that is described by the MDL.
 
 *\_Priority*   
-A page priority value. For a list of the possible values for this parameter, see the *Priority* parameter of the [**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md) macro.
+A page priority value. For a list of the possible values for this parameter, see the *Priority* parameter of the [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe) macro.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 The **NdisQueryMdl** macro provides an MDL-based version of the [**NdisQueryBuffer**](/previous-versions/windows/hardware/network/ff554407(v=vs.85)) function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -88,7 +82,7 @@ Requirements
 ## See also
 
 
-[**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md)
+[**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe)
 
 [**NdisQueryBuffer**](/previous-versions/windows/hardware/network/ff554407(v=vs.85))
 

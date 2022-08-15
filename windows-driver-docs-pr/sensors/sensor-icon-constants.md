@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 01/04/2018
-ms.localizationpriority: medium
 ---
 
 # Sensor Icon Constants
@@ -106,8 +105,7 @@ Sensor drivers can specify one of a set of platform-defined icons, or a custom i
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

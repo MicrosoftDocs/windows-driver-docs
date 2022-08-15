@@ -9,7 +9,6 @@ api_name:
 - BUGCODE_NDIS_DRIVER
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x15E: BUGCODE\_NDIS\_DRIVER\_LIVE\_DUMP
@@ -107,7 +106,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>The value of Parameter 4 depends on the value of Parameter 2. Each number in this list corresponds to the same number in Parameter 2.</p>
 <ul>
 <li>0x01 : 0</li>
-<li>0x02 : The NET_PNP_EVENT_CODE of the stuck event. For more information about these codes, see <strong><a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event" data-raw-source="[NET_PNP_EVENT](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event)">NET_PNP_EVENT</a></strong>..</li>
+<li>0x02 : The NET_PNP_EVENT_CODE of the stuck event. For more information about these codes, see <strong><a href="/windows-hardware/drivers/ddi/netpnp/ns-netpnp-_net_pnp_event" data-raw-source="[NET_PNP_EVENT](/windows-hardware/drivers/ddi/netpnp/ns-netpnp-_net_pnp_event)">NET_PNP_EVENT</a></strong>..</li>
 <li>0x03 : The NDIS_STATUS code of the stuck indication. Use <strong><a href="-ndiskd-help.md" data-raw-source="[!ndiskd.help](-ndiskd-help.md)">!ndiskd.help</a></strong> to decode it.</li>
 <li>0x04 : 0</li>
 <li>0x11 : 0</li>
@@ -135,13 +134,11 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 
  
 
-Cause
------
+## Cause
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause. Parameter 1 indicates the specific cause of the BUGCODE\_NDIS\_DRIVER\_LIVE\_DUMP bugcheck.
 
-Remarks
--------
+## Remarks
 
 NDIS has detected and recovered from a serious problem in another network driver. Although the system was not halted, this problem may later cause connectivity problems or a fatal bugcheck.
 

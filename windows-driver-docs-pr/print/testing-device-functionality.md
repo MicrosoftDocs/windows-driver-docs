@@ -6,7 +6,6 @@ keywords:
 - device functionality testing WDK printer
 - functionality testing WDK printer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Testing Device Functionality

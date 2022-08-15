@@ -4,10 +4,11 @@ description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_STOP_AP_COMPLETE to
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_STOP_AP_COMPLETE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_STOP\_AP\_COMPLETE
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_STOP\_AP\_COMPLETE to indicate the completion of [OID\_WDI\_TASK\_STOP\_AP](oid-wdi-task-stop-ap.md).
@@ -23,8 +24,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_STOP\_AP\_COMPLETE to indica
 
 This indication contains no additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

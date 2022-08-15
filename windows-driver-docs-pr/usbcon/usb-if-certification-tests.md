@@ -2,7 +2,6 @@
 description: Guidelines for hardware vendors and device manufacturers to prepare USB devices and host controllers for Windows Hardware Certification Program submission.
 title: USB-IF Certification Tests
 ms.date: 10/22/2019
-ms.localizationpriority: medium
 ---
 
 # USB-IF Certification
@@ -46,7 +45,7 @@ System manufacturers should be aware of those requirements when they select USB 
 
 This image shows the process flow for how to obtain Windows Certification.
 
-![usb-if testing](images/usbif-testing.png)
+![usb-if testing.](images/usbif-testing.png)
 
 You can submit USB devices for Windows Certification qualification to meet the new USB-IF testing requirement by using one of the following methods:
 

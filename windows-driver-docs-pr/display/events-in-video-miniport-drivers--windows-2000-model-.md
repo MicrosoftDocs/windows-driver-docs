@@ -5,7 +5,6 @@ keywords:
 - video miniport drivers WDK Windows 2000 , events
 - events WDK video miniport
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Events in Video Miniport Drivers (Windows 2000 Model)

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # OUTPUTDUPL\_CONTEXT\_DEBUG\_STATUS enumeration
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _OUTPUTDUPL_CONTEXT_DEBUG_STATUS {
@@ -31,8 +29,7 @@ typedef enum _OUTPUTDUPL_CONTEXT_DEBUG_STATUS {
 } OUTPUTDUPL_CONTEXT_DEBUG_STATUS;
 ```
 
-Constants
----------
+## Constants
 
 <span id="OUTPUTDUPL_CONTEXT_DEBUG_STATUS_INACTIVE"></span><span id="outputdupl_context_debug_status_inactive"></span>**OUTPUTDUPL\_CONTEXT\_DEBUG\_STATUS\_INACTIVE**
 
@@ -42,8 +39,7 @@ Constants
 
 <span id="OUTPUTDUPL_CONTEXT_DEBUG_STATUS_FORCE_UINT32"></span><span id="outputdupl_context_debug_status_force_uint32"></span>**OUTPUTDUPL\_CONTEXT\_DEBUG\_STATUS\_FORCE\_UINT32**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

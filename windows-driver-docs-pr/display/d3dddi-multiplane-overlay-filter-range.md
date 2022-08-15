@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER\_RANGE structure
@@ -24,8 +23,7 @@ Reserved for system use. Do not use it in your driver.
 
  
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct D3DDDI_MULTIPLANE_OVERLAY_FILTER_RANGE {
@@ -36,8 +34,7 @@ typedef struct D3DDDI_MULTIPLANE_OVERLAY_FILTER_RANGE {
 } D3DDDI_MULTIPLANE_OVERLAY_FILTER_RANGE;
 ```
 
-Members
--------
+## Members
 
 **Minimum**
 
@@ -47,8 +44,7 @@ Members
 
 **Multiplier**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -10,7 +10,6 @@ keywords:
 - address validation WDK file systems
 - fast I/O WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Buffer Handling
@@ -51,7 +50,7 @@ For file systems, these problems are particularly severe because they typically 
 
 The WDK contains numerous examples of buffer validation in the FASTFAT and CDFS file system sample code, including:
 
--   The **FatLockUserBuffer** function in fastfat\\deviosup.c uses [**MmProbeAndLockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages) to lock down the physical pages behind the user buffer and [**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md) in **FatMapUserBuffer** to create a virtual mapping for the pages that are locked down.
+-   The **FatLockUserBuffer** function in fastfat\\deviosup.c uses [**MmProbeAndLockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages) to lock down the physical pages behind the user buffer and [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe) in **FatMapUserBuffer** to create a virtual mapping for the pages that are locked down.
 
 -   The **FatGetVolumeBitmap** function in fastfat\\fsctl.c uses [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) to validate user buffers in the defragmentation API.
 

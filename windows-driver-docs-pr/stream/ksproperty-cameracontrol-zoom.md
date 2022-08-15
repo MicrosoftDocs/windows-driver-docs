@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_CAMERACONTROL\_ZOOM
-description: User-mode clients use the KSPROPERTY\_CAMERACONTROL\_ZOOM property to get or set a camera's zoom setting. This property is optional.
+title: KSPROPERTY_CAMERACONTROL_ZOOM
+description: User-mode clients use the KSPROPERTY_CAMERACONTROL_ZOOM property to get or set a camera's zoom setting. This property is optional.
 keywords: ["KSPROPERTY_CAMERACONTROL_ZOOM Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,81 +10,38 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/18/2021
 ---
 
-# KSPROPERTY\_CAMERACONTROL\_ZOOM
+# KSPROPERTY_CAMERACONTROL_ZOOM
 
+User-mode clients use the **KSPROPERTY_CAMERACONTROL_ZOOM** property to get or set a camera's zoom setting. This property is optional.
 
-User-mode clients use the KSPROPERTY\_CAMERACONTROL\_ZOOM property to get or set a camera's zoom setting. This property is optional.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_cameracontrol_zoom_ks"></span><span id="DDK_KSPROPERTY_CAMERACONTROL_ZOOM_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Filter or node</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)"><strong>KSPROPERTY_CAMERACONTROL_S</strong></a> or <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_CAMERACONTROL_NODE_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s)"><strong>KSPROPERTY_CAMERACONTROL_NODE_S</strong></a></p></td>
-<td><p>LONG</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | Yes | Filter or node | [**KSPROPERTY_CAMERACONTROL_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s) or [**KSPROPERTY_CAMERACONTROL_NODE_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_node_s) | LONG |
 
 The property value (operation data) is a LONG that specifies a camera's zoom setting. This value is expressed in millimeters.
 
-**Caution**  When writing or testing an app, you should be aware that in practice, some drivers define a custom range of zoom values and custom step values that might not be based on typical units. Drivers might implement the zoom control either physically or digitally.
+> [!CAUTION]
+> When writing or testing an app, you should be aware that in practice, some drivers define a custom range of zoom values and custom step values that might not be based on typical units. Drivers might implement the zoom control either physically or digitally.
 
-Remarks
--------
+## Remarks
 
-The **Value** member of the KSPROPERTY\_CAMERACONTROL\_S structure specifies the zoom.
+The **Value** member of the **KSPROPERTY_CAMERACONTROL_S** structure specifies the zoom.
 
 Every video capture minidriver that supports this property must define a range and default value for this property. The range for the device must be 10 through 600. The default value must be 10.
 
-Requirements
-------------
+For cameras using the [Platform DMFT](uvc-camera-implementation-guide.md#platform-device-mft) for face-based 3A, the Zoom control impacts the output window of the camera. The face coordinates produced by the Platform DMFT will be relative to this modified output window, so the camera is responsible for remapping the ROI coordinates to the camera's full field of view when the current field of view is modified by the Zoom control. Depending on where the field of view modification occurs, the coordinate mapping may need to be bidirectional. For example, if the field of view modification is implemented in a component after the Platform DMFT in the driver chain, ROI coordinates provided by the application need to be mapped back to the full field of view before sending down to the camera and ROI coordinates calculated in the Platform DMFT need to be mapped to the modified field of view before being sent to an app requesting them.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+## Requirements
+
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
 
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
-
-[**KSPROPERTY\_CAMERACONTROL\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)
-
+[**KSPROPERTY_CAMERACONTROL_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_cameracontrol_s)

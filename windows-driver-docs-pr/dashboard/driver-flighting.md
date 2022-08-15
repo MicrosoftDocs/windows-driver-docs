@@ -1,23 +1,27 @@
 ---
 title: Driver flighting
 description: Distribute your driver within defined Windows Insider rings. Driver flighting provides automatic monitoring and evaluation.
-ms.date: 07/27/2018
+ms.date: 02/10/2022
 ms.topic: article
-ms.localizationpriority: medium
 ---
 
 # Driver flighting
 
 Driver flighting in the Partner Center enables you to distribute your driver within defined Windows Insider rings, while providing automatic monitoring and evaluation. A report of your driver's performance will be generated after the completion of a flight, enabling you to evaluate its critical functionality and update scenarios. Upon a successful flight and approval from Microsoft, the driver will be distributed publicly through Windows Update.
 
+<!-- 
 The following video provides an overview for the driver flighting program in more detail:
+
 <iframe src="https://channel9.msdn.com/Events/WinHEC/WinHEC-Online/Start-Your-Driver-Flighting-The-benefit-of-Driver-Promotion/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+
+<iframe width="960" height="540" src="https://www.youtube.com/embed/4AnguNhq8FE" title="Benefits of driver promotion" frameborder="0" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+ -->
 
 ## Signing up for driver flighting
 
 To sign up for driver flighting, submit a support ticket to the Partner Center. Support for the Partner Center is accessed in the upper-right corner of the browser window, as shown below:
 
-![The button for accessing Partner Center Support](images/support.jpg)
+![The button for accessing Partner Center Support.](images/support.jpg)
 
 > [!NOTE]
 > When signing up for driver flighting, make sure you are inside the Partner Center. Clicking the support button from another area of the Partner Center will connect you with a non-dashboard support group.
@@ -55,7 +59,7 @@ After being submitted to the Partner Center, you can promote your drivers for fl
     4. The OEMs (if any) that are affected by the driver publication
 
 4. Select the appropriate statements that apply to your driver. These answers will improve the speed of the evaluation process:
-    ![An image showing the statements that may apply to a driver being flighted: it is a co-engineering driver, it requires a reboot, it deploys UI and/or software, It supports a new or unreleased device](images/driver-flighting-statements.png)
+    ![An image showing the statements that may apply to a driver being flighted: it is a co-engineering driver, it requires a reboot, it deploys UI and/or software, It supports a new or unreleased device.](images/driver-flighting-statements.png)
 
     > [!IMPORTANT]
     > Please note the following:
@@ -78,8 +82,17 @@ A driver may be rejected for several reasons. Most commonly, rejection is caused
 - The device class being targeted may have specific CHID targeting requirements that you failed to properly follow.  Some device classes require CHID like Firmware and other classes forbid the use of CHID like Display.  Be sure you have entered your information correctly.
 - Using hardware IDs that unintentionally targets other OEMs.
 
-## Related topics
+## Next Steps
 
-- [Create a new hardware submission](create-a-new-hardware-submission.md)
-- [Managing hardware submissions in the Partner Center](manage-your-hardware-submissions.md)
-- [Get drivers signed by Microsoft for multiple Windows versions](get-drivers-signed-by-microsoft-for-multiple-windows-versions.md)
+> [!div class="nextstepaction"]
+> [Create a hardware submission](hardware-submission-create.md)
+
+> [!div class="nextstepaction"]
+> [View hardware submissions](hardware-submissions-view.md)
+
+> [!div class="nextstepaction"]
+> [Update a hardware submission](hardware-submission-update.md)
+
+> [!div class="nextstepaction"]
+> [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started.md)
+

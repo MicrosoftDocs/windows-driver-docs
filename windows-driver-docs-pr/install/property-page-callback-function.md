@@ -9,7 +9,6 @@ keywords:
 - PSPCB_CREATE
 - PSPCB_RELEASE
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Property Page Callback Function

@@ -1,7 +1,6 @@
 ---
 title: INF DDInstall.Components Section
 description: The DDInstall.Components section contains one or more INF AddComponent directives that reference additional INF-writer-defined sections in a driver package INF file.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

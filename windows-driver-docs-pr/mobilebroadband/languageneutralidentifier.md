@@ -2,7 +2,6 @@
 title: LanguageNeutralIdentifier
 description: LanguageNeutralIdentifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # LanguageNeutralIdentifier

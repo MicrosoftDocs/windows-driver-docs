@@ -8,7 +8,6 @@ keywords:
 - multiple streams WDK streaming minidriver
 - stream numbers supported WDK streaming minidriver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Multiple Streams

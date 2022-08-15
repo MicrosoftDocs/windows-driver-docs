@@ -3,7 +3,6 @@ title: Using SymChk
 description: Using SymChk
 keywords: ["SymChk, using"]
 ms.date: 10/08/2017
-ms.localizationpriority: medium
 ---
 
 # Using SymChk
@@ -61,7 +60,7 @@ SymChk always searches the downstream store before querying the symbol server. T
 To determine whether a symbol file is private or public, use the **/v** parameter so that SymChk displays verbose output. Suppose MyApp.exe and MyApp.pdb are in the folder c:\\sym. Enter this command.
 
 ```console
-symchk /v c:\\sym\\MyApp.exe /s c:\\sym**
+symchk /v c:\sym\MyApp.exe /s c:\sym**
 ```
 
 If MyApp.pdb contains private symbols, the output of SymChk looks like this.
@@ -91,7 +90,7 @@ SYMCHK: PASSED + IGNORED files = 1
 To limit your search so that it finds only public symbol files, use the **s** option with the **/s** parameter (**/ss**). The following command finds a match if MyApp.pdb contains only public symbols. It does not find a match if MyApp.pdb contains private symbols.
 
 ```console
-symchk /v c:\\sym\\MyApp.exe /ss c:\\sym
+symchk /v c:\sym\MyApp.exe /ss c:\sym
 ```
 
 For more information, see [Public and Private Symbols](public-and-private-symbols.md).

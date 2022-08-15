@@ -1,5 +1,5 @@
 ---
-title: vpb
+title: vpb (WinDbg)
 description: The vpb extension displays a volume parameter block (VPB).
 keywords: ["vpb Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - vpb
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !vpb
@@ -52,8 +51,7 @@ Specifies the hexadecimal address of the VPB.
 
 For information about VPBs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 Here is an example. First, the device tree is displayed with the [**!devnode**](-devnode.md) extension:
 

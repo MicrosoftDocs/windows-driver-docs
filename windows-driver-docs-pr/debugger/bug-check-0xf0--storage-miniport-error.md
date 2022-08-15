@@ -9,7 +9,6 @@ api_name:
 - STORAGE_MINIPORT_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xF0: STORAGE\_MINIPORT\_ERROR
@@ -57,7 +56,6 @@ The STORAGE\_MINIPORT\_ERROR bug check has a value of 0x00000F0. It indicates th
 
 
 ## Cause
------
 
 A bug in the storage Miniport driver kept a SRB request from completing. See the error code values listed above for the specific type of failure.
 
@@ -71,7 +69,6 @@ The driver name returned in parameter 2 should point to the offending driver.
 
 
 ## See Also
-----------
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

@@ -9,7 +9,6 @@ api_name:
 - StorPortSpinLock4
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortSpinLock4 rule (storport)
@@ -19,8 +18,7 @@ This rule is the *release* counterpart of **StorPortSpinLock**. It is similar to
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**StorPortAcquireSpinLock**](/windows-hardware/drivers/ddi/storport/nf-storport-storportacquirespinlock)
 [**StorPortReleaseSpinLock**](/windows-hardware/drivers/ddi/storport/nf-storport-storportreleasespinlock)

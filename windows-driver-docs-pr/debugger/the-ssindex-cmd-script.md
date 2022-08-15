@@ -2,8 +2,7 @@
 title: The Ssindex.cmd Script
 description: The Ssindex.cmd Script
 keywords: ["SrcSrv, Ssindex.cmd script", "Ssindex.cmd script"]
-ms.date: 05/23/2017
-ms.localizationpriority: medium
+ms.date: 03/07/2022
 ---
 
 # The Ssindex.cmd Script
@@ -12,8 +11,6 @@ ms.localizationpriority: medium
 The Ssindex.cmd script builds the list of files checked into source control along with the version information of each file. It stores a subset of this information in the .pdb files generated when you built the application. SSIndex uses one of the following Perl modules to interface with source control:
 
 -   p4.pm (Perforce)
-
--   vss.pm (Visual SourceSafe)
 
 -   tfs.pm (Team Foundation Servers)
 

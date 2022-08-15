@@ -2,7 +2,6 @@
 title: PnP and Power Management Callback Sequences
 description: The following topics show the sequence in which the framework calls a WDF driver's PnP and Power Management event callback functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PnP and Power Management Callback Sequences

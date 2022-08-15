@@ -4,11 +4,12 @@ description: OID_WDI_SET_P2P_STOP_BACKGROUND_DISCOVERY instructs the adapter to 
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_P2P_STOP_BACKGROUND_DISCOVERY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_P2P\_STOP\_BACKGROUND\_DISCOVERY
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_SET\_P2P\_STOP\_BACKGROUND\_DISCOVERY instructs the adapter to cancel the background discovery and stop any active scans in progress.
@@ -28,8 +29,7 @@ No additional parameters. The data in the header is sufficient.
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

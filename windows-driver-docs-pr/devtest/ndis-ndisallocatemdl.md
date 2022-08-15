@@ -9,20 +9,18 @@ api_name:
 - NdisAllocateMdl
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisAllocateMdl rule (ndis)
 
 
-The **NdisAllocateMdl** rule specifies that [**NdisAllocateMdl**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatemdl) and [**NdisFreeMdl**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreemdl) are called in alternate order. The ultimate goal is to make sure all MDLs are freed when [*MiniportHaltEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) ends.
+The **NdisAllocateMdl** rule specifies that [**NdisAllocateMdl**](/windows-hardware/drivers/ddi/mdlapi/nf-mdlapi-ndisallocatemdl) and [**NdisFreeMdl**](/windows-hardware/drivers/ddi/mdlapi/nf-mdlapi-ndisfreemdl) are called in alternate order. The ultimate goal is to make sure all MDLs are freed when [*MiniportHaltEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) ends.
 
 The rule uses three different states. The state changes when an MDL is allocated or freed. If an MDL is still allocated when the [*MiniportHaltEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt) exits, the rule reports the defect.
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
-[**NdisAllocateMdl**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatemdl)
-[**NdisFreeMdl**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreemdl)
+[**NdisAllocateMdl**](/windows-hardware/drivers/ddi/mdlapi/nf-mdlapi-ndisallocatemdl)
+[**NdisFreeMdl**](/windows-hardware/drivers/ddi/mdlapi/nf-mdlapi-ndisfreemdl)

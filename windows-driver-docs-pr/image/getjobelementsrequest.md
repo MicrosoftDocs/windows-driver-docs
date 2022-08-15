@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # GetJobElementsRequest element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **GetJobElementsRequest** element requests information that is related to the job that the [**JobId**](jobid.md) element identifies.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:GetJobElementsRequest>
@@ -26,8 +24,7 @@ Usage
 </wscn:GetJobElementsRequest>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -58,8 +55,7 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service must support the **GetJobElementsRequest** operation.
 
@@ -82,8 +78,7 @@ This operation can return all of the [**common WSD Scan Service operation error 
 
      
 
-Examples
---------
+## Examples
 
 The following code example requests the status of the scan job that Fault property 1 identifies.
 

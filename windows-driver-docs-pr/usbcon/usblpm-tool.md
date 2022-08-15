@@ -2,7 +2,6 @@
 description: The USBLPM tool monitors the U0/U1/U2/U3 power states of USB 3.0 ports.
 title: USBLPM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USBLPM tool
@@ -17,7 +16,7 @@ USBLPM is for Windows 8 only and works with the Microsoft USB 3.0 driver stack. 
 
 USBLPM runs in **Monitoring**, **Testing**, or **Configuring** mode.
 
-![usb lpm tool](images/fig10-usb-lpm-tool.png)
+![usb lpm tool.](images/fig10-usb-lpm-tool.png)
 
 ### Monitoring
 
@@ -67,7 +66,7 @@ In the Configuring mode, the tool does not display any window. The enabling or d
 
 ### Known issues with USBLPM
 
-Before you test selective suspend for a SuperSpeed hub, you should perform the following steps to disable selective suspend.
+Before you test USBLPM for a SuperSpeed hub, you should perform the following steps to disable selective suspend.
 
 1. In Device Manager, right-click on the **SuperSpeed hub** and select **Properties**.
 2. Click the **Power Management** tab.

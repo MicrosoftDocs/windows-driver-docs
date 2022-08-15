@@ -9,7 +9,6 @@ api_name:
 - IoBuildFsdComplete
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoBuildFsdComplete rule (wdm)
@@ -19,8 +18,7 @@ The **IoBuildFsdComplete** rule specifies that a driver should not call [**IoCom
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoBuildAsynchronousFsdRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildasynchronousfsdrequest)
 [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)

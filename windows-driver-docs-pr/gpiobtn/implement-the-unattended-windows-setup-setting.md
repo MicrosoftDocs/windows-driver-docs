@@ -1,7 +1,6 @@
 ---
 title: Implement the unattended Windows Setup setting
 description: This topic describes how to set the unattended Windows Setup component setting.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

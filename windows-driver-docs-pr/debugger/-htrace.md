@@ -1,5 +1,5 @@
 ---
-title: htrace
+title: htrace (WinDbg)
 description: The htrace extension displays stack trace information for one or more handles.
 keywords: ["handle, htrace extension", "htrace Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - htrace
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !htrace
@@ -89,8 +88,7 @@ Ntsdexts.dll</td>
 
 For information about handles, see the Microsoft Windows SDK documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. To display further information about a specific handle, use the [**!handle**](-handle.md) extension.
 
-Remarks
--------
+## Remarks
 
 Before **!htrace** can be used, handle tracing must be enabled. One way to enable handle tracing is to enter the **!htrace -enable** command. When handle tracing is enabled, stack trace information is saved each time the process opens a handle, closes a handle, or references an invalid handle. It is this stack trace information that **!htrace** displays.
 

@@ -3,7 +3,6 @@ title: Handling Exceptions
 description: Handling Exceptions
 keywords: ["structured exception handling WDK kernel", "exceptions WDK kernel", "access violations WDK kernel", "hardware-defined exceptions WDK kernel", "software-defined exceptions WDK kernel", "errors WDK kernel", "guard-page violations WDK kernel", "page-read errors WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Exceptions

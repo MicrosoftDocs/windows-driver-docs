@@ -736,8 +736,6 @@
     href: handling-an-irp-mn-cancel-stop-device-request--windows-2000-and-later-.md
   - name: "Holding Incoming IRPs When A Device Is Paused"
     href: holding-incoming-irps-when-a-device-is-paused.md
-  - name: "Resetting and recovering a device"
-    href: resetting-and-recovering-a-device.md
   - name: "Removing a Device"
     items: 
     - name: "Understanding When Remove IRPs Are Issued"
@@ -1342,8 +1340,8 @@
         href: introduction-to-application-notification.md
       - name: "Registering for Application Notification"
         href: registering-for-application-notification.md
-      - name: "Processing an Application Notification"
-        href: processing-an-application-notification.md
+      - name: "Processing WM_DEVICECHANGE messages"
+        href: processing-wm_devicechange-messages.md
   - name: "NTSTATUS Values"
     items: 
     - name: "Using NTSTATUS Values"
@@ -1506,9 +1504,19 @@
     href: rtlenlargedintegermultiply.md
   - name: "Windows kernel global variables"
     href: mm64bitphysicaladdress.md
-  - name: "Windows kernel macros"
-    href: mm-bad-pointer.md
   - name: "Windows kernel opaque structures"
     href: eprocess.md
   - name: "Working with the GUID_DEVICE_RESET_INTERFACE_STANDARD"
     href: working-with-guid-device-reset-interface-standard.md
+- name: "Macros"
+  items:
+  - name: "MM_BAD_POINTER macro"
+    href: mm-bad-pointer.md
+  - name: "PAGED_CODE macro"
+    href: paged_code.md
+  - name: "PAGED_CODE_LOCKED macro"
+    href: paged_code_locked.md
+  - name: "ZwCurrentProcess macro"
+    href: zwcurrentprocess.md
+  - name: "ZwCurrentThread macro"
+    href: zwcurrentthread.md

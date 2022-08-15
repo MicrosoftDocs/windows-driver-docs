@@ -9,7 +9,6 @@ api_name:
 - n (Set Number Base)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # n (Set Number Base)
@@ -85,8 +84,7 @@ If you omit *Radix*, the current default number base is displayed.
 
  
 
-Remarks
--------
+## Remarks
 
 The current radix affects the input and output of MASM expressions. It does not affect the input or output of C++ expressions. For more information about these expressions, see [Evaluating Expressions](evaluating-expressions.md).
 

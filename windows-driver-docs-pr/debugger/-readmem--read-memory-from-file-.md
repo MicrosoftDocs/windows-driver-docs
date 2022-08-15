@@ -9,7 +9,6 @@ api_name:
 - .readmem (Read Memory from File)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .readmem (Read Memory from File)
@@ -55,8 +54,7 @@ Specifies the address range for putting the data in memory. This parameter can c
 
  
 
-Remarks
--------
+## Remarks
 
 The memory data is copied literally to the target computer. The debugger does not parse the data in any way. For example, the **.readmem myfile 1000 10** command copies 10 bytes from the Myfile file and stores them in the target computer's memory, starting at address 1000.
 

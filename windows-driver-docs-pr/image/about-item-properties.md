@@ -2,7 +2,6 @@
 title: About item properties
 description: About item properties
 ms.date: 07/06/2020
-ms.localizationpriority: medium
 ---
 
 # About item properties

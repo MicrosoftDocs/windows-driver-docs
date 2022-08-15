@@ -2,7 +2,6 @@
 title: ADF Configuration Elements
 description: ADF Configuration Elements
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ADF Configuration Elements

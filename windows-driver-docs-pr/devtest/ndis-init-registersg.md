@@ -9,7 +9,6 @@ api_name:
 - Init_RegisterSG
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Init\_RegisterSG rule (ndis)
@@ -21,8 +20,7 @@ If **NdisMRegisterScatterGatherDma** is called at least one time during **Minipo
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisMDeregisterScatterGatherDma**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismderegisterscattergatherdma)
 [**NdisMRegisterScatterGatherDma**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterscattergatherdma)

@@ -9,7 +9,6 @@ api_name:
 - DoubleComplete
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DoubleComplete rule (ndis)
@@ -21,8 +20,7 @@ This rule verifies that when the **MiniportOidRequest** callback function return
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,7 +45,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisMOidRequestComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete)

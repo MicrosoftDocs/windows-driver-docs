@@ -1,5 +1,5 @@
 ---
-title: ndiskd.nb
+title: ndiskd.nb (WinDbg)
 description: The ndiskd.nb extension displays information about a NET_BUFFER (NB) structure.
 keywords: ["ndiskd.nb Windows Debugging"]
 ms.date: 06/15/2020
@@ -9,7 +9,6 @@ api_name:
 - ndiskd.nb
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.nb
@@ -81,7 +80,7 @@ Use the **!ndiskd.nb -chain** command to see this **NET\_BUFFER**'s MDL chain in
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
+[Debugging the Network Stack](/shows/defrag-tools/175-debugging-network-stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 

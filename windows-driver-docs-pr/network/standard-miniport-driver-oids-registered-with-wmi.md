@@ -8,7 +8,6 @@ keywords:
 - OIDs WDK networking , WMI
 - Windows Management Instrumentation WDK networking , OIDs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Standard Miniport Driver OIDs Registered with WMI

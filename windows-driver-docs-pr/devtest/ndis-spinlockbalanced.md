@@ -9,7 +9,6 @@ api_name:
 - SpinLockBalanced
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # SpinLockBalanced rule (ndis)
@@ -19,8 +18,7 @@ The **SpinLockBalanced** rule verifies that the number of calls to functions tha
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisAcquireSpinLock**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisacquirespinlock)
 [**NdisDprAcquireSpinLock**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisdpracquirespinlock)

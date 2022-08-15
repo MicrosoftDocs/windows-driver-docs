@@ -6,15 +6,13 @@ keywords:
 - property pages WDK device installations , DIF_ADDPROPERTYPAGE_ADVANCED
 - custom property pages WDK device installations , DIF_ADDPROPERTYPAGE_ADVANCED
 - DIF_ADDPROPERTYPAGE_ADVANCED
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 03/11/2022
 ---
 
 # Specific Requirements for Device Property Page Providers (Co-Installers)
 
-
-
-
+> [!NOTE]
+> While it is possible to provide a device property page via a class installer or co-installer, it is not recommended. Class installers and co-installers are deprecated.
 
 A [co-installer](writing-a-co-installer.md) that provides one or more custom device property pages must handle the [**DIF_ADDPROPERTYPAGE_ADVANCED**](./dif-addpropertypage-advanced.md) device installation function (DIF) code. Device Manager issues this request when a user clicks on the **Properties** tab of a device in Device Manager or in Control Panel.
 

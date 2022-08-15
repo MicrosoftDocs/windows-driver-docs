@@ -2,7 +2,6 @@
 title: MB union function descriptors
 description: This section describes union function descriptors and MBIM backwards-compatible functions for MB devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MB Union Function Descriptors
@@ -15,7 +14,7 @@ Mobile broadband devices that implement UFDs have Device Class / Subclass / Prot
 
 To allow Windows to load USBCCGP, the device needs to report a Microsoft OS compatible ID of "CDC\_WMC" when the device is not configured. After detecting the compatible ID of "CDC\_WMC", Windows loads USBCCGP, and USBCCGP sets the configuration on the device to 1. USBCCGP will then query again for the Microsoft OS compatible IDs. This time, however, the device should not report the Microsoft OS compatible ID of "CDC\_WMC". The device may report Microsoft OS compatible IDs for functions in the selected configuration.
 
-![usbhub queries for the microsoft os descriptor when the device is not configured](images/mbim1.png)
+![usbhub queries for the microsoft os descriptor when the device is not configured.](images/mbim1.png)
 
 USBHUB queries for the Microsoft OS descriptor when the device is not configured
 

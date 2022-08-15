@@ -2,7 +2,6 @@
 title: In-Memory Transfers
 description: In-Memory Transfers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # In-Memory Transfers
@@ -21,7 +20,7 @@ After the WIA application determines the buffer size, it requests the WIA servic
 
 The following diagram illustrates a memory transfer of an image.
 
-![diagram illustrating an image memory transfer](images/wia-imagedatamem.png)
+![diagram illustrating an image memory transfer.](images/wia-imagedatamem.png)
 
  
 

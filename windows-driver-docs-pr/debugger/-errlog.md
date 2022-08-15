@@ -1,5 +1,5 @@
 ---
-title: errlog
+title: errlog (WinDbg)
 description: The errlog extension displays the contents of any pending entries in the I/O system's error log.
 keywords: ["errlog Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - errlog
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !errlog
@@ -49,8 +48,7 @@ The **!errlog** extension displays the contents of any pending entries in the I/
 
 For information about [**IoWriteErrorLogEntry**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iowriteerrorlogentry), see the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 This command displays information about any pending events in the I/O system's error log. These are events queued by calls to the [**IoWriteErrorLogEntry**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iowriteerrorlogentry) function, to be written to the system's event log for subsequent viewing by the **Event Viewer**.
 

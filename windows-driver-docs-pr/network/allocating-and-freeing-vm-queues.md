@@ -2,7 +2,6 @@
 title: Allocating and Freeing VM Queues
 description: Allocating and Freeing VM Queues
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Allocating and Freeing VM Queues

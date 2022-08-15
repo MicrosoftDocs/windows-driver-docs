@@ -1,5 +1,5 @@
 ---
-title: ready
+title: ready (WinDbg)
 description: The ready extension displays summary information about each thread in the system in a READY state.
 keywords: ["thread, ready threads", "ready Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ready
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ready
@@ -64,8 +63,7 @@ Causes the display of each function to include only the return address; argument
 
 For information about thread scheduling and the READY state, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 The output from this extension is similar to that of [**!thread**](-thread.md), except that only ready threads are displayed, and they are sorted in order of decreasing priority.
 

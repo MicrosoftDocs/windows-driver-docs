@@ -4,7 +4,6 @@ description: MBIMEx 2.0 – 5G NSA support
 keywords:
 - MBIMEx 2.0 – 5G NSA support
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
@@ -32,12 +31,12 @@ If the first CID that the device receives from the host after it responds to the
 
 If the first CID that the device receives from the host after it responds to the MBIM_CID_DEVICE_SERVICES query is any other CID, then the device assumes that the host's native MBIMEx version is 1.0.
 
-![OS doesn't support MBIM_CID_VERSION and Modem's highest supported MBIMEx version is 3.0](images\mbim_CID_versioning_fig1.png)
+![OS doesn't support MBIM_CID_VERSION and Modem's highest supported MBIMEx version is 3.0.](images\mbim_CID_versioning_fig1.png)
 
 If the device doesn't support MBIM_CID_VERSION, it will not respond to the MBIM_CID_DEVICE_SERVICES query with MBIM_CID_VERSION.
 Therefore the host will not send a MBIM_CID_VERSION message and assumes that the device's native MBIMEx version is 1.0.
 
-![OS highest supported MBIMEx version is 3.0 and Modem doesn't support MBIM_CID_VERSION](images\mbim_CID_versioning_fig2.png)
+![OS highest supported MBIMEx version is 3.0 and Modem doesn't support MBIM_CID_VERSION.](images\mbim_CID_versioning_fig2.png)
 
 
 Feature-wise, a higher MBIMEx version is a superset of all lower MBIMEx versions. A host supports all devices with an announced MBIMEx version at or below the host's native MBIMEx version. If a device's announced MBIMEx version is higher than a host's native MBIMEx version, the host is not expected to support the device and the exact behavior of the host in this situation is undefined.
@@ -46,9 +45,9 @@ A device that intends to work with older hosts should initially advertise MBIMEx
 
 If the host sends MBIM_CID_VERSION with a higher MBIMEx version than the device initially advertised, then the device should indicate a higher MBIMEx version in the MBIM_CID_VERSION response up to the smaller of the host's native MBIMEx version and the device's native MBIMEx version.
 
-![OS highest supported MBIMEx version is lower than Modem's](images\mbim_CID_versioning_fig3.png)
+![OS highest supported MBIMEx version is lower than Modem's.](images\mbim_CID_versioning_fig3.png)
 
-![OS highest supported MBIMEx version is higher than Modem's](images\mbim_CID_versioning_fig4.png)
+![OS highest supported MBIMEx version is higher than Modem's.](images\mbim_CID_versioning_fig4.png)
 
 > [!NOTE]
 > For example, a device supports MBIMEx version 2.0, but is intended to work with older versions of the OS that do not support MBIMEx 2.0. The device initially advertises MBIMEx version 1.0 in the USB descriptors and advertises support for the optional MBIM_CID_VERSION. When inserted into a host running Windows 10, version 1803, the host does not understand MBIM_CID_VERSION and does not send MBIM_CID_VERSION to the device. To the host, the device's MBIMEx version is 1.0. The host continues to send other CIDs in the initialization sequence. Upon receiving CIDs other than MBIM_CID_VERSION, the device knows that the host supports MBIMEx version 1.0. Both sides proceed to conform to MBIMEx version 1.0. Later, when the same device is inserted into a host running Windows 10, version 1903 with a native MBIMEx version of 2.0, the host sends MBIM_CID_VERSION to the device to inform it that the host's native MBIMEx version is 2.0. The device sends MBIM_CID_VERSION back in response with the device's announced MBIMEx version 2.0. From there, both sides proceed to conform to MBIMEx version 2.0.
@@ -454,3 +453,159 @@ Notifications contain an MBIM_SIGNAL_STATE_INFO_V2 structure.
 ### Status Codes
 
 This CID only uses generic status codes defined in Section 9.4.5 of the [MBIM specification revision 1.0](https://www.usb.org/sites/default/files/MBIM10Errata1_073013.zip).
+
+## LTE signal bar calculation
+![Diagram showing LTE signal bar calculation.](images/lte_signal_bar_calc.png)
+
+The OS shall process the registry settings for signal strength calculations in the following order: 
+
+Dataclass is CDMA (or its variant) or TDSCDMA
+
+1. If a legacy signal bar mapping table exists under “per_iccid”, use this setting.
+2. Else, if a legacy signal bar mapping table exists under “per_device”, use this setting.
+3. Else, use the default signal bar mapping table in code. 
+
+Dataclass is GSM or WCDMA
+
+1. If a GSM or WCDMA technology specific signal bar mapping table exists under “per_iccid”, use this setting.
+2. Else, if a GSM or WCDMA technology specific signal bar mapping table exists under “per_device”, use this setting.
+3. Else, if a legacy signal bar mapping table exists under “per_iccid”, use this setting. 
+4. Else, if a legacy signal bar mapping table exists under “per_device”, use this setting. 
+5. Else, use the default signal bar mapping table in code.
+    1. RSSI >= 17; 5 bars
+    1. RSSI >= 12; 4 bars
+    1. RSSI >= 7; 3 bars
+    1. RSSI >= 4; 2 bars
+    1. RSSI >= 2; 1 bars
+    1. else; 0 bars
+
+Dataclass is LTE and RSRP is reported by the modem 
+1. If a LTE technology specific signal bar mapping table for RSRP exists under “per_iccid”, use this setting. 
+2. Else, if a LTE technology specific signal bar mapping table for RSRP exists under “per_device”, use this setting. 
+3. Else, use the default LTE RSRP signal bar mapping table in code. 
+> [!NOTE]
+> If EnableLTESnrReporting is enabled but there is no SNR table for LTE or SNR reporting by the modem, only RSRP is used. Otherwise, the better of RSRP or SNR is converted to signal bars. 
+
+Dataclass is LTE and RSSI is reported by the modem 
+1. If a LTE technology specific signal bar mapping table exists under “per_iccid”, use this setting. 
+2. Else, if a  LTE technology specific signal bar mapping table exists under “per_device”, use this setting. 
+3. Else, if a legacy signal bar mapping table exists under “per_iccid”, use this setting. 
+4. Else, if a legacy signal bar mapping table exists under “per_device”, use this setting. 
+5. Else, use the default signal bar mapping table in code. 
+
+Dataclass is NR 
+1. If a NR technology specific signal bar mapping table for RSRP exists under “per_iccid”, use this setting. 
+2. Else, if a NR technology specific signal bar mapping table for RSRP exists under “per_device”, use this setting. 
+3. Else, use the default NR RSRP signal bar mapping table in code. 
+> [!NOTE]
+> If EnableNRSnrReporting is enabled, but no there is no SNR table for NR or SNR reporting by the modem, only RSRP is used. Otherwise, the better of RSRP or SNR is converted to signal bars. 
+
+Dataclass is NSA 
+1. If EnableLTEReportingOnNSA is not set or is set to **0**: 
+   1. Follow the Dataclass NR flow. 
+2. If EnableLTEReportingOnNSA is set to **1**: 
+   1. Follow the Dataclass LTE flows (RSRP or RSSI). 
+3. If EnableLTEReportingOnNSA is set to **2**:  
+   1. If FrequencyRange is FR1, follow the Dataclass LTE flows (RSRP or RSSI). 
+   1. If FrequencyRange is <> FR1, follow the Dataclass NR flow. 
+4. If EnableLTEReportingOnNSA is set to **3**:  
+	1. If FrequencyRange is FR2, follow the Dataclass LTE flows (RSRP or RSSI). 
+	1. If FrequencyRange is <> FR2, follow the Dataclass NR flow. 
+5. If EnableLTEReportingOnNSA is set to **4**: 
+    1. Calculate signal bar using the LTE and NR flows. 
+	1. Select the strongest. 
+> [!NOTE]
+> If the LTE signal is not reported by the modem in 1-5, the NR signal is used. If the NR signal is not used, the LTE signal is applied. 
+
+### COSA customizations for SignalBar calculation
+
+EnableLTEReportingOnNSA:
+
+0 = "Use 5G signal"
+
+1 = "Use LTE signal"
+
+2 = "Use LTE signal if camped on 5G frequency range 1"
+
+3 = "Use LTE signal if camped on 5G frequency range 2"
+
+4 = "Use the strongest signal of LTE and 5G"
+ 
+EnableNRSnrReporting:
+
+0 = "Use only RSRP"
+
+1 = "Use both RSRP and SNR"
+ 
+EnableLTESnrReporting:
+
+0 = "Use only RSRP"
+
+1 = "Use both RSRP and SNR"
+
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/\<SignalBar\>
+
+Modify the minimum signal strength value corresponding to the number of bars to be shown. Technology specific settings take precedence. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
+
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/GERAN/\<SignalBar\>
+
+Modify the minimum signal strength value corresponding to the number of bars to be shown when device is camped on GSM. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
+
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/WCDMA/\<SignalBar\>
+
+Modify the minimum signal strength value corresponding to the number of bars to be shown when device is camped on WCDMA. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
+
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/LTE/\<SignalBar\>
+
+Modify the minimum signal strength value corresponding to the number of bars to be shown when device is camped on LTE. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
+
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/LTERSRP/\<SignalBar\>
+
+Modify the minimum signal strength value corresponding to the number of bars to be shown, when device is camped on LTE. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
+
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/LTERSSNR/\<SignalBar\>
+
+Modify the minimum signal strength value corresponding to the number of bars to be shown when device is camped on LTE. Used when EnableLTESnrReporting is set to 1. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
+
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/NRRSRP/\<SignalBar\>
+
+Modify the minimum signal strength value corresponding to the number of bars to be shown when device is camped on 5G. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
+
+Cellular/PerDevice/SignalBarMappingTable/SignalForBars/NRRSSNR/\<SignalBar\>
+
+Modify the minimum signal strength value corresponding to the number of bars to be shown when device is camped on 5G. Used when EnableNRSnrReporting is set to 1. Each number of bars needs to have a valid signal strength mapping for this setting to take effect.
+
+\<SignalBar\> can be 1-5 values.
+
+If the OEM/MO fails to properly configure the mapping table for RSSI or it’s incomplete, use the default mapping:
+
+|RSSI|Bars Displayed|
+|-|-|
+|[0,1] |0|
+|[2,3] |1|
+|[4,6] |2|
+|[7,11] |3|
+| [12,16] |4|
+|[17,31] |5|
+
+If the OEM/MO fails to properly configure the mapping table for RSRP or it’s incomplete, use the default mapping:
+
+|RSRP|Bars Displayed|
+|-|-|
+|[0,16] |0|
+|[17,41] |1|
+|[42,51] |2|
+|[52,61] |3|
+| [62,71] |4|
+|[72,126] |5|
+
+If the OEM/MO fails to properly configure the mapping table for SNR or it’s incomplete, use the default mapping:
+
+|SNR|Bars Displayed|
+|-|-|
+|[0,18] |0|
+|[19,38] |1|
+|[39,46] |2|
+|[47,53] |3|
+| [54,72] |4|
+|[73,127] |5|

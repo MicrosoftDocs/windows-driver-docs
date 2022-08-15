@@ -1,14 +1,13 @@
 ---
 title: Roadmap for Developing PSHED Plug-Ins
 description: Roadmap for Developing PSHED Plug-Ins
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 05/02/2022
 ---
 
 # Roadmap for Developing PSHED Plug-Ins
 
 
-![figure of a compass, a map, and a finger pointing at the map](images/map-hand-sml.png)
+![figure of a compass, a map, and a finger pointing at the map.](images/map-hand-sml.png)
 
 The platform-specific hardware error driver (PSHED) is a component of Windows Hardware Error Architecture (WHEA) that is used to collect platform-specific error information. The PSHED provides an abstraction layer above the hardware error reporting capabilities of the underlying platform, By providing this layer, the PSHED hides the details of a platform's error handling capabilities from the operating system, and exposes a consistent error handling interface to the Windows operating system.
 
@@ -53,6 +52,8 @@ To create a PSHED plug-in driver for Windows Vista and later versions of Windows
     -   The changes to WHEA that have been made since Windows Vista.
 
         For more information about these changes, see [New Information for Windows Hardware Error Architecture](new-information-for-windows-hardware-error-architecture.md).
+     
+    -   The default PSHED plugin version is V2. If you want to register a V1 plugin , use the V1 data packet ([**WHEA_PSHED_PLUGIN_REGISTRATION_PACKET_V1**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-whea_pshed_plugin_registration_packet_v1)). Remember, a V1 plugin does not have the ability to be unregistered. If you try to unregister, a bugcheck may occur.
 
 -   Step 5: Develop, build, test and debug your PSHED plug-in.
 

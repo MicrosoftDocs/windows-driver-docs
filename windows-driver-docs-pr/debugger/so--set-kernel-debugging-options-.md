@@ -9,7 +9,6 @@ api_name:
 - so (Set Kernel Debugging Options)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # so (Set Kernel Debugging Options)
@@ -60,8 +59,7 @@ If you omit *Options*, the current options are displayed.
 
  
 
-Remarks
--------
+## Remarks
 
 You can also set kernel debugging options using the \_NT\_DEBUG\_OPTIONS [environment variable](kernel-mode-environment-variables.md).
 

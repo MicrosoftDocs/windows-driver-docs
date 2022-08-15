@@ -4,7 +4,6 @@ description: Each plug-in calls the IPrintOemPrintTicketProvider::ValidatePrintT
 keywords:
 - ValidatePrintTicket
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ValidatePrintTicket overview
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 Unidrv and PScript5 print drivers validate the Print Ticket by using the sequence that the following illustration and list show.
 
-![diagram illustrating how the unidrv and pscript5 print drivers validate the print ticket](images/ptpcvalpt-uml.gif)
+![diagram illustrating how the unidrv and pscript5 print drivers validate the print ticket.](images/ptpcvalpt-uml.gif)
 
 1.  For each plug-in, call the [**IPrintOemPrintTicketProvider::ExpandIntentOptions**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemprintticketprovider-expandintentoptions) method.
 

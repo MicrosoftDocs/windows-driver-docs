@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_DIRECTSOUND3DBUFFER\_MAXDISTANCE
@@ -60,8 +59,7 @@ The property value (operation data) is of type FLOAT and specifies the maximum d
 
 A KSPROPERTY\_DIRECTSOUND3DBUFFER\_MAXDISTANCE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 At a distance that exceeds the maximum distance from a sound source, the sound from that source is reduced to silence. For more information about the maximum distance for a DirectSound 3D buffer, see the following in the Microsoft Windows SDK documentation:
 
@@ -69,8 +67,7 @@ At a distance that exceeds the maximum distance from a sound source, the sound f
 
 -   The **IDirectSound3DBuffer::GetMaxDistance** and **IDirectSound3DBuffer::SetMaxDistance** methods.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

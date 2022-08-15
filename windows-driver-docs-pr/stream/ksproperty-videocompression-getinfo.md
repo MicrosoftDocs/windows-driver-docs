@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_VIDEOCOMPRESSION\_GETINFO
@@ -56,8 +55,7 @@ The KSPROPERTY\_VIDEOCOMPRESSION\_GETINFO property retrieves the video compressi
 
 The property value (operation data) is a KSPROPERTY\_VIDEOCOMPRESSION\_GETINFO\_S structure that specifies video compression settings such as the stream whose compression capabilities are to be queried, default key frame rate, default predicted frame rate, default quality setting, number of quality settings, and various compression capabilities.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -75,7 +73,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_VIDEOCOMPRESSION\_GETINFO\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocompression_getinfo_s)
 

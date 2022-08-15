@@ -2,7 +2,6 @@
 title: Using UMDF Verifier
 description: Using UMDF Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using UMDF Verifier
@@ -31,7 +30,7 @@ Starting in UMDF 2.0, UMDF Verifier issues breakpoints in some cases, and causes
 We strongly recommend doing all development and testing of your driver after enabling [Application Verifier (AppVerif.exe)](../debugger/debugger-download-tools.md) on WUDFHost.exe. Use the following command, attach a debugger and then reboot.
 
 ```cpp
-AppVerif –enable Heaps Exceptions Handles Locks Memory TLS Leak –for WudfHost.exe
+AppVerif -enable Heaps Exceptions Handles Locks Memory TLS Leak -for WudfHost.exe
 ```
 
 Starting in version 2.0 of UMDF, if you run [Application Verifier](../debugger/debugger-download-tools.md) on the driver host process (Wudfhost), UMDF Verifier is automatically enabled for all UMDF 2.0 drivers in that host, as well as all UMDF 2.0 drivers in future driver host processes.

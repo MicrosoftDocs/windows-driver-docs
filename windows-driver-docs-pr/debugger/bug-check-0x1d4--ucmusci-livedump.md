@@ -9,7 +9,6 @@ api_name:
 - UCMUCSI_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1D4: UCMUCSI\_LIVEDUMP  
@@ -20,6 +19,8 @@ ms.localizationpriority: medium
 The UCMUCSI_LIVEDUMP live dump has a value of 0x000001D4. This indicates that the UcmUcsi class extension has encountered an error. For example this can be because a UCSI command has timed out, or because a UCSI command execution failed because the client driver returned failure.
 
 The UcmUcsiCx.sys is the included UCSI Class Extension. For more information, see [USB Type-C Connector System Software Interface (UCSI) driver](../usbcon/ucsi.md).
+
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 ## UCMUCSI\_LIVEDUMP Parameters
 

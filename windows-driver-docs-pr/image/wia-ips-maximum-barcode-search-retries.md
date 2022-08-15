@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 05/22/2018
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_MAXIMUM\_BARCODE\_SEARCH\_RETRIES
@@ -27,13 +26,11 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 This property is required for all Barcode Reader items. The property can be implemented to support a range containing one single value, including 0 (no retries).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

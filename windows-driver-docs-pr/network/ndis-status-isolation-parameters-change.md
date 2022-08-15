@@ -4,7 +4,6 @@ description: A VM network adapter miniport driver generates an NDIS_STATUS_ISOLA
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_ISOLATION_PARAMETERS_CHANGE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_ISOLATION\_PARAMETERS\_CHANGE
@@ -12,8 +11,7 @@ ms.localizationpriority: medium
 
 A VM network adapter miniport driver generates an **NDIS\_STATUS\_ISOLATION\_PARAMETERS\_CHANGE** status indication whenever the routing domain configuration is updated on the network adapter's port. This triggers the TCP layer to re-query the multi-tenancy configuration by issuing an [OID\_GEN\_ISOLATION\_PARAMETERS](oid-gen-isolation-parameters.md) OID. This status indication does not have a status buffer.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -10,7 +10,6 @@ keywords:
 - IRP dispatch routines WDK file system , about writing IRP dispatch routines
 - IRPs WDK file system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Writing IRP Dispatch Routines

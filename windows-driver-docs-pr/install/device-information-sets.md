@@ -8,7 +8,6 @@ keywords:
 - enumerating device information WDK
 - SetupDiEnumDeviceInfo
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Information Sets
@@ -19,7 +18,7 @@ Each device information element contains a handle to the device's *devnode*, and
 
 The following diagram shows the internal structure of a device information set.
 
-![diagram illustrating a device information set](images/devinfosets.png)
+![diagram illustrating a device information set.](images/devinfosets.png)
 
 ## Creating a Device Information Set
 

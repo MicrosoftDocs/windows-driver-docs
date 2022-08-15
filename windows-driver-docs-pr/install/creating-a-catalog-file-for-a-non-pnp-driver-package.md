@@ -1,38 +1,35 @@
 ---
-title: Creating a Catalog File for a Non-PnP Driver Package
-description: Creating a Catalog File for a Non-PnP Driver Package
+title: Creating a Catalog File for a Non-PnP Driver
+description: Creating a Catalog File for a Non-PnP Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
-# Creating a Catalog File for a Non-PnP Driver Package
+# Creating a Catalog File for a Non-PnP Driver
 
+You can use the [MakeCat](/windows/win32/seccrypto/makecat) tool to create a [catalog file](catalog-files.md) for a non-PnP driver.
 
-You can use the [MakeCat](/windows/win32/seccrypto/makecat) tool to create a [catalog file](catalog-files.md) for a non-PnP [driver package](driver-packages.md).
-
-**Note**  You must use the MakeCat tool only to create catalog files for driver packages that are not installed by using an INF file. If the driver package is installed by using an INF file, use the [**Inf2Cat**](../devtest/inf2cat.md) tool to create the catalog file. Inf2Cat automatically includes all the files in the driver package that are referenced within the package's INF file. For more information about how to use the Inf2Cat tool, see [Using Inf2Cat to Create a Catalog File](using-inf2cat-to-create-a-catalog-file.md).
-
- 
+> [!NOTE]
+> When creating a [catalog file](catalog-files.md) for a [driver package](driver-packages.md), which has an INF file, use the [**Inf2Cat**](../devtest/inf2cat.md) tool to create the catalog file. Inf2Cat automatically includes all the files in the driver package that are referenced within the package's INF file. For more information about how to use the Inf2Cat tool, see [Using Inf2Cat to Create a Catalog File](using-inf2cat-to-create-a-catalog-file.md).
 
 To create a catalog file, you must first manually create a Catalog Definition File (.*.cdf*) that describes the catalog header attributes and file entries. After this file is created, you can then run the [MakeCat](/windows/win32/seccrypto/makecat) tool to create a catalog file
 
-### Creating a catalog file
+## Creating a catalog file
 
-To create a catalog file for a non-PnP driver package, follow these steps:
+To create a catalog file for a non-PnP driver, follow these steps:
 
-1.  Use a text editor to create a .*.cdf* file that lists the name of the [catalog file](catalog-files.md) to be created, its attributes, and the names of the files that are to be listed in the catalog file.
+1.  Use a text editor to create a *.cdf* file that lists the name of the [catalog file](catalog-files.md) to be created, its attributes, and the names of the files that are to be listed in the catalog file.
 
 2.  Use the [MakeCat](/windows/win32/seccrypto/makecat) command-line tool to create the catalog file. For more information about the MakeCat tool, see the [Using MakeCat](/windows/win32/seccrypto/using-makecat) website.
 
 3.  Install the catalog file on a computer on which the driver will be installed.
 
-### Overview of the MakeCat tool
+## Overview of the MakeCat tool
 
-The MakeCat tool does the following when it processes the .*.cdf* file:
+The MakeCat tool does the following when it processes the *.cdf* file:
 
--   Verifies the attributes of the [catalog file](catalog-files.md) that is defined by the .*.cdf* file, and adds the attributes to the catalog file.
+-   Verifies the attributes of the [catalog file](catalog-files.md) that is defined by the *.cdf* file, and adds the attributes to the catalog file.
 
--   Verifies the attributes for each file that is listed within the .*.cdf* file, and adds the attributes to the catalog file.
+-   Verifies the attributes for each file that is listed within the *.cdf* file, and adds the attributes to the catalog file.
 
 -   Generates a cryptographic hash, or *thumbprint*, of each of the listed files.
 
@@ -41,18 +38,18 @@ The MakeCat tool does the following when it processes the .*.cdf* file:
 Use the following MakeCat command to create a catalog file.
 
 ```cpp
-MakeCat -v CatalogDefinitionFileName..cdf
+MakeCat -v CatalogDefinitionFileName.cdf
 ```
 
 Where:
 
 -   The **-v** option configures MakeCat to print execution and warning messages.
 
--   *CatalogDefinitionFileName..cdf* is the name of the catalog definition file.
+-   *CatalogDefinitionFileName.cdf* is the name of the catalog definition file.
 
-### Examples
+## Examples
 
-The following example shows the contents of a typical catalog definition file that is named Good..cdf. The package to be cataloged contains two files, *File1* and *File2*. The resulting catalog file is named Good.cat.
+The following example shows the contents of a typical catalog definition file that is named Good.cdf. The package to be cataloged contains two files, *File1* and *File2*. The resulting catalog file is named Good.cat.
 
 ```cpp
 [CatalogHeader]

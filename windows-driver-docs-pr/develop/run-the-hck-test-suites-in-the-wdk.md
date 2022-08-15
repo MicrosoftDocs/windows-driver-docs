@@ -2,7 +2,6 @@
 title: How to run the HCK Test Suites in WDK 8.1
 description: To make testing Windows drivers easier in the WDK, starting with WDK 8.1 you can now select HCK test suites to run on the test computers.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to run the HCK Test Suites in WDK 8.1
@@ -30,7 +29,7 @@ Prepare the test computer as needed, by installing the device and driver and any
 
 3.  Be sure you have selected the test computer that you have configured for device you are testing with the HCK Test Suite.
 4.  To use the HCK test suites, you must also follow the configuration requirements for the device you are testing.
-5.  You can use the check boxes to select the tests that match the architecture of the intended test computer (x86, x64, ARM).
+5.  You can use the check boxes to select the tests that match the architecture of the intended test computer (x86, x64, Arm).
 6.  From the **Driver** menu, select **Test &gt; Run test**. By default, the Run test command runs all of the tests in the currently selected test group.
 
 You can also copy one of the provided HCK Test Suites and export it, along with the necessary test support files so that you can run the test suite from a Command Prompt window.

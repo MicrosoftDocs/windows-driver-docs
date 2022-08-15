@@ -1,8 +1,7 @@
 ---
-title: C28750
+title: C28750 warning
 description: Warning C28750 Banned usage of lstrlen and its variants.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28750"
 ---
@@ -10,49 +9,47 @@ f1_keywords:
 # C28750
 
 
-warning C28750: Banned usage of lstrlen and its variants
+**Warning C28750: Banned API Usage lstrlen (BANNED_API_USAGE_LSTRLEN)**\
+Example output: ```Banned usage of lstrlen and its variants: *function_name* is a banned API for improved error handling purposes.```
 
-This warning indicates that a function is being used that has been banned, and has better replacements.
+This warning indicates that a function is being used that has been banned and has a more robust or secure replacement. This specific error indicates usage of lstrlen or a variant thereof. The lstrlen function and its variants are banned because they fail to transmit exceptions. This can cause error conditions to occur much later, potentially on a different thread. This makes the error conditions harder to diagnose. In addition, equivalent substitute functions can be optimized by the compiler and avoid the performance overhead of exception handlers (_try and _except blocks).  
 
-The lstrlen function and related variations fail to transmit exceptions that occur during operation. This can cause error conditions to happen much later, potentially on a different thread, making the error conditions harder to diagnose. In addition, equivalent substitute functions can be optimized by the compiler, and avoid the performance overhead of exception handlers (**\_try** and **\_except** blocks).
+The correct mitigation is to use a safer string length function (usually strlen, wcslen, _tcslen). However, while you review the lstrlen changes, you should confirm that the string buffer is coming from trusted code. If you are dealing with untrusted data, you should instead switch from the strlen family of functions to the strnlen family (or StringCchLength family), which will ensure they don't go past the bounds of the untrusted data block. 
 
-The lstrlen function and its variants are banned because they fail to transmit exceptions. The correct mitigation is to convert them to another string length function (usually strlen, wcslen, \_tcslen). However, while you review the lstrlen changes, you should confirm that the string buffer is coming from trusted code. If you are dealing with untrusted data, you should instead switch from the strlen family of functions to the strnlen family (or StringCchLength family), which will ensure they don't go past the bounds of the untrusted data block.
+Note that unlike lstrlen, none of the replacements catch exceptions. Also, lstrlen handles NULL pointers while the replacements do not, so an explicit NULL check is required when replacing lstrlen with strlen or strnlen (if NULL pointers are possible at that point in the code).  
 
-Unlike lstrlen, none of the replacements catch exceptions. In addition, lstrlen allows NULL pointers, so if NULL pointers are possible at that point in the code, an explicit NULL check is required when replacing lstrlen with strlen or strnlen.
+A list of all banned functions covered by this error and recommended replacements (for both trusted and untrusted data) can be found after the following example: 
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">API</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><span id="lstrlen"></span><span id="LSTRLEN"></span>lstrlen</p></td>
-<td align="left"><p>Trusted data replacement options: _tcslen</p>
-<p>Untrusted data replacement: _tcsnlen, StringCchLength</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><span id="lstrlenA"></span><span id="lstrlena"></span><span id="LSTRLENA"></span>lstrlenA</p></td>
-<td align="left"><p>Trusted data replacement options: strlen</p>
-<p>Untrusted data replacement: strnlen, StringCchLengthA</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><span id="lstrlenW"></span><span id="lstrlenw"></span><span id="LSTRLENW"></span>lstrlenW</p></td>
-<td align="left"><p>Trusted data replacement options: wcslen</p>
-<p>Untrusted data replacement: wcsnlen, StringCchLengthW</p></td>
-</tr>
-</tbody>
-</table>
+## Example
 
- 
+The following code generates this warning: 
+```cpp
+int example_func(char* in)
+{ 
+    int size = lstrlen(in);
+    return size; 
+} 
+```
+This is due to the use of the unsafe function lstrlen. To fix this issue, we can use the strlen as the replacement, making sure to check if the pointer is NULL: 
+```cpp
+int example_func(char* in) 
+{ 
+    if (in != NULL)
+        int size = strlen(in);
+        return size;
+    else {
+        // handle error.
+    }
+} 
+```
 
- 
+## Banned Functions
+
+| Banned API | Trusted data replacement(s) | Untrusted data replacement(s) |
+| -----------|----------------|--------------|
+|```lstrlen```| ```_tcslen``` | ```_tcsnlen```, ```StringCchLength``` |
+|```lstrlenA```| ```strlen``` | ```strnlen```, ```StringCchLengthA``` |
+|```lstrlenW```| ```wcslen``` | ```wcsnlen```, ```StringCchLengthW``` |
 
  
 

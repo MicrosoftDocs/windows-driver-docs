@@ -5,7 +5,6 @@ keywords:
 - return values WDK SCSI
 - ScsiPortInitialize
 ms.date: 10/08/2019
-ms.localizationpriority: medium
 ---
 
 # Storage Driver's Return from DriverEntry

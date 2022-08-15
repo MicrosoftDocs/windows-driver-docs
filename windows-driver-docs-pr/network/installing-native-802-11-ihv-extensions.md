@@ -5,8 +5,7 @@ keywords:
 - IHV extensions WDK Native 802.11 , installing
 - installing Native 802.11 IHV extensions
 - Native 802.11 IHV Extensions WDK , installing
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 06/17/2022
 ---
 
 # Installing Native 802.11 IHV Extensions
@@ -38,8 +37,8 @@ To install the [Native 802.11 IHV Extensions DLL](native-802-11-ihv-extensions-d
 
     ```
     [DestinationDirs]
-    DefaultDestDir = 11
-    Sample-File-List-Section = 11
+    DefaultDestDir = 13
+    Sample-File-List-Section = 13
     ```
 
     For more information about the DestinationDirs section, see [**INF DestinationDirs Section**](../install/inf-destinationdirs-section.md).
@@ -52,7 +51,7 @@ To install the [Native 802.11 IHV Extensions DLL](native-802-11-ihv-extensions-d
     This key identifies the name of the IHV Extensions DLL. For example, to associate the IhvExt.dll with the management of the WLAN adapter, the following key would be declared.
 
     ```
-    HKR,Ndi\IHVExtensions, ExtensibilityDLL, 0, %SystemRoot%\system32\IhvExt.dll
+    HKR,Ndi\IHVExtensions, ExtensibilityDLL, 0, %13%\IhvExt.dll
     ```
 
     <a href="" id="hkr--ndi-ihvextensions--uiextensibilityclsid--0----------clsid"></a>HKR, Ndi\\IHVExtensions, UIExtensibilityCLSID, 0, *CLSID*  

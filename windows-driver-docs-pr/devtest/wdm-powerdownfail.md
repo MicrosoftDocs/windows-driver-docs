@@ -9,7 +9,6 @@ api_name:
 - PowerDownFail
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PowerDownFail rule (wdm)
@@ -19,8 +18,7 @@ The **PowerDownFail** rule specifies that a FDO or FIDO driver should not fail a
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoAcquireRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioacquireremovelock)
 [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver)

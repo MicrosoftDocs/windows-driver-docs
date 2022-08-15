@@ -4,7 +4,6 @@ description: WDI_TLV_CURRENT_CHANNEL_PARAMETERS is an unused TLV.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CURRENT_CHANNEL_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CURRENT\_CHANNEL\_PARAMETERS
@@ -12,8 +11,7 @@ ms.localizationpriority: medium
 
 WDI\_TLV\_CURRENT\_CHANNEL\_PARAMETERS is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

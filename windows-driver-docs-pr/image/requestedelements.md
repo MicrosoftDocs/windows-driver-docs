@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # RequestedElements element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **RequestedElements** element identifies the elements that the client wants data for when it calls [**GetScannerElementsRequest**](getscannerelementsrequest.md) or [**GetJobElementsRequest**](getjobelementsrequest.md).
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:RequestedElements>
@@ -26,8 +24,7 @@ Usage
 </wscn:RequestedElements>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -72,8 +69,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **RequestedElements** element contains one or more **Name** elements for parent **RequestedElements** elements that identify the data that the client is querying.
 

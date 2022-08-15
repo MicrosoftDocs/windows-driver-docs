@@ -9,7 +9,6 @@ api_name:
 - ControlDeviceDeleted
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ControlDeviceDeleted rule (kmdf)
@@ -21,8 +20,7 @@ If an FDO or filter driver calls [**WdfDeviceCreate**](/windows-hardware/drivers
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate)
 [**WdfObjectDelete**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete)

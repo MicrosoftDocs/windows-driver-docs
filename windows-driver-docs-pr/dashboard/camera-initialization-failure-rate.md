@@ -3,7 +3,6 @@ title: Percent of Camera initialization failures
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of instances where a camera device failed to initialize
 ms.topic: article
 ms.date: 05/20/2019
-ms.localizationpriority: medium
 ---
 
 # Percent of Camera initialization failures

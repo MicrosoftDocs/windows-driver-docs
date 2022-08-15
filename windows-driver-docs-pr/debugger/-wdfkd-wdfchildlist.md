@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfchildlist
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfchildlist
@@ -39,8 +38,7 @@ KMDF 1
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The following example shows a **!wdfkd.wdfchildlist** display.
 

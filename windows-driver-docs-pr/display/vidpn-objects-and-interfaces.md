@@ -10,7 +10,6 @@ keywords:
 - VidPN WDK display , interfaces
 - sub-objects WDK video present network
 ms.date: 10/30/2018
-ms.localizationpriority: medium
 ---
 
 # VidPN Objects and Interfaces
@@ -47,7 +46,7 @@ A VidPN object contains the following sub-objects.
 
 The following diagram illustrates a VidPN object and its sub-objects.
 
-![diagram illustrating a vidpn object and its sub-objects](images/vidpnobject.png)
+![diagram illustrating a vidpn object and its sub-objects.](images/vidpnobject.png)
 
 The preceding diagram illustrates whether a particular association is one-to-one, one-to-many, many-to-one, or many-to-many. For example, the diagram shows that a source can belong to more than one path, but a target can belong to only one path.
 

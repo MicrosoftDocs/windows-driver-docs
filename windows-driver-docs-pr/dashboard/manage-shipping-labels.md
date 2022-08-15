@@ -1,12 +1,12 @@
 ---
 title: Manage Shipping Labels
-description: This document contains information about how to create or update shipping labels for driver submission in the Hardware dashboard
+description: This document contains information about how to create or update shipping labels for driver submission in the hardware dashboard
 ms.topic: article
 ms.date: 08/23/2018
 ---
 # Manage Shipping Labels
 
-Use the following methods to manage shipping labels for your Windows Hardware dashboard submissions. For an introduction to the Microsoft Hardware dashboard APIs, including the prerequisites for using the API, see [Hardware dashboard API](dashboard-api.md).
+Use the following methods to manage shipping labels for your Windows hardware dashboard submissions. For an introduction to the Microsoft hardware dashboard APIs, including the prerequisites for using the API, see [hardware dashboard API](dashboard-api.md).
 
 ```cpp
 https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productid}/submissions/{submissionid}/shippingLabels
@@ -53,4 +53,4 @@ For info about error codes, see [Error codes](get-product-data.md#error-codes).
 
 ## See also
 
-- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+- [hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

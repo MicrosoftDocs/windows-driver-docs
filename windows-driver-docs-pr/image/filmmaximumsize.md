@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # FilmMaximumSize element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **FilmMaximumSize** element specifies the largest size original that an end user can scan with the film scanning input source.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:FilmMaximumSize>
@@ -26,8 +24,7 @@ Usage
 </wscn:FilmMaximumSize>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -72,8 +69,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The [**Width**](width.md) child element specifies the maximum size of media that the film scanning input source supports in the fast scan direction. The [**Height**](height.md) child element specifies the maximum size of media that the film scanning input source supports in the slow scan direction.
 

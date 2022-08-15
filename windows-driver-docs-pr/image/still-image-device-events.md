@@ -2,7 +2,6 @@
 title: Still Image Device Events
 description: Still Image Device Events
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Still Image Device Events

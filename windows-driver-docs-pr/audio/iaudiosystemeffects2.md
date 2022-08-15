@@ -9,7 +9,6 @@ api_name:
 api_type:
 - COM
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # IAudioSystemEffects2 interface
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The **IAudioSystemEffects2** interface was introduced with Windows 8.1 for retrieving information about the processing objects in a given mode.
 
-Members
--------
+## Members
 
 The **IAudioSystemEffects2** interface inherits from [IAudioSystemEffects](iaudiosystemeffects.md) but does not have additional members.
 

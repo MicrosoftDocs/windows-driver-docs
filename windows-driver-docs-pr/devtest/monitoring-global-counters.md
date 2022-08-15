@@ -7,7 +7,6 @@ keywords:
 - statistics WDK Driver Verifier
 - counters WDK Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Monitoring Global Counters
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 *Global counters* are statistics that monitor some of the actions that Driver Verifier performs on drivers. These statistics are drawn from all drivers being verified.
 
-Global counters can be viewed by using the [**Verifier Command Line**](verifier-command-line.md), or by using Driver Verifier Manager. There are two versions of Driver Verifier Manager -- one for [Windows 2000](driver-verifier-manager--windows-2000-.md) and one for [Windows XP and later](driver-verifier-manager--windows-xp-and-later-.md).
+Global counters can be viewed by using the [Verifier Command Line](verifier-command-line.md), or by using [Driver Verifier Manager](driver-verifier-manager--windows-xp-and-later-.md).
 
 ### <span id="verifier_command_line"></span><span id="VERIFIER_COMMAND_LINE"></span>Verifier Command Line
 
@@ -26,11 +25,7 @@ To view global counters, use the **verifier /query** command. This will show bot
 
 Global counters are also included in Driver Verifier [log files](creating-log-files.md).
 
-### <span id="driver_verifier_manager__windows_2000_"></span><span id="DRIVER_VERIFIER_MANAGER__WINDOWS_2000_"></span>Driver Verifier Manager (Windows 2000)
-
-To view global counters, select the **Global Counters** tab. This tab includes almost all of the global counters. (However, the **Not Tracked Allocations** counter is on the **Pool Tracking** screen, and the 95% special pool alert is on the **Driver Status** screen, as described immediately below.)
-
-### <span id="driver_verifier_manager__windows_xp_and_later_"></span><span id="DRIVER_VERIFIER_MANAGER__WINDOWS_XP_AND_LATER_"></span>Driver Verifier Manager (Windows XP and later)
+### <span id="driver_verifier_manager__windows_xp_and_later_"></span><span id="DRIVER_VERIFIER_MANAGER__WINDOWS_XP_AND_LATER_"></span>Driver Verifier Manager
 
 To view global counters, start Driver Verifier Manager and select the **Display information about the currently verified drivers** task. Then press **Next** twice.
 

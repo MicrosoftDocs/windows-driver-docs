@@ -1,5 +1,5 @@
 ---
-title: sysptes
+title: sysptes (WinDbg)
 description: The sysptes extension displays a formatted view of the system page table entries (PTEs).
 keywords: ["sysptes Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - sysptes
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !sysptes
@@ -69,8 +68,7 @@ Displays detailed information about any system PTEs that are allocated to mappin
 
 For information about page tables and PTEs, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 To examine a specific PTE, use the [**!pte**](-pte.md) extension.
 

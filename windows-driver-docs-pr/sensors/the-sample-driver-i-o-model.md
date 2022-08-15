@@ -2,7 +2,6 @@
 title: Sample driver I/O model
 description: An SPB driver communicates over the simple peripheral bus, the system GPIO pins, and the resource hub. Here you can see how the components are organized in user mode, kernel mode, and the actual hardware.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sample driver I/O model
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 
 An SPB driver communicates over the simple peripheral bus, the system GPIO pins, and the resource hub. Here you can see how the components are organized in: user mode, kernel mode, and the actual hardware.
 
-![driver i/o model](images/io.png)
+![driver i/o model.](images/io.png)
 
 ## Simple peripheral bus (SPB)
 

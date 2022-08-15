@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_VIDEODECODER\_VCR\_TIMING
@@ -56,15 +55,13 @@ The KSPROPERTY\_VIDEODECODER\_VCR\_TIMING property controls whether the VCR is e
 
 The property value (operation data) is a ULONG that specifies whether to use VCR timing or broadcast timing. A value of zero indicates a broadcast source. A nonzero value indicates a tape source.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEODECODER\_S structure indicates whether to use VCR timing or broadcast timing.
 
 The timing accuracy of synchronization pulses on tape sources typically is not as accurate as from broadcast sources.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -82,7 +79,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_VIDEODECODER\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videodecoder_s)
 

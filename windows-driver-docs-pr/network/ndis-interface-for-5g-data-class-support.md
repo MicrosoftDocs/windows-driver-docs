@@ -4,7 +4,6 @@ description: NDIS Interface for 5G Data Class Support
 keywords:
 - NDIS Interface for 5G Data Class Support
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 

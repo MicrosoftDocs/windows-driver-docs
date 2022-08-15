@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 05/10/2018
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY2
@@ -52,8 +51,7 @@ The property value (operation data) is of type LONG and contains sensitivity inf
 
 A KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY2 property request returns a STATUS\_SUCCESS upon successful completion of the request. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The audio driver can obtain microphone sensitivity for each microphone. This property allows this information to be retrieved from driver.
 
@@ -62,8 +60,7 @@ For Windows 10 voice recognition experiences, such as Cortana, to accurately det
 KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY2 is available beginning with Windows 10 Version 1803 and supersedes [KSPROPERTY\_AUDIO\_MIC\_SENSITIVITY](ksproperty-audio-mic-sensitivity.md).
 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -78,7 +75,6 @@ Requirements
 </tbody>
 </table>
 
-See Also
----------
+## See Also
 
 [KSPROPERTY_AUDIO_MIC_SENSITIVITY](ksproperty-audio-mic-sensitivity.md)

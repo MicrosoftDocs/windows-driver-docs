@@ -10,7 +10,6 @@ keywords:
 - major version numbers WDK KMDF
 - minor version numbers WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Framework Library Versioning

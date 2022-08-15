@@ -7,7 +7,6 @@ keywords:
 - addresses WDK IEEE 1394 bus
 - backing store WDK IEEE 1394 bus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Receiving Asynchronous I/O Request Packets on the IEEE 1394 Bus
@@ -169,7 +168,7 @@ The client driver must perform the following tasks in the driver's asynchronous 
 * For successful read/lock requests (where you return data through the response packet), the client driver must:
   * Allocate memory by calling [**WdfMemoryCreate**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorycreate) ([**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) for WDM-based client drivers) for the response packet data.
   * Fill that buffer with the data to be returned.
-  * Initialize the **ResponseMdl** member and reference the buffer. You can call [**MmInitializeMdl**](../kernel/mm-bad-pointer.md) and [**MmBuildMdlForNonPagedPool**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmbuildmdlfornonpagedpool).
+  * Initialize the **ResponseMdl** member and reference the buffer. You can call [**MmInitializeMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mminitializemdl) and [**MmBuildMdlForNonPagedPool**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmbuildmdlfornonpagedpool).
   * Set **\*NotificationInfo-&gt;ResponsePacket** to point to the buffer.
   * Set **\*NotificationInfo-&gt;ResponseLength** to the size of the response data being returned, that is 4 for a quadlet read request).
   * Allocate memory by calling [**WdfMemoryCreate**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorycreate) ([**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) for WDM-based client drivers) for the response event.

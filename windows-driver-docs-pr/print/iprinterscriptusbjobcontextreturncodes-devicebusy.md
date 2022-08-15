@@ -12,15 +12,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContextReturnCodes::DeviceBusy method
 
 Returns a value of '3' to inform USBMon that the device communication channel is not accepting data at this time.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT DeviceBusy(
@@ -28,24 +26,20 @@ HRESULT DeviceBusy(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *value* \[out, retval\]  
 Value that indicates that the communication channel is not accepting data at this time.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Remarks
--------
+## Remarks
 
 **DeviceBusy** is a read-only method. A returned value of '3' does not indicate a failure, and USBMon should inform the print spooler that the device is busy. USBMon can then call the function again at a later time. The number of bytes processed from the print data stream (printData) is returned in the writePrintDataProgress object.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

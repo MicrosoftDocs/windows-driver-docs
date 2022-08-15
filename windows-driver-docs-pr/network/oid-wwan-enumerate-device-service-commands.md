@@ -4,7 +4,6 @@ description: OID_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS returns a list of comman
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS
@@ -18,8 +17,7 @@ Miniport drivers must process query requests asynchronously, initially returning
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support specified device service or operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,5 +1,5 @@
 ---
-title: obtrace
+title: obtrace (WinDbg)
 description: The obtrace extension displays object reference tracing data for the specified object.
 keywords: ["obtrace Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - obtrace
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !obtrace
@@ -52,8 +51,7 @@ A pointer to the object or a path.
 
 For more information about the Global Flags utility (GFlags), see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The object reference tracing feature of Windows records sequential stack traces whenever an object reference counter is incremented or decremented.
 

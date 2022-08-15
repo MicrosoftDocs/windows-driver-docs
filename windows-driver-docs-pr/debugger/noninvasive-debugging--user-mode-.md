@@ -3,7 +3,6 @@ title: Noninvasive Debugging (User Mode)
 description: Noninvasive Debugging (User Mode)
 keywords: ["process, debugging noninvasively", "noninvasive debugging"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Noninvasive Debugging (User Mode)

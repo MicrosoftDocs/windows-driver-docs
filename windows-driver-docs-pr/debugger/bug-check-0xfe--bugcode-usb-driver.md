@@ -9,7 +9,6 @@ api_name:
 - BUGCODE_USB_DRIVER
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xFE: BUGCODE\_USB\_DRIVER

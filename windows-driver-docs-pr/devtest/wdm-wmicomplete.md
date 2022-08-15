@@ -9,7 +9,6 @@ api_name:
 - WmiComplete
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # WmiComplete rule (wdm)
@@ -25,8 +24,7 @@ Drivers that are not registered as WMI data providers must forward the WMI reque
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -51,13 +49,11 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)
 [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol)
-See also
---------
+## See also
 
 [**WmiForward**](wdm-wmiforward.md)
 [**WMI Requirements for WDM Drivers**](../kernel/wmi-requirements-for-wdm-drivers.md)

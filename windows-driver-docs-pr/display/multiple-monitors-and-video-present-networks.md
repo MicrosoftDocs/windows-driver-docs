@@ -9,7 +9,6 @@ keywords:
 - multiple monitors WDK video present networks
 - monitors WDK video present networks
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Multiple Monitors and Video Present Networks

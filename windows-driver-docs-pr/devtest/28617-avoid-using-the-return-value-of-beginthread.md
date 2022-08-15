@@ -1,8 +1,7 @@
 ---
-title: C28617
+title: C28617 warning
 description: Warning C28617 Avoid using the return value of _beginthread(). Use _beginthreadex() instead.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28617"
 ---

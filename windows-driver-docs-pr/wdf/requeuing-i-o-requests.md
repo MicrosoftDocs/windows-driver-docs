@@ -6,7 +6,6 @@ keywords:
 - requeuing I/O requests WDK KMDF
 - request processing WDK KMDF , requeuing I/O requests
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Requeuing I/O Requests

@@ -3,7 +3,6 @@ title: Reading and Writing Memory
 description: Reading and Writing Memory
 keywords: ["memory", "memory, reading", "memory, writing", "reading memory", "writing memory"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Reading and Writing Memory

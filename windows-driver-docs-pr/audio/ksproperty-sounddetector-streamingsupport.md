@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 09/24/2019
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_SOUNDDETECTOR\_STREAMINGSUPPORT
@@ -60,12 +59,10 @@ A driver which does not support this property, or supports this property and ret
 
 All detectors must support buffering and burst streaming the audio data which triggered the hardware keyword detection, and fail this request or set this value to true.
 
-Remarks
--------
+## Remarks
 This property is for future use. There is currently no OS support for detectors which do voice onset only.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

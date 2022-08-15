@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # D3DKMT\_OUTDUPL\_POINTER\_SHAPE\_INFO structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_OUTDUPL_POINTER_SHAPE_INFO {
@@ -32,8 +30,7 @@ typedef struct _D3DKMT_OUTDUPL_POINTER_SHAPE_INFO {
 } D3DKMT_OUTDUPL_POINTER_SHAPE_INFO;
 ```
 
-Members
--------
+## Members
 
 **Type**
 
@@ -45,8 +42,7 @@ Members
 
 **HotSpot**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

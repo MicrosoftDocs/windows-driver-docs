@@ -9,7 +9,6 @@ api_name:
 - wrmsr (Write MSR)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # wrmsr (Write MSR)
@@ -53,8 +52,7 @@ Specifies the 64-bit hexadecimal value to write to the MSR.
 
  
 
-Remarks
--------
+## Remarks
 
 The **wrmsr** command can display MSR's on x86-based and x64-based platforms. The MSR definitions are platform-specific.
 

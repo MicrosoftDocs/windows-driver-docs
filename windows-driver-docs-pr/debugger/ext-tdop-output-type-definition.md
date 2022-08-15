@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # EXT\_TDOP\_OUTPUT\_TYPE\_DEFINITION
@@ -28,8 +27,7 @@ Specifies the typed data whose type's definition will be printed.
 <span id="Status"></span><span id="status"></span><span id="STATUS"></span>**Status**  
 Receives the status code returned by this sub-operation. This is the same as the value returned by [**Request**](request.md).
 
-Remarks
--------
+## Remarks
 
 The definition of the type is formatted and sent to the debugger engine's [output callbacks](./using-input-and-output.md#output-callbacks).
 

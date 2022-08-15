@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # DocumentFinalParameters element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **DocumentFinalParameters** element contains the actual [**DocumentParameters**](documentparameters.md) element that the scan device uses for image acquisition.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:DocumentFinalParameters>
@@ -26,8 +24,7 @@ Usage
 </wscn:DocumentFinalParameters>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -102,8 +99,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **DocumentFinalParameters** element contains elements that contain the actual scan job values that the WSD Scan Service uses. These values might differ from the values that are requested in the job [**ScanTicket**](scanticket.md) for various reasons. Each parameter is represented in this hierarchy and must be filled in when the values are known.
 

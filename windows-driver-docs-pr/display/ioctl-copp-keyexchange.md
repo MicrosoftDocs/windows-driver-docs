@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # IOCTL\_COPP\_KeyExchange control code
@@ -42,8 +41,7 @@ The miniport driver returns an array of bytes in the VRP **OutputBuffer**. The a
 
 The miniport driver sets the **Information** member of the [**STATUS\_BLOCK**](/windows-hardware/drivers/ddi/video/ns-video-_status_block) structure to the value in the **OutputBufferLength** member of the VRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

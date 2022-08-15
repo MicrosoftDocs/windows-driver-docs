@@ -5,7 +5,6 @@ keywords:
 - SDEL
 - attribute tokens
 ms.date: 09/03/2020
-ms.localizationpriority: medium
 ---
 
 # Attribute Tokens in SDEL

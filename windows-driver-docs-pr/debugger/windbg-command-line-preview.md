@@ -3,14 +3,11 @@ title: WinDbg Preview - Command line startup options
 description: This section covers the command line startup options for the WinDbg Preview debugger.
 ms.date: 09/11/2019
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.localizationpriority: medium
 ---
 
 # WinDbg Preview - Command line startup options
 
-![Small logo on windbg preview](images/windbgx-preview-logo.png)
+![Small logo on windbg preview.](images/windbgx-preview-logo.png)
 
 ## Starting WinDbg Preview
 
@@ -43,7 +40,7 @@ This following tables summarizes the available command line options.
 | -k \[ConnectType\] | Starts a kernel debugging session.  If **-k** is used without any *ConnectType* options following it, it must be the final entry on the command line. |
 |        -kqm        | Starts KD in quiet mode.                                                                |
 |        -kl         | Starts a kernel debugging session on the same machine as the debugger.                                         |
-| -kx *ExdiOptions*  | Starts a kernel debugging session using an EXDI driver.                                                |
+| -kx *ExdiOptions*  | Starts a kernel debugging session using an EXDI driver. For more information about EXDI, see [Configuring the EXDI Debugger Transport](configuring-the-exdi-debugger-transport.md). |
 |         -d         | After a reboot, the debugger will break into the target computer as soon as a kernel module is loaded.                         |
 
 **User Mode Options**
@@ -133,7 +130,7 @@ For general information on the startup parameters, see [WinDbg Command-Line Opti
 
 You can use -? to list the supported command line options.
 
-![Screen shot of command line help output listing about 50 options](images/windbgx-start-up-options.png)
+![Screen shot of command line help output listing about 50 options.](images/windbgx-start-up-options.png)
 
 ## See Also
 

@@ -9,7 +9,6 @@ api_name:
 - .quit_lock (Prevent Accidental Quit)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .quit\_lock (Prevent Accidental Quit)
@@ -57,8 +56,7 @@ Enables the debugging session to end. *Password* must match the password that yo
 
  
 
-Remarks
--------
+## Remarks
 
 Without parameters, **.quit\_lock** displays the current lock status, including the full text of the password.
 

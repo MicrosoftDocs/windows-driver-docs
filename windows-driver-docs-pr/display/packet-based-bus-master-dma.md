@@ -7,7 +7,6 @@ keywords:
 - packet-based DMA WDK video miniport , description
 - VideoPortStartDma
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Packet-Based Bus-Master DMA

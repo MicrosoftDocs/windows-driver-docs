@@ -2,13 +2,12 @@
 title: Road map for the Windows Display Driver Model (WDDM)
 description: Road map for Developing Drivers for the Windows Display Driver Model (WDDM)
 ms.date: 12/06/2018
-ms.localizationpriority: medium
 ms.custom: seodec18
 ---
 
 # Road map for the Windows Display Driver Model (WDDM)
 
-![wdk roadmap for developing wddm display drivers](images/wdkroadmap-th.png)
+![wdk roadmap for developing wddm display drivers.](images/wdkroadmap-th.png)
 
 The Windows Display Driver Model (WDDM) requires that a graphics hardware vendor supply a paired user-mode display driver and kernel-mode display driver (or *display miniport driver*).
 

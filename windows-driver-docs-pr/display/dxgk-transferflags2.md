@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # \_DXGK\_TRANSFERFLAGS2 structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The DXGK\_TRANSFERFLAGS2 structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_TRANSFERFLAGS2 {
@@ -37,8 +35,7 @@ typedef struct _DXGK_TRANSFERFLAGS2 {
 } DXGK_TRANSFERFLAGS2;
 ```
 
-Members
--------
+## Members
 
 **Swizzle**
 Reserved for system use.
@@ -58,8 +55,7 @@ Reserved for system use.
 **Value**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

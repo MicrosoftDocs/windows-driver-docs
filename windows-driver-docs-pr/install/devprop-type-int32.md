@@ -10,7 +10,6 @@ api_location:
 - Devpropdef.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -19,8 +18,7 @@ ms.date: 10/17/2018
 
 In Windows Vista and later versions of Windows, the DEVPROP_TYPE_INT32 identifier represents the base-data-type identifier that indicates that the data type is a LONG-typed signed integer.
 
-Remarks
--------
+## Remarks
 
 DEVPROP_TYPE_INT32 can be combined only with the [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
 
@@ -32,8 +30,7 @@ To set a property whose base data type is DEVPROP_TYPE_INT32, call the correspon
 
 - Set the other function input parameters as appropriate to set the property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

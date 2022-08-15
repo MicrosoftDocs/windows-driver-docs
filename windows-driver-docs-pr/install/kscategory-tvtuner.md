@@ -10,7 +10,6 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,8 +43,7 @@ The KSCATEGORY_TVTUNER [device interface class](./overview-of-device-interface-c
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_TVTUNER to indicate to the operating system that the devices support the KSCATEGORY_TVTUNER functional category.
 
@@ -53,8 +51,7 @@ For an example of how to register this functional category in an INF file, see t
 
 For information about video devices, see [Video Capture Devices](../stream/video-capture-devices.md), [Filter Graph Examples](../stream/filter-graph-examples.md), and [Encoder Devices](../stream/encoder-devices.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

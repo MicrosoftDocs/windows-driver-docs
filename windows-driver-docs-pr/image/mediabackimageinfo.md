@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # MediaBackImageInfo element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The optional **MediaBackImageInfo** element contains the image information for the back side of an ADF duplex scan.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:MediaBackImageInfo>
@@ -26,8 +24,7 @@ Usage
 </wscn:MediaBackImageInfo>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 

@@ -9,7 +9,6 @@ api_name:
 - NonFDONotPowerPolicyOwnerAPI
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NonFDONotPowerPolicyOwnerAPI rule (kmdf)
@@ -25,8 +24,7 @@ If the driver property rule **NotPowerPolicyOwner** passes, and another property
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -51,8 +49,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfDeviceAssignS0IdleSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings)
 [**WdfDeviceAssignSxWakeSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassignsxwakesettings)

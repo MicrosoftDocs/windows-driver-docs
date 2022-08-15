@@ -10,7 +10,6 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,8 +43,7 @@ The KSCATEGORY_CROSSBAR [device interface class](./overview-of-device-interface-
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_CROSSBAR to indicate to the operating system that the devices support the KSCATEGORY_CROSSBAR functional category.
 
@@ -53,8 +51,7 @@ For an example of how to register this functional category in an INF file, see t
 
 For information about crossbar devices for audio and video, see [Filters Used with the Video Capture Devices](../stream/filters-used-with-the-video-capture-devices.md) and [Analog Video Category](../stream/analog-video-category.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

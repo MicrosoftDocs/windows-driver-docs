@@ -4,7 +4,6 @@ description: MPEG2_B
 keywords:
 - MPEG2_B restricted profile WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MPEG2\_B

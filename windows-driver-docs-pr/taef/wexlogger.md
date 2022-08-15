@@ -1,8 +1,7 @@
 ---
 title: WexLogger
 description: WexLogger
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 12/15/2021
 ---
 
 # WexLogger
@@ -37,6 +36,7 @@ LOG_OUTPUT(L"Look, a number! %d", aNumber);
 In managed code, it will look like this:
 
 ```cs
+using WEX.Logging.Interop;
 Log.Comment("Rendering to the BufferView");
 Log.Comment("Render succeeded");
 ```

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_STREAMALLOCATOR\_FUNCTIONTABLE
@@ -46,7 +45,7 @@ The KSPROPERTY\_STREAMALLOCATOR\_FUNCTIONTABLE property retrieves the function t
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Allocator</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksstreamallocator_functiontable" data-raw-source="[&lt;strong&gt;KSSTREAMALLOCATOR_FUNCTIONTABLE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksstreamallocator_functiontable)"><strong>KSSTREAMALLOCATOR_FUNCTIONTABLE</strong></a></p></td>
 </tr>
 </tbody>
@@ -54,15 +53,13 @@ The KSPROPERTY\_STREAMALLOCATOR\_FUNCTIONTABLE property retrieves the function t
 
  
 
-Remarks
--------
+## Remarks
 
 KSPROPERTY\_STREAMALLOCATOR\_FUNCTIONTABLE is only used by allocators supporting the DISPATCH\_LEVEL function interface. Allocators supporting this property must be able to allocate and free frames for IRQL of DISPATCH\_LEVEL and lower. This property is accessible only from kernel mode.
 
 Because the DISPATCH\_LEVEL interface is closely associated with the IRP-based interface, acquiring the function table is likely to result in the creation of an internal notification event to allow pending I/O to be completed when frames are returned to the free list. When the handle to the allocator is closed, the function table pointers are invalid and the associated events are automatically disabled.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -81,4 +78,3 @@ Requirements
 
 
 [**KSSTREAMALLOCATOR\_FUNCTIONTABLE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksstreamallocator_functiontable)
-

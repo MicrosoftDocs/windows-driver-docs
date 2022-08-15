@@ -4,7 +4,6 @@ description: MB modem logging with DSS
 keywords:
 - MB modem logging with DSS, Mobile Broadband modem logging with DSS
 ms.date: 03/21/2019
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
@@ -46,7 +45,7 @@ When connecting or disconnecting from DSS, the following GUID is used for modem 
 
 The following flow diagram illustrates the DSS setup and tear down process.
 
-![DSS modem logging setup and tear down flow diagram](images/mb-modem-logging-dss-flow.png "DSS modem logging setup and tear down flow diagram.")
+![DSS modem logging setup and tear down flow diagram.](images/mb-modem-logging-dss-flow.png "DSS modem logging setup and tear down flow diagram.")
 
 ## NDIS interface extension
 

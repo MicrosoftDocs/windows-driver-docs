@@ -8,7 +8,6 @@ keywords:
 - Old Windows
 - WDK boot options
 ms.date: 04/18/2019
-ms.localizationpriority: medium
 ---
 
 # Boot Options in Previous Versions of Windows

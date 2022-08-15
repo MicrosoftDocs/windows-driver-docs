@@ -10,9 +10,6 @@ keywords:
 - virtual reality
 ms.date: 11/30/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.localizationpriority: medium
 ---
 
 # EDID extension for head-mounted and specialized monitors
@@ -39,7 +36,7 @@ The party responsible for writing the firmware code that contains the EDID must 
 
 The VSDB structure must have the format and values that are outlined in the following table.
 
-![VSDB Specification](images/specialized-displays-vsdb.png)
+![VSDB Specification.](images/specialized-displays-vsdb.png)
 
 ### Vendor specific tag code [3 bits]
 

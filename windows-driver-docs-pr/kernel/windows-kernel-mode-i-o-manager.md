@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode I/O Manager
 description: Windows Kernel-Mode I/O Manager
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -1,20 +1,23 @@
 ---
 title: SR-IOV Virtual Functions (VFs)
-description: SR-IOV Virtual Functions (VFs)
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+description: A PCI Express (PCIe) VF is a lightweight PCIe function on a network adapter that supports single root I/O virtualization (SR-IOV).
+ms.date: 03/09/2022
+ms.custom: contperf-fy22q3
 ---
 
 # SR-IOV Virtual Functions (VFs)
 
 
-A PCI Express (PCIe) Virtual Function (VF) is a lightweight PCIe function on a network adapter that supports single root I/O virtualization (SR-IOV). The VF is associated with the PCIe Physical Function (PF) on the network adapter, and represents a virtualized instance of the network adapter. Each VF has its own PCI Configuration space. Each VF also shares one or more physical resources on the network adapter, such as an external network port, with the PF and other VFs.
+A PCI Express (PCIe) Virtual Function (VF) is a lightweight PCIe function on a network adapter that supports single root I/O virtualization (SR-IOV). 
+
+The VF is associated with the PCIe Physical Function (PF) on the network adapter, and represents a virtualized instance of the network adapter. Each VF has its own PCI Configuration space. Each VF also shares one or more physical resources on the network adapter, such as an external network port, with the PF and other VFs.
 
 A VF is not a full-fledged PCIe device. However, it provides a basic mechanism for directly transferring data between a Hyper-V child partition and the underlying SR-IOV network adapter. Software resources associated for data transfer are directly available to the VF and are isolated from use by the other VFs or the PF. However, the configuration of most of these resources is performed by the PF miniport driver that runs in the management operating system of the Hyper-V parent partition.
 
 A VF is exposed as a virtual network adapter (*VF network adapter*) in the guest operating system that runs in a Hyper-V child partition. After the VF is associated with a virtual port (VPort) on the NIC switch of the SR-IOV network adapter, the virtual PCI (VPCI) driver that runs in the VM exposes the VF network adapter. Once exposed, the PnP manager in the guest operating system loads the VF miniport driver.
 
-**Note**  A Hyper-V child partition is also known as a *virtual machine (VM)*.
+> [!NOTE]
+> A Hyper-V child partition is also known as a *virtual machine (VM)*.
 
  
 

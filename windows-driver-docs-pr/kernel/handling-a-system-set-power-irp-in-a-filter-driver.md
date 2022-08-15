@@ -3,7 +3,6 @@ title: Handling a System Set-Power IRP in a Filter Driver
 description: Handling a System Set-Power IRP in a Filter Driver
 keywords: ["set-power IRPs WDK power management", "filter drivers WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling a System Set-Power IRP in a Filter Driver
@@ -20,7 +19,7 @@ All filter drivers and any function driver that does not own power policy for it
 
 2.  Call **PoStartNextPowerIrp** to start the next power IRP. (Windows Server 2003, Windows XP, and Windows 2000 only.)
 
-3.  Set the IRP stack location ([**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) or [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext)). The driver can set an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine in the IRP, but doing so is rarely necessary.
+3.  Set the IRP stack location ([**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) or [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext)). The driver can set an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine in the IRP, but doing so is rarely necessary.
 
 4.  Call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) (in Windows 7 and Windows Vista) or [**PoCallDriver**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pocalldriver) (in Windows Server 2003, Windows XP, and Windows 2000) to pass the IRP to the next-lower driver.
 

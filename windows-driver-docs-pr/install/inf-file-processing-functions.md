@@ -7,15 +7,10 @@ keywords:
 - SetupCopyOEMInf
 - INF file processing functions WDK SetupAPI
 - processing functions WDK INF files
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 03/11/2022
 ---
 
 # INF File Processing Functions
-
-
-
-
 
 The INF file processing functions provide setup and installation functionality that includes the following:
 
@@ -51,7 +46,7 @@ The following table lists the functions that are used for processing INF files. 
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="/windows/win32/api/setupapi/nf-setupapi-setupcopyoeminfa" data-raw-source="[&lt;strong&gt;SetupCopyOEMInf&lt;/strong&gt;](/windows/win32/api/setupapi/nf-setupapi-setupcopyoeminfa)"><strong>SetupCopyOEMInf</strong></a></p></td>
-<td align="left"><p>Copies a file into <em>%SystemRoot%\Inf</em>.</p></td>
+<td align="left"><p>Stages a driver package in the <a href="driver-store.md" data-raw-source="[Driver Store](driver-store.md)">Driver Store</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="/windows/win32/api/setupapi/nf-setupapi-setupdecompressorcopyfilea" data-raw-source="[&lt;strong&gt;SetupDecompressOrCopyFile&lt;/strong&gt;](/windows/win32/api/setupapi/nf-setupapi-setupdecompressorcopyfilea)"><strong>SetupDecompressOrCopyFile</strong></a></p></td>
@@ -83,7 +78,7 @@ The following table lists the functions that are used for processing INF files. 
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="/windows/win32/api/setupapi/nf-setupapi-setupgetinfdriverstorelocationa" data-raw-source="[&lt;strong&gt;SetupGetInfDriverStoreLocation&lt;/strong&gt;](/windows/win32/api/setupapi/nf-setupapi-setupgetinfdriverstorelocationa)"><strong>SetupGetInfDriverStoreLocation</strong></a></p></td>
-<td align="left"><p>Retrieves the fully qualified file name (directory path and file name) of an INF file in the <a href="driver-store.md" data-raw-source="[driver store](driver-store.md)">driver store</a> that corresponds to a specified INF file in the system INF file directory or a specified INF file in the driver store.</p></td>
+<td align="left"><p>Retrieves the fully qualified file name (directory path and file name) of an INF file in the <a href="driver-store.md" data-raw-source="[Driver Store](driver-store.md)">Driver Store</a> that corresponds to a specified INF file in the system INF file directory or a specified INF file in the driver store.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="/windows/win32/api/setupapi/nf-setupapi-setupgetinffilelista" data-raw-source="[&lt;strong&gt;SetupGetInfFileList&lt;/strong&gt;](/windows/win32/api/setupapi/nf-setupapi-setupgetinffilelista)"><strong>SetupGetInfFileList</strong></a></p></td>
@@ -99,7 +94,7 @@ The following table lists the functions that are used for processing INF files. 
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="/windows/win32/api/setupapi/nf-setupapi-setupgetinfpublishednamea" data-raw-source="[&lt;strong&gt;SetupGetInfPublishedName&lt;/strong&gt;](/windows/win32/api/setupapi/nf-setupapi-setupgetinfpublishednamea)"><strong>SetupGetInfPublishedName</strong></a></p></td>
-<td align="left"><p>Retrieves the fully qualified name (directory path and file name) of an INF file in the system INF file directory that corresponds to a specified INF file in the system INF file directory or a specified INF file in the <a href="driver-store.md" data-raw-source="[driver store](driver-store.md)">driver store</a>.</p></td>
+<td align="left"><p>Retrieves the fully qualified name (directory path and file name) of an INF file in the system INF file directory that corresponds to a specified INF file in the system INF file directory or a specified INF file in the <a href="driver-store.md" data-raw-source="[Driver Store](driver-store.md)">Driver Store</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="/windows/win32/api/setupapi/nf-setupapi-setupgetlinebyindexa" data-raw-source="[&lt;strong&gt;SetupGetLineByIndex&lt;/strong&gt;](/windows/win32/api/setupapi/nf-setupapi-setupgetlinebyindexa)"><strong>SetupGetLineByIndex</strong></a></p></td>

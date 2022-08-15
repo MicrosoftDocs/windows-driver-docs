@@ -4,7 +4,6 @@ description: OID_WDI_GET_RECEIVE_COALESCING_MATCH_COUNT requests the number of p
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_GET_RECEIVE_COALESCING_MATCH_COUNT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WDI\_GET\_RECEIVE\_COALESCING\_MATCH\_COUNT
@@ -31,8 +30,7 @@ No additional parameters. The data in the header is sufficient.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

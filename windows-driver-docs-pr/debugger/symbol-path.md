@@ -3,7 +3,6 @@ title: Symbol path for Windows debuggers
 description: The symbol path specifies locations where the Windows debuggers (WinDbg, KD, CDB, NTST) look for symbol files. 
 keywords: symbol files and paths, symbols, lazy symbol loading, deferred symbol loading, symbol path
 ms.date: 10/23/2019
-ms.localizationpriority: high 
 ---
 
 # Symbol path for Windows debuggers
@@ -46,6 +45,8 @@ For example, the following command tells the debugger to obtain symbols from the
 
 ## <span id="Using_a_Symbol_Server"></span><span id="using_a_symbol_server"></span><span id="USING_A_SYMBOL_SERVER"></span>Using a symbol server
 
+See [Microsoft public symbol server](./microsoft-public-symbols.md) for more information about https://msdl.microsoft.com/download/symbols, the Microsoft public symbol server.
+
 If you are connected to the Internet or a corporate network, the most efficient way to access symbols is to use a symbol server. You can use a symbol server by using the `srv*`, `srv*symbolstore`, or `srv*localsymbolcache*symbolstore` string in your symbol path.
 
 If you include the string `srv*` in your symbol path, the debugger uses a symbol server to get symbols from the default symbol store. For example, the following command tells the debugger to use a symbol server to get symbols from the default symbol store. These symbols are not cached on the local computer.
@@ -72,8 +73,6 @@ If you have a directory on your computer where you manually place symbols, do no
 .sympath c:\MyRegularSymbols;srv*c:\MyServerSymbols*https://msdl.microsoft.com/download/symbols
 ```
 
-For more information about symbol servers, see [Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
-
 ## <span id="Combining_cache__and_srv_"></span><span id="combining_cache__and_srv_"></span><span id="COMBINING_CACHE__AND_SRV_"></span>Combining cache\* and srv\*
 
 
@@ -95,7 +94,7 @@ For example, the following command tells the debugger to use a symbol server to 
 
 You can use the AgeStore tool to delete cached files that are older than a specified date, or to delete enough old files that the resulting size of the cache is less than a specified amount. This can be useful if your downstream store is too large. For details, see [AgeStore](agestore.md).
 
-For more information about symbol servers and symbol stores, see [Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
+For more information about symbol servers and symbol stores, see [Custom Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
 
 ## <span id="lazy_symbol_loading"></span><span id="LAZY_SYMBOL_LOADING"></span>Lazy symbol loading
 

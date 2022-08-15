@@ -2,7 +2,6 @@
 title: Wi-Fi Direct Printing overview
 description: Provides information on supported user experiences and use cases for a Wi-Fi Direct Printing.
 ms.date: 06/09/2020
-ms.localizationpriority: medium
 ---
 
 # Wi-Fi Direct Printing overview
@@ -351,7 +350,7 @@ WNA3100M
 
 Windows uses the Wi-Fi P2P IE format’s P2P Device Info sub element’s Device Name attribute to set the device name in Windows when the device is the group owner. This attribute should contain a meaningful name for the user as it will appear in as the device name in all Windows UI.
 
-![p2p ie format oob device info element](images/wfd-p2pieformat.png)
+![p2p ie format oob device info element.](images/wfd-p2pieformat.png)
 
 *P2P IE format OOB Device Info Element*
 

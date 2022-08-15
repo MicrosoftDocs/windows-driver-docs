@@ -8,7 +8,6 @@ api_name:
 - Files.HwComponent.ID Section of a TxtSetup.oem File
 api_type:
 - NA
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

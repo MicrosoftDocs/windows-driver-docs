@@ -9,7 +9,6 @@ api_name:
 - MACHINE_CHECK_EXCEPTION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x9C: MACHINE\_CHECK\_EXCEPTION
@@ -95,8 +94,7 @@ If the processor is based on a newer x86-based architecture and has the MCA feat
 </table>
 
 
-Remarks
--------
+## Remarks
 
 This bug check occurs only in the following circumstances.
 

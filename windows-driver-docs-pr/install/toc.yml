@@ -16,31 +16,21 @@
         href: step-3--the-driver-for-the-device-is-installed.md
     - name: "Components"
       items: 
-      - name: "System-provided Device Installation Components"
-        href: system-provided-device-installation-components.md
       - name: "Plug and Play Manager"
         href: pnp-manager.md
       - name: "Driver Store"
         href: driver-store.md
-      - name: "Vendor-provided Device Installation Components"
-        href: vendor-provided-device-installation-components.md
-    - name: "Installation Files"
-      items: 
-      - name: "Device Installation Files"
-        href: device-installation-files.md
-      - name: "Sample Device Installation Files"
-        href: sample-device-installation-files.md
     - name: "Device Installation Types"
       href: device-installation-types.md
-    - name: "How Windows Selects Drivers"
+    - name: "How Windows Selects Driver Packages"
       items: 
-      - name: "Overview of the Driver Selection Process"
+      - name: "Overview of the Driver Package Selection Process"
         href: overview-of-the-driver-selection-process.md
-      - name: "How Windows selects a driver for a device"
+      - name: "How Windows selects a driver package for a device"
         href: how-windows-selects-a-driver-for-a-device.md
-    - name: "How Windows Ranks Drivers"
+    - name: "How Windows Ranks Driver Packages"
       items: 
-        - name: "How Windows Ranks Drivers"
+        - name: "How Windows Ranks Driver Packages"
           href: how-setup-ranks-drivers--windows-vista-and-later-.md
         - name: "Signature Categories and Driver Installation"
           href: signature-categories-and-driver-installation.md
@@ -52,11 +42,9 @@
           href: feature-score--windows-vista-and-later-.md
         - name: "Identifier Score"
           href: identifier-score--windows-vista-and-later-.md
-        - name: "Driver Rank Ranges"
-          href: driver-rank-ranges--windows-vista-and-later-.md
-        - name: "Driver Rank Example"
+        - name: "Driver Package Rank Example"
           href: driver-rank-example--windows-vista-and-later-.md
-        - name: "Driver Rank Information in the SetupAPI Log"
+        - name: "Driver Package Rank Information in the SetupAPI Log"
           href: driver-rank-information-in-the-setupapi-log.md
         - name: "AllSigningEqual Group Policy"
           href: allsigningequal-group-policy.md
@@ -70,56 +58,44 @@
       href: components-of-a-driver-package.md
     - name: "Installation Component Overview"
       href: installation-component-overview.md
-    - name: "Supplying an INF File"
-      href: supplying-an-inf-file.md
+    - name: "Sample Device Installation Files"
+      href: sample-device-installation-files.md
   - name: "INF Files"
     items: 
     - name: "Overview of INF Files"
       href: overview-of-inf-files.md
+    - name: "General Syntax Rules for INF Files"
+      href: general-syntax-rules-for-inf-files.md
+    - name: "General Guidelines for INF Files"
+      href: general-guidelines-for-inf-files.md
     - name: "Looking at an INF File"
       href: looking-at-an-inf-file.md
+    - name: "Summary of INF Sections"
+      href: summary-of-inf-sections.md
+    - name: "Summary of INF Directives"
+      href: summary-of-inf-directives.md
     - name: "Using a Universal INF File"
       href: using-a-universal-inf-file.md
     - name: "Using an Extension INF File"
       href: using-an-extension-inf-file.md
     - name: "Using an Extension INF File Template"
       href: using-an-extension-inf-file-template.md
+    - name: "Using a Component INF File"
+      href: using-a-component-inf-file.md
     - name: "Updating Device Firmware using Windows Update"
       href: updating-device-firmware-using-windows-update.md
-    - name: "Summary of INF Sections"
-      href: summary-of-inf-sections.md
-    - name: "Summary of INF Directives"
-      href: summary-of-inf-directives.md
-    - name: "General Guidelines for INF Files"
-      href: general-guidelines-for-inf-files.md
-    - name: "General Syntax Rules for INF Files"
-      href: general-syntax-rules-for-inf-files.md
     - name: "Specifying the Source and Target Locations for Device Files"
       href: specifying-the-source-and-target-locations-for-device-files.md
-    - name: "Source Media for INF Files"
-      href: source-media-for-inf-files.md
-    - name: "Target Media for INF Files"
-      href: target-media-for-inf-files.md
     - name: "Copying INF Files"
       href: copying-inf-files.md
     - name: "Creating INF Files for Multiple Platforms and Operating Systems"
       href: creating-inf-files-for-multiple-platforms-and-operating-systems.md
-    - name: "INF File Platform Extensions and x64-Based Systems"
-      href: inf-file-platform-extensions-and-x64-based-systems.md
-    - name: "INF File Platform Extensions and x86-Based Systems"
-      href: inf-file-platform-extensions-and-x86-based-systems.md
     - name: "Cross-Platform INF Files"
       href: cross-platform-inf-files.md
     - name: "Combining Platform Extensions with Other Section Name Extensions"
       href: combining-platform-extensions-with-other-section-name-extensions.md
     - name: "Combining Platform Extensions with Operating System Versions"
       href: combining-platform-extensions-with-operating-system-versions.md
-    - name: "Sample INF Models Sections for One or More Target Operating Systems"
-      href: sample-inf-models-sections-for-one-or-more-target-operating-system.md
-    - name: "Sample INF Models Sections for Only One Target Operating System"
-      href: sample-inf-models-sections-for-only-one-target-operating-system.md
-    - name: "Sample INF File for Device Installation on Multiple Versions of Windows"
-      href: sample-inf-file-for-device-installation-on-multiple-versions-of-windows.md
     - name: "Creating International INF Files"
       href: creating-international-inf-files.md
     - name: "Specifying Driver Load Order"
@@ -128,198 +104,26 @@
       href: using-dirids.md
     - name: "Accessing INF Files from a Device Installation Application"
       href: accessing-inf-files-from-a-setup-application.md
-    - name: "Opening and Closing an INF File"
-      href: opening-and-closing-an-inf-file.md
-    - name: "Retrieving Information from an INF File"
-      href: retrieving-information-from-an-inf-file.md
     - name: "Providing Icons for a Device"
       href: providing-vendor-icons-for-the-shell-and-autoplay.md
   - name: "Driver Signing"
     items: 
     - name: "Driver Signing"
       href: driver-signing.md
-    - name: "Digital Signatures"
-      href: digital-signatures.md
-    - name: "Authenticode Digital Signatures"
-      href: authenticode.md
-    - name: "Catalog Files and Digital Signatures"
-      href: catalog-files.md
-    - name: "Embedded Signatures in a Driver File"
-      href: embedded-signatures-in-a-driver-file.md
-    - name: "Digital Signatures and PnP Device Installation"
-      href: digital-signatures-and-pnp-device-installation--windows-vista-and-late.md
-    - name: "Digital Certificates"
-      href: digital-certificates.md
-    - name: "Certificate Stores"
-      href: certificate-stores.md
-    - name: "Local Machine and Current User Certificate Stores"
-      href: local-machine-and-current-user-certificate-stores.md
-    - name: "Trusted Root Certification Authorities Certificate Store"
-      href: trusted-root-certification-authorities-certificate-store.md
-    - name: "Trusted Publishers Certificate Store"
-      href: trusted-publishers-certificate-store.md
     - name: "Kernel-Mode Code Signing Policy"
       href: kernel-mode-code-signing-policy--windows-vista-and-later-.md
     - name: "Windows 10 in S mode Driver Requirements"
       href: Windows10SDriverRequirements.md
-    - name: "Managing the Signing Process"
-      href: managing-the-signing-process.md
-    - name: "Kernel-Mode Code Signing Requirements"
-      href: kernel-mode-code-signing-requirements--windows-vista-and-later-.md
-    - name: "PnP Device Installation Signing Requirements"
-      href: pnp-device-installation-signing-requirements--windows-vista-and-later-.md
     - name: "Authenticode Signing of Third-party CSPs"
       href: authenticode-signing-of-csps.md
     - name: "Managing the Digital Signature or Code Signing Keys"
       href: managing-the-digital-signature-or-code-signing-keys.md
     - name: "Cross-Certificates for Kernel Mode Code Signing"
       href: cross-certificates-for-kernel-mode-code-signing.md
-    - name: "Introduction to Test-Signing"
-      href: introduction-to-test-signing.md
-    - name: "How to Test-Sign a Driver Package"
-      href: how-to-test-sign-a-driver-package.md
-    - name: "How to Install a Test-signed Driver Required for Windows Setup and Boot"
-      href: how-to-install-test-signed-driver-for-setup-and-boot.md
-    - name: "Creating Test Certificates"
-      href: creating-test-certificates.md
-    - name: "Installing Test Certificates"
-      href: installing-test-certificates.md
-    - name: "Viewing Test Certificates"
-      href: viewing-test-certificates.md
-    - name: "Creating a Catalog File for Test-Signing a Driver Package"
-      href: creating-a-catalog-file-for-test-signing-a-driver-package.md
-    - name: "Using Inf2Cat to Create a Catalog File"
-      href: using-inf2cat-to-create-a-catalog-file.md
-    - name: "Using MakeCat to Create a Catalog File"
-      href: using-makecat-to-create-a-catalog-file.md
-    - name: "Test-Signing a Driver Package's Catalog File"
-      href: test-signing-a-driver-package-s-catalog-file.md
-    - name: "Test-Signing a Driver through an Embedded Signature"
-      href: test-signing-a-driver-through-an-embedded-signature.md
-    - name: "Configuring the Test Computer to Support Test-Signing"
-      href: configuring-the-test-computer-to-support-test-signing.md
-    - name: "Enable Loading of Test Signed Drivers"
-      href: the-testsigning-boot-configuration-option.md
-    - name: "Enabling Code Integrity Event Logging and System Auditing"
-      href: enabling-code-integrity-event-logging-and-system-auditing.md
-    - name: "Verifying the Test Signature"
-      href: verifying-the-test-signature.md
-    - name: "Installing a Test-Signed Driver Package on the Test Computer"
-      href: installing-a-test-signed-driver-package-on-the-test-computer.md
-    - name: "Using the DevCon Tool to Install a Driver Package"
-      href: using-the-devcon-tool-to-install-a-driver-package.md
-    - name: "WHQL Test Signature Program"
-      href: whql-test-signature-program.md
-    - name: "MakeCert Test Certificate"
-      href: makecert-test-certificate.md
-    - name: "Commercial Test Certificate"
-      href: commercial-test-certificate.md
-    - name: "Enterprise CA Test Certificate"
-      href: enterprise-ca-test-certificate.md
-    - name: "Test-Signing Driver Packages"
-      href: test-signing-driver-packages.md
-    - name: "Test-Signing a Driver File"
-      href: test-signing-a-driver-file.md
-    - name: "Verifying the Signature of a Test-Signed Driver File"
-      href: verifying-the-signature-of-a-test-signed-driver-file.md
-    - name: "Creating a Catalog File for a Test-Signed Driver Package"
-      href: creating-a-catalog-file-for-a-test-signed-driver-package.md
-    - name: "Test-Signing a Catalog File"
-      href: test-signing-a-catalog-file.md
-    - name: "Verifying the Signature of a Test-Signed Catalog File"
-      href: verifying-the-signature-of-a-test-signed-catalog-file.md
-    - name: "Installing Test-Signed Driver Packages"
-      href: installing-test-signed-driver-packages.md
-    - name: "Installing a Test Certificate on a Test Computer"
-      href: installing-a-test-certificate-on-a-test-computer.md
-    - name: "Using CertMgr to Install Test Certificates on a Test Computer"
-      href: using-certmgr-to-install-test-certificates-on-a-test-computer.md
-    - name: "Deploying a Test Certificate by Using the Default Domain Policy"
-      href: deploying-a-test-certificate-by-using-the-default-domain-policy.md
-    - name: "Installing a Test-Signed Catalog File for a Non-PnP Driver"
-      href: installing-a-test-signed-catalog-file-for-a-non-pnp-driver.md
-    - name: "Installing a Catalog File by using CryptCATAdminAddCatalog"
-      href: installing-a-catalog-file-by-using-cryptcatadminaddcatalog.md
-    - name: "Installing a Catalog File by using SignTool"
-      href: installing-a-catalog-file-by-using-signtool.md
     - name: "Installing an Unsigned Driver during Development and Test"
       href: installing-an-unsigned-driver-during-development-and-test.md
-    - name: "Signing Drivers for Public Release"
-      href: signing-drivers-for-public-release--windows-vista-and-later-.md
-    - name: "Introduction to Release-Signing"
-      href: introduction-to-release-signing.md
-    - name: "How to Release-Sign a Driver Package"
-      href: how-to-release-sign-a-driver-package.md
-    - name: "Obtaining a Software Publisher Certificate (SPC)"
-      href: obtaining-a-software-publisher-certificate--spc-.md
-    - name: "Personal Information Exchange (.pfx) Files"
-      href: personal-information-exchange---pfx--files.md
-    - name: "Importing an SPC into a Certificate Store"
-      href: importing-an-spc-into-a-certificate-store.md
-    - name: "Determining an SPC's Cross-Certificate"
-      href: determining-an-spc-s-cross-certificate.md
-    - name: "Creating a Catalog File for Release-Signing a Driver Package"
-      href: creating-a-catalog-file-for-release-signing-a-driver-package.md
-    - name: "Release-Signing a Driver Package's Catalog File"
-      href: release-signing-a-driver-package-s-catalog-file.md
-    - name: "Release-Signing a Driver through an Embedded Signature"
-      href: release-signing-a-driver-through-an-embedded-signature.md
-    - name: "Verifying the Release-Signature"
-      href: verifying-the-release-signature.md
-    - name: "Configuring a Computer to Support Release-Signing"
-      href: configuring-a-computer-to-support-release-signing.md
-    - name: "Installing a Release-Signed Driver Package"
-      href: installing-a-release-signed-driver-package.md
-    - name: "WHQL Release Signature"
-      href: whql-release-signature.md
-    - name: "Release Certificates"
-      href: release-certificates.md
-    - name: "Software Publisher Certificate"
-      href: software-publisher-certificate.md
-    - name: "Commercial Release Certificate"
-      href: commercial-release-certificate.md
-    - name: "Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates"
-      href: deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md  
-    - name: "Release-Signing Driver Packages"
-      href: release-signing-driver-packages.md
-    - name: "Release-Signing a Driver File"
-      href: release-signing-a-driver-file.md
-    - name: "Verifying the Signature of a Release-Signed Driver File"
-      href: verifying-the-signature-of-a-release-signed-driver-file.md
-    - name: "Creating a Catalog File for a PnP Driver Package "
-      href: creating-a-catalog-file-for-a-pnp-driver-package.md
-    - name: "Signing a Catalog File with an SPC"
-      href: signing-a-catalog-file-with-an-spc.md
-    - name: "Verifying the SPC Signature of a Catalog File"
-      href: verifying-the-spc-signature-of-a-catalog-file.md
-    - name: "Signing a Catalog File with a Commercial Release Certificate"
-      href: signing-a-catalog-file-with-a-commercial-release-certificate.md
-    - name: "Verifying the Signature of a Catalog File Signed by a Commercial Release Certificate"
-      href: verifying-the-signature-of-a-catalog-file-signed-by-a-commercial-relea.md
-    - name: "Creating a Catalog File for a Non-PnP Driver Package"
-      href: creating-a-catalog-file-for-a-non-pnp-driver-package.md
-    - name: "Installing a Release-Signed Catalog File for a Non-PnP Driver"
-      href: installing-a-release-signed-catalog-file-for-a-non-pnp-driver.md
-    - name: "Detecting Driver Load Errors"
-      href: detecting-driver-load-errors.md
-    - name: "Code Integrity Diagnostic System Log Events"
-      href: code-integrity-diagnostic-system-log-events.md
-    - name: "Viewing Code Integrity Events"
-      href: viewing-code-integrity-events.md
-    - name: "Enabling the System Event Audit Log"
-      href: enabling-the-system-event-audit-log.md
-    - name: "Code Integrity Event Log Messages"
-      href: code-integrity-event-log-messages.md
-    - name: "SetupAPI Device Installation Log Entries"
-      href: setupapi-device-installation-log-entries.md
     - name: "Windows Driver Signing Tutorial"
       href: windows-driver-signing-tutorial.md
-    - name: "Test Signing"
-      href: test-signing.md
-    - name: "Release Signing"
-      href: release-signing.md
-    - name: "Troubleshooting Driver Signing Installation"
-      href: troubleshooting-driver-signing-installation.md
     - name: "Appendix 1: Enforcing Kernel-Mode Signature Verification in Kernel Debugging Mode"
       href: appendix-1--enforcing-kernel-mode-signature-verification-in-kernel-debugging-mode.md
     - name: "Appendix 2: Signing Drivers with Visual Studio"
@@ -328,6 +132,168 @@
       href: appendix-3--enable-code-integrity-event-logging-and-system-auditing.md
     - name: "Appendix 4: Driver Signing Issues"
       href: appendix-4--driver-signing-issues.md
+    - name: "Digital Signatures"
+      items: 
+      - name: "Digital Signatures"
+        href: digital-signatures.md
+      - name: "Authenticode Digital Signatures"
+        href: authenticode.md
+      - name: "Embedded Signatures in a Driver File"
+        href: embedded-signatures-in-a-driver-file.md
+      - name: "Digital Signatures and PnP Device Installation"
+        href: digital-signatures-and-pnp-device-installation--windows-vista-and-late.md
+      - name: "Managing the Signing Process"
+        href: managing-the-signing-process.md
+      - name: "Kernel-Mode Code Signing Requirements"
+        href: kernel-mode-code-signing-requirements--windows-vista-and-later-.md
+      - name: "PnP Device Installation Signing Requirements"
+        href: pnp-device-installation-signing-requirements--windows-vista-and-later-.md
+    - name: "Catalog Files"
+      items: 
+      - name: "Catalog Files and Digital Signatures"
+        href: catalog-files.md
+      - name: "Using Inf2Cat to Create a Catalog File"
+        href: using-inf2cat-to-create-a-catalog-file.md
+      - name: "Using MakeCat to Create a Catalog File"
+        href: using-makecat-to-create-a-catalog-file.md
+      - name: "Installing a Catalog File by using SignTool"
+        href: installing-a-catalog-file-by-using-signtool.md
+      - name: "Installing a Catalog File by using CryptCATAdminAddCatalog"
+        href: installing-a-catalog-file-by-using-cryptcatadminaddcatalog.md
+      - name: "Creating a Catalog File for a PnP Driver Package "
+        href: creating-a-catalog-file-for-a-pnp-driver-package.md
+      - name: "Creating a Catalog File for a Non-PnP Driver"
+        href: creating-a-catalog-file-for-a-non-pnp-driver-package.md
+    - name: "Certificates"
+      items: 
+      - name: "Digital Certificates"
+        href: digital-certificates.md
+      - name: "Certificate Stores"
+        href: certificate-stores.md
+      - name: "Local Machine and Current User Certificate Stores"
+        href: local-machine-and-current-user-certificate-stores.md
+      - name: "Trusted Root Certification Authorities Certificate Store"
+        href: trusted-root-certification-authorities-certificate-store.md
+      - name: "Trusted Publishers Certificate Store"
+        href: trusted-publishers-certificate-store.md
+      - name: "Personal Information Exchange (.pfx) Files"
+        href: personal-information-exchange---pfx--files.md
+      - name: "Importing an SPC into a Certificate Store"
+        href: importing-an-spc-into-a-certificate-store.md
+      - name: "Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates"
+        href: deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md
+    - name: "Test Signing"
+      items: 
+      - name: "Introduction to Test-Signing"
+        href: introduction-to-test-signing.md
+      - name: "How to Test-Sign a Driver Package"
+        href: how-to-test-sign-a-driver-package.md
+      - name: "How to Install a Test-signed Driver Package Required for Windows Setup and Boot"
+        href: how-to-install-test-signed-driver-for-setup-and-boot.md
+      - name: "Creating Test Certificates"
+        href: creating-test-certificates.md
+      - name: "Installing Test Certificates"
+        href: installing-test-certificates.md
+      - name: "Viewing Test Certificates"
+        href: viewing-test-certificates.md
+      - name: "Creating a Catalog File for Test-Signing a Driver Package"
+        href: creating-a-catalog-file-for-test-signing-a-driver-package.md
+      - name: "Test-Signing a Driver Package's Catalog File"
+        href: test-signing-a-driver-package-s-catalog-file.md
+      - name: "Test-Signing a Driver Binary through an Embedded Signature"
+        href: test-signing-a-driver-through-an-embedded-signature.md
+      - name: "Configuring the Test Computer to Support Test-Signing"
+        href: configuring-the-test-computer-to-support-test-signing.md
+      - name: "Enable Loading of Test Signed Drivers"
+        href: the-testsigning-boot-configuration-option.md
+      - name: "Enable Loading of Preproduction Signed Drivers"
+        href: preproduction-driver-signing-and-install.md
+      - name: "Verifying the Test Signature"
+        href: verifying-the-test-signature.md
+      - name: "Installing a Test-Signed Driver Package on the Test Computer"
+        href: installing-a-test-signed-driver-package-on-the-test-computer.md
+      - name: "Using the DevCon Tool to Install a Driver Package"
+        href: using-the-devcon-tool-to-install-a-driver-package.md
+      - name: "WHQL Test Signature Program"
+        href: whql-test-signature-program.md
+      - name: "MakeCert Test Certificate"
+        href: makecert-test-certificate.md
+      - name: "Enterprise CA Test Certificate"
+        href: enterprise-ca-test-certificate.md
+      - name: "Test-Signing Driver Packages"
+        href: test-signing-driver-packages.md
+      - name: "Test-Signing a Driver File"
+        href: test-signing-a-driver-file.md
+      - name: "Verifying the Signature of a Test-Signed Driver File"
+        href: verifying-the-signature-of-a-test-signed-driver-file.md
+      - name: "Test-Signing a Catalog File"
+        href: test-signing-a-catalog-file.md
+      - name: "Verifying the Signature of a Test-Signed Catalog File"
+        href: verifying-the-signature-of-a-test-signed-catalog-file.md
+      - name: "Installing Test-Signed Driver Packages"
+        href: installing-test-signed-driver-packages.md
+      - name: "Installing a Test Certificate on a Test Computer"
+        href: installing-a-test-certificate-on-a-test-computer.md
+      - name: "Using CertMgr to Install Test Certificates on a Test Computer"
+        href: using-certmgr-to-install-test-certificates-on-a-test-computer.md
+      - name: "Deploying a Test Certificate by Using the Default Domain Policy"
+        href: deploying-a-test-certificate-by-using-the-default-domain-policy.md
+      - name: "Installing a Test-Signed Catalog File for a Non-PnP Driver"
+        href: installing-a-test-signed-catalog-file-for-a-non-pnp-driver.md
+      - name: "Test Signing"
+        href: test-signing.md
+    - name: "Release Signing"
+      items: 
+      - name: "Signing Drivers for Public Release"
+        href: signing-drivers-for-public-release--windows-vista-and-later-.md
+      - name: "Introduction to Release-Signing"
+        href: introduction-to-release-signing.md
+      - name: "How to Release-Sign a Driver Package"
+        href: how-to-release-sign-a-driver-package.md
+      - name: "Creating a Catalog File for Release-Signing a Driver Package"
+        href: creating-a-catalog-file-for-release-signing-a-driver-package.md
+      - name: "Release-Signing a Driver Package's Catalog File"
+        href: release-signing-a-driver-package-s-catalog-file.md
+      - name: "Release-Signing a Driver Binary through an Embedded Signature"
+        href: release-signing-a-driver-through-an-embedded-signature.md
+      - name: "Verifying the Release-Signature"
+        href: verifying-the-release-signature.md
+      - name: "Configuring a Computer to Support Release-Signing"
+        href: configuring-a-computer-to-support-release-signing.md
+      - name: "Installing a Release-Signed Driver Package"
+        href: installing-a-release-signed-driver-package.md
+      - name: "WHQL Release Signature"
+        href: whql-release-signature.md
+      - name: "Release Certificates"
+        href: release-certificates.md
+      - name: "Verifying the Signature of a Release-Signed Driver File"
+        href: verifying-the-signature-of-a-release-signed-driver-file.md
+      - name: "Signing a Catalog File with a Commercial Release Certificate"
+        href: signing-a-catalog-file-with-a-commercial-release-certificate.md
+      - name: "Verifying the Signature of a Catalog File Signed by a Commercial Release Certificate"
+        href: verifying-the-signature-of-a-catalog-file-signed-by-a-commercial-relea.md
+      - name: "Installing a Release-Signed Catalog File for a Non-PnP Driver"
+        href: installing-a-release-signed-catalog-file-for-a-non-pnp-driver.md
+      - name: "Release Signing"
+        href: release-signing.md
+    - name: "Troubleshooting Problems"
+      items: 
+      - name: "Enabling Code Integrity Event Logging and System Auditing"
+        href: enabling-code-integrity-event-logging-and-system-auditing.md
+      - name: "Detecting Driver Load Errors"
+        href: detecting-driver-load-errors.md
+      - name: "Code Integrity Diagnostic System Log Events"
+        href: code-integrity-diagnostic-system-log-events.md
+      - name: "Viewing Code Integrity Events"
+        href: viewing-code-integrity-events.md
+      - name: "Enabling the System Event Audit Log"
+        href: enabling-the-system-event-audit-log.md
+      - name: "Code Integrity Event Log Messages"
+        href: code-integrity-event-log-messages.md
+      - name: "SetupAPI Device Installation Log Entries"
+        href: setupapi-device-installation-log-entries.md
+      - name: "Troubleshooting Driver Signing Installation"
+        href: troubleshooting-driver-signing-installation.md
   - name: "Device Metadata Packages"
     items: 
     - name: "Overview of Device Metadata Packages"
@@ -390,24 +356,8 @@
     items:
     - name: "SetupAPI"
       href: setupapi.md
-    - name: "Using General Setup Functions"
-      href: using-general-setup-functions.md
     - name: "INF File Processing Functions"
       href: inf-file-processing-functions.md
-    - name: "Disk Prompting and Error Handling Functions"
-      href: disk-prompting-and-error-handling-functions.md
-    - name: "File Queuing Functions"
-      href: file-queuing-functions.md
-    - name: "Default Queue Callback Routine Functions"
-      href: default-queue-callback-routine-functions.md
-    - name: "Cabinet File Function"
-      href: cabinet-file-function.md
-    - name: "Disk-Space List Functions"
-      href: disk-space-list-functions.md
-    - name: "MRU Source List Functions"
-      href: mru-source-list-functions.md
-    - name: "File Log Functions"
-      href: file-log-functions.md
     - name: "User Interface Functions"
       href: user-interface-functions.md
     - name: "SetupAPI Logging Functions"
@@ -422,98 +372,50 @@
       href: using-setupapi-to-verify-driver-authenticode-signatures.md
     - name: "Determining the Parent of a Device"
       href: determining-the-parent-of-a-device.md
-    - name: "Obtaining the Parent of a Device in the Device Tree"
-      href: obtaining-the-parent-of-a-device-in-the-device-tree.md
-    - name: "Determining the Parent of a Nonpresent Device"
-      href: determining-the-parent-of-a-nonpresent-device.md
     - name: "Obtaining the Original Source Path of an Installed INF File"
       href: obtaining-the-original-source-path-of-an-installed-inf-file.md
     - name: "Guidelines for Using SetupAPI"
       href: guidelines-for-using-setupapi.md
-    - name: "DIFx Guidelines"
-      href: difx-guidelines.md
-    - name: "Device and Driver Installation Software Components"
-      href: device-and-driver-installation-software-components.md
-    - name: "Writing a Co-installer"
-      href: writing-a-co-installer.md
-    - name: "Co-installer Operation"
-      href: co-installer-operation.md
-    - name: "Co-installer Interface"
-      href: co-installer-interface.md
-    - name: "Co-installer Functionality"
-      href: co-installer-functionality.md
-    - name: "Handling DIF Codes"
-      href: handling-dif-codes.md
-    - name: "Registering a Co-installer"
-      href: registering-a-co-installer.md
-    - name: "Registering a Device-Specific Co-installer"
-      href: registering-a-device-specific-co-installer.md
-    - name: "Registering a Class Co-installer"
-      href: registering-a-class-co-installer.md
-    - name: "Calling the Default DIF Code Handlers"
-      href: calling-the-default-dif-code-handlers.md
-    - name: "Finish-Install Actions"
-      href: finish-install-actions--windows-vista-and-later-.md
-    - name: "Overview of Finish-Install Actions"
-      href: overview-of-finish-install-actions.md
-    - name: "How Finish-Install Actions are Processed"
-      href: how-finish-install-actions-are-processed.md
-    - name: "Marking a Device as having a Finish Install Action to Perform"
-      href: setting-the-configflag-finishinstall-action-device-configuration-flag.md
-    - name: "Running Finish-Install Actions"
-      href: running-finish-install-actions.md
-    - name: "Running the Default Finish-Install Action"
-      href: running-the-default-finish-install-action.md
-    - name: "Implementing Finish-Install Actions"
-      href: implementing-finish-install-actions.md
-    - name: "Guidelines for Implementing Finish-Install Actions"
-      href: guidelines-for-implementing-finish-install-actions.md
-    - name: "Code Example: Finish-Install Actions in a Class Installer"
-      href: code-example--finish-install-actions-in-a-class-installer.md
-    - name: "Code Example: Finish-Install Actions in a Co-installer"
-      href: code-example--finish-install-actions-in-a-co-installer.md
-    - name: "Overview of Device Property Pages"
-      href: overview-of-device-property-pages.md
-    - name: "How Device Property Pages are Displayed"
-      href: how-device-property-pages-are-displayed.md
-    - name: "Types of Device Property Page Providers"
-      href: types-of-device-property-page-providers.md
-    - name: "General Requirements for Device Property Page Providers"
-      href: general-requirements-for-device-property-page-providers.md
-    - name: "Creating Custom Property Pages"
-      href: creating-custom-property-pages.md
-    - name: "Property Page Callback Function"
-      href: property-page-callback-function.md
-    - name: "Handling Windows Messages for Property Pages"
-      href: handling-windows-messages-for-property-pages.md
-    - name: "Sample Custom Property Page"
-      href: sample-custom-property-page.md
-    - name: "Specific Requirements for Device Property Page Providers (Co-Installers)"
-      href: specific-requirements-for-device-property-page-providers--class-instal.md
-    - name: "Specific Requirements for Device Property Page Providers (Property Page Extension DLLs)"
-      href: specific-requirements-for-device-property-page-providers--property-pag.md
-    - name: "Invoking a Device Properties Dialog Box"
-      href: invoking-a-device-properties-dialog-box.md
-    - name: "Invoking a Device Properties Dialog Box Programmatically in an Installation Application"
-      href: invoking-a-device-properties-dialog-box-programmatically-in-an-install.md
-    - name: "Invoking a Device Properties Dialog Box from a Command-line Prompt"
-      href: invoking-a-device-properties-dialog-box-from-a-command-line-prompt.md
-    - name: "DeviceProperties_RunDLL Function Prototype"
-      href: deviceproperties-rundll-function-prototype.md
-    - name: "Writing a Device Installation Application"
-      href: writing-a-device-installation-application.md
-    - name: "Guidelines for Writing Device Installation Applications"
-      href: guidelines-for-writing-device-installation-applications.md
-    - name: "Installing Device-Specific Applications"
-      href: installing-device-specific-applications.md
-    - name: "Device Installation Application Not Included in the Driver Package"
-      href: device-installation-application-not-included-in-the-driver-package.md
-    - name: "Device Installation Application that is Included in the Driver Package"
-      href: device-installation-application-that-is-included-in-the-driver-package.md
-    - name: "Device Installation Application Started through AutoRun"
-      href: device-installation-application-started-through-autorun.md
-    - name: "Guidelines for Starting Device Installation Applications through Co-installers"
-      href: guidelines-for-starting-device-installation-applications-through-co-in.md
+    - name: "Device Installations on 64-Bit Systems"
+      href: device-installations-on-64-bit-systems.md
+    - name: "Device Property Pages"
+      items:
+      - name: "Overview of Device Property Pages"
+        href: overview-of-device-property-pages.md
+      - name: "How Device Property Pages are Displayed"
+        href: how-device-property-pages-are-displayed.md
+      - name: "Types of Device Property Page Providers"
+        href: types-of-device-property-page-providers.md
+      - name: "General Requirements for Device Property Page Providers"
+        href: general-requirements-for-device-property-page-providers.md
+      - name: "Creating Custom Property Pages"
+        href: creating-custom-property-pages.md
+      - name: "Property Page Callback Function"
+        href: property-page-callback-function.md
+      - name: "Handling Windows Messages for Property Pages"
+        href: handling-windows-messages-for-property-pages.md
+      - name: "Sample Custom Property Page"
+        href: sample-custom-property-page.md
+      - name: "Specific Requirements for Device Property Page Providers (Property Page Extension DLLs)"
+        href: specific-requirements-for-device-property-page-providers--property-pag.md
+      - name: "Specific Requirements for Device Property Page Providers (Co-Installers)"
+        href: specific-requirements-for-device-property-page-providers--class-instal.md
+    - name: "Device Properties Dialog Box"
+      items:
+      - name: "Invoking a Device Properties Dialog Box"
+        href: invoking-a-device-properties-dialog-box.md
+      - name: "Invoking a Device Properties Dialog Box Programmatically in an Installation Application"
+        href: invoking-a-device-properties-dialog-box-programmatically-in-an-install.md
+      - name: "Invoking a Device Properties Dialog Box from a Command-line Prompt"
+        href: invoking-a-device-properties-dialog-box-from-a-command-line-prompt.md
+      - name: "DeviceProperties_RunDLL Function Prototype"
+        href: deviceproperties-rundll-function-prototype.md
+    - name: "Device Installation Applications"
+      items:
+      - name: "Writing a Device Installation Application"
+        href: writing-a-device-installation-application.md
+      - name: "Guidelines for Writing Device Installation Applications"
+        href: guidelines-for-writing-device-installation-applications.md
     - name: "Preloading Driver Packages"
       href: preloading-driver-packages.md
     - name: "Preinstalling Driver Packages"
@@ -524,7 +426,7 @@
       href: installing-an-in-box-driver-or-a-preinstalled-driver.md
     - name: "Software-First Installation"
       href: software-first-installation.md
-    - name: "Checking for In-Progress Installations"
+    - name: "How a Device Installation Application checks for in-progress device installations"
       href: checking-for-in-progress-installations.md
     - name: "Determining Whether a Device Is Plugged In"
       href: determining-whether-a-device-is-plugged-in.md
@@ -536,14 +438,12 @@
       href: using-device-manager-to-uninstall-devices-and-driver-packages.md
     - name: "Using SetupAPI to Uninstall Devices and Driver Packages"
       href: using-setupapi-to-uninstall-devices-and-driver-packages.md
-  - name: "Updating Driver Files"
-    href: updating-driver-files.md
-  - name: "Creating Secure Device Installations"
-    href: creating-secure-device-installations.md
-  - name: "Using a Component INF File"
-    href: using-a-component-inf-file.md
-  - name: "Pairing a driver with a Universal Windows Platform (UWP) app"
-    href: pairing-app-and-driver-versions.md
+    - name: "Updating Driver Files"
+      href: updating-driver-files.md
+    - name: "Creating Secure Device Installations"
+      href: creating-secure-device-installations.md
+    - name: "Pairing a driver with a Universal Windows Platform (UWP) app"
+      href: pairing-app-and-driver-versions.md
   - name: "Device Identification"
     items: 
       - name: "Device Identification Strings"
@@ -560,54 +460,58 @@
         href: instance-ids.md
       - name: "Device Instance ID"
         href: device-instance-ids.md
-      - name: "Container ID"
-        href: container-ids.md
-      - name: "Overview of Container IDs"
-        href: overview-of-container-ids.md
-      - name: "How Container IDs are Generated"
-        href: how-container-ids-are-generated.md
-      - name: "Container IDs Generated from a Bus-Specific Unique ID"
-        href: container-ids-generated-from-a-bus-specific-unique-id.md
-      - name: "How USB Devices are Assigned Container IDs"
-        href: how-usb-devices-are-assigned-container-ids.md
-      - name: "Using ACPI to Configure USB Ports on a Computer"
-        href: using-acpi-to-configure-usb-ports-on-a-computer.md
-      - name: "Best Practices for Supporting Container IDs on USB Devices"
-        href: best-practices-for-supporting-container-ids-on-usb-devices.md
-      - name: "Using Microsoft OS ContainerID Descriptors"
-        href: using-microsoft-os-containerid-descriptors.md
-      - name: "Using the USB Removable Capability for Device Container Grouping"
-        href: using-the-usb-removable-capability-for-device-container-grouping.md
-      - name: "Avoiding Device Container Conflicts"
-        href: avoiding-device-container-conflicts.md
-      - name: "Container IDs for Bluetooth Devices"
-        href: container-ids-for-bluetooth-devices.md
-      - name: "Container IDs for PnP-X Devices"
-        href: container-ids-for-pnp-x-devices.md
-      - name: "Container IDs for DPWS Devices"
-        href: container-ids-for-dpws-devices.md
-      - name: "Container IDs for UPnP Devices"
-        href: container-ids-for-upnp-devices.md
-      - name: "Container IDs for 1394 Devices"
-        href: container-ids-for-1394-devices.md
-      - name: "Container IDs for eSATA Devices"
-        href: container-ids-for-esata-devices.md
-      - name: "Container IDs for PCI Express Devices"
-        href: container-ids-for-pci-express-devices.md
-      - name: "Container IDs Generated from the Removable Device Capability"
-        href: container-ids-generated-from-the-removable-device-capability.md
-      - name: "Overview of the Removable Device Capability"
-        href: overview-of-the-removable-device-capability.md
-      - name: "How Container IDs are Generated from the Removable Device Capability"
-        href: how-container-ids-are-generated-from-the-removable-device-capability.md
-      - name: "Container IDs Generated from a Removable Device Capability Override"
-        href: container-ids-generated-from-a-removable-device-capability-override.md
-      - name: "Using ACPI for Device Container Grouping"
-        href: using-acpi-for-device-container-grouping.md
-      - name: "Verifying the Implementation of Container IDs"
-        href: verifying-the-implementation-of-container-ids.md
-      - name: "Troubleshooting the Implementation of Container IDs"
-        href: troubleshooting-the-implementation-of-container-ids.md
+      - name: "Container IDs"
+        items: 
+        - name: "Container ID"
+          href: container-ids.md
+        - name: "Overview of Container IDs"
+          href: overview-of-container-ids.md
+        - name: "How Container IDs are Generated"
+          href: how-container-ids-are-generated.md
+        - name: "Container IDs Generated from a Bus-Specific Unique ID"
+          href: container-ids-generated-from-a-bus-specific-unique-id.md
+        - name: "Container IDs for USB Devices"
+          items: 
+          - name: "How USB Devices are Assigned Container IDs"
+            href: how-usb-devices-are-assigned-container-ids.md
+          - name: "Using ACPI to Configure USB Ports on a Computer"
+            href: using-acpi-to-configure-usb-ports-on-a-computer.md
+          - name: "Best Practices for Supporting Container IDs on USB Devices"
+            href: best-practices-for-supporting-container-ids-on-usb-devices.md
+          - name: "Using Microsoft OS ContainerID Descriptors"
+            href: using-microsoft-os-containerid-descriptors.md
+          - name: "Using the USB Removable Capability for Device Container Grouping"
+            href: using-the-usb-removable-capability-for-device-container-grouping.md
+          - name: "Avoiding Device Container Conflicts"
+            href: avoiding-device-container-conflicts.md
+        - name: "Container IDs for Bluetooth Devices"
+          href: container-ids-for-bluetooth-devices.md
+        - name: "Container IDs for PnP-X Devices"
+          href: container-ids-for-pnp-x-devices.md
+        - name: "Container IDs for DPWS Devices"
+          href: container-ids-for-dpws-devices.md
+        - name: "Container IDs for UPnP Devices"
+          href: container-ids-for-upnp-devices.md
+        - name: "Container IDs for 1394 Devices"
+          href: container-ids-for-1394-devices.md
+        - name: "Container IDs for eSATA Devices"
+          href: container-ids-for-esata-devices.md
+        - name: "Container IDs for PCI Express Devices"
+          href: container-ids-for-pci-express-devices.md
+        - name: "Container IDs Generated from the Removable Device Capability"
+          href: container-ids-generated-from-the-removable-device-capability.md
+        - name: "Overview of the Removable Device Capability"
+          href: overview-of-the-removable-device-capability.md
+        - name: "How Container IDs are Generated from the Removable Device Capability"
+          href: how-container-ids-are-generated-from-the-removable-device-capability.md
+        - name: "Container IDs Generated from a Removable Device Capability Override"
+          href: container-ids-generated-from-a-removable-device-capability-override.md
+        - name: "Using ACPI for Device Container Grouping"
+          href: using-acpi-for-device-container-grouping.md
+        - name: "Verifying the Implementation of Container IDs"
+          href: verifying-the-implementation-of-container-ids.md
+        - name: "Troubleshooting the Implementation of Container IDs"
+          href: troubleshooting-the-implementation-of-container-ids.md
       - name: "Generic Identifiers"
         href: generic-identifiers.md
       - name: "Identifiers for PCI Devices"
@@ -634,24 +538,28 @@
         href: identifiers-generated-by-usbprint-sys.md
   - name: "Device Classes"
     items: 
-      - name: "Overview of Device Setup Classes"
-        href: overview-of-device-setup-classes.md
-      - name: "Creating a New Device Setup Class"
-        href: creating-a-new-device-setup-class.md
-      - name: "Overview of Device Interface Classes"
-        href: overview-of-device-interface-classes.md
-      - name: "Registering a Device Interface Class"
-        href: registering-a-device-interface-class.md
-      - name: "Enabling and Disabling a Device Interface Instance"
-        href: enabling-and-disabling-a-device-interface-instance.md
-      - name: "Using a Device Interface"
-        href: using-a-device-interface.md
-      - name: "Registering for Notification of Device Interface Arrival and Device Removal"
-        href: registering-for-notification-of-device-interface-arrival-and-device-removal.md
       - name: "Setup Classes Versus Interface Classes"
         href: setup-classes-versus-interface-classes.md
       - name: "Device Information Sets"
         href: device-information-sets.md
+      - name: "Device Setup Classes"
+        items: 
+        - name: "Overview of Device Setup Classes"
+          href: overview-of-device-setup-classes.md
+        - name: "Creating a New Device Setup Class"
+          href: creating-a-new-device-setup-class.md
+      - name: "Device Interface Classes"
+        items: 
+        - name: "Overview of Device Interface Classes"
+          href: overview-of-device-interface-classes.md
+        - name: "Registering a Device Interface Class"
+          href: registering-a-device-interface-class.md
+        - name: "Enabling and Disabling a Device Interface Instance"
+          href: enabling-and-disabling-a-device-interface-instance.md
+        - name: "Using a Device Interface"
+          href: using-a-device-interface.md
+        - name: "Registering for Notification of Device Interface Arrival and Device Removal"
+          href: registering-for-notification-of-device-interface-arrival-and-device-removal.md
   - name: "Device Properties"
     items: 
     - name: "Overview of Device Properties"
@@ -674,34 +582,16 @@
         href: properties-and-related-system-defined-items.md
       - name: "INF File Entry Values That Modify Device Properties"
         href: inf-file-entry-values-that-modify-device-properties--windows-vista-and.md
-      - name: "SetupAPI"
+      - name: "Accessing Properties"
         items: 
-        - name: "Using SetupAPI to Access Device Properties"
-          href: using-setupapi-to-access-device-properties--windows-vista-and-later-.md
+        - name: "Accessing Properties"
+          href: accessing-properties.md
         - name: "Accessing Device Instance Properties"
           href: accessing-device-instance-properties--windows-vista-and-later-.md
-        - name: "Determining Which Properties Are Set for a Device Instance"
-          href: determining-which-properties-are-set-for-a-device-instance.md
-        - name: "Retrieving A Device Instance Property Value"
-          href: retrieving-a-device-instance-property-value.md
-        - name: "Setting a Device Instance Property Value"
-          href: setting-a-device-instance-property-value.md
         - name: "Accessing Device Class Properties"
           href: accessing-device-class-properties--windows-vista-and-later-.md
-        - name: "Determining Which Properties Are Set for a Device Class"
-          href: determining-which-properties-are-set-for-a-device-class.md
-        - name: "Retrieving a Device Class Property Value"
-          href: retrieving-a-device-class-property-value.md
-        - name: "Setting a Device Class Property Value"
-          href: setting-a-device-class-property-value.md
         - name: "Accessing Device Interface Properties"
           href: accessing-device-interface-properties--windows-vista-and-later-.md
-        - name: "Determining Which Properties are Set for a Device Interface"
-          href: determining-which-properties-are-set-for-a-device-interface.md
-        - name: "Retrieving a Device Interface Property Value"
-          href: retrieving-a-device-interface-property-value.md
-        - name: "Setting a Device Interface Property Value"
-          href: setting-a-device-interface-property-value.md
         - name: "Using the INF AddProperty Directive and the INF DelProperty Directive"
           href: using-the-inf-addproperty-directive-and-the-inf-delproperty-directive.md
     - name: "Device Property Model (Windows Server 2003, Windows XP, and Windows 2000)"
@@ -712,7 +602,7 @@
         href: inf-file-entry-values-that-modify-device-properties.md
       - name: "Using SetupAPI and Configuration Manager to Access Device Properties"
         href: using-setupapi-and-configuration-manager-to-access-device-properties.md
-      - name: "Accessing Device Instance SPDRP_Xxx Properties"
+      - name: "Accessing Device Instance Properties"
         href: accessing-device-instance-spdrp-xxx-properties.md
       - name: "Retrieving a Device Instance Identifier"
         href: retrieving-a-device-instance-identifier.md
@@ -724,23 +614,15 @@
         href: retrieving-device-relations.md
       - name: "Accessing Device Setup Class Properties"
         href: accessing-device-setup-class-properties.md
-      - name: "Retrieving SPCRP_Xxx Properties"
-        href: retrieving-spcrp-xxx-properties.md
-      - name: "Setting SPCRP_Xxx Properties"
-        href: setting-spcrp-xxx-properties.md
       - name: "Accessing the Friendly Name and Class Name of a Device Setup Class"
         href: accessing-the-friendly-name-and-class-name-of-a-device-setup-class.md
       - name: "Accessing Icon Properties of a Device Setup Class"
         href: accessing-icon-properties-of-a-device-setup-class.md
-      - name: "Accessing Registry Entry Values Under the Class Registry Key"
-        href: accessing-registry-entry-values-under-the-class-registry-key.md
-      - name: "Accessing the Co-installers Registry Entry Value of a Device Setup Class"
-        href: accessing-the-co-installers-registry-entry-value-of-a-device-setup-cla.md
       - name: "Accessing Device Interface Class Properties"
         href: accessing-device-interface-class-properties.md
       - name: "Accessing Device Interface Properties"
         href: accessing-device-interface-properties.md
-      - name: "Accessing Custom Device Properties"
+      - name: "Accessing Custom Settings"
         href: accessing-custom-device-properties.md
   - name: "System Restarts"
     items: 
@@ -750,8 +632,6 @@
       href: avoiding-system-restarts-during-device-installations.md
     - name: "Initiating System Restarts During Device Installations"
       href: initiating-system-restarts-during-device-installations.md
-    - name: "Device Installations on 64-Bit Systems"
-      href: device-installations-on-64-bit-systems.md
   - name: "Registry"
     items:
     - name: "Registry Trees and Keys"
@@ -768,20 +648,98 @@
       href: hklm-system-currentcontrolset-hardwareprofiles-registry-tree.md
     - name: "RunOnce Registry Key"
       href: runonce-registry-key.md
-    - name: "DeviceOverrides Registry Key"
-      href: deviceoverrides-registry-key.md
-    - name: "HardwareID Registry Subkey"
-      href: hardwareid-registry-subkey.md
-    - name: "CompatibleID Registry Subkey"
-      href: compatibleid-registry-subkey.md
-    - name: "LocationPaths Registry Subkey"
-      href: locationpaths-registry-subkey.md
-    - name: "ChildLocationPaths Registry Subkey"
-      href: childlocationpaths-registry-subkey.md
-    - name: "LocationPath Registry Subkey"
-      href: locationpath-registry-subkey.md
-    - name: "* Registry Subkey"
-      href: --registry-subkey.md
+    - name: "DeviceOverrides"
+      items:
+      - name: "DeviceOverrides Registry Key"
+        href: deviceoverrides-registry-key.md
+      - name: "HardwareID Registry Subkey"
+        href: hardwareid-registry-subkey.md
+      - name: "CompatibleID Registry Subkey"
+        href: compatibleid-registry-subkey.md
+      - name: "LocationPaths Registry Subkey"
+        href: locationpaths-registry-subkey.md
+      - name: "ChildLocationPaths Registry Subkey"
+        href: childlocationpaths-registry-subkey.md
+      - name: "LocationPath Registry Subkey"
+        href: locationpath-registry-subkey.md
+      - name: "* Registry Subkey"
+        href: --registry-subkey.md
+  - name: "Deprecated Functionality"
+    items:
+    - name: "General Setup Operations"
+      items:
+      - name: "Using General Setup Functions"
+        href: using-general-setup-functions.md
+      - name: "Disk Prompting and Error Handling Functions"
+        href: disk-prompting-and-error-handling-functions.md
+      - name: "File Queuing Functions"
+        href: file-queuing-functions.md
+      - name: "Default Queue Callback Routine Functions"
+        href: default-queue-callback-routine-functions.md
+      - name: "Cabinet File Function"
+        href: cabinet-file-function.md
+      - name: "Disk-Space List Functions"
+        href: disk-space-list-functions.md
+      - name: "MRU Source List Functions"
+        href: mru-source-list-functions.md
+      - name: "File Log Functions"
+        href: file-log-functions.md
+    - name: "Class and Co Installers"
+      items:
+      - name: "Device and Driver Installation Software Components"
+        href: device-and-driver-installation-software-components.md
+      - name: "Writing a Co-installer"
+        href: writing-a-co-installer.md
+      - name: "Co-installer Operation"
+        href: co-installer-operation.md
+      - name: "Co-installer Interface"
+        href: co-installer-interface.md
+      - name: "Co-installer Functionality"
+        href: co-installer-functionality.md
+      - name: "Handling DIF Codes"
+        href: handling-dif-codes.md
+      - name: "Registering a Co-installer"
+        href: registering-a-co-installer.md
+      - name: "Registering a Device-Specific Co-installer"
+        href: registering-a-device-specific-co-installer.md
+      - name: "Registering a Class Co-installer"
+        href: registering-a-class-co-installer.md
+      - name: "Calling the Default DIF Code Handlers"
+        href: calling-the-default-dif-code-handlers.md
+      - name: "Accessing the Co-installers Registry Entry Value of a Device Setup Class"
+        href: accessing-the-co-installers-registry-entry-value-of-a-device-setup-cla.md
+    - name: "Finish Install Actions"
+      items:
+      - name: "Finish-Install Actions"
+        href: finish-install-actions--windows-vista-and-later-.md
+      - name: "Overview of Finish-Install Actions"
+        href: overview-of-finish-install-actions.md
+      - name: "How Finish-Install Actions are Processed"
+        href: how-finish-install-actions-are-processed.md
+      - name: "Marking a Device as having a Finish Install Action to Perform"
+        href: setting-the-configflag-finishinstall-action-device-configuration-flag.md
+      - name: "Running Finish-Install Actions"
+        href: running-finish-install-actions.md
+      - name: "Running the Default Finish-Install Action"
+        href: running-the-default-finish-install-action.md
+      - name: "Implementing Finish-Install Actions"
+        href: implementing-finish-install-actions.md
+      - name: "Guidelines for Implementing Finish-Install Actions"
+        href: guidelines-for-implementing-finish-install-actions.md
+      - name: "Code Example: Finish-Install Actions in a Class Installer"
+        href: code-example--finish-install-actions-in-a-class-installer.md
+      - name: "Code Example: Finish-Install Actions in a Co-installer"
+        href: code-example--finish-install-actions-in-a-co-installer.md
+      - name: "Device Installation Application Not Included in the Driver Package"
+        href: device-installation-application-not-included-in-the-driver-package.md
+      - name: "Device Installation Application that is Included in the Driver Package"
+        href: device-installation-application-that-is-included-in-the-driver-package.md
+      - name: "Guidelines for Starting Device Installation Applications through Co-installers"
+        href: guidelines-for-starting-device-installation-applications-through-co-in.md
+    - name: "DIFx Guidelines"
+      href: difx-guidelines.md
+    - name: "Device Installation Application Started through AutoRun"
+      href: device-installation-application-started-through-autorun.md
 - name: "INF Sections"
   items: 
   - name: "INF ClassInstall32 Section"
@@ -800,6 +758,8 @@
     href: inf-ddinstall-events-section.md
   - name: "INF DDInstall.FactDef Section"
     href: inf-ddinstall-factdef-section.md
+  - name: "INF DDInstall.Filters Section"
+    href: inf-ddinstall-filters-section.md
   - name: "INF DDInstall.HW Section"
     href: inf-ddinstall-hw-section.md
   - name: "INF DDInstall.Interfaces Section"
@@ -836,10 +796,14 @@
     href: inf-version-section.md
 - name: "INF Directives"
   items: 
+  - name: "INF AddAutoLogger and UpdateAutoLogger Directives"
+    href: inf-addupdateautologger-directive.md
   - name: "INF AddComponent Directive"
     href: inf-addcomponent-directive.md
   - name: "INF AddEventProvider Directive"
     href: inf-addeventprovider-directive.md
+  - name: "INF AddFilter Directive"
+    href: inf-addfilter-directive.md
   - name: "INF AddInterface Directive"
     href: inf-addinterface-directive.md
   - name: "INF AddPowerSetting Directive"
@@ -916,10 +880,6 @@
     href: enumerating-installed-device-interface-classes.md
   - name: "Accessing the Properties of Installed Device Interfaces"
     href: accessing-the-properties-of-installed-device-interface-classes.md
-  - name: "Modifying Registry Keys by Class Installers and Co-installers"
-    href: modifying-registry-keys-by-class-installers-and-co-installers.md
-  - name: "Modifying Registry Values by Class Installers and Co-installers"
-    href: modifying-registry-values-by-class-installers-and-co-installers.md
   - name: "Deleting the Registry Keys of a Device"
     href: deleting-the-registry-keys-of-a-device.md
   - name: "Calling SetupAPI Functions"
@@ -944,8 +904,6 @@
     href: installing-a-new-bus-driver.md
   - name: "Using Custom Hardware IDs and Compatible IDs"
     href: using-custom-hardware-ids-and-compatible-ids.md
-  - name: "Installing a New Device Setup Class for a Bus"
-    href: installing-a-new-device-setup-class-for-a-bus.md
   - name: "Installing Private Builds of In-box Drivers"
     href: installing-private-builds-of-in-box-drivers--windows-vista-and-later-.md
   - name: "Overview of Installing Private Builds of In-box Drivers"

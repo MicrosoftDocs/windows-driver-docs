@@ -2,7 +2,6 @@
 title: Device Fundamentals Tests
 description: Descriptions of device fundamental tests.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Fundamentals Tests

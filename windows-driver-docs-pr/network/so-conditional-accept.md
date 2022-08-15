@@ -4,7 +4,6 @@ description: SO_CONDITIONAL_ACCEPT
 ms.date: 08/08/2017
 keywords: 
  -SO_CONDITIONAL_ACCEPT Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SO\_CONDITIONAL\_ACCEPT
@@ -127,8 +126,7 @@ Some transport protocols might not support conditional accept mode on listening 
 
 For more information about conditionally accepting incoming connections, see [Listening for and Accepting Incoming Connections](./listening-for-and-accepting-incoming-connections.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

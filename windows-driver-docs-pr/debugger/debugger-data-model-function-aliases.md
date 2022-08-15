@@ -3,7 +3,6 @@ title: Debugger Data Model Function Aliases
 description: Function aliases are a quick unique short name by which a user of the debugger can access functionality defined in a debugger extension.
 keywords: ["Debugger Data Model Function Aliases"]
 ms.date: 03/21/2017
-ms.localizationpriority: medium
 ---
 
 # Debugger Data Model Function Aliases
@@ -170,7 +169,7 @@ As with other dx commands, you can right click on a command after it was execute
 0: kd> dx -g @$devices().OrderBy(obj => obj.@"InstancePath")
 ```
 
-![debugger objects function alias grid output showing sorted rows](images/debugger-objects-function-alias.png) 
+![debugger objects function alias grid output showing sorted rows.](images/debugger-objects-function-alias.png) 
 
 
 

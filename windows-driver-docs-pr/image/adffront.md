@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ADFFront element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **ADFFront** element describes the capabilities of the front side of the automatic document feeder (ADF) that is attached to the scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ADFFront>
@@ -26,8 +24,7 @@ Usage
 </wscn:ADFFront>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -81,8 +78,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 If the scanner has an ADF the WSD Scan Service must provide details for it in the **ADFFront** element, regardless of the ADF's duplexing capabilities.
 

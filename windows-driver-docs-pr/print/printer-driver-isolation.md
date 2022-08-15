@@ -1,8 +1,8 @@
 ---
 title: Printer Driver Isolation
 description: Printer driver isolation improves the reliability of the Windows print service, by enabling printer drivers to run in processes that are separate from the process in which the print spooler runs.
-ms.date: 06/12/2020
-ms.localizationpriority: medium
+ms.date: 12/16/2021
+ms.custom: contperf-fy22q2
 ---
 
 # Printer Driver Isolation
@@ -11,11 +11,9 @@ Printer driver isolation improves the reliability of the Windows print service, 
 
 Support for printer driver isolation is implemented in Windows 7, Windows Server 2008 R2 and later operating systems.
 
-For Windows 7 and Windows Server 2008 R2, an inbox printer driver must support printer driver isolation and be able to run in an isolated process.
+Starting with Windows 7 and Windows Server 2008 R2, an inbox printer driver must support printer driver isolation and be able to run in an isolated process.
 
-## Previous versions of Windows
-
-In previous versions of Windows, including Windows Server 2008, printer drivers always ran in the same process as the spooler. Printer driver components that ran in the spooler process included the following:
+In previous versions of Windows, printer drivers always ran in the same process as the spooler. Printer driver components that ran in the spooler process included the following:
 
 - Print driver configuration modules
 
@@ -25,9 +23,7 @@ In previous versions of Windows, including Windows Server 2008, printer drivers 
 
 The failure of a single print driver component could cause the print subsystem to fail, halting print operations for all users and for all print components.
 
-## New versions of Windows
-
-With Windows 7 and Windows Server 2008 R2, an administrator can, as an option, configure a printer driver to run in an isolated process--a process that is separate from the spooler process. By isolating the driver, the administrator can prevent a fault in a driver component from halting the print service.
+Starting with Windows 7 and Windows Server 2008 R2, an administrator can, as an option, configure a printer driver to run in an isolated process--a process that is separate from the spooler process. By isolating the driver, the administrator can prevent a fault in a driver component from halting the print service.
 
 For more information about the spooler functions, see [Spooler Component Functions and Structures](/windows-hardware/drivers/ddi/_print/index).
 
@@ -46,11 +42,12 @@ The following table shows the spooler functions that an administrator can use to
 | [GetPrinterDataEx](/windows/win32/printdocs/getprinterdataex) | Get the driver-isolation settings for a printer. |
 | [SetPrinterDataEx](/windows/win32/printdocs/setprinterdataex) | Set the driver-isolation settings for a printer. |
 | [EnumPrinterDataEx](/windows/win32/printdocs/enumprinterdataex) | Enumerate driver-isolation settings for a printer. |
-| [FindFirstPrinterChangeNotification](/windows/win32/printdocs/findfirstprinterchangenotification)<br><br>[FindNextPrinterChangeNotification](/windows/win32/printdocs/findnextprinterchangenotification) | Request notifications of changes to the driver-isolation settings for a printer. |
+| [FindFirstPrinterChangeNotification](/windows/win32/printdocs/findfirstprinterchangenotification), [FindNextPrinterChangeNotification](/windows/win32/printdocs/findnextprinterchangenotification) | Request notifications of changes to the driver-isolation settings for a printer. |
 
 The format for the data is as follows:
 
 - Driver in each group is separated by '\\'
+
 - Each driver group is separated by '\\\\'
 
 The first group loads the driver into the spooler processes. Each subsequent group loads the drivers in isolated processes per group. The second group is considered the 'shared' group in which other isolation-capable drivers are loaded by default.
@@ -73,7 +70,7 @@ If driver isolation is disabled by group policy, the isolation is off for all pr
 
 The following chart shows a decision map for choosing the driver isolation mode:
 
-![flowchart for choosing the driver isolation mode](images/isolation.png)
+![flowchart for choosing the driver isolation mode.](images/isolation.png)
 
 ## Spooler functions allowed under driver isolation
 
@@ -83,98 +80,102 @@ Only specific functions are allowed under driver isolation.
 
 The following functions are exported by spoolss.dll and are available to spooler plugins by linking to spoolss.lib.
 
-- **AddMonitorW**
+- [**AddMonitorW**](/windows/win32/printdocs/addmonitor)
 
-- **AppendPrinterNotifyInfoData**
+- [**AppendPrinterNotifyInfoData**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-appendprinternotifyinfodata)
 
-- **ClosePrinter**
+- [**ClosePrinter**](/windows/win32/printdocs/closeprinter)
 
-- **DeletePortW**
+- [**DeletePortW**](/windows/win32/printdocs/deleteport)
 
-- **DeletePrintProcessorW**
+- [**DeletePrintProcessorW**](/windows/win32/printdocs/deleteprintprocessor)
 
-- **EndDocPrinter**
+- [**EndDocPrinter**](/windows/win32/printdocs/enddocprinter)
 
-- **EndPagePrinter**
+- [**EndPagePrinter**](/windows/win32/printdocs/enddocprinter)
 
-- **EnumFormsW**
+- [**EnumFormsW**](/windows/win32/printdocs/enumforms)
 
-- **EnumJobsW**
+- [**EnumJobsW**](/windows/win32/printdocs/enumjobs)
 
-- **FlushPrinter**
+- [**FlushPrinter**](/windows/win32/printdocs/flushprinter)
 
-- **GetJobAttributes**
+- [**GetJobAttributes**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-getjobattributes)
 
-- **GetJobAttributesEx**
+- [**GetJobAttributesEx**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-getjobattributesex)
 
-- **GetJobW**
+- [**GetJobW**](/windows/win32/printdocs/getjob)
 
-- **GetPrinterDataExW**
+- [**GetPrinterDataExW**](/windows/win32/printdocs/getprinterdataex)
 
-- **GetPrinterDataW**
+- [**GetPrinterDataW**](/windows/win32/printdocs/getprinterdata)
 
-- **GetPrinterDriverDirectoryW**
+- [**GetPrinterDriverDirectoryW**](/windows/win32/printdocs/getprinterdriverdirectory)
 
-- **GetPrinterDriverW**
+- [**GetPrinterDriverW**](/windows/win32/printdocs/getprinterdriver)
 
-- **GetPrinterW**
+- [**GetPrinterW**](/windows/win32/printdocs/getprinter)
 
-- **ImpersonatePrinterClient**
+- [**ImpersonatePrinterClient**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-impersonateprinterclient)
 
-- **OpenPrinterW**
+- [**OpenPrinterW**](/windows/win32/printdocs/openprinter)
 
-- **ReadPrinter**
+- [**ReadPrinter**](/windows/win32/printdocs/readprinter)
 
-- **RouterCreatePrintAsyncNotificationChannel**
+- [**RouterCreatePrintAsyncNotificationChannel**](/windows-hardware/drivers/ddi/prnasntp/nf-prnasntp-routercreateprintasyncnotificationchannel)
 
-- **RouterGetPrintClassObject**
+- [**RouterGetPrintClassObject**](/windows-hardware/drivers/ddi/prnasntp/nf-prnasntp-routergetprintclassobject)
 
-- **SetJobW**
+- [**SetJobW**](/windows/win32/printdocs/setjob)
 
-- **SetPrinterDataExW**
+- [**SetPrinterDataExW**](/windows/win32/printdocs/setprinterdataex)
 
-- **SetPrinterDataW**
+- [**SetPrinterDataW**](/windows/win32/printdocs/setprinterdata)
 
-- **StartDocPrinterW**
+- [**StartDocPrinterW**](/windows/win32/printdocs/startdocprinter)
 
-- **StartPagePrinter**
+- [**StartPagePrinter**](/windows/win32/printdocs/startpageprinter)
 
-- **WritePrinter**
+- [**WritePrinter**](/windows/win32/printdocs/writeprinter)
 
 ## WinSpool.drv Functions
 
 The following functions are exported by winspool.drv and are available to spooler plugins by linking to Winspool.h.
 
-- **AppendPrinterNotifyInfoData**
+- [**AppendPrinterNotifyInfoData**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-appendprinternotifyinfodata)
 
-- **ExtDeviceMode**
+- [**ExtDeviceMode**](/windows-hardware/drivers/ddi/winspool/nf-winspool-extdevicemode)
 
-- **ImpersonatePrinterClient**
+- [**ImpersonatePrinterClient**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-impersonateprinterclient)
 
-- **IsValidDevmode**
+- [**IsValidDevmode**](/windows/win32/printdocs/isvaliddevmode)
 
-- **PartialReplyPrinterChangeNotification**
+- [**PartialReplyPrinterChangeNotification**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-partialreplyprinterchangenotification)
 
-- **ReplyPrinterChangeNotification**
+- [**ReplyPrinterChangeNotification**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-replyprinterchangenotification)
 
-- **RevertToPrinterSelf**
+- [**RevertToPrinterSelf**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-reverttoprinterself)
 
-- **RouterAllocBidiMem**
+- [**RouterAllocBidiMem**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-routerallocbidimem)
 
-- **RouterAllocBidiResponseContainer**
+- [**RouterAllocBidiResponseContainer**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-routerallocbidiresponsecontainer)
 
-- **RouterAllocPrinterNotifyInfo**
+- [**RouterAllocPrinterNotifyInfo**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-routerallocprinternotifyinfo)
 
-- **RouterCreatePrintAsyncNotificationChannel**
+- [**RouterCreatePrintAsyncNotificationChannel**](/windows-hardware/drivers/ddi/prnasntp/nf-prnasntp-routercreateprintasyncnotificationchannel)
 
-- **RouterFreeBidiMem**
+- [**RouterFreeBidiMem**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-routerfreebidimem)
 
-- **RouterFreeBidiResponseContainer**
+- [**RouterFreeBidiResponseContainer**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-routerfreebidiresponsecontainer)
 
-- **RouterFreePrinterNotifyInfo**
+- [**RouterFreePrinterNotifyInfo**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-routerfreeprinternotifyinfo)
 
-- **RouterGetPrintClassObject**
+- [**RouterGetPrintClassObject**](/windows-hardware/drivers/ddi/prnasntp/nf-prnasntp-routergetprintclassobject)
 
-- **RouterRegisterForPrintAsyncNotifications**
+- [**RouterRegisterForPrintAsyncNotifications**](/windows-hardware/drivers/ddi/prnasntp/nf-prnasntp-routerregisterforprintasyncnotifications)
 
-- **RouterUnregisterForPrintAsyncNotifications**
+- [**RouterUnregisterForPrintAsyncNotifications**](/windows-hardware/drivers/ddi/prnasntp/nf-prnasntp-routerunregisterforprintasyncnotifications)
+
+## See also
+
+[Spooler Component Functions and Structures](/windows-hardware/drivers/ddi/_print/index)

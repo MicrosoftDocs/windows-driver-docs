@@ -2,7 +2,6 @@
 title: Device transform manager events
 description: This section contains information about the Device Transform Manager events.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Device transform manager events

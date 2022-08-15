@@ -9,13 +9,14 @@ api_name:
 - Bug Check 0x14B SOC_SUBSYSTEM_FAILURE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x15D: SOC\_SUBSYSTEM\_FAILURE\_LIVEDUMP
 
 
 The SOC\_SUBSYSTEM\_FAILURE\_LIVEDUMP bug code has a value of 0x0000015D. This indicates that a System on a Chip (SoC) subsystem has experienced a critical fault and has captured a live kernel dump. The SoC subsystem does not generate a bug check in this situation.
+
+(This code can never be used for a real bug check; it is used to identify live dumps.)
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
@@ -57,8 +58,7 @@ The SOC\_SUBSYSTEM\_FAILURE\_LIVEDUMP bug code has a value of 0x0000015D. This i
 
  
 
-Resolution
-----------
+## Resolution
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
@@ -93,8 +93,7 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

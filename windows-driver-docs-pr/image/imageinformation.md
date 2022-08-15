@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ImageInformation element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **ImageInformation** element contains information about the resulting image data from a scan made with a [**ScanTicket**](scanticket.md) element that is currently being validated.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ImageInformation>
@@ -26,8 +24,7 @@ Usage
 </wscn:ImageInformation>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -75,8 +72,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service returns the **ImageInformation** element through the [**CreateScanJobResponse**](createscanjobresponse.md) operation element. Scan applications can use the data that is specified within **ImageInformation** to decode the image within an image file.
 

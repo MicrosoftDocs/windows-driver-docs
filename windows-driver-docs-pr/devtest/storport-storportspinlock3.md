@@ -9,7 +9,6 @@ api_name:
 - StorPortSpinLock3
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortSpinLock3 rule (storport)
@@ -21,8 +20,7 @@ Storport miniport drivers must ensure that they do not attempt to acquire a lock
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,7 +45,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**StorPortAcquireSpinLock**](/windows-hardware/drivers/ddi/storport/nf-storport-storportacquirespinlock)

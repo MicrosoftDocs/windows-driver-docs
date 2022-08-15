@@ -6,7 +6,6 @@ keywords:
 - PROPSETID_TIMECODE_READER
 - tape timecode properties WDK video capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Timecode Properties

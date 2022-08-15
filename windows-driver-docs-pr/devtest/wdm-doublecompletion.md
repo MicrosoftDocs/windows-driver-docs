@@ -9,7 +9,6 @@ api_name:
 - DoubleCompletion
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DoubleCompletion rule (wdm)
@@ -19,8 +18,7 @@ The **DoubleCompletion (WDM)** rule specifies that the driver must not call the 
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)
 [**RemoveHeadList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-removeheadlist)

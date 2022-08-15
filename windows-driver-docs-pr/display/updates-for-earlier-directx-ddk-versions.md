@@ -2,7 +2,6 @@
 title: Updates for Earlier DirectX DDK Versions
 description: Updates for Earlier DirectX DDK Versions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Updates for Earlier DirectX DDK Versions

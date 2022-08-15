@@ -3,7 +3,6 @@ title: Overview of NDIS Debugging
 description: Overview of NDIS Debugging
 keywords: ["NDIS debugging, overview"]
 ms.date: 05/14/2020
-ms.localizationpriority: medium
 ---
 
 # Overview of NDIS Debugging
@@ -12,7 +11,7 @@ The two primary tools for debugging a network driver are debug tracing and the N
 
 Use the [ndiskd.netreport](-ndiskd-netreport.md) command to generate a visual report showing the current adapters and protocols.
 
-![ndiskd.netreport color coded output showing two columns that illustrate multiple adapters](images/ndis-report.png)
+![ndiskd.netreport color coded output showing two columns that illustrate multiple adapters.](images/ndis-report.png)
 
 Then the [ndiskd.netadapter](-ndiskd-netadapter.md) kernel debugger command is a good place to start to investigate the current set of the drivers.
 
@@ -31,7 +30,7 @@ Another useful tool for testing an NDIS driver is NDIS Verifier. For more inform
 
 ## NDIS Debugging Resources
 
-Episode 175 of the Defrag Tools show covers NDIS debugging - [Defrag Tools #175 - Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack).
+Episode 175 of the Defrag Tools show covers NDIS debugging - [Defrag Tools #175 - Debugging the Network Stack](/shows/defrag-tools/175-debugging-network-stack).
 
 The NDIS team blog archives are available at [The NDIS blog](/archive/blogs/ndis/).
 

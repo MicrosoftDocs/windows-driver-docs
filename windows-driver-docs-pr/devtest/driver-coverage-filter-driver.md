@@ -4,7 +4,6 @@ description: Driver Coverage Filter Driver
 keywords:
 - Driver Coverage Toolkit WDK , filter driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver Coverage Filter Driver
@@ -24,11 +23,11 @@ This option installs the Driver Coverage filter driver as a lower filter to the 
 
 The following figure shows a driver stack and IRP monitoring window for a device where the Driver Coverage filter driver is installed as an upper filter. In this configuration, the filter driver tracks all IRPs that enter or leave the driver for the specified device.
 
-![diagram illustrating a driver coverage filter driver installed as an upper filter](images/coverage-1.png)
+![diagram illustrating a driver coverage filter driver installed as an upper filter.](images/coverage-1.png)
 
 The following figure shows a driver stack and IRP monitoring window for a device where the Driver Coverage filter driver is installed as a lower filter. In this configuration, the filter driver tracks all IRPs that enter or leave the device driver for the specified device's driver stack.
 
-![diagram illustrating a driver coverage filter driver installed as a lower filter](images/coverage-2.png)
+![diagram illustrating a driver coverage filter driver installed as a lower filter.](images/coverage-2.png)
 
 .
 

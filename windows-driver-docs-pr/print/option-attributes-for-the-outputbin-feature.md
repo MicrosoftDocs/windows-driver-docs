@@ -4,7 +4,6 @@ description: Option Attributes for the OutputBin Feature
 keywords:
 - OutputBin Feature
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Option Attributes for the OutputBin Feature

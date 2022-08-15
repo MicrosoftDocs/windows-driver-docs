@@ -4,7 +4,6 @@ description: This topic describes the Windows account management experience with
 keywords:
 - Windows Mobile Plans account management, Mobile Plans mobile operators
 ms.date: 03/15/2019
-ms.localizationpriority: medium
 ---
 
 # Mobile Operator account management in Windows 10
@@ -208,9 +207,14 @@ X-MS-DM-TransactionId: “12345”
 
 ### Authentication
 
-Communication between the Mobile Plans service and the Mobile Operator API must be authenticated using the Mutual Transport Layer Security (MTLS). Microsoft provides a certificate for you to use to validate the identity of the requester to **moBaseUrl**.
+Communication between the Mobile Plans service and the Mobile Operator API is performed via certificate based client authentication.
 
-Microsoft provides the certificate during the onboarding process.
+A certificate with the following Subject Name will be passed during the call to the Mobile Operator API:
+```
+C=US, ST=WA, L=Redmond, O=Microsoft Corporation, CN=partners.datamart.windows.com
+```
+
+We recommend that all Mobile Operators validate that the Subject Name of the certificate matches the one above.
 
 ### How to enable Get Balance in Windows COSA
 

@@ -4,10 +4,11 @@ description: WDI_TLV_P2P_DEVICE_NAME is a TLV that contains a device name.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_DEVICE_NAME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_DEVICE\_NAME
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_DEVICE\_NAME is a TLV that contains a device name.
@@ -31,8 +32,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

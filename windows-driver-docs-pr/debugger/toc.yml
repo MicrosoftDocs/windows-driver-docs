@@ -44,6 +44,10 @@
         href: setting-up-a-null-modem-cable-connection.md
       - name: "Setting Up 2PF Kernel-Mode Debugging using KDNET"
         href: setting-up-kernel-mode-debugging-using-2pf.md
+      - name: "Setting Up QEMU Kernel-Mode Debugging using EXDI"
+        href: setting-up-qemu-kernel-mode-debugging-using-exdi.md
+      - name: "Configuring the EXDI Debugger Transport"
+        href: configuring-the-exdi-debugger-transport.md
       - name: "Setting Up Kernel-Mode Debugging over USB EEM on an ARM device using KDNET"
         href: setting-up-kernel-mode-debugging-over-usb-eem-arm-kdnet.md
       - name: "Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually"
@@ -54,9 +58,13 @@
         href: setting-up-a-1394-cable-connection.md
     - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10"
       href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md
+    - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 11"
+      href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-11.md
     - name: "Supported Ethernet NICs for Network Kernel Debugging in Previous Versions of Windows"
 # Auto-expanded node
       items: 
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 2004"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-2004.md
       - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1909"
         href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1909.md
       - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1903"
@@ -118,6 +126,8 @@
     href: windbg-scripting-preview.md
   - name: "WinDbg Preview – Notes, Command, Memory and Source menus"
     href: windbg-notes-etc-preview.md
+  - name: "WinDbg Preview - Restricted Mode"
+    href: windbg-restricted-mode-preview.md
   - name: "WinDbg Preview Basics"
 # Auto-expanded node
     items: 
@@ -488,17 +498,11 @@
           href: the-srctool-utility.md
         - name: "The PDBStr Tool"
           href: the-pdbstr-tool.md
-        - name: "The VSSDump Tool"
-          href: the-vssdump-tool.md
       - name: "Source Control Systems"
 # Auto-expanded node
         items: 
         - name: "Source Control Systems"
           href: source-control-systems.md
-        - name: "Using Visual SourceSafe"
-          href: using-visual-sourcesafe.md
-        - name: "Debugging with Visual SourceSafe"
-          href: debugging-with-visual-sourcesafe.md
         - name: "Using CVS"
           href: using-cvs.md
         - name: "Using Other Source Control Systems"
@@ -514,6 +518,8 @@
             href: language-specification-1.md
           - name: "Language Specification 2"
             href: language-specification-2.md
+          - name: "Language Specification 3"
+            href: language-specification-3.md
       - name: "HTTP Sites and UNC Shares"
 # Auto-expanded node
         items: 
@@ -585,16 +591,16 @@
         href: x64-instructions.md
       - name: "Annotated x64 Disassembly"
         href: annotated-x64-disassembly.md
-  - name: "Debugger Engine and Extension APIs"
+  - name: "Debugger Programming Extension APIs"
 # Auto-expanded node
     items: 
-    - name: "Debugger Engine and Extension APIs"
+    - name: "Debugger Programming Extension APIs"
       href: debugger-engine-and-extension-apis.md
-    - name: "Debugger Engine Introduction"
-      href: introduction.md
     - name: "Debugger Engine Overview"
 # Auto-expanded node
       items: 
+      - name: "Debugger Engine Introduction"
+        href: introduction.md
       - name: "Debugger Engine Overview"
         href: debugger-engine-overview.md
       - name: "Debugging Session and Execution Model"
@@ -791,6 +797,13 @@
         href: metadata-files-for-analysis-extensions.md
       - name: "Failure Analysis Entries"
         href: failure-analysis-entries.md
+    - name: "KDNET Debugger Transport Exensibility"
+# Auto-expanded node
+      items: 
+      - name: "How to develop KDNET extensibility modules"
+        href: how-to-develop-kdnet-extensibility-modules.md
+      - name: "KDSerial extensibility code samples"
+        href: kdserial-extensibility-code-samples.md
   - name: "Debugger Programming Reference"
     href: debugger-programming-reference.md
   - name: "Debug Engine Interfaces"
@@ -1781,99 +1794,31 @@
   items: 
   - name: "Symbols for Windows Debugging (WinDbg, KD, CDB, NTSD)"
     href: symbols.md
-  - name: "Introduction to Symbols"
+  - name: "Microsoft public symbol server"
+    href: microsoft-public-symbols.md
+  - name: "Symbol path for Windows debuggers"
+    href: symbol-path.md
+  - name: "Using a Symbol Server"
+    href: using-a-symbol-server.md
+  - name: "Advanced SymSrv Use"
+    href: advanced-symsrv-use.md
+  - name: "Firewalls and Proxy Servers"
+    href: firewalls-and-proxy-servers.md
+  - name: "Symbols and Symbol Files"
+    href: symbols-and-symbol-files.md
+  - name: "Public and Private Symbols"
+    href: public-and-private-symbols.md
+  - name: "Portable PDB Symbols"
+    href: symbols-portable-pdb.md
+  - name: "Symbol Syntax and Symbol Matching"
 # Auto-expanded node
     items: 
-    - name: "Introduction to Symbols"
-      href: introduction-to-symbols.md
-    - name: "Symbol path for Windows debuggers"
-      href: symbol-path.md
-    - name: "Symbols and Symbol Files"
-      href: symbols-and-symbol-files.md
-    - name: "Public and Private Symbols"
-      href: public-and-private-symbols.md
-    - name: "Portable PDB Symbols"
-      href: symbols-portable-pdb.md
-  - name: "Accessing Symbols for Debugging"
-# Auto-expanded node
-    items: 
-    - name: "Accessing Symbols for Debugging"
-      href: accessing-symbols-for-debugging.md
-    - name: "Installing Windows Symbol Files"
-      href: installing-windows-symbol-files.md
-    - name: "Symbol Stores and Symbol Servers"
-# Auto-expanded node
-      items: 
-      - name: "Symbol Stores and Symbol Servers"
-        href: symbol-stores-and-symbol-servers.md
-      - name: "Using a Symbol Server"
-        href: using-a-symbol-server.md
-      - name: "SymSrv"
-# Auto-expanded node
-        items: 
-        - name: "SymSrv"
-          href: symsrv.md
-        - name: "Microsoft public symbol server"
-          href: microsoft-public-symbols.md
-        - name: "Advanced SymSrv Use"
-          href: advanced-symsrv-use.md
-        - name: "Firewalls and Proxy Servers"
-          href: firewalls-and-proxy-servers.md
-      - name: "HTTP Symbol Stores"
-        href: http-symbol-stores.md
-      - name: "File Share (SMB) Symbol Server"
-        href: file-share--smb--symbol-server.md
-      - name: "Symbol Store Folder Tree"
-        href: symbol-store-folder-tree.md
-      - name: "SymProxy"
-# Auto-expanded node
-        items: 
-        - name: "SymProxy"
-          href: symproxy.md
-        - name: "Installing SymProxy"
-          href: installing-symproxy.md
-        - name: "Configuring the Registry"
-          href: configuring-the-registry.md
-        - name: "Choosing Network Security Credentials"
-          href: choosing-network-security-credentials.md
-        - name: "Configuring IIS for SymProxy"
-          href: configuring-iis-for-symproxy.md
-        - name: "Setting Up Exclusion Lists"
-          href: setting-up-exclusion-lists.md
-        - name: "Dealing with Unavailable Symbol Stores"
-          href: dealing-with-unavailable-symbol-stores.md
-        - name: "Handling File Pointers"
-          href: handling-file-pointers.md
-        - name: "Caching Acquired Symbol Files"
-          href: caching-acquired-symbol-files.md
-        - name: "SymProxy Automated Installation"
-          href: symproxy-automated-installation.md
-      - name: "Other Symbol Stores"
-        href: other-symbol-stores.md
-      - name: "Other Symbol Servers"
-        href: other-symbol-servers.md
+    - name: "Symbol Syntax and Symbol Matching"
+      href: symbol-syntax-and-symbol-matching.md
     - name: "Deferred Symbol Loading"
       href: deferred-symbol-loading.md
     - name: "Avoiding debugger searches for unneeded symbols"
       href: avoiding-debugger-searches-for-unneeded-symbols.md
-  - name: "SymStore"
-# Auto-expanded node
-    items: 
-    - name: "SymStore"
-      href: symstore.md
-    - name: "SymStore Transactions"
-      href: symstore-transactions.md
-    - name: "File System References and Symbol Files"
-      href: file-system-references-and-symbol-files.md
-    - name: "Symbol Storage Format"
-      href: symbol-storage-format.md
-  - name: "How the Debugger Recognizes Symbols"
-# Auto-expanded node
-    items: 
-    - name: "How the Debugger Recognizes Symbols"
-      href: how-the-debugger-recognizes-symbols.md
-    - name: "Symbol Syntax and Symbol Matching"
-      href: symbol-syntax-and-symbol-matching.md
     - name: "Symbol Options"
       href: symbol-options.md
     - name: "Symbol Status Abbreviations"
@@ -1895,8 +1840,59 @@
       href: debugging-user-mode-processes-without-symbols.md
     - name: "Debugging Performance-Optimized Code"
       href: debugging-performance-optimized-code.md
+  - name: "Symbol Stores"
+# Auto-expanded node
+    items: 
+    - name: "Custom Symbol Stores and Symbol Servers"
+      href: symbol-stores-and-symbol-servers.md      
+    - name: "HTTP Symbol Stores"
+      href: http-symbol-stores.md
+    - name: "File Share (SMB) Symbol Server"
+      href: file-share--smb--symbol-server.md
+    - name: "Symbol Store Folder Tree"
+      href: symbol-store-folder-tree.md
+    - name: "Other Symbol Stores"
+      href: other-symbol-stores.md
+    - name: "Other Symbol Servers"
+      href: other-symbol-servers.md
     - name: "Offline Symbols for Windows Update"
       href: symbols-windows-update.md
+    - name: "Installing Windows Symbol Files for Older Versions of Windows"
+      href: installing-windows-symbol-files.md
+  - name: "SymProxy"
+# Auto-expanded node
+    items: 
+    - name: "SymProxy"
+      href: symproxy.md
+    - name: "Installing SymProxy"
+      href: installing-symproxy.md
+    - name: "Configuring the Registry"
+      href: configuring-the-registry.md
+    - name: "Choosing Network Security Credentials"
+      href: choosing-network-security-credentials.md
+    - name: "Configuring IIS for SymProxy"
+      href: configuring-iis-for-symproxy.md
+    - name: "Setting Up Exclusion Lists"
+      href: setting-up-exclusion-lists.md
+    - name: "Dealing with Unavailable Symbol Stores"
+      href: dealing-with-unavailable-symbol-stores.md
+    - name: "Handling File Pointers"
+      href: handling-file-pointers.md
+    - name: "Caching Acquired Symbol Files"
+      href: caching-acquired-symbol-files.md
+    - name: "SymProxy Automated Installation"
+      href: symproxy-automated-installation.md
+  - name: "SymStore"
+# Auto-expanded node
+    items: 
+    - name: "SymStore"
+      href: symstore.md
+    - name: "SymStore Transactions"
+      href: symstore-transactions.md
+    - name: "File System References and Symbol Files"
+      href: file-system-references-and-symbol-files.md
+    - name: "Symbol Storage Format"
+      href: symbol-storage-format.md
   - name: "AgeStore"
 # Auto-expanded node
     items: 
@@ -2536,6 +2532,8 @@
       href: bug-check-0x122---whea-internal-error.md
     - name: "Bug Check 0x123: CRYPTO_SELF_TEST_FAILURE"
       href: bug-check-0x123--crypto-self-test-failure-.md
+    - name: "Bug Check 0x124:  WHEA_UNCORRECTABLE_ERROR"
+      href: bug-check-0x124---whea-uncorrectable-error.md
     - name: "Bug Check 0x125: NMR_INVALID_STATE"
       href: bug-check-0x125--nmr-invalid-state.md
     - name: "Bug Check 0x126: NETIO_INVALID_POOL_CALLER"
@@ -2638,22 +2636,24 @@
       href: bug-check-0x162--kernel-auto-boost-invalid-lock-release.md
     - name: "Bug Check 0x163: WORKER_THREAD_TEST_CONDITION"
       href: bug-check-0x162--worker-thread-test-condition.md
+    - name: "Bug Check 0x164: WIN32K_CRITICAL_FAILURE"
+      href: bug-check-0x164--win32k-critical-failure.md      
     - name: "Bug Check 0x16C: INVALID_RUNDOWN_PROTECTION_FLAGS"
       href: bug-check-0x16c--invalid-rundown-protection-flags.md
     - name: "Bug Check 0x16D: INVALID_SLOT_ALLOCATOR_FLAGS"
       href: bug-check-0x16d--invalid-slot-allocator-flags.md
     - name: "Bug Check 0x16E: ERESOURCE_INVALID_RELEASE"
       href: bug-check-0x16e--eresource-invalid-release.md
-    - name: "Bug Check 0x170: CRYPTO_LIBRARY_INTERNAL_ERROR"
-      href: bug-check-0x170--crypto-library-internal-error.md
-    - name: "Bug Check 0x171: CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG"
-      href: bug-check-0x171--cluster-csv-clussvc-disconnect-watchdog.md
+    - name: "Bug Check 0x170: CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG"
+      href: bug-check-0x170--cluster-csv-clussvc-disconnect-watchdog.md
+    - name: "Bug Check 0x171: CRYPTO_LIBRARY_INTERNAL_ERROR"
+      href: bug-check-0x171--crypto-library-internal-error.md
     - name: "Bug Check 0x173: COREMSGCALL_INTERNAL_ERROR"
       href: bug-check-0x173--coremsgcall-internal-error.md
     - name: "Bug Check 0x174: COREMSG_INTERNAL_ERROR"
       href: bug-check-0x174--coremsg-internal-error.md
     - name: "Bug Check 0x178: ELAM_DRIVER_DETECTED_FATAL_ERROR"
-      href: bug-check-0x175--elam-driver-detected-fatal-error.md
+      href: bug-check-0x178--elam-driver-detected-fatal-error.md
     - name: "Bug Check 0x17B PROFILER_CONFIGURATION_ILLEGAL"
       href: bug-check-0x17b--profiler-configuration-illegal.md
     - name: "Bug Check 0x17E MICROCODE_REVISION_MISMATCH"
@@ -2763,6 +2763,8 @@
       href: bug-check-0x141---video-engine-timeout-detected.md
     - name: "Bug Check 0x142: VIDEO_TDR_APPLICATION_BLOCKED"
       href: bug-check-0x142--video-tdr-application-blocked.md
+    - name: "Bug Check 0x144: BUGCODE_USB3_DRIVER"
+      href: bug-check-0x144--bugcode-usb3-driver.md      
     - name: "Bug Check 0x156: WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP"
       href: bug-check-0x156--winsock-detected-hung-closesocket-livedump.md
     - name: "Bug Check 0x15C: PDC_WATCHDOG_TIMEOUT_LIVEDUMP"
@@ -3272,6 +3274,8 @@
         href: -event-code--display-event-code-.md
       - name: ".eventlog (Display Recent Events)"
         href: -eventlog--display-recent-events-.md
+      - name: ".exdicmd (EXDI Command)"
+        href: -exdicmd--exdi-command-.md
       - name: ".exepath (Set Executable Path)"
         href: -exepath--set-executable-path-.md
       - name: ".expr (Choose Expression Evaluator)"

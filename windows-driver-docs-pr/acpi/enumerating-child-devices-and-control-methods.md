@@ -1,13 +1,12 @@
 ---
 title: Enumerating Child Devices and Control Methods
-description: Enumerating Child Devices and Control Methods
+description: Provides information about enumerating child devices and control methods.
 keywords:
 - ACPI devices WDK , enumerating child devices
 - ACPI devices WDK , enumerating control methods
 - ACPI namespaces WDK
 - ACPI control methods WDK , enumerating
-ms.date: 04/14/2021
-ms.localizationpriority: medium
+ms.date: 08/17/2021
 ---
 
 # Enumerating Child Devices and Control Methods
@@ -50,7 +49,7 @@ A flag that determines which objects in the ACPI namespace of a device that the 
 |--|--|
 | ENUM_CHILDREN_IMMEDIATE_ONLY | Enumerates the device and enumerates the immediate child devices of the device. |
 | ENUM_CHILDREN_MULTILEVEL | Enumerates the device and recursively enumerates all child devices of the device. |
-| ENUM_CHILDREN_MULTILEVEL \|\| ENUM_CHILDREN_NAME_IS_FILTER | A bitwise OR of ENUM_CHILDREN and ENUM_CHILDREN_NAME_IS_FILTER enumerates the device's child objects whose name is identical to that supplied by the **Name** member. |
+| ENUM_CHILDREN_NAME_IS_FILTER | A bitwise OR of ENUM_CHILDREN and ENUM_CHILDREN_NAME_IS_FILTER enumerates the device's child objects whose name is identical to that supplied by the **Name** member. |
 
 `NameLength`
 

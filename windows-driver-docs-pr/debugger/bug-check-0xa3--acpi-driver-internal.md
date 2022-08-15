@@ -9,7 +9,6 @@ api_name:
 - ACPI_DRIVER_INTERNAL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xA3: ACPI\_DRIVER\_INTERNAL
@@ -57,8 +56,7 @@ The ACPI\_DRIVER\_INTERNAL bug check has a value of 0x000000A3. This bug check i
 
  
 
-Cause
------
+## Cause
 
 An inconsistency in the ACPI driver is so severe that continuing to run would cause serious problems.
 

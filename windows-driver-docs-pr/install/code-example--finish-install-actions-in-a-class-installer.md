@@ -5,11 +5,12 @@ keywords:
 - finish-install actions WDK device installations
 - class installers WDK device installations , finish-install actions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code Example: Finish-Install Actions in a Class Installer
 
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 In this example, a class installer performs the following operations to support finish-install actions:
 

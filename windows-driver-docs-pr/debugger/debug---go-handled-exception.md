@@ -3,7 +3,6 @@ title: Debug Go Handled Exception
 description: Debug Go Handled Exception
 keywords: ["Debug Go Handled Exception", "controlling the target, Debug Go Handled Exception", "exceptions, Debug Go Handled Exception"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Go Handled Exception

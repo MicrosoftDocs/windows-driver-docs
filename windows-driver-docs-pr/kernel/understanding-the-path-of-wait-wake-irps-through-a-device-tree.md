@@ -3,7 +3,6 @@ title: Understanding the Path of Wait/Wake IRPs through a Device Tree
 description: Understanding the Path of Wait/Wake IRPs through a Device Tree
 keywords: ["wait/wake IRPs WDK power management , device tree path", "bus drivers WDK power management", "USB WDK power management", "function drivers WDK power management", "FDOs WDK power management", "filter DOs WDK power management", "physical device objects WDK power management", "PDOs WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Understanding the Path of Wait/Wake IRPs through a Device Tree
@@ -26,11 +25,11 @@ Keep in mind that drivers that enumerate children create a PDO for each child de
 
 The following figure shows a sample configuration in which such a situation occurs.
 
-![diagram illustrating a sample usb configuration](images/wwhw.png)
+![diagram illustrating a sample usb configuration.](images/wwhw.png)
 
 In the sample configuration, the keyboard and modem are children of the USB hub, which in turn is a child of the USB host controller, which is enumerated by the PCI bus. The following figure shows the device stacks for the keyboard in the sample configuration.
 
-![diagram illustrating device stacks for the sample usb keyboard configuration](images/wwdobj.png)
+![diagram illustrating device stacks for the sample usb keyboard configuration.](images/wwdobj.png)
 
 As the previous figure shows, reading from the bottom up:
 
@@ -48,7 +47,7 @@ Note that each device stack might include additional optional filter DOs that ar
 
 To allow keyboard input to awaken the system, the policy owner for the keyboard requests an **IRP\_MN\_WAIT\_WAKE** for its PDO. That IRP sets off a chain of other wait/wake IRPs, as shown in the following figure.
 
-![wait/wake irp requests for sample usb configuration](images/wwcascade.png)
+![wait/wake irp requests for sample usb configuration.](images/wwcascade.png)
 
 When a bus driver receives an [**IRP\_MN\_WAIT\_WAKE**](./irp-mn-wait-wake.md) targeted to a PDO it created, it must request another **IRP\_MN\_WAIT\_WAKE** for the device stack for which it owns power policy and created an FDO.
 

@@ -1,6 +1,6 @@
 ---
 title: DevCon HwIDs
-description: Displays the hardware IDs, compatible IDs, and device instance IDs of the specified devices. Valid on local and remote computers.
+description: Displays the hardware IDs, compatible IDs, and device instance IDs of the specified devices. 
 keywords:
 - DevCon HwIDs Driver Development Tools
 topic_type:
@@ -9,24 +9,18 @@ api_name:
 - DevCon HwIDs
 api_type:
 - NA
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 02/11/2022
 ---
 
 # DevCon HwIDs
 
-Displays the hardware IDs, compatible IDs, and device instance IDs of the specified devices. Valid on local and remote computers.
+Displays the hardware IDs, compatible IDs, and device instance IDs of the specified devices. 
 
 ```
-    devcon [/m:\\computer] hwids {* | ID [ID ...] | =class [ID [ID ...]]}
+    devcon hwids {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
 ## <span id="ddk_devcon_hwids_tools"></span><span id="DDK_DEVCON_HWIDS_TOOLS"></span>Parameters
-
-<span id="________m___computer______"></span><span id="________M___COMPUTER______"></span> **/m:\\\\**<em>computer</em>
-Runs the command on the specified remote computer. The backslashes are required.
-
-**Note**   To run DevCon commands on a remote computer, the Group Policy setting must allow the Plug and Play service to run on the remote computer. On computers that run Windows Vista and Windows 7, the Group Policy disables remote access to the service by default. On computers that run WDK 8.1 and WDK 8, the remote access is unavailable.
 
 <span id="______________"></span> **\***
 Represents all devices on the computer.
@@ -75,23 +69,20 @@ You can also specify hardware IDs, compatible IDs, device instance IDs, or ID pa
 
 ### <span id="comments"></span><span id="COMMENTS"></span>Comments
 
-The **/m** parameter must precede the operation name (**hwids**). Otherwise, DevCon ignores the **/m** parameter and displays the hardware IDs of devices on the local computer without returning a syntax error.
-
 To create a hardware ID for a root-enumerated device, use the [**DevCon SetHwID**](devcon-sethwid.md) command.
 
 ### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
 devcon hwids *
-devcon /m:\\server01 hwids acpi*
 devcon hwids acpi* *port*
 devcon hwids =usb
 ```
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 1: Find all hardware IDs](devcon-examples.md#ddk_example_1_find_all_hardware_ids_tools)
+[Example 1: Find all hardware IDs](devcon-examples.md#example-1-find-all-hardware-ids)
 
-[Example 2: Find hardware IDs by using a pattern](devcon-examples.md#ddk_example_2_find_hardware_ids_by_using_a_pattern_tools)
+[Example 2: Find hardware IDs by using a pattern](devcon-examples.md#example-2-find-hardware-ids-by-using-a-pattern)
 
-[Example 3: Find hardware IDs by using a class](devcon-examples.md#ddk_example_3_find_hardware_ids_by_using_a_class_tools)
+[Example 3: Find hardware IDs by using a class](devcon-examples.md#example-3-find-hardware-ids-by-using-a-class)

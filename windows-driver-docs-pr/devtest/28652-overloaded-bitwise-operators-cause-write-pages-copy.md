@@ -1,8 +1,7 @@
 ---
-title: C28652
+title: C28652 warning
 description: Warning C28652 Static initializer causes copy on write pages due to overloaded bitwise operators.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28652"
 ---

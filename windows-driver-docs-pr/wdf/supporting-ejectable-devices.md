@@ -17,7 +17,6 @@ keywords:
 - removable devices WDK KMDF
 - mobile devices WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Ejectable Devices

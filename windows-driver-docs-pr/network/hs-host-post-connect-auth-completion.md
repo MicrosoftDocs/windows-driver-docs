@@ -4,7 +4,6 @@ description: The HS_HOST_POST_CONNECT_AUTH_COMPLETION function indicates the suc
 keywords: 
 - typedef DWORD (WINAPI HS_HOST_POST_CONNECT_AUTH_COMPLETION) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_HOST\_POST\_CONNECT\_AUTH\_COMPLETION function
@@ -14,8 +13,7 @@ ms.localizationpriority: medium
 
 The **HS\_HOST\_POST\_CONNECT\_AUTH\_COMPLETION** function indicates the success or failure of an authentication attempt following a Wi-Fi connection setup at layer 2.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_HOST_POST_CONNECT_AUTH_COMPLETION)(
@@ -26,8 +24,7 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hPluginContext* \[in\]  
 Context handle for the plugin making the call to this function.
@@ -41,18 +38,15 @@ The [**eHS\_AUTHENTICATION\_RESULT**](ehs-authentication-result.md) enumeration 
 *pvReserved* \[in, optional\]  
 Reserved for future use.
 
-Return value
-------------
+## Return value
 
 This function is called by the plugin to communicate with the host and does not return a value.
 
-Remarks
--------
+## Remarks
 
 The plugin must call this function to inform the host of the result of a previous call to [**HS\_PLUGIN\_START\_POST\_CONNECT\_AUTH**](hs-plugin-start-post-connect-auth.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

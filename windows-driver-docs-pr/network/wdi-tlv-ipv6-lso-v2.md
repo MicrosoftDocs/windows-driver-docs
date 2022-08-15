@@ -4,7 +4,6 @@ description: WDI_TLV_IPV6_LSO_V2 is a TLV that contains Large Send Offload V2 pa
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_IPV6_LSO_V2 (0xD4) Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_IPV6\_LSO\_V2 (0xD4)
@@ -67,8 +66,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

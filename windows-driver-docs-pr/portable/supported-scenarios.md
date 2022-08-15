@@ -2,7 +2,6 @@
 description: Supported Scenarios
 title: Supported Scenarios
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supported Scenarios

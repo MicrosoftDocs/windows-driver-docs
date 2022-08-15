@@ -9,7 +9,6 @@ api_name:
 - IrpCancelField
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrpCancelField rule (wdm)
@@ -23,8 +22,7 @@ For information about how a driver should handle IRP cancellation, see [**Synchr
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -49,14 +47,12 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoCsqInsertIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinsertirp)
 [**IoCsqInsertIrpEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinsertirpex)
 [**IoMarkIrpPending**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iomarkirppending)
 [**IoSetCancelRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcancelroutine)
-See also
---------
+## See also
 
 [**Synchronizing IRP Cancellation**](../kernel/synchronizing-irp-cancellation.md)

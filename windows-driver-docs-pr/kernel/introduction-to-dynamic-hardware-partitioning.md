@@ -3,7 +3,6 @@ title: Introduction to Dynamic Hardware Partitioning
 description: Introduction to Dynamic Hardware Partitioning
 keywords: ["dynamic hardware partitioning WDK , about dynamic hardware partitioning", "hardware partitioning WDK dynamic , about dynamic hardware partitioning", "partitions WDK dynamic hardware , about dynamic hardware partitioning", "hardware partitionable servers WDK", "partition units WDK dynamic hardware partitions", "statically partitionable servers WDK dynamic hardware partitioning", "dynamically partitionable servers WDK dynamic hardware partitioning", "hot add WDK dynamic hardware partitioning", "hot remove WDK dynamic hardware partitioning", "hot replace WDK dynamic hardware partitioning", "servers WDK dynamic hardware partitioning", "hardware partitions WDK"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Dynamic Hardware Partitioning

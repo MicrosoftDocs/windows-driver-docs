@@ -9,7 +9,6 @@ keywords:
 - FILE_DEVICE_SECURE_OPEN
 - propagating FILE_DEVICE_SECURE_OPEN flag
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Propagating the FILE\_DEVICE\_SECURE\_OPEN Flag

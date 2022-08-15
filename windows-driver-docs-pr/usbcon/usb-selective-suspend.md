@@ -1,8 +1,7 @@
 ---
 description: This section provides information about choosing the correct mechanism for the selective suspend feature.
 title: USB Selective Suspend
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 03/18/2022
 ms.custom: contperf-fy21q3
 ---
 
@@ -11,21 +10,17 @@ ms.custom: contperf-fy21q3
 > [!NOTE]
 > This article is for device driver developers. If you're experiencing difficulty with a USB device, please see [Troubleshoot common USB problems](https://support.microsoft.com/windows/troubleshoot-common-usb-problems-5e9a9b49-ad43-702e-083e-6107e95deb88)
 
-This section provides information about choosing the correct mechanism for the selective suspend feature.
-
-In Microsoft Windows XP and later operating systems, the USB core stack supports a modified version of the "selective suspend" feature that is described in revision 2.0 of the Universal Serial Bus Specification.
-
-The USB selective suspend feature allows the hub driver to suspend an individual port without affecting the operation of the other ports on the hub. Selective suspension of USB devices is especially useful in portable computers, since it helps conserve battery power. Many devices, such as fingerprint readers and other kinds of biometric scanners, only require power intermittently. Suspending such devices, when the device is not in use, reduces overall power consumption. More importantly, any device that is not selectively suspended may prevent the USB host controller from disabling its transfer schedule, which resides in system memory. DMA transfers by the host controller to the scheduler can prevent the system's processors from entering deeper sleep states, such as C3. The Windows selective suspend behavior is different for devices operating in Windows XP and Windows Vista and later versions of Windows.
+The USB selective suspend feature allows the hub driver to suspend an individual port without affecting the operation of the other ports on the hub. Selective suspension of USB devices is especially useful in portable computers since it helps conserve battery power. Many devices, such as fingerprint readers and other kinds of biometric scanners, only require power intermittently. Suspending such devices, when the device is not in use, reduces overall power consumption. More importantly, any device that is not selectively suspended may prevent the USB host controller from disabling its transfer schedule, which resides in system memory. Direct memory access (DMA) transfers by the host controller to the scheduler can prevent the system's processors from entering deeper sleep states, such as C3.
 
 There are two different mechanisms for selectively suspending a USB device: idle request IRPs ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)) and set power IRPs ([**IRP\_MN\_SET\_POWER**](../kernel/irp-mn-set-power.md)). The mechanism to use depends on the operating system and the type of device: composite or non-composite.
 
 ## Selecting a Selective Suspend Mechanism
 
-Client drivers, for an interface on a composite device, that enable the interface for remote wakeup with a wait wake IRP (IRP\_MN\_WAIT\_WAKE), must use the idle request IRP ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)) mechanism to selectively suspend a device.
+Client drivers, for an interface on a composite device, that enable the interface for remote wake-up with a wait wake IRP (IRP\_MN\_WAIT\_WAKE), must use the idle request IRP ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)) mechanism to selectively suspend a device.
 
-For information about remote wakeup, see:
+For information about remote wake-up, see:
 
-[Remote Wakeup of USB Devices](./remote-wakeup-of-usb-devices.md)
+[Remote Wake-up of USB Devices](./remote-wakeup-of-usb-devices.md)
 
 [Overview of Wait/Wake Operation](../kernel/overview-of-wait-wake-operation.md)
 
@@ -366,7 +361,7 @@ In particular, the USB stack treats a device as Idle in Windows Vista whenever t
 
 The following diagram illustrates a scenario that might occur in Windows Vista.
 
-![diagram illustrating a global suspend in windows vista](images/global-suspendlh.png)
+![diagram illustrating a global suspend in windows vista.](images/global-suspendlh.png)
 
 This diagram illustrates a situation very similar to the one depicted in the section "Conditions for Global Suspend in Windows XP". However, in this case Device 3 qualifies as an Idle device. Since all devices are idle, the bus driver is able to call the idle notification callback routines associated with the pending idle request IRPs. Each driver suspends its device and the bus driver suspends the USB host controller as soon as it is safe to do so.
 
@@ -378,7 +373,7 @@ In order to maximize power savings on Windows XP, it is important that every dev
 
 The following diagram illustrates a scenario that might occur in Windows XP.
 
-![diagram illustrating a global suspend in windows xp](images/global-suspendxp.png)
+![diagram illustrating a global suspend in windows xp.](images/global-suspendxp.png)
 
 In this figure, device 3 is in power state D3 and does not have an idle request IRP pending. Device 3 does not qualify as an idle device for purposes of a global suspend in Windows XP, because it does not have an idle request IRP pending with its parent. This prevents the bus driver from calling the idle request callback routines associated with the drivers of other devices in the tree.
 

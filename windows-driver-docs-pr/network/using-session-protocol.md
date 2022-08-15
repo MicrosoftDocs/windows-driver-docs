@@ -4,7 +4,6 @@ description: Using Session Protocol
 keywords:
 - session protocol WDK SANs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Session Protocol
@@ -41,7 +40,7 @@ How the switch completes the transfer of application data depends on whether the
 
 The following figure shows an overview of how the switch completes the transfer of application data if the SAN service provider at the remote peer supports a WSPRdmaRead function. The sequence that follows describes transferring application data in more detail.
 
-![remote peer supports wsprdmaread](images/wsprdmaread.png)
+![remote peer supports wsprdmaread.](images/wsprdmaread.png)
 
 ### To transfer data when the remote peer supports WSPRdmaRead
 
@@ -55,7 +54,7 @@ The following figure shows an overview of how the switch completes the transfer 
 
 The following figure shows an overview of how the switch completes the transfer of application data if the SAN service provider at the remote peer does not support a [**WSPRdmaRead**](/previous-versions/windows/hardware/network/ff566304(v=vs.85)) function. The sequence that follows describes transferring application data in more detail.
 
-![remote peer does not support wsprdmaread](images/wsprdmaread2.png)
+![remote peer does not support wsprdmaread.](images/wsprdmaread2.png)
 
 ### To transfer data when the remote peer does not support WSPRdmaRead
 

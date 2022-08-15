@@ -9,7 +9,6 @@ keywords:
 - child devices WDK KMDF
 - listing child devices WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enumerating the Devices on a Bus

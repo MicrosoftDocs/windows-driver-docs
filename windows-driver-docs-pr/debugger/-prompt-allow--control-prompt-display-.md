@@ -9,7 +9,6 @@ api_name:
 - .prompt_allow (Control Prompt Display)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .prompt\_allow (Control Prompt Display)
@@ -80,8 +79,7 @@ The symbol for the current instruction. This symbol includes the current module,
 
 For more information about commands that affect execution, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 You can use the **.prompt\_allow** command without parameters to show which items are displayed and are not displayed. Every time that you run **.prompt\_allow**, the debugger changes the status of only the specified items.
 

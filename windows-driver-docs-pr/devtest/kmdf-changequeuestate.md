@@ -9,7 +9,6 @@ api_name:
 - ChangeQueueState
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ChangeQueueState rule (kmdf)
@@ -19,8 +18,7 @@ The **ChangeQueueState** rule specifies that the WDF driver doesn't try to chang
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate)
 [**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate)

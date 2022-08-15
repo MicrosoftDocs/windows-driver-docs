@@ -9,11 +9,10 @@ api_name:
 - BCDEdit /default
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
-BCDEdit /default
-============
+# BCDEdit /default
+
 
 The **BCDEdit /default** command sets the default entry that the boot manager will use when the timeout expires.
 

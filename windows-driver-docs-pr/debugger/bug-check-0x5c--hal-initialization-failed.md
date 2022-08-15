@@ -9,7 +9,6 @@ api_name:
 - HAL_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x5C: HAL\_INITIALIZATION\_FAILED

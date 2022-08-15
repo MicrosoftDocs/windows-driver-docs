@@ -7,7 +7,6 @@ keywords:
 - virtual connections WDK CoNDIS
 - virtual connections WDK CoNDIS , about virtual connections
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Virtual Connections

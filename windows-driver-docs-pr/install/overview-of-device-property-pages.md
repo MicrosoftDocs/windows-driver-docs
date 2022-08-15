@@ -1,12 +1,10 @@
 ---
 title: Overview of Device Property Pages
 description: Overview of Device Property Pages
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 03/11/2022
 ---
 
 # Overview of Device Property Pages
-
 
 A *device property page* is a window that allows the user to view and edit the properties for a device. For most devices, the operating system provides standard device property pages that allow the user to view and edit a common set of parameters for that device. For more information about how property pages are displayed for a device, see [How Device Property Pages are Displayed](how-device-property-pages-are-displayed.md).
 
@@ -14,19 +12,20 @@ Independent hardware vendors (IHVs) typically provide custom device property pag
 
 An IHV creates a custom device property page by using a property page provider. A property page provider can be one of the following:
 
+<a href="" id="property-page-extension-dll"></a>**Property Page Extension DLL**  
+A dynamic-link library (DLL) that provides one or more custom device property pages is referred to as a *property page extension DLL*. This type of provider supports custom property pages by implementing the **AddPropSheetPageProc**, **ExtensionPropSheetPageProc**, and other property sheet callback functions.
+
 <a href="" id="class-installers-and-co-installers"></a>**Class Installers and Co-installers**  
 A co-installer or class installer can provide one or more custom device property pages by supporting the DIF_ADDPROPERTYPAGE_ADVANCED device installation function (DIF) code.
 
-<a href="" id="property-page-extension-dll"></a>**Property Page Extension DLL**  
-A dynamic-link library (DLL) that provides one or more custom device property pages is referred to as a *property page extension DLL*. This type of provider supports custom property pages by implementing the **AddPropSheetPageProc**, **ExtensionPropSheetPageProc**, and other property sheet callback functions.
+> [!NOTE]
+> While it is possible to provide a device property page via a class installer or co-installer, it is not recommended. Class installers and co-installers are deprecated.
 
 For more information about these functions, see the Microsoft Windows Software Development Kit (SDK) for Windows 7 and .NET Framework 4.0.
 
 An IHV should supply a provider of custom device property pages in its driver package if its device or device class has any individual properties that a user can set.
 
 **Note**  In versions of Windows earlier than Windows 2000, users set such information in Control Panel. Driver software that is written for Windows 2000 and later versions of Windows should provide property pages instead.
-
- 
 
 For more information about property page providers, see [Types of Device Property Page Providers](types-of-device-property-page-providers.md).
 

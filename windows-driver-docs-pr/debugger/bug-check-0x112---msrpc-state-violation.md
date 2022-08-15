@@ -9,7 +9,6 @@ api_name:
 - MSRPC_STATE_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x112: MSRPC\_STATE\_VIOLATION
@@ -127,8 +126,7 @@ Parameters 1 and 2 are the only parameters of interest. Parameter 1 indicates th
 
  
 
-Cause
------
+## Cause
 
 The most common cause of this bug check is that the caller of the Msrpc.sys driver violated the state semantics for such a call.
 

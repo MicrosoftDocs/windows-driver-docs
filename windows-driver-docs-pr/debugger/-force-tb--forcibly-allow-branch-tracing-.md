@@ -9,7 +9,6 @@ api_name:
 - .force_tb (Forcibly Allow Branch Tracing)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .force\_tb (Forcibly Allow Branch Tracing)
@@ -49,8 +48,7 @@ The **.force\_tb** command forces the processor to trace branches early in the b
 
  
 
-Remarks
--------
+## Remarks
 
 Typically, branch tracing is enabled after the debugger initializes the processor control block (PRCB). This initialization occurs early in the boot process.
 

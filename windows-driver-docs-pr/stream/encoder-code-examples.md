@@ -14,7 +14,6 @@ keywords:
 - bit rates WDK encoder
 - registry WDK encoder
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Encoder code examples

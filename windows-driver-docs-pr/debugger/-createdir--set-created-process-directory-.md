@@ -9,7 +9,6 @@ api_name:
 - .createdir (Set Created Process Directory)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .createdir (Set Created Process Directory)
@@ -58,8 +57,7 @@ Specifies the starting directory for all child processes created by any target p
 
  
 
-Remarks
--------
+## Remarks
 
 If **.createdir** is used with no parameters, the current starting directory and handle inheritance status are displayed.
 

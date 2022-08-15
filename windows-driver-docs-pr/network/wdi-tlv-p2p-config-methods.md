@@ -4,10 +4,11 @@ description: WDI_TLV_P2P_CONFIG_METHODS is a TLV that contains Wi-Fi Direct conf
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_CONFIG_METHODS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_CONFIG\_METHODS
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_CONFIG\_METHODS is a TLV that contains Wi-Fi Direct configuration methods.
@@ -31,8 +32,7 @@ The size (in bytes) of a UINT16.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

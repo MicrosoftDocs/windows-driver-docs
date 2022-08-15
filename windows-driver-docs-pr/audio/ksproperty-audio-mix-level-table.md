@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 09/04/2020
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_MIX\_LEVEL\_TABLE
@@ -109,7 +108,7 @@ The following table shows the mapping of array elements to the supermixer node's
 
 The following figure illustrates the mapping of MixLevel array elements to input-output paths. The index of the MixLevel array element controlling each input-output path is shown in square brackets.
 
-![diagram illustrating the mapping of a supermixer node's mixlevel array elements](images/supermix.png)
+![diagram illustrating the mapping of a supermixer node's mixlevel array elements.](images/supermix.png)
 
 If no path connects input channel *i* to output channel *j*, the filter should set the **Mute** member of array element MixLevel\[*i*\*N+*j*\] to **TRUE**.
 
@@ -121,13 +120,11 @@ The size of the KSAUDIO\_MIXLEVEL array is calculated from the [**KSAUDIO\_MIXCA
 
 A KSPROPERTY\_AUDIO\_MIX\_LEVEL\_TABLE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 The filter will succeed a KSPROPERTY\_AUDIO\_MIX\_LEVEL\_TABLE set-property request that specifies a mix-level value (**Level** member of KSAUDIO\_MIXLEVEL) that is beyond the range of the filter but will (silently) clamp the value to the supported range. In a subsequent request to get this property, however, the filter will output the actual value used.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

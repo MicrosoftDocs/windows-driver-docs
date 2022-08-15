@@ -1,5 +1,5 @@
 ---
-title: ivt
+title: ivt (WinDbg)
 description: The ivt extension displays the Itanium interrupt vector table.
 keywords: ["interrupt vector table", "ivt Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ivt
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ivt
@@ -68,8 +67,7 @@ This extension command can only be used with an Itanium target computer.
 
 For more information about how to display the interrupt dispatch tables on an x64 or x86 target computer, see [**!idt**](-idt.md).
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from this extension:
 

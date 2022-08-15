@@ -9,13 +9,12 @@ api_name:
 - UNSUPPORTED_INSTRUCTION_MODE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x151: UNSUPPORTED\_INSTRUCTION\_MODE
 
 
-The UNSUPPORTED\_INSTRUCTION\_MODE bug check has a value of 0x00000151. This indicates that an attempt was made to execute code using an unsupported processor instruction mode (for example, executing classic ARM instructions instead of ThumbV2 instructions). This is not permitted.
+The UNSUPPORTED\_INSTRUCTION\_MODE bug check has a value of 0x00000151. This indicates that an attempt was made to execute code using an unsupported processor instruction mode (for example, executing classic Arm instructions instead of ThumbV2 instructions). This is not permitted.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).

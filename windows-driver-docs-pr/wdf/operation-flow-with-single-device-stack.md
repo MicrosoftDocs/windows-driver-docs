@@ -7,7 +7,6 @@ keywords:
 - I/O requests WDK UMDF , operation flow
 - request processing WDK UMDF , operation flow
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Operation Flow with Single Device Stack
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 The following figure shows the flow of operations that occur to and from the UMDF functional driver in a single device stack.
 
-![umdf call sequence for create file followed by a read request](images/umdfflow.gif)
+![umdf call sequence for create file followed by a read request.](images/umdfflow.gif)
 
 **Note**   All I/O that is initiated by applications is routed through kernel mode as shown in the figures in the [Architecture of the UMDF](/previous-versions/ff554461(v=vs.85)) section, even though the preceding figure does not show this situation.
 

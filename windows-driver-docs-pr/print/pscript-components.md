@@ -5,7 +5,6 @@ keywords:
 - PostScript Printer Driver WDK print , components
 - Pscript WDK print , components
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Pscript Components
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 Pscript components consist of DLLs, plus text and binary data files, as illustrated in the following diagram:
 
-![diagram illustrating that pscript components consist of dlls, plus text and binary data files](images/pscript5.png)
+![diagram illustrating that pscript components consist of dlls, plus text and binary data files.](images/pscript5.png)
 
 Components in the diagram include:
 

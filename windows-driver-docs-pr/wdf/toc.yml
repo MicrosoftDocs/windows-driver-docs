@@ -6,7 +6,7 @@
   - name: "Getting Started with UMDF"
     href: getting-started-with-umdf-version-2.md
   - name: "User-Mode Driver Framework Frequently Asked Questions"
-    href: user-mode-driver-framework-frequently-asked-questions.md
+    href: user-mode-driver-framework-frequently-asked-questions.yml
   - name: "Advantages of Writing UMDF Drivers"
     href: advantages-of-writing-umdf-drivers.md
   - name: "Overview of UMDF"

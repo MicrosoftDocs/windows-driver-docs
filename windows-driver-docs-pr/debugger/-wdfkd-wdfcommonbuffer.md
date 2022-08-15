@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfcommonbuffer
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfcommonbuffer

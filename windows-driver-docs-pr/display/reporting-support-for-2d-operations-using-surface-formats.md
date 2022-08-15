@@ -7,7 +7,6 @@ keywords:
 - surface formats WDK DirectX 9.0
 - surface formats WDK DirectX 9.0 , reporting support for 2D operations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Reporting Support for 2D Operations Using Surface Formats

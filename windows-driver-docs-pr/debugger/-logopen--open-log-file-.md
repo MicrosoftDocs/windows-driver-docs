@@ -9,7 +9,6 @@ api_name:
 - .logopen (Open Log File)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .logopen (Open Log File)
@@ -65,8 +64,7 @@ Automatically chooses a file name based on the name of the target process or tar
 
  
 
-Remarks
--------
+## Remarks
 
 If you already have a log file open when you run the **.logopen** command, the debugger closes it. If you specify a file name that already exists, the file's contents are overwritten.
 

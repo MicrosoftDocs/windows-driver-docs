@@ -9,7 +9,6 @@ api_name:
 - MarkingInterlockedQueuedIrps
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # MarkingInterlockedQueuedIrps rule (wdm)
@@ -31,8 +30,7 @@ For more information, see [**Synchronizing IRP Cancellation**](../kernel/synchro
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -57,16 +55,14 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**ExInterlockedInsertHeadList**](/previous-versions/ff545397(v=vs.85))
 [**ExInterlockedInsertTailList**](/previous-versions/ff545402(v=vs.85))
 [**ExInterlockedPushEntryList**](/previous-versions/ff545418(v=vs.85))
 [**IoMarkIrpPending**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iomarkirppending)
 [**RemoveHeadList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-removeheadlist)
-See also
---------
+## See also
 
 [**MarkIrpPending**](wdm-markirppending.md)
 [**Synchronizing IRP Cancellation**](../kernel/synchronizing-irp-cancellation.md)

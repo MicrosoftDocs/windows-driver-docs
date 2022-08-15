@@ -9,7 +9,6 @@ api_name:
 - DRIVER_CAUGHT_MODIFYING_FREED_POOL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xC6: DRIVER\_CAUGHT\_MODIFYING\_FREED\_POOL
@@ -59,8 +58,7 @@ The DRIVER\_CAUGHT\_MODIFYING\_FREED\_POOL bug check has a value of 0x000000C6. 
 
  
 
-Remarks
--------
+## Remarks
 
 The faulty component will be displayed in the current kernel stack. This driver should be either replaced or debugged.
 

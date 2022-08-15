@@ -9,7 +9,6 @@ api_name:
 - .restart (Restart Target Application)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .restart (Restart Target Application)
@@ -55,8 +54,7 @@ Do not confuse this command with the [**.restart (Restart Kernel Connection)**](
 
 For more information about how to issue this command and an overview of related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 CDB and WinDbg can restart a target application if the debugger originally created the application. You can use the **.restart** command even if the target application has already closed.
 

@@ -6,7 +6,6 @@ keywords:
 - PCL-5e WDK Unidrv , fonts
 - fonts WDK HP-GL/2
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # HP-GL/2 Supported Fonts

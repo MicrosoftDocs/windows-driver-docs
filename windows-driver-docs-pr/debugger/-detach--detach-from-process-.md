@@ -9,7 +9,6 @@ api_name:
 - .detach (Detach from Process)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .detach (Detach from Process)
@@ -57,8 +56,7 @@ For live user-mode debugging, this command is only supported in Windows XP and l
 
  
 
-Remarks
--------
+## Remarks
 
 This command will end the debugging session in any of the following scenarios:
 

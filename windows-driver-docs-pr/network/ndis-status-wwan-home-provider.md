@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_HOME_PROVIDER notificatio
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_WWAN_HOME_PROVIDER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_HOME\_PROVIDER
@@ -16,8 +15,7 @@ Miniport drivers cannot use this notification to send unsolicited events.
 
 This notification uses the [**NDIS\_WWAN\_HOME\_PROVIDER**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_home_provider) structure.
 
-Remarks
--------
+## Remarks
 
 Miniport drivers must comply with the following rules when responding to OID\_WWAN\_HOME\_PROVIDER query requests:
 
@@ -29,8 +27,7 @@ Miniport drivers must comply with the following rules when responding to OID\_WW
 
 Miniport drivers must return this information when the device ready-state changes to **WwanReadyStateInitialized** and format all the members of the WWAN\_PROVIDER structure, as appropriate.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

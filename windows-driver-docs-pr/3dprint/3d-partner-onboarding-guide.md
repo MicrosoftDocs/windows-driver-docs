@@ -1,8 +1,7 @@
 ---
 title: 3D print partner onboarding guide
 description: This topic describes how to implement 3D printer drivers that are then published on Windows Update.
-ms.date: 08/25/2020
-ms.localizationpriority: medium
+ms.date: 08/13/2021
 ---
 
 # 3D print partner onboarding guide
@@ -33,7 +32,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
 ## Choosing the right driver model
 
-![A 4x4 grid showing pros and cons of Microsoft and custom 3D driver models for Upper and Lower drivers, as described in the next section](images/onboarding-driver-models.png)
+![A 4x4 grid showing pros and cons of Microsoft and custom 3D driver models for Upper and Lower drivers, as described in the next section.](images/onboarding-driver-models.png)
 
 ## 3D print driver with custom slicer
 
@@ -47,7 +46,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 
     - Download and install the [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)
 
-    - Download and install the [3D printing SDK](https://go.microsoft.com/fwlink/p/?LinkId=394375)
+    - Download and install the [3D printing SDK](https://download.microsoft.com/download/6/2/7/62727B7E-D493-4B7E-9429-56FF84365852/MS3DPrinting.msi)
 
    > [!NOTE]
    > The 3D printing SDK will be installed in C:\\Program Files (x86)\\Microsoft SDKs\\3D Printing.

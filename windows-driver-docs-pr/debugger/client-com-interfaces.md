@@ -3,7 +3,6 @@ title: Debug Engine Interfaces
 description: Debug Engine Interfaces
 keywords: ["Client COM Interfaces"]
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Debug Engine Interfaces

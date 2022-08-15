@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_TELEPHONY\_MUTE\_TX
@@ -43,7 +42,7 @@ The **KSPROPERTY\_TELEPHONY\_MUTE\_TX** property is used to control whether to m
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
@@ -57,8 +56,7 @@ The property value is of type BOOL and specifies whether the data transmitted fr
 
 A **KSPROPERTY\_TELEPHONY\_MUTE\_TX** property request returns **TRUE** if the phone call is muted; it returns **FALSE** if the phone call is unmuted.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -84,4 +82,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-

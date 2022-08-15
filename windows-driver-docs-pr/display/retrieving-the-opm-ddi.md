@@ -4,7 +4,6 @@ description: Retrieving the OPM DDI
 keywords:
 - OPM WDK display , retrieving DDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Retrieving the OPM DDI

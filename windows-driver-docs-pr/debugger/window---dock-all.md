@@ -3,7 +3,6 @@ title: Window Dock All
 description: Window Dock All
 keywords: ["Window Dock All", "docking windows, Window Dock All"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Window | Dock All

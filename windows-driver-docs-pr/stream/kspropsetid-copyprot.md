@@ -2,7 +2,6 @@
 title: KSPROPSETID\_CopyProt
 description: KSPROPSETID\_CopyProt
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_CopyProt

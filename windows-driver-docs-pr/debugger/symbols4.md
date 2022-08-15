@@ -3,7 +3,6 @@ title: Symbols
 description: Symbols
 keywords: ["Debugger Engine, symbols"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Symbols

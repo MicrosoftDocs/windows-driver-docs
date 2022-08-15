@@ -2,7 +2,6 @@
 title: Test Isolation
 description: Test Isolation
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Test Isolation

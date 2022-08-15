@@ -10,7 +10,6 @@ api_location:
 - Setupapi.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -126,8 +125,7 @@ For more information about finish-install actions, see [How Device Installation 
 
 For general information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md) and [Calling Default DIF Code Handlers](./calling-the-default-dif-code-handlers.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -8,7 +8,6 @@ keywords:
 - messages WDK Static Driver Verifier
 - errors WDK Static Driver Verifier
 ms.date: 04/02/2018
-ms.localizationpriority: medium
 ---
 
 # Static Driver Verifier Error Messages

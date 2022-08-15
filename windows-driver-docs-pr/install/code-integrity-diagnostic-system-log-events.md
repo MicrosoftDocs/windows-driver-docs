@@ -10,7 +10,6 @@ keywords:
 - logs WDK driver signing
 - diagnostic log events WDK Code Integrity
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code Integrity Diagnostic System Log Events

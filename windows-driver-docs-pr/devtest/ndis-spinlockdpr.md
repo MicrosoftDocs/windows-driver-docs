@@ -9,7 +9,6 @@ api_name:
 - SpinLockDpr
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # SpinLockDpr rule (ndis)
@@ -21,8 +20,7 @@ This rule specifies that calls to [**NdisDprAcquireSpinLock**](/windows-hardware
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisAcquireSpinLock**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisacquirespinlock)
 [**NdisAllocateSpinLock**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatespinlock)

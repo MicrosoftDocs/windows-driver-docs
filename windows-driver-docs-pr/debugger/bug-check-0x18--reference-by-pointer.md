@@ -9,7 +9,6 @@ api_name:
 - REFERENCE_BY_POINTER
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x18: REFERENCE\_BY\_POINTER
@@ -57,15 +56,13 @@ The REFERENCE\_BY\_POINTER bug check has a value of 0x00000018. This indicates t
 
  
 
-Cause
------
+## Cause
 
 The reference count of an object is illegal for the current state of the object. Each time a driver uses a pointer to an object, the driver calls a kernel routine to increase the reference count of the object by one. When the driver is done with the pointer, the driver calls another kernel routine to decrease the reference count by one.
 
 Drivers must match calls to the routines that increase (*reference*) and decrease (*dereference*) the reference count. This bug check is caused by an inconsistency in the object's reference count. Typically, the inconsistency is caused by a driver that decreases the reference count of an object too many times, making extra calls that dereference the object. This bug check can occur because an object's reference count goes to zero while there are still open handles to the object. It might also occur when the object's reference count drops below zero, whether or not there are open handles to the object.
 
-Resolution
-----------
+## Resolution
 
 Make sure that the driver matches calls to the routines that increase and decrease the reference count of the object. Make sure that your driver does not make extra calls to routines that dereference the object (see Parameter 2).
 

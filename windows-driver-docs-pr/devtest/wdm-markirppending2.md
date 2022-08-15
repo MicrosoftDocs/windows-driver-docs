@@ -9,7 +9,6 @@ api_name:
 - MarkIrpPending2
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # MarkIrpPending2 rule (wdm)
@@ -19,8 +18,7 @@ The **MarkIrpPending2** rule specifies that if a dispatch routine returns STATUS
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,16 +43,14 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver)
 [**IoMarkIrpPending**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iomarkirppending)
 [**KeWaitForSingleObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitforsingleobject)
 [**PoCallDriver**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pocalldriver)
 [**RemoveHeadList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-removeheadlist)
-See also
---------
+## See also
 
 [**MarkIrpPending**](wdm-markirppending.md)
 [**Synchronizing IRP Cancellation**](../kernel/synchronizing-irp-cancellation.md)

@@ -9,7 +9,6 @@ api_name:
 - ndiskd.cxadapter
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.cxadapter
@@ -42,8 +41,7 @@ Displays information about the datapath queues.
 
 Ndiskd.dll
 
-Examples
---------
+## Examples
 
 To obtain a handle for a NETADAPTER object, first run the [**!ndiskd.netadapter**](-ndiskd-netadapter.md) command to see a list of all NIC drivers and NetAdapters on the system. In the following example, look for the handle for the NetAdapter named Realtek PCIe GBE Family Controller NetAdapter Sample Driver \#2. Its handle is ffffd1022d048030.
 
@@ -187,7 +185,7 @@ DATAPATH QUEUES
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
+[Debugging the Network Stack](/shows/defrag-tools/175-debugging-network-stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 

@@ -1,21 +1,17 @@
 ---
 title: Introduction to System Area Networks
-description: Introduction to System Area Networks
+description: A system area network (SAN) is a high-performance, connection-oriented network that can link a cluster of computers.
 keywords:
 - system area networks WDK , about system area networks
 - SAN WDK , about system area networks
 - hubs WDK SANs
 - nodes WDK SANs
 - SAN NIC WDK SANs
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 01/28/2022
+ms.custom: contperf-fy23q3
 ---
 
 # Introduction to System Area Networks
-
-
-
-
 
 A *system area network (SAN)* is a high-performance, connection-oriented network that can link a cluster of computers. A SAN delivers high bandwidth (1 Gbps or greater) with low latency. A SAN is typically switched by hubs that support eight or more nodes. The cable lengths between nodes on a SAN range from a few meters to a few kilometers.
 
@@ -33,7 +29,7 @@ A SAN network interface controller (NIC), a transport driver for the SAN NIC, or
 
 The following figure shows the architecture required to support a SAN. The shaded areas represent components that a SAN NIC vendor supplies to enable using a SAN.
 
-![diagram illustrating the architecture required to support a system area network (san)](images/wsdpsan.png)
+![diagram illustrating the architecture required to support a system area network (san).](images/wsdpsan.png)
 
 The following is a description of the components shown in this figure.
 
@@ -73,8 +69,20 @@ The physical SAN network interface controller (NIC).
 A kernel-mode provider for a particular SAN. (Reserved for future use.)
 
  
+## Supporting System Area Networks
 
+[Using a SAN with Windows Sockets Applications](using-a-san-with-windows-sockets-applications.md)
+
+[Creating Components for Using a SAN](creating-components-for-using-a-san.md)
+
+[Virtual Interface Architecture and Support for SAN](virtual-interface-architecture-and-support-for-san.md)
  
+
+
+
+
+
+
 
 
 

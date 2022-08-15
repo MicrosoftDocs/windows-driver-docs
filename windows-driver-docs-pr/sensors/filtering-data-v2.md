@@ -16,7 +16,6 @@ keywords:
 - filtering data
 - data filtering
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Filtering data
@@ -112,9 +111,9 @@ There is a basic principle for filtering events using both the current E-CRI and
 
 The following illustration demonstrates how time filtering of raw sensor data is evaluated in order to determine when data events should be raised.
 
-![time-filtered sensor data](images/cri-cs.png)
+![time-filtered sensor data.](images/cri-cs.png)
 
-In the previous illustration, the red data in the lower portion of the diagram represents the raw sensor data. The green line represents data that would be returned to clients that poll for data (one of many ways to implement this behavior) and the “<font color="red">__X__</font>” values represent when data events are fired. Blue lines are the thresholds for the E-CS boundaries (+/- E-CS relative to last data event value).
+In the previous illustration, the red data in the lower portion of the diagram represents the raw sensor data. The green line represents data that would be returned to clients that poll for data (one of many ways to implement this behavior) and the red __X__ values represent when data events are fired. Blue lines are the thresholds for the E-CS boundaries (+/- E-CS relative to last data event value).
 
 By implementing this event filtering logic, the number of data updated events can be greatly reduced, and applications can still get notified when meaningful changes in sensor data occur.
 

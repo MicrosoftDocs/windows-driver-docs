@@ -2,7 +2,6 @@
 title: OS Driver installation
 description: Class-specific INF file entries that a vendor can use to control how the Microsoft-supplied keyboard and mouse class installers install devices .
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # OS Driver installation
@@ -57,7 +56,7 @@ An example of a system with a correctly formatted PS/2 keyboard hardware ID is a
 Notes:
 
 -   Windows allows legacy (e.g. ACPI 4.0) style ACPI hardware IDs but prefers that they always identify a unique keyboard or mouse device.
--   The Windows Hardware Certification Kit includes the following requirement (System.Fundamentals.Input.PS2UniqueHWID). System manufacturers embedding keyboards and mice over PS/2 on mobile computing elements must ensure a unique hardware ID. The unique Hardware ID must be in a format that allows Windows Update (WU) to identify the device and load the correct drivers for it. This Windows 8 logo requirement applies to x86/64 mobile systems (no support for PS/2 on ARM systems)
+-   The Windows Hardware Certification Kit includes the following requirement (System.Fundamentals.Input.PS2UniqueHWID). System manufacturers embedding keyboards and mice over PS/2 on mobile computing elements must ensure a unique hardware ID. The unique Hardware ID must be in a format that allows Windows Update (WU) to identify the device and load the correct drivers for it. This Windows 8 logo requirement applies to x86/64 mobile systems (no support for PS/2 on Arm systems)
 
 For additional details, please refer to the MSDN whitepaper titled “Hardware IDs for PS/2 Input Devices on Laptops ”.
 

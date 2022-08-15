@@ -3,7 +3,6 @@ title: Supporting Layered Registry Filtering Drivers
 description: Supporting Layered Registry Filtering Drivers
 keywords: ["filtering registry calls WDK kernel , layered", "registry filtering drivers WDK kernel , layered", "layered registry filtering drivers WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting Layered Registry Filtering Drivers

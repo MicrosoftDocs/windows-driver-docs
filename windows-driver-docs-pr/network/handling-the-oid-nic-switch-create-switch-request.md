@@ -2,7 +2,6 @@
 title: Handling the OID_NIC_SWITCH_CREATE_SWITCH Request
 description: Handling the OID_NIC_SWITCH_CREATE_SWITCH Request
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling the OID\_NIC\_SWITCH\_CREATE\_SWITCH Request
@@ -52,7 +51,7 @@ When it receives the OID method request of [OID\_NIC\_SWITCH\_CREATE\_SWITCH](./
 
 4.  The PF miniport driver that supports dynamic switch creation and configuration must enable SR-IOV virtualization on the switch by calling [**NdisMEnableVirtualization**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismenablevirtualization). This call configures the **NumVFs** member and the **VF Enable** bit in the SR-IOV Extended Capability structure of the adapter's PCI Express (PCIe) configuration space.
 
-    For more information about the SR-IOV configuration space, see the PCI-SIG [Single Root I/O Virtualization and Sharing 1.1](https://go.microsoft.com/fwlink/p/?linkid=221742) specification.
+    For more information about the SR-IOV configuration space, see the PCI-SIG [Single Root I/O Virtualization and Sharing 1.1](https://pcisig.com/specifications/iov/single_root) specification.
 
     **Note**  If the PF miniport driver supports static switch creation, it enables SR-IOV virtualization after it creates the switch when [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) is called.
 

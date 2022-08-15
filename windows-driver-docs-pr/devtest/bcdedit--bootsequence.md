@@ -9,11 +9,10 @@ api_name:
 - BCDEdit /bootsequence
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
-BCDEdit /bootsequence
-============
+# BCDEdit /bootsequence
+
 
 The **/bootsequence** command sets the one-time boot sequence to be used by the boot manager.
 
@@ -23,7 +22,7 @@ bcdedit /bootsequence <id> [...] [ /addfirst | /addlast | /remove ]
 
 ## Parameters
 
-**<id> [...]**
+**\<id\> [...]**
 
 Specifies a list of data store identifiers that make up the boot sequence. You must specify at least one identifier and must
 separate identifiers by spaces. For more information about identifiers, run "bcdedit /? ID".

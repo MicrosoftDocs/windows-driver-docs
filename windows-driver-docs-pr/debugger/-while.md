@@ -1,5 +1,5 @@
 ---
-title: .while
+title: .while (WinDbg)
 description: The .while token behaves like the while keyword in C.
 keywords: [".while Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - .while
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .while
@@ -34,8 +33,7 @@ Specifies one or more commands that will be executed repeatedly as long as the c
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
-Remarks
--------
+## Remarks
 
 The [**.break**](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) and [**.continue**](-continue.md) tokens can be used to exit or restart the *Commands* block.
 

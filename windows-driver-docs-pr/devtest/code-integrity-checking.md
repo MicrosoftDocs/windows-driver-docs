@@ -4,7 +4,6 @@ description: Code integrity checks for Driver Verifier
 keywords:
 - Code integrity checks for Driver Verifier
 ms.date: 09/14/2017 
-ms.localizationpriority: medium
 ---
 
 # Code integrity checking
@@ -86,4 +85,4 @@ You can activate code integrity checking for one or more drivers by using Driver
 
 ## Related topics
 
-[Evaluate HVCI driver compatibility](../driversecurity/use-device-guard-readiness-tool.md)
+[Implement HVCI compatibile code](../driversecurity/implement-hvci-compatible-code.md)

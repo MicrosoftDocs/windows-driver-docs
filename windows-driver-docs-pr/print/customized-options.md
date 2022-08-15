@@ -5,7 +5,6 @@ keywords:
 - printer options WDK Unidrv , customized
 - customized printer options WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Customized Options

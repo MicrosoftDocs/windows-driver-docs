@@ -9,7 +9,6 @@ api_name:
 - rcdrkd.rcdrloglist
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rcdrkd.rcdrloglist
@@ -32,13 +31,11 @@ The name of a driver, not including the .sys extension.
 
 Rcdrkd.dll
 
-Remarks
--------
+## Remarks
 
 This command is relevant only for drivers that log messages to different logs by using the WppRecorder API.
 
-Examples
---------
+## Examples
 
 The following example displays a list of all recorder logs owned by the USB 3.0 host controller driver (usbxhci.sys).
 

@@ -2,7 +2,6 @@
 title: INF Validation Errors and Warnings
 description: Driver installation errors and warnings can appear as a result of the automatic INF verification that Microsoft Visual Studio performs.
 ms.date: 03/04/2021
-ms.localizationpriority: medium
 ---
 
 # INF Validation Errors and Warnings
@@ -184,6 +183,28 @@ This line causes the INF parser to attempt to locate the token "SystemRoot" from
 [MyAddReg]
 HKR,,DllPath,%%SystemRoot%%\System32\myDll.sys
 </pre>
+</td>
+</tr>
+<tr>
+<td><strong>1280/1281: Class name and ClassGuid mismatch</strong></td>
+<td>These errors indicate that your INF uses a well-known Class or ClassGuid, but one of these values is inconsistent.  For example, given the following well-known Class/ClassGuid pair:
+<pre>
+Class = Sample
+ClassGuid = {78A1C341-4539-11d3-B88D-00C04FAD5171}
+</pre>
+  
+The following generates a 1280 error because the ClassGuid is well-known but the Class does not match:
+<pre>
+Class = ContosoDevices
+ClassGuid = {78A1C341-4539-11d3-B88D-00C04FAD5171}
+</pre>
+  
+The following generates a 1281 error because the Class is well-known but the ClassGuid does not match:
+<pre>
+Class = Sample
+ClassGuid = {99f58d4a-8093-4968-a93e-f74b26bb7f0a}
+</pre>
+  
 </td>
 </tr>
 <tr>

@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_OFFLOAD_ENCASPULATION_CHANGE s
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_OFFLOAD_ENCASPULATION_CHANGE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_OFFLOAD\_ENCASPULATION\_CHANGE
@@ -12,15 +11,13 @@ ms.localizationpriority: medium
 
 Miniport drivers use the NDIS\_STATUS\_OFFLOAD\_ENCASPULATION\_CHANGE status indication to notify NDIS and overlying drivers that there has been change in the encapsulation settings.
 
-Remarks
--------
+## Remarks
 
-The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure contains an [**NDIS\_OFFLOAD\_ENCAPSULATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_offload_encapsulation) structure. NDIS\_OFFLOAD\_ENCAPSULATION specifies the encapsulation settings.
+The **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure contains an [**NDIS\_OFFLOAD\_ENCAPSULATION**](/windows-hardware/drivers/ddi/encapsulationconfig/ns-encapsulationconfig-ndis_offload_encapsulation) structure. NDIS\_OFFLOAD\_ENCAPSULATION specifies the encapsulation settings.
 
 For more information about encapsulation settings, see [OID\_OFFLOAD\_ENCAPSULATION](./oid-offload-encapsulation.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -42,7 +39,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_OFFLOAD\_ENCAPSULATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_offload_encapsulation)
+[**NDIS\_OFFLOAD\_ENCAPSULATION**](/windows-hardware/drivers/ddi/encapsulationconfig/ns-encapsulationconfig-ndis_offload_encapsulation)
 
 [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
 

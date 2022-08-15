@@ -7,7 +7,6 @@ keywords:
 - Device Metadata Authoring Wizard documentation
 - Device Metadata Authoring Tool documentation
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Device Metadata Authoring Wizard

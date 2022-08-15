@@ -10,7 +10,6 @@ api_location:
 - Ks.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,8 +43,7 @@ The KSCATEGORY_SENSOR_CAMERA GUID is defined as follows:
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

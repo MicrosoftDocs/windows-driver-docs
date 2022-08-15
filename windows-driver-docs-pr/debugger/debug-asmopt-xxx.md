@@ -10,7 +10,6 @@ api_location:
 - DbgEng.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ---
 
 # DEBUG\_ASMOPT\_XXX
@@ -74,8 +73,7 @@ Additionally, the value DEBUG_ASMOPT_DEFAULT represents the default set of assem
 
 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

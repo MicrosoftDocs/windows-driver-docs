@@ -2,7 +2,6 @@
 title: Setting Up Kernel-Mode Debugging over a Serial Cable in Visual Studio
 description: You can use Microsoft Visual Studio to set up and perform kernel-mode debugging over a null-modem cable. 
 ms.date: 04/10/2018
-ms.localizationpriority: medium
 ---
 
 # <span id="debugger.setting_up_a_null-modem_cable_connection_in_visual_studio"></span>Setting Up Kernel-Mode Debugging over a Serial Cable in Visual Studio
@@ -26,7 +25,7 @@ The computer that runs the debugger is called the *host computer*, and the compu
 2.  On the host computer, in Visual Studio, when you come to the Computer Configuration dialog box, select **Provision computer and choose debugger settings**.
 3.  For **Connection Type**, choose **Serial**.
 
-    ![screen shot showing an example of debugger settings with values for the following fields: connection type, target name, and bus parameters](images/setupserialvs.png)
+    ![screen shot showing an example of debugger settings with values for the following fields: connection type, target name, and bus parameters.](images/setupserialvs.png)
 
     For **Baud Rate**, accept the default value or enter the baud rate you want to use. For **Port**, enter the name of the COM port that you want to use for debugging on the host computer. For **Target Port**, enter the name of the COM port that you want to use for debugging on the target computer.
 

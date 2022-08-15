@@ -12,15 +12,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IPrinterScriptUsbJobContextReturnCodes::Success method
 
 Returns a value of zero (0) to inform USBMon that the function call completed successfully.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT Success(
@@ -28,24 +26,20 @@ HRESULT Success(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *value* \[out, retval\]  
 Value indicating a successful method call.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Remarks
--------
+## Remarks
 
 **Success** is a read-only method.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

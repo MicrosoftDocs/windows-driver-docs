@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_POSITION
@@ -46,7 +45,7 @@ The KSPROPERTY\_AUDIO\_POSITION property specifies the current positions of the 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_position" data-raw-source="[&lt;strong&gt;KSAUDIO_POSITION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_position)"><strong>KSAUDIO_POSITION</strong></a></p></td>
 </tr>
 </tbody>
@@ -60,8 +59,7 @@ The property value (operation data) is a structure of type KSAUDIO\_POSITION tha
 
 A KSPROPERTY\_AUDIO\_POSITION property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 DirectSound uses the KSPROPERTY\_AUDIO\_POSITION property to implement the **IDirectSoundBuffer::GetCurrentPosition** and **IDirectSoundBuffer::SetCurrentPosition** methods. The Windows multimedia functions **waveInGetPosition** and **waveOutGetPosition** also use this property. For more information about DirectSound and the Windows multimedia functions, see the Microsoft Windows SDK documentation.
 
@@ -69,8 +67,7 @@ WaveCyclic and WavePci miniport drivers do not need to implement property handle
 
 For more information, see [Audio Position Property](./audio-position-property.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -88,11 +85,10 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](../stream/ksproperty-structure.md)
 
 [**KSAUDIO\_POSITION**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_position)
 
 [**IMiniportWaveCyclicStream::GetPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclicstream-getposition)
 
 [**IMiniportWavePciStream::GetPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-getposition)
-

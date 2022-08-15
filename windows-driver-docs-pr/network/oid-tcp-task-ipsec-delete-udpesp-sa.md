@@ -4,7 +4,6 @@ description: This topic describes the OID_TCP_TASK_IPSEC_DELETE_UDPESP_SA object
 keywords:
 - OID_TCP_TASK_IPSEC_DELETE_UDPESP_SA
 ms.date: 11/06/2017
-ms.localizationpriority: medium
 ---
 
 # OID_TCP_TASK_IPSEC_DELETE_UDPESP_SA

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION
@@ -53,7 +52,7 @@ The following table summarizes the features of this property.
 
  
 
-The property descriptor (instance data) consists of a KSRTAUDIO\_BUFFER\_PROPERTY\_WITH\_NOTIFICATION structure that contains a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure along with other members. The client writes its requested buffer size into the structure. The client must specify the base address as **NULL** unless a specific base address is needed.
+The property descriptor (instance data) consists of a KSRTAUDIO\_BUFFER\_PROPERTY\_WITH\_NOTIFICATION structure that contains a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure along with other members. The client writes its requested buffer size into the structure. The client must specify the base address as **NULL** unless a specific base address is needed.
 
 This property is used when you want DMA-driven event notification. Based on the **NotificationCount** member, registered events are signaled once (at the end) or twice (at the mid-point and the end) per cycle through the cyclic buffer. Events are registered using [**KSPROPERTY\_RTAUDIO\_REGISTER\_NOTIFICATION\_EVENT**](ksproperty-rtaudio-register-notification-event.md) after successfully calling KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION.
 
@@ -92,8 +91,7 @@ A KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION property request returns STATU
 
  
 
-Remarks
--------
+## Remarks
 
 The base address is the virtual memory address at the start of the cyclic buffer. The client can directly access the buffer at this address. The buffer is contiguous in virtual memory. The driver determines whether the buffer is contiguous in physical memory.
 
@@ -105,8 +103,7 @@ If a KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION property request succeeds, 
 
 Closing the pin automatically frees the buffer that was allocated through this property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -128,11 +125,10 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](../stream/ksproperty-structure.md)
 
 [**KSRTAUDIO\_BUFFER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_buffer)
 
 [**KSRTAUDIO\_BUFFER\_PROPERTY\_WITH\_NOTIFICATION**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_buffer_property_with_notification)
 
 [**KSPROPERTY\_RTAUDIO\_REGISTER\_NOTIFICATION\_EVENT**](ksproperty-rtaudio-register-notification-event.md)
-

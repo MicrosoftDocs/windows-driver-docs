@@ -2,7 +2,6 @@
 title: Example 1 Displaying Global Flags
 description: Example 1 Displaying Global Flags
 ms.date: 10/12/2018
-ms.localizationpriority: medium
 ---
 
 # Example 1: Displaying Global Flags

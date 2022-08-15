@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_RTAUDIO\_CLOCKREGISTER
@@ -53,7 +52,7 @@ The following table summarizes the features of this property.
 
  
 
-The property descriptor (instance data) consists of a KSRTAUDIO\_HWREGISTER\_PROPERTY structure that contains a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure. Before sending the request, the client loads the KSRTAUDIO\_HWREGISTER\_PROPERTY structure with values that indicate the preferred base address for the clock register.
+The property descriptor (instance data) consists of a KSRTAUDIO\_HWREGISTER\_PROPERTY structure that contains a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure. Before sending the request, the client loads the KSRTAUDIO\_HWREGISTER\_PROPERTY structure with values that indicate the preferred base address for the clock register.
 
 The property value (operation data) is a pointer to a KSRTAUDIO\_HWREGISTER structure into which the property handler writes the register address and the register-update frequency. This register address is the user-mode or kernel-mode virtual address into which the hardware register is mapped. The client can directly read the register from this address.
 
@@ -61,8 +60,7 @@ The property value (operation data) is a pointer to a KSRTAUDIO\_HWREGISTER stru
 
 A KSPROPERTY\_RTAUDIO\_CLOCKREGISTER property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an error code that indicates a failure.
 
-Remarks
--------
+## Remarks
 
 Some audio devices contain clock registers. A clock register is a wall clock counter that starts running when the hardware powers up and stops when the hardware powers down. Software uses clock registers to synchronize between two or more controller devices by measuring the relative drift between the hardware clocks of the device.
 
@@ -74,8 +72,7 @@ The mapping of the clock register is destroyed when the pin closes. The client c
 
 It is typically faster to read a clock register than it is to send a [**KSPROPERTY\_CLOCK\_TIME**](../stream/ksproperty-clock-time.md) request, which requires transitions between user-mode and kernel-mode for user-mode clients.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -100,4 +97,3 @@ Requirements
 [**KSRTAUDIO\_HWREGISTER\_PROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_hwregister_property)
 
 [**KSRTAUDIO\_HWREGISTER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_hwregister)
-

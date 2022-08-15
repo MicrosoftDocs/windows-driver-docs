@@ -4,7 +4,6 @@ description: SO_BROADCAST
 ms.date: 08/08/2017
 keywords: 
  -SO_BROADCAST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SO\_BROADCAST
@@ -122,8 +121,7 @@ A WSK application must specify a pointer to an IRP when calling the **WskControl
 
 The default state of this socket option is that broadcast messages are not allowed.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

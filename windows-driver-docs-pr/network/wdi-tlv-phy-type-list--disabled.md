@@ -4,7 +4,6 @@ description: WDI_TLV_PHY_TYPE_LIST (0x69) is an unused TLV.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PHY_TYPE_LIST (unused) Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PHY\_TYPE\_LIST (unused)
@@ -17,8 +16,7 @@ WDI\_TLV\_PHY\_TYPE\_LIST (0x69) is an unused TLV.
 
 0x69
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

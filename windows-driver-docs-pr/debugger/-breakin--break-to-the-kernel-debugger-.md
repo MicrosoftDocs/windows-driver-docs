@@ -9,7 +9,6 @@ api_name:
 - .breakin (Break to the Kernel Debugger)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .breakin (Break to the Kernel Debugger)
@@ -49,8 +48,7 @@ The **.breakin** command switches from user-mode debugging to kernel-mode debugg
 
  
 
-Remarks
--------
+## Remarks
 
 If kernel-mode debugging was enabled during the boot process and you are running a user-mode debugger, you can use the **.breakin** command to halt the operating system and transfer control to a kernel debugger.
 

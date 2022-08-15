@@ -2,7 +2,6 @@
 title: Standardized INF Keywords for Power Management
 description: Standardized INF Keywords for Power Management
 ms.date: 01/29/2021
-ms.localizationpriority: medium
 ms.custom: contperf-fy21q3
 ---
 
@@ -28,36 +27,36 @@ For more information about standardized INF keywords, see [Standardized INF Keyw
 
 The following standardized INF keywords are defined to enable or disable support for power management features of network adapters. They are used by both NetAdapterCx client drivers and traditional NDIS miniport device drivers.
 
-<a href="" id="-wakeonpattern"></a>**\*WakeOnPattern**  
+**\*WakeOnPattern**  
 A value that describes whether the device should be enabled to wake the computer when a network packet matches a specified pattern.
 
-<a href="" id="-wakeonmagicpacket"></a>**\*WakeOnMagicPacket**  
+**\*WakeOnMagicPacket**  
 A value that describes whether the device should be enabled to wake the computer when the device receives a *magic packet*. (A *magic packet* is a packet that contains 16 contiguous copies of the receiving network adapter's Ethernet address)
 
-<a href="" id="-pmarpoffload"></a>**\*PMARPOffload**  
+**\*PMARPOffload**  
 A value that describes whether the device should be enabled to offload the Address Resolution Protocol (ARP) when the system enters a sleep state.
 
-<a href="" id="-pmnsoffload"></a>**\*PMNSOffload**  
+**\*PMNSOffload**  
 A value that describes whether the device should be enabled to offload neighbor solicitation (NS) when the system enters a sleep state.
 
-<a href="" id="-pmwifirekeyoffload"></a>**\*PMWiFiRekeyOffload**  
+**\*PMWiFiRekeyOffload**  
 A value that describes whether the device should be enabled to offload group temporal key (GTK) rekeying for wake-on-wireless-LAN (WOL) when the computer enters a sleep state.
 
-<a href="" id="-eee"></a>**\*EEE**  
+**\*EEE**  
 A value that describes whether the device should enable IEEE 802.3az Energy-Efficient Ethernet.
 
 The columns in the table at the end of this topic describe the following attributes for enumeration keywords:
 
-<a href="" id="subkeyname"></a>SubkeyName  
+SubkeyName  
 The name of the keyword that you must specify in the INF file and that appears in the registry.
 
-<a href="" id="paramdesc"></a>ParamDesc  
+ParamDesc  
 The display text that is associated with SubkeyName.
 
-<a href="" id="value"></a>Value  
+Value  
 The enumeration integer value that is associated with each option in the list. This value is stored in **NDI\\params\\**<em>SubkeyName\\Value.</em>
 
-<a href="" id="enumdesc"></a>EnumDesc  
+EnumDesc  
 The display text that is associated with each value that appears in the menu.
 
 The following table describes the possible INF entries for the power management keywords used by NDIS and NetAdapterCx drivers.
@@ -65,17 +64,17 @@ The following table describes the possible INF entries for the power management 
 
 |SubkeyName|ParamDesc|Value|EnumDesc|
 |--- |--- |--- |--- |
-|**_WakeOnPattern_**|Wake on pattern match|0|Disabled|
+|**\*WakeOnPattern**|Wake on pattern match|0|Disabled|
 |||1 (Default)|Enabled|
-|**WakeOnMagicPacket**|Wake on magic packet|0|Disabled|
+|**\*WakeOnMagicPacket**|Wake on magic packet|0|Disabled|
 |||1 (Default)|Enabled|
-|**PMARPOffload**|ARP offload|0|Disabled|
+|**\*PMARPOffload**|ARP offload|0|Disabled|
 |||1 (Default)|Enabled|
-|**_PMNSOffload_**|NS offload|0|Disabled|
+|**\*PMNSOffload**|NS offload|0|Disabled|
 |||1 (Default)|Enabled|
-|**PMWiFiRekeyOffload**|WiFi rekeying offload|0|Disabled|
+|**\*PMWiFiRekeyOffload**|WiFi rekeying offload|0|Disabled|
 |||1 (Default)|Enabled|
-|***EEE**|Energy-Efficient Ethernet|0|Disabled|
+|**\*EEE**|Energy-Efficient Ethernet|0|Disabled|
 |||1 (Default)|Enabled|
 
 ## Power management keywords exclusive to NetAdapterCx
@@ -93,7 +92,7 @@ The following table describes the possible INF entries for the **\*IdleRestricti
 
 |SubkeyName|ParamDesc|Value|EnumDesc|
 |--- |--- |--- |--- |
-|**_*IdleRestriction_**|idle power down restriction|0 (Default)|No Restriction|
+|**\*IdleRestriction**|idle power down restriction|0 (Default)|No Restriction|
 |||1|Only idle when user is not present|
 
 
@@ -101,22 +100,22 @@ The following table describes the possible INF entries for the **\*IdleRestricti
 
 The following power management keywords are for traditional NDIS miniport driver use only. They must not be used by NetAdapterCx client drivers.
 
-<a href="" id="-modernstandbywolmagicpacket"></a>**\*ModernStandbyWoLMagicPacket**  
+**\*ModernStandbyWoLMagicPacket**  
 A value that describes whether the device should be enabled to wake the computer when the device receives a *magic paket* and the system is in the *S0ix* power state. This does not apply when the system is in the *S4* power state.
 
 > [!NOTE]
 > **\*ModernStandbyWoLMagicPacket** is supported in NDIS 6.60 and later, or Windows 10, version 1607 and later. 
 
-<a href="" id="-devicesleepondisconnect"></a>**\*DeviceSleepOnDisconnect**  
+**\*DeviceSleepOnDisconnect**  
 A value that describes whether the device should be enabled to put the device into a low-power state (sleep state) when media is disconnected and return to a full-power state (wake state) when media is connected again.
 
 The following table describes the possible INF entries for the power management keywords used by NDIS miniport drivers.
 
 |SubkeyName|ParamDesc|Value|EnumDesc|
 |--- |--- |--- |--- |
-|**ModernStandbyWoLMagicPacket**|Wake on magic packet when system is in the _S0ix_ power state|0 (Default)|Disabled|
+|**\*ModernStandbyWoLMagicPacket**|Wake on magic packet when system is in the _S0ix_ power state|0 (Default)|Disabled|
 |||1|Enabled|
-|**_DeviceSleepOnDisconnect_**|Device sleep on disconnect|0|Disabled|
+|**\*DeviceSleepOnDisconnect**|Device sleep on disconnect|0|Disabled|
 |||1 (Default)|Enabled|
  
 

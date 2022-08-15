@@ -3,7 +3,6 @@ title: Setting Up and Using Interlocked Queues
 description: Setting Up and Using Interlocked Queues
 keywords: ["interlocked IRP queues WDK kernel", "doubly linked IRPs WDK kernel", "driver-dedicated threads WDK IRPs"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Up and Using Interlocked Queues
@@ -22,7 +21,7 @@ Usually, these drivers set up a doubly linked interlocked queue; every IRP conta
 
 A driver must set up its interlocked queue at device initialization. The following figure illustrates a doubly linked interlocked queue, the support routines a driver must call to set up such a queue, and a set of **ExInterlocked*Xxx*** routines a driver can call to insert IRPs into and remove IRPs from the queue.
 
-![diagram illustrating using an interlocked queue](images/3intlokq.png)
+![diagram illustrating using an interlocked queue.](images/3intlokq.png)
 
 As this figure shows, a driver must provide the storage for the queue itself and for the following in order to set up a doubly linked interlocked queue:
 

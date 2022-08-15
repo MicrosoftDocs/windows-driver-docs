@@ -3,7 +3,6 @@ title: Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually
 description: Debugging Tools for Windows supports kernel debugging over a USB 2.0 cable. This topic describes how to set up USB 2.0 debugging manually.
 keywords: ["setup, making a USB 2.0 cable connection", "cable connection, USB 2.0 debug cable", "USB 2.0 debugging connection", "USB 2.0 debugging connection, setting up the hardware", "USB 2.0 debugging connection, software requirements"]
 ms.date: 02/07/2019
-ms.localizationpriority: medium
 ---
 
 # Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually
@@ -129,7 +128,7 @@ Protocols Supported
 
 But when you plug in a USB 2.0 device (like a flash drive) to all the USB connectors on the computer, USBView never show your device connected to the debug-capable port (port 2 in this example). USBView might show the external connector mapped to a port of an xHCI controller when in fact the external connector is mapped to the debug-capable port of the eHCI controller.
 
-![screenshot of xhci and ehci in usbview](images/usbview01.png)
+![screenshot of xhci and ehci in usbview.](images/usbview01.png)
 
 In a case like this, you might still be able to establish kernel-mode debugging over a USB 2.0 cable. In the example given here, you would plug your USB 2.0 debug cable into the connector that shows as being mapped to Port 2 of the xHCI controller. Then you would set your bus parameters to the bus, device, and function numbers of the eHCI controller (in this example, 0.29.0).
 

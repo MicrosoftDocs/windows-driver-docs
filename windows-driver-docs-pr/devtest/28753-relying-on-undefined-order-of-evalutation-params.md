@@ -1,8 +1,7 @@
 ---
-title: C28753
+title: C28753 warning
 description: Warning C28753 Relying on undefined order of evaluation of parameters.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28753"
 ---
@@ -12,7 +11,7 @@ f1_keywords:
 
 warning C28753: Relying on undefined order of evaluation of parameters
 
-C/C++ allows the compiler to generate code to evaluate actual parameters in any order, and the x86 and ARM compilers tend to select different orders. Code that relies on a specific order may behave differently on different platforms.
+C/C++ allows the compiler to generate code to evaluate actual parameters in any order, and the x86 and Arm compilers tend to select different orders. Code that relies on a specific order may behave differently on different platforms.
 
 A common mistake is with the use of smart pointers where the address-of operator **&** has side effects, in calls like this:
 

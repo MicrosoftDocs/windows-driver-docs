@@ -1,12 +1,10 @@
 ---
 title: PrintTicket document example
 description: The keywords in this example are for illustration only, although they reflect the Print Schema keywords for 3D manufacturing.
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 08/17/2021
 ---
 
 # PrintTicket document example
-
 
 The keywords in this example are for illustration only, although they reflect the Print Schema keywords for 3D manufacturing. This PrintTicket is constructed specifically for a hypothetical device represented by the [PrintCapabilities document example](example-printcapabilities-document.md).
 
@@ -51,11 +49,3 @@ The keywords in this example are for illustration only, although they reflect th
     
 </psf:PrintTicket>
 ```
-
- 
-
- 
-
-
-
-

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_PRINTER\_ENDORSER\_MAX\_GRAPHICS
@@ -25,15 +24,13 @@ Valid Values: WIA\_PROP\_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
 The **WIA\_IPS\_PRINTER\_ENDORSER\_MAX\_GRAPHICS** property is optional for the Imprinter/Endorser items that support graphics upload. When implemented, the property value **must be** greater than zero (0).
 
 For more information about the TYMED\_MULTIPAGE\_FILE constant, see [**WIA\_IPA\_TYMED**](wia-ipa-tymed.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # DXGK\_QUERYSEGMENTOUT2 structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The DXGK\_QUERYSEGMENTOUT2 structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_QUERYSEGMENTOUT2 {
@@ -29,8 +27,7 @@ typedef struct _DXGK_QUERYSEGMENTOUT2 {
 } DXGK_QUERYSEGMENTOUT2;
 ```
 
-Members
--------
+## Members
 
 **SegmentCount**
 Reserved for system use.
@@ -38,8 +35,7 @@ Reserved for system use.
 **pSegmentDescriptor**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

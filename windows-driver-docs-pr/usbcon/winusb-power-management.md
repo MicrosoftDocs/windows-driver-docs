@@ -2,7 +2,6 @@
 description: WinUSB Power Management
 title: WinUSB Power Management
 ms.date: 01/07/2019
-ms.localizationpriority: medium
 ---
 
 # WinUSB Power Management
@@ -58,7 +57,7 @@ The following table shows how the registry keys affect the selective suspend fea
 <li>A nonzero value indicates that the device supports being powered down when idle.</li>
 <li>If DeviceIdleEnabled is not set, the value of the AUTO_SUSPEND power policy setting is ignored.</li>
 </ul>
-<pre class="syntax" space="preserve"><code class="language-INF">HKR,,DeviceIdleEnabled,0x00010001,1</code></pre></td>
+<pre class="syntax"><code class="language-INF">HKR,,DeviceIdleEnabled,0x00010001,1</code></pre></td>
 </tr>
 <tr class="even">
 <td><strong>DeviceIdleIgnoreWakeEnable</strong></td>
@@ -72,7 +71,7 @@ The following table shows how the registry keys affect the selective suspend fea
 <li>If the user enables device power savings, then the value of AUTO_SUSPEND is used to determine whether to suspend the device when idle.</li>
 </ul>
 <p>The <strong>UserSetDeviceIdleEnabled</strong> is ignored if <strong>DeviceIdleEnabled</strong> is not set.</p>
-<pre class="syntax" space="preserve"><code class="language-INF">HKR,,UserSetDeviceIdleEnabled,0x00010001,1</code></pre></td>
+<pre class="syntax"><code class="language-INF">HKR,,UserSetDeviceIdleEnabled,0x00010001,1</code></pre></td>
 </tr>
 <tr class="even">
 <td><strong>DefaultIdleState</strong></td>
@@ -82,13 +81,13 @@ The following table shows how the registry keys affect the selective suspend fea
 <li>A nonzero value indicates that by default the device is allowed to be suspended when idle.</li>
 </ul>
 <p>This value is ignored if <strong>DeviceIdleEnabled</strong> is not set.</p>
-<pre class="syntax" space="preserve"><code class="language-INF">HKR,,DefaultIdleState,0x00010001,1</code></pre></td>
+<pre class="syntax"><code class="language-INF">HKR,,DefaultIdleState,0x00010001,1</code></pre></td>
 </tr>
 <tr class="odd">
 <td><strong>DefaultIdleTimeout</strong></td>
 <td>This is a DWORD value. This registry value sets the default state of the SUSPEND_DELAY power policy setting.
 <p>The value indicates the amount of time in milliseconds to wait before determining that a device is idle.</p>
-<pre class="syntax" space="preserve"><code class="language-INF">HKR,,DefaultIdleTimeout,0x00010001,100</code></pre></td>
+<pre class="syntax"><code class="language-INF">HKR,,DefaultIdleTimeout,0x00010001,100</code></pre></td>
 </tr>
 </tbody>
 </table>

@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Film element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The optional **Film** element describes the capabilities of the film scanning option that is attached to the scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Film>
@@ -26,8 +24,7 @@ Usage
 </wscn:Film>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 

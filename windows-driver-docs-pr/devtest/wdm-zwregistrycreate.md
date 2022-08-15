@@ -9,7 +9,6 @@ api_name:
 - ZwRegistryCreate
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ZwRegistryCreate rule (wdm)
@@ -41,8 +40,7 @@ This rule does not verify that the driver has called [**ZwCreateKey**](/windows-
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -67,8 +65,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**ZwClose**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose)
 [**ZwCreateKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatekey)

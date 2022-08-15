@@ -2,7 +2,6 @@
 title: Creating Test Certificates
 description: Creating Test Certificates
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Test Certificates

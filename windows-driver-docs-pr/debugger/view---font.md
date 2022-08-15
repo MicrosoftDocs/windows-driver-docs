@@ -3,7 +3,6 @@ title: View Font
 description: View Font
 keywords: ["View Font"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # View | Font
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 Click **Font** on the **View** menu to change the font that appears in the debugging information windows.
 
-This command is equivalent to clicking the **Font** button (![screen shot of the font button](images/tbfont.png)) on the toolbar.
+This command is equivalent to clicking the **Font** button (![screen shot of the font button.](images/tbfont.png)) on the toolbar.
 
 ### <span id="dialog_box"></span><span id="DIALOG_BOX"></span>Dialog Box
 

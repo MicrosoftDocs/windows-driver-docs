@@ -9,7 +9,6 @@ api_name:
 - gpiokd.help
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !gpiokd.help

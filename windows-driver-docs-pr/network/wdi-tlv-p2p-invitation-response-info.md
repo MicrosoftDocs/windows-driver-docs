@@ -4,10 +4,11 @@ description: WDI_TLV_P2P_INVITATION_RESPONSE_INFO is a TLV that contains Wi-Fi D
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_INVITATION_RESPONSE_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_INVITATION\_RESPONSE\_INFO
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_INVITATION\_RESPONSE\_INFO is a TLV that contains Wi-Fi Direct Invitation Response information.
@@ -33,8 +34,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -4,7 +4,6 @@ description: Select service icon in the Mobile Broadband Metadata Authoring Wiza
 keywords:
 - Select service icon in the Mobile Broadband Metadata Authoring Wizard
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Select service icon in the Mobile Broadband Metadata Authoring Wizard

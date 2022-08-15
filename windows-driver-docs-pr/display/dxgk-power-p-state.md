@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # DXGK\_POWER\_P\_STATE structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGK_POWER_P_STATE {
@@ -31,8 +29,7 @@ typedef struct _DXGK_POWER_P_STATE {
 } DXGK_POWER_P_STATE, *PDXGK_POWER_P_STATE;
 ```
 
-Members
--------
+## Members
 
 **NominalPower**
 
@@ -42,8 +39,7 @@ Members
 
 **ResidencyRequirement**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -2,7 +2,6 @@
 title: How do I update the flags in a running trace session
 description: How do I update the flags in a running trace session
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How do I update the flags in a running trace session?

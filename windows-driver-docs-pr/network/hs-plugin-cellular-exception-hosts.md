@@ -5,7 +5,6 @@ keywords:
 - HS_PLUGIN_CELLULAR_EXCEPTION_HOSTS structure Network Drivers Starting with Windows Vista
 - PHS_PLUGIN_CELLULAR_EXCEPTION_HOSTS structure pointer Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_PLUGIN\_CELLULAR\_EXCEPTION\_HOSTS structure
@@ -15,8 +14,7 @@ ms.localizationpriority: medium
 
 The **HS\_PLUGIN\_CELLULAR\_EXCEPTION\_HOSTS** structure contains the list of hosts that the plugin requires to be connected over a cellular bearer only during the authentication process. This is an optional capability that can be requested by the plugin. For more information, see [**HS\_PLUGIN\_QUERY\_CELLULAR\_EXCEPTION\_HOSTS**](hs-plugin-query-cellular-exception-hosts.md).
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HS_PLUGIN_CELLULAR_EXCEPTION_HOSTS {
@@ -26,8 +24,7 @@ typedef struct _HS_PLUGIN_CELLULAR_EXCEPTION_HOSTS {
 } HS_PLUGIN_CELLULAR_EXCEPTION_HOSTS, *PHS_PLUGIN_CELLULAR_EXCEPTION_HOSTS;
 ```
 
-Members
--------
+## Members
 
 **dwCount**  
 The number of host names in the list pointed to by **pExceptions**.
@@ -42,8 +39,7 @@ Used if MIDL is not utilized.
 
 Pointer to the list of host names.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

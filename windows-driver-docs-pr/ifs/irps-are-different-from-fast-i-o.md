@@ -5,7 +5,6 @@ keywords:
 - IRPs WDK file system
 - fast I/O vs. IRPs WDK file system
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IRPs Are Different From Fast I/O

@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ValidTicket element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **ValidTicket** element indicates whether a client's [**ScanTicket**](scanticket.md) was valid.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ValidTicket>
@@ -26,13 +24,11 @@ Usage
 </wscn:ValidTicket>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. A Boolean value that must be 0, false, 1, or true.
 
@@ -60,8 +56,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 A client submits a [**ScanTicket**](scanticket.md) for validation through the [**ValidateScanTicketRequest**](validatescanticketrequest.md) operation. The WSD Scan Service returns validation information, which includes **ValidTicket**, in [**ValidateScanTicketResponse**](validatescanticketresponse.md).
 

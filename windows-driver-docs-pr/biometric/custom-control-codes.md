@@ -4,7 +4,6 @@ description: vendors can define custom control codes
 keywords:
 - biometric drivers WDK , control codes
 ms.date: 11/13/2017
-ms.localizationpriority: medium
 ---
 
 # Custom Control Codes

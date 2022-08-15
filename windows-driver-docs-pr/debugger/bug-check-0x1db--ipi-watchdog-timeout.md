@@ -9,7 +9,6 @@ api_name:
 - IPI_WATCHDOG_TIMEOUT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1DB: IPI\_WATCHDOG\_TIMEOUT
@@ -32,13 +31,11 @@ The IPI\_WATCHDOG\_TIMEOUT bug check has a value of 0x000001DB. It indicates tha
 
 
 ## Cause
------
 
 A processor has been stuck in an IPI loop for more than the allowed time.
 
 
 ## See Also
-----------
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

@@ -3,7 +3,6 @@ title: Debug Step Out
 description: Debug Step Out
 keywords: ["Debug Step Out", "controlling the target, Debug Step Out"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debug | Step Out
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 Click **Step Out** on the **Debug** menu to resume running on the target. This command executes the rest of the current function and breaks when the function return is completed.
 
-This command is equivalent to pressing SHIFT+F11 or clicking the **Step out (Shift+F11)** button (![screen shot of the step out button](images/tbout.png)) on the toolbar.
+This command is equivalent to pressing SHIFT+F11 or clicking the **Step out (Shift+F11)** button (![screen shot of the step out button.](images/tbout.png)) on the toolbar.
 
 ### <span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 

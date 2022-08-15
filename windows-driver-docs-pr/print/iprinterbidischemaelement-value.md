@@ -12,15 +12,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaElement::Value method
 
 The Value method returns the Bidi Schema element value.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT Value(
@@ -28,14 +26,12 @@ HRESULT Value(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pValue* \[out, retval\]  
 The returned element value.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 

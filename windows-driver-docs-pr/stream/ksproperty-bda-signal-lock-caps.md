@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_BDA\_SIGNAL\_LOCK\_CAPS
@@ -51,8 +50,7 @@ Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCK\_CAPS to determine the lock types that
 
  
 
-Remarks
--------
+## Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the control node or is set to −1 to specify a pin.
 
@@ -60,8 +58,7 @@ The returned 32-bit value is a bitwise OR of [**BDA\_LockType**](/windows-hardwa
 
 The RF tuner node should provide this indication.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

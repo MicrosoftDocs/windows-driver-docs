@@ -12,7 +12,6 @@ keywords:
 - errors WDK WHEA , events
 - events WDK WHEA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WHEA Hardware Error Event Processing Applications

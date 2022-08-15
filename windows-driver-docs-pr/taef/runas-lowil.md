@@ -2,7 +2,6 @@
 title: RunAs LowIL
 description: TAEF runs the test within a Low Integrity Level process.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # RunAs LowIL

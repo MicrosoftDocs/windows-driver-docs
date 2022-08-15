@@ -9,7 +9,6 @@ api_name:
 - TERMINAL_SERVER_DRIVER_MADE_INCORRECT_MEMORY_REFERENCE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xCF: TERMINAL\_SERVER\_DRIVER\_MADE\_INCORRECT\_MEMORY\_REFERENCE
@@ -60,8 +59,7 @@ The TERMINAL\_SERVER\_DRIVER\_MADE\_INCORRECT\_MEMORY\_REFERENCE bug check has a
 
 If the driver responsible for the error can be identified, its name is printed on the blue screen and stored in memory at the location (PUNICODE\_STRING) **KiBugCheckDriver**.
 
-Cause
------
+## Cause
 
 The driver is referencing session space addresses from the system process context. This probably results from the driver queuing an item to a system worker thread.
 

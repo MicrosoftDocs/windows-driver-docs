@@ -10,7 +10,6 @@ api_name:
 api_type:
 - NA
 ms.date: 12/17/2018
-ms.localizationpriority: medium
 ---
 
 # TraceView Control Commands
@@ -246,7 +245,7 @@ This parameter requires **-seq** or **-cir** with *MaxFileSize*. It is not valid
 <td><strong>-prealloc</strong></td>
 <td>Reserves space for the event trace log (.etl) file before allocating it. Use only with <strong>-start</strong>.
 <p>This parameter requires <strong>-seq</strong> or <strong>-cir</strong> with <em>MaxFileSize</em>. It is not valid with <strong>-newfile</strong>.</p>
-<p>In Windows XP and later systems, the system creates the event trace log (.etl) file with a size equal to the <em>MaxFileSize</em> value specified by using the <strong>-seq</strong> or <strong>-cir</strong> parameters. When you stop the session, it reduces the log file to the size of its contents.</p></td>
+<p>The system creates the event trace log (.etl) file with a size equal to the <em>MaxFileSize</em> value specified by using the <strong>-seq</strong> or <strong>-cir</strong> parameters. When you stop the session, it reduces the log file to the size of its contents.</p></td>
 </tr>
 <tr>
 <td><strong>-newfile</strong> <em>MaxFileSize</em></td>

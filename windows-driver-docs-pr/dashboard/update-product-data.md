@@ -3,7 +3,6 @@ title: Update product data
 description: This method, in the Microsoft Hardware API, updates details of a product.
 ms.topic: article
 ms.date: 04/05/2018
-ms.localizationpriority: medium
 ---
 
 # Update product data  
@@ -64,4 +63,4 @@ Refer to [Error codes](get-product-data.md#error-codes) for details.
 
 ## See also
 
-- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+- [hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

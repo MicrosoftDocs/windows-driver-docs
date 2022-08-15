@@ -9,7 +9,6 @@ api_name:
 - .scriptlist (List Loaded Scripts)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .scriptlist (List Loaded Scripts)

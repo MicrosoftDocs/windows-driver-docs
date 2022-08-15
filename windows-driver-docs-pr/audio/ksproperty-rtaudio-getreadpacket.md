@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 12/21/2018
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_RTAUDIO\_GETREADPACKET
@@ -24,10 +23,10 @@ KSPROPERTY\_RTAUDIO\_GETREADPACKET returns information about captured audio pack
  
 |Get|Set|Target|Property descriptor type|Property value type|
 |--- |--- |--- |--- |--- |
-|Yes|No|Pin|[KSPROPERTY](/previous-versions/ff564262(v=vs.85))|[KSRTAUDIO_GETREADPACKET_INFO](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_getreadpacket_info)|
+|Yes|No|Pin|[KSPROPERTY](../stream/ksproperty-structure.md)|[KSRTAUDIO_GETREADPACKET_INFO](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_getreadpacket_info)|
 
 
-The property descriptor (instance data) is a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure. Before sending the request, the client loads the structure with values that indicate the packet number, packet length and other information.
+The property descriptor (instance data) is a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure. Before sending the request, the client loads the structure with values that indicate the packet number, packet length and other information.
 
 The property value is a variable of type [**KSRTAUDIO\_GETREADPACKET\_INFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_getreadpacket_info).
 
@@ -37,8 +36,7 @@ A KSPROPERTY\_RTAUDIO\_GETREADPACKET property request returns STATUS\_SUCCESS to
 
 STATUS\_DEVICE\_NOT\_READY - The driver returns this error if no new data is available.
 
-Remarks
--------
+## Remarks
 
 Before reading captured audio data from the WaveRT buffer, the OS calls this routine to get information about the available data.
 
@@ -46,8 +44,7 @@ The packet number identifies a packet within the stream. This resets to zero whe
 
 The packet size is the WaveRT buffer size divided by the NotificationCount passed to [**KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION**](ksproperty-rtaudio-buffer-with-notification.md). The OS may call this routine at any time. In normal operation, the OS calls this routine after the driver sets the buffer notification event or after a previous call returns true for MoreData. When the OS calls this routine, the driver may assume that the OS has finished reading all previous packets. If the hardware has captured enough data, the driver may immediately burst the next complete packet to the WaveRT buffer and set the buffer event again. In the case of capture overflow (when the OS does not read data quickly enough) the audio driver may drop or overwrite some audio data. The audio driver drops or overwrites oldest data first, The audio driver may continue to advance its internal packet counter even though the OS may not have read the data.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -72,6 +69,4 @@ Requirements
 [**KSPROPERTY\_RTAUDIO\_SETWRITEPACKET**](ksproperty-rtaudio-setwritepacket.md)
 
 [UsePositionLock](usepositionlock.md)
-
- 
 

@@ -3,7 +3,6 @@ title: CPixel Support Methods for Lightweight MIP Maps
 description: CPixel Support Methods for Lightweight MIP Maps
 keywords: ["CPixel interface, described"]
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # CPixel Support Methods for Lightweight MIP Maps

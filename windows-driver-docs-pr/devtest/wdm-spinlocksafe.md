@@ -9,7 +9,6 @@ api_name:
 - SpinLockSafe
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # SpinLockSafe rule (wdm)
@@ -23,8 +22,7 @@ Static Driver Verifier can report false violations of this rule if the driver in
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -49,8 +47,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoAcquireCancelSpinLock**](/previous-versions/windows/hardware/drivers/ff548196(v=vs.85))
 [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)

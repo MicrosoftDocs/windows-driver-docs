@@ -9,7 +9,6 @@ api_name:
 - bl (Breakpoint List)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # bl (Breakpoint List)
@@ -59,8 +58,7 @@ Specifies the ID numbers of the breakpoints to list. If you omit *Breakpoints*, 
 
 For more information about and examples of how to use breakpoints, other breakpoint commands and methods of controlling breakpoints, and how to set breakpoints in user space from a kernel debugger, see [Using Breakpoints](using-breakpoints.md). For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).
 
-Remarks
--------
+## Remarks
 
 For each breakpoint, the command displays the following information:
 

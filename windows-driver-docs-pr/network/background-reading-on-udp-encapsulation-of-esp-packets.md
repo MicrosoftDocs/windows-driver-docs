@@ -4,7 +4,6 @@ description: Background Reading on UDP Encapsulation of ESP Packets
 keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , background reading
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Background Reading on UDP Encapsulation of ESP Packets

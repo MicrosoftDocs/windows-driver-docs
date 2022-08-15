@@ -1,11 +1,8 @@
 ---
 title: Windows driver samples
 description: Windows 10 driver samples are available on the Microsoft Samples portal and on GitHub.
-ms.assetid: 4c51f6c3-a84d-4790-82df-a50570af02bd
-ms.date: 12/03/2019
+ms.date: 08/13/2021
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Windows driver samples
@@ -14,9 +11,9 @@ You can browse and download individual Windows 10 driver samples on the [Microso
 
 Earlier versions of Windows driver samples are archived at Microsoft Archive on GitHub:
 
-- [Windows 8.1 driver samples](https://go.microsoft.com/fwlink/p/?LinkId=618052)
+- [Windows 8.1 driver samples](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Driver%20Kit%20Sample/Windows%20Driver%20Kit%20(WDK)%208.1%20Samples)
 
-- [Windows 8 driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616509)
+- [Windows 8 driver samples](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Driver%20Kit%20Sample/Windows%20Driver%20Kit%20(WDK)%208.0%20Samples)
 
 For Windows 7, samples were included in the Windows Driver Kit (WDK).
 

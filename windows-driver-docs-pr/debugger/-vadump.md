@@ -1,5 +1,5 @@
 ---
-title: vadump
+title: vadump (WinDbg)
 description: The vadump extension displays all virtual memory ranges and their corresponding protection information.
 keywords: ["vadump Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - vadump
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !vadump
@@ -52,8 +51,7 @@ Causes the display to include information about each original allocation region 
 
 To view memory protection information for a single virtual address, use [**!vprot**](-vprot.md). For information about memory protection, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 Here is an example:
 

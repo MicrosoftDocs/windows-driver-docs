@@ -1,5 +1,5 @@
 ---
-title: devnode
+title: devnode (WinDbg)
 description: The devnode extension displays information about a node in the device tree.
 keywords: ["device node", "device tree", "devnode Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - devnode
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !devnode
@@ -78,8 +77,7 @@ Specifies the name of a service. If this is included, only those device nodes dr
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) for applications of this extension command. For information about device trees, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The **!devnode 1** command lists all pending removals of device objects.
 

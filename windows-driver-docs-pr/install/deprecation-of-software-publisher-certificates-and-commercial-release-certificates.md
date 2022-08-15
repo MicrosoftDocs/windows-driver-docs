@@ -1,23 +1,28 @@
 ---
-title: Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates
+title: Deprecation of Software Publisher Certificates, Commercial Release and Test Certificates
 description: Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates
 keywords:
 - Trusted Root Certification Authorities certificate store WDK
 - Trusted Publishers certificate store WDK
-ms.date: 08/01/2019
-ms.localizationpriority: medium
+ms.date: 09/22/2021
 ---
 
 # Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates
+
+> [!CAUTION] 
+> The majority of cross-certificates expired in July 2021.
+> You cannot use code signing certificates that chain to expired cross-certificates to create new kernel mode digital signatures for any version of Windows.
 
 The [Microsoft Trusted Root Program](/security/trusted-root/program-requirements) no longer supports root certificates that have kernel mode signing capabilities.
 
 For policy requirements, see [Windows 10 Kernel Mode Code Signing Requirements](/security/trusted-root/program-requirements#f-windows-10-kernel-mode-code-signing-kmcs-requirements).
 
-Existing [cross-signed root certificates](cross-certificates-for-kernel-mode-code-signing.md) with kernel mode code signing capabilities will continue working until expiration.
-As a result, all [software publisher certificates](software-publisher-certificate.md), [commercial release certificates](commercial-release-certificate.md), and [commercial test certificates](commercial-test-certificate.md) that chain back to these root certificates also become invalid on the same schedule.  To get your driver signed, first [Register for the Windows Hardware Dev Center program](../dashboard/register-for-the-hardware-program.md).
+Existing [cross-signed root certificates](cross-certificates-for-kernel-mode-code-signing.md) with kernel mode code signing capabilities will continue working until expiration. All software publisher certificates, commercial release certificates, and commercial test certificates that chain back to these root certificates also become invalid on the same schedule.
+
+To get your driver signed, first [Register for the Windows Hardware Dev Center program](../dashboard/hardware-program-register.md).
 
 ## Frequently asked questions
+
 * [What is the expiration schedule of the trusted cross-certificates?](#what-is-the-expiration-schedule-of-the-trusted-cross-certificates)
 * [What alternatives to cross signed certificates are available for testing drivers?](#what-alternatives-to-cross-signed-certificates-are-available-for-testing-drivers)
 * [What will happen to my existing signed driver packages?](#what-will-happen-to-my-existing-signed-driver-packages)
@@ -30,11 +35,10 @@ As a result, all [software publisher certificates](software-publisher-certificat
 * [Starting in 2021, will Microsoft be the sole provider of production kernel mode code signatures?](#starting-in-2021-will-microsoft-be-the-sole-provider-of-production-kernel-mode-code-signatures)
 * [Hardware Dev Center doesn't provide driver signing for Windows XP, how can I have my drivers run in XP?](#hardware-dev-center-doesnt-provide-driver-signing-for-windows-xp-how-can-i-have-my-drivers-run-in-xp)
 * [How do production signing options differ by Windows version?](#how-do-production-signing-options-differ-by-windows-version)
-* [Will I be able to continue signing drivers if my certificate chains to a cross-cert that expires after 2021?](#will-i-be-able-to-continue-signing-drivers-with-a-certificate-that-chains-to-a-cross-cert-that-expires-after-july-1-2021)
 
 ### What is the expiration schedule of the trusted cross-certificates?
 
-The majority of cross-signed root certificates will expire in 2021, according to the following schedule:
+The majority of cross-signed root certificates expired in 2021, according to the following schedule:
 
 |Common Name| Expiration date|
 |-----------|---------------|
@@ -100,7 +104,7 @@ If your Cross Certificate Chain ends in `Microsoft Code Verification Root`, your
 
 To view the cross certificate chain, run `signtool verify /v /kp <mydriver.sys>`. For example:
 
-![[Finding Cross Certificate Chain]](images/signtoolcrosssigexample.png)
+![[Finding Cross Certificate Chain.]](images/signtoolcrosssigexample.png)
 
 ### How can we automate Microsoft Test Signing to work with our build processes?
 
@@ -118,23 +122,19 @@ Drivers can still be signed with a 3rd party issued code signing certificate. Ho
 
 ### How do production signing options differ by Windows version?
 
-|Driver runs on| Drivers signed before July 1 2021 by| Driver signed on or after July 1 2021 by |
-| - | - | - |
-|Windows Server 2008 and later, Windows 7, Windows 8| WHQL or cross-signed drivers| WHQL or drivers cross-signed before July 1 2021|
-|Windows 10| WHQL or attested | WHQL or attested |
+> [!WARNING]
+> Cross-signing is no longer accepted for driver signing. Using cross certificates to sign kernel-mode drivers is a violation of the Microsoft Trusted Root Program (TRP) policy.
+> Certificates in violation of Microsoft TRP policies will be revoked by the CA.
 
-If you have challenges signing your driver with WHQL, please report the specifics using one of the following:
+If your driver runs on Windows 7, 8, or 8.1, your driver must be signed through the Windows Hardware Compatibility Program. To get started, see [Create a new hardware submission](../dashboard/hardware-submission-create.md).
+
+For Windows 10, use either WHCP or [attestation signing](../dashboard/code-signing-attestation.md).
+
+If you have challenges signing your driver with WHCP, please report the specifics using one of the following:
 
 * Use the Microsoft Collaborate portal, available through the [Microsoft Partner Center Dashboard](https://partner.microsoft.com/dashboard/collaborate), to create a feedback bug.
 * Go to [Windows hardware engineering support](https://developer.microsoft.com/windows/hardware/support), select the **Contact us** tab, and in the **Developer support topic** dropdown, select **HLK/HCK**. Then select **Submit an incident**.
 
-### Will I be able to continue signing drivers with a certificate that chains to a cross-cert that expires after July 1, 2021?
-
-No, kernel-mode drivers must be signed with a WHQL signature after July 1st, 2021. You cannot use a certificate that chains to a cross-cert that expires after July 1, 2021 to sign kernel-mode drivers. Using these certificates to sign kernel-mode drivers after this date is a violation of the Microsoft Trusted Root Program (TRP) policy. Certificates in violation of Microsoft TRP policies will be revoked by the CA. Additional certificates may be present on the kernel-mode driver, however Windows ignores those signatures for the purpose of validating the driver.
-
 ## Related information
 
-* [Register for the Hardware Program](../dashboard/register-for-the-hardware-program.md)
-* [Software Publisher Certificate](software-publisher-certificate.md)
-* [Commercial Release Certificate](commercial-release-certificate.md)
-* [Commercial Test Certificate](commercial-test-certificate.md)
+* [Register for the Hardware Program](../dashboard/hardware-program-register.md)

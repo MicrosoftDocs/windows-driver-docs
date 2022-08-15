@@ -9,7 +9,6 @@ api_name:
 - OutputBufferAPI
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # OutputBufferAPI rule (kmdf)
@@ -24,8 +23,7 @@ The **OutputBufferAPI** rule specifies that the correct DDIs for buffer retrieva
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -50,8 +48,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfRequestRetrieveOutputBuffer**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputbuffer)
 [**WdfRequestRetrieveOutputMemory**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestretrieveoutputmemory)

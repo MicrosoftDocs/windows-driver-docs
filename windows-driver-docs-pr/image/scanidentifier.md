@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ScanIdentifier element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **ScanIdentifier** element contains a device-specific string that the scanner provides through a [**ScanAvailableEvent**](scanavailableevent.md) event.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScanIdentifier>
@@ -26,13 +24,11 @@ Usage
 </wscn:ScanIdentifier>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. Any valid character string.
 
@@ -63,8 +59,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The client can send the **ScanIdentifier** element to the WSD Scan Service in a [**CreateScanJobRequest**](createscanjobrequest.md) operation element. The WSD Scan Service can use **ScanIdentifier** to ensure that the correct client is requesting the scan after a user has selected the destination.
 

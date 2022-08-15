@@ -3,7 +3,6 @@ title: Number of user mode reliability for crashes in creative applications (Exp
 description: The measure aggregates telemetry from a 7-day sliding window into a ratio of crashes in creative applications, caused by the graphics drivers, over total runtime in years 
 ms.topic: article
 ms.date: 05/20/2019
-ms.localizationpriority: medium
 ---
 
 # Number of user mode reliability for crashes in creative applications, normalized by usage, is less than or equal to the baseline goal (Expanded)
@@ -23,14 +22,14 @@ This measure is normalized by usage, less than or equal to the baseline goal.
 |**Measurement criteria**|Aggregation of instances|
 |**Minimum population**|1,000 hours of creative application runtime|
 |**Passing criteria**|<= 10 crashes per year of runtime|
-|**Measure ID**|22843595|
+|**Measure ID**|31470086|
 
 ## Calculation
 
 1. The measure aggregates telemetry from a 7-day sliding window into a **ratio of crashes in creative applications, caused by the graphics driver, over total runtime in years**.
 2. *Total crashes in creative applications = count(crashes in creative applications on machines that have the driver)*
 3. *Total creative applications runtime = sum(runtime of creative applications, for each machine that has the driver)*
-4. *Runtime in years = Total creative applications runtime \* 60 (minute) \* 60 (hour) \* 24 (day) \* 365 (year)*
+4. *Runtime in years = Total creative applications runtime in seconds  / (60 (minute) \* 60 (hour) \* 24 (day) \* 365 (year))*
 
 ### Final calculation
 

@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # JobElements element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **JobElements** element contains all of the job-related elements that a client requests through a call to [**GetJobElementsRequest**](getjobelementsrequest.md).
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobElements>
@@ -26,8 +24,7 @@ Usage
 </wscn:JobElements>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -69,8 +66,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service returns the **JobElements** element in [**GetJobElementsResponse**](getjobelementsresponse.md).
 

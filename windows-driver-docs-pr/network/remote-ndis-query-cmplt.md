@@ -2,7 +2,6 @@
 title: 'REMOTE_NDIS_QUERY_CMPLT'
 description: 'A Remote NDIS device will respond to a REMOTE_NDIS_QUERY_MSG message with a REMOTE_NDIS_QUERY_CMPLT message.'
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # REMOTE\_NDIS\_QUERY\_CMPLT
@@ -67,8 +66,7 @@ A Remote NDIS device will respond to a [**REMOTE\_NDIS\_QUERY\_MSG**](remote-ndi
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

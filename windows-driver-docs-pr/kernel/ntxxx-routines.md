@@ -1,7 +1,6 @@
 ---
 title: NtXxx Routines
 description: NtXxx Routines
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -88,11 +87,11 @@ The following table summarizes the **Nt*Xxx*** and **Zw*Xxx*** versions of the r
 </tr>
 <tr class="even">
 <td><p>NtCurrentProcess</p></td>
-<td><p><a href="/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;ZwCurrentProcess&lt;/strong&gt;](./mm-bad-pointer.md)"><strong>ZwCurrentProcess</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/kernel/zwcurrentprocess"><strong>ZwCurrentProcess</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>NtCurrentThread</p></td>
-<td><p><a href="/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;ZwCurrentThread&lt;/strong&gt;](./mm-bad-pointer.md)"><strong>ZwCurrentThread</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/kernel/zwcurrentthread"><strong>ZwCurrentThread</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>NtDeleteFile</p></td>

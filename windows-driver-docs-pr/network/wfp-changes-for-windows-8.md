@@ -2,7 +2,6 @@
 title: WFP Changes for Windows 8
 description: WFP Changes for Windows 8
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WFP Changes for Windows 8

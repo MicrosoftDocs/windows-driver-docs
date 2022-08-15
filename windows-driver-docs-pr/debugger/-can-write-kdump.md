@@ -9,7 +9,6 @@ api_name:
 - can_write_kdump
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !can\_write\_kdump
@@ -60,8 +59,7 @@ Specifies that the extension should determine if there is enough space for a ful
 
  
 
-Remarks
--------
+## Remarks
 
 If no *Option* is specified, then the extension will determine if there is enough space for a summary kernel dump.
 

@@ -1,5 +1,5 @@
 ---
-title: INF DDInstall.HW Section
+title: INF DDInstall.HW section
 description: DDInstall.HW sections are typically used for installing multifunction devices, for installing PnP filter drivers, and for setting up any user-accessible device-specific but driver-independent information in the registry, whether with explicit AddReg directives or with Include and Needs entries.
 keywords:
 - INF DDInstall.HW Section Device and Driver Installation
@@ -9,23 +9,21 @@ api_name:
 - INF DDInstall.HW Section
 api_type:
 - NA
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 06/02/2022
 ---
 
-# INF DDInstall.HW Section
+# INF DDInstall.HW section
 
-
-<em>DDInstall</em>**.HW** sections are typically used for installing multifunction devices, for installing PnP filter drivers, and for setting up any user-accessible device-specific but driver-independent information in the registry, whether with explicit [**AddReg**](inf-addreg-directive.md) directives or with **Include** and **Needs** entries.
+_DDInstall_.**HW** sections are typically used for installing multifunction devices, for installing PnP filter drivers, and for setting up any user-accessible device-specific but driver-independent information in the registry, whether with explicit [**AddReg**](inf-addreg-directive.md) directives or with **Include** and **Needs** entries.
 
 ```inf
 [install-section-name.HW] |
 [install-section-name.nt.HW] |
 [install-section-name.ntx86.HW] |
+[install-section-name.ntia64.HW] | (Windows XP and later versions of Windows)
+[install-section-name.ntamd64.HW] | (Windows XP and later versions of Windows)
 [install-section-name.ntarm.HW] | (Windows 8 and later versions of Windows)
-[install-section-name.ntarm64.HW] | (Windows 10 version 1709 and later versions of Windows)
-[install-section-name.ntia64.HW] |  (Windows XP and later versions of Windows)
-[install-section-name.ntamd64.HW]  (Windows XP and later versions of Windows)
+[install-section-name.ntarm64.HW] (Windows 10 version 1709 and later versions of Windows)
  
 [AddReg=add-registry-section[,add-registry-section]...] ...
 [Include=filename.inf[,filename2.inf]...]
@@ -36,124 +34,87 @@ ms.localizationpriority: medium
 
 ## Entries
 
+Not all valid entries are supported in a [Universal INF](using-a-universal-inf-file.md).  The following lists which directives are valid in a universal INF and which are not.
 
-<a href="" id="addreg-add-registry-section--add-registry-section----"></a>**AddReg=**<em>add-registry-section</em>\[**,**<em>add-registry-section</em>\]...  
-References one or more INF-writer-defined *add-registry-sections* elsewhere in the INF file for the devices covered by this <em>DDInstall</em>**.HW** section. The *add-registry-section* typically installs filters and/or stores per-device information in the registry. An **HKR** specification in such an *add-registry-section* specifies the device's *hardware key*, a device-specific registry subkey that contains information about the device. A hardware key is also called a device key. For more info, see [Registry Trees and Keys for Devices and Drivers](./registry-trees-and-keys.md). A driver package can add settings via an INF by using an **HKR** specification in an add-registry-section referenced by a **DDInstall.HW section**. 
+### Supported in a Universal INF
+
+**AddReg=**_add-registry-section_[,_add-registry-section_]...  
+References one or more INF-writer-defined _add-registry-sections_ elsewhere in the INF file for the devices covered by this _DDInstall_.**HW** section. The _add-registry-section_ typically installs filters and/or stores per-device information in the registry. An **HKR** specification in such an _add-registry-section_ specifies the device's _hardware key_, a device-specific registry subkey that contains information about the device. A hardware key is also called a device key. For more info, see [Registry Trees and Keys for Devices and Drivers](./registry-trees-and-keys.md). A driver package can add settings via an INF by using an **HKR** specification in an add-registry-section referenced by a **DDInstall.HW section**.
 
 For more information, see [**INF AddReg Directive**](inf-addreg-directive.md).
 
-<a href="" id="include-filename-inf--filename2-inf----"></a>**Include=**<em>filename</em>**.inf**\[**,**<em>filename2</em>**.inf**\]...  
+**Include=**_filename_.**inf**[,_filename2_.**inf**]...  
 Specifies one or more additional system-supplied INF files that contain sections needed to install this device. If this entry is specified, usually so is a **Needs** entry.
 
-For more information about the **Include** entry and restrictions on its use, see [Specifying the Source and Target Locations for Device Files](specifying-the-source-and-target-locations-for-device-files.md).
+**Needs=**_inf-section-name_[,_inf-section-name_]...  
+Specifies the named sections that must be processed during the installation of this device. Typically, such a named section is a _DDInstall_.**HW** section within a system-supplied INF file that is listed in an **Include** entry. However, it can be any section that is referenced within such a _DDInstall_.**HW** section of the included INF.
 
-<a href="" id="needs-inf-section-name--inf-section-name----"></a>**Needs=**<em>inf-section-name</em>\[**,**<em>inf-section-name</em>\]...  
-Specifies the named sections that must be processed during the installation of this device. Typically, such a named section is a <em>DDInstall</em>**.HW** section within a system-supplied INF file that is listed in an **Include** entry. However, it can be any section that is referenced within such a <em>DDInstall</em>**.HW** section of the included INF.
+### Not supported in a Universal INF
 
-**Needs** entries cannot be nested. For more information about the **Needs** entry and restrictions on its use, see [Specifying the Source and Target Locations for Device Files](specifying-the-source-and-target-locations-for-device-files.md).
+**DelReg=**_del-registry-section_[,_del-registry-section_]...  
+References one or more INF-writer-defined *delete-registry-section*s elsewhere in the INF file for the drivers of the devices covered by this _DDInstall_ section. Such a delete-registry section removes stale registry information for a previously installed device/driver from the target computer. An **HKR** specification in such a delete-registry section designates the same subkey as for **AddReg**.
 
-<a href="" id="delreg-del-registry-section--del-registry-section----"></a>**DelReg=**<em>del-registry-section</em>\[**,**<em>del-registry-section</em>\]...  
-References one or more INF-writer-defined *delete-registry-section*s elsewhere in the INF file for the drivers of the devices covered by this *DDInstall* section. Such a delete-registry section removes stale registry information for a previously installed device/driver from the target computer. An **HKR** specification in such a delete-registry section designates the same subkey as for **AddReg**.
+This directive is rarely used, except in an INF file that upgrades a previous installation of the same devices/models listed in the per-manufacturer per-_Models_ section that defined the name of this _DDInstall_ section. For more information, see [**INF DelReg Directive**](inf-delreg-directive.md).
 
-This directive is rarely used, except in an INF file that upgrades a previous installation of the same devices/models listed in the per-manufacturer per-*Models* section that defined the name of this *DDInstall* section. For more information, see [**INF DelReg Directive**](inf-delreg-directive.md).
-
-<a href="" id="bitreg-bit-registry-section--bit-registry-section-----"></a>**BitReg=**<em>bit-registry-section</em>\[**,**<em>bit-registry-section</em>\] ...  
+**BitReg=**_bit-registry-section_[,_bit-registry-section_] ...  
 Is valid in this section, but almost never used. An **HKR** specification in a referenced bit-registry section designates the same subkey as for **AddReg**. For more information, see [**INF BitReg Directive**](inf-bitreg-directive.md).
 
-Remarks
--------
+## Remarks
 
-The case-insensitive extensions to the *install-section-name* shown in the formal syntax statement can be inserted into such a <em>DDInstall</em>**.HW** section name in cross-platform INF files. For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, and **.ntarm64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
+The case-insensitive extensions to the _install-section-name_ shown in the formal syntax statement can be inserted into such a _DDInstall_.**HW** section name in cross-platform INF files. For more information about how to use the system-defined **.nt**, **.ntx86**, **.ntia64**, **.ntamd64**, **.ntarm**, and **.ntarm64** extensions, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
 
-Any <em>DDInstall</em>**.HW** section must have one of the following:
+Any _DDInstall_.**HW** section must have one of the following:
 
 - An **AddReg** directive.
-- An **Include** entry that specifies another INF file. In this case, the <em>DDInstall</em>**.HW** section must also contain a corresponding **Needs** entry that specifies a section in the other INF file. This section is used to set up the necessary registry information.
+- An **Include** entry that specifies another INF file. In this case, the _DDInstall_.**HW** section must also contain a corresponding **Needs** entry that specifies a section in the other INF file. This section is used to set up the necessary registry information.
 
-Each directive in a <em>DDInstall</em>**.HW** section can reference more than one INF-writer-defined section. However, each additional named section must be separated from the next with a comma (,).
+Each directive in a _DDInstall_.**HW** section can reference more than one INF-writer-defined section. However, each additional named section must be separated from the next with a comma (,).
 
 Each such section name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
 For more information about how to install multifunction devices, see [Supporting Multifunction Devices](../multifunction/index.md).
 
-Examples
---------
+## Examples
 
-This example shows how the CD-ROM device class installer uses <em>DDInstall</em>**.HW** sections and <em>DDInstall</em>**.Services** sections to support both CD audio and changer functionality by creating the appropriate registry sections, and setting these up as PnP upper filter drivers.
+This example shows how a driver package can use the _DDInstall_.**HW** sections and _DDInstall_.**Services** sections to add both a function driver and a PnP upper filter driver.
 
 ```inf
-;;
-;; Installation section for cdaudio. Sets cdrom as the service 
-;; and adds cdaudio as a PnP upper filter driver. 
-;;
-[cdaudio_install]
-CopyFiles=cdaudio_copyfiles,cdrom_copyfiles
+[Example_DDInstall]
+CopyFiles=example_copyfiles
 
-[cdaudio_install.HW]
-AddReg=nosync_addreg,cdaudio_addreg
- ; cdaudio_addreg required to register this as a PnP filter driver
+[Example_DDInstall.HW]
+AddReg=filter_addreg
 
-[cdaudio_install.Services]
-AddService=cdrom,0x00000002,cdrom_ServiceInstallSection
-AddService=cdaudio,,cdaudio_ServiceInstallSection
+[filter_addreg]
+HKR,,"UpperFilters",0x00010000,"ExampleUpperFilter" ; [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) value 
 
-[changer_install]
-CopyFiles=changer_copyfiles,cdrom_copyfiles
+[Example_DDInstall.Services]
+AddService=ExampleFunctionDriver,0x00000002,function_ServiceInstallSection
+AddService=ExampleUpperFilter,,filter_ServiceInstallSection
 
-[changer_install.HW]
-AddReg=changer_addreg
-
-; ... changer_install.Services section similar to cdaudio's
-
-; ... some similar cdrom_install(.HW)/addreg sections omitted 
-
-[cdaudio_addreg] ; changer_addreg section has similar entry
-HKR,,"UpperFilters",0x00010000,"cdaudio" ; [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) value 
-
-;
-; Use next section to disable synchronous transfers to this device. 
-; Sync transfers will always be turned off by default in this INF 
-; for any cdrom-type device.
-;
-[nosync_addreg]
-HKR,,"DefaultRequestFlags",0x00010001,8
-
-[autorun_addreg]
-HKLM,"System\CurrentControlSet\Services\cdrom","AutoRun",0x00010003,1
-;;
-;; service-install sections for cdrom, cdaudio, and changer
-;;
-[cdrom_ServiceInstallSection]
-DisplayName    = %cdrom_ServiceDesc%
+[function_ServiceInstallSection]
+DisplayName    = %function_ServiceDesc%
 ServiceType    = 1
-StartType      = 1
+StartType      = 3
 ErrorControl   = 1
-ServiceBinary  = %12%\cdrom.sys
-LoadOrderGroup = SCSI CDROM Class
-AddReg         = autorun_addreg
+ServiceBinary  = %13%\ExampleFunctionDriver.sys
 
-[cdaudio_ServiceInstallSection]
-DisplayName    = %cdaudio_ServiceDesc%
+[filter_ServiceInstallSection]
+DisplayName    = %filter_ServiceDesc%
 ServiceType    = 1
-StartType      = 1
+StartType      = 3
 ErrorControl   = 1
-ServiceBinary  = %12%\cdaudio.sys
-
-; ... changer_ServiceInstallSection similar to cdaudio's
+ServiceBinary  = %13%\ExampleUpperFilter.sys
 ```
 
 ## See also
-
 
 [**AddReg**](inf-addreg-directive.md)
 
 [**BitReg**](inf-bitreg-directive.md)
 
-[***DDInstall***](inf-ddinstall-section.md)
+[**_DDInstall_**](inf-ddinstall-section.md)
 
-[***DDInstall*.Services**](inf-ddinstall-services-section.md)
+[**_DDInstall.Services_**](inf-ddinstall-services-section.md)
 
 [**DelReg**](inf-delreg-directive.md)
-
- 
-

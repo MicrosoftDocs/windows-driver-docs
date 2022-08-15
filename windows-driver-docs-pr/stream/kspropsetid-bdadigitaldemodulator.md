@@ -2,7 +2,6 @@
 title: KSPROPSETID\_BdaDigitalDemodulator
 description: KSPROPSETID\_BdaDigitalDemodulator
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_BdaDigitalDemodulator

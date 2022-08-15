@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_BDA\_NODE\_DESCRIPTORS
-description: Clients use KSPROPERTY\_BDA\_NODE\_DESCRIPTORS to retrieve a list of nodes.
+title: KSPROPERTY_BDA_NODE_DESCRIPTORS
+description: Clients use KSPROPERTY_BDA_NODE_DESCRIPTORS to retrieve a list of nodes.
 keywords: ["KSPROPERTY_BDA_NODE_DESCRIPTORS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,79 +10,31 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/13/2021
 ---
 
-# KSPROPERTY\_BDA\_NODE\_DESCRIPTORS
+# KSPROPERTY_BDA_NODE_DESCRIPTORS
 
+Clients use **KSPROPERTY_BDA_NODE_DESCRIPTORS** to retrieve a list of nodes.
 
-Clients use KSPROPERTY\_BDA\_NODE\_DESCRIPTORS to retrieve a list of nodes.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_bda_node_descriptors_ks"></span><span id="DDK_KSPROPERTY_BDA_NODE_DESCRIPTORS_KS"></span>
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | No | Filter | KSPROPERTY | List of GUIDs |
 
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p>Filter</p></td>
-<td><p>KSPROPERTY</p></td>
-<td><p>List of GUIDs</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-Remarks
--------
+## Remarks
 
 The list of nodes is an array of GUIDs for available nodes.
 
 For a list of BDA nodes that are available to create in a template topology, see [BDA Node Category GUIDs](bda-node-category-guids.md).
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Bdamedia.h (include Bdamedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** bdamedia.h (include Bdamedia.h)
 
 ## See also
 
-
 [**BdaPropertyNodeDescriptors**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdapropertynodedescriptors)
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
-
- 
-
+[**KSPROPERTY**](ksproperty-structure.md)

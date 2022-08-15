@@ -10,7 +10,6 @@ api_location:
 - Devpkey.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -57,17 +56,15 @@ The PKEY_Device_DriverVersion device property represents the version of the driv
 
  
 
-Remarks
--------
+## Remarks
 
 The value of DEVPKEY_Device_DriverVersion is supplied by the [**INF DriverVer directive**](./inf-driverver-directive.md) that is included in the [**INF Version section**](./inf-version-section.md) of an INF file that installs a device or is supplied by a device-specific INF **DriverVer** directive that is included in the [**INF *DDInstall* section**](./inf-ddinstall-section.md) that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of PKEY_Device_DriverVersion.
+You can call [**CM_Get_DevNode_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_propertyw) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of PKEY_Device_DriverVersion.
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverVersion property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **DriverVersion** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](./accessing-device-driver-properties.md).
 
-Requirements
-------------
+## Requirements
 
 **Version**: Windows Vista and later versions of Windows
 **Header**: Devpkey.h (include Devpkey.h)

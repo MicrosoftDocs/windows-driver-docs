@@ -2,7 +2,6 @@
 title: Handling SR-IOV, VMQ, and RSS Standardized INF Keywords
 description: Handling SR-IOV, VMQ, and RSS Standardized INF Keywords
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling SR-IOV, VMQ, and RSS Standardized INF Keywords
@@ -64,7 +63,7 @@ When NDIS calls the [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/
 
 The following table describes how the miniport driver determines SR-IOV, VMQ, or RSS preference in order to enable the correct interface in the network adapter.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="16%" />
 <col width="16%" />

@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdftagtracker
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdftagtracker
@@ -48,8 +47,7 @@ KMDF 1, UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 To retrieve a pointer to a tag tracker, use the [**!wdfkd.wdfobject**](-wdfkd-wdfobject.md) extension on an internal framework object pointer.
 

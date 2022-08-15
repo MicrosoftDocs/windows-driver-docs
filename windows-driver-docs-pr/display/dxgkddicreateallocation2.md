@@ -11,7 +11,6 @@ api_location:
 api_type:
 - UserDefined
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # DXGKDDI\_CREATEALLOCATION2 callback function
@@ -21,8 +20,7 @@ ms.localizationpriority: medium
 
 The *DxgkDdiCreateAllocation2* function is reserved for system use. Do not implement it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 DXGKDDI_CREATEALLOCATION2 DxgkDdiCreateAllocation2;
@@ -34,8 +32,7 @@ NTSTATUS DxgkDdiCreateAllocation2(
 { ... }
 ```
 
-Parameters
-----------
+## Parameters
 
 *hAdapter*
 This parameter is reserved for system use.
@@ -43,8 +40,7 @@ This parameter is reserved for system use.
 *pCreateAllocation*
 This parameter is reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

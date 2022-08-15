@@ -9,7 +9,6 @@ api_name:
 - ATTEMPTED_WRITE_TO_CM_PROTECTED_STORAGE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x11C: ATTEMPTED\_WRITE\_TO\_CM\_PROTECTED\_STORAGE
@@ -57,8 +56,7 @@ The ATTEMPTED\_WRITE\_TO\_CM\_PROTECTED\_STORAGE bug check has a value of 0x0000
 
  
 
-Remarks
--------
+## Remarks
 
 When it is possible, the name of the driver that is attempting the write operation is printed as a Unicode string on the bug check screen and then saved in KiBugCheckDriver.
 

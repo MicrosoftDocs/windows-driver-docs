@@ -9,7 +9,6 @@ api_name:
 - MiniportPause_Return
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # MiniportPause\_Return rule (ndis)
@@ -19,8 +18,7 @@ The **MiniportPause\_Return** rule specifies that the [*MiniportPause*](/windows
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

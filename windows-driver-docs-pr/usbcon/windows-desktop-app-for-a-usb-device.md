@@ -1,8 +1,7 @@
 ---
 description: Learn about how an application can call WinUSB Functions to communicate with a USB device.
 title: Windows desktop app for a USB device
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 11/01/2021
 ---
 
 # Windows desktop app for a USB device
@@ -34,11 +33,9 @@ It is simpler to use WinUSB functions to communicate with a device than it is to
 
 2. Get a test USB device and its hardware specification.
 
-    Use the specification to determine the functionality of the app and the related design decisions. For learning purposes, popular choices include:
+    - Use the specification to determine the functionality of the app and the related design decisions.
 
-    - OSR USB FX2 learning kit available from the [Open System Resources (OSR)](https://www.osr.com/online-seminars/) store. The kit is the most suitable to study USB samples included in this documentation set.
-
-    - Microsoft USB Test Tool (MUTT) devices available from [JJG Technologies](http://www.jjgtechnologies.com/Mutt20.htm). This device requires firmware from Microsoft available at [Download MUTT Software Package](./mutt-software-package.md#download-mutt-software-package).
+    - Microsoft USB Test Tool (MUTT) devices are available from [JJG Technologies](http://www.jjgtechnologies.com/Mutt20.htm). This device requires firmware from Microsoft available at [Download MUTT Software Package](./mutt-software-package.md#download-mutt-software-package).
 
 3. Write a skeleton app that obtains a handle to the device.
 

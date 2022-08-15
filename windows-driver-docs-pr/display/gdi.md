@@ -8,31 +8,19 @@ keywords:
 - Graphics Device Interface WDK Windows 2000 display
 - GDI WDK Windows 2000 display
 - drawing WDK GDI
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 03/10/2022
 ---
 
 # GDI
 
+The topics in this section describe the Graphics Device Interface (GDI) and its relationship to printer drivers and display adapter drivers.
 
-## <span id="ddk_gdi_gg"></span><span id="DDK_GDI_GG"></span>
-
-
-The topics in this section describe Graphics Device Interface (GDI) and its relationship to printer drivers and display adapter drivers.
-
-Display adapter drivers that run on Windows Vista can adhere to one of two models: the Windows Vista display driver model or the Windows 2000 display driver model. The topics in this section apply to printer drivers and to drivers in the Windows 2000 display driver model, but they do not apply to drivers in the Windows Vista display driver model.
+> [!NOTE]
+>
+> WDDM drivers do not directly use the services of the GDI engine; therefore, the topics in this section are not relevant to writing display drivers for the WDDM driver model.
 
 [Graphics System Overview](graphics-system-overview.md)
 
 [Using the Graphics DDI](using-the-graphics-ddi.md)
 
 [GDI Support for Graphics Drivers](gdi-support-for-graphics-drivers.md)
-
- 
-
- 
-
-
-
-
-

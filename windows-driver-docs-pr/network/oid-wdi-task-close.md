@@ -4,7 +4,6 @@ description: OID_WDI_TASK_CLOSE requests that the IHV component closes the adapt
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_CLOSE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
@@ -28,8 +27,7 @@ None
 
 [NDIS\_STATUS\_WDI\_INDICATION\_CLOSE\_COMPLETE](ndis-status-wdi-indication-close-complete.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

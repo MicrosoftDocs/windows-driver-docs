@@ -3,7 +3,6 @@ title: Edit Cut
 description: Edit Cut
 keywords: ["Edit Cut", "text, Edit Cut"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Edit | Cut
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 Click **Cut** on the **Edit** menu to delete any text that you have selected and to move it to the clipboard.
 
-This command is equivalent to pressing CTRL+X or SHIFT+DELETE or clicking the **Cut (Ctrl+X)** button (![screen shot of the cut button](images/tbcut.png)) on the toolbar.
+This command is equivalent to pressing CTRL+X or SHIFT+DELETE or clicking the **Cut (Ctrl+X)** button (![screen shot of the cut button.](images/tbcut.png)) on the toolbar.
 
 You can use the **Cut** command on the **Edit** menu only with docked or tabbed windows, but you can use the shortcut keys and the toolbar button with any window that supports this feature.
 

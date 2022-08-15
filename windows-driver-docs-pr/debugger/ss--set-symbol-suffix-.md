@@ -9,7 +9,6 @@ api_name:
 - ss (Set Symbol Suffix)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ss (Set Symbol Suffix)
@@ -62,8 +61,7 @@ Specifies that the debugger should not use a symbol suffix. (This parameter is t
 
 For more information about symbol matching, see [Symbol Syntax and Symbol Matching](symbol-syntax-and-symbol-matching.md).
 
-Remarks
--------
+## Remarks
 
 If you specify the **ss** command together with no parameters, the current state of the suffix value is displayed.
 

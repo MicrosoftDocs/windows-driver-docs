@@ -9,7 +9,6 @@ keywords:
 - patterns WDK Unidrv
 - brushes WDK Unidrv
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Color Commands

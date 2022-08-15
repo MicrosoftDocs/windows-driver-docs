@@ -1,14 +1,12 @@
 ---
 title: Firmware Windows Engineering Guide (WEG)
 description: The Firmware Windows Engineering Guide (WEG) provides a roadmap to follow through in implementing system firmware-related best practices.
-ms.date: 05/07/2018
-ms.localizationpriority: medium
+ms.date: 09/28/2021
 ---
 
 # Firmware Windows Engineering Guide (WEG)
 
 The Firmware Windows Engineering Guide (WEG) provides a roadmap to follow through in implementing system firmware-related best practices.
-
 
 ## In this section
 
@@ -24,17 +22,11 @@ The Firmware Windows Engineering Guide (WEG) provides a roadmap to follow throug
 
 [Switch from legacy MBR disk to GPT disk with Windows 10](switch-from-legacy-mbr-disk-to-gpt-disk-with-windows-10.md)
 
-[Firmware WEG FAQ](frequently-asked-questions.md)
+[Firmware WEG FAQ](frequently-asked-questions.yml)
 
 [Configure system firmware for Windows 7 and later update for Windows 10](configure-system-firmware-for-windows-7-and-later-update-for-windows-10.md)
 
 [Sample PowerShell script to query SMBIOS locally](sample-powershell-script-to-query-smbios-locally.md)
-
-                                           
-
-
-
-
 
 ## Firmware WEG terminology
 
@@ -50,11 +42,13 @@ The following terms are used throughout the Firmware WEG:
 
 - CSM - Compatibility Support Module
 
-- EFI - Extensible Fireware Interface 
+- EFI - Extensible Firmware Interface
 
 - eMMC - embedded Multi-Media Controller
 
 - ESRT – EFI System Resource Table
+
+- FFU - Full Flash Update
 
 - GPT - GUID Partition Table
 
@@ -88,9 +82,11 @@ The following terms are used throughout the Firmware WEG:
 
 - SMBIOS – System Management Basic Input Output System
 
+- SoC - System on Chip
+
 - SPI - Serial Peripheral Interface
 
-- SSD - Solid State Drive 
+- SSD - Solid State Drive
 
 - TCG - Trusted Computing Group
 
@@ -113,6 +109,3 @@ The following terms are used throughout the Firmware WEG:
 - WPBT - Windows Platform Binary Table
 
 - WSMT - Windows SMM Security Mitigations Table
-
-
-

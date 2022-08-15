@@ -9,7 +9,6 @@ keywords:
 - arrays WDK BDA
 - pin controller WDK BDA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Determining the Controlling Pin of a Node
@@ -32,7 +31,7 @@ The support library is able to do all the work of determining the identifier of 
 
 The following figure shows how the support library determines the filter pin that controls a specific node:
 
-![diagram illustrating how the support library determines the filter pin that controls a specific node](images/bdajoint.png)
+![diagram illustrating how the support library determines the filter pin that controls a specific node.](images/bdajoint.png)
 
  
 

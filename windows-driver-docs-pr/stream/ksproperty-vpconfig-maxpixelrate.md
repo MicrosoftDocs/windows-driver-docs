@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_VPCONFIG\_MAXPIXELRATE
@@ -46,7 +45,7 @@ The KSPROPERTY\_VPCONFIG\_MAXPIXELRATE property specifies the maximum pixel rate
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksvpmaxpixelrate" data-raw-source="[&lt;strong&gt;KSVPMAXPIXELRATE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksvpmaxpixelrate)"><strong>KSVPMAXPIXELRATE</strong></a></p></td>
 </tr>
 </tbody>
@@ -56,8 +55,7 @@ The KSPROPERTY\_VPCONFIG\_MAXPIXELRATE property specifies the maximum pixel rate
 
 The property value (operation data) is a KSVPMAXPIXELRATE structure that describes the width, height, and maximum number of pixels per second that the video port supports.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -75,7 +73,6 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSVPMAXPIXELRATE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksvpmaxpixelrate)
-

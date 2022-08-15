@@ -2,13 +2,12 @@
 title: Verify Catalog File Signed by Commercial Certificate
 description: Verifying the Signature of a Catalog File Signed by a Commercial Release Certificate
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Verifying the Signature of a Catalog File Signed by a Commercial Release Certificate
 
 
-To verify that a [catalog file](catalog-files.md) is signed by a valid [commercial release certificate](commercial-release-certificate.md), use the following [**SignTool**](../devtest/signtool.md) command:
+To verify that a [catalog file](catalog-files.md) is signed by a valid [commercial release certificate](./deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md), use the following [**SignTool**](../devtest/signtool.md) command:
 
 ```cpp
 SignTool verify /v /pa CatalogFileName.cat
@@ -33,6 +32,3 @@ Where:
 -   *The* ***/c*** *CatalogFileName.cat* option specifies a catalog file that includes an entry for the file *DriverFileName*.
 
 -   *DriverFileName* specifies the name of a file that has an entry in the catalog file *CatalogFileName.cat*.
-
- 
-

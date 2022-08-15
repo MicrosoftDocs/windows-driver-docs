@@ -4,7 +4,6 @@ description: This topic describes the GUID_NDIS_STATUS_LINK_STATE GUID for the N
 keywords:
 - GUID_NDIS_STATUS_LINK_STATE, WDK GUID_NDIS_STATUS_LINK_STATE network drivers
 ms.date: 11/22/2017
-ms.localizationpriority: medium
 ---
 
 # GUID_NDIS_STATUS_LINK_STATE

@@ -4,7 +4,6 @@ description: The NDIS_STATUS_WWAN_PRESHUTDOWN_STATE notification is a one-way no
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WWAN_PRESHUTDOWN_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_PRESHUTDOWN\_STATE
@@ -14,8 +13,7 @@ The NDIS\_STATUS\_WWAN\_PRESHUTDOWN\_STATE notification is a one-way notificatio
 
 This notification uses the [**NDIS\_WWAN\_PRESHUTDOWN\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_preshutdown_state) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

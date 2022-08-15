@@ -1,5 +1,5 @@
 ---
-title: INF UnregisterDlls Directive
+title: INF UnregisterDlls directive
 description: An UnregisterDlls directive references one or more INF sections used to specify files that are OLE controls and require self-unregistration (self-removal).
 keywords:
 - INF UnregisterDlls Directive Device and Driver Installation
@@ -9,16 +9,13 @@ api_name:
 - INF UnregisterDlls Directive
 api_type:
 - NA
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 07/11/2022
 ---
 
-# INF UnregisterDlls Directive
+# INF UnregisterDlls directive
 
-
-**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
-
- 
+> [!NOTE]
+> If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 An **UnregisterDlls** directive references one or more INF sections used to specify files that are OLE controls and require self-unregistration (self-removal).
 
@@ -40,42 +37,39 @@ An *unregister-dll-section* can have any number of entries, each on a separate l
 
 ## Entries
 
-
-<a href="" id="dirid"></a>*dirid*  
+*dirid*  
 Specifies the destination directory ID of the file to be unregistered. For more information, see [Using Dirids](using-dirids.md).
 
-<a href="" id="subdir"></a>*subdir*  
+*subdir*  
 Specifies the directory path, relative to the current directory, to the file to be unregistered. If not specified, the file is in the current directory.
 
-<a href="" id="filename"></a>*filename*  
+*filename*  
 Identifies the file name of the OLE control to be unregistered.
 
-<a href="" id="registration-flags"></a>*registration-flags*  
+*registration-flags*  
 Indicates the registration operations to perform on the OLE control. One or both of the following flags must be specified.
 
-<a href="" id="0x00000001--flg-regsvr-dllregister-"></a>**0x00000001** (FLG_REGSVR_DLLREGISTER)  
+**0x00000001** (FLG_REGSVR_DLLREGISTER)  
 Call the **DllUnRegisterServer** function (described in the Windows SDK documentation).
 
-<a href="" id="0x00000002--flg-regsvr-dllinstall--"></a>**0x00000002** (FLG_REGSVR_DLLINSTALL)   
+**0x00000002** (FLG_REGSVR_DLLINSTALL)  
 Call the OLE control's **DllInstall** function (described in the Windows SDK documentation).
 
-<a href="" id="timeout"></a>*timeout*  
+*timeout*  
 Specifies the time-out, in units of seconds, for an OLE Control to complete the specified unregistration calls. The default time-out is 60 seconds.
 
-<a href="" id="argument"></a>*argument*  
+*argument*  
 If the control is an executable file, this is a command string that is passed to the executable. The default argument is **/UnRegServer**.
 
 If the control is not an executable file, this specifies the command-line argument to pass to the **DllInstall** function.
 
-Remarks
--------
+## Remarks
 
 Each *unregister-dll-section* name must be unique to the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
 For more information about OLE controls and self unregistration, see the Windows SDK documentation.
 
-Examples
---------
+## Examples
 
 ```inf
 [Dialer]
@@ -90,15 +84,4 @@ UnregisterDlls = DialerRegSvr
 
 ## See also
 
-
 [**RegisterDlls**](inf-registerdlls-directive.md)
-
- 
-
- 
-
-
-
-
-
-

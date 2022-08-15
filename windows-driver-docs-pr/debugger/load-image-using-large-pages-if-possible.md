@@ -3,7 +3,6 @@ title: Load image using large pages if possible
 description: Load image using large pages if possible
 keywords: ["Load image using large pages if possible (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Load image using large pages if possible

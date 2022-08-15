@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_DIRECTSOUND3DBUFFER\_MINDISTANCE
@@ -60,8 +59,7 @@ The property value (operation data) is of type FLOAT and specifies the minimum d
 
 A KSPROPERTY\_DIRECTSOUND3DBUFFER\_MINDISTANCE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 At a distance less than the minimum distance from a sound source, the sound volume no longer increases as the distance decreases. For more information about the minimum distance for a DirectSound 3D buffer, see the following in the Microsoft Windows SDK documentation:
 
@@ -69,8 +67,7 @@ At a distance less than the minimum distance from a sound source, the sound volu
 
 -   The **IDirectSound3DBuffer::GetMinDistance** and **IDirectSound3DBuffer::SetMinDistance** methods.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

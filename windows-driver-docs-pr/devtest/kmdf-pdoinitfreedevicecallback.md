@@ -9,7 +9,6 @@ api_name:
 - PdoInitFreeDeviceCallback
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PdoInitFreeDeviceCallback rule (kmdf)
@@ -21,8 +20,7 @@ If your driver encounters an error while it initializes a new framework device o
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfDeviceInitAssignName**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitassignname)
 [**WdfDeviceInitAssignSDDLString**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitassignsddlstring)
@@ -64,8 +61,7 @@ Applies to
 [**WdfPdoInitAssignDeviceID**](/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitassigndeviceid)
 [**WdfPdoInitAssignInstanceID**](/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitassigninstanceid)
 [**WdfPdoInitAssignRawDevice**](/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitassignrawdevice)
-See also
---------
+## See also
 
 [**InitFreeDeviceCallback**](kmdf-initfreedevicecallback.md)
 [**InitFreeDeviceCreate**](kmdf-initfreedevicecreate.md)

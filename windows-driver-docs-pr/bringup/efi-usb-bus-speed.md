@@ -1,17 +1,14 @@
 ---
 title: EFI_USB_BUS_SPEED
-description: EFI_USB_BUS_SPEED
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+description: The EFI_USB_BUS_SPEED enumeration contains values used to indicate the bus speed.
+ms.date: 08/20/2021
 ---
 
-# EFI\_USB\_BUS\_SPEED
+# EFI_USB_BUS_SPEED
 
-
-Is enumeration contains values used to indicate the bus speed.
+The **EFI_USB_BUS_SPEED** enumeration contains values used to indicate the bus speed.
 
 ## Syntax
-
 
 ```cpp
 typedef enum _EFI_USB_BUS_SPEED 
@@ -27,31 +24,21 @@ typedef enum _EFI_USB_BUS_SPEED
 
 ## Constants
 
-
-<a href="" id="usbbusspeedunknown"></a>**UsbBusSpeedUnknown**  
+**UsbBusSpeedUnknown**  
 Bus speed unknown.
 
-<a href="" id="usbbusspeedlow"></a>**UsbBusSpeedLow**  
+**UsbBusSpeedLow**  
 Low speed.
 
-<a href="" id="usbbusspeedfull"></a>**UsbBusSpeedFull**  
+**UsbBusSpeedFull**  
 Full speed.
 
-<a href="" id="usbbusspeedhigh"></a>**UsbBusSpeedHigh**  
+**UsbBusSpeedHigh**  
 High speed.
 
-<a href="" id="usbbusspeedsuper"></a>**UsbBusSpeedSuper**  
+**UsbBusSpeedSuper**  
 Super speed.
 
 ## Requirements
 
-
 **Header:** User generated
-
- 
-
- 
-
-
-
-

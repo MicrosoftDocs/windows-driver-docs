@@ -2,7 +2,6 @@
 title: Registry Entries for Still Image Devices
 description: Registry Entries for Still Image Devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registry Entries for Still Image Devices

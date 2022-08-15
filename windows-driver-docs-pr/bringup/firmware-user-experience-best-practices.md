@@ -1,21 +1,18 @@
 ---
 title: Firmware user experience (UX) best practices
-description: Firmware user experience (UX) best practices
-ms.date: 05/15/2018
-ms.localizationpriority: medium
+description: Provides information about firmware user experience (UX) best practices.
+ms.date: 08/18/2021
 ---
-
 
 # Firmware user experience (UX) best practices
 
-
 A firmware update to a system can be important to the continued use of that machine. Microsoft wants to ensure that firmware updates are safely delivered, and installation is uninterrupted. To do this, we have recommended the following guidelines that are described in greater detail in the **Related resources** section.
 
-1.  Progress bar/indicator that the system is installing an update.
+1. Progress bar/indicator that the system is installing an update.
 
-2.  Windows Boot loader with **UpdateCapsule** function will provide a bitmap containing message for user.
+1. Windows Boot loader with **UpdateCapsule** function will provide a bitmap containing message for user.
 
-3.  UEFI check for AC Power, or sufficient battery life (RSOC) or fail out with error codes recorded in ESRT.
+1. UEFI check for AC Power, or sufficient battery life (RSOC) or fail out with error codes recorded in ESRT.
 
 The **Related resources** links contain the most recent information on firmware UX guidance.
 

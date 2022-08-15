@@ -1,5 +1,5 @@
 ---
-title: poolused
+title: poolused (WinDbg)
 description: The poolused extension displays memory use summaries, based on the tag used for each pool allocation.
 keywords: ["poolused Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - poolused
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !poolused
@@ -71,8 +70,7 @@ Specifies the pool tag. *TagString* is a case-sensitive ASCII string. The asteri
 
 For information about memory pools and pool tags, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The **!poolused** extension gathers data from the pool tagging feature of Windows. Pool tagging is permanently enabled on Windows Server 2003 and later versions of Windows. On Windows XP and earlier versions of Windows, you must enable pool tagging by using [Gflags](gflags.md).
 

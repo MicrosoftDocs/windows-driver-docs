@@ -9,7 +9,6 @@ api_name:
 - Irql_MCO_Function
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Irql\_MCO\_Function rule (ndis)
@@ -19,8 +18,7 @@ The **Irql\_MCO\_Function** rule specifies that the NDIS MCO DDIs for miniport d
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisMCoActivateVcComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcoactivatevccomplete)
 [**NdisMCoDeactivateVcComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcodeactivatevccomplete)

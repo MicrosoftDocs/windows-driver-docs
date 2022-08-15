@@ -1,19 +1,5 @@
 - name: "Serial Controller Driver Design Guide"
   href: index.md
-- name: "Serial Controller Drivers"
-# Auto-expanded node
-  items: 
-  - name: "Serial Controller Drivers"
-    href: serial-drivers-overview.md
-  - name: "Serial I/O Request Interface"
-# Auto-expanded node
-    items: 
-    - name: "Serial I/O Request Interface"
-      href: serial-i-o-request-interface.md
-    - name: "SerCx I/O Control Requests"
-      href: sercx-io-control-requests.md
-  - name: "Differences Between SerCx2.sys and Serial.sys"
-    href: differences-between-sercx2-and-serial-sys.md
 - name: "Using Version 2 of the Serial Framework Extension (SerCx2)"
 # Auto-expanded node
   items: 
@@ -71,16 +57,24 @@
       href: reading-data-from-a-sercx2-managed-serial-port.md
   - name: "SerCx2 Object Handles"
     href: sercx2-object-handles.md
-- name: "Using Serial.sys and Serenum.sys"
+- name: "Previous Versions of Windows - Serial Controller Drivers"
 # Auto-expanded node
   items: 
-  - name: "Using Serial.sys and Serenum.sys"
-    href: using-serial-sys-and-serenum-sys.md
-  - name: "Features of Serial and Serenum"
-    href: features-of-serial-and-serenum.md
-  - name: "Configuration of Serial Devices and Drivers"
+  - name: "Previous Versions of Windows - Serial Controller Drivers"
+    href: serial-drivers-overview.md
+  - name: "Serial I/O Request Interface"
+    href: serial-i-o-request-interface.md
+  - name: "SerCx I/O Control Requests"
+    href: sercx-io-control-requests.md
+  - name: "Differences Between SerCx2.sys and Serial.sys"
+    href: differences-between-sercx2-and-serial-sys.md
+  - name: "Previous Versions of Windows - Using Serial.sys and Serenum.sys"
 # Auto-expanded node
     items: 
+    - name: "Using Serial.sys and Serenum.sys"
+      href: using-serial-sys-and-serenum-sys.md
+    - name: "Features of Serial and Serenum"
+      href: features-of-serial-and-serenum.md
     - name: "Configuration of Serial Devices and Drivers"
       href: configuration-of-serial-devices-and-drivers.md
     - name: "Configuration of COM Ports"
@@ -139,26 +133,17 @@
     href: registry-settings-for-serenum.md
   - name: "COM Port Database"
     href: com-port-database.md
-  - name: "Installing Serial Devices"
+  - name: "Programming Serial Devices Installation"
 # Auto-expanded node
     items: 
-    - name: "Installing Serial Devices"
+    - name: "Programming Serial Device Installation"
       href: installing-serial-devices.md
-    - name: "Installing Serial Ports and COM Ports"
-# Auto-expanded node
-      items: 
-      - name: "Installing Serial Ports and COM Ports"
-        href: installing-serial-ports-and-com-ports.md
-      - name: "Installing Plug and Play Serial Ports and COM Ports"
-        href: installing-plug-and-play-serial-ports-and-com-ports.md
-      - name: "Installing Legacy COM Ports"
-        href: installing-legacy-com-ports.md
-    - name: "Installing an Advanced Properties Page for a COM Port"
+    - name: "Programming Installation of Serial Ports and COM Ports"
+      href: installing-serial-ports-and-com-ports.md
+    - name: "Programming Installation for Plug and Play Serial Ports and COM Ports"
+      href: installing-plug-and-play-serial-ports-and-com-ports.md
+    - name: "Create an Advanced Properties Page for a COM Port"
       href: installing-an-advanced-properties-page-for-a-com-port.md
-    - name: "Installing Serial Devices that Use a 16550 UART-Compatible Interface"
-      href: installing-serial-devices-that-use-a-16550-uart-compatible-interface.md
-    - name: "Installing Serenum Devices"
-      href: installing-serenum-devices.md
 - name: "Serial IRP major function codes"
   href: serial-irp-major-function-codes.md
 - name: "Serial Port Console Redirection Table (SPCR)"

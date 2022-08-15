@@ -9,7 +9,6 @@ api_name:
 - PHASE0_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x31: PHASE0\_INITIALIZATION\_FAILED
@@ -26,13 +25,11 @@ The PHASE0\_INITIALIZATION\_FAILED bug check has a value of 0x00000031. This ind
 
 None
 
-Cause
------
+## Cause
 
 System initialization failed at a very early stage.
 
-Resolution
-----------
+## Resolution
 
 A debugger is required to analyze this.
 

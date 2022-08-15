@@ -4,7 +4,6 @@ description: SIO_WSK_QUERY_IDEAL_SEND_BACKLOG
 ms.date: 07/18/2017
 keywords:
  - SIO_WSK_QUERY_IDEAL_SEND_BACKLOG Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # SIO\_WSK\_QUERY\_IDEAL\_SEND\_BACKLOG
@@ -69,8 +68,7 @@ A WSK application must specify a pointer to an IRP when calling the **WskControl
 
 A connection-oriented socket can be notified of changes to the ideal send backlog size by enabling its [*WskSendBacklogEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_send_backlog_event) event callback function.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

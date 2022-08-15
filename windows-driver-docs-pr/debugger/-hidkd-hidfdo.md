@@ -9,7 +9,6 @@ api_name:
 - hidkd.hidfdo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !hidkd.hidfdo
@@ -32,8 +31,7 @@ Address of an FDO. To get the addresses of FDOs that are associated with HID dri
 
 Hidkd.dll
 
-Examples
---------
+## Examples
 
 Here is an example of the output of the **!hidfdo** command. The example first calls [**!hidtree**](-hidkd-hidtree.md) to get the address of an FDO.
 

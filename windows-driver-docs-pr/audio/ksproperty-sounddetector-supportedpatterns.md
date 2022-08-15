@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 09/25/2019
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS
@@ -44,7 +43,7 @@ This usage table summarizes when KSPROPERTY\_SOUNDDETECTOR\_ARMED is called with
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item" data-raw-source="[&lt;strong&gt;KSMULTIPLE_ITEM&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)"><strong>KSMULTIPLE_ITEM</strong></a></p></td>
 </tr>
 </tbody>
@@ -86,8 +85,7 @@ This usage table summarizes when KSPROPERTY\_SOUNDDETECTOR\_ARMED is called with
 
 The property value is a [**KSMULTIPLE\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item) structure followed by a sequence of GUIDs.
 
-Remarks
--------
+## Remarks
 
 The pattern GUID has these characteristics:
 
@@ -99,8 +97,7 @@ The pattern GUID has these characteristics:
 
 - It implies a format for the result data defined by the OEM.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -126,6 +123,6 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](../stream/ksproperty-structure.md)
 
 [**KSMULTIPLE\_ITEM**](/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item)

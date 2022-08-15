@@ -2,7 +2,6 @@
 title: WIA Device Messages
 description: WIA Device Messages
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Device Messages

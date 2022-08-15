@@ -3,7 +3,6 @@ title: Setting Up KDNET Network Kernel Debugging Automatically
 description: Use KDNET to configure network kernel debugging automatically for the Windows debugging tools.
 keywords: ["Network debugging", "Ethernet debugging", "WinDbg", "KDNET"]
 ms.date: 11/11/2020
-ms.localizationpriority: medium
 ---
 
 # Setting Up KDNET Network Kernel Debugging Automatically
@@ -87,7 +86,7 @@ Use the kdnet.exe utility to automatically configure the  debugger settings on t
 
 On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **Net** tab. Paste in your port number and key that you saved to in the notepad .txt file earlier. Select **OK**.
 
-You can also start a WinDbg session by opening a Command Prompt window and entering the following command, where <YourPort> is the port you selected above, and <YourKey> is the key that was returned by kdnet.exe above. Paste in the key in that you saved to in the notepad .txt file earlier.
+You can also start a WinDbg session by opening a Command Prompt window and entering the following command, where \<YourPort\> is the port you selected above, and \<YourKey\> is the key that was returned by kdnet.exe above. Paste in the key in that you saved to in the notepad .txt file earlier.
 
    ```console
   windbg -k -d net:port=<YourDebugPort>,key=<YourKey> 
@@ -97,7 +96,7 @@ The optional -d parameter shown in the example, enables early break in. For more
 
 If you are prompted about allowing WinDbg to access the port through the firewall, allow WinDbg to access the port for **all three** of the different network types.
 
-![windows security alert - windows firewall has blocked some features of this app ](images/debuglab-image-firewall-dialog-box.png)
+![windows security alert - windows firewall has blocked some features of this app .](images/debuglab-image-firewall-dialog-box.png)
 
 At this point the debugger will be waiting for the target to reconnect and text similar to the following will be displayed in the debugger command window.
 
@@ -134,7 +133,7 @@ The  debugger  must have access through the firewall. Use Control Panel to allow
 
 4. Scroll down and select **OK**, to save the firewall changes. Restart the debugger.
 
-    ![windows control panel firewall config showing Windows GUI Symbolic Debugger and Windows Kernel Debugger with all three network types enabled](images/firewall-control-pannel-windbg-gui-config.png)
+    ![windows control panel firewall config showing Windows GUI Symbolic Debugger and Windows Kernel Debugger with all three network types enabled.](images/firewall-control-pannel-windbg-gui-config.png)
 
 **Use Ping to test connectivity**
 

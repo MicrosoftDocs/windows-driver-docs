@@ -1,11 +1,10 @@
 ---
-title: C28172
+title: C28172 warning
 description: Warning C28172 The function has PAGED_CODE or PAGED_CODE_LOCKED but is not declared to be in a paged segment.
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28172"
 ---

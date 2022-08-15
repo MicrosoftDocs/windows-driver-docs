@@ -15,7 +15,6 @@ keywords:
 - queues WDK RDBSS
 - states WDK RDBSS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Work Queue Dispatching Mechanisms

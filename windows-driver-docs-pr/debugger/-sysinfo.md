@@ -1,5 +1,5 @@
 ---
-title: sysinfo
+title: sysinfo (WinDbg)
 description: The sysinfo extension reads and displays specified SMBIOS, Advanced Configuration and Power Interface (ACPI), and CPU information from a dump file or live system.
 keywords: ["sysinfo Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - sysinfo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !sysinfo
@@ -107,8 +106,7 @@ Displays help for this extension in the Debugger Command window.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 This extension is useful only when the dump file is a System Crash File (.dmp) that has not been converted to a minidump file from a kernel or full dump file, or the live system has finished starting and is online (for example, at the log-in prompt).
 

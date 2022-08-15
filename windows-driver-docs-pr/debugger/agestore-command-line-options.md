@@ -9,7 +9,6 @@ api_name:
 - AgeStore Command-Line Options
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # AgeStore Command-Line Options

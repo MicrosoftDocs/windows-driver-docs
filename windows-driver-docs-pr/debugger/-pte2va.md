@@ -1,5 +1,5 @@
 ---
-title: pte2va
+title: pte2va (WinDbg)
 description: The pte2va extension displays the virtual address that corresponds to the specified page table entry (PTE).
 keywords: ["pte2va Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - pte2va
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pte2va
@@ -52,8 +51,7 @@ Specifies the PTE.
 
 For information about page tables and PTEs, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 To examine the contents of a specific PTE, use the [**!pte**](-pte.md) extension.
 

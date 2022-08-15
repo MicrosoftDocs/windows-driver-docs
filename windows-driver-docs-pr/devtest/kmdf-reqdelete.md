@@ -9,7 +9,6 @@ api_name:
 - ReqDelete
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ReqDelete rule (kmdf)
@@ -23,8 +22,7 @@ The driver cannot call [**WdfRequestComplete**](/windows-hardware/drivers/ddi/wd
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -49,8 +47,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfObjectDelete**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete)
 [**WdfRequestComplete**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcomplete)

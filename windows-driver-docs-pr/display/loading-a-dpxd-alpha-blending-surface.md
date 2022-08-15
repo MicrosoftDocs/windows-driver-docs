@@ -8,7 +8,6 @@ keywords:
 - DPXD alpha-blending surface WDK DirectX VA
 - decoded PXD alpha-blending surface WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Loading a DPXD Alpha-Blending Surface

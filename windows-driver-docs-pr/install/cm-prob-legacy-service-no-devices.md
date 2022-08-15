@@ -4,7 +4,6 @@ description: CM_PROB_LEGACY_SERVICE_NO_DEVICES
 keywords:
 - CM_PROB_LEGACY_SERVICE_NO_DEVICES
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Code 41 - CM_PROB_LEGACY_SERVICE_NO_DEVICES

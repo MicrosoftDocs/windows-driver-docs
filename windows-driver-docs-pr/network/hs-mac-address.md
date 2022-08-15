@@ -5,7 +5,6 @@ keywords:
 - HS_MAC_ADDRESS structure Network Drivers Starting with Windows Vista
 - PHS_MAC_ADDRESS structure pointer Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_MAC\_ADDRESS structure
@@ -15,8 +14,7 @@ ms.localizationpriority: medium
 
 The **HS\_MAC\_ADDRESS** structure contains the host Media Access Control (MAC) address.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HS_MAC_ADDRESS {
@@ -24,14 +22,12 @@ typedef struct _HS_MAC_ADDRESS {
 } HS_MAC_ADDRESS, *PHS_MAC_ADDRESS;
 ```
 
-Members
--------
+## Members
 
 **ucHSMacAddress**  
 The MAC address.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

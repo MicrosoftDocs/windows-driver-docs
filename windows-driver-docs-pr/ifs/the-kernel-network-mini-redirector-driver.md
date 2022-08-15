@@ -8,7 +8,6 @@ keywords:
 - mini-redirectors WDK
 - mini-redirectors WDK , about kernel network mini-redirector drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # The Kernel Network Mini-Redirector Driver

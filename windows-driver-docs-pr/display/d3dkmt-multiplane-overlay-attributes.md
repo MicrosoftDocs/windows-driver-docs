@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # D3DKMT\_MULTIPLANE\_OVERLAY\_ATTRIBUTES structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct D3DKMT_MULTIPLANE_OVERLAY_ATTRIBUTES {
@@ -51,8 +49,7 @@ typedef struct D3DKMT_MULTIPLANE_OVERLAY_ATTRIBUTES {
 } D3DKMT_MULTIPLANE_OVERLAY_ATTRIBUTES;
 ```
 
-Members
--------
+## Members
 
 **Flags**
 
@@ -88,8 +85,7 @@ Members
 
 **StretchQuality**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

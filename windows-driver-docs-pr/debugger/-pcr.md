@@ -1,5 +1,5 @@
 ---
-title: pcr
+title: pcr (WinDbg)
 description: The pcr extension displays the current status of the Processor Control Region (PCR) on a specific processor.
 keywords: ["processor control region (PCR)", "pcr Windows Debugging"]
 ms.date: 10/07/2019
@@ -9,7 +9,6 @@ api_name:
 - pcr
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !pcr
@@ -56,8 +55,7 @@ Specifies the processor to retrieve the PCR information from. If *Processor* is 
 
 For information about the PCR and the PRCB, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The processor control block (PRCB) is an extension of the PCR. It can be displayed with the [**!prcb**](-prcb.md) extension.
 

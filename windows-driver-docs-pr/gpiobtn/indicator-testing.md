@@ -1,7 +1,6 @@
 ---
 title: Indicator testing
 description: This topic describes common indicator step procedures and examples.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -36,11 +35,11 @@ Various form factors allow for different methods of conversion, such as the foll
 
 **Conversion examples:**
 
-![keyboard attach and detach for convertible](images/keyboardattachdetachconvertible.jpg)
+![keyboard attach and detach for convertible.](images/keyboardattachdetachconvertible.jpg)
 
 **Figure 1 Keyboard Attach and Detach Conversion**
 
-![screen swivel convertible](images/screenswivelconvertible.jpg)
+![screen swivel convertible.](images/screenswivelconvertible.jpg)
 
 **Figure 2 Screen Swivel Conversion**
 

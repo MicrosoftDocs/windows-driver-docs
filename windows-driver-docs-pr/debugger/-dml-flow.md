@@ -9,7 +9,6 @@ api_name:
 - .dml_flow (Unasemmble with Links)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .dml\_flow (Unasemmble with Links)
@@ -30,8 +29,7 @@ The address of an instruction from which the target address can be reached.
 <span id="Target"></span><span id="target"></span><span id="TARGET"></span>*Target*  
 An address in the code block to be disassembled.
 
-Remarks
--------
+## Remarks
 
 Consider the call stack shown in the following example.
 
@@ -52,7 +50,7 @@ Suppose you want to examine all code paths from the start of **nt!MiFlushSection
 
 The output, in the [Command Browser window](command-browser-window.md), is shown in the following image.
 
-![screen shot of .dml\-flow output](images/dmlflow01.png)
+![screen shot of .dml-flow output.](images/dmlflow01.png)
 
 The preceding image shows the code block that contains the target address, `` fffff800`01b3b6b4 ``. There is only one link (`` fffff800`01b3b681 ``) at the top of the image. That indicates that there is only one code block from which the current code block can be reached. If you click the link, you will see that code block disassembled, and you will see links that enable you to further explore the code flow graph.
 

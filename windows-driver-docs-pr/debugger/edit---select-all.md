@@ -3,7 +3,6 @@ title: Edit Select All
 description: Edit Select All
 keywords: ["Edit Select All", "text, Edit Select All"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Edit | Select All

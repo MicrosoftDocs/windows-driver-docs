@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 09/25/2019
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_SOUNDDETECTOR\_RESET
@@ -52,8 +51,7 @@ The **KSPROPERTY\_SOUNDDETECTOR\_RESET** property resets the detector to an unar
 
 The property value is a BOOL. True indicates to reset, false is ignored.
 
-Remarks
--------
+## Remarks
 
 The OS calls reset with a value of true when it would like to:
 
@@ -62,8 +60,7 @@ The OS calls reset with a value of true when it would like to:
 
 Setting this true while no keyword patterns are set ([**KSPROPERTY\_SOUNDDETECTOR\_PATTERNS**](ksproperty-sounddetector-patterns.md) is empty) has no effect.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

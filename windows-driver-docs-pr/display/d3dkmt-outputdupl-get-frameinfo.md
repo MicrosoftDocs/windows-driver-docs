@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # D3DKMT\_OUTPUTDUPL\_GET\_FRAMEINFO structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_OUTPUTDUPL_GET_FRAMEINFO {
@@ -30,8 +28,7 @@ typedef struct _D3DKMT_OUTPUTDUPL_GET_FRAMEINFO {
 } D3DKMT_OUTPUTDUPL_GET_FRAMEINFO;
 ```
 
-Members
--------
+## Members
 
 **hAdapter**
 
@@ -39,8 +36,7 @@ Members
 
 **FrameInfo**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

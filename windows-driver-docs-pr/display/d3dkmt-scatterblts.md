@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # D3DKMT\_SCATTERBLTS structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_SCATTERBLTS {
@@ -29,15 +27,13 @@ typedef struct _D3DKMT_SCATTERBLTS {
 } D3DKMT_SCATTERBLTS;
 ```
 
-Members
--------
+## Members
 
 **NumBlts**
 
 **Blts**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

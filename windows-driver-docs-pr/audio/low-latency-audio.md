@@ -2,7 +2,6 @@
 title: Low Latency Audio
 description: This topic discusses audio latency changes in Windows 10. It covers API options for application developers as well as changes in drivers that can be made to support low latency audio.
 ms.date: 01/19/2021
-ms.localizationpriority: medium
 ---
 
 # Low Latency Audio
@@ -42,7 +41,7 @@ Windows 10 includes changes to reduce the audio latency. The goals of this docu
 
 The following diagram shows a simplified version of the Windows audio stack.
 
-![low latency audio stack diagram showing apps, audio engine driver and h/w](images/low-latency-audio-stack-diagram-1.png)
+![low latency audio stack diagram showing apps, audio engine driver and h/w.](images/low-latency-audio-stack-diagram-1.png)
 
 Here is a summary of the latencies in the render path:
 
@@ -542,7 +541,7 @@ In order to measure the roundtrip latency for different buffer sizes, users need
 - If you are asked to reboot the system, select **Yes** to reboot.
 - After reboot, the system will be using the inbox Microsoft HDAudio driver and not the 3rd-party codec driver. Remember which driver you were using before, so that you can fallback to that driver, if you want to use the optimal settings for your audio codec.
 
-![graph showing the differences in the roundtrip latency between wasapi and audiograph with different buffer sizes. ](images/low-latency-audio-roundtrip-latency.png)
+![graph showing the differences in the roundtrip latency between wasapi and audiograph with different buffer sizes.](images/low-latency-audio-roundtrip-latency.png)
 
 The differences in the latency between WASAPI and AudioGraph are due to the following reasons:
 

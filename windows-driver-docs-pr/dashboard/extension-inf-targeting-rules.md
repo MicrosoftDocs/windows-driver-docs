@@ -3,7 +3,6 @@ title: Extension INF targeting evaluation rules defined
 description: Policy defines how extension INFs can be targetted
 ms.topic: article
 ms.date: 09/22/2020
-ms.localizationpriority: medium
 ---
 
 # Extension INF targeting evaluation rules defined

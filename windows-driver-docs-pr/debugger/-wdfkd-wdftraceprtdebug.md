@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdftraceprtdebug
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdftraceprtdebug
@@ -42,8 +41,7 @@ KMDF 1, UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 You should use the !wdfkd.wdftraceprtdebug extension only at the direction of technical support.
 

@@ -5,7 +5,6 @@ keywords:
 - power management scenarios WDK UMDF , device returning to its working state
 - device returning to working state scenario WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # A Device Returns to Its Working State (UMDF 1)

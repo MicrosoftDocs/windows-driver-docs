@@ -1,5 +1,5 @@
 ---
-title: whea
+title: whea (WinDbg)
 description: The whea extension displays top-level Windows Hardware Error Architecture (WHEA) information.
 keywords: ["whea Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - whea
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !whea
@@ -59,8 +58,7 @@ This extension can be used only in Windows Vista and later versions of Windows.
 
 The [**!errrec**](-errrec.md) and [**!errpkt**](-errpkt.md) extensions can be used to display additional WHEA information. For general information about WHEA, see [Windows Hardware Error Architecture (WHEA)](../whea/index.md) in the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 The following example shows the (truncated) output of the **!whea** extension:
 

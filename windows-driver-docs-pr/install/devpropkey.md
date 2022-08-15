@@ -10,7 +10,6 @@ api_location:
 - devpropdef.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -19,8 +18,7 @@ ms.date: 10/17/2018
 
 In Windows Vista and later versions of Windows, the DEVPROPKEY structure represents a device property key for a device property in the [unified device property model](./unified-device-property-model--windows-vista-and-later-.md).
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 struct DEVPROPKEY {
@@ -29,8 +27,7 @@ struct DEVPROPKEY {
 };
 ```
 
-Members
--------
+## Members
 
 **fmtid**  
 A DEVPROPGUID-typed value that specifies a property category.
@@ -50,8 +47,7 @@ The DEVPROPID data type is defined as:
 typedef ULONG DEVPROPID, *PDEVPROPID;
 ```
 
-Remarks
--------
+## Remarks
 
 The DEVPROPKEY structure is part of the [unified device property model](./unified-device-property-model--windows-vista-and-later-.md).
 
@@ -59,8 +55,7 @@ The basic set of system-supplied device property keys are defined in *Devpkey.h*
 
 The [**DEFINE\_DEVPROPKEY**](./define-devpropkey.md) macro creates an instance of a DEVPROPKEY structure that represents a device property key.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSEVENT\_CONTROL\_CHANGE
@@ -47,8 +46,7 @@ The KSEVENT\_CONTROL\_CHANGE event indicates that a change in control value has 
 
 The event value type (operation data) is a KSEVENTDATA structure that specifies the type of notification to use for an event.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

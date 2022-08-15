@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # IOCTL\_COPP\_Command control code
@@ -42,8 +41,7 @@ None
 
 The miniport driver does not set the **Information** member of the [**STATUS\_BLOCK**](/windows-hardware/drivers/ddi/video/ns-video-_status_block) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

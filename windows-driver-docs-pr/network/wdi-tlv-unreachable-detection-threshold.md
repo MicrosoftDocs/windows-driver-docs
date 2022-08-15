@@ -4,10 +4,11 @@ description: WDI_TLV_UNREACHABLE_DETECTION_THRESHOLD is a TLV that contains the 
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_UNREACHABLE_DETECTION_THRESHOLD Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_UNREACHABLE\_DETECTION\_THRESHOLD
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_UNREACHABLE\_DETECTION\_THRESHOLD is a TLV that contains the unreachable detection threshold.
@@ -31,8 +32,7 @@ The size (in bytes) of a UINT32.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

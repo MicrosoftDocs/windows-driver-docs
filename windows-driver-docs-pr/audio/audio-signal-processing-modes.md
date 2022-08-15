@@ -2,7 +2,6 @@
 title: Audio Signal Processing Modes
 description: Drivers declare the supported audio signal processing modes for each device.
 ms.date: 05/14/2018
-ms.localizationpriority: medium
 ---
 
 # Audio Signal Processing Modes
@@ -33,7 +32,7 @@ It is possible that not all modes might be available for a particular system. Dr
 
 The following diagram shows a system that supports multiple modes:
 
-![multiple audio modes ](images/audio-modes-win-10.png)
+![multiple audio modes .](images/audio-modes-win-10.png)
 
 ## Windows Audio Stream Categories
 

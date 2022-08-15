@@ -1,41 +1,51 @@
 ---
-title: Hybrid system DDI
-description: Starting with Windows 8.1, these user-mode and kernel-mode structures and enumerations of the display device driver interface (DDI) are updated to handle cross-adapter resources on a hybrid system D3D10_DDI_RESOURCE_MISC_FLAGD3DDDI_RESOURCEFLAGS2D3DDDI_SYNCHRONIZATIONOBJECT_FLAGSD3DKMDT_GDISURFACEDATAD3DKMDT_GDISURFACETYPEDXGK_DRIVERCAPSDXGK_VIDMMCAPSThis function, new for Windows 8.1, is implemented by the user-mode display driver QueryDListForApplication1.
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+title: Hybrid system DDI and dList DLL support
+description: Lists hybrid system DDIs related to handling cross-adapter resources; Describes how to set up and register a dList DLL
+ms.date: 11/01/2021
+prerelease: false
 ---
 
-# Hybrid system DDI
+# Hybrid system DDI and dList DLL support
 
+Support for [cross-adapter resources](using-cross-adapter-resources-in-a-hybrid-system.md) on a [hybrid system](using-cross-adapter-resources-in-a-hybrid-system.md) was introduced starting with Windows 8.1 (WDDM 1.3). The following user-mode and kernel-mode functions, structures, and enumerations are available:
 
-Starting with Windows 8.1, these user-mode and kernel-mode structures and enumerations of the display device driver interface (DDI) are updated to handle [cross-adapter resources](using-cross-adapter-resources-in-a-hybrid-system.md) on a [hybrid system](using-cross-adapter-resources-in-a-hybrid-system.md):
+* [**D3D10_DDI_RESOURCE_MISC_FLAG**](/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d10_ddi_resource_misc_flag) enumeration
+* [**D3DDDI_RESOURCEFLAGS2**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_resourceflags2) structure
+* [**D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_synchronizationobject_flags) structure
+* [**D3DKMDT_GDISURFACEDATA**](/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmdt_gdisurfacedata) structure
+* [**D3DKMDT_GDISURFACETYPE**](/windows-hardware/drivers/ddi/d3dkmdt/ne-d3dkmdt-_d3dkmdt_gdisurfacetype) enumeration
+* [**DXGK_DRIVERCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps) structure
+* [**DXGK_VIDMMCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidmmcaps) structure
+* [*pfnQueryDListForApplication1*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_querydlistforapplication1) function
 
--   [**D3D10\_DDI\_RESOURCE\_MISC\_FLAG**](/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d10_ddi_resource_misc_flag)
--   [**D3DDDI\_RESOURCEFLAGS2**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_resourceflags2)
--   [**D3DDDI\_SYNCHRONIZATIONOBJECT\_FLAGS**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_synchronizationobject_flags)
--   [**D3DKMDT\_GDISURFACEDATA**](/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmdt_gdisurfacedata)
--   [**D3DKMDT\_GDISURFACETYPE**](/windows-hardware/drivers/ddi/d3dkmdt/ne-d3dkmdt-_d3dkmdt_gdisurfacetype)
--   [**DXGK\_DRIVERCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps)
--   [**DXGK\_VIDMMCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidmmcaps)
+The [cross-adapter resource scan-out](supporting-caso.md) (CASO) feature was introduced starting with Windows Server 2022 (WDDM 2.9). The following additional support was added for CASO:
 
-This function, new for Windows 8.1, is implemented by the user-mode display driver:
+* [**pfnQueryDListForApplication2**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_querydlistforapplication2) function (added)
+* [**D3DDDI_DLIST_QUERY_RESULT**](/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-d3dddi_dlist_query_result) enumeration (added)
+* [**D3DDDI_DLIST_QUERY_DECISION_FACTOR**](/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-d3dddi_dlist_query_decision_factor) enumeration (added)
+* **NoHybridDiscreteDListDllSupport** was added to the [**DXGK_DRIVERCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps) structure
+* **CrossAdapterResourceTexture** and **CrossAdapterResourceScanout** were added to the [**DXGK_VIDMMCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidmmcaps) structure
 
--   [*QueryDListForApplication1*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_querydlistforapplication1)
+> [!NOTE]
+> On Windows Server 2022 (WDDM 2.9) and later OS versions, a user-mode display driver (UMD) on a hybrid system must support the [**pfnQueryDListForApplication2**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_querydlistforapplication2) DDI, which replaces [*pfnQueryDListForApplication1*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_querydlistforapplication1), regardless of whether it implements support for CASO.
 
-Here's how to set up and register a DLL that exports this function.
-## <span id="Setting_up_the_dList_DLL"></span><span id="setting_up_the_dlist_dll"></span><span id="SETTING_UP_THE_DLIST_DLL"></span>Setting up the dList DLL
+## Setting up the dList DLL
 
+A *dList* is a list of applications that need [cross-adapter shared surfaces](using-cross-adapter-resources-in-a-hybrid-system.md) for high-performance rendering on the discrete GPU.
 
-A *dList* is a list of applications that need cross-adapter shared surfaces for high-performance rendering on the discrete GPU. The discrete GPU installs a separate small **dList** DLL that exports the [**QueryDListForApplication1**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_querydlistforapplication1) function. The operating system itself doesn't determine which GPU an application should run on. Instead, the Microsoft Direct3D runtime calls **QueryDListForApplication1** at most once during Direct3D initialization.
+The discrete GPU's UMD installs a separate, small **dList** DLL that exports its [**pfnQueryDListForApplication2**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_querydlistforapplication2) function. The operating system itself doesn't determine which GPU an application should run on. Instead, the Direct3D runtime calls **pfnQueryDListForApplication2** at most once during Direct3D initialization.
 
 The driver must query an up-to-date list of process information to determine whether or not the process needs the enhanced performance of a discrete GPU instead of the integrated GPU.
 
-For best performance, the DLL should be under 200 KB in size, should keep allocations to a minimum, and should be able to return from the [**QueryDListForApplication1**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_querydlistforapplication1) function in under 4 ms.
+For best performance, the DLL should:
 
-## <span id="Registering_the_dList_DLL"></span><span id="registering_the_dlist_dll"></span><span id="REGISTERING_THE_DLIST_DLL"></span>Registering the dList DLL
+* Be under 200 KB in size
+* Keep allocations to a minimum
+* Be able to return from [**pfnQueryDListForApplication2**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_querydlistforapplication2) in under 4 ms.
 
+## Registering the dList DLL
 
-The user-mode display driver provides the name of the small **dList** DLL in its INF file under the registry keys **UserModeDListDriverName** and **UserModeDListDriverNameWow,** the latter under the **Wow64** registry entry. Here's example INF code:
+The UMD provides the name of the small **dList** DLL in its INF file under the registry keys **UserModeDListDriverName** and **UserModeDListDriverNameWow,** the latter under the **Wow64** registry entry. Here's example INF code:
 
 ```inf
 [Xxx_SoftwareDeviceSettings]

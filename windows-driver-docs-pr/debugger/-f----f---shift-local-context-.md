@@ -9,7 +9,6 @@ api_name:
 - .f+, .f- (Shift Local Context)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .f+, .f- (Shift Local Context)
@@ -51,8 +50,7 @@ The **.f+** command shifts the frame index to the next frame in the current stac
 
 For more information about the local context and other context settings, see [Changing Contexts](changing-contexts.md). For more information about how to display local variables and other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
-Remarks
--------
+## Remarks
 
 The *frame* specifies the local context (scope) that the debugger uses to interpret local variables
 

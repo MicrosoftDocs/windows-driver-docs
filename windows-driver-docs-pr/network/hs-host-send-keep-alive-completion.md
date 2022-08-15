@@ -4,7 +4,6 @@ description: The HS_HOST_SEND_KEEP_ALIVE_COMPLETION function indicates the succe
 keywords: 
 - typedef DWORD (WINAPI HS_HOST_SEND_KEEP_ALIVE_COMPLETION) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_HOST\_SEND\_KEEP\_ALIVE\_COMPLETION function
@@ -14,8 +13,7 @@ ms.localizationpriority: medium
 
 The **HS\_HOST\_SEND\_KEEP\_ALIVE\_COMPLETION** function indicates the success or failure of a request for a network send keep-alive message.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_HOST_SEND_KEEP_ALIVE_COMPLETION)(
@@ -24,8 +22,7 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *hPluginContext* \[in\]  
 Context handle for the plugin making the call to this function.
@@ -33,18 +30,15 @@ Context handle for the plugin making the call to this function.
 *dwResult* \[in\]  
 The result code.
 
-Return value
-------------
+## Return value
 
 This function is called by the plugin to communicate with the host and does not return a value.
 
-Remarks
--------
+## Remarks
 
 The plugin must call this function to inform the host of the result of a previous call to [**HS\_PLUGIN\_SEND\_KEEP\_ALIVE**](hs-plugin-send-keep-alive.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

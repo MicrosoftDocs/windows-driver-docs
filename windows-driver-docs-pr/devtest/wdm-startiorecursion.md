@@ -9,7 +9,6 @@ api_name:
 - StartIoRecursion
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StartIoRecursion rule (wdm)
@@ -19,8 +18,7 @@ The **StartIoRecursion** rule specifies that if a driver's [**StartIo**](/window
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoSetStartIoAttributes**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iosetstartioattributes)
 [**IoStartNextPacket**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iostartnextpacket)

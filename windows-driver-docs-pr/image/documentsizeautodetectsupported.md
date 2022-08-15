@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # DocumentSizeAutoDetectSupported element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **DocumentSizeAutoDetectSupported** element indicates whether the scan device can detect the size of the original media.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:DocumentSizeAutoDetectSupported>
@@ -26,13 +24,11 @@ Usage
 </wscn:DocumentSizeAutoDetectSupported>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. A Boolean value that must be 0, 1, false, or true.**falsetrue**
 
@@ -60,8 +56,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 If the scan device can detect the size of the original media, the WSD Scan Service should return 1 (**true**); otherwise, it should return 0 (**false**).
 

@@ -1,5 +1,5 @@
 ---
-title: memlist
+title: memlist (WinDbg)
 description: The memlist extension scans physical memory lists from the page frame number (PFN) database in order to check them for consistency.
 keywords: ["PFN database", "memlist Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - memlist
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !memlist
@@ -51,8 +50,7 @@ Causes the zeroed pages list to be verified.
 
  
 
-Remarks
--------
+## Remarks
 
 At present, this extension will only check the zeroed pages list to make sure that all pages in that list are zeroed. The appropriate syntax is:
 

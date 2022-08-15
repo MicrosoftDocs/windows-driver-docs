@@ -6,7 +6,6 @@ keywords:
 - buffers WDK IEEE 1394 bus
 - DMA transfers WDK IEEE 1394 bus
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Buffering Isochronous DMA Transfers for IEEE 1394 Devices
@@ -19,7 +18,7 @@ Once begun, isochronous transfer is continuous until halted. The host controller
 
 The following diagram illustrates buffers used in isochronous transfer.
 
-![diagram illustrating buffers used in isochronous transfer](images/1394lin.png)
+![diagram illustrating buffers used in isochronous transfer.](images/1394lin.png)
 
  
 

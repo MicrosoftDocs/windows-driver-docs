@@ -3,10 +3,8 @@ title: Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)
 description: Start here for an overview of Debugging Tools for Windows. This tool set includes WinDbg and other debuggers.
 ms.assetid: 938ef180-84de-442f-9b6c-1138c2fc8d5a
 keywords: ["Debugging Tools for Windows", "Windows debugging", "Windows Debugger", "Kernel debugging", "Kernel debugger", "WinDbg"]
-ms.date: 02/22/2017
+ms.date: 03/21/2022
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)
@@ -25,12 +23,12 @@ You can get Debugging Tools for Windows as part of a development kit or as a sta
 
 -   **As part of the Windows SDK**
 
-    Debugging Tools for Windows is included in the Windows Software Development Kit (SDK). To download the installer or an ISO image, see [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) on Windows Dev Center.
+    Debugging Tools for Windows is included in the Windows Software Development Kit (SDK). To download the installer or an ISO image, see [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) on Windows Dev Center.
 
 
 -   **As a standalone tool set**
 
-    You can install the Debugging Tools for Windows alone, without the Windows SDK or WDK, by starting installation of the Windows SDK and then selecting only **Debugging Tools for Windows** in the list of features to install (and clearing the selection of all other features). To download the installer or an ISO image, see [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) on Windows Dev Center.
+    You can install the Debugging Tools for Windows alone, without the Windows SDK or WDK, by starting installation of the Windows SDK and then selecting only **Debugging Tools for Windows** in the list of features to install (and clearing the selection of all other features). To download the installer or an ISO image, see [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) on Windows Dev Center.
 
 
 ## <span id="Getting_Started_with_Windows_Debugging"></span><span id="getting_started_with_windows_debugging"></span><span id="GETTING_STARTED_WITH_WINDOWS_DEBUGGING"></span>Get started with Windows Debugging
@@ -52,13 +50,12 @@ All of these debugging environments provide user interfaces for the same underly
 
 ## <span id="Windows_debuggers"></span><span id="windows_debuggers"></span><span id="WINDOWS_DEBUGGERS"></span>Windows debuggers
 
-The Windows debuggers can run on x86-based, x64-based, or ARM-based processors, and they can debug code that is running on those same architectures. Sometimes the debugger and the code being debugged run on the same computer, but other times the debugger and the code being debugged run on separate computers. In either case, the computer that is running the debugger is called the *host computer*, and the computer that is being debugged is called the *target computer*. The Windows debuggers support the following versions of Windows for both the host and target computers.
+The Windows debuggers can run on x86-based, x64-based, or Arm-based processors, and they can debug code that is running on those same architectures. Sometimes the debugger and the code being debugged run on the same computer, but other times the debugger and the code being debugged run on separate computers. In either case, the computer that is running the debugger is called the *host computer*, and the computer that is being debugged is called the *target computer*. The Windows debuggers support the following versions of Windows for both the host and target computers.
 
+-   Windows 11 and Windows Server 2022
 -   Windows 10 and Windows Server 2016
 -   Windows 8.1 and Windows Server 2012 R2
 -   Windows 8 and Windows Server 2012
--   Windows 7 and Windows Server 2008 R2
-
 
 ## <span id="Symbols_and_Symbol_Files"></span><span id="symbols_and_symbol_files"></span><span id="SYMBOLS_AND_SYMBOL_FILES"></span>Symbols and symbol files
 
@@ -77,4 +74,4 @@ In addition to the debuggers, Debugging Tools for Windows includes a set of tool
 
 ## <span id="Additional_documentation"></span><span id="additional_documentation"></span><span id="ADDITIONAL_DOCUMENTATION"></span>Additional documentation
 
-For additional information related to Debugging Tools for Windows, see [Debugging Resources](debugging-resources.md). For information on what's new in Windows 10, see [Debugging Tools for Windows: New for Windows 10](debugging-tools-for-windows--new-for-windows-10.md).
+For additional information related to Debugging Tools for Windows, see [Debugging Resources](debugging-resources.md). For information on what's new in the debugger, see [WinDbg Preview - What's New](windbg-what-is-new-preview.md).

@@ -9,7 +9,6 @@ api_name:
 - logexts.logb
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !logexts.logb
@@ -56,8 +55,7 @@ Flushes the output buffer to the disk.
 
 For more information, see [Logger and LogViewer](logger-and-logviewer.md).
 
-Remarks
--------
+## Remarks
 
 As a performance consideration, log output is flushed to disk only when the output buffer is full. By default, the buffer is 2144 bytes.
 

@@ -7,7 +7,6 @@ keywords:
 - WSDBIT tool WDK , WSDL
 - WSDAPI Basic Interoperability Tool WDK , WSDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WSDBIT Reference

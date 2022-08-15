@@ -1,6 +1,6 @@
 ---
-title: KSINTERFACE\_MEDIA\_WAVE\_QUEUED
-description: KSINTERFACE\_MEDIA\_WAVE\_QUEUED
+title: KSINTERFACE_MEDIA_WAVE_QUEUED
+description: The KSINTERFACE_MEDIA_WAVE_QUEUED interface is private for Windows XP and later and should not be used by the minidriver.
 keywords: ["KSINTERFACE_MEDIA_WAVE_QUEUED Streaming Media Devices"]
 topic_type:
 - apiref
@@ -8,39 +8,13 @@ api_name:
 - KSINTERFACE_MEDIA_WAVE_QUEUED
 api_type:
 - NA
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/12/2021
 ---
 
-# KSINTERFACE\_MEDIA\_WAVE\_QUEUED
+# KSINTERFACE_MEDIA_WAVE_QUEUED
 
+The **KSINTERFACE_MEDIA_WAVE_QUEUED** interface is private for Windows XP and later. It should not be used by the minidriver.
 
-## <span id="ddk_ksinterface_media_wave_queued_ks"></span><span id="DDK_KSINTERFACE_MEDIA_WAVE_QUEUED_KS"></span>
+## Requirements
 
-
-The KSINTERFACE\_MEDIA\_WAVE\_QUEUED interface is private for Windows XP and later. It should not be used by the minidriver.
-
-Requirements
-------------
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Private for Microsoft Windows XP and later operating systems.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+Version: Private for Microsoft Windows XP and later operating systems.

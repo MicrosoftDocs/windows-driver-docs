@@ -1,18 +1,17 @@
 ---
 title: How to customize print settings (UWP device apps)
 description: This topic introduces the advanced print settings flyout, and shows how the C# version of the Print settings and print notifications sample replaces the default flyout with a custom flyout.
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 08/11/2021
 ---
 
 # How to customize print settings (UWP device apps)
 
-In Windows 8.1, UWP device apps let printer manufacturers customize the flyout that displays advanced print settings. This topic introduces the advanced print settings flyout, and shows how the C# version of the [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?LinkID=242862) sample replaces the default flyout with a custom flyout. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
+In Windows 8.1, UWP device apps let printer manufacturers customize the flyout that displays advanced print settings. This topic introduces the advanced print settings flyout, and shows how the C# version of the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample replaces the default flyout with a custom flyout. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-The C# version of the [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?LinkID=242862) sample uses the **Preferences.xaml** page to demonstrate the UI of a custom flyout for advanced print settings. A print helper class is used to create a device context (IPrinterExtensionContext) and perform the device queries. The **PrinterHelperClass.cs** file is in the **DeviceAppForPrintersLibrary** project and uses APIs defined in the **PrinterExtensionLibrary** project. The printer extension library provides a convenient way to access the printer extension interfaces of the v4 print driver. For more info, see the [Printer extension library overview](printer-extension-library-overview.md).
+The C# version of the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample uses the **Preferences.xaml** page to demonstrate the UI of a custom flyout for advanced print settings. A print helper class is used to create a device context (IPrinterExtensionContext) and perform the device queries. The **PrinterHelperClass.cs** file is in the **DeviceAppForPrintersLibrary** project and uses APIs defined in the **PrinterExtensionLibrary** project. The printer extension library provides a convenient way to access the printer extension interfaces of the v4 print driver. For more info, see the [Printer extension library overview](printer-extension-library-overview.md).
 
->[!NOTE]
->The code examples shown in this topic are based on the C# version of the [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?LinkID=242862) sample. This sample is also available in JavaScript and C++. Note that because C++ can access COM directly, the C++ version of the sample does not include code library projects. Download the samples to see the latest versions of the code.
+> [!NOTE]
+> The code examples shown in this topic are based on the C# version of the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample. This sample is also available in JavaScript and C++. Note that because C++ can access COM directly, the C++ version of the sample does not include code library projects. Download the samples to see the latest versions of the code.
 
 ## Advanced print settings
 
@@ -25,14 +24,23 @@ When a UWP device app is not installed for a printer, Windows provides a default
 To invoke the flyout for advanced print settings:
 
 1. Open a UWP app that supports printing
-2. Access the charms by swiping on the right side of the screen (or by using the Windows Logo Key + C)
-3. Tap the **Devices** charm
-4. Tap **Print**
-5. Tap a printer
-6. The **Print** window opens
-7. Click the **More settings** link on the **Print** window
-8. The advanced print settings flyout opens
+
+1. Access the charms by swiping on the right side of the screen (or by using the Windows Logo Key + C)
+
+1. Tap the **Devices** charm
+
+1. Tap **Print**
+
+1. Tap a printer
+
+1. The **Print** window opens
+
+1. Click the **More settings** link on the **Print** window
+
+1. The advanced print settings flyout opens
+
    - The *default flyout* appears when no UWP device app for the printer is installed
+
    - A *custom flyout* appears when a UWP device app for the printer is installed
 
 ![examples of the default and custom flyouts for advanced print settings.](images/373072-printer-settings-launch.png)
@@ -42,14 +50,19 @@ To invoke the flyout for advanced print settings:
 Before you get started:
 
 1. Make sure your printer is installed using a v4 print driver. For more info, see [Developing v4 print drivers](../print/v4-printer-driver.md).
-2. Get your development PC set up. See [Getting started](getting-started.md) for info about downloading the tools and creating a developer account.
-3. Associate your app with the store. See [Create a UWP device app](step-1--create-a-uwp-device-app.md) for info about that.
-4. Create device metadata for your printer that associates it with your app. See [Create device metadata](step-2--create-device-metadata.md) for more about that.
-5. Build the UI for the main page of your app. All UWP device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Microsoft Store design principles](/windows/uwp/design/).
-6. If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** and **DeviceAppForPrintersLibrary** projects to your UWP device app solution. You can find each of these projects in the [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?LinkID=242862) sample.
 
->[!NOTE]
->Because C++ can access COM directly, C++ apps do not require a separate library to work with the COM-based printer device context.
+1. Get your development PC set up. See [Getting started](getting-started.md) for info about downloading the tools and creating a developer account.
+
+1. Associate your app with the store. See [Create a UWP device app](step-1--create-a-uwp-device-app.md) for info about that.
+
+1. Create device metadata for your printer that associates it with your app. See [Create device metadata](step-2--create-device-metadata.md) for more about that.
+
+1. Build the UI for the main page of your app. All UWP device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Microsoft Store design principles](/windows/uwp/design/).
+
+1. If you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** and **DeviceAppForPrintersLibrary** projects to your UWP device app solution. You can find each of these projects in the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample.
+
+> [!NOTE]
+> Because C++ can access COM directly, C++ apps do not require a separate library to work with the COM-based printer device context.
 
 ## Step 1: Register the extension
 
@@ -59,7 +72,7 @@ You can add the print task settings extension on the **Declarations** tab of the
 
 This example shows the print task settings extension in the `Extension` element, as it appears in the app package manifest file, **Package.appxmanifest**.
 
-```XML
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
   <Identity Name="Microsoft.SDKSamples.DeviceAppForPrinters.CS" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="1.0.0.0" />
@@ -104,17 +117,18 @@ It's important to review the [UWP app flyout guidelines](/windows/uwp/design/con
 
 For the main page of your app, keep in mind that Windows 8.1 can display multiple apps in various sizes on a single monitor. See the following guidelines to learn more about how your app can reflow gracefully between screen sizes, window sizes, and orientations.
 
-- [Guidelines for window sizes and scaling to screens](https://go.microsoft.com/fwlink/p/?LinkId=311830)
+- [Guidelines for window sizes and scaling to screens](/windows/apps/design/layout/screen-sizes-and-breakpoints-for-responsive-design)
+
 - [Guidelines for resizing windows to tall and narrow layouts](/previous-versions/windows/hh465371(v=win.10))
 
 ### Flyout dimensions
 
-The flyout that displays advanced print settings is 646 pixels wide and at least 768 pixels high (the actual height depends on the resolution of the user's screen). The Back button in the title area of the flyout is provided by Windows. “App Title” text is the app title from the app manifest. The title area is 80 pixels high, leaving 688 pixels for the viewable area of the custom flyout.
+The flyout that displays advanced print settings is 646 pixels wide and at least 768 pixels high (the actual height depends on the resolution of the user's screen). The Back button in the title area of the flyout is provided by Windows. "App Title" text is the app title from the app manifest. The title area is 80 pixels high, leaving 688 pixels for the viewable area of the custom flyout.
 
 ![flyout dimensions for advanced printer settings.](images/439446-printer-options-layout.png)
 
->[!NOTE]
->If your custom flyout is more than 688 pixels in height, the user may slide or scroll to view parts of the flyout that are above or below the viewable area.
+> [!NOTE]
+> If your custom flyout is more than 688 pixels in height, the user may slide or scroll to view parts of the flyout that are above or below the viewable area.
 
 ### Defining the app title color and icon
 
@@ -122,7 +136,7 @@ Title, background color, text color, and the small logo on the custom flyout is 
 
 This example shows the title and icon, as defined in the `VisualElements` element, in the app package manifest file (**Package.appxmanifest**).
 
-```XML
+```xml
       <VisualElements DisplayName="Device App For Printers C# sample" Logo="Assets\squareTile-sdk.png" SmallLogo="Assets\smallTile-sdk.png" Description="DeviceAppForPrinters C# sample" ForegroundText="light" BackgroundColor="#00b2f0" ToastCapable="true">
         <DefaultTile ShowName="allLogos" ShortName="App4PrinterCS" WideLogo="Assets\tile-sdk.png" />
         <SplashScreen Image="Assets\splash-sdk.png" BackgroundColor="#00b2f0" />
@@ -147,12 +161,12 @@ If your app has declared the print task settings extension, it must implement an
 
 A UWP device app can determine that the activation is intended for advanced print settings (that someone just tapped **More options** on the print settings dialog) when the event argument's `kind` property is equal to Windows.ApplicationModel.Activation.ActivationKind.printTaskSettings.
 
->[!NOTE]
->In some cases, if the user dismisses the app immediately after it launches, an exception may be thrown inside the activation handler. To avoid this, make sure your activation handler completes efficiently and doesn’t do resource-intensive processing.
+> [!NOTE]
+> In some cases, if the user dismisses the app immediately after it launches, an exception may be thrown inside the activation handler. To avoid this, make sure your activation handler completes efficiently and doesn't do resource-intensive processing.
 
 This example shows the activation event handler in the `OnActivated` method, as it appears in the **Constants.cs** file. The event arguments are then cast as Windows.ApplicationModel.Activation.PrintTaskSettingsActivatedEventArgs. Although the sample includes this code in the **Constants.cs** file, it's actually part of the App class that is also defined in the **App.xaml.cs** file.
 
-```CSharp
+```csharp
 partial class App : Application
 {
     protected override void OnActivated(IActivatedEventArgs args)
@@ -187,7 +201,7 @@ The event arguments that are passed to the `LoadAdvancedPrintSettingsContext` me
 
 This example shows the `LoadAdvancedPrintSettingsContext` method, as it appears in the **Constants.cs** file.
 
-```CSharp
+```csharp
 public PrintTaskConfiguration Config;
 public Object Context;
 
@@ -201,9 +215,9 @@ public void LoadAdvancedPrintSettingsContext(PrintTaskSettingsActivatedEventArgs
 
 On the custom flyout page, **Preferences.xaml.cs**, a class named `rootPage` acts as a pointer to the MainPage class so that the print task extension context and the printer device context can be accessed from the flyout.
 
-This example shows the pointer in a portion of `Preferences` class, from the **Preferences.xaml.cs** file. Download the [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?LinkID=242862) sample to see the full code.
+This example shows the pointer in a portion of `Preferences` class, from the **Preferences.xaml.cs** file. Download the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample to see the full code.
 
-```CSharp
+```csharp
 public sealed partial class Preferences : SDKTemplate.Common.LayoutAwarePage
 {
     // A pointer back to the main page.  
@@ -225,13 +239,13 @@ public sealed partial class Preferences : SDKTemplate.Common.LayoutAwarePage
     // . . .
 ```
 
-When the page constructor for **Preferences.xaml.cs** is called, objects are created for the print task extension context (a `PrintTaskConfiguraton` object named `configuration`) and the printer device context (a `PrintHelperClass` object named `printHelper`).
+When the page constructor for **Preferences.xaml.cs** is called, objects are created for the print task extension context (a `PrintTaskConfiguration` object named `configuration`) and the printer device context (a `PrintHelperClass` object named `printHelper`).
 
-After those objects are created, the printer device context is used in the `DisplaySettings` method to load TextBlocks and ComboBoxs. Note that unlike JavaScript, changes in selection are not fired on the same thread as the rest of the app. You have to maintain a local cache of user selections to use for later.
+After those objects are created, the printer device context is used in the `DisplaySettings` method to load TextBlocks and ComboBoxes. Note that unlike JavaScript, changes in selection are not fired on the same thread as the rest of the app. You have to maintain a local cache of user selections to use for later.
 
 This example shows the custom flyout page constructor, `DisplaySettings`, and other helper methods in the **Preferences.xaml.cs** file.
 
-```CSharp
+```csharp
 public Preferences()
 {
     this.InitializeComponent();
@@ -341,7 +355,7 @@ When the user has finished setting advanced print settings, the Microsoft Store 
 
 This example shows the event listener for `SaveRequested`, being added in the `OnNavigatedTo` event handler of the custom flyout, in the **Preferences.xaml.cs** file. When the `SaveRequested` event is triggered, the `OnSaveRequested` method will be invoked (that method is also in the **Preferences.xaml.cs** file).
 
-```CSharp
+```csharp
 protected override void OnNavigatedTo(NavigationEventArgs e)
 {
     if (null == configuration)
@@ -357,12 +371,12 @@ protected override void OnNavigatedTo(NavigationEventArgs e)
 
 In the `OnSaveRequested` method, the app first uses the `printHelper` object to set the currently selected options for each feature on the printer extension context. Then it calls the `Save` method on the `request` object that is passed in as an argument to the `OnSaveRequested` method. The `Save` method, from the Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequest class, uses the printer extension context to validate the print ticket and save the print task configuration.
 
->[!IMPORTANT]
->If the print ticket is invalid in any way, the `Save` method throws an exception that the app must handle. If the app doesn't handle the exception, the flow is stopped, forcing the user to light dismiss the flyout and restart the print flow.
+> [!IMPORTANT]
+> If the print ticket is invalid in any way, the `Save` method throws an exception that the app must handle. If the app doesn't handle the exception, the flow is stopped, forcing the user to light dismiss the flyout and restart the print flow.
 
 This example shows the `OnSaveRequested` method in the **Preferences.xaml.cs** file. Because the `SaveRequested` event is not raised on the UI thread, it needs to use a Windows.UI.Core.CoreDispatcher to post messages to the UI thread to display the appropriate messages while validating and saving the ticket.
 
-```CSharp
+```csharp
 async private void OnSaveRequested(object sender, PrintTaskConfigurationSaveRequestedEventArgs args)
 {
     if (null == printHelper || null == printerExtensionContext || null == args)
@@ -453,15 +467,15 @@ async private void OnSaveRequested(object sender, PrintTaskConfigurationSaveRequ
 
 ### Saving options that require user input
 
-The [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?LinkID=242862) sample demonstrates how to set defined features, which covers most print options. However, some options require a custom UI to get a user-specified value. For example, if an app used the advanced print settings to specify a custom page size, it would take these steps to save the user-specified value:
+The [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample demonstrates how to set defined features, which covers most print options. However, some options require a custom UI to get a user-specified value. For example, if an app used the advanced print settings to specify a custom page size, it would take these steps to save the user-specified value:
 
 1. Retrieve the print ticket during app activation. App activation for print settings is described earlier in [Step 3: Handle activation](#step-3-handle-activation).
 
-2. Check if the page size option is specified. In a C# or JS app, the print helper class can check for this option. In a C++ app, call QueryInterface on IPrintSchemaOption to retrieve IPrintSchemaPageMediaSizeOption.
+1. Check if the page size option is specified. In a C# or JS app, the print helper class can check for this option. In a C++ app, call QueryInterface on IPrintSchemaOption to retrieve IPrintSchemaPageMediaSizeOption.
 
     This example shows a method in a print helper class that checks if the page size option is specified.
 
-    ```CSharp
+    ```csharp
     public bool ShouldShowCustomUI(string index)
     {
         if (null != index)
@@ -479,11 +493,11 @@ The [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?
     }
     ```
 
-3. In the custom flyout, display a custom UI that asks the user for the page height and width, and retrieve the user-specified height and width from IPrintSchemaPageMediaSizeOption.
+1. In the custom flyout, display a custom UI that asks the user for the page height and width, and retrieve the user-specified height and width from IPrintSchemaPageMediaSizeOption.
 
     This example shows a method for a custom flyout that asks the user for page height and width.
 
-    ```CSharp
+    ```csharp
     private void ShowCustomPageMediaSizeUI(string index, bool keepValue)
     {
         //Hide custom media size UI unless needed
@@ -513,11 +527,11 @@ The [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?
     }
     ```
 
-4. Update the `IPrintSchemaPageMediaSizeOption` object with the user-specified values and validate that the height and width matches the user-specified values.
+1. Update the `IPrintSchemaPageMediaSizeOption` object with the user-specified values and validate that the height and width matches the user-specified values.
 
     This example is a helper method for updating the `IPrintSchemaPageMediaSizeOption` object in a printer helper class. The `OnSaveRequested` handler in the custom flyout would call this function if it determines that a custom page size option was requested.
 
-    ```CSharp
+    ```csharp
     public void SetCustomMediaSizeDimensions(string width, string height)
     {
       if ((null == width) && (null == height) && (null == Capabilities))
@@ -590,33 +604,45 @@ The [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?
 
 Before you can test your UWP device app, it must be linked to your printer using device metadata.
 
-- You need a copy of the device metadata package for your printer, to add the device app info to it. If you don’t have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Create device metadata for your UWP device app](./step-2--create-device-metadata.md).
+- You need a copy of the device metadata package for your printer, to add the device app info to it. If you don't have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Create device metadata for your UWP device app](./step-2--create-device-metadata.md).
 
-    >[!NOTE]
-    >To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](https://go.microsoft.com/fwlink/p/?linkid=309209), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
+    > [!NOTE]
+    > To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](https://developer.microsoft.com/windows/hardware/), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
 
 The following steps build your app and install the device metadata.
 
 1. Enable test signing.
-    1. Start the **Device Metadata Authoring Wizard** from *%ProgramFiles(x86)%*\\Windows Kits\\8.1\\bin\\x86, by double-clicking **DeviceMetadataWizard.exe**
-    2. From the **Tools** menu, select **Enable Test Signing**.
 
-2. Reboot the computer
-3. Build the solution by opening the solution (.sln) file. Press F7 or go to **Build-&gt;Build Solution** from the top menu after the sample has loaded.
-4. Disconnect and uninstall the printer. This step is required so that Windows will read the updated device metadata the next time the device is detected.
-5. Edit and save device metadata. To link the device app to your device, you must associate the device app with your device
-    >[!NOTE]
-    >If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](./step-2--create-device-metadata.md).
+    1. Start the **Device Metadata Authoring Wizard** from *%ProgramFiles(x86)%*\\Windows Kits\\8.1\\bin\\x86, by double-clicking **DeviceMetadataWizard.exe**
+
+    1. From the **Tools** menu, select **Enable Test Signing**.
+
+1. Reboot the computer
+
+1. Build the solution by opening the solution (.sln) file. Press F7 or go to **Build-&gt;Build Solution** from the top menu after the sample has loaded.
+
+1. Disconnect and uninstall the printer. This step is required so that Windows will read the updated device metadata the next time the device is detected.
+
+1. Edit and save device metadata. To link the device app to your device, you must associate the device app with your device
+
+    > [!NOTE]
+    > If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](./step-2--create-device-metadata.md).
 
     1. If the **Device Metadata Authoring Wizard** is not open yet, start it from *%ProgramFiles(x86)%*\\Windows Kits\\8.1\\bin\\x86, by double-clicking **DeviceMetadataWizard.exe**.
-    2. Click **Edit Device Metadata**. This will let you edit your existing device metadata package.
-    3. In the **Open** dialog box, locate the device metadata package associated with your UWP device app. (It has a **devicemetadata-ms** file extension.)
-    4. On the **Specify UWP device app information** page, enter the Microsoft Store app info in the **UWP device app** box. Click on **Import UWP app manifest file** to automatically enter the **Package name**, **Publisher name**, and **UWP app ID**.
-    5. If your app is registering for printer notifications, fill out the **Notification handlers** box. In **Event ID**, enter the name of the print event handler. In **Event Asset**, enter the name of the file where that code resides.
-    6. When you're done, click **Next** until you get to the **Finish** page.
-    7. On the **Review the device metadata package** page, make sure that all of the settings are correct and select the **Copy the device metadata package to the metadata store on the local computer** check box. Then click **Save**.
 
-6. Reconnect your printer so that Windows reads the updated device metadata when the device is connected.
+    1. Click **Edit Device Metadata**. This will let you edit your existing device metadata package.
+
+    1. In the **Open** dialog box, locate the device metadata package associated with your UWP device app. (It has a **devicemetadata-ms** file extension.)
+
+    1. On the **Specify UWP device app information** page, enter the Microsoft Store app info in the **UWP device app** box. Click on **Import UWP app manifest file** to automatically enter the **Package name**, **Publisher name**, and **UWP app ID**.
+
+    1. If your app is registering for printer notifications, fill out the **Notification handlers** box. In **Event ID**, enter the name of the print event handler. In **Event Asset**, enter the name of the file where that code resides.
+
+    1. When you're done, click **Next** until you get to the **Finish** page.
+
+    1. On the **Review the device metadata package** page, make sure that all of the settings are correct and select the **Copy the device metadata package to the metadata store on the local computer** check box. Then click **Save**.
+
+1. Reconnect your printer so that Windows reads the updated device metadata when the device is connected.
 
 ## Troubleshooting
 

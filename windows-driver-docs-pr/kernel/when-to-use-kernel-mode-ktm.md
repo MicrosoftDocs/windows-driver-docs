@@ -3,7 +3,6 @@ title: When to Use Kernel-Mode KTM
 description: When to Use Kernel-Mode KTM
 keywords: ["Kernel Transaction Manager WDK , when to use", "KTM WDK , when to use"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # When to Use Kernel-Mode KTM

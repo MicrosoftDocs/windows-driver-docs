@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ImagesToTransfer element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The optional **ImagesToTransfer** element specifies the number of images to scan for the current job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ImagesToTransfer wscn:MustHonor=""                       wscn:Override=""                       wscn:UsedDefault=""
@@ -29,8 +27,7 @@ Usage
 </wscn:ImagesToTransfer wscn:MustHonor=""                       wscn:Override=""                       wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -72,8 +69,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 Required. An integer in the range from 0 through 2147483648.
 
@@ -104,8 +100,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **ImagesToTransfer** value is useful when the scan device has a document feeder that can contain more pages of media than the current job.
 

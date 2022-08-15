@@ -6,7 +6,6 @@ keywords:
 - extended format WDK Windows 7 display , DXGI_FORMAT_R10G10B10_XR_BIAS_A2_UNORM
 - DXGI_FORMAT_R10G10B10_XR_BIAS_A2_UNORM WDK Windows 7 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DXGI\_FORMAT\_R10G10B10\_XR\_BIAS\_A2\_UNORM

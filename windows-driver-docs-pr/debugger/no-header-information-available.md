@@ -3,7 +3,6 @@ title: No Header Information Available
 description: No Header Information Available
 keywords: ["No header information available (warning)", "header information not available (warning)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # No Header Information Available

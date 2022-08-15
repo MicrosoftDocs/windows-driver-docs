@@ -118,11 +118,25 @@
       href: troubleshooting-common-errors.md
     - name: "Event tracing"
       href: event-tracing.md
+  - name: "HID over SPI"
+    items: 
+    - name: "Introduction to HID over SPI"
+      href: hid-over-spi.md
+    - name: "Architecture and overview"
+      href: architecture-and-overview-for-spi.md
+    - name: "Plug and Play support"
+      href: plug-and-play-for-spi.md
+    - name: "Power management"
+      href: power-management-over-spi.md
+    - name: "Error handling"
+      href: error-handling-for-spi.md
+    - name: "D3Hot Support for HidSpiCx devices"
+      href: d3hot-support-for-hidspicx.md
 - name: "Non-HID legacy devices and drivers"
   items: 
   - name: "Non-HID legacy devices"
     href: non-hid-legacy-devices.md
-  - name: "Keyboard and mouse class drivers"
+  - name: "Configuration of keyboard and mouse class drivers"
     href: keyboard-and-mouse-class-drivers.md
   - name: "PS/2 (i8042prt) driver"
     href: ps-2--i8042prt--driver.md

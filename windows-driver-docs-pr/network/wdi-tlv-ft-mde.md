@@ -4,10 +4,11 @@ description: WDI_TLV_FT_MDE is a TLV that contains the MDIE of a BSS entry.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_FT_MDE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_FT\_MDE
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_FT\_MDE is a TLV that contains the MDIE of a BSS entry.
@@ -31,8 +32,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

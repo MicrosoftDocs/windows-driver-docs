@@ -4,7 +4,6 @@ description: The WdfObjectDereference macro decrements the reference count for a
 keywords:
  - WdfObjectDereference macro
 ms.date: 08/23/2017
-ms.localizationpriority: medium
 ---
 
 # WdfObjectDereference macro
@@ -14,8 +13,7 @@ ms.localizationpriority: medium
 
 The **WdfObjectDereference** macro decrements the reference count for a specified framework object.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID WdfObjectDereference(
@@ -23,21 +21,18 @@ VOID WdfObjectDereference(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Handle* \[in\]  
 A handle to a framework object.
 
-Return value
-------------
+## Return value
 
 None.
 
 A bug check occurs if the driver supplies an invalid object handle.
 
-Remarks
--------
+## Remarks
 
 If the object's reference count becomes zero, the object might be deleted before **WdfObjectDereference** returns.
 
@@ -47,8 +42,7 @@ Instead of calling **WdfObjectDereference**, a driver can call [**WdfObjectDeref
 
 For more information about object reference counts, see [Framework Object Life Cycle](./framework-object-life-cycle.md).
 
-Examples
---------
+## Examples
 
 The following code example decrements an object's reference count.
 
@@ -56,8 +50,7 @@ The following code example decrements an object's reference count.
 WdfObjectDereference(Object); 
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

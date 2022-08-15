@@ -9,7 +9,6 @@ api_name:
 - InitFreeDeviceCallback
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # InitFreeDeviceCallback rule (kmdf)
@@ -19,8 +18,7 @@ The InitFreeDeviceCallback rule specifies that a driver must call [**WdfDeviceIn
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfControlDeviceInitAllocate**](/windows-hardware/drivers/ddi/wdfcontrol/nf-wdfcontrol-wdfcontroldeviceinitallocate)
 [**WdfDeviceInitAssignName**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitassignname)

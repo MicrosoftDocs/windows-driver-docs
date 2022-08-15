@@ -3,7 +3,6 @@ title: Cancel a shipping label
 description: Use this method in the Microsoft Hardware API to request cancellation of a shipping label in Microsoft Approval or Gradual Rollout.
 ms.topic: article
 ms.date: 11/13/2019
-ms.localizationpriority: medium
 ---
 
 # Cancel a shipping label
@@ -63,4 +62,4 @@ For more info about error codes, see [Error codes](get-product-data.md#error-cod
 
 ## See also
 
-- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+- [hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

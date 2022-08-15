@@ -2,7 +2,6 @@
 title: Warning rule set (WDM)
 description: Use these rules to verify that your driver can correctly processes IRPs in various contexts and follows Microsoft recommended best practices.
 ms.date: 05/21/2018
-ms.localizationpriority: medium
 ---
 
 # Warning rule set (WDM)
@@ -43,11 +42,11 @@ Use these rules to verify that your driver can correctly processes IRPs in vario
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="wdm-pagedcode.md" data-raw-source="[&lt;strong&gt;PagedCode&lt;/strong&gt;](wdm-pagedcode.md)"><strong>PagedCode</strong></a></p></td>
-<td align="left"><p>The <a href="wdm-pagedcode.md" data-raw-source="[&lt;strong&gt;PagedCode&lt;/strong&gt;](wdm-pagedcode.md)"><strong>PagedCode</strong></a> rule specifies that the driver calls the <a href="/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;PAGED_CODE&lt;/strong&gt;](../kernel/mm-bad-pointer.md)"><strong>PAGED_CODE</strong></a> macro only when it is executing at <strong>IRQL &lt;= APC_LEVEL</strong>.</p></td>
+<td align="left"><p>The <a href="wdm-pagedcode.md" data-raw-source="[&lt;strong&gt;PagedCode&lt;/strong&gt;](wdm-pagedcode.md)"><strong>PagedCode</strong></a> rule specifies that the driver calls the <a href="/windows-hardware/drivers/kernel/paged_code"><strong>PAGED_CODE</strong></a> macro only when it is executing at <strong>IRQL &lt;= APC_LEVEL</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="wdm-pagedcodeatpowertrans.md" data-raw-source="[&lt;strong&gt;PagedCodeAtPowerTrans&lt;/strong&gt;](wdm-pagedcodeatpowertrans.md)"><strong>PagedCodeAtPowerTrans</strong></a></p></td>
-<td align="left"><p>The <a href="wdm-pagedcodeatpowertrans.md" data-raw-source="[&lt;strong&gt;PagedCodeAtPowerTrans&lt;/strong&gt;](wdm-pagedcodeatpowertrans.md)"><strong>PagedCodeAtPowerTrans</strong></a> rule specifies that a driver should not call <a href="/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;PAGED_CODE&lt;/strong&gt;](../kernel/mm-bad-pointer.md)"><strong>PAGED_CODE</strong></a> while responding to a system IRP_MJ_POWER Irp (IRP_MN_SET_POWER) and to a device IRP_MJ_POWER Irp (IRP_MN_SET_POWER).</p></td>
+<td align="left"><p>The <a href="wdm-pagedcodeatpowertrans.md" data-raw-source="[&lt;strong&gt;PagedCodeAtPowerTrans&lt;/strong&gt;](wdm-pagedcodeatpowertrans.md)"><strong>PagedCodeAtPowerTrans</strong></a> rule specifies that a driver should not call <a href="/windows-hardware/drivers/kernel/paged_code"><strong>PAGED_CODE</strong></a> while responding to a system IRP_MJ_POWER Irp (IRP_MN_SET_POWER) and to a device IRP_MJ_POWER Irp (IRP_MN_SET_POWER).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="wdm-reservedddis.md" data-raw-source="[&lt;strong&gt;ReservedDDIs&lt;/strong&gt;](wdm-reservedddis.md)"><strong>ReservedDDIs</strong></a></p></td>

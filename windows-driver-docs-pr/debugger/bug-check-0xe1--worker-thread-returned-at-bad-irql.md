@@ -9,7 +9,6 @@ api_name:
 - WORKER_THREAD_RETURNED_AT_BAD_IRQL
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xE1: WORKER\_THREAD\_RETURNED\_AT\_BAD\_IRQL
@@ -57,13 +56,11 @@ The WORKER\_THREAD\_RETURNED\_AT\_BAD\_IRQL bug check has a value of 0x000000E1.
 
  
 
-Cause
------
+## Cause
 
 A worker thread completed and returned with IRQL &gt;= DISPATCH\_LEVEL.
 
-Resolution
-----------
+## Resolution
 
 To find the driver that caused the error, use the [**ln (List Nearest Symbols)**](ln--list-nearest-symbols-.md) debugger command:
 

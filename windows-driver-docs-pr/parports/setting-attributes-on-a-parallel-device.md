@@ -5,7 +5,6 @@ keywords:
 - parallel devices WDK , attributes
 - attributes WDK parallel devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Attributes on a Parallel Device

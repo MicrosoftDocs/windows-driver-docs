@@ -6,7 +6,6 @@ keywords:
 - static parameters WDK networking
 - parameters WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Static Parameters

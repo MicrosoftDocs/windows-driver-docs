@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_VIDEOPROCAMP\_WHITEBALANCE\_COMPONENT
@@ -56,8 +55,7 @@ The KSPROPERTY\_VIDEOPROCAMP\_WHITEBALANCE\_COMPONENT property specifies the whi
 
 The property value (operation data) is a pair of LONG integers that specify the red and blue components of a camera's white balance setting. The values indicate the current red and blue component values of the camera.
 
-Remarks
--------
+## Remarks
 
 The supported range and default values for white balance components are implementation-dependent.
 
@@ -67,8 +65,7 @@ To determine the range of white balance values supported by the device, an appli
 
 When making a get request, the client receives the red value in the **Value1** member and the blue component value in the **Value2** member of the KSPROPERTY\_VIDEOPROCAMP\_NODE\_S2 structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -86,7 +83,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_VIDEOPROCAMP\_NODE\_S2**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videoprocamp_node_s2)
 

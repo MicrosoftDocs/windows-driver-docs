@@ -3,7 +3,6 @@ title: Semaphore Objects
 description: Semaphore Objects
 keywords: ["kernel dispatcher objects WDK , semaphore objects", "dispatcher objects WDK kernel , semaphore objects", "semaphore objects WDK kernel", "KeInitializeSemaphore", "waiting on semaphore objects", "KeReleaseSemaphore", "counting semaphores WDK kernel", "binary semaphores WDK kernel", "wait states WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Semaphore Objects
@@ -18,7 +17,7 @@ The dispatch routines of highest-level drivers, which are run in the context of 
 
 Any driver that uses a semaphore object must call [**KeInitializeSemaphore**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializesemaphore) before it waits on or releases the semaphore. The following figure illustrates how a driver with a thread can use a semaphore object.
 
-![diagram illustrating waiting for a semaphore object](images/3semobj.png)
+![diagram illustrating waiting for a semaphore object.](images/3semobj.png)
 
 As the previous figure shows, such a driver must provide the storage for the semaphore object, which should be resident. The driver can use the [device extension](device-extensions.md) of a driver-created device object, the controller extension if it uses a [controller object](./introduction-to-controller-objects.md), or nonpaged pool allocated by the driver.
 

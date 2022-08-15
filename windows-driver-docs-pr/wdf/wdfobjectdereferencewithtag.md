@@ -4,7 +4,6 @@ description: The WdfObjectDereferenceWithTag macro decrements the reference coun
 keywords:
  - WdfObjectDereferenceWithTag macro
 ms.date: 08/23/2017
-ms.localizationpriority: medium
 ---
 
 # WdfObjectDereferenceWithTag macro
@@ -14,8 +13,7 @@ ms.localizationpriority: medium
 
 The **WdfObjectDereferenceWithTag** macro decrements the reference count for a specified framework object and assigns the driver's current file name and line number to the reference. This macro also assigns a tag value to the reference.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID WdfObjectDereferenceWithTag(
@@ -24,8 +22,7 @@ VOID WdfObjectDereferenceWithTag(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Handle* \[in\]  
 A handle to a framework object.
@@ -33,15 +30,13 @@ A handle to a framework object.
 *Tag* \[in\]  
 A driver-defined value that identifies an object reference. The tag value must match a tag value that the driver previously supplied to [**WdfObjectReferenceWithTag**](wdfobjectreferencewithtag.md).
 
-Return value
-------------
+## Return value
 
 None.
 
 A bug check occurs if the driver supplies an invalid object handle.
 
-Remarks
--------
+## Remarks
 
 If the object's reference count becomes zero, the object might be deleted before **WdfObjectDereferenceWithTag** returns.
 
@@ -51,8 +46,7 @@ You can view the tag, line number, and file name values by using the **!wdftagtr
 
 For more information about object reference counts, see [Framework Object Life Cycle](./framework-object-life-cycle.md).
 
-Examples
---------
+## Examples
 
 The following code example decrements an object's reference count and assigns a tag value to the reference.
 
@@ -63,8 +57,7 @@ WdfObjectDereferenceWithTag(
                             );
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

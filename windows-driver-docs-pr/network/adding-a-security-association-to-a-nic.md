@@ -7,7 +7,6 @@ keywords:
 - ESP-protected packets WDK IPsec offload , security associations
 - AH-protected packets WDK IPsec offload , security associations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding a Security Association to a NIC

@@ -4,7 +4,6 @@ description: OID_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS sets information about the
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_SUBSCRIBE\_DEVICE\_SERVICE\_EVENTS
@@ -16,8 +15,7 @@ Miniport drivers must process set requests asynchronously, initially returning N
 
 Callers requesting to set the MB device service event subscription list provide a [**NDIS\_WWAN\_SUBSCRIBE\_DEVICE\_SERVICE\_EVENTS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_subscribe_device_service_events) structure to the miniport driver with the appropriate information.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

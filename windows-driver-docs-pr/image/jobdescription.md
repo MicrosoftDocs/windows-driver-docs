@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # JobDescription element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **JobDescription** element contains basic creation information for the currently identified job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobDescription>
@@ -26,8 +24,7 @@ Usage
 </wscn:JobDescription>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -78,8 +75,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 A client sets the values for all **JobDescription** child elements and submits them in a [**CreateScanJobRequest**](createscanjobrequest.md) operation.
 

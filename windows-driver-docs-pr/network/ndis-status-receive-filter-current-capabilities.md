@@ -4,7 +4,6 @@ description: The miniport driver issues an NDIS_STATUS_RECEIVE_FILTER_CURRENT_CA
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_RECEIVE_FILTER_CURRENT_CAPABILITIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_RECEIVE\_FILTER\_CURRENT\_CAPABILITIES
@@ -18,8 +17,7 @@ The miniport driver issues an **NDIS\_STATUS\_RECEIVE\_FILTER\_CURRENT\_CAPABILI
 
 When the miniport driver makes this status indication, it sets the **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure to a pointer to an [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure. The driver initializes this structure with its currently enabled receive filter capabilities.
 
-Remarks
--------
+## Remarks
 
 NDIS receive filters are used in the following NDIS interfaces:
 
@@ -55,8 +53,7 @@ The miniport driver follows these steps when it issues the **NDIS\_STATUS\_RECEI
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

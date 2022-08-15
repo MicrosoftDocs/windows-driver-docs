@@ -4,7 +4,6 @@ description: WDI_TLV_WAKE_PACKET_PATTERN_REMOVE is a TLV that contains the wake 
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_WAKE_PACKET_PATTERN_REMOVE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_WAKE\_PACKET\_PATTERN\_REMOVE
@@ -31,8 +30,7 @@ The size (in bytes) of a UINT32.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

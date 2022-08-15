@@ -12,15 +12,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddEnum method
 
 The AddEnum method adds a new response of type BIDI\_ENUM to the collection.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT AddEnum(
@@ -29,8 +27,7 @@ HRESULT AddEnum(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrSchema* \[in\]  
 The schema.
@@ -38,13 +35,11 @@ The schema.
 *bstrValue* \[in\]  
 The enum value.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -2,7 +2,6 @@
 title: Cross-Certificates for Kernel Mode Code Signing
 description: This information describes how to obtain and use cross-certificates for code-signing kernel-mode binary files for Microsoft Windows.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Cross-Certificates for Kernel Mode Code Signing
@@ -56,34 +55,6 @@ Follow the steps below to identify your CA, and then download the related cross-
 6.  Download the related cross-certificate for the CA and use this cross-certificate together with your SPC when digitally signing kernel-mode code
 
 ## Cross-Certificate List
-
-
-The following list contains all of the CAs that are currently supported by Microsoft for issuing SPCs for code-signing kernel-mode code.
-
-|                              CA                              |                 Root certificate thumbprint                 |Expiration date|                        Download link                        |
-| :----------------------------------------------------------: | :---------------------------------------------------------: | :-----------: | :---------------------------------------------------------: |
-| Certum Trusted Network CA                                    | 55 43 55 15 fd d2 48 65 75 fd c5 cf 3b ad 00 c9 13 12 3d 03 | 2021/04/15    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321770) |
-| DigiCert Assured ID Root CA                                  | ba 3e a5 4d 72 c1 45 d3 7c 25 5e 1e a4 0a fb c6 33 48 b9 6e | 2021/04/15    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321771) |
-| DigiCert Global Root CA                                      | c9 83 39 19 f1 f3 6a 63 48 11 1e 93 02 6f d4 0e b9 6f bc 34 | 2021/04/15    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321772) |
-| DigiCert High Assurance EV Root CA                           | 2f 25 13 af 39 92 db 0a 3f 79 70 9f f8 14 3b 3f 7b d2 d1 43 | 2021/04/15    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321773) |
-| Entrust.net Certification Authority (2048)                   | 00 a3 e6 00 9e aa 73 9b 3d ee f4 b5 06 64 9d 8a 1a 7a d3 3a | 2021/04/15    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321774) |
-| Entrust Root Certification Authority – G2                    | ‎d8 fc 24 87 48 58 5e 17 3e fb fb 30 75 c4 b4 d6 0f 9d 8d 08 | 2025/07/07    | [Download](https://go.microsoft.com/fwlink/p/?LinkId=624811) |
-| GeoTrust Primary Certification Authority                     | e8 6e 80 82 99 0e 3d fa ed 81 6d 9e b1 72 0f 91 a4 f1 a1 85 | 2021/02/22    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321775) |
-| GeoTrust Primary Certification Authority – G3                | b2 bb bd fa c8 f1 a8 ad 58 95 cd 49 38 4b 22 ca 19 db 2d 1f | 2021/02/22    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321776) |
-| GlobalSign Root CA                                           | cc 1d ee bf 6d 55 c2 c9 06 1b a1 6f 10 a0 bf a6 97 9a 4a 32 | 2021/04/15    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321777) |
-| Go Daddy Root Certificate Authority – G2                     | 84 2c 5c b3 4b 73 bb c5 ed 85 64 bd ed a7 86 96 7d 7b 42 ef | 2021/04/15    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321778) |
-| NetLock Arany (Class Gold)                                   | 89 4f 1d 28 97 aa 4c 07 4d cd 85 c5 fc 09 ee 73 b9 51 04 d8 | 2021/04/15    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321779) |
-| NetLock Platina (Class Platinum)                             | 97 dd 74 97 16 20 57 29 41 dc 80 0c 2f d8 0a 48 07 7d 10 b0 | 2021/04/15    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321780) |
-| Security Communication RootCA1                               | 41 f2 8c e5 6f d8 b9 cb 46 7f b5 03 2a 3c ae 1c dc 9d 86 48 | 2021/04/15    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321781) |
-| Starfield Root Certificate Authority – G2                    | 40 c2 0a 9a 33 fa d0 36 ac bf e8 2d 6c bb ee 1b 42 9b 86 de | 2021/04/15    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321782) |
-| StartCom Certification Authority                             | e6 06 9e 04 8d ea 8d 81 7a fc 41 88 b1 be f1 d8 88 d0 af 17 | 2021/04/15    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321783) |
-| TC TrustCenter Class 2 CA II                                 | 42 62 ff 7d 89 70 66 aa e7 75 80 d3 3a d2 88 03 f9 a1 1a 62 | 2021/04/11    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321784) |
-| Thawte Primary Root CA                                       | 55 38 e9 fe c1 40 30 b7 40 15 23 49 e1 15 a1 16 5d 29 07 4a | 2021/02/22    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321785) |
-| Thawte Primary Root CA – G3                                  | ba 57 ca 5e 78 dd 2d 1d 74 76 ae be e9 95 3e 39 6f d0 55 46 | 2021/02/22    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321786) |
-| VeriSign Class 3 Public Primary Certification Authority – G5 | 57 53 4c cc 33 91 4c 41 f7 0e 2c bb 21 03 a1 db 18 81 7d 8b | 2021/02/22    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321787) |
-| VeriSign Universal Root Certification Authority              | 9e d8 cd 56 01 f0 10 56 51 eb bb 3f 57 f0 31 82 e5 fa 7e 01 | 2021/02/22    | [Download](https://go.microsoft.com/fwlink/p/?linkid=321788) |
-
-## New Cross-Certificate List
 
 
 The following list contains several new CAs that are currently supported by Microsoft for issuing SPCs for code-signing kernel-mode code.

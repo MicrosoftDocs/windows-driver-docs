@@ -10,7 +10,6 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,15 +43,13 @@ The KSCATEGORY_PREFERRED_WAVEIN_DEVICE [device interface class](./overview-of-de
 
  
 
-Remarks
--------
+## Remarks
 
 A user selects the preferred wave input device in the Multimedia property pages in the Control Panel.
 
 This functional category is reserved for exclusive use by the system-supplied [WDM Audio Components](../audio/wdm-audio-components.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

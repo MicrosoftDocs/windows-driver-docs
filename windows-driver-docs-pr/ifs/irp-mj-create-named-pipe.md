@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 11/06/2019
-ms.localizationpriority: medium
 ---
 
 # IRP_MJ_CREATE_NAMED_PIPE

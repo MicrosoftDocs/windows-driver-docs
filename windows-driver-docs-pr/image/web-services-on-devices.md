@@ -2,7 +2,6 @@
 title: Web Services on Devices
 description: Web Services on Devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Web Services on Devices

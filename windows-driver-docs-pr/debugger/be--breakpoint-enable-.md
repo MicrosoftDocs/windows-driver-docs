@@ -9,7 +9,6 @@ api_name:
 - be (Breakpoint Enable)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # be (Breakpoint Enable)
@@ -52,8 +51,7 @@ Specifies the ID numbers of the breakpoints to enable. You can specify any numbe
 
 For more information about and examples of how to use breakpoints, other breakpoint commands and methods of controlling breakpoints, and how to set breakpoints in user space from a kernel debugger, see [Using Breakpoints](using-breakpoints.md). For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).
 
-Remarks
--------
+## Remarks
 
 Use the [**bl (Breakpoint List)**](bl--breakpoint-list-.md) command to list all existing breakpoints, their ID numbers, and their status.
 

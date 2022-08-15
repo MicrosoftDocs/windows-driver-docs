@@ -4,7 +4,6 @@ description: The ConvertDevModeToPrintTicket method is called for each print dri
 keywords:
 - ConvertDevModeToPrintTicket
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ConvertDevModeToPrintTicket overview
@@ -14,7 +13,7 @@ Unidrv and PScript5 print drivers create the Print Ticket by using the elements 
 
 The following illustration shows the order of the calls to IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket when the driver call ConvertDevModeToPrintTicket.
 
-![convertdevmodetoprintticket calling sequence](images/ptpcdm2pt-uml.gif)
+![convertdevmodetoprintticket calling sequence.](images/ptpcdm2pt-uml.gif)
 
  
 

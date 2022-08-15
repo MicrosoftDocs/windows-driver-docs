@@ -2,7 +2,6 @@
 title: Capture Stats Metadata Attributes
 description: This topic discusses the available capture stats metadata IMFAttributes that should be populated or forwarded by the MFT0
 ms.date: 08/16/2019
-ms.localizationpriority: medium
 ---
 
 # Capture Stats Metadata Attributes
@@ -328,7 +327,7 @@ valid to include an IFD containing thumbnail data.
 The following diagram, copied from the TIFF specification, illustrates
 the expected memory layout:
 
-![EXIF blob definition](images/exif-blob-definition.png)
+![EXIF blob definition.](images/exif-blob-definition.png)
 
 The following are requirements that are consistent with the EXIF and
 TIFF specifications but are called out for emphasis:

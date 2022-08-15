@@ -7,7 +7,6 @@ keywords:
 - transferring data WDK SANs
 - SAN data transfers WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Transferring Data on a SAN

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_PRINTER\_ENDORSER\_CHARACTER\_ROTATION
@@ -25,13 +24,11 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read-Write
 
-Remarks
--------
+## Remarks
 
 Valid values for the **WIA\_IPS\_PRINTER\_ENDORSER\_CHARACTER\_ROTATION** property are the same as the existing values for the **WIA\_IPS\_ROTATION** property.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

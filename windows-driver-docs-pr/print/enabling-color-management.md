@@ -4,7 +4,6 @@ description: Enabling Color Management
 keywords:
 - color management WDK print , enabling
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling Color Management

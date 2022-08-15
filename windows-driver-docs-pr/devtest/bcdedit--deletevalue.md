@@ -9,7 +9,6 @@ api_name:
 - BCDEdit /deletevalue
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # BCDEdit /deletevalue
@@ -31,8 +30,7 @@ For example, if you use [**BCDEdit /set**](bcdedit--set.md) to change the **grou
 bcdedit /deletevalue groupsize
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -51,7 +49,6 @@ Requirements
 </tbody>
 </table>
 
-See also
---------
+## See also
 
 [**BCDEdit /set**](bcdedit--set.md)

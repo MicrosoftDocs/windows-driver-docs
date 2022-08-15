@@ -9,7 +9,6 @@ api_name:
 - BCDEdit /bootdebug
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # BCDEdit /bootdebug
@@ -21,8 +20,7 @@ The **/bootdebug** boot option enables or disables boot debugging of the current
 bcdedit /bootdebug [{ID}] { on | off }
 ```
 
-Parameters
-----------
+## Parameters
 
 **{**<em>ID</em>**}**
 

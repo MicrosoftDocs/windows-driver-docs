@@ -9,7 +9,6 @@ api_name:
 - ATTEMPTED_SWITCH_FROM_DPC
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xB8: ATTEMPTED\_SWITCH\_FROM\_DPC
@@ -57,13 +56,11 @@ The ATTEMPTED\_SWITCH\_FROM\_DPC bug check has a value of 0x000000B8. This indic
 
  
 
-Cause
------
+## Cause
 
 A wait operation, attach process, or yield was attempted from a DPC routine. This is an illegal operation.
 
-Resolution
-----------
+## Resolution
 
 The stack trace will lead to the code in the original DPC routine that caused the error.
 

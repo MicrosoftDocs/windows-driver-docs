@@ -2,7 +2,6 @@
 title: Fusion sensor implementation details
 description: This section provides implementation details about the Windows fusion sensor driver stack.
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Fusion sensor implementation details
@@ -17,7 +16,7 @@ This section provides implementation details about the Windows fusion sensor dri
 
 The following diagram shows the sensor fusion software stack.
 
-![a diagram showing the fusion sensor stack](images/fusion-sensor-stack.png)
+![a diagram showing the fusion sensor stack.](images/fusion-sensor-stack.png)
 
 The fusion software stack consists of the following components:
 
@@ -32,11 +31,11 @@ The fusion software stack consists of the following components:
 
 The coordinate system shown in the following diagram is used for all physical sensors and fusion data.
 
-![a diagram showing gyroscope device orientation](images/gyroscope-orientation.png)
+![a diagram showing gyroscope device orientation.](images/gyroscope-orientation.png)
 
 The coordinate system shown in the following diagram is the convention used by the fusion algorithm and APIs for all vectors in the Earth/ground frame of reference.
 
-![a diagram showing the earth coordinate system used by the fusion algorithm](images/earth-coordinatesystem.png)
+![a diagram showing the earth coordinate system used by the fusion algorithm.](images/earth-coordinatesystem.png)
 
 <!--
 //commenting out for now, all these links are bad.

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_STREAM\_RATE
@@ -46,7 +45,7 @@ The KSPROPERTY\_STREAM\_RATE property works in conjunction with [**KSPROPERTY\_S
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksrate" data-raw-source="[&lt;strong&gt;KSRATE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksrate)"><strong>KSRATE</strong></a></p></td>
 </tr>
 </tbody>
@@ -54,8 +53,7 @@ The KSPROPERTY\_STREAM\_RATE property works in conjunction with [**KSPROPERTY\_S
 
  
 
-Remarks
--------
+## Remarks
 
 KSPROPERTY\_STREAM\_RATE should be implemented if a pin allows rate changes, or the interface between topologically-related pins is different and results in a different time stamp format being used.
 
@@ -69,8 +67,7 @@ This property should also be used to translate the interface and time units spec
 
 If the pin also produces a clock, a rate change must not change the slope of the physical time, because any client using the clock for rate matching is expecting the slope to be as if the underlying hardware were running at a nominal 1.0 rate. This means that a pin that cannot ensure that the physical clock slope remains consistent without significant drift cannot accept rate adjustment requests.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -91,4 +88,3 @@ Requirements
 [**KSPROPERTY\_STREAM\_RATECAPABILITY**](ksproperty-stream-ratecapability.md)
 
 [**KSRATE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksrate)
-

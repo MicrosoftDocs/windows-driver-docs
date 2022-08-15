@@ -2,7 +2,6 @@
 title: WDI RX path
 description: This section describes the WDI RX path
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDI RX path
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 The following diagram shows the RX path components.
 
-![wdi receive path](images/wdi-receive-path-block-diagram.png)
+![wdi receive path.](images/wdi-receive-path-block-diagram.png)
 
 ## RX Manager (RxMgr)
 

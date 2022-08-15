@@ -1,5 +1,5 @@
 ---
-title: deadlock
+title: deadlock (WinDbg)
 description: The deadlock extension displays information about deadlocks collected by the Deadlock Detection option of Driver Verifier.
 keywords: ["Deadlock Detection (Driver Verifier)", "deadlock Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - deadlock
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !deadlock
@@ -50,8 +49,7 @@ The **!deadlock** extension displays information about deadlocks collected by th
 
 For information about Driver Verifier, see the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 This extension will only provide useful information if Driver Verifier's **Deadlock Detection** option has detected a lock hierarchy violation and issued [**bug check 0xC4**](bug-check-0xc4--driver-verifier-detected-violation.md) (DRIVER\_VERIFIER\_DETECTED\_VIOLATION).
 

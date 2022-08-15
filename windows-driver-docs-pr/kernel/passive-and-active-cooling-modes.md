@@ -1,14 +1,12 @@
 ---
 title: Passive and Active Cooling Modes
-description: Starting with Windows 8, devices that have thermal management capabilities can expose these capabilities to the operating system through the GUID_THERMAL_COOLING_INTERFACE driver interface.
-ms.localizationpriority: medium
-ms.date: 10/17/2018
+description: Starting with Windows 8, devices that have thermal management capabilities can expose these capabilities to the operating system through the GUID_THERMAL_COOLING_INTERFACE driver interface.
+ms.date: 07/22/2021
 ---
 
 # Passive and Active Cooling Modes
 
-
-Starting with Windows 8, devices that have thermal management capabilities can expose these capabilities to the operating system through the [GUID\_THERMAL\_COOLING\_INTERFACE](https://msdn.microsoft.com/library/windows/hardware/hh698265) driver interface. The two principal driver-implemented callback routines in this interface are [*PassiveCooling*](/previous-versions/hh698270(v=vs.85)) and [*ActiveCooling*](/previous-versions/hh698235(v=vs.85)). A driver that has passive-cooling capabilities implements the *PassiveCooling* routine. A driver that has active-cooling capabilities implements the *ActiveCooling* routine. In response to changes in computer usage or environmental conditions, the operating system calls one (or possibly both) of these routines to manage thermal levels dynamically in the hardware platform.
+Starting with Windows 8, devices that have thermal management capabilities can expose these capabilities to the operating system through the [GUID_THERMAL_COOLING_INTERFACE](global-thermal-mgmt.md) driver interface. The two principal driver-implemented callback routines in this interface are [*PassiveCooling*](/previous-versions/hh698270(v=vs.85)) and [*ActiveCooling*](/previous-versions/hh698235(v=vs.85)). A driver that has passive-cooling capabilities implements the *PassiveCooling* routine. A driver that has active-cooling capabilities implements the *ActiveCooling* routine. In response to changes in computer usage or environmental conditions, the operating system calls one (or possibly both) of these routines to manage thermal levels dynamically in the hardware platform.
 
 The Advanced Configuration and Power Interface (ACPI) enables the vendor for a hardware platform to partition the platform into regions called thermal zones. Sensor devices track the temperature in each thermal zone. When a thermal zone starts to overheat, the operating system can take actions to cool down the devices in the zone. These actions can be categorized as either passive cooling or active cooling.
 
@@ -22,7 +20,4 @@ Active cooling might be more straightforward to implement, but has several poten
 
 Passive cooling is the only cooling mode available to many mobile devices. In particular, handheld computing platforms are likely to have closed cases and run on batteries. These platforms typically contain devices that can throttle performance to reduce heat generation. These devices include processors, graphics processing units (GPUs), battery chargers, and display backlights.
 
-Handheld computing platforms typically use System on a Chip (SoC) chips that contain processors and GPUs, and the SoC hardware vendors supply the thermal management software for these devices. However, peripheral devices, such as battery chargers and display backlights, are external to SoC chips. The vendors for these devices must supply device drivers, and these drivers must provide any thermal management support that might be required for the devices. A relatively simple way for a device driver to support thermal management is to implement the GUID\_THERMAL\_COOLING\_INTERFACE driver interface.
-
- 
-
+Handheld computing platforms typically use System on a Chip (SoC) chips that contain processors and GPUs, and the SoC hardware vendors supply the thermal management software for these devices. However, peripheral devices, such as battery chargers and display backlights, are external to SoC chips. The vendors for these devices must supply device drivers, and these drivers must provide any thermal management support that might be required for the devices. A relatively simple way for a device driver to support thermal management is to implement the GUID_THERMAL_COOLING_INTERFACE driver interface.

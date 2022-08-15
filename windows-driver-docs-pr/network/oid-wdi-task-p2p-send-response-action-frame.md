@@ -4,11 +4,12 @@ description: OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME is issued to the IHV co
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_P2P\_SEND\_RESPONSE\_ACTION\_FRAME
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_TASK\_P2P\_SEND\_RESPONSE\_ACTION\_FRAME is issued to the IHV component to send a Wi-Fi Direct Public Action Frame Request to a peer.
@@ -66,8 +67,7 @@ The WDI interface itself is unchanged and continues to use units of milliseconds
 
 [NDIS\_STATUS\_WDI\_INDICATION\_P2P\_SEND\_RESPONSE\_ACTION\_FRAME\_COMPLETE](ndis-status-wdi-indication-p2p-send-response-action-frame-complete.md)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

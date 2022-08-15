@@ -2,8 +2,7 @@
 title: USBView in Windows
 description: USBView
 keywords: ["USBView"]
-ms.date: 02/22/2017
-ms.localizationpriority: high 
+ms.date: 08/06/2021
 ---
 
 # USBView
@@ -29,7 +28,7 @@ To download  and use USBView, complete the following steps:
 
 [USBView](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/usbview) is also available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
-## <span id="using_usbview"></span><span id="USING_USBVIEW"></span>Use USBView
+## Use USBView
 
 
 USBView can enumerate USB host controllers, USB hubs, and attached USB devices. It can also query information about the devices from the registry and through USB requests to the devices.
@@ -63,13 +62,3 @@ To use Device Manager to display USB info:
 ## Windows USB troubleshooter
 
 If you're trying to diagnose a USB device that doesn't eject using the **Safely Remove Hardware** dialog box, try using the [Windows USB Troubleshooter](https://support.microsoft.com/help/17614/windows-10-troubleshoot-common-usb-problems).
-
-
- 
-
- 
-
-
-
-
-

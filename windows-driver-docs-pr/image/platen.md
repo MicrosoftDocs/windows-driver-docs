@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Platen element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The optional **Platen** element describes the capabilities of the flatbed platen that is available on the scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Platen>
@@ -26,8 +24,7 @@ Usage
 </wscn:Platen>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -81,8 +78,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 If the scan device has a flatbed platen, the WSD Scan Service must provide configuration information for all **Platen** child elements.
 

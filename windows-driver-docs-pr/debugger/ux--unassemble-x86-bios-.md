@@ -9,7 +9,6 @@ api_name:
 - ux (Unassemble x86 BIOS)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ux (Unassemble x86 BIOS)
@@ -54,8 +53,7 @@ Specifies the memory offset within the x86-based BIOS code. If you omit this par
 
 For more information about how to debug BIOS code, see [Debugging BIOS Code](debugging-bios-code.md).
 
-Remarks
--------
+## Remarks
 
 The debugger displays the instructions that are generated from the first eight lines of code, beginning at the *Address* offset.
 

@@ -9,7 +9,6 @@ api_name:
 - KsFilterMutex
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # KsFilterMutex rule ()
@@ -25,8 +24,7 @@ The KsFilterMutex rule specifies that a KS miniport driver acquires and releases
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (0x0008100A)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -50,7 +48,6 @@ How to test
  
 
 **verifier /domain ks** \[*options*\] **/driver** *&lt;yourdriver&gt;*
-See also
---------
+## See also
 
 [Filter Control Mutex in AVStream](../stream/filter-control-mutex-in-avstream.md)

@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # JobOriginatingUserName element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **JobOriginatingUserName** element specifies the name of the user who submitted the scan job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobOriginatingUserName>
@@ -26,13 +24,11 @@ Usage
 </wscn:JobOriginatingUserName>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. Any valid character string.
 
@@ -66,8 +62,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The client or the security infrastructure, if any, provides the **JobOriginatingUserName** element. A client should supply a value to help users easily distinguish between the jobs that they submitted and jobs that other users submitted.
 

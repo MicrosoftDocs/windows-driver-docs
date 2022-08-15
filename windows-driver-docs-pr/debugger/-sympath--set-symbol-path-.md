@@ -9,7 +9,6 @@ api_name:
 - .sympath (Set Symbol Path)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .sympath (Set Symbol Path)
@@ -59,8 +58,7 @@ A fully qualified path or a list of fully qualified paths. Multiple paths are se
 
 For details and other ways to change this path, see [Symbol Path](symbol-path.md).
 
-Remarks
--------
+## Remarks
 
 New symbol information will not be loaded when the symbol path is changed. You can use the [**.reload (Reload Module)**](-reload--reload-module-.md) command to reload symbols.
 

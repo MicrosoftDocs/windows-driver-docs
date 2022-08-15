@@ -6,7 +6,6 @@ keywords:
 - configurations WDK GDL
 - configurations WDK GDL , examples
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDL Configurations

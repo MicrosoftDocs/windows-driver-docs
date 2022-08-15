@@ -2,7 +2,6 @@
 title: Idle Power Management Scope
 description: Idle Power Management Scope
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Idle Power Management Scope

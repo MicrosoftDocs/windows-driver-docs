@@ -9,7 +9,6 @@ api_name:
 - NdisOidDoubleRequest
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisOidDoubleRequest rule (ndis)
@@ -17,15 +16,14 @@ ms.localizationpriority: medium
 
 This **NdisOidDoubleRequest** rule verifies that:
 
--   Minport driver must complete the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) that is currently pending.
+-   Minport driver must complete the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) that is currently pending.
 
 **Driver model: NDIS**
 
 **Bug check(s) found with this rule**: [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) ( 0x0009100E)
 
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ How to test
 
  
 
-Applies to
-----------
+## Applies to
 
 [**MiniportOidRequest**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request)
 [**NdisMOidRequestComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete)

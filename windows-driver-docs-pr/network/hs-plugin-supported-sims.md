@@ -5,7 +5,6 @@ keywords:
 - HS_PLUGIN_SUPPORTED_SIMS structure Network Drivers Starting with Windows Vista
 - PHS_PLUGIN_SUPPORTED_SIMS structure pointer Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_PLUGIN\_SUPPORTED\_SIMS structure
@@ -15,8 +14,7 @@ ms.localizationpriority: medium
 
 The **HS\_PLUGIN\_SUPPORTED\_SIMS** structure contains the list of supported SIM configurations. This list must be supplied if the hotspot plugin requires HTTP or EAP authentication for any of its networks.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HS_PLUGIN_SUPPORTED_SIMS {
@@ -26,8 +24,7 @@ typedef struct _HS_PLUGIN_SUPPORTED_SIMS {
 } HS_PLUGIN_SUPPORTED_SIMS, *PHS_PLUGIN_SUPPORTED_SIMS;
 ```
 
-Members
--------
+## Members
 
 **dwCount**  
 The list size.
@@ -42,13 +39,11 @@ Used if MIDL is not utilized.
 
 An array of HS\_SIM\_IDENTITY structures that make up the list of supported SIM configurations.
 
-Remarks
--------
+## Remarks
 
 In the **dwEapMethods** field of the [**HS\_SIM\_IDENTITY**](hs-sim-identity.md) structure for each SIM configuration, you must specify the EAP methods that it supports.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,5 +1,5 @@
 ---
-title: homedir
+title: homedir (WinDbg)
 description: The homedir extension sets the default directory used by the symbol server and the source server.
 keywords: ["homedir Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - homedir
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !homedir
@@ -49,8 +48,7 @@ Specifies the new directory to use as the home directory.
 
  
 
-Remarks
--------
+## Remarks
 
 If the **!homedir** extension is used with no argument, the current home directory is displayed.
 

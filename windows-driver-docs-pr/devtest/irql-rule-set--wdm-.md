@@ -2,7 +2,6 @@
 title: Irql rule set (WDM)
 description: Learn about using rules (WDM) to verify that your driver makes DDI calls at the required IRQL. In addition, learn how to select the IRQL rule set.
 ms.date: 05/21/2018
-ms.localizationpriority: medium
 ---
 
 # Irql rule set (WDM)
@@ -188,7 +187,7 @@ The driver calls <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kelowerirql" 
 </tr>
 <tr class="even">
 <td align="left"><p><a href="wdm-irqlkewaitformutexobject.md" data-raw-source="[&lt;strong&gt;IrqlKeWaitForMutexObject&lt;/strong&gt;](wdm-irqlkewaitformutexobject.md)"><strong>IrqlKeWaitForMutexObject</strong></a></p></td>
-<td align="left"><p>The <a href="wdm-irqlkewaitformutexobject.md" data-raw-source="[&lt;strong&gt;IrqlKeWaitForMutexObject&lt;/strong&gt;](wdm-irqlkewaitformutexobject.md)"><strong>IrqlKeWaitForMutexObject</strong></a> rule specifies the driver to call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553344" data-raw-source="[&lt;strong&gt;KeWaitForMutexObject&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553344)"><strong>KeWaitForMutexObject</strong></a> routine at the proper IRQL based on the value of the <em>Timeout</em> parameter:</p></td>
+<td align="left"><p>The <a href="wdm-irqlkewaitformutexobject.md" data-raw-source="[&lt;strong&gt;IrqlKeWaitForMutexObject&lt;/strong&gt;](wdm-irqlkewaitformutexobject.md)"><strong>IrqlKeWaitForMutexObject</strong></a> rule specifies the driver to call the <a href="wdm-irqlkewaitformutexobject.md" data-raw-source="[&lt;strong&gt;KeWaitForMutexObject&lt;/strong&gt;](wdm-irqlkewaitformutexobject.md)"><strong>KeWaitForMutexObject</strong></a> routine at the proper IRQL based on the value of the <em>Timeout</em> parameter:</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="wdm-irqlkewaitformultipleobjects.md" data-raw-source="[&lt;strong&gt;IrqlKeWaitForMultipleObjects&lt;/strong&gt;](wdm-irqlkewaitformultipleobjects.md)"><strong>IrqlKeWaitForMultipleObjects</strong></a></p></td>

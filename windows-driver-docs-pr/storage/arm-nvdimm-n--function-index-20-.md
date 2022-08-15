@@ -1,7 +1,6 @@
 ---
 title: Arm NVDIMM-N (Function Index 20)
 description: This function arms the NVDIMM-N for save operations in the event of a power loss.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -55,7 +54,7 @@ None.
  
 
 > [!NOTE]
-> This is a synchronous function. It returns only when the arm operation has finished or timed out. If the operation takes longer than the timeout defined in \**ARM\_TIMEOUT0* (0, 0x20) and \**ARM\_TIMEOUT1* (0, 0x21), the platform shall abort this function before it returns.
+> This is a synchronous function. It returns only when the arm operation has finished or timed out. If the operation takes longer than the timeout defined in \**Arm\_TIMEOUT0* (0, 0x20) and \**Arm\_TIMEOUT1* (0, 0x21), the platform shall abort this function before it returns.
 
  
 

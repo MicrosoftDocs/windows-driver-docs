@@ -4,10 +4,11 @@ description: WDI_TLV_MULTICAST_CIPHER_ALGO_LIST is a TLV that contains a list of
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_MULTICAST_CIPHER_ALGO_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_MULTICAST\_CIPHER\_ALGO\_LIST
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_MULTICAST\_CIPHER\_ALGO\_LIST is a TLV that contains a list of multicast cipher algorithms.
@@ -31,8 +32,7 @@ The size (in bytes) of the array of [**WDI\_CIPHER\_ALGORITHM**](/windows-hardwa
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

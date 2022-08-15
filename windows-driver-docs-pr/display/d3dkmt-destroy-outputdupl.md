@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # D3DKMT\_DESTROY\_OUTPUTDUPL structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_DESTROY_OUTPUTDUPL {
@@ -30,8 +28,7 @@ typedef struct _D3DKMT_DESTROY_OUTPUTDUPL {
 } D3DKMT_DESTROY_OUTPUTDUPL;
 ```
 
-Members
--------
+## Members
 
 **hAdapter**
 
@@ -39,8 +36,7 @@ Members
 
 **bDestroyAllContexts**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

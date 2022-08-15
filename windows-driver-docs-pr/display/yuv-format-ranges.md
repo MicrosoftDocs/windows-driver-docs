@@ -7,7 +7,6 @@ keywords:
 - studio luminance range YUV WDK display
 - YUV formats and WMF support WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # YUV format ranges in Windows 8.1
@@ -38,7 +37,7 @@ These images show how YUV extended-range content that ranges from dark to light 
 
 The incorrect interpretation in the top image shows increased contrast and highlights become excessively bright before pure white is reached.
 
-![comparison of incorrect and correct interpretation of extended-range yuv content](images/extended-range-yuv.png)
+![comparison of incorrect and correct interpretation of extended-range yuv content.](images/extended-range-yuv.png)
 
 ## <span id="Extended-range_YUV_interface"></span><span id="extended-range_yuv_interface"></span><span id="EXTENDED-RANGE_YUV_INTERFACE"></span>Extended-range YUV interface
 

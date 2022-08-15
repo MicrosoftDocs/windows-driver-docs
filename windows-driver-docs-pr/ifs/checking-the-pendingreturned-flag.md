@@ -5,7 +5,6 @@ keywords:
 - IRP completion routines WDK file system , PendingReturned flag
 - PendingReturned flag
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Checking the PendingReturned Flag

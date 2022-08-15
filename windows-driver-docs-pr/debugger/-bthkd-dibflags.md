@@ -9,7 +9,6 @@ api_name:
 - bthkd.dibflags
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !bthkd.dibflags

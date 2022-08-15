@@ -1,6 +1,6 @@
 ---
-title: WIA\_DPS\_OPTICAL\_YRES
-description: The WIA\_DPS\_OPTICAL\_YRES property contains the highest-supported vertical optical resolution of the device, in dots per inch (dpi). The WIA minidriver creates and maintains this property.
+title: WIA_DPS_OPTICAL_YRES
+description: The WIA_DPS_OPTICAL_YRES property contains the highest-supported vertical optical resolution of the device, in dots per inch (dpi). The WIA minidriver creates and maintains this property.
 keywords: ["WIA_DPS_OPTICAL_YRES Imaging Devices"]
 topic_type:
 - apiref
@@ -10,57 +10,27 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 09/30/2021
 ---
 
-# WIA\_DPS\_OPTICAL\_YRES
+# WIA_DPS_OPTICAL_YRES
 
+The WIA_DPS_OPTICAL_YRES property contains the highest-supported vertical optical resolution of the device, in dots per inch (dpi). The WIA minidriver creates and maintains this property.
 
-The WIA\_DPS\_OPTICAL\_YRES property contains the highest-supported vertical optical resolution of the device, in dots per inch (dpi). The WIA minidriver creates and maintains this property.
+Property Type: VT_I4
 
-## <span id="ddk_wia_dps_optical_yres_si"></span><span id="DDK_WIA_DPS_OPTICAL_YRES_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Available for Microsoft Windows XP. For Windows Vista and later, use the identical WIA_IPS_OPTICAL_YRES property.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Version:** Obsolete, use the WIA_IPS_OPTICAL_YRES property instead.
+
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
+[**WIA_DPS_OPTICAL_XRES**](wia-dps-optical-xres.md)
 
-[**WIA\_DPS\_OPTICAL\_XRES**](wia-dps-optical-xres.md)
-
-[**WIA\_IPS\_OPTICAL\_YRES**](wia-ips-optical-yres.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_IPS_OPTICAL_YRES**](wia-ips-optical-yres.md)

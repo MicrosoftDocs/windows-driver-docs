@@ -1,7 +1,6 @@
 ---
 title: NX Pool Compatibility Issues
 description: When you use the NX nonpaged pool in driver binaries for Windows 8, you will find compatibility issues if you run these binaries on earlier versions of Windows.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -17,9 +16,9 @@ Windows 8 is the first version of Windows to support the NX nonpaged pool. Howe
 
 A driver binary that is built for Windows 7 (or possibly for an earlier version of Windows), and that uses the **NonPagedPool** pool type, is not prevented from running on Windows 8. To enable backward compatibility, the **NonPagedPoolExecute** constant is defined to have the same value as the **NonPagedPool** constant in the [**POOL\_TYPE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type) enumeration. Thus, in any version of Windows in which this driver runs, the memory that the driver allocates from nonpaged pool is always executable.
 
-Windows 8 is the first version of Windows to support the ARM architecture. Thus, there are no driver binaries for ARM that are built for earlier versions of Windows and that require backward compatibility. Instead, all drivers written for Windows on ARM are expected to specify **NonPagedPoolNx** instead of **NonPagedPoolExecute** in their nonpaged pool allocations unless they explicitly require executable memory.
+Windows 8 is the first version of Windows to support the Arm architecture. Thus, there are no driver binaries for Arm that are built for earlier versions of Windows and that require backward compatibility. Instead, all drivers written for Windows on Arm are expected to specify **NonPagedPoolNx** instead of **NonPagedPoolExecute** in their nonpaged pool allocations unless they explicitly require executable memory.
 
-If a driver is ported to ARM from x86, x64, or IA64, the [POOL\_NX\_OPTIN\_AUTO](multiple-binary-opt-in-pool-nx-optin-auto.md) opt-in mechanism is automatically applied during the driver build process. This opt-in mechanism uses the preprocessor to replace, by default, all instances of the **NonPagedPool** constant name with **NonPagedPoolNx**. If necessary, you can use the [POOL\_NX\_OPTOUT](selective-opt-out-pool-nx-optout.md) opt-out mechanism to overrride this opt-in mechanism on a per-file basis.
+If a driver is ported to Arm from x86, x64, or IA64, the [POOL\_NX\_OPTIN\_AUTO](multiple-binary-opt-in-pool-nx-optin-auto.md) opt-in mechanism is automatically applied during the driver build process. This opt-in mechanism uses the preprocessor to replace, by default, all instances of the **NonPagedPool** constant name with **NonPagedPoolNx**. If necessary, you can use the [POOL\_NX\_OPTOUT](selective-opt-out-pool-nx-optout.md) opt-out mechanism to overrride this opt-in mechanism on a per-file basis.
 
 ## Other Compatibility Issues
 

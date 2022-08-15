@@ -2,7 +2,6 @@
 title: Performance bottlenecks in a virtualized networking environment
 description: Potential Performance Bottlenecks in an NDIS Virtualized Networking Environment
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Potential Performance Bottlenecks in an NDIS Virtualized Networking Environment
@@ -19,7 +18,7 @@ Therefore, in the virtualization environment, incoming received frames are copie
 
 The following figure shows the performance bottlenecks for receive processing in a virtualized environment.
 
-![diagram illustrating performance bottlenecks for receive processing in a virtualized environment](images/vmqsyntheticpaths.png)
+![diagram illustrating performance bottlenecks for receive processing in a virtualized environment.](images/vmqsyntheticpaths.png)
 
 The performance issues in the previous figure include the following:
 
@@ -43,7 +42,7 @@ To address performance issues, the virtual machine queue (VMQ) interface allows:
 
  
 
-For more information about the VMQ interface, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md).
+For more information about the VMQ interface, see [Virtual Machine Queue (VMQ)](virtual-machine-queue-architecture.md).
 
 ### Overcoming Performance Bottlenecks with SR-IOV
 

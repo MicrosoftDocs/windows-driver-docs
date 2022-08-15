@@ -4,7 +4,6 @@ description: The protocol edge of the Hyper-V extensible switch issues an object
 ms.date: 08/08/2017
 keywords: 
  -OID_SWITCH_PORT_CREATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_SWITCH\_PORT\_CREATE
@@ -12,10 +11,9 @@ ms.localizationpriority: medium
 
 The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID\_SWITCH\_PORT\_CREATE to notify extensible switch extensions about the creation of an extensible switch port.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_SWITCH\_PORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_parameters) structure.
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS\_SWITCH\_PORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_parameters) structure.
 
-Remarks
--------
+## Remarks
 
 The **PortId** member of the [**NDIS\_SWITCH\_PORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_parameters) structure specifies the port for which the creation notification is being made.
 
@@ -103,8 +101,7 @@ If the extension does not complete the OID set request of OID\_SWITCH\_PORT\_CRE
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -127,7 +124,7 @@ Requirements
 
 
 ****
-[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [**NDIS\_SWITCH\_PORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_parameters)
 

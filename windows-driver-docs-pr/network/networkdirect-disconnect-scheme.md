@@ -2,7 +2,6 @@
 title: NetworkDirect Disconnect Scheme
 description: This section describes the NetworkDirect disconnect scheme
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NetworkDirect Disconnect Scheme

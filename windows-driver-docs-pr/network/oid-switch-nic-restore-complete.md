@@ -4,7 +4,6 @@ description: The protocol edge of the Hyper-V extensible switch issues an object
 ms.date: 08/08/2017
 keywords: 
  -OID_SWITCH_NIC_RESTORE_COMPLETE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_SWITCH\_NIC\_RESTORE\_COMPLETE
@@ -12,10 +11,9 @@ ms.localizationpriority: medium
 
 The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID\_SWITCH\_NIC\_RESTORE\_COMPLETE to notify Hyper-V extensible switch extensions about the completion of the operation to restore run-time data. Through this operation, the extension restores its run-time data for a port and its associated network adapter connection.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state) structure. This structure is allocated by the protocol edge of the extensible switch.
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state) structure. This structure is allocated by the protocol edge of the extensible switch.
 
-Remarks
--------
+## Remarks
 
 When it receives the OID set request of OID\_SWITCH\_NIC\_RESTORE\_COMPLETE, the extension must follow these guidelines:
 
@@ -51,8 +49,7 @@ If the extension completes the OID set request of [OID\_SWITCH\_NIC\_RESTORE\_CO
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -75,7 +72,7 @@ Requirements
 
 
 ****
-[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state)
 

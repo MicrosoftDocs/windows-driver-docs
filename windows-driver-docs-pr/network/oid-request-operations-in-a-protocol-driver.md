@@ -7,7 +7,6 @@ keywords:
 - OID requests WDK networking
 - OIDs WDK networking , protocol drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # OID Request Operations in a Protocol Driver

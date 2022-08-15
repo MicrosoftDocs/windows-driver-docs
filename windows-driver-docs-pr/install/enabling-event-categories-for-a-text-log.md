@@ -6,7 +6,6 @@ keywords:
 - text logs WDK SetupAPI , event categories
 - LogMask
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enabling Event Categories for a Text Log

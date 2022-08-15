@@ -1,5 +1,5 @@
 ---
-title: smt
+title: smt (WinDbg)
 description: The smt extension displays a summary of the simultaneous multithreaded processor information.
 keywords: ["smt Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - smt
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !smt
@@ -42,8 +41,7 @@ The **!smt** extension displays a summary of the simultaneous multithreaded proc
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example:
 

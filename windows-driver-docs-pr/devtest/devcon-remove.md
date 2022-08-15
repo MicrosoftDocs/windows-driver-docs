@@ -9,8 +9,7 @@ api_name:
 - DevCon Remove
 api_type:
 - NA
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 02/11/2022
 ---
 
 # DevCon Remove
@@ -85,6 +84,6 @@ devcon /r remove =printer *deskj*
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 35: Remove devices by device instance ID pattern](devcon-examples.md#ddk_example_35_remove_devices_by_device_instance_id_pattern_tools)
+[Example 35: Remove devices by device instance ID pattern](devcon-examples.md#example-35-remove-devices-by-device-instance-id-pattern)
 
-[Example 36: Remove a particular network device](devcon-examples.md#ddk_example_36_remove_a_particular_network_device_tools)
+[Example 36: Remove a particular network device](devcon-examples.md#example-36-remove-a-particular-network-device)

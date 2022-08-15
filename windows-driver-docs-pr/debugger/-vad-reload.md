@@ -12,7 +12,6 @@ api_location:
 - Kdexts.dll
 api_type:
 - DllExport
-ms.localizationpriority: medium
 ---
 
 # !vad\_reload
@@ -34,8 +33,7 @@ Specifies the hexadecimal address of the process for which the modules will be l
 
 For information about VADs, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
-Remarks
--------
+## Remarks
 
 You can use the [**!process**](-process.md) extension to find the address of a process.
 
@@ -59,8 +57,7 @@ fffffa80`04fd2e70: VAD maps 00000000`72a50000 - 00000000`72a6cfff, file userenv.
 . . .
 ```
 
-Requirements
-------------
+## Requirements
 
 **DLL**
 

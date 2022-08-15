@@ -3,7 +3,6 @@ title: Specialized Extensions
 description: Specialized Extensions
 keywords: ["extension commands ( commands), specialized extensions", "extension commands ( commands), specialized extensions, Also see individual extension types"]
 ms.date: 06/05/2020
-ms.localizationpriority: medium
 ---
 
 # Specialized Extensions

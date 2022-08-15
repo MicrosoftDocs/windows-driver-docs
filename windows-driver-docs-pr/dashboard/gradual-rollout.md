@@ -4,7 +4,6 @@ description: Gradual rollout ensures the best driver experience for each system 
 ms.author: webreidi
 ms.topic: article
 ms.date: 03/01/2020
-ms.localizationpriority: medium
 ---
 
 # Gradual rollout
@@ -30,7 +29,7 @@ There are two distinct aspect of the Gradual Rollout process that partners shoul
 
 Note that during this entire process, the status for your shipping label remains as **gradual rollout**. This is normal, and your driver is available on Windows Update.
 
- ![Screenshot of the stages of progression for driver submission: Created, Validation, Update Generation, Microsoft Approval, Gradual Rollout, Publishing, and Finalize](images/gradual-rollout-phases.png)
+ ![Screenshot of the stages of progression for driver submission: Created, Validation, Update Generation, Microsoft Approval, Gradual Rollout, Publishing, and Finalize.](images/gradual-rollout-phases.png)
 
  As you can see in the following chart, it may not take 30 days to reach a driver throttling percentage of 100%. But it will take *about* 30 days from start to finish for your driver's **Status** to progress past the Gradual Rollout phase.
 

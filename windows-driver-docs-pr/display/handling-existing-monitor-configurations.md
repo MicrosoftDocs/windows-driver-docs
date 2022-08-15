@@ -6,7 +6,6 @@ keywords:
 - monitor configurations WDK display , existing monitors
 - TMM WDK display , existing monitor configurations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Existing Monitor Configurations
@@ -16,7 +15,7 @@ Besides detecting new monitors and launching the TMM dialog in a two-monitor con
 
 The following figure shows the flow of operations that occur when TMM restores an existing monitor configuration.
 
-![diagram illustrating restoring an existing monitor configuration](images/tmm-existconfig.png)
+![diagram illustrating restoring an existing monitor configuration.](images/tmm-existconfig.png)
 
  
 

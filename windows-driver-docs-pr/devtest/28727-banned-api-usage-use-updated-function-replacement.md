@@ -1,8 +1,7 @@
 ---
-title: C28727
+title: C28727 warning
 description: Warning C28727 Banned API Usage.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28727"
 ---

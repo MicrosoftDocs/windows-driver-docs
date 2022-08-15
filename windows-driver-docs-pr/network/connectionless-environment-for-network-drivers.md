@@ -5,7 +5,6 @@ keywords:
 - connectionless environments WDK networking
 - connectionless drivers WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Connectionless Environment for Network Drivers
@@ -18,7 +17,7 @@ The connectionless environment is the standard network driver environment for co
 
 The following figure shows the NDIS environment for connectionless network drivers.
 
-![diagram illustrating the ndis environment for connectionless network drivers](images/media01.png)
+![diagram illustrating the ndis environment for connectionless network drivers.](images/media01.png)
 
 ## Related topics
 

@@ -11,7 +11,6 @@ keywords:
 - send operations WDK Native 802.11 IHV Extensions DLL
 - receive operations WDK Native 802.11 IHV Extensions DLL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # 802.11 WLAN Adapter Communication Channel
@@ -24,7 +23,7 @@ ms.localizationpriority: medium
 The operating system provides a pass-through communication channel between the IHV Extensions DLL and the Native 802.11 miniport driver. The IHV Extensions DLL accesses the communication channel for the following operations.
 
 <a href="" id="--------sending-receiving-proprietary-configuration-data"></a> **Sending/Receiving Proprietary Configuration Data**  
-The IHV Extensions DLL sends NDIS 6.0 or later object identifier (OID) method requests to the Native 802.11 miniport driver through calls to the [**Dot11ExtNicSpecificExtension**](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_nic_specific_extension) function. Internally, this function issues a method request of [OID\_DOT11\_NIC\_SPECIFIC\_EXTENSION](/previous-versions/windows/hardware/wireless/oid-dot11-nic-specific-extension) to the miniport driver. For more information about NDIS OID method requests, see [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request).
+The IHV Extensions DLL sends NDIS 6.0 or later object identifier (OID) method requests to the Native 802.11 miniport driver through calls to the [**Dot11ExtNicSpecificExtension**](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_nic_specific_extension) function. Internally, this function issues a method request of [OID\_DOT11\_NIC\_SPECIFIC\_EXTENSION](/previous-versions/windows/hardware/wireless/oid-dot11-nic-specific-extension) to the miniport driver. For more information about NDIS OID method requests, see [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request).
 
 Typically, the IHV Extensions DLL calls **Dot11ExtNicSpecificExtension** to do the following:
 

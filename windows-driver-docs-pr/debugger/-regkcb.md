@@ -1,5 +1,5 @@
 ---
-title: regkcb
+title: regkcb (WinDbg)
 description: The regkcb extension displays a registry key control block.
 keywords: ["regkcb Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - regkcb
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !regkcb
@@ -52,8 +51,7 @@ Specifies the address of the key control block.
 
 For information about the registry and its components, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 In Windows 2000, **!regkcb** displays a specific registry key control block.
 

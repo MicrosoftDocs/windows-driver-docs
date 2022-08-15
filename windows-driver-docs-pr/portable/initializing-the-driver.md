@@ -2,7 +2,6 @@
 description: Initializing the Driver
 title: Initializing the Driver
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing the Driver

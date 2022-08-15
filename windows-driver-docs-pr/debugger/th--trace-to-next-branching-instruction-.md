@@ -9,7 +9,6 @@ api_name:
 - th (Trace to Next Branching Instruction)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # th (Trace to Next Branching Instruction)
@@ -75,8 +74,7 @@ Specifies the number of branching instructions that the debugger must encounter 
 
 For more information about related commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 The **th** command causes the target to begin executing. Execution continues until the debugger reaches a branching instruction or encounters a breakpoint.
 

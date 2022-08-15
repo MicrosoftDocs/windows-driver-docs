@@ -2,7 +2,6 @@
 description: WinUSB consists of two primary components - Winusb.sys, a kernel-mode driver and Winusb.dll - user-mode DLL.
 title: WinUSB Architecture and Modules
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WinUSB Architecture and Modules
@@ -17,7 +16,7 @@ For devices that do not require a custom function driver, Winusb.sys can be inst
 
 The following figure shows a USB driver stack that contains several instances of Winusb.sys.
 
-![winusb driver and device object stack](images/winusb-architecture.png)
+![winusb driver and device object stack.](images/winusb-architecture.png)
 
 The preceding figure shows an example WinUSB configuration that implements three device interface classes, each of which has a single registered device interface:
 

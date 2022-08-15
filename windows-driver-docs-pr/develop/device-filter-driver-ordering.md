@@ -1,8 +1,7 @@
 ---
 title: Device filter driver ordering
 description: Microsoft has developed a method of declaratively adding filters by expressing the intent of the filter, rather than the stack position, known as device filter driver ordering.
-ms.date: 04/16/2019
-ms.localizationpriority: medium
+ms.date: 06/03/2022
 ms.custom: 19H1
 ---
 
@@ -91,6 +90,8 @@ Due to the default filter level being set to B, any additional filter without po
 
 ### Registering filters
 
+See the [**INF DDInstall.Filters section**](../install/inf-ddinstall-filters-section.md) and the [**AddFilter directive**](../install/inf-addfilter-directive.md) documentation for more information.
+
 ```INF
 [DDInstall.Filters]
 AddFilter = <FilterName>, [Flags], FilterSection
@@ -108,6 +109,7 @@ FilterLevel=<LevelName>
 **Option 2:**
 
 ```INF
+[FilterSection]
 FilterPosition=Upper/Lower
 ```
 
@@ -182,3 +184,9 @@ FilterPosition = Upper
 This specifies that the filter "MyFilter" should be added to the list of upper filters. If the base INF has specified filter levels, using *FilterPosition* will register the filter in the default level for that position.
 
 If filter levels are not specified, this filter will be registered as an upper filter in arbitrary order.
+
+## See Also
+
+[**INF DDInstall.Filters section**](../install/inf-ddinstall-filters-section.md)
+
+[**AddFilter directive**](../install/inf-addfilter-directive.md)

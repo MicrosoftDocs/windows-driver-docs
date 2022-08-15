@@ -3,7 +3,6 @@ title: Pseudo-Register Syntax
 description: Pseudo-Register Syntax
 keywords: ["pseudo-registers", "pseudo-registers, automatic", "pseudo-registers, user defined", "registers, pseudo-registers", "loop variables", "return address", "$to to $t19 pseudo-registers", "$bp ID pseudo-register", "$ea"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Pseudo-Register Syntax

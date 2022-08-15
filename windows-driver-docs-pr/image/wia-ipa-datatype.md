@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPA\_DATATYPE
-description: The WIA\_IPA\_DATATYPE property contains the current data type setting for a device. A WIA minidriver creates and maintains this property.
+title: WIA_IPA_DATATYPE
+description: The WIA_IPA_DATATYPE property contains the current data type setting for a device. A WIA minidriver creates and maintains this property.
 keywords: ["WIA_IPA_DATATYPE Imaging Devices"]
 topic_type:
 - apiref
@@ -10,30 +10,24 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/04/2021
 ---
 
-# WIA\_IPA\_DATATYPE
+# WIA_IPA_DATATYPE
 
+The WIA_IPA_DATATYPE property contains the current data type setting for a device. A WIA minidriver creates and maintains this property.
 
-The WIA\_IPA\_DATATYPE property contains the current data type setting for a device. A WIA minidriver creates and maintains this property.
+Property Type: VT_I4
 
-## <span id="ddk_wia_ipa_datatype_si"></span><span id="DDK_WIA_IPA_DATATYPE_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_LIST
+Valid Values: WIA_PROP_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
-An application reads the WIA\_IPA\_DATATYPE property to determine the data type of an image. The application writes this property to set the current data type of the image that is about to be transferred.
+An application reads the WIA_IPA_DATATYPE property to determine the data type of an image. The application writes this property to set the current data type of the image that is about to be transferred.
 
-The following table describes the constants that are valid with WIA\_IPA\_DATATYPE when the [**WIA\_IPA\_FORMAT**](wia-ipa-format.md) property is not set to WiaImgFmt\_RAW.
+The following table describes the constants that are valid with WIA_IPA_DATATYPE when the [**WIA_IPA_FORMAT**](wia-ipa-format.md) property is not set to WiaImgFmt_RAW.
 
 <table>
 <colgroup>
@@ -88,11 +82,9 @@ The following table describes the constants that are valid with WIA\_IPA\_DATATY
 </tbody>
 </table>
 
- 
+The WIA_IPA_DATATYPE property is also used to describe the type of RAW data transfer to be used when the application sets the [**WIA_IPA_FORMAT**](wia-ipa-format.md) property to the value WiaImgFmt_RAW. The driver should set the WIA_IPA_DATATYPE property to a list of allowed values from which the application can pick.
 
-The WIA\_IPA\_DATATYPE property is also used to describe the type of RAW data transfer to be used when the application sets the [**WIA\_IPA\_FORMAT**](wia-ipa-format.md) property to the value WiaImgFmt\_RAW. The driver should set the WIA\_IPA\_DATATYPE property to a list of allowed values from which the application can pick.
-
-The following table lists the constants that are valid with WIA\_IPA\_DATATYPE when WIA\_IPA\_FORMAT is set to WiaImgFmt\_RAW.
+The following table lists the constants that are valid with WIA_IPA_DATATYPE when WIA_IPA_FORMAT is set to WiaImgFmt_RAW.
 
 <table>
 <colgroup>
@@ -151,59 +143,34 @@ The following table lists the constants that are valid with WIA\_IPA\_DATATYPE w
 </tbody>
 </table>
 
- 
+If you can set the device to only a single value, create a WIA_PROP_LIST type and place the valid value in it.
 
-If you can set the device to only a single value, create a WIA\_PROP\_LIST type and place the valid value in it.
+Check the [**WIA_IPA_DEPTH**](wia-ipa-depth.md) property to determine the bit depth.
 
-Check the [**WIA\_IPA\_DEPTH**](wia-ipa-depth.md) property to determine the bit depth.
+The WIA_IPA_DATATYPE property usually contains a single value for cameras.
 
-The WIA\_IPA\_DATATYPE property usually contains a single value for cameras.
+## Requirements
 
-Requirements
-------------
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
+[**WIA_IPA_BITS_PER_CHANNEL**](wia-ipa-bits-per-channel.md)
 
-[**WIA\_IPA\_BITS\_PER\_CHANNEL**](wia-ipa-bits-per-channel.md)
+[**WIA_IPA_BYTES_PER_LINE**](wia-ipa-bytes-per-line.md)
 
-[**WIA\_IPA\_BYTES\_PER\_LINE**](wia-ipa-bytes-per-line.md)
+[**WIA_IPA_CHANNELS_PER_PIXEL**](wia-ipa-channels-per-pixel.md)
 
-[**WIA\_IPA\_CHANNELS\_PER\_PIXEL**](wia-ipa-channels-per-pixel.md)
+[**WIA_IPA_DEPTH**](wia-ipa-depth.md)
 
-[**WIA\_IPA\_DEPTH**](wia-ipa-depth.md)
+[**WIA_IPA_FORMAT**](wia-ipa-format.md)
 
-[**WIA\_IPA\_FORMAT**](wia-ipa-format.md)
+[**WIA_IPA_NUMBER_OF_LINES**](wia-ipa-number-of-lines.md)
 
-[**WIA\_IPA\_NUMBER\_OF\_LINES**](wia-ipa-number-of-lines.md)
+[**WIA_IPA_PIXELS_PER_LINE**](wia-ipa-pixels-per-line.md)
 
-[**WIA\_IPA\_PIXELS\_PER\_LINE**](wia-ipa-pixels-per-line.md)
+[**WIA_IPA_PLANAR**](wia-ipa-planar.md)
 
-[**WIA\_IPA\_PLANAR**](wia-ipa-planar.md)
+[**WIA_IPA_RAW_BITS_PER_CHANNEL**](wia-ipa-raw-bits-per-channel.md)
 
-[**WIA\_IPA\_RAW\_BITS\_PER\_CHANNEL**](wia-ipa-raw-bits-per-channel.md)
-
-[**WIA\_IPS\_THRESHOLD**](wia-ips-threshold.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_IPS_THRESHOLD**](wia-ips-threshold.md)

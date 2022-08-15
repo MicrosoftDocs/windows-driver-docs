@@ -1,15 +1,17 @@
-- name: "Design Guide"
+- name: "Design Guides"
   href: index.md
-- name: "Windows Display Driver Model (WDDM) Design Guide"
+- name: "Windows Display Driver Model (WDDM) design guide"
 # Auto-expanded node
   items: 
-  - name: "Windows Display Driver Model (WDDM) Design Guide"
+  - name: "WDDM overview"
     href: windows-vista-display-driver-model-design-guide.md
   - name: "Roadmap for the Windows Display Driver Model (WDDM)"
     href: roadmap-for-developing-drivers-for-the-windows-vista-display-driver-mo.md
   - name: "What's new for Windows display and graphics drivers"
 # Auto-expanded node
     items:
+    - name: "What's new for Windows 11 display and graphics drivers"
+      href: what-s-new-for-windows-11-display-and-graphics-drivers.md
     - name: "What's new for Windows 10 display and graphics drivers"
       href: what-s-new-for-windows-10-display-and-graphics-drivers.md
     - name: "What's new for prior WDDM 2.X versions for Windows 10 display and graphics drivers"
@@ -20,7 +22,17 @@
       href: what-s-new-for-windows-8-display-drivers.md
     - name: "What's new for Windows 7 display drivers (WDDM 1.1)"
       href: what-s-new-for-windows-7-display-drivers--wddm-1-1-.md
-  - name: "WDDM 2.1 Features"
+  - name: "WDDM 3.0 features"
+    items:
+    - name: "D3D12 video encoding"
+      href: video-encoding-d3d12.md
+    - name: "IOMMU DMA remapping"
+      href: iommu-dma-remapping.md
+  - name: "WDDM 2.4 features"
+    items:
+    - name: "IOMMU-based GPU isolation"
+      href: iommu-based-gpu-isolation.md
+  - name: "WDDM 2.1 features"
     href: wddm-2-1-features.md
   - name: "WDDM 2.0 and Windows 10"
 # Auto-expanded node
@@ -628,6 +640,8 @@
         href: validating-a-hybrid-system-configuration.md
       - name: "Rendering on a discrete GPU using cross-adapter resources"
         href: rendering-on-a-discrete-gpu-using-cross-adapter-resources.md
+      - name: "Supporting cross-adapter resource scan-out (CASO)"
+        href: supporting-caso.md
       - name: "Hybrid system DDI"
         href: hybrid-system-ddi.md
     - name: "Managing Resources for Multiple GPU Scenarios"
@@ -684,6 +698,18 @@
       href: indirect-display-driver-model-overview.md
     - name: "IddCx objects"
       href: iddcx-objects.md
+    - name: "Debugging indirect display drivers"
+      href: indirect-display-debugging.md
+    - name: "IddCx versions"
+      href: iddcx-versions.md
+    - name: "IddCx v1.9 updates"
+      href: iddcx1.9-updates.md
+    - name: "IddCx v1.8 updates"
+      href: iddcx1.8-updates.md
+    - name: "IddCx v1.7 updates"
+      href: iddcx1.7-updates.md
+    - name: "IddCx v1.6 updates"
+      href: iddcx1.6-updates.md
     - name: "IddCx v1.4 updates"
       items:
       - name: "Updates for IddCx versions 1.4 and later"
@@ -694,12 +720,8 @@
         href: iddcx1.4-updates-for-remote-idds.md
       - name: "Building IddCx v1.4 drivers"
         href: building-iddcx1.4-drivers.md
-    - name: "IddCx v1.6 updates"
-      href: iddcx1.6-updates.md
-    - name: "EvtIddCxMonitorAssignSwapChain error handling"
-      href: idd-evtiddcxmonitorassignswapchain-error-handling.md
-    - name: "Debugging indirect display drivers"
-      href: indirect-display-debugging.md
+      - name: "EvtIddCxMonitorAssignSwapChain error handling"
+        href: idd-evtiddcxmonitorassignswapchain-error-handling.md
   - name: "Tasks in the Windows Display Driver Model (WDDM)"
 # Auto-expanded node
     items: 
@@ -734,8 +756,117 @@
       href: user-mode-driver-logging.md
     - name: "Disabling Frame Pointer Omission (FPO) optimization"
       href: disabling-frame-pointer-omission--fpo--optimization.md
-    - name: "Using GPUView"
-      href: using-gpuview.md
+    - name: "GPUView"
+# Auto-expanded node
+      items:
+      - name: "About GPUView"
+        href: using-gpuview.md
+      - name: "Getting Started with GPUView"
+        items: 
+        - name: "Installing GPUView"
+          href: installing-gpuview.md
+        - name: "Enabling Logging of DirectX Video Acceleration Version 2 and Direct3D Events"
+          href: enabling-logging-of-directx-video-acceleration-version-2-and-direct3d-version-9-events.md
+        - name: "Generating a Trace for GPUView"
+          href: generating-a-trace-for-gpuview.md
+      - name: "User Input and Menu Functionality"
+        items: 
+        - name: "Summary of GPUView Controls"
+          href: summary-of-gpuview-controls.md
+        - name: "Keyboard Functionality"
+          href: keyboard-functionality.md
+        - name: "Mouse Functionality"
+          href: mouse-functionality.md
+        - name: "Arrow on Event Line"
+          href: arrow-on-event-line.md
+        - name: "GPUView Command-Line Options"
+          href: gpuview-command-line-options.md          
+          items:
+          - name: "Option: Help"
+            href: option-help.md
+          - name: "Option: Stats"
+            href: option-stats.md
+          - name: "Option: Limit"
+            href: option-limit.md
+          - name: "Option: File"
+            href: option-file.md
+        - name: "Displaying More or Fewer Threads"
+          href: displaying-more-or-fewer-threads.md
+        - name: "GPUView Menu Options"
+          href: gpuview-menu-options.md
+        - name: "Information Logged After Loading"
+          href: information-logged-after-loading.md
+        - name: "Loading Large ETL Files"
+          href: loading-large-etl-files.md
+      - name: "GPUView's Main Display"
+        items:
+        - name: "GPUView Main Window"
+          href: gpuview-main-window.md
+        - name: "GPUView Zoomed Main Window"
+          href: gpuview-zoomed-main-window.md
+        - name: "GPU Hardware Queue"
+          href: gpu-hardware-queue.md
+        - name: "GPUView Flip Queue"
+          href: gpuview-flip-queue.md
+        - name: "Viewing a Process"
+          href: viewing-a-process.md
+        - name: "Context CPU Queue"
+          href: context-cpu-queue.md
+        - name: "Viewing a Thread"
+          href: viewing-a-thread.md
+        - name: "Charts in the Main Window"
+          href: charts-in-the-main-window.md
+          items:
+          - name: "Memory Charts"
+            href: memory-charts.md
+          - name: "Present Charts"
+            href: present-charts.md
+          - name: "Reference Charts"
+            href: reference-charts.md
+          - name: "Termination Charts"
+            href: termination-charts.md
+      - name: "GPUView Dialogs"
+        items:
+        - name: "Event Listing Dialog Box"
+          href: event-listing-dialog-box.md
+        - name: "Object Viewer Dialog Box"
+          href: object-viewer-dialog-box.md
+        - name: "Module Info Dialog Box"
+          href: module-info-dialog-box.md
+        - name: "Object Details Dialog Box"
+          items:
+          - name: "Object Details Dialog Box"
+            href: object-details-dialog-box.md
+          - name: "Selections in the GPU Hardware Queue"
+            href: selections-in-the-gpu-hardware-queue.md
+          - name: "Selections in the Flip Queue"
+            href: selections-in-the-flip-queue.md
+          - name: "Selections in the Context CPU Queue"
+            href: selections-in-the-context-cpu-queue.md
+          - name: "Elements of the Dialog"
+            href: elements-of-the-dialog.md
+        - name: "Find Dialog Box"
+          href: find-dialog-box.md
+        - name: "Goto Dialog Box"
+          href: goto-dialog-box.md
+        - name: "Symbols Dialog Box"
+          href: symbols-dialog-box.md
+      - name: "Segment Viewer"
+        items:
+        - name: "Segment Viewer Window"
+          href: segment-viewer-window.md
+        - name: "Memory View Menu"
+          href: memory-view-menu.md
+        - name: "Set Time Dialog"
+          href: set-time-dialog.md
+        - name: "Choose Sorting Dialog"
+          href: choose-Sorting-Dialog.md
+        - name: "Choose Columns Dialog"
+          href: choose-columns-dialog.md
+        - name: "Exporting Data to a File"
+          href: exporting-data-to-a-file.md
+        - name: "Other Visual Items of the Segment Viewer Window"
+          href: other-visual-items-of-the-segment-viewer-window.md
     - name: "XPS rasterization on the GPU"
       href: xps-rasterization-on-the-gpu.md
     - name: "Timeout Detection and Recovery"
@@ -887,16 +1018,14 @@
           href: handling-existing-monitor-configurations.md
       - name: "Determining Whether a Platform is Mobile or Desktop"
         href: determining-whether-a-platform-is-mobile-or-desktop.md
-    - name: "Connecting and Configuring Displays"
+    - name: "Interface to connect and configure displays"
 # Auto-expanded node
       items: 
-      - name: "Connecting and Configuring Displays"
+      - name: "Connecting and configuring displays"
         href: connecting-and-configuring-displays.md
       - name: "CCD Concepts"
 # Auto-expanded node
         items: 
-        - name: "CCD Concepts"
-          href: ccd-concepts.md
         - name: "Forced Versus Connected Targets"
           href: forced-versus-connected-targets.md
         - name: "Path Priority Order"
@@ -1182,10 +1311,10 @@
         href: dxgiddi-h---reserved.md
       - name: "DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS"
         href: dxgi-ddi-multiplane-overlay-stereo-caps.md
-- name: "Windows 2000 Display Driver Model (XDDM) Design Guide"
+- name: "Legacy: Windows 2000 Display Driver Model (WDDM) design guide"
 # Auto-expanded node
   items: 
-  - name: "Windows 2000 Display Driver Model (XDDM) Design Guide"
+  - name: "XDDM overview"
     href: windows-2000-display-driver-model-design-guide.md
   - name: "Roadmap for the Windows 2000 Display Driver Model (XDDM)"
     href: roadmap-for-developing-drivers-for-the-windows-2000-display-driver-mod.md
@@ -2272,18 +2401,16 @@
   - name: "DirectX Video Acceleration"
 # Auto-expanded node
     items: 
-    - name: "DirectX Video Acceleration"
+    - name: "About DXVA Version 1.0"
       href: directx-video-acceleration.md
-    - name: "Introduction to DirectX VA"
+    - name: "DirectX VA Support"
 # Auto-expanded node
       items: 
-      - name: "Introduction to DirectX VA"
+      - name: "DXVA v1.0 support overview"
         href: introduction-to-directx-va.md
-      - name: "Implementation of Current Standards"
+      - name: "Standards supported by DXVA v1.0"
 # Auto-expanded node
         items: 
-        - name: "Implementation of Current Standards"
-          href: implementation-of-current-standards.md
         - name: "ITU-T H.261"
           href: itu-t-h-261.md
         - name: "MPEG-1"

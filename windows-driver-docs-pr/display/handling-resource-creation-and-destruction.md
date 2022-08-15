@@ -6,7 +6,6 @@ keywords:
 - resource destruction WDK display
 - destroying resources WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Resource Creation and Destruction

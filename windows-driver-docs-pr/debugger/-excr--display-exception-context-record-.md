@@ -9,7 +9,6 @@ api_name:
 - .excr (Display Exception Context Record)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .excr (Display Exception Context Record)
@@ -53,8 +52,7 @@ The **.excr** command displays the context record that is associated with the cu
 
 For more information about the register context and other context settings, see [Changing Contexts](changing-contexts.md).
 
-Remarks
--------
+## Remarks
 
 The **.excr** command locates the current exception's context information and displays the important registers for the specified context record.
 

@@ -6,7 +6,6 @@ keywords:
 - extended format WDK Windows 7 display , XR format alpha content
 - XR format alpha content WDK Windows 7 display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # XR Format Alpha Content

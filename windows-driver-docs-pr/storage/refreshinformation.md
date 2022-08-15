@@ -8,7 +8,6 @@ api_name:
 - RefreshInformation
 api_type:
 - NA
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -17,25 +16,21 @@ ms.date: 10/17/2018
 
 The **RefreshInformation** WMI method updates all tables for the HBA that corresponds to the calling instance object.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void RefreshInformation(void);
 ```
 
-Parameters
-----------
+## Parameters
 
 This function has no parameters.
 
-Return value
-------------
+## Return value
 
 Not applicable.
 
-Remarks
--------
+## Remarks
 
 The **RefreshInformation** WMI method refreshes port attribute data that is retrieved by the following WMI methods:
 

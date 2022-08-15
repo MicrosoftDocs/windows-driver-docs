@@ -5,7 +5,6 @@ keywords:
 - root-level-only attributes WDK Unidrv
 - general printer attributes WDK Unidrv , root-level-only
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Root-Level-Only Attributes

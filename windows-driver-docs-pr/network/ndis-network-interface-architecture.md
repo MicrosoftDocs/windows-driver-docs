@@ -5,7 +5,6 @@ keywords:
 - NDIS network interfaces WDK , architecture
 - network interfaces WDK , architecture
 ms.date: 02/28/2019
-ms.localizationpriority: medium
 ---
 
 # NDIS Network Interface Architecture
@@ -14,7 +13,7 @@ NDIS provides a set of services to support network interfaces and interface stac
 
 The following figure shows the NDISIF architecture for NDIS 6.0 and later.
 
-![diagram illustrating the ndis 6.0 network interfaces architecture](images/ifarch.png)
+![diagram illustrating the ndis 6.0 network interfaces architecture.](images/ifarch.png)
 
 The NDISIF components of the architecture include:
 

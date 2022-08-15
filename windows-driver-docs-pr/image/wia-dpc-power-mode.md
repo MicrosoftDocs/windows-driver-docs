@@ -1,6 +1,6 @@
 ---
-title: WIA\_DPC\_POWER\_MODE
-description: The WIA\_DPC\_POWER\_MODE property defines the current power source for the camera device.
+title: WIA_DPC_POWER_MODE
+description: The WIA_DPC_POWER_MODE property defines the current power source for the camera device.
 keywords: ["WIA_DPC_POWER_MODE Imaging Devices"]
 topic_type:
 - apiref
@@ -10,81 +10,32 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 09/30/2021
 ---
 
-# WIA\_DPC\_POWER\_MODE
+# WIA_DPC_POWER_MODE
 
+The WIA_DPC_POWER_MODE property defines the current power source for the camera device.
 
-The WIA\_DPC\_POWER\_MODE property defines the current power source for the camera device.
+Property Type: VT_I4
 
-## <span id="ddk_wia_dpc_power_mode_si"></span><span id="DDK_WIA_DPC_POWER_MODE_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
-An application reads the WIA\_DPC\_POWER\_MODE property to determine what power source the camera is using.
+An application reads the WIA_DPC_POWER_MODE property to determine what power source the camera is using.
 
-The following table describes the constants that are valid with WIA\_DPC\_POWER\_MODE.
+The following table describes the constants that are valid with WIA_DPC_POWER_MODE.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>POWERMODE_BATTERY</p></td>
-<td><p>The camera device is operating on battery power.</p></td>
-</tr>
-<tr class="even">
-<td><p>POWERMODE_LINE</p></td>
-<td><p>The camera device is operating on a power adapter.</p></td>
-</tr>
-</tbody>
-</table>
+| Value | Definition |
+|--|--|
+| POWERMODE_BATTERY | The camera device is operating on battery power. |
+| POWERMODE_LINE | The camera device is operating on a power adapter. |
 
- 
+## Requirements
 
-Requirements
-------------
+**Version:** Obsolete in Windows Vista and later operating systems and should not be used.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Obsolete in Windows Vista and later operating systems and should no longer be used. However, this property is still defined in Windows Vista for compatibility with applications and devices designed for Windows Server 2003, Windows XP, and previous versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

@@ -4,7 +4,6 @@ description: The OID_WAN_CO_GET_STATS_INFO OID requests the miniport driver to r
 ms.date: 08/08/2017
 keywords: 
  -OID_WAN_CO_GET_STATS_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WAN\_CO\_GET\_STATS\_INFO
@@ -78,13 +77,11 @@ Specifies the number of bytes of compressed data transmitted. A miniport driver 
 <a href="" id="bytesreceivedcompressed"></a>**BytesReceivedCompressed**  
 Specifies the number of bytes of compressed data received. A miniport driver returns a nonzero value only if it supports compression.
 
-Remarks
--------
+## Remarks
 
 If the underlying driver or its NIC does not support compression, the driver returns zero for the **Bytes..Uncompressed/Compressed** members.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

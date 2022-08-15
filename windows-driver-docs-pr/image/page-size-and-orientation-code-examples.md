@@ -2,7 +2,6 @@
 title: Page Size and Orientation Code Examples
 description: Page Size and Orientation Code Examples
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Page Size and Orientation Code Examples

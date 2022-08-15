@@ -2,7 +2,6 @@
 title: IoAttack
 description: The Penetration Tests (Device Fundamentals) test, Run I/O Attack, performs the fuzz tests
 ms.date: 07/10/2018
-ms.localizationpriority: medium
 ---
 
 # IoAttack

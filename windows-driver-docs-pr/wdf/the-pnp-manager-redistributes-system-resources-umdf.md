@@ -5,7 +5,6 @@ keywords:
 - power management scenarios WDK UMDF , PnP manager redistributes system resources
 - redistribution of system resources scenario WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # The PnP Manager Redistributes System Resources (UMDF 1)

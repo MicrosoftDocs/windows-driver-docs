@@ -8,7 +8,6 @@ keywords:
 - kernel-mode callout drivers WDK Windows Filtering Platform
 - user-mode callout drivers WDK Windows Filtering Platform
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Calling Other Windows Filtering Platform Functions
@@ -22,7 +21,7 @@ Most of the Windows Filtering Platform management functions require a handle to 
 
 [Closing a Session to the Filter Engine](closing-a-session-to-the-filter-engine.md)
 
-For a list of the other Windows Filtering Platform functions that can be called from a callout driver, see [Other Windows Filtering Platform Functions](calling-other-windows-filtering-platform-functions.md). For more information about how to use these functions, see the [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page) documentation in the Microsoft Windows SDK.
+For a list of the other Windows Filtering Platform functions that can be called from a callout driver, see [Other Windows Filtering Platform Functions](wfp-user-mode-management-functions.md). For more information about how to use these functions, see the [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page) documentation in the Microsoft Windows SDK.
 
  
 

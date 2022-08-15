@@ -1,5 +1,5 @@
 ---
-title: .for
+title: .for (WinDbg)
 description: The .for token behaves like the for keyword in C, except that multiple increment commands must be separated by semicolons, not by commas.
 keywords: [".for Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - .for
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .for
@@ -40,8 +39,7 @@ Specifies one or more commands that will be executed repeatedly as long as the c
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
-Remarks
--------
+## Remarks
 
 If all the work is being done by the increment commands, you can omit *Condition* entirely and simply use an empty pair of braces.
 

@@ -9,7 +9,6 @@ api_name:
 - rcdrkd.rcdrsearchpath
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !rcdrkd.rcdrsearchpath
@@ -32,8 +31,7 @@ Path to the format files.
 
 Rcdrkd.dll
 
-Remarks
--------
+## Remarks
 
 The search path set by this command takes precedence over the search path specified in the TRACE\_FORMAT\_SEARCH\_PATH environment variable.
 

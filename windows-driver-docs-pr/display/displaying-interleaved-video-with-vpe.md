@@ -12,7 +12,6 @@ keywords:
 - interlaced video WDK video port extensions
 - deinterlacing WDK video port extensions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Displaying Interleaved Video with VPE

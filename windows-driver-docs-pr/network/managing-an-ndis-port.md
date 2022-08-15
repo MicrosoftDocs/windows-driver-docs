@@ -7,7 +7,6 @@ keywords:
 - port states WDK NDIS
 - port numbers WDK NDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing an NDIS Port
@@ -24,7 +23,7 @@ The port number that is passed to send and receive functions identifies the targ
 
 To help manage NDIS ports, the following structures include the port number:
 
-<a href="" id="ndis-oid-request"></a>[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)  
+<a href="" id="ndis-oid-request"></a>[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)  
 Describes OID requests.
 
 <a href="" id="ndis-status-indication"></a>[**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)  

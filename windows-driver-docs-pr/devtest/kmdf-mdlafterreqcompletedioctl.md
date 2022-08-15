@@ -9,7 +9,6 @@ api_name:
 - MdlAfterReqCompletedIoctl
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # MdlAfterReqCompletedIoctl rule (kmdf)
@@ -23,19 +22,18 @@ This rule looks at the following MDL access functions:
 
 [**WDF\_MEMORY\_DESCRIPTOR\_INIT\_MDL**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdf_memory_descriptor_init_mdl)
 [**MmGetMdlByteCount**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlbytecount)
-[**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md)
-[**MmGetMdlVirtualAddress**](../kernel/mm-bad-pointer.md)
+[**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe)
+[**MmGetMdlVirtualAddress**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlvirtualaddress)
 [**IoBuildPartialMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildpartialmdl) (first and second parameter)
 [**KeFlushIoBuffers**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keflushiobuffers)
-[**MmGetMdlPfnArray**](../kernel/mm-bad-pointer.md)
-[**MmGetMdlByteOffset**](../kernel/mm-bad-pointer.md)
-[**MmPrepareMdlForReuse**](../kernel/mm-bad-pointer.md)
+[**MmGetMdlPfnArray**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlpfnarray)
+[**MmGetMdlByteOffset**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlbyteoffset)
+[**MmPrepareMdlForReuse**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmpreparemdlforreuse)
 [**WdfDmaTransactionInitialize**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioninitialize)
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -60,8 +58,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfRequestComplete**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcomplete)
 [**WdfRequestCompleteWithInformation**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithinformation)

@@ -9,7 +9,6 @@ api_name:
 - IrqlExFree3
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IrqlExFree3 rule (wdm)
@@ -19,8 +18,7 @@ The **IrqlExFree3** rule specifies that [**ExFreePool**](/windows-hardware/drive
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +43,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**ExFreePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreepoolwithtag)

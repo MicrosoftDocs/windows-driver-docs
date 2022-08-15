@@ -2,7 +2,6 @@
 title: About Contexts
 description: About Contexts
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # About Contexts

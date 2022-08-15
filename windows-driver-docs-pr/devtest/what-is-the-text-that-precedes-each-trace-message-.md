@@ -2,7 +2,6 @@
 title: What is the text that precedes each trace message
 description: What is the text that precedes each trace message
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # What is the text that precedes each trace message?

@@ -3,7 +3,6 @@ title: Changing Text Properties
 description: Changing Text Properties
 keywords: ["debugging information windows, text properties", "text properties of debugging information windows"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Changing Text Properties
@@ -16,13 +15,13 @@ You can customize the font that is used in all of the debugging information wind
 
 ### <span id="setting_the_font__font_style__and_font_size"></span><span id="SETTING_THE_FONT__FONT_STYLE__AND_FONT_SIZE"></span>Setting the Font, Font Style, and Font Size
 
-All debugging information windows share the same font. To change this font, click **Font** on the **View** menu, or click the **Font** button (![screen shot of the font button](images/tbfont.png)) on the toolbar.
+All debugging information windows share the same font. To change this font, click **Font** on the **View** menu, or click the **Font** button (![screen shot of the font button.](images/tbfont.png)) on the toolbar.
 
 In the **Font** dialog box, select the font, style, and size from the appropriate lists, and then click **OK**. All of the available fonts are fixed-pitch, because these kinds of fonts are the most useful for viewing code.
 
 ### <span id="setting_the_tab_width"></span><span id="SETTING_THE_TAB_WIDTH"></span>Setting the Tab Width
 
-To change the tab width settings, click **Options** on the **View** menu or click the **Options** button (![screen shot of the options button](images/tbopt.png)) on the toolbar.
+To change the tab width settings, click **Options** on the **View** menu or click the **Options** button (![screen shot of the options button.](images/tbopt.png)) on the toolbar.
 
 The **Options** dialog box then appears. In the **Tab width** box, enter the number of spaces that the tab width should be equivalent to, and then click **OK**.
 

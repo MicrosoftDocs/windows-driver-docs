@@ -3,7 +3,6 @@ title: Native 802.11 IHV Handler functions
 description: This section describes Native 802.11 IHV Handler functions for the Native 802.11 IHV Extensions DLL
 keywords: ["Native 802.11 IVH Handler functions", "Native 802.11 IHV Extensions DLL Handler Functions", "WDK Native 802.11 IVH Handler functions"]
 ms.date: 04/27/2017
-ms.localizationpriority: medium
 ---
 
 # Native 802.11 IHV Handler functions

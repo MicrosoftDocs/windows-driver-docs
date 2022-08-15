@@ -4,7 +4,6 @@ description: COPP Video Miniport Driver Open Template Code
 keywords:
 - opening COPP DirectX VA device objects
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # COPP Video Miniport Driver Open Template Code

@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # FLT\_PARAMETERS for IRP\_MJ\_RELEASE\_FOR\_SECTION\_SYNCHRONIZATION

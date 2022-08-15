@@ -2,7 +2,6 @@
 title: Specialized Debugging Techniques
 description: This section describes debugging techniques that apply to particular technologies and types of code modules.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Specialized Debugging Techniques
@@ -12,7 +11,7 @@ This section describes debugging techniques that apply to particular technologie
 
 You can learn more in the following topics.
 
--   [Debugging ARM64](debugging-arm64.md)
+-   [Debugging Arm64](debugging-arm64.md)
 -   [Windows Runtime Debugging](windows-runtime-debugger-commands.md)
 -   [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md)
 -   [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md)

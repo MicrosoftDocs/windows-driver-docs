@@ -9,7 +9,6 @@ api_name:
 - usb3kd.usb_tree
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usb3kd.usb\_tree
@@ -32,7 +31,7 @@ The display includes status information for hubs and ports.
 
 The following screen shot shows the output of the [**!usb\_tree**](-usb3kd-device-info.md) command.
 
-![output of the !usb\-tree command showing topology enumerated device and hub list](images/usbtree01.png)
+![output of the !usb\-tree command showing topology enumerated device and hub list.](images/usbtree01.png)
 
 The output shows that there is one USB 3.0 host controller, which is represented by the line that begins with [**!xhci\_info**](-usb3kd-xhci-info.md). The next line represents the root hub for the host controller. The next four lines represent ports associated with the root hub. You can see that two ports have devices connected.
 
@@ -47,8 +46,7 @@ The output uses [Using Debugger Markup Language (DML)](debugger-markup-language-
 
 Usb3kd.dll
 
-Remarks
--------
+## Remarks
 
 The [**!usb\_tree**](-usb3kd-device-info.md) command is the parent command for this set of commands.
 
@@ -58,7 +56,7 @@ The [**!usb\_tree**](-usb3kd-device-info.md) command is the parent command for t
 -   [**!device\_info\_from\_pdo**](-usb3kd-device-info-from-pdo.md)
 -   [**!port\_info**](-usb3kd-port-info.md)
 
-The information displayed by the [**!usb\_tree**](-usb3kd-device-info.md) family of commands is based on data structures maintained by the USB 3.0 hub driver. For information about the USB 3.0 hub driver and other drivers in the USB 3.0 stack, see [USB Driver Stack Architecture](../usbcon/usb-3-0-driver-stack-architecture.md). For an explanation of the data structures used by the drivers in the USB 3.0 stack, see Part 2 of the [USB Debugging Innovations in Windows 8](https://channel9.msdn.com/Events/BUILD/BUILD2011/HW-258P) video.
+The information displayed by the [**!usb\_tree**](-usb3kd-device-info.md) family of commands is based on data structures maintained by the USB 3.0 hub driver. For information about the USB 3.0 hub driver and other drivers in the USB 3.0 stack, see [USB Driver Stack Architecture](../usbcon/usb-3-0-driver-stack-architecture.md). For an explanation of the data structures used by the drivers in the USB 3.0 stack, see Part 2 of the [USB Debugging Innovations in Windows 8](/events/build-build2011/hw-258p) video.
 
 ## <span id="see_also"></span>See also
 

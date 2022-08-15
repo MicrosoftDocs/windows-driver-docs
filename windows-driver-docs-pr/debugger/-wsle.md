@@ -1,5 +1,5 @@
 ---
-title: wsle
+title: wsle (WinDbg)
 description: The wsle extension displays all working set list entries (WSLEs).
 keywords: ["wsle Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - wsle
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wsle
@@ -49,8 +48,7 @@ Kdexts.dll
 
 For information about working sets, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 This extension can take a significant amount of time to execute.
 

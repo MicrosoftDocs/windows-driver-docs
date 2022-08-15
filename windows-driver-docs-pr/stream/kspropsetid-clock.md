@@ -2,7 +2,6 @@
 title: KSPROPSETID\_Clock
 description: KSPROPSETID\_Clock
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_Clock

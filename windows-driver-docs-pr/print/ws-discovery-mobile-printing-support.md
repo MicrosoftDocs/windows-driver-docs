@@ -2,7 +2,6 @@
 title: WS-Discovery Mobile Printing Support
 description: WS-Discovery Mobile Printing Support
 ms.date: 06/15/2020
-ms.localizationpriority: medium
 ---
 
 # WS-Discovery Mobile Printing Support

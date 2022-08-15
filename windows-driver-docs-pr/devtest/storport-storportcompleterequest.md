@@ -9,7 +9,6 @@ api_name:
 - StorPortCompleteRequest
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortCompleteRequest rule (storport)
@@ -19,8 +18,7 @@ This rule verifies that no calls to **StorPortCompleteRequest** are made by the 
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +43,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**StorPortCompleteRequest**](/windows-hardware/drivers/ddi/storport/nf-storport-storportcompleterequest)

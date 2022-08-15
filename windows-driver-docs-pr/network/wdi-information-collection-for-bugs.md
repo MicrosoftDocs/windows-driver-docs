@@ -2,7 +2,6 @@
 title: WDI information collection for bugs
 description: Bugs in any non-trivial software are inevitable.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDI information collection for bugs
@@ -52,7 +51,7 @@ ActiveWdiCommand may be 0 (no active command) if the trigger type is RESET\_RECO
 
 This screenshot is an example view of eventvwr showing system.evtx. The trigger type is 3 and there is no active command.
 
-![wdi event log screenshot](images/wdi-event-log-screenshot.png)
+![wdi event log screenshot.](images/wdi-event-log-screenshot.png)
 
 ## When Wi-Fi malfunctions
 

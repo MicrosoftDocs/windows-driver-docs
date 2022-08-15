@@ -9,7 +9,6 @@ api_name:
 - RequestForUrbXrb
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # RequestForUrbXrb rule (kmdf)
@@ -23,8 +22,7 @@ If the client driver calls [**WdfUsbTargetDeviceCreateWithParameters**](/windows
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -49,8 +47,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfRequestCreate**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcreate)
 [**WdfUsbTargetDeviceCreateWithParameters**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters)

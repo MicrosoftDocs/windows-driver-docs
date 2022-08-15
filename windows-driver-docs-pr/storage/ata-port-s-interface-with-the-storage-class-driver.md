@@ -5,7 +5,6 @@ keywords:
 - ATA Port drivers WDK , storage class drivers
 - storage class drivers WDK , ATA Port drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ATA Port's Interface with the Storage Class Driver

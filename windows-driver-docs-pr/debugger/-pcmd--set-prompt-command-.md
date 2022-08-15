@@ -9,7 +9,6 @@ api_name:
 - .pcmd (Set Prompt Command)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .pcmd (Set Prompt Command)
@@ -61,8 +60,7 @@ Deletes any existing prompt command string.
 
 For more information about the Debugger Command window prompt, see [Using Debugger Commands](using-debugger-commands.md).
 
-Remarks
--------
+## Remarks
 
 If you use the **.pcmd** command without parameters, the current prompt command is displayed.
 

@@ -15,15 +15,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_IsCluster method
 
 The **IsCluster** property enables an ASP Web page to determine whether the Cluster service is running on a cluster node.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_IsCluster(
@@ -31,14 +29,12 @@ HRESULT get_IsCluster(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 A caller-supplied pointer to a memory location that receives **TRUE** if the Cluster service is installed, configured, and running on the node, and **FALSE** otherwise.
 
-Return value
-------------
+## Return value
 
 This property always returns S\_OK.
 
@@ -54,8 +50,7 @@ objPrinter.Open strPrinter
 ClusterRunning = objPrinter.IsCluster
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

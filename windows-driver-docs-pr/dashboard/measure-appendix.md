@@ -3,7 +3,6 @@ title: Appendix for the Microsoft driver measure dictionary
 description: Collection of ancillary materials for the Microsoft driver measure dictionary
 ms.topic: article
 ms.date: 05/20/2019
-ms.localizationpriority: medium
 ---
 
 # Appendix for the Microsoft driver measure dictionary
@@ -64,16 +63,6 @@ ms.localizationpriority: medium
 |Audacity.exe|
 |SAI.exe|
 |FL.exe|
-
-## Display Issues
-
-|Application|
-|----|
-|Display running with bad resolution|
-|Screen flickering|
-|Display not functioning|
-|Unexpected orientation|
-|Non-optimal display settings turned on|
 
 ## Audio Initialization Benign Failure Codes
 

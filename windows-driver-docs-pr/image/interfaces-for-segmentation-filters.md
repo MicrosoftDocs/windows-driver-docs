@@ -2,7 +2,6 @@
 title: Interfaces for Segmentation Filters
 description: Interfaces for Segmentation Filters
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Interfaces for Segmentation Filters
@@ -27,7 +26,7 @@ The [**IWiaSegmentationFilter::DetectRegions**](/windows-hardware/drivers/ddi/wi
 
 The following diagram shows how the segmentation filter modifies the application item tree. In this diagram, the segmentation filter has detected three images on the flatbed, and, for each image, it has created a new child item under the flatbed item.
 
-![diagram illustrating how the segmentation filter modifies the application item tree](images/art-segmentation2.png)
+![diagram illustrating how the segmentation filter modifies the application item tree.](images/art-segmentation2.png)
 
 A segmentation filter must support all the image formats supported by the driver that it extends. The segmentation filter that Microsoft provides supports BMP, GIF, JPEG, PNG, and TIFF formats. Thus, any driver that uses this filter is limited to these formats.
 

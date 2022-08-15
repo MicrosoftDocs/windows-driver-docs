@@ -15,15 +15,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_JobCompletionMinute method
 
 The **JobCompletionMinute** property enables an ASP Web page to determine when the print jobs that are currently pending will be finished.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_JobCompletionMinute(
@@ -31,14 +29,12 @@ HRESULT get_JobCompletionMinute(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 A caller-supplied pointer to a memory location that receives the required time, in minutes, for all print jobs that are currently pending completion.
 
-Return value
-------------
+## Return value
 
 This property returns one of the values in the following table.
 
@@ -82,8 +78,7 @@ objPrinter.CalcJobETA
 EndMinute = objPrinter.JobCompletionMinute
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

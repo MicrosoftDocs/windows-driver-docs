@@ -2,12 +2,11 @@
 title: Time Travel Debugging - Replay a trace
 description: This section describes how to replay time travel traces.
 ms.date: 01/22/2020
-ms.localizationpriority: medium
 ---
 
 # Time Travel Debugging - Replay a trace
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
+![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png)
 
 This section describes how to replay time travel traces, navigating forwards and backwards in time.
 
@@ -27,7 +26,7 @@ For more information, see [Time Travel Debugging - Navigation commands](time-tra
 
 Alternatively, use the ribbon buttons to navigate in the trace.
 
-![Screen shot of WinDbg Preview showing start recording checkbox](images/ttd-ribbon-buttons.png)
+![Screen shot of WinDbg Preview showing start recording checkbox.](images/ttd-ribbon-buttons.png)
 
 ## Example TTD Trace Replay
 
@@ -68,7 +67,7 @@ ntdll!LdrpInitializeProcess+0x1bd9:
 7774f83c 0f8450e8ffff    je      ntdll!LdrpInitializeProcess+0x42f (7774e092) [br=1]
 ```
 
-You an also use the [t (Trace)](t--trace-.md) command to navigate in the trace.
+You can also use the [t (Trace)](t--trace-.md) command to navigate in the trace.
 
 ```dbgcmd
 0:000> t

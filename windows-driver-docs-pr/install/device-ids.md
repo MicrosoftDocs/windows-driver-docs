@@ -1,21 +1,11 @@
 ---
-title: Device ID
-description: A device ID is a string reported by a device’s enumerator. A device has only one device ID. A device ID has the same format as a hardware ID.
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+title: Device ID string
+description: A device ID is a string reported by a device's enumerator. A device has only one device ID. A device ID has the same format as a hardware ID.
+ms.date: 04/08/2022
 ---
 
-# Device ID
+# Device ID string
 
+A device ID is a string reported by a device's *enumerator* (its [bus driver](../kernel/bus-drivers.md)). A device has only one device ID. A device ID has the same format as a [hardware ID](hardware-ids.md).
 
-A device ID is a string reported by a device’s *enumerator*. A device has only one device ID. A device ID has the same format as a [hardware ID](hardware-ids.md).
-
-
-
-
-The Plug and Play (PnP) manager uses the device ID to create a subkey for a device under the registry key for the device's enumerator.
-
-To obtain a device ID, use an [**IRP_MN_QUERY_ID**](../kernel/irp-mn-query-id.md) request and set the **Parameters.QueryId.IdType** field to **BusQueryDeviceID**.
-
- 
-
+The Plug and Play (PnP) manager uses the device ID as one of the inputs into the creation of the [device instance ID](device-instance-ids.md). The PnP manager queries this string from the device's bus driver using an [**IRP_MN_QUERY_ID**](../kernel/irp-mn-query-id.md) request with the **Parameters.QueryId.IdType** field set to **BusQueryDeviceID**.

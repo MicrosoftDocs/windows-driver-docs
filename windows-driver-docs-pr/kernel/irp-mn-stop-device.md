@@ -4,7 +4,6 @@ description: Learn about the 'IRP_MN_STOP_DEVICE' kernel-mode driver architectur
 ms.date: 08/12/2017
 keywords:
  - IRP_MN_STOP_DEVICE Kernel-Mode Driver Architecture
-ms.localizationpriority: medium
 ---
 
 # IRP\_MN\_STOP\_DEVICE
@@ -16,13 +15,11 @@ All PnP drivers must handle this IRP.
 
 0x04
 
-Major Code
-----------
+## Major Code
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
 
-When Sent
----------
+## When Sent
 
 The PnP manager sends this IRP to stop a device so it can reconfigure the device's hardware resources.
 
@@ -47,8 +44,7 @@ None
 
 A driver must set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
-Operation
----------
+## Operation
 
 This IRP is handled first by the driver at the top of the device stack and then passed down to each lower driver in the stack.
 
@@ -66,8 +62,7 @@ See [Stopping a Device](./stopping-a-device.md) for detailed information about h
 
 Reserved for system use. Drivers must not send this IRP.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

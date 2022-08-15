@@ -10,7 +10,6 @@ api_location:
 - DbgEng.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ---
 
 # DEBUG\_ENGOPT\_XXX
@@ -222,8 +221,7 @@ and operations by default.</p>
 </table>
 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

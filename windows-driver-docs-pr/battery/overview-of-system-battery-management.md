@@ -12,7 +12,6 @@ keywords:
 - UPS WDK battery
 - system battery management WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of System Battery Management
@@ -35,7 +34,7 @@ Battery management involves the following system components:
 
 -   Devices, including batteries and some Uninterruptible Power Supplies (UPS)
 
-![diagram illustrating the components of battery management ](images/compbatt.png)
+![diagram illustrating the components of battery management .](images/compbatt.png)
 
 Devices controlled by battery miniclass drivers include batteries and some UPS devices. Batteries can be primary (nonrechargeable) or secondary (rechargeable) cells. A UPS is, in essence, a system battery with a much larger capacity and a different alert threshold than a laptop battery.
 

@@ -2,7 +2,6 @@
 title: Stereoscopic 3D
 description: Windows 8 provides a consistent API and device driver interface (DDI) platform for stereoscopic 3-D scenarios such as gaming and video playback.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Stereoscopic 3D
@@ -44,7 +43,7 @@ To implement stereo capabilities in your display miniport and user-mode drivers,
 
 The stereoscopic display setting is part of the **Screen Resolution** control panel, as shown here:
 
-![stereoscopic display setting](images/stereo3ddisplaysetting.jpg)
+![stereoscopic display setting.](images/stereo3ddisplaysetting.jpg)
 
 The **Enable Stereo** setting is a checkbox with the following states:
 

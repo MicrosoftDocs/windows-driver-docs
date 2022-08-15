@@ -1,5 +1,5 @@
 ---
-title: acl
+title: acl (WinDbg)
 description: The acl extension formats and displays the contents of an access control list (ACL).
 keywords: ["acl Windows Debugging"]
 ms.date: 09/17/2018
@@ -9,7 +9,6 @@ api_name:
 - acl
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !acl
@@ -40,8 +39,7 @@ Exts.dll
 
 For more information about access control lists, see [**!sid**](-sid.md), [**!sd**](-sd.md), and [Determining the ACL of an Object](determining-the-acl-of-an-object.md). Also, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 The following example shows the **!acl** extension.
 

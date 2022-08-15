@@ -7,7 +7,6 @@ keywords:
 - secure reads WDK HID
 - trusted secure reads WDK HID
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Enforcing a Secure Read For a HID Collection

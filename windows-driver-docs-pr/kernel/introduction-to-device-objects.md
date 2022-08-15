@@ -3,7 +3,6 @@ title: Introduction to Device Objects
 description: Introduction to Device Objects
 keywords: ["device objects WDK kernel , about device objects", "multiple device objects WDK kernel", "device stacks WDK kernel , about device stacks", "device extensions WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Device Objects
@@ -34,7 +33,7 @@ The system provides dedicated storage for each device object, called the device 
 
 The following figure illustrates the relationship between device objects and the I/O manager.
 
-![diagram illustrating a device object](images/3devobj.png)
+![diagram illustrating a device object.](images/3devobj.png)
 
 The figure shows the members of the **DEVICE\_OBJECT** structure that are of interest to a driver writer. For more information about these members, see [Creating a Device Object](creating-a-device-object.md), [Initializing a Device Object](initializing-a-device-object.md), and [Properties of Device Objects](properties-of-device-objects.md).
 

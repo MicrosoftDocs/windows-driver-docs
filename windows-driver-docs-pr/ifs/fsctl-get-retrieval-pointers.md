@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # FSCTL\_GET\_RETRIEVAL\_POINTERS control code
@@ -87,8 +86,7 @@ The LCN at which the current extent begins on the volume. On NTFS, the value (LO
 <a href="" id="outputbufferlength"></a>*OutputBufferLength*  
 Size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter.
 
-Status block
-------------
+## Status block
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) and [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) both return STATUS\_SUCCESS or an appropriate NTSTATUS error value.
 
@@ -96,13 +94,11 @@ If the VCN / extents map does not fit in *OutputBuffer*, both routines return a 
 
 If the value that is specified in **StartingVcn** is beyond the end of the file, STATUS\_END\_OF\_FILE is returned.
 
-Remarks
--------
+## Remarks
 
 The **FSCTL\_GET\_RETRIEVAL\_POINTERS** control code can be used on FastFAT and exFAT devices. This capability supports the use of BitLocker for devices such as flash drives.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

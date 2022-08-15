@@ -4,7 +4,6 @@ description: WDI_TLV_TCP_OFFLOAD_CAPABILITIES is a TLV that contains TCP/IP offl
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_TCP_OFFLOAD_CAPABILITIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_TCP\_OFFLOAD\_CAPABILITIES
@@ -35,8 +34,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_RECEIVE\_COALESCE\_OFFLOAD\_CAPABILITIES**](wdi-tlv-receive-coalesce-offload-capabilities.md) |                                |          | Receive Offload capabilities.       |
 | [**WDI_TLV_OFFLOAD_SCOPE**](wdi-tlv-offload-scope.md) |   |   | Indicates whether offloads apply to the STA port only or on all ports. Currently applicable to 802.11ad adapters only. |
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

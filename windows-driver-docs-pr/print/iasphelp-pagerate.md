@@ -15,15 +15,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_PageRate method
 
 The **PageRate** property enables an ASP Web page to determine a printer's page rate.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_PageRate(
@@ -31,14 +29,12 @@ HRESULT get_PageRate(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pVal* \[out\]  
 A caller-supplied location to receive a numeric value that represents the page rate for the printer. The units in which the page rate is expressed might depend on the printer. For more information about page rates, see the following Remarks section.
 
-Return value
-------------
+## Return value
 
 This property returns one of the values in the following table.
 
@@ -84,8 +80,7 @@ objPrinter.Open strPrinter
 PtrPageRate = objPrinter.PageRate
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

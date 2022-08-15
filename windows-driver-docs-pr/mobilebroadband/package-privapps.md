@@ -2,7 +2,6 @@
 title: Package (SoftwareInfo - priviliged applications)
 description: Package (SoftwareInfo - priviliged applications)
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Package (SoftwareInfo - priviliged applications)

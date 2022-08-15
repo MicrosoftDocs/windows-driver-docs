@@ -6,7 +6,6 @@ keywords:
 - device control requests WDK serial devices
 - Serial driver WDK , device control requests
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Serial Device Control Requests

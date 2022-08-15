@@ -9,7 +9,6 @@ api_name:
 - .allow_exec_cmds (Allow Execution Commands)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .allow\_exec\_cmds (Allow Execution Commands)
@@ -61,8 +60,7 @@ Allows execution commands to be used.
 
 For a complete list of execution commands, see [Controlling the Target](controlling-the-target.md).
 
-Remarks
--------
+## Remarks
 
 With no parameters, **.allow\_exec\_cmds** will display whether execution commands are currently permitted.
 

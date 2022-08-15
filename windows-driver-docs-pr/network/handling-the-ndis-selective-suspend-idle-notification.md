@@ -2,7 +2,6 @@
 title: Handling the NDIS Selective Suspend Idle Notification
 description: Handling the NDIS Selective Suspend Idle Notification
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling the NDIS Selective Suspend Idle Notification
@@ -20,7 +19,7 @@ Through the selective suspend operation, the network adapter is transitioned to 
 
 The miniport driver may need to perform bus-dependent actions when it handles the idle notification. The following figure shows the steps that are involved with handling an idle notification by a miniport driver for a USB network adapter.
 
-![diagram showing the idle notification operation](images/ndis-ss-idle-notification.png)
+![diagram showing the idle notification operation.](images/ndis-ss-idle-notification.png)
 
 This topic includes the following information about how to handle an NDIS selective suspend idle notification:
 

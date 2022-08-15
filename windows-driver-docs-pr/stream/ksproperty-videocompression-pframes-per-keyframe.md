@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_VIDEOCOMPRESSION\_PFRAMES\_PER\_KEYFRAME
@@ -56,15 +55,13 @@ The KSPROPERTY\_VIDEOCOMPRESSION\_PFRAMES\_PER\_KEYFRAME property controls the p
 
 The property value (operation data) is a LONG that specifies the number of predicted frames per key frame.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEOCOMPRESSION\_S structure specifies the number of P-Frames per key frame. If a set request provides a negative **Value**, the minidriver should set the P-Frame rate to the default value.
 
 Minidrivers that support this property should set the KS\_VideoCompressionCaps\_CanBFrame flag in the **Capabilities** member of the [**KSPROPERTY\_VIDEOCOMPRESSION\_GETINFO\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocompression_getinfo_s) structure that retrieves the minidriver's video compression capabilities.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -82,7 +79,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_VIDEOCOMPRESSION\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videocompression_s)
 

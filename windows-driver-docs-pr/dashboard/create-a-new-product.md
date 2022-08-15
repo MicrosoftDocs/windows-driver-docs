@@ -3,7 +3,6 @@ title: Create a new product
 description: Use this method in the Microsoft Hardware API to create a new hardware product.
 ms.date: 04/05/2018
 ms.topic: article
-ms.localizationpriority: medium
 ---
 
 # Create a new product
@@ -126,4 +125,4 @@ For more info, see [Error codes](get-product-data.md#error-codes).
 
 ## See also
 
-[Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+[hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

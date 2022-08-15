@@ -1,12 +1,10 @@
 ---
-title: Accessing Custom Device Properties
-description: Accessing Custom Device Properties
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+title: Accessing Custom Settings
+description: Accessing Custom Device Settings
+ms.date: 04/05/2022
 ---
 
-# Accessing Custom Device Properties
-
+# Accessing Custom Settings
 
 In Windows Vista and later versions of Windows, the [unified device property model](unified-device-property-model--windows-vista-and-later-.md) supports using [property keys](property-keys.md) to create and access custom device properties. For more information, see [Creating Custom Device Properties](creating-custom-device-properties.md).
 
@@ -25,4 +23,3 @@ On Windows Server 2003, Windows XP, and Windows 2000, you can create custom regi
 After you retrieve a handle to a registry key, supply the handle in a call to [RegQueryValueEx](/windows/win32/api/winreg/nf-winreg-regqueryvalueexa) or [RegSetValueEx](/windows/win32/api/winreg/nf-winreg-regsetvalueexa) to retrieve or set the custom registry entry value that corresponds to the custom device property.
 
 Call the [RegCloseKey](/windows/win32/api/winreg/nf-winreg-regclosekey) function to close the registry key after access to the registry key is no longer required.
-

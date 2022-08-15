@@ -10,7 +10,6 @@ keywords:
 - Device setup WDK device installations , registry
 - debugging device
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registry Trees for Devices and Drivers

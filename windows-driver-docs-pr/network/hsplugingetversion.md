@@ -4,7 +4,6 @@ description: The HSPluginGetVersion function is exported by the plugin DLL and i
 keywords: 
 - HSPluginGetVersion function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HSPluginGetVersion function
@@ -14,8 +13,7 @@ ms.localizationpriority: medium
 
 The **HSPluginGetVersion** function is exported by the plugin DLL and is called to verify that the plugin version matches the host version.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 DWORD HSPluginGetVersion(
@@ -23,14 +21,12 @@ DWORD HSPluginGetVersion(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *\*pHotspotPluginVersion* \[out\]  
 A pointer to the [**HS\_PLUGIN\_VERSION**](hs-plugin-version.md) structure that contains version information for the plugin.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -9,18 +9,16 @@ keywords:
 - DIF request co-installer example WDK
 - device-specific co-installers WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Co-installer Operation
 
-
-
-
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 Co-installers are called by SetupAPI, as shown in the following figure.
 
-![diagram illustrating how co-installers participate in device installation](images/coinsts.png)
+![diagram illustrating how co-installers participate in device installation.](images/coinsts.png)
 
 The unshaded boxes represent the components that the operating system supplies for the [system-supplied device setup classes](./system-defined-device-setup-classes-reserved-for-system-use.md). The shaded boxes represent the components that you can provide. If you create a custom device setup class, you can also supply a class installer. However, you rarely need to create a new device setup class, because almost every device can be associated with one of the system-supplied device setup classes. For more information about Windows components, see [Device Installation Overview](overview-of-device-and-driver-installation.md).
 
@@ -62,7 +60,7 @@ A device co-installer is not appropriate in these contexts, either because a par
 
 The following figure shows the order in which **SetupDiCallClassInstaller** calls co-installers and a class installer after any device-specific co-installers have been registered.
 
-![diagram of calling co-installers for dif request processing and postprocessing](images/callco.png)
+![diagram of calling co-installers for dif request processing and postprocessing.](images/callco.png)
 
 In the example illustrated by the previous figure, two class co-installers are registered for this device's setup class and one device-specific co-installer is registered for the device. The following steps correspond to the circled numbers in the previous figure:
 

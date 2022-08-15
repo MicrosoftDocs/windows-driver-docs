@@ -9,7 +9,6 @@ api_name:
 - KmdfIrql2
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # KmdfIrql2 rule (kmdf)
@@ -21,8 +20,7 @@ This rule is similar to the [**KmdfIrql**](kmdf-kmdfirql.md) rule; however, the 
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent)
 [**WdfChildListBeginIteration**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistbeginiteration)
@@ -414,4 +411,4 @@ Applies to
 [**WdfWorkItemEnqueue**](/windows-hardware/drivers/ddi/wdfworkitem/nf-wdfworkitem-wdfworkitemenqueue)
 [**WdfWorkItemFlush**](/windows-hardware/drivers/ddi/wdfworkitem/nf-wdfworkitem-wdfworkitemflush)
 [**WdfWorkItemGetParentObject**](/windows-hardware/drivers/ddi/wdfworkitem/nf-wdfworkitem-wdfworkitemgetparentobject)
-[**PAGED\_CODE**](../kernel/mm-bad-pointer.md)
+[**PAGED_CODE**](../kernel/paged_code.md)

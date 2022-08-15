@@ -9,7 +9,6 @@ keywords:
 - queues WDK AVStream
 - SRBs WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Stream Pointers

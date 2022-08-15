@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_STREAM\_FRAMETIME
@@ -46,7 +45,7 @@ The KSPROPERTY\_STREAM\_FRAMETIME property allows a client to determine the dura
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksframetime" data-raw-source="[&lt;strong&gt;KSFRAMETIME&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksframetime)"><strong>KSFRAMETIME</strong></a></p></td>
 </tr>
 </tbody>
@@ -54,8 +53,7 @@ The KSPROPERTY\_STREAM\_FRAMETIME property allows a client to determine the dura
 
  
 
-Remarks
--------
+## Remarks
 
 KSPROPERTY\_STREAM\_FRAMETIME is an optional property that should be implemented if a pin recognizes the specifics of the media type it is transporting.
 
@@ -63,8 +61,7 @@ The property is supported by rendering pins and is used to return the duration o
 
 The duration is measured in terms of the presentation time units provided by the pin. This is dependent on the interface and the numerator/denominator pair used in the presentation time. This does not apply to streams that are not oriented toward any specific media type, such as generic file readers.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -82,7 +79,6 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSFRAMETIME**](/windows-hardware/drivers/ddi/ks/ns-ks-ksframetime)
-

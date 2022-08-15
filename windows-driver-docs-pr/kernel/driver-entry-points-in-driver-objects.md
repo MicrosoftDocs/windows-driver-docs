@@ -3,7 +3,6 @@ title: Driver Entry Points in Driver Objects
 description: Driver Entry Points in Driver Objects
 keywords: ["driver objects WDK kernel", "standard driver routines WDK kernel , driver objects", "driver routines WDK kernel , driver objects", "routines WDK kernel , driver objects", "objects WDK driver objects", "entry points WDK kernel", "driver entry points WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Driver Entry Points in Driver Objects

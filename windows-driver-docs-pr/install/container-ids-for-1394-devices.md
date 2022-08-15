@@ -2,7 +2,6 @@
 title: Container IDs for 1394 Devices
 description: Container IDs for 1394 Devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Container IDs for 1394 Devices

@@ -4,7 +4,6 @@ description: The NDIS_STATUS_RESET_END status indicates that a miniport adapter 
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_RESET_END Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_RESET\_END
@@ -12,8 +11,7 @@ ms.localizationpriority: medium
 
 The NDIS\_STATUS\_RESET\_END status indicates that a miniport adapter reset operation is complete.
 
-Remarks
--------
+## Remarks
 
 Miniport drivers should not call the [**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) function to signal the start and finish of each reset operation because NDIS notifies overlying drivers when a reset operation begins and ends.
 
@@ -23,8 +21,7 @@ After a bound protocol driver receives an NDIS\_STATUS\_RESET\_END status indica
 
 After an overlying filter or intermediate driver receives an NDIS\_STATUS\_RESET\_END status indication, the driver can resume sending data and making OID requests to overlying drivers.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

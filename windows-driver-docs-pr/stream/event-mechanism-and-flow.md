@@ -5,7 +5,6 @@ keywords:
 - event operation flow WDK video capture
 - terminating scanning WDK video capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Event Mechanism and Flow

@@ -9,7 +9,6 @@ api_name:
 - usbkd.usb2
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.usb2
@@ -32,8 +31,7 @@ Address of the device extension for the functional device object (FDO) of a USB 
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 Here is one way to find the address of the device extension for the FDO of a USB host controller. First enter [**!usbkd.usb2tree**](-usbkd-usb2tree.md).
 

@@ -9,7 +9,6 @@ api_name:
 - MEMORY_MANAGEMENT
 api_type:
 - NA
-ms.localizationpriority: high 
 ---
 
 # Bug Check 0x1A: MEMORY\_MANAGEMENT
@@ -243,8 +242,7 @@ Parameter 1 identifies the exact violation.
 </tbody>
 </table>
 
-Resolution
-----------
+## Resolution
 
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 

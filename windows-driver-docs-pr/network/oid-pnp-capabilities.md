@@ -4,7 +4,6 @@ description: The OID_PNP_CAPABILITIES OID requests a miniport driver to return t
 ms.date: 08/08/2017
 keywords: 
  -OID_PNP_CAPABILITIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_PNP\_CAPABILITIES
@@ -109,8 +108,7 @@ If the underlying network adapter is not PM-aware, the intermediate driver shoul
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

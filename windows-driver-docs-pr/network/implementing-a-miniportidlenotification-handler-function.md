@@ -2,7 +2,6 @@
 title: Implementing a MiniportIdleNotification Handler Function
 description: Implementing a MiniportIdleNotification Handler Function
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Implementing a MiniportIdleNotification Handler Function

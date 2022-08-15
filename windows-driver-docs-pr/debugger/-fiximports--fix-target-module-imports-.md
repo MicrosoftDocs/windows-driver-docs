@@ -9,7 +9,6 @@ api_name:
 - .fiximports (Fix Target Module Imports)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .fiximports (Fix Target Module Imports)
@@ -52,8 +51,7 @@ Specifies the target module whose imports the debugger corrects. *Module* can co
 
  
 
-Remarks
--------
+## Remarks
 
 You can use the **.fiximports** command only when the target is a minidump that does not contain its own executable images.
 

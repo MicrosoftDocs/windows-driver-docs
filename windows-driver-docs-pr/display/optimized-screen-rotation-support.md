@@ -2,7 +2,6 @@
 title: Optimized screen rotation support
 description: Windows 8 ensures a flicker-free screen rotation experience by ensuring that the output from the graphics adapter stays enabled during a rotational mode change.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Optimized screen rotation support

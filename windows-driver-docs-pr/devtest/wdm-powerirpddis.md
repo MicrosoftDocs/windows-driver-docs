@@ -9,7 +9,6 @@ api_name:
 - PowerIrpDDIs
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PowerIrpDDIs rule (wdm)
@@ -19,8 +18,7 @@ The **PowerIrpDDIs** rule specifies that when a driver is processing a system or
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**ExIsProcessorFeaturePresent**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exisprocessorfeaturepresent)  
 [**ExRaiseAccessViolation**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exraiseaccessviolation)  

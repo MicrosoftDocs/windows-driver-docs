@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_STREAM\_MASTERCLOCK
@@ -46,7 +45,7 @@ The KSPROPERTY\_STREAM\_MASTERCLOCK property is an optional property that should
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](./ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>HANDLE</p></td>
 </tr>
 </tbody>
@@ -54,8 +53,7 @@ The KSPROPERTY\_STREAM\_MASTERCLOCK property is an optional property that should
 
  
 
-Remarks
--------
+## Remarks
 
 The property returns a **NULL** handle when queried. Support is determined by whether the call returns successfully.
 
@@ -67,8 +65,7 @@ A filter does not need to support the property when it neither produces a master
 
 Also see [KS Clocks](./ks-clocks.md) and [AVStream Clocks](./avstream-clocks.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -86,5 +83,4 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
-
+[**KSPROPERTY**](ksproperty-structure.md)

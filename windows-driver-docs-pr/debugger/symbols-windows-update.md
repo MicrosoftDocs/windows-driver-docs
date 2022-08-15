@@ -3,7 +3,6 @@ title: Offline Symbols for Windows Update
 description: This topic describes how you can work with off line symbols for Windows Update.
 keywords: ["symbols", "setup, symbols", "symbols, setup"]
 ms.date: 10/12/2018
-ms.localizationpriority: medium
 ---
 
 # Offline Symbols for Windows Update
@@ -85,7 +84,5 @@ If you don’t have access to an online machine with the same version, you’ll 
 [Using a Symbol Server](using-a-symbol-server.md).
 
 [Symbol Path](symbol-path.md) 
-
-[Accessing Symbols for Debugging](accessing-symbols-for-debugging.md)
 
 [Symbol Problems While Debugging](symbol-problems-while-debugging.md)

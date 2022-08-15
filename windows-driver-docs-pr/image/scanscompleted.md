@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ScansCompleted element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **ScansCompleted** element specifies the number of images that are scanned.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScansCompleted>
@@ -26,13 +24,11 @@ Usage
 </wscn:ScansCompleted>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. An integer value from 1 through 2147483648.
 
@@ -66,8 +62,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 If a sheet of media is scanned multiple times, the WSD Scan Service must increment the **ScansCompleted** count every time. Each side of a media sheet is scanned in duplex mode, generating two scans in the **ScansCompleted** count.
 

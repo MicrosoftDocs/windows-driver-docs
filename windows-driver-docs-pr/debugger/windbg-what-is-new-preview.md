@@ -1,19 +1,32 @@
 ---
 title: WinDbg Preview - What's New 
-description: This topic provides inofmration on what's new in WinDbg preview debugger.
-ms.date: 04/27/2021
+description: This topic provides infomration on what's new in WinDbg preview debugger.
+ms.date: 08/09/2021
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.localizationpriority: medium
 ---
 
 # WinDbg Preview - What's New
 
-![Small logo on windbg preview](images/windbgx-preview-logo.png)
+![Small logo on windbg preview.](images/windbgx-preview-logo.png)
 
 This topic provides information on what's new in the WinDbg Preview debugger.
 
+## 1.2107.13001.0
+
+### Regex search 
+
+WinDbgNext search now includes the option to search using regular expressions - Regex. Enable Regex in the window you'd like to search by doing Ctrl+F, then toggle the button labelled `.*` next to the search box.
+
+### Restricted Mode
+
+Restricted Mode is an optional setting that can limit the type of debugging sessions WinDbg Preview can start to remote debugging sessions and dump files only.  For more information, see [WinDbg Preview - Restricted Mode](windbg-restricted-mode-preview.md).
+
+### Shadowed variable support
+
+In past versions, WinDbg throws "Ambiguous Symbol" errors when trying to evaluate (??) or display (dx) a variable that shares its name with another variable in scope. Windbg will now disambiguate variables that share the same name by appending `@n` to the variable name. For example: foo`@0`, foo`@1`
+
+This change will also be reflected in the Locals window. Previously, only the nearest variable in scope would be displayed.
+ 
 ## 1.2104.13002.0
 
 ### Smart number selection and search
@@ -24,13 +37,13 @@ Example:
 
 When selecting `0x000001e2fb3f6160`, all other instances are highlighted no matter the format.
 
-![Image showing six or so examples of numbers being highlighted based on one number being selected](images\windbgx-command-highlighting.png)
+![Image showing six or so examples of numbers being highlighted based on one number being selected.](images\windbgx-command-highlighting.png)
 
 This feature works with semi-temporary highlights as well. Ctrl + Double Click on a number to highlight all its instances. You can keep track of multiple important numbers throughout your command history this way (to clear the highlight, Ctrl + Double Click on the number again). Finally, this feature also works when searching numbers with Ctrl + F.
 
 ### Source Code Extended Access
 
-The source path command (.srcpath, .lsrcpath (Set Source Path))[-srcpath---lsrcpath--set-source-path-.md] has been updated to include a new tag – *DebugInfoD*. For more information, see [Source Code Extended Access](source-code-extended-access.md).
+The source path command [.srcpath, .lsrcpath (Set Source Path)](-srcpath---lsrcpath--set-source-path-.md) has been updated to include a new tag – *DebugInfoD*. For more information, see [Source Code Extended Access](source-code-extended-access.md).
 
 ### Host and guest states of WOW processes in the data model
 
@@ -83,15 +96,15 @@ Bookmark important Time Travel positions in WinDbg instead of manually copy past
 
 You can provide a descriptive name for bookmarks.
 
-![New bookmark dialog with example name for first api call in display greeting app](images/windbgx-timeline-bookmark-new.png)
+![New bookmark dialog with example name for first api call in display greeting app.](images/windbgx-timeline-bookmark-new.png)
 
 Access Bookmarks via the Timeline window available in *View > Timeline*. When you hover over a bookmark, it will display the bookmark name.
 
-![Timeline showing three bookmarks hovering over one showing bookmark name](images/windbgx-timeline-bookmarks.png)
+![Timeline showing three bookmarks hovering over one showing bookmark name.](images/windbgx-timeline-bookmarks.png)
 
 You can select and hold (or right-click) the bookmark to travel to that position, rename or delete the bookmark.
 
-![Bookmark right click popup menu showing travel to position edit and remove](images/windbgx-timeline-bookmark-edit.png)
+![Bookmark right click popup menu showing travel to position edit and remove.](images/windbgx-timeline-bookmark-edit.png)
 
 **Modules Window**
 
@@ -103,7 +116,7 @@ It displays:
 - The base address that the module is loaded at
 - The file version
 
-![Modules view window showing five modules listed](images/windbgx-view-modules.png)
+![Modules view window showing five modules listed.](images/windbgx-view-modules.png)
 
 
 **Thread names/descriptions available in live debugging**
@@ -240,7 +253,7 @@ Other changes and bug fixes:
 -  Un-indexed TTD traces will now be more clear that they're un-indexed.
 -  Improved performance of the locals window
 -  Added a ribbon button to save the command window logs to a file.
--  Added . SelectMany(<projection>) to the default set of LINQ methods.
+-  Added . SelectMany(\<projection\>) to the default set of LINQ methods.
 
 ## 1.0.1807.11002
 

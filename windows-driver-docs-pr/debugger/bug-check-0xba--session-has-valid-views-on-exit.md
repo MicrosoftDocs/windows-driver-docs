@@ -9,7 +9,6 @@ api_name:
 - SESSION_HAS_VALID_VIEWS_ON_EXIT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xBA: SESSION\_HAS\_VALID\_VIEWS\_ON\_EXIT
@@ -57,8 +56,7 @@ The SESSION\_HAS\_VALID\_VIEWS\_ON\_EXIT bug check has a value of 0x000000BA. Th
 
  
 
-Cause
------
+## Cause
 
 This error is caused by a session driver not unmapping its mapped views prior to a session unload. This indicates a bug in win32k.sys, atmfd.dll, rdpdd.dll, or a video driver.
 

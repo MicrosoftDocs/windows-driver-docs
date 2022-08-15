@@ -2,7 +2,6 @@
 title: Tools for Device Metadata Packages
 description: Tools for Device Metadata Packages
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tools for Device Metadata Packages

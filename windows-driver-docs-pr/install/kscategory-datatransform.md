@@ -10,7 +10,6 @@ api_location:
 - Ks.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,8 +43,7 @@ The KSCATEGORY_DATATRANSFORM [device interface class](./overview-of-device-inter
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_DATATRANSFORM to indicate to the operating system that the devices support the KSCATEGORY_DATATRANSFORM functional category.
 
@@ -53,8 +51,7 @@ For an example of how to register this functional category in an INF file, see t
 
 For more information about this functional category, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md), [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md), and [Requirements for a GFX Filter Factory](../audio/index.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

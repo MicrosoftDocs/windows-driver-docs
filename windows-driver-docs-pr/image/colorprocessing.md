@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ColorProcessing element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The optional **ColorProcessing** element specifies the color-processing mode of the input source on the scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ColorProcessing wscn:MustHonor=""                      wscn:Override=""                      wscn:UsedDefault=""
@@ -29,8 +27,7 @@ Usage
 </wscn:ColorProcessing wscn:MustHonor=""                      wscn:Override=""                      wscn:UsedDefault="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -72,8 +69,7 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 For a list and description of the color processing Modes, see ColorEntry.[**ColorEntry**](colorentry.md)
 
@@ -101,8 +97,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The client can specify the optional **MustHonor** attribute only when the **ColorProcessing** element is contained within a [**CreateScanJobRequest**](createscanjobrequest.md) hierarchy. For more information about **MustHonor** and its usage, see **CreateScanJobRequest**.
 

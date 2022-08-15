@@ -2,7 +2,6 @@
 title: Hardware Resources for User-Mode SPB Peripheral Drivers
 description: Code examples for a UMDF driver for a peripheral device on an SPB, and obtains the hardware resources.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hardware Resources for User-Mode SPB Peripheral Drivers

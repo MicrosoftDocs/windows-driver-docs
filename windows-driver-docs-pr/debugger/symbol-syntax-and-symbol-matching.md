@@ -3,7 +3,6 @@ title: Symbol Syntax and Symbol Matching
 description: Symbol Syntax and Symbol Matching
 keywords: ["symbols, symbol syntax", "symbols, symbol matching", "symbols, symbol suffix", "syntax rules for commands, $ (local symbol identifier)", "$ (local symbol identifier)", "local symbol identifier ( $ )", "local variables, local symbol identifier ( $ )"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Symbol Syntax and Symbol Matching

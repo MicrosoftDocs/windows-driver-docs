@@ -71,4 +71,4 @@
     - name: "UART tests in MITT"
       href: uart-tests-in-mitt.md
 - name: "PWM driver for an on-SoC PWM module"
-  href: pulse-width-controller driver.md
+  href: pulse-width-controller-driver.md

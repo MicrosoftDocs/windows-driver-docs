@@ -2,7 +2,6 @@
 title: WDI Selective Suspend capability registration
 description: The following is a flow diagram for registering the USB Selective Suspend capability.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WDI Selective Suspend capability registration
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 
 The following is a flow diagram for registering the USB Selective Suspend capability.
 
-![wdi selective suspend capability registration](images/wdi-register-usb-selective-suspend-flow.png)
+![wdi selective suspend capability registration.](images/wdi-register-usb-selective-suspend-flow.png)
 
 AdapterCap(PM(ss)), \*SelectiveSuspend, **LeIdleNotificationHandler**, and **LeCancelIdleNotificationHandler** must be true or valid for WDI to register that WLAN supports Selective Suspend.
 

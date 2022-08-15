@@ -4,11 +4,12 @@ description: OID_WDI_SET_P2P_LISTEN_STATE sets the Wi-Fi Direct listen state on 
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_P2P_LISTEN_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_P2P\_LISTEN\_STATE
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_SET\_P2P\_LISTEN\_STATE sets the Wi-Fi Direct listen state on the port.
@@ -47,8 +48,7 @@ If the adapter has a virtualized port operating on a non-social channel, the por
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

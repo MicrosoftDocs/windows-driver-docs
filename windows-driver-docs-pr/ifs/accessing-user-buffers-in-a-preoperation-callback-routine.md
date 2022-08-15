@@ -4,7 +4,6 @@ description: Accessing User Buffers in a Preoperation Callback Routine
 keywords:
 - preoperation callback routines WDK file system minifilter , buffers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing User Buffers in a Preoperation Callback Routine
@@ -40,7 +39,7 @@ A minifilter driver's [**preoperation callback routine**](/windows-hardware/driv
     status = FltDecodeParameters(CallbackData, &ReadMdl, NULL, NULL, NULL);
     ```
 
--   If an MDL exists for the buffer, call [**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md) to obtain the system address for the buffer and then use this address to access the buffer.
+-   If an MDL exists for the buffer, call [**MmGetSystemAddressForMdlSafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdlsafe) to obtain the system address for the buffer and then use this address to access the buffer.
 
     Continuing from the previous example, the following code obtains the system address.
 

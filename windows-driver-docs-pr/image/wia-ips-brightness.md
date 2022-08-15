@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPS\_BRIGHTNESS
-description: The WIA\_IPS\_BRIGHTNESS property contains the current hardware brightness setting for a device.
+title: WIA_IPS_BRIGHTNESS
+description: The WIA_IPS_BRIGHTNESS property contains the current hardware brightness setting for a device.
 keywords: ["WIA_IPS_BRIGHTNESS Imaging Devices"]
 topic_type:
 - apiref
@@ -10,54 +10,27 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/05/2021
 ---
 
-# WIA\_IPS\_BRIGHTNESS
+# WIA_IPS_BRIGHTNESS
 
+The WIA_IPS_BRIGHTNESS property contains the current hardware brightness setting for a device.
 
-The WIA\_IPS\_BRIGHTNESS property contains the current hardware brightness setting for a device.
+Property Type: VT_I4
 
-## <span id="ddk_wia_ips_brightness_si"></span><span id="DDK_WIA_IPS_BRIGHTNESS_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_RANGE
+Valid Values: WIA_PROP_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
-An application sets the WIA\_IPS\_BRIGHTNESS property to the hardware's brightness value. The WIA minidriver creates and maintains this property.
+An application sets the WIA_IPS_BRIGHTNESS property to the hardware's brightness value. The WIA minidriver creates and maintains this property.
 
-Values for WIA\_IPS\_BRIGHTNESS should be mapped in a range from −1000 through 1000, where 1000 corresponds to the maximum brightness, 0 corresponds to normal brightness, and −1000 corresponds to the minimum brightness.
+Values for WIA_IPS_BRIGHTNESS should be mapped in a range from −1000 through 1000, where 1000 corresponds to the maximum brightness, 0 corresponds to normal brightness, and −1000 corresponds to the minimum brightness.
 
-WIA\_IPS\_BRIGHTNESS is required for all image acquisition items.
+WIA_IPS_BRIGHTNESS is required for all image acquisition items.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

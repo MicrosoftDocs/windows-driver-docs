@@ -5,7 +5,6 @@ keywords:
 - MIP map textures WDK DirectX 9.0 , generating sublevels
 - sublevels of MIP-map textures WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Generating Sublevels of MIP Map Textures

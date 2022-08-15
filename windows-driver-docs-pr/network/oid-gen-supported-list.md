@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_SUPPORTED_LIST OID specifies an array of OI
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_SUPPORTED_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_SUPPORTED\_LIST
@@ -29,8 +28,7 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory. See [OID\_GEN\_SUPPORTED\_LIST (NDIS 5.1)](/previous-versions/windows/hardware/network/ff560258(v=vs.85)).
 
-Remarks
--------
+## Remarks
 
 NDIS 6.0 and later miniport drivers do not receive this OID request. NDIS handles this OID with a cached value that miniport drivers supply during initialization.
 
@@ -42,8 +40,7 @@ If a miniport driver lists an OID in its supported OIDs list, it must fully supp
 
 Duplicates might appear in the supported OIDs list. Drivers are not required to guarantee that there is only one entry for each OID in the list.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

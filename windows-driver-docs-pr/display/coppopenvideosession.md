@@ -8,7 +8,6 @@ keywords:
 - video miniport drivers WDK Windows 2000 , COPP code template
 - certified output protection protocol
 ms.date: 02/16/2018
-ms.localizationpriority: medium
 ---
 
 # COPPOpenVideoSession function

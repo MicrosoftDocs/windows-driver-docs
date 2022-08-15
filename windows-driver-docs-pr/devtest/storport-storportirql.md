@@ -9,7 +9,6 @@ api_name:
 - StorPortIrql
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortIrql rule (storport)
@@ -19,8 +18,7 @@ The **StorPortIrql** rule checks that StorPort routines are called at the correc
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**StorPortAllocateContiguousMemorySpecifyCacheNode**](/windows-hardware/drivers/ddi/storport/nf-storport-storportallocatecontiguousmemoryspecifycachenode)
 [**StorPortAllocateMdl**](/windows-hardware/drivers/ddi/storport/nf-storport-storportallocatemdl)

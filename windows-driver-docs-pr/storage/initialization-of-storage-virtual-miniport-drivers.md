@@ -1,52 +1,78 @@
 ---
-title: Initialization of Storage Virtual Miniport Drivers
-description: Initialization of Storage Virtual Miniport Drivers
+title: Implementing a Storport virtual miniport driver
+description: Implementing a Storport virtual miniport driver
 keywords:
 - storage virtual miniport drivers WDK , initialization
+- storage virtual miniport drivers , implementing
 - miniport drivers WDK storage
 - initializing WDK storage , virtual miniport drivers
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 03/01/2022
 ---
 
-# Initialization of Storage Virtual Miniport Drivers
+# Implementing a Storport virtual miniport driver
 
+This page provides high-level implementation information for a Storport virtual miniport driver (VMiniport). The VMiniport interface is defined in *storport.h*.
 
-The Storport virtual miniport (VMiniport) driver has three stages of initialization. In the first, the VMiniport (typically in its [*DriverEntry*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine) calls [**StorPortInitialize**](/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize), which points to a [**VIRTUAL\_HW\_INITIALIZATION\_DATA**](/windows-hardware/drivers/ddi/storport/ns-storport-_virtual_hw_initialization_data) structure.
+Design considerations are unique to various VMiniports, so implementation specifics are not included here.
 
-In this structure, the VMiniport sets the following fields to point to callback routines:
+## The VMiniport interface
 
-**HwFindAdapter**. This routine is required for the second stage of initialization.
+This section lists the more prominent functions, callbacks, and structures that a VMiniport implements/uses. Some functions and callbacks are required; the optional callbacks are unique to a VMiniport's design.
 
-**HwInitialize**. This routine is required for the third stage of initialization.
+* [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize), which is the first routine that the operating system calls after the VMiniport is loaded. This routine is required.
 
-**HwInitializeTracing**. This routine is optional, and is unique to a Storport virtual miniport driver.
+* [**HW_INITIALIZATION_DATA**](/windows-hardware/drivers/ddi/storport/ns-storport-_hw_initialization_data-r1), which is a Vminiport-allocated and initialized structure that the VMiniport passes to Storport during [initialization](#vminiport-initialization). The VMiniport provides pointers to its callback functions in this structure.
 
-**HwStartIo**. This routine is required. In a virtual miniport driver, the **HwStorBuildIo** interface is not called prior to calling. [**HwStorStartIo**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_startio). No locks are held prior to calling. **HwStorStartIo**. The default queue depth for each logical unit that is exposed through the virtual miniport interface is 250.
+  The following callback routines are required:
 
-**HwAdapterControl**. This routine is required.
+  * [**HwFindAdapter**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter)
 
-**HwResetBus**. This routine is required. The meaning of "bus" can be defined by the virtual miniport driver developer.
+  * [**HwInitialize**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_initialize)
 
-**HwProcessServiceRequest**. This routine is optional, and is unique to a Storport virtual miniport driver. This routine receives a "reverse-callback" IRP, which will be completed when the VMiniport updates the caller (such as a user-mode application or kernel-mode driver) or requires the caller to do something on the VMiniport's behalf.
+  * [**HwStartIo**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_startio)
 
-**HwCompleteServiceIrp**. This routine is optional, and is unique to a Storport virtual miniport driver. However, this routine is required when **HwProcessServiceRequest** points to a callback routine. **HwCompleteServiceIrp** is called when the virtual adapter is being removed so that the VMiniport can complete any reverse-callback IRPs that might be pending.
+  * [**HwAdapterControl**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_adapter_control)
 
-**HwFreeAdapterResources**. This routine is required, and is unique to a Storport virtual miniport driver. This routine is called when the virtual adapter is being removed so that the VMiniport can free any resources that are allocated during initialization.
+  * [**HwResetBus**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_reset_bus). The meaning of "bus" can be defined by the VMiniport developer.
 
-**HwCleanupTracing**. This routine is optional, and is unique to a Storport virtual miniport driver. However, this routine is required when **HwInitializeTracing** points to a callback routine.
+  * [**HwFreeAdapterResources**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_free_adapter_resources). This routine is called when the virtual adapter is being removed so that the VMiniport can free any resources that are allocated during initialization.
 
-The virtual miniport driver must also set the following in the same structure:
+  The following callback routines are optional, though a VMiniport might have to implement some of them depending on its unique architecture:
 
-**HwInitializationDataSize** = **sizeof**(VIRTUAL\_HW\_INITIALIZATION\_DATA).
+  * [**HwInitializeTracing**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_initialize_tracing)
 
-**AdapterInterfaceType** = **Internal**.
+  * [**HwCleanupTracing**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_cleanup_tracing). This routine is required when [**HwInitializeTracing**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_initialize_tracing) points to a callback routine; otherwise, this routine is optional, and is unique to a VMiniport.
 
-The Storport virtual miniport driver sets other fields as needed. Unused fields must be set to zero.
+  * [**HwProcessServiceRequest**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_process_service_request). This routine receives a "reverse-callback" IRP, which will be completed when the VMiniport updates the caller (such as a user-mode application or kernel-mode driver) or requires the caller to do something on the VMiniport's behalf.
 
-Without holding any locks and at PASSIVE\_LEVEL, the virtual miniport driver calls [**StorPortInitialize**](/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize) with a pointer to the [**VIRTUAL\_HW\_INITIALIZATION\_DATA**](/windows-hardware/drivers/ddi/storport/ns-storport-_virtual_hw_initialization_data) structure and then checks the status that is returned. The Storport driver retains its own copy of the information in this structure and the miniport driver need not retain this structure after **StorPortInitialize** returns.
+  * [**HwCompleteServiceIrp**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_complete_service_irp). This routine is required when [**HwProcessServiceRequest**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_process_service_request) points to a callback routine; otherwise, this routine is optional and is unique to a VMiniport.**HwCompleteServiceIrp** is called when the virtual adapter is being removed so that the VMiniport can complete any reverse-callback IRPs that might be pending.
 
-[**VIRTUAL\_HW\_INITIALIZATION\_DATA**](/windows-hardware/drivers/ddi/storport/ns-storport-_virtual_hw_initialization_data) appears in Storport.h.
+  The VMiniport must also set the following members of the [**HW_INITIALIZATION_DATA**](/windows-hardware/drivers/ddi/storport/ns-storport-_hw_initialization_data-r1) structure:
 
- 
+  * Set **HwInitializationDataSize** to **sizeof**(HW_INITIALIZATION_DATA).
 
+  * Set **AdapterInterfaceType** to **Internal**, which indicates to Storport that this is a virtual adapter.
+
+  * Set [**HwBuildIo**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_buildio) to NULL.
+
+  The Vminiport driver sets other fields as needed. Unused fields must be set to zero.
+
+* [**PORT_CONFIGURATION_INFORMATION**](/windows-hardware/drivers/ddi/storport/ns-storport-_port_configuration_information), which is a Storport-allocated structure. Storport initializes some **PORT_CONFIGURATION_INFORMATION** members and then passed it to the VMiniport's [**HwFindAdapter**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter) callback, where the VMiniport completes the initialization. Since this structure is pre-initialized by Storport, **HWFindAdapter** must not zero out the structure. A VMiniport must set **VirtualDevice** to TRUE.
+
+## VMiniport initialization
+
+A VMiniport has three stages of initialization.
+
+* In the first stage, the VMiniport's [*DriverEntry*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine calls [**StorPortInitialize**](/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize) with a pointer to its initialized [**HW_INITIALIZATION_DATA**](/windows-hardware/drivers/ddi/storport/ns-storport-_hw_initialization_data-r1) structure.
+
+* Storport calls the VMiniport's [**HwFindAdapter**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter) callback with a Storport-allocated and partially initialized [**PORT_CONFIGURATION_INFORMATION**](/windows-hardware/drivers/ddi/storport/ns-storport-_port_configuration_information) structure. The principal function of **HwFindAdapter** is to complete the initialization of **PORT_CONFIGURATION_INFORMATION**, including setting the **VirtualDevice** member to TRUE.
+
+* After [**HwFindAdapter**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter) successfully returns, Storport calls the VMiniport's [**HwInitialize**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_initialize) callback to complete initialization of the VMiniport.
+
+## VMiniport I/O
+
+Storport calls a VMiniport's [**HwStartIo**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_startio) callback to initiate an I/O request. In Storport, an I/O request is described using a [**SCSI_REQUEST_BLOCK**](/windows-hardware/drivers/ddi/storport/ns-storport-_scsi_request_block) or [**STORAGE_REQUEST_BLOCK**](/windows-hardware/drivers/ddi/storport/ns-storport-_storage_request_block) (standard or extended SRB, respectively).
+
+Unlike a physical miniport driver, Storport does not call [**HwBuildIo**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_buildio) in a Vminiport prior to calling [**HwStartIo**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_startio).
+
+No locks are held prior to calling **HwStartIo**. The default queue depth for each logical unit that is exposed through the virtual miniport interface is 250.

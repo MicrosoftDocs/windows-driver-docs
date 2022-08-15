@@ -9,7 +9,6 @@ keywords:
 - command lists support WDK Windows 2008 R2 display
 - command lists support WDK Windows 2008 R2 display , Direct3D version 11
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting command lists
@@ -117,4 +116,4 @@ CommandList::Destroy()
 
 The following state diagram shows the validity of an immediate-context DDI command-list handle. The green state represents a handle that can be used with [**CommandListExecute**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11ddi_commandlistexecute).
 
-![diagram illustrating a command-list handle validity state](images/d3d11ddi2.png)
+![diagram illustrating a command-list handle validity state.](images/d3d11ddi2.png)

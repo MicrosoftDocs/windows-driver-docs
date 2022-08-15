@@ -1,5 +1,5 @@
 ---
-title: ubd
+title: ubd (WinDbg)
 description: The ubd extension temporarily disables a user-space breakpoint.
 keywords: ["ubd Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ubd
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ubd
@@ -48,8 +47,7 @@ Specifies the number of the breakpoint to be disabled. An asterisk (\*) indicate
 
  
 
-Remarks
--------
+## Remarks
 
 Disabled breakpoints will be ignored. Use [**!ube**](-ube.md) to re-enable the breakpoint.
 

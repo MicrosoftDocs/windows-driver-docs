@@ -4,7 +4,6 @@ description: OID_WWAN_PIN sets or returns information related to Personal Identi
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_PIN Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_PIN
@@ -18,8 +17,7 @@ Miniport drivers should send [**NDIS\_STATUS\_WWAN\_PIN\_INFO**](ndis-status-wwa
 
 Callers requesting to set information related to PINs provide an [**NDIS\_WWAN\_SET\_PIN**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_pin) structure to the miniport driver to send a PIN to the MB device, enable or disable PIN settings, or to change a PIN on the SIM.
 
-Remarks
--------
+## Remarks
 
 See [WWAN Pin Operations](./mb-pin-operations.md) for more information about using this OID.
 
@@ -41,8 +39,7 @@ If reporting multiple PINs are enabled, and only one PIN can be reported at a ti
 
 The MB API supports other PINs in addition to PIN1. However, a 3rd-party connection manager/GUI would need to be installed because the Windows Connection Manager/GUI supports only PIN1.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -2,7 +2,6 @@
 description: The Conceptual Model
 title: The Conceptual Model
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # The Conceptual Model
@@ -50,7 +49,7 @@ Similar to property attributes, resource attributes describe the access rights, 
 
 The following diagram shows the relationship between an object, its properties, and its resources, using an Image object as an example.
 
-![wpd objects](images/wpd_overview_figure2.png)
+![wpd objects.](images/wpd_overview_figure2.png)
 
 ## <span id="related_topics"></span>Related topics
 

@@ -2,12 +2,11 @@
 title: Time Travel Debugging Extension !index Command
 description: The !index extension indexes time travel traces or displays index status information.
 ms.date: 01/22/2020
-ms.localizationpriority: medium
 ---
 
 # !index
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
+![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png)
 
 The **!index** extension indexes time travel traces or displays index status information.
 

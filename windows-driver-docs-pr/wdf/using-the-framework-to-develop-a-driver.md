@@ -7,7 +7,6 @@ keywords:
 - Kernel-Mode Driver Framework WDK , development steps
 - framework-based drivers WDK KMDF , development steps
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using WDF to Develop a Driver

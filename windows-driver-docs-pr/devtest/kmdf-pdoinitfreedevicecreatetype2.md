@@ -9,7 +9,6 @@ api_name:
 - PdoInitFreeDeviceCreateType2
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # PdoInitFreeDeviceCreateType2 rule (kmdf)
@@ -19,8 +18,7 @@ The PdoInitFreeDeviceCreateType2 rule specifies that a driver must not call [**W
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate)
 [**WdfDeviceInitFree**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitfree)

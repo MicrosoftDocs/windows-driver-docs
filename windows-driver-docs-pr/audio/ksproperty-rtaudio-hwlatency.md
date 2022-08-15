@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 07/07/2019
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_RTAUDIO\_HWLATENCY
@@ -45,7 +44,7 @@ The following table summarizes the features of this property.
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_hwlatency"><strong>KSRTAUDIO_HWLATENCY</strong></a></p></td>
 </tr>
 </tbody>
@@ -55,13 +54,11 @@ The following table summarizes the features of this property.
 
 A KSPROPERTY\_RTAUDIO\_HWLATENCY property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate failure status code.
 
-Remarks
--------
+## Remarks
 
 After the [WaveRT miniport driver](./wavert-miniport-driver.md) has allocated the cyclic buffer (see [**KSPROPERTY\_RTAUDIO\_BUFFER**](ksproperty-rtaudio-buffer.md)) the client can send a KSPROPERTY\_RTAUDIO\_HWLATENCY property request to the driver for hardware-latency information.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -82,7 +79,7 @@ Requirements
 
 ## <span id="see_also"></span>See also
 
-[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](../stream/ksproperty-structure.md)
 
 [**KSRTAUDIO\_HWLATENCY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_hwlatency)
 

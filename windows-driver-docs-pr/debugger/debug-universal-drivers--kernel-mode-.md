@@ -3,7 +3,6 @@ title: Debug Drivers - Step-by-Step Lab (Sysvad Kernel Mode)
 description: This lab provides hands-on exercises that demonstrate how to debug the Sysvad audio kernel-mode device driver.
 keywords: ["debug lab", "step-by-step", "SYSVAD"]
 ms.date: 01/20/2021
-ms.localizationpriority: medium
 ---
 
 # <span id="debugger.debug_universal_drivers__kernel-mode_"></span>Debug Drivers - Step by Step Lab (Sysvad Kernel Mode)
@@ -54,7 +53,7 @@ This lab walk you through the process of debugging a kernel-mode driver. The exe
 
 ## <span id="echo_driver_lab"></span>Echo driver lab
 
-The Echo driver is a simpler driver then the Sysvad audio driver. If you are new to WinDbg, you may want to consider first completing the [Debug Universal Drivers - Step-by-Step Lab (Echo kernel mode)](debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md). This lab reuses the setup directions from that lab, so if you have completed that lab you can skip sections 1 and 2 here.
+The Echo driver is a simpler driver than the Sysvad audio driver. If you are new to WinDbg, you may want to consider first completing the [Debug Universal Drivers - Step-by-Step Lab (Echo kernel mode)](debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md). This lab reuses the setup directions from that lab, so if you have completed that lab you can skip sections 1 and 2 here.
 
 ## <span id="connectto"></span>Section 1: Connect to a kernel-mode WinDbg session
 
@@ -66,9 +65,9 @@ This lab uses two computers. WinDbg runs on the *host* system and the Sysvad dri
 
  Use a network hub/router and network cables to connect the two PCs.
 
-![two pcs connected with a double arrow](images/debuglab-image-targethostdrawing1.png)
+![two pcs connected with a double arrow.](images/debuglab-image-targethostdrawing1.png)
 
-To work with kernel-mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](/windows-hardware/drivers) and [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
+To work with kernel-mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](../develop/preparing-a-computer-for-manual-driver-deployment.md) and [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
 ### <span id="configure__kernel_mode_debugging_using_ethernet"></span>Configure kernel–mode debugging using ethernet
 
@@ -179,7 +178,7 @@ Copy the auto generated unique key into a text file, to avoid having to type it 
 
 If you receive a pop-up message from the firewall, and you wish to use the debugger, check **all three** of the boxes.
 
-![windows security alert - windows firewall has blocked some features of this app](images/debuglab-image-firewall-dialog-box.png)
+![windows security alert - windows firewall has blocked some features of this app.](images/debuglab-image-firewall-dialog-box.png)
  
 
 **&lt;- On the host system**
@@ -204,7 +203,7 @@ Reboot the target system.
 
 In a minute or two, debug output should be displayed on the host system.
 
-![windows debugger showing command window output from a live kernel connection](images/debuglab-image-winddbg-hh.png)
+![windows debugger showing command window output from a live kernel connection.](images/debuglab-image-winddbg-hh.png)
 
 The Debugger Command window is the primary debugging information window in WinDbg. You can enter debugger commands and view the command output in this window.
 
@@ -242,7 +241,7 @@ You can access reference command help using the **.hh** command.
 
 The Debugger help file will display help for the **.prefer\_dml** command.
 
-![debugger help application showing help for the .prefer\-dml command](images/debuglab-image-prefer-dml-help.png)
+![debugger help application showing help for the .prefer\-dml command.](images/debuglab-image-prefer-dml-help.png)
 
 **Display the version of Windows on the target system**
 
@@ -300,7 +299,7 @@ To download and build the Sysvad sample audio driver, perform the following step
 
     [https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad](https://github.com/microsoft/Windows-driver-samples/tree/master/audio/sysvad)
 
-    ![github repo showing general folder and download zip button](images/sysvad-lab-github.png)
+    ![github repo showing general folder and download zip button.](images/sysvad-lab-github.png)
 
     This lab, shows how to download the universal driver samples in one zip file.
 
@@ -320,7 +319,7 @@ To download and build the Sysvad sample audio driver, perform the following step
 
     In Visual Studio locate the Solution Explorer. (If this is not already open, choose **Solution Explorer** from the **View** menu.) In Solution Explorer, you can see one solution that has a number of projects. 
         
-    ![visual studio with the adapter.cpp file loaded from the sysvad project](images/sysvad-lab-visual-studio-solution.png)
+    ![visual studio with the adapter.cpp file loaded from the sysvad project.](images/sysvad-lab-visual-studio-solution.png)
 
 3.  **Set the sample's configuration and platform**
 
@@ -412,7 +411,7 @@ To install the driver on the target system, perform the following steps.
 
     A dialog box will appear indicating that the test driver is an unsigned driver. Select **Install this driver anyway** to proceed.
 
-    ![windows security warning - windows can't verify the publisher](images/debuglab-image-install-security-warning.png)
+    ![windows security warning - windows can't verify the publisher.](images/debuglab-image-install-security-warning.png)
 
     >[!TIP]
     > If you have any issues with the installation, check the following file for more information.
@@ -434,7 +433,7 @@ To install the driver on the target system, perform the following steps.
 
     Confirm in Device Manager that audio hardware driver, displays the a down arrow, indicating that it is disabled.
 
-    ![device manager tree with the virtual audio device tablet sample highlighted](images/sysvad-lab-audio-device-manager.png)
+    ![device manager tree with the virtual audio device tablet sample highlighted.](images/sysvad-lab-audio-device-manager.png)
 
     After successfully installing the sample driver, you're now ready to test it.
 
@@ -497,7 +496,7 @@ Type “.hh dbgerr005” for details.
 **Note**  
 **Symbol servers**
 
-There are a number of approaches that can be used to work with symbols. In many situations, you can configure the PC to access symbols from a symbol server that Microsoft provides when they are needed. This walkthrough assumes that this approach will be used. If the symbols in your environment are in a different location, modify the steps to use that location. For additional information, see [Symbol Stores and Symbol Servers](symbol-stores-and-symbol-servers.md).
+There are a number of approaches that can be used to work with symbols. In many situations, you can configure the PC to access symbols from a symbol server that Microsoft provides when they are needed. This walkthrough assumes that this approach will be used. If the symbols in your environment are in a different location, modify the steps to use that location. For additional information, see [Symbol path for Windows debugger](symbol-path.md).
 
  
 
@@ -620,7 +619,7 @@ For more information about the device node debug extension, see [**!devnode**](-
 
 2. Use Ctrl+F to search in the output that is generated to look for the name of the device driver, *sysvad*.
 
-   ![find dialog box showing the term sysvad being searched for](images/sysvad-lab-audio-find-dialog.png)
+   ![find dialog box showing the term sysvad being searched for.](images/sysvad-lab-audio-find-dialog.png)
 
    A device node entry with a name of `sysvad_TabletAudioSample` will be present in the !devnode output for Syvad.
 
@@ -751,7 +750,7 @@ The output shows that we have a farily simple device driver stack. The sysvad\_T
 
 This diagram shows a more complex device node tree.
 
-![device node tree with about 20 nodes](images/debuglab-image-device-node-tree.png)
+![device node tree with about 20 nodes.](images/debuglab-image-device-node-tree.png)
 
 **Note**  For more information about more complex driver stacks, see [Driver stacks](../gettingstarted/driver-stacks.md) and [Device nodes and device stacks](../gettingstarted/device-nodes-and-device-stacks.md).
 
@@ -1287,7 +1286,7 @@ It can be useful to examine variables as the code executes to confirm that the c
 
     Use the **View**&gt; **Locals** menu item to display local variables. This interface also provides this ability to drill down on more complex data structures.
 
-    ![windbg showing sample code locals and command windows](images/sysvad-lab-display-variables.png)
+    ![windbg showing sample code locals and command windows.](images/sysvad-lab-display-variables.png)
 
 13. Use p or F10 to step forward about 10 lines in the code until you are highlighting the ntStatus = IsFormatSupported(Pin, Capture, DataFormat); line of code.
 
@@ -1381,7 +1380,7 @@ To display the call stack, use the k\* commands:
 
 If you want to keep the call stack available, you can select **View**&gt; **Call stack** to view it. Select the columns at the top of the window to toggle the display of additional information.
 
-![windbg call stack window](images/sysvad-lab-call-stack.png)
+![windbg call stack window.](images/sysvad-lab-call-stack.png)
 
 This output shows the call stack while debugging the sample adapter code in a break state.
 
@@ -1783,7 +1782,7 @@ fffff803`bb757020 cc              int     3
 
 Alternatively, you can display the contents of the registers by selecting **View** &gt; **Registers**.
 
-![windbg registers window showing about 12 registers](images/sysvad-lab-audio-display-registers.png)
+![windbg registers window showing about 12 registers.](images/sysvad-lab-audio-display-registers.png)
 
 Viewing the contents of the registers can be helpful when stepping through assembly language code execution and in other scenarios. For more information see [**r (Registers)**](r--registers-.md).
 
@@ -1793,7 +1792,7 @@ For information about contents of the register, see [x86 Architecture](x86-archi
 
 You can disassemble the code that is under execution to view the assembly language code that is being run by selecting **View** &gt; **Disassembly**.
 
-![windbg disassembly window](images/sysvad-lab-audio-disassembly-window.png)
+![windbg disassembly window.](images/sysvad-lab-audio-disassembly-window.png)
 
 For more information about assembly language disassembly, see [Annotated x86 Disassembly](annotated-x86-disassembly.md) and [Annotated x64 Disassembly](annotated-x64-disassembly.md).
 
@@ -1840,7 +1839,7 @@ If you attempt to display an invalid address, its contents are shown as question
 
 Alternatively, you can view the memory by selecting **View** &gt; **Memory**. Use the **Display format** pull down to change how the memory is displayed.
 
-![windbg view memory window](images/sysvad-lab-audio-memory-display.png)
+![windbg view memory window.](images/sysvad-lab-audio-memory-display.png)
 
 1.  To view data associated with the volume control, set a breakpoint to fire on the PropertyHandlerAudioEngineVolumeLevel routine using the bm command. Before we set the new breakpoint, we will clear all of the previous breakpoints using bc \*.
 
@@ -2097,7 +2096,7 @@ Additional information is available on Windows debugging. Note that some of thes
 
 **Video**
 
-The Defrag Tools Show WinDbg Episodes 13-29 <https://channel9.msdn.com/Shows/Defrag-Tools>
+The Defrag Tools Show WinDbg Episodes 13-29: </shows/defrag-tools/>
 
 **Training Vendors:**
 

@@ -3,7 +3,6 @@ title: Handling Device Power-Down IRPs
 description: Handling Device Power-Down IRPs
 keywords: ["set-power IRPs WDK kernel", "device set power IRPs WDK kernel", "power IRPs WDK kernel , device changes", "power-down IRPs WDK kernel", "context information WDK power management", "shutdown power management WDK kernel", "off power WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Device Power-Down IRPs
@@ -16,7 +15,7 @@ A device power-down IRP specifies the minor function code [**IRP\_MN\_SET\_POWER
 
 The following figure shows the steps involved in handling such an IRP.
 
-![diagram illustrating handling a device power-down request](images/devd3.png)
+![diagram illustrating handling a device power-down request.](images/devd3.png)
 
 If the IRP specifies **PowerDeviceD3**, the function driver should typically perform the following tasks:
 

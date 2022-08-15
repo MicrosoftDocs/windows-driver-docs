@@ -3,7 +3,6 @@ title: Handling an IRP_MN_QUERY_STOP_DEVICE Request (Windows 2000 and later)
 description: Handling an IRP_MN_QUERY_STOP_DEVICE Request (Windows 2000 and later)
 keywords: ["IRP_MN_QUERY_STOP_DEVICE"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling an IRP\_MN\_QUERY\_STOP\_DEVICE Request (Windows 2000 and later)
@@ -75,7 +74,7 @@ In response to an **IRP\_MN\_QUERY\_STOP\_DEVICE**, a driver must do the followi
 
     -   Set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
-    -   Set up the next stack location with [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) and pass the IRP to the next lower driver with [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
+    -   Set up the next stack location with [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) and pass the IRP to the next lower driver with [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
     -   Propagate the status from **IoCallDriver** as the return status from the *DispatchPnP* routine.
 

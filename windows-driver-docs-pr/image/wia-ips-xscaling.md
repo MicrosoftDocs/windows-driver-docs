@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_XSCALING
@@ -25,8 +24,7 @@ Valid Values: WIA\_PROP\_RANGE or WIA\_PROP\_LIST
 
 Access Rights: Read/write or read-only
 
-Remarks
--------
+## Remarks
 
 Valid values for the WIA\_IPS\_XSCALING property range from 1 through 65535.
 
@@ -40,8 +38,7 @@ Consider the following examples:
 
 -   200, 2x scaling (200%). The image size is enlarged along the x-axis by 200% (double).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

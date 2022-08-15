@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_USSD notification to impl
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WWAN_USSD Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_USSD
@@ -14,8 +13,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_USSD notification to implement the 
 
 Miniport drivers can also send unsolicited events with this notification using the [NDIS\_WWAN\_USSD\_EVENT](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_ussd_event) structure to describe the nature of the USSD event.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

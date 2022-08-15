@@ -1,8 +1,7 @@
 ---
 title: Device management namespace objects
 description: The ACPI 5.0 specification defines several types of namespace objects that can be used to manage devices.
-ms.date: 06/26/2018
-ms.localizationpriority: medium
+ms.date: 08/18/2021
 ---
 
 # Device management namespace objects
@@ -29,51 +28,51 @@ Device identifiers should be used for INF matching only, and should never be par
 
 ## Device identification in ACPI
 
-### Hardware ID (\_HID)
+### Hardware ID (_HID)
 
-The minimum requirement for identifying a device in ACPI is the Hardware ID (\_HID) object. \_HID returns a string with the format of "ABC\[D\]*xxxx*", where "ABC\[D\]" is a 3- or 4-character string that identifies the manufacturer of the device (the "Vendor ID"), and *xxxx* is a hexadecimal number that identifies the specific device manufactured by that vendor (the "Device ID"). Vendor IDs must be unique across the industry. Microsoft allocates these strings to ensure that they are unique. Vendor IDs can be obtained from [Plug and Play ID - PNPID Request](../install/plug-and-play-id---pnpid-request.md).
+The minimum requirement for identifying a device in ACPI is the Hardware ID (_HID) object. \_HID returns a string with the format of "ABC\[D\]*xxxx*", where "ABC\[D\]" is a 3- or 4-character string that identifies the manufacturer of the device (the "Vendor ID"), and *xxxx* is a hexadecimal number that identifies the specific device manufactured by that vendor (the "Device ID"). Vendor IDs must be unique across the industry. Microsoft allocates these strings to ensure that they are unique. Vendor IDs can be obtained from [Plug and Play ID - PNPID Request](../install/plug-and-play-id---pnpid-request.md).
 
 > [!NOTE]
-> ACPI 5.0 also supports the use of PCI-assigned vendor IDs in \_HID and other identification objects, so you might not need to get a vendor ID from Microsoft. For more information about hardware identification requirements, see section 6.1.5, "\_HID (Hardware ID)", of the [ACPI 5.0 specification](https://uefi.org/specifications).
+> ACPI 5.0 also supports the use of PCI-assigned vendor IDs in _HID and other identification objects, so you might not need to get a vendor ID from Microsoft. For more information about hardware identification requirements, see section 6.1.5, "\_HID (Hardware ID)", of the [ACPI 5.0 specification](https://uefi.org/specifications).
 
-### Compatible ID (\_CID)
+### Compatible ID (_CID)
 
-Microsoft has reserved the vendor ID "PNP" for devices that are compatible with inbox drivers shipped with Windows. Windows defines a number of device IDs for use with this vendor ID that can be used to load the Windows-provided driver for a device. A separate object, the Compatible ID (\_CID) object, is used to return these identifiers. Windows always prefers Hardware IDs (returned by \_HID) over Compatible IDs (returned by \_CID) in INF matching and driver selection. This preference allows the Windows-provided driver to be treated as a default driver if a vendor-provided device-specific driver is not available. The Compatible IDs in the following table are newly created for use with SoC platforms.
+Microsoft has reserved the vendor ID "PNP" for devices that are compatible with inbox drivers shipped with Windows. Windows defines a number of device IDs for use with this vendor ID that can be used to load the Windows-provided driver for a device. A separate object, the Compatible ID (_CID) object, is used to return these identifiers. Windows always prefers Hardware IDs (returned by \_HID) over Compatible IDs (returned by \_CID) in INF matching and driver selection. This preference allows the Windows-provided driver to be treated as a default driver if a vendor-provided device-specific driver is not available. The Compatible IDs in the following table are newly created for use with SoC platforms.
 
 | Compatible ID | Description |
-| --- | --- |
-| PNP0C40  | Windows-compatible button array |
-| PNP0C50  | HID-over-I²C compliant device |
-| PNP0C60  | Convertible laptop display sensor device |
-| PNP0C70  | Dock sensor device  |
-| PNP0D10  | XHCI-compliant USB controller with standard debug |
-| PNP0D15  | XHCI-compliant USB controller without standard debug |
-| PNP0D20  | EHCI-compliant USB controller without standard debug |
-| PNP0D25  | EHCI-compliant USB controller with standard debug |
-| PNP0D40  | SDA standard-compliant SD host controller |
-| PNP0D80  | Windows-compatible system power management controller |
+|--|--|
+| PNP0C40 | Windows-compatible button array |
+| PNP0C50 | HID-over-I<sup>2</sup>C compliant device |
+| PNP0C60 | Convertible laptop display sensor device |
+| PNP0C70 | Dock sensor device |
+| PNP0D10 | XHCI-compliant USB controller with standard debug |
+| PNP0D15 | XHCI-compliant USB controller without standard debug |
+| PNP0D20 | EHCI-compliant USB controller without standard debug |
+| PNP0D25 | EHCI-compliant USB controller with standard debug |
+| PNP0D40 | SDA standard-compliant SD host controller |
+| PNP0D80 | Windows-compatible system power management controller |
 
-### Subsystem ID (\_SUB), Hardware Revision (\_HRV), and Class (\_CLS)
+### Subsystem ID (_SUB), Hardware Revision (_HRV), and Class (_CLS)
 
-ACPI 5.0 defines the \_SUB, \_HRV, and \_CLS objects that can be used along with the \_HID to create identifiers that more uniquely identify a specific version, integration, or hardware revision of a device, or to indicate membership in a PCI-defined device class. These objects are generally optional, but might be required by certain device classes in Windows. For more information about these objects, see section 6.1, "Device Identification Objects", of the [ACPI 5.0 specification](https://uefi.org/specifications).
+ACPI 5.0 defines the _SUB, \_HRV, and \_CLS objects that can be used along with the \_HID to create identifiers that more uniquely identify a specific version, integration, or hardware revision of a device, or to indicate membership in a PCI-defined device class. These objects are generally optional, but might be required by certain device classes in Windows. For more information about these objects, see section 6.1, "Device Identification Objects", of the [ACPI 5.0 specification](https://uefi.org/specifications).
 
-For serviceability, there is a Windows Hardware Certification Kit (HCK) requirement that device IDs on OEM systems be "four-part" IDs. The four parts are the vendor ID, the device ID, the subsystem vendor (OEM) ID, and the subsystem (OEM) device ID. Therefore, the Subsystem ID (\_SUB) object is required for OEM platforms.
+For serviceability, there is a Windows Hardware Certification Kit (HCK) requirement that device IDs on OEM systems be "four-part" IDs. The four parts are the vendor ID, the device ID, the subsystem vendor (OEM) ID, and the subsystem (OEM) device ID. Therefore, the Subsystem ID (_SUB) object is required for OEM platforms.
 
-### Device-Specific Method (\_DSM)
+### Device-Specific Method (_DSM)
 
-The \_DSM method is defined in section 9.14.1, "\_DSM (Device Specific Method)", of the [ACPI 5.0 specification](https://uefi.org/specifications). This method provides for individual, device-specific data and control functions that can be called by a device driver without conflicting with other such device-specific methods. The \_DSM for a particular device or device class defines a UUID (GUID) that is guaranteed not to clash with other UUIDs. For each UUID, there is a set of defined functions that the \_DSM method can implement to provide data or to perform control functions for the driver. Class-specific data and data formats are provided in separate device-class-specific specifications, and are also discussed in [ACPI Device-Specific Methods](acpi-device-specific-methods.md).
+The _DSM method is defined in section 9.14.1, "\_DSM (Device Specific Method)", of the [ACPI 5.0 specification](https://uefi.org/specifications). This method provides for individual, device-specific data and control functions that can be called by a device driver without conflicting with other such device-specific methods. The \_DSM for a particular device or device class defines a UUID (GUID) that is guaranteed not to clash with other UUIDs. For each UUID, there is a set of defined functions that the \_DSM method can implement to provide data or to perform control functions for the driver. Class-specific data and data formats are provided in separate device-class-specific specifications, and are also discussed in [ACPI Device-Specific Methods](acpi-device-specific-methods.md).
 
-### Address (\_ADR) and Unique ID (\_UID)
+### Address (_ADR) and Unique ID (_UID)
 
 There are three additional requirements for device identification:
 
-- For devices that connect to a hardware-enumerable parent bus (for example, SDIO, USB HSIC), but that have platform-specific features or controls (for example, sideband power or wake interrupt), the \_HID is not used. Instead, the device identifier is created by the parent bus driver (as discussed previously). In this case, though, the Address Object (\_ADR) is required to be in the ACPI namespace for the device. This object enables the operating system to associate the bus-enumerated device with its ACPI-described features or controls.
-- On platforms where multiple instances of a particular IP block are used, so that each block has the same device identification objects, the Unique Identifier (\_UID) object is necessary to enable the operating system to distinguish between blocks.
+- For devices that connect to a hardware-enumerable parent bus (for example, SDIO, USB HSIC), but that have platform-specific features or controls (for example, sideband power or wake interrupt), the _HID is not used. Instead, the device identifier is created by the parent bus driver (as discussed previously). In this case, though, the Address Object (\_ADR) is required to be in the ACPI namespace for the device. This object enables the operating system to associate the bus-enumerated device with its ACPI-described features or controls.
+- On platforms where multiple instances of a particular IP block are used, so that each block has the same device identification objects, the Unique Identifier (_UID) object is necessary to enable the operating system to distinguish between blocks.
 - No two devices in a particular namespace scope can have the same name.
 
 ## Device configuration objects
 
-For each device identified in the namespace, the system resources (memory addresses, interrupts, and so on) consumed by the device must also be reported by the Current Resource Settings (\_CRS) object. Reporting of multiple possible resource configurations (\_PRS) and controls for changing a device's resource configuration (\_SRS) are supported but optional.
+For each device identified in the namespace, the system resources (memory addresses, interrupts, and so on) consumed by the device must also be reported by the Current Resource Settings (_CRS) object. Reporting of multiple possible resource configurations (\_PRS) and controls for changing a device's resource configuration (\_SRS) are supported but optional.
 
 New for SoC platforms are GPIO and simple peripheral bus (SPB) resources that a device can consume. For more information, see [General Purpose I/O (GPIO)](general-purpose-i-o--gpio-.md) and [Simple Peripheral Bus (SPB)](simple-peripheral-bus--spb-.md).
 
@@ -81,9 +80,9 @@ Also new for SoC platforms is a general-purpose fixed DMA descriptor. The FixedD
 
 ### Device status changes
 
-ACPI-enumerated devices can be disabled or removed for a variety of reasons. The Status (\_STA) object is provided to enable such status changes to be communicated to the operating system. For a description of \_STA, see section 6.3.7 of the [ACPI 5.0 specification](https://uefi.org/specifications). Windows uses \_STA to determine if the device should be enumerated, shown as disabled, or not visible to the user. This control in the firmware is useful for many applications, including docking and USB OTG host-to-function switching.
+ACPI-enumerated devices can be disabled or removed for a variety of reasons. The Status (_STA) object is provided to enable such status changes to be communicated to the operating system. For a description of \_STA, see section 6.3.7 of the [ACPI 5.0 specification](https://uefi.org/specifications). Windows uses \_STA to determine if the device should be enumerated, shown as disabled, or not visible to the user. This control in the firmware is useful for many applications, including docking and USB OTG host-to-function switching.
 
-Additionally, ACPI provides a notification mechanism that ASL can use to notify drivers of events in the platform, such as a device being removed as part of a dock. In general, when an ACPI device's status changes, the firmware must perform a "device check" or "bus check" notification to cause Windows to re-enumerate the device and re-evaluate its \_STA. For information about ACPI notifications, see section 5.6.6, "Device Object Notifications", of the [ACPI 5.0 specification](https://uefi.org/specifications).
+Additionally, ACPI provides a notification mechanism that ASL can use to notify drivers of events in the platform, such as a device being removed as part of a dock. In general, when an ACPI device's status changes, the firmware must perform a "device check" or "bus check" notification to cause Windows to re-enumerate the device and re-evaluate its _STA. For information about ACPI notifications, see section 5.6.6, "Device Object Notifications", of the [ACPI 5.0 specification](https://uefi.org/specifications).
 
 ## Enable/disable
 
@@ -91,12 +90,12 @@ As part of Windows Plug and Play, drivers must be capable of being dynamically e
 
 On-SoC devices are integrated into the SoC chip and cannot be removed. Drivers for most on-SoC devices can be exempted from the requirements for enable and disable. For those drivers that are not exempt, there are driver interfaces for indicating that the driver supports orderly removal. For more information, see the document titled "Reducing PNP Requirements for SoC Drivers" on the [Microsoft Connect web site](/collaborate/connect-redirect?DownloadID=47560).
 
-If a driver supports orderly removal, and the device hardware can be disabled (that is, the device can be configured to stop accessing its assigned resources), then the ACPI namespace node for the device can include the Disable (\_DIS ) object. This method will be evaluated by the operating system whenever the driver is removed. Use of \_DIS has the following additional requirements:
+If a driver supports orderly removal, and the device hardware can be disabled (that is, the device can be configured to stop accessing its assigned resources), then the ACPI namespace node for the device can include the Disable (_DIS ) object. This method will be evaluated by the operating system whenever the driver is removed. Use of \_DIS has the following additional requirements:
 
-- \_STA must clear the "enabled and decoding its resources" bit whenever the device is disabled.
+- _STA must clear the "enabled and decoding its resources" bit whenever the device is disabled.
 - The device must provide the Set Resource Settings (\_SRS) object to re-enable the device hardware and set the above bit in \_STA.
 
-For more information, see sections 6.2.3 (\_DIS), 6.2.15 (\_SRS), and 6.3.7 (\_STA) of the [ACPI 5.0 specification](https://uefi.org/specifications).
+For more information, see sections 6.2.3 (_DIS), 6.2.15 (\_SRS), and 6.3.7 (\_STA) of the [ACPI 5.0 specification](https://uefi.org/specifications).
 
 ## Device dependencies
 
@@ -104,9 +103,9 @@ Typically, there are hardware dependencies between devices on a particular platf
 
 1. **Namespace hierarchy**. Any device that is a child device (listed as a device within the namespace of another device) is dependent on the parent device. For example, a USB HSIC device is dependent on the port (parent) and controller (grandparent) it is connected to. Similarly, a GPU device listed within the namespace of a system memory-management unit (MMU) device is dependent on the MMU device.
 
-1. **Resource connections**. Devices connected to GPIO or SPB controllers are dependent on those controllers. This type of dependency is described by the inclusion of Connection Resources in the device's \_CRS.
+1. **Resource connections**. Devices connected to GPIO or SPB controllers are dependent on those controllers. This type of dependency is described by the inclusion of Connection Resources in the device's _CRS.
 
-1. **OpRegion dependencies**. For ASL control methods that use OpRegions to perform I/O, dependencies are not implicitly known by the operating system because they are only determined during control method evaluation. This issue is particularly applicable to GeneralPurposeIO and GenericSerialBus OpRegions in which Plug and Play drivers provide access to the region. To mitigate this issue, ACPI defines the OpRegion Dependency (\_DEP) object. \_DEP should be used in any device namespace in which an OpRegion (HW resource) is referenced by a control method, and neither 1 nor 2 above already applies for the referenced OpRegion's connection resource. For more information, see section 6.5.8, "\_DEP (Operation Region Dependencies)", of the [ACPI 5.0 specification](https://uefi.org/specifications).
+1. **OpRegion dependencies**. For ASL control methods that use OpRegions to perform I/O, dependencies are not implicitly known by the operating system because they are only determined during control method evaluation. This issue is particularly applicable to GeneralPurposeIO and GenericSerialBus OpRegions in which Plug and Play drivers provide access to the region. To mitigate this issue, ACPI defines the OpRegion Dependency (_DEP) object. \_DEP should be used in any device namespace in which an OpRegion (HW resource) is referenced by a control method, and neither 1 nor 2 above already applies for the referenced OpRegion's connection resource. For more information, see section 6.5.8, "\_DEP (Operation Region Dependencies)", of the [ACPI 5.0 specification](https://uefi.org/specifications).
 
 There can also be software dependencies between device drivers. These dependencies must also be described.
 
@@ -116,9 +115,9 @@ For more information, see the following resources:
 
 - For power-relations dependencies, see:
 
-  - [IoInvalidateDeviceRelations](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations) (To trigger establishing power relations, call the **IoInvalidateDeviceRelations** routine with the **DEVICE\_RELATION\_TYPE** enum value **PowerRelations**.)
+  - [IoInvalidateDeviceRelations](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations) (To trigger establishing power relations, call the **IoInvalidateDeviceRelations** routine with the **DEVICE_RELATION_TYPE** enum value **PowerRelations**.)
   
-  - [IRP\_MN\_QUERY\_DEVICE\_RELATIONS](../kernel/irp-mn-query-device-relations.md)
+  - [IRP_MN_QUERY_DEVICE_RELATIONS](../kernel/irp-mn-query-device-relations.md)
 
   - [WdfDeviceInitSetPnpPowerEventCallbacks](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks)
 

@@ -9,7 +9,6 @@ keywords:
 - NDIS miniport drivers WDK , pool handles
 - intermediate drivers WDK networking , po
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Obtaining Pool Handles
@@ -20,9 +19,9 @@ ms.localizationpriority: medium
 
 The following NDIS pool allocation functions require a handle to allocate resources:
 
--   [**NdisAllocateNetBufferPool**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatenetbufferpool)
+-   [**NdisAllocateNetBufferPool**](/windows-hardware/drivers/ddi/nblapi/nf-nblapi-ndisallocatenetbufferpool)
 
--   [**NdisAllocateNetBufferListPool**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatenetbufferlistpool)
+-   [**NdisAllocateNetBufferListPool**](/windows-hardware/drivers/ddi/nblapi/nf-nblapi-ndisallocatenetbufferlistpool)
 
 NDIS 6.0 drivers obtain a handle as follows:
 

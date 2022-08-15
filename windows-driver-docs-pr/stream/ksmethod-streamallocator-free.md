@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSMETHOD\_STREAMALLOCATOR\_FREE
@@ -19,8 +18,7 @@ The **KSMETHOD\_STREAMALLOCATOR\_FREE** method is used by a client to free a fra
 
 For example, a kernel-mode client could use the following sample code to free a frame:
 
-Remarks
--------
+## Remarks
 
 ```cpp
 Method.Identifier.Set = KSMETHODSETID_StreamAllocator;

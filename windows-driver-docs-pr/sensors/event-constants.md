@@ -13,7 +13,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # Event Constants
@@ -44,8 +43,7 @@ The sensor platform defines the following **PROPERTYKEY**s to identify the param
 
  
 
-Requirements
-------------
+## Requirements
 
 **Minimum supported client**: Windows 7
 

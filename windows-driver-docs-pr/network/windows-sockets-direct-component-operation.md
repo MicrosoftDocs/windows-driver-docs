@@ -5,7 +5,6 @@ keywords:
 - Windows Sockets Direct WDK , operations
 - SAN service providers WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows Sockets Direct Component Operation Topics

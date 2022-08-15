@@ -9,7 +9,6 @@ api_name:
 - .tss (Display Task State Segment)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .tss (Display Task State Segment)
@@ -52,8 +51,7 @@ Address of the TSS.
 
  
 
-Remarks
--------
+## Remarks
 
 The address of the TSS can be found by examining the output of the [**!pcr**](-pcr.md) extension.
 

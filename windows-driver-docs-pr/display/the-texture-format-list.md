@@ -6,7 +6,6 @@ keywords:
 - texture format lists WDK DirectX 8.0
 - DPIXELFORMAT
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # The Texture Format List

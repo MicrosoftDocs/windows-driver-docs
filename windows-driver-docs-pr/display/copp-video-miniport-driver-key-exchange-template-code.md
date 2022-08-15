@@ -4,7 +4,6 @@ description: COPP Video Miniport Driver Key Exchange Template Code
 keywords:
 - key exchange WDK COPP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # COPP Video Miniport Driver Key Exchange Template Code

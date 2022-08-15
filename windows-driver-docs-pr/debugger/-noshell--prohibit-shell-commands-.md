@@ -9,7 +9,6 @@ api_name:
 - .noshell (Prohibit Shell Commands)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .noshell (Prohibit Shell Commands)
@@ -53,8 +52,7 @@ The **.noshell** command prevents you from using [**.shell**](-shell--command-sh
 
 For more information about the command shell and for other ways to disable shell commands, see [Using Shell Commands](using-shell-commands.md).
 
-Remarks
--------
+## Remarks
 
 If you use the **.noshell** command, you cannot use [**.shell (Command Shell)**](-shell--command-shell-.md) commands as long as the debugger is running, even if you start a new debugging session.
 

@@ -9,7 +9,6 @@ api_name:
 - MICROCODE_REVISION_MISMATCH
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x17E: MICROCODE\_REVISION\_MISMATCH
@@ -32,12 +31,10 @@ The MICROCODE\_REVISION\_MISMATCH bug check has a value of 0x0000017E. It indica
 
 
 ## Cause
------
 One or more processors in the multiprocessor configuration have inconsistent microcode loaded. 
 This bugcheck indicates that faulty system firmware has mistakenly applied a microcode update to only a subset of processors in the host configuration. System firmware must apply microcode updates to all processors in a uniform fashion. 
 
 ## See Also
-----------
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

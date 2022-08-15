@@ -17,15 +17,13 @@ api_location:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ISNMP::Open method
 
 The `Open` method enables an ASP Web page to create a communication path to a specified SNMP agent.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT Open(
@@ -36,8 +34,7 @@ HRESULT Open(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrHost* \[in\]  
 Caller-supplied pointer to a string identifying the SNMP agent system. This can be either a dotted-decimal IP address or a host name that can be resolved to an IP address, an IPX address (in 8.12 notation), or an ethernet address.
@@ -51,8 +48,7 @@ Optional, caller-supplied retry value. If not specified, a default value is used
 *varTimeout* \[in\]  
 Optional, caller-supplied time-out value, in milliseconds. If not specified, a default value is used. The recommended value is 1000.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -97,8 +93,7 @@ Set objSNMP = Server.CreateObject("OlePrn.OleSNMP")
 objSNMP.Open strIP, strCommunity, 2, 1000
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

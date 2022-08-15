@@ -1,11 +1,10 @@
 ---
-title: C28129
+title: C28129 warning
 description: Warning C28129 An assignment has been made to an operand, which should only be modified using bit sets and clears.
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28129"
 ---

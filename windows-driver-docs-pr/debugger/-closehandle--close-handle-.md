@@ -9,7 +9,6 @@ api_name:
 - .closehandle (Close Handle)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .closehandle (Close Handle)
@@ -56,8 +55,7 @@ Causes all handles owned by the target application to be closed.
 
  
 
-Remarks
--------
+## Remarks
 
 You can use the [**!handle**](-handle.md) extension to display the existing handles.
 

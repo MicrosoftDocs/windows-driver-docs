@@ -2,7 +2,6 @@
 description: How to run stress and transfer and Super MUTT performance tests.
 title: How to run stress and transfer performance tests for MUTT devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to run stress and transfer performance tests for MUTT devices

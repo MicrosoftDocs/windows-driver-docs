@@ -9,11 +9,10 @@ api_name:
 - BCDEdit /enum
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
-BCDEdit /enum
-============
+# BCDEdit /enum
+
 
 The **BCDEdit /enum** command lists entries in Boot Configuration Data (BCD) store. The /enum command is the default,
 so running "bcdedit" without parameters is equivalent to running "bcdedit /enum ACTIVE".
@@ -33,7 +32,7 @@ Specifies the store to be used. If this option is not specified, the system stor
 
 **\<type\>**
 
-Specifies the type of entries to be listed. <type> can be one of the following:
+Specifies the type of entries to be listed. Can be one of the following:
 
 *ACTIVE* - All entries in the boot manager display order. This is the default.
 

@@ -1,6 +1,6 @@
 ---
-title: WIA\_DPS\_DEVICE\_ID
-description: The WIA\_DPS\_DEVICE\_ID property contains a unique Function Instance identifier for a web services scanner device.
+title: WIA_DPS_DEVICE_ID
+description: The WIA_DPS_DEVICE_ID property contains a unique Function Instance identifier for a web services scanner device.
 keywords: ["WIA_DPS_DEVICE_ID Imaging Devices"]
 topic_type:
 - apiref
@@ -10,57 +10,31 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 09/30/2021
 ---
 
-# WIA\_DPS\_DEVICE\_ID
+# WIA_DPS_DEVICE_ID
 
+The WIA_DPS_DEVICE_ID property contains a unique Function Instance identifier for a web services scanner device. This identifier represents the web service on the scanner device with which the WIA minidriver is communicating. No assumptions about the form of this identifier should be made. The WIA minidriver creates and maintains this property.
 
-The WIA\_DPS\_DEVICE\_ID property contains a unique Function Instance identifier for a web services scanner device. This identifier represents the web service on the scanner device with which the WIA minidriver is communicating. No assumptions about the form of this identifier should be made. The WIA minidriver creates and maintains this property.
+WIA applications can use the value of WIA_DPS_DEVICE_ID to find, using the Function Discovery API, the Function Instance object that represents the web services scanner device used in the current WIA session.
 
-WIA applications can use the value of WIA\_DPS\_DEVICE\_ID to find, using the Function Discovery API, the Function Instance object that represents the web services scanner device used in the current WIA session.
+Property Type: VT_BSTR
 
-Property Type: VT\_BSTR
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
-Remarks
--------
+## Remarks
 
-The WIA minidriver initializes this property at run time by reading the PKEY\_PNPX\_ID device property from the Function Instance object.
+The WIA minidriver initializes this property at run time by reading the PKEY_PNPX_ID device property from the Function Instance object.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
+[**WIA_DPS_GLOBAL_IDENTITY**](wia-dps-global-identity.md)
 
-[**WIA\_DPS\_GLOBAL\_IDENTITY**](wia-dps-global-identity.md)
-
-[**WIA\_DPS\_SERVICE\_ID**](wia-dps-service-id.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_DPS_SERVICE_ID**](wia-dps-service-id.md)

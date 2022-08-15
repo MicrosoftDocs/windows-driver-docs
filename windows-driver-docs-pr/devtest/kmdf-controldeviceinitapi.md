@@ -9,7 +9,6 @@ api_name:
 - ControlDeviceInitAPI
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ControlDeviceInitAPI rule (kmdf)
@@ -19,8 +18,7 @@ The ControlDeviceInitAPI rule specifies that [**WdfControlDeviceInitAllocate**](
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfControlDeviceInitAllocate**](/windows-hardware/drivers/ddi/wdfcontrol/nf-wdfcontrol-wdfcontroldeviceinitallocate)
 [**WdfControlDeviceInitSetShutdownNotification**](/windows-hardware/drivers/ddi/wdfcontrol/nf-wdfcontrol-wdfcontroldeviceinitsetshutdownnotification)

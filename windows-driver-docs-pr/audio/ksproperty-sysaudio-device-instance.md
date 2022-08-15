@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_SYSAUDIO\_DEVICE\_INSTANCE
@@ -46,7 +45,7 @@ The KSPROPERTY\_SYSAUDIO\_DEVICE\_INSTANCE property specifies the current instan
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -60,8 +59,7 @@ The property value (operation data) is of type ULONG and specifies the device ID
 
 A KSPROPERTY\_SYSAUDIO\_DEVICE\_INSTANCE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 A KSPROPERTY\_SYSAUDIO\_DEVICE\_INSTANCE set-property request opens the virtual audio device specified by the device ID contained in the property value. The last device to be opened is referred to as the current device.
 
@@ -69,8 +67,7 @@ Some SysAudio properties allow the current device to be identified by a null dev
 
 A get-property request retrieves the device ID of the current (last opened) virtual audio device.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -88,11 +85,10 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](../stream/ksproperty-structure.md)
 
 [**KSPROPERTY\_SYSAUDIO\_DEVICE\_COUNT**](ksproperty-sysaudio-device-count.md)
 
 [**KSPROPERTY\_SYSAUDIO\_DEVICE\_INTERFACE\_NAME**](ksproperty-sysaudio-device-interface-name.md)
 
 [**KSPROPERTY\_SYSAUDIO\_DEVICE\_FRIENDLY\_NAME**](ksproperty-sysaudio-device-friendly-name.md)
-

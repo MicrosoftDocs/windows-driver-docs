@@ -10,7 +10,6 @@ api_name:
 api_type:
 - NA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DevCon Disable
@@ -87,6 +86,6 @@ devcon /r disable =printer
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 30: Disable devices by an ID pattern](devcon-examples.md#ddk_example_30_disable_devices_by_an_id_pattern_tools)
+[Example 30: Disable devices by an ID pattern](devcon-examples.md#example-30-disable-devices-by-an-id-pattern)
 
-[Example 31: Disable devices by device instance ID](devcon-examples.md#ddk_example_31_disable_devices_by_device_instance_id_tools)
+[Example 31: Disable devices by device instance ID](devcon-examples.md#example-31-disable-devices-by-device-instance-id)

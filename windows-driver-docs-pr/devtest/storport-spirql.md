@@ -9,7 +9,6 @@ api_name:
 - SpIrql
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # SpIrql rule (storport)
@@ -19,8 +18,7 @@ This rule verifies that the routines **TdiRegisterPnPHandlers** and **TdiDeregis
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +43,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**ExFreeToNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreetonpagedlookasidelist)

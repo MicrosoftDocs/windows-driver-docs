@@ -9,7 +9,6 @@ api_name:
 api_type:
 - NA
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # EXT\_TDOP\_OUTPUT\_FULL\_VALUE
@@ -28,8 +27,7 @@ Specifies the typed data whose type name and value will be printed.
 <span id="Status"></span><span id="status"></span><span id="STATUS"></span>**Status**  
 Receives the status code returned by this sub-operation. This is the same as the value returned by [**Request**](request.md).
 
-Remarks
--------
+## Remarks
 
 The type name and formatted value are sent to the debugger engine's [output callbacks](./using-input-and-output.md#output-callbacks). EXT\_TDOP\_OUTPUT\_FULL\_VALUE prints more detailed information about the value than [**EXT\_TDOP\_OUTPUT\_SIMPLE\_VALUE**](ext-tdop-output-simple-value.md). For example, pointers are dereferenced and the values they point to are also printed.
 

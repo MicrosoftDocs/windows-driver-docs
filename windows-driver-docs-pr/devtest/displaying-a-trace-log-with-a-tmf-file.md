@@ -5,7 +5,6 @@ keywords:
 - trace message format files WDK
 - TMF files WDK , displaying trace logs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Displaying a Trace Log with a TMF File

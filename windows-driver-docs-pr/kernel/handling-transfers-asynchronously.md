@@ -3,7 +3,6 @@ title: Handling Transfers Asynchronously
 description: Handling Transfers Asynchronously
 keywords: ["DispatchRead routine", "DispatchWrite routine", "DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchWrite routine", "dispatch routines WDK kernel , DispatchRead routine", "read/write dispatch routines WDK kernel", "IRP_MJ_WRITE I/O function codes", "IRP_MJ_READ I/O function codes", "data transfers WDK kernel , read/write dispatch routines", "transferring data WDK kernel , read/write dispatch routines", "asynchronous transfers WDK kernel", "data transfers WDK kernel , asynchronous", "transferring data WDK kernel , asynchronous"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Handling Transfers Asynchronously

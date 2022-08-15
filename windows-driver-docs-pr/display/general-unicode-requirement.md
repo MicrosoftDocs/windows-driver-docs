@@ -2,7 +2,6 @@
 title: General Unicode requirement in INF files
 description: INF files should be saved and encoded as Unicode; they must not be ANSI.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # General Unicode requirement in INF files
@@ -18,11 +17,11 @@ INF files should be saved and encoded as Unicode (UTF-16); they must not be ANSI
 
 This figure shows the **Save As** dialog box for a file that has ANSI encoding:
 
-![save as dialog box that has ansi encoding](images/saveasdialogansi.jpg)
+![save as dialog box that has ansi encoding.](images/saveasdialogansi.jpg)
 
 The proper default value is shown in this figure:
 
-![save as dialog box that has unicode encoding](images/saveasdialogunicode.jpg)
+![save as dialog box that has unicode encoding.](images/saveasdialogunicode.jpg)
 
  
 

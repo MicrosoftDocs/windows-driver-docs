@@ -2,7 +2,6 @@
 title: Overview of the Hyper-V Extensible Switch Data Path
 description: Overview of the Hyper-V Extensible Switch Data Path
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of the Hyper-V Extensible Switch Data Path

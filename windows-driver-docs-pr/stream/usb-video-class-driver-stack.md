@@ -6,7 +6,6 @@ keywords:
 - Video Class drivers WDK USB , about USB Video Class driver stack
 - UVC drivers WDK AVStream , about USB Video Class driver stack
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # USB Video Class Driver Stack
@@ -18,7 +17,7 @@ Optionally, vendors can extend the USB Video Class driver to add device-specific
 
 The USB Video Class driver stack is shown in the following diagram:
 
-![diagram illustrating the usb video class driver stack ](images/uvc2.png)
+![diagram illustrating the usb video class driver stack .](images/uvc2.png)
 
  
 

@@ -10,7 +10,6 @@ api_location:
 - Ks.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,8 +43,7 @@ The KSCATEGORY_DATADECOMPRESSOR [device interface class](./overview-of-device-in
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_DATADECOMPRESSOR to indicate to the operating system that the devices support the KSCATEGORY_DATADECOMPRESSOR functional category.
 
@@ -53,8 +51,7 @@ The KSCATEGORY_DATADECOMPRESSOR functional category is one of the [**KSPROPERTY_
 
 For information about the device interface class that is defined for the KS functional category that compresses a data stream, see [**KSCATEGORY_DATACOMPRESSOR**](kscategory-datacompressor.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

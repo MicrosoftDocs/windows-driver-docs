@@ -3,8 +3,7 @@ title: Certificate Stores
 description: Certificate Stores
 keywords:
 - certificate stores WDK
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 08/05/2021
 ---
 
 # Certificate Stores
@@ -21,10 +20,6 @@ This section includes the following topics:
 [Trusted Publishers Certificate Store](trusted-publishers-certificate-store.md)
 
  
-
- 
-
-
-
+For info on viewing certificates, see [How to: View certificates with the MMC snap-in](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
 
 

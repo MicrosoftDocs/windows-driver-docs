@@ -2,7 +2,6 @@
 title: 'REMOTE_NDIS_QUERY_MSG'
 description: 'This message is sent to a Remote NDIS device from a host when it needs to query the device for its characteristics, statistics information, or status.'
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # REMOTE\_NDIS\_QUERY\_MSG
@@ -73,8 +72,7 @@ This message is sent to a Remote NDIS device from a host when it needs to query 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -9,7 +9,6 @@ api_name:
 - usb3kd.hub_info_from_fdo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usb3kd.hub\_info\_from\_fdo
@@ -32,8 +31,7 @@ Address of the functional device object (FDO) that represents the hub.
 
 Usb3kd.dll
 
-Examples
---------
+## Examples
 
 You can get the address of the FDO from the output of [**!usb\_tree**](-usb3kd-usb-tree.md) or from a variety of other debugger commands. For example, the [**!devstack**](-devstack.md) command displays the address of the FDO. In the following example, the address of the FDO is fffffa800597a660.
 

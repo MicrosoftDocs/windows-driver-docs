@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # FLT\_PARAMETERS for IRP\_MJ\_VOLUME\_MOUNT union
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The following union component is used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is IRP\_MJ\_VOLUME\_MOUNT.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef union _FLT_PARAMETERS {
@@ -32,8 +30,7 @@ typedef union _FLT_PARAMETERS {
 } FLT_PARAMETERS, *PFLT_PARAMETERS;
 ```
 
-Members
--------
+## Members
 
 **MountVolume**  
 Structure containing the following members.
@@ -47,15 +44,13 @@ FILE\_DEVICE\_DISK\_FILE\_SYSTEM
 
 FILE\_DEVICE\_NETWORK\_FILE\_SYSTEM
 
-Remarks
--------
+## Remarks
 
 The [**FLT\_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP\_MJ\_VOLUME\_MOUNT operations contains the parameters for a volume-mount operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT\_IO\_PARAMETER\_BLOCK structure.
 
 IRP\_MJ\_VOLUME\_MOUNT is a fast I/O operation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

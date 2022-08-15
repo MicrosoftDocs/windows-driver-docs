@@ -9,7 +9,6 @@ api_name:
 - LOADER_BLOCK_MISMATCH
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x100: LOADER\_BLOCK\_MISMATCH

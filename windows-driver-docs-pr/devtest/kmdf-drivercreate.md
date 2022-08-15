@@ -9,7 +9,6 @@ api_name:
 - DriverCreate
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DriverCreate rule (kmdf)
@@ -19,8 +18,7 @@ The **DriverCreate** rule specifies that a driver that uses Kernel Mode Driver F
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent)
 [**WdfChildListBeginIteration**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistbeginiteration)

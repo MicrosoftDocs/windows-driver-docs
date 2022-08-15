@@ -9,7 +9,6 @@ api_name:
 - IoBuildFsdIrpSignalEventInCompletion3
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoBuildFsdIrpSignalEventInCompletion3 rule (wdm)
@@ -21,8 +20,7 @@ In this case the completion routine will not be called.
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoSetCompletionRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine)
 [**IoSetCompletionRoutineEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutineex)

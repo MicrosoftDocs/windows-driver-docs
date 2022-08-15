@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_DEV\_SPECIFIC
@@ -62,8 +61,7 @@ Whether the property supports get- or set-property requests is also device-speci
 
 This property returns either STATUS\_SUCCESS or a device specific value determined by the third-party provider of the audio driver.
 
-Remarks
--------
+## Remarks
 
 In Windows Vista and later versions of Windows, an additional tab (labeled **Custom**) is provided in the **Sound** applet in **Control Panel**. The **Custom** tab displays controls for automatic gain control (AGC) and device-specific properties. The following table shows the controls that are exposed in the **Sound** applet for the various `KSPROPERTY_AUDIO_DEV_SPECIFIC` property and data type combinations.
 
@@ -112,8 +110,7 @@ To see the **Custom** tab, select an audio render or capture device in the **Sou
 
 For an example of how to implement a property handler for the `KSPROPERTY_AUDIO_DEV_SPECIFIC` property, see the **CMiniportTopologyMSVAD::PropertyHandlerDevSpecific** method in the Basetopo.cpp file.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

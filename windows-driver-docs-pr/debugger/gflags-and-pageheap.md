@@ -3,7 +3,6 @@ title: GFlags and PageHeap
 description: GFlags and PageHeap
 keywords: ["GFlags, GFlags and PageHeap", "PageHeap (pageheap.exe)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # GFlags and PageHeap
@@ -23,6 +22,10 @@ The page heap options in GFlags let you select *standard heap verification*, whi
 -   To enable full page heap verification for one process, use **gflags /i** *ImageFileName* **+hpa** or **gflags /p /enable** *ImageFileName* **/full**.
 
 All page heap settings, except for **/k**, are stored in the registry and remain effective until you change them.
+
+Note that PageHeap functionality is only active if PageHeap verification was enabled before the image was launched. For long running processes, such as W3WP for IIS in a production environment, this means that verification will not begin until the process has been restarted. Similarly, if PageHeap is disabled while the process is running, verification will continue until the process is restarted. Issuing the same GFlags command repeatedly, while the process is running or not, has no additional effect. As an implication of this, enabling PageHeap using the GFlags command is idempotent.
+
+PageHeap configurations are also persistent across terminations of the process and system restarts. System restarts may be used to re-initialize a process once the desired PageHeap settings are configured, but cannot be used to disable the functionality once it's enabled. Disabling PageHeap must be done explicitly.
 
 Use care in interpreting the **Enable page heap** check box for an image file in the GFlags dialog box. It indicates that page heap verification is enabled for an image file, but it does not indicate whether it is full or standard page heap verification. If the check results from selecting the check box, then full page heap verification is enabled for the image file. However, if the check results from use of the command-line interface, then the check can represent the enabling of either full or standard page heap verification for the image file.
 

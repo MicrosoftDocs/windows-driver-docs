@@ -9,7 +9,6 @@ api_name:
 - WdfWaitlockRelease
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # WdfWaitlockRelease rule (kmdf)
@@ -19,8 +18,7 @@ The **WdfWaitlockRelease** rule specifies that calls to [**WdfWaitLockAcquire**]
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfWaitLockAcquire**](/previous-versions/ff551168(v=vs.85))
 [**WdfWaitLockRelease**](/windows-hardware/drivers/ddi/wdfsync/nf-wdfsync-wdfwaitlockrelease)

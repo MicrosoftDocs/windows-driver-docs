@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # PlatenOpticalResolution element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **PlatenOpticalResolution** element specifies the maximum optical resolution at which the platen can scan.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:PlatenOpticalResolution>
@@ -26,8 +24,7 @@ Usage
 </wscn:PlatenOpticalResolution>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -72,8 +69,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 Resolution is specified as a [**Width**](width.md) x [**Height**](height.md) pair, where both **Width** and **Height** are specified in pixels per inch.
 

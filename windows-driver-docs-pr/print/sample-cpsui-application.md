@@ -6,7 +6,6 @@ keywords:
 - CPSUI WDK print , samples
 - property sheet pages WDK print , samples
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sample CPSUI Application

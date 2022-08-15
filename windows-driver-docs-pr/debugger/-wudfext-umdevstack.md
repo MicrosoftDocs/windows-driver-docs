@@ -9,7 +9,6 @@ api_name:
 - wudfext.umdevstack
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wudfext.umdevstack
@@ -61,8 +60,7 @@ Displays information about the internal framework.
 
 For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The following is an example of the **!wudfext.umdevstack** display:
 

@@ -4,10 +4,11 @@ description: WDI_TLV_BAND_ID_LIST is a TLV that contains a list of band IDs.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BAND_ID_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_BAND\_ID\_LIST
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_BAND\_ID\_LIST is a TLV that contains a list of band IDs.
@@ -31,8 +32,7 @@ The size (in bytes) of the array of WDI\_BAND\_ID (UINT32) elements. The array m
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -9,7 +9,6 @@ api_name:
 - (Process Status)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # | (Process Status)
@@ -58,8 +57,7 @@ Specifies the process to display. If you omit this parameter, all processes that
 
 For more information and other methods of displaying or controlling processes and threads, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
-Remarks
--------
+## Remarks
 
 You can specify processes only in user mode.
 

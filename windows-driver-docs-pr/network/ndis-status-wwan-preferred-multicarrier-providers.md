@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_PREFERRED_MULTICARRIER_PR
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WWAN_PREFERRED_MULTICARRIER_PROVIDERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS
@@ -16,8 +15,7 @@ Miniport drivers may also use this notification to inform the MB Service about t
 
 This notification uses the [**NDIS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_multicarrier_providers) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

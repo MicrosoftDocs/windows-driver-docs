@@ -1,12 +1,11 @@
 ---
-title: Introduction to Receive Side Scaling
-description: Introduction to Receive Side Scaling
+title: Introduction to Receive Side Scaling (RSS)
+description: RSS is a network driver technology that enables the efficient distribution of network receive processing across multiple CPUs in multiprocessor systems.
 keywords:
 - receive-side scaling WDK networking , about receive-side scaling
 - RSS WDK networking , about receive-side scaling
 - CPU determination WDK RSS
-ms.date: 09/04/2020
-ms.localizationpriority: medium
+ms.date: 03/16/2022
 ms.custom: contperf-fy21q1
 ---
 
@@ -23,7 +22,7 @@ With RSS, the NIC and miniport driver provide the ability to schedule receive DP
 
 The following figure illustrates the RSS mechanism for determining a CPU.
 
-![diagram illustrating the rss mechanism for determining a cpu](images/rss.png)
+![diagram illustrating the rss mechanism for determining a cpu.](images/rss.png)
 
 A NIC uses a hashing function to compute a hash value over a defined area (hash type) within the received network data. The defined area can be noncontiguous.
 
@@ -37,7 +36,7 @@ With message signaled interrupt (MSI) support, a NIC can also interrupt the asso
 
 The following figure illustrates the levels of hardware support for RSS.
 
-![diagram illustrating the levels of hardware support for rss](images/rss-hw.png)
+![diagram illustrating the levels of hardware support for rss.](images/rss-hw.png)
 
 There are three possible levels of hardware support for RSS:
 

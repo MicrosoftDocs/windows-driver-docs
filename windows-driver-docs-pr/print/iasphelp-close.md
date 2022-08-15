@@ -15,7 +15,6 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Iasphelp::Close method
@@ -23,20 +22,17 @@ ms.localizationpriority: medium
 
 The **Close** method enables an ASP Web page to close access to a printer.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT Close();
 ```
 
-Parameters
-----------
+## Parameters
 
 This method has no parameters.
 
-Return value
-------------
+## Return value
 
 The return value is always S\_OK.
 
@@ -54,8 +50,7 @@ objPrinter.Open strPrinter
 objPrinter.Close
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

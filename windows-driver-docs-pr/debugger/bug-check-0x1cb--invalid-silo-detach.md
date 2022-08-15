@@ -9,7 +9,6 @@ api_name:
 - INVALID_SILO_DETACH
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1CB: INVALID\_SILO\_DETACH
@@ -32,13 +31,11 @@ The INVALID\_SILO\_DETACH bug check has a value of 0x000001CB. It indicates that
 
 
 ## Cause
------
 A thread failed to detach from a silo before exiting. 
 
 
 
 ## See Also
-----------
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

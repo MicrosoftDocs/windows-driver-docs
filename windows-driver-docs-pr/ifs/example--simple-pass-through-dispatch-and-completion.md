@@ -4,7 +4,6 @@ description: Example Simple Pass-Through Dispatch and Completion
 keywords:
 - IRP completion routines WDK file system , examples
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example: Simple Pass-Through Dispatch and Completion

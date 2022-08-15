@@ -5,7 +5,6 @@ keywords:
 - vector printing commands WDK Unidrv
 - printer commands WDK Unidrv , vector
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Vector Printing Commands

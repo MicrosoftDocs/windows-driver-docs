@@ -9,7 +9,6 @@ api_name:
 - wudfext.wudfrefhist
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wudfext.wudfrefhist
@@ -37,8 +36,7 @@ Wudfext.dll
 
 For more information, see [User-Mode Driver Framework Debugging](user-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The **!wudfext.wudfrefhist** command is not supported by UMDF 1.11.
 

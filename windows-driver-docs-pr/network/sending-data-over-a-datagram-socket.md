@@ -6,7 +6,6 @@ keywords:
 - datagram sockets WDK Winsock Kernel
 - WskSendTo
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sending Data over a Datagram Socket

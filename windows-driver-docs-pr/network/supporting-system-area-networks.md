@@ -2,7 +2,6 @@
 title: Supporting System Area Networks Topics
 description: Supporting System Area Networks Topics
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting System Area Networks Topics

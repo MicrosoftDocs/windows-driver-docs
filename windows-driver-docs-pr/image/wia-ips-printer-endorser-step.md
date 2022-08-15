@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 05/22/2018
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_PRINTER\_ENDORSER\_STEP
@@ -28,8 +27,7 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 The mandatory default value for the **WIA\_IPS\_PRINTER\_ENDORSER\_STEP** property is 1 (each page). A value of 0 is invalid.
 
@@ -37,8 +35,7 @@ As for most WIA\_PROP\_RANGE properties, the WIA minidriver can implement a rang
 
 This property must be supported by all Imprinter/Endorser data source items. The value of 1 (each page) is required.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

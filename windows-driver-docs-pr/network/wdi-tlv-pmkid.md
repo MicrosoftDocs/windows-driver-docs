@@ -4,10 +4,11 @@ description: WDI_TLV_PMKID is a TLV that contains a PMKID value.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PMKID Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PMKID
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_PMKID is a TLV that contains a PMKID value.
@@ -31,8 +32,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

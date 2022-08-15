@@ -2,7 +2,6 @@
 title: VMQ Components
 description: VMQ Components
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # VMQ Components
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 The following illustration shows the relationships among the various components in a virtual machine queue (VMQ) operating environment.
 
-![vmq components](images/vmqarch.png)
+![vmq components.](images/vmqarch.png)
 
 The preceding figure illustrates the following VMQ components:
 

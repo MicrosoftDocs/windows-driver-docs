@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ScanDestination element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **ScanDestination** element specifies a single scan destination on the client.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ScanDestination>
@@ -26,8 +24,7 @@ Usage
 </wscn:ScanDestination>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -72,8 +69,7 @@ There are no attributes.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The client includes one or more **ScanDestination** elements within the **ScanDestinations** element that it sends when it creates a subscription. The WSD Scan Service uses the information that is provided within **ScanDestination** to create appropriate [**ScanAvailableEvent**](scanavailableevent.md) event elements.
 

@@ -10,7 +10,6 @@ keywords:
 - notifications WDK AVStream
 - KsProxy plug-in sample WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sample User-Mode Code for Methods and Events

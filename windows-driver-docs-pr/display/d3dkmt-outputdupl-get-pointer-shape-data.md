@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # D3DKMT\_OUTPUTDUPL\_GET\_POINTER\_SHAPE\_DATA structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_OUTPUTDUPL_GET_POINTER_SHAPE_DATA {
@@ -33,8 +31,7 @@ typedef struct _D3DKMT_OUTPUTDUPL_GET_POINTER_SHAPE_DATA {
 } D3DKMT_OUTPUTDUPL_GET_POINTER_SHAPE_DATA;
 ```
 
-Members
--------
+## Members
 
 **hAdapter**
 
@@ -48,8 +45,7 @@ Members
 
 **ShapeInfo**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -3,7 +3,6 @@ title: File Attach to a Process
 description: File Attach to a Process
 keywords: ["File Attach to a Process", "starting the debugger, File Attach to a Process"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # File | Attach to a Process

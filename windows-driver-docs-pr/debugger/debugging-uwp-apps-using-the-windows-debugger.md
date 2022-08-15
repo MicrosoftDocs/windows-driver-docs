@@ -2,7 +2,6 @@
 title: Debugging Windows Apps Using the Windows Debugger
 description: You can use the Windows debuggers (WinDbg, CDB, and NTSD) to debug Windows apps. Use the PLMDebug tool to take control of suspending, resuming, and terminating a Windows app while you are debugging.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging Windows Apps Using the Windows Debugger

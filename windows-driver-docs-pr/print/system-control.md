@@ -5,7 +5,6 @@ keywords:
 - system-controlled color management WDK print
 - default print color management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # System Control

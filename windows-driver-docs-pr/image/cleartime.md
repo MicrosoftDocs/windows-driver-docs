@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ClearTime element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **ClearTime** element specifies the time at which a condition was cleared.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ClearTime>
@@ -26,13 +24,11 @@ Usage
 </wscn:ClearTime>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. Any valid value for the dateTime type. For more information about dateTime, see XML Schema Part 2: Datatypes Second Edition.**dateTimedateTime**
 
@@ -60,8 +56,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The specified time is according to the internal clock of the scanner.
 

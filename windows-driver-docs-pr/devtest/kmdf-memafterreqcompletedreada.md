@@ -9,7 +9,6 @@ api_name:
 - MemAfterReqCompletedReadA
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # MemAfterReqCompletedReadA rule (kmdf)
@@ -32,8 +31,7 @@ This rule considers the following memory access methods:
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -58,8 +56,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WDF\_MEMORY\_DESCRIPTOR\_INIT\_HANDLE**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdf_memory_descriptor_init_handle)
 [**WdfMemoryAssignBuffer**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemoryassignbuffer)

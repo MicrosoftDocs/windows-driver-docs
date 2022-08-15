@@ -3,7 +3,6 @@ title: Using Windows Update to Install Drivers
 description: This topic describes how you can control when Windows Update distributes your driver.
 ms.date: 11/02/2020
 ms.topic: article
-ms.localizationpriority: medium
 ---
 
 # Understanding Windows Update rules for driver distribution
@@ -14,7 +13,7 @@ When [submitting a driver to Windows Update](publish-a-driver-to-windows-update.
 
 Under the **Automatic** option there are two checkboxes: **Automatically delivered during Windows Upgrades** and **Automatically delivered to all applicable systems**. **Automatic** is the default setting for all new shipping labels.
 
-![Automatic driver promotions checkboxes](images/driver-delivery-options.png)
+![Automatic driver promotions checkboxes.](images/driver-delivery-options.png)
 
 When the first checkbox is selected, the driver is classified as a **Dynamic Update** (a term that applies to *upgrade* scenarios). Windows automatically preloads drivers in this category when upgrading the OS.
 

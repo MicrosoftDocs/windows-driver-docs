@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_SMS_DELETE notification t
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_WWAN_SMS_DELETE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_SMS\_DELETE
@@ -16,11 +15,9 @@ Miniport drivers cannot use this notification to send unsolicited events.
 
 This notification uses the [**NDIS\_WWAN\_SMS\_DELETE\_STATUS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_delete_status) structure.
 
-Remarks
--------
+## Remarks
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

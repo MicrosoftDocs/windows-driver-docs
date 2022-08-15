@@ -3,7 +3,6 @@ title: KSPROPSETID\_Synth
 description: KSPROPSETID\_Synth
 keywords: ["KSPROPSETID_Synth"]
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_Synth
@@ -523,7 +522,7 @@ The KSPROPERTY\_SYNTH\_VOLUME property gets or sets the volume level of a synthe
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
@@ -628,4 +627,3 @@ A KSPROPERTY\_SYNTH\_VOLUMEBOOST property request returns STATUS\_SUCCESS to ind
 No other boost should be added to the output. The synthesizer should follow strict DLS Level-1 conventions for articulation.
 
 This property is used to equalize the volume of the synthesizer with other audio output in the system, and boost amounts should therefore be interpreted in a consistent manner across all devices.
-

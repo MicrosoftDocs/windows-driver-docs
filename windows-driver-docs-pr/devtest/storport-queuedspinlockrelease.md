@@ -9,7 +9,6 @@ api_name:
 - QueuedSpinLockRelease
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # QueuedSpinLockRelease rule (storport)
@@ -19,8 +18,7 @@ This rule verifies that the driver does not call **KeReleaseInStackQueuedSpinLoc
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**KeAcquireInStackQueuedSpinLock**](/previous-versions/windows/hardware/drivers/ff551899(v=vs.85))
 [**KeReleaseInStackQueuedSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseinstackqueuedspinlock)

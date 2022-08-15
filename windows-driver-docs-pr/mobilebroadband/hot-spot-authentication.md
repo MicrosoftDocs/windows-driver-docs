@@ -2,7 +2,6 @@
 title: Hot spot authentication
 description: Hot spot authentication
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hot spot authentication

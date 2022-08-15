@@ -1,8 +1,7 @@
 ---
 title: Print schema references
-description: The following list provides references and links to industry standards, specifications, and technical articles.
-ms.date: 05/18/2020
-ms.localizationpriority: medium
+description: Provides references and links to industry standards, specifications, and technical articles.
+ms.date: 12/13/2021
 ---
 
 # Print schema references
@@ -37,7 +36,7 @@ Microsoft Corporation. "Print Schema Specification."
 
 Bradner, S. "Key words for use in RFCs to Indicate Requirement Levels." The Internet Society. 1997.
 
-[https://www.rfc-editor.org/rfc/rfc2119.txt](https://www.rfc-editor.org/rfc/rfc2119.txt)
+[https://www.rfc-editor.org/info/rfc2119](https://www.rfc-editor.org/info/rfc2119)
 
 ## sRGB
 

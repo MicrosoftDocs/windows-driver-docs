@@ -2,7 +2,6 @@
 title: MobileBroadbandInfo XML schema definition
 description: MobileBroadbandInfo XML schema definition
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MobileBroadbandInfo XML schema definition

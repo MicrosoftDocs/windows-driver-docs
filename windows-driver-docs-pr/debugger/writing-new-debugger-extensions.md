@@ -3,7 +3,6 @@ title: Writing New Debugger Extensions
 description: Writing New Debugger Extensions
 keywords: ["extension commands ( commands), writing extensions", "writing extension commands", "dbgeng.h header file, writing extension commands", "wdbgexts.h header file, writing extension commands"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Writing New Debugger Extensions

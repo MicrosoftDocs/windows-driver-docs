@@ -9,7 +9,6 @@ api_name:
 - ks.topology
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.topology
@@ -58,8 +57,7 @@ Not currently available.
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 For help, issue a **!ks.topology** command with no arguments.
 

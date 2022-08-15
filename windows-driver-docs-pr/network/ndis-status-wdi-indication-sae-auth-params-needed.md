@@ -4,11 +4,12 @@ description: NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED
 ms.date: 02/14/2019
 keywords:
  - NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 The Wi-Fi adapter sends this indication to request parameters for Simultaneous Authentication of Equals (SAE) authentication.
 

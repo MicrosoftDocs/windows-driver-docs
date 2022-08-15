@@ -2,7 +2,6 @@
 title: Handling dispatch routines in stream drivers
 description: Provides guidance for handling driver dispatch routines.
 ms.date: 05/17/2018
-ms.localizationpriority: medium
 ---
 
 # Handling dispatch routines in stream drivers
@@ -102,8 +101,7 @@ This default handler provides a way for dispatch routines to fulfill the require
 
 For more information, see the [DRIVER_DISPATCH](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
-See also
---------
+## See also
 
 [KsAddDevice](/windows-hardware/drivers/ddi/ks/nf-ks-ksadddevice)
 

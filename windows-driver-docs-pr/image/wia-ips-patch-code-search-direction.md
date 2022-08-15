@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_PATCH\_CODE\_SEARCH\_DIRECTION
@@ -28,8 +27,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/Write
 
-Remarks
--------
+## Remarks
 
 <table>
 <colgroup>
@@ -70,8 +68,7 @@ Remarks
 
 This property is required for all Patch Code Reader items but it can be implemented to support only the WIA\_PATCH\_CODE\_AUTO\_SEARCH value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

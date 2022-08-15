@@ -2,7 +2,6 @@
 title: Image Geometry Properties
 description: Image Geometry Properties
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Image Geometry Properties

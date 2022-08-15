@@ -9,7 +9,6 @@ api_name:
 - SYSTEM_PTE_MISUSE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xDA: SYSTEM\_PTE\_MISUSE
@@ -325,8 +324,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 
  
 
-Cause
------
+## Cause
 
 The error is indicated by the value of Parameter 1.
 

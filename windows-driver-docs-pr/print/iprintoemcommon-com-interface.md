@@ -2,7 +2,6 @@
 title: IPrintOemCommon COM Interface
 description: IPrintOemCommon COM Interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IPrintOemCommon COM Interface

@@ -6,7 +6,6 @@ keywords:
 - query operations WDK DirectX 9.0 , verifying support of query types
 - query types WDK DirectX 9.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Verifying Support of Query Types

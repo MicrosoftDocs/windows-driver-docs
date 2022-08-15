@@ -9,7 +9,6 @@ api_name:
 - PANIC_STACK_SWITCH
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x2B: PANIC\_STACK\_SWITCH
@@ -57,8 +56,7 @@ The PANIC\_STACK\_SWITCH bug check has a value of 0x0000002B. This indicates tha
 
  
 
-Cause
------
+## Cause
 
 This error normally appears when a kernel-mode driver uses too much stack space. It can also appear when serious data corruption occurs in the kernel.
 

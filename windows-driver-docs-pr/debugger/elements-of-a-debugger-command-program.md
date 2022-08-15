@@ -3,7 +3,6 @@ title: Elements of a Debugger Command Program
 description: Elements of a Debugger Command Program
 keywords: ["debugger command program, elements"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Elements of a Debugger Command Program

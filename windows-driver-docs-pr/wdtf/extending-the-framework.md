@@ -11,7 +11,6 @@ keywords:
 - SimpleIO wizard WDK WDTF
 - action interfaces WDK WDTF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Extending the Framework
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 WDTF is built to be extendable. Extendibility is possible in three distinct ways, as the following illustration shows.
 
-![diagram illustrating the wdtf scenario model](images/wdtf-scenariomodel.gif)
+![diagram illustrating the wdtf scenario model.](images/wdtf-scenariomodel.gif)
 
 The following list describes the three extensibility methods, in order of difficulty:
 

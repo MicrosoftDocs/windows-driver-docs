@@ -9,7 +9,6 @@ api_name:
 - .cordll (Control CLR Debugging)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .cordll (Control CLR Debugging)
@@ -86,8 +85,7 @@ Turns off verbose mode for CLR module loading.
 
  
 
-Remarks
--------
+## Remarks
 
 To debug a managed application, the debugger must load a data access component (DAC) that corresponds to the CLR that the application has loaded. However, in some cases, the application loads more than one CLR. In that case, you can use the **I** parameter to specify which DAC the debugger should load. Version 2 of the CLR is named Mscorwks.dll, and version 4 of the CLR is named Clr.dll. The following example shows how to specify that the debugger should load the DAC for version 2 (mscorwks).
 

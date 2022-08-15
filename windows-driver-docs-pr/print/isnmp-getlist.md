@@ -17,15 +17,13 @@ api_location:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ISNMP::GetList method
 
 The `GetList` method enables an ASP Web page to obtain the values associated with an array of SNMP OIDs.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT GetList(
@@ -34,8 +32,7 @@ HRESULT GetList(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *varList* \[in\]  
 Caller-supplied pointer to an array of SNMP OID strings.
@@ -43,8 +40,7 @@ Caller-supplied pointer to an array of SNMP OID strings.
 *varValue* \[out\]  
 Caller-supplied pointer to a location that receives the address of an array of SNMP OID values.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -95,8 +91,7 @@ OIDArray = Array("25.3.2.1.5", "25.3.5.1.1")
 OIDValueArray = objSNMP.GetList (OIDArray)
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

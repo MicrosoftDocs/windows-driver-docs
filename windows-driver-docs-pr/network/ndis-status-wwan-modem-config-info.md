@@ -10,7 +10,6 @@ api_location:
 - ndis.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -23,8 +22,7 @@ MBB drivers must only send an unsolicited **NDIS_STATUS_WWAN_MODEM_CONFIG_INFO**
 
 This notification uses the [**NDIS_WWAN_MODEM_CONFIG_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_modem_config_info) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

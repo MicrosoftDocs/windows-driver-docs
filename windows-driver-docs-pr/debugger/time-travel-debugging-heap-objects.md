@@ -2,7 +2,6 @@
 title: TTD Heap Objects
 description: This section describes the heap model objects associated with time travel debugging.
 ms.date: 09/24/2017
-ms.localizationpriority: medium
 ---
 
 # TTD Heap Objects

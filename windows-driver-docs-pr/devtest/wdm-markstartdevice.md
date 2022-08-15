@@ -9,7 +9,6 @@ api_name:
 - MarkStartDevice
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # MarkStartDevice rule (wdm)
@@ -19,8 +18,7 @@ The **MarkStartDevice** rule specifies that the driver pends an IRP\_MN\_START\_
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoAcquireRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioacquireremovelock)
 [**IoAllocateIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp)

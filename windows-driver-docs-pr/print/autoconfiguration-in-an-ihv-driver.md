@@ -6,7 +6,6 @@ keywords:
 - autoconfiguration WDK printer , IHV drivers
 - printer autoconfiguration WDK printer , IHV drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Autoconfiguration in an IHV Driver

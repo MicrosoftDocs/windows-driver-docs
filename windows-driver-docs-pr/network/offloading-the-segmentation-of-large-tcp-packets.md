@@ -6,7 +6,6 @@ keywords:
 - large TCP packet segmentation WDK networking
 - segmentation of large TCP packets WDK networking
 ms.date: 10/24/2019
-ms.localizationpriority: medium
 ---
 
 # Offloading the Segmentation of Large TCP Packets
@@ -19,9 +18,9 @@ NDIS miniport drivers can offload the segmentation of large TCP packets that are
 
 NDIS versions 6.0 and later support large send offload version 1 (LSOv1), which is similar to large send offload (LSO) in NDIS 5.*x*. NDIS versions 6.0 and later also support large send offload version 2 (LSOv2), which provides enhanced large packet segmentation services, including support for IPv6.
 
-A miniport driver that supports LSOv2 and LSOv1 must determine the offload type from the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure OOB information. The driver can use the **Type** member of the [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_tcp_large_send_offload_net_buffer_list_info) structure to determine whether the driver stack is using LSOv2 or LSOv1 and perform the appropriate offload services. Any NET\_BUFFER\_LIST structure that contains the LSOv1 or LSOv2 OOB data also contains a single [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure. For more information about NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO, see [Accessing TCP/IP Offload NET\_BUFFER\_LIST Information](accessing-tcp-ip-offload-net-buffer-list-information.md).
+A miniport driver that supports LSOv2 and LSOv1 must determine the offload type from the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure OOB information. The driver can use the **Type** member of the [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nbllso/ns-nbllso-ndis_tcp_large_send_offload_net_buffer_list_info) structure to determine whether the driver stack is using LSOv2 or LSOv1 and perform the appropriate offload services. Any NET\_BUFFER\_LIST structure that contains the LSOv1 or LSOv2 OOB data also contains a single [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure. For more information about NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO, see [Accessing TCP/IP Offload NET\_BUFFER\_LIST Information](accessing-tcp-ip-offload-net-buffer-list-information.md).
 
-However, in a case where the miniport has received [**OID\_TCP\_OFFLOAD\_PARAMETERS**](./oid-tcp-offload-parameters.md) to turn off LSO feature on the miniport and after the miniport has completed the OID successfully, the miniport shall drop all [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) which contain any non-zero LSOv1 or LSOv2 OOB data([**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_tcp_large_send_offload_net_buffer_list_info)). 
+However, in a case where the miniport has received [**OID\_TCP\_OFFLOAD\_PARAMETERS**](./oid-tcp-offload-parameters.md) to turn off LSO feature on the miniport and after the miniport has completed the OID successfully, the miniport shall drop all [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) which contain any non-zero LSOv1 or LSOv2 OOB data([**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nbllso/ns-nbllso-ndis_tcp_large_send_offload_net_buffer_list_info)). 
 
 The TCP/IP transport offloads only those large TCP packets that meet the following criteria:
 
@@ -35,7 +34,7 @@ The TCP/IP transport offloads only those large TCP packets that meet the followi
 
 Before offloading a large TCP packet for segmentation, the TCP/IP transport:
 
--   Updates the large-packet segmentation information that is associated with the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure. This information is an [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_tcp_large_send_offload_net_buffer_list_info) structure that is part of the **NET\_BUFFER\_LIST** information that is associated with the **NET\_BUFFER\_LIST** structure. For more information about **NET\_BUFFER\_LIST** information, see [Accessing TCP/IP Offload NET\_BUFFER\_LIST Information](accessing-tcp-ip-offload-net-buffer-list-information.md). The TCP/IP transport sets the **MSS** value to the maximum segment size (MSS).
+-   Updates the large-packet segmentation information that is associated with the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure. This information is an [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nbllso/ns-nbllso-ndis_tcp_large_send_offload_net_buffer_list_info) structure that is part of the **NET\_BUFFER\_LIST** information that is associated with the **NET\_BUFFER\_LIST** structure. For more information about **NET\_BUFFER\_LIST** information, see [Accessing TCP/IP Offload NET\_BUFFER\_LIST Information](accessing-tcp-ip-offload-net-buffer-list-information.md). The TCP/IP transport sets the **MSS** value to the maximum segment size (MSS).
 
 <a name="lsov1lengthrequirements"></a>
 
@@ -45,7 +44,7 @@ Before offloading a large TCP packet for segmentation, the TCP/IP transport:
 
 -   Writes the correct sequence number to the Sequence Number field of the TCP header. The sequence number identifies the first byte of the TCP payload.
 
-After the miniport driver obtains the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure in its [*MiniportSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_send_net_buffer_lists) or [**MiniportCoSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_send_net_buffer_lists) function, it can call the [**NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_info) macro with an *\_Id* of **TcpLargeSendNetBufferListInfo** to obtain the MSS value written by the TCP/IP transport.
+After the miniport driver obtains the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure in its [*MiniportSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_send_net_buffer_lists) or [**MiniportCoSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_send_net_buffer_lists) function, it can call the [**NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nblaccessors/nf-nblaccessors-net_buffer_list_info) macro with an *\_Id* of **TcpLargeSendNetBufferListInfo** to obtain the MSS value written by the TCP/IP transport.
 
 The miniport driver obtains the total length of the large packet from the packet's IP header and uses the MSS value to divide the large TCP packet into smaller packets. Each of the smaller packets contains MSS or less user data bytes. Note that only the last packet that was created from the segmented large packet should contain less than MSS user data bytes. All other packets that were created from the segmented packet should contain MSS user data bytes. If you do not follow this rule, the creation and transmission of unnecessary extra packets could degrade performance.
 
@@ -53,7 +52,7 @@ The miniport driver affixes MAC, IP, and TCP headers to each segment that is der
 
 The following figure shows the segmentation of a large packet.
 
-![diagram illustrating the segmentation of a large packet](images/segmentation.png)
+![diagram illustrating the segmentation of a large packet.](images/segmentation.png)
 
 The length of the TCP user data in the large TCP packet should be equal to or less than the value that the miniport driver assigns to the **MaxOffLoadSize** value. For more information about the **MaxOffLoadSize** value, see [Reporting a NIC's LSOv1 TCP-Packet-Segmentation Capabilities](reporting-a-nic-s-lsov1-tcp-packet-segmentation-capabilities.md) and [Reporting a NIC's LSOv2 TCP-Packet-Segmentation Capabilities](reporting-a-nic-s-lsov2-tcp-packet-segmentation-capabilities.md).
 
@@ -63,7 +62,7 @@ An intermediate driver that independently issues status indications that report 
 
 A miniport-intermediate driver that responds to [OID\_TCP\_OFFLOAD\_PARAMETERS](./oid-tcp-offload-parameters.md) to turn off LSO services must be prepared for a small window of time where LSO send requests could still reach the miniport driver.
 
-The length of the TCP user data in a segment packet must be less than or equal to the MSS. The MSS is the ULONG value that the TCP transport passes down by using the LSO NET\_BUFFER\_LIST information that is associated with the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure. Note that only the last packet that was created from the segmented large packet should contain less than MSS user data bytes. All other packets that were created from the segmented packet should contain MSS user data bytes. If you do not follow this rule, the creation and transmission of unnecessary extra packets could degrade performance.
+The length of the TCP user data in a segment packet must be less than or equal to the MSS. The MSS is the ULONG value that the TCP transport passes down by using the LSO NET\_BUFFER\_LIST information that is associated with the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure. Note that only the last packet that was created from the segmented large packet should contain less than MSS user data bytes. All other packets that were created from the segmented packet should contain MSS user data bytes. If you do not follow this rule, the creation and transmission of unnecessary extra packets could degrade performance.
 
 The number of segment packets that were derived from the large TCP packet must be equal to or greater than the **MinSegmentCount** value that is specified by the miniport driver. For more information about the **MinSegmentCount** value, see [Reporting a NIC's LSOv1 TCP-Packet-Segmentation Capabilities](reporting-a-nic-s-lsov1-tcp-packet-segmentation-capabilities.md) and [Reporting a NIC's LSOv2 TCP-Packet-Segmentation Capabilities](reporting-a-nic-s-lsov2-tcp-packet-segmentation-capabilities.md).
 
@@ -86,11 +85,11 @@ The following assumptions and restrictions apply to processing IP and TCP header
     > This assumption is valid when LSO is enabled. Otherwise, when LSO is not enabled, miniport drivers cannot assume that IP headers are in the same MDL as Ethernet headers.
 
 
-The miniport driver must send the packets in [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures in the order that it receives the NET\_BUFFER\_LIST structures from the TCP/IP transport.
+The miniport driver must send the packets in [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures in the order that it receives the NET\_BUFFER\_LIST structures from the TCP/IP transport.
 
 When processing a large TCP packet, the miniport adapter is responsible only for segmenting the packet and affixing MAC, IP, and TCP headers to the packets that are derived from the large TCP packet. The TCP/IP transport performs all other tasks (such as adjusting the send window size based on the remote host's receive window size).
 
-Before completing the send operation for the large packet (such as with [**NdisMSendNetBufferListsComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsendnetbufferlistscomplete) or [**NdisMCoSendNetBufferListsComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcosendnetbufferlistscomplete)), the miniport driver writes the [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_tcp_large_send_offload_net_buffer_list_info) value (NET\_BUFFER\_LIST information for large-send offloads) with the total number of TCP user data bytes that are sent successfully in all packets that were created from the large TCP packet.
+Before completing the send operation for the large packet (such as with [**NdisMSendNetBufferListsComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsendnetbufferlistscomplete) or [**NdisMCoSendNetBufferListsComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcosendnetbufferlistscomplete)), the miniport driver writes the [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nbllso/ns-nbllso-ndis_tcp_large_send_offload_net_buffer_list_info) value (NET\_BUFFER\_LIST information for large-send offloads) with the total number of TCP user data bytes that are sent successfully in all packets that were created from the large TCP packet.
 
 In addition to the previous LSO requirements, LSOv2-capable miniport drivers must also:
 
@@ -102,13 +101,13 @@ In addition to the previous LSO requirements, LSOv2-capable miniport drivers mus
 
 -   Support replication of TCP options in each TCP segment packet that the miniport driver generates.
 
--   Use the IP and TCP header in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure as a template to generate TCP/IP headers for each segment packet.
+-   Use the IP and TCP header in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure as a template to generate TCP/IP headers for each segment packet.
 
 -   Use IP identification (IP ID) values in the range from 0x0000 to 0x7FFF. (The range from 0x8000 to 0xFFFF is reserved for TCP chimney offload-capable devices.) For example, if the template IP header starts with an Identification field value of 0x7FFE, the first TCP segment packet must have an IP ID value of 0x7FFE, followed by 0x7FFF, 0x0000, 0x0001, and so on.
 
--   Use the byte offset in the **TcpHeaderOffset** member of [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_tcp_large_send_offload_net_buffer_list_info) to determine the location of the TCP header, starting from the first byte of the packet.
+-   Use the byte offset in the **TcpHeaderOffset** member of [**NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nbllso/ns-nbllso-ndis_tcp_large_send_offload_net_buffer_list_info) to determine the location of the TCP header, starting from the first byte of the packet.
 
--   Limit the number of [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures that are associated with each LSOv2 [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure to one.
+-   Limit the number of [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structures that are associated with each LSOv2 [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure to one.
     > [!NOTE]
     > This is a new requirement for LSOv2-capable miniport drivers. This rule is not enforced for LSOv1 miniport drivers explicitly, although it is recommended.
 
@@ -116,4 +115,4 @@ In addition to the previous LSO requirements, LSOv2-capable miniport drivers mus
 
 -   Support TCP options, IP options, and IP extension headers.
 
--   When a send operation is complete, the miniport driver must set the **LsoV2TransmitComplete.Reserved** member of the  [**NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_tcp_large_send_offload_net_buffer_list_info) structure to zero and the **LsoV2TransmitComplete.Type** member to NDIS_TCP_LARGE_SEND_OFFLOAD_V2_TYPE.
+-   When a send operation is complete, the miniport driver must set the **LsoV2TransmitComplete.Reserved** member of the  [**NDIS_TCP_LARGE_SEND_OFFLOAD_NET_BUFFER_LIST_INFO**](/windows-hardware/drivers/ddi/nbllso/ns-nbllso-ndis_tcp_large_send_offload_net_buffer_list_info) structure to zero and the **LsoV2TransmitComplete.Type** member to NDIS_TCP_LARGE_SEND_OFFLOAD_V2_TYPE.

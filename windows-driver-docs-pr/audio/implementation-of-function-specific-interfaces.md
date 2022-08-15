@@ -6,7 +6,6 @@ keywords:
 - miniport drivers WDK audio , Port Class
 - miniport interfaces WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Implementation of Function-Specific Interfaces

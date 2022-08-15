@@ -9,7 +9,6 @@ api_name:
 - storagekd.storhelp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !storagekd.storhelp
@@ -39,8 +38,7 @@ The **!storagekd.storhelp** extension displays help text for Storagekd.dll exten
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example of the **!storagekd.storhelp** display:
 

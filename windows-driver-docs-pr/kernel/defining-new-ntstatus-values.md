@@ -3,7 +3,6 @@ title: Defining New NTSTATUS Values
 description: Defining New NTSTATUS Values
 keywords: ["NTSTATUS values WDK kernel", "custom NTSTATUS values WDK kernel", "IO_ERR_XXX values"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Defining New NTSTATUS Values
@@ -16,7 +15,7 @@ Drivers can define custom IO\_ERR\_*XXX* constants to use as **ErrorCode** value
 
 The following diagram shows the bit fields in a 32-bit NTSTATUS value.
 
-![diagram illustrating the bit fields in an ntstatus value](images/16ntstat.png)
+![diagram illustrating the bit fields in an ntstatus value.](images/16ntstat.png)
 
 The **Sev** field shown in the preceding diagram indicates the severity code, which must be one of the following system-defined values:
 

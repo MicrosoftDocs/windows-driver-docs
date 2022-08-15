@@ -1,6 +1,6 @@
 ---
 title: Introduction to Printing
-description: Introduction to Printing
+description: Provides an introduction to the Windows print driver architecture.
 keywords:
 - printing WDK
 - rendering component WDK print
@@ -8,7 +8,6 @@ keywords:
 - components WDK printing
 - architecture WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Introduction to Printing

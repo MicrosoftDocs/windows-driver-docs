@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Process and Thread Manager
 description: Windows Kernel-Mode Process and Thread Manager
-ms.localizationpriority: High
 ms.date: 10/17/2018
 ---
 
@@ -17,6 +16,8 @@ The Windows kernel-mode process and thread manager handles the execution of all 
 If threads from different processes attempt to use the same resource at the same time, problems can occur. Windows provides several techniques to avoid this problem. The technique of making sure that threads from different processes do not touch the same resource is called *synchronization*. For more information about synchronization, see [Synchronization Techniques](introduction-to-kernel-dispatcher-objects.md).
 
 Routines that provide a direct interface to the process and thread manager are usually prefixed with the letters "**Ps**"; for example, **PsCreateSystemThread**. For a list of kernel DDIs, see [Windows kernel](/windows-hardware/drivers/ddi/_kernel/).
+
+## <a name="best"></a>Best practices for implementing process and thread-related callback functions
 
 This set of guidelines applies to these callback routines:
 

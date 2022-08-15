@@ -1,8 +1,7 @@
 ---
 description: Windows support for USB Type-C connector and tasks for OEMs who are building USB Type-C systems.
 title: Windows support for USB Type-C connectors
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 03/18/2022
 ---
 
 # Windows support for USB Type-C connectors
@@ -15,7 +14,7 @@ The traditional configuration limits some scenarios. For example, if a mobile de
 
 The USB Type-C connector, introduced by the USB-IF, defined in the USB 3.1 specification, addresses those limitations. Windows 10 introduces native support for those features.
 
-![usb connector comparison](images/typecccomp.jpg)
+![usb connector comparison.](images/typecccomp.jpg)
 
 ## Feature summary
 
@@ -40,7 +39,7 @@ The USB Type-C connector, introduced by the USB-IF, defined in the USB 3.1 speci
 
 USB Type-C connector is reversible and symmetric.
 
-![USB Type-C symmetric cable](images/usb-type-c.png)
+![USB Type-C symmetric cable.](images/usb-type-c.png)
 
 The main component are: the USB Type-C connector and its port or PD controller that manages the CC pin logic for the connector. Such systems typically have a dual-role controller that can swap the USB role from host to function. It has Display-Out module that allows video signal to be transmitted over USB. Optionally it can support BC1.2 charger detection.
 
@@ -53,10 +52,10 @@ Consider recommendations for the design and development of USB components, inclu
 ## Choose a driver model
 
 Use this flow chart to determine a solution for your USB Type-C system.
-![Drivers](images/drivers-c.png)
+![Drivers.](images/drivers-c.png)
 
-|If your system...| Recommended solution...|
-|---|---|
+| If your system... | Recommended solution... |
+|--|--|
 | Does not implement PD state machines | Write a client driver to the UcmTcpciCx class extension.</br></br>[Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md) |
 | Implements PD state machines in hardware or firmware and support USB Type-C Connector System Software Interface (UCSI) over ACPI | Load the Microsoft provided in-box drivers, UcmUcsiCx.sys and UcmUcsiAcpiClient.sys.</br></br>See [UCSI driver](ucsi.md). |
 | Implements PD state machines in hardware or firmware, but either does not support UCSI, or support UCSI but requires a transport other than ACPI | Write a client driver for the UcmCx class extension.</br></br>[Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)</br></br>[Write a USB Type-C Policy Manager client driver](policy-manager-client.md) |
@@ -78,13 +77,11 @@ Use this flow chart to determine a solution for your USB Type-C system.
 
 Perform various functional and stress tests on systems and devices that expose a USB Type-C connector.
 
-[Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md) - Run USB tests included in the Windows Hardware Lab Kit (HLK) for Windows 10.
-> Run USB function HLK tests with a C-to-A cable (search for **Windows USB Device** in the HLK
-
-Certification/Compliance
-Attend Power Delivery and USB Type-C compliance workshops hosted by the standards bodies.
+- **[Test USB Type-C systems with USB Type-C ConnEx](test-usb-type-c-systems-with-mutt-connex-c.md)**: Run USB tests included in the Windows Hardware Lab Kit (HLK).
+- **Run USB function HLK tests with a C-to-A cable**: Search for *Windows USB Device* in the HLK.
+- **Certification and compliance**: Attend power delivery and USB Type-C compliance workshops hosted by the standards bodies.
 
 ## See also
 
-- [FAQ: USB Type-C connector on a Windows system](faq--usb-type-c-connector-on-a-windows-system.md)
+- [FAQ: USB Type-C connector on a Windows system](faq--usb-type-c-connector-on-a-windows-system.yml)
 - [Troubleshoot messages in UI](https://support.microsoft.com/windows/fix-usb-c-problems-f4e0e529-74f5-cdae-3194-43743f30eed2#devicenotwork)

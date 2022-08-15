@@ -10,7 +10,6 @@ api_location:
 - Ntddstor.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,15 +43,13 @@ The GUID_DEVINTERFACE_MEDIUMCHANGER [device interface class](./overview-of-devic
 
  
 
-Remarks
--------
+## Remarks
 
 The system-supplied medium [changer drivers](../storage/changer-drivers.md) register an instance of GUID_DEVINTERFACE_MEDIUMCHANGER to notify the operating system and applications of the presence of medium changer devices.
 
 For more information about storage drivers, see [Storage Drivers](../storage/storage-drivers.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,5 +1,17 @@
 - name: "Streaming media devices design guide"
   href: index.md
+- name: "Camera privacy controls (shutters and kill switches)"
+# Auto-expanded node
+  items: 
+  - name: "Camera privacy shutters and kill switches"
+    href: camera-privacy-controls.md
+  - name: "Privacy shutter/switch notification"
+    href: privacy-shutter-notification.md
+- name: "Background segmentation portrait mode and eye gaze stare mode driver sample"
+# Auto-expanded node
+  items: 
+  - name: "Background segmentation portrait mode and eye gaze stare mode driver sample"
+    href: background-segmentation-portrait-mode-eye-gaze-stare-mode-driver-sample.md
 - name: "Device firmware update for USB devices without using a co-installer"
 # Auto-expanded node
   items: 
@@ -10,17 +22,20 @@
   items: 
   - name: "Network camera design guide"
     href: network-camera-design-guide.md
-  - name: "KSPROPERTYSETID_NetworkCameraControl"
-    href: kspropertysetid-networkcameracontrol.md
-  - name: "KSPROPERTY_NETWORKCAMERACONTROL_NTP"
-    href: ksproperty-networkcameracontrol-ntp.md
-  - name: "KSPROPERTY_NETWORKCAMERACONTROL_URI"
-    href: ksproperty-networkcameracontrol-uri.md
+- name: "Digital Window overview"
+# Auto-expanded node
+  items: 
+  - name: "Digital Window overview"
+    href: digital-window-overview.md
 - name: "USB Video Class (UVC) camera implementation guide"
 # Auto-expanded node
   items: 
   - name: "USB Video Class (UVC) camera implementation guide"
     href: uvc-camera-implementation-guide.md
+  - name: "Create device property keys from the MS OS descriptor in UVC camera firmware"
+    href: create-camera-device-property-keys-from-ms-os-descriptor.md
+  - name: "Microsoft extensions to USB Video Class 1.5 specification"
+    href: uvc-extensions-1-5.md
   - name: "Camera Intrinsics"
     href: camera-intrinsics.md
   - name: "Camera Capture Metadata"
@@ -41,8 +56,6 @@
     href: camera-driver-inf-file-class-setting.md
   - name: "Driver support for Camera UVC Control Cache"
     href: camera-device-uvc-control-cache.md
-  - name: "Microsoft extensions to USB Video Class 1.5 specification"
-    href: uvc-extensions-1-5.md
 - name: "Windows Hello Camera driver bring up guide"
   href: windows-hello-camera-driver-bring-up-guide.md
 - name: "Extended camera controls"
@@ -53,6 +66,8 @@
   href: 360-camera-video-capture.md
 - name: "Flashlight (Lamp) Support"
   href: flashlight-support.md
+- name: "TorchControl shared usage registry settings"
+  href: oem-guidance-on-registry-keys-for-shared-torch-usage.md
 - name: "Streaming Media Samples"
   href: streaming-media-samples.md
 - name: "OEM guidance on settings for the Windows 10 in-box camera app"
@@ -1580,6 +1595,14 @@
       href: ksproperty-cameracontrol-extended-videotemporaldenoising.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ZOOM"
       href: ksproperty-cameracontrol-extended-zoom.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION"
+      href: ksproperty-cameracontrol-extended-backgroundsegmentation.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_EYEGAZECORRECTION"
+      href: ksproperty-cameracontrol-extended-eyegazecorrection.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW"
+      href: ksproperty-cameracontrol-extended-digitalwindow.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW_CONFIGCAPS"
+      href: ksproperty-cameracontrol-extended-digitalwindow-configcaps.md
     - name: "KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CAPABILITY"
       href: ksproperty-cameracontrol-perframesetting-capability.md
     - name: "KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CLEAR"
@@ -2116,3 +2139,20 @@
       href: ksevent-vpnotify-formatchange.md
 - name: "COM Interfaces"
   href: com-interfaces.md
+- name: "Ks.h stucture typedef reference"
+# Auto-expanded node
+  items: 
+  - name: "Ks.h stucture typedef reference"
+    href: ks-h-typedef-reference.md
+  - name: "KSDEGRADE"
+    href: ksdegrade-structure.md
+  - name: "KSEVENT"
+    href: ksevent-structure.md
+  - name: "KSMETHOD"
+    href: ksmethod-structure.md
+  - name: "KSPIN_INTERFACE"
+    href: kspin-interface-structure.md
+  - name: "KSPIN_MEDIUM"
+    href: kspin-medium-structure.md
+  - name: "KSPROPERTY"
+    href: ksproperty-structure.md

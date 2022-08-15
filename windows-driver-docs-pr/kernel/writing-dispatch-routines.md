@@ -3,7 +3,6 @@ title: Writing Dispatch Routines
 description: Writing Dispatch Routines
 keywords: ["dispatch routines WDK kernel", "standard driver routines WDK kernel , dispatch routines", "driver routines WDK kernel , dispatch routines", "routines WDK kernel , dispatch routines", "system-space memory allocations WDK kernel", "system resource storage WDK kernel", "storing system resources", "dispatch routines WDK kernel , about dispatch routines", "IRPs WDK kernel , dispatch routines", "multiple I/O function codes WDK kernel", "IRP major function codes WDK kernel", "major function codes WDK kernel", "function codes WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Writing Dispatch Routines

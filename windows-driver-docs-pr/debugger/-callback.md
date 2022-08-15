@@ -1,5 +1,5 @@
 ---
-title: callback
+title: callback (WinDbg)
 description: The callback extension displays the callback data related to the trap for the specified thread.
 keywords: ["callback data for system traps", "callback Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - callback
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !callback
@@ -57,8 +56,7 @@ This extension command can only be used with an x86-based target computer.
 
 For information about system traps, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 If the system has not experienced a system trap, this extension will not produce useful data.
 

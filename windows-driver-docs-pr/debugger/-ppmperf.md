@@ -1,5 +1,5 @@
 ---
-title: ppmperf
+title: ppmperf (WinDbg)
 description: The ppmperf command
 keywords: ["ppmperf Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ppmperf
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ppmperf

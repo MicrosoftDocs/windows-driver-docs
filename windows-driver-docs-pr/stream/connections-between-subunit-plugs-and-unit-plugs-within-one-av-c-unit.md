@@ -6,7 +6,6 @@ keywords:
 - AV/C WDK , connection scenarios
 - AVCCONNECTINFO
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Connections between subunit plugs and unit plugs within one AV/C unit
@@ -20,7 +19,7 @@ Connect the local subunit's source plug to the unit's isochronous output plug, a
 
 This scenario is the type of connection that was originally supported in *Avc.sys*.
 
-![diagram illustrating a connection where the local pin’s dataflow member is kspin\-dataflow\-in](images/avc-ccm1.gif)
+![diagram illustrating a connection where the local pin’s dataflow member is kspin\-dataflow\-in.](images/avc-ccm1.gif)
 
 Scenario 1 describes a connection where the local pin's **DataFlow** member is KSPIN\_DATAFLOW\_IN.
 
@@ -86,7 +85,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 
 Connect from the unit's isochronous input plug to the local subunit's destination plug, as the following figure shows.
 
-![diagram illustrating a connection where the local pin’s dataflow member is kspin\-dataflow\-out](images/avc-ccm2.gif)
+![diagram illustrating a connection where the local pin’s dataflow member is kspin\-dataflow\-out.](images/avc-ccm2.gif)
 
 Scenario 2 describes a connection where the local pin's **DataFlow** member is KSPIN\_DATAFLOW\_OUT.
 

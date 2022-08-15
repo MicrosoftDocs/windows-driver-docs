@@ -2,7 +2,6 @@
 title: SMS device storage limits
 description: SMS device storage limits
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # SMS device storage limits

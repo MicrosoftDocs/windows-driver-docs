@@ -2,7 +2,6 @@
 title: Tiled resource support
 description: Tiled resources can be supported by Windows Display Driver Model (WDDM) 1.3 and later drivers. This capability is new starting with Windows 8.1.
 ms.date: 10/20/2018
-ms.localizationpriority: medium
 ---
 
 # Tiled resource support

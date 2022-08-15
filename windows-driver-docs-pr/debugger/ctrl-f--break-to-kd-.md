@@ -9,7 +9,6 @@ api_name:
 - CTRL+F (Break to KD)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CTRL+F (Break to KD)
@@ -51,8 +50,7 @@ CTRL+F  ENTER
 
  
 
-Remarks
--------
+## Remarks
 
 Under typical conditions, CTRL+F is identical to the standard break commands ([**CTRL+C**](ctrl-c--break-.md) in KD and CDB, and [Debug | Break](debug---break.md) or CTRL+BREAK in WinDbg.)
 

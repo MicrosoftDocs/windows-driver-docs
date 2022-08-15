@@ -7,7 +7,6 @@ keywords:
 - TV capture WDK video capture
 - television capture WDK video capture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PCI-Based TV Capture
@@ -17,7 +16,7 @@ PCI-based capture devices with TV/radio tuners, TV audio, and crossbars require 
 
 The following diagram shows separate renderers connected to the preview and capture streams.
 
-![diagram illustrating separate renderers connected to the preview and capture streams](images/pci-tvtuner.gif)
+![diagram illustrating separate renderers connected to the preview and capture streams.](images/pci-tvtuner.gif)
 
 The [PROPSETID\_ALLOCATOR\_CONTROL](./propsetid-allocator-control.md) property set is specific to this type of filter graph.
 

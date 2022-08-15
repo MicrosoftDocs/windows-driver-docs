@@ -9,7 +9,6 @@ api_name:
 - tokenfields
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !tokenfields
@@ -49,8 +48,7 @@ The **!tokenfields** extension displays the names and offsets of the fields with
 
 For information about the TOKEN structure, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. This book may not be available in some languages and countries.(The user-mode token structures described in the Microsoft Windows SDK documentation are slightly different.)
 
-Remarks
--------
+## Remarks
 
 This extension command is not available in Windows XP or later versions of Windows. Instead, use the [**dt (Display Type)**](dt--display-type-.md) command to show the TOKEN structure directly:
 

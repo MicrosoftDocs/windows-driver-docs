@@ -2,7 +2,6 @@
 description: This topic discusses static streams capability and explains how a USB client driver can open and close streams in a bulk endpoint of a USB 3.0 device.
 title: How to open and close static streams in a USB bulk endpoint
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How to open and close static streams in a USB bulk endpoint
@@ -40,8 +39,7 @@ Before a client driver can open or close streams, the driver must have:
 
   **WDM drivers:  **Obtain a USBD pipe handle by sending a select-configuration or select-interface request. For more information, see [How to Select a Configuration for a USB Device](how-to-select-a-configuration-for-a-usb-device.md).
 
-Instructions
-------------
+## Instructions
 
 ### How to open static streams
 
@@ -136,8 +134,7 @@ The client driver can close streams after the driver is finished using them. How
 
 The close-handle request closes all streams that were previously opened by the client driver. The client driver cannot use the request to close specific streams in the endpoint.
 
-Remarks
--------
+## Remarks
 
 **Best practices for sending a static streams request**
 

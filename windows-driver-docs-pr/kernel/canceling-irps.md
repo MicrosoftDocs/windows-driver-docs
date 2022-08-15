@@ -3,7 +3,6 @@ title: Canceling IRPs
 description: Canceling IRPs
 keywords: ["IRPs WDK kernel , canceling", "canceling IRPs", "Cancel routines", "user-canceled I/O requests WDK kernel", "completing IRPs WDK kernel , canceling IRPs", "unprocessed IRP cancellations WDK kernel"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Canceling IRPs

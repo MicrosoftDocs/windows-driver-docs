@@ -9,7 +9,6 @@ api_name:
 - .imgscan (Find Image Headers)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .imgscan (Find Image Headers)
@@ -61,8 +60,7 @@ Displays verbose information.
 
  
 
-Remarks
--------
+## Remarks
 
 If you do not use the **/r** parameter, the debugger searches all virtual memory regions.
 

@@ -1,7 +1,6 @@
 ---
 title: What Does the Zw Prefix Mean
 description: What Does the Zw Prefix Mean
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

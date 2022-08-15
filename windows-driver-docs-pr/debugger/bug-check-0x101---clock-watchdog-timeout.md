@@ -9,7 +9,6 @@ api_name:
 - CLOCK_WATCHDOG_TIMEOUT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x101: CLOCK\_WATCHDOG\_TIMEOUT
@@ -57,8 +56,7 @@ The CLOCK\_WATCHDOG\_TIMEOUT bug check has a value of 0x00000101. This indicates
 
  
 
-Cause
------
+## Cause
 
 The specified processor is not processing interrupts. Typically, this occurs when the processor is nonresponsive or is deadlocked.
 

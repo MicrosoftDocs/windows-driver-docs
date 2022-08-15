@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0xAB SESSION_HAS_VALID_POOL_ON_EXIT
-description: The SESSION_HAS_VALID_POOL_ON_EXIT bug check has a value of 0x000000AB. This bug check indicates that a session unload occurred while a session driver still held memory.
+description: The SESSION_HAS_VALID_POOL_ON_EXIT live dump has a value of 0x000000AB. This bug check indicates that a session unload occurred while a session driver still held memory.
 keywords: ["Bug Check 0xAB SESSION_HAS_VALID_POOL_ON_EXIT", "SESSION_HAS_VALID_POOL_ON_EXIT"]
 ms.date: 05/23/2017
 topic_type:
@@ -9,17 +9,14 @@ api_name:
 - SESSION_HAS_VALID_POOL_ON_EXIT
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xAB: SESSION\_HAS\_VALID\_POOL\_ON\_EXIT
 
 
-The SESSION\_HAS\_VALID\_POOL\_ON\_EXIT bug check has a value of 0x000000AB. This bug check indicates that a session unload occurred while a session driver still held memory.
+The SESSION\_HAS\_VALID\_POOL\_ON\_EXIT live dump has a value of 0x000000AB. This bug check indicates that a session unload occurred while a session driver still held memory.
 
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
+(This code can never be used for a real bugcheck; it is used to identify live dumps.)
 
 ## SESSION\_HAS\_VALID\_POOL\_ON\_EXIT Parameters
 
@@ -57,8 +54,7 @@ The SESSION\_HAS\_VALID\_POOL\_ON\_EXIT bug check has a value of 0x000000AB. Thi
 
  
 
-Cause
------
+## Cause
 
 The SESSION\_HAS\_VALID\_POOL\_ON\_EXIT bug check occurs because a session driver does not free its pool allocations before a session unload. This bug check can indicate a bug in Win32k.sys, Atmfd.dll, Rdpdd.dll, or a video or other driver.
 

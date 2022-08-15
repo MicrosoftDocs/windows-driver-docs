@@ -2,7 +2,6 @@
 title: Using Static Driver Verifier to Find Defects in Windows Drivers
 description: Static Driver Verifier (SDV) uses a set of interface rules and a model of the operating system to determine if the driver interacts correctly with the Windows operating system.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Static Driver Verifier to Find Defects in Windows Drivers
@@ -104,7 +103,7 @@ Use the following steps to prepare your code for analysis.
 
     Static Driver Verifier detects the type of driver you are analyzing (WDF, WDM, NDIS, or Storport) and selects the default set of rules for your driver type. If this is the first time you are running SDV on your driver, you should run the default rule set.
 
-    For information about the rules, see [DDI Compliance Rules](/windows-hardware/drivers/ddi/index).
+    For information about the rules, see [DDI Compliance Rules](./static-driver-verifier-rules.md).
 
 5. Start the static analysis. Click the **Main** tab, and click **Start**. When you click **Start**, a message is displayed to let you know that static analysis is scheduled and that the analysis can take a long time to run. Click **OK** to continue. The analysis begins at the time you scheduled.
 

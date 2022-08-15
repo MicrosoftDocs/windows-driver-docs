@@ -9,7 +9,6 @@ keywords:
 - 16x8 motion compensation WDK DirectX VA
 - prediction blocks WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Field-Structured Pictures

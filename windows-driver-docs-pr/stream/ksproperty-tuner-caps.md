@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_TUNER\_CAPS
@@ -56,15 +55,13 @@ The KSPROPERTY\_TUNER\_CAPS property describes the basic capabilities of a tuner
 
 The property value (operation data) is a LONG that specifies the tuning modes supported by the streaming minidriver.
 
-Remarks
--------
+## Remarks
 
 The **ModesSupported** member of the KSPROPERTY\_TUNER\_CAPS\_S structure indicates the tuning modes supported by the video capture minidriver.
 
 A single tuning device may support tuning digital TV, analog TV, AM/FM radio, as well as digital satellite systems (DSS).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -82,7 +79,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_TUNER\_CAPS\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tuner_caps_s)
 

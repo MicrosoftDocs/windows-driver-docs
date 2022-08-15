@@ -4,7 +4,6 @@ description: The HS_PLUGIN_CHECK_FOR_UPDATES function checks for configuration u
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_CHECK_FOR_UPDATES) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_PLUGIN\_CHECK\_FOR\_UPDATES function
@@ -14,8 +13,7 @@ ms.localizationpriority: medium
 
 The **HS\_PLUGIN\_CHECK\_FOR\_UPDATES** function checks for configuration updates at the frequency specified in the **dwProfileUpdateTimeDays** member of the plugin’s [**HS\_PLUGIN\_PROFILE**](hs-plugin-profile.md) structure.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_PLUGIN_CHECK_FOR_UPDATES)(
@@ -23,20 +21,17 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 This function has no parameters.
 
 **   
 
-Return value
-------------
+## Return value
 
 This function is called by the host to communicate with the plugin and does not return a value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

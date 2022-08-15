@@ -3,7 +3,6 @@ title: Using Debugger Extension Commands
 description: Using Debugger Extension Commands
 keywords: ["extension commands ( commands), using", "extension commands ( commands), default search order"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using Debugger Extension Commands

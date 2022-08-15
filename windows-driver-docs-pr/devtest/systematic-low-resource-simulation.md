@@ -2,24 +2,21 @@
 title: Systematic low resources simulation
 description: The Systematic low resources simulation option injects resource failures in kernel mode drivers.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Systematic low resources simulation
 
->[!Note]
-> **This check is deprecated starting in Windows 10 Insider Preview Build 19042 and above**
 The Systematic low resources simulation option injects resource failures in kernel mode drivers. This option penetrates driver error handling paths. Testing these paths has historically been very difficult. The Systematic low resources simulation option injects resource failures in a predictable manner, which makes the issues it finds reproducible. Because the error paths are easy to reproduce, it also makes it easy to verify fixes to these issues.
 
 To help you determine the root cause of the error, a debugger extension is provided that can tell you exactly which failures have been injected and in what order.
 
 **Caution**  This option is not intended for use when you are verifying all (or a large collection of) drivers on a computer. This option should be used only when you are doing targeted testing of individual drivers or their attached filter drivers. Using this option on a large number of drivers at the same time could cause unpredictable results, and could force crashes in components unrelated to the driver(s) you are testing.
 
- 
+
 
 **Note**  For Windows 8.1, the [Stack Based Failure Injection](stack-based-failure-injection.md) feature, which was available in the WDK 8, has been integrated into Driver Verifier. On computers running Windows 8.1, use the Systematic low resources simulation option.
 
- 
+
 
 When the Systematic low resources simulation option is enabled on a specific driver, it intercepts some calls from that driver to the kernel and Ndis.sys. Systematic low resources simulation looks at the call stack—specifically, at the portion of the call stack that comes from the driver it is enabled on. If this is the first time it has ever seen that stack, it will fail the call according to the semantics of that call. Otherwise, if it has seen that call before, it will pass it through untouched. Systematic low resources simulation contains logic to deal with the fact that a driver can be loaded and unloaded multiple times. It will recognize that a call stack is the same even if the driver is reloaded into a different memory location.
 
@@ -30,6 +27,14 @@ You can activate the Systematic low resources simulation feature for one or more
 
 -   **At the command line**
 
+    **Windows 11**
+
+    At the command line, Systematic low resources simulation is represented by **verifier /rc 19 36** or **verifier /dif 19**, both of which include the required DIF mode.
+
+    The feature will be active after the next boot, or immediately if **/now** is added to the command string.
+
+    **Windows 10 and below**
+
     At the command line, Systematic low resources simulation is represented by **verifier /flags 0x040000** (Bit 18). To Systematic low resources simulation, use a flag value of 0x040000 or add 0x040000 to the flag value. For example:
 
     ```
@@ -37,6 +42,8 @@ You can activate the Systematic low resources simulation feature for one or more
     ```
 
     The feature will be active after the next boot.
+
+    **General**
 
     When you enable the Systematic low resources simulation option, you can use the **/faultssystematic** *OPTION* command line option to further control the Systematic low resources simulation.
 
@@ -103,7 +110,7 @@ You can activate the Systematic low resources simulation feature for one or more
     </tbody>
     </table>
 
-     
+
 
 -   **Using Driver Verifier Manager**
 
@@ -116,7 +123,7 @@ You can activate the Systematic low resources simulation feature for one or more
 ## <span id="Debugging_bug_checks_caused_by_Systematic_low_resources_simulation"></span><span id="debugging_bug_checks_caused_by_systematic_low_resources_simulation"></span><span id="DEBUGGING_BUG_CHECKS_CAUSED_BY_SYSTEMATIC_LOW_RESOURCES_SIMULATION"></span>Debugging bug checks caused by Systematic low resources simulation
 
 
-Most of the issues found with Systematic low resources simulation result in bug checks. To help determine the cause of these code bugs, the [Windows Debugging](../debugger/index.md) tools for Windows 8.1 provides the debugger extension (kdexts.dll) and the necessary symbols.
+Most of the issues found with Systematic low resources simulation result in bug checks. To help determine the cause of these code bugs, the [Debugging Tools for Windows](../debugger/index.md) provide the debugger extension (kdexts.dll) and the necessary symbols.
 
 **To run the debugger extension**
 
@@ -128,5 +135,5 @@ Most of the issues found with Systematic low resources simulation result in bug 
 
 This will dump information to your debugger showing the call stacks from the most recent failures injected.
 
- 
+
 

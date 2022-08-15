@@ -2,7 +2,6 @@
 title: Setting Up 2PF Kernel-Mode Debugging using KDNET
 description: Debugging Tools for Windows supports kernel debugging over the high speed 2PF transport. This topic describes how to set up 2PF using the kdnet.exe utility.
 ms.date: 04/12/2021
-ms.localizationpriority: medium
 ---
 
 # Setting Up 2PF Kernel-Mode Debugging using KDNET
@@ -33,7 +32,7 @@ The following is required:
 
 - A network connection between the target and host.
 
-- Windows 10 Insider Preview Build 21313 and later.
+- Windows 10 Build 21313 and later.
 
 ## Supported 2PF Network Cards
 
@@ -327,7 +326,7 @@ You can verify that the KDNET PF was added successfully by checking the new NIC 
 
 This diagram shows three different adapters, with Adapter #2 reserved for use by the kernel debugger.
 
-![device manager showing the network node with a node for Windows KDNET 2PF supported network adapter](images/kdnet-2pf-device-manager-host-adapter.png)
+![device manager showing the network node with a node for Windows KDNET 2PF supported network adapter.](images/kdnet-2pf-device-manager-host-adapter.png)
 
 ### Common error messages - adding a new PF
 

@@ -10,8 +10,6 @@ keywords:
 - Web Services for Devices WDK WIA , tools
 ms.date: 06/28/2018
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Driver Development Tools

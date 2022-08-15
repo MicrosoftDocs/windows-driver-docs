@@ -4,10 +4,11 @@ description: WDI_TLV_ADDITIONAL_IES is a TLV that contains additional Informatio
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ADDITIONAL_IES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_ADDITIONAL\_IES
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_ADDITIONAL\_IES is a TLV that contains additional Information Element (IE) settings.
@@ -33,8 +34,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

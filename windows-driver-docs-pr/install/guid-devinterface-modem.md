@@ -10,7 +10,6 @@ api_location:
 - Ntddmodm.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,8 +43,7 @@ The GUID_DEVINTERFACE_MODEM [device interface class](./overview-of-device-interf
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for modem devices register instances of this device interface class to notify the operating system and applications of the presence of modem devices.
 
@@ -70,8 +68,7 @@ For an example of using this device interface class, see the [FakeModem - Unimod
 
 [**GUID_CLASS_MODEM**](guid-class-modem.md) is an obsolete identifier for this device interface class; for new instances of this class, use GUID_DEVINTERFACE_MODEM instead.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -6,7 +6,6 @@ keywords:
 - asynchronous framing WDK WAN
 - WAN packet framing WDK networking , asynchronous framing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Asynchronous Framing
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 The following diagram illustrates asynchronous framing with compression turned off.
 
-![diagram illustrating asynchronous framing with compression turned off](images/ng10f1.png)
+![diagram illustrating asynchronous framing with compression turned off.](images/ng10f1.png)
 
  
 

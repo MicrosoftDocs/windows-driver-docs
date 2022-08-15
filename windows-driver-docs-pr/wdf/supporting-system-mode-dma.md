@@ -2,7 +2,6 @@
 title: Supporting System-Mode DMA
 description: Describes the code that a KMDF driver provides in its event callback functions to handle I/O requests for a system-mode DMA device.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting System-Mode DMA
@@ -20,7 +19,7 @@ For information about KMDF and bus-master DMA, see [Handling I/O Requests in a K
 
 The following figure shows the event callback functions that your driver uses to support system-mode DMA:
 
-![system-mode dma implementation in kmdf drivers](images/sys-mode-dma-in-kmdf.png)
+![system-mode dma implementation in kmdf drivers.](images/sys-mode-dma-in-kmdf.png)
 
 ## Creating a System-Mode DMA Enabler
 

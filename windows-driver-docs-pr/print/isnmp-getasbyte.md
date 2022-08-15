@@ -17,15 +17,13 @@ api_location:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # ISNMP::GetAsByte method
 
 The `GetAsByte` method enables an ASP Web page to get the value identified by an SNMP OID and to convert the value to an unsigned integer.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT GetAsByte(
@@ -34,8 +32,7 @@ HRESULT GetAsByte(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrOID* \[in\]  
 A caller-supplied BSTR value that contains the SNMP OID.
@@ -43,8 +40,7 @@ A caller-supplied BSTR value that contains the SNMP OID.
 *puValue* \[out\]  
 A caller-supplied pointer to a location that receives the unsigned integer value.
 
-Return value
-------------
+## Return value
 
 This method returns one of the values in the following table.
 
@@ -118,8 +114,7 @@ objSNMP.Open strIP, strCommunity, 2, 1000
 OIDValue = objSNMP.GetAsByte ("25.3.5.1.2")
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_TIMECODE\_READER
@@ -56,13 +55,11 @@ The KSPROPERTY\_TIMECODE\_READER property retrieves the timecode for the current
 
 The property value (operation data) is a TIMECODE\_SAMPLE structure that specifies the timecode of the current tape position.
 
-Remarks
--------
+## Remarks
 
 The **TimecodeSamp** member of the KSPROPERTY\_TIMECODE\_S structure describes the timecode for the current tape position.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -80,7 +77,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_TIMECODE\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_timecode_s)
 

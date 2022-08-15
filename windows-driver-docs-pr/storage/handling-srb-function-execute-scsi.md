@@ -6,7 +6,6 @@ keywords:
 - HwScsiStartIo
 - SRB_FUNCTION_EXECUTE_SCSI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling SRB\_FUNCTION\_EXECUTE\_SCSI

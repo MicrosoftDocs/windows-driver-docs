@@ -9,7 +9,6 @@ api_name:
 - .event_code (Display Event Code)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .event\_code (Display Event Code)
@@ -46,8 +45,7 @@ The **.event\_code** command displays the current event instructions.
 
  
 
-Remarks
--------
+## Remarks
 
 The **.event\_code** command displays the hexadecimal instructions at the current event's instruction pointer. The display includes up to 64 bytes of instructions if they are available.
 

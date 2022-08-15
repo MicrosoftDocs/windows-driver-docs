@@ -2,7 +2,6 @@
 description: This topic describes how to view a USB event trace in Xperf.
 title: Viewing a USB Event Trace in Xperf
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Viewing a USB Event Trace in Xperf
@@ -28,7 +27,7 @@ You can move the mouse pointer across sections of the timeline and zoom in. This
 
 You can display an event summary table, in a spreadsheet form, for the entire trace or for just a selected interval as shown in this image.
 
-![windows performance analyzer - xperf](images/xperf2.png)
+![windows performance analyzer - xperf.](images/xperf2.png)
 
 To display a summary table, right-click in the **Generic Events** screen and select **Summary Table**.
 

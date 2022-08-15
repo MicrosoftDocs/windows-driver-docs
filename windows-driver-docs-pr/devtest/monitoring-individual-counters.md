@@ -7,7 +7,6 @@ keywords:
 - statistics WDK Driver Verifier
 - counters WDK Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Monitoring Individual Counters
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 *Individual counters* are statistics which monitor some of the actions that Driver Verifier performs on drivers. These statistics are kept separately for each driver being verified.
 
-Individual counters can be viewed by using the [**Verifier Command Line**](verifier-command-line.md), or by using Driver Verifier Manager. There are two versions of Driver Verifier Manager -- one for [Windows 2000](driver-verifier-manager--windows-2000-.md) and one for [Windows XP and later](driver-verifier-manager--windows-xp-and-later-.md).
+Individual counters can be viewed by using the [**Verifier Command Line**](verifier-command-line.md), or by using [Driver Verifier Manager](driver-verifier-manager--windows-xp-and-later-.md). 
 
 ### <span id="verifier_command_line"></span><span id="VERIFIER_COMMAND_LINE"></span>Verifier Command Line
 
@@ -26,11 +25,8 @@ To view individual counters, use the **verifier /query** command. This will show
 
 Individual counters are also included in Driver Verifier [log files](creating-log-files.md).
 
-### <span id="driver_verifier_manager__windows_2000_"></span><span id="DRIVER_VERIFIER_MANAGER__WINDOWS_2000_"></span>Driver Verifier Manager (Windows 2000)
 
-To view individual counters, select the **Pool Tracking** tab. Then select the desired driver from the drop-down box.
-
-### <span id="driver_verifier_manager__windows_xp_and_later_"></span><span id="DRIVER_VERIFIER_MANAGER__WINDOWS_XP_AND_LATER_"></span>Driver Verifier Manager (Windows XP and later)
+### <span id="driver_verifier_manager__windows_xp_and_later_"></span><span id="DRIVER_VERIFIER_MANAGER__WINDOWS_XP_AND_LATER_"></span>Driver Verifier Manager 
 
 To view individual counters, start Driver Verifier Manager and select the **Display information about the currently verified drivers** task. Then press **Next** three times.
 

@@ -4,7 +4,6 @@ description: Closing an Address Family in a CoNDIS Client
 keywords:
 - client closed AFs WDK CoNDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Closing an Address Family in a CoNDIS Client

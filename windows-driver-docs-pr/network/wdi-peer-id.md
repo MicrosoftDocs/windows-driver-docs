@@ -4,7 +4,6 @@ description: This topic describes the WDI_PEER_ID data type for WDI miniport dri
 keywords:
 - WDI_PEER_ID, WDK WDI_PEER_ID network drivers
 ms.date: 11/27/2017
-ms.localizationpriority: medium
 ---
 
 # WDI_PEER_ID

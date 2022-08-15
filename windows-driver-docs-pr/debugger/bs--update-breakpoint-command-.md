@@ -9,7 +9,6 @@ api_name:
 - bs (Update Breakpoint Command)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # bs (Update Breakpoint Command)
@@ -65,8 +64,7 @@ Any command that resumes program execution after a breakpoint (such as **g** or 
 
 For more information about and examples of how to use breakpoints, other breakpoint commands and methods of controlling breakpoints, and how to set breakpoints in user space from a kernel debugger, see [Using Breakpoints](using-breakpoints.md). For more information about conditional breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).
 
-Remarks
--------
+## Remarks
 
 If the *CommandString* is not specified, any commands already set on the breakpoint are removed.
 

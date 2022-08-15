@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # JobId element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **JobId** element uniquely identifies a job within a scanner.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobId>
@@ -26,13 +24,11 @@ Usage
 </wscn:JobId>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. An integer value from 1 through 2147483648.
 
@@ -78,8 +74,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The WSD Scan Service returns a **JobId** element to a client through a [**CreateScanJobResponse**](createscanjobresponse.md) operation element. The client uses the returned **JobId** when it initiates a scan request through the [**RetrieveImageRequest**](retrieveimagerequest.md) operation element.
 

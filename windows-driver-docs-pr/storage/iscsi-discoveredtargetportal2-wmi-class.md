@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_DiscoveredTargetPortal2 WMI Class
 description: ISCSI\_DiscoveredTargetPortal2 WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

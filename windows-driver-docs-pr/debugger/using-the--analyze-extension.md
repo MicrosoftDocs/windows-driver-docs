@@ -3,7 +3,6 @@ title: Using the analyze Extension
 description: Using the analyze Extension
 keywords: ["analyze extension, examples"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Using the !analyze Extension

@@ -3,7 +3,6 @@ title: Methods for Accessing Data Buffers
 description: Methods for Accessing Data Buffers
 keywords: ["I/O WDK kernel , data buffers", "data buffers WDK I/O", "buffers WDK I/O", "buffers WDK I/O , accessing", "data buffers WDK I/O , accessing", "data transfers WDK kernel , data buffer access", "transferring data WDK kernel , data buffer access"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Methods for Accessing Data Buffers

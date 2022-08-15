@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # InputSize element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The optional **InputSize** element specifies the size of the original scan media.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:InputSize wscn:MustHonor=""
@@ -27,8 +25,7 @@ Usage
 </wscn:InputSize wscn:MustHonor="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -100,8 +97,7 @@ Attributes
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **InputSize** element can contain the [**DocumentSizeAutoDetect**](documentsizeautodetect.md) or [**InputMediaSize**](inputmediasize.md) element, but not both. **DocumentSizeAutoDetect** specifies that the device utomatically detects the size of the original page. **InputMediaSize** specifies the size of the media to be scanned for the current job.
 

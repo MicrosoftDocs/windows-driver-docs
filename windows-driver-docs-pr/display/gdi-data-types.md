@@ -7,7 +7,6 @@ keywords:
 - drawing WDK GDI , data types
 - data types WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI Data Types

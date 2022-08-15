@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_ONESHOT\_DISCONNECT
@@ -43,7 +42,7 @@ The **KSPROPERTY\_ONESHOT\_DISCONNECT** property is used to prompt the audio dri
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>NULL</p></td>
 </tr>
 </tbody>
@@ -62,13 +61,11 @@ The **KSPROPERTY\_ONESHOT\_DISCONNECT** property returns STATUS\_SUCCESS if the 
 
  
 
-Remarks
--------
+## Remarks
 
 You can implement the [**KSPROPERTY\_JACK\_DESCRIPTION**](ksproperty-jack-description.md) pin property in your driver. This implementation allows you to check the connection status of the endpoint after you make a **KSPROPERTY\_ONESHOT\_DISCONNECT** property request.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -90,7 +87,6 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](../stream/ksproperty-structure.md)
 
 [**KSPROPERTY\_JACK\_DESCRIPTION**](ksproperty-jack-description.md)
-

@@ -9,7 +9,6 @@ api_name:
 - NonPnPDrvPowerPolicyOwnerAPI
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NonPnPDrvPowerPolicyOwnerAPI rule (kmdf)
@@ -35,8 +34,7 @@ If the driver does not register the [*EvtDriverDeviceAdd*](/windows-hardware/dri
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

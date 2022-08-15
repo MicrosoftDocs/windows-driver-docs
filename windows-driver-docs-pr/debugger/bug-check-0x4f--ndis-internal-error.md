@@ -9,7 +9,6 @@ api_name:
 - NDIS_INTERNAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x4F: NDIS\_INTERNAL\_ERROR

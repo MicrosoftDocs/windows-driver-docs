@@ -4,7 +4,6 @@ description: WSK_TRANSPORT_LIST_CHANGE
 ms.date: 07/18/2017
 keywords:
  - WSK_TRANSPORT_LIST_CHANGE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WSK\_TRANSPORT\_LIST\_CHANGE
@@ -61,8 +60,7 @@ An IRP is required for this client control operation.
 
 The WSK subsystem will cancel any pending IRPs if the WSK application calls [**WskDeregister**](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskderegister) to detach itself from the WSK subsystem.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

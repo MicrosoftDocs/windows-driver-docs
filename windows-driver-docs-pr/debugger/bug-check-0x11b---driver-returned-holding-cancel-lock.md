@@ -9,7 +9,6 @@ api_name:
 - DRIVER_RETURNED_HOLDING_CANCEL_LOCK
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x11B: DRIVER\_RETURNED\_HOLDING\_CANCEL\_LOCK
@@ -49,8 +48,7 @@ The DRIVER\_RETURNED\_HOLDING\_CANCEL\_LOCK bug check has a value of 0x0000011B.
 
  
 
-Remarks
--------
+## Remarks
 
 The cancel spin lock should have been released by the *cancel* routine.
 

@@ -9,7 +9,6 @@ api_name:
 - ndiskd.nblpool
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.nblpool
@@ -56,8 +55,7 @@ Find NBLs that contain an NB that straddles the given physical address.
 
 Ndiskd.dll
 
-Examples
---------
+## Examples
 
 Enter the **!ndiskd.nblpool** command with no parameters to see a list of all allocated NBL pools. In this example, look for the NBL pool allocated by the kernel debugger network interface card (kdnic) with the KDNr Tag. Its handle is ffffdf80147e4a40.
 
@@ -158,7 +156,7 @@ ALL ALLOCATED NBLs
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
+[Debugging the Network Stack](/shows/defrag-tools/175-debugging-network-stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 

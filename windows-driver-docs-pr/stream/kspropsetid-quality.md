@@ -2,7 +2,6 @@
 title: KSPROPSETID\_Quality
 description: KSPROPSETID\_Quality
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPSETID\_Quality

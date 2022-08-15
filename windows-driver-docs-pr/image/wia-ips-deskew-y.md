@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_DESKEW\_Y
@@ -25,8 +24,7 @@ Valid Values: WIA\_PROP\_RANGE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The WIA\_IPS\_DESKEW\_X and WIA\_IPS\_DESKEW\_Y properties describe where the two upper corners of a skewed image are located within the bounding rectangle that the [**WIA\_IPS\_XPOS**](wia-ips-xpos.md), [**WIA\_IPS\_YPOS**](wia-ips-ypos.md), [**WIA\_IPS\_XEXTENT**](wia-ips-xextent.md), and [**WIA\_IPS\_YEXTENT**](wia-ips-yextent.md) properties define.
 
@@ -34,8 +32,7 @@ The valid values for WIA\_IPS\_DESKEW\_Y must be between 0 and (WIA\_IPS\_YEXTEN
 
 WIA\_IPS\_DESKEW\_Y contains the number of pixels in the y-direction from WIA\_IPS\_YPOS to the y-coordinate of the leftmost corner of the image to be deskewed.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -4,7 +4,6 @@ description: OID_WWAN_PIN_LIST returns a list of all the different types of Pers
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_PIN_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_PIN\_LIST
@@ -16,8 +15,7 @@ Set requests are not supported.
 
 Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_PIN\_LIST**](ndis-status-wwan-pin-list.md) status notification containing an [**NDIS\_WWAN\_PIN\_LIST**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_list) structure to return a list of PINs with corresponding descriptions when completing query requests.
 
-Remarks
--------
+## Remarks
 
 For more information about using this OID, see [WWAN Pin Operations](./mb-pin-operations.md).
 
@@ -29,8 +27,7 @@ Any PIN that provides device power-on verification or identification functionali
 
 Miniport drivers must return this information when the device ready-state changes to *WwanReadyStateInitialized* or when the device ready-state is *WwanReadyStateDeviceLocked* (PIN locked). Miniport drivers should also return this information in other device ready-states, wherever possible.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

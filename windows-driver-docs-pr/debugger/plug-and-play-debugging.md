@@ -3,7 +3,6 @@ title: Plug and Play Debugging
 description: This topic describes Plug and Play Debugging
 keywords: Plug and Play, PnP, drivers, debugging
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Plug and Play Debugging

@@ -1,13 +1,12 @@
 ---
 title: EFI_USB_DEVICE_INFO
-description: EFI_USB_DEVICE_INFO
-ms.date: 05/21/2020
-ms.localizationpriority: medium
+description: The EFI_USB_DEVICE_INFO structure is used to define the USB function device.
+ms.date: 08/20/2021
 ---
 
-# EFI\_USB\_DEVICE\_INFO
+# EFI_USB_DEVICE_INFO
 
-The **EFI\_USB\_DEVICE\_INFO** structure is used to define the USB function device.
+The **EFI_USB_DEVICE_INFO** structure is used to define the USB function device.
 
 ## Syntax
 
@@ -21,17 +20,15 @@ typedef struct
 
 ## Members
 
-### DeviceDescriptor
+**DeviceDescriptor**
+A EFI_USB_DEVICE_DESCRIPTOR structure that contains configuration information for the USB device.
 
-A EFI\_USB\_DEVICE\_DESCRIPTOR structure that contains configuration information for the USB device.
-
-### ConfigInfoTable
-
-A EFI\_USB\_CONFIG\_INFO structure that contains information about the supported configurations.
+**ConfigInfoTable**
+A EFI_USB_CONFIG_INFO structure that contains information about the supported configurations.
 
 ## Remarks
 
-The **EFI\_USB\_CONFIG\_DESCRIPTOR** and **EFI\_USB\_DEVICE\_DESCRIPTOR** structures are defined in UEFI specification 2.3. For more information, visit the [UEFI.org](https://uefi.org/specifications) website.
+The **EFI_USB_CONFIG_DESCRIPTOR** and **EFI_USB_DEVICE_DESCRIPTOR** structures are defined in UEFI specification 2.3. For more information, visit the [UEFI.org](https://uefi.org/specifications) website.
 
 ## Requirements
 

@@ -5,7 +5,6 @@ keywords:
 - HOTSPOT_HOST_HANDLERS structure Network Drivers Starting with Windows Vista
 - PHOTSPOT_HOST_HANDLERS structure pointer Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HOTSPOT\_HOST\_HANDLERS structure
@@ -15,8 +14,7 @@ ms.localizationpriority: medium
 
 The **HOTSPOT\_HOST\_HANDLERS** structure contains the hotspot host handlers function table. This function table is passed to the plugin when [**HSPluginInitPlugin**](hsplugininitplugin.md) is called to initialize it. The table contains functions that are called by the plugin to communicate with the hotspot host.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HOTSPOT_HOST_HANDLERS {
@@ -29,8 +27,7 @@ typedef struct _HOTSPOT_HOST_HANDLERS {
 } HOTSPOT_HOST_HANDLERS, *PHOTSPOT_HOST_HANDLERS;
 ```
 
-Members
--------
+## Members
 
 **HSHostAllocateMemory**  
 Optional memory management handler.
@@ -62,8 +59,7 @@ Optional periodic request.
 
 Handle to the function that is called to communicate with the user. For more information see [**HS\_HOST\_SEND\_USER\_MESSAGE**](hs-host-send-user-message.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

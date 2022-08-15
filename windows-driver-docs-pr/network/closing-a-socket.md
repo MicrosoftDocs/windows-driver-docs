@@ -7,7 +7,6 @@ keywords:
 - closing sockets
 - WskCloseSocket
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Closing a Socket

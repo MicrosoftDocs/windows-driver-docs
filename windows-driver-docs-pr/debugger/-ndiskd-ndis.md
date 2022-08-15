@@ -9,7 +9,6 @@ api_name:
 - ndiskd.ndis
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.ndis
@@ -30,8 +29,7 @@ This extension has no parameters.
 
 Ndiskd.dll
 
-Examples
---------
+## Examples
 
 The following example shows that the debugee machine has a Checked Ndis build.
 

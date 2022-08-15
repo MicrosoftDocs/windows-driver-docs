@@ -7,7 +7,6 @@ keywords:
 - INF files WDK file system
 - INF files WDK file system , about file system filter driver installs
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing a File System Filter Driver

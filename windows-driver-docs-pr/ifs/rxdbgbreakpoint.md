@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # RxDbgBreakPoint function
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 **RxDbgBreakPoint** breaks into the kernel debugger if one is installed.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 VOID RxDbgBreakPoint(
@@ -28,19 +26,16 @@ VOID RxDbgBreakPoint(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *LineNumber*   
 The line number in the source file where **RxDbgBreakPoint** was called.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 This routine calls the kernel **DbgBreakPoint** routine.
 
@@ -48,8 +43,7 @@ This routine raises an exception that is handled by the kernel debugger if one i
 
 In kernel mode, a break exception that is not handled will cause a blue screen (bug check) to result. You can, however, connect a kernel-mode debugger to the target computer that has kernel debugging enabled. For more information, see [Windows Debugging](../debugger/index.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

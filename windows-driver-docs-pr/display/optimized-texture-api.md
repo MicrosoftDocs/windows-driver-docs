@@ -8,7 +8,6 @@ keywords:
 - DDSCAPS2_HINTSTATIC
 - DDSCAPS2_OPAQUE
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Optimized Texture API

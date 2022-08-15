@@ -4,7 +4,6 @@ description: This topic describes the OID_TCP_TASK_IPSEC_ADD_SA object identifie
 keywords:
 - OID_TCP_TASK_IPSEC_ADD_SA
 ms.date: 11/06/2017
-ms.localizationpriority: medium
 ---
 
 # OID_TCP_TASK_IPSEC_ADD_SA

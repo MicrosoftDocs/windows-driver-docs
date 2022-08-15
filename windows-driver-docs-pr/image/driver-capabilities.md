@@ -2,7 +2,6 @@
 title: WIA minidriver capabilities
 description: All WIA minidrivers must define the device's ability to handle notification events and commands. This section describes these minidriver capabilities.
 ms.date: 07/06/2020
-ms.localizationpriority: medium
 ---
 
 # WIA minidriver capabilities
@@ -11,7 +10,7 @@ All WIA minidrivers must define the device's ability to handle notification even
 
 The WIA minidriver is responsible for building a table that lists all of the events and commands that it supports. The following diagram illustrates the capabilities table that the WIA minidriver builds.
 
-![diagram illustrating the wia minidriver capabilities table](images/wia-capabilitiestable.png)
+![diagram illustrating the wia minidriver capabilities table.](images/wia-capabilitiestable.png)
 
 The capabilities table is defined as an array of [**WIA\_DEV\_CAP\_DRV**](/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_wia_dev_cap_drv) structures. The minidriver must construct this array and return it to the WIA service when the WIA service calls the [**IWiaMiniDrv::drvGetCapabilities**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetcapabilities) method.
 

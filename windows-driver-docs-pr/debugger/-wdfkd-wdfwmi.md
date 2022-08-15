@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfwmi
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfwmi
@@ -39,8 +38,7 @@ KMDF 1
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The output of the **!wdfkd.wdfwmi** extension includes information about the WMI registration, provider, and instances.
 

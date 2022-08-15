@@ -3,7 +3,6 @@ title: Threads and Processes
 description: Threads and Processes
 keywords: ["Debugger Engine, threads and processes"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Threads and Processes

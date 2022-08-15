@@ -1,5 +1,5 @@
 ---
-title: .break
+title: .break (WinDbg)
 description: The .break token behaves like the break keyword in C.
 keywords: [".break Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - .break
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .break
@@ -32,8 +31,7 @@ The **.break** token behaves like the **break** keyword in C.
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
-Remarks
--------
+## Remarks
 
 The **.break** token can be used within any [**.for**](-for.md), [**.while**](-while.md), or [**.do**](-do.md) loop.
 

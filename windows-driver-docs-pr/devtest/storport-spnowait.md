@@ -9,7 +9,6 @@ api_name:
 - SpNoWait
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # SpNoWait rule (storport)
@@ -19,8 +18,7 @@ This rule verifies that waits or data allocation are not performed inside **Star
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**StorPortStallExecution**](/windows-hardware/drivers/ddi/storport/nf-storport-storportstallexecution)
 [**ExAcquireSharedWaitForExclusive**](/previous-versions/ff544370(v=vs.85))
@@ -60,7 +57,7 @@ Applies to
 [**IoAllocateIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp)
 [**IoWMIAllocateInstanceIds**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiallocateinstanceids)
 [**KeWaitForMultipleObjects**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects)
-[**KeWaitForMutexObject**](https://msdn.microsoft.com/library/windows/hardware/ff553344)
+[**KeWaitForMutexObject**](/windows-hardware/drivers/ddi/wdm/)
 [**KeWaitForSingleObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitforsingleobject)
 [**MmAllocateNonCachedMemory**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmallocatenoncachedmemory)
 [**MmAllocatePagesForMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatepagesformdl)

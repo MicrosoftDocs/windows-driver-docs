@@ -3,7 +3,6 @@ title: Understanding When Remove IRPs Are Issued
 description: Understanding When Remove IRPs Are Issued
 keywords: ["remove IRPs WDK PnP", "IRPs WDK PnP", "I/O request packets WDK PnP"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Understanding When Remove IRPs Are Issued
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 The following figure shows the typical sequence of IRPs involved in removing the drivers for a device.
 
-![diagram illustrating typical remove irp transitions](images/rem-irps.png)
+![diagram illustrating typical remove irp transitions.](images/rem-irps.png)
 
 The following notes correspond to the circled numbers in the previous figure:
 

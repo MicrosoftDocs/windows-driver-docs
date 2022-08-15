@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_DEVICE_SERVICE_SESSION_RE
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WWAN_DEVICE_SERVICE_SESSION_READ Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SESSION\_READ
@@ -16,8 +15,7 @@ Miniport drivers can only use this notification to send unsolicited events.
 
 This notification uses the [**NDIS\_WWAN\_DEVICE\_SERVICE\_SESSION\_READ**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_session_read) structure.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

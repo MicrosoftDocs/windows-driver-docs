@@ -4,7 +4,6 @@ description: OID_WWAN_SMS_DELETE deletes SMS text messages stored in the MB devi
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SMS_DELETE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_SMS\_DELETE
@@ -18,8 +17,7 @@ Set requests use the [**NDIS\_WWAN\_SMS\_DELETE**](/windows-hardware/drivers/ddi
 
 Miniport drivers process this OID asynchronously, and should return an NDIS\_STATUS\_INDICATION\_REQUIRED provisional response to any set requests. Miniport drivers should send an [**NDIS\_STATUS\_WWAN\_SMS\_DELETE**](ndis-status-wwan-sms-delete.md) indication when they have completed the transaction.
 
-Remarks
--------
+## Remarks
 
 For more information about using this OID, see [WWAN SMS Operations](./mb-sms-operations.md).
 
@@ -29,8 +27,7 @@ Miniport drivers may receive requests to delete SMS text messages based on an in
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support SMS text messages, or the ability to delete SMS text messages.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

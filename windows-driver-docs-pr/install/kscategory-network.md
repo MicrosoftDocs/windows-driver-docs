@@ -10,7 +10,6 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,13 +43,11 @@ The KSCATEGORY_NETWORK [device interface class](./overview-of-device-interface-c
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_NETWORK to indicate to the operating system that the devices support the KSCATEGORY_NETWORK functional category.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

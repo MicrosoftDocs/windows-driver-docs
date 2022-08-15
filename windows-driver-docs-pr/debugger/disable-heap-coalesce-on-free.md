@@ -3,7 +3,6 @@ title: Disable heap coalesce on free
 description: Disable heap coalesce on free
 keywords: ["Disable heap coalesce on free (global flag)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Disable heap coalesce on free

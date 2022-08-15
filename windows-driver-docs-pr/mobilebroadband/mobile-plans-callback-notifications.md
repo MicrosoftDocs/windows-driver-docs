@@ -4,7 +4,6 @@ description: Learn about the Callback notifications support by the Mobile Plans 
 keywords:
 - Windows Mobile Plans Callback notifications, Mobile Plans implementation mobile operators
 ms.date: 05/24/2019
-ms.localizationpriority: medium
 ---
 
 # Mobile Plans callback notifications
@@ -31,7 +30,7 @@ The callback method should be used when performing an eSIM profile download in t
 
 The following diagram shows the call flow for an inline profile download callback:
 
-![Mobile Plans inline profile download sequence diagram](images/mobile_plans_inline_profile_flow.png)
+![Mobile Plans inline profile download sequence diagram.](images/mobile_plans_inline_profile_flow.png)
 
 This is a revised version of the legacy [Inline profile delivery](mobile-plans-legacy-callback-notifications.md#inline-profile-delivery) callback, which can be found in the Appendix for documentation purposes. It is recommended that mobile operators use the revised callback method above.
 
@@ -44,7 +43,7 @@ This is a revised version of the legacy [Inline profile delivery](mobile-plans-l
 
 | Return value type | Description |
 | --- | --- |
-| MobilePlansOperationContext | An object with identifiers to which match to this unique download operation.
+| [MobilePlansOperationContext](#mobileplansoperationcontext-details) | An object with identifiers to which match to this unique download operation.
 
 The eSIM profile download will begin upon receipt of the callback notificaiton. Control is returned to the web portal immediately after the call. UI will be displayed to show the profile download progress as popup element rendered on top of the web portal. The web portal can continue to be navigated during this process.
 
@@ -166,7 +165,7 @@ function onActivationComplete(activationArgs) {
 
 The following diagram shows the call flow for how the Mobile Plans app supports the delayed download and activation of an eSIM profile. This should be used when the eSIM profile is not available to be released by the SM-DP+ server, and can only be downloaded after a period of time. It is expected that the device will be able to register on the cellular network once the profile is downloaded and activated.
 
-![Mobile Plans deferred profile download sequence diagram](images/mobile_plans_delay_profile_flow.png)
+![Mobile Plans deferred profile download sequence diagram.](images/mobile_plans_delay_profile_flow.png)
 
 ### MobilePlansInlineOperations.notifyProfileDownload(purchaseMetaData, activationCode, downloadDelay)
 
@@ -178,7 +177,7 @@ The following diagram shows the call flow for how the Mobile Plans app supports 
 
 | Return value type | Description |
 | --- | --- |
-| MobilePlansOperationContext | An object with identifiers to which match to this unique download operation.
+| [MobilePlansOperationContext](#mobileplansoperationcontext-details) | An object with identifiers to which match to this unique download operation.
 
 Control is returned to the mobile operator Portal immediately after the call. UI will be displayed to inform the user that a profile will be installed later. After the `downloadDelay` minutes has occurred, a notification will be shown to the user, inviting them to begin the process of downloading the profile.
 
@@ -208,9 +207,9 @@ This applies for the deferred eSIM profile download scenario, but it could be us
 
 The following diagram shows the high level flow for how the Mobile Plans program supports a cancellation of an eSIM profile download without control leaving the MODirect portal.
 
-![Mobile Plans cancel eSIM profile download sequence diagram](images/mobile_plans_cancel_profile_download_flow.png)
+![Mobile Plans cancel eSIM profile download sequence diagram.](images/mobile_plans_cancel_profile_download_flow.png)
 
-### MobilePlansInlineOperations.notifyOperationCancel(MobilePlansOperationContext)
+### MobilePlansInlineOperations.notifyOperationCancel([MobilePlansOperationContext](#mobileplansoperationcontext-details))
 
 | Parameter name | Type | Description |
 | --- | --- | -- |
@@ -237,7 +236,7 @@ var purchaseMetaData = MobilePlans.createPurchaseMetaData();
 
 The following diagram shows the high level flow for how the Mobile Plans app supports delayed connectivity. This callback method should be used when the eSIM profile is already available for release by the SM-DP+ server, however the device needs to wait some time before attempting to register on the cellular network.
 
-![Mobile Plans delayed connectivity sequence diagram](images/dynamo_async_connectivity_flow.png)
+![Mobile Plans delayed connectivity sequence diagram.](images/dynamo_async_connectivity_flow.png)
 
 After the user successfully completes the activation flow, the web portal informs the Mobile Plans app that it should trigger the delayed connectivity flow using the `MobilePlans.notifyPurchaseWithProfileDownload` API.
 
@@ -281,7 +280,7 @@ The following diagram shows the high level flow for how the Mobile Plans app sup
 
 | Return value type | Description |
 | --- | --- |
-| MobilePlansOperationContext | An object with identifiers to which match to this unique download operation.
+| [MobilePlansOperationContext](#mobileplansoperationcontext-details) | An object with identifiers to which match to this unique download operation.
 
 When the mobile operator would like to add balance to a given account, the web portal should call the `MobilePlansInlineOperations.notifyBalanceAddition` API.
 
@@ -307,7 +306,7 @@ When a user completes a purcahse in the web portal by adding more data to an exi
 
 The following diagram shows the call flow for how the Mobile Plans app supports adding balance with iccid information.
 
-![Mobile Plans add balancesequence diagram](images/mobile_plans_add_balance_iccid_flow.png)
+![Mobile Plans add balancesequence diagram.](images/mobile_plans_add_balance_iccid_flow.png)
 
 ### MobilePlansInlineOperations.notifyBalanceAddition(purchaseMetaData, iccid)
 
@@ -318,7 +317,7 @@ The following diagram shows the call flow for how the Mobile Plans app supports 
 
 | Return value type | Description |
 | --- | --- |
-| MobilePlansOperationContext | An object with identifiers to which match to this unique download operation.
+| [MobilePlansOperationContext](#mobileplansoperationcontext-details) | An object with identifiers to which match to this unique download operation.
 
 Balance addition can also be made to a non active profile if the ICCID of the profile is known. Using the `MobilePlansInlineOperations.notifyBalanceAddition` with an ICCID will inform the app of the balance addition as well as switch the active profile to the profile corresponding to the provided ICCID.
 
@@ -368,13 +367,21 @@ See [purchase metadata properties](#purchase-metadata-properties-details) for de
 
 The following table describes the details used in the purchase metadata.
 
-| Property name | Type | Description | Example |
-| --- | --- | --- | --- |
-| userAccount | String | Possible values: <ul><li>New: Indicates that a new user account was created by the user.</li><li>Existing: Indicates that the user logged on with an existing user account.</li><li>Bailed: Indicates that the user ended the purchase flow at this step.</li><li>None: Indicates that the user didn’t reach this step.</li></ul> | "userAccount":"New" |
-| purchaseInstrument | String | Possible values: <ul><li>New: Indicates that a new user account was created by the user.</li><li>Existing: Indicates that the user logged on with an existing user account.</li><li>Bailed: Indicates that the user ended the purchase flow at this step.</li><li>None: Indicates that the user didn’t reach this step.</li></ul> | "purchaseInstrument":"New" |
-| line | String | Possible values: <ul><li>New: Indicates that a SIM card was added by the user account.</li><li>Existing: Indicates that the user transferred an existing line to the device.</li><li>Bailed: Indicates that the user ended the purchase flow at this step.</li><li>None: Indicates that the user didn’t reach this step.</li></ul> | "line":New" |
-| moDirectStatus | String | Possible values: <ul><li>Complete: Indicates that the user completed the purchase successfully.</li><li>ServiceError: Indicates that the user was unable to complete the purchase due to an MO service error.</li><li>InvalidSIM: Indicates that the ICCID passed to the portal was incorrect.</li><li>LogOnFailed: indicates that the user failed to log in to the MO portal.</li><li>PurchaseFailed: Indicates that the purchase failed due to a billing error.</li><li>ClientError: Indicates that invalid arguments were passed to the portal.</li>BillingError: Indicates that there was an error with the user billing.</li></ul> | "moDirectStatus":"Complete" |
-| planName | String | For a successful transaction, this field must not be empty and must provide a descriptive plan name. For an unsuccessful transaction, this field must be an empty string. | "planName":"2GB Monthly"|
+| Property name | Type | Description | Example | Required/Optional
+| --- | --- | --- | --- | -- |
+| userAccount | String | Possible values: <ul><li>New: Indicates that a new user account was created by the user.</li><li>Existing: Indicates that the user logged on with an existing user account.</li><li>Bailed: Indicates that the user ended the purchase flow at this step.</li><li>None: Indicates that the user didn’t reach this step.</li></ul> | "userAccount":"New" | Optional |
+| purchaseInstrument | String | Possible values: <ul><li>New: Indicates that a new user account was created by the user.</li><li>Existing: Indicates that the user logged on with an existing user account.</li><li>Bailed: Indicates that the user ended the purchase flow at this step.</li><li>None: Indicates that the user didn’t reach this step.</li></ul> | "purchaseInstrument":"New" | Optional |
+| line | String | Possible values: <ul><li>New: Indicates that a SIM card was added by the user account.</li><li>Existing: Indicates that the user transferred an existing line to the device.</li><li>Bailed: Indicates that the user ended the purchase flow at this step.</li><li>None: Indicates that the user didn’t reach this step.</li></ul> | "line":New" | Optional |
+| moDirectStatus | String | Possible values: <ul><li>Complete: Indicates that the user completed the purchase successfully.</li><li>ServiceError: Indicates that the user was unable to complete the purchase due to an MO service error.</li><li>InvalidSIM: Indicates that the ICCID passed to the portal was incorrect.</li><li>LogOnFailed: indicates that the user failed to log in to the MO portal.</li><li>PurchaseFailed: Indicates that the purchase failed due to a billing error.</li><li>ClientError: Indicates that invalid arguments were passed to the portal.</li>BillingError: Indicates that there was an error with the user billing.</li></ul> | "moDirectStatus":"Complete" | Required |
+| planName | String | For a successful transaction, this field must not be empty and must provide a descriptive plan name. For an unsuccessful transaction, this field must be an empty string. | "planName":"2GB Monthly"| Non-empty string Required |
+
+## MobilePlansOperationContext details
+
+The following table describes the properties of MobilePlansOperationContext
+
+| Property name | Type | Description |
+| --- | --- | --- |
+| Id | string | unique id created by the app for an operation
 
 ## Legacy callback notifications
 

@@ -10,12 +10,11 @@ api_name:
 api_type:
 - NA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DevCon Restart
 
-Stops and restarts the specified devices. Valid only on the local computer.
+Stops and restarts the specified devices. 
 
 ```
     devcon [/r] restart {* | ID [ID ...] | =class [ID [ID ...]]}
@@ -85,4 +84,4 @@ devcon restart =printer *desk*
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
-[Example 38: Restart a device](devcon-examples.md#ddk_example_38_restart_a_device_tools)
+[Example 38: Restart a device](devcon-examples.md#example-38-restart-a-device)

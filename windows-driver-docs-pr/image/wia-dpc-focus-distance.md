@@ -1,6 +1,6 @@
 ---
-title: WIA\_DPC\_FOCUS\_DISTANCE
-description: The WIA\_DPC\_FOCUS\_DISTANCE property contains the distance, in millimeters, between the image-capturing plane of a digital camera and the point of focus.
+title: WIA_DPC_FOCUS_DISTANCE
+description: The WIA_DPC_FOCUS_DISTANCE property contains the distance, in millimeters, between the image-capturing plane of a digital camera and the point of focus.
 keywords: ["WIA_DPC_FOCUS_DISTANCE Imaging Devices"]
 topic_type:
 - apiref
@@ -10,54 +10,25 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 09/29/2021
 ---
 
-# WIA\_DPC\_FOCUS\_DISTANCE
+# WIA_DPC_FOCUS_DISTANCE
 
+The WIA_DPC_FOCUS_DISTANCE property contains the distance, in millimeters, between the image-capturing plane of a digital camera and the point of focus.
 
-The WIA\_DPC\_FOCUS\_DISTANCE property contains the distance, in millimeters, between the image-capturing plane of a digital camera and the point of focus.
+Property Type: VT_I4
 
-## <span id="ddk_wia_dpc_focus_distance_si"></span><span id="DDK_WIA_DPC_FOCUS_DISTANCE_SI"></span>
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_RANGE or WIA\_PROP\_LIST
+Valid Values: WIA_PROP_RANGE or WIA_PROP_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
-A value of 0xFFFF for the WIA\_DPC\_FOCUS\_DISTANCE property corresponds to a setting that is greater than 655 meters.
+A value of 0xFFFF for the WIA_DPC_FOCUS_DISTANCE property corresponds to a setting that is greater than 655 meters.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Obsolete in Windows Vista and later operating systems and should no longer be used. However, this property is still defined in Windows Vista for compatibility with applications and devices designed for Windows Server 2003, Windows XP, and previous versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Version:** Obsolete in Windows Vista and later operating systems and should not be used.
 
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

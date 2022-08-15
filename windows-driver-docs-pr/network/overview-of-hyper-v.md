@@ -2,7 +2,6 @@
 title: Overview of Hyper-V
 description: Overview of Hyper-V
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of Hyper-V
@@ -26,7 +25,7 @@ For network access to child partitions, a Network VSC (NetVSC) runs in a guest o
 
 The following figure shows the networking data paths in Hyper-V over synthetic network adapters.
 
-![synthetic networking device data paths in hyper-v](images/vmqsyntheticpaths.png)
+![synthetic networking device data paths in hyper-v.](images/vmqsyntheticpaths.png)
 
 These data paths are extended by using NDIS virtualized networking interfaces, such as the virtual machine queue (VMQ), single root I/O virtualization (SR-IOV), or Hyper-V extensible switch interfaces. For example, the NetVSC could be configured to connect to a Virtual Function (VF) of a physical network adapter that supports the SR-IOV interface. In this case, the NetVSC sends and receives packets directly over the underlying physical adapter and not over the VMBus.
 

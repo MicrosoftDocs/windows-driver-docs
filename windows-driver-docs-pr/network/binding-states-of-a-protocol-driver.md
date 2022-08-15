@@ -9,7 +9,6 @@ keywords:
 - protocol drivers WDK networking , protocol bindings
 - NDIS protocol drivers WDK , protocol
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Binding States of a Protocol Driver
@@ -36,7 +35,7 @@ An [NDIS protocol driver](ndis-protocol-drivers2.md) must support the following 
 
 The following figures shows the relationship between these states.
 
-![figure illustrating the binding state diagram](images/protocolstate.png)
+![figure illustrating the binding state diagram.](images/protocolstate.png)
 
 The following defines the protocol driver binding states:
 

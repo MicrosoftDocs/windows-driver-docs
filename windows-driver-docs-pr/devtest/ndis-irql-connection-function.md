@@ -9,7 +9,6 @@ api_name:
 - Irql_Connection_Function
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Irql\_Connection\_Function rule (ndis)
@@ -29,8 +28,7 @@ This rule verifies the following NDIS functions:
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -55,8 +53,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisCoAssignInstanceName**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscoassigninstancename)
 [**NdisCoCreateVc**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscocreatevc)

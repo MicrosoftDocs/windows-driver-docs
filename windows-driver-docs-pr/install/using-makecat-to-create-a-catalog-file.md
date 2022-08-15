@@ -1,20 +1,17 @@
 ---
 title: Using MakeCat to Create a Catalog File
 description: Using MakeCat to Create a Catalog File
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 02/11/2022
 ---
 
 # Using MakeCat to Create a Catalog File
 
+You can use the [MakeCat](/windows/win32/seccrypto/makecat) tool to create a [catalog file](catalog-files.md).
 
-You can use the [MakeCat](/windows/win32/seccrypto/makecat) tool to create a [catalog file](catalog-files.md) for a [driver package](driver-packages.md).
+You must use the MakeCat tool only to create catalog files for files that are not installed by using an INF file. If the files are installed by using an INF file, use the [**Inf2Cat**](../devtest/inf2cat.md) tool to create the catalog file. Inf2Cat automatically includes all the files in the driver package that are referenced within the package's INF file. For more information about how to use the Inf2Cat tool, see [Using Inf2Cat to Create a Catalog File](using-inf2cat-to-create-a-catalog-file.md).
 
-You must use the MakeCat tool only to create catalog files for driver packages that are not installed by using an INF file. If the driver package is installed by using an INF file, use the [**Inf2Cat**](../devtest/inf2cat.md) tool to create the catalog file. Inf2Cat automatically includes all the files in the driver package that are referenced within the package's INF file. For more information about how to use the Inf2Cat tool, see [Using Inf2Cat to Create a Catalog File](using-inf2cat-to-create-a-catalog-file.md).
-
-**Note**  Instead of creating and signing a catalog file, you can also embed a signature in the kernel-mode binaries of your [driver package](driver-packages.md), such as the driver and any .dll files your package may provide. For more information about this procedure, see [Test-Signing a Driver through an Embedded Signature](test-signing-a-driver-through-an-embedded-signature.md).
-
- 
+> [!NOTE]
+> For any kernel-mode binaries that are a *boot-start driver*, you should also embed a signature in the binary. For more information about this procedure, see [Test-Signing a Driver through an Embedded Signature](test-signing-a-driver-through-an-embedded-signature.md).
 
 To create a catalog file, you must first manually create a Catalog Definition File (*.cdf*) that describes the catalog header attributes and file entries. Once this file is created, you can then run the [MakeCat](/windows/win32/seccrypto/makecat) tool to create a catalog file. The MakeCat tool does the following when it processes the *.cdf* file:
 
@@ -51,8 +48,6 @@ To create a *.cdf* file for the *ToastPkg* sample [driver package](driver-packag
 
 2.  Save the file as *tstamd64.cdf* in the same folder as the driver package.
     **Note**  When building a driver for multiple platforms, create a separate catalog file for each platform.
-
-     
 
 The following command line shows how to create a catalog file through the [MakeCat](/windows/win32/seccrypto/makecat) tool by using the *tstamd64.cdf* file:
 

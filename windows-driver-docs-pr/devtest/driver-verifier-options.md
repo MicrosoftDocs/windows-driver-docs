@@ -4,8 +4,7 @@ description: Driver Verifier options and rule classes
 keywords:
 - Driver Verifier WDK , options listed
 - errors WDK Driver Verifier
-ms.date: 11/02/2020
-ms.localizationpriority: medium
+ms.date: 06/29/2021
 ---
 
 # Driver Verifier options and rule classes
@@ -115,14 +114,6 @@ When this option is active, Driver Verifier allocates the driver's IRPs from a s
 
 (Windows Server 2003 and later) When this option is active, Driver Verifier monitors a driver's use of IRPs and creates a log of IRP use.
 
-[Disk Integrity Checking](disk-integrity-checking.md)
-
-(Introduced in Windows Server 2003. Not available in Windows 7 and later.) When this option is active, Driver Verifier monitors hard disk access, and detects whether the disk is preserving its data correctly.
-
-[SCSI Verification](scsi-verification.md)
-
- When this option is active, Driver Verifier monitors a SCSI miniport driver for improper use of exported SCSI port routines, excessive delays, and improper handling of SCSI requests.
-
 [Storport Verification](dv-storport-verification.md)
 
 (Windows Vista and later) When this option is active, Driver Verifier monitors a Storport miniport driver for improper use of exported Storport routines, excessive delays, and improper handling of Storport requests.
@@ -179,7 +170,7 @@ Additional IRQL checking
 
 Additional IRQL checking augments the DDI Compliance Checking IRQL rules for PASSIVE_LEVEL. It consists of two rules:
 - The [IrqlIoRtlZwPassive](wdm-irqliortlzwpassive.md) rule specifies that the driver calls the DDIs listed in the rule only when it is executing at IRQL = PASSIVE_LEVEL.
-- The The [IrqlNtifsApcPassive](wdm-irqlntifsapcpassive.md) rule specifies that the driver calls the DDIs listed in the rule only when it is executing either at IRQL = PASSIVE_LEVEL or at IRQL <= APC_LEVEL.
+- The [IrqlNtifsApcPassive](wdm-irqlntifsapcpassive.md) rule specifies that the driver calls the DDIs listed in the rule only when it is executing either at IRQL = PASSIVE_LEVEL or at IRQL <= APC_LEVEL.
 
 [Driver Isolation Checks](../develop/validating-windows-drivers.md#driver-verifier-driver-isolation-checks)
 

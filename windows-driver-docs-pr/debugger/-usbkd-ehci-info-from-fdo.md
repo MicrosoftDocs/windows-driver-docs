@@ -9,7 +9,6 @@ api_name:
 - usbkd.ehci_info_from_fdo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !usbkd.ehci\_info\_from\_fdo
@@ -32,8 +31,7 @@ Address of the functional device object (FDO) of a UHCI or EHCI USB host control
 
 Usbkd.dll
 
-Examples
---------
+## Examples
 
 First use the [**!usb2tree**](-usbkd-usb2tree.md) command to get the address of the FDO.
 

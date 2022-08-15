@@ -2,7 +2,6 @@
 title: MB SMS Operations
 description: MB SMS Operations
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # MB SMS Operations
@@ -42,22 +41,22 @@ For more information about SMS operations, see [OID\_WWAN\_SMS\_CONFIGURATION](.
 ## SMS Architecture/Flows
 
 ### SMS Block Diagram
-![SMS Architecture Flow](images/mb-sms-architecture.png)
+![SMS Architecture Flow.](images/mb-sms-architecture.png)
 
 ### SMS App Registration
-![SMS App Registration](images/mb-sms-appregistration.png)
+![SMS App Registration.](images/mb-sms-appregistration.png)
 
 ### Send SMS
-![SMS Send Message](images/mb-sms-send.png)
+![SMS Send Message.](images/mb-sms-send.png)
 
 ### API Receive Message
-![API Receive Message](images/mb-sms-apireceive.png)
+![API Receive Message.](images/mb-sms-apireceive.png)
 
 ### App Lifecycle
-![SMS App Lifecycle](images/mb-sms-lifecycle.png)
+![SMS App Lifecycle.](images/mb-sms-lifecycle.png)
 
 ### Service Lifecycle
-![Service Lifecycle](images/mb-sms-servicelifecycle.png)
+![Service Lifecycle.](images/mb-sms-servicelifecycle.png)
 
 ## Testing
 

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # DXGKMDT\_OPM\_CONNECTOR\_TYPE enumeration
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum _DXGKMDT_OPM_CONNECTOR_TYPE {
@@ -44,8 +42,7 @@ typedef enum _DXGKMDT_OPM_CONNECTOR_TYPE {
 } DXGKMDT_OPM_CONNECTOR_TYPE;
 ```
 
-Constants
----------
+## Constants
 
 <span id="DXGKMDT_OPM_CONNECTOR_TYPE_OTHER"></span><span id="dxgkmdt_opm_connector_type_other"></span>**DXGKMDT\_OPM\_CONNECTOR\_TYPE\_OTHER**
 
@@ -81,8 +78,7 @@ Constants
 
 <span id="DXGKMDT_OPM_COPP_COMPATIBLE_CONNECTOR_TYPE_INTERNAL"></span><span id="dxgkmdt_opm_copp_compatible_connector_type_internal"></span>**DXGKMDT\_OPM\_COPP\_COMPATIBLE\_CONNECTOR\_TYPE\_INTERNAL**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

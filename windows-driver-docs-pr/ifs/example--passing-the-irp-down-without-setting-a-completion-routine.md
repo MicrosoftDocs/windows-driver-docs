@@ -5,7 +5,6 @@ keywords:
 - IRP dispatch routines WDK file system , passing IRP down
 - passing IRPs down device stack WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Example: Passing the IRP Down Without Setting a Completion Routine
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 To pass the IRP down to lower-level drivers without setting a completion routine, a dispatch routine must do the following:
 
--   Call [**IoSkipCurrentIrpStackLocation**](../kernel/mm-bad-pointer.md) to remove the current IRP stack location, so that the I/O Manager will not look for a completion routine there when it performs completion processing on the IRP.
+-   Call [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) to remove the current IRP stack location, so that the I/O Manager will not look for a completion routine there when it performs completion processing on the IRP.
 
 -   Call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to pass the IRP down to the next lower-level driver.
 
@@ -40,13 +39,13 @@ In these examples, the first parameter in the call to [**IoCallDriver**](/window
 
 ### <span id="Advantages_of_This_Approach"></span><span id="advantages_of_this_approach"></span><span id="ADVANTAGES_OF_THIS_APPROACH"></span>Advantages of This Approach
 
-The technique shown above (calling [**IoSkipCurrentIrpStackLocation**](../kernel/mm-bad-pointer.md)) is simple and efficient and should be used in all cases where the driver passes the IRP down the driver stack without registering a completion routine.
+The technique shown above (calling [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation)) is simple and efficient and should be used in all cases where the driver passes the IRP down the driver stack without registering a completion routine.
 
 ### <span id="Disadvantages_of_This_Approach"></span><span id="disadvantages_of_this_approach"></span><span id="DISADVANTAGES_OF_THIS_APPROACH"></span>Disadvantages of This Approach
 
 After [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) is called, the IRP pointer that was passed to **IoCallDriver** is no longer valid and cannot safely be dereferenced. If the driver needs to perform further processing or cleanup after the IRP has been processed by lower-level drivers, it must set a completion routine before sending the IRP down the driver stack. For more information about writing and setting completion routines, see [Using Completion Routines](using-irp-completion-routines.md).
 
-If you call [**IoSkipCurrentIrpStackLocation**](../kernel/mm-bad-pointer.md) for an IRP, you cannot set a completion routine for it.
+If you call [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) for an IRP, you cannot set a completion routine for it.
 
  
 

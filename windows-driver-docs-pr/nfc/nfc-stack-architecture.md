@@ -8,7 +8,6 @@ keywords:
 - NFP
 description: A diagram of the near field communication (NFC) stack architecture and design.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NFC stack architecture
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 The following diagram illustrates the NFC stack architecture:
 
-![nfc stack architecture](images/nfcstackarchitecture.png)
+![nfc stack architecture.](images/nfcstackarchitecture.png)
 
  
 

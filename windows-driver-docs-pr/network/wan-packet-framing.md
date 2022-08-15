@@ -10,7 +10,6 @@ keywords:
 - packet framing WDK WAN , about WAN packet framing
 - WAN packet framing WDK networking , about WAN packet framing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WAN Packet Framing Overview

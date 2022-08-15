@@ -7,7 +7,6 @@ keywords:
 - conditional directives WDK GDL
 - Elseifdef directive WDK GDL
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # \#Elseifdef Conditional Preprocessor Directive

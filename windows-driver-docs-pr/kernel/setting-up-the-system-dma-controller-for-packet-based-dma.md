@@ -3,7 +3,6 @@ title: Setting Up the System DMA Controller for Packet-Based DMA
 description: Setting Up the System DMA Controller for Packet-Based DMA
 keywords: ["system DMA WDK kernel , packet-based", "packet-based DMA WDK kernel", "DMA transfers WDK kernel , packet-based", "AllocateAdapterChannel", "MapTransfer"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Up the System DMA Controller for Packet-Based DMA
@@ -14,13 +13,13 @@ ms.localizationpriority: medium
 
 When [**AllocateAdapterChannel**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pallocate_adapter_channel) transfers control to a driver's [*AdapterControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_control) routine, the driver "owns" the system DMA controller and a set of map registers. Then, the driver must set up the DMA controller for a transfer operation, as shown in the following figure.
 
-![diagram illustrating programming the system dma controller](images/3dmaptsf.png)
+![diagram illustrating programming the system dma controller.](images/3dmaptsf.png)
 
 If the driver has a [*StartIo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine, [**AllocateAdapterChannel**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pallocate_adapter_channel) passes a pointer to **DeviceObject-&gt;CurrentIrp** in the *PIrp* parameter to the *AdapterControl* routine. If, however, the driver manages its own queue of IRPs, the driver should include a pointer to the current IRP as part of the context it passes to *AdapterControl*.
 
 As the previous figure shows, the driver's *AdapterControl* routine sets up the DMA transfer, as follows:
 
-1.  The *AdapterControl* routine gets the address at which to start the transfer. For the initial transfer required to satisfy an IRP, the *AdapterControl* routine calls [**MmGetMdlVirtualAddress**](./mm-bad-pointer.md), passing a pointer to the MDL at **Irp-&gt;MdlAddress**, which describes the buffer for this DMA transfer.
+1.  The *AdapterControl* routine gets the address at which to start the transfer. For the initial transfer required to satisfy an IRP, the *AdapterControl* routine calls [**MmGetMdlVirtualAddress**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlvirtualaddress), passing a pointer to the MDL at **Irp-&gt;MdlAddress**, which describes the buffer for this DMA transfer.
 
     **MmGetMdlVirtualAddress** returns a virtual address that the driver can use as an index for the system physical address where the transfer should start.
 

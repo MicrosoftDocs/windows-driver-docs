@@ -8,8 +8,7 @@ keywords:
 - Driver Verifier WDK , about Driver Verifier
 - illegal function calls WDK Driver Verifier
 - stress testing WDK Driver Verifier
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 08/06/2021
 ---
 
 # Driver Verifier
@@ -19,13 +18,12 @@ Driver Verifier monitors Windows kernel-mode drivers and graphics drivers to det
 > [!Caution]
 > <ul><li>Running Driver Verifier could cause the computer to crash.</li>
 > <li>You should only run Driver Verifier on computers that you are using for testing and debugging.</li>
-> <li>You must be in the Administrators group on the computer to use Driver Verifier.</li>
-> <li>Driver Verifier is not included in Windows 10 S, so we recommend testing driver behavior on Windows 10 instead.</li></ul>
+> <li>You must be in the Administrators group on the computer to use Driver Verifier.</li> </ul>
 
 
 ## Where can I download Driver Verifier?
 
-You don't need to download Driver Verifier, because it is included with most versions of Windows in %WinDir%\system32\ as Verifier.exe. (Driver Verifier is not included with Windows 10 S.) Driver Verifier is not distributed separately as a download package.
+You don't need to download Driver Verifier, because it is included with most versions of Windows in %WinDir%\system32\ as Verifier.exe. (Driver Verifier is not included with Windows 10 S, so we recommend testing driver behavior on Windows 10 instead.) Driver Verifier is not distributed separately as a download package.
 
 For information about changes in Driver Verifier for Windows 10 and previous versions of Windows, see <a href="driver-verifier--what-s-new.md" data-raw-source="[Driver Verifier: What's New](driver-verifier--what-s-new.md)">Driver Verifier: What's New</a>.
 

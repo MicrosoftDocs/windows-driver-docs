@@ -2,7 +2,6 @@
 title: Establish temporary network connectivity
 description: Establish temporary network connectivity
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Establish temporary network connectivity

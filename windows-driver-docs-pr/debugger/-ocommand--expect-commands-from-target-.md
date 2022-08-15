@@ -9,7 +9,6 @@ api_name:
 - .ocommand (Expect Commands from Target)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .ocommand (Expect Commands from Target)
@@ -61,8 +60,7 @@ Deletes the command prefix string.
 
 For more information about [**OutputDebugString**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringw) and other user-mode functions that communicate with a debugger, see the Microsoft Windows SDK documentation.
 
-Remarks
--------
+## Remarks
 
 If you use the **.ocommand** command without parameters, the debugger displays the current command prefix string. To clear the existing string, use **.ocommand -d**.
 

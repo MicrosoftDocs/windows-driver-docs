@@ -9,7 +9,6 @@ keywords:
 - monochrome vector graphics WDK Unidrv
 - PCL-5e WDK Unidrv , about PCL-5e
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # HP-GL/2 Monochrome (PCL-5e) Vector Graphics Support

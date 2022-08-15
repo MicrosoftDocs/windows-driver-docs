@@ -1,9 +1,8 @@
 ---
-title: tss
+title: tss (WinDbg)
 description: tss
 keywords: ["tss extension (obsolete)"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # !tss

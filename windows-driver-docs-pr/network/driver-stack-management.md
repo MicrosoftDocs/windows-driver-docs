@@ -9,7 +9,6 @@ keywords:
 - protocol bindings WDK networking
 - protocol drivers WDK net
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver Stack Management

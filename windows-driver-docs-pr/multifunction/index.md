@@ -1,7 +1,6 @@
 ---
 title: Multifunction device driver design guide
-description: Multifunction device driver design guide
-ms.assetid: 110c0b9b-4870-4853-8fbf-a9faf0c5f2ca
+description: Provides design guidance for multifunction devices
 keywords:
 - multifunction devices WDK
 - multifunction devices WDK , about multifunction devices
@@ -12,10 +11,8 @@ keywords:
 - multifunction devices WDK , installing
 - parent buses WDK multifunction devices
 - INF files WDK multifunction devices
-ms.date: 08/25/2020
+ms.date: 08/13/2021
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ---
 
 # Multifunction device driver design guide

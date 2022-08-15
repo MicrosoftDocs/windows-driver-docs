@@ -9,7 +9,6 @@ api_name:
 - Flags_Irql
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Flags\_Irql rule (ndis)
@@ -21,8 +20,7 @@ The correct use of the dispatch level flag can help you avoid unnecessary attemp
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

@@ -4,10 +4,11 @@ description: WDI_TLV_PHY_TYPE_LIST is a TLV that contains an array of PHY types.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PHY_TYPE_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_PHY\_TYPE\_LIST
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_PHY\_TYPE\_LIST is a TLV that contains an array of PHY types.
@@ -31,8 +32,7 @@ The size (in bytes) of the array of [**WDI\_PHY\_TYPE**](/windows-hardware/drive
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

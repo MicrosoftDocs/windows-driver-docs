@@ -1,8 +1,7 @@
 ---
 title: Build and submit a firmware package to Windows Update (WU)
-description: Build and submit a firmware package to Windows Update (WU)
-ms.date: 05/15/2018
-ms.localizationpriority: medium
+description: Provides information about how to build and submit a firmware package to Windows Update (WU).
+ms.date: 08/18/2021
 ---
 
 # Build and submit a firmware package to Windows Update (WU)
@@ -11,9 +10,9 @@ Because a firmware update is delivered as a driver package, it follows the same 
 
 1. When the contents of the driver package are installed on the System Under Test (SUT), the device must pass the required Windows Hardware Lab Kit (HLK) tests. If there is not a test specifically for the firmware being tested, locate the most reasonable alternative and submit results with the HLK package as needed.
 
-2. The driver package can then be submitted to the [Partner Center](https://partner.microsoft.com/dashboard) for signing.
+1. The driver package can then be submitted to the [Partner Center](https://partner.microsoft.com/dashboard) for signing.
 
-3. Once signed, the driver package is provided to the submitter where the submitter has the option to publish on Windows Update (WU) via the Hardware Dashboard (using the Driver Distribution feature).
+1. Once signed, the driver package is provided to the submitter where the submitter has the option to publish on Windows Update (WU) via the Hardware Dashboard (using the Driver Distribution feature).
 
 Publishing to Windows Update is done via the [Hardware Dashboard](https://partner.microsoft.com/dashboard) using the Driver Distribution feature.
 
@@ -21,11 +20,11 @@ Signing of the driver package is different from signing the UEFI firmware, thoug
 
 Next, sign the contents of the capsule. The capsule content itself is determined by the OEM. The capsule may just contain a catalog of firmware images to update in whatever format the OEM chooses, or it may be delivered in the form of an EFI Application image (PE/COFF file format). If the capsule is a PE/COFF file, then it must be signed by the OEM before submitting to Microsoft for Windows Firmware Update Package signing.
 
-On ARM-based systems, with no keys other than the Microsoft Production CA 2011 allowed in the UEFI Allowed Database and Microsoft does not use a signer under this CA to sign third-party UEFI code, load of such a capsule cannot leverage the regular UEFI **LoadImage()** service. The capsule application may, however, be loaded using a platform-specific verification against the boot ROM public key or the UEFI PK. This load must still be measured into TPM PCR\[7\] as for any other image. More generally, when capsule signing is deemed necessary (for example, to ensure integrity and authenticity of the complete update package), and the capsule may comprise firmware updates for firmware outside of UEFI, the capsule should be signed in such a way that it can be verified using platform-held, non-UEFI keys (for example, signed using a key chaining back to a public key bound to boot ROM or the UEFI PK).
+On Arm-based systems, with no keys other than the Microsoft Production CA 2011 allowed in the UEFI Allowed Database and Microsoft does not use a signer under this CA to sign third-party UEFI code, load of such a capsule cannot leverage the regular UEFI **LoadImage()** service. The capsule application may, however, be loaded using a platform-specific verification against the boot ROM public key or the UEFI PK. This load must still be measured into TPM PCR\[7\] as for any other image. More generally, when capsule signing is deemed necessary (for example, to ensure integrity and authenticity of the complete update package), and the capsule may comprise firmware updates for firmware outside of UEFI, the capsule should be signed in such a way that it can be verified using platform-held, non-UEFI keys (for example, signed using a key chaining back to a public key bound to boot ROM or the UEFI PK).
 
-![Driver signing workflow](images/driver-signing-workflow.png)
+![Driver signing workflow.](images/driver-signing-workflow.png)
 
-On non-ARM systems,
+On non-Arm systems,
 
 - The capsule can be an EFI application as long as it is signed with a key chaining back to an entry in the UEFI Allowed Database.
 
@@ -84,4 +83,4 @@ If you follow this format, the submission should pass. To confirm the parent fol
 
 [Partner Center](https://partner.microsoft.com/dashboard)
 
-[ESRT table definition ](./esrt-table-definition.md)
+[ESRT table definition](./esrt-table-definition.md)

@@ -9,7 +9,6 @@ api_name:
 - DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xCB: DRIVER\_LEFT\_LOCKED\_PAGES\_IN\_PROCESS
@@ -98,8 +97,7 @@ If the I/O manager locked these pages, the parameters have the following meaning
 
  
 
-Remarks
--------
+## Remarks
 
 This bug check is issued only if the registry value **\\\\HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Memory Management\\TrackLockedPages** is equal to DWORD 1. If this value is not set, the system will issue the less-informative [**bug check 0x76**](bug-check-0x76--process-has-locked-pages.md) (PROCESS\_HAS\_LOCKED\_PAGES).
 

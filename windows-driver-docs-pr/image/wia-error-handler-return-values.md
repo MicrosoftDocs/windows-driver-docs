@@ -2,7 +2,6 @@
 title: WIA Error Handler Return Values
 description: WIA Error Handler Return Values
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Error Handler Return Values

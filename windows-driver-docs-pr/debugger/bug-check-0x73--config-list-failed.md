@@ -9,7 +9,6 @@ api_name:
 - CONFIG_LIST_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x73: CONFIG\_LIST\_FAILED
@@ -57,8 +56,7 @@ The CONFIG\_LIST\_FAILED bug check has a value of 0x00000073. This bug check ind
 
  
 
-Cause
------
+## Cause
 
 The registry hive that cannot be linked might be SAM, SECURITY, SOFTWARE, or DEFAULT. The hive is valid, because it was loaded successfully.
 

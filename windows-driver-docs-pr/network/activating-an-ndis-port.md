@@ -8,7 +8,6 @@ keywords:
 - port states WDK NDIS
 - activation PnP events WDK NDIS ports
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Activating an NDIS Port
@@ -25,7 +24,7 @@ To activate ports, the miniport driver must set the members of the [**NET\_PNP\_
 The source port of the event notification. Set this member to zero because the port numbers are provided in the **Buffer** member of the structure that the **NetPnPEvent** member specifies.
 
 <a href="" id="netpnpevent"></a>**NetPnPEvent**  
-A [**NET\_PNP\_EVENT**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event) structure that describes the port activation event. Set the members of this structure as follows:
+A [**NET\_PNP\_EVENT**](/windows-hardware/drivers/ddi/netpnp/ns-netpnp-_net_pnp_event) structure that describes the port activation event. Set the members of this structure as follows:
 
 <a href="" id="netevent"></a>**NetEvent**  
 An event code that describes the event. Set this member to **NetEventPortActivation**.

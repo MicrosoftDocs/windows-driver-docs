@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # Document element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **Document** element contains the details about one of the documents that are scanned during a scan job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:Document>
@@ -26,8 +24,7 @@ Usage
 </wscn:Document>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 

@@ -9,7 +9,6 @@ api_name:
 - CTRL+B (Quit Local Debugger)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CTRL+B (Quit Local Debugger)
@@ -53,8 +52,7 @@ CTRL+B  ENTER
 
  
 
-Remarks
--------
+## Remarks
 
 In CDB, the [**q (Quit)**](q--qq--quit-.md) command should be used to exit. CTRL+B should only be used if the debugger is not responding.
 

@@ -2,7 +2,6 @@
 title: Updated friendly name for WDDM 1.2
 description: This topic describes the updated friendly name for a Graphics INF. This is a localizable string name requirement for all Windows 8 in-box display driver INFs.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Updated friendly name for WDDM 1.2

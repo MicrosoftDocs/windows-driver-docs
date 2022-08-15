@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSEVENT\_PINCAPS\_FORMATCHANGE
@@ -37,7 +36,7 @@ The `KSEVENT_PINCAPS_FORMATCHANGE` event indicates to the audio stack that the a
 <tbody>
 <tr class="odd">
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="/previous-versions/ff561744(v=vs.85)" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](/previous-versions/ff561744(v=vs.85))"><strong>KSEVENT</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksevent-structure" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](../stream/ksevent-structure.md)"><strong>KSEVENT</strong></a></p></td>
 <td align="left"><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
@@ -47,8 +46,7 @@ The `KSEVENT_PINCAPS_FORMATCHANGE` event indicates to the audio stack that the a
 
 The event value type (operation data) is a **KSEVENTDATA** structure that specifies the notification method to use for this event.
 
-Remarks
--------
+## Remarks
 
 When an audio port driver calls the [**EventHandler**](/windows-hardware/drivers/ddi/portcls/nc-portcls-pcpfnevent_handler) routine for its miniport driver, it passes a [**PCEVENT\_REQUEST**](/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcevent_request) structure. This structure contains a pointer to a [**PCEVENT\_ITEM**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcevent_item) structure that is used to describe an event that is supported by a filter, pin, or node.
 
@@ -71,8 +69,7 @@ To obtain a description of the pins, nodes, connections and properties supported
 
 When the miniport driver detects a dynamic format change, it must call the [**IPortEvents::GenerateEventList**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportevents-generateeventlist) method to signal the `KSEVENT_PINCAPS_FORMATCHANGE` event.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -102,7 +99,7 @@ Requirements
 
 [**IPortEvents::GenerateEventList**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportevents-generateeventlist)
 
-[**KSEVENT**](/previous-versions/ff561744(v=vs.85))
+[**KSEVENT**](../stream/ksevent-structure.md)
 
 [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
 
@@ -113,4 +110,3 @@ Requirements
 [**PCEVENT\_REQUEST**](/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcevent_request)
 
 [**PCFILTER\_DESCRIPTOR**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcfilter_descriptor)
-

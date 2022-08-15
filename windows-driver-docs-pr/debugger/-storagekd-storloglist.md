@@ -9,7 +9,6 @@ api_name:
 - storagekd.storloglist
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !storagekd.storloglist
@@ -53,8 +52,7 @@ Count of entries to be displayed. If not specified, a value of 50 is used.
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example of **!storagekd.storloglist** display:
 

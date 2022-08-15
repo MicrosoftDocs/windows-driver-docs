@@ -9,7 +9,6 @@ api_name:
 - KERNEL_STACK_INPAGE_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x77: KERNEL\_STACK\_INPAGE\_ERROR
@@ -98,8 +97,7 @@ If the first parameter is any value other than 0, 1, or 2, the parameters have t
 
  
 
-Cause
------
+## Cause
 
 If the first parameter is 0 or 1, the stack signature in the kernel stack was not found. This error is probably caused by defective hardware, such as a RAM error.
 
@@ -121,8 +119,7 @@ These status codes are the most common ones that have specific causes. For more 
 
 A virus infection can also cause this bug check.
 
-Resolution
-----------
+## Resolution
 
 **Resolving a bad block problem:** If you can restart the computer after the error, Autochk runs automatically and attempts to map the bad sector to prevent it from being used anymore.
 

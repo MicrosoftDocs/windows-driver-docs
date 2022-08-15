@@ -9,7 +9,6 @@ api_name:
 - SpinlockDpc
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # SpinlockDpc rule (kmdf)
@@ -19,8 +18,7 @@ The **SpinlockDpc** rule specifies that calls to [**KeAcquireSpinLock**](/window
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**KeAcquireSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock)
 [**KeAcquireSpinLockRaiseToDpc**](/previous-versions/windows/hardware/drivers/ff551928(v=vs.85))

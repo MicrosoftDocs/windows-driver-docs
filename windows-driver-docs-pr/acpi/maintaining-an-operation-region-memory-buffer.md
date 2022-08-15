@@ -1,6 +1,6 @@
 ---
 title: Maintaining an Operation Region Memory Buffer
-description: Maintaining an Operation Region Memory Buffer
+description: Provides information about maintaining an operation region memory buffer
 keywords:
 - ACPI devices WDK , operation regions
 - operation regions WDK ACPI
@@ -8,8 +8,7 @@ keywords:
 - WDM function drivers WDK ACPI , operation regions
 - operation region memory buffer WDK ACPI
 - memory buffers WDK ACPI
-ms.date: 05/19/2020
-ms.localizationpriority: medium
+ms.date: 08/17/2021
 ---
 
 # Maintaining an Operation Region Memory Buffer

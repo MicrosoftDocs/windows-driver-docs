@@ -9,7 +9,6 @@ api_name:
 - for_each_register
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !for\_each\_register
@@ -68,8 +67,7 @@ More info:              ~0k
 ...
 ```
 
-Remarks
--------
+## Remarks
 
 When an alias is an argument to a debugger extension (for example, [**!address**](-address.md)), use the alias interpreter [**${} (Alias Interpreter)**](-------alias-interpreter-.md) token so that the alias is resolved correctly.
 

@@ -7,7 +7,6 @@ keywords:
 - interface providers WDk network interface
 - registering interface providers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Registering as an Interface Provider

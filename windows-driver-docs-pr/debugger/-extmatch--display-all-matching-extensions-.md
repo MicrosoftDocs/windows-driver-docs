@@ -9,7 +9,6 @@ api_name:
 - .extmatch (Display All Matching Extensions)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .extmatch (Display All Matching Extensions)
@@ -64,8 +63,7 @@ Specifies a pattern that the extension must contain. *Pattern*can contain a vari
 
  
 
-Remarks
--------
+## Remarks
 
 To display a list of loaded extension DLLs, use the [**.chain**](-chain--list-debugger-extensions-.md) command.
 
@@ -91,7 +89,7 @@ The following example lists all extension commands beginning with the string "he
 
 The following example lists all extension commands, so we can see which ones support DML.
 
-![screen shot of .extmatch /d output](images/extmatch01.png)
+![screen shot of .extmatch /d output.](images/extmatch01.png)
 
  
 

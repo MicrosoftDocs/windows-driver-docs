@@ -1,35 +1,25 @@
 ---
-title: Staple
-description: Staple
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+title: Staple property
+description: Contains all of the information that describes the stapling device.
+ms.date: 09/08/2021
 ---
 
-# Staple
+# Staple property
 
+Schema Path: \\Printer.Finishing.Staple
 
-Schema Path:\\Printer.Finishing.Staple
+Node Type: Property
 
-Node Type:Property
-
-Description:This property contains all of the information that describes the stapling device.
+Description: This property contains all of the information that describes the stapling device.
 
 The Staple property contains a child value, **Installed**, and is the parent of the [Location](location3.md) and [Angle](angle2.md) properties.
 
-### <span id="installed"></span><span id="INSTALLED"></span>Installed
+## Installed
 
-Schema Path:\\Printer.Finishing.Staple:Installed
+Schema Path: \\Printer.Finishing.Staple:Installed
 
-Node Type:Value
+Node Type: Value
 
-Data Type:BIDI\_BOOL
+Data Type: BIDI_BOOL
 
-Description:Determines whether the print device has a stapler feature installed. If **TRUE**, the stapler feature is installed; if **FALSE**, the stapler feature is not installed.
-
- 
-
- 
-
-
-
-
+Description: Determines whether the print device has a stapler feature installed. If **TRUE**, the stapler feature is installed; if **FALSE**, the stapler feature is not installed.

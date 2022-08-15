@@ -1,5 +1,5 @@
 ---
-title: ks.devhdr
+title: ks.devhdr (WinDbg)
 description: The ks.devhdr extension displays the kernel streaming device header associated with the given WDM object.
 keywords: ["ks.devhdr Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ks.devhdr
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.devhdr
@@ -52,8 +51,7 @@ This parameter specifies a pointer to a WDM device object. If *DeviceObject* is 
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The output from [**!ks.allstreams**](-ks-allstreams.md) can be used as the input for **!ks.devhdr**.
 

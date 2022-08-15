@@ -6,7 +6,6 @@ keywords:
 - callback routines WDK WMI SRBs
 - WMI IRPs WDK storage
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # How the Port Driver Processes WMI Requests
@@ -82,7 +81,7 @@ Your miniport driver will call the SCSI Port WMI library dispatch routine, [**Sc
 
 The following diagram illustrates the changes that a WMI request undergoes from the moment that a storage port driver receives it until the storage miniport driver passes it to the SCSI Port WMI library dispatch routine.
 
-![how the storage stack handles a wmi irp ](images/scsiwmilib.png)
+![how the storage stack handles a wmi irp .](images/scsiwmilib.png)
 
 1.  The following steps explain how the storage stack repackages a WMI IRP as an SRB:
 

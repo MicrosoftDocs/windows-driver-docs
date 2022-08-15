@@ -2,7 +2,6 @@
 title: PnPUtil Examples
 description: PnPUtil Examples
 ms.date: 01/31/2018
-ms.localizationpriority: medium
 ---
 
 # PnPUtil Examples

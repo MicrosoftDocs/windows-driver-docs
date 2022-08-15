@@ -2,7 +2,6 @@
 title: About ISensorClassExtension
 description: About ISensorClassExtension
 ms.date: 07/20/2018
-ms.localizationpriority: medium
 ---
 
 # About ISensorClassExtension

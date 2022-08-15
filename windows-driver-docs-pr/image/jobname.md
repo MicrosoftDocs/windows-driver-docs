@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # JobName element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **JobName** element specifies the client-supplied, user-friendly name of the scan job.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobName>
@@ -26,13 +24,11 @@ Usage
 </wscn:JobName>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
-Text value
-----------
+## Text value
 
 Required. Any valid character string.
 
@@ -66,8 +62,7 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 A client should supply a value to help users easily distinguish between jobs that they submitted.
 

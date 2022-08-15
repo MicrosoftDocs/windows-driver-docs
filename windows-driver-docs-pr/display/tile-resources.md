@@ -2,7 +2,6 @@
 title: Tile resources
 description: For tile resources, the asynchronous video memory manager services running on the device paging queue aren't sufficient.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Tile resources
@@ -27,7 +26,7 @@ To solve this problem, we're introducing the notion of a per-context paging comp
 
 Page table update using the companion context is illustrated below.
 
-![interlocked page table update](images/tile-resources.1.png)
+![interlocked page table update.](images/tile-resources.1.png)
 
 The companion context is lazily created by the video memory manager against an engine chosen by the kernel mode driver during context creation (**DXGKARG\_CREATECONTEXT.PagingCompanionNodeId**).
 
@@ -51,7 +50,7 @@ Note that as long as there are queued page table updates referencing a particula
 
 This mechanism is illustrated below:
 
-![copy page table operation](images/tile-resources.2.png)**
+![copy page table operation.](images/tile-resources.2.png)**
 
 ## <span id="_Update_GPU_virtual_address_on_GPUs_with_CPU_VIRTUAL_page_table_update_mode"></span><span id="_update_gpu_virtual_address_on_gpus_with_cpu_virtual_page_table_update_mode"></span><span id="_UPDATE_GPU_VIRTUAL_ADDRESS_ON_GPUS_WITH_CPU_VIRTUAL_PAGE_TABLE_UPDATE_MODE"></span> Update GPU virtual address on GPUs with CPU\_VIRTUAL page table update mode
 

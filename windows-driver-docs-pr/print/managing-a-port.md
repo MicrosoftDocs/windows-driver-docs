@@ -6,7 +6,6 @@ keywords:
 - port management WDK print
 - port management WDK print , about port management
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing a Port

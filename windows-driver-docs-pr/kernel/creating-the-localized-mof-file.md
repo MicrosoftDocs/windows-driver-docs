@@ -3,7 +3,6 @@ title: Creating the Localized MOF File
 description: Creating the Localized MOF File
 keywords: ["MOF files WDK WMI", "localizing MOF files", "property qualifiers WDK WMI", "amended classes WDK WMI", "multiple MOF files WDK WMI", "languages WDK WMI"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Creating the Localized MOF File

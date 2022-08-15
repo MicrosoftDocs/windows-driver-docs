@@ -5,7 +5,6 @@ keywords:
 - HID reports WDK , interpreting
 - reports WDK HID , interpreting
 ms.date: 09/10/2020
-ms.localizationpriority: medium
 ---
 
 # Interpreting HID Reports

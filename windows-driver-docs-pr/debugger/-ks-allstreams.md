@@ -9,7 +9,6 @@ api_name:
 - ks.allstreams
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.allstreams
@@ -70,8 +69,7 @@ Optional. Specifies the level of detail to display on a 0-7 scale with progressi
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 This command can take some time to execute (a minute is not unusual).
 

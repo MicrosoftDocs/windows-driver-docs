@@ -2,7 +2,6 @@
 title: Security Issues with NDIS Virtual Machine (VM) Shared Memory
 description: Security Issues with NDIS Virtual Machine (VM) Shared Memory
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Security Issues with NDIS Virtual Machine (VM) Shared Memory
@@ -51,7 +50,7 @@ To address this security issue, when using VM shared memory for a VM queue, the 
 
 The following illustration shows the relationships for the network data structures when the incoming data is split into lookahead and post-lookahead shared memory buffers.
 
-![diagram illustrating vmq packet structures with lookahead and post-lookahead data](images/vmqpacket.png)
+![diagram illustrating vmq packet structures with lookahead and post-lookahead data.](images/vmqpacket.png)
 
 The summary requirements for VMQ shared memory are as follows:
 

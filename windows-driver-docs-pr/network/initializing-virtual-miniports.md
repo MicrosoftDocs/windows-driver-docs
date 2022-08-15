@@ -7,7 +7,6 @@ keywords:
 - virtual miniports WDK networking
 - initializing virtual miniports
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Initializing Virtual Miniports
@@ -32,7 +31,7 @@ Calling **NdisIMInitializeDeviceInstanceEx** results in a call to the intermedia
 
 An intermediate driver must operate as a deserialized driver. For more information about deserialized drivers, see [Deserialized NDIS Miniport Drivers](deserialized-ndis-miniport-drivers.md).
 
-An intermediate driver should verify that the state information it maintains is properly initialized. If the driver requires send-related resources--for example, new [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures for network data that [*MiniportSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_send_net_buffer_lists) will transmit to the next lower layer--the NET\_BUFFER\_LIST structure pool can be allocated at this time.
+An intermediate driver should verify that the state information it maintains is properly initialized. If the driver requires send-related resources--for example, new [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures for network data that [*MiniportSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_send_net_buffer_lists) will transmit to the next lower layer--the NET\_BUFFER\_LIST structure pool can be allocated at this time.
 
  
 

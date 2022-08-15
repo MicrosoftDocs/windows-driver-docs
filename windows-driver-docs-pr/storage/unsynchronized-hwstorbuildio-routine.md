@@ -2,7 +2,6 @@
 title: Unsynchronized HwStorBuildIo Routine
 description: Unsynchronized HwStorBuildIo Routine
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Unsynchronized HwStorBuildIo Routine

@@ -9,7 +9,6 @@ keywords:
 - non-PnP devices WDK biometric
 - proprietary stacks WDK biometric
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using WBDI with Non-PnP Devices or Proprietary Stacks

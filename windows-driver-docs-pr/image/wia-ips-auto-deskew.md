@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_AUTO\_DESKEW
@@ -25,8 +24,7 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
 The following table describes the constants that are valid with the WIA\_IPS\_AUTO\_DESKEW property.
 
@@ -55,8 +53,7 @@ The following table describes the constants that are valid with the WIA\_IPS\_AU
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

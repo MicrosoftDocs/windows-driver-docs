@@ -9,7 +9,6 @@ api_name:
 - RemoveLock
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # RemoveLock rule (wdm)
@@ -19,8 +18,7 @@ The **RemoveLock** rule specifies that calls to [**IoAcquireRemoveLock**](/windo
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,14 +43,12 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoAcquireRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioacquireremovelock)
 [**IoReleaseRemoveLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreleaseremovelock)
 [**IoReleaseRemoveLockAndWait**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreleaseremovelockandwait)
 [**RemoveHeadList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-removeheadlist)
-See also
---------
+## See also
 
 [Using Remove Locks](../kernel/using-remove-locks.md)

@@ -4,7 +4,6 @@ description: Miniport drivers use the NDIS_STATUS_WWAN_SMS_RECEIVE notification 
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_WWAN_SMS_RECEIVE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WWAN\_SMS\_RECEIVE
@@ -16,8 +15,7 @@ Miniport drivers can also send unsolicited events with this notification.
 
 This notification uses the [**NDIS\_WWAN\_SMS\_RECEIVE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_receive) structure.
 
-Remarks
--------
+## Remarks
 
 RequestId is set to "0" by the miniport driver to indicate the arrival of the new class-0 (flash/alert) message. Arrival of new class-0 (flash/alert) messages is dependent on the current network registration state.
 
@@ -25,10 +23,9 @@ If the request for read results in retrieval of large number of SMS records that
 
 The following diagram represents the usage of the multiple indication method for large number of SMS record retrieval:
 
-![diagram illustrating the usage of the multiple indication method for a large number of sms record retrieval](images/wwansmsrecordretrieval.png)
+![diagram illustrating the usage of the multiple indication method for a large number of sms record retrieval.](images/wwansmsrecordretrieval.png)
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

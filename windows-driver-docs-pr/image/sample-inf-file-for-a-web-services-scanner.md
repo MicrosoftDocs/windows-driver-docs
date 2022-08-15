@@ -1,8 +1,7 @@
 ---
 title: Sample INF File for a Web Services Scanner
-description: Sample INF File for a Web Services Scanner
-ms.date: 05/29/2020
-ms.localizationpriority: medium
+description: The Sti.inf file shows how to install a WIA driver.
+ms.date: 08/13/2021
 ---
 
 # Sample INF File for a Web Services Scanner
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 The following INF file, *Sti.inf*, shows how to install a WIA driver. Entries that you need for *WSDScan.sys* are highlighted.
 
 > [!NOTE]
-> The requirements for the device hardware IDs and the **PKEY\_Device\_HardwareIds** property that are referenced in the following INF example are described in the [PNP-X Implementer's Guide (DOC download)](https://go.microsoft.com/fwlink/p/?linkid=242570).
+> The requirements for the device hardware IDs and the **PKEY_Device_HardwareIds** property that are referenced in the following INF example are described in the [PNP-X Implementer's Guide (DOC download)](https://download.microsoft.com/download/5/D/6/5D6EAF2B-7DDF-476B-93DC-7CF0072878E6/PnP-X_imp.doc).
 
 ```inf
 ;

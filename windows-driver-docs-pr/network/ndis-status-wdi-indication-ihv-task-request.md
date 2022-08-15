@@ -4,10 +4,11 @@ description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_IHV_TASK_REQUEST to
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_IHV_TASK_REQUEST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_REQUEST
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_REQUEST to request that the Microsoft component queue an IHV task.
@@ -28,8 +29,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_IHV\_TASK\_REQUEST to reques
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

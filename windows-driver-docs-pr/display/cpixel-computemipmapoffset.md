@@ -11,7 +11,6 @@ api_location:
 api_type:
 - COM
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # CPixel::ComputeMipMapOffset method
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The **CPixel::ComputeMipMapOffset** method determines the sublevel offset of a mipmap texture.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 static void  ComputeMipMapOffset(
@@ -32,8 +30,7 @@ static void  ComputeMipMapOffset(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *pDescTopLevel*
 Pointer to a D3DSURFACE\_DESC structure that describes the top level of the mipmap texture.
@@ -50,20 +47,17 @@ Pointer to a RECT structure that describes the subrectangular region or **NULL**
 *pLockedRectData*
 Pointer to a D3DLOCKED\_RECT structure that receives the pointer or offset to the locked rectangular region.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 Given the surface description, the level of the mipmap texture, a pointer to the top level, and the subrectangle, **CPixel::ComputeMipMapOffset** returns a pointer or offset to the locked rectangular region in the **pBits** member of the D3DLOCKED\_RECT structure at **pLockedRectData**.
 
 For more information about D3DLOCKED\_RECT, D3DSURFACE\_DESC, and RECT, see the Microsoft DirectX SDK documentation.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -4,7 +4,6 @@ description: OID_WWAN_SIGNAL_STATE returns or sets the current signal state.
 ms.date: 04/05/2019
 keywords: 
  -OID_WWAN_SIGNAL_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
@@ -17,8 +16,7 @@ Miniport drivers must process set and query requests asynchronously, initially r
 
 Callers requesting to set the current signal state indication to the end user provide an [**NDIS\_WWAN\_SET\_SIGNAL\_INDICATION**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_signal_indication) structure to the miniport driver with the appropriate information.
 
-Remarks
--------
+## Remarks
 
 For more information about using this OID, see [WWAN Signal Strength Operations](./mb-signal-strength-operations.md).
 
@@ -75,8 +73,7 @@ Starting in Windows 10, version 1903, OID_WWAN_SIGNAL_STATE has been upgraded to
 
 For more info about 5G data class support, see [MB 5G data class support](./mb-5g-operations-overview.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

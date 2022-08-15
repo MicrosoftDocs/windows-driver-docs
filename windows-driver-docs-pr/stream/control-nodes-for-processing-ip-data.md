@@ -6,7 +6,6 @@ keywords:
 - nodes WDK BDA
 - IP data processing WDK BDA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Control Nodes for Processing IP Data
@@ -33,7 +32,7 @@ The following sequence and figure describe the data flow for IP data that is par
 
  
 
-![diagram illustrating ip data flow](images/ipdata.png)
+![diagram illustrating ip data flow.](images/ipdata.png)
 
  
 

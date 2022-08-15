@@ -15,15 +15,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Iasphelp::get\_LongPaperName method
 
 The **LongPaperName** property enables an ASP Web page to convert a short paper name to a long paper name.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT get_LongPaperName(
@@ -32,8 +30,7 @@ HRESULT get_LongPaperName(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *bstrShortName* \[in\]  
 A caller-supplied pointer to a string that contains a short paper name.
@@ -41,8 +38,7 @@ A caller-supplied pointer to a string that contains a short paper name.
 *pVal* \[out\]  
 A caller-supplied location to receive a pointer to a string that contains a long paper name.
 
-Return value
-------------
+## Return value
 
 Win32 error codes can also be returned.
 
@@ -81,8 +77,7 @@ Set objPrinter = Server.CreateObject ("OlePrn.AspHelp")
 LongName = objPrinter.LongPaperName("iso-a0")
 ```
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

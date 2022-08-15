@@ -5,7 +5,6 @@ keywords:
 - authenticated key exchange WDK COPP
 - key exchange WDK COPP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Authenticated Key Exchange
@@ -20,7 +19,7 @@ The following figure shows establishing a secure connection through authenticati
 
 Command and status messages are subsequently passed unencrypted; however, for each message, MACs are created by using the data integrity key.
 
-![diagram illustrating authentication and key exchange](images/coppkey.png)
+![diagram illustrating authentication and key exchange.](images/coppkey.png)
 
 For more information about MACs, see [Cryptographic Primitives Used by COPP](cryptographic-primitives-used-by-copp.md).
 

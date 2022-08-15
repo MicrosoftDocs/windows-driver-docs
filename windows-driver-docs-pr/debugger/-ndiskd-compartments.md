@@ -9,7 +9,6 @@ api_name:
 - ndiskd.compartments
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ndiskd.compartments
@@ -30,13 +29,11 @@ This extension has no parameters.
 
 Ndiskd.dll
 
-Remarks
--------
+## Remarks
 
 Compartments are a way that NDIS manages interfaces. Third party interface providers only use the primary compartment, as described in the **CompartmentId** member of the [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters) structure.
 
-Examples
---------
+## Examples
 
 Run the **!ndiskd.compartments** extension to see a list of all network compartments. In this example, there is only one compartment (the primary one).
 
@@ -57,7 +54,7 @@ Run the **!ndiskd.compartments** extension to see a list of all network compartm
 
 [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
+[Debugging the Network Stack](/shows/defrag-tools/175-debugging-network-stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 

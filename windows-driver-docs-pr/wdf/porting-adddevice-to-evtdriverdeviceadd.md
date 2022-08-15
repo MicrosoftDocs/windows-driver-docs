@@ -2,7 +2,6 @@
 title: Porting AddDevice to EvtDriverDeviceAdd
 description: Porting AddDevice to EvtDriverDeviceAdd
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Porting AddDevice to EvtDriverDeviceAdd

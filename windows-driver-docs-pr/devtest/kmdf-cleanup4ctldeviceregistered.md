@@ -9,7 +9,6 @@ api_name:
 - Cleanup4CtlDeviceRegistered
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Cleanup4CtlDeviceRegistered rule (kmdf)
@@ -25,8 +24,7 @@ The event callback function can be one of the following:
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>

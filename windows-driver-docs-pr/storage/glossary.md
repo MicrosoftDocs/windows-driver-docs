@@ -2,7 +2,6 @@
 title: Storage class memory glossary
 description: Glossary page
 Robots: noindex, nofollow
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

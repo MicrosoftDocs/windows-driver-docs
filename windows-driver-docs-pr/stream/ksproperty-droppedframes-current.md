@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_DROPPEDFRAMES\_CURRENT
-description: The KSPROPERTY\_DROPPED\_FRAMES\_CURRENT property dynamically retrieves the video capture minidriver for the number of frames captured, the number of frames dropped, and the average frame size. This property must be implemented.
+title: KSPROPERTY_DROPPEDFRAMES_CURRENT
+description: The KSPROPERTY_DROPPED_FRAMES_CURRENT property dynamically retrieves the video capture minidriver for the number of frames captured, the number of frames dropped, and the average frame size. This property must be implemented.
 keywords: ["KSPROPERTY_DROPPEDFRAMES_CURRENT Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,77 +10,31 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/19/2021
 ---
 
-# KSPROPERTY\_DROPPEDFRAMES\_CURRENT
+# KSPROPERTY_DROPPEDFRAMES_CURRENT
 
+The **KSPROPERTY_DROPPED_FRAMES_CURRENT** property dynamically retrieves the video capture minidriver for the number of frames captured, the number of frames dropped, and the average frame size. This property must be implemented.
 
-The KSPROPERTY\_DROPPED\_FRAMES\_CURRENT property dynamically retrieves the video capture minidriver for the number of frames captured, the number of frames dropped, and the average frame size. This property must be implemented.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_droppedframes_current_ks"></span><span id="DDK_KSPROPERTY_DROPPEDFRAMES_CURRENT_KS"></span>
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | No | Pin | [**KSPROPERTY_DROPPEDFRAMES_CURRENT_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_droppedframes_current_s) | [**KSPROPERTY_DROPPEDFRAMES_CURRENT_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_droppedframes_current_s) |
 
+The property value (operation data) is a **KSPROPERTY_DROPPEDFRAMES_CURRENT_S** structure that specifies the current picture number, the count of dropped frames, and the average size of the frames captured.
 
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_droppedframes_current_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_DROPPEDFRAMES_CURRENT_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_droppedframes_current_s)"><strong>KSPROPERTY_DROPPEDFRAMES_CURRENT_S</strong></a></p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_droppedframes_current_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_DROPPEDFRAMES_CURRENT_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_droppedframes_current_s)"><strong>KSPROPERTY_DROPPEDFRAMES_CURRENT_S</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-The property value (operation data) is a KSPROPERTY\_DROPPEDFRAMES\_CURRENT\_S structure that specifies the current picture number, the count of dropped frames, and the average size of the frames captured.
-
-Remarks
--------
+## Remarks
 
 The counts of frames captured and frames dropped should reset when the stream state transitions from stop to pause.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
 
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
-
-[**KSPROPERTY\_DROPPEDFRAMES\_CURRENT\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_droppedframes_current_s)
-
+[**KSPROPERTY_DROPPEDFRAMES_CURRENT_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_droppedframes_current_s)

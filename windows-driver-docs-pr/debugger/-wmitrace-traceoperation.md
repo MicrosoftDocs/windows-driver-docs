@@ -9,7 +9,6 @@ api_name:
 - wmitrace.traceoperation
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wmitrace.traceoperation
@@ -42,8 +41,7 @@ This extension is exported by Wmitrace.dll.
 
 For a conceptual overview of event tracing, see the Microsoft Windows SDK.
 
-Remarks
--------
+## Remarks
 
 This extension causes the tracing components to display verbose output. This feature is useful to troubleshoot software tracing.
 

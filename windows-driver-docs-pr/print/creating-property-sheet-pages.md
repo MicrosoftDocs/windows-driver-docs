@@ -6,7 +6,6 @@ keywords:
 - CPSUI WDK print , creating property sheet pages
 - property sheet pages WDK print , creating
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Creating Property Sheet Pages

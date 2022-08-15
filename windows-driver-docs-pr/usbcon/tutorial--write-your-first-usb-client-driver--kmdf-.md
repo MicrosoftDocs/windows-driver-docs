@@ -2,7 +2,6 @@
 description: In this topic you'll use the USB Kernel-Mode Driver template provided with Microsoft Visual Studio Professional 2019 to write a simple kernel-mode driver framework (KMDF)-based client driver.
 title: How to write your first USB client driver (KMDF)
 ms.date: 06/07/2019
-ms.localizationpriority: medium
 ---
 
 # How to write your first USB client driver (KMDF)
@@ -45,8 +44,7 @@ You can also get a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be 
 -   [Kernel-Mode Driver Framework](../wdf/index.md)
 -   *Developing Drivers with Windows Driver Foundation*, written by Penny Orwick and Guy Smith. For more information, see [Developing Drivers with WDF](../wdf/developing-drivers-with-wdf.md).
 
-Instructions
-------------
+## Instructions
 
 ### <a href="" id="generate-the-kmdf-driver-code-by-using-the--visual-studio-professional-2019---usb-driver-template"></a>Step 1: Generate the KMDF driver code by using the Visual Studio Professional 2019 USB driver template
 
@@ -61,9 +59,9 @@ For instructions about generating KMDF driver code, see the steps in [Writing a 
 
 The following screen shots show the **New Project** dialog box for the **USB Kernel-Mode Driver** template.
 
-![visual studio new project options](images/kmdf-template-visual-studio-2019.png)
+![visual studio new project options.](images/kmdf-template-visual-studio-2019.png)
 
-![visual studio new project options second screen](images/kmdf-template-visual-studio-2019-2.png)
+![visual studio new project options second screen.](images/kmdf-template-visual-studio-2019-2.png)
 
 This topic assumes that the name of the Visual Studio project is "MyUSBDriver\_". It contains the following files:
 

@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ElementData for ScannerElements element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **ElementData** element contains the data that is returned for a scanner-related schema request.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ElementData Name="" Valid=""
@@ -28,8 +26,7 @@ Usage
 </wscn:ElementData Name="" Valid="">
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -111,8 +108,7 @@ Attributes
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 A client calls [**GetScannerElementsRequest**](getscannerelementsrequest.md) to determine the values of scanner-related elements. The WSD Scan Service returns this information in the **ElementData** element through the [**GetScannerElementsResponse**](getscannerelementsresponse.md) operation.
 

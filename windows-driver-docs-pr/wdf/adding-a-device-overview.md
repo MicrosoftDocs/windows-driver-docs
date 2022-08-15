@@ -8,7 +8,6 @@ keywords:
 - installing devices WDK , UMDF
 - adding devices WDK UMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding a Device Overview
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 The following figure shows an overview of how the framework adds a new device:
 
-![call sequence when umdf adds a device](images/adddevice.gif)
+![call sequence when umdf adds a device.](images/adddevice.gif)
 
  
 

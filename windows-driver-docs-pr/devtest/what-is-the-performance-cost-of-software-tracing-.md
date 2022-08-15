@@ -2,7 +2,6 @@
 title: What is the performance cost of software tracing
 description: What is the performance cost of software tracing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # What is the performance cost of software tracing?

@@ -4,10 +4,11 @@ description: WDI_TLV_NETWORK_LIST_OFFLOAD_PARAMETERS is a TLV that contains Netw
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_NETWORK_LIST_OFFLOAD_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_PARAMETERS
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_PARAMETERS is a TLV that contains Network List Offload (NLO) parameters for [OID\_WDI\_SET\_NETWORK\_LIST\_OFFLOAD](./oid-wdi-set-network-list-offload.md).
@@ -32,8 +33,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

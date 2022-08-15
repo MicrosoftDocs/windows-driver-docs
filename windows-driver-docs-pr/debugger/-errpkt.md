@@ -1,5 +1,5 @@
 ---
-title: errpkt
+title: errpkt (WinDbg)
 description: The errpkt extension displays the contents of a Windows Hardware Error Architecture (WHEA) hardware error packet.
 keywords: ["errpkt Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - errpkt
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !errpkt
@@ -62,8 +61,7 @@ This extension can be used only in Windows Vista and later versions of Windows.
 
 The [**!whea**](-whea.md) and [**!errrec**](-errrec.md) extensions can be used to display additional WHEA information. For general information about WHEA, see [Windows Hardware Error Architecture (WHEA)](../whea/index.md) in the Windows Driver Kit (WDK) documentation.
 
-Remarks
--------
+## Remarks
 
 The following example shows the output of the **!errpkt** extension:
 

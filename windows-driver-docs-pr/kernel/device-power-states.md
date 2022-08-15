@@ -3,7 +3,6 @@ title: Device Power States
 description: Device Power States
 keywords: ["device power states WDK kernel", "power states WDK kernel", "states WDK power management", "Dx names WDK power management", "low power modes WDK kernel", "power saving modes WDK kernel", "continuous power WDK kernel", "delays WDK power management"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Device Power States
@@ -41,7 +40,7 @@ A driver or the power manager can request a device power state transition, and a
 
 Like the system, a device can transition from the working state (D0) to any low-power state (D1, D2, or D3) and from any low-power state to the working state. The following diagram is a state graph that shows the valid device power state transitions.
 
-![diagram illustrating the valid device power state transitions](images/dxpostates.png)
+![diagram illustrating the valid device power state transitions.](images/dxpostates.png)
 
 This graph shows the subdivision of D3 into D3hot and D3cold. D3hot and D3cold are defined starting with Windows 8. All devices are required to support the D0 state and D3hot substate. The other states shown in the diagram are optional.
 

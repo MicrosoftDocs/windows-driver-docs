@@ -6,7 +6,6 @@ keywords:
 - linear aperture-space segments WDK display
 - aperture-space segments WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Linear Aperture-Space Segments
@@ -27,7 +26,7 @@ The driver must set the **Aperture** bit-field flag in the **Flags** member of t
 
 The following figure shows a visual representation of a linear aperture-space segment.
 
-![diagram illustrating a linear aperture-space segment](images/aptrspac.png)
+![diagram illustrating a linear aperture-space segment.](images/aptrspac.png)
 
  
 

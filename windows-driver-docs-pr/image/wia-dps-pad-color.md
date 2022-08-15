@@ -1,6 +1,6 @@
 ---
-title: WIA\_DPS\_PAD\_COLOR
-description: The WIA\_DPS\_PAD\_COLOR property contains the current pad color that is used when the WIA minidriver pads unaligned data. The WIA minidriver creates and maintains this property.
+title: WIA_DPS_PAD_COLOR
+description: The WIA_DPS_PAD_COLOR property contains the current pad color that is used when the WIA minidriver pads unaligned data. The WIA minidriver creates and maintains this property.
 keywords: ["WIA_DPS_PAD_COLOR Imaging Devices"]
 topic_type:
 - apiref
@@ -10,52 +10,25 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 09/30/2021
 ---
 
-# WIA\_DPS\_PAD\_COLOR
+# WIA_DPS_PAD_COLOR
 
+The WIA_DPS_PAD_COLOR property contains the current pad color that is used when the WIA minidriver pads unaligned data. The WIA minidriver creates and maintains this property.
 
-The WIA\_DPS\_PAD\_COLOR property contains the current pad color that is used when the WIA minidriver pads unaligned data. The WIA minidriver creates and maintains this property.
+Property Type: VT_UI1 | VT_VECTOR
 
-## <span id="ddk_wia_dps_pad_color_si"></span><span id="DDK_WIA_DPS_PAD_COLOR_SI"></span>
-
-
-Property Type: VT\_UI1 | VT\_VECTOR
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read/write
 
-Remarks
--------
+## Remarks
 
-The WIA\_DPS\_PAD\_COLOR property should be reported as a vector of four BYTE values in the form of an RGBQUAD structure (which is described in the Microsoft Windows SDK documentation).
+The WIA_DPS_PAD_COLOR property should be reported as a vector of four BYTE values in the form of an RGBQUAD structure (which is described in the Microsoft Windows SDK documentation).
 
-An application reads WIA\_DPS\_PAD\_COLOR to get the padding color that is used.
+An application reads WIA_DPS_PAD_COLOR to get the padding color that is used.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

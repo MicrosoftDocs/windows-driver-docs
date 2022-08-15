@@ -3,7 +3,6 @@ title: Overview of Wait/Wake Operation
 description: Overview of Wait/Wake Operation
 keywords: ["power management WDK kernel , wake-up capabilities", "external wake signals WDK", "awakening devices", "wake-up capabilities WDK power management", "device wake ups WDK power management", "IRP_MN_WAIT_WAKE", "wait/wake IRPs WDK power management , about wait/wake IRPs"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of Wait/Wake Operation
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 The operating system's wake-up mechanism works as shown in the following figure.
 
-![diagram illustrating an overview of irp\-mn\-wait\-wake processing](images/send-waitwake.png)
+![diagram illustrating an overview of irp\-mn\-wait\-wake processing.](images/send-waitwake.png)
 
 1.  While the system and device are in the working state, the power policy owner for a device determines that its device should be enabled ("armed") for wake-up. The power policy owner requests a power IRP ([**PoRequestPowerIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp) with minor code [**IRP\_MN\_WAIT\_WAKE**](./irp-mn-wait-wake.md)) to be sent to its PDO to inform all drivers in its device stack. In the request, the policy owner specifies a callback routine (not the same as an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine).
 

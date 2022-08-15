@@ -4,10 +4,11 @@ description: WDI_TLV_INDICATION_CAN_SUSTAIN_AP is a TLV that contains the reason
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_INDICATION_CAN_SUSTAIN_AP Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_INDICATION\_CAN\_SUSTAIN\_AP
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_INDICATION\_CAN\_SUSTAIN\_AP is a TLV that contains the reason for a Can Sustain AP indication.
@@ -31,8 +32,7 @@ The size (in bytes) of a UINT32.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

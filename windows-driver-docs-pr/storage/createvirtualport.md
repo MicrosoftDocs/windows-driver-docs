@@ -8,7 +8,6 @@ api_name:
 - CreateVirtualPort
 api_type:
 - COM
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -17,8 +16,7 @@ ms.date: 10/17/2018
 
 The **CreateVirtualPort** method creates a virtual port with a specific world wide port name (WWPN) .
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void CreateVirtualPort(
@@ -30,8 +28,7 @@ void CreateVirtualPort(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *WWPN\[8\]*   
 The world wide port name of the virtual port to create.
@@ -48,8 +45,7 @@ A symbolic name for the virtual port.
 *Status*   
 On return, contains the status of the operation.
 
-Return value
-------------
+## Return value
 
 Not applicable to WMI methods.
 

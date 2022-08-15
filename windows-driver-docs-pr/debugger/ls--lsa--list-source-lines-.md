@@ -9,7 +9,6 @@ api_name:
 - ls, lsa (List Source Lines)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ls, lsa (List Source Lines)
@@ -64,8 +63,7 @@ Specifies the quantity of lines to display. The default value is 20 (0x14), unle
 
  
 
-Remarks
--------
+## Remarks
 
 After you run the **ls** or **lsa** command, the current line is redefined as the final line that is displayed plus one. The current line is used in future **ls**, **lsa**, and [**lsc**](lsc--list-current-source-.md) commands.
 

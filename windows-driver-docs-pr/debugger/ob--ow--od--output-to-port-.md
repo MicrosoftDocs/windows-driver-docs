@@ -9,7 +9,6 @@ api_name:
 - ob, ow, od (Output to Port)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ob, ow, od (Output to Port)
@@ -57,8 +56,7 @@ Specifies the hexadecimal value to write to the port.
 
  
 
-Remarks
--------
+## Remarks
 
 The **ob** command writes a single byte, the **ow** command writes a word, and the **od** command writes a double word.
 

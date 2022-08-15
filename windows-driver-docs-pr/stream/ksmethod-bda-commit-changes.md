@@ -1,6 +1,6 @@
 ---
-title: KSMETHOD\_BDA\_COMMIT\_CHANGES
-description: Clients use KSMETHOD\_BDA\_COMMIT\_CHANGES to commit a list of requested changes.
+title: KSMETHOD_BDA_COMMIT_CHANGES
+description: Clients use KSMETHOD_BDA_COMMIT_CHANGES to commit a list of requested changes.
 keywords: ["KSMETHOD_BDA_COMMIT_CHANGES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,53 +10,31 @@ api_location:
 - Bdamedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/12/2021
 ---
 
-# KSMETHOD\_BDA\_COMMIT\_CHANGES
+# KSMETHOD_BDA_COMMIT_CHANGES
 
+Clients use KSMETHOD_BDA_COMMIT_CHANGES to commit a list of requested changes.
 
-Clients use KSMETHOD\_BDA\_COMMIT\_CHANGES to commit a list of requested changes.
+## Specifying This Method
 
-## <span id="ddk_ksmethod_bda_commit_changes_ks"></span><span id="DDK_KSMETHOD_BDA_COMMIT_CHANGES_KS"></span>
+KSMETHOD with **Flags** member set to KSMETHOD_TYPE_NONE.
 
-
-### <span id="Specifying_This_Method"></span><span id="specifying_this_method"></span><span id="SPECIFYING_THIS_METHOD"></span>Specifying This Method
-
-KSMETHOD with **Flags** member set to KSMETHOD\_TYPE\_NONE.
-
-### <span id="Method_Data"></span><span id="method_data"></span><span id="METHOD_DATA"></span>Method Data
+## Method Data
 
 None
 
-Remarks
--------
+## Remarks
 
-When the network provider makes a KSMETHOD\_BDA\_COMMIT\_CHANGES request, the list of changes are committed on the underlying filter, at which point the filter resets its state and a new cycle can begin.
+When the network provider makes a KSMETHOD_BDA_COMMIT_CHANGES request, the list of changes are committed on the underlying filter, at which point the filter resets its state and a new cycle can begin.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Bdamedia.h (include Bdamedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** bdamedia.h (include Bdamedia.h)
 
 ## See also
 
-
 [**BdaCommitChanges**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacommitchanges)
 
-[**KSMETHOD**](/previous-versions/ff563398(v=vs.85))
-
- 
-
+[**KSMETHOD**](./ksmethod-structure.md)

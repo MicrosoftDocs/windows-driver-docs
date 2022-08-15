@@ -9,7 +9,6 @@ api_name:
 - IoReleaseRemoveLockAndWaitOutsideRemoveDevice
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # IoReleaseRemoveLockAndWaitOutsideRemoveDevice rule (wdm)
@@ -19,8 +18,7 @@ The **IoReleaseRemoveLockAndWaitOutsideRemoveDevice** rule specifies that [**IoR
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,11 +43,9 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**IoReleaseRemoveLockAndWait**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreleaseremovelockandwait)
-See also
---------
+## See also
 
 [Using Remove Locks](../kernel/using-remove-locks.md)

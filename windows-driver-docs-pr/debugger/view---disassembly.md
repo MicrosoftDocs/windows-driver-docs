@@ -3,7 +3,6 @@ title: View Disassembly
 description: View Disassembly
 keywords: ["View Disassembly"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # View | Disassembly
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 Click **Disassembly** on the **View** menu to open the [Disassembly window](disassembly-window.md). If this window is already open, it becomes active.
 
-This command is equivalent to pressing ALT+7 or clicking the **Disassembly (Alt+7)** button (![screen shot of the disassembly button](images/tbdisasm2.png)) on the toolbar.
+This command is equivalent to pressing ALT+7 or clicking the **Disassembly (Alt+7)** button (![screen shot of the disassembly button.](images/tbdisasm2.png)) on the toolbar.
 
 For more information about this window and its uses, see [Disassembly Window](disassembly-window.md).
 

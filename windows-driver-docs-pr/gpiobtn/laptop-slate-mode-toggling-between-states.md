@@ -1,7 +1,6 @@
 ---
 title: Laptop/slate mode toggling between states
 description: This topic contains sample code that toggles the laptop/slate mode indicator state.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

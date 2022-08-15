@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_QUALITY
@@ -72,13 +71,11 @@ Advanced (high-end) consumer audio quality
 
 A KSPROPERTY\_AUDIO\_QUALITY property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 For information about the types of sample-rate conversion that the [KMixer system driver](./kernel-mode-wdm-audio-components.md#kmixer-system-driver) performs, see [KMixer Driver Sample Rate Conversion and Mixing Policy](./index.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

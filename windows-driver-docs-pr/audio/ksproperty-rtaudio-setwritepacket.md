@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 12/21/2018
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_RTAUDIO\_SETWRITEPACKET
@@ -23,10 +22,10 @@ KSPROPERTY\_RTAUDIO\_SETWRITEPACKET informs the driver that the OS has written v
 
 |Get|Set|Target|Property descriptor type|Property value type|
 |--- |--- |--- |--- |--- |
-|No|Yes|Pin|[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))|[KSRTAUDIO_SETWRITEPACKET_INFO](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_setwritepacket_info)|
+|No|Yes|Pin|[**KSPROPERTY**](../stream/ksproperty-structure.md)|[KSRTAUDIO_SETWRITEPACKET_INFO](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_setwritepacket_info)|
 
 
-The property descriptor (instance data) is a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure. Before sending the request, the client loads the structure with values that include the packet number, packet length and other information.
+The property descriptor (instance data) is a [**KSPROPERTY**](../stream/ksproperty-structure.md) structure. Before sending the request, the client loads the structure with values that include the packet number, packet length and other information.
 
 The property value is a structure of type [**KSRTAUDIO\_SETWRITEPACKET\_INFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_setwritepacket_info).
 
@@ -34,8 +33,7 @@ The property value is a structure of type [**KSRTAUDIO\_SETWRITEPACKET\_INFO**](
 
 A KSPROPERTY\_RTAUDIO\_SETWRITEPACKET property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate failure status code.
 
-Remarks
--------
+## Remarks
 
 If this KSPROPERTY is supported, the driver may optionally use the provided information to optimize the hardware transfer. For example, the driver might optimize DMA transfers, or program hardware to stop transfer at the end of the specified packet in case the OS does not call this routine again to inform the driver of another packet. This can mitigate audible effects of underflow, for example introducing an audible gap rather than repeating a circular buffer. The driver however is still obligated to increase its internal packet counter and signal notification events at a nominal real time rate.
 
@@ -43,8 +41,7 @@ Except when the OS specifies the *KSSTREAM\_HEADER\_OPTIONSF\_ENDOFSTREAM* flag,
 
 Depending on hardware capabilities, if the *KSSTREAM\_HEADER\_OPTIONSF\_ENDOFSTREAM* flag is specified, the driver may silence-fill a portion of the WaveRT buffer that follows the EOS packet in case the hardware transfers data beyond the EOS position.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -69,6 +66,4 @@ Requirements
 [**KSPROPERTY\_RTAUDIO\_GETREADPACKET**](ksproperty-rtaudio-getreadpacket.md)
 
 [UsePositionLock](usepositionlock.md)
-
- 
 

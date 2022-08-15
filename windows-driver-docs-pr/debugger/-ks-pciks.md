@@ -1,5 +1,5 @@
 ---
-title: ks.pciks
+title: ks.pciks (WinDbg)
 description: The ks.pciks extension lists functional devices for kernel streaming devices that are attached to the PCI bus. Optionally, it can display information about active streams on those functional devices.
 keywords: ["ks.pciks Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ks.pciks
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.pciks
@@ -73,8 +72,7 @@ Optional, and applicable only to flag combinations that cause data to be display
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 This command may take time to execute, especially if the ACPI filter driver is loaded, or if Driver Verifier is enabled and driver names are paged out.
 

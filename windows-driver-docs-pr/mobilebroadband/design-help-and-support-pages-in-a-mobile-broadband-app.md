@@ -2,7 +2,6 @@
 title: Design help and support pages in a mobile broadband app
 description: Design help and support pages in a mobile broadband app
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Design help and support pages in a mobile broadband app
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 
 Customers who encounter issues using your mobile broadband service will go to the Help and Support page:
 
-![help and support page](images/mb-fig1-helpsupportpage.png)
+![help and support page.](images/mb-fig1-helpsupportpage.png)
 
 We recommend that you show the following information in the Help and Support section:
 

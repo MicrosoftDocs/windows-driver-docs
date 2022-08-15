@@ -4,7 +4,6 @@ description: The HS_PLUGIN_DEINIT function is called by the host to notify the p
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_DEINIT) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_PLUGIN\_DEINIT function
@@ -14,8 +13,7 @@ ms.localizationpriority: medium
 
 The **HS\_PLUGIN\_DEINIT** function is called by the host to notify the plugin that it will be unloaded.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_PLUGIN_DEINIT)(
@@ -23,24 +21,20 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *UnloadReason* \[in\]  
 An [**eHS\_UNLOAD\_REASON**](ehs-unload-reason.md) enumeration value that indicates the reason for the unload.
 
-Return value
-------------
+## Return value
 
 This function is called by the host to communicate with the plugin and does not return a value.
 
-Remarks
--------
+## Remarks
 
 Upon receiving notification that it will be unloaded, the plugin should complete any current activity and save state, if required.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

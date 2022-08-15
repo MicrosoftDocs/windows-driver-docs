@@ -4,11 +4,12 @@ description: OID_WDI_SET_CONNECTION_QUALITY provides a hint to the IHV component
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_CONNECTION_QUALITY Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_CONNECTION\_QUALITY
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_SET\_CONNECTION\_QUALITY provides a hint to the IHV component to enforce connection quality for a given virtualized port. This hint allows the port to optimize channel usage in different scenarios.
@@ -38,8 +39,7 @@ OID\_WDI\_SET\_CONNECTION\_QUALITY provides a hint to the IHV component to enfor
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

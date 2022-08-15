@@ -4,7 +4,6 @@ description: The NDIS_STATUS_NIC_SWITCH_HARDWARE_CAPABILITIES status indicates t
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_NIC_SWITCH_HARDWARE_CAPABILITIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_NIC\_SWITCH\_HARDWARE\_CAPABILITIES
@@ -14,8 +13,7 @@ The **NDIS\_STATUS\_NIC\_SWITCH\_HARDWARE\_CAPABILITIES** status indicates to ND
 
 The status indication is made by the miniport driver of the network adapter's PCI Express (PCIe) Physical Function (PF). The PF miniport driver runs in the management operating system of the Hyper-V parent partition.
 
-Remarks
--------
+## Remarks
 
 The PF miniport driver must issue an **NDIS\_STATUS\_NIC\_SWITCH\_HARDWARE\_CAPABILITIES** status indication whenever it detects a change to the hardware capabilities of the NIC switch on the network adapter. These capabilities could change when one of the following conditions is true:
 
@@ -38,8 +36,7 @@ When the PF miniport driver issues the **NDIS\_STATUS\_NIC\_SWITCH\_HARDWARE\_CA
 
 Overlying drivers can use the **NDIS\_STATUS\_NIC\_SWITCH\_HARDWARE\_CAPABILITIES** status indication to determine the currently enabled NIC switch capabilities on the network adapter. Alternatively, these drivers can also issue OID query requests of [OID\_NIC\_SWITCH\_HARDWARE\_CAPABILITIES](oid-nic-switch-hardware-capabilities.md) to obtain these capabilities at any time.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

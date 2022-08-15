@@ -9,7 +9,6 @@ keywords:
 - I/O requests WDK KMDF , synchronization
 - sent request cancellations WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Synchronizing Cancellation of Sent Requests

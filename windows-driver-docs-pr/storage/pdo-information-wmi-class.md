@@ -1,7 +1,6 @@
 ---
 title: PDO\_INFORMATION WMI Class
 description: PDO\_INFORMATION WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

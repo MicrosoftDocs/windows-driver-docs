@@ -4,10 +4,11 @@ description: WDI_TLV_P2P_LISTEN_STATE is a TLV that contains a Wi-Fi Direct list
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_LISTEN_STATE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_LISTEN\_STATE
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_LISTEN\_STATE is a TLV that contains a Wi-Fi Direct listen state.
@@ -31,8 +32,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

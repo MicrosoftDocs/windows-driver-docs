@@ -9,7 +9,6 @@ api_name:
 - END_OF_NT_EVALUATION_PERIOD
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x98: END\_OF\_NT\_EVALUATION\_PERIOD
@@ -57,8 +56,7 @@ The END\_OF\_NT\_EVALUATION\_PERIOD bug check has a value of 0x00000098. This bu
 
  
 
-Cause
------
+## Cause
 
 Your installation of the Windows operating system is an evaluation unit with an expiration date. The trial period is over.
 

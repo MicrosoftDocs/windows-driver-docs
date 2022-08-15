@@ -4,7 +4,6 @@ description: The HS_PLUGIN_QUERY_CELLULAR_EXCEPTION_HOSTS function queries the l
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_QUERY_CELLULAR_EXCEPTION_HOSTS) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_PLUGIN\_QUERY\_CELLULAR\_EXCEPTION\_HOSTS function
@@ -14,8 +13,7 @@ ms.localizationpriority: medium
 
 The **HS\_PLUGIN\_QUERY\_CELLULAR\_EXCEPTION\_HOSTS** function queries the list of hosts that the plugin will need to connect to over cellular as part of its authentication process.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_PLUGIN_QUERY_CELLULAR_EXCEPTION_HOSTS)(
@@ -23,24 +21,20 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *\*pExceptionsList* \[in, out\]  
 The [**HS\_PLUGIN\_CELLULAR\_EXCEPTION\_HOSTS**](hs-plugin-cellular-exception-hosts.md) structure that contains the list of cellular host names.
 
-Return value
-------------
+## Return value
 
 This function is called by the host to communicate with the plugin and does not return a value.
 
-Remarks
--------
+## Remarks
 
 This function is called only if the plugin sets the **dwNumCellularExceptions** field of its [**HS\_PLUGIN\_PROFILE**](hs-plugin-profile.md) to a value greater than zero.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

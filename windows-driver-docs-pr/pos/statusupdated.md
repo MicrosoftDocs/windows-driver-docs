@@ -2,7 +2,6 @@
 title: StatusUpdated
 description: The device-specific StatusUpdated event represents events such as a power change notification.
 ms.date: 09/07/2018
-ms.localizationpriority: medium
 ---
 
 # StatusUpdated

@@ -6,7 +6,6 @@ keywords:
 - VGA WDK video miniport , HwVidFindAdapter
 - HwVidFindAdapter
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # VGA-Compatible Miniport Driver's HwVidFindAdapter

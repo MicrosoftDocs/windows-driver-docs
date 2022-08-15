@@ -4,7 +4,6 @@ description: All Windows Display Driver Model (WDDM) 1.2 and later display minip
 keywords:
 - Plug and Play in display drivers WDK display
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Plug and Play (PnP) in WDDM 1.2 and later

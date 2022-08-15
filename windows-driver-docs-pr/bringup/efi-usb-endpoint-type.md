@@ -1,17 +1,14 @@
 ---
 title: EFI_USB_ENDPOINT_TYPE
-description: EFI_USB_ENDPOINT_TYPE
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+description: The EFI_USB_ENDPOINT_TYPE enumeration contains values used to indicate the type of endpoint.
+ms.date: 08/20/2021
 ---
 
-# EFI\_USB\_ENDPOINT\_TYPE
+# EFI_USB_ENDPOINT_TYPE
 
-
-The **EFI\_USB\_ENDPOINT\_TYPE** enumeration contains values used to indicate the type of endpoint.
+The **EFI_USB_ENDPOINT_TYPE** enumeration contains values used to indicate the type of endpoint.
 
 ## Syntax
-
 
 ```cpp
 typedef enum _EFI_USB_ENDPOINT_TYPE{
@@ -24,28 +21,18 @@ typedef enum _EFI_USB_ENDPOINT_TYPE{
 
 ## Constants
 
-
-<a href="" id="usbendpointcontrol"></a>**UsbEndpointControl**  
+**UsbEndpointControl**  
 Control transfer - command and status operations.
 
-<a href="" id="usbendpointisochronous"></a>**UsbEndpointIsochronous**  
-Isochronous transfe - continuous stream of time sensitive data with guaranteed bandwidth and bounded latency.
+**UsbEndpointIsochronous**  
+Isochronous transfer - continuous stream of time sensitive data with guaranteed bandwidth and bounded latency.
 
-<a href="" id="usbendpointbulk"></a>**UsbEndpointBulk**  
+**UsbEndpointBulk**  
 Bulk transfer - large amount data in bursts with no guarantee of bandwidth or minimum latency.
 
-<a href="" id="usbendpointinterrupt"></a>**UsbEndpointInterrupt**  
+**UsbEndpointInterrupt**  
 Interrupt transfer - non-periodic communication with guarantee of maximum latency.
 
 ## Requirements
 
-
 **Header:** User generated
-
- 
-
- 
-
-
-
-

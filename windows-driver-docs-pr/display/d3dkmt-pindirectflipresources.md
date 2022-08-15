@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # D3DKMT\_PINDIRECTFLIPRESOURCES structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _D3DKMT_PINDIRECTFLIPRESOURCES {
@@ -30,8 +28,7 @@ typedef struct _D3DKMT_PINDIRECTFLIPRESOURCES {
 } D3DKMT_PINDIRECTFLIPRESOURCES;
 ```
 
-Members
--------
+## Members
 
 **hDevice**
 
@@ -39,8 +36,7 @@ Members
 
 **pResourceList**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

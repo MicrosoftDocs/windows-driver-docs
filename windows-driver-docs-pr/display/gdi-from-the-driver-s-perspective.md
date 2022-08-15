@@ -6,7 +6,6 @@ keywords:
 - graphics drivers WDK Windows 2000 display , driver communication
 - drawing WDK GDI , driver communication
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # GDI from the Driver's Perspective
@@ -23,7 +22,7 @@ GDI includes many graphics output capabilities in itself, eliminating the need f
 
 The following figure shows this flow of communication.
 
-![diagram illustrating the graphics driver and graphics device interface (gdi) interaction](images/gditoddi.png)
+![diagram illustrating the graphics driver and graphics device interface (gdi) interaction.](images/gditoddi.png)
 
  
 

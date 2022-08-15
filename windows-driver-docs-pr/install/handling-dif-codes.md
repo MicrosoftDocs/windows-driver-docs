@@ -7,14 +7,12 @@ keywords:
 - device installation function codes WDK
 - function codes WDK device installations
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Handling DIF Codes
 
-
-
-
+> [!NOTE]
+> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 *Device installation applications* send [device installation function codes](/previous-versions/ff541307(v=vs.85)) (DIF codes) to installers by calling [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller). This function, in turn, calls the installer's entry point function. For a description of installer entry points, see:
 
@@ -85,7 +83,7 @@ Lists sources of related information.
 
 The following figure shows the sequence of events in **SetupDiCallClassInstaller** for processing a DIF code.
 
-![diagram illustrating the flow of dif code processing in setupdicallclassinstaller](images/dif-flow.png)
+![diagram illustrating the flow of dif code processing in setupdicallclassinstaller.](images/dif-flow.png)
 
 The operating system performs some operations for each DIF code. Vendor-supplied co-installers and class installers can participate in the installation activities. Note that **SetupDiCallClassInstaller** calls co-installers that registered for postprocessing even if the DIF code fails.
 

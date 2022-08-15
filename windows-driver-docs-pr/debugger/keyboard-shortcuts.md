@@ -3,7 +3,6 @@ title: Keyboard Shortcuts
 description: Keyboard Shortcuts
 keywords: ["control keys, WinDbg shortcut keys", "WinDbg, shortcut keys", "shortcut keys"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Keyboard Shortcuts

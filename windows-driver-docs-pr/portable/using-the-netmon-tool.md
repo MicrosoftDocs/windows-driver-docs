@@ -1,13 +1,12 @@
 ---
 description: The Network Monitor tool (NetMon.exe) is a Windows-based application that you can use to view traces from WPD components.
 title: Using the Network Monitor Tool
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 03/18/2022
 ---
 
 # Using the Network Monitor Tool
 
-The Network Monitor tool (*NetMon.exe*) is a Windows-based application that you can use to view traces from WPD components. The tool replaces *WpdMon.exe* and provides a new means of collecting and viewing WPD traces in Windows 8.
+The Network Monitor tool (*NetMon.exe*) is an archived Windows-based application that you can use to view traces from WPD components. Starting in Windows 8, the tool replaced *WpdMon.exe*.
 
 ## Installing and Configuring NetMon.exe
 
@@ -25,7 +24,7 @@ To install and configure the Network Monitor tool, complete the following steps.
 
 4. Configure the *NetMon.exe* options by using the Tools/Options dialog:
    1. In the **General** tab, select the **Use fixed width font in Frame Summary** box.
-   2. In the **Color Rules** tab, select **Open** and then select \\Program Files (x86)\\Windows Kits\\8.0\\Tools\\x86\\Network Monitor Parsers\\wpd\\wpd.nmcr. Select **Open**, followed by **OK.**
+   2. In the **Color Rules** tab, select **Open** and then select `Program Files (x86)\Windows Kits\8.0\Tools\x86\Network Monitor Parsers\wpd\wpd.nmcr`. Select **Open**, followed by **OK.**
 
 After you complete these steps, *NetMon.exe* is ready to examine WPD trace files. To begin collecting traces, follow the instructions in the next section, Collecting Traces.
 
@@ -84,7 +83,7 @@ The following image shows a WPDAPI request at API level. The request travels thr
 - If you select a WPDMTP Response line in the **Frame Summary** window, the corresponding item expands in the **Frame Details** window.
 - Select the "+"s in the **Frame Details** window to expand further and explore. If an MTP operation has a dataphase, the dataset received from the device is available under the **DataSetOfDataPhase** field of a WPDMTP Response item.
 
-![viewing traces](images/framedetails1.png)
+![viewing traces.](images/framedetails1.png)
 
 - You can select to expand the items and see that the **Frame Details** window displays WPD/MTP friendly messages. The convention followed when writing the WPD parsers is that you will be able to see summary of the details at the header level. For example, in a GetServiceCapabilities call, the **DataSetOfDataPhase** field shows next to it, the number of formats in that dataset.
 - You can remove the **Source** and **Destination** columns in the **Frame Summary** window to improve clarity

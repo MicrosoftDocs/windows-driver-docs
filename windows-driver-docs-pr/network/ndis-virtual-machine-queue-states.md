@@ -2,7 +2,6 @@
 title: NDIS Virtual Machine Queue States
 description: NDIS Virtual Machine Queue States
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # NDIS Virtual Machine Queue States
@@ -31,7 +30,7 @@ For each queue, a network adapter must support the following set of operational 
 
 The following figure shows the relationships between these states.
 
-![diagram illustrating ndis vm queue states and events](images/queuestate.png)
+![diagram illustrating ndis vm queue states and events.](images/queuestate.png)
 
 The following defines the adapter states:
 

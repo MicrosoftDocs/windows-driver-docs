@@ -9,7 +9,6 @@ api_name:
 - FAST_ERESOURCE_PRECONDITION_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1C6: FAST\_ERESOURCE\_PRECONDITION\_VIOLATION
@@ -117,7 +116,6 @@ The FAST\_ERESOURCE\_PRECONDITION\_VIOLATION bug check has a value of 0x000001C6
 
 
 ## Cause
------
 
 The current thread is performing an invalid call to a fast resource routine.
 
@@ -125,7 +123,6 @@ The current thread is performing an invalid call to a fast resource routine.
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 ## See Also
-----------
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

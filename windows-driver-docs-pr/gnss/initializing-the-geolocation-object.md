@@ -1,13 +1,12 @@
 ---
 title: Initializing the geolocation object
 description: Geolocation.cpp contains an Initialize method that initializes the settable property keys and data-field keys for the simulated geolocation-sensor.
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 08/25/2021
 ---
 
 # Initializing the geolocation object
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > This documentation and the geolocation driver sample for Windows 8.1 has been deprecated.
 
 The object source file, geolocation.cpp, contains an **Initialize** method that initializes the settable property keys and data-field keys for the simulated geolocation-sensor. This method is invoked by the sensor manager at startup.
@@ -46,5 +45,7 @@ The **CSensorManager::Start** method invokes **CGeolocation::Initialize** immedi
 The **Initialize** method, in turn, invokes an **InitializeGeolocation** method. This latter method invokes **CGeolocation::AddGeolocationSettablePropertyKeys** to initialize the property keys for the writeable properties supported by the pseudo-sensor. After adding the property keys, the **InitializeGeolocation** method invokes **CGeolocation::AddGeolocationDataFieldKeys** to initialize the data field keys for the supported data fields.
 
 ## Related topics
+
 [Defining the geolocation object](defining-the-geolocation-object.md)  
+
 [Filtering data](../sensors/filtering-data.md)

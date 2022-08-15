@@ -4,7 +4,6 @@ description: MB Protocol Configuration Options (PCO) operations
 keywords:
 - MB PCO options, Mobile Broadband PCO options, MB Protocol Configuration Options, Mobile Broadband Protocol Configuration Options, WDK network drivers, MBB miniport drivers
 ms.date: 03/01/2021
-ms.localizationpriority: medium
 ---
 
 # MB Protocol Configuration Options (PCO) operations
@@ -29,7 +28,7 @@ For the third scenario, when a connection is activated or bridged on the host, t
 
 The following figure shows the scenario flow:
 
-![MB PCO operations flow](images/mb_PCO_operations_flow.png "MB PCO operations flow")
+![MB PCO operations flow.](images/mb_PCO_operations_flow.png "MB PCO operations flow")
 
 ## Modem behavior with Selective Suspend and Connected Standby
 
@@ -48,7 +47,7 @@ The host is not aware of the modem being reset, so the activated connections fro
 
 The following diagram illustrates the modem’s reset flow when one of these scenarios occurs, with Verizon Wireless as the example MO:
 
-![MB modem reset based on PCO values](images/mb_PCO_modem_reset.png "MB modem reset based on PCO values")
+![MB modem reset based on PCO values.](images/mb_PCO_modem_reset.png "MB modem reset based on PCO values")
 
 ## NDIS interface to the modem
 

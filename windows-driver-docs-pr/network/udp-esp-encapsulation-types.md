@@ -5,7 +5,6 @@ keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , encapsulation types and subtypes
 - encapsulation WDK UDP-ESP
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # UDP-ESP Encapsulation Types
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 The following figure shows the UDP encapsulation of Internet Key Exchange (IKE) packets and ESP-protected data packets that are received on port 4500.
 
-![diagram illustrating the basic udp-esp encapsulation for port 4500](images/4500-encap-types.png)
+![diagram illustrating the basic udp-esp encapsulation for port 4500.](images/4500-encap-types.png)
 
 Note the four bytes of zeros that follow the UDP header in IKE packets. This field of zeros differentiates IKE packets from UDP-encapsulated ESP packets on port 4500. Instead of zeros, ESP headers have a nonzero ESP header at this location in the packet.
 
@@ -45,7 +44,7 @@ Note that a UDP-encapsulated transport over a UDP-encapsulated tunnel is not a s
 
 The following figure shows the UDP-ESP encapsulation subtypes for port 4500.
 
-![diagram illustrating the udp-esp encapsulation subtypes for port 4500](images/4500-encap-subtypes.png)
+![diagram illustrating the udp-esp encapsulation subtypes for port 4500.](images/4500-encap-subtypes.png)
 
  
 

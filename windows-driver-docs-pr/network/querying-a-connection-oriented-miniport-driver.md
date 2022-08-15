@@ -4,7 +4,6 @@ description: Querying a Connection-Oriented Miniport Driver
 keywords:
 - connection-oriented drivers WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Querying a Connection-Oriented Miniport Driver
@@ -13,11 +12,11 @@ ms.localizationpriority: medium
 
 
 
-To query information objects that a connection-oriented miniport driver maintains, a bound protocol calls [**NdisCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest) and passes an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure that specifies the object (OID) that is being queried and that provides a buffer into which NDIS eventually writes the requested information. The call to **NdisCoOidRequest** causes NDIS to call the miniport driver's [*MiniportCoOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request) function, which returns the requested information to NDIS. *MiniportCoOidRequest* can complete synchronously or asynchronously with a call to [**NdisCoOidRequestComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequestcomplete).
+To query information objects that a connection-oriented miniport driver maintains, a bound protocol calls [**NdisCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest) and passes an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure that specifies the object (OID) that is being queried and that provides a buffer into which NDIS eventually writes the requested information. The call to **NdisCoOidRequest** causes NDIS to call the miniport driver's [*MiniportCoOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request) function, which returns the requested information to NDIS. *MiniportCoOidRequest* can complete synchronously or asynchronously with a call to [**NdisCoOidRequestComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequestcomplete).
 
 NDIS can also call a miniport driver's [*MiniportCoOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request) function on its own behalf—for example, after the miniport driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function has returned NDIS\_STATUS\_SUCCESS—to query the miniport driver's capabilities, status, or statistics. The following diagram illustrates querying a connection-oriented miniport driver.
 
-![diagram illustrating querying a connection-oriented miniport driver](images/fig5-3.png)
+![diagram illustrating querying a connection-oriented miniport driver.](images/fig5-3.png)
 
 A connection-oriented miniport driver must be able to provide information about a global basis for all virtual connections (VCs) for a particular NIC and also on a per-VC basis. For example, if a non-**NULL** *NdisVcHandle* is supplied to [*MiniportCoOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request) for a query of [OID\_GEN\_CO\_RCV\_CRC\_ERROR](./oid-gen-co-rcv-crc-error.md), the miniport driver returns the number of CRC errors that were encountered in all receives on the specified VC. For the same request with a **NULL** *NdisVcHandle*, the miniport driver returns the total number of CRC errors that are encountered for all incoming receives through a NIC.
 

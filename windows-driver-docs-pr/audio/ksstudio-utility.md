@@ -9,8 +9,7 @@ keywords:
 - testing KS filter graphs WDK audio
 - audio filter graphs WDK
 - graphical representation WDK audio
-ms.date: 04/22/2021
-ms.localizationpriority: medium
+ms.date: 01/21/2022
 ---
 
 # KsStudio Utility
@@ -52,18 +51,14 @@ KSStudio provides the following features:
 
 The KsStudio utility (Ksstudio.exe) is included with the software tools in the Microsoft Windows Driver Kit (WDK). 
 
-To install KsStudio:
+To install KsStudio download the WDK and run the WDK setup application. For more information, see [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
 
--   Run the WDK setup application.
-
--   From the list of components, click **Driver Development Kit**, click **Tools for Driver Developers**, and then click **Audio/Video streaming tools**.
-
-Setup installs the platform-specific versions of KsStudio.exe in the x86, and amd64 subdirectories of the \\tools\\avstream directory.
+Setup installs the platform-specific versions of KsStudio.exe in the x86, and amd64 subdirectories of the tools directory.
 
 
 ## KsStudio menu layout and structure
 
-![Scren shot of KSStream Utility showing menu panes 1, 2,3 and six on the first row then 4 and lastly 5 on the bottom of the screen](images/ksstudio-user-interface.png)
+![Scren shot of KSStream Utility showing menu panes 1, 2,3 and six on the first row then 4 and lastly 5 on the bottom of the screen.](images/ksstudio-user-interface.png)
 
 #### 1) Filter Factory View
 
@@ -92,10 +87,5 @@ These two windows show details and statistics on the IRPs received by all specif
 [KSStudio - KS Monitor](ksstudio-utility-ks-monitor.md)
 
 [KSStudio - Usage Examples](ksstudio-utility-usage-examples.md)
-
-
- 
-
-
 
 

@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_CLOCK\_CORRELATEDTIME
-description: Clients use the KSPROPERTY\_CLOCK\_CORRELATEDTIME property to compare the current presentation time on a clock to the current system time.
+title: KSPROPERTY_CLOCK_CORRELATEDTIME
+description: Clients use the KSPROPERTY_CLOCK_CORRELATEDTIME property to compare the current presentation time on a clock to the current system time.
 keywords: ["KSPROPERTY_CLOCK_CORRELATEDTIME Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,77 +10,31 @@ api_location:
 - ks.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/18/2021
 ---
 
-# KSPROPERTY\_CLOCK\_CORRELATEDTIME
+# KSPROPERTY_CLOCK_CORRELATEDTIME
 
+Clients use the **KSPROPERTY_CLOCK_CORRELATEDTIME** property to compare the current presentation time on a clock to the current system time.
 
-Clients use the KSPROPERTY\_CLOCK\_CORRELATEDTIME property to compare the current presentation time on a clock to the current system time.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_clock_correlatedtime_ks"></span><span id="DDK_KSPROPERTY_CLOCK_CORRELATEDTIME_KS"></span>
+| Get | Set | Target | Property Descriptor Type | Property Value Type |
+|--|--|--|--|--|
+| Yes | No | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | [**KSCORRELATED_TIME**](/windows-hardware/drivers/ddi/ks/ns-ks-kscorrelated_time) |
 
+## Remarks
 
-### Usage Summary Table
+The **KSCORRELATED_TIME** structure contains the current clock time in the **Time** member and the correlated physical time in the **SystemTime** member.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property Descriptor Type</th>
-<th>Property Value Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kscorrelated_time" data-raw-source="[&lt;strong&gt;KSCORRELATED_TIME&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kscorrelated_time)"><strong>KSCORRELATED_TIME</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+## Requirements
 
- 
-
-Remarks
--------
-
-The KSCORRELATED\_TIME structure contains the current clock time in the **Time** member and the correlated physical time in the **SystemTime** member.
-
-Also see [KS Clocks](./ks-clocks.md).
-
-Requirements
-------------
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ks.h (include Ks.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ks.h (include Ks.h)
 
 ## See also
 
-
-[**KSPROPERTY\_CLOCK\_PHYSICALTIME**](ksproperty-clock-physicaltime.md)
+[**KSPROPERTY_CLOCK_PHYSICALTIME**](ksproperty-clock-physicaltime.md)
 
 [**KeQueryPerformanceCounter**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-kequeryperformancecounter)
 
+[KS Clocks](ks-clocks.md)

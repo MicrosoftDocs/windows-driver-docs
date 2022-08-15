@@ -1,20 +1,19 @@
 ---
-title: Driver Verifier Manager (Windows XP and later)
-description: Driver Verifier Manager (Windows XP and later)
+title: Driver Verifier Manager
+description: Driver Verifier Manager
 keywords:
 - Driver Verifier Manager
 - Verifier utility
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
-# Driver Verifier Manager (Windows XP and later)
+# Driver Verifier Manager
 
 
 ## <span id="ddk_driver_verifier_manager_windows_xp_and_later__tools"></span><span id="DDK_DRIVER_VERIFIER_MANAGER_WINDOWS_XP_AND_LATER__TOOLS"></span>
 
 
-The Windows XP and later version of Driver Verifier Manager begins with a screen which allows you to select one of five tasks. Whichever task you choose, you will be shown a series of screens that can be navigated by using the **Back** and **Next** buttons.
+Driver Verifier Manager begins with a screen which allows you to select one of five tasks. Whichever task you choose, you will be shown a series of screens that can be navigated by using the **Back** and **Next** buttons.
 
 When this sequence is complete, use the **Finish** button to save any changes you have made and exit Driver Verifier Manager. If you wish to discard your changes, use the **Cancel** button.
 

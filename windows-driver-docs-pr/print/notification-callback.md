@@ -8,7 +8,6 @@ keywords:
 - IPrintAsyncNotifyCallback
 - callbacks WDK spooler notification
 ms.date: 06/08/2020
-ms.localizationpriority: medium
 ---
 
 # Notification Callback

@@ -11,7 +11,6 @@ keywords:
 - Direct Memory Access WDK Driver Verifier
 - DMA errors WDK Driver Verifier
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # DMA Verification
@@ -25,8 +24,6 @@ DMA Verification monitors the use of Direct Memory Access (DMA). Since the DMA r
 The DMA Verification option of Driver Verifier attempts to catch common DMA errors. Along with the **!dma** kernel debugger extension, it can be used to verify that a driver is using DMA in a proper manner.
 
 This Driver Verifier option is also called *HAL Verification*. Some error messages produced by Driver Verifier may use this term.
-
-This Driver Verifier option is only available in Windows XP and later.
 
 ### <span id="different_types_of_dma"></span><span id="DIFFERENT_TYPES_OF_DMA"></span>Different Types of DMA
 

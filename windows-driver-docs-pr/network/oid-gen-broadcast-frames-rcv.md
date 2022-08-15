@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_BROADCAST_FRAMES_RCV OID specifies the numb
 ms.date: 11/01/2019
 keywords: 
  -OID_GEN_BROADCAST_FRAMES_RCV Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_BROADCAST\_FRAMES\_RCV
@@ -29,15 +28,13 @@ Supported.
 <a href="" id="ndis-5-1-drivers"></a>NDIS 5.1 drivers  
 Optional.
 
-Remarks
--------
+## Remarks
 
 The count from this OID, combined with the count from [OID_GEN_MULTICAST_FRAMES_RCV](oid-gen-multicast-frames-rcv.md), is identical to the *ifInNUcastPkts* counter described in RFC 2863.
 
 For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

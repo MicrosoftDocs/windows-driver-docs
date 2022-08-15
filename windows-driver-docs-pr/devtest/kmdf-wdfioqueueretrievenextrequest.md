@@ -9,7 +9,6 @@ api_name:
 - WdfIoQueueRetrieveNextRequest
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # WdfIoQueueRetrieveNextRequest rule (kmdf)
@@ -19,8 +18,7 @@ The **WdfIoQueueRetrieveNextRequest** rule specifies that [**WdfIoQueueRetrieveN
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfIoQueueFindRequest**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuefindrequest)
 [**WdfIoQueueRetrieveNextRequest**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueueretrievenextrequest)

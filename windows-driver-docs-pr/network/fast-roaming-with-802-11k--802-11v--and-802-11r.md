@@ -1,14 +1,13 @@
 ---
 title: Fast Roaming with 802.11k, 802.11v, and 802.11r
-description: This section describes improved WLAN roaming experiences with 802.11k, 801.11v, and 802.11r
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+description: This section describes improved WLAN roaming experiences with 802.11k, 801.11v, and 802.11r.
+ms.date: 03/16/2022
 ---
 
 # Fast Roaming with 802.11k, 802.11v, and 802.11r
 
 
-Improved WLAN roaming experiences are now available to devices running Windows 10. Industry standard implementations that reduce the time needed for a device to roam from one wireless access point (AP) to another are now supported.
+Improved WLAN roaming experiences are available to devices running Windows 10. Industry standard implementations that reduce the time needed for a device to roam from one wireless access point (AP) to another are supported.
 
 ## 802.11k (Neighbor Reports)
 

@@ -5,7 +5,6 @@ keywords:
 - testing network component upgrades WDK
 - upgrade tests WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Setting Up the Test System

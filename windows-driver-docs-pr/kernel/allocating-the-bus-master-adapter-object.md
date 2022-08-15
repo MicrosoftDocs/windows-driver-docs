@@ -3,7 +3,6 @@ title: Allocating the Bus-Master Adapter Object
 description: Allocating the Bus-Master Adapter Object
 keywords: ["allocating bus-master adapter objects", "bus-master DMA WDK kernel", "DMA transfers WDK kernel , bus-master DMA", "adapter objects WDK kernel , bus-master DMA"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Allocating the Bus-Master Adapter Object
@@ -32,7 +31,7 @@ For the driver of a bus-master DMA device without scatter/gather capabilities, t
 
 1.  Saves or initializes whatever context the driver maintains about DMA operations. The context might include the input *MapRegisterBase* handle the driver must pass to [**MapTransfer**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer) and [**FlushAdapterBuffers**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pflush_adapter_buffers), the **Length** in bytes of the requested transfer from its I/O stack location in the IRP, and so forth.
 
-2.  Calls [**MmGetMdlVirtualAddress**](./mm-bad-pointer.md) followed by **MapTransfer** (described in [Setting Up a Transfer Operation](setting-up-a-transfer-operation.md), next) to get the logical address its device can use to start the transfer operation.
+2.  Calls [**MmGetMdlVirtualAddress**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlvirtualaddress) followed by **MapTransfer** (described in [Setting Up a Transfer Operation](setting-up-a-transfer-operation.md), next) to get the logical address its device can use to start the transfer operation.
 
 3.  Sets up the bus-master adapter to start the transfer operation.
 

@@ -1,5 +1,10 @@
 - name: "Bring up"
   href: index.md
+- name: "Firmware Attack Surface Reduction (FASR)"
+# Auto-expanded node
+  items: 
+  - name: "Firmware Attack Surface Reduction (FASR)"
+    href: firmware-attack-surface-reduction.md
 - name: "Firmware Windows Engineering Guide (WEG)"
 # Auto-expanded node
   items: 
@@ -24,6 +29,8 @@
       href: secure-boot.md
     - name: "Trusted Platform Module (TPM) considerations"
       href: trusted-platform-module-considerations.md
+    - name: "UEFI CA Memory Mitigation Requirements for Signing"
+      href: uefi-ca-memory-mitigation-requirements.md
   - name: "Firmware update"
 # Auto-expanded node
     items: 
@@ -59,7 +66,7 @@
     - name: "How to convert an installed x64 Windows 7 system"
       href: how-to-convert-an-installed-x64-windows-7.md
   - name: "Firmware WEG FAQ"
-    href: frequently-asked-questions.md
+    href: frequently-asked-questions.yml
   - name: "Configure system firmware for Windows 7 and later update for Windows 10"
     href: configure-system-firmware-for-windows-7-and-later-update-for-windows-10.md
   - name: "Sample PowerShell script to query SMBIOS locally"

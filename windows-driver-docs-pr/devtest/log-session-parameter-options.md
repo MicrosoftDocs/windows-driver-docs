@@ -17,7 +17,6 @@ keywords:
 - WinDbg WDK software tracing
 - virtual files WDK software tracing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Log Session Parameter Options

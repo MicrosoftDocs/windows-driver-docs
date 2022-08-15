@@ -2,7 +2,6 @@
 title: IWiaUIExtension COM Interface
 description: IWiaUIExtension COM Interface
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IWiaUIExtension COM Interface

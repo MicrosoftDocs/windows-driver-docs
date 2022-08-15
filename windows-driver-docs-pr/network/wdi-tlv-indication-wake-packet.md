@@ -4,7 +4,6 @@ description: WDI_TLV_INDICATION_WAKE_PACKET is a TLV that contains a wake packet
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_INDICATION_WAKE_PACKET Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_INDICATION\_WAKE\_PACKET
@@ -31,8 +30,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -2,7 +2,6 @@
 title: Introduction to developing SMS apps
 description: Introduction to developing SMS apps
 ms.date: 07/05/2019
-ms.localizationpriority: medium
 ---
 
 # Introduction to developing SMS apps
@@ -44,7 +43,7 @@ The sections in this topic include:
 
 Here’s an overview diagram on how the SMS works with a mobile broadband connection:
 
-![sms platform overview](images/fig1-mb-sms-platformoverview.jpg)
+![sms platform overview.](images/fig1-mb-sms-platformoverview.jpg)
 
 ### <span id="basreq"></span><span id="BASREQ"></span>Basic requirements
 

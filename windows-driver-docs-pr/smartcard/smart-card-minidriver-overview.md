@@ -2,7 +2,6 @@
 title: Smart Card Minidriver Overview
 description: Smart Card Minidriver Overview
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Smart Card Minidriver Overview

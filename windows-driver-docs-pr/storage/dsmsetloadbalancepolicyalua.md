@@ -10,7 +10,6 @@ api_location:
 - MPIOdisk.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -19,8 +18,7 @@ ms.date: 10/17/2018
 
 The **DsmSetLoadBalancePolicyALUA** method is used to set the DSM ALUA load balance policy.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 void DsmSetLoadBalancePolicyALUA(
@@ -29,8 +27,7 @@ void DsmSetLoadBalancePolicyALUA(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *LoadBalancePolicy*   
 A [**DsmSetLoadBalancePolicyALUA\_OUT**](/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_dsmsetloadbalancepolicyalua_out) structure.
@@ -38,18 +35,15 @@ A [**DsmSetLoadBalancePolicyALUA\_OUT**](/windows-hardware/drivers/ddi/mpiodisk/
 *Status*   
 The status of the operation.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 This WMI method belongs to the [DSM\_LB\_Operations](dsm-lb-operations-wmi-class.md) WMI class.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -7,7 +7,6 @@ keywords:
 - trace sessions WDK , groups
 - multiple trace sessions WDK TraceView
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Grouping Trace Sessions

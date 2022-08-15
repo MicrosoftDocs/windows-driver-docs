@@ -1,8 +1,7 @@
 ---
-title: C28645
+title: C28645 warning
 description: Warning C28645 MessageBox was called using the question mark message symbol which is no longer recommended.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28645"
 ---

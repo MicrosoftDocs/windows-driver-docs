@@ -5,7 +5,6 @@ keywords:
 - call setup WDK CoNDIS
 - making calls WDK CoNDIS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Making a Call
@@ -16,11 +15,11 @@ ms.localizationpriority: medium
 
 The following figure shows a client making an outgoing call through a call manager.
 
-![diagram illustrating a client making an outgoing call through a call manager](images/cm-11.png)
+![diagram illustrating a client making an outgoing call through a call manager.](images/cm-11.png)
 
 The following figure shows a client making an outgoing call through an MCM driver.
 
-![diagram illustrating a client making an outgoing call through an mcm driver](images/fig1-11.png)
+![diagram illustrating a client making an outgoing call through an mcm driver.](images/fig1-11.png)
 
 Before making an outgoing call, a connection-oriented client must:
 

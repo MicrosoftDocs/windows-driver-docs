@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # FSCTL\_OPLOCK\_BREAK\_ACKNOWLEDGE control code
@@ -39,8 +38,7 @@ Opaque oplock object pointer for the file.
 <a href="" id="opencount"></a>*OpenCount*  
 Not used with this operation; set to zero.
 
-Status block
-------------
+## Status block
 
 [**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl) returns FLT\_PREOP\_PENDING for this operation when a level 1 oplock is broken to level 2, and the level 2 oplock has been granted. Otherwise, it returns FLT\_PREOP\_COMPLETE.
 
@@ -75,8 +73,7 @@ Status block
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

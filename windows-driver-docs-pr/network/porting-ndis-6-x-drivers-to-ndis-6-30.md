@@ -2,7 +2,6 @@
 title: Porting NDIS 6.x Drivers to NDIS 6.30
 description: This section describes the requirements to port NDIS 6.x drivers to NDIS 6.30.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Porting NDIS 6.x Drivers to NDIS 6.30

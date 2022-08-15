@@ -1,8 +1,7 @@
 ---
-title: C28650
+title: C28650 warning
 description: The type for which 0 is being used does not treat it as failure case.
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28650"
 ---

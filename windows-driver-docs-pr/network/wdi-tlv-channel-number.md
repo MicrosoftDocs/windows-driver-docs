@@ -4,10 +4,11 @@ description: WDI_TLV_CHANNEL_NUMBER is a TLV that contains a channel number.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CHANNEL_NUMBER Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_CHANNEL\_NUMBER
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_CHANNEL\_NUMBER is a TLV that contains a channel number.
@@ -31,8 +32,7 @@ The size (in bytes) of a UINT8.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

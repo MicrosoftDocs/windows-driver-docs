@@ -13,7 +13,6 @@ keywords:
 - multiple GPUs WDK Windows 2008 Resource R2 display
 - multiple GPUs WDK Windows 2008 Resource R2 display , managing resources for
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Managing Resources for Multiple GPU Scenarios

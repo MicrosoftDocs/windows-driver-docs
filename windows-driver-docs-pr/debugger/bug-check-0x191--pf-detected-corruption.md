@@ -9,7 +9,6 @@ api_name:
 - PF_DETECTED_CORRUPTION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x191: PF\_DETECTED\_CORRUPTION

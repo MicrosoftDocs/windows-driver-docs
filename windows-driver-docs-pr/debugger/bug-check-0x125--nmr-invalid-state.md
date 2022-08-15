@@ -9,7 +9,6 @@ api_name:
 - NMR_INVALID_STATE
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x125: NMR\_INVALID\_STATE

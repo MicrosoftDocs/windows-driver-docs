@@ -9,7 +9,6 @@ keywords:
 - explicit surface attachments WDK Direct3D
 - surface attachments WDK Direct3D
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # D3dCreateSurfaceEx and Complex Surfaces

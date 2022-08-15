@@ -5,7 +5,6 @@ keywords:
 - Direct3D version 10.1 WDK Windows 7 display , extended format
 - extended format WDK Windows 7 display
 ms.date: 09/10/2019
-ms.localizationpriority: medium
 ---
 
 # Details of the Extended Format
@@ -43,7 +42,6 @@ Column key for the below table:
         <th>H</th>
     </tr>
 </head>
-<body>
     <tr>
         <td>Buffer</td>
         <td>N/A</td>
@@ -241,7 +239,6 @@ Column key for the below table:
         <td>R</td>
         <td>R</td>
     </tr>
-</body>
 </table>
 
 >[!NOTE]

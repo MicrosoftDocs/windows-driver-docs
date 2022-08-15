@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_TRANSMIT_BUFFER_SPACE OID specifies the amo
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_TRANSMIT_BUFFER_SPACE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_TRANSMIT\_BUFFER\_SPACE
@@ -29,13 +28,11 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 A protocol can use this OID as a guide for sizing the amount of transmit data per send.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

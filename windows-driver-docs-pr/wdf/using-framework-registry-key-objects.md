@@ -12,7 +12,6 @@ keywords:
 - opening registry keys WDK KMDF
 - removing registry keys WDK KMDF
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using Framework Registry-Key Objects

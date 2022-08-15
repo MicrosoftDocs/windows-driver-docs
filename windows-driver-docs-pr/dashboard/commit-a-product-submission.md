@@ -3,7 +3,6 @@ title: Commit a product submission
 description: Use this method in the Microsoft Hardware API to commit a new submission to the Partner Center.
 ms.date: 04/05/2018
 ms.topic: article
-ms.localizationpriority: medium
 ---
 
 # Commit a product submission
@@ -70,4 +69,4 @@ For more info, see [Error codes](get-product-data.md#error-codes).
 
 ## See also
 
-[Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+[hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

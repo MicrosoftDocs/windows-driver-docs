@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # DXGI\_DDI\_MULTIPLANE\_OVERLAY\_STEREO\_CAPS enumeration
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS {
@@ -32,8 +30,7 @@ typedef enum DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS {
 } DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS;
 ```
 
-Constants
----------
+## Constants
 
 <span id="DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS_SEPARATE"></span><span id="dxgi_ddi_multiplane_overlay_stereo_caps_separate"></span>**DXGI\_DDI\_MULTIPLANE\_OVERLAY\_STEREO\_CAPS\_SEPARATE**
 
@@ -45,8 +42,7 @@ Constants
 
 <span id="DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS_FLIP_MODE"></span><span id="dxgi_ddi_multiplane_overlay_stereo_caps_flip_mode"></span>**DXGI\_DDI\_MULTIPLANE\_OVERLAY\_STEREO\_CAPS\_FLIP\_MODE**
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -1,7 +1,6 @@
 ---
 title: DSM\_Load\_Balance\_Policy\_V2 WMI Class
 description: DSM\_Load\_Balance\_Policy\_V2 WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

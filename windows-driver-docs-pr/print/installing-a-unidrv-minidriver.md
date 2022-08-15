@@ -7,7 +7,6 @@ keywords:
 - INF files WDK print , Unidrv minidrivers
 - Unidrv WDK print
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Installing a Unidrv Minidriver

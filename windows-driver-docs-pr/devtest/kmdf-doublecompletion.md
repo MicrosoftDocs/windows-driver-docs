@@ -9,7 +9,6 @@ api_name:
 - DoubleCompletion
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DoubleCompletion rule (kmdf)
@@ -21,8 +20,7 @@ The difference between this rule and the [DoubleCompletionLocal](kmdf-doublecomp
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfIoQueueRetrieveFoundRequest**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueueretrievefoundrequest)
 [**WdfIoQueueRetrieveNextRequest**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueueretrievenextrequest)

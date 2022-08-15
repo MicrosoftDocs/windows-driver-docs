@@ -4,11 +4,12 @@ description: OID_WDI_SET_PRIVACY_EXEMPTION_LIST is used by the host to provide t
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_PRIVACY_EXEMPTION_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_PRIVACY\_EXEMPTION\_LIST
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 OID\_WDI\_SET\_PRIVACY\_EXEMPTION\_LIST is used by the host to provide the list of exemptions for packet description. The adapter applies these exemptions to packets it receives that match the IEEE EtherType value specified for the exemption.
@@ -33,8 +34,7 @@ OID\_WDI\_SET\_PRIVACY\_EXEMPTION\_LIST is used by the host to provide the list 
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

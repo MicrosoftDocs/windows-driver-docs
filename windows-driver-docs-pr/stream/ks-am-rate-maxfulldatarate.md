@@ -1,6 +1,6 @@
 ---
-title: KS\_AM\_RATE\_MaxFullDataRate
-description: The KS\_AM\_RATE\_MaxFullDataRate property retrieves the maximum, full data rate, multiplied by 10000 (decimal).
+title: KS_AM_RATE_MaxFullDataRate
+description: The KS_AM_RATE_MaxFullDataRate property retrieves the maximum, full data rate, multiplied by 10000 (decimal).
 keywords: ["KS_AM_RATE_MaxFullDataRate Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,65 +10,21 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/11/2021
 ---
 
-# KS\_AM\_RATE\_MaxFullDataRate
+# KS_AM_RATE_MaxFullDataRate
 
+The **KS_AM_RATE_MaxFullDataRate** property retrieves the maximum, full data rate, multiplied by 10000 (decimal).
 
-The KS\_AM\_RATE\_MaxFullDataRate property retrieves the maximum, full data rate, multiplied by 10000 (decimal).
+## Usage Summary Table
 
-## <span id="ddk_ks_am_rate_maxfulldatarate_ks"></span><span id="DDK_KS_AM_RATE_MAXFULLDATARATE_KS"></span>
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | No | Pin | [**KSPROPERTY**](./ksproperty-structure.md) | **KS_AM_MaxFullDataRate** |
 
+The property value (operation data) is a **KS_AM_MaxFullDataRate** (which is a type-defined LONG).
 
-### Usage Summary Table
+## Requirements
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p>Pin</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p>KS_AM_MaxFullDataRate</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-The property value (operation data) is a KS\_AM\_MaxFullDataRate (which is a type-defined LONG).
-
-Requirements
-------------
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
-
+**Header:** ksmedia.h (include Ksmedia.h)

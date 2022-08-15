@@ -15,7 +15,6 @@ api_location:
 - DbgEng.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ---
 
 # DEBUG\_SYMBOL\_XXX
@@ -76,8 +75,7 @@ The rest of the symbol flags' bit-set can contain the following bit-flags.
 </tbody>
 </table>
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

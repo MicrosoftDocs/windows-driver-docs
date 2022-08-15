@@ -9,7 +9,6 @@ api_name:
 - RemoveLockForwardDeviceControlInternal2
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # RemoveLockForwardDeviceControlInternal2 rule (wdm)
@@ -19,8 +18,7 @@ The **RemoveLockForwardDeviceControlInternal2** rule verifies that calls to [**I
 
 **Driver model: WDM**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**ExInterlockedInsertHeadList**](/previous-versions/ff545397(v=vs.85))
 [**ExInterlockedInsertTailList**](/previous-versions/ff545402(v=vs.85))

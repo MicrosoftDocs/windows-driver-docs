@@ -2,7 +2,6 @@
 title: Review the INX file
 description: This topics shows you how to revise the INF file for the sample sensor driver, to make it suitable for installing your sensor driver on your target device.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Review the INX file

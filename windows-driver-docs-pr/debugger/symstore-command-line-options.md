@@ -9,7 +9,6 @@ api_name:
 - SymStore Command-Line Options
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # SymStore Command-Line Options
@@ -64,7 +63,7 @@ Adds the specified *Message* to each file. (This option can only be used when **
 Allows the paths in the file pointers to be relative. This option implies the /**l** option. (This option can only be used when **/p** is used.)
 
 <span id="_______-_NOREFS______"></span><span id="_______-_norefs______"></span> **-:NOREFS**   
-Omits the creation of reference pointer files for the files and pointers being stored. This option is only valid during the initial creation of a symbol store if the store being changed was created with this option.
+Omits the creation of reference pointer files for the files and pointers being stored. This option is only valid during the initial creation of a symbol store if the store being changed was created with this option. (This option can only be used when **/p** is used.)
 
 <span id="________r______"></span><span id="________R______"></span> **/r**   
 Causes SymStore to add files or directories recursively.
@@ -99,8 +98,8 @@ Appends a comment with the transaction ID to the end of an index file created wi
 <span id="________z___PUB___PRI__"></span><span id="________z___pub___pri__"></span><span id="________Z___PUB___PRI__"></span> **/z** { **PUB | PRI** }  
 Causes SymStore to index only the type of symbols specified. If **PUB** is specified, then only the symbols that have had the full source information stripped will be indexed. If **PRI** is specified, then only the symbols that contain the full source information will be indexed. SymStore will always index binary symbols.
 
-<span id="________compress______"></span><span id="________COMPRESS______"></span> **/compress**   
-Causes SymStore to create a compressed version of each file copied to the symbol store instead of using an uncompressed copy of the file. This option is only valid when storing files and not pointers, and consequently cannot be used when the **/p** option is used.
+<span id="________compress______"></span><span id="________COMPRESS______"></span> **/compress [CAB|ZIP]**   
+Causes SymStore to create a compressed version of each file copied to the symbol store instead of using an uncompressed copy of the file. This option is only valid when storing files and not pointers, and consequently cannot be used when the **/p** option is used. Has two optional arguments "CAB" and "ZIP" to specify the compression type to use. Defaults to CAB compression if none is specified.
 
 <span id="_______________"></span> **/?**   
 Displays help text for the SymStore command.

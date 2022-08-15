@@ -4,10 +4,11 @@ description: WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL is a TLV that specifies whether 
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_INCLUDE\_LISTEN\_CHANNEL
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_INCLUDE\_LISTEN\_CHANNEL is a TLV that specifies whether the probe request should include the Listen Channel attribute during discovery.
@@ -35,8 +36,7 @@ The size (in bytes) of a UINT8.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

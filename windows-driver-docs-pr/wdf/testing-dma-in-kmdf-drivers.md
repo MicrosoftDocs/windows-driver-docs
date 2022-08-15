@@ -2,7 +2,6 @@
 title: Testing DMA in KMDF Drivers
 description: Testing DMA in KMDF Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Testing DMA in KMDF Drivers

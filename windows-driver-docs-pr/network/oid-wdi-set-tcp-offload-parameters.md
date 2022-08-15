@@ -4,7 +4,6 @@ description: OID_WDI_SET_TCP_OFFLOAD_PARAMETERS is sent down to the device from 
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_TCP_OFFLOAD_PARAMETERS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
@@ -37,8 +36,7 @@ The lower edge driver (LE) must use the contents of [**WDI\_TLV\_TCP\_SET\_OFFLO
 
 No additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

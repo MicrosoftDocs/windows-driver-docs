@@ -4,7 +4,6 @@ description: Sending Data from a Filter Driver
 keywords:
 - sending data WDK networking
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sending Data from a Filter Driver
@@ -13,29 +12,29 @@ ms.localizationpriority: medium
 
 
 
-Filter drivers can initiate send requests or filter send requests that overlying drivers initiate. When a protocol driver calls the [**NdisSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissendnetbufferlists) function, NDIS submits the specified [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure to the topmost filter module in the driver stack.
+Filter drivers can initiate send requests or filter send requests that overlying drivers initiate. When a protocol driver calls the [**NdisSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissendnetbufferlists) function, NDIS submits the specified [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure to the topmost filter module in the driver stack.
 
 ### Send Requests Initiated by a Filter Driver
 
 The following figure illustrates a send operation that is initiated by a filter driver.
 
-![diagram illustrating a send operation initiated by a filter driver](images/filtersend.png)
+![diagram illustrating a send operation initiated by a filter driver.](images/filtersend.png)
 
-Filter drivers call the [**NdisFSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlists) function to send the network data that is defined in a list of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures.
+Filter drivers call the [**NdisFSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlists) function to send the network data that is defined in a list of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures.
 
 A filter driver must set the **SourceHandle** member of each NET\_BUFFER\_LIST structure that it creates to the same value that it passes to the *NdisFilterHandle* parameter of **NdisFSendNetBufferLists**. NDIS drivers should not modify the **SourceHandle** member for NET\_BUFFER\_LIST structures that the driver did not originate.
 
-Before calling **NdisFSendNetBufferLists**, a filter driver can set information that accompanies the send request with the [**NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_info) macro. The underlying drivers can retrieve this information with the NET\_BUFFER\_LIST\_INFO macro.
+Before calling **NdisFSendNetBufferLists**, a filter driver can set information that accompanies the send request with the [**NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nblaccessors/nf-nblaccessors-net_buffer_list_info) macro. The underlying drivers can retrieve this information with the NET\_BUFFER\_LIST\_INFO macro.
 
 As soon as a filter driver calls **NdisFSendNetBufferLists**, it relinquishes ownership of the NET\_BUFFER\_LIST structures and all associated resources. NDIS can handle the send request or pass the request to underlying drivers.
 
 NDIS calls the [*FilterSendNetBufferListsComplete*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_send_net_buffer_lists_complete) function to return the structures and data to the filter driver. NDIS can collect the structures and data from multiple send requests into a single linked list of NET\_BUFFER\_LIST structures before it passes the list to *FilterSendNetBufferListsComplete*
 
-Until NDIS calls *FilterSendNetBufferListsComplete*, the current status of a send request is unknown. A filter driver should *never* try to examine the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures or any associated data before NDIS returns the structures to *FilterSendNetBufferListsComplete*.
+Until NDIS calls *FilterSendNetBufferListsComplete*, the current status of a send request is unknown. A filter driver should *never* try to examine the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures or any associated data before NDIS returns the structures to *FilterSendNetBufferListsComplete*.
 
 *FilterSendNetBufferListsComplete* performs whatever postprocessing is necessary to complete a send operation.
 
-When NDIS calls *FilterSendNetBufferListsComplete*, the filter driver regains ownership of all the resources associated with the NET\_BUFFER\_LIST structures that are specified by the *NetBufferLists* parameter. *FilterSendNetBufferListsComplete* can either free these resources (for example, by calling the [**NdisFreeNetBuffer**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreenetbuffer) and [**NdisFreeNetBufferList**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreenetbufferlist) functions) or prepare them for reuse in a subsequent call to **NdisFSendNetBufferLists**.
+When NDIS calls *FilterSendNetBufferListsComplete*, the filter driver regains ownership of all the resources associated with the NET\_BUFFER\_LIST structures that are specified by the *NetBufferLists* parameter. *FilterSendNetBufferListsComplete* can either free these resources (for example, by calling the [**NdisFreeNetBuffer**](/windows-hardware/drivers/ddi/nblapi/nf-nblapi-ndisfreenetbuffer) and [**NdisFreeNetBufferList**](/windows-hardware/drivers/ddi/nblapi/nf-nblapi-ndisfreenetbufferlist) functions) or prepare them for reuse in a subsequent call to **NdisFSendNetBufferLists**.
 
 NDIS always submits filter-supplied network data to the underlying drivers in the filter-driver-determined order as passed to **NdisFSendNetBufferLists**. However, after sending the data in the specified order, the underlying drivers can return the buffers in any order.
 
@@ -49,7 +48,7 @@ A filter driver can request loopback for send requests that it originates. To re
 
 The following figure illustrates filtering a send request that is initiated by an overlying driver.
 
-![diagram illustrating filtering a send request that is initiated by an overlying driver](images/sendfilter.png)
+![diagram illustrating filtering a send request that is initiated by an overlying driver.](images/sendfilter.png)
 
 NDIS calls a filter driver's [*FilterSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_send_net_buffer_lists) function to filter the send request of an overlying driver.
 

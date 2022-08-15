@@ -4,10 +4,11 @@ description: WDI_TLV_SUPPORTED_GUIDS is a TLV that contains a supported NDIS GUI
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SUPPORTED_GUIDS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_SUPPORTED\_GUIDS
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_SUPPORTED\_GUIDS is a TLV that contains a supported NDIS GUID.
@@ -35,8 +36,7 @@ The size (in bytes) of a [NDIS\_GUID](./filling-in-an-ndis-guid-structure.md) st
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

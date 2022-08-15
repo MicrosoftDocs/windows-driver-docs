@@ -3,7 +3,6 @@ title: Singly and Doubly Linked Lists
 description: Singly and Doubly Linked Lists
 keywords: ["singly linked lists WDK kernel", "doubly linked lists WDK kernel", "sequenced singly linked lists WDK kernel", "SINGLE_LIST_ENTRY", "LIST_ENTRY"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Singly and Doubly Linked Lists
@@ -45,7 +44,9 @@ typedef struct {
 } XXX_ENTRY;
 ```
 
-To add a new entry to the list, allocate an **XXX\_ENTRY** structure, and then pass a pointer to the **SingleListEntry** member to [**PushEntryList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-pushentrylist). To convert a pointer to the **SINGLE\_LIST\_ENTRY** back to an **XXX\_ENTRY**, use [**CONTAINING\_RECORD**](./mm-bad-pointer.md). Here is an example of routines that insert and remove driver-defined entries from a singly linked list.
+To add a new entry to the list, allocate an **XXX\_ENTRY** structure, and then pass a pointer to the **SingleListEntry** member to
+ [**PushEntryList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-pushentrylist). To convert a pointer to the **SINGLE\_LIST\_ENTRY** back to an **XXX\_ENTRY**, use [**CONTAINING\_RECORD**](/windows/win32/api/ntdef/nf-ntdef-containing_record).
+  Here is an example of routines that insert and remove driver-defined entries from a singly linked list.
 
 ```cpp
 typedef struct {
@@ -126,7 +127,8 @@ typedef struct {
 } XXX_ENTRY;
 ```
 
-To add a new entry to a list, allocate an **XXX\_ENTRY** structure, and then pass a pointer to the **ListEntry** member to **InsertHeadList** or **InsertTailList**. To convert a pointer to a **LIST\_ENTRY** back to an **XXX\_ENTRY**, use [**CONTAINING\_RECORD**](./mm-bad-pointer.md). For an example of this technique, using singly linked lists, see Singly Linked Lists above.
+To add a new entry to a list, allocate an **XXX\_ENTRY** structure, and then pass a pointer to the **ListEntry** member to **InsertHeadList** or **InsertTailList**.
+ To convert a pointer to a **LIST\_ENTRY** back to an **XXX\_ENTRY**, use [**CONTAINING\_RECORD**](/windows/win32/api/ntdef/nf-ntdef-containing_record). For an example of this technique, using singly linked lists, see Singly Linked Lists above.
 
 The system also provides atomic versions of the list operations, [**ExInterlockedInsertHeadList**](/previous-versions/ff545397(v=vs.85)), [**ExInterlockedInsertTailList**](/previous-versions/ff545402(v=vs.85)), and [**ExInterlockedRemoveHeadList**](/previous-versions/ff545427(v=vs.85)). (Note that there is no atomic version of **RemoveTailList** or **RemoveEntryList**.) Each routine takes an additional spin lock parameter. The routine acquires the spin lock before updating the list and then releases the spin lock after the operation is completed. While the lock is held, interrupts are disabled. Each operation on the list must use the same spin lock to ensure that each such operation on the list is synchronized with every other. You must use the spin lock only with these **ExInterlocked*Xxx*List** routines. Do not use the spin lock for any other purpose. Drivers can use the same lock for multiple lists, but this behavior increases lock contention so drivers should avoid it.
 
@@ -170,7 +172,8 @@ typedef struct
 } XXX_ENTRY;
 ```
 
-To add a new entry to the list, allocate an **XXX\_ENTRY** structure, and then pass a pointer to the **SListEntry** member to **ExInterlockedPushEntrySList**. To convert a pointer to the **SLIST\_ENTRY** back to an **XXX\_ENTRY**, use [**CONTAINING\_RECORD**](./mm-bad-pointer.md). For an example of this technique, using non-sequenced singly linked lists, see [Singly Linked Lists](#singly-linked-lists).
+To add a new entry to the list, allocate an **XXX\_ENTRY** structure, and then pass a pointer to the **SListEntry** member to **ExInterlockedPushEntrySList**. 
+To convert a pointer to the **SLIST\_ENTRY** back to an **XXX\_ENTRY**, use [**CONTAINING\_RECORD**](/windows/win32/api/ntdef/nf-ntdef-containing_record). For an example of this technique, using non-sequenced singly linked lists, see [Singly Linked Lists](#singly-linked-lists).
 
 **Warning**   For 64-bit Microsoft Windows operating systems, [**SLIST\_ENTRY**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_slist_entry) structures must be 16-byte aligned.
 

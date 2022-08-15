@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfumtriage
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfumtriage
@@ -36,14 +35,13 @@ UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 You can use this command in a kernel-mode debugging session.
 
 Here is an example of the output of **!wdfkd.wdfumtriage**.
 
-![driver object list output from !wdfkd.wdfumtriage](images/wdfumtriage2.png)
+![driver object list output from !wdfkd.wdfumtriage.](images/wdfumtriage2.png)
 
  
 

@@ -2,7 +2,6 @@
 title: WIA Samples and Tools
 description: WIA Samples and Tools
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Samples and Tools

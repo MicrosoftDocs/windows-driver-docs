@@ -37,6 +37,13 @@
     href: device-sync-and-update-for-UWP-device-apps.md
   - name: "Creating a device background task"
     href: how-to-create-a-device-background-task.md
+- name: "Print support apps for printers"
+# Auto-expanded node
+  items: 
+  - name: "Print support app design guide"
+    href: print-support-app-design-guide.md
+  - name: "Print support app association"
+    href: print-support-app-association.md 
 - name: "UWP device apps for printers"
 # Auto-expanded node
   items: 
@@ -76,4 +83,4 @@
 - name: "Hardware Support App (HSA): Steps for App Developers"
   href: hardware-support-app--hsa--steps-for-app-developers.md
 - name: "FAQ on custom capabilities"
-  href: FAQ-on-custom-capabilities.md
+  href: FAQ-on-custom-capabilities.yml

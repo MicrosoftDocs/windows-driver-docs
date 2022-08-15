@@ -2,7 +2,6 @@
 title: Windows Audio Architecture
 description: This topic provided a high level summary of the Windows 10 audio architecture.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows Audio Architecture
@@ -15,7 +14,7 @@ This topic provided a high level summary of the Windows 10 audio architecture.
 
 This diagram provides a summary of the major elements of the Windows 10 audio stack.
 
-![windows 10 audio stack diagram showing apps, audio engine, drivers and hardware ](images/audio-windows-10-stack-diagram.png)
+![windows 10 audio stack diagram showing apps, audio engine, drivers and hardware .](images/audio-windows-10-stack-diagram.png)
 
 ## <span id="APIs"></span><span id="apis"></span><span id="APIS"></span>APIs
 
@@ -92,7 +91,7 @@ Audio drivers:
 ## <span id="Hardware"></span><span id="hardware"></span><span id="HARDWARE"></span>Hardware
 
 
-The audio hardware that is present on any give device varies but can include:
+The audio hardware that is present on any given device varies but can include:
 
 -   Audio Codec
 -   DSP (optional)

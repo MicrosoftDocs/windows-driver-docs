@@ -7,7 +7,6 @@ keywords:
 - VJoyD WDK HID , axes
 - axes WDK joysticks
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Axis Selection

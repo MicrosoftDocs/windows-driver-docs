@@ -1,5 +1,5 @@
 ---
-title: ipi
+title: ipi (WinDbg)
 description: The ipi extension displays the interprocessor interrupt (IPI) state for a specified processor.
 keywords: ["IPI (interprocessor interrupt)", "ipi Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ipi
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ipi
@@ -54,8 +53,7 @@ This extension command can only be used with an x86-based target computer.
 
 For information about IPIs, see *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
-Remarks
--------
+## Remarks
 
 Here is an example of the output from this extension:
 

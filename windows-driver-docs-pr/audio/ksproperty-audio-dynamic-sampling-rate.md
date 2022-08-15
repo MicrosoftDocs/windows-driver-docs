@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_AUDIO\_DYNAMIC\_SAMPLING\_RATE
@@ -60,8 +59,7 @@ The property value (operation data) is of type BOOL and specifies whether dynami
 
 A KSPROPERTY\_AUDIO\_DYNAMIC\_SAMPLING\_RATE property request returns STATUS\_SUCCESS to indicate that it has completed successfully. Otherwise, the request returns an appropriate error status code.
 
-Remarks
--------
+## Remarks
 
 This property is used to control dynamic tracking in the following node types:
 
@@ -71,8 +69,7 @@ This property is used to control dynamic tracking in the following node types:
 
 -   SRC node ([**KSNODETYPE\_SRC**](ksnodetype-src.md))
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

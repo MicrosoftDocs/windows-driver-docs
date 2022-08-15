@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfumirp
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfumirp
@@ -42,8 +41,7 @@ UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 You can use this command in a kernel-mode debugging session or in a user-mode debugging session that is attached to the UMDF host process (wudfhost.exe).
 

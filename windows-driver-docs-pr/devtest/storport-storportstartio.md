@@ -9,7 +9,6 @@ api_name:
 - StorPortStartIo
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # StorPortStartIo rule (storport)
@@ -19,8 +18,7 @@ Waits or data allocation must never be performed in the miniport's **StartIo** r
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**ExAllocatePool**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool)
 [**ExAllocatePoolWithQuota**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquota)

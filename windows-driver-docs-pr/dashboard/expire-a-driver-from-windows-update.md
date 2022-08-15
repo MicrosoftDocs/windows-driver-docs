@@ -3,7 +3,6 @@ title: Expire a driver from Windows Update
 description: To expire a driver from Windows Update, follow the steps below.
 ms.topic: article
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Expire a driver from Windows Update
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 To expire a driver from Windows Update, follow the steps below.
 
-1.  [Find the hardware submission](manage-your-hardware-submissions.md) that contains driver you want to expire.
+1.  [Search for the hardware submission](hardware-submissions-view.md) that contains driver you want to expire.
 
 2.  Go to the **Distribution** section and select the shipping label to modify.
 

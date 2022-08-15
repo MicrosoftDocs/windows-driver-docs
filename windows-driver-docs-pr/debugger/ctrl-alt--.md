@@ -9,7 +9,6 @@ api_name:
 - CTRL+ALT+\ (Debug Current Debugger)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # CTRL+ALT+\\ (Debug Current Debugger)
@@ -53,8 +52,7 @@ CTRL+ALT+\
 
  
 
-Remarks
--------
+## Remarks
 
 This is equivalent to launching a new CDB through the [**remote.exe**](the-remote-exe-utility.md) utility, and using it to debug the debugger that you are already running.
 

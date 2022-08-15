@@ -2,7 +2,6 @@
 title: Direct3D Shader Codes
 description: Direct3D Shader Codes
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # Direct3D Shader Codes

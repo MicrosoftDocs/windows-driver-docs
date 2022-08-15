@@ -10,7 +10,6 @@ keywords:
 - system crash testing WDK
 - crash testing WDK
 ms.date: 06/28/2018
-ms.localizationpriority: medium
 ---
 
 # Tools for Testing Drivers
@@ -20,8 +19,8 @@ ms.localizationpriority: medium
 
 -   [Device Fundamentals Tests](device-fundamentals-tests.md)
 -   [Data-driven System Fundamentals tests](data-driven-system-fundamentals-tests.md)
--   [Windows Device Console (Devcon.exe)](devcon.md)
 -   [PnPUtil](pnputil.md)
+-   [Windows Device Console (Devcon.exe)](devcon.md)
 
 
 **Additional Test Tools**

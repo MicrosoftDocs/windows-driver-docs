@@ -9,7 +9,6 @@ api_name:
 - UsbContReader
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # UsbContReader rule (kmdf)
@@ -19,8 +18,7 @@ The **UsbContReader** rule specifies that a continuous reader is configured corr
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,7 +43,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfUsbTargetPipeConfigContinuousReader**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipeconfigcontinuousreader)

@@ -11,7 +11,6 @@ api_location:
 - DbgEng.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ---
 
 # DEBUG\_OUTCTL\_XXX
@@ -127,8 +126,7 @@ As an alternative to creating your own output control bit-field, you can use one
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

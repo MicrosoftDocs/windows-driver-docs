@@ -8,7 +8,6 @@ keywords:
 - classify callouts WDK Windows Filtering Platform
 - classify callouts WDK Windows Filtering Platform , about classify callouts
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Processing Classify Callouts

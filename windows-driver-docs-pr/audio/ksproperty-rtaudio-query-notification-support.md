@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_RTAUDIO\_QUERY\_NOTIFICATION\_SUPPORT
@@ -43,7 +42,7 @@ The client application uses the `KSPROPERTY_RTAUDIO_QUERY_NOTIFICATION_SUPPORT` 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/stream/ksproperty-structure" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](../stream/ksproperty-structure.md)"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>BOOL</p></td>
 </tr>
 </tbody>
@@ -57,13 +56,11 @@ The property value is a variable of type BOOL.
 
 In response to a `KSPROPERTY_RTAUDIO_QUERY_NOTIFICATION_SUPPORT` property request, the driver returns a **TRUE** or **FALSE** value. This value depends on whether the driver supports the property.
 
-Remarks
--------
+## Remarks
 
 None
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -85,5 +82,4 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
-
+[**KSPROPERTY**](../stream/ksproperty-structure.md)

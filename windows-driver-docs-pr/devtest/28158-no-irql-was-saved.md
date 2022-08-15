@@ -1,11 +1,10 @@
 ---
-title: C28158
+title: C28158 warning
 description: Warning C28158 No IRQL was saved.
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
 ms.date: 04/20/2017
-ms.localizationpriority: medium 
 f1_keywords: 
   - "C28158"
 ---

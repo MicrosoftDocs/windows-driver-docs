@@ -11,7 +11,6 @@ keywords:
 - functions WDK graphics
 - drawing WDK GDI , functions
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Using the Graphics DDI

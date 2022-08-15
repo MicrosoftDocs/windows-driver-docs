@@ -9,7 +9,6 @@ api_name:
 - DoubleExFreePool
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # DoubleExFreePool rule (storport)
@@ -21,8 +20,7 @@ The rule keeps track of the memory pointer that is first passed to **ExFreePool*
 
 **Driver model: Storport**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,8 +45,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**ExFreePool**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool)
 [**RemoveEntryList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-removeentrylist)

@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # WIA\_IPS\_PRINTER\_ENDORSER\_INK
@@ -25,13 +24,11 @@ Valid Values: WIA\_PROP\_LIST
 
 Access Rights: Read-Write
 
-Remarks
--------
+## Remarks
 
 The **WIA\_IPS\_PRINTER\_ENDORSER\_INK** property is optional for the Imprinter/Endorser items. The valid values for this property are between 0 and 100, inclusive.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

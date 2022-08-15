@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # KSPROPERTY\_VIDEOPROCAMP\_SHARPNESS
@@ -56,15 +55,13 @@ The KSPROPERTY\_VIDEOPROCAMP\_SHARPNESS property controls a camera's sharpness s
 
 The property value (operation data) is a LONG that specifies a camera's sharpness setting. Sharpness is expressed in arbitrary units.
 
-Remarks
--------
+## Remarks
 
 The **Value** member of the KSPROPERTY\_VIDEOPROCAMP\_S structure specifies the sharpness setting.
 
 Every video capture minidriver must define a range and default value for the value of this property. The required range must be 0 through 100. The default value must be 50.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>
@@ -82,7 +79,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](ksproperty-structure.md)
 
 [**KSPROPERTY\_VIDEOPROCAMP\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_videoprocamp_s)
 

@@ -4,7 +4,6 @@ description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_CLOSE_COMPLETE to i
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_CLOSE_COMPLETE Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_CLOSE\_COMPLETE
@@ -23,8 +22,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_CLOSE\_COMPLETE to indicate 
 
 This indication contains no additional data. The data in the header is sufficient.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

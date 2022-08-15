@@ -2,7 +2,6 @@
 title: Testing your desktop COSA/APN database submission
 description: Testing your desktop COSA/APN database submission
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Testing your desktop COSA/APN database submission
@@ -30,7 +29,7 @@ Use this process for Windows 10, version 1703 and later.
 
 After you have submitted your completed spreadsheet that contains your APN information to your TAM, Microsoft will create a provisioning package (.ppkg) file for you and return it to you so you can install and test your APN. 
 
-For more information about how to install a provisioning package file, see [Apply a provisioning package](/windows/deploy/provisioning-apply-package).
+For more information about how to install a provisioning package file, see [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package).
 
 ### Modify the local COSA database (desktop COSA)
 

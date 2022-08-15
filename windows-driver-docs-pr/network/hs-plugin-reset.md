@@ -4,7 +4,6 @@ description: The HS_PLUGIN_RESET function is called by the host to notify the pl
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_RESET) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_PLUGIN\_RESET function
@@ -14,8 +13,7 @@ ms.localizationpriority: medium
 
 The **HS\_PLUGIN\_RESET** function is called by the host to notify the plugin that it must reset its state.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
  typedef DWORD (WINAPI *HS_PLUGIN_RESET)(
@@ -23,27 +21,23 @@ Syntax
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 This function has no parameters.
 
 **   
 
-Return value
-------------
+## Return value
 
 This function is called by the host to communicate with the plugin and does not return a value.
 
-Remarks
--------
+## Remarks
 
 The plugin should terminate all threads and stop any activities in progress.
 
 The plugin is unloaded if it fails to reset.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

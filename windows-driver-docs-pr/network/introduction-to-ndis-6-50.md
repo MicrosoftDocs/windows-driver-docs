@@ -2,7 +2,6 @@
 title: Introduction to NDIS 6.50
 description: This section introduces NDIS 6.50 and describes changes from NDIS 6.40. NDIS 6.50 is included in Windows 10, version 1507 and later.
 ms.date: 09/30/2020
-ms.localizationpriority: medium
 ---
 
 # Introduction to NDIS 6.50
@@ -23,7 +22,13 @@ In addition, an NDIS 6.50 driver must be compliant with the following requiremen
 
 - An NDIS 6.50 driver must report the correct NDIS version when it registers with NDIS.
    
-   You must update the major and minor NDIS version number in the NDIS_Xxx_DRIVER_CHARACTERISTICS structure to support NDIS 6.50. The MajorNdisVersion member must contain 6 and the MinorNdisVersion member must contain 50. This requirement applies to miniport, protocol, and filter drivers. You must also update the version information for the compiler (see [Compiling an NDIS 6.50 driver](#compiling-an-ndis-650-driver)).
+   * You must update the major and minor NDIS version number in the NDIS_Xxx_DRIVER_CHARACTERISTICS structure to support NDIS 6.50. The MajorNdisVersion member must contain 6 and the MinorNdisVersion member must contain 50. This requirement applies to miniport, protocol, and filter drivers. You must also update the version information for the compiler (see [Compiling an NDIS 6.50 driver](#compiling-an-ndis-650-driver)).
+
+  * Miniport drivers must set the **Header** member of [**NDIS_MINIPORT_DRIVER_CHARACTERISTICS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_driver_characteristics): Set **Revision** to NDIS_MINIPORT_DRIVER_CHARACTERISTICS_REVISION_2 and **Size** to NDIS_SIZEOF_MINIPORT_DRIVER_CHARACTERISTICS_REVISION_2. 
+
+  * Filter drivers must set the **Header** member of [**NDIS_FILTER_DRIVER_CHARACTERISTICS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_filter_driver_characteristics): Set **Revision** to NDIS_FILTER_CHARACTERISTICS_REVISION_2 and **Size** to NDIS_SIZEOF_FILTER_DRIVER_CHARACTERISTICS_REVISION_2. 
+
+  * Protocol drivers must set the **Header** member of [**NDIS_PROTOCOL_DRIVER_CHARACTERISTICS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_protocol_driver_characteristics): Set **Revision** to NDIS_PROTOCOL_CHARACTERISTICS_REVISION_2 and **Size** to NDIS_SIZEOF_PROTOCOL _DRIVER_CHARACTERISTICS_REVISION_2.
 
 - NDIS 6.50 miniport drivers for Windows 10, version 1507 and later must use the NDIS 6.50 versions of data structures. For more information, see [Using NDIS 6.50 data structures](#using-ndis-650-data-structures).
 
@@ -73,8 +78,8 @@ The following data structures are new in NDIS 6.50.
 The following data structures were updated in NDIS 6.50.
 
 - [NET_PNP_EVENT_NOTIFICATION](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event_notification)
-- [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
-- [NDIS_NET_BUFFER_LIST_INFO](/windows-hardware/drivers/ddi/ndis/ne-ndis-_ndis_net_buffer_list_info)
+- [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
+- [NDIS_NET_BUFFER_LIST_INFO](/windows-hardware/drivers/ddi/nblinfo/ne-nblinfo-ndis_net_buffer_list_info)
 - [NdisMGetDeviceProperty](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismgetdeviceproperty)
 - [NDIS_SWITCH_OPTIONAL_HANDLERS](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_optional_handlers)
 - [NDIS_SWITCH_NIC_SAVE_STATE](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state)

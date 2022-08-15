@@ -9,7 +9,6 @@ api_name:
 - BCDEdit /debug
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # BCDEdit /debug
@@ -25,8 +24,7 @@ The **/debug** boot option enables or disables kernel debugging of the Windows o
 bcdedit /debug [{ID}] { on | off }
 ```
 
-Parameters
-----------
+## Parameters
 
 **{**<em>ID</em>**}**   
 

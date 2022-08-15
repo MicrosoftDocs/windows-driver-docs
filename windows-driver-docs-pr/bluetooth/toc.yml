@@ -55,8 +55,8 @@
 - name: "Bluetooth Frequently Asked Questions"
   items: 
   - name: "Bluetooth FAQ"
-    href: bluetooth-faq.md
-  - name: "Bluetooth Version and Profile Support in Windows 10"
+    href: bluetooth-faq.yml
+  - name: "Bluetooth Version and Profile Support in Windows 11"
     href: general-bluetooth-support-in-windows.md
   - name: "Bluetooth Version and Profile Support in Previous Windows Versions"
     href: bluetooth-support-in-previous-windows-versions.md
@@ -69,11 +69,9 @@
   - name: "Bluetooth Certification"
     href: bluetooth-certification.md
   - name: "Appendix A: How to Install an In-Box Bluetooth Driver on New Hardware in Windows Vista"
-    href: bluetooth-faq--appendix-a.md
+    href: bluetooth-faq--appendix-a.yml
   - name: "Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista"
-    href: bluetooth-faq--appendix-b.md
-  - name: "Bluetooth Appendix"
-    href: bluetooth-faq--appendix-c.md
+    href: bluetooth-faq--appendix-b.yml
 - name: "Transport Bus Driver for Bluetooth Power Control Handling"
   items: 
   - name: "Transport Bus Driver for Bluetooth Power Control Handling Guidelines"
@@ -85,7 +83,7 @@
   - name: "Serial Bus Driver Layer"
     href: serial-bus-driver-layer.md
   - name: "Transport Bus Driver FAQ"
-    href: transport-bus-driver-faq.md
+    href: transport-bus-driver-faq.yml
 - name: "Bluetooth LE Proximity Profile Device and App"
   items: 
   - name: "Bluetooth LE Proximity Profile Overview"
@@ -100,38 +98,56 @@
     href: testing-Bluetooth-main.md
   - name: "Bluetooth Test Platform (BTP)"
     items:
-    - name: "Bluetooth Test Platform Overview"
+    - name: "BTP overview"
       href: testing-BTP-Overview.md
-    - name: "Setting Up BTP"
-      href: testing-BTP-setup.md
-    - name: "BTP Software"
-      href: testing-BTP-software-package.md
-    - name: "BTP Hardware"
+    - name: "Setting up BTP"
       items:
-      - name: "Traduci board"
+      - name: "Hardware setup"
+        href: testing-BTP-setup-hardware.md
+      - name: "Software setup"
+        href: testing-BTP-setup-software.md
+      - name: "Get the BTP software package"
+        href: testing-BTP-setup-package.md
+    - name: "Hardware"
+      items:
+      - name: "Supported Hardware"
         href: testing-BTP-hw.md
-      - name: "HID Capable Radios"
-        href: testing-BTP-hw-hid.md
-      - name: "Audio Capable Radios"
-        href: testing-BTP-hw-audio.md
-      - name: "BM-64-EVB board"
+      - name: "BM62"
+        href: testing-BTP-hw-bm62.md
+      - name: "BM64"
         href: testing-BTP-hw-bm64.md
+      - name: "RN42"
+        href: testing-BTP-hw-rn42.md
+      - name: "RN52"
+        href: testing-BTP-hw-rn52.md
+      - name: "Bluefruit Feather"
+        href: testing-BTP-hw-bluefruit-Feather.md
+      - name: "Bluefruit Friend"
+        href: testing-BTP-hw-bluefruit-Friend.md
+      - name: "Model 2433 ESP32"
+        href: testing-BTP-hw-esp32.md
       - name: "Human Device Adapter"
-        href: testing-BTP-human-device-adapter.md
+        href: testing-BTP-hw-human-device-adapter.md
+      - name: "Traduci Power Adapter"
+        href: testing-BTP-hw-power-adapter.md
     - name: "BTP Tests"
       items:
       - name: "Currently Available BTP Tests"
         href: testing-BTP-Tests.md
-      - name: "Testing Bluetooth Pairing"
+      - name: "Pairing"
         href: testing-BTP-tests-pairing.md
-      - name: "Testing Bluetooth HID"
+      - name: "HID"
         href: testing-BTP-tests-hid.md
-      - name: "Testing Bluetooth Audio"
+      - name: "Audio"
         href: testing-BTP-tests-audio.md
-      - name: "Testing Bluetooth Audio and HID"
+      - name: "Audio + HID"
         href: testing-BTP-tests-audio-hid.md
-      - name: "Testing Bluetooth Battery"
+      - name: "Bluetooth + Wi-Fi"
+        href: testing-BTP-tests-wifi.md
+      - name: "Battery"
         href: testing-BTP-tests-battery.md
+      - name: "Power States"
+        href: testing-BTP-tests-power-state-hid.md
     - name: "BTP Diagnostic Tools"
       items:
       - name: "Bluetooth ETL Parse"

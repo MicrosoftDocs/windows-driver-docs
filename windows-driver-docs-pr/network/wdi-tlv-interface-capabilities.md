@@ -4,7 +4,6 @@ description: WDI_TLV_INTERFACE_CAPABILITIES is a TLV that contains the capabilit
 ms.date: 02/14/2019
 keywords:
  - WDI_TLV_INTERFACE_CAPABILITIES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ms.custom: 19H1
 ---
 
@@ -55,8 +54,7 @@ The sum (in bytes) of the sizes of all contained elements.
 | UINT8 | Specifies if the device supports Multiband Operation (MBO). Valid values are 0 (not supported) and 1 (supported). <p>Added in Windows 10, version 1903, WDI version 1.1.8.</p> |
 | UINT8 | Specifies if the adapter implements beacon report measurements. Valid values are 0 (the adapter does not implement beacon report measurements) and 1 (the adapter implements its own 11k beacon report). <p>Added in Windows 10, version 1903, WDI version 1.1.8.</p> |
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -2,7 +2,6 @@
 title: USB 3.0 Data Structures
 description: This topic describes the data structures used by the USB 3.0 host controller driver.
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # USB 3.0 Data Structures
@@ -13,7 +12,7 @@ The USB 3.0 host controller driver is part of the USB 3.0 core driver stack. For
 
 Each USB 3.0 host controller can have up to 255 devices, and each device can have up to 31 endpoints. The following diagram shows some of the data structures that represent one host controller and the connected devices.
 
-![usb 3.0 data structures that represent one host controller and the connected devices that have device context that in turn have slot and end point context](images/usb3structures01.png)
+![usb 3.0 data structures that represent one host controller and the connected devices that have device context that in turn have slot and end point context.](images/usb3structures01.png)
 
 ## Device Context Base Array
 
@@ -39,7 +38,7 @@ Software notifies the host controller that it has device-related or endpoint-rel
 
 The following diagram continues to the right of the preceding diagram. It shows additional data structures that represent a single endpoint.
 
-![usb 3.0 data structure showing end point context that has multiple trbs that have data and tds](images/usb3structures02.png)
+![usb 3.0 data structure showing end point context that has multiple trbs that have data and tds.](images/usb3structures02.png)
 
 ## Transfer Ring
 
@@ -53,4 +52,4 @@ An Endpoint Context structure holds context information for a single endpoint. I
 
 ## Related topics
 
-[USB Debugging Innovations in Windows 8](https://channel9.msdn.com/Events/BUILD/BUILD2011/HW-258P)
+[USB Debugging Innovations in Windows 8](/events/build-build2011/hw-258p)

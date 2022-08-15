@@ -9,7 +9,6 @@ api_name:
 api_type:
 - Schema
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # ValidateScanTicketRequest element
@@ -17,8 +16,7 @@ ms.localizationpriority: medium
 
 The required **ValidateScanTicketRequest** operation element enables a client to determine if the settings for future scan operations are valid.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:ValidateScanTicketRequest>
@@ -26,8 +24,7 @@ Usage
 </wscn:ValidateScanTicketRequest>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
@@ -55,8 +52,7 @@ There are no attributes.
 
 There are no parent elements.
 
-Remarks
--------
+## Remarks
 
 A client can use the **ValidateScanTicketRequest** element to validate various setting changes and combinations.
 
@@ -81,8 +77,7 @@ This operation might also return the following error code:
 
      
 
-Examples
---------
+## Examples
 
 The following code example shows a validation request for a valid scan ticket.
 

@@ -2,7 +2,6 @@
 title: Driver protection
 description: Along with every virtual address, the video memory manager allows independent hardware vendors (IHVs) to define a driver / hardware specific protection (i.e.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Driver protection
@@ -41,7 +40,7 @@ When evicting an allocation that has virtual address ranges mapped with driver p
 
 The following figure shows VA mapping for an allocation with different driver protection values.
 
-![virtual address mapping for an allocation with different driver protection](images/driver-protection.1.png)
+![virtual address mapping for an allocation with different driver protection.](images/driver-protection.1.png)
 
 During paging operations the allocation will be copied in chunks:
 

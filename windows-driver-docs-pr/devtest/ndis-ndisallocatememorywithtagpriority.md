@@ -9,7 +9,6 @@ api_name:
 - NdisAllocateMemoryWithTagPriority
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisAllocateMemoryWithTagPriority rule (ndis)
@@ -21,8 +20,7 @@ Every memory allocation should use a unique pool tag to ensure that kernel debug
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -47,7 +45,6 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisAllocateMemoryWithTagPriority**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatememorywithtagpriority)

@@ -2,7 +2,6 @@
 title: Overview of the Hyper-V Extensible Switch
 description: This section provides an overview of the Hyper-V Extensible Switch
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Overview of the Hyper-V Extensible Switch
@@ -107,16 +106,16 @@ These extensions have the same capabilities as filtering extensions, but are res
 
 Only one forwarding extension can be bound and enabled in each instance of an extensible switch.
 
-For more information on this type of extension, see [Forwarding Extensions](./filtering-extensions.md).
+For more information on this type of extension, see [Forwarding Extensions](./forwarding-extensions.md).
 
 ## Hyper-V extensible switch architectural diagrams
 
 The following figure shows the components of the extensible switch interface for NDIS 6.40 (Windows Server 2012 R2) and later.
 
-![diagram illustrating hyper\-v extensible switch architecture for ndis 6.40 and later](images/vswitcharchitecture-ndis640.png)
+![diagram illustrating hyper\-v extensible switch architecture for ndis 6.40 and later.](images/vswitcharchitecture-ndis640.png)
 
 The following figure shows the components of the extensible switch interface for NDIS 6.30 (Windows Server 2012).
 
-![diagram illustrating the synthetic device data paths with sr-iov](images/vswitcharchitecture.png)
+![diagram illustrating the synthetic device data paths with sr-iov.](images/vswitcharchitecture.png)
 
 For more information about the components for the extensible switch interface, see [Hyper-V Extensible Switch Architecture](./hyper-v-extensible-switch-architecture.md).

@@ -9,7 +9,6 @@ api_name:
 - .logappend (Append Log File)
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .logappend (Append Log File)
@@ -59,8 +58,7 @@ Specifies the name of the log file. You can specify a full path or only the file
 
  
 
-Remarks
--------
+## Remarks
 
 If you already have a log file open when you run the **.logappend** command, the debugger closes the log file. If you specify the name of a file that already exists, the debugger appends new information to the file. If the file does not exist, the debugger creates it.
 

@@ -1,7 +1,6 @@
 ---
 title: Using PEPs for ACPI services
 description: This topic provides information about using platform extension plug-ins (PEPs) for ACPI services.
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

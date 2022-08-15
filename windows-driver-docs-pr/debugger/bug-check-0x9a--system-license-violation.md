@@ -9,7 +9,6 @@ api_name:
 - SYSTEM_LICENSE_VIOLATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x9A: SYSTEM\_LICENSE\_VIOLATION
@@ -241,8 +240,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 
  
 
-Cause
------
+## Cause
 
 The Microsoft Windows operating system detects a violation of the software license agreement.
 

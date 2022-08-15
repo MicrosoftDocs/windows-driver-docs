@@ -3,7 +3,6 @@ title: Filter Drivers
 description: Filter Drivers
 keywords: ["filter drivers WDK WDM", "bus filter drivers WDK WDM", "lower-level filter drivers WDK WDM", "upper-level filter drivers WDK WDM", "WDM filter drivers WDK"]
 ms.date: 06/16/2017
-ms.localizationpriority: High
 ---
 
 # Filter Drivers

@@ -5,7 +5,6 @@ keywords:
 - COM interfaces WDK print , accessing plug-in interfaces
 - plug-ins WDK print , accessing interfaces
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Accessing Plug-In Interfaces from Printer Drivers

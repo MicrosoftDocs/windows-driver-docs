@@ -2,7 +2,6 @@
 title: CPU host aperture
 description: For 32bit OS discrete graphics processing units (GPUs), which don't support resizable BAR or when resizing the frame buffer BAR fails, Windows Display Driver Model (WDDM) v2 will offer an alternative mechanism by which a discrete GPU VRAM can be efficiently accessed. For GPUs, which support a programmable BAR address space, a new CPU Host Aperture functionality is introduced in WDDM v2 to abstract that functionality.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # CPU host aperture
@@ -18,7 +17,7 @@ The memory for the page table behind the CPU host aperture is managed by the dri
 
 When CPU access to a memory segment is required, the video memory manager reserves pages in the CPU Host Aperture and maps memory segment pages through it. This is illustrated below.
 
-![cpu host aperture segment mapping](images/cpu-host-aperture.1.png)
+![cpu host aperture segment mapping.](images/cpu-host-aperture.1.png)
 
 In the linked display adapter configuration things look similar except for the following.
 
@@ -26,7 +25,7 @@ In the linked display adapter configuration things look similar except for the f
 -   *LinkInstanced* allocation have a virtual address range of **AllocationSize**\***NumberOfGPUInLink** associated with them with various part of the allocation being mapped to different GPU.
 
 This is illustrated below:
-![cpu host aperture segment mapping for linked display adapter configuration](images/cpu-host-aperture.2.png)
+![cpu host aperture segment mapping for linked display adapter configuration.](images/cpu-host-aperture.2.png)
 
  
 

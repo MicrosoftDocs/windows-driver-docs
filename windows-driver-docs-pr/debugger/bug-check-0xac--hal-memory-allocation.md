@@ -9,7 +9,6 @@ api_name:
 - HAL_MEMORY_ALLOCATION
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0xAC: HAL\_MEMORY\_ALLOCATION
@@ -57,8 +56,7 @@ The HAL\_MEMORY\_ALLOCATION bug check has a value of 0x000000AC. This bug check 
 
  
 
-Cause
------
+## Cause
 
 The HAL could not obtain non-paged memory pool for a system critical requirement.
 

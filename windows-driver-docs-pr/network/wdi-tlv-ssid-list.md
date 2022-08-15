@@ -4,16 +4,16 @@ description: WDI_TLV_SSID_LIST is an unused TLV.
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SSID_LIST Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_SSID\_LIST
 
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
+
 
 WDI\_TLV\_SSID\_LIST is an unused TLV.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

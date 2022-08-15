@@ -1,5 +1,5 @@
 ---
-title: ks.objhdr
+title: ks.objhdr (WinDbg)
 description: The ks.objhdr extension displays the kernel streaming object header associated with the specified file object.
 keywords: ["ks.objhdr Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - ks.objhdr
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.objhdr
@@ -58,8 +57,7 @@ Optional. Values are the same as those for [**!ks.dump**](-ks-dump.md).
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 Levels and flags for **!ks.objhdr** are identical to those described in [**!ks.dump**](-ks-dump.md).
 

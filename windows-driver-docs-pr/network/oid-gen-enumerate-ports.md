@@ -4,7 +4,6 @@ description: As a query, NDIS and overlying drivers use the OID_GEN_ENUMERATE_PO
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_ENUMERATE_PORTS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_ENUMERATE\_PORTS
@@ -20,15 +19,13 @@ Supported.
 <a href="" id="ndis-6-0-and-later-miniport-drivers"></a>NDIS 6.0 and later miniport drivers  
 Not requested. (see Remarks section)
 
-Remarks
--------
+## Remarks
 
 NDIS handles this OID and miniport drivers do not receive this OID query.
 
 If the query succeeds, NDIS returns NDIS\_STATUS\_SUCCESS and provides the results of the query in an [**NDIS\_PORT\_ARRAY**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_port_array) structure. The **NumberOfPorts** member of NDIS\_PORT\_ARRAY contains the number of active ports that are associated with the miniport adapter. The **Ports** member of NDIS\_PORT\_ARRAY contains a list of pointers to [**NDIS\_PORT\_CHARACTERISTICS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_port_characteristics) structures. Each NDIS\_PORT\_CHARACTERISTICS structure defines the characteristics of a single NDIDS port.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

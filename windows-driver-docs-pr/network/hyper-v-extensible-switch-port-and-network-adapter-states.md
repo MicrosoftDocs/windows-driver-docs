@@ -2,7 +2,6 @@
 title: Hyper-V Extensible Switch Port and Network Adapter States
 description: Hyper-V Extensible Switch Port and Network Adapter States
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Hyper-V Extensible Switch Port and Network Adapter States
@@ -36,7 +35,7 @@ When an extension is bound and enabled on an extensible switch instance, it can 
 
 The following diagram shows the various states for the extensible switch port and network adapter connection components. The diagram also shows the OID set requests that cause the state transition for the component.
 
-![flowchart showing the oid set requests that cause the state transition for the component](images/vswitchstate.png)
+![flowchart showing the oid set requests that cause the state transition for the component.](images/vswitchstate.png)
 
 The following list describes the various states of the extensible switch port and network adapter connection components:
 
@@ -175,7 +174,7 @@ The following table describes the operations that are allowed based on the state
 
  
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="14%" />
 <col width="14%" />

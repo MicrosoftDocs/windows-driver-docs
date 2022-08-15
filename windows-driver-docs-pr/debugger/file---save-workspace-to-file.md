@@ -3,7 +3,6 @@ title: File Save Workspace to File
 description: File Save Workspace to File
 keywords: ["File Save Workspace to File", "workspaces, File Save Workspace to File"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # File | Save Workspace to File

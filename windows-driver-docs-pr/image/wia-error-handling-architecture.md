@@ -2,7 +2,6 @@
 title: WIA Error Handling Architecture
 description: WIA Error Handling Architecture
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Error Handling Architecture
@@ -12,11 +11,11 @@ The WIA error handling architecture is composed of three parts. The operating sy
 
 WIA error handling is comprised of system-supplied, IHV-supplied, and ISV-supplied components. The following diagram illustrates the supplier of each component.
 
-![diagram illustrating wia error-handling components](images/wia-error-wv.png)
+![diagram illustrating wia error-handling components.](images/wia-error-wv.png)
 
 There are three possible error handlers: the application error handler, the driver error handler, and the default error handler. These three error handlers are shown in the following diagram.
 
-![diagram illustrating the three wia error handlers](images/wia-errorhandlers.png)
+![diagram illustrating the three wia error handlers.](images/wia-errorhandlers.png)
 
 The image also shows the hierarchy in which these three error handlers are tried by the WIA Proxy callback.
 

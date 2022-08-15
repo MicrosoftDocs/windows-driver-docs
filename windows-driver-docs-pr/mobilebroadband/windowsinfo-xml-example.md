@@ -2,7 +2,6 @@
 title: WindowsInfo XML Example
 description: WindowsInfo XML Example
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WindowsInfo XML Example

@@ -7,7 +7,6 @@ keywords:
 - hardware unloads WDK Windows 2000 display
 - unloading video hardware
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Unloading Video Hardware
@@ -24,7 +23,7 @@ Finally, GDI disables the display driver by calling [**DrvDisableDriver**](/wind
 
 The following figure shows GDI's calling sequence for disabling the video hardware.
 
-![diagram illustrating disabling the video hardware](images/202-02.png)
+![diagram illustrating disabling the video hardware.](images/202-02.png)
 
  
 

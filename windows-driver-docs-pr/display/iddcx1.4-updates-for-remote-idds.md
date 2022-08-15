@@ -7,7 +7,6 @@ keywords:
 - Remote IDD, IddCx versions 1.4 and later
 - Remote indirect display driver
 - Remote IDD
-ms.localizationpriority: medium
 ---
 
 # IddCx 1.4 updates for remote IDDs
@@ -25,7 +24,7 @@ An IDD declares it wants to create a remote ID adapter by setting the **IDDCX_AD
 
 ### Installation recommendations for remote IDDs
 
-UMDF allows drivers to control the [device pooling option](../wdf/using-device-pooling-in-umdf-drivers.md) in their INF files, using directives such as **UmdfHostProcessSharing** and **DeviceGroupId**. Due to some lock contention issues, it is highly recommended that remote IDDs set the **UmdfHostProcessSharing** directive to **ProcessSharingDisabled**. This setting will configure the remote IDD for each session to be in its own process.
+UMDF allows drivers to control the [device pooling option](../wdf/using-device-pooling-in-umdf-drivers.md) in their INF files, using directives such as **UmdfHostProcessSharing** and **DeviceGroupId**. Due to some lock contention issues, it is highly recommended that remote IDDs set the **UmdfHostProcessSharing** directive to **ProcessSharingDisabled** and remove any **DeviceGroupId** directives. This setting will configure the remote IDD for each session to be in its own process.
 
 ### Additional restrictions on existing IddCx features for remote IDDs
 

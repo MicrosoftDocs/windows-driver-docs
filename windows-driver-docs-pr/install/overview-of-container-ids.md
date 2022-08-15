@@ -1,14 +1,12 @@
 ---
-title: Overview of Container IDs
-description: Overview of Container IDs
+title: Overview of container IDs
+description: Overview of container IDs
 keywords:
 - container IDs WDK , about
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 04/08/2022
 ---
 
-# Overview of Container IDs
-
+# Overview of container IDs
 
 In the Windows family of operating systems, devices are basically a collection of functional device instances, each of which represents a functional endpoint that enables some form of communication to the device.
 
@@ -22,7 +20,7 @@ Starting with Windows 7, the operating system uses a new ID (*container ID*) to 
 
 Each instance of a physical device that is installed in the computer has a unique container ID. All devnodes that represent a function on that instance of the physical device share the same container ID. The following figure shows an example of that relationship.
 
-![diagram illustrating container ids for a multifunction device's devnodes](images/containerid-1.png)
+![diagram illustrating container ids for a multifunction device's devnodes.](images/containerid-1.png)
 
 There is one container ID with a special meaning for bus drivers: NULL_GUID which is defined as: {00000000-0000-0000-0000-000000000000}.
 
@@ -30,7 +28,4 @@ In general, do not return NULL_GUID as the default case when reporting a contain
 
 When returning NULL_GUID as a container ID, a bus driver declares to PnP that the device must not be part of any container, thus returning NULL_GUID is appropriate only in very special cases. For example, a *devnode* such as a volume device may span multiple disks in multiple containers but do not belong to any container. Such a device will have a [**DEVPKEY_Device_BaseContainerId**](./devpkey-device-basecontainerid.md) equal to NULL_GUID, and it will not have a [**DEVPKEY_Device_ContainerId**](./devpkey-device-containerid.md) at all.
 
-Aside from very special cases, a bus driver should never return NULL_GUID when reporting a hardware device and bus drivers should guard against faulty hardware that reports a NULL_GUID value from their bus. In these cases the bus driver should either threat this as a device error, or treat it as if the device did not report a value.
-
- 
-
+Aside from very special cases, a bus driver should never return NULL_GUID when reporting a hardware device and bus drivers should guard against faulty hardware that reports a NULL_GUID value from their bus. In these cases the bus driver should either treat this as a device error, or treat it as if the device did not report a value.

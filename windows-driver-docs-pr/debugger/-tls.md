@@ -1,5 +1,5 @@
 ---
-title: tls
+title: tls (WinDbg)
 description: The tls extension displays a thread local storage (TLS) slot.
 keywords: ["TLS (thread local storage)", "thread local storage (TLS)", "tls Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - tls
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !tls
@@ -51,8 +50,7 @@ Specifies the thread environment block (TEB). If this is 0 or omitted, the curre
 
  
 
-Remarks
--------
+## Remarks
 
 Here is an example:
 

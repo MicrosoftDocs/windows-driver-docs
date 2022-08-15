@@ -6,7 +6,6 @@ keywords:
 - unloading network modules
 - NmrDeregisterClient
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Unloading a Client Module

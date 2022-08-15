@@ -3,7 +3,6 @@ title: Number of user mode crashes in top Microsoft apps
 description: The measure aggregates telemetry from a 7-day sliding window into a ratio of crashes in top Microsoft apps, caused by the graphics drivers, over total runtime in years 
 ms.topic: article
 ms.date: 08/08/2019
-ms.localizationpriority: medium
 ---
 
 # Number of user mode crashes in top Microsoft apps, normalized by usage, is less than or equal to the baseline goal
@@ -23,14 +22,14 @@ This measure is normalized by usage, in a year-long scale.
 |**Measurement criteria**|Aggregation of instances|
 |**Minimum population**|50,000 hours of Top Microsoft apps runtime|
 |**Passing criteria**|<= 1.5 crash per year of runtime|
-|**Measure ID**|22727981|
+|**Measure ID**|21839387|
 
 ## Calculation
 
 1. The measure aggregates telemetry from a 7-day sliding window into a **ratio of crashes in top Microsoft apps, caused by the graphics drivers, over total runtime in years**.
 2. *Total crashes in top Microsoft apps = count(top Microsoft app crashes on machines that have the driver)*
 3. *Total runtime of top Microsoft apps = sum(runtime of top Microsoft apps, for each machine that has the driver)*
-4. *Runtime in years = Total runtime of top Microsoft apps \* 60 (minute) \* 60 (hour) \* 24 (day) \* 365 (year)*
+4. *Runtime in years = Total runtime of top Microsoft apps in seconds / (60 (minute) \* 60 (hour) \* 24 (day) \* 365 (year))*
 
 ### Final calculation
 

@@ -9,7 +9,6 @@ api_name:
 - minipkd.portconfig
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !minipkd.portconfig
@@ -52,8 +51,7 @@ Specifies the address of a PORT\_CONFIGURATION\_INFORMATION data structure.
 
 For more information, see [SCSI Miniport Debugging](scsi-miniport-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The *PortConfig* address can be found in the **Port Config Info** field of the [**!minipkd.adapter**](-minipkd-adapter.md) display.
 

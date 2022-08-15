@@ -9,7 +9,6 @@ api_name:
 - ks.automation
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !ks.automation
@@ -52,8 +51,7 @@ Specifies a pointer to the object for which to display automation items. (Automa
 
 For more information, see [Kernel Streaming Debugging](kernel-streaming-debugging.md).
 
-Remarks
--------
+## Remarks
 
 You can use this command with a filter address obtained from [**!ks.enumdevobj**](-ks-enumdevobj.md).
 

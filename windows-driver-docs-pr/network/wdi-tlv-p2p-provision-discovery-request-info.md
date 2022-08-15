@@ -4,10 +4,11 @@ description: WDI_TLV_P2P_PROVISION_DISCOVERY_REQUEST_INFO is a TLV that contains
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_PROVISION_DISCOVERY_REQUEST_INFO Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_P2P\_PROVISION\_DISCOVERY\_REQUEST\_INFO
+
+[!INCLUDE [WDI topic note](../includes/wdi-version-warning.md)]
 
 
 WDI\_TLV\_P2P\_PROVISION\_DISCOVERY\_REQUEST\_INFO is a TLV that contains Wi-Fi Direct Provision Discovery Request information.
@@ -35,8 +36,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

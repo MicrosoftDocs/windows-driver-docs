@@ -4,7 +4,6 @@ description: WDI_TLV_COMMUNICATION_CONFIGURATION_ATTRIBUTES is a TLV that contai
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_COMMUNICATION_CONFIGURATION_ATTRIBUTES Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_COMMUNICATION\_CONFIGURATION\_ATTRIBUTES
@@ -31,8 +30,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

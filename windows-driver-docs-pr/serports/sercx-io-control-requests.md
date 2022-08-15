@@ -4,7 +4,6 @@ description: A list of the serial I/O control requests that SerCx supports.
 keywords:
 -    SerCx IOCTLs
 ms.date: 11/30/2017
-ms.localizationpriority: medium
 ---
 
 # SerCx I/O Control Requests

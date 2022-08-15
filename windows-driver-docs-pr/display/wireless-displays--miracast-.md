@@ -1,6 +1,6 @@
 ---
-title: Wireless displays (Miracast)
-description: Wireless (Miracast) displays can optionally be supported by Windows Display Driver Model (WDDM) 1.3 and later drivers. This capability is new starting with Windows 8.1.
+title: About wireless displays (Miracast)
+description: Wireless (Miracast) displays can optionally be supported by Windows Display Driver Model (WDDM) 1.3 and later drivers. This capability was introduced in Windows 8.1.
 keywords:
 - Wireless displays
 - Miracast
@@ -8,33 +8,28 @@ keywords:
 - Miracast reference
 - Wireless display callback functions called by Miracast user-mode drivers
 - Wireless display functions implemented by Miracast user-mode drivers
-ms.date: 10/12/2018
-ms.localizationpriority: medium
+ms.date: 08/10/2021
 ---
 
-# Wireless displays (Miracast)
+# About wireless displays (Miracast)
 
 > [!NOTE]
-> This document describes how drivers can implement a custom Miracast stack in Windows 8.1. As of Windows 10, the OS ships with a built-in Miracast stack that can work on any GPU and it is no longer recommended that drivers implement a custom Miracast stack. This documentation is therefore deprecated and Microsoft may remove support for custom Miracast stacks in a future version of Windows.
+> This document describes how drivers can implement a custom Miracast stack in Windows 8.1. As of Windows 10, the OS ships with a built-in Miracast stack that can work on any GPU and it is no longer recommended that drivers implement a custom Miracast stack. This documentation is therefore deprecated and Microsoft might remove support for custom Miracast stacks in a future version of Windows.
 
-Wireless (Miracast) displays can optionally be supported by Windows Display Driver Model (WDDM) 1.3 and later drivers. This capability is new starting with Windows 8.1.
+Windows Display Driver Model (WDDM) 1.3 and later drivers can optionally support wireless (Miracast) displays. This capability was introduced in Windows 8.1.
 
-For more information on the requirements of drivers and hardware to support Miracast displays, refer to the [Building best-in-class Wireless Projection solutions with Windows 10](/windows-hardware/design/device-experiences/wireless-projection) guide and the relevant [WHCK documentation](/windows-hardware/test/hlk/windows-hardware-lab-kit) at **Device.Graphics.WDDM13.DisplayRender.WirelessDisplay**.
+For more information on the requirements of drivers and hardware to support Miracast displays, refer to the [Building best-in-class Wireless Projection solutions with Windows 10](/windows-hardware/design/device-experiences/wireless-projection) guide and the relevant [WHLK documentation](/windows-hardware/test/hlk/windows-hardware-lab-kit) at **Device.Graphics.WDDM13.DisplayRender.WirelessDisplay**.
 
-## <span id="Miracast_design_guide"></span><span id="miracast_design_guide"></span><span id="MIRACAST_DESIGN_GUIDE"></span>Miracast design guide
+The following pages describe how Windows 8.1 display miniport drivers and Miracast user-mode drivers support Miracast displays:
 
+* [WDDM display miniport driver tasks to support Miracast wireless displays](wddm-display-miniport-driver-tasks-to-support-miracast-wireless-displays.md)
+* [Miracast user-mode driver tasks to support Miracast wireless displays](miracast-user-mode-driver-tasks-to-support-miracast-wireless-displays.md)
+* [Reporting Miracast encode chunks and statistics](reporting-miracast-encode-chunks-and-statistics.md)
+* [Calling DisplayConfig functions for a Miracast target](calling-displayconfig-functions-for-a-miracast-target.md)
 
-These design guide sections describe how display miniport drivers and Miracast user-mode drivers support Miracast displays:
+## Miracast reference
 
--   [WDDM display miniport driver tasks to support Miracast wireless displays](wddm-display-miniport-driver-tasks-to-support-miracast-wireless-displays.md)
--   [Miracast user-mode driver tasks to support Miracast wireless displays](miracast-user-mode-driver-tasks-to-support-miracast-wireless-displays.md)
--   [Reporting Miracast encode chunks and statistics](reporting-miracast-encode-chunks-and-statistics.md)
--   [Calling DisplayConfig functions for a Miracast target](calling-displayconfig-functions-for-a-miracast-target.md)
-
-## <span id="Miracast_reference"></span><span id="miracast_reference"></span><span id="MIRACAST_REFERENCE"></span>Miracast reference
-
-
-These reference sections describe how to implement this capability in your drivers:
+The following sections describe how to implement Miracast capability in your drivers.
 
 ### User-mode device driver interfaces (DDIs)
 
@@ -52,8 +47,6 @@ Pointers to the Miracast display callback functions are returned in a [MIRACAST_
 |[PFN_REPORT_SESSION_STATUS](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_session_status)| Called by the user-mode display driver to report the status of the current Miracast connected session.|
 |[PFN_REPORT_STATISTIC](/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_statistic)| Called by the user-mode display driver to report the statistics of the Miracast link to the operating system.|
  
-
-
 **Wireless display functions implemented by Miracast user-mode drivers**
 
 The reference pages in this section describe wireless display (Miracast) functions that a Miracast user-mode driver must implement. This type of driver runs in a standalone DLL. 

@@ -4,7 +4,6 @@ description: This topic describes the basic end user facing scenarios that mobil
 keywords:
 - Windows Mobile Plans scenarios, Mobile Plans implementation mobile operators
 ms.date: 05/31/2019
-ms.localizationpriority: medium
 ---
 
 # Mobile Plans scenarios

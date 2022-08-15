@@ -6,7 +6,6 @@ keywords:
 - device installation functions WDK SetupAPI
 - general Setup functions WDK SetupAPI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Guidelines for Using SetupAPI

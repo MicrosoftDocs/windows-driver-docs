@@ -12,15 +12,13 @@ api_name:
 api_type:
 - COM
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # IPrinterBidiSchemaResponses::AddRequeryKey method
 
 The AddRequeryKey method adds a new QueryKey to re-query upon return from the getSchemas call.
 
-Syntax
-------
+## Syntax
 
 ```cpp
 HRESULT AddRequeryKey(
@@ -28,19 +26,16 @@ HRESULT AddRequeryKey(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
  *bstrQueryKey* \[in\]  
 The new QueryKey.
 
-Return value
-------------
+## Return value
 
 This method returns an **HRESULT** value.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

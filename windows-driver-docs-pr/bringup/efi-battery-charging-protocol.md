@@ -1,17 +1,14 @@
 ---
 title: EFI_BATTERY_CHARGING_PROTOCOL
-description: EFI_BATTERY_CHARGING_PROTOCOL
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+description: This protocol allows a UEFI driver to support charging of the main battery.
+ms.date: 08/20/2021
 ---
 
-# EFI\_BATTERY\_CHARGING\_PROTOCOL
-
+# EFI_BATTERY_CHARGING_PROTOCOL
 
 This protocol allows a UEFI driver to support charging of the main battery.
 
 ## Syntax
-
 
 ```cpp
 // {840CB643-8198-428a-A8B3-A072CE57CDB9}
@@ -28,25 +25,23 @@ typedef struct _EFI_BATTERY_CHARGING_PROTOCOL {
 
 ## Members
 
-
-<a href="" id="getbatterystatus"></a>**GetBatteryStatus**  
+**GetBatteryStatus**  
 Returns information about the current state of the main battery.
 
-<a href="" id="chargebattery"></a>**ChargeBattery**  
+**ChargeBattery**  
 Charges the main battery to the specified level using the specified maximum current.
 
-<a href="" id="revision"></a>**Revision**  
-The revision to which the EFI\_BATTERY\_CHARGING\_PROTOCOL adheres. All future revisions must be backward compatible. If a future version is not backward compatible, a different GUID must be used.
+**Revision**  
+The revision to which the EFI_BATTERY_CHARGING_PROTOCOL adheres. All future revisions must be backward compatible. If a future version is not backward compatible, a different GUID must be used.
 
 The current revision is 0x00010002, although revision 0x00010001 is also supported. For more information about which functions are supported in each version of the protocol, see the remarks section below.
 
-<a href="" id="getbatteryinformation"></a>**GetBatteryInformation**  
+**GetBatteryInformation**  
 Returns information about the current state of the main battery. This function is similar to **GetBatteryStatus**, but it provides more information than **GetBatteryStatus**.
 
 ## Remarks
 
-
-The following table lists the functions that are supported in each version of the EFI\_BATTERY\_CHARGING\_PROTOCOL protocol.
+The following table lists the functions that are supported in each version of the EFI_BATTERY_CHARGING_PROTOCOL protocol.
 
 <table>
 <colgroup>
@@ -70,10 +65,7 @@ The following table lists the functions that are supported in each version of th
 </tbody>
 </table>
 
- 
-
 ## Requirements
-
 
 **Header:** User generated
 
@@ -81,8 +73,8 @@ The following table lists the functions that are supported in each version of th
 
 [UEFI battery charging protocol](uefi-battery-charging-protocol.md)  
 
-[EFI\_BATTERY\_CHARGING\_PROTOCOL.GetBatteryInformation](efi-battery-charging-protocolgetbatteryinformation.md)  
+[EFI_BATTERY_CHARGING_PROTOCOL.GetBatteryInformation](efi-battery-charging-protocolgetbatteryinformation.md)  
 
-[EFI\_BATTERY\_CHARGING\_PROTOCOL.GetBatteryStatus](efi-battery-charging-protocolgetbatterystatus.md)  
+[EFI_BATTERY_CHARGING_PROTOCOL.GetBatteryStatus](efi-battery-charging-protocolgetbatterystatus.md)  
 
-[EFI\_BATTERY\_CHARGING\_PROTOCOL.ChargeBattery](efi-battery-charging-protocolchargebattery.md)  
+[EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery](efi-battery-charging-protocolchargebattery.md)  

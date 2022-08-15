@@ -2,7 +2,6 @@
 title: Adding Polling Event Support
 description: Adding Polling Event Support
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding Polling Event Support

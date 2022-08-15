@@ -2,7 +2,6 @@
 title: WIA Compatibility Layer
 description: WIA Compatibility Layer
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # WIA Compatibility Layer

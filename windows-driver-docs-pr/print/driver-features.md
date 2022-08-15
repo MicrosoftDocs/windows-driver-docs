@@ -2,7 +2,6 @@
 title: Driver Features
 description: Driver Features
 ms.date: 01/30/2019
-ms.localizationpriority: medium
 ---
 
 # Driver Features

@@ -4,7 +4,6 @@ description: As a query, the OID_GEN_CURRENT_LOOKAHEAD OID returns the number of
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_CURRENT_LOOKAHEAD Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_GEN\_CURRENT\_LOOKAHEAD
@@ -31,8 +30,7 @@ Supported.
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
 Mandatory.
 
-Remarks
--------
+## Remarks
 
 NDIS handles query and unsuccessful set requests for NDIS 6.0 and later miniport drivers. NDIS obtains the information from the miniport driver during initialization and miniport adapter restart. However, NDIS sends valid set requests to the miniport driver.
 
@@ -40,8 +38,7 @@ For a query, NDIS returns the largest lookahead size from among all the bindings
 
 If the underlying driver supports multipacket receive indications, bound protocol drivers are given full net packets on every indication. Consequently, this value is identical to that returned for [OID\_GEN\_RECEIVE\_BLOCK\_SIZE](oid-gen-receive-block-size.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

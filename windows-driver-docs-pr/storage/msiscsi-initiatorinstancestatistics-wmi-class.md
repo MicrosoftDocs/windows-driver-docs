@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_InitiatorInstanceStatistics WMI Class
 description: MSiSCSI\_InitiatorInstanceStatistics WMI Class
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 

@@ -1,4 +1,4 @@
-- name: "Getting started with Windows drivers"
+- name: "Getting started with drivers on Windows"
   href: index.md
 - name: "What is a driver?"
   href: what-is-a-driver-.md
@@ -17,6 +17,8 @@
     href: writing-a-very-small-kmdf--driver.md
   - name: "Write a Universal Windows driver (KMDF) based on a template"
     href: writing-a-kmdf-driver-based-on-a-template.md
+- name: "From Sample Code to Production Driver"
+  href: from-sample-code-to-production-driver.md
 - name: "Windows compatible hardware development boards"
   href: windows-compatible-hardware-development-boards.md
 - name: "Sharks Cove hardware development board"

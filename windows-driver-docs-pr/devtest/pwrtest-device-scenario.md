@@ -2,7 +2,6 @@
 title: PwrTest Device Scenario
 description: The PwrTest Device Scenario monitors device idle statistics.
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # PwrTest Device Scenario
@@ -122,11 +121,11 @@ The following table describes the XML elements that appear in the log file.
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;BusyCount&gt;</strong></td>
-<td align="left"><p>The number of times the device driver called <a href="/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;PoSetDeviceBusy&lt;/strong&gt;](../kernel/mm-bad-pointer.md)"><strong>PoSetDeviceBusy</strong></a> during the period.</p></td>
+<td align="left"><p>The number of times the device driver called <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-posetdevicebusy"><strong>PoSetDeviceBusy</strong></a> during the period.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>&lt;AccruedBusyCount&gt;</strong></td>
-<td align="left"><p>The total number of times the device driver called <a href="/windows-hardware/drivers/kernel/mm-bad-pointer" data-raw-source="[&lt;strong&gt;PoSetDeviceBusy&lt;/strong&gt;](../kernel/mm-bad-pointer.md)"><strong>PoSetDeviceBusy</strong></a>.</p></td>
+<td align="left"><p>The total number of times the device driver called <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-posetdevicebusy"><strong>PoSetDeviceBusy</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;IdlePowerState&gt;</strong></td>

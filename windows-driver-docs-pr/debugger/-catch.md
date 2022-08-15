@@ -1,5 +1,5 @@
 ---
-title: .catch
+title: .catch (WinDbg)
 description: The .catch token is used to prevent a program from terminating if an error occurs.It does not behave like the catch keyword in C++.
 keywords: [".catch Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - .catch
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .catch
@@ -30,8 +29,7 @@ It does not behave like the **catch** keyword in C++.
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
-Remarks
--------
+## Remarks
 
 The **.catch** token is followed by braces enclosing one or more commands.
 

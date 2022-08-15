@@ -9,7 +9,6 @@ api_name:
 - PROCESS1_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x6B: PROCESS1\_INITIALIZATION\_FAILED
@@ -59,8 +58,7 @@ The following parameters appear on the blue screen.
 
  
 
-Cause
------
+## Cause
 
 Any part of the disk subsystem can cause the PROCESS1\_INITIALIZATION\_FAILED bug check, including bad disks, bad or incorrect cables, mixing different ATA-type devices on the same chain, or drives that are not available because of hardware regeneration.
 

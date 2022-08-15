@@ -9,7 +9,6 @@ keywords:
 - paths WDK GDI , closed
 - closed paths WDK GDI
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Filling Areas (Closed Paths)
@@ -22,7 +21,7 @@ As in line drawing, pixels for filling are considered to be at integer coordinat
 
 The following figure shows how the pixels included in the fill region are determined relative to left and right borders of the region. Stated mathematically, the region is considered to be "closed" on the left and top, and "open" on the right and bottom.
 
-![diagram illustrating determining the pixels included in a fill region](images/fillbdy.png)
+![diagram illustrating determining the pixels included in a fill region.](images/fillbdy.png)
 
 The convention described above for the x-axis of the fill region also applies to the y-axis by substituting the left border with the top border and the right border with the bottom border.
 

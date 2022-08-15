@@ -5,7 +5,6 @@ keywords:
 - DirectDraw driver initialization WDK Windows 2000 display , Windows 2000
 - Windows 2000 display driver model WDK , DirectDraw
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Windows 2000 Driver Initialization

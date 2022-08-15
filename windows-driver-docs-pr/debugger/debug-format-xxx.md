@@ -10,7 +10,6 @@ api_location:
 - DbgEng.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ---
 
 # DEBUG\_FORMAT\_XXX
@@ -185,8 +184,7 @@ The following bit-flags apply to all crash dump files.
 
 
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

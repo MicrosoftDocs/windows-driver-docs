@@ -1,14 +1,12 @@
 ---
-title: Overview of the Removable Device Capability
-description: Overview of the Removable Device Capability
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+title: Overview of removable device capability
+description: Overview of the removable device capability
+ms.date: 04/08/2022
 ---
 
-# Overview of the Removable Device Capability
+# Overview of removable device capability
 
-
-The removable device capability is a bit (**Removable**) that bus drivers set in the [**DEVICE_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure in response to the [**IRP_MN_QUERY_CAPABILITIES**](../kernel/irp-mn-query-capabilities.md) function code for a specified device node (*devnode*).
+Removable device capability is a bit (**Removable**) that [bus drivers](../kernel/bus-drivers.md) set in the [**DEVICE_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure in response to the [**IRP_MN_QUERY_CAPABILITIES**](../kernel/irp-mn-query-capabilities.md) function code for a specified device node (*devnode*).
 
 Bus drivers set the removable device capability for a devnode when the devnode and all its child devnodes make up a device that can be physically removed, disconnected, or unplugged from its parent devnode while the computer is running. Typically, a devnode should be marked as removable if it is the topmost devnode in a devnode topology.
 
@@ -20,7 +18,4 @@ As a general rule, the topmost (parent) devnode of the device should be set as r
 
 The following Device Manager screen shot shows the devnode topology for a generic USB mouse, and shows which devnodes of the mouse are marked as removable.
 
-![screen shot of device manager window showing devnode topology for a usb mouse](images/containerid-2.png)
-
- 
-
+![screen shot of device manager window showing devnode topology for a usb mouse.](images/containerid-2.png)

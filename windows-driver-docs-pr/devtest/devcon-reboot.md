@@ -9,8 +9,7 @@ api_name:
 - DevCon Reboot
 api_type:
 - NA
-ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.date: 02/11/2022
 ---
 
 # DevCon Reboot
@@ -39,7 +38,7 @@ devcon reboot
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
-[Example 39: Reboot the local computer](devcon-examples.md#ddk_example_39_reboot_the_local_computer_tools)
+[Example 39: Reboot the local computer](devcon-examples.md#example-39-reboot-the-local-computer)
 
 
 

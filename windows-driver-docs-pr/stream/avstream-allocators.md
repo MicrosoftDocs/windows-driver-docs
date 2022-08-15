@@ -10,7 +10,6 @@ keywords:
 - allocating frames WDK AVStream
 - freeing frames WDK AVStream
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # AVStream Allocators

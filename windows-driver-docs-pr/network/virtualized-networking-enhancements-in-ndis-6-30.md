@@ -2,7 +2,6 @@
 title: Virtualized networking enhancements in NDIS 6.30
 description: This section describes virtualized networking enhancements in NDIS 6.30
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Virtualized Networking Enhancements in NDIS 6.30
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 
 NDIS supports virtualized networking interface that allow Hyper-V parent and child partitions to interface the underlying physical networking interface.
 
-NDIS 6.20 included the virtual machine queue (VMQ) interface to support Microsoft Hyper-V network performance improvements. For more information about VMQ, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md).
+NDIS 6.20 included the virtual machine queue (VMQ) interface to support Microsoft Hyper-V network performance improvements. For more information about VMQ, see [Virtual Machine Queue (VMQ)](virtual-machine-queue-architecture.md).
 
 NDIS 6.30 extends the support for virtualized networking interfaces with the following technologies, as described in [Overview of Virtualized Networking](overview-of-hyper-v.md):
 

@@ -7,7 +7,6 @@ keywords:
 - PictureSourceRect16thPel
 - MPEG-2 pan-scan example WDK DirectX VA
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # MPEG-2 Pan-Scan Example

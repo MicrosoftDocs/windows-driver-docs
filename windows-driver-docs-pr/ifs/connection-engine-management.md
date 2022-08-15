@@ -7,7 +7,6 @@ keywords:
 - connection engine WDK network redirectors
 - TDI drivers WDK file systems
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Connection Engine Management

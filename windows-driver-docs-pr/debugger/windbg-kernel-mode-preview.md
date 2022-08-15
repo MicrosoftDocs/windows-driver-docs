@@ -2,12 +2,11 @@
 title: WinDbg Preview - Starting a kernel mode session  
 description: This section describes how to how to start a kernel mode session with WinDbg Preview.
 ms.date: 01/09/2020
-ms.localizationpriority: medium
 ---
 
 # WinDbg Preview - Starting a kernel mode session
 
-![Small logo on windbg preview](images/windbgx-preview-logo.png)
+![Small logo on windbg preview.](images/windbgx-preview-logo.png)
 
 This topic describes how to start a kernel mode session with WinDbg Preview.
 
@@ -16,7 +15,7 @@ The process is very similar to how it has been done with previous versions of Wi
 > [!NOTE]
 > Local kernel debugging requires WinDbg Preview to be launched elevated.
 
-![Start debugging attach to kernel menu showing Net tab](images/windbgx-attach-to-kernel.png)
+![Start debugging attach to kernel menu showing Net tab.](images/windbgx-attach-to-kernel.png)
 
 The *Paste* tab allows you to paste in custom connection strings.
 

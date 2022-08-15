@@ -9,7 +9,6 @@ api_name:
 - amli debugger
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !amli debugger
@@ -34,8 +33,7 @@ Kdexts.dll
 
 For information about related commands and their uses, see [The AMLI Debugger](the-amli-debugger.md).
 
-Remarks
--------
+## Remarks
 
 When this command is issued, notification is sent to the AML interpreter. The next time the interpreter is active, it will immediately break into the AMLI Debugger.
 

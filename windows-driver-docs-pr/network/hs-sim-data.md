@@ -5,7 +5,6 @@ keywords:
 - HS_SIM_DATA structure Network Drivers Starting with Windows Vista
 - PHS_SIM_DATA structure pointer Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
-ms.localizationpriority: medium
 ---
 
 # HS\_SIM\_DATA structure
@@ -15,8 +14,7 @@ ms.localizationpriority: medium
 
 The **HS\_SIM\_DATA** structure contains information stored in the SIM card.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _HS_SIM_DATA {
@@ -27,8 +25,7 @@ typedef struct _HS_SIM_DATA {
 } HS_SIM_DATA, *PHS_SIM_DATA;
 ```
 
-Members
--------
+## Members
 
 **wszICCID**  
 The Integrated Circuit Card Identifier (ICCID) stored in the SIM card.
@@ -42,8 +39,7 @@ The Mobile Equipment Identifier (MEID) defined by 3GPP2.
 **wszSF\_EUIMID**  
 The Short Form Expanded User Identity Module Identifier (EUIMID) for a R-UIM or CSIM (CDMA SIM application) card.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

@@ -10,7 +10,6 @@ api_location:
 - Devpropdef.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -19,8 +18,7 @@ ms.date: 10/17/2018
 
 The DEVPROP_TYPE_NTSTATUS identifier represents the base-data-type identifier for the NTSTATUS status code values that are defined in Ntstatus.h.
 
-Remarks
--------
+## Remarks
 
 In Windows Vista and later versions of Windows, the [unified device property model](./unified-device-property-model--windows-vista-and-later-.md) also defines a [**DEVPROP_TYPE_ERROR**](devprop-type-error.md) base-data-type identifier for Microsoft Win32 error code values.
 
@@ -50,8 +48,7 @@ To retrieve the descriptive text that is associated with an NTSTATUS error code 
 
 -   Set the other options and parameters as appropriate to retrieve the descriptive text.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

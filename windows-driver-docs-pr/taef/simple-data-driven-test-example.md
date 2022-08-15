@@ -2,7 +2,6 @@
 title: Simple Data Driven Test Example
 description: Simple Data Driven Test Example
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Simple Data Driven Test Example
@@ -125,7 +124,7 @@ Once again, lets take a quick look at the code that covers the above aspects.
 
 "DataSource" is a known property in Microsoft.VisualStudio.TestTools.UnitTesting.
 
-In addition to the above, you need some extra steps for data driven tests in managed code. You also need to define a private TestContext property - like VSTS recommends (<https://msdn2.microsoft.com/library/ms404699(VS.80).aspx>). You also define public assessors to this property. Internally TAEF sets this TestContext property so you can access the data through it. Lets take a quick look at this portion of code:
+In addition to the above, you need some extra steps for data driven tests in managed code. You also need to define a private TestContext property. For more information, see [TestContext Class](/dotnet/api/microsoft.visualstudio.testtools.unittesting.testcontext). You also define public assessors to this property. Internally TAEF sets this TestContext property so you can access the data through it. Lets take a quick look at this portion of code:
 
 ```cpp
     1 public TestContext TestContext

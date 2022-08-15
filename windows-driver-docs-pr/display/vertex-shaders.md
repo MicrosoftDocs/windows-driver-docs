@@ -4,7 +4,6 @@ description: Vertex Shaders
 keywords:
 - vertex shaders WDK DirectX 8.0
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Vertex Shaders

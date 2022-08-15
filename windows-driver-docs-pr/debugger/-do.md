@@ -1,5 +1,5 @@
 ---
-title: .do
+title: .do (WinDbg)
 description: The .do token behaves like the do keyword in C, except that the word "while" is not used before the condition.
 keywords: [".do Windows Debugging"]
 ms.date: 05/23/2017
@@ -9,7 +9,6 @@ api_name:
 - .do
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # .do
@@ -34,8 +33,7 @@ Specifies a condition. If this evaluates to zero, it is treated as false; otherw
 
 For information about other control flow tokens and their use in debugger command programs, see [Using Debugger Command Programs](using-debugger-command-programs.md).
 
-Remarks
--------
+## Remarks
 
 The [**.break**](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) and [**.continue**](-continue.md) tokens can be used to exit or restart the *Commands* block.
 

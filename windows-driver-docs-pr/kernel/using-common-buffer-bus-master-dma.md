@@ -3,7 +3,6 @@ title: Using Common-Buffer Bus-Master DMA
 description: Using Common-Buffer Bus-Master DMA
 keywords: ["continuous DMA WDK kernel", "common buffer DMA WDK kernel", "DMA transfers WDK kernel , common buffer", "bus-master DMA WDK kernel", "DMA transfers WDK kernel , bus-master DMA", "adapter objects WDK kernel , bus-master DMA"]
 ms.date: 06/16/2017
-ms.localizationpriority: medium
 ---
 
 # Using Common-Buffer Bus-Master DMA
@@ -20,9 +19,11 @@ Setting up common-buffer areas economically, such as by using **PAGE\_SIZE** chu
 
 To set up a common buffer for bus-master DMA, a bus-master DMA device driver must call [**AllocateCommonBuffer**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pallocate_common_buffer) with the adapter object pointer returned by [**IoGetDmaAdapter**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter). Typically, a driver makes this call from its [*DispatchPnP*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine for [**IRP\_MN\_START\_DEVICE**](./irp-mn-start-device.md) requests. A driver should allocate a common buffer only if it will use the buffer repeatedly for its DMA operations while the driver remains loaded. The following diagram illustrates such a call to **AllocateCommonBuffer**.
 
-![diagram illustrating the allocation of a common buffer for bus-master dma](images/3halcbff.png)
+![diagram illustrating the allocation of a common buffer for bus-master dma.](images/3halcbff.png)
 
-The requested size for the buffer, shown in the previous diagram as LengthForBuffer, determines how many map registers must be used to provide a virtual-to-logical mapping for the common buffer. Use the [**BYTES\_TO\_PAGES**](./mm-bad-pointer.md) macro to determine the maximum number of pages needed (**BYTES\_TO\_PAGES** (*LengthForBuffer*)). This value cannot be greater than the *NumberOfMapRegisters* returned by [**IoGetDmaAdapter**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter).
+The requested size for the buffer, shown in the previous diagram as LengthForBuffer, determines how many map registers must be used to provide a virtual-to-logical mapping for the common buffer.
+ Use the [**BYTES_TO_PAGES**](/windows-hardware/drivers/ddi/wdm/nf-wdm-bytes_to_pages) macro to determine the maximum number of pages needed (**BYTES\_TO\_PAGES** (*LengthForBuffer*)).
+  This value cannot be greater than the *NumberOfMapRegisters* returned by [**IoGetDmaAdapter**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter).
 
 In addition, the caller must supply the following:
 
@@ -32,7 +33,7 @@ In addition, the caller must supply the following:
 
     On computers with x86-based, x64-based, and Itanium-based processors, cached memory is enabled. 
 
-    On computers with ARM or ARM 64-based processors, the operating system does not automatically enable cached memory for all devices. The system relies on the ACPI_CCA method for each device to determine whether the device is cache-coherent. 
+    On computers with Arm or Arm 64-based processors, the operating system does not automatically enable cached memory for all devices. The system relies on the ACPI_CCA method for each device to determine whether the device is cache-coherent. 
 
 -   A pointer to a driver-defined variable that will contain the device-accessible base *Logical Address* for the buffer (BufferLogicalAddress in the previous diagram) on return from **AllocateCommonBuffer**
 

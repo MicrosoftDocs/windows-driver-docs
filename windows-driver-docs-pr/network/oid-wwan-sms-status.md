@@ -4,7 +4,6 @@ description: OID_WWAN_SMS_STATUS reports the status of the MB device's message s
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SMS_STATUS Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # OID\_WWAN\_SMS\_STATUS
@@ -18,8 +17,7 @@ Query requests do not use a structure.
 
 Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_SMS\_STATUS**](ndis-status-wwan-sms-status.md) status notification that indicates the status of the MB device's message store when completing query requests.
 
-Remarks
--------
+## Remarks
 
 For more information about using this OID, see [WWAN SMS Operations](./mb-sms-operations.md).
 
@@ -27,8 +25,7 @@ When processing this OID, miniport drivers can access the Subscriber Identity Mo
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support SMS text messages.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

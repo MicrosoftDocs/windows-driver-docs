@@ -3,7 +3,6 @@ title: Debugging a Service Application
 description: Debugging a Service Application
 keywords: ["service application debugging", "postmortem debugging, debugging service applications", "services"]
 ms.date: 05/23/2017
-ms.localizationpriority: medium
 ---
 
 # Debugging a Service Application

@@ -9,7 +9,6 @@ api_name:
 - whatperftime
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !whatperftime
@@ -48,8 +47,7 @@ The performance counter clock value.
 
  
 
-Remarks
--------
+## Remarks
 
 You can use **!whatperftime** to convert values retrieved by calling **QueryPerformanceCounter**. Performance counter time values are also found in software traces.
 

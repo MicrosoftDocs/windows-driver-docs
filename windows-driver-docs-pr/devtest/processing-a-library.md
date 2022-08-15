@@ -4,7 +4,6 @@ description: Processing a Library
 keywords:
 - library WDK Static Driver Verifier , processing
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Processing a Library

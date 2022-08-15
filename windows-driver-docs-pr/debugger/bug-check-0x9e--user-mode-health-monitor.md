@@ -9,7 +9,6 @@ api_name:
 - USER_MODE_HEALTH_MONITOR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x9E: USER\_MODE\_HEALTH\_MONITOR
@@ -104,7 +103,7 @@ Hardware mechanisms, such as watchdog timers, can detect that basic kernel servi
 
 Kernel components can extend watchdog timer functionality to user mode by periodically monitoring critical applications. This bug check indicates that a user-mode health check failed in a way that prevents graceful shutdown. This bug check restores critical services by restarting or enabling application failover to other servers.
 
-Like all bug checks, use the system event log to look for events that precede the stop code in time. Events in the log that immediately proceed the the bug check should be examined for information on possible causes.
+Like all bug checks, use the system event log to look for events that precede the stop code in time. Events in the log that immediately proceed the bug check should be examined for information on possible causes.
 
 ## See Also
 

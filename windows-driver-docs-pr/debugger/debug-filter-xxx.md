@@ -11,7 +11,6 @@ api_location:
 - DbgEng.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ---
 
 # DEBUG\_FILTER\_XXX
@@ -148,8 +147,7 @@ The following constants are used to specify the handling status of an exception 
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

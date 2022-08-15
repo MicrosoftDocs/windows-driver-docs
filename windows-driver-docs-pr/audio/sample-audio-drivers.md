@@ -15,7 +15,6 @@ keywords:
 - Sb16 sample audio driver WDK audio
 - Stdunk sample audio driver WDK audio
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Sample Audio Drivers

@@ -4,7 +4,6 @@ description: WDI_TLV_INDICATION_WAKE_PACKET_PATTERN_ID is a TLV that contains th
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_INDICATION_WAKE_PACKET_PATTERN_ID Network Drivers Starting with Windows Vista
-ms.localizationpriority: medium
 ---
 
 # WDI\_TLV\_INDICATION\_WAKE\_PACKET\_PATTERN\_ID
@@ -31,8 +30,7 @@ The size (in bytes) of a UINT32.
 
  
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

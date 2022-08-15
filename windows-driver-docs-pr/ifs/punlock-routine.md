@@ -11,7 +11,6 @@ api_location:
 api_type:
 - UserDefined
 ms.date: 11/28/2017
-ms.localizationpriority: medium
 ---
 
 # PUNLOCK\_ROUTINE function pointer
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 A filter (legacy filter or minifilter) can register a PUNLOCK\_ROUTINE-typed routine as the filter's *UnlockRoutine* callback routine for a FILE\_LOCK structure.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef VOID ( *UnlockRoutine)(
@@ -29,8 +27,7 @@ typedef VOID ( *UnlockRoutine)(
 );
 ```
 
-Parameters
-----------
+## Parameters
 
 *Context* \[in\]  
 Context pointer that was passed to [**FltProcessFileLock**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltprocessfilelock) or [**FsRtlProcessFileLock**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlprocessfilelock).
@@ -38,13 +35,11 @@ Context pointer that was passed to [**FltProcessFileLock**](/windows-hardware/dr
 *FileLockInfo* \[in\]  
 Opaque pointer to the FILE\_LOCK\_INFO structure for the byte-range lock.
 
-Return value
-------------
+## Return value
 
 None
 
-Remarks
--------
+## Remarks
 
 A filter (legacy filter or minifilter) can optionally specify a PUNLOCK\_ROUTINE-typed routine as the filter's *UnlockRoutine* callback for a byte-range file lock.
 
@@ -54,8 +49,7 @@ A minifilter specifies this routine by passing a pointer to the routine as the *
 
 A legacy filter specifies this routine by passing a pointer to the routine as the *UnlockRoutine* parameter for [**FsRtlAllocateFileLock**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlallocatefilelock) or [**FsRtlInitializeFileLock**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializefilelock).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

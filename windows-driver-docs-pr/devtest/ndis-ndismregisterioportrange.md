@@ -9,7 +9,6 @@ api_name:
 - NdisMRegisterIoPortRange
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # NdisMRegisterIoPortRange rule (ndis)
@@ -19,8 +18,7 @@ A miniport driver calls [**NdisMRegisterIoPortRange**](/windows-hardware/drivers
 
 **Driver model: NDIS**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**NdisMRegisterIoPortRange**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterioportrange)
 [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes)

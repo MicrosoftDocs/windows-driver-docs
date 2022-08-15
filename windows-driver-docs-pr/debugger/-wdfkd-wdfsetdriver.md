@@ -9,7 +9,6 @@ api_name:
 - wdfkd.wdfsetdriver
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # !wdfkd.wdfsetdriver
@@ -39,8 +38,7 @@ KMDF 1, UMDF 2
 
 For more information, see [Kernel-Mode Driver Framework Debugging](kernel-mode-driver-framework-debugging.md).
 
-Remarks
--------
+## Remarks
 
 The **!wdfkd.wdfsetdriver** extension sets the default driver name. You can use this name with other **wdfkd** extensions that would otherwise require you to specify a driver name.
 

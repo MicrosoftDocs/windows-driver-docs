@@ -2,7 +2,6 @@
 title: Standardized INF Keywords for Network Devices
 description: Standardized INF Keywords for Network Devices
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for Network Devices
@@ -81,6 +80,8 @@ In addition, standardized keywords that are specific to networking technologies 
 [Standardized INF Keywords for NDIS Selective Suspend](standardized-inf-keywords-for-ndis-selective-suspend.md)
 
 [Standardized INF Keywords for NVGRE Task Offload](standardized-inf-keywords-for-nvgre-task-offload.md)
+
+[Standardized INF Keywords for NDIS Packet Timestamping](standardized-inf-keywords-for-ndis-packet-timestamping.md)
 
 [Standardized INF Keywords for Packet Coalescing](standardized-inf-keywords-for-packet-coalescing.md)
 

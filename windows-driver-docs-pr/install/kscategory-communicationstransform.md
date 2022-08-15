@@ -10,7 +10,6 @@ api_location:
 - Ks.h
 api_type:
 - HeaderDef
-ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
 
@@ -44,15 +43,13 @@ The KSCATEGORY_COMMUNICATIONSTRANSFORM [device interface class](./overview-of-de
 
  
 
-Remarks
--------
+## Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_COMMUNICATIONSTRANSFORM to indicate to the operating system that the devices support the KSCATEGORY_COMMUNICATIONSTRANSFORM functional category.
 
 The KSCATEGORY_COMMUNICATIONSTRANSFORM functional category is one of the [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md).
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

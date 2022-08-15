@@ -2,7 +2,6 @@
 title: Windows security model for driver developers
 description: The Windows security model is based primarily on per-object rights, with a small number of system-wide privileges.
 ms.date: 02/01/2018
-ms.localizationpriority: medium
 ---
 
 
@@ -70,7 +69,7 @@ All drivers should use SDDL in the INF file to specify ACLs for their device obj
 
 SDDL is an extensible description language that enables components to create ACLs in a string format. SDDL is used by both user-mode and kernel-mode code. The following figure shows the format of SDDL strings for device objects.
 
-![sddl strings for device objects](images/wsm-sddlstrings.gif)
+![sddl strings for device objects.](images/wsm-sddlstrings.gif)
 
 The Access value specifies the type of access allowed. The SID value specifies a security identifier that determines to whom the Access value applies (for example, a user or group).
 
@@ -162,7 +161,7 @@ The system uses the security constructs described in the Windows security model 
 
 The following diagram shows the security-related actions that are triggered when a user-mode process attempts to create a file.
 
-![creating a file example described below](images/wsm-creatingafile.gif)
+![creating a file example described below.](images/wsm-creatingafile.gif)
 
 The previous diagram shows how the system responds when a user-mode application calls the **CreateFile** function. The following notes refer to the circled numbers in the figure:
 
@@ -226,7 +225,7 @@ Any data that crosses a trust boundary is untrusted and must be validated.
 
 This diagram  shows three kernel drivers, and two apps, one in an app container and one app that runs with admin rights. The red lines indicate example trust boundaries.
 
-![driver attack surface showing three kernel drivers, and two apps, one in an app container](images/driver-security-attack-surface.png)
+![driver attack surface showing three kernel drivers, and two apps, one in an app container.](images/driver-security-attack-surface.png)
 
 As the app container can provide additional constraints, and is not running at admin level, path (1) is a higher risk path for an escalation attack since the trust boundary is between an app container ( a very low privilege process) and a kernel driver. 
 
@@ -237,7 +236,6 @@ In this example, there is a trust boundary between driver 1 and driver 3, as dri
 
 All inputs coming into the driver from user mode is untrusted and should be validated. Inputs coming from other drivers may also be untrusted depending on whether the previous driver was just a simple pass-through (e.g. data was received by driver 1 from app 1 , driver 1 didn’t do any validation on the data and just passed it forward to driver 3). Be sure to identify all attack surfaces and trust boundaries and validate all data crossing them, by creating a complete threat model.
 
-
 ## Windows Security Model Recommendations 
 
 -   Set strong default ACLs in calls to the **IoCreateDeviceSecure** routine.
@@ -247,7 +245,6 @@ All inputs coming into the driver from user mode is untrusted and should be vali
 -   Use the **IoValidateDeviceIoControlAccess** routine to tighten security on existing IOCTLS that allow FILE\_ANY\_ACCESS.
 -   Create a threat model to examine the security boundaries and look for unanticipated paths. For more information, see [Threat modeling for drivers](threat-modeling-for-drivers.md). 
 -   See [Driver security checklist](driver-security-checklist.md) for additional driver security recommendations.
-
 
 ### See Also
 

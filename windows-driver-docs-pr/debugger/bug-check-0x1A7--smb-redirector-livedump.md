@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x1A7 SMB_REDIRECTOR_LIVEDUMP
-description: The SMB_REDIRECTOR_LIVEDUMP bug check has a value of 0x000001A7. It indicates that the SMB redirector has detected a problem and has captured a kernel dump to collect debug information.
+description: The SMB_REDIRECTOR_LIVEDUMP live dump has a value of 0x000001A7. It indicates that the SMB redirector has detected a problem and has captured a kernel dump to collect debug information.
 keywords: ["Bug Check 0x1A7 SMB_REDIRECTOR_LIVEDUMP", "SMB_REDIRECTOR_LIVEDUMP"]
 ms.date: 01/10/2019
 topic_type:
@@ -9,12 +9,11 @@ api_name:
 - SMB_REDIRECTOR_LIVEDUMP
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x1A7: SMB\_REDIRECTOR\_LIVEDUMP
 
-The SMB\_REDIRECTOR\_LIVEDUMP bug check has a value of 0x000001A7. It indicates that the SMB redirector has detected a problem and has captured a kernel dump to collect debug information.
+The SMB\_REDIRECTOR\_LIVEDUMP live dump has a value of 0x000001A7. It indicates that the SMB redirector has detected a problem and has captured a kernel dump to collect debug information.
 
 
 > [!IMPORTANT]
@@ -43,7 +42,6 @@ The SMB redirector has detected a problem and has captured a kernel dump to coll
 ```
 
 ## Cause
------
 
 The SMB redirector has detected a problem and has captured a kernel dump to collect debug information.
 
@@ -58,6 +56,5 @@ When this registry key is set and the RDR times out on IO, a livedump will occur
 (This code can never be used for a real bugcheck; it is used to identify live dumps.)
 
 ## See Also
-----------
 
 [Bug Check Code Reference](bug-check-code-reference2.md)

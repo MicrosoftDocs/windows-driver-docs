@@ -1,6 +1,6 @@
 ---
-title: KSPROPERTY\_EXTXPORT\_LOAD\_MEDIUM
-description: The KSPROPERTY\_EXTXPORT\_LOAD\_MEDIUM property sets or gets an external device's load medium. For example eject, open tray, close tray, etc.
+title: KSPROPERTY_EXTXPORT_LOAD_MEDIUM
+description: The KSPROPERTY_EXTXPORT_LOAD_MEDIUM property sets or gets an external device's load medium. For example eject, open tray, close tray, etc.
 keywords: ["KSPROPERTY_EXTXPORT_LOAD_MEDIUM Streaming Media Devices"]
 topic_type:
 - apiref
@@ -10,77 +10,31 @@ api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
-ms.localizationpriority: medium
+ms.date: 10/20/2021
 ---
 
-# KSPROPERTY\_EXTXPORT\_LOAD\_MEDIUM
+# KSPROPERTY_EXTXPORT_LOAD_MEDIUM
 
+The **KSPROPERTY_EXTXPORT_LOAD_MEDIUM** property sets or gets an external device's load medium. For example eject, open tray, close tray, etc.
 
-The KSPROPERTY\_EXTXPORT\_LOAD\_MEDIUM property sets or gets an external device's load medium. For example eject, open tray, close tray, etc.
+## Usage Summary Table
 
-## <span id="ddk_ksproperty_extxport_load_medium_ks"></span><span id="DDK_KSPROPERTY_EXTXPORT_LOAD_MEDIUM_KS"></span>
-
-
-### Usage Summary Table
-
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Get</th>
-<th>Set</th>
-<th>Target</th>
-<th>Property descriptor type</th>
-<th>Property value type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Device</p></td>
-<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_EXTXPORT_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)"><strong>KSPROPERTY_EXTXPORT_S</strong></a></p></td>
-<td><p>ULONG</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Get | Set | Target | Property descriptor type | Property value type |
+|--|--|--|--|--|
+| Yes | Yes | Device | [**KSPROPERTY_EXTXPORT_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s) | ULONG |
 
 The property value (operation data) is a ULONG that specifies the current load medium. For example eject, open tray or closed tray.
 
-Remarks
--------
+## Remarks
 
-The **LoadMedium** member of the KSPROPERTY\_EXTXPORT\_S structure specifies the load medium.
+The **LoadMedium** member of the **KSPROPERTY_EXTXPORT_S** structure specifies the load medium.
 
-Requirements
-------------
+## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Ksmedia.h (include Ksmedia.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** ksmedia.h (include Ksmedia.h)
 
 ## See also
 
+[**KSPROPERTY**](ksproperty-structure.md)
 
-[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
-
-[**KSPROPERTY\_EXTXPORT\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)
-
+[**KSPROPERTY_EXTXPORT_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_extxport_s)

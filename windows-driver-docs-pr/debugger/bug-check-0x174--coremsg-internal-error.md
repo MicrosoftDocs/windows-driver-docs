@@ -9,7 +9,6 @@ api_name:
 - COREMSG_INTERNAL_ERROR
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x174: COREMSG\_INTERNAL\_ERROR
@@ -32,13 +31,11 @@ The COREMSG_INTERNAL_ERROR bug check has a value of 0x00000174. This indicates t
 
 
 ## Cause
------
 
 CoreMessaging detected an unrecoverable error.
 
 
 ## See Also
-----------
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
 

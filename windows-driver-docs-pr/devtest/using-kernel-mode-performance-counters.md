@@ -2,7 +2,6 @@
 title: Using Kernel Mode Performance Counters
 description: Using Kernel Mode Performance Counters
 ms.date: 08/05/2020
-ms.localizationpriority: medium
 ---
 
 # Using Kernel Mode Performance Counters

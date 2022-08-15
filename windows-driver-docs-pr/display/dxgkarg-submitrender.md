@@ -11,7 +11,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/05/2018
-ms.localizationpriority: medium
 ---
 
 # \_DXGKARG\_SUBMITRENDER structure
@@ -19,8 +18,7 @@ ms.localizationpriority: medium
 
 The DXGKARG\_SUBMITRENDER structure is reserved for system use. Do not use it in your driver.
 
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef struct _DXGKARG_SUBMITRENDER {
@@ -35,8 +33,7 @@ typedef struct _DXGKARG_SUBMITRENDER {
 } DXGKARG_SUBMITRENDER;
 ```
 
-Members
--------
+## Members
 
 **pContextSaveArea**
 Reserved for system use.
@@ -62,8 +59,7 @@ Reserved for system use.
 **pDmaBuffer**
 Reserved for system use.
 
-Requirements
-------------
+## Requirements
 
 <table>
 <colgroup>

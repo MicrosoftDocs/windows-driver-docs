@@ -9,7 +9,6 @@ keywords:
 - filter drivers WDK RSS
 - intermediate drivers WDK RSS
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Supporting RSS in Intermediate Drivers or Filter Drivers

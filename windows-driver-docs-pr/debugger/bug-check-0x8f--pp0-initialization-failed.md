@@ -9,7 +9,6 @@ api_name:
 - PP0_INITIALIZATION_FAILED
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # Bug Check 0x8F: PP0\_INITIALIZATION\_FAILED
@@ -26,8 +25,7 @@ The PP0\_INITIALIZATION\_FAILED bug check has a value of 0x0000008F. This bug ch
 
 None
 
-Cause
------
+## Cause
 
 An error occurred during Phase 0 initialization of the kernel-mode PnP manager.
 

@@ -9,7 +9,6 @@ api_name:
 - ParentObjectCheckLock
 api_type:
 - NA
-ms.localizationpriority: medium
 ---
 
 # ParentObjectCheckLock rule (kmdf)
@@ -19,8 +18,7 @@ The **ParentObjectCheckLock** rule specifies that the driver should call [**WdfW
 
 **Driver model: KMDF**
 
-How to test
------------
+## How to test
 
 <table>
 <colgroup>
@@ -45,8 +43,7 @@ Use the following steps to run an analysis of your code:
 </tbody>
 </table>
 
-Applies to
-----------
+## Applies to
 
 [**WdfSpinLockCreate**](/windows-hardware/drivers/ddi/wdfsync/nf-wdfsync-wdfspinlockcreate)
 [**WdfWaitLockCreate**](/windows-hardware/drivers/ddi/wdfsync/nf-wdfsync-wdfwaitlockcreate)

@@ -2,7 +2,6 @@
 title: Adding Extensible Switch Destination Port Data to a Packet
 description: Adding Extensible Switch Destination Port Data to a Packet
 ms.date: 04/20/2017
-ms.localizationpriority: medium
 ---
 
 # Adding Extensible Switch Destination Port Data to a Packet
@@ -16,13 +15,13 @@ This topic describes how Hyper-V extensible switch forwarding extensions can spe
 
 The following figure shows the data path for packet traffic through the extensible switch driver stack for NDIS 6.40 (Windows Server 2012 R2) and later. Both figures also show the data path for packet traffic to or from the network adapters that are connected to extensible switch ports.
 
-![flowchart showing the data path for packet traffic to or from the network adapters that are connected to extensible switch ports updated for ndis 6.40](images/vswitchteam2-ndis640.png)
+![flowchart showing the data path for packet traffic to or from the network adapters that are connected to extensible switch ports updated for ndis 6.40.](images/vswitchteam2-ndis640.png)
 
 The following figure shows the data path for packet traffic through the extensible switch driver stack for NDIS 6.30 (Windows Server 2012).
 
-![flowchart showing the data path for packet traffic to or from the network adapters that are connected to extensible switch ports](images/vswitchteam2.png)
+![flowchart showing the data path for packet traffic to or from the network adapters that are connected to extensible switch ports.](images/vswitchteam2.png)
 
-Each extensible switch destination port is specified by an [**NDIS\_SWITCH\_PORT\_DESTINATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_port_destination) element within the [**NDIS\_SWITCH\_FORWARDING\_DESTINATION\_ARRAY**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_forwarding_destination_array) structure. This array is contained in the out-of-band (OOB) forwarding context of the packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure. For more information on this context, see [Hyper-V Extensible Switch Forwarding Context](hyper-v-extensible-switch-forwarding-context.md).
+Each extensible switch destination port is specified by an [**NDIS\_SWITCH\_PORT\_DESTINATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_port_destination) element within the [**NDIS\_SWITCH\_FORWARDING\_DESTINATION\_ARRAY**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_forwarding_destination_array) structure. This array is contained in the out-of-band (OOB) forwarding context of the packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure. For more information on this context, see [Hyper-V Extensible Switch Forwarding Context](hyper-v-extensible-switch-forwarding-context.md).
 
 If a forwarding extension is bound and enabled in the extensible switch driver stack, it is responsible for determining the destination ports for every packet obtained from the extensible switch ingress data path, unless the packet is an NVGRE packet. For more information about this data path, see [Overview of the Hyper-V Extensible Switch Data Path](overview-of-the-hyper-v-extensible-switch-data-path.md). For more information about NVGRE packets, see [Hybrid Forwarding](hybrid-forwarding.md).
 
@@ -58,7 +57,7 @@ The forwarding extension must follow these guidelines when it determines destina
 
         When the extension calls [*GrowNetBufferListDestinations*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_grow_net_buffer_list_destinations), it sets the *NumberOfNewDestinations* parameter to the number of new destination ports to be added to the packet.
 
-        The extension also sets the *NetBufferLists* parameter to a pointer to the packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure.
+        The extension also sets the *NetBufferLists* parameter to a pointer to the packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure.
 
         **Note**  If there are available destination ports in the array, the extension should not call [*GrowNetBufferListDestinations*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_grow_net_buffer_list_destinations).
 
@@ -76,7 +75,7 @@ The forwarding extension must follow these guidelines when it determines destina
 
     1.  The extension initializes the destination port information for the packet in an extension-allocated [**NDIS\_SWITCH\_PORT\_DESTINATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_port_destination) structure.
 
-    2.  The extension calls [*AddNetBufferListDestination*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_add_net_buffer_list_destination) to commit the changes to the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure for the packet. The extension passes the address of the [**NDIS\_SWITCH\_PORT\_DESTINATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_port_destination) structure in the *Destination* parameter.
+    2.  The extension calls [*AddNetBufferListDestination*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_add_net_buffer_list_destination) to commit the changes to the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure for the packet. The extension passes the address of the [**NDIS\_SWITCH\_PORT\_DESTINATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_port_destination) structure in the *Destination* parameter.
 
         **Note**  The extension should not call the [*UpdateNetBufferListDestinations*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_update_net_buffer_list_destinations) function to commit the changes to a packet with only one destination port.
 
@@ -102,10 +101,10 @@ The forwarding extension must follow these guidelines when it determines destina
 
 -   If the number of destination ports is zero, the forwarding extension must call [**NdisMSendNetBufferListsComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsendnetbufferlistscomplete) to drop the packet. The extension must also call [*ReportFilteredNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_report_filtered_net_buffer_lists) to notify the extensible switch interface about the dropped packet.
 
-    **Note**  If the forwarding extension obtained a linked list of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures for multiple packets from the ingress data path, it should create a separate list of dropped packets. By doing this, the extension can call [**NdisMSendNetBufferListsComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsendnetbufferlistscomplete) and [*ReportFilteredNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_report_filtered_net_buffer_lists) just once.
+    **Note**  If the forwarding extension obtained a linked list of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures for multiple packets from the ingress data path, it should create a separate list of dropped packets. By doing this, the extension can call [**NdisMSendNetBufferListsComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsendnetbufferlistscomplete) and [*ReportFilteredNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_report_filtered_net_buffer_lists) just once.
 
 
 
 -   If the number of destination ports is greater than zero, the forwarding extension must call [**NdisFSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlists) to forward the packet over the ingress data path to the miniport edge of the extensible switch.
 
-    **Note**  If the forwarding extension obtained a linked list of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures for multiple packets from the ingress data path, it should create a separate list of forwarded packets. By doing this, the extension can call [**NdisFSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlists) just once to forward the list of packets. In addition, the extension should maintain separate lists to forward packets that have the same destination ports. For more information, see [Hyper-V Extensible Switch Send and Receive Flags](hyper-v-extensible-switch-send-and-receive-flags.md).
+    **Note**  If the forwarding extension obtained a linked list of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures for multiple packets from the ingress data path, it should create a separate list of forwarded packets. By doing this, the extension can call [**NdisFSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlists) just once to forward the list of packets. In addition, the extension should maintain separate lists to forward packets that have the same destination ports. For more information, see [Hyper-V Extensible Switch Send and Receive Flags](hyper-v-extensible-switch-send-and-receive-flags.md).
