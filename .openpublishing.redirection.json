@@ -2838,6 +2838,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/install/modifying-registry-values-in-a-device-s-software-key-.md",
+            "redirect_url": "/windows-hardware/drivers/install/opening-a-device-s-software-key",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/install/overview-of-digital-signatures-for-driver-installation.md",
             "redirect_URL": "/windows-hardware/drivers/install/driver-signing",
             "redirect_document_id": false

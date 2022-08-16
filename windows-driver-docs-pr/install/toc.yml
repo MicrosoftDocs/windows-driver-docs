@@ -868,8 +868,6 @@
     href: opening-a-device-s-hardware-key.md
   - name: "Opening a Device's Software Key"
     href: opening-a-device-s-software-key.md
-  - name: "Modifying Registry Values in a Device's Software Key"
-    href: modifying-registry-values-in-a-device-s-software-key-.md
   - name: "Enumerating Installed Device Setup Classes"
     href: enumerating-installed-device-setup-classes.md
   - name: "Opening Registry Keys for a Device Setup Class"

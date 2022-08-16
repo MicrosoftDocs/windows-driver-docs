@@ -106,7 +106,7 @@ To deprovision the system and opt-out of preproduction signing trust on the syst
     >[!NOTE]
     > If the validations are being performed on a HoloLens 2, the .pol policy files must also be removed from **S:/EFI/Microsoft/Boot/Policies.**
 
-2. Boot into the system’s UEFI menu and reconfigure Secure Boot keys to factory settings.
+2. Boot into the system's UEFI menu and reconfigure Secure Boot keys to factory settings.
 
 3. Reboot the system and run `EnableUefiSbTest.exe /dump`, which should return non-empty values for `PK`, `KEK`, `db` and `dbx` values indicating the keys were returned to factory state.
 
