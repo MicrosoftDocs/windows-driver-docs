@@ -145,7 +145,7 @@ Since this is an *m x n* MFT, there can be repercussions on input streaming pin'
 
 DTM handles [METransformInputStreamStateChanged](./metransforminputstreamstatechanged.md) notifications from Device MFT to change the mediatype and state on Device MFT input and Devproxy output under these conditions.
 
-### Preferred Output Mediatypes of Device MFT 
+### Preferred Output Mediatypes of Device MFT
 
 It is highly recommended that the Device MFT produce using NV12 format. YUY2 is the next best alternative. MJPEG and RGB media types are not recommended.
 
