@@ -44,7 +44,7 @@ In this topic, we will describe the process to attach to a QEMU Virtual Windows 
 
 ## Download and Install QEMU On Windows
 
-QEMU is a generic and open source machine emulator and virtualizer that causes dynamic translation. When QEMU is used as a machine emulator - it can run OS’s and programs made for one processor (such as an Arm64) on a different machine (a x64 PC). It can also can run/host virtual machines images for different OS's (Windows/Linux/Mac).
+QEMU is a generic and open source machine emulator and virtualizer that causes dynamic translation. When QEMU is used as a machine emulator - it can run OS’s and programs made for one processor (such as an Arm64) on a different machine (a x64 PC). It can also run/host virtual machines images for different OS's (Windows/Linux/Mac).
 
 QEMU can use other hypervisors like KVM to use CPU extensions (HVM) for virtualization. When QEMU is used as a virtualizer, QEMU achieves near native performances by executing the guest code directly on the host CPU. QEMU can take advantage of OS hypervisor features to offload CPU and MMU emulation to real hardware.
 
