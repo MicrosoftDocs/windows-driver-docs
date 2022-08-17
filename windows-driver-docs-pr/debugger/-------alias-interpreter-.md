@@ -32,7 +32,7 @@ A dollar sign followed by a pair of braces ( **${ }** ) evaluates to a variety o
 Specifies the name of the alias to be expanded or evaluated. *Alias* must be a user-named alias or the *Variable* value used by the [**.foreach**](-foreach.md) token.
 
 <span id="_d"></span><span id="_D"></span>**/d**  
-Evaluates to one or zero depending on whether the alias is currently defined. If the alias is defined, **${/v:**<em>Alias</em>**}** is replaced by 1; if the alias is not defined, **${/v:**<em>Alias</em>**}** is replaced by 0.
+Evaluates to one or zero depending on whether the alias is currently defined. If the alias is defined, **${/d:**<em>Alias</em>**}** is replaced by 1; if the alias is not defined, **${/d:**<em>Alias</em>**}** is replaced by 0.
 
 <span id="_f"></span><span id="_F"></span>**/f**  
 Evaluates to the alias equivalent if the alias is currently defined. If the alias is defined, **${/f:**<em>Alias</em>**}** is replaced by the alias equivalent; if the alias is not defined, **${/f:**<em>Alias</em>**}** is replaced by an empty string.
