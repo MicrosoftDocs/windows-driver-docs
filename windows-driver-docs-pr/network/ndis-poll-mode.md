@@ -140,21 +140,21 @@ MiniportIsr(
 
 ## Implementing the Poll iteration handler
 
-NDIS invokes the miniport driver's [*NdisPoll*](/windows-hardware/drivers/ddi/poll/nc-poll-ndis_poll) callback to poll for receive indications and send completions. NDIS first invokes *NdisPoll* when the driver calls [**NdisRequestPoll**](nf-poll-ndisrequestpoll.md) to queue a Poll object.
+NDIS invokes the miniport driver's [*NdisPoll*](/windows-hardware/drivers/ddi/poll/nc-poll-ndis_poll) callback to poll for receive indications and send completions. NDIS first invokes *NdisPoll* when the driver calls [**NdisRequestPoll**](/windows-hardware/drivers/ddi/poll/nf-poll-ndisrequestpoll) to queue a Poll object.
 NDIS will keep invoking *NdisPoll* while the driver is making forward progress on receive indications or transmit completions. 
 
 For receive indications, the driver should do the following in *NdisPoll*:
-1. Check the **receive** parameter of the [**NDIS_POLL_DATA**](ns-poll-ndis_poll_data.md) structure to get the maximum number of NBLs it can indicate.
+1. Check the **receive** parameter of the [**NDIS_POLL_DATA**](/windows-hardware/drivers/ddi/poll/ns-poll-ndis_poll_data) structure to get the maximum number of NBLs it can indicate.
 1. Fetch up to the maximum number of Rx packets.
 1. Initialize the NBLs.
-1. Add them to the NBL queue provided by the [**NDIS_POLL_RECEIVE_DATA**](ns-poll-ndis_poll_receive_data.md) structure (located in the [**NDIS_POLL_DATA**](ns-poll-ndis_poll_data.md) structure of the *NdisPoll* **PollData** parameter). 
+1. Add them to the NBL queue provided by the [**NDIS_POLL_RECEIVE_DATA**](/windows-hardware/drivers/ddi/poll/ns-poll-ndis_poll_receive_data) structure (located in the [**NDIS_POLL_DATA**](/windows-hardware/drivers/ddi/poll/ns-poll-ndis_poll_data) structure of the *NdisPoll* **PollData** parameter). 
 1. Exit the callback. 
 
 For transmit completions, the driver should do the following in *NdisPoll*:
-1. Check the **transmit** parameter of the [**NDIS_POLL_DATA**](ns-poll-ndis_poll_data.md) structure to get the maximum number of NBLs it can complete.
+1. Check the **transmit** parameter of the [**NDIS_POLL_DATA**](/windows-hardware/drivers/ddi/poll/ns-poll-ndis_poll_data) structure to get the maximum number of NBLs it can complete.
 1. Fetch up to the maximum number of Tx packets. 
 1. Complete the NBLs.
-1. Add them to the NBL queue provided by the [**NDIS_POLL_TRANSMIT_DATA**](ns-poll-ndis_poll_transmit_data.md) structure (located in the [**NDIS_POLL_DATA**](ns-poll-ndis_poll_data.md) structure of the *NdisPoll* **PollData** parameter).
+1. Add them to the NBL queue provided by the [**NDIS_POLL_TRANSMIT_DATA**](/windows-hardware/drivers/ddi/poll/ns-poll-ndis_poll_transmit_data) structure (located in the [**NDIS_POLL_DATA**](/windows-hardware/drivers/ddi/poll/ns-poll-ndis_poll_data) structure of the *NdisPoll* **PollData** parameter).
 1. Exit the callback. 
 
 The driver shouldn't enable the Poll object's interrupt before exiting the *NdisPoll* function. NDIS will keep polling the driver until it assesses that no forward progress is being made. At this point NDIS will stop polling and ask the driver to [re-enable the interrupt](#managing-interrupts).
@@ -198,7 +198,7 @@ NdisPoll(
 
 ## Managing interrupts
 
-Miniport drivers implement the [*NdisSetPollNotification*](/windows-hardware/drivers/ddi/poll/nc-poll-ndis_set_poll_notification) callback to enable or disable the interrupt associated with a Poll object. NDIS typically invokes the *NdisSetPollNotification* callback when it detects that the miniport driver is not making forward progress in [*NdisPoll*](/windows-hardware/drivers/ddi/poll/nc-poll-ndis_poll). NDIS uses *NdisSetPollNotification* to tell the driver that it will stop invoking *NdisPoll*. The driver should invoke [**NdisRequestPoll**](nf-poll-ndisrequestpoll.md) when new work is ready to be processed.
+Miniport drivers implement the [*NdisSetPollNotification*](/windows-hardware/drivers/ddi/poll/nc-poll-ndis_set_poll_notification) callback to enable or disable the interrupt associated with a Poll object. NDIS typically invokes the *NdisSetPollNotification* callback when it detects that the miniport driver is not making forward progress in [*NdisPoll*](/windows-hardware/drivers/ddi/poll/nc-poll-ndis_poll). NDIS uses *NdisSetPollNotification* to tell the driver that it will stop invoking *NdisPoll*. The driver should invoke [**NdisRequestPoll**](/windows-hardware/drivers/ddi/poll/nf-poll-ndisrequestpoll) when new work is ready to be processed.
 
 Here's how a driver might implement *NdisSetPollNotification* for a receive queue flow.
 
