@@ -23,12 +23,14 @@ Methods for managing product submissions
 | GET | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/preprod/packages/{packageId}/assets/{assetId}/download` | Download an asset for a given preprod submission |
 
 Package Metadata Resource
+
 | ID | Unique identifier of the package |
 |:--|:--|
 | signingStatus | <ul><li> NotStarted</li><li> Processing</li><li> Succeeded</li><li> Failed</li></ul> |
 | Error | Errors encountered during package processing |
 
 Asset Metadata Resource
+
 | ID | Unique identifier of the asset |
 |:--|:--|
 | packageID | Identifier of the package that this asset belongs to |
