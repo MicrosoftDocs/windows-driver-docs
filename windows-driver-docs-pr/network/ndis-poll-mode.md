@@ -3,7 +3,7 @@ title: NDIS Poll Mode
 description: Introduction to NDIS Poll Mode
 keywords:
 - NDIS Poll Mode
-ms.date: 05/28/2021
+ms.date: 08/17/2022
 ms.localizationpriority: medium
 ---
 
@@ -19,7 +19,7 @@ Poll Mode gives the OS more flexibility when making scheduling decisions and mov
 1. A mechanism for the OS to exert back pressure on the NIC. 
 2. A mechanism for the OS to finely control interrupts. 
 
-NDIS Poll Mode is available to NDIS 6.0 and later miniport drivers.
+NDIS Poll Mode is available to NDIS 6.85 and later miniport drivers.
 
 ### The DPC model
 The following sequence diagram illustrates a typical example of how an NDIS miniport driver handles a burst of Rx packets using a DPC. In this example the hardware is standard in terms of PCIe NICs. It has a receive hardware queue and an interrupt mask for that queue. 

@@ -428,6 +428,8 @@
           href: sending-data-from-a-miniport-driver.md
         - name: "Canceling a Send Request in a Miniport Driver"
           href: canceling-a-send-request-in-a-miniport-driver.md
+        - name: "NDIS Poll Mode"
+          href: ndis-poll-mode.md
         - name: "Indicating Received Data from a Miniport Driver"
           href: indicating-received-data-from-a-miniport-driver.md
       - name: "Managing Interrupts"
@@ -440,8 +442,6 @@
           href: synchronizing-with-interrupts.md
         - name: "Interrupt Moderation"
           href: interrupt-moderation.md
-      - name: "NDIS Poll Mode"
-        href: ndis-poll-mode.md
       - name: "Miniport Adapter OIDs"
         items: 
         - name: "Miniport Adapter OID Requests"
