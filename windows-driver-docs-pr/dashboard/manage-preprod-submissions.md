@@ -25,14 +25,14 @@ Methods for managing product submissions
 Package Metadata Resource
 | ID | Unique identifier of the package |
 |:--|:--|
-| signingStatus | <ul><li> - NotStarted</li><li> - Processing</li><li> - Succeeded</li><li> – Failed</li></ul> |
+| signingStatus | <ul><li> NotStarted</li><li> Processing</li><li> Succeeded</li><li> Failed</li></ul> |
 | Error | Errors encountered during package processing |
 
 Asset Metadata Resource
 | ID | Unique identifier of the asset |
 |:--|:--|
 | packageID | Identifier of the package that this asset belongs to |
-| assetType | The type of asset available for download. Possible values are: <ul><li> - “SignedFilesZip”: package signed by Microsoft.</li></ul> |
+| assetType | The type of asset available for download. Possible values are: <ul><li> “SignedFilesZip”: package signed by Microsoft.</li></ul> |
 | contentHash | SHA-256 hash of the content |
 
 ## Create and submit a product for signing
