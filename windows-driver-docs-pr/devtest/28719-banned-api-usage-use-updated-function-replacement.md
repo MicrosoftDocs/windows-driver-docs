@@ -1,23 +1,26 @@
 ---
 title: C28719 warning
 description: Warning C28719 Banned API Usage.
-ms.date: 04/20/2017
+ms.date: 08/18/2022
 f1_keywords: 
-  - "C28719"
+  - "C28719", "BANNED_API_USAGE", "__WARNING_BANNED_API_USAGE"
 ---
+# Warning C28719
 
-# C28719
-
-
-**Warning C28719: Banned API Usage (BANNED_API_USAGE)**\
-Example output: ```Banned API Usage:  *function name* is insecure and has been marked deprecated.```
+> Banned API Usage:  *function name* is insecure and has been marked deprecated.
 
 This warning indicates that a function is being used that has been banned and has a more robust or secure replacement.
-A list of all banned functions covered by this error, why they are banned, and recommended replacements can be found after the following example: 
+
+## Remarks
+
+A list of all banned functions covered by this error, why they are banned, and recommended replacements can be found after the following example.
+
+Code analysis name: BANNED_API_USAGE
 
 ## Example 
 
 The following code generates this warning: 
+
 ```cpp
 void example_func(PSTR src) 
 { 
@@ -25,7 +28,7 @@ void example_func(PSTR src)
     strcpy(dst, src);
 } 
 ```
-This is due to the use of the unsafe function strcpy.
+This issue stems from the use of the unsafe function strcpy.
 strcpy does not check if the destination buffer is large enough to fit the source data.
 To fix this issue, we can use strcpy_s, C++11’s safer replacement to this function.
 strcpy_s has a third parameter (the size of the destination buffer) to ensure only that many bytes are copied.
@@ -37,6 +40,7 @@ void example_func(PSTR src)
     strcpy_s(dst, sizeof(dst), src); 
 }
 ```
+
 ## Banned Functions  
 _NOTE: This list is actively being updated and improved_
 
