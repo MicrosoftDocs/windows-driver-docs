@@ -4,7 +4,7 @@ description: Using Static tools and CodeQL on Windows driver source code to disc
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 05/06/2022
+ms.date: 05/06/2022 
 ---
 
 # CodeQL and the Static Tools Logo Test
