@@ -310,6 +310,8 @@
       href: update-submission-data.md
     - name: "Update product data"
       href: update-product-data.md
+    - name: "Manage preproduction signing submissions"
+      href: manage-preprod-submissions.md
   - name: "APIs to get shipping label data"
     items: 
     - name: "Get shipping label data"

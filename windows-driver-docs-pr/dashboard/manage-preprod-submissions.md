@@ -22,6 +22,21 @@ Methods for managing product submissions
 | GET | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/preprod/packages/{packageId}/assets/{assetId}` | Get asset metadata for a single asset |
 | GET | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/preprod/packages/{packageId}/assets/{assetId}/download` | Download an asset for a given preprod submission |
 
+Package Metadata Resource
+
+| ID | Unique identifier of the package |
+|:--|:--|
+| signingStatus | <ul><li> NotStarted</li><li> Processing</li><li> Succeeded</li><li> Failed</li></ul> |
+| Error | Errors encountered during package processing |
+
+Asset Metadata Resource
+
+| ID | Unique identifier of the asset |
+|:--|:--|
+| packageID | Identifier of the package that this asset belongs to |
+| assetType | The type of asset available for download. Possible values are: <ul><li> “SignedFilesZip”: package signed by Microsoft.</li></ul> |
+| contentHash | SHA-256 hash of the content |
+
 ## Create and submit a product for signing
 
 1. If you have not done so already, complete all the [prerequisites](dashboard-api.md) for the Microsoft Hardware APIs.
@@ -82,7 +97,7 @@ Methods for managing product submissions
     ```
 
 
-5. Download your preprod signed package by using the following method to download an asset] once **signingStatus** is **Succeeded**. Use the id for the signed asset from the metadata retrieved in step 4 as your assetId in the request. The downloaded package will include the signed driver files as a zip. 
+5. Download your preprod signed package by using the following method to download an asset once **signingStatus** is **Succeeded**. Use the id for the signed asset from the metadata retrieved in step 4 as your assetId in the request. The downloaded package will include the signed driver files as a zip. 
     ```
     GET https://manage.devcenter.microsoft.com/v2.0/my/hardware/preprod/packages/{packageId}/assets/{assetId}/download
     ```
