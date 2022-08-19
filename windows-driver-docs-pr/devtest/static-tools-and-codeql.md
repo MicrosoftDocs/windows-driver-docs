@@ -4,7 +4,7 @@ description: Using Static tools and CodeQL on Windows driver source code to disc
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 05/06/2022
+ms.date: 08/18/2022
 ---
 
 # CodeQL and the Static Tools Logo Test
@@ -352,14 +352,14 @@ The queries that Microsoft recommends running on *all* driver source code are:
 | [cpp/comparison-with-wider-type](https://codeql.github.com/codeql-query-help/cpp/cpp-comparison-with-wider-type/)   | *cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql* | [CWE-190](https://cwe.mitre.org/data/definitions/190.html), [CWE-197](https://cwe.mitre.org/data/definitions/197.html), [CWE-835](https://cwe.mitre.org/data/definitions/835.html) |
 | [cpp/suspicious-add-sizeof](https://codeql.github.com/codeql-query-help/cpp/cpp-suspicious-add-sizeof/)   | *cpp/ql/src/Security/CWE/CWE-468/SuspiciousAddWithSizeof.ql* | [CWE-468](https://cwe.mitre.org/data/definitions/468.html) |
 | [cpp/potentially-dangerous-function](https://codeql.github.com/codeql-query-help/cpp/cpp-potentially-dangerous-function/)   | *cpp/ql/src/Security/CWE/CWE-676/PotentiallyDangerousFunction.ql* | [CWE-676](https://codeql.github.com/codeql-query-help/cpp/cpp-potentially-dangerous-function/)
-| [cpp/incorrect-not-operator-usage](https://codeql.github.com/codeql-standard-libraries/cpp/Likely%20Bugs/Likely%20Typos/IncorrectNotOperatorUsage.ql/module.IncorrectNotOperatorUsage.html)   | *cpp/ql/src/Likely Bugs/Likely Typos/IncorrectNotOperatorUsage.ql* | [CWE-480](https://cwe.mitre.org/data/definitions/480.html) |
+| [cpp/incorrect-not-operator-usage](https://github.com/github/codeql/blob/main/cpp/ql/src/Likely%20Bugs/Likely%20Typos/IncorrectNotOperatorUsage.qhelp)   | *cpp/ql/src/Likely Bugs/Likely Typos/IncorrectNotOperatorUsage.ql* | [CWE-480](https://cwe.mitre.org/data/definitions/480.html) |
 | [cpp/offset-use-before-range-check](https://github.com/github/codeql/blob/main/cpp/ql/src/Best%20Practices/Likely%20Errors/OffsetUseBeforeRangeCheck.qhelp)  | *cpp/ql/src/Best Practices/Likely Errors/OffsetUseBeforeRangeCheck.ql*   | N/A |
 | [cpp/suspicious-add-sizeof](https://codeql.github.com/codeql-query-help/cpp/cpp-suspicious-add-sizeof/)   | *cpp/ql/src/Likely Bugs/Memory Management/SuspiciousSizeof.ql* | [CWE-468](https://codeql.github.com/codeql-query-help/cpp/cpp-suspicious-add-sizeof/) |
-| [cpp/uninitialized-local](https://codeql.github.com/codeql-standard-libraries/cpp/Likely%20Bugs/Memory%20Management/UninitializedLocal.ql/module.UninitializedLocal.html)   | *cpp/ql/src/Likely Bugs/Memory Management/UninitializedLocal.ql* | [CWE-457](https://cwe.mitre.org/data/definitions/457.html), [CWE-665](https://cwe.mitre.org/data/definitions/665.html) |
-| [cpp/unterminated-variadic-call](https://codeql.github.com/codeql-standard-libraries/cpp/Security/CWE/CWE-121/UnterminatedVarargsCall.ql/module.UnterminatedVarargsCall.html)   | *cpp/ql/src/Security/CWE/CWE-121/UnterminatedVarargsCall.ql* | [CWE-121](https://cwe.mitre.org/data/definitions/121.html) |
+| [cpp/uninitialized-local](https://github.com/github/codeql/blob/main/cpp/ql/src/Likely%20Bugs/Memory%20Management/UninitializedLocal.qhelp)   | *cpp/ql/src/Likely Bugs/Memory Management/UninitializedLocal.ql* | [CWE-457](https://cwe.mitre.org/data/definitions/457.html), [CWE-665](https://cwe.mitre.org/data/definitions/665.html) |
+| [cpp/unterminated-variadic-call](https://github.com/github/codeql/tree/main/cpp/ql/src/Security/CWE/CWE-121)   | *cpp/ql/src/Security/CWE/CWE-121/UnterminatedVarargsCall.ql* | [CWE-121](https://cwe.mitre.org/data/definitions/121.html) |
 | [cpp/suspicious-pointer-scaling](https://github.com/github/codeql/blob/main/cpp/ql/src/Security/CWE/CWE-468/IncorrectPointerScalingChar.qhelp)   | *cpp/ql/src/Security/CWE/CWE-468/IncorrectPointerScaling.ql* | [CWE-468](https://cwe.mitre.org/data/definitions/468.html) |
 | [cpp/suspicious-pointer-scaling-void](https://github.com/github/codeql/blob/main/cpp/ql/src/Security/CWE/CWE-468/IncorrectPointerScalingVoid.qhelp)   | *cpp/ql/src/Security/CWE/CWE-468/IncorrectPointerScalingVoid.ql* | [CWE-468](https://cwe.mitre.org/data/definitions/468.html) |
-| [cpp/conditionally-uninitialized-variable](https://codeql.github.com/codeql-standard-libraries/cpp/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql/module.ConditionallyUninitializedVariable.html)   | *cpp/ql/src/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql.* | [CWE-457](https://cwe.mitre.org/data/definitions/457.html) |
+| [cpp/conditionally-uninitialized-variable](https://github.com/github/codeql/tree/main/cpp/ql/src/Security/CWE/CWE-457)   | *cpp/ql/src/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql.* | [CWE-457](https://cwe.mitre.org/data/definitions/457.html) |
 | [cpp/use-after-free](./codeql-windows-driver-useafterfree.md)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Likely Bugs/Memory Management/UseAfterFree\UseAfterFree.ql* | N/A |
 | [cpp/windows/wdk/deprecated-api](./codeql-windows-driver-wdkdeprecatedapi.md)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Windows/wdk/wdk-deprecated-api.ql* | N/A |
 | [Likely Bugs/Boundary Violations/PaddingByteInformationDisclosure.ql](./codeql-windows-driver-padding-byte-information-disclosure.md)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Likely Bugs/Boundary Violations/PaddingByteInformationDisclosure.ql* | N/A |

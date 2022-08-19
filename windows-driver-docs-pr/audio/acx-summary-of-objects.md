@@ -33,13 +33,13 @@ An audio endpoint in the ACX frameworks is a collection of one or more ACX circu
 
 - An AcxCircuit has a dedicated WDF queue. For more information about WDF queues, see [Framework Queue Objects](/windows-hardware/drivers/wdf/framework-queue-objects).
 
-The DDIs for ACX circuits are described in the [acxcircuit.h](/windows-hardware/drivers/ddi/_audio/acxcircuit) header.
+The DDIs for ACX circuits are described in the [acxcircuit.h](/windows-hardware/drivers/ddi/acxcircuit) header.
 
 ## ACX Pin
 
 Just as in WDM Portcls audio drivers, and AcxPin object represent the logical connections (not physical connections) through which data streams enter the adapter from the system communications bus or enter the system communications bus from the adapter. 
 
-The DDIs for Pin are described in the [acxpin.h](/windows-hardware/drivers/ddi/_audio/acxpin/) header.
+The DDIs for Pin are described in the [acxpin.h](/windows-hardware/drivers/ddi/acxpin/) header.
 
 ## ACX Stream
 

@@ -1,7 +1,7 @@
 ---
 title: ACX Audio multi stack cross driver communications
 description: This topic provides a high level summary of the multi stack cross driver communications.
-ms.date: 07/28/2022
+ms.date: 08/17/2022
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +46,7 @@ Drivers use [AcxTargetCircuit](/windows-hardware/drivers/ddi/acxtargets/) to com
 
 Drivers use [AcxTargetPin](/windows-hardware/drivers/ddi/acxpin/) to communicate with a remote circuit’s pin exposed by a different stack. AcxTargetPin is implemented using a WdfIoTarget to send messages to the remote pin entity.
 
-Drivers use [AcxTargetStream](/windows-hardware/drivers/ddi/acxstream/) to communicate with a remote circuit’s stream exposed by a different stack. AcxTargetStream is implemented using a WdfIoTarget to create a remote stream and change the state of the remote stream.
+Drivers use [AcxTargetStream](/windows-hardware/drivers/ddi/acxstreams/) to communicate with a remote circuit’s stream exposed by a different stack. AcxTargetStream is implemented using a WdfIoTarget to create a remote stream and change the state of the remote stream.
 
 Drivers use [AcxTargetElement](/windows-hardware/drivers/ddi/acxtargets/) to communicate with a remote circuit’s element exposed by a different stack. AcxTargetElement is implemented using a WdfIoTarget to send messages to the remote element entity.
 
