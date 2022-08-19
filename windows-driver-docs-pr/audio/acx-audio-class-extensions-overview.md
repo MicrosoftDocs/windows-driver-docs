@@ -14,7 +14,7 @@ This topic provides a high level summary of the ACX Audio Class Extensions.
 
 ### ACX framework is built on top of the Windows Driver Framework
 
-To allow audio drivers to be more reliable and offer the best possible experience for PC users, Audio Class eXtension (ACX) is now available in early preview. ACX defines a new Windows Driver Framework (WDF) class extension for the audio domain. For more information about WDF see [Introduction to Framework Objects](/windows-hardware/drivers/wdf/introduction-to-framework-objects). Many WDF concepts such as WDF IO targets, are available in ACX. For more information about WDF IO targets, see [Introduction to I/O Targets](/windows-hardware/drivers/wdf/introduction-to-i-o-targets). 
+To allow audio drivers to be more reliable and offer the best possible experience for PC users, Audio Class eXtension (ACX) is now available in early preview. ACX defines a new Windows Driver Framework (WDF) class extension for the audio domain. For more information about WDF see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md). Many WDF concepts such as WDF IO targets, are available in ACX. For more information about WDF IO targets, see [Introduction to I/O Targets](../wdf/introduction-to-i-o-targets.md). 
 
 ACX is built using the Kernel Mode Driver Framework (KMDF) and not the User Mode Driver Framework (UMDF) to avoid any latency associated with task-switching multiple times from User to Kernel mode while streaming. Portcls audio drivers, the current legacy model, are WDM, kernel mode based drivers.
 
@@ -79,11 +79,11 @@ Software tracing for drivers is usually based on Event Tracing for Windows (ETW)
 
 Because ETW can be somewhat complicated to use, most driver developers use the Windows software trace preprocessor (WPP), which simplifies and enhances the process of instrumenting a driver for ETW tracing.
 
-ACX uses WPP logs for tracing and debugging. For more information, see [Using WPP Software Tracing in KMDF Drivers](/windows-hardware/drivers/wdf/using-wpp-software-tracing-in-kmdf-drivers) and [Adding WPP Software Tracing to a Windows Driver](/windows-hardware/drivers/devtest/adding-wpp-software-tracing-to-a-windows-driver).
+ACX uses WPP logs for tracing and debugging. For more information, see [Using WPP Software Tracing in KMDF Drivers](../wdf/using-wpp-software-tracing-in-kmdf-drivers.md) and [Adding WPP Software Tracing to a Windows Driver](../devtest/adding-wpp-software-tracing-to-a-windows-driver.md).
 
 ### In-Flight recorder (IFR)
 
-In-Flight recorder (IFR) is supported and can be viewed via WDFKD, RCDRKD or with the ACXKD debugger extension when it is available. For general information working with IFR logs, see [Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers](/windows-hardware/drivers/devtest/using-wpp-recorder) and [Video: Accessing driver IFR logs without a debugger](/windows-hardware/drivers/wdf/video--accessing-driver-ifr-logs-without-a-debugger)
+In-Flight recorder (IFR) is supported and can be viewed via WDFKD, RCDRKD or with the ACXKD debugger extension when it is available. For general information working with IFR logs, see [Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers](../devtest/using-wpp-recorder.md) and [Video: Accessing driver IFR logs without a debugger](../wdf/video--accessing-driver-ifr-logs-without-a-debugger.md)
 
 ACX logs key events using other ETW providers to simplify the visualization of these special events. 
 
@@ -123,7 +123,7 @@ To improve the reliability of your ACX driver consider the following behaviors f
 
 ### Using the WMI Tracing debugger extensions
 
-To view trace events in the debugger, use the WMI extension, Wmitrace.dll. It contains a library of functions designed to control and view WMI event tracing. For more information, see [WMI Tracing Extensions (Wmitrace.dll)](/windows-hardware/drivers/debugger/wmi-tracing-extensions--wmitrace-dll-).
+To view trace events in the debugger, use the WMI extension, Wmitrace.dll. It contains a library of functions designed to control and view WMI event tracing. For more information, see [WMI Tracing Extensions (Wmitrace.dll)](../debugger/wmi-tracing-extensions--wmitrace-dll-.md).
 
  
 ## ACX driver debugging
@@ -132,19 +132,19 @@ ACX drivers are WDF drivers, so the debugging techniques described for WDF drive
 
 #### General information about the debugging tools
 
-[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](/windows-hardware/drivers/debugger/)
+[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](../debugger/index.md)
 
 #### KMDF debugging 
 
-- [Summary of Debugger Extensions in Wdfkd.dll](/windows-hardware/drivers/wdf/debugger-extensions-for-kmdf-drivers)
+- [Summary of Debugger Extensions in Wdfkd.dll](../wdf/debugger-extensions-for-kmdf-drivers.md)
 
 - This walk through uses the traditional Sysvad audio driver, but illustrates some techniques that may be help to ACX drivers. 
-[Debug Drivers - Step by Step Lab (Sysvad Kernel Mode)](/windows-hardware/drivers/debugger/debug-universal-drivers--kernel-mode-)
+[Debug Drivers - Step by Step Lab (Sysvad Kernel Mode)](../debugger/debug-universal-drivers--kernel-mode-.md)
 
 #### Video Walkthroughs
 
-- [Video: Debugging your driver with WDF source code](/windows-hardware/drivers/wdf/video--debugging-your-driver-with-wdf-source-code)
-- [Video Series: Debugging Kernel-Mode Driver Framework Drivers](/windows-hardware/drivers/wdf/debugging-kernel-mode-driver-framework-drivers)
+- [Video: Debugging your driver with WDF source code](../wdf/video--debugging-your-driver-with-wdf-source-code.md)
+- [Video Series: Debugging Kernel-Mode Driver Framework Drivers](../wdf/debugging-kernel-mode-driver-framework-drivers.md)
 
 #### ACX kernel debugger extension library (AcxKd.dll)
 
@@ -155,7 +155,7 @@ To aid debugging, ACX has a companion kernel debugger extension library (AcxKd.d
 
 ## Driver Verifier
 
-The use of driver verifier is encouraged for all Windows drivers, including ACX drivers. Use driver verifier to surface latent errors, decrease the power consumption and increase the reliability of your driver. For more information, see [Driver Verifier](/windows-hardware/drivers/devtest/driver-verifier).
+The use of driver verifier is encouraged for all Windows drivers, including ACX drivers. Use driver verifier to surface latent errors, decrease the power consumption and increase the reliability of your driver. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
 
 
 ## ACX Multi-stack driver standardized cross communications

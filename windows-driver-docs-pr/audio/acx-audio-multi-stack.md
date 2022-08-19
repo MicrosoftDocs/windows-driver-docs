@@ -78,7 +78,7 @@ ACX Drivers are WDF Drivers, which means that the synchronization of ACX Drivers
 - Object presentation lock for device objects and I/O queues.
 - Automatic serialization of Plug and Play and power callbacks.
 
-For an in-depth description of Synchronization and Serialization, see [Using Automatic Synchronization](/windows-hardware/drivers/wdf/using-automatic-synchronization). For a more complete explanation, see the [Developing Drivers with Windows Driver Foundation](/windows-hardware/drivers/wdf/developing-drivers-with-wdf) Microsoft Press Book.  
+For an in-depth description of Synchronization and Serialization, see [Using Automatic Synchronization](../wdf/using-automatic-synchronization.md). For a more complete explanation, see the [Developing Drivers with Windows Driver Foundation](../wdf/developing-drivers-with-wdf.md) Microsoft Press Book.  
 
 WDF supports the following synchronization scopes:
 
@@ -97,7 +97,7 @@ For historical reference, the original PortCls uses a synchronization scope like
 
 ##	IRP/Request Dispatching
 
-An ACX client specifies an action via a driver request (IRP). For general information about IRPs, see, [I/O request packets](/windows-hardware/drivers/gettingstarted/i-o-request-packets) and [Packet-Driven I/O with Reusable IRPs](/windows-hardware/drivers/kernel/packet-driven-i-o-with-reusable-irps). 
+An ACX client specifies an action via a driver request (IRP). For general information about IRPs, see, [I/O request packets](../gettingstarted/i-o-request-packets.md) and [Packet-Driven I/O with Reusable IRPs](../kernel/packet-driven-i-o-with-reusable-irps.md). 
 
 The client sends this request to a circuit/pin/element/stream by using the circuit or stream handle. The request ID is a triplet: 
 
@@ -579,4 +579,3 @@ This example code shows the use of AcxTargetElement to communicate with a circui
 [ACX Audio Class Extensions Overview](acx-audio-class-extensions-overview.md) 
 
 [Summary of ACX Objects](acx-summary-of-objects.md)
-

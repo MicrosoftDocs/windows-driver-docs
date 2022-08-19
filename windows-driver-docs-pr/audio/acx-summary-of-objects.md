@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 This topic provided a high level summary of Audio Class Extensions (ACX) Objects that form the base of an ACX audio driver. For a general overview of ACX, see [ACX Audio Class Extensions Overview](acx-audio-class-extensions-overview.md).
 
-ACX objects are Windows Driver Framework (WDF) objects - WDFOBJECT. For more information about WDF see [Introduction to Framework Objects](/windows-hardware/drivers/wdf/introduction-to-framework-objects). For a summary of WDF objects see [Summary of Framework Objects](/windows-hardware/drivers/wdf/summary-of-framework-objects).
+ACX objects are Windows Driver Framework (WDF) objects - WDFOBJECT. For more information about WDF see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md). For a summary of WDF objects see [Summary of Framework Objects](../wdf/summary-of-framework-objects.md).
 
 
 ## ACX Object Hierarchy
@@ -31,7 +31,7 @@ An audio endpoint in the ACX frameworks is a collection of one or more ACX circu
 
 - An AcxCircuit may have one or more streams.
 
-- An AcxCircuit has a dedicated WDF queue. For more information about WDF queues, see [Framework Queue Objects](/windows-hardware/drivers/wdf/framework-queue-objects).
+- An AcxCircuit has a dedicated WDF queue. For more information about WDF queues, see [Framework Queue Objects](../wdf/framework-queue-objects.md).
 
 The DDIs for ACX circuits are described in the [acxcircuit.h](/windows-hardware/drivers/ddi/acxcircuit) header.
 
@@ -45,7 +45,7 @@ The DDIs for Pin are described in the [acxpin.h](/windows-hardware/drivers/ddi/a
 
 An AcxStream represents an audio stream on a specific circuit’s hardware.  An AcxStream may aggregate one or more AcxElements-like objects. By default, AcxElements are ‘connected’ in the same order of assembly. An AcxStream is associated with only one ACX circuit. 
 
-- An AcxStream has a dedicated WDF queue.  For more information about WDF queues, see [Framework Queue Objects](/windows-hardware/drivers/wdf/framework-queue-objects)
+- An AcxStream has a dedicated WDF queue.  For more information about WDF queues, see [Framework Queue Objects](../wdf/framework-queue-objects.md)
 - An AcxStream support different states. These states indicate when audio is flowing (RUN state) or not flowing (PAUSE or STOP state).
 - Currently ACX supports two types of streams: basic ACX stream objects used by non-streaming circuits, and ACX RT stream objects used by streaming circuits.
 
@@ -53,7 +53,7 @@ The DDIs for stream are defined in the [acxstreams.h](/windows-hardware/drivers/
 
 ## ACX Targets
 
-WdfIoTarget is a WDF abstraction to facilitate the communication between two different stacks. For more information about WDF IO targets, see [Introduction to I/O Targets](/windows-hardware/drivers/wdf/introduction-to-i-o-targets). 
+WdfIoTarget is a WDF abstraction to facilitate the communication between two different stacks. For more information about WDF IO targets, see [Introduction to I/O Targets](../wdf/introduction-to-i-o-targets.md). 
 
 - Drivers use AcxTargetCircuit to communicate with a remote circuit exposed by a different stack. AcxTargetCircuit is implemented using a WdfIoTarget.
 - Drivers use AcxTargetPin to communicate with a remote circuit’s pin exposed by a different stack. AcxTargetPin is implemented using a WdfIoTarget to send messages to the remote pin entity.

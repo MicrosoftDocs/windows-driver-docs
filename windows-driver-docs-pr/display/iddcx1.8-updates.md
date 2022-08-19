@@ -14,7 +14,7 @@ keywords:
 
 # Updates for IddCx versions 1.8 and later
 
-This page describes the changes made in IddCx 1.8. A single indirect display driver (IDD) binary built against IddCx 1.8 can run on Windows 10, version 1803 and above using runtime checks to verify whether DDI changes in IddCx 1.8 are available on that system. See [Building a WDF driver for multiple versions of Windows](/windows-hardware/drivers/wdf/building-a-wdf-driver-for-multiple-versions-of-windows) for more info.
+This page describes the changes made in IddCx 1.8. A single indirect display driver (IDD) binary built against IddCx 1.8 can run on Windows 10, version 1803 and above using runtime checks to verify whether DDI changes in IddCx 1.8 are available on that system. See [Building a WDF driver for multiple versions of Windows](../wdf/building-a-wdf-driver-for-multiple-versions-of-windows.md) for more info.
 
 ## Updated IddCxGetVersion version
 
