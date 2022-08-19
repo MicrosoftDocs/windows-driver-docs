@@ -12,7 +12,7 @@ f1_keywords:
 **Warning C30029: Banned Mem Allocation NoType (BANNED\_MEM\_ALLOCATION\_NOTYPE)**\
 Example output: ```Warning: Calling a memory allocating function which requests executable memory```
 
-This warning indicates that a function is being used that has been banned and has a more robust or secure replacement. This specific error indicates the use of an API that allocates only executable nonpaged pool. This should only be used if executable memory is required. See [No-Execute (NX) Nonpaged Pool](/en-us/windows-hardware/drivers/kernel/no-execute-nonpaged-pool) for more information on this. There are no parameters you can supply that will change this behavior. The only way to fix this issue is to use an alternative function that allows for allocation of non-executable nonpaged pool memory. A list of all banned functions covered by this error and the recommended replacements can be found after the following example: 
+This warning indicates that a function is being used that has been banned and has a more robust or secure replacement. This specific error indicates the use of an API that allocates only executable nonpaged pool. This should only be used if executable memory is required. See [No-Execute (NX) Nonpaged Pool](../kernel/no-execute-nonpaged-pool.md) for more information on this. There are no parameters you can supply that will change this behavior. The only way to fix this issue is to use an alternative function that allows for allocation of non-executable nonpaged pool memory. A list of all banned functions covered by this error and the recommended replacements can be found after the following example: 
 ## Example
 
 The following code generates warning C30029:
@@ -31,4 +31,4 @@ MmMapIoSpaceEx(    PhysicalAddress,
 | Banned API | Replacement(s) | Rationale / Notes |
 | -----------|----------------|-------|
 |```MmMapIoSpace()```|```MmMapIoSpaceEx()```|
-|```MmAllocateContiguousMemorySpecifyCache()```|```MmAllocateContiguousNodeMemory()```|Depending on the cache type, SpecifyCache can be used in a way that limits it to non-executable memory. However, using NodeMemory will ensure this. See [C30030, subsection 'For defects involving cache types'](/windows-hardware/drivers/devtest/30030-parameter-indicates-executable-memory#for-defects-involving-cache-types) for more information on this.|
+|```MmAllocateContiguousMemorySpecifyCache()```|```MmAllocateContiguousNodeMemory()```|Depending on the cache type, SpecifyCache can be used in a way that limits it to non-executable memory. However, using NodeMemory will ensure this. See [C30030, subsection 'For defects involving cache types'](./30030-parameter-indicates-executable-memory.md#for-defects-involving-cache-types) for more information on this.|
