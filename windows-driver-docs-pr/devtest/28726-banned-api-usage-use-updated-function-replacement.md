@@ -1,21 +1,26 @@
 ---
 title: C28726 warning
 description: Warning C28726 Banned API Usage.
-ms.date: 04/20/2017
+ms.date: 08/22/2022
 f1_keywords: 
-  - "C28726"
+  - "C28726", "BANNED_API_USAGEL2", "__WARNING_BANNED_API_USAGEL2"
 ---
+# Warning C28726
 
-# C28726
+> Banned API Usage:  '\**function-name*' is insecure and has been marked deprecated.
 
+This warning indicates that a function is being used that has been banned and has a more robust or secure replacement. This specific error indicates that the banned function has potential to overflow a buffer.
 
-**Warning C28726: Banned API Usage L2 (BANNED_API_USAGEL2)**\
-Example output: ```Banned API Usage:  *function name* is insecure and has been marked deprecated.```
+## Remarks
 
-This warning indicates that a function is being used that has been banned and has a more robust or secure replacement. This specific error indicates that the banned function has potential to overflow a buffer. A list of all banned functions covered by this error, why they are banned, and recommended replacements can be found after the following example: 
- ## Example 
+A list of all banned functions covered by this error, why they are banned, and recommended replacements can be found after the following example.
+
+Code analysis name: BANNED_API_USAGEL2
+
+## Example 
 
 The following code generates this warning: 
+
 ```cpp
 void example_func() 
 { 
@@ -23,7 +28,9 @@ void example_func()
     scanf(“%s”, input); // scanf is banned for security purposes 
 } 
 ```
+
 This is due to the use of the unsafe function scanf. scanf does place any limit on the size of the data copied to the buffer. To fix this issue, we can use scanf_s, the safer replacement to this function. scanf_s requires the developer to specify how many bytes are intended to be copied. scanf_s will ensure only that many bytes are copied. For example, the following code is safer: 
+
 ```cpp
 void example_func() 
 { 
@@ -31,7 +38,9 @@ void example_func()
     scanf_s(“%9s”, input, sizeof(input)); // 9 bytes leaves room for the \0 byte at the end  
 } 
 ```
+
 ## Banned Functions 
+
 _NOTE: This list is actively being updated and improved_
 
 | Banned API | Replacement(s) | Rationale / Notes |
