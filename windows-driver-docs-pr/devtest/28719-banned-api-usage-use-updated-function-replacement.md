@@ -2,8 +2,7 @@
 title: C28719 warning
 description: Warning C28719 Banned API Usage.
 ms.date: 08/18/2022
-f1_keywords: 
-  - "C28719", "BANNED_API_USAGE", "__WARNING_BANNED_API_USAGE"
+f1_keywords: ["C28719", "BANNED_API_USAGE", "__WARNING_BANNED_API_USAGE"]
 ---
 # Warning C28719
 
