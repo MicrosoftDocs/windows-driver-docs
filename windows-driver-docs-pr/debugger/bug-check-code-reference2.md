@@ -1,7 +1,7 @@
 ---
 title: Bug Check Code Reference
 description: This section contains descriptions of the common bug checks, including the parameters passed to the blue screen.
-ms.date: 07/27/2022
+ms.date: 08/22/2022
 ---
 
 # Bug Check Code Reference
@@ -391,6 +391,8 @@ The following table provides links to bug check codes.
 | 0x0000019C | [**WIN32K\_POWER\_WATCHDOG\_TIMEOUT**](bug-check-0x19c--win32k-power-watchdog-timeout.md)                                                         |
 | 0x000001A0 | [**TTM\_WATCHDOG\_TIMEOUT**](bug-check-0x1a0--ttm-watchdog-timeout.md)                                                                            |
 | 0x000001A2 | [**WIN32K\_CALLOUT\_WATCHDOG\_BUGCHECK**](bug-check-0x1a2--win32k-callout-watchdog-bugcheck.md)                                                   |
+| 0x000001AA | [**EXCEPTION\_ON\_INVALID\_STACK**](bug-check-0x1aa-exception-on-invalid-stack.md)                                                                |
+| 0x000001AB | [**UNWIND\_ON\_INVALID\_STACK**](bug-check-0x1ab-unwind-on-invalid-stack.md)                                                                      |
 | 0x000001C6 | [**FAST\_ERESOURCE\_PRECONDITION\_VIOLATION**](bug-check-0x1c6--fast-eresource-precondition-violation.md)                                         |
 | 0x000001C7 | [**STORE\_DATA\_STRUCTURE\_CORRUPTION**](bug-check-0x1c7--store-data-structure-corruption.md)                                                     |
 | 0x000001C8 | [**MANUALLY\_INITIATED\_POWER\_BUTTON\_HOLD**](bug-check-0x1c8--manually-initiated-power-button-hold.md)                                          |
@@ -407,9 +409,13 @@ The following table provides links to bug check codes.
 | 0x000001D7 | [**EFS\_FATAL\_ERROR**](bug-check-0x1d7--efs-fatal-error.md)                                                                                      |
 | 0x000001D8 | [**UCMUCSI\_FAILURE**](bug-check-0x1d8--ucmucsi-failure.md)                                                                                       |
 | 0x000001D9 | [**HAL\_IOMMU\_INTERNAL\_ERROR**](bug-check-0x1d8--ucmucsi-failure.md)                                                                            |  
-| 0x000001DA | [**HAL\_BLOCKED\_PROCESSOR\_INTERNAL\_ERROR**](bug-check-0x1da--hal-blocked-processor-internal-error.md)                                         |
+| 0x000001DA | [**HAL\_BLOCKED\_PROCESSOR\_INTERNAL\_ERROR**](bug-check-0x1da--hal-blocked-processor-internal-error.md)                                          |
 | 0x000001DB | [**IPI\_WATCHDOG\_TIMEOUT**](bug-check-0x1db--ipi-watchdog-timeout.md)                                                                            |
 | 0x000001DC | [**DMA_COMMON_BUFFER_VECTOR_ERROR**](bug-check-0x1dc--dma-common-buffer-vector-error.md)                                                          |
+| 0x000001E4 | [**VIDEO\_DXGKRNL\_SYSMM_FATAL_ERROR**](bug-check-0x1e4--video-dxgkrnl-sysmm-fatal-error.md)                                                      |
+| 0x000001E9 | [**ILLEGAL\_ATS\_INITIALIZATION**](bug-check-0x1e9--illegal-ats-initialization.md)                                                                |
+| 0x000001EA | [**SECURE\_PCI\_CONFIG\_SPACE\_ACCESS\_VIOLATION**](bug-check-0x1ea--secure-pci-config-space-access-violation.md)                                 |
+| 0x000001EB | [**DAM\_WATCHDOG\_TIMEOUT**](bug-check-0x1eb--dam-watchdog-timeout.md)                                                                            |
 | 0x00000356 | [**XBOX\_ERACTRL\_CS\_TIMEOUT**](bug-check-0x356--xbox-eractrl-cs-timeout.md)                                                                     |
 | 0x00000BFE | [**BC\_BLUETOOTH\_VERIFIER\_FAULT**](bug-check-0xbfe--bc-bluetooth-verifier-fault.md)                                                             |
 | 0x00000BFF | [**BC\_BTHMINI\_VERIFIER\_FAULT**](bug-check-0xbff--bc-bthmini-verifier-fault.md)                                                                 |
