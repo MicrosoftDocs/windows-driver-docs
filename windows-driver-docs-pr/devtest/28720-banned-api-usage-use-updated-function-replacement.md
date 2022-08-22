@@ -7,7 +7,7 @@ f1_keywords:
 ---
 # Warning C28720
 
-> Banned API Usage: *function name* is insecure and has been marked deprecated.
+> Banned API Usage: '\**function-name*' is insecure and has been marked deprecated.
 
 ## Remarks
 
