@@ -12,7 +12,7 @@ ms.date: 08/22/2022
 # Download the Windows Driver Kit (WDK)
 
 > [!NOTE]
-> If you installed the original Windows 11, version 22H2 WDK between May and August 2022 (version 10.0.22621.0), you may see the following error message when you start Visual Studio with the WDK.
+> If you installed the original Windows 11, version 22H2 WDK between May and August 2022 (version 10.0.22621.1), you may see the following error message when you start Visual Studio with the WDK.
 > * The service ‘Microsoft.VisualStudio.Shell.Interop.SVsUIShell’ must be installed for this feature to work. Ensure that this service is available.
 >
 > You can either safely dismiss this message, or you can uninstall the WDK and then reinstall the WDK (updated August 19, 2022 to version 10.0.22621.382) using the WDK download link below.
