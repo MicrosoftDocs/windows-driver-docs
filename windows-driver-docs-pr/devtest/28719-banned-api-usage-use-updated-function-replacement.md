@@ -28,11 +28,13 @@ void example_func(PSTR src)
     strcpy(dst, src);
 } 
 ```
+
 This issue stems from the use of the unsafe function strcpy.
 strcpy does not check if the destination buffer is large enough to fit the source data.
 To fix this issue, we can use strcpy_s, C++11’s safer replacement to this function.
 strcpy_s has a third parameter (the size of the destination buffer) to ensure only that many bytes are copied.
 For example, the following code is safer: 
+
 ```cpp
 void example_func(PSTR src) 
 { 
@@ -42,6 +44,7 @@ void example_func(PSTR src)
 ```
 
 ## Banned Functions  
+
 _NOTE: This list is actively being updated and improved_
 
 | Banned API | Replacement(s) | Rationale / Notes |
