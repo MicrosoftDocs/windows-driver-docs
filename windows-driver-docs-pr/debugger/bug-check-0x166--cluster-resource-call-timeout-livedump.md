@@ -15,11 +15,6 @@ api_type:
 
 The CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP live dump has a value of 0x00000166. This indicates that a Cluster Resource call took longer than configured timeout.
 
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
-
-
 ## CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP Parameters
 
 |Parameter|Description|

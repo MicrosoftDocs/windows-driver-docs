@@ -1,6 +1,6 @@
 ---
 title: Bug Check 0x1A9 DIRECTED_FX_TRANSITION_LIVEDUMP 
-description: The DIRECTED_FX_TRANSITION_LIVEDUMP  bug check has a value of 0x000001A9. It indicates that a  device has failed its Directed Fx transition call.
+description: The DIRECTED_FX_TRANSITION_LIVEDUMP live dump has a value of 0x000001A9. It indicates that a  device has failed its Directed Fx transition call.
 keywords: ["Bug Check 0x1A9 DIRECTED_FX_TRANSITION_LIVEDUMP ", "DIRECTED_FX_TRANSITION_LIVEDUMP "]
 ms.date: 03/09/2022
 topic_type:
@@ -13,7 +13,7 @@ api_type:
 
 # Bug Check 0x1A9: DIRECTED\_FX\_TRANSITION\_LIVEDUMP
 
-The DIRECTED\_FX\_TRANSITION\_LIVEDUMP bug check has a value of 0x000001A9. It indicates that a device has failed its Directed Fx transition call. For more information about Directed Fx, see [Introduction to the Directed Power Management Framework](/windows-hardware/drivers/kernel/introduction-to-the-directed-power-management-framework).
+The DIRECTED\_FX\_TRANSITION\_LIVEDUMP live dump has a value of 0x000001A9. It indicates that a device has failed its Directed Fx transition call. For more information about Directed Fx, see [Introduction to the Directed Power Management Framework](/windows-hardware/drivers/kernel/introduction-to-the-directed-power-management-framework).
 
 (This code can never be used for a real bugcheck; it is used to identify live dumps.)
 

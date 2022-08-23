@@ -15,11 +15,6 @@ api_type:
 
 The BLUETOOTH\_ERROR\_RECOVERY\_LIVEDUMP live dump has a value of 0x000001A6. It indicates that the Bluetooth radio driver (bthport.sys) has initiated error recovery to attempt to recover and reset the radio from an irremediable internal condition.
 
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
- 
-
 ## BLUETOOTH\_ERROR\_RECOVERY\_LIVEDUMP Parameters
 
 |Parameter|Description|

@@ -16,9 +16,6 @@ api_type:
 
 The WINSOCK\_DETECTED\_HUNG\_CLOSESOCKET\_LIVEDUMP live dump has a value of 0x00000156. This indicates that Winsock detected a hung transport endpoint close request.
 
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
 (This code can never be used for a real bug check; it is used to identify live dumps.)
 
 ## WINSOCK\_DETECTED\_HUNG\_CLOSESOCKET\_LIVEDUMP Parameters
