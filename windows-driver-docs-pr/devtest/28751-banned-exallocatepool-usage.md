@@ -14,7 +14,7 @@ This warning indicates that a function is being used that has been banned and ha
 
 See [Updating Deprecated ExAllocatePool Calls to ExAllocatePool2 and ExAllocatePool3](../kernel/updating-deprecated-exallocatepool-calls.md) for further information. A list of all banned functions covered by this error and recommended replacements can be found below.
 
-Code analysis name: BANNED_API_USAGE_EXALLOCATEPOO
+Code analysis name: BANNED_API_USAGE_EXALLOCATEPOOL
 
 ## Banned Functions 
 
