@@ -12,7 +12,7 @@ This warning indicates that a function is being used that has been banned and ha
 
 ## Remarks
 
-The lstrlen function and its variants are banned because they fail to transmit exceptions. This can cause error conditions to occur much later, potentially on a different thread. This makes the error conditions harder to diagnose. In addition, equivalent substitute functions can be optimized by the compiler and avoid the performance overhead of exception handlers (_try and _except blocks).  
+The lstrlen function and its variants are banned because they fail to transmit exceptions. This can cause error conditions to occur much later, potentially on a different thread. This makes the error conditions harder to diagnose. In addition, equivalent substitute functions can be optimized by the compiler and avoid the performance overhead of exception handlers (__try and __except blocks).  
 
 The correct mitigation is to use a safer string length function (usually strlen, wcslen, _tcslen). However, while you review the lstrlen changes, you should confirm that the string buffer is coming from trusted code. If you are dealing with untrusted data, you should instead switch from the strlen family of functions to the strnlen family (or StringCchLength family), which will ensure they don't go past the bounds of the untrusted data block. 
 
@@ -39,9 +39,10 @@ This is due to the use of the unsafe function lstrlen. To fix this issue, we can
 ```cpp
 int example_func(char* in) 
 { 
-    if (in != NULL)
+    if (in != NULL) {
         int size = strlen(in);
         return size;
+    }
     else {
         // handle error.
     }
