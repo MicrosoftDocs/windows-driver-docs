@@ -18,7 +18,7 @@ NDIS Poll Mode is an OS controlled polling execution model that drives the netwo
 
 Previously, NDIS had no formal definition of a datapath execution context. NDIS drivers typically relied on Deferred Procedure Calls (DPCs) to implement their execution model. However the DPC model can overwhelm the system when long indication chains are made and avoiding this problem requires a lot of complex code in your driver. 
 
-With NDIS Poll Mode, drivers no longer need to rely on DPCs or similar execution tools. Poll Mode moves the complexity of scheduling decisions away from NIC drivers and into NDIS. To achieve this Poll Mode provides:
+With NDIS Poll Mode, drivers no longer need to rely on DPCs or similar execution tools. Poll Mode moves the complexity of scheduling decisions away from NIC drivers and into NDIS, where NDIS sets work limits per iteration. To achieve this Poll Mode provides:
 1. A mechanism for the OS to exert back pressure on the NIC.
 
 1. A mechanism for the OS to finely control interrupts. 
