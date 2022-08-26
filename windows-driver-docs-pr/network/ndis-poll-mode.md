@@ -1,9 +1,9 @@
 ---
 title: NDIS Poll Mode
-description: Introduction to NDIS Poll Mode
+description: NDIS Poll Mode is an OS controlled polling execution model that drives the network interface datapath.
 keywords:
 - NDIS Poll Mode
-ms.date: 08/17/2022
+ms.date: 08/26/2022
 ms.localizationpriority: medium
 ---
 
@@ -13,18 +13,21 @@ ms.localizationpriority: medium
 
 NDIS Poll Mode is an OS controlled polling execution model that drives the network interface datapath.
 
-Previously, NDIS had no formal definition of a datapath execution context. NDIS drivers typically relied on Deferred Procedure Calls (DPCs) to implement their execution model. NDIS Poll Mode offers an alternative to the DPC model and similar execution tools. 
+Previously, NDIS had no formal definition of a datapath execution context. NDIS drivers typically relied on Deferred Procedure Calls (DPCs) to implement their execution model. However using DPCs can overwhelm the system when long indication chains are made and avoiding this problem requires a lot of code that's tricky to get right. NDIS Poll Mode offers an alternative to DPCs and similar execution tools.
 
-Poll Mode gives the OS more flexibility when making scheduling decisions and moves the complexity of those decisions away from NIC drivers and into NDIS. To achieve this Poll Mode provides:
-1. A mechanism for the OS to exert back pressure on the NIC. 
-2. A mechanism for the OS to finely control interrupts. 
+NDIS Poll Mode moves the complexity of scheduling decisions away from NIC drivers and into NDIS, where NDIS sets work limits per iteration. To achieve this Poll Mode provides:
+
+1. A mechanism for the OS to exert back pressure on the NIC.
+
+1. A mechanism for the OS to finely control interrupts. 
 
 NDIS Poll Mode is available to NDIS 6.85 and later miniport drivers.
 
-### The DPC model
+### Problems with the DPC model
+
 The following sequence diagram illustrates a typical example of how an NDIS miniport driver handles a burst of Rx packets using a DPC. In this example the hardware is standard in terms of PCIe NICs. It has a receive hardware queue and an interrupt mask for that queue. 
 
-![Diagram illustrating NDIS DPC model](images/ndis-traditional-dpc-diagram.png)
+:::image type="content" source="./images/ndis-traditional-dpc-diagram.png" alt-text="Diagram illustrating the NDIS DPC model.":::
 
 When there's no network activity the hardware has the Rx interrupt enabled. When an Rx packet arrives:
 1. The hardware generates an interrupt and NDIS calls the driver’s [*MiniportInterrupt*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_isr) function (ISR).
@@ -37,29 +40,31 @@ Two pain points can affect the network stack when the driver defers I/O operatio
  
 1. The driver doesn't know if the system is capable of processing all of the data that is being indicated, so the driver has no choice but to drain as many elements as possible from its hardware queue and indicate them up the stack. 
 
-1. Since the driver is using a DPC to defer work from its ISR, all the indications are made at DISPATCH_LEVEL which can overwhelm the system when longs indication chains are made.  
+1. Since the driver is using a DPC to defer work from its ISR, all the indications are made at DISPATCH_LEVEL. This can overwhelm the system when long indication chains are made and cause [Bug Check 0x133 DPC_WATCHDOG_VIOLATION](../debugger/bug-check-0x133-dpc-watchdog-violation).
+ 
+Avoiding these pain points requires complex code in your driver. While you can check if the DPC watchdog is close to the limit with the [**KeQueryDpcWatchdogInformation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerydpcwatchdoginformation) function and break out of the DPC, you still need to build an infrastructure around this in your driver: You need some way to pause for a bit, then continue to indicate the packets, and at the same time you need to synchronize all this with the lifetime of the datapath.
 
 ### Introduction to Poll objects 
 
-NDIS Poll Mode introduces the Poll object to resolve the two pain points associated with DPCs. A Poll object is an execution context construct. Miniport drivers can use a Poll object in place of a DPC when dealing with datapath operations. 
+NDIS Poll Mode introduces the Poll object to resolve the pain points associated with DPCs. A Poll object is an execution context construct. Miniport drivers can use a Poll object in place of a DPC when dealing with datapath operations.
 
 A Poll object offers the following: 
 
-* It has serialization guarantees. Once you are running code from within a Poll object's execution context you are guaranteed that no other code related to the same execution context will run. This allows a NIC driver to have a lock free implementation of its datapath. 
+* It provides a way for NDIS to set work limits per iteration. 
 
 * It is closely tied to a notification mechanism. This keeps the OS and the NIC in sync regarding when work needs to be processed. 
 
-* The execution can move between IRQL levels transparently to the driver. 
+* It has a concept of iteration and interrupts built in. When using DPCs, drivers are forced to re-enable the interrupt every time they finish a DPC. When using Poll objects, drivers don't need to re-enable the interrupt each polling iteration because Poll Mode will let your driver know when it's done polling and it's time to re-enable the interrupt again.
 
-* It has a concept of iteration and interrupts built in. When using DPCs, drivers are forced to re-enable interrupts every time they finish a DPC. With NDIS Poll Mode, drivers do not need to re-enable interrupts each polling iteration.
+* When making scheduling decisions, the system can be smart about whether to run at DISPATCH_LEVEL or PASSIVE_LEVEL. This can allow fine-tuned prioritization of traffic from different NICs and lead to a fairer workload distribution on the machine.
 
-* It provides a way for NDIS to set work limits per iteration. 
+* It has serialization guarantees. Once you are running code from within a Poll object's execution context you are guaranteed that no other code related to the same execution context will run. This allows a NIC driver to have a lock free implementation of its datapath. 
 
 ### The NDIS Poll Mode model
 
 The following sequence diagram illustrates how the same hypothetical PCIe NIC driver handles a burst of Rx packets using a Poll object instead of a DPC. 
 
-![Diagram illustrating NDIS Poll Mode](images/ndis-poll-mode-sequence-diagram.png)
+:::image type="content" source="./images/ndis-poll-mode-sequence-diagram.png" alt-text="Diagram illustrating NDIS Poll Mode.":::
 
 Like the DPC model, when an Rx packet arrives the hardware generates an interrupt, NDIS calls the driver’s ISR, and the driver disables the interrupt from the ISR. At this point the Poll Mode model diverges:
 
