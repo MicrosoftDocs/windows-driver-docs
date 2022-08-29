@@ -42,7 +42,7 @@ Two pain points can affect the network stack when the driver defers I/O operatio
 
 1. Since the driver is using a DPC to defer work from its ISR, all the indications are made at DISPATCH_LEVEL. This can overwhelm the system when long indication chains are made and cause [Bug Check 0x133 DPC_WATCHDOG_VIOLATION](../debugger/bug-check-0x133-dpc-watchdog-violation).
  
-Avoiding these pain points requires complex code in your driver. While you can check if the DPC watchdog is close to the limit with the [**KeQueryDpcWatchdogInformation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerydpcwatchdoginformation) function and break out of the DPC, you still need to build an infrastructure around this in your driver: You need some way to pause for a bit, then continue to indicate the packets, and at the same time you need to synchronize all this with the lifetime of the datapath.
+Avoiding these pain points requires a lot of tricky code in your driver. While you can check if the DPC watchdog is close to the limit with the [**KeQueryDpcWatchdogInformation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerydpcwatchdoginformation) function and break out of the DPC, you still need to build an infrastructure around this in your driver: You need some way to pause for a bit, then continue to indicate the packets, and at the same time you need to synchronize all this with the lifetime of the datapath.
 
 ### Introduction to Poll objects 
 
