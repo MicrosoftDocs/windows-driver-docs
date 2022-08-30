@@ -156,6 +156,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/install/writing-inf-files.md",
+            "redirect_URL": "/windows-hardware/drivers/install/general-guidelines-for-inf-files",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/3dprint/microsoft-3d-printer-drivers.md",
             "redirect_URL": "/windows-hardware/drivers/3dprint/index",
             "redirect_document_id": false
