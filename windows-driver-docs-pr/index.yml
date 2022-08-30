@@ -95,10 +95,10 @@ tools:
   title: Driver platforms and frameworks
   items:
     - title: Kernel/Windows Driver Model
-      imageSrc: https://docs.microsoft.com/media/logos/logo_windows.svg
+      imageSrc: /media/logos/logo_windows.svg
       url: ./kernel/index.md
     - title: Windows Driver Frameworks
-      imageSrc: https://docs.microsoft.com/media/logos/logo_windows.svg
+      imageSrc: /media/logos/logo_windows.svg
       url: ./wdf/index.md
 
 additionalContent:
