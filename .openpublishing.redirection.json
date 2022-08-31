@@ -41,8 +41,18 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/install/configuring-windows-to-rank-driver-signatures-equally.md",
+            "redirect_URL": "/windows-hardware/drivers/install/allsigningequal-group-policy",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/install/creating-a-catalog-file-for-a-test-signed-driver-package.md",
             "redirect_URL": "/windows-hardware/drivers/install/creating-a-catalog-file-for-test-signing-a-driver-package",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/creating-a-private-build-of-an-in-box-driver.md",
+            "redirect_URL": "/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-",
             "redirect_document_id": false
         },
         {
@@ -81,6 +91,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/install/installing-private-builds-of-in-box-drivers--windows-vista-and-later-.md",
+            "redirect_URL": "/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/installing-the-updated-version-of-the-driver-package.md",
+            "redirect_URL": "/windows-hardware/drivers/devtest/pnputil",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/install/obtaining-a-software-publisher-certificate--spc-.md",
             "redirect_URL": "/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates",
             "redirect_document_id": false
@@ -93,6 +113,11 @@
         {
             "source_path": "windows-driver-docs-pr/install/opening-and-closing-an-inf-file.md",
             "redirect_URL": "/windows-hardware/drivers/install/accessing-inf-files-from-a-setup-application",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/overview-of-installing-private-builds-of-in-box-drivers.md",
+            "redirect_URL": "/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-",
             "redirect_document_id": false
         },
         {

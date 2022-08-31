@@ -900,17 +900,7 @@
     href: installing-a-new-bus-driver.md
   - name: "Using Custom Hardware IDs and Compatible IDs"
     href: using-custom-hardware-ids-and-compatible-ids.md
-  - name: "Installing Private Builds of In-box Drivers"
-    href: installing-private-builds-of-in-box-drivers--windows-vista-and-later-.md
-  - name: "Overview of Installing Private Builds of In-box Drivers"
-    href: overview-of-installing-private-builds-of-in-box-drivers.md
-  - name: "Creating a Private Build of an In-box Driver"
-    href: creating-a-private-build-of-an-in-box-driver.md
-  - name: "Configuring Windows to Rank Driver Signatures Equally"
-    href: configuring-windows-to-rank-driver-signatures-equally.md
-  - name: "Installing the Updated Version of the Driver Package"
-    href: installing-the-updated-version-of-the-driver-package.md
-  - name: "Writing Win32 Services to Interact with Devices"
+  - name: "Writing Win32 services to interact with devices"
     href: best-practices-win32services-interacting-with-devices.md
 - name: "Troubleshooting"
   items: 
