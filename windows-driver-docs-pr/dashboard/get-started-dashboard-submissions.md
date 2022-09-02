@@ -67,7 +67,6 @@ The identification numbers used in the URL, and their locations are as follows:
   
 To create a sharable link, replace **SellerID**, **PrivateProductID**, and **SubmissionID** in the example URL above with the appropriate identification numbers.
 
-
 ## Next Steps
 
 > [!div class="nextstepaction"]
