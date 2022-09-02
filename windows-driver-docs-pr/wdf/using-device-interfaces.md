@@ -11,11 +11,7 @@ ms.date: 04/20/2017
 
 # Using Device Interfaces (WDF)
 
-
-
-
-
-A *device interface* is a symbolic link to a Plug and Play (PnP) device that an application can use to access the device. A user-mode application can pass the interface's symbolic link name to an API element, such as the Microsoft Win32 **CreateFile** function. To obtain a device interface's symbolic link name, the user-mode application can call **SetupDi** functions. For more information about **SetupDi** functions, see [Using Device Installation Functions](../install/using-device-installation-functions.md).
+A *device interface* is a symbolic link to a Plug and Play (PnP) device that an application can use to access the device. A user-mode application can pass the interface's symbolic link name to an API element, such as the Microsoft Win32 **CreateFile** function. To obtain a device interface's symbolic link name, the user-mode application can call [**CM_*** functions](/windows/win32/api/cfgmgr32/) or [**SetupDi** functions](../install/setupapi.md). For more information, see [Enumerating installed device interfaces](../drivers/install/enumerating-installed-device-interface-classes.md).
 
 Each device interface belongs to a *device interface class*. For example, a driver stack for a CD-ROM device might provide an interface that belongs to the GUID\_DEVINTERFACE\_CDROM class. One of the CD-ROM device's drivers would register an instance of the GUID\_DEVINTERFACE\_CDROM class to inform the system and applications that a CD-ROM device is available. For more information about device interface classes, see [Overview of Device Interface Classes](../install/overview-of-device-interface-classes.md).
 
