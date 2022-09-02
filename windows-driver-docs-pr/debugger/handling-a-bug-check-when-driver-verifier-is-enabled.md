@@ -7,17 +7,16 @@ ms.date: 05/23/2017
 
 # Handling a Bug Check When Driver Verifier is Enabled
 
-
 [Driver Verifier](../devtest/driver-verifier.md) detects driver errors at run time. You can use Driver Verifier along with the [**!analyze**](-analyze.md) debugger command to detect and display information about errors in your driver.
 
 In Windows 8, [Driver Verifier](../devtest/driver-verifier.md) has been enhanced with new features, including [DDI Compliance Checking](../devtest/ddi-compliance-checking.md). Here we give an example that demonstrates DDI Compliance Checking.
 
 Use the following procedure to get set up.
 
-1.  Establish a kernel-mode debugging session between a host and target computer.
-2.  Install your driver on the target computer.
-3.  On the target computer, open a Command Prompt window and enter the command **verifier**. Use [Driver Verifier Manager](../devtest/driver-verifier-manager--windows-xp-and-later-.md) to enable Driver Verifier for your driver.
-4.  Reboot the target computer.
+1. Establish a kernel-mode debugging session between a host and target computer.
+2. Install your driver on the target computer.
+3. On the target computer, open a Command Prompt window and enter the command **verifier**. Use [Driver Verifier Manager](../devtest/driver-verifier-manager--windows-xp-and-later-.md) to enable Driver Verifier for your driver.
+4. Reboot the target computer.
 
 When Driver Verifier detects an error, it generates a bug check. Then Windows breaks into the debugger and displays a brief description of the error. Here is an example where Driver Verifier generates Bug Check [**DRIVER\_VERIFIER\_DETECTED\_VIOLATION (C4)**](bug-check-0xc4--driver-verifier-detected-violation.md).
 
@@ -89,7 +88,7 @@ PROCESS_NAME:  TiWorker.exe
 CURRENT_IRQL:  9
 ```
 
-In the preceding output, you can see the name and description of the rule, **IrqlExApcLte1**, that was violated, and you can select a link to the reference page that describes the rule: [https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlexapclte1](../devtest/wdm-irqlexapclte1.md). You can also select a debugger command link, **!ruleinfo 0x20005**, to get information about the rule. In this case, the rule states that you cannot call [ExAcquireFastMutex](/previous-versions/windows/hardware/drivers/ff544337(v=vs.85)) if the interrupt request level (IRQL) is greater than APC\_LEVEL. The output shows that the current IRQL is 9, and in wdm.h you can see that APC\_LEVEL has a value of 1. For more information about IRQLs, see [Managing Hardware Priorities](../kernel/managing-hardware-priorities.md).
+In the preceding output, you can see the name and description of the rule, **IrqlExApcLte1**, that was violated, and you can select a link to the reference page that describes the [IrqlExApcLte1 rule (wdm)](../devtest/wdm-irqlexapclte1.md). You can also select a debugger command link, **!ruleinfo 0x20005**, to get information about the rule. In this case, the rule states that you cannot call [ExAcquireFastMutex](/previous-versions/windows/hardware/drivers/ff544337(v=vs.85)) if the interrupt request level (IRQL) is greater than APC\_LEVEL. The output shows that the current IRQL is 9, and in wdm.h you can see that APC\_LEVEL has a value of 1. For more information about IRQLs, see [Managing Hardware Priorities](../kernel/managing-hardware-priorities.md).
 
 The output of [**!analyze -v**](-analyze.md) continues with a stack trace and information about the code that caused the error. In the following output, you can see that the **OnInterrupt** routine in MyDriver.sys called [ExAcquireFastMutex](/previous-versions/windows/hardware/drivers/ff544337(v=vs.85)). **OnInterrupt** is an interrupt service routine that runs at an IRQL greater than APC\_LEVEL, so it is a violation for this routine to call [ExAcquireFastMutex](/previous-versions/windows/hardware/drivers/ff544337(v=vs.85)).
 
@@ -157,6 +156,4 @@ BUCKET_ID:  0xc4_IrqlExApcLte1_XDV_VRF_MyDriver!OnInterrupt
 
 ## <span id="related_topics"></span>Related topics
 
-
 [Static Driver Verifier](../devtest/static-driver-verifier.md)
-

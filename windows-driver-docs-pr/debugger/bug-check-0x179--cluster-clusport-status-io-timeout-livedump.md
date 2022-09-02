@@ -15,13 +15,6 @@ api_type:
 
 The CLUSTER\_CLUSPORT\_STATUS\_IO\_TIMEOUT\_LIVEDUMP live dump has a value of 0x00000179. This indicates that SMB client on the initiator node complains that an IO to a target node is taking too long and fails all IOs with STATUS_IO_TIMEOUT.
 
-
-
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
-
-
 ## CLUSTER\_CLUSPORT\_STATUS\_IO\_TIMEOUT\_LIVEDUMP Parameters
 
 |Parameter|Description|

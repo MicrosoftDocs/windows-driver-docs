@@ -13,11 +13,6 @@ api_type:
 
 # Bug Check 0x1A3: CALL\_HAS\_NOT\_RETURNED\_WATCHDOG\_TIMEOUT\_LIVEDUMP 
 
-
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
-
 A call has not returned within the timeout period.
 
 The CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP live dump has a value of 0x000001A3. 

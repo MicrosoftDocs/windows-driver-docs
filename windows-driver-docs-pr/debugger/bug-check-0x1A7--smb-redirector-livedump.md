@@ -15,12 +15,6 @@ api_type:
 
 The SMB\_REDIRECTOR\_LIVEDUMP live dump has a value of 0x000001A7. It indicates that the SMB redirector has detected a problem and has captured a kernel dump to collect debug information.
 
-
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
- 
-
 ## SMB\_REDIRECTOR\_LIVEDUMP Parameters
 
 |Parameter|Description|

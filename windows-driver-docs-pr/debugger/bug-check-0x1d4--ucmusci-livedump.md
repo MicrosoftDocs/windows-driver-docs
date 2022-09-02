@@ -13,9 +13,6 @@ api_type:
 
 # Bug Check 0x1D4: UCMUCSI\_LIVEDUMP  
 
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
 The UCMUCSI_LIVEDUMP live dump has a value of 0x000001D4. This indicates that the UcmUcsi class extension has encountered an error. For example this can be because a UCSI command has timed out, or because a UCSI command execution failed because the client driver returned failure.
 
 The UcmUcsiCx.sys is the included UCSI Class Extension. For more information, see [USB Type-C Connector System Software Interface (UCSI) driver](../usbcon/ucsi.md).

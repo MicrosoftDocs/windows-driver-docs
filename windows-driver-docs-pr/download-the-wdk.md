@@ -6,15 +6,18 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 06/02/2022
+ms.date: 08/22/2022
 ---
 
 # Download the Windows Driver Kit (WDK)
 
 > [!NOTE]
-> Due to a regression, it's not possible to debug drivers within the Visual Studio interface when using Visual Studio 2022 version 17.2.0 and the Windows 11, version 22H2 WDK. To work around the problem, debug with WinDbg or use a version of Visual Studio earlier than 17.2.0.
-> The following error messages are related to the regression:
+> If you installed the original Windows 11, version 22H2 WDK between May and August 2022 (version 10.0.22621.1), you may see the following error message when you start Visual Studio with the WDK.
 > * The service ‘Microsoft.VisualStudio.Shell.Interop.SVsUIShell’ must be installed for this feature to work. Ensure that this service is available.
+>
+> You can either safely dismiss this message, or you can uninstall the WDK and then reinstall the WDK (updated August 19, 2022 to version 10.0.22621.382) using the WDK download link below.
+>
+> It is still not possible to debug drivers within the Visual Studio interface when using Visual Studio 2022 version 17.2.0 and the Windows 11, version 22H2 WDK (version 10.0.22621.382). To work around the problem, debug with WinDbg or use a version of Visual Studio earlier than 17.2.0. The following error message is related to this issue:
 > * The 'Microsoft.Windows.Tools.WinIDE.Debugger.DebuggerPackage, DebuggerPackage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null' package did not load correctly.
 
 The WDK is used to develop, test, and deploy drivers for Windows.
@@ -88,7 +91,7 @@ This SDK must be installed separately until available through Visual Studio
 The WDK Visual Studio extension is included in the default WDK installation.
 
 > [!TIP]
-> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2022\10.0.22621.0\WDK.vsix.
+> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2022\10.0.22621.382\WDK.vsix.
 
 ## Enterprise WDK (EWDK)
 

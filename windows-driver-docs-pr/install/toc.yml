@@ -66,7 +66,7 @@
       href: overview-of-inf-files.md
     - name: "General Syntax Rules for INF Files"
       href: general-syntax-rules-for-inf-files.md
-    - name: "General Guidelines for INF Files"
+    - name: "General guidelines for INF files"
       href: general-guidelines-for-inf-files.md
     - name: "Looking at an INF File"
       href: looking-at-an-inf-file.md
@@ -708,6 +708,10 @@
         href: calling-the-default-dif-code-handlers.md
       - name: "Accessing the Co-installers Registry Entry Value of a Device Setup Class"
         href: accessing-the-co-installers-registry-entry-value-of-a-device-setup-cla.md
+      - name: "Calling SetupAPI Functions"
+        href: calling-setupapi-functions.md
+      - name: "Writing Class Installers and Co-Installers"
+        href: writing-class-installers-and-co-installers.md
     - name: "Finish Install Actions"
       items:
       - name: "Finish-Install Actions"
@@ -876,43 +880,27 @@
     href: opening-software-keys-for-all-devices-in-a-setup-class.md
   - name: "Enumerating Installed Device Interfaces"
     href: enumerating-installed-device-interface-classes.md
-  - name: "Accessing the Properties of Installed Device Interfaces"
+  - name: "Access the properties of installed device interfaces"
     href: accessing-the-properties-of-installed-device-interface-classes.md
-  - name: "Deleting the Registry Keys of a Device"
+  - name: "Delete the registry keys of a device"
     href: deleting-the-registry-keys-of-a-device.md
-  - name: "Calling SetupAPI Functions"
-    href: calling-setupapi-functions.md
-  - name: "Enumerating Installed Devices"
+  - name: "Enumerate installed devices"
     href: enumerating-installed-devices.md
   - name: "General Guidelines for Device and Driver Installation"
     href: general-guidelines-for-device-and-driver-installation.md
   - name: "Porting code from SetupApi to CfgMgr32"
     href: porting-from-setupapi-to-cfgmgr32.md
-  - name: "Writing Class Installers and Co-Installers"
-    href: writing-class-installers-and-co-installers.md
-  - name: "Writing INF Files"
-    href: writing-inf-files.md
-  - name: "Installing a Boot-Start Driver"
+  - name: "Install a boot-start driver"
     href: installing-a-boot-start-driver.md
-  - name: "Installing a Filter Driver"
+  - name: "Install a filter driver"
     href: installing-a-filter-driver.md
-  - name: "Installing a Null Driver"
+  - name: "Install a null driver"
     href: installing-a-null-driver.md
   - name: "Installing a New Bus Driver"
     href: installing-a-new-bus-driver.md
   - name: "Using Custom Hardware IDs and Compatible IDs"
     href: using-custom-hardware-ids-and-compatible-ids.md
-  - name: "Installing Private Builds of In-box Drivers"
-    href: installing-private-builds-of-in-box-drivers--windows-vista-and-later-.md
-  - name: "Overview of Installing Private Builds of In-box Drivers"
-    href: overview-of-installing-private-builds-of-in-box-drivers.md
-  - name: "Creating a Private Build of an In-box Driver"
-    href: creating-a-private-build-of-an-in-box-driver.md
-  - name: "Configuring Windows to Rank Driver Signatures Equally"
-    href: configuring-windows-to-rank-driver-signatures-equally.md
-  - name: "Installing the Updated Version of the Driver Package"
-    href: installing-the-updated-version-of-the-driver-package.md
-  - name: "Writing Win32 Services to Interact with Devices"
+  - name: "Writing Win32 services to interact with devices"
     href: best-practices-win32services-interacting-with-devices.md
 - name: "Troubleshooting"
   items: 
