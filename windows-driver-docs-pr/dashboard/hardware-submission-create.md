@@ -123,6 +123,9 @@ Use [HLK studio](/windows-hardware/test/hlk/user/install-standalone-hlk-studio) 
 > [Update a hardware submission](hardware-submission-update.md)
 
 > [!div class="nextstepaction"]
+> [Validate a hardware submission signature](code-signing-validate.md)
+
+> [!div class="nextstepaction"]
 > [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started.md)
 
 > [!div class="nextstepaction"]

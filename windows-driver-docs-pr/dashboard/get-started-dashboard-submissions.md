@@ -67,6 +67,7 @@ The identification numbers used in the URL, and their locations are as follows:
   
 To create a sharable link, replace **SellerID**, **PrivateProductID**, and **SubmissionID** in the example URL above with the appropriate identification numbers.
 
+
 ## Next Steps
 
 > [!div class="nextstepaction"]
@@ -77,6 +78,9 @@ To create a sharable link, replace **SellerID**, **PrivateProductID**, and **Sub
 
 > [!div class="nextstepaction"]
 > [Update a hardware submission](hardware-submission-update.md)
+
+> [!div class="nextstepaction"]
+> [Validate a hardware submission signature](code-signing-validate.md)
 
 > [!div class="nextstepaction"]
 > [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started.md)
