@@ -16,9 +16,6 @@ api_type:
 
 The CONNECTED\_STANDBY\_WATCHDOG\_TIMEOUT\_LIVEDUMP live dump has a value of 0x0000015F. This indicates that a connected standby watchdog timeout has occurred.
 
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
 (This code can never be used for a real bug check; it is used to identify live dumps.)
 
 ## CONNECTED\_STANDBY\_WATCHDOG\_TIMEOUT\_LIVEDUMP Parameters

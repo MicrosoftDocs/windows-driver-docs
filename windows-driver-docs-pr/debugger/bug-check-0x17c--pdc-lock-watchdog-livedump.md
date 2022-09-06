@@ -15,10 +15,6 @@ api_type:
 
 The PDC\_LOCK\_WATCHDOG\_LIVEDUMP live dump has a value of 0x0000017C. This indicates that a thread has been holding the PDC lock for too long.
 
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
-
  ## PDC\_LOCK\_WATCHDOG\_LIVEDUMP Parameters
 
 |Parameter|Description|

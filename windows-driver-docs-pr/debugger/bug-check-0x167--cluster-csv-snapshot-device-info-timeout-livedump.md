@@ -13,13 +13,7 @@ api_type:
 
 # Bug Check 0x167: CLUSTER\_CSV\_SNAPSHOT\_DEVICE\_INFO\_TIMEOUT\_LIVEDUMP
 
-The CLUSTER\_CSV\_SNAPSHOT\_DEVICE\_INFO\_TIMEOUT\_LIVEDUMPP bug check has a value of 0x00000167. This indicates that a Cluster Service call to the volsnap to query snapshot information took too long.
-
-
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
-
+The CLUSTER\_CSV\_SNAPSHOT\_DEVICE\_INFO\_TIMEOUT\_LIVEDUMP live dump has a value of 0x00000167. This indicates that a Cluster Service call to the volsnap to query snapshot information took too long.
 
 ## CLUSTER\_CSV\_SNAPSHOT\_DEVICE\_INFO\_TIMEOUT\_LIVEDUMP Parameters
 

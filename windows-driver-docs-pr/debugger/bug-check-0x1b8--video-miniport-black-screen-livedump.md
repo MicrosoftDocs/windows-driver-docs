@@ -15,10 +15,6 @@ api_type:
 
 The VIDEO\_MINIPORT\_BLACK\_SCREEN\_LIVEDUMP live dump has a value of 0x000001B8. It indicates that a user initiated MINIPORT live dump for black screen scenarios has occurred.
 
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
-
 ## VIDEO\_MINIPORT\_BLACK\_SCREEN\_LIVEDUMP Parameters
 
 |Parameter|Description|

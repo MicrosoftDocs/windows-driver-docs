@@ -19,7 +19,7 @@ The [driver package](driver-packages.md) signing requirements for Plug and Play 
 
 The [Windows Hardware Lab Kit (Windows HLK)](/windows-hardware/test/hlk/windows-hardware-lab-kit) has [test categories](/windows-hardware/test/hlk/testref/hardware-lab-kit-test-reference) for a variety of device types. If a test category for the device type is included in this list, you should obtain a [WHQL release signature](whql-release-signature.md).
 
-A valid WHQL release signature verifies that the driver complies with the requirements of the HCK, verifies the identity of the publisher, and verifies that the driver has not been altered.
+A valid WHQL release signature verifies that the driver complies with the requirements of the [Windows Hardware Compatibilty Program](/windows-hardware/design/compatibility), verifies the identity of the publisher, and verifies that the driver has not been altered.
 
 To be considered signed by PnP device installation, the [catalog file](catalog-files.md) of the [driver package](driver-packages.md) must be signed by WHQL or signed by a third-party [release certificate](release-certificates.md) (a [Software Publisher Certificate (SPC)](./deprecation-of-software-publisher-certificates-and-commercial-release-certificates.md) or a commercial release certificate). A WHQL release signature should be used if one can be obtained. A third-party release signature verifies the identity of the publisher and that the driver has not been altered. However, unlike a WHQL release signature, a third-party release signature does not verify driver functionality.
 

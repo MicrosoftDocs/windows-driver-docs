@@ -15,11 +15,6 @@ api_type:
 
 The PDC\_UNEXPECTED\_REVOCATION\_LIVEDUMP live dump has a value of 0x0000017D. It indicates that an activator has been revoked unexpectedly.
 
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
-
-
  ## PDC\_UNEXPECTED\_REVOCATION\_LIVEDUMP Parameters
 
 |Parameter|Description|

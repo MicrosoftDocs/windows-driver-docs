@@ -15,9 +15,6 @@ api_type:
 
 The CLUSTER\_CSV\_VOLUME\_REMOVAL\_LIVEDUMP live dump has a value of 0x0000016A. This indicates that a Cluster Shared Volume Manager volume removal request has timed out.
 
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
 (This code can never be used for a real bug check; it is used to identify live dumps.)
 
 ## CLUSTER\_CSV\_VOLUME\_REMOVAL\_LIVEDUMP Parameters

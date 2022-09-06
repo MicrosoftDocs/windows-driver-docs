@@ -18,10 +18,6 @@ The CLUSTER\_CSVFS\_LIVEDUMP live dump has a value of 0x00000188. This indicates
 
 (This code can never be used for a real bug check; it is used to identify live dumps.)
 
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
-
 ## CLUSTER\_CSVFS\_LIVEDUMP Parameters
 
 

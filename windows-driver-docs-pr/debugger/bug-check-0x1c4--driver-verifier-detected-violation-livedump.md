@@ -15,9 +15,6 @@ api_type:
 
 The DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP live dump has a value of 0x000001C4. This indicates that a device driver attempting to corrupt the system has been detected. This is because the driver was specified in the registry as being suspect (by the administrator) and the kernel has enabled substantial checking of this driver. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
 
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
 ## DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP Parameters
 
 | Parameter | Description                              |
