@@ -7,12 +7,16 @@ ms.date: 09/02/2022
 
 # How to validate the Microsoft signature
 
-This article shows you how to use the Hardware Lab Kit (HLK) to validate the Microsoft signature for a submission.
+This article shows you how to validate the Microsoft signature for a submission.
 
 There are a couple cases where you might want to validate the Microsoft signature for a submission:
 
 - You aren’t sure if a driver has been signed by Microsoft or not, and you want to check.
 - You have two drivers, and you need to determine which one was signed by attestation and which one was signed after submission of HLK/HCK results to the dashboard.
+
+## Prerequisites
+
+This article assumes that you've already made a Hardware Lab Kit(HLK) dashboard submission for Windows 10 or earlier versions of Windows. For information on how to create dashboard submission, see [Create a new hardware submission](hardware-submission-create.md). Your submission contains the package files needed to determine whether or not the packages has a Microsoft signature.
 
 ## Step 1: Download signed driver files
 
@@ -36,8 +40,6 @@ Now you that you've downloaded the signed files, you can validate the Microsoft 
 To check the EKU:
 
 1. Select and hold (or right-click) the .cat file.
-
-    :::image type="content" source="./images/code-signing-validate/eku-details.png" alt-text="Screenshot of EKU details pane for signed driver file.":::
 
 1. Select **Properties**, and then select the **Digital Signatures** tab.
 
