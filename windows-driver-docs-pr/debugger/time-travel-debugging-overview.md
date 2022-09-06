@@ -10,13 +10,13 @@ ms.date: 03/09/2022
 
 ## What is Time Travel Debugging?
 
-Time Travel Debugging, is a tool that allows you to record an execution of your process running, then replay it later both forwards and backwards. Time Travel Debugging (TTD) can help you debug issues easier by letting you "rewind" your debugger session, instead of having to reproduce the issue until you find the bug. 
+Time Travel Debugging is a tool that allows you to capture a trace of your process as it executes and then replay it later both forwards and backwards. Time Travel Debugging (TTD) can help you debug issues easier by letting you "rewind" your debugger session, instead of having to reproduce the issue until you find the bug. 
 
 TTD allows you to go back in time to better understand the conditions that lead up to the bug and replay it multiple times to learn how best to fix the problem. 
 
-TTD can have advantages over crash dump files, which often are missing the code execution that led up to the ultimate failure.  
+TTD can have advantages over crash dump files, which often miss the state and execution path that led to the ultimate failure.  
 
-In the event you can't figure out the issue yourself, you can share the trace with a co-worker and they can look at exactly what you're looking at. This can allow for easier collaboration than live debugging, as the recorded instructions are the same, where the address locations and code execution will be different on different PCs. You can also share a specific point in time to help your co-worker figure out where to start.
+In the event you can't figure out the issue yourself, you can share the trace with a co-worker and they can look at exactly what you're looking at. This can allow for easier collaboration than live debugging, as the recorded instructions are the same, whereas the address locations and code execution will differ on different PCs. You can also share a specific point in time to help your co-worker figure out where to start.
 
 TTD is efficient and works to add as little as possible overhead as it captures code execution in trace files.  
 
