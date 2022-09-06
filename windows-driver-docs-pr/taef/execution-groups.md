@@ -116,7 +116,7 @@ The message also says that Test3 should be run in the same environment as Test2.
 
 Let's consider another example: Examples\\TAEF\\CSharp\\ExecutionDependentGroupsExample (please refer to the latest TAEF release share)
 
-```cpp
+```csharp
 1     [TestClass]
 2     public class CSharpExecutionDependentGroupsExample
 3     {
