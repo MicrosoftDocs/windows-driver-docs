@@ -53,7 +53,7 @@ Interruption::RebootCustom(RebootOption::Continue);
 
 Call either of the two methods in the **Interruption** static class in the **WEX.TestExecution** namespace, which is located within **Te.Managed.dll**:
 
-```cpp
+```csharp
 using WEX.TestExecution;
 Interruption.Reboot(RebootOption.Rerun);
 Interruption.Reboot(RebootOption.Continue);
