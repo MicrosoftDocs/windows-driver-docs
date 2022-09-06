@@ -54,7 +54,7 @@ Runtime Parameters are available in setup and test methods. To obtain them, use 
 
 Example (class or assembly setup):
 
-```cpp
+```csharp
 [ClassInitialize]
 
 public static void ClassSetup(TestContext context)
@@ -66,7 +66,7 @@ public static void ClassSetup(TestContext context)
 
 Similarly, from a test:
 
-```cpp
+```csharp
 [TestMethod]
 
 public void VerifyRuntimeParametersTest()
@@ -97,24 +97,24 @@ Runtime parameters are available in the setup, cleanup and the test methods. To 
 Once the RuntimeParameters object is instantiated, you can use RuntimeParameters.Contains("&lt;runtime parameter name&gt;") method to query if a runtime parameter was supplied and is available to the test. If it returns true, you can then use RuntimeParameters.GetValue("&lt;runtime parameter name&gt;") to retrieve it. Note that RuntimeParameters.GetValue(...) will throw if the runtime parameter is not available. The following example is from our VBScript example:
 
 ```cpp
-       <script language="VBScript">
-            <![CDATA[
-                Function TestOne()
-                    dim param
-                    param = "No runtime param"
-                    If RuntimeParameters.Contains("param") Then
-                         param = RuntimeParameters.GetValue("param")
-                    End If
-                    Log.Comment("Param is " + param)
+<script language="VBScript">
+    <![CDATA[
+        Function TestOne()
+            dim param
+            param = "No runtime param"
+            If RuntimeParameters.Contains("param") Then
+                    param = RuntimeParameters.GetValue("param")
+            End If
+            Log.Comment("Param is " + param)
 
-                    dim testDir
-                    If RuntimeParameters.Contains("testDir") Then
-                        testDir = RuntimeParameters.GetValue("TestDir")
-                    End If
-                    Log.Comment("The test harness is running in " + testDir)
-                End Function
-            ]] >
-        </script>
+            dim testDir
+            If RuntimeParameters.Contains("testDir") Then
+                testDir = RuntimeParameters.GetValue("TestDir")
+            End If
+            Log.Comment("The test harness is running in " + testDir)
+        End Function
+    ]] >
+</script>
 ```
 
  
