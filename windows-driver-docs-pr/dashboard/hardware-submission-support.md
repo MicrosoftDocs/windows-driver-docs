@@ -80,3 +80,4 @@ There are two types of support issues in Windows developer support: Dashboard is
         :::image type="content" source="images/hardware-submission-support/create-support-request.png" alt-text="Screenshot showing the the Create a new support request submission form.":::
 
 1. Fill out the rest of the required information as prompted.
+ 
