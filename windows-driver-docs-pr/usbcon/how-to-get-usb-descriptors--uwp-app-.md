@@ -48,7 +48,7 @@ Your UWP app can get the device descriptor from the previously obtained [**UsbDe
 
 This code example shows how to populate a string with field values from device descriptor.
 
-```CSharp
+```csharp
 String GetDeviceDescriptorAsString (UsbDevice device)
 {
     String content = null;
@@ -83,7 +83,7 @@ The fixed portion of the configuration descriptor indicates the device's power c
 
 This code example shows how to get the fixed portion of a configuration descriptor in a string.
 
-```CSharp
+```csharp
 String GetConfigurationDescriptorAsString(UsbDevice device)
 {
     String content = null;
@@ -125,7 +125,7 @@ To get the interface descriptors from [**UsbConfiguration**](/uwp/api/Windows.De
 
 This example code gets all [**UsbInterface**](/uwp/api/Windows.Devices.Usb.UsbInterface) objects for the configuration. From each object, the helper method gets the number of alternate setting and open bulk and interface pipes. If a device supports multiple interfaces, device class, subclass, and protocol codes of each interface can differ. However, all interface descriptors for alternate settings must specify same codes. In this example, the method gets the device class, subclass, and protocol codes from the interface descriptor of the first setting to determine the code for the entire interface.
 
-```CSharp
+```csharp
 String GetInterfaceDescriptorsAsString(UsbDevice device)
 {
     String content = null;
@@ -178,7 +178,7 @@ All USB endpoints (except the default control endpoint) must have endpoint descr
 
 If your device has only one interface, you can use the [**UsbDevice.DefaultInterface**](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_DefaultInterface) to get the interface as shown in this example code. Here, the helper method gets populates a string with endpoint descriptors associated with pipes of the active interface setting.
 
-```CSharp
+```csharp
 private String GetEndpointDescriptorsAsString(UsbDevice device)
 {
     String content = null;
@@ -258,7 +258,7 @@ This way of getting descriptors is useful when the app wants to retrieve custom 
 
 This code example shows how to get a descriptor data in a buffer from the configuration descriptor. The example gets the configuration descriptor set and parses all descriptors contained in that set. For each descriptor, it uses the DataReader object to read the buffer and show descriptor length and type. You can get custom descriptors as shown in this example.
 
-```CSharp
+```csharp
 private String GetCustomDescriptorsAsString(UsbDevice device)
 {
     String content = null;

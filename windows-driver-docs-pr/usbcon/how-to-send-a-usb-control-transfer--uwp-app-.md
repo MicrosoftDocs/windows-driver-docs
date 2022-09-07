@@ -105,7 +105,7 @@ async Task SetSuperMuttLedBlinkPatternAsync(Byte pattern)
 
 This example code shows how to send a control transfer that changes the blinking pattern on the SuperMUTT device. The setup packet for the transfer contains a vendor-defined command. The example is in Scenario2\_ControlTransfer.cpp.
 
-```CSharp
+```csharp
 async Task<IBuffer> SendVendorControlTransferInToDeviceRecipientAsync(Byte vendorCommand, UInt32 dataPacketLength)
  {
     // Data will be written to this buffer when we receive it

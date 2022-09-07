@@ -34,7 +34,7 @@ For information about USB interface settings, see [USB device layout](usb-device
 
 This example code shows how to get the setting number for all settings defined in the default interface.
 
-```CSharp
+```csharp
 void GetInterfaceSetting (UsbDevice device)
 {
         auto interfaceSettings = device.InterfaceSettings;
@@ -57,7 +57,7 @@ void GetInterfaceSetting (UsbDevice device)
 
 To select a setting that is not currently active, you must find the [**UsbInterfaceSetting**](/uwp/api/Windows.Devices.Usb.UsbInterfaceSetting) object for the setting to select and then start an asynchronous operation by calling the [**UsbInterfaceSetting.SelectSettingAsync**](/uwp/api/Windows.Devices.Usb.UsbInterfaceSetting#Windows_Devices_Usb_UsbInterfaceSetting_SelectSettingAsync) method. The operation does not return a value.
 
-```CSharp
+```csharp
 private async void SetInterfaceSetting(UsbDevice device, Byte settingNumber)
 {
     var interfaceSetting = device.DefaultInterface.InterfaceSettings[settingNumber];
