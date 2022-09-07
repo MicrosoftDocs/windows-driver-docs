@@ -134,7 +134,7 @@ This is the simplest way to find a USB device. For details, see [Quickstart: enu
 
      
 
-```CSharp
+```csharp
     private async void OpenDevice()
     {
         UInt32 vid = 0x045E;
@@ -175,7 +175,7 @@ A [**DeviceWatcher**](/uwp/api/Windows.Devices.Enumeration.DeviceWatcher) object
 
 This code example shows how to create and start a device watcher to look for instances of the SuperMUTT device.
 
-```CSharp
+```csharp
 void CreateSuperMuttDeviceWatcher(void)
 {
     UInt32 vid = 0x045E;

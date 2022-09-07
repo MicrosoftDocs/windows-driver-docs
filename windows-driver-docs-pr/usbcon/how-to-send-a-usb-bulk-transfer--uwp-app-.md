@@ -164,7 +164,7 @@ For read operations, you might need to clear pending data in the pipe before sta
 
 This code example shows how to write to a bulk pipe. The example sends data to the first bulk OUT pipe on the default interface. It configures the pipe to send a zero-length packet at the end of the transfer. When the transfer is complete, number of bytes are shown.
 
-```CSharp
+```csharp
     private async void BulkWrite()
     {
         String dataBuffer = "Hello World!";
@@ -196,7 +196,7 @@ This code example shows how to write to a bulk pipe. The example sends data to t
 
 This code example shows how to read from a bulk pipe. The example retrieves data from the first bulk IN pipe on the default interface. It configures the pipe to for maximum efficiency and receives data in chunks of maximum packet size. When the transfer is complete, number of bytes are shown.
 
-```CSharp
+```csharp
     private async void BulkRead()
     {
         UInt32 bytesRead = 0;
