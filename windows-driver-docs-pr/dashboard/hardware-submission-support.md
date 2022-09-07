@@ -68,8 +68,6 @@ There are two types of support issues in Windows developer support: Dashboard is
 
 1. On the Support for business top menu, select **Create**
 
-    :::image type="content" source="images/hardware-submission-support/support-for-business-create.png" alt-text="Screenshot showing the Create link on the Support for business website.":::
-
 1. In the *Create a new support request* page, fill in the following information for *Step 1: Product and Support Type**
 
     - For **Select the product family**, select *Developer Tools*.
