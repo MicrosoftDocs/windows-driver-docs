@@ -1,6 +1,6 @@
 ---
-title:et support for Partner Center dashboard issues
-description: et support for Partner Center dashboard issues
+title: Get support for Partner Center dashboard issues
+description: Get support for Partner Center dashboard issues
 ms.topic: article
 ms.date: 09/07/2022
 ---
