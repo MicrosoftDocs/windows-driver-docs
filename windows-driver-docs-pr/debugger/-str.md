@@ -14,4 +14,4 @@ api_type:
 # !str
 
 
-The **!str** extension is obsolete and will no longer be supported. Use the (data model)[https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/dx--display-visualizer-variables-] instead.
+The **!str** extension is obsolete and will no longer be supported. Use the [data model](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/dx--display-visualizer-variables-) instead
