@@ -15,6 +15,25 @@
     href: smart-card-driver-library-callback-routines.md
   - name: "Smart Card Callback Parameters"
     href: smart-card-callback-parameters.md
+- name: "Smart Card RDF Callback functions"
+# Auto-expanded node
+  items: 
+  - name: "RDF_ATR_PARSE callback function"
+    href: smartcard-rdf-atr-parse-callback.md
+  - name: "RDF_CARD_EJECT callback function"
+    href: smartcard-rdf-card-eject-callback.md
+  - name: "RDF_CARD_POWER callback function"
+    href: smartcard-rdf-card-power-callback.md
+  - name: "RDF_CARD_TRACKING callback function"
+    href: smartcard-rdf-card-tracking-callback.md
+  - name: "RDF_IOCTL_VENDOR callback function"
+    href: smartcard-rdf-ioctl-vendor-callback.md
+  - name: "RDF_READER_SWALLOW callback function"
+    href: smartcard-rdf-reader-swallow-callback.md
+  - name: "RDF_SET_PROTOCOL callback function"
+    href: smartcard-rdf-set-protocol-callback.md
+  - name: "RDF_TRANSMIT callback function"
+    href: smartcard-rdf-transmit-callback.md
 - name: "WDM Reader Driver"
   href: wdm-reader-driver.md
 - name: "Smart Card Minidrivers"
