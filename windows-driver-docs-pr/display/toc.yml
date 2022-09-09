@@ -22,6 +22,10 @@
       href: what-s-new-for-windows-8-display-drivers.md
     - name: "What's new for Windows 7 display drivers (WDDM 1.1)"
       href: what-s-new-for-windows-7-display-drivers--wddm-1-1-.md
+  - name: "WDDM 3.1 features"
+    items:
+    - name: Sharing the backing store with KMD
+      href: sharing-backing-store-with-kmd.md
   - name: "WDDM 3.0 features"
     items:
     - name: "D3D12 video encoding"
