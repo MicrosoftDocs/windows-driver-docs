@@ -1,7 +1,7 @@
 ---
 title: Bug Check Code Reference
 description: This section contains descriptions of the common bug checks, including the parameters passed to the blue screen.
-ms.date: 03/10/2022
+ms.date: 08/22/2022
 ---
 
 # Bug Check Code Reference
@@ -28,7 +28,7 @@ A driver has failed to complete a power IRP within a specific time.
 Arguments:
 Arg1: 0000000000000003, A device object has been blocking an Irp for too long a time
 Arg2: 0000000000000000, Physical Device Object of the stack
-Arg3: 0000000000000000, nt!TRIAGE_9F_POWER on Win7 and higher, otherwise the Functional Device Object of the stack
+Arg3: 0000000000000000, nt!_TRIAGE_9F_POWER on Win7 and higher, otherwise the Functional Device Object of the stack
 Arg4: 0000000000000000, The blocked IRP
 ```
 
@@ -306,14 +306,15 @@ The following table provides links to bug check codes.
 | 0x0000011B | [**DRIVER\_RETURNED\_HOLDING\_CANCEL\_LOCK**](bug-check-0x11b---driver-returned-holding-cancel-lock.md)                                           |
 | 0x0000011C | [**ATTEMPTED\_WRITE\_TO\_CM\_PROTECTED\_STORAGE**](bug-check-0x11c--attempted-write-to-cm-protected-storage.md)                                   |
 | 0x0000011D | [**EVENT\_TRACING\_FATAL\_ERROR**](bug-check-0x11d---event-tracing-fatal-error.md)                                                                |
-| 0x0000011E | [**TOO\_MANY\_RECURSIVE\_FAULTS**](bug-check-0x11e--too-many-recursive-faults.md)                                                                |
-| 0x0000011F | [**INVALID\_DRIVER\_HANDLE**](bug-check-0x11f--invalid-driver-handle.md)                                                                         |
-| 0x00000120 | [**BITLOCKER\_FATAL\_ERROR**](bug-check-0x120--bitlocker-fatal-error-.md)                                                                        |
+| 0x0000011E | [**TOO\_MANY\_RECURSIVE\_FAULTS**](bug-check-0x11e--too-many-recursive-faults.md)                                                                 |
+| 0x0000011F | [**INVALID\_DRIVER\_HANDLE**](bug-check-0x11f--invalid-driver-handle.md)                                                                          |
+| 0x00000120 | [**BITLOCKER\_FATAL\_ERROR**](bug-check-0x120--bitlocker-fatal-error-.md)                                                                         |
 | 0x00000121 | [**DRIVER\_VIOLATION**](bug-check-0x121---driver-violation.md)                                                                                    |
 | 0x00000122 | [**WHEA\_INTERNAL\_ERROR**](bug-check-0x122---whea-internal-error.md)                                                                             |
-| 0x00000123 | [**CRYPTO\_SELF\_TEST\_FAILURE**](bug-check-0x123--crypto-self-test-failure-.md)                                                                 |
-| 0x00000125 | [**NMR\_INVALID\_STATE**](bug-check-0x125--nmr-invalid-state.md)                                                                                 |
-| 0x00000126 | [**NETIO\_INVALID\_POOL\_CALLER**](bug-check-0x126--netio-invalid-pool-caller.md)                                                                |
+| 0x00000123 | [**CRYPTO\_SELF\_TEST\_FAILURE**](bug-check-0x123--crypto-self-test-failure-.md)                                                                  |
+| 0x00000124 | [**WHEA\_UNCORRECTABLE\_ERROR**](bug-check-0x124---whea-uncorrectable-error.md)                                                                   |
+| 0x00000125 | [**NMR\_INVALID\_STATE**](bug-check-0x125--nmr-invalid-state.md)                                                                                  |
+| 0x00000126 | [**NETIO\_INVALID\_POOL\_CALLER**](bug-check-0x126--netio-invalid-pool-caller.md)                                                                 |
 | 0x00000127 | [**PAGE\_NOT\_ZERO**](bug-check-0x127---page-not-zero.md)                                                                                         |
 | 0x00000128 | [**WORKER\_THREAD\_RETURNED\_WITH\_BAD\_IO\_PRIORITY**](bug-check-0x128--worker-thread-returned-with-bad-io-priority.md)                          |
 | 0x00000129 | [**WORKER\_THREAD\_RETURNED\_WITH\_BAD\_PAGING\_IO\_PRIORITY**](bug-check-0x129--worker-thread-returned-with-bad-paging-io-priority.md)           |
@@ -332,7 +333,7 @@ The following table provides links to bug check codes.
 | 0x00000136 | [**VHD\_BOOT\_HOST\_VOLUME\_NOT\_ENOUGH\_SPACE**](bug-check-0x136--vhd-boot-host-volume-not-enough-space.md)                                      |
 | 0x00000137 | [**WIN32K\_HANDLE\_MANAGER**](bug-check-0x137--win32k-handle-manager.md)                                                                          |
 | 0x00000138 | [**GPIO\_CONTROLLER\_DRIVER\_ERROR**](bug-check-0x138-gpio-controller-driver-error.md)                                                            |
-| 0x00000139 | [**KERNEL\_SECURITY\_CHECK\_FAILURE**](bug-check-0x139--kernel-security-check-failure.md)                                              |
+| 0x00000139 | [**KERNEL\_SECURITY\_CHECK\_FAILURE**](bug-check-0x139--kernel-security-check-failure.md)                                                         |
 | 0x0000013A | [**KERNEL\_MODE\_HEAP\_CORRUPTION**](bug-check-0x13a--kernel-mode-heap-corruption.md)                                                             |
 | 0x0000013B | [**PASSIVE\_INTERRUPT\_ERROR**](bug-check-0x13b--passive-interrupt-error.md)                                                                      |
 | 0x0000013C | [**INVALID\_IO\_BOOST\_STATE**](bug-check-0x13c--invalid-io-boost-state.md)                                                                       |
@@ -363,6 +364,7 @@ The following table provides links to bug check codes.
 | 0x00000160 | [**WIN32K\_ATOMIC\_CHECK\_FAILURE**](bug-check-0x160--win32k-atomic-check-failure.md)                                                             |
 | 0x00000162 | [**KERNEL\_AUTO\_BOOST\_INVALID\_LOCK\_RELEASE**](bug-check-0x162--kernel-auto-boost-invalid-lock-release.md)                                     |
 | 0x00000163 | [**WORKER\_THREAD\_TEST\_CONDITION**](bug-check-0x162--worker-thread-test-condition.md)                                                           |
+| 0x00000164 | [**WIN32K\_CRITICAL\_FAILURE**](bug-check-0x164--win32k-critical-failure.md)                                                                      |
 | 0x0000016C | [**INVALID\_RUNDOWN\_PROTECTION\_FLAGS**](bug-check-0x16c--invalid-rundown-protection-flags.md)                                                   |
 | 0x0000016D | [**INVALID\_SLOT\_ALLOCATOR\_FLAGS**](bug-check-0x16d--invalid-slot-allocator-flags.md)                                                           |
 | 0x0000016E | [**ERESOURCE\_INVALID\_RELEASE**](bug-check-0x16e--eresource-invalid-release.md)                                                                  |
@@ -376,7 +378,7 @@ The following table provides links to bug check codes.
 | 0x00000187 | [**VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD**](bug-check-0x187--video-dwminit-timeout-fallback-bdd.md)                                              |
 | 0x00000189 | [**BAD\_OBJECT\_HEADER**](bug-check-0x189--bad-object-header.md)                                                                                  |
 | 0x0000018B | [**SECURE\_KERNEL\_ERROR**](bug-check-0x18b--secure-kernel-error.md)                                                                              |
-| 0x0000018C | [**HYPERGUARD\_VIOLATION**](bug-check-0x18c--hyperguard-violation.md)                                                                              |   
+| 0x0000018C | [**HYPERGUARD\_VIOLATION**](bug-check-0x18c--hyperguard-violation.md)                                                                             |   
 | 0x0000018D | [**SECURE\_FAULT\_UNHANDLED**](bug-check-0x18d--secure-fault-unhandled.md)                                                                        | 
 | 0x0000018E | [**KERNEL\_PARTITION\_REFERENCE\_VIOLATION**](bug-check-0x18e--kernel-partition-reference-violation.md)                                           |
 | 0x00000191 | [**PF\_DETECTED\_CORRUPTION**](bug-check-0x191--pf-detected-corruption.md)                                                                        |
@@ -389,6 +391,8 @@ The following table provides links to bug check codes.
 | 0x0000019C | [**WIN32K\_POWER\_WATCHDOG\_TIMEOUT**](bug-check-0x19c--win32k-power-watchdog-timeout.md)                                                         |
 | 0x000001A0 | [**TTM\_WATCHDOG\_TIMEOUT**](bug-check-0x1a0--ttm-watchdog-timeout.md)                                                                            |
 | 0x000001A2 | [**WIN32K\_CALLOUT\_WATCHDOG\_BUGCHECK**](bug-check-0x1a2--win32k-callout-watchdog-bugcheck.md)                                                   |
+| 0x000001AA | [**EXCEPTION\_ON\_INVALID\_STACK**](bug-check-0x1aa-exception-on-invalid-stack.md)                                                                |
+| 0x000001AB | [**UNWIND\_ON\_INVALID\_STACK**](bug-check-0x1ab-unwind-on-invalid-stack.md)                                                                      |
 | 0x000001C6 | [**FAST\_ERESOURCE\_PRECONDITION\_VIOLATION**](bug-check-0x1c6--fast-eresource-precondition-violation.md)                                         |
 | 0x000001C7 | [**STORE\_DATA\_STRUCTURE\_CORRUPTION**](bug-check-0x1c7--store-data-structure-corruption.md)                                                     |
 | 0x000001C8 | [**MANUALLY\_INITIATED\_POWER\_BUTTON\_HOLD**](bug-check-0x1c8--manually-initiated-power-button-hold.md)                                          |
@@ -405,9 +409,13 @@ The following table provides links to bug check codes.
 | 0x000001D7 | [**EFS\_FATAL\_ERROR**](bug-check-0x1d7--efs-fatal-error.md)                                                                                      |
 | 0x000001D8 | [**UCMUCSI\_FAILURE**](bug-check-0x1d8--ucmucsi-failure.md)                                                                                       |
 | 0x000001D9 | [**HAL\_IOMMU\_INTERNAL\_ERROR**](bug-check-0x1d8--ucmucsi-failure.md)                                                                            |  
-| 0x000001DA | [**HAL\_BLOCKED\_PROCESSOR\_INTERNAL\_ERROR**](bug-check-0x1da--hal-blocked-processor-internal-error.md)                                         |
+| 0x000001DA | [**HAL\_BLOCKED\_PROCESSOR\_INTERNAL\_ERROR**](bug-check-0x1da--hal-blocked-processor-internal-error.md)                                          |
 | 0x000001DB | [**IPI\_WATCHDOG\_TIMEOUT**](bug-check-0x1db--ipi-watchdog-timeout.md)                                                                            |
 | 0x000001DC | [**DMA_COMMON_BUFFER_VECTOR_ERROR**](bug-check-0x1dc--dma-common-buffer-vector-error.md)                                                          |
+| 0x000001E4 | [**VIDEO\_DXGKRNL\_SYSMM_FATAL_ERROR**](bug-check-0x1e4--video-dxgkrnl-sysmm-fatal-error.md)                                                      |
+| 0x000001E9 | [**ILLEGAL\_ATS\_INITIALIZATION**](bug-check-0x1e9--illegal-ats-initialization.md)                                                                |
+| 0x000001EA | [**SECURE\_PCI\_CONFIG\_SPACE\_ACCESS\_VIOLATION**](bug-check-0x1ea--secure-pci-config-space-access-violation.md)                                 |
+| 0x000001EB | [**DAM\_WATCHDOG\_TIMEOUT**](bug-check-0x1eb--dam-watchdog-timeout.md)                                                                            |
 | 0x00000356 | [**XBOX\_ERACTRL\_CS\_TIMEOUT**](bug-check-0x356--xbox-eractrl-cs-timeout.md)                                                                     |
 | 0x00000BFE | [**BC\_BLUETOOTH\_VERIFIER\_FAULT**](bug-check-0xbfe--bc-bluetooth-verifier-fault.md)                                                             |
 | 0x00000BFF | [**BC\_BTHMINI\_VERIFIER\_FAULT**](bug-check-0xbff--bc-bthmini-verifier-fault.md)                                                                 |

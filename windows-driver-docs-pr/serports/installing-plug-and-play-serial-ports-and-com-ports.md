@@ -6,6 +6,7 @@ keywords:
 - Plug and Play serial devices WDK
 - serial devices WDK , Plug and Play
 ms.date: 03/17/2022
+ms.custom: contperf-fy22q4
 ---
 
 # Programming Installation for Plug and Play Serial Ports and COM Ports

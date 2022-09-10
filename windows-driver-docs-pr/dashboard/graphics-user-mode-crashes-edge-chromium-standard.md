@@ -20,7 +20,7 @@ When users are browsing the internet with Edge Chromium, their graphics componen
 | **Measurement criteria** | Aggregation of instances |
 | **Minimum population** | 30,000 hours of Microsoft Edge Chromium runtime |
 | **Passing criteria** | <= 1 crash per year |
-| **Measure ID** | 25481659 |
+| **Measure ID** | 21839447 |
 
 ## Calculation
 
@@ -30,7 +30,8 @@ Total Edge Chromium crashes = Count(Edge Chromium crashes on machines that have 
 
 Total Edge Chromium runtime = Sum(Edge Chromium runtime for each machine that has the driver)
 
-Runtime in years = total Edge Chromium runtime ∗ 60 (minute) ∗ 60 (hour) ∗ 24 (day) ∗ 365 (year)
+Runtime in years = total runtime of Edge Chromium in seconds /( 60 (minute) * 60 (hour) * 24 (day) * 365 (year))
+
 
 ### Final Calculation
 

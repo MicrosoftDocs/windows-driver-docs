@@ -1,30 +1,34 @@
 ---
-title: Enumerating Installed Device Interfaces
-description: Enumerating Installed Device Interfaces
+title: Enumerating installed device interfaces
+description: Provides information about enumerating installed device interfaces.
 keywords:
 - enumerating installed device interfaces WDK
 - installed device interfaces WDK
 - installed device interfaces WDK , enumerating
 - device interfaces WDK device installations , enumerating
-ms.date: 04/20/2017
+ms.date: 08/15/2022
 ---
 
-# Enumerating Installed Device Interfaces
+# Enumerating installed device interfaces
 
+You must not enumerate the device interfaces in a system by directly accessing registry keys. As with any registry key, the location, name, or format of the key might change between different versions of Windows.
 
-You must not enumerate the device interface classes in a system by directly accessing registry keys. As with any registry key, the location, name, or format of the key might change between different versions of Windows.
+Use the following guidelines to safely enumerate device interfaces.
 
-Use the following guidelines to safely discover the attributes of device interfaces:
+User-mode applications should follow these steps:
 
--   User-mode applications should follow these steps:
+- Using [configuration manager](/windows/win32/api/cfgmgr32/) functions:
 
-    1.  Use [**SetupDiGetClassDevs**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw) or [**SetupDiGetClassDevsEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsexa) to retrieve the devices that support interfaces for the specified device interface class. You must set the DIGCF_DEVICEINTERFACE flag in the *Flags* parameter, and you must set the *Enumerator* parameter to a specific device instance identifier.
+    Use [**CM_Get_Device_Interface_List**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_listw) to retrieve a list of device interfaces in the specified *InterfaceClassGuid*. You can optionally restrict the list to only device interfaces exposed by a particular device by setting the *pDeviceID* parameter to a specific device instance identifier.
 
-        To include only device interfaces that are present in a system, set the DIGCF_PRESENT flag in the *Flags* parameter.
+    To include only device interfaces that are present (enabled) in a system, set the *CM_GET_DEVICE_INTERFACE_LIST_PRESENT* flag in the *ulFlags* parameter.
 
-    2.  Use [**SetupDiEnumDeviceInterfaces**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) to enumerate interfaces that are registered for a device interface class. This interface class is specified through the *InterfaceClassGuid* parameter.
+- Using [SetupApi](setupapi.md) functions:
 
--   Kernel-mode drivers should use [**IoGetDeviceInterfaces**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfaces) to enumerate the device interface classes that are installed in the system.
+    1. Use [**SetupDiGetClassDevs**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw) or [**SetupDiGetClassDevsEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsexa) with the *DIGCF_DEVICEINTERFACE* flag set in the *Flags* parameter to retrieve the device interfaces for the specified device interface class. You can optionally restrict the list to only device interfaces exposed by a particular device by setting the *Enumerator* parameter to a specific device instance identifier.
 
- 
+        To include only device interfaces that are present (enabled) in a system, set the *DIGCF_PRESENT* flag in the *Flags* parameter.
 
+    1. Use [**SetupDiEnumDeviceInterfaces**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) to enumerate interfaces returned by the above calls.
+
+Kernel-mode drivers should use [**IoGetDeviceInterfaces**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfaces) to retrieve a list of device interfaces in the specified *InterfaceClassGuid*.  You can optionally restrict the list to only device interfaces exposed by a particular device by setting the *PhysicalDeviceObject* parameter.

@@ -1,6 +1,6 @@
 ---
 title: Update a shipping label
-description: This method updates a shipping label in the Hardware dashboard API.
+description: This method updates a shipping label in the hardware dashboard API.
 ms.topic: article
 ms.date: 08/21/2018
 ---
@@ -121,4 +121,4 @@ For more info about error codes, see [Error codes](get-product-data.md#error-cod
 
 ## See also
 
-- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+- [hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

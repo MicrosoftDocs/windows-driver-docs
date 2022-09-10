@@ -1,7 +1,7 @@
 ---
 title: Using ECPs to process IRP_MJ_CREATE in a file system filter driver
 description: Using ECPs to Process IRP_MJ_CREATE Operations in a File System Filter Driver
-ms.date: 09/09/2021
+ms.date: 07/01/2022
 ---
 
 # Using ECPs to process IRP_MJ_CREATE operations in a file system filter driver
@@ -12,7 +12,7 @@ You can use extra create parameters (ECPs) in your file system filter driver to 
 
 To retrieve ECPs for the [**IRP_MJ_CREATE**](./irp-mj-create.md) operation:
 
-1. Call [**FltGetEcpListFromCallbackData**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetecplistfromcallbackdata) (or [**FsRtlGetEcpListFromIrp**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlgetecplistfromirp)) to retrieve a pointer to the ([**ECP_LIST**](/previous-versions/windows/hardware/drivers/ff540148(v=vs.85))) that is associated with the create operation.
+1. Call [**FltGetEcpListFromCallbackData**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetecplistfromcallbackdata) (or [**FsRtlGetEcpListFromIrp**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlgetecplistfromirp)) to retrieve a pointer to the [**ECP_LIST**](introduction-to-extra-create-parameters.md) that is associated with the create operation.
 
 2. Perform either of the following operations:
     - Call [**FltGetNextExtraCreateParameter**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetnextextracreateparameter) (or [**FsRtlGetNextExtraCreateParameter**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlgetnextextracreateparameter)) to retrieve a pointer to the next (or first) ECP context structure in the ECP list.
@@ -22,29 +22,29 @@ To retrieve ECPs for the [**IRP_MJ_CREATE**](./irp-mj-create.md) operation:
 
 To set ECPs for the [**IRP_MJ_CREATE**](./irp-mj-create.md) operation, your file system filter driver will either:
 
-- Set ECPs in an existing ECP_LIST.
+- Set ECPs in an existing **ECP_LIST**.
 
-- Set ECPs in a newly created ECP_LIST.
+- Set ECPs in a newly created **ECP_LIST**.
 
 ### Setting ECPs in an existing ECP_LIST
 
-To set ECPs in an *existing* [**ECP_LIST**](/previous-versions/windows/hardware/drivers/ff540148(v=vs.85)) that is associated with the create operation:
+To set ECPs in an *existing* **ECP_LIST** that is associated with the create operation:
 
 1. Call [**FltGetEcpListFromCallbackData**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetecplistfromcallbackdata) (or [**FsRtlGetEcpListFromIrp**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlgetecplistfromirp)) to retrieve a pointer to the **ECP_LIST** that is associated with the create operation.
 
 2. Call [**FltAllocateExtraCreateParameter**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocateextracreateparameter) (or [**FsRtlAllocateExtraCreateParameter**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlallocateextracreateparameter)) to allocate paged memory pool for an ECP context structure and to generate a pointer to that structure.
 
-3. Call [**FltInsertExtraCreateParameter**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltinsertextracreateparameter) (or [**FsRtlInsertExtraCreateParameter**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlinsertextracreateparameter)) to insert ECP context structures into the [**ECP_LIST**](/previous-versions/windows/hardware/drivers/ff540148(v=vs.85)) structure.
+3. Call [**FltInsertExtraCreateParameter**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltinsertextracreateparameter) (or [**FsRtlInsertExtraCreateParameter**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlinsertextracreateparameter)) to insert ECP context structures into the **ECP_LIST** structure.
 
 ### Setting ECPs in a newly created ECP_LIST
 
-If an [**ECP_LIST**](/previous-versions/windows/hardware/drivers/ff540148(v=vs.85)) is not currently associated with the create operation, you'll need to create one and then set ECPs in it:
+If an **ECP_LIST** is not currently associated with the create operation, you'll need to create one and then set ECPs in it:
 
-1. Call [**FltAllocateExtraCreateParameterList**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocateextracreateparameterlist) (or [**FsRtlAllocateExtraCreateParameterList**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlallocateextracreateparameterlist)) to allocate memory for an [**ECP_LIST**](/previous-versions/windows/hardware/drivers/ff540148(v=vs.85)) structure.
+1. Call [**FltAllocateExtraCreateParameterList**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocateextracreateparameterlist) (or [**FsRtlAllocateExtraCreateParameterList**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlallocateextracreateparameterlist)) to allocate memory for an **ECP_LIST** structure.
 
 2. Call [**FltAllocateExtraCreateParameter**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocateextracreateparameter) (or [**FsRtlAllocateExtraCreateParameter**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlallocateextracreateparameter)) to allocate paged memory pool for an ECP context structure and to generate a pointer to that structure.
 
-3. Call [**FltInsertExtraCreateParameter**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltinsertextracreateparameter) (or [**FsRtlInsertExtraCreateParameter**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlinsertextracreateparameter)) to insert ECP context structures into the [**ECP_LIST**](/previous-versions/windows/hardware/drivers/ff540148(v=vs.85)).
+3. Call [**FltInsertExtraCreateParameter**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltinsertextracreateparameter) (or [**FsRtlInsertExtraCreateParameter**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlinsertextracreateparameter)) to insert ECP context structures into the **ECP_LIST**.
 
 4. Call [**FltSetEcpListIntoCallbackData**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltsetecplistintocallbackdata) (or [**FsRtlSetEcpListIntoIrp**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlsetecplistintoirp)) to attach an ECP list to the create operation.
 

@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 
 The example below shows a C# .cs file with a simple single test class that demostrates C# tests markup. (Please note that this example is for demonstrational purpose only, so it will not compile or run.)
 
-```CSharp
+```csharp
 1    using Microsoft.VisualStudio.TestTools.UnitTesting;
 2    using System;
 3    using System.Collections;
@@ -121,26 +121,26 @@ TAEF's NetFX 4.5 binaries support the execution of async TAEF test methods. This
 
 TAEF supports both async **void** and async **Task** test methods (both will result in the same functionality):
 
-```CSharp
-            [TestMethod]
-            public async Task MyAsyncTest()
-            {
-                await AsyncAPICall1();
-                var result = await AsyncAPICall2();
-                Verify.IsTrue(result);
-            }
+```csharp
+[TestMethod]
+public async Task MyAsyncTest()
+{
+    await AsyncAPICall1();
+    var result = await AsyncAPICall2();
+    Verify.IsTrue(result);
+}
 ```
 
 Alternatively:
 
-```CSharp
-            [TestMethod]
-            public async void MyAsyncTest2()
-            {
-                await AsyncAPICall1();
-                var result = await AsyncAPICall2();
-                Verify.IsTrue(result);
-            }
+```csharp
+[TestMethod]
+public async void MyAsyncTest2()
+{
+    await AsyncAPICall1();
+    var result = await AsyncAPICall2();
+    Verify.IsTrue(result);
+}
 ```
 
  

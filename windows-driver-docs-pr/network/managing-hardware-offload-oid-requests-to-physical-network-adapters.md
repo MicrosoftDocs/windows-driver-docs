@@ -80,7 +80,7 @@ The following VMQ OID requests are encapsulated:
 
 The forwarding extension can veto OID requests of [OID\_RECEIVE\_FILTER\_ALLOCATE\_QUEUE](./oid-receive-filter-allocate-queue.md) and [OID\_RECEIVE\_FILTER\_SET\_FILTER](./oid-receive-filter-set-filter.md) by completing the request with a status code other than NDIS\_STATUS\_SUCCESS. However, the extension must not veto the other VMQ OID requests.
 
-For more information about the VMQ hardware offload technology, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md).
+For more information about the VMQ hardware offload technology, see [Virtual Machine Queue (VMQ)](virtual-machine-queue-architecture.md).
 
 The forwarding extension must follow these guidelines for handling hardware offload OID requests:
 

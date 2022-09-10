@@ -14,13 +14,9 @@ api_type:
 # Bug Check 0x193: VIDEO\_DXGKRNL\_LIVEDUMP
 
 
-The VIDEO\_DXGKRNL\_LIVEDUMP live dump has a value of 0x00000193. This indicates a livedump triggered by dxgkrnl occurred.
+The VIDEO\_DXGKRNL\_LIVEDUMP live dump has a value of 0x00000193. This indicates a live dump triggered by dxgkrnl occurred.
 
 (This code can never be used for a real bug check; it is used to identify live dumps.)
-
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
 
 ## VIDEO\_DXGKRNL\_LIVEDUMP Parameters
 

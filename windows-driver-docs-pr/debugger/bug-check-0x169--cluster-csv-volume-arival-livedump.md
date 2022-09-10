@@ -15,11 +15,6 @@ api_type:
 
 The CLUSTER\_CSV\_VOLUME\_ARRIVAL\_LIVEDUMP live dump has a value of 0x00000169. This indicates that Cluster Shared Volume Manager was asked to create a new volume device object, and volume has not arrived in time.
 
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
-
-
 ## CLUSTER\_CSV\_VOLUME\_ARRIVAL\_LIVEDUMP Parameters
 
 |Parameter|Description|

@@ -81,6 +81,6 @@ devcon find @*hub*
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 20: Find devices by hardware ID pattern](devcon-examples.md#ddk_example_20_find_devices_by_hardware_id_pattern_tools)
+[Example 20: Find devices by hardware ID pattern](devcon-examples.md#example-20-find-devices-by-hardware-id-pattern)
 
-[Example 21: Find devices by device instance ID or class](devcon-examples.md#ddk_example_21_find_devices_by_device_instance_id_or_class_tools)
+[Example 21: Find devices by device instance ID or class](devcon-examples.md#example-21-find-devices-by-device-instance-id-or-class)

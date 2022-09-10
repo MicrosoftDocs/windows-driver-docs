@@ -9,7 +9,7 @@ ms.date: 10/22/2018
 
 This topic presents an architectural overview of the Windows 8.1 support for rerouting audio data to bypass the Bluetooth host controller interface (HCI).
 
-Starting with Windows 8.1, the Microsoft operating system has been updated to be compatible with low power system-on-a-chip (SoC) design solutions. The new Windows support is compatible with either Intel-based or ARM-based SoC designs. These new low-power devices will be optimized for “always on” scenarios, so low battery consumption will be a key factor for success.
+Starting with Windows 8.1, the Microsoft operating system has been updated to be compatible with low power system-on-a-chip (SoC) design solutions. The new Windows support is compatible with either Intel-based or Arm-based SoC designs. These new low-power devices will be optimized for “always on” scenarios, so low battery consumption will be a key factor for success.
 
 SoC architectures use the Universal Asynchronous Receiver/Transmitter (UART) transport mode to transmit data to and from the Bluetooth host controller.
 

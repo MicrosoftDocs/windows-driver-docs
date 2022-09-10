@@ -1,7 +1,7 @@
 ---
 title: EvtIddCxMonitorAssignSwapChain error handling
 description: Error handling associated with EvtIddCxMonitorAssignSwapChain
-ms.date: 09/28/2020
+ms.date: 08/05/2022
 keywords:
 - EvtIddCxMonitorAssignSwapChain, error handling
 - EvtIddCxMonitorAssignSwapChain error handling, indirect display driver
@@ -14,7 +14,7 @@ keywords:
 
 In Windows 10 releases before version 1903, the rest of the desktop composition was unaware if [**EvtIddCxMonitorAssignSwapChain**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_assign_swapchain) failed. It continued to render and present frames that the indirect display adapter did not process, resulting in IddCx terminating the indirect display driver (IDD) after some time.
 
-Starting with Windows 10, version 1903, IddCx error handling for this callback changed for all driver versions, and introduced the **STATUS_GRAPHICS_INDIRECT_DISPLAY_ABANDON_SWAPCHAIN** status code. See [**EvtIddCxMonitorAssignSwapChain**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_assign_swapchain) for details.
+Starting with Windows 10 version 1903 (IddCx 1.4), IddCx error handling for this callback changed for all driver versions, and introduced the **STATUS_GRAPHICS_INDIRECT_DISPLAY_ABANDON_SWAPCHAIN** status code. See [**EvtIddCxMonitorAssignSwapChain**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_assign_swapchain) for details.
 
 ## Handling errors in the frame processing loop-thread
 

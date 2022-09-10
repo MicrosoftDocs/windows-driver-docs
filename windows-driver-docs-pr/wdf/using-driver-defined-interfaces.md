@@ -38,7 +38,7 @@ To create an interface and make it available to other drivers, framework-based d
 
 1.  Define an interface structure.
 
-    The first member of this driver-defined structure must be an [**INTERFACE**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface) header structure. Additional members might include interface data and pointers to additional structures or routines that anther driver can call.
+    The first member of this driver-defined structure must be an [**INTERFACE**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface) header structure. Additional members might include interface data and pointers to additional structures or routines that another driver can call.
 
     Your driver must provide a [**WDF\_QUERY\_INTERFACE\_CONFIG**](/windows-hardware/drivers/ddi/wdfqueryinterface/ns-wdfqueryinterface-_wdf_query_interface_config) structure, which describes the interface that you have defined.
 

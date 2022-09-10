@@ -1,15 +1,17 @@
 - name: "Streaming media devices design guide"
   href: index.md
-- name: "Camera privacy controls"
+- name: "Camera privacy controls (shutters and kill switches)"
 # Auto-expanded node
   items: 
-  - name: "Camera privacy controls"
+  - name: "Camera privacy shutters and kill switches"
     href: camera-privacy-controls.md
-- name: "Privacy shutter notification"
+  - name: "Privacy shutter/switch notification"
+    href: privacy-shutter-notification.md
+- name: "Background segmentation portrait mode and eye gaze stare mode driver sample"
 # Auto-expanded node
   items: 
-  - name: "Privacy shutter notification"
-    href: privacy-shutter-notification.md
+  - name: "Background segmentation portrait mode and eye gaze stare mode driver sample"
+    href: background-segmentation-portrait-mode-eye-gaze-stare-mode-driver-sample.md
 - name: "Device firmware update for USB devices without using a co-installer"
 # Auto-expanded node
   items: 
@@ -25,7 +27,6 @@
   items: 
   - name: "Digital Window overview"
     href: digital-window-overview.md
-
 - name: "USB Video Class (UVC) camera implementation guide"
 # Auto-expanded node
   items: 

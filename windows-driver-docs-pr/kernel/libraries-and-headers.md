@@ -1,7 +1,7 @@
 ---
 title: Libraries and Headers
 description: Libraries and Headers
-ms.date: 10/17/2018
+ms.date: 07/12/2022
 ---
 
 # Libraries and Headers
@@ -21,7 +21,7 @@ The Windows SDK documentation describes some, but not all, of the **Nt** entry p
 
 With a couple of minor exceptions, each entry point in Ntdll.dll for an **Nt** routine has a matching entry point for a **Zw** routine. The documentation for the WDK and Windows SDK recommends that application developers avoid calling undocumented **Nt** entry points, and warns that the **Zw** entry points might disappear from Ntdll.dll in a future version of Windows. Application developers who call the **Zw** routines from user mode should be prepared for this occurrence.
 
-For descriptions of the **Nt** routines that can be called by applications, see [Winternl](https://go.microsoft.com/fwlink/p/?linkid=157253), [Files](https://go.microsoft.com/fwlink/p/?linkid=157254), and [Miscellaneous Low-Level Client Support](/windows/win32/devnotes/-win32-misclowlevelclientsupport). Some reference pages for **Nt** routines in the Windows SDK documentation label the routines as "deprecated" and advise readers to use the equivalent Win32 routines instead of the deprecated **Nt** routines.
+For descriptions of the **Nt** routines that can be called by applications, see [Winternl](/windows/win32/devnotes/winternl), [winternl.h header](/windows/win32/api/winternl/), and [Miscellaneous Low-Level Client Support](/windows/win32/devnotes/-win32-misclowlevelclientsupport). Some reference pages for **Nt** routines in the Windows SDK documentation label the routines as "deprecated" and advise readers to use the equivalent Win32 routines instead of the deprecated **Nt** routines.
 
 A user-mode application cannot call the entry points in Ntoskrnl.exe, and a kernel-mode driver cannot call the entry points in Ntdll.dll.
 

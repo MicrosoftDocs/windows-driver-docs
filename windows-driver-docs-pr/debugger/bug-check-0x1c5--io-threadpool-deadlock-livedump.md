@@ -16,9 +16,6 @@ api_type:
 
 The IO\_THREADPOOL\_DEADLOCK\_LIVEDUMP live dump has a value of 0x000001C5. This indicates a kernel mode threadpool encountered a deadlock situation.
 
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
 (This code can never be used for a real bug check; it is used to identify live dumps.)
 
 ## IO\_THREADPOOL\_DEADLOCK\_LIVEDUMP Parameters

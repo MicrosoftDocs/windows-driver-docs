@@ -1,5 +1,10 @@
 - name: "Bring up"
   href: index.md
+- name: "Firmware Attack Surface Reduction (FASR)"
+# Auto-expanded node
+  items: 
+  - name: "Firmware Attack Surface Reduction (FASR)"
+    href: firmware-attack-surface-reduction.md
 - name: "Firmware Windows Engineering Guide (WEG)"
 # Auto-expanded node
   items: 
@@ -24,6 +29,8 @@
       href: secure-boot.md
     - name: "Trusted Platform Module (TPM) considerations"
       href: trusted-platform-module-considerations.md
+    - name: "UEFI CA Memory Mitigation Requirements for Signing"
+      href: uefi-ca-memory-mitigation-requirements.md
   - name: "Firmware update"
 # Auto-expanded node
     items: 

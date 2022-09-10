@@ -20,6 +20,7 @@ User-Mode
 
 ```dbgcmd
     !analyze [-v] [-f | -hang] [-D BucketID] 
+    !analyze [-v] -xml [-xmi] [-xcs] [-xmf OutputXmlFile]
     !analyze -c [-load KnownIssuesFile | -unload | -help ]
 ```
 
@@ -27,6 +28,7 @@ Kernel-Mode
 
 ```dbgcmd    
     !analyze [-v] [-f | -hang] [-D BucketID] 
+    !analyze [-v] -xml [-xmi] [-xcs] [-xmf OutputXmlFile]
     !analyze -c [-load KnownIssuesFile | -unload | -help ]
     !analyze -show BugCheckCode [BugParameters]
 ```
@@ -63,6 +65,18 @@ The list of known issues in the *KnownIssuesFile* file is used for all later **-
 
 <span id="-unload"></span><span id="-UNLOAD"></span>**-unload**  
 Unloads the current list of known issues.
+
+<span id="-xml"></span>**-xml**   
+Generates the analysis output in XML format.
+
+<span id="-xmi"></span>**-xmi**   
+Adds module information to the xml output. This option requires -xml or -xmf.
+
+<span id="-xcs"></span>**-xcs**   
+Adds the context and call stack frames to the xml output. This option requires -xml or -xmf.
+
+<span id="-xmf"></span>**-xmf** *OutputXmlFile*   
+Writes the analysis to the specified *OutputXmlFile* in XML format. The file will be overwritten if it already exists. No analysis output will be generated to the console or log unless the -xml option is also specified.
 
 <span id="-help"></span><span id="-HELP"></span>**-help**  
 Displays help for the **!analyze** **-c** extension commands extension in the [Debugger Command window](debugger-command-window.md).

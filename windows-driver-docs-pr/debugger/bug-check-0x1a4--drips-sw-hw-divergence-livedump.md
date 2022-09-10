@@ -19,10 +19,6 @@ Software and hardware DRIPS divergence exceeds default/programmed threshold time
 
 (This code can never be used for a real bugcheck; it is used to identify live dumps.)
 
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
-
 ## DRIPS\_SW\_HW\_DIVERGENCE\_LIVEDUMP Parameters
 
 

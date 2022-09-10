@@ -15,10 +15,6 @@ api_type:
 
 The VIDEO\_MINIPORT\_FAILED\_LIVEDUMP live dump has a value of 0x000001B0.
 
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
-
 ## VIDEO\_MINIPORT\_FAILED\_LIVEDUMP Parameters
 
 |Parameter|Description|

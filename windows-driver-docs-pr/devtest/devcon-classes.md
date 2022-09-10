@@ -39,4 +39,4 @@ devcon classes > setupclasses.txt
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 4: List classes on the local computer](devcon-examples.md#ddk_example_4_list_classes_on_the_local_computer_tools)
+[Example 4: List classes on the local computer](devcon-examples.md#example-4-list-classes-on-the-local-computer)

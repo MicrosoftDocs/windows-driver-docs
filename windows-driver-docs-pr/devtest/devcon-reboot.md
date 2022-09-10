@@ -38,7 +38,7 @@ devcon reboot
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
-[Example 39: Reboot the local computer](devcon-examples.md#ddk_example_39_reboot_the_local_computer_tools)
+[Example 39: Reboot the local computer](devcon-examples.md#example-39-reboot-the-local-computer)
 
 
 

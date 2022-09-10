@@ -50,4 +50,4 @@ If the NDIS\_NIC\_SWITCH\_CAPS\_SINGLE\_VPORT\_POOL flag is set, available nonde
 
 If the NDIS\_NIC\_SWITCH\_CAPS\_SINGLE\_VPORT\_POOL flag is not set, the creation and assignment of nondefault VPorts is reserved for VF assignment. The maximum number of additional nondefault VPorts that can be created and assigned to the PF and used for VM receive queues is (**MaxNumVPorts**–**MaxNumVFs**).
 
-For more information about VMQ, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md).
+For more information about VMQ, see [Virtual Machine Queue (VMQ)](virtual-machine-queue-architecture.md).

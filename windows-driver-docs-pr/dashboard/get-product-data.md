@@ -395,6 +395,7 @@ The following table lists Operating system Family Codes and their descriptions.
 | Windows_v100_VB | Windows 10 version 2004 |
 | Windows_v100Server_FE | Windows - Server, version 21H2 |
 | Windows_v100_CO | Windows - Client, version 21H2 |
+| Windows_v100_NI | Windows 11 Client, version 22H2 |
 
 ### List of Operating System Codes
 
@@ -445,23 +446,25 @@ The following table lists Operating System Codes and their descriptions.
 |WINDOWS_v100_X64_RS2_FULL|Windows 10 RS2 Client x64|
 |WINDOWS_v100_RS3_FULL|Windows 10 RS3 Client|
 |WINDOWS_v100_X64_RS3_FULL|Windows 10 RS3 Client x64|
-|WINDOWS_v100_ARM64_RS3_FULL|Windows 10 RS3 Client ARM64|
+|WINDOWS_v100_ARM64_RS3_FULL|Windows 10 RS3 Client Arm64|
 |WINDOWS_v100_RS4_FULL|Windows 10 RS4 Client|
 |WINDOWS_v100_X64_RS4_FULL|Windows 10 RS4 Client x64|
-|WINDOWS_v100_ARM64_RS4_FULL|Windows 10 RS4 Client ARM64|
+|WINDOWS_v100_ARM64_RS4_FULL|Windows 10 RS4 Client Arm64|
 |WINDOWS_v100_SERVER_X64_RS5_FULL | Windows Server 2019 |
 |WINDOWS_v100_RS5_FULL | Windows 10 RS5 x86 |
 |WINDOWS_v100_X64_RS5_FULL | Windows 10 RS5 Client x64 |
 |WINDOWS_v100_19H1_FULL |Windows 19H1 Client x86 |
 |WINDOWS_v100_X64_19H1_FULL |Windows 19H1 Client x64 |
-|WINDOWS_v100_ARM64_19H1_FULL | Windows 19H1 Client ARM64 |
+|WINDOWS_v100_ARM64_19H1_FULL | Windows 19H1 Client Arm64 |
 |WINDOWS_v100_VB_FULL | Windows 10 version 2004 Client x86 |
 |WINDOWS_v100_X64_VB_FULL | Windows version 2004 Client x64 |
-|WINDOWS_v100_ARM64_VB_FULL | Windows version 2004 Client ARM64 |
+|WINDOWS_v100_ARM64_VB_FULL | Windows version 2004 Client Arm64 |
 |WINDOWS_v100_SERVER_X64_FE_FULL | Windows - Server, version 21H2 x64 |
-|WINDOWS_v100_SERVER_ARM64_FE_FULL | Windows - Server, version 21H2 ARM64 |
+|WINDOWS_v100_SERVER_ARM64_FE_FULL | Windows - Server, version 21H2 Arm64 |
 |WINDOWS_v100_X64_CO_FULL | Windows - Client, version 21H2 x64 |
-|WINDOWS_v100_ARM64_CO_FULL | Windows - Client, version 21H2 ARM64 |
+|WINDOWS_v100_ARM64_CO_FULL | Windows - Client, version 21H2 Arm64 |
+|WINDOWS_v100_X64_NI_FULL | Windows 11 Client, version 22H2 x64 |
+|WINDOWS_v100_ARM64_NI_FULL | Windows 11 Client, version 22H2 Arm64 |
 
 ## Error codes
 
@@ -502,4 +505,4 @@ If there are functional validation failures, the response body will contain one 
 
 ## See also
 
-* [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+* [hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

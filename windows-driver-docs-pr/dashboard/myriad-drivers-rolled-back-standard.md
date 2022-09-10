@@ -20,7 +20,7 @@ This measure is tracking whether a driver is rolled back or succeeded by another
 |**Measurement criteria**|Machine count|
 |**Minimum population**|5,000 Devices|
 |**Passing criteria**|<= 10 rollbacks per 10,000 devices that installed the driver|
-|**Measure ID**|19564492|
+|**Measure ID**|33480951|
 
 ## Calculation
 

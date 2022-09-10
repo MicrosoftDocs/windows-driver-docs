@@ -1,54 +1,89 @@
 ---
 title: What's new in driver development
-description: This section describes new features for driver development in Windows 11.
-ms.date: 06/24/2021
+description: This section describes new features for driver development in Windows 11, version 22H2.
+ms.date: 08/26/2022
 ---
 
-# <a name="top"></a>What's new in driver development for Windows 11
+# <a name="top"></a>What's new in driver development for Windows 11, version 22H2
 
-This section describes new features and updates for driver development in Windows 11.
+This section describes new features and updates for driver development in Windows 11, version 22H2.
 
-## Camera
+## ACPI
 
-- [Digital Window overview](./stream/digital-window-overview.md)
-- [Privacy shutter notification](./stream/privacy-shutter-notification.md)
-- [Create device property keys from the MS OS descriptor in USB Video Class (UVC) firmware](./stream/create-camera-device-property-keys-from-ms-os-descriptor.md)
-- [Microsoft extensions to USB Video Class 1.5 specification](./stream/uvc-extensions-1-5.md) (Updated)
-- [Network camera design guide](./stream/network-camera-design-guide.md) (Updated)
+The ACPI documentation has been updated with new _OSI string information for Windows 11, version 22H2.
 
-## HID
+- [How to Identify the Windows Version in ACPI by Using _OSI](./acpi/winacpi-osi.md) (Updated)
 
-Use Human Interface Device (HID) class devices over a Serial Peripheral Interface (SPI) bus.
+## Audio
 
-- [Introduction to HID over SPI](./hid/hid-over-spi.md)
-- [Architecture and overview for HID over the SPI transport](./hid/architecture-and-overview-for-spi.md)
-- [Plug and Play support for HID over SPI](./hid/plug-and-play-for-spi.md)
-- [HID over SPI power management](./hid/power-management-over-spi.md)
-- [Error handling for HID over SPI](./hid/error-handling-for-spi.md)
+- To improve reliability and debuggability new [Windows 11 APIs for Audio Processing Objects](./audio/windows-11-apis-for-audio-processing-objects.md) are available.
+- Windows 11 provides additional capabilities with the use of *resource groups* and these are now discussed [Audio Hardware Resource Management](./audio/audio-hardware-resource-management.md).
+- Audio experience for these devices can be optimized for specific device postures, such as when a device is held in portrait mode. This is described in [Supporting Audio Posture](./audio/supporting-audio-posture.md).
+- KSStudio documentation is now available on line at [KsStudio Utility](./audio/ksstudio-utility.md).
 
-New API pages:
+## Camera and streaming media drivers
 
-- [hidspicx.h header](/windows-hardware/drivers/ddi/hidspicx)
-- [**EVT_HIDSPICX_NOTIFY_POWERDOWN**](/windows-hardware/drivers/ddi/hidspicx/nc-hidspicx-evt_hidspicx_notify_powerdown)
-- [**EVT_HIDSPICX_RESETDEVICE**](/windows-hardware/drivers/ddi/hidspicx/nc-hidspicx-evt_hidspicx_resetdevice)
-- [**HIDSPICX_DEVICE_CONFIG**](/windows-hardware/drivers/ddi/hidspicx/ns-hidspicx-hidspicx_device_config)
-- [**HIDSPICX_REPORT**](/windows-hardware/drivers/ddi/hidspicx/ns-hidspicx-hidspicx_report)
-- [**HidSpiCxDeviceConfigure**](/windows-hardware/drivers/ddi/hidspicx/nf-hidspicx-hidspicxdeviceconfigure)
-- [**HidSpiCxDeviceInitConfig**](/windows-hardware/drivers/ddi/hidspicx/nf-hidspicx-hidspicxdeviceinitconfig)
-- [**HidSpiCxNotifyDeviceReset**](/windows-hardware/drivers/ddi/hidspicx/nf-hidspicx-hidspicxnotifydevicereset)
+The camera driver documentation has been updated with information on background segmentation and eye gaze modes available in Windows 11, version 22H2.
 
-## Print devices
+- [Background segmentation portrait mode and eye gaze stare mode driver sample](./stream/background-segmentation-portrait-mode-eye-gaze-stare-mode-driver-sample.md) (New)
+- [KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION](./stream/ksproperty-cameracontrol-extended-backgroundsegmentation.md) (Updated)
+- [KSPROPERTY_CAMERACONTROL_EXTENDED_EYEGAZECORRECTION](./stream/ksproperty-cameracontrol-extended-eyegazecorrection.md) (Updated)
+- [USB Video Class (UVC) camera implementation guide](./stream/uvc-camera-implementation-guide.md) (Updated)
 
-- [Print support app design guide](./devapps/print-support-app-design-guide.md)
-- [Print support app association](./devapps/print-support-app-association.md)
+## Driver security
+
+- New code scanning CodeQL rules and updated installation directions, are now available. For more information, see [CodeQL and the Static Tools Logo Test](./devtest/static-tools-and-codeql.md).
+
+## File system and filter drivers
+
+The ability to do trusted [kernel-mode file copy](./ifs/km-file-copy.md) was introduced in Windows 11, version 22H2. This feature includes the ability for filters to easily detect copy scenarios.
+
+## Mobile broadband
+
+Windows 11, version 22H2 introduces the following mobile broadband features:
+
+- [MBIM Extensions Release number 4.0 (MBIMEx 4.0)](./network/mbimex-4.0-5g-sa-phase-2-support.md) introduces support for 5G SA Phase 2 features. The 5G SA Phase 2 feature set includes support for end-to-end URSP handling and multiple concurrent eMBB network slices.
+
+- MBIMEx 4.0 introduces [access to an eSIM in the inactive SIM slot](./network/access-to-esim-in-inactive-sim-slot.md).
+
+- An [errata for MBIMEx 3.0](./network/mbimex-3.0-5g-sa-phase-1-support.md) updates the original MBIMEx 3.0 specification.
+
+## Print device apps
+
+The [Print support app (PSA) design guide](./devapps/print-support-app-design-guide.md) has been updated with information about new PSA functionality available starting in Windows 11, version 22H2.
+
+- Display name localization and PDL Passthrough API integration
+- Page level feature support and operation attributes
+- Enhancing the print dialog with PSA
+- PDL conversion with host-based processing flags
+- Set Print Device Capabilities (PDC) update policy
+
+## Provisioning support for loading pre-production drivers
+
+- [How to test pre-production drivers with Secure Boot enabled](./install/preproduction-driver-signing-and-install.md)
+
+## Windows Debugging Tools
+
+- Debugging Tools for Windows supports kernel debugging over a network cable using multiple Physical Functions (PFs) on the supported NICs. This approach improves efficiency of debugging, particularly in traffic heavy cloud environments. For more information see, [Setting Up 2PF Kernel-Mode Debugging using KDNET](./debugger/setting-up-kernel-mode-debugging-using-2pf.md).
+- A new low level OS independent debugger transport – EXDI is described in [Configuring the EXDI Debugger Transport](./debugger/configuring-the-exdi-debugger-transport.md). This transport can connect to virtualized environments such as QEMU, this is described in [Setting Up QEMU Kernel-Mode Debugging using EXDI]( /windows-hardware/drivers/debugger/setting-up-qemu-kernel-mode-debugging-using-exdi).
+- AppVerifier test content is now updated and the documentation is now available online – [Application Verifier - Overview]( /windows-hardware/drivers/devtest/application-verifier).
+
+## WPP Recorder
+
+Drivers can add timestamps to Inflight Trace Recorder (IFR) log entries. Timestamps can specify millisecond or tenth of a microsecond granularity.
+
+- [Inflight Trace Recorder](./devtest/using-wpp-recorder.md)
+- [WPP_RECORDER_TRI_STATE](/windows-hardware/drivers/ddi/wpprecorder/ne-wpprecorder-wpp_recorder_tri_state) enumeration
+- [RECORDER_LOG_CREATE_PARAMS](/windows-hardware/drivers/ddi/wpprecorder/ns-wpprecorder-_recorder_log_create_params) structure
+- [WppRecorderLogCreate](/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate) macro (wpprecorder.h)
 
 ## Related Topics
 
 For information on what was new for drivers in past Windows releases, see the following pages:
 
+- [Driver development changes for Windows 11, version 21H2](driver-changes-for-windows-11.md)
 - [Driver development changes for Windows Server 2022](driver-changes-for-windows-server-2022.md)
 - [Driver development changes for Windows 10, version 2004](driver-changes-for-windows-10-version-2004.md)
 - [Driver development changes for Windows 10, version 1903](driver-changes-for-windows-10-version-1903.md)
-- [Driver development changes for Windows 10, version 1809](driver-changes-for-windows-10-version-1809.md)
 
 [Back to Top](#top)

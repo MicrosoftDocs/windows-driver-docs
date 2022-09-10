@@ -54,7 +54,7 @@ devcon /r updateni c:\windows\inf\newdvc.inf *PNP030b
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
-[Example 32: Update the driver for communication ports](devcon-examples.md#ddk_example_32_update_the_driver_for_communication_ports_tools)
+[Example 32: Update the driver for communication ports](devcon-examples.md#example-32-update-the-driver-for-communication-ports)
 
 
 

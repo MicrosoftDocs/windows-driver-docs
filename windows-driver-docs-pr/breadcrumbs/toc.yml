@@ -4,7 +4,7 @@
   items:
   - name: Windows
     tocHref: /windows-hardware/
-    topicHref: "https://docs.microsoft.com/windows"
+    topicHref: /windows
     items:
     - name: Windows Drivers
       tocHref: /windows-hardware/drivers/

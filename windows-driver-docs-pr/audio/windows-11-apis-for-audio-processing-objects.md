@@ -10,12 +10,16 @@ keywords:
 - Audio Settings, Audio Notifications
 - Windows 11 audio 
 - CAPX, Core Audio Processing Object Extensions
-ms.date: 10/20/2021
+ms.date: 07/08/2022
 ---
 
 # Windows 11 APIs for Audio Processing Objects
 
-This topic introduces a set of new Windows 11 APIs for Audio Processing Objects (APOs) that are shipped with an audio driver. Some of these APIs enable new scenarios for Independent Hardware Vendors (IHV) and Independent Software Vendors (ISV), while other APIs are meant to provide alternatives that improve overall audio reliability and debugging capabilities.
+This topic introduces a set of new Windows 11 APIs for Audio Processing Objects (APOs) that are shipped with an audio driver. 
+
+Windows allows third-party audio hardware manufacturers to include custom host-based digital signal processing effects. These effects are packaged as user-mode Audio Processing Objects (APOs). For more information, see [Windows Audio Processing Objects](windows-audio-processing-objects.md).
+
+Some of the APIs described here enable new scenarios for Independent Hardware Vendors (IHV) and Independent Software Vendors (ISV), while other APIs are meant to provide alternatives that improve overall audio reliability and debugging capabilities.
 
 - The [Acoustic Echo Cancellation (AEC) framework](#acoustic-echo-cancellation-aec) allows an APO to identify itself as an _AEC_ APO, granting access to a reference stream and additional controls.
 - The [Settings framework](#settings-framework) will allow APOs to expose methods for querying and modifying the property store for audio effects (“FX property store”) on an audio endpoint. When these methods are implemented by an APO, they can be invoked by Hardware Support Apps (HSA) that are associated with that APO.
@@ -1214,3 +1218,51 @@ HRESULT CSwapAPOSFX::SetAudioSystemEffectState(GUID effectId, AUDIO_SYSTEMEFFECT
     return E_NOTFOUND;
 }
 ```
+
+## Reuse of the WM SFX and MFX APOs in Windows 11, version 22H2
+
+Starting with Windows 11, version 22H2, the INF configuration files that that reuse the inbox WM SFX and MFX APOs, can now reuse the CAPX SFX and MFX APOs. This section describes the three ways to do this.
+
+There are three insertion points for APOs: pre-mix render, post-mix render, and capture. Each logical device's audio engine supports one instance of a pre-mix render APO per stream (render SFX) and one post-mix render APO (MFX). The audio engine also supports one instance of a capture APO (capture SFX) that is inserted in each capture stream. For more information on how to reuse or wrap the inbox APOs, see [Combine custom and Windows APOs](combine-custom-and-windows-apos.md).
+
+The CAPX SFX and MFX APOs can be reused in one of the following three ways. 
+
+### Using INF DDInstall Section
+
+Use mssysfx.CopyFilesAndRegisterCapX from wdmaudio.inf by adding the following entries.
+
+```inf
+   Include=wdmaudio.inf
+   Needs=mssysfx.CopyFilesAndRegisterCapX
+```
+
+### Using an extension INF file
+
+The wdmaudioapo.inf is the AudioProcessingObject class extension inf. It contains the device-specific registration of the SFX and MFX APOs. 
+
+### Directly referencing the WM SFX and MFX APOs for stream and mode effects
+
+To directly reference these APOs for stream and mode effects, use the following GUID values.
+
+- Use `{C9453E73-8C5C-4463-9984-AF8BAB2F5447}` as the WM SFX APO 
+- Use `{13AB3EBD-137E-4903-9D89-60BE8277FD17}` as the WM MFX APO.
+
+SFX (Stream) and MFX (Mode) were referred in Windows 8.1 to LFX (local) and MFX was referred to as GFX (global). These registry entries continue to use the previous names.
+
+Device-specific registration uses HKR instead of HKCR.
+   
+The INF file  will need to have the following enties added.
+
+```inf
+  HKR,"FX\\0\\%WMALFXGFXAPO_Context%",%PKEY_FX_Association%,,%KSNODETYPE_ANY%
+  HKR,"FX\\0\\%WMALFXGFXAPO_Context%\\User",,,
+  WMALFXGFXAPO_Context = "{B13412EE-07AF-4C57-B08B-E327F8DB085B}"
+```
+
+These INF file entries will create a property store that will be used by the Windows 11 APIs for the new APOs.
+
+PKEY_FX_Association in the INF ex. `HKR,"FX\\0",%PKEY_FX_Association%,,%KSNODETYPE_ANY%`, should be replaced with `HKR,"FX\\0\\%WMALFXGFXAPO_Context%",%PKEY_FX_Association%,,%KSNODETYPE_ANY%`.
+
+## See also
+
+[Windows Audio Processing Objects](windows-audio-processing-objects.md).

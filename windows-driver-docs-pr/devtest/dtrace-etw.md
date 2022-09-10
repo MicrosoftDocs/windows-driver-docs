@@ -10,7 +10,7 @@ keywords:
 - software tracing WDK , formatting messages
 - tracing WDK , DTrace
 - trace message format files WDK
-ms.date: 11/04/2019
+ms.date: 05/02/2022
 ---
 
 # DTrace ETW
@@ -20,7 +20,7 @@ Use DTrace for Windows to process existing ETW events and to add new ETW events.
 Event Tracing for Windows (ETW) is an kernel-level tracing facility that lets you log kernel or application-defined events to a log file. You can consume the events in real time or from a log file and use them to debug an application or to determine where performance issues are occurring in the application. For general information about ETW, see [About Event Tracing](/windows/win32/etw/about-event-tracing).
 
 > [!NOTE]
-> DTrace is supported in the Insider builds of Windows after version 18980 and Windows Server Insider Preview Build 18975.
+> DTrace is supported in the Insider builds of Windows after version 18980 and Windows Server Build 18975.
 
 For general information about working with DTrace on Windows, see [DTrace](dtrace.md).
 
@@ -132,7 +132,7 @@ CPU     ID                    FUNCTION:NAME
 
 This example script uses Microsoft-Windows-Kernel-Memory ETW provider to dump NUMA node memory. Page size can be converted to size in KB by multiplying by 4. For general information on NUMA see [NUMA Support](/windows/win32/procthread/numa-support).
 
-This code is also located at <https://github.com/microsoft/DTrace-on-Windows/blob/master/samples/windows/etw/numamemstats.d>
+This code is also located at <https://github.com/microsoft/DTrace-on-Windows/blob/windows/samples/windows/etw/numamemstats.d>
 
 ```dtrace
 typedef struct KernelMemInfoEvent

@@ -102,12 +102,12 @@ devcon sethwid @ROOT\LEGACY_BEEP\0000 := !beep legacy
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 40: Assign a hardware ID to a legacy device](devcon-examples.md#ddk_example_40_assign_a_hardware_id_to_a_legacy_device_tools)
+[Example 40: Assign a hardware ID to a legacy device](devcon-examples.md#example-40-assign-a-hardware-id-to-a-legacy-device)
 
-[Example 41: Add a hardware ID to all legacy devices](devcon-examples.md#ddk_example_41_add_a_hardware_id_to_all_legacy_devices_on_a_remote_com)
+[Example 41: Add a hardware ID to all legacy devices](devcon-examples.md#example-41-add-a-hardware-id-to-all-legacy-devices)
 
-[Example 42: Delete a hardware ID from all legacy devices](devcon-examples.md#ddk_example_42_delete_a_hardware_id_from_all_legacy_devices_on_a_remot)
+[Example 42: Delete a hardware ID from all legacy devices](devcon-examples.md#example-42-delete-a-hardware-id-from-all-legacy-devices)
 
-[Example 43: Add, delete, and replace hardware IDs](devcon-examples.md#ddk_example_43_add_delete_and_replace_hardwareids_tools)
+[Example 43: Add, delete, and replace hardware IDs](devcon-examples.md#example-43-add-delete-and-replace-hardware-ids)
 
-[Example 44: Forcibly update the HAL](devcon-examples.md#ddk_example_44_forcibly_update_the_hal_tools)
+[Example 44: Forcibly update the HAL](devcon-examples.md#example-44-forcibly-update-the-hal)

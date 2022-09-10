@@ -1,7 +1,8 @@
 ---
 title: Print support app design guide
 description: Provides guidance and examples for printer OEMs and IHVs that are implementing a print support app (PSA) for their device.
-ms.date: 08/06/2021
+ms.date: 05/20/2022
+ms.custom: contperf-fy22q4
 ---
 
 # Print support app design guide
@@ -12,7 +13,10 @@ ms.date: 08/06/2021
 This topic provides guidance and examples for printer OEMs and IHVs to develop print support app (PSA) that can enhance a Windows user's print experience in several ways.
 
 > [!NOTE]
-> Starting with the release of Windows 11 SDK (22000.1), Print Support Apps (PSA) are the recommended method of developing UWP apps for printers. To develop a Print Support App for your print device, download and install the [Windows 11 SDK (22000.1)](https://go.microsoft.com/fwlink/?linkid=2166460).
+> Starting with the release of Windows 11 SDK (22000.1), Print Support Apps (PSA) are the recommended method of developing UWP apps for printers. To develop a Print Support App for your print device, download and install the Windows 11 SDK for the Windows version you are targeting.
+
+> [!NOTE]
+> This topic contains sections that describe PSA functionality that is available starting in Windows 11, version 22H2. Those sections contain a note indicating that it applies to that version.
 
 Some printer features are not presented in print dialogs shown by Windows as they are special features that need help from a manufacturer app to be configured correctly. They may also be features that are not provided in the default capabilities of the printer.
 
@@ -37,11 +41,13 @@ Another area where the printer manufacturers can improve and differentiate is pr
 | More Settings | Link that opens partner provided app UI in MPD. Defaults to opening built in print preferences UI when there is no PSA installed. |
 | Printer Preferences UI | Dialog used to set default printer options that are applied at print time. For example: orientation, paper size, color, print on both sides, and so on. |
 | PDL | Page Description Language. The format in which a document is sent to printer. |
-| PrintDeviceCapabilities | XML document format for defining printer capabilities. See [Print Ticket and Print Capabilities Technologies](../print/print-ticket-and-print-capabilities-technologies.md) for more information.|
+| Associated PSA Printer | Physical IPP printer associated with a PSA application. |
+| PrintDeviceCapabilities | XML document format for defining printer capabilities. See [Print Ticket and Print Capabilities Technologies](../print/print-ticket-and-print-capabilities-technologies.md) for more information. |
 | PrintTicket | Collection of various print related features and their values used to capture the user's intent for a given print job. |
 | PrintSupportExtension | PSA background task responsible for providing printer constraint extension capabilities. |
 
 ## Print support namespace
+
 The samples below reference a **printsupport** namespace, which is defined as:
 
 ```xml
@@ -842,7 +848,7 @@ public sealed partial class JobUIPage : Page
 
 ### Sequential XPS processing
 
-Cpp/Winrt sample code for processing XPS sequentially before spooling is completed.
+C++/Winrt sample code for processing XPS sequentially before spooling is completed.
 
 ```cpp
 namespace winrt
@@ -902,6 +908,260 @@ namespace winrt
                     auto xpsreceiver = make_self<WorkflowReceiver>();
                     check_hresult(xpsContentObjectModelNative->StartXpsOMGeneration(xpsreceiver.get()));
         }
+    }
+}
+```
+
+## Display name localization and PDL Passthrough API integration
+
+> [!NOTE]
+> This section describes PSA functionality available starting in Windows 11, version 22H2.
+
+In this scenario, the PSA customizes the Print Device Capabilities (PDC) and provides Print Device Resources (PDR) for string localization.
+
+The PSA also sets the supported PDL Passthrough API content types (PDL formats). If the PSA does not subscribe to the event or does not call **SetSupportedPdlPassthroughContentTypes** explicitly, the PDL Passthrough will be disabled for the printers associated with this PSA app.
+
+```csharp
+// Event handler called every time PrintSystem updates PDC or BindPrinter is called
+ private void OnPdcChanged(PrintSupportExtensionSession session, PrintSupportPrintDeviceCapabilitiesChangedEventArgs args)
+{
+    using (args.GetDeferral())
+    {
+        XmlDocument pdc = args.GetCurrentPrintDeviceCapabilities();
+        XmlDocument pdr = args.GetCurrentPrintDeviceResources();
+        
+        // Check current PDC and make changes according to printer device capabilities 
+        XmlDocument newPdc = this.CheckAndUpdatePrintDeviceCapabilities(pdc);
+        // Get updated printer devices resources, corresponding to the new PDC 
+        XmlDocument newPdr = this.GetPrintDeviceResourcesInfo(newPdc, pdr, args.ResourceLanguage);
+
+        // Update supported PDL formats 
+        args.SetSupportedPdlPassthroughContentTypes(GetSupportedPdlContentTypes());
+        
+        args.UpdatePrintDeviceCapabilities(newPdc);
+        args.UpdatePrintDeviceResources(newPdr);
+    }
+}
+```
+
+## Page level feature support and operation attributes
+
+> [!NOTE]
+> This section describes PSA functionality available starting in Windows 11, version 22H2.
+
+The page level feature support and operation attributes scenarios are grouped because they are addressed by making changes in the same place in the sample code.
+
+- **Page level feature support:** In this scenario, the PSA application specifies the page level attribute, which should not be overridden by an IPP attribute parsed from the PrintTicket.
+
+- **Separate collection for operation attributes support (PIN printing):** In this scenario, PSA application specifies custom IPP operation attributes (for example, PIN).
+
+The following C# sample code shows required changes for **Page Level feature support** and **Separate collection for operation attributes** scenarios.
+
+```csharp
+private void OnPdlModificationRequested(PrintWorkflowJobBackgroundSession session, PrintWorkflowPdlModificationRequestedEventArgs args)
+{
+    using (args.GetDeferral())
+    {
+        IInputStream pdlContent = args.SourceContent.GetInputStream();
+    
+        // Custom job attributes to add to the printJob
+        IDictionary<string, IppAttributeValue> jobAttributes = LocalStorageUtil.GetCustomIppJobAttributes();
+        // Custom operation attributes to add to printJob
+        IDictionary<string, IppAttributeValue> operationAttributes = LocalStorageUtil.GetCustomIppOperationAttributes();
+        
+        // PSA has an option to select preferred PDL format
+        string documentFormat = GetDocumentFormat(args.PrinterJob.Printer);
+    
+        // Create PrintJob with specified PDL and custom attributes
+        PrintWorkflowPdlTargetStream targetStream = args.CreateJobOnPrinterWithAttributes(jobAttributes, documentFormat  , operationAttributes,
+           PrintWorkflowAttributesMergePolicy  .DoNotMergeWithPrintTicket /*jobAttributesMergePolicy*/, PrintWorkflowAttributesMergePolicy.MergePreferPsaOnConflict /*operationAttributesMergePolicy*/);
+    
+        // Adding a watermark to the output(targetStream) if source payload type is XPS
+        this.ModifyPayloadIfNeeded(targetStream, args, documentFormat, deferral);
+    
+        // Marking the stream submission as Succeeded.
+        targetStream.CompleteStreamSubmission(PrintWorkflowSubmittedStatus.Succeeded);
+    
+        this.taskDeferral.Complete();
+    }
+}
+```
+
+## Enhancing the print dialog with PSA
+
+> [!NOTE]
+> This section describes PSA functionality available starting in Windows 11, version 22H2.
+
+In this scenario, using the print dialog with PSA integration enables the following:
+
+- Get a callback when selection is changed in the MPD to the printer associated with PSA
+
+- Show one AdaptiveCard with a support of **openUrl** action
+
+- Show custom features and parameters on the print dialog
+
+- Modify the PrintTicket, thus changing the selection for feature options shown in the print dialog
+
+- Get the **Windows.ApplicationModel.AppInfo** of the printing app, opening the print dialog
+
+The following C# sample illustrates these print dialog enhancements:
+
+```csharp
+public BackgroundTaskDeferral TaskInstanceDeferral { get; set; }
+
+public void Run(IBackgroundTaskInstance taskInstance)
+{
+    // Take task deferral 
+    TaskInstanceDeferral   = taskInstance.GetDeferral();
+    // Associate a cancellation handler with the background task 
+    taskInstance.Canceled += OnTaskCanceled;
+
+    if (taskInstance.TriggerDetails is PrintSupportExtensionTriggerDetails extensionDetails)
+    {
+         PrintSupportExtensionSession session = extensionDetails.Session;
+         session.PrintTicketValidationRequested += OnSessionPrintTicketValidationRequested;
+         session.PrintDeviceCapabilitiesChanged += OnSessionPrintDeviceCapabilitiesChanged;
+         session.PrinterSelected += this.OnPrinterSelected;
+    }
+}
+
+private void OnTaskInstanceCanceled(IBackgroundTaskInstance sender, BackgroundTaskCancellationReason reason)
+{
+    TaskInstanceDeferral.Complete();
+}
+
+// Event handler called when the PSA Associated printer is selected in Print Dialog
+private void OnPrinterSelected(PrintSupportExtensionSession session, PrintSupportPrinterSelectedEventArgs args)
+{
+    using (args.GetDeferral())
+    {
+        // Show adaptive card in the Print Dialog (generated based on Printer and Printing App) 
+        args.SetAdaptiveCard  (GetCustomAdaptiveCard(session.Printer, args.SourceAppInfo));
+
+        // Request to show Features and Parameters in the Print Dialog if not shown already
+        const string xmlNamespace = "\"http://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords\"";
+        var additionalFeatures= new List<PrintSupportPrintTicketElement> { new PrintSupportPrintTicketElement { LocalName = "PageMediaType", NamespaceUri = xmlNamespace } };                  
+        var additionalParameters = new List<PrintSupportPrintTicketElement> { new PrintSupportPrintTicketElement { LocalName = "JobCopiesAllDocuments", NamespaceUri = xmlNamespace } };
+
+        if ((featuresToShow.Count + parametersToShow.Count) <= args.AllowedCustomFeaturesAndParametersCount)
+        {
+            args.SetAdditionalFeatures(additionalFeatures);
+            args.SetAdditionalParameter(additionalParameters);
+        }
+        else
+        {
+            // Cannot show that many additional features and parameters, consider reducing the number
+            // of additional features and parameters by selecting only the most important ones
+        }
+    }
+}
+
+// Create simple AdaptiveCard to show in MPD
+public IAdaptiveCard GetCustomAdaptiveCard(IppPrintDevice ippPrinter, AppInfo appInfo)
+{
+    return AdaptiveCardBuilder.CreateAdaptiveCardFromJson($@"
+        {{""body"": [
+                {{ 
+                    ""type"": ""TextBlock"",
+                    ""text"": ""Hello {appInfo.DisplayInfo.DisplayName} from {ippPrinter.PrinterName}!""
+                }}
+              ],
+              ""$schema"": ""http://adaptivecards.io/schemas/adaptive-card.json"",
+            ""type"": ""AdaptiveCard"",
+            ""version"": ""1.0""
+        }}");
+}
+```
+
+## PDL conversion with host-based processing flags
+
+> [!NOTE]
+> This section describes PSA functionality available starting in Windows 11, version 22H2.
+
+The current PDL conversion API, **PrintWorkflowPdlConverter.ConvertPdlAsync**, does host-based processing by default. This means that the host/printing computer will do the rotation, page order, and so on, so that printer does not need to perform these operations. However, printer IHVs may want PDL conversion without host-based processing as their printer can do this better. The **ConvertPdlAsync** function takes in host-based processing flags to address this requirement. The PSA can skip all host-based processing or a particular host-based processing operation using this flag.
+
+```csharp
+class HostBaseProcessingRequirements
+{
+    public bool CopiesNeedsHostBasedProcessing = false;
+    public bool PageOrderingNeedsHostBasedProcessing = false;
+    public bool PageRotationNeedsHostBasedProcessing = false;
+    public bool BlankPageInsertionNeedsHostBasedProcessing = false;
+}
+
+private async void OnPdlModificationRequested(PrintWorkflowJobBackgroundSession sender, PrintWorkflowPdlModificationRequestedEventArgs args)
+{
+    using (args.GetDeferral())
+    {
+        var targetStream = args.CreateJobOnPrinter("application/pdf");
+        var pdlConverter = args.GetPdlConverter(PrintWorkflowPdlConversionType.XpsToPdf);
+
+        var hostBasedRequirements = this.ReadHostBasedProcessingRequirements(args.PrinterJob.Printer);
+            
+        PdlConversionHostBasedProcessingOperations hostBasedProcessing = PdlConversionHostBasedProcessingOperations.None;
+        if (hostBasedRequirements.CopiesNeedsHostBasedProcessing)
+        {
+            hostBasedProcessing |= PdlConversionHostBasedProcessingOperations.Copies;
+        }
+
+        if (hostBasedRequirements.PageOrderingNeedsHostBasedProcessing)
+        {
+            hostBasedProcessing |= PdlConversionHostBasedProcessingOperations.PageOrdering;
+        }
+
+        if (hostBasedRequirements.PageRotationNeedsHostBasedProcessing)
+        {
+            hostBasedProcessing |= PdlConversionHostBasedProcessingOperations.PageRotation;
+        }
+
+        if (hostBasedRequirements.BlankPageInsertionNeedsHostBasedProcessing)
+        {
+            hostBasedProcessing |= PdlConversionHostBasedProcessingOperations.BlankPageInsertion;
+        }
+
+        await pdlConverter.ConvertPdlAsync(args.PrinterJob.GetJobPrintTicket(), args.SourceContent.GetInputStream(), targetStream.GetOutputStream(), hostBasedProcessing);
+    }
+}
+
+private HostBaseProcessingRequirements ReadHostBasedProcessingRequirements(IppPrintDevice printDevice)
+{
+    // Read Host based processing requirements for the printer
+}
+```
+
+## Set Print Device Capabilities (PDC) update policy
+
+> [!NOTE]
+> This section describes PSA functionality available starting in Windows 11, version 22H2.
+
+Printer IHVs may different requirements on when Print Device Capabilities (PDC) needs to be updated. To address these requirement, **PrintSupportPrintDeviceCapabilitiesUpdatePolicy** can set an update policy for the PDC. PSA can set the PDC update policy based on time or the number of print jobs using this API.
+
+### Set PDC update policy based on number of jobs
+
+```csharp
+// Event handler called every time PrintSystem updates PDC
+private void OnPdcChanged(PrintSupportExtensionSession session, PrintSupportPrintDeviceCapabilitiesChangedEventArgs args)
+{
+    using (args.GetDeferral())
+    {
+        // Set update policy to update the PDC on bind printer of every print job.
+        var updatePolicy = PrintSupportPrintDeviceCapabilitiesUpdatePolicy.CreatePrintJobRefresh(1);
+        args.SetPrintDeviceCapabilitiesUpdatePolicy(updatePolicy);      
+    }
+}
+```
+
+### Set PDC update policy based on TimeOut
+
+```csharp
+// Event handler called every time PrintSystem updates PDC
+private void OnPdcChanged(PrintSupportExtensionSession session, PrintSupportPrintDeviceCapabilitiesChangedEventArgs args)
+{
+    using (args.GetDeferral())
+    {
+        // Set update policy to update the PDC on bind printer of every print job.
+        var updatePolicy = PrintSupportPrintDeviceCapabilitiesUpdatePolicy.CreatePrintJobRefresh(1);
+        args.SetPrintDeviceCapabilitiesUpdatePolicy(updatePolicy);      
     }
 }
 ```

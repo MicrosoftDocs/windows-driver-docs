@@ -52,7 +52,7 @@ Kernel-Mode, x64 Processor
 [Processor] kd [WordCount]
 ```
 
-User-Mode, ARM Processor
+User-Mode, Arm Processor
 
 ```dbgcmd
 [~Thread] k[b|p|P|v] [c] [n] [f] [L] [M] [FrameCount]
@@ -61,7 +61,7 @@ User-Mode, ARM Processor
 [~Thread] kd [WordCount]
 ```
 
-Kernel-Mode, ARM Processor
+Kernel-Mode, Arm Processor
 
 ```dbgcmd
 [Processor] k[b|p|P|v] [c] [n] [f] [L] [M] [FrameCount]

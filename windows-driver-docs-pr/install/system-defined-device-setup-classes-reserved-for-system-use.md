@@ -1,7 +1,7 @@
 ---
 title: System-Defined Device Setup Classes Reserved for System Use
 description: System-Defined Device Setup Classes Reserved for System Use
-ms.date: 10/17/2018
+ms.date: 06/03/2022
 ---
 
 # System-Defined Device Setup Classes Reserved for System Use
@@ -60,6 +60,18 @@ This class is reserved for system use. Enumerated devices for which the system c
 Class = PrinterUpgrade<br/>
 ClassGuid = {4d36e97a-e325-11ce-bfc1-08002be10318}<br/>
 This class is reserved for system use.
+
+**Print Queue**<br/>
+Class = PrintQueue<br/>
+ClassGuid = {1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}<br/>
+
+**Software Device**<br/>
+Class = SoftwareDevice<br/>
+ClassGuid = {62f9c741-b25a-46ce-b54c-9bccce08b6f2}<br/>
+
+**Audio Endpoint**<br/>
+Class = AudioEndpoint<br/>
+ClassGuid = {c166523c-fe0c-4a94-a586-f1a80cfbbf3e}<br/>
 
 <a href="" id="sound-"></a>**Sound**<br/>
 Class = Sound<br/>

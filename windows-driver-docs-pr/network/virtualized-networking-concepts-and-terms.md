@@ -193,7 +193,7 @@ A VM network adapter can be configured to access either the Hyper-V external, in
 <a href="" id="virtual-machine-queue--vmq-"></a>Virtual Machine Queue (VMQ)  
 A VMQ-capable network adapter uses DMA to transfer all incoming frames directly to VM memory. VMQ also improves network throughput by distributing the processing of network traffic for multiple VMs among multiple processors.
 
-For more information, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md).
+For more information, see [Virtual Machine Queue (VMQ)](virtual-machine-queue-architecture.md).
 
 **Note**  VMQ is supported in NDIS 6.20 and later versions of NDIS.
 

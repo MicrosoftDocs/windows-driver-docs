@@ -11,7 +11,7 @@ In Windows Vista and later versions of Windows, the [unified device property mod
 
 Windows Server 2003, Windows XP, and Windows 2000 also support these device setup class properties. However, these earlier versions of Windows do not support the property keys of the unified device property model. Instead, these versions of Windows use the following mechanisms to retrieve the corresponding property information:
 
--   Call [**SetupDiGetClassDescriptionEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdescriptionexa) to retrieve the friendly name of a device setup class.
+-   Call [**SetupDiGetClassDescription**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdescriptionw) to retrieve the friendly name of a device setup class.
 
 -   Call [**SetupDiClassNameFromGuid**](/windows/win32/api/setupapi/nf-setupapi-setupdiclassnamefromguida) to retrieve the class name of a device setup class.
 

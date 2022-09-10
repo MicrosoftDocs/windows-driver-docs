@@ -438,7 +438,7 @@ Specifies a private trace session This parameter is required for a private trace
 <span id="_______-UseCPUCycle______"></span><span id="_______-usecpucycle______"></span><span id="_______-USECPUCYCLE______"></span> **-UseCPUCycle**   
 Uses the processor frequency (also called "CPU ticks") to measure the time of each trace message.
 
-This timer provides the highest possible resolution, but it is so sensitive that it is prone to error, especially on power-managed systems and multiprocessor computers. For example, if you specify this timer on computer that has an ARM processor, it might result in out-of-order events. Instead, **-UsePerfCounter** is recommended for high-resolution tracing.
+This timer provides the highest possible resolution, but it is so sensitive that it is prone to error, especially on power-managed systems and multiprocessor computers. For example, if you specify this timer on computer that has an Arm processor, it might result in out-of-order events. Instead, **-UsePerfCounter** is recommended for high-resolution tracing.
 
 **-UsePerfCounter** is the default timer for event tracing.
 

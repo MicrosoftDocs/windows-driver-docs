@@ -2,7 +2,7 @@
 title: Bug Check 0x9F DRIVER_POWER_STATE_FAILURE
 description: This bug check has a value of 0x0000009F. This bug check indicates that the driver is in an inconsistent or invalid power state.
 keywords: ["Bug Check 0x9F DRIVER_POWER_STATE_FAILURE", "DRIVER_POWER_STATE_FAILURE"]
-ms.date: 03/10/2022
+ms.date: 07/27/2022
 topic_type:
 - apiref
 api_name:
@@ -26,7 +26,7 @@ Parameter 1 indicates the type of violation.
 |---------- |---------- |---------- |---------- |---- |
 |0x1|The device object|Reserved|Reserved|The device object that is being freed still has an outstanding power request that it has not completed.|
 |0x2|The target device's device object, if it is available|The device object|The driver object, if it is available|The device object completed the I/O request packet (IRP) for the system power state request, but it did not call PoStartNextPowerIrp.|
-|0x3|The physical device object (PDO) of the stack|nt!TRIAGE_9F_POWER.|The blocked IRP|A device object has been blocking an IRP for too long a time.|
+|0x3|The physical device object (PDO) of the stack|nt!_TRIAGE_9F_POWER.|The blocked IRP|A device object has been blocking an IRP for too long a time.|
 |0x4|Time-out value, in seconds.|The thread currently holding onto the Plug-and-Play (PnP) lock.|nt!TRIAGE_9F_PNP.|The power state transition timed out waiting to synchronize with the PnP subsystem.|
 |0x5|Physical Device Object of the stack|The POP_FX_DEVICE object|Reserved - 0|The device failed to complete a directed power transition within the required amount of time.|
 |0x6|The POP_FX_DEVICE object|Indicates if this was a Directed Power Down(1) or Power Up(0) completion.|Reserved - 0|The device did not complete its Directed Power Transition callback successfully.|
@@ -62,7 +62,7 @@ kd>!analyze -v
     Arguments:
     Arg1: 0000000000000003, A device object has been blocking an Irp for too long a time
     Arg2: fffffa8007b13440, Physical Device Object of the stack
-    Arg3: fffff8000386c3d8, nt!TRIAGE_9F_POWER on Win7 and higher, otherwise the Functional Device Object of the stack
+    Arg3: fffff8000386c3d8, nt!_TRIAGE_9F_POWER on Win7 and higher, otherwise the Functional Device Object of the stack
     Arg4: fffffa800ab61bd0, The blocked IRP
 ```
 
@@ -73,7 +73,7 @@ The nt!TRIAGE\_9F\_POWER structure provides additional bug check information tha
 - Use the [**dt (Display Type)**](dt--display-type-.md) command and specify the nt!TRIAGE\_9F\_POWER structure using the address from Arg3.
 
 ```dbgcmd
-    0: kd> dt nt!TRIAGE_9F_POWER fffff8000386c3d8
+    0: kd> dt nt!_TRIAGE_9F_POWER fffff8000386c3d8
        +0x000 Signature        : 0x8000
        +0x002 Revision         : 1
        +0x008 IrpList          : 0xfffff800`01c78bd0 _LIST_ENTRY [ 0xfffffa80`09f43620 - 0xfffffa80`0ad00170 ]

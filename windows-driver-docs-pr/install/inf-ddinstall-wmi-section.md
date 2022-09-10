@@ -1,5 +1,5 @@
 ---
-title: INF DDInstall.WMI Section
+title: INF DDInstall.WMI section
 description: An INF DDInstall.WMI section contains one or more WMIInterface directives that specify characteristics for each WMI class that the driver provides.
 keywords:
 - INF DDInstall.WMI Section Device and Driver Installation
@@ -9,61 +9,59 @@ api_name:
 - INF DDInstall.WMI Section
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 06/08/2022
 ---
 
-# INF DDInstall.WMI Section
+# INF DDInstall.WMI section
 
-
-An INF *DDInstall*.**WMI** section contains one or more **WMIInterface** directives that specify characteristics for each WMI class that the driver provides.
+An INF _DDInstall_.**WMI** section contains one or more **WMIInterface** directives that specify characteristics for each WMI class that the driver provides.
 
 ```inf
 [install-section-name.WMI] |
 [install-section-name.nt.WMI] | 
 [install-section-name.ntx86.WMI] |
-[install-section-name.ntarm.WMI] |  (Windows 8 and later versions of Windows)
-[install-section-name.ntarm64.WMI]  (Windows 10 version 1709 and later versions of Windows)
-[install-section-name.ntia64.WMI] |  (Windows XP and later versions of Windows)
-[install-section-name.ntamd64.WMI]  (Windows XP and later versions of Windows)
+[install-section-name.ntia64.WMI] | (Windows XP and later versions of Windows)
+[install-section-name.ntamd64.WMI] | (Windows XP and later versions of Windows)
+[install-section-name.ntarm.WMI] | (Windows 8 and later versions of Windows)
+[install-section-name.ntarm64.WMI] (Windows 10 version 1709 and later versions of Windows)
  
 WMIInterface={WmiClassGUID},[flags,]WMI-class-section
 ```
 
 ## Entries
 
-
-<a href="" id="wmiclassguid"></a>*WmiClassGUID*  
+_WmiClassGUID_  
 Specifies a GUID value that identifies a WMI class.
 
-<a href="" id="flags"></a>*flags*  
+_flags_  
 Specifies one of the following bitmask flags:
 
-<a href="" id="0x00000001--scwmi-clobber-security-"></a>0x00000001 (SCWMI_CLOBBER_SECURITY)  
+0x00000001 (SCWMI_CLOBBER_SECURITY)  
 If set, and if a security descriptor already exists in the registry, the existing security descriptor is replaced by the one specified in the INF file. If not set, and if a security descriptor already exists in the registry, the existing security descriptor is used instead of the one specified in the INF file.
 
-<a href="" id="wmi-class-section"></a>*WMI-class-section*  
+_WMI-class-section_
 Specifies an INF file section that contains directives for setting characteristics of the WMI class.
 
-The following directives can be specified within a *WMI-class-section*:
+The following directives can be specified within a _WMI-class-section_:
 
-<a href="" id="security--security-descriptor-string-"></a>**Security="**<em>security-descriptor-string</em>**"**  
-Specifies a security descriptor that will be stored in the registry and applied to the GUID that is specified by *WmiClassGUID*. This security descriptor specifies the permissions that are required to access data blocks associated with the class. The *security-descriptor-string* value is a string with tokens that indicate the DACL (**D:**) security component.
+**Security="**_security-descriptor-string_**"**  
+Specifies a security descriptor that will be stored in the registry and applied to the GUID that is specified by _WmiClassGUID_. This security descriptor specifies the permissions that are required to access data blocks associated with the class. The _security-descriptor-string_ value is a string with tokens that indicate the DACL (**D:**) security component.
 
 Only one **Security** entry can be present. If more than one **Security** entry is present, security is not set for the WMI class.
 
 ## Remarks
 
-The INF <em>DDInstall</em>**.WMI** section is available on Microsoft Windows Server 2003 and later versions of the operating system.
+The INF _DDInstall_.**WMI** section is available on Microsoft Windows Server 2003 and later versions of the operating system.
 
 A security descriptor is associated with every WMI GUID. For Windows XP and earlier operating system versions, the default security descriptor for WMI GUIDs allows full access to all users. For Windows Server 2003 and later versions, the default security descriptor allows access only to administrators.
 
-If your driver defines WMI classes, and if you do not want to use the default descriptor, include a <em>DDInstall</em>**.WMI** section to specify a security descriptor that is stored in the registry and overrides the system's default descriptor.
+If your driver defines WMI classes, and if you do not want to use the default descriptor, include a _DDInstall_.**WMI** section to specify a security descriptor that is stored in the registry and overrides the system's default descriptor.
 
 For more information about how to specify security descriptors in INF files, see [Creating Secure Device Installations](creating-secure-device-installations.md).
 
 ## Examples
 
-The following example shows a single <em>DDInstall</em>**.WMI** section that contains two **WMIInterface** directives. Each directive identifies a WMI class and specifies a *WMI-class-section* for the class.
+The following example shows a single _DDInstall_.**WMI** section that contains two **WMIInterface** directives. Each directive identifies a WMI class and specifies a _WMI-class-section_ for the class.
 
 ```inf
 [InstallA.NT.WMI]
@@ -79,17 +77,6 @@ security = "O:BAG:BAD:(A;;0x120fff;;;BA)(A;;CC;;;WD)(A;;0x120fff;;;SY)"
 
 ## See also
 
+[**_DDInstall_**](inf-ddinstall-section.md)
 
-[***DDInstall***](inf-ddinstall-section.md)
-
-[***Models***](inf-models-section.md)
-
- 
-
- 
-
-
-
-
-
-
+[**_Models_**](inf-models-section.md)

@@ -66,7 +66,7 @@
       href: overview-of-inf-files.md
     - name: "General Syntax Rules for INF Files"
       href: general-syntax-rules-for-inf-files.md
-    - name: "General Guidelines for INF Files"
+    - name: "General guidelines for INF files"
       href: general-guidelines-for-inf-files.md
     - name: "Looking at an INF File"
       href: looking-at-an-inf-file.md
@@ -206,6 +206,8 @@
         href: configuring-the-test-computer-to-support-test-signing.md
       - name: "Enable Loading of Test Signed Drivers"
         href: the-testsigning-boot-configuration-option.md
+      - name: "Enable Loading of Preproduction Signed Drivers"
+        href: preproduction-driver-signing-and-install.md
       - name: "Verifying the Test Signature"
         href: verifying-the-test-signature.md
       - name: "Installing a Test-Signed Driver Package on the Test Computer"
@@ -374,6 +376,8 @@
       href: obtaining-the-original-source-path-of-an-installed-inf-file.md
     - name: "Guidelines for Using SetupAPI"
       href: guidelines-for-using-setupapi.md
+    - name: "Device Installations on 64-Bit Systems"
+      href: device-installations-on-64-bit-systems.md
     - name: "Device Property Pages"
       items:
       - name: "Overview of Device Property Pages"
@@ -628,8 +632,6 @@
       href: avoiding-system-restarts-during-device-installations.md
     - name: "Initiating System Restarts During Device Installations"
       href: initiating-system-restarts-during-device-installations.md
-    - name: "Device Installations on 64-Bit Systems"
-      href: device-installations-on-64-bit-systems.md
   - name: "Registry"
     items:
     - name: "Registry Trees and Keys"
@@ -646,20 +648,22 @@
       href: hklm-system-currentcontrolset-hardwareprofiles-registry-tree.md
     - name: "RunOnce Registry Key"
       href: runonce-registry-key.md
-    - name: "DeviceOverrides Registry Key"
-      href: deviceoverrides-registry-key.md
-    - name: "HardwareID Registry Subkey"
-      href: hardwareid-registry-subkey.md
-    - name: "CompatibleID Registry Subkey"
-      href: compatibleid-registry-subkey.md
-    - name: "LocationPaths Registry Subkey"
-      href: locationpaths-registry-subkey.md
-    - name: "ChildLocationPaths Registry Subkey"
-      href: childlocationpaths-registry-subkey.md
-    - name: "LocationPath Registry Subkey"
-      href: locationpath-registry-subkey.md
-    - name: "* Registry Subkey"
-      href: --registry-subkey.md
+    - name: "DeviceOverrides"
+      items:
+      - name: "DeviceOverrides Registry Key"
+        href: deviceoverrides-registry-key.md
+      - name: "HardwareID Registry Subkey"
+        href: hardwareid-registry-subkey.md
+      - name: "CompatibleID Registry Subkey"
+        href: compatibleid-registry-subkey.md
+      - name: "LocationPaths Registry Subkey"
+        href: locationpaths-registry-subkey.md
+      - name: "ChildLocationPaths Registry Subkey"
+        href: childlocationpaths-registry-subkey.md
+      - name: "LocationPath Registry Subkey"
+        href: locationpath-registry-subkey.md
+      - name: "* Registry Subkey"
+        href: --registry-subkey.md
   - name: "Deprecated Functionality"
     items:
     - name: "General Setup Operations"
@@ -704,6 +708,10 @@
         href: calling-the-default-dif-code-handlers.md
       - name: "Accessing the Co-installers Registry Entry Value of a Device Setup Class"
         href: accessing-the-co-installers-registry-entry-value-of-a-device-setup-cla.md
+      - name: "Calling SetupAPI Functions"
+        href: calling-setupapi-functions.md
+      - name: "Writing Class Installers and Co-Installers"
+        href: writing-class-installers-and-co-installers.md
     - name: "Finish Install Actions"
       items:
       - name: "Finish-Install Actions"
@@ -754,6 +762,8 @@
     href: inf-ddinstall-events-section.md
   - name: "INF DDInstall.FactDef Section"
     href: inf-ddinstall-factdef-section.md
+  - name: "INF DDInstall.Filters Section"
+    href: inf-ddinstall-filters-section.md
   - name: "INF DDInstall.HW Section"
     href: inf-ddinstall-hw-section.md
   - name: "INF DDInstall.Interfaces Section"
@@ -796,6 +806,8 @@
     href: inf-addcomponent-directive.md
   - name: "INF AddEventProvider Directive"
     href: inf-addeventprovider-directive.md
+  - name: "INF AddFilter Directive"
+    href: inf-addfilter-directive.md
   - name: "INF AddInterface Directive"
     href: inf-addinterface-directive.md
   - name: "INF AddPowerSetting Directive"
@@ -860,8 +872,6 @@
     href: opening-a-device-s-hardware-key.md
   - name: "Opening a Device's Software Key"
     href: opening-a-device-s-software-key.md
-  - name: "Modifying Registry Values in a Device's Software Key"
-    href: modifying-registry-values-in-a-device-s-software-key-.md
   - name: "Enumerating Installed Device Setup Classes"
     href: enumerating-installed-device-setup-classes.md
   - name: "Opening Registry Keys for a Device Setup Class"
@@ -870,43 +880,27 @@
     href: opening-software-keys-for-all-devices-in-a-setup-class.md
   - name: "Enumerating Installed Device Interfaces"
     href: enumerating-installed-device-interface-classes.md
-  - name: "Accessing the Properties of Installed Device Interfaces"
+  - name: "Access the properties of installed device interfaces"
     href: accessing-the-properties-of-installed-device-interface-classes.md
-  - name: "Deleting the Registry Keys of a Device"
+  - name: "Delete the registry keys of a device"
     href: deleting-the-registry-keys-of-a-device.md
-  - name: "Calling SetupAPI Functions"
-    href: calling-setupapi-functions.md
-  - name: "Enumerating Installed Devices"
+  - name: "Enumerate installed devices"
     href: enumerating-installed-devices.md
   - name: "General Guidelines for Device and Driver Installation"
     href: general-guidelines-for-device-and-driver-installation.md
   - name: "Porting code from SetupApi to CfgMgr32"
     href: porting-from-setupapi-to-cfgmgr32.md
-  - name: "Writing Class Installers and Co-Installers"
-    href: writing-class-installers-and-co-installers.md
-  - name: "Writing INF Files"
-    href: writing-inf-files.md
-  - name: "Installing a Boot-Start Driver"
+  - name: "Install a boot-start driver"
     href: installing-a-boot-start-driver.md
-  - name: "Installing a Filter Driver"
+  - name: "Install a filter driver"
     href: installing-a-filter-driver.md
-  - name: "Installing a Null Driver"
+  - name: "Install a null driver"
     href: installing-a-null-driver.md
   - name: "Installing a New Bus Driver"
     href: installing-a-new-bus-driver.md
   - name: "Using Custom Hardware IDs and Compatible IDs"
     href: using-custom-hardware-ids-and-compatible-ids.md
-  - name: "Installing Private Builds of In-box Drivers"
-    href: installing-private-builds-of-in-box-drivers--windows-vista-and-later-.md
-  - name: "Overview of Installing Private Builds of In-box Drivers"
-    href: overview-of-installing-private-builds-of-in-box-drivers.md
-  - name: "Creating a Private Build of an In-box Driver"
-    href: creating-a-private-build-of-an-in-box-driver.md
-  - name: "Configuring Windows to Rank Driver Signatures Equally"
-    href: configuring-windows-to-rank-driver-signatures-equally.md
-  - name: "Installing the Updated Version of the Driver Package"
-    href: installing-the-updated-version-of-the-driver-package.md
-  - name: "Writing Win32 Services to Interact with Devices"
+  - name: "Writing Win32 services to interact with devices"
     href: best-practices-win32services-interacting-with-devices.md
 - name: "Troubleshooting"
   items: 

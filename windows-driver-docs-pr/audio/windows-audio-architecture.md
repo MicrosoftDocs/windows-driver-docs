@@ -91,7 +91,7 @@ Audio drivers:
 ## <span id="Hardware"></span><span id="hardware"></span><span id="HARDWARE"></span>Hardware
 
 
-The audio hardware that is present on any give device varies but can include:
+The audio hardware that is present on any given device varies but can include:
 
 -   Audio Codec
 -   DSP (optional)

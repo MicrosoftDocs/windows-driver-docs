@@ -170,7 +170,7 @@ Additional IRQL checking
 
 Additional IRQL checking augments the DDI Compliance Checking IRQL rules for PASSIVE_LEVEL. It consists of two rules:
 - The [IrqlIoRtlZwPassive](wdm-irqliortlzwpassive.md) rule specifies that the driver calls the DDIs listed in the rule only when it is executing at IRQL = PASSIVE_LEVEL.
-- The The [IrqlNtifsApcPassive](wdm-irqlntifsapcpassive.md) rule specifies that the driver calls the DDIs listed in the rule only when it is executing either at IRQL = PASSIVE_LEVEL or at IRQL <= APC_LEVEL.
+- The [IrqlNtifsApcPassive](wdm-irqlntifsapcpassive.md) rule specifies that the driver calls the DDIs listed in the rule only when it is executing either at IRQL = PASSIVE_LEVEL or at IRQL <= APC_LEVEL.
 
 [Driver Isolation Checks](../develop/validating-windows-drivers.md#driver-verifier-driver-isolation-checks)
 

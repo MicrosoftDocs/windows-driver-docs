@@ -45,6 +45,8 @@ For example, the following command tells the debugger to obtain symbols from the
 
 ## <span id="Using_a_Symbol_Server"></span><span id="using_a_symbol_server"></span><span id="USING_A_SYMBOL_SERVER"></span>Using a symbol server
 
+See [Microsoft public symbol server](./microsoft-public-symbols.md) for more information about https://msdl.microsoft.com/download/symbols, the Microsoft public symbol server.
+
 If you are connected to the Internet or a corporate network, the most efficient way to access symbols is to use a symbol server. You can use a symbol server by using the `srv*`, `srv*symbolstore`, or `srv*localsymbolcache*symbolstore` string in your symbol path.
 
 If you include the string `srv*` in your symbol path, the debugger uses a symbol server to get symbols from the default symbol store. For example, the following command tells the debugger to use a symbol server to get symbols from the default symbol store. These symbols are not cached on the local computer.

@@ -22,14 +22,14 @@ This measure is normalized by usage, less than or equal to the baseline goal.
 |**Measurement criteria**|Aggregation of instances|
 |**Minimum population**|1,000 hours of gaming application runtime|
 |**Passing criteria**|<= 5 crashes per year of runtime|
-|**Measure ID**|22843841|
+|**Measure ID**|33255827|
 
 ## Calculation
 
 1.	The measure aggregates telemetry from a 7-day sliding window into a ratio of crashes in gaming applications, caused by the graphics driver, over total runtime in years.
 2.	Total crashes in gaming applications = count(crashes in gaming applications on machines that have the driver)
 3.	Total gaming applications runtime = sum(runtime of gaming applications, for each machine that has the driver)
-4.	Runtime in years = Total gaming applications runtime * 60 (minute) * 60 (hour) * 24 (day) * 365 (year)
+4.	Runtime in years = Total gaming applications runtime in seconds / (60 (minute) * 60 (hour) * 24 (day) * 365 (year))
 
 ### Final calculation
 

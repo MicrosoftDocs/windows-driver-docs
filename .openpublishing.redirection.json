@@ -1,6 +1,16 @@
 {
     "redirections": [
         {
+            "source_path": "windows-driver-docs-pr/kernel/processing-an-application-notification.md",
+            "redirect_URL": "/windows-hardware/drivers/kernel/processing-wm_devicechange-messages",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/wdk22h2-supportmatrix.md",
+            "redirect_URL": "/windows-hardware/drivers/download-the-wdk",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/ieee/removing-ieee-1394-virtual-devices.md",
             "redirect_URL": "/windows-hardware/drivers/ieee/how-drivers-manage-ieee-1934-virtual-devices",
             "redirect_document_id": false
@@ -31,8 +41,18 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/install/configuring-windows-to-rank-driver-signatures-equally.md",
+            "redirect_URL": "/windows-hardware/drivers/install/allsigningequal-group-policy",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/install/creating-a-catalog-file-for-a-test-signed-driver-package.md",
             "redirect_URL": "/windows-hardware/drivers/install/creating-a-catalog-file-for-test-signing-a-driver-package",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/creating-a-private-build-of-an-in-box-driver.md",
+            "redirect_URL": "/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-",
             "redirect_document_id": false
         },
         {
@@ -71,6 +91,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/install/installing-private-builds-of-in-box-drivers--windows-vista-and-later-.md",
+            "redirect_URL": "/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/installing-the-updated-version-of-the-driver-package.md",
+            "redirect_URL": "/windows-hardware/drivers/devtest/pnputil",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/install/obtaining-a-software-publisher-certificate--spc-.md",
             "redirect_URL": "/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates",
             "redirect_document_id": false
@@ -83,6 +113,11 @@
         {
             "source_path": "windows-driver-docs-pr/install/opening-and-closing-an-inf-file.md",
             "redirect_URL": "/windows-hardware/drivers/install/accessing-inf-files-from-a-setup-application",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/overview-of-installing-private-builds-of-in-box-drivers.md",
+            "redirect_URL": "/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-",
             "redirect_document_id": false
         },
         {
@@ -143,6 +178,11 @@
         {
             "source_path": "windows-driver-docs-pr/install/verifying-the-spc-signature-of-a-catalog-file.md",
             "redirect_URL": "/windows-hardware/drivers/install/deprecation-of-software-publisher-certificates-and-commercial-release-certificates",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/writing-inf-files.md",
+            "redirect_URL": "/windows-hardware/drivers/install/general-guidelines-for-inf-files",
             "redirect_document_id": false
         },
         {
@@ -297,12 +337,12 @@
         },
         {
             "source_path": "windows-driver-docs-pr/bluetooth/testing-BTP-hw-audio.md",
-            "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/bluetooth/testing-BTP-hw.md#supported-devices",
+            "redirect_URL": "/windows-hardware/drivers/bluetooth/testing-BTP-hw.md#supported-devices",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/bluetooth/testing-BTP-hw-hid.md",
-            "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/bluetooth/testing-BTP-hw.md#supported-devices",
+            "redirect_URL": "/windows-hardware/drivers/bluetooth/testing-BTP-hw.md#supported-devices",
             "redirect_document_id": false
         },
         {
@@ -351,13 +391,23 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-hardware/drivers/dashboard/register-for-the-hardware-program.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-program-register",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/register-for-the-hardware-program.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-program-register",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/dashboard/create-and-manage-your-profile.md",
-            "redirect_URL": "/windows-hardware/drivers/dashboard/register-for-the-hardware-program",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-program-register",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/dashboard-faq.md",
-            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-dashboard-faq",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/index",
             "redirect_document_id": false
         },
         {
@@ -382,6 +432,8 @@
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/download-failure-cabs.md",
+
+
             "redirect_URL": "/windows-hardware/drivers/dashboard/dashboard-api",
             "redirect_document_id": false
         },
@@ -437,7 +489,7 @@
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/file-signing-services.md",
-            "redirect_URL": "/windows-hardware/drivers/dashboard/lsa-and-uefi-file-signing",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/file-signing-manage",
             "redirect_document_id": false
         },
         {
@@ -502,7 +554,7 @@
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/graphics-display-health-percent-devices-with-display-issues-resume-from-low-power.md",
-            "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/graphics-measures",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/graphics-measures",
             "redirect_document_id": false
         },
         {
@@ -582,7 +634,7 @@
         },
         {
             "source_path": "windows-driver-docs-pr/dashboard/number-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-kernel.md",
-            "redirect_URL": "https://docs.microsoft.com/windows-hardware/drivers/dashboard/graphics-measures",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/graphics-measures",
             "redirect_document_id": false
         },
         {
@@ -2813,6 +2865,11 @@
         {
             "source_path": "windows-driver-docs-pr/install/inf-sections.md",
             "redirect_url": "/windows-hardware/drivers/install/inf-classinstall32-section",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/install/modifying-registry-values-in-a-device-s-software-key-.md",
+            "redirect_url": "/windows-hardware/drivers/install/opening-a-device-s-software-key",
             "redirect_document_id": false
         },
         {
@@ -8226,6 +8283,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/network/virtual-machine-queue--vmq-.md",
+            "redirect_URL": "/previous-versions/windows/hardware/network/virtual-machine-queue-architecture",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/network/virtual-wifi-implementation-guidelines.md",
             "redirect_URL": "/previous-versions/windows/hardware/wireless/virtual-wifi-implementation-guidelines",
             "redirect_document_id": false
@@ -8669,6 +8731,87 @@
             "source_path": "windows-driver-docs-pr/whea/persistence-of-pfa-results.md",
             "redirect_URL": "/windows-hardware/drivers/whea/how-to-manage-the-pfa-memory-list",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/update-a-code-signing-certificate.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/code-signing-cert-manage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/get-a-code-signing-certificate.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/code-signing-cert-manage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/lsa-and-uefi-file-signing.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/file-signing-reqs",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/adding-or-removing-users.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-dashboard-users-manage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/attestation-signing-a-kernel-driver-for-public-release.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/code-signing-attestation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/winqual-submission-tool--winqualiexe-.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-submission-wlk",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/create-a-new-hardware-submission.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-submission-create",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/get-started-with-the-hardware-dashboard.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/get-started-dashboard-submissions",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/hardware-certification-submissions.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-submission-create",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/manage-your-hardware-submissions.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-submission-update",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/create-a-new-hardware-logo-submission.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-submission-wlk",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/id-definitions.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-submission-ids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale-expanded.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/get-drivers-signed-by-microsoft-for-multiple-windows-versions.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/hardware-submission-create",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/drivers/driversecurity/use-device-guard-readiness-tool.md",
+            "redirect_URL": "/windows-hardware/drivers/driversecurity/implement-hvci-compatible-code",
+            "redirect_document_id": false
         }
+
     ]
 }

@@ -2,23 +2,24 @@
 title: Publish a driver to Windows Update
 description: To publish a driver to Windows Update, create a hardware submission and then follow the steps below.
 ms.topic: article
-ms.date: 04/20/2017
+ms.date: 08/05/2022
 ---
 
 # Publish a driver to Windows Update
 
+To publish a driver to Windows Update:
 
-To publish a driver to Windows Update, [create a hardware submission](create-a-new-hardware-submission.md) and then follow the steps below.
+1. [Create a hardware submission](hardware-submission-create.md).
 
-1. [Find the hardware submission](manage-your-hardware-submissions.md) that contains the driver you want to distribute.
+1. [Search for the hardware submission](hardware-submissions-view.md) that contains the driver you want to distribute.
 
-2. Go to the **Distribution** section of the hardware submission and select **New shipping label**.
+1. Go to the **Distribution** section of the hardware submission and select **New shipping label**.
 
    ![screenshot that shows new shipping label button.](images/publish-new-shipping-label.png)
 
-3. On the shipping label page, go to the **Details** section and enter a name for the shipping label in the **Shipping label name** field. This name allows you to organize and search for your shipping labels.
+1. On the shipping label page, go to the **Details** section and enter a name for the shipping label in the **Shipping label name** field. This name allows you to organize and search for your shipping labels.
 
-4. In the **Properties** section, complete the following information:
+1. In the **Properties** section, complete the following information:
 
 |Field|Description|
 |--- |--- |
@@ -28,9 +29,9 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
 
 ![screenshot that shows label name and publishing properties.](images/label-name-and-properties-windows-update.png)
 
-5. In the **Targeting** section, select the driver package that you want to publish.
+1. In the **Targeting** section, select the driver package that you want to publish.
 
-6. After you select your driver package, **Select PNPs** becomes available. Select the hardware IDs you want to target. You can search for a specific hardware ID or operating system by using the search boxes above the list of hardware IDs.
+1. After you select your driver package, **Select PNPs** becomes available. Select the hardware IDs you want to target. You can search for a specific hardware ID or operating system by using the search boxes above the list of hardware IDs.
 
    To target all listed hardware IDs, select **Publish All**.
 
@@ -42,7 +43,7 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
 
    ![screenshot that shows targeting section and pnps.](images/publish-targeting-windows-update.png)
 
-7. If you want to add Computer Hardware IDs (CHIDs), enter each CHID into the text box and select **Add CHID(s)**. To bulk add multiple CHIDs, ensure that each CHID is separated by a newline, select **Add multiple CHIDs**, and paste your CHIDs into the text box. You can view all added CHIDs in the list below the text box. To remove a CHID from the list, select **Remove**
+1. If you want to add Computer Hardware IDs (CHIDs), enter each CHID into the text box and select **Add CHID(s)**. To bulk add multiple CHIDs, ensure that each CHID is separated by a newline, select **Add multiple CHIDs**, and paste your CHIDs into the text box. You can view all added CHIDs in the list below the text box. To remove a CHID from the list, select **Remove**
 
 >[!IMPORTANT]
 > CHIDs are not supported for the following versions of windows:
@@ -53,13 +54,13 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
 
 
 
-8. If you wish to limit public disclosure of your Shipping Label in the Windows Update Catalog and WSUS Catalog, check the **Limit Public Disclosure of this Shipping Label information.** box.  
+1. If you wish to limit public disclosure of your Shipping Label in the Windows Update Catalog and WSUS Catalog, check the **Limit Public Disclosure of this Shipping Label information.** box.  
 
    ![screenshot that shows limit public disclosure.](images/limit-public-disclosure.PNG)
 
    Your driver will still be published and downloadable from Windows Update but will not show up in either of the public catalog lists.
 
-9. If your driver targets Windows 10 in S mode, you must select both boxes, confirming the following:
+1. If your driver targets Windows 10 in S mode, you must select both boxes, confirming the following:
 
    * Your driver is compatible with and follows the driver policies outlined in the [Windows 10 in S mode Driver Requirements](../install/windows10sdriverrequirements.md).
    * You verify that your driver follows the additional code integrity policies outlined in the Windows 10 in S mode guidelines.
@@ -67,5 +68,5 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
 
    ![A screenshot of the two checkboxes you must select when submitting a driver for Windows 10 S.](images/win-cloud-checkboxes.png)
 
-10. Select **Publish** to send your request to Windows Update. If you do not want to publish the shipping label right now, you can select **Save**. You can publish the shipping label later by either opening the shipping label and selecting **Publish**, or you can select **Publish all pending** from the hardware submission page. Note that selecting **Publish all pending** will publish all unpublished shipping labels.
+1. Select **Publish** to send your request to Windows Update. If you do not want to publish the shipping label right now, you can select **Save**. You can publish the shipping label later by either opening the shipping label and selecting **Publish**, or you can select **Publish all pending** from the hardware submission page. Note that selecting **Publish all pending** will publish all unpublished shipping labels.
 

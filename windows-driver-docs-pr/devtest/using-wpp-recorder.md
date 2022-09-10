@@ -65,11 +65,11 @@ Set to the number of pages to store the default log. The default is one.
 
 The default setting of zero causes the IFR to log errors, warnings, and informational events. Set to one to add verbose output to the log.
 
-**WppRecorder_UseTimeStamp: REG_DWORD** (available starting in WDK Insider Preview build 22557)
+**WppRecorder_UseTimeStamp: REG_DWORD** (available starting in WDK build 22557)
 
 Drivers set this entry to one to add timestamps to log entries that are then viewable using [**!rcdrkd.rcdrlogdump**](../debugger/-rcdrkd-rcdrlogdump.md) or [**!wdfkd.wdflogdump**](../debugger/-wdfkd-wdflogdump.md).
 
-**WppRecorder_PreciseTimeStamp: REG_DWORD** (available starting in WDK Insider Preview build 22557)
+**WppRecorder_PreciseTimeStamp: REG_DWORD** (available starting in WDK build 22557)
 
 If you would like more precise timestamps, in addition to **WppRecorder_UseTimeStamp**, add **WppRecorder_PreciseTimeStamp** using the same syntax shown above.
 
@@ -149,7 +149,7 @@ To do this you need to add a single line to the driver code for each log handle 
 For a code example, see [**WppRecorderLogCreate**](/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogcreate).
 
 > [!NOTE]
-> This functionality is available starting in WDK Insider Preview build 22557. For info on targeting a specific release, see [Building Drivers for Different Versions of Windows](../develop/building-drivers-for-different-versions-of-windows.md).
+> This functionality is available starting in WDK build 22557. For info on targeting a specific release, see [Building Drivers for Different Versions of Windows](../develop/building-drivers-for-different-versions-of-windows.md).
 
 ## How to view trace messages in the debugger
 

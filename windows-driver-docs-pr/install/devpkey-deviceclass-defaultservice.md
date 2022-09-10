@@ -77,6 +77,3 @@ Windows Server 2003, Windows XP, and Windows 2000 support this property, but do 
 [**INF ClassInstall32.Services Section**](./inf-classinstall32-services-section.md)
 
 [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
-
-[**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
-

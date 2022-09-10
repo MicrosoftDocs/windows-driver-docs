@@ -10,7 +10,7 @@ keywords:
 - software tracing WDK , formatting messages
 - tracing WDK , DTrace
 - trace message format files WDK
-ms.date: 11/04/2019
+ms.date: 05/02/2022
 ---
 
 # DTrace Code Samples
@@ -22,13 +22,13 @@ For general information about DTrace on Windows, see [DTrace](dtrace.md).
 For detailed information about DTrace see the [OpenDTrace Speciﬁcation version 1.0](https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-924.pdf) at the University Of Cambridge.
 
 > [!NOTE]
-> DTrace is supported in the Insider builds of Windows after version 18980 and Windows Server Insider Preview Build 18975.
+> DTrace is supported in the Insider builds of Windows after version 18980 and Windows Server Build 18975.
 
 ## Additional sample scripts
 
 Additional D scripts applicable for Windows scenarios are available in the samples directory of the DTrace source code.
 
-[https://github.com/microsoft/DTrace-on-Windows/tree/master/samples/windows](https://github.com/microsoft/DTrace-on-Windows/tree/master/samples/windows)
+[https://github.com/microsoft/DTrace-on-Windows/tree/windows/samples/windows](https://github.com/microsoft/DTrace-on-Windows/tree/windows/samples/windows)
 
 A set of useful opentrace toolkit scripts is available at [https://github.com/opendtrace/toolkit](https://github.com/opendtrace/toolkit).
 

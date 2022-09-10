@@ -1,18 +1,26 @@
 ---
 title: Run From Driver Store
-description: This page describes how to make use of 'run from driver store' concepts in a driver package.
-ms.date: 11/10/2021
+description: This page describes how to make use of 'run from Driver Store' concepts in a driver package.
+ms.date: 06/20/2022
 ---
 
 # Run From Driver Store
 
-An INF that is using 'run from [Driver Store](../install/driver-store.md)' means that the INF uses [**DIRID 13**](../install/using-dirids.md) to specify the location for driver package files on install.
+An INF that is using 'run from [Driver Store](../install/driver-store.md)' means that the INF uses [**DIRID 13**](../install/using-dirids.md) to specify the location for [driver package](../install/driver-packages.md) files on install.
 
 For a 'run from Driver Store' file payloaded by an INF, the *subdir* listed in the [**SourceDisksFiles**](../install/inf-sourcedisksfiles-section.md) entry for the file in the INF **must** match the subdir listed in the [**DestinationDirs**](../install/inf-destinationdirs-section.md) entry for the file in the INF.
 
 Additionally, a [**CopyFiles**](../install/inf-copyfiles-directive.md) directive cannot be used to rename a file that is run from Driver Store. These restrictions are required so that the installation of an INF on a device does not result in the creation of new files in the Driver Store directory.
 
 Since [**SourceDisksFiles**](../install/inf-sourcedisksfiles-section.md) entries cannot have multiple entries with the same filename and CopyFiles cannot be used to rename a file, every 'run from Driver Store' file that an INF references must have a unique file name.
+
+Driver packages have general support for 'run from Driver Store' starting with Windows 10 1709. However, certain device stacks may place additional restrictions on files you need to provide that plug into that stack. Some examples are these device stacks that did not support 'run from Driver Store' until Windows 10 1803:
+
+- UMDF driver binaries: See [Restricting the Loading Location of UMDF Drivers](../wdf/restricting-the-loading-location-of-umdf-drivers.md) for more information
+
+- UEFI firmware update: See [Authoring an update driver package](../bringup/authoring-an-update-driver-package.md) for more information
+
+If providing a binary that plugs into a particular device stack, please consult the documentation for the specific device stack you are plugging into to check if it supports providing a full file path to the binary and if there are any restrictions on that full file path. If it supports providing a full file path to the binary with no restrictions on that path, then it should support the file being 'run from Driver Store'.
 
 ## Dynamically finding and loading files from the Driver Store
 
@@ -22,7 +30,7 @@ Sometimes there is a need for a component to load a file that is part of a drive
 
 When a file in a driver package needs to load another file from the same driver package, one potential option for dynamically discovering that file is to determine the directory that this file is running from and to load the other file relative to that directory.
 
-A WDM or KMDF driver that is running from the Driver Store on Windows 10 version 1803 and later which needs to access other files from its driver package should call [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdriverdirectory) with *DriverDirectoryImage* as the directory type to get the directory path that the driver was loaded from. Alternatively for drivers that need to support OS versions before Windows 10 version 1803, use [**IoQueryFullDriverPath**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioqueryfulldriverpath) to find the driver's path, get the directory path it was loaded from, and look for files relative to that path.  If the kernel mode driver is a KMDF driver, it can use [**WdfDriverWdmGetDriverObject**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverwdmgetdriverobject) to retrieve the WDM driver object to pass to IoQueryFullDriverPath. 
+A WDM or KMDF driver that is running from the Driver Store on Windows 10 version 1803 and later which needs to access other files from its driver package should call [**IoGetDriverDirectory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdriverdirectory) with *DriverDirectoryImage* as the directory type to get the directory path that the driver was loaded from. Alternatively for drivers that need to support OS versions before Windows 10 version 1803, use [**IoQueryFullDriverPath**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioqueryfulldriverpath) to find the driver's path, get the directory path it was loaded from, and look for files relative to that path.  If the kernel mode driver is a KMDF driver, it can use [**WdfDriverWdmGetDriverObject**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverwdmgetdriverobject) to retrieve the WDM driver object to pass to IoQueryFullDriverPath.
 
 Usermode binaries can use [**GetModuleHandleExW**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandleexw) and [**GetModuleFileNameW**](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulefilenamew) to determine where the driver was loaded from.  For example, a UMDF driver binary may do something like the following:
 
@@ -43,8 +51,9 @@ In some scenarios, a driver package may contain a file that is intended to be lo
 
 Here are a couple of examples of scenarios that may involve loading files from a driver package:
 
-* A user mode DLL in a driver package provides an interface for communicating with a driver in the driver package.
-* An [extension driver package](../install/using-an-extension-inf-file.md) contains a configuration file that is loaded by the driver in the base driver package.
+- A user mode DLL in a driver package provides an interface for communicating with a driver in the driver package.
+
+- An [extension driver package](../install/using-an-extension-inf-file.md) contains a configuration file that is loaded by the driver in the base driver package.
 
 In these situations, the driver package should set some state on a device or device interface that indicates the path of the file that is expected to be loaded.
 
@@ -105,3 +114,145 @@ By default, a driver package cannot be removed from the system if it is still in
 ### Testing private binaries
 
 When developing a driver package, if there is a need to replace a particular executable file from the driver package with a private version instead of fully rebuilding and replacing the driver package on the system, then it is recommended that a kernel debugger is used along with the [**.kdfiles**](../debugger/-kdfiles--set-driver-replacement-map-.md) command.  Since the full path to the file in the Driver Store should not be hardcoded, it is recommended that in the .kdfiles mapping, the *OldDriver* file name is just the direct name of the file with no preceding path information.  To facilitate this (and other scenarios), names of files in driver packages should be as unique as possible so it does not match the name of a file from an unrelated driver package on the system.
+
+## Porting an INF to use run from Driver Store
+
+If you have an existing driver package with an INF that does not use run from Driver Store and are porting it to use run from Driver Store, the following examples show some common file usage in INFs and patterns on updating those files to be run from DriverStore.
+
+### Service binary
+
+If your INF adds a service and the binary is not run from Driver Store, then your INF may look like:
+
+```inf
+[DestinationDirs]
+ ; Copy the file to %windir%\system32\drivers
+ Example_CopyFiles = 12
+
+[ExampleDDInstall]
+CopyFiles = Example_CopyFiles
+
+[Example_CopyFiles]
+ExampleBinary.sys
+
+[ExampleDDInstall.Services]
+AddService = ExampleService,0x2,Example_Service_Inst
+
+[Example_Service_Inst]
+DisplayName   = %SvcDesc%
+ServiceType   = %SERVICE_KERNEL_DRIVER%
+StartType     = %SERVICE_DEMAND_START%
+ErrorControl  = %SERVICE_ERROR_NORMAL%
+; Point at the file in %windir%\system32\drivers
+ServiceBinary = %12%\ExampleBinary.sys
+```
+
+To move this file to be run from the Driver Store, you would need to update the DestinationDirs entry for where the file will be copied to and update the ServiceBinary directive referencing the location of this file.
+
+```inf
+[DestinationDirs]
+; Update the destination to DIRID 13
+Example_CopyFiles = 13
+
+[ExampleDDInstall]
+CopyFiles = Example_CopyFiles
+
+[Example_CopyFiles]
+ExampleBinary.sys
+
+[ExampleDDInstall.Services]
+AddService = ExampleService,0x2,Example_Service_Inst
+
+[Example_Service_Inst]
+DisplayName   = %SvcDesc%
+ServiceType   = %SERVICE_KERNEL_DRIVER%
+StartType     = %SERVICE_DEMAND_START%
+ErrorControl  = %SERVICE_ERROR_NORMAL%
+; Point at the run from Driver Store file using DIRID 13
+ServiceBinary = %13%\ExampleBinary.sys
+```
+
+### UMDF driver binary
+
+If your INF adds a UMDF driver and the binary is not run from Driver Store, then your INF may look like:
+
+```inf
+[DestinationDirs]
+; Copy the file to %windir%\system32\drivers\UMDF
+Example_CopyFiles = 12, UMDF
+
+[ExampleDDInstall]
+CopyFiles = Example_CopyFiles
+
+[Example_CopyFiles]
+ExampleUmdfDriver.dll
+
+[ExampleDDInstall.Wdf]
+UmdfService = ExampleUmdfDriver,Example_UMDF_Inst
+...
+
+[Example_UMDF_Inst]
+; Point at the file in %windir%\system32\drivers\UMDF
+ServiceBinary = %12%\UMDF\ExampleUmdfDriver.dll
+...
+```
+
+To move this file to be run from the Driver Store, you would need to update the DestinationDirs entry for where the file will be copied to and update the ServiceBinary directive referencing the location of this file.
+
+```inf
+[DestinationDirs]
+; Update the destination to DIRID 13
+Example_CopyFiles = 13
+
+[ExampleDDInstall]
+CopyFiles = Example_CopyFiles
+
+[Example_CopyFiles]
+ExampleUmdfDriver.dll
+
+[ExampleDDInstall.Wdf]
+UmdfService = ExampleUmdfDriver,Example_UMDF_Inst
+...
+
+[Example_UMDF_Inst]
+; Point at the run from Driver Store file using DIRID 13
+ServiceBinary = %13%\ExampleUmdfDriver.dll
+...
+```
+
+### Other files
+
+If your INF adds a file that may be loaded by other components and is not run from Driver Store, then your INF may look like the following. In this example, only the name of the file is written to the device's registry state. Components that read this registry value to determine what file to load would be depending on the file being in `%windir%\system32` or be depending on [LoadLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw)'s search order being able to find the file.
+
+```inf
+[DestinationDirs]
+; Copy the file to %windir%\system32
+Example_CopyFiles = 11
+
+[ExampleDDInstall]
+CopyFiles=Example_CopyFiles
+AddReg=Example_AddReg
+
+[Example_CopyFiles]
+ExampleFile.dll
+
+[Example_AddReg]
+HKR,,FileLocation,,"ExampleFile.dll"
+```
+
+To move this file to be run from the Driver Store, you would need to update the DestinationDirs entry for where the file will be copied to and update the location saved in the device's state. This requires components that read that registry value to be able to handle that registry value being the full path to a file instead of a file relative to `%windir%\system32`.
+
+```inf
+[DestinationDirs]
+Example_CopyFiles = 13 ; update the destination to DIRID 13
+
+[ExampleDDInstall]
+CopyFiles=Example_CopyFiles
+AddReg=Example_AddReg
+
+[Example_CopyFiles]
+ExampleFile.dll
+
+[Example_AddReg]
+; Point at the run from Driver Store file using DIRID 13
+HKR,,FileLocation,,"%13%\ExampleFile.dll"
+```

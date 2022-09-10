@@ -40,7 +40,7 @@ devcon rescan
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
-[Example 37: Scan the computer for new devices](devcon-examples.md#ddk_example_37_scan_the_computer_for_new_devices_tools)
+[Example 37: Scan the computer for new devices](devcon-examples.md#example-37-scan-the-computer-for-new-devices)
 
 
 

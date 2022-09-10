@@ -19,7 +19,7 @@ For policy requirements, see [Windows 10 Kernel Mode Code Signing Requirements](
 
 Existing [cross-signed root certificates](cross-certificates-for-kernel-mode-code-signing.md) with kernel mode code signing capabilities will continue working until expiration. All software publisher certificates, commercial release certificates, and commercial test certificates that chain back to these root certificates also become invalid on the same schedule.
 
-To get your driver signed, first [Register for the Windows Hardware Dev Center program](../dashboard/register-for-the-hardware-program.md).
+To get your driver signed, first [Register for the Windows Hardware Dev Center program](../dashboard/hardware-program-register.md).
 
 ## Frequently asked questions
 
@@ -126,9 +126,9 @@ Drivers can still be signed with a 3rd party issued code signing certificate. Ho
 > Cross-signing is no longer accepted for driver signing. Using cross certificates to sign kernel-mode drivers is a violation of the Microsoft Trusted Root Program (TRP) policy.
 > Certificates in violation of Microsoft TRP policies will be revoked by the CA.
 
-If your driver runs on Windows 7, 8, or 8.1, your driver must be signed through the Windows Hardware Compatibility Program. To get started, see [Create a new hardware submission](../dashboard/create-a-new-hardware-submission.md).
+If your driver runs on Windows 7, 8, or 8.1, your driver must be signed through the Windows Hardware Compatibility Program. To get started, see [Create a new hardware submission](../dashboard/hardware-submission-create.md).
 
-For Windows 10, use either WHCP or [attestation signing](../dashboard/attestation-signing-a-kernel-driver-for-public-release.md).
+For Windows 10, use either WHCP or [attestation signing](../dashboard/code-signing-attestation.md).
 
 If you have challenges signing your driver with WHCP, please report the specifics using one of the following:
 
@@ -137,4 +137,4 @@ If you have challenges signing your driver with WHCP, please report the specific
 
 ## Related information
 
-* [Register for the Hardware Program](../dashboard/register-for-the-hardware-program.md)
+* [Register for the Hardware Program](../dashboard/hardware-program-register.md)

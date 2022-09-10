@@ -20,7 +20,7 @@ During a user's session, a crash in the graphics driver binary may cause the mac
 | **Measurement criteria** | Aggregation of machines |
 | **Minimum population** | 20,000 machines |
 | **Passing criteria** | <= 65/10,000 machines experience a TDR |
-| **Measure ID** | 20574707 |
+| **Measure ID** | 31019119 |
 
 ## Calculation
 

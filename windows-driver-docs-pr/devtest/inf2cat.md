@@ -9,7 +9,7 @@ api_name:
 - Inf2Cat
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 06/10/2022
 ---
 
 # Inf2Cat
@@ -47,27 +47,29 @@ Configures Inf2Cat to verify that a [driver package's](../install/driver-package
 
 |Windows version|Version identifier|
 |--- |--- |
-|Windows 11 x64 Edition|10_CO_X64|
-|Windows 11 ARM64 Edition|10_CO_ARM64|
+|Windows 11, version 22H2 x64 Edition|10_NI_X64|
+|Windows 11, version 22H2 Arm64 Edition|10_NI_ARM64|
+|Windows 11, version 21H2 x64 Edition|10_CO_X64|
+|Windows 11, version 21H2 Arm64 Edition|10_CO_ARM64|
 |Windows Server 2022 x64 Edition|ServerFE_X64|
-|Windows Server 2022 ARM64 Edition|ServerFE_ARM64|
+|Windows Server 2022 Arm64 Edition|ServerFE_ARM64|
 |Windows 10, version 21H2, 21H1, 20H2, 2004 x86 Edition|10_VB_X86|
 |Windows 10, version 21H2, 21H1, 20H2, 2004 x64 Edition|10_VB_X64|
-|Windows 10, version 21H2, 21H1, 20H2, 2004 ARM64 Edition|10_VB_ARM64|
+|Windows 10, version 21H2, 21H1, 20H2, 2004 Arm64 Edition|10_VB_ARM64|
 |Windows 10, version 1909, 1903 x86 Edition|10_19H1_X86|
 |Windows 10, version 1909, 1903 x64 Edition|10_19H1_X64|
-|Windows 10, version 1909, 1903 ARM64 Edition|10_19H1_ARM64|
+|Windows 10, version 1909, 1903 Arm64 Edition|10_19H1_ARM64|
 |Windows 10, version 1809 x86 Edition|10_RS5_X86|
 |Windows 10, version 1809 x64 Edition|10_RS5_X64|
-|Windows 10, version 1809 ARM64 Edition|10_RS5_ARM64|
+|Windows 10, version 1809 Arm64 Edition|10_RS5_ARM64|
 |Windows Server 2019 x64 Edition|ServerRS5_X64|
-|Windows Server 2019 ARM64 Edition|ServerRS5_ARM64|
+|Windows Server 2019 Arm64 Edition|ServerRS5_ARM64|
 |Windows 10, version 1803 x86 Edition|10_RS4_X86|
 |Windows 10, version 1803 x64 Edition|10_RS4_X64|
-|Windows 10, version 1803 ARM64 Edition|10_RS4_ARM64|
+|Windows 10, version 1803 Arm64 Edition|10_RS4_ARM64|
 |Windows 10, version 1709 x86 Edition|10_RS3_X86|
 |Windows 10, version 1709 x64 Edition|10_RS3_X64|
-|Windows 10, version 1709 ARM64 Edition|10_RS3_ARM64|
+|Windows 10, version 1709 Arm64 Edition|10_RS3_ARM64|
 |Windows 10, version 1703 x86 Edition|10_RS2_X86|
 |Windows 10, version 1703 x64 Edition|10_RS2_X64|
 |Windows 10, version 1607 x86 Edition|10_AU_X86|
@@ -76,12 +78,12 @@ Configures Inf2Cat to verify that a [driver package's](../install/driver-package
 |Windows 10 x86 Edition|10_X86|
 |Windows 10 x64 Edition|10_X64|
 |Windows Server 2016|Server10_X64|
-|Windows Server 2016 on ARM|Server10_ARM64|
+|Windows Server 2016 on Arm|Server10_ARM64|
 
 > [!NOTE]
 > Starting with Windows Server 2008 R2, Windows server operating systems will no longer support x86-based platforms.
 
-Inf2Cat ignores the case of the alphabetic characters of the version identifier strings. For example, vista\_x64 and Vista\_X64 are both valid identifiers for Windows Vista x64 Edition.
+Inf2Cat ignores the case of the alphabetic characters of the version identifier strings. For example, 10\_NI\_X64 and 10\_ni\_X64  are both valid identifiers for Windows 11, version 22H2 x64 Edition.
 
 ### /uselocaltime
 
@@ -111,15 +113,13 @@ Include page hashes with files.  Optionally followed by a list of files.
 
 ## Comments
 
-The Inf2Cat tool replaced the Signability tool that was included in versions of the WDK prior to Windows Vista.
-
-To use Inf2Cat, you must be a member of the Administrators group on the system.
-
 The Inf2Cat tool checks [driver package's](../install/driver-packages.md) INF files for structural errors and verifies that a driver package can be digitally-signed. A driver package can be signed only if all of the files that are referenced in an INF file are present and the source files are in the correct location. If an INF file cannot be signed or if it contains structural errors, the driver package might not be installed correctly or might incorrectly display a driver signing warning dialog box during installation.
 
 Inf2Cat generates a [catalog file](../install/catalog-files.md) only if the catalog file is specified in the driver package's INF file and the catalog file applies to one or more of the specified Windows versions. If the [**INF Version section**](../install/inf-version-section.md) of an INF file supplies only a CatalogFile=*filename.cat* directive, that catalog file applies to the entire driver package. To support [cross-platform installations](../install/creating-inf-files-for-multiple-platforms-and-operating-systems.md), the INF file should include CatalogFile.*PlatformExtension*=*unique-filename.cat* directives.
 
 For more information about signing a driver package, see [Driver Signing](../install/driver-signing.md).
+
+To use Inf2Cat, you must be a member of the Administrators group on the system.
 
 ## Examples
 
@@ -132,10 +132,10 @@ CatalogFile=MyCatalogFile.cat
 . . .
 ```
 
-For this example, the following Inf2Cat command would verify whether the driver package can be signed for Windows 2000 and for the x86 versions of Windows Vista, Windows Server 2003, and Windows XP. If the package can be signed for these versions, Inf2Cat would create the unsigned catalog file MyCatalogFile.cat.
+For this example, the following Inf2Cat command would verify whether the driver package can be signed for Windows 10, version 21H2, 21H1, 20H2, 2004 x64 Edition and for Windows 11, version 21H2 x64 Edition. If the package can be signed for these versions, Inf2Cat would create the unsigned catalog file MyCatalogFile.cat.
 
 ```command
-Inf2Cat /driver:C:\MyDriver /os:2000,XP_X86,Server2003_X86,Vista_X86
+Inf2Cat /driver:C:\MyDriver /os:10_VB_X64,10_CO_X64 
 ```
 
 In the following example, c:\\MyDriver contains a [driver package](../install/driver-packages.md) whose INF file is MyInfFile.inf and the INF **Version** section in the INF file includes only the following two **CatalogFile** directives with platform extensions:
@@ -148,10 +148,10 @@ CatalogFile.ntamd64=MyCatalogFileX64.cat
 . . .
 ```
 
-For this example, the following Inf2Cat command would verify whether the driver package can be signed for Windows 2000 and the x86 versions of Windows Vista, Windows Server 2003, and Windows XP. In addition, the command would verify whether the driver package can be signed for the x64 editions of Windows Vista, Windows Server 2003, and Windows XP. If the package can be signed for all of these versions, Inf2Cat will create the unsigned catalog files MyCatalogFileX86.cat and MyCatalogFileX64.cat.
+For this example, the following Inf2Cat command would verify whether the driver package can be signed for Windows 10, version 1809 x86 Edition and X64 Edition. In addition it checks if it can be signed by Windows Windows 10, version 1909, 1903 x86 Edition and X64 Edition. If the package can be signed for all of these versions, Inf2Cat will create the unsigned catalog files MyCatalogFileX86.cat and MyCatalogFileX64.cat.
 
 ```command
-Inf2Cat /driver:C:\MyDriver /os:2000,XP_X86,XP_X64,Server2003_X86,Server2003_X64,Vista_X86,Vista_X64
+Inf2Cat /driver:C:\MyDriver /os:10_RS5_X86,10_RS5_X64,10_19H1_X86,10_19H1_X64 
 ```
 
 For more information about how to use Inf2Cat to create a catalog file, see [Creating a Catalog File for a PnP Driver Package](../install/creating-a-catalog-file-for-a-pnp-driver-package.md).

@@ -24,7 +24,7 @@ The measure uses only WinML Runtime Error telemetry and WinML SessionCreation te
 |**Measurement criteria**|Machine|
 |**Minimum population**|30 devices, using confidence intervals|
 |**Passing criteria**|Less than 1%|
-|**Measure ID**|25419759|
+|**Measure ID**|32436662|
 
 ## Calculation
 

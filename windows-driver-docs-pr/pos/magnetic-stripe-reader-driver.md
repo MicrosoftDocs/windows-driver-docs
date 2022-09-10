@@ -6,7 +6,7 @@ ms.date: 09/07/2018
 
 # Magnetic stripe reader driver sample
 
-The magnetic stripe reader driver sample demonstrates how to create a universal driver for a magnetic stripe reader and is intended to be used as a template for creating a new driver. The sample uses the User-Mode Driver Framework (UMDF) 2.0 and demonstrates basic functionality such as claiming the device for exclusive access. The sample driver can be compiled and deployed on x86, amd64, and ARM platforms.
+The magnetic stripe reader driver sample demonstrates how to create a universal driver for a magnetic stripe reader and is intended to be used as a template for creating a new driver. The sample uses the User-Mode Driver Framework (UMDF) 2.0 and demonstrates basic functionality such as claiming the device for exclusive access. The sample driver can be compiled and deployed on x86, amd64, and Arm platforms.
 
 ## Requirements
 
@@ -44,7 +44,7 @@ The [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples
 1. From the *Standard* toolbar in Visual Studio, select the *Solution Platform* that matches your operating system platform. For example, if you are using a 64-bit version of Windows, select x64.
 
     > [!NOTE]
-    > If targeting the ARM platform, you will need to use the configuration manager to add ARM to your list of targets.
+    > If targeting the Arm platform, you will need to use the configuration manager to add Arm to your list of targets.
 
 1. Select **Build Solution** from the **Build** menu.
 

@@ -1,7 +1,7 @@
 ---
 description: The MUTT Connection Exerciser Type-C (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board.
 title: Test USB Type-C systems with USB Type-C ConnEx
-ms.date: 04/20/2017
+ms.date: 06/14/2022
 ---
 
 # Test USB Type-C systems with USB Type-C ConnEx
@@ -69,11 +69,11 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 
 - **Arduino Mega 2560 R3**
 
-    [Arduino Mega 2560 R3](https://store.arduino.cc/usa/mega-2560-r3) is used as the microcontroller for the test setup.
+    [Arduino Mega 2560 R3](https://store-usa.arduino.cc/products/arduino-mega-2560-rev3) is used as the microcontroller for the test setup.
 
     ![Shows the Arduino Mega 2560 R3 board.](images/arduino.png)
 
-- **Power adapter for the [Arduino Mega 2560 R3](https://store.arduino.cc/usa/mega-2560-r3) microcontroller**.
+- **Power adapter for the [Arduino Mega 2560 R3](https://store-usa.arduino.cc/products/arduino-mega-2560-rev3) microcontroller**.
 
 - **USB Type-C ConnEx**
 
@@ -251,7 +251,7 @@ Here are the command line options that ConnExUtil.exe supports for controlling t
 | --- | --- | --- |
 | **Device Discovery**</br>List all devices connected to USB Type-C ConnEx | **/list** | For USB connected devices, this option lists the device instance path. For audio connected devices it shows **Audio**.</br></br>To view audio devices, use this in combination with the **/all** parameter. Lists with 1-based index that can be used for input to the **/#** parameter. |
 | **Device Selection**</br>Select all devices connected to USB Type-C ConnEx, including audio. | **/all**  | Optional.</br></br>Without this parameter, the utility addresses USB connected devices. Use this parameter only if an audio connected device is in use. Audio discovery is time consuming and disabled by default. |
-| **Device Selection**</br>Select a specific device connected to USB Type-C ConnEx ‘n’. | **/#** *n* | Optional.</br>Input *n* is a 1-based index of the available devices connected to USB Type-C ConnEx which can be viewed by using the **/list** parameter. Without this parameter, the default behavior is to run each command on all USB Type-C ConnEx boards. |
+| **Device Selection**</br>Select a specific device connected to USB Type-C ConnEx 'n'. | **/#** *n* | Optional.</br>Input *n* is a 1-based index of the available devices connected to USB Type-C ConnEx which can be viewed by using the **/list** parameter. Without this parameter, the default behavior is to run each command on all USB Type-C ConnEx boards. |
 | **Device Command** | **/setPort** *p* | Switch to the specified port *p*.</br></br>Connect a port either by specifying number (1 – 4) or by name (**J2**, **J3**, **J4**, **J6**).</br></br>0 disconnects all ports. |
 | **Device Command** | **/getPort** | Read the currently connected port. |
 | **Device Command** </br>Read amperage/voltage information. | **/volts**</br></br>**/amps**</br></br>**/version** | Read the current voltage.</br></br>Read the current amperage.</br></br>Read the device version. |
