@@ -1,18 +1,16 @@
 ---
-title: Printer Extensions
+title: Printer extensions
 description: Printer extension apps support print preferences and printer notifications when users run existing applications on the Windows desktop.
-ms.date: 12/13/2021
+ms.date: 09/08/2022
 ---
 
-# Printer Extensions
+# Printer extensions
 
 Printer extension apps support print preferences and printer notifications when users run existing applications on the Windows desktop.
 
-## Introduction
-
 Printer extensions can be built in any COM-capable language, but are optimized to be built using Microsoft .NET Framework 4. Printer extensions may be distributed with a print driver package, if they are XCopy-capable and have no dependencies on external runtimes other than those included with the operating system, like for example, .NET. If the printer extension app doesn't meet these criteria, it could be distributed in a setup.exe or an MSI package, and advertised in the printer's Device Stage experience by using the PrinterExtensionUrl directive specified in the v4 manifest. When a printer extension app is distributed via an MSI package, you have the option of adding the print driver to the package or leaving it out and distributing the driver separately. The PrinterExtensionUrl is shown on the printer preferences experience.
 
-IT administrators have a few options for managing the distribution of printer extensions. If the application is packaged in a setup.exe or MSI, then IT administrators can use standard software distribution tools such as Microsoft Endpoint Configuration Manager, or they can include the applications in their standard OS image. IT administrators can also override the PrinterExtensionUrl specified in the v4 manifest, if they edit HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Print\\Printers\\&lt;print queue name&gt;\\PrinterDriverData\\PrinterExtensionUrl.
+IT administrators have a few options for managing the distribution of printer extensions. If the application is packaged in a setup.exe or MSI, then IT administrators can use standard software distribution tools such as Microsoft Endpoint Configuration Manager, or they can include the applications in their standard OS image. IT administrators can also override the PrinterExtensionUrl specified in the v4 manifest, if they edit HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Print\\Printers\\&lt;print queue name&gt;\\PrinterDriverData\\PrinterExtensionUrl.
 
 And if an enterprise chooses to block printer extensions altogether, this can be done via a group policy called "Computer Configuration\\Administrative Templates\\Printers\\Do not allow v4 printer drivers to show printer extension applications".
 
@@ -54,7 +52,7 @@ Once the PrintNotify service starts, it will check for registry keys under the \
 This registration is only necessary on first install. The following example shows the correct registry key format used for registering printer extensions.
 
 > [!NOTE]
-> **\[OfflineRoot\]** is used as shorthand for HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Print\\OfflinePrinterExtensions.
+> **\[OfflineRoot\]** is used as shorthand for HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Print\\OfflinePrinterExtensions.
 
 ```Registry
 [OfflineRoot]

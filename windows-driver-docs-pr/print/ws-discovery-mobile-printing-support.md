@@ -1,10 +1,10 @@
 ---
-title: WS-Discovery Mobile Printing Support
-description: WS-Discovery Mobile Printing Support
-ms.date: 06/15/2020
+title: WS-Discovery mobile printing support
+description: Devices that support printing from Windows 10 Mobile, must add the MobilePrinter category to their WS-Discovery ThisModel response.
+ms.date: 09/09/2022
 ---
 
-# WS-Discovery Mobile Printing Support
+# WS-Discovery mobile printing support
 
 Devices that support printing from Windows 10 Mobile, must add the MobilePrinter category to their WS-Discovery ThisModel response, as shown in the following example:
 

@@ -8,7 +8,7 @@ api_name:
 - button
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 09/09/2022
 ---
 
 # button element
@@ -34,77 +34,21 @@ This resource may not be available in some languages and countries.
 
 ## Attributes
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>buttonID</strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>Yes</p></td>
-<td><p></p>
-<p>A required attribute that specifies the string that will be returned to the printer driver when the user clicks the button. This attribute can take one of the following values:</p>
-IDOK
-A button with the name "OK" will be displayed in the message box. When the user clicks the button, the message box returns the string "IDOK".
-IDCANCEL
-A button with the name "CANCEL" will be displayed in the message box. When the user clicks the button, the message box returns the string "IDCANCEL".</td>
-</tr>
-<tr class="even">
-<td><p><strong>resourceDll</strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>No</p></td>
-<td><p></p>
-<p>An optional attribute that specifies a resource DLL that contains the text to display on the button. This DLL should be a dependent file of the printer driver and must be present in the driver resource folder (for example, %SYSTEMROOT%\system32\spool\drivers\w32x86\3).</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>stringID</strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>Yes</p></td>
-<td><p></p>
-<p>A required attribute that specifies the text to display on the button. The attribute value specifies the location of the text string in the resource DLL.</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Type | Required | Description |
+|--|--|--|--|
+| **buttonID** | xs:string | Yes | A required attribute that specifies the string that will be returned to the printer driver when the user clicks the button. This attribute can take one of the following values:<br><br>IDOK - A button with the name "OK" will be displayed in the message box. When the user clicks the button, the message box returns the string "IDOK".<br><br>IDCANCEL - A button with the name "CANCEL" will be displayed in the message box. When the user clicks the button, the message box returns the string "IDCANCEL". |
+| **resourceDll** | xs:string | No | An optional attribute that specifies a resource DLL that contains the text to display on the button. This DLL should be a dependent file of the printer driver and must be present in the driver resource folder (for example, %SYSTEMROOT%\system32\spool\drivers\w32x86\3). |
+| **stringID** | xs:string | Yes | A required attribute that specifies the text to display on the button. The attribute value specifies the location of the text string in the resource DLL. |
 
 ## Child elements
-
 
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="buttons.md" data-raw-source="[&lt;strong&gt;buttons&lt;/strong&gt;](buttons.md)"><strong>buttons</strong></a></p></td>
-<td><p></p>
-<p>A required element that specifies one or more buttons that are displayed in the event notification message box on the client computer.</p></td>
-</tr>
-</tbody>
-</table>
+| Element | Description |
+|--|--|
+| [**buttons**](buttons.md) | A required element that specifies one or more buttons that are displayed in the event notification message box on the client computer. |
 
 ## Remarks
 
