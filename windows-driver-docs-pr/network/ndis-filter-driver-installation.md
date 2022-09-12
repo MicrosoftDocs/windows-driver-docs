@@ -14,11 +14,11 @@ This section provides information about installing NDIS filter drivers. Lightwei
 
 To install a filter driver, you must provide a single INF file. The configuration manager reads configuration information about the filter driver from the INF file and copies it to the registry.
 
-The filter driver INF file defines a network service. Filter drivers do not have a miniport INF file. For an example filter driver INF file, see the [ndislwf](https://github.com/Microsoft/Windows-driver-samples/tree/master/network/ndis/filter) sample driver.
+The filter driver INF file defines a network service. Filter drivers do not have a miniport INF file. For an example filter driver INF file, see the [ndislwf](https://github.com/Microsoft/Windows-driver-samples/tree/main/network/ndis/filter) sample driver.
 
 Once you have provided your filter driver INF file, to install or uninstall your filter driver you must use the `INetCfg` family of [Network Configuration Interfaces](/previous-versions/windows/hardware/network/ff559080(v=vs.85)). For example, to install or remove network components, call into the [INetCfgClassSetup](/previous-versions/windows/hardware/network/ff547709(v=vs.85)) interface. You can either call into these interfaces programmatically or you can indirectly call them with [netcfg.exe](/windows-server/administration/windows-commands/netcfg), which calls `INetCfg` for you. You cannot use [SetupAPI](../install/setupapi.md) to install or uninstall an NDIS filter driver.
 
-For an example of calling into `INetCfg` through code, see the [Bindview Network Configuration Utility sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/network/config/bindview).
+For an example of calling into `INetCfg` through code, see the [Bindview Network Configuration Utility sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/network/config/bindview).
 
 This section includes:
 

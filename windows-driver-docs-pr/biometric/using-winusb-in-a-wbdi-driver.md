@@ -15,7 +15,7 @@ Microsoft recommends that WBDI drivers use the [USB I/O target](../wdf/usb-i-o-t
 
 An INF file that installs a UMDF driver must contain a WDF-specific **DDInstall** section. If you use the USB I/O target in UMDF, you must set the UmdfDispatcher registry directive within this **DDInstall** section.
 
-The following section from WudfBioUsbSample.inx in the [WudfBioUsbSample](https://github.com/Microsoft/Windows-driver-samples/tree/master/biometrics/driver) sample shows how to set this directive:
+The following section from WudfBioUsbSample.inx in the [WudfBioUsbSample](https://github.com/Microsoft/Windows-driver-samples/tree/main/biometrics/driver) sample shows how to set this directive:
 
 ```cpp
 [Biometric_Install.NT.Wdf]
@@ -31,7 +31,7 @@ For specific information about UmdfDispatcher, see [Specifying the UmdfDispatche
 
 WinUsb can handle multiple outstanding read requests. Devices that require minimal latency between read operations during a scan should keep some number of outstanding asynchronous read requests pending. If the driver makes asynchronous requests, WinUsb issues these requests before the transfer back to user mode for the completion routines of earlier read requests.
 
-You can refer to the `CBiometricDevice::InitiatePendingRead` method in Device.cpp in [WudfBioUsbSample](https://github.com/Microsoft/Windows-driver-samples/tree/master/biometrics/driver) to see a code example of how to pend a read request.
+You can refer to the `CBiometricDevice::InitiatePendingRead` method in Device.cpp in [WudfBioUsbSample](https://github.com/Microsoft/Windows-driver-samples/tree/main/biometrics/driver) to see a code example of how to pend a read request.
 
 The code to pend a read request should be a loop of the following steps:
 

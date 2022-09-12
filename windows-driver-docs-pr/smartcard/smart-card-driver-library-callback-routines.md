@@ -20,7 +20,7 @@ The smart card architecture defines a set of standard callback routine types. Fo
 
 A reader driver must make these callback routines available for the driver library routine, [**SmartcardDeviceControl (WDM)**](/previous-versions/ff548939(v=vs.85)), to call by storing pointers to them in the smart card device extension, which is of type [**SMARTCARD\_EXTENSION**](/windows-hardware/drivers/ddi/smclib/ns-smclib-_smartcard_extension). These pointers are stored in an array that is located in the **ReaderFunction** member of SMARTCARD\_EXTENSION structure. Individual callback routines can be identified by a series of constant values, which should be used as indexes into the **ReaderFunction** array.
 
-For instance, if you want [**SmartcardDeviceControl**](/previous-versions/ff548939(v=vs.85)) to call a callback routine in your reader driver named **DriverCardPower** whenever it finishes processing an [**IOCTL\_SMARTCARD\_POWER**](/previous-versions/windows/hardware/drivers/ff548907(v=vs.85)) request, you must use the [*RDF\_CARD\_POWER*](/previous-versions/windows/hardware/drivers/ff548919(v=vs.85)) constant to initialize the device extension in the following manner:
+For instance, if you want [**SmartcardDeviceControl**](/previous-versions/ff548939(v=vs.85)) to call a callback routine in your reader driver named **DriverCardPower** whenever it finishes processing an [**IOCTL\_SMARTCARD\_POWER**](/windows-hardware/drivers/ddi/winsmcrd/ni-winsmcrd-ioctl_smartcard_power) request, you must use the [*RDF\_CARD\_POWER*](/previous-versions/windows/hardware/drivers/ff548919(v=vs.85)) constant to initialize the device extension in the following manner:
 
 ```cpp
 SmartcardExtension->ReaderFunction[RDF_CARD_POWER] = 

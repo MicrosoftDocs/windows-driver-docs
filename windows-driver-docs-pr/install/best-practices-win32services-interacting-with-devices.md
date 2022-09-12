@@ -69,6 +69,6 @@ This flow will ensure that the service starts on the arrival of a device interfa
 
 ## Code Sample & Related Links
 
-There is a sample on GitHub that walks through how a service can leverage this flow of events.  The sample can be found here: [Win32 Service Sample](https://github.com/microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_usersvc).
+There is a sample on GitHub that walks through how a service can leverage this flow of events.  The sample can be found here: [Win32 Service Sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_usersvc).
 
 Additionally, you can find useful documentation regarding **AddTrigger** on the [AddService](./inf-addservice-directive.md) page.

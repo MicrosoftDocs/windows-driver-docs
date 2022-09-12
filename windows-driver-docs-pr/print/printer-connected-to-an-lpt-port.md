@@ -1,18 +1,14 @@
 ---
-title: Printer Connected to an LPT Port
-description: Printer Connected to an LPT Port
+title: Printer connected to an LPT port
+description: Provides information about a printer connected to an LPT port.
 keywords:
 - LPT enumerator WDK printer
-- parallel ports WDK , printer connections
+- parallel ports WDK, printer connections
 - parallel enumerators WDk printer
-ms.date: 04/20/2017
+ms.date: 09/08/2022
 ---
 
-# Printer Connected to an LPT Port
-
-
-
-
+# Printer connected to an LPT port
 
 The LPT enumerator is an example of a [bus driver](../kernel/bus-drivers.md). The LPT enumerator is capable of obtaining identification information from LPT port hardware that conforms to the *IEEE 1284 Extended Capabilities Port Protocol and ISA Interface Standard*.
 
@@ -34,7 +30,7 @@ LPTENUM\Hewlett-PackardHP_Co3115
 
 The hardware ID is made up of the enumerator prefix, followed by the Manufacturer Name, the Model name, and a cyclic redundancy check (CRC) code. The CRC code, which is the last four digits of the hardware ID, is generated from the manufacturer and model strings. Spaces in the string are replaced with underscores.
 
-To read the 1284 ID string from the device, send [**IOCTL\_PAR\_QUERY\_DEVICE\_ID**](/windows-hardware/drivers/ddi/ntddpar/ni-ntddpar-ioctl_par_query_device_id). Note that the spooler redirects the LPT*x* symbolic link (where *x* is the LPT number 1, 2, or 3) to the spooler's named pipe, which means that if the spooler is running, then parport never sees the IOCTLs sent to LPTx.
+To read the 1284 ID string from the device, send [**IOCTL_PAR_QUERY_DEVICE_ID**](/windows-hardware/drivers/ddi/ntddpar/ni-ntddpar-ioctl_par_query_device_id). Note that the spooler redirects the LPT*x* symbolic link (where *x* is the LPT number 1, 2, or 3) to the spooler's named pipe, which means that if the spooler is running, then parport never sees the IOCTLs sent to LPTx.
 
 The devnode for a parallel-connected Plug and Play printer is placed under **HKLM\\SYSTEM\\CurrentControlSet\\Enum\\LPTENUM** and has a single hardware ID of the form:
 
@@ -44,7 +40,7 @@ LPTENUM\Company_NameModelNam1234
 
 The driver stack appears in the figure following the next code sample.
 
-The INF code that will correctly "plug and play" a hardware ID of the form LPTENUM\\*Company\_NameModelNam1234* is shown in the following example. Notice that the "Model Name XYZ" device description appears twice in the [**INF Manufacturer section**](../install/inf-manufacturer-section.md). The hardware ID in the first line includes the bus enumerator, while the hardware ID in the second line does not. The two lines guarantee a rank-0 hardware ID match regardless of the type of bus on which the printer is installed. See [Installing a Custom Plug and Play Printer Driver](installing-a-custom-plug-and-play-printer-driver.md) for more information.
+The INF code that will correctly "plug and play" a hardware ID of the form LPTENUM\\*Company_NameModelNam1234* is shown in the following example. Notice that the "Model Name XYZ" device description appears twice in the [**INF Manufacturer section**](../install/inf-manufacturer-section.md). The hardware ID in the first line includes the bus enumerator, while the hardware ID in the second line does not. The two lines guarantee a rank-0 hardware ID match regardless of the type of bus on which the printer is installed. See [Installing a Custom Plug and Play Printer Driver](installing-a-custom-plug-and-play-printer-driver.md) for more information.
 
 ```cpp
 [Manufacturer]
@@ -90,6 +86,3 @@ Company_Name = "Company Name"
 ```
 
 Just as in the previous example, each model in the [**INF Manufacturer section**](../install/inf-manufacturer-section.md) is represented by a pair of nearly identical lines. For a given model, one line in the pair includes the bus enumerator; the other does not. The two lines guarantee a rank-0 hardware ID match regardless of the type of bus on which the printer is installed. See [Installing a Custom Plug and Play Printer Driver](installing-a-custom-plug-and-play-printer-driver.md) for more information.
-
- 
-

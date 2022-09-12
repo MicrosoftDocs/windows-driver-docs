@@ -8,7 +8,7 @@ api_name:
 - buttons
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 09/09/2022
 ---
 
 # buttons element
@@ -37,49 +37,15 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="button.md" data-raw-source="[&lt;strong&gt;button&lt;/strong&gt;](button.md)"><strong>button</strong></a></p></td>
-<td><p></p>
-<p>A required element that specifies the characteristics of a button in a message box that is displayed on the client computer.</p></td>
-</tr>
-</tbody>
-</table>
+| Element | Description |
+|--|--|
+| [**button**](button.md) | A required element that specifies the characteristics of a button in a message box that is displayed on the client computer. |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="messageboxui.md" data-raw-source="[&lt;strong&gt;messageBoxUI&lt;/strong&gt;](messageboxui.md)"><strong>messageBoxUI</strong></a></p></td>
-<td><p></p>
-<p>An optional element that is used to display a message box on the client computer.</p></td>
-</tr>
-</tbody>
-</table>
+| Element | Description |
+|--|--|
+| [**messageBoxUI**](messageboxui.md) | An optional element that is used to display a message box on the client computer. |
 
 ## Remarks
 

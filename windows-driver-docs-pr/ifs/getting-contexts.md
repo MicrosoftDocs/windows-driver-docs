@@ -21,7 +21,7 @@ Once a minifilter driver has [set a context](setting-contexts.md) for an object,
 
 Every successful get routine increments the reference count on the context, requiring that the minifilter call [**FltReleaseContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltreleasecontext) when it no longer needs the context pointer.
 
-In the following code example, taken from the [SwapBuffers sample minifilter](https://github.com/microsoft/Windows-driver-samples/tree/master/filesys/miniFilter/swapBuffers), the minifilter driver calls [**FltGetVolumeContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetvolumecontext) to get a volume context:
+In the following code example, taken from the [SwapBuffers sample minifilter](https://github.com/Microsoft/Windows-driver-samples/tree/main/filesys/miniFilter/swapBuffers), the minifilter driver calls [**FltGetVolumeContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetvolumecontext) to get a volume context:
 
 ```cpp
 status = FltGetVolumeContext(

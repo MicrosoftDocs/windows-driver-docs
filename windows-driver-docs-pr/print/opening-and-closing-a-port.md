@@ -1,25 +1,21 @@
 ---
-title: Opening and Closing a Port
-description: Opening and Closing a Port
+title: Open and close a port
+description: Provides information about how to open and close a port.
 keywords:
-- print monitors WDK , port management
-- port management WDK print , opening ports
+- print monitors WDK, port management
+- port management WDK print, opening ports
 - opening print ports
-- port management WDK print , closing ports
+- port management WDK print, closing ports
 - closing print ports
 - OpenPort
 - OpenPortEx
 - ClosePort
 - spooler opening and closing ports WDK print
 - print spooler opening and closing ports WDK
-ms.date: 04/20/2017
+ms.date: 09/08/2022
 ---
 
-# Opening and Closing a Port
-
-
-
-
+# Open and close a port
 
 After a port has been added, as described in [Adding a Port](adding-a-port.md), the spooler can open it by calling the appropriate language monitor's [**OpenPortEx**](/previous-versions/ff559596(v=vs.85)) function.
 
@@ -34,6 +30,3 @@ After a port has been opened, the spooler can call additional functions to print
 The spooler closes a port if a job must be sent through a different language monitor, if no print queues are associated with a port, or when the system shuts down. To close a port, the spooler calls a language monitor's [**ClosePort**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-closeport) function. The function invalidates the handle that was created when the port was opened. A language monitor typically calls the **ClosePort** function defined by its associated port monitor.
 
 If a language monitor is not associated with a port, the spooler calls the port monitor's **ClosePort** function directly.
-
- 
-

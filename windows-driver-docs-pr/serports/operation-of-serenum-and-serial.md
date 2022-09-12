@@ -48,6 +48,6 @@ For more information about operating Serenum and Serial, see the following resou
 
 - [Serial Port Driver Reference](/windows-hardware/drivers/ddi/_serports/)
 
-- Sample code in the \\src\\kernel\\serial and \\src\\kernel\\serenum directories in the Windows Driver Kit (WDK) https://github.com/Microsoft/Windows-driver-samples/tree/master/serial/serenum
+- Sample code in the \\src\\kernel\\serial and \\src\\kernel\\serenum directories in the Windows Driver Kit (WDK) https://github.com/Microsoft/Windows-driver-samples/tree/main/serial/serenum
 
 - Communications resources that are supported by the Windows Base Services in the Microsoft Windows SDK

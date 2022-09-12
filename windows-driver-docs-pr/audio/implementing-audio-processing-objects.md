@@ -63,7 +63,7 @@ The SYSVAD audio sample is available on the [Windows Driver Samples GitHub](http
 
 You can browse the Sysvad audio sample here:
 
-<https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>
+<https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad>
 
 ### Download and extract the Sysvad audio sample from GitHub
 
@@ -263,7 +263,7 @@ There is one additional valid combination that is not shown in these samples.
 
 This sample shows a multi-mode streaming effect being registered using AddReg entries in the SYSVAD Tablet INF file.
 
-This sample code is from the SYSVAD audio sample and is available on GitHub: <https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>.
+This sample code is from the SYSVAD audio sample and is available on GitHub: <https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad>.
 
 This sample illustrates this combination of system effects:
 
@@ -298,7 +298,7 @@ Note that in the sample INF file, the EFX\_Streaming property is commented out b
 
 Starting with Windows 10, release 1809, APO registration with the audio engine uses the componentized audio driver model. Using audio componentization creates a smoother and more reliable install experience and better supports component servicing. For more information, see [Creating a componentized audio driver installation](./audio-universal-drivers.md#creating-a-componentized-audio-driver-installation).
 
-The following example code is extracted from the public ComponentizedAudioSampleExtension.inf and ComponentizedApoSample.inf. Refer to the SYSVAD audio sample which is available on GitHub here: <https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>.
+The following example code is extracted from the public ComponentizedAudioSampleExtension.inf and ComponentizedApoSample.inf. Refer to the SYSVAD audio sample which is available on GitHub here: <https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad>.
 
 The registration of the APO with the audio engine is done using a newly created APO device. For the audio engine to make use of the new APO device it must be a PNP child of the audio device, sibling of the audio endpoints. The new componentized APO design does not allow for an APO to be registered globally and used by multiple different drivers. Each driver must register its own APO's.
 

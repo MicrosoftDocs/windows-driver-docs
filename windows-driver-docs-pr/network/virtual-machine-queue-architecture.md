@@ -30,7 +30,7 @@ This section provides high-level information about the NDIS VMQ interface. You s
 For information about writing VMQ drivers, see [Writing VMQ Drivers](writing-vmq-drivers.md).
 
 > [!NOTE]
-> Be sure to study the [NDIS Virtual Miniport Driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/network/ndis/netvmini/6x), especially the vmq.c and vmq.h source files.
+> Be sure to study the [NDIS Virtual Miniport Driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/network/ndis/netvmini/6x), especially the vmq.c and vmq.h source files.
 
 This section includes the following topics:
 

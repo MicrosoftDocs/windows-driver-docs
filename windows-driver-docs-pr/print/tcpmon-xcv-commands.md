@@ -1,8 +1,8 @@
 ---
-title: TCPMON Xcv Commands
-description: TCPMON Xcv Commands
+title: TCPMON Xcv commands
+description: Provides information about TCPMON Xcv commands.
 keywords:
-- print monitors WDK , TCPMON Xcv
+- print monitors WDK, TCPMON Xcv
 - transceive (Xcv) commands WDK print
 - Xcv commands WDK print
 - TCPMON Xcv commands WDK print
@@ -16,486 +16,161 @@ keywords:
 - SNMPCommunity
 - SNMPDeviceIndex
 - SNMPEnabled
-ms.date: 04/20/2017
+ms.date: 09/08/2022
 ---
 
-# TCPMON Xcv Commands
-
-
-
-
+# TCPMON Xcv commands
 
 This section describes the commands that can be specified in a call to the [**XcvData**](/previous-versions/ff564255(v=vs.85)) or [**XcvDataPort**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-xcvdataport) function, when it is communicating with the standard TCP/IP port monitor (TCPMON). Each command is specified by the *pszDataName* string in the call to these functions. Certain commands require an input buffer, or an output buffer, or both. The *pInputData* and *pOutputData* parameters of these functions hold the addresses of these buffers.
 
 The table that appears in the description of each of the following commands lists the **XcvData** and **XcvDataPort** parameters that are used with the commands. Note that the *hXcv* parameter (common to both functions) is not listed, nor is the **XcvData** function's *pdwStatus* parameter.
 
-### AddPort Command
+## AddPort command
 
 The **AddPort** command adds a standard TCP/IP port, which can be either an LPR port or a RAW TCP/IP port.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>XcvData Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><em>pszDataName</em></p></td>
-<td><p>L"AddPort"</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pInputData</em></p></td>
-<td><p>Address of a <a href="/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1)"><strong>PORT_DATA_1</strong></a> structure</p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbInputData</em></p></td>
-<td><p><strong>sizeof</strong>(PORT_DATA_1)</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pOutputData</em></p></td>
-<td><p><strong>NULL</strong></p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbOutputData</em></p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pcbOutputNeeded</em></p></td>
-<td><p>Address of a DWORD</p></td>
-</tr>
-</tbody>
-</table>
+| XcvData parameter | Value |
+|--|--|
+| *pszDataName* | L"AddPort" |
+| *pInputData* | Address of a [**PORT_DATA_1**](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1) structure |
+| *cbInputData* | **sizeof**(PORT_DATA_1) |
+| *pOutputData* | **NULL** |
+| *cbOutputData* | 0 |
+| *pcbOutputNeeded* | Address of a DWORD |
 
- 
+[**XcvData**](/previous-versions/ff564255(v=vs.85)) returns NO_ERROR if it can add the port. In addition to the normal error codes, **XcvData** returns ERROR_ACCESS_DENIED if the user has insufficient privileges to create a port on the server. This command requires SERVER_ACCESS_ADMINISTER privilege. If the *pInputData* parameter is **NULL**, the function returns ERROR_INVALID_DATA. If *pInputData*--&gt;*dwVersion* is not equal to 1, the function returns ERROR_INVALID_LEVEL.
 
-[**XcvData**](/previous-versions/ff564255(v=vs.85)) returns NO\_ERROR if it can add the port. In addition to the normal error codes, **XcvData** returns ERROR\_ACCESS\_DENIED if the user has insufficient privileges to create a port on the server. This command requires SERVER\_ACCESS\_ADMINISTER privilege. If the *pInputData* parameter is **NULL**, the function returns ERROR\_INVALID\_DATA. If *pInputData*--&gt;*dwVersion* is not equal to 1, the function returns ERROR\_INVALID\_LEVEL.
-
-### ConfigPort Command
+## ConfigPort command
 
 The **ConfigPort** command configures an existing standard TCP/IP port monitor port.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>XcvData Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><em>pszDataName</em></p></td>
-<td><p>L"ConfigPort"</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pInputData</em></p></td>
-<td><p>Address of a <a href="/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1)"><strong>PORT_DATA_1</strong></a> structure</p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbInputData</em></p></td>
-<td><p><strong>sizeof</strong>(PORT_DATA_1)</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pOutputData</em></p></td>
-<td><p><strong>NULL</strong></p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbOutputData</em></p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pcbOutputNeeded</em></p></td>
-<td><p>Address of a DWORD</p></td>
-</tr>
-</tbody>
-</table>
+| XcvData parameter | Value |
+|--|--|
+| *pszDataName* | L"ConfigPort" |
+| *pInputData* | Address of a [**PORT_DATA_1**](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1) structure |
+| *cbInputData* | **sizeof**(PORT_DATA_1) |
+| *pOutputData* | **NULL** |
+| *cbOutputData* | 0 |
+| *pcbOutputNeeded* | Address of a DWORD |
 
- 
+[**XcvData**](/previous-versions/ff564255(v=vs.85)) returns NO_ERROR if it can configure the port. In addition to the normal error codes, **XcvData** returns ERROR_ACCESS_DENIED if the caller has insufficient privileges to perform the request. This command requires SERVER_ACCESS_ADMINISTER privilege. If the *pInputData* parameter is **NULL**, or the value in *cbInputData* is smaller than required, the function returns ERROR_INVALID_DATA. If *pInputData*--&gt;*dwVersion* is not equal to 1, the function returns ERROR_INVALID_LEVEL.
 
-[**XcvData**](/previous-versions/ff564255(v=vs.85)) returns NO\_ERROR if it can configure the port. In addition to the normal error codes, **XcvData** returns ERROR\_ACCESS\_DENIED if the caller has insufficient privileges to perform the request. This command requires SERVER\_ACCESS\_ADMINISTER privilege. If the *pInputData* parameter is **NULL**, or the value in *cbInputData* is smaller than required, the function returns ERROR\_INVALID\_DATA. If *pInputData*--&gt;*dwVersion* is not equal to 1, the function returns ERROR\_INVALID\_LEVEL.
-
-### DeletePort Command
+## DeletePort command
 
 The **DeletePort** command deletes a port from the standard TCP/IP port monitor.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>XcvData Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><em>pszDataName</em></p></td>
-<td><p>L"DeletePort"</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pInputData</em></p></td>
-<td><p>Address of a <a href="/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_delete_port_data_1" data-raw-source="[&lt;strong&gt;DELETE_PORT_DATA_1&lt;/strong&gt;](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_delete_port_data_1)"><strong>DELETE_PORT_DATA_1</strong></a> structure</p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbInputData</em></p></td>
-<td><p><strong>sizeof</strong>(DELETE_PORT_DATA_1)</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pOutputData</em></p></td>
-<td><p><strong>NULL</strong></p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbOutputData</em></p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pcbOutputNeeded</em></p></td>
-<td><p>Address of a DWORD</p></td>
-</tr>
-</tbody>
-</table>
+| XcvData parameter | Value |
+|--|--|
+| *pszDataName* | L"DeletePort" |
+| *pInputData* | Address of [**DELETE_PORT_DATA_1**](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_delete_port_data_1) structure |
+| *cbInputData* | **sizeof**(DELETE_PORT_DATA_1) |
+| *pOutputData* | **NULL** |
+| *cbOutputData* | 0 |
+| *pcbOutputNeeded* | Address of a DWORD |
 
- 
+**XcvData** returns NO_ERROR if the port is successfully deleted. In addition to the normal error codes, **XcvData** returns ERROR_ACCESS_DENIED if the caller has insufficient privileges on the server. This command requires SERVER_ACCESS_ADMINISTER privilege. If the *pInputData* parameter is **NULL**, or if the *cbInputData* parameter is smaller than required, the function returns ERROR_INVALID_DATA. If *pInputData*--&gt;*dwVersion* is not equal to 1, the function returns ERROR_INVALID_LEVEL.
 
-**XcvData** returns NO\_ERROR if the port is successfully deleted. In addition to the normal error codes, **XcvData** returns ERROR\_ACCESS\_DENIED if the caller has insufficient privileges on the server. This command requires SERVER\_ACCESS\_ADMINISTER privilege. If the *pInputData* parameter is **NULL**, or if the *cbInputData* parameter is smaller than required, the function returns ERROR\_INVALID\_DATA. If *pInputData*--&gt;*dwVersion* is not equal to 1, the function returns ERROR\_INVALID\_LEVEL.
-
-### GetConfigInfo Command
+## GetConfigInfo command
 
 The **GetConfigInfo** command obtains the configuration information of a particular port. In this case, the Xcv data handle must point to a particular standard TCP/IP port monitor port so that the port can be identified.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>XcvData Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><em>pszDataName</em></p></td>
-<td><p>L"GetConfigInfo"</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pInputData</em></p></td>
-<td><p>Address of a <a href="/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_config_info_data_1" data-raw-source="[&lt;strong&gt;CONFIG_INFO_DATA_1&lt;/strong&gt;](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_config_info_data_1)"><strong>CONFIG_INFO_DATA_1</strong></a> structure</p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbInputData</em></p></td>
-<td><p><strong>sizeof</strong>(CONFIG_INFO_DATA_1)</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pOutputData</em></p></td>
-<td><p>Address of a <a href="/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1)"><strong>PORT_DATA_1</strong></a> structure</p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbOutputData</em></p></td>
-<td><p><strong>sizeof</strong>(PORT_DATA_1)</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pcbOutputNeeded</em></p></td>
-<td><p>Address of a DWORD containing the number of bytes needed for the buffer pointed to by <em>pOutputData</em></p></td>
-</tr>
-</tbody>
-</table>
+| XcvData parameter | Value |
+|--|--|
+| *pszDataName* | L"GetConfigInfo" |
+| *pInputData* | Address of a [**CONFIG_INFO_DATA_1**](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_config_info_data_1) structure |
+| *cbInputData* | **sizeof**(CONFIG_INFO_DATA_1) |
+| *pOutputData* | Address of a [**PORT_DATA_1**](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1) structure |
+| *cbOutputData* | **sizeof**(PORT_DATA_1) |
+| *pcbOutputNeeded* | Address of a DWORD containing the number of bytes needed for the buffer pointed to by *pOutputData* |
 
- 
+**XcvData** returns NO_ERROR if it can obtain the configuration information for the port. If *pInputData* is **NULL**, or if *cbInputData* is smaller than required, the function returns ERROR_INVALID_DATA. If *pInputData*--&gt;*dwVersion* is not equal to 1, the function returns ERROR_INVALID_LEVEL. If *cbOutputData* is smaller than required, the function returns ERROR_INVALID_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR_INSUFFICIENT_BUFFER when *pcbOutputNeeded* is non-**NULL**.
 
-**XcvData** returns NO\_ERROR if it can obtain the configuration information for the port. If *pInputData* is **NULL**, or if *cbInputData* is smaller than required, the function returns ERROR\_INVALID\_DATA. If *pInputData*--&gt;*dwVersion* is not equal to 1, the function returns ERROR\_INVALID\_LEVEL. If *cbOutputData* is smaller than required, the function returns ERROR\_INVALID\_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR\_INSUFFICIENT\_BUFFER when *pcbOutputNeeded* is non-**NULL**.
-
-### HostAddress Command
+## HostAddress command
 
 The **HostAddress** command gets the printer's host name.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>XcvData Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><em>pszDataName</em></p></td>
-<td><p>L"HostAddress"</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pInputData</em></p></td>
-<td><p><strong>NULL</strong></p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbInputData</em></p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pOutputData</em></p></td>
-<td><p>Address of a buffer that receives a string containing the printer's host name</p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbOutputData</em></p></td>
-<td><p>Size of the buffer pointed to by <em>pOutputData</em></p></td>
-</tr>
-<tr class="even">
-<td><p><em>pcbOutputNeeded</em></p></td>
-<td><p>Address of a DWORD containing the number of bytes needed for the buffer pointed to by <em>pOutputData</em></p></td>
-</tr>
-</tbody>
-</table>
+| XcvData parameter | Value |
+|--|--|
+| *pszDataName* | L"HostAddress" |
+| *pInputData* | **NULL** |
+| *cbInputData* | 0 |
+| *pOutputData* | Address of a buffer that receives a string containing the printer's host name |
+| *cbOutputData* | Size of the buffer pointed to by *pOutputData* |
+| *pcbOutputNeeded* | Address of a DWORD containing the number of bytes needed for the buffer pointed to by *pOutputData* |
 
- 
+[**XcvData**](/previous-versions/ff564255(v=vs.85)) returns NO_ERROR if it can obtain the name of the printer's host. If *cbOutputData* is smaller than required, the function returns ERROR_INVALID_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR_INSUFFICIENT_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR_INVALID_PARAMETER.
 
-[**XcvData**](/previous-versions/ff564255(v=vs.85)) returns NO\_ERROR if it can obtain the name of the printer's host. If *cbOutputData* is smaller than required, the function returns ERROR\_INVALID\_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR\_INSUFFICIENT\_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR\_INVALID\_PARAMETER.
-
-### IPAddress Command
+## IPAddress command
 
 The **IPAddress** command gets the printer's IP address.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>XcvData Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><em>pszDataName</em></p></td>
-<td><p>L"IPAddress"</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pInputData</em></p></td>
-<td><p><strong>NULL</strong></p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbInputData</em></p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pOutputData</em></p></td>
-<td><p>Address of a buffer that receives a string containing the printer's IP address</p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbOutputData</em></p></td>
-<td><p>Size of the buffer pointed to by <em>pOutputData</em></p></td>
-</tr>
-<tr class="even">
-<td><p><em>pcbOutputNeeded</em></p></td>
-<td><p>Address of a DWORD containing the number of bytes needed for the buffer pointed to by <em>pOutputData</em></p></td>
-</tr>
-</tbody>
-</table>
+| XcvData parameter | Value |
+|--|--|
+| *pszDataName* | L"IPAddress" |
+| *pInputData* | **NULL** |
+| *cbInputData* | 0 |
+| *pOutputData* | Address of a buffer that receives a string containing the printer's IP address |
+| *cbOutputData* | Size of the buffer pointed to by *pOutputData* |
+| *pcbOutputNeeded* | Address of a DWORD containing the number of bytes needed for the buffer pointed to by *pOutputData* |
 
- 
+[**XcvData**](/previous-versions/ff564255(v=vs.85)) returns NO_ERROR if it can obtain the printer's IP address. If *cbOutputData* is smaller than required, the function returns ERROR_INVALID_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR_INSUFFICIENT_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR_INVALID_PARAMETER.
 
-[**XcvData**](/previous-versions/ff564255(v=vs.85)) returns NO\_ERROR if it can obtain the printer's IP address. If *cbOutputData* is smaller than required, the function returns ERROR\_INVALID\_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR\_INSUFFICIENT\_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR\_INVALID\_PARAMETER.
-
-### MonitorUI Command
+## MonitorUI command
 
 The **MonitorUI** command gets the name of the port monitor UI DLL that provides an interface to TCPMON.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>XcvData Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><em>pszDataName</em></p></td>
-<td><p>L"MonitorUI"</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pInputData</em></p></td>
-<td><p><strong>NULL</strong></p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbInputData</em></p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pOutputData</em></p></td>
-<td><p>Address of a buffer that receives the name of the port monitor user interface DLL</p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbOutputData</em></p></td>
-<td><p>Number of bytes in the string containing the name of the port monitor user interface DLL</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pcbOutputNeeded</em></p></td>
-<td><p>Address of a DWORD containing the number of bytes needed for the buffer pointed to by <em>pOutputData</em></p></td>
-</tr>
-</tbody>
-</table>
+| XcvData parameter | Value |
+|--|--|
+| *pszDataName* | L"MonitorUI" |
+| *pInputData* | **NULL** |
+| *cbInputData* | 0 |
+| *pOutputData* | Address of a buffer that receives the name of the port monitor user interface DLL |
+| *cbOutputData* | Number of bytes in the string containing the name of the port monitor user interface DLL |
+| *pcbOutputNeeded* | Address of a DWORD containing the number of bytes needed for the buffer pointed to by *pOutputData* |
 
- 
+[**XcvData**](/previous-versions/ff564255(v=vs.85)) returns NO_ERROR if it is able to obtain the name of the user interface DLL. In addition to the normal error codes, **XcvData** returns ERROR_ACCESS_DENIED if the caller has insufficient privileges on the server. This command requires SERVER_ACCESS_ADMINISTER privilege. If *cbOutputData* is smaller than required, the function returns ERROR_INVALID_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR_INSUFFICIENT_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR_INVALID_PARAMETER.
 
-[**XcvData**](/previous-versions/ff564255(v=vs.85)) returns NO\_ERROR if it is able to obtain the name of the user interface DLL. In addition to the normal error codes, **XcvData** returns ERROR\_ACCESS\_DENIED if the caller has insufficient privileges on the server. This command requires SERVER\_ACCESS\_ADMINISTER privilege. If *cbOutputData* is smaller than required, the function returns ERROR\_INVALID\_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR\_INSUFFICIENT\_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR\_INVALID\_PARAMETER.
-
-### SNMPCommunity
+## SNMPCommunity
 
 The **SNMPCommunity** command gets the Simple Network Management Protocol (SNMP) community name for a printer.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>XcvData Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><em>pszDataName</em></p></td>
-<td><p>L"SNMPCommunity"</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pInputData</em></p></td>
-<td><p><strong>NULL</strong></p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbInputData</em></p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pOutputData</em></p></td>
-<td><p>Address of a buffer that receives a string containing the printer's SNMP community</p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbOutputData</em></p></td>
-<td><p>Size of the buffer needed to contain the string pointed to by the <em>pOutputData</em> parameter</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pcbOutputNeeded</em></p></td>
-<td><p>Address of a DWORD containing the number of bytes needed for the buffer pointed to by <em>pOutputData</em></p></td>
-</tr>
-</tbody>
-</table>
+| XcvData parameter | Value |
+|--|--|
+| *pszDataName* | L"SNMPCommunity" |
+| *pInputData* | **NULL** |
+| *cbInputData* | 0 |
+| *pOutputData* | Address of a buffer that receives a string containing the printer's SNMP community |
+| *cbOutputData* | Size of the buffer needed to contain the string pointed to by the *pOutputData* parameter |
+| *pcbOutputNeeded* | Address of a DWORD containing the number of bytes needed for the buffer pointed to by *pOutputData* |
 
- 
+[**XcvData**](/previous-versions/ff564255(v=vs.85)) returns NO_ERROR if it can get the printer's SNMP community name. If *cbOutputData* is smaller than required, the function returns ERROR_INVALID_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR_INSUFFICIENT_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR_INVALID_PARAMETER.
 
-[**XcvData**](/previous-versions/ff564255(v=vs.85)) returns NO\_ERROR if it can get the printer's SNMP community name. If *cbOutputData* is smaller than required, the function returns ERROR\_INVALID\_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR\_INSUFFICIENT\_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR\_INVALID\_PARAMETER.
-
-### SNMPDeviceIndex
+## SNMPDeviceIndex
 
 The **SNMPDeviceIndex** command gets the Simple Network Management Protocol (SNMP) device index of the printer.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>XcvData Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><em>pszDataName</em></p></td>
-<td><p>L"SNMPDeviceIndex"</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pInputData</em></p></td>
-<td><p><strong>NULL</strong></p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbInputData</em></p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pOutputData</em></p></td>
-<td><p>Address of a buffer that receives the device index</p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbOutputData</em></p></td>
-<td><p><strong>sizeof</strong>(DWORD)</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pcbOutputNeeded</em></p></td>
-<td><p>Address of a DWORD that contains <strong>sizeof</strong>(DWORD)</p></td>
-</tr>
-</tbody>
-</table>
+| XcvData parameter | Value |
+|--|--|
+| *pszDataName* | L"SNMPDeviceIndex" |
+| *pInputData* | **NULL** |
+| *cbInputData* | 0 |
+| *pOutputData* | Address of a buffer that receives the device index |
+| *cbOutputData* | **sizeof**(DWORD) |
+| *pcbOutputNeeded* | Address of a DWORD that contains **sizeof**(DWORD) |
 
- 
+[**XcvData**](/previous-versions/ff564255(v=vs.85)) returns NO_ERROR if it can get the printer's SNMP device index. If *cbOutputData* is smaller than required, the function returns ERROR_INVALID_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR_INSUFFICIENT_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR_INVALID_PARAMETER.
 
-[**XcvData**](/previous-versions/ff564255(v=vs.85)) returns NO\_ERROR if it can get the printer's SNMP device index. If *cbOutputData* is smaller than required, the function returns ERROR\_INVALID\_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR\_INSUFFICIENT\_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR\_INVALID\_PARAMETER.
-
-### SNMPEnabled
+## SNMPEnabled
 
 The **SNMPEnabled** command determines whether the Simple Network Management Protocol (SNMP) is enabled for the current device.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>XcvData Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><em>pszDataName</em></p></td>
-<td><p>L"SNMPEnabled"</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pInputData</em></p></td>
-<td><p><strong>NULL</strong></p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbInputData</em></p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pOutputData</em></p></td>
-<td><p>Address of a buffer that receives a DWORD value</p></td>
-</tr>
-<tr class="odd">
-<td><p><em>cbOutputData</em></p></td>
-<td><p><strong>sizeof</strong>(DWORD)</p></td>
-</tr>
-<tr class="even">
-<td><p><em>pcbOutputNeeded</em></p></td>
-<td><p>Address of a DWORD that contains <strong>sizeof</strong>(DWORD)</p></td>
-</tr>
-</tbody>
-</table>
+| XcvData parameter | Value |
+|--|--|
+| *pszDataName* | L"SNMPEnabled" |
+| *pInputData* | **NULL** |
+| *cbInputData* | 0 |
+| *pOutputData* | Address of a buffer that receives a DWORD value |
+| *cbOutputData* | **sizeof**(DWORD) |
+| *pcbOutputNeeded* | Address of a DWORD that contains **sizeof**(DWORD) |
 
- 
-
-**XcvData** returns NO\_ERROR if SNMP is enabled for the device. If *cbOutputData* is smaller than required, the function returns ERROR\_INVALID\_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR\_INSUFFICIENT\_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR\_INVALID\_PARAMETER.
-
+**XcvData** returns NO_ERROR if SNMP is enabled for the device. If *cbOutputData* is smaller than required, the function returns ERROR_INVALID_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR_INSUFFICIENT_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR_INVALID_PARAMETER.

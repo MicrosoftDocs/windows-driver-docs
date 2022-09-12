@@ -40,7 +40,7 @@ Once a context type has been set, a minifilter can [get a context](getting-conte
 
 Every successful context set must eventually be [deleted](deleting-contexts.md).
 
-In the following code example, taken from the [CTX sample minifilter](https://github.com/microsoft/Windows-driver-samples/tree/master/filesys/miniFilter/ctx), the **CtxInstanceSetup** routine creates and sets an instance context:
+In the following code example, taken from the [CTX sample minifilter](https://github.com/Microsoft/Windows-driver-samples/tree/main/filesys/miniFilter/ctx), the **CtxInstanceSetup** routine creates and sets an instance context:
 
 ```cpp
 status = FltAllocateContext(

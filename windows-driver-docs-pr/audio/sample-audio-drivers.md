@@ -51,7 +51,7 @@ The SYSVAD audio sample is available on the [Windows Driver Samples GitHub](http
 
 You can browse the Sysvad audio sample here:
 
-<https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>
+<https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad>
 
 Follow these steps to download and open the SYSVAD sample.
 

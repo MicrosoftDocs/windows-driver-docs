@@ -22,7 +22,7 @@ Typical scenarios where you might use an extension INF include:
 * Providing settings specific to the model or form factor of the system that enhances the experience or functionality of the device, such as hardware calibration data.
 * Adding a filter driver to the device stack.
 
-You can find sample code for some of these scenarios in the examples below.  Also see [DCH-Compliant Driver Package Example](../develop/dch-example.md), which describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) uses extension INFs.
+You can find sample code for some of these scenarios in the examples below.  Also see [DCH-Compliant Driver Package Example](../develop/dch-example.md), which describes how the [DCHU universal driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU) uses extension INFs.
 
 ## How extension INF and base driver package work together
 
@@ -142,7 +142,7 @@ Device.ExtensionDesc = "Sample Device Extension"
 
 ## Example 2: Using an extension INF to install additional software
 
-The following snippet is a complete extension INF that is included in the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).  This example uses [INF AddComponent directive](inf-addcomponent-directive.md) to create components that install a service and an executable.  For more info about what you can do in a component INF, see [Using a Component INF File](using-a-component-inf-file.md).
+The following snippet is a complete extension INF that is included in the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU).  This example uses [INF AddComponent directive](inf-addcomponent-directive.md) to create components that install a service and an executable.  For more info about what you can do in a component INF, see [Using a Component INF File](using-a-component-inf-file.md).
 
 To access this file online, see [`osrfx2_DCHU_extension.inx`](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx).
 
@@ -250,4 +250,4 @@ For detailed information on how to work with Extension INFs on the Hardware Dev 
 * [DCH-Compliant Driver Package Example](../develop/dch-example.md)
 * [Using a Universal INF File](using-a-universal-inf-file.md)
 * [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
-* [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU)
+* [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU)

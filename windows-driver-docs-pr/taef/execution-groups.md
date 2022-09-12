@@ -12,7 +12,7 @@ Please make sure that you are familiar with basic execution of [TAEF](index.md) 
 ## <span id="Scenario-Based_Testing_with_TAEF"></span><span id="scenario-based_testing_with_taef"></span><span id="SCENARIO-BASED_TESTING_WITH_TAEF"></span>Scenario-Based Testing with TAEF
 
 
-When you talk about scenario-level testing, you are really talking about a series of tests, where the executing the next test makes sense only if the previous test in the scenario succeeded. In some cases, you may not even have all information you need to execute the next test, if the previous test failed. Toward this end, while keeping the unit of execution as a test method and allowing for testing scenarios, TAEF supports what are known as "ExecutionGroup"s. You can have scenario-based tests in TAEF regardless while still having other features like data-driven testing. If you design your scenario to leverage data-driven testing, you can apply data-driven support at class level using Data-driven class functionality offered by TAEF. **By applying data-driven support at class level, you can have all the tests within your class be executed sequentially for each row.**
+When you talk about scenario-level testing, you are really talking about a series of tests, where executing the next test makes sense only if the previous test in the scenario succeeded. In some cases, you may not even have all the information you need to execute the next test if the previous test failed. Toward this end, while keeping the unit of execution as a test method and allowing for testing scenarios, TAEF supports what are known as "ExecutionGroup"s. You can have scenario-based tests in TAEF regardless while still having other features like data-driven testing. If you design your scenario to leverage data-driven testing, you can apply data-driven support at class level using Data-driven class functionality offered by TAEF. **By applying data-driven support at class level, you can have all the tests within your class be executed sequentially for each row.**
 
 This page will concentrate on how to specify a sequence of tests within a class as an "ExecutionGroup".
 
@@ -116,7 +116,7 @@ The message also says that Test3 should be run in the same environment as Test2.
 
 Let's consider another example: Examples\\TAEF\\CSharp\\ExecutionDependentGroupsExample (please refer to the latest TAEF release share)
 
-```cpp
+```csharp
 1     [TestClass]
 2     public class CSharpExecutionDependentGroupsExample
 3     {

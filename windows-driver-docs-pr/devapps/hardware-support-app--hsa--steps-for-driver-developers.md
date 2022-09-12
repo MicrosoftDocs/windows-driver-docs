@@ -103,7 +103,7 @@ Status = WdfDeviceAssignInterfaceProperty(
 
 Replace `zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz` with the GUID for the interface to expose.  Replace *CompanyName* with your company name, *myCustomCapabilityName* with a name that is unique within your company, and *MyStorePubId* with your publisher store ID.
 
-For an example of the driver code shown immediately above, see the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).
+For an example of the driver code shown immediately above, see the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU).
 
 To set the property in kernel mode, use code like the following:
 

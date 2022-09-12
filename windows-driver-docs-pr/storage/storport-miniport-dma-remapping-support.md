@@ -6,7 +6,7 @@ ms.date: 07/10/2020
 
 # DMA remapping support in Storport miniport drivers
 
-The [StorAhci Storport miniport driver](https://github.com/microsoft/Windows-driver-samples/tree/master/storage/miniports/storahci) sample code shows how to support DMA remapping in a Storport miniport driver. For additional information about DMA remapping and Kernel DMA Protection, see [Enabling DMA Remapping for device drivers](../pci/enabling-dma-remapping-for-device-drivers.md).
+The [StorAhci Storport miniport driver](https://github.com/Microsoft/Windows-driver-samples/tree/main/storage/miniports/storahci) sample code shows how to support DMA remapping in a Storport miniport driver. For additional information about DMA remapping and Kernel DMA Protection, see [Enabling DMA Remapping for device drivers](../pci/enabling-dma-remapping-for-device-drivers.md).
 
 > [!NOTE]
 >

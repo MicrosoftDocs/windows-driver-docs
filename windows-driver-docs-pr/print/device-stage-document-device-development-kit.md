@@ -1,7 +1,7 @@
 ---
 title: Device Stage Document Device Development Kit
-description: Device Stage Document Device Development Kit
-ms.date: 04/20/2017
+description: Provides information about the Device Stage Document Device Development Kit.
+ms.date: 09/07/2022
 ---
 
 # Device Stage Document Device Development Kit

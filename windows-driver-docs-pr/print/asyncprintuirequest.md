@@ -8,7 +8,7 @@ api_name:
 - asyncPrintUIRequest
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 09/06/2022
 ---
 
 # asyncPrintUIRequest element
@@ -37,30 +37,10 @@ There are no attributes.
 
 ## Child elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="requestclose.md" data-raw-source="[&lt;strong&gt;requestClose&lt;/strong&gt;](requestclose.md)"><strong>requestClose</strong></a></p></td>
-<td><p></p>
-<p>An optional element that is used to close an event notification message on the client computer.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="requestopen.md" data-raw-source="[&lt;strong&gt;requestOpen&lt;/strong&gt;](requestopen.md)"><strong>requestOpen</strong></a></p></td>
-<td><p></p>
-<p>An element that is used to open an event notification message on the client computer.</p></td>
-</tr>
-</tbody>
-</table>
+| Element | Description |
+|--|--|
+| [**requestClose**](requestclose.md) | An optional element that is used to close an event notification message on the client computer. |
+| [**requestOpen**](requestopen.md) | An element that is used to open an event notification message on the client computer. |
 
 ## Parent elements
 

@@ -34,7 +34,7 @@ It is up to the client driver to determine how to send the NCI packets to the NF
 
 ## Complete project code
 
-A complete version of this sample code is available on GitHub: [NFC CX client driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/nfc/NfcCxSample).
+A complete version of this sample code is available on GitHub: [NFC CX client driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/nfc/NfcCxSample).
 
 ## Project setup
 
