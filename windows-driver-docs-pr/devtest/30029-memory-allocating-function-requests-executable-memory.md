@@ -24,7 +24,7 @@ The following code generates this warning. This issue stems from the use of `MmM
 MmMapIoSpace(PhysicalAddress, numberOfBytes, MmNonCached);
 ```
 
-The following code avoids this warning by replaceing `MmMapIoSpace` with `MmMapIoSpace:
+The following code avoids this warning by replaceing `MmMapIoSpace` with `MmMapIoSpace`:
 
 ```cpp
 MmMapIoSpaceEx(PhysicalAddress, numberOfBytes, PAGE_NOCACHE | PAGE_READWRITE);
