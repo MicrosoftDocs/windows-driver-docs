@@ -2,7 +2,7 @@
 title: ustr (WinDbg)
 description: The ustr extension displays a UNICODE_STRING structure.
 keywords: ["strings", "UNICODE_STRING structure", "ustr Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 09/12/2022
 topic_type:
 - apiref
 api_name:
@@ -14,4 +14,5 @@ api_type:
 # !ustr
 
 
-The **!ustr** extension is obsolete and will no longer be supported. Use the [data model](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/dx--display-visualizer-variables-) instead.
+The **!ustr** extension is obsolete and is no longer supported. Use the debugger data model,  
+[dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) command instead.

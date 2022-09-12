@@ -2,7 +2,7 @@
 title: symsrv extension command
 description: The symsrv extension closes the symbol server client.
 keywords: ["symsrv Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 09/12/2022
 topic_type:
 - apiref
 api_name:
