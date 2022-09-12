@@ -26,7 +26,7 @@ highlightedContent:
      url: /windows-insider
    - title: Online training for Windows developers
      itemType: learn
-     url: /learn/browse/?products=windows
+     url: /training/browse/?products=windows
 
 conceptualContent:
   # title: Get started
