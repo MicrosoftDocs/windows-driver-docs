@@ -6,7 +6,7 @@ ms.date: 07/23/2021
 
 # DCH-Compliant Driver Package Example
 
-This topic describes how the [DCHU driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU) applies [DCH design principles](dch-principles-best-practices.md).  You can use it as a model to apply DCH design principles to your own driver package.  
+This topic describes how the [DCHU driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU) applies [DCH design principles](dch-principles-best-practices.md).  You can use it as a model to apply DCH design principles to your own driver package.  
 
 If you would like a local copy of the sample repo, clone from [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples).
 
@@ -125,7 +125,7 @@ SoftwareVersion = 1.0.0.0
 osrfx2_DCHU_componentsoftware.exe
 ```
 
-The [source code for the Win32 app](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_componentsoftware) is included in the sample.
+The [source code for the Win32 app](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_componentsoftware) is included in the sample.
 
 Note that the component driver package is only distributed on Desktop SKUs due to targeting set in the [Windows Hardware Dev Center dashboard](https://partner.microsoft.com/dashboard/Registration/Hardware).  For more info, see [Publish a driver to Windows Update](../dashboard/publish-a-driver-to-windows-update.md).
 
@@ -156,9 +156,9 @@ The new app (not included in the sample) is secure and can be updated easily in 
 
 Ideally, there should be strong versioning contracts between base, extensions, and components.  There are servicing advantages in having these three packages serviced independently (the "loosely coupled" scenario), but there are scenarios where they need to be bundled in a single driver package ("tightly coupled") due to poor versioning contracts.  The sample includes examples of both scenarios:
 
-- [DCHU_Sample\osrfx2_DCHU_extension_loose](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_loose)
+- [DCHU_Sample\osrfx2_DCHU_extension_loose](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU/osrfx2_DCHU_extension_loose)
 
-- [DCHU_Sample\osrfx2_DCHU_extension_tight](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_tight)
+- [DCHU_Sample\osrfx2_DCHU_extension_tight](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU/osrfx2_DCHU_extension_tight)
 
   When the extension and component are in the same driver package ("tightly coupled"), the extension INF specifies the [CopyINF directive](../install/inf-copyinf-directive.md) to cause the component INF to be copied to the target system.  This is demonstrated in [DCHU_Sample\osrfx2_DCHU_extension_tight\osrfx2_DCHU_extension\osrfx2_DCHU_extension.inx](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_extension_tight/osrfx2_DCHU_extension/osrfx2_DCHU_extension.inx):
 

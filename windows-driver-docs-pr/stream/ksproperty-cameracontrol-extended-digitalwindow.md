@@ -22,7 +22,7 @@ This control is a potential substitute for pan, tilt and zoom.  This control onl
 
 On SET, if a stream is not active, this controls returns **STATUS_INVALID_DEVICE_STATE**.
 
-Examples of setting KSPROPERTY controls can be found in the [AVStream Camera Sample Driver](https://github.com/microsoft/Windows-driver-samples/tree/master/avstream/avscamera) on GitHub.
+Examples of setting KSPROPERTY controls can be found in the [AVStream Camera Sample Driver](https://github.com/Microsoft/Windows-driver-samples/tree/main/avstream/avscamera) on GitHub.
 
 ## Usage summary table
 

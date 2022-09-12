@@ -8,7 +8,7 @@ ms.date: 09/28/2017
 
 This topic provides example boilerplate code for issuing a Regular OID request, to contrast against the examples in [Synchronous OID Request Interface in NDIS 6.80](synchronous-oid-request-interface-in-ndis-6-80.md). The Synchronous OID Request Interface is available on Windows 10, version 1709 and later.
 
-This example is taken from the sample filter driver available on GitHub: [https://github.com/Microsoft/Windows-driver-samples/tree/master/network/ndis/filter](https://go.microsoft.com/fwlink/p/?linkid=859443).
+This example is taken from the sample filter driver available on GitHub: [https://github.com/Microsoft/Windows-driver-samples/tree/main/network/ndis/filter](https://go.microsoft.com/fwlink/p/?linkid=859443).
 
 ```cpp
 Status = filterDoInternalRequest(pFilter,

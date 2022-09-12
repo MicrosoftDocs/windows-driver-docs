@@ -59,7 +59,7 @@ Use this flow chart to determine a solution for your USB Type-C system.
 | Does not implement PD state machines | Write a client driver to the UcmTcpciCx class extension.</br></br>[Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md) |
 | Implements PD state machines in hardware or firmware and support USB Type-C Connector System Software Interface (UCSI) over ACPI | Load the Microsoft provided in-box drivers, UcmUcsiCx.sys and UcmUcsiAcpiClient.sys.</br></br>See [UCSI driver](ucsi.md). |
 | Implements PD state machines in hardware or firmware, but either does not support UCSI, or support UCSI but requires a transport other than ACPI | Write a client driver for the UcmCx class extension.</br></br>[Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md)</br></br>[Write a USB Type-C Policy Manager client driver](policy-manager-client.md) |
-| Implements UCSI but requires a transport other than ACPI | Write a client driver to the UcmUcsiCx class extension.</br></br>Use [this sample template](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmCxUcsi) and modify it based on a transport that your hardware uses.</br></br>[Write a UCSI client driver](write-a-ucsi-driver.md) |
+| Implements UCSI but requires a transport other than ACPI | Write a client driver to the UcmUcsiCx class extension.</br></br>Use [this sample template](https://github.com/Microsoft/Windows-driver-samples/tree/main/usb/UcmCxUcsi) and modify it based on a transport that your hardware uses.</br></br>[Write a UCSI client driver](write-a-ucsi-driver.md) |
 
 ## Bring up drivers
 

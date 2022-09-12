@@ -21,7 +21,7 @@ ms.date: 02/25/2022
 >
 > Starting in Windows 10 version 1903, INF requirements for primitive drivers (such as file system minifilter drivers) changed. See [Creating a new primitive driver](../develop/creating-a-primitive-driver.md) for details.
 
-Filter drivers need an INF file to be installed on the Windows operating system. You'll find sample INF files in the [minifilter samples](https://github.com/microsoft/Windows-driver-samples/tree/master/filesys/miniFilter).
+Filter drivers need an INF file to be installed on the Windows operating system. You'll find sample INF files in the [minifilter samples](https://github.com/Microsoft/Windows-driver-samples/tree/main/filesys/miniFilter).
 
 An INF file for a file system filter driver generally contains the following sections:
 

@@ -43,7 +43,7 @@ The minifilter driver can optionally supply the following context-related callba
 
 ## Context registration code example
 
-The following code example, which is taken from the [CTX sample minifilter driver](https://github.com/microsoft/Windows-driver-samples/tree/master/filesys/miniFilter/ctx), shows an array of **FLT_CONTEXT_REGISTRATION** structures that are used to register instance, file, stream, and file object (stream handle) contexts.
+The following code example, which is taken from the [CTX sample minifilter driver](https://github.com/Microsoft/Windows-driver-samples/tree/main/filesys/miniFilter/ctx), shows an array of **FLT_CONTEXT_REGISTRATION** structures that are used to register instance, file, stream, and file object (stream handle) contexts.
 
 ```cpp
 const FLT_CONTEXT_REGISTRATION contextRegistration[] =

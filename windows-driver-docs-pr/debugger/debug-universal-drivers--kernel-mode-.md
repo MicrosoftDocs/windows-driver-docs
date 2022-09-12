@@ -297,7 +297,7 @@ To download and build the Sysvad sample audio driver, perform the following step
 
     You can use a browser to view the Sysvad sample and Readme.md file here:
 
-    [https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad](https://github.com/microsoft/Windows-driver-samples/tree/master/audio/sysvad)
+    [https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad](https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad)
 
     ![github repo showing general folder and download zip button.](images/sysvad-lab-github.png)
 

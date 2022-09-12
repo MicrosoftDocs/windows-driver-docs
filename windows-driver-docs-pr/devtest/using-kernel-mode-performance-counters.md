@@ -26,7 +26,7 @@ Use the following steps to develop new counter data providers:
    - Otherwise, if the `<CounterManifest>` parameter is a full path, the directory from `<CounterManifest>` will be combined with the filename from the `applicationIdentity` attribute.
    - Otherwise, current working directory will be combined with the filename from the `applicationIdentity` attribute.
 
-For an example of a kernel-mode PCW provider, see the [Kernel Counter Sample (Kcs)](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/perfcounters/kcs) in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
+For an example of a kernel-mode PCW provider, see the [Kernel Counter Sample (Kcs)](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/perfcounters/kcs) in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
 ## Related topics
 

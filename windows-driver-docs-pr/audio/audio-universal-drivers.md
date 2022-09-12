@@ -99,7 +99,7 @@ APO INF packages must be submitted to the Partner Center separately from the bas
 
 ### SYSVAD  componentized INF files
 
-To see an example of componentized INF files examine the [sysvad/TabletAudioSample](https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad/TabletAudioSample), on Github.
+To see an example of componentized INF files examine the [sysvad/TabletAudioSample](https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad/TabletAudioSample), on Github.
 
 | File name                              | Description                                                                    |
 |----------------------------------------|--------------------------------------------------------------------------------|

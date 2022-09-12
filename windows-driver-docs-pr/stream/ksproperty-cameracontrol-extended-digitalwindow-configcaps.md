@@ -18,7 +18,7 @@ ms.topic: article
 
 **KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW_CONFIGCAPS** is a property ID that specifies the scaling limits of the camera given all available resolutions.  This control must always be available to report the capabilities of the Digital Window control..
 
-Examples of setting KSPROPERTY controls can be found in the [AVStream Camera Sample Driver](https://github.com/microsoft/Windows-driver-samples/tree/master/avstream/avscamera) on GitHub.
+Examples of setting KSPROPERTY controls can be found in the [AVStream Camera Sample Driver](https://github.com/Microsoft/Windows-driver-samples/tree/main/avstream/avscamera) on GitHub.
 
 ## Usage summary table
 

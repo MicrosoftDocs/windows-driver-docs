@@ -15,7 +15,7 @@ Before allocating a context and attempting to set it, a minifilter can call the 
 - [**FltSupportsStreamContexts**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltsupportsstreamcontexts)
 - [**FltSupportsStreamHandleContexts**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltsupportsstreamhandlecontexts)
 
-In the following code example, taken from the [CTX sample minifilter](https://github.com/microsoft/Windows-driver-samples/tree/master/filesys/miniFilter/ctx) driver, the **CtxInstanceSetup** routine calls [**FltAllocateContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecontext) to create an instance context:
+In the following code example, taken from the [CTX sample minifilter](https://github.com/Microsoft/Windows-driver-samples/tree/main/filesys/miniFilter/ctx) driver, the **CtxInstanceSetup** routine calls [**FltAllocateContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecontext) to create an instance context:
 
 ```cpp
 status = FltAllocateContext(

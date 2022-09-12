@@ -29,7 +29,7 @@ Volume contexts must be allocated from nonpaged pool. All other context types ca
 
 ## Filter driver context sample code
 
-See the [CTX sample](https://github.com/microsoft/Windows-driver-samples/tree/master/filesys/miniFilter/ctx) for an example of a minifilter driver that uses contexts.
+See the [CTX sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/filesys/miniFilter/ctx) for an example of a minifilter driver that uses contexts.
 
 ## How to manage contexts
 

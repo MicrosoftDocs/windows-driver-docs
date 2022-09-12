@@ -36,7 +36,7 @@ Use the following procedure to configure a driver to log to the Global Logger tr
 
    For example, to configure the Tracedrv sample driver to log to the Global Logger trace session on a computer running Windows XP, add a subkey named for the Tracedrv control GUID, d58c126f-b309-11d1-969e-0000f875a5bc: **HKLM\\SYSTEM\\CurrentControlSet\\Control\\WMI\\GlobalLogger\\d58c126f-b309-11d1-969e-0000f875a5bc**.
 
-   [TraceDrv](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/tracing/tracedriver), a sample driver that was designed for software tracing, is available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
+   [TraceDrv](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/tracing/tracedriver), a sample driver that was designed for software tracing, is available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
 4. To configure the trace provider, add the following registry entries to the **ControlGUID** subkey. These entries are optional and their values are defined by the driver.
 
