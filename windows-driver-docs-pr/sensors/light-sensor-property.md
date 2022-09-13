@@ -37,6 +37,6 @@ To use this property key to set the value of its related property, you can use t
     }
 ```
 
-For a complete example of sensor properties being set by using their related property keys, see the [client.cpp file](https://github.com/Microsoft/Windows-driver-samples/blob/master/sensors/ADXL345Acc/client.cpp) in the ADXL345Acc sample driver, and scroll down to the **NTSTATUS ADXL345AccDevice::Initialize(...)** routine.
+For a complete example of sensor properties being set by using their related property keys, see the [client.cpp file](https://github.com/microsoft/Windows-driver-samples/blob/main/sensors/ADXL345Acc/client.cpp) in the ADXL345Acc sample driver, and scroll down to the **NTSTATUS ADXL345AccDevice::Initialize(...)** routine.
 
 **Header:** Sensorsdef.h
