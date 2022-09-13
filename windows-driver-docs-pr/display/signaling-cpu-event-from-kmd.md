@@ -9,17 +9,22 @@ keywords:
 
 # Signaling a CPU event from a kernel-mode driver
 
-There are cases when the kernel-mode driver (KMD) needs to signal a CPU event to notify the user-mode driver (UMD) about something. Typically, UMD can create a CPU event and pass its NT handle to KMD in an escape private data. This method does not work in the GPU paravirtualization (GPU-PV) scenario because NT handles cannot be used across virtual machine boundaries.
+There are cases when the kernel-mode driver (KMD) needs to signal a CPU event to notify the user-mode driver (UMD) about something; for example:
+
+* When KMD detects that one of its objects is in a bad state and needs to notify UMD.
+* During GPU debugging where KMD needs to communicate to UMD that some event happened. For IHVs with Control Panels for GPU, signaling CPU events by KMD allows KMD to notify the Control Panels app about internal events.
+
+Typically, UMD can create a CPU event and pass its NT handle to KMD in an escape private data. This method does not work in the GPU paravirtualization (GPU-PV) scenario because NT handles cannot be used across virtual machine boundaries.
 
 Starting in Windows 11 version 21H2 (WDDM 3.0), the WDDM API was extended to allow UMD to create a CPU event object that can be signaled by KMD. This feature works both when UMD is running on the host or in a virtual machine using GPU-PV.
 
 ## Feature flow
 
-* UMD creates a CPU event.
+* UMD [creates a CPU event](/windows/win32/api/synchapi/nf-synchapi-createeventa).
 
-* UMD [creates a GPU synchronization object](/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_createsynchronizationobject2cb) with the [**D3DDDI_CPU_NOTIFICATION**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddi_synchronizationobject_type) type. The created object is made visible to KMD by setting the [**SignalByKmd**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_synchronizationobject_flags) flag when calling [**D3DKMTCreateSynchronizationObject**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtcreatesynchronizationobject2).
+* UMD creates a GPU synchronization object with the [**D3DDDI_CPU_NOTIFICATION**](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddi_synchronizationobject_type) type. The created object is made visible to KMD by setting the [**SignalByKmd**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_synchronizationobject_flags) flag when calling [**D3DKMTCreateSynchronizationObject**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtcreatesynchronizationobject2).
 
-* *Dxgkrnl* calls [**DXGKDDI_CREATECPUEVENT**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createcpuevent) to allow the driver to create its own object.
+* *Dxgkrnl* calls [**DXGKDDI_CREATECPUEVENT**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createcpuevent) to allow KMD to create its own object.
 
 * UMD calls [**D3DKMTEscape**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtescape) with the **D3DDDI_DRIVERESCAPETYPE_CPUEVENTUSAGE** known escape type to notify KMD about intended usage of the synchronization object.
 
@@ -29,7 +34,7 @@ Starting in Windows 11 version 21H2 (WDDM 3.0), the WDDM API was extended to all
 
 * UMD calls [**D3DKMTDestroySynchronizationObject**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtdestroysynchronizationobject) to destroy the CPU event object.
 
-* *Dxgkrnl* calls [**DXGKDDI_DESTROYCPUEVENT**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_destroycpuevent) to destroy the CPU event object. [**DXGKCB_SIGNALEVENT**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_signalevent) should be called after this point.
+* *Dxgkrnl* calls [**DXGKDDI_DESTROYCPUEVENT**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_destroycpuevent) to destroy the CPU event object. [**DXGKCB_SIGNALEVENT**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_signalevent) should not be called after this point.
 
 The synchronization object cannot be inserted to a context queue. It can only be signaled by KMD using [**DXGKCB_SIGNALEVENT**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_signalevent).
 
@@ -83,7 +88,7 @@ The following DDIs are used to create and destroy KMD CPU event sync objects:
 * [**DXGKDDI_CREATECPUEVENT**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createcpuevent)
 * [**DXGKDDI_DESTROYCPUEVENT**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_destroycpuevent)
 
-## Signalling a CPU event object from KMD
+## Signaling a CPU event object from KMD
 
 To signal a CPU event object, KMD calls [**DXGKCB_SIGNALEVENT**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_signalevent) at IRQL <= DISPATCH_LEVEL and with the [**DXGKARGCB_SIGNALEVENT**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkargcb_signalevent) structure values set as follows:
 
