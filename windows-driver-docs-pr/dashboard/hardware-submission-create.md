@@ -114,6 +114,10 @@ Your error message is:
 
 Use [HLK studio](/windows-hardware/test/hlk/user/install-standalone-hlk-studio) to open the downloaded DUA shell package and to create DUA submission.
 
+**Other issues**
+
+If you don't see your issue addressed here, go to [Get support for Partner Center dashboard issues](hardware-submission-support.md).
+
 ## Next Steps
 
 > [!div class="nextstepaction"]
