@@ -7,21 +7,13 @@ ms.date: 09/07/2022
 
 # Get support for Partner Center dashboard issues
 
-There are three steps that you can take to get your issue resolved. This article takes you through the process of each step.
+## Documentation issues
 
-## Step 1: Search the documentation
-
-1. Go to [Partner Center for Windows Hardware documentation](index.yml) to see if your issue is addressed in the documentation.
-
-1. If your issue isn't addressed or is only partially addressed, then proceed to Step 2.
-
-## Step 2: Submit a request in GitHub
-
-If the current documentation in [Partner Center for Windows Hardware documentation](index.yml)) doesn't cover your issue, you can submit a support request through GitHub.  When you submit a request in GitHub, you'll be directly contacting the Partner Center drivers team.
+Most issues can be resolved through the [Partner Center for Windows Hardware documentation](index.yml) or [Hardware Dev Center - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/hardware-dev-center/bg-p/HardwareDevCenter). However, if the current documentation doesn't cover your issue, you can submit a support request through GitHub.  When you submit a request in GitHub, you'll be directly connecting with the Partner Center drivers team.
 
 To submit a request to the Partner Center drivers team in GitHub:
 
-1. Go to the Partner Center documentation web page that you believe should've been able to help you with your issue. For the sake of example, you might find that your issue isn't addressed on the [Create a new hardware submission page](hardware-submission-create.md).
+1. Go to the Partner Center documentation web page that you believe should've been able to help you with your issue.
 
 >[!TIP]
 >If the content you are looking for doesn't exist at all, just find a page that is relatively related to your issue.
@@ -40,11 +32,11 @@ To submit a request to the Partner Center drivers team in GitHub:
 
 1. You should receive a response from the team within 24-48 business hours.
 
-## Step 3: Submit request to Windows developer support
+## Technical support issues
 
-If you've been unable to resolve your issue through GitHub or your issue has been escalated to a support issue, you'll need to contact Windows developer support.
+If your issue is technical and you can't find answers in the documentation, you can contact Windows developer support.
 
-There are two types of support issues in Windows developer support: Dashboard issues and HLK issues. 
+There are two types of support issues in Windows developer support: Dashboard issues and HLK issues
 
 **To contact Windows developer support for a dashboard issue:**
 
@@ -60,22 +52,4 @@ There are two types of support issues in Windows developer support: Dashboard is
 
 **To contact Windows developer support for an HLK issue:**
 
-1. Go to [Windows developer support](https://developer.microsoft.com/windows/support/?tabs=Contact-us).
-
-1. In the *Technical Support- Coding/Debugging* section, for *Driver Development and Testing/Certification*, select **Submit an incident**.
-
-    :::image type="content" source="images/hardware-submission-support/hlk-submit-incident.png" alt-text="Screenshot showing the Submit an incident link for HLK support.":::
-
-1. On the Support for business top menu, select **Create**
-
-1. In the *Create a new support request* page, fill in the following information for *Step 1: Product and Support Type**
-
-    - For **Select the product family**, select *Developer Tools*.
-    - For **What product or service do you need help with?**, select *Windows Driver Kit (WDK, HLK)*.
-    - For **Select the product version**, select the relevant version of the Driver Kit.
-    - For **Which category best describes the issue?"**, select the appropriate category.
-
-        :::image type="content" source="images/hardware-submission-support/create-support-request.png" alt-text="Screenshot showing the the Create a new support request submission form.":::
-
-1. Fill out the rest of the required information as prompted.
- 
+Before contacting Windows developer support, see if you can find a solution to your issue in [Troubleshooting Windows HLK](/windows-hardware/test/hlk/user/troubleshooting-windows-hlk). If you still can't find a solution to your issue, then contact [Windows HLK support](/windows-hardware/test/hlk/user/windows-hlk-support).
