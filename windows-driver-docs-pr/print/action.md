@@ -8,7 +8,7 @@ api_name:
 - action
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 09/06/2022
 ---
 
 # action element
@@ -35,38 +35,10 @@ This resource may not be available in some languages and countries.
 
 ## Attributes
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>dll</strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>Yes</p></td>
-<td><p></p>
-<p>A required attribute that specifies a DLL, supplied by an IHV, that contains a function to call when a user clicks a button.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>entrypoint</strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>Yes</p></td>
-<td><p></p>
-<p>A required attribute that specifies the function to call in the DLL supplied by the IHV. This function should return <strong>NULL</strong> when called.</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Type | Required | Description |
+|--|--|--|--|
+| **dll** | xs:string | Yes | A required attribute that specifies a DLL, supplied by an IHV, that contains a function to call when a user clicks a button. |
+| **entrypoint** | xs:string | Yes | A required attribute that specifies the function to call in the DLL supplied by the IHV. This function should return **NULL** when called. |
 
 ## Text value
 
@@ -78,25 +50,9 @@ There are no child elements.
 
 ## Parent elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="balloonui.md" data-raw-source="[&lt;strong&gt;balloonUI&lt;/strong&gt;](balloonui.md)"><strong>balloonUI</strong></a></p></td>
-<td><p></p>
-<p>Provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.</p></td>
-</tr>
-</tbody>
-</table>
+| Element | Description |
+|--|--|
+| [**balloonUI**](balloonui.md) | Provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event. |
 
 ## Remarks
 

@@ -438,7 +438,7 @@ For more information, see [How to run Code Analysis for drivers](../devtest/how-
 
 For more information, see [Code Analysis for drivers overview](../devtest/code-analysis-for-drivers-overview.md). For additional background on code analysis, see [Visual Studio 2013 Static Code Analysis in depth](/archive/blogs/hkamel/visual-studio-2013-static-code-analysis-in-depth-what-when-and-how).
 
-To become familiar with code analysis, you can use one of the sample drivers for example, the featured toaster sample, <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured> or the ELAM Early Launch Anti-Malware sample <https://github.com/Microsoft/Windows-driver-samples/tree/master/security/elam>.
+To become familiar with code analysis, you can use one of the sample drivers for example, the featured toaster sample, <https://github.com/Microsoft/Windows-driver-samples/tree/main/general/toaster/toastDrv/kmdf/func/featured> or the ELAM Early Launch Anti-Malware sample <https://github.com/Microsoft/Windows-driver-samples/tree/main/security/elam>.
 
 1. Open the driver solution in Visual Studio.
 
@@ -475,7 +475,7 @@ Note that only certain types of drivers are supported by SDV. For more informati
 - [Rules for Audio Drivers](../devtest/rules-for-audio-drivers.md)
 - [Rules for AVStream Drivers](../devtest/rules-for-avstream-drivers.md)
 
-To become familiar with SDV, you can use one of the sample drivers (for example, the featured toaster sample: <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured>).
+To become familiar with SDV, you can use one of the sample drivers (for example, the featured toaster sample: <https://github.com/Microsoft/Windows-driver-samples/tree/main/general/toaster/toastDrv/kmdf/func/featured>).
 
 1. Open the targeted driver solution in Visual Studio.
 

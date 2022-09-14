@@ -142,7 +142,7 @@ In this example, CodeQL uses the MSBuild compiler to process the C++ code to pre
 
 Using a command line environment that is used for building driver source code, such as the [Enterprise Windows Driver Kit (EWDK)](../develop/using-the-enterprise-wdk.md), navigate to the CodeQL tools folder where the repository was cloned. If you are building the driver using Visual Studio, you can configure the CodeQL queries to run as a post build event as discussed in [Visual Studio Post-Build Event](#visual-studio-post-build-event) in this topic.
 
-This example will process the evaluate the kmdfecho.sln driver sample, which is [available on GitHub](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf). The example below places the kmdf sample in the `C:\codeql-home\drivers\kmdf` directory.
+This example will process the evaluate the kmdfecho.sln driver sample, which is [available on GitHub](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/echo/kmdf). The example below places the kmdf sample in the `C:\codeql-home\drivers\kmdf` directory.
 
 Run the following commands to create a new CodeQL database under *C:\codeql-home\databases\kmdf*.
 

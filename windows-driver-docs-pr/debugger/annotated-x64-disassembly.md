@@ -92,7 +92,7 @@ When entered, the function's parameters are stored as follows:
 
 -   **r9** = *pszExe*.
 
-Recall that the first four parameters are passed in registers. Since this function has only four registers, none are passed on the stack.
+Recall that the first four parameters are passed in registers. Since this function has only four parameters, none are passed on the stack.
 
 The assembly begins as follows:
 

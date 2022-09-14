@@ -1,16 +1,16 @@
 ---
-title: Pscript-Supported Escapes
-description: Pscript-Supported Escapes
+title: Pscript-supported Escapes
+description: Provides information about Pscript-supported escapes.
 keywords:
-- PostScript Printer Driver WDK print , escapes
-- Pscript WDK print , escapes
+- PostScript Printer Driver WDK print, escapes
+- Pscript WDK print, escapes
 - escapes WDK Pscript
-ms.date: 03/28/2021
+ms.date: 09/08/2022
 ---
 
-# Pscript-Supported Escapes
+# Pscript-supported escapes
 
-The Pscript5 printer driver supports the following escapes.
+The PScript5 printer driver supports the following escapes.
 
 | Escape | Description |
 |--|--|

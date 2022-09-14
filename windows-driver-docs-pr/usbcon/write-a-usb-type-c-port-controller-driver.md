@@ -43,7 +43,7 @@ Applies to:
 
 **UcmTcpciCx client driver template**
 
-[UcmTcpciCx client driver template](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmTcpciCxClientSample)
+[UcmTcpciCx client driver template](https://github.com/Microsoft/Windows-driver-samples/tree/main/usb/UcmTcpciCxClientSample)
 
 ## Before you begin...
 

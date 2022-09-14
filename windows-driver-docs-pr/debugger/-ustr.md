@@ -2,7 +2,7 @@
 title: ustr (WinDbg)
 description: The ustr extension displays a UNICODE_STRING structure.
 keywords: ["strings", "UNICODE_STRING structure", "ustr Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 09/12/2022
 topic_type:
 - apiref
 api_name:
@@ -14,64 +14,5 @@ api_type:
 # !ustr
 
 
-The **!ustr** extension displays a UNICODE\_STRING structure.
-
-```dbgcmd
-!ustr Address
-```
-
-## <span id="ddk__ustr_dbg"></span><span id="DDK__USTR_DBG"></span>Parameters
-
-
-<span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
-Specifies the hexadecimal address of the UNICODE\_STRING structure.
-
-### <span id="DLL"></span><span id="dll"></span>DLL
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ext.dll</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
-
-For more information about UNICODE\_STRING structures, see the Microsoft Windows SDK documentation.
-
-## Remarks
-
-Unicode strings are counted 16-bit character strings, as defined in the following structure:
-
-```cpp
-typedef struct _UNICODE_STRING {
-    USHORT Length;
-    USHORT MaximumLength;
-    PWSTR  Buffer;
-} UNICODE_STRING;
-```
-
-If the string is null-terminated, **Length** does not include the trailing null.
-
-Most Win32 character string arguments are converted to Unicode strings before any real work is done.
-
- 
-
- 
-
-
-
-
-
+The **!ustr** extension is obsolete and is no longer supported. Use the debugger data model,  
+[dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) command instead.

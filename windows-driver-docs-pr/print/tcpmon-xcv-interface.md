@@ -1,23 +1,19 @@
 ---
-title: TCPMON Xcv Interface
-description: TCPMON Xcv Interface
+title: TCPMON Xcv interface
+description: Provides information about TCPMON Xcv interface.
 keywords:
-- print monitors WDK , TCPMON Xcv
+- print monitors WDK, TCPMON Xcv
 - transceive (Xcv) interface WDK print
 - Xcv interface WDK print
 - TCPMON Xcv interface WDK print
-ms.date: 04/20/2017
+ms.date: 09/08/2022
 ---
 
-# TCPMON Xcv Interface
-
-
-
-
+# TCPMON Xcv interface
 
 This section describes the transceive (Xcv) interface for the standard TCP/IP port monitor (TCPMON). This interface, which is implemented using [**XcvData**](/previous-versions/ff564255(v=vs.85)) and [**XcvDataPort**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-xcvdataport) function calls, enables those using it to configure a TCP/IP printer port or to obtain information about a TCP/IP printer port configuration. The Xcv interface described in this section is specific to TCP/IP ports. Other Xcv interfaces might be available for other port types.
 
-To obtain a handle to an Xcv interface for either a local machine or a remote machine, call the **OpenPrinter** function (described in the Microsoft Windows SDK documentation). The following code example illustrates how to obtain an Xcv handle to a port:
+To obtain a handle to an Xcv interface for either a local machine or a remote machine, call the [**OpenPrinter**](/windows/win32/printdocs/openprinter) function. The following code example illustrates how to obtain an Xcv handle to a port:
 
 ```cpp
 HANDLE hXcv = INVALID_HANDLE_VALUE;
@@ -36,7 +32,7 @@ if (OpenPrinter("<ServerName>\\,XcvPort <PortName>", &hXcv, &Defaults )
 }
 ```
 
-In the code example, *ServerName* and *PortName* represent server and port name strings. Once you have obtained the handle, you can query information that is specific to the TCPMON port monitor, or you can change the port configuration. Note that the access you require for the port monitor must be specified in the **DesiredAccess** member of the PRINTER\_DEFAULTS structure (or pass **NULL** if no special security is required). For certain calls to the [**XcvData**](/previous-versions/ff564255(v=vs.85)) function (such as when the AddPort and DeletePort commands are specified -- see [TCPMON Xcv Commands](tcpmon-xcv-commands.md)), SERVER\_ACCESS\_ADMINISTER privilege is required. For details about the **OpenPrinter** function and the access rights that may be requested in the PRINTER\_DEFAULTS structure, see the Windows SDK documentation.
+In the code example, *ServerName* and *PortName* represent server and port name strings. Once you have obtained the handle, you can query information that is specific to the TCPMON port monitor, or you can change the port configuration. Note that the access you require for the port monitor must be specified in the **DesiredAccess** member of the PRINTER_DEFAULTS structure or pass **NULL** if no special security is required. For certain calls to the [**XcvData**](/previous-versions/ff564255(v=vs.85)) function, such as when the AddPort and DeletePort commands are specified (see [TCPMON Xcv Commands](tcpmon-xcv-commands.md)), SERVER_ACCESS_ADMINISTER privilege is required. For details about the **OpenPrinter** function and the access rights that may be requested in the PRINTER_DEFAULTS structure, see the [**OpenPrinter**](/windows/win32/printdocs/openprinter) function documentation.
 
 If the port does not yet exist, the Xcv handle can be obtained from the server by specifying the monitor name. (In the case of the standard TCP/IP port monitor port, this is "Standard TCP/IP Port".) The following code example illustrates how to obtain an Xcv data handle to a port monitor:
 
@@ -62,53 +58,12 @@ In the code example, *ServerName* and *PortName* represent server and port name 
 
 Note that the return value from the **XcvData** function indicates only whether the data was correctly sent to the port monitor. A return value of **TRUE** does not indicate that the operation was successful. To determine whether the operation was successful, inspect the value in \**pdwStatus*. These status values are summarized in the following table:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Status Value</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>NO_ERROR</p></td>
-<td><p>The operation was successful.</p></td>
-</tr>
-<tr class="even">
-<td><p>ERROR_ACCESS_DENIED</p></td>
-<td><p>The user has insufficient privileges. The command requires SERVER_ACCESS_ADMINISTER privilege.</p></td>
-</tr>
-<tr class="odd">
-<td><p>ERROR_INSUFFICIENT_BUFFER</p></td>
-<td><p>An output buffer is required, but is smaller than required.</p></td>
-</tr>
-<tr class="even">
-<td><p>ERROR_INVALID_DATA</p></td>
-<td><p>An input buffer is required, but the pointer to it is <strong>NULL</strong>, or</p>
-<p>the size of the input buffer is smaller than required.</p></td>
-</tr>
-<tr class="odd">
-<td><p>ERROR_INVALID_HANDLE</p></td>
-<td><p>The Xcv data handle is invalid.</p></td>
-</tr>
-<tr class="even">
-<td><p>ERROR_INVALID_LEVEL</p></td>
-<td><p>The input or output data structure is not the correct version.</p></td>
-</tr>
-<tr class="odd">
-<td><p>ERROR_INVALID_PARAMETER</p></td>
-<td><p>An output buffer is required, but it is <strong>NULL</strong>, or</p>
-<p>the output required parameter is <strong>NULL</strong> and the output buffer is too small, or</p>
-<p>the standard TCP/IP port monitor does not understand the command being issued.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
+| Status value | Meaning |
+|--|--|
+| NO_ERROR | The operation was successful. |
+| ERROR_ACCESS_DENIED | The user has insufficient privileges. The command requires SERVER_ACCESS_ADMINISTER privilege. |
+| ERROR_INSUFFICIENT_BUFFER | An output buffer is required, but is smaller than required. |
+| ERROR_INVALID_DATA | An input buffer is required, but the pointer to it is **NULL**, or the size of the input buffer is smaller than required. |
+| ERROR_INVALID_HANDLE | The Xcv data handle is invalid. |
+| ERROR_INVALID_LEVEL | The input or output data structure is not the correct version. |
+| ERROR_INVALID_PARAMETER | An output buffer is required, but it is **NULL**, or the output required parameter is **NULL** and the output buffer is too small, or the standard TCP/IP port monitor does not understand the command being issued. |

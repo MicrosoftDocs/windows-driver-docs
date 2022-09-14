@@ -75,7 +75,7 @@ Using the macro without including Initguid.h and without referencing a library f
 [Sensors Driver ADXL345Acc Sample](https://go.microsoft.com/fwlink/p/?LinkId=617957)
 
 <!--
-https://go.microsoft.com/fwlink/p/?LinkId=617957: https://github.com/Microsoft/Windows-driver-samples/tree/master/sensors/ADXL345Acc
+https://go.microsoft.com/fwlink/p/?LinkId=617957: https://github.com/Microsoft/Windows-driver-samples/tree/main/sensors/ADXL345Acc
 -->
 
 

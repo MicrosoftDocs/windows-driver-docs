@@ -29,7 +29,7 @@ Contexts are not supported for paging files or during the following operations:
 
 - Processing of IRP_MJ_NETWORK_QUERY_OPEN requests
 
-See the [CTX sample](https://github.com/microsoft/Windows-driver-samples/tree/master/filesys/miniFilter/ctx) for an example of a minifilter driver that uses contexts.
+See the [CTX sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/filesys/miniFilter/ctx) for an example of a minifilter driver that uses contexts.
 
 ## Filter manager support routines for context management
 

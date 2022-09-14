@@ -26,7 +26,7 @@ To download  and use USBView, complete the following steps:
 
 ## USBView source code
 
-[USBView](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/usbview) is also available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
+[USBView](https://github.com/Microsoft/Windows-driver-samples/tree/main/usb/usbview) is also available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
 ## Use USBView
 
@@ -37,7 +37,7 @@ The main USBView window contains two panes. The left pane displays a connection-
 
 The right pane displays the USB data structures that pertain to the selected USB device. These structures include Device, Configuration, Interface, and Endpoint Descriptors, as well as the current device configuration.
 
-As USBView is an older application, it may not display newer USB information, so other options such as Device Manager should be used instead as necessary. For more information on the IOCTLs that USBView uses to query information, see [USBView](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/usbview).
+As USBView is an older application, it may not display newer USB information, so other options such as Device Manager should be used instead as necessary. For more information on the IOCTLs that USBView uses to query information, see [USBView](https://github.com/Microsoft/Windows-driver-samples/tree/main/usb/usbview).
 
 ## Use Device Manager to display USB info
 

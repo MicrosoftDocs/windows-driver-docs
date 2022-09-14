@@ -3,7 +3,7 @@ title: Value (WSD)
 description: The WSD Value construct allows you to extend the bidi communications schema with queries that retrieve data from a particular schema element.
 keywords:
 - Value construct
-ms.date: 06/12/2020
+ms.date: 09/09/2022
 ---
 
 # Value (WSD)
@@ -21,7 +21,7 @@ The WSD `Value` construct allows you to extend the bidi communications schema wi
 
 The XPath language is implemented in Windows and provides a convenient way to specify elements in an XML file. See the [XPath Reference](/previous-versions/dotnet/netframework-4.0/ms256115(v=vs.100)) for more information.
 
-The **xmllang** attribute is used only when the type attribute of the `Value` construct is either "BIDI\_STRING" or "BIDI\_TEXT".
+The **xmllang** attribute is used only when the type attribute of the `Value` construct is either "BIDI_STRING" or "BIDI_TEXT".
 
 The `Value` construct is defined in WsdBidi.xsd.
 

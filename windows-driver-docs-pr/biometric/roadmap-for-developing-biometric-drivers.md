@@ -18,15 +18,15 @@ To create a biometric driver, follow these steps:
 
 - Step 3: Review the biometric driver sample in the WDK.
 
-    For Windows 7 and later operating systems, the driver code gallery includes a sample called [WudfBioUsbSample](https://github.com/Microsoft/Windows-driver-samples/tree/master/biometrics/driver). This sample WBDI driver is UMDF-based, and uses the [USB I/O Target](../wdf/usb-i-o-targets-in-umdf.md).
+    For Windows 7 and later operating systems, the driver code gallery includes a sample called [WudfBioUsbSample](https://github.com/Microsoft/Windows-driver-samples/tree/main/biometrics/driver). This sample WBDI driver is UMDF-based, and uses the [USB I/O Target](../wdf/usb-i-o-targets-in-umdf.md).
 
-    For more information about the WudfBioUsbSample sample, see the [sample description](https://github.com/Microsoft/Windows-driver-samples/tree/master/biometrics).
+    For more information about the WudfBioUsbSample sample, see the [sample description](https://github.com/Microsoft/Windows-driver-samples/tree/main/biometrics).
 
 - Step 4: Select a driver model for your biometric driver.
 
     Microsoft recommends that WBDI drivers are UMDF-based and use the USB I/O target. For information about UMDF, see [Introduction to UMDF](/previous-versions/ff554928(v=vs.85)). For information about the USB I/O target, see [Handling a USB I/O Target](../wdf/usb-i-o-targets-in-umdf.md).
 
-    [WudfBioUsbSample](https://github.com/Microsoft/Windows-driver-samples/tree/master/biometrics/driver) demonstrates how to implement a UMDF-based WBDI driver that uses a USB I/O target.
+    [WudfBioUsbSample](https://github.com/Microsoft/Windows-driver-samples/tree/main/biometrics/driver) demonstrates how to implement a UMDF-based WBDI driver that uses a USB I/O target.
 
     If you use UMDF, Microsoft recommends that you develop your biometric driver in C++.
 

@@ -330,11 +330,11 @@ To download and build the Echo sample audio driver, perform the following steps.
 
     You can use a browser to view the echo sample in GitHub here:
 
-    [https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf/)
+    [https://github.com/Microsoft/Windows-driver-samples/tree/main/general/echo/kmdf](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/echo/kmdf/)
 
     You can read about the sample here:
 
-    <https://github.com/microsoft/Windows-driver-samples/blob/master/general/echo/kmdf/README.md>
+    <https://github.com/microsoft/Windows-driver-samples/blob/main/general/echo/kmdf/README.md>
 
     You can browse all of the Windows driver samples here:
 

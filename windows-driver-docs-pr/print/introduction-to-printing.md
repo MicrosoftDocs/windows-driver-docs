@@ -1,5 +1,5 @@
 ---
-title: Introduction to Printing
+title: Introduction to printing
 description: Provides an introduction to the Windows print driver architecture.
 keywords:
 - printing WDK
@@ -7,10 +7,10 @@ keywords:
 - configuration component WDK print
 - components WDK printing
 - architecture WDK print
-ms.date: 04/20/2017
+ms.date: 09/08/2022
 ---
 
-# Introduction to Printing
+# Introduction to printing
 
 The Microsoft Windows printing architecture consists of a print spooler and a set of printer drivers. By calling device-independent functions, applications can create print jobs and send them to many devices. This includes laser printers, vector plotters, raster printers, and fax machines.
 

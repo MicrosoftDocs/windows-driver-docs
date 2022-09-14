@@ -8,7 +8,7 @@ ms.date: 04/20/2017
 
 
 Driver installation must use existing tools for online and offline installation, registering a driver through typical INF processing.  For sample ELAM driver code, please see the following:
-https://github.com/Microsoft/Windows-driver-samples/tree/master/security/elam 
+https://github.com/Microsoft/Windows-driver-samples/tree/main/security/elam 
 
 ## AM Driver Installation
 

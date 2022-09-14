@@ -12,7 +12,7 @@ ms.date: 04/20/2017
 
 Vendors can provide an INF file to install a WBDI driver.
 
-The following is a list of guidelines for biometric device installation. The code examples in this topic are taken from the WudfBioUsbSample.inx file of the [WudfBioUsbSample](https://github.com/Microsoft/Windows-driver-samples/tree/master/biometrics/driver):
+The following is a list of guidelines for biometric device installation. The code examples in this topic are taken from the WudfBioUsbSample.inx file of the [WudfBioUsbSample](https://github.com/Microsoft/Windows-driver-samples/tree/main/biometrics/driver):
 
 -   WBDI drivers should specify a class of "Biometric." Set ClassGuid equal to the value that corresponds to GUID\_DEVCLASS\_BIOMETRIC in Devguid.h:
 
@@ -77,7 +77,7 @@ The following is a list of guidelines for biometric device installation. The cod
     HKLM,System\CurrentControlSet\Services\WbioSrvc\Databases\{6E9D4C5A-55B4-4c52-90B7-DDDC75CA4D50},ConnectionString,,""
     ```
 
--   To differentiate WBDI and legacy drivers, vendors must set a Feature Score for the driver in the INX file. Feature Score is not set in the [WudfBioUsbSample](https://github.com/Microsoft/Windows-driver-samples/tree/master/biometrics/driver) sample. For more information about setting a Feature Score, see [Ranking a Biometric Driver on Windows Update](ranking-a-biometric-driver-on-windows-update.md).
+-   To differentiate WBDI and legacy drivers, vendors must set a Feature Score for the driver in the INX file. Feature Score is not set in the [WudfBioUsbSample](https://github.com/Microsoft/Windows-driver-samples/tree/main/biometrics/driver) sample. For more information about setting a Feature Score, see [Ranking a Biometric Driver on Windows Update](ranking-a-biometric-driver-on-windows-update.md).
 
 For information about INX files and how they differ from INF files, see [Using INX Files to Create INF Files](../wdf/using-inx-files-to-create-inf-files.md).
 

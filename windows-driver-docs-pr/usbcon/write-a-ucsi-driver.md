@@ -39,7 +39,7 @@ Applies to:
 
 ## Sample
 
-[UcmUcsiCx client driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/usb/UcmUcsiAcpiSample)
+[UcmUcsiCx client driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/usb/UcmUcsiAcpiSample)
 
 Replace the ACPI portions with your implementation for the required bus.
 

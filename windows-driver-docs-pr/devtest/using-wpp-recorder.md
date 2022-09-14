@@ -139,7 +139,7 @@ To set up custom logs, the driver must include `<WppRecorder.h>`. Then call the 
  - [**WppRecorderLogSetIdentifier**](/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderlogsetidentifier) to set a string identifier for a given recorder log (optional)
  - [**WppRecorderConfigure**](/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorderconfigure) to disable the default log (optional)
 
-The driver also needs to define a new trace macro that takes the log handle as the first parameter. For an example, see the [Toaster Sample Driver](https://github.com/microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured/trace.h).
+The driver also needs to define a new trace macro that takes the log handle as the first parameter. For an example, see the [Toaster Sample Driver](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/toaster/toastDrv/kmdf/func/featured/trace.h).
 
 ## How to add timestamp information to a custom log
 
