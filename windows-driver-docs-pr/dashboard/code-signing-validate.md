@@ -14,10 +14,6 @@ There are a couple cases where you might want to validate the Microsoft signatur
 - You aren’t sure if a driver has been signed by Microsoft or not, and you want to check.
 - You have two drivers, and you need to determine which one was signed by attestation and which one was signed after submission of HLK/HCK results to the dashboard.
 
-## Prerequisites
-
-This article assumes that you've already made a Hardware Lab Kit(HLK) dashboard submission for Windows 10 or earlier versions of Windows. For information on how to create dashboard submission, see [Create a new hardware submission](hardware-submission-create.md). Your submission contains the package files needed to determine whether or not the packages has a Microsoft signature.
-
 ## Step 1: Download signed driver files
 
 In this step, you'll download the signed files you need to validate the Microsoft signature.
