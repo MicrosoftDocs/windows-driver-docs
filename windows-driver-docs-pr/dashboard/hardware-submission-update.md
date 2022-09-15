@@ -163,3 +163,7 @@ The shipping label list displays the shipping labels for this submission. This l
 
 The status graphic displays the publish status for each shipping label. A green check means the label has been published. A yellow circle means the label is not published yet.
 
+## Next Steps
+
+> [!div class="nextstepaction"]
+> [Validate a hardware submission signature](code-signing-validate.md)

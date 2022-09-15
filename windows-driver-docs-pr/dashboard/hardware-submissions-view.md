@@ -134,3 +134,6 @@ Multiple attributes behave as if they are in an AND operator combination. For ex
 
 > [!div class="nextstepaction"]
 > [Update a hardware submission](hardware-submission-update.md)
+
+> [!div class="nextstepaction"]
+> [Validate a hardware submission signature](code-signing-validate.md)
