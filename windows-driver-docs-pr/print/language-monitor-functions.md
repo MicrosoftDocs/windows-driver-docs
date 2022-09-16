@@ -12,7 +12,7 @@ The following table lists the functions that a language monitor must define.
 
 | Function name | Description |
 |--|--|
-| **DllEntryPoint** | A DLL entry point, typically called **DllMain**, which is described in the Microsoft Windows SDK documentation. |
+| **DllEntryPoint** | A DLL entry point, typically called [**DllMain**](/windows/win32/dlls/dllmain). |
 | [**ClosePort**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-closeport) | Closes a port when there are no printers connected to it. |
 | [**EndDocPort**](/previous-versions/ff548742(v=vs.85)) | Performs end-of-print-job tasks on a port. |
 | [**GetPrinterDataFromPort**](/previous-versions/ff550506(v=vs.85)) | Optional. Polls a port for values that are stored in the registry. |

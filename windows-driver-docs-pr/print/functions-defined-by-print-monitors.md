@@ -1,30 +1,18 @@
 ---
-title: Functions Defined by Print Monitors
-description: Functions Defined by Print Monitors
+title: Functions defined by print monitors
+description: Provides information about functions defined by print monitors.
 keywords:
 - functions WDK print
-- print monitors WDK , functions
-ms.date: 04/20/2017
+- print monitors WDK, functions
+ms.date: 09/12/2022
 ---
 
-# Functions Defined by Print Monitors
-
-
-
-
+# Functions defined by print monitors
 
 The following sections list the functions that must be defined within print monitor DLLs.
 
-[Language Monitor Functions](language-monitor-functions.md)
+[Language monitor functions](language-monitor-functions.md)
 
-[Port Monitor Client DLL Functions](port-monitor-client-dll-functions.md)
+[Port monitor client DLL functions](port-monitor-client-dll-functions.md)
 
-[Port Monitor Server DLL Functions](port-monitor-server-dll-functions.md)
-
- 
-
- 
-
-
-
-
+[Port monitor server DLL functions](port-monitor-server-dll-functions.md)

@@ -1,23 +1,19 @@
 ---
-title: Using Resource DLLs in a Minidriver
-description: Using Resource DLLs in a Minidriver
+title: Use resource DLLs in a minidriver
+description: Provides information about how to use resource DLLs in a minidriver.
 keywords:
-- GPD files WDK Unidrv , resource DLLs
+- GPD files WDK Unidrv, resource DLLs
 - resource DLLs WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 09/16/2022
 ---
 
-# Using Resource DLLs in a Minidriver
-
-
-
-
+# Use resource DLLs in a minidriver
 
 Typically, printer drivers require the use of such resources as externally stored fonts, icons and other bitmaps, and localizable user interface text strings. Descriptions of these items are placed in a resource DLL, as described in the Microsoft Windows SDK documentation.
 
-To use resource DLLs in a Unidrv minidriver, you must identify the resources in either of the following manners:
+To use resource DLLs in a Unidrv minidriver, you must identify the resources as follows:
 
--   If you are using more than one resource DLL, identify them using the RESDLL feature.
+- If you are using more than one resource DLL, identify them using the RESDLL feature.
 
     An example usage of the RESDLL feature is as follows:
 
@@ -37,7 +33,7 @@ To use resource DLLs in a Unidrv minidriver, you must identify the resources in 
 
     RESDLL.*ResourceOptionName*.*ResourceID*
 
--   If you are using only one resource DLL, you can identify it by assigning a value to the \*ResourceDLL attribute.
+- If you are using only one resource DLL, you can identify it by assigning a value to the \*ResourceDLL attribute.
 
     To reference a resource contained in this resource DLL, simply specify the appropriate resource identifier, as illustrated in the following example:
 
@@ -45,7 +41,7 @@ To use resource DLLs in a Unidrv minidriver, you must identify the resources in 
     *rcNameID: 288
     ```
 
-All resource DLLs used with a minidriver must be specified in a printer INF file. See [Installing a Unidrv Minidriver](installing-a-unidrv-minidriver.md).
+All resource DLLs used with a minidriver must be specified in a printer INF file. See [Installing a Unidrv minidriver](installing-a-unidrv-minidriver.md).
 
 Within a *GPD* file, resource identifiers must be used when assigning values to any entry whose name begins with \*rc, such as \*rcIconID and \*rcCartridgeNameID, for example.
 
@@ -56,11 +52,3 @@ Microsoft supplies one resource DLL, unires.dll, which contains string resources
 ```cpp
 *rcNameID: =LETTERSMALL_DISPLAY
 ```
-
- 
-
- 
-
-
-
-
