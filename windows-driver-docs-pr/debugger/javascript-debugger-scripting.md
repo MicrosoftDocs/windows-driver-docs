@@ -806,7 +806,7 @@ This method is also available.
 
 | **Method Name**   | **Signature**             | **Description**                                                                                               |
 |-------------------|---------------------------|---------------------------------------------------------------------------------------------------------------|
-| compareTo | .compareTo(str:string) | Compares two strings. |
+| compareTo | .compareTo(value) | Compares the 64-bit value to another 64-bit value. |
 
 ## <span id="Debugging"></span><span id="debugging"></span><span id="DEBUGGING"></span>JavaScript Debugging
 
