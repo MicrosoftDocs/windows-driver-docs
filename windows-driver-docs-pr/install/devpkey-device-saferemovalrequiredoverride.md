@@ -10,7 +10,7 @@ api_location:
 - Devpkey.h
 api_type:
 - HeaderDef
-ms.date: 06/24/2022
+ms.date: 09/19/2022
 ---
 
 # DEVPKEY_Device_SafeRemovalRequiredOverride
@@ -31,7 +31,7 @@ This device property can be used to override the result of the heuristic that Wi
 - If the DEVPKEY_Device_SafeRemovalRequiredOverride device property is set to DEVPROP_TRUE and the device instance is removable or has a removable ancestor, PnP sets the DEVPKEY_Device_SafeRemovalRequired device property to DEVPROP_TRUE and does not use the heuristic.
 
     > [!NOTE]
-    > Information the user should notice even if skimmingA device instance is considered removable if its removable device capability is set. For more information, see [Overview of the Removable Device Capability](./overview-of-the-removable-device-capability.md).
+    > A device instance is considered removable if its removable device capability is set. For more information, see [Overview of the Removable Device Capability](./overview-of-the-removable-device-capability.md).
 
 - If the DEVPKEY_Device_SafeRemovalRequiredOverride device property is set to DEVPROP_TRUE and the device instance (or an ancestor) is not removable, PnP sets the DEVPKEY_Device_SafeRemovalRequired to DEVPROP_FALSE and does not use the heuristic.
 

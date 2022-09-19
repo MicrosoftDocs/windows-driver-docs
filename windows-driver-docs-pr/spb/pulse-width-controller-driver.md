@@ -1,7 +1,7 @@
 ---
 title: PWM driver for an on-SoC PWM module 
 description: PWM controller is part of the SoC and memory-mapped to the SoC address space. Write a kernel-mode driver that manipulates the PWM registers and provides access to applications. 
-ms.date: 04/12/2022
+ms.date: 09/19/2022
 ---
 
 # PWM driver for an on-SoC PWM module
@@ -9,7 +9,7 @@ ms.date: 04/12/2022
 To provide access to a Pulse width modulation (PWM) controller that is part of the SoC and memory-mapped to the SoC address space, you need to writer a kernel-mode driver. The driver must register the device class interface of the PWM controller so that UWP apps can access the system exposed PWM devices through the PWM WinRT APIs defined in Windows.Devices.Pwm namespace.
 
 > [!NOTE]
-> Information the user should notice even if skimmingIf you have an add-on PWM module over I<sup>2</sup>C, SPI, or a UART controller, you can access the module from a UWP app by using the APIs defined in the [**Windows.Devices.Pwm**](/uwp/api/windows.devices.pwm) and [**Windows.Devices.Pwm.Provider**](/uwp/api/windows.devices.pwm.provider) namespace.
+> If you have an add-on PWM module over I<sup>2</sup>C, SPI, or a UART controller, you can access the module from a UWP app by using the APIs defined in the [**Windows.Devices.Pwm**](/uwp/api/windows.devices.pwm) and [**Windows.Devices.Pwm.Provider**](/uwp/api/windows.devices.pwm.provider) namespace.
 
 A PWM device is abstracted into a single controller and one or more pins. Controlling either the controller or the pins is done through the PWM-defined IOCTLs. For example, an LCD display driver sends such requests to  the PWM driver to control the LCD backlight level.
 
