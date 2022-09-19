@@ -47,7 +47,7 @@ In the following section of the **!analyze -v** output, the reason why the rule 
 
 DV_VIOLATED_CONDITION:  Timeout on completing an NDIS OID request.
 
-DV_MSDN_LINK: https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndistimedoidcomplete
+DV_MSDN_LINK: https://learn.microsoft.com/windows-hardware/drivers/devtest/ndis-ndistimedoidcomplete
 
 DRIVER_OBJECT: 98a87980
 
@@ -108,7 +108,7 @@ RULE_DESCRIPTION:
 This rule verifies if an NDIS miniport driver completes an OID in time.
 The OID is tracked (a.k.a., TRACKED_OBJECT). Use !ndiskd.oid .
 
-MSDN_LINK: https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndistimedoidcomplete
+MSDN_LINK: https://learn.microsoft.com/windows-hardware/drivers/devtest/ndis-ndistimedoidcomplete
 
 CONTEXT: Miniport 0x86BD10E8
 

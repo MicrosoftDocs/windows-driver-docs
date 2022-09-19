@@ -91,7 +91,7 @@ Check RULE_STATE for Oid ( use !ndiskd.oid ), which can be one of the following:
 2) Pending OID, or
 3) Previous OID if no OID is pending.
 
-MSDN_LINK: https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-ndisoidcomplete
+MSDN_LINK: https://learn.microsoft.com/windows-hardware/drivers/devtest/ndis-ndisoidcomplete
 
 CONTEXT: Miniport 0xFFFFE0000283F1A0
 
@@ -103,8 +103,3 @@ RULE_STATE: 0xFFFFE000027B83F8
  
 
  
-
-
-
-
-

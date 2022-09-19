@@ -575,7 +575,7 @@ Follow these steps to validate that the security compile options are properly co
    BinSkim PE/MSIL Analysis Driver 1.6.0.0
 
    --sympath                      Symbols path value, e.g., SRV*http://msdl.microsoft.com/download/symbols or Cache*d:\symbols;Srv*http://symweb. See
-                                 https://docs.microsoft.com/windows-hardware/drivers/debugger/advanced-symsrv-use for syntax information. Note that BinSkim will clear the
+                                 https://learn.microsoft.com/windows-hardware/drivers/debugger/advanced-symsrv-use for syntax information. Note that BinSkim will clear the
                                  _NT_SYMBOL_PATH environment variable at runtime. Use this argument for symbol information instead.
 
    --local-symbol-directories     A set of semicolon-delimited local directory paths that will be examined when attempting to locate PDBs.
