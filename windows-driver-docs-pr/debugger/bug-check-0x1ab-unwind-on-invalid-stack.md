@@ -74,7 +74,7 @@ At the time the invalid access occurred, the exception record was not available.
 
 ## Cause
 
-An attempt to access an invalid stack occurred. As kernel stack is limited in size, the developer needs to be careful with tracking it limits, for example when using it to copy blocks of video memory.  For information about the Windows Kernel stack, see [Using the Kernel Stack](/windows-hardware/drivers/kernel/using-the-kernel-stack).
+An attempt to access an invalid stack occurred. As kernel stack is limited in size, the developer needs to be careful with tracking it limits, for example when using it to copy blocks of video memory.  For information about the Windows Kernel stack, see [Using the Kernel Stack](../kernel/using-the-kernel-stack.md).
 
 ## Resolution
 
