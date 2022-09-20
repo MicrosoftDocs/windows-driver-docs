@@ -10,7 +10,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 05/16/2022
+ms.date: 09/19/2022
 ms.topic: article
 ---
 
@@ -22,19 +22,11 @@ This property controls an in-stream correction that a driver can perform to enab
 
 Examples of setting KSPROPERTY controls can be found in the [AVStream Camera Sample Driver](https://github.com/Microsoft/Windows-driver-samples/tree/main/avstream/avscamera) on GitHub.
 
-##  Update to KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION control
+## Update to KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION control
 
 Starting in Windows 11, version 22H2, Shallow focus mode has been introduced to the existing background segmentation control as an optional capability.
 
  **KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_SHALLOWFOCUS** is a new flag added to the KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION control that is used to control the Bokeh (shallow focus mode) on the driver. This is a version of Background blur **KSPROPERTY_CAMERACONTROL_EXTENDED_BACKGROUNDSEGMENTATION**, where the emphasis is less on privacy and more on making the background of the user look like from a higher quality camera with depth of field effect. This visually will make the foreground subject stand out, similar to how portrait mode photography on many mobile phones has become popular.
-
-The following table shows example images of how this works:
-
-| Mode | Example image |
-|--|--|
-| **Blur Off** | ![background segmentation portrait blur off.](images/backgroundsegmentation-portrait-blur-off.png) |
-| **Shallow Focus On and Blur On** | ![background segmentation portrait on.](images/backgroundsegmentation-portrait-on.png) |
-| **Shallow Focus Off and Blur On** | ![background segmentation blur on.](images/backgroundsegmentation-blur-on.png) |
 
 ## Usage summary table
 

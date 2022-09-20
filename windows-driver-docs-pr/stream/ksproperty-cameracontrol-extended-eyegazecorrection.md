@@ -10,7 +10,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 05/16/2022
+ms.date: 09/19/2022
 ms.topic: article
 ---
 
@@ -31,14 +31,6 @@ Starting in Windows 11, version 22H2, Stare mode has been introduced to existing
 While the Eye Gaze Correction (also known as Eye Contact) solves for the geometrical problem of camera-display offset, many video scenarios require the user to be looking down at the screen for extended periods of time while also speaking – imagine reading a presentation/document in a call.
 
 Stare is a more aggressive form of Eye Contact that continually shifts the pixels of the eyes to make it look like you are speaking with your audience even though you might be reading off a script and moving the eyeball rapidly.
-
-The following table shows example images of how this works:
-
-| Mode | Example image |
-|--|--|
-| Eye gaze correction OFF  | ![eye gaze correction off.](images/eyegazecorrection_off.png) |
-| Eye gaze correction ON | ![eye gaze correction on.](images/eyegazecorrection_on.png) |
-| Stare ON | ![eye gaze correction stare on.](images/eyegazecorrection_stare_on.png) |
 
 ## Usage summary table
 
