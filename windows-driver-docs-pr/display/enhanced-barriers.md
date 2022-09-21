@@ -3,32 +3,84 @@ title: Direct3D enhanced barriers
 description: Learn about Direct3D enhanced barriers
 keywords:
 - Direct3D12 enhanced barriers
-- WDDM 3.1 , enhanced barriers
-ms.date: 05/24/2022
+- WDDM 3.0 , enhanced barriers
+ms.date: 09/22/2022
 ms.localizationpriority: medium
 ---
 
 # Direct3D enhanced barriers
 
-Enhanced barriers are a set of Direct3D APIs and DDIs that give developers independent control over GPU work synchronization, texture layout transitions, and cache flushing (resource memory access). Enhanced barriers replace legacy resource state barriers with more expressive barrier types. Enhanced barriers offer less latency, support for concurrent read and write (including same-resource copy), diverse aliasing topologies, and better concurrency.
+The Direct3D Enhanced Barriers feature, available starting in Windows 11 version 22H2 (WDDM 3.0), can be used to synchronize resource states. This features offers a set of Direct3D APIs and DDIs that give developers independent control over GPU work synchronization, texture layout transitions, and cache flushing (resource memory access).
 
-Although enhanced barriers are by no means simpler than [legacy resource barriers](/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_resourcebarrier_0022), they are far less ambiguous, and therefore actually easier for developers to use. The legacy resource barriers design was intended to abstract the nuance around cache flushing, hazard tracking, and texture layout using the concept of a “resource state”. However, this over-simplification caused as much harm as good in many ways; for example:
+Enhanced barriers replace [legacy resource barriers](/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_resourcebarrier_0022) with more expressive barrier types. Features include the following:
+
+* Less synchronization latency.
+* A reduction in excessive cache flushes.
+* No mysterious Promotion and Decay rules.
+* Fast, flexible resource aliasing (diverse aliasing topologies).
+* Discard during barrier transition.
+* Support for concurrent read/write, including same-resource copy (self-copy).
+* Support for Asynchronous Discard, Copy, Resolve, and Clear commands.
+
+Although enhanced barriers are not simpler than legacy resource barriers, they are far less ambiguous and are therefore easier for developers to use. The legacy resource barriers design was intended to abstract the nuance around cache flushing, hazard tracking, and texture layout using the concept of a “resource state”. However, this over-simplification caused as much harm as good in many ways; for example:
 
 * Developers were often forced to use expensive barriers when a less expensive (or even no) barrier should be allowed.
 * Legacy resource barriers were often incapable of fully expressing hardware-supported scenarios, such as concurrent read and write on a single resource or indicating resource state during aliasing transitions.
 * Developers still had to understand the inner complexities behind resource states, such as state promotion and decay rules and “simple” vs “advanced” aliasing models, in order to use barriers effectively.
 
+## Hardware requirements
+
+The enhanced barriers feature is not currently a hardware or driver requirement. A driver indicates support by setting the **EnhancedBarriersSupported** member of [**D3D12DDI_D3D12_OPTIONS_DATA_0089**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_d3d12_options_data_0089) to TRUE.
+
+## Design details
+
+Drivers typically handle legacy resource barriers using three separate operations:
+
+1. Synchronize GPU work.
+2. Perform any necessary cache flush operations.
+3. Perform any necessary layout changes.
+
+Enhanced barriers give developers the ability to control each of these operations separately.
+
+### Types of enhanced barriers
+
 There are three types of enhanced barriers:
 
-* Buffer barriers
 * Texture barriers
+
+  * Control cache flush, memory layout, and synchronization for texture subresources.
+  * Must only be used with texture resources.
+  * Allow selection of a single subresource, all subresources, or a coherent range of subresources (i.e. mip range and array range).
+  * Must provide a valid, non-NULL resource pointer.
+
+* Buffer barriers
+
+  * Control cache flush and synchronization for buffer resources.
+  * Must only be used with buffer resources.
+  * Unlike textures, buffers have only a single subresource and do not have a transitionable layout.
+  * Must provide a valid, non-NULL resource pointer.
+
+/////////////////////// DELETE THIS??
+  Buffer subregion barriers are supported in other low-level graphics APIs. However how these barriers work with various memory, caches or whether they guarantee multi-writer support is unclear. The D3D12_BUFFER_BARRIER structure does include UINT64 Offset and UINT64 Size members to facilitate future buffer subregion barriers. For now, Offset must be zero and Size must be either the buffer size in bytes or UINT64_MAX. Note that enhanced barriers already supports concurrent read and write on buffers without the need for intervening barriers (see Single-Queue Simultaneous Access).
+
+The current enhanced buffer barrier DDIs do not use *Offset* or *Size*, avoiding any need for drivers to handle this not-yet-required feature.
+DELETE THIS???////////////////////////////////
+
 * Global barriers
 
-All barriers control GPU work synchronization and read or write access types before and after the barrier.
+  * Control cache flush and synchronization for all indicated resource access types in a single command queue.
+  * Have no effect on texture layout.
+  * Are needed to provide functionality similar to legacy NULL UAV barriers and NULL/NULL aliasing barriers.
 
-Texture barriers additionally manage layout of texture subresources. Subresource selection can be expressed as a range of mip, array, and plane slices, in addition to the familiar one-or-all option used by legacy resource barriers.
+  Since global barriers do not transition texture layout, global barriers cannot be used in transitions that otherwise would require a layout change. For example, a global barrier cannot be used to transition a non-simultaneous-access texture from D3D12_BARRIER_ACCESS_RENDER_TARGET to D3D12_BARRIER_ACCESS_SHADER_RESOURCE, since that would also require a change from D3D12_BARRIER_LAYOUT_RENDER_TARGET to D3D12_BARRIER_LAYOUT_SHADER_RESOURCE.
 
-Buffer barriers and global barriers control only synchronization and resource access and have no impact on resource layout (buffers don’t have a layout). Global barriers affect all cached memory so they can be expensive and should only be used when a more scoped barrier is insufficient.
+In summary:
+
+* All barrier types control GPU work synchronization and read or write access types before and after the barrier.
+
+* Texture barriers additionally manage layout of texture subresources. Subresource selection can be expressed as a range of mip, array, and plane slices, in addition to the familiar one-or-all option used by legacy resource barriers.
+
+* Buffer barriers and global barriers control only synchronization and resource access and have no impact on resource layout (buffers don’t have a layout). Global barriers affect all cached memory so they can be expensive and should only be used when a more scoped barrier is insufficient.
 
 Enhanced buffers do not include implicit state transitions for resource state promotion and decay, which was a major source of developer confusion. Instead, all resources initially have *common* access at the start of any command list execution. This common access means that any resource can be accessed without a barrier as long as the access type is compatible with the current layout and create-time constraints (for example, D3D12DDI_RESOURCE_FLAG_ALLOW_RENDER_TARGET, etc). Since buffers have no layout, any buffer access type is allowed within the limits of create-time constraints. The only stateful attribute of a resource is texture layout. A texture subresource can only be in one layout at a time, and transitioning layout always requires a barrier.
 
