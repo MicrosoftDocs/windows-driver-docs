@@ -38,7 +38,7 @@ The following table contains the requirements for the [KSCAMERA_EXTENDEDPROP_HEA
 |--|--|
 | Version | This must be 1. |
 | PinId | KSCAMERA_EXTENDEDPROP_FILTERSCOPE (0xFFFFFFFF) |
-| Size | Must be sizeof([KSCAMERA_EXTENDEDPROP_HEADER](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header)) +  sizeof(**KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_CONFIGCAPHEADER**) + (sizeof(**KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_CONFIGCAPS**) * Count) |
+| Size | Must be sizeof([KSCAMERA_EXTENDEDPROP_HEADER](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header)) +  sizeof(**KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_CONFIGCAPSHEADER**) + (sizeof(**KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_CONFIGCAPS**) * Count) |
 | Result | Must contain 0.  This field is only used to return the result of the last asynchronous SET operation. |
 | Capability | Must be 0.  |
 | Flags | Must be 0.  |
