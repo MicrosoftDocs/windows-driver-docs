@@ -1,53 +1,57 @@
 ---
 title: C28616 warning
 description: Warning C28616 Multithreaded AV condition.
-ms.date: 04/20/2017
-f1_keywords: 
-  - "C28616"
+ms.date: 09/19/2022
+f1_keywords: ["C28616", "INTERLOCKEDDECREMENT_MISUSE1", "__WARNING_INTERLOCKEDDECREMENT_MISUSE1"]
 ---
+# Warning C28616
 
-# C28616
+> Multithreaded AV condition
 
+This warning indicates that a thread has potential to access deleted objects if preempted.
 
-warning C28616: Multithreaded AV condition
+## Remarks
 
-In a multithreaded environment, it is impossible to know when a thread is preempted, with the consequence that the apparent effect of reducing the reference count of an object is that it is deleted without further action on the part of the current thread. There should be no access to a reference-counted object after the reference count could potentially be at zero.
+There should be no access to a reference-counted object after the reference count is at zero.
 
-### <span id="examples"></span><span id="EXAMPLES"></span>Examples
+Code analysis name: INTERLOCKEDDECREMENT_MISUSE1
 
-The following is an example of threading time sequence that could expose this problem:
+## Example
 
-A thread T1 executes lines 1, 2, and 3, decrements **m\_cRef** to 1, and is preempted.
+The following code generates this warning. This is an example of threading time sequence that could expose this problem. In this example, `m_cRef` is a member of `this`:
 
-Another thread T2 executes lines 1, 2, and 3 decrements **m\_cRef** to 0. Then it executes lines 4 and 5, where **this** is deleted, and finally executes line 6.
+A thread T1 executes the `if` condition, decrements `m_cRef` to 1, and is then preempted.
 
-When T1 is rescheduled, it will reference **m\_cref** on line 9. Thus it will access a member variable after the related this pointer has been deleted—and when the heap for the object is in an unknown state.
+Another thread T2 executes the `if` condition, decrements `m_cRef` to 0, executes the `if` body (where `this` is deleted), and returns `NULL`.
 
-```
-  1 ULONG CObject::Release()
-  2 {
-  3     if ( 0 == InterlockedDecrement(&m_cRef) )
-  4     {
-  5         delete this;
-  6         return NULL;
-  7     }
-  8     /* this.m_cRef isn't thread safe */
-  9     return m_cRef;
- 10 }
-```
-
-The corrected example does not reference any heap memory after the object is deleted.
+When T1 is rescheduled, it will reference `m_cref` on line 9. Thus it will access a member variable after the related `this` pointer has been deleted—and when the heap for the object is in an unknown state.
 
 ```
 ULONG CObject::Release()
 {
- ASSERT( 0 != m_cRef );
- ULONG cRef = InterlockedDecrement(&m_cRef);
- if ( 0 == cRef )
- {
- delete this;
- }
- return cRef;
+    if (0 == InterlockedDecrement(&m_cRef))
+    {
+        delete this;
+        return NULL;
+    }
+    /* this.m_cRef isn't thread safe */
+    return m_cRef;
+}
+```
+
+The following code does not reference any heap memory after the object is deleted.
+
+```
+ULONG CObject::Release()
+{
+    ASSERT(0 != m_cRef);
+    ULONG cRef = InterlockedDecrement(&m_cRef);
+    if (0 == cRef)
+    {
+        delete this;
+        return NULL;
+    }
+    return cRef;
 }
 ```
 
