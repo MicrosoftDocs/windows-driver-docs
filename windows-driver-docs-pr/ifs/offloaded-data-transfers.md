@@ -1,7 +1,7 @@
 ---
 title: Windows Offloaded Data Transfers
 description: Transferring data between computers or within the same computer is a frequent file system activity.
-ms.date: 09/22/2022
+ms.date: 02/25/2022
 keywords:
 - offloaded data transfers
 - Windows offloaded data transfers
@@ -13,11 +13,11 @@ ms.custom: contperf-fy22q1
 
 # Windows Offloaded Data Transfers
 
-Offloaded Data Transfer (ODX) is a feature that speeds up server copy and move operations. This feature is available starting in Windows Server 2012 and is supported on NTFS volumes. This page describes ODX from a file system and minifilter perspective. For information related to storage devices, see [Windows Storage Offloaded Data Transfers](../storage/offloaded-data-transfer.md).
+This page describes Windows Offloaded Data Transfer (ODX) from a file system and minifilter perspective. For information related to storage, see [Windows Storage Offloaded Data Transfers](../storage/offloaded-data-transfer.md).
 
 Transferring data between computers or within the same computer is a frequent file system activity. Using the standard **ReadFile** and **WriteFile** functions work well from a functional point of view, but it involves heavy data movement through all levels of the system and potentially across a network. This can affect the availability of the systems involved in the transfer and the network connecting the systems. The advanced capabilities available with many storage subsystems provide a more efficient means of performing the ‘heavy lifting’ task of data movement.
 
-Applications can take advantage of these capabilities to help offload the process of data movement to the storage subsystem. File system filters can typically monitor these actions by intercepting read and write requests to a volume. Additional actions are required for filters to be aware of offloaded data transfers.
+Starting with Windows 8, applications can take advantage of these capabilities to help offload the process of data movement to the storage subsystem. File system filters can typically monitor these actions by intercepting read and write requests to a volume. Additional actions are required for filters to be aware of offloaded data transfers.
 
 ## Typical Data Transfers
 
@@ -146,7 +146,7 @@ There are two scenarios in which NTFS truncates the range to be offload read or 
 ## Limitations
 
 * Offload operations are supported only on NTFS volumes.
-* Offload operations are supported through remote file servers if the remote share is a NTFS volume and if the server is running Windows Server 2012 or later versions (assuming the remote stack also supports offload operations).
+* Offload operations are supported through remote file servers if the remote share is a NTFS volume and if the server is running Windows Server 2012 (assuming the remote stack also supports offload operations).
 * NTFS does not support offload FSCTLs performed on files encrypted with Bitlocker or NTFS encryption (EFS), de-duplicated files, compressed files, resident files, sparse files, or files participating in TxF transactions.
 * NTFS does not support offload FSCTLs performed on files within a volsnap snapshot.
 * NTFS will fail the offload FSCTL if the desired file range is unaligned to the logical sector size on the source device or if the desired file range is unaligned to the logical sector size on the destination device. This follows the same semantics as non-cached IO.
