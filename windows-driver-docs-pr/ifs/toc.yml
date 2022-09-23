@@ -994,7 +994,3 @@
     href: security-descriptor-control.md
   - name: "SECURITY_INFORMATION"
     href: security-information.md
-  - name: "RxAssert"
-    href: rxassert.md
-  - name: "RxDbgBreakPoint"
-    href: rxdbgbreakpoint.md
