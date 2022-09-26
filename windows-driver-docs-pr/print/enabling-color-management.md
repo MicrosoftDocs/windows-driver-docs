@@ -3,14 +3,14 @@ title: Enable color management
 description: Provides information about how to enable color management.
 keywords:
 - color management WDK print, enabling
-ms.date: 09/12/2022
+ms.date: 09/26/2022
 ---
 
 # Enable color management
 
 Color management can be enabled by either an application or a printer driver. Applications can enable color management by either of the following two methods:
 
-- Calling [**SetICMMode**](/win32/api/wingdi/nf-wingdi-seticmmode), specifying ICM_ON.
+- Calling [**SetICMMode**](/windows/win32/api/wingdi/nf-wingdi-seticmmode), specifying ICM_ON.
 
     This method enables system-controlled color management.
 

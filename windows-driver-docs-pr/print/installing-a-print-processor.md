@@ -8,12 +8,12 @@ keywords:
 - associating print processor with print queue WDK
 - print processors WDK, associating with print queue
 - print queues WDK
-ms.date: 09/14/2022
+ms.date: 09/26/2022
 ---
 
 # Install a print processor
 
-To install a print processor, an installation application must call the spooler's [**AddPrintProcessor**](/win32/printdocs/addprintprocessor) function. To associate a print processor with a print queue, list its file name in an INF file in a PrintProcessor entry. This entry must be included for every print queue to which the print processor is to be associated. For more information, see [Printer INF files](printer-inf-files.md).
+To install a print processor, an installation application must call the spooler's [**AddPrintProcessor**](/windows/win32/printdocs/addprintprocessor) function. To associate a print processor with a print queue, list its file name in an INF file in a PrintProcessor entry. This entry must be included for every print queue to which the print processor is to be associated. For more information, see [Printer INF files](printer-inf-files.md).
 
 When an installation application calls the spooler's [**AddPrinter**](/windows/win32/printdocs/addprinter) function, using a {**PRINTER_INFO_2**](/windows/win32/printdocs/printer-info-2) structure as an input argument, it specifies the print processor name (obtained from the INF file) as a structure member.
 
