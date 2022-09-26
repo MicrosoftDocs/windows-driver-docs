@@ -79,11 +79,10 @@ To create a sharable link, replace **SellerID**, **PrivateProductID**, and **Sub
 > [Update a hardware submission](hardware-submission-update.md)
 
 > [!div class="nextstepaction"]
-
 > [Validate a hardware submission signature](code-signing-validate.md)
 
 > [!div class="nextstepaction"]
-> [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started.md)
+> [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started)
 
 
 > [!div class="nextstepaction"]

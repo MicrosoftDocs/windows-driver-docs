@@ -131,7 +131,7 @@ If you don't see your issue addressed here, go to [Get support for Partner Cente
 > [Validate a hardware submission signature](code-signing-validate.md)
 
 > [!div class="nextstepaction"]
-> [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started.md)
+> [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started)
 
 > [!div class="nextstepaction"]
 > [Distribute your driver with Driver flighting](driver-flighting.md)
