@@ -11,7 +11,7 @@ api_type:
 - NA
 ---
 
-# Bug Check 0x133 DPC\_WATCHDOG\_VIOLATION
+# Bug Check 0x133: DPC\_WATCHDOG\_VIOLATION
 
 The DPC\_WATCHDOG\_VIOLATION bug check has a value of 0x00000133. This bug check indicates that the DPC watchdog executed, either because it detected a single long-running deferred procedure call (DPC), or because the system spent a prolonged time at an interrupt request level (IRQL) of DISPATCH\_LEVEL or above. 
 
