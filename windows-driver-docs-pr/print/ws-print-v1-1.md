@@ -1,10 +1,10 @@
 ---
-title: Web Services on Devices for Printing (WS-Print)
+title: Web Services on devices for printing (WS-Print)
 description: Web services on devices for printing (WS-Print) was introduced in Windows Vista, to provide a connection protocol for printing and scanning peripherals.
-ms.date: 04/20/2017
+ms.date: 09/09/2022
 ---
 
-# Web Services on Devices for Printing (WS-Print)
+# Web Services on devices for printing (WS-Print)
 
 Web services on devices for printing (WS-Print) was introduced in Windows Vista, to provide a connection protocol for printing and scanning peripherals.
 
@@ -299,4 +299,4 @@ For more detailed information about the SetPrinterElements operation, see the su
 
 ## Related topics
 
-[V4 Printer Driver Connectivity](v4-printer-driver-connectivity.md)
+[V4 printer driver connectivity](v4-printer-driver-connectivity.md)

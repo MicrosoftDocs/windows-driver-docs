@@ -40,7 +40,7 @@ The **OnImpersonate** callback function must perform only the operations that re
 
 UMDF does not allow a driver's **OnImpersonate** callback function to call any of the framework's object methods. This ensures that the driver does not expose the impersonation level to other driver callback functions or other drivers.
 
-**Note**   In versions 1.0 through 1.7 of UMDF, [**IWDFIoRequest::Impersonate**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-impersonate) grants the highest impersonation level that the client application and INF file allow, even if the impersonation level that the driver requests is lower. In UMFD versions 1.9 and later, the **Impersonate** method grants only the impersonation level that the driver requests.
+**Note**   In versions 1.0 through 1.7 of UMDF, [**IWDFIoRequest::Impersonate**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-impersonate) grants the highest impersonation level that the client application and INF file allow, even if the impersonation level that the driver requests is lower. In UMDF versions 1.9 and later, the **Impersonate** method grants only the impersonation level that the driver requests.
 
  
 

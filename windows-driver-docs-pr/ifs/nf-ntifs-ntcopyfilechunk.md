@@ -2,7 +2,7 @@
 UID: NF:ntifs.NtCopyFileChunk
 tech.root: kernel
 title: NtCopyFileChunk function (ntifs.h)
-ms.date: 05/24/2022
+ms.date: 08/02/2022
 targetos: Windows
 description: Learn more about the NtCopyFileChunk function.
 prerelease: false
@@ -43,49 +43,47 @@ api_name:
 
 # NtCopyFileChunk function
 
-## -description
+The **NtCopyFileChunk** routine copies data from the source file into the destination file. Available starting with Windows 11, version 22H2.
 
-The **NtCopyFileChunk** routine copies data from the source file into the destination file.
+## Parameters
 
-## -parameters
-
-### -param SourceHandle [in]
+### SourceHandle [in]
 
 The HANDLE of the source file to be read.
 
-### -param DestHandle [in]
+### DestHandle [in]
 
 The HANDLE of the destination file. The data from **SourceHandle**'s file is copied into **DestHandle**'s file. Completion ports can be used on this handle.
 
-### -param Event [in, optional]
+### Event [in, optional]
 
 An optional event to be signaled when the copy operation is complete.
 
-### -param IoStatusBlock [out]
+### IoStatusBlock [out]
 
 A pointer to an [**IO_STATUS_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and other information about the copy operation.
 
-### -param Length [in]
+### Length [in]
 
 The length of the data to copy, in bytes.
 
-### -param SourceOffset [in]
+### SourceOffset [in]
 
 The starting byte offset within the source file to begin the read operation.
 
-### -param DestOffset [in]
+### DestOffset [in]
 
 The starting byte offset within the destination file to begin the write operation.
 
-### -param SourceKey [in, optional]
+### SourceKey [in, optional]
 
 An optional key to be used if there are oplocks associated with the source file.
 
-### -param DestKey [in, optional]
+### DestKey [in, optional]
 
 An optional key to be used if there are oplocks associated with the destination file.
 
-### -param Flags [in]
+### Flags [in]
 
 Optional flags. Currently there are no valid flag values.
 
@@ -102,7 +100,7 @@ Once the write completes the status of the operation can be determined by examin
 
 See **Remarks** for details regarding the handling of synchronous/asynchronous I/O.
 
-## -remarks
+## Remarks
 
 **NtCopyFileChunk** copies data from a source file into a destination file using the provided file offsets for the requested length. If the length surpasses the end of file (EOF) on the source file, then **NtCopyFileChunk** will only read and copy the data to the destination up to the source’s EOF. Callers can get the actual number of bytes written from the **IoStatusBlock**.
 
@@ -126,7 +124,7 @@ All read and write operations from **NtCopyFileChunk** will have:
 * The IRP's requestor mode set to **KernelMode**
 * An IRP extension of type **IopCopyInformationType**.
 
-Filters do not have access to the IRP extensions directly but can check the presence of this extension and get copy information from the callback data by calling [**FltGetCopyInformationFromCallbackData**](nf-fltkernel-fltgetcopyinformationfromcallbackdata.md).
+Filters do not have access to the IRP extensions directly but can check the presence of this extension and get copy information from the callback data by calling [**FltGetCopyInformationFromCallbackData**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetcopyinformationfromcallbackdata).
 
 Fast IO is not available in this copy because the copy information is present in the IRP extension (and Fast IO doesn't create IRPs).
 
@@ -174,11 +172,11 @@ if (status == STATUS_PENDING) {
 
 ```
 
-See [Copying files in kernel mode](km-file-copy.md) for more information.
+See [Kernel-mode file copy and detecting copy file scenarios](km-file-copy.md) for more information.
 
-## -see-also
+## See Also
 
-[**FltGetCopyInformationFromCallbackData**](nf-fltkernel-fltgetcopyinformationfromcallbackdata.md)
+[**FltGetCopyInformationFromCallbackData**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetcopyinformationfromcallbackdata)
 
 [**IO_STATUS_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
 

@@ -19,7 +19,7 @@ To guarantee the quality and integrity of the driver, all drivers must be digita
 For more information, see the following topics:
 
 -   [Driver Signing](../install/driver-signing.md)
--   [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613)
+-   [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/)
 
  
 

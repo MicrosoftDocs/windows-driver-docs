@@ -26,7 +26,7 @@ You can provide a *DDInstall*.**Filters** section with at least one [AddFilter d
 
 **AddFilter**=*FilterName,[flags],filter-install-section*
 
-The specified *FilterName* must be the name of a driver service. This service will be added to the device stack using the [declarative filter model](/windows-hardware/drivers/develop/device-filter-driver-ordering), which does not rely on the UpperFilters or LowerFilters registry values.
+The specified *FilterName* must be the name of a driver service. This service will be added to the device stack using the [declarative filter model](../develop/device-filter-driver-ordering.md), which does not rely on the UpperFilters or LowerFilters registry values.
 
 This directive references an INF-writer-defined *filter-install-section* elsewhere in the device driver INF file.  For more information, see [**INF AddFilter directive**](inf-addfilter-directive.md).
 
@@ -56,4 +56,4 @@ AddService = MyUpperFilter,, MyUpperFilter_Inst
 
 ## See also
 
-[Device filter driver ordering](/windows-hardware/drivers/develop/device-filter-driver-ordering)
+[Device filter driver ordering](../develop/device-filter-driver-ordering.md)

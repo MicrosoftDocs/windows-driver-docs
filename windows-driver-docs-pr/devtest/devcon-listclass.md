@@ -41,9 +41,9 @@ devcon listclass SmartCardReader
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 6: List the devices in a device setup class](devcon-examples.md#ddk_example_6_list_the_devices_in_a_device_setup_class_tools)
+[Example 6: List the devices in a device setup class](devcon-examples.md#example-6-list-the-devices-in-a-device-setup-class)
 
-[Example 7: List the devices in multiple classes](devcon-examples.md#ddk_example_7_list_the_devices_in_multiple_classes_on_a_remote_compute)
+[Example 7: List the devices in multiple classes](devcon-examples.md#example-7-list-the-devices-in-multiple-classes)
 
 
 

@@ -13,7 +13,7 @@ This topic outlines the design of a device-wide extension running in user mode t
 ## Terminology
 
 | Term | Description |
-|--|--|
+|------|-------------|
 | KS | Kernel Streaming driver |
 | AvStream | Audio Video Streaming driver model |
 | Filter | Object that represents a device instance |
@@ -145,7 +145,7 @@ Since this is an *m x n* MFT, there can be repercussions on input streaming pin'
 
 DTM handles [METransformInputStreamStateChanged](./metransforminputstreamstatechanged.md) notifications from Device MFT to change the mediatype and state on Device MFT input and Devproxy output under these conditions.
 
-### Preferred Output Mediatypes of Device MFT 
+### Preferred Output Mediatypes of Device MFT
 
 It is highly recommended that the Device MFT produce using NV12 format. YUY2 is the next best alternative. MJPEG and RGB media types are not recommended.
 
@@ -237,11 +237,13 @@ Device MFTs must support the following interfaces:
 
     - If Device MFT handles non-KSEVENT_TYPE_ONESHOT events, then it should duplicate the handle when it receives **KSEVENT_TYPE_ENABLE** and should call **CloseHandle** on the duplicated handles when the ks events are disabled by calling KsEvent function with all parameters set to zero.
 
-- [IMFRealtimeClientEx](/windows/win32/api/mfidl/nn-mfidl-imfrealtimeclientex)
+- [IMFRealTimeClientEx](/windows/win32/api/mfidl/nn-mfidl-imfrealtimeclientex)
 
 - [IMFMediaEventGenerator](/windows/win32/api/mfobjects/nn-mfobjects-imfmediaeventgenerator)
 
 - [IMFShutdown](/windows/win32/api/mfidl/nn-mfidl-imfshutdown)
+
+- [IMFSampleAllocatorControl](/windows/win32/api/mfidl/nn-mfidl-imfsampleallocatorcontrol)
 
 ### Notification Requirements
 
@@ -255,7 +257,7 @@ Device MFTs must use the following messages to inform DTM about the availability
 
 ### Thread Requirements
 
-Device MFT must not create its own threads. Instead it must use MF Work Queues, whose ID is passed through the [IMFRealtimeClientEx](/windows/win32/api/mfidl/nn-mfidl-imfrealtimeclientex) interface. This is to make sure that all the threads running in the Device MFT gets the correct priority at which the capture pipeline is running. Otherwise it may cause thread priority inversions.
+Device MFT must not create its own threads. Instead, it must use [Media Foundation Work Queues](/windows/win32/medfound/work-queues), which are allocated based on the ID passed to the DMFT through the [IMFRealTimeClientEx](/windows/win32/api/mfidl/nn-mfidl-imfrealtimeclientex) interface. This is to make sure that all the threads running in the Device MFT gets the correct priority at which the capture pipeline is running and avoid thread priority inversions.
 
 ### InputStream Requirements
 

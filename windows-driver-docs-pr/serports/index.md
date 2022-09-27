@@ -9,7 +9,12 @@ ms.custom: contperf-fy22q4
 
 # Serial Controller Driver Design Guide
 
-You can design a driver or application that uses the [serial I/O request interface](serial-i-o-request-interface.md) to communicate with a peripheral device connected to a serial port. A serial port is a hardware communication interface on a serial controller, which is a 16550 UART or compatible device. To control a serial port to which a peripheral device is permanently connected, you can design a custom serial controller driver that works with version 2 of the serial framework extension (SerCx2), which replaces version 1 (SerCx). In older versions of Windows, a named serial COM port located on the case of a PC, the inbox Serial.sys and Serenum.sys drivers were used.
+You can design a driver or application that uses the [serial I/O request interface](serial-i-o-request-interface.md) to communicate with a peripheral device connected to a serial port. A serial port is a hardware communication interface on a serial controller, which is a 16550 UART or compatible device. To control a serial port to which a peripheral device is permanently connected, you can design a custom serial controller driver that works with version 2 of the serial framework extension (SerCx2), which replaces version 1 (SerCx). 
+
+In older versions of Windows, a named serial COM port located on the case of a PC, the inbox Serial.sys and Serenum.sys drivers were used.
+
+> [!NOTE]
+> This topic describes programming traditional COM ports. For information on USB attached serial ports, see [USB serial driver (Usbser.sys)](../usbcon/usb-driver-installation-based-on-compatible-ids.md).
 
 ## SerCx2
 

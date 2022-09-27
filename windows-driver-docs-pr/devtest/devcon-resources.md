@@ -78,6 +78,6 @@ devcon resources =class @port*(by class and device instance ID)
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 12: List resources of a class of devices](devcon-examples.md#ddk_example_12_list_resources_of_a_class_of_devices_tools)
+[Example 12: List resources of a class of devices](devcon-examples.md#example-12-list-resources-of-a-class-of-devices)
 
-[Example 13: List resources of device by ID](devcon-examples.md#ddk_example_13_list_resources_of_device_on_a_remote_computer_by_id_too)
+[Example 13: List resources of device by ID](devcon-examples.md#example-13-list-resources-of-device-by-id)

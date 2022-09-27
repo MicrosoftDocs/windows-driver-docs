@@ -1,6 +1,6 @@
 ---
 title: DEVPKEY_DeviceInterfaceClass_DefaultInterface
-description: DEVPKEY_DeviceInterfaceClass_DefaultInterface
+description: The DEVPKEY_DeviceInterfaceClass_DefaultInterface property represents the symbolic link name of the default device interface for a device interface class.
 keywords: ["DEVPKEY_DeviceInterfaceClass_DefaultInterface Device and Driver Installation"]
 topic_type:
 - apiref
@@ -10,71 +10,41 @@ api_location:
 - Devpkey.h
 api_type:
 - HeaderDef
-ms.date: 10/17/2018
+ms.date: 09/16/2022
 ---
 
 # DEVPKEY_DeviceInterfaceClass_DefaultInterface
 
+The DEVPKEY_DeviceInterfaceClass_DefaultInterface property represents the symbolic link name of the default device interface for a device interface class.
 
-The DEVPKEY_DeviceInterfaceClass_DefaultInterface device property represents the symbolic link name of the default device interface for a device interface class.
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr>
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Property key</strong></p></td>
-<td align="left"><p>DEVPKEY_DeviceInterfaceClass_DefaultInterface</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p><a href="devprop-type-string.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_STRING&lt;/strong&gt;](devprop-type-string.md)"><strong>DEVPROP_TYPE_STRING</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Property access</strong></p></td>
-<td align="left"><p>Read and write access by installation applications and installers</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Localized?</strong></p></td>
-<td align="left"><p>No</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Attribute | Value |
+|--|--|
+| **Property key** | DEVPKEY_DeviceInterfaceClass_DefaultInterface |
+| **Property-data-type identifier** | [**DEVPROP_TYPE_STRING**](devprop-type-string.md) |
+| **Property access** | Read and write access by installation applications and installers |
+| **Localized?** | No |
 
 ## Remarks
 
-For information about how to install and using device interfaces, see [Device Interface Classes](./overview-of-device-interface-classes.md) and the [**INF AddInterface Directive**](./inf-addinterface-directive.md).
+For information about how to install and use device interface classes, see [Device interface classes](./overview-of-device-interface-classes.md).
 
-You can retrieve the value of DEVPKEY_DeviceInterfaceClass_DefaultInterface by calling [**CM_Get_Device_Interface_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_interface_propertyw) or [**SetupDiGetDeviceInterfaceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw). You can set DEVPKEY_DeviceInterfaceClass_DefaultInterface by calling [**CM_Set_Device_Interface_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_set_device_interface_propertyw) or [**SetupDiSetDeviceInterfaceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceinterfacepropertyw).
+You can retrieve the value of DEVPKEY_DeviceInterfaceClass_DefaultInterface by calling [**CM_Get_Class_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_class_propertyw) with a *ulFlags* of CM_CLASS_PROPERTY_INTERFACE or [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) with a *Flags* of DICLASSPROP_INTERFACE. You can set DEVPKEY_DeviceInterfaceClass_DefaultInterface by calling [**CM_Set_Class_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_set_class_propertyw) with a *ulFlags* of CM_CLASS_PROPERTY_INTERFACE or [**SetupDiSetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclasspropertyw) with a *Flags* of DICLASSPROP_INTERFACEDICLASSPROP_INTERFACE.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceInterfaceClass_DefaultInterface property key. For information about how to access the default interface of a device interface class on these earlier versions of Windows, see [Accessing Device Interface Class Properties](./accessing-device-interface-class-properties.md).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceInterfaceClass_DefaultInterface property key. For information about how to access the default interface of a device interface class on these earlier versions of Windows, see [Accessing device interface class properties](./accessing-device-interface-class-properties.md).
 
 ## Requirements
 
-**Version**: Windows Vista and later versions of Windows
+**Version**: Windows Vista and later versions of Windows  
 **Header**: Devpkey.h (include Devpkey.h)
-
 
 ## See also
 
+[**CM_Get_Class_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_class_propertyw)
 
-[**INF AddInterface Directive**](./inf-addinterface-directive.md)
+[**CM_Set_Class_Property**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_set_class_propertyw)
 
-[**SetupDiGetClassDevs**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw)
+[**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetDeviceInterfaceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw)
+[**SetupDiSetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclasspropertyw)
 
-[**SetupDiSetDeviceInterfaceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceinterfacepropertyw)
-
- 
-
+[**SetupDiSetDeviceInterfaceDefault**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceinterfacedefault)

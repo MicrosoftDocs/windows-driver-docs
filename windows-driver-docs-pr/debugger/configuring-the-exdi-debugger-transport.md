@@ -123,7 +123,7 @@ set EXDI_GDBSRV_XML_CONFIG_FILE="C:\Program Files (x86)\Windows Kits\10\Debugger
 set EXDI_SYSTEM_REGISTERS_MAP_XML_FILE="C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\systemregisters.xml"
 ```
 
-Type `SET` to confirm that the the path specified is available from the location of the ExdiGdbSrvSample.dll
+Type `SET` to confirm that the path specified is available from the location of the ExdiGdbSrvSample.dll
 
 #### Powershell
 
@@ -135,7 +135,7 @@ $env:EXDI_GDBSRV_XML_CONFIG_FILE = 'C:\Program Files (x86)\Windows Kits\10\Debug
 $env:EXDI_SYSTEM_REGISTERS_MAP_XML_FILE = 'C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\systemregisters.xml'
 ```
 
-Type `dir env:` to confirm that the the path specified is available from the location of the ExdiGdbSrvSample.dll
+Type `dir env:` to confirm that the path specified is available from the location of the ExdiGdbSrvSample.dll
 
 ## Launch WinDbg and connect to the EXDI server
 

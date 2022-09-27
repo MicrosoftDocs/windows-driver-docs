@@ -6,15 +6,18 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 06/02/2022
+ms.date: 08/22/2022
 ---
 
 # Download the Windows Driver Kit (WDK)
 
 > [!NOTE]
-> Due to a regression, it's not possible to debug drivers within the Visual Studio interface when using Visual Studio 2022 version 17.2.0 and the Windows 11, version 22H2 WDK. To work around the problem, debug with WinDbg or use a version of Visual Studio earlier than 17.2.0.
-> The following error messages are related to the regression:
+> If you installed the original Windows 11, version 22H2 WDK between May and August 2022 (version 10.0.22621.1), you may see the following error message when you start Visual Studio with the WDK.
 > * The service ‘Microsoft.VisualStudio.Shell.Interop.SVsUIShell’ must be installed for this feature to work. Ensure that this service is available.
+>
+> You can either safely dismiss this message, or you can uninstall the WDK and then reinstall the WDK (updated August 19, 2022 to version 10.0.22621.382) using the WDK download link below.
+>
+> It is still not possible to debug drivers within the Visual Studio interface when using Visual Studio 2022 version 17.2.0 and the Windows 11, version 22H2 WDK (version 10.0.22621.382). To work around the problem, debug with WinDbg or use a version of Visual Studio earlier than 17.2.0. The following error message is related to this issue:
 > * The 'Microsoft.Windows.Tools.WinIDE.Debugger.DebuggerPackage, DebuggerPackage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null' package did not load correctly.
 
 The WDK is used to develop, test, and deploy drivers for Windows.
@@ -40,7 +43,7 @@ Certain device-specific stacks (for example graphics) continue to have x86/ARM32
 Starting with this release, WDF redistributable co-installers are no longer supported.
 
 > [!NOTE]
-> On a computer that has both the Windows 11, version 22H2 WDK and an older WDK, when building a WDF 1.11 driver, msbuild fails because it cannot find the WDF coinstaller. To fix this problem, before installing Windows 11, version 22H2 WDK, back up the folder `\Program files (x86)\windows kit\10\redist\wdf` and restore it afterwards. Alternatively, if you have already installed the Windows 11, version 22H2 WDK, install the MSI file at [WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) on a separate computer and copy the `redist` folder to the above folder. For more information, see [Redistributable Framework Components](/windows-hardware/drivers/wdf/installation-components-for-kmdf-drivers).
+> On a computer that has both the Windows 11, version 22H2 WDK and an older WDK, when building a WDF 1.11 driver, msbuild fails because it cannot find the WDF coinstaller. To fix this problem, before installing Windows 11, version 22H2 WDK, back up the folder `\Program files (x86)\windows kit\10\redist\wdf` and restore it afterwards. Alternatively, if you have already installed the Windows 11, version 22H2 WDK, install the MSI file at [WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) on a separate computer and copy the `redist` folder to the above folder. For more information, see [Redistributable Framework Components](./wdf/installation-components-for-kmdf-drivers.md).
 
 ## Download and install the Windows 11, version 22H2 WDK
 
@@ -88,7 +91,7 @@ This SDK must be installed separately until available through Visual Studio
 The WDK Visual Studio extension is included in the default WDK installation.
 
 > [!TIP]
-> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2022\10.0.22621.0\WDK.vsix.
+> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2022\10.0.22621.382\WDK.vsix.
 
 ## Enterprise WDK (EWDK)
 
@@ -106,7 +109,7 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 >2.    Run `LaunchBuildEnv.cmd`.
 >3.    In the environment created in step 2, type **SetupVSEnv**, and then press **Enter**.
 >4.    Launch devenv.exe from the same environment, using the full file path. 
->Example: `"C:\Program Files (x86)\Microsoft Visual Studio\2022\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`
+>Example: `"C:\Program Files\Microsoft Visual Studio\2022\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`
 >
 >Note that the Visual Studio major version should match with the version in the EWDK. For example, Visual Studio 2022 works with the EWDK that contain VS17.X build tools. For a list of Visual Studio 2022 version numbers, see [Visual Studio 2022 Releases](/visualstudio/releases/2022/release-history).
 

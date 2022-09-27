@@ -1,12 +1,12 @@
 ---
-title: Background segmentation portrait mode and eye gaze stare mode driver sample
-description: Provides an example implementation of background segmentation portrait mode and eye gaze stare mode controls in a camera driver.
+title: Background segmentation shallow focus mode and eye gaze stare mode driver sample
+description: Provides an example implementation of background segmentation shallow focus mode and eye gaze stare mode controls in a camera driver.
 ms.date: 05/16/2022
 ---
 
-# Background segmentation portrait mode and eye gaze stare mode driver sample
+# Background segmentation shallow focus mode and eye gaze stare mode driver sample
 
-This is an example implementation of background segmentation portrait mode and eye gaze stare mode, two new bit fields being introduced in Windows 11, version 22H2.
+This is an example implementation of background segmentation shallow focus mode and eye gaze stare mode, two new bit fields being introduced in Windows 11, version 22H2.
 
 These controls are typically implemented in C++, as part of the user mode extension of an Avstream camera driver in Device MFT.
 
@@ -16,28 +16,35 @@ These controls are typically implemented in C++, as part of the user mode extens
 ## SampleMFT.h
 
 ```cpp
-Class CSampleMFT //Snipped from SampleDeviceMFT Implementation 
-{ 
-... 
-Private: 
-... 
-    VOID SetBackgroundSegmentationPortraitMode(BOOLEAN enabled) 
-    { 
-        m_backgroundSegmentationPortraitModeEnabled = enabled; 
-    } 
-    BOOLEAN GetBackgroundSegmentationPortraitMode() 
-    { 
-        return m_backgroundSegmentationPortraitModeEnabled; 
-    } 
-    VOID SetEyeGazeCorrectionMode(DWORD flags) 
-    { 
-        m_eyeGazeCorrectionMode = flags; 
-    } 
-    DWORD GetEyeGazeCorrectionMode() 
-    { 
-        return m_eyeGazeCorrectionMode; 
-    } 
-    BOOLEAN m_backgroundSegmentationPortraitModeEnabled; 
+Class CSampleMFT //Snipped from SampleDeviceMFT Implementation
+{
+...
+Private:
+...
+    VOID SetBackgroundSegmentationShallowFocus(BOOLEAN enabled)
+    {
+        m_backgroundSegmentationShallowFocusEnabled = enabled;
+    }
+    BOOLEAN GetBackgroundSegmentationShallowFocus()
+    {
+        return m_backgroundSegmentationShallowFocusEnabled;
+    }
+    constexpr ULONGLONG SupportedBackgroundSegmentation()
+    {
+        return  KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_BLUR |
+                KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_MASK |
+                KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_SHALLOWFOCUS;
+    }
+
+    VOID SetEyeGazeCorrectionMode(DWORD flags)
+    {
+        m_eyeGazeCorrectionMode = flags;
+    }
+    DWORD GetEyeGazeCorrectionMode()
+    {
+        return m_eyeGazeCorrectionMode;
+    }
+    BOOLEAN m_backgroundSegmentationShallowFocusEnabled;
     DWORD m_eyeGazeCorrectionMode;
 };
 ```
@@ -45,95 +52,102 @@ Private:
 ## SampleMFT.cpp
 
 ```cpp
-// KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_PORTRAITMODE
+// KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_SHALLOWFOCUS
 HRESULT CSampleMft::BackgroundSegmentationHandler(
-    _In_       PKSPROPERTY property,
-    _In_       LPVOID      data,
-    _In_       ULONG       outputBufferLength,
-    _Inout_    PULONG      bytesReturned)
+    _In_ PKSPROPERTY property,
+    _In_ LPVOID data,
+    _In_ ULONG outputBufferLength,
+    _Inout_ PULONG bytesReturned)
 {
     *bytesReturned = 0;
     if (property->Flags & KSPROPERTY_TYPE_SET)
     {
         if (outputBufferLength == 0)
-        {  
-            *bytesReturned = sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(KSCAMERA_EXTENDEDPROP_VALUE);  
-            RETURN_IF_FAILED(HRESULT_FROM_WIN32(ERROR_MORE_DATA));  
-        }  
-        else if (outputBufferLength < sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(KSCAMERA_EXTENDEDPROP_VALUE))  
         {
-            RETURN_IF_FAILED(HRESULT_FROM_WIN32(ERROR_MORE_DATA));  
+            *bytesReturned = sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(KSCAMERA_EXTENDEDPROP_VALUE);
+            RETURN_IF_FAILED(HRESULT_FROM_WIN32(ERROR_MORE_DATA));
+        }
+        else if (outputBufferLength < sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(KSCAMERA_EXTENDEDPROP_VALUE))
+        {
+            RETURN_IF_FAILED(HRESULT_FROM_WIN32(ERROR_MORE_DATA));
         }
         else if (data && outputBufferLength >= sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(KSCAMERA_EXTENDEDPROP_VALUE))
-        {  
-            PBYTE payload = (PBYTE)data;  
-            PKSCAMERA_EXTENDEDPROP_HEADER extendedHeader = (PKSCAMERA_EXTENDEDPROP_HEADER)payload;  
+        {
+            PBYTE payload = (PBYTE)data;
+            PKSCAMERA_EXTENDEDPROP_HEADER extendedHeader = (PKSCAMERA_EXTENDEDPROP_HEADER)payload;
+            // The extended value is unused for SET with this control, only flags are expected
+            PKSCAMERA_EXTENDEDPROP_VALUE extendedValue = (PKSCAMERA_EXTENDEDPROP_VALUE)(payload + sizeof(KSCAMERA_EXTENDEDPROP_HEADER));
+            if (extendedHeader->Flags & ~SupportedBackgroundSegmentation())
+            {
+                RETURN_HR(E_INVALIDARG);
+            }
 
-            // The extended value is unused for SET with this control, only flags are expected  
-            PKSCAMERA_EXTENDEDPROP_VALUE extendedValue = (PKSCAMERA_EXTENDEDPROP_VALUE)(payload + sizeof(KSCAMERA_EXTENDEDPROP_HEADER));  
-            switch (extendedHeader->Flags)  
-            {  
-            case KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_PORTRAITMODE:  
-                SetBackgroundSegmentationPortraitMode(true); 
-                SetBackgroundSegmentationBlur(false);  
-                break; 
-            case KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_BLUR:  
-                SetBackgroundSegmentationBlur(true);  
-                SetBackgroundSegmentationPortraitMode(false); 
-                break;  
-            case KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_MASK:  
-                SetBackgroundSegmentationMask(true);  
-                break;  
-            case KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_OFF:  
-                SetBackgroundSegmentationBlur(false);  
-                SetBackgroundSegmentationMask(false);  
-                SetBackgroundSegmentationPortraitMode(false); 
-                break;  
-            default:  
-                RETURN_HR(E_INVALIDARG);  
-                break;  
-            }  
-        }  
-        else  
-        {  
-            RETURN_IF_FAILED(E_INVALIDARG);  
-        }  
-    }     
-    else if (property->Flags & KSPROPERTY_TYPE_GET)  
-    {  
-        if (outputBufferLength == 0)  
-        {  
-            *bytesReturned = sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(m_configCaps);  
-            RETURN_IF_FAILED(HRESULT_FROM_WIN32(ERROR_MORE_DATA));  
-        }  
-        else if (outputBufferLength < sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(m_configCaps))  
-        {  
-            RETURN_IF_FAILED(HRESULT_FROM_WIN32(ERROR_MORE_DATA));  
-        }  
-        else if (data && outputBufferLength >= sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(m_configCaps)) 
-        {  
-            PBYTE payload = (PBYTE)data;  
-            PKSCAMERA_EXTENDEDPROP_HEADER extendedHeader = (PKSCAMERA_EXTENDEDPROP_HEADER)(payload);  
+            bool shallowFocus = WI_IsFlagSet((extendedHeader->Flags, KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_SHALLOWFOCUS);
+            bool blur = WI_IsFlagSet((extendedHeader->Flags, KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_BLUR);
+            bool mask = WI_IsFlagSet((extendedHeader->Flags, KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_MASK);
 
-            extendedHeader->Capability = KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_MASK | 
-                                         KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_BLUR |  
-                                         KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_PORTRAITMODE | 
-                                         KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_OFF;  
+            // If you ask for shallow focus, you must also ask for blur.
+            if (shallowFocus && !blur)
+            {
+                RETURN_HR(E_INVALIDARG);
+            }
+            SetBackgroundSegmentationShallowFocus(shallowFocus);
+            SetBackgroundSegmentationBlur(blur);
+            SetBackgroundSegmentationMask(mask);
+        }
+        else
+        {
+            RETURN_IF_FAILED(E_INVALIDARG);
+        }
+    }
+    else if (property->Flags & KSPROPERTY_TYPE_GET)
+    {
+        if (outputBufferLength == 0)
+        {
+            *bytesReturned = sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(m_configCaps);
+            RETURN_IF_FAILED(HRESULT_FROM_WIN32(ERROR_MORE_DATA));
+        }
+        else if (outputBufferLength < sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(m_configCaps))
+        {
+            RETURN_IF_FAILED(HRESULT_FROM_WIN32(ERROR_MORE_DATA));
+        }
+        else if (data && outputBufferLength >= sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(m_configCaps))
+        {
+            PBYTE payload = (PBYTE)data;
+            PKSCAMERA_EXTENDEDPROP_HEADER extendedHeader = (PKSCAMERA_EXTENDEDPROP_HEADER)(payload);
+            extendedHeader->Capability = KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_MASK |
+                                         KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_BLUR |
+                                         KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_SHALLOWFOCUS |
+                                         KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_OFF;
 
-            extendedHeader->Flags = GetBackgroundSegmentationBlur() ? 
-KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_BLUR : (GetBackgroundSegmentationPortraitMode() ? KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_PortraitMode : (GetBackgroundSegmentationMask() ? 
-KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_MASK : KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_OFF));
-            extendedHeader->Result = 0;  
-            extendedHeader->Size = sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(m_configCaps);  
-            extendedHeader->Version = 1;  
+            if (GetBackgroundSegmentationMask())
+            {
+                extendedHeader->Flags |= KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_MASK;
+            }
 
-            PKSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_CONFIGCAPS configCap = (PKSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_CONFIGCAPS)(payload + sizeof(KSCAMERA_EXTENDEDPROP_HEADER));  
-            memcpy(configCap, m_configCaps, sizeof(m_configCaps));  
+            if (GetBackgroundSegmentationBlur())
+            {
+                extendedHeader->Flags |= KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_BLUR;
+            }
+            else if (GetBackgroundSegmentationShallowFocus())
+            {
+                extendedHeader->Flags |= KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_BLUR | KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_SHALLOWFOCUS;
+            }
+            else
+            {
+                extendedHeader->Flags = KSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_OFF;
+            }
+            extendedHeader->Result = 0;
+            extendedHeader->Size = sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(m_configCaps);
+            extendedHeader->Version = 1;
+            
+            PKSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_CONFIGCAPS configCap = (PKSCAMERA_EXTENDEDPROP_BACKGROUNDSEGMENTATION_CONFIGCAPS)( payload + sizeof(KSCAMERA_EXTENDEDPROP_HEADER)));
+            memcpy(configCap, m_configCaps, sizeof(m_configCaps));
+            *bytesReturned = sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(m_configCaps);
+        }
+    }
 
-           *bytesReturned = sizeof(KSCAMERA_EXTENDEDPROP_HEADER) + sizeof(m_configCaps);  
-        }  
-    }  
-    return S_OK;  
+    return S_OK;
 }
 
 // KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_STARE 
@@ -165,8 +179,17 @@ HRESULT CSampleMft::EyeGazeCorrectionHandler(
             //   
             // Use the extended value to make changes to the property.. refer documentation   
             // PKSCAMERA_EXTENDEDPROP_VALUE extendedValue = (PKSCAMERA_EXTENDEDPROP_VALUE)(payload + sizeof(KSCAMERA_EXTENDEDPROP_HEADER));   
-                             //   
-            SetEyeGazeCorrectionMode(extendedHeader->Flags);   
+            //
+            if ( (extendedHeader->Flags == KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_ON) ||
+                 (extendedHeader->Flags == (KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_ON | KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_STAREMODE)) ||
+                 (extendedHeader->Flags == KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_OFF) )
+            {
+                SetEyeGazeCorrectionMode (extendedHeader->Flags);   
+            }
+            else
+            {
+                RETURN_HR(E_INVALIDARG);
+            } 
             *bytesReturned = sizeof(PKSCAMERA_EXTENDEDPROP_HEADER) + sizeof(KSCAMERA_EXTENDEDPROP_VALUE);   
         }   
         else  
@@ -192,7 +215,7 @@ HRESULT CSampleMft::EyeGazeCorrectionHandler(
             //   
             // Use the extended value to make changes to the property.. refer documentation   
             // PKSCAMERA_EXTENDEDPROP_VALUE extendedValue = (PKSCAMERA_EXTENDEDPROP_VALUE)(payload +sizeof(KSCAMERA_EXTENDEDPROP_HEADER));   
-                             //   
+            //   
             extendedHeader->Capability = KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_OFF |  
                                          KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_ON |   
                                          KSCAMERA_EXTENDEDPROP_EYEGAZECORRECTION_STAREMODE;   

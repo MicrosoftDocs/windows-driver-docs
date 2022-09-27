@@ -1,7 +1,7 @@
 ---
 title: KSEVENT structure (ks.h)
 description: The KSEVENT structure specifies a single kernel streaming event within a kernel streaming event set.
-ms.date: 07/07/2021
+ms.date: 07/14/2022
 ms.custom: contperf-fy22q1
 ---
 
@@ -15,7 +15,7 @@ The **KSEVENT**, [**KSMETHOD**](ksmethod-structure.md), and [**KSPROPERTY**](ksp
 
 ```cpp
 struct KSEVENT {
-  GUID  Set;
+  GUID Set;
   ULONG Id;
   ULONG Flags;
 };

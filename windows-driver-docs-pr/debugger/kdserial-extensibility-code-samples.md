@@ -20,7 +20,7 @@ The KDNET serial interface, shows the use of 16550 serial interface hardware. It
 
 `C:\Program Files (x86)\Windows Kits\10\Debuggers\ddk\samples\kdnet\serial\16550`
 
-When testing the the KDNET Serial 16550 sample code, the serial cable should be wired as a NULL-MODEM RS232 cable, where the Tx-Rx lines are crossed.
+When testing the KDNET Serial 16550 sample code, the serial cable should be wired as a NULL-MODEM RS232 cable, where the Tx-Rx lines are crossed.
 
 
 ### KDNET Serial siig Sample
@@ -38,7 +38,7 @@ This shows the use of the older KDSerial transport. The KDNET transport over ser
 
 `C:\Program Files (x86)\Windows Kits\10\Debuggers\ddk\samples\kdserial`
 
-When testing the the KDSerial code sample, the serial cable should be wired as a NULL-MODEM RS232 cable, where the Tx-Rx lines are crossed.
+When testing the KDSerial code sample, the serial cable should be wired as a NULL-MODEM RS232 cable, where the Tx-Rx lines are crossed.
 
 
 ## Steps to deploy test serial kernel debug transport

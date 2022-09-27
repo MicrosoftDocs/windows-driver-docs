@@ -8,7 +8,7 @@ api_name:
 - balloonUI
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 09/06/2022
 ---
 
 # balloonUI element
@@ -35,87 +35,23 @@ This resource may not be available in some languages and countries.
 
 ## Attributes
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>iconID</strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>No</p></td>
-<td><p></p>
-<p>An optional attribute that specifies a printer icon to display in the event notification message. The attribute value specifies the location of the icon in the resource DLL. The icon must be 32 x 32 pixels in size, with any color depth.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>resourceDll</strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>No</p></td>
-<td><p></p>
-<p>An optional attribute that specifies a resource DLL that contains the printer icon to display in the event notification message. This DLL should be a dependent file of the printer driver and must be present in the driver resource folder (for example, %SYSTEMROOT%\system32\spool\drivers\w32x86\3).</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Type | Required | Description |
+|--|--|--|--|
+| **iconID** | xs:string | No | An optional attribute that specifies a printer icon to display in the event notification message. The attribute value specifies the location of the icon in the resource DLL. The icon must be 32 x 32 pixels in size, with any color depth. |
+| **resourceDll** | xs:string | No | An optional attribute that specifies a resource DLL that contains the printer icon to display in the event notification message. This DLL should be a dependent file of the printer driver and must be present in the driver resource folder (for example, %SYSTEMROOT%\system32\spool\drivers\w32x86\3). |
 
 ## Child elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="body.md" data-raw-source="[&lt;strong&gt;body&lt;/strong&gt;](body.md)"><strong>body</strong></a></p></td>
-<td><p></p>
-<p>A required element that provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="title.md" data-raw-source="[&lt;strong&gt;title&lt;/strong&gt;](title.md)"><strong>title</strong></a></p></td>
-<td><p></p>
-<p>A required element that provides text that is displayed in the title of the event notification message.</p></td>
-</tr>
-</tbody>
-</table>
+| Element | Description |
+|--|--|
+| [**body**](body.md) | A required element that provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event. |
+| [**title**](title.md) | A required element that provides text that is displayed in the title of the event notification message. |
 
 ## Parent elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="requestopen.md" data-raw-source="[&lt;strong&gt;requestOpen&lt;/strong&gt;](requestopen.md)"><strong>requestOpen</strong></a></p></td>
-<td><p></p>
-<p>An element that is used to open an event notification message on the client computer.</p></td>
-</tr>
-</tbody>
-</table>
+| Element | Description |
+|--|--|
+| [**requestOpen**](requestopen.md) | An element that is used to open an event notification message on the client computer. |
 
 ## Remarks
 

@@ -19,12 +19,12 @@ This article describes how to sign a driver using attestation signing. For detai
 
 - Follow the process described in [Download kits and tools for Windows 10](/windows-hardware/get-started/adk-install) to download and install the Windows Driver Kit (WDK).
 
-- (Optional)  Download the [echo driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf/driver/AutoSync) that is used in this article.
+- (Optional)  Download the [echo driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/echo/kmdf/driver/AutoSync) that is used in this article.
 
 
 ### Create the CAB file
 
-In this section, we'll step through the process of creating a CAB files submission.  We'll be using the [echo driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf/driver/AutoSync) to illustrate the process.
+In this section, we'll step through the process of creating a CAB files submission.  We'll be using the [echo driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/echo/kmdf/driver/AutoSync) to illustrate the process.
 
 A typical CAB file submission must contain the following:
 

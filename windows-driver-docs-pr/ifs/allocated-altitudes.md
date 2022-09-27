@@ -1,7 +1,7 @@
 ---
 title: Allocated filter altitudes
 description: Lists file system filter altitudes allocated by Microsoft
-ms.date: 05/27/2021
+ms.date: 09/09/2022
 keywords:
 - filter driver altitude
 - minifilter driver altitude
@@ -38,15 +38,21 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | fsdepends.sys | 407000 | Microsoft |
 | sftredir.sys | 406000 | Microsoft |
 | dfs.sys | 405000 | Microsoft |
+| IntelEgDriver.sys | 404950.5 | Intel Corp |
 | VeeamFCT.sys | 404920 | Veeam Software |
+| sek.sys | 404915.5 | Sentry Corporation |
 | tracker.sys | 404910 | Acronis |
 | csvnsflt.sys | 404900 | Microsoft |
 | csvflt.sys | 404800 | Microsoft |
 | Microsoft.Uev.AgentDriver.sys | 404710 | Microsoft |
 | AppvVfs.sys | 404700 | Microsoft |
 | CCFFilter.sys | 404600 | Microsoft |
+| FwDI.sys | 402130.5 | First Watch Limited |
+| 360AntiSteal.sys | 402120.5 | 360 Software (Beijing) |
 | uberAgentDrv.sys | 402110 | vast limits GmbH |
 | mrigflt.sys | 402100 | Paramount Software Ltd |
+| darkscope-drv.sys | 402030.5 | Zhuhai YiZhiSec co |
+| XCOAmon.sys | 402025.5 | TRIART INC |
 | RevoNetDriver.sys | 402020 | J's Communication Co. |
 | dciogrd.sys | 402010 | Datacloak Tech |
 | Dewdrv.sys | 402000 | Dell Technologies |
@@ -58,6 +64,8 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | rvsavd.sys | 401500 | CJSC Returnil Software |
 | DGMinFlt.sys | 401410 | Digital Guardian Inc. |
 | dgdmk.sys | 401400 | Verdasys Inc. |
+| stadrv6x64.sys | 401350.5 | Netskope Inc. |
+| stadrv6x32.sys | 401350.5 | Netskope Inc. |
 | tusbstorfilt.sys | 401300 | SimplyCore LLC |
 | pcgenfam.sys | 401200 | Soluto |
 | atrsdfw.sys | 401100 | Altiris |
@@ -65,7 +73,10 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | MBIG2Prot.sys | 400920 | Malwarebytes Inc |
 | mbamwatchdog.sys | 400900 | Malwarebytes Corporation |
 | DSESafeCtrlDrv.sys | 400803 | Shanghai Eff-Soft IT |
+| edevmonm.sys | 400800.3 | ESET spol. s r.o. |
 | edevmon.sys | 400800 | ESET spol. s r.o. |
+| vmwprotect.sys | 400700.5 | VMware, Inc. |
+| vmwcdrfilter.sys | 400700.3 | VMware, Inc. |
 | vmwflstor.sys | 400700 | VMware, Inc. |
 | TsQBDrv.sys | 400600 | Tencent Technology |
 | PolyPortFlt.sys | 400490 | PolyPort Inc |
@@ -75,23 +86,36 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 
 | Minifilter                  | Altitude | Company                                 |
 |-----------------------------|----------|-----------------------------------------|
+| zd_mon.sys | 389520.5 | Zecurion |
+| icrlmonitor.sys | 389518.5 | Delta Electronics Inc |
 | klboot.sys | 389510 | Kaspersky Lab |
 | klfdefsf.sys | 389500 | Kaspersky Lab |
+| JKMCPF.sys | 389492.7 | JiranData Co. Ltd |
+| JDEDRPF.sys | 389492.5 | JiranData Co. Ltd |
 | JDPPWF.sys | 389492 | JiranData Co. Ltd |
 | JDPPSF.sys | 389490 | JiranData Co. Ltd |
 | FFDriver.sys | 389470 | ColorTokens |
+| evaccin.sys | 389455.5 | databps.com |
 | SeRdr.sys | 389450 | rhipe Australia Pty |
+| bw_fssec.sys | 389430.5 | Wuhan Buwei Software Technology Co.,Ltd |
+| SecurityPro.sys | 389430.3 | Wuhan Buwei Software Technology Co.,Ltd |
+| defragger.sys | 389420 | Microsoft |
 | storagedrv.sys | 389400 | SMTechnology Co. |
 | NetPeeker.sys | 389330 | eMingSoftware Inc |
 | path8flt.sys | 389320 | Telefónica Digital |
+| DLPDriverNfn.sys | 389310.5 | Acronis |
 | NgScan.sys | 389310 | Acronis |
 | icrlmonitor.sys | 389300 | Industrial Technology |
 | gibepcore.sys | 389290 | Group-IB LTD |
+| cpflt.sys | 389285.5 | Cloudplan GmbH |
 | enmon.sys | 389280 | OpenText Corp |
 | wsafefilter.sys | 389272 | WidgetNuri Corp |
 | RansomDetect.sys | 389270 | WidgetNuri Corp |
+| PPLPMFilter.sys | 389265.5 | PolicyPak Software |
 | cbfsfilter2017.sys | 389260 | Mobile Content Mgmt |
+| cbfilter20.sys | 389251 | SecureLink Inc. |
 | CBFSFilter2017.sys | 389250 | SecureLink Inc. |
+| GmBase.sys | 389248 | NanJing Geomarking |
 | MagicProtect.sys | 389247 | NanJing Geomarking |
 | cbfsfilter2017.sys | 389245 | NanJing Geomarking |
 | cbfsfilter2020.sys | 389245 | NanJing Geomarking |
@@ -110,6 +134,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | ipcomfltr.sys | 389160 | Bluzen Inc |
 | SvCBT.sys | 389150 | Spharsoft Technologies |
 | mbamshuriken.sys | 389140 | Malwarebytes |
+| FGFLT.sys | 389135.5 | WinAbility Software |
 | ContainerMonitor.sys | 389130 | Aqua Security |
 | cmflt.sys | 389125 | Certero |
 | SaMFlt.sys | 389120 | DreamCrafts |
@@ -120,6 +145,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | windd.sys | 389110 | Comae Tech |
 | cbfsfilter2017.sys | 389105 | Basein Networks |
 | taobserveflt.sys | 389100 | ThinAir Labs Inc |
+| fsrvlock.sys | 389098 | Man Technology Inc |
 | bsrfsflt.sys | 389096 | Man Technology Inc |
 | fsrfilter.sys | 389094 | Man Technology Inc |
 | vollock.sys | 389092 | Man Technology Inc |
@@ -136,7 +162,9 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | MozyHomeFilter.sys | 389062 | Carbonite Inc |
 | BDSFilter.sys | 389061 | Carbonite Inc |
 | CSBFilter.sys | 389060 | Carbonite Inc |
+| f_pmf.sys | 389055.5 | Fasoo Inc. |
 | ChemometecFilter.sys | 389050 | ChemoMetec |
+| bcloudsafe.sys | 389045.5 | AISHU Technology Corp |
 | SentinelMonitor.sys | 389040 | SentinelOne |
 | DhWatchdog.sys | 389030 | Microsoft |
 | edrsensor.sys | 389025 | Bitdefender SRL |
@@ -167,15 +195,18 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | KeWF.sys | 388890 | KEBA AG |
 | epregflt.sys | 388888 | Check Point Software |
 | epklib.sys | 388886 | Check Point Software |
-| zsfprt.sys | 388880 | k4solution Co. |
+| zsfprt.sys | 388880 | k4solution Co., Ltd. |
 | dsflt.sys | 388876 | cEncrypt |
 | bfaccess.sys | 388872 | bitFence Inc. |
 | xcpl.sys | 388870 | X-Cloud Systems |
+| DRMFilter.sys | 388867.5 | ManageEngine Zoho |
 | DFMFilter.sys | 388867 | ManageEngine Zoho |
 | DCFAFilter.sys | 388866 | ManageEngine Zoho |
 | RMPHVMonitor.sys | 388865 | ManageEngine Zoho |
 | FAPMonitor.sys | 388864 | ManageEngine Zoho |
+| FACEDrv.sys | 388863.5 | ManageEngine Zoho |
 | MEARWFltDriver.sys | 388863 | ManageEngine Zoho |
+| SerMonDriver.sys | 388862.5 | ManageEngine Zoho |
 | EaseFlt.sys | 388860 | EaseVault Technologies Inc. |
 | rpwatcher.sys | 388855 | Best Security |
 | sieflt.sys | 388852 | Quick Heal Technologies Pvt. Ltd. |
@@ -206,6 +237,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | edsigk.sys | 388700 | Enterprise Data Solutions, Inc. |
 | fiometer.sys | 388692 | Fusion-io |
 | dcSnapRestore.sys | 388690 | Fusion-io |
+| SytSelfProtect.sys | 388688.5 | Sunyata Electronic Tech |
 | fam.sys | 388680 | Quick Heal Technologies Pvt. Ltd. |
 | vidderfs.sys | 388675 | Vidder Inc. |
 | Tritiumfltr.sys | 388670 | Tritium Inc. |
@@ -220,7 +252,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | rsfdrv.sys | 388580 | Clonix Co |
 | alcapture.sys | 388570 | Airlock Digital Pty Ltd |
 | kmNWCH.sys | 388560 | IGLOO SECURITY, Inc. |
-| ISIRMFmon.sys | 388550 | ALPS SYSTEM INTERGRATION CO. |
+| ISIRMFmon.sys | 388550 | ALPS SYSTEM INTERGRATION CO., LTD |
 | EsProbe.sys | 388542 | Stormshield |
 | heimdall.sys | 388540 | Arkoon Network Security |
 | thetta.sys | 388532 | Syncopate |
@@ -236,10 +268,10 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | SGResFlt.sys | 388480 | Samsung SDS Ltd |
 | CwMem2k64.sys | 388470 | ApSoft |
 | axfltdrv.sys | 388460 | Axact Pvt Ltd |
-| RMDiskMon.sys | 388450 | Qingdao Ruanmei Network Technology Co. |
-| diskactmon.sys | 388440 | Qingdao Ruanmei Network Technology Co. |
+| RMDiskMon.sys | 388450 | Qingdao Ruanmei Network Technology Co., Ltd. |
+| diskactmon.sys | 388440 | Qingdao Ruanmei Network Technology Co., Ltd. |
 | BlackCat.sys | 388435 | NEXON KOREA |
-| Codex.sys | 388430 | GameHi Co. |
+| Codex.sys | 388430 | GameHi Co., Ltd. |
 | CatMF.sys | 388420 | Logichron Inc |
 | RW7FsFlt.sys | 388410 | PJSC KP VTI |
 | aswSP.sys | 388401 | Avast Software |
@@ -250,6 +282,8 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | BOsFsFltr.sys | 388370 | Barkly Protects Inc. |
 | Asgard.sys | 388365 | SPEKNET EOOD |
 | FeKern.sys | 388360 | FireEye Inc. |
+| fhfs.sys | 388355.5 | SecureCircle |
+| libwaacd.sys | 388350.2 | OPSWAT Inc. |
 | libwamf.sys | 388350 | OPSWAT Inc. |
 | SZEDRDrv.sys | 388346 | SaferZone Co. |
 | szardrv.sys | 388345 | SaferZone Co. |
@@ -268,8 +302,10 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | fsatp.sys | 388220 | F-Secure |
 | SecdoDriver.sys | 388210 | Secdo |
 | TGFSMF.sys | 388200 | Tetraglyph Technologies |
+| napfflti.sys | 388150.5 | NETAND Co Ltd |
+| OwlyshieldRansomFilter.sys | 388110.5 | SitinCloud SAS |
 | evscase.sys | 388100 | March Hare Software Ltd |
-| VSScanner.sys | 388050 | VoodooSoft |
+| VSScanner.sys | 388050 | VoodooSoft, LLC |
 | HDRansomOffDrv.sys | 388044 | Heilig Defense LLC |
 | HDCorrelateFDrv.sys | 388042 | Heilig Defense LLC |
 | HDFileMon.sys | 388040 | Heilig Defense LLC |
@@ -301,6 +337,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | gddcv.sys | 387840 | G Data Software AG |
 | wgfile.sys | 387820 | ORANGE WERKS Inc |
 | zesfsmf.sys | 387800 | Novell |
+| BWAnticheat.sys | 387750 | Binklac Workstation |
 | uamflt.sys | 387700 | Sevtechnotrans |
 | ehdrv.sys | 387600 | ESET, spol. s r.o. |
 | DattoFSF.sys | 387560 | Datto Inc |
@@ -322,13 +359,13 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | psgdflt.sys | 386980 | Yokogawa R&L Corp |
 | USBPDH.SYS | 386901 | Centre for Development of Advanced Computing |
 | pecfilter.sys | 386900 | C-DAC Hyderabad |
-| GKPFCB.sys | 386810 | INCA Internet Co. |
-| GKPFCB64.sys | 386810 | INCA Internet Co. |
+| GKPFCB64.sys | 386810 | INCA Internet Co.,Ltd. |
 | TkPcFtCb.sys on 32bit | 386800 | INCA Internet Co.,Ltd. |
 | TkPcFtCb64.sys on 64bit | 386800 | INCA Internet Co.,Ltd. |
 | bmregdrv.sys | 386731 | Yandex LLC |
 | bmfsdrv.sys | 386730 | Yandex LLC |
 | CarbonBlackK.sys | 386720 | Bit9 Inc. |
+| ScAuthFSFlt2.sys | 386711 | Security Code LLC |
 | ScAuthFSFlt.sys | 386710 | Security Code LLC |
 | ScAuthIoDrv.sys | 386700 | Security Code LLC |
 | mfeaskm.sys | 386610 | McAfee Inc. |
@@ -353,6 +390,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | VMWVvpfsd.sys | 386200 | VMware, Inc. |
 | RTOLogon.sys (Renamed) | 386200 | VMware, Inc. |
 | Code42Filter.sys | 386190 | Code42 |
+| AATFilter.sys | 386189.5 | Code42 |
 | ConduantFSFltr.sys | 386180 | Conduant Corporation |
 | KtFSFilter.sys | 386170 | Keysight Technologies |
 | FileGuard.sys | 386140 | RES Software |
@@ -369,17 +407,20 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | shdlpSf.sys | 385970 | Comtrue Technology |
 | ctrPAMon.sys | 385960 | Comtrue Technology |
 | shdlpMedia.sys | 385950 | Comtrue Technology |
+| SealProtect.sys | 385920.7 | Beijing Bytedance |
+| FLProtect.sys | 385920.5 | Beijing Volcano Engine |
 | immflex.sys | 385910 | Immidio B.V. |
 | StegoProtect.sys | 385900 | Stegosystems Inc |
 | brfilter.sys | 385890 | Bromium Inc |
 | BrCow_x_x_x_x.sys | 385889 | Bromium Inc |
 | BemK.sys | 385888 | Bromium Inc |
-| secRMM.sys | 385880 | Squadra Technologies |
+| secRMM.sys | 385880 | Squadra Technologies, LLC. |
 | dgfilter.sys | 385870 | DataGravity Inc. |
 | WFP_MRT.sys | 385860 | FireEye Inc |
 | klrsps.sys | 385815 | Kaspersky Lab |
 | klsnsr.sys | 385810 | Kaspersky Lab |
 | TaniumRecorderDrv.sys | 385800 | Tanium |
+| bdsmonsys.sys | 385750 | Binary Defense Systems |
 | CdsgFsFilter.sys | 385700 | CRU Data Security Group |
 | mssecflt.sys | 385600 | Microsoft |
 | Backupreader.sys | 385500 | Microsoft |
@@ -387,6 +428,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | AppVMon.sys | 385400 | Microsoft |
 | DpmFilter.sys | 385300 | Microsoft |
 | Procmon11.sys | 385200 | Microsoft |
+| wtd.sys | 385110 | Microsoft |
 | minispy.sys - Top | 385100 | Microsoft |
 | fdrtrace.sys | 385001 | Microsoft |
 | filetrace.sys | 385000 | Microsoft |
@@ -406,8 +448,8 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | WRDWIZREGPROT.SYS | 383250 | WardWiz |
 | groundling32.sys | 383200 | Dell Secureworks |
 | groundling64.sys | 383200 | Dell Secureworks |
-| avgtpx86.sys | 383190 | AVG Technologies CZ |
-| avgtpx64.sys | 383190 | AVG Technologies CZ |
+| avgtpx86.sys | 383190 | AVG Technologies CZ, s.r.o |
+| avgtpx64.sys | 383190 | AVG Technologies CZ, s.r.o |
 | DataNow_Driver.sys | 383182 | AppSense Ltd |
 | UcaFltDriver.sys | 383180 | AppSense Ltd |
 | YFSD2.sys | 383170 | Yokogawa Corpration |
@@ -418,7 +460,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | cFSfdrv | 383120 | Chaewool |
 | ajfsprot.sys | 383110 | Analytik Jena AG |
 | isafermon | 383100 | (c)SMS |
-| kfac.sys | 383000 | Beijing CA-JinChen Software Co. |
+| kfac.sys | 383000 | Beijing CA-JinChen Software Co., Ltd |
 | GUMHFilter.sys | 382910 | Glarysoft Ltd. |
 | PsAcFileAccessFilter.sys | 382902 | FUJITSU SOFTWARE |
 | FJGSDis2.sys | 382900 | FUJITSU LIMITED |
@@ -428,29 +470,31 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | Fsw31rj1.sys | 382855 | FUJITSU LIMITED |
 | da_ctl.sys | 382850 | FUJITSU LIMITED |
 | zqFilter.sys | 382800 | magrasoft Ltd |
-| ntps_fa.sys | 382700 | NTP Software |
-| sConnect.sys | 382600 | I-O DATA DEVICE |
+| ntps_fa.sys | 382700 | DefendX Software |
+| ancfunc.sys | 382650 | Aunaki |
+| sConnect.sys | 382600 | I-O DATA DEVICE, INC> |
 | AdaptivaClientCache32.sys | 382500 | Adaptiva |
 | AdaptivaclientCache64.sys | 382500 | Adaptiva |
 | phantomd.sys | 382440 | Veramine Inc |
 | GoFSMF.sys | 382430 | Gorizonty Rosta Ltd |
 | SWCommFltr.sys | 382420 | SnoopWall LLC |
-| atflt.sys | 382410 | Atlansys Software |
-| amfd.sys | 382400 | Atlansys Software |
+| atflt.sys | 382410 | Atlansys Software, LLC |
+| amfd.sys | 382400 | Atlansys Software, LLC |
 | iSafeKrnl.sys | 382390 | Elex Tech Inc |
 | iSafeKrnlMon.sys | 382380 | Elex Tech Inc |
 | AtdrAgent.sys | 382325 | 360 Software (Beijing) |
 | AtdrAgent64.sys | 382325 | 360 Software (Beijing) |
 | Qutmdrv.sys | 382320 | 360 Software (Beijing) |
 | 360box.sys | 382310 | Qihoo 360 |
-| 360fsflt.sys | 382300 | Beijing Qihoo Technology Co. |
-| scred.sys | 382210 | SoftCamp Co. |
+| 360fsflt.sys | 382300 | Beijing Qihoo Technology Co., Ltd. |
+| PSFSF.sys | 382250.5 | Peer Software Inc |
+| scred.sys | 382210 | SoftCamp Co., Ltd. |
 | PDGenFam.sys | 382200 | Soluto LTD |
 | MCFileMon64.sys (x64 systems) | 382100 | Sumitomo Electric Ltd. |
 | MCFileMon32.sys (x32 systems) | 382100 | Sumitomo Electric Ltd. |
-| RyGuard.sys | 382050 | SHENZHEN UNNOO Information Techco. |
-| FileShareMon.sys | 382040 | SHENZHEN UNNOO Information Techco. |
-| ryfilter.sys | 382030 | SHENZHEN UNNOO Information Techco. |
+| RyGuard.sys | 382050 | SHENZHEN UNNOO Information Techco., Ltd |
+| FileShareMon.sys | 382040 | SHENZHEN UNNOO Information Techco., Ltd |
+| ryfilter.sys | 382030 | SHENZHEN UNNOO Information Techco., Ltd |
 | secufile.sys | 382020 | Shenzhen Unnoo LTD |
 | XiaobaiFs.sys | 382010 | Shenzhen Unnoo LTD |
 | XiaobaiFsR.sys | 382000 | Shenzhen Unnoo LTD |
@@ -470,9 +514,10 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | MSpy.sys | 381300 | Ladislav Zezula |
 | inuse.sys | 381200 | March Hare Software Ltd |
 | qfmon.sys | 381190 | Quality Corporation |
-| flyfs.sys | 381160 | NEC Soft |
-| serfs.sys | 381150 | NEC Soft |
-| hdrfs.sys | 381140  | NEC Soft |
+| FMSRVCIO.sys | 381165 | NEC Solution Innovators |
+| flyfs.sys | 381160 | NEC Soft, Ltd. |
+| serfs.sys | 381150 | NEC Soft, Ltd. |
+| hdrfs.sys | 381140 | NEC Soft, Ltd. |
 | UVMCIFSF.sys | 381130 | NEC Corporation |
 | ICFClientFlt.sys | 381120 | NEC System Technologies,Ltd. |
 | IccFileIoAd.sys | 381110 | NEC System Technologies,Ltd. |
@@ -481,20 +526,25 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | Sefo.sys - Top | 381010 | Solusseum Inc |
 | mtsvcdf.sys | 381000 | CristaLink |
 | SDDrvLdr.sys | 380970 | Aliaksander Lebiadzevich |
+| fscbtflt.sys | 380930.5 | Cohesity Inc |
 | SQLsafeFilterDriver.sys | 380901 | Idera Software |
 | IderaFilterDriver.sys | 380900 | Idera |
+| sie-filemon.sys | 380852.5 | SN Systems Ltd |
 | cbfilter20.sys | 380852 | SN Systems Ltd |
 | cbfsfilter2017.sys | 380850 | SN Systems Ltd |
-| xhunter1.sys | 380800 | Wellbia&#x2024;com |
+| xhunter1.sys | 380800 | Wellbia.com |
 | iGuard.sys | 380720 | i-Guard SAS |
 | cbfltfs4.sys | 380715 | Nomadesk |
 | cbfltfs4.sys | 380710 | Backup Systems Ltd |
 | PkgFilter.sys | 380700 | Scalable Software Inc. |
+| minifswatcher.sys | 380650 | BITCORP S.R.L. |
 | snimg.sys | 380600 | Softnext Technologies |
+| cbfilter20.sys | 380530 | Brainloop AG |
 | SK.sys | 380520 | HEAT Software |
 | cbfsfilter2017.sys | 380515 | Kits Ltd. |
 | mpxmon.sys | 380510 | Positive Technologies |
 | filenamevalidator.sys | 380502 | Infotecs |
+| SWAgent.sys | 380500.5 | Stairwell Inc |
 | KC3.sys | 380500 | Infotecs |
 | PLPOffDrv.sys | 380492 | SK Infosec Co |
 | ISFPDrv.sys | 380491 | SK Infosec Co |
@@ -509,9 +559,13 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | fangcloud_autolock_driver.sys | 380420 | Hangzhou Yifangyun |
 | FASDriver | 380410 | Tech Research |
 | kFileFlt.sys | 380405 | AsiaInfo Technologies |
+| cpfd10.sys | 380400 | CYEBIZ co Ltd |
+| ZeroneAODVirtualDisk.sys | 380390.5 | Zero One Technology Co |
+| ZeroneAODVirtualDisk64.sys | 380390.5 | Zero One Technology Co |
 | CbSampleDrv.sys | 380020 | Microsoft |
 | CbSampleDrv.sys | 380010 | Microsoft |
 | CbSampleDrv.sys | 380000 | Microsoft |
+| EdsAppRep.sys | 372000.5 | Alibaba Cloud Computing Ltd. |
 | simrep.sys | 371100 | Microsoft |
 | change.sys | 370160 | Microsoft |
 | delete_flt.sys | 370150 | Microsoft |
@@ -530,6 +584,10 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | nullFilter.sys | 370020 | Microsoft |
 | ntest.sys | 370010 | Microsoft |
 | minispy.sys - Middle | 370000 | Microsoft |
+| KenestoDriveAC.sys | 369620.5 | Kenesto Corp |
+| ZdProtect.sys | 369600.5 | Chongqing Intelligent Information Tech Co.,Ltd |
+| cbfilter20.sys | 369560.5 | Blondell-Hart Inc. |
+| CyberhavenSystemMonitor.sys | 368550.5 | Cyberhaven Inc |
 | AvaPsFD.sys | 368540 | Avanite Limited |
 | isecureflt.sys | 368530 | iSecure Ltd. |
 | SFPMonitor.sys - Middle | 368520 | SonicWall Inc |
@@ -537,6 +595,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | secure_os_mf.sys | 368500 | HAURI |
 | FileMonitor.sys | 368470 | Cygna Labs |
 | asiofms.sys | 368460 | Encourage Technologies |
+| AbtFileSystemBlocker.sys | 368452 | Absolute Software |
 | cbfsfilter2017.sys | 368450 | Absolute Software |
 | FileHubAgent.sys | 368440 | SmartFile LLC |
 | pfracdrv.sys | 368430 | NURILAB |
@@ -565,6 +624,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | cvofflineFlt32.sys | 368200 | Quantum Corporation. |
 | cvofflineFlt64.sys | 368200 | Quantum Corporation. |
 | DsDriver.sys | 368100 | Warp Disk Software |
+| xdrmon.sys | 368050.5 | LLC Breakthrough Technologies |
 | nlcbhelpx86.sys | 368000 | NetLib |
 | nlcbhelpx64.sys | 368000 | NetLib |
 | nlcbhelpi64.sys | 368000 | NetLib |
@@ -603,9 +663,12 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | intmfs.sys | 366781 | CondusivTechnologies |
 | excfs.sys | 366780 | CondusivTechnologies |
 | zampit_ml.sys | 366700 | Zampit |
+| ACE-BASE.sys | 366669.6 | Tencent Technology |
+| ACE-GAME.sys | 366669.5 | Tencent Technology |
 | TenRSafe2.sys | 366669 | Tencent Technology |
 | tesxporter.sys | 366667 | Tencent Technology |
 | tesxnginx.sys | 366666 | Tencent Technology |
+| detector.sys | 366620.5 | MemCrypt Limited |
 | rflog.sys | 366600 | AppStream, Inc. |
 | csmon.sys | 366582 | CyberSight Inc |
 | mumdi.sys | 366540 | ZenmuTech Inc. |
@@ -650,6 +713,11 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | symevnt32.sys | 365090 | Broadcom |
 | SISIPSFileFilter | 365010 | Symantec |
 | symevent.sys | 365000 | Symantec |
+| BHDrvx64.sys | 364970 | NortonLifeLock Inc |
+| BHDrvx86.sys | 364970 | NortonLifeLock Inc |
+| symevnt.sys | 364960 | NortonLifeLock Inc |
+| symevnt32.sys | 364960 | NortonLifeLock Inc |
+| SymEvent.sys | 364950 | NortonLifeLock Inc |
 | wrpfv.sys | 364900 | Microsoft |
 | UpGuardRealTime.sys | 364810 | UpGuard |
 | usbl_ifsfltr.sys | 364800 | SecureAxis |
@@ -657,6 +725,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | BssAudit.sys | 364600 | ByStorm |
 | GPMiniFIlter.sys | 364500 | Kalpataru |
 | AlfaFF.sys | 364400 | Alfa |
+| 360disproc.sys | 364310.5 | 360 Software (Beijing) |
 | FSAFilter.sys | 364300 | ScriptLogic |
 | GcfFilter.sys | 364200 | GemacmbH |
 | FFCFILT.SYS | 364100 | FFC Limited |
@@ -674,22 +743,28 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | Estprp.sys - 64bit | 363610 | ESTsoft corp. |
 | EstRegmon.sys | 363600 | ESTsoft corp. |
 | EstRegp.sys - 64bit | 363600 | ESTsoft corp. |
+| EMAC-Driver-x64.sys | 363570 | EMAC LAB |
+| HuntMon.sys | 363558.5 | Huntress Labs Inc |
 | agfsmon.sys | 363530 | TechnoKom Ltd. |
 | NlxFF.sys | 363520 | OnGuard Systems LLC |
 | Sahara.sys | 363511 | Safend |
 | Santa.sys | 363510 | Safend |
 | vfdrv.sys | 363500 | Viewfinity |
 | topdogfsfilt.sys | 363450 | ManTech |
+| mamflt.sys | 363430 | Mirekusoft LLC |
 | sfac.sys | 363420 | SoulFrost |
 | xhunter64.sys | 363400 | Wellbia.com |
 | uncheater.sys | 363390 | Wellbia.com |
 | AuditFlt.sys | 363313 | Ionx Solutions LLP |
 | SPIMiniFilter.sys | 363300 | Software Pursuits Inc. |
+| EAAntiCheat.sys | 363250 | Electronic Arts |
+| RevBitsESMF.sys | 363240.5 | RevBits LLC |
 | mracdrv.sys | 363230 | Mail&#x2024;Ru |
 | BEDaisy.sys | 363220 | BattlEye Innovations |
 | MPKernel.sys | 363210 | Lovelace Network Tech |
-| NetAccCtrl.sys | 363200 | LINK co. |
-| NetAccCtrl64.sys | 363200 | LINK co. |
+| NetAccCtrl.sys | 363200 | LINK co., ltd |
+| NetAccCtrl64.sys | 363200 | LINK co., ltd |
+| bzsenedrsysdrv.sys | 363143 | BiZone LLC |
 | bzsenyaradrv.sys | 363142 | BiZone LLC |
 | bzsenspdrv.sys | 363141 | BiZone LLC |
 | bzsenth.sys | 363140 | BiZone LLC |
@@ -710,12 +785,15 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | filemon.sys | 362950 | Temasoft S.R.L. |
 | SCAegis.sys | 362940 | Sogou Ltd. |
 | fpepflt.sys | 362930 | ForcePoint LLC. |
+| GTVService.sys | 362920 | GTV VIETNAM TECHNOLOGY |
+| RWLog1.sys | 362910.5 | ROMWin Co. Ltd |
 | klifks.sys | 362902 | Kaspersky Lab |
 | klifaa.sys | 362901 | Kaspersky Lab |
 | Klifsm.sys | 362900 | Kaspersky Lab |
+| lwdcs.sys | 362880.5 | Lacework Inc |
 | Spotlight.sys | 362870 | Cigent Technology Inc |
-| nxrmflt.sys | 362860 | NextLabs |
-| vast.sys | 362850 | PolyLogyx LLC |
+| nxrmflt.sys | 362860 | NextLabs, Inc. |
+| vast.sys | 362850 | EclecticIQ BV |
 | AALProtect.sys | 362840 | AlphaAntiLeak |
 | egnfsflt.sys | 362830 | Egnyte Inc |
 | RsFlt.sys | 362820 | Redstor Limited |
@@ -723,6 +801,10 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | Sefo.sys - Bottom | 362800 | Solusseum Inc |
 | proggerdriver.sys | 362790 | WaikatoLink Ltd |
 | imfilter.sys | 362780 | ITsMine |
+| webargus.sys | 362775.5 | Digital Information Technologies |
+| DSHSM.sys | 362770.5 | DeepSpace Storage Systems |
+| GraphiteSecureDriver.sys | 362750.5 | Towers Watson Software |
+| IndigoSecureDriver.sys | 362750 | Towers Watson Software |
 | SFPMonitor.sys - Bottom | 362700 | SonicWall Inc |
 | minispy.sys - Bottom | 361000 | Microsoft |
 
@@ -754,7 +836,11 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 
 | Minifilter                  | Altitude | Company                                 |
 |-----------------------------|----------|-----------------------------------------|
+| brynhildr.sys | 329400 | Activision Blizzard, Inc. |
+| IstroDrv.sys | 329380.5 | IstroSec s.r.o. |
+| XRFilter.sys | 329375 | XRITDX |
 | tbmninifilter.sys | 329370 | Confluera Inc |
+| CovAgent.sys | 329365 | Field Effect Software |
 | trfsfilter.sys | 329360 | NetSecurity Corp |
 | ReveFltMgr.sys | 329350 | REVE Antivirus |
 | ReveProcProtection.sys | 329340 | REVE Antivirus |
@@ -787,6 +873,9 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | SRTSP.sys | 329000 | symantec |
 | SRTSPIT.sys - ia64 systems | 329000 | symantec |
 | SRTSP64.SYS - x64 systems | 329000 | symantec |
+| eeCtrl.sys | 328960 | NortonLifeLock Inc |
+| SRTSP.sys | 328950 | NortonLifeLock Inc |
+| SRTSP64.sys | 328950 | NortonLifeLock Inc |
 | a2ertpx86.sys | 328920 | Emsi Software GmbH |
 | a2ertpx64.sys | 328920 | Emsi Software GmbH |
 | a2gffx86.sys - x86 | 328910 | Emsi Software GmbH |
@@ -795,6 +884,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | a2acc.sys | 328900 | Emsi Software GmbH |
 | a2acc64.sys on x64 systems | 328900 | Emsi Software GmbH |
 | FlightRecorder.sys | 328850 | Malwarebytes Corp. |
+| upfilt.sys | 328820.5 | Upsight Security |
 | si32_file.sys | 328810 | Scargo Inc |
 | si64_file.sys | 328810 | Scargo Inc |
 | mbam.sys | 328800 | Malwarebytes Corp. |
@@ -806,6 +896,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | wdocsafe.sys | 328722 | Cheetah Mobile Inc. |
 | lbprotect.sys | 328720 | Cheetah Mobile Inc. |
 | eamonm.sys | 328700 | ESET, spol. s r.o. |
+| snpavdrv.sys | 328660 | Security Code LLC |
 | klam.sys | 328650 | Kaspersky Lab |
 | MaxProc64.sys | 328620 | Max Secure Software |
 | MaxProtector.sys | 328610 | Max Secure Software |
@@ -828,9 +919,9 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | mpFilter.sys | 328000 | Microsoft |
 | vrSDetri.sys | 327801 | ETRI |
 | vrSDetrix.sys | 327800 | ETRI |
-| AhkSvPro.sys | 327720 | Ahkun Co. |
-| AhkUsbFW.sys | 327710 | Ahkun Co. |
-| AhkAMFlt.sys | 327700 | Ahkun Co. |
+| AhkSvPro.sys | 327720 | Ahkun Co., Ltd. |
+| AhkUsbFW.sys | 327710 | Ahkun Co., Ltd. |
+| AhkAMFlt.sys | 327700 | Ahkun Co., Ltd. |
 | majoradvapi.sys | 327680 | Beijing Majorsec |
 | PSINPROC.SYS | 327620 | Panda Security |
 | PSINFILE.SYS | 327610 | Panda Security |
@@ -868,8 +959,8 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | TFsFlt.sys | 327100 | Shenzhen Tencent Computer Systems Company Limited |
 | avmf.sys | 327000 | Authentium |
 | BDFileDefend.sys | 326916 | Baidu (beijing) |
-| BDsdKit.sys | 326914 | Baidu online network technology (beijing)Co. |
-| bd0003.sys | 326912 | Baidu online network technology (beijing)Co. |
+| BDsdKit.sys | 326914 | Baidu online network technology (beijing)Co., Ltd |
+| bd0003.sys | 326912 | Baidu online network technology (beijing)Co., Ltd |
 | Bfilter.sys | 326910 | Baidu (Hong Kong) Limited |
 | NeoKerbyFilter | 326900 | NeoAutus |
 | egnfsflt.sys | 326830 | Egnyte Inc |
@@ -899,18 +990,18 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | bSyaed.sys | 326220 | BLACKFORT SECURITY |
 | bSyar.sys | 326210 | BLACKFORT SECURITY |
 | BdFileSpy.sys | 326200 | BullGuard |
-| npxgd.sys | 326160 | INCA Internet Co. |
-| npxgd64.sys | 326160 | INCA Internet Co. |
-| tkpl2k.sys | 326150 | INCA Internet Co. |
-| tkpl2k64.sys | 326150 | INCA Internet Co. |
-| GKFF.sys | 326140 | INCA Internet Co. |
-| GKFF64.sys | 326140 | INCA Internet Co. |
-| tkdac2k.sys | 326130 | INCA Internet Co. |
-| tkdacxp.sys | 326130 | INCA Internet Co. |
-| tkdacxp64.sys | 326130 | INCA Internet Co. |
-| tksp2k.sys | 326120 | INCA Internet Co. |
-| tkspxp.sys | 326120 | INCA Internet Co. |
-| tkspxp64.sys | 326120 | INCA Internet Co. |
+| npxgd.sys | 326160 | INCA Internet Co., Ltd |
+| npxgd64.sys | 326160 | INCA Internet Co., Ltd |
+| tkpl2k.sys | 326150 | INCA Internet Co., Ltd |
+| tkpl2k64.sys | 326150 | INCA Internet Co., Ltd |
+| GKFF.sys | 326140 | INCA Internet Co., Ltd |
+| GKFF64.sys | 326140 | INCA Internet Co., Ltd |
+| tkdac2k.sys | 326130 | INCA Internet Co., Ltd |
+| tkdacxp.sys | 326130 | INCA Internet Co., Ltd |
+| tkdacxp64.sys | 326130 | INCA Internet Co., Ltd |
+| tksp2k.sys | 326120 | INCA Internet Co., Ltd |
+| tkspxp.sys | 326120 | INCA Internet Co., Ltd |
+| tkspxp64.sys | 326120 | INCA Internet Co., Ltd |
 | tkfsft.sys | 326110 | INCA Internet Co., Ltd |
 | tkfsft64.sys - 64bit | 326110 | INCA Internet Co., Ltd |
 | tkfsavxp.sys - 32bit | 326100 | INCA Internet Co., Ltd |
@@ -932,6 +1023,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | vcreg.sys | 325810 | Greatsoft Corp.Ltd |
 | vchle.sys | 325800 | Greatsoft Corp.Ltd |
 | NxFsMon.sys | 325700 | Novatix Corporation |
+| LiveGuardAntiCheat.sys | 325650 | LiveGuard Software Ltd. |
 | AntiLeakFilter.sys | 325600 | Individual developer (Soft3304) |
 | NanoAVMF.sys | 325510 | Panda Software |
 | shldflt.sys | 325500 | Panda Software |
@@ -967,6 +1059,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | TvDriver.sys | 324130 | EveryZone INC. |
 | TvSPFltr.sys | 324120 | EveryZone INC. |
 | TvPtFile.sys | 324110 | EveryZone INC. |
+| TvStFltr.sys | 324101 | EveryZone INC. |
 | TvMFltr.sys | 324100 | Everyzone |
 | SophosED.sys | 324050 | Sophos |
 | SAVOnAccess.sys | 324010 | Sophos |
@@ -987,6 +1080,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | cwdriver.sys | 322900 | Leith Bade |
 | AYFilter.sys | 322810 | ESTsoft |
 | Rtw.sys | 322800 | ESTsoft |
+| EscFilter.sys | 322790.5 | ESTsecurity Corp |
 | RSRtw.sys | 322790 | ESTsecurity Corp |
 | RSPCRtw.sys | 322780 | ESTsecurity Corp |
 | HookSys.sys | 322700 | Beijing Rising Information Technology Corporation Limited |
@@ -1008,6 +1102,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | VrFsFtM.sys | 322110 | HAURI |
 | VrFsFtMX.sys(AMD64) | 322110 | HAURI |
 | vradfil2.sys | 322100 | HAURI |
+| zgflt.sys | 322050 | ZeroGuard Ltd |
 | fsgk.sys | 322000 | f-secure |
 | bouncer.sys | 321950 | CoreTrace Corporation |
 | PCTCore64.sys | 321910 | PC Tools Pty. Ltd. |
@@ -1015,11 +1110,16 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | ikfilesec.sys | 321900 | PC Tools Pty. Ltd. |
 | ZxFsFilt.sys | 321800 | Australian Projects |
 | antispyfilter.sys | 321700 | C-NetMedia Inc |
+| dfndr_am.sys | 321654 | PSafe Ltd. |
+| hlprotect.sys | 321650 | HarfangLab |
 | PZDrvXP.sys | 321600 | VisionPower Co.,Ltd. |
+| haggc.sys | 321510.1 | Quick Heal Technologies Pvt. Ltd. |
 | ggc.sys | 321510 | Quick Heal TechnologiesPvt. Ltd. |
 | catflt.sys | 321500 | Quick Heal TechnologiesPvt. Ltd. |
 | snsrflt.sys | 321495 | Quick Heal Technologies Pvt. Ltd. |
+| ztflt.sys | 321490.1 | Quick Heal Technologies Pvt. Ltd |
 | bdsflt.sys | 321490 | Quick Heal Technologies Pvt. Ltd. |
+| dartflt.sys | 321485 | Quick Heal Technologies Pvt. Ltd. |
 | arwflt.sys | 321480 | Quick Heal Technologies Pvt. Ltd. |
 | csagent.sys | 321410 | CrowdStrike Ltd. |
 | kmkuflt.sys | 321400 | Komoku Inc. |
@@ -1031,6 +1131,11 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | CyvrFsfd.sys | 321234 | Palo Alto Networks |
 | cmdccav.sys | 321210 | Comodo Group Inc. |
 | cmdguard.sys | 321200 | Comodo Group Inc. |
+| mfesec.sys | 321150.5 | McAfee, LLC |
+| cbfilter20.sys | 321120.5 | CMC Cyber Security |
+| cbprocess20.sys | 321120 | CMC Cyber Security |
+| cbregistry20.sys | 321120 | CMC Cyber Security |
+| nycu_filter.sys | 321110.5 | NYCU |
 | K7Sentry.sys | 321100 | K7 Computing Private Ltd. |
 | nsminflt.sys | 321050 | NHN |
 | nsminflt64.sys | 321050 | NHN |
@@ -1052,6 +1157,8 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | TRUFOS.SYS | 320770 | BitDefender SRL |
 | aswmonflt.sys | 320700 | Alwil |
 | kavnsi.sys | 320650 | AVNOS |
+| TaegisKM.x64.sys | 320640.5 | Secureworks Inc. |
+| TaegisKM.x86.sys | 320640.5 | Secureworks Inc. |
 | CiscoSAM.sys | 320618 | Cisco Systems |
 | immunetselfprotect.sys | 320616 | Cisco Systems |
 | immunetprotect.sys | 320614 | Cisco Systems |
@@ -1079,10 +1186,12 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | DeepInsFS.sys | 320320 | Deep Instinct Ltd. |
 | avfsmn.sys | 320310 | Anvisoft |
 | lbd.sys | 320300 | Lavasoft AB |
+| oavnflt.sys | 320250 | OpenAVN Inc |
 | pavdrv.sys | 320210 | Panzor Cybersecurity |
 | rvsmon.sys | 320200 | CJSC Returnil Software |
 | KawachFsMinifilter.sys | 320160 | Sequretek IT |
 | securoFSD_x64.sys | 320150 | knowwheresoft Ltd |
+| securoFS.sys | 320149 | knowwheresoft Ltd |
 | WRAEKernel.sys | 320112 | Webroot Inc. |
 | WRKrn.sys | 320111 | Webroot Inc. |
 | WRCore.sys | 320110 | Webroot Inc. |
@@ -1102,6 +1211,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | frxccd.sys | 306000 | FSLogix Inc. |
 | dvfilter.sys | 305002 | Microsoft |
 | fsrecord.sys | 305000 | Microsoft |
+| esff.sys | 304500 | Beijing Cloudock Techn Co |
 | InstMon.sys | 304201 | Numecent Inc. |
 | StreamingFSD.sys | 304200 | Numecent Inc. |
 | ubcminifilterdriver.sys | 304100 | Ullmore Ltd. |
@@ -1120,6 +1230,8 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | mDP_win_mini.sys | 302900 | Macro Impact |
 | ctxubs.sys | 302800 | Citrix Systems Inc. |
 | rrepfsf.sys | 302700 | Rose Datasystems Inc |
+| zrbd.sys | 302110.3 | Shanghai Fangye Network |
+| zrbdlock.sys | 302110.2 | Shanghai Fangye Network |
 | wsyncd.sys | 302100 | WANFast LLC |
 | cbfsfilter2017.sys | 301900 | Super Flexible Software |
 | AxFilter.sys | 301800 | Axcient Inc. |
@@ -1146,6 +1258,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | ibac.sys | 288600 | Idealstor, LLC. |
 | fkdriver.sys | 288500 | Filekeeper |
 | AAFileFilter.sys | 288300 | Dell Inc. |
+| cbfilter20.sys | 288290.5 | Mobile Content mgmt |
 | hyperoo.sys | 288400 | Hyperoo Ltd |
 | HyperBacCA.sys | 285000 | Red Gate Software Ltd |
 | ZMSFsFltr.sys | 284400 | Zenith InfoTech |
@@ -1185,6 +1298,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | Minifilter                  | Altitude | Company                                 |
 |-----------------------------|----------|-----------------------------------------|
 | anrfsdrv.sys | 268500 | ANR Co. LTD. |
+| wzPrtProc.sys | 268350.5 | ITSTATION Inc. |
 | taExeScanner.sys | 268350 | ITSTATION Inc. |
 | GuardFSFlt.sys | 268340 | ProShield |
 | usbguard.sys | 268330 | HangZhou Tease Tech |
@@ -1194,6 +1308,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | TN28.sys | 268290 | ID Authentication Tech |
 | PGDriver.sys | 268280 | Avecto Ltd |
 | itseczvdb.sys | 268270 | Innotium Inc |
+| unimon.sys | 268265.5 | Unify Technologies |
 | isarsd.sys | 268260 | ISARS |
 | zeoscanner.sys | 268255 | PCKeeper |
 | fileHiders.sys | 268250 | PCKeeper |
@@ -1201,7 +1316,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | hipara.sys | 268230 | Allsum LLC |
 | AliFileMonitorDriver.sys | 268220 | Alibaba |
 | writeGuard.sys | 268210 | TCXA Ltd. |
-| KKUDKProtectKer.sys | 268200 | Goldmessage technology co. |
+| KKUDKProtectKer.sys | 268200 | Goldmessage technology co., Ltd. |
 | HAWKFIMInt.sys | 268190 | HAWK Network Defense |
 | esaccctl.sys | 268180 | EgoSecure GmbH |
 | WSguard.sys | 268170 | Wiper Software UAB |
@@ -1209,9 +1324,10 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | farwflt.sys | 268150 | Malwarebytes |
 | ADSpiderEx2.sys | 268140 | Digitalonnet |
 | sdfilter.sys | 268130 | Igor Zorkov |
-| Safe.sys | 268120 | rian@alum.mit.edu |
+| Safe.sys | 268120 |  |
 | mydlpdelete-scanner.sys | 268110 | Medra Teknoloji |
 | mydlpscanner.sys | 268100 | Medra Teknoloji |
+| VrMacFlt.sys | 268080 | Hauri Inc |
 | hnpro.sys | 268040 | Solupia |
 | DLDriverNetMini.sys | 268030 | DeviceLock Inc |
 | ENFFLTDRV.sys | 268020 | Enforcive Systems |
@@ -1226,12 +1342,14 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | WBDrv.sys | 266700 | Axiana LLC |
 | DMSamFilter.sys | 266600 | Digimarc Corp. |
 | mumbl.sys | 266540 | ZenmuTech Inc. |
+| DLPDriverSmb.sys | 266400.5 | Acronis |
 | 5nine.cbt.sys | 266100 | 5nine Software Inc. |
 | bsfs.sys | 266000 | Quick Heal TechnologiesPvt. Ltd.  |
 | XXRegSFilter.sys | 265910 | Zhe Jiang Xinxin Software Tech. |
 | XXSFilter.sys | 265900 | Zhe Jiang Xinxin Software Tech. |
 | AloahaUSBBlocker.sys | 265800 | Wrocklage Intermedia |
 | frxdrv.sys | 265700 | FSLogix Inc. |
+| upmAction.sys | 265650.5 | Citrix Systems |
 | FolderSecure.sys | 265600 | Max Secure Software |
 | XendowFLTC.sys | 265570 | Credant Technologies |
 | RepDac | 265500 | Vision Solutions |
@@ -1280,6 +1398,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | fgcpac.sys | 262600 | Fortres Grand Corp. |
 | saappctl.sys | 262510 | SecureAge Technology |
 | sadlp.sys | 262500 | SecureAge Technology |
+| MtUsbBlockerFlt.sys | 261420.5 | Matisoft Cyber Security |
 | CRExecPrev.sys | 262410 | Cybereason |
 | PEG2.sys | 262400 | PE GUARD |
 | AdminRunFlt.sys | 262300 | Simon Jarvis |
@@ -1314,6 +1433,8 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | aictracedrv_cs.sys | 260500 | AI Consulting |
 | DWFIxxxx.sys | 260410 | SciencePark Corporation |
 | DWFIxxxx.sys | 260400 | SciencePark Corporation |
+| ElasticEndpoint.sys | 260350.5 | Elastic |
+| dlpflt.sys | 260340 | Digital Endpoint |
 | DSDriver.sys | 260330 | ManageEngine Zoho Corp |
 | mcfltlab.sys | 260320 | Beijing MicroColor |
 | FDriver.sys | 260310 | Fox-IT |
@@ -1330,7 +1451,8 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 
 | Minifilter                  | Altitude | Company                                 |
 |-----------------------------|----------|-----------------------------------------|
-| ntps_qfs.sys | 245100 | NTP Software |
+| dfx-qfs-fltr.sys | 245100 | DefendX Software |
+| ntps_qfs.sys | 245100 | DefendX Software |
 | PSSFsFilter.sys | 245000 | PSS Systems |
 | Sptqmg.sys | 245300 | Safend |
 | storqosflt.sys | 244000 | Microsoft |
@@ -1341,6 +1463,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 |-----------------------------|----------|-----------------------------------------|
 | file_protector.sys | 227000 | Acronis |
 | fbwf.sys | 226000 | Microsoft |
+| BoldendDrvr.sys | 221700.5 | Boldend, Inc. |
 | hmpalert.sys | 221600 | SurfRight |
 | Klsysrec.sys | 221500 | Kaspersky Lab |
 | SFDRV.SYS | 221400 | Utixo LLC |
@@ -1368,6 +1491,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | nvmsqrd.sys | 188900 | NVIDIA Corporation |
 | Ghost_file.sys | 188800 | Acronis |
 | RsFlt.sys | 187000 | Redstor Limited |
+| CloudTier.sys | 186900.5 | EaseFilter Technologies |
 | mnefs.sys | 186800 | Nippon Techno Lab |
 | Svfsf.sys | 186700 | Spharsoft Technologies |
 | uVaultFlt.sys | 186650 | DOR |
@@ -1408,7 +1532,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | Fstier.sys | 183000 | Microsoft |
 | hsmcdpflt.sys | 182700 | Metalogix |
 | archivmgr.sys | 182690 | Metalogix |
-| ntps_oddm.sys | 182600 | NTP Software |
+| ntps_oddm.sys | 182600 | DefendX Software |
 | XDFileSys.sys | 182500 | XenData Limited |
 | upmjit.sys | 182400 | Citrix Systems |
 | AtmosFS.sys | 182310 | EMC Corporation |
@@ -1434,7 +1558,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | BkfMap.sys | 181200 | Data Storage Group |
 | hsmfilter.sys | 181100 | GRAU Data Storage AG |
 | mwilcflt.sys | 181020 | Moonwalk Universal P/L |
-| mwildflt.sys | 181015 | Moonwalk |
+| mwildflt.sys | 181015 | Moonwalk Universal P/L |
 | mwilsflt.sys | 181010 | Moonwalk Universal P/L |
 | mwidmflt.sys | 181000 | Moonwalk Universal P/L |
 | HcpAwfs.sys | 181960 | Hitachi Data Systems |
@@ -1453,7 +1577,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | sis.sys | 180400 | Microsoft |
 | rbt_wfd.sys | 180300 | Riverbed Technology,Inc |
 
-## 170000 - 174999: FSFilter Imaging (ex: .ZIP)
+## 170000 - 174999: *FSFilter Imaging (ex: .ZIP)
 
 | Minifilter                  | Altitude | Company                                 |
 |-----------------------------|----------|-----------------------------------------|
@@ -1469,6 +1593,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | compress.sys | 165000 | Microsoft |
 | cmpflt.sys | 162000 | Microsoft |
 | IridiumIO.sys | 161700 | Confio |
+| zzenc.sys | 161650.5 | Imdtech LLC |
 | logcompressor.sys | 161600 | VelociSQL Inc. |
 | GcfFilter.sys | 161500 | GemacmbH |
 | ssddoubler.sys | 161400 | Sinan Karaca |
@@ -1493,10 +1618,12 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | ffecore.sys | 148900 | Winmagic |
 | bkfs.sys | 148880 | Hangzhou JoyBlock Ltd |
 | fangcloud.sys | 148860 | Hangzhou Yifangyun |
+| FileGuard.sys | 148820.5 | EaseFilter Technologies |
 | klvfs.sys | 148810 | Kaspersky Lab |
 | Klfle.sys | 148800 | Kaspersky Lab |
 | ISFP.sys | 148701 | ALPS SYSTEM INTEGRATIO |
-| ISIRM.sys | 148700 | ALPS SYSTEM INTERGRATION CO. |
+| ISIRM.sys | 148700 | ALPS SYSTEM INTERGRATION CO., LTD |
+| fhfs.sys | 148670.5 | SecureCircle |
 | ASUSSecDrive.sys | 148650 | ASUS |
 | ABFilterDriver.sys | 148640 | AlertBoot |
 | QDocumentFSF.sys | 148630 | BicDroid Inc. |
@@ -1558,14 +1685,15 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | TeamCryptor.sys | 145190 | iTwin Pte. Ltd. |
 | CVDLP.sys | 145180 | CommVault Systems, Inc. |
 | 5nine.encryptor.sys | 145170 | 5nine Software Inc. |
-| ctpfile.sys | 145160 | Beijing Wondersoft Technology Co. |
-| DPDrv.sys | 145150 | IBM Japan |
+| ctpfile.sys | 145160 | Beijing Wondersoft Technology Co., Ltd |
+| DPDrv.sys | 145150 | IBM Japan, Ltd. |
 | tsdlp.sys | 145140 | Forware |
 | KCDriver.sys | 145130 | Tallegra Ltd |
 | CmgFFE.sys | 145120 | Credant Technologies |
 | fgcenc.sys | 145110 | Fortres Grand Corp. |
 | sview.sys | 145100 | Cinea |
 | TalkeyFilterDriver.sys | 145040 | myTALKEY s.r.o. |
+| MtUsbFlt19.sys | 145020.5 | Matisoft Cyber Security |
 | FedsFilterDriver.sys | 145010 | Physical Optics Corp |
 | stocc.sys | 145000 | Senforce Technologies |
 | SnEfs.sys | 144900 | Informzaschita |
@@ -1608,8 +1736,10 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | spcflt.sys | 142100 | FUJITSU BSC Inc. |
 | ldsecusb.sys | 142000 | LANDesk Inc. |
 | fencr.sys | 141900 | SODATSW spol. s.r.o. |
-| RubiFlt.sys | 141800 | Hitachi |
+| bw_fssec.sys | 141850.5 | Wuhan Buwei Software Technology Co.,Ltd |
+| RubiFlt.sys | 141800 | Hitachi, Ltd. |
 | NCrypt.sys | 141700 | Nimshi Corp |
+| pske.sys | 141661 | Penta Security Systems |
 | mfild.sys | 141660 | Penta Security Systems |
 | cbfsfilter2017.sys | 141635 | Automaton Inc |
 | cbfsfilter2017.sys | 141634 | Automaton Inc |
@@ -1628,6 +1758,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | CmdMnEfs.sys | 141420 | Comodo Security |
 | DWENxxxx.sys | 141410 | SciencePark Corporation |
 | DWENxxxx.sys | 141400 | SciencePark Corporation |
+| westlight.sys | 141350 | Westlight AI |
 | hdFileSentryDrv32.sys | 141300 | Heilig Defense |
 | hdFileSentryDrv64.sys | 141300 | Heilig Defense |
 | SDSCloudDrv.sys | 141255 | Stormshield |
@@ -1647,6 +1778,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | Minifilter                  | Altitude | Company                                 |
 |-----------------------------|----------|-----------------------------------------|
 | Klvirt.sys | 138100 | Kaspersky Lab |
+| eseadriver3z.sys | 138080 | ESEA |
 | thsmmf.sys | 138060 | Talon Storage Solutions |
 | VMagic.sys | 138050 | AI Consulting |
 | GetSAS.sys | 138040 | SAS Institute Inc |
@@ -1664,6 +1796,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | aswSnx.sys | 137600 | ALWIL Software |
 | AppIsoFltr.sys | 137500 | Kernel Drivers |
 | ptcvfsd.sys | 137400 | PTC |
+| CloudFile.sys | 137350.5 | EaseFilter Technologies |
 | BDSandBox.sys | 137300 | BitDefender SRL |
 | sxfpss-virt.sys | 137200 | Skanix AS |
 | DKRtWrt.sys | 137100 | Diskeeper Corporation |
@@ -1672,6 +1805,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | dtiof.sys | 136900 | Instavia Software Inc. |
 | NxTopCP.sys | 136800 | Virtual Ccomputer Inc. |
 | svdriver.sys | 136700 | VMware, Inc. |
+| PPnP-LocalBoost2.sys | 136650.5 | Edgeless Opensource Group |
 | unifltr.sys | 136600 | Unidesk |
 | unidrive.sys (Renamed) | 136600 | Unidesk |
 | unirsd.sys | 136600 | Unidesk |
@@ -1693,6 +1827,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | luafv.sys | 135000 | Microsoft |
 | ivm.sys | 134000 | RingCube Technologies |
 | ivm.sys | 133990 | Citrix Systems |
+| RevBitsEPSMF.sys | 132730.5 | RevBits LLC |
 | RasRdpFs.sys | 132720 | Parallels International |
 | frxdrvvt.sys | 132700 | FSLogix Inc. |
 | pfmfs_???.sys | 132600 | Pismo Technic Inc. |
@@ -1700,8 +1835,8 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | appdrv01.sys | 132500 | Protection Technology |
 | virtual_file.sys | 132400 | Acronis |
 | pdiFsFilter.sys | 132300 | Proximal Data Inc. |
-| avgvtx86.sys | 132200 | AVG Technologies CZ |
-| avgvtx64.sys | 132200 | AVG Technologies CZ |
+| avgvtx86.sys | 132200 | AVG Technologies CZ, s.r.o. |
+| avgvtx64.sys | 132200 | AVG Technologies CZ, s.r.o. |
 | DataNet_Driver.sys | 132100 | AppSense Ltd |
 | EgenPage.sys | 132000 | Egenera, Inc. |
 | unidrive.sys-old | 131900 | Unidesk |
@@ -1714,6 +1849,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | Sptvrt.sys | 131300 | Safend |
 | antirswf.sys | 131210 | Panzor Cybersecurity |
 | aicvirt.sys | 131200 | AI Consulting |
+| MEMEPMAgent.sys | 130852 | Microsoft |
 | sfo.sys | 130100 | Microsoft |
 | DeVolume.sys | 130000 | Microsoft |
 
@@ -1730,6 +1866,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | Minifilter                  | Altitude | Company                                 |
 |-----------------------------|----------|-----------------------------------------|
 | insyncmf.sys | 105000 | InSync |
+| cbfilter20.sys | 101010 | Bentley Systems Inc |
 | SPILock8.sys | 100900 | Software Pursuits Inc. |
 | Klbackupflt.sys | 100800 | Kaspersky |
 | repkap | 100700 | Vision Solutions |
@@ -1743,13 +1880,16 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 |-----------------------------|----------|-----------------------------------------|
 | KpHrd.sys | 88300 | Ivanti |
 | cbfilter20.sys | 88250 | Division-M |
+| flflt.sys | 88240.5 | PNP SECURE INC |
 | pfcflt.sys | 88240 | PNP SECURE INC |
+| arm_minifilter.sys | 88232 | Assured Info Security |
 | pegasus.sys | 88230 | Assured Info Security |
 | RSBDrv.sys | 88220 | SMTechnology Co. |
 | psprotf.sys | 88210 | Panzor Cybersecurity |
 | DPMACL.sys | 88100 | Randtronics Pty |
 | dsbwnck.sys | 88000 | Easy Solution Inc. |
-| cbfsfilter2017.sys | 87910 | Automaton |
+| cbfilter20.sys | 87911 | Automaton Inc |
+| cbfsfilter2017.sys | 87910 | Automaton Inc |
 | cbfsfilter2017.sys | 87909 | Automaton Inc |
 | cbfsfilter2017.sys | 87908 | Automaton Inc |
 | cbfsfilter2017.sys | 87907 | Automaton Inc |
@@ -1760,12 +1900,14 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | cbfsfilter2017.sys | 87902 | Automaton Inc |
 | cbfsfilter2017.sys | 87901 | Automaton Inc |
 | cbfsfilter2017.sys | 87900 | Automaton Inc |
+| RansomStopDriver.sys | 87810 | Maddrix LLC |
 | rsbfsfilter.sys | 87800 | Corel Corporation |
 | hsmltflt.sys | 87720 | Hitachi Solutions |
 | hssfflt.sys | 87710 | Hitachi Solutions |
 | acmnflt.sys | 87708 | Hitachi Solutions |
 | ACSKFFD.sys | 87700 | Hitachi Solutions |
 | MyDLPMF.sys | 87600 | Comodo Group Inc. |
+| asioeg.sys | 87550.5 | Encourage Technologies |
 | ScuaRaw.sys | 87500 | SCUA Seguran&#231;a da Informa&#231;&#227;o |
 | HDSFilter.sys | 87400 | NeoAutus Automation System |
 | ikfsmflt.sys | 87300 | IronKey Inc. |
@@ -1776,14 +1918,15 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | ZdCore.sys | 87160 | Zends Technological Solutions |
 | dcrypt.sys | 87150 | ReactOS Foundation |
 | hpradeo.sys | 87140 | Pradeo |
-| SDFSAGDRV.SYS | 87130 | ALPS SYSTEM INTERGRATION CO. |
-| SDFSDEVFDRV.SYS | 87120 | ALPS SYSTEM INTERGRATION CO. |
-| SDIFSFDRV.SYS | 87110 | ALPS SYSTEM INTERGRATION CO. |
-| SDFSFDRV.SYS | 87100 | ALPS SYSTEM INTERGRATION CO. |
+| SDFSAGDRV.SYS | 87130 | ALPS SYSTEM INTERGRATION CO., LTD. |
+| SDFSDEVFDRV.SYS | 87120 | ALPS SYSTEM INTERGRATION CO., LTD. |
+| SDIFSFDRV.SYS | 87110 | ALPS SYSTEM INTERGRATION CO., LTD. |
+| SDFSFDRV.SYS | 87100 | ALPS SYSTEM INTERGRATION CO., LTD. |
 | CModule.sys | 87070 | Zhejiang Security Tech |
 | HHRRPH.sys | 87010 | H+H Software GmbH |
 | HHVolFltr.sys | 87000 | H+H Software GmbH |
 | CCRRSecMon.sys | 86960 | Cyber Crucible Inc. |
+| RevoNetDriver.sys | 86940.5 | J's Communication Co. |
 | SbieDrv.sys | 86900 | Sandboxie L.T.D |
 | assetpro.sys | 86800 | pyaprotect&#x2024;com |
 | dlp.sys | 86700 | Tellus Software AS |
@@ -1798,11 +1941,14 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | prelaunch.sys | 85900 | D3L |
 | csareg.sys | 85810 | Cisco Systems |
 | csaenh.sys | 85800 | Cisco Systems |
+| asi_ns_drv.sys | 85750.5 | ASHINI Co. Ltd. |
 | asEpsDrv.sys | 85750 | ASHINI Co. Ltd. |
 | CIDACL.sys | 85700 | GE Aviation (Digital Systems Germantown) |
 | CVDLP.sys | 85610 | CommVault Systems, Inc. |
 | QGPEFlt.sys | 85600 | Quest Software |
 | Drveng.sys | 85500 | CA |
+| PPDMFilter_x64.sys | 85550.5 | PolicyPak Software Inc |
+| PPDMFilter_x86.sys | 85550.5 | PolicyPak Software Inc |
 | vracfil2.sys | 85400 | HAURI |
 | TFsDisk.sys | 85300 | Teruten |
 | rcMiniDrv.sys | 85200 | REDGATE CO.,LTD. |
@@ -1839,6 +1985,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | ndevsec.sys | 81800 | Norman ASA |
 | ViewIntus_RTDG.sys | 81700 | Pentego Technologies Ltd |
 | BKSandFS.sys | 81640 | Binklac Workstation |
+| BWAnticheat.sys | 81638 | Binklac Workstation |
 | airlock.sys | 81630 | Airlock Digital Pty Ltd |
 | zam.sys | 81620 |  |
 | ANXfsm.sys | 81610 | Arcdo |
@@ -1849,17 +1996,20 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | f101fs.sys | 81300 | Fortres Grand Corp. |
 | sysgar.sys | 81200 | Nucleus Data Recover |
 | EmbargoM.sys | 81100 | ScriptLogic |
+| KSkyMonitor.sys | 81080 | Sky Monitor |
 | ngssdef.sys | 81050 | Wontok Inc |
 | ssb.sys | 81041 | Wontok Inc |
 | regflt.sys | 81040 | Wontok Inc |
 | fsds2a.sys | 81000 | Splitstreem Ltd |
+| HeimdalInsights.sys | 80950.5 | Heimdal Security A/S |
 | csacentr.sys | 80900 | Cisco Systems |
 | ScvFLT50.sys | 80850 | Secuve Ltd |
 | paritydriver.sys | 80800 | Bit9, Inc. |
 | nkfsprot.sys | 80710 | Konneka |
 | nkprot.sys | 80700 | KONNEKA Information Technologies |
-| acpadlock.sys | 80691 | IntSoft Co |
-| ksmf.sys | 80690 | IntSoft Co |
+| acpadlock.sys | 80691 | IntSoft Co., Ltd |
+| ksmf.sys | 80690 | IntSoft Co., Ltd |
+| amsdk.sys | 80682.5 | WatchDogDevelopment.com, LLC |
 | im.sys | 80680 | CrowdStrike |
 | SophosED.sys | 80670 | Sophos |
 | jazzfile.sys | 80660 | Jazz Networks |
@@ -1893,6 +2043,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | LibertyFSF.sys | 62300 | Bayalink Solutions Co |
 | axfsdrv2.sys | 62100 | Axence Software Inc. |
 | sds.sys | 62000 | Egress Software |
+| zzenc.sys | 61650.5 | Imdtech LLC |
 | TotalSystemAuditor.sys | 61600 | ANRC LLC |
 | MBAMApiary.sys | 61500 | Malwarebytes Corp. |
 | WA_FSW.sys | 61400 | Programas Administraci&#243;n y Mejoramiento |
@@ -1909,13 +2060,16 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | MFPAMCtrl.sys | 47500 | Micro Focus |
 | cbfsfilter2017.sys | 47400 | 12d Synergy |
 | pfmfs_???.sys | 47300 | Pismo Technic Inc. |
-| DLDriverMiniFlt.sys | 47200 | DeviceLock Inc |
+| AlfaVS.sys | 47290.5 | AlfaSP.com |
+| DLDriverMiniFlt.sys | 47200 | Acronis |
+| DLPDriverProt.sys | 47199.5 | Acronis |
 | hsmltlib.sys | 47110 | Hitachi Solutions |
 | hskdlib.sys | 47100 | Hitachi Solutions |
 | acmnlib.sys | 47090 | Hitachi Solutions |
 | aictracedrv_b.sys | 47000 | AI Consulting |
 | SBox.sys | 46950 | ASF Labs 2019 LTD |
 | hhdcfltr.sys | 46900 | Seagate Technology |
+| AmdFSMini.sys | 46890.5 | Advanced Micro Devices |
 | Npsvctrig.sys | 46000 | Microsoft |
 | klvfs.sys | 44900 | Kaspersky Lab |
 | klbackupflt.sys | 44890 | Kaspersky Lab |
@@ -1926,6 +2080,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | wof.sys | 40700 | Microsoft |
 | fileinfo | 40500 | Microsoft |
 | WinSetupBoot.sys | 40400 | Microsoft |
+| WinSetupMon.sys | 40300 | Microsoft |
 
 ## 20000 - 29999: FSFilter System
 

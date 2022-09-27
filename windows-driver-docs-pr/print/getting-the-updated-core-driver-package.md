@@ -1,10 +1,10 @@
 ---
-title: Getting the Updated Core Driver Package
-description: Getting the Updated Core Driver Package
-ms.date: 04/20/2017
+title: Get the updated core driver package
+description: Provides information about how to get the updated core driver package.
+ms.date: 09/07/2022
 ---
 
-# Getting the Updated Core Driver Package
+# Get the updated core driver package
 
 After you [obtain](constructing-a-package-aware-driver-with-updated-core-drivers.md) the Microsoft standalone update (MSU) file containing the updated core driver package, the next step is to expand the contents of the MSU file.
 

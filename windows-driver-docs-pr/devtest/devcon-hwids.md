@@ -81,8 +81,8 @@ devcon hwids =usb
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 1: Find all hardware IDs](devcon-examples.md#ddk_example_1_find_all_hardware_ids_tools)
+[Example 1: Find all hardware IDs](devcon-examples.md#example-1-find-all-hardware-ids)
 
-[Example 2: Find hardware IDs by using a pattern](devcon-examples.md#ddk_example_2_find_hardware_ids_by_using_a_pattern_tools)
+[Example 2: Find hardware IDs by using a pattern](devcon-examples.md#example-2-find-hardware-ids-by-using-a-pattern)
 
-[Example 3: Find hardware IDs by using a class](devcon-examples.md#ddk_example_3_find_hardware_ids_by_using_a_class_tools)
+[Example 3: Find hardware IDs by using a class](devcon-examples.md#example-3-find-hardware-ids-by-using-a-class)

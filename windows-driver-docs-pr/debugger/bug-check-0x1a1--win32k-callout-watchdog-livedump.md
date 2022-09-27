@@ -13,9 +13,6 @@ api_type:
 
 # Bug Check 0x1A1: WIN32K\_CALLOUT\_WATCHDOG\_LIVEDUMP
 
-> [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
-
 The WIN32K\_CALLOUT\_WATCHDOG\_LIVEDUMP live dump has a value of 0x000001A1. A callout to Win32k did not return promptly.
 
 ## WIN32K\_CALLOUT\_WATCHDOG\_LIVEDUMP Parameters

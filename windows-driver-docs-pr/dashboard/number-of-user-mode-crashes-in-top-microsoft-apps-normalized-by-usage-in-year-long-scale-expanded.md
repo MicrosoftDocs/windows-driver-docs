@@ -22,7 +22,7 @@ This measure is normalized by usage, in a year-long scale.
 |**Measurement criteria**|Aggregation of instances|
 |**Minimum population**|50,000 hours of Top Microsoft apps runtime|
 |**Passing criteria**|<= 1.5 crash per year of runtime|
-|**Measure ID**|22727981|
+|**Measure ID**|21839387|
 
 ## Calculation
 

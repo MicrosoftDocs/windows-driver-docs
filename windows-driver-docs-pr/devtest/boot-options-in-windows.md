@@ -16,7 +16,7 @@ keywords:
 - system-specific boot loaders WDK
 - boot loaders WDK
 - firmware-independent boot options WDK
-ms.date: 03/16/2022
+ms.date: 06/10/2022
 ---
 
 # Overview of Boot Options in Windows
@@ -28,19 +28,21 @@ The Windows boot loader architecture includes a firmware-independent boot config
 
 ## Boot Loading Architecture
 
-Windows includes boot loader components that are designed to load Windows quickly and securely. The previous Windows NT boot loader, *ntldr*, is replaced by three components:
+Windows includes boot loader components that are designed to load Windows quickly and securely. It uses three components:
 
-- Windows Boot Manager (Bootmgr.exe)
+- Windows Boot Manager 
 
-- Windows operating system loader (Winload.exe)
+- Windows operating system loader 
 
-- Windows resume loader (Winresume.exe)
+- Windows resume loader 
 
 In this configuration, the Windows Boot Manager is generic and unaware of the specific requirements for each operating system while the system-specific boot loaders are optimized for the system that they load.
 
-When a computer with multiple boot entries includes at least one entry for Windows, the Windows Boot Manager, which resides in the root directory, starts the system and interacts with the user. It displays the boot menu, loads the selected system-specific boot loader, and passes the boot parameters to the boot loader.
+When a computer with multiple boot entries includes at least one entry for Windows, the Windows Boot Manager, starts the system and interacts with the user. It displays the boot menu, loads the selected system-specific boot loader, and passes the boot parameters to the boot loader.
 
-The boot loaders reside in the root directory of each Windows partition. Once selected, the boot loaders take over the boot process and load the operating system in accordance with the selected boot parameters.
+The boot loaders reside in each Windows partition. Once selected, the boot loaders take over the boot process and load the operating system in accordance with the selected boot parameters.
+
+For additional detail on the Windows startup process refer to *Windows Internals*, published by Microsoft Press.
 
 ## Boot Configuration Data
 
@@ -56,14 +58,14 @@ BCD includes its own set of boot options. For more information about these boot 
 
 ## Editing Boot Options
 
-To edit boot options in Windows, use BCDEdit (BCDEdit.exe), a tool included in Windows. 
+To edit boot options in Windows, one option is to use BCDEdit (BCDEdit.exe), a tool included in Windows. 
 
 To use BCDEdit, you must be a member of the Administrators group on the computer.
 
 > [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
-You can also use the System Configuration utility (MSConfig.exe) to change boot settings.
+You can also use the System Configuration utility (MSConfig.exe) to change boot settings. In addition, many options can be set using the Advanced Startup settings UI.
 
 To change boot options programmatically in Windows, use the Windows Management Instrument (WMI) interface to boot options. This BCD WMI interface is the best method to programmatically change the boot options. For information about the BCD WMI interface, see [Boot Configuration Data WMI Provider](/previous-versions/windows/desktop/bcd/boot-configuration-data-portal) in the Windows SDK documentation.
 

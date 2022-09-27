@@ -25,6 +25,8 @@
     href: code-signing-reqs.md 
   - name: "Manage code signing certificates"
     href: code-signing-cert-manage.md 
+  - name: Validate a Microsoft signature
+    href: code-signing-validate.md
   - name: "Attestation sign Windows 10+ drivers"
     href: code-signing-attestation.md 
 - name: "File signing"
@@ -182,8 +184,6 @@
           href: graphics-drivers-health-user-mode-reliability-for-crashes-in-creative-apps-expanded.md
         - name: "Number of user mode crashes in top Microsoft apps"
           href: number-of-user-mode-crashes-in-top-microsoft-apps-normalized-by-usage-in-year-long-scale-expanded.md
-        - name: "Number of user mode crashes in Microsoft Edge"
-          href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale-expanded.md
         - name: "User mode crashes in Microsoft Edge Chromium"
           href: graphics-user-mode-crashes-edge-chromium-standard.md
         - name: "Number of user mode crashes in Windows components"
@@ -196,6 +196,8 @@
           href: number-user-mode-crashes-in-win32-gaming-applications.md
         - name: "Percent of devices with WinML Runtime Errors"
           href: pct-devices-winml-runtime-error.md
+        - name: "PresentAT Netflix app SDRM machines hitting one or more media engine errors"
+          href: presentat-netflix-app-sdrm-machines-hitting-one-or-more-media-engine-errors.md
       - name: "Ecosystem audience measures"
         items:
         - name: "Myriad of machines that had a stop error caused by a graphics driver crash (ecosystem)"
@@ -208,8 +210,6 @@
           href: graphics-ecosystem-integrated-gpu-with-tdr.md
         - name: "Myriad of drivers that were rolled back or re-installed within 2 days of installation"
           href: myriad-drivers-rolled-back-ecosystem.md
-        - name: "Number of user mode crashes in Microsoft Edge"
-          href: user-mode-crashes-in-microsoft-edge-normalized-by-usage-in-a-year-long-scale.md
         - name: "User mode crashes in Microsoft Edge Chromium (ecosystem)"
           href: graphics-user-mode-crashes-edge-chromium-ecosystem.md
         - name: "Number of user mode crashes in top Microsoft apps"
@@ -312,6 +312,8 @@
       href: update-submission-data.md
     - name: "Update product data"
       href: update-product-data.md
+    - name: "Manage preproduction signing submissions"
+      href: manage-preprod-submissions.md
   - name: "APIs to get shipping label data"
     items: 
     - name: "Get shipping label data"
@@ -336,3 +338,5 @@
   href: windows-device-experience-list.md
 - name: "Windows Certified Products List"
   href: windows-certified-products-list.md
+- name: "Contact support"
+  href: hardware-submission-support.md

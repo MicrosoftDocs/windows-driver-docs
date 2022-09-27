@@ -1,7 +1,7 @@
 ---
 title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
-ms.date: 08/20/2021
+ms.date: 07/20/2022
 ---
 
 # Driver security checklist
@@ -32,7 +32,7 @@ In addition to avoiding the issues associated with a driver being attacked, many
 
 ![empty checkbox.](images/checkbox.png)[Follow driver secure coding guidelines](#follow-driver-secure-coding-guidelines)
 
-![empty checkbox.](images/checkbox.png)[Validate HVCI compatibility](#validate-hvci-compatibility)
+![empty checkbox.](images/checkbox.png)[Implement HVCI compatible code](#implement-hvci-compatible-code)
 
 ![empty checkbox.](images/checkbox.png)[Follow technology specific code best practices](#follow-technology-specific-code-best-practices)
 
@@ -53,6 +53,8 @@ In addition to avoiding the issues associated with a driver being attacked, many
 ![empty checkbox.](images/checkbox.png)[Use code validation tools](#use-additional-code-validation-tools)
 
 ![empty checkbox.](images/checkbox.png)[Review debugger techniques and extensions](#review-debugger-techniques-and-extensions)
+
+![empty checkbox.](images/checkbox.png)[Understand how drivers are reported using the Microsoft Vulnerable and Malicious Driver Reporting Center](#microsoft-vulnerable-and-malicious-driver-reporting-center)
 
 ![empty checkbox.](images/checkbox.png)[Review secure coding resources](#review-secure-coding-resources)
 
@@ -166,6 +168,13 @@ Handle zero-length buffers correctly. For more information, see [Errors in Direc
 
 - Validate any address in the user space before trying to use it, using APIs such as [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) when appropriate.
 
+
+#### MSR model-specific register reads and writes
+ 
+Compiler intrinsics, such as [__readmsr](/cpp/intrinsics/readmsr) and [__writemsr](/cpp/intrinsics/writemsr) can be used to access the model-specific registers. If this access is required, the driver must always check that the register to read or write to is constrained to the expected index or range. 
+
+For more information, and code examples, see [Providing the ability to read/write MSRs](driver-security-dev-best-practices.md#providing-the-ability-to-read-and-write-msrs) in [Development Security Best Practices for Windows driver developers](driver-security-dev-best-practices.md).
+
 #### TOCTOU vulnerabilities
 
 There is a [potential time of check to time of use](https://en.wikipedia.org/wiki/Time_of_check_to_time_of_use) (TOCTOU) vulnerability when using direct I/O (for IOCTLs or for Read/Write).  Be aware that the driver is accessing the user data buffer, the user can simultaneously be accessing it.
@@ -178,7 +187,7 @@ To manage this risk, copy any parameters that need to be validated from the user
 
 - Device drivers must properly handle various user-mode, as well as kernel to kernel I/O, requests.
 
-To allow drivers to support HVCI virtualization, there are additional memory requirements. For more information, see [HVCI Compatibility](#validate-hvci-compatibility) later in this article.
+To allow drivers to support HVCI virtualization, there are additional memory requirements. For more information, see [Implement HVCI compatible code](#implement-hvci-compatible-code) later in this article.
 
 ### Handles
 
@@ -328,7 +337,7 @@ For more information, see the following articles:
 
 [Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md)
 
-## Validate HVCI compatibility
+## Implement HVCI compatible code
 
 **Security checklist item \#8:** *Validate that your driver uses memory so that it is HVCI compatible.*
 
@@ -346,9 +355,9 @@ To implement HVCI compatible code, make sure your driver code does the following
 - Does not load data files as executable
 - Section alignment is a multiple of 0x1000 (PAGE\_SIZE). E.g. DRIVER\_ALIGNMENT=0x1000
 
-For more information about using the tool and a list of incompatible memory calls, see [Evaluate HVCI driver compatibility](use-device-guard-readiness-tool.md).
+For more information about using the tool and a list of incompatible memory calls, see [Implement HVCI compatible code](implement-hvci-compatible-code.md).
 
-For more information about the related system fundamentals security test, see [Device Guard - Compliance Test](/windows-hardware/test/hlk/testref/10c242b6-49f6-491d-876c-c39b22b36abc) and [Driver Compatibility with Device Guard](/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard).
+For more information about the related system fundamentals security test, see [HyperVisor Code Integrity Readiness Test](/windows-hardware/test/hlk/testref/b972fc52-2468-4462-9799-6a1898808c86) and [Hypervisor-Protected Code Integrity (HVCI)](/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard).
 
 ## Follow technology-specific code best practices
 
@@ -417,7 +426,7 @@ If you don't have suitable staff to review you code internally, consider engagin
 
 **Security checklist item \#12:** *Use the Windows partner portal to properly sign your driver for distribution.*
 
-Before you release a driver package to the public, we recommend that you submit the package for certification. For more information, see [Test for performance and compatibility](/windows-hardware/test/index), [Get started with the Hardware program](../dashboard/get-started-with-the-hardware-dashboard.md), [Hardware Dashboard Services](../dashboard/index.yml), and [Attestation signing a kernel driver for public release](../dashboard/attestation-signing-a-kernel-driver-for-public-release.md).
+Before you release a driver package to the public, we recommend that you submit the package for certification. For more information, see [Test for performance and compatibility](/windows-hardware/test/index), [Get started with the Hardware program](../dashboard/get-started-dashboard-submissions.md), [Hardware Dashboard Services](../dashboard/index.yml), and [Attestation signing a kernel driver for public release](../dashboard/code-signing-attestation.md).
 
 ## Use code analysis in Visual Studio to investigate driver security
 
@@ -429,7 +438,7 @@ For more information, see [How to run Code Analysis for drivers](../devtest/how-
 
 For more information, see [Code Analysis for drivers overview](../devtest/code-analysis-for-drivers-overview.md). For additional background on code analysis, see [Visual Studio 2013 Static Code Analysis in depth](/archive/blogs/hkamel/visual-studio-2013-static-code-analysis-in-depth-what-when-and-how).
 
-To become familiar with code analysis, you can use one of the sample drivers for example, the featured toaster sample, <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured> or the ELAM Early Launch Anti-Malware sample <https://github.com/Microsoft/Windows-driver-samples/tree/master/security/elam>.
+To become familiar with code analysis, you can use one of the sample drivers for example, the featured toaster sample, <https://github.com/Microsoft/Windows-driver-samples/tree/main/general/toaster/toastDrv/kmdf/func/featured> or the ELAM Early Launch Anti-Malware sample <https://github.com/Microsoft/Windows-driver-samples/tree/main/security/elam>.
 
 1. Open the driver solution in Visual Studio.
 
@@ -466,7 +475,7 @@ Note that only certain types of drivers are supported by SDV. For more informati
 - [Rules for Audio Drivers](../devtest/rules-for-audio-drivers.md)
 - [Rules for AVStream Drivers](../devtest/rules-for-avstream-drivers.md)
 
-To become familiar with SDV, you can use one of the sample drivers (for example, the featured toaster sample: <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured>).
+To become familiar with SDV, you can use one of the sample drivers (for example, the featured toaster sample: <https://github.com/Microsoft/Windows-driver-samples/tree/main/general/toaster/toastDrv/kmdf/func/featured>).
 
 1. Open the targeted driver solution in Visual Studio.
 
@@ -566,7 +575,7 @@ Follow these steps to validate that the security compile options are properly co
    BinSkim PE/MSIL Analysis Driver 1.6.0.0
 
    --sympath                      Symbols path value, e.g., SRV*http://msdl.microsoft.com/download/symbols or Cache*d:\symbols;Srv*http://symweb. See
-                                 https://docs.microsoft.com/windows-hardware/drivers/debugger/advanced-symsrv-use for syntax information. Note that BinSkim will clear the
+                                 https://learn.microsoft.com/windows-hardware/drivers/debugger/advanced-symsrv-use for syntax information. Note that BinSkim will clear the
                                  _NT_SYMBOL_PATH environment variable at runtime. Use this argument for symbol information instead.
 
    --local-symbol-directories     A set of semicolon-delimited local directory paths that will be examined when attempting to locate PDBs.
@@ -700,6 +709,12 @@ The !tokenfields extension displays the names and offsets of the fields within t
 The !sid extension displays the security identifier (SID) at the specified address. For more information, see [**!sid**](../debugger/-sid.md).
 
 The !sd extension displays the security descriptor at the specified address. For more information, see [**!sd**](../debugger/-sd.md).
+
+## Microsoft Vulnerable and Malicious Driver Reporting Center
+
+Anyone can submit a questionable driver using the Microsoft Vulnerable and Malicious Driver Reporting Center. Refer to this blog entry for information on how  drivers are submitted for analysis - [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/)
+
+The Reporting Center can scan and analyze Windows drivers built for x86 and x64 architectures. Vulnerable and malicious scanned drivers are flagged for analysis and investigation by Microsoft’s Vulnerable Driver team. After vulernable drivers are confirmed, an appropriate notification occurs, they are added to the vulnerable driver blocklist. For more information about that, see [Microsoft recommended driver block rules](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules). These rules are aplied by default to Hypervisor-protected code integrity (HVCI) enabled devices and Windows 10 in S mode. 
 
 ## Review secure coding resources
 

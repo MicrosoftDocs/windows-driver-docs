@@ -268,8 +268,6 @@
   items: 
   - name: "Overview of USB Event Tracing for Windows"
     href: usb-event-tracing-for-windows.md
-  - name: "Capture and view USB traces with Microsoft Message Analyzer"
-    href: ./usb-event-tracing-for-windows.md
   - name: "How to capture a USB event trace with Logman"
     href: how-to-capture-a-usb-event-trace.md
   - name: "Using activity ID GUIDs in USB ETW traces"

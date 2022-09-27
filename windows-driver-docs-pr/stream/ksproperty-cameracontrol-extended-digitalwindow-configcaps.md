@@ -18,7 +18,7 @@ ms.topic: article
 
 **KSPROPERTY_CAMERACONTROL_EXTENDED_DIGITALWINDOW_CONFIGCAPS** is a property ID that specifies the scaling limits of the camera given all available resolutions.  This control must always be available to report the capabilities of the Digital Window control..
 
-Examples of setting KSPROPERTY controls can be found in the [AVStream Camera Sample Driver](https://github.com/microsoft/Windows-driver-samples/tree/master/avstream/avscamera) on GitHub.
+Examples of setting KSPROPERTY controls can be found in the [AVStream Camera Sample Driver](https://github.com/Microsoft/Windows-driver-samples/tree/main/avstream/avscamera) on GitHub.
 
 ## Usage summary table
 
@@ -38,7 +38,7 @@ The following table contains the requirements for the [KSCAMERA_EXTENDEDPROP_HEA
 |--|--|
 | Version | This must be 1. |
 | PinId | KSCAMERA_EXTENDEDPROP_FILTERSCOPE (0xFFFFFFFF) |
-| Size | Must be sizeof([KSCAMERA_EXTENDEDPROP_HEADER](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header)) +  sizeof(**KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_CONFIGCAPHEADER**) + (sizeof(**KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_CONFIGCAPS**) * Count) |
+| Size | Must be sizeof([KSCAMERA_EXTENDEDPROP_HEADER](/windows-hardware/drivers/ddi/content/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header)) +  sizeof(**KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_CONFIGCAPSHEADER**) + (sizeof(**KSCAMERA_EXTENDEDPROP_DIGITALWINDOW_CONFIGCAPS**) * Count) |
 | Result | Must contain 0.  This field is only used to return the result of the last asynchronous SET operation. |
 | Capability | Must be 0.  |
 | Flags | Must be 0.  |

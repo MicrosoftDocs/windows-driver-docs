@@ -27,7 +27,7 @@ The services that the extensible switch provides includes routing packets to and
 
 Under VMQ, the physical network adapter transfers the data that matches a receive filter test for a VMQ directly to that queue. This prevents software processing in the extensible switch. Data that does not pass any filter tests goes to the default queue where the extensible switch must process the data. In addition to preventing the routing and copying in the extensible switch, the receive interrupts for VM queues are assigned to different processors.
 
-For more information about the VMQ interface, see [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md).
+For more information about the VMQ interface, see [Virtual Machine Queue (VMQ)](virtual-machine-queue-architecture.md).
 
  
 

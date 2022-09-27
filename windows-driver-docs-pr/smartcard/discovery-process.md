@@ -1,7 +1,7 @@
 ---
 title: Discovery Process
 description: Discovery Process
-ms.date: 04/20/2022
+ms.date: 09/01/2022
 ---
 
 # Discovery Process
@@ -23,39 +23,35 @@ When a smart card is inserted into the reader, Windows performs the following di
 The following table lists the AID values that the different discovery processes use.
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
-<th align="left">AID name</th>
-<th align="left">AID value</th>
-<th align="left">Description</th>
-</tr>
+  <tr>
+    <th>AID name</th>
+    <th>AID value</th>
+    <th>Description</th>
+  </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">PIV AID</td>
-<td align="left">A0 00 00 03 08 00 00 10 00 xx yy</td>
-<td align="left">PIV AID, which does not include version information. The Microsoft smart card framework ignores the least-significant 2 bytes.</td>
-</tr>
-<tr class="even">
-<td align="left">MS GIDS AID</td>
-<td align="left">A0 00 00 03 97 42 54 46 59 xx yy</td>
-<td align="left"><p>Microsoft (MS) GIDS AID, which does not include version information.</p>
-<p>The least-significant 2 bytes are not sent to the card, but are reserved by the host as follows:</p>
-<ul>
-<li>The first of these bytes (xx) is used by the Windows smart card framework for the GIDS version number. This byte must be set to the GIDS specification revision number which is either 0x01 or 0x02.</li>
-<li>The second byte (yy) is reserved for use by the card application.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left">SC PNP AID</td>
-<td align="left">A0 00 00 03 97 43 49 44 5F 01 00</td>
-<td align="left">Smart card Plug and Play AID.</td>
-</tr>
+  <tr>
+    <td>PIV AID</td>
+    <td>A0 00 00 03 08 00 00 10 00 xx yy</td>
+    <td>PIV AID, which does not include version information. The Microsoft smart card framework ignores the least-significant 2 bytes.</td>
+  </tr>
+  <tr>
+    <td>MS GIDS AID</td>
+    <td>A0 00 00 03 97 42 54 46 59 xx yy</td>
+    <td><p>Microsoft (MS) GIDS AID, which does not include version information.</p>
+      <p>The least-significant 2 bytes are not sent to the card, but are reserved by the host as follows:</p>
+      <ul>
+        <li>The first of these bytes (xx) is used by the Windows smart card framework for the GIDS version number. This byte must be set to the GIDS specification revision number which is either 0x01 or 0x02.</li>
+        <li>The second byte (yy) is reserved for use by the card application.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>SC PNP AID</td>
+    <td>A0 00 00 03 97 43 49 44 5F 01 00</td>
+    <td>Smart card Plug and Play AID.</td>
+  </tr>
 </tbody>
 </table>
 
@@ -121,55 +117,33 @@ Beginning with Windows 7, the following describes the Winscard discovery proces
 
 The following table describes the various registry keys that the Winscard discovery process uses.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Registry key</th>
-<th align="left">Use</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft \Cryptography\Calais\SmartCards</td>
-<td align="left">Winscard uses this key as the Calais\SmartCards key in step 1.</td>
-</tr>
-<tr class="even">
-<td align="left">HKEY_LOCAL_MACHINE\ SOFTWARE\Microsoft \Cryptography\Calais\PIV Device ATR Cache</td>
-<td align="left"><p>If a match is found in step 4, the full ATR of the matched card is stored in this registry key as a binary value. The name of the entry is randomly selected.</p>
-<p>After this entry is cached, it is used in step 3 to improve performance.</p></td>
-</tr>
-<tr class="odd">
-<td align="left">HKEY_LOCAL_MACHINE\ SOFTWARE\Microsoft \Cryptography\Calais\IDMP ATR Cache</td>
-<td align="left"><p>If a match is found in step 5, the full ATR of the matched card is stored in under this registry key as a binary value. The name of the entry is randomly selected.</p>
-<p>After this entry is cached, it is used in step 3 to improve performance.</p></td>
-</tr>
-</tbody>
-</table>
+| Registry key | Use |
+|--|--|
+| HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft \Cryptography\Calais\SmartCards | Winscard uses this key as the Calais\SmartCards key in step 1. |
+| HKEY_LOCAL_MACHINE\ SOFTWARE\Microsoft \Cryptography\Calais\PIV Device ATR Cache | If a match is found in step 4, the full ATR of the matched card is stored in this registry key as a binary value. The name of the entry is randomly selected. </br></br> After this entry is cached, it is used in step 3 to improve performance. |
+| HKEY_LOCAL_MACHINE\ SOFTWARE\Microsoft \Cryptography\Calais\IDMP ATR Cache | If a match is found in step 5, the full ATR of the matched card is stored in under this registry key as a binary value. The name of the entry is randomly selected. </br></br> After this entry is cached, it is used in step 3 to improve performance. |
 
 ## Windows Smart Card Class Minidriver Discovery Process
 
 The Windows smart card class minidriver performs the following discovery process when [**CardAcquireContext**](/previous-versions/dn468701(v=vs.85)) is called. The minidriver performs this discovery process to mark the associated card as PIV- or Microsoft GIDS-compatible:
 
 1. The minidriver issues a SELECT command for the PIV AID. If the command succeeds, the card is marked as PIV-compatible and the discovery process stops.
-2. Otherwise, the minidriver issues a SELECT command for the MS GIDS AID. If the command succeeds or fails to locate the AID, the minidriver marks the card as MS GIDS.
 
-**Note**  
-- If the smart card was previously discovered through the Winscard discovery process with the class minidriver, it might not respond to the SELECT command for either the PIV or GIDS AID. In this situation, it must be a card from a vendor that implements the GIDS card-edge with a custom AID. Such cards could extend the Microsoft smart card data model with additional data objects.
-- PIV and GIDS smart card vendors can use the Windows smart card class minidriver and add branding by providing an INF-only installation package. For more information about using the class minidriver for compatible cards, see the INF sample in [Smart Card Plug and Play](smart-card-plug-and-play.md). Only historical bytes are used for Plug and Play matching in the INF.
+1. Otherwise, the minidriver issues a SELECT command for the MS GIDS AID. If the command succeeds or fails to locate the AID, the minidriver marks the card as MS GIDS.
 
-    The INF file that the vendor provides creates entries under the Calais\\SmartCards registry subkey with the following information.
+If the smart card was previously discovered through the Winscard discovery process with the class minidriver, it might not respond to the SELECT command for either the PIV or GIDS AID. In this situation, it must be a card from a vendor that implements the GIDS card-edge with a custom AID. Such cards could extend the Microsoft smart card data model with additional data objects.
 
-    | Entry name                      | Type   | Value                                     |
-    |---------------------------------|--------|-------------------------------------------|
-    | 80000001                        | String | Card's minidriver location, either a filename in the driver repository or full path to a vendor supplied minidriver. The inbox driver is msclmd.dll. |
-    | ATR                             | Binary | Card's ATR                                |
-    | ATRMask                         | Binary | Card's ATR Mask                           |
-    | Crypto Provider                 | String | Microsoft Base Smart Card Crypto Provider |
-    | Smart Card Key Storage Provider | String | Microsoft Smart Card Key Storage Provider |
+PIV and GIDS smart card vendors can use the Windows smart card class minidriver and add branding by providing an INF-only installation package. For more information about using the class minidriver for compatible cards, see the INF sample in [Smart Card Plug and Play](smart-card-plug-and-play.md). Only historical bytes are used for Plug and Play matching in the INF.
+
+The INF file that the vendor provides creates entries under the Calais\\SmartCards registry subkey with the following information.
+
+| Entry name | Type | Value |
+|--|--|--|
+| 80000001 | String | Card's minidriver location.  This can be the full path to a vendor supplied minidriver or the name of a file in either the system32 directory or the [driver store](../install/driver-store.md). We recommend that a minidriver supplied by a [driver package](../install/driver-packages.md) provides a full path to the minidriver and has the minidriver [run from driver store](../develop/run-from-driver-store.md). The inbox minidriver, msclmd.dll, is stored under %windir%\system32 directory. |
+| ATR | Binary | Card's ATR |
+| ATRMask | Binary | Card's ATR Mask |
+| Crypto Provider | String | Microsoft Base Smart Card Crypto Provider |
+| Smart Card Key Storage Provider | String | Microsoft Smart Card Key Storage Provider |
 
 ## Selection Mechanisms
 

@@ -96,8 +96,8 @@ devcon status =printer
 
 ### <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
-[Example 17: Display the status of all devices on the local computer](devcon-examples.md#ddk_example_17_display_the_status_of_all_devices_on_the_local_computer)
+[Example 17: Display the status of all devices on the local computer](devcon-examples.md#example-17-display-the-status-of-all-devices)
 
-[Example 18: Display the status of a device by device instance ID](devcon-examples.md#ddk_example_18_display_the_status_of_a_device_by_device_instance_id_to)
+[Example 18: Display the status of a device by device instance ID](devcon-examples.md#example-18-display-the-status-of-a-device-by-device-instance-id)
 
-[Example 19: Display the status of related devices](devcon-examples.md#ddk_example_19_display_the_status_of_related_devices_on_a_remote_compu)
+[Example 19: Display the status of related devices](devcon-examples.md#example-19-display-the-status-of-related-devices)

@@ -16,7 +16,7 @@ keywords:
 - device management WDK DevCon
 - listing device information WDK
 ms.custom: contperf-fy22q3
-ms.date: 02/11/2022
+ms.date: 07/26/2022
 ---
 
 # Windows Device Console (Devcon.exe)
@@ -24,7 +24,7 @@ ms.date: 02/11/2022
 DevCon (Devcon.exe), the Device Console, is a command-line tool that displays detailed information about devices on computers running Windows. You can use DevCon to enable, disable, install, configure, and remove devices.
 
 > [!IMPORTANT]
-> PnPUtil ships with every release of Windows and makes use of the most reliable and secure APIs available and it’s use is recommended. For more information on using the PnPutil, instead of devcon, see [PnPUtil](pnputil.md).
+> PnPUtil ships with every release of Windows and makes use of the most reliable and secure APIs available and it's use is recommended. For more information on using PnPutil instead of devcon, see [PnPUtil](pnputil.md).
 
 ## Where can I download DevCon?
 
@@ -43,49 +43,44 @@ DevCon (Devcon.exe) is included when you install the WDK, Visual Studio, and the
 - [DevCon Commands](devcon-general-commands.md)
 - [DevCon Examples](devcon-examples.md)
 
-## <span id="What_you_can_do_with_DevCon"></span><span id="what_you_can_do_with_devcon"></span><span id="WHAT_YOU_CAN_DO_WITH_DEVCON"></span>What you can do with DevCon
-
+## What you can do with DevCon
 
 Windows driver developers and testers can use DevCon to verify that a driver is installed and configured correctly, including the proper INF files, driver stack, driver files, and driver package. You can also use the DevCon commands (enable, disable, install, start, stop, and continue) in scripts to test the driver.
 
 DevCon is a command-line tool that performs device management functions on local computers.
- 
 
 Devcon features include:
 
--   **Display driver and device info** DevCon can display the following properties of drivers and devices on local computers:
-    -   Hardware IDs, compatible IDs, and device instance IDs. These identifiers are described in detail in [Device Identification Strings](../install/device-identification-strings.md).
-    -   [Device setup classes](../install/overview-of-device-setup-classes.md)
-    -   The devices in a device setup class
-    -   INF files and device driver files
-    -   Details of [driver packages](../install/components-of-a-driver-package.md)
-    -   Hardware resources
-    -   Device status
-    -   Expected driver stack
-    -   Third-party driver packages in the driver store
--   **Search for devices** DevCon can search for devices on a local computer by hardware ID, device instance ID, or device setup class.
+- **Display driver and device info** DevCon can display the following properties of drivers and devices on local computers:
+  - Hardware IDs, compatible IDs, and device instance IDs. These identifiers are described in detail in [Device Identification Strings](../install/device-identification-strings.md).
+  - [Device setup classes](../install/overview-of-device-setup-classes.md)
+  - The devices in a device setup class
+  - INF files and device driver files
+  - Details of [driver packages](../install/components-of-a-driver-package.md)
+  - Hardware resources
+  - Device status
+  - Expected driver stack
+  - Third-party driver packages in the driver store
+- **Search for devices** DevCon can search for devices on a local computer by hardware ID, device instance ID, or device setup class.
 
--   **Change device settings** DevCon can change the status or configuration of Plug and Play (PnP) devices on the local computer in the following ways:
-    -   Enable a device
-    -   Disable a device
-    -   Update drivers (interactive and noninteractive)
-    -   Install a device (create a devnode and install software)
-    -   Remove a device from the device tree and delete its device stack
-    -   Rescan for Plug and Play devices
-    -   Add, delete, and reorder the hardware IDs of root-enumerated devices
-    -   Change the upper and lower filter drivers for a device setup class
-    -   Add and delete third-party driver packages from the driver store
--   **Restart the device or computer** DevCon can restart a local device, reboot the local system on demand, or reboot the local system if required for another DevCon operation.
+- **Change device settings** DevCon can change the status or configuration of Plug and Play (PnP) devices on the local computer in the following ways:
+  - Enable a device
+  - Disable a device
+  - Update drivers (interactive and noninteractive)
+  - Install a device (create a devnode and install software)
+  - Remove a device from the device tree and delete its device stack
+  - Rescan for Plug and Play devices
+  - Add, delete, and reorder the hardware IDs of root-enumerated devices
+  - Change the upper and lower filter drivers for a device setup class
+  - Add and delete third-party driver packages from the driver store
+- **Restart the device or computer** DevCon can restart a local device, reboot the local system on demand, or reboot the local system if required for another DevCon operation.
 
-## <span id="DevCon_source_code"></span><span id="devcon_source_code"></span><span id="DEVCON_SOURCE_CODE"></span>DevCon source code
+## DevCon source code
 
+The DevCon source code is also available so that you can examine the methods that DevCon uses to retrieve and change setup and configuration data. DevCon illustrates the use of [general setup functions](/previous-versions/ff544985(v=vs.85)), [device installation functions](/previous-versions/ff541299(v=vs.85)), and [PnP Configuration Manager functions](/previous-versions/ff549713(v=vs.85)). The source code for the [Device Console (DevCon) Tool](https://github.com/Microsoft/Windows-driver-samples/tree/main/setup/devcon) is available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
-The DevCon source code is also available so that you can examine the methods that DevCon uses to retrieve and change setup and configuration data. DevCon illustrates the use of [general setup functions](/previous-versions/ff544985(v=vs.85)), [device installation functions](/previous-versions/ff541299(v=vs.85)), and [PnP Configuration Manager functions](/previous-versions/ff549713(v=vs.85)). The source code for the [Device Console (DevCon) Tool](https://github.com/Microsoft/Windows-driver-samples/tree/master/setup/devcon) is available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
-
-## <span id="related_topics"></span>Related topics
-
+## Related topics
 
 [DevCon Commands](devcon-general-commands.md)
 
 [DevCon Examples](devcon-examples.md)
-

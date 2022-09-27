@@ -20,7 +20,7 @@ This measure counts the number of crashes in display drivers that happen in the 
 | **Measurement criteria** | Aggregation of instances |
 | **Minimum instances** | 10,000 hours of Microsoft Photos runtime |
 | **Passing criteria** | <= 1.5 crashes per year of runtime |
-| **Measure ID** | 22726049 |
+| **Measure ID** | 22722742 |
 
 ## Calculation
 

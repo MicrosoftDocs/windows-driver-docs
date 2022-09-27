@@ -293,7 +293,7 @@ This profile configures Windows to connect to an encrypted network by using a SI
       </authEncryption>
       <OneX xmlns="http://www.microsoft.com/networking/OneX/v1">
         <EAcomputeronfig>
-          <!-- The config XML for all EA methods can be found at: https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/44d403cd-4b2b-4519-b475-b48dc7124bfb -->
+          <!-- The config XML for all EA methods can be found at: https://learn.microsoft.com/openspecs/windows_protocols/ms-gpwl/44d403cd-4b2b-4519-b475-b48dc7124bfb -->
           <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
             <EapMethod>
               <Type>18</Type>

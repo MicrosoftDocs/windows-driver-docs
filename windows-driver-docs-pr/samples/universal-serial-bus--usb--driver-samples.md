@@ -20,7 +20,7 @@ There are several ways you can use the Windows 10 USB driver samples:
 
 - Clone, fork, or download the [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples) repo on GitHub.
 
-- View the [Windows 10 USB driver samples](https://github.com/microsoft/Windows-driver-samples/tree/master/usb) on GitHub.
+- View the [Windows 10 USB driver samples](https://github.com/Microsoft/Windows-driver-samples/tree/main/usb) on GitHub.
 
 Previous versions of Windows driver samples can be found in the following locations:
 

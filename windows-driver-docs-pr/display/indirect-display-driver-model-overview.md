@@ -2,13 +2,14 @@
 title: Indirect display driver model overview
 description: The indirect display driver model provides a simple user mode driver model to support monitors that are not connected to traditional GPU display outputs.
 keywords:
+- IddCx
 - Indirect display driver, WDK
 - IDD, WDK
 - Indirect display driver model
 - IDD model
 - Indirect display driver implementation
 - IDD implementation
-ms.date: 03/18/2022
+ms.date: 08/09/2022
 ---
 
 # Indirect display driver overview
@@ -52,8 +53,8 @@ At build time, the UMDF IDD declares the version of IddCx it was built against a
 | ------ | ---- | ----- |
 | **EVT_IDD_CX**\_*XXX* | IDD callback function | IDDs implement both IddCx-specific callbacks such as [**EVT_IDD_CX_ADAPTER_COMMIT_MODES**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_adapter_commit_modes), as well as relevant WDF callbacks such as [**EVT_WDF_DEVICE_D0_EXIT**](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit). |
 | **IddCx***Xxx* | Function | System-supplied IddCx class extension functions that IDDs can call; for example, [**IddCxAdapterInitAsync**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxadapterinitasync). |
-| **PFN_IDDCX**\_*XXX* | Pointers to IddCx functions | IDDs do not use these pointers. Instead, drivers should use the **IddCx***Xxx* functions. |
+| **PFN_IDDCX**\_*XXX* | Pointers to IddCx functions | IDDs do not use these pointers. Instead, drivers should use the equivalent **IddCx***Xxx* functions. |
 
 ## Sample code
 
-Microsoft provides a sample IDD implementation at the [Windows Driver Samples GitHub](https://github.com/microsoft/Windows-driver-samples/tree/master/video/IndirectDisplay). This sample demonstrates how to connect a monitor, how to respond to a mode set, and how to receive frames.
+Microsoft provides a sample IDD implementation at the [Windows Driver Samples GitHub](https://github.com/Microsoft/Windows-driver-samples/tree/main/video/IndirectDisplay). This sample demonstrates how to connect a monitor, how to respond to a mode set, and how to receive frames.

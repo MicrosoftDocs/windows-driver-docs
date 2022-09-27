@@ -1,0 +1,105 @@
+---
+title: FSCTL_LMR_QUERY_INFO control code
+description: The FSCTL_LMR_QUERY_INFO control code retrieves the desired information for a remote file or directory opened locally.
+keywords: ["FSCTL_LMR_QUERY_INFO control code File System Filter Drivers"]
+topic_type:
+- apiref
+api_name:
+- FSCTL_LMR_QUERY_INFO
+api_location:
+- Ntifs.h
+api_type:
+- HeaderDef
+ms.date: 06/22/2022
+---
+
+# FSCTL_LMR_QUERY_INFO control code
+
+The **FSCTL_LMR_QUERY_INFO** control code retrieves the desired information for a remote file or directory opened locally.
+
+To perform this operation, call [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) with the following parameters.
+
+## Parameters
+
+### *FileObject*
+
+Parameter for [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. A file object pointer for the remote volume. This parameter is required and cannot be **NULL**.
+
+### *FileHandle*
+
+Parameter for [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. A handle for the remote volume. This parameter is required and cannot be **NULL**.
+
+### *FsControlCode*
+
+A control code for the operation. Use **FSCTL_LMR_QUERY_INFO** for this operation.
+
+### *InputBuffer*
+
+Pointer to a **LMR_QUERY_INFO_PARAM** structure that contains the type of information to be queried. The **LMR_QUERY_INFO_PARAM** structure is defined as follows:
+
+``` syntax
+typedef struct _LMR_QUERY_INFO_PARAM { 
+
+    LMR_QUERY_INFO_CLASS Operation; 
+
+} LMR_QUERY_INFO_PARAM, *PLMR_QUERY_INFO_PARAM;
+
+```
+
+where **Operation** is a **LMR_QUERY_INFO_CLASS** enumeration value that specifies the type of information to be queried. **LMR_QUERY_INFO_CLASS** is defined as follows:
+
+``` syntax
+typedef enum _LMR_QUERY_INFO_CLASS {
+    LMRQuerySessionInfo = 1,
+} LMR_QUERY_INFO_CLASS, *PLMR_QUERY_INFO_CLASS;
+```
+
+| Value | Meaning |
+| ----- | ------- |
+| **LMRQuerySessionInfo** (1) | Query the session ID information for the file or directory. This information is returned in a **LMR_QUERY_SESSION_INFO** structure via *OutputBuffer*. |
+
+The **LMR_QUERY_SESSION_INFO** structure is defined as follows:
+
+``` syntax
+typedef struct _LMR_QUERY_SESSION_INFO { 
+
+    UINT64 SessionId; 
+
+} LMR_QUERY_SESSION_INFO, *PLMR_QUERY_SESSION_INFO;
+```
+
+*InputBufferLength*  
+The size, in bytes, of the buffer pointed to by *InputBuffer*. This value is ```sizeof(LMR_QUERY_INFO_PARAM)```.
+
+### *OutputBuffer*
+
+ A pointer to a buffer that receives the desired information about the file or directory. The structure of the information returned in the buffer is defined by the **Operation** specified in *InputBuffer*'s **LMR_QUERY_INFO_CLASS** structure.
+
+### *OutputBufferLength*
+
+The size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter.
+
+## Status block
+
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS_SUCCESS if the operation succeeds. Otherwise, the appropriate function returns the appropriate NTSTATUS error code.
+
+## Requirements
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><p>Header</p></td>
+<td align="left">Ntifs.h (include Ntifs.h)</td>
+<tr class="even">
+<td align="left"><p>Minimum supported client</p></td>
+<td align="left">Windows 10 version 1809, and Windows 10 version 2004 and above versions </td>
+<tr class="odd">
+<td align="left"><p>Minimum supported server</p></td>
+<td align="left">Windows Server 2019</td>
+</tr>
+</tbody>
+</table>

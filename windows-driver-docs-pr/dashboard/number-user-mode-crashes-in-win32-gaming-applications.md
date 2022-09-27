@@ -22,7 +22,7 @@ This measure is normalized by usage, less than or equal to the baseline goal.
 |**Measurement criteria**|Aggregation of instances|
 |**Minimum population**|1,000 hours of gaming application runtime|
 |**Passing criteria**|<= 5 crashes per year of runtime|
-|**Measure ID**|22843841|
+|**Measure ID**|33255827|
 
 ## Calculation
 

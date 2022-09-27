@@ -1,5 +1,5 @@
 ---
-title: INF DelService Directive
+title: INF DelService directive
 description: A DelService directive is used in a DDInstall.Services section to remove one or more previously installed device/driver services from the target computer.
 keywords:
 - INF DelService Directive Device and Driver Installation
@@ -9,15 +9,13 @@ api_name:
 - INF DelService Directive
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 07/08/2022
 ---
 
-# INF DelService Directive
+# INF DelService directive
 
-
-**Note**  If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
-
- 
+> [!NOTE]
+> If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 A **DelService** directive is used in a [***DDInstall*.Services**](inf-ddinstall-services-section.md) section to remove one or more previously installed device/driver services from the target computer.
 
@@ -30,25 +28,24 @@ DelService=ServiceName[,[flags][,[EventLogType][,EventName]]
 
 ## Entries
 
-
-<a href="" id="servicename"></a>*ServiceName*  
+*ServiceName*  
 Specifies the name of the service to be removed.
 
-For a device, this value is usually a generic name for its driver, such as "sermouse," or some such name.
+For a device, this value is usually a generic name for its driver, such as "sermouse" or some such name.
 
-<a href="" id="flags"></a>*flags*  
+*flags*  
 This optional value is specifies one or more of the following flags, defined in *Setupapi.h*, that are specified as a hexadecimal value:
 
-<a href="" id="0x00000004--spsvcinst-deleteeventlogentry-"></a>**0x00000004** (SPSVCINST_DELETEEVENTLOGENTRY)  
+**0x00000004** (SPSVCINST_DELETEEVENTLOGENTRY)  
 An event-log entry (or entries) associated with the given ServiceName should also be removed from the system.
 
-<a href="" id="0x00000200---spsvcinst-stopservice--"></a>**0x00000200** (SPSVCINST_STOPSERVICE)   
+**0x00000200** (SPSVCINST_STOPSERVICE)  
 Stop the service before deleting it.
 
-<a href="" id="eventlogtype"></a>*EventLogType*  
+*EventLogType*  
 Optionally specifies one of **System**, **Security**, or **Application**. This can be omitted if the event log to be removed is of type **System**.
 
-<a href="" id="eventname"></a>*EventName*  
+*EventName*  
 Optionally specifies the name for the event log. This can be omitted if it is identical to the specified *ServiceName* entry.
 
 ## Remarks
@@ -61,19 +58,8 @@ However, by default, event-log information supplied by a particular device drive
 
 ## See also
 
-
 [**AddService**](inf-addservice-directive.md)
 
 [***DDInstall*.Services**](inf-ddinstall-services-section.md)
 
 [**DelReg**](inf-delreg-directive.md)
-
- 
-
- 
-
-
-
-
-
-

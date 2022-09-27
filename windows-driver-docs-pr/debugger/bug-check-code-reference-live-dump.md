@@ -1,7 +1,7 @@
 ---
 title: Kernel Live Dump Code Reference
 description: This section contains descriptions of the common kernel live dumps, and describes how they are different from traditional bug checks.
-ms.date: 03/10/2021
+ms.date: 08/22/2022
 ---
 
 # Kernel Live Dump Code Reference
@@ -196,6 +196,7 @@ The following table provides links to kernel live dumps codes.
 | 0x000001A6 | [**BLUETOOTH\_ERROR\_RECOVERY\_LIVEDUMP**](bug-check-0x1a6--bluetooth-error-recovery-livedump.md)                                                 |
 | 0x000001A7 | [**SMB\_REDIRECTOR\_LIVEDUMP**](bug-check-0x1A7--smb-redirector-livedump.md)                                                                      |
 | 0x000001A8 | [**VIDEO\_DXGKRNL\_BLACK\_SCREEN\_LIVEDUMP**](bug-check-0x1a8--video-dxgkrnl-black-screen-livedump.md)                                            |
+| 0x000001A9 | [**DIRECTED\_FX\_TRANSITION\_LIVEDUMP**](bug-check-0x1a9--directed-fx-transition-livedump.md)                                                     |
 | 0x000001B0 | [**VIDEO_MINIPORT_FAILED_LIVEDUMP**](bug-check-0x1b0--video-miniport-failed-livedump.md)                                                          |
 | 0x000001B8 | [**VIDEO_MINIPORT_BLACK_SCREEN_LIVEDUMP**](bug-check-0x1b8--video-miniport-black-screen-livedump.md)                                              |
 | 0x000001C4 | [**DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP**](bug-check-0x1c4--driver-verifier-detected-violation-livedump.md)                            |

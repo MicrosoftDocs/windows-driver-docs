@@ -20,7 +20,7 @@ When users are browsing the internet with Edge Chromium, their graphics componen
 | **Measurement criteria** | Aggregation of instances |
 | **Minimum population** | 30,000 hours of Microsoft Edge Chromium runtime |
 | **Passing criteria** | <= 1 crash per year |
-| **Measure ID** | 25481659 |
+| **Measure ID** | 21839447 |
 
 ## Calculation
 

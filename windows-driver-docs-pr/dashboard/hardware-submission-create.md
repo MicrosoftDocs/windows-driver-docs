@@ -1,7 +1,7 @@
 ---
 title: Create a new hardware submission
 description: Create a new hardware submission
-ms.date: 03/25/2022
+ms.date: 08/05/2022
 ms.topic: article
 ---
 
@@ -16,13 +16,17 @@ All hardware submissions to the dashboard will be processed within 5 business da
 
 ## Prerequisites
 
-* Make sure your [dashboard account](https://partner.microsoft.com/dashboard) is registered for the Windows Hardware Developer Program. For information on how to register, see [How to register for the Windows Hardware Developer Program](hardware-program-register.md).
+1. Make sure your [dashboard account](https://partner.microsoft.com/dashboard) is registered for the Windows Hardware Developer Program. For information on how to register, see [How to register for the Windows Hardware Developer Program](hardware-program-register.md).
 
-* For drivers compatible with Windows 10 and above, you'll need to submit a digitally signed HLK file. To learn how to create a digitally signing an HLK file, see the [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
+1. Use the table below to determine which signed file you'll need to create for your submission.
+    
+    | Operating system | Required signed file type | Guidance|
+    |--------------------|--------------------------|---------------|
+    | Windows 11, Windows 10, and Windows Server versions beginning with Windows Server 2016 | A Windows Hardware Lab kit *.hlk* file | [Find and download the correct version of the HLK](/windows-hardware/test/hlk/) based on the compatible system. You can then [merge all HLK test results](/windows-hardware/test/hlk/user/merge-packages) into a single dashboard submission.</br></br>**Note:** The Windows 10 version 22H2 release won't bring updates to the Windows Hardware Compatibility Program (WHCP) and will follow the same guidelines as Windows 10, version 2004. For more information, see [WHCP guidance for Windows 10, version 22H2](https://techcommunity.microsoft.com/t5/windows-hardware-certification/whcp-guidance-for-windows-10-version-22h2/ba-p/3586362). |
+    | Windows 8/8.1 and older | A Windows Hardware Certification Kit *.hckx* file | To learn how to create and digitally sign an  *.hckx* file, see the [Windows HCK Getting Started Guide](/previous-versions/windows/hardware/hck/jj123537(v=vs.85)) |
+    | Windows Server 2008 and older  | A WLK hardware submission package *.cab* file | To learn how to create a WLK submission package, see [Create a new WLK hardware submission](hardware-submission-wlk.md). |
+    
 
-* For drivers compatible with Windows 8/8.1 and older operating systems, you'll need to have an **.hckx** file that's been digitally signed. For information about creating and digitally signing an  **.hckx** file, see the [Windows HCK Getting Started Guide](/previous-versions/windows/hardware/hck/jj123537(v=vs.85)).
-
-* For drivers compatible with Windows Server 2008 (and below) hardware for certification, you'll need to create a WLK hardware submission package **.cab** file. To learn how to create a WLK submission package, see [Create a new WLK hardware submission](hardware-submission-wlk.md).
 
 ## Submit your new hardware
 
@@ -37,11 +41,11 @@ All hardware submissions to the dashboard will be processed within 5 business da
     >[!NOTE]
     >If you share your driver with another company, they will see this name.
 
-1. Either drag or browse to the **.hlkx/.hckx** file that you want to submit. If you're submitting WLK hardware, you must submit a .CAB file. To learn how to create a WLK **.cab** file submission, see see [Create a WLK hardware submission package](hardware-submission-wlk.md).
+1. Either drag or browse to the **.hlkx/.hckx** file that you want to submit. If you're submitting WLK hardware, you must submit a *.cab* file. To learn how to create a WLK *.cab* file submission, see see [Create a WLK hardware submission package](hardware-submission-wlk.md).
 
    :::image type="content" source="./images/hardware-submission-create/hardware-submit.png" alt-text="Screenshot that shows the new hardware submission form.":::
 
-1. If you wish to test a driver prior to release, select either **Perform test-signing for Win10 and above** or **Perform test-signing for OS below Win10 (legacy)**. Test-signed drivers are similar to drivers signed for public release, but don't require HLK testing. They're also not distributed through Windows Update, but can be downloaded from the hardware submission site. They can be installed on test machines only. For more information about test-signing driver packages, see [WHQL Test Signature Program](../install/whql-test-signature-program.md) and [How to test-sign a driver package](../install/how-to-test-sign-a-driver-package.md).
+1. If you wish to test a driver prior to release, select **Perform test-signing**. Test-signed drivers are similar to drivers signed for public release, but don't require HLK testing. They're also not distributed through Windows Update, but can be downloaded from the hardware submission site. They can be installed on test machines only. For more information about test-signing driver packages, see [WHQL Test Signature Program](../install/whql-test-signature-program.md) and [How to test-sign a driver package](../install/how-to-test-sign-a-driver-package.md).
 
 1. Complete any other any questionnaires that are presented.  The portal presents any questionnaire that's required for the product type being submitted for Windows Server certification.
 
@@ -111,6 +115,10 @@ Your error message is:
 
 Use [HLK studio](/windows-hardware/test/hlk/user/install-standalone-hlk-studio) to open the downloaded DUA shell package and to create DUA submission.
 
+**Other issues**
+
+If you don't see your issue addressed here, go to [Get support for Partner Center dashboard issues](hardware-submission-support.md).
+
 ## Next Steps
 
 > [!div class="nextstepaction"]
@@ -120,7 +128,10 @@ Use [HLK studio](/windows-hardware/test/hlk/user/install-standalone-hlk-studio) 
 > [Update a hardware submission](hardware-submission-update.md)
 
 > [!div class="nextstepaction"]
-> [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started.md)
+> [Validate a hardware submission signature](code-signing-validate.md)
+
+> [!div class="nextstepaction"]
+> [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started)
 
 > [!div class="nextstepaction"]
 > [Distribute your driver with Driver flighting](driver-flighting.md)

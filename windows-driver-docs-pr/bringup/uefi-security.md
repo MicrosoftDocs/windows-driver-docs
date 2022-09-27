@@ -1,7 +1,7 @@
 ---
 title: UEFI security
 description: Provides guidance and pointers to information to enable you to implement and validate security features in the firmware for Windows operating systems.
-ms.date: 05/26/2020
+ms.date: 06/28/2022
 ---
 
 # UEFI security
@@ -27,3 +27,5 @@ The following sections describe components of the firmware used to enable a more
 [Secure Boot](secure-boot.md)
 
 [Trusted Platform Module (TPM) considerations](trusted-platform-module-considerations.md)
+
+[UEFI CA Memory Mitigation Requirements for Signing](uefi-ca-memory-mitigation-requirements.md)

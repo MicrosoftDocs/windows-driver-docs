@@ -3,7 +3,7 @@ title: List (WSD)
 description: The Web Services for Devices (WSD) `List` construct is a string type that composes a comma-separated list of values specified by the XPath filter query.
 keywords:
 - List construct
-ms.date: 09/08/2021
+ms.date: 09/08/2022
 ---
 
 # List (WSD)
@@ -21,7 +21,7 @@ The XPath language, implemented in Windows beginning with Microsoft XML (MSXML) 
 
 The `List` construct is defined in WsdBidi.xsd.
 
-## Code Example
+## Code example
 
 In the following code example, a comma-separated list is composed that contains the allowable number of page images per sheet for N-up printing, for instance "1,2,4".
 

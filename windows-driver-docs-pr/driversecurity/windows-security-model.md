@@ -236,7 +236,6 @@ In this example, there is a trust boundary between driver 1 and driver 3, as dri
 
 All inputs coming into the driver from user mode is untrusted and should be validated. Inputs coming from other drivers may also be untrusted depending on whether the previous driver was just a simple pass-through (e.g. data was received by driver 1 from app 1 , driver 1 didn’t do any validation on the data and just passed it forward to driver 3). Be sure to identify all attack surfaces and trust boundaries and validate all data crossing them, by creating a complete threat model.
 
-
 ## Windows Security Model Recommendations 
 
 -   Set strong default ACLs in calls to the **IoCreateDeviceSecure** routine.
@@ -246,7 +245,6 @@ All inputs coming into the driver from user mode is untrusted and should be vali
 -   Use the **IoValidateDeviceIoControlAccess** routine to tighten security on existing IOCTLS that allow FILE\_ANY\_ACCESS.
 -   Create a threat model to examine the security boundaries and look for unanticipated paths. For more information, see [Threat modeling for drivers](threat-modeling-for-drivers.md). 
 -   See [Driver security checklist](driver-security-checklist.md) for additional driver security recommendations.
-
 
 ### See Also
 

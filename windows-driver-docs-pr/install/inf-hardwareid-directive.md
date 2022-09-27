@@ -1,5 +1,5 @@
 ---
-title: INF HardwareId Directive
+title: INF HardwareId directive
 description: The Found New Hardware Wizard and Hardware Update Wizard support INF HardwareId directives in the [DeviceInstall] section of an Autorun.inf file.
 keywords:
 - INF HardwareId Directive Device and Driver Installation
@@ -9,17 +9,15 @@ api_name:
 - INF HardwareId Directive
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 07/08/2022
 ---
 
-# INF HardwareId Directive
+# INF HardwareId directive
 
+> [!NOTE]
+> The **HardwareId** directive is only supported within an *Autorun.inf* file. This directive must not be used within the INF files that are used for PnP device installations.
 
-**Note**  The **HardwareId** directive is only supported within an *Autorun.inf* file. This directive must not be used within the INF files that are used for PnP device installations.
-
- 
-
-Starting with Windows Vista, the Found New Hardware Wizard and Hardware Update Wizard support INF **HardwareId** directives in the **\[DeviceInstall\]** section of an *Autorun.inf* file. The author of *Autorun.inf* can use these **HardwareId** directives to specify Plug and Play (PnP) hardware identifiers (IDs) of the devices for which the AutoRun-enabled application provides and installs drivers.
+Starting with Windows Vista, the Found New Hardware Wizard and Hardware Update Wizard support INF **HardwareId** directives in the **[DeviceInstall]** section of an *Autorun.inf* file. The author of *Autorun.inf* can use these **HardwareId** directives to specify Plug and Play (PnP) hardware identifiers (IDs) of the devices for which the AutoRun-enabled application provides and installs drivers.
 
 ```inf
 [DeviceInstall] 
@@ -30,8 +28,7 @@ HardwareId="pnp-hardware-id"
 
 ## Entries
 
-
-<a href="" id="-pnp-hardware-id-"></a>"*pnp-hardware-id*"  
+"*pnp-hardware-id*"  
 This value specifies a PnP device hardware ID. The hardware ID must be enclosed in double quotation marks (").
 
 The hardware ID can be fairly generic, such as PCI\\VEN_1234&DEV_1234, or very specific, such as PCI\\VEN_1234&DEV_1234&SUBSYS_12345678&REV_01.
@@ -47,12 +44,3 @@ If the distribution medium has an AutoRun-enabled *device installation applicati
 The Found New Hardware Wizard does not determine whether the application installed a driver for the device. In this case, the application must install a driver for the device. If the *Autorun.inf* file does not include a **HardwareId** directive that identifies the device that is being installed, the wizard does not start the application and continues with device installation.
 
 Although there may be multiple **HardwareId** directives within the **\[DeviceInstall\]** section of an *Autorun.inf* file, each directive should specify a unique PnP hardware ID.
-
- 
-
- 
-
-
-
-
-

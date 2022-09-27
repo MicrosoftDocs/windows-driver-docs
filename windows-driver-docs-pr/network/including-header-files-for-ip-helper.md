@@ -30,7 +30,7 @@ Therefore, do not include the following header files in your driver code:
 - Ws2def.h
 - Ws2ipdef.h
 
-For information about the user-mode versions of the IP Helper functions and MIB structures, see the Windows SDK documentation.
+For information about the user-mode versions of the IP Helper functions and MIB structures, see the [Windows SDK IP Helper documentation](/windows/win32/iphlp/ip-helper-start-page).
 
  
 

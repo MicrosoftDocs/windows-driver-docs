@@ -12,7 +12,7 @@ ms.date: 04/20/2017
 
 You can use Tracefmt to format trace messages from real-time trace sessions in addition to trace log files.
 
-The following sequence of commands uses [Tracelog](tracelog.md) and Tracefmt. The first command uses Tracelog to start a real-time trace session with the Tracedrv sample trace provider. [TraceDrv](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/tracing/tracedriver), a sample driver that was designed for software tracing, is available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
+The following sequence of commands uses [Tracelog](tracelog.md) and Tracefmt. The first command uses Tracelog to start a real-time trace session with the Tracedrv sample trace provider. [TraceDrv](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/tracing/tracedriver), a sample driver that was designed for software tracing, is available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
 ```
 tracelog -start MyTrace -guid tracedrv.ctl -flag 1 -rt

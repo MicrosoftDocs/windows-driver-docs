@@ -52,7 +52,7 @@ class ThreadModelTestsWithMTADefault
 
 Similarly, you can also request threading model for managed tests:
 
-```cpp
+```csharp
 [TestClass]
 
 public class SimpleTests

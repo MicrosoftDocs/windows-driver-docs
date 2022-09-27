@@ -1,16 +1,16 @@
 ---
-title: V4 Driver Setup Concepts
+title: V4 driver setup concepts
 description: The v4 print driver model uses a new setup model to improve the user experience and reduce support costs.
-ms.date: 08/27/2021
+ms.date: 09/09/2022
 ---
 
-# V4 Driver Setup Concepts
+# V4 driver setup concepts
 
 The v4 print driver model uses a new setup model to improve the user experience and reduce support costs.
 
 The v4 print driver is run directly from the Driver Store, which eliminates the possibility of file collisions and improves installation performance. The v4 setup model continues to use INF files, but also employs a new manifest file to capture the printer specific setup directives.
 
-## Device Identifiers
+## Device identifiers
 
 ### CompatibleIDS
 
@@ -72,15 +72,15 @@ The spooler does not validate these limitations, and relies solely on the Printe
 
 Printer extensions can also be associated with drivers via PrinterDriverIDs. As a result, two drivers that share a PrinterDriverID must both work with the same printer extensions. The last printer extension installed will overwrite any prior printer extensions for all devices using the targeted PrinterDriverIDs, so they must work properly using the same app.
 
-### Best Practices for using GUIDs
+### Best practices for using GUIDs
 
 GUIDs are used broadly through the v4 print driver model, most notably in the PrinterDriverID, and also in the PrinterExtensionID, the EventID, and the ModelID. These are either used to uniquely identify different items in the system, or to identify them as the same for the sake of servicing, sharing, etc.
 
 When creating new GUIDs, always use a GUID generator, such as the one included in Microsoft Visual Studio or the one included in the SDK. Manually crafted GUIDs and GUIDs that have been erroneously copied and pasted are prone to collisions.
 
-## Setup Behaviors
+## Setup behaviors
 
-### Print Queue Name
+### Print queue name
 
 For v3 drivers, the print queue name was dictated first by the driver name, then by the user. With the introduction of print class drivers, the driver name is much less useful for user recognition of the device. Windows will rename the queue automatically for any Plug and Play devices that are installed to run a v4 print driver as follows:
 
@@ -110,7 +110,7 @@ For v3 drivers, the print queue name was dictated first by the driver name, then
 
 The driver name will continue to be the only identifier available to users choosing a driver in the **Add Printer Wizard**. TCP/IP-based devices should implement the [Port Monitor MIB (PWG 5107.1-2005)](https://www.pwg.org/standards.html) to support TCP/IP auto-detection. Existing devices that are added to a print class driver using a hardware ID (HWID) mapping may additionally use a device-specific model name.
 
-## Changing Ports and Dealing with Printer Devnodes
+## Changing ports and dealing with printer devnodes
 
 To provide a consistent UI experience, all print queues are given a software device node (devnode). This is how printers are discovered in the UI, and it allows virtual printers, connections to shared printers, and network printers to be enumerated and accessed in the same fashion as Plug and Play (PnP) printers. The software devnodes for physical PnP printers will inherit properties from the PnP devnode that triggered the creation of the queue.
 
@@ -132,13 +132,13 @@ Changing the port associated with a queue will change the Container ID associate
 
     1. Solution 2 – The PnP devnode is extraneous: The setup program removes the original PnP device.
 
-### Driver Ranking
+### Driver ranking
 
 The introduction of v4 print drivers does not modify the Plug and Play ranking behavior. When a device is plugged in, the available driver with the highest score will be selected. If the selected driver is a print class driver, and there is a better ranked, matching driver on the Windows Update site, then the selected driver will automatically be replaced the next time the user downloads updates for Windows.
 
 For more information about driver ranking, see [How Windows Ranks Drivers](../install/how-setup-ranks-drivers--windows-vista-and-later-.md).
 
-## Driver Setup Best Practices
+## Driver setup best practices
 
 ### Packaging
 
@@ -150,11 +150,11 @@ If there are existing print class drivers that provide basic rendering functiona
 
 ![gpd/ppd file merge logic.](images/gpd-ppdmergelogic.png)
 
-### Printer Model Lines
+### Printer model lines
 
 Plug and Play maintains an implicit ranking of all HardwareIDs and CompatibleIDs on a model line. As a result, Microsoft recommends that partners should use the following best practices to avoid unpredictable behaviors with regard to ranking.
 
-#### V4 Print Driver
+#### V4 print driver
 
 1. V4 print driver INFs must define two different kinds of model lines:
 
@@ -170,7 +170,7 @@ Plug and Play maintains an implicit ranking of all HardwareIDs and CompatibleIDs
 
     1. "Driver name" = INSTALL_SECTION,LPTENUM\\HardwareID
 
-#### Print Class Driver
+#### Print class driver
 
 1. Print class driver INFs must define three different kinds of model lines:
 

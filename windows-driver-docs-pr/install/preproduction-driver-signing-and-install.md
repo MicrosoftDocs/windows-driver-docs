@@ -21,7 +21,9 @@ The Windows kernel supports loading pre-production drivers signed with the WHQL/
 
 - [Sign your pre-production drivers with Partner Center Hardware dashboard](../dashboard/hardware-submission-create.md)
 
+
 - Download *EnableUefiSbTest.exe* from the WDK. The default setup location of the *EnableUefiSbTest* tool is **C:\Program Files (x86)\Windows Kits\10\tools\\{arch}\SecureBoot\EnableSB**. `{arch}` can be one of `{amd64, x86, arm, arm64}`. The policies are located under the same SecureBoot directory:**C:\Program Files (x86)\Windows Kits\10\tools\\{arch}\SecureBoot\Policies**. 
+
 
 ## Enable support for the pre-production WHQL/WHCP Signature
 
@@ -76,6 +78,7 @@ Use of the EnableUefiSbTest tool is strongly recommended. Alternatively, you can
     >[!NOTE]
     > EnableUefiSbTest.exe will not output/return anything after successfully running.
 
+
 5. For devices running Desktop-based Windows, mount the EFI partition of the system and copy over the Secure Boot policy (.p7b) file to **S:/EFI/Microsoft/Boot** by running the following command in an elevated instance of PowerShell or Terminal:
 
     ```PowerShell
@@ -85,6 +88,7 @@ Use of the EnableUefiSbTest tool is strongly recommended. Alternatively, you can
 
     >[!NOTE]
     > Because Windows kernel requires the Secure Boot policy file in the form of `SecureBootPolicy.p7b`, the name and file format must not be modified.
+
 
 6. For devices not running Desktop-based Windows, copy the corresponding `PreProductionPolicy.pol` to `\EFI\Microsoft\Boot\Policies`. Then delete `FullDebugPolicy.pol` from `\EFI\Microsoft\Boot\Policies`.
 
@@ -113,6 +117,7 @@ To deprovision the system and opt-out of preproduction signing trust on the syst
     >[!NOTE]
     > We recommend clean installing Windows on the system to de-provision a system intended for retail environments.
 
+
 ### FAQs
 
 Q: The `EnableUefiSbTest.exe /dump` command is only showing a result for `PK`. Is something wrong?
@@ -122,3 +127,4 @@ A: This will happen if the tool is run as a standard user instead of as admin.
 Q: The `EnableUefiSbTest.exe /dump` command returns an error that I don't recognize. What do I do?
 
 A: An error may be thrown by the tool when Secure Boot has not been successfully disabled and/or the Secure Boot keys have not been cleared. Verify that Secure Boot is disabled.
+

@@ -5,10 +5,9 @@ For more information see the [Code of Conduct FAQ](https://opensource.microsoft.
 
 # Windows Driver Documentation
 
-Welcome to the Windows driver docs repository, housing the source for the official Windows Driver Kit documentation available on [Docs.microsoft.com](https://docs.microsoft.com/windows-hardware/drivers).
+Welcome to the Windows driver docs repository, housing the source for the official [Windows hardware developer documentation](https://learn.microsoft.com/windows-hardware/drivers).
 
-If you're looking for the driver reference (API/DDI) documentation, that's in a different repo.
-See https://github.com/MicrosoftDocs/windows-driver-docs-ddi.
+If you're looking for the driver reference (API/DDI) documentation, it's in the [`windows-driver-docs-ddi` GitHub repository](https://github.com/MicrosoftDocs/windows-driver-docs-ddi).
 
 ## Contributing
 

@@ -20,7 +20,7 @@ During a user's session, crash in the graphics driver binary may cause the machi
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum instances**|20,000 machines|
 |**Passing criteria**|<= 60/10,000 of machines encountering TDR|
-|**Measure ID**|24633264|
+|**Measure ID**|26647961|
 
 ## Calculation
 

@@ -4,6 +4,15 @@
   href: windows-threshold--what-s-new-for-audio.md
 - name: "Windows Audio Architecture"
   href: windows-audio-architecture.md
+- name: "ACX - Audio Class Extensions"
+# Auto-expanded node
+  items: 
+  - name: "ACX - Audio Class Extensions Overview"
+    href: acx-audio-class-extensions-overview.md
+  - name: "ACX - Summary of ACX Objects"
+    href: acx-summary-of-objects.md
+  - name: "ACX - Multi stack cross driver communications"
+    href: acx-audio-multi-stack.md
 - name: "WDM Audio Drivers Overview"
 # Auto-expanded node
   items: 
@@ -483,6 +492,8 @@
     href: format-negotiation.md
   - name: "Dynamic Format Change"
     href: dynamic-format-change.md
+  - name: "Combine Custom and Windows APOs"
+    href: combine-custom-and-windows-apos.md
 - name: "Windows Audio Processing Objects"
 # Auto-expanded node
   items: 

@@ -6,7 +6,7 @@ ms.date: 04/03/2020
 
 # DDI compliance checking
 
-The DDI compliance checking option determines whether the driver correctly interacts with the Windows operating system kernel.
+The Device Driver Interface (DDI) compliance checking option determines whether the driver correctly interacts with the Windows operating system kernel.
 
 **Note**  This option is available starting with Windows 8. Starting in Windows 8.1, you can test additional rules, by selecting [Activating the DDI compliance checking (additional) option](#activating-the-ddi-compliance-checking-additional-option).
 

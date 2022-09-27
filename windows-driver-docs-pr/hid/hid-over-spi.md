@@ -9,7 +9,7 @@ keywords:
 - SPI
 - Serial Peripheral Interface
 - Simple Peripheral Bus
-ms.date: 06/22/2021
+ms.date: 08/22/2022
 ---
 
 # Introduction to HID over SPI
@@ -44,8 +44,6 @@ The full [HID over SPI protocol specification](https://www.microsoft.com/downloa
 
 ## See also
 
-[HIDSPICx API](/windows-hardware/drivers/ddi/hidspicx)
-
-[HID over USB](hid-over-usb.md)
-
-[HID over I2C](hid-over-i2c-guide.md)
+- [HIDSPICx API](/windows-hardware/drivers/ddi/hidspicx)
+- [HID over USB](hid-over-usb.md)
+- [HID over I2C](hid-over-i2c-guide.md)

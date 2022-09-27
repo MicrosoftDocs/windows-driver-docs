@@ -451,7 +451,7 @@ See the following topics for more in-depth information regarding these structure
 - [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS2 structure**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints2)
  - [**KSAUDIO\_PACKETSIZE\_PROCESSINGMODE\_CONSTRAINT structure**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_signalprocessingmode_constraint)
 
-Also, the sysvad sample (<https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>) shows how to use these properties, in order for a driver to declare the minimum buffer for each mode.
+Also, the sysvad sample (<https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad>) shows how to use these properties, in order for a driver to declare the minimum buffer for each mode.
 
 ### Improve the coordination between driver and OS
 
@@ -477,7 +477,7 @@ To calculate the performance counter values, the driver and DSP might employ som
 - Between the driver and DSP, calculate a correlation between the Windows performance counter and the DSP wall clock. Procedures for this can range from very simple (but less precise) to fairly complex or novel (but more precise).
 - Factor in any constant delays due to signal processing algorithms or pipeline or hardware transports, unless these delays are otherwise accounted for.
 
-The sysvad sample (<https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>) shows how to use the above DDIs.
+The sysvad sample (<https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad>) shows how to use the above DDIs.
 
 ### Register the driver resources
 
@@ -553,7 +553,7 @@ The differences in the latency between WASAPI and AudioGraph are due to the foll
 
 - WASAPI Audio sample: <https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/WindowsAudioSession>
 - AudioCreation sample (AudioGraph): <https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AudioCreation>
-- Sysvad driver sample: <https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>
+- Sysvad driver sample: <https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad>
 
 ## FAQ
 

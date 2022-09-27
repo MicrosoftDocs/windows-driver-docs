@@ -2,6 +2,7 @@
 title: USB Video Class (UVC) camera implementation guide
 description: Outlines how to expose certain capabilities of a USB Video Class compliant camera to the applications through the inbox driver.
 ms.date: 05/16/2022
+ms.custom: contperf-fy22q4
 ---
 
 # USB Video Class (UVC) camera implementation guide
@@ -222,7 +223,7 @@ Starting with Windows 10, version 1703, the Windows camera pipeline supports an 
 
 Starting in Windows 11, version 22H2, the Windows camera pipeline supports an optional chain of DMFTs with maximum of four DMFTs.
 
-This provides greater flexibility for OEMs and IHVs to provide value-add in the form of post processing camera streams. For example, a device could use PDMFT along with an IHV DMFT and an OEM DMFT. 
+This provides greater flexibility for OEMs and IHVs to provide value-add in the form of post processing camera streams. For example, a device could use PDMFT along with an IHV DMFT and an OEM DMFT.
 
 The following figure illustrates the architecture involving a chain of DMFTs.
 
@@ -337,6 +338,9 @@ HKR,,EnablePlatformDmft,0x00010001,0x00000001
 ```
 
 In Windows 10, version 1703, if a device opts in to use PDMFT then all features that are supported by the PDMFT are enabled (based on the device capabilities). Granular configuration of PDMFT features is not supported.
+
+> [!NOTE]
+> Face-based ROI coordinates are calculated relative to the field of view of the image transmitted into the PDMFT. If the field of view has been modified due to use of a control such as [Zoom, Pan or Tilt](propsetid-vidcap-cameracontrol.md) or [Digital Window](digital-window-overview.md), the camera is responsible for mapping the provided coordinates back to the sensor's full field of view, considering the current zoom/pan window.
 
 ## Face Auth Profile via MS OS Descriptors
 

@@ -14,53 +14,10 @@ Starting with Windows Vista, administrators can use the registry to set an affi
 
 Administrators can set the following entries under the **\\Interrupt Management\\Affinity Policy** registry key:
 
--   **DevicePolicy** is a REG\_DWORD value that specifies an affinity policy. Each possible setting corresponds to a [**IRQ\_DEVICE\_POLICY**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_irq_device_policy) value.
+-   **DevicePolicy** is a REG\_DWORD value that specifies an affinity policy. For possible values and their meanings, see [**IRQ\_DEVICE\_POLICY**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_irq_device_policy). Microsoft recommends using the default policy if applicable.
 
 
--   **AssignmentSetOverride** is a REG\_BINARY value that specifies a [**KAFFINITY**](#about-kaffinity) mask. If **DevicePolicy** is 0x04 (**IrqPolicySpecifiedProcessors**), then this mask specifies a set of processors to assign the device's interrupts to.
-
-The following table lists the [**IRQ\_DEVICE\_POLICY**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_irq_device_policy) values, and the corresponding registry setting for **DevicePolicy**. For more information about the meaning of each value, see [**IRQ\_DEVICE\_POLICY**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_irq_device_policy).
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>IRQ_DEVICE_POLICY value</th>
-<th>Numeric value in registry</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>IrqPolicyMachineDefault</strong></p></td>
-<td><p>0x00</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>IrqPolicyAllCloseProcessors</strong></p></td>
-<td><p>0x01</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>IrqPolicyOneCloseProcessor</strong></p></td>
-<td><p>0x02</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>IrqPolicyAllProcessorsInMachine</strong></p></td>
-<td><p>0x03</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>IrqPolicySpecifiedProcessors</strong></p></td>
-<td><p>0x04</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>IrqPolicySpreadMessagesAcrossAllProcessors</strong></p></td>
-<td><p>0x05</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+-   **AssignmentSetOverride** can be a REG_BINARY, REG_DWORD, or REG_QWORD value that specifies a [**KAFFINITY**](#about-kaffinity) mask. For REG_BINARY, size must be less than or equal to the KAFFINITY size for the platform, and input byte order is little endian. If **DevicePolicy** is 0x04 (**IrqPolicySpecifiedProcessors**), then this mask specifies a set of processors to assign the device's interrupts to.
 
 A driver's INF file can provide default settings for the registry values. Here is an example of how to set the **DevicePolicy** value to **IrqPolicyOneCloseProcessor** in the INF file. For more information, see [**INF AddReg Directive**](../install/inf-addreg-directive.md).
 

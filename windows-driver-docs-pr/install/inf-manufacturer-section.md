@@ -9,7 +9,7 @@ api_name:
 - INF Manufacturer Section
 api_type:
 - NA
-ms.date: 06/06/2022
+ms.date: 06/15/2022
 ---
 
 # INF Manufacturer section
@@ -41,7 +41,7 @@ These entries are defined as follows:
 _manufacturer-name_  
 Identifies the devices' manufacturer. The INF must also contain a corresponding [**INF _Models_ section**](inf-models-section.md) of the same name. The maximum length of a manufacturer's name, in characters, is LINE_LEN. (An entry specified in this manner cannot be localized.)
 
-_strkey_
+_strkey_  
 Specifies a token, unique within the INF file that represents the name of a manufacturer. Each such %_strkey_% token must be defined in an [**INF Strings section**](inf-strings-section.md) of the INF file.
 
 _models-section-name_  
@@ -187,6 +187,26 @@ Any build number specified by the _TargetOSVersion_ decoration is evaluated only
 
 If build number is supplied, the OS version and BuildNumber of the _TargetOSVersion_ decoration must both be greater than the OS version and build number of the Windows 10 build 14310 where this decoration was first introduced.  Earlier versions of the operating system without these changes (for example, Windows 10 build 10240) will not parse unknown decorations, so an attempt to target these earlier builds will actually prevent that OS from considering the decoration valid at all.
 
+The following table defines the build number for the Windows operating system.
+
+| Windows version | Build number |
+|--|--|
+| Windows 11 version 21H2 | 22000 |
+| Windows Server 2022 | 20348 |
+| Windows 10 version 21H2 | 19044 |
+| Windows 10 version 21H1 | 19043 |
+| Windows 10 version 20H2 | 19042 |
+| Windows 10 version 2004 | 19041 |
+| Windows 10 version 1909 | 18363 |
+| Windows 10 version 1903 | 18362 |
+| Windows Server 2019 | 17763 |
+| Windows 10 version 1809 | 17763 |
+| Windows 10 version 1803 | 17134 |
+| Windows 10 version 1709 | 16299 |
+| Windows 10 version 1703 | 15063 |
+| Windows Server 2016 | 14393 |
+| Windows 10 version 1607 | 14393 |
+
 For more information about the _TargetOSVersion_ decoration, see [Combining Platform Extensions with Operating System Versions](combining-platform-extensions-with-operating-system-versions.md).
 
 > [!IMPORTANT]
@@ -195,6 +215,7 @@ For more information about the _TargetOSVersion_ decoration, see [Combining Plat
 If your INF contains **Manufacturer** section entries with decorations, it must also include [**INF _Models_ sections**](inf-models-section.md) with names that match the operating system decorations. For example, if an INF contains the following **Manufacturer** section:
 
 **%FooCorp%=FooMfg, NTx86....0x80, NTamd64**
+
 Then the INF must also contain [**INF _Models_ sections**](inf-models-section.md) with the following names:
 
 - **[FooMfg.NTx86....0x80]**
@@ -234,6 +255,7 @@ Setup's selection of which INF **_Models_** section to use is based on the follo
 Suppose, for example, Windows is executing on Windows XP (version 5.1), without the Data Center product suite, and it finds the following entry in a **Manufacturer** section:
 
 **%FooCorp%=FooMfg, NT, NT.5, NT.5.5, NT....0x80**
+
 In this case, Windows looks for an [**INF _Models_ section**](inf-models-section.md) named **[FooMfg.NT.5]**. Windows also uses the **[FooMfg.NT.5]** section if it is executing on a Datacenter version of Windows XP, because a specific version number takes precedence over the product type and suite mask.
 
 If you want an INF to explicitly exclude a specific operating system version, product type, or suite, create an empty [**INF _Models_ section**](inf-models-section.md). For example, an empty section named **[FooMfg.NTx86.6.0]** prohibits installation on x86-based operating system versions 6.0 and higher.
@@ -342,7 +364,7 @@ Example 3:
 
 ## See also
 
-[Combining Platform Extensions with Operating System Versions](combining-platform-extensions-with-operating-system-versions.md)
+[Combining platform extensions with operating system versions](combining-platform-extensions-with-operating-system-versions.md)
 
 [**_Models_**](inf-models-section.md)
 

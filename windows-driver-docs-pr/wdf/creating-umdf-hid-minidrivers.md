@@ -14,7 +14,7 @@ You can write a HID minidriver using either KMDF or UMDF. We recommend starting 
 **What to provide**
 
 1.  You'll write a lower filter driver under *MsHidUmdf.sys* (for UMDF) or *MsHidKmdf.sys* (for KMDF), both of which are included as part of the operating system.
-2.  Download and review the [vhidmini2 sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/hid/vhidmini2).
+2.  Download and review the [vhidmini2 sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/hid/vhidmini2).
 
 3.  Call [**WdfFdoInitSetFilter**](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitsetfilter) from the driver's [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function.
 

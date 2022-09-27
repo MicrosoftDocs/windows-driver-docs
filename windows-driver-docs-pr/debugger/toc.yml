@@ -2532,6 +2532,8 @@
       href: bug-check-0x122---whea-internal-error.md
     - name: "Bug Check 0x123: CRYPTO_SELF_TEST_FAILURE"
       href: bug-check-0x123--crypto-self-test-failure-.md
+    - name: "Bug Check 0x124:  WHEA_UNCORRECTABLE_ERROR"
+      href: bug-check-0x124---whea-uncorrectable-error.md
     - name: "Bug Check 0x125: NMR_INVALID_STATE"
       href: bug-check-0x125--nmr-invalid-state.md
     - name: "Bug Check 0x126: NETIO_INVALID_POOL_CALLER"
@@ -2634,6 +2636,8 @@
       href: bug-check-0x162--kernel-auto-boost-invalid-lock-release.md
     - name: "Bug Check 0x163: WORKER_THREAD_TEST_CONDITION"
       href: bug-check-0x162--worker-thread-test-condition.md
+    - name: "Bug Check 0x164: WIN32K_CRITICAL_FAILURE"
+      href: bug-check-0x164--win32k-critical-failure.md      
     - name: "Bug Check 0x16C: INVALID_RUNDOWN_PROTECTION_FLAGS"
       href: bug-check-0x16c--invalid-rundown-protection-flags.md
     - name: "Bug Check 0x16D: INVALID_SLOT_ALLOCATOR_FLAGS"
@@ -2681,7 +2685,11 @@
     - name: "Bug Check 0x19C: WIN32K_POWER_WATCHDOG_TIMEOUT"
       href: bug-check-0x19c--win32k-power-watchdog-timeout.md
     - name: "Bug Check 0x1A2: WIN32K_CALLOUT_WATCHDOG_BUGCHECK"
-      href: bug-check-0x1a2--win32k-callout-watchdog-bugcheck.md      
+      href: bug-check-0x1a2--win32k-callout-watchdog-bugcheck.md
+    - name: "Bug Check 0x1AA: EXCEPTION_ON_INVALID_STACK"
+      href: bug-check-0x1aa-exception-on-invalid-stack.md
+    - name: "Bug Check 0x1AB: UNWIND_ON_INVALID_STACK"
+      href: bug-check-0x1ab-unwind-on-invalid-stack.md
     - name: "Bug Check 0x1C6: FAST_ERESOURCE_PRECONDITION_VIOLATION"
       href: bug-check-0x1c6--fast-eresource-precondition-violation.md
     - name: "Bug Check 0x1C7: STORE_DATA_STRUCTURE_CORRUPTION"
@@ -2720,6 +2728,14 @@
       href: bug-check-0x1db--ipi-watchdog-timeout.md
     - name: "Bug Check 0x1DC: DMA_COMMON_BUFFER_VECTOR_ERROR"
       href: bug-check-0x1dc--dma-common-buffer-vector-error.md
+    - name: "Bug Check 0x1E4: VIDEO_DXGKRNL_SYSMM_FATAL_ERROR"
+      href: bug-check-0x1e4--video-dxgkrnl-sysmm-fatal-error.md      
+    - name: "Bug Check 0x1E9: ILLEGAL_ATS_INITIALIZATION"
+      href: bug-check-0x1e9--illegal-ats-initialization.md      
+    - name: "Bug Check 0x1EA: SECURE_PCI_CONFIG_SPACE_ACCESS_VIOLATION "
+      href: bug-check-0x1ea--secure-pci-config-space-access-violation.md     
+    - name: "Bug Check 0x1EB: DAM_WATCHDOG_TIMEOUT"
+      href: bug-check-0x1eb--dam-watchdog-timeout.md
     - name: "Bug Check 0x356: XBOX_ERACTRL_CS_TIMEOUT"
       href: bug-check-0x356--xbox-eractrl-cs-timeout.md
     - name: "Bug Check 0xBFE: BC_BLUETOOTH_VERIFIER_FAULT"
@@ -2759,6 +2775,8 @@
       href: bug-check-0x141---video-engine-timeout-detected.md
     - name: "Bug Check 0x142: VIDEO_TDR_APPLICATION_BLOCKED"
       href: bug-check-0x142--video-tdr-application-blocked.md
+    - name: "Bug Check 0x144: BUGCODE_USB3_DRIVER"
+      href: bug-check-0x144--bugcode-usb3-driver.md      
     - name: "Bug Check 0x156: WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP"
       href: bug-check-0x156--winsock-detected-hung-closesocket-livedump.md
     - name: "Bug Check 0x15C: PDC_WATCHDOG_TIMEOUT_LIVEDUMP"
@@ -2827,6 +2845,8 @@
       href: bug-check-0x1A7--smb-redirector-livedump.md
     - name: "Bug Check 0x1A8: VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP"
       href: bug-check-0x1a8--video-dxgkrnl-black-screen-livedump.md
+    - name: "Bug Check 0x1A9: DIRECTED_FX_TRANSITION_LIVEDUMP"
+      href: bug-check-0x1a9--directed-fx-transition-livedump.md      
     - name: "Bug Check 0x1B0: VIDEO_MINIPORT_FAILED_LIVEDUMP"
       href: bug-check-0x1b0--video-miniport-failed-livedump.md      
     - name: "Bug Check 0x1B8: VIDEO_MINIPORT_BLACK_SCREEN_LIVEDUMP"

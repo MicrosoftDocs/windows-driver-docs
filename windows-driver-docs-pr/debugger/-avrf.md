@@ -2,7 +2,7 @@
 title: avrf (WinDbg)
 description: The avrf extension controls the settings of Application Verifier and displays a variety of output produced by Application Verifier.
 keywords: ["avrf Windows Debugging"]
-ms.date: 09/17/2018
+ms.date: 06/24/2022
 topic_type:
 - apiref
 api_name:
@@ -122,8 +122,8 @@ For information about how to download and install Application Verifier and its d
 
 ## Remarks
 
-When the **!avrf** extension is used with no parameters, it displays the current Application Verifier options. If the **Full page heap** or **Fast fill heap** option has been enabled, information about active page heaps is displayed as well. For some examples, see "Heap Operation Logs" in the Application Verifier documentation.
+When the **!avrf** extension is used with no parameters, it displays the current Application Verifier options. If the **Full page heap** or **Fast fill heap** option has been enabled, information about active page heaps is displayed as well. For some examples, see "Heap Operation Logs" in [Debugging Application Verifier Stops](../devtest/application-verifier-debugging-application-verifier-stops.md).
 
-If an Application Verifier Stop has occurred, the **!avrf** extension with no parameters will reveal the nature of the stop and its cause. For some examples, see "Debugging Application Verifier Stops" in the Application Verifier documentation.
+If an Application Verifier Stop has occurred, the **!avrf** extension with no parameters will reveal the nature of the stop and its cause. For some examples, see [Debugging Application Verifier Stops](../devtest/application-verifier-debugging-application-verifier-stops.md).
 
-If symbols for ntdll.dll and verifier.dll are missing, the **!avrf** extension generates an error message. For information about how to address this problem, see "Setting Up a Debugger for Application Verifier" in the Application Verifier documentation.
+If symbols for ntdll.dll and verifier.dll are missing, the **!avrf** extension generates an error message. For information about how to address this problem, see "Debugger install and setup" in [Debugging Application Verifier Stops](../devtest/application-verifier-debugging-application-verifier-stops.md).

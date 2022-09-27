@@ -35,7 +35,7 @@ A minifilter releases a context by calling [**FltReleaseContext**](/windows-hard
 
 Note that the *OldContext* pointer returned by **FltSet***Xxx***Context** and the *Context* pointer returned by [**FltDeleteContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdeletecontext) must also be released when they are no longer needed.
 
-In the following code example, taken from the [CTX sample minifilter](https://github.com/microsoft/Windows-driver-samples/tree/master/filesys/miniFilter/ctx), the **CtxInstanceSetup** routine creates and sets an instance context and then calls [**FltReleaseContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltreleasecontext):
+In the following code example, taken from the [CTX sample minifilter](https://github.com/Microsoft/Windows-driver-samples/tree/main/filesys/miniFilter/ctx), the **CtxInstanceSetup** routine creates and sets an instance context and then calls [**FltReleaseContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltreleasecontext):
 
 ```cpp
 status = FltAllocateContext(

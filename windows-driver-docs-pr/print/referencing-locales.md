@@ -1,13 +1,13 @@
 ---
-title: Referencing Locales
-description: Referencing Locales
+title: Referencing locales
+description: Provides information about referencing locales.
 keywords:
 - Unidrv, referencing locales
-- GPD files WDK Unidrv , referencing locales
+- GPD files WDK Unidrv, referencing locales
 - referencing locales
 - locale referencing WDK Unidrv
 - Unidrv WDK print
-ms.date: 06/12/2020
+ms.date: 09/08/2022
 ---
 
 # Referencing locales
@@ -50,7 +50,7 @@ This GPD file defines a feature named "Locale", and defines options for many loc
 } *% End of Feature: PaperSize
 ```
 
-At run time, Unidrv determines the system's default locale by calling **GetSystemDefaultLCID** (described in the Microsoft Windows SDK documentation). When a printer is installed, the GPD parser reads the printer's GPD file and uses information within the \*Case statement associated with the default locale. (Note that if the system's locale is changed after the printer is installed, locale-based options are not changed.)
+At run time, Unidrv determines the system's default locale by calling [**GetSystemDefaultLCID**](/windows/win32/api/winnls/nf-winnls-getsystemdefaultlcid). When a printer is installed, the GPD parser reads the printer's GPD file and uses information within the \*Case statement associated with the default locale. Note that if the system's locale is changed after the printer is installed, locale-based options are not changed.
 
 Here is another example, which selects a resource DLL based on the locale. The resource DLL can contain locale-specific resources, such as display strings.
 
@@ -78,16 +78,16 @@ You might want to have your driver assign the default paper size, either metric 
 
 The following algorithm retrieves the default system locale and then uses country/region codes to determine whether the system locale represents a country that typically uses metric or non-metric paper sizes. With this information, your driver can set the default paper size appropriately, such as A4 for countries that use the metric system and Letter size for countries that don't.
 
-1. Use the [GetLocaleInfo](/previous-versions//ms776270(v=vs.85)) function to retrieve the default system locale. Use LOCALE\_SYSTEM\_DEFAULT for the first parameter, *Locale*, and LOCALE\_ICOUNTRY for the second parameter, *LCType*.
+1. Use the [GetLocaleInfo](/previous-versions//ms776270(v=vs.85)) function to retrieve the default system locale. Use LOCALE_SYSTEM_DEFAULT for the first parameter, *Locale*, and LOCALE_ICOUNTRY for the second parameter, *LCType*.
 
 1. Use the default system locale obtained from **GetLocaleInfo** to determine metric or non-metric paper size.
     - Non-metric if default system locale is:
 
-        - CTRY\_UNITED\_STATES, or
+        - CTRY_UNITED_STATES, or
 
-        - CTRY\_CANADA, or
+        - CTRY_CANADA, or
 
-        - Greater than or equal to 50, but less than 60 and not CTRY\_BRAZIL, or
+        - Greater than or equal to 50, but less than 60 and not CTRY_BRAZIL, or
 
         - Greater than or equal to 500, but less than 600
 

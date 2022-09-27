@@ -67,7 +67,7 @@ When data is received from the device into the interrupt pipe, it raises the [**
 
 This example code shows a simple implementation of the event handler. The handler maintains the count of interrupts received. Each time the handler is invoked, it increments the count. The handler gets the data buffer from *eventArgs* parameter and displays the count of interrupts and the length of bytes received.
 
-```CSharp
+```csharp
 private async void OnInterruptDataReceivedEvent(UsbInterruptInPipe sender, UsbInterruptInEventArgs eventArgs)
 {
     numInterruptsReceived++;
@@ -135,7 +135,7 @@ Next, you must register the event handler on the [**UsbInterruptInPipe**](/uwp/a
 
 This example code shows how to register the event handler. In this example, the class keeps track of the event handler, pipe for which the event handler is registered, and whether the pipe is currently receiving data. All that information is used for unregistering the event handler, shown in the next step.
 
-```CSharp
+```csharp
 private void RegisterForInterruptEvent(TypedEventHandler<UsbInterruptInPipe, UsbInterruptInEventArgs> eventHandler)
 {
     // Search for the correct pipe that has the specified endpoint number
@@ -150,7 +150,7 @@ private void RegisterForInterruptEvent(TypedEventHandler<UsbInterruptInPipe, Usb
 }
 ```
 
-```CSharp
+```csharp
 void RegisterForInterruptEvent(TypedEventHandler<UsbInterruptInPipe, UsbInterruptInEventArgs> eventHandler)
     // Search for the correct pipe that has the specified endpoint number
     interruptInPipe = usbDevice.DefaultInterface.InterruptInPipes.GetAt(pipeIndex);
@@ -172,7 +172,7 @@ After you are finished receiving data, unregister the event handler.
 
 This example code shows how to unregister the event handler. In this example, if the app has an previously registered event handler, the method gets the tracked event handler, and unregisters it on the interrupt pipe.
 
-```CSharp
+```csharp
 private void UnregisterInterruptEventHandler()
 {
     if (registeredInterruptHandler)
@@ -184,7 +184,7 @@ private void UnregisterInterruptEventHandler()
 }
 ```
 
-```CSharp
+```csharp
 void UnregisterFromInterruptEvent(void)
 {
     if (registeredInterrupt)

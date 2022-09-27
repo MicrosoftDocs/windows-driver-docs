@@ -1,6 +1,6 @@
 ---
 title: DEVPKEY_NAME (Device Setup Class)
-description: DEVPKEY_NAME (Device Setup Class)
+description: The DEVPKEY_NAME device property represents the name of a device setup class.
 keywords: ["DEVPKEY_NAME (Device Setup Class) Device and Driver Installation"]
 topic_type:
 - apiref
@@ -10,40 +10,19 @@ api_location:
 - Devpkey.h
 api_type:
 - HeaderDef
-ms.date: 10/17/2018
+ms.date: 06/24/2022
 ---
 
 # DEVPKEY_NAME (Device Setup Class)
 
-
 The DEVPKEY_NAME device property represents the name of a [device setup class](./overview-of-device-setup-classes.md).
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Property key</strong></p></td>
-<td align="left"><p>DEVPKEY_NAME</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Property-data-type identifier</strong></p></td>
-<td align="left"><p><a href="devprop-type-string.md" data-raw-source="[&lt;strong&gt;DEVPROP_TYPE_STRING&lt;/strong&gt;](devprop-type-string.md)"><strong>DEVPROP_TYPE_STRING</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Property access</strong></p></td>
-<td align="left"><p>Read-only access by installation applications and installers</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Localized?</strong></p></td>
-<td align="left"><p>Yes</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Attribute | Value |
+|--|--|
+| Property key | DEVPKEY_NAME |
+| Property-data-type identifier | [**DEVPROP_TYPE_STRING**](devprop-type-string.md) |
+| Property access | Read-only access by installation applications and installers |
+| Localized? | Yes |
 
 ## Remarks
 
@@ -57,25 +36,11 @@ Windows Server 2003, Windows XP, and Windows 2000 do not directly support a corr
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows Vista and later versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Devpkey.h (include Devpkey.h)</td>
-</tr>
-</tbody>
-</table>
+**Version**: Windows Vista and later versions of Windows
+
+**Header**: Devpkey.h (include Devpkey.h)
 
 ## See also
-
 
 [**DEVPKEY_DeviceClass_ClassName**](devpkey-deviceclass-classname.md)
 
@@ -83,11 +48,6 @@ Windows Server 2003, Windows XP, and Windows 2000 do not directly support a corr
 
 [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
-
 [**SetupDiGetClassDescription**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdescriptiona)
 
 [**SetupDiClassNameFromGuid**](/windows/win32/api/setupapi/nf-setupapi-setupdiclassnamefromguida)
-
- 
-

@@ -1,12 +1,18 @@
 ---
 title: Introduction to Extra Create Parameters
 description: Introduction to Extra Create Parameters
-ms.date: 09/09/2021
+ms.date: 07/01/2022
+keywords:
+- Extra create parameters , Windows
+- ECPs , Windows
+- ECP_LIST , Windows
 ---
 
-# Introduction to Extra Create Parameters
+# About Extra Create Parameters (ECPs)
 
-Extra create parameters (ECPs) are structures that can contain additional information for file creates. A create operation can have any number of ECPs, which are attached to the operation using an [**ECP_LIST**](/previous-versions/windows/hardware/drivers/ff540148(v=vs.85)). There are two types of ECPs:
+Extra create parameters (ECPs) are structures that can contain additional information for file creates. A create operation can have any number of ECPs, which are attached to the operation using an **ECP_LIST**. **ECP_LIST** is an opaque structure declared in *ntifs.h*.
+
+There are two types of ECPs:
 
 * System-defined ECPs. Operating system components use system-defined ECPs to associate additional information with the [**IRP_MJ_CREATE**](./irp-mj-create.md) operation on a file.
 

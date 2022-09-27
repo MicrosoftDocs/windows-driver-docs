@@ -10,12 +10,16 @@ keywords:
 - Audio Settings, Audio Notifications
 - Windows 11 audio 
 - CAPX, Core Audio Processing Object Extensions
-ms.date: 10/20/2021
+ms.date: 07/08/2022
 ---
 
 # Windows 11 APIs for Audio Processing Objects
 
-This topic introduces a set of new Windows 11 APIs for Audio Processing Objects (APOs) that are shipped with an audio driver. Some of these APIs enable new scenarios for Independent Hardware Vendors (IHV) and Independent Software Vendors (ISV), while other APIs are meant to provide alternatives that improve overall audio reliability and debugging capabilities.
+This topic introduces a set of new Windows 11 APIs for Audio Processing Objects (APOs) that are shipped with an audio driver. 
+
+Windows allows third-party audio hardware manufacturers to include custom host-based digital signal processing effects. These effects are packaged as user-mode Audio Processing Objects (APOs). For more information, see [Windows Audio Processing Objects](windows-audio-processing-objects.md).
+
+Some of the APIs described here enable new scenarios for Independent Hardware Vendors (IHV) and Independent Software Vendors (ISV), while other APIs are meant to provide alternatives that improve overall audio reliability and debugging capabilities.
 
 - The [Acoustic Echo Cancellation (AEC) framework](#acoustic-echo-cancellation-aec) allows an APO to identify itself as an _AEC_ APO, granting access to a reference stream and additional controls.
 - The [Settings framework](#settings-framework) will allow APOs to expose methods for querying and modifying the property store for audio effects (“FX property store”) on an audio endpoint. When these methods are implemented by an APO, they can be invoked by Hardware Support Apps (HSA) that are associated with that APO.
@@ -42,7 +46,7 @@ The latest versions of Windows, the WDK, and the SDK can be downloaded below thr
 
 Windows 11 WHCP Content has been updated to provide partners the means to validate these APIs. 
 
-The sample code for the content outlined in this topic can be found here: [Audio/SYSVAD/APO - github](https://github.com/microsoft/Windows-driver-samples/blob/master/audio/sysvad/APO/)
+The sample code for the content outlined in this topic can be found here: [Audio/SYSVAD/APO - github](https://github.com/microsoft/Windows-driver-samples/blob/main/audio/sysvad/APO/)
 
 ## Acoustic Echo Cancellation (AEC)
 
@@ -81,7 +85,7 @@ An APO can examine the APO_CONNECTION_PROPERTY.u32Signature field to determine w
 APO_CONNECTION_PROPERTY_SIGNATURE, while APO_CONNECTION_PROPERTY_V2 have a signature that equals APO_CONNECTION_PROPERTY_V2_SIGNATURE.
 If the signature has a value that equals APO_CONNECTION_PROPERTY_V2_SIGNATURE, the pointer to the APO_CONNECTION_PROPERTY structure may be safely typecast to an APO_CONNECTION_PROPERTY_V2 pointer.
 
-The following code is from the [Aec APO MFX sample - AecApoMfx.cpp](https://github.com/microsoft/Windows-driver-samples/blob/master/audio/sysvad/APO/AecApo/AecApoMfx.cpp) and shows the recasting.
+The following code is from the [Aec APO MFX sample - AecApoMfx.cpp](https://github.com/microsoft/Windows-driver-samples/blob/main/audio/sysvad/APO/AecApo/AecApoMfx.cpp) and shows the recasting.
 
 ```cpp
     if (ppInputConnections[0]->u32Signature == APO_CONNECTION_PROPERTY_V2_SIGNATURE)
@@ -130,11 +134,11 @@ For more information, find additional information on the following pages.
 
 Refer to the following Sysvad Audio AecApo code samples. 
 
-- [Aec APO sample header - AecAPO.h](https://github.com/microsoft/Windows-driver-samples/blob/master/audio/sysvad/APO/AecApo/AecApo.h)
+- [Aec APO sample header - AecAPO.h](https://github.com/microsoft/Windows-driver-samples/blob/main/audio/sysvad/APO/AecApo/AecApo.h)
 
-- [Aec APO MFX sample - AecApoMfx.cpp](https://github.com/microsoft/Windows-driver-samples/blob/master/audio/sysvad/APO/AecApo/AecApoMfx.cpp)
+- [Aec APO MFX sample - AecApoMfx.cpp](https://github.com/microsoft/Windows-driver-samples/blob/main/audio/sysvad/APO/AecApo/AecApoMfx.cpp)
 
-The following code from the [Aec APO sample header-  AecAPO.h](https://github.com/microsoft/Windows-driver-samples/blob/master/audio/sysvad/APO/AecApo/AecApo.h) shows the three new public methods being added. 
+The following code from the [Aec APO sample header-  AecAPO.h](https://github.com/microsoft/Windows-driver-samples/blob/main/audio/sysvad/APO/AecApo/AecApo.h) shows the three new public methods being added. 
 
 ```cpp
  public IApoAcousticEchoCancellation,
@@ -183,7 +187,7 @@ The following code from the [Aec APO sample header-  AecAPO.h](https://github.co
 
 ```
 
-The following code is from the [Aec APO MFX sample - AecApoMfx.cpp](https://github.com/microsoft/Windows-driver-samples/blob/master/audio/sysvad/APO/AecApo/AecApoMfx.cpp) and shows the implementation of AddAuxiliaryInput, when the APO can only handle one auxiliary input.
+The following code is from the [Aec APO MFX sample - AecApoMfx.cpp](https://github.com/microsoft/Windows-driver-samples/blob/main/audio/sysvad/APO/AecApo/AecApoMfx.cpp) and shows the implementation of AddAuxiliaryInput, when the APO can only handle one auxiliary input.
 
 
 ```cpp
@@ -610,7 +614,7 @@ STDMETHODIMP PropertyChangeNotificationClient::OnPropertyChanged(AUDIO_SYSTEMEFF
 
 ### Sample code - Settings Framework
 
-This sample code is from the sysvad [SFX Swap APO sample - SwapAPOSFX.cpp](https://github.com/microsoft/Windows-driver-samples/blob/master/audio/sysvad/APO/SwapAPO/swapaposfx.cpp#L300-L329).
+This sample code is from the sysvad [SFX Swap APO sample - SwapAPOSFX.cpp](https://github.com/microsoft/Windows-driver-samples/blob/main/audio/sysvad/APO/SwapAPO/swapaposfx.cpp#L300-L329).
 
 ```cpp
 // SampleApo supports the new IAudioSystemEffects3 interface so it will receive APOInitSystemEffects3
@@ -841,7 +845,7 @@ STDMETHODIMP_(void) SampleApo::HandleNotification(_In_ APO_NOTIFICATION* apoNoti
 }
 ```
 
-The following code is from the [Swap APO MFX sample - swapapomfx.cpp](https://github.com/microsoft/Windows-driver-samples/blob/master/audio/sysvad/APO/SwapAPO/swapapomfx.cpp#L770-L794) and shows registering for events, by returning an array of APO_NOTIFICATION_DESCRIPTORs.
+The following code is from the [Swap APO MFX sample - swapapomfx.cpp](https://github.com/microsoft/Windows-driver-samples/blob/main/audio/sysvad/APO/SwapAPO/swapapomfx.cpp#L770-L794) and shows registering for events, by returning an array of APO_NOTIFICATION_DESCRIPTORs.
 
 ```cpp
 HRESULT CSwapAPOMFX::GetApoNotificationRegistrationInfo(_Out_writes_(*count) APO_NOTIFICATION_DESCRIPTOR **apoNotifications, _Out_ DWORD *count)
@@ -871,7 +875,7 @@ HRESULT CSwapAPOMFX::GetApoNotificationRegistrationInfo(_Out_writes_(*count) APO
 }
 ```
 
-The following code is from the [SwapAPO MFX HandleNotifications sample - swapapomfx.cpp](https://github.com/microsoft/Windows-driver-samples/blob/master/audio/sysvad/APO/SwapAPO/swapapomfx.cpp#L796-L827) and shows how to handle notifications. 
+The following code is from the [SwapAPO MFX HandleNotifications sample - swapapomfx.cpp](https://github.com/microsoft/Windows-driver-samples/blob/main/audio/sysvad/APO/SwapAPO/swapapomfx.cpp#L796-L827) and shows how to handle notifications. 
 
 ```cpp
 void CSwapAPOMFX::HandleNotification(APO_NOTIFICATION *apoNotification)
@@ -936,7 +940,7 @@ For more information, see [IAudioProcessingObjectLoggingService](/windows/win32/
 
 The sample demonstrates the use of the method IAudioProcessingObjectLoggingService::ApoLog and how this interface pointer is obtained in IAudioProcessingObject::Initialize.
 
-[AecApoMfx Logging Example](https://github.com/microsoft/Windows-driver-samples/blob/master/audio/sysvad/APO/AecApo/AecApoMfx.cpp#L306-L310).
+[AecApoMfx Logging Example](https://github.com/microsoft/Windows-driver-samples/blob/main/audio/sysvad/APO/AecApo/AecApoMfx.cpp#L306-L310).
 
 
 
@@ -1112,9 +1116,9 @@ STDMETHODIMP SampleApo3AsyncCallback::Invoke(_In_ IRtwqAsyncResult* asyncResult)
 ```
 
 For more examples of how to utilize this interface, please see the following sample code:
-- [SwapAPO SwapMFXApoAsyncCallback Class Definition - Example](https://github.com/microsoft/Windows-driver-samples/blob/master/audio/sysvad/APO/SwapAPO/SwapAPO.h#L48-L75)
-- [SwapAPO Invoke Function - Example](https://github.com/microsoft/Windows-driver-samples/blob/master/audio/sysvad/APO/SwapAPO/swapapomfx.cpp#L124-L141)
-- [SwapAPO Create Async Callback - Example](https://github.com/microsoft/Windows-driver-samples/blob/master/audio/sysvad/APO/SwapAPO/swapapomfx.cpp#L347-L366)
+- [SwapAPO SwapMFXApoAsyncCallback Class Definition - Example](https://github.com/microsoft/Windows-driver-samples/blob/main/audio/sysvad/APO/SwapAPO/SwapAPO.h#L48-L75)
+- [SwapAPO Invoke Function - Example](https://github.com/microsoft/Windows-driver-samples/blob/main/audio/sysvad/APO/SwapAPO/swapapomfx.cpp#L124-L141)
+- [SwapAPO Create Async Callback - Example](https://github.com/microsoft/Windows-driver-samples/blob/main/audio/sysvad/APO/SwapAPO/swapapomfx.cpp#L347-L366)
 
 
 ## Audio Effects Discovery and Control for Effects
@@ -1133,9 +1137,9 @@ An APO needs to implement the [IAudioSystemEffects3](/windows/win32/api/audioeng
 
 ### Sample code - Audio Effect Discovery
 
-The Audio Effect Discovery sample code can be found within the [SwapAPOSFX sample - swapaposfx.cpp](https://github.com/microsoft/Windows-driver-samples/blob/master/audio/sysvad/APO/SwapAPO/swapaposfx.cpp). 
+The Audio Effect Discovery sample code can be found within the [SwapAPOSFX sample - swapaposfx.cpp](https://github.com/microsoft/Windows-driver-samples/blob/main/audio/sysvad/APO/SwapAPO/swapaposfx.cpp). 
 
-The following sample code illustrates how to retrieve the list of configurable effects. [GetControllableSystemEffectsList sample - swapaposfx.cpp](https://github.com/microsoft/Windows-driver-samples/blob/master/audio/sysvad/APO/SwapAPO/swapaposfx.cpp#L583-L625)
+The following sample code illustrates how to retrieve the list of configurable effects. [GetControllableSystemEffectsList sample - swapaposfx.cpp](https://github.com/microsoft/Windows-driver-samples/blob/main/audio/sysvad/APO/SwapAPO/swapaposfx.cpp#L583-L625)
 
 ```cpp
 HRESULT CSwapAPOSFX::GetControllableSystemEffectsList(_Outptr_result_buffer_maybenull_(*numEffects) AUDIO_SYSTEMEFFECT** effects, _Out_ UINT* numEffects, _In_opt_ HANDLE event)
@@ -1183,7 +1187,7 @@ HRESULT CSwapAPOSFX::GetControllableSystemEffectsList(_Outptr_result_buffer_mayb
 }
 ```
 
-The following sample code illustrates how to enable and disable effects. [SetAudioSystemEffectState sample - swapaposfx.cpp](https://github.com/microsoft/Windows-driver-samples/blob/master/audio/sysvad/APO/SwapAPO/swapaposfx.cpp#L627-L653)
+The following sample code illustrates how to enable and disable effects. [SetAudioSystemEffectState sample - swapaposfx.cpp](https://github.com/microsoft/Windows-driver-samples/blob/main/audio/sysvad/APO/SwapAPO/swapaposfx.cpp#L627-L653)
 
 ```cpp
 HRESULT CSwapAPOSFX::SetAudioSystemEffectState(GUID effectId, AUDIO_SYSTEMEFFECT_STATE state)
@@ -1214,3 +1218,51 @@ HRESULT CSwapAPOSFX::SetAudioSystemEffectState(GUID effectId, AUDIO_SYSTEMEFFECT
     return E_NOTFOUND;
 }
 ```
+
+## Reuse of the WM SFX and MFX APOs in Windows 11, version 22H2
+
+Starting with Windows 11, version 22H2, the INF configuration files that that reuse the inbox WM SFX and MFX APOs, can now reuse the CAPX SFX and MFX APOs. This section describes the three ways to do this.
+
+There are three insertion points for APOs: pre-mix render, post-mix render, and capture. Each logical device's audio engine supports one instance of a pre-mix render APO per stream (render SFX) and one post-mix render APO (MFX). The audio engine also supports one instance of a capture APO (capture SFX) that is inserted in each capture stream. For more information on how to reuse or wrap the inbox APOs, see [Combine custom and Windows APOs](combine-custom-and-windows-apos.md).
+
+The CAPX SFX and MFX APOs can be reused in one of the following three ways. 
+
+### Using INF DDInstall Section
+
+Use mssysfx.CopyFilesAndRegisterCapX from wdmaudio.inf by adding the following entries.
+
+```inf
+   Include=wdmaudio.inf
+   Needs=mssysfx.CopyFilesAndRegisterCapX
+```
+
+### Using an extension INF file
+
+The wdmaudioapo.inf is the AudioProcessingObject class extension inf. It contains the device-specific registration of the SFX and MFX APOs. 
+
+### Directly referencing the WM SFX and MFX APOs for stream and mode effects
+
+To directly reference these APOs for stream and mode effects, use the following GUID values.
+
+- Use `{C9453E73-8C5C-4463-9984-AF8BAB2F5447}` as the WM SFX APO 
+- Use `{13AB3EBD-137E-4903-9D89-60BE8277FD17}` as the WM MFX APO.
+
+SFX (Stream) and MFX (Mode) were referred in Windows 8.1 to LFX (local) and MFX was referred to as GFX (global). These registry entries continue to use the previous names.
+
+Device-specific registration uses HKR instead of HKCR.
+   
+The INF file  will need to have the following enties added.
+
+```inf
+  HKR,"FX\\0\\%WMALFXGFXAPO_Context%",%PKEY_FX_Association%,,%KSNODETYPE_ANY%
+  HKR,"FX\\0\\%WMALFXGFXAPO_Context%\\User",,,
+  WMALFXGFXAPO_Context = "{B13412EE-07AF-4C57-B08B-E327F8DB085B}"
+```
+
+These INF file entries will create a property store that will be used by the Windows 11 APIs for the new APOs.
+
+PKEY_FX_Association in the INF ex. `HKR,"FX\\0",%PKEY_FX_Association%,,%KSNODETYPE_ANY%`, should be replaced with `HKR,"FX\\0\\%WMALFXGFXAPO_Context%",%PKEY_FX_Association%,,%KSNODETYPE_ANY%`.
+
+## See also
+
+[Windows Audio Processing Objects](windows-audio-processing-objects.md).

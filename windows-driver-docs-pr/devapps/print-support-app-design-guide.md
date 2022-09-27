@@ -2,6 +2,7 @@
 title: Print support app design guide
 description: Provides guidance and examples for printer OEMs and IHVs that are implementing a print support app (PSA) for their device.
 ms.date: 05/20/2022
+ms.custom: contperf-fy22q4
 ---
 
 # Print support app design guide

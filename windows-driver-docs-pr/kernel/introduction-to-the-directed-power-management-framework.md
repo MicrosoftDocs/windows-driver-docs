@@ -1,7 +1,7 @@
 ---
 title: Introduction to the Directed Power Management Framework
 description: Describes the Directed Power Management Framework, or DFx, which is part of the Power Framework, or PoFx, version 3.
-ms.date: 04/02/2021
+ms.date: 08/10/2022
 ms.custom: 19H1
 ---
 
@@ -51,7 +51,8 @@ Provide pointers to these callbacks in a [PO_FX_DEVICE_V3](/windows-hardware/dri
 To get DFx support, a driver must:
 
 * Provide the `PO_FX_DIRECTED_POWER*` callbacks when registering for PoFx
-* Call [**PoFxReportDevicePoweredOn**](/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxreportdevicepoweredon) from its [PO_FX_DIRECTED_POWER_UP_CALLBACK](/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_up_callback) callback function on resume from Sx transitions
+* Call [**PoFxReportDevicePoweredOn**](/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxreportdevicepoweredon) from its [PO_FX_DIRECTED_POWER_UP_CALLBACK](/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_directed_power_up_callback) callback function on return from idle. If this is a WDF driver, it can set a flag, and then in [*EvtDeviceD0Entry*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry), check the flag and call **PoFxReportDevicePoweredOn**.
+* Call [**PoFxReportDevicePoweredOn**](/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxreportdevicepoweredon) on resume from Sx transition. If this is a WDF driver, it needs to [preprocess](../wdf/preprocessing-and-postprocessing-irps.md) IRP_MN_SET_POWER. The preprocessing callback should only proceed if `Parameters.Power.Type == SystemPowerState`. Because the device might stay in Dx state for the entirety of the sleep/resume cycle, the above approach of checking a flag in *EvtDeviceD0Entry* won't work. Instead, the [*EvtDeviceWdmIrpPreprocess*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdfdevice_wdm_irp_preprocess) event callback function should call [**IoSetCompletionRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine) to set an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine, and from the completion routine call **PoFxReportDevicePoweredOn**.
 
 ## Example
 

@@ -1,7 +1,7 @@
 ---
 title: How container IDs are generated
 description: How container IDs are generated
-ms.date: 04/08/2022
+ms.date: 09/19/2022
 ---
 
 # How container IDs are generated
@@ -15,7 +15,7 @@ Starting with Windows 7, the Plug and Play (PnP) manager generates a container I
     If a bus driver wants to provide a container ID, it can either obtain a genuine container ID that was embedded in the physical device hardware, or use a bus-specific unique ID from the device hardware to generate a container ID. Some examples of bus-specific unique IDs are a device's serial number or a media access control (MAC) address in the device's firmware.
 
     > [!NOTE]
-    > Information the user should notice even if skimmingThe independent hardware vendor (IHV) is responsible for the uniqueness of the container ID reported by the bus driver.
+    > The independent hardware vendor (IHV) is responsible for the uniqueness of the container ID reported by the bus driver.
 
     For more information, see [Container IDs Generated from a Bus-Specific Unique ID](container-ids-generated-from-a-bus-specific-unique-id.md).
 

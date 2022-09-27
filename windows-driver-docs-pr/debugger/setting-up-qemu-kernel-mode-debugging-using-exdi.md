@@ -22,7 +22,7 @@ For general information on setting up configuring and troubleshooting EXDI conne
 
 EXDI is an interface that allows extending WinDbg by adding support for hardware debuggers (e.g. JTAG-based, or GdbServer based). The diagram below illustrates the role of EXDI-GdbServer.
 
-![A stack diagram showing role of EXDI-GdbServer with WinDbg-DbgEng on top, a exdi interface and a exdi com server talking down to a GDB server ](images/exdi-server-dbgeng-interface-diagram.png)
+![A stack diagram showing role of EXDI-GdbServer with WinDbg-DbgEng on top, a exdi interface and a exdi com server talking down to a GDB server.](images/exdi-server-dbgeng-interface-diagram.png)
 
 >[!IMPORTANT]
 > Because EXDI does not make use of the KDNET protocol, the connected debugger has significantly less information about what is running on the PC and many commands will work differently or may not work at all. Access to private symbols for the code being debugged can help the debugger better understand the target systems code execution. For more information, see [Public and Private Symbols](public-and-private-symbols.md).
@@ -44,7 +44,7 @@ In this topic, we will describe the process to attach to a QEMU Virtual Windows 
 
 ## Download and Install QEMU On Windows
 
-QEMU is a generic and open source machine emulator and virtualizer that causes dynamic translation. When QEMU is used as a machine emulator - it can run OS’s and programs made for one processor (such as an Arm64) on a different machine (a x64 PC). It can also can run/host virtual machines images for different OS's (Windows/Linux/Mac).
+QEMU is a generic and open source machine emulator and virtualizer that causes dynamic translation. When QEMU is used as a machine emulator - it can run OS’s and programs made for one processor (such as an Arm64) on a different machine (a x64 PC). It can also run/host virtual machines images for different OS's (Windows/Linux/Mac).
 
 QEMU can use other hypervisors like KVM to use CPU extensions (HVM) for virtualization. When QEMU is used as a virtualizer, QEMU achieves near native performances by executing the guest code directly on the host CPU. QEMU can take advantage of OS hypervisor features to offload CPU and MMU emulation to real hardware.
 
@@ -259,7 +259,7 @@ set EXDI_GDBSRV_XML_CONFIG_FILE="C:\Program Files (x86)\Windows Kits\10\Debugger
 set EXDI_SYSTEM_REGISTERS_MAP_XML_FILE="C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\systemregisters.xml"
 ```
 
-Type `SET` to confirm that the the path specified is available from the location of the ExdiGdbSrvSample.dll
+Type `SET` to confirm that the path specified is available from the location of the ExdiGdbSrvSample.dll
 
 #### Powershell
 
@@ -271,7 +271,7 @@ $env:EXDI_GDBSRV_XML_CONFIG_FILE = 'C:\Program Files (x86)\Windows Kits\10\Debug
 $env:EXDI_SYSTEM_REGISTERS_MAP_XML_FILE = 'C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\systemregisters.xml'
 ```
 
-Type `dir env:` to confirm that the the path specified is available from the location of the ExdiGdbSrvSample.dll
+Type `dir env:` to confirm that the path specified is available from the location of the ExdiGdbSrvSample.dll
 
 ## Launch WinDbg on the host system
 
