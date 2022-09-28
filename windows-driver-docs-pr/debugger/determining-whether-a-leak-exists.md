@@ -22,7 +22,7 @@ After opening the Performance Monitor, add the following counters to the main Pe
 -   **Memory**--&gt;**Pool Paged Bytes**
 
 -   **Paging File**--&gt;**% Usage**
-
+bbb
 
 Right click on the *Performance Monitor* under *Monitoring Tools* and select **Properties**. 
 
