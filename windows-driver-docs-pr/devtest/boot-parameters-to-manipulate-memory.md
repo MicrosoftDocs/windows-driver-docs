@@ -41,7 +41,7 @@ bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} removememory 1536
 You can also use the **truncatememory** option with the **bcdedit /set** command to achieve the same result. When you use this option, Windows ignores all memory at or above the specified physical address. Specify the *address* in bytes. For example, the following command sets the physical address limit at 1 GB for the specified boot entry. You can specify the address in decimal (1073741824) or hexadecimal (0x40000000).
 
 ```
-bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} truncatememory Ox40000000
+bcdedit /set {18b123cd-2bf6-11db-bfae-00e018e2b8db} truncatememory 0x40000000
 ```
 
 Because the **removememory** option makes more efficient use of system memory, its use is recommended instead of **truncatememory**.

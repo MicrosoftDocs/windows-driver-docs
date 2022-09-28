@@ -4,7 +4,7 @@ description: Using Static tools and CodeQL on Windows driver source code to disc
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 08/18/2022
+ms.date: 09/27/2022
 ---
 
 # CodeQL and the Static Tools Logo Test
@@ -331,7 +331,7 @@ Unpacked in: C:\codeql-home\codeql\
    use 'codeql resolve qlpacks' and 'codeql resolve languages'.
 ```
 
-The database upgrade command will update a database. Be aware that this is a one way upgrade and is not reversible. For more information, see [database upgrade](https://codeql.github.com/docs/codeql-cli/upgrading-codeql-databases/).
+The database upgrade command will update a database. Be aware that this is a one way upgrade and is not reversible. For more information, see [database upgrade](https://codeql.github.com/docs/codeql-cli/manual/database-upgrade/).
 
 ## Queries
 
