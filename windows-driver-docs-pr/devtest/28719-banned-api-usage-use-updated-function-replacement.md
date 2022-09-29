@@ -6,7 +6,7 @@ f1_keywords: ["C28719", "BANNED_API_USAGE", "__WARNING_BANNED_API_USAGE"]
 ---
 # Warning C28719
 
-> Banned API Usage:  '\**function-name*' is insecure and has been marked deprecated.
+> Banned API Usage:  *function-name* is insecure and has been marked deprecated.
 
 This warning indicates that a function is being used that has been banned and has a more robust or secure replacement.
 
