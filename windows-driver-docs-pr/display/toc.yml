@@ -30,6 +30,8 @@
     items:
     - name: "D3D12 video encoding"
       href: video-encoding-d3d12.md
+    - name: "Enhanced barriers"
+      href: enhanced-barriers.md
     - name: "IOMMU DMA remapping"
       href: iommu-dma-remapping.md
     - name: "Signaling a CPU event from KMD"
