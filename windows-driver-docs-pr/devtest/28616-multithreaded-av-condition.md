@@ -26,7 +26,7 @@ Another thread T2 executes the `if` condition, decrements `m_cRef` to 0, execute
 
 When T1 is rescheduled, it will reference `m_cref` on line 9. Thus it will access a member variable after the related `this` pointer has been deleted—and when the heap for the object is in an unknown state.
 
-```
+```cpp
 ULONG CObject::Release()
 {
     if (0 == InterlockedDecrement(&m_cRef))
@@ -41,7 +41,7 @@ ULONG CObject::Release()
 
 The following code does not reference any heap memory after the object is deleted.
 
-```
+```cpp
 ULONG CObject::Release()
 {
     ASSERT(0 != m_cRef);
