@@ -5,7 +5,7 @@ keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers
 ms.date: 09/27/2022
-f1_keywords: ["C28131", "NOT_COPYING_NAME", "NOT_COPYING_NAME"]
+f1_keywords: ["C28131", "NOT_COPYING_NAME", "__WARNING_NOT_COPYING_NAME"]
 ---
 # Warning C28131
 
@@ -46,7 +46,7 @@ DriverEntry(
     PUNICODE_STRING RegistryPath
     )
 {
-    g_RP = CloneRgistryPath(RegistryPath);  // CloneRegistryPath is an example helper function that copies over the data.
+    g_RP = CloneRegistryPath(RegistryPath);  // CloneRegistryPath is an example helper function that copies over the data.
     return 0;
 }
 ```
