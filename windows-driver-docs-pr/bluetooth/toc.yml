@@ -104,14 +104,16 @@
       items:
       - name: "Hardware setup"
         href: testing-BTP-setup-hardware.md
-      - name: "Software setup"
-        href: testing-BTP-setup-software.md
       - name: "Get the BTP software package"
         href: testing-BTP-setup-package.md
+      - name: "Software setup"
+        href: testing-BTP-setup-software.md
     - name: "Hardware"
       items:
       - name: "Supported Hardware"
         href: testing-BTP-hw.md
+      - name: "Traduci"
+        href: testing-BTP-hw-Traduci.md
       - name: "BM62"
         href: testing-BTP-hw-bm62.md
       - name: "BM64"

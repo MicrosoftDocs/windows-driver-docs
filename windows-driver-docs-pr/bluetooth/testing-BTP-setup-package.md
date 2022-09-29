@@ -16,14 +16,15 @@ Click the following button to download the latest version.
 > The installer should be run on the machine that will be executing the tests. After installation, do not copy, move or delete files. If you have a problem with your installation, use Windows "Add or Remove Programs" to completely uninstall BTP. Then do a clean install with the msi.
 
 > [!div class="nextstepaction"]
-> [Download the current release of BTP](https://download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.12.2.msi)
+> [Download the current release of BTP](https://download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.14.0.msi)
 
 ## Version updates
 
 | Version | Changes |
 | --- | --- |
+| 1.14.0 | - Added audio tests that can use a custom audio file for playback instead of a generated test tone.</br>- Fixed an issue that caused unpairing the Bluefruit Feather to fail for some central devices.</br>- Improved reliability of the Traduci audio analyzer in tests.</br>- Several other fixes and improvements to test reliability.
 | 1.12.2 | - Added support for the BM62 radio.</br>- Added explicit firmware version checks for ESP32 Wi-Fi. </br>- Other Wi-Fi Co-existence fixes and improvements to test reliability.
-| 1.11.1 | - Fixed crash when running standby HID power tests without an installed virtual power button.</br> - Added explicit firmware version checks for Bluefruit Feather.</br> - Several other fixes and improvements to test reliability. |
+| 1.11.1 | - Fixed crash when running standby HID power tests without an installed virtual power button.</br>- Added explicit firmware version checks for Bluefruit Feather.</br>- Several other fixes and improvements to test reliability. |
 | 1.10.1 | - Added power state HID tests.</br> - Several other fixes and improvements to test reliability. |
 | 1.9.0 | - Improved support for BTP devices using custom DLL plugins.</br> - Fixed an issue affecting the audio mute/unmute tests in certain Windows builds.</br> - Several other fixes and improvements to test reliability. |
 | 1.8.0 | - Added Wi-Fi with Bluetooth audio and HID co-existence tests.</br>- Added mute and unmute audio tests.</br>- Added option to record audio played during tests to a local file.</br>- Fixed issue that could cause the Bluefruit Feather to incorrectly report its Bluetooth address.</br>- Fixed issue with running current audio tests on older Windows builds.</br>- Several other fixes and improvements to test reliability. |
