@@ -7,12 +7,14 @@
 - name: "ACX - Audio Class Extensions"
 # Auto-expanded node
   items: 
-  - name: "ACX - Audio Class Extensions Overview"
+  - name: "ACX - Audio Class Extensions overview"
     href: acx-audio-class-extensions-overview.md
-  - name: "ACX - Summary of ACX Objects"
+  - name: "ACX - Summary of ACX objects"
     href: acx-summary-of-objects.md
   - name: "ACX - Multi stack cross driver communications"
     href: acx-audio-multi-stack.md
+  - name: "ACX - Version overview"
+    href: acx-version-overview.md
 - name: "WDM Audio Drivers Overview"
 # Auto-expanded node
   items: 

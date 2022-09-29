@@ -1,7 +1,7 @@
 ---
 title: Summary of ACX Objects
-description: This topic provided a high level summary of ACX Objects that form the base of an ACX audio driver.
-ms.date: 07/28/2022
+description: This topic provides a high level summary of ACX Objects that form the base of an ACX audio driver.
+ms.date: 09/14/2022
 ms.localizationpriority: medium
 ---
 
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 >[!IMPORTANT]
 > Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-This topic provided a high level summary of Audio Class Extensions (ACX) Objects that form the base of an ACX audio driver. For a general overview of ACX, see [ACX Audio Class Extensions Overview](acx-audio-class-extensions-overview.md).
+This topic provides a high level summary of Audio Class Extensions (ACX) Objects that form the base of an ACX audio driver. For a general overview of ACX, see [ACX Audio Class Extensions Overview](acx-audio-class-extensions-overview.md).
 
 ACX objects are Windows Driver Framework (WDF) objects - WDFOBJECT. For more information about WDF see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md). For a summary of WDF objects see [Summary of Framework Objects](../wdf/summary-of-framework-objects.md).
 
