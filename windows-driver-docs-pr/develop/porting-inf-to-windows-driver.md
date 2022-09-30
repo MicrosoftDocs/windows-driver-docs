@@ -1,7 +1,7 @@
 ---
 title: Porting an INF to follow driver package isolation
 description: This page provides tips on how to port an INF from old syntax to conform to driver package isolation
-ms.date: 05/19/2022
+ms.date: 09/30/2022
 ---
 
 # Porting an INF to follow driver package isolation
@@ -156,3 +156,7 @@ HKCR,AudioEngine\AudioProcessingObjects\%EXAMPLE_CLSID%, "APOInterface0", , "{b0
 ```
 
 Instead, the APO registration information should be in a section referenced by an AddReg directive from a DDInstall section. The HKCR registry root should be changed to an HKR registry root to put the settings relative to the device’s “software” (aka “driver”) registry state location.  See [Registering APOs for Processing Modes and Effects in the INF File](../audio/implementing-audio-processing-objects.md#registering-apos-for-processing-modes-and-effects-in-the-inf-file) for more information.
+
+## UMDF driver version is less than 2
+
+If your driver package payloads a [User-Mode Driver Framework (UMDF)](../wdf/getting-started-with-umdf-version-2.md) driver that uses a UMDF version earlier than version 2, then it is not compliant with “Windows Drivers”.  See [Porting a Driver from UMDF 1 to UMDF 2](../wdf/porting-a-driver-from-umdf-1-to-umdf-2.md) for more information on how to move your UMDF driver to a more recent UMDF version.
