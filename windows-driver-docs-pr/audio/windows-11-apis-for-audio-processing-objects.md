@@ -10,7 +10,7 @@ keywords:
 - Audio Settings, Audio Notifications
 - Windows 11 audio 
 - CAPX, Core Audio Processing Object Extensions
-ms.date: 07/08/2022
+ms.date: 09/29/2022
 ---
 
 # Windows 11 APIs for Audio Processing Objects
@@ -924,7 +924,9 @@ IMPLEMENT_TRACELOGGING_CLASS(ApoTelemetryProvider, "Microsoft.Windows.Audio.ApoT
     (0x8b4a0b51, 0x5dcf, 0x5a9c, 0x28, 0x17, 0x95, 0xd0, 0xec, 0x87, 0x6a, 0x87));
 ``` 
 
-Each APO has its own activity ID. The trace logging events are not marked as telemetry. Registry settings are available to log events to a file for use during development of an APO. Since this does not use the existing trace logging mechanism, existing console tools can be used to filter for these events and display them in real-time.
+Each APO has its own activity ID. Since this uses the existing trace logging mechanism, existing console tools can be used to filter for these events and display them in real-time.  You can use existing tools like tracelog and tracefmt as described in [Tools for Software Tracing - Windows drivers](../devtest/tools-for-software-tracing.md). For more information on trace sessions, see [Creating a Trace Session with a Control GUID](../devtest/creating-a-trace-session-with-a-control-guid.md).
+
+The trace logging events are not marked as telemetry and will not be displayed as a telemetry provider in tools such as xperf.
 
 ### Implementation - Logging Framework
 
