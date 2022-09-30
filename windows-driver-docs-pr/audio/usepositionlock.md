@@ -1,7 +1,7 @@
 ---
 title: UsePositionLock
 description: The UsePositionLock registry value changes how PortCls serializes its I/O.
-ms.date: 11/28/2017
+ms.date: 09/29/2022
 ---
 
 # UsePositionLock
@@ -12,18 +12,14 @@ The *UsePositionLock* registry value changes how PortCls serializes its I/O. Ena
 Use the following INF setting to enable this behavior.
 
 ```inf
- 
 [MyAudioDevice.AddReg]
 HKR, DispatchSettings, UsePositionLock, 3, 01, 00, 00, 00
 ```
-
-This INF setting creates the following registry value. The media GUID of {4d36e96c-e325-11ce-bfc1-08002be10318} and the &lt;instance\#&gt; of your audio device are used in the registry entry path.
-
-```text
-\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e96c-e325-11ce-bfc1-08002be10318}\<instance#>\DispatchSettings\UsePositionLock 
-```
-
 When this value is set to 1 or above, portcls uses the streaming position lock to serialize the callbacks listed below. If it is not present or set to zero, the default behavior is to use the global device lock. This value is read the first time the device is added.
+
+This INF setting will be stored under the device instance in the registry whose path contains the media GUID of {4d36e96c-e325-11ce-bfc1-08002be10318}.
+
+This INF setting creates a registry value that contains the media GUID of {4d36e96c-e325-11ce-bfc1-08002be10318} that includes the instance of your audio device.
 
 The *UsePositionLock* setting is only supported on WaveRT and Topology filters. Portcls reads this registry value at device-add time and the setting persists until the functional device object (FDO) is removed.
 

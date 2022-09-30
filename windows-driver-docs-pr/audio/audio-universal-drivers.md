@@ -1,7 +1,7 @@
 ---
 title: Universal Windows Drivers for Audio
 description: In Windows 10 you can write a universal audio driver that will work across many types of hardware.
-ms.date: 04/07/2022
+ms.date: 08/15/2022
 ---
 
 # Universal Windows Drivers for Audio
@@ -162,7 +162,7 @@ To allow the latest driver to be used, be sure and update the date and version, 
 
 ### APO driver registry key
 
-For third party-defined audio driver/APO registry keys, use HKR with the exception of HKLM\System\CurrentControlSet.
+For third party-defined audio driver/APO registry keys, use HKR.
 
 ### Use a Windows Service to facilitate UWP <-> APO communication
 

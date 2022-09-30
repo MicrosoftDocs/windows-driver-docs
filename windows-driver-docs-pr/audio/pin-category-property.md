@@ -14,7 +14,7 @@ keywords:
 - terminal identifiers WDK audio
 - GUIDs WDK audio
 - category GUIDs WDK audio
-ms.date: 04/20/2017
+ms.date: 08/17/2022
 ---
 
 # Pin Category Property
@@ -339,11 +339,10 @@ When instantiating a USB audio device, the USBAudio class system driver queries 
 
 A PortCls miniport driver does not necessarily use only the category GUIDs that appear in the preceding six tables. For example, a driver might define and use a custom pin category GUID to describe a pin type whose functional category falls outside the categories in the tables. Naturally, a custom pin category GUID is useful only to clients that recognize the GUID.
 
-The audio subsystem maintains a list of pin category GUIDs and their associated friendly names in the system registry. The GUIDs and friendly names are stored in the registry path HKLM\\SYSTEM\\CurrentControlSet\\Control\\MediaCategories. The media class installer copies the GUID-name pairs into the registry from the Ks.inf file located in the Inf subfolder of the main Windows folder (for example, C:\\Windows\\Inf\\Ks.inf).
+The audio subsystem maintains a list of pin category GUIDs and their associated friendly names in the system registry. The media class installer copies the GUID-name pairs into the registry from the Ks.inf file located in the Inf subfolder of the main Windows folder (for example, C:\\Windows\\Inf\\Ks.inf).
 
-In Windows Vista and later, the operating system uses pin categories to associate friendly names with audio endpoint devices. For more information about how to associate friendly names with audio endpoint devices, see [Friendly Names for Audio Endpoint Devices](friendly-names-for-audio-endpoint-devices.md).
+The operating system uses pin categories to associate friendly names with audio endpoint devices. For more information about how to associate friendly names with audio endpoint devices, see [Friendly Names for Audio Endpoint Devices](friendly-names-for-audio-endpoint-devices.md).
 
-In Windows XP, Windows 2000, and Windows Millennium Edition, the operating system makes only limited use of pin categories. The [WDMAud system driver](user-mode-wdm-audio-components.md#wdmaud_system_driver) acts on behalf of the mixer API to translate pin category GUIDs into MIXERLINE\_COMPONENTTYPE\_*XXX* values for use by client applications. WDMAud recognizes only a subset of the pin category GUIDs that appear in the preceding six tables. In addition, for historical reasons, WDMAud recognizes two pin category GUIDs, KSCATEGORY\_AUDIO and PINNAME\_CAPTURE, that do not appear in the tables. For more information about the translation of pin categories to mixer lines, see [Topology Pins](topology-pins.md). For information about the mixer API, see the Windows SDK documentation.
 
  
 

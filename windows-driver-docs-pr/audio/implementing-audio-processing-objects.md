@@ -1,7 +1,7 @@
 ---
 title: Implementing Audio Processing Objects
 description: This topic describes how to implement an audio processing object (APO). For general information about APOs, see Audio Processing Object Architecture.
-ms.date: 06/11/2021
+ms.date: 08/17/2022
 ---
 
 # Implementing Audio Processing Objects
@@ -316,8 +316,7 @@ Description = "Audio Proxy APO Sample"
 This APO component triggers the second part, the installation of the APO INF, in the SYSVAD sample this is done in ComponentizedApoSample.inf. This INF file is dedicated to the APO component. It specifies the component class as AudioProcessingObject and adds all of the APO properties for CLSID registration and registering with the audio engine.
 
 >[!NOTE]
-> The INF file samples shown support driver package isolation by using in most cases the HKR registry key. Earlier samples used the HKCR to store persistent values. The exception is that registration of Component Object Model (COM) objects, a key may be written under HKCR.
- For more information, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
+> The INF file samples shown support driver package isolation by using in most cases the HKR registry key. Earlier samples used the HKCR to store persistent values. The exception is that registration of Component Object Model (COM) objects, a key may be written under HKCR.  For more information, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
 
 ```inf
 [Version]
@@ -438,7 +437,9 @@ HKR,"FX\\0",%PKEY_FX_EndpointEffectClsid%,,%FX_DISCOVER_EFFECTS_APO_CLSID%
 
 ### Sample APO Effect Registration
 
-This sample shows the \[Apo_AddReg\] section from the Sysvad ComponentizedApoSample.inx. This section registers the swap stream GUID with COM and registers the Swap Stream APO effect. The \[Apo_CopyFiles\] section copies the swapapo.dll into C:\\Windows\\system32.
+This sample shows the \[Apo_AddReg\] section from the Sysvad ComponentizedApoSample.inx. This section registers the swap stream GUID with COM and registers the Swap Stream APO effect. The \[Apo_CopyFiles\] section has a DestinationDirs of 13, which copies swapapo.dll into the Driverstore. For more information, see "Run From Driverstore" in [Driver Package Isolation](/drivers/develop/driver-isolation).
+
+For general information about INF files, see [Using a Universal INF File](\drivers\install\using-a-universal-inf-file).
 
 ```inf
 ; ComponentizedApoSample.inx

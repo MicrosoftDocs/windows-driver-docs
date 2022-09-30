@@ -1,7 +1,7 @@
 ---
 title: Friendly Names for Audio Endpoint Devices
 description: Friendly Names for Audio Endpoint Devices
-ms.date: 04/20/2017
+ms.date: 08/15/2022
 ---
 
 # Friendly Names for Audio Endpoint Devices
@@ -19,15 +19,15 @@ In addition the **PCPIN\_DESCRIPTOR** includes a GUID that can be used to identi
 
 The audio subsystem invokes the **KSPROPERTY\_PIN\_NAME** property to associate a friendly name with an audio endpoint. KS handles this request by first searching for a unicode string in the registry describing the **KsPinDescriptor.Name** GUID.  If KS does not find an entry, it searches the registry for a unicode string describing the **KsPinDescriptor.Category** GUID.  
 
-Starting with **Windows 10 REDSTONE 5** when searching the registry, KS first looks for an entry in the device's software key.  This is created by the INF through an AddReg section referenced by the [Models] section of the device driver's INF.  The AddReg section constructs these entries using the HKR\\MediaCategories key. This allows the driver developer to create device-specific friendly names for both Name and Category GUIDs, whether the GUID is unique to the device or not.
+Starting with Windows 10 October 2018 Update, version 1809, when searching the registry, KS first looks for an entry in the device's software key.  This is created by the INF through an AddReg section referenced by the [Models] section of the device driver's INF.  The AddReg section constructs these entries using the HKR\\MediaCategories key. This allows the driver developer to create device-specific friendly names for both Name and Category GUIDs, whether the GUID is unique to the device or not.
 
-If an entry has not been installed in the device's software key or the driver is running on an operating system prior to **Windows 10 REDSTONE 5**, KS looks under HKLM\\SYSTEM\\CurrentControlSet\\Control\\MediaCategories registry key. This second key is treated as a global name space.  Starting with **Windows 10 REDSTONE 5** this space is reserved for global definitions and should not be modified by new drivers.  Modification of entries under this key will not be supported in a future OS release.
+If an entry has not been installed in the device's software key or the driver is running on an operating system prior to Windows 10 version 1809, KS checks the MediaCategories registry key. This second key is treated as a global name space.  Starting with Windows 10 version 1809 this space is reserved for global definitions and should not be modified by new drivers.  Modification of entries under this key will not be supported in a future OS release.
 
 Audio devices that expose pins with standard categories GUIDs should include / needs the inbox KS.INF or KSCAPTUR.INF name registration in your device INF.  These inbox INFs contain default friendly name definitions for pre-defined category GUIDs that your driver may wish to populate. These are the same GUIDs found in the **KsPinDescriptor.Category** member of the PCPIN\_DESCRIPTOR structure. For example, the category GUID KSNODETYPE\_MICROPHONE entry has the associated friendly name "microphone" and the category GUID KSNODETYPE\_SPEAKER entry has the associated friendly name "speakers," and so on.
 
-The GUIDs and friendly names for both Category and Name GUIDs are stored under the HKR\\MediaCategories while global definitions HKLM\\SYSTEM\\CurrentControlSet\\Control\\MediaCategories paths. For each GUID-name pair in the registry, the GUID string is used as a sub-key under the MediaCategories key.  Under the GUID key the friendly name a Unicode string value under the "Name" variable. 
+The GUIDs and friendly names for both Category and Name GUIDs are stored in the registry. For each GUID-name pair in the registry, the GUID string is used as a sub-key under the MediaCategories key.  Under the GUID key the friendly name a Unicode string value under the "Name" variable. 
 
-If none of the friendly names and pin categories defined by the audio subsystem adequately describes your device, you can define your own pin category and name GUIDs and associate friendly names with them in your INF. To ensure that your pin-category GUID is unique, use a utility such as Uuidgen.exe to generate the GUID. Next, modify the INF file that installs your audio adapter to write the pin-category GUID and friendly name to the registry path HKR\\MediaCategories. The following code example shows a fragment of an INF file that adds two pin-category GUIDs and their associated friendly names to the registry:
+If none of the friendly names and pin categories defined by the audio subsystem adequately describes your device, you can define your own pin category and name GUIDs and associate friendly names with them in your INF. To ensure that your pin-category GUID is unique, use a utility such as Uuidgen.exe to generate the GUID. Next, modify the INF file that installs your audio adapter to write the pin-category GUID and friendly name to the registry. The following code example shows a fragment of an INF file that adds two pin-category GUIDs and their associated friendly names to the registry:
 
 ```inf
 [Manufacturer]
@@ -66,7 +66,7 @@ Both GUID strings were generated by Uuidgen.exe.
 
 Applications can access the properties of an audio endpoint device by using the device's **IPropertyStore** interface. The interface uses the property keys defined in the Functiondiscoverykeys\_devpkey.h and Mmdeviceapi.h header files to identify the properties. An application can use the **PKEY\_Device\_FriendlyName** property key to retrieve the friendly name of an endpoint device. For space-constrained user interfaces, a shorter version of the friendly name can be retrieved by using the **PKEY\_Device\_DeviceDesc** property key. For more information about these property keys, see [IMMDevice::OpenPropertyStore](/windows/win32/api/mmdeviceapi/nf-mmdeviceapi-immdevice-openpropertystore).
 
-An **IPropertyStore** interface instance maintains a persistent property store for an audio endpoint device. The property store copies its initial value for the **PKEY\_Device\_DeviceDesc** property key from the friendly name string that is associated with the KS pin category GUID in the registry path HKLM\\SYSTEM\\CurrentControlSet\\Control\\MediaCategories. Applications can read the **PKEY\_Device\_DeviceDesc** property value (the name string) from the property store, but they cannot change the value. However, users can modify the name by using the Windows multimedia control panel, Mmsys.cpl. For example, in Windows Vista, you can use the following steps to modify the name of a rendering endpoint device:
+An **IPropertyStore** interface instance maintains a persistent property store for an audio endpoint device. The property store copies its initial value for the **PKEY\_Device\_DeviceDesc** property key from the friendly name string that is associated with the KS pin category GUID in the registry. Applications can read the **PKEY\_Device\_DeviceDesc** property value (the name string) from the property store, but they cannot change the value. However, users can modify the name by using the Windows multimedia control panel, Mmsys.cpl. For example, in Windows Vista, you can use the following steps to modify the name of a rendering endpoint device:
 
 1.  To run Mmsys.cpl, open a Command Prompt window and enter the following command:
 

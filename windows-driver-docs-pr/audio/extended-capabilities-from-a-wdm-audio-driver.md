@@ -8,7 +8,7 @@ keywords:
 - unique device IDs WDK audio
 - identifying audio devices
 - hardware-specific information WDK audio
-ms.date: 04/20/2017
+ms.date: 09/29/2022
 ---
 
 # Extended Capabilities from a WDM Audio Driver
@@ -17,7 +17,7 @@ ms.date: 04/20/2017
 ## <span id="extended_capabilities_from_a_wdm_audio_driver"></span><span id="EXTENDED_CAPABILITIES_FROM_A_WDM_AUDIO_DRIVER"></span>
 
 
-By handling the [**KSPROPERTY\_GENERAL\_COMPONENTID**](../stream/ksproperty-general-componentid.md) property, an audio filter can provide hardware-specific information that applications can use to uniquely identify the underlying device. Microsoft Windows XP is the first version of Windows to support this feature; this feature is not available in earlier versions.
+By handling the [**KSPROPERTY\_GENERAL\_COMPONENTID**](../stream/ksproperty-general-componentid.md) property, an audio filter can provide hardware-specific information that applications can use to uniquely identify the underlying device. 
 
 The filter provides the hardware-specific information in the form of a [**KSCOMPONENTID**](/windows-hardware/drivers/ddi/ks/ns-ks-kscomponentid) structure that contains the following:
 
@@ -75,7 +75,6 @@ An application can access the data from the driver's KSCOMPONENTID structure thr
 </tr>
 </tbody>
 </table>
-
  
 
 After receiving the KSCOMPONENTID structure from the filter's property handler, the WDMAud system driver (Wdmaud.sys) converts the data from this structure to the *XXX*CAPS2 format that the *xxx*GetDevCaps functions use.
@@ -86,15 +85,15 @@ WDMAud concatenates the **Version** and **Revision** members from KSCOMPONENTID 
 
 **vDriverVersion** = (**Version** &lt;&lt; 8) | (**Revision** & 0xFF)
 
-Microsoft previously required vendors to register manufacturer IDs and product IDs for their audio devices. These IDs were then released in the header file Mmreg.h.
+The high-order byte is the major version number, and the low-order byte is the minor version number.
 
-In Windows XP and later, registered IDs are no longer necessary; they are replaced by the manufacturer and product GUIDs that are provided through the KSPROPERTY\_GENERAL\_COMPONENTID property. The GUIDs are more convenient for vendors to use than registered IDs because GUIDs are inherently unique, are easily generated, and require no registration.
+The manufacturer and product GUIDs that are provided through the KSPROPERTY\_GENERAL\_COMPONENTID property. The GUIDs are inherently unique, are easily generated.
 
-However, if you have already registered product and manufacturer IDs with Microsoft (and they are in Mmreg.h), you can use the macros INIT\_MMREG\_PID and INIT\_MMREG\_MID in Ksmedia.h to convert your product and manufacturer IDs into GUIDs. If you use these macros to generate the GUIDs, WDMAud is able to recover the original product and manufacturer IDs from the GUIDs and copy these IDs into the **wPid** and **wMid** members of the capabilities structure that is filled in by the *xxx*GetDevCaps call.
+Use the GuidGen utility to generate the manufacturer and product GUIDs. (GuidGen is included in the Microsoft Windows SDK.) When a driver's GUIDs are of this type, WDMAud loads default constants MM\_UNMAPPED and MM\_PID\_UNMAPPED into the **wMid** and **wPid** members, respectively, of the capabilities structure that is filled in by the *xxx*GetDevCaps call.
 
-Otherwise, if you do not have registered manufacturer and product IDs, simply use the GuidGen utility to generate the manufacturer and product GUIDs. (GuidGen is included in the Microsoft Windows SDK.) When a driver's GUIDs are of this type, WDMAud loads default constants MM\_UNMAPPED and MM\_PID\_UNMAPPED into the **wMid** and **wPid** members, respectively, of the capabilities structure that is filled in by the *xxx*GetDevCaps call.
+WDMAud uses the **Name** GUID in the KSCOMPONENTID structure to look up a "Name" key in the registry.  These values are stored in *MediaCategories* in the registry.
 
-WDMAud uses the **Name** GUID in the KSCOMPONENTID structure to look up a "Name" key in the registry. This key is located under the registry path name HKLM\\System\\CurrentControlSet\\Control\\MediaCategories. The "Name" key for a device has an associated string value that contains the device name. The *xxx*GetDevCaps function copies the first 31 characters of this name string into the **szPname** member of the capabilities structure. For device names longer than 31 characters, a client application can open the registry key and directly read the entire string. A driver can populate this registry entry in one of two ways:
+The "Name" key for a device has an associated string value that contains the device name. The *xxx*GetDevCaps function copies the first 31 characters of this name string into the **szPname** member of the capabilities structure. A driver can populate this registry entry in one of two ways:
 
 -   The driver can specify the entry in the device's INF file at install time.
 
@@ -115,7 +114,7 @@ If the filter exposes no handler for the KSPROPERTY\_GENERAL\_COMPONENTID proper
     MM\_MSFT\_WDMAUDIO\_AUX
 -   **vDriverVersion** = 0x050a (for Windows XP) or 0x0500 (pre-Windows XP)
 
-On Windows releases earlier than Windows XP, the legacy members of the capabilities structure are always set to the defaults above. On Windows XP and later, the default values for the extended capabilities are as follows:
+The default values for the extended capabilities are as follows:
 
 -   **NameGuid** = GUID\_NULL
 

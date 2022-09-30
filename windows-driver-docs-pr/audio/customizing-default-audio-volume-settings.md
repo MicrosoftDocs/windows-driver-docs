@@ -17,8 +17,6 @@ The ability to customize the in box HD audio default audio volume and microphone
 
 **Note**  The process described here can only be used if the default Microsoft HD Audio driver is being used.
 
- 
-
 By default, the HD Audio class function driver sets the audio volume and the microphone boost levels at predetermined values to ensure a pleasant “out of the box” experience for the user.
 
 The HD Audio class function driver, which I shall now refer to as the Audio Class driver, uses various hard-coded default values that cannot be customized for any particular PC. As such, OEMs are not able to override these values to meet their own requirements. And one of the most important settings to adjust is the volume level, as users are sensitive to the loudness or quietness of their audio systems, especially during first-time use.
@@ -147,14 +145,9 @@ HKR,DefaultVolumeLevels\18,Boost,1,00,00,0A,00 ; Set to 0x000A0000 to set to 10d
 HdAudModel_DefaultVolume_DeviceDesc = "High Definition Audio Device"
 ```
 
-Because an HKR relative path is specified, the exact driver registry path will be determined based on the specific INF file section that is used. For more information about HKR relative paths, see [**INF AddReg Directive (Windows Drivers)**](../install/inf-addreg-directive.md). The following two registry paths are examples, your registry path will likely be different.
-
-HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e96c-e325-11ce-bfc1-08002be10318}\\0002
-
-- or -
-
-HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e96c-e325-11ce-bfc1-08002be10318}\\0002\\DeviceInterfaces\\eAuxIn
+Because an HKR relative path is specified, the exact driver registry path will be determined based on the specific INF file section that is used. For more information about HKR relative paths, see [**INF AddReg Directive (Windows Drivers)**](../install/inf-addreg-directive.md). 
 
 ## <span id="related_topics"></span>Related topics
+
 [Default Audio Volume Settings](default-audio-volume-settings.md)  
 [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](./ksproperty-audio-volumelevel.md)
