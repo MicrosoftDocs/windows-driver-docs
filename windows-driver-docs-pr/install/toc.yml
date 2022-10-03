@@ -1404,6 +1404,8 @@
     href: devpkey-deviceinterface-enabled.md
   - name: "DEVPKEY_DeviceInterface_FriendlyName"
     href: devpkey-deviceinterface-friendlyname.md
+  - name: "DEVPKEY_DeviceInterface_IsWindowsCameraEffectAvailable"
+    href: devpkey-deviceinterface-iswindowscameraeffectavailable.md
   - name: "DEVPKEY_DeviceInterface_Restricted"
     href: devpkey-deviceinterface-restricted.md
   - name: "DEVPKEY_DeviceInterfaceClass_DefaultInterface"
