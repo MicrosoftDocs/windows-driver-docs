@@ -161,6 +161,27 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>A pointer to the thread currently processing the request.</p></td>
 <td align="left"><p>The system failed to complete(resume) a power transition in a timely manner.</p></td>
 </tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Parameter 1</th>
+<th align="left">Parameter 2</th>
+<th align="left">Parameter 3</th>
+<th align="left">Parameter 4</th>
+<th align="left">Cause</th>
+</tr>
+</thead>
+<tbody>
 <tr class="even">
 <td align="left"><p>0x101</p></td>
 <td align="left"><p>Reserved</p></td>
@@ -347,6 +368,27 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>DEVICE_OBJECT</p></td>
 <td align="left"><p>An unknown status was returned from a thermal power IRP.</p></td>
 </tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Parameter 1</th>
+<th align="left">Parameter 2</th>
+<th align="left">Parameter 3</th>
+<th align="left">Parameter 4</th>
+<th align="left">Cause</th>
+</tr>
+</thead>
+<tbody>
 <tr class="odd">
 <td align="left"><p>0x600</p></td>
 <td align="left"><p>DEVICE_OBJECT PDO</p></td>
@@ -607,6 +649,27 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>Default Power Engine Plugin has encountered an internal consistency error while attempting to exclusively notify PoFx about the availability of a platform idle state.</p></td>
 </tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Parameter 1</th>
+<th align="left">Parameter 2</th>
+<th align="left">Parameter 3</th>
+<th align="left">Parameter 4</th>
+<th align="left">Cause</th>
+</tr>
+</thead>
+<tbody>
 <tr class="odd">
 <td align="left"><p>0x680</p></td>
 <td align="left"><p>NTSTATUS failure code.</p></td>
