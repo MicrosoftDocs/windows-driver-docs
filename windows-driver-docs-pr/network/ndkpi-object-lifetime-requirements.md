@@ -18,7 +18,7 @@ The consumer initiates various requests by calling provider functions in the obj
 
 When an object is no longer needed, the consumer calls the provider's *NdkCloseObject* ([*NDK\_FN\_CLOSE\_OBJECT*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_close_object)) function to initiate a close request for the object, passing an *NdkCloseCompletion* ([*NDK\_FN\_CLOSE\_COMPLETION*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_close_completion)) callback as a parameter.
 
-The provider calls the consumer's callback function to complete the request asynchronously. This call indicates to the consumer that the provider has completed the operation (for example, closing the object) and is returning control to the consumer. If the provider completes the close request synchronously, it will return STATUS_SUCCESS and won't call the consumer's callback function.
+The provider calls the consumer's callback function to complete the request asynchronously. This call indicates to the consumer that the provider has completed the operation (for example, closing the object) and is returning control to the consumer. If the provider completes the close request synchronously, either successfully or in error, it won’t call the consumer’s callback function.
 
 ## The Rules for Completion Callbacks
 
