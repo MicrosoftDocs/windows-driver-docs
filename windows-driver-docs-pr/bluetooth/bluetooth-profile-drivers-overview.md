@@ -1,15 +1,14 @@
 ---
-title: Introduction to Bluetooth Profile Drivers
-description: Introduction to Bluetooth Profile Drivers
+title: Introduction to Bluetooth profile drivers
+description: Introduction to Bluetooth profile drivers
 keywords:
 - Bluetooth WDK , about Bluetooth
 - remote connections WDK Bluetooth
 - connections WDK Bluetooth
-ms.date: 07/01/2019
+ms.date: 10/06/2022
 ---
 
-# Introduction to Bluetooth Profile Drivers
-
+# Introduction to Bluetooth profile drivers
 
 This section describes the support that Microsoft provides for the wireless Bluetooth protocol. Bluetooth is an industry standard protocol that enables wireless connectivity for a variety of devices including computers, mobile phones, handheld devices, mouse devices, keyboards, and printers. This section also provides guidelines on how to develop Bluetooth profile drivers for your Bluetooth-enabled device. Details of the Bluetooth protocol are available on the [Bluetooth](https://go.microsoft.com/fwlink/p/?linkid=26268) website.
 
@@ -17,19 +16,19 @@ Microsoft provides support for the Bluetooth protocol in Microsoft Windows XP wi
 
 To support the Bluetooth protocol, Microsoft supplies several drivers and support files, including:
 
--   *BthPort.sys*
+- *BthPort.sys*
 
--   *BthEnum.sys*
+- *BthEnum.sys*
 
--   *BthUsb.sys*
+- *BthUsb.sys*
 
--   *BthProps.cpl*
+- *BthProps.cpl*
 
 IHVs must use Windows Vista or later to develop their profile drivers because earlier versions of Windows, including Windows XP with SP2, do not support profile driver development.
 
 The Bluetooth driver stack provides device driver interfaces (DDIs) that enable profile drivers to access Synchronous Connection-Oriented (SCO) links and Logical Link Controller and Adaptation Protocol (L2CAP) links between the local system and remote Bluetooth devices.
 
-### <span id="sco"></span><span id="SCO"></span>**SCO**
+## SCO
 
 Synchronous connection-oriented (SCO) links are point-to-point connections between two Bluetooth devices. They are defined primarily to support time-bounded information like voice.
 
@@ -37,7 +36,7 @@ The Windows Vista Bluetooth driver stack has been enhanced to provide SCO kernel
 
 For more information about SCO, see [Creating a SCO Client Connection to a Remote Device](creating-a-sco-client-connection-to-a-remote-device.md) and [Accepting SCO Connections in a Bluetooth Profile Driver](accepting-sco-connections-in-a-bluetooth-profile-driver.md).
 
-### <span id="l2cap_and_sdp"></span><span id="L2CAP_AND_SDP"></span>**L2CAP and SDP**
+## L2CAP and SDP
 
 The L2CAP is designed to support asynchronous connectionless link (ACL) Bluetooth links. The Bluetooth driver stack provides support for connection-oriented services. Profile drivers use the Bluetooth L2CAP DDIs to open, update, and close L2CAP connections, as well as to perform read and write operations over an open L2CAP connection.
 
@@ -48,12 +47,3 @@ SDP records are advertised in a complex byte stream. Profile drivers can use the
 For more information about L2CAP and SDP, see [Creating a L2CAP Client Connection to a Remote Device](creating-a-l2cap-client-connection-to-a-remote-device.md), [Accepting L2CAP Connections in a Bluetooth Profile Driver](accepting-l2cap-connections-in-a-bluetooth-profile-driver.md) and [Communicating with SDP Servers](communicating-with-sdp-servers.md).
 
 For more information about the Bluetooth driver stack, see [Bluetooth Driver Stack](bluetooth-driver-stack.md).
-
- 
-
- 
-
-
-
-
-
