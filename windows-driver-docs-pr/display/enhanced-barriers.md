@@ -1,16 +1,20 @@
 ---
-title: Direct3D enhanced barriers
-description: Learn about Direct3D enhanced barriers
+title: D3D12 enhanced barriers
+description: Learn about D3D12 enhanced barriers
 keywords:
-- Direct3D12 enhanced barriers
+- D3D12 enhanced barriers
+- Windows 11 , enhanced barriers
 - WDDM 3.0 , enhanced barriers
-ms.date: 09/29/2022
+- Agility SDK Preview , enhanced barriers
+ms.date: 10/05/2022
 ms.localizationpriority: medium
 ---
 
-# Direct3D enhanced barriers
+# D3D12 enhanced barriers
 
-Direct3D Enhanced Barriers, available for experimental use starting in Windows 11 version 22H2 (WDDM 3.0), give developers independent control over GPU work synchronization, texture layout transitions, and cache flushing (“resource memory access”). This features offers a set of Direct3D APIs and DDIs that give developers independent control over GPU work synchronization, texture layout transitions, and cache flushing (resource memory access).
+The DDI interface for enhanced barriers is available in the [Windows 11, version 22H2 WDK](/windows-hardware/drivers/download-the-wdk) (WDDM 3.0). To use enhanced barriers on 22H2 (or earlier OS releases), you must install the [1.706.4-preview Agility SDK](https://devblogs.microsoft.com/directx/directx12agility/).
+
+D3D12 enhanced barriers give developers independent control over GPU work synchronization, texture layout transitions, and cache flushing (“resource memory access”). This features offers a set of Direct3D APIs and DDIs that give developers independent control over GPU work synchronization, texture layout transitions, and cache flushing (resource memory access).
 
 Enhanced barriers replace [legacy resource barriers](/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_resourcebarrier_0022) with more expressive barrier types. Features include the following:
 
