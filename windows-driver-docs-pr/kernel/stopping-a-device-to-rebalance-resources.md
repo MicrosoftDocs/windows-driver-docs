@@ -2,7 +2,7 @@
 title: Stopping a Device to Rebalance Resources
 description: Stopping a Device to Rebalance Resources
 keywords: ["rebalancing resources WDK PnP", "resource rebalancing WDK PnP", "pausing PnP devices"]
-ms.date: 06/16/2017
+ms.date: 10/06/2022
 ---
 
 # Stopping a Device to Rebalance Resources
@@ -20,6 +20,10 @@ The following notes correspond to the circled numbers in the previous figure:
 1.  The PnP manager issues an [**IRP\_MN\_QUERY\_STOP\_DEVICE**](./irp-mn-query-stop-device.md) to ask whether the drivers for a device can stop the device and release its hardware resources.
 
     If all the drivers in the device stack return STATUS\_SUCCESS, the drivers have put the device into a state (stop-pending) from which the device can be quickly stopped.
+
+    If a device stack returns anything other than STATUS_SUCCESS, it will not participate in the rebalance process. Because resource rebalancing is a best effort operation, in this case the system still attempts a rebalance operation to satisfy resource requirements of devices in the system. However, if devices fail query stop, it may not be possible to achieve desired results (e.g., if a new device is enumerated and triggers a rebalance, it may not receive its required resources, thus eventually failing to start).
+
+    A device that that fails a query stop operation continues to be in an operational state, even if the query stop is failed.
 
     The PnP manager queries as many device stacks as necessary to rebalance the required resources.
 
