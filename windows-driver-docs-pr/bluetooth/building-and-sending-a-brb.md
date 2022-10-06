@@ -1,37 +1,28 @@
 ---
-title: Building and Sending a BRB
-description: Building and Sending a BRB
+title: Building and sending a Bluetooth request block (BRB)
+description: Building and sending a Bluetooth request block (BRB)
 keywords:
 - Bluetooth WDK , Bluetooth request blocks
 - BRBs WDK
 - Bluetooth WDK , request blocks
 - sending BRBs
 - return values WDK Bluetooth
-ms.date: 04/20/2017
+ms.date: 10/06/2022
 ---
 
-# Building and Sending a BRB
-
+# Building and sending a Bluetooth request block (BRB)
 
 The following procedure outlines the general process that a profile driver follows to build and send a Bluetooth request block (BRB). A BRB is a block of data that describes the Bluetooth operation to perform.
 
-### <span id="to_build_and_send_a_brb"></span><span id="TO_BUILD_AND_SEND_A_BRB"></span>To Build and Send a BRB
+## To build and send a BRB
 
-1.  Allocate an IRP. For more information about how to use IRPs, see [Handling IRPs](../kernel/handling-irps.md).
+1. Allocate an IRP. For more information about how to use IRPs, see [Handling IRPs](../kernel/handling-irps.md).
+1. Allocate a BRB. To allocate BRBs, call the [**BthAllocateBrb**](/windows-hardware/drivers/ddi/bthddi/nc-bthddi-pfnbth_allocate_brb) function that the Bluetooth driver stack exports for use by profile drivers. To obtain a pointer to the *BthAllocateBrb* function, see [Querying for Bluetooth Interfaces](querying-for-bluetooth-interfaces.md).
+1. Initialize the parameters of the BRB. Each BRB uses a corresponding structure. Set the members of the structure according to the intended use. For a list of BRBs and their corresponding structures see [Using the Bluetooth Driver Stack](using-the-bluetooth-driver-stack.md).
+1. Initialize the parameters of the IRP. Set the **MajorFunction** member of the IRP to IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL. Set the **Parameters.DeviceIoControl.IoControlCode** member to IOCTL\_INTERNAL\_BTH\_SUBMIT\_BRB. Set the **Parameters.Others.Argument1** member to point to the BRB.
+1. Pass the IRP down the driver stack. Call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to send the IRP to the next-lower driver.
 
-2.  Allocate a BRB. To allocate BRBs, call the [**BthAllocateBrb**](/windows-hardware/drivers/ddi/bthddi/nc-bthddi-pfnbth_allocate_brb) function that the Bluetooth driver stack exports for use by profile drivers. To obtain a pointer to the *BthAllocateBrb* function, see [Querying for Bluetooth Interfaces](querying-for-bluetooth-interfaces.md).
-
-3.  Initialize the parameters of the BRB. Each BRB uses a corresponding structure. Set the members of the structure according to the intended use. For a list of BRBs and their corresponding structures see [Using the Bluetooth Driver Stack](using-the-bluetooth-driver-stack.md).
-
-4.  Initialize the parameters of the IRP. Set the **MajorFunction** member of the IRP to IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL. Set the **Parameters.DeviceIoControl.IoControlCode** member to IOCTL\_INTERNAL\_BTH\_SUBMIT\_BRB. Set the **Parameters.Others.Argument1** member to point to the BRB.
-
-5.  Pass the IRP down the driver stack. Call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to send the IRP to the next-lower driver.
-
-The following pseudocode example demonstrates how to set up a L2CAP Ping BRB for the Bluetooth driver stack to process.
-
-**Note**  For readability, the following pseudocode example does not demonstrate error handling.
-
- 
+The following pseudocode example demonstrates how to set up a L2CAP Ping BRB for the Bluetooth driver stack to process. For readability, the example does not demonstrate error handling.
 
 ```cpp
 #include <bthddi.h>
@@ -61,6 +52,3 @@ NextIrpStack->Parameters.Others.Argument1 = BrbPing;
 NTSTATUS Status;
 Status = IoCallDriver( DeviceExtension->NextLowerDriver, Irp );
 ```
-
- 
-

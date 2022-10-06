@@ -1,34 +1,23 @@
 ---
-title: Bluetooth LE Proximity Profile Overview
+title: Bluetooth LE Proximity Profile overview
 description: Proximity detection is a common use of Bluetooth Low Energy (LE).
-ms.date: 07/01/2019
+ms.date: 10/06/2022
 ---
 
-# Bluetooth LE Proximity Profile Overview
+# Bluetooth LE Proximity Profile overview
 
-
-Proximity detection is a common use of Bluetooth Low Energy (LE). Windows 8.1 expands on the Bluetooth LE support introduced in Windows 8. This section provides guidelines to create a device implementation of the Proximity Profile that you can use to develop a UWP device app that's compatible with Windows 8.1.
+Proximity detection is a common use of Bluetooth Low Energy (LE). This section provides guidelines to create a device implementation of the Proximity Profile that you can use to develop a UWP device app.
 
 Before you develop this app, you should be familiar with Bluetooth LE functions and the Bluetooth LE Proximity profile specification.
 
-## <span id="Example_Service_Declaration"></span><span id="example_service_declaration"></span><span id="EXAMPLE_SERVICE_DECLARATION"></span>Example Service Declaration
+## Example service declaration
 
+Bluetooth Low Energy introduced a new physical layer that shares the same frequency space as Bluetooth Basic Rate. Low energy profiles are organized into what's called the Generic Attribute Profile (or GATT).
 
-Bluetooth Low Energy introduced a new physical layer that shares the same frequency space as Bluetooth Basic Rate. Low Energy Profiles are organized into what’s called the Generic Attribute Profile (or GATT).
-
-A GATT profile declares one or more services that define a use case or scenario. To develop a compliant service implementation, you must organize *characteristics* so that they conform to the established schema defined on the [Bluetooth Special Interest Group (SIG) developer website](https://go.microsoft.com/fwlink/p/?linkid=320723).
+A GATT profile declares one or more services that define a use case or scenario. To develop a compliant service implementation, you must organize *characteristics* so that they conform to the established schema defined on the [Bluetooth Special Interest Group (SIG) developer website](https://www.bluetooth.com/develop-with-bluetooth/).
 
 This diagram shows how *characteristics* are structured inside a typical GATT service.
 
-![example gatt service declaration.](images/bthleservicedeclaration.png)
+:::image type="content" source="images/bthleservicedeclaration.png" alt-text="Diagram showing a GATT service declaration example.":::
 
 An example proximity profile is described further in [Bluetooth Proximity Profile](bluetooth-proximity-profile.md).
-
- 
-
- 
-
-
-
-
-
