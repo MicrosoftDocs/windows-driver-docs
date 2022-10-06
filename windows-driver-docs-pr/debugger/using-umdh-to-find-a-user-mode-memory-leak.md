@@ -63,7 +63,7 @@ After making these preparations, you can use UMDH to capture information about t
 
     ```console
     umdh -p:124 -f:log1.txt 
-    ```dbgcmd
+    ```
 
 3.  Use Notepad or another program to open the log file. This file contains the call stack for each heap allocation, the number of allocations made through that call stack, and the number of bytes consumed through that call stack.
 
