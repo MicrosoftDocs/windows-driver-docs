@@ -37,9 +37,9 @@ While there are different approaches to recover from a failed state, Bluetooth u
 - The actual reset mechanism is system-specific.
 
 | Reset Level | Implementation |
-| --- | --- |
-| Function-level device reset (FLDR) | The reset operation is restricted to a specific device and is not visible to other devices. There is no re-enumeration. Function drivers must assume that the hardware has returned to its original state after the operation.  Intermediary state is not preserved.
-| Platform-level device reset (PLDR) | The reset operation affects a specific device and all other devices that are connected to it via the same power rail or reset line. The reset operation causes the device to be reported as missing from the bus and re-enumerated. This type of reset has the most impact on the system since all devices that share the resource go back to their original state.|
+|--|--|
+| Function-level device reset (FLDR) | The reset operation is restricted to a specific device and is not visible to other devices. There is no re-enumeration. Function drivers must assume that the hardware has returned to its original state after the operation. Intermediary state is not preserved. |
+| Platform-level device reset (PLDR) | The reset operation affects a specific device and all other devices that are connected to it via the same power rail or reset line. The reset operation causes the device to be reported as missing from the bus and re-enumerated. This type of reset has the most impact on the system since all devices that share the resource go back to their original state. |
 
 - **To support FLDR** there must be an __RST method defined inside the device scope as detailed in [ACPI firmware: Function-level reset](../kernel/working-with-guid-device-reset-interface-standard.md#acpi-firmware-function-level-reset).
 
