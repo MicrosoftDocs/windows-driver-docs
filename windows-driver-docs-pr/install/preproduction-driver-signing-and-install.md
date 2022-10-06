@@ -15,7 +15,7 @@ ms.author: anaharris
 
 On retail and production systems, the Windows kernel only trusts and loads drivers with a production WHQL/WHCP signature. To test pre-production drivers, it's required that driver developers enable [`TESTSIGNING`](./the-testsigning-boot-configuration-option.md) to enable non-production drivers to load. `TESTSIGNING` requires disabling Secure Boot, to present a difference in the testing and production environments.
 
-The Windows kernel supports loading pre-production drivers signed with the WHQL/WHCP pre-production signature. The WHQL/WHCP signuture is accessible through the Microsoft Hardware Developer Center (HDC).
+The Windows kernel supports loading pre-production drivers signed with the WHQL/WHCP pre-production signature. The WHQL/WHCP signature is accessible through the Microsoft Hardware Developer Center (HDC).
 
 ## Prerequisites
 
