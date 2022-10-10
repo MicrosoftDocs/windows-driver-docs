@@ -5,7 +5,7 @@ keywords:
 - Bluetooth WDK , driver stack
 - driver stacks WDK Bluetooth
 - stacks WDK Bluetooth
-ms.date: 10/07/2022
+ms.date: 10/10/2022
 ---
 
 # Bluetooth driver stack
@@ -19,7 +19,7 @@ The following image shows the modules within the Bluetooth driver stack, along w
 - **User-mode**
   - **User-mode application**- A user-mode application that accesses the Bluetooth driver stack through published APIs. For more information, see [About Bluetooth](/windows/win32/bluetooth/about-bluetooth) in the Windows SDK documentation.
 
-    User-mode applications should link against *BthProps.lib*, instead of *IrProps.lib*, in order to use APIs, such as [**BluetoothSetLocalServiceInfo**](/windows/win32/api/bluetoothapis/nf-bluetoothapis-bluetoothsetlocalserviceinfo).
+    User-mode applications should link against *BthProps.lib*, instead of *IrProps.lib*, in order to use APIs, such as **[BluetoothSetLocalServiceInfo](/windows/win32/api/bluetoothapis/nf-bluetoothapis-bluetoothsetlocalserviceinfo)**.
 
 - **Examples of profile drivers**
   - **WAP Kernel Mode Driver**- The Wireless Application Protocol (WAP) component is an example of a profile driver that communicates between the Windows networking stack and BthPort, accessing the L2CAP interface and, optionally, the SDP interface contained in L2CAP. Other possible profiles include the Advanced Audio Distribution profile (A2DP), A/V Remote Control profile (AVRCP), Generic A/V Distribution profile (GAVDP), and Common ISDN Access (CIP) profile.
@@ -42,7 +42,6 @@ The following image shows the modules within the Bluetooth driver stack, along w
     User-mode applications can access RfComm using the Winsock interfaces described in the Windows SDK.
 
   - **BthModem**- The component that implements virtual COM ports and dial-up networking (DUN). BthModem directs all I/O and control operations to RfComm through a TDI interface. The upper edge of BthModem communicates with *Serial.sys* to give the appearance of being a wireless COM port.
-        **Note**  This component is not available in Windows RT.
 
   - **BthEnum**- The Bluetooth bus driver. BthEnum communicates with the Plug and Play (PnP) manager to create and destroy device objects used to enable Bluetooth services. BthEnum creates a PDO for every service that a connected remote device supports. For example, when a user connects a Bluetooth-enabled mouse, Windows will discover that the mouse supports the Bluetooth HID service and creates a PDO for the HID service that causes the PnP manager to load HidBth.
 
