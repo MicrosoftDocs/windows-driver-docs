@@ -1,7 +1,7 @@
 ---
 title: WinDbg Preview - What's New 
-description: This topic provides infomration on what's new in WinDbg preview debugger.
-ms.date: 08/09/2021
+description: This topic provides information on what's new in WinDbg preview debugger.
+ms.date: 10/10/2022
 ms.topic: article
 ---
 
@@ -169,10 +169,6 @@ Portable PDB support has been added. The Portable PDB (Program Database) format 
 **Improvements to TTD Calls objects** - [Calls queries](./time-travel-debugging-calls-objects.md) now include parameter names, types, and values. When querying across traces for function calls you can get fully typed parameters and their values making it easy to filter down results by parameters.
 
 **Support for Open Enclave** - WinDbg Preview can now debug Open Enclave (OE) applications for more information, see [Open Enclave debugging](open-enclave-debugging.md)).
-
-**VS Code Extension** - To make it easier to develop for Open Enclave, we’ve released a basic VS Code extension to enable a quicker inner loop. Variables, Watch, and Call Stack windows all work as well as breakpoints and source windows, any deeper debugging will need to use the console window.
- 
-You can find the extension in the [VS Code Marketplace](https://aka.ms/CDBVSCode) and report any issues to our  [WinDbg Feedback GitHub](https://aka.ms/dexex). Note that while the extension may work for other scenarios, we’re only intending on fixing issues related to OE scenarios at this point.
 
 **ELF Core Dumps** - As part of supporting Open Enclave, WinDbg can open ELF core dumps and binaries as well as DWARF symbols (DWARF 5 is not currently supported) from both Enclaves and Linux applications. When opening a core dump from a non-Windows application, basic windows and commands should all work properly, but most extensions and Windows-specific commands will not work. ELF and DWARF files will be downloaded from symbol servers following the [key conventions defined here](https://github.com/dotnet/symstore/blob/master/docs/specs/SSQP_Key_Conventions.md). Enclaves are the only supported scenario, but we’re open to feedback on opening other Linux core dumps.
 

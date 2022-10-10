@@ -117,10 +117,10 @@ The directives in the add-registry section of the driver's INF file specify whet
 
 ## See also
 
-[Using a Universal INF File](../install/using-a-universal-inf-file.md)
-
 [DEVPKEY_Device_DeviceDesc](../install/devpkey-device-devicedesc.md)
 
 [INF DDInstall section](../install/inf-ddinstall-section.md)
+
+[DCH Design Principles and Best Practices](../develop/dch-principles-best-practices.md)
 
 [Windows 11 APIs for Audio Processing Objects](windows-11-apis-for-audio-processing-objects.md)

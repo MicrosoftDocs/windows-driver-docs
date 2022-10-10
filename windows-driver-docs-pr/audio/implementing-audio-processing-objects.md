@@ -316,7 +316,7 @@ Description = "Audio Proxy APO Sample"
 This APO component triggers the second part, the installation of the APO INF, in the SYSVAD sample this is done in ComponentizedApoSample.inf. This INF file is dedicated to the APO component. It specifies the component class as AudioProcessingObject and adds all of the APO properties for CLSID registration and registering with the audio engine.
 
 >[!NOTE]
-> The INF file samples shown support driver package isolation by using in most cases the HKR registry key. Earlier samples used the HKCR to store persistent values. The exception is that registration of Component Object Model (COM) objects, a key may be written under HKCR.  For more information, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
+> The INF file samples shown support driver package isolation by using in most cases the HKR registry key. Earlier samples used the HKCR to store persistent values. The exception is that registration of Component Object Model (COM) objects, a key may be written under HKCR.  For more information, see [Driver package isolation](../develop/driver-isolation.md).
 
 ```inf
 [Version]
@@ -439,7 +439,7 @@ HKR,"FX\\0",%PKEY_FX_EndpointEffectClsid%,,%FX_DISCOVER_EFFECTS_APO_CLSID%
 
 This sample shows the \[Apo_AddReg\] section from the Sysvad ComponentizedApoSample.inx. This section registers the swap stream GUID with COM and registers the Swap Stream APO effect. The \[Apo_CopyFiles\] section has a DestinationDirs of 13, which copies swapapo.dll into the Driverstore. For more information, see "Run From Driverstore" in [Driver Package Isolation](/drivers/develop/driver-isolation).
 
-For general information about INF files, see [Using a Universal INF File](\drivers\install\using-a-universal-inf-file).
+For general information about INF files, see [Overview of INF Files](\drivers\install\overview-of-inf-files.md).
 
 ```inf
 ; ComponentizedApoSample.inx
@@ -579,6 +579,6 @@ Also, if the failure count value for an SFX, MFX or EFX APO reaches a system-spe
 
 [Windows Audio Processing Objects](windows-audio-processing-objects.md)
 
-[Using a Universal INF File](../install/using-a-universal-inf-file.md)
-
 [Creating a componentized audio driver installation](./audio-universal-drivers.md#creating-a-componentized-audio-driver-installation)
+
+[Driver package isolation](../develop/driver-isolation.md)

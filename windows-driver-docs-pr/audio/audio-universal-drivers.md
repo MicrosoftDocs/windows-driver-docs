@@ -91,7 +91,7 @@ A separate extension INF file is used to customize each base driver component fo
 
 An extension INF file must be a universal INF file. For more information, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
 
-For information about adding software using INF files, see [Using a Component INF File](../install/using-a-component-inf-file.md).
+For information about adding software using INF files, see [Using a Component INF File](../install/using-a-component-inf-file.md) and [DCH Design Principles and Best Practices](../develop/dch-principles-best-practices.md).
 
 ### Submitting componentized INF files
 

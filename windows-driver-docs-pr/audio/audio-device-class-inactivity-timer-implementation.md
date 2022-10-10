@@ -80,5 +80,3 @@ HKR,PowerSettings,IdlePowerState,%REG_BINARY%,03,00,00,00
 ## See also
 
 [**PoRegisterDeviceForIdleDetection**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-poregisterdeviceforidledetection)
-
-[Using a Universal INF File](/drivers/install/using-a-universal-inf-file)
