@@ -1,7 +1,7 @@
 ---
 title: Microsoft-defined Bluetooth HCI commands and events
 description: The Bluetooth Host-Controller Interface (HCI) specifies all interactions between a host and a Bluetooth radio controller.
-ms.date: 11/10/2021
+ms.date: 10/10/2022
 ---
 
 # Microsoft-defined Bluetooth HCI extensions
@@ -472,7 +472,7 @@ HCI_VS_MSFT_LE_Cancel_Monitor_Advertisement cancels a previously-issued [HCI_VS_
 
 |Command|Code|Command parameters|Return parameters|
 |---|---|---|---|
-|HCI_VS_MSFT_LE_Cancel_Monitor_Advertisement|Chosen base code |Subcommand_opcode,</br>Monitor_handle</li>|Status,</br>Subcommand_opcode|
+|HCI_VS_MSFT_LE_Cancel_Monitor_Advertisement|Chosen base code |Subcommand_opcode,</br>Monitor_handle|Status,</br>Subcommand_opcode|
 
 The controller shall promptly generate a Command Completed event in response to this command.
 
@@ -518,7 +518,7 @@ HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable sets the state of the advertiseme
 
 |Command|Code|Command parameters|Return parameters|
 |---|---|---|---|
-|HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable|Chosen base code |Subcommand_opcode,</br>Enable</li>|Status,</br>Subcommand_opcode|
+|HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable|Chosen base code |Subcommand_opcode,</br>Enable|Status,</br>Subcommand_opcode|
 
 If _Enable_ is set to 0x00, the controller shall propagate received advertisements to the host based on existing filter accept list settings. The controller shall continue monitoring the devices that are currently being monitored and generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with _Monitor_state_ set to 0 if the device is no longer being monitored. The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with _Monitor_state_ set to 1 if a new device is being monitored. The host may issue HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable with _Enable_ set to 0x01 to reenable all the filter conditions.
 
@@ -573,7 +573,7 @@ HCI_VS_MSFT_Read_Absolute_RSSI reads the **absolute** Received Signal Strength I
 
 |Command|Code|Command parameters|Return parameters|
 |---|---|---|---|
-|HCI_VS_MSFT_Read_Absolute_RSSI|Chosen base code |Subcommand_opcode,</br>Connection_Handle</li>|Status,</br>Subcommand_opcode,</br>Connection_Handle,</br>RSSI|
+|HCI_VS_MSFT_Read_Absolute_RSSI|Chosen base code |Subcommand_opcode,</br>Connection_Handle|Status,</br>Subcommand_opcode,</br>Connection_Handle,</br>RSSI|
 
 A connection handle is provided as both a command and return parameter to identify the ACL connection whose RSSI is being read. The RSSI metric is the **absolute** receiver signal strength in dBm to ± 6 dB accuracy. If the RSSI cannot be read, the RSSI metric shall be set to 127.
 The controller shall always complete this command promptly with a Command Completed event.
