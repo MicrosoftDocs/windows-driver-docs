@@ -906,142 +906,146 @@
   items: 
   - name: "Troubleshooting Device and Driver Installations"
     href: troubleshooting-device-and-driver-installations.md
-  - name: "Device Manager for makers of devices and drivers"
-    href: using-device-manager.md
+  - name: "Device Manager"
+    items: 
+    - name: "Device Manager for makers of devices and drivers"
+      href: using-device-manager.md
+    - name: "Device Manager Details Tab"
+      href: device-manager-details-tab.md
+    - name: "Viewing Hidden Devices"
+      href: viewing-hidden-devices.md
   - name: "Device Manager Error Messages"
-    href: device-manager-error-messages.md
-  - name: "Code 1 - CM_PROB_NOT_CONFIGURED"
-    href: cm-prob-not-configured.md
-  - name: "Code 3 - CM_PROB_OUT_OF_MEMORY"
-    href: cm-prob-out-of-memory.md
-  - name: "Code 9 - CM_PROB_INVALID_DATA"
-    href: cm-prob-invalid-data.md
-  - name: "Code 10 - CM_PROB_FAILED_START"
-    href: cm-prob-failed-start.md
-  - name: "Code 12 - CM_PROB_NORMAL_CONFLICT"
-    href: cm-prob-normal-conflict.md
-  - name: "Code 14 - CM_PROB_NEED_RESTART"
-    href: cm-prob-need-restart.md
-  - name: "Code 16 - CM_PROB_PARTIAL_LOG_CONF"
-    href: cm-prob-partial-log-conf.md
-  - name: "Code 18 - CM_PROB_REINSTALL"
-    href: cm-prob-reinstall.md
-  - name: "Code 19 - CM_PROB_REGISTRY"
-    href: cm-prob-registry.md
-  - name: "Code 21 - CM_PROB_WILL_BE_REMOVED"
-    href: cm-prob-will-be-removed.md
-  - name: "Code 22 - CM_PROB_DISABLED"
-    href: cm-prob-disabled.md
-  - name: "Code 24 - CM_PROB_DEVICE_NOT_THERE"
-    href: cm-prob-device-not-there.md
-  - name: "Code 28 - CM_PROB_FAILED_INSTALL"
-    href: cm-prob-failed-install.md
-  - name: "Code 29 - CM_PROB_HARDWARE_DISABLED"
-    href: cm-prob-hardware-disabled.md
-  - name: "Code 31 - CM_PROB_FAILED_ADD"
-    href: cm-prob-failed-add.md
-  - name: "Code 32 - CM_PROB_DISABLED_SERVICE"
-    href: cm-prob-disabled-service.md
-  - name: "Code 33 - CM_PROB_TRANSLATION_FAILED"
-    href: cm-prob-translation-failed.md
-  - name: "Code 34 - CM_PROB_NO_SOFTCONFIG"
-    href: cm-prob-no-softconfig.md
-  - name: "Code 35 - CM_PROB_BIOS_TABLE"
-    href: cm-prob-bios-table.md
-  - name: "Code 36 - CM_PROB_IRQ_TRANSLATION_FAILED"
-    href: cm-prob-irq-translation-failed.md
-  - name: "Code 37 - CM_PROB_FAILED_DRIVER_ENTRY"
-    href: cm-prob-failed-driver-entry.md
-  - name: "Code 38 - CM_PROB_DRIVER_FAILED_PRIOR_UNLOAD"
-    href: cm-prob-driver-failed-prior-unload.md
-  - name: "Code 39 - CM_PROB_DRIVER_FAILED_LOAD"
-    href: cm-prob-driver-failed-load.md
-  - name: "Code 40 - CM_PROB_DRIVER_SERVICE_KEY_INVALID"
-    href: cm-prob-driver-service-key-invalid.md
-  - name: "Code 41 - CM_PROB_LEGACY_SERVICE_NO_DEVICES"
-    href: cm-prob-legacy-service-no-devices.md
-  - name: "Code 42 - CM_PROB_DUPLICATE_DEVICE"
-    href: cm-prob-duplicate-device.md
-  - name: "Code 43 - CM_PROB_FAILED_POST_START"
-    href: cm-prob-failed-post-start.md
-  - name: "Code 44 - CM_PROB_HALTED"
-    href: cm-prob-halted.md
-  - name: "Code 45 - CM_PROB_PHANTOM"
-    href: cm-prob-phantom.md
-  - name: "Code 46 - CM_PROB_SYSTEM_SHUTDOWN"
-    href: cm-prob-system-shutdown.md
-  - name: "Code 47 - CM_PROB_HELD_FOR_EJECT"
-    href: cm-prob-held-for-eject.md
-  - name: "Code 48 - CM_PROB_DRIVER_BLOCKED"
-    href: cm-prob-driver-blocked.md
-  - name: "Code 49 - CM_PROB_REGISTRY_TOO_LARGE"
-    href: cm-prob-registry-too-large.md
-  - name: "Code 50 - CM_PROB_SETPROPERTIES_FAILED"
-    href: cm-prob-setproperties-failed.md
-  - name: "Code 51 - CM_PROB_WAITING_ON_DEPENDENCY"
-    href: cm-prob-waiting-on-dependency.md
-  - name: "Code 52 - CM_PROB_UNSIGNED_DRIVER"
-    href: cm-prob-unsigned-driver.md
-  - name: "Code 53 - CM_PROB_USED_BY_DEBUGGER"
-    href: cm-prob-used-by-debugger.md
-  - name: "Code 54 - CM_PROB_DEVICE_RESET"
-    href: cm-prob-device-reset.md
-  - name: "Code 55 - CM_PROB_CONSOLE_LOCKED"
-    href: cm-prob-console-locked.md
-  - name: "Code 56 - CM_PROB_NEED_CLASS_CONFIG"
-    href: cm-prob-need-class-config.md
-  - name: "Code 57 - CM_PROB_GUEST_ASSIGNMENT_FAILED"
-    href: cm-prob-guest-assignment-failed.md
-  - name: "Device Manager Details Tab"
-    href: device-manager-details-tab.md
-  - name: "Viewing Hidden Devices"
-    href: viewing-hidden-devices.md
-  - name: "SetupAPI Logging"
-    href: setupapi-logging--windows-vista-and-later-.md
-  - name: "SetupAPI Text Logs"
-    href: setupapi-text-logs.md
-  - name: "Format of a Text Log Header"
-    href: format-of-a-text-log-header.md
-  - name: "Format of a Text Log Section"
-    href: format-of-a-text-log-section.md
-  - name: "Format of a Text Log Section Header"
-    href: format-of-a-text-log-section-header.md
-  - name: "Format of a Text Log Section Body"
-    href: format-of-a-text-log-section-body.md
-  - name: "Format of a Text Log Section Footer"
-    href: format-of-a-text-log-section-footer.md
-  - name: "Format of Log Entries That Are Not Part of a Text Log Section"
-    href: format-of-log-entries-that-are-not-part-of-a-text-log-section.md
-  - name: "SetupAPI Logging Registry Settings"
-    href: setupapi-logging-registry-settings.md
-  - name: "Setting the Event Level for a Text Log"
-    href: setting-the-event-level-for-a-text-log.md
-  - name: "Enabling Event Categories for a Text Log"
-    href: enabling-event-categories-for-a-text-log.md
-  - name: "Setting the Directory Path of the Text Logs"
-    href: setting-the-directory-path-of-the-text-logs.md
-  - name: "Using the SetupAPI Logging Functions"
-    href: using-the-setupapi-logging-functions.md
-  - name: "Writing Log Entries in a Text Log"
-    href: writing-log-entries-in-a-text-log.md
-  - name: "Calling SetupWriteTextLog"
-    href: calling-setupwritetextlog.md
-  - name: "Writing an Information Log Entry"
-    href: writing-an-information-log-entry.md
-  - name: "Writing an Error or Warning Log Entry"
-    href: writing-an-error-or-warning-log-entry.md
-  - name: "Calling SetupWriteTextLogError"
-    href: calling-setupwritetextlogerror.md
-  - name: "Calling SetupWriteTextLogInfLine"
-    href: calling-setupwritetextloginfline.md
-  - name: "Writing Indented Log Entries"
-    href: writing-indented-log-entries.md
-  - name: "Log Tokens"
-    href: log-tokens.md
-  - name: "Setting and Getting a Log Token for a Thread"
-    href: setting-and-getting-a-log-token-for-a-thread.md
+    items: 
+    - name: "Device Manager Error Messages"
+      href: device-manager-error-messages.md
+    - name: "Code 1 - CM_PROB_NOT_CONFIGURED"
+      href: cm-prob-not-configured.md
+    - name: "Code 3 - CM_PROB_OUT_OF_MEMORY"
+      href: cm-prob-out-of-memory.md
+    - name: "Code 9 - CM_PROB_INVALID_DATA"
+      href: cm-prob-invalid-data.md
+    - name: "Code 10 - CM_PROB_FAILED_START"
+      href: cm-prob-failed-start.md
+    - name: "Code 12 - CM_PROB_NORMAL_CONFLICT"
+      href: cm-prob-normal-conflict.md
+    - name: "Code 14 - CM_PROB_NEED_RESTART"
+      href: cm-prob-need-restart.md
+    - name: "Code 16 - CM_PROB_PARTIAL_LOG_CONF"
+      href: cm-prob-partial-log-conf.md
+    - name: "Code 18 - CM_PROB_REINSTALL"
+      href: cm-prob-reinstall.md
+    - name: "Code 19 - CM_PROB_REGISTRY"
+      href: cm-prob-registry.md
+    - name: "Code 21 - CM_PROB_WILL_BE_REMOVED"
+      href: cm-prob-will-be-removed.md
+    - name: "Code 22 - CM_PROB_DISABLED"
+      href: cm-prob-disabled.md
+    - name: "Code 24 - CM_PROB_DEVICE_NOT_THERE"
+      href: cm-prob-device-not-there.md
+    - name: "Code 28 - CM_PROB_FAILED_INSTALL"
+      href: cm-prob-failed-install.md
+    - name: "Code 29 - CM_PROB_HARDWARE_DISABLED"
+      href: cm-prob-hardware-disabled.md
+    - name: "Code 31 - CM_PROB_FAILED_ADD"
+      href: cm-prob-failed-add.md
+    - name: "Code 32 - CM_PROB_DISABLED_SERVICE"
+      href: cm-prob-disabled-service.md
+    - name: "Code 33 - CM_PROB_TRANSLATION_FAILED"
+      href: cm-prob-translation-failed.md
+    - name: "Code 34 - CM_PROB_NO_SOFTCONFIG"
+      href: cm-prob-no-softconfig.md
+    - name: "Code 35 - CM_PROB_BIOS_TABLE"
+      href: cm-prob-bios-table.md
+    - name: "Code 36 - CM_PROB_IRQ_TRANSLATION_FAILED"
+      href: cm-prob-irq-translation-failed.md
+    - name: "Code 37 - CM_PROB_FAILED_DRIVER_ENTRY"
+      href: cm-prob-failed-driver-entry.md
+    - name: "Code 38 - CM_PROB_DRIVER_FAILED_PRIOR_UNLOAD"
+      href: cm-prob-driver-failed-prior-unload.md
+    - name: "Code 39 - CM_PROB_DRIVER_FAILED_LOAD"
+      href: cm-prob-driver-failed-load.md
+    - name: "Code 40 - CM_PROB_DRIVER_SERVICE_KEY_INVALID"
+      href: cm-prob-driver-service-key-invalid.md
+    - name: "Code 41 - CM_PROB_LEGACY_SERVICE_NO_DEVICES"
+      href: cm-prob-legacy-service-no-devices.md
+    - name: "Code 42 - CM_PROB_DUPLICATE_DEVICE"
+      href: cm-prob-duplicate-device.md
+    - name: "Code 43 - CM_PROB_FAILED_POST_START"
+      href: cm-prob-failed-post-start.md
+    - name: "Code 44 - CM_PROB_HALTED"
+      href: cm-prob-halted.md
+    - name: "Code 45 - CM_PROB_PHANTOM"
+      href: cm-prob-phantom.md
+    - name: "Code 46 - CM_PROB_SYSTEM_SHUTDOWN"
+      href: cm-prob-system-shutdown.md
+    - name: "Code 47 - CM_PROB_HELD_FOR_EJECT"
+      href: cm-prob-held-for-eject.md
+    - name: "Code 48 - CM_PROB_DRIVER_BLOCKED"
+      href: cm-prob-driver-blocked.md
+    - name: "Code 49 - CM_PROB_REGISTRY_TOO_LARGE"
+      href: cm-prob-registry-too-large.md
+    - name: "Code 50 - CM_PROB_SETPROPERTIES_FAILED"
+      href: cm-prob-setproperties-failed.md
+    - name: "Code 51 - CM_PROB_WAITING_ON_DEPENDENCY"
+      href: cm-prob-waiting-on-dependency.md
+    - name: "Code 52 - CM_PROB_UNSIGNED_DRIVER"
+      href: cm-prob-unsigned-driver.md
+    - name: "Code 53 - CM_PROB_USED_BY_DEBUGGER"
+      href: cm-prob-used-by-debugger.md
+    - name: "Code 54 - CM_PROB_DEVICE_RESET"
+      href: cm-prob-device-reset.md
+    - name: "Code 55 - CM_PROB_CONSOLE_LOCKED"
+      href: cm-prob-console-locked.md
+    - name: "Code 56 - CM_PROB_NEED_CLASS_CONFIG"
+      href: cm-prob-need-class-config.md
+    - name: "Code 57 - CM_PROB_GUEST_ASSIGNMENT_FAILED"
+      href: cm-prob-guest-assignment-failed.md
   - name: "SetupAPI Logging"
     items: 
+    - name: "SetupAPI Logging"
+      href: setupapi-logging--windows-vista-and-later-.md
+    - name: "SetupAPI Text Logs"
+      href: setupapi-text-logs.md
+    - name: "Format of a Text Log Header"
+      href: format-of-a-text-log-header.md
+    - name: "Format of a Text Log Section"
+      href: format-of-a-text-log-section.md
+    - name: "Format of a Text Log Section Header"
+      href: format-of-a-text-log-section-header.md
+    - name: "Format of a Text Log Section Body"
+      href: format-of-a-text-log-section-body.md
+    - name: "Format of a Text Log Section Footer"
+      href: format-of-a-text-log-section-footer.md
+    - name: "Format of Log Entries That Are Not Part of a Text Log Section"
+      href: format-of-log-entries-that-are-not-part-of-a-text-log-section.md
+    - name: "SetupAPI Logging Registry Settings"
+      href: setupapi-logging-registry-settings.md
+    - name: "Setting the Event Level for a Text Log"
+      href: setting-the-event-level-for-a-text-log.md
+    - name: "Enabling Event Categories for a Text Log"
+      href: enabling-event-categories-for-a-text-log.md
+    - name: "Setting the Directory Path of the Text Logs"
+      href: setting-the-directory-path-of-the-text-logs.md
+    - name: "Using the SetupAPI Logging Functions"
+      href: using-the-setupapi-logging-functions.md
+    - name: "Writing Log Entries in a Text Log"
+      href: writing-log-entries-in-a-text-log.md
+    - name: "Calling SetupWriteTextLog"
+      href: calling-setupwritetextlog.md
+    - name: "Writing an Information Log Entry"
+      href: writing-an-information-log-entry.md
+    - name: "Writing an Error or Warning Log Entry"
+      href: writing-an-error-or-warning-log-entry.md
+    - name: "Calling SetupWriteTextLogError"
+      href: calling-setupwritetextlogerror.md
+    - name: "Calling SetupWriteTextLogInfLine"
+      href: calling-setupwritetextloginfline.md
+    - name: "Writing Indented Log Entries"
+      href: writing-indented-log-entries.md
+    - name: "Log Tokens"
+      href: log-tokens.md
+    - name: "Setting and Getting a Log Token for a Thread"
+      href: setting-and-getting-a-log-token-for-a-thread.md
     - name: "SetupAPI Logging (Windows Server 2003, Windows XP, and Windows 2000)"
       href: setupapi-logging--windows-server-2003--windows-xp--and-windows-2000-.md
     - name: "Setting SetupAPI Logging Levels"
