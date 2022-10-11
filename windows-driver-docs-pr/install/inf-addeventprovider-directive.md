@@ -14,7 +14,7 @@ ms.date: 06/04/2018
 
 # INF AddEventProvider Directive
 
-An **AddEventProvider** directive is used within an [**INF *DDInstall*.Events section**](inf-ddinstall-services-section.md). It specifies characteristics of the [Event Tracing for Windows](/windows/desktop/ETW/about-event-tracing) (ETW) providers associated with drivers. This directive is supported for Windows 10 version 1809 and later.
+An **AddEventProvider** directive is used within an [**INF *DDInstall*.Events section**](inf-ddinstall-events-section.md). It specifies characteristics of the [Event Tracing for Windows](/windows/desktop/ETW/about-event-tracing) (ETW) providers associated with drivers. This directive is supported for Windows 10 version 1809 and later.
 
 ```inf
 [DDInstall.Events] 
@@ -177,8 +177,4 @@ LoggingAutoBackup = 1
 
 ## See also
 
-
 [***DDInstall*.Events**](inf-ddinstall-events-section.md)
-
- 
-
