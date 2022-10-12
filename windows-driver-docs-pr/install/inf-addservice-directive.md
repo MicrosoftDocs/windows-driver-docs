@@ -126,6 +126,7 @@ ServiceBinary=path-to-service
 [LoadOrderGroup=load-order-group-name]
 [Dependencies=depend-on-item-name[,depend-on-item-name]
 [Security="security-descriptor-string"]...]
+[RequiredPrivileges=privilege-name[,privilege-name]...] (Windows 7 and later versions of Windows)
 [ServiceSidType=value] (Windows 10 Version 2004 and later versions of Windows)
 [DelayedAutoStart=value] (Windows 10 Version 2004 and later versions of Windows)
 [AddTrigger=service-trigger-install-section[, service-trigger-install-section, ...]] (Windows 10 Version 2004 and later versions of Windows)
@@ -243,6 +244,14 @@ Specifies a security descriptor, to be applied to the service. This security des
 For information about security descriptor strings, see [Security Descriptor Definition Language (Windows)](/windows/desktop/SecAuthZ/security-descriptor-definition-language). For information about the format of security descriptor strings, see Security Descriptor Definition Language (Windows).
 
 For more information about how to specify security descriptors, see [Creating Secure Device Installations](creating-secure-device-installations.md).
+
+**RequiredPrivileges**=*privilege-name*[**,**_privilege-name_]...
+> [!NOTE]
+> This value can only be used for *Win32 Services* and is only available on Windows 7 and above.
+
+Each *privilege-name* in the list is the name of the privilege.  See [Privilege Constants (Windows)](/windows/win32/secauthz/privilege-constants) for a list of the privilegs names. For each privilege name, only the text name is required, *For Example* The privilege name should be written as "SeAuditPrivilege" but not SE_AUDIT_NAME.
+
+For more information on service required privileges, see [SERVICE_REQUIRED_PRIVILEGES_INFO (Windows)](/windows/win32/api/winsvc/ns-winsvc-service_required_privileges_infow)
 
 **ServiceSidType**=*value*  
 > [!NOTE]
