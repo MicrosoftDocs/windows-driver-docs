@@ -1,7 +1,7 @@
 ---
 title: Implementing Audio Processing Objects
 description: This topic describes how to implement an audio processing object (APO). For general information about APOs, see Audio Processing Object Architecture.
-ms.date: 08/17/2022
+ms.date: 10/12/2022
 ---
 
 # Implementing Audio Processing Objects
@@ -316,7 +316,8 @@ Description = "Audio Proxy APO Sample"
 This APO component triggers the second part, the installation of the APO INF, in the SYSVAD sample this is done in ComponentizedApoSample.inf. This INF file is dedicated to the APO component. It specifies the component class as AudioProcessingObject and adds all of the APO properties for CLSID registration and registering with the audio engine.
 
 >[!NOTE]
-> The INF file samples shown support driver package isolation by using in most cases the HKR registry key. Earlier samples used the HKCR to store persistent values. The exception is that registration of Component Object Model (COM) objects, a key may be written under HKCR.  For more information, see [Driver package isolation](../develop/driver-isolation.md).
+> The INF file samples shown support driver package isolation by using the HKR registry key. Before Windows 11, version 22000, the samples used the HKCR to store persistent values for CLSID registrations, instead of HKR. APO registration has been supported using HKR starting with Windows 10, release 1809. For more information, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
+
 
 ```inf
 [Version]
@@ -329,9 +330,9 @@ ClassGuid   = {5989fce8-9cd0-467d-8a6a-5419e31529d4}
 
 [Apo_AddReg]
 ; CLSID registration
-HKCR,CLSID\%SWAP_FX_STREAM_CLSID%,,,%SFX_FriendlyName%
-HKCR,CLSID\%SWAP_FX_STREAM_CLSID%\InProcServer32,,0x00020000,%%SystemRoot%%\System32\swapapo.dll
-HKCR,CLSID\%SWAP_FX_STREAM_CLSID%\InProcServer32,ThreadingModel,,"Both"
+HKR,CLSID\%SWAP_FX_STREAM_CLSID%,,,%SFX_FriendlyName%
+HKR,CLSID\%SWAP_FX_STREAM_CLSID%\InProcServer32,,0x00020000,%%SystemRoot%%\System32\swapapo.dll
+HKR,CLSID\%SWAP_FX_STREAM_CLSID%\InProcServer32,ThreadingModel,,"Both"
 …
 ;Audio engine registration
 HKR,AudioEngine\AudioProcessingObjects\%SWAP_FX_STREAM_CLSID%,"FriendlyName",,%SFX_FriendlyName%
