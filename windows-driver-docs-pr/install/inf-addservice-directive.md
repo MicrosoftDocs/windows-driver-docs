@@ -249,7 +249,7 @@ For more information about how to specify security descriptors, see [Creating Se
 > [!NOTE]
 > This value can only be used for *Win32 Services* and is only available on Windows 7 and above.
 
-Each *privilege-name* in the list is the name of the privilege.  See [Privilege Constants (Windows)](/windows/win32/secauthz/privilege-constants) for a list of the privilegs names. For each privilege name, only the text name is required, *For Example* The privilege name should be written as "SeAuditPrivilege" but not SE_AUDIT_NAME.
+Each *privilege-name* in the list is the name of the privilege.  See [Privilege Constants (Windows)](/windows/win32/secauthz/privilege-constants) for a list of the privilegs names. For each privilege name, only the text name is required, *For Example* The privilege name should be written as "SetAuditPrivilege" but not SE_AUDIT_NAME.
 
 For more information on service required privileges, see [SERVICE_REQUIRED_PRIVILEGES_INFO (Windows)](/windows/win32/api/winsvc/ns-winsvc-service_required_privileges_infow)
 
