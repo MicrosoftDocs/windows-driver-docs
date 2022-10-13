@@ -1131,6 +1131,8 @@
           href: source-parameter-token.md
         - name: "Version Token"
           href: version-token.md
+      - name: "DP4 Instruction"
+        href: dp4-instruction.md
     - name: "Adaptive refresh for playing 24 fps video content"
       href: adaptive-refresh-for-playing-24-fps-content.md
     - name: "GPU power management of idle states and active power"
@@ -1741,6 +1743,53 @@
             href: notify-callback-functions-in-a-video-capture-driver.md
           - name: "Video VBI Capture"
             href: video-vbi-capture.md
+        - name: "DxApi Function Identifiers"
+# Auto-expanded node
+          items: 
+          - name: "DD_DXAPI_ADDVPCAPTUREBUFFER"
+            href: dd-dxapi-addvpcapturebuffer.md
+          - name: "DD_DXAPI_CLOSEHANDLE"
+            href: dd-dxapi-closehandle.md
+          - name: "DD_DXAPI_FLIP_OVERLAY"
+            href: dd-dxapi-flip-overlay.md
+          - name: "DD_DXAPI_FLIP_VP"
+            href: dd-dxapi-flip-vp.md
+          - name: "DD_DXAPI_FLUSHVPCAPTUREBUFFERS"
+            href: dd-dxapi-flushvpcapturebuffers.md
+          - name: "DD_DXAPI_GET_CURRENT_VP_AUTOFLIP_SURFACE"
+            href: dd-dxapi-get-current-vp-autoflip-surface.md
+          - name: "DD_DXAPI_GET_LAST_VP_AUTOFLIP_SURFACE"
+            href: dd-dxapi-get-last-vp-autoflip-surface.md
+          - name: "DD_DXAPI_GET_POLARITY"
+            href: dd-dxapi-get-polarity.md
+          - name: "DD_DXAPI_GET_SURFACE_STATE"
+            href: dd-dxapi-get-surface-state.md
+          - name: "DD_DXAPI_GET_VP_FIELD_NUMBER"
+            href: dd-dxapi-get-vp-field-number.md
+          - name: "DD_DXAPI_GETKERNELCAPS"
+            href: dd-dxapi-getkernelcaps.md
+          - name: "DD_DXAPI_GETVERSIONNUMBER"
+            href: dd-dxapi-getversionnumber.md
+          - name: "DD_DXAPI_LOCK"
+            href: dd-dxapi-lock.md
+          - name: "DD_DXAPI_OPENDIRECTDRAW"
+            href: dd-dxapi-opendirectdraw.md
+          - name: "DD_DXAPI_OPENSURFACE"
+            href: dd-dxapi-opensurface.md
+          - name: "DD_DXAPI_OPENVIDEOPORT"
+            href: dd-dxapi-openvideoport.md
+          - name: "DD_DXAPI_OPENVPCAPTUREDEVICE"
+            href: dd-dxapi-openvpcapturedevice.md
+          - name: "DD_DXAPI_REGISTER_CALLBACK"
+            href: dd-dxapi-register-callback.md
+          - name: "DD_DXAPI_SET_SURFACE_STATE"
+            href: dd-dxapi-set-surface-state.md
+          - name: "DD_DXAPI_SET_VP_FIELD_NUMBER"
+            href: dd-dxapi-set-vp-field-number.md
+          - name: "DD_DXAPI_SET_VP_SKIP_FIELD"
+            href: dd-dxapi-set-vp-skip-field.md
+          - name: "DD_DXAPI_UNREGISTER_CALLBACK"
+            href: dd-dxapi-unregister-callback.md
     - name: "Extended Surface Alignment"
 # Auto-expanded node
       items: 
