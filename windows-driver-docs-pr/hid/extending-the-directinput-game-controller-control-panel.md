@@ -8,7 +8,7 @@ keywords:
 - joysticks WDK HID , game controller support
 - force feedback drivers WDK HID , property sheets
 - game pad support WDK DirectInput
-ms.date: 07/08/2022
+ms.date: 10/11/2022
 ---
 
 # Extending the DirectInput game controller control panel
@@ -36,7 +36,7 @@ The DirectInput control panel works directly with DirectInput, which in turn wor
 
 ### The default analog device property sheet
 
-Hardware vendors who do not create their own control panel use the services of the default analog device property sheet supplied by Gcdef.dll. Any controller that does not have a **ConfigCLSID** key in the registry under its **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\MediaProperties\\PrivateProperties\\Joystick\\OEM\\**<em>CONTROLLER\_NAME</em> entry uses this default property sheet. This property sheet contains the following two pages:
+Hardware vendors who do not create their own control panel use the services of the default analog device property sheet supplied by Gcdef.dll. Any controller that does not have a **ConfigCLSID** key in the registry under its **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\MediaProperties\\PrivateProperties\\Joystick\\OEM\\**\<CONTROLLER\_NAME\> entry uses this default property sheet. This property sheet contains the following two pages:
 
 - **Test:** This page demonstrates that the device is responding properly. It returns a graphical representation of the registry settings that are associated with the device attributes and allows the user to view them.
 
