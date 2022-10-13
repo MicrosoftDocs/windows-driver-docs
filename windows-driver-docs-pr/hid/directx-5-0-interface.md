@@ -32,7 +32,7 @@ The joystick minidriver callbacks for the DirectX 5.0 and later interface consis
 
 The following table shows a joystick minidriver registration sequence:
 
-| | |
+| &nbsp; | &nbsp; |
 |--|--|
 | mov | eax, 0ffffffffh |
 | mov | ecx, offset32 RegData |
