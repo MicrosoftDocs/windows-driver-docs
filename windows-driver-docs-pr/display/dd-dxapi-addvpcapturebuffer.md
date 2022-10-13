@@ -18,7 +18,7 @@ A video capture driver passes DD\_DXAPI\_ADDVPCAPTUREBUFFER in the *dwFunctionNu
 
 ## Output Parameters
 
-- *lpvInBuffer*  
+- *lpvOutBuffer*  
     Pointer to a DWORD that contains the DirectDraw return value.
 
 ## Remarks
