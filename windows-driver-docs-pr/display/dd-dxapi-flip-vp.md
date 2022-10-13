@@ -31,9 +31,14 @@ This function identifier can be called at raised IRQL.
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Header | Ddkmapi.h (include Ddkmapi.h) |
+<table>
+<tbody>
+<tr class="odd">
+<td><p>Header</p></td>
+<td>Ddkmapi.h (include Ddkmapi.h)</td>
+</tr>
+</tbody>
+</table>
 
 ## See also
 

@@ -29,9 +29,14 @@ This function identifier can only be called at PASSIVE\_LEVEL.
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Header | Ddkmapi.h (include Ddkmapi.h) |
+<table>
+<tbody>
+<tr class="odd">
+<td><p>Header</p></td>
+<td>Ddkmapi.h (include Ddkmapi.h)</td>
+</tr>
+</tbody>
+</table>
 
 ## See also
 
