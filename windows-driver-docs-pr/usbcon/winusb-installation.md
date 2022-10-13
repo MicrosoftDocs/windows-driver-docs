@@ -81,7 +81,7 @@ DriverVer=09/04/2012,13.54.20.543
 [Standard.NTamd64]
 %DeviceName% =USB_Install, USB\VID_0547&PID_1002
 
-; ========== Class definition (for Windows 8 and ealier versions)===========
+; ========== Class definition (for Windows 8 and earlier versions)===========
 
 [ClassInstall32]
 AddReg = ClassInstall_AddReg
