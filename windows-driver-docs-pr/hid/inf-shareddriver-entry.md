@@ -4,30 +4,19 @@ description: INF SharedDriver Entry
 keywords:
 - INF files WDK non-HID keyboard/mouse
 - SharedDriver entry WDK non-HID keyboard/mouse
-ms.date: 04/20/2017
+ms.date: 10/11/2022
 ---
 
 # INF SharedDriver Entry
 
-
-
-
-
 **\[ControlFlags\]**
 
-<em>SharedDriver</em>**=**<em>install-section-name</em>***,***<em>warning-text-string</em>
-Before the keyboard or mouse class installer installs a PS/2 device, it checks for a *SharedDriver* entry in the [INF **ControlFlags** section](../install/inf-controlflags-section.md) for the device. If such an entry value exists, the class installer notifies the user by displaying the warning text string, and provides the user the option to cancel changing the PS/2 port driver.
+*SharedDriver* **=** *install-section-name* **,** *warning-text-string*
 
-### Entries and Values
+Before the keyboard or mouse class installer installs a PS/2 device, it checks for a *SharedDriver* entry in the [INF ControlFlags section](../install/inf-controlflags-section.md) for the device. If such an entry value exists, the class installer notifies the user by displaying the warning text string, and provides the user the option to cancel changing the PS/2 port driver.
 
-<a href="" id="shareddriver"></a>*SharedDriver*  
-Specifies that the device driver is shared by both a PS/2 keyboard and mouse device.
+## Entries and Values
 
-<a href="" id="install-section-name"></a>*install-section-name*  
-Specifies a device's *DDInstall* section.
-
-<a href="" id="warning-text-string"></a>*warning-text-string*  
-Specifies a string the class installer uses to warn a user before changing the PS/2 port driver.
-
- 
-
+- *SharedDriver*: Specifies that the device driver is shared by both a PS/2 keyboard and mouse device.
+- *install-section-name*: Specifies a device's *DDInstall* section.
+- *warning-text-string*: Specifies a string the class installer uses to warn a user before changing the PS/2 port driver.
