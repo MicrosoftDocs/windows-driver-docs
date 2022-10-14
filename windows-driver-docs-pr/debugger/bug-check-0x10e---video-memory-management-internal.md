@@ -2,7 +2,7 @@
 title: Bug Check 0x10E VIDEO_MEMORY_MANAGEMENT_INTERNAL
 description: The VIDEO_MEMORY_MANAGEMENT_INTERNAL bug check has a value of 0x0000010E. This indicates that the video memory manager has encountered a condition that it is unable to recover from.
 keywords: ["Bug Check 0x10E VIDEO_MEMORY_MANAGEMENT_INTERNAL", "VIDEO_MEMORY_MANAGEMENT_INTERNAL"]
-ms.date: 05/23/2017
+ms.date: 10/14/2022
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ The VIDEO\_MEMORY\_MANAGEMENT\_INTERNAL bug check has a value of 0x0000010E. Thi
 ## VIDEO\_MEMORY\_MANAGEMENT\_INTERNAL Parameters
 
 
-Parameter 1 is the only parameter of interest; this identifies the exact violation. Values for Parameter 1 that do not appear in this table must be individually examined.
+Parameter 1 describes the type of video memory error. Values for Parameter 1 that do not appear in this table must be individually examined.
 
 <table>
 <colgroup>
@@ -97,6 +97,21 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 <td align="left"><p>0xF</p></td>
 <td align="left"><p>A driver returned an invalid error code from <em>AcquireSwizzlingRange</em>.</p></td>
 </tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Parameter 1</th>
+<th align="left">Cause of Error</th>
+</tr>
+</thead>
+<tbody>
 <tr class="even">
 <td align="left"><p>0x10</p></td>
 <td align="left"><p>A driver returned an invalid error code from <em>ReleaseSwizzlingRange</em>.</p></td>
@@ -146,13 +161,218 @@ Parameter 1 is the only parameter of interest; this identifies the exact violati
 <td align="left"><p>An attempt was made to release an aperture range that is still in use.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>0x25</p></td>
-<td align="left"><p>The GPU attempted to write over an undefined area of the aperture.</p></td>
+<td align="left"><p>0x1C</p></td>
+<td align="left"><p>VidMm is trying to rotate an allocation back from the frame buffer but the VA isn't rotated where it was expected.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x1D</p></td>
+<td align="left"><p>VidMm is trying to use paging buffer that have been unmapped.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x1E</p></td>
+<td align="left"><p>VidMm is trying to do an operation from the wrong process context.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x1F</p></td>
+<td align="left"><p>VidMm is trying to mark an allocation with a lower fence than it is currently marked with.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Parameter 1</th>
+<th align="left">Cause of Error</th>
+</tr>
+</thead>
+<tbody>
+<tr class="even">
+<td align="left"><p>0x20</p></td>
+<td align="left"><p>VidMm is trying to manipulate an allocation is assumed was idle but isn't.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x21</p></td>
+<td align="left"><p>VidMm is trying to flush the paging buffer outside of preparation or unflushed data was found in the paging buffer at the start of a preparation.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x22</p></td>
+<td align="left"><p>VidMm is trying to rotate a VA to an invalid range.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x23</p></td>
+<td align="left"><p>The scheduler wake up a thread before the wait was completed.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x24</p></td>
+<td align="left"><p>An allocation is being destroyed which has outstanding references to its backing store... physical memory will be leaked.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x25</p></td>
+<td align="left"><p>The GPU attempted to write over an undefined area of the aperture.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x26</p></td>
+<td align="left"><p>A VIDMM_LOCAL_ALLOC was closed from a process other than its owner.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x27</p></td>
+<td align="left"><p>A VIDMM_ALLOC was not reprogrammed at the current split point.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x28</p></td>
+<td align="left"><p>An unexpected exception happened when referencing a global allocation.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x29</p></td>
+<td align="left"><p>An overflow or an underflow was detected when manipulating a VIDMM_ALLOC DMA reference count.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x2A</p></td>
+<td align="left"><p>VidMm is trying to free the last reference to the currently displaying allocation.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x2B</p></td>
+<td align="left"><p>VidMm is trying to free the an invalid Cpu Host Aperture page range.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x2C</p></td>
+<td align="left"><p>VidMm is trying to map a page range to the Cpu Host Aperture which was previously already mapped. Best case memory leak.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x2D</p></td>
+<td align="left"><p>Call to DdiMapCpuHostAperture failed, but was expected to succeed.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x2E</p></td>
+<td align="left"><p>Call to DdiUnmapCpuHostAperture failed, but was expected to succeed.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x2F</p></td>
+<td align="left"><p>Reported range size does not match the number of elements allocated for the array.</p></td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Parameter 1</th>
+<th align="left">Cause of Error</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>0x30</p></td>
+<td align="left"><p>An error occurred during a GPU virtual address operation.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x31</p></td>
+<td align="left"><p>The paging queue being deleted is still being processed by the VidMm worker thread.
+</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x32</p></td>
+<td align="left"><p>The paging queue being deleted still contains running packets.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x33</p></td>
+<td align="left"><p>The device is being destroyed but there are still allocations resident on it.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x34</p></td>
+<td align="left"><p>A heap allocation has received a state transition event incompatible with current state.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x35</p></td>
+<td align="left"><p>The paging request failed at default paging queue.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x36</p></td>
+<td align="left"><p>The paging request failed on a paging packet or device resume that was previously marked as unrecoverable, and was expected to succeed subsequent calls.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x37</p></td>
+<td align="left"><p>VidMm failed to lock pages of an allocation during TDR.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x38</p></td>
+<td align="left"><p>VidMm is freeing an allocation that still has paging packets referencing it.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x39</p></td>
+<td align="left"><p>VidMm is putting a device to the indefinite penalty box, but it has paging packets.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x3A</p></td>
+<td align="left"><p>VidMm worker thread is running a paging queue that became suspended.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x3B</p></td>
+<td align="left"><p>Memory is still rotated to the frame buffer during D3 transition.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x3C</p></td>
+<td align="left"><p>Memory is still allocated or mapped to the CPU host aperture. This indicates memory may still be rotated to the frame buffer during a D3 transition.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x3D</p></td>
+<td align="left"><p>An invalid segment group was specified during an operation.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x3E</p></td>
+<td align="left"><p>Failed to acquire the VIDMM_ALLOC rundown protection.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x3F</p></td>
+<td align="left"><p>Resuming the scheduler device during a move or defragment operation conflicts with the penalty box state. This implies we will be resuming the scheduler for a device whose memory is not accessible yet.</p></td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Parameter 1</th>
+<th align="left">Cause of Error</th>
+</tr>
+</thead>
+<tbody>
+<tr class="even">
+<td align="left"><p>0x40</p></td>
+<td align="left"><p>Attempting to start a preparation bracket while another operation is already in progress.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x41</p></td>
+<td align="left"><p>Deleting a VIDMM_CROSSADAPTER_ALLOC that has non-zero residency or adapter count.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x42</p></td>
+<td align="left"><p>Deleting a VIDMM_CROSSADAPTER_ALLOC that has a negative residency or adapter count.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>0x43</p></td>
+<td align="left"><p>While saving or restoring the reserved frame buffer content, we were unable to map at least one page of the section object to make forward progress.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>0x44</p></td>
+<td align="left"><p>Memory budget bookkeeping ended up in an underflow.</p></td>
+</tr>
+</tbody>
+</table>
+
 
 ## Cause
 
