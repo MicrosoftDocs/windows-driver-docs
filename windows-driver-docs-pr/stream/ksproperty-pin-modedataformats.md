@@ -10,7 +10,7 @@ api_location:
 - ks.h
 api_type:
 - HeaderDef
-ms.date: 04/12/2021
+ms.date: 10/14/2022
 ---
 
 # KSPROPERTY_PIN_MODEDATAFORMATS
@@ -42,14 +42,16 @@ As an example, a value for a pin factory that supports two formats would look li
 ```cpp
 {
     // Example Property Value Result, with 2 formats
+    // When computing the FormatSize make sure to align the size to ULONGLONG
+    // KSDATAFORMAT::Size is WDF_ALIGN_SIZE_UP(KsDataFormat->FormatSize, sizeof(ULONGLONG));
     // Size of the KSMULTIPLE_ITEM structure + Size of two ULONGLONG offset values + Size of first format + Size of second format
     sizeof(KSMULTIPLE_ITEM) + sizeof(ULONGLONG)*2 + (First KSDATAFORMAT::Size) + (Second KSDATAFORMAT::Size),
     // Number of formats being returned
     2,
     // Offset of the first format from the beginning of the Property Value
-    (sizeof(KSMULTIPLE_ITEM) + 2 * sizeof(ULONGLONG)),
+    2 * sizeof(ULONGLONG),
     // Offset of the second format from the beginning of the Property Value
-    (sizeof(KSMULTIPLE_ITEM) + 2 * sizeof(ULONGLONG) + (First KSDATAFORMAT::Size),
+    2 * sizeof(ULONGLONG) + (First KSDATAFORMAT::Size),
     // First format structure
     {(First KSDATAFORMAT)},
     // Second format structure
