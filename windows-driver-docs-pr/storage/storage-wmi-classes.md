@@ -10,7 +10,7 @@ This section describes the Storage Management Initiative Specification (SMI-S) r
 
 Storage Management Providers, SMI-S requirements, and system-supplied WMI classes are in the following categories:
 
-- [Storage Management Providers](/previous-versions/windows/hardware/drivers/dn342891(v=vs.85))
+- [Storage Management Providers](storage-management-providers.md)
 
 - [SMI-S Requirements](/previous-versions/windows/desktop/smi-s/dn265461(v=vs.85))
 

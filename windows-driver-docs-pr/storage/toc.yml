@@ -610,6 +610,28 @@
     items: 
     - name: "Overview"
       href: storage-wmi-classes.md
+    - name: "Storage Management Providers"
+# Auto-expanded node
+      items: 
+      - name: "Overview"
+        href: storage-management-providers.md
+      - name: "Object Model"
+        href: object-model.md
+      - name: "SMP Development"
+        href: smp-development.md
+      - name: "SMP Behavior and Interaction"
+        href: smp-behavior-interaction.md
+      - name: "SMP Example MOFs"
+        href: smp-example-mofs.md
+      - name: "Windows Storage Management Provider API"
+# Auto-expanded node
+        items: 
+        - name: "Overview"
+          href: /previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal
+        - name: "Storage Management API Classes"
+          href: /previous-versions/windows/desktop/stormgmt/storage-management-api-classes
+        - name: "Storage Management API Common Return Codes"
+          href: /previous-versions/windows/desktop/stormgmt/storage-management-api-common-return-codes
     - name: "HBA WMI Classes"
 # Auto-expanded node
       items: 
@@ -1197,10 +1219,33 @@
           href: createvirtualport.md
         - name: "RemoveVirtualPort"
           href: removevirtualport.md
+      - name: "MSFC_FibrePortNPIVMethodsEx WMI Class"
+# Auto-expanded node
+        items: 
+        - name: "Overview"
+          href: msfc-fibreportnpivmethodsex-wmi-class.md
+        - name: "CreateVirtualPortEx"
+          href: createvirtualportex.md
+        - name: "CreateVirtualPortExUsingDHCHAP"
+          href: createvirtualportexusingdhchap.md
+        - name: "RemoveChapForPhysicalPort"
+          href: removechapforphysicalport.md
+        - name: "RemoveVirtualPortEx"
+          href: removevirtualportex.md
+        - name: "RescanVirtualPort"
+          href: rescanvirtualport.md
+        - name: "SetChapForPhysicalPort"
+          href: setchapforphysicalport.md
+      - name: "MSFC_NPIVCapabilities WMI Class"
+        href: msfc-npivcapabilities-wmi-class.md
       - name: "MSFC_NPIVLUNMappingInformation WMI Class"
         href: msfc-npivlunmappinginformation-wmi-class.md
+      - name: "MSFC_NPIVLUNMappingInformationEx WMI Class"
+        href: msfc-npivlunmappinginformationex-wmi-class.md
       - name: "MSFC_VirtualFibrePortAttributes WMI Class"
         href: msfc-virtualfibreportattributes-wmi-class.md
+      - name: "NPIV Status Codes"
+        href: npiv-status-codes.md
   - name: "Storage Class Memory"
 # Auto-expanded node
     items: 
