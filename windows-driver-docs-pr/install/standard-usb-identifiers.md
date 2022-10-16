@@ -26,7 +26,7 @@ Where:
 
 - *r(4)* is the revision code.
 
-The hub driver extracts the vendor and product codes from the *idVendor*, *idProduct* and *bcdDevice* fields of the [device descriptor](../ddi/usbspec/ns-usbspec-_usb_device_descriptor), respectively. These are 4-digit hexadecimal numbers.
+The hub driver extracts the vendor and product codes from the *idVendor*, *idProduct*, and *bcdDevice* fields of the [device descriptor](../ddi/usbspec/ns-usbspec-_usb_device_descriptor), respectively. These are 4-digit hexadecimal numbers.
 
 An INF model section can also specify the following hardware ID:
 
@@ -42,7 +42,7 @@ USB\\CLASS_c(2)
 
 Where:
 
-- *c(2)* is the device class code taken from the device descriptor.
+- *c(2)* is the device class code taken from the [device descriptor](../ddi/usbspec/ns-usbspec-_usb_device_descriptor).
 
 - *s(2)* is the device subclass code.
 
@@ -60,11 +60,11 @@ USB\\VID_v(4)&PID_d(4)&MI_z(2)
 
 Where:
 
-- *v(4)* is the 4-digit vendor code that the USB committee assigns to the vendor.
+- *v(4)* is the vendor code that the [USB committee assigns to the vendor](https://www.usb.org/developers).
 
-- *d(4)* is the 4-digit product code that the vendor assigns to the device.
+- *d(4)* is the product code that the vendor assigns to the device.
 
-- *z(2)* is the interface number that is extracted from the *bInterfaceNumber* field of the corresponding interface descriptor.
+- *z(2)* is the interface number that is extracted from the *bInterfaceNumber* field of the corresponding [interface descriptor](../ddi/usbspec/ns-usbspec-_usb_interface_descriptor).
 
 An INF model section can also specify the following compatible IDs:
 
@@ -84,4 +84,4 @@ Where:
 
 - *p(2)* is the protocol code.
 
-The device class code, subclass code, and protocol code are determined by the *bInterfaceClass, bInterfaceSubClass, and bInterfaceProtocol* fields of the [interface descriptor](../ddi/usbspec/ns-usbspec-_usb_interface_descriptor), respectively. These are 2-digit hexadecimal numbers.
+The device class code, subclass code, and protocol code are determined by the *bInterfaceClass*, *bInterfaceSubClass*, and *bInterfaceProtocol* fields of the [interface descriptor](../ddi/usbspec/ns-usbspec-_usb_interface_descriptor), respectively. These are 2-digit hexadecimal numbers.
