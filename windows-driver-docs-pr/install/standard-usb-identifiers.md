@@ -48,7 +48,7 @@ Where:
 
 - *p(2)* is the protocol code.
 
-The device class code, subclass code, and protocol code are determined by the *bDeviceClass, bDeviceSubClass,* and *bDeviceProtocol* fields of the [device descriptor](../ddi/usbspec/ns-usbspec-_usb_device_descriptor), respectively. These are 2-digit hexadecimal numbers.
+The device class code, subclass code, and protocol code are determined by the *bDeviceClass*, *bDeviceSubClass*, and *bDeviceProtocol* fields of the [device descriptor](../ddi/usbspec/ns-usbspec-_usb_device_descriptor), respectively. These are 2-digit hexadecimal numbers.
 
 ## Multiple-Interface USB Devices
 
