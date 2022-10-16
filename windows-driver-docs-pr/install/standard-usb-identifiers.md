@@ -14,7 +14,7 @@ The set of identifiers generated for USB devices depends on whether the device i
 
 ## Single-Interface USB Devices
 
-When a new USB device is plugged in, the system-supplied USB hub driver composes the following device ID by using information extracted from the device's [device descriptor](../ddi/usbspec/ns-usbspec-_usb_device_descriptor.md):
+When a new USB device is plugged in, the system-supplied USB hub driver composes the following device ID by using information extracted from the device's [device descriptor](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_device_descriptor):
 
 USB\\VID_v(4)&PID_d(4)&REV_r(4)
 
@@ -26,7 +26,7 @@ Where:
 
 - *r(4)* is the revision code.
 
-The hub driver extracts the vendor and product codes from the *idVendor*, *idProduct*, and *bcdDevice* fields of the [device descriptor](../ddi/usbspec/ns-usbspec-_usb_device_descriptor.md), respectively. These are 4-digit hexadecimal numbers.
+The hub driver extracts the vendor and product codes from the *idVendor*, *idProduct*, and *bcdDevice* fields of the [device descriptor](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_device_descriptor), respectively. These are 4-digit hexadecimal numbers.
 
 An INF model section can also specify the following hardware ID:
 
@@ -42,13 +42,13 @@ USB\\CLASS_c(2)
 
 Where:
 
-- *c(2)* is the device class code taken from the [device descriptor](../ddi/usbspec/ns-usbspec-_usb_device_descriptor.md).
+- *c(2)* is the device class code taken from the [device descriptor](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_device_descriptor).
 
 - *s(2)* is the device subclass code.
 
 - *p(2)* is the protocol code.
 
-The device class code, subclass code, and protocol code are determined by the *bDeviceClass*, *bDeviceSubClass*, and *bDeviceProtocol* fields of the [device descriptor](../ddi/usbspec/ns-usbspec-_usb_device_descriptor.md), respectively. These are 2-digit hexadecimal numbers.
+The device class code, subclass code, and protocol code are determined by the *bDeviceClass*, *bDeviceSubClass*, and *bDeviceProtocol* fields of the [device descriptor](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_device_descriptor), respectively. These are 2-digit hexadecimal numbers.
 
 ## Multiple-Interface USB Devices
 
@@ -64,7 +64,7 @@ Where:
 
 - *d(4)* is the product code that the vendor assigns to the device.
 
-- *z(2)* is the interface number that is extracted from the *bInterfaceNumber* field of the corresponding [interface descriptor](../ddi/usbspec/ns-usbspec-_usb_interface_descriptor.md).
+- *z(2)* is the interface number that is extracted from the *bInterfaceNumber* field of the corresponding [interface descriptor](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_interface_descriptor).
 
 An INF model section can also specify the following compatible IDs:
 
@@ -84,4 +84,4 @@ Where:
 
 - *p(2)* is the protocol code.
 
-The device class code, subclass code, and protocol code are determined by the *bInterfaceClass*, *bInterfaceSubClass*, and *bInterfaceProtocol* fields of the [interface descriptor](../ddi/usbspec/ns-usbspec-_usb_interface_descriptor.md), respectively. These are 2-digit hexadecimal numbers.
+The device class code, subclass code, and protocol code are determined by the *bInterfaceClass*, *bInterfaceSubClass*, and *bInterfaceProtocol* fields of the [interface descriptor](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_interface_descriptor), respectively. These are 2-digit hexadecimal numbers.
