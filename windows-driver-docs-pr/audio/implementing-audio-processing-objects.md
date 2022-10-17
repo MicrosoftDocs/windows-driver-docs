@@ -1,7 +1,7 @@
 ---
 title: Implementing Audio Processing Objects
 description: This topic describes how to implement an audio processing object (APO). For general information about APOs, see Audio Processing Object Architecture.
-ms.date: 10/12/2022
+ms.date: 10/17/2022
 ---
 
 # Implementing Audio Processing Objects
@@ -438,9 +438,9 @@ HKR,"FX\\0",%PKEY_FX_EndpointEffectClsid%,,%FX_DISCOVER_EFFECTS_APO_CLSID%
 
 ### Sample APO Effect Registration
 
-This sample shows the \[Apo_AddReg\] section from the Sysvad ComponentizedApoSample.inx. This section registers the swap stream GUID with COM and registers the Swap Stream APO effect. The \[Apo_CopyFiles\] section has a DestinationDirs of 13, which copies swapapo.dll into the Driverstore. For more information, see "Run From Driverstore" in [Driver Package Isolation](/drivers/develop/driver-isolation).
+This sample shows the \[Apo_AddReg\] section from the Sysvad ComponentizedApoSample.inx. This section registers the swap stream GUID with COM and registers the Swap Stream APO effect. The \[Apo_CopyFiles\] section has a DestinationDirs of 13, which copies swapapo.dll into the Driverstore. For more information, see "Run From Driverstore" in [Driver Package Isolation](../develop/driver-isolation.md).
 
-For general information about INF files, see [Overview of INF Files](\drivers\install\overview-of-inf-files.md).
+For general information about INF files, see [Overview of INF Files](../install/overview-of-inf-files.md).
 
 ```inf
 ; ComponentizedApoSample.inx

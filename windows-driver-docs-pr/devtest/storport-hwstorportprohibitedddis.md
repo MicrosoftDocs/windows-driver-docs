@@ -182,7 +182,7 @@ Use the following steps to run an analysis of your code:
 [**KeAcquireGuardedMutex**](/previous-versions/windows/hardware/drivers/ff551892(v=vs.85))  
 [**KeAcquireGuardedMutexUnsafe**](/previous-versions/windows/hardware/drivers/ff551894(v=vs.85))  
 [**KeAcquireInStackQueuedSpinLock**](/previous-versions/windows/hardware/drivers/ff551899(v=vs.85))  
-[**KeAcquireInStackQueuedSpinLockAtDpcLevel**](/previous-versions/windows/hardware/drivers/ff551908(v=vs.85))  
+[**KeAcquireInStackQueuedSpinLockAtDpcLevel**](/previous-versions/windows/hardware/device-stage/drivers/ff551908(v=vs.85))  
 [**KeAcquireInStackQueuedSpinLockForDpc**](/previous-versions/windows/hardware/drivers/ff551912(v=vs.85))  
 [**KeAcquireInterruptSpinLock**](/previous-versions/windows/hardware/drivers/ff551914(v=vs.85))  
 [**KeAcquireSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock)  
