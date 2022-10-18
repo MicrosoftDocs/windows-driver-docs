@@ -7,7 +7,7 @@ keywords:
 - buses WDK , SD
 - Secure Digital WDK buses
 - memory cards WDK SD bus
-ms.date: 04/20/2017
+ms.date: 10/17/2022
 ms.topic: article
 ---
 
@@ -20,6 +20,16 @@ ms.topic: article
 [Handling SD Card Interrupts](./handling-sd-card-interrupts.md)
 
 [SD Card Requests](./sd-card-requests.md)
+
+[SD Card I/O Requests](./sd-card-io-requests.md)
+
+[Secure Digital Requests That Use Direct I/O](./secure-digital-requests-that-use-direct-io.md)
+
+[Secure Digital Requests That Use Extended I/O](./secure-digital-requests-that-use-extended-io.md)
+
+[Managing SD Cards in User-Mode Applications](./managing-sd-cards-in-user-mode-applications.md)
+
+[Restrictions on SD Card Drivers](./restrictions-on-sd-card-drivers.md)
 
 ## SD Card Hardware Identifiers
 
