@@ -8,3 +8,13 @@
   href: handling-sd-card-interrupts.md
 - name: "SD Card Requests"
   href: sd-card-requests.md
+- name: "SD Card I/O Requests"
+  href: sd-card-io-requests.md
+- name: "Secure Digital Requests That Use Direct I/O"
+  href: secure-digital-requests-that-use-direct-io.md
+- name: "Secure Digital Requests That Use Extended I/O"
+  href: secure-digital-requests-that-use-extended-io.md
+- name: "Managing SD Cards in User-Mode Applications"
+  href: managing-sd-cards-in-user-mode-applications.md
+- name: "Restrictions on SD Card Drivers"
+  href: restrictions-on-sd-card-drivers.md
