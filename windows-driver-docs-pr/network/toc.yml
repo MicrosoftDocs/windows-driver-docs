@@ -4384,6 +4384,36 @@
     href: ip-helper.md
   - name: "Including Header Files for IP Helper"
     href: including-header-files-for-ip-helper.md
+  - name: "Interface Conversion Functions"
+    items: 
+    - name: "ConvertInterfaceAliasToLuid function"
+      href: convertinterfacealiastoluid.md
+    - name: "ConvertInterfaceGuidToLuid function"
+      href: convertinterfaceguidtoluid.md
+    - name: "ConvertInterfaceIndexToLuid function"
+      href: convertinterfaceindextoluid.md
+    - name: "ConvertInterfaceLuidToAlias function"
+      href: convertinterfaceluidtoalias.md
+    - name: "ConvertInterfaceLuidToGuid function"
+      href: convertinterfaceluidtoguid.md
+    - name: "ConvertInterfaceLuidToIndex function"
+      href: convertinterfaceluidtoindex.md
+    - name: "ConvertInterfaceLuidToNameA function"
+      href: convertinterfaceluidtonamea.md
+    - name: "ConvertInterfaceLuidToNameW function"
+      href: convertinterfaceluidtonamew.md
+    - name: "ConvertInterfaceNameToLuidA function"
+      href: convertinterfacenametoluida.md
+    - name: "ConvertInterfaceNameToLuidW function"
+      href: convertinterfacenametoluidw.md
+    - name: "ConvertIpv4MaskToLength function"
+      href: convertipv4masktolength.md
+    - name: "ConvertLengthtoIpv4Mask function"
+      href: convertlengthtoipv4mask.md
+    - name: "if_indextoname function"
+      href: if-indextoname.md
+    - name: "if_nametoindex function"
+      href: if-nametoindex.md
 - name: "Windows Filtering Platform Callout Drivers"
   items: 
   - name: "Roadmap for Developing WFP Callout Drivers"
