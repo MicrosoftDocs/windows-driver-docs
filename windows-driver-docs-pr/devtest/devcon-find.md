@@ -20,6 +20,14 @@ Finds all devices that are currently attached to the computer. Displays the devi
     devcon find {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
+## Recommended Replacement
+
+```
+pnputil /enum-devices
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## <span id="ddk_devcon_find_tools"></span><span id="DDK_DEVCON_FIND_TOOLS"></span>Parameters
 
 <span id="______________"></span> **\***

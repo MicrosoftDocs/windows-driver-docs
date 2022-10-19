@@ -20,6 +20,14 @@ Displays the status (running, stopped, or disabled) of the driver for devices on
     devcon status {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
+## Recommended Replacement
+
+```
+pnputil /enum-devices
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## <span id="ddk_devcon_status_tools"></span><span id="DDK_DEVCON_STATUS_TOOLS"></span>Parameters
 
 <span id="______________"></span> **\***

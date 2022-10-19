@@ -21,6 +21,15 @@ Uses Windows Plug and Play features to update the device list for the computer.
     devcon [/r] rescan 
 ```
 
+## Recommended Replacement
+
+```
+pnputil /scan-devices
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
+
 ## <span id="ddk_devcon_rescan_tools"></span><span id="DDK_DEVCON_RESCAN_TOOLS"></span>Parameters
 
 <span id="________r______"></span><span id="________R______"></span> **/r**   

@@ -21,6 +21,14 @@ Adds a third-party (OEM) driver package to the driver store on the local compute
     devcon dp_add inf
 ```
 
+## Recommended Replacement
+
+```
+pnputil /add-driver inf
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
 
 

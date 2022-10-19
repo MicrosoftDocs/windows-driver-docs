@@ -21,6 +21,14 @@ Forcibly replaces the current device drivers for a specified device with drivers
     devcon [/r] update INFfile HardwareID 
 ```
 
+## Recommended Replacement
+
+```
+pnputil /add-driver INFfile /install
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## <span id="ddk_devcon_update_tools"></span><span id="DDK_DEVCON_UPDATE_TOOLS"></span>Parameters
 
 

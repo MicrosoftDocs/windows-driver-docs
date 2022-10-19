@@ -20,6 +20,14 @@ Stops and restarts the specified devices.
     devcon [/r] restart {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
+## Recommended Replacement
+
+```
+pnputil /restart-device ID
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## <span id="ddk_devcon_restart_tools"></span><span id="DDK_DEVCON_RESTART_TOOLS"></span>Parameters
 
 <span id="________r______"></span><span id="________R______"></span> **/r**

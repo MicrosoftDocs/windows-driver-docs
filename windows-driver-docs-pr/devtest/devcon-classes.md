@@ -21,6 +21,14 @@ Lists all [device setup classes](../install/overview-of-device-setup-classes.md)
     devcon classes 
 ```
 
+## Recommended Replacement
+
+```
+pnputil /enum-classes
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## <span id="ddk_devcon_classes_tools"></span><span id="DDK_DEVCON_CLASSES_TOOLS"></span>Parameters
 
 

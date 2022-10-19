@@ -20,6 +20,14 @@ Deletes a third-party (OEM) driver package from the driver store on the local co
     devcon [-f] dp_delete inf
 ```
 
+## Recommended Replacement
+
+```
+pnputil /delete-driver inf
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## Parameters
 
 **-f**

@@ -24,6 +24,14 @@ Valid only on the local computer.
     devcon [/r] remove {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
+## Recommended Replacement
+
+```
+pnputil /remove-device ID
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## <span id="ddk_devcon_remove_tools"></span><span id="DDK_DEVCON_REMOVE_TOOLS"></span>Parameters
 
 <span id="________r______"></span><span id="________R______"></span> **/r**

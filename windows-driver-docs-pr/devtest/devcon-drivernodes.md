@@ -20,6 +20,14 @@ Lists all [driver packages](../install/components-of-a-driver-package.md) that a
     devcon drivernodes {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
+## Recommended Replacement
+
+```
+pnputil /enum-devices /drivers
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## <span id="ddk_devcon_drivernodes_tools"></span><span id="DDK_DEVCON_DRIVERNODES_TOOLS"></span>Parameters
 
 <span id="______________"></span> **\***

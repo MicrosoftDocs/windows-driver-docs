@@ -20,6 +20,14 @@ Finds all devices on the computer, including devices that were once attached to 
     devcon findall {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
+## Recommended Replacement
+
+```
+pnputil /enum-devices
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## <span id="ddk_devcon_findall_tools"></span><span id="DDK_DEVCON_FINDALL_TOOLS"></span>Parameters
 
 <span id="______________"></span> **\***

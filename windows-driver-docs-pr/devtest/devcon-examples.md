@@ -17,7 +17,7 @@ ms.date: 01/26/2022
 # Device Console (DevCon.exe) examples
 
 > [!IMPORTANT]
-> PnPUtil ships with every release of Windows and makes use of the most reliable and secure APIs available and it's use is recommended. For more information on using PnPutil instead of devcon, see [PnPUtil](pnputil.md).
+> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available and it's use is recommended. For more information on using PnPutil instead of devcon, see [Replacing DevCon](devcon-migration.md).
 
 ## Example catagories
 

@@ -20,6 +20,14 @@ Displays the expected driver stack for the specified devices, and the GUID and t
     devcon stack {* | ID [ID ...] | =class [ID [ID...]]}
 ```
 
+## Recommended Replacement
+
+```
+pnputil /enum-devices /stack
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## <span id="ddk_devcon_stack_tools"></span><span id="DDK_DEVCON_STACK_TOOLS"></span>Parameters
 
 <span id="______________"></span> **\***

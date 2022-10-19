@@ -21,6 +21,14 @@ Stops and then starts the operating system. Valid only on the local computer.
     devcon reboot 
 ```
 
+## Recommended Replacement
+
+```
+shutdown /r /t 0
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## <span id="ddk_devcon_reboot_tools"></span><span id="DDK_DEVCON_REBOOT_TOOLS"></span>
 
 

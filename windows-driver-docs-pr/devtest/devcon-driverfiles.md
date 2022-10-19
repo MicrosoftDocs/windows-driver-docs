@@ -20,6 +20,14 @@ Displays the full path and file name of installed INF files and device driver fi
     devcon driverfiles {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
+## Recommended Replacement
+
+```
+pnputil /enum-drivers /files
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## <span id="ddk_devcon_driverfiles_tools"></span><span id="DDK_DEVCON_DRIVERFILES_TOOLS"></span>Parameters
 
 <span id="______________"></span> **\***

@@ -20,6 +20,14 @@ Displays the hardware IDs, compatible IDs, and device instance IDs of the specif
     devcon hwids {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
+## Recommended Replacement
+
+```
+pnputil /enum-devices /deviceids
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## <span id="ddk_devcon_hwids_tools"></span><span id="DDK_DEVCON_HWIDS_TOOLS"></span>Parameters
 
 <span id="______________"></span> **\***

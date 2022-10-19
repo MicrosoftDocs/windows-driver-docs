@@ -21,7 +21,16 @@ Creates a new, root-enumerated devnode for a non-Plug and Play device and instal
 ```
 
 > [!IMPORTANT]
-> PnPUtil ships with every release of Windows and makes use of the most reliable and secure APIs available and it's use is recommended. For more information on using PnPutil instead of devcon, see [PnPUtil](pnputil.md).
+> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available and it's use is recommended. For more information on using PnPutil instead of devcon, see [Replacing DevCon](devcon-migration.md).
+
+## Recommended Replacement
+
+```
+devgen /add /hardwareid HardwareID
+pnputil /add-driver INFfile /install
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
 
 ## Parameters
 

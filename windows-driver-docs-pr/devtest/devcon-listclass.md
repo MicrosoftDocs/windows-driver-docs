@@ -21,6 +21,14 @@ Lists all devices in the specified device setup classes.
     devcon listclass class [class...] 
 ```
 
+## Recommended Replacement
+
+```
+pnputil /enum-devices /class <name or GUID>
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## <span id="ddk_devcon_listclass_tools"></span><span id="DDK_DEVCON_LISTCLASS_TOOLS"></span>Parameters
 
 <span id="_______class______"></span><span id="_______CLASS______"></span> *class*   

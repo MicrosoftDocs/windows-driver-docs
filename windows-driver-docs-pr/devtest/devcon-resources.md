@@ -20,6 +20,15 @@ Lists the resources allocated to the specified devices. Resources are assignable
     devcon resources {* | ID [ID ...] | =class [ID [ID...]]}
 ```
 
+## Recommended Replacement
+
+```
+pnputil /enum-devices /resources
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
+
 ## <span id="ddk_devcon_resources_tools"></span><span id="DDK_DEVCON_RESOURCES_TOOLS"></span>Parameters
 
 <span id="______________"></span> **\***

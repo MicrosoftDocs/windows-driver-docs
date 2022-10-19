@@ -22,6 +22,14 @@ To *enable* a device means that the device driver is loaded into memory and the 
     devcon [/r] enable {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
+## Recommended Replacement
+
+```
+pnputil /enable-device ID
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## <span id="ddk_devcon_enable_tools"></span><span id="DDK_DEVCON_ENABLE_TOOLS"></span>Parameters
 
 <span id="________r______"></span><span id="________R______"></span> **/r**

@@ -22,6 +22,14 @@ To *disable* a device means that the device remains physically connected to the 
     devcon [/r] disable {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
 
+## Recommended Replacement
+
+```
+pnputil /disable-device
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## <span id="ddk_devcon_disable_tools"></span><span id="DDK_DEVCON_DISABLE_TOOLS"></span>Parameters
 
 <span id="________r______"></span><span id="________R______"></span> **/r**

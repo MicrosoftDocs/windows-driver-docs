@@ -20,6 +20,16 @@ Adds, deletes, and changes the order of hardware IDs of root-enumerated devices.
     devcon sethwid {* | ID [ID ...] | =class [ID [ID ...]]} := [ = | + | - | ! ]HardwareIDs ...
 ```
 
+## Recommended Replacement
+
+```
+devgen /add /hardwareid ID
+```
+
+note: this command creates a new test device with the specified ID.
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## <span id="ddk_devcon_sethwid_tools"></span><span id="DDK_DEVCON_SETHWID_TOOLS"></span>Parameters
 
 <span id="______________"></span>  `*` 
