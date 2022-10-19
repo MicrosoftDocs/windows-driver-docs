@@ -8,6 +8,7 @@ keywords:
 - Agility SDK Preview , enhanced barriers
 ms.date: 10/05/2022
 ms.localizationpriority: medium
+prerelease: true
 ---
 
 # D3D12 enhanced barriers
