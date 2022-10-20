@@ -26,7 +26,7 @@ To replace a pattern found in the middle of an indicated segment (for example, *
 
 5.  The callout's *classifyFn* function is called again with *m* bytes.
 
-6.  The callout returns **FWP\_ACTION\_BLOCK** with **countBytesEnforced** set to *m*.
+6.  The callout returns **FWP\_ACTION\_PERMIT** with **countBytesEnforced** set to *m*.
 
 If the indicated data is insufficient for the callout to make an inspection decision, it can set the **streamAction** member of the [**FWPS\_STREAM\_CALLOUT\_IO\_PACKET0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_stream_callout_io_packet0_) structure to **FWPS\_STREAM\_ACTION\_NEED\_MORE\_DATA** and set the **countBytesRequired** member to the minimal amount WFP should accumulate before the data is indicated again. When **streamAction** is set, the callout should return **FWP\_ACTION\_NONE** from the *classifyFn* function.
 
