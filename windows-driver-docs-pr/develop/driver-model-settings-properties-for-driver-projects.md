@@ -1,7 +1,7 @@
 ---
 title: Driver Model Settings Properties for Driver Projects
 description: Sets the basic properties for a kernel-mode or user-mode driver, including the WDF library version and preprocessor definitions.
-ms.date: 04/20/2017
+ms.date: 10/21/2022
 ---
 
 # Driver Model Settings Properties for Driver Projects
@@ -35,7 +35,7 @@ For more information, see [Framework Library Versioning](../wdf/framework-librar
 When the type of driver is KMDF, this option specifies the minor version of KMDF that will be used when compiling your driver.
 
 For more information, see [Framework Library Versioning](../wdf/framework-library-versioning.md). If you do not specify **KMDF Version Minor (Target Version)**, Visual Studio uses the following defaults:
-* Windows 10: 1.15
+* Windows 10 / Windows 11: 1.15
 * Windows 8 / Windows 8.1: 1.11
 * Windows 7: 1.9
 
@@ -51,7 +51,7 @@ When you have a UMDF driver, this option specifies the major version of UMDF tha
 When you have a UMDF driver, this option specifies the minor version of UMDF that will be used when compiling your driver. If you do not specify **UMDF Version Minor (Target Version)**, Visual Studio uses the following defaults:
 
 For major version = 2:
-* Windows 10: 2.15
+* Windows 10 / Windows 11: 2.15
 * Others: 2.0
 
 For major version = 1:
