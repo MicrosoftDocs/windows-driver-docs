@@ -1,7 +1,7 @@
 ---
 title: BCDEdit /debug
 description: The /debug boot option enables or disables kernel debugging of the Windows operating system associated with the specified boot entry or the current boot entry.
-ms.date: 04/22/2019
+ms.date: 10/21/2022
 keywords: ["BCDEdit /debug Driver Development Tools"]
 topic_type:
 - apiref
@@ -15,6 +15,10 @@ api_type:
 
 
 The **/debug** boot option enables or disables kernel debugging of the Windows operating system associated with the specified boot entry or the current boot entry.
+
+
+> [!CAUTION]
+> Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using the BCDEdit command could render your computer inoperable. As an alternative, use the Startup settings in Windows.
 
 > [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
@@ -51,6 +55,12 @@ The following example enables kernel debugging of the default boot entry.
 
 ```console
 bcdedit /debug on 
+```
+
+To check the current debugging parameter values, use the [BCDEdit /dbgsettings](bcdedit--dbgsettings.md) command as shown here.
+
+```console
+bcdedit /dbgsettings
 ```
 
 For information about Windows debugging tools, see [Windows Debugging](../debugger/index.md) and [Setting Up KDNET Network Kernel Debugging Automatically](../debugger/setting-up-a-network-debugging-connection-automatically.md)

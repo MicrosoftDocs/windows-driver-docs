@@ -12,7 +12,7 @@ keywords:
 - 1394 connection WDK boot parameters
 - USB 2.0 debugging connection WDK boot parameters
 - null-modem cable WDK boot parameters
-ms.date: 09/21/2020
+ms.date: 10/21/2022
 ---
 
 # Boot Parameters to Enable Debugging
@@ -27,6 +27,9 @@ For information on manual setup of a network connection, see [Setting Up Kernel-
 
 >[!Note]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
+
+> [!CAUTION]
+> Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using the BCDEdit command could render your computer inoperable. As an alternative, use the Startup settings to change boot settings.
 
 You can use the **bcdedit** command to view the current debugger boot entries and to change their settings. For more details, see [**BCDEdit /debug**](./bcdedit--debug.md) and [**BCDEdit /dbgsettings**](./bcdedit--dbgsettings.md).
 

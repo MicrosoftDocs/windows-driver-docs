@@ -113,8 +113,8 @@ The useful information in the **!thread** display is explained in the following 
 <td align="left"><p>The hexadecimal number after the word <em>Teb</em> is the address of the thread environment block (TEB).</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><strong>System Service Dispatch Table</strong></p></td>
-<td align="left"><p>The hexadecimal number after the word <em>Win32Thread</em> is the address of the system service dispatch table.</p></td>
+<td align="left"><p><strong>Win32Thread</strong></p></td>
+<td align="left"><p>The hexadecimal number after the word <em>Win32Thread</em> is the address of the Win32Thread.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Thread State</strong></p></td>

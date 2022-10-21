@@ -2,7 +2,7 @@
 title: x86 Architecture
 description: x86 Architecture
 keywords: ["x86 processor, architecture", "registers, on an x86 processor", "x86 processor, registers", "x86 processor, calling conventions", "x86 processor, data types"]
-ms.date: 03/18/2022
+ms.date: 10/21/2022
 ---
 
 # x86 Architecture
@@ -228,7 +228,7 @@ The following table lists the x86 flags:
 | **sf**    | Sign Flag            | 0  1  | **plng**    | Positive (or zero) -  Negative            |
 | **zf**    | Zero Flag            | 0  1  | **nzzr**    | Nonzero -  Zero                           |
 | **af**    | Auxiliary Carry Flag | 0  1  | **naac**    | No auxiliary carry - Auxiliary carry      |
-| **pf**    | Parity Flag          | 0  1  | **pepo**    | Parity even - Parity odd                  |
+| **pf**    | Parity Flag          | 0  1  | **pepo**    | Parity odd - Parity even                  |
 | **cf**    | Carry Flag           | 0 1   | **nccy**    | No carry -  Carry                         |
 | **tf**    | Trap Flag            |       |             |If **tf** equals 1, the processor will raise a STATUS\_SINGLE\_STEP exception after the execution of one instruction. This flag is used by a debugger to implement single-step tracing. It should not be used by other applications. |
 | **iopl**  | I/O Privilege Level  |       |             |I/O Privilege Level This is a two-bit integer, with values between zero and 3. It is used by the operating system to control access to hardware. It should not be used by applications. |
