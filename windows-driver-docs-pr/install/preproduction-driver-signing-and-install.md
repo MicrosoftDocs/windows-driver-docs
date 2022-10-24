@@ -31,7 +31,7 @@ Once your driver is pre-production signed, you're ready to provision a test comp
 
 The provisioning tools and payload are provided starting in Windows 11, version 22H2.
 
-Use of the EnableUefiSbTest tool is strongly recommended. Alternatively, you can manually provision the Microsoft Test Root key from the HLK Secure Boot Manual Tests section (`certs/db/db_MSFTtestSigningRoot.cer`). The Microsoft test key must be included in the Secure Boot database (DB) and the Secure Boot Configuration Policy (SBCP) to enable trust for the pre-production WHQL/WHCP driver signature.
+Use of the EnableUefiSbTest tool is strongly recommended. Alternatively, you can manually provision the Microsoft Test Root key from the HLK Secure Boot Manual Tests section (`UefiSecureBootManualTests.zip\ManualTests\certs\test\db_MSFTtestSigningRoot.cer`). The Microsoft test key must be included in the Secure Boot database (DB) and the Secure Boot Configuration Policy (SBCP) to enable trust for the pre-production WHQL/WHCP driver signature.
 
 > [!NOTE]
 > When provisioning any of the Secure Boot databases, never production sign a payload with the Microsoft test keys inside.
