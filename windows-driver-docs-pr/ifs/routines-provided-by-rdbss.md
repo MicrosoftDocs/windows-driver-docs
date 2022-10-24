@@ -42,7 +42,7 @@ The following routines are exported by RDBSS.
 <p>This routine is only available on Windows Server 2003 Service Pack 1 (SP1) and later.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="/windows-hardware/drivers/ifs/rxassert" data-raw-source="[&lt;strong&gt;RxAssert&lt;/strong&gt;](./rxassert.md)"><strong>RxAssert</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ifs/rxassert" data-raw-source="[&lt;strong&gt;RxAssert&lt;/strong&gt;](https://learn.microsoft.com/previous-versions/windows/hardware/rdbss/rxassert)"><strong>RxAssert</strong></a></p></td>
 <td align="left"><p>This routine sends an assert string in RDBSS checked builds to a kernel debugger if one is installed.</p></td>
 </tr>
 <tr class="odd">
@@ -173,7 +173,7 @@ The following routines are exported by RDBSS.
 <td align="left"><p>This routine builds a node that represents a V_NET_ROOT structure and inserts the name into the net name table. This routine is used internally by RDBSS and should not be used by network mini-redirector drivers.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="/windows-hardware/drivers/ifs/rxdbgbreakpoint" data-raw-source="[&lt;strong&gt;RxDbgBreakPoint&lt;/strong&gt;](./rxdbgbreakpoint.md)"><strong>RxDbgBreakPoint</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ifs/rxdbgbreakpoint" data-raw-source="[&lt;strong&gt;RxDbgBreakPoint&lt;/strong&gt;](https://learn.microsoft.com/previous-versions/windows/hardware/rdbss/rxdbgbreakpoint)"><strong>RxDbgBreakPoint</strong></a></p></td>
 <td align="left"><p>This routine raises an exception that is handled by the kernel debugger if one is installed; otherwise, it is handled by the debug system.</p></td>
 </tr>
 <tr class="odd">
@@ -526,6 +526,4 @@ The following routines are exported by RDBSS.
 </tr>
 </tbody>
 </table>
-
- 
 

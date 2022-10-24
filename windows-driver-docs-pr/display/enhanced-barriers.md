@@ -13,7 +13,7 @@ prerelease: true
 
 # D3D12 enhanced barriers
 
-The DDI interface for enhanced barriers is available in the [Windows 11, version 22H2 WDK](/windows-hardware/drivers/download-the-wdk) (WDDM 3.0). To use enhanced barriers on 22H2 (or earlier OS releases), you must install the [1.706.4-preview Agility SDK](https://devblogs.microsoft.com/directx/directx12agility/).
+The DDI interface for enhanced barriers is available in the [Windows 11, version 22H2 WDK](../download-the-wdk.md) (WDDM 3.0). To use enhanced barriers on 22H2 (or earlier OS releases), you must install the [1.706.4-preview Agility SDK](https://devblogs.microsoft.com/directx/directx12agility/).
 
 D3D12 enhanced barriers give developers independent control over GPU work synchronization, texture layout transitions, and cache flushing (“resource memory access”). This feature offers a set of Direct3D APIs and DDIs that give developers independent control over GPU work synchronization, texture layout transitions, and cache flushing (resource memory access).
 
