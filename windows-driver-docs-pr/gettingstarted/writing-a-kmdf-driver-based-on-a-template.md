@@ -3,7 +3,7 @@ title: Write a Universal Windows driver (KMDF) based on a template
 description: This topic describes how to write a Universal Windows driver using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
 keywords:
 - Write a KMDF driver
-ms.date: 06/02/2021
+ms.date: 10/24/2022
 ---
 
 # Write a Universal Windows driver (KMDF) based on a template
@@ -17,7 +17,9 @@ To get started, be sure you have the latest versions of [Microsoft Visual Studio
 ## Create and build a driver
 
 1. Open Microsoft Visual Studio. On the **File** menu, choose **New &gt; Project**.
+
 1. In the **Create a new project** dialog box, select **C++** in the left dropdown, choose **Windows** in the middle dropdown, and choose **Driver** in the right dropdown.
+
 1. Select **Kernel Mode Driver (KMDF)** from the list of project types. Select **Next**.
 
     :::image type="content" source="images/vs2019-kmdf2-template.png" alt-text="Screen shot of the new project dialog box, showing kernel mode driver selected.":::
@@ -28,6 +30,7 @@ To get started, be sure you have the latest versions of [Microsoft Visual Studio
     > When you create a new KMDF or UMDF driver, you must select a driver name that has 32 characters or less. This length limit is defined in wdfglobals.h.  
 
 1. In the **Location** field, enter the directory where you want to create the new project.
+
 1. Check **Place solution and project in the same directory** and select **Create**.
 
     :::image type="content" source="images/vs2019-kmdf2-configure.png" alt-text="Screen shot of the project configuration dialog box.":::
@@ -36,30 +39,22 @@ To get started, be sure you have the latest versions of [Microsoft Visual Studio
 
     :::image type="content" source="images/vs2019-kmdf2-solution-explorer.png" alt-text="Screen shot of solution explorer showing the files in the driver project.":::
 
-1. In the **Solution Explorer** window, select and hold (or right-click) **Solution 'KmdfDriver' (1 of 1 project)**, and choose **Configuration Manager**. Choose a configuration and platform for the driver project. For example, choose **Debug** and **x64**.
 1. In the **Solution Explorer** window, select and hold (or right-click) **KmdfDriver**, and choose **Properties**. Navigate to **Configuration Properties &gt; Driver Settings &gt; General**, and note that **Target Platform** defaults to **Universal.**
+
 1. To build your driver, choose **Build Solution** from the **Build** menu. Microsoft Visual Studio displays build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.)
 
     Verify that the build output includes:
 
-    ``` syntax
+    ``` output
     >    Driver is 'Universal'.
     ```
 
     When you've verified that the solution built successfully, you can close Visual Studio.
 
-1. To see the built driver, in File Explorer, go to your **UmdfDriver** folder, and then to **x64\\Debug\\UmdfDriver**. The directory includes the following files:
+1. To see the built driver, in File Explorer, go to your **KmdfDriver** folder, and then to **x64\\Debug\\KmdfDriver**. The directory includes the following files:
 
-    * KmdfDriver.sys -- the kernel-mode driver file
-    * KmdfDriver.inf -- an information file that Windows uses when you install the driver
-
-1. In the **Solution Explorer** window, select and hold (or right-click) **Solution 'KmdfDriver' (1 project)**, and choose **Configuration Manager**. Choose a configuration and platform for both the driver project and the package project. In this exercise, we choose Debug and x64.
-
-1. To build your driver and create a driver package, choose **Build Solution** from the **Build** menu. Visual Studio shows the build progress in the **Output** window. (If the **Output** window is not visible, choose **Output** from the **View** menu.)
-
-    When you've verified that the solution built successfully, you can close Visual Studio.
-
-1. To see the built driver, in File Explorer, go to your **KmdfDriver** folder, and then to **x64\\Debug\\KmdfDriver**. The folder includes:
+    - KmdfDriver.sys -- the kernel-mode driver file
+    - KmdfDriver.inf -- an information file that Windows uses when you install the driver
 
 ## Deploy the driver
 
@@ -75,10 +70,15 @@ So far you've used Visual Studio to build a driver on the host computer. Now you
     > In real driver debugging scenarios, we recommend using a KDNET-generated key. For more information about how to use KDNET to generate a random key, see the [Debug Drivers - Step by Step Lab (Sysvad Kernel Mode)](../debugger/debug-universal-drivers--kernel-mode-.md) topic.
 
 1. On the host computer, open your solution in Visual Studio. You can double-click the solution file, KmdfDriver.sln, in your KmdfDriver folder.
+
 1. In the **Solution Explorer** window, select and hold (or right-click) the **KmdfDriver** project, and choose **Properties**.
+
 1. In the **KmdfDriver Package Property Pages** window, in the left pane, go to **Configuration Properties &gt; Driver Install &gt; Deployment**.
+
 1. Check **Remove previous driver versions before deployment**.
+
 1. For **Remote Computer Name**, select the name of the computer that you configured for testing and debugging. In this exercise, we use a computer named MyTestComputer.
+
 1. Select **Hardware ID Driver Update**, and enter the hardware ID for your driver. In this exercise, the hardware ID is Root\\KmdfDriver. Select **OK**.
 
     :::image type="content" source="images/vs2019-kmdfdriver-property-pages.png" alt-text="screen shot of the kmdfdriver package property pages window, showing deployment driver install selected":::
@@ -108,11 +108,13 @@ With your KMDF driver deployed to the target computer, now you'll install the dr
     Copy the DevCon tool to your remote computer.
 
 1. On the target computer, install the driver by navigating to the folder containing the driver files, then running the DevCon tool.
+
     1. Here's the general syntax for the devcon tool that you will use to install the driver:
 
         *devcon install \<INF file\> \<hardware ID\>*
 
         The INF file required for installing this driver is KmdfDriver.inf. The INF file contains the hardware ID for installing the driver binary, *KmdfDriver.sys*. Recall that the hardware ID, located in the INF file, is **Root\\KmdfDriver**.
+
     1. Open a Command Prompt window as Administrator. Navigate to your driver package folder, then enter this command:
 
         **devcon install kmdfdriver.inf root\\kmdfdriver**
@@ -141,12 +143,13 @@ Now that you have installed your KMDF driver on the target computer, you'll atta
 
 1. At this point, you can experiment with the debugger by entering commands at the **kd&gt;** prompt. For example, you could try these commands:
 
-    * [lm](./device-nodes-and-device-stacks.md)
-    * [.sympath](../debugger/-sympath--set-symbol-path-.md)
-    * [.reload](../debugger/-reload--reload-module-.md)
-    * [x KmdfHelloWorld!\*](../debugger/x--examine-symbols-.md)
+    - [lm](./device-nodes-and-device-stacks.md)
+    - [.sympath](../debugger/-sympath--set-symbol-path-.md)
+    - [.reload](../debugger/-reload--reload-module-.md)
+    - [x KmdfHelloWorld!\*](../debugger/x--examine-symbols-.md)
 
 1. To let the target computer run again, choose **Go** from the **Debug** menu or press "g," then press "enter."
+
 1. To stop the debugging session, choose **Detach Debuggee** from the **Debug** menu.
 
     > [!IMPORTANT]
@@ -168,10 +171,7 @@ For more info, see [Driver Module Framework (DMF)](https://github.com/Microsoft/
 
 ## Related topics
 
-[Developing, Testing, and Deploying Drivers](../develop/index.md)
-
-[Debugging Tools for Windows](../debugger/index.md)
-
-[Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md)
-
-[Write your first driver](writing-your-first-driver.md)
+- [Developing, Testing, and Deploying Drivers](../develop/index.md)
+- [Debugging Tools for Windows](../debugger/index.md)
+- [Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md)
+- [Write your first driver](writing-your-first-driver.md)
