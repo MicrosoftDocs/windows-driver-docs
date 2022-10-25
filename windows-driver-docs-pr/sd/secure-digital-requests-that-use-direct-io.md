@@ -87,7 +87,7 @@ To read the FBR, the code example performs the following steps:
 
    1. **Define the Request Function**:
 
-      After creating an SD descriptor, the code example initializes the request packet, [**SDBUS\_REQUEST\_PACKET**](/previous-versions/windows/hardware/drivers/ff537931(v=vs.85).md). The **RequestFunction** member of the request packet specifies whether the request contains a device command (value of SDRF\_DEVICE\_COMMAND) or a property operation (value of SDRF\_GET\_PROPERTY or SDRF\_SET\_PROPERTY). The code example initiates a device command, so it sets the **RequestFunction** member to SDRF\_DEVICE\_COMMAND.
+      After creating an SD descriptor, the code example initializes the request packet, [**SDBUS_REQUEST_PACKET**](/previous-versions/windows/hardware/drivers/ff537931(v=vs.85)). The **RequestFunction** member of the request packet specifies whether the request contains a device command (value of SDRF\_DEVICE\_COMMAND) or a property operation (value of SDRF\_GET\_PROPERTY or SDRF\_SET\_PROPERTY). The code example initiates a device command, so it sets the **RequestFunction** member to SDRF\_DEVICE\_COMMAND.
 
    1. **Load the Command Descriptor**: Next, the code example stores the newly initialized descriptor in the **Parameters.DeviceCommand.CmdDesc** member of the request packet.
 
