@@ -14,19 +14,13 @@ ms.date: 02/11/2022
 
 # DevCon HwIDs
 
+[!NOTE] [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. It's use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
+
 Displays the hardware IDs, compatible IDs, and device instance IDs of the specified devices. 
 
 ```
     devcon hwids {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
-
-## Recommended Replacement
-
-```
-pnputil /enum-devices /deviceids
-```
-
-For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
 
 ## <span id="ddk_devcon_hwids_tools"></span><span id="DDK_DEVCON_HWIDS_TOOLS"></span>Parameters
 
@@ -75,11 +69,19 @@ Type all or part of the name of the setup class of the devices. The equal sign (
 
 You can also specify hardware IDs, compatible IDs, device instance IDs, or ID patterns following the class name. Type a space between each ID or pattern. DevCon finds devices in the class that match the specified IDs.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+## Recommended Replacement
+
+```
+pnputil /enum-devices /deviceids
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
+## <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 To create a hardware ID for a root-enumerated device, use the [**DevCon SetHwID**](devcon-sethwid.md) command.
 
-### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+## <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
 devcon hwids *
@@ -87,7 +89,7 @@ devcon hwids acpi* *port*
 devcon hwids =usb
 ```
 
-### <span id="examples"></span><span id="EXAMPLES"></span>Examples
+## <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
 [Example 1: Find all hardware IDs](devcon-examples.md#example-1-find-all-hardware-ids)
 

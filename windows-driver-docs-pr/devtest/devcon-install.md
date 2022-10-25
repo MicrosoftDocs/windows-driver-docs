@@ -23,15 +23,6 @@ Creates a new, root-enumerated devnode for a non-Plug and Play device and instal
 > [!IMPORTANT]
 > [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available and it's use is recommended. For more information on using PnPutil instead of devcon, see [Replacing DevCon](devcon-migration.md).
 
-## Recommended Replacement
-
-```
-devgen /add /hardwareid HardwareID
-pnputil /add-driver INFfile /install
-```
-
-For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
-
 ## Parameters
 
 **/r**  
@@ -45,7 +36,7 @@ Specifies a hardware ID for the device.
 
 The specified hardware ID must exactly match the hardware ID of the device. Patterns are not valid. Do not type a single quote character (**'**) to indicate a literal value. For more information, see [Hardware IDs](../install/hardware-ids.md) and [Device Identification Strings](../install/device-identification-strings.md).
 
-### Comments
+## Comments
 
 The system might need to be rebooted to make this change effective. To have DevCon reboot the system, add the conditional reboot parameter (**/r**) to the command.
 
@@ -57,14 +48,14 @@ If any step of the **DevCon Install** operation fails, DevCon displays a failure
 
 The **DevCon Install** command creates a new non-Plug and Play device node each time you run it. To update or reinstall drivers, use the [**DevCon Update**](devcon-update.md) command.
 
-### Sample usage
+## Sample usage
 
 ```console
 devcon install c:\windows\inf\newdvc.inf ISAPNP\CSC4324\0
 devcon /r install c:\windows\inf\newdvc.inf ISAPNP\CSC4324\0
 ```
 
-### Examples
+## Examples
 
 [Example 33: Install a device](devcon-examples.md#example-33-install-a-device)
 

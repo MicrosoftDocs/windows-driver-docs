@@ -14,19 +14,12 @@ ms.date: 04/11/2019
 
 # DevCon Dp\_delete
 
+[!NOTE] [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. It's use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
 Deletes a third-party (OEM) driver package from the driver store on the local computer. This command deletes the INF file, the PNF file, and the associated catalog file (.cat).
 
 ```command
     devcon [-f] dp_delete inf
 ```
-
-## Recommended Replacement
-
-```
-pnputil /delete-driver inf
-```
-
-For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
 
 ## Parameters
 
@@ -36,9 +29,17 @@ This parameter deletes the driver package even if a device is using it at the ti
 *inf*
 The OEM\*.inf file name of the INF file. Windows assigns a file name with this format to the INF file when you add the driver package to the driver store, such as by using [**DevCon dp\_add**](devcon-dp-add.md).
 
+## Recommended Replacement
+
+```
+pnputil /delete-driver inf
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
 ## Comments
 
-### Sample Usage
+## Sample Usage
 
 ```command
 devcon dp_delete oem2.inf

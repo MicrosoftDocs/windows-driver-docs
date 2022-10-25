@@ -14,19 +14,13 @@ ms.date: 02/11/2022
 
 # DevCon Stack
 
+[!NOTE] [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. It's use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
+
 Displays the expected driver stack for the specified devices, and the GUID and the name of the device setup class for each device. 
 
 ```
     devcon stack {* | ID [ID ...] | =class [ID [ID...]]}
 ```
-
-## Recommended Replacement
-
-```
-pnputil /enum-devices /stack
-```
-
-For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
 
 ## <span id="ddk_devcon_stack_tools"></span><span id="DDK_DEVCON_STACK_TOOLS"></span>Parameters
 
@@ -69,13 +63,21 @@ The following special characters modify the ID parameter.
 <span id="________class______"></span><span id="________CLASS______"></span> **=**<em>class</em>
 Specifies the device setup class of the devices. The equal sign (**=**) identifies the string as a class name. You can also specify hardware IDs, compatible IDs, device instance IDs, or ID patterns following the class name. Type a space between each ID or pattern. DevCon finds devices in the class that match the specified IDs.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+## Recommended Replacement
+
+```
+pnputil /enum-devices /stack
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
+## <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 The **DevCon Stack** operation displays the expected driver stack for a device. Although the actual driver stack typically matches the expected stack, variations are possible.
 
 To investigate a device problem, compare the expected driver stack from the stack operation with the actual drivers that the device uses, as displayed by the [**DevCon DriverFiles**](devcon-driverfiles.md) operation.
 
-### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+## <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
 devcon stack pci*
@@ -84,7 +86,7 @@ devcon stack ISAPNP\ReadDataPort
 devcon stack =multifunction
 ```
 
-### <span id="examples"></span><span id="EXAMPLES"></span>Examples
+## <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
 [Example 14: Display the driver stack for storage devices](devcon-examples.md#example-14-display-the-driver-stack-for-storage-devices)
 

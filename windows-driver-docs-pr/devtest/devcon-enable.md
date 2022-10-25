@@ -14,6 +14,8 @@ ms.date: 04/20/2017
 
 # DevCon Enable
 
+[!NOTE] [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. It's use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
+
 Enables devices on the computer. Valid only on the local computer.
 
 To *enable* a device means that the device driver is loaded into memory and the device is ready for use.
@@ -21,14 +23,6 @@ To *enable* a device means that the device driver is loaded into memory and the 
 ```
     devcon [/r] enable {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
-
-## Recommended Replacement
-
-```
-pnputil /enable-device ID
-```
-
-For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
 
 ## <span id="ddk_devcon_enable_tools"></span><span id="DDK_DEVCON_ENABLE_TOOLS"></span>Parameters
 
@@ -76,13 +70,21 @@ Specifies the device setup class of the devices. The equal sign (**=**) identifi
 
 You can also specify hardware IDs, compatible IDs, device instance IDs, or ID patterns following the class name. Type a space between each ID or pattern. DevCon finds devices in the class that match the specified IDs.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+## Recommended Replacement
+
+```
+pnputil /enable-device
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
+## <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 DevCon enables the device even if it is already enabled. Before and after enabling a device, use the [**DevCon Status**](devcon-status.md) operation to verify the device status.
 
 The system might need to be rebooted to make this change effective. To have DevCon reboot the system, add the conditional reboot parameter (/r) to the command.
 
-### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+## <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
 devcon enable * (not recommended)
@@ -90,7 +92,7 @@ devcon /r enable *DVD-ROM*
 devcon /r enable =printer
 ```
 
-### <span id="examples"></span><span id="EXAMPLES"></span>Examples
+## <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
 [Example 28: Enable a particular device](devcon-examples.md#example-28-enable-a-particular-device)
 

@@ -20,16 +20,6 @@ Adds, deletes, and changes the order of hardware IDs of root-enumerated devices.
     devcon sethwid {* | ID [ID ...] | =class [ID [ID ...]]} := [ = | + | - | ! ]HardwareIDs ...
 ```
 
-## Recommended Replacement
-
-```
-devgen /add /hardwareid ID
-```
-
-note: this command creates a new test device with the specified ID.
-
-For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
-
 ## <span id="ddk_devcon_sethwid_tools"></span><span id="DDK_DEVCON_SETHWID_TOOLS"></span>Parameters
 
 <span id="______________"></span>  `*` 
@@ -90,7 +80,7 @@ Adds or moves the specified hardware IDs to the end of the list of hardware IDs 
 <span id="______________"></span> **!**
 Deletes the specified hardware IDs from the list of hardware IDs for the device.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+## <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 A *root-enumerated* device is a device that appears in the ROOT registry subkey (HKEY\_LOCAL\_MACHINE\\System\\*ControlSet*\\Enum\\ROOT).
 
@@ -100,7 +90,7 @@ DevCon moves, rather than adds, a hardware ID if the specified hardware ID alrea
 
 The success message for a **DevCon SetHwIDs** command reports the number of devices (or device lists) in which it has modified hardware IDs, not the number of modified hardware IDs .
 
-### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+## <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
 devcon sethwid @ROOT\LEGACY* := legacy
@@ -110,7 +100,7 @@ devcon sethwid legacy afd1 := +devtype3
 devcon sethwid @ROOT\LEGACY_BEEP\0000 := !beep legacy
 ```
 
-### <span id="examples"></span><span id="EXAMPLES"></span>Examples
+## <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
 [Example 40: Assign a hardware ID to a legacy device](devcon-examples.md#example-40-assign-a-hardware-id-to-a-legacy-device)
 

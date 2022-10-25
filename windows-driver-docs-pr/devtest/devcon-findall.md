@@ -14,19 +14,13 @@ ms.date: 02/11/2022
 
 # DevCon FindAll
 
+[!NOTE] [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. It's use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
+
 Finds all devices on the computer, including devices that were once attached to the computer but have been detached or moved. (These are known as nonpresent devices or *phantom* devices.) The **DevCon FindAll** operation also finds devices that are enumerated differently as a result of a BIOS change. 
 
 ```
     devcon findall {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
-
-## Recommended Replacement
-
-```
-pnputil /enum-devices
-```
-
-For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
 
 ## <span id="ddk_devcon_findall_tools"></span><span id="DDK_DEVCON_FINDALL_TOOLS"></span>Parameters
 
@@ -71,11 +65,19 @@ Specifies the device setup class of the devices. The equal sign (**=**) identifi
 
 You can also specify hardware IDs, compatible IDs, device instance IDs, or ID patterns following the class name. Type a space between each ID or pattern. DevCon finds devices in the class that match the specified IDs.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+## Recommended Replacement
+
+```
+pnputil /enum-devices
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
+## <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 To find only devices that are currently attached to the computer, use the [**DevCon Find**](devcon-find.md) operation.
 
-### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+## <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
 devcon resources STORAGE\Volume
@@ -83,6 +85,6 @@ devcon resources =ports lpt*
 devcon resources @pci*
 ```
 
-### <span id="example"></span><span id="EXAMPLE"></span>Example
+## <span id="example"></span><span id="EXAMPLE"></span>Example
 
 [Example 22: Find (and find all) devices in a setup class](devcon-examples.md#example-22-find-and-find-all-devices-in-a-setup-class)

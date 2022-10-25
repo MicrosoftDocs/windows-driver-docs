@@ -14,20 +14,13 @@ ms.date: 02/11/2022
 
 # DevCon Resources
 
+[!NOTE] [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. It's use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
+
 Lists the resources allocated to the specified devices. Resources are assignable and addressable bus paths, such as DMA channels, I/O ports, IRQ, and memory addresses. 
 
 ```
     devcon resources {* | ID [ID ...] | =class [ID [ID...]]}
 ```
-
-## Recommended Replacement
-
-```
-pnputil /enum-devices /resources
-```
-
-For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
-
 
 ## <span id="ddk_devcon_resources_tools"></span><span id="DDK_DEVCON_RESOURCES_TOOLS"></span>Parameters
 
@@ -72,10 +65,18 @@ Specifies the device setup class of the devices. The equal sign (**=**) identifi
 
 You can also specify hardware IDs, compatible IDs, device instance IDs, or ID patterns following the class name. Type a space between each ID or pattern. DevCon finds devices in the class that match the specified IDs.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+## Recommended Replacement
+
+```
+pnputil /enum-devices /resources
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
+## <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 
-### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+## <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
 devcon resources *
@@ -85,7 +86,7 @@ devcon resources =class port* (by class and hardware ID)
 devcon resources =class @port*(by class and device instance ID)
 ```
 
-### <span id="examples"></span><span id="EXAMPLES"></span>Examples
+## <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
 [Example 12: List resources of a class of devices](devcon-examples.md#example-12-list-resources-of-a-class-of-devices)
 

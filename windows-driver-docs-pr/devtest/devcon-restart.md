@@ -14,19 +14,13 @@ ms.date: 04/20/2017
 
 # DevCon Restart
 
+[!NOTE] [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. It's use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
+
 Stops and restarts the specified devices. 
 
 ```
     devcon [/r] restart {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
-
-## Recommended Replacement
-
-```
-pnputil /restart-device ID
-```
-
-For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
 
 ## <span id="ddk_devcon_restart_tools"></span><span id="DDK_DEVCON_RESTART_TOOLS"></span>Parameters
 
@@ -76,11 +70,19 @@ Specifies the device setup class of the devices. The equal sign (**=**) identifi
 
 You can also specify hardware IDs, compatible IDs, device instance IDs, or ID patterns following the class name. Type a space between each ID or pattern. DevCon finds devices in the class that match the specified IDs.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+## Recommended Replacement
+
+```
+pnputil /restart-device
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
+## <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 The system might need to be rebooted to make this change effective. To have DevCon reboot the system, add the conditional reboot parameter (/r) to the command.
 
-### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+## <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
 devcon restart *
@@ -90,6 +92,6 @@ devcon restart =printer
 devcon restart =printer *desk*
 ```
 
-### <span id="example"></span><span id="EXAMPLE"></span>Example
+## <span id="example"></span><span id="EXAMPLE"></span>Example
 
 [Example 38: Restart a device](devcon-examples.md#example-38-restart-a-device)

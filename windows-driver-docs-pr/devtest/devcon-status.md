@@ -14,19 +14,13 @@ ms.date: 02/11/2022
 
 # DevCon Status
 
+[!NOTE] [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. It's use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
+
 Displays the status (running, stopped, or disabled) of the driver for devices on the computer. 
 
 ```
     devcon status {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
-
-## Recommended Replacement
-
-```
-pnputil /enum-devices
-```
-
-For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
 
 ## <span id="ddk_devcon_status_tools"></span><span id="DDK_DEVCON_STATUS_TOOLS"></span>Parameters
 
@@ -72,7 +66,15 @@ Specifies the device setup class of the devices. The equal sign (**=**) identifi
 
 You can also specify hardware IDs, compatible IDs, device instance IDs, or ID patterns following the class name. Type a space between each ID or pattern. DevCon finds devices in the class that match the specified IDs.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+## Recommended Replacement
+
+```
+pnputil /enum-devices
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
+## <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 If DevCon cannot determine the status of the device, such as when the device is no longer attached to the computer, DevCon omits the line describing the status from the status display.
 
@@ -93,7 +95,7 @@ STORAGE\VOLUME\1&30A96598&0&SIGNATURE80OFFSET7E0000LENGTH270987600
 1 matching device(s) found.
 ```
 
-### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+## <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
 devcon status *
@@ -102,7 +104,7 @@ devcon status "PCI\VEN_115D&DEV_0003&SUBSYS_0181115D"
 devcon status =printer
 ```
 
-### <span id="examples"></span><span id="EXAMPLES"></span>Examples
+## <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
 [Example 17: Display the status of all devices on the local computer](devcon-examples.md#example-17-display-the-status-of-all-devices)
 

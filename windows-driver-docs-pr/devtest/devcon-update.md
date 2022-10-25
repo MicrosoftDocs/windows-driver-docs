@@ -14,20 +14,13 @@ ms.date: 04/20/2017
 
 # DevCon Update
 
+[!NOTE] [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. It's use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
 
 Forcibly replaces the current device drivers for a specified device with drivers listed in the specified INF file. Valid only on the local computer.
 
 ```
     devcon [/r] update INFfile HardwareID 
 ```
-
-## Recommended Replacement
-
-```
-pnputil /add-driver INFfile /install
-```
-
-For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
 
 ## <span id="ddk_devcon_update_tools"></span><span id="DDK_DEVCON_UPDATE_TOOLS"></span>Parameters
 
@@ -41,7 +34,15 @@ Specifies the full path and file name of the INF (information) file used in the 
 <span id="_______HardwareID______"></span><span id="_______hardwareid______"></span><span id="_______HARDWAREID______"></span> *HardwareID*   
 Updates the drivers for devices with the specified hardware ID. The hardware ID specified in this command must exactly match the hardware ID of the device. Patterns are not valid. Do not type a single quote character (**'**) to indicate a literal value.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+## Recommended Replacement
+
+```
+pnputil /add-driver INFfile /install
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
+## <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 The **DevCon Update** operation forces an update to the most appropriate drivers in the specified INF file, even if those drivers are older or less appropriate than the current drivers or the drivers in a different INF file. For more information, see [How Setup Selects Drivers](../install/how-windows-selects-a-driver-for-a-device.md).
 
@@ -53,14 +54,14 @@ DevCon prompts the user if the INF file specifies an unsigned driver or if it ca
 
 The system might need to be rebooted to make this change effective. To have DevCon reboot the system, add the conditional reboot parameter (/r) to the command.
 
-### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+## <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
 devcon update c:\windows\inf\newdvc.inf ISAPNP\CSC4324\0
 devcon /r update c:\windows\inf\newdvc.inf *PNP030b
 ```
 
-### <span id="example"></span><span id="EXAMPLE"></span>Example
+## <span id="example"></span><span id="EXAMPLE"></span>Example
 
 [Example 32: Update the driver for communication ports](devcon-examples.md#example-32-update-the-driver-for-communication-ports)
 

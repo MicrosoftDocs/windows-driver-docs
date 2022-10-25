@@ -14,20 +14,13 @@ ms.date: 04/20/2017
 
 # DevCon UpdateNI
 
+[!NOTE] [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. It's use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
 
 Forcibly replaces the current device drivers with drivers listed in the specified INF file without prompting the user for information or confirmation. Valid only on the local computer.
 
 ```
     devcon [/r] updateni INFfile HardwareID 
 ```
-
-## Recommended Replacement
-
-```
-pnputil /add-driver INFfile /install
-```
-
-For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
 
 ## <span id="ddk_devcon_updateni_tools"></span><span id="DDK_DEVCON_UPDATENI_TOOLS"></span>Parameters
 
@@ -43,7 +36,15 @@ Specifies a hardware ID for the device.
 
 The specified hardware ID must exactly match the hardware ID of the device. Patterns are not valid. Do not type a single quote character (**'**) to indicate a literal value.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+## Recommended Replacement
+
+```
+pnputil /add-driver INFfile /install
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
+## <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 The **DevCon UpdateNI** operation suppresses all user prompts that require a response and assumes the default response. As a result, you cannot use this operation to install unsigned drivers. To display user prompts during an update, use [**DevCon Update**](devcon-update.md).
 
@@ -53,14 +54,14 @@ Before updating the driver for any device, determine which devices will be affec
 
 The system might need to be rebooted to make this change effective. To have DevCon reboot the system, add the conditional reboot parameter (/r) to the command.
 
-### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+## <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
 devcon updateni c:\windows\inf\newdvc.inf ISAPNP\CSC4324\0
 devcon /r updateni c:\windows\inf\newdvc.inf *PNP030b
 ```
 
-### <span id="example"></span><span id="EXAMPLE"></span>Example
+## <span id="example"></span><span id="EXAMPLE"></span>Example
 
 [Example 32: Update the driver for communication ports](devcon-examples.md#example-32-update-the-driver-for-communication-ports)
 

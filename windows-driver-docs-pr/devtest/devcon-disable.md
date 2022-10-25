@@ -14,6 +14,8 @@ ms.date: 04/20/2017
 
 # DevCon Disable
 
+[!NOTE] [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. It's use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
+
 Disables devices on the computer. Valid only on the local computer.
 
 To *disable* a device means that the device remains physically connected to the computer, but its driver is unloaded from memory and its resources are freed so that the device cannot be used.
@@ -21,14 +23,6 @@ To *disable* a device means that the device remains physically connected to the 
 ```
     devcon [/r] disable {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
-
-## Recommended Replacement
-
-```
-pnputil /disable-device
-```
-
-For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
 
 ## <span id="ddk_devcon_disable_tools"></span><span id="DDK_DEVCON_DISABLE_TOOLS"></span>Parameters
 
@@ -76,7 +70,15 @@ Specifies the device setup class of the devices. The equal sign (**=**) identifi
 
 You can also specify hardware IDs, compatible IDs, device instance IDs, or ID patterns following the class name. Type a space between each ID or pattern. DevCon finds devices in the class that match the specified IDs.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+## Recommended Replacement
+
+```
+pnputil /disable-device
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
+## <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 DevCon disables the device even if the device is already disabled. Before and after disabling a device, use the [**DevCon Status**](devcon-status.md) operation to verify the device status.
 
@@ -84,7 +86,7 @@ Before using an ID pattern to disable a device, determine which devices will be 
 
 The system might need to be rebooted to make this change effective. To have DevCon reboot the system, add the conditional reboot parameter (/r) to the command.
 
-### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+## <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
 devcon disable * (not recommended)
@@ -92,7 +94,7 @@ devcon /r disable *DVD-ROM*
 devcon /r disable =printer
 ```
 
-### <span id="examples"></span><span id="EXAMPLES"></span>Examples
+## <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
 [Example 30: Disable devices by an ID pattern](devcon-examples.md#example-30-disable-devices-by-an-id-pattern)
 

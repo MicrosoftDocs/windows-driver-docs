@@ -14,7 +14,6 @@ ms.date: 04/20/2017
 
 # DevCon ClassFilter
 
-
 Adds, deletes, displays, and changes the order of filter drivers for a device setup class. Valid only on the local computer.
 
 ```
@@ -54,7 +53,7 @@ Deletes the next occurrence of the specified driver from the list.
 
 When the subcommand completes, the cursor occupies the position of the deleted driver. Subsequent **+** or **-** subcommands insert a new driver at the cursor position.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+## <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 A **DevCon ClassFilter** command can include one or more subcommands that consist of an operator (**=**, **@**, **-**, **+**, **!**) and a filter driver name. DevCon executes the subcommands in the order that they appear in the command.
 
@@ -66,7 +65,7 @@ DevCon does not add a filter driver to a class unless the driver is installed as
 
 Because filter driver changes require that the devices be restarted, use a [**DevCon Restart**](devcon-restart.md) command or include the **/r** (conditional reboot) parameter in the **DevCon ClassFilter** command.
 
-### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+## <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
 devcon classfilter mouse upper
@@ -75,7 +74,7 @@ devcon /r classfilter net lower @netfltr -testfltr
 devcon /r classfilter volume upper !volsnap =!volsnap2
 ```
 
-### <span id="examples"></span><span id="EXAMPLES"></span>Examples
+## <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
 [Example 23: Display the filter drivers for a setup class](devcon-examples.md#example-23-display-the-filter-drivers-for-a-setup-class)
 

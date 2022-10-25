@@ -14,19 +14,13 @@ ms.date: 04/20/2017
 
 # DevCon DriverNodes
 
+[!NOTE] [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. It's use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
+
 Lists all [driver packages](../install/components-of-a-driver-package.md) that are compatible with the device, along with their version and ranking. Valid only on the local computer.
 
 ```
     devcon drivernodes {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
-
-## Recommended Replacement
-
-```
-pnputil /enum-devices /drivers
-```
-
-For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
 
 ## <span id="ddk_devcon_drivernodes_tools"></span><span id="DDK_DEVCON_DRIVERNODES_TOOLS"></span>Parameters
 
@@ -71,13 +65,21 @@ Specifies the device setup class of the devices. The equal sign (**=**) identifi
 
 You can also specify hardware IDs, compatible IDs, device instance IDs, or ID patterns following the class name. Type a space between each ID or pattern. DevCon finds devices in the class that match the specified IDs.
 
-### <span id="comments"></span><span id="COMMENTS"></span>Comments
+## Recommended Replacement
+
+```
+pnputil /enum-devices /drivers
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
+
+## <span id="comments"></span><span id="COMMENTS"></span>Comments
 
 The **DevCon DriverNodes** operation runs only on the local computer.
 
 The **DevCon DriverNodes** operation is particularly useful for troubleshooting setup problems. For example, you can use it to determine whether a Windows INF file or a customized third-party INF file was used for a device.
 
-### <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+## <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
 
 ```
 devcon drivernodes *
@@ -85,7 +87,7 @@ devcon drivernodes *miniport*
 devcon drivernodes =usb pci* usb*
 ```
 
-### <span id="examples"></span><span id="EXAMPLES"></span>Examples
+## <span id="examples"></span><span id="EXAMPLES"></span>Examples
 
 [Example 10: List driver packages by hardware ID pattern](devcon-examples.md#example-10-list-driver-packages-by-hardware-id-pattern)
 
