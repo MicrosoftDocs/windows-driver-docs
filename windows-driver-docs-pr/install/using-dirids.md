@@ -6,14 +6,10 @@ keywords:
 - INF files WDK device installations , directory identifiers
 - directory identifiers WDK INF files
 - directories WDK INF files
-ms.date: 04/20/2017
+ms.date: 10/25/2022
 ---
 
 # Using Dirids
-
-
-
-
 
 Many of the directories that appear in INF files can be expressed by using directory identifiers (*dirids*), which are numbers that identify specific directories. Applications can use, but cannot reassign the system-defined directories that are associated with *dirids* whose values are from -1 through 32767.
 
@@ -102,6 +98,8 @@ Don't use <a href="inf-delfiles-directive.md" data-raw-source="[DelFiles](inf-de
 The optional subdirectory in the <strong>SourceDiskFiles</strong> section for a file must match the subdirectory in the <strong>DestinationDirs</strong> section for the entry that applies to this file.
 
 Don't use <a href="inf-copyfiles-directive.md" data-raw-source="[CopyFiles](inf-copyfiles-directive.md)">CopyFiles</a> to rename a file for which <strong>DestinationDirs</strong> includes <em>dirid</em> 13.
+
+For more information on using <em>dirid</em> 13, see [Run from Driver Store](../develop/run-from-driver-store.md).
 </p></td>
 </tr>
 <tr class="even">
@@ -168,8 +166,6 @@ Don't use <a href="inf-copyfiles-directive.md" data-raw-source="[CopyFiles](inf-
 </tr>
 </tbody>
 </table>
-
- 
 
 *Dirid* values from 16384 through 32767 are reserved for special shell folders. The following table shows *dirid* values for these folders.
 
@@ -240,9 +236,4 @@ Don't use <a href="inf-copyfiles-directive.md" data-raw-source="[CopyFiles](inf-
 </tbody>
 </table>
 
- 
-
 In addition to the values in this table that are defined in *Setupapi.h*, you can use any of the CSIDL_*Xxx* values that are defined in *Shlobj.h*. To define a *dirid* value for a folder not listed in this table, add 16384 (0x4000) to the CSIDL_*Xxx* value. For more information about CSIDL_*Xxx* values, see the Windows SDK documentation.
-
- 
-
