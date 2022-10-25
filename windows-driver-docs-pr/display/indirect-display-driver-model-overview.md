@@ -9,7 +9,7 @@ keywords:
 - IDD model
 - Indirect display driver implementation
 - IDD implementation
-ms.date: 08/09/2022
+ms.date: 10/25/2022
 ---
 
 # Indirect display driver overview
