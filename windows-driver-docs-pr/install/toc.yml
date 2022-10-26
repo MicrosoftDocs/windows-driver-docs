@@ -82,7 +82,7 @@
       href: using-an-extension-inf-file-template.md
     - name: "Using a Component INF File"
       href: using-a-component-inf-file.md
-    - name: "Updating Device Firmware using Windows Update"
+    - name: "Update device firmware using Windows Update"
       href: updating-device-firmware-using-windows-update.md
     - name: "Specifying the Source and Target Locations for Device Files"
       href: specifying-the-source-and-target-locations-for-device-files.md

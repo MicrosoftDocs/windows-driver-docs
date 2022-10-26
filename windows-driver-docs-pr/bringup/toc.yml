@@ -256,15 +256,15 @@
         items: 
         - name: "System and device firmware updates via a firmware driver package"
           href: system-and-device-firmware-updates-via-a-firmware-driver-package.md
-        - name: "Populating the ESRT table"
+        - name: "Populate the ESRT table"
           href: populating-the-esrt-table.md
-        - name: "Customizing firmware for different geographic regions"
+        - name: "Customize firmware for different geographic regions"
           href: customizing-firmware-for-different-geographic-regions.md
-        - name: "Authoring a firmware update package"
+        - name: "Author a firmware update package"
           href: authoring-a-firmware-update-package.md
-        - name: "Certifying and signing the update package"
+        - name: "Certify and sign the update package"
           href: certifying-and-signing-the-update-package.md
-        - name: "Installing the update"
+        - name: "Install the update"
           href: installing-the-update.md
       - name: "Implementing support for UEFI firmware updates"
 # Auto-expanded node

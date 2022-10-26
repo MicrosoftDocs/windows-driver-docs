@@ -1533,10 +1533,10 @@
       href: crashing-and-rebooting-the-target-computer.md
     - name: "Synchronizing with the Target Computer"
       href: synchronizing-with-the-target-computer.md
-    - name: "Finding a Memory Leak"
+    - name: "Find a Memory Leak"
 # Auto-expanded node
       items: 
-      - name: "Finding a Memory Leak"
+      - name: "Find a Memory Leak"
         href: finding-a-memory-leak.md
       - name: "Determining Whether a Leak Exists"
         href: determining-whether-a-leak-exists.md

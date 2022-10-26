@@ -1,19 +1,18 @@
 ---
-title: Finding a Memory Leak
-description: Finding a Memory Leak
+title: Find a memory leak
+description: Provides information about how to find memory leak.
 keywords: ["memory leak", "memory leak, debugging"]
-ms.date: 05/23/2017
+ms.date: 10/26/2022
 ---
 
-# Finding a Memory Leak
+# Find a memory leak
 
-A memory leak occurs when a process allocates memory from the paged or nonpaged pools, but does not free the memory. As a result, these limited pools of memory are depleted over time, causing Windows to slow down. If memory is completely depleted, failures may result.
+A memory leak occurs when a process allocates memory from the paged or nonpaged pools, but doesn't free the memory. As a result, these limited pools of memory are depleted over time, causing Windows to slow down. If memory is completely depleted, failures may result.
 
-This section includes the following:
+## In this section
 
-- [Determining Whether a Leak Exists](determining-whether-a-leak-exists.md) describes a technique you can use if you are not sure whether there is a memory leak on your system.
-
-- [Finding a Kernel-Mode Memory Leak](finding-a-kernel-mode-memory-leak.md) describes how to find a leak that is caused by a kernel-mode driver or component.
-
-- [Finding a User-Mode Memory Leak](finding-a-user-mode-memory-leak.md) describes how to find a leak that is caused by a user-mode driver or application.
-
+| Article | Description |
+|---|---|
+| [Determining Whether a Leak Exists](determining-whether-a-leak-exists.md) | Describes a technique you can use if you aren't sure whether there's a memory leak on your system. |
+| [Finding a Kernel-Mode Memory Leak](finding-a-kernel-mode-memory-leak.md) | Describes how to find a leak that is caused by a kernel-mode driver or component. |
+| [Finding a User-Mode Memory Leak](finding-a-user-mode-memory-leak.md) | Describes how to find a leak that is caused by a user-mode driver or application. |

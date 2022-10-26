@@ -2828,10 +2828,10 @@
         href: bcdedit--timeout.md
       - name: "BCDEdit /toolsdisplayorder"
         href: bcdedit--toolsdisplayorder.md
-    - name: "Editing Boot Options"
+    - name: "Edit boot options"
 # Auto-expanded node
       items: 
-      - name: "Editing Boot Options"
+      - name: "Edit boot options"
         href: editing-boot-options.md
       - name: "Changing Boot Parameters"
         href: changing-boot-parameters.md

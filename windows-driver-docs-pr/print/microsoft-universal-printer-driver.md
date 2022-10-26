@@ -1,61 +1,45 @@
 ---
-title: Microsoft Universal Printer Driver
+title: Microsoft universal printer driver (Unidrv)
 description: This section shows how to add minidrivers to Unidrv to support different printer models.
 keywords:
-- printer drivers WDK , Unidrv
+- printer drivers WDK, Unidrv
 - Unidrv WDK print
-- Universal Printer Driver WDK See Unidrv
+- Universal printer driver WDK See Unidrv
 - minidrivers WDK Unidrv
-ms.date: 08/04/2021
+ms.date: 10/20/2022
 ---
 
-# Microsoft Universal Printer Driver
+# Microsoft universal printer driver (Unidrv)
 
-The topics in this section show how to add minidrivers to Unidrv to support different printer models.
+The articles in this section show how to add minidrivers to Unidrv to support different printer models. The universal print driver (Unidrv) is also referred to as the v3 print driver.
 
-> [!NOTE]
-> The Microsoft Universal print driver (Unidrv) is also referred to as the v3 print driver.
+## In this section
 
-[Introduction to the Universal Printer Driver](introduction-to-the-universal-printer-driver.md)
+| Article | Description |
+|---|---|
+| [Introduction to the universal printer driver (Unidrv)](introduction-to-the-universal-printer-driver.md) | Provides an introduction to the universal printer driver (Unidrv), Microsoft's standard v3 printer driver for non-PostScript printers. |
+| [Introduction to GPD files](introduction-to-gpd-files.md) | Provides an introduction to GPD files. |
+| [Printer attributes](printer-attributes.md) | Provides information about printer attributes. |
+| [Printer commands](printer-commands.md) | Provides information about printer commands. |
+| [Printer features](printer-features.md) | Provides information about printer features. |
+| [Printer options](printer-options.md) | Provides information about printer options. |
+| [Printer font descriptions](printer-font-descriptions.md) | Provides information about printer font descriptions. |
+| [Conditional statements](conditional-statements.md) | Provides information about conditional statements. |
+| [Compressing raster data](compressing-raster-data.md) | Provides information about how to compress raster data. |
+| [Filtering raster data](filtering-raster-data.md) | Provides information about how to filter raster data. |
+| [Handling color formats](handling-color-formats.md) | Provides information about how to handle color formats. |
+| [Halftoning with Unidrv](halftoning-with-unidrv.md) | Provides information about halftoning with Unidrv. |
+| [Controlling image quality](controlling-image-quality.md) | Provides information about how to control image quality. |
+| [Handling installable features and options](handling-installable-features-and-options.md) | Provides information about how to handle installable features and options. |
+| [Specifying feature and option display order](specifying-feature-and-option-display-order.md) | Provides information about how to specify feature and option display order. |
+| [Describing printer memory configurations](describing-printer-memory-configurations.md) | Provides information about how to describe printer memory configurations. |
+| [Specifying paper sizes](specifying-paper-sizes.md) | Provides information about how to specify paper sizes. |
+| [Referencing locales](referencing-locales.md) | Provides information about how to reference locales. |
+| [Using Unidrv vector graphics capabilities](using-unidrv-vector-graphics-capabilities.md) | Provides information about how to use Unidrv vector graphics capabilities. |
+| [Installing a Unidrv minidriver](installing-a-unidrv-minidriver.md) | Provides information about how to install a Unidrv minidriver. |
+| [Unidrv printer minidriver versioning](unidrv-printer-minidriver-versioning.md) | Provides information about Unidrv printer minidriver versioning. |
+| [Adding forms to the forms database](adding-forms-to-the-forms-database.md) | Provides information about how to add forms to the forms database. |
 
-[Introduction to GPD Files](introduction-to-gpd-files.md)
+## Related sections
 
-[Printer Attributes](printer-attributes.md)
-
-[Printer Commands](printer-commands.md)
-
-[Printer Features](printer-features.md)
-
-[Printer Options](printer-options.md)
-
-[Printer Font Descriptions](printer-font-descriptions.md)
-
-[Conditional Statements](conditional-statements.md)
-
-[Compressing Raster Data](compressing-raster-data.md)
-
-[Filtering Raster Data](filtering-raster-data.md)
-
-[Handling Color Formats](handling-color-formats.md)
-
-[Halftoning with Unidrv](halftoning-with-unidrv.md)
-
-[Controlling Image Quality](controlling-image-quality.md)
-
-[Handling Installable Features and Options](handling-installable-features-and-options.md)
-
-[Specifying Feature and Option Display Order](specifying-feature-and-option-display-order.md)
-
-[Describing Printer Memory Configurations](describing-printer-memory-configurations.md)
-
-[Specifying Paper Sizes](specifying-paper-sizes.md)
-
-[Referencing Locales](referencing-locales.md)
-
-[Using Unidrv Vector Graphics Capabilities](using-unidrv-vector-graphics-capabilities.md)
-
-[Installing a Unidrv Minidriver](installing-a-unidrv-minidriver.md)
-
-[Unidrv Printer Minidriver Versioning](unidrv-printer-minidriver-versioning.md)
-
-[Adding Forms to the Forms Database](adding-forms-to-the-forms-database.md)
+[Print DDI reference](/windows-hardware/drivers/ddi/_print)
