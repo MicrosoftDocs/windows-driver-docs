@@ -11,13 +11,13 @@ keywords:
 - Example 44 Forcibly update the HAL
 - HAL update example
 ms.custom: contperf-fy22q3 
-ms.date: 01/26/2022
+ms.date: 10/26/2022
 ---
 
 # Device Console (DevCon.exe) examples
 
 > [!IMPORTANT]
-> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available and it's use is recommended. For more information on using PnPutil instead of devcon, see [Replacing DevCon](devcon-migration.md).
+> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available and its use is recommended. For more information on using PnPutil instead of devcon, see [Replacing DevCon](devcon-migration.md).
 
 ## Example catagories
 

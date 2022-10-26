@@ -9,12 +9,13 @@ api_name:
 - DevCon Update
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 10/26/2022
 ---
 
 # DevCon Update
 
-[!NOTE] [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. It's use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
+> [!NOTE] 
+> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. Its use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
 
 Forcibly replaces the current device drivers for a specified device with drivers listed in the specified INF file. Valid only on the local computer.
 

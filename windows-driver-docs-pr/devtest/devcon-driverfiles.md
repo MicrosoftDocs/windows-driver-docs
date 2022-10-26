@@ -9,12 +9,13 @@ api_name:
 - DevCon DriverFiles
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 10/26/2022
 ---
 
 # DevCon DriverFiles
 
-[!NOTE] [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. It's use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
+> [!NOTE] 
+> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. Its use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
 
 Displays the full path and file name of installed INF files and device driver files for the specified devices. Valid only on the local computer.
 

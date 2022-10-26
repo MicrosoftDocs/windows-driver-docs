@@ -9,12 +9,13 @@ api_name:
 - DevCon Stack
 api_type:
 - NA
-ms.date: 02/11/2022
+ms.date: 10/26/2022
 ---
 
 # DevCon Stack
 
-[!NOTE] [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. It's use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
+> [!NOTE] 
+> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. Its use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
 
 Displays the expected driver stack for the specified devices, and the GUID and the name of the device setup class for each device. 
 

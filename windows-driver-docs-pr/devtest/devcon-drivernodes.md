@@ -9,12 +9,13 @@ api_name:
 - DevCon DriverNodes
 api_type:
 - NA
-ms.date: 04/20/2017
+ms.date: 10/26/2022
 ---
 
 # DevCon DriverNodes
 
-[!NOTE] [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. It's use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
+> [!NOTE] 
+> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. Its use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
 
 Lists all [driver packages](../install/components-of-a-driver-package.md) that are compatible with the device, along with their version and ranking. Valid only on the local computer.
 

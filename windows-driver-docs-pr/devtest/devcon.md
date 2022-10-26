@@ -16,7 +16,7 @@ keywords:
 - device management WDK DevCon
 - listing device information WDK
 ms.custom: contperf-fy22q3
-ms.date: 07/26/2022
+ms.date: 10/26/2022
 ---
 
 # Windows Device Console (Devcon.exe)
@@ -24,7 +24,7 @@ ms.date: 07/26/2022
 DevCon (Devcon.exe), the Device Console, is a command-line tool that displays detailed information about devices on computers running Windows. You can use DevCon to enable, disable, install, configure, and remove devices.
 
 > [!IMPORTANT]
-> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available and it's use is recommended. For more information on using PnPutil instead of devcon, see [Replacing DevCon](devcon-migration.md).
+> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available and its use is recommended. For more information on using PnPutil instead of devcon, see [Replacing DevCon](devcon-migration.md).
 
 ## Where can I download DevCon?
 
