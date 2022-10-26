@@ -1601,6 +1601,12 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | wimfsf.sys | 161000 | Microsoft |
 | GEFCMP.sys | 160100 | Symantec |
 
+## 150000 - 159999: FSFilter Encryption
+
+| Minifilter                  | Altitude | Company                                 |
+|-----------------------------|----------|-----------------------------------------|
+| bfs.sys | 150000 | fill information about this driver here |
+
 ## 140000 - 149999: FSFilter Encryption
 
 | Minifilter                  | Altitude | Company                                 |
