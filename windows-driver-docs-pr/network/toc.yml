@@ -4414,6 +4414,170 @@
       href: if-indextoname.md
     - name: "if_nametoindex function"
       href: if-nametoindex.md
+  - name: "Interface Management Functions"
+    items: 
+    - name: "GetIfEntry2 function"
+      href: getifentry2.md
+    - name: "GetIfStackTable function"
+      href: getifstacktable.md
+    - name: "GetIfTable2 function"
+      href: getiftable2.md
+    - name: "GetIfTable2Ex function"
+      href: getiftable2ex.md
+    - name: "GetInvertedIfStackTable function"
+      href: getinvertedifstacktable.md
+    - name: "GetIpInterfaceTable function"
+      href: getipinterfacetable.md
+    - name: "InitializeIpInterfaceEntry function"
+      href: initializeipinterfaceentry.md
+    - name: "SetIpInterfaceEntry function"
+      href: setipinterfaceentry.md
+  - name: "IP Address Management Functions"
+    items: 
+    - name: "CreateAnycastIpAddressEntry function"
+      href: createanycastipaddressentry.md
+    - name: "CreateSortedAddressPairs function"
+      href: createsortedaddresspairs.md
+    - name: "CreateUnicastIpAddressEntry function"
+      href: createunicastipaddressentry.md
+    - name: "DeleteAnycastIpAddressEntry function"
+      href: deleteanycastipaddressentry.md
+    - name: "DeleteUnicastIpAddressEntry function"
+      href: deleteunicastipaddressentry.md
+    - name: "GetAnycastIpAddressEntry function"
+      href: getanycastipaddressentry.md
+    - name: "GetAnycastIpAddressTable function"
+      href: getanycastipaddresstable.md
+    - name: "GetMulticastIpAddressEntry function"
+      href: getmulticastipaddressentry.md
+    - name: "GetMulticastIpAddressTable function"
+      href: getmulticastipaddresstable.md
+    - name: "GetUnicastIpAddressEntry function"
+      href: getunicastipaddressentry.md
+    - name: "GetUnicastIpAddressTable function"
+      href: getunicastipaddresstable.md
+    - name: "InitializeUnicastIpAddressEntry function"
+      href: initializeunicastipaddressentry.md
+    - name: "SetUnicastIpAddressEntry function"
+      href: setunicastipaddressentry.md
+  - name: "IP Neighbor Address Management Functions"
+    items: 
+    - name: "CreateIpNetEntry2 function"
+      href: createipnetentry2.md
+    - name: "DeleteIpNetEntry2 function"
+      href: deleteipnetentry2.md
+    - name: "FlushIpNetTable2 function"
+      href: flushipnettable2.md
+    - name: "GetIpNetEntry2 function"
+      href: getipnetentry2.md
+    - name: "GetIpNetTable2 function"
+      href: getipnettable2.md
+    - name: "ResolveIpNetEntry2 function"
+      href: resolveipnetentry2.md
+    - name: "SetIpNetEntry2 function"
+      href: setipnetentry2.md
+  - name: "IP Path Management Functions"
+    items: 
+    - name: "FlushIpPathTable function"
+      href: flushippathtable.md
+    - name: "GetIpPathEntry function"
+      href: getippathentry.md
+    - name: "GetIpPathTable function"
+      href: getippathtable.md
+  - name: "IP Route Management Functions"
+    items: 
+    - name: "CreateIpForwardEntry2 function"
+      href: createipforwardentry2.md
+    - name: "DeleteIpForwardEntry2 function"
+      href: deleteipforwardentry2.md
+    - name: "GetBestRoute2 function"
+      href: getbestroute2.md
+    - name: "GetIpForwardEntry2 function"
+      href: getipforwardentry2.md
+    - name: "GetIpForwardTable2 function"
+      href: getipforwardtable2.md
+    - name: "GetIpInterfaceEntry function"
+      href: getipinterfaceentry.md
+    - name: "InitializeIpForwardEntry function"
+      href: initializeipforwardentry.md
+    - name: "SetIpForwardEntry2 function"
+      href: setipforwardentry2.md
+  - name: "IP Table Memory Management Functions"
+    items: 
+    - name: "FreeMibTable function"
+      href: freemibtable.md
+  - name: "MIB Enumerations "
+    items: 
+    - name: "MIB_NOTIFICATION_TYPE enumeration"
+      href: mib-notification-type.md
+  - name: "MIB Structures"
+    items: 
+    - name: "IP_ADDRESS_PREFIX structure"
+      href: ip-address-prefix.md
+    - name: "MIB_ANYCASTIPADDRESS_ROW structure"
+      href: mib-anycastipaddress-row.md
+    - name: "MIB_ANYCASTIPADDRESS_TABLE structure"
+      href: mib-anycastipaddress-table.md
+    - name: "MIB_IF_ROW2 structure"
+      href: mib-if-row2.md
+    - name: "MIB_IFSTACK_ROW structure"
+      href: mib-ifstack-row.md
+    - name: "MIB_IFSTACK_TABLE structure"
+      href: mib-ifstack-table.md
+    - name: "MIB_INVERTEDIFSTACK_ROW structure"
+      href: mib-invertedifstack-row.md
+    - name: "MIB_INVERTEDIFSTACK_TABLE structure"
+      href: mib-invertedifstack-table.md
+    - name: "MIB_IPFORWARD_ROW2 structure"
+      href: mib-ipforward-row2.md
+    - name: "MIB_IPFORWARD_TABLE2 structure"
+      href: mib-ipforward-table2.md
+    - name: "MIB_IPINTERFACE_ROW structure"
+      href: mib-ipinterface-row.md
+    - name: "MIB_IPINTERFACE_TABLE structure"
+      href: mib-ipinterface-table.md
+    - name: "MIB_IPNET_ROW2 structure"
+      href: mib-ipnet-row2.md
+    - name: "MIB_IPNET_TABLE2 structure"
+      href: mib-ipnet-table2.md
+    - name: "MIB_IPPATH_ROW structure"
+      href: mib-ippath-row.md
+    - name: "MIB_IPPATH_TABLE structure"
+      href: mib-ippath-table.md
+    - name: "MIB_MULTICASTIPADDRESS_ROW structure"
+      href: mib-multicastipaddress-row.md
+    - name: "MIB_MULTICASTIPADDRESS_TABLE structure"
+      href: mib-multicastipaddress-table.md
+    - name: "MIB_UNICASTIPADDRESS_ROW structure"
+      href: mib-unicastipaddress-row.md
+    - name: "MIB_UNICASTIPADDRESS_TABLE structure"
+      href: mib-unicastipaddress-table.md
+  - name: "NL Enumerations"
+    items: 
+    - name: "NL_DAD_STATE enumeration"
+      href: nl-dad-state.md
+    - name: "NL_PREFIX_ORIGIN enumeration"
+      href: nl-prefix-origin.md
+    - name: "NL_SUFFIX_ORIGIN enumeration"
+      href: nl-suffix-origin.md
+  - name: "Notification Functions"
+    items: 
+    - name: "CancelMibChangeNotify2 function"
+      href: cancelmibchangenotify2.md
+    - name: "NotifyIpInterfaceChange function"
+      href: notifyipinterfacechange.md
+    - name: "NotifyRouteChange2 function"
+      href: notifyroutechange2.md
+    - name: "NotifyUnicastIpAddressChange function"
+      href: notifyunicastipaddresschange.md
+  - name: "Teredo IPv6 Client Management Functions"
+    items: 
+    - name: "GetTeredoPort function"
+      href: getteredoport.md
+    - name: "NotifyStableUnicastIpAddressTable function"
+      href: notifystableunicastipaddresstable.md
+    - name: "NotifyTeredoPortChange function"
+      href: notifyteredoportchange.md
 - name: "Windows Filtering Platform Callout Drivers"
   items: 
   - name: "Roadmap for Developing WFP Callout Drivers"
