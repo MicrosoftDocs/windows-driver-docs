@@ -39,6 +39,8 @@ For the convenience of being able to scan a stream pattern from a flat buffer, W
 
 For out-of-band inspection or modification, a stream callout would follow the similar pattern as the packet inspection callout: it would first clone all indicated stream segments for deferred processing, and then it would block those segments. The inspected or modified data is later injected back into the data stream. When injecting data out-of-band, the callout must return **FWP\_ACTION\_BLOCK** on all indicated segments to guarantee integrity of the resulting stream. An out-of-band inspection module must not arbitrarily inject a FIN (which indicates no more data from the sender) into an outgoing data stream. If the module must drop the connection, its *classifyFn* callout function must set the **streamAction** member of the [**FWPS\_STREAM\_CALLOUT\_IO\_PACKET0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_stream_callout_io_packet0_) structure to **FWPS\_STREAM\_ACTION\_DROP\_CONNECTION**.
 
+***Note***  It is a **violation of contract** for callouts to switch from out-of-band to inline, and can cause unexpected behaviors. Ensure out-of-band callouts are meeting each of the specified criteria.
+
 Because stream data can be indicated as a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) chain, FWP provides the [**FwpsCloneStreamData0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsclonestreamdata0) and [**FwpsDiscardClonedStreamData0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsdiscardclonedstreamdata0) utility functions that operate on net buffer list chains.
 
 WFP also supports stream data throttling for the incoming direction. If a callout cannot keep pace with the incoming data rate, it can return **FWPS\_STREAM\_ACTION\_DEFER** to "pause" the stream. The stream can then be "resumed" by calling the [**FwpsStreamContinue0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsstreamcontinue0) function. Deferring a stream with this function causes the TCP/IP stack to stop ACK-processing incoming data. This causes the TCP sliding window to decrease toward 0.
@@ -49,7 +51,7 @@ Injected stream data will not be re-indicated to the callout, but it will be mad
 
 The [Windows Filtering Platform Stream Edit Sample](https://go.microsoft.com/fwlink/p/?LinkId=617933) in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub shows how to perform inline and out-of-band editing at the stream layer.
 
-**Note**  Windows Server 2008 and later do not support removal of a stream filter during the following processes:
+***Note***  Windows Server 2008 and later do not support removal of a stream filter during the following processes:
 -   The callout is performing out-of-band packet injection.
 
 -   The callout is requesting more data by setting the **streamAction** member of the [**FWPS\_STREAM\_CALLOUT\_IO\_PACKET0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_stream_callout_io_packet0_) structure to **FWPS\_STREAM\_ACTION\_NEED\_MORE\_DATA**.
