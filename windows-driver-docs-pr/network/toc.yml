@@ -4520,6 +4520,8 @@
       href: mib-anycastipaddress-table.md
     - name: "MIB_IF_ROW2 structure"
       href: mib-if-row2.md
+    - name: "MIB_IF_TABLE2 structure"
+      href: mib-if-table2.md
     - name: "MIB_IFSTACK_ROW structure"
       href: mib-ifstack-row.md
     - name: "MIB_IFSTACK_TABLE structure"
