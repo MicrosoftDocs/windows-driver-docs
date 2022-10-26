@@ -1,28 +1,28 @@
 ---
-title: USB Audio 2.0 Drivers
-description: Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with Windows. This driver provides basic functionality.
-ms.date: 12/19/2019
+title: USB Audio 2.0 drivers
+description: A USB Audio 2.0 driver is shipped with Windows. This driver provides basic audio over USB functionality.
+ms.date: 10/25/2022
 ms.topic: article
 ms.custom: 
 - CI 111498
 - CSSTroubleshooting
 ---
 
-# USB Audio 2.0 Drivers
+# USB Audio 2.0 drivers
 
-Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with Windows. It is designed to support the USB Audio 2.0 device class. The driver is a WaveRT audio port class miniport. For more information about the  USB Audio 2.0 device class, see [https://www.usb.org/documents?search=&type%5B0%5D=55&items_per_page=50](https://www.usb.org/documents?search=&type%5B0%5D=55&items_per_page=50).
+Starting with Windows 10, release 1703, a USB Audio 2.0 driver is shipped with Windows. It is designed to support the USB Audio 2.0 device class. The driver is a WaveRT audio port class miniport.
 
-The driver is named: _usbaudio2.sys_ and the associated inf file is _usbaudio2.inf_.
+The driver is named: *usbaudio2.sys* and the associated inf file is *usbaudio2.inf*.
 
-The driver will identify in device manager as "USB Audio Class 2 Device". This name will be overwritten with a USB Product string, if it is available.
+The driver will identify in device manager as "USB Audio Class 2 Device". This name will be overwritten with a USB product string, if it is available.
 
 The driver is automatically enabled when a compatible device is attached to the system. However, if a third-party driver exists on the system or Windows Update, that driver will be installed and override the class driver.
 
 ## Architecture
 
-usbaudio2.sys fits within the wider architecture of Windows USB Audio as shown. 
+The *usbaudio2.sys* driver fits within the wider architecture of Windows USB Audio as shown.
 
-![stack diagram showing Kmixer.sys at the top and a USB audio device at the bottom.](images/usb-2-0-audio-arch.png)
+:::image type="content" source="images/usb-2-0-audio-arch.png" alt-text="A stack diagram showing ks.sys at the top and USB Audio devices at the bottom.":::
 
 ## Related USB specifications
 
@@ -63,7 +63,7 @@ The driver supports all entity types defined in ADC-2 3.13.
 
 Each Terminal Entity must have a valid clock connection in compatible USB Audio 2.0 hardware. The clock path may optionally include Clock Multiplier and Clock Selector units and must end in a Clock Source Entity.
 
-The driver supports one single clock source only. If a device implements multiple clock source entities and a clock selector, then the driver will use the clock source that is selected by default and will not modify the clock selector’s position.
+The driver supports one single clock source only. If a device implements multiple clock source entities and a clock selector, then the driver will use the clock source that is selected by default and will not modify the clock selector's position.
 
 A Processing Unit (ADC-2 3.13.9) with more than one input pin is not supported.
 
@@ -81,9 +81,9 @@ The driver supports the following endpoint synchronization types (USB-2 5.12.4.1
 
 For the asynchronous OUT case the driver supports explicit feedback only. A feedback endpoint must be implemented in the respective alternate setting of the AS interface. The driver does not support implicit feedback.
 
-There is currently limited support for devices using a shared clock for multiple endpoints. 
+There is currently limited support for devices using a shared clock for multiple endpoints.
 
-For the Adaptive IN case the driver does not support a feedforward endpoint. If such an endpoint is present in the alternate setting, it will be ignored. The driver handles the Adaptive IN stream in the same way as an Asynchronous IN stream.
+For the Adaptive IN case the driver does not support a feed forward endpoint. If such an endpoint is present in the alternate setting, it will be ignored. The driver handles the Adaptive IN stream in the same way as an Asynchronous IN stream.
 
 The size of isochronous packets created by the device must be within the limits specified in FMT-2.0 section 2.3.1.1. This means that the deviation of actual packet size from nominal size must not exceed +/- one audio slot (audio slot = channel count samples).
 
@@ -117,12 +117,12 @@ For details on this specification, refer to FMT-2 2.3.1.6.
 
 The following restrictions apply:
 
-|Format                      |Subslot size            |Bit resolution                 |
-|----|----|----|
-| Type I PCM format: 		 | 1 <= bSubslotSize <= 4 |		8 <= bBitResolution <= 32 |
-| Type I PCM8 format:		 | bSubslotSize == 1	  | 	bBitResolution == 8       |
-| Type I IEEE_FLOAT format:	 | bSubslotSize == 4	  | 	bBitResolution == 32      |
-| Type III IEC61937 formats: | bSubslotSize == 2	  | 	bBitResolution == 16      |
+| Format                     | Subslot size           | Bit resolution            |
+|----------------------------|------------------------|---------------------------|
+| Type I PCM format:         | 1 <= bSubslotSize <= 4 | 8 <= bBitResolution <= 32 |
+| Type I PCM8 format:        | bSubslotSize == 1      | bBitResolution == 8       |
+| Type I IEEE_FLOAT format:  | bSubslotSize == 4      | bBitResolution == 32      |
+| Type III IEC61937 formats: | bSubslotSize == 2      | bBitResolution == 16      |
 
 ### Class-Specific AS isochronous audio data endpoint descriptor 
 
@@ -201,7 +201,7 @@ USB\Class_01&SubClass_02&Prot_20
 USB\Class_01&SubClass_03&Prot_20
 ```
 
-See the USB audio 2.0 specification for subclass types.
+See the USB Audio 2.0 specification for subclass types.
 
 USB Audio 2.0 Devices with MIDI (subclass 0x03 above) will enumerate the MIDI function as a separate multi-function device with usbaudio.sys (USB Audio 1.0 driver) loaded.
 
@@ -224,7 +224,7 @@ An arbitrary number of channels (greater than eight) are not supported in shared
 
 ## IHV USB Audio 2.0 drivers and updates
 
-For IHV provided third party driver USB Audio 2.0 drivers, those drivers will continue to be preferred for their devices over our in-box driver unless they update their driver to explicitly override this behavior and use the in-box driver. 
+For IHV provided third party driver USB Audio 2.0 drivers, those drivers will continue to be preferred for their devices over our in-box driver unless they update their driver to explicitly override this behavior and use the in-box driver.
 
 ## Audio Jack Registry Descriptions
 
@@ -237,7 +237,7 @@ The following describes the audio jack information settings in the registry:
 ```text
 REG_DWORD  T<tid>_NrJacks                 # of the jack on this device
 REG_DWORD  T<tid>_J<n>_ChannelMapping     Channel mask. The value is defined in ksmedia.h. e.g. SPEAKER_FRONT_RIGHT or KSAUDIO_SPEAKER_5POINT1_SURROUND
-REG_DWORD  T<tid>_J<n>_ConnectorType      The enum value is define in EPcxConnectionType. 
+REG_DWORD  T<tid>_J<n>_ConnectorType      The enum value is define in EPcxConnectionType.
 REG_DWORD  T<tid>_J<n>_GeoLocation        The enum value is define in EPcxGeoLocation.
 REG_DWORD  T<tid>_J<n>_GenLocation        The enum value is define in EPcxGenLocation.
 REG_DWORD  T<tid>_J<n>_PortConnection     The enum value is define in EPxcPortConnection.
@@ -245,8 +245,8 @@ REG_DWORD  T<tid>_J<n>_Color              The color needs to be represent by RGB
 ```
 
 \<tid\> = terminal ID (As defined in the descriptor)
-  
-\<n\>   = Jack number (1 ~ n). 
+
+\<n\> = Jack number (1 ~ n).
 
 Convention for \<tid\> and \<n\> is:
 
@@ -289,7 +289,7 @@ UCHAR Example2_MSOS20DescriptorSetForUAC2 [0x76] = {
     0x04, 0x00,             // wDescriptorType – 5 for Registry Property
     0x04, 0x00,             // wPropertyDataType - 4 for REG_DWORD
     0x34, 0x00,             // wPropertyNameLength – 52 bytes
-    0x54, 0x00, 0x30, 0x00, // Property Name - “T01_J01_ChannelMapping”
+    0x54, 0x00, 0x30, 0x00, // Property Name - "T01_J01_ChannelMapping"
     0x31, 0x00, 0x5f, 0x00,
     0x4a, 0x00, 0x30, 0x00,
     0x31, 0x00, 0x5f, 0x00,
@@ -311,7 +311,7 @@ UCHAR Example2_MSOS20DescriptorSetForUAC2 [0x76] = {
     0x04, 0x00,             // wDescriptorType – 5 for Registry Property
     0x04, 0x00,             // wPropertyDataType - 4 for REG_DWORD
     0x1C, 0x00,             // wPropertyNameLength – 28 bytes
-    0x54, 0x00, 0x30, 0x00, // Property Name - “T01_J01_Color”
+    0x54, 0x00, 0x30, 0x00, // Property Name - "T01_J01_Color"
     0x31, 0x00, 0x5f, 0x00,
     0x4a, 0x00, 0x30, 0x00,
     0x31, 0x00, 0x5f, 0x00,
@@ -324,26 +324,23 @@ UCHAR Example2_MSOS20DescriptorSetForUAC2 [0x76] = {
 
 ## Troubleshooting
 
-If the driver does not start, the system event log should be checked. The driver logs events which indicate the reason for the failure. Similarly, audio logs can be manually collected following the steps described in [this blog entry](https://matthewvaneerde.wordpress.com/2017/01/09/collecting-audio-logs-the-old-fashioned-way/). If the failure may indicate a driver problem, please report it using the Feedback Hub described below, and include the logs.
+If the driver does not start, the system event log should be checked. The driver logs events which indicate the reason for the failure. Similarly, audio logs can be manually collected following the steps described in Matthew van Eerde's web log article, [Collecting audio logs the old-fashioned way](https://matthewvaneerde.wordpress.com/2017/01/09/collecting-audio-logs-the-old-fashioned-way/). If the failure may indicate a driver problem, please report it using the Feedback Hub described below, and include the logs.
 
-For information on how to read logs for the USB Audio 2.0 class driver using supplemental TMF files, see [this blog entry](https://matthewvaneerde.wordpress.com/2016/09/26/report-problems-with-logs-and-suggest-features-with-the-feedback-hub//). For general information on working with TMF files, see [Displaying a Trace Log with a TMF File](../devtest/displaying-a-trace-log-with-a-tmf-file.md).
+For information on how to read logs for the USB Audio 2.0 class driver using supplemental TMF files, see [Report problems, with logs, and suggest features, with the Feedback Hub](https://matthewvaneerde.wordpress.com/2016/09/26/report-problems-with-logs-and-suggest-features-with-the-feedback-hub/) on Matthew van Eerde's web log. For general information on working with TMF files, see [Displaying a Trace Log with a TMF File](../devtest/displaying-a-trace-log-with-a-tmf-file.md).
 
-For information on "Audio services not responding" error and USB audio device does not work in Windows 10 version 1703 see, [USB Audio Not Playing](usb-audio-not-playing.md)
+For information on "Audio services not responding" error and USB Audio device does not work in Windows 10 version 1703 see, [USB Audio Not Playing](usb-audio-not-playing.md)
 
 ## Feedback Hub
 
-If you run into a problem with this driver, collect audio logs and then  follow steps outlined in [this blog entry](/archive/blogs/matthew_van_eerde/report-problems-with-logs-and-suggest-features-with-the-feedback-hub) to bring it to our attention via the Feedback Hub.
+If you run into a problem with this driver, collect audio logs and then follow steps outlined in [Report problems, with logs, and suggest features, with the Feedback Hub](https://matthewvaneerde.wordpress.com/2016/09/26/report-problems-with-logs-and-suggest-features-with-the-feedback-hub/) to bring it to our attention.
 
 ## Driver development
 
-This USB Audio 2.0 class driver was developed by Thesycon and is supported by Microsoft.
+This USB Audio 2.0 class driver was developed by [Thesycon](https://www.thesycon.info/eng/usb_audiodriver.shtml) and is supported by Microsoft.
 
 ### See also
 
-[Windows Driver Model (WDM)](../kernel/writing-wdm-drivers.md)
-
-[Audio Drivers Overview](./getting-started-with-wdm-audio-drivers.md)
-
-[WaveRT Port Driver](./introducing-the-wavert-port-driver.md)
-
-[Low Latency Audio](./low-latency-audio.md)
+- [Windows Driver Model (WDM)](../kernel/writing-wdm-drivers.md)
+- [Audio Drivers Overview](./getting-started-with-wdm-audio-drivers.md)
+- [WaveRT Port Driver](./introducing-the-wavert-port-driver.md)
+- [Low Latency Audio](./low-latency-audio.md)
