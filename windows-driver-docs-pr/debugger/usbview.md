@@ -1,28 +1,27 @@
 ---
-title: USBView in Windows
-description: USBView
+title: Universal Serial Bus Viewer in Windows
+description: Universal Serial Bus Viewer is a Windows graphical UI app that you can use to browse all USB controllers and connected USB devices on your computer.
 keywords: ["USBView"]
-ms.date: 08/06/2021
+ms.date: 10/25/2022
 ---
 
-# USBView
+# Universal Serial Bus Viewer in Windows
 
-Universal Serial Bus Viewer (USBView) or USBView.exe is a Windows graphical UI app that you can use to browse all USB controllers and connected USB devices on your computer. USBView works on all versions of Windows.
+The Universal Serial Bus Viewer (USBView) or usbview.exe is a Windows app that you can use to browse all USB controllers and connected USB devices on your computer. USBView works on all versions of Windows.
 
-## <span id="Where_to_get_USBView"></span><span id="where_to_get_usbview"></span><span id="WHERE_TO_GET_USBVIEW"></span>Where to get USBView
+## Where to get USBView
 
 To download  and use USBView, complete the following steps:
 
-1. [Download and install the Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+1. [Download and install the Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk/).
 
-2. During the installation, select only the **Debugging Tools for Windows** box and clear all other boxes.
+1. During the installation, select only the **Debugging Tools for Windows** box and clear all other boxes.
 
-3. By default, on a x64 PC the SDK will install USBView to the following directory.
+1. By default, on a x64 PC the SDK will install USBView to the following directory.
 
    `C:\Program Files (x86)\Windows Kits\10\Debuggers\x64`
 
-4. Open the kits debugger directory for the processor type you're running, and then select USBView.exe to start the utility.
-
+1. Open the kits debugger directory for the processor type you're running, and then select usbview.exe to start the utility.
 
 ## USBView source code
 
@@ -30,14 +29,13 @@ To download  and use USBView, complete the following steps:
 
 ## Use USBView
 
-
-USBView is a sample application can enumerate basic information about USB host controllers, USB hubs, and attached USB devices. It can also query information about the devices from the registry and through USB requests to the devices.
+USBView is a sample application that enumerates basic information about USB host controllers, USB hubs, and attached USB devices. It also queries information about devices from the registry and through USB requests to the devices.
 
 The main USBView window contains two panes. The left pane displays a connection-oriented tree view that you can use to select any USB device.
 
 The right pane displays the USB data structures that pertain to the selected USB device. These structures include Device, Configuration, Interface, and Endpoint Descriptors, as well as the current device configuration.
 
-As USBView is an older application, it may not display newer USB information, so other options such as Device Manager should be used instead as necessary. For more information on the IOCTLs that USBView uses to query information, see [USBView](https://github.com/Microsoft/Windows-driver-samples/tree/main/usb/usbview).
+As USBView is an older application, it may not display newer USB information. Other tools like Device Manager should be used as necessary. For more information on the IOCTLs that USBView uses to query information, see [USBView](https://github.com/Microsoft/Windows-driver-samples/tree/main/usb/usbview).
 
 ## Use Device Manager to display USB info
 
@@ -45,21 +43,20 @@ To use Device Manager to display USB info:
 
 1. Select Windows logo key+R, enter **devmgmt.msc** into the pop-up box, and then select Enter.
 
-2. In Device Manager, select your computer so that it's highlighted.
+1. In Device Manager, select your computer so that it's highlighted.
 
-3. Select **Action**, and then select **Scan for hardware changes**.
+1. Select **Action**, and then select **Scan for hardware changes**.
 
-4. Select **View**, and then select **Hidden Devices** to display additional devices (for example, those that are not currently active). 
+1. Select **View**, and then select **Show hidden devices** to display additional devices (for example, those that are not currently active). 
 
-5. Expand the **Universal Serial Bus controllers** node in Device Manager and select the device in question.
+1. Expand the **Universal Serial Bus controllers** node in Device Manager and select the device in question.
 
-6. Select and hold (or right-click) to select **Properties** and view summary device status info.
+1. Right-click and select **Properties** to view summary device status info.
 
-7. Select the **Details** tab to view additional info. 
+1. Select the **Details** tab to view additional info.
 
-8. Select **Property** to view details such as **Status** or **Problem code**.
-
+1. Select **Property** to view details such as **Status** or **Problem code**.
 
 ## Windows USB troubleshooter
 
-If you're trying to diagnose a USB device that doesn't eject using the **Safely Remove Hardware** dialog box, try using the [Windows USB Troubleshooter](https://support.microsoft.com/help/17614/windows-10-troubleshoot-common-usb-problems).
+If you're trying to diagnose a USB device that doesn't eject using the **Safely Remove Hardware** dialog box, try using the [Windows USB Troubleshooter](https://support.microsoft.com/windows/troubleshoot-common-usb-problems-5e9a9b49-ad43-702e-083e-6107e95deb88).
