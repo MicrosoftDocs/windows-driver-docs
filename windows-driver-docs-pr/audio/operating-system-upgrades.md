@@ -8,7 +8,7 @@ keywords:
 - preserving audio settings WDK audio
 - CAPX settings framework
 - migrating settings WDK audio
-ms.date: 09/09/2022
+ms.date: 10/25/2022
 ---
 
 # Operating System Upgrades
@@ -26,7 +26,7 @@ This endpoint migration process can run in the following situations.
 - The existing audio driver is reinstalled in place. This reinstallation can occur when the audio troubleshooter is run. This can also occur through the device manager by doing an "update driver" and selecting the driver that is already installed.
 - AudioEndpointBuilder is serviced. This occurs whenever there is a bug fix in the AudioEndpointBuilder service that is updated in released versions of Windows.
 - The firmware revision on a USB audio driver is changed.
-- The audio driver changes the endpoint configuration via `KSPROPERTY_JACK_DESCRIPTION3`.
+- The audio driver changes the endpoint configuration via [**KSPROPERTY_JACK_DESCRIPTION3**](ksproperty-jack-description3.md).
 
 ### The audio endpoint migration process
 
@@ -116,6 +116,8 @@ Some drivers, however, blindly overwrite these settings with defaults each time 
 The directives in the add-registry section of the driver's INF file specify whether existing registry entries should be overwritten. For more information, see the description of the FLG\_ADDREG\_NOCLOBBER flag in [**INF AddReg Directive**](../install/inf-addreg-directive.md).
 
 ## See also
+
+[**KSPROPERTY_JACK_DESCRIPTION3**](ksproperty-jack-description3.md)
 
 [DEVPKEY_Device_DeviceDesc](../install/devpkey-device-devicedesc.md)
 

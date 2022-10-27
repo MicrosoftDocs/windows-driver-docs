@@ -1251,6 +1251,8 @@
       href: ksjack-description.md
     - name: "KSJACK_DESCRIPTION2"
       href: ksjack-description2.md
+    - name: "KSJACK_DESCRIPTION3"
+      href: ksjack-description3.md
     - name: "KSPROPERTY_AC3_ALTERNATE_AUDIO"
       href: ksproperty-ac3-alternate-audio.md
     - name: "KSPROPERTY_AC3_BIT_STREAM_MODE"
@@ -1472,7 +1474,9 @@
     - name: "KSPROPERTY_JACK_DESCRIPTION"
       href: ksproperty-jack-description.md
     - name: "KSPROPERTY_JACK_DESCRIPTION2"
-      href: ksproperty-jack-description2.md
+      href: ksproperty-jack-description2.md      
+    - name: "KSPROPERTY_JACK_DESCRIPTION3"
+      href: ksproperty-jack-description3.md
     - name: "KSPROPERTY_JACK_SINK_INFO"
       href: ksproperty-jack-sink-info.md
     - name: "KSPROPERTY_ONESHOT_DISCONNECT"

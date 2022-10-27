@@ -290,6 +290,10 @@ When an audio device does not expose a physically accessible jack, the audio dev
 
 [**KSPROPERTY\_JACK\_DESCRIPTION**](ksproperty-jack-description.md)
 
+[**KSPROPERTY\_JACK\_DESCRIPTION2**](ksproperty-jack-description2.md)
+
+[**KSPROPERTY\_JACK\_DESCRIPTION3**](ksproperty-jack-description3.md)
+
  
 
  

@@ -3,7 +3,7 @@ title: Default Audio Endpoint Selection
 description: Default Audio Endpoint Selection 
 keywords:
 - audio default endpoint selection
-ms.date: 05/20/2021
+ms.date: 10/24/2022
 ---
 
 # Default Audio Endpoint Selection Starting in Windows 10
@@ -448,6 +448,8 @@ All heuristic settings are controlled through registry settings. Windows 10 is s
 [Jack Description Property](jack-description-property.md)
 
 [KSPROPERTY\_JACK\_DESCRIPTION2](ksproperty-jack-description2.md)
+
+[KSPROPERTY_JACK_DESCRIPTION3](ksproperty-jack-description3.md)
 
 [Pin Category Property](pin-category-property.md)
 

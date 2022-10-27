@@ -1,7 +1,7 @@
 ---
 title: Ksmedia.h
 description: This section contains reference topics for the Ksmedia.h header.
-ms.date: 11/27/2018
+ms.date: 10/24/2022
 ---
 
 # Ksmedia.h
@@ -125,6 +125,7 @@ This section contains reference topics for the Ksmedia.h header.
 |[KSPROPERTY_JACK_CONTAINERID](ksproperty-jack-containerid.md)|The KSPROPERTY_JACK_CONTAINERID property is implemented as a pin-wise property that is accessed by using the filter handle.|
 |[KSPROPERTY_JACK_DESCRIPTION](ksproperty-jack-description.md)|The KSPROPERTY_JACK_DESCRIPTION property is implemented as a multi-item, pin-wise property that is accessed through the filter handle.|
 |[KSPROPERTY_JACK_DESCRIPTION2](ksproperty-jack-description2.md)|The KSPROPERTY_JACK_DESCRIPTION2 property is implemented as a pin-wise property that is accessed by using the filter handle.|
+|[KSPROPERTY_JACK_DESCRIPTION3](ksproperty-jack-description3.md)|The KSPROPERTY_JACK_DESCRIPTION3 property is implemented as a pin-wise property that is accessed by using the filter handle.|
 |[KSPROPERTY_JACK_SINK_INFO](ksproperty-jack-sink-info.md)|The KSPROPERTY_JACK_SINK_INFO property is implemented as a pin-wise property that is accessed by using the filter handle.|
 |[KSPROPERTY_ONESHOT_DISCONNECT](ksproperty-oneshot-disconnect.md)|The KSPROPERTY_ONESHOT_DISCONNECT property is used to prompt the audio driver to disconnect from the Bluetooth audio device.|
 |[KSPROPERTY_ONESHOT_RECONNECT](ksproperty-oneshot-reconnect.md)|The KSPROPERTY_ONESHOT_RECONNECT property is used to prompt the audio driver to attempt to connect to the Bluetooth audio device.|

@@ -15,6 +15,8 @@ The `KSPROPSETID_Jack` property set includes the [**KSPROPERTY\_JACK**](ksproper
 
 [**KSPROPERTY\_JACK\_DESCRIPTION2**](ksproperty-jack-description2.md)
 
+[**KSPROPERTY\_JACK\_DESCRIPTION3**](ksproperty-jack-description3.md)
+
 [**KSPROPERTY\_JACK\_SINK\_INFO**](ksproperty-jack-sink-info.md)
 
 [**KSPROPERTY\_JACK\_CONTAINERID**](ksproperty-jack-containerid.md)
