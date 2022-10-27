@@ -206,7 +206,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <p><a href="how-to-send-a-usb-bulk-transfer--uwp-app-.md" data-raw-source="[How to send a USB bulk transfer request (UWP app)](how-to-send-a-usb-bulk-transfer--uwp-app-.md)">How to send a USB bulk transfer request (UWP app)</a>.</p></td>
 <td><p><a href="/windows/win32/api/winusb/nf-winusb-winusb_writepipe" data-raw-source="[&lt;strong&gt;WinUsb_WritePipe&lt;/strong&gt;](/windows/win32/api/winusb/nf-winusb-winusb_writepipe)"><strong>WinUsb_WritePipe</strong></a></p>
 <p><a href="/windows/win32/api/winusb/nf-winusb-winusb_readpipe" data-raw-source="[&lt;strong&gt;WinUsb_ReadPipe&lt;/strong&gt;](/windows/win32/api/winusb/nf-winusb-winusb_readpipe)"><strong>WinUsb_ReadPipe</strong></a></p>
-<p>See <a href="using-winusb-api-to-communicate-with-a-usb-device.md#step-4-issue-i-o-requests" data-raw-source="[Issue I/O Requests](using-winusb-api-to-communicate-with-a-usb-device.md#step-4-issue-i-o-requests)">Issue I/O Requests</a>.</p></td>
+<p>See <a href="using-winusb-api-to-communicate-with-a-usb-device.md#step-4-issue-io-requests" data-raw-source="[Issue I/O Requests](using-winusb-api-to-communicate-with-a-usb-device.md#step-4-issue-io-requests)">Issue I/O Requests</a>.</p></td>
 </tr>
 </tbody>
 </table>
