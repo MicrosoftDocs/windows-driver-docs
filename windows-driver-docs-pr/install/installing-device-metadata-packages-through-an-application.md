@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 
 To install device metadata packages in the [device metadata store](device-metadata-store.md) by using an application, such as a device installation application, follow these steps:
 
-1.  The application first queries the path of the [device metadata store](device-metadata-store.md) by calling the [SHGetKnownFolderPath](/windows/win32/api/shlobj_core/nf-shlobj_core-shgetknownfolderpath) function. The [KNOWNFOLDERID](/previous-versions//bb762584(v=vs.85)) GUID for the device metadata store is {5CE4A5E9-E4EB-479D-B89F-130C02886155}.
+1.  The application first queries the path of the [device metadata store](device-metadata-store.md) by calling the [SHGetKnownFolderPath](/windows/win32/api/shlobj_core/nf-shlobj_core-shgetknownfolderpath) function. The [KNOWNFOLDERID](/windows/win32/shell/knownfolderid) GUID for the device metadata store is **FOLDERID_DeviceMetadataStore** {5CE4A5E9-E4EB-479D-B89F-130C02886155}.
 
 2.  The application then copies the device metadata package to the device metadata store by calling the [CopyFile]( https://go.microsoft.com/fwlink/p/?linkid=189596) function.
 
