@@ -16,4 +16,4 @@ For general information on working with TMF files, see [Displaying a Trace Log w
 
 ## Troubleshooting Topics
 
-[USB audio device not playing ](usb-audio-not-playing.md)
+[USB audio device not playing](usb-audio-not-playing.md)

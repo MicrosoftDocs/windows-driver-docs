@@ -67,7 +67,7 @@ The following list shows the WinUSB functions that you can call to get USB-speci
   - The `USB_ENDPOINT_DIRECTION_IN (PipeId)` macro returns **TRUE** if the direction is in.
   - The `USB_ENDPOINT_DIRECTION_OUT(PipeId)` macro returns **TRUE** if the direction is out.
 
-  The application uses the **PipeId** value to identify which pipe to use for data transfer in calls to WinUSB functions, such as **[WinUsb_ReadPipe](/windows/win32/api/winusb/nf-winusb-winusb_readpipe) (described in the "Issue I/O Requests" section of this topic), so the example stores all three **PipeId** values for later use.
+  The application uses the **PipeId** value to identify which pipe to use for data transfer in calls to WinUSB functions, such as **[WinUsb_ReadPipe](/windows/win32/api/winusb/nf-winusb-winusb_readpipe) (described in the "Issue I/O Requests" section of this topic)**, so the example stores all three **PipeId** values for later use.
 
 The following example code gets the speed of the device that is specified by the WinUSB interface handle.
 

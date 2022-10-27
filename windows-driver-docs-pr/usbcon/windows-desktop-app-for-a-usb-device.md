@@ -51,15 +51,15 @@ It is simpler to use WinUSB functions to communicate with a device than it is to
 
 5. Get information about your device and view its descriptors.
 
-    For conceptual information see [Concepts for all USB developers](usb-concepts-for-all-developers.md). Get information about your device capabilities by reading the configuration descriptor, interface descriptors for each supported alternate settings, and their endpoint descriptors. For more information see [Query the Device for USB Descriptors](using-winusb-api-to-communicate-with-a-usb-device.md#query).
+    For conceptual information see [Concepts for all USB developers](usb-concepts-for-all-developers.md). Get information about your device capabilities by reading the configuration descriptor, interface descriptors for each supported alternate settings, and their endpoint descriptors. For more information see [Query the Device for USB Descriptors](using-winusb-api-to-communicate-with-a-usb-device.md#step-2-query-the-device-for-usb-descriptors).
 
 6. Send a USB control transfer.
 
-    Send standard control requests and vendor commands to your device. For more information see [Send Control Transfer to the Default Endpoint](using-winusb-api-to-communicate-with-a-usb-device.md#control).
+    Send standard control requests and vendor commands to your device. For more information see [Send Control Transfer to the Default Endpoint](using-winusb-api-to-communicate-with-a-usb-device.md#step-3-send-control-transfer-to-the-default-endpoint).
 
 7. Send bulk or interrupt transfers.
 
-    Perform read and write operations to and from the bulk, interrupt, and isochronous endpoints supported by your device. For more information see [Issue I/O Requests](using-winusb-api-to-communicate-with-a-usb-device.md#io).
+    Perform read and write operations to and from the bulk, interrupt, and isochronous endpoints supported by your device. For more information see [Issue I/O Requests](using-winusb-api-to-communicate-with-a-usb-device.md#step-4-issue-io-requests).
 
 8. Send isochronous transfers.
 

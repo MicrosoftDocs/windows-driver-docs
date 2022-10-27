@@ -1,7 +1,7 @@
 ---
 description: A Universal Serial Bus (USB) device defines its capabilities and features through configurations, interfaces, alternate settings, and endpoints.
 title: Getting started with USB development
-ms.date: 04/20/2017
+ms.date: 10/27/2022
 ---
 
 # Getting started with USB development
@@ -41,10 +41,7 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 </tbody>
 </table>
 
- 
-
 ## Common USB scenarios
-
 
 **1—Get the device handle** for communication and use the retrieved handle or object to send data transfers.
 
@@ -72,8 +69,6 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 </tr>
 </tbody>
 </table>
-
- 
 
 **USB descriptor retrieval** to get information about the device's configuration(s), interface(s), setting(s), and their endpoint(s).
 
@@ -106,12 +101,10 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <td><p><a href="/windows/win32/api/winusb/nf-winusb-winusb_getdescriptor" data-raw-source="[&lt;strong&gt;WinUsb_GetDescriptor&lt;/strong&gt;](/windows/win32/api/winusb/nf-winusb-winusb_getdescriptor)"><strong>WinUsb_GetDescriptor</strong></a></p>
 <p><a href="/windows/win32/api/winusb/nf-winusb-winusb_queryinterfacesettings" data-raw-source="[&lt;strong&gt;WinUsb_QueryInterfaceSettings&lt;/strong&gt;](/windows/win32/api/winusb/nf-winusb-winusb_queryinterfacesettings)"><strong>WinUsb_QueryInterfaceSettings</strong></a></p>
 <p><a href="/windows/win32/api/winusb/nf-winusb-winusb_querypipe" data-raw-source="[&lt;strong&gt;WinUsb_QueryPipe&lt;/strong&gt;](/windows/win32/api/winusb/nf-winusb-winusb_querypipe)"><strong>WinUsb_QueryPipe</strong></a></p>
-<p>See <a href="using-winusb-api-to-communicate-with-a-usb-device.md#query" data-raw-source="[Query the Device for USB Descriptors](using-winusb-api-to-communicate-with-a-usb-device.md#query)">Query the Device for USB Descriptors</a>.</p></td>
+<p>See <a href="using-winusb-api-to-communicate-with-a-usb-device.md#step-2-query-the-device-for-usb-descriptors" data-raw-source="[Query the Device for USB Descriptors](using-winusb-api-to-communicate-with-a-usb-device.md##step-2-query-the-device-for-usb-descriptors)">Query the Device for USB Descriptors</a>.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
 **2—Configure the device** to select an active USB configuration and setting per interface.
 
@@ -147,8 +140,6 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 </tbody>
 </table>
 
- 
-
 **3—Send control transfers** for configuring the device and performing vendor commands that are specific to particular device.
 
 <table>
@@ -177,12 +168,10 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <p><a href="/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_SendControlOutTransferAsync_Windows_Devices_Usb_UsbSetupPacket_" data-raw-source="[&lt;strong&gt;SendControlOutTransferAsync&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_SendControlOutTransferAsync_Windows_Devices_Usb_UsbSetupPacket_)"><strong>SendControlOutTransferAsync</strong></a></p>
 <p><a href="how-to-send-a-usb-control-transfer--uwp-app-.md" data-raw-source="[How to send a USB control transfer (UWP app)](how-to-send-a-usb-control-transfer--uwp-app-.md)">How to send a USB control transfer (UWP app)</a>.</p></td>
 <td><p><a href="/windows/win32/api/winusb/nf-winusb-winusb_controltransfer" data-raw-source="[&lt;strong&gt;WinUsb_ControlTransfer&lt;/strong&gt;](/windows/win32/api/winusb/nf-winusb-winusb_controltransfer)"><strong>WinUsb_ControlTransfer</strong></a></p>
-<p>See <a href="using-winusb-api-to-communicate-with-a-usb-device.md#control" data-raw-source="[Send Control Transfer to the Default Endpoint](using-winusb-api-to-communicate-with-a-usb-device.md#control)">Send Control Transfer to the Default Endpoint</a>.</p></td>
+<p>See <a href="using-winusb-api-to-communicate-with-a-usb-device.md#step-3-send-control-transfer-to-the-default-endpoint" data-raw-source="[Send Control Transfer to the Default Endpoint](using-winusb-api-to-communicate-with-a-usb-device.md#step-3-send-control-transfer-to-the-default-endpoint)">Send Control Transfer to the Default Endpoint</a>.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
 **4—Send bulk transfers**, typically used by mass storage devices that transfer large amount of data.
 
@@ -217,12 +206,10 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 <p><a href="how-to-send-a-usb-bulk-transfer--uwp-app-.md" data-raw-source="[How to send a USB bulk transfer request (UWP app)](how-to-send-a-usb-bulk-transfer--uwp-app-.md)">How to send a USB bulk transfer request (UWP app)</a>.</p></td>
 <td><p><a href="/windows/win32/api/winusb/nf-winusb-winusb_writepipe" data-raw-source="[&lt;strong&gt;WinUsb_WritePipe&lt;/strong&gt;](/windows/win32/api/winusb/nf-winusb-winusb_writepipe)"><strong>WinUsb_WritePipe</strong></a></p>
 <p><a href="/windows/win32/api/winusb/nf-winusb-winusb_readpipe" data-raw-source="[&lt;strong&gt;WinUsb_ReadPipe&lt;/strong&gt;](/windows/win32/api/winusb/nf-winusb-winusb_readpipe)"><strong>WinUsb_ReadPipe</strong></a></p>
-<p>See <a href="using-winusb-api-to-communicate-with-a-usb-device.md#io" data-raw-source="[Issue I/O Requests](using-winusb-api-to-communicate-with-a-usb-device.md#io)">Issue I/O Requests</a>.</p></td>
+<p>See <a href="using-winusb-api-to-communicate-with-a-usb-device.md#step-4-issue-i-o-requests" data-raw-source="[Issue I/O Requests](using-winusb-api-to-communicate-with-a-usb-device.md#step-4-issue-i-o-requests)">Issue I/O Requests</a>.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
 **5—Send interrupt transfers**. Data is read to retrieve hardware interrupt data.
 
@@ -249,8 +236,6 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 </tr>
 </tbody>
 </table>
-
- 
 
 **6—Send isochronous transfers**, mostly used for media streaming devices.
 
@@ -287,8 +272,6 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 </tbody>
 </table>
 
- 
-
 **7—USB selective suspend** to allow the device to enter a low power state and bring the device back to working state.
 
 <table>
@@ -321,7 +304,6 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 </tbody>
 </table>
 
- 
-
 ## Related topics
-[Universal Serial Bus (USB)](../index.yml)
+
+- [Universal Serial Bus (USB)](../index.yml)

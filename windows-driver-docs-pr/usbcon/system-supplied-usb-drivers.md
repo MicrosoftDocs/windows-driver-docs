@@ -26,7 +26,6 @@ Microsoft provides these set of drivers:
 |Biometric|WudfUsbBID.dll</br></br>WudfUsbBIDAdvanced.inf|Windows 8.1|Microsoft supports USB biometric devices by providing the [Windows Biometric Framework](/windows/win32/secbiomet/biometric-service-api-portal).|
 |USBDevice|Winusb.sys</br></br>Winusb.inf|Windows 11</br></br>Windows 10</br></br>Windows 8.1|Winusb.sys can be used as the USB device's function driver instead of implementing a driver. See [WinUSB](how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md).|
 
-
 ## Microsoft-provided USB device class drivers
 
 Microsoft provides drivers for several USB device classes approved by USB-IF. These drivers and their installation files are included in Windows. They are available in the \\Windows\\System32\\DriverStore\\FileRepository folder.
