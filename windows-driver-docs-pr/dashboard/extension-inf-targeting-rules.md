@@ -29,6 +29,16 @@ Here is how we’ll evaluate these principles when processing your submissions i
 
   **Is the Extension INF missing a declarative base?**
   
-  IF YES: Reject. Extension INFs are only compatible with DCH drivers. The only exception to this rule is if the extension INF matches on an inbox driver (e.g. for firmware update scenarios, or HSA scenarios). 
+  IF YES: Reject. Extension INFs are only compatible with DCH drivers. The only exception to this rule is if the extension INF matches on an inbox driver (e.g. for firmware update scenarios, or HSA scenarios).
+
+  **How can I extend an inbox driver?**
+
+  If you want to extend a driver that comes as part of Windows, add the following keyword to your Business Justification for the shipping label:
+  
+  `ExtendsInboxDriver = wdma_usb.inf`
+  
+  Substitute the specific Windows driver in place of `wdma_usb.inf`.
+
+  If you want to extend multiple drivers, separate the hardware IDs for each inbox driver into their own shipping labels. Do not combine hardware IDs for multiple inbox drivers. Do not combine hardware IDs for inbox drivers with hardware IDs for out-of-box drivers.
 
 Please let us know if you have any questions or feedback about these rules.
