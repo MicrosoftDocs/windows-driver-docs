@@ -1,10 +1,10 @@
 ---
-title: USB audio not playing
+title: USB audio device not playing
 description: This article discusses the "Audio services not responding" error.
 ms.date: 10/27/2022
 ---
 
-# USB audio not playing
+# USB audio device not playing
 
 This article discusses the "Audio services not responding" error and USB audio device does not work in Windows 10 version 1703.
 
