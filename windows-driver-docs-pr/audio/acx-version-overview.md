@@ -25,17 +25,17 @@ Windows OS support for ACX versions are described in the following table.
 
 ## KMDF version information
 
-ACX objects are Windows Driver Framework (WDF) objects - WDFOBJECT. For more information about WDF, see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md). ACX binds to a specific version of KMDF at runtime. For more information, see [KMDF Version History](/windows-hardware/drivers/wdf/kmdf-version-history).
+ACX objects are Windows Driver Framework (WDF) objects - WDFOBJECT. For more information about WDF, see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md). ACX binds to a specific version of KMDF at runtime. For more information, see [KMDF Version History](../wdf/kmdf-version-history.md).
 
 For information about installing different versions of WDF/KMDF, see the following topics:
 
-- [Building and Loading a WDF Driver](/windows-hardware/drivers/wdf/building-and-loading-a-kmdf-driver#which-framework-version-should-i-use)
+- [Building and Loading a WDF Driver](../wdf/building-and-loading-a-kmdf-driver.md#which-framework-version-should-i-use)
 
-- [Building a WDF driver for multiple versions of Windows](/windows-hardware/drivers/wdf/building-a-wdf-driver-for-multiple-versions-of-windows)
+- [Building a WDF driver for multiple versions of Windows](../wdf/building-a-wdf-driver-for-multiple-versions-of-windows.md)
 
-- [Specifying the KMDF Co-installer in an INF File](/windows-hardware/drivers/wdf/installing-the-framework-s-co-installer)
+- [Specifying the KMDF Co-installer in an INF File](../wdf/installing-the-framework-s-co-installer.md)
 
-ACX Binds to a specific version of KMDF at runtime. When Windows loads a kernel-mode WDF driver, the driver is dynamically bound to the KMDF run-time library (WdfMM000.sys). Multiple drivers can share the same run-time library (DLL) image, and the run-time libraries for two major versions can co-exist side by side. For information about KMDF versioning, see [Framework Library Versioning](/windows-hardware/drivers/wdf/framework-library-versioning).
+ACX Binds to a specific version of KMDF at runtime. When Windows loads a kernel-mode WDF driver, the driver is dynamically bound to the KMDF run-time library (WdfMM000.sys). Multiple drivers can share the same run-time library (DLL) image, and the run-time libraries for two major versions can co-exist side by side. For information about KMDF versioning, see [Framework Library Versioning](../wdf/framework-library-versioning.md).
 
 ## Multiple ACX version support
 

@@ -30,10 +30,10 @@ The DRIVER\_LEFT\_LOCKED\_PAGES\_IN\_PROCESS bug check has a value of 0x000000CB
  
 For more information about memory descriptor list, see the following topics: 
 
-- [Using MDLs](/windows-hardware/drivers/kernel/using-mdls)
+- [Using MDLs](../kernel/using-mdls.md)
 - [MDL structure (wdm.h)](/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl)
 
-For more information on locking memory, see [Locking Pageable Code or Data](/windows-hardware/drivers/kernel/locking-pageable-code-or-data).
+For more information on locking memory, see [Locking Pageable Code or Data](../kernel/locking-pageable-code-or-data.md).
 
 To research the cause of this bug check, use the [!lockedpages](-lockedpages.md) debugger extension to display all of the locked MDLs for the current process.
 
@@ -45,5 +45,4 @@ This bug check is issued only if the registry value  is equal to DWORD 1.
 
 If this value is not set, the system will issue the less-informative [**bug check 0x76**](bug-check-0x76--process-has-locked-pages.md) (PROCESS\_HAS\_LOCKED\_PAGES).
 
-This bug check can also be issued by Driver Verifier when the Pool Tracking option is enabled. For more information, see [Pool Tracking](/windows-hardware/drivers/devtest/pool-tracking).
-
+This bug check can also be issued by Driver Verifier when the Pool Tracking option is enabled. For more information, see [Pool Tracking](../devtest/pool-tracking.md).
