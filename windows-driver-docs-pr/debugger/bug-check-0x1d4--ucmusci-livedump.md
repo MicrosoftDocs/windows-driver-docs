@@ -39,3 +39,6 @@ Parameter | Description
 [USB Team Blog - Debugging UCSI firmware failures](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/debugging-ucsi-firmware-failures/ba-p/283226)
 
 [Universal Serial Bus (USB)](../usbcon/index.md)
+
+[Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
+

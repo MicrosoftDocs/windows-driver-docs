@@ -43,4 +43,6 @@ User initiated DXGKRNL live dump for black screen scenarios. See the values for 
 
 ## See Also
 
+[Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
+
 [Bug Check Code Reference](bug-check-code-reference2.md)

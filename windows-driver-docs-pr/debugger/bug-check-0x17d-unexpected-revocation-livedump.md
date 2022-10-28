@@ -33,11 +33,12 @@ A livedump is created to provide information to investigate.
 
 (This code can never be used for a real bug check; it is used to identify live dumps.)
 
-
-
 ## See Also
 
+[Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
+
 [Bug Check Code Reference](bug-check-code-reference2.md)
+
 
  
 

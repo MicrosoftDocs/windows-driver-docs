@@ -72,12 +72,16 @@ The CONNECTED\_STANDBY\_WATCHDOG\_TIMEOUT\_LIVEDUMP live dump has a value of 0x0
 </tbody>
 </table>
 
- 
 
 ## Cause
 
 This machine is exhibiting behavior that reduces screen-off battery life. Typically this is caused by CPU activity, device activity, or devices being in an insufficient idle state.
 
+## See Also
+
+[Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
+
+[Bug Check Code Reference](bug-check-code-reference2.md)
  
 
  

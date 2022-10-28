@@ -43,6 +43,8 @@ Additional information is available in the dump's secondary data streams.
 
 [Troubleshooting Hangs Using Live Dump (Blog)](https://techcommunity.microsoft.com/t5/Failover-Clustering/bg-p/FailoverClustering)
 
+[Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
+
 [Bug Check Code Reference](bug-check-code-reference2.md)
 
 

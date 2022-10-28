@@ -33,5 +33,6 @@ A USB device is blocking the top level controller from powering down during mode
 
 ## See Also
 
-[Bug Check Code Reference](bug-check-code-reference2.md)
+[Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
 
+[Bug Check Code Reference](bug-check-code-reference2.md)

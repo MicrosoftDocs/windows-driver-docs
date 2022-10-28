@@ -30,6 +30,8 @@ The DIRECTED\_FX\_TRANSITION\_LIVEDUMP live dump has a value of 0x000001A9. It i
 
 A device has failed its Directed Fx transition call.
 
-## See also
+## See Also
 
 [Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
+
+[Bug Check Code Reference](bug-check-code-reference2.md)

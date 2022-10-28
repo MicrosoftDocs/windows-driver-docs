@@ -2728,6 +2728,10 @@
       href: bug-check-0x1db--ipi-watchdog-timeout.md
     - name: "Bug Check 0x1DC: DMA_COMMON_BUFFER_VECTOR_ERROR"
       href: bug-check-0x1dc--dma-common-buffer-vector-error.md
+    - name: "Bug Check 0x1E0: INVALID_ALTERNATE_SYSTEM_CALL_HANDLER_REGISTRATION"
+      href: bug-check-0x1e0--invalid-alternate-system-call-handler-registration.md
+    - name: "Bug Check 0x1E1: DEVICE_DIAGNOSTIC_LOG_LIVEDUMP"
+      href: bug-check-0x1e1--device-diagnostic-log-livedump.md          
     - name: "Bug Check 0x1E4: VIDEO_DXGKRNL_SYSMM_FATAL_ERROR"
       href: bug-check-0x1e4--video-dxgkrnl-sysmm-fatal-error.md      
     - name: "Bug Check 0x1E9: ILLEGAL_ATS_INITIALIZATION"
@@ -2736,6 +2740,10 @@
       href: bug-check-0x1ea--secure-pci-config-space-access-violation.md     
     - name: "Bug Check 0x1EB: DAM_WATCHDOG_TIMEOUT"
       href: bug-check-0x1eb--dam-watchdog-timeout.md
+    - name: "Bug Check 0x1ED: HANDLE_ERROR_ON_CRITICAL_THREAD"
+      href: bug-check-0x1ed--handle-error-on-critical-thread.md
+    - name: "Bug Check 0x1F5: APPLICATION_HANG_KERNEL_LIVEDUMP"
+      href: bug-check-0x1f5--application-hang-kernel-livedump.md      
     - name: "Bug Check 0x356: XBOX_ERACTRL_CS_TIMEOUT"
       href: bug-check-0x356--xbox-eractrl-cs-timeout.md
     - name: "Bug Check 0xBFE: BC_BLUETOOTH_VERIFIER_FAULT"

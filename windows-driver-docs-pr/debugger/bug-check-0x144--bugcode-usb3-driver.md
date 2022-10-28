@@ -397,6 +397,9 @@ To send a chained [**MDL**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl), the 
 
 ## <span id="see_also"></span>See also
 
-
 [Universal Serial Bus (USB)](../index.yml)
+
+[Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
+
+[Bug Check Code Reference](bug-check-code-reference2.md)
 

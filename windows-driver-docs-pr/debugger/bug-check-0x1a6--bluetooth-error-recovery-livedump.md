@@ -33,5 +33,7 @@ The Bluetooth radio driver (bthport.sys) has initiated error recovery to attempt
 
 ## See Also
 
+[Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
+
 [Bug Check Code Reference](bug-check-code-reference2.md)
 
