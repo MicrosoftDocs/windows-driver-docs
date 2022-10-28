@@ -1,12 +1,12 @@
 ---
 title: USB audio device not playing
 description: This article discusses the "Audio services not responding" error.
-ms.date: 10/27/2022
+ms.date: 10/28/2022
 ---
 
 # USB audio device not playing
 
-This article discusses the "Audio services not responding" error and USB audio device does not work in Windows 10 version 1703.
+This article discusses the "Audio services not responding" error and USB audio device doesn't work in Windows 10 version 1703.
 
 ## Symptoms
 
@@ -17,15 +17,15 @@ Consider the following scenario:
 3. Windows then downloads the device-specific driver from Windows Update.
 4. The downloaded device driver replaces the usbaudio2.sys driver.
 
-In this scenario, the device cannot be used, and the computer does not have sound. The speaker icon on the task bar is marked with an X mark. When you select the icon, you receive the following message:
+In this scenario, the device can't be used, and the computer doesn't have sound. The speaker icon on the task bar is marked with an X mark. When you select the icon, you receive the following message:
 
 > Audio services not responding. Both the Windows Audio and the Windows Audio End Point Builder services must be running for audio to work correctly.
 
 ## Cause
 
-This "audio not playing" problem occurs because the default USB audio 2.0 driver (usbaudio2.sys) uses the WaveRT port for operation but the device-specific driver does not. However, both drivers use the "wave" reference string when the device interface is registered.
+This "audio not playing" problem occurs because the default USB audio 2.0 driver (usbaudio2.sys) uses the WaveRT port for operation but the device-specific driver doesn't. However, both drivers use the "wave" reference string when the device interface is registered.
 
-When the device-specific driver replaces the default driver, the device interface that is created by usbaudio2.sys is still used because the reference strings overlap. Therefore, the operating system assumes that the new driver also supports the WaveRT port. Because the new driver does not support the WaveRT port, the system cannot access the driver.
+When the device-specific driver replaces the default driver, the device interface that is created by usbaudio2.sys is still used because the reference strings overlap. Therefore, the operating system assumes that the new driver also supports the WaveRT port. Because the new driver doesn't support the WaveRT port, the system can't access the driver.
 
 ## Resolution
 
@@ -49,7 +49,7 @@ Connect the device to a different USB port. The problem may not occur if the dev
 
 ### Method 3
 
-If the device is not yet connected, install the device-specific driver first. You can do this by using the installer for the device. Then, connect the device. Windows now selects the device-specific driver instead of the default USB audio 2.0 driver. This method works because the problem only occurs if the device-specific driver replaces the default driver after the device is connected.
+If the device isn't yet connected, install the device-specific driver first by using the installer for the device. Then, connect the device. Windows now selects the device-specific driver instead of the default USB audio 2.0 driver. This method works because the problem only occurs if the device-specific driver replaces the default driver after the device is connected.
 
 ## See also
 

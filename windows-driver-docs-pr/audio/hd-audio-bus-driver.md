@@ -9,7 +9,7 @@ keywords:
 - bus drivers WDK audio
 - HD audio, bus driver
 - High Definition Audio (HD audio), bus driver
-ms.date: 10/27/2022
+ms.date: 10/28/2022
 ---
 
 # HD audio bus driver
@@ -32,9 +32,9 @@ The HD audio bus driver:
 
 - Provides synchronized starting and stopping of groups of streams.
 
-The HD audio bus driver does not provide:
+The HD audio bus driver doesn't provide:
 
-- An interface for programming a DSP or additional registers that are not defined in the Intel High Definition Audio Specification.
+- An interface for programming a DSP or other registers that aren't defined in the Intel High Definition Audio Specification.
 
 - Prioritized bandwidth management.
 
