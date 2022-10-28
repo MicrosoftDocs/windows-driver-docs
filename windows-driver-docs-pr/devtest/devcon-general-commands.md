@@ -9,8 +9,8 @@ api_name:
 - Device Console (DevCon.exe) Commands
 api_type:
 - NA
-ms.custom: contperf-fy22q3 
-ms.date: 07/26/2022
+ms.custom: contperf-fy22q3
+ms.date: 10/28/2022
 ---
 
 # Device Console (DevCon.exe) Commands
@@ -18,7 +18,7 @@ ms.date: 07/26/2022
 DevCon (DevCon.exe) is a command line tool that can display detailed information about devices on computers running Windows. You can also use DevCon to enable, disable, install, configure, and remove devices. DevCon uses the following syntax.
 
 ```console
-devcon [/r] command [arguments] 
+devcon [/r] command [arguments]
 ```
 
 > [!IMPORTANT]
@@ -33,81 +33,64 @@ The parameters in a DevCon command must appear in the order shown in the syntax.
 
 For help on command syntax, you can use the following commands in a Command Prompt window: **DevCon help** or **DevCon help** *command*.
 
-**/r**  
+**/r**
+
 Conditional reboot. Reboots the system after completing an operation only if a reboot is required to make a change effective.
 
-This parameter differs from the [**DevCon Reboot**](devcon-reboot.md) operation, which forces the system to reboot. Instead, the **/r** parameter determines whether a reboot is required based on the return code from the accompanying operation.For more information, see [Rebooting and restarting](#rebooting-and-restarting).
+This parameter differs from the **[DevCon Reboot](devcon-reboot.md)** operation, which forces the system to reboot. Instead, the **/r** parameter determines whether a reboot is required based on the return code from the accompanying operation.For more information, see [Rebooting and restarting](#rebooting-and-restarting).
 
-*command*  
+*command*
+
 Specifies a DevCon command. For information about the available DevCon commands and the command arguments, use the following list.
 
 You can also get syntax help in a Command Prompt window using **DevCon help** *command*.
 
 To *list and display* information about devices on the computer, use the following commands:
 
-[**DevCon HwIDs**](devcon-hwids.md)
-
-[**DevCon Classes**](devcon-classes.md)
-
-[**DevCon ListClass**](devcon-listclass.md)
-
-[**DevCon DriverFiles**](devcon-driverfiles.md)
-
-[**DevCon DriverNodes**](devcon-drivernodes.md)
-
-[**DevCon Resources**](devcon-resources.md)
-
-[**DevCon Stack**](devcon-stack.md)
-
-[**DevCon Status**](devcon-status.md)
-
-[**DevCon Dp\_enum**](devcon-dp-enum.md)
+- **[DevCon HwIDs](devcon-hwids.md)**
+- **[DevCon Classes](devcon-classes.md)**
+- **[DevCon ListClass](devcon-listclass.md)**
+- **[DevCon DriverFiles](devcon-driverfiles.md)**
+- **[DevCon DriverNodes](devcon-drivernodes.md)**
+- **[DevCon Resources](devcon-resources.md)**
+- **[DevCon Stack](devcon-stack.md)**
+- **[DevCon Status](devcon-status.md)**
+- **[DevCon Dp_enum](devcon-dp-enum.md)**
 
 To *search* for information about devices on the computer, use the following commands:
 
-[**DevCon Find**](devcon-find.md)
-
-[**DevCon FindAll**](devcon-findall.md)
+- **[DevCon Find](devcon-find.md)**
+- **[DevCon FindAll](devcon-findall.md)**
 
 To manipulate the device or *change* its configuration, use the following commands:
 
-[**DevCon Enable**](devcon-enable.md)
+- **[DevCon Enable](devcon-enable.md)**
+- **[DevCon Disable](devcon-disable.md)**
+- **[DevCon Update](devcon-update.md)**
+- **[DevCon UpdateNI](devcon-updateni.md)**
+- **[DevCon Install](devcon-install.md)**
+- **[DevCon Remove](devcon-remove.md)**
+- **[DevCon Rescan](devcon-rescan.md)**
+- **[DevCon Restart](devcon-restart.md)**
+- **[DevCon Reboot](devcon-reboot.md)**
+- **[DevCon SetHwID](devcon-sethwid.md)**
+- **[DevCon ClassFilter](devcon-classfilter.md)**
+- **[DevCon Dp_add](devcon-dp-add.md)**
+- **[DevCon Dp_delete](devcon-dp-delete.md)**
 
-[**DevCon Disable**](devcon-disable.md)
+*arguments*
 
-[**DevCon Update**](devcon-update.md)
-
-[**DevCon UpdateNI**](devcon-updateni.md)
-
-[**DevCon Install**](devcon-install.md)
-
-[**DevCon Remove**](devcon-remove.md)
-
-[**DevCon Rescan**](devcon-rescan.md)
-
-[**DevCon Restart**](devcon-restart.md)
-
-[**DevCon Reboot**](devcon-reboot.md)
-
-[**DevCon SetHwID**](devcon-sethwid.md)
-
-[**DevCon ClassFilter**](devcon-classfilter.md)
-
-[**DevCon Dp\_add**](devcon-dp-add.md)
-
-[**DevCon Dp\_delete**](devcon-dp-delete.md)
-
-*arguments*  
 Specifies the arguments for a DevCon command.
 
-**/?** or **help**  
+**/?** or **help**
+
 Displays help. If you specify an operation, DevCon displays detailed help for the operation.
 
-The parameters must appear in the specified order. For example, to display help for the [**DevCon Status**](devcon-status.md) operation, type **devcon /? status** (or **devcon help status**), not **devcon status /?**.
+The parameters must appear in the specified order. For example, to display help for the **[DevCon Status](devcon-status.md)** operation, type **devcon /? status** (or **devcon help status**), not **devcon status /?**.
 
 ### Comments
 
-Many DevCon operations require the hardware ID of the device. To create a list of the hardware IDs of all devices on the computer for use in subsequent DevCon operations, begin with a [**DevCon HwIDs**](devcon-hwids.md) command. For more information, see [Hardware IDs](../install/hardware-ids.md) and [Device Identification Strings](../install/device-identification-strings.md).
+Many DevCon operations require the hardware ID of the device. To create a list of the hardware IDs of all devices on the computer for use in subsequent DevCon operations, begin with a **[DevCon HwIDs](devcon-hwids.md)** command. For more information, see [Hardware IDs](../install/hardware-ids.md) and [Device Identification Strings](../install/device-identification-strings.md).
 
 ### How DevCon searches for devices
 

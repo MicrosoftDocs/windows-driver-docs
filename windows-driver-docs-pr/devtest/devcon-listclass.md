@@ -1,6 +1,6 @@
 ---
 title: DevCon ListClass
-description: Lists all devices in the specified device setup classes. 
+description: Lists all devices in the specified device setup classes.
 keywords:
 - DevCon ListClass Driver Development Tools
 topic_type:
@@ -9,57 +9,48 @@ api_name:
 - DevCon ListClass
 api_type:
 - NA
-ms.date: 10/26/2022
+ms.date: 10/28/2022
 ---
 
 # DevCon ListClass
 
-> [!NOTE] 
-> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. Its use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
+> [!NOTE]
+> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. We recommend using PnPUtil instead of DevCon. See the [Recommended replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
 
-Lists all devices in the specified device setup classes. 
+Lists all devices in the specified device setup classes.
 
+``` console
+devcon listclass class [class...]
 ```
-    devcon listclass class [class...] 
-```
 
-## <span id="ddk_devcon_listclass_tools"></span><span id="DDK_DEVCON_LISTCLASS_TOOLS"></span>Parameters
+## Parameters
 
-<span id="_______class______"></span><span id="_______CLASS______"></span> *class*   
+*class*
+
 Specifies a device setup class. No equal sign (=) is required.
 
-## Recommended Replacement
+## Recommended replacement
 
-```
+``` console
 pnputil /enum-devices /class <name or GUID>
 ```
 
 For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
 
-## <span id="comments"></span><span id="COMMENTS"></span>Comments
+## Comments
 
 Each entry in a setup class display represents one device. The entry consists of the unique instance name and a description of the device in *instance* **:** *description* format.
 
-To find the setup class of a particular device, use the [**DevCon Stack**](devcon-stack.md) operation.
+To find the setup class of a particular device, use the **[DevCon Stack](devcon-stack.md)** operation.
 
-## <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+## Sample usage
 
-```
+``` console
 devcon listclass printers ports
 devcon listclass SmartCardReader
 ```
 
-## <span id="examples"></span><span id="EXAMPLES"></span>Examples
+## Examples
 
-[Example 6: List the devices in a device setup class](devcon-examples.md#example-6-list-the-devices-in-a-device-setup-class)
-
-[Example 7: List the devices in multiple classes](devcon-examples.md#example-7-list-the-devices-in-multiple-classes)
-
-
-
-
-
-
-
-
-
+- [Example 6: List the devices in a device setup class](devcon-examples.md#example-6-list-the-devices-in-a-device-setup-class)
+- [Example 7: List the devices in multiple classes](devcon-examples.md#example-7-list-the-devices-in-multiple-classes)

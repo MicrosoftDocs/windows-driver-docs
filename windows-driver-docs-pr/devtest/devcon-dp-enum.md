@@ -9,38 +9,34 @@ api_name:
 - DevCon Dp_enum
 api_type:
 - NA
-ms.date: 10/26/2022
+ms.date: 10/28/2022
 ---
 
-# DevCon Dp\_enum
+# DevCon Dp_enum
 
-> [!NOTE] 
-> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. Its use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
+> [!NOTE]
+> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. We recommend using PnPUtil instead of DevCon. See the [Recommended replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
 
 Lists the third-party (OEM) driver packages in the driver store on the local computer.
 
-```
-    devcon dp_enum
+``` console
+devcon dp_enum
 ```
 
-## Recommended Replacement
+## Recommended replacement
 
-```
+``` console
 pnputil /enum-drivers
 ```
 
 For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
 
-## <span id="comments"></span><span id="COMMENTS"></span>Comments
+## Comments
 
-A DevCon Dp\_enum command lists the OEM\*.inf files in the %windir%/Inf on the local computer. For each file, this command displays the provider, class, date, and version number from the INF file.
+A DevCon Dp_enum command lists the OEM\*.inf files in the %windir%/Inf on the local computer. For each file, this command displays the provider, class, date, and version number from the INF file.
 
-## <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+## Sample usage
 
-```
+``` console
 devcon dp_enum
 ```
-
-
-
-

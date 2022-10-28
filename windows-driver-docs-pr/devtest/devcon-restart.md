@@ -9,83 +9,62 @@ api_name:
 - DevCon Restart
 api_type:
 - NA
-ms.date: 10/26/2022
+ms.date: 10/28/2022
 ---
 
 # DevCon Restart
 
-> [!NOTE] 
-> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. Its use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
+> [!NOTE]
+> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. We recommend using PnPUtil instead of DevCon.Con.Con.Con. See the [Recommended replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
 
-Stops and restarts the specified devices. 
+Stops and restarts the specified devices.
 
+``` console
+devcon [/r] restart {* | ID [ID ...] | =class [ID [ID ...]]}
 ```
-    devcon [/r] restart {* | ID [ID ...] | =class [ID [ID ...]]}
-```
 
-## <span id="ddk_devcon_restart_tools"></span><span id="DDK_DEVCON_RESTART_TOOLS"></span>Parameters
+## Parameters
 
-<span id="________r______"></span><span id="________R______"></span> **/r**
+**/r**
+
 Conditional reboot. Reboots the system after completing an operation only if a reboot is required to make a change effective.
 
-<span id="______________"></span> **\***
+**\***
+
 Represents all devices on the computer.
 
-<span id="_______ID______"></span><span id="_______id______"></span> *ID*
+*ID*
 Specifies all or part of a hardware ID, compatible ID, or device instance ID of a device. When specifying multiple IDs, type a space between each ID. IDs that include an ampersand character (**&**) must be enclosed in quotation marks.
 
 The following special characters modify the ID parameter.
 
-<table>  
-<colgroup>  
-<col width="50%" />  
-<col width="50%" />  
-</colgroup>  
-<thead>  
-<tr class="header">  
-<th align="left">Character</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong><em></strong></p></td>
-<td align="left"><p>Matches any character or no character. Use the wildcard character (</em>) to create an ID pattern, for example, <em>disk</em>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>@</strong></p></td>
-<td align="left"><p>Indicates a device instance ID, for example, <strong><xref href="ROOT\FTDISK\0000" data-throw-if-not-resolved="False" data-raw-source="@ROOT\FTDISK\0000"></xref></strong>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>'</strong></p>
-<p>(single quote)</p></td>
-<td align="left"><p>Matches the string literally (exactly as it appears). Precede a string with a single quote to indicate that an asterisk is part of the ID name and is not a wildcard character, for example, <strong>'*PNP0600'</strong>, where *PNP0600 (including the asterisk) is the hardware ID.</p></td>
-</tr>
-</tbody>
-</table>
+|Character|Description|
+|--- |--- |
+|**\***|Matches any character or no character. Use the wildcard character (**\***) to create an ID pattern, for example, ***disk***.|
+|**@**|Indicates a device instance ID, for example, **@ROOT\FTDISK\0000**.|
+|**'**</br>(single quote)|Matches the string literally (exactly as it appears). Precede a string with a single quote to indicate that an asterisk is part of the ID name and is not a wildcard character, for example, **'\*PNP0600'**, where *PNP0600 (including the asterisk) is the hardware ID.|
 
-<span id="________class______"></span><span id="________CLASS______"></span>  
+**=***\<class\>*
 
-**=**_class_
 Specifies the device setup class of the devices. The equal sign (**=**) identifies the string as a class name.
 
 You can also specify hardware IDs, compatible IDs, device instance IDs, or ID patterns following the class name. Type a space between each ID or pattern. DevCon finds devices in the class that match the specified IDs.
 
-## Recommended Replacement
+## Recommended replacement
 
-```
+``` console
 pnputil /restart-device
 ```
 
 For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
 
-## <span id="comments"></span><span id="COMMENTS"></span>Comments
+## Comments
 
 The system might need to be rebooted to make this change effective. To have DevCon reboot the system, add the conditional reboot parameter (/r) to the command.
 
-## <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+## Sample usage
 
-```
+``` console
 devcon restart *
 devcon restart pci*
 devcon restart "PCI\VEN_115D&DEV_0003&SUBSYS_0181115D"
@@ -93,6 +72,6 @@ devcon restart =printer
 devcon restart =printer *desk*
 ```
 
-## <span id="example"></span><span id="EXAMPLE"></span>Example
+## Example
 
-[Example 38: Restart a device](devcon-examples.md#example-38-restart-a-device)
+- [Example 38: Restart a device](devcon-examples.md#example-38-restart-a-device)

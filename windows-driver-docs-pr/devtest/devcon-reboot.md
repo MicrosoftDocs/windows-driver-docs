@@ -9,51 +9,40 @@ api_name:
 - DevCon Reboot
 api_type:
 - NA
-ms.date: 10/26/2022
+ms.date: 10/28/2022
 ---
 
 # DevCon Reboot
 
-> [!NOTE] 
-> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. Its use is recommended instead of DevCon. See the [Recommended Replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
+> [!NOTE]
+> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. We recommend using PnPUtil instead of DevCon. See the [Recommended replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
 
 Stops and then starts the operating system. Valid only on the local computer.
 
-```
-    devcon reboot 
+``` console
+devcon reboot
 ```
 
-## Recommended Replacement
+## Recommended replacement
 
-```
+``` console
 shutdown /r /t 0
 ```
 
 For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
 
-## <span id="ddk_devcon_reboot_tools"></span><span id="DDK_DEVCON_REBOOT_TOOLS"></span>
-
-## <span id="comments"></span><span id="COMMENTS"></span>Comments
+## Comments
 
 Unlike the **/r** parameter, which reboots the system only if required to make a change effective, the **DevCon Reboot** operation reboots the system without determining whether a reboot is required.
 
 DevCon uses the standard **ExitWindowsEx** function to reboot. If the user has open files on the computer or a program will not close, the system does not reboot until the user has responded to system prompts to close the files or end the process. For more information about **ExitWindowsEx**, see the Microsoft Windows SDK.
 
-## <span id="sample_usage"></span><span id="SAMPLE_USAGE"></span>Sample Usage
+## Sample usage
 
-```
+``` console
 devcon reboot
 ```
 
-## <span id="example"></span><span id="EXAMPLE"></span>Example
+## Example
 
-[Example 39: Reboot the local computer](devcon-examples.md#example-39-reboot-the-local-computer)
-
-
-
-
-
-
-
-
-
+- [Example 39: Reboot the local computer](devcon-examples.md#example-39-reboot-the-local-computer)

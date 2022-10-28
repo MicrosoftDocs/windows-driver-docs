@@ -94,14 +94,14 @@
         href: devcon-updateni.md
       - name: "DevCon Install"
         href: devcon-install.md
+      - name: "DevCon Reboot"
+        href: devcon-reboot.md
       - name: "DevCon Remove"
         href: devcon-remove.md
       - name: "DevCon Rescan"
         href: devcon-rescan.md
       - name: "DevCon Restart"
         href: devcon-restart.md
-      - name: "DevCon Reboot"
-        href: devcon-reboot.md
       - name: "DevCon SetHwID"
         href: devcon-sethwid.md
       - name: "DevCon ClassFilter"

@@ -16,7 +16,7 @@ keywords:
 - device management WDK DevCon
 - listing device information WDK
 ms.custom: contperf-fy22q3
-ms.date: 10/26/2022
+ms.date: 10/28/2022
 ---
 
 # Windows Device Console (Devcon.exe)
@@ -81,6 +81,5 @@ The DevCon source code is also available so that you can examine the methods tha
 
 ## Related topics
 
-[DevCon Commands](devcon-general-commands.md)
-
-[DevCon Examples](devcon-examples.md)
+- [DevCon Commands](devcon-general-commands.md)
+- [DevCon Examples](devcon-examples.md)
