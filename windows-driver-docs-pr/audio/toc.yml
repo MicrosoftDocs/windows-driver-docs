@@ -1141,6 +1141,8 @@
     items: 
     - name: "Audio Device Messages for MIDI"
       href: audio-device-messages-for-midi.md
+    - name: "modMessage function"
+      href: mod-message.md
     - name: "MODM_CACHEDRUMPATCHES function"
       href: modm-cachedrumpatches.md
     - name: "MODM_CACHEPATCHES function"
@@ -1177,8 +1179,6 @@
       href: modm-strmdata.md
     - name: "MODM_UNPREPARE function"
       href: modm-unprepare.md
-    - name: "modMessage function"
-      href: mod-message.md
     - name: "MOM_CLOSE function"
       href: mom-close.md
     - name: "MOM_DONE function"
