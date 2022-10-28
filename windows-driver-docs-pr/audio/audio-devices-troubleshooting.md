@@ -14,6 +14,6 @@ To collect audio logs, follow the steps outlined in [Report problems, with logs,
 
 For general information on working with TMF files, see [Displaying a Trace Log with a TMF File](../devtest/displaying-a-trace-log-with-a-tmf-file.md).
 
-## Related topics
+## See also
 
 - [USB audio device not playing](usb-audio-not-playing.md)

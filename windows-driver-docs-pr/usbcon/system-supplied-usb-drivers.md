@@ -10,7 +10,7 @@ This article describes the class drivers, generic client driver, and the parent 
 
 ## Microsoft-provided USB drivers for controllers and hubs
 
-Microsoft provides these set of drivers:
+Microsoft provides the following set of drivers:
 
 - For USB host controllers and hubs. For more information, see [USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md). You can develop a custom host controller driver that communicates with the USB host controller extension (UCX) driver. For more information, see [Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md).
 
@@ -28,11 +28,11 @@ Microsoft provides these set of drivers:
 
 ## Microsoft-provided USB device class drivers
 
-Microsoft provides drivers for several USB device classes approved by USB-IF. These drivers and their installation files are included in Windows. They're available in the \\Windows\\System32\\DriverStore\\FileRepository folder.
+Microsoft provides drivers for several USB device classes approved by USB-IF. The drivers and their installation files are included in Windows. They're available in the \\Windows\\System32\\DriverStore\\FileRepository folder.
 
 See, [USB device class drivers included in Windows](supported-usb-classes.md).
 
-## Related topics
+## See also
 
 - [Universal Serial Bus (USB)](../index.yml)
 - [USB Driver Development Guide](usb-driver-development-guide.md)

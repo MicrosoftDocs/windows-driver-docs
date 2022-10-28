@@ -65,7 +65,7 @@ It's simpler to use WinUSB functions to communicate with a device than to implem
 
     Send isochronous read and write requests, mostly used for streaming data. This feature is only available on Windows 8.1 and later. For more information, see [Sending USB isochronous transfers from a WinUSB desktop app](getting-set-up-to-use-windows-devices-usb.md).
 
-## Related topics
+## See also
 
 [Developing Windows applications for USB devices](developing-windows-applications-that-communicate-with-a-usb-device.md)  
 

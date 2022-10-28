@@ -67,6 +67,6 @@ A Universal Serial Bus (USB) device defines its capabilities and features throug
 |---|---|---|
 | **KMDF:**</br>**[WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings)**</br>**[WdfDeviceAssignS0IdleSettings](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings)**</br></br>**UMDF:**</br>**[IWDFUsbTargetDevice::SetPowerPolicy](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetdevice-setpowerpolicy)**</br>**[IWDFDevice2::AssignS0IdleSettings](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice2-assigns0idlesettings)**</br>**[IWDFDevice3::AssignS0IdleSettingsEx](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice3-assigns0idlesettingsex)**</br></br>[How to send a device to selective suspend](/windows-hardware/drivers/usbcon/) | Not supported | **[WinUsb_SetPowerPolicy](/windows/win32/api/winusb/nf-winusb-winusb_setpowerpolicy)**</br></br>[WinUSB Power Management](winusb-power-management.md) |
 
-## Related topics
+## See also
 
 - [Universal Serial Bus (USB)](../index.yml)

@@ -6,11 +6,7 @@ ms.date: 10/28/2022
 
 # Low Latency Audio
 
-This article discusses audio latency changes in Windows 10. It covers API options for application developers and changes in drivers that can be made to support low latency audio.
-
-## Overview
-
-Audio latency is the delay between that time that sound is created and when it's heard. Having low audio latency is important for several key scenarios, such as the following.
+This article discusses audio latency changes in Windows 10. It covers API options for application developers and changes in drivers that can be made to support low latency audio. Audio latency is the delay between that time that sound is created and when it's heard. Having low audio latency is important for several key scenarios, such as:
 
 - Pro audio
 - Music creation
@@ -18,16 +14,19 @@ Audio latency is the delay between that time that sound is created and when it's
 - Virtual reality
 - Games
 
-Windows 10 includes changes to reduce the audio latency. The goals of this document are to:
+The goals of this document are to:
 
 1. Describe the sources of audio latency in Windows.
 1. Explain the changes that reduce audio latency in the Windows 10 audio stack.
-1. Provide a reference on how application developers and hardware manufacturers can take advantage of the new infrastructure, in order to develop applications and drivers with low audio latency. This article covers these items:
+1. Provide a reference on how application developers and hardware manufacturers can take advantage of the new infrastructure, in order to develop applications and drivers with low audio latency.
+
+This article covers:
+
 1. The new **[AudioGraph](/uwp/api/Windows.Media.Audio.AudioGraph)** API for interactive and media creation scenarios.
 1. Changes in WASAPI to support low latency.
 1. Enhancements in the driver DDIs.
 
-## Definitions
+## Terminology
 
 | Term | Description |
 |---|---|
@@ -37,7 +36,7 @@ Windows 10 includes changes to reduce the audio latency. The goals of this docu
 | Touch-to-app latency | Delay between the time that a user taps the screen until the time that the signal is sent to the application. |
 | Touch-to-sound latency | Delay between the time that a user taps the screen, the event goes to the application and a sound is heard via the speakers. It's equal to render latency + touch-to-app latency. |
 
-## Windows Audio Stack
+## Windows audio stack
 
 The following diagram shows a simplified version of the Windows audio stack.
 
@@ -50,7 +49,7 @@ audio processing objects
 1. The audio engine reads the data from the buffer and processes it. It also loads audio effects in the form of audio processing objects (APOs). For more information about APOs, see [Windows audio processing objects](windows-audio-processing-objects.md).
 1. The latency of the APOs varies based on the signal processing within the APOs.
 1. Before Windows 10, the latency of the audio engine was equal to ~12 ms for applications that use floating point data and ~6 ms for applications that use integer data
-1. In Windows 10, the latency has been reduced to 1.3 ms for all applications
+1. In Windows 10 and later, the latency has been reduced to 1.3 ms for all applications
 
 1. The audio engine writes the processed data to a buffer.
 1. Before Windows 10, the buffer was always set to ~10 ms.
@@ -71,7 +70,7 @@ Here's a summary of latency in the capture path:
 1. The audio engine reads the data from the buffer and processes them. It also loads audio effects in the form of audio processing objects (APOs).
 1. The latency of the APOs varies based on the signal processing within the APOs.
 1. Before Windows 10, the latency of the audio engine was equal to ~6 ms for applications that use floating point data and ~0ms for applications that use integer data.
-1. In Windows 10, the latency has been reduced to ~0ms for all applications.
+1. In Windows 10 and later, the latency has been reduced to ~0ms for all applications.
 
 1. The application is signaled that data is available to be read, as soon as the audio engine finishes with its processing.
     The audio stack also provides the option of exclusive mode. In that case, the data bypasses the audio engine and goes directly from the application to the buffer where the driver reads it from. However, if an application opens an endpoint in exclusive mode, then there's no other application that can use that endpoint to render or capture audio.
@@ -80,9 +79,9 @@ Another popular alternative for applications that need low latency is to use the
 
 Both alternatives (exclusive mode and ASIO) have their own limitations. They provide low latency, but they have their own limitations (some of which were described above). As a result, the audio engine has been modified, in order to lower the latency, while retaining the flexibility.
 
-## Audio Stack Improvements in Windows 10
+## Audio stack improvements
 
-Windows 10 has been enhanced in three areas to reduce latency:
+Windows 10 and later have been enhanced in three areas to reduce latency:
 
 1. All applications that use audio will see a 4.5-16 ms reduction in round-trip latency (as was explained in the section above) without any code changes or driver updates, compared to Windows 8.1.
    1. Applications that use floating point data will have 16-ms lower latency.
@@ -97,7 +96,7 @@ Windows 10 has been enhanced in three areas to reduce latency:
 1. AudioGraph callbacks on the streaming path.
 1. If the application uses WASAPI, then only the work items that were submitted to the [Real-Time Work Queue API](/windows/desktop/ProcThread/platform-work-queue-api) or **[MFCreateMFByteStreamOnStreamEx](/windows/win32/api/mfidl/nf-mfidl-mfcreatemfbytestreamonstreamex)** and were tagged as "Audio" or "ProAudio".
 
-## API Improvements
+## API improvements
 
 The following two Windows 10 APIs provide low latency capabilities:
 
@@ -117,7 +116,7 @@ The following sections will explain the low latency capabilities in each API. As
 
 ### AudioGraph
 
-AudioGraph is a new Universal Windows Platform API in Windows 10 that is aimed at realizing interactive and music creation scenarios with ease. AudioGraph is available in several programming languages (C++, C#, JavaScript) and has a simple and feature-rich programming model.
+AudioGraph is a new Universal Windows Platform API in Windows 10 and later that is aimed at realizing interactive and music creation scenarios with ease. AudioGraph is available in several programming languages (C++, C#, JavaScript) and has a simple and feature-rich programming model.
 
 In order to target low latency scenarios, AudioGraph provides the **[AudioGraphSettings::QuantumSizeSelectionMode](/uwp/api/Windows.Media.Audio.AudioGraphSettings#Windows_Media_Audio_AudioGraphSettings_QuantumSizeSelectionMode)** property. This property can be any of the values shown in the table below:
 
@@ -135,7 +134,7 @@ settings.QuantumSizeSelectionMode = QuantumSizeSelectionMode.LowestLatency;
 CreateAudioGraphResult result = await AudioGraph.CreateAsync(settings);
 ```
 
-### Windows Audio Session API (WASAPI)
+### Windows audio session API (WASAPI)
 
 Starting in Windows 10, WASAPI has been enhanced to:
 
@@ -395,9 +394,9 @@ Finally, application developers that use WASAPI need to tag their streams with t
 - The capture signal might come in a format that the application can't understand.
 - The latency might be improved.
 
-## Driver Improvements
+## Driver improvements
 
-In order for audio drivers to support low latency, Windows 10 provides the following three new features:
+In order for audio drivers to support low latency, Windows 10 and later provide the following features:
 
 1. \[Mandatory\] Declare the minimum buffer size that is supported in each mode.
 1. \[Optional, but recommended\] Improve the coordination for the data flow between the driver and Windows.
@@ -480,7 +479,7 @@ To calculate the performance counter values, the driver and DSP might employ som
 
 The [sysvad sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/audio/sysvad) shows how to use the above DDIs.
 
-### Register the driver resources
+### Register driver resources
 
 To help ensure glitch-free operation, audio drivers must register their streaming resources with Portcls. This allows Windows to manage resources to avoid interference between audio streaming and other subsystems.
 
@@ -502,7 +501,7 @@ Notes:
 
 - HDAudio miniport function drivers that are enumerated by the inbox HDAudio bus driver hdaudbus.sys don't need to register the HDAudio interrupts, as this is already done by hdaudbus.sys. However, if the miniport driver creates its own threads, then it needs to register them.
 - Drivers that link with Portcls only for registering streaming resources must update their INFs to include wdmaudio.inf and copy portcls.sys (and dependent files). A new INF copy section is defined in wdmaudio.inf to only copy those files.
-- Audio drivers that only run in Windows 10 can hard-link to:
+- Audio drivers that only run in Windows 10 and later can hard-link to:
   - **[PcAddStreamResource](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcaddstreamresource)**
   - **[PcRemoveStreamResource](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcremovestreamresource)**
 - Audio drivers that must run on a down-level OS can use the following interface (the miniport can call QueryInterface for the IID_IPortClsStreamResourceManager interface and register its resources only when PortCls supports the interface).
@@ -523,7 +522,7 @@ Needs=WDMPORTCLS.CopyFilesOnly
 
 The above lines make sure that PortCls and its dependent files are installed.
 
-## Measurement Tools
+## Measurement tools
 
 In order to measure roundtrip latency, user can user utilize tools that play pulses via the speakers and capture them via the microphone. They measure the delay of the following path:
 
@@ -531,7 +530,7 @@ In order to measure roundtrip latency, user can user utilize tools that play pul
 1. The audio is played via the speakers
 1. The audio is captured from the microphone
 1. The pulse is detected by the capture API (AudioGraph or WASAPI)
-In order to measure the roundtrip latency for different buffer sizes, users need to install a driver that supports small buffers. The inbox HDAudio driver has been updated to support buffer sizes between 128 samples (2.66ms@48kHz) and 480 samples (10ms@48kHz). The following steps show how to install the inbox HDAudio driver (which is part of all Windows 10 SKUs):
+In order to measure the roundtrip latency for different buffer sizes, users need to install a driver that supports small buffers. The inbox HDAudio driver has been updated to support buffer sizes between 128 samples (2.66ms@48kHz) and 480 samples (10ms@48kHz). The following steps show how to install the inbox HDAudio driver (which is part of all Windows 10 and later SKUs):
 
 - Start Device Manager.
 - Under **Sound video and game controllers**, double-click on the device that corresponds to your internal speakers.
@@ -558,7 +557,7 @@ The differences in the latency between WASAPI and AudioGraph are due to the foll
 
 ## FAQ
 
-**Wouldn't it be better, if all applications use the new APIs for low latency? Doesn't low latency always guarantee a better user experience for the user?**
+**Wouldn't it be better, if all applications use the new APIs for low latency? Doesn't low latency always guarantee a better user experience?**
 
 Not necessarily. Low latency has its tradeoffs:
 
@@ -567,10 +566,10 @@ Not necessarily. Low latency has its tradeoffs:
 
 In summary, each application type has different needs regarding audio latency. If an application doesn't need low latency, then it shouldn't use the new APIs for low latency.
 
-**Will all systems that update to Windows 10 be automatically update to support small buffers? Also, will all systems support the same minimum buffer size?**
+**Will all systems that update to Windows 10 and later be automatically update to support small buffers? Will all systems support the same minimum buffer size?**
 
 No, in order for a system to support small buffers it needs to have updated drivers. It's up to the OEMs to decide which systems will be updated to support small buffers. Also, newer systems are more likely to support smaller buffers than older systems. The latency in new systems will most likely be lower than older systems.
 
-**If a driver supports small buffer sizes (less than 10ms buffers), will all applications in Windows 10 automatically use small buffers to render and capture audio?**
+**If a driver supports small buffer sizes, will all applications in Windows 10 and later automatically use small buffers to render and capture audio?**
 
-No, by default all applications in Windows 10 will use 10-ms buffers to render and capture audio. If an application needs to use small buffers, then it needs to use the new AudioGraph settings or the WASAPI IAudioClient3 interface, in order to do so. However, if one application in Windows 10 requests the usage of small buffers, then the audio engine will start transferring audio using that particular buffer size. In that case, all applications that use the same endpoint and mode will automatically switch to that small buffer size. When the low latency application exits, the audio engine will switch to 10-ms buffers again.
+No, by default all applications in Windows 10 and later will use 10-ms buffers to render and capture audio. If an application needs to use small buffers, then it needs to use the new AudioGraph settings or the WASAPI IAudioClient3 interface, in order to do so. However, if one application requests the usage of small buffers, then the audio engine will start transferring audio using that particular buffer size. In that case, all applications that use the same endpoint and mode will automatically switch to that small buffer size. When the low latency application exits, the audio engine will switch to 10-ms buffers again.

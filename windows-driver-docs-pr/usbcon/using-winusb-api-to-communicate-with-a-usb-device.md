@@ -422,7 +422,7 @@ done:
 
 If your device supports isochronous endpoints, you can use [WinUSB functions](/windows/win32/api/winusb/) to send transfers. This feature is only supported in Windows 8.1. For more information, see [Send USB isochronous transfers from a WinUSB desktop app](getting-set-up-to-use-windows-devices-usb.md).
 
-## Related topics
+## See also
 
 - [WinUSB](winusb.md)
 - [WinUSB architecture and modules](winusb-architecture.md)
