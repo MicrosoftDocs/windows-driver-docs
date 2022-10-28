@@ -82,7 +82,7 @@
       href: windows-desktop-app-for-a-usb-device.md
     - name: "Write a Windows desktop app based on the WinUSB template"
       href: how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md
-    - name: "How to Access a USB Device by Using WinUSB Functions"
+    - name: "Access a USB device by using WinUSB functions"
       href: using-winusb-api-to-communicate-with-a-usb-device.md
     - name: "Send USB isochronous transfers from a WinUSB desktop app"
       href: getting-set-up-to-use-windows-devices-usb.md

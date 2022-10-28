@@ -916,7 +916,7 @@
 - name: "Audio Devices Troubleshooting"
 # Auto-expanded node
   items: 
-  - name: "Audio Devices Troubleshooting Overview"
+  - name: "Audio devices troubleshooting overview"
     href: audio-devices-troubleshooting.md
   - name: "USB Audio Device Not Playing"
     href: usb-audio-not-playing.md
