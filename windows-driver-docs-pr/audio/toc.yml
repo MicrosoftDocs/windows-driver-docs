@@ -494,6 +494,8 @@
     href: format-negotiation.md
   - name: "Dynamic Format Change"
     href: dynamic-format-change.md
+  - name: "Audio Processing Objects Utility Functions"
+    href: audio-processing-objects-utility-functions.md
   - name: "Combine Custom and Windows APOs"
     href: combine-custom-and-windows-apos.md
 - name: "Windows Audio Processing Objects"
@@ -899,6 +901,18 @@
         href: obtaining-a-device-interface-name.md
       - name: "Music Technology GUIDs"
         href: music-technology-guids.md
+      - name: "DRV_QUERYDEVICEINTERFACE function"
+        href: drv-querydeviceinterface.md
+      - name: "DRV_QUERYDEVICEINTERFACESIZE function"
+        href: drv-querydeviceinterfacesize.md
+      - name: "DRV_QUERYDEVNODE function"
+        href: drv-querydevnode.md
+      - name: "DRV_QUERYMAPPABLE function"
+        href: drv-querymappable.md
+      - name: "DRVM_MAPPER_CONSOLEVOICECOM_GET function"
+        href: drvm-mapper-consolevoicecom-get.md
+      - name: "DRVM_MAPPER_PREFERRED_GET function"
+        href: drvm-mapper-preferred-get.md
 - name: "Audio Devices Troubleshooting"
 # Auto-expanded node
   items: 
@@ -1123,7 +1137,54 @@
   - name: "DRM Functions"
     href: drm-functions.md
   - name: "Audio Device Messages for MIDI"
-    href: audio-device-messages-for-midi.md
+# Auto-expanded node
+    items: 
+    - name: "Audio Device Messages for MIDI"
+      href: audio-device-messages-for-midi.md
+    - name: "MODM_CACHEDRUMPATCHES function"
+      href: modm-cachedrumpatches.md
+    - name: "MODM_CACHEPATCHES function"
+      href: modm-cachepatches.md
+    - name: "MODM_DATA function"
+      href: modm-data.md
+    - name: "MODM_GETDEVCAPS function"
+      href: modm-getdevcaps.md
+    - name: "MODM_GETNUMDEVS function"
+      href: modm-getnumdevs.md
+    - name: "MODM_GETPOS function"
+      href: modm-getpos.md
+    - name: "MODM_GETVOLUME function"
+      href: modm-getvolume.md
+    - name: "MODM_LONGDATA function"
+      href: modm-longdata.md
+    - name: "MODM_OPEN function"
+      href: modm-open.md
+    - name: "MODM_PAUSE function"
+      href: modm-pause.md
+    - name: "MODM_PREPARE function"
+      href: modm-prepare.md
+    - name: "MODM_PROPERTIES function"
+      href: modm-properties.md
+    - name: "MODM_RESET function"
+      href: modm-reset.md
+    - name: "MODM_RESTART function"
+      href: modm-restart.md
+    - name: "MODM_SETVOLUME function"
+      href: modm-setvolume.md
+    - name: "MODM_STOP function"
+      href: modm-stop.md
+    - name: "MODM_STRMDATA function"
+      href: modm-strmdata.md
+    - name: "MODM_UNPREPARE function"
+      href: modm-unprepare.md
+    - name: "modMessage function"
+      href: mod-message.md
+    - name: "MOM_CLOSE function"
+      href: mom-close.md
+    - name: "MOM_DONE function"
+      href: mom-done.md
+    - name: "MOM_OPEN function"
+      href: mom-open.md
   - name: "Legacy Audio Device Messages"
     href: legacy-audio-device-messages.md
   - name: "Audio INF File Settings"
