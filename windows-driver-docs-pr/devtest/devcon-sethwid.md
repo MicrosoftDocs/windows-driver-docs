@@ -14,6 +14,9 @@ ms.date: 10/28/2022
 
 # DevCon SetHwID
 
+> [!NOTE]
+> [PnPUtil](pnputil.md) ships with every release of Windows and makes use of the most reliable and secure APIs available. We recommend using PnPUtil instead of DevCon.Con.Con.Con. See the [Recommended replacement](#recommended-replacement) below and [Replacing DevCon](devcon-migration.md) for more information.
+
 Adds, deletes, and changes the order of hardware IDs of root-enumerated devices.
 
 ``` console
@@ -22,7 +25,7 @@ devcon sethwid {* | ID [ID ...] | =class [ID [ID ...]]} := [ = | + | - | ! ]Hard
 
 ## Parameters
 
-`*`
+**\***
 
 The asterisk represents all devices on the computer.
 
