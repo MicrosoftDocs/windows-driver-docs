@@ -57,61 +57,63 @@
     items: 
     - name: "Windows Device Console (Devcon.exe)"
       href: devcon.md
-    - name: "Device Console (DevCon.exe) Examples"
+    - name: "Replacing Device Console"
+      href: devcon-migration.md
+    - name: "Device Console Examples"
       href: devcon-examples.md
-    - name: "Device Console (DevCon.exe) Commands"
+    - name: "Device Console Commands"
 # Auto-expanded node
       items: 
       - name: "Device Console (DevCon.exe) Commands"
         href: devcon-general-commands.md
-      - name: "DevCon HwIDs"
-        href: devcon-hwids.md
       - name: "DevCon Classes"
         href: devcon-classes.md
-      - name: "DevCon ListClass"
-        href: devcon-listclass.md
+      - name: "DevCon ClassFilter"
+        href: devcon-classfilter.md
+      - name: "DevCon Disable"
+        href: devcon-disable.md
+      - name: "DevCon Dp_add"
+        href: devcon-dp-add.md
+      - name: "DevCon Dp_delete"
+        href: devcon-dp-delete.md
+      - name: "DevCon Dp_enum"
+        href: devcon-dp-enum.md
       - name: "DevCon DriverFiles"
         href: devcon-driverfiles.md
       - name: "DevCon DriverNodes"
         href: devcon-drivernodes.md
-      - name: "DevCon Resources"
-        href: devcon-resources.md
-      - name: "DevCon Stack"
-        href: devcon-stack.md
-      - name: "DevCon Status"
-        href: devcon-status.md
+      - name: "DevCon Enable"
+        href: devcon-enable.md
       - name: "DevCon Find"
         href: devcon-find.md
       - name: "DevCon FindAll"
         href: devcon-findall.md
-      - name: "DevCon Enable"
-        href: devcon-enable.md
-      - name: "DevCon Disable"
-        href: devcon-disable.md
-      - name: "DevCon Update"
-        href: devcon-update.md
-      - name: "DevCon UpdateNI"
-        href: devcon-updateni.md
+      - name: "DevCon HwIDs"
+        href: devcon-hwids.md
       - name: "DevCon Install"
         href: devcon-install.md
+      - name: "DevCon ListClass"
+        href: devcon-listclass.md
+      - name: "DevCon Reboot"
+        href: devcon-reboot.md
       - name: "DevCon Remove"
         href: devcon-remove.md
       - name: "DevCon Rescan"
         href: devcon-rescan.md
+      - name: "DevCon Resources"
+        href: devcon-resources.md
       - name: "DevCon Restart"
         href: devcon-restart.md
-      - name: "DevCon Reboot"
-        href: devcon-reboot.md
       - name: "DevCon SetHwID"
         href: devcon-sethwid.md
-      - name: "DevCon ClassFilter"
-        href: devcon-classfilter.md
-      - name: "DevCon Dp_add"
-        href: devcon-dp-add.md
-      - name: "DevCon Dp_enum"
-        href: devcon-dp-enum.md
-      - name: "DevCon Dp_delete"
-        href: devcon-dp-delete.md
+      - name: "DevCon Stack"
+        href: devcon-stack.md
+      - name: "DevCon Status"
+        href: devcon-status.md
+      - name: "DevCon Update"
+        href: devcon-update.md
+      - name: "DevCon UpdateNI"
+        href: devcon-updateni.md
   - name: "Additional Test Tools"
 # Auto-expanded node
     items: 
