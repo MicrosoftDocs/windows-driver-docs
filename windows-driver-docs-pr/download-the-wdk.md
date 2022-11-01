@@ -17,7 +17,7 @@ ms.date: 08/22/2022
 >
 > You can either safely dismiss this message, or you can uninstall the WDK and then reinstall the WDK (updated August 19, 2022 to version 10.0.22621.382) using the WDK download link below.
 >
-> It is still not possible to debug drivers within the Visual Studio interface when using Visual Studio 2022 version 17.2.0 and the Windows 11, version 22H2 WDK (version 10.0.22621.382). To work around the problem, debug with WinDbg or use a version of Visual Studio earlier than 17.2.0. The following error message is related to this issue:
+> It is not possible to debug drivers within the Visual Studio interface when using Visual Studio 2022 version 17.2.0 and later with the Windows 11, version 22H2 WDK (version 10.0.22621.382). To work around the problem, debug with WinDbg or use a version of Visual Studio earlier than 17.2.0. The following error message is related to this issue:
 > * The 'Microsoft.Windows.Tools.WinIDE.Debugger.DebuggerPackage, DebuggerPackage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null' package did not load correctly.
 
 The WDK is used to develop, test, and deploy drivers for Windows.
