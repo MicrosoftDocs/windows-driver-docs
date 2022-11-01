@@ -85,7 +85,7 @@ develop, build, package, deploy, test, and debug drivers.
 > will by default install the WDK extensions for Visual Studio. These
 > extensions are required for integration of the WDK with Visual Studio.
 
-| Versions of Windows      | WDK and related downloads                       |
+| Targeted versions of Windows      | WDK and related downloads                       |
 |--------------------------|-------------------------------------------------|
 |Windows 11, version 22H2  | [Download the Windows Driver Kit (WDK)](./download-the-wdk.md)|
 |Windows 11, version 21H2  | [Windows 11, version 21H2 WDK](https://go.microsoft.com/fwlink/?linkid=2166289)|
