@@ -178,3 +178,7 @@
       href: force-feedback-device-driver-interface.md
     - name: "Extending the DirectInput Game Controller Control Panel"
       href: extending-the-directinput-game-controller-control-panel.md
+    - name: "DirectInput Kernel-Mode Service Macros"
+      href: directinput-kernel-mode-service-macros.md
+    - name: "DirectInput Messages"
+      href: directinput-messages.md
