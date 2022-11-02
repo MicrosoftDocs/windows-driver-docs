@@ -1504,6 +1504,10 @@
     href: devprop-typemod-array.md
   - name: "DEVPROP_TYPEMOD_LIST"
     href: devprop-typemod-list.md
+  - name: "DEVPROPCOMPKEY"
+    href: devpropcompkey.md
+  - name: "DEVPROPERTY"
+    href: devproperty.md
   - name: "DEVPROPKEY"
     href: devpropkey.md
   - name: "DIF_ADDPROPERTYPAGE_ADVANCED"
