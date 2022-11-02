@@ -1,7 +1,7 @@
 ---
 title: Kernel Live Dump Code Reference
 description: This section contains descriptions of the common kernel live dumps, and describes how they are different from traditional bug checks.
-ms.date: 10/28/2022
+ms.date: 11/01/2022
 ---
 
 # Kernel Live Dump Code Reference
@@ -206,7 +206,8 @@ The following table provides links to kernel live dumps codes.
 | 0x000001D1 | [**TELEMETRY\_ASSERTS\_LIVEDUMP**](bug-check-0x1d1--telemetry-asserts-livedump.md)                                                                |
 | 0x000001D4 | [**UCMUCSI\_LIVEDUMP**](bug-check-0x1d4--ucmusci-livedump.md)                                                                                     |
 | 0x000001E1 | [**DEVICE\_DIAGNOSTIC\_LOG\_LIVEDUMP**](bug-check-0x1e1--device-diagnostic-log-livedump.md)                                                       |
-| 0x000001F5 | [**APPLICATION\_HANG\_KERNEL\_LIVEDUMP**](bug-check-0x1f5--application-hang-kernel-livedump.md)                                                   |        
+| 0x000001F5 | [**APPLICATION\_HANG\_KERNEL\_LIVEDUMP**](bug-check-0x1f5--application-hang-kernel-livedump.md)                                                   |
+| 0x000021C8 | [**MANUALLY\_INITIATED\_BLACKSCREEN\_HOTKEY\_LIVE\_DUMP**](bug-check-0x21c8--manually-initiated-blackscreen-hotkey-live-dump.md)                  |        
 
 These stop codes can be used for live dumps or to bug check the device.
 

@@ -2,7 +2,7 @@
 title: Bug Check 0x1E KMODE_EXCEPTION_NOT_HANDLED
 description: The KMODE_EXCEPTION_NOT_HANDLED bug check has a value of 0x0000001E. This indicates that a kernel-mode program generated an exception which the error handler did not catch.
 keywords: ["Bug Check 0x1E KMODE_EXCEPTION_NOT_HANDLED", "KMODE_EXCEPTION_NOT_HANDLED"]
-ms.date: 08/23/2018
+ms.date: 11/01/2022
 topic_type:
 - apiref
 api_name:
@@ -45,11 +45,11 @@ The KMODE\_EXCEPTION\_NOT\_HANDLED bug check has a value of 0x0000001E. This ind
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
-<td align="left"><p>Parameter 0 of the exception.</p></td>
+<td align="left"><p>Exception information parameter 0 of the exception record.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>4</p></td>
-<td align="left"><p>Parameter 1 of the exception.</p></td>
+<td align="left"><p>Exception information parameter 0 of the exception record.</p></td>
 </tr>
 </tbody>
 </table>

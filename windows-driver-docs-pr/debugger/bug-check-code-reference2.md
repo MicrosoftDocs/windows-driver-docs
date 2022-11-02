@@ -412,7 +412,6 @@ The following table provides links to bug check codes.
 | 0x000001DA | [**HAL\_BLOCKED\_PROCESSOR\_INTERNAL\_ERROR**](bug-check-0x1da--hal-blocked-processor-internal-error.md)                                          |
 | 0x000001DB | [**IPI\_WATCHDOG\_TIMEOUT**](bug-check-0x1db--ipi-watchdog-timeout.md)                                                                            |
 | 0x000001DC | [**DMA_COMMON_BUFFER_VECTOR_ERROR**](bug-check-0x1dc--dma-common-buffer-vector-error.md)                                                          |
-| 0x000001E0 | [**INVALID_ALTERNATE_SYSTEM_CALL_HANDLER_REGISTRATION**](bug-check-0x1e0--invalid-alternate-system-call-handler-registration.md)                  |
 | 0x000001E4 | [**VIDEO\_DXGKRNL\_SYSMM_FATAL_ERROR**](bug-check-0x1e4--video-dxgkrnl-sysmm-fatal-error.md)                                                      |
 | 0x000001E9 | [**ILLEGAL\_ATS\_INITIALIZATION**](bug-check-0x1e9--illegal-ats-initialization.md)                                                                |
 | 0x000001EA | [**SECURE\_PCI\_CONFIG\_SPACE\_ACCESS\_VIOLATION**](bug-check-0x1ea--secure-pci-config-space-access-violation.md)                                 |
