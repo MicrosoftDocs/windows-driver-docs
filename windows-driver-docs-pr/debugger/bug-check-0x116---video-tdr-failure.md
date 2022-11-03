@@ -2,7 +2,7 @@
 title: Bug Check 0x116 VIDEO_TDR_FAILURE
 description: The VIDEO_TDR_FAILURE bug check has a value of 0x00000116. This indicates that an attempt to reset the display driver and recover from a timeout failed.
 keywords: ["Bug Check 0x116 VIDEO_TDR_FAILURE","VIDEO_TDR_FAILURE", "VIDEO_TDR_ERROR"]
-ms.date: 01/17/2019
+ms.date: 11/02/2022
 topic_type:
 - apiref
 api_name:
@@ -19,42 +19,14 @@ The VIDEO\_TDR\_FAILURE bug check has a value of 0x00000116. This indicates that
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
-
 ## VIDEO\_TDR\_FAILURE Parameters
 
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Parameter</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>1</p></td>
-<td align="left"><p>The pointer to the internal TDR recovery context, if available.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>2</p></td>
-<td align="left"><p>A pointer into the responsible device driver module (for example, the owner tag).</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>3</p></td>
-<td align="left"><p>The error code of the last failed operation, if available.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>4</p></td>
-<td align="left"><p>Internal context dependent data, if available.</p></td>
-</tr>
-</tbody>
-</table>
-
-
+|Parameter|Description|
+|--- |--- |
+|1|The pointer to the internal TDR recovery context, if available.|
+|2|A pointer into the responsible device driver module (for example, the owner tag).|
+|3|The error code of the last failed operation, if available.|
+|4|Internal context dependent data, if available.|
 
 ## Cause
 
@@ -216,4 +188,8 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 **Hardware certification requirements**
 
-For information on requirements that hardware devices must meet when they implement TDR, refer to the WHCK documentation on *Device.Graphics…TDRResiliency*.
+For information on requirements that hardware devices must meet when they implement TDR, refer to the [Windows Hardware Lab Kit](/windows-hardware/test/hlk/)documentation, for example [Device.Graphics.TDRResiliency](/windows-hardware/test/hlk/testref/575d868d-b89a-48f7-b356-1c9f8c371a6f).
+
+## See Also
+
+[Bug Check Code Reference](bug-check-code-reference2.md)

@@ -31,10 +31,7 @@ The system was not able to go into graphics mode because no display drivers were
 
 This usually occurs when no video miniport drivers are able to load successfully.
 
- 
+## See Also
 
- 
-
-
-
+[Bug Check Code Reference](bug-check-code-reference2.md) 
 

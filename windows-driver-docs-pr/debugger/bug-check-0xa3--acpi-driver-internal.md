@@ -63,7 +63,9 @@ An inconsistency in the ACPI driver is so severe that continuing to run would ca
 One possible source of this problem is a BIOS error.
 
  
+ ## See Also
 
+[Bug Check Code Reference](bug-check-code-reference2.md)
  
 
 

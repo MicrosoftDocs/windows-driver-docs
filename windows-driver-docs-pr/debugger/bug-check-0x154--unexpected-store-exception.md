@@ -2,7 +2,7 @@
 title: Bug Check 0x154 UNEXPECTED_STORE_EXCEPTION
 description: The UNEXPECTED_STORE_EXCEPTION bug check has a value of 0x00000154. This indicates that the kernel memory store component caught an unexpected exception.
 keywords: ["Bug Check 0x154 UNEXPECTED_STORE_EXCEPTION", "UNEXPECTED_STORE_EXCEPTION"]
-ms.date: 02/27/2020
+ms.date: 11/02/2022
 topic_type:
 - apiref
 api_name:
@@ -45,7 +45,10 @@ If you are not able to work with the underlying code that is causing this issue,
 
 - Use the System File Checker tool to repair missing or corrupted system files. The System File Checker is a utility in Windows that allows users to scan for corruptions in Windows system files and restore corrupted files. Use the following command to run the System File Checker tool (SFC.exe).
 
-  `SFC /scannow`
+`SFC /scannow`
 
-   For more information, see [Use the System File Checker tool to repair missing or corrupted system files](https://support.microsoft.com/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system).
+For more information, see [Use the System File Checker tool to repair missing or corrupted system files](https://support.microsoft.com/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system).
 
+## See also
+
+[Bug Check Code Reference](bug-check-code-reference2.md)

@@ -59,7 +59,9 @@ The SESSION\_HAS\_VALID\_POOL\_ON\_EXIT live dump has a value of 0x000000AB. Thi
 The SESSION\_HAS\_VALID\_POOL\_ON\_EXIT bug check occurs because a session driver does not free its pool allocations before a session unload. This bug check can indicate a bug in Win32k.sys, Atmfd.dll, Rdpdd.dll, or a video or other driver.
 
  
+ ## See Also
 
+[Bug Check Code Reference](bug-check-code-reference2.md)
  
 
 

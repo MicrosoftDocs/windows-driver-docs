@@ -30,14 +30,6 @@ The REFS\_FILE\_SYSTEM bug check has a value of 0x00000149. This indicates that 
 | 3         | ContextRecord                        |
 | 4         | ExceptionRecord-&gt;ExceptionAddress |
 
- 
-
-| Parameter | Description |
-|-----------|-------------|
-| 1         | Message     |
-| 2         | Reserved    |
-| 3         | Reserved    |
-| 4         | Reserved    |
 
  
 
@@ -46,6 +38,10 @@ The REFS\_FILE\_SYSTEM bug check has a value of 0x00000149. This indicates that 
 If you see RefsExceptionFilter on the stack then the 2nd and 3rd parameters are the exception record and context record. Do a [**.exr**](-exr--display-exception-record-.md) on the 2nd parameter to view the exception information, then do a [**.cxr**](-cxr--display-context-record-.md) on the 3rd parameter and [**kb**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)  to obtain a more informative stack trace.
 
  
+## See also
+
+[Bug Check Code Reference](bug-check-code-reference2.md)
+
 
  
 

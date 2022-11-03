@@ -28,3 +28,8 @@ The following parameters are displayed on the blue screen.
 |     2     | Reserved.                                             |
 |     3     | Reserved.                                             |
 |     4     | Reserved.                                             |
+
+
+## See also
+
+[Bug Check Code Reference](bug-check-code-reference2.md)

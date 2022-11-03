@@ -2,7 +2,7 @@
 title: Blue Screen Data
 description: When Microsoft Windows encounters a condition that compromises safe system operation, the system halts. This condition is called a bug check or stop error.
 keywords: ["Blue Screen Data Windows Debugging"]
-ms.date: 01/29/2021
+ms.date: 11/03/2022
 topic_type:
 - apiref
 api_name:
@@ -13,9 +13,13 @@ api_type:
 
 # Blue Screen Data
 
-**Note**  This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
 
-**Note**   If you are an IT professional or support agent, see this article for additional information, [Troubleshoot "blue screen" or Stop error problems before you contact Microsoft Support](https://support.microsoft.com/help/3106831/).
+
+> [!NOTE]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
+
+> [!NOTE]
+> If you are an IT professional or support agent, see this article for additional information, [Troubleshoot "blue screen" or Stop error problems before you contact Microsoft Support](https://support.microsoft.com/help/3106831/).
 
 When Microsoft Windows encounters a condition that compromises safe system operation, the system halts. This condition is called a *bug check*. It is also commonly referred to as a *system crash*, a *kernel error*, or a *stop error*.
 
@@ -68,11 +72,11 @@ There are multiple ways to gather the four stop code parameters.
     Probably caused by : hidusb.sys
     ```
 
-### <span id="bug_check_symbolic_names"></span><span id="BUG_CHECK_SYMBOLIC_NAMES"></span>Bug Check Symbolic Names
+### Bug Check Symbolic Names
 
 [**DRIVER\_POWER\_STATE\_FAILURE**](bug-check-0x9f--driver-power-state-failure.md) is the Bug Check Symbolic Name, with an associated bug check code of 9F. The stop code hex value associated with the Bug Check Symbolic Name is listed in the [Bug Check Code Reference](bug-check-code-reference2.md).
 
-### <span id="reading_bug_check_information_from_the_debugger"></span><span id="READING_BUG_CHECK_INFORMATION_FROM_THE_DEBUGGER"></span>Reading Bug Check Information from the Debugger
+### Reading Bug Check Information from the Debugger
 
 If a debugger is attached, a bug check will cause the target computer to break into the debugger. In this case, the blue screen may not appear immediately, the full details on this crash will be sent to the debugger and appear in the debugger window. To see this information a second time, use the [**.bugcheck (Display Bug Check Data)**](-bugcheck--display-bug-check-data-.md) command or the [**!analyze**](-analyze.md) extension command.
 
@@ -150,3 +154,12 @@ Consider using Safe Mode when removing or disabling components. Using Safe Mode 
 
 Safe Mode may be available by pressing a function key on boot, for example F8. Refer to information from the manufacturer for specific startup options.
 
+## See also
+
+[Bug Check Code Reference](bug-check-code-reference2.md)
+
+[Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md)
+
+[Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
+
+[Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)

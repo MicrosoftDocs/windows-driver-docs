@@ -2,7 +2,7 @@
 title: Setting Up KDNET Network Kernel Debugging Manually
 description: Debugging Tools for Windows supports kernel debugging over a network.
 keywords: ["Network debugging", "Ethernet debugging", "Docking station", "Setting Up Kernel-Mode Debugging over a Network Cable Manually"]
-ms.date: 12/07/2018
+ms.date: 11/02/2022
 ---
 
 # Setting Up KDNET Network Kernel Debugging Manually
@@ -334,9 +334,9 @@ To use IPv6 with the debugger complete these steps.
 - If you setup IPv4 on the target, and force use of IPv6 on the debugger command line, you will also not get a connection.
 
 
-
-
 ## Related topics
+
+For additional information, see these topics.
 
 [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
 

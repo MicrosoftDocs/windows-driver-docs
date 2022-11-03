@@ -61,6 +61,10 @@ The SESSION\_HAS\_VALID\_VIEWS\_ON\_EXIT bug check has a value of 0x000000BA. Th
 This error is caused by a session driver not unmapping its mapped views prior to a session unload. This indicates a bug in win32k.sys, atmfd.dll, rdpdd.dll, or a video driver.
 
  
+## See Also
+
+[Bug Check Code Reference](bug-check-code-reference2.md) 
+
 
  
 

@@ -2,7 +2,7 @@
 title: Bug Check 0x124 WHEA_UNCORRECTABLE_ERROR
 description: The WHEA_UNCORRECTABLE_ERROR bug check has a value of 0x00000124. This bug check indicates that a fatal hardware error has occurred. 
 keywords: ["Bug Check 0x124 WHEA_UNCORRECTABLE_ERROR", "WHEA_UNCORRECTABLE_ERROR"]
-ms.date: 08/30/2021
+ms.date: 11/03/2022
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,6 @@ An understanding of the [WHEA\_ERROR\_RECORD](/windows-hardware/drivers/ddi/ntdd
 
 
 ## WHEA\_UNCORRECTABLE\_ERROR Parameters
-
 
 <table>
 <colgroup>
@@ -165,8 +164,6 @@ An understanding of the [WHEA\_ERROR\_RECORD](/windows-hardware/drivers/ddi/ntdd
 </tr>
 </tbody>
 </table>
-
- 
 
 ## Cause
 

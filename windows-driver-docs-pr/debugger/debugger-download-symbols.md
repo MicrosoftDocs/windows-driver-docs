@@ -2,7 +2,7 @@
 title: Download  Windows Symbol Packages for Debugging
 description: This page provides downloads for Windows Symbol Packages which are used for debugging.
 keywords: ["Windows Debugging Downloads", "WinDbg", "Download", "Symbols","Download Symbols"]
-ms.date: 04/26/2018
+ms.date: 11/02/2022
 ---
 
 # Windows Symbol Packages

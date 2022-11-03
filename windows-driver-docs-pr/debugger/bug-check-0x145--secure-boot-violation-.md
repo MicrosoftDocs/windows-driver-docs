@@ -31,6 +31,9 @@ The SECURE\_BOOT\_VIOLATION bug check has a value of 0x00000145. This indicates 
 | 4         | Reserved                           |
 
  
+## See also
+
+[Bug Check Code Reference](bug-check-code-reference2.md)
 
  
 

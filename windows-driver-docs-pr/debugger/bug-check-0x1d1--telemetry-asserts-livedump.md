@@ -23,15 +23,18 @@ To troubleshoot this issue, inspect the callstack to see why the expression in M
 
 ## TELEMETRY\_ASSERTS\_LIVEDUMP Parameters
 
-Parameter | Description 
-|---------|--------------|
-1 | Rva
-2 | ModuleName
-3 | TimeStamp
-4 | SizeOfImage
-
+| Parameter | Description |
+|-----------|-------------|
+| 1         | Rva         |
+| 2         | ModuleName  |
+| 3         | TimeStamp   |
+| 4         | SizeOfImage |
  
+## See Also
 
+[Kernel Live Dump Code Reference](bug-check-code-reference-live-dump.md)
+
+[Bug Check Code Reference](bug-check-code-reference2.md)
  
 
 

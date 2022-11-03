@@ -596,7 +596,9 @@ A PCI routing table (\_PRT) is the ACPI BIOS object that specifies how all the P
 You can display a \_PRT in the debugger by using the **!acpikd.nsobj** extension together with the address of the \_PRT object as its argument.
 
  
+ ## See Also
 
+[Bug Check Code Reference](bug-check-code-reference2.md)
  
 
 

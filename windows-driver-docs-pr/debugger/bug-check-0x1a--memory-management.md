@@ -2,7 +2,7 @@
 title: Bug Check 0x1A MEMORY_MANAGEMENT
 description: The MEMORY_MANAGEMENT bug check has a value of 0x0000001A. This indicates that a severe memory management error occurred.
 keywords: ["Bug Check 0x1A MEMORY_MANAGEMENT", "MEMORY_MANAGEMENT"]
-ms.date: 02/04/2020
+ms.date: 11/02/2022
 topic_type:
 - apiref
 api_name:
@@ -247,3 +247,8 @@ Parameter 1 identifies the exact violation.
 The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 Running the Windows Memory Diagnostic tool could be useful as well to exclude any kind of problem affecting the physical memory modules.
+
+
+## See also
+
+[Bug Check Code Reference](bug-check-code-reference2.md)

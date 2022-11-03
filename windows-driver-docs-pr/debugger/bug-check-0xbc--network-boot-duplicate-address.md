@@ -66,6 +66,10 @@ This error indicates that when TCP/IP sent out an ARP for its IP address, it got
 
 When Windows is booting off a network, this is a fatal error.
 
+## See Also
+
+[Bug Check Code Reference](bug-check-code-reference2.md) 
+
  
 
  

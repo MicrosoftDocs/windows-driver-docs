@@ -2,7 +2,7 @@
 title: Bug Check 0xEF CRITICAL_PROCESS_DIED
 description: The CRITICAL_PROCESS_DIED bug check has a value of 0x000000EF. This indicates that a critical system process died.
 keywords: ["Bug Check 0xEF CRITICAL_PROCESS_DIED", "CRITICAL_PROCESS_DIED"]
-ms.date: 02/25/2020
+ms.date: 11/02/2022
 topic_type:
 - apiref
 api_name:
@@ -103,7 +103,7 @@ If you are not able to work with the debugger, these general troubleshooting tip
 
 -   Look in **Device Manager** to see if any devices are marked with the exclamation point (!). Review the events log displayed in driver properties for any faulting driver. Try updating the related driver.
 
-## <span id="see_also"></span>See also
+## See also
 
 [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md)
 

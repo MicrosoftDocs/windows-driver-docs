@@ -2,7 +2,7 @@
 title: Bug Check 0xA IRQL_NOT_LESS_OR_EQUAL
 description: The IRQL_NOT_LESS_OR_EQUAL bug check has a value of 0x0000000A.
 keywords: ["Bug Check 0xA IRQL_NOT_LESS_OR_EQUAL", "IRQL_NOT_LESS_OR_EQUAL"]
-ms.date: 05/23/2017
+ms.date: 11/02/2022
 topic_type:
 - apiref
 api_name:
@@ -97,7 +97,6 @@ Following are some general guidelines that you can use to categorize the type of
 
 - Otherwise, this may be a bad pointer, possibly caused by use-after-free or bit-flipping. Investigate the validity of parameter 1 with [**!pte**](-pte.md), [**!address**](-address.md), and [**ln** (list nearest symbols)](ln--list-nearest-symbols-.md).
 
-
 ## Resolution
 
 If a kernel debugger is available, obtain a stack trace. Start by running the [**!analyze**](-analyze.md) debugger extension to display information about the bug check. (The **!analyze** extension can be helpful in determining the root cause.) Next, enter one of the [**k\*** (display stack backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)  commands to view the call stack.
@@ -165,3 +164,7 @@ If you encounter bug check 0xA while upgrading to a newer version of Windows, th
 **Resolving an antivirus software problem:** Disable the program and confirm whether doing so resolves the error. If it does, contact the manufacturer of the program about a possible update.
 
 For general information about troubleshooting bug checks, see [Blue screen data](blue-screen-data.md).
+
+ ## See Also
+
+[Bug Check Code Reference](bug-check-code-reference2.md)
