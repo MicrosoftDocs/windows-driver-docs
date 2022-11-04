@@ -914,6 +914,8 @@
       href: supplying-fence-identifiers.md
     - name: "Handling Resource Creation and Destruction"
       href: handling-resource-creation-and-destruction.md
+    - name: "D3D10DDIRESOURCE_TYPE"
+      href: ne-d3d10umddi-d3d10ddiresource_type.md
     - name: "Supporting brightness controls for external display connectors"
       href: supporting-brightness-controls-for-external-display-connectors.md
     - name: "Container support for non-DX APIs"
