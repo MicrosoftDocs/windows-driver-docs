@@ -1,7 +1,12 @@
 ---
-title: Using Windows Update to Install Drivers
+title: Understanding Windows Update rules for driver distribution
 description: This topic describes how you can control when Windows Update distributes your driver.
-ms.date: 11/02/2020
+keywords:
+- manual driver , automatic driver
+- optional driver , critical driver
+- Dynamic Update
+- driver distribution
+ms.date: 11/04/2022
 ms.topic: article
 ---
 
