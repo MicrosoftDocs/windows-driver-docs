@@ -34,7 +34,7 @@ Class drivers for CD-ROM devices handle additional public I/O control codes, alo
 |[IOCTL_CDROM_SET_SPEED](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_set_speed)|Sets the spindle speed of the CD-ROM drive.|
 
 
-# Media playback control
+## Media playback control
 Beginning with Windows Vista, CDROM class drivers do not use these IOCTL. Prior to Windows Vista, these IOCTL was used for audio playback on older CD-ROM drives that supported direct audio output in hardware.
 
 Client applications should use the Media Control Interface (MCI) API rather than issuing these IOCTL.
