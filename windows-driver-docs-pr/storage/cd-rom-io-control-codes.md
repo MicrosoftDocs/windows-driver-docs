@@ -35,9 +35,9 @@ Class drivers for CD-ROM devices handle additional public I/O control codes, alo
 
 
 ## Media playback control
-Beginning with Windows Vista, CDROM class drivers do not use these IOCTL. Prior to Windows Vista, these IOCTL was used for audio playback on older CD-ROM drives that supported direct audio output in hardware.
+Beginning with Windows Vista, CDROM class drivers do not use these IOCTLs. Prior to Windows Vista, these IOCTLs were used for audio playback on older CD-ROM drives that supported direct audio output in hardware.
 
-Client applications should use the Media Control Interface (MCI) API rather than issuing these IOCTL.
+Client applications should use the [Media Control Interface (MCI)](/windows/win32/multimedia/media-control-interface--mci) API rather than issuing these IOCTLs.
 
 |I/O control code|Description|
 |----|----|
