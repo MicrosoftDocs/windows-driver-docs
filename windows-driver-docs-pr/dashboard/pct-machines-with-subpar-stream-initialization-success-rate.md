@@ -26,7 +26,7 @@ Measure 11458866 looks at the audio stream initialization success rate for *all*
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|Dynamic, uses confidence intervals|
 |**Passing criteria**|<=1 % of machines an Initialization Success Rate below 90% |
-|**Measure IDs**|11458866 - all audio hardware on the flighted machines|
+|**Measure IDs**|*11458866 (Legacy)*, 27657901 - all audio hardware on the flighted machines|
 
 ## Calculation
 
