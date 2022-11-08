@@ -238,6 +238,16 @@
         href: percent-of-internet-connection-failures-from-the-top-95-percent-of-device-ap-pairs.md
       - name: "Percentage of Wi-Fi sessions ending in a disconnection with more than 50% signal quality"
         href: pct-wi-fi-sessions-ending-in-unexpected-disconnect.md
+    - name: "Experimental Measures"
+      items:
+      - name: "Render Stream Initialization: % of devices with at least 1 audio render stream initialization failure"
+        href: pct-devices-with-at-least-one-audio-render-stream-initialization-failure.md
+      - name: "Capture Stream Initialization: % of devices with at least 1 audio capture stream initialization failure"
+        href: pct-devices-with-at-least-one-audio-capture-stream-initialization-failure.md 
+      - name: "Render Stream Initialization: % of devices with at least 1 audio render stream initialization failure per Driver"
+        href: pct-machines-with-at-least-one-audio-render-stream-initialization-failure-per-driver.md
+      - name: "Capture Stream Initialization: % of devices with at least 1 audio capture stream initialization failure per Driver"
+        href: pct-machines-with-at-least-one-audio-capture-stream-initialization-failure-per-Driver.md
   - name: "Appendix"
     href: measure-appendix.md
   - name: "Glossary"

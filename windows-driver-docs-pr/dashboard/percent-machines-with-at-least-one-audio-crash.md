@@ -20,7 +20,7 @@ See the "Audio user-mode reliability" section at [Audio measures](audio-measures
 |**Measurement criteria**|Percent of machines|
 |**Minimum population**|Dynamic, uses confidence intervals|
 |**Passing criteria**|<=0.4 % of machines with at least 1 crash in AudioSrv<br/><1% of machines with at least 1 crash in either AudioSrv or AudioDG|
-|**Measure IDs**|12518948 - AudioSrv only<br/>23032999 - both AudioSrv and AudioDG|
+|**Measure IDs**|12518948 - AudioSrv only<br/>*23032999 (Legacy), 38373370, 29568277 - both AudioSrv and AudioDG|
 
 ## Calculation
 

@@ -20,7 +20,7 @@ See the "Audio stream initialization" section at [Audio measures](audio-measures
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|50 machines|
 |**Passing criteria**|<=8 % of machines with at least 1 audio steam initialization failure|
-|**Measure ID**|12111510|
+|**Measure ID**| *12111510 (Legacy*), 39415055, 26628516|
 
 ## Calculation
 
