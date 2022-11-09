@@ -19,9 +19,8 @@ In contrast, starting in UMDF version 2, you can write a UMDF driver in the C pr
 
 While there is significant commonality between UMDF 2 and KMDF, there is still a small amount of functionality that is available only in one framework or the other. For specifics, see [Comparing UMDF 2 Functionality to KMDF](comparing-umdf-2-0-functionality-to-kmdf.md). For a list of all UMDF 2 and KMDF callbacks and methods and which framework(s) they apply to, see [Summary of WDF Callbacks and Methods](/windows-hardware/drivers/ddi/_wdf/). In a few cases, a structure member or parameter of a method applies only to one framework or the other. The documentation describes these differences on the corresponding reference pages.
 
-You must choose one or the other; you cannot write a UMDF driver that calls methods from both UMDF versions 1 and 2.
 
-UMDF version 2 drivers run only on Windows 8.1 or later. If you need to write a UMDF driver that runs on operating systems earlier than Windows 8.1, you need to write a UMDF 1.x driver. You can use version 1.11 to build drivers that run on Windows Vista and later. For more info on version 1, see [UMDF 1.x Design Guide](user-mode-driver-framework-design-guide.md). This section describes UMDF version 2.
+
 
 
 
