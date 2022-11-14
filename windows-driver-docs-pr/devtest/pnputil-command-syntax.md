@@ -9,7 +9,7 @@ api_name:
 - PnPUtil
 api_type:
 - NA
-ms.date: 11/11/2022
+ms.date: 11/14/2022
 ---
 
 # PnPUtil Command Syntax
@@ -206,7 +206,7 @@ PNPUTIL /enum-devices [/connected | /disconnected]
 
 Flags:
 
-- `/connected` filter by connected devices
+- `/connected` - filter by connected devices
 - `/disconnected` - filter by disconnected devices
 - `/instanceid <instance ID>` - filter by device instance ID
 - `/class <name | GUID>` - filter by device class name or GUID
@@ -238,7 +238,7 @@ PNPUTIL /enum-interfaces [/enabled | /disabled] [/class <GUID>] [/properties]
 
 Flags:
 
-- `/enabled`- filter by enabled interfaces
+- `/enabled` - filter by enabled interfaces
 - `/disabled` - filter by disabled interfaces
 - `/class <GUID>` - filter by interface class GUID
 
