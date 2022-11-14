@@ -30,8 +30,6 @@ If your request is accepted, updates are published to [Windows hardware develope
 
 To make substantial changes to an existing article, add or change images, or contribute a new article, we recommend forking the official repo into your GitHub account, and then creating a local clone. For more info, see [Fork a Repo](https://help.github.com/articles/fork-a-repo/).
 
-For general information on working with the driver docs, see [aka.ms/writethedocs](https://aka.ms/writethedocs).
-
 ## Using issues to provide feedback on Windows driver documentation
 
 If you would like to provide feedback rather than suggesting a change to documentation, [create an issue](https://github.com/MicrosoftDocs/windows-driver-docs/issues).
