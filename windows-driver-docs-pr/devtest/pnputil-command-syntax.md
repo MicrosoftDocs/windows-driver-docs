@@ -9,163 +9,276 @@ api_name:
 - PnPUtil
 api_type:
 - NA
-ms.date: 03/16/2022
+ms.date: 11/14/2022
 ---
 
 # PnPUtil Command Syntax
 
+PnPUtil (PnPUtil.exe) is included in every version of Windows starting with Windows Vista, in the %windir%\\system32 directory.
 
-To run PnPUtil, open a Command Prompt window (**Run as Administrator**) and type a command using the following syntax and parameters.
+To run PnPUtil, open a command prompt window (Run as Administrator) and type a command using the following syntax and parameters.
 
-**Note**  PnPUtil (PnPUtil.exe) is included in every version of Windows, starting with Windows Vista (in the %windir%\\system32 directory).
-
-**PNPUTIL** \[/add-driver <...> | /delete-driver <...> | /export-driver <...> | /enum-drivers | /enum-devices \[<...>\] | /enum-interfaces \[<...>\] | /disable-device <...> | /enable-device <...> | /restart-device <...> | /remove-device <...> | /scan-devices \[<...>\] | /?\]
+```syntax
+PNPUTIL [/add-driver <...> | /delete-driver <...> |
+         /export-driver <...> | /enum-drivers |
+         /enum-devices [<...>] | /enum-interfaces [<...>] |
+         /disable-device <...> | /enable-device <...> |
+         /restart-device <...> | /remove-device <...> |
+         /scan-devices [<...>] | /enum-classes [<...>] |
+         /?]
+```
 
 ## Commands
 
-#### /add-driver *\<filename.inf | \*.inf> \[/subdirs] \[/install] \[/reboot]*
+### /add-driver
 
-**Available starting in Windows 10, version 1607.**
+Adds driver package(s) into the driver store. Command available starting in Windows 10, version 1607.
 
-Add driver package(s) into the driver store.  
+```syntax
+PNPUTIL /add-driver <filename.inf | *.inf> [/subdirs] [/install] [/reboot]
+```
 
-/subdirs - traverse sub directories for driver packages.  
+Flags:
 
-/install - install/update drivers on any matching devices.  
+- `/subdirs` - traverse sub directories for driver packages
+- `/install` - install/update drivers on any matching devices
+- `/reboot` - reboot system if needed to complete the operation
 
-/reboot - reboot system if needed to complete the operation.  
+### /delete-driver
 
+Deletes a driver package from the driver store. Command available starting in Windows 10, version 1607.
 
-#### /delete-driver *<oem#.inf> \[/uninstall] \[/force] \[/reboot]*
+```syntax
+PNPUTIL /delete-driver <oem#.inf> [/uninstall] [/force] [/reboot]
+```
 
-**Available starting in Windows 10, version 1607.**
+Flags:
 
-Delete driver package from the driver store.  
+- `/uninstall` - uninstall driver package from any devices using it
+- `/force` - delete driver package even when it is in use by devices
+- `/reboot` - reboot system if needed to complete the operation
 
-/uninstall - uninstall driver package from any devices using it.  
+### /export-driver
 
-/force - delete driver package even when it is in use by devices.  
+Exports driver package(s) from the driver store into a target directory. Command available starting in Windows 10, version 1607.
 
-/reboot - reboot system if needed to complete the operation.  
+```syntax
+PNPUTIL /export-driver <oem#.inf | *> <target directory>
+```
 
+### /enum-drivers
 
-#### /export-driver *<oem#.inf | \*> \<target directory>*
+Enumerates all third-party driver packages in the driver store. Command available starting in Windows 10, version 1607.
 
-**Available starting in Windows 10, version 1607.**
+```syntax
+PNPUTIL /enum-drivers [/class <name | GUID>] [/files]
+```
 
-Export driver package(s) from the driver store into a target directory.
+Flags available starting in Windows 11, version 21H2:
 
-#### **/enum-drivers**
+- `/class <name | GUID>` - filter by driver class name or GUID
 
-**Available starting in Windows 10, version 1607.**
+Flags available starting in Windows 11, version 22H2:
 
-Enumerate all 3rd party driver packages in the driver store.
+- `/files` - enumerate all driver package files
 
-#### **/disable-device** *\<instance ID\> \[/reboot]*
+### /disable-device
 
-**Available starting in Windows 10 Version 2004**
+Disables devices on the system. Command available starting in Windows 10 version 2004.
 
-Disable devices on the system. 
+```syntax
+PNPUTIL /disable-device [<instance ID> | /deviceid <device ID>]
+                        [/class <name | GUID>]
+                        [/bus <name | GUID>]
+                        [/reboot] [/force]
+```
 
-/reboot - reboot system if needed to complete the operation.
+Flags:
 
-#### **/enable-device** *\<instance ID\> \[/reboot]*
+- `/reboot` - reboot system if needed to complete the operation
 
-**Available starting in Windows 10 Version 2004**
+Flags available starting in Windows 11 version 21H2:
 
-Enable devices on the system.  
+- `/deviceid <device ID>` - disable all devices with matching device ID
 
-/reboot - reboot system if needed to complete the operation.
+Flags available starting in Windows 11 version 22H2:
 
-#### **/restart-device** *\<instance ID\> \[/reboot]*
+- `/class <name | GUID>` - filter by device class name or GUID
+- `/bus <name | GUID>` - filter by bus enumerator name or bus type GUID
+- `/force` - disable even if device provides critical system functionality
 
-**Available starting in Windows 10 Version 2004**
+### /enable-device
 
-Restart devices devices on the system. 
+Enables devices on the system. Command available starting in Windows 10 version 2004.
 
-/reboot - reboot system if needed to complete the operation.
+```syntax
+PNPUTIL /enable-device [<instance ID> | /deviceid <device ID>]
+                       [/class <name | GUID>] [/bus <name | GUID>]
+                       [/reboot]
+```
 
-#### **/remove-device** *\<instance ID\> \[/subtree] \[/reboot]*
+Flags:
 
-**Available starting in Windows 10 Version 2004**
+- `/reboot` - reboot system if needed to complete the operation
 
-Attempt to remove a device from the system. 
+Flags available starting in Windows 11 version 21H2:
 
-/subtree - remove entire device subree, including any child devices.
+- `/deviceid <device ID>` - enable all devices with matching device ID
 
-/reboot - reboot system if needed to complete the operation.
+Flags available starting in Windows 11 version 22H2:
 
+- `/class <name | GUID>` - filter by device class name or GUID
+- `/bus <name | GUID>` - filter by bus enumerator name or bus type GUID
 
-#### **/scan-devices** *[/instanceid \<instance ID\>] \[/async]*
+### /restart-device
 
-**Available starting in Windows 10 Version 2004**
+Restarts devices on the system. Command available starting in Windows 10 version 2004.
 
-Scan the system for any device hardware changes. 
+```syntax
+PNPUTIL /restart-device [<instance ID> | /deviceid <device ID>]
+                        [/class <name | GUID>] [/bus <name | GUID>]
+                        [/reboot]
+```
 
-/instanceid \<instance ID> - scan device subtree for changes.
+Flags:
 
-/async - scan for changes asynchronously.
+- `/reboot` - reboot system if needed to complete the operation
 
+Flags available starting in Windows 11 version 21H2:
 
-#### **/enum-devices**
+- `/deviceid <device ID>` - restart all devices with matching device ID
 
-**/enum-devices** *\[/connected] | /disconnected] \[/instanceid \<instance ID\>] \[/class <name | GUID>] \[/problem \[\<code\>]] \[/ids] \[/relations] \[/drivers]*
+Flags available starting in Windows 11 version 22H2:
 
-**Available starting in Windows 10 Version 1903**
+- `/class <name | GUID>` - filter by device class name or GUID
+- `/bus <name | GUID>` - filter by bus enumerator name or bus type GUID.
 
-Enumerate all devices on the system.
+### /remove-device
 
-/connected | /disconnected - filter by connected devices or filter by disconnected devices.
+Attempts to remove a device from the system. Command available starting in Windows 10 version 2004.
 
-/instanceid \<instance ID> - filter by device instance ID.
+```syntax
+PNPUTIL /remove-device [<instance ID> | /deviceid <device ID>]
+                       [/class <name | GUID>] [/bus <name | GUID>]
+                       [/subtree] [/reboot] [/force]
+```
 
-/class \<name | GUID> - filter by device class name or GUID.
+Flags:
 
-/problem \[\<code>] - filter by devices with problems or filter by specific problem code.
+- `/subtree` - remove entire device subtree, including any child devices
+- `/reboot` - reboot system if needed to complete the operation
 
-/ids - display hardware IDs and compatible IDs.
+Flags available starting in Windows 11 version 21H2:
 
-/relations - display parent and child device relations.
+- `/deviceid <device ID>` - remove all devices with matching device ID
 
-/drivers - display matching and installed drivers.
+Flags available starting in Windows 11 version 22H2:
 
+- `/class <name | GUID>` - filter by device class name or GUID
+- `/bus <name | GUID>` - filter by bus enumerator name or bus type GUID
+- `/force` - remove even if device provides critical system functionality
 
-#### **/enum-interfaces** *[/enabled | /disabled] [/class \<GUID\>]*
+### /scan-devices
 
-**Available starting in Windows 10 Version 1903**
+Scans the system for any device hardware changes. Command available starting in Windows 10 version 2004.
 
-Enumerate all device interfaces on the system.
+```syntax
+/scan-devices [/instanceid <instance ID>] [/async]
+```
 
-/enabled | /disabled - filter by enabled interfaces or filter by disabled interfaces.
+Flags:
 
-/class \<GUID> - filter by interface class GUID.
+- `/instanceid <instance ID>` - scan device subtree for changes
+- `/async` - scan for changes asynchronously
 
-#### **/?**
+### /enum-devices
+
+Enumerate all devices on the system. Command available starting in Windows 10 version 1903.
+
+```syntax
+PNPUTIL /enum-devices [/connected | /disconnected]
+                      [/instanceid <instance ID> | /deviceid <device ID>]
+                      [/class <name | GUID>] [/problem [<code>]]
+                      [/bus [<name | GUID>]] [/deviceids] [/relations]
+                      [/services] [/stack] [/drivers] [/interfaces]
+                      [/properties] [/resources]
+```
+
+Flags:
+
+- `/connected` - filter by connected devices
+- `/disconnected` - filter by disconnected devices
+- `/instanceid <instance ID>` - filter by device instance ID
+- `/class <name | GUID>` - filter by device class name or GUID
+- `/problem [<code>]` - filter by devices with problems or filter by specific problem code
+- `/relations` - display parent and child device relations
+- `/drivers` - display matching and installed drivers
+
+Flags available starting in Windows 11 version 21H2:
+
+- `/bus [<name | GUID>]` - display bus enumerator name and bus type GUID or filter by bus enumerator name or bus type GUID
+- `/deviceids` - display hardware and compatible IDs
+- `/services` - display device services
+- `/stack` - display effective device stack information
+- `/interfaces` - display device interfaces
+- `/properties` - display all device properties
+
+Flags available starting in Windows 11 version 22H2:
+
+- `/deviceid <device ID>` - filter by device hardware and compatible ID
+- `/resources` - display device resources
+
+### /enum-interfaces
+
+Enumerates all device interfaces on the system. Command available starting in Windows 10 version 1903.
+
+```syntax
+PNPUTIL /enum-interfaces [/enabled | /disabled] [/class <GUID>] [/properties]
+```
+
+Flags:
+
+- `/enabled` - filter by enabled interfaces
+- `/disabled` - filter by disabled interfaces
+- `/class <GUID>` - filter by interface class GUID
+
+Flags available starting in Windows 11, version 22H2:
+
+- `/properties` - display all interface properties
+
+### /enum-classes
+
+Enumerates all device classes on the system. Command available starting in Windows 11, version 22H2.
+
+```syntax
+PNPUTIL /enum-classes [/class <name | GUID>] [/services]
+```
+
+Flags:
+
+- `/class <name | GUID>` - filter by device class name or GUID
+- `/services` - display device class services
+
+### /?
 
 Displays the command-line syntax.
 
-### Legacy Command Mapping
+```syntax
+PNPUTIL /?
+```
+
+## Legacy Command Mapping
 
 The following commands are still supported, but are legacy.  We recommend that you use the up-to-date syntax instead.
 
-```
+```syntax
   -a [-i]  <filename.inf> ==> /add-driver <filename.inf> [/install]
 
   -d [-f]  <oem#.inf>     ==> /delete-driver <oem#.inf> [/force]
 
-  -e                     ==> /enum-drivers
+  -e                      ==> /enum-drivers
 ```
- 
 
-##  Examples
+## Examples
 
 For examples of how to use the PnPUtil tool, see [PnPUtil Examples](pnputil-examples.md).
-
- 
-
- 
-
-
-
-
-
