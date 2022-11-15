@@ -22,7 +22,6 @@ This section includes:
 
 [CAB files that contain paging files along with a memory dump](cab-files-that-contain-paging-files-along-with-a-memory-dump.md)
 
-[Debugging OCA minidump files](debugging-oca-minidump-files.md)
 
 
  

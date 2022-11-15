@@ -6,7 +6,7 @@ keywords:
 - boot entries WDK
 - adding boot entries
 - Boot.ini files WDK , adding boot entries
-ms.date: 03/16/2022
+ms.date: 11/14/2022
 ---
 
 # Adding Boot Entries
@@ -45,6 +45,9 @@ The GUID in the preceding message (which appears between braces ({})) is the ide
 
 If the command fails, be sure that you are running in a Command Prompt window with administrator privileges and that all of the command parameters are spelled correctly, including the braces around **{current}**.
 
+> [!NOTE]
+> If you are using [Windows PowerShell](/powershell/module/Microsoft.PowerShell.Core/), you must use quotes around the boot entry identifier, for example: **"{49916baf-0e08-11db-9af4-000bdbd316a0}"** or **"{current}"**.
+
 You can also add a boot entry using the **/create** option. This method is more difficult because you need to provide additional information about the boot entry type. You also need to specify the **/application**, **/inherit**, or **/device** options. For example, the following creates a new operating system boot entry called "My Windows Vista":
 
 ```
@@ -67,7 +70,7 @@ bcdedit /displayorder {ID} {ID} ...
 
 The ID is the GUID of the boot entry or a reserved identifier, such as **{current}**). Separate each identifier with a space. Be sure to include the braces ({}).
 
-For example, to add the DebugEntry boot entry to the boot menu after the **{current}** entry, use the following command (remember to use `'{guid}'` in Windows PowerShell):
+For example, to add the DebugEntry boot entry to the boot menu after the **{current}** entry, use the following command (remember to use `"{guid}"` in Windows PowerShell):
 
 ```
 bcdedit /displayorder {current} {49916baf-0e08-11db-9af4-000bdbd316a0}

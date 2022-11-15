@@ -2,18 +2,15 @@
 title: Analyzing a Kernel-Mode Dump File with KD
 description: Analyzing a Kernel-Mode Dump File with KD
 keywords: ["KD, analyzing a dump file", "CAB file containing a dump file, analyzing kernel-mode dump file with KD"]
-ms.date: 05/23/2017
+ms.date: 11/09/2022
 ---
 
 # Analyzing a Kernel-Mode Dump File with KD
 
 
-## <span id="ddk_analyzing_a_kernel_mode_dump_file_with_kd_dbg"></span><span id="DDK_ANALYZING_A_KERNEL_MODE_DUMP_FILE_WITH_KD_DBG"></span>
-
-
 Kernel-mode memory dump files can be analyzed by KD. The processor or Windows version that the dump file was created on does not need to match the platform on which KD is being run.
 
-### <span id="starting_kd"></span><span id="STARTING_KD"></span>Starting KD
+### Starting KD
 
 To analyze a dump file, start KD with the **-z** command-line option:
 
@@ -29,7 +26,7 @@ Dump files generally end with the extension .dmp or .mdmp. You can use network s
 
 It is also common for dump files to be packed into a CAB file. If you specify the file name (including the .cab extension) after the **-z** option or as the argument to an [**.opendump**](-opendump--open-dump-file-.md) command, the debugger can read the dump files directly out of the CAB. However, if there are multiple dump files stored in a single CAB, the debugger will only be able to read one of them. The debugger will not read any additional files from the CAB, even if they were symbol files or other files associated with the dump file.
 
-### <span id="analyzing_the_dump_file"></span><span id="ANALYZING_THE_DUMP_FILE"></span>Analyzing the Dump File
+### Analyzing the Dump File
 
 If you are analyzing a Kernel Memory Dump or a Small Memory Dump, you may need to set the executable image path to point to any executable files which may have been loaded in memory at the time of the crash.
 
@@ -57,7 +54,6 @@ The following debugger extensions are especially useful for analyzing a kernel-m
 
 For techniques that can be used to read specific kinds of information from a dump file, see [Extracting Information from a Dump File](extracting-information-from-a-dump-file.md).
 
- 
 
  
 

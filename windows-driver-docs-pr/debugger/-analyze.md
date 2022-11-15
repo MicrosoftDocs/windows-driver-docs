@@ -2,7 +2,7 @@
 title: analyze (WinDbg)
 description: The analyze extension displays information about the current exception or bug check.
 keywords: ["analyze Windows Debugging"]
-ms.date: 11/03/2022
+ms.date: 11/14/2022
 topic_type:
 - apiref
 api_name:
@@ -18,26 +18,27 @@ The **!analyze** extension displays information about the current exception or b
 User-Mode
 
 ```dbgcmd
-    !analyze [-v] [-f | -hang] [-D BucketID] 
-    !analyze [-v] -xml [-xmi] [-xcs] [-xmf OutputXmlFile]
+    !analyze [-v[0..99]] [-f | -hang]
+    !analyze [-v[0..99]] -xml [-xmi] [-xcs] [-xmf OutputXmlFile]
     !analyze -c [-load KnownIssuesFile | -unload | -help ]
 ```
 
 Kernel-Mode
 
 ```dbgcmd    
-    !analyze [-v] [-f | -hang] [-D BucketID] 
-    !analyze [-v] -xml [-xmi] [-xcs] [-xmf OutputXmlFile]
-    !analyze -c [-load KnownIssuesFile | -unload | -help ]
+    !analyze [-v[0..99]] [-f | -hang]
     !analyze -show BugCheckCode [BugParameters]
+    !analyze [-v[0..99]] -xml [-xmi] [-xcs] [-xmf OutputXmlFile]
+    !analyze -c [-load KnownIssuesFile | -unload | -help ]
 ```
 
-## Parameters
+## General parameters
 
+**-v[0..99]**   
 
-**-v**   
+Displays verbose output. Additional information can be displayed by specifying a number from 0 to 99. If a number is not specified, the default value is 1.  You can also specify Very Verbose (**-vv**) to display all available information. 
 
-Displays verbose output.
+For user mode, **-v6** will display what has been discovered globally, and on each thread.
 
 **-f**  
 
@@ -49,13 +50,13 @@ Generates **!analyze** hung-application output. Use this parameter when the targ
 
 Before you run this extension in user mode, consider changing the current thread to the thread that you think has stopped responding (that is, hung), because the exception might have changed the current thread to a different one.
 
-**-D** *BucketID*   
-
-Displays only those items that are relevant to the specified *BucketID*.
+### Show parameter
 
 **-show** *BugCheckCode* \[*BugParameters*\]  
 
 Displays information about the bug check specified by *BugCheckCode*. *BugParameters* specifies up to four bug check parameters separated by spaces. These parameters enable you to further refine your search.
+
+### Continue execution parameters
 
 **-c**   
 
@@ -64,9 +65,9 @@ Continues execution when the debugger encounters a known issue. If the issue is 
 You can use the **-c** option with the following subparameters. These subparameters configure the list of known issues. They do not cause execution to occur by themselves. Until you run **!analyze** **-c** **** **-load** at least one time, **!analyze** **-c** has no effect.
 
 **-load** *KnownIssuesFile*  
-Loads the specified known-issues file. *KnownIssuesFile* specifies the path and file name of this file. This file must be in XML format. You can find a sample file in the sdk\\samples\\analyze\_continue subdirectory of the debugger installation directory. (You must have performed a full installation of Debugging Tools for Windows to have this file.)
+Loads the specified known-issues file. *KnownIssuesFile* specifies the path and file name of this file. This file must be in XML format. 
 
-The list of known issues in the *KnownIssuesFile* file is used for all later **-c** commands until you use **-c** **** **-unload**, or until you use **-c** **** **-load** again (at which point the new data replaces the old data).
+The list of known issues in the *KnownIssuesFile* file is used for all later **-c** commands until you use **-c** **-unload**, or until you use **-c** **-load** again (at which point the new data replaces the old data).
 
 **-unload**  
 
@@ -76,7 +77,7 @@ Unloads the current list of known issues.
 
 Displays help for the **!analyze** **-c** extension commands extension in the [Debugger Command window](debugger-command-window.md).
 
-## XML load options
+### XML load option parameters
 
 **-xml**   
 
@@ -115,10 +116,11 @@ For drivers that use User-Mode Driver Framework (UMDF) version 2.15 or later, **
 
 See these topics for additional information.
 
+[Using the !analyze Extension](using-the--analyze-extension.md)
+
 [Bug Check Code Reference](bug-check-code-reference2.md)
 
 [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md)
 
 [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
 
-[Using the !analyze Extension](using-the--analyze-extension.md) and [!analyze](-analyze.md)

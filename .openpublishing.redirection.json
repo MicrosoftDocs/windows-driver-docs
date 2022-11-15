@@ -8821,6 +8821,11 @@
             "source_path": "windows-driver-docs-pr/ifs/rxdbgbreakpoint.md",
             "redirect_URL": "/previous-versions/windows/hardware/rdbss/rxdbgbreakpoint",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debugging-oca-minidump-files.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/crash-dump-files",
+            "redirect_document_id": false
         }
 
     ]

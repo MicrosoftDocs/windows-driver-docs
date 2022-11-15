@@ -1,11 +1,10 @@
 ---
 title: Metadata Files for Analysis Extension Plug-ins
 description: When you write an analysis extension plug-in, you also write a metadata file that describes the situations for which you want your plug-in to be called.
-ms.date: 11/28/2017
+ms.date: 11/09/2022
 ---
 
 # Metadata Files for Analysis Extension Plug-ins
-
 
 When you write an analysis extension plug-in, you also write a metadata file that describes the situations for which you want your plug-in to be called. When the [**!analyze**](-analyze.md) debugger command runs, it uses metadata files to determine which plug-ins to load.
 
@@ -18,8 +17,7 @@ After the key and the following white space, the corresponding value begins. A v
 -   Any set of characters to the end of the line. This form works for values that do not contain any newline characters.
 
     **Important**  If the last value in the metadata file has a value of this form, the line must end with a newline character.
-
-     
+ 
 
 -   Any set of characters between braces { }. The form works for values that contain newline characters.
 
@@ -27,8 +25,8 @@ A line beginning with \# is a comment and is ignored. Comments can start only wh
 
 You can use the following keys in a metadata file.
 
-| Key            | Description                                                                                                                                                                                                                                                                                       |
-|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Key            |  Description                |
+|----------------|-----------------------------|
 | PluginId       | String - Identifies the plug-in.                                                                                                                                                                                                                                                                  |
 | DebuggeeClass  | String - Possible values are “Kernel” and "User". Indicates that the plug-in is interested in analyzing only kernel-mode failures or only user-mode failures.                                                                                                                                     |
 | BugCheckCode   | 32-bit bug check code - Indicates that the plug-in is interested in analyzing this [bug check code](bug-check-code-reference2.md). A single metadata file can specify multiple bug check codes.                                                                                                  |
@@ -37,9 +35,7 @@ You can use the following keys in a metadata file.
 | ImageName      | String - Indicates that the plug-in is only interested only in sessions where the default analysis considers this image (dll, sys, or exe) to be at fault. The plug-in is invoked after analysis has determined which image is at fault. A single metadata file can specify multiple image names. |
 | MaxTagCount    | Integer - The maximum number of custom tags that the plug-in needs. Custom tags are tags other than the ones defined in extsfns.h.                                                                                                                                                                |
 
- 
-
-## <span id="Example_Metadata_Files"></span><span id="example_metadata_files"></span><span id="EXAMPLE_METADATA_FILES"></span>Example Metadata Files
+## Example Metadata Files
 
 
 The following metadata file describes a plug-in that is interested in analyzing bug check code 0xE2. (Recall that the last line must end with a newline character.)
@@ -81,12 +77,11 @@ ExecutableName      windbg.exe
 #
 # Custom tag descriptions 
 #
-TagDesc         0xA0000000  SAMPLE_PLUGIN_DEBUG_TEXT    {Sample debug
-help text from plug-in analysis}
+TagDesc         0xA0000000  SAMPLE_PLUGIN_DEBUG_TEXT    {Sample debug help text from plug-in analysis}
 #
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Writing an Analysis Extension Plug-in to Extend !analyze](writing-an-analysis-extension-to-extend--analyze.md)

@@ -2004,8 +2004,6 @@
     href: extracting-information-from-a-dump-file.md
   - name: "CAB Files that Contain Paging Files Along with a Memory Dump"
     href: cab-files-that-contain-paging-files-along-with-a-memory-dump.md
-  - name: "Debugging OCA minidump files"
-    href: debugging-oca-minidump-files.md
 - name: "Bug Checks (Blue Screens)"
 # Auto-expanded node
   items: 
