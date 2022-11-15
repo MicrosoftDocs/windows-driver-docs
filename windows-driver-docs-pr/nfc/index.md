@@ -1,6 +1,6 @@
 ---
 title: NFC design guide
-description: Windows exposes a rich set of experiences using NFC technology including the following platforms
+description: Windows exposes a rich set of experiences using NFC technology.
 ms.assetid: 26BFE25A-AC46-4634-8330-990DB447E55A
 keywords:
 - NFC
@@ -8,24 +8,24 @@ keywords:
 - proximity
 - near field proximity
 - NFP
-ms.date: 04/20/2017
+- smart card
+- smartcard
+ms.date: 11/15/2022
 ms.topic: article
 ---
 
 # Near field communications (NFC) design guide
 
-Windows exposes a rich set of experiences using NFC technology including the following platforms:
+Windows exposes a rich set of experiences using NFC technology including:
 
-- Proximity Platform – Provides a platform to initiate peer-to-peer sharing of content between devices via NFC, focusing on Windows devices, as well as other NFC-compliant mobile devices as well as reading/write content to/from NFC forum compliant tags.
+- [Wi-Fi Direct pairing](wi-fi-direct-paring-implementation.md) - Peripheral devices can participate in *Tap and Setup* and *Tap and Reconnect* use cases.
+- [Near field proximity](nfp-design-guide.md) – Provides a common surface for Windows to use NFP capabilities.
+- [Smart card support](design-guide-smart-card.md) – Allows callers to the NFC device driver to perform low level smart card operations on NFC contactless smart cards.
+- [NFC power management](nfc-power-management.md) - NFC drivers intelligently manage the power state of the device.
 
-- Wallet Platform – Provides the secure storage and transactional capabilities to power on-device payment scenarios, as well as brick-and-mortar payments and other NFC transactions.
-
-To enable NFC support, Microsoft relies on IHVs to provide device drivers that implement the Device Driver Interface (DDI) defined in these topics.
-
-Use the User-Mode Driver Framework (UMDF) 2.0 to write NFC drivers for Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile.
+To enable NFC support, Microsoft relies on IHVs to provide device drivers that implement the device driver interface (DDI) defined in these topics. Use the User-Mode Driver Framework (UMDF) 2.0 to write NFC drivers for Windows.
 
 ## Related topics
 
-[Getting Started with UMDF](../wdf/getting-started-with-umdf-version-2.md)  
-
-[NFC device driver interface (DDI) reference](/windows-hardware/drivers/ddi/index)
+- [Getting Started with UMDF](../wdf/getting-started-with-umdf-version-2.md)
+- [NFC device driver interface (DDI) reference](/windows-hardware/drivers/ddi/index)
