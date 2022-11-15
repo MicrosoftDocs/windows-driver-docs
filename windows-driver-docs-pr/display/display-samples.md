@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 
 ### <span id="display_samples"></span><span id="DISPLAY_SAMPLES"></span>
 
-Starting with Windows 8, [samples are available for download](https://go.microsoft.com/fwlink/p/?LinkId=618052) from the Hardware Dev Center. For Windows 7 and earlier, samples and documentation were included in the Windows Driver Kit (WDK) or Driver Development Kit (DDK).
+Starting with Windows 8, [samples are available for download](https://go.microsoft.com/fwlink/p/?LinkId=618052) from the Hardware Dev Center. For Windows 7 and earlier, samples and documentation were included in the Windows Driver Kit (WDK).
 
 <table>
 <colgroup>
