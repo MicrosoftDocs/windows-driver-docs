@@ -74,10 +74,10 @@ The device setup classes are different from USB device classes discussed earlier
       </tr>
       <tr>
         <td><strong>Modem</strong></br>{4D36E96D-E325-11CE-BFC1-08002BE10318}<p>
-        <strong>Note</strong>   Supports Subclass 02h (ACM)</td>
+        <strong>Note</strong> Supports Subclass 02h (ACM)</td>
         <td>Usbser.sys</br>Custom INF that references mdmcpq.inf</td>
         <td>Windows 11</br>Windows 10 for desktop editions</br>Windows 8.1</td>
-        <td>In Windows 8.1 and earlier versions, Usbser.sys is not automatically loaded. To load the driver, you need to write an INF that references the modem INF (mdmcpq.inf) and includes \[Install\] and \[Needs\] sections.<p>You can enable CDC and Wireless Mobile CDC (WMCDC) support by setting a registry value, as described in <a href="support-for-interface-collections">Support for the Wireless Mobile Communication Device Class</a>.<p>When CDC support is enabled, the <a href="usb-common-class-generic-parent-driver.md">USB Common Class Generic Parent Driver</a> enumerates interface collections that correspond to CDC and WMCDC Control Models, and assigns physical device objects (PDO) to these collections.</td>
+        <td>In Windows 8.1 and earlier versions, Usbser.sys is not automatically loaded. To load the driver, you need to write an INF that references the modem INF (mdmcpq.inf) and includes [Install] and [Needs] sections.<p>You can enable CDC and Wireless Mobile CDC (WMCDC) support by setting a registry value, as described in <a href="support-for-interface-collections.md">Support for the Wireless Mobile Communication Device Class</a>.<p>When CDC support is enabled, the <a href="usb-common-class-generic-parent-driver.md">USB Common Class Generic Parent Driver</a> enumerates interface collections that correspond to CDC and WMCDC Control Models, and assigns physical device objects (PDO) to these collections.</td>
       </tr>
       <tr>
         <td><strong>Net</strong></br>{4d36e972-e325-11ce-bfc1-08002be10318}</br><strong>Note</strong>   Supports Subclass 0Dh (NCM)</td>
@@ -244,4 +244,4 @@ The device setup classes are different from USB device classes discussed earlier
 
 ## Related topics
 
-[Microsoft-provided USB drivers](system-supplied-usb-drivers.md)
+- [Microsoft-provided USB drivers](system-supplied-usb-drivers.md)
