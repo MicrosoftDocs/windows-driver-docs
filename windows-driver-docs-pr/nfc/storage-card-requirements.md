@@ -126,7 +126,7 @@ The Read-Binary command is used to read data from the contactless NFC tag/card. 
 
 | Command | Class | INS | P1 | P2 | Lc | Data In |
 |---|---|---|---|---|---|---|
-| General Authenticate | 0xFF | 0xC2 | 0x00 | 0x01 | Variable | TLV Data Object |  |
+| General Authenticate | 0xFF | 0xC2 | 0x00 | 0x01 | Variable | TLV Data Object |
 
 The following are the required TLV data objects for Transparent Exchange Command to be supported by the driver for transparent exchange of commands to storage cards:
 

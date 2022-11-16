@@ -42,7 +42,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
 
     On the **File** menu, point to **New**, and then click **Project**. In the **Visual C++** node, under **Windows Drivers**, click **WDF**, and then click **User Mode Driver, Empty (UMDF V2)**
 
-    :::image type="content" source="images/quick-start-new-project.png" alt-text="Screenshot showing the Visual Studio "New Project" dialog with "User Mode Driver, Empty (UMDF V2)" selected.":::
+    ![Screenshot showing the Visual Studio "New Project" dialog with "User Mode Driver, Empty (UMDF V2)" selected.](images/quick-start-new-project.png)
 
 1. Open the INF file.
 
