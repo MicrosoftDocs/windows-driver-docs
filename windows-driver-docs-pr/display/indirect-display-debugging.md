@@ -4,7 +4,7 @@ description: Describes debugging techniques for indirect display drivers
 ms.date: 08/05/2022
 keywords:
 - Indirect display drivers, debugging
-- IDDs, debugging
+- IDDs, debuggingll
 ---
 
 # Debugging indirect display drivers
