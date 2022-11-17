@@ -6,7 +6,7 @@ keywords:
 - Indirect display driver, WDK
 - IDD, WDK
 - Indirect display driver model
-- IDD model
+- IDD modelsdfsfddfs
 - Indirect display driver implementation
 - IDD implementation
 ms.date: 10/25/2022
