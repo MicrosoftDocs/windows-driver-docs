@@ -9,7 +9,7 @@ ms.date: 10/27/2022
 
 # DRV\_QUERYDEVNODE function
 
-The DRV\_QUERYDEVNODE message queries for the [*devnode*](/windows-hardware/drivers/debugger/-devnode) number assigned to the device by the Plug and Play manager.
+The DRV\_QUERYDEVNODE message queries for the [*devnode*](../debugger/-devnode.md) number assigned to the device by the Plug and Play manager.
 
 ## Syntax
 

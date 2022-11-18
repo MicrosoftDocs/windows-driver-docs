@@ -20,4 +20,4 @@ The following utility functions are used to create media types for audio data pr
 
 [**CreateAudioMediaTypeFromUncompressedAudioFormat**](/windows/win32/api/audiomediatype/nf-audiomediatype-createaudiomediatypefromuncompressedaudioformat)
 
-For more information about the general requirements to help you develop audio processing objects, see [Design Considerations for sAPO Development](/windows-hardware/drivers/audio/exploring-the-windows-vista-audio-engine).
+For more information about the general requirements to help you develop audio processing objects, see [Design Considerations for sAPO Development](./exploring-the-windows-vista-audio-engine.md).
