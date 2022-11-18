@@ -35,7 +35,7 @@ For more information about the framework verifier, see [Using the Framework's Ve
 </tr>
 <tr class="even">
 <td align="left"><p><span id="KMDF_Service_Names"></span><span id="kmdf_service_names"></span><span id="KMDF_SERVICE_NAMES"></span><strong>KMDF Service Names</strong></p></td>
-<td align="left"><p>Specifies the service names of the KDMF drivers to monitor.</p></td>
+<td align="left"><p>Specifies the service names of the KMDF drivers to monitor.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="IRQL_checks"></span><span id="irql_checks"></span><span id="IRQL_CHECKS"></span><strong>IRQL checks</strong></p></td>
@@ -59,7 +59,7 @@ For more information about the framework verifier, see [Using the Framework's Ve
 <tr class="odd">
 <td align="left"><p><span id="Enable_KMDF_Loader_Messages"></span><span id="enable_kmdf_loader_messages"></span><span id="ENABLE_KMDF_LOADER_MESSAGES"></span><strong>Enable KMDF Loader Messages</strong></p></td>
 <td align="left"><p>Enables KMDF loader messages through the debugger. A reboot of the target computer is required to enable this.</p>
-<p>Starting with Windows Vista, the operating system suppresses DbgPrint output by default, which makes the WDF Loader diagnostic messages unusable until the suppression is overridden. KDMF Verifier can manage this for you so that KMDF loader diagnostics are available in the kernel debugger for these systems.</p></td>
+<p>Starting with Windows Vista, the operating system suppresses DbgPrint output by default, which makes the WDF Loader diagnostic messages unusable until the suppression is overridden. KMDF Verifier can manage this for you so that KMDF loader diagnostics are available in the kernel debugger for these systems.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Verbose_logging"></span><span id="verbose_logging"></span><span id="VERBOSE_LOGGING"></span><strong>Verbose logging</strong></p></td>
