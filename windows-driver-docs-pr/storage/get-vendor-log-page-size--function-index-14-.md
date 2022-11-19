@@ -1,76 +1,28 @@
 ---
 title: Get Vendor Log Page Size (Function Index 14)
 description: This function returns the size of the vendor log page so that the host knows the size of the buffer it needs to allocate to read the vendor log page.
-ms.date: 10/17/2018
+ms.date: 11/18/2022
 ---
 
 # Get Vendor Log Page Size (Function Index 14)
 
+This [_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md) function returns the size of the vendor log page. The host needs this value to know the size of the buffer it needs to allocate to read the vendor log page.
 
-This function returns the size of the vendor log page so that the host knows the size of the buffer it needs to allocate to read the vendor log page.
+Registers are defined in the [Byte Addressable Energy Backed Interface specification](https://www.jedec.org/category/keywords/nvdimm-n).
 
-> [!NOTE]
-> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+## Input
 
- 
-
-## <span id="Input"></span><span id="input"></span><span id="INPUT"></span>Input
-
-
-### <span id="Args3"></span><span id="args3"></span><span id="ARGS3"></span>Args3
+### Arg3
 
 None.
 
-## <span id="Output"></span><span id="output"></span><span id="OUTPUT"></span>Output
+## Output
 
+| Field | Byte length | Byte offset | Register | Description |
+| ----- | ----------- | ----------- | -------- | ----------- |
+| **Status**                   | 4 | 0 | See [_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md). |
+| **Vendor Log Page Size** | 4 | 4 | Byte 0: *VENDOR_LOG_PAGE_SIZE* (0, 0x31) | The size of the vendor log page in multiples of 32 bytes. |
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Field</th>
-<th align="left">Byte Length</th>
-<th align="left">Byte Offset</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Status</strong></td>
-<td align="left">4</td>
-<td align="left">0</td>
-<td align="left"><p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for information.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><strong>Vendor Log Page Size</strong></td>
-<td align="left">4</td>
-<td align="left">4</td>
-<td align="left"><p>The size of the vendor log page in multiples of 32 bytes.</p>
-<p>*Byte 0 – <em>VENDOR_LOG_PAGE_SIZE</em> (0, 0x31)</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-## <span id="related_topics"></span>Related topics
-
+## Related articles
 
 [Get Vendor Log Page (Function Index 15)](get-vendor-log-page--function-index-15-.md)
-
-[\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)
-
- 
-
- 
-
-
-
-
-
-
