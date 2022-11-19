@@ -15,18 +15,18 @@ See "Audio user-mode reliability" on [Audio measures](audio-measures.md)
 
 |Attribute|Value|
 |----|----|
-|**Audience**|Standard|
-|**Time period**|7 days|
-|**Measurement criteria**|Aggregation of machines|
-|**Minimum population**|50 machines|
-|**Passing criteria**|<=1.3 % of machines with at least 1 hang in either audio service|
-|**Measure ID**|*11458540 (Legacy)*, 38880837, 29745823|
+|**Audience**|Audio measures capture data from any machine that is playing audio on Windows|
+|**Time period**|7 day sliding window|
+|**Measurement criteria**|Aggregation of machine endpoints|
+|**Minimum population**|1000 machines|
+|**Passing criteria**|<=0.5 % of devices have at least 1 audio crash in AudioSrv or AudioDg|
+|**Measure ID**|*11458540 (Legacy)*, 29745823|
 
 ## Calculation
 
 1. The measure aggregates telemetry from a 7-day sliding window into a **percentage of machines that have at least one audio hang in AudioSrv.dll or AudioDG.exe**.
 2. *Hanging machines = count (machines with at least 1 hang in AudioSrv.dll or AudioDG.exe)*
-3. *Total machines = count (machines that successfully initialzed at least one audio stream)*
+3.  Percent of machine endpoints targeted by driver hitting a hang = *(number of machine endpoints targeted by driver hitting a hang) / (number of machines targeted by driver which attempted to use audio)*
 
 ### Final calculation
 

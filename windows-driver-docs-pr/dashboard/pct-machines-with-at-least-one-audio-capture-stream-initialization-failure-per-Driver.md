@@ -2,7 +2,7 @@
 title: Percent of devices with at least 1 audio capture stream initialization failure per driver
 description: This measure calculates the percentage of devices on which there was nonzero audio stream initialization unexpected failures
 ms.topic: article
-ms.date: 11/07/2022
+ms.date: 11/18/2022
 ---
 
 # Percent of devices with at least 1 audio capture stream initialization failure per driver
@@ -16,18 +16,20 @@ See "Audio user-mode reliability" on [Audio measures](audio-measures.md)
 |Attribute|Value|
 |----|----|
 |**Audience**|Audio measures capture data from any machine that is playing audio on Windows|
-|**Time period**|30 day sliding window|
-|**Minimum population**|NA machines|
-|**Passing criteria**|<=4 % of machines have at least 1 audio stream initialization capture failure|
+|**Time period**|7 day sliding window|
+|**Measurement Criteria**|	Aggregation of machine endpoints|
+|**Minimum Population**|1000 machines
+|**Passing criteria**|<=1 % of machines with at least 1 capture audio stream initialization failure|
 |**Measure ID**|27539331|
 
 ## Calculation
 
-1. The measure aggregates telemtry from a 30-day sliding window into a percentage of Machine's endpoints that had an audio caputre stream initialization failure.
-2. *Audio render stream initilzation = Count*(audio endpoints with audio capture *stream init failure*)
-3. Universal set of devices = *Count*(all device id's and endpoints)
-    *note: ACI events are sampled at 1%, if a device is part of sampling, all of it's endpoints are.
+1.	Measure is accounting for failures at an endpoint level, that is, if there is a failure on a specific endpoint that the driver is targeting, it is counted as a failure.
+2.	The measure aggregates telemetry from a 7-day sliding window into a **percentage of machines’ endpoints that have at least one unexpected initialization failure**
+3.	*Machine endpoint with initialization failure = Count(endpoints driver is targeting with at least 1 unexpected capture initialization failure)*
+4.	*Total machine endpoints = Count(machine endpoints targeted by driver that attempted to initialize an audio capture stream)*
+
 
 ### Final calculation
 
-*Measure failure rate* = # of endpoints with atleast *one audio render stream init failure / Total* # endpoints in universal set that have an audio capture stream initialization
+*Percent of machines with at least 1 render stream initialization failure = Machine endpoints targeted by driver with capture initialization failure / Total machine endpoints targeted by driver*
