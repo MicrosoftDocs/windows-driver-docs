@@ -1,74 +1,24 @@
 ---
 title: Erase NVM Image (Function Index 19)
 description: This function erases the backup image saved in the non-volatile memory module.
-ms.date: 10/17/2018
+ms.date: 11/18/2022
 ---
 
 # Erase NVM Image (Function Index 19)
 
+This [_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md) function erases the backup image saved in the non-volatile memory module.
 
-This function erases the backup image saved in the non-volatile memory module.
+## Input
 
-> [!NOTE]
-> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
-
- 
-
-## <span id="Input"></span><span id="input"></span><span id="INPUT"></span>Input
-
-
-### <span id="Args3"></span><span id="args3"></span><span id="ARGS3"></span>Args3
+### Arg3
 
 None.
 
-## <span id="Output"></span><span id="output"></span><span id="OUTPUT"></span>Output
+## Output
 
-
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Field</th>
-<th align="left">Byte Length</th>
-<th align="left">Byte Offset</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Status</strong></td>
-<td align="left">4</td>
-<td align="left">0</td>
-<td align="left"><p>This function can return the following Function-Specific Error Code:</p>
-<p>1: The operation timed out.</p>
-<p>Go to <a href="-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md" data-raw-source="[_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)">_DSM Method Output</a> for more information.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Field | Byte length | Byte offset | Description |
+| ----- | ----------- | ----------- | ----------- |
+| **Status**                   | 4 | 0 | This function can return the following Function-Specific Error Code: 1. *The operation timed out.* For more information, see [_DSM Method Output](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md). |
 
 > [!NOTE]
-> This is a synchronous function. It returns only when the erase operation has finished or timed out. If the operation takes longer than the timeout defined in \**ERASE\_TIMEOUT0* (0, 0x1E) and \**ERASE\_TIMEOUT1* (0, 0x1F), the platform shall abort this function before it returns.
-
- 
-
-## <span id="related_topics"></span>Related topics
-
-
-[\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)
-
- 
-
- 
-
-
-
-
-
-
+> This is a synchronous function. It returns only when the erase operation has finished or timed out. If the operation takes longer than the timeout defined in *ERASE_TIMEOUT0* (0, 0x1E) and *ERASE_TIMEOUT1* (0, 0x1F), the platform shall abort this function before it returns.
