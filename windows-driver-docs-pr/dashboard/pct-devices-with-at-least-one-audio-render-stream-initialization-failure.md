@@ -19,7 +19,7 @@ See "Audio user-mode reliability" on [Audio measures](audio-measures.md)
 |**Time period**|30 day sliding window|
 |**Minimum population**|NA|
 |**Machine Vs Instance**|Percentage of Machine|
-|**Passing criteria**|<=1.5 % of devices have at least 1 audio render stream initialization failure|
+|**Passing criteria**|<=2 % of devices have at least 1 audio render stream initialization failure|
 |**Measure ID**|39415262|
 
 ## Calculation

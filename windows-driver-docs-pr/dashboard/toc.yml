@@ -248,12 +248,6 @@
         href: pct-machines-with-at-least-one-audio-render-stream-initialization-failure-per-driver.md
       - name: "Capture Stream Initialization: % of devices with at least 1 audio capture stream initialization failure per Driver"
         href: pct-machines-with-at-least-one-audio-capture-stream-initialization-failure-per-Driver.md
-        name: "Percent of devices with at least one crash"
-        href: pct-devices-with-at-least-one-audio-crash.md
-        name: "Percent of devices with at least 1 audio stream initialization failure per Driver"
-        href: pct-devices-with-at-least-one-audio-stream-initialization-failure-per-driver.md
-        name: "Percent of devices with sub-par stream initialization success rate"
-        href: pct-devices-with-subpar-stream-initialization-success-rate.md
   - name: "Appendix"
     href: measure-appendix.md
   - name: "Glossary"
