@@ -241,13 +241,13 @@
     - name: "Experimental Measures"
       items:
       - name: "Audio - Render Stream Initialization: Percent of machine endpoints with at least one audio render stream initialization failure"
-        href: pct-machine-endpoints-with-at-least-one-audio-render-stream-initialization-failure.md
+        href: pct-machine-endpoints-with-at-least-one-audio-render-stream-initialization-failure-per-driver.md
       - name: "Audio - Render Stream Initialization: Percent of machines with at least one audio render stream initialization failure per Driver"
-        href: pct-machines-with-at-least-one-audio-render-stream-initialization-failure-per-driver.md
+        href: pct-machines-with-at-least-one-audio-render-stream-initialization-failure.md
       - name: "Audio - Capture Stream Initialization: Percent of machine endpoints with at least one audio capture stream initialization failure"
-        href: pct-machine-endpoints-with-at-least-one-audio-capture-stream-initialization-failure.md 
+        href: pct-machine-endpoints-with-at-least-one-audio-capture-stream-initialization-failure-per-driver.md 
       - name: "Audio - Capture Stream Initialization: Percent of machines with at least one audio capture stream initialization failure per Driver"
-        href: pct-machines-with-at-least-one-audio-capture-stream-initialization-failure-per-Driver.md
+        href: pct-machines-with-at-least-one-audio-capture-stream-initialization-failure.md
       - name: "Audio - Stream Initialization: Percent of machine endpoints with at least one audio stream initialization failure"
         href: pct-machines-with-at-least-one-audio-stream-initialization-failure.md
       - name: "Audio - Stream Initialization: Percent of machine endpoints with subpar stream initialization success rate"
@@ -256,7 +256,7 @@
         href: pct-machine-endpoints-with-at-least-one-audio-crash.md
       - name: "Audio - Audio Reliability: Percentage of machine endpoints with at least one audio hang"
         href: pct-machine-endpoints-with-at-least-one-audio-hang.md
-    name: "Appendix"
+  - name: "Appendix"
     href: measure-appendix.md
   - name: "Glossary"
     href: measures-glossary.md

@@ -42,5 +42,5 @@ If AudioSrv crashes, and AudioDg is around to notice, an **AudioSrvSvchostCrash*
 If the audio service hangs, a **Hang** telemetry event is logged from the **Microsoft.Windows.Audio.Service** provider. (In some older versions of Windows 10, for certain kinds of hangs, a **Hang** event would also be logged from the **Microsoft.Windows.Audio.DeviceGraph** provider.)
 
 The following audio measures track the reliability of the Windows audio engine:
-* [Percent of machines with at least one audio crash](percent-machines-with-at-least-one-audio-crash.md)
+* [Percent of machines with at least one audio crash](pct-machines-with-at-least-one-audio-crash.md)
 * [Percent of machines with at least one audio hang](pct-machines-with-at-least-one-audio-hang.md)
