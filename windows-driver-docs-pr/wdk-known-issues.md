@@ -13,6 +13,28 @@ ms.date: 12/16/2020
 
 This topic details known issues concerning the WDK.
 
+## WDK for Windows 11, version 22H2
+
+### Service error at startup
+
+If you installed the original Windows 11, version 22H2 WDK between May and August 2022 (version 10.0.22621.1), you may see the following error message when you start Visual Studio with the WDK.
+
+The service `Microsoft.VisualStudio.Shell.Interop.SVsUIShell` must be installed for this feature to work. Ensure that this service is available.
+
+You can either safely dismiss this message, or you can uninstall the WDK and then reinstall the latest WDK using the instructions in [Download the Windows Driver Kit](./download-the-wdk.md).
+
+### Debugger within Visual Studio doesn't work
+
+It is not possible to debug drivers within the Visual Studio interface when using Visual Studio 2022 version 17.2.0 and 17.3 with the Windows 11, version 22H2 WDK (version 10.0.22621.382). To work around the problem, do one of the following: update Visual Studio to 17.4.1 or later, debug with WinDbg, or use a version of Visual Studio earlier than 17.2.0. The following error message is related to this issue:
+
+The `Microsoft.Windows.Tools.WinIDE.Debugger.DebuggerPackage, DebuggerPackage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null` package did not load correctly.
+
+### WDF redistributable co-installers don't work
+
+Starting with this release, WDF redistributable co-installers are no longer supported. Specifically, on a computer that has both the Windows 11, version 22H2 WDK and an older WDK, when building a WDF 1.11 driver, msbuild fails because it cannot find the WDF coinstaller.
+
+To fix this problem, before installing Windows 11, version 22H2 WDK, back up the folder `\Program files (x86)\windows kit\10\redist\wdf` and restore it afterwards. Alternatively, if you have already installed the Windows 11, version 22H2 WDK, install the MSI file at [WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) on a separate computer and copy the `redist` folder to the above folder. For more information, see [Redistributable Framework Components](./wdf/installation-components-for-kmdf-drivers.md).
+
 ## WDK for Windows 10, version 2004
 
 ### Issue in ExAllocatePoolZero, ExAllocatePoolQuotaZero, and ExAllocatePoolPriorityZero functions FIXED
