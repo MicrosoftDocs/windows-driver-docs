@@ -1,11 +1,11 @@
 ---
-title: Percent of devices with at least 1 audio capture stream initialization failure 
-description: This measure tracks the percentage of devices with atleast one ACI capture stream initialization failure
+title: Percent of machines with at least one audio capture stream initialization failure 
+description: This measure tracks the percentage of machines  with at least one ACI capture stream initialization failure
 ms.topic: article
 ms.date: 11/07/2022
 ---
 
-# Percent of devices with at least 1 audio capture stream initialization failure
+# Percent of machines with at least one audio capture stream initialization failure
 
 ## Description
 
@@ -17,9 +17,9 @@ See "Audio user-mode reliability" on [Audio measures](audio-measures.md)
 |----|----|
 |**Audience**|Audio measures capture data from any machine that is playing audio on Windows|
 |**Time period**|30 day sliding window|
-|**Minimum population**|NA|
+|**Minimum population**|1000 machines|
 |**Machine Vs Instance**|Percentage of Machine|
-|**Passing criteria**|<=2 % of devices have at least 1 audio capture stream initialization failure|
+|**Passing criteria**|<=1 % of machines have at least 1 audio capture stream initialization failure|
 |**Measure ID**|39415321|
 
 ## Calculation
