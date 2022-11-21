@@ -33,7 +33,7 @@ conceptualContent:
   items:
     - title: Get the tools
       links:
-        - text: Visual Studio 2019
+        - text: Visual Studio
           url: https://go.microsoft.com/fwlink/p/?LinkId=698539
           itemType: download
         - text: Debugging Tools for Windows
