@@ -2,7 +2,7 @@
 title: Percent of machines with at least one audio hang
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of machines that have at least one audio hang in AudioSrv.dll or AudioDG.exe
 ms.topic: article
-ms.date: 05/20/2019
+ms.date: 11/19/2022
 ---
 
 # Percent of machines with at least one audio hang
@@ -18,9 +18,9 @@ See "Audio user-mode reliability" on [Audio measures](audio-measures.md)
 |**Audience**|Standard|
 |**Time period**|7 days|
 |**Measurement criteria**|Aggregation of machines|
-|**Minimum population**|50 machines|
-|**Passing criteria**|<=1.3 % of machines with at least 1 hang in either audio service|
-|**Measure ID**|*11458540 (Legacy)*, 38880837, 29745823|
+|**Minimum population**|1000 machines|
+|**Passing criteria**|<=0.5 % of machines with at least 1 hang in either audio service|
+|**Measure ID**|*11458540 (Legacy)*, 38880837|
 
 ## Calculation
 

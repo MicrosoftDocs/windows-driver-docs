@@ -2,7 +2,7 @@
 title: Percent of machines with subpar stream initialization success rate
 description: The measure aggregates telemetry from a 7-day sliding window into a percentage of machines that have a subpar initialization rate
 ms.topic: article
-ms.date: 05/20/2019
+ms.date: 11/19/2021
 ---
 
 # Percent of Machines with Subpar Stream Initialization Success Rate
@@ -21,24 +21,21 @@ Measure 11458866 looks at the audio stream initialization success rate for *all*
 
 |Attribute|Value|
 |----|----|
-|**Audience**|Standard|
-|**Time period**|Daily, averaged over 7 days|
+|**Audience**|Audio measures capture data from any machine that is playing audio on Windows|
+|**Time period**|7 day sliding window|
 |**Measurement criteria**|Aggregation of machines|
-|**Minimum population**|Dynamic, uses confidence intervals|
-|**Passing criteria**|<=1 % of machines an Initialization Success Rate below 90% |
-|**Measure IDs**|*11458866 (Legacy)*, 27657901 - all audio hardware on the flighted machines|
+|**Minimum population**|1000 machines|
+|**Passing criteria**|<=0.5% of machines with an initialization success rate below 90%|
+|**Measure IDs**|11458866|
 
 ## Calculation
 
-1. The measure aggregates telemetry from a 7-day sliding window into a **percentage of machines that have a subpar initialization rate**.
-1. *For each machine, calculate the:*
-
-   a. *Machine's initialization success rate = count (Failed Initializations) / count (total attempted initializations)*
-
-   b. *Failing machine = machine's initialization success rate < 90%*
-
-1. *Machines with subpar initialization = count (failing machines)*
-1. *Total machines = count (all machines that attempted initialization)*
+1.	The measure aggregates telemetry from a 7-day sliding window into a percentage of machines that have a subpar initialization rate.
+2.	For each machine, calculate the:
+    a.	Machine initialization success rate = count (Failed Initializations) / count (total attempted initializations)
+    b.	Failing machine = machines initialization success rate < 90%
+3.	Machines  with subpar initialization = count (failing machines)
+4.	Total machines = count (all machines that attempted initialization)
 
 ### Final calculation
 
