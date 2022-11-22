@@ -6,19 +6,13 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 08/22/2022
+ms.date: 11/21/2022
 ---
 
 # Download the Windows Driver Kit (WDK)
 
 > [!NOTE]
-> If you installed the original Windows 11, version 22H2 WDK between May and August 2022 (version 10.0.22621.1), you may see the following error message when you start Visual Studio with the WDK.
-> * The service ‘Microsoft.VisualStudio.Shell.Interop.SVsUIShell’ must be installed for this feature to work. Ensure that this service is available.
->
-> You can either safely dismiss this message, or you can uninstall the WDK and then reinstall the WDK (updated August 19, 2022 to version 10.0.22621.382) using the WDK download link below.
->
-> It is not possible to debug drivers within the Visual Studio interface when using Visual Studio 2022 version 17.2.0 and later with the Windows 11, version 22H2 WDK (version 10.0.22621.382). To work around the problem, debug with WinDbg or use a version of Visual Studio earlier than 17.2.0. The following error message is related to this issue:
-> * The 'Microsoft.Windows.Tools.WinIDE.Debugger.DebuggerPackage, DebuggerPackage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null' package did not load correctly.
+> Make sure to use Visual Studio 17.4.1 or newer.  Specifically, driver debugging within Visual Studio does not work from Visual Studio 17.2.0 up until 17.4.1. For more info, see [WDK Known Issues](./wdk-known-issues.md).
 
 The WDK is used to develop, test, and deploy drivers for Windows.
 
@@ -36,14 +30,11 @@ Starting with the Windows 11, version 22H2 release of the WDK and EWDK, the kits
 
 Multiple WDKs and EWDKs can be installed concurrently on the same computer and even be part of same build system. You can run the Windows 11, version 22H2 WDK on Windows 7 and later.
 
-To target Windows 8.1, Windows 8, and Windows 7, you will need to install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see [Other WDK downloads](./other-wdk-downloads.md).
+To target Windows 8.1, Windows 8, and Windows 7, install an older WDK and an older version of Visual Studio either on the same machine or on a separate machine. For links to older kits, see [Other WDK downloads](./other-wdk-downloads.md).
 
 Certain device-specific stacks (for example graphics) continue to have x86/ARM32 user-mode components to support x86/ARM32 apps.
 
-Starting with this release, WDF redistributable co-installers are no longer supported.
-
-> [!NOTE]
-> On a computer that has both the Windows 11, version 22H2 WDK and an older WDK, when building a WDF 1.11 driver, msbuild fails because it cannot find the WDF coinstaller. To fix this problem, before installing Windows 11, version 22H2 WDK, back up the folder `\Program files (x86)\windows kit\10\redist\wdf` and restore it afterwards. Alternatively, if you have already installed the Windows 11, version 22H2 WDK, install the MSI file at [WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) on a separate computer and copy the `redist` folder to the above folder. For more information, see [Redistributable Framework Components](./wdf/installation-components-for-kmdf-drivers.md).
+Starting with this release, WDF redistributable co-installers are no longer supported. To learn how to work around this change, see [WDK Known Issues](./wdk-known-issues.md).
 
 ## Download and install the Windows 11, version 22H2 WDK
 
