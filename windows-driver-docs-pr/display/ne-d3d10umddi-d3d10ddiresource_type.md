@@ -73,9 +73,8 @@ The resource is an expanded buffer. Supported in Windows 7 and later versions.
 
 ## Requirements
 
-|      |             |
-| ---- | ----------- |
-| Minimum client version | Windows Vista |
+| Minimum client version | Windows Vista                           |
+|------------------------|-----------------------------------------|
 | Header                 | *d3d10umddi.h* (include *d3d10umddi.h*) |
 
 ## See Also

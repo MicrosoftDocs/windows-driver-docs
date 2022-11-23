@@ -13,7 +13,7 @@ ms.date: 10/26/2021
 This section describes how to use the Event Tracing for Windows (ETW) kernel-mode API to add event tracing to kernel-mode drivers. The ETW kernel-mode API was introduced with Windows Vista and is not supported in earlier operating systems. Use [WPP Software Tracing](wpp-software-tracing.md) or [WMI Event Tracing](../kernel/wmi-event-tracing.md) if your driver needs to support trace capability in Windows 2000 and later.
 
 > [!TIP]
-> To view sample code that shows how to implement ETW using the Windows Driver Kit (WDK) 8.1 and Visual Studio, see the [Eventdrv sample](/samples/microsoft/windows-driver-samples/eventdrv/).
+> To view sample code that shows how to implement ETW using the Windows Driver Kit (WDK) and Visual Studio, see the [Eventdrv sample](/samples/microsoft/windows-driver-samples/eventdrv/).
 
 In this section:
 
