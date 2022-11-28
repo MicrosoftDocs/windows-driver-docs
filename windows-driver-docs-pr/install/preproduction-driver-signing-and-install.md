@@ -51,7 +51,7 @@ Use of the EnableUefiSbTest tool is strongly recommended. Alternatively, you can
     If Secure Boot is disabled and the keys have been successfully cleared, the following output is expected:
     
     ```PowerShell
-    PS C:\> .\EnableUefiSbTest.exe /dump
+    EnableUefiSbTest.exe /dump
     
     Name: PK
     Not Found
