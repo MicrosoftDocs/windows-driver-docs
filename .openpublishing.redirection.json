@@ -8383,6 +8383,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/network/wifi-universal-driver-model.md",
+            "redirect_URL": "/windows-hardware/drivers/network/wdi-miniport-driver-design-guide",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/network/windot11-h.md",
             "redirect_URL": "/previous-versions/windows/hardware/wireless/windot11-h",
             "redirect_document_id": false

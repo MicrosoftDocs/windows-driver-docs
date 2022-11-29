@@ -35,11 +35,11 @@ To create an MB miniport driver, follow these steps:
 
 -   **Step 7**: Create a driver package for your MB miniport driver.
 
-    For more information, see [Providing a Driver Package](/windows-hardware/drivers).
+    For more information, see [Providing a Driver Package](../install/driver-packages.md).
 
 -   **Step 8**: Sign and distribute your MB miniport driver.
 
-    The final step is to sign (optional) and distribute the miniport driver. If your miniport driver meets the quality standards that are defined for the [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/), you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Distributing a Driver](/windows-hardware/drivers).
+    The final step is to sign (optional) and distribute the miniport driver. If your miniport driver meets the quality standards that are defined for the [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/), you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Get started with the hardware submission process](../dashboard/get-started-dashboard-submissions.md).
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual miniport driver.
 
