@@ -41,11 +41,11 @@ To create a Windows Filtering Platform (WFP) callout driver, follow these steps:
 
 -   Step 9: Create a driver package for your WFP callout driver.
 
-    For more information, see [Providing a Driver Package](/windows-hardware/drivers) and [Callout Driver Installation](callout-driver-installation.md).
+    For more information, see [Providing a Driver Package](../install/driver-packages.md) and [Callout Driver Installation](callout-driver-installation.md).
 
 -   Step 10: Sign and distribute your WFP callout driver.
 
-    The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined for the [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/), you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Distributing a Driver](/windows-hardware/drivers).
+    The final step is to sign (optional) and distribute the driver. If your driver meets the quality standards that are defined for the [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/), you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Get started with the hardware submission process](../dashboard/get-started-dashboard-submissions.md).
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.
 
