@@ -742,6 +742,8 @@
         href: guidelines-for-starting-device-installation-applications-through-co-in.md
     - name: "DIFx Guidelines"
       href: difx-guidelines.md
+    - name: "DPInst Return Code"
+      href: dpinst-return-code.md
     - name: "Device Installation Application Started through AutoRun"
       href: device-installation-application-started-through-autorun.md
 - name: "INF Sections"
