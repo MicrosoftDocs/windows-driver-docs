@@ -142,7 +142,7 @@ The following NDIS filter driver installation issues are associated with modifyi
 
 
 
-**Note**  More than one filter driver of a specific class can exist in a layered stack of modifying filter drivers. For example, two modifying filter drivers of **FilterClass** "scheduler" can exist in a stack simultaneously. The filter driver that has an earlier installation time stamp is installed below (that is, closer to the miniport adapter) the filter driver with the later time stamp. However, the order of multiple filter drivers with the same class is exactly the same over different miniport adapters on the same computer.
+**Note**  If multiple filter drivers have the same FilterClass, they will all be added to the layered stack of filter drivers. The system assigns a layering order to each modifying filter driver with the same FilterClass. In some cases, the system administrator can rearrange the relative order of filter drivers that have the same FilterClass.
 
 
 
