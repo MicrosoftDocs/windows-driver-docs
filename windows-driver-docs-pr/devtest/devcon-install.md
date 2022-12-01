@@ -9,7 +9,7 @@ api_name:
 - DevCon Install
 api_type:
 - NA
-ms.date: 10/28/2022
+ms.date: 12/01/2022
 ---
 
 # DevCon Install
@@ -41,6 +41,15 @@ Specifies the full path and file name of the INF file for the device. If you omi
 Specifies a hardware ID for the device.
 
 The specified hardware ID must exactly match the hardware ID of the device. Patterns are not valid. Do not type a single quote character (**'**) to indicate a literal value. For more information, see [Hardware IDs](../install/hardware-ids.md) and [Device Identification Strings](../install/device-identification-strings.md).
+
+## Recommended replacement
+
+``` console
+devgen /add /hardwareid HardwareID
+pnputil /add-driver INFfile /install
+```
+
+For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
 
 ## Comments
 

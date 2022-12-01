@@ -52,6 +52,15 @@
       href: pnputil-examples.md
     - name: "PnPUtil Return Values"
       href: pnputil-return-values.md
+  - name: "DevGen"
+# Auto-expanded node
+    items: 
+    - name: "DevGen"
+      href: devgen.md
+    - name: "DevGen Command Syntax"
+      href: devgen-command-syntax.md
+    - name: "DevGen Examples"
+      href: devgen-examples.md
   - name: "Windows Device Console (Devcon.exe)"
 # Auto-expanded node
     items: 

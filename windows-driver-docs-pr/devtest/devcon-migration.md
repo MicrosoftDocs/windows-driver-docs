@@ -34,12 +34,14 @@ PnPUtil is an inbox tool that allows the user to view information on and change 
 | find | Find devices. | pnputil /enum-devices /connected |
 | findall | Find devices, including those that are not currently attached. | pnputil /enum-devices |
 | hwids | List hardware IDs of devices. | pnputil /enum-devices /deviceids |
+| install | Create test device and install driver. | devgen /add <br> pnputil /add-driver /install |
 | listclass | List all devices in a setup class. | pnputil /enum-devices /class \<*name or GUID*\> |
 | reboot | Reboot the local computer. | shutdown /r /t 0 |
 | remove | Remove devices. | pnputil /remove-device |
 | rescan | Scan for new hardware. | pnputil /scan-devices |
 | resources | List hardware resources for devices. | pnputil /enum-devices /resources |
 | restart | Restart devices. | pnputil /restart-device |
+| sethwid | Modify Hardware IDs of listed root-enumerated devices. | devgen /add /hardwareid \<*hardware ID*\> <br> note: this command creates a new test device with the specified ID |
 | stack | List expected driver stack for devices. | pnputil /enum-devices /stack |
 | status | List running status of devices. | pnputil /enum-devices |
 | update | Update a device manually. | pnputil /add-driver \<*INF name*\> /install |
