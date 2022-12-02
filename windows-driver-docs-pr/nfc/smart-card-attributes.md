@@ -1,7 +1,7 @@
 ---
 title: Supported smart card attributes
 description: This topic describes supported smart card attributes.
-ms.date: 11/15/2022
+ms.date: 12/01/2022
 ---
 
 # Supported smart card attributes
@@ -42,6 +42,6 @@ The following encodings are defined for SCARD_ATTR_CHANNEL_ID value 0xDDDDCCCC:
 
 | Attribute Tag | Description |
 |---|---|
-| SCARD_ATTR_ICC_PRESENCE | (1 byte)</br>&nbsp;&nbsp;&bull;&nbsp;0 = not present</br>&nbsp;&nbsp;&bull;&nbsp;1 = card present |
-| SCARD_ATTR_ATR_STRING | (32 bytes)</br>&nbsp;&nbsp;&bull;&nbsp;ATR string |
-| SCARD_ATTR_ICC_TYPE_PER_ATR | (1 byte)</br>&nbsp;&nbsp;&bull;&nbsp;0 = unknown type</br>&nbsp;&nbsp;&bull;&nbsp;5 = 14443A</br>&nbsp;&nbsp;&bull;&nbsp;6 = 14443B</br>&nbsp;&nbsp;&bull;&nbsp;7 = ISO-15693 |
+| SCARD_ATTR_ICC_PRESENCE | (1 byte)<ul><li>0 = not present</li><li>1 = card present</li></ul> |
+| SCARD_ATTR_ATR_STRING | (32 bytes)<ul><li>ATR stringM</li></ul> |
+| SCARD_ATTR_ICC_TYPE_PER_ATR | (1 byte)<ul><li>0 = unknown type</li><li>5 = 14443A</li><li>6 = 14443B</li><li>7 = ISO-15693</li></ul> |

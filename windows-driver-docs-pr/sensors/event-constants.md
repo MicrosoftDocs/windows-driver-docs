@@ -12,14 +12,14 @@ api_location:
 - Sensors.h
 api_type:
 - HeaderDef
-ms.date: 11/30/2022
+ms.date: 12/01/2022
 ---
 
 # Event constants
 
 The sensor platform defines the following constants for driver events.
 
-### Sensor event types
+## Sensor event types
 
 The sensor platform defines the following sensor event types identifiers.
 
@@ -29,7 +29,7 @@ The sensor platform defines the following sensor event types identifiers.
 | SENSOR_EVENT_PROPERTY_CHANGED | Indicates that a property value changed. |
 | SENSOR_EVENT_STATE_CHANGED | Indicates a change of operational state, for example, from SENSOR_STATE_INITIALIZING to SENSOR_STATE_READY. |
 
-### Sensor event PROPERTYKEYs
+## Sensor event PROPERTYKEYs
 
 The sensor platform defines the following **PROPERTYKEY**s to identify the parameters for sensor events.
 
