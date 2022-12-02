@@ -45,7 +45,7 @@ The specified hardware ID must exactly match the hardware ID of the device. Patt
 ## Recommended replacement
 
 ``` console
-devgen /add /hardwareid HardwareID
+devgen /add /bus ROOT /hardwareid HardwareID
 pnputil /add-driver INFfile /install
 ```
 

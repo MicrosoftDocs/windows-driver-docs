@@ -9,7 +9,7 @@ api_name:
 - DevCon SetHwID
 api_type:
 - NA
-ms.date: 12/01/2022
+ms.date: 10/28/2022
 ---
 
 # DevCon SetHwID
@@ -68,14 +68,6 @@ Adds or moves the specified hardware IDs to the end of the list of hardware IDs 
 **!**
 
 Deletes the specified hardware IDs from the list of hardware IDs for the device.
-
-## Recommended replacement
-
-``` console
-devgen /add /hardwareid HardwareID
-```
-
-This command creates a new test device with the specified ID. For more recommended replacements, see [Replacing DevCon](devcon-migration.md).
 
 ## Comments
 

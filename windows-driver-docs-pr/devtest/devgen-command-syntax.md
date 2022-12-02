@@ -8,7 +8,10 @@ ms.date: 12/01/2022
 
 # DevGen Command Syntax
 
-DevGen.exe can be found in the tools folder of the WDK starting in Windows 11, version 22H2. It allows an administrator create and remove software and root enumerated devices for testing purposes.
+> [!NOTE]
+> This tool is not allowed to be redistributed and should not be used for production scenarios.
+
+DevGen.exe can be found in the tools folder of the WDK starting in Windows 11, version 22H2. It allows an administrator create and remove [software devices](/windows/win32/api/_swdevice) and root enumerated devices for testing purposes.
 
 To run DevGen, open a command prompt window (Run as Administrator), navigate to the tools folder, and type a command using the following syntax and parameters.
 
@@ -24,7 +27,7 @@ Create a device.
 
 ```syntax
 DEVGEN /add [/bus <SWD | ROOT>] [/instanceid <instance ID>] 
-            [/parent <instance ID>] [/hardwareid <hardware ID>] 
+            [/parent <device instance ID>] [/hardwareid <hardware ID>] 
             [/compatibleid <compatible ID>] [/wait [<timeout in MS>]] 
             [/unplug] [/subtree]
 ```
@@ -35,7 +38,7 @@ Flags:
 
 `/instanceid <instance ID>` - unique instance ID to use when generating a device.
 
-`/parent <instance ID>` - parent device to enumerate device under. Only supported for software devices. Device is enumerated under HTREE\ROOT\0 by default.
+`/parent <device instance ID>` - parent device to enumerate device under. Only supported for software devices. Device is enumerated under HTREE\ROOT\0 by default.
 
 `/hardwareid <hardware ID>` - hardware ID to set on the generated device. More than one hardware ID can be set by using this parameter multiple times.
 
@@ -61,7 +64,7 @@ Flags:
 
 ## Software Device vs Root-Enumerated Device
 
-By default, DevGen creates a software device. Software devices are the recommended test devices, since they do not persist across reboot and will not clutter the system. Use root-enumerated devices only for test cases that require a system reboot.
+By default, DevGen creates a [software device](/windows/win32/api/_swdevice). Software devices are the recommended test devices, since they do not persist across reboot and will not clutter the system. Use root-enumerated devices only for test cases that require a system reboot.
 
 ## Examples
 
