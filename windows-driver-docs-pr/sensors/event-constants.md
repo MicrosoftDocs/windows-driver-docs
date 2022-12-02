@@ -12,7 +12,7 @@ api_location:
 - Sensors.h
 api_type:
 - HeaderDef
-ms.date: 12/01/2022
+ms.date: 12/02/2022
 ---
 
 # Event constants
@@ -44,7 +44,7 @@ The sensor platform defines the following **PROPERTYKEY**s to identify the param
 |---|---|
 | **Minimum supported client** | Windows 7 |
 | **Minimum supported server** | None supported |
-| **Header** | Sensors.h |
+| **Header** | sensors.h |
 
 ## See also
 
