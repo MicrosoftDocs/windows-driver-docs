@@ -1,6 +1,6 @@
 ---
 title: Filtering data (previous version)
-description: In order to optimize data throughput, your sensor device must apply filter criteria to the data-update events so that they are only raised when needed.
+description: In order to optimize data throughput, your sensor device must apply filter criteria to the data-update events so that they're only raised when needed.
 keywords:
 - change sensitivity
 - sensor change sensitivity
@@ -18,13 +18,13 @@ ms.date: 12/01/2022
 
 # Filtering data (previous version)
 
-In order to optimize data throughput, your sensor device must apply filter criteria to the data-update events so that they are only raised when needed. This filtering results in lower CPU utilization (due to reduced sensor throughput) and less power consumption (both for the sensor and the CPU).
+In order to optimize data throughput, your sensor device must apply filter criteria to the data-update events so that they're only raised when needed. This filtering results in lower CPU utilization (due to reduced sensor throughput) and less power consumption (both for the sensor and the CPU).
 
 There are two values (or properties) that support a sensor device's filter criteria. The first is the current report interval (CRI) and the second is the change sensitivity (CS). Both of these properties can be set by a sensor application.
 
-The current report interval is the minimum period, in milliseconds, between data updates which a client wishes to receive when meaningful change has occurred. The change sensitivity is the value (or percentage) used to specify meaningful change.
+The current report interval is the minimum period, in milliseconds, between data updates that a client wishes to receive when meaningful change has occurred. The change sensitivity is the value (or percentage) used to specify meaningful change.
 
-So, a weather-station application may specify a current report interval (CRI) for a temperature sensor of 60,000 (or one minute). And, the temperature sensor would require a change-sensitivity value (as opposed to a percentage). For example, if this temperature sensor returns degrees Celsius and the change sensitivity value temperature was 2.0, this particular sensor would only raise the data-updated event when the temperature increased, or decreased, by 2.0 degrees Celsius over the requested report interval (in this case, one minute).
+A weather-station application may specify a current report interval (CRI) for a temperature sensor of 60,000 (one minute). The temperature sensor would require a change-sensitivity value (as opposed to a percentage). If this temperature sensor returns degrees Celsius and the change sensitivity value temperature was 2.0, this particular sensor would only raise the data-updated event when the temperature increased, or decreased, by 2.0 degrees Celsius over the requested report interval.
 
 An ambient light sensor (ALS) is an example of a sensor that would require change-sensitivity to be specified as a percentage. For example, if the change sensitivity value for Illuminance was 2.0, this sensor would interpret the value as a percentage and only raise the data-updated event when the LUX value had either dropped or increased by 2%.
 
@@ -69,17 +69,17 @@ The following table lists the recommended change sensitivity (CS) defaults.
 | Inclinometer  | 0.50                                   |
 | Orientation   | 0.50                                   |
 
-## Change censitivity (CS) for the inclinometer and orientation sensors
+## Change sensitivity (CS) for the inclinometer and orientation sensors
 
-Change sensitivity for the inclinometer and orientation sensor should be calculated as the angle between two quaternions. Mathematically, this expressed as:
+Change sensitivity for the inclinometer and orientation sensor should be calculated as the angle between two quaternions. Mathematically expressed as:
 
 2\*cos⁻<sup>1</sup>(dot product(q1, q2))
 
-This calculation ensures consistency across various tablet (or device) orientations.
+This calculation ensures consistency across device orientations.
 
 ## Effective current report interval (CRI) and change sensitivity (CS)
 
-Multiple applications can set both the Current Report Interval (CRI) and the Change Sensitivity (CS) properties for a given sensor. It is the responsibility of your driver to determine which requested property applies. The properties set by the driver are referred to as the Effective Current Report-Interval (E-CRI) and the Effective Change-Sensitivity (E-CS).
+Multiple applications can set both the Current Report Interval (CRI) and the Change Sensitivity (CS) properties for a given sensor. It's the responsibility of your driver to determine which requested property applies. The properties set by the driver are referred to as the Effective Current Report-Interval (E-CRI) and the Effective Change-Sensitivity (E-CS).
 
 ## Setting the E-CRI and E-CS for client applications
 
@@ -94,28 +94,28 @@ Whenever a client application establishes a connection to a sensor, your driver 
 | ISensorDriver::OnSetProperties | If CS or CRI properties are set, update appropriate client container fields. |
 | IFileCallbackCleanup::OnCleanupFile | The client has crashed or stopped responding. The client should be removed from the client container. |
 
-The following table represents the client container for a 3D accelerometer with 4 connected client applications. Two of these client apps (corresponding to the 2nd and 4th row) have subscribed to events.
+The following table represents the client container for a 3D accelerometer with four connected client applications. Two of these client apps (corresponding to the 2nd and 4th row) have subscribed to events.
 
 | Client file handle | Subscribed to events | CRI | CS (X) | CX (Y) | CS (Z) |
 |--------------------|----------------------|-----|--------|--------|--------|
-| FF80A267           | FALSE                | 50  | .001   | .001   | .001   |
-| FF802489           | TRUE                 | 70  | .02    | .02    | .02    |
+| FF80A267           | FALSE                | 50  | 0.001   | 0.001   | 0.001   |
+| FF802489           | TRUE                 | 70  | 0.02    | 0.02    | 0.02    |
 | FF80D345           | FALSE                | 15  | NULL   | NULL   | NULL   |
-| FF803287           | TRUE                 | 100 | .005   | .005   | .005   |
+| FF803287           | TRUE                 | 100 | 0.005   | 0.005   | 0.005   |
 
 After the driver evaluated this set of connected clients, it chose the following values for E-CRI and E-CS:
 
-- E-CRI: 70ms
+- E-CRI: 70 ms
 - E-CS values: (could collapse to single value using smallest threshold)
-    - X:.005
-    - Y:.005
-    - Z: .005
+    - X:0.005
+    - Y:0.005
+    - Z: 0.005
 
-Notice in this example that clients that do not have an event sink set (first and third rows) are disregarded since event filtering does not apply to those clients.
+Notice in this example that clients that don't have an event sink set (first and third rows) are disregarded since event filtering doesn't apply to those clients.
 
 ## Filtering data update events by evaluating the effective CRI and CS values (E-CRI, E-CS)
 
-Once the current E-CRI and E-CS values have been determined and are updated as sensor connection states change, your sensor device will use these values to filter events that are raised to connected client applications. These values are compared against the difference between the "current" data value(s) and the previous data value(s). If the E-CS values have been exceeded for a time period equal to or greater than the E-CRI, then, and only then, should a data event be raised. The only exception to this is sensor device startup when the default value(s) are applied so that clients can receive the proper notification.
+Once the current E-CRI and E-CS values have been determined and are updated as sensor connection states change, your sensor device will use these values to filter events that are raised to connected client applications. These values are compared against the difference between the "current" data value(s) and the previous data value(s). If the E-CS values have been exceeded for a time period equal to or greater than the E-CRI, only then should a data event be raised. The only exception is sensor device startup, when the default value(s) are applied so that clients can receive the proper notification.
 
 The following illustration demonstrates how time filtering of raw sensor data is evaluated in order to determine when data events should be raised.
 
@@ -148,7 +148,7 @@ If your sensor hardware, or firmware, supports threshold detection you should us
 
 If your sensor hardware, or firmware, supports the notion of a report interval you should use this feature.
 
-If your sensor does not provide native report-interval support, consider disabling interrupts for a subset of the current report interval. Then, once this time elapses, retrieve the current device data.
+If your sensor doesn't provide native report-interval support, consider disabling interrupts for a subset of the current report interval. Then, once this time elapses, retrieve the current device data.
 
 ## Related topics
 

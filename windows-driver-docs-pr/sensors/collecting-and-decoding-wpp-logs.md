@@ -1,12 +1,12 @@
 ---
 title: Collecting and decoding WPP logs
-description: This topic provides information about collecting and decoding Windows software trace preprocessor (WPP) logs for the sensor class extension (CX) trace provider.
+description: This article provides information about collecting and decoding Windows software trace preprocessor (WPP) logs for the sensor class extension (CX) trace provider.
 ms.date: 11/30/2022
 ---
 
 # Collecting and decoding WPP logs
 
-This topic provides information about collecting and decoding Windows software trace preprocessor (WPP) logs for the sensor class extension (CX) trace provider.
+This article provides information about collecting and decoding Windows software trace preprocessor (WPP) logs for the sensor class extension (CX) trace provider.
 
 WPP provides ways to trace the operation of software components known as trace providers. The following are PDB files included to decode the WPP logs.
 
@@ -25,7 +25,7 @@ c88b592b-6090-480f-a839-ca2434de5844
 
 ## Trace flags
 
-The sensor class extension defines the following WPP\_CONTROL\_GUIDS trace flags:
+The sensor class extension defines the following WPP_CONTROL_GUIDS trace flags:
 
 ``` syntax
 EntryExit
@@ -53,7 +53,7 @@ TRACE_LEVEL_PERF            6
 
 ## Tracelog macros
 
-The following are WPP macros with their associated trace levels and trace flags. The MSG parameter is a standard format string that is defined for the printf function. Partners can also use the WPP extended format string. For more information about this see the [WPP extended format strings](../devtest/what-are-the-wpp-extended-format-specification-strings-.md) topic on MSD. The newline character is also included in the MSG so "\\n" is not necessary.
+The following are WPP macros with their associated trace levels and trace flags. The MSG parameter is a standard format string that is defined for the printf function. Partners can also use the WPP extended format string. For more information about this, see [WPP extended format strings](../devtest/what-are-the-wpp-extended-format-specification-strings-.md). The newline character is also included in the MSG so "\\n" isn't necessary.
 
 | Macro                | Level                   | Flag         | Parameter |
 |----------------------|-------------------------|--------------|-----------|
