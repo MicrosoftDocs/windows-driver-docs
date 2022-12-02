@@ -12,7 +12,7 @@ If a USB device driver supports [USB Selective Suspend](usb-selective-suspend.md
 
 You can use USB ETW to examine USB devices and their drivers to validate whether they successfully go into selective suspend. Whether you are a system manufacturer, an IT professional, or a hardware developer, we encourage you to inspect your USB devices and drivers to ensure that they properly support selective suspend before you provide the devices to end users.
 
-To help you identify system energy efficiency problems, we enhanced the Windows PowerCfg utility in Windows 7. PowerCfg is a command-line utility that is included with Windows that enables power policy enumeration and configuration. The enhancements to PowerCfg for determining energy efficiency problems are exercised by using the **/energy** parameter. These enhancements enable PowerCfg to inspect the system for common energy efficiency problems and generate an HTML report that contains any issues that it found.
+To help you identify system energy efficiency problems, we enhanced the Windows PowerCfg utility in Windows 7. PowerCfg is a command-line utility that is included with Windows that enables power policy enumeration and configuration. The enhancements to PowerCfg for determining energy efficiency problems are exercised by using the **[/energy](windows-hardware/design/device-experiences/powercfg-command-line-options#energy)** parameter. These enhancements enable PowerCfg to inspect the system for common energy efficiency problems and generate an HTML report that contains any issues that it found.
 
 PowerCfg detects various energy efficiency problems, including ineffective use of selective suspend by USB devices, excessive processor utilization, increased timer resolution, inefficient power policy settings, and battery capacity degradation. PowerCfg identifies different levels of problems, including server problems (errors) and minor problems (warnings).
 
@@ -24,7 +24,7 @@ powercfg /energy
 
 For more details, see [Guided Help: Get a detailed Power Efficiency Diagnostics Report](https://support.microsoft.com/topic/guided-help-get-a-detailed-power-efficiency-diagnostics-report-for-your-computer-in-windows-7-3f6ce138-fc04-7648-089a-854bcf332810).
 
-For more about Windows power management and the PowerCfg tool, see [Powercfg Command-Line Options](/windows-hardware/design/device-experiences/powercfg-command-line-options).
+For more about Windows power management and the PowerCfg tool, see [Powercfg Command-Line Options](/windows-hardware/design/device-experiences/powercfg-command-line-options), including the **[/energy](windows-hardware/design/device-experiences/powercfg-command-line-options#energy)** parameter.
 
 ## Related articles
 
