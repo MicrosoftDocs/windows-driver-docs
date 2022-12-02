@@ -34,6 +34,7 @@ PnPUtil is an inbox tool that allows the user to view information on and change 
 | find | Find devices. | pnputil /enum-devices /connected |
 | findall | Find devices, including those that are not currently attached. | pnputil /enum-devices |
 | hwids | List hardware IDs of devices. | pnputil /enum-devices /deviceids |
+| install | Create test device and install driver. | devgen /add /bus ROOT <br> pnputil /add-driver \<*INF name*\> /install |
 | listclass | List all devices in a setup class. | pnputil /enum-devices /class \<*name or GUID*\> |
 | reboot | Reboot the local computer. | shutdown /r /t 0 |
 | remove | Remove devices. | pnputil /remove-device |
