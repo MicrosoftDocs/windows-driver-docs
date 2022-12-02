@@ -14,9 +14,9 @@ The following table shows the data fields. For more information about the types 
 
 | Property key | Type | Required/Optional | Description |
 |---|---|---|---|
-| PKEY_SensorData_AccelerationX_Gs | VT_R4 | Required | The x-axis acceleration in g's. |
-| PKEY_SensorData_AccelerationY_Gs | VT_R4 | Required | The y-axis acceleration in g's. |
-| PKEY_SensorData_AccelerationZ_Gs | VT_R4 | Required | The z-axis acceleration in g's. |
+| PKEY_SensorData_AccelerationX_Gs | **VT_R4** | Required | The x-axis acceleration in g's. |
+| PKEY_SensorData_AccelerationY_Gs | **VT_R4** | Required | The y-axis acceleration in g's. |
+| PKEY_SensorData_AccelerationZ_Gs | **VT_R4** | Required | The z-axis acceleration in g's. |
 
 ## Related topics
 

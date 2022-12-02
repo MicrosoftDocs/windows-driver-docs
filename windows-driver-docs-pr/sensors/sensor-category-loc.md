@@ -79,7 +79,7 @@ Platform-defined property keys for this category are based on **SENSOR_DATA_TYPE
 
 This category includes the following platform-defined data fields.
 
-| Data field name and PID | Data type | Description |
+| Data field name and PID | Type | Description |
 |---|---|---|
 | **SENSOR_DATA_TYPE_ADDRESS1** (PID = 23) | **VT_LPWSTR** | Street address, first line. |
 | **SENSOR_DATA_TYPE_ADDRESS2** (PID = 24) | **VT_LPWSTR** | Street address, second line. |

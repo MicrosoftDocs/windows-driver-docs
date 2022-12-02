@@ -14,9 +14,9 @@ The following table shows the data fields. For more information about the types 
 
 | Property key | Type | Required/Optional | Description |
 |---|---|---|---|
-| PKEY_SensorData_AngularVelocityX_DegreesPerSecond | VT_R4 | Required | The gyrometric x-axis velocity in degrees per second. |
-| PKEY_SensorData_AngularVelocityY_DegreesPerSecond | VT_R4 | Required | The gyrometric y-axis velocity in degrees per second. |
-| PKEY_SensorData_AngularVelocityZ_DegreesPerSecond | VT_R4 | Required | The gyrometric z-axis velocity in degrees per second. |
+| PKEY_SensorData_AngularVelocityX_DegreesPerSecond | **VT_R4** | Required | The gyrometric x-axis velocity in degrees per second. |
+| PKEY_SensorData_AngularVelocityY_DegreesPerSecond | **VT_R4** | Required | The gyrometric y-axis velocity in degrees per second. |
+| PKEY_SensorData_AngularVelocityZ_DegreesPerSecond | **VT_R4** | Required | The gyrometric z-axis velocity in degrees per second. |
 
 ## Related topics
 

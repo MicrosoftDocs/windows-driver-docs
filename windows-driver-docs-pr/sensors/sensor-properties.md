@@ -45,7 +45,7 @@ Each platform-defined sensor property **PROPERTYKEY** is based on a common **GUI
 
 Values for properties designated as read/write can be specified by the client application. Values for properties designated as static must not change over time. Properties designated as required must be supported by the sensor.
 
-| Property key name and PID | Data type | Description |
+| Property key name and PID | Type | Description |
 |---|---|---|
 | **SENSOR_PROPERTY_ACCURACY** (PID = 17) | **VT_UNKNOWN** | Read only. [IPortableDeviceValues](/windows/win32/wpd_sdk/iportabledevicevalues) object that contains sensor data type names and their associated accuracies. Accuracy values represent possible variation from true values. Accuracy values are expressed by using the same units as the data field, except when otherwise documented. |
 | **SENSOR_PROPERTY_CHANGE_SENSITIVITY** (PID = 14) | **VT_UNKNOWN** | Read/write. **IPortableDeviceValues** object that contains sensor data type names and their associated change sensitivity values. Change sensitivity values provide requests about the amount by which the data field should change before the SENSOR_EVENT_DATA_UPDATED event is raised.</br></br>Sensitivity values are expressed by using the same units as the data field, except where otherwise documented.</br></br>For some sensors, the change sensitivity is interpreted as an actual value. For example, a change sensitivity value of 2 for SENSOR_DATA_TYPE_TEMPERATURE_CELSIUS represents a sensitivity of plus or minus 2 degrees Celsius.</br></br>For other sensors, like the ambient light sensor (ALS), the change sensitivity is interpreted as a percent. So, a change sensitivity of 2 for SENSOR_DATA_TYPE_LIGHT_LEVEL_LUX represents plus or minus 2% of LUX.</br></br>You can set this value to request a particular change sensitivity, but multiple applications could be using the same sensor. Therefore, sensors determine the true change sensitivity, based on their internal logic. For example, the sensor might always use the smallest change sensitivity that is requested by any of the applications.</br></br>If an application sets this property to VT_NULL, the device driver should reset SENSOR_PROPERTY_CHANGE_SENSITIVITY to its default value. |
@@ -70,7 +70,7 @@ Values for properties designated as read/write can be specified by the client ap
 
 The following Windows Portable Devices (WPD) property must be supported by all sensors.
 
-| Property key | Data type | Description |
+| Property key | Type | Description |
 |---|---|---|
 | **WPD_FUNCTIONAL_OBJECT_CATEGORY** | **VT_CLSID** | Read only. Required, static. Defines the sensor category. |
 
