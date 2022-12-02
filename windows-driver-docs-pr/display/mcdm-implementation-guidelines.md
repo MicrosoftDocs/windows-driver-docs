@@ -83,8 +83,8 @@ At a minimum, a compute-only driver must supply the following device driver inte
 
 If CPU host aperture is supported, pointers to the following functions must also be provided:
 
-* [DxgkDdiMapCpuHostAperture](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_mapcpuhostaperture)
-* [DxgkDdiUnmapCpuHostAperture](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_unmapcpuhostaperture)
+* [DxgkDdiMapCpuHostAperture](/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_mapcpuhostaperture)
+* [DxgkDdiUnmapCpuHostAperture](/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_unmapcpuhostaperture)
 
 For more information, see [CPU host aperture](cpu-host-aperature.md).
 
@@ -92,19 +92,19 @@ For more information, see [CPU host aperture](cpu-host-aperature.md).
 
 If physical addressing is used, pointers to the following functions must also be provided:
 
-* [DxgkDdiPatch](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_patch)
-* [DxgkDdiRender](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_render)
-* [DxgkDdiSubmitCommand](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_submitcommand)
+* [DxgkDdiPatch](/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_patch)
+* [DxgkDdiRender](/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_render)
+* [DxgkDdiSubmitCommand](/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_submitcommand)
 
 ### GPU virtual addressing support
 
 If GPU virtual addressing is used, pointers to the following functions must also be provided:
 
-* [DxgkDdiCreateProcess](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_createprocess)
-* [DxgkDdiDestroyProcess](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_destroyprocess)
-* [DxgkDdiGetRootPageTableSize](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_getrootpagetablesize)
-* [DxgkDdiSetRootPageTable](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_setrootpagetable)
-* [DxgkDdiSubmitCommandVirtual](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_submitcommandvirtual)
+* [DxgkDdiCreateProcess](/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_createprocess)
+* [DxgkDdiDestroyProcess](/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_destroyprocess)
+* [DxgkDdiGetRootPageTableSize](/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_getrootpagetablesize)
+* [DxgkDdiSetRootPageTable](/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_setrootpagetable)
+* [DxgkDdiSubmitCommandVirtual](/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_submitcommandvirtual)
 
 ### IoMmu isolation support
 
