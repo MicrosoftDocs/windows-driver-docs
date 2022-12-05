@@ -51,7 +51,7 @@ typedef union _FLT_PARAMETERS {
 | --- | --- |
 | FileStatInformation | A [**FILE_STAT_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_stat_information) structure. This structure contains an access mask. For more information about access masks, see [ACCESS_MASK](../kernel/access-mask.md). 
 | FileStatLxInformation | A [**FILE_STAT_LX_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_stat_lx_information) structure. This structure contains an access mask. For more information about access masks, see [ACCESS_MASK](../kernel/access-mask.md). 
-| FileCaseSensitiveInformation | A [FILE_CASE_SENSITIVE_INFORMATION](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_stat_information) structure. |
+| FileCaseSensitiveInformation | A [**FILE_CASE_SENSITIVE_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_case_sensitive_information) structure. |
 
 ## Remarks
 
