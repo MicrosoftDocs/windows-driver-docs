@@ -36,6 +36,16 @@
       href: iommu-dma-remapping.md
     - name: "Signaling a CPU event from KMD"
       href: signaling-cpu-event-from-kmd.md
+  - name: "WDDM 2.6 features"
+    items:
+    - name: "Microsoft Compute Driver Model"
+      items:
+      - name: "Microsoft Compute Driver Model overview"
+        href: mcdm.md
+      - name: "MCDM architecture"
+        href: mcdm-architecture.md
+      - name: "MCDM KM driver implementation guidelines" 
+        href: mcdm-implementation-guidelines.md
   - name: "WDDM 2.4 features"
     items:
     - name: "IOMMU-based GPU isolation"
