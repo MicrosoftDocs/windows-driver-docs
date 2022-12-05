@@ -910,7 +910,7 @@
     href: troubleshooting-device-and-driver-installations.md
   - name: "Device Manager"
     items: 
-    - name: "Device Manager for makers of devices and drivers"
+    - name: "Using Device Manager"
       href: using-device-manager.md
     - name: "Device Manager Details Tab"
       href: device-manager-details-tab.md

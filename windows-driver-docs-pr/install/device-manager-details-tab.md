@@ -1,21 +1,17 @@
 ---
 title: Device Manager Details tab
-description: Device Manager Details tab
+description: Device Manager Details tab displays information useful to driver developers and testers, and aids Microsoft Customer Support Services (CSS) in diagnosing customer problems.
 keywords:
-- Device Manager WDK , Details tab
+- Device Manager WDK, Details tab
 - firmware revision numbers WDK Device Manager
 - revision numbers WDK Device Manager
 - Details tab WDK Device Manager
-ms.date: 04/20/2017
+ms.date: 12/05/2022
 ---
 
 # Device Manager Details tab
 
-Device Manager provides a **Details** tab for each device. This tab displays lots of information useful to driver developers and testers, and aids Microsoft Customer Support Services (CSS) in diagnosing customer problems. The tab's page displays [device identification strings](device-identification-strings.md), together with device and driver configuration information that can be useful when you debug drivers.
-
-## Viewing a device's Details tab
-
-The details tab is enabled by default. To enable this tab, set the user environment variable DEVMGR_SHOW_DETAILS to 1. After you set this environment variable, the **Details** tab of the device will be available in Device Manager. To permanently set a user environment variable, use the **Advanced** tab of the system property sheet.
+Device Manager provides a **Details** tab for each device in the Properties dialog for that device. This tab displays information useful to driver developers and testers, and aids Microsoft Customer Support Services (CSS) in diagnosing customer problems. The tab's page displays [device identification strings](device-identification-strings.md), together with device and driver configuration information that can be useful when you debug drivers.
 
 ## Providing firmware revision numbers for the Details tab
 
