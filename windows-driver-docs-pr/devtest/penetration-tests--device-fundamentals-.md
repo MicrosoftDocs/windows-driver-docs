@@ -31,7 +31,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <td align="left"><p>Disable <a href="iospy.md" data-raw-source="[I/O Spy](iospy.md)">I/O Spy</a> on 1 or more devices.</p>
 <p><strong>Test binary:</strong> Devfund_IOSpy_DisableSupport.wsc</p>
 <p><strong>Test method:</strong> DisableIoSpy</p>
-<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p></td>
 </tr>
 <tr class="even">
@@ -45,7 +45,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <td align="left"><p>Enable <a href="iospy.md" data-raw-source="[I/O Spy](iospy.md)">I/O Spy</a> on one or more devices.</p>
 <p><strong>Test binary:</strong> Devfund_IOSpy_EnableSupport.wsc</p>
 <p><strong>Test method:</strong> EnableIoSpy</p>
-<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>DFD</em> - specifies the path to the IoSpy data file. The default location is %SystemDrive%\DriverTest\IoSpy</p></td>
 </tr>
@@ -67,7 +67,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 </ul>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test method:</strong> DoMiscAPITest</p>
-<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p>
 <p><em>DoPoolCheck</em></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
@@ -80,7 +80,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <td align="left"><p>This test performs the same tests as Fuzz Misc API test and this time passes a blank (zero-length) query and an invalid buffer address to the driver while trying to retrieve the extended attributes of a file.</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test method:</strong> DoMiscAPIWithZeroLengthTest</p>
-<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p>
 <p><em>DoPoolCheck</em></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
@@ -94,7 +94,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <p>For detailed information about this test, see <a href="#about-the-fuzz-open-and-close-test" data-raw-source="[About the Fuzz open and close test](#about-the-fuzz-open-and-close-test)">About the Fuzz open and close test</a>.</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test method:</strong> DoOpenCloseTest</p>
-<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p>
 <p><em>DoPoolCheck</em></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
@@ -112,7 +112,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <p>This test uses the <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile" data-raw-source="[&lt;strong&gt;ZwQueryInformationFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile)"><strong>ZwQueryInformationFile</strong></a>, <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntsetinformationfile" data-raw-source="[&lt;strong&gt;ZwSetInformationFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntsetinformationfile)"><strong>ZwSetInformationFile</strong></a>, <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwqueryvolumeinformationfile" data-raw-source="[&lt;strong&gt;ZwQueryVolumeInformationFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwqueryvolumeinformationfile)"><strong>ZwQueryVolumeInformationFile</strong></a>, and <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwsetvolumeinformationfile" data-raw-source="[&lt;strong&gt;ZwSetVolumeInformationFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwsetvolumeinformationfile)"><strong>ZwSetVolumeInformationFile</strong></a> functions.</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test method:</strong> DoQueryAndSetFileInformationTest</p>
-<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p>
 <p><em>DoPoolCheck</em></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
@@ -128,7 +128,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <p>If you use the <em>ChangeBufferProtectionFlags</em> parameter, which sets the protection option, the Fuzz test varies the security setting on the buffer in each query and set call.</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test method:</strong> DoQueryAndSetSecurityTest</p>
-<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p>
 <p><em>DoPoolCheck</em></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
@@ -150,7 +150,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <p>A <em>Tailored Random Test</em> is included as part of the random test. The tailored random test uses the results of the random test to examine the drivers response to IOCTL or FSCTL requests in more detail. The tailored random test probes areas that the random test missed and those on which the driver did not respond as expected based on the status returned by the random test calls.</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test methods:</strong> DoRandomIOCTLTest, DoRandomFSCTLTest</p>
-<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p>
 <p><em>MinInBuffer</em></p>
 <p><em>MaxInBuffer</em></p>
 <p><em>MinOutBuffer</em></p>
@@ -178,7 +178,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <p>For more information about the namespace of a device, see <a href="/windows-hardware/drivers/kernel/controlling-device-namespace-access" data-raw-source="[Controlling Device Namespace Access](../kernel/controlling-device-namespace-access.md)">Controlling Device Namespace Access</a>.</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test method:</strong> DoSubOpensTest</p>
-<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p>
 <p><em>DoPoolCheck</em></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
@@ -194,7 +194,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <p>The Fuzz test records the stream names used in the test.</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test method:</strong> DoSubOpensWithStreamsTest</p>
-<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p>
 <p><em>DoPoolCheck</em></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
@@ -210,7 +210,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <p>The Fuzz test performs the Zero-Length Buffer test on all devices opened during the basic and additional open tests. You can customize this test by using the <em>MinFunctionCode</em> and <em>MaxFunctionCode</em> command parameters to specify the range of IOCTL or FSCTL function codes used in the calls and <em>MinDeviceType</em> and <em>MaxDeviceType</em> to specify the range of device types used in the calls.</p>
 <p><strong>Test binary:</strong> Devfund_DevicePathExerciser.dll</p>
 <p><strong>Test methods:</strong> DoZeroLengthBufferIOCTLTest, DoZeroLengthBufferFSCTLTest</p>
-<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p>
 <p><em>MinDeviceType</em></p>
 <p><em>MaxDeviceType</em></p>
 <p><em>MinFunctionCode</em></p>
@@ -226,7 +226,7 @@ The Penetration tests include two categories of tests: Fuzz tests and [I/O Spy](
 <td align="left"><p>Runs <a href="ioattack.md" data-raw-source="[I/O Attack](ioattack.md)">I/O Attack</a> on the specified device or devices.</p>
 <p><strong>Test binary:</strong> Devfund_IOAttack_DeleteDataFile.wsc</p>
 <p><strong>Test method:</strong> RunIoAttack</p>
-<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p></td>
 </tr>
 </tbody>
@@ -278,11 +278,9 @@ The Open and Close Test uses the same options used in [Basic Open Operations](#b
 
 [How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)
 
-[How to select and configure the Device Fundamentals tests](/windows-hardware/drivers)
+[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)
 
 [Device Fundamentals Tests](device-fundamentals-tests.md)
-
-[Device Fundamentals Test Parameters](/windows-hardware/drivers)
 
 [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 

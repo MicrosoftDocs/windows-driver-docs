@@ -29,7 +29,7 @@ The Device Fundamentals I/O tests perform basic I/O testing on the specified dev
 <td align="left"><p>This test performs basic I/O testing on devices.</p>
 <p><strong>Test binary:</strong> Devfund_Device_IO.wsc</p>
 <p><strong>Test method:</strong> DeviceIO</p>
-<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>IOPeriod</em></p>
@@ -40,7 +40,7 @@ The Device Fundamentals I/O tests perform basic I/O testing on the specified dev
 <td align="left"><p>This test performs simple I/O testing on devices in a separate process and terminates the I/O process after the specified I/O period and test cycles.</p>
 <p><strong>Test binary:</strong> Devfund_SimpleIoStress_TermIoProc.wsc</p>
 <p><strong>Test method:</strong> SimpleIOStress_TermIoProc</p>
-<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>TestCycles</em></p>
 <p><em>IOPeriod</em></p></td>
@@ -55,11 +55,9 @@ The Device Fundamentals I/O tests perform basic I/O testing on the specified dev
 
 [How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)
 
-[How to select and configure the Device Fundamentals tests](/windows-hardware/drivers)
+[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)
 
 [Device Fundamentals Tests](device-fundamentals-tests.md)
-
-[Device Fundamentals Test Parameters](/windows-hardware/drivers)
 
 [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 

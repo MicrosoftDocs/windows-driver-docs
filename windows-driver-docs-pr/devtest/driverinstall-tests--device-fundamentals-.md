@@ -48,13 +48,11 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Setup\LogLevel
 
 ## Related topics
 
-[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)
+[How to test a driver at runtime using Visual Studio](../develop/testing-a-driver-at-runtime.md)
 
-[How to select and configure the Device Fundamentals tests](/windows-hardware/drivers)
+[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)
 
 [Device Fundamentals Tests](device-fundamentals-tests.md)
-
-[Device Fundamentals Test Parameters](/windows-hardware/drivers)
 
 [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 

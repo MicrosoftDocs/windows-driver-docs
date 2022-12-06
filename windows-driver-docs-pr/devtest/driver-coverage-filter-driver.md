@@ -13,7 +13,7 @@ ms.date: 04/20/2017
 
  
 
-The Driver Coverage filter driver (Drvcov.sys) monitors the I/O request packets (IRPs) that enter or leave the driver stack of specified devices. You specify the devices that the Driver Coverage filter driver monitors by using the *DQ* parameter when you run the **Enable IRP Coverage data collection** tool. See [How to select and configure the Device Fundamentals tests](/windows-hardware/drivers) and [Device Fundamentals Test Parameters](/windows-hardware/drivers).
+The Driver Coverage filter driver (Drvcov.sys) monitors the I/O request packets (IRPs) that enter or leave the driver stack of specified devices. You specify the devices that the Driver Coverage filter driver monitors by using the *DQ* parameter when you run the **Enable IRP Coverage data collection** tool. See [How to select and configure the Device Fundamentals tests](/../develop/how-to-select-and-configure-the-device-fundamental-tests.md) and [How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md).
 
 <span id="UpperFilter___TRUE"></span><span id="upperfilter___true"></span><span id="UPPERFILTER___TRUE"></span>**UpperFilter = TRUE**  
 This option installs the Driver Coverage filter driver as an upper filter to the device driver for the specified device. This configuration monitors all IRP traffic into or out of the device driver within the device's driver stack, regardless of whether the driver processed the IRP or passed it through to lower device drivers.

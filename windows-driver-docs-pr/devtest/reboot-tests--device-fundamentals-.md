@@ -29,7 +29,7 @@ The Device Fundamentals Reboot tests run I/O on the specified devices, before an
 <td align="left"><p>This test runs I/O on devices before and after a critical system reboot.</p>
 <p><strong>Test binary:</strong> Devfund_Critical_RebootRestart_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> Critical_Reboot_Restart_With_IO_Before_And_After</p>
-<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>IOPeriod</em></p></td>
 </tr>
@@ -38,7 +38,7 @@ The Device Fundamentals Reboot tests run I/O on the specified devices, before an
 <td align="left"><p>This test starts Simple I/O on devices, initiates a critical reboot with I/O running, and runs SimpleI/O again after the reboot.</p>
 <p><strong>Test binary:</strong> Devfund_Critical_RebootRestart_With_IO_During.wsc</p>
 <p><strong>Test method:</strong> Critical_Reboot_Restart_With_IO_During</p>
-<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p></td>
 </tr>
 <tr class="odd">
@@ -46,7 +46,7 @@ The Device Fundamentals Reboot tests run I/O on the specified devices, before an
 <td align="left"><p>This test runs I/O on devices before and after a system reboot.</p>
 <p><strong>Test binary:</strong> Devfund_RebootRestart_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> Reboot_Restart_With_IO_Before_And_After</p>
-<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>IOPeriod</em></p></td>
 </tr>
@@ -55,7 +55,7 @@ The Device Fundamentals Reboot tests run I/O on the specified devices, before an
 <td align="left"><p>This test starts Simple I/O on devices, initiates a reboot with I/O running, and runs SimpleI/O again after the reboot.</p>
 <p><strong>Test binary:</strong> Devfund_RebootRestart_With_IO_During.wsc</p>
 <p><strong>Test method:</strong> Reboot_Restart_With_IO_During</p>
-<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p></td>
 </tr>
 </tbody>
@@ -68,11 +68,9 @@ The Device Fundamentals Reboot tests run I/O on the specified devices, before an
 
 [How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)
 
-[How to select and configure the Device Fundamentals tests](/windows-hardware/drivers)
+[How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md)
 
 [Device Fundamentals Tests](device-fundamentals-tests.md)
-
-[Device Fundamentals Test Parameters](/windows-hardware/drivers)
 
 [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 
