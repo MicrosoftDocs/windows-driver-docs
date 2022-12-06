@@ -19,15 +19,15 @@ This topic details known issues concerning the WDK.
 
 If you installed the original Windows 11, version 22H2 WDK between May and August 2022 (version 10.0.22621.1), you may see the following error message when you start Visual Studio with the WDK.
 
-The service `Microsoft.VisualStudio.Shell.Interop.SVsUIShell` must be installed for this feature to work. Ensure that this service is available.
+The `Microsoft.Windows.Tools.WinIDE.Debugger.DebuggerPackage, DebuggerPackage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null` package did not load correctly.
 
-You can either safely dismiss this message, or you can uninstall the WDK and then reinstall the latest WDK using the instructions in [Download the Windows Driver Kit](./download-the-wdk.md).
+This issue is fixed in WDK version 10.0.22621.382. You can uninstall the WDK and then reinstall the latest WDK using the instructions in [Download the Windows Driver Kit](./download-the-wdk.md).
 
 ### Debugger within Visual Studio doesn't work
 
 It is not possible to debug drivers within the Visual Studio interface when using Visual Studio 2022 version 17.2.0 and 17.3 with the Windows 11, version 22H2 WDK (version 10.0.22621.382). To work around the problem, do one of the following: update Visual Studio to 17.4.1 or later, debug with WinDbg, or use a version of Visual Studio earlier than 17.2.0. The following error message is related to this issue:
 
-The `Microsoft.Windows.Tools.WinIDE.Debugger.DebuggerPackage, DebuggerPackage, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null` package did not load correctly.
+QueryBuildManagerBusyEx must be called on the UI.
 
 ### WDF redistributable co-installers don't work
 
