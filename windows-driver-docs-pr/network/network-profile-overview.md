@@ -39,7 +39,6 @@ This XML fragment consists of the extensions to network security as defined by t
 
     The IHV Extensions DLL can provide support for security algorithms not supported by the operating system, such as non-standard or proprietary algorithms. The DLL is responsible for processing the algorithms or provide proprietary methods for offloading the processing to the WLAN adapter.
 
-For more information about the Native 802.11 XML schema, refer to the Microsoft Windows SDK documentation.
 
  
 

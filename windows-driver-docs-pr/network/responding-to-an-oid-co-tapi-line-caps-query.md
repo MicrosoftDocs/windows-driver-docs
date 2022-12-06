@@ -25,15 +25,15 @@ In response to an [OID\_CO\_TAPI\_LINE\_CAPS](./oid-co-tapi-line-caps.md) query,
 
 -   **ulAddressTypes**
 
-    This field must be filled in appropriately. For a description of valid values, see the description of **dwAddressTypes** in the Microsoft Windows SDK documentation. This field must not be zero.
+    This field must be filled in appropriately. For a description of valid values, see the description of [**dwAddressTypes**](/windows/win32/api/tapi/ns-tapi-linedevcaps). This field must not be zero.
 
 -   **ulGenerateDigitModes**
 
-    This field must be filled in with a bitwise OR of the LINEDIGITMODE\_constants that specify the digit modes that can be generated on the line. For a description of the LINEDIGITMODE\_constant, see the description of **dwGenerateDigitModes** in the Windows SDK documentation.
+    This field must be filled in with a bitwise OR of the LINEDIGITMODE\_constants that specify the digit modes that can be generated on the line. For a description of the LINEDIGITMODE\_constant, see the description of [**dwGenerateDigitModes**](/windows/win32/api/tapi/ns-tapi-linedevcaps).
 
 -   **ulMonitorDigitModes**
 
-    This field must be filled in with a bitwise OR of the LINEDIGITMODE\_constants that specify the digit modes than can be detected on this line. For a description of the LINEDIGITMODE\_constants, see the description of **dwMonitorDigitModes** in the Windows SDK documentation.
+    This field must be filled in with a bitwise OR of the LINEDIGITMODE\_constants that specify the digit modes than can be detected on this line. For a description of the LINEDIGITMODE\_constants, see the description of [**dwMonitorDigitModes**](/windows/win32/api/tapi/ns-tapi-linedevcaps).
 
  
 

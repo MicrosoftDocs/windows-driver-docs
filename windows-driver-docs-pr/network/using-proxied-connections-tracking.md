@@ -21,7 +21,7 @@ Additions to the Data Field Identifiers to support connection tracking include:
 The full path of the original application for proxy connections. If the application has not been proxied, this path is identical to the xxx\_ALE\_APP\_ID.
 
 <a href="" id="fwps-field-xxx-package-id"></a>FWPS\_FIELD\_Xxx\_PACKAGE\_ID  
-The package identifier is a security identifier (SID) that identifies the associated AppContainer process. For more information about the SID structure, see the description for the SID structure in the Microsoft Windows SDK documentation.
+The package identifier is a security identifier (SID) that identifies the associated AppContainer process.
 
 ### Redirecting Connections
 

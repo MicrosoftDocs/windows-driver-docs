@@ -17,7 +17,7 @@ ms.date: 04/20/2017
 
 This section discusses the management and processing of network profiles by the IHV Extensions DLL. Network profiles define the attributes for the connection operation to a basic service (BSS) network.
 
-The IHV Extensions DLL is responsible for verifying or creating proprietary extensions to a network profile. These extensions are XML data fragments, with each fragment declared within an **IHV** element of the Native 802.11 XML schema. The data within the &lt;IHV&gt; and &lt;/IHV&gt; tags of the **IHV** element is in a format defined by the IHV. For more information about the Native 802.11 XML schema, refer to the Microsoft Windows SDK documentation.
+The IHV Extensions DLL is responsible for verifying or creating proprietary extensions to a network profile. These extensions are XML data fragments, with each fragment declared within an **IHV** element of the Native 802.11 XML schema. The data within the &lt;IHV&gt; and &lt;/IHV&gt; tags of the **IHV** element is in a format defined by the IHV. 
 
 This section includes the following topics:
 

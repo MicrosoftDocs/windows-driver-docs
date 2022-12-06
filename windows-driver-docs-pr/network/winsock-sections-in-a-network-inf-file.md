@@ -178,7 +178,7 @@ The following namespace values can be assigned to SupportedNameSpace and are def
 
  
 
-For more information about namespace providers, see the Windows SDK documentation.
+For more information about namespace providers, see the [Windows SDK documentation](/windows/win32/winsock/name-space-service-providers-2).
 
 The following example shows Winsock sections for an IPX protocol:
 

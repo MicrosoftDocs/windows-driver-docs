@@ -11,7 +11,7 @@ ms.date: 01/07/2019
 The filtering condition flags are each represented by a bit field. These flags are defined as follows:
 
 > [!NOTE]
-> This topic contains filtering condition flags for kernel mode WFP callout drivers. For information about filtering condition flags that are shared between user mode and kernel mode, or if you are looking for information about a flag that isn't listed here, see the [Filtering Condition Flags](/windows/desktop/FWP/filtering-condition-flags-) topic in the Windows SDK documentation.
+> This topic contains filtering condition flags for kernel mode WFP callout drivers. For information about filtering condition flags that are shared between user mode and kernel mode, or if you are looking for information about a flag that isn't listed here, see [Filtering Condition Flags](/windows/desktop/FWP/filtering-condition-flags-).
 
 <table>
 <tr>
