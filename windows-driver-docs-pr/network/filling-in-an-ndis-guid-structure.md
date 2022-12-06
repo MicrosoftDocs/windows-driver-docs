@@ -30,7 +30,7 @@ typedef struct _NDIS_GUID {
 } NDIS_GUID, *PNDIS_GUID;
 ```
 
-To obtain a GUID for the **Guid** member of the structure, you can run the Uuidgen.exe application. For more information about this application, see the Microsoft Windows SDK documentation.
+To obtain a GUID for the **Guid** member of the structure, you can run the Uuidgen.exe application. For more information about this application, see [Generating Interface UUIDs](/windows/win32/rpc/generating-interface-uuids).
 
 The **Oid** or **Status** member is a ULONG that is an OID code. NDIS 6.0 does not map custom status indications to WMI GUIDs.
 

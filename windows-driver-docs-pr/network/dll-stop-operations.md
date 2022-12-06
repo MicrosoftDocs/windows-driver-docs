@@ -32,7 +32,7 @@ The operating system follows this sequence when stopping and unloading the IHV E
 
     After the call to *Dot11ExtIhvDeinitService*, the IHV Extensions DLL must not call any IHV Extensions function.
 
-3.  Finally, the operating system calls the *DllMain* function in the IHV Extensions DLL with the *fdwReason* parameter set to DLL\_PROCESS\_DETACH. For more information about *DllMain* and DLLs, refer to the topic "About Dynamic-Link Libraries" within the Microsoft Windows SDK documentation.
+3.  Finally, the operating system calls the *DllMain* function in the IHV Extensions DLL with the *fdwReason* parameter set to DLL\_PROCESS\_DETACH. For more information about *DllMain* and DLLs, see [About Dynamic-Link Libraries](/windows/win32/dlls/about-dynamic-link-libraries).
 
 For more information about the IHV Extensibility functions, see [Native 802.11 IHV Extensibility Functions](./native-802-11-ihv-extensibility-functions.md).
 

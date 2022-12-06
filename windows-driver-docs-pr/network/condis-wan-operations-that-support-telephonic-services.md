@@ -18,7 +18,7 @@ ms.date: 04/20/2017
 
 
 
-This section describes how CoNDIS WAN miniport drivers implement telephonic services using NDIS functions in a connection-oriented environment. CoNDIS WAN miniport drivers communicate through NDIS with the NDPROXY and NDISWAN drivers. The NDPROXY driver communicates with telephony applications through a telephony service provider. For more information, see the Telephony Application Programming Interface (TAPI) in the Microsoft Windows SDK documentation.
+This section describes how CoNDIS WAN miniport drivers implement telephonic services using NDIS functions in a connection-oriented environment. CoNDIS WAN miniport drivers communicate through NDIS with the NDPROXY and NDISWAN drivers. The NDPROXY driver communicates with telephony applications through a telephony service provider. For more information, see the [Telephony Application Programming Interface (TAPI)](/windows/win32/tapi/telephony-application-programming-interfaces).
 
 The following topics describe the NDPROXY driver more fully. These topics also describe how a CoNDIS WAN miniport driver registers and enumerates its TAPI capabilities, how it brings up lines, and how it sets up and closes calls that are initiated by TAPI requests:
 

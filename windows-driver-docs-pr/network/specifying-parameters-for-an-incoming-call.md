@@ -23,7 +23,7 @@ When indicating an incoming call with **Ndis(M)CmDispatchIncomingCall**, a call 
 
 -   Maximum receive SDU size (CallMgrParameters-&gt;Receive.MaxSduSize)
 
-In addition, a call manager or an MCM must specify the following values in the LINE\_CALL\_INFO structure:
+In addition, a call manager or an MCM must specify the following values in the [**LINE\_CALL\_INFO**](/windows/win32/api/tapi/ns-tapi-linecallinfo) structure:
 
 -   **ulMediaMode**
 
@@ -57,7 +57,6 @@ A call manager or MCM that supports an address family other than CO\_ADDRESS\_FA
 
 A call manager or an MCM that supports the CO\_ADDRESS\_FAMILY\_TAPI\_PROXY family specifies the above-listed LINE\_CALL\_INFO members in the media-specific portion of the CO\_CALL\_MANAGER\_PARAMETERS structure that it supplies to **Ndis(M)CmDispatchIncomingCall**.
 
-For a description of the members in the LINE\_CALL\_INFO structure, see the LINECALLINFO structure in the Microsoft Windows SDK documentation.
 
  
 

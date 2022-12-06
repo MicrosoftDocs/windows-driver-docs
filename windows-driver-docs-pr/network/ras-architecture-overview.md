@@ -93,8 +93,7 @@ For more information about NDISWAN, see [NDISWAN Overview](ndiswan-overview.md).
 The serial driver component is a standard device driver for internal serial ports or multiport serial cards. The asynchronous WAN miniport driver included with Microsoft Windows 2000 and later uses the internal serial driver for modem communications. Any driver that exports the same functions as the serial driver can interface with the built-in asynchronous WAN miniport driver.
 
 **Note**  X.25 vendors can implement serial driver emulators for an X.25 interface card. In this case, each virtual circuit on the X.25 card appears as a serial port with an X.25 packet assembler/disassembler (PAD) attached to it. The connection interface must correctly emulate serial signals such as DTR, DCD, CTS, RTS, and DSR.
-X.25 vendors who implement a serial driver emulator for their X.25 card must also make an entry for their PAD in the Pad.inf file. This file contains the command/response script required to make a connection through the X.25 PAD. For more information about the Pad.inf file, see the Microsoft Windows SDK documentation.
-
+X.25 vendors who implement a serial driver emulator for their X.25 card must also make an entry for their PAD in the Pad.inf file. This file contains the command/response script required to make a connection through the X.25 PAD. 
  
 
 ### WAN Miniport Driver
