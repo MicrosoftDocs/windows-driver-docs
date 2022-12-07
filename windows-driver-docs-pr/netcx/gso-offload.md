@@ -9,13 +9,6 @@ ms.custom: Fe
 
 # Generic Segmentation Offload
 
-> [!WARNING]
-> Some information in this topic relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
->
-> NetAdapterCx is preview only in Windows 10, version 2004.
->
-> Currently, NetAdapterCx client drivers cannot be certified.
-
 Generic Segmentation Offload (GSO) collectively represents [Large Send Offload (LSO)](../network/offloading-the-segmentation-of-large-tcp-packets.md) and [UDP Send Offload (USO)](../network/udp-segmentation-offload-uso-.md). 
 
 Client drivers can offload the segmentation of TCP/UDP packets that are larger than the maximum transmission unit (MTU) of the network medium. Drivers must indicate this capability to NetAdapterCx using the GSO APIs.
