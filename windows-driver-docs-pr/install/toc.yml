@@ -160,7 +160,7 @@
         href: installing-a-catalog-file-by-using-signtool.md
       - name: "Installing a Catalog File by using CryptCATAdminAddCatalog"
         href: installing-a-catalog-file-by-using-cryptcatadminaddcatalog.md
-      - name: "Creating a Catalog File for a PnP Driver Package "
+      - name: "Creating a Catalog File for a PnP Driver Package"
         href: creating-a-catalog-file-for-a-pnp-driver-package.md
       - name: "Creating a Catalog File for a Non-PnP Driver"
         href: creating-a-catalog-file-for-a-non-pnp-driver-package.md
@@ -304,7 +304,7 @@
       href: device-metadata-retrieval-client.md
     - name: "Device Metadata Store"
       href: device-metadata-store.md
-    - name: "Device Metadata Cache "
+    - name: "Device Metadata Cache"
       href: device-metadata-cache.md
     - name: "Device Metadata Package Structure"
       href: device-metadata-package-components.md
@@ -638,7 +638,7 @@
       href: registry-trees-and-keys.md
     - name: "Registry Trees for Devices and Drivers"
       href: overview-of-registry-trees-and-keys.md
-    - name: "HKLM\\SYSTEM\\CurrentControlSet\\Services Registry Tree "
+    - name: "HKLM\\SYSTEM\\CurrentControlSet\\Services Registry Tree"
       href: hklm-system-currentcontrolset-services-registry-tree.md
     - name: "HKLM\\SYSTEM\\CurrentControlSet\\Control Registry Tree"
       href: hklm-system-currentcontrolset-control-registry-tree.md
@@ -698,6 +698,82 @@
         href: co-installer-functionality.md
       - name: "Handling DIF Codes"
         href: handling-dif-codes.md
+      - name: "Device Installation Function Codes"
+        items:
+        - name: "DIF_ADDPROPERTYPAGE_ADVANCED"
+          href: dif-addpropertypage-advanced.md
+        - name: "DIF_ADDPROPERTYPAGE_BASIC"
+          href: dif-addpropertypage-basic.md
+        - name: "DIF_ALLOW_INSTALL"
+          href: dif-allow-install.md
+        - name: "DIF_ASSIGNRESOURCES"
+          href: dif-assignresources.md
+        - name: "DIF_CALCDISKSPACE"
+          href: dif-calcdiskspace.md
+        - name: "DIF_DESTROYPRIVATEDATA"
+          href: dif-destroyprivatedata.md
+        - name: "DIF_DESTROYWIZARDDATA"
+          href: dif-destroywizarddata.md
+        - name: "DIF_DETECT"
+          href: dif-detect.md
+        - name: "DIF_DETECTCANCEL"
+          href: dif-detectcancel.md
+        - name: "DIF_DETECTVERIFY"
+          href: dif-detectverify.md
+        - name: "DIF_ENABLECLASS"
+          href: dif-enableclass.md
+        - name: "DIF_FINISHINSTALL_ACTION"
+          href: dif-finishinstall-action.md
+        - name: "DIF_FIRSTTIMESETUP"
+          href: dif-firsttimesetup.md
+        - name: "DIF_FOUNDDEVICE"
+          href: dif-founddevice.md
+        - name: "DIF_INSTALLCLASSDRIVERS"
+          href: dif-installclassdrivers.md
+        - name: "DIF_INSTALLDEVICE"
+          href: dif-installdevice.md
+        - name: "DIF_INSTALLDEVICEFILES"
+          href: dif-installdevicefiles.md
+        - name: "DIF_INSTALLINTERFACES"
+          href: dif-installinterfaces.md
+        - name: "DIF_INSTALLWIZARD"
+          href: dif-installwizard.md
+        - name: "DIF_MOVEDEVICE"
+          href: dif-movedevice.md
+        - name: "DIF_NEWDEVICEWIZARD_FINISHINSTALL"
+          href: dif-newdevicewizard-finishinstall.md
+        - name: "DIF_NEWDEVICEWIZARD_POSTANALYZE"
+          href: dif-newdevicewizard-postanalyze.md
+        - name: "DIF_NEWDEVICEWIZARD_PREANALYZE"
+          href: dif-newdevicewizard-preanalyze.md
+        - name: "DIF_NEWDEVICEWIZARD_PRESELECT"
+          href: dif-newdevicewizard-preselect.md
+        - name: "DIF_NEWDEVICEWIZARD_SELECT"
+          href: dif-newdevicewizard-select.md
+        - name: "DIF_POWERMESSAGEWAKE"
+          href: dif-powermessagewake.md
+        - name: "DIF_PROPERTIES"
+          href: dif-properties.md
+        - name: "DIF_REGISTER_COINSTALLERS"
+          href: dif-register-coinstallers.md
+        - name: "DIF_REGISTERDEVICE"
+          href: dif-registerdevice.md
+        - name: "DIF_SELECTBESTCOMPATDRV"
+          href: dif-selectbestcompatdrv.md
+        - name: "DIF_SELECTCLASSDRIVERS"
+          href: dif-selectclassdrivers.md
+        - name: "DIF_SELECTDEVICE"
+          href: dif-selectdevice.md
+        - name: "DIF_TROUBLESHOOTER"
+          href: dif-troubleshooter.md
+        - name: "DIF_UNREMOVE"
+          href: dif-unremove.md
+        - name: "DIF_UPDATEDRIVER_UI"
+          href: dif-updatedriver-ui.md
+        - name: "DIF_VALIDATECLASSDRIVERS"
+          href: dif-validateclassdrivers.md
+        - name: "DIF_VALIDATEDRIVER"
+          href: dif-validatedriver.md
       - name: "Registering a Co-installer"
         href: registering-a-co-installer.md
       - name: "Registering a Device-Specific Co-installer"
@@ -740,12 +816,88 @@
         href: device-installation-application-that-is-included-in-the-driver-package.md
       - name: "Guidelines for Starting Device Installation Applications through Co-installers"
         href: guidelines-for-starting-device-installation-applications-through-co-in.md
-    - name: "DIFx Guidelines"
-      href: difx-guidelines.md
-    - name: "DPInst Return Code"
-      href: dpinst-return-code.md
+    - name: "DIFx Tools"
+      items:
+      - name: "DIFx Guidelines"
+        href: difx-guidelines.md
+      - name: "DPInst"
+        items:
+        - name: "DPInst Return Code"
+          href: dpinst-return-code.md
+        - name: "deleteBinaries XML Element"
+          href: deletebinaries-xml-element.md
+        - name: "dpinst XML Element"
+          href: dpinst-xml-element.md
+        - name: "dpinstTitle XML Element"
+          href: dpinsttitle-xml-element.md
+        - name: "enableNotListedLanguages XML Element"
+          href: enablenotlistedlanguages-xml-element.md
+        - name: "eula XML Element"
+          href: eula-xml-element.md
+        - name: "eulaHeaderTitle XML Element"
+          href: eulaheadertitle-xml-element.md
+        - name: "eulaNoButton XML Element"
+          href: eulanobutton-xml-element.md
+        - name: "eulaYesButton XML Element"
+          href: eulayesbutton-xml-element.md
+        - name: "finishText XML Element"
+          href: finishtext-xml-element.md
+        - name: "finishTitle XML Element"
+          href: finishtitle-xml-element.md
+        - name: "forceIfDriverIsNotBetter XML Element"
+          href: forceifdriverisnotbetter-xml-element.md
+        - name: "group XML Element"
+          href: group-xml-element.md
+        - name: "headerPath XML Element"
+          href: headerpath-xml-element.md
+        - name: "icon XML Element"
+          href: icon-xml-element.md
+        - name: "installAllOrNone XML Element"
+          href: installallornone-xml-element.md
+        - name: "installHeaderTitle XML Element"
+          href: installheadertitle-xml-element.md
+        - name: "language XML Element"
+          href: language-xml-element.md
+        - name: "legacyMode XML Element"
+          href: legacymode-xml-element.md
+        - name: "package XML Element"
+          href: package-xml-element.md
+        - name: "promptIfDriverIsNotBetter XML Element"
+          href: promptifdriverisnotbetter-xml-element.md
+        - name: "quietInstall XML Element"
+          href: quietinstall-xml-element.md
+        - name: "scanHardware XML Element"
+          href: scanhardware-xml-element.md
+        - name: "search XML Element"
+          href: search-xml-element.md
+        - name: "subDirectory XML Element"
+          href: subdirectory-xml-element.md
+        - name: "suppressAddRemovePrograms XML Element"
+          href: suppressaddremoveprograms-xml-element.md
+        - name: "suppressWizard XML Element"
+          href: suppresswizard-xml-element.md
+        - name: "watermarkPath XML Element"
+          href: watermarkpath-xml-element.md
+        - name: "welcomeIntro XML Element"
+          href: welcomeintro-xml-element.md
+        - name: "welcomeTitle XML Element"
+          href: welcometitle-xml-element.md
     - name: "Device Installation Application Started through AutoRun"
       href: device-installation-application-started-through-autorun.md
+    - name: "TxtSetup.oem File"
+      items:
+      - name: "Config.DriverKey Section of a TxtSetup.oem File"
+        href: config-driverkey-section-of-a-txtsetup-oem-file.md
+      - name: "Defaults Section of a TxtSetup.oem File"
+        href: defaults-section-of-a-txtsetup-oem-file.md
+      - name: "Disks Section of a TxtSetup.oem File"
+        href: disks-section-of-a-txtsetup-oem-file.md
+      - name: "Files.HwComponent.ID Section of a TxtSetup.oem File"
+        href: files-hwcomponent-id-section-of-a-txtsetup-oem-file.md
+      - name: "HardwareIds.scsi.ID Section of a TxtSetup.oem File"
+        href: hardwareids-scsi-id-section-of-a-txtsetup-oem-file.md
+      - name: "HwComponent Section of a TxtSetup.oem File"
+        href: hwcomponent-section-of-a-txtsetup-oem-file.md
 - name: "INF Sections"
   items: 
   - name: "INF ClassInstall32 Section"
@@ -1076,242 +1228,232 @@
     href: elam-driver-submission.md
 - name: "Reference"
   items: 
-  - name: "BUS1394_CLASS_GUID"
-    href: bus1394-class-guid.md
-  - name: "CdChangerClassGuid "
-    href: cdchangerclassguid.md
-  - name: "CdRomClassGuid"
-    href: cdromclassguid.md
-  - name: "Config.DriverKey Section of a TxtSetup.oem File"
-    href: config-driverkey-section-of-a-txtsetup-oem-file.md
-  - name: "Defaults Section of a TxtSetup.oem File"
-    href: defaults-section-of-a-txtsetup-oem-file.md
   - name: "DEFINE_DEVPROPKEY"
     href: define-devpropkey.md
-  - name: "deleteBinaries XML Element"
-    href: deletebinaries-xml-element.md
-  - name: "DEVPKEY_Device_Address"
-    href: devpkey-device-address.md
-  - name: "DEVPKEY_Device_BaseContainerId"
-    href: devpkey-device-basecontainerid.md
-  - name: "DEVPKEY_Device_BusNumber"
-    href: devpkey-device-busnumber.md
-  - name: "DEVPKEY_Device_BusRelations"
-    href: devpkey-device-busrelations.md
-  - name: "DEVPKEY_Device_BusReportedDeviceDesc"
-    href: devpkey-device-busreporteddevicedesc.md
-  - name: "DEVPKEY_Device_BusTypeGuid"
-    href: devpkey-device-bustypeguid.md
-  - name: "DEVPKEY_Device_Capabilities"
-    href: devpkey-device-capabilities.md
-  - name: "DEVPKEY_Device_Characteristics"
-    href: devpkey-device-characteristics.md
-  - name: "DEVPKEY_Device_Children"
-    href: devpkey-device-children.md
-  - name: "DEVPKEY_Device_Class"
-    href: devpkey-device-class.md
-  - name: "DEVPKEY_Device_ClassGuid"
-    href: devpkey-device-classguid.md
-  - name: "DEVPKEY_Device_CompatibleIds"
-    href: devpkey-device-compatibleids.md
-  - name: "DEVPKEY_Device_ConfigFlags"
-    href: devpkey-device-configflags.md
-  - name: "DEVPKEY_Device_ContainerId"
-    href: devpkey-device-containerid.md
-  - name: "DEVPKEY_Device_DeviceDesc"
-    href: devpkey-device-devicedesc.md
-  - name: "DEVPKEY_Device_DevNodeStatus"
-    href: devpkey-device-devnodestatus.md
-  - name: "DEVPKEY_Device_DevType"
-    href: devpkey-device-devtype.md
-  - name: "DEVPKEY_Device_DHP_Rebalance_Policy"
-    href: devpkey-device-dhp-rebalance-policy.md
-  - name: "DEVPKEY_Device_DmaRemappingPolicy"
-    href: devpkey-device-dmaremappingpolicy.md
-  - name: "DEVPKEY_Device_Driver"
-    href: devpkey-device-driver.md
-  - name: "DEVPKEY_Device_DriverCoInstallers"
-    href: devpkey-device-drivercoinstallers.md
-  - name: "DEVPKEY_Device_DriverDate"
-    href: devpkey-device-driverdate.md
-  - name: "DEVPKEY_Device_DriverDesc"
-    href: devpkey-device-driverdesc.md
-  - name: "DEVPKEY_Device_DriverInfPath"
-    href: devpkey-device-driverinfpath.md
-  - name: "DEVPKEY_Device_DriverInfSection"
-    href: devpkey-device-driverinfsection.md
-  - name: "DEVPKEY_Device_DriverInfSectionExt"
-    href: devpkey-device-driverinfsectionext.md
-  - name: "DEVPKEY_Device_DriverLogoLevel"
-    href: devpkey-device-driverlogolevel.md
-  - name: "DEVPKEY_Device_DriverPropPageProvider"
-    href: devpkey-device-driverproppageprovider.md
-  - name: "DEVPKEY_Device_DriverProvider"
-    href: devpkey-device-driverprovider.md
-  - name: "DEVPKEY_Device_DriverRank"
-    href: devpkey-device-driverrank.md
-  - name: "DEVPKEY_Device_DriverVersion"
-    href: devpkey-device-driverversion.md
-  - name: "DEVPKEY_Device_EjectionRelations"
-    href: devpkey-device-ejectionrelations.md
-  - name: "DEVPKEY_Device_EnumeratorName"
-    href: devpkey-device-enumeratorname.md
-  - name: "DEVPKEY_Device_Exclusive"
-    href: devpkey-device-exclusive.md
-  - name: "DEVPKEY_Device_FirstInstallDate"
-    href: devpkey-device-firstinstalldate.md
-  - name: "DEVPKEY_Device_FriendlyName"
-    href: devpkey-device-friendlyname.md
-  - name: "DEVPKEY_Device_GenericDriverInstalled"
-    href: devpkey-device-genericdriverinstalled.md
-  - name: "DEVPKEY_Device_HardwareIds"
-    href: devpkey-device-hardwareids.md
-  - name: "DEVPKEY_Device_InstallDate"
-    href: devpkey-device-installdate.md
-  - name: "DEVPKEY_Device_InstallState"
-    href: devpkey-device-installstate.md
-  - name: "DEVPKEY_Device_InstanceId"
-    href: devpkey-device-instanceid.md
-  - name: "DEVPKEY_Device_Legacy"
-    href: devpkey-device-legacy.md
-  - name: "DEVPKEY_Device_LegacyBusType"
-    href: devpkey-device-legacybustype.md
-  - name: "DEVPKEY_Device_LocationInfo"
-    href: devpkey-device-locationinfo.md
-  - name: "DEVPKEY_Device_LocationPaths"
-    href: devpkey-device-locationpaths.md
-  - name: "DEVPKEY_Device_LowerFilters"
-    href: devpkey-device-lowerfilters.md
-  - name: "DEVPKEY_Device_Manufacturer"
-    href: devpkey-device-manufacturer.md
-  - name: "DEVPKEY_Device_MatchingDeviceId"
-    href: devpkey-device-matchingdeviceid.md
-  - name: "DEVPKEY_Device_ModelId"
-    href: devpkey-device-modelid.md
-  - name: "DEVPKEY_Device_NoConnectSound"
-    href: devpkey-device-noconnectsound.md
-  - name: "DEVPKEY_Device_Parent"
-    href: devpkey-device-parent.md
-  - name: "DEVPKEY_Device_PDOName"
-    href: devpkey-device-pdoname.md
-  - name: "DEVPKEY_Device_PhysicalDeviceLocation"
-    href: devpkey-device-physicaldevicelocation.md
-  - name: "DEVPKEY_Device_PowerData"
-    href: devpkey-device-powerdata.md
-  - name: "DEVPKEY_Device_PowerRelations "
-    href: devpkey-device-powerrelations.md
-  - name: "DEVPKEY_Device_ProblemCode"
-    href: devpkey-device-problemcode.md
-  - name: "DEVPKEY_Device_ProblemStatus"
-    href: devpkey-device-problemstatus.md
-  - name: "DEVPKEY_Device_RemovalPolicy"
-    href: devpkey-device-removalpolicy.md
-  - name: "DEVPKEY_Device_RemovalPolicyDefault"
-    href: devpkey-device-removalpolicydefault.md
-  - name: "DEVPKEY_Device_RemovalPolicyOverride"
-    href: devpkey-device-removalpolicyoverride.md
-  - name: "DEVPKEY_Device_RemovalRelations"
-    href: devpkey-device-removalrelations.md
-  - name: "DEVPKEY_Device_Reported"
-    href: devpkey-device-reported.md
-  - name: "DEVPKEY_Device_ResourcePickerExceptions"
-    href: devpkey-device-resourcepickerexceptions.md
-  - name: "DEVPKEY_Device_ResourcePickerTags"
-    href: devpkey-device-resourcepickertags.md
-  - name: "DEVPKEY_Device_SafeRemovalRequired"
-    href: devpkey-device-saferemovalrequired.md
-  - name: "DEVPKEY_Device_SafeRemovalRequiredOverride"
-    href: devpkey-device-saferemovalrequiredoverride.md
-  - name: "DEVPKEY_Device_Security"
-    href: devpkey-device-security.md
-  - name: "DEVPKEY_Device_SecuritySDS"
-    href: devpkey-device-securitysds.md
-  - name: "DEVPKEY_Device_Service"
-    href: devpkey-device-service.md
-  - name: "DEVPKEY_Device_SessionId"
-    href: devpkey-device-sessionid.md
-  - name: "DEVPKEY_Device_Siblings"
-    href: devpkey-device-siblings.md
-  - name: "DEVPKEY_Device_UINumber"
-    href: devpkey-device-uinumber.md
-  - name: "DEVPKEY_Device_UINumberDescFormat"
-    href: devpkey-device-uinumberdescformat.md
-  - name: "DEVPKEY_Device_UpperFilters"
-    href: devpkey-device-upperfilters.md
-  - name: "DEVPKEY_DeviceClass_Characteristics"
-    href: devpkey-deviceclass-characteristics.md
-  - name: "DEVPKEY_DeviceClass_ClassCoInstallers"
-    href: devpkey-deviceclass-classcoinstallers.md
-  - name: "DEVPKEY_DeviceClass_ClassInstaller"
-    href: devpkey-deviceclass-classinstaller.md
-  - name: "DEVPKEY_DeviceClass_ClassName"
-    href: devpkey-deviceclass-classname.md
-  - name: "DEVPKEY_DeviceClass_DefaultService"
-    href: devpkey-deviceclass-defaultservice.md
-  - name: "DEVPKEY_DeviceClass_DevType"
-    href: devpkey-deviceclass-devtype.md
-  - name: "DEVPKEY_DeviceClass_DHPRebalanceOptOut"
-    href: devpkey-deviceclass-dhprebalanceoptout.md
-  - name: "DEVPKEY_DeviceClass_Exclusive"
-    href: devpkey-deviceclass-exclusive.md
-  - name: "DEVPKEY_DeviceClass_Icon"
-    href: devpkey-deviceclass-icon.md
-  - name: "DEVPKEY_DeviceClass_IconPath"
-    href: devpkey-deviceclass-iconpath.md
-  - name: "DEVPKEY_DeviceClass_LowerFilters"
-    href: devpkey-deviceclass-lowerfilters.md
-  - name: "DEVPKEY_DeviceClass_Name"
-    href: devpkey-deviceclass-name.md
-  - name: "DEVPKEY_DeviceClass_NoDisplayClass"
-    href: devpkey-deviceclass-nodisplayclass.md
-  - name: "DEVPKEY_DeviceClass_NoInstallClass"
-    href: devpkey-deviceclass-noinstallclass.md
-  - name: "DEVPKEY_DeviceClass_NoUseClass"
-    href: devpkey-deviceclass-nouseclass.md
-  - name: "DEVPKEY_DeviceClass_PropPageProvider"
-    href: devpkey-deviceclass-proppageprovider.md
-  - name: "DEVPKEY_DeviceClass_Security"
-    href: devpkey-deviceclass-security.md
-  - name: "DEVPKEY_DeviceClass_SecuritySDS"
-    href: devpkey-deviceclass-securitysds.md
-  - name: "DEVPKEY_DeviceClass_SilentInstall"
-    href: devpkey-deviceclass-silentinstall.md
-  - name: "DEVPKEY_DeviceClass_UpperFilters"
-    href: devpkey-deviceclass-upperfilters.md
-  - name: "DEVPKEY_DeviceDisplay_Category"
-    href: devpkey-devicedisplay-category.md
-  - name: "DEVPKEY_DeviceInterface_ClassGuid"
-    href: devpkey-deviceinterface-classguid.md
-  - name: "DEVPKEY_DeviceInterface_Enabled"
-    href: devpkey-deviceinterface-enabled.md
-  - name: "DEVPKEY_DeviceInterface_FriendlyName"
-    href: devpkey-deviceinterface-friendlyname.md
-  - name: "DEVPKEY_DeviceInterface_IsWindowsCameraEffectAvailable"
-    href: devpkey-deviceinterface-iswindowscameraeffectavailable.md
-  - name: "DEVPKEY_DeviceInterface_Restricted"
-    href: devpkey-deviceinterface-restricted.md
-  - name: "DEVPKEY_DeviceInterfaceClass_DefaultInterface"
-    href: devpkey-deviceinterface-defaultinterface.md
-  - name: "DEVPKEY_DrvPkg_BrandingIcon"
-    href: devpkey-drvpkg-brandingicon.md
-  - name: "DEVPKEY_DrvPkg_DetailedDescription"
-    href: devpkey-drvpkg-detaileddescription.md
-  - name: "DEVPKEY_DrvPkg_DocumentationLink"
-    href: devpkey-drvpkg-documentationlink.md
-  - name: "DEVPKEY_DrvPkg_Icon"
-    href: devpkey-drvpkg-icon.md
-  - name: "DEVPKEY_DrvPkg_Model"
-    href: devpkey-drvpkg-model.md
-  - name: "DEVPKEY_DrvPkg_VendorWebSite"
-    href: devpkey-drvpkg-vendorwebsite.md
-  - name: "DEVPKEY_NAME (Device Instance)"
-    href: devpkey-name--device-instance-.md
-  - name: "DEVPKEY_NAME (Device Interface)"
-    href: devpkey-name--device-interface-.md
-  - name: "DEVPKEY_NAME (Device Setup Class)"
-    href: devpkey-name--device-setup-class-.md
-  - name: "DEVPKEY_Numa_Proximity_Domain"
-    href: devpkey-numa-proximity-domain.md
+  - name: "Unified Device Property Model Properties"
+    items: 
+    - name: "DEVPKEY_Device_Address"
+      href: devpkey-device-address.md
+    - name: "DEVPKEY_Device_BaseContainerId"
+      href: devpkey-device-basecontainerid.md
+    - name: "DEVPKEY_Device_BusNumber"
+      href: devpkey-device-busnumber.md
+    - name: "DEVPKEY_Device_BusRelations"
+      href: devpkey-device-busrelations.md
+    - name: "DEVPKEY_Device_BusReportedDeviceDesc"
+      href: devpkey-device-busreporteddevicedesc.md
+    - name: "DEVPKEY_Device_BusTypeGuid"
+      href: devpkey-device-bustypeguid.md
+    - name: "DEVPKEY_Device_Capabilities"
+      href: devpkey-device-capabilities.md
+    - name: "DEVPKEY_Device_Characteristics"
+      href: devpkey-device-characteristics.md
+    - name: "DEVPKEY_Device_Children"
+      href: devpkey-device-children.md
+    - name: "DEVPKEY_Device_Class"
+      href: devpkey-device-class.md
+    - name: "DEVPKEY_Device_ClassGuid"
+      href: devpkey-device-classguid.md
+    - name: "DEVPKEY_Device_CompatibleIds"
+      href: devpkey-device-compatibleids.md
+    - name: "DEVPKEY_Device_ConfigFlags"
+      href: devpkey-device-configflags.md
+    - name: "DEVPKEY_Device_ContainerId"
+      href: devpkey-device-containerid.md
+    - name: "DEVPKEY_Device_DeviceDesc"
+      href: devpkey-device-devicedesc.md
+    - name: "DEVPKEY_Device_DevNodeStatus"
+      href: devpkey-device-devnodestatus.md
+    - name: "DEVPKEY_Device_DevType"
+      href: devpkey-device-devtype.md
+    - name: "DEVPKEY_Device_DHP_Rebalance_Policy"
+      href: devpkey-device-dhp-rebalance-policy.md
+    - name: "DEVPKEY_Device_DmaRemappingPolicy"
+      href: devpkey-device-dmaremappingpolicy.md
+    - name: "DEVPKEY_Device_Driver"
+      href: devpkey-device-driver.md
+    - name: "DEVPKEY_Device_DriverCoInstallers"
+      href: devpkey-device-drivercoinstallers.md
+    - name: "DEVPKEY_Device_DriverDate"
+      href: devpkey-device-driverdate.md
+    - name: "DEVPKEY_Device_DriverDesc"
+      href: devpkey-device-driverdesc.md
+    - name: "DEVPKEY_Device_DriverInfPath"
+      href: devpkey-device-driverinfpath.md
+    - name: "DEVPKEY_Device_DriverInfSection"
+      href: devpkey-device-driverinfsection.md
+    - name: "DEVPKEY_Device_DriverInfSectionExt"
+      href: devpkey-device-driverinfsectionext.md
+    - name: "DEVPKEY_Device_DriverLogoLevel"
+      href: devpkey-device-driverlogolevel.md
+    - name: "DEVPKEY_Device_DriverPropPageProvider"
+      href: devpkey-device-driverproppageprovider.md
+    - name: "DEVPKEY_Device_DriverProvider"
+      href: devpkey-device-driverprovider.md
+    - name: "DEVPKEY_Device_DriverRank"
+      href: devpkey-device-driverrank.md
+    - name: "DEVPKEY_Device_DriverVersion"
+      href: devpkey-device-driverversion.md
+    - name: "DEVPKEY_Device_EjectionRelations"
+      href: devpkey-device-ejectionrelations.md
+    - name: "DEVPKEY_Device_EnumeratorName"
+      href: devpkey-device-enumeratorname.md
+    - name: "DEVPKEY_Device_Exclusive"
+      href: devpkey-device-exclusive.md
+    - name: "DEVPKEY_Device_FirstInstallDate"
+      href: devpkey-device-firstinstalldate.md
+    - name: "DEVPKEY_Device_FriendlyName"
+      href: devpkey-device-friendlyname.md
+    - name: "DEVPKEY_Device_GenericDriverInstalled"
+      href: devpkey-device-genericdriverinstalled.md
+    - name: "DEVPKEY_Device_HardwareIds"
+      href: devpkey-device-hardwareids.md
+    - name: "DEVPKEY_Device_InstallDate"
+      href: devpkey-device-installdate.md
+    - name: "DEVPKEY_Device_InstallState"
+      href: devpkey-device-installstate.md
+    - name: "DEVPKEY_Device_InstanceId"
+      href: devpkey-device-instanceid.md
+    - name: "DEVPKEY_Device_Legacy"
+      href: devpkey-device-legacy.md
+    - name: "DEVPKEY_Device_LegacyBusType"
+      href: devpkey-device-legacybustype.md
+    - name: "DEVPKEY_Device_LocationInfo"
+      href: devpkey-device-locationinfo.md
+    - name: "DEVPKEY_Device_LocationPaths"
+      href: devpkey-device-locationpaths.md
+    - name: "DEVPKEY_Device_LowerFilters"
+      href: devpkey-device-lowerfilters.md
+    - name: "DEVPKEY_Device_Manufacturer"
+      href: devpkey-device-manufacturer.md
+    - name: "DEVPKEY_Device_MatchingDeviceId"
+      href: devpkey-device-matchingdeviceid.md
+    - name: "DEVPKEY_Device_ModelId"
+      href: devpkey-device-modelid.md
+    - name: "DEVPKEY_Device_NoConnectSound"
+      href: devpkey-device-noconnectsound.md
+    - name: "DEVPKEY_Device_Parent"
+      href: devpkey-device-parent.md
+    - name: "DEVPKEY_Device_PDOName"
+      href: devpkey-device-pdoname.md
+    - name: "DEVPKEY_Device_PhysicalDeviceLocation"
+      href: devpkey-device-physicaldevicelocation.md
+    - name: "DEVPKEY_Device_PowerData"
+      href: devpkey-device-powerdata.md
+    - name: "DEVPKEY_Device_PowerRelations"
+      href: devpkey-device-powerrelations.md
+    - name: "DEVPKEY_Device_ProblemCode"
+      href: devpkey-device-problemcode.md
+    - name: "DEVPKEY_Device_ProblemStatus"
+      href: devpkey-device-problemstatus.md
+    - name: "DEVPKEY_Device_RemovalPolicy"
+      href: devpkey-device-removalpolicy.md
+    - name: "DEVPKEY_Device_RemovalPolicyDefault"
+      href: devpkey-device-removalpolicydefault.md
+    - name: "DEVPKEY_Device_RemovalPolicyOverride"
+      href: devpkey-device-removalpolicyoverride.md
+    - name: "DEVPKEY_Device_RemovalRelations"
+      href: devpkey-device-removalrelations.md
+    - name: "DEVPKEY_Device_Reported"
+      href: devpkey-device-reported.md
+    - name: "DEVPKEY_Device_ResourcePickerExceptions"
+      href: devpkey-device-resourcepickerexceptions.md
+    - name: "DEVPKEY_Device_ResourcePickerTags"
+      href: devpkey-device-resourcepickertags.md
+    - name: "DEVPKEY_Device_SafeRemovalRequired"
+      href: devpkey-device-saferemovalrequired.md
+    - name: "DEVPKEY_Device_SafeRemovalRequiredOverride"
+      href: devpkey-device-saferemovalrequiredoverride.md
+    - name: "DEVPKEY_Device_Security"
+      href: devpkey-device-security.md
+    - name: "DEVPKEY_Device_SecuritySDS"
+      href: devpkey-device-securitysds.md
+    - name: "DEVPKEY_Device_Service"
+      href: devpkey-device-service.md
+    - name: "DEVPKEY_Device_SessionId"
+      href: devpkey-device-sessionid.md
+    - name: "DEVPKEY_Device_Siblings"
+      href: devpkey-device-siblings.md
+    - name: "DEVPKEY_Device_UINumber"
+      href: devpkey-device-uinumber.md
+    - name: "DEVPKEY_Device_UINumberDescFormat"
+      href: devpkey-device-uinumberdescformat.md
+    - name: "DEVPKEY_Device_UpperFilters"
+      href: devpkey-device-upperfilters.md
+    - name: "DEVPKEY_DeviceClass_Characteristics"
+      href: devpkey-deviceclass-characteristics.md
+    - name: "DEVPKEY_DeviceClass_ClassCoInstallers"
+      href: devpkey-deviceclass-classcoinstallers.md
+    - name: "DEVPKEY_DeviceClass_ClassInstaller"
+      href: devpkey-deviceclass-classinstaller.md
+    - name: "DEVPKEY_DeviceClass_ClassName"
+      href: devpkey-deviceclass-classname.md
+    - name: "DEVPKEY_DeviceClass_DefaultService"
+      href: devpkey-deviceclass-defaultservice.md
+    - name: "DEVPKEY_DeviceClass_DevType"
+      href: devpkey-deviceclass-devtype.md
+    - name: "DEVPKEY_DeviceClass_DHPRebalanceOptOut"
+      href: devpkey-deviceclass-dhprebalanceoptout.md
+    - name: "DEVPKEY_DeviceClass_Exclusive"
+      href: devpkey-deviceclass-exclusive.md
+    - name: "DEVPKEY_DeviceClass_Icon"
+      href: devpkey-deviceclass-icon.md
+    - name: "DEVPKEY_DeviceClass_IconPath"
+      href: devpkey-deviceclass-iconpath.md
+    - name: "DEVPKEY_DeviceClass_LowerFilters"
+      href: devpkey-deviceclass-lowerfilters.md
+    - name: "DEVPKEY_DeviceClass_Name"
+      href: devpkey-deviceclass-name.md
+    - name: "DEVPKEY_DeviceClass_NoDisplayClass"
+      href: devpkey-deviceclass-nodisplayclass.md
+    - name: "DEVPKEY_DeviceClass_NoInstallClass"
+      href: devpkey-deviceclass-noinstallclass.md
+    - name: "DEVPKEY_DeviceClass_NoUseClass"
+      href: devpkey-deviceclass-nouseclass.md
+    - name: "DEVPKEY_DeviceClass_PropPageProvider"
+      href: devpkey-deviceclass-proppageprovider.md
+    - name: "DEVPKEY_DeviceClass_Security"
+      href: devpkey-deviceclass-security.md
+    - name: "DEVPKEY_DeviceClass_SecuritySDS"
+      href: devpkey-deviceclass-securitysds.md
+    - name: "DEVPKEY_DeviceClass_SilentInstall"
+      href: devpkey-deviceclass-silentinstall.md
+    - name: "DEVPKEY_DeviceClass_UpperFilters"
+      href: devpkey-deviceclass-upperfilters.md
+    - name: "DEVPKEY_DeviceDisplay_Category"
+      href: devpkey-devicedisplay-category.md
+    - name: "DEVPKEY_DeviceInterface_ClassGuid"
+      href: devpkey-deviceinterface-classguid.md
+    - name: "DEVPKEY_DeviceInterface_Enabled"
+      href: devpkey-deviceinterface-enabled.md
+    - name: "DEVPKEY_DeviceInterface_FriendlyName"
+      href: devpkey-deviceinterface-friendlyname.md
+    - name: "DEVPKEY_DeviceInterface_IsWindowsCameraEffectAvailable"
+      href: devpkey-deviceinterface-iswindowscameraeffectavailable.md
+    - name: "DEVPKEY_DeviceInterface_Restricted"
+      href: devpkey-deviceinterface-restricted.md
+    - name: "DEVPKEY_DeviceInterfaceClass_DefaultInterface"
+      href: devpkey-deviceinterface-defaultinterface.md
+    - name: "DEVPKEY_DrvPkg_BrandingIcon"
+      href: devpkey-drvpkg-brandingicon.md
+    - name: "DEVPKEY_DrvPkg_DetailedDescription"
+      href: devpkey-drvpkg-detaileddescription.md
+    - name: "DEVPKEY_DrvPkg_DocumentationLink"
+      href: devpkey-drvpkg-documentationlink.md
+    - name: "DEVPKEY_DrvPkg_Icon"
+      href: devpkey-drvpkg-icon.md
+    - name: "DEVPKEY_DrvPkg_Model"
+      href: devpkey-drvpkg-model.md
+    - name: "DEVPKEY_DrvPkg_VendorWebSite"
+      href: devpkey-drvpkg-vendorwebsite.md
+    - name: "DEVPKEY_NAME (Device Instance)"
+      href: devpkey-name--device-instance-.md
+    - name: "DEVPKEY_NAME (Device Interface)"
+      href: devpkey-name--device-interface-.md
+    - name: "DEVPKEY_NAME (Device Setup Class)"
+      href: devpkey-name--device-setup-class-.md
+    - name: "DEVPKEY_Numa_Proximity_Domain"
+      href: devpkey-numa-proximity-domain.md
   - name: "DEVPRIVATE_DES"
     href: devprivate-des.md
   - name: "DEVPRIVATE_RANGE"
@@ -1388,386 +1530,276 @@
     href: devproperty.md
   - name: "DEVPROPKEY"
     href: devpropkey.md
-  - name: "DIF_ADDPROPERTYPAGE_ADVANCED"
-    href: dif-addpropertypage-advanced.md
-  - name: "DIF_ADDPROPERTYPAGE_BASIC"
-    href: dif-addpropertypage-basic.md
-  - name: "DIF_ALLOW_INSTALL"
-    href: dif-allow-install.md
-  - name: "DIF_ASSIGNRESOURCES"
-    href: dif-assignresources.md
-  - name: "DIF_CALCDISKSPACE"
-    href: dif-calcdiskspace.md
-  - name: "DIF_DESTROYPRIVATEDATA"
-    href: dif-destroyprivatedata.md
-  - name: "DIF_DESTROYWIZARDDATA"
-    href: dif-destroywizarddata.md
-  - name: "DIF_DETECT"
-    href: dif-detect.md
-  - name: "DIF_DETECTCANCEL"
-    href: dif-detectcancel.md
-  - name: "DIF_DETECTVERIFY"
-    href: dif-detectverify.md
-  - name: "DIF_ENABLECLASS"
-    href: dif-enableclass.md
-  - name: "DIF_FINISHINSTALL_ACTION"
-    href: dif-finishinstall-action.md
-  - name: "DIF_FIRSTTIMESETUP"
-    href: dif-firsttimesetup.md
-  - name: "DIF_FOUNDDEVICE"
-    href: dif-founddevice.md
-  - name: "DIF_INSTALLCLASSDRIVERS"
-    href: dif-installclassdrivers.md
-  - name: "DIF_INSTALLDEVICE"
-    href: dif-installdevice.md
-  - name: "DIF_INSTALLDEVICEFILES"
-    href: dif-installdevicefiles.md
-  - name: "DIF_INSTALLINTERFACES"
-    href: dif-installinterfaces.md
-  - name: "DIF_INSTALLWIZARD"
-    href: dif-installwizard.md
-  - name: "DIF_MOVEDEVICE"
-    href: dif-movedevice.md
-  - name: "DIF_NEWDEVICEWIZARD_FINISHINSTALL"
-    href: dif-newdevicewizard-finishinstall.md
-  - name: "DIF_NEWDEVICEWIZARD_POSTANALYZE"
-    href: dif-newdevicewizard-postanalyze.md
-  - name: "DIF_NEWDEVICEWIZARD_PREANALYZE"
-    href: dif-newdevicewizard-preanalyze.md
-  - name: "DIF_NEWDEVICEWIZARD_PRESELECT"
-    href: dif-newdevicewizard-preselect.md
-  - name: "DIF_NEWDEVICEWIZARD_SELECT"
-    href: dif-newdevicewizard-select.md
-  - name: "DIF_POWERMESSAGEWAKE"
-    href: dif-powermessagewake.md
-  - name: "DIF_PROPERTIES"
-    href: dif-properties.md
   - name: "DIF_PROPERTYCHANGE"
     href: dif-propertychange.md
-  - name: "DIF_REGISTER_COINSTALLERS"
-    href: dif-register-coinstallers.md
-  - name: "DIF_REGISTERDEVICE"
-    href: dif-registerdevice.md
   - name: "DIF_REMOVE"
     href: dif-remove.md
-  - name: "DIF_SELECTBESTCOMPATDRV"
-    href: dif-selectbestcompatdrv.md
-  - name: "DIF_SELECTCLASSDRIVERS"
-    href: dif-selectclassdrivers.md
-  - name: "DIF_SELECTDEVICE"
-    href: dif-selectdevice.md
-  - name: "DIF_TROUBLESHOOTER"
-    href: dif-troubleshooter.md
-  - name: "DIF_UNREMOVE"
-    href: dif-unremove.md
-  - name: "DIF_UPDATEDRIVER_UI"
-    href: dif-updatedriver-ui.md
-  - name: "DIF_VALIDATECLASSDRIVERS"
-    href: dif-validateclassdrivers.md
-  - name: "DIF_VALIDATEDRIVER"
-    href: dif-validatedriver.md
-  - name: "DiskClassGuid"
-    href: diskclassguid.md
-  - name: "Disks Section of a TxtSetup.oem File"
-    href: disks-section-of-a-txtsetup-oem-file.md
-  - name: "dpinst XML Element"
-    href: dpinst-xml-element.md
-  - name: "dpinstTitle XML Element"
-    href: dpinsttitle-xml-element.md
-  - name: "enableNotListedLanguages XML Element"
-    href: enablenotlistedlanguages-xml-element.md
-  - name: "eula XML Element"
-    href: eula-xml-element.md
-  - name: "eulaHeaderTitle XML Element"
-    href: eulaheadertitle-xml-element.md
-  - name: "eulaNoButton XML Element"
-    href: eulanobutton-xml-element.md
-  - name: "eulaYesButton XML Element"
-    href: eulayesbutton-xml-element.md
-  - name: "Files.HwComponent.ID Section of a TxtSetup.oem File"
-    href: files-hwcomponent-id-section-of-a-txtsetup-oem-file.md
-  - name: "finishText XML Element"
-    href: finishtext-xml-element.md
-  - name: "finishTitle XML Element"
-    href: finishtitle-xml-element.md
-  - name: "FloppyClassGuid"
-    href: floppyclassguid.md
-  - name: "forceIfDriverIsNotBetter XML Element"
-    href: forceifdriverisnotbetter-xml-element.md
-  - name: "group XML Element"
-    href: group-xml-element.md
-  - name: "GUID_61883_CLASS"
-    href: guid-61883-class.md
-  - name: "GUID_AVC_CLASS"
-    href: guid-avc-class.md
-  - name: "GUID_BTHPORT_DEVICE_INTERFACE"
-    href: guid-bthport-device-interface.md
-  - name: "GUID_CLASS_COMPORT"
-    href: guid-class-comport.md
-  - name: "GUID_CLASS_INPUT"
-    href: guid-class-input.md
-  - name: "GUID_CLASS_KEYBOARD"
-    href: guid-class-keyboard.md
-  - name: "GUID_CLASS_MODEM"
-    href: guid-class-modem.md
-  - name: "GUID_CLASS_MOUSE"
-    href: guid-class-mouse.md
-  - name: "GUID_CLASS_USB_DEVICE"
-    href: guid-class-usb-device.md
-  - name: "GUID_CLASS_USB_HOST_CONTROLLER"
-    href: guid-class-usb-host-controller.md
-  - name: "GUID_CLASS_USBHUB"
-    href: guid-class-usbhub.md
-  - name: "GUID_DEVICE_APPLICATIONLAUNCH_BUTTON"
-    href: guid-device-applicationlaunch-button.md
-  - name: "GUID_DEVICE_BATTERY"
-    href: guid-device-battery.md
-  - name: "GUID_DEVICE_LID"
-    href: guid-device-lid.md
-  - name: "GUID_DEVICE_MEMORY"
-    href: guid-device-memory.md
-  - name: "GUID_DEVICE_MESSAGE_INDICATOR"
-    href: guid-device-message-indicator.md
-  - name: "GUID_DEVICE_PROCESSOR"
-    href: guid-device-processor.md
-  - name: "GUID_DEVICE_SYS_BUTTON"
-    href: guid-device-sys-button.md
-  - name: "GUID_DEVICE_THERMAL_ZONE"
-    href: guid-device-thermal-zone.md
-  - name: "GUID_DEVINTERFACE_BRIGHTNESS"
-    href: guid-devinterface-brightness.md
-  - name: "GUID_DEVINTERFACE_CDCHANGER "
-    href: guid-devinterface-cdchanger.md
-  - name: "GUID_DEVINTERFACE_CDROM"
-    href: guid-devinterface-cdrom.md
-  - name: "GUID_DEVINTERFACE_COMPORT"
-    href: guid-devinterface-comport.md
-  - name: "GUID_DEVINTERFACE_DISK"
-    href: guid-devinterface-disk.md
-  - name: "GUID_DEVINTERFACE_DISPLAY_ADAPTER"
-    href: guid-devinterface-display-adapter.md
-  - name: "GUID_DEVINTERFACE_FLOPPY"
-    href: guid-devinterface-floppy.md
-  - name: "GUID_DEVINTERFACE_HID"
-    href: guid-devinterface-hid.md
-  - name: "GUID_DEVINTERFACE_I2C"
-    href: guid-devinterface-i2c.md
-  - name: "GUID_DEVINTERFACE_IMAGE"
-    href: guid-devinterface-image.md
-  - name: "GUID_DEVINTERFACE_KEYBOARD"
-    href: guid-devinterface-keyboard.md
-  - name: "GUID_DEVINTERFACE_MEDIUMCHANGER"
-    href: guid-devinterface-mediumchanger.md
-  - name: "GUID_DEVINTERFACE_MODEM"
-    href: guid-devinterface-modem.md
-  - name: "GUID_DEVINTERFACE_MONITOR"
-    href: guid-devinterface-monitor.md
-  - name: "GUID_DEVINTERFACE_MOUSE"
-    href: guid-devinterface-mouse.md
-  - name: "GUID_DEVINTERFACE_NET"
-    href: guid-devinterface-net.md
-  - name: "GUID_DEVINTERFACE_OPM"
-    href: guid-devinterface-opm.md
-  - name: "GUID_DEVINTERFACE_PARALLEL"
-    href: guid-devinterface-parallel.md
-  - name: "GUID_DEVINTERFACE_PARCLASS"
-    href: guid-devinterface-parclass.md
-  - name: "GUID_DEVINTERFACE_PARTITION"
-    href: guid-devinterface-partition.md
-  - name: "GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR"
-    href: guid-devinterface-serenum-bus-enumerator.md
-  - name: "GUID_DEVINTERFACE_SIDESHOW"
-    href: guid-devinterface-sideshow.md
-  - name: "GUID_DEVINTERFACE_STORAGEPORT"
-    href: guid-devinterface-storageport.md
-  - name: "GUID_DEVINTERFACE_TAPE "
-    href: guid-devinterface-tape.md
-  - name: "GUID_DEVINTERFACE_USB_DEVICE"
-    href: guid-devinterface-usb-device.md
-  - name: "GUID_DEVINTERFACE_USB_HOST_CONTROLLER"
-    href: guid-devinterface-usb-host-controller.md
-  - name: "GUID_DEVINTERFACE_USB_HUB"
-    href: guid-devinterface-usb-hub.md
-  - name: "GUID_DEVINTERFACE_VIDEO_OUTPUT_ARRIVAL"
-    href: guid-devinterface-video-output-arrival.md
-  - name: "GUID_DEVINTERFACE_VOLUME"
-    href: guid-devinterface-volume.md
-  - name: "GUID_DEVINTERFACE_WPD"
-    href: guid-devinterface-wpd.md
-  - name: "GUID_DEVINTERFACE_WPD_PRIVATE"
-    href: guid-devinterface-wpd-private.md
-  - name: "GUID_DEVINTERFACE_WRITEONCEDISK"
-    href: guid-devinterface-writeoncedisk.md
-  - name: "GUID_DISPLAY_ADAPTER_INTERFACE"
-    href: guid-display-adapter-interface.md
-  - name: "GUID_DISPLAY_DEVICE_ARRIVAL"
-    href: guid-display-device-arrival.md
-  - name: "GUID_IO_VOLUME_DEVICE_INTERFACE"
-    href: guid-io-volume-device-interface.md
-  - name: "GUID_PARALLEL_DEVICE"
-    href: guid-parallel-device.md
-  - name: "GUID_PARCLASS_DEVICE"
-    href: guid-parclass-device.md
-  - name: "GUID_SERENUM_BUS_ENUMERATOR"
-    href: guid-serenum-bus-enumerator.md
-  - name: "GUID_VIRTUAL_AVC_CLASS"
-    href: guid-virtual-avc-class.md
-  - name: "HardwareIds.scsi.ID Section of a TxtSetup.oem File"
-    href: hardwareids-scsi-id-section-of-a-txtsetup-oem-file.md
-  - name: "headerPath XML Element"
-    href: headerpath-xml-element.md
-  - name: "HwComponent Section of a TxtSetup.oem File"
-    href: hwcomponent-section-of-a-txtsetup-oem-file.md
-  - name: "icon XML Element"
-    href: icon-xml-element.md
-  - name: "installAllOrNone XML Element"
-    href: installallornone-xml-element.md
-  - name: "installHeaderTitle XML Element"
-    href: installheadertitle-xml-element.md
+  - name: "Device Interface Classes"
+    items: 
+    - name: "BUS1394_CLASS_GUID"
+      href: bus1394-class-guid.md
+    - name: "CdChangerClassGuid"
+      href: cdchangerclassguid.md
+    - name: "CdRomClassGuid"
+      href: cdromclassguid.md
+    - name: "DiskClassGuid"
+      href: diskclassguid.md
+    - name: "FloppyClassGuid"
+      href: floppyclassguid.md
+    - name: "GUID_61883_CLASS"
+      href: guid-61883-class.md
+    - name: "GUID_AVC_CLASS"
+      href: guid-avc-class.md
+    - name: "GUID_BTHPORT_DEVICE_INTERFACE"
+      href: guid-bthport-device-interface.md
+    - name: "GUID_CLASS_COMPORT"
+      href: guid-class-comport.md
+    - name: "GUID_CLASS_INPUT"
+      href: guid-class-input.md
+    - name: "GUID_CLASS_KEYBOARD"
+      href: guid-class-keyboard.md
+    - name: "GUID_CLASS_MODEM"
+      href: guid-class-modem.md
+    - name: "GUID_CLASS_MOUSE"
+      href: guid-class-mouse.md
+    - name: "GUID_CLASS_USB_DEVICE"
+      href: guid-class-usb-device.md
+    - name: "GUID_CLASS_USB_HOST_CONTROLLER"
+      href: guid-class-usb-host-controller.md
+    - name: "GUID_CLASS_USBHUB"
+      href: guid-class-usbhub.md
+    - name: "GUID_DEVICE_APPLICATIONLAUNCH_BUTTON"
+      href: guid-device-applicationlaunch-button.md
+    - name: "GUID_DEVICE_BATTERY"
+      href: guid-device-battery.md
+    - name: "GUID_DEVICE_LID"
+      href: guid-device-lid.md
+    - name: "GUID_DEVICE_MEMORY"
+      href: guid-device-memory.md
+    - name: "GUID_DEVICE_MESSAGE_INDICATOR"
+      href: guid-device-message-indicator.md
+    - name: "GUID_DEVICE_PROCESSOR"
+      href: guid-device-processor.md
+    - name: "GUID_DEVICE_SYS_BUTTON"
+      href: guid-device-sys-button.md
+    - name: "GUID_DEVICE_THERMAL_ZONE"
+      href: guid-device-thermal-zone.md
+    - name: "GUID_DEVINTERFACE_BRIGHTNESS"
+      href: guid-devinterface-brightness.md
+    - name: "GUID_DEVINTERFACE_CDCHANGER"
+      href: guid-devinterface-cdchanger.md
+    - name: "GUID_DEVINTERFACE_CDROM"
+      href: guid-devinterface-cdrom.md
+    - name: "GUID_DEVINTERFACE_COMPORT"
+      href: guid-devinterface-comport.md
+    - name: "GUID_DEVINTERFACE_DISK"
+      href: guid-devinterface-disk.md
+    - name: "GUID_DEVINTERFACE_DISPLAY_ADAPTER"
+      href: guid-devinterface-display-adapter.md
+    - name: "GUID_DEVINTERFACE_FLOPPY"
+      href: guid-devinterface-floppy.md
+    - name: "GUID_DEVINTERFACE_HID"
+      href: guid-devinterface-hid.md
+    - name: "GUID_DEVINTERFACE_I2C"
+      href: guid-devinterface-i2c.md
+    - name: "GUID_DEVINTERFACE_IMAGE"
+      href: guid-devinterface-image.md
+    - name: "GUID_DEVINTERFACE_KEYBOARD"
+      href: guid-devinterface-keyboard.md
+    - name: "GUID_DEVINTERFACE_MEDIUMCHANGER"
+      href: guid-devinterface-mediumchanger.md
+    - name: "GUID_DEVINTERFACE_MODEM"
+      href: guid-devinterface-modem.md
+    - name: "GUID_DEVINTERFACE_MONITOR"
+      href: guid-devinterface-monitor.md
+    - name: "GUID_DEVINTERFACE_MOUSE"
+      href: guid-devinterface-mouse.md
+    - name: "GUID_DEVINTERFACE_NET"
+      href: guid-devinterface-net.md
+    - name: "GUID_DEVINTERFACE_OPM"
+      href: guid-devinterface-opm.md
+    - name: "GUID_DEVINTERFACE_PARALLEL"
+      href: guid-devinterface-parallel.md
+    - name: "GUID_DEVINTERFACE_PARCLASS"
+      href: guid-devinterface-parclass.md
+    - name: "GUID_DEVINTERFACE_PARTITION"
+      href: guid-devinterface-partition.md
+    - name: "GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR"
+      href: guid-devinterface-serenum-bus-enumerator.md
+    - name: "GUID_DEVINTERFACE_SIDESHOW"
+      href: guid-devinterface-sideshow.md
+    - name: "GUID_DEVINTERFACE_STORAGEPORT"
+      href: guid-devinterface-storageport.md
+    - name: "GUID_DEVINTERFACE_TAPE"
+      href: guid-devinterface-tape.md
+    - name: "GUID_DEVINTERFACE_USB_DEVICE"
+      href: guid-devinterface-usb-device.md
+    - name: "GUID_DEVINTERFACE_USB_HOST_CONTROLLER"
+      href: guid-devinterface-usb-host-controller.md
+    - name: "GUID_DEVINTERFACE_USB_HUB"
+      href: guid-devinterface-usb-hub.md
+    - name: "GUID_DEVINTERFACE_VIDEO_OUTPUT_ARRIVAL"
+      href: guid-devinterface-video-output-arrival.md
+    - name: "GUID_DEVINTERFACE_VOLUME"
+      href: guid-devinterface-volume.md
+    - name: "GUID_DEVINTERFACE_WPD"
+      href: guid-devinterface-wpd.md
+    - name: "GUID_DEVINTERFACE_WPD_PRIVATE"
+      href: guid-devinterface-wpd-private.md
+    - name: "GUID_DEVINTERFACE_WRITEONCEDISK"
+      href: guid-devinterface-writeoncedisk.md
+    - name: "GUID_DISPLAY_ADAPTER_INTERFACE"
+      href: guid-display-adapter-interface.md
+    - name: "GUID_DISPLAY_DEVICE_ARRIVAL"
+      href: guid-display-device-arrival.md
+    - name: "GUID_IO_VOLUME_DEVICE_INTERFACE"
+      href: guid-io-volume-device-interface.md
+    - name: "GUID_PARALLEL_DEVICE"
+      href: guid-parallel-device.md
+    - name: "GUID_PARCLASS_DEVICE"
+      href: guid-parclass-device.md
+    - name: "GUID_SERENUM_BUS_ENUMERATOR"
+      href: guid-serenum-bus-enumerator.md
+    - name: "GUID_VIRTUAL_AVC_CLASS"
+      href: guid-virtual-avc-class.md
+    - name: "KSCATEGORY_ACOUSTIC_ECHO_CANCEL"
+      href: kscategory-acoustic-echo-cancel.md
+    - name: "KSCATEGORY_AUDIO"
+      href: kscategory-audio.md
+    - name: "KSCATEGORY_AUDIO_DEVICE"
+      href: kscategory-audio-device.md
+    - name: "KSCATEGORY_AUDIO_GFX"
+      href: kscategory-audio-gfx.md
+    - name: "KSCATEGORY_AUDIO_SPLITTER"
+      href: kscategory-audio-splitter.md
+    - name: "KSCATEGORY_BDA_IP_SINK"
+      href: kscategory-bda-ip-sink.md
+    - name: "KSCATEGORY_BDA_NETWORK_EPG"
+      href: kscategory-bda-network-epg.md
+    - name: "KSCATEGORY_BDA_NETWORK_PROVIDER"
+      href: kscategory-bda-network-provider.md
+    - name: "KSCATEGORY_BDA_NETWORK_TUNER"
+      href: kscategory-bda-network-tuner.md
+    - name: "KSCATEGORY_BDA_RECEIVER_COMPONENT"
+      href: kscategory-bda-receiver-component.md
+    - name: "KSCATEGORY_BDA_TRANSPORT_INFORMATION"
+      href: kscategory-bda-transport-information.md
+    - name: "KSCATEGORY_BRIDGE"
+      href: kscategory-bridge.md
+    - name: "KSCATEGORY_CAPTURE"
+      href: kscategory-capture.md
+    - name: "KSCATEGORY_CLOCK"
+      href: kscategory-clock.md
+    - name: "KSCATEGORY_COMMUNICATIONSTRANSFORM"
+      href: kscategory-communicationstransform.md
+    - name: "KSCATEGORY_CROSSBAR"
+      href: kscategory-crossbar.md
+    - name: "KSCATEGORY_DATACOMPRESSOR"
+      href: kscategory-datacompressor.md
+    - name: "KSCATEGORY_DATADECOMPRESSOR"
+      href: kscategory-datadecompressor.md
+    - name: "KSCATEGORY_DATATRANSFORM"
+      href: kscategory-datatransform.md
+    - name: "KSCATEGORY_DRM_DESCRAMBLE"
+      href: kscategory-drm-descramble.md
+    - name: "KSCATEGORY_ENCODER"
+      href: kscategory-encoder.md
+    - name: "KSCATEGORY_ESCALANTE_PLATFORM_DRIVER"
+      href: kscategory-escalante-platform-driver.md
+    - name: "KSCATEGORY_FILESYSTEM"
+      href: kscategory-filesystem.md
+    - name: "KSCATEGORY_INTERFACETRANSFORM"
+      href: kscategory-interfacetransform.md
+    - name: "KSCATEGORY_MEDIUMTRANSFORM"
+      href: kscategory-mediumtransform.md
+    - name: "KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR"
+      href: kscategory-microphone-array-processor.md
+    - name: "KSCATEGORY_MIXER"
+      href: kscategory-mixer.md
+    - name: "KSCATEGORY_MULTIPLEXER"
+      href: kscategory-multiplexer.md
+    - name: "KSCATEGORY_NETWORK"
+      href: kscategory-network.md
+    - name: "KSCATEGORY_NETWORK_CAMERA"
+      href: kscategory-network-camera.md
+    - name: "KSCATEGORY_PREFERRED_MIDIOUT_DEVICE"
+      href: kscategory-preferred-midiout-device.md
+    - name: "KSCATEGORY_PREFERRED_WAVEIN_DEVICE"
+      href: kscategory-preferred-wavein-device.md
+    - name: "KSCATEGORY_PREFERRED_WAVEOUT_DEVICE"
+      href: kscategory-preferred-waveout-device.md
+    - name: "KSCATEGORY_PROXY"
+      href: kscategory-proxy.md
+    - name: "KSCATEGORY_QUALITY"
+      href: kscategory-quality.md
+    - name: "KSCATEGORY_REALTIME"
+      href: kscategory-realtime.md
+    - name: "KSCATEGORY_RENDER"
+      href: kscategory-render.md
+    - name: "KSCATEGORY_SENSOR_CAMERA"
+      href: kscategory-sensor-camera.md
+    - name: "KSCATEGORY_SPLITTER"
+      href: kscategory-splitter.md
+    - name: "KSCATEGORY_SYNTHESIZER"
+      href: kscategory-synthesizer.md
+    - name: "KSCATEGORY_SYSAUDIO"
+      href: kscategory-sysaudio.md
+    - name: "KSCATEGORY_TEXT"
+      href: kscategory-text.md
+    - name: "KSCATEGORY_TOPOLOGY"
+      href: kscategory-topology.md
+    - name: "KSCATEGORY_TVAUDIO"
+      href: kscategory-tvaudio.md
+    - name: "KSCATEGORY_TVTUNER"
+      href: kscategory-tvtuner.md
+    - name: "KSCATEGORY_VBICODEC"
+      href: kscategory-vbicodec.md
+    - name: "KSCATEGORY_VIDEO"
+      href: kscategory-video.md
+    - name: "KSCATEGORY_VIDEO_CAMERA"
+      href: kscategory-video-camera.md
+    - name: "KSCATEGORY_VIRTUAL"
+      href: kscategory-virtual.md
+    - name: "KSCATEGORY_VPMUX"
+      href: kscategory-vpmux.md
+    - name: "KSCATEGORY_WDMAUD"
+      href: kscategory-wdmaud.md
+    - name: "KSMFT_CATEGORY_AUDIO_DECODER"
+      href: ksmft-category-audio-decoder.md
+    - name: "KSMFT_CATEGORY_AUDIO_EFFECT"
+      href: ksmft-category-audio-effect.md
+    - name: "KSMFT_CATEGORY_AUDIO_ENCODER"
+      href: ksmft-category-audio-encoder.md
+    - name: "KSMFT_CATEGORY_DEMULTIPLEXER"
+      href: ksmft-category-demultiplexer.md
+    - name: "KSMFT_CATEGORY_MULTIPLEXER"
+      href: ksmft-category-multiplexer.md
+    - name: "KSMFT_CATEGORY_OTHER"
+      href: ksmft-category-other.md
+    - name: "KSMFT_CATEGORY_VIDEO_DECODER"
+      href: ksmft-category-video-decoder.md
+    - name: "KSMFT_CATEGORY_VIDEO_EFFECT"
+      href: ksmft-category-video-effect.md
+    - name: "KSMFT_CATEGORY_VIDEO_ENCODER"
+      href: ksmft-category-video-encoder.md
+    - name: "KSMFT_CATEGORY_VIDEO_PROCESSOR"
+      href: ksmft-category-video-processor.md
+    - name: "MediumChangerClassGuid"
+      href: mediumchangerclassguid.md
+    - name: "MOUNTDEV_MOUNTED_DEVICE_GUID"
+      href: mountdev-mounted-device-guid.md
+    - name: "PartitionClassGuid"
+      href: partitionclassguid.md
+    - name: "StoragePortClassGuid"
+      href: storageportclassguid.md
+    - name: "TapeClassGuid"
+      href: tapeclassguid.md
+    - name: "VolumeClassGuid"
+      href: volumeclassguid.md
+    - name: "WriteOnceDiskClassGuid"
+      href: writeoncediskclassguid.md
   - name: "InstallSelectedDriver"
     href: installselecteddriver.md
-  - name: "KSCATEGORY_ACOUSTIC_ECHO_CANCEL "
-    href: kscategory-acoustic-echo-cancel.md
-  - name: "KSCATEGORY_AUDIO"
-    href: kscategory-audio.md
-  - name: "KSCATEGORY_AUDIO_DEVICE"
-    href: kscategory-audio-device.md
-  - name: "KSCATEGORY_AUDIO_GFX"
-    href: kscategory-audio-gfx.md
-  - name: "KSCATEGORY_AUDIO_SPLITTER"
-    href: kscategory-audio-splitter.md
-  - name: "KSCATEGORY_BDA_IP_SINK"
-    href: kscategory-bda-ip-sink.md
-  - name: "KSCATEGORY_BDA_NETWORK_EPG"
-    href: kscategory-bda-network-epg.md
-  - name: "KSCATEGORY_BDA_NETWORK_PROVIDER"
-    href: kscategory-bda-network-provider.md
-  - name: "KSCATEGORY_BDA_NETWORK_TUNER"
-    href: kscategory-bda-network-tuner.md
-  - name: "KSCATEGORY_BDA_RECEIVER_COMPONENT"
-    href: kscategory-bda-receiver-component.md
-  - name: "KSCATEGORY_BDA_TRANSPORT_INFORMATION"
-    href: kscategory-bda-transport-information.md
-  - name: "KSCATEGORY_BRIDGE "
-    href: kscategory-bridge.md
-  - name: "KSCATEGORY_CAPTURE"
-    href: kscategory-capture.md
-  - name: "KSCATEGORY_CLOCK"
-    href: kscategory-clock.md
-  - name: "KSCATEGORY_COMMUNICATIONSTRANSFORM "
-    href: kscategory-communicationstransform.md
-  - name: "KSCATEGORY_CROSSBAR"
-    href: kscategory-crossbar.md
-  - name: "KSCATEGORY_DATACOMPRESSOR"
-    href: kscategory-datacompressor.md
-  - name: "KSCATEGORY_DATADECOMPRESSOR"
-    href: kscategory-datadecompressor.md
-  - name: "KSCATEGORY_DATATRANSFORM"
-    href: kscategory-datatransform.md
-  - name: "KSCATEGORY_DRM_DESCRAMBLE "
-    href: kscategory-drm-descramble.md
-  - name: "KSCATEGORY_ENCODER "
-    href: kscategory-encoder.md
-  - name: "KSCATEGORY_ESCALANTE_PLATFORM_DRIVER"
-    href: kscategory-escalante-platform-driver.md
-  - name: "KSCATEGORY_FILESYSTEM "
-    href: kscategory-filesystem.md
-  - name: "KSCATEGORY_INTERFACETRANSFORM"
-    href: kscategory-interfacetransform.md
-  - name: "KSCATEGORY_MEDIUMTRANSFORM "
-    href: kscategory-mediumtransform.md
-  - name: "KSCATEGORY_MICROPHONE_ARRAY_PROCESSOR"
-    href: kscategory-microphone-array-processor.md
-  - name: "KSCATEGORY_MIXER"
-    href: kscategory-mixer.md
-  - name: "KSCATEGORY_MULTIPLEXER "
-    href: kscategory-multiplexer.md
-  - name: "KSCATEGORY_NETWORK"
-    href: kscategory-network.md
-  - name: "KSCATEGORY_NETWORK_CAMERA"
-    href: kscategory-network-camera.md
-  - name: "KSCATEGORY_PREFERRED_MIDIOUT_DEVICE"
-    href: kscategory-preferred-midiout-device.md
-  - name: "KSCATEGORY_PREFERRED_WAVEIN_DEVICE"
-    href: kscategory-preferred-wavein-device.md
-  - name: "KSCATEGORY_PREFERRED_WAVEOUT_DEVICE"
-    href: kscategory-preferred-waveout-device.md
-  - name: "KSCATEGORY_PROXY"
-    href: kscategory-proxy.md
-  - name: "KSCATEGORY_QUALITY"
-    href: kscategory-quality.md
-  - name: "KSCATEGORY_REALTIME "
-    href: kscategory-realtime.md
-  - name: "KSCATEGORY_RENDER"
-    href: kscategory-render.md
-  - name: "KSCATEGORY_SENSOR_CAMERA"
-    href: kscategory-sensor-camera.md
-  - name: "KSCATEGORY_SPLITTER"
-    href: kscategory-splitter.md
-  - name: "KSCATEGORY_SYNTHESIZER "
-    href: kscategory-synthesizer.md
-  - name: "KSCATEGORY_SYSAUDIO"
-    href: kscategory-sysaudio.md
-  - name: "KSCATEGORY_TEXT"
-    href: kscategory-text.md
-  - name: "KSCATEGORY_TOPOLOGY"
-    href: kscategory-topology.md
-  - name: "KSCATEGORY_TVAUDIO"
-    href: kscategory-tvaudio.md
-  - name: "KSCATEGORY_TVTUNER"
-    href: kscategory-tvtuner.md
-  - name: "KSCATEGORY_VBICODEC"
-    href: kscategory-vbicodec.md
-  - name: "KSCATEGORY_VIDEO"
-    href: kscategory-video.md
-  - name: "KSCATEGORY_VIDEO_CAMERA"
-    href: kscategory-video-camera.md
-  - name: "KSCATEGORY_VIRTUAL"
-    href: kscategory-virtual.md
-  - name: "KSCATEGORY_VPMUX"
-    href: kscategory-vpmux.md
-  - name: "KSCATEGORY_WDMAUD"
-    href: kscategory-wdmaud.md
-  - name: "KSMFT_CATEGORY_AUDIO_DECODER"
-    href: ksmft-category-audio-decoder.md
-  - name: "KSMFT_CATEGORY_AUDIO_EFFECT"
-    href: ksmft-category-audio-effect.md
-  - name: "KSMFT_CATEGORY_AUDIO_ENCODER"
-    href: ksmft-category-audio-encoder.md
-  - name: "KSMFT_CATEGORY_DEMULTIPLEXER"
-    href: ksmft-category-demultiplexer.md
-  - name: "KSMFT_CATEGORY_MULTIPLEXER"
-    href: ksmft-category-multiplexer.md
-  - name: "KSMFT_CATEGORY_OTHER"
-    href: ksmft-category-other.md
-  - name: "KSMFT_CATEGORY_VIDEO_DECODER"
-    href: ksmft-category-video-decoder.md
-  - name: "KSMFT_CATEGORY_VIDEO_EFFECT"
-    href: ksmft-category-video-effect.md
-  - name: "KSMFT_CATEGORY_VIDEO_ENCODER"
-    href: ksmft-category-video-encoder.md
-  - name: "KSMFT_CATEGORY_VIDEO_PROCESSOR"
-    href: ksmft-category-video-processor.md
-  - name: "language XML Element"
-    href: language-xml-element.md
-  - name: "legacyMode XML Element"
-    href: legacymode-xml-element.md
-  - name: "MediumChangerClassGuid "
-    href: mediumchangerclassguid.md
-  - name: "MOUNTDEV_MOUNTED_DEVICE_GUID"
-    href: mountdev-mounted-device-guid.md
-  - name: "package XML Element"
-    href: package-xml-element.md
-  - name: "PartitionClassGuid "
-    href: partitionclassguid.md
-  - name: "promptIfDriverIsNotBetter XML Element"
-    href: promptifdriverisnotbetter-xml-element.md
-  - name: "quietInstall XML Element"
-    href: quietinstall-xml-element.md
-  - name: "scanHardware XML Element"
-    href: scanhardware-xml-element.md
-  - name: "search XML Element"
-    href: search-xml-element.md
   - name: "SetupDiGetWizardPage"
     href: setupdigetwizardpage.md
   - name: "SetupDiMoveDuplicateDevice"
@@ -1778,27 +1810,7 @@
     href: sp-installwizard-data.md
   - name: "SP_MOVEDEV_PARAMS"
     href: sp-movedev-params.md
-  - name: "StoragePortClassGuid "
-    href: storageportclassguid.md
-  - name: "subDirectory XML Element"
-    href: subdirectory-xml-element.md
-  - name: "suppressAddRemovePrograms XML Element"
-    href: suppressaddremoveprograms-xml-element.md
-  - name: "suppressWizard XML Element"
-    href: suppresswizard-xml-element.md
-  - name: "Class and ClassGuid entries for INF Version Section"
+  - name: "System-Defined Device Setup Classes Available to Vendors"
     href: system-defined-device-setup-classes-available-to-vendors.md
   - name: "System-Defined Device Setup Classes Reserved for System Use"
     href: system-defined-device-setup-classes-reserved-for-system-use.md
-  - name: "TapeClassGuid "
-    href: tapeclassguid.md
-  - name: "VolumeClassGuid "
-    href: volumeclassguid.md
-  - name: "watermarkPath XML Element"
-    href: watermarkpath-xml-element.md
-  - name: "welcomeIntro XML Element"
-    href: welcomeintro-xml-element.md
-  - name: "welcomeTitle XML Element"
-    href: welcometitle-xml-element.md
-  - name: "WriteOnceDiskClassGuid "
-    href: writeoncediskclassguid.md
