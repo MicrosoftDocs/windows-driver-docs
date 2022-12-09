@@ -23,7 +23,9 @@ With the NetAdapterCx model, conversely, you write a real WDF driver for your NI
 
 ## Additional info
 
-To watch a video that discusses the benefits of using NetAdapterCx, see the [Network Adapter Class Extension: Overview](/teamblog/LearnTVAnnouncement) video on Channel 9.
+The following video [Network Adapter Class Extension: Overview](https://www.microsoft.com/videoplayer/embed/RE5daTH) discusses the benefits of using NetAdapterCx.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5daTH]
 
 To learn how to port an NDIS 6.x miniport driver to the NetAdapterCx NIC driver model, see [Porting NDIS miniport drivers to NetAdapterCx](porting-ndis-miniport-drivers-to-netadaptercx.md).
 
@@ -33,7 +35,9 @@ To see the source code for NetAdapterCx itself, or perform step-through debuggin
 
 If you would like to work with Microsoft as you develop a NetAdapterCx client driver, or have feedback on the class extension, please send us an [email](mailto:netadapter@microsoft.com).
 
-To watch a video that discusses the future roadmap and collaboration opportunities, see the [Network Adapter Class Extension: Roadmap and Collaboration](/teamblog/LearnTVAnnouncement) video on Channel 9.
+The following video [Network Adapter Class Extension: Roadmap and Collaboration](https://www.microsoft.com/videoplayer/embed/RE5ddHE) discusses future roadmap and collaboration opportunities.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5ddHE]
 
 ## Topics
 
