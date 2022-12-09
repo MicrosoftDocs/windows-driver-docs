@@ -15,6 +15,8 @@ ms.date: 03/19/2018
 
 INF files for MBBCx client drivers are the same as other NetAdapterCx client drivers. For more information, see [INF files for NetAdapterCx client drivers](inf-files-for-netadaptercx-client-drivers.md).
 
+Following the [Universal guidance](../install/using-a-universal-inf-file.md) to develop the inf files to meet the Universal requirement.
+
 ## Initialize the device
 
 In addition to those tasks required by NetAdapterCx for [NetAdapter device initialization](device-and-adapter-initialization.md), an MBB client driver must also perform the following tasks in its [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function:
@@ -187,3 +189,10 @@ For power management, client drivers should use the NETPOWERSETTINGS object [lik
 When an application sends DSS data down to the modem device, MBBCx invokes the client driver's [*EvtMbbDeviceSendServiceSessionData*](/windows-hardware/drivers/ddi/mbbcx/nc-mbbcx-evt_mbb_device_send_device_service_session_data) callback function. The client driver should then send the data asynchronously to the device and call [**MbbDeviceSendDeviceServiceSessionDataComplete**](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbbdevicesenddeviceservicesessiondatacomplete) once the send has completed, so MBBCx then can free the memory allocated for the data.
 
 Conversely, the client driver calls [**MbbDeviceReceiveDeviceServiceSessionData**](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbbdevicereceivedeviceservicesessiondata) to pass any data up to the application through MBBCx.
+
+## Windows Drivers Compliant requirement
+
+- Compliant with [DCH Design Principles](../develop/dch-principles-best-practices.md).
+- Follow the principles of [Driver Package Isolation](../develop/driver-isolation.md).
+- Follow [API Layering Requirements](../develop/api-layering.md).
+- Certified with [Windows Hardware Compatibility Program Certification Process](/windows-hardware/design/compatibility/whcp-certification-process) using the [Hardware Lab Kit](/windows-hardware/test/hlk/).
