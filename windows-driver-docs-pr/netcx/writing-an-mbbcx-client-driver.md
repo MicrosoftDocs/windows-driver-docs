@@ -15,7 +15,7 @@ ms.date: 03/19/2018
 
 INF files for MBBCx client drivers are the same as other NetAdapterCx client drivers. For more information, see [INF files for NetAdapterCx client drivers](inf-files-for-netadaptercx-client-drivers.md).
 
-Following the [Universal guidance](../install/using-a-universal-inf-file.md) to develop the inf files to meet the Universal requirement.
+Follow the [Universal guidance](../install/using-a-universal-inf-file.md) to ensure that the INF files meet the Universal requirements.
 
 ## Initialize the device
 
@@ -190,9 +190,9 @@ When an application sends DSS data down to the modem device, MBBCx invokes the c
 
 Conversely, the client driver calls [**MbbDeviceReceiveDeviceServiceSessionData**](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbbdevicereceivedeviceservicesessiondata) to pass any data up to the application through MBBCx.
 
-## Windows Drivers Compliant requirement
+## Windows Drivers Compliant requirements
 
-- Compliant with [DCH Design Principles](../develop/dch-principles-best-practices.md).
-- Follow the principles of [Driver Package Isolation](../develop/driver-isolation.md).
-- Follow [API Layering Requirements](../develop/api-layering.md).
-- Certified with [Windows Hardware Compatibility Program Certification Process](/windows-hardware/design/compatibility/whcp-certification-process) using the [Hardware Lab Kit](/windows-hardware/test/hlk/).
+- Comply with [DCH Design Principles](../develop/dch-principles-best-practices.md)
+- Follow the [Driver Package Isolation](../develop/driver-isolation.md) principles
+- Follow [API Layering Requirements](../develop/api-layering.md)
+- Certify with the [Windows Hardware Compatibility Program Certification Process](/windows-hardware/design/compatibility/whcp-certification-process) using the [Hardware Lab Kit](/windows-hardware/test/hlk/)
