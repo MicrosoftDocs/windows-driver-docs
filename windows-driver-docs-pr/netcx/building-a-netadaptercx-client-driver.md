@@ -26,6 +26,6 @@ Use the following steps to create a new NetAdapter client driver in Visual Studi
 #include <netadaptercx.h>
 ```
 
-To watch a video that shows how to create a new NetAdapter client driver in Visual Studio, see the [Network Adapter Class Extension: Your First Driver](https://www.microsoft.com/videoplayer/embed/RE5dguK) video.
+The following video [Network Adapter Class Extension: Your First Driver](https://www.microsoft.com/videoplayer/embed/RE5dguK) shows how to create a new NetAdapter client driver in Visual Studio.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dguK]
