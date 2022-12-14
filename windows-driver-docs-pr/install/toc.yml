@@ -628,7 +628,7 @@
     items: 
     - name: "Device Installations and System Restarts"
       href: device-installations-and-system-restarts.md
-    - name: "Avoiding System Restarts during Device Installations"
+    - name: "Avoiding System Restarts During Device Installations"
       href: avoiding-system-restarts-during-device-installations.md
     - name: "Initiating System Restarts During Device Installations"
       href: initiating-system-restarts-during-device-installations.md
