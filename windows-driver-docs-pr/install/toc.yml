@@ -908,22 +908,16 @@
     href: inf-controlflags-section.md
   - name: "INF DDInstall Section"
     href: inf-ddinstall-section.md
-  - name: "INF DDInstall.CoInstallers Section"
-    href: inf-ddinstall-coinstallers-section.md
   - name: "INF DDInstall.Components Section"
     href: inf-ddinstall-components-section.md
   - name: "INF DDInstall.Events Section"
     href: inf-ddinstall-events-section.md
-  - name: "INF DDInstall.FactDef Section"
-    href: inf-ddinstall-factdef-section.md
   - name: "INF DDInstall.Filters Section"
     href: inf-ddinstall-filters-section.md
   - name: "INF DDInstall.HW Section"
     href: inf-ddinstall-hw-section.md
   - name: "INF DDInstall.Interfaces Section"
     href: inf-ddinstall-interfaces-section.md
-  - name: "INF DDInstall.LogConfigOverride Section"
-    href: inf-ddinstall-logconfigoverride-section.md
   - name: "INF DDInstall.Services Section"
     href: inf-ddinstall-services-section.md
   - name: "INF DDInstall.Software Section"
@@ -952,6 +946,14 @@
     href: inf-strings-section.md
   - name: "INF Version Section"
     href: inf-version-section.md
+  - name: "Deprecated Sections"
+    items: 
+    - name: "INF DDInstall.CoInstallers Section"
+      href: inf-ddinstall-coinstallers-section.md
+    - name: "INF DDInstall.FactDef Section"
+      href: inf-ddinstall-factdef-section.md
+    - name: "INF DDInstall.LogConfigOverride Section"
+      href: inf-ddinstall-logconfigoverride-section.md
 - name: "INF Directives"
   items: 
   - name: "INF AddAutoLogger and UpdateAutoLogger Directives"
@@ -974,44 +976,46 @@
     href: inf-addservice-directive.md
   - name: "INF AddSoftware Directive"
     href: inf-addsoftware-directive.md
-  - name: "INF BitReg Directive"
-    href: inf-bitreg-directive.md
   - name: "INF CopyFiles Directive"
     href: inf-copyfiles-directive.md
   - name: "INF CopyINF Directive"
     href: inf-copyinf-directive.md
-  - name: "INF DelFiles Directive"
-    href: inf-delfiles-directive.md
-  - name: "INF DelProperty Directive"
-    href: inf-delproperty-directive.md
-  - name: "INF DelReg Directive"
-    href: inf-delreg-directive.md
-  - name: "INF DelService Directive"
-    href: inf-delservice-directive.md
   - name: "INF DriverVer Directive"
     href: inf-driverver-directive.md
   - name: "INF FeatureScore Directive"
     href: inf-featurescore-directive.md
-  - name: "INF HardwareId Directive"
-    href: inf-hardwareid-directive.md
-  - name: "INF Ini2Reg Directive"
-    href: inf-ini2reg-directive.md
-  - name: "INF LogConfig Directive"
-    href: inf-logconfig-directive.md
-  - name: "INF ProfileItems Directive"
-    href: inf-profileitems-directive.md
   - name: "INF Reboot Directive"
     href: inf-reboot-directive.md
-  - name: "INF RegisterDlls Directive"
-    href: inf-registerdlls-directive.md
-  - name: "INF RenFiles Directive"
-    href: inf-renfiles-directive.md
-  - name: "INF UnregisterDlls Directive"
-    href: inf-unregisterdlls-directive.md
-  - name: "INF UpdateIniFields Directive"
-    href: inf-updateinifields-directive.md
-  - name: "INF UpdateInis Directive"
-    href: inf-updateinis-directive.md
+  - name: "Deprecated Directives"
+    items: 
+    - name: "INF BitReg Directive"
+      href: inf-bitreg-directive.md
+    - name: "INF DelFiles Directive"
+      href: inf-delfiles-directive.md
+    - name: "INF DelProperty Directive"
+      href: inf-delproperty-directive.md
+    - name: "INF DelReg Directive"
+      href: inf-delreg-directive.md
+    - name: "INF DelService Directive"
+      href: inf-delservice-directive.md
+    - name: "INF HardwareId Directive"
+      href: inf-hardwareid-directive.md
+    - name: "INF Ini2Reg Directive"
+      href: inf-ini2reg-directive.md
+    - name: "INF LogConfig Directive"
+      href: inf-logconfig-directive.md
+    - name: "INF ProfileItems Directive"
+      href: inf-profileitems-directive.md
+    - name: "INF RegisterDlls Directive"
+      href: inf-registerdlls-directive.md
+    - name: "INF RenFiles Directive"
+      href: inf-renfiles-directive.md
+    - name: "INF UnregisterDlls Directive"
+      href: inf-unregisterdlls-directive.md
+    - name: "INF UpdateIniFields Directive"
+      href: inf-updateinifields-directive.md
+    - name: "INF UpdateInis Directive"
+      href: inf-updateinis-directive.md
 - name: "Best Practices"
   items: 
   - name: "Accessing Device Properties"
