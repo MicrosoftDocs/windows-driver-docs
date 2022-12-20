@@ -1,10 +1,10 @@
 ---
-title: MDCM architecture
+title: MCDM architecture
 description: Microsoft Compute Driver Model architecture
 ms.date: 12/01/2022
 ---
 
-# MDCM architecture
+# MCDM architecture
 
 This article describes the Microsoft Compute Driver Model (MCDM) architecture.
 
