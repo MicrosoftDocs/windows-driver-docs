@@ -1,10 +1,10 @@
 ---
-title: WinDbg Preview - Installation
-description: This section describes how to install the WinDbg Preview debugger.
-ms.date: 11/01/2022
+title: WinDbg Preview - installation
+description: Learn how to download, install, and update the WinDbg Preview debugger in Windows 10 and Windows 11.
+ms.date: 12/16/2022
 ---
 
-# WinDbg Preview - Installation
+# WinDbg Preview - installation
 
 ## Installation
 
@@ -14,31 +14,29 @@ This section describes how to install the WinDbg Preview debugger.
 
 The WinDbg Preview debugger is available in the Microsoft Store. It requires Windows 10 version 1607 and later to install. To install it, open the Microsoft Store and search for "WinDbg Preview", or use the following link to navigate directly to [WinDbg Preview](https://www.microsoft.com/store/apps/9pgjgd53tn86).
 
-Once the app is a located, select it to download and install.
+Once the app is located, select it to download and install.
 
-## Checking for updates Windows 10
-
+## Check for Windows 10 updates
 1. Open the Store app.
 
 2. Select **More... >**  **Downloads and Updates** to check for updates.
 
 3. On the downloads and updates page, select **Get updates**.
 
-
-## Checking for updates Windows 11
+## Check for Windows 11 updates
 
 1. Open the Store app.
 
-2. Select select **Library > Get updates**.
+2. Select **Library > Get updates**.
 
-3. If there are updates, select **Update all** or choose **WinDbg preview** to just update it. 
+3. If there are updates, select **Update all** or choose **WinDbg Preview** to only update WinDbg Preview.
 
 ## Debugger coexistence  
 
-The WinDbg preview coexists with the classic WinDbg debugger on the same machine, so you can work with both versions at the same time.
+WinDbg Preview coexists with the classic WinDbg debugger on the same machine, so you can work with both versions at the same time.
 
-## See Also
+## See also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+- [Debugging using WinDbg Preview](debugging-using-windbg-preview.md)
 
-[WinDbg Preview – Command line startup options](windbg-command-line-preview.md)
+- [WinDbg Preview – Command line startup options](windbg-command-line-preview.md)
