@@ -625,13 +625,63 @@
         href: smp-example-mofs.md
       - name: "Windows Storage Management Provider API"
 # Auto-expanded node
-        items: 
+        items:
         - name: "Overview"
-          href: /previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal
+          href: windows-storage-management-api-portal.md
         - name: "Storage Management API Classes"
-          href: /previous-versions/windows/desktop/stormgmt/storage-management-api-classes
+          href: storage-management-api-classes.md
         - name: "Storage Management API Common Return Codes"
-          href: /previous-versions/windows/desktop/stormgmt/storage-management-api-common-return-codes
+          href: storage-management-api-common-return-codes.md
+        - name: "Storage Management API Classes"
+          items:
+          - name: MSFT_DedupProperties
+            href: msft-dedupproperties.md
+          - name: MSFT_Disk
+            items:
+            - name: MSFT_Disk
+              href: msft-disk.md
+            - name: Clear Method
+              href: clear-msft-disk.md
+            - name: ConvertStyle method
+              href: msft-disk-convertstyle.md
+            - name: CreatePartition Method
+              href: createpartition-msft-disk.md
+            - name: Initialize Method
+              href: initialize-msft-disk.md
+            - name: Offline method
+              href: msft-disk-offline.md
+            - name: Online method
+              href: msft-disk-online.md
+            - name: Refresh method
+              href: msft-disk-refresh.md
+            - name: SetAttributes method
+              href: msft-disk-setattributes.md
+          - name: MSFT_DiskImage
+            items:
+            - name: MSFT_DiskImage
+              href: msft-diskimage.md
+            - name: Dismount method
+              href: msft-diskimage-dismount.md
+            - name: Mount method
+              href: msft-diskimage-mount.md
+          - name: MSFT_DiskImageToVolume
+            href: msft-diskimagetovolume.md
+          - name: MSFT_DiskToPartition
+            href: msft-disktopartition.md
+          - name: MSFT_DiskToStorageReliabilityCounter
+            href: msft-disktostoragereliabilitycounter.md
+          - name: MSFT_FileShareAccessControlEntry
+            href: msft-fileshareaccesscontrolentry.md
+          - name: MSFT_FileIntegrity
+            items:
+            - name: MSFT_FileIntegrity
+              href: msft-fileintegrity.md
+            - name: Get method
+              href: msft-fileintegrity-get.md
+            - name: Repair method
+              href: msft-fileintegrity-repair.md
+            - name: Set method
+              href: msft-fileintegrity-set.md
     - name: "HBA WMI Classes"
 # Auto-expanded node
       items: 
