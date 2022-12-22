@@ -1,8 +1,8 @@
 ---
 title: Bug Check 0x116 VIDEO_TDR_FAILURE
-description: The VIDEO_TDR_FAILURE bug check has a value of 0x00000116. This indicates that an attempt to reset the display driver and recover from a timeout failed.
+description: The VIDEO_TDR_FAILURE bug check has a value of 0x00000116. This value indicates that an attempt to reset the display driver and recover from a timeout failed.
 keywords: ["Bug Check 0x116 VIDEO_TDR_FAILURE","VIDEO_TDR_FAILURE", "VIDEO_TDR_ERROR"]
-ms.date: 11/02/2022
+ms.date: 12/08/2022
 topic_type:
 - apiref
 api_name:
@@ -11,15 +11,14 @@ api_type:
 - NA
 ---
 
-# Bug Check 0x116: VIDEO\_TDR\_FAILURE
+# Bug Check 0x116: VIDEO_TDR_FAILURE
 
-
-The VIDEO\_TDR\_FAILURE bug check has a value of 0x00000116. This indicates that an attempt to reset the display driver and recover from a timeout failed.
+The VIDEO_TDR_FAILURE bug check has a value of 0x00000116. This bug check indicates that an attempt to reset the display driver and recover from a timeout has failed.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
-## VIDEO\_TDR\_FAILURE Parameters
+## VIDEO_TDR_FAILURE parameters
 
 |Parameter|Description|
 |--- |--- |
@@ -30,32 +29,32 @@ The VIDEO\_TDR\_FAILURE bug check has a value of 0x00000116. This indicates that
 
 ## Cause
 
-A common stability problem in graphics occurs when the system appears completely frozen or hung while processing an end-user command or operation. Usually the GPU is busy processing intensive graphics operations, typically during game-play. No screen updates occur, and users assume that their system is frozen. Users usually wait a few seconds and then reboot the system by pressing the power button. Windows tries to detect these problematic hang situations and dynamically recover a responsive desktop.
+A common stability problem in graphics occurs when the system appears completely frozen or hung while processing an end-user command or operation. Usually the GPU is busy processing intensive graphics operations, typically during gameplay. No screen updates occur, and users assume that their system is frozen. Users usually wait a few seconds and then reboot the system by pressing the power button. Windows tries to detect these problematic hang situations and dynamically recover a responsive desktop.
 
-This process of detection and recovery is known as Timeout Detection and Recovery (TDR). The default timeout is 2 seconds. In the TDR process for video cards, the operating system's GPU scheduler calls the display miniport driver's [*DxgkDdiResetFromTimeout*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_resetfromtimeout) function to reinitialize the driver and reset the GPU.
+This process of detection and recovery is known as Timeout Detection and Recovery (TDR). The default timeout is 2 seconds. In the TDR process for video cards, the operating system's GPU scheduler calls the display miniport driver's [DxgkDdiResetFromTimeout](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_resetfromtimeout) function to reinitialize the driver and reset the GPU.
 
-During this process, the operating system tells the driver not to access the hardware or memory and gives it a short time for currently running threads to complete. If the threads do not complete within the timeout, then the system bug checks with 0x116 VIDEO\_TDR\_FAILURE. For more information, see [Thread Synchronization and TDR](../display/thread-synchronization-and-tdr.md).
+During this process, the operating system tells the driver not to access the hardware or memory and gives it a short time for currently running threads to complete. If the threads don't complete within the timeout, the system bug checks with 0x116 VIDEO_TDR_FAILURE. For more information, see [Thread Synchronization and TDR](../display/thread-synchronization-and-tdr.md).
 
-The system can also bug check with VIDEO\_TDR\_FAILURE if a number of TDR events occur in a short period of time, by default more than five TDRs in one minute.
+The system can also bug check with VIDEO_TDR_FAILURE if multiple TDR events occur in a short period of time. The default amount is more than five TDRs in one minute.
 
 If the recovery process is successful, a message will be displayed, indicating that the "Display driver stopped responding and has recovered."
 
-For more information, see Timeout Detection and Recovery (TDR), [TDR Registry Keys](../display/tdr-registry-keys.md) and [TDR changes in Windows 8](../display/tdr-changes-in-windows-8.md) which are located in [Timeout Detection and Recovery (TDR)](../display/timeout-detection-and-recovery.md).
+For more information, see [Timeout detection and recovery (TDR)](../display/timeout-detection-and-recovery.md), [TDR registry keys](../display/tdr-registry-keys.md), and [TDR changes in Windows 8 and later](../display/tdr-changes-in-windows-8.md).
 
 ## Resolution
 
 The GPU is taking more time than permitted to display graphics to your monitor. This behavior can occur for one or more of the following reasons:
 
--   You may need to install the latest updates for your display driver, so that it properly supports the TDR process.
--   Hardware issues that impact the ability of the video card to operate properly, including:
-    -   Over-clocked components, such as the motherboard
-    -   Incorrect component compatibility and settings (especially memory configuration and timings)
-    -   Insufficient system cooling
-    -   Insufficient system power
-    -   Defective parts (memory modules, motherboards, etc.)
--   Visual effects, or too many programs running in the background may be slowing your PC down so that the video card can not respond as necessary.
+- You may need to install the latest updates for your display driver, so it properly supports the TDR process.
+- Hardware issues that affect the ability of the video card to operate properly, including:
+  - Over-clocked components, such as the motherboard
+  - Incorrect component compatibility and settings (especially memory configuration and timings)
+  - Insufficient system cooling
+  - Insufficient system power
+  - Defective parts (memory modules, motherboards, etc.)
+- Visual effects, or too many programs running in the background may be slowing your PC down, so the video card can't respond as necessary.
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+The [!analyze](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 ```dbgcmd
 1: kd> !analyze -v
@@ -76,7 +75,7 @@ Arg4: 0000000000000004, Optional internal context dependent data.
 ...
 ```
 
-Also displayed will be the faulting module name
+The faulting module name is also shown.
 
 ```dbgcmd
 MODULE_NAME: nvlddmkm
@@ -84,7 +83,7 @@ MODULE_NAME: nvlddmkm
 IMAGE_NAME:  nvlddmkm.sys
 ```
 
-You can use the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md)command to display information about the faulting driver, including the timestamp.
+You can use the [lm (List Loaded Modules)](lm--list-loaded-modules-.md) command to display information about the faulting driver, including the timestamp.
 
 ```dbgcmd
 1: kd> lmvm nvlddmkm
@@ -101,7 +100,7 @@ fffff801`63ec0000 fffff801`649a7000   nvlddmkm T (no symbols)
     Translations:     0000.04b0 0000.04e4 0409.04b0 0409.04e4
 ```
 
-Parameter 1 contains a pointer to the TDR\_RECOVERY\_CONTEXT. As shown in the !analyze output, if you have symbols for the associated code, you can use the dt command to display this data.
+Parameter 1 contains a pointer to the TDR_RECOVERY_CONTEXT. As shown in the !analyze output, if you have symbols for the associated code, you can use the `dt` command to display this data.
 
 ```dbgcmd
 1: kd> dt dxgkrnl!_TDR_RECOVERY_CONTEXT ffffe000c2c404c0
@@ -141,7 +140,7 @@ fffff801`6470c144 48ff257d2deaff  jmp     qword ptr [nvlddmkm+0x6eeec8 (fffff801
 fffff801`6470c14b cc              int     3
 ```
 
-You may wish to examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command.
+You may wish to examine the stack trace by using the [k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command.
 
 ```dbgcmd
 1: kd> k
@@ -159,37 +158,38 @@ You may wish to examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (
 
 You can also set a breakpoint in the code leading up to this stop code and attempt to single step forward into the faulting code, if you can consistently reproduce the stop code.
 
-For more information see the following topics:
+For more information, see [Analyze crash dump files by using WinDbg](crash-dump-files.md).
 
-[Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md)
+If you aren't equipped to use the Windows debugger to work on this problem, you can use some basic troubleshooting techniques.
 
-If you are not equipped to use the Windows debugger to work on this problem, you can use some basic troubleshooting techniques.
+- Check the System Log in Event Viewer for other error messages that might help identify the device or driver that is causing this bug check.
 
--   Check the System Log in Event Viewer for additional error messages that might help identify the device or driver that is causing this bug check.
+- If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.
 
--   If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.
+- Verify that all graphics related software, such as DirectX and OpenGL, are up to date, and any graphics intensive applications (such as games) are fully patched.
 
--   Verify that all graphics related software such as DirectX and OpenGL are up to date, and any graphics intensive applications (such as games) are fully patched.
--   Confirm that any new hardware that is installed is compatible with the installed version of Windows. For example, you can get information about required hardware at [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications).
+- Confirm that any new hardware that's installed is compatible with the installed version of Windows. For example, you can get information about required hardware at [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications).
 
--   **Using Safe Mode**
+- Run the Windows Memory Diagnostics tool to test the memory. In the control panel search box, enter **Memory**, and then select **Diagnose your computer's memory problems**.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
 
-    Consider using Safe Mode to help isolate this issue. Using Safe Mode loads only the minimum required drivers and system services during the Windows startup. To enter Safe Mode, use **Update and Security** in Settings. Select **Recovery**-&gt;**Advanced startup** to boot to maintenance mode. At the resulting menu, choose **Troubleshoot**-&gt; **Advanced Options** -&gt; **Startup Settings** -&gt; **Restart**. After Windows restarts to the **Startup Settings** screen, select option, 4, 5 or 6 to boot to Safe Mode.
+- You can try running the hardware diagnostics supplied by the system manufacturer.
+
+- Use Safe Mode
+
+    Consider using Safe Mode to help isolate this issue. Using Safe Mode loads only the minimum required drivers and system services during the Windows startup.  
+    1. To enter Safe Mode, go to **Update and Security** in Settings.  
+    2. Select **Recovery** &gt; **Advanced startup** to boot to maintenance mode.  
+    3. At the resulting menu, choose **Troubleshoot** &gt; **Advanced Options** &gt; **Startup Settings** &gt; **Restart**.  
+    4. After Windows restarts to the **Startup Settings** screen, select option, 4, 5 or 6 to boot to Safe Mode.
 
     Safe Mode may be available by pressing a function key on boot, for example F8. Refer to information from the manufacturer for specific startup options.
 
--   Run the Windows Memory Diagnostics tool, to test the memory. In the control panel search box, type Memory, and then select **Diagnose your computer's memory problems**.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
-
--   You can try running the hardware diagnostics supplied by the system manufacturer.
-
--   For additional general troubleshooting information, see [**Blue Screen Data**](blue-screen-data.md).
+For general troubleshooting information, see [Blue Screen Data](blue-screen-data.md).
 
 ## Remarks
 
-**Hardware certification requirements**
+For information about requirements that hardware devices must meet when they implement TDR, see [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) documentation. For example, [TDR2 - Standard Two Device Test Graphics](/windows-hardware/test/hlk/testref/575d868d-b89a-48f7-b356-1c9f8c371a6f).
 
-For information on requirements that hardware devices must meet when they implement TDR, refer to the [Windows Hardware Lab Kit](/windows-hardware/test/hlk/)documentation, for example [Device.Graphics.TDRResiliency](/windows-hardware/test/hlk/testref/575d868d-b89a-48f7-b356-1c9f8c371a6f).
-
-## See Also
+## See also
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
