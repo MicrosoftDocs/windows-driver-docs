@@ -1,26 +1,20 @@
 ---
-title: Viewing the Call Stack in Visual Studio
-description: The procedure describes how to view the Call Stack in Visual Studio
-ms.date: 05/11/2018
+title: View the Call Stack in Visual Studio
+description: Learn how to view the Call Stack in the Visual Studio Debug menu by installing the Windows Driver Kit.
+ms.date: 12/14/2022
 ---
 
-# Viewing the Call Stack in Visual Studio
+# View the Call Stack in Visual Studio
 
 > [!IMPORTANT]
-> This feature is not available in Windows 10, version 1507 and later versions of the WDK.
+> This feature isn't available in Windows 10, version 1507 or later versions of the WDK.
 >
+The procedures shown in this article require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Microsoft Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows driver development](../index.yml).
 
-The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Microsoft Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Development](../index.yml).
+## Use the Call Stack window
 
-## <span id="Using_the_Call_Stack_Window"></span><span id="using_the_call_stack_window"></span><span id="USING_THE_CALL_STACK_WINDOW"></span>Using the Call Stack Window
+To open the **Call Stack** window in Visual Studio, from the **Debug** menu, choose **Windows>Call Stack**. To set the local context to a particular row in the stack trace display, select and hold (or double-click) the first column of the row.
 
+## View the Call Stack by entering commands
 
-To open the **Call Stack** window in Visual Studio, from the **Debug** menu, choose **Windows&gt;Call Stack**. To set the local context to a particular row in the stack trace display, select and hold (or double click) the first column of the row.
-
-## <span id="Viewing_the_Call_Stack_by_Entering_Commands"></span><span id="viewing_the_call_stack_by_entering_commands"></span><span id="VIEWING_THE_CALL_STACK_BY_ENTERING_COMMANDS"></span>Viewing the Call Stack by Entering Commands
-
-
-In the Debugger Immediate Window, you can view the call stack by entering one of the [**k (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands. If the Debugger Immediate window is not already open, from the **Debug** menu, choose **Windows&gt;Immediate**.
-
- 
-
+In the **Immediate window**, you can view the Call Stack by entering one of the [k (Display Stack Backtrace)](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) commands. If the **Immediate window** isn't already open, from the **Debug** menu, choose **Windows>Immediate**.
