@@ -17,7 +17,6 @@ api_type:
 ms.author: windowssdkdev
 ms.topic: article
 ms.date: 05/31/2018
-ROBOTS: INDEX,FOLLOW
 ---
 
 # Get method of the MSFT\_FileStorageTier class
