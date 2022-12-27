@@ -1,15 +1,15 @@
 ---
-title: Set method of the MSFT\_FileIntegrity class
-description: Sets the file integrity state for the specified file.
-ms.assetid: 19ADB940-56F2-44C1-BC9A-77869930B5DB
+title: UnblockAccess method of the MSFT\_FileShare class
+description: Removes specified users from the denied access list for the file share.
+ms.assetid: DA0B78BE-571F-4B5E-9120-7321FE2BB977
 keywords:
-- Set method Windows Storage Management API
-- Set method Windows Storage Management API , MSFT_FileIntegrity class
-- MSFT_FileIntegrity class Windows Storage Management API , Set method
+- UnblockAccess method Windows Storage Management API
+- UnblockAccess method Windows Storage Management API , MSFT_FileShare class
+- MSFT_FileShare class Windows Storage Management API , UnblockAccess method
 topic_type:
 - apiref
 api_name:
-- MSFT_FileIntegrity.Set
+- MSFT_FileShare.UnblockAccess
 api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
@@ -20,19 +20,17 @@ ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
 ---
 
-# Set method of the MSFT\_FileIntegrity class
+# UnblockAccess method of the MSFT\_FileShare class
 
-Sets the file integrity state for the specified file.
+Removes specified users from the denied access list for the file share.
 
 ## Syntax
 
 
 ```mof
-UInt32 Set(
-  [in]  String  FileName,
-  [in]  Boolean Enable,
-  [in]  Boolean Enforce,
-  [out] String  ExtendedStatus
+UInt32 UnblockAccess(
+  [in]  String AccountNames[],
+  [out] String ExtendedStatus
 );
 ```
 
@@ -42,24 +40,10 @@ UInt32 Set(
 
 <dl> <dt>
 
-*FileName* \[in\]
+*AccountNames* \[in\]
 </dt> <dd>
 
-The file to set the integrity information for.
-
-</dd> <dt>
-
-*Enable* \[in\]
-</dt> <dd>
-
-Specifies whether integrity streams are enabled for this file.
-
-</dd> <dt>
-
-*Enforce* \[in\]
-</dt> <dd>
-
-Specifies whether integrity streams are enforced for this file.
+User accounts to remove from the deny access list for the file share.
 
 </dd> <dt>
 
@@ -92,6 +76,15 @@ This parameter allows the storage provider to return extended (implementation-sp
 </dt> <dt>
 
 **Invalid Parameter** (5)
+</dt> <dt>
+
+**Access denied** (40001)
+</dt> <dt>
+
+**There are not enough resources to complete the operation.** (40002)
+</dt> <dt>
+
+**Cache out of date** (40003)
 </dt> </dl>
 
 ## Requirements
@@ -100,8 +93,8 @@ This parameter allows the storage provider to return extended (implementation-sp
 
 |                                     |                                                                                           |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
+| Minimum supported client<br/> | Windows 10 \[desktop apps only\]<br/>                                               |
+| Minimum supported server<br/> | Windows Server 2016 \[desktop apps only\]<br/>                                      |
 | Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
 | MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
 
@@ -111,7 +104,7 @@ This parameter allows the storage provider to return extended (implementation-sp
 
 <dl> <dt>
 
-[**MSFT\_FileIntegrity**](msft-fileintegrity.md)
+[**MSFT\_FileShare**](msft-fileshare.md)
 </dt> </dl>
 
  

@@ -1,15 +1,15 @@
 ---
-title: Set method of the MSFT\_FileIntegrity class
-description: Sets the file integrity state for the specified file.
-ms.assetid: 19ADB940-56F2-44C1-BC9A-77869930B5DB
+title: GetSecurityDescriptor method of the MSFT\_MaskingSet class
+description: Retrieves the security descriptor that controls access to the masking set object instance.
+ms.assetid: 8738053D-3852-4EB9-9297-48428030CFEF
 keywords:
-- Set method Windows Storage Management API
-- Set method Windows Storage Management API , MSFT_FileIntegrity class
-- MSFT_FileIntegrity class Windows Storage Management API , Set method
+- GetSecurityDescriptor method Windows Storage Management API
+- GetSecurityDescriptor method Windows Storage Management API , MSFT_MaskingSet class
+- MSFT_MaskingSet class Windows Storage Management API , GetSecurityDescriptor method
 topic_type:
 - apiref
 api_name:
-- MSFT_FileIntegrity.Set
+- MSFT_MaskingSet.GetSecurityDescriptor
 api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
@@ -20,19 +20,17 @@ ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
 ---
 
-# Set method of the MSFT\_FileIntegrity class
+# GetSecurityDescriptor method of the MSFT\_MaskingSet class
 
-Sets the file integrity state for the specified file.
+Retrieves the security descriptor that controls access to the masking set object instance.
 
 ## Syntax
 
 
 ```mof
-UInt32 Set(
-  [in]  String  FileName,
-  [in]  Boolean Enable,
-  [in]  Boolean Enforce,
-  [out] String  ExtendedStatus
+UInt32 GetSecurityDescriptor(
+  [out] String SecurityDescriptor,
+  [out] String ExtendedStatus
 );
 ```
 
@@ -42,24 +40,10 @@ UInt32 Set(
 
 <dl> <dt>
 
-*FileName* \[in\]
+*SecurityDescriptor* \[out\]
 </dt> <dd>
 
-The file to set the integrity information for.
-
-</dd> <dt>
-
-*Enable* \[in\]
-</dt> <dd>
-
-Specifies whether integrity streams are enabled for this file.
-
-</dd> <dt>
-
-*Enforce* \[in\]
-</dt> <dd>
-
-Specifies whether integrity streams are enforced for this file.
+A Security Descriptor Definition Language (SDDL) formatted string describing the access control list of the object. This parameter is required and cannot be NULL.
 
 </dd> <dt>
 
@@ -92,6 +76,18 @@ This parameter allows the storage provider to return extended (implementation-sp
 </dt> <dt>
 
 **Invalid Parameter** (5)
+</dt> <dt>
+
+**Access denied** (40001)
+</dt> <dt>
+
+**There are not enough resources to complete the operation.** (40002)
+</dt> <dt>
+
+**Cannot connect to the storage provider.** (46000)
+</dt> <dt>
+
+**The storage provider cannot connect to the storage subsystem.** (46001)
 </dt> </dl>
 
 ## Requirements
@@ -111,7 +107,7 @@ This parameter allows the storage provider to return extended (implementation-sp
 
 <dl> <dt>
 
-[**MSFT\_FileIntegrity**](msft-fileintegrity.md)
+[**MSFT\_MaskingSet**](msft-maskingset.md)
 </dt> </dl>
 
  

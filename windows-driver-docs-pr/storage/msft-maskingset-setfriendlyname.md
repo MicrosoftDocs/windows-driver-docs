@@ -1,15 +1,15 @@
 ---
-title: Set method of the MSFT\_FileIntegrity class
-description: Sets the file integrity state for the specified file.
-ms.assetid: 19ADB940-56F2-44C1-BC9A-77869930B5DB
+title: SetFriendlyName method of the MSFT\_MaskingSet class
+description: Sets the friendly name for the masking set.
+ms.assetid: 4D64C38C-938E-4896-A316-C113BF13652A
 keywords:
-- Set method Windows Storage Management API
-- Set method Windows Storage Management API , MSFT_FileIntegrity class
-- MSFT_FileIntegrity class Windows Storage Management API , Set method
+- SetFriendlyName method Windows Storage Management API
+- SetFriendlyName method Windows Storage Management API , MSFT_MaskingSet class
+- MSFT_MaskingSet class Windows Storage Management API , SetFriendlyName method
 topic_type:
 - apiref
 api_name:
-- MSFT_FileIntegrity.Set
+- MSFT_MaskingSet.SetFriendlyName
 api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
@@ -20,19 +20,17 @@ ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
 ---
 
-# Set method of the MSFT\_FileIntegrity class
+# SetFriendlyName method of the MSFT\_MaskingSet class
 
-Sets the file integrity state for the specified file.
+Sets the friendly name for the masking set.
 
 ## Syntax
 
 
 ```mof
-UInt32 Set(
-  [in]  String  FileName,
-  [in]  Boolean Enable,
-  [in]  Boolean Enforce,
-  [out] String  ExtendedStatus
+UInt32 SetFriendlyName(
+  [in]  String FriendlyName,
+  [out] String ExtendedStatus
 );
 ```
 
@@ -42,24 +40,10 @@ UInt32 Set(
 
 <dl> <dt>
 
-*FileName* \[in\]
+*FriendlyName* \[in\]
 </dt> <dd>
 
-The file to set the integrity information for.
-
-</dd> <dt>
-
-*Enable* \[in\]
-</dt> <dd>
-
-Specifies whether integrity streams are enabled for this file.
-
-</dd> <dt>
-
-*Enforce* \[in\]
-</dt> <dd>
-
-Specifies whether integrity streams are enforced for this file.
+The friendly name to be set. This parameter is required and cannot be NULL.
 
 </dd> <dt>
 
@@ -92,6 +76,21 @@ This parameter allows the storage provider to return extended (implementation-sp
 </dt> <dt>
 
 **Invalid Parameter** (5)
+</dt> <dt>
+
+**Access denied** (40001)
+</dt> <dt>
+
+**There are not enough resources to complete the operation.** (40002)
+</dt> <dt>
+
+**Cache out of date** (40003)
+</dt> <dt>
+
+**Cannot connect to the storage provider.** (46000)
+</dt> <dt>
+
+**The storage provider cannot connect to the storage subsystem.** (46001)
 </dt> </dl>
 
 ## Requirements
@@ -111,7 +110,7 @@ This parameter allows the storage provider to return extended (implementation-sp
 
 <dl> <dt>
 
-[**MSFT\_FileIntegrity**](msft-fileintegrity.md)
+[**MSFT\_MaskingSet**](msft-maskingset.md)
 </dt> </dl>
 
  

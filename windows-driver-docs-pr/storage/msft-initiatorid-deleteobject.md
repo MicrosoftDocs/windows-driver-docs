@@ -1,15 +1,15 @@
 ---
-title: Set method of the MSFT\_FileIntegrity class
-description: Sets the file integrity state for the specified file.
-ms.assetid: 19ADB940-56F2-44C1-BC9A-77869930B5DB
+title: DeleteObject method of the MSFT\_InitiatorId class
+description: Deletes an instance of an initiator identifier.
+ms.assetid: 233E2BFD-81B6-4769-9C65-8EF914F9F869
 keywords:
-- Set method Windows Storage Management API
-- Set method Windows Storage Management API , MSFT_FileIntegrity class
-- MSFT_FileIntegrity class Windows Storage Management API , Set method
+- DeleteObject method Windows Storage Management API
+- DeleteObject method Windows Storage Management API , MSFT_InitiatorId class
+- MSFT_InitiatorId class Windows Storage Management API , DeleteObject method
 topic_type:
 - apiref
 api_name:
-- MSFT_FileIntegrity.Set
+- MSFT_InitiatorId.DeleteObject
 api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
@@ -20,19 +20,16 @@ ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
 ---
 
-# Set method of the MSFT\_FileIntegrity class
+# DeleteObject method of the MSFT\_InitiatorId class
 
-Sets the file integrity state for the specified file.
+Deletes an instance of an initiator identifier.
 
 ## Syntax
 
 
 ```mof
-UInt32 Set(
-  [in]  String  FileName,
-  [in]  Boolean Enable,
-  [in]  Boolean Enforce,
-  [out] String  ExtendedStatus
+UInt32 DeleteObject(
+  [out] String ExtendedStatus
 );
 ```
 
@@ -41,27 +38,6 @@ UInt32 Set(
 ## Parameters
 
 <dl> <dt>
-
-*FileName* \[in\]
-</dt> <dd>
-
-The file to set the integrity information for.
-
-</dd> <dt>
-
-*Enable* \[in\]
-</dt> <dd>
-
-Specifies whether integrity streams are enabled for this file.
-
-</dd> <dt>
-
-*Enforce* \[in\]
-</dt> <dd>
-
-Specifies whether integrity streams are enforced for this file.
-
-</dd> <dt>
 
 *ExtendedStatus* \[out\]
 </dt> <dd>
@@ -92,6 +68,21 @@ This parameter allows the storage provider to return extended (implementation-sp
 </dt> <dt>
 
 **Invalid Parameter** (5)
+</dt> <dt>
+
+**Access denied** (40001)
+</dt> <dt>
+
+**There are not enough resources to complete the operation.** (40002)
+</dt> <dt>
+
+**Cache out of date** (40003)
+</dt> <dt>
+
+**Cannot connect to the storage provider.** (46000)
+</dt> <dt>
+
+**The storage provider cannot connect to the storage subsystem.** (46001)
 </dt> </dl>
 
 ## Requirements
@@ -111,7 +102,7 @@ This parameter allows the storage provider to return extended (implementation-sp
 
 <dl> <dt>
 
-[**MSFT\_FileIntegrity**](msft-fileintegrity.md)
+[**MSFT\_InitiatorId**](msft-initiatorid.md)
 </dt> </dl>
 
  

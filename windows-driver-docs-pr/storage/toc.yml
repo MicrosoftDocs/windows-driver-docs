@@ -682,6 +682,98 @@
               href: msft-fileintegrity-repair.md
             - name: Set method
               href: msft-fileintegrity-set.md
+          - name: MSFT_FileServer
+            items:
+            - name: MSFT_FileServer
+              href: msft-fileserver.md
+            - name: CreateFileShare method
+              href: msft-fileserver-createfileshare.md
+            - name: DeleteObject method
+              href: msft-fileserver-deleteobject.md
+            - name: SetProperties method
+              href: msft-fileserver-setproperties.md
+          - name: MSFT_FileServerToFileShare
+            href: msft-fileservertofileshare.md
+          - name: MSFT_FileServerToVolume
+            href: msft-fileservertovolume.md
+          - name: MSFT_FileShare
+            items:
+            - name: MSFT_FileShare
+              href: msft-fileshare.md
+            - name: BlockAccess method
+              href: msft-fileshare-blockaccess.md
+            - name: DeleteObject method
+              href: msft-fileshare-deleteobject.md
+            - name: Diagnose method
+              href: msft-fileshare-diagnose.md
+            - name: GetAccessControlEntries method
+              href: msft-fileshare-getaccesscontrol.md
+            - name: GrantAccess method
+              href: msft-fileshare-grantaccess.md
+            - name: RevokeAccess method
+              href: msft-fileshare-revokeaccess.md
+            - name: SetAttributes method
+              href: msft-fileshare-setattributes.md
+            - name: SetDescription method
+              href: msft-fileshare-setdescription.md
+            - name: UnblockAccess method
+              href: msft-fileshare-unblockaccess.md
+          - name: MSFT_FileStorageTier
+            items:
+            - name: MSFT_FileStorageTier
+              href: msft-filestoragetier.md
+            - name: Clear method
+              href: msft-filestoragetier-clear.md
+            - name: Get method
+              href: msft-filestoragetier-get.md
+            - name: Set method
+              href: msft-filestoragetier-set.md
+          - name: MSFT_InitiatorId
+            items:
+            - name: MSFT_InitiatorId
+              href: msft-initiatorid.md
+            - name: DeleteObject Method
+              href: msft-initiatorid-deleteobject.md
+          - name: MSFT_InitiatorIdToVirtualDisk
+            href: msft-initiatoridtovirtualdisk.md
+          - name: MSFT_InitiatorPort
+            items:
+            - name: MSFT_InitiatorPort
+              href: msft-initiatorport.md
+            - name: SetNodeAddress method
+              href: msft-initiatorport-setnodeaddress.md
+          - name: MSFT_MaskingSet
+            items:
+            - name: MSFT_MaskingSet
+              href: msft-maskingset.md
+            - name: AddInitiatorId Method
+              href: msft-maskingset-addinitiatorid.md
+            - name: AddTargetPort Method
+              href: msft-maskingset-addtargetport.md
+            - name: AddVirtualDisk Method
+              href: msft-maskingset-addvirtualdisk.md
+            - name: DeleteObject Method
+              href: msft-maskingset-deleteobject.md
+            - name: GetSecurityDescriptor Method
+              href: msft-maskingset-getsecuritydescriptor.md
+            - name: RemoveInitiatorId Method
+              href: msft-maskingset-removeinitiatorid.md
+            - name: RemoveTargetPort Method
+              href: msft-maskingset-addtargetport.md
+            - name: RemoveVirtualDisk Method
+              href: msft-maskingset-removevirtualdisk.md
+            - name: SetFriendlyName Method
+              href: msft-maskingset-setfriendlyname.md
+            - name: SetSecurityDescriptor Method
+              href: msft-maskingset-setsecuritydescriptor.md
+          - name: MSFT_MaskingSetToInitiatorId
+            href: 
+          - name: MSFT_MaskingSetToTargetPort
+            href: 
+          - name: MSFT_MaskingSetToVirtualDisk
+            href: 
+          - name: MSFT_OffloadDataTransferSetting
+            href: 
     - name: "HBA WMI Classes"
 # Auto-expanded node
       items: 

@@ -1,15 +1,15 @@
 ---
-title: Set method of the MSFT\_FileIntegrity class
-description: Sets the file integrity state for the specified file.
-ms.assetid: 19ADB940-56F2-44C1-BC9A-77869930B5DB
+title: SetNodeAddress method of the MSFT\_InitiatorPort class
+description: Sets the node address for an iSCSI initiator port by passing an IQN as the node address string.
+ms.assetid: 0F1A5F3C-3064-44EE-A8D2-0A6E735CDE5A
 keywords:
-- Set method Windows Storage Management API
-- Set method Windows Storage Management API , MSFT_FileIntegrity class
-- MSFT_FileIntegrity class Windows Storage Management API , Set method
+- SetNodeAddress method Windows Storage Management API
+- SetNodeAddress method Windows Storage Management API , MSFT_InitiatorPort class
+- MSFT_InitiatorPort class Windows Storage Management API , SetNodeAddress method
 topic_type:
 - apiref
 api_name:
-- MSFT_FileIntegrity.Set
+- MSFT_InitiatorPort.SetNodeAddress
 api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
@@ -20,19 +20,17 @@ ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
 ---
 
-# Set method of the MSFT\_FileIntegrity class
+# SetNodeAddress method of the MSFT\_InitiatorPort class
 
-Sets the file integrity state for the specified file.
+Sets the node address for an iSCSI initiator port by passing an IQN as the node address string.
 
 ## Syntax
 
 
 ```mof
-UInt32 Set(
-  [in]  String  FileName,
-  [in]  Boolean Enable,
-  [in]  Boolean Enforce,
-  [out] String  ExtendedStatus
+UInt32 SetNodeAddress(
+  [in]  String NodeAddress,
+  [out] String ExtendedStatus
 );
 ```
 
@@ -42,24 +40,10 @@ UInt32 Set(
 
 <dl> <dt>
 
-*FileName* \[in\]
+*NodeAddress* \[in\]
 </dt> <dd>
 
-The file to set the integrity information for.
-
-</dd> <dt>
-
-*Enable* \[in\]
-</dt> <dd>
-
-Specifies whether integrity streams are enabled for this file.
-
-</dd> <dt>
-
-*Enforce* \[in\]
-</dt> <dd>
-
-Specifies whether integrity streams are enforced for this file.
+The node address. This parameter is required.
 
 </dd> <dt>
 
@@ -111,7 +95,7 @@ This parameter allows the storage provider to return extended (implementation-sp
 
 <dl> <dt>
 
-[**MSFT\_FileIntegrity**](msft-fileintegrity.md)
+[**MSFT\_InitiatorPort**](msft-initiatorport.md)
 </dt> </dl>
 
  

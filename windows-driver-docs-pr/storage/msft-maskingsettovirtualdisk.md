@@ -1,16 +1,16 @@
 ---
-title: MSFT\_DiskToPartition class
-description: Association between Disk and Partition.
-ms.assetid: 6d293eea-3c40-414d-bb05-c59a37ccb1e7
+title: MSFT\_MaskingSetToVirtualDisk class
+description: Association between MaskingSet and VirtualDisk.
+ms.assetid: 4E5328D1-655B-45A5-9D76-A2042377F7F1
 keywords:
-- MSFT_DiskToPartition class Windows Storage Management API
-- MSFT_DiskToPartition class Windows Storage Management API , described
+- MSFT_MaskingSetToVirtualDisk class Windows Storage Management API
+- MSFT_MaskingSetToVirtualDisk class Windows Storage Management API , described
 topic_type:
 - apiref
 api_name:
-- MSFT_DiskToPartition
-- MSFT_DiskToPartition.Disk
-- MSFT_DiskToPartition.Partition
+- MSFT_MaskingSetToVirtualDisk
+- MSFT_MaskingSetToVirtualDisk.MaskingSet
+- MSFT_MaskingSetToVirtualDisk.VirtualDisk
 api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
@@ -21,9 +21,9 @@ ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
 ---
 
-# MSFT\_DiskToPartition class
+# MSFT\_MaskingSetToVirtualDisk class
 
-Association between [**Disk**](msft-disk.md) and [**Partition**](msft-partition.md).
+Association between [**MaskingSet**](msft-maskingset.md) and [**VirtualDisk**](msft-virtualdisk.md).
 
 The following syntax is simplified from Managed Object Format (MOF) code.
 
@@ -31,29 +31,29 @@ The following syntax is simplified from Managed Object Format (MOF) code.
 
 ``` syntax
 [Association]
-class MSFT_DiskToPartition
+class MSFT_MaskingSetToVirtualDisk
 {
-  MSFT_Disk      REF Disk;
-  MSFT_Partition REF Partition;
+  MSFT_MaskingSet  REF MaskingSet;
+  MSFT_VirtualDisk REF VirtualDisk;
 };
 ```
 
 ## Members
 
-The **MSFT\_DiskToPartition** class has these types of members:
+The **MSFT\_MaskingSetToVirtualDisk** class has these types of members:
 
 -   [Properties](#properties)
 
 ### Properties
 
-The **MSFT\_DiskToPartition** class has these properties.
+The **MSFT\_MaskingSetToVirtualDisk** class has these properties.
 
 <dl> <dt>
 
-**Disk**
+**MaskingSet**
 </dt> <dd> <dl> <dt>
 
-Data type: **[**MSFT\_Disk**](msft-disk.md)**
+Data type: **MSFT\_MaskingSet**
 </dt> <dt>
 
 Access type: Read-only
@@ -64,10 +64,10 @@ Qualifiers: **Key**
 
 </dd> <dt>
 
-**Partition**
+**VirtualDisk**
 </dt> <dd> <dl> <dt>
 
-Data type: **[**MSFT\_Partition**](msft-partition.md)**
+Data type: **MSFT\_VirtualDisk**
 </dt> <dt>
 
 Access type: Read-only
@@ -95,10 +95,10 @@ Qualifiers: **Key**
 
 <dl> <dt>
 
-[**MSFT\_Disk**](msft-disk.md)
+[**MSFT\_MaskingSet**](msft-maskingset.md)
 </dt> <dt>
 
-[**MSFT\_Partition**](msft-partition.md)
+[**MSFT\_VirtualDisk**](msft-virtualdisk.md)
 </dt> </dl>
 
  

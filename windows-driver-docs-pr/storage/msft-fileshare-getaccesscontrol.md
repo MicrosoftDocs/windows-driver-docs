@@ -1,15 +1,15 @@
 ---
-title: Refresh method of the MSFT\_Disk class
-description: Refreshes the cached disk layout information.
-ms.assetid: 4BFE5289-DA95-4ED7-993E-496E97D9695A
+title: GetAccessControlEntries method of the MSFT\_FileShare class
+description: Gets the access control entries for specified accounts.
+ms.assetid: 252AD23C-4951-4C1D-A9FD-42E35A2ED81F
 keywords:
-- Refresh method Windows Storage Management API
-- Refresh method Windows Storage Management API , MSFT_Disk class
-- MSFT_Disk class Windows Storage Management API , Refresh method
+- GetAccessControlEntries method Windows Storage Management API
+- GetAccessControlEntries method Windows Storage Management API , MSFT_FileShare class
+- MSFT_FileShare class Windows Storage Management API , GetAccessControlEntries method
 topic_type:
 - apiref
 api_name:
-- MSFT_Disk.Refresh
+- MSFT_FileShare.GetAccessControlEntries
 api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
@@ -20,15 +20,16 @@ ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
 ---
 
-# Refresh method of the MSFT\_Disk class
+# GetAccessControlEntries method of the MSFT\_FileShare class
 
-Refreshes the cached disk layout information.
+Gets the access control entries for specified accounts.
 
 ## Syntax
 
 
 ```mof
-UInt32 Refresh(
+UInt32 GetAccessControlEntries(
+  [out] String AccessControlEntries[],
   [out] String ExtendedStatus
 );
 ```
@@ -38,6 +39,13 @@ UInt32 Refresh(
 ## Parameters
 
 <dl> <dt>
+
+*AccessControlEntries* \[out\]
+</dt> <dd>
+
+An array of strings containing embedded [**MSFT\_FileShareAccessControlEntry**](msft-fileshareaccesscontrolentry.md) objects specifying the access control entries for the share.
+
+</dd> <dt>
 
 *ExtendedStatus* \[out\]
 </dt> <dd>
@@ -70,9 +78,6 @@ This parameter allows the storage provider to return extended (implementation-sp
 **Invalid Parameter** (5)
 </dt> <dt>
 
-**Disk is in use** (6)
-</dt> <dt>
-
 **Access denied** (40001)
 </dt> <dt>
 
@@ -80,17 +85,7 @@ This parameter allows the storage provider to return extended (implementation-sp
 </dt> <dt>
 
 **Cache out of date** (40003)
-</dt> <dt>
-
-**The disk has not been initialized.** (41000)
-</dt> <dt>
-
-**The disk is offline.** (41003)
 </dt> </dl>
-
-## Remarks
-
-This method is useful when the backing disk has changed size (if the backing data store is a VHD or a virtual disk).
 
 ## Requirements
 
@@ -98,8 +93,8 @@ This method is useful when the backing disk has changed size (if the backing dat
 
 |                                     |                                                                                           |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
+| Minimum supported client<br/> | Windows 10 \[desktop apps only\]<br/>                                               |
+| Minimum supported server<br/> | Windows Server 2016 \[desktop apps only\]<br/>                                      |
 | Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
 | MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
 
@@ -109,7 +104,7 @@ This method is useful when the backing disk has changed size (if the backing dat
 
 <dl> <dt>
 
-[**MSFT\_Disk**](msft-disk.md)
+[**MSFT\_FileShare**](msft-fileshare.md)
 </dt> </dl>
 
  

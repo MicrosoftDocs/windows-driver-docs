@@ -1,15 +1,15 @@
 ---
-title: ConvertStyle method of the MSFT\_Disk class
-description: Converts the partition style of an already initialized disk.
-ms.assetid: 38C1C3A0-DAB0-490F-A308-D0966364B728
+title: DeleteObject method of the MSFT\_MaskingSet class
+description: Deletes the masking set instance.
+ms.assetid: 169B2338-3B9C-488F-9BF1-9E64A7915683
 keywords:
-- ConvertStyle method Windows Storage Management API
-- ConvertStyle method Windows Storage Management API , MSFT_Disk class
-- MSFT_Disk class Windows Storage Management API , ConvertStyle method
+- DeleteObject method Windows Storage Management API
+- DeleteObject method Windows Storage Management API , MSFT_MaskingSet class
+- MSFT_MaskingSet class Windows Storage Management API , DeleteObject method
 topic_type:
 - apiref
 api_name:
-- MSFT_Disk.ConvertStyle
+- MSFT_MaskingSet.DeleteObject
 api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
@@ -20,17 +20,18 @@ ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
 ---
 
-# ConvertStyle method of the MSFT\_Disk class
+# DeleteObject method of the MSFT\_MaskingSet class
 
-Converts the partition style of an already initialized disk.
+Deletes the masking set instance.
 
 ## Syntax
 
 
 ```mof
-UInt32 ConvertStyle(
-  [in]  UInt16 PartitionStyle,
-  [out] String ExtendedStatus
+UInt32 DeleteObject(
+  [in]  Boolean                 RunAsJob,
+  [out] MSFT_StorageJob REF CreatedStorageJob,
+  [out] String                  ExtendedStatus
 );
 ```
 
@@ -40,18 +41,25 @@ UInt32 ConvertStyle(
 
 <dl> <dt>
 
-*PartitionStyle* \[in\]
+*RunAsJob* \[in\]
 </dt> <dd>
 
-The new partition style for the disk. This parameter is required.
+This parameter controls the asynchronous behavior the method will follow.
 
-<dl> <dt>
+**TRUE** to use the *CreatedStorageJob* out parameter when the request takes a long time to service; otherwise **FALSE**.
 
-<span id="MBR"></span><span id="mbr"></span>**MBR** (1)
-</dt> <dt>
+If a storage job has been created to track the operation, this method will return 4096 - 'Method Parameters Checked - Job Started'. Note, even if *RunAsJob* is **TRUE**, the method can still return a result if it finishes in sufficient time.
 
-<span id="GPT"></span><span id="gpt"></span>**GPT** (2)
-</dt> </dl> </dd> <dt>
+If **FALSE** or **NULL**, this method will follow default WMI asynchronous behavior as determined by the client's method for invocation (i.e. synchronous unless requested otherwise).
+
+</dd> <dt>
+
+*CreatedStorageJob* \[out\]
+</dt> <dd>
+
+If *RunAsJob* is set to **TRUE** and this method takes a while to execute, this parameter returns a reference to the storage job used to track the long running operation.
+
+</dd> <dt>
 
 *ExtendedStatus* \[out\]
 </dt> <dd>
@@ -84,9 +92,6 @@ This parameter allows the storage provider to return extended (implementation-sp
 **Invalid Parameter** (5)
 </dt> <dt>
 
-**Disk is in use** (6)
-</dt> <dt>
-
 **Access denied** (40001)
 </dt> <dt>
 
@@ -96,25 +101,10 @@ This parameter allows the storage provider to return extended (implementation-sp
 **Cache out of date** (40003)
 </dt> <dt>
 
-**The disk has not been initialized.** (41000)
+**Cannot connect to the storage provider.** (46000)
 </dt> <dt>
 
-**The disk is read only.** (41002)
-</dt> <dt>
-
-**The disk is offline.** (41003)
-</dt> <dt>
-
-**Operation not supported on a critical disk.** (41009)
-</dt> <dt>
-
-**Cannot convert the style of a disk with data or other known partitions on it.** (41013)
-</dt> <dt>
-
-**The disk is not large enough to support a GPT partition style.** (41014)
-</dt> <dt>
-
-**The specified object is managed by the Microsoft Failover Clustering component. The disk must be removed from the cluster to perform this operation.** (41019)
+**The storage provider cannot connect to the storage subsystem.** (46001)
 </dt> </dl>
 
 ## Requirements
@@ -134,7 +124,7 @@ This parameter allows the storage provider to return extended (implementation-sp
 
 <dl> <dt>
 
-[**MSFT\_Disk**](msft-disk.md)
+[**MSFT\_MaskingSet**](msft-maskingset.md)
 </dt> </dl>
 
  

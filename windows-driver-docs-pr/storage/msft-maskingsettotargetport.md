@@ -1,16 +1,16 @@
 ---
-title: MSFT\_DiskToPartition class
-description: Association between Disk and Partition.
-ms.assetid: 6d293eea-3c40-414d-bb05-c59a37ccb1e7
+title: MSFT\_MaskingSetToTargetPort class
+description: Association between MaskingSet and TargetPort.
+ms.assetid: CBB7BA43-8506-474C-BE1B-58326AAECD8F
 keywords:
-- MSFT_DiskToPartition class Windows Storage Management API
-- MSFT_DiskToPartition class Windows Storage Management API , described
+- MSFT_MaskingSetToTargetPort class Windows Storage Management API
+- MSFT_MaskingSetToTargetPort class Windows Storage Management API , described
 topic_type:
 - apiref
 api_name:
-- MSFT_DiskToPartition
-- MSFT_DiskToPartition.Disk
-- MSFT_DiskToPartition.Partition
+- MSFT_MaskingSetToTargetPort
+- MSFT_MaskingSetToTargetPort.MaskingSet
+- MSFT_MaskingSetToTargetPort.TargetPort
 api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
@@ -21,9 +21,9 @@ ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
 ---
 
-# MSFT\_DiskToPartition class
+# MSFT\_MaskingSetToTargetPort class
 
-Association between [**Disk**](msft-disk.md) and [**Partition**](msft-partition.md).
+Association between [**MaskingSet**](msft-maskingset.md) and [**TargetPort**](msft-targetport.md).
 
 The following syntax is simplified from Managed Object Format (MOF) code.
 
@@ -31,29 +31,29 @@ The following syntax is simplified from Managed Object Format (MOF) code.
 
 ``` syntax
 [Association]
-class MSFT_DiskToPartition
+class MSFT_MaskingSetToTargetPort
 {
-  MSFT_Disk      REF Disk;
-  MSFT_Partition REF Partition;
+  MSFT_MaskingSet REF MaskingSet;
+  MSFT_TargetPort REF TargetPort;
 };
 ```
 
 ## Members
 
-The **MSFT\_DiskToPartition** class has these types of members:
+The **MSFT\_MaskingSetToTargetPort** class has these types of members:
 
 -   [Properties](#properties)
 
 ### Properties
 
-The **MSFT\_DiskToPartition** class has these properties.
+The **MSFT\_MaskingSetToTargetPort** class has these properties.
 
 <dl> <dt>
 
-**Disk**
+**MaskingSet**
 </dt> <dd> <dl> <dt>
 
-Data type: **[**MSFT\_Disk**](msft-disk.md)**
+Data type: **MSFT\_MaskingSet**
 </dt> <dt>
 
 Access type: Read-only
@@ -64,10 +64,10 @@ Qualifiers: **Key**
 
 </dd> <dt>
 
-**Partition**
+**TargetPort**
 </dt> <dd> <dl> <dt>
 
-Data type: **[**MSFT\_Partition**](msft-partition.md)**
+Data type: **MSFT\_TargetPort**
 </dt> <dt>
 
 Access type: Read-only
@@ -95,10 +95,10 @@ Qualifiers: **Key**
 
 <dl> <dt>
 
-[**MSFT\_Disk**](msft-disk.md)
+[**MSFT\_MaskingSet**](msft-maskingset.md)
 </dt> <dt>
 
-[**MSFT\_Partition**](msft-partition.md)
+[**MSFT\_TargetPort**](msft-targetport.md)
 </dt> </dl>
 
  

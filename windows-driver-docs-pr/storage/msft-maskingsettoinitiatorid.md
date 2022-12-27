@@ -1,16 +1,16 @@
 ---
-title: MSFT\_DiskToPartition class
-description: Association between Disk and Partition.
-ms.assetid: 6d293eea-3c40-414d-bb05-c59a37ccb1e7
+title: MSFT\_MaskingSetToInitiatorId class
+description: Association between MaskingSet and InitiatorId.
+ms.assetid: 8D2D62DE-D7DB-4E22-9704-017B586988BE
 keywords:
-- MSFT_DiskToPartition class Windows Storage Management API
-- MSFT_DiskToPartition class Windows Storage Management API , described
+- MSFT_MaskingSetToInitiatorId class Windows Storage Management API
+- MSFT_MaskingSetToInitiatorId class Windows Storage Management API , described
 topic_type:
 - apiref
 api_name:
-- MSFT_DiskToPartition
-- MSFT_DiskToPartition.Disk
-- MSFT_DiskToPartition.Partition
+- MSFT_MaskingSetToInitiatorId
+- MSFT_MaskingSetToInitiatorId.MaskingSet
+- MSFT_MaskingSetToInitiatorId.InitiatorId
 api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
@@ -21,9 +21,9 @@ ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
 ---
 
-# MSFT\_DiskToPartition class
+# MSFT\_MaskingSetToInitiatorId class
 
-Association between [**Disk**](msft-disk.md) and [**Partition**](msft-partition.md).
+Association between [**MaskingSet**](msft-maskingset.md) and [**InitiatorId**](msft-initiatorid.md).
 
 The following syntax is simplified from Managed Object Format (MOF) code.
 
@@ -31,29 +31,29 @@ The following syntax is simplified from Managed Object Format (MOF) code.
 
 ``` syntax
 [Association]
-class MSFT_DiskToPartition
+class MSFT_MaskingSetToInitiatorId
 {
-  MSFT_Disk      REF Disk;
-  MSFT_Partition REF Partition;
+  MSFT_MaskingSet  REF MaskingSet;
+  MSFT_InitiatorId REF InitiatorId;
 };
 ```
 
 ## Members
 
-The **MSFT\_DiskToPartition** class has these types of members:
+The **MSFT\_MaskingSetToInitiatorId** class has these types of members:
 
 -   [Properties](#properties)
 
 ### Properties
 
-The **MSFT\_DiskToPartition** class has these properties.
+The **MSFT\_MaskingSetToInitiatorId** class has these properties.
 
 <dl> <dt>
 
-**Disk**
+**InitiatorId**
 </dt> <dd> <dl> <dt>
 
-Data type: **[**MSFT\_Disk**](msft-disk.md)**
+Data type: **MSFT\_InitiatorId**
 </dt> <dt>
 
 Access type: Read-only
@@ -64,10 +64,10 @@ Qualifiers: **Key**
 
 </dd> <dt>
 
-**Partition**
+**MaskingSet**
 </dt> <dd> <dl> <dt>
 
-Data type: **[**MSFT\_Partition**](msft-partition.md)**
+Data type: **MSFT\_MaskingSet**
 </dt> <dt>
 
 Access type: Read-only
@@ -95,10 +95,10 @@ Qualifiers: **Key**
 
 <dl> <dt>
 
-[**MSFT\_Disk**](msft-disk.md)
+[**MSFT\_InitiatorId**](msft-initiatorid.md)
 </dt> <dt>
 
-[**MSFT\_Partition**](msft-partition.md)
+[**MSFT\_MaskingSet**](msft-maskingset.md)
 </dt> </dl>
 
  

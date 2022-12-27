@@ -1,15 +1,15 @@
 ---
-title: ConvertStyle method of the MSFT\_Disk class
-description: Converts the partition style of an already initialized disk.
-ms.assetid: 38C1C3A0-DAB0-490F-A308-D0966364B728
+title: SetSecurityDescriptor method of the MSFT\_MaskingSet class
+description: Sets the security descriptor that controls access to the masking set object.
+ms.assetid: 5B15F67F-465A-4DA9-9B42-CAD79B272685
 keywords:
-- ConvertStyle method Windows Storage Management API
-- ConvertStyle method Windows Storage Management API , MSFT_Disk class
-- MSFT_Disk class Windows Storage Management API , ConvertStyle method
+- SetSecurityDescriptor method Windows Storage Management API
+- SetSecurityDescriptor method Windows Storage Management API , MSFT_MaskingSet class
+- MSFT_MaskingSet class Windows Storage Management API , SetSecurityDescriptor method
 topic_type:
 - apiref
 api_name:
-- MSFT_Disk.ConvertStyle
+- MSFT_MaskingSet.SetSecurityDescriptor
 api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
@@ -20,16 +20,16 @@ ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
 ---
 
-# ConvertStyle method of the MSFT\_Disk class
+# SetSecurityDescriptor method of the MSFT\_MaskingSet class
 
-Converts the partition style of an already initialized disk.
+Sets the security descriptor that controls access to the masking set object.
 
 ## Syntax
 
 
 ```mof
-UInt32 ConvertStyle(
-  [in]  UInt16 PartitionStyle,
+UInt32 SetSecurityDescriptor(
+  [in]  String SecurityDescriptor,
   [out] String ExtendedStatus
 );
 ```
@@ -40,18 +40,12 @@ UInt32 ConvertStyle(
 
 <dl> <dt>
 
-*PartitionStyle* \[in\]
+*SecurityDescriptor* \[in\]
 </dt> <dd>
 
-The new partition style for the disk. This parameter is required.
+A Security Descriptor Definition Language (SDDL) formatted string describing the access control list of the object. This parameter is required and cannot be NULL.
 
-<dl> <dt>
-
-<span id="MBR"></span><span id="mbr"></span>**MBR** (1)
-</dt> <dt>
-
-<span id="GPT"></span><span id="gpt"></span>**GPT** (2)
-</dt> </dl> </dd> <dt>
+</dd> <dt>
 
 *ExtendedStatus* \[out\]
 </dt> <dd>
@@ -84,38 +78,25 @@ This parameter allows the storage provider to return extended (implementation-sp
 **Invalid Parameter** (5)
 </dt> <dt>
 
-**Disk is in use** (6)
-</dt> <dt>
-
 **Access denied** (40001)
 </dt> <dt>
 
 **There are not enough resources to complete the operation.** (40002)
 </dt> <dt>
 
-**Cache out of date** (40003)
+**Cannot connect to the storage provider.** (46000)
 </dt> <dt>
 
-**The disk has not been initialized.** (41000)
-</dt> <dt>
-
-**The disk is read only.** (41002)
-</dt> <dt>
-
-**The disk is offline.** (41003)
-</dt> <dt>
-
-**Operation not supported on a critical disk.** (41009)
-</dt> <dt>
-
-**Cannot convert the style of a disk with data or other known partitions on it.** (41013)
-</dt> <dt>
-
-**The disk is not large enough to support a GPT partition style.** (41014)
-</dt> <dt>
-
-**The specified object is managed by the Microsoft Failover Clustering component. The disk must be removed from the cluster to perform this operation.** (41019)
+**The storage provider cannot connect to the storage subsystem.** (46001)
 </dt> </dl>
+
+## Remarks
+
+The user must have sufficient privileges to set the security descriptor.
+
+If the call is not made in the context of a user specified in the security descriptor's access control list, this method will fail with **Access Denied**.
+
+If an empty security descriptor is passed to this method, the behavior is left to the specific implementation as long as there is some user context (typically domain administrators) that can access and administer the object.
 
 ## Requirements
 
@@ -134,7 +115,7 @@ This parameter allows the storage provider to return extended (implementation-sp
 
 <dl> <dt>
 
-[**MSFT\_Disk**](msft-disk.md)
+[**MSFT\_MaskingSet**](msft-maskingset.md)
 </dt> </dl>
 
  
