@@ -11,7 +11,7 @@ This article provides guidance on how to write the kernel-mode driver portion of
 See also the following articles:
 
 * [Microsoft Compute Driver Model overview](mcdm.md)
-* [MDCM architecture](mcdm-architecture.md)
+* [MCDM architecture](mcdm-architecture.md)
 
 ## Driver INF file
 
