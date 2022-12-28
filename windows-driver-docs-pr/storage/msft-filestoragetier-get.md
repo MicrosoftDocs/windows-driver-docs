@@ -85,7 +85,7 @@ Only one of the input parameters is required to specify the file storage tier.
 
 
 
-|                                     |                                                                                           |
+| Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Minimum supported client<br/> | Windows 8.1 \[desktop apps only\]<br/>                                              |
 | Minimum supported server<br/> | Windows Server 2012 R2 \[desktop apps only\]<br/>                                   |
