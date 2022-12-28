@@ -4887,7 +4887,7 @@
     items: 
     - name: "Debugger-Related APIs"
       href: debugger-related-apis.md
-    - name: "Symbol Server API"
+    - name: "Symbol and Image File APIs"
       href: symbol-server-api.md
     - name: "The dbgeng.h Header File"
       href: the-dbgeng-h-header-file.md
