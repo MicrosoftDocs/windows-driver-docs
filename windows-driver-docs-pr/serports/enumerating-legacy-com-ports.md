@@ -12,10 +12,6 @@ ms.date: 04/20/2017
 
 # Enumerating Legacy COM Ports
 
-
-
-
-
 The Serial function driver currently enumerates legacy [COM ports](configuration-of-com-ports.md) that are specified in the registry. Most COM ports that Serial enumerates are legacy devices on multiport boards that do not have a microcontroller. Note that this enumeration function will be removed from Serial and included as part of Setup in a future release.
 
 Serial performs the following steps:
@@ -40,6 +36,7 @@ Serial performs the following steps:
 
 6.  Starts the legacy COM port.
 
+For general information on how to locate and work with Windows drivers registry keys, see [Registry Trees for Devices and Drivers](../install/overview-of-registry-trees-and-keys.md).
  
 
  

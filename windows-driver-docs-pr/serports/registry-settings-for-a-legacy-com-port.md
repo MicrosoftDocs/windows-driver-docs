@@ -11,15 +11,18 @@ ms.date: 04/20/2017
 
 # Registry Settings for a Legacy COM Port
 
+In older versions of Windows, a named serial COM port located on the case of a PC, the inbox Serial.sys and Serenum.sys drivers were used.
 
-
-
+> [!NOTE]
+> This topic describes programming traditional COM ports. For information on USB attached serial ports, see [USB serial driver (Usbser.sys)](../usbcon/usb-driver-installation-based-on-compatible-ids.md).
 
 This topic describes the registry settings that Serial uses with legacy [COM ports](configuration-of-com-ports.md). Serial always configures a legacy serial device as a COM port.
 
 Serial queries these entry values when it enumerates a legacy COM port. If a device-specific entry value is not present, Serial uses a Serial service value.
 
 The registry settings for a legacy COM port are under a corresponding legacy COM port subkey that is under the **..\\Services\\Serial\\Parameters** key.
+
+For general information on how to locate and work with Windows drivers registry keys, see [Registry Trees for Devices and Drivers](../install/overview-of-registry-trees-and-keys.md).
 
 The following entry values are the same as described for a [Plug and Play serial device](registry-settings-for-a-plug-and-play-serial-device.md):
 

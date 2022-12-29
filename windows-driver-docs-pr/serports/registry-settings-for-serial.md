@@ -11,9 +11,8 @@ ms.date: 04/20/2017
 
 # Registry Settings for Serial
 
-
-
-
+> [!NOTE]
+> This topic describes programming traditional COM ports. For information on USB attached serial ports, see [USB serial driver (Usbser.sys)](../usbcon/usb-driver-installation-based-on-compatible-ids.md).
 
 This section describes the following registry settings that Serial uses to configure a serial device:
 
@@ -31,7 +30,7 @@ Serial uses the registry settings to configure a serial device in the following 
 
 -   If a device-specific entry value is not present and there is no corresponding Serial service entry value, Serial uses a default service value that is statically defined in *serial.sys*.
 
- 
+For general information on how to locate and work with Windows drivers registry keys, see [Registry Trees for Devices and Drivers](../install/overview-of-registry-trees-and-keys.md). 
 
  
 
