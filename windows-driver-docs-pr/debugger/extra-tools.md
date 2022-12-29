@@ -1,94 +1,51 @@
 ---
-title: Tools Included in Debugging Tools for Windows
-description: Debugging Tools for Windows includes several tools in addition to the debugging engine and the Debugging Environments. The tools are in the installation directory of Debugging Tools for Windows.
-ms.date: 12/03/2019
+title: Tools included in Debugging Tools for Windows
+description: Learn about the tools that are included in Debugging Tools for Windows in addition to the debugging engine and debugging environments.
+ms.date: 12/15/2022
 ---
 
-# Tools Included in Debugging Tools for Windows
+# Tools included in Debugging Tools for Windows
 
-Debugging Tools for Windows includes several tools in addition to the debugging engine and the [Debugging Environments](debuggers-in-the-debugging-tools-for-windows-package.md). The tools are in the [installation directory](#installation-directories) of Debugging Tools for Windows.
+Debugging Tools for Windows includes several tools in addition to the debugging engine and [debugging environments](debuggers-in-the-debugging-tools-for-windows-package.md). The tools are in the [installation directory](#installation-directories) of Debugging Tools for Windows.
 
-## <span id="additional_tools_and_utilities"></span><span id="ADDITIONAL_TOOLS_AND_UTILITIES"></span>
+<a name="additional_tools_and_utilities"></a>
 
-<span id="DumpChk"></span><span id="dumpchk"></span><span id="DUMPCHK"></span>[DumpChk](dumpchk.md)  
-Validate a memory dump file.
+## Tools and utilities
 
-<span id="GFlags"></span><span id="gflags"></span><span id="GFLAGS"></span>[GFlags](gflags.md)  
-Control registry keys and other settings.
+| Name | Description |
+| --- | --- |
+| [DumpChk](dumpchk.md) | Validate a memory dump file. |
+| [GFlags](gflags.md) | Control registry keys and other settings. |
+| [Kill](kill-tool.md) | Terminate a process. |
+| [Logger and LogViewer](logger-and-logviewer.md) | Record and display function calls and other actions of a program. |
+| [PLMDebug](plmdebug.md) | Use the Windows debugger to debug Windows app that run under Process Lifecycle Management (PLM). With PLMDebug, you can take manual control of suspending, resuming, and terminating a Windows app. |
+| [Remote Tool](remote-tool.md) | Remotely control any console program, including KD, CDB, and NTSD. See [Remote debugging by using Remote.exe](remote-debugging-through-remote-exe.md). |
+| [TList](tlist.md) | List all running processes. |
+| [UMDH](umdh.md) | Analyze heap allocations. |
+| [USBView](usbview.md) | Display USB host controllers and connected devices. |
+| DbgRpc (Dbgrpc.exe) | Display Microsoft Remote Procedure Call (RPC) state information. See [RPC debugging](rpc-debugging.md) and [Using the DbgRpc tool](using-the-dbgrpc-tool.md). |
+| KDbgCtrl (Kernel Debugging Control, Kdbgctrl.exe) | Control and configure the kernel debugging connection. See [Using KDbgCtrl](using-kdbgctrl.md). |
+| [SrcSrv](srcsrv.md) | A source server that can be used to deliver source files while debugging. |
+| SymSrv | A symbol server that the debugger can use to connect to a symbol store. For information about working with the symbol server, see [Microsoft public symbols](microsoft-public-symbols.md). |
+| [SymProxy](symproxy.md) | Create a single HTTP symbol server on your network that all your debuggers can point to. This approach has the benefit of pointing to multiple symbol servers (both internal and external) with a single symbol path, handling all authentication, and increasing performance via symbol caching. *Symproxy.dll* is in the *SymProxy* folder in the [installation directory](#installation-directories). |
+| [SymChk](symchk.md) | Compare executable files to symbol files to verify that the correct symbols are available. |
+| [SymStore](symstore.md) | Create a symbol store. See [Using SymStore](symstore.md). |
+| [AgeStore](agestore.md) | Remove old entries in the downstream store of a symbol server or a source server. |
+| [DBH](dbh.md) | Display information about the contents of a symbol file. |
+| [PDBCopy](pdbcopy.md) | Remove private symbol information from a symbol file, and control that public symbols are included in the file. |
+| DbgSrv | A process server used for remote debugging. See [Process servers (user mode)](process-servers--user-mode-.md). |
+| KdSrv | A KD connection server used for remote debugging. See [KD connection servers (kernel mode)](kd-connection-servers--kernel-mode-.md). |
+| DbEngPrx | A repeater (small proxy server) used for remote debugging. See [Repeaters](repeaters.md). |
+| Breakin (Breakin.exe) | Causes a user-mode break to occur in a process. For help, open a Command Prompt window, go to the [installation directory](#installation-directories), and enter `breakin /?`. |
+| List (File List Utility) (List.exe) | For help, open a Command Prompt window, go to the [installation directory](#installation-directories), and enter `list /?`. |
+| RTList (Remote Task List Viewer) (Rtlist.exe) | List running processes via a DbgSrv process server. For help, open a Command Prompt window, go to the [installation directory](#installation-directories), and enter `rtlist /?`. |
 
-<span id="Kill"></span><span id="kill"></span><span id="KILL"></span>[Kill](kill-tool.md)  
-Terminate a process.
+<a name="installation-directories"></a>
 
-<span id="Logger_and_LogViewer"></span><span id="logger_and_logviewer"></span><span id="LOGGER_AND_LOGVIEWER"></span>[Logger and LogViewer](logger-and-logviewer.md)  
-Record and display function calls and other actions of a program.
+## Installation directory
 
-<span id="PLMDebug"></span><span id="plmdebug"></span><span id="PLMDEBUG"></span>[PLMDebug](plmdebug.md)  
-Use the Windows debugger to debug Windows app, which run under Process Lifecycle Management (PLM). With PLMDebug, you can take manual control of suspending, resuming, and terminating a Windows app.
+The default installation directory for 64-bit OS installations of the debugging tools is C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\. If you have a 32-bit OS, you can find the Windows Kits folder under C:\\Program Files. To determine whether you should use the 32-bit or 64-bit tools, see [Choosing the 32-bit or 64-bit debugging tools](choosing-a-32-bit-or-64-bit-debugger-package.md).
 
-<span id="Remote_Tool"></span><span id="remote_tool"></span><span id="REMOTE_TOOL"></span>[Remote Tool](remote-tool.md)  
-Remotely control any console program, including KD, CDB, and NTSD. See [Remote Debugging Through Remote.exe](remote-debugging-through-remote-exe.md).
+## Related topics
 
-<span id="TList"></span><span id="tlist"></span><span id="TLIST"></span>[TList](tlist.md)  
-List all running processes.
-
-<span id="UMDH"></span><span id="umdh"></span>[UMDH](umdh.md)  
-Analyze heap allocations.
-
-<span id="USBView"></span><span id="usbview"></span><span id="USBVIEW"></span>[USBView](usbview.md)  
-Display USB host controllers and connected devices.
-
-<span id="dbgrpc___dbgrpc.exe_"></span><span id="DBGRPC___DBGRPC.EXE_"></span>DbgRpc (Dbgrpc.exe)  
-Display Microsoft Remote Procedure Call (RPC) state information. See [RPC Debugging](rpc-debugging.md) and [Using the DbgRpc Tool](using-the-dbgrpc-tool.md).
-
-<span id="kdbgctrl___kernel_debugging_control__kdbgctrl.exe_"></span><span id="KDBGCTRL___KERNEL_DEBUGGING_CONTROL__KDBGCTRL.EXE_"></span>KDbgCtrl (Kernel Debugging Control, Kdbgctrl.exe)  
-Control and configure the kernel debugging connection. See [Using KDbgCtrl](using-kdbgctrl.md).
-
-<span id="SrcSrv"></span><span id="srcsrv"></span><span id="SRCSRV"></span>[SrcSrv](srcsrv.md)  
-A source server that can be used to deliver source files while debugging.
-
-<span id="SymSrv"></span><span id="symsrv"></span><span id="SYMSRV"></span>SymSrv  
-A symbol server that the debugger can use to connect to a symbol store.  For information about working with the symbol server, see see [Microsoft Public Symbols](microsoft-public-symbols.md).
-
-<span id="SymProxy"></span><span id="symproxy"></span><span id="SYMPROXY"></span>[SymProxy](symproxy.md)  
-Create a single HTTP symbol server on your network that all your debuggers can point to. This has the benefit of pointing to multiple symbol servers (both internal and external) with a single symbol path, handling all authentication, and increasing performance via symbol caching. Symproxy.dll is in the SymProxy folder in the [installation directory](#installation-directories).
-
-<span id="SymChk"></span><span id="symchk"></span><span id="SYMCHK"></span>[SymChk](symchk.md)  
-Compare executable files to symbol files to verify that the correct symbols are available.
-
-<span id="SymStore"></span><span id="symstore"></span><span id="SYMSTORE"></span>[SymStore](symstore.md)  
-Create a symbol store. See [Using SymStore](symstore.md).
-
-<span id="AgeStore"></span><span id="agestore"></span><span id="AGESTORE"></span>[AgeStore](agestore.md)  
-Removes old entries in the downstream store of a symbol server or a source server.
-
-<span id="DBH"></span><span id="dbh"></span>[DBH](dbh.md)  
-Display information about the contents of a symbol file.
-
-<span id="PDBCopy"></span><span id="pdbcopy"></span><span id="PDBCOPY"></span>[PDBCopy](pdbcopy.md)  
-Remove private symbol information from a symbol file, and control which public symbols are included in the file.
-
-<span id="DbgSrv__"></span><span id="dbgsrv__"></span><span id="DBGSRV__"></span>DbgSrv   
-A process server used for remote debugging. See [Process Servers (User Mode)](process-servers--user-mode-.md).
-
-<span id="KdSrv"></span><span id="kdsrv"></span><span id="KDSRV"></span>KdSrv  
-A KD connection server used for remote debugging.See [KD Connection Servers (Kernel Mode)](kd-connection-servers--kernel-mode-.md).
-
-<span id="DbEngPrx"></span><span id="dbengprx"></span><span id="DBENGPRX"></span>DbEngPrx  
-A repeater (small proxy server) used for remote debugging. See [Repeaters](repeaters.md).
-
-<span id="breakin___breakin.exe_"></span><span id="BREAKIN___BREAKIN.EXE_"></span>Breakin (Breakin.exe)  
-Causes a user-mode break to occur in a process. For help, open a Command Prompt window, navigate to the [installation directory](#installation-directories), and enter **breakin /?**.
-
-<span id="list___file_list_utility___list.exe_"></span><span id="LIST___FILE_LIST_UTILITY___LIST.EXE_"></span>List (File List Utility) (List.exe)  
-For help, open a Command Prompt window, navigate to the [installation directory](#installation-directories), and enter **list /?**.
-
-<span id="rtlist___remote_task_list_viewer___rtlist.exe_"></span><span id="RTLIST___REMOTE_TASK_LIST_VIEWER___RTLIST.EXE_"></span>RTList (Remote Task List Viewer) (Rtlist.exe)  
-List running processes via a DbgSrv process server. For help, open a Command Prompt window, navigate to the [installation directory](#installation-directories), and enter **rtlist /?**.
-
-## <span id="installation-directories"></span><span id="INSTALLATION-DIRECTORIES"></span>Installation Directory
-
-The default installation directory for 64 bit OS installs for the debugging tools is C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\. If you have a 32-bit OS, you can find the Windows Kits folder under C:\\Program Files. To determine if you should use the 32 bit or 64 bit tools, see [Choosing the 32-Bit or 64-Bit Debugging Tools](choosing-a-32-bit-or-64-bit-debugger-package.md).
-
-## <span id="related_topics"></span>Related topics
-
-[Tools Related to Debugging Tools for Windows](tools-related-to-debugging-tools-for-windows.md)
+[Tools related to Debugging Tools for Windows](tools-related-to-debugging-tools-for-windows.md)
