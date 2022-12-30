@@ -1,114 +1,81 @@
 ---
-title: Forcing a System Crash from the Keyboard
-description: Forcing a System Crash from the Keyboard
+title: Forcing a system crash from the keyboard
+description: Learn how to configure your settings to force a system crash from the PS/2, USB, and Hyper-V keyboard types.
 keywords: ["boot process, causing system crash from keyboard", "CTRL+SCROLL LOCK", "system crash, causing from keyboard", "bug check, causing from keyboard", "keyboard-caused system crash", "USB keyboard and system crash", "PS/2 keyboard and system crash", "forcing system crash from keyboard"]
-ms.date: 11/03/2022
+ms.date: 12/09/2022
 ---
 
-# Forcing a System Crash from the Keyboard
+# Forcing a system crash from the keyboard
 
 The following types of keyboards can cause a system crash directly:
 
-#### PS/2 keyboards connected on i8042prt ports
+- **PS/2 keyboards connected on i8042prt ports**   
+  This feature is available in Windows 2000 and later versions of the Windows operating system.
 
-This feature is available in Windows 2000 and later versions of Windows operating system.
+- **USB keyboards**  
+  This feature is available in Windows Vista and later versions of the Windows operating system.
 
-#### USB keyboards
+- **Hyper-V keyboards**  
+  This feature is available in Windows 10 version 1903 and later versions of the Windows operating system.
 
-This feature is available in Windows Vista and later versions of Windows operating system.
+## Configuration
 
-#### Hyper-V keyboards
+Configure the following settings to enable a system crash using the keyboard:
 
-This feature is available in Windows 10 version 1903 and later versions of Windows operating system.
+1. If you want a crash dump file to be written, you must enable such dump files. Choose the path and file name, and select the size of the dump file. For more information, see [Enabling a kernel-mode dump file](enabling-a-kernel-mode-dump-file.md).
 
-### Configuration
+2. With PS/2 keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\i8042prt\Parameters**, create a value named `CrashOnCtrlScroll`, and set it equal to a `REG_DWORD` value of 0x01.
 
-Configure the following settings to enable the a system crash using keyboard:
+3. With USB keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\kbdhid\Parameters**, create a value named `CrashOnCtrlScroll`, and set it equal to a `REG_DWORD` value of 0x01.
 
-1. If you wish a crash dump file to be written, you must enable such dump files, choose the path and file name, and select the size of the dump file. For more information, see [Enabling a Kernel-Mode Dump File](enabling-a-kernel-mode-dump-file.md).
-
-2. With PS/2 keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\i8042prt\\Parameters**, create a value named **CrashOnCtrlScroll**, and set it equal to a REG\_DWORD value of 0x01.
-
-3. With USB keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\kbdhid\\Parameters,** create a value named **CrashOnCtrlScroll**, and set it equal to a REG\_DWORD value of 0x01.
-
-4. With Hyper-V keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\hyperkbd\Parameters**, create a value named **CrashOnCtrlScroll**, and set it equal to a REG_DWORD value of 0x01.
+4. With Hyper-V keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\hyperkbd\Parameters**, create a value named `CrashOnCtrlScroll`, and set it equal to a `REG_DWORD` value of 0x01.
 
 You must restart the system for these settings to take effect.
 
-After this is completed, the keyboard crash can be initiated by using the following hotkey sequence: Hold down the rightmost CTRL key, and press the SCROLL LOCK key twice.
+Once the restart is completed, the keyboard crash can be initiated by using the following hotkey sequence: Hold down the rightmost CTRL key, and press the SCROLL LOCK key twice.
 
-The system then calls **KeBugCheck** and issues [Bug Check 0xE2: MANUALLY_INITIATED_CRASH](bug-check-0xe2--manually-initiated-crash.md). Unless crash dumps have been disabled, a crash dump file is written at this point.
+The system then calls `KeBugCheck` and issues [Bug check 0xE2: MANUALLY_INITIATED_CRASH](bug-check-0xe2--manually-initiated-crash.md). Unless crash dumps have been disabled, a crash dump file is then written.
 
 If a kernel debugger is attached to the crashed machine, the machine will break into the kernel debugger after the crash dump file has been written.
 
-### Defining Alternate Keyboard Shortcuts to Force a System Crash from the Keyboard
+## Defining alternate keyboard shortcuts to force a system crash from the keyboard
 
 You can configure values under the following registry subkeys for different keyboard shortcut sequences to generate the memory dump file:
 
 - For PS/2 keyboards:
 
-    **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\i8042prt\\crashdump**
+    **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt\crashdump**
 
 - For USB keyboards:
 
-    **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\kbdhid\\crashdump**
+    **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdhid\crashdump**
 
 - For Hyper-V keyboards:
 
     **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\hyperkbd\crashdump**
 
-You must create the following registry REG\_DWORD values under these subkeys:
+You must create the following registry `REG_DWORD` values under these subkeys:
 
-#### Dump1Keys   
+## Dump1Keys
 
-The **Dump1Keys** registry value is a bit map of the first hot key to use. For example, instead of using the rightmost CTRL key to initiate the hot key sequence, you can set the first hot key to be the leftmost SHIFT key.
+The `Dump1Keys` registry value is a bit map of the first hot key to use. For example, instead of using the rightmost CTRL key to initiate the hot key sequence, you can set the first hot key to be the leftmost SHIFT key.
 
 The values for the first hot key are described in the following table.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Value</th>
-<th align="left">First key used in the keyboard shortcut sequence</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>0x01</p></td>
-<td align="left"><p>Rightmost SHIFT key</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0x02</p></td>
-<td align="left"><p>Rightmost CTRL key</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>0x04</p></td>
-<td align="left"><p>Rightmost ALT key</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0x10</p></td>
-<td align="left"><p>Leftmost SHIFT key</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>0x20</p></td>
-<td align="left"><p>Leftmost CTRL key</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>0x40</p></td>
-<td align="left"><p>Leftmost ALT key</p></td>
-</tr>
-</tbody>
-</table>
+| Value | First Key used in the keyboard shortcut sequence |
+|---|---|
+| 0x01 | Rightmost SHIFT key |
+| 0x02 | Rightmost CTRL key |
+| 0x04 | Rightmost ALT key |
+| 0x10 | Leftmost SHIFT key |
+| 0x20 | Leftmost CTRL key |
+| 0x40 | Leftmost ALT key |
 
-You can assign **Dump1Keys** a value that enables one or more keys as the first key used in the keyboard shortcut sequence. For example, assign **Dump1Keys** a value of 0x11 to define both the rightmost and leftmost SHIFT keys as the first key in the keyboard shortcut sequence.
+You can assign `Dump1Keys` a value that enables one or more keys as the first key used in the keyboard shortcut sequence. For example, assign `Dump1Keys` a value of 0x11 to define both the rightmost and leftmost SHIFT keys as the first key in the keyboard shortcut sequence.
 
 **Dump2Key**  
 
-The **Dump2Key** registry value is the index into the scancode table for the keyboard layout of the target computer. The following is the actual table in the driver.
+The `Dump2Key` registry value is the index into the scan code table for the keyboard layout of the target computer. See the actual table in the driver:
 
 ```cpp
 const UCHAR keyToScanTbl[134] = { 
@@ -130,10 +97,10 @@ const UCHAR keyToScanTbl[134] = {
 
 Index 124 (sysreq) is a special case because an 84-key keyboard has a different scan code.
 
-If you define alternate keyboard shortcuts to force a system crash from a USB or PS/2 keyboard, you must either set the **CrashOnCtrlScroll** registry value to 0 or remove it from the registry.
+If you define alternate keyboard shortcuts to force a system crash from a USB or PS/2 keyboard, you must either set the `CrashOnCtrlScroll` registry value to 0 or remove it from the registry.
 
-### Limitations
+## Limitations
 
-It is possible for a system to freeze in such a way that the keyboard shortcut sequence will not work. However, this should be a very rare occurrence. Using the keyboard shortcut sequence to initiate a crash will work even in many instances where CTRL+ALT+DELETE does not work.
+It's possible but rare for a system to freeze in such a way that the keyboard shortcut sequence doesn't work. Using the keyboard shortcut sequence to initiate a crash will work even in many instances where CTRL+ALT+DELETE doesn't work.
 
-Forcing a system crash from the keyboard does not work if the computer stops responding at a high interrupt request level (IRQL). This limitation exists because the Kbdhid.sys driver, which allows the memory dump process to run, operates at a lower IRQL than the i8042prt.sys driver.
+Forcing a system crash from the keyboard doesn't work if the computer stops responding at a high interrupt request level (IRQL). This limitation exists because the Kbdhid.sys driver, which allows the memory dump process to run, operates at a lower IRQL than the i8042prt.sys driver.
