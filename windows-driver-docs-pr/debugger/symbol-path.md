@@ -2,7 +2,7 @@
 title: Symbol path for Windows debuggers
 description: Learn how the symbol path specifies locations where Windows debuggers, such as WinDbg, KD, CDB, and NTST, look for symbol files. 
 keywords: symbol files and paths, symbols, lazy symbol loading, deferred symbol loading, symbol path
-ms.date: 12/15/2022
+ms.date: 12/29/2022
 ---
 
 # Symbol path for Windows debuggers
@@ -13,17 +13,21 @@ Some compilers, including Microsoft Visual Studio, put symbol files in the same 
 
 In most other situations, you need to set the symbol path to point to your symbol file locations.
 
+ >[!TIP]
+ > Use [.symfix](-symfix--set-symbol-store-path-.md) to set a default path to the public Microsoft public symbol server that works well in many situations.
+
+
 ## Symbol path syntax
 
 The debugger's symbol path is a string that consists of multiple directory paths separated by semicolons. For example, `C:\Dir1;C:\Dir2\DirA;C:\Dir2\DirB`.
 
 Relative paths are supported. However, you should add a drive letter or a network share before each path, unless you always start the debugger from the same directory. Network shares are also supported.
 
-For each directory in the symbol path, the debugger looks in three directories. For example, if the symbol path includes `c:\Dir1` and the debugger is looking for symbol information for a DLL, the debugger looks for symbol information in the following directories, listed in order:
+For each directory in the symbol path, the debugger looks in three directories. For example, if the symbol path includes `C:\Dir1` and the debugger is looking for symbol information for a DLL, the debugger looks for symbol information in the following directories, listed in order:
 
-1. `c:\Dir1\symbols\dll`
-2. `c:\Dir1\dll`
-3. `c:\Dir1`
+- `C:\Dir1\symbols\dll`
+- `C:\Dir1\dll`
+- `C:\Dir1`
 
 The debugger then repeats this process for each directory in the symbol path. Finally, the debugger looks in the current directory and then in the current directory with `..\dll` appended to it. The debugger appends `..\dll`, `..\exe`, or `..\sys`, depending on which binaries it's debugging.
 
@@ -46,7 +50,7 @@ If you include the string `cache*localsymbolcache;` in your symbol path, symbols
 For example, the following command tells the debugger to obtain symbols from the network share `\\someshare` and cache the symbols in the `c:\MySymbols` directory.
 
 ```dbgcmd
-.sympath cache*c:\MySymbols;\\someshare
+.sympath cache*C:\MySymbols;\\someshare
 ```
 
 ## Using a symbol server: srv*
@@ -74,13 +78,13 @@ If you're connected to the Internet or a corporate network, the most efficient w
   If you include the string `srv*localcache*symbolstore` in your symbol path, the debugger uses a symbol server to get symbols from the *symbolstore* and caches them in the *localcache* directory. For example, the following command tells the debugger to get symbols from the [Microsoft symbol server](https://msdl.microsoft.com/download/symbols) store and cache the symbols in `c:\MyServerSymbols`.
 
   ```dbgcmd
-  .sympath srv*c:\MyServerSymbols*https://msdl.microsoft.com/download/symbols
+  .sympath srv*C:\MyServerSymbols*https://msdl.microsoft.com/download/symbols
   ```
 
 If you have a directory on your computer where you manually place symbols, don't use that directory as the cache for symbols obtained from a symbol server. Instead, use two separate directories. For example, you can manually place symbols in `c:\MyRegularSymbols` and then designate `c:\MyServerSymbols` as a cache for symbols obtained from a server. The following example shows how to specify both directories in your symbol path.
 
 ```dbgcmd
-.sympath c:\MyRegularSymbols;srv*c:\MyServerSymbols*https://msdl.microsoft.com/download/symbols
+.sympath C:\MyRegularSymbols;srv*C:\MyServerSymbols*https://msdl.microsoft.com/download/symbols
 ```
 
 For more information about symbol servers and symbol stores, see [Custom symbol stores and symbol servers](symbol-stores-and-symbol-servers.md).
@@ -99,7 +103,7 @@ For example, the following command tells the debugger to get symbols from the [M
 
 
 ```dbgcmd
-.sympath cache*c:\MySymbols;srv*https://msdl.microsoft.com/download/symbols
+.sympath cache*C:\MySymbols;srv*https://msdl.microsoft.com/download/symbols
 ```
 
 ## Use AgeStore to reduce the cache size
@@ -124,7 +128,9 @@ A symbol server is available with [Azure Artifacts in Azure DevOps Services](/az
 
 To control the symbol path, you can select one of the following methods:
 
-* Use the [.sympath command](-sympath--set-symbol-path-.md) to display, set, change, or append to the path. The [.symfix set symbol store path command](-symfix--set-symbol-store-path-.md) is similar to `.sympath` but saves you some typing.
+* Use the [.symfix set symbol store path command](-symfix--set-symbol-store-path-.md) to set a default path to the public Microsoft symbol server that works well in many situations. To set a local cache, just type `.symfix C:\MyCache`.
+
+* Use the [.sympath command](-sympath--set-symbol-path-.md) to display, set, change, or append to the path. 
 
 * Before you start the debugger, use the `_NT_SYMBOL_PATH` and `_NT_ALT_SYMBOL_PATH` [environment variables](environment-variables.md) to set the path. The symbol path is created by appending `_NT_SYMBOL_PATH` after `_NT_ALT_SYMBOL_PATH`. Typically, the path is set through the `_NT_SYMBOL_PATH`. However, you might want to use `_NT_ALT_SYMBOL_PATH` to override these settings in special cases, such as if you have private versions of shared symbol files. If you try to add an invalid directory through these environment variables, the debugger ignores this directory.
 
@@ -133,6 +139,10 @@ To control the symbol path, you can select one of the following methods:
 * In WinDbg only, you can use the [File | Symbol File Path command](file---symbol-file-path.md) or press `CTRL+S` to display, set, change, or append to the path.
 
 If you use the [-sins command-line option](command-line-options.md), the debugger ignores the symbol path environment variable.
+
+## Troubleshooting
+
+Use [**!sym noisy**](-sym.md) or the *-n* [**WinDbg Command-Line Option**](windbg-command-line-options.md) to display additional detail as symbols are loaded. For additional troubleshooting strategies, see [Verifying Symbols](verifying-symbols.md).
 
 ## See also
 
