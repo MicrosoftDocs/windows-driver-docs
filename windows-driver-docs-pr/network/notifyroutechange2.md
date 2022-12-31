@@ -117,7 +117,7 @@ The invocation of the callback function that is specified in the *Callback* para
 </tbody>
 </table>
 
-To deregister the driver for change notifications, call the [**CancelMibChangeNotify2**](cancelmibchangenotify2.md) function, passing the *NotificationHandle* parameter that [**NotifyUnicastIpAddressChange**](notifyunicastipaddresschange.md) returns.
+To deregister the driver for change notifications, call the [**CancelMibChangeNotify2**](cancelmibchangenotify2.md) function, passing the *NotificationHandle* parameter that **NotifyRouteChange2** returns.
 
 ## Requirements
 
