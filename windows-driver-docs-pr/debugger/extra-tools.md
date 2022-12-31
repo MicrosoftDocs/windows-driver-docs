@@ -21,7 +21,6 @@ Debugging Tools for Windows includes several tools in addition to the debugging 
 | List (File List Utility) | For help, open a Command Prompt window, go to the [installation directory](#installation-directories), and enter `list /?`. |
 | [Logger and LogViewer](logger-and-logviewer.md) | Record and display function calls and other actions of a program. |
 | [PLMDebug](plmdebug.md) | Use the Windows debugger to debug Windows app that run under Process Lifecycle Management (PLM). With PLMDebug, you can take manual control of suspending, resuming, and terminating a Windows app. |
-| List (File List Utility) | For help, open a Command Prompt window, go to the [installation directory](#installation-directories), and enter `list /?`. |
 | [TList](tlist.md) | List all running processes. |
 | [UMDH](umdh.md) | Analyze heap allocations. |
 | [USBView](usbview.md) | Display USB host controllers and connected devices. |
