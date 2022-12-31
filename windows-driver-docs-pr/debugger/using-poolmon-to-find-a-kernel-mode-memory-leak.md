@@ -7,7 +7,7 @@ ms.date: 12/30/2022
 
 # Use PoolMon to find a kernel-mode memory leak
 
-If you suspect there's a kernel-mode memory leak, you can use the PoolMon tool to easily determine which pool tag is associated with the leak.
+If you suspect there's a kernel-mode memory leak, you can use the PoolMon tool to determine which pool tag is associated with the leak.
 
 PoolMon (Poolmon.exe) monitors pool memory usage by pool tag name. This tool is included in the Windows Driver Kit (WDK). For more information, see [PoolMon](../devtest/poolmon.md).
 

@@ -1,7 +1,7 @@
 ---
 title: Tools included in Debugging Tools for Windows
 description: Learn about the tools that are included in Debugging Tools for Windows in addition to the debugging engine and debugging environments.
-ms.date: 12/29/2022
+ms.date: 12/30/2022
 ---
 
 # Tools included in Debugging Tools for Windows
@@ -18,6 +18,7 @@ Debugging Tools for Windows includes several tools in addition to the debugging 
 | [DumpChk](dumpchk.md) | Validate a memory dump file. |
 | [GFlags](gflags.md) | Control registry keys and other settings. |
 | [Kill](kill-tool.md) | Terminate a process. |
+| List (File List Utility) | For help, open a Command Prompt window, go to the [installation directory](#installation-directories), and enter `list /?`. |
 | [Logger and LogViewer](logger-and-logviewer.md) | Record and display function calls and other actions of a program. |
 | [PLMDebug](plmdebug.md) | Use the Windows debugger to debug Windows app that run under Process Lifecycle Management (PLM). With PLMDebug, you can take manual control of suspending, resuming, and terminating a Windows app. |
 | List (File List Utility) | For help, open a Command Prompt window, go to the [installation directory](#installation-directories), and enter `list /?`. |
@@ -48,7 +49,6 @@ Debugging Tools for Windows includes several tools in addition to the debugging 
 | DbEngPrx | A repeater (small proxy server) used for remote debugging. See [Repeaters](repeaters.md). |
 | KDbgCtrl (Kernel Debugging Control) | Control and configure the kernel debugging connection. See [Using KDbgCtrl](using-kdbgctrl.md). |
 | KdSrv | A KD connection server used for remote debugging. See [KD connection servers (kernel mode)](kd-connection-servers--kernel-mode-.md). |
-| List (File List Utility) | For help, open a Command Prompt window, go to the [installation directory](#installation-directories), and enter `list /?`. |
 | RTList (Remote Task List Viewer) | List running processes via a DbgSrv process server. For help, open a Command Prompt window, go to the [installation directory](#installation-directories), and enter `rtlist /?`. |
 | [Remote](remote-tool.md) | Remotely control any console program, including KD, CDB, and NTSD. See [Remote debugging by using Remote.exe](remote-debugging-through-remote-exe.md). |
 

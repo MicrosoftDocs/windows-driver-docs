@@ -2,7 +2,7 @@
 title: User-mode dump files
 description: Get an overview of user-mode dump files and how to use them to help resolve bugs and crashes.
 keywords: ["dump file, user-mode"]
-ms.date: 12/15/2022
+ms.date: 12/30/2022
 ---
 
 # User-mode dump files
@@ -20,10 +20,7 @@ Several types of user-mode crash dump files are available. The different types o
 - [Full user-mode dumps](#full)
 - [Minidumps](#minidumps)
 
-The difference between these dump file categories is size. Minidumps usually are more compact, and you can easily send them to an analyst.
-
-> [!NOTE]
-> You can get a substantial amount of information by analyzing a dump file. However, no dump file can provide the amount of information you get from debugging the crash by using a debugger.
+You can get a substantial amount of information by analyzing a dump file. However, no dump file can provide the amount of information you get from debugging the crash by using a debugger.
 
 <a name="full"></a>
 
@@ -38,18 +35,15 @@ A *full user-mode dump* is the basic user-mode dump file. A full user-mode dump 
 
 You can *shrink* a full user-mode dump file into a minidump. To shrink a full user-mode dump file, first, load the dump file in the debugger. Then, use the [.dump (Create Dump File)](-dump--create-dump-file-.md) command to save a new dump file in minidump format.
 
-> [!NOTE]
-> Despite their names, the largest minidump file contains more information than the full user-mode dump file. For example, the `.dump /mf` and `.dump /ma` commands create larger and more complete files than the `.dump /f` command.
+Despite their names, the largest minidump file contains more information than the full user-mode dump file. For example, the `.dump /mf` and `.dump /ma` commands create larger and more complete files than the `.dump /f` command.
 
-In user mode, `.dump /m`\[*MiniOptions*\] is the best choice. The dump files you create by using this switch might vary in size from very small to very large. By specifying the correct *MiniOptions* switch, you can control exactly what information is included.
+In user mode, `.dump /m`\[*MiniOptions*\] is often the best choice. The dump files you create by using this switch might vary in size from very small to very large. By specifying the correct *MiniOptions* switch, you can control exactly what information is included.
 
 <a name="minidumps"></a>
 
 ### Minidumps
 
-A user-mode dump file that includes only selected parts of the memory associated with a process is called a *minidump*.
-
-The size and contents of a minidump file vary depending on the program being dumped and the application doing the dumping. Sometimes, a minidump file is moderately large and includes the full memory and handle table. Other times, the minidump file is much smaller. For example, a minidump file might contain only information about a single thread, or it might contain only information about modules that are referenced in the stack.
+The size and contents of a minidump file vary depending on the program being dumped and the application doing the dumping and the options selected. Sometimes, a minidump file is moderately large and includes the full memory and handle table. Other times, the minidump file is much smaller. For example, a minidump file might contain only information about a single thread, or it might contain only information about modules that are referenced in the stack.
 
 The term *minidump* is misleading because the largest minidump files contain more information than a full user-mode dump file. For example, `.dump /mf` or `.dump /ma` creates a larger and more complete file than `.dump /f`. For this reason, we recommend that you use `.dump /m`\[*MiniOptions*\] instead of `.dump /f` to create all user-mode dump files.
 
@@ -70,9 +64,8 @@ If you create a minidump file by using the debugger, you can choose what informa
 | `/mc` | Adds code sections within images.|
 | `/mr` | Deletes from the minidump portions of the stack and store memory that aren't used to re-create the stack trace. Local variables and other data type values are also deleted. This option doesn't make the minidump smaller (the unused memory sections are zeroed), but it's useful if you want to protect the privacy of other applications.|
 | `/mR` | Deletes the full module paths from the minidump. Only module *names* are included. This option is useful if you want to protect the privacy of the user's directory structure. |
-| `/mk` | *FileName* (Windows Vista only). Creates a user-mode minidump *and* a kernel-mode minidump. The kernel-mode minidump is restricted to the same threads that are stored in the user-mode minidump. *FileName* must be enclosed in quotation marks. |
 
-You can combine these switch options. For example, use the command `.dump /mfiu` to create a moderately large minidump. Use the command `.dump /mrR` to create a minidump that preserves the user's privacy. For full syntax details, see [.dump (Create Dump File)](-dump--create-dump-file-.md).
+You can combine these switch options. For example, use the command `.dump /mfiu` to create a moderately large minidump that contains unloaded and secondary memory. Use the command `.dump /mrR` to create a minidump that removes some of the user's information. For full syntax details, see [.dump (Create Dump File)](-dump--create-dump-file-.md).
 
 ## Tools to use to create a dump file
 
@@ -118,7 +111,7 @@ You can use CDB or WinDbg to shrink a dump file. To shrink a dump file, begin de
 
 Another option to debug user-mode applications is Time Travel Debugging (TTD). TTD is a tool you can use to record your process while it runs. You can replay the recording of the debugger session to find the bug. You can easily go to different parts of the recording to understand conditions that led up to the bug and how to fix the problem.
 
-TTD has some advantages over crash dump files, which often are missing the code execution that led to the process failure.
+TTD has significant advantages over crash dump files, which often are missing the code execution that led to the failure. The ability to travel backwards in the code execution, can be useful in determining the root cause.
 
 For more information, see the [Time Travel Debugging overview](time-travel-debugging-overview.md).
 
