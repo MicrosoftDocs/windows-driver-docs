@@ -1,6 +1,6 @@
 ---
 title: SetStorageSubSystem method of the PS\_StorageCmdlets class
-description: .
+description: SetStorageSubSystem method of the PS_StorageCmdlets class.
 ms.assetid: 56669657-A779-4F44-B776-BCFF8DCBD7F5
 keywords:
 - SetStorageSubSystem method Windows Storage Management API

@@ -886,6 +886,14 @@
             href: msft-storagedepartureevent.md
           - name: MSFT_StorageDiagnoseResult
             href: msft-storagediagnoseresult.md
+          - name: MSFT_StorageEnclosure
+            items:
+            - name: MSFT_StorageEnclosure
+              href: msft-storageenclosure.md
+            - name: GetVendorData method
+              href: msft-storageenclosure-getvendordata.md
+            - name: IdentifyElement method
+              href: msft-storageenclosure-identifyelement.md
           - name: MSFT_StorageEnclosureToPhysicalDisk
             href: msft-storageenclosuretophysicaldisk.md
           - name: MSFT_StorageEvent
@@ -1002,6 +1010,40 @@
               href: msft-storagesetting-set.md
             - name: UpdateHostStorageCache method
               href: msft-storagesetting-updatehoststoragecache.md
+          - name: MSFT_StorageSubSystem
+            items:
+            - name: MSFT_StorageSubSystem
+              href: msft-storagesubsystem.md
+            - name: CreateFileServer method
+              href: msft-storagesubsystem-createfileserver.md
+            - name: CreateMaskingSet Method
+              href: msft-storagesubsystem-createmaskingset.md
+            - name: CreateReplicationGroup method
+              href: msft-storagesubsystem-createreplicationgroup.md
+            - name: CreateReplicationRelationship method
+              href: msft-storagesubsystem-createreplicationrelationship.md
+            - name: CreateStoragePool Method
+              href: createstoragepool-msft-storagesubsystem.md
+            - name: CreateVirtualDisk Method
+              href: msft-storagesubsystem-createvirtualdisk.md
+            - name: DeleteReplicationRelationship method
+              href: msft-storagesubsystem-deletereplicationrelationship.md
+            - name: Diagnose method
+              href: msft-storagesubsystem-diagnose.md
+            - name: GetDiagnosticInfo method
+              href: msft-storagesubsystem-getdiagnosticinfo.md
+            - name: GetSecurityDescriptor Method
+              href: msft-storagesubsystem-getsecuritydescriptor.md
+            - name: SetAttributes method
+              href: msft-storagesubsystem-setattributes.md
+            - name: SetDescription method
+              href: msft-storagesubsystem-setdescription.md
+            - name: SetSecurityDescriptor Method
+              href: msft-storagesubsystem-setsecuritydescriptor.md
+            - name: StartDiagnosticLog method
+              href: msft-storagesubsystem-startdiagnosticlog.md
+            - name: StopDiagnosticLog method
+              href: msft-storagesubsystem-stopdiagnosticlog.md
           - name: MSFT_StorageSubSystemToDisk
             href: msft-storagesubsystemtodisk.md
           - name: MSFT_StorageSubSystemToFileServer

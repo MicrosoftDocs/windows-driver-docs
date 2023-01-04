@@ -1,6 +1,6 @@
 ---
 title: SetStorageTier method of the PS\_StorageCmdlets class
-description: .
+description: SetStorageTier method of the PS_StorageCmdlets class.
 ms.assetid: E5BA4821-782F-49D7-AF32-20EB8FD6EAA4
 keywords:
 - SetStorageTier method Windows Storage Management API

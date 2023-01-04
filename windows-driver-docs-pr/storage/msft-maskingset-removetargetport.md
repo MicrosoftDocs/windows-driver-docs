@@ -14,12 +14,9 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.technology: desktop
-ms.prod: windows
 ms.author: windowssdkdev
 ms.topic: article
 ms.date: 05/31/2018
-ROBOTS: INDEX,FOLLOW
 ---
 
 # RemoveTargetPort method of the MSFT\_MaskingSet class
