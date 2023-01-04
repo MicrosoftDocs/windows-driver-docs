@@ -42,6 +42,8 @@ To identify a specific cause of the error, an understanding of the [WHEA\_ERROR\
 | 0xE         | Address of WHEA_ERROR_RECORD structure | Reserved | Reserved | BMC (baseboard management controller) error info. |
 | 0xF         | Address of WHEA_ERROR_RECORD structure | Reserved | Reserved | ARS PMEM (address range scrubbing persistent memory) error source.|
 | 0x10        | Address of WHEA_ERROR_RECORD structure | Reserved | Reserved | Device driver error source. |
+| 0x11        | Address of WHEA_ERROR_RECORD structure | Reserved | Reserved | Arm Synchronous External Abort. |
+| 0x12        | Address of WHEA_ERROR_RECORD structure | Reserved | Reserved | Arm SError Interrupt. |
 
 ## Cause
 
