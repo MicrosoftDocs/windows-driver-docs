@@ -14,8 +14,8 @@ ms.date: 06/01/2022
 
 # INF DDInstall.CoInstallers section
 
-> [!NOTE]
-> If you are building a universal or mobile driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
+> [!CAUTION]
+> If you are building a universal or Windows Driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md) and [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md).
 
 This optional section registers one or more device-specific co-installers supplied on the distribution media to supplement the operations of existing device class installers.
 

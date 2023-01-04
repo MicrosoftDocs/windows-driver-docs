@@ -14,8 +14,8 @@ ms.date: 07/08/2022
 
 # INF DelReg directive
 
-> [!NOTE]
-> If you are building a universal or mobile driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md).
+> [!CAUTION]
+> If you are building a universal or Windows Driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md) and [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md).
 
 A **DelReg** directive references one or more INF-writer-defined sections describing keys and/or value entries to be removed from the registry.
 
