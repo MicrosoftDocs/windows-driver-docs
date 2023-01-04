@@ -1,35 +1,27 @@
 ---
-title: Opening a Dump File Using WinDbg
-description: There are several ways you can use WinDbg to open a dump file.
-ms.date: 11/28/2017
+title: Open a dump file with WinDbg
+description: Learn about various ways to open a crash memory dump file using WinDbg in a debugging session.
+ms.date: 12/13/2022
 ---
 
-# Opening a Dump File Using WinDbg
+# Open a dump file with WinDbg
 
+There are several ways you can use WinDbg to open a crash memory dump file to debug code.
 
-There are several ways you can use WinDbg to open a dump file.
+## WinDbg menu
 
-### <span id="WinDbg_Menu"></span><span id="windbg_menu"></span><span id="WINDBG_MENU"></span>WinDbg Menu
+If WinDbg is already running and is in dormant mode, you can open a dump file by choosing **Open crash dump** from the **File** menu or by pressing CTRL+D. When the **Open crash dump** dialog box appears, enter the full path and name of the crash dump file in the **File name** box, or use the dialog box to select the proper path and file name. When the proper file has been chosen, select **Open**.
 
-If WinDbg is already running and is in dormant mode, you can open a dump by choosing **Open Crash Dump** from the **File** menu or by pressing CTRL+D. When the Open Crash Dump dialog box appears, enter the full path and name of the crash dump file in the **File name** box, or use the dialog box to select the proper path and file name. When the proper file has been chosen, select **Open**.
+## Command prompt
 
-### <span id="Command_Prompt"></span><span id="command_prompt"></span><span id="COMMAND_PROMPT"></span>Command Prompt
+In a command-prompt window, you can open a dump file when you launch WinDbg. Use the following command:
 
-In a Command Prompt window, you can open a dump file when you launch WinDbg. Use the following command:
+```Console
+windbg -y <SymbolPath> -i <ImagePath> -z <DumpFileName>
+```
 
-**windbg -y** *SymbolPath* **-i** *ImagePath* **-z** *DumpFileName*
+The `-v` option, which is verbose mode, is also useful. For more information about command-line syntax, see [WinDbg command-line options](windbg-command-line-options.md).
 
-The **-v** option (verbose mode) is also useful. For more information about the command-line syntax, see [**WinDbg Command-Line Options**](windbg-command-line-options.md).
+## Debugger command window
 
-### <span id="Debugger_Command_Window"></span><span id="debugger_command_window"></span><span id="DEBUGGER_COMMAND_WINDOW"></span>Debugger Command Window
-
-If WinDbg is already in a kernel-mode debugging session, you can open a dump file by using the [**.opendump (Open Dump File)**](-opendump--open-dump-file-.md) command, followed by [**g (Go)**](g--go-.md).
-
- 
-
- 
-
-
-
-
-
+If WinDbg is already in a kernel-mode debugging session, you can open a dump file by using the [.opendump (open dump file)](-opendump--open-dump-file-.md) command, followed by the [g (Go)](g--go-.md) command.
