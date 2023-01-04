@@ -14,12 +14,9 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.technology: desktop
-ms.prod: windows
 ms.author: windowssdkdev
 ms.topic: article
 ms.date: 05/31/2018
-ROBOTS: INDEX,FOLLOW
 ---
 
 # SetSecurityDescriptor method of the MSFT\_StorageSubSystem class
@@ -104,7 +101,7 @@ If an empty security descriptor is passed to this method, the behavior is left t
 
 
 
-|                                     |                                                                                           |
+| Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
 | Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |

@@ -14,12 +14,9 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.technology: desktop
-ms.prod: windows
 ms.author: windowssdkdev
 ms.topic: article
 ms.date: 05/31/2018
-ROBOTS: INDEX,FOLLOW
 ---
 
 # CreateStoragePool method of the MSFT\_StorageSubSystem class
@@ -323,7 +320,7 @@ Subsystems that support storage pools and storage pool selection and also suppor
 
 
 
-|                                     |                                                                                           |
+| Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
 | Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |

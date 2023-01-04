@@ -23,12 +23,9 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - Schema
-ms.technology: desktop
-ms.prod: windows
 ms.author: windowssdkdev
 ms.topic: article
 ms.date: 05/31/2018
-ROBOTS: INDEX,FOLLOW
 ---
 
 # MSFT\_StorageEnclosure class
@@ -334,7 +331,7 @@ An array containing the operational status of each voltage sensor of the enclosu
 
 
 
-|                                     |                                                                                           |
+| Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Minimum supported client<br/> | Windows 8.1 \[desktop apps only\]<br/>                                              |
 | Minimum supported server<br/> | Windows Server 2012 R2 \[desktop apps only\]<br/>                                   |

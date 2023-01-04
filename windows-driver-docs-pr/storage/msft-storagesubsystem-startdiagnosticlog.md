@@ -14,12 +14,9 @@ api_location:
 - Root\Microsoft\Windows\Storage
 api_type:
 - COM
-ms.technology: desktop
-ms.prod: windows
 ms.author: windowssdkdev
 ms.topic: article
 ms.date: 05/31/2018
-ROBOTS: INDEX,FOLLOW
 ---
 
 # StartDiagnosticLog method of the MSFT\_StorageSubSystem class
@@ -70,7 +67,7 @@ See [Storage Management API Common Return Codes](storage-management-api-common-r
 
 
 
-|                                     |                                                                                           |
+| Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Minimum supported client<br/> | Windows 10 \[desktop apps only\]<br/>                                               |
 | Minimum supported server<br/> | Windows Server 2016 \[desktop apps only\]<br/>                                      |
