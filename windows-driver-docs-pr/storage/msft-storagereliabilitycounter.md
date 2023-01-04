@@ -87,7 +87,7 @@ The **MSFT\_StorageReliabilityCounter** class has these methods.
 
 | Method                                                | Description                           |
 |:------------------------------------------------------|:--------------------------------------|
-| [**Reset**](msft-storagereliabilitycounter-reset.md) | Resets reliability values.<br/> |
+| [**Reset**](msft-storagereliabilitycounter-reset.md) | Resets reliability values. |
 
 
 
@@ -97,254 +97,254 @@ The **MSFT\_StorageReliabilityCounter** class has these methods.
 
 The **MSFT\_StorageReliabilityCounter** class has these properties.
 
-<dl> <dt>
+ 
 
 **DeviceId**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 An identifier that uniquely names the associated storage device. When associated with an [**MSFT\_PhysicalDisk**](msft-physicaldisk.md), it will be the same as its **DeviceId** member. When associated with an [**MSFT\_Disk**](msft-disk.md), it will be the same as its **Number** field.
 
-</dd> <dt>
+ 
 
 **FlushLatencyMax**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt64**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 Maximum latency experienced by a flush request, in milliseconds. A value greater than 10 seconds may indicate a problem with the disk or the HBA.
 
-</dd> <dt>
+ 
 
 **LoadUnloadCycleCount**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt32**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The number of load-unload cycles that were performed by the storage device.
 
-</dd> <dt>
+ 
 
 **LoadUnloadCycleCountMax**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt32**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The maximum number of load-unload cycles that can be performed by the storage device in normal operation.
 
-</dd> <dt>
+ 
 
 **ManufactureDate**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The year and week when the storage device was manufactured.
 
-</dd> <dt>
+ 
 
 **PowerOnHours**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The number of hours that the storage device has been powered on since it was manufactured.
 
-</dd> <dt>
+ 
 
 **ReadErrorsCorrected**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt64**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The number of read errors that were corrected by the storage device.
 
-</dd> <dt>
+ 
 
 **ReadErrorsTotal**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt64**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The total number of read errors that were encountered by the storage device.
 
-</dd> <dt>
+ 
 
 **ReadErrorsUncorrected**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt64**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The number of read errors that were not corrected by the storage device.
 
-</dd> <dt>
+ 
 
 **ReadLatencyMax**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt64**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 Maximum latency experienced by a read request, in milliseconds. A value greater than 10 seconds may indicate a problem with the disk or the HBA.
 
-</dd> <dt>
+ 
 
 **StartStopCycleCount**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt32**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The number of start-stop cycles that were performed by the storage device.
 
-</dd> <dt>
+ 
 
 **StartStopCycleCountMax**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt32**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The maximum number of start-stop cycles that can be performed by the storage device in normal operation.
 
-</dd> <dt>
+ 
 
 **Temperature**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt8**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The current temperature of the storage device in degrees Celsius.
 
-</dd> <dt>
+ 
 
 **TemperatureMax**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt8**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The maximum temperature in degrees Celsius at which the storage device is capable of normal operation.
 
-</dd> <dt>
+ 
 
 **Wear**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt8**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The storage device wear indicator, in percentage. At 100 percent, the estimated wear limit will have been reached.
 
-</dd> <dt>
+ 
 
 **WriteErrorsCorrected**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt64**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The number of write errors that were corrected by the storage device.
 
-</dd> <dt>
+ 
 
 **WriteErrorsTotal**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt64**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The total number of write errors that were encountered by the storage device.
 
-</dd> <dt>
+ 
 
 **WriteErrorsUncorrected**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt64**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The number of write errors that were not corrected by the storage device.
 
-</dd> <dt>
+ 
 
 **WriteLatencyMax**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt64**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 Maximum latency experienced by a write request, in milliseconds. A value greater than 10 seconds may indicate a problem with the disk or the HBA.
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -352,25 +352,25 @@ Maximum latency experienced by a write request, in milliseconds. A value greater
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_StorageObject**](msft-storageobject.md)
-</dt> <dt>
+ 
 
 [**MSFT\_DiskToStorageReliabilityCounter**](msft-disktostoragereliabilitycounter.md)
-</dt> <dt>
+ 
 
 [**MSFT\_PhysicalDiskToStorageReliabilityCounter**](msft-physicaldisktostoragereliabilitycounter.md)
-</dt> </dl>
+ 
 
  
 

@@ -37,72 +37,72 @@ UInt32 Detach(
 
 ## Parameters
 
-<dl> <dt>
+ 
 
 *StorageNodeName* \[in\]
-</dt> <dd>
+ 
 
 The name of the storage node.
 
-</dd> <dt>
+ 
 
 *ExtendedStatus* \[out\]
-</dt> <dd>
+ 
 
 A string that contains an embedded [**MSFT\_StorageExtendedStatus**](msft-storageextendedstatus.md) object.
 
 This parameter allows the storage provider to return extended (implementation-specific) error information.
 
-</dd> </dl>
+ 
 
 ## Return value
 
-<dl> <dt>
+ 
 
 **Success** (0)
-</dt> <dt>
+ 
 
 **Not Supported** (1)
-</dt> <dt>
+ 
 
 **Unspecified Error** (2)
-</dt> <dt>
+ 
 
 **Timeout** (3)
-</dt> <dt>
+ 
 
 **Failed** (4)
-</dt> <dt>
+ 
 
 **Invalid Parameter** (5)
-</dt> <dt>
+ 
 
 **Access denied** (40001)
-</dt> <dt>
+ 
 
 **There are not enough resources to complete the operation.** (40002)
-</dt> <dt>
+ 
 
 **Cannot connect to the storage provider.** (46000)
-</dt> <dt>
+ 
 
 **The storage provider cannot connect to the storage subsystem.** (46001)
-</dt> <dt>
+ 
 
 **The storage pool could not complete the operation because its health or operational status does not permit it.** (48006)
-</dt> <dt>
+ 
 
 **The storage pool could not complete the operation because its configuration is read-only.** (48007)
-</dt> <dt>
+ 
 
 **The virtual disk could not complete the operation because another computer controls its configuration.** (50002)
-</dt> <dt>
+ 
 
 **The virtual disk could not complete the operation because its health or operational status does not permit it.** (50003)
-</dt> <dt>
+ 
 
 **The virtual disk could not complete the operation because its Manual Attach status does not permit it.** (50004)
-</dt> </dl>
+ 
 
 ## Remarks
 
@@ -114,19 +114,19 @@ This operation is similar to [**Hide**](msft-virtualdisk-hide.md). However, ther
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_VirtualDisk**](msft-virtualdisk.md)
-</dt> </dl>
+ 
 
  
 

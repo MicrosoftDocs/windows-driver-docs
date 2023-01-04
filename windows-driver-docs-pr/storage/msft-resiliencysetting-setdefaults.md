@@ -43,51 +43,51 @@ UInt32 SetDefaults(
 
 ## Parameters
 
-<dl> <dt>
+ 
 
 *NumberOfDataCopiesDefault* \[in\]
-</dt> <dd>
+ 
 
 The desired number of full data copies to maintain. This value must be between the values of the **NumberofDataCopiesMin** and **NumberofDataCopiesMax** properties of the [**MSFT\_ResiliencySetting**](msft-resiliencysetting.md) object.
 
-</dd> <dt>
+ 
 
 *PhysicalDiskRedundancyDefault* \[in\]
-</dt> <dd>
+ 
 
 The desired level of physical disk failure tolerance. This value must be between the values of the **PhysicalDiskRedundancyMin** and **PhysicalDiskRedundancyMax** properties of the [**MSFT\_ResiliencySetting**](msft-resiliencysetting.md) object.
 
-</dd> <dt>
+ 
 
 *NumberOfColumnsDefault* \[in\]
-</dt> <dd>
+ 
 
 The desired number of physical disks to stripe data across. This value must be between the values of the **NumberOfColumnsMin** and **NumberofColumnsMax** properties of the [**MSFT\_ResiliencySetting**](msft-resiliencysetting.md) object.
 
-</dd> <dt>
+ 
 
 *AutoNumberOfColumns* \[in\]
-</dt> <dd>
+ 
 
 If **TRUE**, the storage provider (or subsystem) should automatically choose what it determines to be the best number of columns for this resiliency setting. If this parameter is **TRUE**, then the *NumberOfColumnsDefault* parameter must be **NULL**.
 
-</dd> <dt>
+ 
 
 *InterleaveDefault* \[in\]
-</dt> <dd>
+ 
 
 The desired size of a data strip on a single physical disk in a striping based resiliency setting. This value must be between the values of the **InterleaveMin** and **InterleaveMax** properties of the [**MSFT\_ResiliencySetting**](msft-resiliencysetting.md) object.
 
-</dd> <dt>
+ 
 
 *ExtendedStatus* \[out\]
-</dt> <dd>
+ 
 
 A string that contains an embedded [**MSFT\_StorageExtendedStatus**](msft-storageextendedstatus.md) object.
 
 This parameter allows the storage provider to return extended (implementation-specific) error information.
 
-</dd> </dl>
+ 
 
 ## Return value
 
@@ -95,23 +95,23 @@ This parameter allows the storage provider to return extended (implementation-sp
 
 | Return code/value                                                                                                                                                                                                                                        | Description                                              |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**Success**</dt> <dt>0</dt> </dl>                                                                                                            | The method completed successfully.<br/>            |
-| <dl> <dt>**Not Supported**</dt> <dt>1</dt> </dl>                                                                                                      | This method is not supported for this object.<br/> |
-| <dl> <dt>**Unspecified Error**</dt> <dt>2</dt> </dl>                                                                                                  | An unspecified error has occurred.<br/>            |
-| <dl> <dt>**Timeout**</dt> <dt>3</dt> </dl>                                                                                                            | The method has timed out.<br/>                     |
-| <dl> <dt>**Failed**</dt> <dt>4</dt> </dl>                                                                                                             | The method failed.<br/>                            |
-| <dl> <dt>**Invalid Parameter**</dt> <dt>5</dt> </dl>                                                                                                  | One or more parameter values were not valid.<br/>  |
-| <dl> <dt>**Access denied**</dt> <dt>40001</dt> </dl>                                                                                                  |                                                          |
-| <dl> <dt>**There are not enough resources to complete the operation.**</dt> <dt>40002</dt> </dl>                                                      |                                                          |
-| <dl> <dt>**Cannot connect to the storage provider.**</dt> <dt>46000</dt> </dl>                                                                        |                                                          |
-| <dl> <dt>**The storage provider cannot connect to the storage subsystem.**</dt> <dt>46001</dt> </dl>                                                  |                                                          |
-| <dl> <dt>**This operation is not supported on primordial storage pools.**</dt> <dt>48000</dt> </dl>                                                   |                                                          |
-| <dl> <dt>**The storage pool could not complete the operation because its health or operational status does not permit it.**</dt> <dt>48006</dt> </dl> |                                                          |
-| <dl> <dt>**The storage pool could not complete the operation because its configuration is read-only.**</dt> <dt>48007</dt> </dl>                      |                                                          |
-| <dl> <dt>**The value for PhysicalDiskRedundancy is outside of the supported range of values.**</dt> <dt>49002</dt> </dl>                              |                                                          |
-| <dl> <dt>**The value for NumberOfDataCopies is outside of the supported range of values.**</dt> <dt>49003</dt> </dl>                                  |                                                          |
-| <dl> <dt>**The value for Interleave is outside of the supported range of values.**</dt> <dt>49005</dt> </dl>                                          |                                                          |
-| <dl> <dt>**The value for NumberOfColumns is outside of the supported range of values.**</dt> <dt>49006</dt> </dl>                                     |                                                          |
+|  **Success** 0                                                                                                             | The method completed successfully.            |
+|  **Not Supported** 1                                                                                                       | This method is not supported for this object. |
+|  **Unspecified Error** 2                                                                                                   | An unspecified error has occurred.            |
+|  **Timeout** 3                                                                                                             | The method has timed out.                     |
+|  **Failed** 4                                                                                                              | The method failed.                            |
+|  **Invalid Parameter** 5                                                                                                   | One or more parameter values were not valid.  |
+|  **Access denied** 40001                                                                                                   |                                                          |
+|  **There are not enough resources to complete the operation.** 40002                                                       |                                                          |
+|  **Cannot connect to the storage provider.** 46000                                                                         |                                                          |
+|  **The storage provider cannot connect to the storage subsystem.** 46001                                                   |                                                          |
+|  **This operation is not supported on primordial storage pools.** 48000                                                    |                                                          |
+|  **The storage pool could not complete the operation because its health or operational status does not permit it.** 48006  |                                                          |
+|  **The storage pool could not complete the operation because its configuration is read-only.** 48007                       |                                                          |
+|  **The value for PhysicalDiskRedundancy is outside of the supported range of values.** 49002                               |                                                          |
+|  **The value for NumberOfDataCopies is outside of the supported range of values.** 49003                                   |                                                          |
+|  **The value for Interleave is outside of the supported range of values.** 49005                                           |                                                          |
+|  **The value for NumberOfColumns is outside of the supported range of values.** 49006                                      |                                                          |
 
 
 
@@ -123,19 +123,19 @@ This parameter allows the storage provider to return extended (implementation-sp
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_ResiliencySetting**](msft-resiliencysetting.md)
-</dt> </dl>
+ 
 
  
 

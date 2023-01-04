@@ -83,15 +83,15 @@ The **MSFT\_Partition** class has these methods.
 
 | Method                                                       | Description                                                                                                                                       |
 |:-------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AddAccessPath**](addaccesspath-msft-partition.md)        | Adds a mount path or drive letter assignment to the partition.<br/>                                                                         |
-| [**DeleteObject**](msft-partition-deleteobject.md)          | Deletes the partition and corresponding volume.<br/>                                                                                        |
-| [**GetAccessPaths**](getaccesspaths-msft-partition.md)      | Retrieves all mount points and drive letters that can be used to access the partition.<br/>                                                 |
-| [**GetSupportedSize**](msft-partition-getsupportedsizes.md) | Retrieves the minimum and maximum sizes that the partition can be resized to using the [**Resize**](msft-partition-resize.md) method.<br/> |
-| [**Offline**](msft-partition-offline.md)                    | Takes the partition offline by dismounting the associated volume (if one exists).<br/>                                                      |
-| [**Online**](msft-partition-online.md)                      | Brings the partition online by mounting the associated volume (if one exists).<br/>                                                         |
-| [**RemoveAccessPath**](removeaccesspath-msft-partition.md)  | Remove an access path from the partition.<br/>                                                                                              |
-| [**Resize**](msft-partition-resize.md)                      | Resizes the partition and any associated file system volume to the size specified by the *Size* parameter.<br/>                             |
-| [**SetAttributes**](msft-partition-setattributes.md)        | Sets various attributes and properties of the partition.<br/>                                                                               |
+| [**AddAccessPath**](addaccesspath-msft-partition.md)        | Adds a mount path or drive letter assignment to the partition.                                                                         |
+| [**DeleteObject**](msft-partition-deleteobject.md)          | Deletes the partition and corresponding volume.                                                                                        |
+| [**GetAccessPaths**](getaccesspaths-msft-partition.md)      | Retrieves all mount points and drive letters that can be used to access the partition.                                                 |
+| [**GetSupportedSize**](msft-partition-getsupportedsizes.md) | Retrieves the minimum and maximum sizes that the partition can be resized to using the [**Resize**](msft-partition-resize.md) method. |
+| [**Offline**](msft-partition-offline.md)                    | Takes the partition offline by dismounting the associated volume (if one exists).                                                      |
+| [**Online**](msft-partition-online.md)                      | Brings the partition online by mounting the associated volume (if one exists).                                                         |
+| [**RemoveAccessPath**](removeaccesspath-msft-partition.md)  | Remove an access path from the partition.                                                                                              |
+| [**Resize**](msft-partition-resize.md)                      | Resizes the partition and any associated file system volume to the size specified by the *Size* parameter.                             |
+| [**SetAttributes**](msft-partition-setattributes.md)        | Sets various attributes and properties of the partition.                                                                               |
 
 
 
@@ -101,58 +101,58 @@ The **MSFT\_Partition** class has these methods.
 
 The **MSFT\_Partition** class has these properties.
 
-<dl> <dt>
+ 
 
 **AccessPaths**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String** array
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 An array of strings containing the various mount points for the partition. This list includes drive letters, in addition to mounted folders.
 
-</dd> <dt>
+ 
 
 **DiskNumber**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt32**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers), [**ModelCorrespondence {"MSFT\_Disk.Number"}**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 The operating system's number for the disk that contains this partition. Disk numbers may not necessarily remain the same across restarts.
 
-</dd> <dt>
+ 
 
 **DriveLetter**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Char16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The currently assigned drive letter for the partition. This property is **NULL** if no drive letter has been assigned.
 
-</dd> <dt>
+ 
 
 **GptType**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The partition's GPT type. This property is only valid when the disk's **PartitionStyle** property is **GPT** and will be **NULL** for all other partition styles.
 
@@ -160,222 +160,222 @@ The partition's GPT type. This property is only valid when the disk's **Partitio
 
 | Value                                                                                                                                                                                                                                                                                                      | Meaning                                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="System_Partition"></span><span id="system_partition"></span><span id="SYSTEM_PARTITION"></span><dl> <dt>**System Partition**</dt> <dt>c12a7328-f81f-11d2-ba4b-00a0c93ec93b</dt> </dl>         | An EFI system partition.<br/>                                                                                                                                                                                                                                                                                                                                                         |
-| <span id="Microsoft_Reserved"></span><span id="microsoft_reserved"></span><span id="MICROSOFT_RESERVED"></span><dl> <dt>**Microsoft Reserved**</dt> <dt>e3c9e316-0b5c-4db8-817d-f92df00215ae</dt> </dl> | A Microsoft reserved partition.<br/>                                                                                                                                                                                                                                                                                                                                                  |
-| <span id="Basic_data"></span><span id="basic_data"></span><span id="BASIC_DATA"></span><dl> <dt>**Basic data**</dt> <dt>ebd0a0a2-b9e5-4433-87c0-68b6b72699c7</dt> </dl>                                 | A basic data partition. This is the data partition type that is created and recognized by Windows.<br/> Only partitions of this type can be assigned drive letters, receive volume GUID paths, host mounted folders (also called volume mount points) and be enumerated by calls to [**FindFirstVolume**](/windows/win32/api/fileapi/nf-fileapi-findfirstvolumew) and [**FindNextVolume**](/windows/win32/api/fileapi/nf-fileapi-findnextvolumew).<br/> |
-| <span id="LDM_Metadata"></span><span id="ldm_metadata"></span><span id="LDM_METADATA"></span><dl> <dt>**LDM Metadata**</dt> <dt>5808c8aa-7e8f-42e0-85d2-e1e90434cfb3</dt> </dl>                         | A Logical Disk Manager (LDM) metadata partition on a dynamic disk.<br/>                                                                                                                                                                                                                                                                                                               |
-| <span id="LDM_Data"></span><span id="ldm_data"></span><span id="LDM_DATA"></span><dl> <dt>**LDM Data**</dt> <dt>af9b60a0-1431-4f62-bc68-3311714a69ad</dt> </dl>                                         | The partition is an LDM data partition on a dynamic disk.<br/>                                                                                                                                                                                                                                                                                                                        |
-| <span id="Microsoft_Recovery"></span><span id="microsoft_recovery"></span><span id="MICROSOFT_RECOVERY"></span><dl> <dt>**Microsoft Recovery**</dt> <dt>de94bba4-06d1-4d40-a16a-bfd50179d6ac</dt> </dl> | A Microsoft recovery partition.<br/>                                                                                                                                                                                                                                                                                                                                                  |
+|  **System Partition** c12a7328-f81f-11d2-ba4b-00a0c93ec93b          | An EFI system partition.                                                                                                                                                                                                                                                                                                                                                         |
+|  **Microsoft Reserved** e3c9e316-0b5c-4db8-817d-f92df00215ae  | A Microsoft reserved partition.                                                                                                                                                                                                                                                                                                                                                  |
+|  **Basic data** ebd0a0a2-b9e5-4433-87c0-68b6b72699c7                                  | A basic data partition. This is the data partition type that is created and recognized by Windows. Only partitions of this type can be assigned drive letters, receive volume GUID paths, host mounted folders (also called volume mount points) and be enumerated by calls to [**FindFirstVolume**](/windows/win32/api/fileapi/nf-fileapi-findfirstvolumew) and [**FindNextVolume**](/windows/win32/api/fileapi/nf-fileapi-findnextvolumew). |
+|  **LDM Metadata** 5808c8aa-7e8f-42e0-85d2-e1e90434cfb3                          | A Logical Disk Manager (LDM) metadata partition on a dynamic disk.                                                                                                                                                                                                                                                                                                               |
+|  **LDM Data** af9b60a0-1431-4f62-bc68-3311714a69ad                                          | The partition is an LDM data partition on a dynamic disk.                                                                                                                                                                                                                                                                                                                        |
+|  **Microsoft Recovery** de94bba4-06d1-4d40-a16a-bfd50179d6ac  | A Microsoft recovery partition.                                                                                                                                                                                                                                                                                                                                                  |
 
 
 
  
 
-</dd> <dt>
+ 
 
 **Guid**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The partition's GPT GUID. This property is only valid when the disk's **PartitionStyle** property is **GPT** and will be **NULL** for all other partition styles.
 
-</dd> <dt>
+ 
 
 **IsActive**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Boolean**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 If **TRUE**, the partition is active and can be used to start the system. This property is only valid when the disk's **PartitionStyle** property is **MBR** and will be **NULL** for all other partition styles.
 
-</dd> <dt>
+ 
 
 **IsBoot**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Boolean**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 If **TRUE**, the partition is the current boot partition.
 
-</dd> <dt>
+ 
 
 **IsHidden**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Boolean**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 If **TRUE**, the partition is not detected by the mount manager. As a result, the partition does not receive a drive letter, does not receive a volume GUID path, does not host volume mount points, and is not enumerated by calls to [**FindFirstVolume**](/windows/win32/api/fileapi/nf-fileapi-findfirstvolumew) and [**FindNextVolume**](/windows/win32/api/fileapi/nf-fileapi-findnextvolumew). This ensures that applications such as Disk Defragmenter do not access the partition. The [Volume Shadow Copy Service (VSS)](/windows/win32/vss/volume-shadow-copy-service-portal) uses this attribute on its shadow copies.
 
-</dd> <dt>
+ 
 
 **IsOffline**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Boolean**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 If **TRUE**, this partition is currently offline.
 
-</dd> <dt>
+ 
 
 **IsReadOnly**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Boolean**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 If **TRUE**, this is a read-only partition.
 
-</dd> <dt>
+ 
 
 **IsShadowCopy**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Boolean**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 If **TRUE**, the partition is a shadow copy of another partition. This attribute is used by VSS. This attribute is an indication for file system filter driver-based software (such as antivirus programs) to avoid attaching to the volume. An application can use this attribute to differentiate a shadow copy partition from a production partition. For example, an application that performs a fast recovery will break a shadow copy virtual disk by clearing the read-only and hidden attributes and this attribute. This attribute is set when the shadow copy is created and cleared when the shadow copy is broken.
 
-</dd> <dt>
+ 
 
 **IsSystem**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Boolean**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 If **TRUE**, this is a system partition.
 
-</dd> <dt>
+ 
 
 **MbrType**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The partition's MBR type. This property is only valid when the disk's **PartitionStyle** property is **MBR** and will be **NULL** for all other partition styles.
 
-<dl> <dt>
+ 
 
-<span id="FAT12"></span><span id="fat12"></span>**FAT12** (1)
-</dt> <dt>
+**FAT12** (1)
+ 
 
-<span id="FAT16"></span><span id="fat16"></span>**FAT16** (4)
-</dt> <dt>
+**FAT16** (4)
+ 
 
-<span id="Extended"></span><span id="extended"></span><span id="EXTENDED"></span>**Extended** (5)
-</dt> <dt>
+**Extended** (5)
+ 
 
-<span id="Huge"></span><span id="huge"></span><span id="HUGE"></span>**Huge** (6)
-</dt> <dt>
+**Huge** (6)
+ 
 
-<span id="IFS"></span><span id="ifs"></span>**IFS** (7)
-</dt> <dt>
+**IFS** (7)
+ 
 
-<span id="FAT32"></span><span id="fat32"></span>**FAT32** (12)
-</dt> </dl>
+**FAT32** (12)
+ 
 
-</dd> <dt>
+ 
 
 **NoDefaultDriveLetter**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Boolean**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 If **TRUE**, the operating system does not assign a drive letter automatically when the partition is discovered. This is only honored for GPT disks and is assumed to be **FALSE** for MBR disks. This attribute is useful in storage area network (SAN) environments.
 
-</dd> <dt>
+ 
 
 **OperationalStatus**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Values**](/windows/win32/wmisdk/standard-qualifiers) ( "Unknown", "Online", "No Media", "Failed", "Offline" ), [**ValueMap**](/windows/win32/wmisdk/standard-qualifiers) ( "0", "1", "3", "5", "4" )
-</dt> </dl>
+ 
 
 The operational status of the partition.
 
-</dd> <dt>
+ 
 
 **PartitionNumber**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt32**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 The operating system's number for the partition. Ordering is based on the partition's offset, relative to other partitions. This means that the value for this property may change based off of the partition configuration in the offset range preceding this partition.
 
-</dd> <dt>
+ 
 
 **Size**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt64**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 Total size of the partition, measured in bytes.
 
-</dd> <dt>
+ 
 
 **TransitionState**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The transition state of the partition. One of the following values.
 
@@ -383,18 +383,18 @@ The transition state of the partition. One of the following values.
 
 | Value                                                                        | Meaning                                                                                 |
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| <dl> <dt>0</dt> </dl> | This value is reserved for system use.<br/>                                       |
-| <dl> <dt>1</dt> </dl> | The partition is stable. No configuration activity is currently in progress.<br/> |
-| <dl> <dt>2</dt> </dl> | The partition is being extended.<br/>                                             |
-| <dl> <dt>3</dt> </dl> | The partition is being shrunk. <br/>                                              |
-| <dl> <dt>4</dt> </dl> | The partition is being automagically reconfigured.<br/>                           |
-| <dl> <dt>8</dt> </dl> | The partition is being restriped.<br/>                                            |
+|  0  | This value is reserved for system use.                                       |
+|  1  | The partition is stable. No configuration activity is currently in progress. |
+|  2  | The partition is being extended.                                             |
+|  3  | The partition is being shrunk.                                               |
+|  4  | The partition is being automagically reconfigured.                           |
+|  8  | The partition is being restriped.                                            |
 
 
 
  
 
-</dd> </dl>
+ 
 
 ## Remarks
 
@@ -406,10 +406,10 @@ The transition state of the partition. One of the following values.
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 

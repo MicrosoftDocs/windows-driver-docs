@@ -67,8 +67,8 @@ The **MSFT\_StorageEnclosure** class has these methods.
 
 | Method                                                           | Description                                                                                  |
 |:-----------------------------------------------------------------|:---------------------------------------------------------------------------------------------|
-| [**GetVendorData**](msft-storageenclosure-getvendordata.md)     | Returns the vendor-specific data from an enclosure.<br/>                               |
-| [**IdentifyElement**](msft-storageenclosure-identifyelement.md) | Permits a user to perform identification tasks on the enclosure and its elements.<br/> |
+| [**GetVendorData**](msft-storageenclosure-getvendordata.md)     | Returns the vendor-specific data from an enclosure.                               |
+| [**IdentifyElement**](msft-storageenclosure-identifyelement.md) | Permits a user to perform identification tasks on the enclosure and its elements. |
 
 
 
@@ -78,16 +78,16 @@ The **MSFT\_StorageEnclosure** class has these methods.
 
 The **MSFT\_StorageEnclosure** class has these properties.
 
-<dl> <dt>
+ 
 
 **CurrentSensorOperationalStatus**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16** array
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 An array containing the operational status of each current sensor of the enclosure.
 
@@ -95,43 +95,43 @@ An array containing the operational status of each current sensor of the enclosu
 
 | Value                                                                                                                                                                                                                                                                               | Meaning                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Unknown**</dt> <dt>0</dt> </dl>                                                         | The operational status of the element is unknown.<br/>                 |
-| <span id="OK"></span><span id="ok"></span><dl> <dt>**OK**</dt> <dt>2</dt> </dl>                                                                                                  | The element is present and working, with no issues detected.<br/>      |
-| <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span><dl> <dt>**Degraded**</dt> <dt>3</dt> </dl>                                                     | The element detects a non-critical issue.<br/>                         |
-| <span id="Error"></span><span id="error"></span><span id="ERROR"></span><dl> <dt>**Error**</dt> <dt>6</dt> </dl>                                                                 | The element detects a critical issue.<br/>                             |
-| <span id="Non-Recoverable_Error"></span><span id="non-recoverable_error"></span><span id="NON-RECOVERABLE_ERROR"></span><dl> <dt>**Non-Recoverable Error**</dt> <dt>7</dt> </dl> | The element detects a non-recoverable issue.<br/>                      |
-| <span id="Not_Installed"></span><span id="not_installed"></span><span id="NOT_INSTALLED"></span><dl> <dt>**Not Installed**</dt> <dt>0xD009</dt> </dl>                            | The element is not present.<br/>                                       |
-| <span id="Not_Available"></span><span id="not_available"></span><span id="NOT_AVAILABLE"></span><dl> <dt>**Not Available**</dt> <dt>0xD00A</dt> </dl>                            | The element is present but has problems that make it unavailable.<br/> |
-| <span id="No_Access_Allowed"></span><span id="no_access_allowed"></span><span id="NO_ACCESS_ALLOWED"></span><dl> <dt>**No Access Allowed**</dt> <dt>0xD00B</dt> </dl>            | No access is allowed to the element.<br/>                              |
-| <span id="Not_Supported"></span><span id="not_supported"></span><span id="NOT_SUPPORTED"></span><dl> <dt>**Not Supported**</dt> <dt>0xD00C</dt> </dl>                            | The element is not supported.<br/>                                     |
+|  **Unknown** 0                                                          | The operational status of the element is unknown.                 |
+|  **OK** 2                                                                                                   | The element is present and working, with no issues detected.      |
+|  **Degraded** 3                                                      | The element detects a non-critical issue.                         |
+|  **Error** 6                                                                  | The element detects a critical issue.                             |
+|  **Non-Recoverable Error** 7  | The element detects a non-recoverable issue.                      |
+|  **Not Installed** 0xD009                             | The element is not present.                                       |
+|  **Not Available** 0xD00A                             | The element is present but has problems that make it unavailable. |
+|  **No Access Allowed** 0xD00B             | No access is allowed to the element.                              |
+|  **Not Supported** 0xD00C                             | The element is not supported.                                     |
 
 
 
  
 
-</dd> <dt>
+ 
 
 **DeviceId**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 An address or other identifier that uniquely names the enclosure.
 
-</dd> <dt>
+ 
 
 **FanOperationalStatus**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16** array
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 An array containing the operational status of each fan of the enclosure.
 
@@ -139,62 +139,62 @@ An array containing the operational status of each fan of the enclosure.
 
 | Value                                                                                                                                                                                                                                                                               | Meaning                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Unknown**</dt> <dt>0</dt> </dl>                                                         | The operational status of the element is unknown.<br/>                 |
-| <span id="OK"></span><span id="ok"></span><dl> <dt>**OK**</dt> <dt>2</dt> </dl>                                                                                                  | The element is present and working, with no issues detected.<br/>      |
-| <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span><dl> <dt>**Degraded**</dt> <dt>3</dt> </dl>                                                     | The element detects a non-critical issue.<br/>                         |
-| <span id="Error"></span><span id="error"></span><span id="ERROR"></span><dl> <dt>**Error**</dt> <dt>6</dt> </dl>                                                                 | The element detects a critical issue.<br/>                             |
-| <span id="Non-Recoverable_Error"></span><span id="non-recoverable_error"></span><span id="NON-RECOVERABLE_ERROR"></span><dl> <dt>**Non-Recoverable Error**</dt> <dt>7</dt> </dl> | The element detects a non-recoverable issue.<br/>                      |
-| <span id="Not_Installed"></span><span id="not_installed"></span><span id="NOT_INSTALLED"></span><dl> <dt>**Not Installed**</dt> <dt>0xD009</dt> </dl>                            | The element is not present.<br/>                                       |
-| <span id="Not_Available"></span><span id="not_available"></span><span id="NOT_AVAILABLE"></span><dl> <dt>**Not Available**</dt> <dt>0xD00A</dt> </dl>                            | The element is present but has problems that make it unavailable.<br/> |
-| <span id="No_Access_Allowed"></span><span id="no_access_allowed"></span><span id="NO_ACCESS_ALLOWED"></span><dl> <dt>**No Access Allowed**</dt> <dt>0xD00B</dt> </dl>            | No access is allowed to the element.<br/>                              |
-| <span id="Not_Supported"></span><span id="not_supported"></span><span id="NOT_SUPPORTED"></span><dl> <dt>**Not Supported**</dt> <dt>0xD00C</dt> </dl>                            | The element is not supported.<br/>                                     |
+|  **Unknown** 0                                                          | The operational status of the element is unknown.                 |
+|  **OK** 2                                                                                                   | The element is present and working, with no issues detected.      |
+|  **Degraded** 3                                                      | The element detects a non-critical issue.                         |
+|  **Error** 6                                                                  | The element detects a critical issue.                             |
+|  **Non-Recoverable Error** 7  | The element detects a non-recoverable issue.                      |
+|  **Not Installed** 0xD009                             | The element is not present.                                       |
+|  **Not Available** 0xD00A                             | The element is present but has problems that make it unavailable. |
+|  **No Access Allowed** 0xD00B             | No access is allowed to the element.                              |
+|  **Not Supported** 0xD00C                             | The element is not supported.                                     |
 
 
 
  
 
-</dd> <dt>
+ 
 
 **FirmwareVersion**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 A string representation of the enclosure's firmware version.
 
-</dd> <dt>
+ 
 
 **FriendlyName**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 A user-friendly string representing the name of the enclosure.
 
-</dd> <dt>
+ 
 
 **IOControllerOperationalStatus**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16** array
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 An array containing the operational status of each IO controller module of the enclosure.
 
@@ -202,46 +202,46 @@ An array containing the operational status of each IO controller module of the e
 
 | Value                                                                                                                                                                                                                                                                               | Meaning                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Unknown**</dt> <dt>0</dt> </dl>                                                         | The operational status of the element is unknown.<br/>                 |
-| <span id="OK"></span><span id="ok"></span><dl> <dt>**OK**</dt> <dt>2</dt> </dl>                                                                                                  | The element is present and working, with no issues detected.<br/>      |
-| <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span><dl> <dt>**Degraded**</dt> <dt>3</dt> </dl>                                                     | The element detects a non-critical issue.<br/>                         |
-| <span id="Error"></span><span id="error"></span><span id="ERROR"></span><dl> <dt>**Error**</dt> <dt>6</dt> </dl>                                                                 | The element detects a critical issue.<br/>                             |
-| <span id="Non-Recoverable_Error"></span><span id="non-recoverable_error"></span><span id="NON-RECOVERABLE_ERROR"></span><dl> <dt>**Non-Recoverable Error**</dt> <dt>7</dt> </dl> | The element detects a non-recoverable issue.<br/>                      |
-| <span id="Not_Installed"></span><span id="not_installed"></span><span id="NOT_INSTALLED"></span><dl> <dt>**Not Installed**</dt> <dt>0xD009</dt> </dl>                            | The element is not present.<br/>                                       |
-| <span id="Not_Available"></span><span id="not_available"></span><span id="NOT_AVAILABLE"></span><dl> <dt>**Not Available**</dt> <dt>0xD00A</dt> </dl>                            | The element is present but has problems that make it unavailable.<br/> |
-| <span id="No_Access_Allowed"></span><span id="no_access_allowed"></span><span id="NO_ACCESS_ALLOWED"></span><dl> <dt>**No Access Allowed**</dt> <dt>0xD00B</dt> </dl>            | No access is allowed to the element.<br/>                              |
-| <span id="Not_Supported"></span><span id="not_supported"></span><span id="NOT_SUPPORTED"></span><dl> <dt>**Not Supported**</dt> <dt>0xD00C</dt> </dl>                            | The element is not supported.<br/>                                     |
+|  **Unknown** 0                                                          | The operational status of the element is unknown.                 |
+|  **OK** 2                                                                                                   | The element is present and working, with no issues detected.      |
+|  **Degraded** 3                                                      | The element detects a non-critical issue.                         |
+|  **Error** 6                                                                  | The element detects a critical issue.                             |
+|  **Non-Recoverable Error** 7  | The element detects a non-recoverable issue.                      |
+|  **Not Installed** 0xD009                             | The element is not present.                                       |
+|  **Not Available** 0xD00A                             | The element is present but has problems that make it unavailable. |
+|  **No Access Allowed** 0xD00B             | No access is allowed to the element.                              |
+|  **Not Supported** 0xD00C                             | The element is not supported.                                     |
 
 
 
  
 
-</dd> <dt>
+ 
 
 **NumberOfSlots**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt32**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 Number of slots hosted within the enclosure.
 
-</dd> <dt>
+ 
 
 **PowerSupplyOperationalStatus**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16** array
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 An array containing the operational status of each power supply module of the enclosure.
 
@@ -249,30 +249,30 @@ An array containing the operational status of each power supply module of the en
 
 | Value                                                                                                                                                                                                                                                                               | Meaning                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Unknown**</dt> <dt>0</dt> </dl>                                                         | The operational status of the element is unknown.<br/>                 |
-| <span id="OK"></span><span id="ok"></span><dl> <dt>**OK**</dt> <dt>2</dt> </dl>                                                                                                  | The element is present and working, with no issues detected.<br/>      |
-| <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span><dl> <dt>**Degraded**</dt> <dt>3</dt> </dl>                                                     | The element detects a non-critical issue.<br/>                         |
-| <span id="Error"></span><span id="error"></span><span id="ERROR"></span><dl> <dt>**Error**</dt> <dt>6</dt> </dl>                                                                 | The element detects a critical issue.<br/>                             |
-| <span id="Non-Recoverable_Error"></span><span id="non-recoverable_error"></span><span id="NON-RECOVERABLE_ERROR"></span><dl> <dt>**Non-Recoverable Error**</dt> <dt>7</dt> </dl> | The element detects a non-recoverable issue.<br/>                      |
-| <span id="Not_Installed"></span><span id="not_installed"></span><span id="NOT_INSTALLED"></span><dl> <dt>**Not Installed**</dt> <dt>0xD009</dt> </dl>                            | The element is not present.<br/>                                       |
-| <span id="Not_Available"></span><span id="not_available"></span><span id="NOT_AVAILABLE"></span><dl> <dt>**Not Available**</dt> <dt>0xD00A</dt> </dl>                            | The element is present but has problems that make it unavailable.<br/> |
-| <span id="No_Access_Allowed"></span><span id="no_access_allowed"></span><span id="NO_ACCESS_ALLOWED"></span><dl> <dt>**No Access Allowed**</dt> <dt>0xD00B</dt> </dl>            | No access is allowed to the element.<br/>                              |
-| <span id="Not_Supported"></span><span id="not_supported"></span><span id="NOT_SUPPORTED"></span><dl> <dt>**Not Supported**</dt> <dt>0xD00C</dt> </dl>                            | The element is not supported.<br/>                                     |
+|  **Unknown** 0                                                          | The operational status of the element is unknown.                 |
+|  **OK** 2                                                                                                   | The element is present and working, with no issues detected.      |
+|  **Degraded** 3                                                      | The element detects a non-critical issue.                         |
+|  **Error** 6                                                                  | The element detects a critical issue.                             |
+|  **Non-Recoverable Error** 7  | The element detects a non-recoverable issue.                      |
+|  **Not Installed** 0xD009                             | The element is not present.                                       |
+|  **Not Available** 0xD00A                             | The element is present but has problems that make it unavailable. |
+|  **No Access Allowed** 0xD00B             | No access is allowed to the element.                              |
+|  **Not Supported** 0xD00C                             | The element is not supported.                                     |
 
 
 
  
 
-</dd> <dt>
+ 
 
 **TemperatureSensorOperationalStatus**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16** array
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 An array containing the operational status of each temperature sensor of the enclosure.
 
@@ -280,30 +280,30 @@ An array containing the operational status of each temperature sensor of the enc
 
 | Value                                                                                                                                                                                                                                                                               | Meaning                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Unknown**</dt> <dt>0</dt> </dl>                                                         | The operational status of the element is unknown.<br/>                 |
-| <span id="OK"></span><span id="ok"></span><dl> <dt>**OK**</dt> <dt>2</dt> </dl>                                                                                                  | The element is present and working, with no issues detected.<br/>      |
-| <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span><dl> <dt>**Degraded**</dt> <dt>3</dt> </dl>                                                     | The element detects a non-critical issue.<br/>                         |
-| <span id="Error"></span><span id="error"></span><span id="ERROR"></span><dl> <dt>**Error**</dt> <dt>6</dt> </dl>                                                                 | The element detects a critical issue.<br/>                             |
-| <span id="Non-Recoverable_Error"></span><span id="non-recoverable_error"></span><span id="NON-RECOVERABLE_ERROR"></span><dl> <dt>**Non-Recoverable Error**</dt> <dt>7</dt> </dl> | The element detects a non-recoverable issue.<br/>                      |
-| <span id="Not_Installed"></span><span id="not_installed"></span><span id="NOT_INSTALLED"></span><dl> <dt>**Not Installed**</dt> <dt>0xD009</dt> </dl>                            | The element is not present.<br/>                                       |
-| <span id="Not_Available"></span><span id="not_available"></span><span id="NOT_AVAILABLE"></span><dl> <dt>**Not Available**</dt> <dt>0xD00A</dt> </dl>                            | The element is present but has problems that make it unavailable.<br/> |
-| <span id="No_Access_Allowed"></span><span id="no_access_allowed"></span><span id="NO_ACCESS_ALLOWED"></span><dl> <dt>**No Access Allowed**</dt> <dt>0xD00B</dt> </dl>            | No access is allowed to the element.<br/>                              |
-| <span id="Not_Supported"></span><span id="not_supported"></span><span id="NOT_SUPPORTED"></span><dl> <dt>**Not Supported**</dt> <dt>0xD00C</dt> </dl>                            | The element is not supported.<br/>                                     |
+|  **Unknown** 0                                                          | The operational status of the element is unknown.                 |
+|  **OK** 2                                                                                                   | The element is present and working, with no issues detected.      |
+|  **Degraded** 3                                                      | The element detects a non-critical issue.                         |
+|  **Error** 6                                                                  | The element detects a critical issue.                             |
+|  **Non-Recoverable Error** 7  | The element detects a non-recoverable issue.                      |
+|  **Not Installed** 0xD009                             | The element is not present.                                       |
+|  **Not Available** 0xD00A                             | The element is present but has problems that make it unavailable. |
+|  **No Access Allowed** 0xD00B             | No access is allowed to the element.                              |
+|  **Not Supported** 0xD00C                             | The element is not supported.                                     |
 
 
 
  
 
-</dd> <dt>
+ 
 
 **VoltageSensorOperationalStatus**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16** array
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 An array containing the operational status of each voltage sensor of the enclosure.
 
@@ -311,21 +311,21 @@ An array containing the operational status of each voltage sensor of the enclosu
 
 | Value                                                                                                                                                                                                                                                                               | Meaning                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Unknown**</dt> <dt>0</dt> </dl>                                                         | The operational status of the element is unknown.<br/>                 |
-| <span id="OK"></span><span id="ok"></span><dl> <dt>**OK**</dt> <dt>2</dt> </dl>                                                                                                  | The element is present and working, with no issues detected.<br/>      |
-| <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span><dl> <dt>**Degraded**</dt> <dt>3</dt> </dl>                                                     | The element detects a non-critical issue.<br/>                         |
-| <span id="Error"></span><span id="error"></span><span id="ERROR"></span><dl> <dt>**Error**</dt> <dt>6</dt> </dl>                                                                 | The element detects a critical issue.<br/>                             |
-| <span id="Non-Recoverable_Error"></span><span id="non-recoverable_error"></span><span id="NON-RECOVERABLE_ERROR"></span><dl> <dt>**Non-Recoverable Error**</dt> <dt>7</dt> </dl> | The element detects a non-recoverable issue.<br/>                      |
-| <span id="Not_Installed"></span><span id="not_installed"></span><span id="NOT_INSTALLED"></span><dl> <dt>**Not Installed**</dt> <dt>0xD009</dt> </dl>                            | The element is not present.<br/>                                       |
-| <span id="Not_Available"></span><span id="not_available"></span><span id="NOT_AVAILABLE"></span><dl> <dt>**Not Available**</dt> <dt>0xD00A</dt> </dl>                            | The element is present but has problems that make it unavailable.<br/> |
-| <span id="No_Access_Allowed"></span><span id="no_access_allowed"></span><span id="NO_ACCESS_ALLOWED"></span><dl> <dt>**No Access Allowed**</dt> <dt>0xD00B</dt> </dl>            | No access is allowed to the element.<br/>                              |
-| <span id="Not_Supported"></span><span id="not_supported"></span><span id="NOT_SUPPORTED"></span><dl> <dt>**Not Supported**</dt> <dt>0xD00C</dt> </dl>                            | The element is not supported.<br/>                                     |
+|  **Unknown** 0                                                          | The operational status of the element is unknown.                 |
+|  **OK** 2                                                                                                   | The element is present and working, with no issues detected.      |
+|  **Degraded** 3                                                      | The element detects a non-critical issue.                         |
+|  **Error** 6                                                                  | The element detects a critical issue.                             |
+|  **Non-Recoverable Error** 7  | The element detects a non-recoverable issue.                      |
+|  **Not Installed** 0xD009                             | The element is not present.                                       |
+|  **Not Available** 0xD00A                             | The element is present but has problems that make it unavailable. |
+|  **No Access Allowed** 0xD00B             | No access is allowed to the element.                              |
+|  **Not Supported** 0xD00C                             | The element is not supported.                                     |
 
 
 
  
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -333,19 +333,19 @@ An array containing the operational status of each voltage sensor of the enclosu
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8.1 \[desktop apps only\]<br/>                                              |
-| Minimum supported server<br/> | Windows Server 2012 R2 \[desktop apps only\]<br/>                                   |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8.1 \[desktop apps only\]                                              |
+| Minimum supported server | Windows Server 2012 R2 \[desktop apps only\]                                   |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_StorageFaultDomain**](msft-storagefaultdomain.md)
-</dt> </dl>
+ 
 
  
 

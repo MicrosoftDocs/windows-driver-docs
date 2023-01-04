@@ -39,59 +39,59 @@ UInt32 Set(
 
 ## Parameters
 
-<dl> <dt>
+ 
 
 *FileName* \[in\]
-</dt> <dd>
+ 
 
 The file to set the integrity information for.
 
-</dd> <dt>
+ 
 
 *Enable* \[in\]
-</dt> <dd>
+ 
 
 Specifies whether integrity streams are enabled for this file.
 
-</dd> <dt>
+ 
 
 *Enforce* \[in\]
-</dt> <dd>
+ 
 
 Specifies whether integrity streams are enforced for this file.
 
-</dd> <dt>
+ 
 
 *ExtendedStatus* \[out\]
-</dt> <dd>
+ 
 
 A string that contains an embedded [**MSFT\_StorageExtendedStatus**](msft-storageextendedstatus.md) object.
 
 This parameter allows the storage provider to return extended (implementation-specific) error information.
 
-</dd> </dl>
+ 
 
 ## Return value
 
-<dl> <dt>
+ 
 
 **Success** (0)
-</dt> <dt>
+ 
 
 **Not Supported** (1)
-</dt> <dt>
+ 
 
 **Unspecified Error** (2)
-</dt> <dt>
+ 
 
 **Timeout** (3)
-</dt> <dt>
+ 
 
 **Failed** (4)
-</dt> <dt>
+ 
 
 **Invalid Parameter** (5)
-</dt> </dl>
+ 
 
 ## Requirements
 
@@ -99,19 +99,19 @@ This parameter allows the storage provider to return extended (implementation-sp
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_FileIntegrity**](msft-fileintegrity.md)
-</dt> </dl>
+ 
 
  
 

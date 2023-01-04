@@ -67,12 +67,12 @@ The **MSFT\_StorageProvider** class has these methods.
 
 | Method                                                                      | Description                                                                                                |
 |:----------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| [**Discover**](discover-msft-storageprovider.md)                           | Discovers the objects that are owned by the storage provider.<br/>                                   |
-| [**GetSecurityDescriptor**](msft-storageprovider-getsecuritydescriptor.md) | Retrieves the security descriptor that controls access to the storage provider object instance.<br/> |
-| [**RegisterSubsystem**](msft-storageprovider-registersubsystem.md)         | Registers a subsystem to be managed by this provider.<br/>                                           |
-| [**SetAttributes**](msft-storageprovider-setattributes.md)                 | Sets the attributes of the provider.<br/>                                                            |
-| [**SetSecurityDescriptor**](setsecuritydescriptor-msft-storageprovider.md) | Sets the security descriptor that controls access to the storage provider object instance.<br/>      |
-| [**UnregisterSubsystem**](msft-storageprovider-unregistersubsystem.md)     | Unregisters a subsystem.<br/>                                                                        |
+| [**Discover**](discover-msft-storageprovider.md)                           | Discovers the objects that are owned by the storage provider.                                   |
+| [**GetSecurityDescriptor**](msft-storageprovider-getsecuritydescriptor.md) | Retrieves the security descriptor that controls access to the storage provider object instance. |
+| [**RegisterSubsystem**](msft-storageprovider-registersubsystem.md)         | Registers a subsystem to be managed by this provider.                                           |
+| [**SetAttributes**](msft-storageprovider-setattributes.md)                 | Sets the attributes of the provider.                                                            |
+| [**SetSecurityDescriptor**](setsecuritydescriptor-msft-storageprovider.md) | Sets the security descriptor that controls access to the storage provider object instance.      |
+| [**UnregisterSubsystem**](msft-storageprovider-unregistersubsystem.md)     | Unregisters a subsystem.                                                                        |
 
 
 
@@ -82,63 +82,63 @@ The **MSFT\_StorageProvider** class has these methods.
 
 The **MSFT\_StorageProvider** class has these properties.
 
-<dl> <dt>
+ 
 
 **CimServerName**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 If the **Type** property is **SMI-S**, this property contains the name of the CIM Server to be displayed in the user interface. For example, "ACME CIM Server". This property is required to support the SLP discovery mechanism.
 
 If the **Type** property is not **SMI-S**, this property is **NULL**.
 
-</dd> <dt>
+ 
 
 **Manufacturer**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 The name of the manufacturer of the SMP software.
 
-</dd> <dt>
+ 
 
 **Name**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 A user-friendly name for the storage provider.
 
-</dd> <dt>
+ 
 
 **RemoteSubsystemCacheMode**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The caching mode of this provider.
 
@@ -146,24 +146,24 @@ The caching mode of this provider.
 
 | Value                                                                                                | Meaning                     |
 |------------------------------------------------------------------------------------------------------|-----------------------------|
-| <span id="0"></span><dl> <dt>**0**</dt> </dl> | Unknown<br/>          |
-| <span id="2"></span><dl> <dt>**2**</dt> </dl> | Disabled<br/>         |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | Manual-Discovery<br/> |
+| <span id="0"></span> **0**  | Unknown          |
+| <span id="2"></span> **2**  | Disabled         |
+| <span id="3"></span> **3**  | Manual-Discovery |
 
 
 
  
 
-</dd> <dt>
+ 
 
 **SupportedRemoteSubsystemCacheModes**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The caching modes that this provider supports.
 
@@ -171,40 +171,40 @@ The caching modes that this provider supports.
 
 | Value                                                                                                | Meaning                     |
 |------------------------------------------------------------------------------------------------------|-----------------------------|
-| <span id="0"></span><dl> <dt>**0**</dt> </dl> | Unknown<br/>          |
-| <span id="2"></span><dl> <dt>**2**</dt> </dl> | Disabled<br/>         |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | Manual-Discovery<br/> |
+| <span id="0"></span> **0**  | Unknown          |
+| <span id="2"></span> **2**  | Disabled         |
+| <span id="3"></span> **3**  | Manual-Discovery |
 
 
 
  
 
-</dd> <dt>
+ 
 
 **SupportsSubsystemRegistration**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Boolean**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 **TRUE** if this provider supports remote registration and management; **FALSE** if it does not.
 
-</dd> <dt>
+ 
 
 **Type**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 Indicates whether the provider is implemented using SMI-S standard interfaces or SMP WMI interfaces.
 
@@ -212,60 +212,60 @@ Indicates whether the provider is implemented using SMI-S standard interfaces or
 
 | Value                                                                                                                                                                                        | Meaning                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| <span id="SMP"></span><span id="smp"></span><dl> <dt>**SMP**</dt> <dt>1</dt> </dl>        | The provider is a native SMP-based provider.<br/>                                                                 |
-| <span id="SMI-S"></span><span id="smi-s"></span><dl> <dt>**SMI-S**</dt> <dt>2 </dt> </dl> | The provider is an SMI-S-based provider that is visible through the SMI-S proxy storage management provider.<br/> |
+| <span id="SMP"></span><span id="smp"></span> **SMP** 1         | The provider is a native SMP-based provider.                                                                 |
+| <span id="SMI-S"></span><span id="smi-s"></span> **SMI-S** 2   | The provider is an SMI-S-based provider that is visible through the SMI-S proxy storage management provider. |
 
 
 
  
 
-</dd> <dt>
+ 
 
 **URI**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 If the **Type** property is **SMI-S**, this property contains the protocol, host name, and port that connect to an SMI-S server.
 
 If the **Type** property is not **SMI-S**, this property is **NULL**.
 
-</dd> <dt>
+ 
 
 **URI\_IP**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 If the **Type** property is **SMI-S**, this property contains the protocol, IP address, and port that connect to an SMI-S server. This pro
 
 If the **Type** property is not **SMI-S**, this property is **NULL**.
 
-</dd> <dt>
+ 
 
 **Version**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 A free-form version string used by the SMP manufacturer to differentiate between software versions.
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -273,10 +273,10 @@ A free-form version string used by the SMP manufacturer to differentiate between
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 

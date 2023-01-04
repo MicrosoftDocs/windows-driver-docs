@@ -37,10 +37,10 @@ UInt32 SetAttributes(
 
 ## Parameters
 
-<dl> <dt>
+ 
 
 *RemoteSubsystemCacheMode* \[in\]
-</dt> <dd>
+ 
 
 The caching mode to set. A value of 3 enables caching for all the registered remote subsystems. A value of 2 disables caching for all the registered remote subsystems. This method only affects the remote registered subsystems; local subsystem requests are reported directly with no caching.
 
@@ -48,55 +48,55 @@ The caching mode to set. A value of 3 enables caching for all the registered rem
 
 | Value                                                                                                | Meaning                     |
 |------------------------------------------------------------------------------------------------------|-----------------------------|
-| <span id="2"></span><dl> <dt>**2**</dt> </dl> | Disabled<br/>         |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | Manual-Discovery<br/> |
+| <span id="2"></span> **2**  | Disabled         |
+| <span id="3"></span> **3**  | Manual-Discovery |
 
 
 
  
 
-</dd> <dt>
+ 
 
 *ExtendedStatus* \[out\]
-</dt> <dd>
+ 
 
 Extended error information from the storage provider in a [**MSFT\_StorageExtendedStatus**](msft-storageextendedstatus.md) object. The information is implementation-specific.
 
-</dd> </dl>
+ 
 
 ## Return value
 
-<dl> <dt>
+ 
 
 **Success** (0)
-</dt> <dt>
+ 
 
 **Not Supported** (1)
-</dt> <dt>
+ 
 
 **Unspecified Error** (2)
-</dt> <dt>
+ 
 
 **Timeout** (3)
-</dt> <dt>
+ 
 
 **Failed** (4)
-</dt> <dt>
+ 
 
 **Invalid Parameter** (5)
-</dt> <dt>
+ 
 
 **Access denied** (40001)
-</dt> <dt>
+ 
 
 **There are not enough resources to complete the operation.** (40002)
-</dt> <dt>
+ 
 
 **Cannot connect to the storage provider.** (46000)
-</dt> <dt>
+ 
 
 **The storage provider cannot connect to the storage subsystem.** (46001)
-</dt> </dl>
+ 
 
 ## Requirements
 
@@ -104,19 +104,19 @@ Extended error information from the storage provider in a [**MSFT\_StorageExtend
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8.1 \[desktop apps only\]<br/>                                              |
-| Minimum supported server<br/> | Windows Server 2012 R2 \[desktop apps only\]<br/>                                   |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8.1 \[desktop apps only\]                                              |
+| Minimum supported server | Windows Server 2012 R2 \[desktop apps only\]                                   |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_StorageProvider**](msft-storageprovider.md)
-</dt> </dl>
+ 
 
  
 

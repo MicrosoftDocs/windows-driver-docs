@@ -53,10 +53,10 @@ UInt32 CreateStoragePool(
 
 ## Parameters
 
-<dl> <dt>
+ 
 
 *FriendlyName* \[in\]
-</dt> <dd>
+ 
 
 Specifies the friendly name for the new storage pool.
 
@@ -66,10 +66,10 @@ If a subsystem doesn't support this, storage pool creation should still succeed.
 
 This parameter is required and cannot be NULL.
 
-</dd> <dt>
+ 
 
 *Usage* \[in\]
-</dt> <dd>
+ 
 
 Specifies the intended usage for the storage pool.
 
@@ -77,41 +77,41 @@ You can specify a predefined description or a custom description. To specify a p
 
 To specify a custom description, use **Other** and specify a non-NULL value for the *OtherUsageDescription* parameter.
 
-<dl> <dt>
+ 
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Other** (1)
-</dt> <dt>
+**Other** (1)
+ 
 
-<span id="Unrestricted"></span><span id="unrestricted"></span><span id="UNRESTRICTED"></span>**Unrestricted** (2)
-</dt> <dt>
+**Unrestricted** (2)
+ 
 
-<span id="Reserved_for_ComputerSystem__the_block_server_"></span><span id="reserved_for_computersystem__the_block_server_"></span><span id="RESERVED_FOR_COMPUTERSYSTEM__THE_BLOCK_SERVER_"></span>**Reserved for ComputerSystem (the block server)** (3)
-</dt> <dt>
+**Reserved for ComputerSystem (the block server)** (3)
+ 
 
-<span id="Reserved_as_a_Delta_Replica_Container"></span><span id="reserved_as_a_delta_replica_container"></span><span id="RESERVED_AS_A_DELTA_REPLICA_CONTAINER"></span>**Reserved as a Delta Replica Container** (4)
-</dt> <dt>
+**Reserved as a Delta Replica Container** (4)
+ 
 
-<span id="Reserved_for_Migration_Services"></span><span id="reserved_for_migration_services"></span><span id="RESERVED_FOR_MIGRATION_SERVICES"></span>**Reserved for Migration Services** (5)
-</dt> <dt>
+**Reserved for Migration Services** (5)
+ 
 
-<span id="Reserved_for_Local_Replication_Services"></span><span id="reserved_for_local_replication_services"></span><span id="RESERVED_FOR_LOCAL_REPLICATION_SERVICES"></span>**Reserved for Local Replication Services** (6)
-</dt> <dt>
+**Reserved for Local Replication Services** (6)
+ 
 
-<span id="Reserved_for_Remote_Replication_Services"></span><span id="reserved_for_remote_replication_services"></span><span id="RESERVED_FOR_REMOTE_REPLICATION_SERVICES"></span>**Reserved for Remote Replication Services** (7)
-</dt> <dt>
+**Reserved for Remote Replication Services** (7)
+ 
 
-<span id="Reserved_for_Sparing"></span><span id="reserved_for_sparing"></span><span id="RESERVED_FOR_SPARING"></span>**Reserved for Sparing** (8)
-</dt> </dl> </dd> <dt>
+**Reserved for Sparing** (8)
+   
 
 *OtherUsageDescription* \[in\]
-</dt> <dd>
+ 
 
 Allows a user to set a custom usage type for the new [**MSFT\_StoragePool**](msft-storagepool.md) object. This parameter can only be specified if the *Usage* parameter is set to **Other**.
 
-</dd> <dt>
+ 
 
 *PhysicalDisks* \[in\]
-</dt> <dd>
+ 
 
 An array of strings, each of which contains an embedded instance of the [**MSFT\_PhysicalDisk**](msft-physicaldisk.md) class.
 
@@ -119,58 +119,58 @@ This parameter is used to specify an array of [**MSFT\_PhysicalDisk**](msft-phys
 
 This parameter is required and cannot be NULL.
 
-</dd> <dt>
+ 
 
 *ResiliencySettingNameDefault* \[in\]
-</dt> <dd>
+ 
 
 The desired resiliency setting to be used by default when creating a new virtual disk in this storage pool. If the subsystem's **SupportsMultipleResiliencySettingsPerStoragePool** property is set to **FALSE**, this parameter also acts as a hint to the storage management provider on which resiliency setting should be inherited by this storage pool. If no value is given, the storage management provider is responsible for choosing the most appropriate resiliency setting.
 
-</dd> <dt>
+ 
 
 *ProvisioningTypeDefault* \[in\]
-</dt> <dd>
+ 
 
 The desired provisioning type to be used by default when creating a new virtual disk on this storage pool. If this parameter is zero, the default provisioning type is inherited from the primordial pool.
 
-<dl> <dt>
+ 
 
-<span id="Thin"></span><span id="thin"></span><span id="THIN"></span>**Thin** (1)
-</dt> <dt>
+**Thin** (1)
+ 
 
-<span id="Fixed"></span><span id="fixed"></span><span id="FIXED"></span>**Fixed** (2)
-</dt> </dl> </dd> <dt>
+**Fixed** (2)
+   
 
 *LogicalSectorSizeDefault* \[in\]
-</dt> <dd>
+ 
 
 The default logical sector size, in bytes. This is useful when a storage pool may contain a mix of 512-byte emulated and either 4K-byte native or 512-byte native physical disks.
 
-</dd> <dt>
+ 
 
 *EnclosureAwareDefault* \[in\]
-</dt> <dd>
+ 
 
 The default allocation policy for virtual disks created in an enclosure aware storage pool. For example, an enclosure-aware subsystem could balance each data copy of the virtual disk across multiple physical enclosures such that each enclosure contains a full data copy of the virtual disk.
 
-</dd> <dt>
+ 
 
 *WriteCacheSizeDefault* \[in\]
-</dt> <dd>
+ 
 
 The default size of the write cache for virtual disk creation.
 
-</dd> <dt>
+ 
 
 *AutoWriteCacheSize* \[in\]
-</dt> <dd>
+ 
 
 If **TRUE**, the provider should pick up the auto write cache size.
 
-</dd> <dt>
+ 
 
 *RunAsJob* \[in\]
-</dt> <dd>
+ 
 
 If **TRUE**, this method uses the *CreatedStorageJob* parameter when the request is taking a long time to service. If a storage job has been created to track the operation, this method will return **Method Parameters Checked - Job Started**.
 
@@ -181,103 +181,103 @@ If **TRUE**, this method uses the *CreatedStorageJob* parameter when the request
 
 If **FALSE** or **NULL**, this method will follow default WMI asynchronous behavior as determined by the client's method for invocation. In other words, it is synchronous unless requested otherwise.
 
-</dd> <dt>
+ 
 
 *CreatedStoragePool* \[out\]
-</dt> <dd>
+ 
 
 If the storage pool is successfully created, this parameter receives a string that contains an embedded [**MSFT\_StoragePool**](msft-storagepool.md) object.
 
-</dd> <dt>
+ 
 
 *CreatedStorageJob* \[out\]
-</dt> <dd>
+ 
 
 If *RunAsJob* is set to **TRUE** and this method takes a long time to execute, this parameter receives a reference to the storage job object that is used to track the long-running operation.
 
-</dd> <dt>
+ 
 
 *ExtendedStatus* \[out\]
-</dt> <dd>
+ 
 
 A string that contains an embedded [**MSFT\_StorageExtendedStatus**](msft-storageextendedstatus.md) object.
 
 This parameter allows the storage provider to return extended (implementation-specific) error information.
 
-</dd> </dl>
+ 
 
 ## Return value
 
-<dl> <dt>
+ 
 
 **Success** (0)
-</dt> <dt>
+ 
 
 **Not Supported** (1)
-</dt> <dt>
+ 
 
 **Unspecified Error** (2)
-</dt> <dt>
+ 
 
 **Timeout** (3)
-</dt> <dt>
+ 
 
 **Failed** (4)
-</dt> <dt>
+ 
 
 **Invalid Parameter** (5)
-</dt> <dt>
+ 
 
 **Object Not Found** (8)
-</dt> <dt>
+ 
 
 **Method Parameters Checked - Job Started** (4096)
-</dt> <dt>
+ 
 
 **Access denied** (40001)
-</dt> <dt>
+ 
 
 **There are not enough resources to complete the operation.** (40002)
-</dt> <dt>
+ 
 
 **Cache out of date** (40003)
-</dt> <dt>
+ 
 
 **An unexpected I/O error has occurred** (40004)
-</dt> <dt>
+ 
 
 **The request failed due to a fatal device hardware error.** (40007)
-</dt> <dt>
+ 
 
 **Cannot connect to the storage provider.** (46000)
-</dt> <dt>
+ 
 
 **The storage provider cannot connect to the storage subsystem.** (46001)
-</dt> <dt>
+ 
 
 **Failover clustering could not be enabled for this storage object.** (46008)
-</dt> <dt>
+ 
 
 **No resiliency setting with that name exists.** (49000)
-</dt> <dt>
+ 
 
 **The value for WriteCacheSize is outside of the supported range of values.** (50005)
-</dt> <dt>
+ 
 
 **One of the physical disks specified is not supported by this operation.** (51000)
-</dt> <dt>
+ 
 
 **Not enough physical disks were specified to successfully complete the operation.** (51001)
-</dt> <dt>
+ 
 
 **One of the physical disks specified is already in use.** (51002)
-</dt> <dt>
+ 
 
 **One of the physical disks specified uses a sector size that is not supported by this storage pool.** (51003)
-</dt> <dt>
+ 
 
 **One or more physical disks are not connected to the nodes on which the pool is being created.** (51005)
-</dt> </dl>
+ 
 
 ## Remarks
 
@@ -322,19 +322,19 @@ Subsystems that support storage pools and storage pool selection and also suppor
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_StorageSubSystem**](msft-storagesubsystem.md)
-</dt> </dl>
+ 
 
  
 

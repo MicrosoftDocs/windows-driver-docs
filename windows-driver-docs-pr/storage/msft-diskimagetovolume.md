@@ -47,35 +47,35 @@ The **MSFT\_DiskImageToVolume** class has these types of members:
 
 The **MSFT\_DiskImageToVolume** class has these properties.
 
-<dl> <dt>
+ 
 
 **DiskImage**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **[**MSFT\_DiskImage**](msft-diskimage.md)**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Key**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
-</dd> <dt>
+ 
 
 **Volume**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **[**MSFT\_Volume**](msft-volume.md)**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Key**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -83,22 +83,22 @@ Qualifiers: [**Key**](/windows/win32/wmisdk/standard-qualifiers)
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_DiskImage**](msft-diskimage.md)
-</dt> <dt>
+ 
 
 [**MSFT\_Volume**](msft-volume.md)
-</dt> </dl>
+ 
 
  
 

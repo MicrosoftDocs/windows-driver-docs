@@ -55,88 +55,88 @@ The **MSFT\_StorageNodeToDisk** class has these types of members:
 
 The **MSFT\_StorageNodeToDisk** class has these properties.
 
-<dl> <dt>
+ 
 
 **DiskNumber**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt32**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 The operating system's number for the disk. Disk 0 is typically the boot device. Disk numbers may not necessarily remain the same across reboots.
 
-</dd> <dt>
+ 
 
 **HealthStatus**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 Denotes the health status of the disk.
 
-<dl> <dt>
+ 
 
-<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Unknown** (0)
-</dt> <dt>
+**Unknown** (0)
+ 
 
-<span id="Healthy"></span><span id="healthy"></span><span id="HEALTHY"></span>**Healthy** (1)
-</dt> <dt>
+**Healthy** (1)
+ 
 
-<span id="Failing"></span><span id="failing"></span><span id="FAILING"></span>**Failing** (4)
-</dt> <dt>
+**Failing** (4)
+ 
 
-<span id="Failed"></span><span id="failed"></span><span id="FAILED"></span>**Failed** (8)
-</dt> </dl>
+**Failed** (8)
+ 
 
-</dd> <dt>
+ 
 
 **IsOffline**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Boolean**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 Indicates whether the disk is offline.
 
-</dd> <dt>
+ 
 
 **IsReadOnly**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Boolean**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 Indicates whether the disk is read only.
 
-</dd> <dt>
+ 
 
 **OfflineReason**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 If *IsOffline* is **TRUE**, this property denotes the specific reason for the disk being offline.
 
@@ -144,58 +144,58 @@ If *IsOffline* is **TRUE**, this property denotes the specific reason for the di
 
 | Value                                                                                                                                                                                                                                                                                                           | Meaning                                                                     |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| <span id="Policy"></span><span id="policy"></span><span id="POLICY"></span><dl> <dt>**Policy**</dt> <dt>1</dt> </dl>                                                                                         | The user requested the disk to be offline.<br/>                       |
-| <span id="Redundant_Path"></span><span id="redundant_path"></span><span id="REDUNDANT_PATH"></span><dl> <dt>**Redundant Path**</dt> <dt>2</dt> </dl>                                                         | The disk is used for multi-path I/O.<br/>                             |
-| <span id="Snapshot"></span><span id="snapshot"></span><span id="SNAPSHOT"></span><dl> <dt>**Snapshot**</dt> <dt>3</dt> </dl>                                                                                 | The disk is a snapshot disk.<br/>                                     |
-| <span id="Collision"></span><span id="collision"></span><span id="COLLISION"></span><dl> <dt>**Collision**</dt> <dt>4</dt> </dl>                                                                             | There was a signature or identifier collision with another disk.<br/> |
-| <span id="Resource_Exhaustion"></span><span id="resource_exhaustion"></span><span id="RESOURCE_EXHAUSTION"></span><dl> <dt>**Resource Exhaustion**</dt> <dt>5</dt> </dl>                                     | There were insufficient resources to bring the disk online.<br/>      |
-| <span id="Critical_Write_Failures"></span><span id="critical_write_failures"></span><span id="CRITICAL_WRITE_FAILURES"></span><dl> <dt>**Critical Write Failures**</dt> <dt>6</dt> </dl>                     | There were critical write failures on the disk.<br/>                  |
-| <span id="Data_Integrity_Scan_Required"></span><span id="data_integrity_scan_required"></span><span id="DATA_INTEGRITY_SCAN_REQUIRED"></span><dl> <dt>**Data Integrity Scan Required**</dt> <dt>7</dt> </dl> | A data integrity scan is required.<br/>                               |
+|  **Policy** 1                                                                                          | The user requested the disk to be offline.                       |
+|  **Redundant Path** 2                                                          | The disk is used for multi-path I/O.                             |
+|  **Snapshot** 3                                                                                  | The disk is a snapshot disk.                                     |
+|  **Collision** 4                                                                              | There was a signature or identifier collision with another disk. |
+|  **Resource Exhaustion** 5                                      | There were insufficient resources to bring the disk online.      |
+|  **Critical Write Failures** 6                      | There were critical write failures on the disk.                  |
+|  **Data Integrity Scan Required** 7  | A data integrity scan is required.                               |
 
 
 
  
 
-</dd> <dt>
+ 
 
 **OperationalStatus**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 Denotes the operational status of the disk:
 
-<dl> <dt>
+ 
 
-<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Unknown** (0)
-</dt> <dt>
+**Unknown** (0)
+ 
 
-<span id="Online"></span><span id="online"></span><span id="ONLINE"></span>**Online** (1)
-</dt> <dt>
+**Online** (1)
+ 
 
-<span id="Not_Ready"></span><span id="not_ready"></span><span id="NOT_READY"></span>**Not Ready** (2)
-</dt> <dt>
+**Not Ready** (2)
+ 
 
-<span id="No_Media"></span><span id="no_media"></span><span id="NO_MEDIA"></span>**No Media** (3)
-</dt> <dt>
+**No Media** (3)
+ 
 
-<span id="Offline"></span><span id="offline"></span><span id="OFFLINE"></span>**Offline** (4)
-</dt> <dt>
+**Offline** (4)
+ 
 
-<span id="Failed"></span><span id="failed"></span><span id="FAILED"></span>**Failed** (5)
-</dt> <dt>
+**Failed** (5)
+ 
 
-<span id="Missing"></span><span id="missing"></span><span id="MISSING"></span>**Missing** (6)
-</dt> </dl>
+**Missing** (6)
+ 
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -203,22 +203,22 @@ Denotes the operational status of the disk:
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8.1 \[desktop apps only\]<br/>                                              |
-| Minimum supported server<br/> | Windows Server 2012 R2 \[desktop apps only\]<br/>                                   |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8.1 \[desktop apps only\]                                              |
+| Minimum supported server | Windows Server 2012 R2 \[desktop apps only\]                                   |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_Disk**](msft-disk.md)
-</dt> <dt>
+ 
 
 [**MSFT\_StorageNode**](msft-storagenode.md)
-</dt> </dl>
+ 
 
  
 

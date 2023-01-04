@@ -42,31 +42,31 @@ UInt32 SetAttributes(
 
 ## Parameters
 
-<dl> <dt>
+ 
 
 *IsReadOnly* \[in\]
-</dt> <dd>
+ 
 
 Indicates whether or not the storage pool's configuration is read only. If **TRUE**, the storage pool will not allow modification to its properties or any of its associated elements.
 
-</dd> <dt>
+ 
 
 *ClearOnDeallocate* \[in\]
-</dt> <dd>
+ 
 
 If **TRUE**, physical disks should be zeroed (cleared of all data) when unmapped or removed from the storage pool. If **FALSE**, the behavior is subsystem defined.
 
-</dd> <dt>
+ 
 
 *IsPowerProtected* \[in\]
-</dt> <dd>
+ 
 
 If **TRUE**, the disks in this pool are able to tolerate power loss without data loss. For example, they automatically flush volatile buffers to non-volatile media after external power is disconnected.
 
-</dd> <dt>
+ 
 
 *RepairPolicy* \[in\]
-</dt> <dd>
+ 
 
 How the operating system repairs virtual disks for this storage pool.
 
@@ -74,92 +74,92 @@ How the operating system repairs virtual disks for this storage pool.
 
 | Value                                                                                                | Meaning                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="2"></span><dl> <dt>**2**</dt> </dl> | Sequential - processes one allocation slab at a time. Repairs take longer, but with less impact on the I/O load.<br/>                            |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | Parallel - processes as many allocation slabs as it can in parallel. Repair time is minimized, but with significant impact on the I/O load.<br/> |
+|  **2**  | Sequential - processes one allocation slab at a time. Repairs take longer, but with less impact on the I/O load.                            |
+|  **3**  | Parallel - processes as many allocation slabs as it can in parallel. Repair time is minimized, but with significant impact on the I/O load. |
 
 
 
  
 
-</dd> <dt>
+ 
 
 *RetireMissingPhysicalDisks* \[in\]
-</dt> <dd>
+ 
 
 Specifies whether the storage subsystem will automatically retire physical disks that are missing from this storage pool and replace them with hot spares or other physical disks that are available in the storage pool.
 
-<dl> <dt>
+ 
 
-<span id="Auto"></span><span id="auto"></span><span id="AUTO"></span>**Auto** (1)
-</dt> <dt>
+**Auto** (1)
+ 
 
-<span id="Always"></span><span id="always"></span><span id="ALWAYS"></span>**Always** (2)
-</dt> <dt>
+**Always** (2)
+ 
 
-<span id="Never"></span><span id="never"></span><span id="NEVER"></span>**Never** (3)
-</dt> </dl> </dd> <dt>
+**Never** (3)
+   
 
 *ThinProvisioningAlertThresholds* \[in\]
-</dt> <dd>
+ 
 
 An array of percentage values that represent various sparse (thin provisioning) thresholds. The minimum value for each value is 1; the maximum value is 100. When the virtual disk space usage crosses one of these thresholds, a notification will be broadcasted to all subscribed clients.
 
-</dd> <dt>
+ 
 
 *ExtendedStatus* \[out\]
-</dt> <dd>
+ 
 
 A string that contains an embedded [**MSFT\_StorageExtendedStatus**](msft-storageextendedstatus.md) object.
 
 This parameter allows the storage provider to return extended (implementation-specific) error information.
 
-</dd> </dl>
+ 
 
 ## Return value
 
-<dl> <dt>
+ 
 
 **Success** (0)
-</dt> <dt>
+ 
 
 **Not Supported** (1)
-</dt> <dt>
+ 
 
 **Unspecified Error** (2)
-</dt> <dt>
+ 
 
 **Timeout** (3)
-</dt> <dt>
+ 
 
 **Failed** (4)
-</dt> <dt>
+ 
 
 **Invalid Parameter** (5)
-</dt> <dt>
+ 
 
 **Access denied** (40001)
-</dt> <dt>
+ 
 
 **There are not enough resources to complete the operation.** (40002)
-</dt> <dt>
+ 
 
 **Cannot connect to the storage provider.** (46000)
-</dt> <dt>
+ 
 
 **The storage provider cannot connect to the storage subsystem.** (46001)
-</dt> <dt>
+ 
 
 **This operation is not supported on primordial storage pools.** (48000)
-</dt> <dt>
+ 
 
 **The storage pool could not complete the operation because its health or operational status does not permit it.** (48006)
-</dt> <dt>
+ 
 
 **The storage pool could not complete the operation because its configuration is read-only.** (48007)
-</dt> <dt>
+ 
 
 **The number of thin provisioning alert thresholds specified exceeds the limit for this storage pool.** (48009)
-</dt> </dl>
+ 
 
 ## Remarks
 
@@ -178,19 +178,19 @@ If you want to set the **IsReadOnly**, **ClearOnDeallocate**, and **IsPowerProte
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_StoragePool**](msft-storagepool.md)
-</dt> </dl>
+ 
 
  
 

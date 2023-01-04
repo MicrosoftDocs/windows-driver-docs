@@ -50,59 +50,59 @@ The **MSFT\_OffloadDataTransferSetting** class has these types of members:
 
 The **MSFT\_OffloadDataTransferSetting** class has these properties.
 
-<dl> <dt>
+ 
 
 **NumberOfTokensInUse**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt32**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The maximum number of tokens in use for the subsystem.
 
-</dd> <dt>
+ 
 
 **NumberOfTokensMax**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt32**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The maximum number of tokens available for the subsystem.
 
-</dd> <dt>
+ 
 
 **OptimalDataTokenSize**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt32**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The optimal data token size, in bytes.
 
-</dd> <dt>
+ 
 
 **SupportInterSubsystem**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Boolean**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 If **TRUE**, the subsystem supports transfer of data using tokens across different subsystems.
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -110,19 +110,19 @@ If **TRUE**, the subsystem supports transfer of data using tokens across differe
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_StorageObject**](msft-storageobject.md)
-</dt> </dl>
+ 
 
  
 

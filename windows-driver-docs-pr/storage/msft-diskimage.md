@@ -65,8 +65,8 @@ The **MSFT\_DiskImage** class has these methods.
 
 | Method                                      | Description                          |
 |:--------------------------------------------|:-------------------------------------|
-| [**Dismount**](msft-diskimage-dismount.md) | Dismounts the disk image.<br/> |
-| [**Mount**](msft-diskimage-mount.md)       | Mounts the disk image.<br/>    |
+| [**Dismount**](msft-diskimage-dismount.md) | Dismounts the disk image. |
+| [**Mount**](msft-diskimage-mount.md)       | Mounts the disk image.    |
 
 
 
@@ -76,142 +76,142 @@ The **MSFT\_DiskImage** class has these methods.
 
 The **MSFT\_DiskImage** class has these properties.
 
-<dl> <dt>
+ 
 
 **Attached**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Boolean**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 **TRUE** if the disk image is attached.
 
-</dd> <dt>
+ 
 
 **BlockSize**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt64**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Units** (Bytes)
-</dt> </dl>
+ 
 
 Block size of the disk image, in bytes.
 
-</dd> <dt>
+ 
 
 **DevicePath**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The device path for the disk image.
 
-</dd> <dt>
+ 
 
 **FileSize**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt64**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Units** (Bytes)
-</dt> </dl>
+ 
 
 The file size, in bytes, of the disk image.
 
-</dd> <dt>
+ 
 
 **ImagePath**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Key**
-</dt> </dl>
+ 
 
 The path to the disk image.
 
-</dd> <dt>
+ 
 
 **LogicalSectorSize**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt64**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Units** (Bytes)
-</dt> </dl>
+ 
 
 Logical sector size of the disk image, in bytes.
 
-</dd> <dt>
+ 
 
 **Number**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt32**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The disk number of the disk image.
 
-</dd> <dt>
+ 
 
 **Size**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt64**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Units** (Bytes)
-</dt> </dl>
+ 
 
 The size, in bytes, of the disk image.
 
-</dd> <dt>
+ 
 
 **StorageType**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt32**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Key**, **Values** ( "Unknown", "ISO", "VHD", "VHDX" ), **ValueMap** ("0", "1", "2", "3")
-</dt> </dl>
+ 
 
 The type of the disk image.
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -219,10 +219,10 @@ The type of the disk image.
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 

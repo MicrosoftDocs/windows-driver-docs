@@ -40,80 +40,80 @@ UInt32 GetRecoveryPointData(
 
 ## Parameters
 
-<dl> <dt>
+ 
 
 *ReplicationType* \[in\]
-</dt> <dd>
+ 
 
 A value representing the replication type. This must be in the enumeration [**MSFT\_ReplicationCapabilities**](msft-replicationcapabilities.md).SupportedReplicationTypes.
 
-</dd> <dt>
+ 
 
 *DefaultRecoveryPoint* \[in\]
-</dt> <dd>
+ 
 
 Default recovery point value.
 
-</dd> <dt>
+ 
 
 *RecoveryPointValues* \[out\]
-</dt> <dd></dd> <dt>
+  
 
 *RecoveryPointIndicator* \[out\]
-</dt> <dd>
+ 
 
 Indicates the semantics of the supported values.
 
-<dl> <dt>
+ 
 
-<span id="Range"></span><span id="range"></span><span id="RANGE"></span>**Range** (1)
-</dt> <dt>
+**Range** (1)
+ 
 
-<span id="Discrete"></span><span id="discrete"></span><span id="DISCRETE"></span>**Discrete** (2)
-</dt> </dl> </dd> <dt>
+**Discrete** (2)
+   
 
 *ExtendedStatus* \[out\]
-</dt> <dd>
+ 
 
 A string that contains an embedded [**MSFT\_StorageExtendedStatus**](msft-storageextendedstatus.md) object.
 
 This parameter allows the storage provider to return extended (implementation-specific) error information.
 
-</dd> </dl>
+ 
 
 ## Return value
 
-<dl> <dt>
+ 
 
 **Success** (0)
-</dt> <dt>
+ 
 
 **Not Supported** (1)
-</dt> <dt>
+ 
 
 **Unspecified Error** (2)
-</dt> <dt>
+ 
 
 **Timeout** (3)
-</dt> <dt>
+ 
 
 **Failed** (4)
-</dt> <dt>
+ 
 
 **Invalid Parameter** (5)
-</dt> <dt>
+ 
 
 **In Use** (6)
-</dt> <dt>
+ 
 
 **Property Is Not Supported** (7)
-</dt> <dt>
+ 
 
 **DMTF Reserved** (..)
-</dt> <dt>
+ 
 
 **Vendor Specific** (0x8000..)
-</dt> </dl>
+ 
 
 ## Requirements
 
@@ -121,19 +121,19 @@ This parameter allows the storage provider to return extended (implementation-sp
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 10 \[desktop apps only\]<br/>                                               |
-| Minimum supported server<br/> | Windows Server 2016 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 10 \[desktop apps only\]                                               |
+| Minimum supported server | Windows Server 2016 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_ReplicationCapabilities**](msft-replicationcapabilities.md)
-</dt> </dl>
+ 
 
  
 

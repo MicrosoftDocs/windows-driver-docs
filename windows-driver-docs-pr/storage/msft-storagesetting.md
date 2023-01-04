@@ -51,9 +51,9 @@ The **MSFT\_StorageSetting** class has these methods.
 
 | Method                                                                       | Description                                                                                                              |
 |:-----------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------|
-| [**Get**](msft-storagesetting-get.md)                                       | Retrieves the current state of all storage settings for the computer.<br/>                                         |
-| [**Set**](msft-storagesetting-set.md)                                       | Sets the state of various storage settings on this computer.<br/>                                                  |
-| [**UpdateHostStorageCache**](msft-storagesetting-updatehoststoragecache.md) | Updates the internal cache of software objects (that is, Disks, Partitions, Volumes) for the storage setting.<br/> |
+| [**Get**](msft-storagesetting-get.md)                                       | Retrieves the current state of all storage settings for the computer.                                         |
+| [**Set**](msft-storagesetting-set.md)                                       | Sets the state of various storage settings on this computer.                                                  |
+| [**UpdateHostStorageCache**](msft-storagesetting-updatehoststoragecache.md) | Updates the internal cache of software objects (that is, Disks, Partitions, Volumes) for the storage setting. |
 
 
 
@@ -63,16 +63,16 @@ The **MSFT\_StorageSetting** class has these methods.
 
 The **MSFT\_StorageSetting** class has these properties.
 
-<dl> <dt>
+ 
 
 **NewDiskPolicy**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 Describes the action the operating system will take when a new disk is discovered on the system. When a disk is offline, the disk layout can be read, but no volume devices are surfaced through Plug and Play (PnP). This means that no file system can be mounted on the disk. When a disk is online, one or more volume devices are installed for the disk.
 
@@ -80,41 +80,41 @@ Describes the action the operating system will take when a new disk is discovere
 
 | Value                                                                                                                                                                                                                                                           | Meaning                                                                                                          |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Unknown**</dt> <dt>0</dt> </dl>                                     | The disk policy is not specified.<br/>                                                                     |
-| <span id="Online_All"></span><span id="online_all"></span><span id="ONLINE_ALL"></span><dl> <dt>**Online All**</dt> <dt>1</dt> </dl>                         | All newly discovered disks are brought online and made read/write.<br/>                                    |
-| <span id="Offline_Shared"></span><span id="offline_shared"></span><span id="OFFLINE_SHARED"></span><dl> <dt>**Offline Shared**</dt> <dt>2</dt> </dl>         | All newly discovered disks that do not reside on a shared bus are brought online and made read/write.<br/> |
-| <span id="Offline_All"></span><span id="offline_all"></span><span id="OFFLINE_ALL"></span><dl> <dt>**Offline All**</dt> <dt>3</dt> </dl>                     | All newly discovered disks remain offline and read-only.<br/>                                              |
-| <span id="Offline_Internal"></span><span id="offline_internal"></span><span id="OFFLINE_INTERNAL"></span><dl> <dt>**Offline Internal**</dt> <dt>4</dt> </dl> | All newly discovered disks that do not reside on a shared bus remain offline and read-only.<br/>           |
+| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span> **Unknown** 0                                      | The disk policy is not specified.                                                                     |
+| <span id="Online_All"></span><span id="online_all"></span><span id="ONLINE_ALL"></span> **Online All** 1                          | All newly discovered disks are brought online and made read/write.                                    |
+| <span id="Offline_Shared"></span><span id="offline_shared"></span><span id="OFFLINE_SHARED"></span> **Offline Shared** 2          | All newly discovered disks that do not reside on a shared bus are brought online and made read/write. |
+| <span id="Offline_All"></span><span id="offline_all"></span><span id="OFFLINE_ALL"></span> **Offline All** 3                      | All newly discovered disks remain offline and read-only.                                              |
+| <span id="Offline_Internal"></span><span id="offline_internal"></span><span id="OFFLINE_INTERNAL"></span> **Offline Internal** 4  | All newly discovered disks that do not reside on a shared bus remain offline and read-only.           |
 
 
 
  
 
-</dd> <dt>
+ 
 
 **ScrubPolicy**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt32**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 Describes the policy for the files that the automatic data integrity scanner will scrub.
 
-<dl> <dt>
+ 
 
 <span id="Off"></span><span id="off"></span><span id="OFF"></span>**Off** (0)
-</dt> <dt>
+ 
 
 <span id="Integrity_Streams"></span><span id="integrity_streams"></span><span id="INTEGRITY_STREAMS"></span>**Integrity Streams** (1)
-</dt> <dt>
+ 
 
 <span id="All"></span><span id="all"></span><span id="ALL"></span>**All** (2)
-</dt> </dl>
+ 
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -122,10 +122,10 @@ Describes the policy for the files that the automatic data integrity scanner wil
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 

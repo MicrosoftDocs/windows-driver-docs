@@ -47,35 +47,35 @@ The **MSFT\_FileServerToFileShare** class has these types of members:
 
 The **MSFT\_FileServerToFileShare** class has these properties.
 
-<dl> <dt>
+ 
 
 **FileServer**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **[**MSFT\_FileServer**](msft-fileserver.md)**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Key**
-</dt> </dl>
+ 
 
-</dd> <dt>
+ 
 
 **FileShare**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **[**MSFT\_FileShare**](msft-fileshare.md)**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Key**
-</dt> </dl>
+ 
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -83,22 +83,22 @@ Qualifiers: **Key**
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 10 \[desktop apps only\]<br/>                                               |
-| Minimum supported server<br/> | Windows Server 2016 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 10 \[desktop apps only\]                                               |
+| Minimum supported server | Windows Server 2016 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_FileServer**](msft-fileserver.md)
-</dt> <dt>
+ 
 
 [**MSFT\_FileShare**](msft-fileshare.md)
-</dt> </dl>
+ 
 
  
 

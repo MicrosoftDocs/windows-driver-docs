@@ -45,35 +45,35 @@ The **MSFT\_TargetPortToVirtualDisk** class has these types of members:
 
 The **MSFT\_TargetPortToVirtualDisk** class has these properties.
 
-<dl> <dt>
+ 
 
 [**TargetPort**](msft-targetport.md)
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **[**MSFT\_TargetPort**](msft-targetport.md)**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Key**
-</dt> </dl>
+ 
 
-</dd> <dt>
+ 
 
 [**VirtualDisk**](msft-virtualdisk.md)
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **[**MSFT\_VirtualDisk**](msft-virtualdisk.md)**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Key**
-</dt> </dl>
+ 
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -81,22 +81,22 @@ Qualifiers: **Key**
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_TargetPort**](msft-targetport.md)
-</dt> <dt>
+ 
 
 [**MSFT\_VirtualDisk**](msft-virtualdisk.md)
-</dt> </dl>
+ 
 
  
 

@@ -39,35 +39,35 @@ UInt32 Set(
 
 ## Parameters
 
-<dl> <dt>
+ 
 
 *FilePath* \[in\]
-</dt> <dd>
+ 
 
 The path of a file.
 
-</dd> <dt>
+ 
 
 *DesiredStorageTierFriendlyName* \[in\]
-</dt> <dd>
+ 
 
 The friendly name of the desired storage tier.
 
-</dd> <dt>
+ 
 
 *DesiredStorageTierUniqueId* \[in\]
-</dt> <dd>
+ 
 
 The unique ID of the desired storage tier.
 
-</dd> <dt>
+ 
 
 *DesiredStorageTier* \[in\]
-</dt> <dd>
+ 
 
 The desired storage tier, an [**MSFT\_StorageTier**](msft-storagetier.md) object.
 
-</dd> </dl>
+ 
 
 ## Remarks
 
@@ -81,19 +81,19 @@ The actual movement of the file to this tier will happen only when the optimizer
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8.1 \[desktop apps only\]<br/>                                              |
-| Minimum supported server<br/> | Windows Server 2012 R2 \[desktop apps only\]<br/>                                   |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8.1 \[desktop apps only\]                                              |
+| Minimum supported server | Windows Server 2012 R2 \[desktop apps only\]                                   |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_FileStorageTier**](msft-filestoragetier.md)
-</dt> </dl>
+ 
 
  
 

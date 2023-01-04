@@ -55,16 +55,16 @@ The **MSFT\_MaskingSet** class has these methods.
 
 | Method                                                                 | Description                                                                |
 |:-----------------------------------------------------------------------|:---------------------------------------------------------------------------|
-| [**AddInitiatorId**](msft-maskingset-addinitiatorid.md)               | Adds one or more initiator identifiers to the masking set.<br/>      |
-| [**AddTargetPort**](msft-maskingset-addtargetport.md)                 | Adds one or more target ports to the masking set.<br/>               |
-| [**AddVirtualDisk**](msft-maskingset-addvirtualdisk.md)               | Adds one or more virtual disks to the masking set.<br/>              |
-| [**DeleteObject**](msft-maskingset-deleteobject.md)                   | Deletes the masking set instance.<br/>                               |
-| [**GetSecurityDescriptor**](msft-maskingset-getsecuritydescriptor.md) | Retrieves the security descriptor for the masking set instance.<br/> |
-| [**RemoveInitiatorId**](msft-maskingset-removeinitiatorid.md)         | Removes one or more initiator identifiers from the masking set.<br/> |
-| [**RemoveTargetPort**](msft-maskingset-removetargetport.md)           | Removes one or more target ports from the masking set.<br/>          |
-| [**RemoveVirtualDisk**](msft-maskingset-removevirtualdisk.md)         | Removes one or more virtual disks from the masking set.<br/>         |
-| [**SetFriendlyName**](msft-maskingset-setfriendlyname.md)             | Sets the friendly name for the masking set.<br/>                     |
-| [**SetSecurityDescriptor**](msft-maskingset-setsecuritydescriptor.md) | Sets the security descriptor for the masking set object.<br/>        |
+| [**AddInitiatorId**](msft-maskingset-addinitiatorid.md)               | Adds one or more initiator identifiers to the masking set.      |
+| [**AddTargetPort**](msft-maskingset-addtargetport.md)                 | Adds one or more target ports to the masking set.               |
+| [**AddVirtualDisk**](msft-maskingset-addvirtualdisk.md)               | Adds one or more virtual disks to the masking set.              |
+| [**DeleteObject**](msft-maskingset-deleteobject.md)                   | Deletes the masking set instance.                               |
+| [**GetSecurityDescriptor**](msft-maskingset-getsecuritydescriptor.md) | Retrieves the security descriptor for the masking set instance. |
+| [**RemoveInitiatorId**](msft-maskingset-removeinitiatorid.md)         | Removes one or more initiator identifiers from the masking set. |
+| [**RemoveTargetPort**](msft-maskingset-removetargetport.md)           | Removes one or more target ports from the masking set.          |
+| [**RemoveVirtualDisk**](msft-maskingset-removevirtualdisk.md)         | Removes one or more virtual disks from the masking set.         |
+| [**SetFriendlyName**](msft-maskingset-setfriendlyname.md)             | Sets the friendly name for the masking set.                     |
+| [**SetSecurityDescriptor**](msft-maskingset-setsecuritydescriptor.md) | Sets the security descriptor for the masking set object.        |
 
 
 
@@ -74,126 +74,126 @@ The **MSFT\_MaskingSet** class has these methods.
 
 The **MSFT\_MaskingSet** class has these properties.
 
-<dl> <dt>
+ 
 
 **FriendlyName**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 A user-friendly name for the masking set. It is specified when the masking set is created, and it can be changed using the [**SetFriendlyName**](msft-maskingset-setfriendlyname.md) method.
 
-</dd> <dt>
+ 
 
 **HostType**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The host operating system or other host environmental factors that may influence the behavior that the storage system should have when showing a virtual disk to an initiator.
 
-<dl> <dt>
+ 
 
-<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Unknown** (0)
-</dt> <dt>
+**Unknown** (0)
+ 
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Other** (1)
-</dt> <dt>
+**Other** (1)
+ 
 
-<span id="Standard"></span><span id="standard"></span><span id="STANDARD"></span>**Standard** (2)
-</dt> <dt>
+**Standard** (2)
+ 
 
-<span id="Solaris"></span><span id="solaris"></span><span id="SOLARIS"></span>**Solaris** (3)
-</dt> <dt>
+**Solaris** (3)
+ 
 
-<span id="HPUX"></span><span id="hpux"></span>**HPUX**
-</dt> <dt>
+**HPUX**
+ 
 
-<span id="OpenVMS"></span><span id="openvms"></span><span id="OPENVMS"></span>**OpenVMS** (5)
-</dt> <dt>
+**OpenVMS** (5)
+ 
 
-<span id="Tru64"></span><span id="tru64"></span><span id="TRU64"></span>**Tru64** (6)
-</dt> <dt>
+**Tru64** (6)
+ 
 
-<span id="Netware"></span><span id="netware"></span><span id="NETWARE"></span>**Netware** (7)
-</dt> <dt>
+**Netware** (7)
+ 
 
-<span id="Sequent"></span><span id="sequent"></span><span id="SEQUENT"></span>**Sequent** (8)
-</dt> <dt>
+**Sequent** (8)
+ 
 
-<span id="AIX"></span><span id="aix"></span>**AIX** (9)
-</dt> <dt>
+**AIX** (9)
+ 
 
-<span id="DGUX"></span><span id="dgux"></span>**DGUX** (10)
-</dt> <dt>
+**DGUX** (10)
+ 
 
-<span id="Dynix"></span><span id="dynix"></span><span id="DYNIX"></span>**Dynix** (11)
-</dt> <dt>
+**Dynix** (11)
+ 
 
-<span id="Irix"></span><span id="irix"></span><span id="IRIX"></span>**Irix** (12)
-</dt> <dt>
+**Irix** (12)
+ 
 
-<span id="Cisco_iSCSI_Storage_Router"></span><span id="cisco_iscsi_storage_router"></span><span id="CISCO_ISCSI_STORAGE_ROUTER"></span>**Cisco iSCSI Storage Router** (13)
-</dt> <dt>
+**Cisco iSCSI Storage Router** (13)
+ 
 
-<span id="Linux"></span><span id="linux"></span><span id="LINUX"></span>**Linux** (14)
-</dt> <dt>
+**Linux** (14)
+ 
 
-<span id="Microsoft_Windows"></span><span id="microsoft_windows"></span><span id="MICROSOFT_WINDOWS"></span>**Microsoft Windows** (15)
-</dt> <dt>
+**Microsoft Windows** (15)
+ 
 
-<span id="OS400"></span><span id="os400"></span>**OS400** (16)
-</dt> <dt>
+**OS400** (16)
+ 
 
-<span id="TRESPASS"></span><span id="trespass"></span>**TRESPASS** (17)
-</dt> <dt>
+**TRESPASS** (17)
+ 
 
-<span id="HI-UX"></span><span id="hi-ux"></span>**HI-UX** (18)
-</dt> <dt>
+**HI-UX** (18)
+ 
 
-<span id="VMware_ESXi"></span><span id="vmware_esxi"></span><span id="VMWARE_ESXI"></span>**VMware ESXi** (19)
-</dt> <dt>
+**VMware ESXi** (19)
+ 
 
-<span id="Microsoft_Windows_Server_2008"></span><span id="microsoft_windows_server_2008"></span><span id="MICROSOFT_WINDOWS_SERVER_2008"></span>**Microsoft Windows Server 2008** (20)
-</dt> <dt>
+**Microsoft Windows Server 2008** (20)
+ 
 
-<span id="Microsoft_Windows_Server_2003"></span><span id="microsoft_windows_server_2003"></span><span id="MICROSOFT_WINDOWS_SERVER_2003"></span>**Microsoft Windows Server 2003** (21)
-</dt> <dt>
+**Microsoft Windows Server 2003** (21)
+ 
 
-<span id="Microsoft_Reserved"></span><span id="microsoft_reserved"></span><span id="MICROSOFT_RESERVED"></span>**Microsoft Reserved** (22..32767)
-</dt> <dt>
+**Microsoft Reserved** (22..32767)
+ 
 
-<span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>**Vendor Specific** (32768..65535)
-</dt> </dl>
+**Vendor Specific** (32768..65535)
+ 
 
-</dd> <dt>
+ 
 
 **Name**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 A user-friendly system-defined name for the masking set. This name is unique within the scope of the owning storage subsystem.
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -201,19 +201,19 @@ A user-friendly system-defined name for the masking set. This name is unique wit
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_StorageObject**](msft-storageobject.md)
-</dt> </dl>
+ 
 
  
 

@@ -38,30 +38,30 @@ HRESULT GetVendorData(
 
 ## Parameters
 
-<dl> <dt>
+ 
 
 *PageNumber* \[in\]
-</dt> <dd>
+ 
 
 The page number for which vendor data is requested.
 
-</dd> <dt>
+ 
 
 *VendorData* \[out\]
-</dt> <dd>
+ 
 
 The vendor-specific data ("page 04h", for example) from an enclosure.
 
-</dd> <dt>
+ 
 
 *ExtendedStatus* \[out\]
-</dt> <dd>
+ 
 
 A string that contains an embedded [**MSFT\_StorageExtendedStatus**](msft-storageextendedstatus.md) object.
 
 This parameter allows the storage provider to return extended (implementation-specific) error information.
 
-</dd> </dl>
+ 
 
 ## Return value
 
@@ -71,16 +71,16 @@ This method can return one of these values.
 
 | Return value                                                                     | Description                                                              |
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| <dl> <dt>0</dt> </dl>     | Success.<br/>                                                      |
-| <dl> <dt>1</dt> </dl>     | Not supported.<br/>                                                |
-| <dl> <dt>2</dt> </dl>     | Unspecified error.<br/>                                            |
-| <dl> <dt>3</dt> </dl>     | Timeout.<br/>                                                      |
-| <dl> <dt>4</dt> </dl>     | Failed.<br/>                                                       |
-| <dl> <dt>5</dt> </dl>     | Invalid parameter.<br/>                                            |
-| <dl> <dt>40001</dt> </dl> | Access denied.<br/>                                                |
-| <dl> <dt>40002</dt> </dl> | There are not enough resources to complete the operation.<br/>     |
-| <dl> <dt>46000</dt> </dl> | Cannot connect to the storage provider.<br/>                       |
-| <dl> <dt>46001</dt> </dl> | The storage provider cannot connect to the storage subsystem.<br/> |
+|  0      | Success.                                                      |
+|  1      | Not supported.                                                |
+|  2      | Unspecified error.                                            |
+|  3      | Timeout.                                                      |
+|  4      | Failed.                                                       |
+|  5      | Invalid parameter.                                            |
+|  40001  | Access denied.                                                |
+|  40002  | There are not enough resources to complete the operation.     |
+|  46000  | Cannot connect to the storage provider.                       |
+|  46001  | The storage provider cannot connect to the storage subsystem. |
 
 
 
@@ -92,19 +92,19 @@ This method can return one of these values.
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8.1 \[desktop apps only\]<br/>                                              |
-| Minimum supported server<br/> | Windows Server 2012 R2 \[desktop apps only\]<br/>                                   |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8.1 \[desktop apps only\]                                              |
+| Minimum supported server | Windows Server 2012 R2 \[desktop apps only\]                                   |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_StorageEnclosure**](msft-storageenclosure.md)
-</dt> </dl>
+ 
 
  
 

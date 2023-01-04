@@ -65,9 +65,9 @@ The **MSFT\_FileServer** class has these methods.
 
 | Method                                                     | Description                                         |
 |:-----------------------------------------------------------|:----------------------------------------------------|
-| [**CreateFileShare**](msft-fileserver-createfileshare.md) | Creates a file share on the file server.<br/> |
-| [**DeleteObject**](msft-fileserver-deleteobject.md)       | Deletes the file server.<br/>                 |
-| [**SetFriendlyName**](msft-fileserver-setproperties.md)   | Allows the file server to be renamed.<br/>    |
+| [**CreateFileShare**](msft-fileserver-createfileshare.md) | Creates a file share on the file server. |
+| [**DeleteObject**](msft-fileserver-deleteobject.md)       | Deletes the file server.                 |
+| [**SetFriendlyName**](msft-fileserver-setproperties.md)   | Allows the file server to be renamed.    |
 
 
 
@@ -77,232 +77,232 @@ The **MSFT\_FileServer** class has these methods.
 
 The **MSFT\_FileServer** class has these properties.
 
-<dl> <dt>
+ 
 
 **FileSharingProtocols**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16** array
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The file sharing protocols supported by the file server.
 
-<dl> <dt>
+ 
 
-<span id="NFS"></span><span id="nfs"></span>**NFS** (2)
-</dt> <dt>
+**NFS** (2)
+ 
 
-<span id="SMB"></span><span id="smb"></span>**SMB** (3)
-</dt> </dl>
+**SMB** (3)
+ 
 
-</dd> <dt>
+ 
 
 **FileSharingProtocolVersions**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String** array
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 Specifies the file sharing protocol versions supported.
 
-</dd> <dt>
+ 
 
 **FriendlyName**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 A user-friendly string representing the name of the file server. Some servers may assign a default friendly name which cannot be modified by the user.
 
-</dd> <dt>
+ 
 
 **HealthStatus**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 Denotes the current health status of the file server.
 
-<dl> <dt>
+ 
 
-<span id="Healthy"></span><span id="healthy"></span><span id="HEALTHY"></span>**Healthy** (0)
-</dt> <dt>
+**Healthy** (0)
+ 
 
-<span id="Warning"></span><span id="warning"></span><span id="WARNING"></span>**Warning** (1)
-</dt> <dt>
+**Warning** (1)
+ 
 
-<span id="Unhealthy"></span><span id="unhealthy"></span><span id="UNHEALTHY"></span>**Unhealthy** (2)
-</dt> <dt>
+**Unhealthy** (2)
+ 
 
-<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Unknown** (5)
-</dt> </dl>
+**Unknown** (5)
+ 
 
-</dd> <dt>
+ 
 
 **HostNames**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String** array
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 Host names are semi-unique (scoped to the owning storage subsystem), human-readable strings used to identify a file server. There is a separate host name element per file sharing protocol.
 
-</dd> <dt>
+ 
 
 **OperationalStatus**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16** array
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 An array of values that denote the current operational status of the file server. Unlike *HealthStatus*, this field indicates the status of hardware, software, and infrastructure issues related to this server, and can contain multiple values.
 
-<dl> <dt>
+ 
 
-<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Unknown** (0)
-</dt> <dt>
+**Unknown** (0)
+ 
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Other** (1)
-</dt> <dt>
+**Other** (1)
+ 
 
-<span id="OK"></span><span id="ok"></span>**OK** (2)
-</dt> <dt>
+**OK** (2)
+ 
 
-<span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>**Degraded** (3)
-</dt> <dt>
+**Degraded** (3)
+ 
 
-<span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>**Stressed** (4)
-</dt> <dt>
+**Stressed** (4)
+ 
 
-<span id="Predictive_Failure"></span><span id="predictive_failure"></span><span id="PREDICTIVE_FAILURE"></span>**Predictive Failure** (5)
-</dt> <dt>
+**Predictive Failure** (5)
+ 
 
-<span id="Error"></span><span id="error"></span><span id="ERROR"></span>**Error** (6)
-</dt> <dt>
+**Error** (6)
+ 
 
-<span id="Non-Recoverable_Error"></span><span id="non-recoverable_error"></span><span id="NON-RECOVERABLE_ERROR"></span>**Non-Recoverable Error** (7)
-</dt> <dt>
+**Non-Recoverable Error** (7)
+ 
 
-<span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>**Starting** (8)
-</dt> <dt>
+**Starting** (8)
+ 
 
-<span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>**Stopping** (9)
-</dt> <dt>
+**Stopping** (9)
+ 
 
-<span id="Stopped"></span><span id="stopped"></span><span id="STOPPED"></span>**Stopped** (10)
-</dt> <dt>
+**Stopped** (10)
+ 
 
-<span id="In_Service"></span><span id="in_service"></span><span id="IN_SERVICE"></span>**In Service** (11)
-</dt> <dt>
+**In Service** (11)
+ 
 
-<span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>**No Contact** (12)
-</dt> <dt>
+**No Contact** (12)
+ 
 
-<span id="Lost_Communication"></span><span id="lost_communication"></span><span id="LOST_COMMUNICATION"></span>**Lost Communication** (13)
-</dt> <dt>
+**Lost Communication** (13)
+ 
 
-<span id="Aborted"></span><span id="aborted"></span><span id="ABORTED"></span>**Aborted** (14)
-</dt> <dt>
+**Aborted** (14)
+ 
 
-<span id="Dormant"></span><span id="dormant"></span><span id="DORMANT"></span>**Dormant** (15)
-</dt> <dt>
+**Dormant** (15)
+ 
 
-<span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Supporting Entity in Error** (16)
-</dt> <dt>
+**Supporting Entity in Error** (16)
+ 
 
-<span id="Completed"></span><span id="completed"></span><span id="COMPLETED"></span>**Completed** (17)
-</dt> <dt>
+**Completed** (17)
+ 
 
-<span id="Power_Mode_"></span><span id="power_mode_"></span><span id="POWER_MODE_"></span>**Power Mode** (18 )
-</dt> <dt>
+**Power Mode** (18 )
+ 
 
-<span id="Relocating"></span><span id="relocating"></span><span id="RELOCATING"></span>**Relocating** (19 )
-</dt> <dt>
+**Relocating** (19 )
+ 
 
-<span id="Microsoft_Reserved"></span><span id="microsoft_reserved"></span><span id="MICROSOFT_RESERVED"></span>**Microsoft Reserved** (..)
-</dt> <dt>
+**Microsoft Reserved** (..)
+ 
 
-<span id="Read-only"></span><span id="read-only"></span><span id="READ-ONLY"></span>**Read-only** (0xD000)
-</dt> <dt>
+**Read-only** (0xD000)
+ 
 
-<span id="Incomplete"></span><span id="incomplete"></span><span id="INCOMPLETE"></span>**Incomplete** (0xD001)
-</dt> <dt>
+**Incomplete** (0xD001)
+ 
 
-<span id="Microsoft_Reserved"></span><span id="microsoft_reserved"></span><span id="MICROSOFT_RESERVED"></span>**Microsoft Reserved** (0xD001..)
-</dt> </dl>
+**Microsoft Reserved** (0xD001..)
+ 
 
-</dd> <dt>
+ 
 
 **OtherOperationalStatusDescription**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 A string representation of the vendor-defined operational status. This field should only be set if the *OperationalStatus* array contains 1 ("Other").
 
-</dd> <dt>
+ 
 
 **SupportsContinuouslyAvailableFileShare**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Boolean**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 If **TRUE**, the file server will support continuously available file shares.
 
-</dd> <dt>
+ 
 
 **SupportsFileShareCreation**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Boolean**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 If **TRUE**, the server supports file share creation.
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -310,19 +310,19 @@ If **TRUE**, the server supports file share creation.
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 10 \[desktop apps only\]<br/>                                               |
-| Minimum supported server<br/> | Windows Server 2016 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 10 \[desktop apps only\]                                               |
+| Minimum supported server | Windows Server 2016 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_StorageObject**](msft-storageobject.md)
-</dt> </dl>
+ 
 
  
 

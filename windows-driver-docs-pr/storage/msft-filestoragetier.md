@@ -59,9 +59,9 @@ The **MSFT\_FileStorageTier** class has these methods.
 
 | Method                                      | Description                                        |
 |:--------------------------------------------|:---------------------------------------------------|
-| [**Clear**](msft-filestoragetier-clear.md) | Unpins a file from a storage tier.<br/>      |
-| [**Get**](msft-filestoragetier-get.md)     | Gets tier information for pinned files.<br/> |
-| [**Set**](msft-filestoragetier-set.md)     | Pins a file to a storage tier.<br/>          |
+| [**Clear**](msft-filestoragetier-clear.md) | Unpins a file from a storage tier.      |
+| [**Get**](msft-filestoragetier-get.md)     | Gets tier information for pinned files. |
+| [**Set**](msft-filestoragetier-set.md)     | Pins a file to a storage tier.          |
 
 
 
@@ -71,71 +71,71 @@ The **MSFT\_FileStorageTier** class has these methods.
 
 The **MSFT\_FileStorageTier** class has these properties.
 
-<dl> <dt>
+ 
 
 **DesiredStorageTierName**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The desired name of the storage tier.
 
-</dd> <dt>
+ 
 
 **FilePath**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: Key
-</dt> </dl>
+ 
 
 The path of the file.
 
-</dd> <dt>
+ 
 
 **FileSize**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt64**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The file size.
 
-</dd> <dt>
+ 
 
 **FileSizeOnDesiredStorageTier**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt64**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The file size on the desired storage tier.
 
-</dd> <dt>
+ 
 
 **PlacementStatus**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The placement status of the file.
 
@@ -143,25 +143,25 @@ The placement status of the file.
 
 | Value                                                                                                | Meaning                       |
 |------------------------------------------------------------------------------------------------------|-------------------------------|
-| <span id="0"></span><dl> <dt>**0**</dt> </dl> | Unknown<br/>            |
-| <span id="1"></span><dl> <dt>**1**</dt> </dl> | Completely on tier<br/> |
-| <span id="2"></span><dl> <dt>**2**</dt> </dl> | Partially on tier<br/>  |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | Not on tier<br/>        |
+|  **0**  | Unknown            |
+|  **1**  | Completely on tier |
+|  **2**  | Partially on tier  |
+|  **3**  | Not on tier        |
 
 
 
  
 
-</dd> <dt>
+ 
 
 **State**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The state of the attempt to pin the file.
 
@@ -169,17 +169,17 @@ The state of the attempt to pin the file.
 
 | Value                                                                                                | Meaning                          |
 |------------------------------------------------------------------------------------------------------|----------------------------------|
-| <span id="0"></span><dl> <dt>**0**</dt> </dl> | Unknown<br/>               |
-| <span id="1"></span><dl> <dt>**1**</dt> </dl> | OK<br/>                    |
-| <span id="2"></span><dl> <dt>**2**</dt> </dl> | Insufficient Capacity<br/> |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | In Process<br/>            |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl> | Pending<br/>               |
+|  **0**  | Unknown               |
+|  **1**  | OK                    |
+|  **2**  | Insufficient Capacity |
+|  **3**  | In Process            |
+|  **4**  | Pending               |
 
 
 
  
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -187,10 +187,10 @@ The state of the attempt to pin the file.
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8.1 \[desktop apps only\]<br/>                                              |
-| Minimum supported server<br/> | Windows Server 2012 R2 \[desktop apps only\]<br/>                                   |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8.1 \[desktop apps only\]                                              |
+| Minimum supported server | Windows Server 2012 R2 \[desktop apps only\]                                   |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 

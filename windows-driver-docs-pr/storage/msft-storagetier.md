@@ -55,12 +55,12 @@ The **MSFT\_StorageTier** class has these methods.
 
 | Method                                                        | Description                                                        |
 |:--------------------------------------------------------------|:-------------------------------------------------------------------|
-| [**DeleteObject**](msft-storagetier-deleteobject.md)         | Deletes the storage tier.<br/>                               |
-| [**GetSupportedSize**](msft-storagetier-getsupportedsize.md) | Returns the supported sizes for a new storage tier.<br/>     |
-| [**Resize**](msft-storagetier-resize.md)                     | Resizes the storage tier on the virtual disk.<br/>           |
-| [**SetAttributes**](msft-storagetier-setattributes.md)       | Updates or sets various attributes on the storage tier.<br/> |
-| [**SetDescription**](msft-storagetier-setdescription.md)     | Updates the description of the storage tier. <br/>           |
-| [**SetFriendlyName**](msft-storagetier-setfriendlyname.md)   | Renames the storage tier. <br/>                              |
+| [**DeleteObject**](msft-storagetier-deleteobject.md)         | Deletes the storage tier.                               |
+| [**GetSupportedSize**](msft-storagetier-getsupportedsize.md) | Returns the supported sizes for a new storage tier.     |
+| [**Resize**](msft-storagetier-resize.md)                     | Resizes the storage tier on the virtual disk.           |
+| [**SetAttributes**](msft-storagetier-setattributes.md)       | Updates or sets various attributes on the storage tier. |
+| [**SetDescription**](msft-storagetier-setdescription.md)     | Updates the description of the storage tier.            |
+| [**SetFriendlyName**](msft-storagetier-setfriendlyname.md)   | Renames the storage tier.                               |
 
 
 
@@ -70,42 +70,42 @@ The **MSFT\_StorageTier** class has these methods.
 
 The **MSFT\_StorageTier** class has these properties.
 
-<dl> <dt>
+ 
 
 **Description**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 A description of the storage tier, provided by the user.
 
-</dd> <dt>
+ 
 
 **FriendlyName**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The friendly name of the storage tier, defined by the user.
 
-</dd> <dt>
+ 
 
 **MediaType**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The media type of the storage tier.
 
@@ -113,28 +113,28 @@ The media type of the storage tier.
 
 | Value                                                                                                | Meaning                |
 |------------------------------------------------------------------------------------------------------|------------------------|
-| <span id="0"></span><dl> <dt>**0**</dt> </dl> | Unspecified<br/> |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | HDD<br/>         |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl> | SSD<br/>         |
+| <span id="0"></span> **0**  | Unspecified |
+| <span id="3"></span> **3**  | HDD         |
+| <span id="4"></span> **4**  | SSD         |
 
 
 
  
 
-</dd> <dt>
+ 
 
 **Size**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt64**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The size of the tier on the virtual disk. This property is available only when the storage tier is part of a virtual disk. The property is unspecified for pool-level storage tiers.
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -142,19 +142,19 @@ The size of the tier on the virtual disk. This property is available only when t
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8.1 \[desktop apps only\]<br/>                                              |
-| Minimum supported server<br/> | Windows Server 2012 R2 \[desktop apps only\]<br/>                                   |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8.1 \[desktop apps only\]                                              |
+| Minimum supported server | Windows Server 2012 R2 \[desktop apps only\]                                   |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_StorageObject**](msft-storageobject.md)
-</dt> </dl>
+ 
 
  
 

@@ -46,35 +46,35 @@ The **MSFT\_SoftError\_EmptyCache** class has these types of members:
 
 The **MSFT\_SoftError\_EmptyCache** class has these properties.
 
-<dl> <dt>
+ 
 
 **Message**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The message displayed to the user. The value of this property is "%1: The storage management provider's cache is empty.%2".
 
 "%1" should be replaced with the corresponding storage provider's [**MSFT\_StorageProvider**](msft-storageprovider.md).**Name** property. "%2" can be replaced with extra error information.
 
-</dd> <dt>
+ 
 
 **MessageID**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The message identifier. The value of this property is "40003". This is the specific error code for 'Cache out of date'.
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -82,19 +82,19 @@ The message identifier. The value of this property is "40003". This is the speci
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_SoftError**](msft-softerror.md)
-</dt> </dl>
+ 
 
  
 

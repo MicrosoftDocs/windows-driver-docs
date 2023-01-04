@@ -61,266 +61,266 @@ The **MSFT\_StorageNodeToPhysicalDisk** class has these types of members:
 
 The **MSFT\_StorageNodeToPhysicalDisk** class has these properties.
 
-<dl> <dt>
+ 
 
 **DiskNumber**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt32**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The operating system's number for the disk on this storage node. Disk 0 is typically the boot device. Disk numbers may not necessarily remain the same across reboot, and are not necessarily the same on different nodes.
 
-</dd> <dt>
+ 
 
 **HealthStatus**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 Denotes the health status of the physical disk on this storage node.
 
-<dl> <dt>
+ 
 
-<span id="Healthy"></span><span id="healthy"></span><span id="HEALTHY"></span>**Healthy** (0)
-</dt> <dt>
+**Healthy** (0)
+ 
 
-<span id="Warning"></span><span id="warning"></span><span id="WARNING"></span>**Warning** (1)
-</dt> <dt>
+**Warning** (1)
+ 
 
-<span id="Unhealthy"></span><span id="unhealthy"></span><span id="UNHEALTHY"></span>**Unhealthy** (2)
-</dt> <dt>
+**Unhealthy** (2)
+ 
 
-<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Unknown** (5)
-</dt> </dl>
+**Unknown** (5)
+ 
 
-</dd> <dt>
+ 
 
 **IsMpioEnabled**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Boolean**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 Indicates whether the physical disk uses MPIO.
 
-</dd> <dt>
+ 
 
 **LoadBalancePolicy**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The MPIO load balance policy being used by the disk.
 
-<dl> <dt>
+ 
 
-<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Unknown** (0)
-</dt> <dt>
+**Unknown** (0)
+ 
 
-<span id="Fail_Over"></span><span id="fail_over"></span><span id="FAIL_OVER"></span>**Fail Over** (1)
-</dt> <dt>
+**Fail Over** (1)
+ 
 
-<span id="Round_Robin"></span><span id="round_robin"></span><span id="ROUND_ROBIN"></span>**Round Robin** (2)
-</dt> <dt>
+**Round Robin** (2)
+ 
 
-<span id="Round_Robin_with_Subset"></span><span id="round_robin_with_subset"></span><span id="ROUND_ROBIN_WITH_SUBSET"></span>**Round Robin with Subset** (3)
-</dt> <dt>
+**Round Robin with Subset** (3)
+ 
 
-<span id="Least_Queue_Depth"></span><span id="least_queue_depth"></span><span id="LEAST_QUEUE_DEPTH"></span>**Least Queue Depth** (4)
-</dt> <dt>
+**Least Queue Depth** (4)
+ 
 
-<span id="Weighted_Paths"></span><span id="weighted_paths"></span><span id="WEIGHTED_PATHS"></span>**Weighted Paths** (5)
-</dt> <dt>
+**Weighted Paths** (5)
+ 
 
-<span id="Least_Blocks"></span><span id="least_blocks"></span><span id="LEAST_BLOCKS"></span>**Least Blocks** (6)
-</dt> <dt>
+**Least Blocks** (6)
+ 
 
-<span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>**Vendor Specific** (7)
-</dt> </dl>
+**Vendor Specific** (7)
+ 
 
-</dd> <dt>
+ 
 
 **OperationalStatus**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16** array
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 **Starting in Windows 10:** Denotes the operational status of the physical disk:
 
-<dl> <dt>
+ 
 
-<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Unknown** (0)
-</dt> <dt>
+**Unknown** (0)
+ 
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Other** (1)
-</dt> <dt>
+**Other** (1)
+ 
 
-<span id="OK"></span><span id="ok"></span>**OK** (2)
-</dt> <dt>
+**OK** (2)
+ 
 
-<span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>**Degraded** (3)
-</dt> <dt>
+**Degraded** (3)
+ 
 
-<span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>**Stressed** (4)
-</dt> <dt>
+**Stressed** (4)
+ 
 
-<span id="Predictive_Failure"></span><span id="predictive_failure"></span><span id="PREDICTIVE_FAILURE"></span>**Predictive Failure** (5)
-</dt> <dt>
+**Predictive Failure** (5)
+ 
 
-<span id="Error"></span><span id="error"></span><span id="ERROR"></span>**Error** (6)
-</dt> <dt>
+**Error** (6)
+ 
 
-<span id="Non-Recoverable_Error"></span><span id="non-recoverable_error"></span><span id="NON-RECOVERABLE_ERROR"></span>**Non-Recoverable Error** (7)
-</dt> <dt>
+**Non-Recoverable Error** (7)
+ 
 
-<span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>**Starting** (8)
-</dt> <dt>
+**Starting** (8)
+ 
 
-<span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>**Stopping** (9)
-</dt> <dt>
+**Stopping** (9)
+ 
 
-<span id="Stopped"></span><span id="stopped"></span><span id="STOPPED"></span>**Stopped** (10)
-</dt> <dt>
+**Stopped** (10)
+ 
 
-<span id="In_Service"></span><span id="in_service"></span><span id="IN_SERVICE"></span>**In Service** (11)
-</dt> <dt>
+**In Service** (11)
+ 
 
-<span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>**No Contact** (12)
-</dt> <dt>
+**No Contact** (12)
+ 
 
-<span id="Lost_Communication"></span><span id="lost_communication"></span><span id="LOST_COMMUNICATION"></span>**Lost Communication** (13)
-</dt> <dt>
+**Lost Communication** (13)
+ 
 
-<span id="Aborted"></span><span id="aborted"></span><span id="ABORTED"></span>**Aborted** (14)
-</dt> <dt>
+**Aborted** (14)
+ 
 
-<span id="Dormant"></span><span id="dormant"></span><span id="DORMANT"></span>**Dormant** (15)
-</dt> <dt>
+**Dormant** (15)
+ 
 
-<span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Supporting Entity in Error** (16)
-</dt> <dt>
+**Supporting Entity in Error** (16)
+ 
 
-<span id="Completed"></span><span id="completed"></span><span id="COMPLETED"></span>**Completed** (17)
-</dt> <dt>
+**Completed** (17)
+ 
 
-<span id="Power_Mode"></span><span id="power_mode"></span><span id="POWER_MODE"></span>**Power Mode** (18)
-</dt> <dt>
+**Power Mode** (18)
+ 
 
-<span id="Relocating"></span><span id="relocating"></span><span id="RELOCATING"></span>**Relocating** (19)
-</dt> <dt>
+**Relocating** (19)
+ 
 
-<span id="Microsoft_Reserved"></span><span id="microsoft_reserved"></span><span id="MICROSOFT_RESERVED"></span>**Microsoft Reserved** (..)
-</dt> <dt>
+**Microsoft Reserved** (..)
+ 
 
-<span id="Failed_Media"></span><span id="failed_media"></span><span id="FAILED_MEDIA"></span>**Failed Media** (0xD004)
-</dt> <dt>
+**Failed Media** (0xD004)
+ 
 
-<span id="Split"></span><span id="split"></span><span id="SPLIT"></span>**Split** (0xD005)
-</dt> <dt>
+**Split** (0xD005)
+ 
 
-<span id="Stale_Metadata"></span><span id="stale_metadata"></span><span id="STALE_METADATA"></span>**Stale Metadata** (0xD006)
-</dt> <dt>
+**Stale Metadata** (0xD006)
+ 
 
-<span id="IO_Error"></span><span id="io_error"></span><span id="IO_ERROR"></span>**IO Error** (0xD007)
-</dt> <dt>
+**IO Error** (0xD007)
+ 
 
-<span id="Unrecognized_Metadata"></span><span id="unrecognized_metadata"></span><span id="UNRECOGNIZED_METADATA"></span>**Unrecognized Metadata** (0xD008)
-</dt> <dt>
+**Unrecognized Metadata** (0xD008)
+ 
 
-<span id="Microsoft_Reserved"></span><span id="microsoft_reserved"></span><span id="MICROSOFT_RESERVED"></span>**Microsoft Reserved** (0xD009..)
-</dt> </dl>
+**Microsoft Reserved** (0xD009..)
+ 
 
-</dd> <dt>
+ 
 
 **PathId**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String** array
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 Collection of MPIO path IDs, reported by the MPIO DSM, when applicable.
 
-</dd> <dt>
+ 
 
 **PathState**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16** array
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The current state of MPIO paths between the node and physical disk.
 
-<dl> <dt>
+ 
 
-<span id="Unavailable"></span><span id="unavailable"></span><span id="UNAVAILABLE"></span>**Unavailable** (0)
-</dt> <dt>
+**Unavailable** (0)
+ 
 
-<span id="Active_Unoptimized"></span><span id="active_unoptimized"></span><span id="ACTIVE_UNOPTIMIZED"></span>**Active/Unoptimized** (1)
-</dt> <dt>
+**Active/Unoptimized** (1)
+ 
 
-<span id="Standby"></span><span id="standby"></span><span id="STANDBY"></span>**Standby** (2)
-</dt> <dt>
+**Standby** (2)
+ 
 
-<span id="Active_Optimized"></span><span id="active_optimized"></span><span id="ACTIVE_OPTIMIZED"></span>**Active/Optimized** (3)
-</dt> </dl>
+**Active/Optimized** (3)
+ 
 
-</dd> <dt>
+ 
 
 **PhysicalDisk**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **[**MSFT\_PhysicalDisk**](msft-physicaldisk.md)**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Key**
-</dt> </dl>
+ 
 
-</dd> <dt>
+ 
 
 **StorageNode**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **[**MSFT\_StorageNode**](msft-storagenode.md)**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Key**
-</dt> </dl>
+ 
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -328,22 +328,22 @@ Qualifiers: **Key**
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8.1 \[desktop apps only\]<br/>                                              |
-| Minimum supported server<br/> | Windows Server 2012 R2 \[desktop apps only\]<br/>                                   |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8.1 \[desktop apps only\]                                              |
+| Minimum supported server | Windows Server 2012 R2 \[desktop apps only\]                                   |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_PhysicalDisk**](msft-physicaldisk.md)
-</dt> <dt>
+ 
 
 [**MSFT\_StorageNode**](msft-storagenode.md)
-</dt> </dl>
+ 
 
  
 

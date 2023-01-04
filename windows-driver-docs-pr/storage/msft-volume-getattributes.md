@@ -38,38 +38,38 @@ UInt32 GetAttributes(
 
 ## Parameters
 
-<dl> <dt>
+ 
 
 *VolumeScrubEnabled* \[out\]
-</dt> <dd>
+ 
 
 Indicates whether the automatic data integrity scanner should scrub files.
 
 **TRUE** if files on this volume will be scrubbed, or **FALSE** otherwise.
 
-</dd> </dl>
+ 
 
 ## Return value
 
-<dl> <dt>
+ 
 
 **Success** (0)
-</dt> <dt>
+ 
 
 **Not Supported** (1)
-</dt> <dt>
+ 
 
 **Unspecified Error** (2)
-</dt> <dt>
+ 
 
 **Timeout** (3)
-</dt> <dt>
+ 
 
 **Failed** (4)
-</dt> <dt>
+ 
 
 **Invalid Parameter** (5)
-</dt> </dl>
+ 
 
 ## Requirements
 
@@ -77,19 +77,19 @@ Indicates whether the automatic data integrity scanner should scrub files.
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_Volume**](msft-volume.md)
-</dt> </dl>
+ 
 
  
 

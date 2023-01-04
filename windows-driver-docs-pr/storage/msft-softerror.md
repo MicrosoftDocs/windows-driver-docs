@@ -58,109 +58,109 @@ The **MSFT\_SoftError** class has these types of members:
 
 The **MSFT\_SoftError** class has these properties.
 
-<dl> <dt>
+ 
 
 **ErrorSource**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The CIM Object Path to the storage management provider's [**MSFT\_StorageProvider**](msft-storageprovider.md) object.
 
-</dd> <dt>
+ 
 
 **ErrorSourceFormat**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Values** ( "CIMObjectPath" ), **ValueMap** ("2")
-</dt> </dl>
+ 
 
 The CIM object path.
 
-</dd> <dt>
+ 
 
 **ErrorType**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Values** ( "Software Error" ), **ValueMap** ("4")
-</dt> </dl>
+ 
 
 This error is of the type **Software Error**.
 
-</dd> <dt>
+ 
 
 **Message**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The message displayed to the user. The value of this property is "%1: %2".
 
 "%1" should be replaced with the storage management provider's [**MSFT\_StorageProvider**](msft-storageprovider.md).**Name** property. "%2" should be replaced with the error message.
 
-</dd> <dt>
+ 
 
 **MessageID**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The message identifier.
 
-</dd> <dt>
+ 
 
 **OwningEntity**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 Corresponds to the storage management provider's [**MSFT\_StorageProvider**](msft-storageprovider.md).**Name** property.
 
-</dd> <dt>
+ 
 
 **PerceivedSeverity**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Values** ( "Information" ), **ValueMap** ("2")
-</dt> </dl>
+ 
 
 This error is informative only.
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -168,19 +168,19 @@ This error is informative only.
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**CIM\_Error**](/previous-versions//cc150671(v=vs.85))
-</dt> </dl>
+ 
 
  
 

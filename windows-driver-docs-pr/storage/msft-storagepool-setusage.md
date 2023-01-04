@@ -38,97 +38,97 @@ UInt32 SetUsage(
 
 ## Parameters
 
-<dl> <dt>
+ 
 
 *Usage* \[in\]
-</dt> <dd>
+ 
 
 The new usage for the storage pool. This parameter is required and cannot be NULL.
 
-<dl> <dt>
+ 
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Other** (1)
-</dt> <dt>
+**Other** (1)
+ 
 
-<span id="Unrestricted"></span><span id="unrestricted"></span><span id="UNRESTRICTED"></span>**Unrestricted** (2)
-</dt> <dt>
+**Unrestricted** (2)
+ 
 
-<span id="Reserved_for_ComputerSystem__the_block_server_"></span><span id="reserved_for_computersystem__the_block_server_"></span><span id="RESERVED_FOR_COMPUTERSYSTEM__THE_BLOCK_SERVER_"></span>**Reserved for ComputerSystem (the block server)** (3)
-</dt> <dt>
+**Reserved for ComputerSystem (the block server)** (3)
+ 
 
-<span id="Reserved_as_a_Delta_Replica_Container"></span><span id="reserved_as_a_delta_replica_container"></span><span id="RESERVED_AS_A_DELTA_REPLICA_CONTAINER"></span>**Reserved as a Delta Replica Container** (4)
-</dt> <dt>
+**Reserved as a Delta Replica Container** (4)
+ 
 
-<span id="Reserved_by_Migration_Services"></span><span id="reserved_by_migration_services"></span><span id="RESERVED_BY_MIGRATION_SERVICES"></span>**Reserved by Migration Services** (5)
-</dt> <dt>
+**Reserved by Migration Services** (5)
+ 
 
-<span id="Reserved_for_Local_Replication_Services"></span><span id="reserved_for_local_replication_services"></span><span id="RESERVED_FOR_LOCAL_REPLICATION_SERVICES"></span>**Reserved for Local Replication Services** (6)
-</dt> <dt>
+**Reserved for Local Replication Services** (6)
+ 
 
-<span id="Reserved_for_Remote_Replication_Services"></span><span id="reserved_for_remote_replication_services"></span><span id="RESERVED_FOR_REMOTE_REPLICATION_SERVICES"></span>**Reserved for Remote Replication Services** (7)
-</dt> <dt>
+**Reserved for Remote Replication Services** (7)
+ 
 
-<span id="Reserved_for_Sparing"></span><span id="reserved_for_sparing"></span><span id="RESERVED_FOR_SPARING"></span>**Reserved for Sparing** (8)
-</dt> </dl> </dd> <dt>
+**Reserved for Sparing** (8)
+   
 
 *OtherUsageDescription* \[in\]
-</dt> <dd>
+ 
 
 If *Usage* is set to **Other**, this parameter is the string representation of a vendor defined usage for this storage pool. This parameter must not be set if *Usage* is not **Other**.
 
-</dd> <dt>
+ 
 
 *ExtendedStatus* \[out\]
-</dt> <dd>
+ 
 
 A string that contains an embedded [**MSFT\_StorageExtendedStatus**](msft-storageextendedstatus.md) object.
 
 This parameter allows the storage provider to return extended (implementation-specific) error information.
 
-</dd> </dl>
+ 
 
 ## Return value
 
-<dl> <dt>
+ 
 
 **Success** (0)
-</dt> <dt>
+ 
 
 **Not Supported** (1)
-</dt> <dt>
+ 
 
 **Unspecified Error** (2)
-</dt> <dt>
+ 
 
 **Timeout** (3)
-</dt> <dt>
+ 
 
 **Failed** (4)
-</dt> <dt>
+ 
 
 **Invalid Parameter** (5)
-</dt> <dt>
+ 
 
 **Access denied** (40001)
-</dt> <dt>
+ 
 
 **There are not enough resources to complete the operation.** (40002)
-</dt> <dt>
+ 
 
 **Cannot connect to the storage provider.** (46000)
-</dt> <dt>
+ 
 
 **The storage provider cannot connect to the storage subsystem.** (46001)
-</dt> <dt>
+ 
 
 **This operation is not supported on primordial storage pools.** (48000)
-</dt> <dt>
+ 
 
 **The storage pool could not complete the operation because its health or operational status does not permit it.** (48006)
-</dt> <dt>
+ 
 
 **The storage pool could not complete the operation because its configuration is read-only.** (48007)
-</dt> </dl>
+ 
 
 ## Remarks
 
@@ -140,19 +140,19 @@ Not all storage pools may allow this method. Those that do not will cause this m
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_StoragePool**](msft-storagepool.md)
-</dt> </dl>
+ 
 
  
 

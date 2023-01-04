@@ -37,10 +37,10 @@ UInt32 SetAttributes(
 
 ## Parameters
 
-<dl> <dt>
+ 
 
 *MediaType* \[in\]
-</dt> <dd>
+ 
 
 The media type of the storage tier.
 
@@ -48,58 +48,58 @@ The media type of the storage tier.
 
 | Value                                                                                                | Meaning        |
 |------------------------------------------------------------------------------------------------------|----------------|
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | HDD<br/> |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl> | SSD<br/> |
+| <span id="3"></span> **3**  | HDD |
+| <span id="4"></span> **4**  | SSD |
 
 
 
  
 
-</dd> <dt>
+ 
 
 *ExtendedStatus* \[out\]
-</dt> <dd>
+ 
 
 Extended error information from the storage provider in a [**MSFT\_StorageExtendedStatus**](msft-storageextendedstatus.md) object. The information is implementation-specific.
 
-</dd> </dl>
+ 
 
 ## Return value
 
-<dl> <dt>
+ 
 
 **Success** (0)
-</dt> <dt>
+ 
 
 **Not Supported** (1)
-</dt> <dt>
+ 
 
 **Unspecified Error** (2)
-</dt> <dt>
+ 
 
 **Timeout** (3)
-</dt> <dt>
+ 
 
 **Failed** (4)
-</dt> <dt>
+ 
 
 **Invalid Parameter** (5)
-</dt> <dt>
+ 
 
 **Access denied** (40001)
-</dt> <dt>
+ 
 
 **There are not enough resources to complete the operation.** (40002)
-</dt> <dt>
+ 
 
 **Cannot connect to the storage provider.** (46000)
-</dt> <dt>
+ 
 
 **The storage provider cannot connect to the storage subsystem.** (46001)
-</dt> <dt>
+ 
 
 **The storage pool could not complete the operation because its configuration is read-only.** (48007)
-</dt> </dl>
+ 
 
 ## Requirements
 
@@ -107,19 +107,19 @@ Extended error information from the storage provider in a [**MSFT\_StorageExtend
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8.1 \[desktop apps only\]<br/>                                              |
-| Minimum supported server<br/> | Windows Server 2012 R2 \[desktop apps only\]<br/>                                   |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8.1 \[desktop apps only\]                                              |
+| Minimum supported server | Windows Server 2012 R2 \[desktop apps only\]                                   |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_StorageTier**](msft-storagetier.md)
-</dt> </dl>
+ 
 
  
 

@@ -47,39 +47,39 @@ The **MSFT\_StorageJobToAffectedStorageObject** class has these types of members
 
 The **MSFT\_StorageJobToAffectedStorageObject** class has these properties.
 
-<dl> <dt>
+ 
 
 **AffectedStorageObject**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **[**MSFT\_StorageObject**](msft-storageobject.md)**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Key**
-</dt> </dl>
+ 
 
 The storage object that is affected by the job operation.
 
-</dd> <dt>
+ 
 
 **StorageJob**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **[**MSFT\_StorageJob**](msft-storagejob.md)**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Key**
-</dt> </dl>
+ 
 
 The job object for the storage job.
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -87,22 +87,22 @@ The job object for the storage job.
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_StorageJob**](msft-storagejob.md)
-</dt> <dt>
+ 
 
 [**MSFT\_StorageObject**](msft-storageobject.md)
-</dt> </dl>
+ 
 
  
 

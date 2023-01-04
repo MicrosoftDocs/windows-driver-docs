@@ -37,30 +37,30 @@ UInt32 Mount(
 
 ## Parameters
 
-<dl> <dt>
+ 
 
 *Access* \[in\]
-</dt> <dd>
+ 
 
 The access for the disk image.
 
-<dl> <dt>
+ 
 
-<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Unknown** (0)
-</dt> <dt>
+**Unknown** (0)
+ 
 
-<span id="Read_Write"></span><span id="read_write"></span><span id="READ_WRITE"></span>**Read Write** (2)
-</dt> <dt>
+**Read Write** (2)
+ 
 
-<span id="Read-Only"></span><span id="read-only"></span><span id="READ-ONLY"></span>**Read-Only** (3)
-</dt> </dl> </dd> <dt>
+**Read-Only** (3)
+   
 
 *NoDriveLetter* \[in\]
-</dt> <dd>
+ 
 
 If **TRUE**, the disk image shouldn't be assigned a drive letter.
 
-</dd> </dl>
+ 
 
 ## Return value
 
@@ -74,20 +74,20 @@ Otherwise, this method returns [**OpenVirtualDisk**](/windows/win32/api/virtdisk
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| Header<br/>                   | <dl> <dt>Vds.h</dt> </dl>          |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| Header                   |  Vds.h           |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_DiskImage**](msft-diskimage.md)
-</dt> </dl>
+ 
 
  
 

@@ -45,19 +45,19 @@ The **MSFT\_StorageAlertEvent** class has these types of members:
 
 The **MSFT\_StorageAlertEvent** class has these properties.
 
-<dl> <dt>
+ 
 
 **AlertType**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 The alert type.
 
@@ -65,15 +65,15 @@ The alert type.
 
 | Value                                                                                                                                         | Meaning                                        |
 |-----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <span id="1"></span><dl> <dt>**1**</dt> </dl>                                          | Thin provisioning threshold reached<br/> |
-| <span id="..."></span><dl> <dt>**...**</dt> </dl>                                      | Microsoft Reserved<br/>                  |
-| <span id="0x8000.."></span><span id="0X8000.."></span><dl> <dt>**0x8000..**</dt> </dl> | Vendor Specific<br/>                     |
+|  **1**                                           | Thin provisioning threshold reached |
+|  **...**                                       | Microsoft Reserved                  |
+|  **0x8000..**  | Vendor Specific                     |
 
 
 
  
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -81,19 +81,19 @@ The alert type.
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_StorageEvent**](msft-storageevent.md)
-</dt> </dl>
+ 
 
  
 

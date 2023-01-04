@@ -52,35 +52,35 @@ The **MSFT\_StorageNode** class has these types of members:
 
 The **MSFT\_StorageNode** class has these properties.
 
-<dl> <dt>
+ 
 
 **Name**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 Human-readable identifier of a storage node.
 
-</dd> <dt>
+ 
 
 **NameFormat**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 The format of **Name**.
 
@@ -88,40 +88,40 @@ The format of **Name**.
 
 | Value                                                                                                  | Meaning            |
 |--------------------------------------------------------------------------------------------------------|--------------------|
-| <span id="1"></span><dl> <dt>**1**</dt> </dl>   | Other<br/>   |
-| <span id="2"></span><dl> <dt>**2**</dt> </dl>   | IP<br/>      |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl>   | Dial<br/>    |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl>   | HID<br/>     |
-| <span id="5"></span><dl> <dt>**5**</dt> </dl>   | NWA<br/>     |
-| <span id="6"></span><dl> <dt>**6**</dt> </dl>   | HWA<br/>     |
-| <span id="7"></span><dl> <dt>**7**</dt> </dl>   | X25<br/>     |
-| <span id="8"></span><dl> <dt>**8**</dt> </dl>   | ISDN<br/>    |
-| <span id="9"></span><dl> <dt>**9**</dt> </dl>   | IPX<br/>     |
-| <span id="10"></span><dl> <dt>**10**</dt> </dl> | DCC<br/>     |
-| <span id="11"></span><dl> <dt>**11**</dt> </dl> | ICD<br/>     |
-| <span id="12"></span><dl> <dt>**12**</dt> </dl> | E.164<br/>   |
-| <span id="13"></span><dl> <dt>**13**</dt> </dl> | SNA<br/>     |
-| <span id="14"></span><dl> <dt>**14**</dt> </dl> | OID/OSI<br/> |
-| <span id="15"></span><dl> <dt>**15**</dt> </dl> | WWN<br/>     |
-| <span id="16"></span><dl> <dt>**16**</dt> </dl> | NAA<br/>     |
+|  **1**    | Other   |
+|  **2**    | IP      |
+|  **3**    | Dial    |
+|  **4**    | HID     |
+|  **5**    | NWA     |
+|  **6**    | HWA     |
+|  **7**    | X25     |
+|  **8**    | ISDN    |
+|  **9**    | IPX     |
+|  **10**  | DCC     |
+|  **11**  | ICD     |
+|  **12**  | E.164   |
+|  **13**  | SNA     |
+|  **14**  | OID/OSI |
+|  **15**  | WWN     |
+|  **16**  | NAA     |
 
 
 
  
 
-</dd> <dt>
+ 
 
 **OperationalStatus**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **UInt16**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: [**Required**](/windows/win32/wmisdk/standard-qualifiers)
-</dt> </dl>
+ 
 
 The current status of the node.
 
@@ -129,43 +129,43 @@ The current status of the node.
 
 | Value                                                                                                  | Meaning            |
 |--------------------------------------------------------------------------------------------------------|--------------------|
-| <span id="0"></span><dl> <dt>**0**</dt> </dl>   | Unknown<br/> |
-| <span id="2"></span><dl> <dt>**2**</dt> </dl>   | Up<br/>      |
-| <span id="6"></span><dl> <dt>**6**</dt> </dl>   | Down<br/>    |
-| <span id="8"></span><dl> <dt>**8**</dt> </dl>   | Joining<br/> |
-| <span id="10"></span><dl> <dt>**10**</dt> </dl> | Paused<br/>  |
+|  **0**    | Unknown |
+|  **2**    | Up      |
+|  **6**    | Down    |
+|  **8**    | Joining |
+|  **10**  | Paused  |
 
 
 
  
 
-</dd> <dt>
+ 
 
 **OtherIdentifyingInfo**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String** array
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 Custom identifiers for the node. If this field is set, **OtherIdentifyingInfoDescription** must also be set.
 
-</dd> <dt>
+ 
 
 **OtherIdentifyingInfoDescription**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String** array
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 Descriptions of the format used in the custom identifiers in **OtherIdentifyingInfo**. There must be a 1:1 mapping between this array and **OtherIdentifyingInfo**.
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -173,19 +173,19 @@ Descriptions of the format used in the custom identifiers in **OtherIdentifyingI
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8.1 \[desktop apps only\]<br/>                                              |
-| Minimum supported server<br/> | Windows Server 2012 R2 \[desktop apps only\]<br/>                                   |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8.1 \[desktop apps only\]                                              |
+| Minimum supported server | Windows Server 2012 R2 \[desktop apps only\]                                   |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_StorageObject**](msft-storageobject.md)
-</dt> </dl>
+ 
 
  
 

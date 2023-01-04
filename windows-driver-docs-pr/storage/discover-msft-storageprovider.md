@@ -44,69 +44,22 @@ UInt32 Discover(
 
 ## Parameters
 
-<dl> <dt>
+ 
 
 *DiscoveryLevel* \[in\]
-</dt> <dd>
+ 
 
 The level (or depth) of discovery that should be performed. This parameter can only be specified if the root object is a storage provider, storage subsystem, or **NULL**. When specified, the storage provider will discover objects starting from **Level 0** and continuing until the specified level is reached. Associations between objects (within the discovered levels) will also be discovered.
 
-
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span id="Level_0"></span><span id="level_0"></span><span id="LEVEL_0"></span><dl> <dt><strong>Level 0</strong></dt> <dt>0</dt> </dl></td>
-<td>The storage provider, storage subsystem, and fileserver objects will be discovered.<br/>
-<blockquote>
-[!Note]<br />
-<strong>Starting in Windows 10:</strong> Discovery of fileserver objects has been added.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><span id="Level_1"></span><span id="level_1"></span><span id="LEVEL_1"></span><dl> <dt><strong>Level 1</strong></dt> <dt>1</dt> </dl></td>
-<td>Storage pools, file shares, resiliency settings, target ports, target portals, and initiator identifiers will be discovered.<br/>
-<blockquote>
-[!Note]<br />
-<strong>Starting in Windows 10:</strong> Discovery of file shares has been added.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td><span id="Level_2"></span><span id="level_2"></span><span id="LEVEL_2"></span><dl> <dt><strong>Level 2</strong></dt> <dt>2</dt> </dl></td>
-<td>Virtual disks, volumes, partitions, disks, and masking sets will be discovered.<br/>
-<blockquote>
-[!Note]<br />
-<strong>Starting in Windows 10:</strong> Discovery of volumes, partitions, and disks has been added.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td><span id="Level_3"></span><span id="level_3"></span><span id="LEVEL_3"></span><dl> <dt><strong>Level 3</strong></dt> <dt>3</dt> </dl></td>
-<td>Physical disks will be discovered.<br/></td>
-</tr>
-</tbody>
-</table>
-
-
-
- 
-
-</dd> <dt>
+| Value | Meaning |
+|:----- |:------- |
+| **Level 0** 0 |The storage provider, storage subsystem, and fileserver objects will be discovered. Note: **Starting in Windows 10:** Discovery of fileserver objects has been added. |
+| **Level 1** 1 | Storage pools, file shares, resiliency settings, target ports, target portals, and initiator identifiers will be discovered. Note: **Starting in Windows 10:** Discovery of file shares has been added. |
+| **Level 2** 2 | Virtual disks, volumes, partitions, disks, and masking sets will be discovered. Note: **Starting in Windows 10:** Discovery of volumes, partitions, and disks has been added. |
+| **Level 3** 3 | Physical disks will be discovered. |
 
 *RootObject* \[in\]
-</dt> <dd>
+ 
 
 If this parameter is set, discovery will begin from this object. When *DiscoveryLevel* is **NULL**, well-defined actions will be taken depending on the type of object specified by *RootObject*:
 
@@ -115,10 +68,10 @@ If this parameter is set, discovery will begin from this object. When *Discovery
 -   Masking set: The masking set, along with any associated target ports, initiator identifiers, and virtual disks will be discovered.
 -   For all other objects, only that object will be discovered or refreshed.
 
-</dd> <dt>
+ 
 
 *RunAsJob* \[in\]
-</dt> <dd>
+ 
 
 If **TRUE**, this method uses the *CreatedStorageJob* parameter when the request is taking a long time to service. If a storage job has been created to track the operation, this method will return **Method Parameters Checked - Job Started**.
 
@@ -129,72 +82,72 @@ If **TRUE**, this method uses the *CreatedStorageJob* parameter when the request
 
 If **FALSE** or **NULL**, this method will follow default WMI asynchronous behavior as determined by the client's method for invocation. In other words, it is synchronous unless requested otherwise.
 
-</dd> <dt>
+ 
 
 *CreatedStorageJob* \[out\]
-</dt> <dd>
+ 
 
 If *RunAsJob* is set to **TRUE** and this method takes a long time to execute, this parameter receives a reference to the storage job object that is used to track the long-running operation.
 
-</dd> <dt>
+ 
 
 *ExtendedStatus* \[out\]
-</dt> <dd>
+ 
 
 A string that contains an embedded [**MSFT\_StorageExtendedStatus**](msft-storageextendedstatus.md) object.
 
 This parameter allows the storage provider to return extended (implementation-specific) error information.
 
-</dd> </dl>
+ 
 
 ## Return value
 
-<dl> <dt>
+ 
 
 **Success** (0)
-</dt> <dt>
+ 
 
 **Not Supported** (1)
-</dt> <dt>
+ 
 
 **Unspecified Error** (2)
-</dt> <dt>
+ 
 
 **Timeout** (3)
-</dt> <dt>
+ 
 
 **Failed** (4)
-</dt> <dt>
+ 
 
 **Invalid Parameter** (5)
-</dt> <dt>
+ 
 
 **Method Parameters Checked - Job Started** (4096)
-</dt> <dt>
+ 
 
 **Access denied** (40001)
-</dt> <dt>
+ 
 
 **There are not enough resources to complete the operation.** (40002)
-</dt> <dt>
+ 
 
 **Cannot connect to the storage provider.** (46000)
-</dt> <dt>
+ 
 
 **The storage provider cannot connect to the storage subsystem.** (46001)
-</dt> <dt>
+ 
 
 **The storage provider does not support a required profile.** (46002)
-</dt> <dt>
+ 
 
 **The storage provider does not support a required association.** (46003)
-</dt> <dt>
+ 
 
 **Discover failed for the root object.** (46009 )
-</dt> <dt>
+ 
 
 **Discover failed on one or more subsystems.** (46010)
-</dt> </dl>
+ 
 
 ## Remarks
 
@@ -208,22 +161,22 @@ For better performance, storage subsystems that have the **iSCSITargetCreationSc
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_StorageProvider**](msft-storageprovider.md)
-</dt> <dt>
+ 
 
 [**MSFT\_StorageSubSystem**](msft-storagesubsystem.md)
-</dt> </dl>
+ 
 
  
 

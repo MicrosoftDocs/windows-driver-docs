@@ -45,39 +45,39 @@ The **MSFT\_DiskToStorageReliabilityCounter** class has these types of members:
 
 The **MSFT\_DiskToStorageReliabilityCounter** class has these properties.
 
-<dl> <dt>
+ 
 
 **Disk**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **[**MSFT\_Disk**](msft-disk.md)**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Key**
-</dt> </dl>
+ 
 
 The disk object.
 
-</dd> <dt>
+ 
 
 **StorageReliabilityCounter**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **[**MSFT\_StorageReliabilityCounter**](msft-storagereliabilitycounter.md)**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> <dt>
+ 
 
 Qualifiers: **Key**
-</dt> </dl>
+ 
 
 The storage reliability counter object.
 
-</dd> </dl>
+ 
 
  
 

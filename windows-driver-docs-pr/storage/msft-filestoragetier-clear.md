@@ -36,14 +36,14 @@ UInt32 Clear(
 
 ## Parameters
 
-<dl> <dt>
+ 
 
 *FilePath* \[in\]
-</dt> <dd>
+ 
 
 The path of a file to unpin.
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -51,19 +51,19 @@ The path of a file to unpin.
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8.1 \[desktop apps only\]<br/>                                              |
-| Minimum supported server<br/> | Windows Server 2012 R2 \[desktop apps only\]<br/>                                   |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8.1 \[desktop apps only\]                                              |
+| Minimum supported server | Windows Server 2012 R2 \[desktop apps only\]                                   |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_FileStorageTier**](msft-filestoragetier.md)
-</dt> </dl>
+ 
 
  
 

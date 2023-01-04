@@ -53,9 +53,9 @@ The **MSFT\_FileIntegrity** class has these methods.
 
 | Method                                      | Description                                                                 |
 |:--------------------------------------------|:----------------------------------------------------------------------------|
-| [**Get**](msft-fileintegrity-get.md)       | Retrieves the file integrity information for the specified file.<br/> |
-| [**Repair**](msft-fileintegrity-repair.md) | Scrubs the data for the specified file.<br/>                          |
-| [**Set**](msft-fileintegrity-set.md)       | Sets the file integrity state for the specified file.<br/>            |
+| [**Get**](msft-fileintegrity-get.md)       | Retrieves the file integrity information for the specified file. |
+| [**Repair**](msft-fileintegrity-repair.md) | Scrubs the data for the specified file.                          |
+| [**Set**](msft-fileintegrity-set.md)       | Sets the file integrity state for the specified file.            |
 
 
 
@@ -65,46 +65,46 @@ The **MSFT\_FileIntegrity** class has these methods.
 
 The **MSFT\_FileIntegrity** class has these properties.
 
-<dl> <dt>
+ 
 
 **Enabled**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Boolean**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 Specifies whether integrity streams are enabled for this file.
 
-</dd> <dt>
+ 
 
 **Enforced**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **Boolean**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 Specifies whether integrity streams are enforced for this file.
 
-</dd> <dt>
+ 
 
 **FileName**
-</dt> <dd> <dl> <dt>
+   
 
 Data type: **String**
-</dt> <dt>
+ 
 
 Access type: Read-only
-</dt> </dl>
+ 
 
 The name of the file.
 
-</dd> </dl>
+ 
 
 ## Requirements
 
@@ -112,10 +112,10 @@ The name of the file.
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8 \[desktop apps only\]<br/>                                                |
-| Minimum supported server<br/> | Windows Server 2012 \[desktop apps only\]<br/>                                      |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8 \[desktop apps only\]                                                |
+| Minimum supported server | Windows Server 2012 \[desktop apps only\]                                      |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 

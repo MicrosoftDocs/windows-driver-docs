@@ -41,86 +41,86 @@ UInt32 GetSupportedSize(
 
 ## Parameters
 
-<dl> <dt>
+ 
 
 *ResiliencySettingName* \[in\]
-</dt> <dd>
+ 
 
 The name of the resiliency setting to use to determine the supported sizes. Note that the sizes returned may vary depending on the resiliency setting.
 
-</dd> <dt>
+ 
 
 *SupportedSizes* \[out\]
-</dt> <dd>
+ 
 
 The supported sizes for the storage tier, one size per array element. This parameter may be NULL if the number of supported sizes is large, but is useful for storage tiers that only support a small number of tier sizes.
 
-</dd> <dt>
+ 
 
 *TierSizeMin* \[out\]
-</dt> <dd>
+ 
 
 The minimum supported size of a sequence of sizes specified by the minimum, increment and maximum.
 
-</dd> <dt>
+ 
 
 *TierSizeMax* \[out\]
-</dt> <dd>
+ 
 
 The maximum supported size of a sequence of sizes specified by the minimum, increment and maximum.
 
-</dd> <dt>
+ 
 
 *TierSizeDivisor* \[out\]
-</dt> <dd>
+ 
 
 The increment, in bytes, between support sizes. For example: if the minimum supported size is 10 GB, the maximum is 20 GB, and this parameter is 2 GB, then the supported sizes for this pool would be 10 GB, 12 GB, 14 GB, 16 GB, 18 GB, and 20 GB.
 
-</dd> <dt>
+ 
 
 *ExtendedStatus* \[out\]
-</dt> <dd>
+ 
 
 Extended error information from the storage provider in a [**MSFT\_StorageExtendedStatus**](msft-storageextendedstatus.md) object. The information is implementation-specific.
 
-</dd> </dl>
+ 
 
 ## Return value
 
-<dl> <dt>
+ 
 
 **Success** (0)
-</dt> <dt>
+ 
 
 **Not Supported** (1)
-</dt> <dt>
+ 
 
 **Unspecified Error** (2)
-</dt> <dt>
+ 
 
 **Timeout** (3)
-</dt> <dt>
+ 
 
 **Failed** (4)
-</dt> <dt>
+ 
 
 **Invalid Parameter** (5)
-</dt> <dt>
+ 
 
 **Access denied** (40001)
-</dt> <dt>
+ 
 
 **There are not enough resources to complete the operation.** (40002)
-</dt> <dt>
+ 
 
 **Cache out of date** (40003)
-</dt> <dt>
+ 
 
 **Cannot connect to the storage provider.** (46000)
-</dt> <dt>
+ 
 
 **The storage provider cannot connect to the storage subsystem.** (46001)
-</dt> </dl>
+ 
 
 ## Requirements
 
@@ -128,19 +128,19 @@ Extended error information from the storage provider in a [**MSFT\_StorageExtend
 
 | Requirement | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Minimum supported client<br/> | Windows 8.1 \[desktop apps only\]<br/>                                              |
-| Minimum supported server<br/> | Windows Server 2012 R2 \[desktop apps only\]<br/>                                   |
-| Namespace<br/>                | Root\\Microsoft\\Windows\\Storage<br/>                                              |
-| MOF<br/>                      | <dl> <dt>Storagewmi.mof</dt> </dl> |
+| Minimum supported client | Windows 8.1 \[desktop apps only\]                                              |
+| Minimum supported server | Windows Server 2012 R2 \[desktop apps only\]                                   |
+| Namespace                | Root\\Microsoft\\Windows\\Storage                                              |
+| MOF                      |  Storagewmi.mof  |
 
 
 
 ## See also
 
-<dl> <dt>
+ 
 
 [**MSFT\_StorageTier**](msft-storagetier.md)
-</dt> </dl>
+ 
 
  
 
