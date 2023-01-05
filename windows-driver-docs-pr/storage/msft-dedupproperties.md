@@ -52,7 +52,7 @@ class MSFT_DedupProperties
 
 The **MSFT\_DedupProperties** class has these types of members:
 
--   [Properties](#msft-dedupproperties-class)
+-   [Properties](#properties)
 
 ### Properties
 
