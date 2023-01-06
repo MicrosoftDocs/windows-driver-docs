@@ -1,7 +1,7 @@
 ---
 title: Implementing Audio Processing Objects
 description: This topic describes how to implement an audio processing object (APO). For general information about APOs, see Audio Processing Object Architecture.
-ms.date: 10/17/2022
+ms.date: 01/05/2023
 ---
 
 # Implementing Audio Processing Objects
@@ -330,9 +330,9 @@ ClassGuid   = {5989fce8-9cd0-467d-8a6a-5419e31529d4}
 
 [Apo_AddReg]
 ; CLSID registration
-HKR,CLSID\%SWAP_FX_STREAM_CLSID%,,,%SFX_FriendlyName%
-HKR,CLSID\%SWAP_FX_STREAM_CLSID%\InProcServer32,,0x00020000,%%SystemRoot%%\System32\swapapo.dll
-HKR,CLSID\%SWAP_FX_STREAM_CLSID%\InProcServer32,ThreadingModel,,"Both"
+HKR,Classes\CLSID\%SWAP_FX_STREAM_CLSID%,,,%SFX_FriendlyName%
+HKR,Classes\CLSID\%SWAP_FX_STREAM_CLSID%\InProcServer32,,0x00020000,%%SystemRoot%%\System32\swapapo.dll
+HKR,Classes\CLSID\%SWAP_FX_STREAM_CLSID%\InProcServer32,ThreadingModel,,"Both"
 …
 ;Audio engine registration
 HKR,AudioEngine\AudioProcessingObjects\%SWAP_FX_STREAM_CLSID%,"FriendlyName",,%SFX_FriendlyName%
@@ -340,6 +340,14 @@ HKR,AudioEngine\AudioProcessingObjects\%SWAP_FX_STREAM_CLSID%,"FriendlyName",,%S
 ```
 
 When this INF installs the componentized APO, on a desktop system "Audio Processing Objects" will be shown in Windows Device Manager.
+
+### Updates to CLSIDs when a new APO version is released 
+
+When a new APO version is released, it is a good practice and generally recommended to update the COM class CLSID. Use tools such as GUIDGEN to create new GUIDs.
+
+#### Requirement to Update CLSIDs when moving from HKCR to HKR
+
+It is a requirement when making the switch from global COM registrations (HKCR) to device relative HKR COM registrations to change the COM class GUID. This approach reduces the possibility that the new COM objects will not be registered properly and will fail to load. 
 
 ### Bluetooth Audio Sample APO INF Sample
 
