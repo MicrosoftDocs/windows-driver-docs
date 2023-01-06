@@ -35,13 +35,13 @@ NETIOAPI_API NotifyRouteChange2(
    The following values are currently supported for the address family:
 
     - AF\_INET  
-       The IPv4 address family. When this value is specified, this function registers the driver only for IPv6 route change notifications.
+       The IPv4 address family. When this value is specified, this function registers the driver only for IPv4 route change notifications.
 
     - AF\_INET6  
-       The IPv6 address family. When this value is specified, this function registers the driver for both IPv4 and IPv6 route change notifications.
+       The IPv6 address family. When this value is specified, this function registers the driver only for IPv6 route change notifications.
 
     - AF\_UNSPEC  
-       The address family is unspecified. When this value is specified, this function registers the driver only for IPv4 route change notifications.
+       The address family is unspecified. When this value is specified, this function registers the driver for both IPv4 and IPv6 route change notifications.
 
 - *Callback* \[in\]  
    A pointer to the function to call when a change occurs. This function is called when an interface notification is received.
@@ -117,7 +117,7 @@ The invocation of the callback function that is specified in the *Callback* para
 </tbody>
 </table>
 
-To deregister the driver for change notifications, call the [**CancelMibChangeNotify2**](cancelmibchangenotify2.md) function, passing the *NotificationHandle* parameter that [**NotifyUnicastIpAddressChange**](notifyunicastipaddresschange.md) returns.
+To deregister the driver for change notifications, call the [**CancelMibChangeNotify2**](cancelmibchangenotify2.md) function, passing the *NotificationHandle* parameter that **NotifyRouteChange2** returns.
 
 ## Requirements
 
