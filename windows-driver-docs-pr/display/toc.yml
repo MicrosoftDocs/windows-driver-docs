@@ -12,7 +12,7 @@
     items: 
     - name: "Introduction to WDDM"
       href: introduction-to-the-windows-vista-and-later-display-driver-model.md
-   - name: "WDDM architecture"
+    - name: "WDDM architecture"
       href: windows-vista-and-later-display-driver-model-architecture.md
     - name: "WDDM operation flow"
       href: windows-vista-and-later-display-driver-model-operation-flow.md
