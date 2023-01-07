@@ -1,4 +1,4 @@
-- name: "Design Guides"
+- name: "Display driver design guides"
   href: index.md
 - name: "Windows Display Driver Model (WDDM) design guide"
 # Auto-expanded node
@@ -7,6 +7,19 @@
     href: windows-vista-display-driver-model-design-guide.md
   - name: "Roadmap for the Windows Display Driver Model (WDDM)"
     href: roadmap-for-developing-drivers-for-the-windows-vista-display-driver-mo.md
+  - name: "Windows Display Driver Model (WDDM)"
+# Auto-expanded node
+    items: 
+    - name: "Introduction to WDDM"
+      href: introduction-to-the-windows-vista-and-later-display-driver-model.md
+   - name: "WDDM architecture"
+      href: windows-vista-and-later-display-driver-model-architecture.md
+    - name: "WDDM operation flow"
+      href: windows-vista-and-later-display-driver-model-operation-flow.md
+    - name: "Benefits of WDDM"
+      href: benefits-of-the-windows-vista-and-later-display-driver-model.md
+    - name: "Migrating to WDDM"
+      href: migrating-to-the-windows-vista-and-later-display-driver-model.md
   - name: "What's new for Windows display and graphics drivers"
 # Auto-expanded node
     items:
@@ -194,19 +207,6 @@
         href: wddm-driver-and-feature-caps.md
       - name: "WDDM 1.2 best practices"
         href: wddm-v1-2-best-practices.md
-  - name: "Introduction to the Windows Display Driver Model (WDDM)"
-# Auto-expanded node
-    items: 
-    - name: "Introduction to the Windows Display Driver Model (WDDM)"
-      href: introduction-to-the-windows-vista-and-later-display-driver-model.md
-    - name: "Windows Display Driver Model (WDDM) Architecture"
-      href: windows-vista-and-later-display-driver-model-architecture.md
-    - name: "Benefits of the Windows Display Driver Model (WDDM)"
-      href: benefits-of-the-windows-vista-and-later-display-driver-model.md
-    - name: "Migrating to the Windows Display Driver Model (WDDM)"
-      href: migrating-to-the-windows-vista-and-later-display-driver-model.md
-    - name: "Windows Display Driver Model (WDDM) Operation Flow"
-      href: windows-vista-and-later-display-driver-model-operation-flow.md
   - name: "Installation Requirements for Display Miniport and User-Mode Display Drivers"
 # Auto-expanded node
     items: 
