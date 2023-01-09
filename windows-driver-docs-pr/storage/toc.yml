@@ -628,12 +628,12 @@
         items:
         - name: "Overview"
           href: windows-storage-management-api-portal.md
-        - name: "Storage Management API Classes"
-          href: storage-management-api-classes.md
         - name: "Storage Management API Common Return Codes"
           href: storage-management-api-common-return-codes.md
         - name: "Storage Management API Classes"
           items:
+          - name: "Storage Management API Classes"
+            href: storage-management-api-classes.md
           - name: MSFT_DedupProperties
             href: msft-dedupproperties.md
           - name: MSFT_Disk
