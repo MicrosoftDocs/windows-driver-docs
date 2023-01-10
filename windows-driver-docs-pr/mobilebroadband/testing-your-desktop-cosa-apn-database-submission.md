@@ -35,7 +35,7 @@ For more information about how to install a provisioning package file, see [Appl
 
 Follow these steps to test the updated COSA Provisioning Package (PPKG) you received from Microsoft after completing your APN information spreadsheet and submitting it to your TAM.
 
-These steps require a script from Microsoft to apply and test the PPKG file. Use the following link to download the latest version of the script: <https://go.microsoft.com/fwlink/p/?linkid=866771>.
+These steps require a script from Microsoft to apply and test the PPKG file. Use the following link to download the latest version of the script: <https://dev.azure.com/microsoft/OS/_git/os.2020?path=/onecoreuap/admin/prov/tools/Scripts/ApplyCosaProvisioning.BAT&version=GBofficial/main>.
 
 #### Apply the test PPKG file
 
