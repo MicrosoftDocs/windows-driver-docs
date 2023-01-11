@@ -11,7 +11,7 @@ ms.date: 04/20/2017
 # Accessing Data Buffers in UMDF 1.x Drivers
 
 
-[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)] For information on accessing data buffers for UMDF 2, see [Accessing Data Buffers in WDF Drivers](../wdf/accessing-data-buffers-in-wdf-drivers.md). 
 
 When a driver receives a read, write, or device I/O control request, the request object contains either an input buffer or an output buffer, or both. (A few device I/O control requests provide two input, two output, or two input/output buffers.)
 
