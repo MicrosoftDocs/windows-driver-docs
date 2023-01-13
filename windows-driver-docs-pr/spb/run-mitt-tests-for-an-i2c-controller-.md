@@ -44,11 +44,21 @@ Perform these steps on the system under test that has the I<sup>2</sup>C control
 
 1. Install WITTTest driver included in the MITT software package by running this command:
 
-    ```console
-    pnputil -a witttest.inf
-    ```
+    `pnputil -a WittTest.inf`
 
-    :::image type="content" source="images/mitt-install-witt.png" alt-text="Screenshot showing the console command to install the WITT driver for the MITT board.":::
+    ```output
+    C:\Program Files (x86)\MITT\x64>pnputil -a WittTest.inf
+    Microsoft PnP Utility
+
+    Processing inf :            WittTest.inf
+    Driver package added successfully.
+    Published name :            oem6.inf
+
+    Total attempted:              1
+    Number successfully imported: 1
+
+    C:\Program Files (x86)\MITT\x64> _
+    ```
 
     >[!NOTE]
     >[PnpUtil.exe](../devtest/pnputil.md) is included in %SystemRoot%\\System32.
@@ -140,8 +150,10 @@ Perform these steps on the system under test that has the I<sup>2</sup>C control
 3. Copy Muttutil.dll and Mitti2ctest.dll from the MITT software package to the folder.
 4. View all MITT I<sup>2</sup>C tests by using the **/list** option:
 
-    ```console
-    C:\Program Files (x86)\MITT\x64>"C:\Program Files(x86)\Windows Kits\8.1\Testing\Runtimes\TAEF\te" MITTI2CTest.dll /list
+    `"C:\Program Files (x86)\Windows Kits\10\Testing\Runtimes\TAEF\te" MITTI2CTest.dll /list`
+
+    ```output
+    C:\Program Files (x86)\MITT\x64>"C:\Program Files (x86)\Windows Kits\10\Testing\Runtimes\TAEF\te" MITTI2CTest.dll /list
     Test Authoring and Execution Framework v3.7k for x64
 
 
@@ -169,15 +181,11 @@ You are now ready to run I<sup>2</sup>C tests. You can run a single test, all te
 
 - Run a single test by using the **/name:*&lt;test name&gt;*** option. This command runs the BasicIORead test:
 
-  ```console
-  C:\Program Files (x86)\MITT\x64>"C:\Program Files(x86)\Windows Kits\8.1\Testing\Runtimes\TAEF\te" MITTI2CTest.dll /name:MITTI2CTest::BasicIORead
-  ```
+  `"C:\Program Files (x86)\Windows Kits\10\Testing\Runtimes\TAEF\te" MITTI2CTest.dll /name:MITTI2CTest::BasicIORead`
 
 - Run all tests by using this command:
 
-  ```console
-  C:\Program Files (x86)\MITT\x64>"C:\Program Files(x86)\Windows Kits\8.1\Testing\Runtimes\TAEF\te" MITTI2CTest.dll
-  ```
+  `"C:\Program Files (x86)\Windows Kits\10\Testing\Runtimes\TAEF\te" MITTI2CTest.dll`
 
 - Run tests manually by using SPBCmd.exe tool included in the MITT software package.
 
