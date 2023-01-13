@@ -55,8 +55,6 @@ Perform these steps on the system under test that has the I<sup>2</sup>C control
 
     Total attempted:              1
     Number successfully imported: 1
-
-    C:\Program Files (x86)\MITT\x64> _
     ```
 
     >[!NOTE]
