@@ -47,7 +47,6 @@ Perform these steps on the system under test that has the I<sup>2</sup>C control
     `pnputil -a WittTest.inf`
 
     ```output
-    C:\Program Files (x86)\MITT\x64>pnputil -a WittTest.inf
     Microsoft PnP Utility
 
     Processing inf :            WittTest.inf
@@ -153,7 +152,6 @@ Perform these steps on the system under test that has the I<sup>2</sup>C control
     `"C:\Program Files (x86)\Windows Kits\10\Testing\Runtimes\TAEF\te" MITTI2CTest.dll /list`
 
     ```output
-    C:\Program Files (x86)\MITT\x64>"C:\Program Files (x86)\Windows Kits\10\Testing\Runtimes\TAEF\te" MITTI2CTest.dll /list
     Test Authoring and Execution Framework v3.7k for x64
 
 
