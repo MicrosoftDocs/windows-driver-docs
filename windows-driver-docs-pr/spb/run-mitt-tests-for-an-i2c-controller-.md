@@ -26,17 +26,17 @@ I<sup>2</sup>C test modules that are included in the MITT software package can b
 
     :::image type="content" source="images/i2cheader.png" alt-text="Picture of the MITT I2C header.":::
 
-2. Use the jumper on to the I<sup>2</sup>C header (above **JB1**) to select the correct I<sup>2</sup>C voltage between 3.3V and 1.8V. In this image 1.8V is selected.
+2. Use the jumper on to the I<sup>2</sup>C header (above **JB1**) to select the correct I<sup>2</sup>C voltage between 3.3V and 1.8V. In this image, 1.8V is selected.
 3. Connect SCL, SDA, and GND pins on the adapter board to the exposed SCL, SDA, and GND lines on the system under test.
 
     :::image type="content" source="images/i2c-power.png" alt-text="Picure of the I2C adapter.":::
 
-4. Use the jumper on the I2C adapter board to select the correct I2C voltage between 3.3V and 1.8V. In this image the 1.8V is selected.
+4. Use the jumper on the I2C adapter board to select the correct I2C voltage between 3.3V and 1.8V. In this image, the 1.8V is selected.
 5. On the MITT board, set switch **SW0** to the high position. This position enables the default mode for I<sup>2</sup>C when the MITT is powered.
 
     :::image type="content" source="images/sw0.png" alt-text="Picture of SW0 on the MITT board.":::
 
-6. Use the **RESET** button to power cycle the MITT board. If the wire connections to the I<sup>2</sup>C controller are correct, **LD7** (SDA indicator) and **LD6** (SCL indicator) turn on. If either LED does not turn on, there is a wiring issue because either SDA or, SCL, or both are pulled low.
+6. Use the **RESET** button to power cycle the MITT board. If the wire connections to the I<sup>2</sup>C controller are correct, **LD7** (SDA indicator) and **LD6** (SCL indicator) turn on. If either LED doesn't turn on, there's a wiring issue because either SDA or, SCL, or both are pulled low.
 
 ## Test driver and ACPI configuration
 
@@ -173,7 +173,7 @@ Perform these steps on the system under test that has the I<sup>2</sup>C control
                     MITTI2CTest::Stress
     ```
 
-You are now ready to run I<sup>2</sup>C tests. You can run a single test, all tests at once, or run tests manually.
+You're now ready to run I<sup>2</sup>C tests. You can run a single test, all tests at once, or run tests manually.
 
 - Run a single test by using the **/name:*&lt;test name&gt;*** option. This command runs the BasicIORead test:
 
