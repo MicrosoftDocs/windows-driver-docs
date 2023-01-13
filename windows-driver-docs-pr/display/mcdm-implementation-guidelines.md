@@ -1,7 +1,7 @@
 ---
 title: MCDM KM driver implementation guidelines
 description: Implementation guidelines for MCDM kernel-mode driver
-ms.date: 12/01/2022
+ms.date: 01/12/2023
 ---
 
 # MCDM KM driver implementation guidelines
@@ -385,7 +385,6 @@ The following [DXGK_DRIVERCAPS](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmd
 * MaxQueuedMultiPlaneOverlayFlipVSync
 * SupportContextlessPresent
 * Detachable
-* VirtualGpuOnly
 
 ### SchedulingCaps requirements
 
@@ -418,7 +417,7 @@ The following [DXGK_DRIVERCAPS](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmd
 | IoMmuSupported              | Set as appropriate. This cap is set when the device shares page tables with the CPU (shared virtual memory (SVM)). See [IoMmu Model](iommu-model.md). |
 | ReplicateGdiContent         | Must be set to FALSE. |
 | NonCpuVisiblePrimary        | Must be set to FALSE. |
-| ParavirtualizationSupported | Must be set to TRUE, which means that the device can be used in a virtual machine using paravirtualization. |
+| ParavirtualizationSupported | MCDM host drivers that support the virtualization of the device through the GPU partitioning interface (GPU-P with SR-IOV) should set this field to FALSE. All other cases (drivers for physical machines without GPU-P support or guest drivers of vGPUs that have been exposed through GPU-P) should set this field to TRUE. |
 | IoMmuSecureModeSupported    | Set as appropriate. If this cap is set TRUE, the driver supports IoMmu isolation (the device has a dedicated page table for the IoMmu unit). If this cap is set FALSE, the device can't be used in the "secure" virtual machines (Windows Sandbox or MDAG). |
 | DisableSelfRefreshVRAMInS3  | Set as appropriate. |
 
