@@ -1,7 +1,7 @@
 ---
 title: I2C controller tests in MITT
-description: I<sup>2</sup>C test modules that are included in the MITT software package can be used to test data transfers for an I<sup>2</sup>C controller and its driver. The MITT board acts as a client device connected to the I<sup>2</sup>C bus.
-ms.date: 04/07/2022
+description: I2C test modules that are included in the MITT software package can be used to test data transfers for an I2C controller and its driver. The MITT board acts as a client device connected to the I2C bus.
+ms.date: 01/13/2023
 ---
 
 # I2C controller tests in MITT
@@ -16,25 +16,25 @@ I<sup>2</sup>C test modules that are included in the MITT software package can b
 
 ## Hardware setup
 
-![mitt i2c hardware setup.](images/i2csetup.png)
+:::image type="content" source="images/i2csetup.png" alt-text="Picture of the MITT I2C hardware setup.":::
 
-| Bus interface | Pin-out                             | ACPI and schematics | Connection solution                |
-|---------------|-------------------------------------|---------------------|------------------------------------|
-| I<sup>2</sup>C           | All lines needed (SCL, SDA and GND) | ACPI table          | Simple male block (on debug board) |
+| Bus interface | Pin-out | ACPI and schematics | Connection solution |
+|---|---|---|---|
+| I<sup>2</sup>C | All lines needed (SCL, SDA and GND) | ACPI table | Simple male block (on debug board) |
 
 1. Connect the I<sup>2</sup>C adapter to **JB1** on the MITT board.
 
-    ![mitt i2c header.](images/i2cheader.png)
+    :::image type="content" source="images/i2cheader.png" alt-text="Picture of the MITT I2C header.":::
 
 2. Use the jumper on to the I<sup>2</sup>C header (above **JB1**) to select the correct I<sup>2</sup>C voltage between 3.3V and 1.8V. In this image 1.8V is selected.
 3. Connect SCL, SDA, and GND pins on the adapter board to the exposed SCL, SDA, and GND lines on the system under test.
 
-    ![i2c adapter.](images/i2c-power.png)
+    :::image type="content" source="images/i2c-power.png" alt-text="Picure of the I2C adapter.":::
 
 4. Use the jumper on the I2C adapter board to select the correct I2C voltage between 3.3V and 1.8V. In this image the 1.8V is selected.
 5. On the MITT board, set switch **SW0** to the high position. This position enables the default mode for I<sup>2</sup>C when the MITT is powered.
 
-    ![sw0 on the mitt board.](images/sw0.png)
+    :::image type="content" source="images/sw0.png" alt-text="Picture of SW0 on the MITT board.":::
 
 6. Use the **RESET** button to power cycle the MITT board. If the wire connections to the I<sup>2</sup>C controller are correct, **LD7** (SDA indicator) and **LD6** (SCL indicator) turn on. If either LED does not turn on, there is a wiring issue because either SDA or, SCL, or both are pulled low.
 
@@ -44,9 +44,11 @@ Perform these steps on the system under test that has the I<sup>2</sup>C control
 
 1. Install WITTTest driver included in the MITT software package by running this command:
 
-    **pnputil -a witttest.inf**
+    ```console
+    pnputil -a witttest.inf
+    ```
 
-    ![install witt driver for the mitt board.](images/mitt-install-witt.png)
+    :::image type="content" source="images/mitt-install-witt.png" alt-text="Screenshot showing the console command to install the WITT driver for the MITT board.":::
 
     >[!NOTE]
     >[PnpUtil.exe](../devtest/pnputil.md) is included in %SystemRoot%\\System32.
@@ -138,20 +140,47 @@ Perform these steps on the system under test that has the I<sup>2</sup>C control
 3. Copy Muttutil.dll and Mitti2ctest.dll from the MITT software package to the folder.
 4. View all MITT I<sup>2</sup>C tests by using the **/list** option:
 
-    ![Screenshot that shows the list of MITT i 2 c tests in "Command prompt".](images/mitt-i2c-cmds.png)
+    ```console
+    C:\Program Files (x86)\MITT\x64>"C:\Program Files(x86)\Windows Kits\8.1\Testing\Runtimes\TAEF\te" MITTI2CTest.dll /list
+    Test Authoring and Execution Framework v3.7k for x64
+
+
+            C:\Program Files(x86)\MITT\x64\MITTI2CTest.dll
+                MITTI2CTest
+                    MITTI2CTest::BasicIORead
+                    MITTI2CTest::BasicIOWrite
+                    MITTI2CTest::BasicIOSeq
+                    MITTI2CTest::BasicIOKernel
+                    MITTI2CTest::DeviceNACK
+                    MITTI2CTest::LockUnlock
+                    MITTI2CTest::CancelRead
+                    MITTI2CTest::CancelWrite
+                    MITTI2CTest::CancelSequence
+                    MITTI2CTest::ClockStretching
+                    MITTI2CTest::PerfRead
+                    MITTI2CTest::PerfWrite
+                    MITTI2CTest::PerfSequence
+                    MITTI2CTest::BusRecovery
+                    MITTI2CTest::Power
+                    MITTI2CTest::Stress
+    ```
 
 You are now ready to run I<sup>2</sup>C tests. You can run a single test, all tests at once, or run tests manually.
 
 - Run a single test by using the **/name:*&lt;test name&gt;*** option. This command runs the BasicIORead test:
 
-  ![Screenshot that shows the command for a single test run in "Command prompt".](images/mitt-i2c-cmds1.png)
+  ```console
+  C:\Program Files (x86)\MITT\x64>"C:\Program Files(x86)\Windows Kits\8.1\Testing\Runtimes\TAEF\te" MITTI2CTest.dll /name:MITTI2CTest::BasicIORead
+  ```
 
 - Run all tests by using this command:
 
-  ![mitt i2c commands.](images/mitt-i2c-cmds2.png)
+  ```console
+  C:\Program Files (x86)\MITT\x64>"C:\Program Files(x86)\Windows Kits\8.1\Testing\Runtimes\TAEF\te" MITTI2CTest.dll
+  ```
 
 - Run tests manually by using SPBCmd.exe tool included in the MITT software package.
 
 ## I<sup>2</sup>C adapter schematic
 
-![i2c schematic.](images/i2c-schematic.png)
+:::image type="content" source="images/i2c-schematic.png" alt-text="I2C adapter schematic diagram.":::
