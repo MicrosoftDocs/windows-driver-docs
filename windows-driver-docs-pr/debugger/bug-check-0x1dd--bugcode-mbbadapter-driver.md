@@ -13,7 +13,7 @@ api_type:
 
 # Bug Check 0x1DD: BUGCODE\_MBBADAPTER\_DRIVER
 
-The BUGCODE\_MBBADAPTER\_DRIVER bug check has a value of 0x000001DD. This indicates that the operating system encountered an error caused by a networking driver managed by MBBCx. MBBCx provides mobile broadband (MBB) media-specific functionality in the form of a KMDF-based MBB client driver for MBB devices. For more information, see [Introduction to the Mobile Broadband (MBB) WDF class extension (MBBCx)](/windows-hardware/drivers/netcx/mobile-broadband-mbb-wdf-class-extension-mbbcx).
+The BUGCODE\_MBBADAPTER\_DRIVER bug check has a value of 0x000001DD. This indicates that the operating system encountered an error caused by a networking driver managed by MBBCx. MBBCx provides mobile broadband (MBB) media-specific functionality in the form of a KMDF-based MBB client driver for MBB devices. For more information, see [Introduction to the Mobile Broadband (MBB) WDF class extension (MBBCx)](../netcx/mobile-broadband-mbb-wdf-class-extension-mbbcx.md).
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
@@ -69,8 +69,6 @@ Parameter 1 describes the type of violation. Look at the call stack to determine
 
  ## See also
 
-[Introduction to the Mobile Broadband (MBB) WDF class extension (MBBCx)](/windows-hardware/drivers/netcx/mobile-broadband-mbb-wdf-class-extension-mbbcx)
+[Introduction to the Mobile Broadband (MBB) WDF class extension (MBBCx)](../netcx/mobile-broadband-mbb-wdf-class-extension-mbbcx.md)
 
 [Bug Check Code Reference](bug-check-code-reference2.md)
-
-

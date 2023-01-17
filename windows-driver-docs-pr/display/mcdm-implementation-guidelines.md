@@ -68,7 +68,7 @@ At a minimum, a compute-only driver must supply the following device driver inte
 * [DxgkDdiResetEngine](/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_resetengine)
 * [DxgkDdiResetFromTimeout](/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_resetfromtimeout)
 * [DxgkDdiRestartFromTimeout](/windows-hardware/drivers/ddi/content/d3dkmddi/nc-d3dkmddi-dxgkddi_restartfromtimeout)
-* [DxgkDdiSetPowerState](/windows-hardware/drivers/display/dxgkddisetpowerpstate)
+* [DxgkDdiSetPowerState](./dxgkddisetpowerpstate.md)
 * DxgkDdiSetStablePowerState
 * DxgkDdiSetVirtualMachineData
 * [DxgkDdiStartDevice](/windows-hardware/drivers/ddi/content/dispmprt/nc-dispmprt-dxgkddi_start_device)
