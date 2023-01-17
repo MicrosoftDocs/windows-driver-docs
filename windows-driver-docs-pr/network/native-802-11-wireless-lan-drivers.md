@@ -10,10 +10,10 @@ ms.date: 03/16/2022
 
 To access the design guide and reference topics for Native 802.11 Wireless LAN drivers, see [Native 802.11 Wireless LAN](/previous-versions/windows/hardware/wireless/native-802-11-wireless-lan). 
 
-The Native 802.11 Wireless LAN interface was superseded in Windows 10 and later by the [WLAN Universal Driver Model](wifi-universal-driver-model.md) (WDI).
+The Native 802.11 Wireless LAN interface was superseded in Windows 10 and later by the [WLAN Universal Driver Model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) (WDI).
 
 ## Related topics
 
-[WLAN Universal Driver Model](wifi-universal-driver-model.md)
+[WLAN Universal Driver Model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide)
 
 [Previous Versions of Network Drivers](network-drivers-prior-to-windows-vista.md)
