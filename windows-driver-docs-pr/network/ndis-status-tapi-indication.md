@@ -15,7 +15,7 @@ The NDIS\_STATUS\_TAPI\_INDICATION status indicates that a TAPI event occurred. 
 
 NDIS 4.*x* and earlier NDIS WAN miniport drivers use this status indication. NDIS 5.0 and later WAN miniport drivers must use the CoNDIS WAN interface. For more information about the CoNDIS WAN interface, see [Implementing CoNDIS WAN Miniport Drivers (NDIS 5.1)](/previous-versions/windows/hardware/network/ff546752(v=vs.85)).
 
-The *StatusBuffer* parameter of the [**NdisMIndicateStatus**](/previous-versions/windows/hardware/network/ff553538(v=vs.85)) function contains a pointer to an [**NDIS\_TAPI\_EVENT**](/previous-versions/windows/hardware/network/ff558986(v=vs.85)) structure.The NDIS\_TAPI\_EVENT structure describes the TAPI line or call event that occurs (for example, changes in line and call states, the arrival of an incoming call, and the closing by a remote node or by the miniport driver of an existing call or line).
+The *StatusBuffer* parameter of the [**NdisMIndicateStatus**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatus) function contains a pointer to an [**NDIS\_TAPI\_EVENT**](/previous-versions/windows/hardware/network/ff558986(v=vs.85)) structure.The NDIS\_TAPI\_EVENT structure describes the TAPI line or call event that occurs (for example, changes in line and call states, the arrival of an incoming call, and the closing by a remote node or by the miniport driver of an existing call or line).
 
 For more information about NDIS\_STATUS\_TAPI\_INDICATION, see [Indicating NDIS WAN Miniport Driver Status (NDIS 5.1)](/previous-versions/windows/hardware/network/ff546867(v=vs.85)).
 
@@ -43,7 +43,7 @@ For more information about NDIS\_STATUS\_TAPI\_INDICATION, see [Indicating NDIS 
 
 [**NDIS\_TAPI\_EVENT**](/previous-versions/windows/hardware/network/ff558986(v=vs.85))
 
-[**NdisMIndicateStatus**](/previous-versions/windows/hardware/network/ff553538(v=vs.85))
+[**NdisMIndicateStatus**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatus)
 
  
 

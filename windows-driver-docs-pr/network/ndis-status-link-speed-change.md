@@ -15,7 +15,7 @@ The NDIS\_STATUS\_LINK\_SPEED\_CHANGE status indicates a link speed change.
 
 NDIS translates NDIS\_STATUS\_LINK\_SPEED\_CHANGE status indications to [**NDIS\_STATUS\_LINK\_STATE**](ndis-status-link-state.md) status indications for overlying NDIS 6.0 drivers. When NDIS receives an NDIS\_STATUS\_LINK\_SPEED\_CHANGE status, NDIS issues an OID query request of [OID\_GEN\_LINK\_SPEED](./oid-gen-link-speed.md). NDIS uses the results of the OID\_GEN\_LINK\_SPEED query to issue an NDIS\_STATUS\_LINK\_STATE status to overlying NDIS 6.0 drivers.
 
-The NDIS 5.*x* or earlier miniport driver supplies a DWORD-type value at the *StatusBuffer* parameter of the [**NdisMIndicateStatus**](/previous-versions/windows/hardware/network/ff553538(v=vs.85)) function. For more information about NDIS\_STATUS\_LINK\_SPEED\_CHANGE, see [OID\_IRDA\_RATE\_SNIFF](/previous-versions/windows/hardware/network/ff560287(v=vs.85)).
+The NDIS 5.*x* or earlier miniport driver supplies a DWORD-type value at the *StatusBuffer* parameter of the [**NdisMIndicateStatus**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatus) function. For more information about NDIS\_STATUS\_LINK\_SPEED\_CHANGE, see [OID\_IRDA\_RATE\_SNIFF](/previous-versions/windows/hardware/network/ff560287(v=vs.85)).
 
 ## Requirements
 
@@ -41,7 +41,7 @@ The NDIS 5.*x* or earlier miniport driver supplies a DWORD-type value at the *St
 
 [**NDIS\_STATUS\_LINK\_STATE**](ndis-status-link-state.md)
 
-[**NdisMIndicateStatus**](/previous-versions/windows/hardware/network/ff553538(v=vs.85))
+[**NdisMIndicateStatus**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatus)
 
 [OID\_GEN\_LINK\_SPEED](./oid-gen-link-speed.md)
 

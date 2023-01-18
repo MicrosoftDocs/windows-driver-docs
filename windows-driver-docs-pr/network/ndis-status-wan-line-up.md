@@ -15,7 +15,7 @@ The NDIS\_STATUS\_WAN\_LINE\_UP status indicates that a WAN-capable miniport dri
 
 NDIS 4.*x* and earlier NDIS WAN miniport drivers use this status indication. NDIS 5.0 and later WAN miniport drivers must use the CoNDIS WAN interface. For more information about the CoNDIS WAN interface, see [Implementing CoNDIS WAN Miniport Drivers (NDIS 5.1)](/previous-versions/windows/hardware/network/ff546752(v=vs.85)).
 
-The *StatusBuffer* parameter of the [**NdisMIndicateStatus**](/previous-versions/windows/hardware/network/ff553538(v=vs.85)) function contains a pointer to an [**NDIS\_MAC\_LINE\_UP**](/previous-versions/windows/hardware/network/ff557058(v=vs.85)) structure.
+The *StatusBuffer* parameter of the [**NdisMIndicateStatus**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatus) function contains a pointer to an [**NDIS\_MAC\_LINE\_UP**](/previous-versions/windows/hardware/network/ff557058(v=vs.85)) structure.
 
 For more information about NDIS\_STATUS\_WAN\_LINE\_UP, see [Line-Up Indication (NDIS 5.1)](/previous-versions/windows/hardware/network/ff549189(v=vs.85)) and [Indicating NDIS WAN Miniport Driver Status (NDIS 5.1)](/previous-versions/windows/hardware/network/ff546867(v=vs.85)).
 
@@ -43,7 +43,7 @@ For more information about NDIS\_STATUS\_WAN\_LINE\_UP, see [Line-Up Indication 
 
 [**NDIS\_MAC\_LINE\_UP**](/previous-versions/windows/hardware/network/ff557058(v=vs.85))
 
-[**NdisMIndicateStatus**](/previous-versions/windows/hardware/network/ff553538(v=vs.85))
+[**NdisMIndicateStatus**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatus)
 
  
 

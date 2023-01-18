@@ -15,7 +15,7 @@ The NDIS\_STATUS\_RING\_STATUS status indicates the ring status of a line. A WAN
 
 NDIS 4.*x* and earlier NDIS WAN miniport drivers use this status indication. NDIS 5.0 and later WAN miniport drivers must use the CoNDIS WAN interface. For more information about the CoNDIS WAN interface, see [Implementing CoNDIS WAN Miniport Drivers (NDIS 5.1)](/previous-versions/windows/hardware/network/ff546752(v=vs.85)).
 
-The *StatusBuffer* parameter of the [**NdisMIndicateStatus**](/previous-versions/windows/hardware/network/ff553538(v=vs.85)) function contains a ULONG value with one of the following status values:
+The *StatusBuffer* parameter of the [**NdisMIndicateStatus**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatus) function contains a ULONG value with one of the following status values:
 
 NDIS\_RING\_LOBE\_WIRE\_FAULT
 
@@ -47,7 +47,7 @@ These values specify ring conditions that are the reason for the status indicati
 ## See also
 
 
-[**NdisMIndicateStatus**](/previous-versions/windows/hardware/network/ff553538(v=vs.85))
+[**NdisMIndicateStatus**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatus)
 
  
 
