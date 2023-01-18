@@ -61,11 +61,13 @@ Supplementary CodeQL CLI documentation can be found at [CodeQL Getting Started](
 ## 1. CodeQL Setup
 
 **For General Use**
+
 | Branch to use | CodeQL CLI version |
 |---------------|--------------------|
 | Main          | [2.6.3](https://github.com/github/codeql-cli-binaries/releases/tag/v2.6.3)              |
 
 **For Windows Hardware Compatibility Program Use**
+
 | Windows Release          | Branch to use | CodeQL CLI version |
 |--------------------------|---------------|--------------------|
 | Windows Server 2022      | WHCP_21H2     | [2.4.6](https://github.com/github/codeql-cli-binaries/releases/tag/v2.4.6)              |
@@ -119,7 +121,7 @@ Supplementary CodeQL CLI documentation can be found at [CodeQL Getting Started](
 
 1. Navigate to the [Microsoft Windows Driver Developer Supplemental Tools repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).
 
-1. [Clone](https://github.com/git-guides/git-clone) the repository in accordance with the branch you need to use. [Find your desired branch in the tables above](#codeql-windows-setup).
+1. [Clone](https://github.com/git-guides/git-clone) the repository in accordance with the branch you need to use. [Find your desired branch in the tables above](#1-codeql-setup).
 
    ```console
    C:\codeql-home\>git clone https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools.git --recursive -b <BRANCH>
@@ -303,7 +305,7 @@ In this example, a small batch file is created in the target location and called
 
 ## Troubleshooting
 
-> If you are certifying with WHCP, the most common issue is version mismatch between HLK version and Windows Release version. Please ensure you are using the HLK version associated with the Windows release you are targeting, the associated branch in the Windows Driver Developer Supplemental Tools repository, and the subsequent CodeQL CLI version. For HLK/Windows Release compatability matrix, see [Windows Hardware Lab Kit](https://learn.microsoft.com/en-us/windows-hardware/test/hlk/) and for Windows Release/Windows Driver Developer Supplemental Tools repo branch/CodeQL CLI version, see the WHCP table in the [CodeQL Setup](#1-codeql-setup) section.
+> If you are certifying with WHCP, the most common issue is version mismatch between HLK version and Windows Release version. Please ensure you are using the HLK version associated with the Windows release you are targeting, the associated branch in the Windows Driver Developer Supplemental Tools repository, and the subsequent CodeQL CLI version. For HLK/Windows Release compatability matrix, see [Windows Hardware Lab Kit](https://learn.microsoft.com/windows-hardware/test/hlk/) and for Windows Release/Windows Driver Developer Supplemental Tools repo branch/CodeQL CLI version, see the WHCP table in the [CodeQL Setup](#1-codeql-setup) section.
 
 ### Errors and Workarounds
 
@@ -325,7 +327,7 @@ The database upgrade command will update a database. Be aware that this is a one
 
 ## Queries and Suites
 
-As part of the [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools), we provide two query suites to simplify the end-to-end driver developer workflow. The *windows_driver_recommended.qls* query suite contains a superset of [all of the queries](#queries) that Microsoft has deemed valuable for driver developers. The *windows_driver_mustfix.qls* query suite contains queries deemed **"Must-Fix"** for WHCP certification. Both the Mist-Fix and Recommended query suites are updated regularly.
+As part of the [Microsoft CodeQL GitHub repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools), we provide two query suites to simplify the end-to-end driver developer workflow. The *windows_driver_recommended.qls* query suite is a superset of all the queries Microsoft has deemed valuable for driver developers. The *windows_driver_mustfix.qls* query suite contains queries deemed **"Must-Fix"** for WHCP certification. Both the Mist-Fix and Recommended query suites are updated regularly.
 
 ### Recommended Fix Queries
 
@@ -378,7 +380,7 @@ The subset of queries below are **Must-Fix** for WHCP certification and are also
 
 ### When will this be required for device certification?
 
-See the [Windows Hardware Compatibility Program Certification Process](https://learn.microsoft.com/en-us/windows-hardware/design/compatibility/whcp-certification-process) to for requirement details.
+See the [Windows Hardware Compatibility Program Certification Process](https://learn.microsoft.com/windows-hardware/design/compatibility/whcp-certification-process) to for requirement details.
 
 ### What is the motivation behind requiring CodeQL be run on driver source code?
 
