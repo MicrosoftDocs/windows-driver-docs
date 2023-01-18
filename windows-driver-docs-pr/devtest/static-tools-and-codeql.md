@@ -305,7 +305,7 @@ In this example, a small batch file is created in the target location and called
 
 ## Troubleshooting
 
-> If you are certifying with WHCP, the most common issue is version mismatch between HLK version and Windows Release version. Please ensure you are using the HLK version associated with the Windows release you are targeting, the associated branch in the Windows Driver Developer Supplemental Tools repository, and the subsequent CodeQL CLI version. For HLK/Windows Release compatability matrix, see [Windows Hardware Lab Kit](https://learn.microsoft.com/windows-hardware/test/hlk/) and for Windows Release/Windows Driver Developer Supplemental Tools repo branch/CodeQL CLI version, see the WHCP table in the [CodeQL Setup](#1-codeql-setup) section.
+> If you are certifying with WHCP, the most common issue is version mismatch between HLK version and Windows Release version. Please ensure you are using the HLK version associated with the Windows release you are targeting, the associated branch in the Windows Driver Developer Supplemental Tools repository, and the subsequent CodeQL CLI version. For HLK/Windows Release compatability matrix, see [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) and for Windows Release/Windows Driver Developer Supplemental Tools repo branch/CodeQL CLI version, see the WHCP table in the [CodeQL Setup](#1-codeql-setup) section.
 
 ### Errors and Workarounds
 
@@ -380,7 +380,7 @@ The subset of queries below are **Must-Fix** for WHCP certification and are also
 
 ### When will this be required for device certification?
 
-See the [Windows Hardware Compatibility Program Certification Process](https://learn.microsoft.com/windows-hardware/design/compatibility/whcp-certification-process) to for requirement details.
+See the [Windows Hardware Compatibility Program Certification Process](/windows-hardware/design/compatibility/whcp-certification-process) to for requirement details.
 
 ### What is the motivation behind requiring CodeQL be run on driver source code?
 
