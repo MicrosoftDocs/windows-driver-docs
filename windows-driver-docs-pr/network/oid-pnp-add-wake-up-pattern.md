@@ -28,7 +28,7 @@ The number of wake-up patterns that the miniport driver can accept from a protoc
 
 If a protocol driver tries to add a duplicate pattern, the miniport driver should return **NDIS\_STATUS\_INVALID\_DATA** in response to OID\_PNP\_ADD\_WAKE\_UP\_PATTERN.
 
-An intermediate driver in which the upper edge receives this OID request must always propagate the request to the underlying miniport driver by calling [**NdisRequest**](/previous-versions/windows/hardware/network/ff554681(v=vs.85)) or [**NdisCoRequest**](/previous-versions/windows/hardware/network/ff551877(v=vs.85)).
+An intermediate driver in which the upper edge receives this OID request must always propagate the request to the underlying miniport driver by calling [**NdisRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisrequest) or [**NdisCoRequest**](/previous-versions/windows/hardware/network/ff551877(v=vs.85)).
 
 ## Requirements
 

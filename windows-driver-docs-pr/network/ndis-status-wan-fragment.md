@@ -15,7 +15,7 @@ The NDIS\_STATUS\_WAN\_FRAGMENT status indicates that a WAN-capable miniport dri
 
 NDIS 4.*x* and earlier NDIS WAN miniport drivers use this status indication. NDIS 5.0 and later miniport drivers should use the CoNDIS WAN interface. For more information about NDIS\_STATUS\_WAN\_FRAGMENT, see [**NDIS\_STATUS\_WAN\_CO\_FRAGMENT**](ndis-status-wan-co-fragment.md).
 
-The *StatusBuffer* parameter of the [**NdisMIndicateStatus**](/previous-versions/windows/hardware/network/ff553538(v=vs.85)) function contains a pointer to an [**NDIS\_MAC\_FRAGMENT**](/previous-versions/windows/hardware/network/ff557055(v=vs.85)) structure. NDIS\_MAC\_FRAGMENT identifies a particular link and describes the reason that the partial packet was received.
+The *StatusBuffer* parameter of the [**NdisMIndicateStatus**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatus) function contains a pointer to an [**NDIS\_MAC\_FRAGMENT**](/previous-versions/windows/hardware/network/ff557055(v=vs.85)) structure. NDIS\_MAC\_FRAGMENT identifies a particular link and describes the reason that the partial packet was received.
 
 For more information about NDIS\_STATUS\_WAN\_FRAGMENT, see [Indicating NDIS WAN Miniport Driver Status (NDIS 5.1)](/previous-versions/windows/hardware/network/ff546867(v=vs.85)).
 
@@ -45,7 +45,7 @@ For more information about NDIS\_STATUS\_WAN\_FRAGMENT, see [Indicating NDIS WAN
 
 [**NDIS\_STATUS\_WAN\_CO\_FRAGMENT**](ndis-status-wan-co-fragment.md)
 
-[**NdisMIndicateStatus**](/previous-versions/windows/hardware/network/ff553538(v=vs.85))
+[**NdisMIndicateStatus**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatus)
 
  
 
