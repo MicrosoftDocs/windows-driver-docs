@@ -1,7 +1,7 @@
 ---
 title: Sample UMDF Drivers
 description: This topic lists available User-Mode Driver Framework (UMDF) sample drivers that you can download from the Windows driver samples repository on GitHub.
-ms.date: 04/20/2017
+ms.date: 01/17/2023
 ---
 
 # Sample UMDF Drivers
@@ -29,7 +29,7 @@ Earlier versions of driver samples are archived at [Windows 8.1 driver samples]
 -   [UMDF Driver Skeleton Sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/umdfSkeleton)
 -   [UMDF Echo Sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/echo/umdf)
 -   [UMDF SocketEcho Sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/echo/umdfSocketEcho)
--   [Virtual serial driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/serial/VirtualSerial)
+-   [Virtual serial 2 driver sample](https://github.com/microsoft/Windows-driver-samples/tree/main/serial/VirtualSerial2)
 -   [Windows Biometric Driver Samples](https://github.com/Microsoft/Windows-driver-samples/tree/main/biometrics)
 -   [WPD basic-hardware sample driver](https://github.com/Microsoft/Windows-driver-samples/tree/main/wpd/WpdBasicHardwareDriver)
 -   [WPD multi-transport sample driver](https://github.com/Microsoft/Windows-driver-samples/tree/main/wpd/WpdMultiTransportDriver)
