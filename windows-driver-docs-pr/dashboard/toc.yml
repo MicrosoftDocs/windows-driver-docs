@@ -118,10 +118,26 @@
         href: pct-machines-with-at-least-one-audio-stream-initialization-failure.md
       - name: "Stream Initialization: Percent of machines with subpar stream initialization success rate"
         href: pct-machines-with-subpar-stream-initialization-success-rate.md
+      - name: "Stream Initialization: Percent of machine endpoints with at least one audio stream initialization failure"
+        href: pct-machine-endpoints-with-at-least-one-audio-stream-initialization-failure-per-driver.md
+      - name: "Stream Initialization: Percent of machine endpoints with subpar stream initialization success rate"
+        href: pct-machine-endpoints-with-subpar-stream-initialization-success-rate.md
       - name: "Audio Reliabity: Percent of machines with at least one audio crash"
         href: pct-machines-with-at-least-one-audio-crash.md
       - name: "Audio Reliability: Percent of machines with at least one audio hang"
         href: pct-machines-with-at-least-one-audio-hang.md
+      -  name: "Render Stream Initialization: Percent of machine endpoints with at least one audio render stream initialization failure"
+        href: pct-machine-endpoints-with-at-least-one-audio-render-stream-initialization-failure-per-driver.md
+      - name: "Render Stream Initialization: Percent of machines with at least one audio render stream initialization failure per Driver"
+        href: pct-machines-with-at-least-one-audio-render-stream-initialization-failure.md
+      - name: "Capture Stream Initialization: Percent of machine endpoints with at least one audio capture stream initialization failure"
+        href: pct-machine-endpoints-with-at-least-one-audio-capture-stream-initialization-failure-per-driver.md 
+      - name: "Capture Stream Initialization: Percent of machines with at least one audio capture stream initialization failure per Driver"
+        href: pct-machines-with-at-least-one-audio-capture-stream-initialization-failure.md
+      - name: "Audio Reliability: Percentage of machine endpoints with at least one audio crash"
+        href: pct-machine-endpoints-with-at-least-one-audio-crash.md
+      - name: "Audio Reliability: Percentage of machine endpoints with at least one audio hang"
+        href: pct-machine-endpoints-with-at-least-one-audio-hang.md
     - name: "Camera"
       items:
       - name: "Camera measures"
@@ -240,22 +256,10 @@
         href: pct-wi-fi-sessions-ending-in-unexpected-disconnect.md
     - name: "Experimental Measures"
       items:
-      - name: "Audio - Render Stream Initialization: Percent of machine endpoints with at least one audio render stream initialization failure"
-        href: pct-machine-endpoints-with-at-least-one-audio-render-stream-initialization-failure-per-driver.md
-      - name: "Audio - Render Stream Initialization: Percent of machines with at least one audio render stream initialization failure per Driver"
-        href: pct-machines-with-at-least-one-audio-render-stream-initialization-failure.md
-      - name: "Audio - Capture Stream Initialization: Percent of machine endpoints with at least one audio capture stream initialization failure"
-        href: pct-machine-endpoints-with-at-least-one-audio-capture-stream-initialization-failure-per-driver.md 
-      - name: "Audio - Capture Stream Initialization: Percent of machines with at least one audio capture stream initialization failure per Driver"
-        href: pct-machines-with-at-least-one-audio-capture-stream-initialization-failure.md
-      - name: "Audio - Stream Initialization: Percent of machine endpoints with at least one audio stream initialization failure"
-        href: pct-machine-endpoints-with-at-least-one-audio-stream-initialization-failure-per-driver.md
-      - name: "Audio - Stream Initialization: Percent of machine endpoints with subpar stream initialization success rate"
-        href: pct-machine-endpoints-with-subpar-stream-initialization-success-rate.md
-      - name: "Audio - Audio Reliability: Percentage of machine endpoints with at least one audio crash"
-        href: pct-machine-endpoints-with-at-least-one-audio-crash.md
-      - name: "Audio - Audio Reliability: Percentage of machine endpoints with at least one audio hang"
-        href: pct-machine-endpoints-with-at-least-one-audio-hang.md
+      - name: "Graphics - Percent of devices with SWDRM playback that triggered the Catalog reload event"
+        href: pct-devices-with-SWDRM-playback-that-triggered-the-catalog-reload-event.md
+      - name: "Audio - Percent of devices with at least one APO disablement in past 7 days"
+        href: pct-machines-with-at-least-one-APO-disablement-in-past-7-days.md
   - name: "Appendix"
     href: measure-appendix.md
   - name: "Glossary"
