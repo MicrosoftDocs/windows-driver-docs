@@ -126,7 +126,7 @@
         href: pct-machines-with-at-least-one-audio-crash.md
       - name: "Audio Reliability: Percent of machines with at least one audio hang"
         href: pct-machines-with-at-least-one-audio-hang.md
-      -  name: "Render Stream Initialization: Percent of machine endpoints with at least one audio render stream initialization failure"
+      - name: "Render Stream Initialization: Percent of machine endpoints with at least one audio render stream initialization failure"
         href: pct-machine-endpoints-with-at-least-one-audio-render-stream-initialization-failure-per-driver.md
       - name: "Render Stream Initialization: Percent of machines with at least one audio render stream initialization failure per Driver"
         href: pct-machines-with-at-least-one-audio-render-stream-initialization-failure.md
