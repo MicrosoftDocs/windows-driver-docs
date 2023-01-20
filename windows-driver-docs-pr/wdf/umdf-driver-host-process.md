@@ -27,7 +27,7 @@ The driver manager can create multiple concurrent instances of Wudfhost.exe, as 
 
 For more about device pooling, see [Using Device Pooling in UMDF Drivers](using-device-pooling-in-umdf-drivers.md).
 
-Within Wudfhost.exe, each UMDF driver runs in its own address space, and is therefore isolated from the application process and other instances of the driver host.
+Each Wudfhost.exe process runs in its own address space, and is therefore isolated from application processes and other instances of the driver host. UMDF drivers running in the same process (*device pooling*) share an address space and are not isolated from each other.
 
 You can load drivers built with UMDF versions 1 and 2 concurrently, either in the same host process or in different host processes. For example, by default, the driver manager would load a UMDF 1.11 driver and a UMDF 2 driver in the same host process on a computer running Windows 8.1 or later.
 

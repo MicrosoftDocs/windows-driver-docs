@@ -1,7 +1,7 @@
 ---
 title: ACX Audio Class Extensions Overview
 description: This topic provides a high level overview of the ACX Audio Class Extensions.
-ms.date: 07/28/2022
+ms.date: 01/19/2023
 ms.localizationpriority: medium
 ---
 
@@ -35,7 +35,7 @@ The audio class extensions (ACX) have the following goals.
 - Allow 3rd party driver to specify the locking mechanism to be used when streaming.
 - Uses the Microsoft component deployment isolation solution that makes drivers/APOs modules self-contained and reusable.
 
-### ACX architecture 
+### ACX architecture
 
 This diagram illustrates the acx architecture showing existing user mode apps and ACX objects in kernel mode and audio hardware at the bottom of the stack. In addition to the ACX objects, the driver developer has access to the WDF objects to take advantage of in their driver code, for example for power management.
 
@@ -45,11 +45,11 @@ This diagram illustrates the acx architecture showing existing user mode apps an
 
 ACX is designed to co-exist with existing audio drivers, to allow for a flexible migration to new ACX drivers.
 
--	Binary compatibility of exiting, unchanged (WDM-based) audio miniport drivers is maintained by existing legacy Windows class drivers. 
--	Only WaveRT based streaming is currently supported by ACX.
--	Legacy PortCls/Ks and new ACX stacks run side-by-side. Using ACX does not force 3rd party to port their current audio drivers to the new model. As the model offers many advantages, 3rd parties may voluntarily opt to use it for their future audio development. 
+- Binary compatibility of exiting, unchanged (WDM-based) audio miniport drivers is maintained by existing legacy Windows class drivers. 
+- Only WaveRT based streaming is currently supported by ACX.
+- Legacy PortCls/Ks and new ACX stacks run side-by-side. Using ACX does not force 3rd party to port their current audio drivers to the new model. As the model offers many advantages, 3rd parties may voluntarily opt to use it for their future audio development. 
 
-## ACX common definitions 
+## ACX common definitions
 
 *Circuit* - A driver component representing a partial or full audio path. The circuit represents an existing endpoint and its capabilities. 
 
@@ -63,7 +63,7 @@ ACX is designed to co-exist with existing audio drivers, to allow for a flexible
 
 *Endpoint Audio Path* - A single or group of Circuit objects connected together to represent a single audio endpoint. The Circuit objects must come from different device stacks belonging to the same or different drivers. 
 
-## Summary of ACX Objects 
+## Summary of ACX Objects
 
 For a summary of the base ACX objects, see [Summary of ACX Objects](acx-summary-of-objects.md).
 
@@ -75,7 +75,7 @@ The sample audio driver, SYSVAD will be updated to make use of ACX. When this sa
 
 Software tracing for drivers is usually based on Event Tracing for Windows (ETW), a kernel-level facility that logs trace messages for both kernel-mode and user-mode processes. As ACX drivers are WDF drivers, all of the WDF logging and eventing capabilities are available for ACX driver developers.
 
-### WPP 
+### WPP
 
 Because ETW can be somewhat complicated to use, most driver developers use the Windows software trace preprocessor (WPP), which simplifies and enhances the process of instrumenting a driver for ETW tracing.
 
@@ -125,10 +125,9 @@ To improve the reliability of your ACX driver consider the following behaviors f
 
 To view trace events in the debugger, use the WMI extension, Wmitrace.dll. It contains a library of functions designed to control and view WMI event tracing. For more information, see [WMI Tracing Extensions (Wmitrace.dll)](../debugger/wmi-tracing-extensions--wmitrace-dll-.md).
 
- 
 ## ACX driver debugging
 
-ACX drivers are WDF drivers, so the debugging techniques described for WDF drivers, apply to ACX drivers. See the following topics for information on debugging WDF drivers. 
+ACX drivers are WDF drivers, so the debugging techniques described for WDF drivers, apply to ACX drivers. See the following topics for information on debugging WDF drivers.
 
 #### General information about the debugging tools
 
@@ -138,7 +137,7 @@ ACX drivers are WDF drivers, so the debugging techniques described for WDF drive
 
 - [Summary of Debugger Extensions in Wdfkd.dll](../wdf/debugger-extensions-for-kmdf-drivers.md)
 
-- This walk through uses the traditional Sysvad audio driver, but illustrates some techniques that may be help to ACX drivers. 
+- This walk through uses the traditional Sysvad audio driver, but illustrates some techniques that may be help to ACX drivers.
 [Debug Drivers - Step by Step Lab (Sysvad Kernel Mode)](../debugger/debug-universal-drivers--kernel-mode-.md)
 
 #### Video Walkthroughs
@@ -198,14 +197,15 @@ Events and requests allow for notification.
 An object bag, which can be used to store and retrieve configuration information and is defined in acxmisc.
 
 - [acxmisc.h](/windows-hardware/drivers/ddi/acxmisc/)
- 
+
 The ACX manager is used for supporting composite audio endpoints. 
 
 - [acxmanager.h](/windows-hardware/drivers/ddi/acxmanager/)
-
 
 ## See also
 
 [Summary of ACX Objects](acx-summary-of-objects.md)
 
 [ACX multi stack cross driver communications](acx-audio-multi-stack.md)
+
+[ACX device enumeration and power management](acx-power-management.md)

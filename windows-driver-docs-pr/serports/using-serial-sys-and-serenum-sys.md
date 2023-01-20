@@ -13,7 +13,7 @@ keywords:
 - lower-level device filter drivers WDK serial devices
 - higher-level device filter drivers WDK serial devices
 - filter drivers WDK serial devices
-ms.date: 04/20/2017
+ms.date: 01/18/2023
 ---
 
 # Using Serial.sys and Serenum.sys
@@ -63,5 +63,4 @@ These samples demonstrates serial drivers.
 - The [Serial](https://github.com/Microsoft/Windows-driver-samples/tree/main/serial/serial) sample builds a function driver for serial devices.
 - The [Serenum](https://github.com/Microsoft/Windows-driver-samples/tree/main/serial/serenum) sample provides Plug and Play functionality of a bus driver for an RS-232 port.
 - A simple virtual serial driver (ComPort) and a controller-less modem driver (FakeModem).
-    -   [The Virtual serial driver sample (UMDF 1.0)](https://github.com/Microsoft/Windows-driver-samples/tree/main/serial/VirtualSerial)
     -   [The Virtual serial2 driver sample (KMDF)](https://github.com/Microsoft/Windows-driver-samples/tree/main/serial/VirtualSerial2)
