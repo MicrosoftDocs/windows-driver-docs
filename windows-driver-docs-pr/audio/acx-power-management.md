@@ -1,7 +1,7 @@
 ---
 title: ACX device enumeration and power management
 description: This topic provides a summary of the ACX power management
-ms.date: 01/19/2023
+ms.date: 01/23/2023
 ms.localizationpriority: medium
 ---
 
@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 This topic discusses ACX  device enumeration, startup and shutdown, and power management. For a general overview of ACX, see [ACX Audio Class Extensions Overview](acx-audio-class-extensions-overview.md).
 
-ACX leverages the WDF KMDF PnP power behavior. For more  information about KMDF power management sequences, see [PnP and Power Management Callback Sequences](/windows-hardware/drivers/ddi/acxdevice/pnp-and-power-management-callback-sequences).
+ACX leverages the WDF KMDF PnP power behavior. For more  information about KMDF power management sequences, see [PnP and Power Management Callback Sequences](/windows-hardware/drivers/wdf/pnp-and-power-management-callback-sequences).
 
 ## ACX Device enumeration and startup for static audio devices
 
@@ -127,7 +127,7 @@ The sequence of start up for this scenario is:
 
 This section describes power down sequences.
 
-- WDF [DeviceSelfManagedIoSuspend](/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_self_managed_io_suspend) callback. Device-Scoped. This can be invoked for the following reasons:
+- WDF [DeviceSelfManagedIoSuspend](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_self_managed_io_suspend) callback. Device-Scoped. This can be invoked for the following reasons:
     - Device is entering a low power state.
     - The device is being removed, or it was surprise-removed.
     - PnP manager is about to redistribute the system’s hardware resources among system’s attached devices.
@@ -168,7 +168,7 @@ The power down surprise removal callback sequence is identical to the power down
 - EvtIoStop (purge power-managed queues's)
 - EvtDeviceSelfManagedIoFlush (flush I/O buffers)
 
-For more information, see [PnP and Power Management Callback Sequences](/windows-hardware/drivers/ddi/acxdevice/pnp-and-power-management-callback-sequences).
+For more information, see [PnP and Power Management Callback Sequences](/windows-hardware/drivers/wdf/pnp-and-power-management-callback-sequences).
 
 ## ACX device rebalance
 
@@ -242,9 +242,9 @@ ACX leverages the WDF idle management infrastructure. ACX drivers uses the follo
 
 [WdfDeviceAssignS0IdleSettings](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings): this call specifies the type of idle timeout and idle management. The ACX driver is free to use the appropriate setting for its device.
 
-[WdfDeviceStopIdle](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicestopidle.md): this call prevents the device from idling. Note that his call doesn’t block Sx requests. That is, the device goes in Dx independently of the number of active power references when the system goes to a lower power state.
+[WdfDeviceStopIdle](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicestopidle): this call prevents the device from idling. Note that his call doesn’t block Sx requests. That is, the device goes in Dx independently of the number of active power references when the system goes to a lower power state.
 
-[WdfDeviceResumeIdle](/windows-hardware/drivers/ddi//wdfdevice/nf-wdfdevice-wdfdeviceresumeidle.md): this call allows the device to restart its idle timeout.
+[WdfDeviceResumeIdle](/windows-hardware/drivers/ddi//wdfdevice/nf-wdfdevice-wdfdeviceresumeidle): this call allows the device to restart its idle timeout.
 
 In a multi-stack/circuit scenario, different stacks may have different idle timeouts. This is because of the different power settings/requirements of each stack, so different idle timeouts are appropriate.
 
@@ -285,4 +285,4 @@ WDF knows about the D3Cold capabilities of the driver via the WDF_DEVICE_POWER_P
 
 [ACX Audio Class Extensions overview](acx-audio-class-extensions-overview.md)
 
-[PnP and Power Management Callback Sequences](/windows-hardware/drivers/ddi/acxdevice/pnp-and-power-management-callback-sequences)
+[PnP and Power Management Callback Sequences](/windows-hardware/drivers/wdf/pnp-and-power-management-callback-sequences)
