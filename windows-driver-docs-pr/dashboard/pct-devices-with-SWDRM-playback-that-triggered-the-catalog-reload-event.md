@@ -11,7 +11,7 @@ ms.date: 01/19/2023
 
 Devices that experience a Code Integrity catalog reload event when loading binaries into mfpmp.exe, may receive a timeout from Netflix and other applications. This "device based" measure is used to capture this scenario.
 
-DRM (Digital Rights Management) techniques (Software or Hardware) are used during Video Playback on windows devices. We use the set of all devices with SWDRM playback as our sample place to compute the percentage. More information about DRM can be found at [Digital Rights Management - Windows drivers | Microsoft Docs](/windows-hardware/drivers/audio/digital-rights-management).
+DRM (Digital Rights Management) techniques (Software or Hardware) are used during Video Playback on windows devices. We use the set of all devices with SWDRM playback as our sample space to compute the percentage. More information about DRM can be found at [Digital Rights Management - Windows drivers | Microsoft Docs](/windows-hardware/drivers/audio/digital-rights-management).
 
 ## Measure attributes
 
