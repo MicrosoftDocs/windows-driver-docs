@@ -9,7 +9,7 @@ api_name:
 - INF Manufacturer Section
 api_type:
 - NA
-ms.date: 06/15/2022
+ms.date: 01/24/2023
 ---
 
 # INF Manufacturer section
@@ -99,7 +99,7 @@ A number that represents the operating system's major version number. The follow
 
 | Windows version | Major version |
 |--|--|
-| Windows 11 | 10 |
+| Windows 11 (all releases) | 10 |
 | Windows Server 2022 | 10 |
 | Windows Server 2019 | 10 |
 | Windows Server 2016 | 10 |
@@ -122,7 +122,7 @@ A number that represents the operating system's minor version number. The follow
 
 | Windows version | Minor version |
 |--|--|
-| Windows 11 | 0 |
+| Windows 11 (all releases) | 0 |
 | Windows Server 2022 | 0 |
 | Windows Server 2019 | 0 |
 | Windows Server 2016 | 0 |
@@ -191,6 +191,7 @@ The following table defines the build number for the Windows operating system.
 
 | Windows version | Build number |
 |--|--|
+| Windows 11 version 22H2 | 22621 |
 | Windows 11 version 21H2 | 22000 |
 | Windows Server 2022 | 20348 |
 | Windows 10 version 21H2 | 19044 |
