@@ -10,7 +10,7 @@ api_location:
 - Ntddser.h
 api_type:
 - HeaderDef
-ms.date: 10/17/2018
+ms.date: 01/17/2023
 ---
 
 # GUID_DEVINTERFACE_COMPORT
@@ -52,7 +52,7 @@ The system-supplied function driver for serial ports registers an instance of th
 The following samples (on Github) register an instance of this class for a serial port:
 
 -   [The Serial sample](https://go.microsoft.com/fwlink/p/?LinkId=617962)
--   [The Virtual serial driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617963) (UMDF 1.0)
+-   [The Virtual serial driver sample](../wdf/user-mode-driver-framework-design-guide.md) (UMDF 1.0)
 -   [The Virtual serial2 driver sample](https://go.microsoft.com/fwlink/p/?LinkId=722209) (KMDF)
 
 [**GUID_CLASS_COMPORT**](guid-class-comport.md) is an obsolete identifier for this device interface class; for new instances of this class, use GUID_DEVINTERFACE_COMPORT instead.
