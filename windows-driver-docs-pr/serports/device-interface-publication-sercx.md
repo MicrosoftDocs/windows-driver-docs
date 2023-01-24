@@ -8,14 +8,17 @@ ms.date: 01/20/2023
 
 Starting with Windows 10 version 1903 and later, SerCx and SerCx2 include support for publishing a `GUID_DEVINTERFACE_COMPORT` *device interface*. Applications and services on a system are able to use this device interface to interact with the serial port.
 
-A COM port number is not assigned for these devices, and no symbolic link is created - meaning that applications must use the described approach to open the serial port as a device interface, rather than a named COM port.
+This feature can be enabled on SoC-based platforms which feature an integrated UART with a SerCx/SerCx2 client driver, if the UART is exposed as a physical port, or if regular applications (UWP or Win32) need to communicate directly with a device attached to the UART. This is as opposed to [accessing the SerCx/SerCx2 controller via a connection ID](opening-a-sercx2-managed-serial-port.md) - which exclusively enables access to the UART from a dedicated peripheral driver.
 
-## Opting In
+When using this feature for SerCx/SerCx2 managed serial ports, a COM port number is not assigned for these devices, and no symbolic link is created - meaning that applications must use the approach described in this document to open the serial port as a device interface, rather than a named COM port as with other serial devices.
 
-Below are the instructions to opt-in to device interface creation. Note that serial ports are **exclusive**, meaning if the serial port is accessible as a device interface, a connection resource in ACPI should **not** be provided to any other devices - e.g. no `UARTSerialBusV2` resource should be provided to any other devices on the system; the port should be made **exclusively** accessible via the device interface.
+
+## Enabling device interface creation
+
+Below are the instructions to enable device interface creation. Note that serial ports are **exclusive**, meaning if the serial port is accessible as a device interface, a connection resource in ACPI should **not** be provided to any other devices - e.g. no `UARTSerialBusV2` resource should be provided to any other devices on the system; the port should be made **exclusively** accessible via the device interface.
 
 ### ACPI Configuration
-A system manufacturer or integrator may opt-in to this behavior by modifying the ACPI (ASL) definition of the **existing** SerCx/SerCx2 device to add a `_DSD` definition for key-value device properties with UUID `daffd814-6eba-4d8c-8a91-bc9bbf4aa301`. Inside this definition, the property `SerCx-FriendlyName` is defined with a system specific description of the serial port, for example, `UART0`, `UART1`, etc.
+A system manufacturer or integrator may enable this behavior by modifying the ACPI (ASL) definition of the **existing** SerCx/SerCx2 device to add a `_DSD` definition for key-value device properties with UUID `daffd814-6eba-4d8c-8a91-bc9bbf4aa301`. Inside this definition, the property `SerCx-FriendlyName` is defined with a system specific description of the serial port, for example, `UART0`, `UART1`, etc.
 
 Example device definition (excluding vendor specific information necessary to define the device):
 ```
@@ -38,7 +41,7 @@ The specified UUID (`daffd814-6eba-4d8c-8a91-bc9bbf4aa301`) **must** be used, an
 For development purposes, the `SerCx-FriendlyName` may also be configured as a device property in the registry. In an extension INF, or manually, the key `SerCx-FriendlyName` can be added to the device and used by SerCx/SerCx2 to retrieve the friendly name for the device interface.
 
 ## Device Interface
-If a `FriendlyName` is defined using the methods above, SerCx/SerCx2 will publish a `GUID_DEVINTERFACE_COMPORT` *device interface* for the controller. This device interface will set the `DEVPKEY_DeviceInterface_Serial_PortName` property to the specified friendly name, which may be used by applications to locate a specific controller/port.
+If a `FriendlyName` is defined using the methods above, SerCx/SerCx2 will publish a `GUID_DEVINTERFACE_COMPORT` *device interface* for the controller. This device interface will have the `DEVPKEY_DeviceInterface_Serial_PortName` property set to the specified friendly name, which may be used by applications to locate a specific controller/port.
 
 ### Enabling unprivileged access
 By default, the controller/port will be accessible only to privileged users and applications. If access from unprivileged applications is required, the SerCx/SerCx2 client must override the default security descriptor after calling `SerCx2InitializeDeviceInit()` or `SerCxDeviceInitConfig()`.
@@ -94,6 +97,15 @@ For Win32 applications, the device interface is located and accessed using the f
 
 Sample code for this flow:
 ```cpp
+#include <windows.h>
+#include <cfgmgr32.h>
+#include <initguid.h>
+#include <devpropdef.h>
+#include <devpkey.h>
+#include <ntddser.h>
+
+...
+
 DWORD ret;
 ULONG deviceInterfaceListBufferLength;
 
@@ -103,7 +115,7 @@ ULONG deviceInterfaceListBufferLength;
 //
 ret = CM_Get_Device_Interface_List_SizeW(
         &deviceInterfaceListBufferLength,
-        &GUID_DEVINTERFACE_COMPORT,
+        (LPGUID) &GUID_DEVINTERFACE_COMPORT,
         NULL,
         CM_GET_DEVICE_INTERFACE_LIST_PRESENT);
 if (ret != CR_SUCCESS) {
@@ -114,7 +126,7 @@ if (ret != CR_SUCCESS) {
 //
 // Allocate buffer of the determined size.
 //
-PWCHAR deviceInterfaceListBuffer = malloc(deviceInterfaceListBufferLength * sizeof(WCHAR));
+PWCHAR deviceInterfaceListBuffer = (PWCHAR) malloc(deviceInterfaceListBufferLength * sizeof(WCHAR));
 if (deviceInterfaceListBuffer == NULL) {
     // Handle error
     ...
@@ -125,7 +137,7 @@ if (deviceInterfaceListBuffer == NULL) {
 // on the system.
 //
 ret = CM_Get_Device_Interface_ListW(
-        &GUID_DEVINTERFACE_COMPORT,
+        (LPGUID) &GUID_DEVINTERFACE_COMPORT,
         NULL,
         deviceInterfaceListBuffer,
         deviceInterfaceListBufferLength,
@@ -172,7 +184,7 @@ while (*currentInterface) {
         currentInterface,
         &DEVPKEY_DeviceInterface_Serial_PortName,
         &devPropType,
-        devPropBuffer,
+        (PBYTE) devPropBuffer,
         &devPropSize,
         0);
     if (configRet != CR_SUCCESS) {
@@ -227,4 +239,4 @@ currentInterface = NULL;
 ... = ReadFile(portHandle, ..., ..., ..., NULL);
 ```
 
-Note that an application may also [subscribe for notifications of device interface arrival and device removal](../install/registering-for-notification-of-device-interface-arrival-and-device-removal) in order to open or close a handle to the controller/port when the device becomes available or unavailable.
+Note that an application may also [subscribe for notifications of device interface arrival and device removal](../install/registering-for-notification-of-device-interface-arrival-and-device-removal.md) in order to open or close a handle to the controller/port when the device becomes available or unavailable.
