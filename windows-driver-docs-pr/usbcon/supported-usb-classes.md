@@ -58,45 +58,45 @@ The device setup classes are different from USB device classes discussed earlier
   <tbody>
     <tr>
       <td>Audio (01h)</td>
-      <td><strong>Media</strong></br>
+      <td><strong>Media</strong><br/>
       {4d36e96c-e325-11ce-bfc1-08002be10318}</td>
       <td>Usbaudio.sys<p>Wdma\_usb.inf</p></td>
-      <td>Windows 11</br>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)</br>Windows 10 Mobile</br>Windows 8.1</td>
+      <td>Windows 11<br/>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)<br/>Windows 10 Mobile<br/>Windows 8.1</td>
       <td>Microsoft provides support for the USB audio device class by means of the Usbaudio.sys driver. For more information, see "USBAudio Class System Driver" in <a href="/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components">Kernel-Mode WDM Audio Components</a>. For more information about Windows audio support, see the <a href="/windows-hardware/drivers/audio/">Audio Device Technologies for Windows</a> website.</td>
     </tr>
     <tr>
       <td rowspan="5">Communications and CDC Control (02h)</td>
         <tr>
-        <td><strong>Ports</strong></br>{4D36E978-E325-11CE-BFC1-08002BE10318}</td>
-        <td>Usbser.sys</br>Usbser.inf</td>
-        <td>Windows 11</br>Windows 10 for desktop editions</br>Windows 10 Mobile</td>
+        <td><strong>Ports</strong><br/>{4D36E978-E325-11CE-BFC1-08002BE10318}</td>
+        <td>Usbser.sys<br/>Usbser.inf</td>
+        <td>Windows 11<br/>Windows 10 for desktop editions<br/>Windows 10 Mobile</td>
         <td>In Windows 10, a new INF, Usbser.inf, has been added that loads Usbser.sys automatically as the function driver.<p>For more information, see <a href="usb-driver-installation-based-on-compatible-ids.md">USB serial driver (Usbser.sys)</a></p></td>
       </tr>
       <tr>
-        <td><strong>Modem</strong></br>{4D36E96D-E325-11CE-BFC1-08002BE10318}<p>
+        <td><strong>Modem</strong><br/>{4D36E96D-E325-11CE-BFC1-08002BE10318}<p>
         <strong>Note</strong> Supports Subclass 02h (ACM)</td>
-        <td>Usbser.sys</br>Custom INF that references mdmcpq.inf</td>
-        <td>Windows 11</br>Windows 10 for desktop editions</br>Windows 8.1</td>
+        <td>Usbser.sys<br/>Custom INF that references mdmcpq.inf</td>
+        <td>Windows 11<br/>Windows 10 for desktop editions<br/>Windows 8.1</td>
         <td>In Windows 8.1 and earlier versions, Usbser.sys is not automatically loaded. To load the driver, you need to write an INF that references the modem INF (mdmcpq.inf) and includes [Install] and [Needs] sections.<p>You can enable CDC and Wireless Mobile CDC (WMCDC) support by setting a registry value, as described in <a href="support-for-interface-collections.md">Support for the Wireless Mobile Communication Device Class</a>.<p>When CDC support is enabled, the <a href="usb-common-class-generic-parent-driver.md">USB Common Class Generic Parent Driver</a> enumerates interface collections that correspond to CDC and WMCDC Control Models, and assigns physical device objects (PDO) to these collections.</td>
       </tr>
       <tr>
-        <td><strong>Net</strong></br>{4d36e972-e325-11ce-bfc1-08002be10318}</br><strong>Note</strong>   Supports Subclass 0Dh (NCM)</td>
-        <td>UsbNcm.sys</br>UsbNcm.inf</td>
-        <td>Windows 11</br>Windows Server 2022</td>
+        <td><strong>Net</strong><br/>{4d36e972-e325-11ce-bfc1-08002be10318}<br/><strong>Note</strong>   Supports Subclass 0Dh (NCM)</td>
+        <td>UsbNcm.sys<br/>UsbNcm.inf</td>
+        <td>Windows 11<br/>Windows Server 2022</td>
         <td>Microsoft provides the UsbNcm.sys driver to operate devices that comply with <a href="https://www.usb.org/document-library/network-control-model-devices-specification-v10-and-errata-and-adopters-agreement">Usb NCM</a>. The source code for this driver is available at <a href="https://github.com/microsoft/NCM-Driver-for-Windows">NCM-Driver-for-Windows</a>.</td>
       </tr>
       <tr>
-        <td><strong>Net</strong></br>{4d36e972-e325-11ce-bfc1-08002be10318}</br><strong>Note</strong>   Supports Subclass 0Eh (MBIM)</td>
-        <td>cxwmbclass.sys</br>wmbclass.sys</br>Netwmbclass.inf</td>
-        <td>Windows 11</br>Windows 10 for desktop editions</br>Windows 8.1</td>
+        <td><strong>Net</strong><br/>{4d36e972-e325-11ce-bfc1-08002be10318}<br/><strong>Note</strong>   Supports Subclass 0Eh (MBIM)</td>
+        <td>cxwmbclass.sys<br/>wmbclass.sys<br/>Netwmbclass.inf</td>
+        <td>Windows 11<br/>Windows 10 for desktop editions<br/>Windows 8.1</td>
         <td>Microsoft provides the wmbclass.sys driver, for mobile broadband devices. See, <a href="/windows-hardware/drivers/network/mb-interface-model">MB Interface Model</a>.
 </td>
       </tr>
       <tr>
         <td>HID (Human Interface Device) (03h)</td>
-        <td><strong>HIDClass</strong></br>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</td>
-        <td>Hidclass.sys</br>Hidusb.sys</br>Input.inf</td>
-        <td>Windows 11</br>Windows 10 for desktop editions</br>Windows 10 Mobile</br>Windows 8.1</td>
+        <td><strong>HIDClass</strong><br/>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</td>
+        <td>Hidclass.sys<br/>Hidusb.sys<br/>Input.inf</td>
+        <td>Windows 11<br/>Windows 10 for desktop editions<br/>Windows 10 Mobile<br/>Windows 8.1</td>
         <td>Microsoft provides the HID class driver (Hidclass.sys) and the miniclass driver (Hidusb.sys) to operate devices that comply with the <a href="https://go.microsoft.com/fwlink/p/?LinkId=761243">USB HID Standard</a>. For more information, see <a href="/windows-hardware/drivers/hid/hid-architecture">HID Architecture</a> and <a href="/windows-hardware/drivers/hid/minidriver-operations">Minidrivers and the HID class driver</a>. For further information about Windows support for input hardware, see the <a href="/windows-hardware/drivers/hid/">Input and HID - Architecture and Driver Support</a> website.</td>
       </tr>
       <tr>
@@ -109,16 +109,16 @@ The device setup classes are different from USB device classes discussed earlier
       </tr>
     <tr>
       <td>Image (06h)</td>
-      <td><strong>Image</strong></br>{6bdd1fc6-810f-11d0-bec7-08002be2092f}</td>
-      <td>Usbscan.sys</br>Sti.inf</td>
-      <td>Windows 11</br>Windows 10 for desktop editions</br>Windows 8.1</td>
+      <td><strong>Image</strong><br/>{6bdd1fc6-810f-11d0-bec7-08002be2092f}</td>
+      <td>Usbscan.sys<br/>Sti.inf</td>
+      <td>Windows 11<br/>Windows 10 for desktop editions<br/>Windows 8.1</td>
       <td>Microsoft provides the Usbscan.sys driver that manages USB digital cameras and scanners for Windows XP and later operating systems. This driver implements the USB component of the Windows Imaging Architecture (WIA). For more information about WIA, see <a href="/windows-hardware/drivers/image/windows-image-acquisition-drivers">Windows Image Acquisition Drivers</a> and the <a href="/windows-hardware/drivers/image/">Windows Imaging Component</a> website. For a description of the role that Usbscan.sys plays in the WIA, see <a href="/windows-hardware/drivers/image/wia-core-components">WIA Core Components</a>.</td>
     </tr>
     <tr>
       <td>Printer (07h)</td>
       <td><strong>USB</strong><p><strong>Note</strong>   Usbprint.sys enumerates printer devices under the device set up class: <strong>Printer</strong><p> {4d36e979-e325-11ce-bfc1-08002be10318}.</td>
-      <td>Usbprint.sys</br>Usbprint.inf</td>
-      <td>Windows 11</br>Windows 10 for desktop editions</br>Windows 8.1</td>
+      <td>Usbprint.sys<br/>Usbprint.inf</td>
+      <td>Windows 11<br/>Windows 10 for desktop editions<br/>Windows 8.1</td>
       <td>Microsoft provides the Usbprint.sys class driver that manages USB printers. For information about implementation of the printer class in Windows, see the <a href="/windows-hardware/drivers/print/">Printing - Architecture and Driver Support</a> website.</td>
     </tr>
     <tr>
@@ -126,13 +126,13 @@ The device setup classes are different from USB device classes discussed earlier
         <tr>
           <td><strong>USB</strong></td>
           <td>Usbstor.sys</td>
-          <td>Windows 11</br>Windows 10 for desktop editions</br>Windows 10 Mobile</br>Windows 8.1</td>
+          <td>Windows 11<br/>Windows 10 for desktop editions<br/>Windows 10 Mobile<br/>Windows 8.1</td>
           <td>Microsoft provides the Usbstor.sys port driver to manage USB mass storage devices with Microsoft's native storage class drivers. For an example device stack that is managed by this driver, see <a href="/windows-hardware/drivers/storage/device-object-example-for-a-usb-mass-storage-device">Device Object Example for a USB Mass Storage Device</a>. For information about Windows storage support, see the <a href="/windows-hardware/drivers/storage/">Storage Technologies</a> website.</td>
         </tr>
         <tr>
          <td><strong>SCSIAdapter</strong><p>{4d36e97b-e325-11ce-bfc1-08002be10318}</td>
-         <td>SubClass (06) and Protocol (62)</br>Uaspstor.sys</br>Uaspstor.inf</td>
-         <td>Windows 11</br>Windows 10 for desktop editions</br>Windows 10 Mobile</br>Windows 8.1</td>
+         <td>SubClass (06) and Protocol (62)<br/>Uaspstor.sys<br/>Uaspstor.inf</td>
+         <td>Windows 11<br/>Windows 10 for desktop editions<br/>Windows 10 Mobile<br/>Windows 8.1</td>
          <td>Uaspstor.sys is the class driver for SuperSpeed USB devices that support bulk stream endpoints.</td>
         </tr>
     </tr>
@@ -140,13 +140,13 @@ The device setup classes are different from USB device classes discussed earlier
       <td rowspan="3">Hub (09h)</td>
       <td rowspan="3"><strong>USB</strong><p>{36fc9e60-c465-11cf-8056-444553540000}</td>
       <tr>
-      <td>Usbhub.sys</br>Usb.inf</td>
-      <td>Windows 11</br>Windows 10 for desktop editions</br>Windows 10 Mobile</br>Windows 8.1</td>
+      <td>Usbhub.sys<br/>Usb.inf</td>
+      <td>Windows 11<br/>Windows 10 for desktop editions<br/>Windows 10 Mobile<br/>Windows 8.1</td>
       <td>Microsoft provides the Usbhub.sys driver for managing USB hubs. For more information about the relationship between the hub class driver and the USB stack, see <a href="usb-3-0-driver-stack-architecture.md">USB host-side drivers in Windows</a>.
         </td>
       <tr>
-      <td>Usbhub3.sys</br>Usbhub3.inf</td>
-      <td>Windows 11</br>Windows 10 for desktop editions</br>Windows 8.1</td>
+      <td>Usbhub3.sys<br/>Usbhub3.inf</td>
+      <td>Windows 11<br/>Windows 10 for desktop editions<br/>Windows 8.1</td>
       <td>Microsoft provides the Usbhub3.sys driver for managing SuperSpeed (USB 3.0) USB hubs.<p>The driver is loaded when a SuperSpeed hub is attached to an xHCI controller. See <a href="usb-3-0-driver-stack-architecture.md">USB host-side drivers in Windows</a>.</td>
         </tr>
       </tr>
@@ -168,7 +168,7 @@ The device setup classes are different from USB device classes discussed earlier
           <strong>Note</strong> Usbccid.sys driver has been replaced by UMDF driver, WUDFUsbccidDriver.dll.</td>
         </tr>
         <tr>
-           <td>WUDFUsbccidDriver.dll</br>WUDFUsbccidDriver.inf</td>
+           <td>WUDFUsbccidDriver.dll<br/>WUDFUsbccidDriver.inf</td>
            <td>Windows 8.1</td>
            <td>WUDFUsbccidDriver.dll is a user-mode driver for USB CCID Smart Card Reader devices.</td>
         </tr>
@@ -183,10 +183,10 @@ The device setup classes are different from USB device classes discussed earlier
     </tr>
     <tr>
       <td>Video (0Eh)</td>
-      <td><strong>Image</strong></br>{6bdd1fc6-810f-11d0-bec7-08002be2092f}</td>
+      <td><strong>Image</strong><br/>{6bdd1fc6-810f-11d0-bec7-08002be2092f}</td>
       <td>Usbvideo.sys<p>
           Usbvideo.inf</td>
-      <td>Windows 11</br>Windows 10 for desktop editions</td>
+      <td>Windows 11<br/>Windows 10 for desktop editions</td>
       <td>Microsoft provides USB video class support by means of the Usbvideo.sys driver. For more information, see "USB Video Class Driver" under <a href="/windows-hardware/drivers/stream/avstream-minidrivers-design-guide">AVStream Minidrivers</a>.</td>
     </tr>
      <tr>
@@ -215,14 +215,14 @@ The device setup classes are different from USB device classes discussed earlier
       <p><strong>Note</strong>   Supports Subclass 01h and Protocol 01h</td>
       <td>Bluetooth<p>{e0cbf06c-cd8b-4647-bb8a-263b43f0f974}</td>
       <td>Bthusb.sys<p>Bth.inf</td>
-      <td>Windows 11</br>Windows 10 for desktop editions</br>Windows 10 Mobile</td>
+      <td>Windows 11<br/>Windows 10 for desktop editions<br/>Windows 10 Mobile</td>
       <td>Microsoft provides the Bthusb.sys miniport driver to manage USB Bluetooth radios. For more information, see <a href="/previous-versions/windows/hardware/drivers/ff536596(v=vs.85)">Bluetooth Design Guide</a>.</td>
     </tr>     <tr>
       <td>Miscellaneous (EFh)</td>
       <td><strong>Net</strong><p>
 {4d36e972-e325-11ce-bfc1-08002be10318}<p><strong>Note</strong> Supports SubClass 04h and Protocol 01h</td>
-      <td>Rndismp.sys</br>Rndismp.inf</td>
-      <td>Windows 11</br>Windows 10 for desktop editions</br>Windows 8.1</td>
+      <td>Rndismp.sys<br/>Rndismp.inf</td>
+      <td>Windows 11<br/>Windows 10 for desktop editions<br/>Windows 8.1</td>
       <td><p><strong>Note</strong> Microsoft recommends that hardware vendors build USB NCM compatible devices instead. USB NCM is a public USB-IF protocol that offers better throughput performance.</p><p>The RNDIS facility centers the management of all 802-style network cards in a single class driver, Rndismp.sys. For a detailed discussion of remote NDIS, see <a href="/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-">Overview of Remote NDIS</a>. The mapping of remote NDIS to USB is implemented in the Usb8023.sys driver. For further information about networking support in Windows, see <a href="/windows-hardware/drivers/network/">Networking and Wireless Technologies</a>.</td>
     </tr>
     <tr>
@@ -236,7 +236,7 @@ The device setup classes are different from USB device classes discussed earlier
       <td>Vendor Specific (FFh)</td>
       <td>-</td>
       <td>-</td>
-      <td>Windows 11</br>Windows 10 for desktop editions</br>Windows 10 Mobile</td>
+      <td>Windows 11<br/>Windows 10 for desktop editions<br/>Windows 10 Mobile</td>
       <td>Recommended driver: <a href="winusb.md">WinUSB (Winusb.sys)</a></td>
     </tr>
   </tbody>

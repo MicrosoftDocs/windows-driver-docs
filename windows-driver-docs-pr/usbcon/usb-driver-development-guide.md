@@ -43,19 +43,19 @@ You can download official USB specifications from the [Universal Serial Bus Docu
 
 ## Documentation sections
 
-- [Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)</br>Introduces you to USB driver development. Provides information about choosing the most appropriate model for providing a USB driver for your device. Write, build, and install your first skeleton user-mode and kernel-mode USB drivers by using the USB templates included with Microsoft Visual Studio.
+- [Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)<br/>Introduces you to USB driver development. Provides information about choosing the most appropriate model for providing a USB driver for your device. Write, build, and install your first skeleton user-mode and kernel-mode USB drivers by using the USB templates included with Microsoft Visual Studio.
 
-- [USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md)</br>Provides an overview of the USB driver stack architecture.
+- [USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md)<br/>Provides an overview of the USB driver stack architecture.
 
-- [About USB Block Requests (URBs)](communicating-with-a-usb-device.md)</br>Learn how a client driver builds a variable-length data structure called a USB Request Block (URB) to submit requests to the USB driver stack.
+- [About USB Block Requests (URBs)](communicating-with-a-usb-device.md)<br/>Learn how a client driver builds a variable-length data structure called a USB Request Block (URB) to submit requests to the USB driver stack.
 
-- [USB descriptors](usb-descriptors.md)</br>Learn how a client driver builds a variable-length data structure called a USB Request Block (URB) to submit requests to the USB driver stack.
+- [USB descriptors](usb-descriptors.md)<br/>Learn how a client driver builds a variable-length data structure called a USB Request Block (URB) to submit requests to the USB driver stack.
 
-- [Selecting a USB configuration in USB drivers](configuring-usb-devices.md)</br>Device configuration refers to the tasks that the client driver performs to select a USB configuration and an alternate interface in each interface. The section shows the method calls required to select a USB configuration.
+- [Selecting a USB configuration in USB drivers](configuring-usb-devices.md)<br/>Device configuration refers to the tasks that the client driver performs to select a USB configuration and an alternate interface in each interface. The section shows the method calls required to select a USB configuration.
 
-- [Sending USB data transfers in USB client drivers](usb-device-i-o.md)</br>Describes USB pipes, URBs for I/O requests, and how a client driver can use the device driver interfaces (DDIs) to transfer data to and from a USB device.
+- [Sending USB data transfers in USB client drivers](usb-device-i-o.md)<br/>Describes USB pipes, URBs for I/O requests, and how a client driver can use the device driver interfaces (DDIs) to transfer data to and from a USB device.
 
-- [Implementing power management in USB client drivers](usb-power-management.md)</br>Use the power management abilities of USB devices that comply with the Universal Serial Bus (USB) specification have a rich and complex set of power management features.
+- [Implementing power management in USB client drivers](usb-power-management.md)<br/>Use the power management abilities of USB devices that comply with the Universal Serial Bus (USB) specification have a rich and complex set of power management features.
 
 ## Related topics
 

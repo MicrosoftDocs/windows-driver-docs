@@ -106,14 +106,14 @@ Here are the common commands:
 | UCSI command | UcsiControl.exe command |
 |--|--|
 | PPM Reset | **UcsiControl.exe Send 0 1** |
-| Connector Reset | Soft reset: **UcsiControl.exe Send 0 10003** </br></br> Hard reset: **UcsiControl.exe Send 0 810003** |
-| Set Notification Enable | All notifications: **UcsiControl.exe Send 0 ffff0005** </br></br> Only command completion: **UcsiControl.exe Send 0 00010005** </br></br> No notification: **UcsiControl.exe Send 0 00000005** |
+| Connector Reset | Soft reset: **UcsiControl.exe Send 0 10003** <br/><br/> Hard reset: **UcsiControl.exe Send 0 810003** |
+| Set Notification Enable | All notifications: **UcsiControl.exe Send 0 ffff0005** <br/><br/> Only command completion: **UcsiControl.exe Send 0 00010005** <br/><br/> No notification: **UcsiControl.exe Send 0 00000005** |
 | Get Capability | **UcsiControl.exe Send 0 6** |
 | Get Connector Capability | **UcsiControl.exe Send 0 10007** |
-| Set UOM | DFP: **UcsiControl.exe Send 0 810008** </br></br> UFP: **UcsiControl.exe Send 0 1010008** </br></br> DRP: **UcsiControl.exe Send 0 2010008** |
-| Set UOR | DFP: **UcsiControl.exe Send 0 810009** </br></br> UFP: **UcsiControl.exe Send 0 1010009** </br></br> Accept: **UcsiControl.exe Send 0 2010009** |
-| Set PDR | Provider: **UcsiControl.exe Send 0 81000B** </br></br> Consumer: **UcsiControl.exe Send 0 101000B** </br></br> Accept: **UcsiControl.exe Send 0 201000B** |
-| Get PDOs | Local Source: **UcsiControl.exe Send 7 00010010** </br></br> Local Sink: **UcsiControl.exe Send 3 00010010** </br></br> Remote Source: **UcsiControl.exe Send 7 00810010** </br></br> Remote Sink: **UcsiControl.exe Send 3 00810010** |
+| Set UOM | DFP: **UcsiControl.exe Send 0 810008** <br/><br/> UFP: **UcsiControl.exe Send 0 1010008** <br/><br/> DRP: **UcsiControl.exe Send 0 2010008** |
+| Set UOR | DFP: **UcsiControl.exe Send 0 810009** <br/><br/> UFP: **UcsiControl.exe Send 0 1010009** <br/><br/> Accept: **UcsiControl.exe Send 0 2010009** |
+| Set PDR | Provider: **UcsiControl.exe Send 0 81000B** <br/><br/> Consumer: **UcsiControl.exe Send 0 101000B** <br/><br/> Accept: **UcsiControl.exe Send 0 201000B** |
+| Get PDOs | Local Source: **UcsiControl.exe Send 7 00010010** <br/><br/> Local Sink: **UcsiControl.exe Send 3 00010010** <br/><br/> Remote Source: **UcsiControl.exe Send 7 00810010** <br/><br/> Remote Sink: **UcsiControl.exe Send 3 00810010** |
 | Get Connector Status | **UcsiControl.exe Send 0 010012** |
 | Get Error Status | **UcsiControl.exe Send 0 13** |
 
