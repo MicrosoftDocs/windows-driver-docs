@@ -1,20 +1,21 @@
 ---
 title: Porting an INF to follow driver package isolation
-description: This page provides tips on how to port an INF from old syntax to conform to driver package isolation
-ms.date: 09/30/2022
+description: This article provides tips on how to port an INF from old syntax to conform to driver package isolation
+ms.date: 01/26/2023
 ---
 
 # Porting an INF to follow driver package isolation
 
-This page is intended to be a quick look up guide to help you update an INF file to follow [driver package isolation](driver-isolation.md) as part of updating your driver package to be a [Windows Driver](getting-started-with-windows-drivers.md). The following sections provide examples of some of the more common things you may have in your driver package INF file with references to information on how to update those to be driver package isolation compliant.  If your driver package needs to support the old way of doing something for older operating system versions while using the new way on newer operating system versions, see [Combining Platform Extensions with Operating System Versions](../install/combining-platform-extensions-with-operating-system-versions.md) for how to achieve that in an INF.
+This article is intended to be a quick lookup guide to help you update an INF file to follow [driver package isolation](driver-isolation.md) as part of updating your driver package to be a [Windows Driver](getting-started-with-windows-drivers.md). The following sections provide examples of some of the more common things you may have in your driver package INF file with references to information on how to update those to be driver package isolation compliant.  If your driver package needs to support the old way of doing something for older operating system versions while using the new way on newer operating system versions, see [Combining Platform Extensions with Operating System Versions](../install/combining-platform-extensions-with-operating-system-versions.md) for how to achieve that in an INF.
 
-## DestinationDirs is not DIRID 13
+## DestinationDirs isn't DIRID 13
 
-If your [DestinationDirs section](../install/inf-destinationdirs-section.md) specifies a destination for files that is not [DIRID](../install/using-dirids.md) 13, then the INF is not compliant with driver package isolation. All files in the driver package must be [run from the Driver Store](run-from-driver-store.md) which means using DIRID 13. Note that this may require updates to more than just the DestinationDirs section.  Other operations performed by the INF that refer to files payloaded by the INF may need updating also. For example, you may need to update the ServiceBinary directive in a service install section referenced by an AddService directive or a registry value written by an AddReg directive. In general, run from Driver Store is supported on Windows 10 1709 and later versions of Windows, but some device stacks may not support files that plug into those stacks being run from the Driver Store until a later release.  See [run from the Driver Store](run-from-driver-store.md) for more details.
+If your [DestinationDirs section](../install/inf-destinationdirs-section.md) specifies a destination for files that isn't [DIRID](../install/using-dirids.md) 13, then the INF isn't compliant with driver package isolation. All files in the driver package must be [run from the Driver Store](run-from-driver-store.md) which means using DIRID 13. This may require updates to more than just the DestinationDirs section.  Other operations performed by the INF that refer to files payloaded by the INF may need updating also. For example, you may need to update the ServiceBinary directive in a service install section referenced by an AddService directive or a registry value written by an AddReg directive. In general, run from Driver Store is supported on Windows 10 1709 and later versions of Windows, but some device stacks may not support files that plug into those stacks being run from the Driver Store until a later release.  For more information, see [run from the Driver Store](run-from-driver-store.md).
 
 ## Using AddReg to register ETW providers and EventLog channels
 
-If your INF uses an AddReg directive to register an ETW provider and EventLog channels, then the INF is not compliant with driver package isolation.  For example, your INF may have:
+If your INF uses an AddReg directive to register an ETW provider and EventLog channels, then the INF isn't compliant with driver package isolation.  For example, your INF may have:
+
 ```inf
 HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\ExampleProvider/Analytic", "OwningPublisher", 0x0, "{35356277-0b54-43da-b324-671006d74759}"
 HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\ExampleProvider/Analytic", "Enabled", 0x00010001, 1
@@ -28,10 +29,11 @@ HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers\{35356277-0b54
 HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers\{35356277-0b54-43da-b324-671006d74759}\ChannelReferences\0", , 0x0, "ExampleProvider/Analytic"
 HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers\{35356277-0b54-43da-b324-671006d74759}\ChannelReferences\0", "Id", 0x00010001, 16
 HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers\{35356277-0b54-43da-b324-671006d74759}\ChannelReferences\0", "Flags", 0x00010001, 0
-HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers\{35356277-0b54-43da-b324-671006d74759}\ChannelReferences", Count, 0x00010001, 1 
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers\{35356277-0b54-43da-b324-671006d74759}\ChannelReferences", Count, 0x00010001, 1
 ```
 
 Instead of using an AddReg to register ETW providers and EventLog channels, they should be registered using an [AddEventProvider directive](../install/inf-addeventprovider-directive.md) from a [DDInstall.Events section](../install/inf-ddinstall-events-section.md). For example:
+
 ```inf
 [ExampleDDInstall.Events]
 AddEventProvider={35356277-0b54-43da-b324-671006d74759}, Example_EVvntProvider_Inst
@@ -53,7 +55,8 @@ Using an [AddEventProvider directive](../install/inf-addeventprovider-directive.
 
 ## Using AddReg to register an AutoLogger
 
-If your INF uses an AddReg directive to register or modify an ETW AutoLogger, then the INF is not compliant with driver package isolation. For example, your INF may have:
+If your INF uses an AddReg directive to register or modify an ETW AutoLogger, then the INF isn't compliant with driver package isolation. For example, your INF may have:
+
 ```inf
 HKLM,SYSTEM\CurrentControlSet\Control\WMI\Autologger\ExampleAutoLogger, BufferSize, %REG_DWORD%, 0x00000040
 HKLM,SYSTEM\CurrentControlSet\Control\WMI\Autologger\ExampleAutoLogger, GUID, %REG_SZ%, "{6f1373c7-eec8-495c-bfe5-1270336368df}"
@@ -66,6 +69,7 @@ HKLM,SYSTEM\CurrentControlSet\Control\WMI\Autologger\ExampleAutoLogger\{35356277
 ```
 
 Instead of using an AddReg to register or update an AutoLogger, it should be registered or updated using an [AddAutoLogger or UpdateAutoLogger directive](../install/inf-addupdateautologger-directive.md) from a [DDInstall.Events section](../install/inf-ddinstall-events-section.md). For example:
+
 ```inf
 [ExampleDDInstall.Events]
 AddAutoLogger=ExampleAutoLogger,{6f1373c7-eec8-495c-bfe5-1270336368df},Example_AutoLogger_Inst
@@ -85,9 +89,38 @@ MatchAnyKeyword=0
 
 Using an [AddAutoLogger or UpdateAutoLogger directive](../install/inf-addupdateautologger-directive.md) from a [DDInstall.Events section](../install/inf-ddinstall-events-section.md) is supported on Windows 11 and later versions of Windows.
 
+## Using AddReg to add an entry to the RunOnce key
+
+If your INF uses an AddReg directive to add an entry to the RunOnce key, then the INF isn't compliant with driver package isolation. For example, your INF may have:
+
+```inf
+[ExampleDDInstall]
+AddReg = Example_Registry
+
+[Example_Registry]
+HKLM, Software\Microsoft\Windows\CurrentVersion\RunOnce, ExampleEntry, ,"application.exe"
+```
+
+This isn't supported. An INF shouldn't be modifying global registry entries.  If a one-time setup action is needed when the driver package is installed, you can use an [AddSoftware directive](../install/inf-addsoftware-directive.md) from within a [component INF file](../install/using-a-component-inf-file.md) to launch it.  This is only for non-critical actions.  Critical functionality for the device or devices installed with this driver package shouldn't depend on actions being run that are external to the device installation.
+
+## Using AddReg to add an entry to the Run key
+
+If your INF uses an AddReg directive to add an entry to the Run key, then the INF isn't compliant with driver package isolation. For example, your INF may have:
+
+```inf
+[ExampleDDInstall]
+AddReg = Example_Registry
+
+[Example_Registry]
+HKLM, Software\Microsoft\Windows\CurrentVersion\Run, ExampleEntry, ,"application.exe"
+```
+
+This isn't supported. An INF shouldn't be modifying global registry entries.  If the Run entry is to add value add software to the system, your application should be a Universal Windows Platform application and installed using an [AddSoftware directive](../install/inf-addsoftware-directive.md) from a [DDInstall.Software section](../install/inf-ddinstall-software-section.md). For more information, see [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md).  If this software is a service that doesn't need to present any UI, then a Win32 service can be registered from the driver package with an [AddService directive](../install/inf-addservice-directive.md). When registering a service that is associated with a device, the service should only be running when the device is present.  The service should have a start type of 'demand start' and should use an AddTrigger directive from the service install section to set up the triggers that will cause the service to be started when the device is present on the system.  This is done by identifying a device interface that the driver on the device will expose and using the AddTrigger directive to specify that the service should be started when that hardware appears.  At runtime, the service should monitor for the device going away.  If the device is removed from the system so the service doesn't need to continue running, the service should stop itself. To register for device interface arrival and removal notifications, see [CM_Register_Notification](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_register_notification).
+
 ## CoInstaller that launches UI
 
-If your INF uses a CoInstaller to install an application that the user should interact with, then the INF is not compliant with driver package isolation. For example, your INF may register a CoInstaller like this:
+If your INF uses a CoInstaller to install an application that the user should interact with, then the INF isn't compliant with driver package isolation. For example, your INF may register a CoInstaller like this:
+
 ```inf
 [ExampleDDInstall.CoInstallers]
 CopyFiles = CoInstallerCopyFilesSection
@@ -100,24 +133,26 @@ ExampleCoInstall.dll
 HKR,,CoInstallers32,0x00010000,"ExampleCoInstall.dll,ExampleCoInstallEntryPoint"
 ```
 
-Instead, your application should be a Universal Windows Platform application and installed using an [AddSoftware directive](../install/inf-addsoftware-directive.md) from a [DDInstall.Software section](../install/inf-ddinstall-software-section.md). See [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md) for more information. An [AddSoftware directive](../install/inf-addsoftware-directive.md) is supported on Windows 10 1703 and later versions of Windows.
+Instead, your application should be a Universal Windows Platform application and installed using an [AddSoftware directive](../install/inf-addsoftware-directive.md) from a [DDInstall.Software section](../install/inf-ddinstall-software-section.md). For more information, see [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md). An [AddSoftware directive](../install/inf-addsoftware-directive.md) is supported on Windows 10 1703 and later versions of Windows.
 
-## Using AddReg to modify a service that is not added by the INF
+## Using AddReg to modify a service that isn't added by the INF
 
-If your INF uses an AddReg directive to modify the state of a service that is not added by an AddService directive in your INF, then the INF is not compliant with driver package isolation.  For example, your INF may have:
+If your INF uses an AddReg directive to modify the state of a service that isn't added by an AddService directive in your INF, then the INF isn't compliant with driver package isolation.  For example, your INF may have:
+
 ```inf
 [ExampleDDInstall]
-AddReg= Example_Registry
+AddReg = Example_Registry
 
-[Example_ Registry]
+[Example_Registry]
 HKLM,SYSTEM\CurrentControlSet\Services\ServiceNotCreatedByThisInf\ExampleKey, ExampleValue, %REG_DWORD%, 1
 ```
 
-This is not supported. An INF should only be changing settings on services created by that INF and the INF should remove this AddReg.
+This isn't supported. An INF should only be changing settings on services created by that INF and the INF should remove this AddReg.
 
 ## Using AddReg to modify state in the root of a service
 
-If your INF uses an AddReg directive to create keys or values in the root of a service’s state, then the INF is not compliant with driver package isolation.  For example, your INF may have:
+If your INF uses an AddReg directive to create keys or values in the root of a service's state, then the INF isn't compliant with driver package isolation.  For example, your INF may have:
+
 ```inf
 [ExampleDDInstall.Services]
 AddService = ExampleService,0x2,Example_Service_Inst
@@ -135,11 +170,12 @@ HKR,,ExampleValue,%REG_DWORD%,0x00000040
 HKR,CustomSubkey,ExampleValue,%REG_DWORD%,0x00000040
 ```
 
-To be driver package isolation compliant, an AddReg directive supplying service registry keys and values can only modify keys and values under the service’s Parameters subkey.  The settings need to be moved under the service’s Parameters subkey and the Parameters subkey can be accessed at runtime with [IoOpenDriverRegistryKey](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) using a RegKeyType of DriverRegKeyParameters. IoOpenDriverRegistryKey is supported on Windows 10 1803 and later versions of Windows.
+To be driver package isolation compliant, an AddReg directive supplying service registry keys and values can only modify keys and values under the service's Parameters subkey.  The settings need to be moved under the service's Parameters subkey and the Parameters subkey can be accessed at runtime with [IoOpenDriverRegistryKey](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendriverregistrykey) using a RegKeyType of DriverRegKeyParameters. IoOpenDriverRegistryKey is supported on Windows 10 1803 and later versions of Windows.
 
 ## Using HKCR AddReg to register an APO
 
-If your INF uses an AddReg directive with an HKCR registry root to register an Audio Processing Object (APO), then the INF is not compliant with driver package isolation. For example, your INF may have:
+If your INF uses an AddReg directive with an HKCR registry root to register an Audio Processing Object (APO), then the INF isn't compliant with driver package isolation. For example, your INF may have:
+
 ```inf
 HKCR,AudioEngine\AudioProcessingObjects\%EXAMPLE_CLSID%, "FriendlyName", , %APO_FriendlyName%
 HKCR,AudioEngine\AudioProcessingObjects\%EXAMPLE_CLSID%, "Copyright", , %MfgName%
@@ -155,8 +191,8 @@ HKCR,AudioEngine\AudioProcessingObjects\%EXAMPLE_CLSID%, "NumAPOInterfaces", 0x0
 HKCR,AudioEngine\AudioProcessingObjects\%EXAMPLE_CLSID%, "APOInterface0", , "{b0a50980-ded6-4f45-84cb-19d2d1245f6d}"
 ```
 
-Instead, the APO registration information should be in a section referenced by an AddReg directive from a DDInstall section. The HKCR registry root should be changed to an HKR registry root to put the settings relative to the device’s “software” (aka “driver”) registry state location.  See [Registering APOs for Processing Modes and Effects in the INF File](../audio/implementing-audio-processing-objects.md#registering-apos-for-processing-modes-and-effects-in-the-inf-file) for more information.
+Instead, the APO registration information should be in a section referenced by an AddReg directive from a DDInstall section. The HKCR registry root should be changed to an HKR registry root to put the settings relative to the device's "software" (also known as "driver") registry state location. For more information, see [Registering APOs for Processing Modes and Effects in the INF File](../audio/implementing-audio-processing-objects.md#registering-apos-for-processing-modes-and-effects-in-the-inf-file).
 
 ## UMDF driver version is less than 2
 
-If your driver package payloads a [User-Mode Driver Framework (UMDF)](../wdf/getting-started-with-umdf-version-2.md) driver that uses a UMDF version earlier than version 2, then it is not compliant with “Windows Drivers”.  See [Porting a Driver from UMDF 1 to UMDF 2](../wdf/porting-a-driver-from-umdf-1-to-umdf-2.md) for more information on how to move your UMDF driver to a more recent UMDF version.
+If your driver package payloads a [User-Mode Driver Framework (UMDF)](../wdf/getting-started-with-umdf-version-2.md) driver that uses a UMDF version earlier than version 2, then it isn't compliant with "Windows Drivers". For more information on how to move your UMDF driver to a more recent UMDF version, see [Porting a Driver from UMDF 1 to UMDF 2](../wdf/porting-a-driver-from-umdf-1-to-umdf-2.md).
