@@ -70,18 +70,18 @@ The _models-section-name_ entries in the **Manufacturer** section can be decorat
 For Windows XP to Windows 10, version 1511, the format of _TargetOSVersion_ decoration is as follows:
 
 ```inf
-nt[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.SuiteMask]]]]
+NT[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.SuiteMask]]]]
 ```
 
 Starting with Windows 10, version 1607 (Build 14310 and later), the format of the _TargetOSVersion_ decoration is as follows:
 
 ```inf
-nt[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.[SuiteMask][.[BuildNumber]]]]]
+NT[Architecture][.[OSMajorVersion][.[OSMinorVersion][.[ProductType][.[SuiteMask][.[BuildNumber]]]]]
 ```
 
 Each field is defined as follows:
 
-**nt**  
+**NT**  
 Specifies the target operating system is NT-based. Windows 2000 and later versions of Windows are all NT-based.
 
 _Architecture_  
@@ -211,7 +211,7 @@ The following table defines the build number for the Windows operating system.
 For more information about the _TargetOSVersion_ decoration, see [Combining Platform Extensions with Operating System Versions](combining-platform-extensions-with-operating-system-versions.md).
 
 > [!IMPORTANT]
-> We highly recommend that you always decorate _models-section-name_ entries in the **Manufacturer** and [**_Models_**](inf-models-section.md) sections with platform extensions for target operating systems of Windows XP or later versions of Windows. For x86-based hardware platforms, you should avoid the use of the **.nt** platform extension and use **.ntx86** instead.
+> We highly recommend that you always decorate _models-section-name_ entries in the **Manufacturer** and [**_Models_**](inf-models-section.md) sections with platform extensions for target operating systems of Windows XP or later versions of Windows. For x86-based hardware platforms, you should avoid the use of the **.NT** platform extension and use **.NTx86** instead.
 
 If your INF contains **Manufacturer** section entries with decorations, it must also include [**INF _Models_ sections**](inf-models-section.md) with names that match the operating system decorations. For example, if an INF contains the following **Manufacturer** section:
 
