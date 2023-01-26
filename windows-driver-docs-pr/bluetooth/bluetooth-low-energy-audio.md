@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Low Energy (LE) audio
 description: This article provides an overview of Bluetooth LE audio introduced in Windows 11.
-ms.date: 01/18/2023
+ms.date: 01/26/2023
 ---
 
 # Bluetooth Low Energy (LE) audio
@@ -136,229 +136,204 @@ Bluetooth LE Audio requires render audio formats to be declared for the followin
 - Communications (AUDIO_SIGNALPROCESSINGMODE_COMMUNICATIONS)
   - This mode is used for bidirectional scenarios, such as voice calls.
 
-The complete list of formats for each signal processing mode is below.
+The following tables are lists of formats for each use case and signal processing mode.
 
-<table>
-  <tr>
-    <td width=126 rowspan=2 valign=top style='width:94.25pt;border:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-    <b>Signal Processing Mode</b>
-    </td>
-    <td width=146 rowspan=2 valign=top style='width:109.8pt;border:solid black 1.0pt;
-  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
-      <b>Use Cases</b>
-    </td>
-    <td width=447 colspan=6 valign=top style='width:335.45pt;border:solid black 1.0pt;
-  border-left:none;padding:0in 5.4pt 0in 5.4pt'>
-      <b>Audio formats ordered from most preferred to
-  least preferred</b>
-    </td>
-  </tr>
-  <tr>
-  <td width=80 valign=top style='width:59.95pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <b><i>Sampling Frequency</i></b>
-  </td>
-  <td width=66 valign=top style='width:49.4pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <b><i>Channel Count</i></b>
-  </td>
-  <td width=52 valign=top style='width:39.2pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <b><i>Bit Depth</i></b>
-  </td>
-  <td width=71 valign=top style='width:52.9pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <b><i>Frame Duration</i></b>
-  </td>
-  <td width=63 valign=top style='width:47.4pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p><b><i>Audio Data Rate</i></b></p>
-  </td>
-  <td width=115 valign=top style='width:86.6pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p><b><i>BAP Codec Configuration ID (Table 3.11 of the BAP
-  Specification)</i></b></p>
-  </td>
- </tr>
- <tr>
-  <td width=126 rowspan=6 valign=top style='width:94.25pt;border:solid black 1.0pt;
-  border-top:none;padding:0in 5.4pt 0in 5.4pt'>
-  <p>Default</p>
-  </td>
-  <td width=146 rowspan=6 valign=top style='width:109.8pt;border-top:none;
-  border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p>Voice recorder, VOIP calls, or video game audio
-  with voice chat.</p>
-  </td>
-  <td width=80 valign=top style='width:59.95pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p>32 kHz</p>
-  </td>
-  <td width=66 valign=top style='width:49.4pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>1</p>
-  </td>
-  <td width=52 valign=top style='width:39.2pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>16</p>
-  </td>
-  <td width=71 valign=top style='width:52.9pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>7.5ms</p>
-  </td>
-  <td width=63 valign=top style='width:47.4pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>64 kbps</p>
-  </td>
-  <td width=115 valign=top style='width:86.6pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p>32_1</p>
-  </td>
- </tr>
- <tr>
-  <td width=80 valign=top style='width:59.95pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p>32 kHz</p>
-  </td>
-  <td width=66 valign=top style='width:49.4pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>1</p>
-  </td>
-  <td width=52 valign=top style='width:39.2pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>16</p>
-  </td>
-  <td width=71 valign=top style='width:52.9pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>10ms</p>
-  </td>
-  <td width=63 valign=top style='width:47.4pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>64 kbps</p>
-  </td>
-  <td width=115 valign=top style='width:86.6pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p>32_2</p>
-  </td>
- </tr>
- <tr>
-  <td width=80 valign=top style='width:59.95pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p>24 kHz</p>
-  </td>
-  <td width=66 valign=top style='width:49.4pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>1</p>
-  </td>
-  <td width=52 valign=top style='width:39.2pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>16</p>
-  </td>
-  <td width=71 valign=top style='width:52.9pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>7.5ms</p>
-  </td>
-  <td width=63 valign=top style='width:47.4pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>48 kbps</p>
-  </td>
-  <td width=115 valign=top style='width:86.6pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p>24_1</p>
-  </td>
- </tr>
- <tr>
-  <td width=80 valign=top style='width:59.95pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p>24 kHz</p>
-  </td>
-  <td width=66 valign=top style='width:49.4pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>1</p>
-  </td>
-  <td width=52 valign=top style='width:39.2pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>16</p>
-  </td>
-  <td width=71 valign=top style='width:52.9pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>10ms</p>
-  </td>
-  <td width=63 valign=top style='width:47.4pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>48 kbps</p>
-  </td>
-  <td width=115 valign=top style='width:86.6pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p>24_2</p>
-  </td>
- </tr>
- <tr>
-  <td width=80 valign=top style='width:59.95pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p>16 kHz</p>
-  </td>
-  <td width=66 valign=top style='width:49.4pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>1</p>
-  </td>
-  <td width=52 valign=top style='width:39.2pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>16</p>
-  </td>
-  <td width=71 valign=top style='width:52.9pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>7.5ms</p>
-  </td>
-  <td width=63 valign=top style='width:47.4pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>32 kbps</p>
-  </td>
-  <td width=115 valign=top style='width:86.6pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p>16_1</p>
-  </td>
- </tr>
- <tr>
-  <td width=80 valign=top style='width:59.95pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p>16 kHz</p>
-  </td>
-  <td width=66 valign=top style='width:49.4pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>1</p>
-  </td>
-  <td width=52 valign=top style='width:39.2pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>16</p>
-  </td>
-  <td width=71 valign=top style='width:52.9pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>10ms</p>
-  </td>
-  <td width=63 valign=top style='width:47.4pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p>32 kbps</p>
-  </td>
-  <td width=115 valign=top style='width:86.6pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt'>
-  <p>16_2</p>
-  </td>
- </tr>
-</table>
+**Use case**: System sounds, music playback, and video game audio when connected to a stereo device or coordinated set of devices.
+
+**Signal processing mode**: Default
+
+Audio formats are ordered from most preferred to least preferred.
+
+| Sampling Frequency | Channel Count | Bit Depth | Frame Duration | Audio Data Rate | BAP Codec Configuration ID (Table 3.11 of the BAP Specification) |
+|---|---|---|---|---|---|
+| 48 kHz | 2 | 16 | 7.5ms | 96 kbps | 48_3 |
+| 48 kHz | 2 | 16 | 7.5ms | 80 kbps | 48_1 |
+| 48 kHz | 2 | 16 | 10ms | 96 kbps | 48_4 |
+| 48 kHz | 2 | 16 | 10ms | 80 kbps | 48_2 |
+| 24 kHz | 2 | 16 | 7.5ms | 48 kbps | 24_1 |
+| 24 kHz | 2 | 16 | 10ms | 48 kbps | 24_2 |
+
+**Use case**: System sounds, music playback, and video game audio when connected to a single member of a coordinated set (single earbud or hearing aid).
+
+**Signal processing mode**: Default
+
+Audio formats are ordered from most preferred to least preferred.
+
+| Sampling Frequency | Channel Count | Bit Depth | Frame Duration | Audio Data Rate | BAP Codec Configuration ID (Table 3.11 of the BAP Specification) |
+|---|---|---|---|---|---|
+| 48 kHz | 1 | 16 | 7.5ms | 96 kbps | 48_3 |
+| 48 kHz | 1 | 16 | 7.5ms | 80 kbps | 48_1 |
+| 48 kHz | 1 | 16 | 10ms | 96 kbps | 48_4 |
+| 48 kHz | 1 | 16 | 10ms | 80 kbps | 48_2 |
+| 24 kHz | 1 | 16 | 7.5ms | 48 kbps | 24_1 |
+| 24 kHz | 1 | 16 | 10ms | 48 kbps | 24_2 |
+| 16 kHz | 1 | 16 | 7.5ms | 32 kbps | 16_1 |
+| 16 kHz | 1 | 16 | 10ms | 32 kbps | 16_2 |
+
+**Use case**: Voice recorder, VOIP calls, or video game audio with voice chat.
+
+**Signal processing mode**: Communications
+
+Audio formats are ordered from most preferred to least preferred.
+
+| Sampling Frequency | Channel Count | Bit Depth | Frame Duration | Audio Data Rate | BAP Codec Configuration ID (Table 3.11 of the BAP Specification) |
+|---|---|---|---|---|---|
+| 32 kHz | 1 | 16 | 7.5ms | 64 kbps | 32_1 |
+| 32 kHz | 1 | 16 | 10ms | 64 kbps | 32_2 |
+| 24 kHz | 1 | 16 | 7.5ms | 48 kbps | 24_1 |
+| 24 kHz | 1 | 16 | 10ms | 48 kbps | 24_2 |
+| 16 kHz | 1 | 16 | 7.5ms | 32 kbps | 16_1 |
+| 16 kHz | 1 | 16 | 10ms | 32 kbps | 16_2 |
+
+##### Capture stream audio signal processing modes
+
+Bluetooth LE audio requires capture audio formats to be declared for the Default (AUDIO_SIGNALPROCESSINGMODE_DEFAULT) signal processing mode. The list of supported capture formats is in the table below.
+
+**Use case**: Voice recorder, VOIP calls, or video game audio with voice chat.
+
+**Signal processing mode**: Default
+
+Audio formats are ordered from most preferred to least preferred.
+
+| Sampling Frequency | Channel Count | Bit Depth | Frame Duration | Audio Data Rate | BAP Codec Configuration ID (Table 3.11 of the BAP Specification) |
+|---|---|---|---|---|---|
+| 32 kHz | 1 | 16 | 7.5ms | 64 kbps | 32_1 |
+| 32 kHz | 1 | 16 | 10ms | 64 kbps | 32_2 |
+| 24 kHz | 1 | 16 | 7.5ms | 48 kbps | 24_1 |
+| 24 kHz | 1 | 16 | 10ms | 48 kbps | 24_2 |
+| 16 kHz | 1 | 16 | 7.5ms | 32 kbps | 16_1 |
+| 16 kHz | 1 | 16 | 10ms | 32 kbps | 16_2 |
+
+#### Defined stream configurations and topologies
+
+##### Render-only configurations
+
+###### Basic audio profile configuration 1
+
+The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+
+:::image type="content" source="images/bap-configuration-1.png" alt-text="Diagram of basic audio profile configuration 1.":::
+
+The PC is connected to a single audio device that supports mono streams. The single device may be a standalone device or a single connected member of a coordinated set.
+
+| Use Case Examples | Windows Audio Settings | Bluetooth Controller Settings |
+|---|---|---|
+| Media playback | **Render**:<br/>Signal Processing Mode: Default<br/>Channel Count: 1<br/>**Capture**: None | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: High reliability |
+| Voice call with no microphone on audio device | **Render**:<br/>Signal Processing Mode: Communications<br/>Channel Count: 1<br/>**Capture**: None | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: Low latency |
+| Video game playback | **Render**:<br/>Signal Processing Mode: Default<br/>Channel Count: 1<br/>**Capture**: None | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: Low latency |
+
+###### Basic audio profile configuration 4
+
+The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+
+:::image type="content" source="images/bap-configuration-4.png" alt-text="Diagram of basic audio profile configuration 4.":::
+
+The PC is connected to a single audio device that supports stereo streams. The audio device is capable of processing 2 audio channels on a single CIS.
+
+| Use Case Examples | Windows Audio Settings | Bluetooth Controller Settings |
+|---|---|---|
+| Media playback | **Render**: Signal Processing Mode: Default<br/>Channel Count: 2<br/>**Capture**: None | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: High reliability Audio Channel Allocation: Front left and front right |
+| Voice call with no microphone on audio device | **Render**:<br/>Signal Processing Mode: Communications<br/>Channel Count: 1<br/>**Capture**: None | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: Low latency<br/>Audio Channel Allocation: Either front left or front right |
+| Video game playback | Signal Processing Mode: Default<br/>Channel Count: 2<br/>**Capture**: None | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: Low latency<br/>Audio Channel Allocation: Front left and front right |
+
+###### Basic audio profile configuration 6(i)
+
+The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+
+:::image type="content" source="images/bap-configuration-6-i.png" alt-text="Diagram of basic audio profile configuration 6 I.":::
+
+The PC is connected to a single audio device that supports stereo streams. The audio device is only capable of processing one audio channel on each of the two CISs
+
+| Use Case Examples | Windows Audio Settings | Bluetooth Controller Settings |
+|---|---|---|
+| Media playback | Signal Processing Mode: Default<br/>Channel Count: 2<br/>**Capture**: None | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: High reliability |
+| Voice call with no microphone on audio device | Signal Processing Mode: Communications<br/>Channel Count: 1<br/>**Capture**: None | CIS Count: 1<br/>
+CIG Count: 1<br/>BAP QoS Settings: Low latency<br/>Audio Channel Allocation: Either front left or front right |
+| Video game playback | Signal Processing Mode: Default<br/>Channel Count: 2<br/>**Capture**: None | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: Low latency<br/>Audio Channel Allocation: Front left and front right |
+
+###### Basic audio profile configuration 6(ii)
+
+The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+
+:::image type="content" source="images/bap-configuration-6-ii.png" alt-text="Diagram of basic audio profile configuration 6 II.":::
+
+The PC is connected to a coordinated set of audio devices. The set is capable of processing 2 channels of audio with each member processing a single channel.
+
+| Use Case Examples | Windows Audio Settings | Bluetooth Controller Settings |
+|---|---|---|
+| Media playback | Signal Processing Mode: Default<br/>Channel Count: 2<br/>**Capture**: None | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: High reliability |
+| Voice call with no microphone on either device | Signal Processing Mode: Communications<br/>Channel Count: 1<br/>**Capture**: None | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: Low latency |
+| Video game playback | Signal Processing Mode: Default<br/>Channel Count: 2<br/>**Capture**: None | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: Low latency |
+
+##### Bidirectional configurations
+
+Bidirectional configurations are used when the Bluetooth LE audio profile detects that an application intends to create both a capture and render stream to a remote device or set of devices. Since applications control capture and render streams separately, IHV audio drivers and Bluetooth controllers shall allow audio to flow over a single direction of a bidirectional CIS after it is provisioned using the HCI commands Configure Data Path and LE Setup ISO Data Path.
+
+###### Basic audio profile configuration 3
+
+The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+
+:::image type="content" source="images/bap-configuration-3.png" alt-text="Diagram of basic audio profile configuration 3.":::
+
+The PC is connected to a single audio device with a bidirectional mono stream established on a single CIS.
+
+| Use Case | Windows Audio Settings | Bluetooth Controller Settings |
+|---|---|---|
+| Voice call | **Render:**<br/>Signal Processing Mode: Communications<br/>Channel Count: 1<br/>**Capture:**<br/>Signal Processing Mode: Default<br/>Channel Count: 1 | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency |
+| Video game playback with voice chat | **Render:**<br/>Signal Processing Mode: Communications<br/>Channel Count: 1<br/>**Capture:**<br/>Signal Processing Mode: Default<br/>Channel Count: 1 | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency |
+
+###### Basic audio profile configuration 7(i)
+
+The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+
+:::image type="content" source="images/bap-configuration-7-i.png" alt-text="Diagram of basic audio profile configuration 7 I.":::
+
+The PC is connected to a single audio device with a bidirectional mono stream established on 2 separate CISes.
+
+| Use Case | Windows Audio Settings | Bluetooth Controller Settings |
+|---|---|---|
+| Voice call | **Render:**<br/>Signal Processing Mode: Communications<br/>Channel Count: 1<br/>**Capture:**<br/>Signal Processing Mode: Default<br/>Channel Count: 1 | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency |
+| Video game playback with voice chat | **Render:**<br/>Signal Processing Mode: Communications<br/>Channel Count: 1<br/>**Capture:**<br/>Signal Processing Mode: Default<br/>Channel Count: 1 | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency |
+
+###### Basic audio profile configuration 5
+
+The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+
+:::image type="content" source="images/bap-configuration-5.png" alt-text="Diagram of basic audio profile configuration 5.":::
+
+The PC is connected to a single audio device with a stereo render stream and mono capture stream established on a single CIS. The device is capable of processing 2 channels of audio on a single CIS.
+
+| Use Case | Windows Audio Settings | Bluetooth Controller Settings |
+|---|---|---|
+| Video game playback with voice chat | **Render:**<br/>Signal Processing Mode: Communications<br/>Channel Count: 2<br/>**Capture:**<br/>Signal Processing Mode: Default<br/>Channel Count: 1 | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency<br/>Render audio channel allocation: Front left and front right |
+
+###### Basic audio profile configuration 8(i)
+
+The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+
+:::image type="content" source="images/bap-configuration-8-i.png" alt-text="Diagram of basic audio profile configuration 8 I.":::
+
+The PC is connected to a single audio device that supports stereo render streams and mono capture streams. The device is capable of processing 1 channel of audio on a single CIS for a given direction.
+
+| Use Case | Windows Audio Settings | Bluetooth Controller Settings |
+|---|---|---|
+| Video game playback with voice chat | **Render:**<br/>Signal Processing Mode: Communications<br/>Channel Count: 2<br/>**Capture:**<br/>Signal Processing Mode: Default<br/>Channel Count: 1 | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency |
+
+###### Basic audio profile configuration 8(ii)
+
+The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+
+:::image type="content" source="images/bap-configuration-8-ii.png" alt-text="Diagram of basic audio profile configuration 8 II.":::
+
+The PC is connected to a coordinated set of audio devices. Each set member is receiving 1 channel of render audio. A single set member has an established capture stream. The set member with the capture stream is the first set member that connects to the PC that also supports capture streams.
+
+| Use Case | Windows Audio Settings | Bluetooth Controller Settings |
+|---|---|---|
+| Voice call | **Render:**<br/>Signal Processing Mode: Communications<br/>Channel Count: 1<br/>**Capture:**<br/>Signal Processing Mode: Default<br/>Channel Count: 1 | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency |
+| Video game playback with voice chat | **Render:**<br/>Signal Processing Mode: Communications<br/>Channel Count: 2<br/>**Capture:**<br/>Signal Processing Mode: Default<br/>Channel Count: 1 | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency |
+
+##### Capture-only configurations
+
+## Related topics
+
+- [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
