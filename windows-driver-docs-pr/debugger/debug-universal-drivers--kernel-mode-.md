@@ -121,12 +121,7 @@ To use the KDNET utility to enable kernel-mode debugging on the target system, p
 
    C:\Program Files (x86)\Windows Kits\10\Debuggers\x64
 
-> [!NOTE]
-> This labs assumes that both PCs are running a 64 bit version of Windowson both the target and host. 
-> If that is not the case, the best approach is to run the same "bitness" of tools on the host that the target is running. 
-For example if the target is running 32 bit Windows, run a 32 version of the debugger on the host. 
-> For more information, see [Choosing the 32-Bit or 64-Bit Debugging Tools](choosing-a-32-bit-or-64-bit-debugger-package.md).
-> 
+This labs assumes that both PCs are running a 64 bit version of Windowson both the target and host. If that is not the case, the best approach is to run the same "bitness" of tools on the host that the target is running. For example if the target is running 32 bit Windows, run a 32 version of the debugger on the host. For more information, see [Choosing the 32-Bit or 64-Bit Debugging Tools](choosing-a-32-bit-or-64-bit-debugger-package.md).
 
 2. Locate these two files and copy them to a network share or thumb drive, so that they will be available on the target computer.
 
@@ -327,19 +322,23 @@ To download and build the Sysvad sample audio driver, perform the following step
 
     **Note**  This lab assumes that 64 bit Windows is being used. If you are using 32 bit Windows, build the driver for 32 bit.
 
-     
-
 4.  **Check driver signing**
 
     Locate the TabletAudioSample. Open the Sysvad driver’s property page and make sure **Driver Signing** &gt; **Sign Mode** is set to *Test Sign*.
 
-5.  **Build the sample using Visual Studio**
+5. Driver samples need to be modified to use values that don't overlap with existing drivers. Refer to [From Sample Code to Production Driver - What to Change in the Samples](/windows-hardware/drivers/gettingstarted/from-sample-code-to-production-driver) on how to create a unique driver sample that will coexist with existing real drivers installed in Windows.
+
+6.  **Build the sample using Visual Studio**
 
     In Visual Studio, select **Build** &gt; **Build Solution**.
 
     The build windows should display a message indicating that the build for all six projects succeeded.
 
-6.  **Locate the built driver files**
+> [!TIP]
+> If you encounter a build error message, use the build error number to determine a fix. For example, *[MSBuild error MSB8040](/visualstudio/msbuild/errors/msb8040)* describes how to work with spectre mitigated libraries.
+>
+
+7.  **Locate the built driver files**
 
     In File Explorer, navigate to the folder that contains the extracted files for the sample. For example, you would navigate to *C:\\WDK\_Samples\\Sysvad*, if that's the folder you specified earlier. Within that folder, the location of the compiled driver files varies depending on the configuration and platform settings that you selected in the **Configuration Manager**. For example, if you left the default settings unchanged, then the compiled driver files will be saved to a folder named *\\x64\\Debug* for a 64-bit, debug build.
 
@@ -362,9 +361,7 @@ To download and build the Sysvad sample audio driver, perform the following step
     | KWSApo.pdb                        | The keyword spotter symbol file.                                                  |
     | TabletAudioSample.cer             | The TabletAudioSample certificate file.                                           |
 
-     
-
-7.  Locate a USB thumb drive or set up a network share to copy the built driver files from the host to the target system.
+8.  Locate a USB thumb drive or set up a network share to copy the built driver files from the host to the target system.
 
 In the next section, you will copy the code to the target system, and install and test the driver.
 
@@ -2068,12 +2065,11 @@ Alternatively, you can modify the contents of the memory in a watch or locals wi
 
 ## <span id="endingthesession"></span>Section 13: End the WinDbg session
 
-
 **&lt;-On the host system**
 
-To end a user-mode debugging session, return the debugger to dormant mode, and set the target application to run again, enter the **qd** (Quit and Detach) command.
+If you want to leave the debugger attached, but want to work on the target, clear any breakpoints using `bc *`, so that the target computer won't try to connect to the host computer debugger. Then use the `g` command to let the target computer run again.
 
-Be sure and use the **g** command to let the target computer run code, so that it can be used. It also a good idea to clear any break points using **bc \\***, so that the target computer won't break and try to connect to the host computer debugger.
+To end the debugging session, on the host system, break into the debugger and enter the `qd` (Quit and Detach) command or select **Stop Debugging** from the menu.
 
 ```dbgcmd
 0: kd> qd
@@ -2092,7 +2088,7 @@ Additional information is available on Windows debugging. Note that some of thes
 
 -   *Inside Windows Debugging: A Practical Guide to Debugging and Tracing Strategies in Windows®* by Tarik Soulami
 
--   *Windows Internals* by Mark E. Russinovich, David A. Solomon and Alex Ionescu
+-   *[Windows Internals](/sysinternals/resources/windows-internals)* by Pavel Yosifovich, Alex Ionescu, Mark Russinovich and David Solomon
 
 **Video**
 

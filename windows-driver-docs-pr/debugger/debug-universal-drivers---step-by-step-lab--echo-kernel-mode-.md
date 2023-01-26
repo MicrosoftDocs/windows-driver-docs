@@ -24,14 +24,13 @@ In this lab, you use a live kernel debug connection to explore the following act
 - Display the Plug and Play device tree
 - Work with thread and process context
 
-> [!NOTE]
-> When working with the Windows debugger, you can do two types of debugging:
->
-> *User mode* - Applications and subsystems run on the computer in user mode. Processes that run in user mode do so within their own virtual address spaces. They're restricted from gaining direct access to many parts of the system, including system hardware, memory that isn't allocated for their use, and other portions of the system that might compromise system integrity. Because processes that run in user mode are effectively isolated from the system and other user mode processes, they can't interfere with these resources.
->
-> *Kernel mode* - The operating system and privileged programs run in kernel mode. Kernel-mode code has permission to access any part of the system. It isn't restricted like user mode code. It can gain access to any part of any other process running in either user mode or kernel mode. Much of the core OS functionality and many hardware device drivers run in kernel mode.
->
-> This lab focuses on kernel-mode debugging because that's the method used to debug many device drivers.
+### User and kernel mode debugging
+
+When working with the Windows debugger, you can do two types of debugging:
+
+*User mode* - Applications and subsystems run on the computer in user mode. Processes that run in user mode do so within their own virtual address spaces. They're restricted from gaining direct access to many parts of the system, including system hardware, memory that isn't allocated for their use, and other portions of the system that might compromise system integrity. Because processes that run in user mode are effectively isolated from the system and other user mode processes, they can't interfere with these resources.
+
+*Kernel mode* - The operating system and privileged programs run in kernel mode. Kernel-mode code has permission to access any part of the system. It isn't restricted like user mode code. It can gain access to any part of any other process running in either user mode or kernel mode. Much of the core OS functionality and many hardware device drivers run in kernel mode.
 
 This exercise covers debug commands that are frequently used during both user mode and kernel-mode debugging. The exercise also covers debug extensions, sometimes called *!commands*, that are used for kernel-mode debugging.
 
@@ -40,7 +39,7 @@ This exercise covers debug commands that are frequently used during both user mo
 You need the following hardware to complete the lab:
 
 - A laptop or desktop computer (host) running Windows 10
-- A laptop or desktop computer (target) running Windows 10
+- A second laptop or desktop computer (target) running Windows 10
 - A network hub or router and network cables to connect the two computers
 - Access to the internet to download symbol files
 
@@ -171,11 +170,9 @@ Enable kernel-mode debugging on the target system by completing the following st
     cd C:\Program Files(x86)\Windows Kits\10\Debuggers\x64 
     ```
 
-   > [!NOTE]
-   > This labs assumes that both computers run a 64-bit version of Windows on both the target and host.
-   > If that isn't the case, the best approach is to run the same *bitness* of tools on the host that the target runs.
-   >
-   > For example, if the target runs 32-bit Windows, run a 32-bit version of the debugger on the host. For more information, see [Choosing the 32-Bit or 64-Bit debugging tools](choosing-a-32-bit-or-64-bit-debugger-package.md).
+   This labs assumes that both computers run a 64-bit version of Windows on both the target and host.
+   If that isn't the case, the best approach is to run the same *bitness* of tools on the host that the target runs.
+   For example, if the target runs 32-bit Windows, run a 32-bit version of the debugger on the host. For more information, see [Choosing the 32-Bit or 64-Bit debugging tools](choosing-a-32-bit-or-64-bit-debugger-package.md).
 
 1. Open WinDbg with remote user debug by using the following command. The values for the key and port match the values you set earlier using BCDEdit on the target computer.
 
@@ -223,7 +220,7 @@ Some debug commands display text using Debugger Markup Language (DML) that you c
 
 1. On the host system, use Ctrl+Scroll Lock in WinDBg to break into the code running on the target system. It may take some time for the target system to respond.
 
-   ![Screenshot shows Windows Debugger showing Command Window output from a live kernel connection.](images/debuglab-image-winddbg-hh.png)
+   ![Main screen in debugger showing Command Window output from a live kernel connection.](images/windbgx-main-menu.png)
 
 2. Enter the following command to enable DML in the Debugger Command window:
 
@@ -273,8 +270,7 @@ Some debug commands display text using Debugger Markup Language (DML) that you c
    ...
    ```
 
-   > [!NOTE]
-   > Output that's been omitted is indicated with "… " in this lab.
+   Output that's been omitted is indicated with "…" in this lab.
 
 6. To request detailed information about a specific module, use the `v` (verbose) option:
 
@@ -333,19 +329,25 @@ To download and build the Echo sample audio driver:
 
 3. Set the sample's configuration and platform. In Solution Explorer, select and hold or right-click **Solution 'kmdfecho' (3 projects)**, and select **Configuration Manager**. Make sure that the configuration and platform settings are the same for the three projects. By default, the configuration is set to **Win10 Debug**, and the platform is set to **Win64** for all the projects. If you make any configuration or platform changes for one project, make the same changes for the remaining three projects.
 
-4. Set the runtime library. Open the echo driver property page and locate **C/C++** > **Code Generation**.  Change Runtime Library to Multi-threaded Debug (/MTd). For more information about the build options, see [/MD, /MT, /LD (Use Run-Time Library)](/cpp/build/reference/md-mt-ld-use-run-time-library).
+4. Driver samples need to be modified to use values that don't overlap with existing drivers. Refer to [From Sample Code to Production Driver - What to Change in the Samples](/windows-hardware/drivers/gettingstarted/from-sample-code-to-production-driver) on how to create a unique driver sample that will coexist with existing real drivers installed in Windows.
+
+5. Set the runtime library. Open the echo driver property page and locate **C/C++** > **Code Generation**.  Change Runtime Library to Multi-threaded Debug (/MTd). For more information about the build options, see [/MD, /MT, /LD (Use Run-Time Library)](/cpp/build/reference/md-mt-ld-use-run-time-library).
 
    ![Screenshot shows the echo property page highlighting the runtime library setting.](images/debuglab-image-echoapp-properties.png)
 
-5. In the driver properties, make sure **Driver Signing** > **Sign Mode** is set to **Test Sign**.  
+6. In the driver properties, make sure **Driver Signing** > **Sign Mode** is set to **Test Sign**.  
 
    ![Screenshot shows echo property page highlighting the sign mode setting.](images/debuglab-image-echoapp-driver-signing.png)
 
-6. In Visual Studio, select **Build** > **Build Solution**.
+7. In Visual Studio, select **Build** > **Build Solution**.
 
    The build windows should display a message indicating that the build for all three projects succeeded.
 
-7. In File Explorer, go to the folder that contains the extracted files for the sample. For example, go to *C:\\DriverSamples\\general\\echo\\kmdf*, if that's the folder you specified earlier. Within that folder, the location of the compiled driver files varies depending on the configuration and platform settings that you selected in the Configuration Manager. If you left the default settings unchanged, then the compiled driver files are saved to a folder named *\\x64\\Debug* for a 64 bit debug build.
+> [!TIP]
+> If you encounter a build error message, use the build error number to determine a fix. For example, *[MSBuild error MSB8040](/visualstudio/msbuild/errors/msb8040)* describes how to work with spectre mitigated libraries.
+>
+
+8. In File Explorer, go to the folder that contains the extracted files for the sample. For example, go to *C:\\DriverSamples\\general\\echo\\kmdf*, if that's the folder you specified earlier. Within that folder, the location of the compiled driver files varies depending on the configuration and platform settings that you selected in the Configuration Manager. If you left the default settings unchanged, then the compiled driver files are saved to a folder named *\\x64\\Debug* for a 64 bit debug build.
 
    Go to the folder that contains the built files for the Autosync driver: *C:\\DriverSamples\\general\\echo\\kmdf\\driver\\AutoSync\\x64\\Debug*.
 
@@ -362,7 +364,7 @@ To download and build the Echo sample audio driver:
    |-------------|-----------------------------------------------------------------------------------|
    | EchoApp.exe | A Command Prompt executable test file that communicates with the echo.sys driver. |
 
-8. Locate a USB thumb drive or set up a network share to copy the built driver files and the test **EchoApp** from the host to the target system.
+9. Locate a USB thumb drive or set up a network share to copy the built driver files and the test **EchoApp** from the host to the target system.
 
 In the next section, copy the code to the target system, and install and test the driver.
 
@@ -475,8 +477,7 @@ To view information about the driver:
    0: kd> .reload /f
    ```
 
-   > [!NOTE]
-   > The `.reload` command with the `/f` force option deletes all symbol information for the specified module and reloads the symbols. In some cases, this command also reloads or unloads the module itself.
+   The `.reload` command with the `/f` force option deletes all symbol information for the specified module and reloads the symbols. In some cases, this command also reloads or unloads the module itself.
 
 You must load the proper symbols to use advanced functionality that WinDbg provides. If you don't have symbols properly configured, when you attempt to use functionality that's dependent on symbols, you receive messages indicating that symbols aren't available.
 
@@ -559,13 +560,13 @@ set ENABLE_OPTIMIZER=0
 6. Enter the following to change the default debug bit mask so that all debug messages from the target system are displayed in the debugger:
 
    ```dbgcmd
-   0: kd> ed nt!Kd_DEFAULT_MASK  0xFFFFFFFF
+   0: kd> ed nt!Kd_DEFAULT_MASK 0xFFFFFFFF
    ```
 
    Some drivers display additional information when the mask of 0xFFFFFFFF is used. Set the mask to 0x00000000 if you would like to reduce the amount of information that's displayed.
 
    ```dbgcmd
-   0: kd> ed nt!Kd_DEFAULT_MASK  0x00000000
+   0: kd> ed nt!Kd_DEFAULT_MASK 0x00000000
    ```
 
    Use the `dd` command to confirm the mask is set to display all of the debugger messages.
@@ -720,8 +721,7 @@ For more information, see [Source code debugging in WinDbg](source-window.md).
      1: fffff801`0bf9b1c0 @!"ECHO!EchoEvtDeviceAdd"
    ```
 
-   > [!NOTE]
-   > You can use different syntax in conjunction with setting variables like `<module>!<symbol>`, `<class>::<method>`,`'<file.cpp>:<line number>'`, or skip a number of times `<condition> <#>`. For more information, see [Conditional breakpoints in WinDbg and other Windows debuggers](setting-a-conditional-breakpoint.md).
+   You can use different syntax in conjunction with setting variables like `<module>!<symbol>`, `<class>::<method>`,`'<file.cpp>:<line number>'`, or skip a number of times `<condition> <#>`. For more information, see [Conditional breakpoints in WinDbg and other Windows debuggers](setting-a-conditional-breakpoint.md).
 
 1. List the current breakpoints to confirm that the breakpoint was set by entering the `bl` command:
 
@@ -759,7 +759,7 @@ You can modify existing breakpoints by using the following commands:
 | `bd` | Disables a breakpoint. Use `bd *` to disable all breakpoints. |
 | `be` | Enables a breakpoint. Use `be *` to enable all breakpoints. |
 
-Alternatively, you can also modify breakpoints by selecting **edit** > **breakpoints** in WinDbg. The breakpoint dialog box works only with existing breakpoints. New breakpoints must be set from the command line.
+Alternatively, you can also modify breakpoints in the WinDbg UI.
 
 You can also set breakpoints that fire when a memory location is accessed. Use the `ba` (break on access) command, with the following syntax:
 
@@ -813,10 +813,9 @@ To display the names and values of all local variables for a specific frame, ent
          status = 0n0
 ```
 
-> [!NOTE]
-> The call stack is the chain of function calls that have led to the current location of the program counter. The top function on the call stack is the current function, and the next function is the function that called the current function, and so on.
+The call stack is the chain of function calls that have led to the current location of the program counter. The top function on the call stack is the current function, and the next function is the function that called the current function, and so on.
 
-To display the call stack, use the `k\`* commands.
+To display the call stack, use the `k*` commands.
 
 | Command | Description |
 |:------- |:----------- |
@@ -846,7 +845,7 @@ The call stack shows that the kernel (nt) called into Plug and Play code (PnP) t
 
 ## Display processes and threads
 
-In this section, display information about the process and threads running in kernel mode.
+In this section, display information about the processes and threads running in kernel mode.
 
 ### Processes
 
@@ -890,7 +889,7 @@ You can display or set process information by using the [!process](-process.md) 
    0: kd> g
    ```
 
-6. On the target system, run the EchoApp.exe driver test program on the target system.
+6. On the target system, run the `EchoApp.exe` driver test program on the target system.
 
 7. On the host system, when the test app runs, the I/O routine in the driver is called. This call causes the breakpoint to fire, and execution of the driver code on the target system halts.
 
@@ -1057,8 +1056,7 @@ The commands to view and set threads are similar to the commands for processes. 
    …
    ```
 
-   > [!NOTE]
-   > You can alternatively use `!process 0 17` to display detailed information about every process. The output from this command can be lengthy. The output can be searched using Ctrl+F.
+   You can alternatively use `!process 0 17` to display detailed information about every process. The output from this command can be lengthy. The output can be searched using Ctrl+F.
 
 7. Use the `!process` command to list process information for both processes running your computer. Provide the process address from your `!process 0 0` output, not the address shown in this example.
 
@@ -1234,7 +1232,7 @@ nt!DbgBreakPointWithStatus:
 fffff803`bb757020 cc              int     3
 ```
 
-Alternatively, you can display the contents of the registers by selecting **view** > **registers**. For more information, see [r (Registers)](r--registers-.md).
+Alternatively, you can display the contents of the registers by selecting **View** > **Registers**. For more information, see [r (Registers)](r--registers-.md).
 
 Viewing the contents of the registers can be helpful when stepping through assembly language code execution and in other scenarios. For more information about assembly language disassembly, see [Annotated x86 Disassembly](annotated-x86-disassembly.md) and [Annotated x64 disassembly](annotated-x64-disassembly.md).
 
@@ -1242,9 +1240,9 @@ For information about contents of the register, see [x86 architecture](x86-archi
 
 ### End the WinDbg session
 
-To end a user-mode debugging session, on the host system, return the debugger to dormant mode, and set the target application to run again, enter the `qd` (Quit and Detach) command.
+If you want to leave the debugger attached, but want to work on the target, clear any breakpoints using `bc *`, so that the target computer won't try to connect to the host computer debugger. Then use the `g` command to let the target computer run again.
 
-Be sure and use the `g` command to let the target computer run code, so that it can be used. Clear any breakpoints using `bc \`*, so that the target computer won't break and try to connect to the host computer debugger.
+To end the debugging session, on the host system, break into the debugger and enter the `qd` (Quit and Detach) command or select **Stop Debugging** from the menu.
 
 ```dbgcmd
 0: kd> qd
@@ -1260,7 +1258,7 @@ More information is available on Windows debugging. Some of these books use earl
 
   - Advanced Windows Debugging by Mario Hewardt and Daniel Pravat
   - Inside Windows Debugging: A Practical Guide to Debugging and Tracing Strategies in Windows® by Tarik Soulami
-  - Windows Internals by Mark E. Russinovich, David A. Solomon and Alex Ionescu
+  - [Windows Internals by Pavel Yosifovich, Alex Ionescu, Mark Russinovich and David Solomon](/sysinternals/resources/windows-internals)
 
 - Video
 
