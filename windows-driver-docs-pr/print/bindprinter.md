@@ -3,10 +3,12 @@ title: BindPrinter
 description: The BindPrinter method binds a printer or print queue to a specific version of the Print Ticket schema.
 keywords:
 - BindPrinter
-ms.date: 09/06/2022
+ms.date: 01/26/2023
 ---
 
 # BindPrinter
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The [**IPrintTicketProvider::BindPrinter**](/windows-hardware/drivers/ddi/prdrvcom/nf-prdrvcom-iprintticketprovider-bindprinter) method binds a printer or print queue to a specific version of the Print Ticket schema. This enables the core driver to associate a set of private namespace URIs with a device.
 

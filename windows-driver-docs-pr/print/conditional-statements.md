@@ -7,14 +7,12 @@ keywords:
 - conditional statements WDK Unidrv
 - multiple dependencies WDK Unidrv
 - Unidrv WDK print
-ms.date: 04/20/2017
+ms.date: 01/26/2023
 ---
 
 # Conditional Statements
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The GPD language provides C-like conditional statements that allow you to describe dependencies that some printer attributes can have on a printer's configuration. For example, the margins and cursor origin for a page might depend on the page's orientation. The **\*Switch** and **\*Case** statements allow you to express such dependencies. The format of these statements is as follows:
 
@@ -44,8 +42,6 @@ The GPD language provides C-like conditional statements that allow you to descri
 </tr>
 </tbody>
 </table>
-
- 
 
 *FeatureName* must be the name of a feature that is specified within the GPD file with a **\*Feature** entry. The option names used must be options that are associated with the specified feature.
 
@@ -95,7 +91,7 @@ In this example, options for the printer's **PaperSize** feature are dependent o
 
 If you do not list all of a feature's options as **\*Case** statement arguments, you can include a **\*Default** statement, just as in the C language. If you do not include all options and you do not include a **\*Default** statement, you must evaluate relevant attributes (in the example, **\*PrintableArea**, \***PrintableOrigin**, and **\*CursorOrigin**) elsewhere in the GPD file, preceding the \***Switch** statement.
 
-### <a href="" id="ddk-specifying-multiple-dependencies-gg"></a>Specifying Multiple Dependencies
+## Specifying Multiple Dependencies
 
 You can include **\*Switch** statements inside **\*Case** and **\*Default** statements. This allows you to specify multiple dependencies, as follows:
 
@@ -131,51 +127,51 @@ If the user has selected optionB for feature1 and optionE for feature3, then att
 
 The following rules apply when specifying multiple dependencies:
 
--   Multiple dependencies must be specified within the scope of a single **\*Switch** entry. Using the example, for instance, you cannot use a **\*Switch** entry to indicate that feature3 is dependent on feature1 and then, in a subsequent, non-nested **\*Switch** statement, indicate that feature3 is dependent on feature2.
+- Multiple dependencies must be specified within the scope of a single **\*Switch** entry. Using the example, for instance, you cannot use a **\*Switch** entry to indicate that feature3 is dependent on feature1 and then, in a subsequent, non-nested **\*Switch** statement, indicate that feature3 is dependent on feature2.
 
--   You cannot specify the same feature more than once within each nested \***Switch** entry.
+- You cannot specify the same feature more than once within each nested \***Switch** entry.
 
-### <a href="" id="ddk-where-to-place-a-switch-statement-gg"></a>Where to Place a \*Switch Statement
+## Where to Place a \*Switch Statement
 
 You can place a **\*Switch** statement in the following locations within a GPD file:
 
--   Inside an \*Option statement
+- Inside an \*Option statement
 
--   Inside a \*Feature statement
+- Inside a \*Feature statement
 
--   Inside a **\*Case** statement
+- Inside a **\*Case** statement
 
--   Inside a **\*Default** statement
+- Inside a **\*Default** statement
 
--   At the file's top level (that is, not inside a set of braces)
+- At the file's top level (that is, not inside a set of braces)
 
-### <a href="" id="ddk-what-to-place-inside-switch-case-and-default-statements-gg"></a>What to Place Inside \*Switch, \*Case, and \*Default Statements
+## What to Place Inside \*Switch, \*Case, and \*Default Statements
 
 Within a **\*Switch** entry, you can place only **\*Case** and **\*Default** entries.
 
 GPD file entries that can be placed inside **\*Case** or **\*Default** entries are referred to as relocatable entries. The following types of GPD entries are relocatable:
 
--   Most [printer attributes](printer-attributes.md), except for [root-level-only attributes](root-level-only-attributes.md). ([General attributes](general-attributes.md) must be preceded by EXTERN\_GLOBAL unless the \***Switch** entry is at root level - not within braces.)
+- Most [printer attributes](printer-attributes.md), except for [root-level-only attributes](root-level-only-attributes.md). ([General attributes](general-attributes.md) must be preceded by EXTERN\_GLOBAL unless the \***Switch** entry is at root level - not within braces.)
 
--   Nested \***Switch** entries, which allow you to specify multiple dependencies.
+- Nested \***Switch** entries, which allow you to specify multiple dependencies.
 
--   \*Command entries.
+- \*Command entries.
 
--   \*TTFSEnabled?, which enables font substitution.
+- \*TTFSEnabled?, which enables font substitution.
 
 The following types of GPD entries are not relocatable:
 
--   Root-level-only attributes.
+- Root-level-only attributes.
 
--   \*TTFS entries for specifying substituted font.
+- \*TTFS entries for specifying substituted font.
 
--   \*Constraints, \*InvalidCombination, \*InvalidInstallableCombination, \*NotInstalledConstraints entries that define invalid combinations of options, as described in [Option Constraints](option-constraints.md).
+- \*Constraints, \*InvalidCombination, \*InvalidInstallableCombination, \*NotInstalledConstraints entries that define invalid combinations of options, as described in [Option Constraints](option-constraints.md).
 
--   \*Feature and \*Option entries (although [feature attributes](feature-attributes.md) and [option attributes](option-attributes.md) are relocatable).
+- \*Feature and \*Option entries (although [feature attributes](feature-attributes.md) and [option attributes](option-attributes.md) are relocatable).
 
 One method for determining if entries have been placed correctly inside \***Case** statements is to remove all the \***Switch** and \***Case** statements. If the entries inside the \***Case** statements are correct, they are still correct after the \***Switch** and \***Case** statements are removed.
 
-### Ordering of switch statements in a V4 print driver derived from a class driver
+## Ordering of switch statements in a V4 print driver derived from a class driver
 
 The derived v4 printer driver's GPD file needs to follow the same order as the base class driver.
 
@@ -218,11 +214,3 @@ For example, an incorrectly derived GPD file may look like the following:
     2. Switch: InputBin
     3. Switch: Resolution
 ```
-
- 
-
- 
-
-
-
-

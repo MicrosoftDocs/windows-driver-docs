@@ -4,10 +4,12 @@ description: Provides information on how to access driver settings from renderin
 keywords:
 - rendering plug-ins WDK print , accessing driver settings
 - status information WDK print plug-ins
-ms.date: 09/06/2022
+ms.date: 01/26/2023
 ---
 
 # Access driver settings from rendering plug-ins
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 A rendering plug-in can obtain the current status of printer features and other internal driver information. The following COM interface methods are implemented within Microsoft's printer drivers and can be called by rendering plug-ins.
 
