@@ -1,7 +1,7 @@
 ---
 title: Build a basic v4 printer driver
 description: Build a basic v4 printer driver by using the driver development wizard in Microsoft Visual Studio 2019 to select the minimum set of features to create a functional printer driver.
-ms.date: 09/23/2021
+ms.date: 01/25/2023
 ms.custom: contperf-fy22q1
 ---
 
@@ -306,5 +306,4 @@ Create a print queue using either plug-and-play or the **Add Printer Wizard**.
 
 For more information about INF files for the v4 printer driver, see [V4 Driver INF](v4-driver-inf.md).
 
-> [!NOTE]
-> In addition to the files in the preceding table, notice that a *MyV4PrintDriver Render Filter* folder was created. This is the render filter project template and it provides a good foundation for building an XPS rendering filter and an XPS filter pipeline configuration file. For more information about XPS rendering filters, see [XPSDrv Render Module](xpsdrv-render-module.md), and to see an example of an XPS rendering filter, see the [XPS Rasterization Filter Service](/samples/microsoft/windows-driver-samples/xps-rasterization-filter-service-sample/) sample.
+In addition to the files in the preceding table, notice that a *MyV4PrintDriver Render Filter* folder was created. This is the render filter project template and it provides a good foundation for building an XPS rendering filter and an XPS filter pipeline configuration file. For more information about XPS rendering filters, see [XPSDrv Render Module](xpsdrv-render-module.md), and to see an example of an XPS rendering filter, see the [XPS Rasterization Filter Service](/samples/microsoft/windows-driver-samples/xps-rasterization-filter-service-sample/) sample.

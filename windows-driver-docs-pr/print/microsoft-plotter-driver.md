@@ -8,10 +8,12 @@ keywords:
 - plotters WDK print
 - Hewlett-Packard Graphics Language WDK MSPlot
 - Microsoft Plotter Driver WDK print
-ms.date: 08/13/2021
+ms.date: 01/24/2023
 ---
 
 # Microsoft Plotter Driver
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The Microsoft Plotter Driver is the Microsoft standard printer driver for plotters that support the Hewlett-Packard Graphics Language.
 

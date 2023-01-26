@@ -1,10 +1,12 @@
 ---
 title: V4 Driver UI Architecture
 description: A high level design goal for the v4 driver architecture was to provide built-in support for the Microsoft Store app user interface.
-ms.date: 08/30/2021
+ms.date: 01/25/2023
 ---
 
 # V4 Driver UI Architecture
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 A high level design goal for the v4 driver architecture was to provide built-in support for the Microsoft Store app user interface.
 

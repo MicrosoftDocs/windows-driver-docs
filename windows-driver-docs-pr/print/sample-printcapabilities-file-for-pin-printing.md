@@ -1,11 +1,12 @@
 ---
 title: Sample PrintCapabilities File for PIN Printing
 description: Here is a sample PrintCapabilities file to show how to specify personal ID number (PIN) protected printing.
-ms.date: 04/20/2017
+ms.date: 01/25/2023
 ---
 
 # Sample PrintCapabilities File for PIN Printing
 
+Driver support For Protected Printing
 
 Here is a sample PrintCapabilities file to show how to specify personal ID number (PIN) protected printing.
 
@@ -54,11 +55,3 @@ Here is a sample PrintCapabilities file to show how to specify personal ID numbe
 ```
 
 For more information about protected printing, see [Driver Support For Protected Printing](driver-support-for-protected-printing.md).
-
- 
-
- 
-
-
-
-

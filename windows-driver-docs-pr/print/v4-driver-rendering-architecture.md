@@ -1,10 +1,12 @@
 ---
 title: V4 Printer Driver Rendering Architecture
 description: The rendering architecture for the v4 printer driver model is the same as the XPSDrv architecture.
-ms.date: 08/27/2021
+ms.date: 01/25/2023
 ---
 
 # V4 Printer Driver Rendering Architecture
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The rendering architecture for the v4 printer driver model is the same as the XPSDrv architecture, and the XPS Filter Pipeline also follows the same design that was used in previous versions of Windows, with a few notable additions.
 
