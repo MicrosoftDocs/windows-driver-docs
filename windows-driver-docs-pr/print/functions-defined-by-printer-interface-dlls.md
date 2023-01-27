@@ -4,10 +4,12 @@ description: Provides information about functions defined by printer interface D
 keywords:
 - printer interface DLL WDK, functions
 - functions WDK printer interface DLL
-ms.date: 09/12/2022
+ms.date: 01/27/2023
 ---
 
 # Functions defined by printer interface DLLs
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Printer interface DLLs export the functions listed in the following table.
 

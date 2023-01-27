@@ -1,11 +1,12 @@
 ---
 title: Sample PrintTicket File for PIN Printing
 description: Here is a sample PrintTicket file to show how to specify PIN printing.
-ms.date: 04/20/2017
+ms.date: 01/25/2023
 ---
 
 # Sample PrintTicket File for PIN Printing
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Here is a sample PrintTicket file to show how to specify PIN printing.
 
@@ -26,11 +27,3 @@ Here is a sample PrintTicket file to show how to specify PIN printing.
 ```
 
 For more information about protected printing, see [Driver support For Protected Printing](driver-support-for-protected-printing.md).
-
- 
-
- 
-
-
-
-

@@ -4,20 +4,18 @@ description: Enabling HP-GL/2 Vector Graphics Support (PCL-5e) in the GPD
 keywords:
 - HP-GL/2 monochrome WDK Unidrv , enabling support
 - PCL-5e WDK Unidrv , enabling support
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Enabling HP-GL/2 Vector Graphics Support (PCL-5e) in the GPD
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 To enable HP-GL/2 vector support on Windows XP, you must do two things:
 
-1.  Set the **\*Personality** attribute to PERSONALITY\_HPGL2.
+1. Set the **\*Personality** attribute to PERSONALITY_HPGL2.
 
-2.  Define a GraphicsMode customized feature that has an HPGL2MODE option. To provide raster graphics support as well, include a RASTERMODE option.
+1. Define a GraphicsMode customized feature that has an HPGL2MODE option. To provide raster graphics support as well, include a RASTERMODE option.
 
 You can set the personality attribute in this way:
 
@@ -25,11 +23,11 @@ You can set the personality attribute in this way:
 *Personality: =PERSONALITY_HPGL2
 ```
 
-The PERSONALITY\_HPGL2 constant is defined in stdnames.gpd.
+The PERSONALITY_HPGL2 constant is defined in stdnames.gpd.
 
 The following GPD example demonstrates setting the \***Personality** attribute and defining a GraphicsMode customized feature with both a vector graphics mode, as well as a raster graphics mode. Note that the entire block is guarded by an \*Ifdef GPD compiler directive.
 
-```cpp
+```GPD
 *Ifdef: WINNT_51
 *Personality: =PERSONALITY_HPGL2
 *Feature: GraphicsMode
@@ -54,7 +52,7 @@ The WINNT\_51 parameter used in the above directive applies to versions of Unidr
 
 A GPD file for a color printer should also define a ColorMode feature, as shown in the following generic sample. Note that specific details of your printer might require changes to certain values.
 
-```cpp
+```GPD
 *Feature: ColorMode
 {
   *rcNameID: =COLOR_PRINTING_MODE_DISPLAY
@@ -100,11 +98,3 @@ A GPD file for a color printer should also define a ColorMode feature, as shown 
    }
 }
 ```
-
- 
-
- 
-
-
-
-

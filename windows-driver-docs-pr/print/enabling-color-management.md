@@ -3,10 +3,12 @@ title: Enable color management
 description: Provides information about how to enable color management.
 keywords:
 - color management WDK print, enabling
-ms.date: 09/26/2022
+ms.date: 01/27/2023
 ---
 
 # Enable color management
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Color management can be enabled by either an application or a printer driver. Applications can enable color management by either of the following two methods:
 

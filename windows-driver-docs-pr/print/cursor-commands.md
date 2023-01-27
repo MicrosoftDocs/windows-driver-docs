@@ -4,14 +4,12 @@ description: Cursor Commands
 keywords:
 - printer commands WDK Unidrv , cursors
 - cursor commands WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Cursor Commands
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The [printer commands](printer-commands.md) in the following table control cursor movement. All commands are specified using the [command entry format](command-entry-format.md).
 
@@ -117,14 +115,4 @@ The [printer commands](printer-commands.md) in the following table control curso
 </tbody>
 </table>
 
- 
-
 For examples, see the [sample GPD files](sample-gpd-files.md).
-
- 
-
- 
-
-
-
-

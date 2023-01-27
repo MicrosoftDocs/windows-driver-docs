@@ -8,10 +8,12 @@ keywords:
 - DllGetClassObject
 - filters WDK XPS
 - IPrintPipelineFilter
-ms.date: 06/15/2020
+ms.date: 01/26/2023
 ---
 
 # XPS Filters
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 For the XPS print path, filters are the primary way that a driver prepares print data for the printer. In versions of the Microsoft Windows operating system before Windows Vista, print processors and rendering modules did the work of filters.
 
@@ -25,8 +27,7 @@ An XPS filter is a DLL that exports [DllGetClassObject](/windows/win32/api/comba
 
 Before unloading the filter DLL, the filter pipeline manager calls **DllCanUnloadNow**.
 
-> [!NOTE]
-> In some older XPS filters, the **DllGetClassObject** function retrieves a reference to the filter's **IPrintPipelineFilter** interface instead of to an **IClassFactory** interface. For backward compatibility, the filter pipeline manager in Windows Vista and later versions of Windows will continue to support these filters. However, for new filter designs, **DllGetClassObject** should retrieve a reference to an **IClassFactory** interface.
+In some older XPS filters, the **DllGetClassObject** function retrieves a reference to the filter's **IPrintPipelineFilter** interface instead of to an **IClassFactory** interface. For backward compatibility, the filter pipeline manager in Windows Vista and later versions of Windows will continue to support these filters. However, for new filter designs, **DllGetClassObject** should retrieve a reference to an **IClassFactory** interface.
 
 XPS filters make the printing subsystem more robust, because the filters run in a process different from the spooler. This "sandboxing" both protects against failures and allows a plug-in to run with different security permissions. XPSDrv also enables you to reuse filters across families of printers to lower costs and development time.
 

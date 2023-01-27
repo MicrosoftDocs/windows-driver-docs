@@ -4,14 +4,16 @@ description: Customized Printer Setup Operations
 keywords:
 - customized printer setup operations WDK
 - INF files WDK print , customized setup operations
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Customized Printer Setup Operations
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
+
 To provide customized printer setup operations for printers that are installed using Ntprint.dll, the default Windows 2000 and later printer class installer, you can include a **VendorSetup** INF entry in the printer's INF file.
 
-> [!IMPORTANT]
+> [!CAUTION]
 > Be aware that **VendorSetup** is now deprecated and should not be used by any *new* v3 or v4 drivers that you develop. This topic is provided for reference only, or for the maintenance of existing v3 drivers that already use this INF directive.
 
  Note that if you plan to display user interface elements during the installation of a printer driver, you must use a **VendorSetup** INF entry. However, you should use a **VendorSetup** INF entry only if it is absolutely necessary. A significant disadvantage is that its use prevents an ordinary user from installing a printer by means of Plug and Play (the user must be an Administrator in this case).

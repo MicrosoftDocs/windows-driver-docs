@@ -4,14 +4,12 @@ description: Cursor Attributes
 keywords:
 - cursor attributes WDK Unidrv
 - general printer attributes WDK Unidrv , cursor
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Cursor Attributes
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Cursor attributes are [general printing attributes](general-printing-attributes.md) that specify characteristics of a printer's cursor.
 
@@ -108,14 +106,4 @@ SEND_CR_FIRST</td>
 </tbody>
 </table>
 
- 
-
 For examples, see the [sample GPD files](sample-gpd-files.md).
-
- 
-
- 
-
-
-
-

@@ -1,10 +1,12 @@
 ---
 title: V4 Driver Connectivity Architecture
 description: The v4 print driver model provides rich support for bidirectional communications via the Bidirectional Schema, referred to simply as Bidi.
-ms.date: 08/27/2021
+ms.date: 01/25/2023
 ---
 
 # V4 Driver Connectivity Architecture
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The key goal of connectivity components in the v4 print driver model is to provide rich support for bidirectional communications via the Bidirectional Schema, sometimes referred to simply as Bidi.
 

@@ -7,11 +7,12 @@ keywords:
 - Print Capabilities WDK
 - Print Tickets WDK , about Print Tickets
 - Print Tickets WDK
-ms.date: 04/20/2017
+ms.date: 01/24/2023
 ---
 
 # Print Ticket and Print Capabilities Technologies
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Microsoft Windows Vista introduces the Print Capabilities and Print Ticket technologies. These new technologies provide more flexible and extensible print configuration and more consistent printed document appearance than previous methods. These technologies can be used by both Microsoft Windows Presentation Foundation (WPF) and Microsoft Win32 applications and XPSDrv print drivers and print drivers that are based on the graphics device interface (GDI).
 
@@ -34,6 +35,3 @@ For related information about the Print Ticket and Print Capabilities technologi
 [Print Ticket Support in the XPSDrv Render Module](print-ticket-support-in-the-xpsdrv-render-module.md)
 
 [Methods for Print Ticket Providers and Consumers](/windows-hardware/drivers/ddi/_print/index)
-
- 
-

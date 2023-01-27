@@ -3,18 +3,16 @@ title: Device-Supplied Halftoning
 description: Device-Supplied Halftoning
 keywords:
 - device-supplied halftoning WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Device-Supplied Halftoning
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 If your printer provides halftoning capabilities internally, your minidriver must specify the commands that Unidrv sends to the printer to activate these capabilities. For each halftoning option that is printer-supported, your GPD file's Halftone \*Feature entry must include \*Command entries for each device-supplied halftoning option, as follows:
 
-```cpp
+```GPD
 *Feature: Halftone
 {
     *Option: CustomHalftoneMethod1
@@ -31,11 +29,3 @@ If your printer provides halftoning capabilities internally, your minidriver mus
 ```
 
 ColorMode feature entries must also be specified, and they must include \*DevBPP and \*DevNumOfPlanes entries describing the input formats expected by the printer.
-
- 
-
- 
-
-
-
-

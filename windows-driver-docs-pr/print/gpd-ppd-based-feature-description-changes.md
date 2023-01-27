@@ -1,11 +1,12 @@
 ---
 title: GPD/PPD-Based Feature Description Changes
 description: GPD/PPD-Based Feature Description Changes
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # GPD/PPD-Based Feature Description Changes
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The Microsoft XPSDrv Unidrv/PScript5 driver does not contain any hard-coded Unidrv/PScript5 features. You should specify every feature, option, and constraint in GPD or PPD files if the core driver configuration module needs to handle the feature, option, or constraint. You can still implement configuration plug-ins that provide support for non-GPD or non-PPD features, options, or constraints.
 
@@ -15,7 +16,7 @@ Msxpsinc.gpd and Msxpsinc.ppd files, you can decide how to construct the GPD and
 
 The following code example shows a GPD example to specify the Reverse Order Printing feature that a filter supports in a Unidrv-based XPSDrv filter pipeline:
 
-```cpp
+```GPD
 *Feature: ReverseOrderPrinting
  {
  *PrintSchemaKeywordMap: "JobPageOrder"
@@ -36,7 +37,7 @@ In the preceding example, the "ReverseOrderPrinting" custom GPD feature is defin
 
 The following code example shows a PPD example to specify the Page Orientation feature that a filter supports in a PScript5-based XPSDrv filter pipeline.
 
-```cpp
+```PPD
 *OpenUI *PageOrientation: PickOne
 *DefaultPageOrientation: Portrait
 *PageOrientation Portrait: ""
@@ -56,10 +57,10 @@ By using the **PrintSchemaKeywordMap** or **MSPrintSchemaKeywordMap** keyword, t
 
 In a core driver's DEVMODE structure, settings for these custom GPD or PPD features are stored in the option array.
 
-**Note**   For Windows 7, the **MxdcGetPDEVAdjustment** function has new parameters for landscape rotation. For more information, see [**MxdcXDCGetPDEVAdjustment**](/windows-hardware/drivers/ddi/mxdc/nf-mxdc-mxdcgetpdevadjustment).
-
- 
+For Windows 7, the **MxdcGetPDEVAdjustment** function has new parameters for landscape rotation. For more information, see [**MxdcXDCGetPDEVAdjustment**](/windows-hardware/drivers/ddi/mxdc/nf-mxdc-mxdcgetpdevadjustment).
 
 ## Related topics
+
 [**MxdcXDCGetPDEVAdjustment**](/windows-hardware/drivers/ddi/mxdc/nf-mxdc-mxdcgetpdevadjustment)  
+
 [V4 Printer Driver Localization](v4-driver-localization.md)

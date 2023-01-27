@@ -4,10 +4,12 @@ description: Writing 64-Bit Printer Drivers
 keywords:
 - printer drivers WDK , 64-bit
 - 64-bit WDK printer
-ms.date: 08/25/2020
+ms.date: 01/24/2023
 ---
 
 # Writing 64-Bit Printer Drivers
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 If you are writing a 64-bit driver or writing a driver that can be compiled to run on both 32-bit and 64-bit systems, follow the 64-bit porting guidelines in [Porting Your Driver to 64-Bit Windows](../kernel/porting-your-driver-to-64-bit-windows.md). This topic describes some of the limitations and problems that you might encounter in writing a 64-bit printer driver.
 

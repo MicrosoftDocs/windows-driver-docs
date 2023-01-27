@@ -1,10 +1,12 @@
 ---
 title: V4 Printer Driver Property Bags
 description: The v4 print driver model provides a number of property bags that facilitate a data flow from customized UI applications to the rendering process.
-ms.date: 08/30/2021
+ms.date: 01/25/2023
 ---
 
 # V4 Printer Driver Property Bags
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The v4 print driver model provides a number of property bags that facilitate a data flow from customized UI applications to the rendering process.
 
@@ -34,8 +36,7 @@ The Windows Driver Kit includes a template project for a driver property bag. Th
 
 The user property bag allows partners to store settings in a per-user, machine local context. This property bag is well suited as a storage mechanism for user preferences like "Don't show this again". This property bag is not manageable by administrators and is not synchronized between client and server during printer sharing. The user property bag is only set at runtime and is only available to the printer extensions, UWP device apps, and JavaScript constraints.
 
-> [!NOTE]
-> Since JavaScript constraints may also be called outside of a user context, during despooling, the user property bag is unavailable at this time and Windows will return HRESULT\_FROM\_WIN32(ERROR\_NOT\_FOUND).
+Since JavaScript constraints may also be called outside of a user context, during despooling, the user property bag is unavailable at this time and Windows will return HRESULT\_FROM\_WIN32(ERROR\_NOT\_FOUND).
 
 ## DEVMODE Property Bag
 
@@ -92,8 +93,7 @@ These options, for example, the state of a duplexer, will be exposed into the qu
 
 The value of the property is the keyword name for the option that has been selected by the administrator. For example, Installed. Installable options are editable using the same Set-PrinterProperty cmdlet that is used for queue properties.
 
-> [!NOTE]
-> Starting with Windows 8.1, a user with Administrator rights, or a user who created a print queue can change the Installable options and the per-queue configuration settings for a queue property bag from a UWP device app.
+Starting with Windows 8.1, a user with Administrator rights, or a user who created a print queue can change the Installable options and the per-queue configuration settings for a queue property bag from a UWP device app.
 
 ### Form to Tray Mappings
 

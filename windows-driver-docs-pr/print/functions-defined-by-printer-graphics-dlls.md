@@ -5,15 +5,17 @@ keywords:
 - printer graphics DLL WDK, functions
 - functions WDK printer graphics DLL
 - graphics DLL WDK printer, functions
-ms.date: 09/12/2022
+ms.date: 01/27/2023
 ---
 
 # Functions defined by printer graphics DLLs
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
+
 Like all graphics drivers, printer graphics DLLs are responsible for defining the following graphics DDI functions. Following [**DrvEnableDriver**](/windows/win32/api/winddi/nf-winddi-drvenabledriver), the initial driver entry point, the remaining functions are listed in alphabetical order. Note that because GDI calls **DrvEnableDriver** by name, its name appears in bold. GDI calls all other display driver functions by way of an array of function pointers that **DrvEnableDriver** returns.
 
 | Function name | Description |
-|--|--|
+|---|---|
 | [**DrvEnableDriver**](/windows/win32/api/winddi/nf-winddi-drvenabledriver) | Allows the driver to initialize itself and return pointers to supported graphics DDI functions. |
 | [**DrvCompletePDEV**](/windows/win32/api/winddi/nf-winddi-drvcompletepdev) | Provides the driver with a GDI handle to a device instance. |
 | [**DrvDisableDriver**](/windows/win32/api/winddi/nf-winddi-drvdisabledriver) | (Optional) Allows the driver to perform cleanup operations before being unloaded. |

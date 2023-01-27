@@ -3,26 +3,24 @@ title: Feature Attributes
 description: Feature Attributes
 keywords:
 - printer attributes WDK Unidrv , features
-- feature attribues WDK Unidrv
+- feature attributes WDK Unidrv
 - printer features WDK Unidrv , attributes
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Feature Attributes
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 When specifying a printer feature, you use attributes to provide Unidrv with the following information:
 
--   A text string representing the feature's display name.
+- A text string representing the feature's display name.
 
--   The set of printer options associated with the feature.
+- The set of printer options associated with the feature.
 
--   A Boolean value indicating whether the feature is always present or is installable.
+- A Boolean value indicating whether the feature is always present or is installable.
 
--   The feature type and priority, if the feature is customized, indicating on which property sheet the feature is displayed and its relative priority.
+- The feature type and priority, if the feature is customized, indicating on which property sheet the feature is displayed and its relative priority.
 
 The following table lists the feature attributes in alphabetic order and describes their parameters.
 
@@ -68,7 +66,7 @@ The following table lists the feature attributes in alphabetic order and describ
 </tr>
 <tr class="odd">
 <td><p><strong><em>HelpIndex</strong></p></td>
-<td><p>Numeric value representing an index into the help file specified by the *<strong>HelpFile</strong> <a href="root-level-only-attributes.md" data-raw-source="[root-level-only attribute](root-level-only-attributes.md)">root-level-only attribute</a>.</p></td>
+<td><p>Numeric value representing an index into the help file specified by the*<strong>HelpFile</strong> <a href="root-level-only-attributes.md" data-raw-source="[root-level-only attribute](root-level-only-attributes.md)">root-level-only attribute</a>.</p></td>
 <td><p>(Also an <a href="option-attributes.md" data-raw-source="[option attribute](option-attributes.md)">option attribute</a>.)</p></td>
 </tr>
 <tr class="even">
@@ -81,7 +79,7 @@ The following table lists the feature attributes in alphabetic order and describ
 <td><p><strong><em>InstallableFeatureName</strong></p></td>
 <td><p>Text string that is displayed to ask the user whether an installable feature is actually installed.</p>
 <p>For more information, see <a href="handling-installable-features-and-options.md" data-raw-source="[Handling Installable Features and Options](handling-installable-features-and-options.md)">Handling Installable Features and Options</a>.</p></td>
-<td><p>Required if *<strong>Installable?</strong> is <strong>TRUE</strong> and *<strong>rcInstallableFeatureNameID</strong> is not specified. (Also an <a href="option-attributes.md" data-raw-source="[option attribute](option-attributes.md)">option attribute</a>.)</p></td>
+<td><p>Required if *<strong>Installable?</strong> is <strong>TRUE</strong> and*<strong>rcInstallableFeatureNameID</strong> is not specified. (Also an <a href="option-attributes.md" data-raw-source="[option attribute](option-attributes.md)">option attribute</a>.)</p></td>
 </tr>
 <tr class="even">
 <td><p><strong></em>Name</strong></p></td>
@@ -102,7 +100,7 @@ The following table lists the feature attributes in alphabetic order and describ
 <td><p><strong><em>rcInstallableFeatureNameID</strong></p></td>
 <td><p>Resource ID of a text string that is displayed to ask the user whether an installable feature is actually installed.</p>
 <p>For more information, see <a href="handling-installable-features-and-options.md" data-raw-source="[Handling Installable Features and Options](handling-installable-features-and-options.md)">Handling Installable Features and Options</a>.</p></td>
-<td><p>Required if *<strong>Installable?</strong> is <strong>TRUE</strong> and *<strong>InstallableFeatureName</strong> is not specified. (Also an <a href="option-attributes.md" data-raw-source="[option attribute](option-attributes.md)">option attribute</a>.)</p></td>
+<td><p>Required if *<strong>Installable?</strong> is <strong>TRUE</strong> and*<strong>InstallableFeatureName</strong> is not specified. (Also an <a href="option-attributes.md" data-raw-source="[option attribute](option-attributes.md)">option attribute</a>.)</p></td>
 </tr>
 <tr class="even">
 <td><p><strong></em>rcNameID</strong></p></td>
@@ -117,14 +115,4 @@ The following table lists the feature attributes in alphabetic order and describ
 </tbody>
 </table>
 
- 
-
 For examples, see the [sample GPD files](sample-gpd-files.md).
-
- 
-
- 
-
-
-
-

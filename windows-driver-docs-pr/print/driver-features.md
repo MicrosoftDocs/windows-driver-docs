@@ -1,10 +1,12 @@
 ---
 title: Driver Features
 description: Driver Features
-ms.date: 01/30/2019
+ms.date: 01/27/2023
 ---
 
 # Driver Features
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Driver features are non-PPD features that are synthesized by the driver (for example, the **%OutputFormat** feature). To avoid name conflicts with PPD feature keywords, all driver feature keyword names are preceded by a "%" character. Driver feature/option keywords are also case sensitive.
 
@@ -215,7 +217,7 @@ The following table lists the currently supported driver features. Each row in t
 
     For **GetOptions**, the output buffer pointed to by *pmszFeatureOptionBuf* is as described in the previous paragraph. In the following example, the value for x is 612, the value for y is 792, the values for WidthOffset and HeightOffset are both 0, and the value for FeedDirection is "ShortEdge".
 
-    ```cpp
+    ```PDD
     "%CustomPageSize\0612 792 0 0 ShortEdge\0"
     ```
 
@@ -288,17 +290,17 @@ When **GetOptions** is called on driver feature keywords, if a requested feature
 
 For example, suppose the **GetOptions** method is called, and the *pmszFeaturesRequested* input buffer contains the following string (in MULTI\_SZ format):
 
-```cpp
+```PDD
 "Resolution\0%CustomPageSize\0Unknown_Name\0%Orientation\0\0"
 ```
 
 After **GetOption** returns, the *pmszFeatureOptionBuf* output buffer could contain this string (also in MULTI\_SZ format):
 
-```cpp
+```PDD
 "Resolution\0300dpi\0%CustomPageSize\0612 792 0 0 ShortEdge\0%Orientation\0RotatedLandscape\0\0"
 ```
 
-Notice that the Unknown\_Name feature (which does not exist) listed in the first string does not appear in the second string, since it was not recognized by the Pscript driver. The other features, Resolution, **%CustomPageSize**, and **%Orientation**, appear in the output string, together with their current options, which are "300dpi", "612 792 0 0 ShortEdge", and "RotatedLandscape", respectively. See Driver Features for an explanation of the **%CustomPageSize** options.
+Notice that the Unknown_Name feature (which does not exist) listed in the first string does not appear in the second string, since it was not recognized by the Pscript driver. The other features, Resolution, **%CustomPageSize**, and **%Orientation**, appear in the output string, together with their current options, which are "300dpi", "612 792 0 0 ShortEdge", and "RotatedLandscape", respectively. See Driver Features for an explanation of the **%CustomPageSize** options.
 
 When **SetOptions** is called on driver feature keywords, if a requested feature keyword or its option keyword in the input buffer pointed to by *pmszFeatureOptionBuf* is not recognized, or the feature is recognized but not supported in the current document-sticky or printer-sticky mode (see [Replacing Driver-Supplied Property Sheet Pages](replacing-driver-supplied-property-sheet-pages.md)), or both the feature keyword and its option keyword are recognized but the option keyword is invalid for that feature (for example, trying to set **%TTDownloadFormat** to "NativeTrueType" on a printer that does not support Type42 TTRasterizer), then that feature/option pair will be ignored and the current option for that feature will continue to be in effect.
 

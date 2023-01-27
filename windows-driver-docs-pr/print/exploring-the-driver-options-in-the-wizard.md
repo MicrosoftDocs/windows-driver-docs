@@ -1,32 +1,34 @@
 ---
 title: Exploring the Driver Options in the Wizard
-description: This topic explores the driver options in the first section of the Create a v4 Print Driver wizard.
-ms.date: 06/05/2020
+description: This article explores the driver options in the first section of the Create a v4 Print Driver wizard.
+ms.date: 01/25/2023
 ---
 
 # Exploring the Driver Options in the Wizard
 
-This topic explores the driver options in the first section of the **Create a v4 Print Driver** wizard.
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
-The information is provided here in summarized form, to help you quickly find out about the various feature options. If you want more information about any feature, follow the provided links to related topics that provide more details.
+This article explores the driver options in the first section of the **Create a v4 Print Driver** wizard.
+
+The information is provided here in summarized form, to help you quickly find out about the various feature options. If you want more information about any feature, follow the provided links to related articles that provide more details.
 
 ## Driver rendering type
 
 ### V4 print driver with custom rendering filters (accepts XPS only)
 
-Choose this option, if you want to create a printer driver that only accepts the Microsoft XPS format as input. Note that this driver can produce output in XPS and/or OpenXPS format, depending on the choice that you make in the **Choose the driver XPS format** field.
+Choose this option, if you want to create a printer driver that only accepts the Microsoft XPS format as input. The driver can produce output in XPS and/or OpenXPS format, depending on the choice that you make in the **Choose the driver XPS format** field.
 
 ### V4 print driver with class driver rendering
 
-When you choose this option, you create a printer driver that can accept input in either XPS or OpenXPS format. Additionally, when you choose this driver, you have to indicate on the next page of this Wizard the name of the print class driver that you would like to use for rendering.
+When you choose this option, you create a printer driver that can accept input in either XPS or OpenXPS format. When you choose this driver, you have to indicate on the next page of this Wizard the name of the print class driver that you would like to use for rendering.
 
 ### Microsoft XPS to PCL6 render filter (accepts XPS only)
 
-This option allows you to create a filter driver module that only accepts XPS format as input, and converts the input to PCL6. Note that this driver can produce output in XPS and/or OpenXPS format, depending on the choice that you make in the **Choose the driver XPS format** field.
+This option allows you to create a filter driver module that only accepts XPS format as input, and converts the input to PCL6. The driver can produce output in XPS and/or OpenXPS format, depending on the choice that you make in the **Choose the driver XPS format** field.
 
 ### Microsoft XPS to PostScript render filter (accepts XPS only)
 
-This option allows you to create a filter driver module that only accepts XPS format as input, and converts the input to PostScript. Note that this driver can produce output in XPS and/or OpenXPS format, depending on the choice that you make in the **Choose the driver XPS format** field.
+This option allows you to create a filter driver module that only accepts XPS format as input, and converts the input to PostScript. The driver can produce output in XPS and/or OpenXPS format, depending on the choice that you make in the **Choose the driver XPS format** field.
 
 ## Driver XPS format
 
@@ -66,13 +68,13 @@ Select this option, if you want the ability to use a PIN to lock a print request
 
 ### Driver property bag
 
-This is an XML file that describes the contents of a driver property bag. The properties specified in this file, as well as the information provided in any data files added to the project’s ByteArray or IStream folders, will be compiled into a driver property bag. For more information, see [V4 Printer Driver Property Bags](v4-driver-property-bags.md).
+This is an XML file that describes the contents of a driver property bag. The properties specified in this file, and the information provided in any data files added to the project's ByteArray or IStream folders, will be compiled into a driver property bag. For more information, see [V4 Printer Driver Property Bags](v4-driver-property-bags.md).
 
 And you can find the XML Schema for the driver property bag template in the Windows Driver Kit, in this folder: *\\Include\\um\\printdriverproperties.xml*.
 
 ### Driver event file
 
-This file is used to describe Bidi queries and the triggers that should cause a driver event to be raised. And it is important to note that driver events only support standard strings. For more information about driver events and standard strings, see [Driver Support for Customized UI](driver-support-for-customized-ui.md).
+This file is used to describe Bidi queries and the triggers that should cause a driver event to be raised. And it's important to note that driver events only support standard strings. For more information about driver events and standard strings, see [Driver Support for Customized UI](driver-support-for-customized-ui.md).
 
 ### DevMode mapping file
 
@@ -104,4 +106,4 @@ This provides a simple WSD Bidi extension file. For more information about Bidi 
 
 ### USBMon Bidi extension XML + JS
 
-This provides a simple USB Bidi extension file. It is dependent on the existence of a matched USB Bidi Extender JavaScript. For more information, see [USB Bidi Extender](usb-bidi-extender.md).
+This provides a simple USB Bidi extension file. It's dependent on the existence of a matched USB Bidi Extender JavaScript. For more information, see [USB Bidi Extender](usb-bidi-extender.md).

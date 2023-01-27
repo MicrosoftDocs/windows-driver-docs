@@ -8,14 +8,12 @@ keywords:
 - printer color formats WDK Unidrv
 - color management WDK print , formats
 - Unidrv WDK print
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Handling Color Formats
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Each color format that a printer supports is specified as an option to the ColorMode feature. By using [option attributes for the ColorMode feature](option-attributes-for-the-colormode-feature.md), you can describe each color format that your printer accepts. The following table illustrates the color data formats that Unidrv can handle.
 
@@ -58,25 +56,23 @@ Each color format that a printer supports is specified as an option to the Color
 </tbody>
 </table>
 
- 
-
 For these formats, Unidrv can convert *device-independent bitmap (DIB)* data into the proper format and send it to the printer. (Halftoning operations that can be performed on this data are described in [Halftoning with Unidrv](halftoning-with-unidrv.md).)
 
 If your printer supports color formats that are not listed in the preceding table, you must do the following:
 
--   Set the \*DevNumOfPlanes and \*DevBPP attributes to zero. Doing this prevents Unidrv from sending DIB data to the printer.
+- Set the \*DevNumOfPlanes and \*DevBPP attributes to zero. Doing this prevents Unidrv from sending DIB data to the printer.
 
--   Provide a [rendering plug-in](rendering-plug-ins.md) that implements the [**IPrintOemUni::ImageProcessing**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) method.
+- Provide a [rendering plug-in](rendering-plug-ins.md) that implements the [**IPrintOemUni ImageProcessing**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) method.
 
-The [**IPrintOemUni::ImageProcessing**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) method must perform the following operations:
+The [**IPrintOemUni ImageProcessing**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) method must perform the following operations:
 
--   Convert DIB data into the printer's color format.
+- Convert DIB data into the printer's color format.
 
--   Perform halftoning operations on the data.
+- Perform halftoning operations on the data.
 
--   Send the data to the print spooler.
+- Send the data to the print spooler.
 
-For more information about providing an [**IPrintOemUni::ImageProcessing**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) function, see [Customized Color Formats](customized-color-formats.md).
+For more information about providing an [**IPrintOemUni ImageProcessing**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) function, see [Customized Color Formats](customized-color-formats.md).
 
 ### Rendering High Quality Images
 
@@ -84,7 +80,7 @@ For each color format, you specify both the bits per pixel that the printer hard
 
 For example, suppose you want to define a ColorMode option that causes images to be rendered as 24 bits/pixel bitmaps, but then you want the bitmap to be sent to the printer as *CMYK* data. You might define this mode as follows:
 
-```cpp
+```GPD
 *Feature: ColorMode
 {
     *Option: 24toCMYK
@@ -101,4 +97,3 @@ For example, suppose you want to define a ColorMode option that causes images to
 ```
 
 In this example, the \***DevBPP** and \***DevNumOfPlanes** attributes represent the four-plane, one-bit-per-plane CMYK format that Unidrv can render and then send to the printer. However, in this case, halftoning operations must be performed on the rendered image before it is printed. [Minidriver-supplied halftoning](minidriver-supplied-halftoning.md) must be used.
-

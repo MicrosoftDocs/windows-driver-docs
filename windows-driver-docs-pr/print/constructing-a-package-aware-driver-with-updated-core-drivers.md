@@ -1,10 +1,12 @@
 ---
 title: Constructing a Package-Aware Driver with Updated Core Drivers
 description: Constructing a Package-Aware Driver with Updated Core Drivers
-ms.date: 04/20/2017
+ms.date: 01/26/2023
 ---
 
 # Constructing a Package-Aware Driver with Updated Core Drivers
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 A package-aware driver ensures that all of the driver components in your package are configured for use during a point-and-print operation. Point and print enables a Windows user to create a connection to a remote printer without providing disks or other installation media. Instead, the print server automatically downloads the print driver package to the client. For more information, see [Point and Print with Driver Packages](point-and-print-with-driver-packages.md).
 
@@ -16,8 +18,7 @@ If a QFE package is available for the core print drivers, you can obtain the QFE
 
 If your package-aware driver package must use a version of the core driver package that is newer than the version in the initial Windows Vista release, then you must distribute the required core driver package with your package-aware driver. Note that Windows Vista provides no mechanism to resolve your driver's core driver dependency if the required core driver package is not already in the driver store. In addition, the Plug and Play (PnP) manager provides no information to help the printer installer to determine whether a required core driver package is available before the installation begins. If the required core driver package is not in the driver store, the installation will fail. Thus, if a manufacturer releases a package-aware driver package that requires an updated version of the core driver package, the release must include the required core driver package to ensure that installation succeeds.
 
-> [!NOTE]
-> If possible, avoid making your package-aware driver package dependent on a system-supplied core driver package that is newer than the initial Windows Vista release. Otherwise, you must take additional steps to ensure that your driver package installs properly on Windows Vista releases with older versions of the core driver package.
+If possible, avoid making your package-aware driver package dependent on a system-supplied core driver package that is newer than the initial Windows Vista release. Otherwise, you must take additional steps to ensure that your driver package installs properly on Windows Vista releases with older versions of the core driver package.
 
 Localized help content is included in the core driver package, but this content will not be updated after the initial Windows Vista release. When selecting a language for a driver package, use the language that is the most likely to be understood by those installing the package. Typically, a manufacturer who wants to ship a single package to cover multiple languages should use English. The choice of a language for the driver package will not impact the localized help content already available on client machines.
 

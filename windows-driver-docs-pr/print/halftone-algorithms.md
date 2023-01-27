@@ -5,20 +5,18 @@ keywords:
 - HP-GL/2 monochrome WDK Unidrv , halftone algorithms
 - PCL-5e WDK Unidrv , halftone algorithms
 - halftoning WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Halftone Algorithms
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Some printer vendors prefer to use different halftone algorithms while printing different kinds of objects, such as text, vector objects, and bitmaps. The three examples that follow show what should be added to the GPD to print each of these types of objects.
 
 The first example shows how to incorporate halftone rendering while printing text.
 
-```cpp
+```GPD
 *Ifdef: WINNT_51
 *Feature: TEXTHALFTONE
 {
@@ -46,7 +44,7 @@ The first example shows how to incorporate halftone rendering while printing tex
 
 The second example includes commands for halftone rendering while printing vector graphics.
 
-```cpp
+```GPD
 *Ifdef:  WINNT_51
 *Feature: GRAPHICSHALFTONE
 {
@@ -73,7 +71,7 @@ The second example includes commands for halftone rendering while printing vecto
 
 The third example includes commands for halftone rendering while printing bitmaps.
 
-```cpp
+```GPD
 *Ifdef: WINNT_51
 *Feature: PHOTOHALFTONE
 {
@@ -97,11 +95,3 @@ The third example includes commands for halftone rendering while printing bitmap
 }
 *Endif:
 ```
-
- 
-
- 
-
-
-
-

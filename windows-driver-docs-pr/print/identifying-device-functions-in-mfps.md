@@ -1,10 +1,12 @@
 ---
 title: Identifying Device Functions in MFPs
 description: Identifying Device Functions in MFPs
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Identifying Device Functions in MFPs
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The Devices and Printers user interface uses a device container identifier (ContainerID) to identify the printer and scanner functions that belong to an MFP. A ContainerID is a GUID that all the functional device instances (devnodes) in an MFP or other multifunction device can use to identify themselves as part of the same multifunction device. For example, the printer functional device instance and the scanner functional device instance in an MFP should have the same ContainerID value.
 
