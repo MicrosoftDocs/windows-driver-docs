@@ -3,14 +3,12 @@ title: IPrintOemUI COM Interface
 description: IPrintOemUI COM Interface
 keywords:
 - IPrintOemUI
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # IPrintOemUI COM Interface
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The `IPrintOemUI` COM interface is the means by which the [printer interface DLL](printer-interface-dll.md) for Unidrv or Pscript5 communicates with a UI plug-in. The `IPrintOemUI` interface is implemented by each UI plug-in.
 
@@ -87,7 +85,4 @@ The following table lists and describes all the methods that the `IPrintOemUI` i
 </tbody>
 </table>
 
- 
-
 For more information, see [Implementing Printer Driver COM Interfaces](implementing-printer-driver-com-interfaces.md).
-

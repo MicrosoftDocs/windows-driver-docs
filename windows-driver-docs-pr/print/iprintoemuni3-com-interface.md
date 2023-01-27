@@ -3,14 +3,12 @@ title: IPrintOemUni3 COM Interface
 description: IPrintOemUni3 COM Interface
 keywords:
 - IPrintOemUni3
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # IPrintOemUni3 COM Interface
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The `IPrintOemUni3` COM interface contains all the methods of, and extends the capabilities of, the [IPrintOemUni COM Interface](iprintoemuni-com-interface.md) and the [IPrintOemUni2 COM Interface](iprintoemuni2-com-interface.md).
 
@@ -43,7 +41,4 @@ The following table lists and describes all of the methods provided by the `IPri
 </tbody>
 </table>
 
- 
-
 For more information, see [Implementing Printer Driver COM Interfaces](implementing-printer-driver-com-interfaces.md).
-

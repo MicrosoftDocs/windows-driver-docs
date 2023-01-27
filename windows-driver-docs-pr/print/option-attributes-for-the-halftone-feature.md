@@ -3,14 +3,12 @@ title: Option Attributes for the Halftone Feature
 description: Option Attributes for the Halftone Feature
 keywords:
 - Halftone Feature
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Option Attributes for the Halftone Feature
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following table lists the attributes associated with the Halftone feature. For more information about the Halftone feature, see [Standard Features](standard-features.md).
 
@@ -42,7 +40,7 @@ The following table lists the attributes associated with the Halftone feature. F
 <tr class="odd">
 <td><p></em><strong>HTPatternSize</strong></p></td>
 <td><p><a href="pairs.md" data-raw-source="[Pair](pairs.md)">Pair</a> of numeric values representing the width and height, in pixels, of the pattern specified by <em><strong>rcHTPatternID</strong>.</p></td>
-<td><p>Required if *<strong>rcHTPatternID</strong> is specified. The maximum pattern size is PAIR (256, 256). Width and height, multiplied together, must be divisible by 4 for storage as DWORDs.</p></td>
+<td><p>Required if*<strong>rcHTPatternID</strong> is specified. The maximum pattern size is PAIR (256, 256). Width and height, multiplied together, must be divisible by 4 for storage as DWORDs.</p></td>
 </tr>
 <tr class="even">
 <td><p></em><strong>rcHTPatternID</strong></p></td>
@@ -52,9 +50,6 @@ The following table lists the attributes associated with the Halftone feature. F
 </tbody>
 </table>
 
- 
-
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
 For more information about using these attributes, see [Halftoning with Unidrv](halftoning-with-unidrv.md). These attributes are not used with [minidriver-supplied halftoning](minidriver-supplied-halftoning.md).
-

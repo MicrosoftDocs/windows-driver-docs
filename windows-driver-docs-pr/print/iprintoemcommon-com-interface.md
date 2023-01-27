@@ -1,11 +1,12 @@
 ---
 title: IPrintOemCommon COM Interface
 description: IPrintOemCommon COM Interface
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # IPrintOemCommon COM Interface
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The `IPrintOemCommon` COM interface enables a plug-in to specify or get device information. This interface provides functionality that is common between the user interface and rendering plug-ins.
 
@@ -34,14 +35,4 @@ The following table lists and describes all the methods that the `IPrintOemCommo
 </tbody>
 </table>
 
- 
-
 For information about how these methods are implemented for UI plug-ins, see [IPrintOemUI COM Interface](iprintoemui-com-interface.md).
-
- 
-
- 
-
-
-
-

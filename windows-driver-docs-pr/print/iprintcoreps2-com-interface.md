@@ -3,14 +3,12 @@ title: IPrintCorePS2 COM Interface
 description: IPrintCorePS2 COM Interface
 keywords:
 - IPrintCorePS2
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # IPrintCorePS2 COM Interface
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The `IPrintCorePS2` COM interface provides a set of helper methods for Pscript5 render plug-ins. The following table lists and describes all of the methods defined by the `IPrintCorePS2` interface.
 
@@ -57,7 +55,4 @@ The `IPrintCorePS2` COM interface provides a set of helper methods for Pscript5 
 </tbody>
 </table>
 
- 
-
 For more information, see [Implementing Printer Driver COM Interfaces](implementing-printer-driver-com-interfaces.md).
-

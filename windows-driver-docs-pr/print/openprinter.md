@@ -3,10 +3,12 @@ title: OpenPrinter
 description: Provides information about IPrintTicketProvider interface methods that are called when a print queue is opened using the OpenPrinter function.
 keywords:
 - OpenPrinter
-ms.date: 09/06/2022
+ms.date: 01/27/2023
 ---
 
 # OpenPrinter
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 When a print queue is opened using the **OpenPrinter** function, the print driver is loaded and the following methods of the [**IPrintTicketProvider**](/windows-hardware/drivers/ddi/prdrvcom/nn-prdrvcom-iprintticketprovider) interface are called in this order:
 
