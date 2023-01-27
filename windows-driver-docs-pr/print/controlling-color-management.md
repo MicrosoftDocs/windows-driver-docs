@@ -1,45 +1,21 @@
 ---
 title: Controlling Color Management
-description: Controlling Color Management
+description: Color management for a printer can be controlled by an application, the system (GDI), the driver, or device hardware.
 keywords:
 - color management WDK print , controlling
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Controlling Color Management
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Color management for a printer can be controlled by an application, the system (GDI), the driver, or device hardware. The driver determines which component is managing color correction by examining flags within the [**BRUSHOBJ**](/windows/win32/api/winddi/ns-winddi-brushobj) and [**XLATEOBJ**](/windows/win32/api/winddi/ns-winddi-xlateobj) structures that are passed to its implementations of graphics DDI drawing functions. The following flags are defined:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Flag</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>BR_DEVICE_ICM in BRUSHOBJ</p>
-<p>XO_DEVICE_ICM in XLATEOBJ</p></td>
-<td><p>Color management is being performed by the driver or the device.</p></td>
-</tr>
-<tr class="even">
-<td><p>BR_HOST_ICM in BRUSHOBJ</p>
-<p>XO_HOST_ICM in XLATEOBJ</p></td>
-<td><p>Color management is being performed by the application or the system (GDI).</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Flag | Definition |
+|---|---|
+| BR_DEVICE_ICM in BRUSHOBJ<br><br>XO_DEVICE_ICM in XLATEOBJ | Color management is being performed by the driver or the device. |
+| BR_HOST_ICM in BRUSHOBJ<br><br>XO_HOST_ICM in XLATEOBJ | Color management is being performed by the application or the system (GDI). |
 
 The following topics describe driver support for these color management scenarios:
 
@@ -50,6 +26,3 @@ The following topics describe driver support for these color management scenario
 [Supporting CMYK Color Space](supporting-cmyk-color-space.md)
 
 [Color Management of JPEG and PNG Images](color-management-of-jpeg-and-png-images.md)
-
- 
-

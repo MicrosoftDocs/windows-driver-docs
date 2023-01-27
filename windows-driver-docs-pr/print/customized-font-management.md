@@ -16,14 +16,12 @@ keywords:
 - downloadable PCL soft fonts WDK Unidrv
 - PCL soft fonts WDK Unidrv
 - Unidrv WDK print
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Customized Font Management
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 For *PCL* printers, Unidrv supports downloading soft fonts as bitmaps or TrueType outlines. For device fonts, Unidrv supports PCL, CAPSL, and PPDS printer command formats. For other formats, customized font management code must be provided in a rendering plug-in. The following set of IPrintOemUni methods can be implemented:
 
@@ -79,11 +77,11 @@ For cartridge fonts that are not specified using [font cartridges](font-cartridg
 
 A .uff file is a binary file that is constructed using the following sets of structures:
 
--   [Unidrv font format structures](/windows-hardware/drivers/ddi/_print/index), which define the contents and structure of a .uff file.
+- [Unidrv font format structures](/windows-hardware/drivers/ddi/_print/index), which define the contents and structure of a .uff file.
 
--   [Unidrv font metrics structures](/windows-hardware/drivers/ddi/_print/index), which define the metrics for each font.
+- [Unidrv font metrics structures](/windows-hardware/drivers/ddi/_print/index), which define the metrics for each font.
 
--   [Unidrv glyph translation table structures](/windows-hardware/drivers/ddi/_print/index), which define the glyph sets used by the fonts.
+- [Unidrv glyph translation table structures](/windows-hardware/drivers/ddi/_print/index), which define the glyph sets used by the fonts.
 
 The following figure shows the layout of a Unidrv Font Format file.
 
@@ -138,9 +136,4 @@ All .uff files must be stored in the %SystemRoot%\\System32\\Spool\\Drivers\\Uni
 </tbody>
 </table>
 
- 
-
 After you add a font cartridge to a printer, the system administrator must run the font installer, which is responsible to copy font descriptions from the .uff file specified by "ExtFontCartFile" into the .uff file specified by "ExternalFontFile". Likewise, the font installer must remove font descriptions from the .uff file specified by "ExtFontCartFile" when a cartridge is removed.
-
- 
-

@@ -8,18 +8,16 @@ keywords:
 - functions WDK CPSUI
 - CommonPropertySheetUI
 - ComPropSheet
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # CPSUI-Supplied Functions
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 CPSUI provides the following two important functions for applications:
 
--   [**CommonPropertySheetUI**](/windows-hardware/drivers/ddi/compstui/nf-compstui-commonpropertysheetuia)
+- [**CommonPropertySheetUI**](/windows-hardware/drivers/ddi/compstui/nf-compstui-commonpropertysheetuia)
 
     The [**CommonPropertySheetUI**](/windows-hardware/drivers/ddi/compstui/nf-compstui-commonpropertysheetuia) function is CPSUI's entry point. The function causes property sheet pages to be created and displayed, and then allows them to be viewed and modified by a user.
 
@@ -27,13 +25,10 @@ CPSUI provides the following two important functions for applications:
 
     Note that printer interface DLLs do not call this function; it is called by the print spooler.
 
--   [**ComPropSheet**](/windows-hardware/drivers/ddi/compstui/nc-compstui-pfncompropsheet)
+- [**ComPropSheet**](/windows-hardware/drivers/ddi/compstui/nc-compstui-pfncompropsheet)
 
     The [**ComPropSheet**](/windows-hardware/drivers/ddi/compstui/nc-compstui-pfncompropsheet) function is the means by which applications describe property sheet pages to CPSUI, so that CPSUI can create and display them. CPSUI applications call this function from within [page creation callbacks](page-creation-callbacks.md). Typically, a page description includes a pointer to a [page event callback](page-event-callbacks.md), which CPSUI will call when the application user modifies page values.
 
 For a detailed description of when these functions are called, see [Using CPSUI with Printer Drivers](using-cpsui-with-printer-drivers.md).
 
 Two additional CPSUI-supplied functions, [**SetCPSUIUserData**](/windows-hardware/drivers/ddi/compstui/nf-compstui-setcpsuiuserdata) and [**GetCPSUIUserData**](/windows-hardware/drivers/ddi/compstui/nf-compstui-getcpsuiuserdata), can be used by application-supplied dialog box procedures to store and retrieve an application-supplied value.
-
- 
-

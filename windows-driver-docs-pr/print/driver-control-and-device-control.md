@@ -8,10 +8,12 @@ keywords:
 - device-controlled color management WDK print
 - driver color management WDK See color management WDK
 - device color management WDK See color management WDK
-ms.date: 09/12/2022
+ms.date: 01/27/2023
 ---
 
 # Driver control and device control
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 If color management control is provided by either the driver or by printer hardware, the driver's [printer graphics DLL](printer-graphics-dll.md) must set the GCAPS_ICM flag in the [**DEVINFO**](/windows/win32/api/winddi/ns-winddi-devinfo) structure.
 

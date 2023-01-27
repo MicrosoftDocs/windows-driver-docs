@@ -1,10 +1,12 @@
 ---
 title: CPSUI Option Types
 description: When using CPSUI to create a property sheet page, user-selectable options must be defined using CPSUI-supported window controls.
-ms.date: 08/31/2021
+ms.date: 01/27/2023
 ---
 
 # CPSUI Option Types
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 When using CPSUI to create a property sheet page, user-selectable options must be defined using [CPSUI-supported window controls](./cpsui-supported-window-controls.md).
 
