@@ -4,10 +4,12 @@ description: A block macro is used to delimit a set of GPD file entries that you
 keywords:
 - block macros WDK GPD files
 - referencing macros
-ms.date: 09/09/2022
+ms.date: 01/26/2023
 ---
 
 # Block macros
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 A block macro is used to delimit a set of GPD file entries that you want to insert repeatedly into a GPD file. You can include any entry type in a block macro definition, such as feature and option statements, attribute specifications, and references to value macros or other block macros.
 
@@ -15,13 +17,13 @@ The following rules apply to the use of block macros:
 
 - A block macro definition within a GPD file must be located before any references to it.
 
-- A block macro defined at root level (that is, not inside braces) is available through the GPD file that defines it, after it is defined. Otherwise, the scope of a block macro is the set of left and right braces containing its definition.
+- A block macro defined at root level (that is, not inside braces) is available through the GPD file that defines it, after it's defined. Otherwise, the scope of a block macro is the set of left and right braces containing its definition.
 
 - A block macro definition can contain definitions of additional block macros and value macros.
 
-- A block macro definition can reference other previously-defined block macros and value macros, but it cannot reference itself.
+- A block macro definition can reference other previously defined block macros and value macros, but it can't reference itself.
 
-- Block macros do not accept arguments.
+- Block macros don't accept arguments.
 
 - If braces are included in a macro body, they must be paired (that is, there must be an equal number of left and right braces).
 

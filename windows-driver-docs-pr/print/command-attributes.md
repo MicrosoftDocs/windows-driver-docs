@@ -10,22 +10,20 @@ keywords:
 - NoPageEject
 - Order
 - Params
-ms.date: 04/20/2017
+ms.date: 01/26/2023
 ---
 
 # Command Attributes
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 When specifying a printer command, you use attributes to provide Unidrv with the following information:
 
--   The escape sequence that causes the hardware to perform the operation, if the operation is implemented in printer hardware.
+- The escape sequence that causes the hardware to perform the operation, if the operation is implemented in printer hardware.
 
--   The callback identifier and parameters required by the [**IPrintOemUni::CommandCallback**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-commandcallback) method, if the operation is implemented in a [rendering plug-in](rendering-plug-ins.md).
+- The callback identifier and parameters required by the [**IPrintOemUni::CommandCallback**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-commandcallback) method, if the operation is implemented in a [rendering plug-in](rendering-plug-ins.md).
 
--   The order in which the command should be sent, relative to other commands.
+- The order in which the command should be sent, relative to other commands.
 
 The following table lists the command attributes in alphabetic order and describes their parameters.
 
@@ -73,7 +71,4 @@ The following table lists the command attributes in alphabetic order and describ
 </tbody>
 </table>
 
- 
-
 For examples, see the [sample GPD files](sample-gpd-files.md).
-

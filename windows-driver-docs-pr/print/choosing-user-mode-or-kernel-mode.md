@@ -6,10 +6,12 @@ keywords:
 - graphics DLL WDK printer , user-mode vs. kernel-mode
 - user-mode execution WDK printer graphics
 - kernel-mode execution WDK printer graphics
-ms.date: 09/09/2022
+ms.date: 01/26/2023
 ---
 
 # Choose user mode or kernel mode
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 User-mode execution of printer graphics DLLs provides the following advantages over kernel-mode execution:
 
@@ -21,11 +23,11 @@ User-mode execution of printer graphics DLLs provides the following advantages o
 
 - Easier debugging, with user-mode debuggers.
 
-- Better floating-point capabilities, since use of graphics DDI floating-point functions is not required.
+- Better floating-point capabilities, since use of graphics DDI floating-point functions isn't required.
 
-- Ability to call any customized, vendor-supplied user-mode DLLs that are not part of the described Microsoft Windows 2000 and later printer driver architecture
+- Ability to call any customized, vendor-supplied user-mode DLLs that aren't part of the described Microsoft Windows 2000 and later printer driver architecture
 
-In Windows Vista, it is not possible to install a kernel-mode printer driver. If an application attempts to do so, the AddPrinterDriver and AddprinterDriverEx functions (described in the Windows SDK documentation) will fail with the error code ERROR_KM_DRIVER_BLOCKED.
+In Windows Vista, it isn't possible to install a kernel-mode printer driver. If an application attempts to do so, the AddPrinterDriver and AddprinterDriverEx functions (described in the Windows SDK documentation) will fail with the error code ERROR_KM_DRIVER_BLOCKED.
 
 The following table shows allowed printer driver execution modes:
 
@@ -38,13 +40,13 @@ The following table shows allowed printer driver execution modes:
 
 ## Using the graphics DDI in user mode
 
-A user-mode printer graphics DLL is not limited to calling the [GDI Support Services](../display/gdi-support-services.md) and other Eng-prefixed graphics DDI callback functions. However, there are some rules that must be followed:
+A user-mode printer graphics DLL isn't limited to calling the [GDI Support Services](../display/gdi-support-services.md) and other Eng-prefixed graphics DDI callback functions. However, there are some rules that must be followed:
 
-- Like kernel-mode graphics DLLs, user-mode graphics DLLs must call the graphics DDIs that create or modify a drawing surface. These callback functions are the GDI Support Services, and calling Win32 equivalents of these drawing functions is not allowed.
+- Like kernel-mode graphics DLLs, user-mode graphics DLLs must call the graphics DDIs that create or modify a drawing surface. These callback functions are the GDI Support Services, and calling Win32 equivalents of these drawing functions isn't allowed.
 
     For user-mode DLLs, calls to these drawing callback functions are intercepted by the user-mode GDI client, which then passes the calls to GDI's kernel-mode graphics rendering engine (GRE).
 
-- The following list of Eng-prefixed graphics DDI functions cannot be called by user-mode DLLs:
+- The following list of Eng-prefixed graphics DDI functions can't be called by user-mode DLLs:
 
     [**EngCreatePath**](/windows/win32/api/winddi/nf-winddi-engcreatepath)
 
@@ -58,13 +60,13 @@ A user-mode printer graphics DLL is not limited to calling the [GDI Support Serv
 
 ## Converting an existing printer graphics DLL to user mode
 
-If you have previously developed a printer graphics DLL that executes in kernel mode, you can convert the DLL to user-mode execution. To convert, simply add a [**DrvQueryDriverInfo**](/windows/win32/api/winddi/nf-winddi-drvquerydriverinfo) function to the DLL, and then follow the rules for [building a printer graphics DLL](building-a-printer-graphics-dll.md).
+If you've previously developed a printer graphics DLL that executes in kernel mode, you can convert the DLL to user-mode execution. To convert, add a [**DrvQueryDriverInfo**](/windows/win32/api/winddi/nf-winddi-drvquerydriverinfo) function to the DLL, and then follow the rules for [building a printer graphics DLL](building-a-printer-graphics-dll.md).
 
 ## Creating a new printer graphics DLL in user mode
 
 To develop a new printer graphics DLL that executes in user mode, you can continue to use all the graphics DDI functions used by kernel-mode DLLs. However, you also have the following options:
 
-- For Eng-prefixed functions that have exact Win32 equivalents, it is strongly recommended that you call the Win32 functions. The following table lists these Eng-prefixed functions, along with their Win32 equivalents.
+- For Eng-prefixed functions that have exact Win32 equivalents, it's recommended that you call the Win32 functions. The following table lists these Eng-prefixed functions, along with their Win32 equivalents.
 
     | Eng-prefixed function | Win32 equivalent |
     |--|--|
@@ -86,7 +88,7 @@ To develop a new printer graphics DLL that executes in user mode, you can contin
     | EngUnloadImage | FreeLibrary |
     | EngWritePrinter | WritePrinter |
 
-- For Eng-prefixed functions that correspond to Win32 functions with similar functionality, it is also strongly recommended that you call the Win32 functions. The following table lists several of these Eng-prefixed functions, together with their Win32 counterparts.
+- For Eng-prefixed functions that correspond to Win32 functions with similar functionality, it's also recommended that you call the Win32 functions. The following table lists several of these Eng-prefixed functions, together with their Win32 counterparts.
 
     | Eng-prefixed function | Win32 equivalent |
     |--|--|

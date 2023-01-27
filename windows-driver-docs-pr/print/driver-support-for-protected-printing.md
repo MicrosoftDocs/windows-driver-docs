@@ -1,10 +1,12 @@
 ---
 title: Driver Support for Protected Printing
 description: Windows 8.1 includes support for protected printing, which allows users to specify a personal identification number (PIN) that is then used at the printer, prior to the job being printed out.
-ms.date: 04/20/2017
+ms.date: 01/25/2023
 ---
 
 # Driver Support for Protected Printing
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Windows 8.1 includes support for protected printing, which allows users to specify a personal identification number (PIN) that is then used at the printer, prior to the job being printed out.
 
@@ -35,8 +37,7 @@ If you're working with a v4 driver, you have to make changes to the generic prin
 - Printer extensions
 - UWP device apps
 
-> [!NOTE]
-> You can use a v3 driver with the Print Schema keywords for protected printing, as long as you make the required changes in your PTProvider code. But the steps for making those changes are outside the scope of this topic.
+ou can use a v3 driver with the Print Schema keywords for protected printing, as long as you make the required changes in your PTProvider code. But the steps for making those changes are outside the scope of this topic.
 
 The following sections give you more information about how to implement changes that will allow your v4 driver to support protected printing.
 
@@ -229,8 +230,7 @@ Here is an example of a GPD file specifying JobPasscode with an Installable Hard
 }
 ```
 
-> [!NOTE]
-> You must use the \*ConcealFromUI keyword and set it to TRUE to prevent the protected printing option from being shown unintentionally. See the preceding GPD file example.
+You must use the \*ConcealFromUI keyword and set it to TRUE to prevent the protected printing option from being shown unintentionally. See the preceding GPD file example.
 
 Here's an example of a PPD file specifying JobPasscode with an Installable Hardware Constraint.
 
@@ -263,8 +263,7 @@ Here's an example of a PPD file specifying JobPasscode with an Installable Hardw
 
 As you can see in the preceding PPD file example, the \*UIConstraints keyword indicates the hardware constraint.
 
-> [!NOTE]
-> The Windows operating system automatically displays locale-specific strings for the protected printing feature and its associated options. You can't specify a new localized name for this feature or its options.
+The Windows operating system automatically displays locale-specific strings for the protected printing feature and its associated options. You can't specify a new localized name for this feature or its options.
 
 ### XPS rendering filters
 

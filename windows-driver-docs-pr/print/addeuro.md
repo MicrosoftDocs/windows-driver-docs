@@ -7,10 +7,12 @@ keywords:
 - Euro symbol WDK print
 - European Union symbol WDK print
 - ADHasEuro
-ms.date: 09/02/2021
+ms.date: 01/26/2023
 ---
 
 # AddEuro feature
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The Euro symbol, as shown in the following figure, is the currency symbol for the basic monetary unit used in countries/regions of the European Union.
 

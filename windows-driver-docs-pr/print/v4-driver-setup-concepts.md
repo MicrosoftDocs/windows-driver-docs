@@ -1,10 +1,12 @@
 ---
 title: V4 driver setup concepts
 description: The v4 print driver model uses a new setup model to improve the user experience and reduce support costs.
-ms.date: 09/09/2022
+ms.date: 01/25/2023
 ---
 
 # V4 driver setup concepts
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The v4 print driver model uses a new setup model to improve the user experience and reduce support costs.
 

@@ -6,14 +6,12 @@ keywords:
 - ignored blocks WDK GPD files
 - GPD file entries WDK Unidrv , comments
 - comments WDK GPD files
-ms.date: 04/20/2017
+ms.date: 01/26/2023
 ---
 
 # Comments and Ignored Blocks
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 GPD files can contain comments. The format for a comment is as follows:
 
@@ -48,8 +46,6 @@ To request the GPD parser to ignore a group of GPD entries, you can create an ig
 </tbody>
 </table>
 
- 
-
 where *IgnoredEntries* is a set of GPD file entries, containing an equal number of left and right braces.
 
 In the following example, the GPD parser ignores the GPD entries describing the LANDSCAPE\_CC90 option.
@@ -82,11 +78,3 @@ In the following example, the GPD parser ignores the GPD entries describing the 
 }
 }
 ```
-
- 
-
- 
-
-
-
-

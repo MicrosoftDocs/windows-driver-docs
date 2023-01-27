@@ -11,7 +11,7 @@ This topic provides guidance to Mobile Broadband (MB) module manufacturers inten
 
 The information in this topic applies to:
 
--   Windows 8
+-   Windows 8/Windows 10/Windows 11
 
 ## Device Requirements
 

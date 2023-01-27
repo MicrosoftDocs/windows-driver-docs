@@ -1,10 +1,12 @@
 ---
 title: USB Bidi Extender
 description: Describes Bidi support for USB device using a combination of a Bidi XML file and a Javascript file known as a USB Bidi extender.
-ms.date: 06/11/2018
+ms.date: 01/25/2023
 ---
 
 # USB Bidi Extender
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Windows allows manufacturers to support bidirectional communication (Bidi) for USB devices by using a combination of a Bidi XML file and a Javascript file known as a USB Bidi extender.
 
@@ -90,13 +92,13 @@ After the registry key shown in preceding section is created, and the hosting pr
 
 1. Attach your debugger to the hosting process. For USB Bidi JavaScript, this is spoolsv.exe.
 
-2. Set the debugger to script debugging mode.
+1. Set the debugger to script debugging mode.
 
-3. Select **Break All** (Ctrl + Alt + Break) to break into the process the next time a script runs.
+1. Select **Break All** (Ctrl + Alt + Break) to break into the process the next time a script runs.
 
-4. Run the scenario to reproduce your issue.
+1. Run the scenario to reproduce your issue.
 
-5. Once the debugger breaks into a JavaScript function, set any necessary breakpoints and step through the code.
+1. Once the debugger breaks into a JavaScript function, set any necessary breakpoints and step through the code.
 
 ## Related topics
 

@@ -7,45 +7,49 @@ keywords:
 - states WDK printer
 - offline state WDK printer
 - hot-pluggable bus WDK printer
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Device Error States
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Print devices and their drivers should recover gracefully from any error states that a user can encounter. It is pertinent to test all of your device's possible error states. Ensure that the device notifies the user of each error state, and that the device cancels the action, recovers, and restarts from each error state. First set up the error state, and then verify that the user is informed of the proper error state.
 
 Common printer error states include:
 
--   **Out of Paper**
+- **Out of Paper**
 
--   **Print Door Open**
+- **Print Door Open**
 
--   **Out of Toner**
+- **Out of Toner**
 
--   **Paper Jam**
+- **Paper Jam**
 
--   **Offline**
+- **Offline**
 
--   **Hot-Pluggable Bus Errors**
+- **Hot-Pluggable Bus Errors**
 
 Test each of these error states, both before and during print job operations, with the following procedure:
 
-1.  Set up the error state and then send a print job.
+1. Set up the error state and then send a print job.
 
-2.  Verify that the job can be canceled, recovered from, and restarted.
+1. Verify that the job can be canceled, recovered from, and restarted.
 
-3.  Set up the error state to occur during a print job, and then again verify that the job can be canceled, recovered from, and restarted.
+1. Set up the error state to occur during a print job, and then again verify that the job can be canceled, recovered from, and restarted.
 
 You should also perform the following additional test procedures for offline and hot-pluggable error states:
 
--   **Offline**
-    -   When the printer goes into the offline state, verify that the print job remains in the job queue until the device becomes ready for printing again. The job should then complete successfully.
-    -   Unplug the power from the printer during and before print jobs. Confirm that the printer reacquires the job queue and starts printing again. See more details in [Power Management](power-management.md).
--   **Hot-Pluggable Bus Errors**
-    -   With the device connected, unload and load the device stack (for example, the [USB Driver Stack](/windows-hardware/drivers/ddi/index)). Send print jobs before, during, and after unloading the stack. For example, with USB devices connected, uninstall the USB root hub or host controller to which the device is connected.
-    -   Test unloading and loading the device stack with and without print jobs in progress. Verify that the job can be canceled, recovered from, and restarted.
-    -   Reload the device stack to allow the print job to recover gracefully.
+- **Offline**
 
- 
+  - When the printer goes into the offline state, verify that the print job remains in the job queue until the device becomes ready for printing again. The job should then complete successfully.
 
+  - Unplug the power from the printer during and before print jobs. Confirm that the printer reacquires the job queue and starts printing again. See more details in [Power Management](power-management.md).
+
+- **Hot-Pluggable Bus Errors**
+  
+  - With the device connected, unload and load the device stack (for example, the [USB Driver Stack](/windows-hardware/drivers/ddi/index)). Send print jobs before, during, and after unloading the stack. For example, with USB devices connected, uninstall the USB root hub or host controller to which the device is connected.
+  
+  - Test unloading and loading the device stack with and without print jobs in progress. Verify that the job can be canceled, recovered from, and restarted.
+  
+  - Reload the device stack to allow the print job to recover gracefully.

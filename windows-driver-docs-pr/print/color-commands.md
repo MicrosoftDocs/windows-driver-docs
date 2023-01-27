@@ -8,10 +8,12 @@ keywords:
 - palettes WDK Unidrv
 - patterns WDK Unidrv
 - brushes WDK Unidrv
-ms.date: 09/09/2022
+ms.date: 01/26/2023
 ---
 
 # Color commands
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 This topic describes the color commands for printing, and it contains the following sections:
 

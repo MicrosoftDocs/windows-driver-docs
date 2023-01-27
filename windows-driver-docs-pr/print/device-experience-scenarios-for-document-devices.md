@@ -1,10 +1,12 @@
 ---
 title: Device experience scenarios for document devices
 description: Device experience scenarios for document devices
-ms.date: 01/30/2019
+ms.date: 01/27/2023
 ---
 
 # Device experience scenarios for document devices
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The Devices and Printers folder shows devices that are connected to a computer, including the document devices.
 
@@ -12,7 +14,7 @@ The following screenshot shows a typical Devices and Printers folder.
 
 ![Typical Devices and Printers folder.](images/devicestage002.png)
 
-When you select a device in Devices and Printers, Device Stage shows the details for that device. The following screenshot shows Device Stage. 
+When you select a device in Devices and Printers, Device Stage shows the details for that device. The following screenshot shows Device Stage.
 
 ![Device Stage.](images/devicestage003.png)
 
@@ -51,9 +53,9 @@ As shown in the following figure, the device icon and the shortcut menu that app
 
 ![Shortcut menus for the default device experience and the custom device experience.](images/devicestage004.png)
 
-For the default experience, shown on the left side of the figure, the device is represented by a generic printer icon. For the customized experience, shown on the right side of the figure, the device is represented by a custom icon that the manufacturer supplies. 
+For the default experience, shown on the left side of the figure, the device is represented by a generic printer icon. For the customized experience, shown on the right side of the figure, the device is represented by a custom icon that the manufacturer supplies.
 
-For the customized experience, the default action in the shortcut menu is **Open**. Selecting **Open** opens the Device Stage page. **Open in new window** opens Device Stage in a new window. 
+For the customized experience, the default action in the shortcut menu is **Open**. Selecting **Open** opens the Device Stage page. **Open in new window** opens Device Stage in a new window.
 
 For the default experience, the device has no associated Device Stage page, and the shortcut menu does not contain an **Open** option. Selecting the **See what's printing** option opens the print queue.
 
@@ -63,7 +65,7 @@ With Device Stage, manufacturers can easily extend their product and corporate b
 
 ![Branded Device Stage custom experience.](images/devicestage005.jpg)
 
-Manufacturers customize the device experience. They can include their own tasks (start applications, download software, access product manuals, update firmware, buy accessories), include a wide range of device statuses, and update the experience at any time to reflect their most current offerings. 
+Manufacturers customize the device experience. They can include their own tasks (start applications, download software, access product manuals, update firmware, buy accessories), include a wide range of device statuses, and update the experience at any time to reflect their most current offerings.
 
 Device Stage experiences can be created for specific models of a device. Depending on your product strategy, you can opt to create a general device experience for a whole line of devices or modify each experience down to the color of each device model.
 

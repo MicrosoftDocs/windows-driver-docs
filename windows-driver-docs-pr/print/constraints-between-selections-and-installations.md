@@ -4,14 +4,12 @@ description: Constraints between Selections and Installations
 keywords:
 - installation constraints WDK Unidrv
 - selection constraints WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 01/26/2023
 ---
 
 # Constraints between Selections and Installations
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Sometimes it is necessary to specify that a certain option cannot be selected if some other option is installed, or that a certain option cannot be selected if some other option is not installed. For example, a user should not be able to select tabloid paper if a printer's large format paper tray is not installed.
 
@@ -31,8 +29,6 @@ To specify relationships between the selection of certain options with the insta
 </tbody>
 </table>
 
- 
-
 where *FeatureName* is the name of a feature and *OptionName* is the name of an option associated with the feature. If the argument is a feature, the period and *OptionName* are not included.
 
 An \***InstalledConstraints** or \***NotInstalledConstraints** entry must be placed inside a \*Feature or \*Option entry. For example, to indicate that a user should not be able to select tabloid paper if a printer's large format paper tray is not installed, the following entries can be used:
@@ -49,11 +45,3 @@ An \***InstalledConstraints** or \***NotInstalledConstraints** entry must be pla
 ```
 
 If a feature or option includes an \***InstalledConstraints** or \***NotInstalledConstraints** entry, the feature or option's \*Installable? attribute must be set to **TRUE**.
-
- 
-
- 
-
-
-
-

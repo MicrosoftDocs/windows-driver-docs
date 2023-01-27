@@ -13,10 +13,12 @@ keywords:
 - paper sizes WDK forms
 - custom forms WDK printer
 - Unidrv WDK print
-ms.date: 09/06/2022
+ms.date: 01/26/2023
 ---
 
 # Add forms to the forms database
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 If your printer supports additional forms, you can add them to your Unidrv printer driver by describing them in the GPD file for the printer driver. If you use a resource ID with the \*rcNameId field and a resource DLL for the form display name string, your driver will automatically use the new localization enhancements features that the Windows Vista Unidrv printer driver provides. Unidrv printer driver plug-ins also benefit from these changes to the spooler automatically and do not require any additional modifications. For more information about these enhancements, see [Changes to Printer Forms in Windows Vista](changes-to-printer-forms-in-windows-vista.md).
 

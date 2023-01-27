@@ -1,10 +1,12 @@
 ---
 title: V4 Printer Driver Security Considerations
 description: In addition to the usual threats such as elevation of privilege, spoofed devices, or injection attacks, v4 printer drivers also need to be compatible with low-rights applications.
-ms.date: 06/08/2020
+ms.date: 01/25/2023
 ---
 
 # V4 Printer Driver Security Considerations
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 In addition to the usual threats such as elevation of privilege, spoofed devices, or injection attacks, v4 printer drivers also need to be compatible with low-rights applications (for example, Internet Explorer 9).
 
