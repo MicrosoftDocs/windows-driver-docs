@@ -5,14 +5,12 @@ keywords:
 - printer font descriptions WDK Unidrv , cartridges
 - font cartridges WDK Unidrv
 - cartridge fonts WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Font Cartridges
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 If your printer accepts font cartridges, cartridges can be described by \***FontCartridge** GPD file entries. This entry's format is:
 
@@ -27,16 +25,6 @@ If your printer accepts font cartridges, cartridges can be described by \***Font
 </tbody>
 </table>
 
- 
-
 where *CartridgeName* is a text string representing the name of the cartridge and *FontCartridgeAttributes* is a set of one or more [font cartridge attributes](font-cartridge-attributes.md).
 
 Alternatively, the fonts supplied by font cartridges can be specified using [Unidrv font format files](customized-font-management.md#ddk-unidrv-font-format-files-gg) (.uff files). Typically, the most commonly supplied font cartridges are described in a GPD file, while less commonly-used cartridges are specified with .uff files.
-
- 
-
- 
-
-
-
-

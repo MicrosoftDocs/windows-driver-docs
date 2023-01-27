@@ -1,10 +1,12 @@
 ---
 title: Get the updated core driver package
 description: Provides information about how to get the updated core driver package.
-ms.date: 09/07/2022
+ms.date: 01/27/2023
 ---
 
 # Get the updated core driver package
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 After you [obtain](constructing-a-package-aware-driver-with-updated-core-drivers.md) the Microsoft standalone update (MSU) file containing the updated core driver package, the next step is to expand the contents of the MSU file.
 
@@ -12,7 +14,7 @@ To make the contents of the core driver package accessible to the PnP installer,
 
 The following example shows how to use the [**expand**](/previous-versions/windows/it-pro/windows-xp/bb490903(v=technet.10)) command, which should be executed in the directory that contains the MSU file:
 
-```cpp
+```console
 expand Windows6.0-KB123456-x86.MSU [dest directory] -F:*
 expand Windows6.0-KB123456-x86.CAB [dest directory] -F:*
 ```

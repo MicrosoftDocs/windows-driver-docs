@@ -3,10 +3,12 @@ title: GetSupportedVersions
 description: The IPrintTicketProvider GetSupportedVersions method returns the major version numbers of the Print Schemas that print driver supports. For now, version 1 is the only version that exists so this method must return only one supported version.
 keywords:
 - GetSupportedVersions
-ms.date: 09/06/2022
+ms.date: 01/27/2023
 ---
 
 # GetSupportedVersions
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The [**IPrintTicketProvider::GetSupportedVersions**](/windows-hardware/drivers/ddi/prdrvcom/nf-prdrvcom-iprintticketprovider-getsupportedversions) method returns the major version numbers of the Print Schemas that print driver supports. For now, version 1 is the only version that exists so this method must return only one supported version.
 

@@ -3,14 +3,12 @@ title: GDI-Supplied Halftoning
 description: GDI-Supplied Halftoning
 keywords:
 - GDI-supplied halftoning WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # GDI-Supplied Halftoning
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 If a specified color format is one for which the number of bits per pixel used for rendering the image (\*DrvBPP) is the same as the bits per pixel supported by the printer (\*DevBPP multiplied by \*DevNumOfPlanes), then halftoning operations are handled by GDI. An example is a \*DrvBPP value of four, with \*DevBPP equal to one and \*DevNumOfPlanes equal to four.
 
@@ -23,11 +21,3 @@ Unidrv uses the standard HT\_PATSIZE\_AUTO option if no halftoning options are s
 When using GDI-supplied halftoning capabilities, you can provide [minidriver-supplied halftone patterns](minidriver-supplied-halftone-patterns.md).
 
 For more information about color formats, see [Handling Color Formats](handling-color-formats.md).
-
- 
-
- 
-
-
-
-
