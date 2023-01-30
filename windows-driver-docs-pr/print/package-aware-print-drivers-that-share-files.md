@@ -4,17 +4,18 @@ description: Package-Aware Print Drivers that Share Files
 keywords:
 - package-aware print drivers WDK
 - core drivers WDK printer
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Package-Aware Print Drivers that Share Files
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 When more than one print driver package shares driver files, the shared files must be isolated into a core driver. For example, Unidrv is a collection of files that many print drivers use, so Unidrv is a core driver.
 
 Unidrv print drivers use the Needs and Include INF-file directives, as shown in the following section of an INF file for Windows XP:
 
-```cpp
+```inf
 [UniDrvInstall]
 CopyFiles=@OEMRES.DLL,@OEMABC.GPD
 DataFile=OEMABC.GPD
@@ -25,7 +26,7 @@ Needs=UNIDRV.OEM,TTFSUB.OEM
 
 In Windows Vista, package-aware drivers should use the new **CoreDriverSections** keyword when referring to Unidrv files, as shown in the following section of an INF file for Windows Vista:
 
-```cpp
+```inf
 [UniDrvInstall_Vista]
 CopyFiles=@OEMRES.DLL,@OEMABC.GPD
 DataFile=OEMABC.GPD
@@ -72,11 +73,9 @@ Core print package files are listed in the following table.
 </tbody>
 </table>
 
- 
-
 More than one core driver section can be referenced; for example:
 
-```cpp
+```inf
 CoreDriverSections="{GUID1}, SectionName1, SectionName2", "{GUID2}, SectionName3"
 ```
 
@@ -89,11 +88,3 @@ This section includes the following topics:
 [Using Core Drivers](using-core-drivers.md)
 
 [Core Driver Sample](core-driver-sample.md)
-
- 
-
- 
-
-
-
-

@@ -6,11 +6,12 @@ keywords:
 - Print Tickets WDK ,Win32 applications
 - Print Tickets WDK , XPSDrv
 - Print Tickets WDK , GDI-based print drivers
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Print Ticket Compatibility with Win 32 Applications
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 When you use Print Tickets in Microsoft Win32-based applications and GDI-based print drivers, you must consider the following compatibility scenarios:
 
@@ -23,6 +24,3 @@ To the XPSDrv print driver, a document that is sent from a Win32-based applicati
 When a WPF application prints a document that contains Print Tickets to a GDI-based print driver that does not support Print Tickets, the Windows Vista print support converts the XPS Document that the WPF application passes to an [EMF](emf-data-type.md) file and converts each Print Ticket to a DEVMODE structure.
 
 To the GDI print driver, the print job from a WPF application is not different than a print job that a Win32 application sends.
-
- 
-

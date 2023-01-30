@@ -5,24 +5,22 @@ keywords:
 - printer attributes WDK Unidrv , options
 - option attributes WDK Unidrv
 - printer options WDK Unidrv , attributes
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Option Attributes
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 When specifying [printer options](printer-options.md), you use attributes to provide Unidrv with the following information:
 
--   Text strings representing an option's display name, user prompt, and help message.
+- Text strings representing an option's display name, user prompt, and help message.
 
--   A Boolean value indicating whether an option is always present or is installable.
+- A Boolean value indicating whether an option is always present or is installable.
 
--   The printer command that causes an option to be selected.
+- The printer command that causes an option to be selected.
 
--   Various types of option-specific information.
+- Various types of option-specific information.
 
 This section contains the following topics:
 
@@ -41,11 +39,3 @@ This section contains the following topics:
 [Option Attributes for the PaperSize Feature](option-attributes-for-the-papersize-feature.md)
 
 [Option Attributes for the Resolution Feature](option-attributes-for-the-resolution-feature.md)
-
- 
-
- 
-
-
-
-

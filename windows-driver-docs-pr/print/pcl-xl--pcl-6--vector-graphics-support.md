@@ -6,22 +6,20 @@ keywords:
 - PCL XL vector graphics WDK Unidrv
 - PCL XL vector graphics WDK Unidrv , about PCL XL vector graphics
 - PCL-6 WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # PCL XL (PCL-6) Vector Graphics Support
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Unidrv in Windows XP and later supports PCL XL monochrome graphics. Unidrv in Windows Server 2003 and later supports PCL XL color graphics.
 
 Unidrv's support for PCL XL (PCL-6) vector graphics allows it to create job data in PCL XL format as an alternative to pure raster format. PCL XL format is usually optimal for the device, and typically results in less system overhead, less output data, and faster print throughput.
 
-PCL XL uses most of the currently-defined GPD features for job setup, page setup, media selection, and paper size. However, the actual drawing commands are hard-coded within Unidrv. Consequently, most drawing commands within GPD files are ignored. There is no need to remove these commands from the GPD file.
+PCL XL uses most of the currently defined GPD features for job setup, page setup, media selection, and paper size. However, the actual drawing commands are hard-coded within Unidrv. Consequently, most drawing commands within GPD files are ignored. There's no need to remove these commands from the GPD file.
 
-This section contains the following topics:
+This section contains the following articles:
 
 [Writing a PCL XL GPD File](writing-a-pcl-xl-gpd-file.md)
 
@@ -34,11 +32,3 @@ This section contains the following topics:
 [Installing a PCL XL Minidriver](installing-a-pcl-xl-minidriver.md)
 
 [PCL XL Issues](pcl-xl-issues.md)
-
- 
-
- 
-
-
-
-

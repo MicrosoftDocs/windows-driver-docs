@@ -7,24 +7,22 @@ keywords:
 - strings WDK Unidrv
 - standard variable expressions WDK Unidrv
 - max_repeat
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Standard Variable Expressions
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 When you specify arguments in a command string, you can specify the argument value as an expression. This expression can perform operations using the current values of the [standard variables](standard-variables.md). Each standard variable expression within a command string is delimited by braces ( {, } ).
 
 A standard variable expression can consist of a combination of the following components:
 
--   Zero, one, or more [standard variables](standard-variables.md)
+- Zero, one, or more [standard variables](standard-variables.md)
 
--   Integer [numeric values](numeric-values.md)
+- Integer [numeric values](numeric-values.md)
 
--   Expression operators
+- Expression operators
 
 A standard variable expression cannot contain embedded macro references.
 
@@ -81,36 +79,26 @@ The expression operators are included in the following table.
 </tbody>
 </table>
 
- 
-
 Standard variable expressions do not modify the values assigned to the standard variables. The calculated value is placed in the escape sequence, using the format specified by the [command string argument type](command-string-argument-types.md) specifier.
 
-### <a href="" id="ddk-using-max-repeat-gg"></a>Using max\_repeat
+## <a href="" id="ddk-using-max-repeat-gg"></a>Using max_repeat
 
-The use of **max\_repeat** is best explained with an example. Suppose a GPD file contains the following entry:
+The use of **max_repeat** is best explained with an example. Suppose a GPD file contains the following entry:
 
-```cpp
+```GPD
 *Command:CmdXMoveRelRight{*Cmd:"<1B>["%d[0,9600]{max_repeat((DestXRel/4))}"a"}
 ```
 
 This command contains a single argument, of type **%d**. It also contains an argument range specification. Whenever Unidrv sends this command to the printer, it first calculates DestXRel/4 and determines if it is within the specified range. If the calculated value is greater than 9600, Unidrv sends the command repeatedly, with a maximum value of 9600, until the specified value has been sent. Thus if DestXRel/4 equals 20,000, Unidrv sends the following commands:
 
-```cpp
+```GPD
 <1B>[9600
 <1B>[9600
 <1B>[800
 ```
 
-The **max\_repeat** operator can be used only if the following conditions are met:
+The **max_repeat** operator can be used only if the following conditions are met:
 
--   A command string includes only a single argument.
+- A command string includes only a single argument.
 
--   The argument includes a range specification.
-
- 
-
- 
-
-
-
-
+- The argument includes a range specification.

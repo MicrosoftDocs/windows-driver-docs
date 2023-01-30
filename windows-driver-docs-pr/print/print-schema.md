@@ -4,11 +4,12 @@ description: Print Schema
 keywords:
 - Print Schema WDK
 - printer drivers WDK , Print Schema
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Print Schema
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The Print Ticket and Print Capabilities technologies are fundamentally based on the Print Schema. The Print Schema defines the organization and content of the PrintTicket and the PrintCapabilities documents that these technologies use.
 
@@ -17,11 +18,3 @@ The Print Schema design maps the public features to specific keywords and also s
 By using a common schema to describe print features and properties, applications can access print capabilities without connecting to a specific print driver or application. A common schema also reduces the ambiguity of names and features by providing a consistent set of names and definitions for printer features and attributes.
 
 The Print Schema is documented in the Microsoft Windows SDK documentation.
-
- 
-
- 
-
-
-
-

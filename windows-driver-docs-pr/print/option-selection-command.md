@@ -4,14 +4,12 @@ description: Option Selection Command
 keywords:
 - printer commands WDK Unidrv , option selections
 - option selection commands WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Option Selection Command
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following table lists the option selection command. The command is specified using the [command entry format](command-entry-format.md).
 
@@ -37,14 +35,4 @@ The following table lists the option selection command. The command is specified
 </tbody>
 </table>
 
- 
-
 For examples, see the [sample GPD files](sample-gpd-files.md).
-
- 
-
- 
-
-
-
-

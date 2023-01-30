@@ -4,14 +4,12 @@ description: Raster Data Emission Attributes
 keywords:
 - data emission raster printing attributes WDK Unidrv
 - emission raster printing attributes WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Raster Data Emission Attributes
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following table lists attributes describing the printer's support for raster data emission.
 
@@ -109,16 +107,6 @@ TRAILING</td>
 </tbody>
 </table>
 
- 
-
 For information about commands associated with raster data emission, see [Raster Data Emission Commands](raster-data-emission-commands.md).
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
-
- 
-
- 
-
-
-
-

@@ -7,14 +7,12 @@ keywords:
 - DLLs WDK print
 - user interface WDK printer interface DLL
 - configuration options user interface WDK print
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Printer Interface DLL
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 This section provides the following topics:
 
@@ -35,11 +33,3 @@ This section provides the following topics:
 [Printer Driver and Plug-in Helper Interfaces](printer-driver-and-plug-in-helper-interfaces.md)
 
 [Keyword Mapping](keyword-mapping.md)
-
- 
-
- 
-
-
-
-

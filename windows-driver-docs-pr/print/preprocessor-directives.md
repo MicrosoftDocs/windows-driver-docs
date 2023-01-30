@@ -6,14 +6,12 @@ keywords:
 - preprocessor directives WDK GPD files
 - parsing GPD file sections
 - preprocessor symbols WDK GPD files
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Preprocessor Directives
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 GPD files can contain preprocessor directives, which can be used to control conditional parsing of sections within the GPD file. The following table describes the preprocessor directives that can be used in GPD files.
 
@@ -40,15 +38,15 @@ GPD files can contain preprocessor directives, which can be used to control cond
 <tr class="odd">
 <td><p><em><strong>Ifdef</strong> : <em>SymbolName</em></p></td>
 <td><p>Indicates the beginning of a block of GPD file entries.</p>
-<p>If the specified symbol is defined, the GPD file entries between this directive and the next *<strong>Ifdef</strong>, *<strong>Elseifdef</strong>, *<strong>Else</strong>, or *<strong>Endif</strong> directive are processed by the GPD parser.</p></td>
+<p>If the specified symbol is defined, the GPD file entries between this directive and the next *<strong>Ifdef</strong>,*<strong>Elseifdef</strong>, *<strong>Else</strong>, or*<strong>Endif</strong> directive are processed by the GPD parser.</p></td>
 </tr>
 <tr class="even">
 <td><p></em><strong>Elseifdef</strong> : <em>SymbolName</em></p></td>
-<td><p>If the specified symbol is defined, and the symbol specified by the previous <em><strong>Ifdef</strong> or *<strong>Elseifdef</strong> directive is undefined, the GPD file entries between this directive and the next *<strong>Ifdef</strong>, *<strong>Elseifdef</strong>, *<strong>Else</strong>, or *<strong>Endif</strong> directive are processed by the GPD parser.</p></td>
+<td><p>If the specified symbol is defined, and the symbol specified by the previous <em><strong>Ifdef</strong> or *<strong>Elseifdef</strong> directive is undefined, the GPD file entries between this directive and the next*<strong>Ifdef</strong>, *<strong>Elseifdef</strong>,*<strong>Else</strong>, or *<strong>Endif</strong> directive are processed by the GPD parser.</p></td>
 </tr>
 <tr class="odd">
 <td><p></em><strong>Else</strong> :</p></td>
-<td><p>If the symbol specified by the previous <em><strong>Ifdef</strong> or *<strong>Elseifdef</strong> directive is undefined, the GPD file entries between this directive and the next *<strong>Ifdef</strong> or *<strong>Endif</strong> directive are processed by the GPD parser.</p></td>
+<td><p>If the symbol specified by the previous <em><strong>Ifdef</strong> or*<strong>Elseifdef</strong> directive is undefined, the GPD file entries between this directive and the next *<strong>Ifdef</strong> or*<strong>Endif</strong> directive are processed by the GPD parser.</p></td>
 </tr>
 <tr class="even">
 <td><p></em><strong>Endif</strong> :</p></td>
@@ -64,8 +62,6 @@ GPD files can contain preprocessor directives, which can be used to control cond
 </tr>
 </tbody>
 </table>
-
- 
 
 Conditional preprocessor directives can be nested. At each nesting level, the sequence for using conditional preprocessor directives is as follows:
 
@@ -91,19 +87,19 @@ The \***Include** directive allows you to specify the name of an additional GPD 
 
 Note that the \*IgnoreBlock GPD entry does not affect preprocessor directives, because the preprocessor executes before the GPD parser.
 
-### <a href="" id="ddk-changing-the-preprocessor-directive-prefix-gg"></a>Changing the Preprocessor Directive Prefix
+## <a href="" id="ddk-changing-the-preprocessor-directive-prefix-gg"></a>Changing the Preprocessor Directive Prefix
 
 The \***SetPPPrefix** directive allows you to change the prefix used with preprocessor directives. That is, you can use this directive to replace the asterisk (\*) character that prepends the preprocessor directives with another character or string.
 
 For example, if your GPD file contains the following directive:
 
-```cpp
+```GPD
 *SetPPPrefix: #SpecialPrefix#
 ```
 
 then the preprocessor stops searching for preprocessor directives that begin with **\*** and instead looks for directives beginning with **\#SpecialPrefix\#**. The following sequence temporarily changes the preprocessor prefix to **\#SpecialPrefix\#**, then restores it to **\***.
 
-```cpp
+```GPD
 *SetPPPrefix: #SpecialPrefix#
 #SpecialPrefix#Ifdef: WINNT_50
 #SpecialPrefix#Include: "ExtraGPD.gpd"
@@ -113,7 +109,7 @@ then the preprocessor stops searching for preprocessor directives that begin wit
 
 The primary purpose of this feature is to allow GPD files written for future operating system versions to be compatible with Windows 2000. For example, suppose GPD files for a future version of the operating system can include GPD file entries that conflict with the asterisk-prefixed preprocessor directives supported by Windows 2000. By changing the prefix, a GPD file written for the future operating system version can also be used with Windows 2000. An example might be constructed as follows:
 
-```cpp
+```GPD
 *Ifdef: WINNT_70
     *SetPPPrefix: #SpecialPrefix#
     *% Do special, OS-specific processing of
@@ -125,7 +121,7 @@ The primary purpose of this feature is to allow GPD files written for future ope
 
 Note that this technique only changes the prefix that the preprocessor looks for. Keywords recognized by the parser must always be preceded by an asterisk.
 
-### <a href="" id="ddk-predefined-preprocessor-symbols-gg"></a>Predefined Preprocessor Symbols
+## <a href="" id="ddk-predefined-preprocessor-symbols-gg"></a>Predefined Preprocessor Symbols
 
 Microsoft defines the following preprocessor symbols.
 
@@ -166,14 +162,4 @@ Microsoft defines the following preprocessor symbols.
 </tbody>
 </table>
 
- 
-
 The WINNT\_40, WINNT\_50, and WINNT\_51 symbols are useful for creating GPD files that are compatible with Windows NT 4.0, Windows 2000, and Windows XP. If, for example, Windows XP supports a printer capability that is not supported by Windows 2000, then that capability can be specified within a GPD file section that is bounded by \***Ifdef**: WINNT\_51 and \***Endif** directives.
-
- 
-
- 
-
-
-
-

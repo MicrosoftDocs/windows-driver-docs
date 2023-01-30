@@ -5,14 +5,12 @@ keywords:
 - PCL separator page escape codes WDK PCL XL
 - PCL XL vector graphics WDK Unidrv , separator page escape codes
 - escape codes WDK PCL XL
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # PCL Separator Page Escape Codes
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The escape codes shown in the following table can be used when you create a PCL separator page.
 
@@ -83,14 +81,4 @@ The escape codes shown in the following table can be used when you create a PCL 
 </tbody>
 </table>
 
- 
-
 After the local print provider passes a job through the print processor and the separator page processor, it sends the job from the spooler to the appropriate port print monitor.
-
- 
-
- 
-
-
-
-

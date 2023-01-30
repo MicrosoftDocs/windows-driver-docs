@@ -1,11 +1,12 @@
 ---
 title: Pscript5 Keywords
 description: Pscript5 Keywords
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Pscript5 Keywords
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Feature and option names that are passed to the helper interface from a Pscript5 plug-in are the string names of the features and options as they are defined in the PPD file. In addition, certain reserved strings are defined for features that are implemented in the Pscript5 core driver that are not represented in the PPD file. Note that all of the options that are listed in the following table can be determined at run-time by calling **EnumOptions**. However, for features that require numeric settings in ranges, the **EnumOptions** method will return a **NULL** value in its *pOptionList* parameter and a count of zero options in \**pdwNumOptions*.
 
@@ -207,20 +208,11 @@ Feature and option names that are passed to the helper interface from a Pscript5
 </tbody>
 </table>
 
- 
-
 **Note**   1
 If the stated requirements are not met for a feature, that feature will not be listed in **EnumFeatures**, and attempts to get or set that feature will cause E\_FAIL to be returned. This note applies to %AddEuro, %Negative, and %OutputPSLevel.
-
- 
 
 **Note**   2 (%CustomPageSize)
 Custom page size format is identical to that described in **IPrintCoreUI2**. **EnumOptions** returns an empty list of options.
 
- 
-
 **Note**   3
 Numeric values are represented as ANSI strings that contain only digit characters. Sign symbols are not allowed. For example, "300" is valid, but "-20", "20.5", and "+300" are all invalid. This note applies to %JobTimeout, %MaxFontSizeAsBitmap, %MinFontAsOutline, %PSMemory, and %WaitTimeout.
-
- 
-

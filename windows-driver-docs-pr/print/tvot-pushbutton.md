@@ -10,10 +10,12 @@ api_location:
 - compstui.h
 api_type:
 - HeaderDef
-ms.date: 09/16/2021
+ms.date: 01/30/2023
 ---
 
 # TVOT_PUSHBUTTON
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The TVOT_PUSHBUTTON option type consists of a push button inside a group box.
 

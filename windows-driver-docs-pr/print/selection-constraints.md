@@ -3,14 +3,12 @@ title: Selection Constraints
 description: Selection Constraints
 keywords:
 - selection constraints WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Selection Constraints
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Often, certain options for various printer features cannot be selected simultaneously. For example, if the envelope feeder is selected, then nonenvelope paper sizes, such as letter-sized or A4-sized paper, cannot be selected.
 
@@ -29,13 +27,11 @@ The \*InvalidCombination entry has the following format:
 </tbody>
 </table>
 
- 
-
 where *FeatureName* is the name of a feature and *OptionName* is the name of an option associated with the feature.
 
 The options listed in a single \*InvalidCombination entry indicate a set of options that cannot be used in combination. For example, the following entry specifies that *CMYK* color mode cannot be used with plain paper and 720 DPI.
 
-```cpp
+```GPD
 *InvalidCombination: LIST(Resolution.720dpi, MediaType.Plain, ColorMode.CMYK)
 ```
 
@@ -54,11 +50,9 @@ If you only need to indicate an invalid combination relationship between two opt
 </tbody>
 </table>
 
- 
-
 where *FeatureName* is the name of a feature and *OptionName* is the name of an option associated with the feature. A \*Constraints entry must be placed inside an \*Option entry. For example, to indicate that letter-sized and A4-sized paper cannot be used with the envelope feeder, you can use the following entries:
 
-```cpp
+```GPD
 *Feature: InputBin
 {
     *Option: ENVFEED
@@ -71,7 +65,7 @@ where *FeatureName* is the name of a feature and *OptionName* is the name of an 
 
 or, equivalently:
 
-```cpp
+```GPD
 *Feature: InputBin
 {
     *Option: ENVFEED
@@ -82,11 +76,3 @@ or, equivalently:
 ```
 
 These examples specify that if a user attempts to select the envelope feeder and letter-sized paper, or the envelope feeder and A4-sized paper, Unidrv rejects the selection.
-
- 
-
- 
-
-
-
-

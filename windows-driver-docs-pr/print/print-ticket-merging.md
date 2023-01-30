@@ -6,11 +6,12 @@ keywords:
 - render modules WDK XPSDrv , Print Tickets
 - Print Tickets WDK , XPSDrv printer drivers
 - merging Print Ticket objects
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Print Ticket Merging
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The PrintTicket objects processed in the Print Driver have a hierarchical relationship based on the document part they are associated with. The following diagram illustrates the relationship of these parts within an XPS Document.
 
@@ -66,11 +67,3 @@ class Filter
     }
 };
 ```
-
- 
-
- 
-
-
-
-

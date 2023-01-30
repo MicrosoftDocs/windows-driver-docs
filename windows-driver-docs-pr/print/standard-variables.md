@@ -5,14 +5,12 @@ keywords:
 - GPD file entries WDK Unidrv , standard variables
 - variables WDK GPD files
 - standard variables WDK GPD files
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Standard Variables
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The GPD language defines a set of standard variables that can be referenced within command strings, using the [command string format](command-string-format.md). The Unidrv driver assigns values to these variables. From the point of view of a GPD file, the variables are read-only.
 
@@ -252,6 +250,3 @@ Type of the current pattern brush. Value can be:
 </tr>
 </tbody>
 </table>
-
- 
-
