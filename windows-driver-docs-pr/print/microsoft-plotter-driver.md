@@ -29,8 +29,7 @@ The following topics describe the Microsoft Plotter Driver:
 
 [Plotter Driver Renderer](plotter-driver-renderer.md)
 
-> [!NOTE]
-> In Windows 10, the MSPLOT driver sample was removed and is not available in the Windows 10 driver sample repo on GitHub.
+In Windows 10, the MSPLOT driver sample was removed and is not available in the Windows 10 driver sample repo on GitHub.
 
 Previous versions of the MSPLOT Windows driver sample are archived at Microsoft Archive on GitHub:
 

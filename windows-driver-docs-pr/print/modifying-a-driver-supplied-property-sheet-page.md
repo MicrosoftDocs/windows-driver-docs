@@ -7,14 +7,12 @@ keywords:
 - property sheet pages WDK print
 - option items WDK UI plug-in
 - customized option items WDK UI plug-in
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Modifying a Driver-Supplied Property Sheet Page
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 A UI plug-in can modify Unidrv-supplied or Pscript5-supplied property sheet pages by implementing the [**IPrintOemUI::CommonUIProp**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-commonuiprop) method and a callback function.
 
@@ -41,6 +39,3 @@ In order to process user modifications to customized option items, you must prov
 A callback function is specified by placing its address in an [**OEMCUIPPARAM**](/windows-hardware/drivers/ddi/printoem/ns-printoem-_oemcuipparam) structure. The UI plug-in receives the address of this structure as input to its [**IPrintOemUI::CommonUIProp**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-commonuiprop) method.
 
 When a user opens the printer property sheet or document property sheet and modifies options, [CPSUI](common-property-sheet-user-interface.md) calls the printer driver's printer interface DLL. This DLL processes option values contained in its own [**OPTITEM**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_optitem) structures. Then for each UI plug-in, the printer interface DLL calls the OEMCUIPCALLBACK-typed callback function that was previously specified by **IPrintOemUI::CommonUIProp**.
-
- 
-

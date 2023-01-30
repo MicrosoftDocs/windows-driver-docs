@@ -3,14 +3,12 @@ title: Option Attributes for the ColorMode Feature
 description: Option Attributes for the ColorMode Feature
 keywords:
 - ColorMode Feature
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Option Attributes for the ColorMode Feature
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following table lists the attributes associated with the ColorMode feature. For more information about the ColorMode feature, see [Standard Features](standard-features.md).
 
@@ -31,7 +29,7 @@ The following table lists the attributes associated with the ColorMode feature. 
 <tr class="odd">
 <td><p><em><strong>Color?</strong></p></td>
 <td><p><strong>TRUE</strong> or <strong>FALSE</strong>, indicating whether the option produces color.</p></td>
-<td><p>Optional. If not specified, the default value is <strong>TRUE</strong> for *<strong>DrvBPP</strong> &gt; 1. To create gray scaling, set to <strong>FALSE</strong> with *<strong>DrvBPP</strong> &gt; 1.</p></td>
+<td><p>Optional. If not specified, the default value is <strong>TRUE</strong> for *<strong>DrvBPP</strong> &gt; 1. To create gray scaling, set to <strong>FALSE</strong> with*<strong>DrvBPP</strong> &gt; 1.</p></td>
 </tr>
 <tr class="even">
 <td><p></em><strong>ColorPlaneOrder</strong></p></td>
@@ -81,11 +79,8 @@ LIST (RED, GREEN, BLUE)
 </tbody>
 </table>
 
- 
-
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
 For information about additional option attributes, see [Option Attributes for All Features](option-attributes-for-all-features.md).
 
 Also see [Controlling Image Quality](controlling-image-quality.md).
-

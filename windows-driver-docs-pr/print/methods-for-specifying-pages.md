@@ -7,10 +7,12 @@ keywords:
 - property sheet pages WDK print, specifying
 - COMPROPSHEETUI
 - PROPSHEETPAGE
-ms.date: 09/14/2022
+ms.date: 01/27/2023
 ---
 
 # Methods for specifying pages
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 An application can use any of three methods to specify property sheet pages to CPSUI. Each of the following methods involves calling CPSUI's [**ComPropSheet**](/windows-hardware/drivers/ddi/compstui/nc-compstui-pfncompropsheet) function, specifying one of the [ComPropSheet function codes](/windows-hardware/drivers/ddi/_print/index).
 

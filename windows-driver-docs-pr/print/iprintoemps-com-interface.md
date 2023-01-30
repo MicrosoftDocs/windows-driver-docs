@@ -3,14 +3,12 @@ title: IPrintOemPS COM Interface
 description: IPrintOemPS COM Interface
 keywords:
 - IPrintOemPS
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # IPrintOemPS COM Interface
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The `IPrintOemPS` COM interface is the means by which the [printer graphics DLL](printer-graphics-dll.md) for Pscript5 communicates with a rendering plug-in. The `IPrintOemPS` interface is implemented by each rendering plug-in.
 
@@ -67,7 +65,4 @@ The following table lists and describes all of the methods provided by the `IPri
 </tbody>
 </table>
 
- 
-
 For more information, see [Implementing Printer Driver COM Interfaces](implementing-printer-driver-com-interfaces.md).
-

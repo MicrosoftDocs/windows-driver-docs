@@ -3,18 +3,16 @@ title: IPrintOemUni2 COM Interface
 description: IPrintOemUni2 COM Interface
 keywords:
 - IPrintOemUni2
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # IPrintOemUni2 COM Interface
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The `IPrintOemUni2` COM interface contains all the methods of, and extends the capabilities of, the [IPrintOemUni COM Interface](iprintoemuni-com-interface.md).
 
-The following table lists and describes all of the methods provided by the `IPrintOemUni2` interface. Rendering plug-ins must define all the listed methods. If a method is not needed, it can simply return E\_NOTIMPL.
+The following table lists and describes all of the methods provided by the `IPrintOemUni2` interface. Rendering plug-ins must define all the listed methods. If a method isn't needed, it can return E_NOTIMPL.
 
 <table>
 <colgroup>
@@ -35,7 +33,4 @@ The following table lists and describes all of the methods provided by the `IPri
 </tbody>
 </table>
 
- 
-
 For more information, see [Implementing Printer Driver COM Interfaces](implementing-printer-driver-com-interfaces.md).
-

@@ -1,14 +1,12 @@
 ---
 title: Option Attributes for All Features
 description: Option Attributes for All Features
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Option Attributes for All Features
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following table lists, in alphabetic order, the [option attributes](option-attributes.md) available for all features and describes their parameters.
 
@@ -54,7 +52,7 @@ The following table lists, in alphabetic order, the [option attributes](option-a
 <td><p><em><strong>InstallableFeatureName</strong></p></td>
 <td><p>Text string that is displayed to ask the user whether an installable option is actually installed.</p>
 <p>For more information, see <a href="handling-installable-features-and-options.md" data-raw-source="[Handling Installable Features and Options](handling-installable-features-and-options.md)">Handling Installable Features and Options</a>.</p></td>
-<td><p>Required if *<strong>Installable?</strong> is <strong>TRUE</strong> and *<strong>rcInstallableFeatureNameID</strong> is not specified. (Also a <a href="feature-attributes.md" data-raw-source="[feature attribute](feature-attributes.md)">feature attribute</a>.)</p></td>
+<td><p>Required if *<strong>Installable?</strong> is <strong>TRUE</strong> and*<strong>rcInstallableFeatureNameID</strong> is not specified. (Also a <a href="feature-attributes.md" data-raw-source="[feature attribute](feature-attributes.md)">feature attribute</a>.)</p></td>
 </tr>
 <tr class="even">
 <td><p></em><strong>Name</strong></p></td>
@@ -80,13 +78,10 @@ The following table lists, in alphabetic order, the [option attributes](option-a
 <tr class="even">
 <td><p></em><strong>rcNameID</strong></p></td>
 <td><p>Resource ID of string resource representing the option name.</p></td>
-<td><p>Optional. If not specified, then *<strong>Name</strong> must be specified. (Also a <a href="feature-attributes.md" data-raw-source="[feature attribute](feature-attributes.md)">feature attribute</a>.)</p>
+<td><p>Optional. If not specified, then*<strong>Name</strong> must be specified. (Also a <a href="feature-attributes.md" data-raw-source="[feature attribute](feature-attributes.md)">feature attribute</a>.)</p>
 <p>For <a href="standard-options.md" data-raw-source="[standard options](standard-options.md)">standard options</a> of the PaperSize feature only, setting this attribute to RCID_DMPAPER_SYSTEM_NAME causes Unidrv to use a predefined option name string.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
-
 For examples, see the [sample GPD files](sample-gpd-files.md).
-

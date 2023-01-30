@@ -4,19 +4,20 @@ description: New Root-Level-Only GPD Attributes for Windows Vista
 keywords:
 - root-level-only attributes WDK Unidrv
 - general printer attributes WDK Unidrv , root-level-only
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # New Root-Level-Only GPD Attributes for Windows Vista
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following list describes the GPD attributes that are new starting with Windows Vista. To maintain backwards compatibility with pre-Windows Vista versions of Windows, you should surround these attributes with the following code.
 
-```cpp
+```GPD
 *Ifdef: WINNT_60 ... *Endif: WINNT_60 blocks
 ```
 
-### PrintProcDuplexOptions
+## PrintProcDuplexOptions
 
 The **PrintProcDuplexOptions** attribute controls various duplexing options in a print processor. This attribute can have one of the following values:
 
@@ -32,15 +33,15 @@ If **PrintProcDuplexOptions** is 1, it controls whether the print processor shou
 
 Assume that you have to print a four-page document with n-up = 1, and you want to use reverse printing and duplex printing. Because you want reverse printing, you want to print the last page before the first page. Because you want duplex printing, you want to print two pages on a single sheet of paper. The print processor can play back the pages in one of the following two formats (where each pair of numbers indicates the two pages that would print on the two sides of a single sheet of paper):
 
--   Format 1: (4,3),(2,1)
+- Format 1: (4,3),(2,1)
 
--   Format 2: (3,4),(1,2)
+- Format 2: (3,4),(1,2)
 
 Before Windows Vista, a print processor would print the order in format 2 \[(3,4),(1,2)\]. But in Windows Vista and later, the default format is format 1 \[(4,3),(2,1)\]. This change occurred because many printers have incorrect output with format 2; that is, the pages that are printed are not ordered in the proper order.
 
 But if your printer works correctly with format 1, you will not need to change anything for Windows Vista and later. However, if your printer works incorrectly with format 1 and you want to revert to format 2, add the following code example to your GPD file.
 
-```cpp
+```GPD
 *Ifdef: WINNT_60
 *PrintProcDuplexOptions: 1
 *Endif: WINNT_60
@@ -56,30 +57,30 @@ If **PrintProcDuplexOptions** is 2, it prevents the generation of blank pages in
 
 This attribute controls whether you should send extra blank pages to the printer when you are performing duplex printing. For example, if the job is one-page job and duplex is on (assume n-up = 1), only one side of the sheet needs to be printed. Currently, printers will print one side and then generate an empty blank page on the reverse side. (Because the print job was started with duplex=on, the printer expects two pages before it ejects the sheet. If the second page does not print, some printers keep waiting.) The drawbacks of the current solution are that:
 
--   The generated page causes an inaccurate page count in accounting software and the page counter within printers.
+- The generated page causes an inaccurate page count in accounting software and the page counter within printers.
 
--   When the page comes halfway out of the printer (in some Hewlett Packard DeskJet-style printers), the user might try to pull it out while the printer tries to pull it back in. This situation can cause hardware issues.
+- When the page comes halfway out of the printer (in some Hewlett Packard DeskJet-style printers), the user might try to pull it out while the printer tries to pull it back in. This situation can cause hardware issues.
 
 You can avoid the preceding problems by specifying \***PrintProcDuplexOptions**: 2 in the GPD file.
 
 Note that even if this attribute is set, blank page optimization is performed only in the following limited cases:
 
-1.  For reverse printing, blank page optimization is performed only when the whole job can fit on a single side of paper (for example, a one-page job with n-up=1 or a four-page job with n-up =4). If the job needs more than one sheet, the optimization is not performed (because the printer pages will be printed in an inaccurate order). For example, for a three-page job, the pages may be printed in the order 3,2,1,&lt;blank&gt; instead of 4,3,2,&lt;blank&gt;.
+1. For reverse printing, blank page optimization is performed only when the whole job can fit on a single side of paper (for example, a one-page job with n-up=1 or a four-page job with n-up =4). If the job needs more than one sheet, the optimization is not performed (because the printer pages will be printed in an inaccurate order). For example, for a three-page job, the pages may be printed in the order 3,2,1,&lt;blank&gt; instead of 4,3,2,&lt;blank&gt;.
 
-2.  Blank page optimization is not performed if the print processor has to simulate copies. The print processor simulates copies if the number of copies that are needed is more than the number of copies that the print processor can make.
+1. Blank page optimization is not performed if the print processor has to simulate copies. The print processor simulates copies if the number of copies that are needed is more than the number of copies that the print processor can make.
 
     The following situation is an example of when simulations occurs and blank pages are generated (if required):
 
-    -   Two copies for a printer that cannot make copies
+    - Two copies for a printer that cannot make copies
 
-    The following situations are examles of when simulation does not occur and you can suppress extra page generation:
+    The following situations are examples of when simulation does not occur and you can suppress extra page generation:
 
-    -   Single copy job for a printer that cannot make copies
-    -   Five-copy job for a printer that can make more than one copys
+    - Single copy job for a printer that cannot make copies
+    - Five-copy job for a printer that can make more than one copy
 
 **Usage of PrintProcDuplexOptions**
 
-```cpp
+```GPD
 *Ifdef: WINNT_60
 *PrintProcDuplexOptions: 2
 *Endif: WINNT_60 
@@ -91,7 +92,7 @@ For a pre-Windows Vista Unidrv driver, if you have a pre-Windows Vista print pro
 
 For the Windows Vista Unidrv driver, if you have a pre-Windows Vista print processor, a printer will print an extra Blank page, if deemed necessary, and the GPD attribute will be ignored; otherwise, if you have a Windows Vista print processor, and if the appropriate GPD attribute and the proper conditions are present (that is, the conditions that are described earlier about preventing blank page printing), a printer will not print blank pages.
 
-### PreAnalysisOptions
+## PreAnalysisOptions
 
 The **PreAnalysisOptions** attribute can have one of the following values:
 
@@ -107,45 +108,39 @@ The **PreAnalysisOptions** attribute can have one of the following values:
 
 16: Enable debug mode for 1 bpp where the band is converted to 24 bpp before calling the ImageProcessing callback function.
 
-### UseBMPFontCompression?
+## UseBMPFontCompression?
 
 The **UseBMPFontCompression?** attribute controls whether Unidrv should compress data when fonts are downloaded as a bitmap. The default value of **UseBMPFontCompression?** is **FALSE**, which means Unidrv will not do compression if this attribute is not present in the GPD file. This default value maintains compatibility with older versions of Unidrv that did not have the bitmap font compression feature. You should set this attribute to **TRUE** only if your printer supports bitmap font compressionThe compressed bitmap character data is in compressed run-length-with-line-repetition format.
 
-### UseMode5Compression?
+## UseMode5Compression?
 
 The **UseMode5Compression?** attribute controls whether UniDrv should use Mode 5 compression. Mode 5 (or Method 5) compression is adaptive compression that enables the combined use of multiple other compression methods (such as Unencoded, TIFF, or Delta-Row). The default value of **UseMode5Compression?** is **FALSE**, which means Unidrv will not perform adaptive compression if this attribute is not present in the GPD. This default value maintains compatibility with older versions of Unidrv that did not have the adaptive compression feature. You should set this attribute to **TRUE** only if your printer supports adaptive compression.
 
-### UseHPGLPolylineEncoding?
+## UseHPGLPolylineEncoding?
 
 The **UseHPGLPolylineEncoding?** attribute controls whether Unidrv should use polyline encoding. HP-GL/2 supports the Pen Up/Pen Down/Draw Absolute/Draw Relative commands for drawing vectors. The polyline encoded (PE) command is a more efficient way of representing vectors.
 
 The default value for **UseHPGLPolylineEncoding?** is **FALSE**, which means Unidrv will not use the PE command if this attribute is not present in GPD. This default value maintains compatibility with older versions of Unidrv that did not have support for the PE command. You should you set this value to **TRUE** only if your printer supports polyline encoded.
 
-### PrintSchemaPrivateNamespaceURI
+## PrintSchemaPrivateNamespaceURI
 
 The **PrintSchemaPrivateNamespaceURI** attribute defines the private namespace URI that the core driver should use for exposing private PPD features or options in PrintTicket or PrintCapabilities. The attribute must appear in the root of the GPD document and contains an ASCII representation of a URI that will be used to define a namespace in PrintTickets and PrintCapabilities documents. That URI will, in turn, be associated with all features and options that do not have an explicit mapping into the public schema, or that the core driver does not recognize.
 
-### PrintSchemaKeywordMap
+## PrintSchemaKeywordMap
 
 The **PrintSchemaKeywordMap** attribute appears under feature and option constructs in the GPD file. This attribute indicates what public print schema name you should use with the printer-defined features. You can rename any option that is specified in a GPD file, except Duplex and Collate, in the PrintTicket by using the **PrintSchemaKeywordMap** attribute.
 
-**Note**   The GPD parser ignores this attribute for features that are explicitly recognized, including page size and color.
-
- 
+The GPD parser ignores this attribute for features that are explicitly recognized, including page size and color.
 
 All values should be enclosed in quotation marks. They will be converted to Unicode by using the code page that is specified in the GPD, if any. Duplicate definitions of any attributes resolve in the same way as other GPD attributes: The last definition that is read is given precedence.
 
-**Important**  If you map a feature to a Print Schema keyword that is already being used in the GPD file, the corresponding PrintCapabilities document might list that feature more than once. Multiple occurrences might be confusing, so you should not map features to Print Schema keywords that are used in the GPD file.
+If you map a feature to a Print Schema keyword that is already being used in the GPD file, the corresponding PrintCapabilities document might list that feature more than once. Multiple occurrences might be confusing, so you should not map features to Print Schema keywords that are used in the GPD file.
 
- 
-
-**Note**  The GPD parser automatically generates the FORMSOURCE option for the InputBin feature and maps it to the AutoSelect keyword in the Print Schema. If your GPD file contains an InputBin option that uses the **PrintSchemaKeywordMap** attribute to map the option to a Print Schema keyword, the feature in the Print Schema will contain a FORMSOURCE option in the device namespace. AutoSelect will appear in the PrintCapabilities document and refer to the option that is specified in the **PrintSchemaKeywordMap** attribute of the GPD file.
-
- 
+The GPD parser automatically generates the FORMSOURCE option for the InputBin feature and maps it to the AutoSelect keyword in the Print Schema. If your GPD file contains an InputBin option that uses the **PrintSchemaKeywordMap** attribute to map the option to a Print Schema keyword, the feature in the Print Schema will contain a FORMSOURCE option in the device namespace. AutoSelect will appear in the PrintCapabilities document and refer to the option that is specified in the **PrintSchemaKeywordMap** attribute of the GPD file.
 
 The following code example shows a partial GPD file to show the layout.
 
-```cpp
+```GPD
 *Feature: HPSTAPLER
 {
     *Name: "Staple"
@@ -166,11 +161,11 @@ The following code example shows a partial GPD file to show the layout.
 }
 ```
 
-### IsXPSDriver
+## IsXPSDriver
 
 The **IsXPSDriver** attribute uses the following GPD syntax.
 
-```cpp
+```GPD
 *IsXPSDriver?: TRUE | FALSE
 ```
 
@@ -178,17 +173,17 @@ You can use the Windows Vista Unidrv configuration module (Unidrvui.dll) for bot
 
 For example, if you have an XPS driver, use the following code.
 
-```cpp
+```GPD
 *IsXPSDriver?: TRUE
 ```
 
 To use the Unidrv configuration module for Win32 GDI drivers, you do not need to specify this attribute.
 
-### UseImageForHatchBrush?
+## UseImageForHatchBrush?
 
 The **UseImageForHatchBrush?** attribute uses the following GPD syntax.
 
-```cpp
+```GPD
 *Ifdef: WINNT_60
 *UseImageForHatchBrush?: TRUE
 *Endif: WINNT_60 
@@ -202,7 +197,7 @@ In Windows Vista, if the GPD specifies the **UseImageForHatchBrush?** attribute,
 
 The **ReverseBandOrder?** attribute uses the following GPD syntax.
 
-```cpp
+```GPD
 *Ifdef: WINNT_60
 *ReverseBandOrder?: TRUE
 *Endif: WINNT_60 
@@ -220,15 +215,15 @@ When only **ReverseBandOrderForEvenPages?** is set to **TRUE**, banding will be 
 
 When both **ReverseBandOrder?** and **ReverseBandOrderForEvenPages?** are set, the following occurs:
 
--   If duplex is ON, reverse banding is performed for odd pages (that is, 1, 3, 5, 7, and so on).
+- If duplex is ON, reverse banding is performed for odd pages (that is, 1, 3, 5, 7, and so on).
 
--   If duplex is OFF, reverse banding is performed for all pages.
+- If duplex is OFF, reverse banding is performed for all pages.
 
-### BidiQueryFile
+## BidiQueryFile
 
 The **BidiQueryFile** attribute uses the following GPD syntax.
 
-```cpp
+```GPD
 *BidiQueryFile: <GPD or GDL file name>
 ```
 
@@ -236,11 +231,8 @@ Use **BidiQueryFile** to specify the GPD or GDL file name that contains the prin
 
 The following code example shows an example of this attribute in a partial GPD file.
 
-```cpp
+```GPD
 *Ifdef: WINNT_60
 *BidiQueryFile: "ACnfgUni.GDL"
 *Endif: WINNT_60
 ```
-
- 
-
