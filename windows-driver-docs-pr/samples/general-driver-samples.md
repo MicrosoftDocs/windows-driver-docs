@@ -12,9 +12,9 @@ The samples in this directory provide a starting point for writing a custom driv
 | --- | --- |
 | [Cancel Safe IRP Queue](/samples/microsoft/windows-driver-samples/cancel-safe-irp-queue-sample) | Demonstrates the use of the cancel-safe queue routines IoCsqInitialize, IoCsqInsertIrp, IoCsqRemoveIrp, IoCsqRemoveNextIrp. By using these routines, driver developers do not have to worry about IRP cancellation race conditions. |
 | [KMDF Echo](/samples/microsoft/windows-driver-samples/kmdf-echo-sample) | Demonstrates how to use a sequential queue to serialize read and write requests presented to the driver. |
-| [UMDF1 Echo](/samples/microsoft/windows-driver-samples/echo-sample-umdf-version-1) | Demonstrates how to use UMDF 1 to write a driver and to employ best practices. |
+| [UMDF1 Echo](../wdf/user-mode-driver-framework-design-guide.md) | Demonstrates how to use UMDF 1 to write a driver and to employ best practices. |
 | [UMDF2 Echo](/samples/microsoft/windows-driver-samples/echo-sample-umdf-version-2) | Demonstrates how to use UMDF 2 to write a driver and to employ best practices. |
-| [UMDF SocketEcho Sample (UMDF Version 1)](/samples/microsoft/windows-driver-samples/umdf-socketecho-sample-umdf-version-1) | Demonstrates how to use the UMDF to write a driver and demonstrates best practices. |
+| [UMDF SocketEcho Sample (UMDF Version 1)](../wdf/user-mode-driver-framework-design-guide.md) | Demonstrates how to use the UMDF to write a driver and demonstrates best practices. |
 | [Hardware Event](/samples/microsoft/windows-driver-samples/hardware-event-sample)| Demonstrates two different ways a kernel-mode driver can notify an application about a hardware event. One way uses an event-based method, and the other uses an IRP-based method. The sample driver uses a timer DPC to simulate hardware events. |
 | [File History](/samples/microsoft/windows-driver-samples/file-history-sample)| A console application that starts the file history service, if it is stopped, and schedules regular backups. |
 | [Non-PnP Driver Sample](/samples/microsoft/windows-driver-samples/non-pnp-driver-sample)| Demonstrates how to write a non-PnP driver using the Kernel Mode Driver Framework. |
@@ -32,6 +32,6 @@ The samples in this directory provide a starting point for writing a custom driv
 | [EventDrv](/samples/microsoft/windows-driver-samples/eventdrv) | A kernel-mode trace provider and driver. The driver does not control any hardware; it simply generates trace events. It is designed to demonstrate the use of the Event Tracing for Windows (ETW) API in a driver. |
 | [System Trace Control](/samples/microsoft/windows-driver-samples/systemtraceprovider) | Demonstrates how to use event tracing control APIs to collect events from the system trace provider. |
 | [Tracedrv](/samples/microsoft/windows-driver-samples/tracedrv) | A sample driver instrumented for software tracing.|
-| [UMDF Driver Skeleton](/samples/microsoft/windows-driver-samples/umdf-driver-skeleton-sample-umdf-version-1) | Demonstrates how to use the User-Mode Driver Framework to write a minimal driver and shows best practices. |
+| [UMDF Driver Skeleton](../wdf/user-mode-driver-framework-design-guide.md) | Demonstrates how to use the User-Mode Driver Framework to write a minimal driver and shows best practices. |
 | [Driver package installation toolkit for universal drivers](/samples/microsoft/windows-driver-samples/driver-package-installation-toolkit-for-universal-drivers) | Illustrates DCHU principles of universal driver design. |
 | [WinHEC 2017 Lab](/samples/microsoft/windows-driver-samples/winhec-2017-lab) | Toaster samples from the WinHEC 2017 Lab: Toaster Driver, PlugInToaster, and Toaster Support App. |
