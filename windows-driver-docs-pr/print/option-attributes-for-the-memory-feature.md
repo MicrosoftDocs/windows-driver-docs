@@ -3,14 +3,12 @@ title: Option Attributes for the Memory Feature
 description: Option Attributes for the Memory Feature
 keywords:
 - Memory Feature WDK print
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Option Attributes for the Memory Feature
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following table lists the attributes associated with the Memory feature. For more information about the Memory feature, see [Standard Features](standard-features.md).
 
@@ -46,18 +44,8 @@ The following table lists the attributes associated with the Memory feature. For
 </tbody>
 </table>
 
- 
-
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
 For more information about using these attributes, along with examples, see [Describing Printer Memory Configurations](describing-printer-memory-configurations.md).
 
 For information about additional option attributes, see [Option Attributes for All Features](option-attributes-for-all-features.md).
-
- 
-
- 
-
-
-
-

@@ -3,14 +3,12 @@ title: IPrintOemUni COM Interface
 description: IPrintOemUni COM Interface
 keywords:
 - IPrintOemUni
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # IPrintOemUni COM Interface
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The `IPrintOemUni` COM interface is the means by which the [printer graphics DLL](printer-graphics-dll.md) for Unidrv communicates with a rendering plug-in. The `IPrintOemUni` interface is implemented by each rendering plug-in.
 
@@ -123,7 +121,4 @@ The following table lists and describes all of the methods provided by the `IPri
 </tbody>
 </table>
 
- 
-
 For more information, see [Implementing Printer Driver COM Interfaces](implementing-printer-driver-com-interfaces.md).
-

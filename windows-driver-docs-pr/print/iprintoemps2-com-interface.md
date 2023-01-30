@@ -3,14 +3,12 @@ title: IPrintOemPS2 COM Interface
 description: IPrintOemPS2 COM Interface
 keywords:
 - IPrintOemPS2
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # IPrintOemPS2 COM Interface
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The `IPrintOemPS2` COM interface contains all the methods of, and extends the capabilities of the [IPrintOemPS COM Interface](iprintoemps-com-interface.md). This interface is limited to Pscript5 rendering plug-ins that run on Windows XP and later versions of Windows operating system.
 
@@ -39,7 +37,4 @@ The following table lists and describes all of the methods provided by the `IPri
 </tbody>
 </table>
 
- 
-
 For more information, see [Implementing Printer Driver COM Interfaces](implementing-printer-driver-com-interfaces.md).
-

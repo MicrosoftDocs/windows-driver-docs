@@ -3,14 +3,12 @@ title: IPrintOemDriverUI COM Interface
 description: IPrintOemDriverUI COM Interface
 keywords:
 - IPrintOemDriverUI
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # IPrintOemDriverUI COM Interface
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The `IPrintOemDriverUI` COM interface enables a UI plug-in to view and modify information managed by the [printer interface DLL](printer-interface-dll.md) for Unidrv or Pscript.
 
@@ -43,7 +41,4 @@ The following table lists and describes all the methods that the `IPrintOemDrive
 </tbody>
 </table>
 
- 
-
 For more information, see [Implementing Printer Driver COM Interfaces](implementing-printer-driver-com-interfaces.md).
-

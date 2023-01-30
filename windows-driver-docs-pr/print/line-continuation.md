@@ -6,14 +6,12 @@ keywords:
 - line continuations WDK GPD files
 - continued lines WDK GPD files
 - continuation character WDK GPD files
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # Line Continuation
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 [GPD file entries](gpd-file-entries.md) that are too long to fit onto a single line can be continued on subsequent lines. To continue an entry, each line after the first must be preceded by a plus sign (+). The plus sign must be the first character on the line, without preceding white space, as illustrated in the following example:
 
@@ -34,14 +32,6 @@ ms.date: 04/20/2017
 
 You do not need to use a line continuation character at the beginning of the following lines:
 
--   Lines that start with an asterisk.
+- Lines that start with an asterisk.
 
--   Lines that start with a left brace.
-
- 
-
- 
-
-
-
-
+- Lines that start with a left brace.

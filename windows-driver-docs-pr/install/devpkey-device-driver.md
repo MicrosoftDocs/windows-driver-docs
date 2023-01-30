@@ -16,7 +16,7 @@ ms.date: 10/17/2018
 # DEVPKEY_Device_Driver
 
 
-The DEVPKEY_Device_Driver device property represents the registry entry name of the *driver key* for a *device instance*.
+The DEVPKEY_Device_Driver device property represents the registry entry name of the *driver key* for a *device instance*. *Driver key*, also known as the driver's *software key*, is a device-specific registry state location for storing driver-specific information. For information on interpreting a driver key, see [Introduction to Registry Keys for Drivers](/windows-hardware/drivers/wdf/introduction-to-registry-keys-for-drivers).
 
 <table>
 <colgroup>

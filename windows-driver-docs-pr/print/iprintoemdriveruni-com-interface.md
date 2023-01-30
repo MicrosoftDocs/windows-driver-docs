@@ -3,14 +3,12 @@ title: IPrintOemDriverUni COM Interface
 description: IPrintOemDriverUni COM Interface
 keywords:
 - IPrintOemDriverUni
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # IPrintOemDriverUni COM Interface
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The `IPrintOemDriverUni COM` interface provides a rendering plug-in with access to utility operations supplied by the printer graphics DLL for Unidrv. These operations send a data stream to the print spooler, and obtain driver-managed information.
 
@@ -63,7 +61,4 @@ The following table lists and describes all of the methods defined by the **IPri
 </tbody>
 </table>
 
- 
-
 For more information, see [Implementing Printer Driver COM Interfaces](implementing-printer-driver-com-interfaces.md).
-

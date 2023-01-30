@@ -3,14 +3,12 @@ title: IPrintCoreUI2 COM Interface
 description: IPrintCoreUI2 COM Interface
 keywords:
 - IPrintCoreUI2
-ms.date: 04/20/2017
+ms.date: 01/27/2023
 ---
 
 # IPrintCoreUI2 COM Interface
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The `IPrintCoreUI2` COM interface extends the [IPrintOemDriverUI COM interface](iprintoemdriverui-com-interface.md). In Windows XP and later, Pscript5 driver provides the `IPrintCoreUI2` COM interface. The methods in this interface are for use only by Pscript5 UI plug-ins.
 
@@ -81,7 +79,4 @@ The `IPrintCoreUI2` COM interface extends the [IPrintOemDriverUI COM interface](
 </tbody>
 </table>
 
- 
-
 For more information, see [Implementing Printer Driver COM Interfaces](implementing-printer-driver-com-interfaces.md).
-
