@@ -38,6 +38,8 @@ The system then calls `KeBugCheck` and issues [Bug check 0xE2: MANUALLY_INITIATE
 
 If a kernel debugger is attached to the crashed machine, the machine will break into the kernel debugger after the crash dump file has been written.
 
+Many laptops use the PS/2 driver for the built-in keyboard.  For these systems, consider creating both the USB and PS/2 registry keys.
+
 ## Defining alternate keyboard shortcuts to force a system crash from the keyboard
 
 You can configure values under the following registry subkeys for different keyboard shortcut sequences to generate the memory dump file:
@@ -98,6 +100,17 @@ const UCHAR keyToScanTbl[134] = {
 Index 124 (sysreq) is a special case because an 84-key keyboard has a different scan code.
 
 If you define alternate keyboard shortcuts to force a system crash from a USB or PS/2 keyboard, you must either set the `CrashOnCtrlScroll` registry value to 0 or remove it from the registry.
+
+Example: A manual system crash can be forced by holding the rightmost control key and pressing the spacebar twice when the following registry key is set: 
+```reg
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt\crashdump]
+"Dump1Keys"=dword:00000002
+"Dump2Key"=dword:0000003d
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdhid\crashdump]
+"Dump1Keys"=dword:00000002
+"Dump2Key"=dword:0000003d
+```
 
 ## Limitations
 
