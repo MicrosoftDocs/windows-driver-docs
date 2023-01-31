@@ -3,18 +3,16 @@ title: Using GetFeatureAttribute
 description: Using GetFeatureAttribute
 keywords:
 - GetFeatureAttribute
-ms.date: 04/20/2017
+ms.date: 01/31/2023
 ---
 
 # Using GetFeatureAttribute
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 This function is supported only for PPD features. If a certain attribute is not available, **GetFeatureAttribute** returns E\_INVALIDARG.
 
-In the following table, the *pdwDataType* parameter takes values of the [**EATTRIBUTE\_DATATYPE**](/windows-hardware/drivers/ddi/printoem/ne-printoem-_eattribute_datatype) enumerated type.
+In the following table, the *pdwDataType* parameter takes values of the [**EATTRIBUTE_DATATYPE**](/windows-hardware/drivers/ddi/printoem/ne-printoem-_eattribute_datatype) enumerated type.
 
 <table>
 <colgroup>
@@ -68,12 +66,7 @@ In the following table, the *pdwDataType* parameter takes values of the [**EATTR
 <td><p><em></em>pdwDataType</em>: kADT_ASCII</p>
 <p><em>pbData</em>: null-terminated ASCII string containing one of following section names: "ExitServer", "Prolog", "DocumentSetup", "PageSetup", "JCLSetup", or "AnySetup".</p>
 <p><em></em>pcbNeeded</em>: byte count of the ASCII string pointed to by <em>pbData</em> (including the null terminator)</p>
-<p>This attribute is available only for a PPD feature that has an *OrderDependency or *NonUIOrderDependency entry in the PPD, and the entry omits optionKeyword.</p></td>
+<p>This attribute is available only for a PPD feature that has an*OrderDependency or *NonUIOrderDependency entry in the PPD, and the entry omits optionKeyword.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-

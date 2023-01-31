@@ -6,24 +6,26 @@ keywords:
 - print paths WDK XPSDrv
 - GDI print path WDK XPSDrv
 - XPS print path WDK XPSDrv
-ms.date: 04/20/2017
+ms.date: 01/31/2023
 ---
 
 # Windows Print Path Overview
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
+
 Windows provides two primary print paths and two additional conversion paths. The two primary print paths are:
 
--   GDI print path (similar to the Windows Server 2003 print path). This path is also called the Win32 path and originates in a Win32 application by using the GDI graphic API.
+- GDI print path (similar to the Windows Server 2003 print path). This path is also called the Win32 path and originates in a Win32 application by using the GDI graphic API.
 
--   XPS print path. This path originates in a Windows Presentation Foundation (WPF) application or from the XPS Print API.
+- XPS print path. This path originates in a Windows Presentation Foundation (WPF) application or from the XPS Print API.
 
 The two conversion options are:
 
--   GDI-to-XPS conversion (MXDC).
+- GDI-to-XPS conversion (MXDC).
 
--   XPS-to-GDI conversion (XGC).
+- XPS-to-GDI conversion (XGC).
 
-### General Data Flow
+## General Data Flow
 
 The following illustration shows the different print path and conversion options of the XPSDrv subsystem.
 

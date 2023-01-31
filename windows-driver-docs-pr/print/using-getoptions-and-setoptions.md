@@ -4,26 +4,24 @@ description: Using GetOptions and SetOptions
 keywords:
 - GetOptions
 - SetOptions
-ms.date: 04/20/2017
+ms.date: 01/31/2023
 ---
 
 # Using GetOptions and SetOptions
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 **GetOptions** can be called to retrieve the driver's current setting for features whose keywords are listed in the buffer pointed to by the *pmszFeaturesRequested* input parameter.
 
-For example, in a call to **GetOptions**, suppose that the *pmszFeaturesRequested* input buffer contains this string (in MULTI\_SZ format):
+For example, in a call to **GetOptions**, suppose that the *pmszFeaturesRequested* input buffer contains this string (in MULTI_SZ format):
 
-```cpp
+```GPD
 "PageSize\0Duplex\0Resolution\0\0"
 ```
 
-After the **GetOptions** method returns, the output *pmszFeatureOptionBuf* could contain the following string (also in MULTI\_SZ format):
+After the **GetOptions** method returns, the output *pmszFeatureOptionBuf* could contain the following string (also in MULTI_SZ format):
 
-```cpp
+```GPD
 "PageSize\0Letter\0Duplex\0DuplexTumble\0Resolution\0300dpi\0\0"
 ```
 
@@ -36,11 +34,3 @@ There are two categories of features that are supported:
 [PPD Features](ppd-features.md)
 
 [Driver Features](driver-features.md)
-
- 
-
- 
-
-
-
-

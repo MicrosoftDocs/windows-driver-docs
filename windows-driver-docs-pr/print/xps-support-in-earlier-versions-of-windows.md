@@ -3,10 +3,12 @@ title: XPS Support in Earlier Versions of Windows
 description: XPS Support in Earlier Versions of Windows
 keywords:
 - XPSDrv printer drivers WDK , earlier Windows versions
-ms.date: 04/20/2017
+ms.date: 01/31/2023
 ---
 
 # XPS Support in Earlier Versions of Windows
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 In addition to Windows Vista, XPS-based technologies are supported on Microsoft Windows Server 2003 and Windows XP through the Microsoft WinFX Runtime Component 3.0. XPS printing will work in Point and Print scenarios with these operating systems.
 

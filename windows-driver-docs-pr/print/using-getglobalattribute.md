@@ -3,18 +3,16 @@ title: Using GetGlobalAttribute
 description: Using GetGlobalAttribute
 keywords:
 - GetGlobalAttribute
-ms.date: 04/20/2017
+ms.date: 01/31/2023
 ---
 
 # Using GetGlobalAttribute
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 All of the global attribute names are the same as the keyword names defined in *PostScript Printer Description File Format Specification, v4.3*. Refer to this specification for their semantics. (This resource may not be available in some languages and countries.)
 
-In the following table, the *pdwDataType* parameter takes values of the [**EATTRIBUTE\_DATATYPE**](/windows-hardware/drivers/ddi/printoem/ne-printoem-_eattribute_datatype) enumerated type.
+In the following table, the *pdwDataType* parameter takes values of the [**EATTRIBUTE_DATATYPE**](/windows-hardware/drivers/ddi/printoem/ne-printoem-_eattribute_datatype) enumerated type.
 
 <table>
 <colgroup>
@@ -77,7 +75,7 @@ In the following table, the *pdwDataType* parameter takes values of the [**EATTR
 <p><em><em>pcbNeeded</em>: byte count of the ASCII string pointed to by <em>pbData</em> (including the last null character)</p>
 <p>Notes</p>
 <p>"WindowsANSI" is treated the same as "ISOLatin1". Other encodingOption values are not supported.</p>
-<p>If *LanguageEncoding is absent, *LanguageVersion is used to deduce the return value.</p></td>
+<p>If *LanguageEncoding is absent,*LanguageVersion is used to deduce the return value.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>LanguageLevel</strong></p></td>
@@ -88,7 +86,7 @@ In the following table, the *pdwDataType* parameter takes values of the [**EATTR
 <tr class="odd">
 <td><p><strong>NickName</strong></p></td>
 <td><p><em><em>pdwDataType</em>: kADT_UNICODE</p>
-<p><em>pbData</em>: NULL-terminated Unicode string of the PPD's *ShortNickName value if *ShortNickName is present, or *NickName value if *ShortNickName is absent.</p>
+<p><em>pbData</em>: NULL-terminated Unicode string of the PPD's *ShortNickName value if*ShortNickName is present, or *NickName value if*ShortNickName is absent.</p>
 <p><em></em>pcbNeeded</em>: byte count of the Unicode string pointed to by <em>pbData</em> (including the last null character)</p></td>
 </tr>
 <tr class="even">
@@ -151,12 +149,7 @@ In the following table, the *pdwDataType* parameter takes values of the [**EATTR
 <p>"Type42"</p>
 <p>"TrueImage"</p>
 <p><em></em>pcbNeeded</em>: byte count of the ASCII string pointed to by <em>pbData</em> (including the last null character)</p>
-<p>Note: if the *TTRasterizer entry is absent, "None" is returned.</p></td>
+<p>Note: if the*TTRasterizer entry is absent, "None" is returned.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-

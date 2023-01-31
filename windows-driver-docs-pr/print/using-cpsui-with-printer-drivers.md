@@ -9,10 +9,12 @@ keywords:
 - Common Property Sheet User Interface WDK print, about CPSUI
 - CPSUI WDK print , about CPSUI
 - property sheet pages WDK print, about CPSUI with printer drivers
-ms.date: 09/09/2022
+ms.date: 01/31/2023
 ---
 
 # Use CPSUI with printer drivers
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The print spooler, in conjunction with [printer interface DLLs](printer-interface-dll.md), uses CPSUI to create property sheet pages for print documents and printer devices. The following steps are involved when an application (such as Microsoft Word) displays a property sheet for a print document:
 
