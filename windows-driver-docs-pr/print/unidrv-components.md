@@ -4,14 +4,12 @@ description: Unidrv Components
 keywords:
 - Unidrv, components
 - Unidrv WDK print
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Unidrv Components
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Unidrv components consist of DLLs, plus text and binary data files, as illustrated in the following diagram:
 
@@ -25,7 +23,7 @@ A user application, such as a word processor, that provides users with printing 
 <a href="" id="gdi32-dll"></a>**gdi32.dll**  
 User-mode DLL that exports Win32 GDI functions.
 
-<a href="" id="kernel-mode-graphics-engine-------"></a>Kernel-Mode Graphics Engine   
+<a href="" id="kernel-mode-graphics-engine-------"></a>Kernel-Mode Graphics Engine
 NT executive code that implements GDI functionality.
 
 <a href="" id="minidriver-text-files"></a>**Minidriver Text Files**  
@@ -48,11 +46,3 @@ Optional, printer-specific, [user interface plug-in](user-interface-plug-ins.md)
 
 <a href="" id="rendering-plug-in"></a>**Rendering Plug-In**  
 Optional, printer-specific, [rendering plug-in](rendering-plug-ins.md).
-
- 
-
- 
-
-
-
-

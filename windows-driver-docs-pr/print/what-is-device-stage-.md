@@ -1,11 +1,12 @@
 ---
 title: What Is Device Stage
 description: What Is Device Stage
-ms.date: 04/20/2017
+ms.date: 01/31/2023
 ---
 
 # What Is Device Stage?
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Device Stage is a new Windows platform that enables device manufacturers to deliver rich user experiences that match the specific branding, features, and content of their devices. With Device Stage, users can simply connect their device to a Windows 7 PC, and the manufacturer-supplied experience will be automatically installed and presented to the user, ensuring a seamless experience between the device and PC.
 
@@ -15,22 +16,14 @@ A Device Stage experience is made up of XML and graphics files. These files defi
 
 Device Stage provides several advantages to device makers:
 
--   **Increased customer connection**
+- **Increased customer connection**
 
     Device Stage provides a highly customizable user interface that places your device in the center of the Windows experience. Custom logos, rich graphics, and device images reflect your unique product and corporate branding on the desktop.
 
--   **Richer desktop experiences**
+- **Richer desktop experiences**
 
     Windows 7 provides a rich set of device functionality such as setting print preferences, scan a document, view contents of storage, and many more. With Device Stage you can include key device functionality in your device experience without having to develop, download, and install additional software.
 
--   **Deploy and update device experiences anytime**
+- **Deploy and update device experiences anytime**
 
     Windows 7 Device Stage automatically retrieves the latest device experience metadata for the device from WMIS service. You can update the data on the service at anytime, ensuring that you retain complete control over the experience and that users are given the most current applications, services, and content for their device.
-
- 
-
- 
-
-
-
-

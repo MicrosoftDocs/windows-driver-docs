@@ -7,10 +7,12 @@ keywords:
 - shutdown power management WDK printer
 - standby tests WDK printer
 - hibernate tests WDK printer
-ms.date: 06/11/2020
+ms.date: 01/30/2023
 ---
 
 # Power Management
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Some of the most common failures of a port-connected device occur when the system is cycled through various sleep states and the device fails to correctly set device power states or to return from various device power states. A system should always act as if it was started from a completely powered-off state ("cold boot"). Special behavior that is unique to entering or waking from a sleep state is most likely a bug.
 

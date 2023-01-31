@@ -7,10 +7,12 @@ keywords:
 - directory identifiers WDK printer
 - printer dirids WDK
 - identifiers WDK printer
-ms.date: 02/16/2021
+ms.date: 01/30/2023
 ---
 
 # Printer Dirids
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 When specifying target directories within INF files, directory identifiers (`dirids`) should be used. For more information, see [Using Dirids](../install/using-dirids.md).
 

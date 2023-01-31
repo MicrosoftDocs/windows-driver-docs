@@ -5,14 +5,12 @@ keywords:
 - printer capability attributes WDK Unidrv
 - general printer attributes WDK Unidrv , printer capability
 - capability attributes WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Printer Capability Attributes
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Printer capability attributes are [general printing attributes](general-printing-attributes.md) that specify such printer characteristics as page margin, rotation, and text printing capabilities that affect all paper sizes and orientations.
 
@@ -67,7 +65,7 @@ AFTER_FF - After the CmdFF command.</td>
 <td><p><strong>TRUE</strong> or <strong>FALSE</strong>, indicating whether reverse banding is enabled. This attribute is used to support printers with auto-duplex capability; that is, printers that are able to print on both sides of a sheet of paper.</p>
 <p>The section following this table contains more information.</p></td>
 <td><p>The default value of this attribute is <strong>FALSE</strong>. Setting this attribute to <strong>TRUE</strong> enables reverse banding order.</p>
-<p>This attribute is a relocatable global attribute; it may be placed at the root level (see <a href="root-level-only-attributes.md" data-raw-source="[Root-Level-Only Attributes](root-level-only-attributes.md)">Root-Level-Only Attributes</a>) to signify that it has no dependency on printer configuration, or it may appear with *Option or *Case constructs if there is some dependency.</p></td>
+<p>This attribute is a relocatable global attribute; it may be placed at the root level (see <a href="root-level-only-attributes.md" data-raw-source="[Root-Level-Only Attributes](root-level-only-attributes.md)">Root-Level-Only Attributes</a>) to signify that it has no dependency on printer configuration, or it may appear with*Option or *Case constructs if there is some dependency.</p></td>
 </tr>
 <tr class="even">
 <td><p></em><strong>RotateCoordinate?</strong></p></td>
@@ -77,22 +75,20 @@ AFTER_FF - After the CmdFF command.</td>
 <tr class="odd">
 <td><p><em><strong>RotateFont?</strong></p></td>
 <td><p><strong>TRUE</strong> or <strong>FALSE</strong>, indicating whether the printer automatically rotates fonts to match the page orientation.</p></td>
-<td><p>Optional. If not specified, the default value is <strong>FALSE</strong>. If <strong>TRUE</strong>, then *<strong>RotateCoordinate?</strong> must also be <strong>TRUE</strong>. Cannot be placed in a *Case entry.</p></td>
+<td><p>Optional. If not specified, the default value is <strong>FALSE</strong>. If <strong>TRUE</strong>, then*<strong>RotateCoordinate?</strong> must also be <strong>TRUE</strong>. Cannot be placed in a *Case entry.</p></td>
 </tr>
 <tr class="even">
 <td><p></em><strong>RotateRaster?</strong></p></td>
 <td><p><strong>TRUE</strong> or <strong>FALSE</strong>, indicating whether the printer automatically rotates raster data to match the page orientation.</p></td>
-<td><p>Optional. If not specified, the default value is <strong>FALSE</strong>. If <strong>TRUE</strong>, then <em><strong>RotateCoordinate?</strong> must also be <strong>TRUE</strong>. Cannot be placed in a *Case entry.</p></td>
+<td><p>Optional. If not specified, the default value is <strong>FALSE</strong>. If <strong>TRUE</strong>, then <em><strong>RotateCoordinate?</strong> must also be <strong>TRUE</strong>. Cannot be placed in a*Case entry.</p></td>
 </tr>
 <tr class="odd">
 <td><p></em><strong>TextCaps</strong></p></td>
-<td><p>LIST of constants indicating the printer's text capabilities. Can consist of one or more of the TC_<em>xxx</em> flags described in the Microosft Windows SDK documentation's description of <strong>GetDeviceCaps</strong>.</p></td>
+<td><p>LIST of constants indicating the printer's text capabilities. Can consist of one or more of the TC_<em>xxx</em> flags described in the Microsoft Windows SDK documentation's description of <strong>GetDeviceCaps</strong>.</p></td>
 <td><p>Optional. If not specified, Unidrv assumes no text capabilities are supported.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
@@ -103,8 +99,6 @@ A side effect of the auto-duplex capability is that the bottom edge of a page th
 When \***ReverseBandOrderForEvenPages?** is **TRUE** and duplexing is on, Unidrv enumerates each band in reverse order for even-numbered pages (the back sides of odd-numbered pages). The OEM rendering plug-in needs to cache only one band of data before sending it to the printer. The order of the scan lines within each band is not reversed, so the plug-in must still handle that task, and it must also reverse the order of the bits within each scan line. Although this is extra work for the plug-in, the advantage is that the plug-in does not need to cache any raster data and can begin sending data to the printer immediately.
 
 **Note**  The \***ReverseBandOrderForEvenPages?** attribute is evaluated only when duplexing is set to "Flip on Long Edge". This attribute is ignored when duplexing is set to "Flip on Short Edge".
-
- 
 
 Both the value of the \***ReverseBandOrderForEvenPages?** attribute and the driver-simulated rotation affect the way bands are enumerated, which is shown in the following table. The band enumeration order specified in the column headed with **TRUE** applies when \***ReverseBandOrderForEvenPages?** is **TRUE**, and duplexing is selected, and the page to be printed is the second (or back) side. Otherwise the column headed with **FALSE** applies.
 
@@ -140,13 +134,8 @@ Both the value of the \***ReverseBandOrderForEvenPages?** attribute and the driv
 </tbody>
 </table>
 
- 
-
-Legend: SW\_LTOR = Left To Right, SW\_RTOL = Right To Left, SW\_UP = Bottom To Top, SW\_DOWN = Top To Bottom.
+Legend: SW_LTOR = Left To Right, SW_RTOL = Right To Left, SW_UP = Bottom To Top, SW_DOWN = Top To Bottom.
 
 An OEM rendering plug-in can support auto-duplexing without using the \***ReverseBandOrderForEvenPages?** attribute. The plug-in can do so by simply caching all of the data for the entire page and sending it to the printer, beginning with the bottom scan line. That scan line, as well as all the others on that page, must be sent in reverse order.
 
-**Note**   The OEM rendering plug-in is responsible for reversing the order of the bits with each scan line and the order of the scan lines with each band as it sends the data to the printer. To determine when this must be done, the value of the PageNumber standard variable can be obtained by making a call to [**IPrintOemDriverUni::DrvGetStandardVariable**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriveruni-drvgetstandardvariable), using the index SVI\_PAGENUMBER. If the page number is odd, no reversing is needed. If the number is even and duplexing is selected, reversing is needed.
-
- 
-
+The OEM rendering plug-in is responsible for reversing the order of the bits with each scan line and the order of the scan lines with each band as it sends the data to the printer. To determine when this must be done, the value of the PageNumber standard variable can be obtained by making a call to [**IPrintOemDriverUni::DrvGetStandardVariable**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriveruni-drvgetstandardvariable), using the index SVI_PAGENUMBER. If the page number is odd, no reversing is needed. If the number is even and duplexing is selected, reversing is needed.

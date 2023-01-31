@@ -5,10 +5,12 @@ keywords:
 - Print Capabilities WDK, Win32 API support
 - DrvDeviceCapabilities
 - Win32 applications WDK print
-ms.date: 09/07/2022
+ms.date: 01/31/2023
 ---
 
 # Win32 API support for print capabilities
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The Windows Vista print subsystem provides compatibility support that enables Windows Presentation Foundation (WPF) applications to use GDI-based print drivers and enables Microsoft Win32-based applications to use XPSDrv print drivers. This compatibility is provided through a layer of software shims. Shims are software modules that perform transformation operations on the data so that otherwise incompatible software can interoperate. The following figure shows the data paths of this implementation for Print Capabilities.
 

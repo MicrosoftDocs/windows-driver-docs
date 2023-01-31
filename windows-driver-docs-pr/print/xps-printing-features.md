@@ -5,11 +5,12 @@ keywords:
 - XPSDrv printer drivers WDK , printing features
 - XPS printing features WDK XPSDrv
 - color management WDK print , XPS printing advantages
-ms.date: 04/20/2017
+ms.date: 01/31/2023
 ---
 
 # XPS Printing Features
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The XPS print path and the XPSDrv printer drivers offer the following advantages over the GDI-based printer drivers in the GDI print path:
 
@@ -22,11 +23,3 @@ The XPS print path and the XPSDrv printer drivers offer the following advantages
 [Improved Spooling and Rendering](improved-spooling-and-rendering.md)
 
 [Extensible Architecture](extensible-architecture.md)
-
- 
-
- 
-
-
-
-

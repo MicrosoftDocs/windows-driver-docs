@@ -7,18 +7,16 @@ keywords:
 - IPrintCoreUI2
 - PPD files WDK Pscript
 - PPD-specific interface WDK Pscript
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
-# PPD-Specific Interface
+# PPD-specific interface
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The [IPrintCoreUI2 COM Interface](iprintcoreui2-com-interface.md) supports nine methods that a user interface plug-in can call to access information in *PPD* files. Six of these methods are supported in the [IPrintCorePS2 COM Interface](iprintcoreps2-com-interface.md). This section describes the PPD-specific behavior of these methods.
 
-### IPrintCoreUI2 Interface PPD Methods
+## IPrintCoreUI2 Interface PPD Methods
 
 [**IPrintCoreUI2::EnumConstrainedOptions**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintcoreui2-enumconstrainedoptions)
 
@@ -54,11 +52,8 @@ The [IPrintCoreUI2 COM Interface](iprintcoreui2-com-interface.md) supports nine 
 
 Throughout this section, a reference to any method that is a member of both interfaces applies to both methods. For example, a reference to **GetOptions** applies to **IPrintCoreUI2::GetOptions** as well as to **IPrintCorePS2::GetOptions**.
 
-### PPD Feature Availability
+## PPD Feature Availability
 
-Note that in this section, the phrase "PPD feature is not currently available" means that either the printer does not support the feature, or the feature's non-None/False options are constrained by current installable option settings.
+In this section, the phrase "PPD feature isn't currently available" means that either the printer doesn't support the feature, or the feature's non-None/False options are constrained by current installable option settings.
 
-For example, "Duplex feature is not currently available" means either the PPD does not specify the \***Duplex** feature keyword, or the \***Duplex** feature keyword's non-None options are currently constrained by the fact that the duplex unit is not installed.
-
- 
-
+For example, "Duplex feature isn't currently available" means either the PPD doesn't specify the \***Duplex** feature keyword, or the \***Duplex** feature keyword's non-None options are currently constrained by the fact that the duplex unit isn't installed.

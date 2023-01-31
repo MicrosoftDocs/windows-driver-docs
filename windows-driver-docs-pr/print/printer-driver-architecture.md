@@ -7,14 +7,12 @@ keywords:
 - Windows printing architecture WDK
 - printer driver architecture WDK
 - printer drivers WDK , architecture
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Printer Driver Architecture
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Print jobs are created by applications through calls to Microsoft Win32 GDI or, in Windows Vista, Windows Presentation Foundation (WPF) functions. The Win32 functions spool application data as [EMF](emf-data-type.md) records for later playback by the EMF *print processor*, or they can immediately render a printable image for each document page. The WPF functions spool application data as an XPS spool file.
 
@@ -22,17 +20,17 @@ Prior to Windows Vista, applications communicated printer settings to the printe
 
 Image rendering, whether performed immediately or during print processing, is performed in the print driver:
 
--   A [GDI-based printer driver](gdi-printer-drivers.md) performs the image rendering during the playback of EMF records from the spool file and is controlled by the GDI rendering engine. During the rendering operation, the GDI rendering engine calls the appropriate Windows 2000 and later printer driver for assistance.
+- A [GDI-based printer driver](gdi-printer-drivers.md) performs the image rendering during the playback of EMF records from the spool file and is controlled by the GDI rendering engine. During the rendering operation, the GDI rendering engine calls the appropriate Windows 2000 and later printer driver for assistance.
 
--   [XPSDrv print drivers](xpsdrv-printer-drivers.md) use a series of processing filters to process the XPS spool file content for output to the printer.
+- [XPSDrv print drivers](xpsdrv-printer-drivers.md) use a series of processing filters to process the XPS spool file content for output to the printer.
 
 Windows 2000 and later GDI-based printer drivers must:
 
--   Assist GDI in rendering print jobs by providing printer-specific drawing capabilities that GDI cannot support.
+- Assist GDI in rendering print jobs by providing printer-specific drawing capabilities that GDI cannot support.
 
--   Send the rendered image's data stream to the print spooler.
+- Send the rendered image's data stream to the print spooler.
 
--   Provide a user interface to the modifiable configuration parameters that are associated with printers and print documents, such as which input and output trays are selected, the number of copies, image resolution and orientation, and so on.
+- Provide a user interface to the modifiable configuration parameters that are associated with printers and print documents, such as which input and output trays are selected, the number of copies, image resolution and orientation, and so on.
 
 XPSDrv printer drivers have the same user interface responsibility as the GDI-based drivers and are also responsible for processing the print job data and sending the data to the printer. XPSDrv printer drivers, however, do not need to use GDI to render the page images for the printer.
 
@@ -57,6 +55,3 @@ This section contains the following topics, which describe the Windows printing 
 [Print Ticket and Print Capabilities Technologies](print-ticket-and-print-capabilities-technologies.md)
 
 [Writing 64-Bit Printer Drivers](writing-64-bit-printer-drivers.md)
-
- 
-

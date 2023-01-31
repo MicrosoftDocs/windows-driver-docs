@@ -5,10 +5,12 @@ keywords:
 - PostScript Printer Driver WDK print, user interface
 - Pscript WDK print, user interface
 - user interface WDK Pscript
-ms.date: 09/16/2022
+ms.date: 01/30/2023
 ---
 
 # Pscript user interface
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The Pscript user interface employs [CPSUI](common-property-sheet-user-interface.md) to create the following property sheet pages:
 

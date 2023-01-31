@@ -4,7 +4,7 @@ description: Provides information about how to use resource DLLs in a minidriver
 keywords:
 - GPD files WDK Unidrv, resource DLLs
 - resource DLLs WDK Unidrv
-ms.date: 09/16/2022
+ms.date: 01/31/2023
 ---
 
 # Use resource DLLs in a minidriver
@@ -13,11 +13,11 @@ Typically, printer drivers require the use of such resources as externally store
 
 To use resource DLLs in a Unidrv minidriver, you must identify the resources as follows:
 
-- If you are using more than one resource DLL, identify them using the RESDLL feature.
+- If you're using more than one resource DLL, identify them using the RESDLL feature.
 
     An example usage of the RESDLL feature is as follows:
 
-    ```cpp
+    ```GPD
     *Feature: RESDLL
     {
         *Option: FirstRes
@@ -33,11 +33,11 @@ To use resource DLLs in a Unidrv minidriver, you must identify the resources as 
 
     RESDLL.*ResourceOptionName*.*ResourceID*
 
-- If you are using only one resource DLL, you can identify it by assigning a value to the \*ResourceDLL attribute.
+- If you're using only one resource DLL, you can identify it by assigning a value to the \*ResourceDLL attribute.
 
-    To reference a resource contained in this resource DLL, simply specify the appropriate resource identifier, as illustrated in the following example:
+    To reference a resource contained in this resource DLL, specify the appropriate resource identifier, as illustrated in the following example:
 
-    ```cpp
+    ```GPD
     *rcNameID: 288
     ```
 
@@ -49,6 +49,6 @@ Additionally, if your printer contains hardware-resident fonts, you must provide
 
 Microsoft supplies one resource DLL, unires.dll, which contains string resources for the [standard features](standard-features.md) and [standard options](standard-options.md). The Microsoft-supplied GPD file, stdnames.gpd, assigns a macro symbol name to each resource identifier. This allows you to reference these resources by their macro name, as illustrated in the following example:
 
-```cpp
+```GPD
 *rcNameID: =LETTERSMALL_DISPLAY
 ```

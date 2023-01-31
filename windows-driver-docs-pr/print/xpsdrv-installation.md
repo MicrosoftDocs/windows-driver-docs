@@ -4,23 +4,24 @@ description: XPSDrv Installation
 keywords:
 - XPSDrv printer drivers WDK , installing
 - INF files WDK print , XPSDrv printer drivers
-ms.date: 04/20/2017
+ms.date: 01/31/2023
 ---
 
 # XPSDrv Installation
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 To be properly installed by the spooler, XPSDrv drivers must include the following:
 
--   The [**CopyFiles**](../install/inf-copyfiles-directive.md) directive of the driver INF file must reference the [filter pipeline configuration file](filter-pipeline-configuration-file.md).
+- The [**CopyFiles**](../install/inf-copyfiles-directive.md) directive of the driver INF file must reference the [filter pipeline configuration file](filter-pipeline-configuration-file.md).
 
--   The Needs directive must reference Xpsdrv.oem. For more information about the Needs directive, see [**INF DDInstall Section**](../install/inf-ddinstall-section.md).
+- The Needs directive must reference Xpsdrv.oem. For more information about the Needs directive, see [**INF DDInstall Section**](../install/inf-ddinstall-section.md).
 
--   If the configuration module is based on Unidrv, the Needs directive must reference Unidrv.oem and Xpsgpd.oem. Likewise, if the XPSDrv driver configuration module is based on PScript5, the Needs directive must reference Pscript.oem and Xpsppd.oem.
+- If the configuration module is based on Unidrv, the Needs directive must reference Unidrv.oem and Xpsgpd.oem. Likewise, if the XPSDrv driver configuration module is based on PScript5, the Needs directive must reference Pscript.oem and Xpsppd.oem.
 
 The following code example illustrates an INF file with the preceding changes.
 
-```cpp
+```inf
 [Version]
 Signature="$Windows NT$"
 Provider=%MS%
@@ -49,6 +50,3 @@ ICMProfiles=xdwscRGB.cdmp
 xdsmpl-pipelineconfig.xml
 ...
 ```
-
- 
-

@@ -4,14 +4,12 @@ description: Raster Data Emission Commands
 keywords:
 - data emission raster printing commands WDK Unidrv
 - emission raster printing commands WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Raster Data Emission Commands
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following table lists the raster data emission commands. All commands are specified using the [command entry format](command-entry-format.md).
 
@@ -62,7 +60,7 @@ The following table lists the raster data emission commands. All commands are sp
 <tr class="odd">
 <td><p>CmdSendBlockData</p></td>
 <td><p>Command to deliver a block of data to the printer.</p></td>
-<td><p>Required. If *OutputDataFormat is V_BYTE, a block contains the data for one physical pass of the print head. (See *PinsPerPhysPass). If *<strong>OutputDataFormat</strong> is H_BYTE, a block contains the data for one logical pass of the print head. (See *PinsPerLogPass).</p></td>
+<td><p>Required. If *OutputDataFormat is V_BYTE, a block contains the data for one physical pass of the print head. (See*PinsPerPhysPass). If *<strong>OutputDataFormat</strong> is H_BYTE, a block contains the data for one logical pass of the print head. (See*PinsPerLogPass).</p></td>
 </tr>
 <tr class="even">
 <td><p>CmdEndBlockData</p></td>
@@ -77,7 +75,7 @@ The following table lists the raster data emission commands. All commands are sp
 <tr class="even">
 <td><p>CmdSendBlueData</p></td>
 <td><p>Command to deliver blue plane data to the printer.</p></td>
-<td><p>Required if *<strong>UseExpColorSelectCmd?</strong> attribute is <strong>FALSE</strong>.</p></td>
+<td><p>Required if*<strong>UseExpColorSelectCmd?</strong> attribute is <strong>FALSE</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>CmdSendCyanData</p></td>
@@ -87,7 +85,7 @@ The following table lists the raster data emission commands. All commands are sp
 <tr class="even">
 <td><p>CmdSendGreenData</p></td>
 <td><p>Command to deliver green plane data to the printer.</p></td>
-<td><p>Required if *<strong>UseExpColorSelectCmd?</strong> attribute is <strong>FALSE</strong>.</p></td>
+<td><p>Required if*<strong>UseExpColorSelectCmd?</strong> attribute is <strong>FALSE</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>CmdSendMagentaData</p></td>
@@ -97,7 +95,7 @@ The following table lists the raster data emission commands. All commands are sp
 <tr class="even">
 <td><p>CmdSendRedData</p></td>
 <td><p>Command to deliver red plane data to the printer.</p></td>
-<td><p>Required if *UseExpColorSelectCmd? attribute is <strong>FALSE</strong>.</p></td>
+<td><p>Required if*UseExpColorSelectCmd? attribute is <strong>FALSE</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>CmdSendYellowData</p></td>
@@ -107,14 +105,4 @@ The following table lists the raster data emission commands. All commands are sp
 </tbody>
 </table>
 
- 
-
 For examples, see the [sample GPD files](sample-gpd-files.md).
-
- 
-
- 
-
-
-
-

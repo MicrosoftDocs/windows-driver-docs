@@ -5,14 +5,12 @@ keywords:
 - installing drivers WDK printer , INF files
 - printer driver installations WDK , INF files
 - INF files WDK print
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Printer INF Files
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 An extensive discussion of INF files is provided in [General Guidelines for INF Files](../install/general-guidelines-for-inf-files.md).
 
@@ -47,6 +45,3 @@ For additional information about printer INF files, see the following topics:
 Also see the installation topics in the following section:
 
 [Customizing Print Spooler Components](print-spooler-components.md)
-
- 
-

@@ -1,10 +1,12 @@
 ---
 title: Updating Core Drivers Files for Non-Package-Aware Drivers
 description: Updating Core Drivers Files for Non-Package-Aware Drivers
-ms.date: 04/20/2017
+ms.date: 01/31/2023
 ---
 
 # Updating Core Drivers Files for Non-Package-Aware Drivers
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Core driver components for Windows operating systems earlier than Windows Vista, including Windows Server 2003, Windows XP, and Windows 2000, are available on the Microsoft [Connect](/collaborate/connect-redirect) Web site as separate packages for the XPSDrv, UniDrv, and PostScript drivers. Each package has a different redistribution agreement. The files in the packages are, in fact, identical to their counterparts in Windows Vista. To unpack the driver files, follow the steps listed in [Get the Updated Core Driver Package](getting-the-updated-core-driver-package.md). Once you have expanded the core driver package, include the core driver files you need in your own driver package as if they were part of your driver. In other words, copy the driver binary files from the core package to the main directory of your driver package. This will break the integrity of the digitally signed core driver package, but it will enable Windows XP (and the other Windows operating systems earlier than Windows Vista) and drivers that are not package aware to take advantage of the core driver updates.
 

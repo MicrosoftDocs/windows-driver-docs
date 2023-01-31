@@ -1,11 +1,12 @@
 ---
 title: Using Theme Manifests
 description: Using Theme Manifests
-ms.date: 04/20/2017
+ms.date: 01/31/2023
 ---
 
 # Using Theme Manifests
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 If you add a theme manifest to your print driver for Windows XP, you can ensure that user interface elements in your driver match the Windows XP visual style.
 
@@ -16,11 +17,3 @@ If you add a theme manifest to your driver that specifies dependency on version 
 An application can have a global (or application) manifest. If this global manifest contains a redirection to use Comctl32.dll version 6.0, this forces all of the UI that the application creates to use the same theme. One result of this is that printer drivers launched from an application with a global manifest might be forced to use Comctl32.dll version 6.0, regardless of any Comctl32.dll redirection in the driver manifest.
 
 For more information about manifests and assemblies, activation contexts, isolated applications and side-by-side assembly sharing, see the Microsoft Windows SDK documentation.
-
- 
-
- 
-
-
-
-

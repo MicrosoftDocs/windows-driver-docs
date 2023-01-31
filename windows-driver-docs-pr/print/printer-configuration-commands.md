@@ -4,14 +4,12 @@ description: Printer Configuration Commands
 keywords:
 - printer commands WDK Unidrv , configuration
 - configuration commands WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Printer Configuration Commands
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following table lists the printer configuration commands. All commands are specified using the [command entry format](command-entry-format.md).
 
@@ -72,14 +70,4 @@ The following table lists the printer configuration commands. All commands are s
 </tbody>
 </table>
 
- 
-
 For examples, see the [sample GPD files](sample-gpd-files.md).
-
- 
-
- 
-
-
-
-

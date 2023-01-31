@@ -1,11 +1,12 @@
 ---
 title: Unidrv/PScript5 Driver Default DEVMODE Setup Behavior Changes
 description: Unidrv/PScript5 Driver Default DEVMODE Setup Behavior Changes
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Unidrv/PScript5 Driver Default DEVMODE Setup Behavior Changes
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 A Unidrv/PScript5 driver that is running in XPSDrv mode creates the following driver default DEVMODE setup behavior changes.
 
@@ -96,13 +97,3 @@ A Unidrv/PScript5 driver that is running in XPSDrv mode creates the following dr
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-

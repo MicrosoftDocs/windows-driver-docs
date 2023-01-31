@@ -4,14 +4,12 @@ description: Standard Features
 keywords:
 - printer features WDK Unidrv , standard
 - standard features WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Standard Features
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Standard features are [printer features](printer-features.md) commonly provided by most printers. They are identified by predefined names that the GPD language recognizes. (Resource identifiers for strings that represent these names are contained in stdnames.gpd, which is supplied with the Microsoft Windows Driver Kit \[WDK\].) Some standard features are required and must be specified for every printer. Others are optional.
 
@@ -117,7 +115,7 @@ The following table lists all of the standard features, in alphabetical order, a
 <td><p>Enables protection of current print page</p></td>
 <td><p>See <a href="standard-options.md" data-raw-source="[Standard Options](standard-options.md)">Standard Options</a>.</p>
 <p>Customized options are not allowed.</p></td>
-<td><p>Optional. If not specified, the default value is OFF. Unidrv only enables page protection if enough printer memory is available. Default *FeatureType value is PRINTER_PROPERTY. Also see *PageProtectMem.</p></td>
+<td><p>Optional. If not specified, the default value is OFF. Unidrv only enables page protection if enough printer memory is available. Default*FeatureType value is PRINTER_PROPERTY. Also see *PageProtectMem.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>PaperSize</strong></p></td>
@@ -134,7 +132,7 @@ The following table lists all of the standard features, in alphabetical order, a
 <td><p>Resource DLLs</p></td>
 <td><p>All options are customized.</p>
 <p>See <a href="using-resource-dlls-in-a-minidriver.md" data-raw-source="[Using Resource DLLs in a Minidriver](using-resource-dlls-in-a-minidriver.md)">Using Resource DLLs in a Minidriver</a>.</p></td>
-<td><p>Optional. Also see *ResourceDLL.</p></td>
+<td><p>Optional. Also see*ResourceDLL.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Resolution</strong></p></td>
@@ -171,5 +169,7 @@ The following table lists all of the standard features, in alphabetical order, a
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
 ## Related topics
+
 [Sample GPD files](sample-gpd-files.md)
+
 [V4 Printer Driver Localization](v4-driver-localization.md)

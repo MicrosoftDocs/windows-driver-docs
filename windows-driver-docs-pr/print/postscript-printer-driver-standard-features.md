@@ -1,11 +1,12 @@
 ---
 title: PostScript Printer Standard Features
 description: The PostScript printer standard features are the common ones that are provided by most PostScript printers.
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # PostScript Printer Standard Features
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The PostScript printer standard features are the common ones that are provided by most PostScript printers.
 
@@ -77,7 +78,7 @@ The standard features are identified by predefined names that the PPD language r
 <td>PageMediatype</td>
 <td>Types of printing media</td>
 <td><p>Optional</p>
-<p>If not specified, the printer’s default medium is always used.</p></td>
+<p>If not specified, the printer's default medium is always used.</p></td>
 </tr>
 <tr class="even">
 <td>OutputBin</td>
@@ -102,11 +103,8 @@ The standard features are identified by predefined names that the PPD language r
 </tbody>
 </table>
 
- 
-
 ## Related topics
+
 [Pscript Minidrivers](pscript-minidrivers.md)  
+
 [Standard Options](standard-options.md)  
-
-
-

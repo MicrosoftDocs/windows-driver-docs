@@ -8,10 +8,12 @@ keywords:
 - jobs WDK print, rendering
 - print jobs WDK, rendering
 - banding WDK print
-ms.date: 09/16/2022
+ms.date: 01/30/2023
 ---
 
 # Render a print job
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Print jobs are either rendered as they are created, or they are written to a spool file as EMF records. In the case of EMF records, rendering takes place when the EMF *print processor* (localspl.dll) plays back the records. Rendering consists of a series of calls to the user-mode GDI drawing functions, beginning with [**CreateDC**](/windows/win32/api/wingdi/nf-wingdi-createdca). The call to **CreateDC** is the first in a series of application calls that lead to a chain of actions involving the graphics rendering engine (GRE, also known as kernel-mode GDI), and the printer graphics DLL.
 

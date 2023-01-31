@@ -1,17 +1,18 @@
 ---
 title: Printer Driver and Plug-in Helper Interfaces
 description: Printer Driver and Plug-in Helper Interfaces
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Printer Driver and Plug-in Helper Interfaces
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The [IPrintCoreHelper](/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelper) interface, which is available in Windows Vista and later, provides basic functionality that is available in all four core driver modules--Unidrv rendering, Unidrv user interface (UI), Pscript5 rendering, and Pscript5 UI. A single interface is provided to all four modules because:
 
--   The interface reflects the underlying architecture.
+- The interface reflects the underlying architecture.
 
--   The interface provides the ability to write common code modules for plug-ins to perform certain behavior, such as constraints resolution.
+- The interface provides the ability to write common code modules for plug-ins to perform certain behavior, such as constraints resolution.
 
 You can use the **IPrintCoreHelper** interface to write a single UI replacement plug-in for Unidrv-based and Pscript5-based drivers.
 
@@ -24,6 +25,3 @@ This section provides the following topics:
 [Publishing the Interfaces](publishing-the-interfaces.md)
 
 [Details of the IPrintCoreHelper Interface](details-of-the-iprintcorehelper-interface.md)
-
- 
-

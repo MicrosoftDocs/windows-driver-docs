@@ -1,17 +1,18 @@
 ---
 title: Using Core Drivers
 description: Using Core Drivers
-ms.date: 04/20/2017
+ms.date: 01/31/2023
 ---
 
 # Using Core Drivers
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Print driver writers can use core drivers that they have written by listing the core model GUID in the model section of the INF, and using the **PackageAware** and **CoreDriverSections** keywords.
 
 For example:
 
-```cpp
+```inf
 [Version]
 Signature="$Windows NT$"
 ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
@@ -39,11 +40,3 @@ The package install section must also be added, and list all core driver depende
 PackageAware=TRUE
 CoreDriverDependencies={D20EA372-DD35-4950-9ED8-A6335AFE79F0},{GUID1}
 ```
-
- 
-
- 
-
-
-
-

@@ -8,14 +8,12 @@ keywords:
 - PCD files WDK MSPlot
 - .pcd files
 - keywords WDK MSPlot
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # PCD Source File Format
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 All plotter device characteristics are specified using the following format:
 
@@ -57,7 +55,7 @@ Keywords are described in the following table.
 </tr>
 <tr class="odd">
 <td><p><strong>COLORINFO</strong></p></td>
-<td><p>Thirty DWORD-sized values representing the contents of a <a href="/windows/win32/api/winddi/ns-winddi-colorinfo" data-raw-source="[&lt;strong&gt;COLORINFO&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-colorinfo)"><strong>COLORINFO</strong></a> structure.</p></td>
+<td><p>30 DWORD-sized values representing the contents of a <a href="/windows/win32/api/winddi/ns-winddi-colorinfo" data-raw-source="[&lt;strong&gt;COLORINFO&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-colorinfo)"><strong>COLORINFO</strong></a> structure.</p></td>
 <td><p></p>
 {
 {6810,3050,0}, // xr, yr, Yr
@@ -75,7 +73,7 @@ Keywords are described in the following table.
 </tr>
 <tr class="even">
 <td><p><strong>DeviceMargin</strong></p></td>
-<td><p>Four DWORD-sized values representing the left, top, right, and bottom paper margins, in 1/1000 mm units.</p></td>
+<td><p>Four DWORD-sized values representing the left, top, right, and bottom paper margins, in 1/1000-mm units.</p></td>
 <td><p></p>
 {5000,
 5000,
@@ -89,12 +87,12 @@ Keywords are described in the following table.
 </tr>
 <tr class="even">
 <td><p><strong>DevicePelsDPI</strong></p></td>
-<td><p>One DWORD-sized value representing the device's effective DPI. For more information see the <strong>upDevicePelsDPI</strong> member of <a href="/windows/win32/api/winddi/ns-winddi-gdiinfo" data-raw-source="[&lt;strong&gt;GDIINFO&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-gdiinfo)"><strong>GDIINFO</strong></a>.</p></td>
+<td><p>One DWORD-sized value representing the device's effective DPI. For more information, see the <strong>upDevicePelsDPI</strong> member of <a href="/windows/win32/api/winddi/ns-winddi-gdiinfo" data-raw-source="[&lt;strong&gt;GDIINFO&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-gdiinfo)"><strong>GDIINFO</strong></a>.</p></td>
 <td><p>The default is zero, causing GDI to calculate a value.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DeviceSize</strong></p></td>
-<td><p>Two DWORD-sized values representing maximum paper size, in <em>x</em> and <em>y</em> coordinates of 1/1000 mm units.</p>
+<td><p>Two DWORD-sized values representing maximum paper size, in <em>x</em> and <em>y</em> coordinates of 1/1000-mm units.</p>
 <p>A <em>y</em> value of 25400 (1 inch) or less indicates the device accepts variable paper lengths.</p></td>
 <td><p></p>
 {215900,
@@ -142,7 +140,7 @@ Keywords are described in the following table.
 </tr>
 <tr class="even">
 <td><p><strong>NoBitmapFont</strong></p></td>
-<td><p>1=Device does not support bitmap fonts.</p>
+<td><p>1=Device doesn't support bitmap fonts.</p>
 <p>0=Bitmap fonts are supported.</p></td>
 <td><p>0</p></td>
 </tr>
@@ -154,7 +152,7 @@ Keywords are described in the following table.
 </tr>
 <tr class="even">
 <td><p><strong>PaperTraySize</strong></p></td>
-<td><p>Two DWORD-sized values representing the paper tray width and height, in 1/1000 mm units.</p></td>
+<td><p>Two DWORD-sized values representing the paper tray width and height, in 1/1000-mm units.</p></td>
 <td><p></p>
 {-1,
 -1}</td>
@@ -174,13 +172,13 @@ Keywords are described in the following table.
 <tr class="odd">
 <td><p><strong>PushPopPal</strong></p></td>
 <td><p>1=Driver must push/pop palette when switching between RTL and HPGL2.</p>
-<p>0=Push/pop is not required.</p></td>
+<p>0=Push/pop isn't required.</p></td>
 <td><p>0</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>RasterByteAlign</strong></p></td>
 <td><p>1=Device must receive all raster data on byte-aligned x coordinates.</p>
-<p>0=Byte alignment is not required.</p></td>
+<p>0=Byte alignment isn't required.</p></td>
 <td><p>0</p></td>
 </tr>
 <tr class="odd">
@@ -226,13 +224,13 @@ Keywords are described in the following table.
 </tr>
 <tr class="odd">
 <td><p><strong>RTLMonoNoCID</strong></p></td>
-<td><p>1=In RTL Mono mode, CID commands are not required.</p>
+<td><p>1=In RTL Mono mode, CID commands aren't required.</p>
 <p>0=In RTL Mono mode, CID commands are required.</p></td>
 <td><p>0</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>RTLNoDPIxy</strong></p></td>
-<td><p>1=RTL DPI X,Y move commands are not supported.</p>
+<td><p>1=RTL DPI X,Y move commands aren't supported.</p>
 <p>0=These commands are supported.</p></td>
 <td><p>0</p></td>
 </tr>
@@ -251,33 +249,30 @@ Keywords are described in the following table.
 </tbody>
 </table>
 
- 
-
-### <a href="" id="ddk-pen-descriptions-gg"></a>Pen Descriptions
+## Pen Descriptions
 
 Each pen description must have the following format:
 
 **PlotPenData {**<em>Pen Number</em>**,** <em>Color</em>**}**
 
-where *Pen Number* identifies the pen's slot number and *Color* is a PC\_IDX\_-prefixed color identifier. Following are example pen descriptions:
+where *Pen Number* identifies the pen's slot number and *Color* is a PC_IDX_-prefixed color identifier. Following are example pen descriptions:
 
-```cpp
+```PCD
 PlotPenData {1, PC_IDX_WHITE}
 PlotPenData {2, PC_IDX_BLACK}
 PlotPenData {3, PC_IDX_RED}
 ```
 
-### <a href="" id="ddk-form-descriptions-gg"></a>Form Descriptions
+## Form Descriptions
 
 Each form description must have the following format:
 
 **FormInfo {"**<em>Form Description</em>**",** <em>Width</em>**,** <em>Length</em>**,** <em>Left Margin</em>**,** <em>Top Margin</em>**,** <em>Right Margin</em>**,** <em>Bottom Margin</em>**}**
 
-where *Form Description* is a string describing the form, *Width* and *Length* specify the form size in 1/1000 mm units, and the margins are also specified in 1/1000 mm units. Following are three examples:
+where *Form Description* is a string describing the form, *Width* and *Length* specify the form size in 1/1000-mm units, and the margins are also specified in 1/1000-mm units. Following are three examples:
 
-```cpp
+```PCD
 FormInfo {"Roll Paper 24 in",    609600,      0, 0, 0, 0, 0}
 FormInfo {"ANSI A 8.5 x 11 in",  215900, 279400, 0, 0, 0, 0}
 FormInfo {"ISO A4 210 x 297 mm", 210000, 297000, 0, 0, 0, 0}
 ```
-

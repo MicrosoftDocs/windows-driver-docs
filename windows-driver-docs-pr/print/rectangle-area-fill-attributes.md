@@ -2,16 +2,14 @@
 title: Rectangle Area Fill Attributes
 description: Rectangle Area Fill Attributes
 keywords:
-- rectangular area fill attibutes WDK Unidrv
+- rectangular area fill attributes WDK Unidrv
 - filling rectangular areas WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Rectangle Area Fill Attributes
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following table lists attributes describing the printer's support for filling rectangle areas.
 
@@ -52,16 +50,6 @@ The following table lists attributes describing the printer's support for fillin
 </tbody>
 </table>
 
- 
-
 For information about commands associated with a printer's rectangle area fill capabilities, see [Rectangle Area Fill Commands](rectangle-area-fill-commands.md).
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
-
- 
-
- 
-
-
-
-

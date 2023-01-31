@@ -4,14 +4,12 @@ description: Rectangle Area Fill Commands
 keywords:
 - rectangular area fill commands WDK Unidrv
 - filling rectangular areas WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Rectangle Area Fill Commands
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following table lists the rectangle area fill commands. All commands are specified using [command entry format](command-entry-format.md).
 
@@ -63,14 +61,4 @@ The following table lists the rectangle area fill commands. All commands are spe
 </tbody>
 </table>
 
- 
-
 For examples, see the [sample GPD files](sample-gpd-files.md).
-
- 
-
- 
-
-
-
-
