@@ -19,7 +19,7 @@ USAGE: InfVerif.exe [/v] [/u | /universal] [/w] [/k] [/info] [/stampinf] [/l <pa
         Display verbose file logging details.
 
 /k
-        Reports errors for Hardware Dev Center submission. (mode; checks error codes 1100-1299)
+        Reports errors for Hardware Dev Center submission. (mode)
 
 /u
         Reports errors if INF is not Universal. (mode)
