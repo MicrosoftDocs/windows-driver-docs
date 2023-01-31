@@ -10,18 +10,16 @@ keywords:
 - DrvStartBanding
 - DrvNextBand
 - DrvQueryPerBandInfo
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Preanalysis Infrastructure
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
+The preanalysis infrastructure is a mechanism by which Unidrv forces banding on a print job so that the first band replay of each page is a band that contains the entire page. The preanalysis pass doesn't allow any rendering and is done only to enable analysis of the objects on the page before the objects are rendered.
 
-
-
-The preanalysis infrastructure is a mechanism by which Unidrv forces banding on a print job so that the first band replay of each page is a band that contains the entire page. The preanalysis pass does not allow any rendering and is done only to enable analysis of the objects on the page before the objects are rendered.
-
-To allow a full-page preanalysis, Unidrv first specifies a full-page device surface within the [**DrvEnableSurface**](/windows/win32/api/winddi/nf-winddi-drvenablesurface) function, and then indicates that the first band is the size of the entire page by means of [*DrvQueryPerBandInfo*](/windows/win32/api/winddi/nf-winddi-drvqueryperbandinfo). After preanalysis is complete, Unidrv uses *DrvQueryPerBandInfo* to restore the clipping region back to its size before the preanalysis was enabled; Unidrv subsequently renders to that surface. Due to implementation limitations of GDI, preanalysis can be enabled only when the N-up mode is ONE\_UP, or if the rendering band is the entire page.
+To allow a full-page preanalysis, Unidrv first specifies a full-page device surface within the [**DrvEnableSurface**](/windows/win32/api/winddi/nf-winddi-drvenablesurface) function, and then indicates that the first band is the size of the entire page by means of [*DrvQueryPerBandInfo*](/windows/win32/api/winddi/nf-winddi-drvqueryperbandinfo). After preanalysis is complete, Unidrv uses *DrvQueryPerBandInfo* to restore the clipping region back to its size before the preanalysis was enabled; Unidrv subsequently renders to that surface. Due to implementation limitations of GDI, preanalysis can be enabled only when the N-up mode is ONE_UP, or if the rendering band is the entire page.
 
 The following pseudocode illustrates the logic used for preanalysis.
 
@@ -61,9 +59,9 @@ For each physical page
 DrvEndDoc
 ```
 
-Because preanalysis functionality must work with current generic printer description (GPD) files and plug-ins, the text z-order, blank band detection, and other operations are implemented invisibly from the perspective of the minidriver. A minidriver can hook [**DrvStartBanding**](/windows/win32/api/winddi/nf-winddi-drvstartbanding) and [**DrvNextBand**](/windows/win32/api/winddi/nf-winddi-drvnextband), but it will not receive the first call to **DrvNextBand** because the first call to **DrvNextBand** does not include any rendering. The plug-in receives the first **DrvNextBand** call only if it sets the flag in the GPD that enables OEM object-level preanalysis (\***PreAnalysisOptions**: 8). In this case the plug-in must hook **DrvStartBanding** and **DrvNextBand**, and the plug-in must check the *pptl* parameter of the **DrvStartBanding** function. If the *pptl* parameter is non-**NULL**, preanalysis is disabled. If the *pptl* parameter is **NULL**, which indicates the start of the preanalysis pass. In this case the plug-in should assume that all of the calls to drawing DDIs that the plug-in has hooked result from the preanalysis pass. The preanalysis pass ends with the first call to the **DrvNextBand** function, and the rendering passes begin after the first call to the **DrvNextBand** function. Subsequent calls to this function will contain rendering data.
+Because preanalysis functionality must work with current generic printer description (GPD) files and plug-ins, the text z-order, blank band detection, and other operations are implemented invisibly from the perspective of the minidriver. A minidriver can hook [**DrvStartBanding**](/windows/win32/api/winddi/nf-winddi-drvstartbanding) and [**DrvNextBand**](/windows/win32/api/winddi/nf-winddi-drvnextband), but it will not receive the first call to **DrvNextBand** because the first call to **DrvNextBand** doesn't include any rendering. The plug-in receives the first **DrvNextBand** call only if it sets the flag in the GPD that enables OEM object-level preanalysis (\***PreAnalysisOptions**: 8). In this case the plug-in must hook **DrvStartBanding** and **DrvNextBand**, and the plug-in must check the *pptl* parameter of the **DrvStartBanding** function. If the *pptl* parameter is non-**NULL**, preanalysis is disabled. If the *pptl* parameter is **NULL**, which indicates the start of the preanalysis pass. In this case the plug-in should assume that all of the calls to drawing DDIs that the plug-in has hooked result from the preanalysis pass. The preanalysis pass ends with the first call to the **DrvNextBand** function, and the rendering passes begin after the first call to the **DrvNextBand** function. Subsequent calls to this function will contain rendering data.
 
-### <a href="" id="-preanalysisoptions-modes"></a>\*PreAnalysisOptions Modes
+## \*PreAnalysisOptions Modes
 
 The preanalysis mode is controlled in the GPD file by the \***PreAnalysisOptions**: *n* attribute name and attribute parameter. The following table lists parameter values that can be used with the \***PreAnalysisOptions** attribute name. Two or more of these values can be combined to enable multiple options.
 
@@ -80,7 +78,7 @@ Default mode. Enable monochrome z-order text analysis and blank band optimizatio
 
 2
 
-Enable 1 BPP optimization for 24 BPP [**IPrintOemUni::ImageProcessing**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) callbacks.
+Enable 1 BPP optimization for 24 BPP [**IPrintOemUni ImageProcessing**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) callbacks.
 
 4
 
@@ -90,39 +88,37 @@ Enable device StretchBlt operations.
 
 Enable OEM object-level preanalysis.
 
- 
-
 ### Monochrome Z-Order Text Analysis with Blank Band Optimization
 
-```cpp
+```GPD
 *PreAnalysisOptions: 1
 ```
 
 Setting the \***PreAnalysisOptions** parameter to 1 allows Unidrv to perform the following operations:
 
--   Detect problems in z-order between text and graphic objects in monochrome printers.
+- Detect problems in z-order between text and graphic objects in monochrome printers.
 
--   Perform blank band optimization.
+- Perform blank band optimization.
 
 The first operation handles z-order problems that arise when text that is downloaded to a monochrome printer is later overwritten or otherwise interacts with graphics objects. Z-order problems are often caused by graphic objects that contain complex clips so that Unidrv is unable to download a white rectangle that clears previously downloaded text.
 
-Unidrv performs a preanalysis pass on each page before it carries out a rendering pass. Unidrv does this to determine whether any text will be overlaid with a bit-block transfer (blt) object that uses a complex clip that cannot be simulated. Thus, the text is rendered onto the surface bitmap instead of being downloaded directly so that objects rendered later will interact with the text correctly.
+Unidrv performs a preanalysis pass on each page before it carries out a rendering pass. Unidrv does this to determine whether any text will be overlaid with a bit-block transfer (blt) object that uses a complex clip that can't be simulated. Thus, the text is rendered onto the surface bitmap instead of being downloaded directly so that objects rendered later will interact with the text correctly.
 
-In addition, for devices that do not support white rectangles, Unidrv checks for any text overlaid by blts, even when they do not contain complex clips. Unidrv renders the text onto the surface instead of downloading it directly to the printer.
+In addition, for devices that don't support white rectangles, Unidrv checks for any text overlaid by blts, even when they don't contain complex clips. Unidrv renders the text onto the surface instead of downloading it directly to the printer.
 
 The following drawing commands are tested against text that might be overlaid by subsequent blts:
 
--   [**DrvBitBlt**](/windows/win32/api/winddi/nf-winddi-drvbitblt)
+- [**DrvBitBlt**](/windows/win32/api/winddi/nf-winddi-drvbitblt)
 
--   [**DrvStretchBlt**](/windows/win32/api/winddi/nf-winddi-drvstretchblt)
+- [**DrvStretchBlt**](/windows/win32/api/winddi/nf-winddi-drvstretchblt)
 
--   [**DrvStretchBltROP**](/windows/win32/api/winddi/nf-winddi-drvstretchbltrop)
+- [**DrvStretchBltROP**](/windows/win32/api/winddi/nf-winddi-drvstretchbltrop)
 
--   [**DrvStrokeAndFillPath**](/windows/win32/api/winddi/nf-winddi-drvstrokeandfillpath)
+- [**DrvStrokeAndFillPath**](/windows/win32/api/winddi/nf-winddi-drvstrokeandfillpath)
 
 This mode, therefore, should correct all z-order problems between text and filled-region objects. Note that there can still be problems with text and overlaid lines. These situations are not included because such a solution can result in almost all text being downloaded instead of being drawn.
 
-This functionality does not correct z-order problems associated with using device fonts. If the application or driver has selected device font mode, the driver cannot correct this problem and will be unable to render device fonts onto the surface.
+This functionality doesn't correct z-order problems associated with using device fonts. If the application or driver has selected device font mode, the driver can't correct this problem and will be unable to render device fonts onto the surface.
 
 The second operation allows Unidrv to optimize for blank regions on the page. In this mode, Unidrv skips over the empty top and bottom margins, as well as any large blank regions in the middle of the page. This mode, which is intended for use in color printing, improves performance by minimizing the number of band passes necessary to render the page.
 
@@ -130,35 +126,35 @@ During the preanalysis pass, Unidrv determines where drawing will occur on the p
 
 ### Black Band Optimization
 
-```cpp
+```GPD
 *PreAnalysisOptions: 2  *% 1 bpp ImageProcessing bitmaps
 ```
 
-Setting the \***PreAnalysisOptions** parameter to 2 allows Unidrv to use a larger 1 BPP banding surface to render regions that contain only solid black objects, rather than rendering the entire page at 24 BPP. This mode is similar to blank band optimization, with the exception that it also determines solid black regions (as opposed to color regions) on the page. Only objects that are solid black (no gray shades) can be rendered in the 1 BPP banding surface because halftone set up for 24 BPP color is not rendered correctly in 1 BPP monochrome.
+Setting the \***PreAnalysisOptions** parameter to 2 allows Unidrv to use a larger 1 BPP banding surface to render regions that contain only solid black objects, rather than rendering the entire page at 24 BPP. This mode is similar to blank band optimization, with the exception that it also determines solid black regions (as opposed to color regions) on the page. Only objects that are solid black (no gray shades) can be rendered in the 1 BPP banding surface because halftone set up for 24 BPP color isn't rendered correctly in 1 BPP monochrome.
 
 Unidrv creates two surfaces within the [**DrvEnableSurface**](/windows/win32/api/winddi/nf-winddi-drvenablesurface) function: one for color and the other for 1 BPP monochrome. Unidrv uses the same memory for each, so no additional memory is required. The page preanalysis determines whether the page contains solid black or blank regions, for which larger bands can be used than for regions that contain colors. Only the color regions require using the smaller color band surface.
 
 Using the same amount of memory, a 1 BPP monochrome surface can be 24 times as large as a 24 BPP color surface. Thus, an image containing color only in the middle of the page can be divided into three regions: the top region, the region that contains the color, and the bottom region. These three regions can be banded as follows: the top region can be placed in a single monochrome band, the region that contains color can be divided into as many color bands as are needed to cover it, and the bottom region can be placed into a single monochrome band.
 
-This functionality requires OEMs to support the **IPrintOemUni::ImageProcessing** callback and to handle the dump of the raster data. Current OEM plug-in support for the **IPrintOemUni::ImageProcessing** callback must be enhanced to accept either 24 BPP bands or 1 BPP solid black bands.
+This functionality requires OEMs to support the **IPrintOemUni ImageProcessing** callback and to handle the dump of the raster data. Current OEM plug-in support for the **IPrintOemUni ImageProcessing** callback must be enhanced to accept either 24 BPP bands or 1 BPP solid black bands.
 
 ### Support for Device StretchBlt Operations
 
-```cpp
+```GPD
 *PreAnalysisOptions: 4
 ```
 
 Setting the \***PreAnalysisOptions** parameter to 4 allows Unidrv to download [**DrvStretchBlt**](/windows/win32/api/winddi/nf-winddi-drvstretchblt) calls directly to devices that support stretchblt operations.
 
-When Unidrv generates 24 BPP color data, all stretchblt images are stretched to the resolution of the device, which results in very large quantities of raster data that must be downloaded. This can result in slow performance, in addition to out-of-memory conditions on many East Asian printers.
+When Unidrv generates 24 BPP color data, all stretchblt images are stretched to the resolution of the device, which results in large quantities of raster data that must be downloaded. This can result in slow performance, in addition to out-of-memory conditions on many East Asian printers.
 
-A minidriver render plug-in is required to take advantage of the stretchblt mode because it must hook [**OEMStretchBlt**](/windows-hardware/drivers/ddi/printoem/nf-printoem-oemstretchblt) and provide its own image download commands. Unidrv allows the OEMStretchBlt hook only on calls that can be directly downloaded. Therefore, the plug-in is not responsible for handling z-order issues. The plug-in needs only to directly download the source image data contained in the OEMStretchBlt calls that it receives. The plug-in also has the option of punting the image back to Unidrv if the image is in a format that the plug-in does not support or cannot download.
+A minidriver render plug-in is required to take advantage of the stretchblt mode because it must hook [**OEMStretchBlt**](/windows-hardware/drivers/ddi/printoem/nf-printoem-oemstretchblt) and provide its own image download commands. Unidrv allows the OEMStretchBlt hook only on calls that can be directly downloaded. Therefore, the plug-in isn't responsible for handling z-order issues. The plug-in needs only to directly download the source image data contained in the OEMStretchBlt calls that it receives. The plug-in also has the option of punting the image back to Unidrv if the image is in a format that the plug-in doesn't support or can't download.
 
-Whenever objects are directly downloaded to a device while other data is rendered on the system, there can be z-order problems or halftone inconsistencies. This mode uses preanalysis to determine which stretchblts can be directly downloaded. Only stretchblts that contain no mask or complex clipping will be considered for direct download. If a later object overlays any of the stretchblts being considered for direct download, then no objects will be directly downloaded. This principle should improve performance and should ensure that no image includes halftone from both the system and from the device, which results in very poor quality print output.
+Whenever objects are directly downloaded to a device while other data is rendered on the system, there can be z-order problems or halftone inconsistencies. This mode uses preanalysis to determine which stretchblts can be directly downloaded. Only stretchblts that contain no mask or complex clipping will be considered for direct download. If a later object overlays any of the stretchblts being considered for direct download, then no objects will be directly downloaded. This principle should improve performance and should ensure that no image includes halftone from both the system and from the device, which results in poor quality print output.
 
 ### OEM Object-Level Preanalysis Hooks
 
-```cpp
+```GPD
 *PreAnalysisOptions: 8
 ```
 
@@ -168,9 +164,6 @@ The functionality in this mode is focused on color ink jet printers so that OEMs
 
 When this mode is enabled in the GPD, Unidrv defines the surface as a banding surface, but causes the first playback to be of the entire page. To do this, Unidrv sets the GDI clip window to the entire page. Unidrv allows all drawing commands to be hooked, but returns before any drawing can be performed. On following passes, Unidrv resets the clip window back to the normal band size and bands as usual.
 
-OEMs are required to hook both **DrvStartBanding** and [**DrvNextBand**](/windows/win32/api/winddi/nf-winddi-drvnextband) when they have enabled this mode in the GPD. They must test the *pptl* parameter of the **DrvStartBanding** function to determine whether Unidrv can enable preanalysis in this mode on the specified page. If the *pptl* parameter is **NULL**, then Unidrv has enabled preanalysis. Unidrv uses the *pptl* parameter because it has no meaning at this point (it has not been updated with the band position. For preanalysis, the band position is always set to (0, 0)). If the *pptl* parameter is **NULL**, then the OEM should consider all drawing calls prior to the first **DrvNextBand** to be part of preanalysis and should permit no drawing onto the surface.
+OEMs are required to hook both **DrvStartBanding** and [**DrvNextBand**](/windows/win32/api/winddi/nf-winddi-drvnextband) when they've enabled this mode in the GPD. They must test the *pptl* parameter of the **DrvStartBanding** function to determine whether Unidrv can enable preanalysis in this mode on the specified page. If the *pptl* parameter is **NULL**, then Unidrv has enabled preanalysis. Unidrv uses the *pptl* parameter because it has no meaning at this point (it hasn't been updated with the band position. For preanalysis, the band position is always set to (0, 0)). If the *pptl* parameter is **NULL**, then the OEM should consider all drawing calls prior to the first **DrvNextBand** to be part of preanalysis and should permit no drawing onto the surface.
 
-The end of preanalysis is signaled by a call to the **OEMNextBand** function. The *pptl* parameter that is passed to **OEMNextBand** is not **NULL**. This call is used only to return the appropriate *pptl* value to Unidrv. Plug-ins can set the *pptl* value themselves or can call back into Unidrv (like the preceding pseudocode example at the beginning of this topic does). Because the banding surface that the *pso* parameter of **OEMNextBand** specified in the first call to **OEMNextBand** has not rendered yet, a plug-in should not send its contents to the device.
-
- 
-
+The end of preanalysis is signaled by a call to the **OEMNextBand** function. The *pptl* parameter that is passed to **OEMNextBand** isn't **NULL**. This call is used only to return the appropriate *pptl* value to Unidrv. Plug-ins can set the *pptl* value themselves or can call back into Unidrv (like the preceding pseudocode example at the beginning of this article does). Because the banding surface that the *pso* parameter of **OEMNextBand** specified in the first call to **OEMNextBand** hasn't rendered yet, a plug-in shouldn't send its contents to the device.

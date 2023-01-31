@@ -6,11 +6,12 @@ keywords:
 - IPrintCoreHelperUni
 - IPrintCoreHelper
 - helper interfaces WDK printer interface DLL
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Unidrv and Pscript5 Helper Interfaces for Plug-ins
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Because the [IPrintCoreHelperPS](/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelperps) and [IPrintCoreHelperUni](/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelperuni) interfaces inherit from the [IPrintCoreHelper](/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelper) interface, all three interfaces share a common set of methods. The following table lists the methods in the helper interfaces and notes which methods are available in all three interfaces and which methods are available in only one of the interfaces.
 
@@ -80,8 +81,3 @@ Because the [IPrintCoreHelperPS](/windows-hardware/drivers/ddi/prcomoem/nn-prcom
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-

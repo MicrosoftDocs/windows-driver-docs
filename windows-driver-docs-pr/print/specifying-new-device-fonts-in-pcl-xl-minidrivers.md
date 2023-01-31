@@ -5,20 +5,18 @@ keywords:
 - PCL XL vector graphics WDK Unidrv , device fonts
 - device fonts WDK PCL XL
 - fonts WDK PCL XL
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Specifying New Device Fonts in PCL XL Minidrivers
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 If you want to support new device fonts in a PCL XL minidriver, you must create *Unidrv font metrics (UFM)* files for those device fonts.
 
 A UFM file has the following format:
 
-A [**UNIFM\_HDR**](/windows-hardware/drivers/ddi/prntfont/ns-prntfont-_unifm_hdr) structure, which serves as a header for the UFM file
+A [**UNIFM_HDR**](/windows-hardware/drivers/ddi/prntfont/ns-prntfont-_unifm_hdr) structure, which serves as a header for the UFM file
 
 A [**UNIDRVINFO**](/windows-hardware/drivers/ddi/prntfont/ns-prntfont-_unidrvinfo) structure
 
@@ -32,7 +30,7 @@ A correctly formatted font selection command must be placed in the correct locat
 
 Following is an example of how a font selection command would appear in a UFM file. (The numbers in the second line show the position of each character in the font selection command.)
 
-```cpp
+```UFM
 CG Omega    BdIt 629
 12345678901234567890
 ```
@@ -41,7 +39,7 @@ The font name and style, CG Omega BdIt (bold/italic) take up the first 16 bytes.
 
 The font name and symbol set number discussed in the previous example are two of the three attributes required for the **SetFont** operator, which would appear in the output data from the driver. In the following example, the **FontName** and **SymbolSet** attributes of this operator are set to the same values as in the preceding example. The third attribute, **CharSize**, is set to the value 100.
 
-```cpp
+```UFM
 ubyte_array (CG Omega    BdIt) FontName
 real32 100 CharSize
 uint16 629 SymbolSet
@@ -49,6 +47,3 @@ SetFont
 ```
 
 For more information about the **SetFont** font selection command, see the *PCL XL Feature Reference Protocol Class 2.0* documentation. (This resource may not be available in some languages and countries.)
-
- 
-

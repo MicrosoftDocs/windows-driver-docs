@@ -190,4 +190,4 @@ Plug and Play maintains an implicit ranking of all HardwareIDs and CompatibleIDs
 
 [How Windows Ranks Drivers](../install/how-setup-ranks-drivers--windows-vista-and-later-.md)  
 
-[Port Monitor MIB (PWG 5107.1-2005)](https://www.pwg.org/standards.html)
+[Port Monitor MIB (PWG 5107.1-2005)](https://pwg.org/standards.html)

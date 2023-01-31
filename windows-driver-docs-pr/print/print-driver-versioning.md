@@ -6,10 +6,12 @@ keywords:
 - printer driver installations WDK, versioning
 - version numbers WDK printer
 - printer driver versioning WDK
-ms.date: 09/14/2022
+ms.date: 01/30/2023
 ---
 
 # Print driver versioning
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Unidrv-based and Pscript5-based printer minidrivers, as well as monolithic printer drivers (drivers developed completely by an IHV), should use printer driver versioning on Microsoft Windows XP and later. The Windows XP and later print spooler uses the versioning information to enable it to select the correct driver files during the installation of a new operating system version or service pack, or when a new Point and Print connection is established.
 

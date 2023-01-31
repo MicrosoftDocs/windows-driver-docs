@@ -10,10 +10,12 @@ api_location:
 - compstui.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 01/30/2023
 ---
 
 # TVOT_EDITBOX
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The TVOT_EDITBOX option type consists of an edit box inside a group box.
 

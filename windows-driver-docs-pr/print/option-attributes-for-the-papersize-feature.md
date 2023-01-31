@@ -3,20 +3,16 @@ title: Option Attributes for the PaperSize Feature
 description: Option Attributes for the PaperSize Feature
 keywords:
 - PaperSize Feature
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Option Attributes for the PaperSize Feature
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following table lists the attributes associated with the PaperSize feature. For more information about the PaperSize feature, see [Standard Features](standard-features.md).
 
-**Note**   All paper size specifications for the following attributes must be expressed relative to PORTRAIT orientation, even if the attributes are being used to describe a different orientation, such as LANDSCAPE.
-
- 
+All paper size specifications for the following attributes must be expressed relative to PORTRAIT orientation, even if the attributes are being used to describe a different orientation, such as LANDSCAPE.
 
 <table>
 <colgroup>
@@ -115,7 +111,7 @@ The following table lists the attributes associated with the PaperSize feature. 
 <tr class="odd">
 <td><p><em><strong>PrintableOrigin</strong></p></td>
 <td><p>PAIR of numeric values representing the origin of the printable area, in master units, relative to the upper left-hand corner of the paper.</p></td>
-<td><p>Required for all PaperSize options except CUSTOMSIZE. For CUSTOMSIZE, you can specify these values using *<strong>CustPrintableOriginX</strong> and *<strong>CustPrintableOriginY</strong>.</p></td>
+<td><p>Required for all PaperSize options except CUSTOMSIZE. For CUSTOMSIZE, you can specify these values using*<strong>CustPrintableOriginX</strong> and *<strong>CustPrintableOriginY</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p></em><strong>RotateSize?</strong></p></td>
@@ -130,29 +126,27 @@ The following table lists the attributes associated with the PaperSize feature. 
 </tbody>
 </table>
 
- 
-
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
-### <a href="" id="ddk-customsize-parameter-expressions-gg"></a>CUSTOMSIZE Parameter Expressions
+## CUSTOMSIZE Parameter Expressions
 
 CUSTOMIZE parameter expressions are a restricted form of the [command string format](command-string-format.md). Text strings are not allowed.
 
 Within the expression's **ArgumentType** segment, the following restrictions apply:
 
--   The only **ArgumentType** value allowed is %d.
+- The only **ArgumentType** value allowed is %d.
 
--   Bracketed value ranges are not allowed.
+- Bracketed value ranges are not allowed.
 
 Within the expression's **StandardVariableExpression** segment, the following restrictions apply:
 
--   Only the PhysPaperWidth and PhysPaperLength standard variables can be used.
+- Only the PhysPaperWidth and PhysPaperLength standard variables can be used.
 
--   The **Max\_Repeat** operator is not allowed.
+- The **Max_Repeat** operator is not allowed.
 
 Following are example expressions:
 
-```cpp
+```GPD
 *CustCursorOriginX: %d{((PhysPaperWidth-14040)/2)+300}
 *CustCursorOriginY: %d{180}
 *CustPrintableOriginX: %d{300}
@@ -160,11 +154,3 @@ Following are example expressions:
 *CustPrintableSizeX: %d{PhysPaperWidth-600}
 *CustPrintableSizeY: %d{PhysPaperLength-600}
 ```
-
- 
-
- 
-
-
-
-

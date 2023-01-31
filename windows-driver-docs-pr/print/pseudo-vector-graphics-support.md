@@ -5,14 +5,12 @@ keywords:
 - vector graphics WDK Unidrv , pseudovector graphics
 - pseudovector graphics WDK Unidrv
 - nonvector graphics devices WDK Unidrv
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Pseudo-Vector Graphics Support
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Devices that do not support true vector graphics can take advantage of the support that Unidrv provides for pseudovector graphics. When you use this feature, Unidrv downloads solid black rectangles and horizontal and vertical lines directly to a nonvector graphics device, reducing the overhead of rendering these figures on a raster surface. This also reduces the size of the output data, which can improve printer throughput for devices that do not handle raster data efficiently.
 
@@ -26,9 +24,6 @@ The solution to this problem is to temporarily store a valid rectangle, rather t
 
 In addition, it is possible that the new object to be drawn contains complex clipping so that the resulting figure is no longer a rectangle. When the band or page rendering is complete, any remaining black rectangles can be directly downloaded to the device without causing any z-order problems. Unidrv maintains a list of up to 256 rectangles per band, concatenating BitBlt rectangles where possible.
 
-### Pseudovector Graphics Issues
+## Pseudovector Graphics Issues
 
 The pseudovector graphics feature may alter the z-ordering in certain situations, particularly when text is downloaded directly to the device and subsequent objects with complex clipping must interact with that text.
-
- 
-

@@ -5,14 +5,12 @@ keywords:
 - rendering plug-ins WDK print , Unidrv
 - Unidrv, customized rendering options
 - Unidrv WDK print
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Unidrv-Specific Customized Rendering
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following topics provide information about the types of operations that *Unidrv* allows rendering plug-ins to perform:
 
@@ -29,11 +27,3 @@ The following topics provide information about the types of operations that *Uni
 [Dynamically Generated Printer Commands](dynamically-generated-printer-commands.md)
 
 [Handling Device-Managed Surfaces](handling-device-managed-surfaces.md)
-
- 
-
- 
-
-
-
-

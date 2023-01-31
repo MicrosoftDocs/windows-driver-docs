@@ -8,15 +8,16 @@ keywords:
 - XPS Documents WDK XPSDrv
 - XPS spool files WDK XPSDrv
 - spool files WDK print
-ms.date: 04/20/2017
+ms.date: 01/31/2023
 ---
 
 # XPSDrv Printer Drivers
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The XPSDrv printer driver extends Microsoft's GDI-based, version 3 printer driver architecture to support consuming XML Paper Specification (XPS) documents. With an XPSDrv printer driver, the XPS Document format is used as a spool file format and as a document file format.
 
-### Overview of XPS
+## Overview of XPS
 
 The XML Paper Specification (XPS) is the foundation for document and printing improvements in Windows Vista. This specification describes the appearance of fixed-format documents by using a structured, XML-based document format.
 
@@ -38,4 +39,4 @@ This section includes:
 
 [XPS Support in Earlier Versions of Windows](xps-support-in-earlier-versions-of-windows.md)
 
-For more detailed information about XPS printing for printer driver developers, see [XPSDrv Printer Driver](xpsdrv-printer-driver.md).
+For more information about XPS printing for printer driver developers, see [XPSDrv Printer Driver](xpsdrv-printer-driver.md).

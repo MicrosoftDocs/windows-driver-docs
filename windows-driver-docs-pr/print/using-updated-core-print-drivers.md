@@ -1,11 +1,12 @@
 ---
 title: Using Updated Core Print Drivers
 description: Using Updated Core Print Drivers
-ms.date: 04/20/2017
+ms.date: 01/31/2023
 ---
 
 # Using Updated Core Print Drivers
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Most manufacturer-supplied print drivers implement only device-dependent functions, and they rely on the system-supplied core driver components to manage generic printer functions. UniDrv, PostScript, and XPSDrv are examples of core driver components that many manufacturer-supplied drivers rely on to help with printer control and configuration.
 
@@ -13,13 +14,13 @@ Typically, printer manufacturers do not include Microsoft's core print drivers i
 
 However, Microsoft periodically releases updated versions of its core print drivers, and some manufacturers might supply driver packages that require features that are available only in the updated versions. This section describes the steps for installing with the required core print driver versions.
 
-### Packages
+## Packages
 
 In Windows Vista and Windows Server 2008, the operating system treats all print driver packages as unique objects. The operating system stores the files from each driver package in a separate folder in the Windows driver store. The Windows printer installer configures the driver package to operate independently of the other driver packages, and each driver package is separately managed by the operating system.
 
 Windows stores each driver package as a complete unit, and, during point and print, the entire driver package is downloaded from the print server to a client and installed. A package-aware driver is compatible with the management of driver packages as independent objects. Package-aware print drivers have [entries](printer-inf-file-entries.md) in their INF files to enable point-and-print operations even if their packages have print driver dependencies on files outside of the package.
 
-### Updates in Windows Vista
+## Updates in Windows Vista
 
 To support independent driver packages and still allow hardware manufacturers to take advantage of the core driver components, Windows Vista (and later) allows a package-aware driver to register a dependency on a core driver package. Microsoft supplies only one core driver package for printers in Windows Vista. That package is described by the driver-information file Ntprint.inf. Nearly all manufacturer-supplied print drivers, including package-aware drivers, depend on this core driver package.
 
@@ -34,11 +35,3 @@ The following topics are discussed:
 [Updating Core Drivers Files for Non-Package-Aware Drivers](updating-core-drivers-files-for-non-package-aware-drivers.md)
 
 [Creating a Single Driver Package for Windows XP and Windows Vista](creating-a-single-driver-package-for-windows-xp-and-windows-vista.md)
-
- 
-
- 
-
-
-
-

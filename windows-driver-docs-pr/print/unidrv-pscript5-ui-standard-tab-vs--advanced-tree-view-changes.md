@@ -1,11 +1,12 @@
 ---
 title: Unidrv/PScript5 UI Standard Tab vs. Advanced Tree View Changes
 description: Unidrv/PScript5 UI Standard Tab vs.
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Unidrv/PScript5 UI Standard Tab vs. Advanced Tree View Changes
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following public Print Schema features are supported by the UniDrive/PScript5 user interface (UI):
 
@@ -42,8 +43,8 @@ To present a consistent Unidrv/PScript5 driver UI for these standard printing fe
 <td><p>If the GPD or PPD file defines a feature with the "JobPageOrder" Print Schema keyword, and the feature has exactly two options with the "Standard" and "Reverse" Print Schema keywords, then that feature is shown in the <strong>Page Order</strong> area in the standard <strong>Layout</strong> tab. Otherwise, the GPD or PPD feature is shown in the generic "Printer Features" group in the <strong>Advanced</strong> tree view UI.</p>
 <p>When the feature is shown in the <strong>Page Order</strong> area in the standard <strong>Layout</strong> tab, then the following is true:</p>
 <ul>
-<li><p>If the driver’s GPD file doesn’t specify “<em>OutputOrderReversed?: TRUE” or its PPD file doesn’t specify "DefaultOutputOrder: Reverse", then the GPD/PPD "Standard" option is shown as the Front to Back UI option, and the GPD/PPD "Reverse" option is shown as the Back to Front UI option.</p></li>
-<li><p>If the driver’s GPD file does specify “</em>OutputOrderReversed?: TRUE” or its PPD file does specify "DefaultOutputOrder: Reverse", then the GPD/PPD "Standard" option is shown as the Back to Front UI option, and the GPD/PPD "Reverse" option is shown as the Front to Back UI option.</p></li>
+<li><p>If the driver's GPD file doesn't specify "<em>OutputOrderReversed?: TRUE" or its PPD file doesn't specify "DefaultOutputOrder: Reverse", then the GPD/PPD "Standard" option is shown as the Front to Back UI option, and the GPD/PPD "Reverse" option is shown as the Back to Front UI option.</p></li>
+<li><p>If the driver's GPD file does specify "</em>OutputOrderReversed?: TRUE" or its PPD file does specify "DefaultOutputOrder: Reverse", then the GPD/PPD "Standard" option is shown as the Back to Front UI option, and the GPD/PPD "Reverse" option is shown as the Front to Back UI option.</p></li>
 </ul>
 <p>The following screen shot shows the Page Order area on the Printing Preferences dialog box.</p>
 <img src="images/xpsdrv-printingpreferences1.png" alt="Screen shot of the Page Order area on the Printing Preferences dialog box" /></td>
@@ -81,14 +82,4 @@ To present a consistent Unidrv/PScript5 driver UI for these standard printing fe
 </tbody>
 </table>
 
- 
-
 For any other custom GPD or PPD features, no matter if they are mapped to public Print Schema features or not, they will always be shown in the generic "Printer Features" group in the **Advanced tree view** UI.
-
- 
-
- 
-
-
-
-

@@ -3,10 +3,12 @@ title: QueryDeviceNamespace
 description: The IPrintTicketProvider QueryDeviceNamespace routine provides the default namespace that the PrintTicket-to-DEVMODE and DEVMODE-to-PrintTicket conversions will use if they need to put a feature or option from a private namespace in a Print Ticket.
 keywords:
 - QueryDeviceNamespace
-ms.date: 09/07/2022
+ms.date: 01/30/2023
 ---
 
 # QueryDeviceNamespace
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The [**IPrintTicketProvider::QueryDeviceNamespace**](/windows-hardware/drivers/ddi/prdrvcom/nf-prdrvcom-iprintticketprovider-querydevicenamespace) routine provides the default namespace that the PrintTicket-to-DEVMODE and DEVMODE-to-PrintTicket conversions will use if they need to put a feature or option from a private namespace in a Print Ticket.
 

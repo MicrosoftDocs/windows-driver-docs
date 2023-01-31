@@ -10,10 +10,12 @@ api_location:
 - compstui.h
 api_type:
 - HeaderDef
-ms.date: 09/16/2021
+ms.date: 01/30/2023
 ---
 
 # TVOT_UDARROW
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The TVOT_UDARROW option type consists of an up-down control and an edit control inside a group box.
 

@@ -4,10 +4,12 @@ description: Provides information about printer INF file entries.
 keywords:
 - INF files WDK print, entries
 - dependent files WDK printer
-ms.date: 09/16/2022
+ms.date: 01/30/2023
 ---
 
 # Printer INF file entries
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 For an installation application to install a printer on a print server, it must call the spooler's [**AddPrinterDriverEx**](/windows/win32/printdocs/addprinterdriverex) function to load driver files and then call the spooler's [**AddPrinter**](/windows/win32/printdocs/addprinter) function to make the printer available on the server.
 
@@ -41,8 +43,7 @@ The following table lists INF file entries that should be included in printer IN
 | VendorSetup | The name of a function within a vendor-supplied DLL, that handles [customized printer setup operations](customized-printer-setup-operations.md). | None. See **Note 3**, following this table. | None |
 | InboxVersionRequired | The minimum acceptable version for all core drivers that the INF references. For more information about InboxVersionRequired, see [INF InboxVersionRequired directive](inf-inboxversionrequired-directive.md). | None | None |
 
-> [!NOTE]
-> **1 (DriverCategory)**: If the INF file specifies a category, these are the allowed values (0 to 5 respectively) for specifying categories:
+**1 (DriverCategory)**: If the INF file specifies a category, these are the allowed values (0 to 5 respectively) for specifying categories:
 
 | Driver category | Value | Description |
 |--|--|--|

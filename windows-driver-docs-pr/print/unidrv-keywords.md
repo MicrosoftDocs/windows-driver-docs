@@ -1,11 +1,12 @@
 ---
 title: Unidrv Keywords
 description: Unidrv Keywords
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Unidrv Keywords
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Unidrv plug-ins should use strings as they appear in the GPD view (not the GDL view) of the configuration file for calls to methods on the helper interface. In addition, Unidrv-provided features are preceded by a percent sign (%). The following table lists the simulated features that are supported.
 
@@ -59,14 +60,4 @@ Unidrv plug-ins should use strings as they appear in the GPD view (not the GDL v
 </tbody>
 </table>
 
- 
-
 Some GPD syntax is expanded at parse time to create features and options. The most common syntax that falls into this category is the \***MemConfigKB** keyword. Others include the \***MemConfigMB**, \***MemoryConfigKB**, and \***Installable** keywords.
-
- 
-
- 
-
-
-
-

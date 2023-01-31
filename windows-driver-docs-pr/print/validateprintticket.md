@@ -3,10 +3,12 @@ title: ValidatePrintTicket overview
 description: Each plug-in calls the IPrintOemPrintTicketProvider::ValidatePrintTicket method to validate the PrintTicket.
 keywords:
 - ValidatePrintTicket
-ms.date: 09/07/2022
+ms.date: 01/31/2023
 ---
 
 # ValidatePrintTicket overview
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Unidrv and PScript5 print drivers validate the PrintTicket by using the sequence that the following illustration and list show.
 

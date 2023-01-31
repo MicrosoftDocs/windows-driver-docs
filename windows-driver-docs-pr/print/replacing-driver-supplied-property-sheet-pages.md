@@ -11,14 +11,12 @@ keywords:
 - printer-sticky properties WDK print
 - device-sticky properties WDK print
 - sticky properties WDK print
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Replacing Driver-Supplied Property Sheet Pages
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The [IPrintCoreUI2 COM Interface](iprintcoreui2-com-interface.md) provides four methods that a Pscript5 UI plug-in running on Windows XP and later versions of Windows operating system must use when it intends to fully replace the core driver's standard UI pages. (The term core driver refers to either the Unidrv or Pscript5 printer driver.) These methods are as follows:
 
@@ -39,6 +37,3 @@ The core driver remembers the type of property sheet it handles (and therefore, 
 For **IPrintCoreUI2::EnumConstrainedOptions**, **IPrintCoreUI2::SetOptions**, and **IPrintCoreUI2::WhyConstrained**, only document-sticky features are supported during the execution of **IPrintOemUI::DocumentPropertySheets** or its property sheet callback routine and only printer-sticky features are supported during the execution of **IPrintOemUI::DevicePropertySheets** or its property sheet callback routine. For **IPrintCoreUI2::SetOptions**, any feature whose stickiness does not match the current sticky mode should be ignored. When either **IPrintCoreUI2::EnumConstrainedOptions** or **IPrintCoreUI2::WhyConstrained** is called for a feature whose stickiness does not match the current sticky mode, the method should return E\_INVALIDARG.
 
 For [**IPrintCoreUI2::GetOptions**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintcoreui2-getoptions), both document-sticky and printer-sticky features are supported in document-sticky mode (that is, when [**IPrintOemUI::DocumentPropertySheets**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-documentpropertysheets) or its property sheet callback routine are running), but only printer-sticky features are supported in printer-sticky mode (when [**IPrintOemUI::DevicePropertySheets**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-devicepropertysheets) or its property sheet callback routine are running).
-
- 
-

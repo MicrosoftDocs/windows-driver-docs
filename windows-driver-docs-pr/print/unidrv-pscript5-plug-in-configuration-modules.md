@@ -8,10 +8,12 @@ keywords:
 - Pscript WDK print, XPSDrv print drivers
 - Unidrv, XPSDrv print drivers
 - Unidrv WDK print
-ms.date: 09/07/2022
+ms.date: 01/30/2023
 ---
 
 # Unidrv/PScript5 plug-in configuration modules
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 XPSDrv print driver configuration modules that use Unidrv or PScript5 configuration plug-ins in Windows Vista support the following new features:
 

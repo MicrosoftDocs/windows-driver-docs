@@ -4,14 +4,12 @@ description: Printer Graphics DLL
 keywords:
 - GDI printer drivers WDK ,
 - DLLs WDK print
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Printer Graphics DLL
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 This section provides the following topics:
 
@@ -30,11 +28,3 @@ This section provides the following topics:
 [Choosing User Mode or Kernel Mode](choosing-user-mode-or-kernel-mode.md)
 
 [Building a Printer Graphics DLL](building-a-printer-graphics-dll.md)
-
- 
-
- 
-
-
-
-

@@ -4,14 +4,12 @@ description: Text Printing Commands
 keywords:
 - text printing commands WDK Unidrv
 - printer commands WDK Unidrv , text
-ms.date: 04/20/2017
+ms.date: 01/30/2023
 ---
 
 # Text Printing Commands
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Text printing commands are those that are associated with printing text. These commands are divided into the following groups:
 
@@ -20,11 +18,3 @@ Text printing commands are those that are associated with printing text. These c
 [Commands for Downloaded Fonts](commands-for-downloaded-fonts.md)
 
 [Commands for Simulated Fonts](commands-for-simulated-fonts.md)
-
- 
-
- 
-
-
-
-

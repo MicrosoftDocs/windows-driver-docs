@@ -1,7 +1,7 @@
 ---
 title: Porting an INF to follow driver package isolation
 description: This article provides tips on how to port an INF from old syntax to conform to driver package isolation
-ms.date: 01/26/2023
+ms.date: 01/30/2023
 ---
 
 # Porting an INF to follow driver package isolation
@@ -116,6 +116,22 @@ HKLM, Software\Microsoft\Windows\CurrentVersion\Run, ExampleEntry, ,"application
 ```
 
 This isn't supported. An INF shouldn't be modifying global registry entries.  If the Run entry is to add value add software to the system, your application should be a Universal Windows Platform application and installed using an [AddSoftware directive](../install/inf-addsoftware-directive.md) from a [DDInstall.Software section](../install/inf-ddinstall-software-section.md). For more information, see [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md).  If this software is a service that doesn't need to present any UI, then a Win32 service can be registered from the driver package with an [AddService directive](../install/inf-addservice-directive.md). When registering a service that is associated with a device, the service should only be running when the device is present.  The service should have a start type of 'demand start' and should use an AddTrigger directive from the service install section to set up the triggers that will cause the service to be started when the device is present on the system.  This is done by identifying a device interface that the driver on the device will expose and using the AddTrigger directive to specify that the service should be started when that hardware appears.  At runtime, the service should monitor for the device going away.  If the device is removed from the system so the service doesn't need to continue running, the service should stop itself. To register for device interface arrival and removal notifications, see [CM_Register_Notification](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_register_notification).
+
+## Using CopyFiles to add files to the 'Program Files' directories
+
+If your INF uses a CopyFiles directive to add files to the 'Program Files' directories, then the INF is not compliant with driver package isolation. This includes, but is not limited to, usage of the [DIRIDs](../install/using-dirids.md) 16422, 16426, 16427, and 16428. For example, your INF may have:
+```inf
+[DestinationDirs]
+Example_CopyFiles = 16422, Contoso
+
+[ExampleDDInstall]
+CopyFiles = Example_CopyFiles
+
+[Example_CopyFiles]
+ExampleFile.exe
+```
+
+This is not supported. An INF should not be copying files out to global locations.  The 'Program Files' directories are typically used to install software applications, not drivers.  If your goal is to build and supply a companion application for your device that communicates with your driver, then please see the [Hardware Support App guidance](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md). For example, your application can be a Universal Windows Platform application and installed using an [AddSoftware directive](../install/inf-addsoftware-directive.md) from a [DDInstall.Software section](../install/inf-ddinstall-software-section.md). See [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md) for more information.  If the CopyFiles entry is not to add a companion application to the system and the files should remain as part of the driver package, they need to be made to be '[run from the Driver Store](run-from-driver-store.md)'.
 
 ## CoInstaller that launches UI
 

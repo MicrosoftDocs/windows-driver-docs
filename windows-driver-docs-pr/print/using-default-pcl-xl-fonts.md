@@ -5,18 +5,16 @@ keywords:
 - PCL XL vector graphics WDK Unidrv , default fonts
 - default PCL XL fonts
 - fonts WDK PCL XL
-ms.date: 04/20/2017
+ms.date: 01/31/2023
 ---
 
 # Using Default PCL XL Fonts
 
-
-
-
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
 If you want to include the standard PCL XL fonts, you should include the standard resource DLL, *pclxl.dll*, that is part of the cab file. The following line, which should appear in the GPD, uses the \*ResourceDLL attribute to specify the resource DLL to be used.
 
-```cpp
+```GPD
 *ResourceDLL: "pclxl.dll"
 ```
 
@@ -165,13 +163,3 @@ The default PCL XL fonts that Unidrv supports are listed in the following table:
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-

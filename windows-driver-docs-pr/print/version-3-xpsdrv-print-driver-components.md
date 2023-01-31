@@ -8,13 +8,14 @@ keywords:
 - conversion rendering modules WDK XPSDrv
 - Version 3 XPS drivers WDK XPSDrv , about Version 3 XPS drivers
 - XPSDrv printer drivers WDK , Version 3 XPS drivers
-ms.date: 04/20/2017
+ms.date: 01/31/2023
 ---
 
 # Version 3 XPSDrv Print Driver Components
 
+[!include[Print Support Apps](../includes/print-support-apps.md)]
 
-The Version 3 components of a XPSDrv print driver contain a configuration module and aconversion render module.
+The Version 3 components of a XPSDrv print driver contain a configuration module and a conversion render module.
 
 The configuration module of an XPSDrv print driver is based on the same architecture as earlier Version 3 print drivers. (Windows Vista also supports Universal print drivers (Unidrv) and PostScript (PScript5) print drivers that are based on generic printer definition (GPD) files and PostScript printer definition (PPD) files, respectively. Windows Vista also supports Unidrv or PScript5 print driver configuration plug-ins and monolithic print driver configuration modules.)
 
@@ -31,11 +32,3 @@ The following topics cover XPSDrv configuration issues:
 [XPSDrv Driver Implementation](xpsdrv-driver-implementation.md)
 
 [Unidrv-based or PScript5-based XPSDrv Driver Changes](unidrv-based-or-pscript5-based-xpsdrv-driver-changes.md)
-
- 
-
- 
-
-
-
-
