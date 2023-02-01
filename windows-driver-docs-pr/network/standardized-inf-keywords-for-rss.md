@@ -6,7 +6,7 @@ keywords:
 - RSS WDK networking , standardized INF keywords
 - standardized INF keywords WDK RSS
 - INF entries WDK RSS
-ms.date: 02/01/2019
+ms.date: 02/01/2023
 ---
 
 # Standardized INF Keywords for RSS
@@ -21,9 +21,11 @@ Enable or disable support for RSS for miniport adapters.
 **\*RSSProfile**  
 The processor selection and load-balancing profile.
 
-**Note**  Changes to the **\*RSSProfile** setting require an adapter restart.
+**Note:** Changes to the **\*RSSProfile** setting require an adapter restart.
 
- 
+**Note:** If **\*RSSProfile** is set to **NdisRssProfileBalanced**, you can't configure advanced keywords such as **\*RssBaseProcNumber**, **\*RssBaseProcGroup**,  **\*RssMaxProcNumber**,  **\*RssMaxProcGroup**, or **\*NumaNodeId**. You can configure **\*MaxRssProcessors** and **\*NumRSSQueues**. 
+
+NDIS 6.30 added support for **\*RSSProfile**.
 
 Enumeration standardized INF keywords have the following attributes:
 
@@ -52,10 +54,7 @@ The following table describes the possible INF entries for the RSS enumeration k
 |||3|**NUMAScaling**: Assign RSS CPUs in a round robin basis across every NUMA node to enable applications that are running on NUMA servers to scale well.|
 |||4 (Default)|**NUMAScalingStatic**: RSS processor selection is the same as for NUMA scalability without dynamic load-balancing.|
 |||5|**ConservativeScaling**: RSS uses as few processors as possible to sustain the load. This option helps reduce the number of interrupts.|
-
- 
-
-NDIS 6.30 added support for **\*RSSProfile**.
+|||6 (Default on heterogeneous CPU systems)|**NdisRssProfileBalanced**: RSS processor selection is based on traffic workload in heterogeneous CPU systems. Only available in [NetAdapterCx](../netcx/netadaptercx-receive-side-scaling-rss-.md).|
 
 The following list shows the [standardized INF keywords](standardized-inf-keywords-for-network-devices.md) for RSS that can be edited:
 
@@ -67,11 +66,11 @@ The preferred NUMA node that is used for the memory allocations of the network a
 
 A driver for a PCI expansion card should not specify the NUMA node ID statically in its INF, since the closest node depends on which PCI slot the card is plugged into.  Only specify **\*NumaNodeId** if the network adapter is integrated into the system, the NUMA node is known in advance, and the node cannot be determined at runtime by querying ACPI.
 
-**Note**  If this keyword is present and its value is less than the number of NUMA nodes in the computer, NDIS uses this value in the **PreferredNumaNode** member in the [**NDIS\_RSS\_PROCESSOR\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_processor_info) structure.
+**Note:** If this keyword is present and its value is less than the number of NUMA nodes in the computer, NDIS uses this value in the **PreferredNumaNode** member in the [**NDIS\_RSS\_PROCESSOR\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_processor_info) structure.
 
  
 
-**Note**  In Windows 8 the **\*NumaNodeId** value is ignored if the NIC RSS profile is set to **NUMAScaling**(2) or **NUMAScalingStatic**(3).
+**Note:** In Windows 8 the **\*NumaNodeId** value is ignored if the NIC RSS profile is set to **NUMAScaling**(2) or **NUMAScalingStatic**(3).
 
  
 
@@ -138,13 +137,13 @@ The following table describes all of the RSS keywords that can be edited.
 |**\*RSSMaxProcGroup**|RSS Max Processor Group|Int|0|0|MAXIMUM_GROUPS-1|
  
 
-**Note**  Although the valid range for **\*RssBaseProcGroup** is zero to MAXIMUM\_GROUPS-1, in Windows 7 it must be zero. Otherwise, the TCP/IP protocol will not use any processors for RSS.
+**Note:** Although the valid range for **\*RssBaseProcGroup** is zero to MAXIMUM\_GROUPS-1, in Windows 7 it must be zero. Otherwise, the TCP/IP protocol will not use any processors for RSS.
 
 
-**Note**  The default value for **\*NumaNodeId** (65535) means the network adapter is agnostic to NUMA node, and NDIS should not attempt to prefer any node over another.
+**Note:** The default value for **\*NumaNodeId** (65535) means the network adapter is agnostic to NUMA node, and NDIS should not attempt to prefer any node over another.
 If the **\*NumaNodeId** keyword is not present, then NDIS automatically selects the closest node based on hints from ACPI.
 
-**Note**  The max value for **\*MaxRssProcessors** may be set to the maximum number of processors that the NIC can support. NDIS will automatically cap this value to be the maximum number of processors on the current system.
+**Note:** The max value for **\*MaxRssProcessors** may be set to the maximum number of processors that the NIC can support. NDIS will automatically cap this value to be the maximum number of processors on the current system.
 
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 

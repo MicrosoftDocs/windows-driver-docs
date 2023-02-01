@@ -3,7 +3,7 @@ title: NetAdapterCx receive side scaling (RSS)
 description: NetAdapterCx receive side scaling (RSS)
 keywords:
 - WDF Network Adapter Class Extension Receive Side Scaling, NetAdapterCx receive side scaling, NetAdapterCx RSS, NetAdapter RSS
-ms.date: 07/13/2018
+ms.date: 02/01/2023
 ---
 
 # NetAdapterCx receive side scaling (RSS)
@@ -70,3 +70,13 @@ While RSS is running on the system, upper layer protocol drivers monitor process
 In this callback, you move each entry in your NIC's indirection table to the specified receive queue. Each [NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRY](/windows-hardware/drivers/ddi/netreceivescaling/ns-netreceivescaling-_net_adapter_receive_scaling_indirection_entry) structure in the **NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRIES** array contains the hash index for that entry in the table, the new receive queue to which to assign the entry, and a status field indicating if that individual move succeeded or not. 
 
 The method of assigning index entries to hardware receive queues depends on the design of your NIC and the number of receive queues it has. For more information and a code example, see *[EvtNetAdapterReceiveScalingSetIndirectionEntries](/windows-hardware/drivers/ddi/netreceivescaling/nc-netreceivescaling-evt_net_adapter_receive_scaling_set_indirection_entries)*.
+
+## Heterogeneous CPU Support
+
+Heterogenous CPU systems use multiple types of cores that have different clock speeds and functionalities. Compared to homogeneous CPU systems where every core is identical to each other, heterogeneous CPU systems can better adjust to dynamic computing loads and use less energy.
+
+NetAdapterCx efficiently utilizes the CPUs on heterogeneous CPU systems. While RSS is running, the system decides which processor to use depending on the traffic workload received by the client driver. When there is less traffic being received, smaller, more power efficient cores can handle the traffic. When there is more traffic, larger, more performant cores are required to continuously poll the packets being received.
+
+To enable heterogenous CPU system support, the system administrator must set the **\*RSSProfile** [standardized INF keyword](../network/standardized-inf-keywords-for-rss.md) to **NdisRssProfileBalanced**. In homogeneous CPU systems, the system administrator uses configurable advanced RSS keywords to spread the traffic across a fixed set of CPUs. In heterogenous CPU systems, these advanced keywords are not configurable when **NdisRssProfileBalanced** is set in order to allow the system to decide the best cores to use. 
+
+
