@@ -10,7 +10,9 @@ Starting with Windows 10 version 1903 and later, SerCx and SerCx2 include suppor
 
 This feature can be enabled on SoC-based platforms which feature an integrated UART with a SerCx/SerCx2 client driver, if the UART is exposed as a physical port, or if regular applications (UWP or Win32) need to communicate directly with a device attached to the UART. This is as opposed to [accessing the SerCx/SerCx2 controller via a connection ID](opening-a-sercx2-managed-serial-port.md) - which exclusively enables access to the UART from a dedicated peripheral driver.
 
-When using this feature for SerCx/SerCx2 managed serial ports, a COM port number is not assigned for these devices, and no symbolic link is created - meaning that applications must use the approach described in this document to open the serial port as a device interface, rather than a named COM port as with other serial devices.
+When using this feature for SerCx/SerCx2 managed serial ports, a COM port number is not assigned for these devices, and no symbolic link is created - meaning that applications must use the approach described in this document to open the serial port as a device interface.
+
+Using the device interface (`GUID_DEVINTERFACE_COMPORT`) is the recommended way to discover and access a COM port. Using legacy COM port names is prone to name collisions and doesn't provide state change notifications to a client. Using the legacy COM port names is not recommended and not supported with SerCx2 and SerCx.
 
 
 ## Enabling device interface creation
@@ -35,16 +37,18 @@ Example device definition (excluding vendor specific information necessary to de
     }
 ```
 
-The specified UUID (`daffd814-6eba-4d8c-8a91-bc9bbf4aa301`) **must** be used, and the key `SerCx-FriendlyName` must be defined for SerCx/SerCx2 to create the device interface.
+The specified UUID (`daffd814-6eba-4d8c-8a91-bc9bbf4aa301`) **must** be used, and the entry `SerCx-FriendlyName` must be defined for SerCx/SerCx2 to create the device interface.
 
 ### Registry Key
-For development purposes, the `SerCx-FriendlyName` may also be configured as a device property in the registry. In an extension INF, or manually, the key `SerCx-FriendlyName` can be added to the device and used by SerCx/SerCx2 to retrieve the friendly name for the device interface.
+For development purposes, the `SerCxFriendlyName` may also be configured as a property in the device's hardware key in the registry. The `CM_Open_DevNode_Key` method may be used to access the device's [hardware key](https://learn.microsoft.com/en-us/windows-hardware/drivers/install/opening-a-device-s-hardware-key) and add the property `SerCxFriendlyName` to the device, which is used by SerCx/SerCx2 to retrieve the friendly name for the device interface.
+
+It is not recommended to set this key via an extension INF - it is provided primarily for testing and development purposes. The recommended approach is to enable the feature via ACPI as documented above.
 
 ## Device Interface
 If a `FriendlyName` is defined using the methods above, SerCx/SerCx2 will publish a `GUID_DEVINTERFACE_COMPORT` *device interface* for the controller. This device interface will have the `DEVPKEY_DeviceInterface_Serial_PortName` property set to the specified friendly name, which may be used by applications to locate a specific controller/port.
 
 ### Enabling unprivileged access
-By default, the controller/port will be accessible only to privileged users and applications. If access from unprivileged applications is required, the SerCx/SerCx2 client must override the default security descriptor after calling `SerCx2InitializeDeviceInit()` or `SerCxDeviceInitConfig()`.
+By default, the controller/port will be accessible only to privileged users and applications. If access from unprivileged applications is required, the SerCx/SerCx2 client must override the default security descriptor after calling `SerCx2InitializeDeviceInit()` or `SerCxDeviceInitConfig()`, but before calling `SerCx2InitializeDevice()` or `SerCxInitialize()`, at which time the applied security descriptor is propogated to the controller PDO.
 
 An example of how to enable unprivileged access on SerCx2 from within the SerCx2 client controller driver's `EvtDeviceAdd` is below.
 
@@ -82,7 +86,7 @@ SampleControllerEvtDeviceAdd(
 ### Behavior changes when using a Device Interface
 Opting in to this feature results in the following behavioral changes in SerCx/SerCx2 (as opposed to [accessing the SerCx/SerCx2 controller via a connection ID](opening-a-sercx2-managed-serial-port.md)):
 
-- No default configuration is applied to the port (speed, parity, etc). As there is no connection resource in ACPI to describe this, the port begins in an unitialized state. Software that interacts with the device interface is required to configure the port using the defined serial IOCTL interface. 
+- No default configuration is applied to the port (speed, parity, etc). As there is no connection resource in ACPI to describe this, the port begins in an uninitialized state. Software that interacts with the device interface is required to configure the port using the defined [serial IOCTL interface](/windows-hardware/drivers/ddi/ntddser/).
 
 - Calls from the SerCx/SerCx2 client driver to query or apply the default configuration will return a failure status. Additionally, `IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION` requests to the device interface will be failed as there is no default configuration specified to apply.
 
@@ -177,6 +181,7 @@ while (*currentInterface) {
     devPropBuffer = malloc(devPropSize);
     if (devPropBuffer == NULL) {
         // Handle error
+        free(devPropBuffer);
         ...
     }
 
@@ -189,6 +194,15 @@ while (*currentInterface) {
         0);
     if (configRet != CR_SUCCESS) {
         // Handle error
+        free(devPropBuffer);
+        ...
+    }
+
+    // Verify the value is the correct type and size
+    if ((devPropType != DEVPROP_TYPE_STRING) ||
+        (devPropSize < sizeof(WCHAR))) {
+        // Handle error
+        free(devPropBuffer);
         ...
     }
 
@@ -208,7 +222,7 @@ while (*currentInterface) {
 // over all interfaces without a match) - or, it points to the interface with
 // the friendly name UART0, in which case we can open it.
 //
-if (currentInterface == NULL) {
+if (*currentInterface == L'\0') {
     // Handle interface not found error
     ...
 }
