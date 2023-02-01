@@ -42,7 +42,7 @@ If a kernel debugger is attached to the crashed machine, the machine will break 
 
 ## Defining alternate keyboard shortcuts to force a system crash from the keyboard
 
-You can configure alternate values under the following registry subkeys for different keyboard shortcut sequences to generate the memory dump file:
+You can configure alternate values under the following registry subkeys for keyboard shortcut sequences to generate the memory dump file:
 
 - For PS/2 keyboards:
 
