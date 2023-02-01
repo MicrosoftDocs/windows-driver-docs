@@ -34,7 +34,7 @@ Use these samples to get started with USB client driver programming.
 
 - [Usbsamp Generic USB Driver](/samples/microsoft/windows-driver-samples/usbsamp-generic-usb-driver/)
 - [Sample KMDF Function Driver for OSR USB-FX2](/samples/microsoft/windows-driver-samples/sample-kmdf-function-driver-for-osr-usb-fx2/)
-- [Sample UMDF Function Driver for OSR USB-FX2 (UMDF Version 1)](/samples/microsoft/windows-driver-samples/sample-umdf-function-driver-for-osr-usb-fx2-umdf-version-1/)
+- [Sample UMDF Function Driver for OSR USB-FX2 (UMDF Version 1)](../wdf/user-mode-driver-framework-design-guide.md)
 - [Sample Function Driver for OSR USB-FX2 (UMDF Version 2)](/samples/microsoft/windows-driver-samples/sample-function-driver-for-osr-usb-fx2-umdf-version-2/)
 
 ## Related standards and specifications
