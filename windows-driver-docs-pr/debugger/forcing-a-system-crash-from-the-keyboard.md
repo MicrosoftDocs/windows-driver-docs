@@ -2,7 +2,7 @@
 title: Forcing a system crash from the keyboard
 description: Learn how to configure your settings to force a system crash from the PS/2, USB, and Hyper-V keyboard types.
 keywords: ["boot process, causing system crash from keyboard", "CTRL+SCROLL LOCK", "system crash, causing from keyboard", "bug check, causing from keyboard", "keyboard-caused system crash", "USB keyboard and system crash", "PS/2 keyboard and system crash", "forcing system crash from keyboard"]
-ms.date: 12/09/2022
+ms.date: 02/01/2023
 ---
 
 # Forcing a system crash from the keyboard
@@ -30,6 +30,8 @@ Configure the following settings to enable a system crash using the keyboard:
 
 4. With Hyper-V keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\hyperkbd\Parameters**, create a value named `CrashOnCtrlScroll`, and set it equal to a `REG_DWORD` value of 0x01.
 
+Some laptops use the PS/2 driver for the built-in keyboard and also support external HID keybords.  For these systems, consider creating both the USB and PS/2 registry keys to allow the use of either keyboard.
+
 You must restart the system for these settings to take effect.
 
 Once the restart is completed, the keyboard crash can be initiated by using the following hotkey sequence: Hold down the rightmost CTRL key, and press the SCROLL LOCK key twice.
@@ -40,7 +42,7 @@ If a kernel debugger is attached to the crashed machine, the machine will break 
 
 ## Defining alternate keyboard shortcuts to force a system crash from the keyboard
 
-You can configure values under the following registry subkeys for different keyboard shortcut sequences to generate the memory dump file:
+You can configure alternate values under the following registry subkeys for keyboard shortcut sequences to generate the memory dump file:
 
 - For PS/2 keyboards:
 
@@ -98,6 +100,18 @@ const UCHAR keyToScanTbl[134] = {
 Index 124 (sysreq) is a special case because an 84-key keyboard has a different scan code.
 
 If you define alternate keyboard shortcuts to force a system crash from a USB or PS/2 keyboard, you must either set the `CrashOnCtrlScroll` registry value to 0 or remove it from the registry.
+
+Example: In this sceanrio, a laptop uses a PS2 keyboard driver and an external HID keyboard is attached. Setting both values provides the ability to trigger a manual system crash from either keyboard. A manual system crash can be forced by holding the rightmost control key and pressing the spacebar twice when the following registry key is set.
+
+```reg
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\i8042prt\crashdump]
+"Dump1Keys"=dword:00000002
+"Dump2Key"=dword:0000003d
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdhid\crashdump]
+"Dump1Keys"=dword:00000002
+"Dump2Key"=dword:0000003d
+```
 
 ## Limitations
 
