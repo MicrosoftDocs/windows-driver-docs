@@ -34,50 +34,6 @@
     href: creating-device-objects-in-a-filter-driver.md
   - name: "Creating Device Objects in a Bus Driver"
     href: creating-device-objects-in-a-bus-driver.md
-  - name: "Building, Installing, and Testing"
-    href: building--installing--and-testing-a-wdf-driver.md
-  - name: "Building and Loading a WDF Driver"
-    href: building-and-loading-a-kmdf-driver.md
-  - name: "Building a WDF driver for multiple versions of Windows"
-    href: building-a-wdf-driver-for-multiple-versions-of-windows.md
-  - name: "Redistributable Framework Components"
-    href: installation-components-for-kmdf-drivers.md
-  - name: "Specifying the  KMDF Co-installer in an INF File"
-    href: installing-the-framework-s-co-installer.md
-  - name: "Using the UMDF Co-installer"
-    href: using-the-umdf-co-installer.md
-  - name: "Using INX Files to Create INF Files"
-    href: using-inx-files-to-create-inf-files.md
-  - name: "Testing a WDF Driver (KMDF or UMDF)"
-    href: testing-a-kmdf-driver.md
-  - name: "Troubleshooting KMDF and UMDF Driver Installation"
-    href: debugging-driver-installation.md
-  - name: "Installing a UMDF Filter Driver"
-    href: installing-a-umdf-filter-driver.md
-  - name: "Specifying  the Reflector in an INF File"
-    href: adding-the-reflector.md
-  - name: "Specifying WDF Directives in INF Files"
-    href: specifying-wdf-directives-in-inf-files.md
-  - name: "Using Device Pooling in UMDF Drivers"
-    href: using-device-pooling-in-umdf-drivers.md
-  - name: "Session Zero Guidelines for UMDF Drivers"
-    href: session-zero-guidelines-for-umdf-drivers.md
-  - name: "Restricting the Loading Location of UMDF Drivers"
-    href: restricting-the-loading-location-of-umdf-drivers.md
-  - name: "Controlling Device Access"
-    href: controlling-device-access.md
-  - name: "Using the Framework's Event Logger"
-    href: using-the-framework-s-event-logger.md
-  - name: "Using KMDF Verifier"
-    href: using-kmdf-verifier.md
-  - name: "Using UMDF Verifier"
-    href: using-umdf-verifier.md
-  - name: "How UMDF Handles Driver Failures"
-    href: how-umdf-handles-driver-failures.md
-  - name: "How UMDF Handles Application Failures"
-    href: how-umdf-handles-application-failures.md
-  - name: "How UMDF Reports Errors"
-    href: how-umdf-reports-errors.md
   - name: "Reporting Device Failures"
     href: reporting-device-failures.md
   - name: "Creating WDF HID Minidrivers"
@@ -94,168 +50,6 @@
     href: using-activity-identifiers.md
   - name: "Controlling Device Access in KMDF Drivers"
     href: controlling-device-access-in-kmdf-drivers.md
-- name: "Debugging"
-  items: 
-  - name: "Accessing UMDF Metadata in WER Reports"
-    href: accessing-umdf-metadata-in-wer-reports.md
-  - name: "Attaching a User-Mode Debugger"
-    href: attaching-a-user-mode-debugger.md
-  - name: "Avoiding Reboot when Updating a UMDF Driver"
-    href: avoiding-reboot-when-updating-a-umdf-driver.md
-  - name: "Breaking into a Debugger from KMDF Drivers"
-    href: breaking-into-a-debugger-from-kmdf-drivers.md
-  - name: "VERIFY_IS_IRQL_PASSIVE_LEVEL"
-    href: verify-is-irql-passive-level.md
-  - name: "WDFVERIFY"
-    href: wdfverify.md
-  - name: "Bug Checks from KMDF Drivers"
-    href: bug-checks-from-kmdf-drivers.md
-  - name: "Debugging Power Reference Leaks in WDF"
-    href: debugging-power-reference-leaks-in-wdf.md
-  - name: "Determining If a Driver Leaks Framework Objects"
-    href: determining-if-a-driver-leaks-framework-objects.md
-  - name: "Determining the State of a UMDF Device"
-    href: determining-the-state-of-a-umdf-device.md
-  - name: "Determining Why an Application Request Does Not Complete"
-    href: determining-why-an-application-request-does-not-complete.md
-  - name: "Determining Why the Reflector Terminated the Host Process"
-    href: determining-why-the-reflector-terminated-the-host-process.md
-  - name: "Determining Why the UMDF Driver Fails to Load or the UMDF Device Fails to Start"
-    href: determining-why-the-umdf-driver-fails-to-load-or-the-umdf-device-fails.md
-  - name: "Determining Why UMDF Indicates Outstanding Files at Device Removal Time"
-    href: determining-why-umdf-indicates-outstanding-files-at-device-removal-tim.md
-  - name: "How to Enable Debugging of a UMDF Driver"
-    href: enabling-a-debugger.md
-  - name: "Registry Values for Debugging WDF Drivers"
-    href: registry-values-for-debugging-kmdf-drivers.md
-  - name: "Summary of Debugger Extensions in Wdfkd.dll"
-    href: debugger-extensions-for-kmdf-drivers.md
-  - name: "Troubleshooting UMDF 2.0 Driver Crashes"
-    href: debugging-umdf-2-0-drivers.md
-  - name: "Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers"
-    href: using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers.md
-  - name: "Using the Windows Performance Toolkit (WPT) with WDF"
-    href: using-the-windows-performance-toolkit--wpt--with-wdf.md
-  - name: "Using WPP Software Tracing in KMDF Drivers"
-    href: using-wpp-software-tracing-in-kmdf-drivers.md
-  - name: "Using WPP Software Tracing in UMDF Drivers"
-    href: using-wpp-software-tracing-in-umdf-drivers.md
-  - name: "Video: Debugging your driver with WDF source code"
-    href: video--debugging-your-driver-with-wdf-source-code.md
-  - name: "Video: Accessing driver IFR logs without a debugger"
-    href: video--accessing-driver-ifr-logs-without-a-debugger.md
-  - name: "Videos: Debugging KMDF Drivers"
-    href: debugging-kernel-mode-driver-framework-drivers.md
-  - name: "Videos: Debugging UMDF Drivers"
-    href: videos--debugging-umdf-drivers.md
-- name: "DMA"
-  items: 
-  - name: "Introduction to DMA in Windows Driver Framework"
-    href: introduction-to-dma-in-windows-driver-framework.md
-  - name: "Framework DMA Objects"
-    href: framework-dma-objects.md
-  - name: "DMA Transactions and DMA Transfers"
-    href: dma-transactions-and-dma-transfers.md
-  - name: "Sample Drivers That Use Framework DMA"
-    href: sample-drivers-that-use-framework-dma.md
-  - name: "Handling I/O Requests in a KMDF Driver for a Bus-Master DMA Device"
-    href: handling-i-o-requests-in-a-kmdf-driver-for-a-bus-master-dma-device.md
-  - name: "Enabling DMA Transactions"
-    href: enabling-dma-transactions.md
-  - name: "Creating and Initializing a DMA Transaction"
-    href: creating-and-initializing-a-dma-transaction.md
-  - name: "Starting a DMA Transaction"
-    href: starting-a-dma-transaction.md
-  - name: "Programming DMA Hardware"
-    href: programming-dma-hardware.md
-  - name: "Completing a DMA Transfer"
-    href: completing-a-dma-transfer.md
-  - name: "Completing a DMA Transaction"
-    href: completing-a-dma-transaction.md
-  - name: "Reusing DMA Transaction Objects"
-    href: reusing-dma-transaction-objects.md
-  - name: "Supporting Power Management for DMA Devices"
-    href: supporting-power-management-for-dma-devices.md
-  - name: "Using Common Buffers"
-    href: using-common-buffers.md
-  - name: "Supporting System-Mode DMA"
-    href: supporting-system-mode-dma.md
-  - name: "Canceling DMA Transactions"
-    href: canceling-dma-transactions.md
-  - name: "Using Single Transfer DMA"
-    href: using-single-transfer-dma.md
-  - name: "Reserving DMA Resources"
-    href: reserving-dma-resources.md
-  - name: "Testing DMA in KMDF Drivers"
-    href: testing-dma-in-kmdf-drivers.md
-- name: "Accessing Hardware"
-  items: 
-  - name: "Handling Hardware Resources"
-    href: hardware-resources-for-kmdf-drivers.md
-  - name: "Introduction to Hardware Resources"
-    href: introduction-to-hardware-resources.md
-  - name: "Framework Objects for Hardware Resources"
-    href: framework-objects-for-hardware-resources.md
-  - name: "Creating a Resource Requirements List"
-    href: creating-a-resource-requirements-list.md
-  - name: "Modifying a Resource Requirements List"
-    href: modifying-a-resource-requirements-list.md
-  - name: "Creating a Resource List for a Boot Configuration"
-    href: creating-a-resource-list-for-a-boot-configuration.md
-  - name: "Modifying a Resource List"
-    href: modifying-a-resource-list.md
-  - name: "Raw and Translated Resources"
-    href: raw-and-translated-resources.md
-  - name: "Finding and Mapping Hardware Resources"
-    href: finding-and-mapping-hardware-resources.md
-  - name: "Reading and Writing to Device Registers"
-    href: reading-and-writing-to-device-registers.md
-  - name: "Driver Access to Hardware"
-    href: driver-access-to-hardware.md
-- name: "Interrupts"
-  items: 
-  - name: "Creating an Interrupt Object"
-    href: creating-an-interrupt-object.md
-  - name: "Enabling and Disabling Interrupts"
-    href: enabling-and-disabling-interrupts.md
-  - name: "Servicing an Interrupt"
-    href: servicing-an-interrupt.md
-  - name: "Synchronizing Interrupt Code"
-    href: synchronizing-interrupt-code.md
-  - name: "Supporting Passive-Level Interrupts"
-    href: supporting-passive-level-interrupts.md
-  - name: "Using an Interrupt to Wake a Device"
-    href: using-an-interrupt-to-wake-a-device.md
-  - name: "Handling Active-Both Interrupts"
-    href: handling-active-both-interrupts.md
-- name: "I/O Targets"
-  items: 
-  - name: "Using I/O Targets"
-    href: using-i-o-targets.md
-  - name: "Introduction to I/O Targets"
-    href: introduction-to-i-o-targets.md
-  - name: "General I/O Targets"
-    href: general-i-o-targets.md
-  - name: "Initializing a General I/O Target"
-    href: initializing-a-general-i-o-target.md
-  - name: "Sending I/O Requests to General I/O Targets"
-    href: sending-i-o-requests-to-general-i-o-targets.md
-  - name: "Sending I/O Requests Synchronously"
-    href: sending-i-o-requests-synchronously.md
-  - name: "Sending I/O Requests Asynchronously"
-    href: sending-i-o-requests-asynchronously.md
-  - name: "Controlling a General I/O Target's State"
-    href: controlling-a-general-i-o-target-s-state.md
-  - name: "Obtaining Information About a General I/O Target"
-    href: obtaining-information-about-a-general-i-o-target.md
-  - name: "USB I/O Targets"
-    href: usb-i-o-targets.md
-  - name: "Working with USB Devices"
-    href: working-with-usb-devices.md
-  - name: "Working with USB Interfaces"
-    href: working-with-usb-interfaces.md
-  - name: "Working with USB Pipes"
-    href: working-with-usb-pipes.md
 - name: "Objects"
   items: 
   - name: "Introduction to Framework Objects"
@@ -388,6 +182,252 @@
     href: reporting-device-powered-on.md
   - name: "Supporting Idle Power-Down on Multiple-Component Devices"
     href: supporting-idle-power-down-on-multiple-component-devices.md
+- name: "Handling I/O Requests"
+  items: 
+  - name: "Framework Request Objects"
+    href: framework-request-objects.md
+  - name: "Creating Framework Request Objects"
+    href: creating-framework-request-objects.md
+  - name: "Using Request Object Context"
+    href: using-request-object-context.md
+  - name: "Request Ownership"
+    href: request-ownership.md
+  - name: "Processing I/O Requests"
+    href: processing-i-o-requests.md
+  - name: "Receiving I/O Requests"
+    href: receiving-i-o-requests.md
+  - name: "Requeuing I/O Requests"
+    href: requeuing-i-o-requests.md
+  - name: "Completing I/O Requests"
+    href: completing-i-o-requests.md
+  - name: "Canceling I/O Requests"
+    href: canceling-i-o-requests.md
+  - name: "Synchronizing Cancel and Completion Code"
+    href: synchronizing-cancel-and-completion-code.md
+  - name: "Synchronizing Cancellation of Sent Requests"
+    href: synchronizing-cancellation-of-sent-requests.md
+  - name: "Forwarding I/O Requests"
+    href: forwarding-i-o-requests.md
+  - name: "Obtaining Information About an I/O Request"
+    href: obtaining-information-about-an-i-o-request.md
+  - name: "Accessing Data Buffers in WDF Drivers (KMDF or UMDF)"
+    href: accessing-data-buffers-in-wdf-drivers.md
+  - name: "Managing Buffer Access Methods in UMDF Drivers"
+    href: managing-buffer-access-methods-in-umdf-drivers.md
+  - name: "Reusing Framework Request Objects"
+    href: reusing-framework-request-objects.md
+- name: "I/O Targets"
+  items: 
+  - name: "Using I/O Targets"
+    href: using-i-o-targets.md
+  - name: "Introduction to I/O Targets"
+    href: introduction-to-i-o-targets.md
+  - name: "General I/O Targets"
+    href: general-i-o-targets.md
+  - name: "Initializing a General I/O Target"
+    href: initializing-a-general-i-o-target.md
+  - name: "Sending I/O Requests to General I/O Targets"
+    href: sending-i-o-requests-to-general-i-o-targets.md
+  - name: "Sending I/O Requests Synchronously"
+    href: sending-i-o-requests-synchronously.md
+  - name: "Sending I/O Requests Asynchronously"
+    href: sending-i-o-requests-asynchronously.md
+  - name: "Controlling a General I/O Target's State"
+    href: controlling-a-general-i-o-target-s-state.md
+  - name: "Obtaining Information About a General I/O Target"
+    href: obtaining-information-about-a-general-i-o-target.md
+  - name: "USB I/O Targets"
+    href: usb-i-o-targets.md
+  - name: "Working with USB Devices"
+    href: working-with-usb-devices.md
+  - name: "Working with USB Interfaces"
+    href: working-with-usb-interfaces.md
+  - name: "Working with USB Pipes"
+    href: working-with-usb-pipes.md
+- name: "Synchronization"
+  items: 
+  - name: "Using Automatic Synchronization"
+    href: using-automatic-synchronization.md
+  - name: "Using Framework Locks"
+    href: using-framework-locks.md
+- name: "Accessing Hardware"
+  items: 
+  - name: "Handling Hardware Resources"
+    href: hardware-resources-for-kmdf-drivers.md
+  - name: "Introduction to Hardware Resources"
+    href: introduction-to-hardware-resources.md
+  - name: "Framework Objects for Hardware Resources"
+    href: framework-objects-for-hardware-resources.md
+  - name: "Creating a Resource Requirements List"
+    href: creating-a-resource-requirements-list.md
+  - name: "Modifying a Resource Requirements List"
+    href: modifying-a-resource-requirements-list.md
+  - name: "Creating a Resource List for a Boot Configuration"
+    href: creating-a-resource-list-for-a-boot-configuration.md
+  - name: "Modifying a Resource List"
+    href: modifying-a-resource-list.md
+  - name: "Raw and Translated Resources"
+    href: raw-and-translated-resources.md
+  - name: "Finding and Mapping Hardware Resources"
+    href: finding-and-mapping-hardware-resources.md
+  - name: "Reading and Writing to Device Registers"
+    href: reading-and-writing-to-device-registers.md
+  - name: "Driver Access to Hardware"
+    href: driver-access-to-hardware.md
+- name: "Interrupts"
+  items: 
+  - name: "Creating an Interrupt Object"
+    href: creating-an-interrupt-object.md
+  - name: "Enabling and Disabling Interrupts"
+    href: enabling-and-disabling-interrupts.md
+  - name: "Servicing an Interrupt"
+    href: servicing-an-interrupt.md
+  - name: "Synchronizing Interrupt Code"
+    href: synchronizing-interrupt-code.md
+  - name: "Supporting Passive-Level Interrupts"
+    href: supporting-passive-level-interrupts.md
+  - name: "Using an Interrupt to Wake a Device"
+    href: using-an-interrupt-to-wake-a-device.md
+  - name: "Handling Active-Both Interrupts"
+    href: handling-active-both-interrupts.md
+- name: "DMA"
+  items: 
+  - name: "Introduction to DMA in Windows Driver Framework"
+    href: introduction-to-dma-in-windows-driver-framework.md
+  - name: "Framework DMA Objects"
+    href: framework-dma-objects.md
+  - name: "DMA Transactions and DMA Transfers"
+    href: dma-transactions-and-dma-transfers.md
+  - name: "Sample Drivers That Use Framework DMA"
+    href: sample-drivers-that-use-framework-dma.md
+  - name: "Handling I/O Requests in a KMDF Driver for a Bus-Master DMA Device"
+    href: handling-i-o-requests-in-a-kmdf-driver-for-a-bus-master-dma-device.md
+  - name: "Enabling DMA Transactions"
+    href: enabling-dma-transactions.md
+  - name: "Creating and Initializing a DMA Transaction"
+    href: creating-and-initializing-a-dma-transaction.md
+  - name: "Starting a DMA Transaction"
+    href: starting-a-dma-transaction.md
+  - name: "Programming DMA Hardware"
+    href: programming-dma-hardware.md
+  - name: "Completing a DMA Transfer"
+    href: completing-a-dma-transfer.md
+  - name: "Completing a DMA Transaction"
+    href: completing-a-dma-transaction.md
+  - name: "Reusing DMA Transaction Objects"
+    href: reusing-dma-transaction-objects.md
+  - name: "Supporting Power Management for DMA Devices"
+    href: supporting-power-management-for-dma-devices.md
+  - name: "Using Common Buffers"
+    href: using-common-buffers.md
+  - name: "Supporting System-Mode DMA"
+    href: supporting-system-mode-dma.md
+  - name: "Canceling DMA Transactions"
+    href: canceling-dma-transactions.md
+  - name: "Using Single Transfer DMA"
+    href: using-single-transfer-dma.md
+  - name: "Reserving DMA Resources"
+    href: reserving-dma-resources.md
+  - name: "Testing DMA in KMDF Drivers"
+    href: testing-dma-in-kmdf-drivers.md
+- name: "Building, Installing, and Testing"
+  items: 
+  - name: "Building and Loading a WDF Driver"
+    href: building-and-loading-a-kmdf-driver.md
+  - name: "Building a WDF driver for multiple versions of Windows"
+    href: building-a-wdf-driver-for-multiple-versions-of-windows.md
+  - name: "Redistributable Framework Components"
+    href: installation-components-for-kmdf-drivers.md
+  - name: "Specifying the  KMDF Co-installer in an INF File"
+    href: installing-the-framework-s-co-installer.md
+  - name: "Using the UMDF Co-installer"
+    href: using-the-umdf-co-installer.md
+  - name: "Using INX Files to Create INF Files"
+    href: using-inx-files-to-create-inf-files.md
+  - name: "Testing a WDF Driver (KMDF or UMDF)"
+    href: testing-a-kmdf-driver.md
+  - name: "Troubleshooting KMDF and UMDF Driver Installation"
+    href: debugging-driver-installation.md
+  - name: "Installing a UMDF Filter Driver"
+    href: installing-a-umdf-filter-driver.md
+  - name: "Specifying  the Reflector in an INF File"
+    href: adding-the-reflector.md
+  - name: "Specifying WDF Directives in INF Files"
+    href: specifying-wdf-directives-in-inf-files.md
+  - name: "Using Device Pooling in UMDF Drivers"
+    href: using-device-pooling-in-umdf-drivers.md
+  - name: "Session Zero Guidelines for UMDF Drivers"
+    href: session-zero-guidelines-for-umdf-drivers.md
+  - name: "Restricting the Loading Location of UMDF Drivers"
+    href: restricting-the-loading-location-of-umdf-drivers.md
+  - name: "Controlling Device Access"
+    href: controlling-device-access.md
+  - name: "Using the Framework's Event Logger"
+    href: using-the-framework-s-event-logger.md
+  - name: "Using KMDF Verifier"
+    href: using-kmdf-verifier.md
+  - name: "Using UMDF Verifier"
+    href: using-umdf-verifier.md
+  - name: "How UMDF Handles Driver Failures"
+    href: how-umdf-handles-driver-failures.md
+  - name: "How UMDF Handles Application Failures"
+    href: how-umdf-handles-application-failures.md
+  - name: "How UMDF Reports Errors"
+    href: how-umdf-reports-errors.md
+- name: "Debugging"
+  items: 
+  - name: "Accessing UMDF Metadata in WER Reports"
+    href: accessing-umdf-metadata-in-wer-reports.md
+  - name: "Attaching a User-Mode Debugger"
+    href: attaching-a-user-mode-debugger.md
+  - name: "Avoiding Reboot when Updating a UMDF Driver"
+    href: avoiding-reboot-when-updating-a-umdf-driver.md
+  - name: "Breaking into a Debugger from KMDF Drivers"
+    href: breaking-into-a-debugger-from-kmdf-drivers.md
+  - name: "VERIFY_IS_IRQL_PASSIVE_LEVEL"
+    href: verify-is-irql-passive-level.md
+  - name: "WDFVERIFY"
+    href: wdfverify.md
+  - name: "Bug Checks from KMDF Drivers"
+    href: bug-checks-from-kmdf-drivers.md
+  - name: "Debugging Power Reference Leaks in WDF"
+    href: debugging-power-reference-leaks-in-wdf.md
+  - name: "Determining If a Driver Leaks Framework Objects"
+    href: determining-if-a-driver-leaks-framework-objects.md
+  - name: "Determining the State of a UMDF Device"
+    href: determining-the-state-of-a-umdf-device.md
+  - name: "Determining Why an Application Request Does Not Complete"
+    href: determining-why-an-application-request-does-not-complete.md
+  - name: "Determining Why the Reflector Terminated the Host Process"
+    href: determining-why-the-reflector-terminated-the-host-process.md
+  - name: "Determining Why the UMDF Driver Fails to Load or the UMDF Device Fails to Start"
+    href: determining-why-the-umdf-driver-fails-to-load-or-the-umdf-device-fails.md
+  - name: "Determining Why UMDF Indicates Outstanding Files at Device Removal Time"
+    href: determining-why-umdf-indicates-outstanding-files-at-device-removal-tim.md
+  - name: "How to Enable Debugging of a UMDF Driver"
+    href: enabling-a-debugger.md
+  - name: "Registry Values for Debugging WDF Drivers"
+    href: registry-values-for-debugging-kmdf-drivers.md
+  - name: "Summary of Debugger Extensions in Wdfkd.dll"
+    href: debugger-extensions-for-kmdf-drivers.md
+  - name: "Troubleshooting UMDF 2.0 Driver Crashes"
+    href: debugging-umdf-2-0-drivers.md
+  - name: "Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers"
+    href: using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers.md
+  - name: "Using the Windows Performance Toolkit (WPT) with WDF"
+    href: using-the-windows-performance-toolkit--wpt--with-wdf.md
+  - name: "Using WPP Software Tracing in KMDF Drivers"
+    href: using-wpp-software-tracing-in-kmdf-drivers.md
+  - name: "Using WPP Software Tracing in UMDF Drivers"
+    href: using-wpp-software-tracing-in-umdf-drivers.md
+  - name: "Video: Debugging your driver with WDF source code"
+    href: video--debugging-your-driver-with-wdf-source-code.md
+  - name: "Video: Accessing driver IFR logs without a debugger"
+    href: video--accessing-driver-ifr-logs-without-a-debugger.md
+  - name: "Videos: Debugging KMDF Drivers"
+    href: debugging-kernel-mode-driver-framework-drivers.md
+  - name: "Videos: Debugging UMDF Drivers"
+    href: videos--debugging-umdf-drivers.md
 - name: "Porting"
   items: 
   - name: "Porting a Driver from WDM to WDF"
@@ -464,46 +504,6 @@
     href: using-framework-registry-key-objects.md
   - name: "Accessing the Unified Device Property Model"
     href: accessing-the-unified-device-property-model.md
-- name: "Requests"
-  items: 
-  - name: "Framework Request Objects"
-    href: framework-request-objects.md
-  - name: "Creating Framework Request Objects"
-    href: creating-framework-request-objects.md
-  - name: "Using Request Object Context"
-    href: using-request-object-context.md
-  - name: "Request Ownership"
-    href: request-ownership.md
-  - name: "Processing I/O Requests"
-    href: processing-i-o-requests.md
-  - name: "Receiving I/O Requests"
-    href: receiving-i-o-requests.md
-  - name: "Requeuing I/O Requests"
-    href: requeuing-i-o-requests.md
-  - name: "Completing I/O Requests"
-    href: completing-i-o-requests.md
-  - name: "Canceling I/O Requests"
-    href: canceling-i-o-requests.md
-  - name: "Synchronizing Cancel and Completion Code"
-    href: synchronizing-cancel-and-completion-code.md
-  - name: "Synchronizing Cancellation of Sent Requests"
-    href: synchronizing-cancellation-of-sent-requests.md
-  - name: "Forwarding I/O Requests"
-    href: forwarding-i-o-requests.md
-  - name: "Obtaining Information About an I/O Request"
-    href: obtaining-information-about-an-i-o-request.md
-  - name: "Accessing Data Buffers in WDF Drivers (KMDF or UMDF)"
-    href: accessing-data-buffers-in-wdf-drivers.md
-  - name: "Managing Buffer Access Methods in UMDF Drivers"
-    href: managing-buffer-access-methods-in-umdf-drivers.md
-  - name: "Reusing Framework Request Objects"
-    href: reusing-framework-request-objects.md
-- name: "Synchronization"
-  items: 
-  - name: "Using Automatic Synchronization"
-    href: using-automatic-synchronization.md
-  - name: "Using Framework Locks"
-    href: using-framework-locks.md
 - name: "KMDF specific"
   items: 
   - name: "Using Kernel-Mode Driver Framework with Non-PnP Drivers"
@@ -752,3 +752,4 @@
     href: determining-why-a-umdf-driver-consumes-an-excessive-amount-of-memory.md
   - name: "Summary of Debugger Extensions in Wudfext.dll"
     href: using-umdf-debugger-extensions.md
+    

@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+            "source_path": "windows-driver-docs-pr/wdf/building--installing--and-testing-a-wdf-driver.md",
+            "redirect_URL": "/windows-hardware/drivers/wdf/building-and-loading-a-kmdf-driver",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/kernel/processing-an-application-notification.md",
             "redirect_URL": "/windows-hardware/drivers/kernel/processing-wm_devicechange-messages",
             "redirect_document_id": false
