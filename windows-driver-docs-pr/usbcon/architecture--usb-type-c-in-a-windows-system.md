@@ -1,51 +1,37 @@
 ---
-description: Describes a typical hardware design of a USB Type-C system and the Microsoft-provided drivers that support the hardware components.
 title: Architecture of USB Type-C design for a Windows system
-ms.date: 04/20/2017
+description: Describes a typical hardware design of a USB Type-C system and the Microsoft-provided drivers that support the hardware components.
+ms.date: 01/18/2023
 ---
 
 # Architecture: USB Type-C design for a Windows system
 
+Describes a typical hardware design of a USB Type-C system and the Microsoft-provided drivers that support the hardware components. This article applies to OEMs developing systems with USB Type-C connectors.
 
-**Applies to OEMs developing systems with USB Type-C connectors**
+- USB dual-role capabilities by using USB Type-C
+- Faster charging by using USB Type-C current levels and Power Delivery 2.0
+- Display-Out capabilities by using alternate modes and wired docking experiences.
 
--   USB dual-role capabilities by using USB Type-C
--   Faster charging by using USB Type-C current levels and Power Delivery 2.0
--   Display-Out capabilities by using alternate modes and wired docking experiences.
+## Drivers for supporting USB Type-C components
 
-**Last Updated**
-
--   December 2016
-
-**Windows version**
-
--   Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
--   Windows 10 Mobile
-
-Describes a typical hardware design of a USB Type-C system and the Microsoft-provided drivers that support the hardware components.
-
-## <a href="" id="drivers"></a>Drivers for supporting USB Type-C components
-
-
-![usb type-c software components.](images/type-c-arch.png)
+:::image type="content" source="images/type-c-arch.png" alt-text="Diagram of USB Type-C software components.":::
 
 In the preceding image,
 
--   **USB device-side drivers**
+- **USB device-side drivers**
 
     The [USB device-side drivers](usb-device-side-drivers-in-windows.md) service the function/device/peripheral. The USB function controller class extension supports MTP (Media Transfer Protocol) and charging using BC 1.2 chargers. Microsoft provides in-box client drivers for Synopsys USB 3.0 and ChipIdea USB 2.0 controllers. You can write a custom client driver for your function controller by using [USB function controller client driver programming interfaces](/previous-versions/windows/hardware/drivers/mt188010(v=vs.85)). For more information, see [Developing Windows drivers for USB function controllers](developing-windows-drivers-for-usb-function-controllers.md).
 
     The SoC vendor might provide you with the USB function lower filter driver for legacy proprietary charger detection. You can implement your own filter driver if the function controller is Synopsys USB 3.0 or ChipIdea USB 2.0 controllers
 
--   **USB host-side drivers**
+- **USB host-side drivers**
 
     The USB host-side drivers are a set of drivers that work with EHCI or XHCI compliant USB host controllers. The drivers are loaded if the role-switch driver enumerates the host role. If your host controller is not specification-compliant, then you can write a custom driver by using [USB host controller extension (UCX) programming interface](/previous-versions/windows/hardware/drivers/mt188009(v=vs.85)). For information, see [Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md).
 
-    **Note**  Not [all USB devices classes](supported-usb-classes.md) are supported on Windows 10 Mobile.
+    > [!NOTE]
+    > Not [all USB devices classes](supported-usb-classes.md) are supported on Windows 10 Mobile.
 
-     
-
--   **USB role-switch drivers (URS)**
+- **USB role-switch drivers (URS)**
 
     Systems can be designed such that the dual-role USB port needs Windows to configure it to either Host or Function mode. These designs will need to use the USB role switch (URS) driver stack.
 
@@ -55,7 +41,7 @@ In the preceding image,
 
     On systems with USB Type-C connectors, the decision is made based on the CC pins. The client driver for connector performs CC detection and forwards that information to the role-switch driver.
 
--   **USB connector manager (UCM)**
+- **USB connector manager (UCM)**
 
     This set of drivers manage all aspects of the USB Type-C connector. If your system implements a UCSI-compliant embedded controller over ACPI, use the Microsoft-provided [UCSI driver](ucsi.md). Otherwise [write a UCSI client driver](write-a-ucsi-driver.md) for non-ACPI transports.
 
@@ -69,13 +55,10 @@ In the preceding image,
 
     For information about writing the client driver, see [Write a USB Type-C port controller driver](write-a-usb-type-c-port-controller-driver.md).
 
--   **Charging arbitration driver**
+- **Charging arbitration driver**
 
     This driver is provided by Microsoft for Windows 10 Mobile. The driver acts as the arbiter for multiple charging sources. The USB connector manager reports USB Type-C and PD charging source information to CAD, which makes a selection from that information and BC1.2 charger detection performed by the USB device-side drivers (if applicable). CAD then reports the most appropriate charging source to use to the battery subsystem.
 
--   **Battery drivers**
+- **Battery drivers**
 
     The class driver defines the overall functionality of the batteries in the system and interacts with the power manager. The miniclass driver handles device-specific functions such as adding and removing a battery, and keeping track of its capacity and charge. The miniclass driver exports routines that the class driver calls to get information about the devices it controls.
-
- 
-

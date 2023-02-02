@@ -1,7 +1,7 @@
 ---
-description: Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver.
 title: USB Type-C Connector System Software Interface (UCSI) driver
-ms.date: 03/18/2022
+description: Microsoft provides a USB Type-C Connector System Software Interface (UCSI) Specification-compliant driver.
+ms.date: 01/18/2023
 ---
 
 # USB Type-C Connector System Software Interface (UCSI) driver
@@ -14,7 +14,7 @@ If your UCSI-compliant hardware uses a transport other than ACPI, you need to [w
 
 Here is an example of a system with an embedded controller.
 
-![usb type-c software components.](images/ucsiarch.png)
+:::image type="content" source="images/ucsiarch.png" alt-text="Diagram of USB Type-C software components.":::
 
 In the preceding example, USB role switching is handled in the firmware of the system and USB Role Switch driver stack is not loaded. In another system, the driver stack may not get loaded because dual role is not supported.
 
@@ -48,11 +48,11 @@ In addition to the commands marked as "Required", Windows requires these command
 - GET\_CAM\_SUPPORTED
 - GET\_PDOS
 - SET\_NOTIFICATION\_ENABLE: The system or controller must support the following notifications within SET\_NOTIFICATION\_ENABLE:
-    - Supported Provider Capabilities Change
-    - Negotiated Power Level Change
+  - Supported Provider Capabilities Change
+  - Negotiated Power Level Change
 - GET\_CONNECTOR\_STATUS: The system or controller must support these connector status changes within GET\_CONNECTOR\_STATUS:
-    - Supported Provider Capabilities Change
-    - Negotiated Power Level Change
+  - Supported Provider Capabilities Change
+  - Negotiated Power Level Change
 
 For information about the tasks required to implement UCSI in the BIOS, see [Intel BIOS Implementation of UCSI](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/bios-implementation-of-ucsi.html).
 
@@ -77,7 +77,7 @@ The examples given in this section describe interaction between the USB Type-C h
     1. The firmware sends a notification indicating a change in the connector.
     1. The UCSI driver sends a ​ GET\_CONNECTOR\_STATUS request.
     1. The firmware responds with Connect Status = 1​, Connector Partner Type=DFP, and Battery Charging Status = Slow/Trickle.
-    
+
 1. The USB connector manager class extension sends notification to the UI to display the charger mismatch troubleshoot message.
 
 ## How to test UCSI
@@ -106,14 +106,14 @@ Here are the common commands:
 | UCSI command | UcsiControl.exe command |
 |--|--|
 | PPM Reset | **UcsiControl.exe Send 0 1** |
-| Connector Reset | Soft reset: **UcsiControl.exe Send 0 10003** </br></br> Hard reset: **UcsiControl.exe Send 0 810003** |
-| Set Notification Enable | All notifications: **UcsiControl.exe Send 0 ffff0005** </br></br> Only command completion: **UcsiControl.exe Send 0 00010005** </br></br> No notification: **UcsiControl.exe Send 0 00000005** |
+| Connector Reset | Soft reset: **UcsiControl.exe Send 0 10003** <br/><br/> Hard reset: **UcsiControl.exe Send 0 810003** |
+| Set Notification Enable | All notifications: **UcsiControl.exe Send 0 ffff0005** <br/><br/> Only command completion: **UcsiControl.exe Send 0 00010005** <br/><br/> No notification: **UcsiControl.exe Send 0 00000005** |
 | Get Capability | **UcsiControl.exe Send 0 6** |
 | Get Connector Capability | **UcsiControl.exe Send 0 10007** |
-| Set UOM | DFP: **UcsiControl.exe Send 0 810008** </br></br> UFP: **UcsiControl.exe Send 0 1010008** </br></br> DRP: **UcsiControl.exe Send 0 2010008** |
-| Set UOR | DFP: **UcsiControl.exe Send 0 810009** </br></br> UFP: **UcsiControl.exe Send 0 1010009** </br></br> Accept: **UcsiControl.exe Send 0 2010009** |
-| Set PDR | Provider: **UcsiControl.exe Send 0 81000B** </br></br> Consumer: **UcsiControl.exe Send 0 101000B** </br></br> Accept: **UcsiControl.exe Send 0 201000B** |
-| Get PDOs | Local Source: **UcsiControl.exe Send 7 00010010** </br></br> Local Sink: **UcsiControl.exe Send 3 00010010** </br></br> Remote Source: **UcsiControl.exe Send 7 00810010** </br></br> Remote Sink: **UcsiControl.exe Send 3 00810010** |
+| Set UOM | DFP: **UcsiControl.exe Send 0 810008** <br/><br/> UFP: **UcsiControl.exe Send 0 1010008** <br/><br/> DRP: **UcsiControl.exe Send 0 2010008** |
+| Set UOR | DFP: **UcsiControl.exe Send 0 810009** <br/><br/> UFP: **UcsiControl.exe Send 0 1010009** <br/><br/> Accept: **UcsiControl.exe Send 0 2010009** |
+| Set PDR | Provider: **UcsiControl.exe Send 0 81000B** <br/><br/> Consumer: **UcsiControl.exe Send 0 101000B** <br/><br/> Accept: **UcsiControl.exe Send 0 201000B** |
+| Get PDOs | Local Source: **UcsiControl.exe Send 7 00010010** <br/><br/> Local Sink: **UcsiControl.exe Send 3 00010010** <br/><br/> Remote Source: **UcsiControl.exe Send 7 00810010** <br/><br/> Remote Sink: **UcsiControl.exe Send 3 00810010** |
 | Get Connector Status | **UcsiControl.exe Send 0 010012** |
 | Get Error Status | **UcsiControl.exe Send 0 13** |
 
@@ -122,4 +122,4 @@ Here are the common commands:
 - [Architecture: USB Type-C design for a Windows system](architecture--usb-type-c-in-a-windows-system.md)
 - [Intel BIOS Implementation of UCSI](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/bios-implementation-of-ucsi.html)
 - [USB Type-C Connector System Software Interface Specification](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/usb-type-c-ucsi-spec.html)
-- [Hardware design: USB Type-C components for systems with embedded controllers](hardware-design-of-a-usb-type-c-system.md#emb)
+- [Hardware design: USB Type-C components for systems with embedded controllers](hardware-design-of-a-usb-type-c-system.md#usb-type-c-system-design-with-an-embedded-controller)
