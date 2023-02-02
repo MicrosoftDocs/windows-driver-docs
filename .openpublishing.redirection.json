@@ -1,6 +1,16 @@
 {
     "redirections": [
         {
+            "source_path": "windows-driver-docs-pr/wdf/framework-queue-objects.md",
+            "redirect_URL": "/windows-hardware/drivers/wdf/creating-i-o-queues",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/wdf/framework-request-objects.md",
+            "redirect_URL": "/windows-hardware/drivers/wdf/building-and-loading-a-kmdf-driver",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/wdf/building--installing--and-testing-a-wdf-driver.md",
             "redirect_URL": "/windows-hardware/drivers/wdf/building-and-loading-a-kmdf-driver",
             "redirect_document_id": false

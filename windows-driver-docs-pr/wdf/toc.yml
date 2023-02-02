@@ -36,21 +36,9 @@
     href: creating-device-objects-in-a-bus-driver.md
   - name: "Reporting Device Failures"
     href: reporting-device-failures.md
-  - name: "Creating WDF HID Minidrivers"
-    href: creating-umdf-hid-minidrivers.md
-  - name: "Framework File Objects"
-    href: framework-file-objects.md
-  - name: "Handling Client Impersonation in UMDF Drivers"
-    href: handling-client-impersonation-in-umdf-drivers.md
-  - name: "Host Process Timeouts in UMDF"
-    href: how-umdf-enforces-time-outs.md
-  - name: "Supporting Kernel-Mode Clients in UMDF Drivers"
-    href: supporting-kernel-mode-clients-in-umdf-drivers.md
-  - name: "Using Activity Identifiers"
-    href: using-activity-identifiers.md
   - name: "Controlling Device Access in KMDF Drivers"
     href: controlling-device-access-in-kmdf-drivers.md
-- name: "Objects"
+- name: "WDF Objects"
   items: 
   - name: "Introduction to Framework Objects"
     href: introduction-to-framework-objects.md
@@ -72,18 +60,6 @@
     href: framework-object-collections.md
   - name: "Summary of Framework Objects"
     href: summary-of-framework-objects.md
-  - name: "Using Memory Buffers"
-    href: using-memory-buffers.md
-  - name: "Memory Buffer Life Cycle"
-    href: memory-buffer-life-cycle.md
-  - name: "Using Timers"
-    href: using-timers.md
-  - name: "Using String Objects"
-    href: using-string-objects.md
-  - name: "Using Framework Work Items"
-    href: using-framework-work-items.md
-  - name: "Using Device Interfaces"
-    href: using-device-interfaces.md
   - name: "WDF General Object Macros"
     items: 
     - name: "WDF_DECLARE_CONTEXT_TYPE"
@@ -184,38 +160,68 @@
     href: supporting-idle-power-down-on-multiple-component-devices.md
 - name: "Handling I/O Requests"
   items: 
+  - name: "Creating WDF HID Minidrivers"
+    href: creating-umdf-hid-minidrivers.md
+  - name: "Framework File Objects"
+    href: framework-file-objects.md
+  - name: "Framework Queue Objects"
+    items: 
+    - name: "Creating I/O Queues"
+      href: creating-i-o-queues.md
+    - name: "Dispatching Methods for I/O Requests"
+      href: dispatching-methods-for-i-o-requests.md
+    - name: "Request Handlers"
+      href: request-handlers.md
+    - name: "Deleting I/O Queues"
+      href: deleting-i-o-queues.md
+    - name: "Managing I/O Queues"
+      href: managing-i-o-queues.md
+    - name: "Using Power-Managed I/O Queues"
+      href: using-power-managed-i-o-queues.md
+    - name: "I/O Queue States"
+      href: i-o-queue-states.md
+    - name: "Example Uses of I/O Queues"
+      href: example-uses-of-i-o-queues.md
   - name: "Framework Request Objects"
-    href: framework-request-objects.md
-  - name: "Creating Framework Request Objects"
-    href: creating-framework-request-objects.md
-  - name: "Using Request Object Context"
-    href: using-request-object-context.md
-  - name: "Request Ownership"
-    href: request-ownership.md
-  - name: "Processing I/O Requests"
-    href: processing-i-o-requests.md
-  - name: "Receiving I/O Requests"
-    href: receiving-i-o-requests.md
-  - name: "Requeuing I/O Requests"
-    href: requeuing-i-o-requests.md
-  - name: "Completing I/O Requests"
-    href: completing-i-o-requests.md
-  - name: "Canceling I/O Requests"
-    href: canceling-i-o-requests.md
-  - name: "Synchronizing Cancel and Completion Code"
-    href: synchronizing-cancel-and-completion-code.md
-  - name: "Synchronizing Cancellation of Sent Requests"
-    href: synchronizing-cancellation-of-sent-requests.md
-  - name: "Forwarding I/O Requests"
-    href: forwarding-i-o-requests.md
-  - name: "Obtaining Information About an I/O Request"
-    href: obtaining-information-about-an-i-o-request.md
-  - name: "Accessing Data Buffers in WDF Drivers (KMDF or UMDF)"
-    href: accessing-data-buffers-in-wdf-drivers.md
-  - name: "Managing Buffer Access Methods in UMDF Drivers"
-    href: managing-buffer-access-methods-in-umdf-drivers.md
-  - name: "Reusing Framework Request Objects"
-    href: reusing-framework-request-objects.md
+    items: 
+    - name: "Creating Framework Request Objects"
+      href: creating-framework-request-objects.md
+    - name: "Using Request Object Context"
+      href: using-request-object-context.md
+    - name: "Request Ownership"
+      href: request-ownership.md
+    - name: "Processing I/O Requests"
+      href: processing-i-o-requests.md
+    - name: "Receiving I/O Requests"
+      href: receiving-i-o-requests.md
+    - name: "Requeuing I/O Requests"
+      href: requeuing-i-o-requests.md
+    - name: "Completing I/O Requests"
+      href: completing-i-o-requests.md
+    - name: "Canceling I/O Requests"
+      href: canceling-i-o-requests.md
+    - name: "Synchronizing Cancel and Completion Code"
+      href: synchronizing-cancel-and-completion-code.md
+    - name: "Synchronizing Cancellation of Sent Requests"
+      href: synchronizing-cancellation-of-sent-requests.md
+    - name: "Forwarding I/O Requests"
+      href: forwarding-i-o-requests.md
+    - name: "Obtaining Information About an I/O Request"
+      href: obtaining-information-about-an-i-o-request.md
+    - name: "Accessing Data Buffers in WDF Drivers (KMDF or UMDF)"
+      href: accessing-data-buffers-in-wdf-drivers.md
+    - name: "Managing Buffer Access Methods in UMDF Drivers"
+      href: managing-buffer-access-methods-in-umdf-drivers.md
+    - name: "Reusing Framework Request Objects"
+      href: reusing-framework-request-objects.md
+  - name: "Handling Client Impersonation in UMDF Drivers"
+    href: handling-client-impersonation-in-umdf-drivers.md
+  - name: "Host Process Timeouts in UMDF"
+    href: how-umdf-enforces-time-outs.md
+  - name: "Supporting Kernel-Mode Clients in UMDF Drivers"
+    href: supporting-kernel-mode-clients-in-umdf-drivers.md
+  - name: "Using Activity Identifiers"
+    href: using-activity-identifiers.md
 - name: "I/O Targets"
   items: 
   - name: "Using I/O Targets"
@@ -244,12 +250,34 @@
     href: working-with-usb-interfaces.md
   - name: "Working with USB Pipes"
     href: working-with-usb-pipes.md
-- name: "Synchronization"
+- name: "Synchronization Techniques"
   items: 
   - name: "Using Automatic Synchronization"
     href: using-automatic-synchronization.md
   - name: "Using Framework Locks"
     href: using-framework-locks.md
+- name: "WDF Support Objects"
+  items: 
+  - name: "Using Memory Buffers"
+    href: using-memory-buffers.md
+  - name: "Memory Buffer Life Cycle"
+    href: memory-buffer-life-cycle.md
+  - name: "Using Timers"
+    href: using-timers.md
+  - name: "Using String Objects"
+    href: using-string-objects.md
+  - name: "Using Framework Work Items"
+    href: using-framework-work-items.md
+  - name: "Using Device Interfaces"
+    href: using-device-interfaces.md
+  - name: "Using the Registry in WDF Drivers"
+    items: 
+    - name: "Introduction to Registry Keys for Drivers"
+      href: introduction-to-registry-keys-for-drivers.md
+    - name: "Using Framework Registry-Key Objects"
+      href: using-framework-registry-key-objects.md
+    - name: "Accessing the Unified Device Property Model"
+      href: accessing-the-unified-device-property-model.md
 - name: "Accessing Hardware"
   items: 
   - name: "Handling Hardware Resources"
@@ -274,7 +302,7 @@
     href: reading-and-writing-to-device-registers.md
   - name: "Driver Access to Hardware"
     href: driver-access-to-hardware.md
-- name: "Interrupts"
+- name: "Handling Hardware Interrupts"
   items: 
   - name: "Creating an Interrupt Object"
     href: creating-an-interrupt-object.md
@@ -290,7 +318,7 @@
     href: using-an-interrupt-to-wake-a-device.md
   - name: "Handling Active-Both Interrupts"
     href: handling-active-both-interrupts.md
-- name: "DMA"
+- name: "Handling DMA Operations in KMDF Drivers"
   items: 
   - name: "Introduction to DMA in Windows Driver Framework"
     href: introduction-to-dma-in-windows-driver-framework.md
@@ -374,7 +402,7 @@
     href: how-umdf-handles-application-failures.md
   - name: "How UMDF Reports Errors"
     href: how-umdf-reports-errors.md
-- name: "Debugging"
+- name: "Debugging WDF Drivers"
   items: 
   - name: "Accessing UMDF Metadata in WER Reports"
     href: accessing-umdf-metadata-in-wer-reports.md
@@ -428,7 +456,7 @@
     href: debugging-kernel-mode-driver-framework-drivers.md
   - name: "Videos: Debugging UMDF Drivers"
     href: videos--debugging-umdf-drivers.md
-- name: "Porting"
+- name: "Porting from WDM to WDF"
   items: 
   - name: "Porting a Driver from WDM to WDF"
     href: wdf-porting-guide.md
@@ -476,34 +504,6 @@
     href: wdm-equivalents-for-kmdf-buffer-pointers.md
   - name: "WDM IRPs and WDF Event Callback Functions"
     href: wdm-irps-and-kmdf-event-callback-functions.md
-- name: "Queues"
-  items: 
-  - name: "Framework Queue Objects"
-    href: framework-queue-objects.md
-  - name: "Creating I/O Queues"
-    href: creating-i-o-queues.md
-  - name: "Dispatching Methods for I/O Requests"
-    href: dispatching-methods-for-i-o-requests.md
-  - name: "Request Handlers"
-    href: request-handlers.md
-  - name: "Deleting I/O Queues"
-    href: deleting-i-o-queues.md
-  - name: "Managing I/O Queues"
-    href: managing-i-o-queues.md
-  - name: "Using Power-Managed I/O Queues"
-    href: using-power-managed-i-o-queues.md
-  - name: "I/O Queue States"
-    href: i-o-queue-states.md
-  - name: "Example Uses of I/O Queues"
-    href: example-uses-of-i-o-queues.md
-- name: "Registry"
-  items: 
-  - name: "Introduction to Registry Keys for Drivers"
-    href: introduction-to-registry-keys-for-drivers.md
-  - name: "Using Framework Registry-Key Objects"
-    href: using-framework-registry-key-objects.md
-  - name: "Accessing the Unified Device Property Model"
-    href: accessing-the-unified-device-property-model.md
 - name: "KMDF specific"
   items: 
   - name: "Using Kernel-Mode Driver Framework with Non-PnP Drivers"
