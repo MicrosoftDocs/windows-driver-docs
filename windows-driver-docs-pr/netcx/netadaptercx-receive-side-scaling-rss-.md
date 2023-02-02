@@ -73,7 +73,7 @@ The method of assigning index entries to hardware receive queues depends on the 
 
 ## Heterogeneous CPU Support
 
-Heterogenous CPU systems use multiple types of cores that have different clock speeds and functionalities. Compared to homogeneous CPU systems where every core is identical to each other, heterogeneous CPU systems can better adjust to dynamic computing loads and use less energy.
+Heterogenous CPU systems use multiple types of cores that have different clock speeds and functionalities. Compared to homogeneous-multiprocessor systems where every core is identical to one another, heterogeneous CPU systems can better adjust to dynamic computing loads and use less energy.
 
 NetAdapterCx efficiently utilizes the CPUs on heterogeneous CPU systems. While RSS is running, the system decides which processor to use depending on the traffic workload received by the client driver. When there is less traffic being received, smaller, more power efficient cores can handle the traffic. When there is more traffic, larger, more performant cores are required to continuously poll the packets being received.
 
