@@ -40,7 +40,7 @@ Example device definition (excluding vendor specific information necessary to de
 The specified UUID (`daffd814-6eba-4d8c-8a91-bc9bbf4aa301`) **must** be used, and the entry `SerCx-FriendlyName` must be defined for SerCx/SerCx2 to create the device interface.
 
 ### Registry Key
-For development purposes, the `SerCxFriendlyName` may also be configured as a property in the device's hardware key in the registry. The `CM_Open_DevNode_Key` method may be used to access the device's [hardware key](https://learn.microsoft.com/en-us/windows-hardware/drivers/install/opening-a-device-s-hardware-key) and add the property `SerCxFriendlyName` to the device, which is used by SerCx/SerCx2 to retrieve the friendly name for the device interface.
+For development purposes, the `SerCxFriendlyName` may also be configured as a property in the device's hardware key in the registry. The `CM_Open_DevNode_Key` method may be used to access the device's [hardware key](/windows-hardware/drivers/install/opening-a-device-s-hardware-key) and add the property `SerCxFriendlyName` to the device, which is used by SerCx/SerCx2 to retrieve the friendly name for the device interface.
 
 It is not recommended to set this key via an extension INF - it is provided primarily for testing and development purposes. The recommended approach is to enable the feature via ACPI as documented above.
 
