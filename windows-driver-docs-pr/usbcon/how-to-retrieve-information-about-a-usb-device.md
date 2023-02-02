@@ -1,12 +1,12 @@
 ---
 title: USB hardware verifier (USB3HWVerifierAnalyzer.exe)
-description: This topic describes the USB hardware verifier tool (USB3HWVerifierAnalyzer.exe) that is used for testing and debugging specific hardware events.
-ms.date: 01/25/2023
+description: This article describes the USB hardware verifier tool (USB3HWVerifierAnalyzer.exe) that is used for testing and debugging specific hardware events.
+ms.date: 02/02/2023
 ---
 
 # USB hardware verifier (USB3HWVerifierAnalyzer.exe)
 
-This topic describes the USB hardware verifier tool (USB3HWVerifierAnalyzer.exe) that is used for testing and debugging specific hardware events.
+This article describes the USB hardware verifier tool (USB3HWVerifierAnalyzer.exe) that is used for testing and debugging specific hardware events.
 
 Most hardware issues manifest in ways that lead to poor end-user experience and it's often difficult to determine the exact failure. The USB hardware verifier aims at capturing hardware failures that occur in a device, port, hub, controller, or a combination of them.
 
@@ -16,7 +16,7 @@ The USB hardware verifier can perform these tasks:
 - Generate a trace file with information about all events.
 - Parse an existing trace file for event information.
 
-This topic contains the following sections:
+This article contains the following sections:
 
 - [Getting the USB hardware verifier analyzer tool](#getting-the-usb-hardware-verifier-analyzer-tool)
 - [How to capture events by using a USB hardware verifier](#how-to-capture-events-by-using-a-usb-hardware-verifier)
@@ -44,19 +44,28 @@ To capture events by using the hardware verifier, perform these steps:
    |---|---|
    | -v &lt;VendorID&gt; | Logs all hardware verifier events for the specified VendorID. |
    | -p &lt;ProductID&gt; | Logs all hardware verifier events for the specified ProductID. |
-   | -f &lt;ETL file&gt; | Parses the specified ETL file. Real-time parsing is not supported. With this option, the tool parses the file offline. |
+   | -f &lt;ETL file&gt; | Parses the specified ETL file. Real-time parsing isn't supported. With this option, the tool parses the file offline. |
    | /v output | Displays all events to the console. |
 
 1. Run the test scenario for which you want to capture hardware events.
 
    During a session, USB hardware verifier captures information about hardware events as they occur. If you want to filter events for a particular hardware, specify the VendorId and ProductId of the hardware. The tool might not capture some information (such as VID/PID) about events that occur before the device gets fully enumerated. The missing information is available in the detailed report that is generated at the end of the session (discussed next).
 
-   Here is an example output from the hardware verifier tool:
+   > [!NOTE]
+   > The AllEvents ETL file will always contain all ETW events for all devices. It is not affected by the **-v** and **-p** switches.
+
+   Here's the command line to filter by VerndorId and ProductId:
 
    ```console
-   Session Name : TraceSessionWedJun062021182012
+   USB3HWVerifierAnalyzer.exe -v 0781 -p 5595
+   ```
 
-   Attempting to start session TraceSessionWedJun062021182012...
+   Here's an example output from the hardware verifier tool:
+
+   ```console
+   Session Name : TraceSessionFriJan271351112023
+
+   Attempting to start session TraceSessionFriJan271351112023...
    Trace Session created...Status : 0
 
    Provider Enable Success, Status : 0
@@ -68,39 +77,16 @@ To capture events by using the hardware verifier, perform these steps:
    Provider Enable Success, Status : 0
 
    Provider Enable Success, Status : 0
-   12983512883.067484s: (UsbHub3/176):
-           Event Message:DescriptorValidationError20HubPortPwrCtrlMaskZero
-           VendorID/ProductID: 0x451/0x2077
-           DeviceInterfacePath: \??\USB#VID_0451&PID_2077#6&c4be011&0&2#{f18a0e88-c30c-11d0-8815-00a0c906bed8}
-           DeviceDescription: Generic USB Hub
-           PortPath:  0x2, 0x0, 0x0, 0x0, 0x0, 0x0
-   12983512888.452400s: (UsbHub3/173)
-           Event Message: SuperSpeed Device is Connected on the 2.0 Bus:
-           PortPath:  0x2, 0x4, 0x0, 0x0, 0x0, 0x0
-   12983512900.098652s: (UsbHub3/176):
-           Event Message:DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
-           PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
-   12983512900.098654s: (UsbHub3/176):
-           Event Message:DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
-           PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
-   12983512900.098656s: (UsbHub3/176):
-           Event Message:DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
-           PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
-   12983512900.098658s: (UsbHub3/176):
-           Event Message:DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
-           PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
-   12983512900.098658s: (UsbHub3/176):
-           Event Message:DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
-           PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
-   12983512900.098660s: (UsbHub3/176):
-           Event Message:DescriptorValidationErrorCompanionIsochEndpointWBytesPerIntervalTooLarge
-           PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
-   12983512900.099415s: (UsbHub3/176):
-           Event Message:DescriptorValidationErrorStringMismatchBetweenBlengthAndBufferLength
-           PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
-   12983512900.100168s: (UsbHub3/176):
-           Event Message:DescriptorValidationErrorStringMismatchBetweenBlengthAndBufferLength
-           PortPath:  0x3, 0x0, 0x0, 0x0, 0x0, 0x0
+
+   Provider Enable Success, Status : 0
+   13319329877.425596: (UsbHub3/179)
+           Event Message: Client Initiated Recovery Action
+           VendorID/ProductID: 0x5e3/0x612
+           DeviceInterfacePath: \??\USB#VID_05E3&PID_0612#6&130491ac&0&4#{f18a0e88-c30c-11d0-8815-00a0c906bed8}
+           DeviceDescription: Generic SuperSpeed USB Hub
+           PortPath:  0x12, 0x4, 0x0, 0x0, 0x0, 0x0
+
+   Provider disable Success, Status : 0
 
    Provider disable Success, Status : 0
 
@@ -174,9 +160,9 @@ To capture events by using the hardware verifier, perform these steps:
    USB3HWVerifierAnalyzer.exe -f AllEvents.etl /v > Output.txt 
    ```
 
-   In the output file, search for the previously noted **Key** values. The values are associated with one of these fields: **fid\_UcxController**, **fid\_HubDevice**, and **fid\_UsbDevice**.
+   In the output file, search for the previously noted **Key** values. The values are associated with one of these fields: **fid_UcxController**, **fid_HubDevice**, and **fid_UsbDevice**.
 
-1. Open AllEvents.etl in Netmon and select **Add &lt;field\_name&gt; to display filter** to filter events by controller, hub, and device.
+1. Open AllEvents.etl in Netmon and select **Add &lt;field_name&gt; to display filter** to filter events by controller, hub, and device. For more information, see [How to install Netmon and USB ETW parsers](how-to-retrieve-information-about-a-usb-device.md).
 
 ## USB hardware verifier flags
 
@@ -185,25 +171,25 @@ To capture events by using the hardware verifier, perform these steps:
 | DeviceHwVerifierClientInitiatedResetPipe | The client driver initiated a recovery action by resetting a particular pipe in response to I/O failures. Certain client drivers might perform error recovery in other scenarios. |
 | DeviceHwVerifierClientInitiatedResetPort | The client driver initiated a recovery action by resetting the device in response to I/O failures. Certain client drivers might perform error recovery in other scenarios. |
 | DeviceHwVerifierClientInitiatedCyclePort | The client driver initiated a recovery action by cycling the port. This flag causes the Plug and Play Manager to re-enumerate the device. |
-| DeviceHwVerifierSetIsochDelayFailure | A USB 3.0 device failed the SET\_ISOCH\_DELAY request. The device can fail the request because either the driver does not require the request information or a transient error occurred. However, the driver cannot differentiate between those reasons. This error is not captured in the report. |
-| DeviceHwVerifierSetSelFailure | A USB 3.0 device failed the SET\_SEL request. The device uses the request information for Link Power Management (LPM). The device can fail the request because either the driver does not require the request information or a transient error occurred. However, the driver cannot differentiate between those reasons. This error is not captured in the report. |
+| DeviceHwVerifierSetIsochDelayFailure | A USB 3.0 device failed the SET_ISOCH_DELAY request. The device can fail the request because either the driver doesn't require the request information or a transient error occurred. However, the driver can't differentiate between those reasons. This error isn't captured in the report. |
+| DeviceHwVerifierSetSelFailure | A USB 3.0 device failed the SET_SEL request. The device uses the request information for Link Power Management (LPM). The device can fail the request because either the driver doesn't require the request information or a transient error occurred. However, the driver can't differentiate between those reasons. This error isn't captured in the report. |
 | DeviceHwVerifierSerialNumberMismatchOnRenumeration | The device reported a different serial number during re-enumeration as opposed to the one it reported during initial enumeration. A re-enumeration can occur as a result of a reset port or system resume operation. |
 | DeviceHwVerifierSuperSpeedDeviceWorkingAtLowerSpeed | The USB 3.0 device is operating a bus speed lower than SuperSpeed. |
-| DeviceHwVerifierControlTransferFailure | A control transfer failed to the device's default endpoint failed. The transfer can fail as a result of device or controller error. The hub logs indicate the USBD status code for the transfer failure. This flag excludes SET\_SEL and SET\_ISOCH\_DELAY control transfers failures. Those types of requests are covered by DeviceHwVerifierSetIsochDelayFailure and DeviceHwVerifierSetSelFailure flags. |
-| DeviceHwVerifierDescriptorValidationFailure | A descriptor returned by the device does not conform to the USB specification. The hub log indicates the exact error. |
-| DeviceHwVerifierInterfaceWakeCapabilityMismatch | The RemoteWake bit is incorrectly set in the device. USB 3.0 devices that support remote wake must also support function wake. There are two ways in which the device indicates its support for function wake. The first way is through the **bmAttributes** field of the configuration descriptor and the second way is in its response to the GET\_STATUS request targeted to the interface. For a non-composite device, the RemoteWake bit value must match the value returned by the GET\_STATUS request that is targeted to interface 0. For composite devices, the RemoteWake bit must be 1 for at least one of the functions. Otherwise, this flag indicates that the device reported contradictory values in here. |
+| DeviceHwVerifierControlTransferFailure | A control transfer failed to the device's default endpoint failed. The transfer can fail as a result of device or controller error. The hub logs indicate the USBD status code for the transfer failure. This flag excludes SET_SEL and SET_ISOCH_DELAY control transfers failures. Those types of requests are covered by DeviceHwVerifierSetIsochDelayFailure and DeviceHwVerifierSetSelFailure flags. |
+| DeviceHwVerifierDescriptorValidationFailure | A descriptor returned by the device doesn't conform to the USB specification. The hub log indicates the exact error. |
+| DeviceHwVerifierInterfaceWakeCapabilityMismatch | The RemoteWake bit is incorrectly set in the device. USB 3.0 devices that support remote wake must also support function wake. There are two ways in which the device indicates its support for function wake. The first way is through the **bmAttributes** field of the configuration descriptor and the second way is in its response to the GET_STATUS request targeted to the interface. For a non-composite device, the RemoteWake bit value must match the value returned by the GET_STATUS request that is targeted to interface 0. For composite devices, the RemoteWake bit must be 1 for at least one of the functions. Otherwise, this flag indicates that the device reported contradictory values in here. |
 | DeviceHwVerifierBusRenumeration | The device is re-enumerated on the bus. A re-enumeration can occur as a result of a reset port or system resume operation. Re-enumeration also occurs, when the device is disabled/enabled or stopped/started. |
-| HubHwVerifierTooManyResets | A hub has gone through too many reset operations within a short period. Even though those resets were successful, the hub is not processing requests and repeated errors occur. |
+| HubHwVerifierTooManyResets | A hub has gone through too many reset operations within a short period. Even though those resets were successful, the hub isn't processing requests and repeated errors occur. |
 | HubHwVerifierControlTransferFailure | A control transfer targeted to the hub's default endpoint failed. The transfer can fail as a result of device or controller error. The hub logs indicate the USBD status code for the failure. |
-| HubHwVerifierInterruptTransferFailure | A data transfer targeted to the hub's interrupt endpoint failed. The transfer can fail as a result of device or controller error. The hub logs indicate the USBD status code for the failure. If the transfer failed because of the request was canceled, the failure is not captured. |
-| HubHwVerifierNoSelectiveSuspendSupport | The RemoteWake bit is not set to 1 in the hub's configuration descriptor. |
-| HubHwVerifierPortResetTimeout | While enumerating or re-enumerating a device, the port-reset operation is timing out. A port change notification is not received indicating that the port-reset is complete. |
-| HubHwVerifierInvalidPortStatus | The port status of the target port is not valid as per the USB specification. Certain devices can cause the hub to report the invalid status. |
+| HubHwVerifierInterruptTransferFailure | A data transfer targeted to the hub's interrupt endpoint failed. The transfer can fail as a result of device or controller error. The hub logs indicate the USBD status code for the failure. If the transfer failed because of the request was canceled, the failure isn't captured. |
+| HubHwVerifierNoSelectiveSuspendSupport | The RemoteWake bit isn't set to 1 in the hub's configuration descriptor. |
+| HubHwVerifierPortResetTimeout | While enumerating or re-enumerating a device, the port-reset operation is timing out. A port change notification isn't received indicating that the port-reset is complete. |
+| HubHwVerifierInvalidPortStatus | The port status of the target port isn't valid as per the USB specification. Certain devices can cause the hub to report the invalid status. |
 | HubHwVerifierPortLinkStateSSInactive | The link between the target port and the downstream device is in an error state. |
-| HubHwVerifierPortLinkStateCompliance | The link between the target port and the downstream device is in compliance mode. In some scenarios involving system sleep-resume, the compliance mode error is expected and in those cases the failure is not captured. |
+| HubHwVerifierPortLinkStateCompliance | The link between the target port and the downstream device is in compliance mode. In some scenarios involving system sleep-resume, the compliance mode error is expected and in those cases the failure isn't captured. |
 | HubHwVerifierPortDeviceDisconnected | The downstream device on the target port is no longer connected to the bus. |
 | HubHwVerifierPortOverCurrent | The downstream port reported overcurrent state. |
-| HubHwVerifierControllerOperationFailure | A controller operation (such as enabling device, configuring endpoints) failed for the device that is attached to the target port. Failures from SET\_ADDRESS and Reset endpoint requests are not captured. |
+| HubHwVerifierControllerOperationFailure | A controller operation (such as enabling device, configuring endpoints) failed for the device that is attached to the target port. Failures from SET_ADDRESS and Reset endpoint requests aren't captured. |
 
 ## Related topics
 
