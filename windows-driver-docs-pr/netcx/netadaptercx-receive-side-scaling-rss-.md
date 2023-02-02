@@ -75,8 +75,11 @@ The method of assigning index entries to hardware receive queues depends on the 
 
 Heterogenous CPU systems use multiple types of cores that have different clock speeds and functionalities. Compared to homogeneous-multiprocessor systems where every core is identical to one another, heterogeneous CPU systems can better adjust to dynamic computing loads and use less energy.
 
-NetAdapterCx efficiently utilizes the CPUs on heterogeneous CPU systems. While RSS is running, the system decides which processor to use depending on the traffic workload received by the client driver. When there is less traffic being received, smaller, more power efficient cores can handle the traffic. When there is more traffic, larger, more performant cores are required to continuously poll the packets being received.
+NetAdapterCx offers heterogenous CPU system support by efficiently utilizing the various core types. While RSS is running, the system decides which processor to use depending on the traffic workload received by the client driver. When there is less traffic being received, smaller, more power efficient cores can handle the traffic. When there is more traffic, larger, more performant cores are required to continuously poll the packets being received.
 
-To enable heterogenous CPU system support, the system administrator must set the **\*RSSProfile** [standardized INF keyword](../network/standardized-inf-keywords-for-rss.md) to **NdisRssProfileBalanced**. In homogeneous CPU systems, the system administrator uses configurable advanced RSS keywords to spread the traffic across a fixed set of CPUs. In heterogenous CPU systems, these advanced keywords are not configurable when **NdisRssProfileBalanced** is set in order to allow the system to decide the best cores to use. 
+To opt in to heterogenous system support, the system administrator must set the **\*RSSProfile** [standardized INF keyword](../network/standardized-inf-keywords-for-rss.md) to **NdisRssProfileBalanced**. This is the default profile for heterogenous systems. To allow the system to decide the best cores to use, you won't be able to set RSS advanced keywords. 
 
+The other RSS profiles are also supported for heterogenous systems. If you want to control advanced settings like the RSS base processor number and RSS max processor number on the system, you should use a different RSS profile.
+
+You can also use **NdisRssProfileBalanced** on a homogeneous CPU system. In this case, the system will decide which processors to use for RSS.
 
