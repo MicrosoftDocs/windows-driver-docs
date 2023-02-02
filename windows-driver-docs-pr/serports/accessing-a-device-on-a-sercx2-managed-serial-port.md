@@ -21,11 +21,11 @@ SerCx2 and a serial controller driver jointly manage a serial port to which a pe
 
 - [SerCx2 Handling of Read and Write Requests](sercx2-handling-of-read-and-write-requests.md)
 
-    A peripheral driver sends write ([**IRP_MJ_WRITE**](/previous-versions/ff546904(v=vs.85))) and read ([**IRP_MJ_READ**](/previous-versions/ff546883(v=vs.85))) requests to a port on a serial controller to transfer data to and from a peripheral device that is connected to the port. The way in which SerCx2 handles these requests is well-defined, even when the requests time out or are canceled.
+    A peripheral driver sends write ([**IRP_MJ_WRITE**](/windows-hardware/drivers/kernel/irp-mj-write)) and read ([**IRP_MJ_READ**](/windows-hardware/drivers/kernel/irp-mj-read)) requests to a port on a serial controller to transfer data to and from a peripheral device that is connected to the port. The way in which SerCx2 handles these requests is well-defined, even when the requests time out or are canceled.
 
 - [Reading Data from a SerCx2-Managed Serial Port](reading-data-from-a-sercx2-managed-serial-port.md)
 
-    A serial controller (or UART) typically includes a receive FIFO. This FIFO provides hardware-controlled buffering of data received from the peripheral device that is connected to the serial port. To read data from the receive FIFO, the peripheral driver for this device sends read ([**IRP_MJ_READ**](/previous-versions/ff546883(v=vs.85))) requests to the serial port.
+    A serial controller (or UART) typically includes a receive FIFO. This FIFO provides hardware-controlled buffering of data received from the peripheral device that is connected to the serial port. To read data from the receive FIFO, the peripheral driver for this device sends read ([**IRP_MJ_READ**](/windows-hardware/drivers/kernel/irp-mj-read)) requests to the serial port.
 
 - [Device Interface publication for a SerCx or SerCx2-managed Serial Port](device-interface-publication-sercx.md)
 
