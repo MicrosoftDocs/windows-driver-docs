@@ -1,7 +1,7 @@
 ---
 title: USB hardware verifier (USB3HWVerifierAnalyzer.exe)
 description: This article describes the USB hardware verifier tool (USB3HWVerifierAnalyzer.exe) that is used for testing and debugging specific hardware events.
-ms.date: 01/25/2023
+ms.date: 02/02/2023
 ---
 
 # USB hardware verifier (USB3HWVerifierAnalyzer.exe)
@@ -57,7 +57,7 @@ To capture events by using the hardware verifier, perform these steps:
    Here's the command line to filter by VerndorId and ProductId:
 
    ```console
-   usb3hwverifieranalyzer.exe -v 0781 -p 5595
+   USB3HWVerifierAnalyzer.exe -v 0781 -p 5595
    ```
 
    Here's an example output from the hardware verifier tool:
