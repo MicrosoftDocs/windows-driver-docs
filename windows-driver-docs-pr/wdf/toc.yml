@@ -1,7 +1,6 @@
 - name: "What's New for WDF Drivers"
   href: index.md
 - name: "Concepts"
-# Auto-expanded node
   items: 
   - name: "Using WDF to Develop a Driver"
     href: using-the-framework-to-develop-a-driver.md
@@ -96,7 +95,6 @@
   - name: "Controlling Device Access in KMDF Drivers"
     href: controlling-device-access-in-kmdf-drivers.md
 - name: "Debugging"
-# Auto-expanded node
   items: 
   - name: "Accessing UMDF Metadata in WER Reports"
     href: accessing-umdf-metadata-in-wer-reports.md
@@ -151,7 +149,6 @@
   - name: "Videos: Debugging UMDF Drivers"
     href: videos--debugging-umdf-drivers.md
 - name: "DMA"
-# Auto-expanded node
   items: 
   - name: "Introduction to DMA in Windows Driver Framework"
     href: introduction-to-dma-in-windows-driver-framework.md
@@ -192,7 +189,6 @@
   - name: "Testing DMA in KMDF Drivers"
     href: testing-dma-in-kmdf-drivers.md
 - name: "Accessing Hardware"
-# Auto-expanded node
   items: 
   - name: "Handling Hardware Resources"
     href: hardware-resources-for-kmdf-drivers.md
@@ -217,7 +213,6 @@
   - name: "Driver Access to Hardware"
     href: driver-access-to-hardware.md
 - name: "Interrupts"
-# Auto-expanded node
   items: 
   - name: "Creating an Interrupt Object"
     href: creating-an-interrupt-object.md
@@ -234,7 +229,6 @@
   - name: "Handling Active-Both Interrupts"
     href: handling-active-both-interrupts.md
 - name: "I/O Targets"
-# Auto-expanded node
   items: 
   - name: "Using I/O Targets"
     href: using-i-o-targets.md
@@ -263,7 +257,6 @@
   - name: "Working with USB Pipes"
     href: working-with-usb-pipes.md
 - name: "Objects"
-# Auto-expanded node
   items: 
   - name: "Introduction to Framework Objects"
     href: introduction-to-framework-objects.md
@@ -298,7 +291,6 @@
   - name: "Using Device Interfaces"
     href: using-device-interfaces.md
   - name: "WDF General Object Macros"
-# Auto-expanded node
     items: 
     - name: "WDF_DECLARE_CONTEXT_TYPE"
       href: wdf-declare-context-type.md
@@ -337,7 +329,6 @@
   - name: "Framework Object Creation Errors"
     href: framework-object-creation-errors.md
 - name: "PnP and Power Management"
-# Auto-expanded node
   items: 
   - name: "Supporting PnP and Power Management in Your Driver"
     href: supporting-pnp-and-power-management-in-your-driver.md
@@ -376,7 +367,6 @@
   - name: "Handling Requests to Stop a Device"
     href: handling-requests-to-stop-a-device.md
 - name: "Power Policy"
-# Auto-expanded node
   items: 
   - name: "Power Policy Ownership"
     href: power-policy-ownership.md
@@ -399,7 +389,6 @@
   - name: "Supporting Idle Power-Down on Multiple-Component Devices"
     href: supporting-idle-power-down-on-multiple-component-devices.md
 - name: "Porting"
-# Auto-expanded node
   items: 
   - name: "Porting a Driver from WDM to WDF"
     href: wdf-porting-guide.md
@@ -448,7 +437,6 @@
   - name: "WDM IRPs and WDF Event Callback Functions"
     href: wdm-irps-and-kmdf-event-callback-functions.md
 - name: "Queues"
-# Auto-expanded node
   items: 
   - name: "Framework Queue Objects"
     href: framework-queue-objects.md
@@ -469,7 +457,6 @@
   - name: "Example Uses of I/O Queues"
     href: example-uses-of-i-o-queues.md
 - name: "Registry"
-# Auto-expanded node
   items: 
   - name: "Introduction to Registry Keys for Drivers"
     href: introduction-to-registry-keys-for-drivers.md
@@ -478,7 +465,6 @@
   - name: "Accessing the Unified Device Property Model"
     href: accessing-the-unified-device-property-model.md
 - name: "Requests"
-# Auto-expanded node
   items: 
   - name: "Framework Request Objects"
     href: framework-request-objects.md
@@ -513,14 +499,12 @@
   - name: "Reusing Framework Request Objects"
     href: reusing-framework-request-objects.md
 - name: "Synchronization"
-# Auto-expanded node
   items: 
   - name: "Using Automatic Synchronization"
     href: using-automatic-synchronization.md
   - name: "Using Framework Locks"
     href: using-framework-locks.md
 - name: "KMDF specific"
-# Auto-expanded node
   items: 
   - name: "Using Kernel-Mode Driver Framework with Non-PnP Drivers"
     href: using-kernel-mode-driver-framework-with-non-pnp-drivers.md
@@ -575,7 +559,6 @@
   - name: "WDM Interface Restrictions"
     href: wdm-interface-restrictions.md
 - name: "UMDF specific"
-# Auto-expanded node
   items: 
   - name: "Getting Started with UMDF"
     href: getting-started-with-umdf-version-2.md
@@ -596,7 +579,6 @@
   - name: "Porting a Driver from UMDF 1 to UMDF 2"
     href: porting-a-driver-from-umdf-1-to-umdf-2.md
 - name: "UMDF 1"
-# Auto-expanded node
   items: 
   - name: "UMDF 1.x Design Guide"
     href: user-mode-driver-framework-design-guide.md
