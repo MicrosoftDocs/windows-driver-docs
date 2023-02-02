@@ -1,37 +1,16 @@
 - name: "What's New for WDF Drivers"
   href: index.md
-- name: "Overview"
+- name: "Concepts"
 # Auto-expanded node
   items: 
-  - name: "Getting Started with UMDF"
-    href: getting-started-with-umdf-version-2.md
-  - name: "User-Mode Driver Framework Frequently Asked Questions"
-    href: user-mode-driver-framework-frequently-asked-questions.yml
-  - name: "Advantages of Writing UMDF Drivers"
-    href: advantages-of-writing-umdf-drivers.md
-  - name: "Overview of UMDF"
-    href: overview-of-the-umdf.md
-  - name: "UMDF Driver Host Process"
-    href: umdf-driver-host-process.md
-  - name: "Architecture of UMDF"
-    href: detailed-view-of-the-umdf-architecture.md
-  - name: "Comparing UMDF 2.0 Functionality to KMDF"
-    href: comparing-umdf-2-0-functionality-to-kmdf.md
-  - name: "How to convert a KMDF driver to a UMDF 2.0 driver (and vice-versa)"
-    href: how-to-generate-a-umdf-driver-from-a-kmdf-driver.md
-  - name: "Porting a Driver from UMDF 1 to UMDF 2"
-    href: porting-a-driver-from-umdf-1-to-umdf-2.md
+  - name: "Using WDF to Develop a Driver"
+    href: using-the-framework-to-develop-a-driver.md
   - name: "Framework Library Versioning"
     href: framework-library-versioning.md
   - name: "KMDF Version History"
     href: kmdf-version-history.md
   - name: "UMDF Version History"
     href: umdf-version-history.md
-- name: "Concepts"
-# Auto-expanded node
-  items: 
-  - name: "Using WDF to Develop a Driver"
-    href: using-the-framework-to-develop-a-driver.md
   - name: "WDF Architecture"
     href: kernel-mode-driver-framework-architecture.md
   - name: "Writing a Simple WDF Driver"
@@ -595,6 +574,27 @@
     href: dispatching-irps-to-i-o-queues.md
   - name: "WDM Interface Restrictions"
     href: wdm-interface-restrictions.md
+- name: "UMDF specific"
+# Auto-expanded node
+  items: 
+  - name: "Getting Started with UMDF"
+    href: getting-started-with-umdf-version-2.md
+  - name: "User-Mode Driver Framework Frequently Asked Questions"
+    href: user-mode-driver-framework-frequently-asked-questions.yml
+  - name: "Advantages of Writing UMDF Drivers"
+    href: advantages-of-writing-umdf-drivers.md
+  - name: "Overview of UMDF"
+    href: overview-of-the-umdf.md
+  - name: "UMDF Driver Host Process"
+    href: umdf-driver-host-process.md
+  - name: "Architecture of UMDF"
+    href: detailed-view-of-the-umdf-architecture.md
+  - name: "Comparing UMDF 2.0 Functionality to KMDF"
+    href: comparing-umdf-2-0-functionality-to-kmdf.md
+  - name: "How to convert a KMDF driver to a UMDF 2.0 driver (and vice-versa)"
+    href: how-to-generate-a-umdf-driver-from-a-kmdf-driver.md
+  - name: "Porting a Driver from UMDF 1 to UMDF 2"
+    href: porting-a-driver-from-umdf-1-to-umdf-2.md
 - name: "UMDF 1"
 # Auto-expanded node
   items: 
