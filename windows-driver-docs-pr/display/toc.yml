@@ -45,6 +45,8 @@
       href: video-encoding-d3d12.md
     - name: "Enhanced barriers"
       href: enhanced-barriers.md
+    - name: "Hardware flip queue"
+      href: hardware-flip-queue.md
     - name: "IOMMU DMA remapping"
       href: iommu-dma-remapping.md
     - name: "Signaling a CPU event from KMD"
