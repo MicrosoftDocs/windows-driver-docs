@@ -1,13 +1,23 @@
 {
     "redirections": [
         {
+            "source_path": "windows-driver-docs-pr/wdf/using-i-o-targets.md",
+            "redirect_URL": "/windows-hardware/drivers/wdf/introduction-to-i-o-targets",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/wdf/hardware-resources-for-kmdf-drivers.md",
+            "redirect_URL": "/windows-hardware/drivers/wdf/introduction-to-hardware-resources",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/wdf/framework-queue-objects.md",
             "redirect_URL": "/windows-hardware/drivers/wdf/creating-i-o-queues",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/wdf/framework-request-objects.md",
-            "redirect_URL": "/windows-hardware/drivers/wdf/building-and-loading-a-kmdf-driver",
+            "redirect_URL": "/windows-hardware/drivers/wdf/creating-framework-request-objects",
             "redirect_document_id": false
         },
         {

@@ -160,8 +160,6 @@
     href: supporting-idle-power-down-on-multiple-component-devices.md
 - name: "Handling I/O Requests"
   items: 
-  - name: "Creating WDF HID Minidrivers"
-    href: creating-umdf-hid-minidrivers.md
   - name: "Framework File Objects"
     href: framework-file-objects.md
   - name: "Framework Queue Objects"
@@ -222,10 +220,10 @@
     href: supporting-kernel-mode-clients-in-umdf-drivers.md
   - name: "Using Activity Identifiers"
     href: using-activity-identifiers.md
-- name: "I/O Targets"
+  - name: "Creating WDF HID Minidrivers"
+    href: creating-umdf-hid-minidrivers.md
+- name: "Using I/O Targets"
   items: 
-  - name: "Using I/O Targets"
-    href: using-i-o-targets.md
   - name: "Introduction to I/O Targets"
     href: introduction-to-i-o-targets.md
   - name: "General I/O Targets"
@@ -270,18 +268,14 @@
     href: using-framework-work-items.md
   - name: "Using Device Interfaces"
     href: using-device-interfaces.md
-  - name: "Using the Registry in WDF Drivers"
-    items: 
-    - name: "Introduction to Registry Keys for Drivers"
-      href: introduction-to-registry-keys-for-drivers.md
-    - name: "Using Framework Registry-Key Objects"
-      href: using-framework-registry-key-objects.md
-    - name: "Accessing the Unified Device Property Model"
-      href: accessing-the-unified-device-property-model.md
-- name: "Accessing Hardware"
+  - name: "Introduction to Registry Keys for Drivers"
+    href: introduction-to-registry-keys-for-drivers.md
+  - name: "Using Framework Registry-Key Objects"
+    href: using-framework-registry-key-objects.md
+  - name: "Accessing the Unified Device Property Model"
+    href: accessing-the-unified-device-property-model.md
+- name: "Accessing Hardware Resources"
   items: 
-  - name: "Handling Hardware Resources"
-    href: hardware-resources-for-kmdf-drivers.md
   - name: "Introduction to Hardware Resources"
     href: introduction-to-hardware-resources.md
   - name: "Framework Objects for Hardware Resources"
