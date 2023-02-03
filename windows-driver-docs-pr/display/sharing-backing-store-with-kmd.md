@@ -21,7 +21,7 @@ A graphics allocation is created by calling [**D3DKMTCreateAllocation**](/window
 
 ## Checking for feature availability
 
-To check whether the backing store sharing feature is available, KMD must first call one of the following callbacks with **FeatureId** set to **DXGK_FEATURE_SHARE_BACKING_STORE_WITH_KMD**:
+To check whether the backing store sharing feature is available, KMD must first call one of the following callbacks with [**FeatureId**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_feature_id) set to **DXGK_FEATURE_SHARE_BACKING_STORE_WITH_KMD**:
 
 * [**DXGKCB_QUERYFEATURESUPPORT**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_queryfeaturesupport) (available starting in WDDM 2.9)
 * [**DXGKCB_ISFEATUREENABLED**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_isfeatureenabled)
