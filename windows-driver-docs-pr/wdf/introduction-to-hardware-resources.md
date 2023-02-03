@@ -10,6 +10,8 @@ ms.date: 04/20/2017
 
 # Introduction to Hardware Resources
 
+A system's hardware resources are the I/O ports, interrupt vectors, direct memory access (DMA) channels, and other communication paths that must be assigned to each device that is connected to the system. The topics in this section describe how Kernel-Mode Driver Framework (KMDF) drivers negotiate hardware resource requirements for a device, review the proposed resource list, and then receive the assigned resources. This section also discusses how both KMDF and User-Mode Driver Framework (UMDF) drivers access and map assigned resources.
+
 
 After a user plugs in a PnP device, the driver that [enumerates the device](enumerating-the-devices-on-a-bus.md) typically creates one or more [logical configurations](../kernel/hardware-resources.md#ddk-logical-configurations-kg), which are combinations of hardware resources that the device can use. These configurations include the following:
 
