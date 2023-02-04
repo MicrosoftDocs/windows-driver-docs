@@ -30,11 +30,11 @@ You can use these framework versions to build drivers for:
 
 Except where noted, UMDF references on this page describe version 2 functionality that is not available in version 1.
 
-## New in WDF for Windows 10, version 1803 (KMDF 1.25, UMDF 2.25)
+## Windows 10, version 1803 (KMDF 1.25, UMDF 2.25)
 
 - [Building a WDF driver for multiple versions of Windows](building-a-wdf-driver-for-multiple-versions-of-windows.md).
 
-## New in WDF for Windows 10, version 1703 (KMDF 1.21, UMDF 2.21)
+## Windows 10, version 1703 (KMDF 1.21, UMDF 2.21)
 
 - New WDF Verifier settings to detect excessive object creation
  
@@ -61,7 +61,7 @@ Except where noted, UMDF references on this page describe version 2 functionalit
 
     The SleepStudy software tool reports the number of power references that a KMDF driver has that are preventing the system from going to sleep.  For more info, see [Modern standby SleepStudy](/windows-hardware/design/device-experiences/modern-standby-sleepstudy).
 
-## New in WDF for Windows 10, version 1507 (KMDF 1.15, UMDF 2.15)
+## Windows 10, version 1507 (KMDF 1.15, UMDF 2.15)
 
 ### WDF source code is publicly available
 
