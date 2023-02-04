@@ -21,14 +21,14 @@ This topic summarizes new features and improvements that affect drivers using ei
 
 To learn about changes that are specific to only one framework, see [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md). 
 
-Windows 11 and Windows Server 2022 include Kernel-Mode Driver Framework (KMDF) version 1.33 and User-Mode Driver Framework (UMDF) version 2.33.
+Windows 11 and Windows Server 2022 include KMDF version 1.33 and UMDF version 2.33.
 
 You can use these framework versions to build drivers for:
 
 - Windows 10 and 11 (all SKUs)
 - Windows Server 2022
 
-Except where noted, UMDF references on this page describe version 2 functionality that is not available in UMDF version 1.
+Except where noted, UMDF references on this page describe version 2 functionality that is not available in version 1.
 
 ## New in WDF for Windows 10, version 1803 (KMDF 1.25, UMDF 2.25)
 
