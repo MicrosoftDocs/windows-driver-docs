@@ -41,47 +41,47 @@ For information about the new features for UMDF drivers in Windows 10, see [Wha
 
 For each UMDF version section below, the Windows version in which it was released is listed in parentheses.
 
-## 2.33 (Windows 11, version 21H2; Windows Server 2022)
+## UMDF 2.33 (Windows 11, version 21H2; Windows Server 2022)
 
 * For devices that specify **SystemManagedIdleTimeout** or **SystemManagedIdleTimeoutWithHint** in the [WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE](/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_power_policy_idle_timeout_type) enumeration, when calling the [**WdfDeviceStopIdle**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicestopidle) macro with *WaitForD0* set to **FALSE**, if the device is still in D0 and the idle timeout period has not yet elapsed, **WdfDeviceStopIdle** returns STATUS_SUCCESS (in previous versions this resulted in a return value of STATUS_PENDING).
 * [**WdfDeviceWdmAssignPowerFrameworkSettings**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicewdmassignpowerframeworksettings) function now supports UMDF.
 * [**WDF_POWER_FRAMEWORK_SETTINGS**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_power_framework_settings) structure has two new members (**PoFxDeviceFlags** and **DirectedPoFxEnabled**) and can now be used with UMDF. For UMDF, only the **Size**, **PoFxDeviceFlags**, and **DirectedPoFxEnabled** members are used. Other fields are ignored and must be set to zero. The framework does this automatically when a UMDF driver calls the [**WDF_POWER_FRAMEWORK_SETTINGS_INIT**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdf_power_framework_settings_init) function.
 
-## 2.31 (Windows 10, version 2004)
+## UMDF 2.31 (Windows 10, version 2004)
 
 * Added new API [**WdfDeviceSetDeviceInterfaceStateEx**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestateex)
 * Improved existing API [**WdfDeviceGetSystemPowerAction**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegetsystempoweraction)
 * Added per-driver **HostProcessDbgBreakOnDriverLoad** registry value. For info, see [Registry Values for Debugging WDF Drivers](./registry-values-for-debugging-kmdf-drivers.md).
 * [Introduction to the Directed Power Management Framework](../kernel/introduction-to-the-directed-power-management-framework.md)
 
-## 2.29 (Windows 10, version 1903)
+## UMDF 2.29 (Windows 10, version 1903)
 
 Unchanged from version 2.27.
 
-## 2.27 (Windows 10, version 1809)
+## UMDF 2.27 (Windows 10, version 1809)
 
 * Added new API [**WdfDriverRetrieveDriverDataDirectoryString**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverretrievedriverdatadirectorystring)
 
-## 2.25 (Windows 10, version 1803)
+## UMDF 2.25 (Windows 10, version 1803)
 
 * [**WdfDeviceRetrieveDeviceDirectoryString**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring)
 * See [What's New for WDF Drivers](./index.md)
 
-## 2.23 (Windows 10, version 1709)
+## UMDF 2.23 (Windows 10, version 1709)
 
 * Companion functionality added for internal use only.  For the new DDIs, see [Summary of WDF Callbacks and Methods](/windows-hardware/drivers/ddi/_wdf/).
 
-## 2.21 (Windows 10, version 1703)
+## UMDF 2.21 (Windows 10, version 1703)
 
 * [**WdfObjectDereferenceActual**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdereferenceactual): Type of *File* parameter changed from PCHAR to PCCH.
 * [**WdfObjectReferenceActual**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectreferenceactual): Type of *File* parameter changed from PCHAR to PCCH.
 * See [What's New for WDF Drivers](./index.md)
 
-## 2.19 (Windows 10, version 1607)
+## UMDF 2.19 (Windows 10, version 1607)
 
 There are no changes or additions for UMDF Version 2.19.
 
-## 2.17 (Windows 10, version 1511)
+## UMDF 2.17 (Windows 10, version 1511)
 
 This version adds UMDF support for the following existing interfaces:
 
@@ -92,7 +92,7 @@ This version adds UMDF support for the following existing interfaces:
 
 For more information, see [Dispatching IRPs to I/O Queues](dispatching-irps-to-i-o-queues.md).
 
-## 2.15 (Windows 10, version 1507)
+## UMDF 2.15 (Windows 10, version 1507)
 
 Here is the list of updated DDIs for version 2.15:
 
@@ -107,7 +107,7 @@ Here is the list of updated DDIs for version 2.15:
 * Also see [What's New for WDF Drivers](./index.md).
 
 
-## 2.0 (Windows 8.1)
+## UMDF 2.0 (Windows 8.1)
 
 In addition to the shared functionality described in [Getting Started with UMDF](getting-started-with-umdf-version-2.md), UMDF version 2.0 adds:
 
@@ -172,7 +172,7 @@ In addition to the shared functionality described in [Getting Started with UMDF]
   * **GUID\_USB\_CAPABILITY\_DEVICE\_CONNECTION\_SUPER\_SPEED\_COMPATIBLE**
 * Added [WDF Register/Port Access Functions](/windows-hardware/drivers/ddi/wdfhwaccess/)
 
-## 1.11 (Windows 8)
+## UMDF 1.11 (Windows 8)
 
 Version 1.11 adds the following driver-supplied callback interfaces and event callback functions:
 
@@ -218,7 +218,7 @@ Version 1.11 adds the following capabilities to UMDF-based drivers:
 
 * The following samples are new in UMDF 1.11: [WudfVhidmini](/samples/browse/), [NetNfpProvider](/samples/browse/).
 
-## 1.9 (Windows 7)
+## UMDF 1.9 (Windows 7)
 
 Version 1.9 adds the following driver-supplied callback interfaces:
 
