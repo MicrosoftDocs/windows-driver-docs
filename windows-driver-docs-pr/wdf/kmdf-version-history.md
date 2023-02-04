@@ -5,7 +5,7 @@ keywords:
 - kernel-mode drivers WDK KMDF , revision history
 - KMDF WDK , revision history
 - Kernel-Mode Driver Framework WDK , revision history
-ms.date: 08/12/2021
+ms.date: 02/03/2023
 ---
 
 # KMDF Version History
@@ -29,7 +29,7 @@ The following table shows the release history of the KMDF library:
 | 1.13         | Windows 8.1 WDK              | Windows 8.1                                                  | Windows 8.1 and later                                   |
 | 1.11         | Windows 8 WDK                | Windows 8                                                    | Windows Vista and later                                 |
 | 1.9          | Windows 7 WDK                | Windows 7                                                    | Windows XP and later                                    |
-| 1.7          | Windows Server 2008 WDK      | Windows Vista with Service Pack 1 (SP1), Windows Server 2008 | Windows 2000 and later                                  |
+| 1.7          | Windows Server 2008 WDK      | Windows Vista with Service Pack 1 (SP1); Windows Server 2008 | Windows 2000 and later                                  |
 | 1.5          | Windows Vista WDK            | Windows Vista                                                | Windows 2000 and later                                  |
 | 1.1          | Download only                | None                                                         | Windows 2000 and later                                  |
 | 1.0          | Download only                | None                                                         | Windows XP and later                                    |
@@ -42,42 +42,45 @@ For a complete list of callbacks and methods, and which frameworks and versions 
 
 For information about the new features for KMDF drivers in Windows 10, see [What's New for WDF Drivers](index.md).
 
-## KMDF Version 1.33
+For each KMDF version section below, the Windows version in which it was released is listed in parentheses.
+
+## KMDF Version 1.33 (Windows 11, version 21H2; Windows Server 2022)
 
 * For devices that specify **SystemManagedIdleTimeout** or **SystemManagedIdleTimeoutWithHint** in the [WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE](/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_power_policy_idle_timeout_type) enumeration, when calling the [**WdfDeviceStopIdle**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicestopidle) macro with *WaitForD0* set to **FALSE**, if the device is still in D0 and the idle timeout period has not yet elapsed, **WdfDeviceStopIdle** returns STATUS_SUCCESS (in previous versions this resulted in a return value of STATUS_PENDING).
 * [**WDF_POWER_FRAMEWORK_SETTINGS**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_power_framework_settings) structure has two new members (**PoFxDeviceFlags** and **DirectedPoFxEnabled**).
 
-## KMDF Version 1.31
+## KMDF Version 1.31 (Windows 10, version 2004)
 
 * Added new API [**WdfDeviceSetDeviceInterfaceStateEx**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestateex)
 * Improved existing API [**WdfDeviceGetSystemPowerAction**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegetsystempoweraction)
 * Added new API [**WdfPdoInitRemovePowerDependencyOnParent**](/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitremovepowerdependencyonparent)
 * [Introduction to the Directed Power Management Framework](../kernel/introduction-to-the-directed-power-management-framework.md)
 
-## KMDF Version 1.29
+## KMDF Version 1.29 (Windows 10, version 1903)
 
 Unchanged from version 1.25.
 
-## KMDF Version 1.27
+## KMDF Version 1.27 (Windows 10, version 1809)
 
 Unchanged from version 1.25.
 
-## KMDF Version 1.25
+## KMDF Version 1.25 (Windows 10, version 1803)
 
-* [Building a WDF driver for multiple versions of Windows](building-a-wdf-driver-for-multiple-versions-of-windows.md)
+* See [What's New for WDF Drivers](./index.md)
 
-## KMDF Version 1.23
+## KMDF Version 1.23 (Windows 10, version 1709)
 
 * Companion functionality added for internal use only.  For the new DDIs, see [Summary of WDF Callbacks and Methods](/windows-hardware/drivers/ddi/_wdf/).
 
-## KMDF Version 1.21
+## KMDF Version 1.21 (Windows 10, version 1703)
 
 * [**WdfFileObjectGetInitiatorProcessId**](/windows-hardware/drivers/ddi/wdffileobject/nf-wdffileobject-wdffileobjectgetinitiatorprocessid) was previously UMDF-only, now available in KMDF.
 * [**WdfRequestGetRequestorProcessId**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestgetrequestorprocessid) was previously UMDF-only, now available in KMDF.
 * [**WdfObjectDereferenceActual**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdereferenceactual): Type of *File* parameter changed from PCHAR to PCCH.
 * [**WdfObjectReferenceActual**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectreferenceactual): Type of *File* parameter changed from PCHAR to PCCH.
+* See [What's New for WDF Drivers](./index.md)
 
-## KMDF Version 1.19
+## KMDF Version 1.19 (Windows 10, version 1607)
 
 * Added [**WdfDmaTransactionSetSingleTransferRequirement**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactionsetsingletransferrequirement)
 * Added **WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER** flag in [**WDF_DMA_ENABLER_CONFIG_FLAGS**](/windows-hardware/drivers/ddi/wdfdmaenabler/ne-wdfdmaenabler-_wdf_dma_enabler_config_flags)
@@ -85,11 +88,12 @@ Unchanged from version 1.25.
 * Added output messages for single transfer output to [**!wdfkd.wdfdmatransaction**](../debugger/-wdfkd-wdfdmatransaction.md) and [**!wdfkd.wdfdmaenabler**](../debugger/-wdfkd-wdfdmaenabler.md)
 * For more info about single transfer DMA, see [Using Single Transfer DMA](using-single-transfer-dma.md).
 
-## KMDF Version 1.15
+## KMDF Version 1.15 (Windows 10, version 1507)
 
 * The new [**WdfDeviceOpenDevicemapKey**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceopendevicemapkey) method allows a driver to access subkeys and values under **HKEY\_LOCAL\_MACHINE\\HARDWARE\\DEVICEMAP**.
+* Also see [What's New for WDF Drivers](./index.md).
 
-## KMDF Version 1.13
+## KMDF Version 1.13 (Windows 8.1)
 
 KMDF version 1.13 adds the following functionality:
 
@@ -106,7 +110,7 @@ KMDF version 1.13 adds the following functionality:
 
 For information about UMDF versions, see [UMDF Version History](umdf-version-history.md).
 
-## KMDF Version 1.11
+## KMDF Version 1.11 (Windows 8)
 
 Version 1.11 adds the following functionality:
 
@@ -158,7 +162,7 @@ Version 1.11 adds the following functionality:
 
 * Added [InstallWdf](/samples/browse/), [MultiComp](/samples/browse/), and [SingleComp](/samples/browse/) samples.
 
-## KMDF Version 1.9
+## KMDF Version 1.9 (Windows 7)
 
 Version 1.9 adds the following functionality:
 
@@ -185,7 +189,7 @@ Version 1.9 adds the following functionality:
 
 * Added [WdfDefaultIdleInWorkingState and WdfDefaultWakeFromSleepState](user-control-of-device-idle-and-wake-behavior.md) registry values.
 
-## KMDF Version 1.7
+## KMDF Version 1.7 (Windows Vista with Service Pack 1; Windows Server 2008)
 
 * The [**WdfDeviceEnqueueRequest**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceenqueuerequest) method can be called at IRQL&lt;=DISPATCH\_LEVEL.
 
@@ -195,19 +199,19 @@ Version 1.9 adds the following functionality:
 
 * Added **ArmForWakeIfChildrenAreArmedForWake** and **IndicateChildWakeOnParentWake** members to the [**WDF\_DEVICE\_POWER\_POLICY\_WAKE\_SETTINGS**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_wake_settings) structure.
 
-## KMDF Version 1.5
+## KMDF Version 1.5 (Windows Vista)
 
 * [**WdfUsbInterfaceGetNumSettings**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbinterfacegetnumsettings)
 
 * Added the **DriverPoolTag** member to [**WDF\_DRIVER\_CONFIG**](/windows-hardware/drivers/ddi/wdfdriver/ns-wdfdriver-_wdf_driver_config).
 
-## KMDF Version 1.1
+## KMDF Version 1.1 (not released in a Windows version)
 
 * The following methods:
   * [**WdfCommonBufferCreateWithConfig**](/windows-hardware/drivers/ddi/wdfcommonbuffer/nf-wdfcommonbuffer-wdfcommonbuffercreatewithconfig)
   * [**WdfDmaEnablerGetFragmentLength**](/windows-hardware/drivers/ddi/wdfdmaenabler/nf-wdfdmaenabler-wdfdmaenablergetfragmentlength)
   * [**WdfDmaEnablerWdmGetDmaAdapter**](/windows-hardware/drivers/ddi/wdfdmaenabler/nf-wdfdmaenabler-wdfdmaenablerwdmgetdmaadapter)
 
-## KMDF Version 1.0
+## KMDF Version 1.0 (not released in a Windows version)
 
 Initial release.
