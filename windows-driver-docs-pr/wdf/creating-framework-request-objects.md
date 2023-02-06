@@ -10,7 +10,9 @@ ms.date: 04/20/2017
 # Creating Framework Request Objects
 
 
+Framework request objects represent I/O requests that the I/O manager has sent to a driver. Framework-based drivers process each I/O request by calling [framework request object methods](/windows-hardware/drivers/ddi/wdfrequest/).
 
+Each I/O request contains a WDM *I/O request packet* ([**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) structure), but framework-based drivers typically do not need to access the IRP structure.
 
 
 Most framework request objects are created by the framework, but your driver can also create request objects.

@@ -11,6 +11,9 @@ ms.date: 04/20/2017
 
 # Creating I/O Queues
 
+Framework queue objects represent *I/O queues*, which are containers for the I/O requests that a driver receives. Each driver can create one or more I/O queues for each device. The framework queue object defines a set of [event callback functions](/windows-hardware/drivers/ddi/wdfio/) that the driver can provide and a set of object methods that the driver can call.
+
+When the framework receives an I/O request that is directed to one of the driver's devices, the framework places the request in the appropriate I/O queue. If your driver registers one or more [request handlers](request-handlers.md), the framework can notify your driver each time an I/O request is available. Alternatively, your driver can poll the I/O queue for requests.
 
 
 

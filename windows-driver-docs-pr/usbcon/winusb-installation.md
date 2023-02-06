@@ -266,7 +266,7 @@ Make sure that the driver package contents meet these requirements:
 
    | WinUSB co-installer | KMDF library version | KMDF co-installer |
    |---|---|---|
-   | Winusbcoinstaller.dll | Requires KMDF version 1.5 or later | Wdfcoinstaller01005.dll</br>Wdfcoinstaller01007.dll</br>Wdfcoinstaller01009.dll |
+   | Winusbcoinstaller.dll | Requires KMDF version 1.5 or later | Wdfcoinstaller01005.dll<br/>Wdfcoinstaller01007.dll<br/>Wdfcoinstaller01009.dll |
    | Winusbcoinstaller2.dll | Requires KMDF version 1.9 or later | Wdfcoinstaller01009.dll |
    | Winusbcoinstaller2.dll | Requires KMDF version 1.11 or later | WdfCoInstaller01011.dll |
 

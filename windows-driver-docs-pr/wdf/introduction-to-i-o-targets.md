@@ -17,6 +17,7 @@ ms.date: 04/20/2017
 # Introduction to I/O Targets
 
 
+The topics in this section describe how a Windows Driver Frameworks (WDF) driver can forward an I/O request or create and send a new request to another driver, called an I/O target.
 
 
 
