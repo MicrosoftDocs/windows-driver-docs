@@ -171,7 +171,7 @@ In some cases, framework objects are incorrectly parented and not deleted after 
 
 *REG\_DWORD*
 
-Specifies the maximum number of objects of the types described in the **ObjectsForLeakDetection** key. To control whether exceeding this threshold should cause a debug break or a bugcheck, set the [**DbgBreakOnError**](./#DbgBreakOnError) key. The limit scales with the number of devices installed, so if the driver creates three WDFDEVICE objects, the limit is three times the value specified in **ObjectLeakDetectionLimit**.
+Specifies the maximum number of objects of the types described in the **ObjectsForLeakDetection** key. To control whether exceeding this threshold should cause a debug break or a bugcheck, set the [**DbgBreakOnError**](#DbgBreakOnError) key. The limit scales with the number of devices installed, so if the driver creates three WDFDEVICE objects, the limit is three times the value specified in **ObjectLeakDetectionLimit**.
 
 ## ObjectsForLeakDetection
 
