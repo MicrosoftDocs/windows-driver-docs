@@ -66,11 +66,11 @@ Unchanged from version 1.25.
 
 ## KMDF 1.25 (Windows 10, version 1803)
 
-* See [What's New for WDF Drivers](./index.md)
+* [Building a WDF driver for multiple versions of Windows](building-a-wdf-driver-for-multiple-versions-of-windows.md).
 
 ## KMDF 1.23 (Windows 10, version 1709)
 
-* Companion functionality added for internal use only.  For the new DDIs, see [Summary of WDF Callbacks and Methods](/windows-hardware/drivers/ddi/_wdf/).
+* Companion functionality added for internal use only.  For more info, see [Wdfcompanion.h](/windows-hardware/drivers/ddi/wdfcompanion/).
 
 ## KMDF 1.21 (Windows 10, version 1703)
 
@@ -78,7 +78,7 @@ Unchanged from version 1.25.
 * [**WdfRequestGetRequestorProcessId**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestgetrequestorprocessid) was previously UMDF-only, now available in KMDF.
 * [**WdfObjectDereferenceActual**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdereferenceactual): Type of *File* parameter changed from PCHAR to PCCH.
 * [**WdfObjectReferenceActual**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectreferenceactual): Type of *File* parameter changed from PCHAR to PCCH.
-* See [What's New for WDF Drivers](./index.md)
+* The SleepStudy software tool reports the number of power references that a KMDF driver has that are preventing the system from going to sleep.  For more info, see [Modern standby SleepStudy](/windows-hardware/design/device-experiences/modern-standby-sleepstudy).
 
 ## KMDF 1.19 (Windows 10, version 1607)
 

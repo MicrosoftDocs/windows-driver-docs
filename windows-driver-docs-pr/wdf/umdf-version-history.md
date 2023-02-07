@@ -65,7 +65,7 @@ Unchanged from version 2.27.
 ## UMDF 2.25 (Windows 10, version 1803)
 
 * [**WdfDeviceRetrieveDeviceDirectoryString**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring)
-* See [What's New for WDF Drivers](./index.md)
+* [Building a WDF driver for multiple versions of Windows](building-a-wdf-driver-for-multiple-versions-of-windows.md).
 
 ## UMDF 2.23 (Windows 10, version 1709)
 

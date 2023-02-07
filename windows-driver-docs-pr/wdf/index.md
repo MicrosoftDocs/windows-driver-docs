@@ -28,11 +28,7 @@ You can use these framework versions to build drivers for:
 - Windows 10 and 11 (all SKUs)
 - Windows Server 2022
 
-Except where noted, UMDF references on this page describe version 2 functionality that is not available in version 1.
 
-## Windows 10, version 1803 (KMDF 1.25, UMDF 2.25)
-
-- [Building a WDF driver for multiple versions of Windows](building-a-wdf-driver-for-multiple-versions-of-windows.md).
 
 ## Windows 10, version 1703 (KMDF 1.21, UMDF 2.21)
 
@@ -57,9 +53,7 @@ Except where noted, UMDF references on this page describe version 2 functionalit
     
      This feature does not currently support tracking the WDFMEMORY object type. 
 
-* SleepStudy tool provides info on KMDF drivers
 
-    The SleepStudy software tool reports the number of power references that a KMDF driver has that are preventing the system from going to sleep.  For more info, see [Modern standby SleepStudy](/windows-hardware/design/device-experiences/modern-standby-sleepstudy).
 
 ## Windows 10, version 1507 (KMDF 1.15, UMDF 2.15)
 
