@@ -1,7 +1,7 @@
 ---
 title: Accessing a Device on a SerCx2-Managed Serial Port
 description: SerCx2 and a serial controller driver jointly manage a serial port to which a peripheral device is permanently connected.
-ms.date: 04/20/2017
+ms.date: 01/20/2023
 ---
 
 # Accessing a Device on a SerCx2-Managed Serial Port
@@ -11,37 +11,22 @@ SerCx2 and a serial controller driver jointly manage a serial port to which a pe
 
 ## In this section
 
+- [Peripheral Drivers for Devices on SerCx2-Managed Serial Ports](peripheral-drivers-for-devices-on-sercx2-managed-serial-ports.md)  
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="peripheral-drivers-for-devices-on-sercx2-managed-serial-ports.md" data-raw-source="[Peripheral Drivers for Devices on SerCx2-Managed Serial Ports](peripheral-drivers-for-devices-on-sercx2-managed-serial-ports.md)">Peripheral Drivers for Devices on SerCx2-Managed Serial Ports</a></p></td>
-<td><p>Typically, a serial port managed by SerCx2 is permanently connected to a peripheral device. This device is controlled by a peripheral driver that sends I/O requests to the serial port. These requests transfer data to and from the device, and configure the state of the serial port. I/O requests sent by the peripheral driver are jointly handled by SerCx2 and an associated serial controller driver.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="opening-a-sercx2-managed-serial-port.md" data-raw-source="[Opening a SerCx2-Managed Serial Port](opening-a-sercx2-managed-serial-port.md)">Opening a SerCx2-Managed Serial Port</a></p></td>
-<td><p>If your peripheral driver controls a device on a serial port that is jointly managed by SerCx2 and a serial controller driver, your driver can open a logical connection to this port and then send I/O requests to the device through the port.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="sercx2-handling-of-read-and-write-requests.md" data-raw-source="[SerCx2 Handling of Read and Write Requests](sercx2-handling-of-read-and-write-requests.md)">SerCx2 Handling of Read and Write Requests</a></p></td>
-<td><p>A peripheral driver sends write (<a href="/previous-versions/ff546904(v=vs.85)" data-raw-source="[&lt;strong&gt;IRP_MJ_WRITE&lt;/strong&gt;](/previous-versions/ff546904(v=vs.85))"><strong>IRP_MJ_WRITE</strong></a>) and read (<a href="/previous-versions/ff546883(v=vs.85)" data-raw-source="[&lt;strong&gt;IRP_MJ_READ&lt;/strong&gt;](/previous-versions/ff546883(v=vs.85))"><strong>IRP_MJ_READ</strong></a>) requests to a port on a serial controller to transfer data to and from a peripheral device that is connected to the port. The way in which SerCx2 handles these requests is well-defined, even when the requests time out or are canceled.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="reading-data-from-a-sercx2-managed-serial-port.md" data-raw-source="[Reading Data from a SerCx2-Managed Serial Port](reading-data-from-a-sercx2-managed-serial-port.md)">Reading Data from a SerCx2-Managed Serial Port</a></p></td>
-<td><p>A serial controller (or UART) typically includes a receive FIFO. This FIFO provides hardware-controlled buffering of data received from the peripheral device that is connected to the serial port. To read data from the receive FIFO, the peripheral driver for this device sends read (<a href="/previous-versions/ff546883(v=vs.85)" data-raw-source="[&lt;strong&gt;IRP_MJ_READ&lt;/strong&gt;](/previous-versions/ff546883(v=vs.85))"><strong>IRP_MJ_READ</strong></a>) requests to the serial port.</p></td>
-</tr>
-</tbody>
-</table>
+    Typically, a serial port managed by SerCx2 is permanently connected to a peripheral device. This device is controlled by a peripheral driver that sends I/O requests to the serial port. These requests transfer data to and from the device, and configure the state of the serial port. I/O requests sent by the peripheral driver are jointly handled by SerCx2 and an associated serial controller driver.
 
- 
+- [Opening a SerCx2-Managed Serial Port](opening-a-sercx2-managed-serial-port.md)
 
+    If your peripheral driver controls a device on a serial port that is jointly managed by SerCx2 and a serial controller driver, your driver can open a logical connection to this port and then send I/O requests to the device through the port.
+
+- [SerCx2 Handling of Read and Write Requests](sercx2-handling-of-read-and-write-requests.md)
+
+    A peripheral driver sends write ([**IRP_MJ_WRITE**](/windows-hardware/drivers/kernel/irp-mj-write)) and read ([**IRP_MJ_READ**](/windows-hardware/drivers/kernel/irp-mj-read)) requests to a port on a serial controller to transfer data to and from a peripheral device that is connected to the port. The way in which SerCx2 handles these requests is well-defined, even when the requests time out or are canceled.
+
+- [Reading Data from a SerCx2-Managed Serial Port](reading-data-from-a-sercx2-managed-serial-port.md)
+
+    A serial controller (or UART) typically includes a receive FIFO. This FIFO provides hardware-controlled buffering of data received from the peripheral device that is connected to the serial port. To read data from the receive FIFO, the peripheral driver for this device sends read ([**IRP_MJ_READ**](/windows-hardware/drivers/kernel/irp-mj-read)) requests to the serial port.
+
+- [Device Interface publication for a SerCx or SerCx2-managed Serial Port](device-interface-publication-sercx.md)
+
+    Starting with Windows 10 version 1903 and later, system manufacturers or integrators may opt-in via ACPI to have SerCx/SerCx2 expose serial ports to applications and services as a device interface.

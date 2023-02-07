@@ -137,7 +137,7 @@ To handle all of these cases, the following driver callback and callback structu
 * [**DXGKDDI_SETINTERRUPTTARGETPRESENTID**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_setinterrupttargetpresentid)
 * [**DXGKARG_SETINTERRUPTTARGETPRESENTID**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_setinterrupttargetpresentid)
 
-KMD provides a pointer to its **DxgkDdiSetInterruptTargetPresentId** function in [**DRIVER_INITIALIZATION_DATA**](/windows-hardware/drivers/ddi/d3dkmddi/ns-dispmprt-_driver_initialization_data)
+KMD provides a pointer to its **DxgkDdiSetInterruptTargetPresentId** function in [**DRIVER_INITIALIZATION_DATA**](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_driver_initialization_data)
 
 The OS calls **DxgkDdiSetInterruptTargetPresentId** to specify the target PresentId that should result in a VSync interrupt raised when the corresponding flip is completed. It's called at device interrupt level (DIRQL) to synchronize with [**DxgkDdiSetVidPnSourceAddress**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_setvidpnsourceaddress) and the VSync interrupt.
 
@@ -157,7 +157,7 @@ When multiple MPO planes are available, the VSync interrupt should be raised if 
 
 ##### 2-Stage VSync disable with DxgkDdiSetInterruptTargetPresentId
 
-If the OS call to [**DxgkDdiSetInterruptTargetPresentId**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_setinterrupttargetpresentid) sets an **InterruptTargetPresentId** on a plane that would lead to disabling VSync entirely on this VidPnSource (that is, this plane was the last plane that had kept VSync enabled, and now it's disabling VSync as well), KMD should disable VSync interrupts but keep the VSync phase in hardware enabled. After a certain time period (typically equivalent to two VSync periods), the OS will follow up with a call to **DxgkDdiControlInterrupt*Xxx*** with DXGK_VSYNC_DISABLE_KEEP_PHASE. This call ensures that KMD gets a chance to disable the VSync phase and VSync clocks to save maximum power and to maintain performance parity with non-hardware flip queue systems.
+If the OS call to [**DxgkDdiSetInterruptTargetPresentId**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_setinterrupttargetpresentid) sets an **InterruptTargetPresentId** on a plane that would lead to disabling VSync entirely on this VidPnSource (that is, this plane was the last plane that had kept VSync enabled, and now it's disabling VSync as well), KMD should disable VSync interrupts but keep the VSync phase in hardware enabled (DXGK_VSYNC_DISABLE_KEEP_PHASE). After a certain time period (typically equivalent to two VSync periods), the OS will follow up with a call to **DxgkDdiControlInterrupt*Xxx*** with DXGK_VSYNC_DISABLE_NO_PHASE. This call ensures that KMD gets a chance to disable the VSync phase and VSync clocks to save maximum power and to maintain performance parity with non-hardware flip queue systems.
 
 ### Queued flip cancellation
 
@@ -167,7 +167,7 @@ In cases such as full screen state transitions or application exits, future queu
 * [**DXGKARG_CANCELFLIPS**](/windows-hardware/drivers/ddi/d3dkmddi/)
 * [**DXGK_CANCELFLIPS_PLANE**](/windows-hardware/drivers/ddi/d3dkmddi/)
 
-KMD provides a pointer to its **DxgkDdiCancelFlips** function in [**DRIVER_INITIALIZATION_DATA**](/windows-hardware/drivers/ddi/d3dkmddi/ns-dispmprt-_driver_initialization_data).
+KMD provides a pointer to its **DxgkDdiCancelFlips** function in [**DRIVER_INITIALIZATION_DATA**](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_driver_initialization_data).
 
  The OS specifies the range of queued flips to cancel when it calls **DxgkDdiCancelFlips**, and KMD reports back to the OS the range of flips it was able to cancel synchronously.
 
@@ -226,7 +226,7 @@ The following flip queue log-related callback and associated structures were add
 * [**DXGKDDI_UPDATEFLIPQUEUELOG**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_updateflipqueuelog)
 * [**DXGKARG_UPDATEFLIPQUEUELOG**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-dxgkarg_updateflipqueuelog)
 
-KMD provides a pointer to its functions in [**DRIVER_INITIALIZATION_DATA**](/windows-hardware/drivers/ddi/d3dkmddi/ns-dispmprt-_driver_initialization_data).
+KMD provides a pointer to its functions in [**DRIVER_INITIALIZATION_DATA**](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_driver_initialization_data).
 
 ### VSync interrupt structure updates
 
