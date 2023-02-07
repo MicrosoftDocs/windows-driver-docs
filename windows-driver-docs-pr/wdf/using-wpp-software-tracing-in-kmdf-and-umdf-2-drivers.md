@@ -1,7 +1,7 @@
 ---
 title: Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers
 description: Starting in Windows 10, you can build your WDF driver so that it gets additional driver debugging information through the Windows software trace preprocessing.
-ms.date: 04/20/2017
+ms.date: 02/07/2023
 ---
 
 # Using Inflight Trace Recorder (IFR) in KMDF and UMDF 2 Drivers
@@ -11,7 +11,9 @@ Starting in Windows 10, you can build your KMDF or UMDF driver so that it gets 
 
 Inflight Trace Recorder is an extension of [WPP software tracing](../devtest/wpp-software-tracing.md). Unlike WPP tracing, the Inflight Trace Recorder continues to work without an attached trace consumer. The framework writes messages to a circular buffer, and your driver can also add its own messages. Each driver has its own log, so multiple devices associated with a driver share a single log.
 
-The logs are stored in non-pageable memory, so they are recoverable after a system crash. In addition, Inflight Trace Recorder logs are included in minidump files.
+If you turn on the IFR in your driver binary, the IFR is present and running during the lifetime of your driver. You don't need to start an explicit trace collection session.
+
+The logs are stored in non-pageable memory, so they are recoverable after a system crash. In addition, Inflight Trace Recorder logs are included in minidump files except when the responsible driver is undetermined or if the crash was a host timeout.
 
 **How to enable Inflight Trace Recorder and send messages from your driver**
 
@@ -134,6 +136,8 @@ The logs are stored in non-pageable memory, so they are recoverable after a syst
    If you don't specify a driver, [**!wdfcrashdump**](../debugger/-wdfkd-wdfcrashdump.md) displays information for all drivers. If you don't specify a host process, and there is only one, the extension uses the single host process. If you don't specify a host process and there is more than one, the extension lists the active host processes.
 
    If the log information stored in the minidump does not match the entered name, the minidump does not contain the driver's logs.
+
+If you do not have a debugger connected, you can still access the driver and framework logs.  To learn how, see [Video: Accessing driver IFR logs without a debugger](video--accessing-driver-ifr-logs-without-a-debugger.md).
 
 For more information about adding tracing messages to your driver, see [Adding WPP Macros to a Driver](../devtest/adding-wpp-macros-to-a-trace-provider.md).
 

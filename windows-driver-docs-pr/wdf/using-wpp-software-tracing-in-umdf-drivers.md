@@ -60,11 +60,7 @@ For more information about how to use the software tracing tools, see [Survey of
 
 ### Viewing the UMDF Trace Log
 
-The UMDF log file is %windir%\\system32\\LogFiles\\WUDF\\WUDFTrace.etl.
-
-**Note**  Starting in UMDF 2.15, the log directory is *%ProgramData%*\\Microsoft\\WDF.
-
- 
+The UMDF log file is located in `%ProgramData%*\\Microsoft\\WDF`.
 
 You can view the UMDF log file by using either [TraceView](../devtest/traceview.md) or [Tracelog](../devtest/tracelog.md). Both tools require trace message format (TMF) files that format the trace log's messages. The TMF files are available in the WDK, under the \\tools\\tracing subdirectory. (In TraceView, UMDF appears as a named provider with the name of "UMDF-Framework Trace" or "Framework Trace", depending on the UMDF version.)
 

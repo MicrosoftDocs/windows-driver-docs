@@ -78,6 +78,7 @@ Unchanged from version 1.25.
 * [**WdfRequestGetRequestorProcessId**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestgetrequestorprocessid) was previously UMDF-only, now available in KMDF.
 * [**WdfObjectDereferenceActual**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdereferenceactual): Type of *File* parameter changed from PCHAR to PCCH.
 * [**WdfObjectReferenceActual**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectreferenceactual): Type of *File* parameter changed from PCHAR to PCCH.
+* Added WDF registry values **ObjectLeakDetectionLimit** and **ObjectsForLeakDetection** for debugging excessive object creation. For more info, see [Registry Values for Debugging WDF Drivers](./registry-values-for-debugging-kmdf-drivers.md).
 * The SleepStudy software tool reports the number of power references that a KMDF driver has that are preventing the system from going to sleep.  For more info, see [Modern standby SleepStudy](/windows-hardware/design/device-experiences/modern-standby-sleepstudy).
 
 ## KMDF 1.19 (Windows 10, version 1607)
@@ -91,7 +92,9 @@ Unchanged from version 1.25.
 ## KMDF 1.15 (Windows 10, version 1507)
 
 * The new [**WdfDeviceOpenDevicemapKey**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceopendevicemapkey) method allows a driver to access subkeys and values under **HKEY\_LOCAL\_MACHINE\\HARDWARE\\DEVICEMAP**.
-* Also see [What's New for WDF Drivers](./index.md).
+* WDF source code is publicly available from [Windows Driver Frameworks](https://github.com/Microsoft/Windows-Driver-Frameworks). The private symbol files for WDF are available through the Microsoft Symbol Server. Also see [Debugging with WDF Source](https://github.com/Microsoft/Windows-Driver-Frameworks/wiki/Debugging-with-WDF-Source) and [Video: Debugging your driver with WDF source code](./video--debugging-your-driver-with-wdf-source-code.md).
+* Inflight Trace Recorder (IFR) now available. Note this is separate from the [framework's event logger](./using-the-framework-s-event-logger.md). For more info, see [Inflight Trace Recorder (IFR) for logging traces](../devtest/using-wpp-recorder.md) and [Using Inflight Trace Recorder in KMDF and UMDF Drivers](using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers.md).
+* Support for interrupts for GPIO-backed devices. For more information, see [Creating an Interrupt Object](creating-an-interrupt-object.md).
 
 ## KMDF 1.13 (Windows 8.1)
 

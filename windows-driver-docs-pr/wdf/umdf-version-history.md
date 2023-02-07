@@ -75,7 +75,7 @@ Unchanged from version 2.27.
 
 * [**WdfObjectDereferenceActual**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdereferenceactual): Type of *File* parameter changed from PCHAR to PCCH.
 * [**WdfObjectReferenceActual**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectreferenceactual): Type of *File* parameter changed from PCHAR to PCCH.
-* See [What's New for WDF Drivers](./index.md)
+* Added WDF registry values **ObjectLeakDetectionLimit** and **ObjectsForLeakDetection** for debugging excessive object creation. For more info, see [Registry Values for Debugging WDF Drivers](./registry-values-for-debugging-kmdf-drivers.md).
 
 ## UMDF 2.19 (Windows 10, version 1607)
 
@@ -94,18 +94,13 @@ For more information, see [Dispatching IRPs to I/O Queues](dispatching-irps-to-i
 
 ## UMDF 2.15 (Windows 10, version 1507)
 
-Here is the list of updated DDIs for version 2.15:
-
 * The new [**WdfDeviceOpenDevicemapKey**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceopendevicemapkey) method allows a driver to access subkeys and values under **HKEY\_LOCAL\_MACHINE\\HARDWARE\\DEVICEMAP**.
-
 * A UMDF driver can call [**WdfIoTargetWdmGetTargetFileHandle**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetwdmgettargetfilehandle) to obtain a file handle to the next-lower kernel-mode driver in its stack. The driver can write data to that handle, bypassing the framework's abstractions for sending I/O to the local I/O target.
-
 * A UMDF driver can request that the underlying bus driver re-enumerate it. See [**WdfDeviceSetFailed**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetfailed).
-
 * Setting the **UmdfDirectHardwareAccess** directive is no longer always necessary for devices that have connection resources. See [Specifying WDF Directives in INF Files](specifying-wdf-directives-in-inf-files.md).
-
-* Also see [What's New for WDF Drivers](./index.md).
-
+* WDF source code is publicly available from [Windows Driver Frameworks](https://github.com/Microsoft/Windows-Driver-Frameworks). The private symbol files for WDF are available through the Microsoft Symbol Server. Also see [Debugging with WDF Source](https://github.com/Microsoft/Windows-Driver-Frameworks/wiki/Debugging-with-WDF-Source) and [Video: Debugging your driver with WDF source code](./video--debugging-your-driver-with-wdf-source-code.md).
+* Inflight Trace Recorder (IFR) now available. Note this is separate from the [framework's event logger](./using-the-framework-s-event-logger.md). For more info, see [Inflight Trace Recorder (IFR) for logging traces](../devtest/using-wpp-recorder.md) and [Using Inflight Trace Recorder in KMDF and UMDF Drivers](using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers.md).
+* Support for interrupts for GPIO-backed devices. For more information, see [Creating an Interrupt Object](creating-an-interrupt-object.md).
 
 ## UMDF 2.0 (Windows 8.1)
 

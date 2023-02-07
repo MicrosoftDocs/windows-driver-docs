@@ -31,7 +31,7 @@ AppVerif –enable Heaps Exceptions Handles Locks Memory TLS Leak –for WudfHos
   **** Note that driver host process may get terminated if you go past this break, making it difficult to debug the problem!
   ```
 
-- Use [**!analyze**](../debugger/-analyze.md) to display information about the failure, and additional UMDF extension commands you can try.
+- Use [**!analyze**](../debugger/-analyze.md) to display information about the failure, and additional UMDF extension commands you can try. This can help with UMDF verifier failures or UMDF unhandled exceptions. This works for live kernel debugging as well as debugging user crash dump files from *%ProgramData%*\\Microsoft\\WDF.
 - Use [**!process 0 0x1f wudfhost.exe**](../debugger/-process.md) to list all Wudfhost.exe driver host processes, including thread stack information.
 
   You can also use !wdfkd.wdfumtriage and [**!wdfkd.wdfldr**](../debugger/-wdfkd-wdfldr.md) to display all drivers that are currently bound to WDF. When you click on the image name of a UMDF driver, the debugger displays the address of the hosting process. You can then click on the process address to display information specific to that process.
