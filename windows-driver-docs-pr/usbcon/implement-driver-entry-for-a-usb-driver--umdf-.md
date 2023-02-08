@@ -167,13 +167,11 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
 1. In the debugger, type the following commands:
 
-```console
-.load Wmitrace
-
-.chain
-
-!wmitrace.searchpath +***&lt;TMF file location&gt;
-```
+   ```console
+   .load Wmitrace
+   .chain
+   !wmitrace.searchpath +***&lt;TMF file location&gt;
+   ```
 
 These commands:
 
@@ -184,7 +182,7 @@ These commands:
 The output resembles this:
 
 ```console
-    Trace Format search path is: 'C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE;c:\drivers\tmf
+Trace Format search path is: 'C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE;c:\drivers\tmf
 ```
 
 ### To configure your target computer for WPP tracing
@@ -193,22 +191,22 @@ The output resembles this:
 1. Open a **Command Window** and run as administrator.
 1. Type the following command:
 
-```console
+   ```console
    tracelog -start MyTrace -guid \#c918ee71-68c7-4140-8f7d-c907abbcb05d -flag 0xFFFF -level 7-rt -kd
-```
+   ```
 
-   The command starts a trace session named MyTrace.
+The command starts a trace session named MyTrace.
 
-   The **guid** argument specifies the GUID of the trace provider, which is the client driver. You can get the GUID from Trace.h in the Visual Studio 2019 project. As another option, you can type the following command and specify the GUID in a .guid file. The file contains the GUID in hyphen format:
-
-```console
-   tracelog -start MyTrace -guid c:\\drivers\\Provider.guid -flag 0xFFFF -level 7-rt -kd
-```
-
-   You can stop the trace session by typing the following command:
+The **guid** argument specifies the GUID of the trace provider, which is the client driver. You can get the GUID from Trace.h in the Visual Studio 2019 project. As another option, you can type the following command and specify the GUID in a .guid file. The file contains the GUID in hyphen format:
 
 ```console
-   tracelog -stop MyTrace
+tracelog -start MyTrace -guid c:\\drivers\\Provider.guid -flag 0xFFFF -level 7-rt -kd
+```
+
+You can stop the trace session by typing the following command:
+
+```console
+tracelog -stop MyTrace
 ```
 
 ### Step 6: Deploy the driver on the target computer
