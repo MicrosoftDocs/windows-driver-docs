@@ -356,7 +356,7 @@ The following errors and warnings are related to Windows Driver requirements:
 
 ## Installation (2000-2999)
 
-Issues in the 2000-2999 range appear as warnings. Possible values include the following.
+Issues in the 2000-2999 range are issues that depend on the context, such as directives that do not work on certain product SKUs or versions, or a directive that is not allowed in the specified device class.
 
 <table>
 <thead>
