@@ -1,4 +1,4 @@
-- name: "What's New for WDF Drivers"
+- name: "Windows Driver Frameworks"
   href: index.md
 - name: "KMDF Version History"
   href: kmdf-version-history.md

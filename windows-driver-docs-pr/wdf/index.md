@@ -1,6 +1,6 @@
 ---
-title: What's New for WDF Drivers
-description: Summarizes new features and improvements for WDF drivers.
+title: Windows Driver Frameworks
+description: High level description of WDF including latest versions of KMDF and UMDF and supported target operating systems.
 keywords:
 - kernel-mode drivers WDK KMDF , about KMDF
 - KMDF WDK , about KMDF
@@ -13,7 +13,7 @@ ms.date: 02/07/2023
 ms.topic: article
 ---
 
-# What's New for WDF Drivers
+# Windows Driver Frameworks
 
 Windows Driver Frameworks (WDF) is an abstraction layer that takes care of much of the common code required to write a Windows driver. A lot of the required boilerplate is provided, so when you use WDF you can opt in to providing driver-specific functionality.
 
