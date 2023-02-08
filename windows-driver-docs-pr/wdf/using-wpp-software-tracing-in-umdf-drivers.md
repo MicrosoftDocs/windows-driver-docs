@@ -40,7 +40,7 @@ To add tracing messages to your framework-based driver, you must:
 
 -   Use the [**DoTraceMessage**](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)) macro, or a [customized version](../devtest/can-i-customize-dotracemessage-.md) of the macro, in your driver to create trace messages. (For each of the WDK's UMDF-based sample drivers, the Internal.h header file includes a customized macro.)
 
--   Open the Property Pages for your driver project. Right-click the driver project in Solution Explorer and select **Properties**. In the Property Pages for the driver, click **Configuration Properties**, and then **Wpp**. Under the **General** menu, set **Run WPP Tracing** to Yes. Under the **File Options** menu, you should also specify the framework's WPP template file, for example:
+-   Open the Property Pages for your driver project. Right-click the driver project in Solution Explorer and select **Properties**. In the Property Pages for the driver, select **Configuration Properties**, and then **Wpp**. Under the **General** menu, set **Run WPP Tracing** to Yes. Under the **File Options** menu, you should also specify the framework's WPP template file, for example:
 
     ```cpp
     {km-WdfDefault.tpl}*.tmh
@@ -64,12 +64,12 @@ The UMDF log file is located in `%ProgramData%*\\Microsoft\\WDF`.
 
 You can view the UMDF log file by using either [TraceView](../devtest/traceview.md) or [Tracelog](../devtest/tracelog.md). Both tools require trace message format (TMF) files that format the trace log's messages. The TMF files are available in the WDK, under the \\tools\\tracing subdirectory. (In TraceView, UMDF appears as a named provider with the name of "UMDF-Framework Trace" or "Framework Trace", depending on the UMDF version.)
 
-[WDF Verifier](../devtest/wdf-verifier-control-application.md) enables you to send trace messages to both the UMDF trace log and your kernel debugger. (You should not send trace messages to your kernel debugger by using the **-kd** option in [Tracelog](../devtest/tracelog.md), because **Tracelog** can disrupt trace logging within UMDF.)
+[WDF Verifier](../devtest/wdf-verifier-control-application.md) enables you to send trace messages to both the UMDF trace log and your kernel debugger. (You shouldn't send trace messages to your kernel debugger by using the **-kd** option in [Tracelog](../devtest/tracelog.md), because **Tracelog** can disrupt trace logging within UMDF.)
 
 You can also use the [**!wmitrace**](../debugger/wmi-tracing-extensions--wmitrace-dll-.md) debugger extension to [view the trace messages](../devtest/how-do-i-send-trace-messages-to-a-kernel-debugger-.md) in the debugger:
 
 1.  In WinDbg, attach to the instance of WUDFHost that hosts the driver. For more information, see [How to Enable Debugging of a UMDF Driver](enabling-a-debugger.md).
-2.  If your driver uses version 1.11 or later, and you are using the kernel debugger from Windows 8 or later, you can skip this step. If your driver uses a version of UMDF earlier than 1.11, use [**!wmitrace.tmffile**](../debugger/-wmitrace-tmffile.md) or [**!wmitrace.searchpath**](../debugger/-wmitrace-searchpath.md) to specify a platform-specific trace message format (.tmf) file, or a path to a .tmf file. The .tmf files are located in platform-specific subdirectories in the WDK.
+2.  If your driver uses version 1.11 or later, and you're using the kernel debugger from Windows 8 or later, you can skip this step. If your driver uses a version of UMDF earlier than 1.11, use [**!wmitrace.tmffile**](../debugger/-wmitrace-tmffile.md) or [**!wmitrace.searchpath**](../debugger/-wmitrace-searchpath.md) to specify a platform-specific trace message format (.tmf) file, or a path to a .tmf file. The .tmf files are located in platform-specific subdirectories in the WDK.
 
 3.  Use the [**!wmitrace.logdump**](../debugger/-wmitrace-logdump.md) command to display the contents of the trace buffers:
 
@@ -79,7 +79,7 @@ You can also use the [**!wmitrace**](../debugger/wmi-tracing-extensions--wmitrac
 
 ### Controlling Trace Messages
 
-You can control UMDF trace messages with the user interface that [WDF Verifier](../devtest/wdf-verifier-control-application.md) provides, or by modifying registry values. You should use the **WDF Verifier** interface when possible, because the registry values might change in future versions of UMDF. In addition, you should not access these values within INF files or your driver's code.
+You can control UMDF trace messages with the user interface that [WDF Verifier](../devtest/wdf-verifier-control-application.md) provides, or by modifying registry values. You should use the **WDF Verifier** interface when possible, because the registry values might change in future versions of UMDF. In addition, you shouldn't access these values within INF files or your driver's code.
 
 Currently, you can modify the following registry values, which are located under the **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF** registry key:
 
@@ -93,5 +93,5 @@ Currently, you can modify the following registry values, which are located under
 
 -   The **LogMinidumpType** value contains flags that specify the type of information that a mini-dump file, if produced, will contain. For more information about these flags, see the [MINIDUMP\_TYPE](/windows/win32/api/minidumpapiset/ne-minidumpapiset-minidump_type) enumeration.
 
-You might find additional registry values under the **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF** registry key. You should not modify those values.
+You might find more registry values under the **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF** registry key. You shouldn't modify those values.
 
