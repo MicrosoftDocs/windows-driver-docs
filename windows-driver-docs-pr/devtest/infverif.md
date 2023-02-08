@@ -20,9 +20,9 @@ The InfVerif tool reports the following types of errors/warnings:
 
 -   **Errors/Warnings** (1200-1299): These issues do not prevent your driver package from being installed, but they do indicate that specific lines of your INF are not being executed when the driver is installed.
 
--   **Issues that make an INF non-universal.** (1300-1309)
+-   **Issues that make an INF non-universal.** (1300-1319)
 
--   **Warnings** (2000-2999): These issues are always reported as warnings.
+-   **Contextual Issues** (2000-2999): These issues depend on the context the INF is used in, such as syntax that does not work on all product SKUs or with a certain device setup class.
 
 ## <span id="in_this_section"></span>In this section
 
