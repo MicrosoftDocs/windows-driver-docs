@@ -6,9 +6,9 @@ ms.date: 02/07/2023
 
 # How to write your first USB client driver (UMDF)
 
-In this article you'll use the **USB User-Mode Driver** template provided with Microsoft Visual Studio 2019 to write a user-mode driver framework (UMDF)-based client driver. After building and installing the client driver, you'll view the client driver in **Device Manager** and view the driver output in a debugger.
+In this article, you'll use the **USB User-Mode Driver** template provided with Microsoft Visual Studio 2019 to write a user-mode driver framework (UMDF)-based client driver. After building and installing the client driver, you'll view the client driver in **Device Manager** and view the driver output in a debugger.
 
-UMDF (referred to as the framework in this article) is based on the component object model (COM). Every framework object must implement **[IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown)** and its methods, **[QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q))**, **[AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref)**, and **[Release](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release)**, by default. The **AddRef** and **Release** methods manage the object's lifetime, so the client driver does not need to maintain the reference count. The **QueryInterface** method enables the client driver to get interface pointers to other framework objects in the Windows Driver Frameworks (WDF) object model. Framework objects perform complicated driver tasks and interact with Windows. Certain framework objects expose interfaces that enable a client driver to interact with the framework.
+UMDF (referred to as the framework in this article) is based on the component object model (COM). Every framework object must implement **[IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown)** and its methods, **[QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q))**, **[AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref)**, and **[Release](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release)**, by default. The **AddRef** and **Release** methods manage the object's lifetime, so the client driver doesn't need to maintain the reference count. The **QueryInterface** method enables the client driver to get interface pointers to other framework objects in the Windows Driver Frameworks (WDF) object model. Framework objects perform complicated driver tasks and interact with Windows. Certain framework objects expose interfaces that enable a client driver to interact with the framework.
 
 A UMDF-based client driver is implemented as an in-process COM server (DLL), and C++ is the preferred language for writing a client driver for a USB device. Typically, the client driver implements several interfaces exposed by the framework. This article refers to a client driver-defined class that implements framework interfaces as a callback class. After these classes are instantiated, the resulting callback objects are partnered with particular framework objects. This partnership gives the client driver the opportunity to respond to device or system-related events that are reported by the framework. Whenever Windows notifies the framework about certain events, the framework invokes the client driver's callback, if one is available. Otherwise the framework proceeds with the default processing of the event. The template code defines driver, device, and queue callback classes.
 
@@ -21,7 +21,7 @@ For developing, debugging, and installing a user-mode driver, you need two compu
 - A host computer running Windows 7 or a later version of the Windows operating system. The host computer is your development environment, where you write and debug your driver.
 - A target computer running the version of the operating system that you want to test your driver on, for example, Windows 10, version 1903. The target computer has the user-mode driver that you want to debug and one of the debuggers.
 
-In some cases, where the host and target computers are running the same version of Windows, you can have just one computer running Windows 7 or a later version of the Windows. This article assumes that you are using two computers for developing, debugging, and installing your user mode driver.
+In some cases, where the host and target computers are running the same version of Windows, you can have just one computer running Windows 7 or a later version of the Windows. This article assumes that you're using two computers for developing, debugging, and installing your user mode driver.
 
 Before you begin, make sure that you meet the following requirements:
 
@@ -30,16 +30,16 @@ Before you begin, make sure that you meet the following requirements:
 - Your host computer has Visual Studio 2019.
 - Your host computer has the latest Windows Driver Kit (WDK) for Windows 10, version 1903.
 
-    The kit include headers, libraries, tools, documentation, and the debugging tools required to develop, build, and debug a USB client driver. You can get the latest version of the WDK from [How to Get the WDK](../download-the-wdk.md).
+    The kit includes headers, libraries, tools, documentation, and the debugging tools required to develop, build, and debug a USB client driver. You can get the latest version of the WDK from [How to Get the WDK](../download-the-wdk.md).
 
 - Your host computer has the latest version of debugging tools for Windows. You can get the latest version from the WDK or you can [Download and Install Debugging Tools for Windows](../debugger/debugger-download-tools.md).
-- If you are using two computers, you must configure the host and target computers for user-mode debugging. For more information, see [Setting Up User-Mode Debugging in Visual Studio](../debugger/setting-up-user-mode-debugging-in-visual-studio.md).
+- If you're using two computers, you must configure the host and target computers for user-mode debugging. For more information, see [Setting Up User-Mode Debugging in Visual Studio](../debugger/setting-up-user-mode-debugging-in-visual-studio.md).
 
 ### Hardware requirements
 
-Get a USB device for which you will be writing the client driver. In most cases, you are provided with a USB device and its hardware specification. The specification describes device capabilities and the supported vendor commands. Use the specification to determine the functionality of the USB driver and the related design decisions.
+Get a USB device for which you'll be writing the client driver. In most cases, you're provided with a USB device and its hardware specification. The specification describes device capabilities and the supported vendor commands. Use the specification to determine the functionality of the USB driver and the related design decisions.
 
-If you are new to USB driver development, use the [OSR USB FX2 learning kit](https://www.amazon.com/OSR-USB-FX2-Learning-Kit/dp/B07FNSYCLR) to study USB samples included with the WDK. It contains the USB FX2 device and all the required hardware specifications to implement a client driver.
+If you're new to USB driver development, use the [OSR USB FX2 learning kit](https://www.amazon.com/OSR-USB-FX2-Learning-Kit/dp/B07FNSYCLR) to study USB samples included with the WDK. It contains the USB FX2 device and all the required hardware specifications to implement a client driver.
 
 ### Recommended reading
 
@@ -59,10 +59,10 @@ For instructions about generating UMDF driver code, see [Writing a UMDF driver b
 
 1. In the **New Project** dialog box, in the search box at the top, type **USB.**
 1. In the middle pane, select **User Mode Driver, USB (UMDF V2)**.
-1. Click **Next**.
-1. Enter a project name, choose a save location, and click **Create**.
+1. Select **Next**.
+1. Enter a project name, choose a save location, and select **Create**.
 
-The following screen shots show the **New Project** dialog box for the **USB User-Mode Driver** template.
+The following screenshots show the **New Project** dialog box for the **USB User-Mode Driver** template.
 
 :::image type="content" source="images/umdf-template-visual-studio-2019.png" alt-text="Screenshot of Visual Studio new project options.":::
 
@@ -73,7 +73,7 @@ This article assumes that the name of the project is "MyUSBDriver_UMDF_". It con
 | Files | Description |
 |---|---|
 | Driver.h; Driver.c | Declares and defines a callback class that implements the **[IDriverEntry](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-idriverentry)** interface. The class defines methods that are invoked by the framework driver object. The main purpose of this class is to create a device object for the client driver. |
-| Device.h; Device.c | Declares and defines a callback class that implements the **[IPnpCallbackHardware](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipnpcallbackhardware)** interface. The class defines methods that are invoked by the framework device object. The main purpose of this class is to handle events occurring as a result of Plug and Play (PnP) state changes. The class also allocates and initializes resources required by the client driver as long as it is loaded in the system. |
+| Device.h; Device.c | Declares and defines a callback class that implements the **[IPnpCallbackHardware](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipnpcallbackhardware)** interface. The class defines methods that are invoked by the framework device object. The main purpose of this class is to handle events occurring as a result of Plug and Play (PnP) state changes. The class also allocates and initializes resources required by the client driver as long as it's loaded in the system. |
 | IoQueue.h; IoQueue.c | Declares and defines a callback class that implements the **[IQueueCallbackDeviceIoControl](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iqueuecallbackdeviceiocontrol)** interface. The class defines methods that are invoked by the framework queue object. The purpose of this class is to retrieve I/O requests that are queued in the framework. |
 | Internal.h | Provides common declarations shared by the client driver and user applications that communicate with the USB device. It also declares tracing functions and macros. |
 | Dllsup.cpp | Contains the implementation of the driver module's entry point. |
@@ -88,7 +88,7 @@ Before you build the driver, you must modify the template INF file with informat
 
 1. Attach your USB device to your host computer and let Windows enumerate the device.
 1. Open **Device Manager** and open properties for your device.
-1. On the **Details** tab, select **Hardward Ids** under **Property.**
+1. On the **Details** tab, select **Hardware Ids** under **Property.**
 
     The hardware ID for the device is displayed in the list box. Select and hold (or right-click) and copy the hardware ID string.
 
@@ -116,7 +116,7 @@ HKR,,CoInstallers32,0x00010008,"WinUsbCoinstaller2.dll"
 - Winusbcoinstaller2.dll ((co-installers for Winusb.sys)
 - MyUSBDriver_UMDF_.dll (client driver module)
 
-If your INF AddReg directive references the UMDF redistributable co-installer (WUDFUpdate_*&lt;version&gt;*.dll ), you must not make a reference to the configuration co-installer (WUDFCoInstaller.dll). Referencing both co-installers in the INF will lead to installation errors.
+If your INF AddReg directive references the UMDF redistributable co-installer (WUDFUpdate_*&lt;version&gt;*.dll), you must not make a reference to the configuration co-installer (WUDFCoInstaller.dll). Referencing both co-installers in the INF leads to installation errors.
 
 All UMDF-based USB client drivers require two Microsoft-provided drivers: the reflector and WinUSB.
 
@@ -136,10 +136,10 @@ To build your driver:
 
 1. Open the driver project or solution in Visual Studio 2019.
 1. Right-click the solution in the **Solution Explorer** and select **Configuration Manager**.
-1. From the **Configuration Manager**, select your **Active Solution Configuration** (for example, **Debug** or **Release**) and your **Active Solution Platform** (for example, **Win32**) that correspond to the type of build you are interested in.
+1. From the **Configuration Manager**, select your **Active Solution Configuration** (for example, **Debug** or **Release**) and your **Active Solution Platform** (for example, **Win32**) that correspond to the type of build you're interested in.
 1. Verify that your device interface GUID is accurate throughout the project.
     - The device interface GUID is defined in Trace.h and is referenced from `MyUSBDriverUMDFCreateDevice` in Device.c. When you create your project with the name "MyUSBDriver_UMDF_", Visual Studio 2019 defines the device interface GUID with the name `GUID_DEVINTERFACE_MyUSBDriver_UMDF_` but calls `WdfDeviceCreateDeviceInterface` with the incorrect parameter "GUID_DEVINTERFACE_MyUSBDriverUMDF". Replace the incorrect parameter with the name defined in Trace.h to ensure that the driver builds properly.
-1. From the **Build** menu, click **Build Solution**.
+1. From the **Build** menu, select **Build Solution**.
 
 For more information, see [Building a Driver](../develop/building-a-driver.md).
 
@@ -163,7 +163,7 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
    The **-f** option specifies the location and the name of the PDB symbol file. The **-p** option specifies the location for the TMF files that are created by Tracepdb. For more information, see **[Tracepdb Commands](../devtest/tracepdb-commands.md)**.
 
-   At the specified location you'll see three files (one per .c file in the project). They are given GUID file names.
+   At the specified location, you'll see three files (one per .c file in the project). They're given GUID file names.
 
 1. In the debugger, type the following commands:
 
@@ -178,7 +178,7 @@ The template code contains several trace messages (TraceEvents) that can help yo
 These commands:
 
 - Load the Wmitrace.dll extension.
-- Verfies that the debugger extension is loaded.
+- Verifies that the debugger extension is loaded.
 - Adds the location of the TMF files to the debugger extension's search path.
 
 The output resembles this:
@@ -267,16 +267,16 @@ Let's take a look at how the framework and the client driver work together to in
 
 The purpose of each module is described here:
 
-- Application—a user-mode process that issues I/O requests to communicate with the USB device.
-- I/O Manager—a Windows component that creates I/O request packets (IRPs) to represent the received application requests, and forwards them to the top of the kernel-mode device stack for the target device.
-- Reflector—a Microsoft-provided kernel-mode driver installed at the top of the kernel-mode device stack (WUDFRd.sys). The reflector redirects IRPs received from the I/O manager to the client driver host process. Upon receiving the request, the framework and the client driver handle the request.
-- Host process —the process in which the user-mode driver runs (Wudfhost.exe). It also hosts the framework and the I/O dispatcher.
-- Client driver—the user-mode function driver for the USB device.
-- UMDF—the framework module that handles most interactions with Windows on the behalf of the client driver. It exposes the user-mode device driver interfaces (DDIs) that the client driver can use to perform common driver tasks.
+- Application — a user-mode process that issues I/O requests to communicate with the USB device.
+- I/O Manager — a Windows component that creates I/O request packets (IRPs) to represent the received application requests, and forwards them to the top of the kernel-mode device stack for the target device.
+- Reflector — a Microsoft-provided kernel-mode driver installed at the top of the kernel-mode device stack (WUDFRd.sys). The reflector redirects IRPs received from the I/O manager to the client driver host process. Upon receiving the request, the framework and the client driver handle the request.
+- Host process — the process in which the user-mode driver runs (Wudfhost.exe). It also hosts the framework and the I/O dispatcher.
+- Client driver — the user-mode function driver for the USB device.
+- UMDF — the framework module that handles most interactions with Windows on the behalf of the client driver. It exposes the user-mode device driver interfaces (DDIs) that the client driver can use to perform common driver tasks.
 - Dispatcher—mechanism that runs in the host process; determines how to forward a request to the kernel mode after it has been processed by user-mode drivers and has reached the bottom of the user-mode stack. In the illustration, the dispatcher forwards the request to the user-mode DLL, Winusb.dll.
-- Winusb.dll—a Microsoft-provided user-mode DLL that exposes [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md) that simplify the communication process between the client driver and WinUSB (Winusb.sys, loaded in kernel mode).
-- Winusb.sys—a Microsoft-provided driver that is required by all UMDF client drivers for USB devices. The driver must be installed below the reflector and acts as the gateway to the USB driver stack in the kernel-mode. For more information, see [WinUSB](winusb.md).
-- USB driver stack—a set of drivers, provided by Microsoft, that handle protocol-level communication with the USB device. For more information, see [USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md).
+- Winusb.dll — a Microsoft-provided user-mode DLL that exposes [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md) that simplify the communication process between the client driver and WinUSB (Winusb.sys, loaded in kernel mode).
+- Winusb.sys — a Microsoft-provided driver that is required by all UMDF client drivers for USB devices. The driver must be installed below the reflector and acts as the gateway to the USB driver stack in the kernel-mode. For more information, see [WinUSB](winusb.md).
+- USB driver stack — a set of drivers, provided by Microsoft, that handle protocol-level communication with the USB device. For more information, see [USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md).
 
 Whenever an application makes a request for the USB driver stack, the Windows I/O manager sends the request to the reflector, which directs it to client driver in user mode. The client driver handles the request by calling specific UMDF methods, which internally call [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md) to send the request to WinUSB. Upon receiving the request, WinUSB either processes the request or forwards it to the USB driver stack.
 
