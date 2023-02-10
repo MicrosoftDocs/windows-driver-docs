@@ -3,7 +3,7 @@ title: General guidelines for INF files
 description: Provides general guidelines for INF files.
 keywords:
 - INF files WDK device installations, general guidelines
-ms.date: 08/29/2022
+ms.date: 02/10/2023
 ---
 
 # General guidelines for INF files
@@ -32,7 +32,7 @@ INF files have many common parts and follow a single set of syntax rules. Howeve
 
 - The components of a driver package must never directly copy or delete INF files directly in a system's *%SystemRoot%/Inf* directory.
 
-You can create or modify an INF file by using any text editor in which you can control the insertion of line breaks. If your INF contains non-ASCII characters, save the file as a Unicode (UTF-16) file.
+You can create or modify an INF file by using any text editor in which you can control the insertion of line breaks. If your INF contains non-ASCII characters, save the file as a Unicode (UTF-16 LE) file.
 
 Do not arbitrarily modify the time stamps of your INF files, as a version control mechanism. Version control of INF files should be based on a date and version number that is specified via the *DriverVer* directive in an [**INF Version section**](inf-version-section.md).
 
