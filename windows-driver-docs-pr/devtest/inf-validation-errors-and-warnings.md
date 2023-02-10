@@ -372,7 +372,7 @@ Issues in the 2000-2999 range are issues that depend on the context, such as dir
 </tr>
 <tr>
 <td><strong>2084: Replaced legacy pattern in section</strong></td>
-<td><p>This warning indicates that the INF provides a section that incorrectly references an Inbox binary. When the driver is installed, the contents of the section indicated in the warning are not evaluated and are replaced with the applicable Include/Needs directives.</p>
+<td><p>This warning indicates that the INF provides a legacy mechanism that will be automatically replaced with an up-to-date one during parse. When the driver is installed, the contents of the section will be replaced by the applicable Include/Needs directives.</p>
 <p> To address, use Include/Needs directives in the <a href="/windows-hardware/drivers/install/inf-ddinstall-section">DDInstall</a> section and for each possible DDInstall.* section to reference the corresponding Inbox INF DDInstall.* sections as shown below:</p>
 <pre>
 [DDInstall]
