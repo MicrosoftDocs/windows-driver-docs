@@ -7,7 +7,7 @@ ms.date: 04/20/2017
 # Troubleshooting UMDF 2.0 Driver Crashes
 
 
-Starting in User-Mode Driver Framework (UMDF) version 2, you can use a subset of the debugger extension commands implemented in Wdfkd.dll to debug a UMDF driver. This topic describes which commands you might start with to troubleshoot UMDF driver problems.
+Starting in User-Mode Driver Framework (UMDF) version 2, you can use a subset of the debugger extension commands implemented in Wdfkd.dll to debug a UMDF driver. This article describes commands you can use to troubleshoot UMDF driver problems.
 
 ##  Determining Why a UMDF 2.0 Driver Crashed
 
@@ -20,7 +20,7 @@ To investigate, first set up a kernel-mode debugging session as described in [Ho
 AppVerif –enable Heaps Exceptions Handles Locks Memory TLS Leak –for WudfHost.exe
 ```
 
-- If **HostFailKdDebugBreak** is set (this should be enabled by default starting Windows 8), the reflector breaks into the kernel-mode debugger when the timeout threshold is exceeded. In the debugger output, you will see several suggestions on how to begin, including links you can click on. For example:
+- If **HostFailKdDebugBreak** is set, the reflector breaks into the kernel-mode debugger when the timeout threshold is exceeded. In the debugger output, you see several suggestions on how to begin, including links you can select. For example:
 
   ```cpp
   **** Problem detected in UMDF driver "WUDFOsrUsbFx2". !process 0xFFFFE0000495B080 0x1f, !devstack 0xFFFFE000032BFA10, Problem code 3 ****
@@ -31,14 +31,14 @@ AppVerif –enable Heaps Exceptions Handles Locks Memory TLS Leak –for WudfHos
   **** Note that driver host process may get terminated if you go past this break, making it difficult to debug the problem!
   ```
 
-- Use [**!analyze**](../debugger/-analyze.md) to display information about the failure, and additional UMDF extension commands you can try.
+- Use [**!analyze**](../debugger/-analyze.md) to display information about the failure, and other UMDF extension commands you can try. This command can help with UMDF verifier failures or UMDF unhandled exceptions. You can use it for live kernel debugging or debugging user crash dump files from *%ProgramData%*\\Microsoft\\WDF.
 - Use [**!process 0 0x1f wudfhost.exe**](../debugger/-process.md) to list all Wudfhost.exe driver host processes, including thread stack information.
 
-  You can also use !wdfkd.wdfumtriage and [**!wdfkd.wdfldr**](../debugger/-wdfkd-wdfldr.md) to display all drivers that are currently bound to WDF. When you click on the image name of a UMDF driver, the debugger displays the address of the hosting process. You can then click on the process address to display information specific to that process.
+  You can also use !wdfkd.wdfumtriage and [**!wdfkd.wdfldr**](../debugger/-wdfkd-wdfldr.md) to display all drivers that are currently bound to WDF. When you select the image name of a UMDF driver, the debugger displays the address of the hosting process. You can then select the process address to display information specific to that process.
 
 - If necessary, use [**.process /r /p *Process***](../debugger/-process--set-process-context-.md) to switch process context to that of the Wudfhost process that is hosting your driver. Use [**.cache forcedecodeuser**](../debugger/-cache--set-cache-size-.md) and **lmu** to verify that your driver is hosted in the current process.
 - Examine thread call stacks ([**!thread *Address***](../debugger/-thread.md)) to determine if a driver callback timed out. Look at the tick count for the threads. In Windows 8.1, the reflector times out after one minute.
-- Use [**!wdfkd.wdfdriverinfo MyDriver.dll 0x10**](../debugger/-wdfkd-wdfdriverinfo.md) to display the device tree in verbose form. Then click on [**!wdfdevice**](../debugger/-wdfkd-wdfdevice.md). This command displays detailed power, power policy, and Plug and Play (PnP) state information.
+- Use [**!wdfkd.wdfdriverinfo MyDriver.dll 0x10**](../debugger/-wdfkd-wdfdriverinfo.md) to display the device tree in verbose form. Then select [**!wdfdevice**](../debugger/-wdfkd-wdfdevice.md). This command displays detailed power, power policy, and Plug and Play (PnP) state information.
 - Use [**!wdfkd.wdfumirps**](../debugger/-wdfkd-wdfumirps.md) to look for pending IRPs.
 - Use [**!wdfkd.wdfdevicequeues**](../debugger/-wdfkd-wdfdevicequeues.md) to check the status of the driver's queues.
 - In a kernel-mode debugging session, you can use [**!wmitrace.logdump WudfTrace**](../debugger/-wmitrace-logdump.md) to display the trace log.

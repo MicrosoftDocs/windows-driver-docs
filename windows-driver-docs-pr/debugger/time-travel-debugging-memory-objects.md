@@ -92,7 +92,7 @@ In this example, all of the positions in the trace where the four bytes of memor
     [0x3]           
      ...
 ```
-In this example all of the postions in the trace where the four bytes of memory starting at 0x13a1710 were execute/change accessed are listed. Click on any occurrence to drill down on for addtional information on each occurrence of memory access.  
+In this example all of the postions in the trace where the four bytes of memory starting at 0x13a1710 were execute/change accessed are listed. Click on any occurrence to drill down on for additional information on each occurrence of memory access.  
 
 ```dbgcmd
 0:000> dx -r1 @$cursession.TTD.Memory(0x13a1710,0x13a1714, "ec")[0]

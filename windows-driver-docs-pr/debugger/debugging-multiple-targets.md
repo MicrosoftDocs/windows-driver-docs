@@ -116,7 +116,7 @@ Detached
 
 ## Resources
 
-For addtional information on debugging see the following resources.
+For additional information on debugging see the following resources.
 
 **Books**
 

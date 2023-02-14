@@ -1,15 +1,15 @@
-- name: "What's New for WDF Drivers"
+- name: "Windows Driver Frameworks"
   href: index.md
+- name: "KMDF Version History"
+  href: kmdf-version-history.md
+- name: "UMDF Version History"
+  href: umdf-version-history.md
 - name: "Concepts"
   items: 
   - name: "Using WDF to Develop a Driver"
     href: using-the-framework-to-develop-a-driver.md
   - name: "Framework Library Versioning"
     href: framework-library-versioning.md
-  - name: "KMDF Version History"
-    href: kmdf-version-history.md
-  - name: "UMDF Version History"
-    href: umdf-version-history.md
   - name: "WDF Architecture"
     href: kernel-mode-driver-framework-architecture.md
   - name: "Writing a Simple WDF Driver"
