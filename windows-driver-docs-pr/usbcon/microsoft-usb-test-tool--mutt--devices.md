@@ -16,13 +16,14 @@ To communicate with MUTT devices, you need the MUTT software package. This packa
 
 The manufactures listed in this article sell MUTT hardware boards required to run interoperability tests.
 
-- MUTT: [JJG Technologies]( https://go.microsoft.com/fwlink/p/?linkid=618287)
-- MUTT Pack: [JJG Technologies]( https://go.microsoft.com/fwlink/p/?linkid=618287)
-- SuperMUTT: [JJG Technologies]( https://go.microsoft.com/fwlink/p/?linkid=618287)
-- SuperMUTT Pack: [VIA Labs](https://go.microsoft.com/fwlink/p/?linkid=618285)
-- DR MUTT: [JJG Technologies]( https://go.microsoft.com/fwlink/p/?linkid=618287)
-- USB Type-C ConnEx: [MCCI](https://go.microsoft.com/fwlink/p/?LinkId=733488)
-- [JJG Technologies]( https://go.microsoft.com/fwlink/p/?linkid=618287)
+| Device | Manufacturers |
+|---|---|
+| MUTT | [JJG Technologies](http://www.jjgtechnologies.com/Mutt20.htm) |
+| MUTT Pack | [JJG Technologies](http://www.jjgtechnologies.com/MuttPack.htm) |
+| SuperMUTT | [JJG Technologies](http://www.jjgtechnologies.com/supermutt.htm) |
+| SuperMUTT Pack | [VIA Labs](https://www.via-labs.com/shop.php?id=2)<br>[JJG Technologies](http://shop.via-labs.com/VLI-shop-SuperMuttPack.html) |
+| Dual-role (DR) MUTT | [JJG Technologies](http://www.jjgtechnologies.com/drmutt.htm) |
+| Type-C dual-role (DR) connection exerciser | [MCCI](https://mcci.com/usb/dev-tools/3101-type-c-connection-exerciser/)<br>[JJG Technologies](http://www.jjgtechnologies.com/typecconne.htm) |
 
 ## MUTT
 
