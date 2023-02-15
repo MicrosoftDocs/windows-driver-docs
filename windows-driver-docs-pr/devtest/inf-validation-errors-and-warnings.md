@@ -371,6 +371,33 @@ Issues in the 2000-2999 range are issues that depend on the context, such as dir
 <td>This warning indicates that the INF file provides a section that is not referenced. When the driver is installed, the contents of the section referenced in the warning are not evaluated.</td>
 </tr>
 <tr>
+<td><strong>2084: Replaced legacy pattern in section</strong></td>
+<td><p>This warning indicates that the INF provides a legacy mechanism that will be automatically replaced with an up-to-date one during parse. When the driver is installed, the contents of the section will be replaced by the applicable Include/Needs directives.</p>
+<p> To address, use Include/Needs directives in the <a href="/windows-hardware/drivers/install/inf-ddinstall-section">DDInstall</a> section and for each possible DDInstall.* section to reference the corresponding Inbox INF DDInstall.* sections as shown below:</p>
+<pre>
+[DDInstall]
+Include=umpass.inf
+Needs=UmPass
+; also include any existing DDInstall directives
+
+[DDInstall.HW]
+Include=umpass.inf
+Needs=UmPass.HW
+; also include any existing DDInstall.HW directives
+
+[DDInstall.Interfaces]
+Include=umpass.inf
+Needs=UmPass.Interfaces
+; also include any existing DDInstall.Interfaces directives
+
+[DDInstall.Services]
+Include=umpass.inf
+Needs=UmPass.Services
+; also include any existing any DDInstall.Services directives
+</pre>
+</td>
+</tr>
+<tr>
 <td><strong>2222: Legacy directive will be ignored.</strong></td>
 <td>This warning indicates that the INF specifies a deprecated directive. When the driver is installed, the directive referencing the section is not evaluated. For example, the <a href="/windows-hardware/drivers/install/inf-logconfig-directive"><strong>INF LogConfig Directive</strong></a> directive is no longer supported, so the following section results in this warning.
 <pre>
