@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Low Energy (LE) audio
 description: This article provides an overview of Bluetooth LE audio introduced in Windows 11.
-ms.date: 01/27/2023
+ms.date: 02/15/2023
 ---
 
 # Bluetooth Low Energy (LE) audio
@@ -709,6 +709,7 @@ Other test scenarios should be covered by existing HLK audio tests for the audio
 
 ## Related topics
 
+- [ACX Audio Class Extensions](../audio/acx-audio-class-extensions-overview.md)
 - [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
 - [Bluetooth Core Specification](https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=521059)
 - [Bluetooth Basic Audio Profile Specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile/)
