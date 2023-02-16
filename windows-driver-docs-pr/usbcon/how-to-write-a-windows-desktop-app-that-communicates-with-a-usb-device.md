@@ -447,7 +447,7 @@ Return value:
 ```
 
 1. The app calls **CreateFile** to create a file handle for the device by specifying the device path retrieved earlier. It uses the FILE\_FLAG\_OVERLAPPED flag because WinUSB depends on this setting.
-2. By using the file handle for the device, the app creates a WinUSB interface handle. [WinUSB Functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) use this handle to identify the target device instead of the file handle. To obtain a WinUSB interface handle, the app calls [**WinUsb\_Initialize**](/windows/win32/api/winusb/nf-winusb-winusb_initialize) by passing the file handle. Use the received handle in the subsequent calls to get information from the device, and to send I/O requests to the device.
+2. By using the file handle for the device, the app creates a WinUSB interface handle. [WinUSB functions](using-winusb-api-to-communicate-with-a-usb-device.md) use this handle to identify the target device instead of the file handle. To obtain a WinUSB interface handle, the app calls [**WinUsb\_Initialize**](/windows/win32/api/winusb/nf-winusb-winusb_initialize) by passing the file handle. Use the received handle in the subsequent calls to get information from the device, and to send I/O requests to the device.
 
 ### Release the device handles - see CloseDevice in device.cpp
 

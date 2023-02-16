@@ -80,7 +80,7 @@ For information about the specification, see [Microsoft OS Descriptors for USB D
 
 The Microsoft-provided WinUSB (kernel-mode driver) now supports transfers to and from isochronous endpoints of a USB device
 
-The user-mode DLL, Winusb.dll, exposes these [WinUSB Functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) that a Windows desktop app can use to initiate such transfers.
+The user-mode DLL, Winusb.dll, exposes these [WinUSB functions](using-winusb-api-to-communicate-with-a-usb-device.md) that a Windows desktop app can use to initiate such transfers.
 
 -   [**WinUsb\_RegisterIsochBuffer**](/windows/win32/api/winusb/nf-winusb-winusb_registerisochbuffer)
 -   [**WinUsb\_UnregisterIsochBuffer**](/windows/win32/api/winusb/nf-winusb-winusb_unregisterisochbuffer)

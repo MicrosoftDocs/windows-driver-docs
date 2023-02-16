@@ -231,7 +231,7 @@ Enabling this setting significantly improves the performance of multiple read re
 [Choosing a driver model for developing a USB client driver](winusb-considerations.md)  
 [WinUSB (Winusb.sys) Installation](winusb-installation.md)  
 [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)  
-[WinUSB Functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb)  
+[WinUSB functions](using-winusb-api-to-communicate-with-a-usb-device.md)  
 [**WinUsb\_GetPipePolicy**](/windows/win32/api/winusb/nf-winusb-winusb_getpipepolicy)  
 [**WinUsb\_SetPipePolicy**](/windows/win32/api/winusb/nf-winusb-winusb_setpipepolicy)  
 [WinUSB](winusb.md)
