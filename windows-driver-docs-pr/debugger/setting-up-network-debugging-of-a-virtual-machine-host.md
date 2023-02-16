@@ -1,7 +1,7 @@
 ---
 title: Setting Up Network Debugging of a Virtual Machine with KDNET
 description: This topic describes how to configure a kernel debugging connection to a Hyper-V virtual machine.
-ms.date: 01/21/2021
+ms.date: 02/15/2023
 ---
 
 # Setting Up Network Debugging of a Virtual Machine - KDNET
@@ -42,19 +42,17 @@ To allow the kdnet utility to update BCDEdit boot settings, temporarily disable 
 
 You can re-enable Secure Boot once you’re done debugging and you’ve disabled kernel debugging on the target VM.  
 
-
 **4. Install the Debugging Tools for Windows**
 
-The debugging tools are used for the debugger and the kdnet utility and must be installed. For information on how to download and install the debugging tools, see [Download Debugging Tools for Windows](debugger-download-tools.md). 
-
+The debugging tools are used for the debugger and the kdnet utility and must be installed. For information on how to download and install the debugging tools, see [Download Debugging Tools for Windows](debugger-download-tools.md).
 
 ## Setting Up Network Debugging of a Virtual Machine - KDNET
 
-### Record the Host IP Address 
+### Record the Host IP Address
 
 To run the host debugger on the same PC as the target virtual machine, follow these steps. 
 
-1. In the host computer OS, open a Command Prompt window and enter *IPConfig* to display the IP configuration. 
+1. In the host computer OS, open a Command Prompt window and enter *IPConfig* to display the IP configuration.
 
 2. In the command output, locate the Ethernet adapter that you configured as the External Virtual Switch.
 
@@ -71,16 +69,18 @@ To run the host debugger on the same PC as the target virtual machine, follow th
 
     ```
 
+>[!TIP]
+> There may be multiple entires with similar names. Be sure and locate the virtual switch that you created.
+
 3. Record the IPv4 address of the External Virtual Switch that will be used as the host address for debugging.
 
-4. To confirm connectivity between the target and the host computer, open an elevated command prompt window on the target computer, and enter the following command, where *YourHostIPAddress* is the IP address of the host computer. 
+4. To confirm connectivity between the target and the host computer, open an elevated command prompt window on the target computer, and enter the following command, where *YourHostIPAddress* is the IP address of the host computer.
 
     ```console
     ping -4 <YourHostIPAddress>
     ```
 
-
-## <span id="Setting_Up_the_Target_Computer"></span><span id="setting_up_the_target_computer"></span><span id="SETTING_UP_THE_TARGET_COMPUTER"></span>Setting Up the VM Target Computer
+## Setting Up the VM Target Computer
 
 Use the kdnet.exe utility to automatically configure the  debugger settings on the target PC,  by following these steps.
 
@@ -130,10 +130,10 @@ For example, if the target is running 32 bit Windows, run a 32 version of the de
 
 8. Because a VM with enhanced session support can timeout when it is left in a breakpoint, disable *Enhanced session* support using the **View** pull down menu in the VM. 
 
-9. The VM will be restarted after the debugger is loaded and running. This process is described next. 
+9. The VM will be restarted after the debugger is loaded and running. This process is described next.
 
 
-## <span id="Starting_the_Debugging_Session"></span><span id="starting_the_debugging_session"></span><span id="STARTING_THE_DEBUGGING_SESSION"></span>Starting the Debugging Session
+## Starting the Debugging Session
 
 
 1. To connect to the target PC, use CTRL+V to paste in the main OS command window the windbg string that was returned by kdnet that you copied earlier.
@@ -144,7 +144,7 @@ For example, if the target is running 32 bit Windows, run a 32 version of the de
 
 When you first attempt to establish a network debugging connection, you might be prompted to allow the debugging application (WinDbg or KD) access through the firewall. You should respond to the prompt by checking the boxes for **all three** network types: domain, private, and public.
 
-## <span id="Restarting_Target"></span><span id="restarting_target"></span><span id="RESTARTING_TARGET"></span> Restarting the Target PC
+## Restarting the Target PC
 
 Once the debugger is connected, reboot the target computer. To force the VM to completely restart, use this command, from an administrator's command prompt.
 
@@ -157,7 +157,6 @@ When the target virtual machine is restarted, the debugger in the host OS should
 After connecting to the VM, hit break on your debugger and you can start debugging. 
 
 To support the debugging connection a Kernel Debug Network Adapter is added and visible in network properties, after the VM is rebooted.
-
 
 ## Troubleshooting KDNET Virtual Machine Network Debugging
 
