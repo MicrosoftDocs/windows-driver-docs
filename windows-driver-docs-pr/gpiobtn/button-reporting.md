@@ -1,7 +1,7 @@
 ---
 title: Button reporting
 description: The in-box general-purpose I/O (GPIO) button driver reports to Windows, based on the interrupts that are received on the defined GPIO resources of the button array.
-ms.date: 10/17/2018
+ms.date: 02/15/2023
 ---
 
 # Button reporting
@@ -91,9 +91,9 @@ The following keyboard combinations must be reported based on their completion, 
  
 
 **Note**  
--   For full guidance and implementation for the Power button, see [Power Button Behaviors and implementation](/collaborate/connect-redirect?DownloadID=47452).
--   For Connected Standby guidance for buttons, see [Connected Standby Wake Sources](/collaborate/connect-redirect?DownloadID=49891).
--   For additional guidance on ACPI implementation, see [ACPI Design Guide](/collaborate/connect-redirect?DownloadID=48755).
+-   For full guidance and implementation for the Power button, see [Power button and lid settings overview](/windows-hardware/customize/power-settings/power-button-and-lid-settings).
+-   For Connected Standby guidance for buttons, see [Wake sources](/windows-hardware/design/device-experiences/modern-standby-wake-sources).
+-   For additional guidance on ACPI implementation, see [ACPI design guide](/windows-hardware/drivers/acpi/).
 
  
 
