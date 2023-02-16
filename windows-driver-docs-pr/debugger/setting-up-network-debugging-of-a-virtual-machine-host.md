@@ -70,7 +70,7 @@ To run the host debugger on the same PC as the target virtual machine, follow th
     ```
 
 >[!TIP]
-> There may be multiple entires with similar names. Be sure and locate the virtual switch that you created.
+> There may be multiple adapter entries with similar names. Be sure and locate the virtual switch that you created.
 
 3. Record the IPv4 address of the External Virtual Switch that will be used as the host address for debugging.
 
