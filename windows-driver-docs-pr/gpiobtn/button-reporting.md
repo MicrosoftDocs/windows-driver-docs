@@ -25,10 +25,10 @@ The in-box GPIO button driver reports the button presses and combinations listed
 
 All non-GPIO based implementations must follow the same reporting scheme.
 
-The order of definition is Power, Windows, Volume Up, Volume Down, and Rotation Lock. For examples of how to create HID descriptors for these, see [HID button report descriptors](../hid/acpi-button-device.md).
+The order of definition is Power, Windows, Volume Up, Volume Down, and Rotation Lock. For examples of how to create HID descriptors for these functions, see [HID button report descriptors](../hid/acpi-button-device.md).
 
 **Note**  
-Previous requirements described the use of **Win + O** for Rotation Lock. Although this combination is still functional, it is not impervious to keyboard layout changes, whereas **Win + F14** is layout-agnostic.
+Previous requirements described the use of **Win + O** for Rotation Lock. Although this combination is still functional, it isn't impervious to keyboard layout changes, whereas **Win + F14** is layout-agnostic.
 
  
 
@@ -44,7 +44,7 @@ Previous requirements described the use of **Win + O** for Rotation Lock. Althou
 
  
 
-The following keyboard combinations must be reported based on their completion, and should not be repeated if the combination is held.
+The following keyboard combinations must be reported based on their completion, and shouldn't be repeated if the combination is held.
 
 **Table 3 Report Triggers for non-GPIO Button Combinations**
 
@@ -93,7 +93,7 @@ The following keyboard combinations must be reported based on their completion, 
 **Note**  
 -   For full guidance and implementation for the Power button, see [Power button and lid settings overview](/windows-hardware/customize/power-settings/power-button-and-lid-settings).
 -   For Connected Standby guidance for buttons, see [Wake sources](/windows-hardware/design/device-experiences/modern-standby-wake-sources).
--   For additional guidance on ACPI implementation, see [ACPI design guide](/windows-hardware/drivers/acpi/).
+-   For more information on ACPI implementation, see [ACPI design guide](/windows-hardware/drivers/acpi/).
 
  
 
