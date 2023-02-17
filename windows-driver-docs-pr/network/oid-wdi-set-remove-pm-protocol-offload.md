@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_REMOVE_PM_PROTOCOL_OFFLOAD
+ms.topic: reference
 description: OID_WDI_SET_REMOVE_PM_PROTOCOL_OFFLOAD removes the protocol offload specified by the protocol offload ID.
 ms.date: 07/18/2017
 keywords:

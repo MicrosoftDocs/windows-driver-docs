@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_DELETE_PORT
+ms.topic: reference
 description: OID_WDI_TASK_DELETE_PORT requests that the IHV component releases all resources (including MAC and PHY) allocated to the specified port.
 ms.date: 07/18/2017
 keywords:

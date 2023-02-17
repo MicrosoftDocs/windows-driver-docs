@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_MINIPORT_RESTART_ATTRIBUTES
+ms.topic: reference
 description: The OID_GEN_MINIPORT_RESTART_ATTRIBUTES OID identifies general attributes for the propagation of miniport adapter restart attributes in an NDIS driver stack.
 ms.date: 08/08/2017
 keywords: 

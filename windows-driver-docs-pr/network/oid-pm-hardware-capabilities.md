@@ -1,5 +1,6 @@
 ---
 title: OID_PM_HARDWARE_CAPABILITIES
+ms.topic: reference
 description: As a query, overlying drivers can use the OID_PM_HARDWARE_CAPABILITIES OID to query the power management hardware capabilities of a network adapter.
 ms.date: 08/08/2017
 keywords: 

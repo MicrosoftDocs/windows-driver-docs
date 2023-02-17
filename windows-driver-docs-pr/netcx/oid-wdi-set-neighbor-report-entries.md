@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_NEIGHBOR_REPORT_ENTRIES (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_SET_NEIGHBOR_REPORT_ENTRIES command sends the list of neighbor reports received from the AP to the LE.
 ms.date: 07/31/2021
 keywords:

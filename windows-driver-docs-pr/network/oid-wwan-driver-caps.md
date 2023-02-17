@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_DRIVER_CAPS
+ms.topic: reference
 description: OID_WWAN_DRIVER_CAPS returns the version of the MB driver model supported by the miniport driver.
 ms.date: 08/08/2017
 keywords: 

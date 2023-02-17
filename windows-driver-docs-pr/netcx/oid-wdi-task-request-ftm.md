@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_REQUEST_FTM (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_TASK_REQUEST_FTM command is issued to the LE to initiate Fine Timing Measurement (FTM) procedures with the listed BSS targets.
 ms.date: 07/31/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_PIN
+ms.topic: reference
 description: OID_WWAN_PIN sets or returns information related to Personal Identification Numbers (PINs).
 ms.date: 08/08/2017
 keywords: 

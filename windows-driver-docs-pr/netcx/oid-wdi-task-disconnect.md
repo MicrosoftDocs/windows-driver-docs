@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_DISCONNECT (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_TASK_DISCONNECT task command is used to terminate a connection with a peer.
 ms.date: 07/30/2021
 keywords:

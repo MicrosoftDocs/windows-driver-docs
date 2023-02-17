@@ -1,5 +1,6 @@
 ---
 title: OID_PNP_SET_POWER
+ms.topic: reference
 description: OID_PNP_SET_POWER
 ms.date: 08/08/2017
 keywords: 

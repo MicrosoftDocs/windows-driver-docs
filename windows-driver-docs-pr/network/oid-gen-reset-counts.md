@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_RESET_COUNTS
+ms.topic: reference
 description: As a query, the OID_GEN_RESET_COUNTS OID returns the number of times the miniport adapter was reset.
 ms.date: 08/08/2017
 keywords: 

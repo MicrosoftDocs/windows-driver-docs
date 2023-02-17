@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS
+ms.topic: reference
 description: OID_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS returns a list of commands supported for a device service.NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS status notification containing a NDIS_WWAN_ENUMERATE_DEVICE_SERVICE_COMMANDS structure that describes the result of the operation.
 ms.date: 08/08/2017
 keywords: 

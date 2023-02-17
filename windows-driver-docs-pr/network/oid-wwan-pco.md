@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_PCO
+ms.topic: reference
 description: OID_WWAN_PCO reports the status and the payload of a PCO value that the modem has received from the operator network. 
 keywords:
 - OID_WWAN_PCO, PCO OID

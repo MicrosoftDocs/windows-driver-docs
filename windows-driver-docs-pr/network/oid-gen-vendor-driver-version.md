@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_VENDOR_DRIVER_VERSION
+ms.topic: reference
 description: As a query, the OID_GEN_VENDOR_DRIVER_VERSION OID specifies the vendor-assigned version number of the miniport driver.
 keywords:
 - OID_GEN_VENDOR_DRIVER_VERSION

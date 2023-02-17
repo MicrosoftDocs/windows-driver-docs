@@ -1,5 +1,6 @@
 ---
 title: OID_SWITCH_PORT_PROPERTY_ENUM
+ms.topic: reference
 description: The Hyper-V extensible switch extension issues an object identifier (OID) method request of OID_SWITCH_PORT_PROPERTY_ENUM to obtain an array.
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_DEVICE_SERVICES
+ms.topic: reference
 description: OID_WWAN_DEVICE_SERVICES returns the list of device services supported by the miniport driver.NDIS_WWAN_DEVICE_SERVICES structure that indicates the supported device service GUIDs.
 ms.date: 08/08/2017
 keywords: 

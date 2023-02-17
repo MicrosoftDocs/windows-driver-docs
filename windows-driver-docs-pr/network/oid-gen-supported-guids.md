@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_SUPPORTED_GUIDS
+ms.topic: reference
 description: As a query, the OID_GEN_SUPPORTED_GUIDS OID requests the miniport driver to return an array of structures of the type NDIS_GUID.
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_SERVICE_ACTIVATION
+ms.topic: reference
 description: OID_WWAN_SERVICE_ACTIVATION instructs miniport drivers to initiate service activation in order to gain access to the provider's network.
 ms.date: 08/08/2017
 keywords: 

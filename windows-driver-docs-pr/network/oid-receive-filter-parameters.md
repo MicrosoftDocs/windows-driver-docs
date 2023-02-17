@@ -1,5 +1,6 @@
 ---
 title: OID_RECEIVE_FILTER_PARAMETERS
+ms.topic: reference
 description: An overlying driver issues an OID method request of OID_RECEIVE_FILTER_PARAMETERS to obtain the current configuration parameters of a filter on a network adapter.
 ms.date: 08/08/2017
 keywords: 

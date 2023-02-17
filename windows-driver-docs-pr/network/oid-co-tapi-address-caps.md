@@ -1,5 +1,6 @@
 ---
 title: OID_CO_TAPI_ADDRESS_CAPS
+ms.topic: reference
 description: This topic describes the OID_CO_TAPI_ADDRESS_CAPS object identifier (OID).
 keywords:
 - OID_CO_TAPI_ADDRESS_CAPS

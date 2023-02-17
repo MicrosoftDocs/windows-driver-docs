@@ -1,5 +1,6 @@
 ---
 title: OID_TCP_RSC_STATISTICS
+ms.topic: reference
 description: As a query, NDIS and overlying drivers or user-mode applications use the OID_TCP_RSC_STATISTICS OID to get the receive-segment coalescing (RSC) statistics of a miniport adapter.
 ms.date: 08/08/2017
 keywords: 

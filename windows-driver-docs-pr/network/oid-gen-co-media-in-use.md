@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_CO_MEDIA_IN_USE
+ms.topic: reference
 description: This topic describes the OID_GEN_CO_MEDIA_IN_USE object identifier (OID).
 keywords:
 - OID_GEN_CO_MEDIA_IN_USE

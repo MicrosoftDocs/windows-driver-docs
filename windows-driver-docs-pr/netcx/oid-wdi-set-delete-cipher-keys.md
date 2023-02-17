@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_DELETE_CIPHER_KEYS (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_SET_DELETE_CIPHER_KEYS command deletes cipher keys from the device's cipher key table.
 ms.date: 07/31/2021
 keywords:

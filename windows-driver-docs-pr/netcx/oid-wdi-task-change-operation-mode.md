@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_CHANGE_OPERATION_MODE (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_TASK_CHANGE_OPERATION_MODE command configures the operation mode for the port.
 ms.date: 07/31/2021
 keywords:

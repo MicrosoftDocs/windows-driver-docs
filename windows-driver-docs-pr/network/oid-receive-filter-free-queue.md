@@ -1,5 +1,6 @@
 ---
 title: OID_RECEIVE_FILTER_FREE_QUEUE
+ms.topic: reference
 description: NDIS protocol drivers issue object identifier (OID) set requests of OID_RECEIVE_FILTER_FREE_QUEUE to free a receive queue.
 ms.date: 08/08/2017
 keywords: 

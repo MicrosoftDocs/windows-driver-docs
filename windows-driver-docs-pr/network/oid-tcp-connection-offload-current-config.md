@@ -1,5 +1,6 @@
 ---
 title: OID_TCP_CONNECTION_OFFLOAD_CURRENT_CONFIG
+ms.topic: reference
 description: This topic describes the OID_TCP_CONNECTION_OFFLOAD_CURRENT_CONFIG object identifier (OID). 
 keywords:
 - OID_TCP_CONNECTION_OFFLOAD_CURRENT_CONFIG, WDK OIDs, WDK networking object identifiers, WDK networking OIDs

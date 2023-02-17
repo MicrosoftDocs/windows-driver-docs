@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_END_DWELL_TIME
+ms.topic: reference
 description: OID_WDI_SET_END_DWELL_TIME is typically sent during an Action Frame exchange, either when WDI has to wait some time before sending a followup Action Frame, or when the protocol sequence is complete.
 ms.date: 07/18/2017
 keywords:

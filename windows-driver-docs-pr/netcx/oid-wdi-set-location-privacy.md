@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_LOCATION_PRIVACY (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_SET_LOCATION_PRIVACY command sets the current location privacy setting.
 ms.date: 08/30/2021
 keywords:

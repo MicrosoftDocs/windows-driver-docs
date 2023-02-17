@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_NITZ
+ms.topic: reference
 description: OID_WWAN_NITZ is used to query the current network time with Network Identity and Time Zone (NITZ).
 ms.date: 04/11/2019
 keywords: 

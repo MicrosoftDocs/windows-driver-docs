@@ -1,5 +1,6 @@
 ---
 title: OID_CO_TAPI_GET_CALL_DIAGNOSTICS
+ms.topic: reference
 description: This topic describes the OID_CO_TAPI_GET_CALL_DIAGNOSTICS object identifier (OID).
 keywords:
 - OID_CO_TAPI_GET_CALL_DIAGNOSTICS

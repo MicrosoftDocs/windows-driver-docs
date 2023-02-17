@@ -1,5 +1,6 @@
 ---
 title: OID_TIMESTAMP_GET_CROSSTIMESTAMP
+ms.topic: reference
 description: An overlying driver issues an OID query request of OID_TIMESTAMP_GET_CROSSTIMESTAMP to obtain the cross timestamp from the NIC hardware.
 ms.date: 01/31/2021
 keywords: 

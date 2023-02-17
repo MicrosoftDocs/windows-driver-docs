@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_PREFERRED_PROVIDERS
+ms.topic: reference
 description: OID_WWAN_PREFERRED_PROVIDERS returns information about the list of preferred providers for GSM-based devices.
 ms.date: 08/08/2017
 keywords: 

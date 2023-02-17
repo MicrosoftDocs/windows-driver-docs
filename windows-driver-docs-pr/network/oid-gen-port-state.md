@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_PORT_STATE
+ms.topic: reference
 description: As a query, overlying drivers use the OID_GEN_PORT_STATE OID to get the current state of the port that is specified in the PortNumber member of the NDIS_OID_REQUEST structure.
 ms.date: 08/08/2017
 keywords: 

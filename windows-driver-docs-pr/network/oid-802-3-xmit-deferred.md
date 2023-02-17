@@ -1,5 +1,6 @@
 ---
 title: OID_802_3_XMIT_DEFERRED
+ms.topic: reference
 description: This topic describes the OID_802_3_XMIT_DEFERRED object identifier (OID).
 keywords:
 - OID_802_3_XMIT_DEFERRED

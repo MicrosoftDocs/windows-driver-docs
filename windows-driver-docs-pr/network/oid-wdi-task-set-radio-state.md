@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_SET_RADIO_STATE
+ms.topic: reference
 description: OID_WDI_TASK_SET_RADIO_STATE is used to set the Wi-Fi radio state for the adapter.
 ms.date: 07/18/2017
 keywords:

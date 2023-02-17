@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_SAR_TRANSMISSION_STATUS
+ms.topic: reference
 description: OID_WWAN_SAR_TRANSMISSION_STATUS enables or disables notifications from a mobile broadband (MB) modem on Specific Absorption Rate (SAR) transmission state.
 ms.date: 08/20/2018
 keywords: 

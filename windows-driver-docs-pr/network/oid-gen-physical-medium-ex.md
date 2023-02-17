@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_PHYSICAL_MEDIUM_EX
+ms.topic: reference
 description: As a query, the OID_GEN_PHYSICAL_MEDIUM_EX OID specifies the types of physical media that a miniport adapter supports.
 ms.date: 08/08/2017
 keywords: 

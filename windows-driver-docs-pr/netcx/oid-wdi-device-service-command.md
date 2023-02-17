@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_DEVICE_SERVICE_COMMAND (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_DEVICE_SERVICE_COMMAND command is used to set or get parameters for an IHV defined service identified by a GUID.
 ms.date: 07/31/2021
 keywords:

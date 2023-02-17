@@ -1,5 +1,6 @@
 ---
 title: OID_SWITCH_NIC_SAVE
+ms.topic: reference
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) method request of OID_SWITCH_NIC_SAVE during an operation to save run-time data for an extensible switch port and its network adapter connection.
 ms.date: 08/08/2017
 keywords: 

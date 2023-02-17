@@ -1,5 +1,6 @@
 ---
 title: OID_802_3_MAC_OPTIONS
+ms.topic: reference
 description: OID_802_3_MAC_OPTIONS
 ms.date: 08/08/2017
 keywords: 

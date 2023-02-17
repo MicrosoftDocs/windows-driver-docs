@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_ADAPTER_CONFIGURATION (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_SET_ADAPTER_CONFIGURATION command configures the adapter. It is an optional property and can only be sent before any ports are created.
 ms.date: 07/31/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_DELETE_MAC
+ms.topic: reference
 description: OID_WWAN_DELETE_MAC requests the miniport driver to delete the NDIS port specified in the NDIS_WWAN_MAC_INFO parameter.
 ms.date: 08/08/2017
 keywords: 

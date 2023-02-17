@@ -1,5 +1,6 @@
 ---
 title: OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA
+ms.topic: reference
 description: As a set, the TCP/IP transport uses the OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA OID to request that a miniport driver delete the specified security associations (SAs) from a NIC.
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_GET_SUPPORTED_DEVICE_SERVICES (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_GET_SUPPORTED_DEVICE_SERVICES command queries the IHV driver for all of its supported device services.
 ms.date: 07/31/2021
 keywords:

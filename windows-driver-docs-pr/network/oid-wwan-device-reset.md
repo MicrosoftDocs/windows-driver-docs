@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_DEVICE_RESET
+ms.topic: reference
 description: OID_WWAN_DEVICE_RESET
 keywords:
 - MB device reset, Mobile Broadband device reset, Mobile Broadband miniport driver device reset

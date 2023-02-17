@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_PRIVACY_EXEMPTION_LIST (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_SET_PRIVACY_EXEMPTION_LIST command is used by the host to provide the list of exemptions for packet description. The adapter applies these exemptions to packets it receives that match the IEEE EtherType value specified for the exemption.
 ms.date: 07/31/2021
 keywords:

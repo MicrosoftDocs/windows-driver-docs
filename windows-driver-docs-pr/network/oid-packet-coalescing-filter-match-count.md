@@ -1,5 +1,6 @@
 ---
 title: OID_PACKET_COALESCING_FILTER_MATCH_COUNT
+ms.topic: reference
 description: NDIS issues an OID query request of OID_PACKET_COALESCING_FILTER_MATCH_COUNT to obtain the number of packets that were cached, or coalesced, on the network adapter.
 ms.date: 08/08/2017
 keywords: 

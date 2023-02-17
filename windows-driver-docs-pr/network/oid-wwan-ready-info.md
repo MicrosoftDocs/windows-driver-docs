@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_READY_INFO
+ms.topic: reference
 description: OID_WWAN_READY_INFO returns the device ready-state, which includes its Subscriber Identity Module (SIM card).
 ms.date: 06/24/2022
 keywords: 

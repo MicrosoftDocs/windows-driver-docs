@@ -1,5 +1,6 @@
 ---
 title: OID_SRIOV_VF_VENDOR_DEVICE_ID
+ms.topic: reference
 description: An overlying driver issues an object identifier (OID) method request of OID_SRIOV_VF_VENDOR_DEVICE_ID to query the PCI Express (PCIe) device identifier (DeviceID) and vendor identifier (VendorID) for a PCI Express (PCIe) Virtual Function (VF) network adapter. This virtual network adapter is exposed in the Hyper-V child partition that is attached to the VF.Overlying drivers issue this OID method request to the miniport driver of the PCI Express (PCIe) Physical Function (PF) of the network adapter. This OID method request is required for PF miniport drivers that support the single root I/O virtualization (SR-IOV) interface.
 ms.date: 08/08/2017
 keywords: 

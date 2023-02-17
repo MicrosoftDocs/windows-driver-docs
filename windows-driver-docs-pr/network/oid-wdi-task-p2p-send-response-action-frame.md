@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME
+ms.topic: reference
 description: OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME is issued to the IHV component to send a Wi-Fi Direct Public Action Frame Request to a peer.
 ms.date: 07/18/2017
 keywords:

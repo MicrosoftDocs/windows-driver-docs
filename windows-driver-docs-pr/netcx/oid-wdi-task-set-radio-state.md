@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_SET_RADIO_STATE (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_TASK_SET_RADIO_STATE task command is used to set the Wi-Fi radio state for the adapter.
 ms.date: 07/31/2021
 keywords:

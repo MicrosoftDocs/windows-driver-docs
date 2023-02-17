@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_BROADCAST_BYTES_RCV
+ms.topic: reference
 description: As a query, the OID_GEN_BROADCAST_BYTES_RCV OID specifies the number of bytes in broadcast packets that are received without errors.
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_BYTES_RCV
+ms.topic: reference
 description: As a query, NDIS and overlying drivers use the OID_GEN_BYTES_RCV OID to determine the total number of bytes that a miniport adapter received.
 ms.date: 11/01/2019
 keywords: 

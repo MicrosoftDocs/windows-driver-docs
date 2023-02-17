@@ -1,5 +1,6 @@
 ---
 title: OID_TCP_TASK_OFFLOAD
+ms.topic: reference
 description: This topic describes the OID_TCP_TASK_OFFLOAD object identifier (OID).
 keywords:
 - OID_TCP_TASK_OFFLOAD

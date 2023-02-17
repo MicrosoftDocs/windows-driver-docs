@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_LAST_CHANGE
+ms.topic: reference
 description: As a query, use the OID_GEN_LAST_CHANGE OID to determine the time of the last operational state change of a network interface (ifLastChange from RFC 2863).
 ms.date: 08/08/2017
 keywords: 

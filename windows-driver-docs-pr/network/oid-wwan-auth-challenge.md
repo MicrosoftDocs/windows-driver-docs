@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_AUTH_CHALLENGE
+ms.topic: reference
 description: OID_WWAN_AUTH_CHALLENGE sends an authentication challenge to the MB device, or Subscriber Identity Module (SIM) card, to obtain the response from the SIM.n NDIS_STATUS_WWAN_AUTHENTICATION_RESPONSE status notification containing an NDIS_WWAN_AUTHENTICATION_RESPONSE structure to provide the authentication keys requested based on challenges by the caller when completing query requests.
 ms.date: 08/08/2017
 keywords: 

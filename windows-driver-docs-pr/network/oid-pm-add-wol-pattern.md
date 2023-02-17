@@ -1,5 +1,6 @@
 ---
 title: OID_PM_ADD_WOL_PATTERN
+ms.topic: reference
 description: As a set, NDIS protocol drivers use the OID_PM_ADD_WOL_PATTERN OID to add a power management wake-on-LAN pattern to a network adapter. The InformationBuffer member of the NDIS_OID_REQUEST structure contains a pointer to an NDIS_PM_WOL_PATTERN structure.
 ms.date: 08/08/2017
 keywords: 

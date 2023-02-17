@@ -1,5 +1,6 @@
 ---
 title: OID_CO_SIGNALING_DISABLED
+ms.topic: reference
 description: This topic describes the OID_CO_SIGNALING_DISABLED object identifier (OID).
 keywords:
 - OID_CO_SIGNALING_DISABLED

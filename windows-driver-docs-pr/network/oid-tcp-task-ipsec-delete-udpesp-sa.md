@@ -1,5 +1,6 @@
 ---
 title: OID_TCP_TASK_IPSEC_DELETE_UDPESP_SA
+ms.topic: reference
 description: This topic describes the OID_TCP_TASK_IPSEC_DELETE_UDPESP_SA object identifier (OID).
 keywords:
 - OID_TCP_TASK_IPSEC_DELETE_UDPESP_SA

@@ -1,5 +1,6 @@
 ---
 title: OID_QOS_OFFLOAD_DELETE_SQ
+ms.topic: reference
 description: A driver issues OID_QOS_OFFLOAD_DELETE_SQ to delete a Scheduler Queue (SQ) on the miniport adapter.
 ms.assetid:
 ms.date: 10/30/2020

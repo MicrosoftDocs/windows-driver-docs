@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_UICC_ACCESS_RECORD
+ms.topic: reference
 description: OID_WWAN_UICC_ACCESS_RECORD accesses a UICC linear fixed or cyclic file, the structure type of which is WwanUiccFileStructureCyclic or WwanUiccFileStructureLinear.
 ms.date: 04/10/2019
 keywords: 

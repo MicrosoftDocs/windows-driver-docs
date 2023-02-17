@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_GET_RECEIVE_COALESCING_MATCH_COUNT
+ms.topic: reference
 description: OID_WDI_GET_RECEIVE_COALESCING_MATCH_COUNT requests the number of packets that have matched receive filters on the network port.
 ms.date: 07/18/2017
 keywords:

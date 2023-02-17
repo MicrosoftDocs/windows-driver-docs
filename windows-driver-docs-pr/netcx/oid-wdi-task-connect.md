@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_CONNECT (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_TASK_CONNECT task command requests that the IHV component connects to an Access Point or to a Wi-Fi Direct GO.
 ms.date: 10/30/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: OID_QOS_HARDWARE_CAPABILITIES
+ms.topic: reference
 description: An overlying driver issues an object identifier (OID) query request of OID_QOS_HARDWARE_CAPABILITIES to obtain the NDIS Quality of Service (QoS) hardware capabilities of a network adapter.
 ms.date: 08/08/2017
 keywords: 

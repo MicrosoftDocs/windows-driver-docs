@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_UICC_ACCESS_BINARY
+ms.topic: reference
 description: OID_WWAN_UICC_ACCESS_BINARY accesses a UICC binary file, the structure type of which is WwanUiccFileStructureTransparent or WwanUiccFileStructureBerTLV.
 ms.date: 04/10/2019
 keywords: 

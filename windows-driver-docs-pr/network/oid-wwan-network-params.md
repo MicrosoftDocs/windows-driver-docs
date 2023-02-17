@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_NETWORK_PARAMS
+ms.topic: reference
 description: OID_WWAN_NETWORK_PARAMS retrieves the network parameters from an MB device.
 ms.date: 06/15/2021
 keywords: 

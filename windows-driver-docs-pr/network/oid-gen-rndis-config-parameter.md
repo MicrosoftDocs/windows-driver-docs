@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_RNDIS_CONFIG_PARAMETER
+ms.topic: reference
 description: As a set, the OID_GEN_RNDIS_CONFIG_PARAMETER is used to set device-specific parameters.
 ms.date: 08/08/2017
 keywords: 

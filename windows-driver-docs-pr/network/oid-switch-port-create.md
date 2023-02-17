@@ -1,5 +1,6 @@
 ---
 title: OID_SWITCH_PORT_CREATE
+ms.topic: reference
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_PORT_CREATE to notify extensible switch extensions about the creation of an extensible switch port.
 ms.date: 08/08/2017
 keywords: 

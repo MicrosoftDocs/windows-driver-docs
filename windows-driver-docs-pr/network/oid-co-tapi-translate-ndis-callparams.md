@@ -1,5 +1,6 @@
 ---
 title: OID_CO_TAPI_TRANSLATE_NDIS_CALLPARAMS
+ms.topic: reference
 description: This topic describes the OID_CO_TAPI_TRANSLATE_NDIS_CALLPARAMS object identifier (OID).
 keywords:
 - OID_CO_TAPI_TRANSLATE_NDIS_CALLPARAMS

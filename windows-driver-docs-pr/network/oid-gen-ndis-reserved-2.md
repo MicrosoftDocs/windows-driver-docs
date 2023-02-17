@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_NDIS_RESERVED_2
+ms.topic: reference
 description: The OID_GEN_NDIS_RESERVED_2 OID is reserved for NDIS. NDIS drivers do not use this OID.
 ms.date: 08/08/2017
 keywords: 

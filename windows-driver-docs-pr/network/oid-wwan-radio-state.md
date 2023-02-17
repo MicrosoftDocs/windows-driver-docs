@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_RADIO_STATE
+ms.topic: reference
 description: OID_WWAN_RADIO_STATE sets or returns information about a MB device's radio power state.
 ms.date: 08/08/2017
 keywords: 
