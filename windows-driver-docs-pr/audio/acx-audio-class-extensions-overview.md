@@ -209,3 +209,5 @@ The ACX manager is used for supporting composite audio endpoints.
 [ACX multi stack cross driver communications](acx-audio-multi-stack.md)
 
 [ACX device enumeration and power management](acx-power-management.md)
+
+[ACX streaming](acx-streaming.md)
