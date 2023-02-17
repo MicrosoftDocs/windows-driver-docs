@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_BSS_ENTRY_LIST (dot11wificxintf.h)
+ms.topic: reference
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_BSS_ENTRY_LIST to inform the host about updates to the BSS entries. This is an unsolicited indication and can be sent at any time.
 ms.date: 06/30/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: NDIS_MDL_LINKAGE macro
+ms.topic: reference
 description: The NDIS_MDL_LINKAGE macro retrieves a pointer to the next MDL that is associated with the specified MDL.
 ms.date: 07/18/2017
 keywords:

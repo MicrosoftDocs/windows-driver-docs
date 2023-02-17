@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WAN_FRAGMENT
+ms.topic: reference
 description: The NDIS_STATUS_WAN_FRAGMENT status indicates that a WAN-capable miniport driver has received a partial packet from a remote node.
 ms.date: 07/18/2017
 keywords:

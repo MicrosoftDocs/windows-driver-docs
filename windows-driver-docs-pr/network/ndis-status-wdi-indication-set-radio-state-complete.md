@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_SET_RADIO_STATE_COMPLETE
+ms.topic: reference
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_SET_RADIO_STATE_COMPLETE to indicate the completion of OID_WDI_TASK_SET_RADIO_STATE.
 ms.date: 07/18/2017
 keywords:

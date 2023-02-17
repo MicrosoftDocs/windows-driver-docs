@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_OPER_STATUS
+ms.topic: reference
 description: The NDIS_STATUS_OPER_STATUS status indicates the current operational state of an NDIS network interface to overlying drivers.
 ms.date: 07/18/2017
 keywords:

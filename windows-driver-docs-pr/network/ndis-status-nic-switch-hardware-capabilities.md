@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_NIC_SWITCH_HARDWARE_CAPABILITIES
+ms.topic: reference
 description: The NDIS_STATUS_NIC_SWITCH_HARDWARE_CAPABILITIES status indicates to NDIS and overlying drivers that the hardware capabilities of the NIC switch in a network adapter have changed.
 ms.date: 08/08/2017
 keywords: 

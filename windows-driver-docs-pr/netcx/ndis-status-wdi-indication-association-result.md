@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT (dot11wificxintf.h)
+ms.topic: reference
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_ASSOCIATION_RESULT to indicate association results.
 ms.date: 06/30/2021
 keywords:

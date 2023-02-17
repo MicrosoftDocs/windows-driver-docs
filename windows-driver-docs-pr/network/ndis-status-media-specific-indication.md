@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_MEDIA_SPECIFIC_INDICATION
+ms.topic: reference
 description: The NDIS_STATUS_MEDIA_SPECIFIC_INDICATION status indicates a media-specific status.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_PD_CURRENT_CONFIG
+ms.topic: reference
 description: This status indication is a notification that the NDIS_PD_CONFIG structure has changed.
 ms.date: 07/18/2017
 keywords:

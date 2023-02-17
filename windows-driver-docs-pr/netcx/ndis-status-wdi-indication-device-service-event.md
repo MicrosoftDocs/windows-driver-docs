@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT (dot11wificxintf.h)
+ms.topic: reference
 description: The NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT status indication is used by WiFiCx drivers to pass on unsolicited information about a device to a user mode client.
 ms.date: 08/30/2021
 keywords:

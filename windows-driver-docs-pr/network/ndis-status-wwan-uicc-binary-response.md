@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_UICC_BINARY_RESPONSE
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_UICC_BINARY_RESPONSE notification to inform the mobile broadband (MB) service about the completion of a previous OID_WWAN_UICC_ACCESS_BINARY Query request.
 ms.date: 04/10/2019
 keywords: 

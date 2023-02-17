@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_SWITCH_NIC_STATUS
+ms.topic: reference
 description: The NDIS_STATUS_SWITCH_NIC_STATUS status indication is used to encapsulate a status indication from a physical network adapter that is bound to the external network adapter of the Hyper-V extensible switch.
 ms.date: 07/18/2017
 keywords:
