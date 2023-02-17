@@ -93,7 +93,5 @@ The following keyboard combinations must be reported based on their completion, 
 **Note**  
 -   For full guidance and implementation for the Power button, see [Power button and lid settings overview](/windows-hardware/customize/power-settings/power-button-and-lid-settings).
 -   For Connected Standby guidance for buttons, see [Wake sources](/windows-hardware/design/device-experiences/modern-standby-wake-sources).
--   For more information on ACPI implementation, see [ACPI design guide](/windows-hardware/drivers/acpi/).
-
- 
+-   For more information on ACPI implementation, see [ACPI design guide](../acpi/index.md).
 

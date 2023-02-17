@@ -10,7 +10,7 @@ ms.date: 01/24/2023
 
 # Writing Pre-operation Callback Routines
 
-A minifilter driver uses one or more *pre-operation callback routines* to filter I/O operations. [**Pre-operation callback routines**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_pre_operation_callback) are similar to the [dispatch routines used in the legacy filter model](/windows-hardware/drivers/ifs/writing-irp-dispatch-routines).
+A minifilter driver uses one or more *pre-operation callback routines* to filter I/O operations. [**Pre-operation callback routines**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_pre_operation_callback) are similar to the [dispatch routines used in the legacy filter model](./writing-irp-dispatch-routines.md).
 
 A minifilter registers a pre-operation callback routine for a particular type of I/O operation by storing the callback routine's entry point in the **OperationRegistration** member of the [**FLT_REGISTRATION**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_registration) structure. The minifilter passes this member to *FltMgr* as a parameter to [**FltRegisterFilter**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltregisterfilter) in its [**DriverEntry**](writing-a-driverentry-routine-for-a-minifilter-driver.md) routine.
 
