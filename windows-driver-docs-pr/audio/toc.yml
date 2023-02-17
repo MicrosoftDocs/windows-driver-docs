@@ -14,7 +14,9 @@
   - name: "ACX - Multi stack cross driver communications"
     href: acx-audio-multi-stack.md
   - name: "ACX device enumeration and power management"
-    href: acx-power-management.md    
+    href: acx-power-management.md
+  - name: "ACX streaming"
+    href: acx-streaming.md
   - name: "ACX - Version overview"
     href: acx-version-overview.md
 - name: "WDM Audio Drivers Overview"
