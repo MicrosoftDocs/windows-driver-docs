@@ -110,7 +110,7 @@ Nearly all drivers queue I/O requests. WDM drivers typically use one of the foll
 
 A WDF driver creates a WDF queue object (WDFQUEUE) to represent an I/O queue. The WDF queue object is similar to a cancel-safe queue but provides additional features.
 
-When you port a WDM driver to WDF, you can use the WDF queuing mechanism regardless of the mechanism that the WDM driver uses. For more information about queues, see [Framework Queue Objects](framework-queue-objects.md).
+When you port a WDM driver to WDF, you can use the WDF queuing mechanism regardless of the mechanism that the WDM driver uses. For more information about queues, see [Framework Queue Objects](/windows-hardware/drivers/wdf/creating-i-o-queues).
 
 ## Synchronization and Concurrency
 
@@ -123,6 +123,4 @@ For more information about the synchronization features that the framework provi
 
 
 Like WDM drivers, KMDF and UMDF drivers are installed by using INF files. However, WDF driver installation sometimes requires a framework co-installer that is provided with the Windows Driver Kit (WDK). The co-installer ensures that a compatible version of the framework library is present on the target system. For information about installation, see [Building and Loading a WDF Driver](building-and-loading-a-kmdf-driver.md).
-
- 
 

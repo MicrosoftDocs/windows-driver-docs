@@ -32,7 +32,7 @@ Creating a framework device object for an enumerated child device typically incl
 
 -   Registering bus driver-specific callback functions.
 
-    Most bus drivers call [**WdfPdoInitSetEventCallbacks**](/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitseteventcallbacks), because they must specify the system hardware resources that a device requires. For more information about specifying hardware resources, see [Hardware Resources for Framework-Based Drivers](hardware-resources-for-kmdf-drivers.md). Additional callback functions can be registered if the device and driver support ejection.
+    Most bus drivers call [**WdfPdoInitSetEventCallbacks**](/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitseteventcallbacks), because they must specify the system hardware resources that a device requires. For more information about specifying hardware resources, see [Hardware Resources for Framework-Based Drivers](/windows-hardware/drivers/wdf/introduction-to-hardware-resources). Additional callback functions can be registered if the device and driver support ejection.
 
 -   Reporting [device identification strings](../install/device-identification-strings.md).
 
@@ -55,6 +55,4 @@ If the driver encounters an error while initializing the WDFDEVICE\_INIT structu
 After the bus driver has created the device object, it typically calls [**WdfDeviceSetPnpCapabilities**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetpnpcapabilities) and [**WdfDeviceSetPowerCapabilities**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetpowercapabilities) to report the device's Plug and Play and power capabilities.
 
 Each bus driver is also the function driver for the bus adapter. Therefore, the driver must also provide an [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function. This callback function creates a functional device object (FDO) for each bus adapter on the system. For more information about creating FDOs, see [Creating Device Objects in a Function Driver](creating-device-objects-in-a-function-driver.md).
-
- 
 
