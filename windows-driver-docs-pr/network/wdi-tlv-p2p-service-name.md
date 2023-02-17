@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SERVICE_NAME
+ms.topic: reference
 description: WDI_TLV_P2P_SERVICE_NAME is a TLV that contains the name of a service.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_FT_MDE
+ms.topic: reference
 description: WDI_TLV_FT_MDE is a TLV that contains the MDIE of a BSS entry.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_UNREACHABLE_DETECTION_THRESHOLD (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_UNREACHABLE_DETECTION_THRESHOLD is a WiFiCx TLV that contains the unreachable detection threshold.
 ms.date: 07/31/2021
 keywords:

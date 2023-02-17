@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY
+ms.topic: reference
 description: WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY is a TLV that contains RSN Rekey protocol offload parameters.
 ms.date: 07/18/2017
 keywords:

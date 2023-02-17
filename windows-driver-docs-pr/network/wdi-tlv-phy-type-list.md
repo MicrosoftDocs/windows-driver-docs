@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PHY_TYPE_LIST
+ms.topic: reference
 description: WDI_TLV_PHY_TYPE_LIST is a TLV that contains an array of PHY types.
 ms.date: 07/18/2017
 keywords:

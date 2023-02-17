@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_LCI_REPORT_STATUS
+ms.topic: reference
 description: WDI_TLV_LCI_REPORT_STATUS is a TLV that contains the status result of a Location Configuration Information (LCI) report, if one was requested during a Fine Timing Measurement (FTM) request.
 ms.date: 02/15/2019
 keywords:

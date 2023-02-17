@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SERVICE_INFORMATION (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_SERVICE_INFORMATION is a WiFiCx TLV that contains Wi-Fi Direct Service Information.
 ms.date: 06/17/2021
 keywords:

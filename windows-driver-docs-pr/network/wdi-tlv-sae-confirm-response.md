@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SAE_CONFIRM_RESPONSE
+ms.topic: reference
 description: WDI_TLV_SAE_CONFIRM_RESPONSE is a TLV that contains the Simultaneous Authentication of Equals (SAE) Confirm response frame.
 ms.date: 02/15/2019
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_FT_R1KHID (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WiFiCx does not use the WDI_TLV_FT_R1KHID TLV.
 ms.date: 09/30/2021
 keywords:

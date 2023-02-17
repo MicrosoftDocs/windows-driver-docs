@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_FT_RSNIE
+ms.topic: reference
 description: WDI_TLV_FT_RSNIE is a TLV that contains the Fast Transition RSN IE byte blob.
 ms.date: 07/18/2017
 keywords:

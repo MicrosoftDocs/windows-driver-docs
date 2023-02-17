@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_DEVICE_NAME
+ms.topic: reference
 description: WDI_TLV_P2P_DEVICE_NAME is a TLV that contains a device name.
 ms.date: 07/18/2017
 keywords:

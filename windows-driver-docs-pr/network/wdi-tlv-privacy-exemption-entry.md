@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PRIVACY_EXEMPTION_ENTRY
+ms.topic: reference
 description: WDI_TLV_PRIVACY_EXEMPTION_ENTRY is a TLV that contains a privacy exemption entry.
 ms.date: 07/18/2017
 keywords:

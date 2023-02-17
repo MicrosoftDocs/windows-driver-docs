@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_OPERATING_CLASS
+ms.topic: reference
 description: WDI_TLV_OPERATING_CLASS is a TLV that contains the frequency band for a channel.
 ms.date: 07/18/2017
 keywords:

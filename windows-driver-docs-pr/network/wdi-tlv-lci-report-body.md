@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_LCI_REPORT_BODY
+ms.topic: reference
 description: WDI_TLV_LCI_REPORT_BODY is a TLV that contains the Location Configuration Report (LCI) for a Fine Timing Measuremement (FTM) request.
 ms.date: 02/15/2019
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CONFIGURED_CIPHER_KEY
+ms.topic: reference
 description: WDI_TLV_CONFIGURED_CIPHER_KEY is a TLV that contains a list of configured ciphers to be set in OID_WDI_GET_PM_PROTOCOL_OFFLOAD.
 ms.date: 05/07/2021
 keywords:

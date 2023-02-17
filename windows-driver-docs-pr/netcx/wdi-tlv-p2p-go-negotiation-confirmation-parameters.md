@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_GO_NEGOTIATION_CONFIRMATION_PARAMETERS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_GO_NEGOTIATION_CONFIRMATION_PARAMETERS is a WiFiCx TLV that contains incoming GO Negotiation Confirmation parameters.
 ms.date: 07/31/2021
 keywords:

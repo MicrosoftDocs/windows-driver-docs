@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_RTT
+ms.topic: reference
 description: WDI_TLV_RTT is a TLV that contains the measured roundtrip time (RTT), in picoseconds, for a Fine Timing Measurement (FTM) request. 
 ms.date: 02/15/2019
 keywords:

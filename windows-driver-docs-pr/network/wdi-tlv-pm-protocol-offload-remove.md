@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PM_PROTOCOL_OFFLOAD_REMOVE
+ms.topic: reference
 description: WDI_TLV_PM_PROTOCOL_OFFLOAD_REMOVE is a TLV that contains the protocol offload ID to be removed with OID_WDI_SET_REMOVE_PM_PROTOCOL_OFFLOAD.
 ms.date: 07/18/2017
 keywords:

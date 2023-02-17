@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_UNREACHABLE_DETECTION_THRESHOLD
+ms.topic: reference
 description: WDI_TLV_UNREACHABLE_DETECTION_THRESHOLD is a TLV that contains the unreachable detection threshold.
 ms.date: 07/18/2017
 keywords:

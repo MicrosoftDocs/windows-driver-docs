@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_INDICATION_STOP_AP
+ms.topic: reference
 description: WDI_TLV_INDICATION_STOP_AP is a TLV that contains the reason for a Stop AP indication.
 ms.date: 07/18/2017
 keywords:

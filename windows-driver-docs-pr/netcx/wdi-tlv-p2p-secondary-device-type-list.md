@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SECONDARY_DEVICE_TYPE_LIST (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_SECONDARY_DEVICE_TYPE_LIST is a WiFiCx TLV that contains a list of secondary device types.
 ms.date: 07/31/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_OPERATION_MODE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_OPERATION_MODE is a WiFiCx TLV that contains the desired operation mode.
 ms.date: 07/31/2021
 keywords:

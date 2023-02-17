@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_GO_NEGOTIATION_CONFIRMATION_INFO (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_GO_NEGOTIATION_CONFIRMATION_INFO is a WiFiCx TLV that contains Wi-Fi Direct GO Negotiation Confirmation information.
 ms.date: 07/31/2021
 keywords:

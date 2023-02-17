@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_LOW_LATENCY_CONNECTION_QUALITY_PARAMETERS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_LOW_LATENCY_CONNECTION_QUALITY_PARAMETERS is a WiFiCx TLV that contains low latency connection quality parameters.
 ms.date: 07/31/2021
 keywords:

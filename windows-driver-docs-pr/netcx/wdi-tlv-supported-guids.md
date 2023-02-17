@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SUPPORTED_GUIDS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_SUPPORTED_GUIDS is a WiFiCx TLV that contains a supported NDIS GUID.
 ms.date: 09/30/2021
 keywords:

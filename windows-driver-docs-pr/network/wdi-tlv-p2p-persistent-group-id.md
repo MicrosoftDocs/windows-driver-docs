@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_PERSISTENT_GROUP_ID
+ms.topic: reference
 description: WDI_TLV_P2P_PERSISTENT_GROUP_ID is a TLV that contains a Group ID of a Persistent Group to be used for a connection.
 ms.date: 07/18/2017
 keywords:

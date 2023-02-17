@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_FIRMWARE_VERSION (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_FIRMWARE_VERSION is a WiFiCx TLV that contains the firmware version.
 ms.date: 09/30/2021
 keywords:

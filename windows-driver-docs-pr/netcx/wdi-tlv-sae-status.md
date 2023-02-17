@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SAE_STATUS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_SAE_STATUS is a WiFix TLV that contains Simultaneous Authentication of Equals (SAE) authentication failure error status.
 ms.date: 07/31/2021
 keywords:

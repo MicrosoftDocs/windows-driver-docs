@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CHECKSUM_OFFLOAD_CAPABILITIES
+ms.topic: reference
 description: WDI_TLV_CHECKSUM_OFFLOAD_CAPABILITIES is a TLV that contains checksum offload capabilities for IPv4 and IPv6.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_COALESCING_FILTER_MATCH_COUNT
+ms.topic: reference
 description: WDI_TLV_COALESCING_FILTER_MATCH_COUNT is a TLV that contains the number of packets that have matched receive filters on the network port.
 ms.date: 07/18/2017
 keywords:

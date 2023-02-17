@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SAE_ANTI_CLOGGING_TOKEN
+ms.topic: reference
 description: WDI_TLV_SAE_ANTI_CLOGGING_TOKEN is a TLV that contains the anti-clogging token for a Simultaneous Authentication of Equals (SAE) Commit request.
 ms.date: 02/15/2019
 keywords:

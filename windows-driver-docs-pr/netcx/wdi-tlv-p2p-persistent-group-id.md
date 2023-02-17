@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_PERSISTENT_GROUP_ID (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_PERSISTENT_GROUP_ID is a WiFiCx TLV that contains a Group ID of a Persistent Group to be used for a connection.
 ms.date: 07/31/2021
 keywords:

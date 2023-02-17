@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_BSS_ENTRY_CHANNEL_INFO (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_BSS_ENTRY_CHANNEL_INFO is a WiFiCx TLV that contains BSS entry channel information.
 ms.date: 06/17/2021
 keywords:

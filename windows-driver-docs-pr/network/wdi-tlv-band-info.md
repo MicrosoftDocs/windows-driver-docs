@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_BAND_INFO
+ms.topic: reference
 description: WDI_TLV_BAND_INFO is a TLV that contains band information.
 ms.date: 07/18/2017
 keywords:

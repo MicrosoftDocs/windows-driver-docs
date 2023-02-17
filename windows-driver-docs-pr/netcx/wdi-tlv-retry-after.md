@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_RETRY_AFTER (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_RETRY_AFTER is a WiFiCx TLV that contains the duration, in seconds, that should pass before trying to request a new Fine Timing Measurement (FTM) from a target BSS.
 ms.date: 07/31/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_INTERFACE_ADDRESS_LIST (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_INTERFACE_ADDRESS_LIST is a WiFiCx TLV that contains an address list for a Wi-Fi Direct interface.
 ms.date: 09/30/2021
 keywords:

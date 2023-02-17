@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SAE_INDICATION_TYPE
+ms.topic: reference
 description: WDI_TLV_SAE_INDICATION_TYPE is a TLV that contains the type of information needed to continue SAE authentication with a target BSSID, or notification that authentication cannot continue.
 ms.date: 02/15/2019
 keywords:

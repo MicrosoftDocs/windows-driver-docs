@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_FTM_NUMBER_OF_MEASUREMENTS is a WiFiCx TLV that contains the number of measurements used to provide the round trip time (RTT) for a Fine Timing Measurement (FTM) request.
 ms.date: 07/31/2021
 keywords:

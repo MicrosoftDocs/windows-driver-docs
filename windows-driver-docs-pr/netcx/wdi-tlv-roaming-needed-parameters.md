@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ROAMING_NEEDED_PARAMETERS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_ROAMING_NEEDED_PARAMETERS is a WiFiCx TLV that contains the reason for a roam trigger. This is used in the NDIS_STATUS_WDI_INDICATION_ROAMING_NEEDED payload.
 ms.date: 06/30/2021
 keywords:

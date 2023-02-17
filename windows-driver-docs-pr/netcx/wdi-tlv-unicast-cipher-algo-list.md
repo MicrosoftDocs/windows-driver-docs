@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_UNICAST_CIPHER_ALGO_LIST (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_UNICAST_CIPHER_ALGO_LIST is a WiFiCx TLV that contains a list of unicast cipher algorithms.
 ms.date: 06/30/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_OPERATING_IN_PBSS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_OPERATING_IN_PBSS is a WiFiCx TLV that specifies whether the AP is operating as a PCP in PBSS mode. 
 ms.date: 08/30/2021
 keywords:

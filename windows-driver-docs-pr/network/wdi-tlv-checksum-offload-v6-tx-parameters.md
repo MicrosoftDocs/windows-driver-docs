@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CHECKSUM_OFFLOAD_V6_TX_PARAMETERS (0xDC)
+ms.topic: reference
 description: WDI_TLV_CHECKSUM_OFFLOAD_V6_TX_PARAMETERS is a TLV that contains for Tx checksum offload for IPv6.
 ms.date: 07/18/2017
 keywords:

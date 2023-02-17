@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ASSOCIATION_REQUEST_DEVICE_CONTEXT (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_ASSOCIATION_REQUEST_DEVICE_CONTEXT is a WiFiCx TLV that contains vendor-specific information that is passed down to the port if the host decides to send a response to a incoming association request.
 ms.date: 07/31/2021
 keywords:

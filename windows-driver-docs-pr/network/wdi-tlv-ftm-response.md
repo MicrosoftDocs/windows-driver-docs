@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_FTM_RESPONSE
+ms.topic: reference
 description: WDI_TLV_FTM_RESPONSE is a TLV that contains Fine Timing Measurement (FTM) response information from a BSS target.
 ms.date: 02/13/2019
 keywords:

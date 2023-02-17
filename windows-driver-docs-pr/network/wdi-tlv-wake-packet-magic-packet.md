@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_WAKE_PACKET_MAGIC_PACKET
+ms.topic: reference
 description: WDI_TLV_WAKE_PACKET_MAGIC_PACKET is a TLV that contains a pattern ID of a magic packet for OID_WDI_SET_ADD_WOL_PATTERN.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CONNECTION_SETTINGS
+ms.topic: reference
 description: WDI_TLV_CONNECTION_SETTINGS is a TLV that contains connection settings for OID_WDI_TASK_CONNECT.
 ms.date: 07/18/2017
 keywords:

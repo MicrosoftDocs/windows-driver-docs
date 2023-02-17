@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_CONFIG_METHODS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_CONFIG_METHODS is a WiFiCx TLV that contains Wi-Fi Direct configuration methods.
 ms.date: 06/17/2021
 keywords:

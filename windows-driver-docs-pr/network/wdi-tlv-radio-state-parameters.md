@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_RADIO_STATE_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_RADIO_STATE_PARAMETERS is a TLV that contains radio state parameters for OID_WDI_TASK_SET_RADIO_STATE.
 ms.date: 07/18/2017
 keywords:

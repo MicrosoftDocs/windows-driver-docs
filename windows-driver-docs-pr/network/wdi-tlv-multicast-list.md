@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_MULTICAST_LIST
+ms.topic: reference
 description: WDI_TLV_MULTICAST_LIST is a TLV that contains an array of multicast MAC addresses.
 ms.date: 07/18/2017
 keywords:

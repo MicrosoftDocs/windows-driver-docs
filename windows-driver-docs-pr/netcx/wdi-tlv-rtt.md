@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_RTT (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_RTT is a WiFiCx TLV that contains the measured roundtrip time (RTT), in picoseconds, for a Fine Timing Measurement (FTM) request. 
 ms.date: 07/31/2021
 keywords:

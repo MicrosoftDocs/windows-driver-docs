@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_FT_R0KHID
+ms.topic: reference
 description: WDI_TLV_FT_R0KHID is an unused TLV.
 ms.date: 07/18/2017
 keywords:

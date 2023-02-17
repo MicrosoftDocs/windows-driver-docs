@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_AP_BAND_INFORMATION (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_AP_BAND_INFORMATION is a WiFiCx TLV that contains AP band ID information. 
 ms.date: 08/30/2021
 keywords:
