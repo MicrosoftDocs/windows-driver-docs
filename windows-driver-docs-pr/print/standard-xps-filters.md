@@ -20,7 +20,7 @@ To use the Windows-provided XPS filters, the v4 driver manifest file must use th
 
 *MSxpsPCL6.dll*. Provides conversion from XPS to PCL6.
 *MSxpsPS.dll*. Provides conversion from XPS to PostScript level 3.
-No INF updates are required to utilize one of these filters, and redistribution is not supported.
+No INF updates are required to utilize one of these filters, and redistribution is not supported. We recommend users discontinue use of these XPS Filters.
 
 ## Print Filter Pipeline Configuration
 
