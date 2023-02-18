@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_IHV_DATA (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_IHV_DATA is a WiFiCx TLV that contains IHV-specific information that is used by the IHV extensibility module.
 ms.date: 07/31/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_BSSID_INFO (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_BSSID_INFO is a WiFiCx TLV that contains BSSID information.
 ms.date: 07/31/2021
 keywords:

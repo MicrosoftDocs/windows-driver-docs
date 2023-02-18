@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_MODEM_CONFIG_INFO
+ms.topic: reference
 description: OID_WWAN_MODEM_CONFIG_INFO retrieves information about the modem configuration information.
 ms.date: 08/08/2017
 keywords: 

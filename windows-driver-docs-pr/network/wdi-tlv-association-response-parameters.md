@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ASSOCIATION_RESPONSE_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_ASSOCIATION_RESPONSE_PARAMETERS is a TLV that contains association response parameters for OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE.
 ms.date: 07/18/2017
 keywords:

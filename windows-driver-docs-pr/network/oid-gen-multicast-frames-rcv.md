@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_MULTICAST_FRAMES_RCV
+ms.topic: reference
 description: As a query, the OID_GEN_MULTICAST_FRAMES_RCV OID specifies the number of multicast/functional packets that are received without errors.
 ms.date: 11/01/2019
 keywords: 

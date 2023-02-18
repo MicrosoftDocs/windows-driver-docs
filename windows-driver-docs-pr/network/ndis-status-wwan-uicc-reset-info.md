@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_UICC_RESET_INFO
+ms.topic: reference
 description: NDIS_STATUS_WWAN_UICC_RESET_INFO
 keywords:
 - NDIS_STATUS_WWAN_UICC_RESET_INFO, UICC reset status notification, Mobile Broadband UICC reset status notification, MB UICC reset status notification

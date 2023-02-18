@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_INCOMING_ASSOCIATION_REQUEST_INFO
+ms.topic: reference
 description: WDI_TLV_INCOMING_ASSOCIATION_REQUEST_INFO is a TLV that contains information about the incoming association request.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_NETWORK_PARAMS_STATE
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_NETWORK_PARAMS_STATE notification to communicate changes to network configuration to the MB Service.
 ms.date: 05/13/2021
 keywords: 

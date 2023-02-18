@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ACCESS_NETWORK_TYPE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_ACCESS_NETWORK_TYPE is a WiFiCx TLV that contains an Access Network Type.
 ms.date: 08/30/2021
 keywords:

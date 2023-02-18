@@ -1,5 +1,6 @@
 ---
 title: OID_SWITCH_PROPERTY_UPDATE
+ms.topic: reference
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_PROPERTY_UPDATE to notify extensible switch extensions about the update to parameters for an extensible switch policy property.
 ms.date: 08/08/2017
 keywords: 

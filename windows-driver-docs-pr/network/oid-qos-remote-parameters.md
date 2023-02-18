@@ -1,5 +1,6 @@
 ---
 title: OID_QOS_REMOTE_PARAMETERS
+ms.topic: reference
 description: An overlying driver issues an object identifier (OID) query request of OID_QOS_REMOTE_PARAMETERS to obtain the NDIS Quality of Service (QoS) parameters for a remote peer.
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CIPHER_KEY_TKIP_KEY
+ms.topic: reference
 description: WDI_TLV_CIPHER_KEY_TKIP_KEY is a TLV that contains TKIP key material.
 ms.date: 07/18/2017
 keywords:

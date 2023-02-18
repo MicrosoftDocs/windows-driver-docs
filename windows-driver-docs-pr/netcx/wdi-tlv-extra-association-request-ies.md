@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_EXTRA_ASSOCIATION_REQUEST_IES (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_EXTRA_ASSOCIATION_REQUEST_IES is a WiFiCx TLV that contains Information Elements (IEs) that must be included in association requests sent by the port.
 ms.date: 06/17/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_ROAM
+ms.topic: reference
 description: OID_WDI_TASK_ROAM requests that the adapter tries to roam from the currently connected AP to a new one.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: OID_TIMESTAMP_CAPABILITY
+ms.topic: reference
 description: An overlying driver issues an OID query request of OID_TIMESTAMP_CAPABILITY to obtain the timestamping capabilities of the NIC and the miniport driver.
 ms.date: 01/31/2021
 keywords: 

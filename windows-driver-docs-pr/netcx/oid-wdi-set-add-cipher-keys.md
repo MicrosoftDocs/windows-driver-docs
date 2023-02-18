@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_ADD_CIPHER_KEYS (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_SET_ADD_CIPHER_KEYS command adds or overwrites cipher keys in the key table of a port. This is a set-only property.
 ms.date: 07/31/2021
 keywords:

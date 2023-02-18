@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SET_CIPHER_KEY_INFO (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_SET_CIPHER_KEY_INFO is a WiFiCx TLV that contains cipher key mapping key information for OID_WDI_SET_ADD_CIPHER_KEYS.
 ms.date: 07/31/2021
 keywords:

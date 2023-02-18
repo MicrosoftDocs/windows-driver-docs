@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_CHANNEL_LIST_ATTRIBUTE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_CHANNEL_LIST_ATTRIBUTE is a WiFiCx TLV that contains channel list attributes.
 ms.date: 08/30/2021
 keywords:

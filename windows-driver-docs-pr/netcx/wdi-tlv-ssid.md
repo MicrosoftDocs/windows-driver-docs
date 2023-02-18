@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SSID (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_SSID is a WiFiCx TLV that contains an SSID.
 ms.date: 07/31/2021
 keywords:

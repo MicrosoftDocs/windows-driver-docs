@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_WAKE_PACKET_EAPOL_REQUEST_ID_MESSAGE
+ms.topic: reference
 description: WDI_TLV_WAKE_PACKET_EAPOL_REQUEST_ID_MESSAGE is a TLV that contains the wake-on-LAN pattern ID of a EAPOL request ID message.
 ms.date: 07/18/2017
 keywords:

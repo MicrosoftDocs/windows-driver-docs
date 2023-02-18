@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SEND_REQUEST_ACTION_FRAME_RESULT
+ms.topic: reference
 description: WDI_TLV_P2P_SEND_REQUEST_ACTION_FRAME_RESULT is an unused TLV.
 ms.date: 07/18/2017
 keywords:

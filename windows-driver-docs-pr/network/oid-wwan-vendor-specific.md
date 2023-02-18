@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_VENDOR_SPECIFIC
+ms.topic: reference
 description: OID_WWAN_VENDOR_SPECIFIC allows miniport drivers to implement vendor specific objects.
 ms.date: 08/08/2017
 keywords: 

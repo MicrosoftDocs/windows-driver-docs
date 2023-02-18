@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_DEVICE_SERVICE_SESSION
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_DEVICE_SERVICE_SESSION indication to report the completion of a device service session state change originated by OID_WWAN_DEVICE_SERVICE_SESSION.NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO structure.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ADAPTER_RESUME_REQUIRED
+ms.topic: reference
 description: WDI_TLV_ADAPTER_RESUME_REQUIRED is a TLV that specifies if adapter resume is required.
 ms.date: 07/18/2017
 keywords:

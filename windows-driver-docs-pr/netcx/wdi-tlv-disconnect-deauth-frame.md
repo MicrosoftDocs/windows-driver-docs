@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_DISCONNECT_DEAUTH_FRAME (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_DISCONNECT_DEAUTH_FRAME is a WiFiCx TLV that contains the received deauthentication frame.
 ms.date: 07/31/2021
 keywords:

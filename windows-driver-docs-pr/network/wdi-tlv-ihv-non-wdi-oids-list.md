@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_IHV_NON_WDI_OIDS_LIST
+ms.topic: reference
 description: WDI_TLV_IHV_NON_WDI_OIDS_LIST is a TLV that contains a list of non-WDI OIDs that the adapter wants to advertise to the operating system.
 ms.date: 07/18/2017
 keywords:

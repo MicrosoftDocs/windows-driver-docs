@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_PIN_LIST
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_PIN_LIST notification to respond to OID query requests of OID_WWAN_PIN_LIST. Miniport drivers cannot use this notification to send unsolicited events.This notification uses the NDIS_WWAN_PIN_LIST structure.
 ms.date: 08/08/2017
 keywords: 

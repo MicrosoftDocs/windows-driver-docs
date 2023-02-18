@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_IHV_DATA
+ms.topic: reference
 description: WDI_TLV_IHV_DATA is a TLV that contains IHV-specific information that is used by the IHV extensibility module.
 ms.date: 07/18/2017
 keywords:

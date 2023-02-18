@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT
+ms.topic: reference
 description: The NDIS_STATUS_WDI_INDICATION_DEVICE_SERVICE_EVENT status indication is used by a miniport driver to pass on unsolicited information about a device to a user mode client.
 ms.date: 06/14/2018
 keywords:

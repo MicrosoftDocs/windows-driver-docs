@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_IS_DIRECTED_PROBE_FOR_HIDDEN_PERMITTED (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_IS_DIRECTED_PROBE_FOR_HIDDEN_PERMITTED is a WiFiCx TLV that indicates if a directed (non-wildcard) probe request is allowed for an SSID.
 ms.date: 07/31/2021
 keywords:

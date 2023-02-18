@@ -1,5 +1,6 @@
 ---
 title: OID_SRIOV_RESET_VF
+ms.topic: reference
 description: Overlying drivers issue an object identifier (OID) set request of OID_SRIOV_RESET_VF to reset a specified PCI Express (PCIe) Virtual Function (VF) on a network adapter that supports single root I/O virtualization.
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_DEVICE_ADDRESS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_DEVICE_ADDRESS is a WiFiCx TLV that contains the device address of the Group Owner.
 ms.date: 07/31/2021
 keywords:

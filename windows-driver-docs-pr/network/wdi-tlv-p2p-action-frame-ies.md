@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_ACTION_FRAME_IES
+ms.topic: reference
 description: WDI_TLV_P2P_ACTION_FRAME_IES is a TLV that contains action frame IEs.
 ms.date: 07/18/2017
 keywords:

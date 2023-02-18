@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_MEDIA_DUPLEX_STATE
+ms.topic: reference
 description: As a query, the OID_GEN_MEDIA_DUPLEX_STATE OID returns the duplex state of an interface. Version Information Windows Vista and laterSupported. NDIS 6.0 and later miniport driversNot requested. For NDIS interface providers only.
 ms.date: 08/08/2017
 keywords: 

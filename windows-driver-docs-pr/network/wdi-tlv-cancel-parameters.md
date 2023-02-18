@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CANCEL_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_CANCEL_PARAMETERS is a TLV that contains parameters for OID_WDI_ABORT_TASK.
 ms.date: 07/18/2017
 keywords:

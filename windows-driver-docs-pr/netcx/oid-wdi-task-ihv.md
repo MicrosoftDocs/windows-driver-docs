@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_IHV (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_TASK_IHV command is used to start an IHV-initiated task.
 ms.date: 07/31/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_P2P_WPS_ENABLED
+ms.topic: reference
 description: OID_WDI_SET_P2P_WPS_ENABLED requests that the adapter enables or disables Wi-Fi Protected Setup (WPS) on the NIC.
 ms.date: 07/18/2017
 keywords:

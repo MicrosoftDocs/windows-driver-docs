@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_ENUMERATE_PORTS
+ms.topic: reference
 description: As a query, NDIS and overlying drivers use the OID_GEN_ENUMERATE_PORTS OID to determine the characteristics of the active NDIS ports that are associated with an underlying miniport adapter.
 ms.date: 08/08/2017
 keywords: 

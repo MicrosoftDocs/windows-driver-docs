@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_BACKGROUND_DISCOVER_MODE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_BACKGROUND_DISCOVER_MODE is a WiFiCx TLV that contains Wi-Fi Direct Background Discover Mode parameters.
 ms.date: 07/31/2021
 keywords:

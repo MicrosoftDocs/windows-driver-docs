@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_LISTEN_DURATION (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_LISTEN_DURATION is a WiFiCx TLV that contains Wi-Fi Direct listen duration information.
 ms.date: 06/30/2021
 keywords:

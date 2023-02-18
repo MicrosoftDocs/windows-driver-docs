@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_IHV_TASK_COMPLETE
+ms.topic: reference
 description: NDIS_STATUS_WDI_INDICATION_IHV_TASK_COMPLETE indicates the completion of OID_WDI_TASK_IHV.
 ms.date: 07/18/2017
 keywords:

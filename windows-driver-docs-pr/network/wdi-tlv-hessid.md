@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_HESSID
+ms.topic: reference
 description: WDI_TLV_HESSID is a TLV that contains a list of HESSIDs.
 ms.date: 07/18/2017
 keywords:

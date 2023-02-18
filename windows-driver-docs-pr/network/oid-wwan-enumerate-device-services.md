@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_ENUMERATE_DEVICE_SERVICES
+ms.topic: reference
 description: OID_WWAN_ENUMERATE_DEVICE_SERVICES returns the list of device services supported by the miniport driver.NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS status notification containing a NDIS_WWAN_SUPPORTED_DEVICE_SERVICES structure that provides the list of supported device service GUIDs.
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_IHV_REQUEST (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_IHV_REQUEST command is used to forward information that an IHV extensibility module has sent to the miniport.
 ms.date: 07/31/2021
 keywords:

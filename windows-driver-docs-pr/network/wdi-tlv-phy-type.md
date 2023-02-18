@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PHY_TYPE
+ms.topic: reference
 description: WDI_TLV_PHY_TYPE is a TLV that contains a PHY type.
 ms.date: 07/18/2017
 keywords:

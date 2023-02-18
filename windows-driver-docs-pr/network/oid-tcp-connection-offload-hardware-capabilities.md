@@ -1,5 +1,6 @@
 ---
 title: OID_TCP_CONNECTION_OFFLOAD_HARDWARE_CAPABILITIES
+ms.topic: reference
 description: This topic describes the OID_TCP_CONNECTION_OFFLOAD_HARDWARE_CAPABILITIES object identifier (OID). 
 keywords:
 - OID_TCP_CONNECTION_OFFLOAD_HARDWARE_CAPABILITIES, WDK OIDs, WDK networking object identifiers, WDK networking OIDs

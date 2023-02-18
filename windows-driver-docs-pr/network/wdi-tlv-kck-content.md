@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_KCK_CONTENT
+ms.topic: reference
 description: WDI_TLV_KCK_CONTENT is a TLV that contains an IEEE 802.11 key confirmation key (KCK).
 ms.date: 05/07/2021
 keywords:

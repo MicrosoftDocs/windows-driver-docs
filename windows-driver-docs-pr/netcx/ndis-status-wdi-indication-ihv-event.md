@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_IHV_EVENT (dot11wificxintf.h)
+ms.topic: reference
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_IHV_EVENT to pass IHV specific information to the IHV extensibility module.
 ms.date: 08/30/2021
 keywords:

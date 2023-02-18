@@ -1,5 +1,6 @@
 ---
 title: OID_NDK_STATISTICS
+ms.topic: reference
 description: As a query, NDIS and overlying drivers or user-mode applications use the OID_NDK_STATISTICS OID to get the NDK statistics of a miniport adapter.
 ms.date: 08/08/2017
 keywords: 

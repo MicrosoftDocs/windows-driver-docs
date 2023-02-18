@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_RADIO_STATE_PARAMETERS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_RADIO_STATE_PARAMETERS is a WiFiCx TLV that contains radio state parameters for OID_WDI_TASK_SET_RADIO_STATE.
 ms.date: 07/31/2021
 keywords:

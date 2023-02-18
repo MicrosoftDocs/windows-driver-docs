@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SERVICE_NAME (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_SERVICE_NAME is a WiFiCx TLV that contains the name of a service.
 ms.date: 06/17/2021
 keywords:

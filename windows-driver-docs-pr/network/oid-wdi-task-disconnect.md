@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_DISCONNECT
+ms.topic: reference
 description: OID_WDI_TASK_DISCONNECT is used to terminate a connection with a peer.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_IHV_TASK_DEVICE_CONTEXT (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_IHV_TASK_DEVICE_CONTEXT is a WiFiCx TLV that contains IHV-provided device context for NDIS_STATUS_WDI_INDICATION_IHV_TASK_REQUEST.
 ms.date: 07/18/2017
 keywords:

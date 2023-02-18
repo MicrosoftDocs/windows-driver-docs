@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_ACTION_FRAME_IES (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_ACTION_FRAME_IES is a WiFiCx TLV that contains action frame IEs.
 ms.date: 07/30/2021
 keywords:

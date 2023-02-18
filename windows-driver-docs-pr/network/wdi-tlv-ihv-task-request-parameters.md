@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_IHV_TASK_REQUEST_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_IHV_TASK_REQUEST_PARAMETERS is a TLV that contains the requested priority for NDIS_STATUS_WDI_INDICATION_IHV_TASK_REQUEST.
 ms.date: 07/18/2017
 keywords:

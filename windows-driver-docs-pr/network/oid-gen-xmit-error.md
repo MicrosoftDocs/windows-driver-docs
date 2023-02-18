@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_XMIT_ERROR
+ms.topic: reference
 description: As a query, the OID_GEN_XMIT_ERROR OID specifies the number of frames that a NIC fails to transmit.
 ms.date: 11/01/2019
 keywords: 

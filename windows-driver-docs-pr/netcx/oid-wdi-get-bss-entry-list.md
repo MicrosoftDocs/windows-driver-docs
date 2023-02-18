@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_GET_BSS_ENTRY_LIST (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_GET_BSS_ENTRY_LIST command is used to ask the adapter to indicate the list of BSS networks that have been cached by the port.
 ms.date: 07/31/2021
 keywords:

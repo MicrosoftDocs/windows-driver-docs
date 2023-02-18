@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ASSOCIATION_RESPONSE_FRAME
+ms.topic: reference
 description: WDI_TLV_ASSOCIATION_RESPONSE_FRAME is a TLV that contains the received association response.
 ms.date: 07/18/2017
 keywords:

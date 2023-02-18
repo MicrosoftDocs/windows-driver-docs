@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_START_AP_PARAMETERS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_START_AP_PARAMETERS is a WiFiCx TLV that contains the parameters for OID_WDI_TASK_START_AP.
 ms.date: 07/31/2021
 keywords:

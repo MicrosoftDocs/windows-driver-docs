@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_RADIO_STATE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_RADIO_STATE is a WiFiCx TLV that contains the state of the radio in hardware and software.
 ms.date: 07/31/2021
 keywords:

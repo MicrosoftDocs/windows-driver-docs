@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_TKIP_MIC_FAILURE_INFO
+ms.topic: reference
 description: WDI_TLV_TKIP_MIC_FAILURE_INFO is a TLV that contains TKIP-MIC failure information.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_RTT_ACCURACY
+ms.topic: reference
 description: WDI_TLV_RTT_ACCURACY is a TLV that contains the accuracy, or expected degree of closeness, of a roundtrip time (RTT) measurement to the true value for a Fine Timing Measurement (FTM) request.
 ms.date: 02/15/2019
 keywords:

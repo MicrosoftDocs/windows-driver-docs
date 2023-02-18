@@ -1,5 +1,6 @@
 ---
 title: OID_PNP_WAKE_UP_OK
+ms.topic: reference
 description: OID_PNP_WAKE_UP_OK
 ms.date: 08/08/2017
 keywords: 

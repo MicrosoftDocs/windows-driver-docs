@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED
+ms.topic: reference
 description: NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED
 ms.date: 02/14/2019
 keywords:

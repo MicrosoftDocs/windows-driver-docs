@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_BEACON_FRAME (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_BEACON_FRAME is a WiFiCx TLV that contains a beacon frame.
 ms.date: 06/17/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_TCP_OFFLOAD_CAPABILITIES
+ms.topic: reference
 description: WDI_TLV_TCP_OFFLOAD_CAPABILITIES is a TLV that contains TCP/IP offload capabilities.
 ms.date: 07/18/2017
 keywords:

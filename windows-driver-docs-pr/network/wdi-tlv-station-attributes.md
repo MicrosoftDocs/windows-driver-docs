@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_STATION_ATTRIBUTES
+ms.topic: reference
 description: WDI_TLV_STATION_ATTRIBUTES is a TLV that contains the attributes of a station.
 ms.date: 02/14/2019
 keywords:

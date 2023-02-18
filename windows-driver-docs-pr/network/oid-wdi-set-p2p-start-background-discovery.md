@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_P2P_START_BACKGROUND_DISCOVERY
+ms.topic: reference
 description: OID_WDI_SET_P2P_START_BACKGROUND_DISCOVERY instructs the adapter to periodically perform Wi-Fi Direct discovery in the background
 ms.date: 07/18/2017
 keywords:

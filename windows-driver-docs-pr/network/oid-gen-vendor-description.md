@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_VENDOR_DESCRIPTION
+ms.topic: reference
 description: As a query, the OID_GEN_VENDOR_DESCRIPTION OID points to a null-terminated string describing the Network Interface Controller (NIC).  
 keywords:
 - OID_GEN_VENDOR_DESCRIPTION

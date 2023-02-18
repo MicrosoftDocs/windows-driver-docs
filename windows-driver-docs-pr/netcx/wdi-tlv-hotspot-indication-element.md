@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_HOTSPOT_INDICATION_ELEMENT (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_HOTSPOT_INDICATION_ELEMENT is a WiFiCx TLV that contains a Hotspot Indication Element that is used in a Association Request.
 ms.date: 08/30/2021
 keywords:

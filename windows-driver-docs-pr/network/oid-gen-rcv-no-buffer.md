@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_RCV_NO_BUFFER
+ms.topic: reference
 description: As a query, the OID_GEN_RCV_NO_BUFFER OID specifies the number of frames that the NIC cannot receive due to lack of NIC receive buffer space.
 ms.date: 08/08/2017
 keywords: 

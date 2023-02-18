@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_CO_VENDOR_ID
+ms.topic: reference
 description: This topic describes the OID_GEN_CO_VENDOR_ID object identifier (OID).
 keywords:
 - OID_GEN_CO_VENDOR_ID

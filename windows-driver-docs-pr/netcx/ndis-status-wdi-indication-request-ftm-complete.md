@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE (dot11wificxintf.h)
+ms.topic: reference
 description: WiFiCx drivers send the NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE indication to the host as a task completion indication for OID_WDI_TASK_REQUEST_FTM.
 ms.date: 07/30/2021
 keywords:

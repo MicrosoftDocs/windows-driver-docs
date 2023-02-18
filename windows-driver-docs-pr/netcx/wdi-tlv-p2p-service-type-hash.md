@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SERVICE_TYPE_HASH (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_SERVICE_TYPE_HASH is a WiFiCx TLV that contains the hash of Service Type.
 ms.date: 09/30/2021
 keywords:

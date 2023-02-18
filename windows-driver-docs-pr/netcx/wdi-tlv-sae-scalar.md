@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SAE_SCALAR (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_SAE_SCALAR is a WiFiCx TLV that contains the FFE for a SAE Commit request.
 ms.date: 07/31/2021
 keywords:

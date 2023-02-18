@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_DEVICE_SERVICE_GUID_LIST (dot11wificxtypes.h)
+ms.topic: reference
 description: WDI_TLV_DEVICE_SERVICE_GUID_LIST is a WiFiCx TLV that contains information about a device service received from the IHV driver.
 ms.date: 09/30/2021
 keywords:

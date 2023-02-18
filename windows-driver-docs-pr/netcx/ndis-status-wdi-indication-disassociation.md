@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_DISASSOCIATION (dot11wificxintf.h)
+ms.topic: reference
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_DISASSOCIATION to indicate that a port disconnected from the network.
 ms.date: 07/30/2021
 keywords:

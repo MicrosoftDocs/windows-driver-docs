@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SEND_ACTION_FRAME_RESULT (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_SEND_ACTION_FRAME_RESULT is a WiFiCx TLV that contains information about an Action Frame that was sent to a peer.
 ms.date: 07/30/2021
 keywords:

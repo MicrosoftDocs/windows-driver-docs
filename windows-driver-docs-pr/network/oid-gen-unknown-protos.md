@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_UNKNOWN_PROTOS
+ms.topic: reference
 description: As a query, use the OID_GEN_UNKNOWN_PROTOS OID to determine the unknown-protocol packet count of a network interface (ifInUnknownProtos from RFC 2863).
 ms.date: 08/08/2017
 keywords: 

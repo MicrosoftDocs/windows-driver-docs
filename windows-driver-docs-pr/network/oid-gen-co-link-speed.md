@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_CO_LINK_SPEED
+ms.topic: reference
 description: This topic describes the OID_GEN_CO_LINK_SPEED object identifier (OID).
 keywords:
 - OID_GEN_CO_LINK_SPEED

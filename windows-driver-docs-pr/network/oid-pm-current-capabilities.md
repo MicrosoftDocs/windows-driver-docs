@@ -1,5 +1,6 @@
 ---
 title: OID_PM_CURRENT_CAPABILITIES
+ms.topic: reference
 description: As a query, overlying drivers can use the OID_PM_CURRENT_CAPABILITIES OID to query the currently available power management capabilities of a network adapter.
 ms.date: 08/08/2017
 keywords: 

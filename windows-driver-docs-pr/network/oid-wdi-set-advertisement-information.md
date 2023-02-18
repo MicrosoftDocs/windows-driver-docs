@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_ADVERTISEMENT_INFORMATION
+ms.topic: reference
 description: OID_WDI_SET_ADVERTISEMENT_INFORMATION configures the Information Elements (IEs) and other advertisement settings to be included in the probe request, probe response, and beacons sent by the specified port.
 ms.date: 07/18/2017
 keywords:

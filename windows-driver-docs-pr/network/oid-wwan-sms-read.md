@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_SMS_READ
+ms.topic: reference
 description: OID_WWAN_SMS_READ reads SMS text messages stored in the MB device, or Subscriber Identity Module (SIM card), or any other auxiliary non-volatile memory or memories.
 ms.date: 08/08/2017
 keywords: 

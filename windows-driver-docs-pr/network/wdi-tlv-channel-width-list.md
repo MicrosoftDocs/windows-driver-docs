@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CHANNEL_WIDTH_LIST
+ms.topic: reference
 description: WDI_TLV_CHANNEL_WIDTH_LIST is a TLV that contains a list of channel widths.
 ms.date: 07/18/2017
 keywords:

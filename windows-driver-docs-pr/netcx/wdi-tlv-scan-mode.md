@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SCAN_MODE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_SCAN_MODE is a WiFiCx TLV that contains scan mode parameters.
 ms.date: 06/30/2021
 keywords:

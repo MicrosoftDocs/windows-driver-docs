@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_COUNTRY_REGION_LIST (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_COUNTRY_REGION_LIST is a WiFiCx TLV that contains a list of country or region codes.
 ms.date: 08/30/2021
 keywords:

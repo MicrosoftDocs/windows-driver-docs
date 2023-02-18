@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_KEK_CONTENT
+ms.topic: reference
 description: WDI_TLV_KEK_CONTENT is a TLV that contains an IEEE 802.11 key encryption key (KEK).
 ms.date: 05/07/2021
 keywords:

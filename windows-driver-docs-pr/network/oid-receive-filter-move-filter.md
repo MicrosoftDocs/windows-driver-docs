@@ -1,5 +1,6 @@
 ---
 title: OID_RECEIVE_FILTER_MOVE_FILTER
+ms.topic: reference
 description: An overlying driver issues an object identifier (OID) set request of OID_RECEIVE_FILTER_MOVE_FILTER to move a previously configured receive filter.
 ms.date: 08/08/2017
 keywords: 

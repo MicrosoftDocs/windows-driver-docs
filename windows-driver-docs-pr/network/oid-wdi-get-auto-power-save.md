@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_GET_AUTO_POWER_SAVE
+ms.topic: reference
 description: OID_WDI_GET_AUTO_POWER_SAVE gets the power save state of the port.
 ms.date: 07/18/2017
 keywords:

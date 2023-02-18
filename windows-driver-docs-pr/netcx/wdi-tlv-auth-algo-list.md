@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_AUTH_ALGO_LIST (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_AUTH_ALGO_LIST is a WiFiCx TLV that contains a list of authentication algorithms.
 ms.date: 06/30/2021
 keywords:

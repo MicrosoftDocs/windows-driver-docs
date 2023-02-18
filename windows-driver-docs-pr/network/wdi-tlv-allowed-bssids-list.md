@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ALLOWED_BSSIDS_LIST
+ms.topic: reference
 description: WDI_TLV_ALLOWED_BSSIDS_LIST is a TLV that contains a list of BSSIDs that are allowed to be used for association.
 ms.date: 07/18/2017
 keywords:

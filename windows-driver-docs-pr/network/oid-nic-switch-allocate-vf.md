@@ -1,5 +1,6 @@
 ---
 title: OID_NIC_SWITCH_ALLOCATE_VF
+ms.topic: reference
 description: An overlying driver issues an object identifier (OID) method request of OID_NIC_SWITCH_ALLOCATE_VF to allocate resources for a PCI Express (PCIe) Virtual Function (VF).
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_SLOT_INFO
+ms.topic: reference
 description: OID_WWAN_SLOT_INFO retrieves a high-level aggregated status of a specified UICC slot and the card within it (if any). It may also be used to deliver an unsolicited notification when the status of one of the slots changes.
 ms.date: 08/08/2017
 keywords: 

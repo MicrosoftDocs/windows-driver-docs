@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_FT_AUTH_RESPONSE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_FT_AUTH_RESPONSE is a WiFiCx TLV that contains the Fast Transition authentication response byte blob.
 ms.date: 07/31/2021
 keywords:

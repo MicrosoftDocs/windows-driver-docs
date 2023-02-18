@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_WPS_ENABLED (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_WPS_ENABLED is a WiFiCx TLV that specifies if Wi-Fi Protected Setup is enabled.
 ms.date: 07/31/2021
 keywords:

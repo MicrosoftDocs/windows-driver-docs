@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_SUPPORTED_LIST
+ms.topic: reference
 description: As a query, the OID_GEN_SUPPORTED_LIST OID specifies an array of OIDs for objects that the miniport driver or a NIC supports.
 ms.date: 08/08/2017
 keywords: 

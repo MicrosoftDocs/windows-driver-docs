@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ACTION_FRAME_DEVICE_CONTEXT
+ms.topic: reference
 description: WDI_TLV_ACTION_FRAME_DEVICE_CONTEXT is a TLV that contains an Action Frame device context.
 ms.date: 07/18/2017
 keywords:

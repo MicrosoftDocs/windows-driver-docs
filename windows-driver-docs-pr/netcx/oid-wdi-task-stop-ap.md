@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_STOP_AP (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_TASK_STOP_AP command requests that the IHV component disconnects all connected clients on the specified port and stops beaconing and responding to probe requests. AP configuration and MIB attributes are preserved.
 ms.date: 07/31/2021
 keywords:

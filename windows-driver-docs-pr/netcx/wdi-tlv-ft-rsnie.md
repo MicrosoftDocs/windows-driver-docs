@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_FT_RSNIE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_FT_RSNIE is a WiFiCx TLV that contains the Fast Transition RSN IE byte blob.
 ms.date: 07/31/2021
 keywords:

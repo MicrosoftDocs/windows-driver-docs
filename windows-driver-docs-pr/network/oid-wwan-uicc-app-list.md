@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_UICC_APP_LIST
+ms.topic: reference
 description: OID_WWAN_UICC_APP_LIST retrieves a list of applications in a UICC and information about them.
 ms.date: 04/08/2019
 keywords: 

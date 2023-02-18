@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_SMS_CONFIGURATION
+ms.topic: reference
 description: OID_WWAN_SMS_CONFIGURATION sets or returns a MB device's SMS text message configuration.
 ms.date: 08/08/2017
 keywords: 

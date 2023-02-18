@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_ASP2_ADVERTISED_SERVICE_ENTRY (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_ASP2_ADVERTISED_SERVICE_ENTRY is a WiFiCx TLV that contains an ASP2 Advertised Service Entry.
 ms.date: 09/30/2021
 keywords:

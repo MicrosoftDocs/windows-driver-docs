@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_UICC_RESET
+ms.topic: reference
 description: OID_WWAN_UICC_RESET is sent by the mobile broadband host to a modem miniport adapter to reset a UICC smart card.
 keywords:
 - MB UICC reset, Mobile Broadband UICC reset, Mobile Broadband miniport driver UICC reset

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_RTT_VARIANCE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_RTT_VARIANCE is a WiFiCx TLV that contains the statistical variance of the measurements used to calculate roundtrip time (RTT) during a Fine Timing Measurement (FTM) request, if more than one measurement was used. 
 ms.date: 07/31/2021
 keywords:

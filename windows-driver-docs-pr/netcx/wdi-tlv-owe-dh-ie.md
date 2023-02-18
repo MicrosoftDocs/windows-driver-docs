@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_OWE_DH_IE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_OWE_DH_IE is a WiFiCx TLV that must be included in the association request sent by the station when the auth type is OWE. 
 ms.date: 06/30/2021
 keywords:

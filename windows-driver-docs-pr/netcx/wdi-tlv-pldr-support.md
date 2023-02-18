@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PLDR_SUPPORT (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_PLDR_SUPPORT is a WIFiCx TLV that specifies if PLDR (Platform Level Reset) is supported.
 ms.date: 07/31/2021
 keywords:

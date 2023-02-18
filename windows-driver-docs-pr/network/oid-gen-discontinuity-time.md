@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_DISCONTINUITY_TIME
+ms.topic: reference
 description: As a query, use the OID_GEN_DISCONTINUITY_TIME OID to determine the discontinuity time of a network interface (ifCounterDiscontinuityTime from RFC 2863).
 ms.date: 08/08/2017
 keywords: 

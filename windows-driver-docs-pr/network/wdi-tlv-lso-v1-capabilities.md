@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_LSO_V1_CAPABILITIES (0xCC)
+ms.topic: reference
 description: WDI_TLV_LSO_V1_CAPABILITIES is a TLV that contains Large Send Offload V1 capabilities.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SERVICE_UPDATE_INDICATOR
+ms.topic: reference
 description: WDI_TLV_P2P_SERVICE_UPDATE_INDICATOR is a TLV that contains a Wi-Fi Direct service update indicator.
 ms.date: 07/18/2017
 keywords:

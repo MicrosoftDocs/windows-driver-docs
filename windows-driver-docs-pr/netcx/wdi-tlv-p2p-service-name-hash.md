@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SERVICE_NAME_HASH (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_SERVICE_NAME_HASH is a WiFiCx TLV that contains the hash of a service name.
 ms.date: 06/30/2021
 keywords:

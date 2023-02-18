@@ -1,5 +1,6 @@
 ---
 title: OID_SWITCH_PORT_TEARDOWN
+ms.topic: reference
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_PORT_TEARDOWN to notify underlying extensible switch extensions that an extensible switch port will begin the deletion process.
 ms.date: 08/08/2017
 keywords: 

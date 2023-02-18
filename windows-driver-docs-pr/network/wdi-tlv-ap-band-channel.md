@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_AP_BAND_CHANNEL
+ms.topic: reference
 description: WDI_TLV_AP_BAND_CHANNEL is a TLV that specifies access point band and channel information.
 ms.date: 07/18/2017
 keywords:

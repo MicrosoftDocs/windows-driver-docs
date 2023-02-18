@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_ABORT_TASK
+ms.topic: reference
 description: OID_WDI_ABORT_TASK is a property that is sent down to cancel a specific pending task.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ASSOCIATION_PARAMETERS_REQUESTED_TYPE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_ASSOCIATION_PARAMETERS_REQUESTED_TYPE is a WiFiCx TLV that contains the requested Association Parameter TLV types.
 ms.date: 06/30/2021
 keywords:

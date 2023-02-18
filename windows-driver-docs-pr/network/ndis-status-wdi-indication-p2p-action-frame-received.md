@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_P2P_ACTION_FRAME_RECEIVED
+ms.topic: reference
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_P2P_ACTION_FRAME_RECEIVED to indicate that a Wi-Fi Direct Action Frame has been received.
 ms.date: 07/18/2017
 keywords:

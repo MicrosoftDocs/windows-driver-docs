@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_DEVICE_SERVICE_PARAMS_GUID (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_DEVICE_SERVICE_PARAMS_GUID is a WiFiCx TLV that contains a GUID that identifies the device service to which this status indication belongs.
 ms.date: 07/31/2021
 keywords:

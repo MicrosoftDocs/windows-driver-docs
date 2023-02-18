@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_BITMAP_PATTERN
+ms.topic: reference
 description: WDI_TLV_BITMAP_PATTERN is a TLV that contains the byte array of a pattern.
 ms.date: 07/18/2017
 keywords:

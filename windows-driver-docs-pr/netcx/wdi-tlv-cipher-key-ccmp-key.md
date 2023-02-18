@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CIPHER_KEY_CCMP_KEY (dot11wificxtypes.hpp))
+ms.topic: reference
 description: WDI_TLV_CIPHER_KEY_CCMP_KEY is a WiFiCx TLV that contains CCMP cipher algorithm key data for OID_WDI_SET_ADD_CIPHER_KEY.
 ms.date: 07/31/2021
 keywords:

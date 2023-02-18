@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_UICC_TERMINAL_CAPABILITY_INFO
+ms.topic: reference
 description: NDIS_STATUS_WWAN_UICC_TERMINAL_CAPABILITY_INFO is sent to inform the MB host of the last terminal capability objects sent to the modem.
 keywords:
 - NDIS_STATUS_WWAN_UICC_TERMINAL_CAPABILITY_INFO

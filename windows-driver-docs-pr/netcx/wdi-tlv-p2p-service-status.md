@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SERVICE_STATUS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_SERVICE_STATUS is a WiFiCx TLV that contains the Service Status of a service.
 ms.date: 06/17/2021
 keywords:

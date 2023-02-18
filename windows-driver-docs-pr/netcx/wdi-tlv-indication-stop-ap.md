@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_INDICATION_STOP_AP (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_INDICATION_STOP_AP is a WiFiCx TLV that contains the reason for a Stop AP indication.
 ms.date: 08/31/2021
 keywords:

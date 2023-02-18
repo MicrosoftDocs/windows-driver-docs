@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_TKIP_MIC_FAILURE (dot11wificxintf.h)
+ms.topic: reference
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_TKIP_MIC_FAILURE to indicate when a received packet that was successfully decrypted by the TKIP cipher algorithm fails the message integrity code (MIC) verification.
 ms.date: 08/30/2021
 keywords:

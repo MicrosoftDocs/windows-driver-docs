@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_PROMISCUOUS_MODE
+ms.topic: reference
 description: As a query, use the OID_GEN_PROMISCUOUS_MODE OID to determine whether a network interface is promiscuous or not (ifPromiscuousMode from RFC 2863).
 ms.date: 08/08/2017
 keywords: 

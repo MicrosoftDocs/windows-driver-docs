@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_DELETE_CIPHER_KEYS
+ms.topic: reference
 description: OID_WDI_SET_DELETE_CIPHER_KEYS deletes cipher keys from the device's cipher key table.
 ms.date: 07/18/2017
 keywords:

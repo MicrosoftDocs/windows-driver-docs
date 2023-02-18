@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_CO_RCV_PDUS_NO_BUFFER
+ms.topic: reference
 description: This topic describes the OID_GEN_CO_RCV_PDUS_NO_BUFFER object identifier (OID).
 keywords:
 - OID_GEN_CO_RCV_PDUS_NO_BUFFER

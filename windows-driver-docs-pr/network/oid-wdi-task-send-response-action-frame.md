@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME
+ms.topic: reference
 description: OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME requests that the IHV component sends Response Action Frames.
 ms.date: 07/18/2017
 keywords:

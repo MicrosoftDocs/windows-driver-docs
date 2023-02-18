@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_OFFLOAD_SCOPE
+ms.topic: reference
 description: WDI_TLV_OFFLOAD_SCOPE is a TLV that contains Rx coalesce offload capabilities.
 ms.date: 10/05/2017
 keywords:

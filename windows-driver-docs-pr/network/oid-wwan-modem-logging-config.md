@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_MODEM_LOGGING_CONFIG
+ms.topic: reference
 description: OID_WWAN_MODEM_LOGGING_CONFIG is used to configure logs that are collected by the modem and how often they will be sent from the modem to the host over Data Service Stream (DSS).
 ms.date: 04/11/2019
 keywords: 

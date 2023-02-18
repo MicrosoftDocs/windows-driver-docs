@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_SYS_CAPS_INFO
+ms.topic: reference
 description: OID_WWAN_SYS_CAPS_INFO retrieves information about the modem. It can be sent on any of the NDIS instances exposed by the modem.
 ms.date: 08/08/2017
 keywords: 

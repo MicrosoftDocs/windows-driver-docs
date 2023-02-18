@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CHECKSUM_OFFLOAD_V6_RX_PARAMETERS (0xDD)
+ms.topic: reference
 description: WDI_TLV_CHECKSUM_OFFLOAD_V6_RX_PARAMETERS is a TLV that contains for Rx checksum offload for IPv6.
 ms.date: 07/18/2017
 keywords:

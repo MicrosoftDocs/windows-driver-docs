@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_BSS_ENTRY_CHANNEL_INFO
+ms.topic: reference
 description: WDI_TLV_BSS_ENTRY_CHANNEL_INFO is a TLV that contains BSS entry channel information.
 ms.date: 07/18/2017
 keywords:

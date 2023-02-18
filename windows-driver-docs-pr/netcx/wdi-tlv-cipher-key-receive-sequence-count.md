@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CIPHER_KEY_RECEIVE_SEQUENCE_COUNT (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_CIPHER_KEY_RECEIVE_SEQUENCE_COUNT is a WiFix TLV that contains the receive sequence count.
 ms.date: 07/31/2021
 keywords:

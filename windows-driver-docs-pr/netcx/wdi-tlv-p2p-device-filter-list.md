@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_DEVICE_FILTER_LIST (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_DEVICE_FILTER_LIST is a WiFiCx TLV that contains a list of Wi-Fi Direct devices and Group Owners to search for during Wi-Fi Direct device discovery.
 ms.date: 07/31/2021
 keywords:

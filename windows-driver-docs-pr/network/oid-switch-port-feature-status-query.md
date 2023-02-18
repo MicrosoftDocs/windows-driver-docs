@@ -1,5 +1,6 @@
 ---
 title: OID_SWITCH_PORT_FEATURE_STATUS_QUERY
+ms.topic: reference
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) method request of OID_SWITCH_PORT_FEATURE_STATUS_QUERY to obtain custom status information from an extension about an extensible switch port.
 ms.date: 08/08/2017
 keywords: 

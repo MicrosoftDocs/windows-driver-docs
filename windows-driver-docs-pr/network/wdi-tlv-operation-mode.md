@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_OPERATION_MODE
+ms.topic: reference
 description: WDI_TLV_OPERATION_MODE is a TLV that contains the desired operation mode.
 ms.date: 07/18/2017
 keywords:

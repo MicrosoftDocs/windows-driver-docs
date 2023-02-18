@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_RECEIVE_BUFFER_SPACE
+ms.topic: reference
 description: As a query, the OID_GEN_RECEIVE_BUFFER_SPACE OID specifies the amount of memory on the NIC that is available for buffering receive data.
 ms.date: 08/08/2017
 keywords: 

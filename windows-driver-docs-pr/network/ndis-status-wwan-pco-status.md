@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_PCO_STATUS
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_PCO_STATUS notification to inform the MB service about the completion of a previous OID_WWAN_PCO query request.
 keywords:
 - NDIS_STATUS_WWAN_PCO_STATUS, PCO status notification, Mobile Broadband PCO status notification, MB PCO status notification

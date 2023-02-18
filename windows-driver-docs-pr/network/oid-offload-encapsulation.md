@@ -1,5 +1,6 @@
 ---
 title: OID_OFFLOAD_ENCAPSULATION
+ms.topic: reference
 description: This topic describes the OID_OFFLOAD_ENCAPSULATION object identifier (OID). 
 keywords:
 - OID_OFFLOAD_ENCAPSULATION, WDK OIDs, WDK networking object identifiers, WDK networking OIDs

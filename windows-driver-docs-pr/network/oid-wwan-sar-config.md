@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_SAR_CONFIG
+ms.topic: reference
 description: OID_WWAN_SAR_CONFIG gets or sets information about a mobile broadband (MB) device's Specific Absorption Rate (SAR) back off mode and level.
 ms.date: 08/17/2018
 keywords: 

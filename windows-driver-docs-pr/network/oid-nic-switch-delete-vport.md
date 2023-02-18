@@ -1,5 +1,6 @@
 ---
 title: OID_NIC_SWITCH_DELETE_VPORT
+ms.topic: reference
 description: An overlying driver issues an object identifier (OID) set request of OID_NIC_SWITCH_DELETE_VPORT to delete a nondefault virtual port (VPort) that was previously created on a network adapter's NIC switch.
 ms.date: 08/08/2017
 keywords: 

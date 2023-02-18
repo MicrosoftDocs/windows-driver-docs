@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CONNECT_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_CONNECT_PARAMETERS is a TLV that contains parameters for OID_WDI_TASK_CONNECT and OID_WDI_TASK_ROAM.
 ms.date: 05/07/2021
 keywords:

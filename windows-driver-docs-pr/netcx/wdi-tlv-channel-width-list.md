@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CHANNEL_WIDTH_LIST (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_CHANNEL_WIDTH_LIST is a WiFiCx TLV that contains a list of channel widths.
 ms.date: 09/30/2021
 keywords:

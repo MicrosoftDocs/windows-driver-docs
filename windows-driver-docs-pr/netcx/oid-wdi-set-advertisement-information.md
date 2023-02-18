@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_ADVERTISEMENT_INFORMATION (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_SET_ADVERTISEMENT_INFORMATION command configures the IEs and other advertisement settings to be included in the probe request, probe response, and beacons sent by the specified port.
 ms.date: 07/31/2021
 keywords:

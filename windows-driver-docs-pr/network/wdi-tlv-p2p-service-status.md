@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SERVICE_STATUS
+ms.topic: reference
 description: WDI_TLV_P2P_SERVICE_STATUS is a TLV that contains the Service Status of a service.
 ms.date: 07/18/2017
 keywords:

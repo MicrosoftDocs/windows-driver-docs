@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_INVITATION_REQUEST_INFO
+ms.topic: reference
 description: WDI_TLV_P2P_INVITATION_REQUEST_INFO is a TLV that contains Wi-Fi Direct Invitation Request information.
 ms.date: 07/18/2017
 keywords:

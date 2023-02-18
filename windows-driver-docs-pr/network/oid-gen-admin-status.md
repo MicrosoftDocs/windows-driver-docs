@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_ADMIN_STATUS
+ms.topic: reference
 description: As a query, use the OID_GEN_ADMIN_STATUS OID to determine the administrative status for an interface (ifAdminStatus from RFC 2863).
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_STATUS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_STATUS is a WiFiCx TLV that contains a status value.
 ms.date: 06/30/2021
 keywords:

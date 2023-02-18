@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_CO_SUPPORTED_LIST
+ms.topic: reference
 description: This topic describes the OID_GEN_CO_SUPPORTED_LIST object identifier (OID).
 keywords:
 - OID_GEN_CO_SUPPORTED_LIST

@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE
+ms.topic: reference
 description: OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE requests that the IHV component sends an Association Response to a peer device that has recently sent an association request.
 ms.date: 07/18/2017
 keywords:

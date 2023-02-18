@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_DEVICE_RESET_STATUS
+ms.topic: reference
 description: NDIS_STATUS_WWAN_DEVICE_RESET_STATUS
 keywords:
 - NDIS_STATUS_WWAN_DEVICE_RESET_STATUS, modem reset status notification, Mobile Broadband modem reset status notification, MB modem reset status notification
