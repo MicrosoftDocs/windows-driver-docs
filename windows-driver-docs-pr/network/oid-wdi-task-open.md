@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_OPEN
+ms.topic: reference
 description: OID_WDI_TASK_OPEN requests that the IHV component initializes the adapter.
 ms.date: 07/18/2017
 keywords:

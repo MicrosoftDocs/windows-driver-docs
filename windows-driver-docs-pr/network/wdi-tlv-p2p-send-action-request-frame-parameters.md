@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SEND_ACTION_REQUEST_FRAME_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_P2P_SEND_ACTION_REQUEST_FRAME_PARAMETERS is a TLV that contains parameters for sending a Wi-Fi Direct action request frame with OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME.
 ms.date: 07/18/2017
 keywords:

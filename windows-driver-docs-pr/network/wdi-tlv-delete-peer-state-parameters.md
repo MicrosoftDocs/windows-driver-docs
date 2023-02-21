@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_DELETE_PEER_STATE_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_DELETE_PEER_STATE_PARAMETERS is an unused TLV.
 ms.date: 07/18/2017
 keywords:

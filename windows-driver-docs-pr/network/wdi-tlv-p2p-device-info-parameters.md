@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_DEVICE_INFO_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_P2P_DEVICE_INFO_PARAMETERS is a TLV that contains Wi-Fi Direct device information parameters.
 ms.date: 07/18/2017
 keywords:

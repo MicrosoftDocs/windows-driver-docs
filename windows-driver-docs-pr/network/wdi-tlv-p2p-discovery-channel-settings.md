@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_DISCOVERY_CHANNEL_SETTINGS
+ms.topic: reference
 description: WDI_TLV_P2P_DISCOVERY_CHANNEL_SETTINGS is a TLV that contains Wi-Fi Direct discovery channel settings.
 ms.date: 07/18/2017
 keywords:

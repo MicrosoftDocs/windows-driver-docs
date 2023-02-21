@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_NEXT_DIALOG_TOKEN
+ms.topic: reference
 description: WDI_TLV_NEXT_DIALOG_TOKEN is a TLV that contains the dialog token to be used in the next Action frame.
 ms.date: 07/18/2017
 keywords:

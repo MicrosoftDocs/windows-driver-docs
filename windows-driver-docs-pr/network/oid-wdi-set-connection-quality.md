@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_CONNECTION_QUALITY
+ms.topic: reference
 description: OID_WDI_SET_CONNECTION_QUALITY provides a hint to the IHV component to enforce connection quality for a given virtualized port. This hint allows the port to optimize channel usage in different scenarios.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SERVICE_INFORMATION_ENTRY
+ms.topic: reference
 description: WDI_TLV_P2P_SERVICE_INFORMATION_ENTRY is an unused TLV.
 ms.date: 07/18/2017
 keywords:

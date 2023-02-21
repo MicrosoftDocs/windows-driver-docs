@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ACTION_FRAME_DEVICE_CONTEXT (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_ACTION_FRAME_DEVICE_CONTEXT is a WiFiCx TLV that contains an Action Frame device context.
 ms.date: 07/31/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE
+ms.topic: reference
 description: WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE is a TLV that contains the opcode specific to the device service.
 ms.date: 06/15/2018
 keywords:

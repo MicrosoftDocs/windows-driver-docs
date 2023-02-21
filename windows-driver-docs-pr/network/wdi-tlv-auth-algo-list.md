@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_AUTH_ALGO_LIST
+ms.topic: reference
 description: WDI_TLV_AUTH_ALGO_LIST is a TLV that contains a list of authentication algorithms.
 ms.date: 07/18/2017
 keywords:

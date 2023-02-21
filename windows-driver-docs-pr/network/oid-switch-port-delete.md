@@ -1,5 +1,6 @@
 ---
 title: OID_SWITCH_PORT_DELETE
+ms.topic: reference
 description: The protocol edge of the Hyper-V extensible switch issues an object identifier (OID) set request of OID_SWITCH_PORT_DELETE to notify extensible switch extensions about the deletion of an extensible switch port.
 ms.date: 08/08/2017
 keywords: 

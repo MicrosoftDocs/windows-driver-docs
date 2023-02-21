@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_IHV
+ms.topic: reference
 description: OID_WDI_TASK_IHV is used to start an IHV-initiated task.
 ms.date: 07/18/2017
 keywords:

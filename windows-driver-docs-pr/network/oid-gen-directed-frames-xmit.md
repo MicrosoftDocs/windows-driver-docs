@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_DIRECTED_FRAMES_XMIT
+ms.topic: reference
 description: As a query, the OID_GEN_DIRECTED_FRAMES_XMIT OID specifies the number of directed packets that are transmitted without errors.
 ms.date: 11/01/2019
 keywords: 

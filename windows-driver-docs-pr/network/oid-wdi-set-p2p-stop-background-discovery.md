@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_P2P_STOP_BACKGROUND_DISCOVERY
+ms.topic: reference
 description: OID_WDI_SET_P2P_STOP_BACKGROUND_DISCOVERY instructs the adapter to cancel the background discovery and stop any active scans in progress.
 ms.date: 07/18/2017
 keywords:

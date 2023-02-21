@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_ROAMING_NEEDED (dot11wificxintf.h)
+ms.topic: reference
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_ROAMING_NEEDED to indicate that the host should try to find a better peer to connect to.
 ms.date: 06/30/2021
 keywords:

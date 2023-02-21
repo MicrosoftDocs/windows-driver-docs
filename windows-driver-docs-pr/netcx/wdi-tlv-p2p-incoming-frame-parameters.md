@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_INCOMING_FRAME_PARAMETERS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_INCOMING_FRAME_PARAMETERS is a WiFiCx TLV that contains incoming Wi-Fi Direct action frame parameters.
 ms.date: 07/31/2021
 keywords:

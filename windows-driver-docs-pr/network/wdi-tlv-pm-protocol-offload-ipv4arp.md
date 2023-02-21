@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PM_PROTOCOL_OFFLOAD_IPv4ARP
+ms.topic: reference
 description: WDI_TLV_PM_PROTOCOL_OFFLOAD_IPv4ARP is a TLV that contains IPv4 ARP protocol offload parameters.
 ms.date: 07/18/2017
 keywords:

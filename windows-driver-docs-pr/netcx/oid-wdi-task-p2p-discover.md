@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_P2P_DISCOVER (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_TASK_P2P_DISCOVER task command is issued to the device to perform Wi-Fi Direct discovery.
 ms.date: 06/30/2021
 keywords:

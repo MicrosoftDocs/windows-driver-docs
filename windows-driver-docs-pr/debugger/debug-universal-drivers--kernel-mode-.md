@@ -326,7 +326,7 @@ To download and build the Sysvad sample audio driver, perform the following step
 
     Locate the TabletAudioSample. Open the Sysvad driver’s property page and make sure **Driver Signing** &gt; **Sign Mode** is set to *Test Sign*.
 
-5. Driver samples need to be modified to use values that don't overlap with existing drivers. Refer to [From Sample Code to Production Driver - What to Change in the Samples](/windows-hardware/drivers/gettingstarted/from-sample-code-to-production-driver) on how to create a unique driver sample that will coexist with existing real drivers installed in Windows.
+5. Driver samples need to be modified to use values that don't overlap with existing drivers. Refer to [From Sample Code to Production Driver - What to Change in the Samples](../gettingstarted/from-sample-code-to-production-driver.md) on how to create a unique driver sample that will coexist with existing real drivers installed in Windows.
 
 6.  **Build the sample using Visual Studio**
 

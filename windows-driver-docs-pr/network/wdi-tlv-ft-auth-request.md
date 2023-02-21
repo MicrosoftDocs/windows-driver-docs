@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_FT_AUTH_REQUEST
+ms.topic: reference
 description: WDI_TLV_FT_AUTH_REQUEST is a TLV that contains the Fast Transition authentication request byte blob.
 ms.date: 07/18/2017
 keywords:

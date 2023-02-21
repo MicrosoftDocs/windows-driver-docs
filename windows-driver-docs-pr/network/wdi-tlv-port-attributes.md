@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PORT_ATTRIBUTES
+ms.topic: reference
 description: WDI_TLV_PORT_ATTRIBUTES is a TLV that contains port attributes.
 ms.date: 07/18/2017
 keywords:

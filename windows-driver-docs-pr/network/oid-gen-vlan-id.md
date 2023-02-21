@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_VLAN_ID
+ms.topic: reference
 description: As a query, the OID_GEN_VLAN_ID OID reports the configured VLAN identifier (ID) for a NIC.
 ms.date: 08/08/2017
 keywords: 

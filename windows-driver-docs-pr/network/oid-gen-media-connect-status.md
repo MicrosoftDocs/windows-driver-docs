@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_MEDIA_CONNECT_STATUS
+ms.topic: reference
 description: As a query, the OID_GEN_MEDIA_CONNECT_STATUS OID requests the connection status of the NIC on the network.
 ms.date: 08/08/2017
 keywords: 

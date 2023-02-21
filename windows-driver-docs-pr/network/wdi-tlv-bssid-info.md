@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_BSSID_INFO
+ms.topic: reference
 description: WDI_TLV_BSSID_INFO is a TLV that contains BSSID information.
 ms.date: 07/18/2017
 keywords:

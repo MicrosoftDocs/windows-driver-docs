@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_XMIT_OK
+ms.topic: reference
 description: As a query, the OID_GEN_XMIT_OK OID specifies the number of frames that are transmitted without errors.
 ms.date: 08/08/2017
 keywords: 

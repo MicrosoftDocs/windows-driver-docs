@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_DEVICE_SERVICE_PARAMS_OPCODE is a WiFiCx TLV that contains the opcode specific to the device service.
 ms.date: 07/31/2021
 keywords:

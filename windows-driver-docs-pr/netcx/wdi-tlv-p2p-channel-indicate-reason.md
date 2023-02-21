@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_CHANNEL_INDICATE_REASON (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_CHANNEL_INDICATE_REASON is a WiFiCx TLV that contains a reason for sending an indication.
 ms.date: 08/30/2021
 keywords:

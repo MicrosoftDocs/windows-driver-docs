@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_NLO_DISCOVERY
+ms.topic: reference
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_NLO_DISCOVERY to indicate Network List Offload (NLO) discovery.
 ms.date: 07/18/2017
 keywords:

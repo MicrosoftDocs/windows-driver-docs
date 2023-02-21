@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_LISTEN_CHANNEL (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_LISTEN_CHANNEL is a WiFiCx TLV that contains Wi-Fi Direct channel information.
 ms.date: 08/30/2021
 keywords:

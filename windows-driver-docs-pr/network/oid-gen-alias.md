@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_ALIAS
+ms.topic: reference
 description: As a query, use the OID_GEN_ALIAS OID to obtain the alias string for an interface (ifAlias from RFC 2863). Version Information Windows Vista and laterSupported. NDIS 6.0 and later miniport driversNot requested. For NDIS interface providers only.
 ms.date: 08/08/2017
 keywords: 

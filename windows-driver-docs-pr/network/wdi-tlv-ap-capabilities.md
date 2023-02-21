@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_AP_CAPABILITIES
+ms.topic: reference
 description: WDI_TLV_AP_CAPABILITIES is a TLV that contains the capabilities of an access point.
 ms.date: 07/18/2017
 keywords:

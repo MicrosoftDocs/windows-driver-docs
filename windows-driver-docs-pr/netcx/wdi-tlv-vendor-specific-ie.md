@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_VENDOR_SPECIFIC_IE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_VENDOR_SPECIFIC_IE is a WiFiCx TLV that contains a list of vendor-specific IEs.
 ms.date: 06/30/2021
 keywords:

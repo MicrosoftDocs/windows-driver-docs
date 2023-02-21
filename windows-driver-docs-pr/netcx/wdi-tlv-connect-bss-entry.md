@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CONNECT_BSS_ENTRY (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_CONNECT_BSS_ENTRY is a WiFiCx TLV that contains a list of candidate connect BSS entries.
 ms.date: 06/17/2021
 keywords:

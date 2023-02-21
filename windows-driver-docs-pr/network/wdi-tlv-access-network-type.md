@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ACCESS_NETWORK_TYPE
+ms.topic: reference
 description: WDI_TLV_ACCESS_NETWORK_TYPE is a TLV that contains an Access Network Type.
 ms.date: 07/18/2017
 keywords:

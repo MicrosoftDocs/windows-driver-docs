@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PMKID (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_PMKID is a WiFiCx TLV that contains a PMKID value.
 ms.date: 06/17/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_FT_PMKR0NAME (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_FT_PMKR0NAME is a WiFiCx TLV that contains a PMKR0Name or PMKR1Name (802.11r).
 ms.date: 06/17/2021
 keywords:

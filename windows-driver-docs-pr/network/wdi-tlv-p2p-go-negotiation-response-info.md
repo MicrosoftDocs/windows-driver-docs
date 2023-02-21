@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_GO_NEGOTIATION_RESPONSE_INFO
+ms.topic: reference
 description: WDI_TLV_P2P_GO_NEGOTIATION_RESPONSE_INFO is a TLV that contains Wi-Fi Direct Group Owner negotiation response information.
 ms.date: 07/18/2017
 keywords:

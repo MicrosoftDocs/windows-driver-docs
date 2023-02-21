@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_RECEIVE_SCALE_PARAMETERS
+ms.topic: reference
 description: As a query, NDIS and overlying drivers can use the OID_GEN_RECEIVE_SCALE_PARAMETERS OID to query the current receive side scaling (RSS) parameters of a NIC.
 ms.date: 08/08/2017
 keywords: 

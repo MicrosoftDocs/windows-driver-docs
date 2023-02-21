@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED (dot11wificxintf.h)
+ms.topic: reference
 description: WiFiCx drivers send this indication to indicate that the cipher key(s) have been updated.
 ms.date: 08/30/2021
 keywords:

@@ -329,7 +329,7 @@ To download and build the Echo sample audio driver:
 
 3. Set the sample's configuration and platform. In Solution Explorer, select and hold or right-click **Solution 'kmdfecho' (3 projects)**, and select **Configuration Manager**. Make sure that the configuration and platform settings are the same for the three projects. By default, the configuration is set to **Win10 Debug**, and the platform is set to **Win64** for all the projects. If you make any configuration or platform changes for one project, make the same changes for the remaining three projects.
 
-4. Driver samples need to be modified to use values that don't overlap with existing drivers. Refer to [From Sample Code to Production Driver - What to Change in the Samples](/windows-hardware/drivers/gettingstarted/from-sample-code-to-production-driver) on how to create a unique driver sample that will coexist with existing real drivers installed in Windows.
+4. Driver samples need to be modified to use values that don't overlap with existing drivers. Refer to [From Sample Code to Production Driver - What to Change in the Samples](../gettingstarted/from-sample-code-to-production-driver.md) on how to create a unique driver sample that will coexist with existing real drivers installed in Windows.
 
 5. Set the runtime library. Open the echo driver property page and locate **C/C++** > **Code Generation**.  Change Runtime Library to Multi-threaded Debug (/MTd). For more information about the build options, see [/MD, /MT, /LD (Use Run-Time Library)](/cpp/build/reference/md-mt-ld-use-run-time-library).
 

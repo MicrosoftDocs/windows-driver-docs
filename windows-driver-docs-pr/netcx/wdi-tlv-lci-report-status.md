@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_LCI_REPORT_STATUS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_LCI_REPORT_STATUS is a WiFiCx TLV that contains the status result of a Location Configuration Information (LCI) report, if one was requested during a Fine Timing Measurement (FTM) request.
 ms.date: 07/31/2021
 keywords:

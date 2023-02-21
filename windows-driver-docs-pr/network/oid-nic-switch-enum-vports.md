@@ -1,5 +1,6 @@
 ---
 title: OID_NIC_SWITCH_ENUM_VPORTS
+ms.topic: reference
 description: An overlying driver or user-mode application issues an object identifier (OID) method request of OID_NIC_SWITCH_ENUM_VPORTS to obtain an array.
 ms.date: 08/08/2017
 keywords: 

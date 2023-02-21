@@ -1,5 +1,6 @@
 ---
 title: OID_802_3_XMIT_TIMES_CRS_LOST
+ms.topic: reference
 description: This topic describes the OID_802_3_XMIT_TIMES_CRS_LOST object identifier (OID).
 keywords:
 - OID_802_3_XMIT_TIMES_CRS_LOST

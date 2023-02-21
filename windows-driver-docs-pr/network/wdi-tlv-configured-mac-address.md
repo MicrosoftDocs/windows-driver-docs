@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CONFIGURED_MAC_ADDRESS
+ms.topic: reference
 description: WDI_TLV_CONFIGURED_MAC_ADDRESS is a TLV that contains a custom MAC address.
 ms.date: 07/18/2017
 keywords:

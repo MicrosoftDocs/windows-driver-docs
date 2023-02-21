@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_PM_OFFLOAD_REJECTED
+ms.topic: reference
 description: The NDIS_STATUS_PM_OFFLOAD_REJECTED status indicates to overlying drivers that a power management protocol offload was rejected.
 ms.date: 07/18/2017
 keywords:

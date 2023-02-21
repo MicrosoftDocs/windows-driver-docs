@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_MAXIMUM_LOOKAHEAD
+ms.topic: reference
 description: As a query, the OID_GEN_MAXIMUM_LOOKAHEAD OID specifies the maximum number of bytes that the NIC can provide as lookahead data.
 ms.date: 08/08/2017
 keywords: 

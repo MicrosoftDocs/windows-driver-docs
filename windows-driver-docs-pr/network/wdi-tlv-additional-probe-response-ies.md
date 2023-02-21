@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ADDITIONAL_PROBE_RESPONSE_IES
+ms.topic: reference
 description: WDI_TLV_ADDITIONAL_PROBE_RESPONSE_IES is a TLV that contains probe response IEs.
 ms.date: 07/18/2017
 keywords:

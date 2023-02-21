@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_CHANNEL_NUMBER (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_CHANNEL_NUMBER is a WiFiCx TLV that contains Wi-Fi Direct channel number information.
 ms.date: 07/31/2021
 keywords:

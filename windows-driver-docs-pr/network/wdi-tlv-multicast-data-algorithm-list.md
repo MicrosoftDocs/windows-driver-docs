@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_MULTICAST_DATA_ALGORITHM_LIST
+ms.topic: reference
 description: WDI_TLV_MULTICAST_DATA_ALGORITHM_LIST is a TLV that contains an array of multicast data algorithm pairs.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_VIRTUALIZATION_CAPABILITIES
+ms.topic: reference
 description: WDI_TLV_VIRTUALIZATION_CAPABILITIES is a TLV that contains virtualization capabilities.
 ms.date: 07/18/2017
 keywords:

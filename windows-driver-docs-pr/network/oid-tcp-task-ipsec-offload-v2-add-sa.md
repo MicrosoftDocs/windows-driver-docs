@@ -1,5 +1,6 @@
 ---
 title: OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA
+ms.topic: reference
 description: As a set, the TCP/IP transport uses the OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA OID to request that a miniport driver add the specified security associations (SAs) to a NIC.
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PM_CAPABILITIES (0x42)
+ms.topic: reference
 description: WDI_TLV_PM_CAPABILITIES is a TLV that contains power management capabilities.
 ms.date: 07/18/2017
 keywords:

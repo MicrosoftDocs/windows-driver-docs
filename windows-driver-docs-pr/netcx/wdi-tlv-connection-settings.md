@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CONNECTION_SETTINGS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_CONNECTION_SETTINGS is a WiFiCx TLV that contains connection settings for OID_WDI_TASK_CONNECT.
 ms.date: 06/30/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_LTE_ATTACH_STATUS
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_LTE_ATTACH_STATUS notification to inform the mobile broadband (MB) service about the completion of a previous OID_WWAN_LTE_ATTACH_STATUS Query request.
 ms.date: 08/23/2018
 keywords: 

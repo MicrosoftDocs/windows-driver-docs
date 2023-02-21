@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SAE_FINITE_CYCLIC_GROUP (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_SAE_FINITE_CYCLIC_GROUP is a WiFiCx TLV that contains the Finite Cyclic Group used in a Commit request for SAE authentication.
 ms.date: 07/31/2021
 keywords:

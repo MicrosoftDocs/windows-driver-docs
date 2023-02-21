@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_REPLAY_COUNTER (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_REPLAY_COUNTER is a WiFiCx TLV that contains a UINT64 value that represents a replay counter.
 ms.date: 09/30/2021
 keywords:

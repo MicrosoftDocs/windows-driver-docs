@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SET_ENCAPSULATION_OFFLOAD_V4_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_SET_ENCAPSULATION_OFFLOAD_V4_PARAMETERS is a TLV that is used by OID_WDI_SET_ENCAPSULATION_OFFLOAD to indicate if IPv4 offloading should be started.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_RESET_END
+ms.topic: reference
 description: The NDIS_STATUS_RESET_END status indicates that a miniport adapter reset operation is complete.
 ms.date: 07/18/2017
 keywords:

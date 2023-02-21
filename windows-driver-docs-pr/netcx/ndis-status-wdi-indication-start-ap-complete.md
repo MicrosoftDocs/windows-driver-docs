@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_START_AP_COMPLETE (dot11wificxintf.h)
+ms.topic: reference
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_START_AP_COMPLETE to indicate the completion of OID_WDI_TASK_START_AP.
 ms.date: 07/31/2021
 keywords:

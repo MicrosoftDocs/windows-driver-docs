@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_RCV_CRC_ERROR
+ms.topic: reference
 description: As a query, the OID_GEN_RCV_CRC_ERROR OID specifies the number of frames that are received with checksum errors.
 ms.date: 08/08/2017
 keywords: 

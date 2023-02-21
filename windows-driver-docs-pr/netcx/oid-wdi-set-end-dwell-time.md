@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_END_DWELL_TIME (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_SET_END_DWELL_TIME command is typically sent during an Action Frame exchange, either when WDI has to wait some time before sending a followup Action Frame, or when the protocol sequence is complete.
 ms.date: 07/31/2021
 keywords:

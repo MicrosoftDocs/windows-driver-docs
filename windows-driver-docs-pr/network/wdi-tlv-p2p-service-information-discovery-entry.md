@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SERVICE_INFORMATION_DISCOVERY_ENTRY
+ms.topic: reference
 description: WDI_TLV_P2P_SERVICE_INFORMATION_DISCOVERY_ENTRY is a TLV that contains a Service Information Discovery Entry.
 ms.date: 07/18/2017
 keywords:

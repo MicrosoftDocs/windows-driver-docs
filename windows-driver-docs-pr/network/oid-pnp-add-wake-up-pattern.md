@@ -1,5 +1,6 @@
 ---
 title: OID_PNP_ADD_WAKE_UP_PATTERN
+ms.topic: reference
 description: OID_PNP_ADD_WAKE_UP_PATTERN
 ms.date: 08/08/2017
 keywords: 

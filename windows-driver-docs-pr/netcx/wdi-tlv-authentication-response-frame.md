@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_AUTHENTICATION_RESPONSE_FRAME (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_ASSOCIATION_RESPONSE_FRAME is a WiFiCx TLV that contains an authentication response frame.
 ms.date: 06/30/2021
 keywords:

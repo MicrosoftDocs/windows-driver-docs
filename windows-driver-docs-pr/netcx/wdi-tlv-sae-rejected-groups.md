@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SAE_REJECTED_GROUPS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_SAE_REJECTED_GROUPS is a WiFiCx TLV that contains the anti-clogging token for a SAE Commit request.
 ms.date: 07/31/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PRIVACY_EXEMPTION_ENTRY (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_PRIVACY_EXEMPTION_ENTRY is a WiFiCx TLV that contains a privacy exemption entry.
 ms.date: 07/31/2021
 keywords:

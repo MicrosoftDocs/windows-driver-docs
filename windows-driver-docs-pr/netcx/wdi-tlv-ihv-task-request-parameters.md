@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_IHV_TASK_REQUEST_PARAMETERS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_IHV_TASK_REQUEST_PARAMETERS is a WiFiCx TLV that contains the requested priority for NDIS_STATUS_WDI_INDICATION_IHV_TASK_REQUEST.
 ms.date: 07/31/2021
 keywords:

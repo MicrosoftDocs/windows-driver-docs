@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS
+ms.topic: reference
 description: WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS is a TLV that contains currently configured Rsn Eapol key information.
 ms.date: 04/02/2018
 keywords:

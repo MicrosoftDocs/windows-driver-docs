@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE
+ms.topic: reference
 description: NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE
 ms.date: 02/11/2019
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_OPERATING_CLASS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_OPERATING_CLASS is a WiFiCx TLV that contains the frequency band for a channel.
 ms.date: 07/31/2021
 keywords:

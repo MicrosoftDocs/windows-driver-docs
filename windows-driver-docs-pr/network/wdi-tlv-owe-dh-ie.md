@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_OWE_DH_IE
+ms.topic: reference
 description: WDI_TLV_OWE_DH_IE is a TLV that must be included in the association request sent by the station when the auth type is OWE. 
 ms.date: 05/07/2021
 keywords:

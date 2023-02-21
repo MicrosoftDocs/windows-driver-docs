@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_LINK_SPEED
+ms.topic: reference
 description: As a query, the OID_GEN_LINK_SPEED OID specifies the maximum speed of the NIC.
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PHY_TYPE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_PHY_TYPE is a WiFiCx TLV that contains a PHY type.
 ms.date: 07/31/2021
 keywords:

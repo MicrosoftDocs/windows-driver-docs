@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_ADAPTER_CONFIGURATION
+ms.topic: reference
 description: OID_WDI_SET_ADAPTER_CONFIGURATION configures the adapter. It is an optional property and can only be sent before any ports are created.
 ms.date: 07/18/2017
 keywords:

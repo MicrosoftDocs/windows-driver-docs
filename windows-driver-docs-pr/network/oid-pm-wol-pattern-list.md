@@ -1,5 +1,6 @@
 ---
 title: OID_PM_WOL_PATTERN_LIST
+ms.topic: reference
 description: As a query, overlying drivers can use the OID_PM_WOL_PATTERN_LIST OID to enumerate the wake on LAN patterns that are set on an underlying network adapter.
 ms.date: 08/08/2017
 keywords: 

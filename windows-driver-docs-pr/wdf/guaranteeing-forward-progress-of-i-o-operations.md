@@ -32,7 +32,7 @@ By using the framework's guaranteed forward progress for I/O queues, a driver ca
 
 If your driver implements guaranteed forward progress for one or more of its I/O queues, the driver will be better able to successfully [process I/O requests](processing-i-o-requests.md) during low-memory situations. You can implement guaranteed forward progress for a device's default I/O queue, and for any I/O queue that your driver configures by calling [**WdfDeviceConfigureRequestDispatching**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceconfigurerequestdispatching).
 
-The framework's guaranteed forward progress capability works for your driver only if both your driver and the driver's [I/O targets](using-i-o-targets.md) implement guaranteed forward progress. In other words, if a driver implements guaranteed forward progress for a device, all lower-level drivers in the device's driver stack must also implement guaranteed forward progress.
+The framework's guaranteed forward progress capability works for your driver only if both your driver and the driver's [I/O targets](/windows-hardware/drivers/wdf/introduction-to-i-o-targets) implement guaranteed forward progress. In other words, if a driver implements guaranteed forward progress for a device, all lower-level drivers in the device's driver stack must also implement guaranteed forward progress.
 
 ### Enabling Guaranteed Forward Progress for an I/O Queue
 
@@ -112,6 +112,4 @@ The driver also provides an [*EvtIoAllocateRequestResources*](/windows-hardware/
 This driver does not provide an [*EvtIoWdmIrpForForwardProgress*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_wdm_irp_for_forward_progress) callback function, because it does not need to examine individual read or write IRPs before the framework adds them to an I/O queue.
 
 Remember that when a driver implements guaranteed forward progress for a device, all lower-level drivers in the device's driver stack must also implement guaranteed forward progress.
-
- 
 

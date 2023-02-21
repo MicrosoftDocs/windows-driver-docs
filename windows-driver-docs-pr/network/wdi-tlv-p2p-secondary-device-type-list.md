@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SECONDARY_DEVICE_TYPE_LIST
+ms.topic: reference
 description: WDI_TLV_P2P_SECONDARY_DEVICE_TYPE_LIST is a TLV that contains a list of secondary device types.
 ms.date: 07/18/2017
 keywords:

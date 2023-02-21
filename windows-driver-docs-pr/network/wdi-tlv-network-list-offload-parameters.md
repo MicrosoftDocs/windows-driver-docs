@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_NETWORK_LIST_OFFLOAD_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_NETWORK_LIST_OFFLOAD_PARAMETERS is a TLV that contains Network List Offload (NLO) parameters for OID_WDI_SET_NETWORK_LIST_OFFLOAD.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_LISTEN_CHANNEL
+ms.topic: reference
 description: WDI_TLV_P2P_LISTEN_CHANNEL is a TLV that contains Wi-Fi Direct channel information.
 ms.date: 07/18/2017
 keywords:

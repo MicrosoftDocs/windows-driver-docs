@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CIPHER_KEY_TYPE_INFO
+ms.topic: reference
 description: WDI_TLV_CIPHER_KEY_TYPE_INFO is a TLV that contains cipher key type information for OID_WDI_SET_ADD_CIPHER_KEYS and OID_WDI_SET_DELETE_CIPHER_KEYS.
 ms.date: 07/18/2017
 keywords:

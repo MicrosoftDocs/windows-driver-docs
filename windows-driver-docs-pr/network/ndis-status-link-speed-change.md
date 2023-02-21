@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_LINK_SPEED_CHANGE
+ms.topic: reference
 description: The NDIS_STATUS_LINK_SPEED_CHANGE status indicates a link speed change.
 ms.date: 07/18/2017
 keywords:

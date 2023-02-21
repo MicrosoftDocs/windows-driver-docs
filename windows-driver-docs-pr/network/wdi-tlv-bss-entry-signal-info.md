@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_BSS_ENTRY_SIGNAL_INFO
+ms.topic: reference
 description: WDI_TLV_BSS_ENTRY_SIGNAL_INFO is a TLV that contains signal information for a BSS entry.
 ms.date: 07/18/2017
 keywords:

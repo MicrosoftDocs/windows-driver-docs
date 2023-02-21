@@ -1,5 +1,6 @@
 ---
 title: OID_802_3_MAXIMUM_LIST_SIZE
+ms.topic: reference
 description: OID_802_3_MAXIMUM_LIST_SIZE
 ms.date: 08/08/2017
 keywords: 

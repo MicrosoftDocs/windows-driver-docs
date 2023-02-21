@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PMKID
+ms.topic: reference
 description: WDI_TLV_PMKID is a TLV that contains a PMKID value.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_BSSID
+ms.topic: reference
 description: WDI_TLV_BSSID is a TLV that contains the BSSID of a BSS.
 ms.date: 07/18/2017
 keywords:

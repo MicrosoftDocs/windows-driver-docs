@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_UICC_FILE_STATUS
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_UICC_FILE_STATUS notification to inform the mobile broadband (MB) service about the completion of a previous OID_WWAN_UICC_FILE_STATUS Query request.
 ms.date: 04/09/2019
 keywords: 

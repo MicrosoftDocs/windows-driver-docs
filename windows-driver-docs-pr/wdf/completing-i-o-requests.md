@@ -35,7 +35,7 @@ If the driver receives an unsupported or otherwise invalid request, it typically
 
 If the I/O operation was [canceled](canceling-i-o-requests.md), the driver typically calls [**WdfRequestComplete**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcomplete) from its [*EvtRequestCancel*](/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_cancel) callback function.
 
-If the driver [forwards](forwarding-i-o-requests.md) the I/O request to an [I/O target](using-i-o-targets.md), the driver completes the request after the I/O target completes the request, as follows:
+If the driver [forwards](forwarding-i-o-requests.md) the I/O request to an [I/O target](/windows-hardware/drivers/wdf/introduction-to-i-o-targets), the driver completes the request after the I/O target completes the request, as follows:
 
 -   If your driver forwards the I/O request [synchronously](sending-i-o-requests-synchronously.md) to the I/O target, the driver's call to the I/O target returns only after a lower-level driver has completed the request (unless an error occurs). After the I/O target returns, your driver must call [**WdfRequestComplete**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcomplete).
 
@@ -80,6 +80,4 @@ To obtain information about an I/O request that another driver has completed, a 
 If a driver sends an I/O request synchronously, it typically calls [**WdfRequestGetStatus**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestgetstatus), [**WdfRequestGetCompletionParams**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestgetcompletionparams), and [**WdfRequestGetInformation**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestgetinformation) after the synchronous call returns. If a driver sends an I/O request asynchronously, it typically calls these methods from within a [*CompletionRoutine*](/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_completion_routine) callback function.
 
 For more information about completing I/O requests, see [Synchronizing Cancel and Completion Code](synchronizing-cancel-and-completion-code.md).
-
- 
 

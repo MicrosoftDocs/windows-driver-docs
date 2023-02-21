@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_FT_INITIAL_ASSOC_PARAMETERS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_FT_INITIAL_ASSOC_PARAMETERS is a WiFiCx TLV that contains initial association parameters for Fast Transition.
 ms.date: 06/17/2021
 keywords:

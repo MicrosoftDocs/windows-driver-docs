@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_ATR_INFO
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_ATR_INFO notification to respond to OID query requests of OID_WWAN_UICC_ATR.
 keywords:
 - NDIS_STATUS_WWAN_ATR_INFO

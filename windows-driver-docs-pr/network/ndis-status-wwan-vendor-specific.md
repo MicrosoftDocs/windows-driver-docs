@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_VENDOR_SPECIFIC
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_VENDOR_SPECIFIC notification to implement the transaction completion response for vendor specific operation or vendor specific change notifications.
 ms.date: 08/08/2017
 keywords: 

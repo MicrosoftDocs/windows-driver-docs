@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_RSN_KEY_INFO
+ms.topic: reference
 description: WDI_TLV_RSN_KEY_INFO is a TLV that contains Rsn Eapol key parameters.
 ms.date: 04/02/2018
 keywords:

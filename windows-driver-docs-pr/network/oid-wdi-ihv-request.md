@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_IHV_REQUEST
+ms.topic: reference
 description: OID_WDI_IHV_REQUEST is used to forward information that an IHV extensibility module has sent to the miniport.
 ms.date: 07/18/2017
 keywords:

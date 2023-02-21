@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_INCOMING_FRAME_INFORMATION (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_INCOMING_FRAME_INFORMATION is a WiFiCx TLV that contains incoming Wi-Fi Direct action frame information.
 ms.date: 07/31/2021
 keywords:

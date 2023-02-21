@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_DEVICE_SLOT_MAPPING_INFO
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_DEVICE_SLOT_MAPPING_INFO notification to inform the MB service about the completion of a previous OID_WWAN_DEVICE_SLOT_MAPPING_INFO query or set request.
 ms.date: 07/18/2017
 keywords:

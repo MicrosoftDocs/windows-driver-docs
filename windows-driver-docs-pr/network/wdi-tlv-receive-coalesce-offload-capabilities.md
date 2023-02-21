@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_RECEIVE_COALESCE_OFFLOAD_CAPABILITIES
+ms.topic: reference
 description: WDI_TLV_RECEIVE_COALESCE_OFFLOAD_CAPABILITIES is a TLV that contains Rx coalesce offload capabilities.
 ms.date: 07/18/2017
 keywords:

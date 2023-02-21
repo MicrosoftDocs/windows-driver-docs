@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_UICC_TERMINAL_CAPABILITY
+ms.topic: reference
 description: The mobile broadband host sends OID_WWAN_UICC_TERMINAL_CAPABILITY to inform the modem about the terminal capabilities of the host. 
 keywords:
 - MB UICC terminal capability, Mobile Broadband UICC terminal capability, Mobile Broadband miniport driver UICC terminal capability

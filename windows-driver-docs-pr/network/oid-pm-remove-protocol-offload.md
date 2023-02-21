@@ -1,5 +1,6 @@
 ---
 title: OID_PM_REMOVE_PROTOCOL_OFFLOAD
+ms.topic: reference
 description: As a set request, NDIS and protocol drivers use the OID_PM_REMOVE_PROTOCOL_OFFLOAD OID to remove a power management protocol offload from a network adapter.
 ms.date: 08/08/2017
 keywords: 

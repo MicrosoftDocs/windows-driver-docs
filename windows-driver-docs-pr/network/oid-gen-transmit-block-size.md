@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_TRANSMIT_BLOCK_SIZE
+ms.topic: reference
 description: As a query, the OID_GEN_TRANSMIT_BLOCK_SIZE OID specifies the minimum number of bytes that a single net packet occupies in the transmit buffer space of the NIC.
 ms.date: 08/08/2017
 keywords: 

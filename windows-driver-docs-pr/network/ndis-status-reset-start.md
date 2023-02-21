@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_RESET_START
+ms.topic: reference
 description: The NDIS_STATUS_RESET_START status indicates that a miniport adapter is being reset.
 ms.date: 07/18/2017
 keywords:

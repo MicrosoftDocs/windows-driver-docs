@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_ACTION_FRAME_DEVICE_CONTEXT
+ms.topic: reference
 description: WDI_TLV_P2P_ACTION_FRAME_DEVICE_CONTEXT is an unused TLV.
 ms.date: 07/18/2017
 keywords:

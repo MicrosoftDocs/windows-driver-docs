@@ -1,5 +1,6 @@
 ---
 title: OID_CO_AF_CLOSE
+ms.topic: reference
 description: This topic describes the OID_CO_AF_CLOSE object identifier (OID).
 keywords:
 - OID_CO_AF_CLOSE

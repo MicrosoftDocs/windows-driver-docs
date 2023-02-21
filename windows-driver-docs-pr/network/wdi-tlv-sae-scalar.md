@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SAE_SCALAR
+ms.topic: reference
 description: WDI_TLV_SAE_SCALAR is a TLV that contains the Finite Field Element (FFE) for a Simultaneous Authentication of Equals (SAE) Commit request.
 ms.date: 02/15/2019
 keywords:

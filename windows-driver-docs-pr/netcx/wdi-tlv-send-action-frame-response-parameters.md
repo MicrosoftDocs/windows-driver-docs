@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SEND_ACTION_FRAME_RESPONSE_PARAMETERS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_SEND_ACTION_FRAME_RESPONSE_PARAMETERS is a WiFiCx TLV that contains parameters for OID_WDI_TASK_SEND_RESPONSE_ACTION_FRAME.
 ms.date: 07/31/2021
 keywords:

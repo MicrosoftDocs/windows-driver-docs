@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_ADVERTISED_SERVICES (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_ADVERTISED_SERVICES is a WiFiCx TLV that contains a list of advertised services.
 ms.date: 07/31/2021
 keywords:

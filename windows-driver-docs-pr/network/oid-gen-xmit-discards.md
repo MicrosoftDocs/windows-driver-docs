@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_XMIT_DISCARDS
+ms.topic: reference
 description: As a query, NDIS and overlying drivers use the OID_GEN_XMIT_DISCARDS OID to determine the number of transmit discards on a miniport adapter.
 ms.date: 11/01/2019
 keywords: 

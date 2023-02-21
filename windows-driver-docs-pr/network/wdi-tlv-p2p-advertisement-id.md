@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_ADVERTISEMENT_ID
+ms.topic: reference
 description: WDI_TLV_P2P_ADVERTISEMENT_ID is a TLV that contains an ID that uniquely identifies a service instance.
 ms.date: 07/18/2017
 keywords:

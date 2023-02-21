@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS
+ms.topic: reference
 description: OID_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS sets information about the list of device services for which the MB device must send NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT notifications.
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME command requests that the device sends an Action Frame Request to another device.
 ms.date: 07/31/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ANQP_QUERY_STATUS
+ms.topic: reference
 description: WDI_TLV_ANQP_QUERY_STATUS is an unused TLV.
 ms.date: 07/18/2017
 keywords:

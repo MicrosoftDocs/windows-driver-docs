@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_DISASSOCIATION_INDICATION_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_DISASSOCIATION_INDICATION_PARAMETERS is a TLV that contains disassociation indication parameters for NDIS_STATUS_WDI_INDICATION_DISASSOCIATION.
 ms.date: 07/18/2017
 keywords:

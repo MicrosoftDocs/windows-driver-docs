@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_P2P_WPS_ENABLED (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_SET_P2P_WPS_ENABLED command requests that the adapter enables or disables Wi-Fi Protected Setup (WPS) on the NIC.
 ms.date: 07/31/2021
 keywords:

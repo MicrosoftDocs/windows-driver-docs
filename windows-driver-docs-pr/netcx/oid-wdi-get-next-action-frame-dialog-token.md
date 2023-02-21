@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_GET_NEXT_ACTION_FRAME_DIALOG_TOKEN (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_GET_NEXT_ACTION_FRAME_DIALOG_TOKEN command requests the DialogToken to be used in the next Action frame.
 ms.date: 07/31/2021
 keywords:

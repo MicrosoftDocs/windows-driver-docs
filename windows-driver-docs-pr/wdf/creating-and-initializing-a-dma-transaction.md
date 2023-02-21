@@ -24,7 +24,7 @@ Before your driver can send an I/O request to a DMA device, the driver must:
 
 2.  Call [**WdfDmaTransactionInitializeUsingRequest**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioninitializeusingrequest), [**WdfDmaTransactionInitialize**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioninitialize), or [**WdfDmaTransactionInitializeUsingOffset**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioninitializeusingoffset) to initialize the transaction object.
 
-Typically, your driver creates a [DMA transaction](dma-transactions-and-dma-transfers.md) because a [request handler](request-handlers.md) has received a [framework request object](framework-request-objects.md) and must pass the request to the hardware. In this case, the driver should call [**WdfDmaTransactionInitializeUsingRequest**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioninitializeusingrequest), which accepts a request object handle as input and extracts the request's address parameters from the request object.
+Typically, your driver creates a [DMA transaction](dma-transactions-and-dma-transfers.md) because a [request handler](request-handlers.md) has received a [framework request object](/windows-hardware/drivers/wdf/creating-framework-request-objects) and must pass the request to the hardware. In this case, the driver should call [**WdfDmaTransactionInitializeUsingRequest**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioninitializeusingrequest), which accepts a request object handle as input and extracts the request's address parameters from the request object.
 
 If your driver must create a DMA transaction that is *not* based on a framework request object that the driver received, the driver can call either [**WdfDmaTransactionInitialize**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioninitialize) or [**WdfDmaTransactionInitializeUsingOffset**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioninitializeusingoffset). Both methods accept address parameters that the driver provides.
 
@@ -37,6 +37,4 @@ For some types of DMA transactions, you might need to specify a maximum transfer
 Note that the maximum transfer length is limited by the number of [map registers](../kernel/map-registers.md) that the operating system makes available to the DMA enabler object. To determine the maximum transfer length that is available, your driver can call [**WdfDmaEnablerGetFragmentLength**](/windows-hardware/drivers/ddi/wdfdmaenabler/nf-wdfdmaenabler-wdfdmaenablergetfragmentlength). If the value that **WdfDmaEnablerGetFragmentLength** returns is less than the maximum transfer length that the driver supplied to [**WdfDmaEnablerCreate**](/windows-hardware/drivers/ddi/wdfdmaenabler/nf-wdfdmaenabler-wdfdmaenablercreate), the framework uses the smaller value.
 
 After your driver creates and initializes a DMA transaction, the driver must [start the transaction](starting-a-dma-transaction.md).
-
- 
 

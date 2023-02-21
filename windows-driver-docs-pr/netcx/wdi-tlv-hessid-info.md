@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_HESSID_INFO (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_HESSID_INFO is a WiFiCx TLV that contains HESSID information - a list of HESSIDs, the Access Network Type, and Hotspot Indication Element.
 ms.date: 08/30/2021
 keywords:

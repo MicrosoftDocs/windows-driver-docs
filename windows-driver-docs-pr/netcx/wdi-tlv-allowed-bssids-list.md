@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ALLOWED_BSSIDS_LIST (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_ALLOWED_BSSIDS_LIST is a WiFiCx TLV that contains a list of BSSIDs that are allowed to be used for association.
 ms.date: 06/30/2021
 keywords:

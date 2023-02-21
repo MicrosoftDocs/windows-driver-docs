@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_RCV_ERROR
+ms.topic: reference
 description: As a query, the OID_GEN_RCV_ERROR OID specifies the number of frames that a NIC receives but does not indicate to the protocols due to errors.
 ms.date: 11/01/2019
 keywords: 

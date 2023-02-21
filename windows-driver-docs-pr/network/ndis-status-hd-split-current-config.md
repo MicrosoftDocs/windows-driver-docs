@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_HD_SPLIT_CURRENT_CONFIG
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_HD_SPLIT_CURRENT_CONFIG status indication to notify NDIS and overlying drivers that there has been a change in the header-data split configuration of a miniport adapter.
 ms.date: 07/18/2017
 keywords:

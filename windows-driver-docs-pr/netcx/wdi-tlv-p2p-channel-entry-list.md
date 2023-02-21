@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_CHANNEL_ENTRY_LIST (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_CHANNEL_ENTRY_LIST is a WiFiCx TLV that contains a channel number list.
 ms.date: 08/31/2021
 keywords:

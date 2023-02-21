@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_SMS_CONFIGURATION
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_SMS_CONFIGURATION notification to inform the MB Service about either the completion of a previous OID_WWAN_SMS_CONFIGURATION \ 160;query or set request, or an event notification in the case of change in SMS configuration. Miniport drivers can also send unsolicited events with this notification.This notification uses the NDIS_WWAN_SMS_CONFIGURATION structure.
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: OID_SWITCH_NIC_ARRAY
+ms.topic: reference
 description: A Hyper-V extensible switch extension issues an object identifier (OID) query request of OID_SWITCH_NIC_ARRAY to obtain an array.
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME task command is issued to the device to send a Wi-Fi Direct Public Action Frame Request.
 ms.date: 07/30/2021
 keywords:

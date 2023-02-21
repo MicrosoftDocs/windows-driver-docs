@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_IHV_EVENT
+ms.topic: reference
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_IHV_EVENT to pass IHV specific information to the IHV extensibility module.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_POWER_STATE
+ms.topic: reference
 description: OID_WDI_SET_POWER_STATE sets the power state of the device.
 ms.date: 07/18/2017
 keywords:

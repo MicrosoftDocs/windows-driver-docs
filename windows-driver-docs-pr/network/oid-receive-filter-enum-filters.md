@@ -1,5 +1,6 @@
 ---
 title: OID_RECEIVE_FILTER_ENUM_FILTERS
+ms.topic: reference
 description: An overlying driver issues an OID method request of OID_RECEIVE_FILTER_ENUM_FILTERS to obtain a list of all the filters that are configured on a network adapter.
 ms.date: 08/08/2017
 keywords: 

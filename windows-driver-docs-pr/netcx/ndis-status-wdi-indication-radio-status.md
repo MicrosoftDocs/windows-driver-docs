@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_RADIO_STATUS (dot11wificxintf.h)
+ms.topic: reference
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_RADIO_STATUS to indicate changes in the adapter's radio state.
 ms.date: 07/30/2021
 keywords:

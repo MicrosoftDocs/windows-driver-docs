@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_NETWORK_LIST_OFFLOAD_CONFIG
+ms.topic: reference
 description: WDI_TLV_NETWORK_LIST_OFFLOAD_CONFIG is a TLV that contains Network List Offload (NLO) configuration.
 ms.date: 07/18/2017
 keywords:

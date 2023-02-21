@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PM_PROTOCOL_OFFLOAD_GET
+ms.topic: reference
 description: WDI_TLV_PM_PROTOCOL_OFFLOAD_GET is a TLV that contains a protocol offload ID for OID_WDI_GET_PM_PROTOCOL_OFFLOAD.
 ms.date: 07/18/2017
 keywords:

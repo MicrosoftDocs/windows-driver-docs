@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_DEVICE_SERVICE_SESSION_READ
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_DEVICE_SERVICE_SESSION_READ notification to inform the MB Service that data has been received from an open device service session.NDIS_WWAN_DEVICE_SERVICE_SESSION_READ structure.
 ms.date: 07/18/2017
 keywords:

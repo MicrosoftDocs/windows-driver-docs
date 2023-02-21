@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_USSD
+ms.topic: reference
 description: OID_WWAN_USSD sends Unstructured Supplementary Service Data (USSD) requests to the underlying MB device.
 ms.date: 08/08/2017
 keywords: 

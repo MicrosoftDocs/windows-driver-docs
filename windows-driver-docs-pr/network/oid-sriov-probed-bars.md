@@ -1,5 +1,6 @@
 ---
 title: OID_SRIOV_PROBED_BARS
+ms.topic: reference
 description: NDIS issues an object identifier (OID) query request of OID_SRIOV_PROBED_BARS to obtain the values of a network adapter's PCI Express (PCIe) Base Address Registers (BARs).
 ms.date: 08/08/2017
 keywords: 

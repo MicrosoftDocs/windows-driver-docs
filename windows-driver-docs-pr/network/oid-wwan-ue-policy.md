@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_UE_POLICY
+ms.topic: reference
 description: OID_WWAN_UE_POLICY returns the UE policies from an MB device.
 ms.date: 06/24/2022
 keywords: 

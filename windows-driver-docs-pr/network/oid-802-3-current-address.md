@@ -1,5 +1,6 @@
 ---
 title: OID_802_3_CURRENT_ADDRESS
+ms.topic: reference
 description: OID_802_3_CURRENT_ADDRESS
 ms.date: 08/08/2017
 keywords: 

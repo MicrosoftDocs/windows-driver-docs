@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_FT_FTE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_FT_FTE is a WiFiCx TLV that contains a Fast Transition Element.
 ms.date: 06/17/2021
 keywords:

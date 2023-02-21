@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ETHERTYPE_ENCAP_TABLE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_ETHERTYPE_ENCAP_TABLE is a WiFiCx TLV that contains the Ethertype encapsulations for the association.
 ms.date: 06/30/2021
 keywords:
