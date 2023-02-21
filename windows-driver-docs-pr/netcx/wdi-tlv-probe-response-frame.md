@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PROBE_RESPONSE_FRAME (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_PROBE_RESPONSE_FRAME is a WiFiCx TLV that contains a probe response frame.
 ms.date: 06/17/2021
 keywords:

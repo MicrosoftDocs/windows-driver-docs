@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_PCI_DEVICE_CUSTOM_PROPERTIES
+ms.topic: reference
 description: As a query, overlying drivers use the OID_GEN_PCI_DEVICE_CUSTOM_PROPERTIES OID to get the PCI custom properties of a device.
 ms.date: 08/08/2017
 keywords: 

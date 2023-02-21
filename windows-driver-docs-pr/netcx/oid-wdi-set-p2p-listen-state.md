@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_P2P_LISTEN_STATE (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_SET_P2P_LISTEN_STATE command sets the Wi-Fi Direct listen state on the port.
 ms.date: 07/31/2021
 keywords:

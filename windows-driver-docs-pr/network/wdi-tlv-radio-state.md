@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_RADIO_STATE
+ms.topic: reference
 description: WDI_TLV_RADIO_STATE is a TLV that contains the state of the radio in hardware and software.
 ms.date: 07/18/2017
 keywords:

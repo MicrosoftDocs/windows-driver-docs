@@ -20,7 +20,7 @@ A client driver for a USB device is a WDF or WDM driver that communicates with t
 
 The Windows Driver Kit (WDK) contains resources that are required for driver development, such as headers, libraries, tools, and samples.
 
-- [Download the Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)
+- [Download the Windows Driver Kit (WDK)](../download-the-wdk.md)
 
 ## USB programming reference
 

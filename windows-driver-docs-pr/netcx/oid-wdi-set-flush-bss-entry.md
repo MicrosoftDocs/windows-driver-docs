@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_FLUSH_BSS_ENTRY (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_SET_FLUSH_BSS_ENTRY command is sent to the device to flush the list of BSS entries maintained by the adapter.
 ms.date: 07/31/2021
 keywords:

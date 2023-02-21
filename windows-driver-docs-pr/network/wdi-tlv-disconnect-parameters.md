@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_DISCONNECT_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_DISCONNECT_PARAMETERS is a TLV that contains parameters for OID_WDI_TASK_DISCONNECT.
 ms.date: 07/18/2017
 keywords:

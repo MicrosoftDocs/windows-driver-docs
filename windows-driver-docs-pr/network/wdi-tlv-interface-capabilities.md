@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_INTERFACE_CAPABILITIES
+ms.topic: reference
 description: WDI_TLV_INTERFACE_CAPABILITIES is a TLV that contains the capabilities of the Wi-Fi interface.
 ms.date: 02/14/2019
 keywords:

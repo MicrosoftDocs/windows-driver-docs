@@ -1,5 +1,6 @@
 ---
 title: OID_SRIOV_SET_VF_POWER_STATE
+ms.topic: reference
 description: An overlying driver issues an object identifier (OID) set request of OID_SRIOV_SET_VF_POWER_STATE to change the power state of a specified PCI Express (PCIe) Virtual Function (VF) on the network adapter.
 ms.date: 08/08/2017
 keywords: 

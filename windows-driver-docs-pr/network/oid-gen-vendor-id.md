@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_VENDOR_ID
+ms.topic: reference
 description: As a query, the OID_GEN_VENDOR_ID OID specifies a three-byte IEEE-registered vendor code, followed by a single byte that the vendor assigns to identify a particular NIC.
 ms.date: 08/08/2017
 keywords: 

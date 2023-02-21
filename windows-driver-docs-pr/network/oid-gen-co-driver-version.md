@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_CO_DRIVER_VERSION
+ms.topic: reference
 description: This topic describes the OID_GEN_CO_DRIVER_VERSION object identifier (OID).
 keywords:
 - OID_GEN_CO_DRIVER_VERSION

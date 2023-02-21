@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_PROVISION_DISCOVERY_RESPONSE_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_P2P_PROVISION_DISCOVERY_RESPONSE_PARAMETERS is a TLV that contains provision discovery response parameters.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SET_RECEIVE_COALESCING
+ms.topic: reference
 description: WDI_TLV_SET_RECEIVE_COALESCING is a TLV that contains received packet coalescing parameters for OID_WDI_SET_RECEIVE_COALESCING.
 ms.date: 07/18/2017
 keywords:

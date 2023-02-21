@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_RECEIVE_BLOCK_SIZE
+ms.topic: reference
 description: As a query.
 ms.date: 08/08/2017
 keywords: 

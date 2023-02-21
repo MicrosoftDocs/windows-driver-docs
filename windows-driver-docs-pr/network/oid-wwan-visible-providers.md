@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_VISIBLE_PROVIDERS
+ms.topic: reference
 description: OID_WWAN_VISIBLE_PROVIDERS returns a list of network providers currently visible within the MB device's range.
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SAE_CONFIRM
+ms.topic: reference
 description: WDI_TLV_SAE_CONFIRM is a TLV that contains the Confirm field for a Simultaneous Authentication of Equals (SAE) Confirm request.
 ms.date: 02/15/2019
 keywords:

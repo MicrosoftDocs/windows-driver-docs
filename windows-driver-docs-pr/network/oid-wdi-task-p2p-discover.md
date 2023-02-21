@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_P2P_DISCOVER
+ms.topic: reference
 description: OID_WDI_TASK_P2P_DISCOVER is issued to the device to perform Wi-Fi Direct discovery.
 ms.date: 07/18/2017
 keywords:

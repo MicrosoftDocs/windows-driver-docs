@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_BEACON_FRAME
+ms.topic: reference
 description: WDI_TLV_BEACON_FRAME is a TLV that contains a beacon frame.
 ms.date: 07/18/2017
 keywords:

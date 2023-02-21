@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PLDR_SUPPORT
+ms.topic: reference
 description: WDI_TLV_PLDR_SUPPORT is a TLV that specifies if PLDR (Platform Level Reset) is supported.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_STOP_AP (dot11wificxintf.h)
+ms.topic: reference
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_STOP_AP to indicate that the adapter cannot sustain 802.11 AP functionality on any of the PHYs.
 ms.date: 08/30/2021
 keywords:

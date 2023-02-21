@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_SET_RADIO_STATE_COMPLETE (dot11wificxintf.h)
+ms.topic: reference
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_SET_RADIO_STATE_COMPLETE to indicate the completion of OID_WDI_TASK_SET_RADIO_STATE.
 ms.date: 06/30/2021
 keywords:

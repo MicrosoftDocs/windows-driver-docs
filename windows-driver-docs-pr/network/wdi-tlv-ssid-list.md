@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SSID_LIST
+ms.topic: reference
 description: WDI_TLV_SSID_LIST is an unused TLV.
 ms.date: 07/18/2017
 keywords:

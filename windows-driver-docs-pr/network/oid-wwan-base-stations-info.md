@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_BASE_STATIONS_INFO
+ms.topic: reference
 description: OID_WWAN_BASE_STATIONS_INFO
 keywords:
 - MB base stations info OID, Mobile Broadband base stations info OID, Mobile Broadband miniport driver base stations info OID

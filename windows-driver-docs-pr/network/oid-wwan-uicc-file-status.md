@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_UICC_FILE_STATUS
+ms.topic: reference
 description: OID_WWAN_UICC_FILE_STATUS retrieves information about a specified UICC file.
 ms.date: 04/09/2019
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_DISCONNECT_PARAMETERS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_DISCONNECT_PARAMETERS is a WiFiCx TLV that contains parameters for OID_WDI_TASK_DISCONNECT.
 ms.date: 07/31/2021
 keywords:

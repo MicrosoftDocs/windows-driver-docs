@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_RECEIVE_COALESCING
+ms.topic: reference
 description: OID_WDI_SET_RECEIVE_COALESCING is used by the host to add a packet filter for packet coalescing.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PHY_TX_POWER_LEVEL_LIST
+ms.topic: reference
 description: WDI_TLV_PHY_TX_POWER_LEVEL_LIST is a TLV that contains a list of power levels.
 ms.date: 07/18/2017
 keywords:

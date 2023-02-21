@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_LTE_ATTACH_STATUS
+ms.topic: reference
 description: OID_WWAN_LTE_ATTACH_STATUS is used to inform the OS of the last used LTE attach context.
 ms.date: 08/23/2018
 keywords: 

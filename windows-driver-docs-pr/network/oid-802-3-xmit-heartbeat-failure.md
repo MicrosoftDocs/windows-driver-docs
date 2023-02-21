@@ -1,5 +1,6 @@
 ---
 title: OID_802_3_XMIT_HEARTBEAT_FAILURE
+ms.topic: reference
 description: This topic describes the OID_802_3_XMIT_HEARTBEAT_FAILURE object identifier (OID).
 keywords:
 - OID_802_3_XMIT_HEARTBEAT_FAILURE

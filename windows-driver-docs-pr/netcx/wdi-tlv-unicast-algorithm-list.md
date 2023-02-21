@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_UNICAST_ALGORITHM_LIST (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_UNICAST_ALGORITHM_LIST is a WiFiCx TLV that contains an array of unicast data algorithm pairs.
 ms.date: 06/30/2021
 keywords:

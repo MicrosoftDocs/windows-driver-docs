@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_DEVICE_SERVICE_PARAMS_GUID
+ms.topic: reference
 description: WDI_TLV_DEVICE_SERVICE_PARAMS_GUID is a TLV that contains a GUID that identifies the device service to which this status indication belongs.
 ms.date: 06/15/2018
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: OID_802_3_XMIT_MAX_COLLISIONS
+ms.topic: reference
 description: This topic describes the OID_802_3_XMIT_MAX_COLLISIONS object identifier (OID).
 keywords:
 - OID_802_3_XMIT_MAX_COLLISIONS

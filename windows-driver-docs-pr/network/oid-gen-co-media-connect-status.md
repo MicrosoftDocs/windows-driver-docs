@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_CO_MEDIA_CONNECT_STATUS
+ms.topic: reference
 description: This topic describes the OID_GEN_CO_MEDIA_CONNECT_STATUS object identifier (OID).
 keywords:
 - OID_GEN_CO_MEDIA_CONNECT_STATUS

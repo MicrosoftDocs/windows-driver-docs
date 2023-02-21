@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CONNECT_PARAMETERS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_CONNECT_PARAMETERS is a WiFiCx TLV that contains parameters for OID_WDI_TASK_CONNECT and OID_WDI_TASK_ROAM.
 ms.date: 06/30/2021
 keywords:

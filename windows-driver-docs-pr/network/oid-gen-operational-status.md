@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_OPERATIONAL_STATUS
+ms.topic: reference
 description: As a query, use the OID_GEN_OPERATIONAL_STATUS OID to determine the current operational status of a network interface (ifOperStatus from RFC 2863).
 ms.date: 08/08/2017
 keywords: 

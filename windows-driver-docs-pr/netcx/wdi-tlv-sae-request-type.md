@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SAE_REQUEST_TYPE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_SAE_REQUEST_TYPE is a WiFiCx TLV that contains the type of Simultaneous Authentication of Equals (SAE) request frame to send to a target BSSID.
 ms.date: 07/31/2021
 keywords:

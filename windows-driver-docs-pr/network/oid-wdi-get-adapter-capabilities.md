@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_GET_ADAPTER_CAPABILITIES
+ms.topic: reference
 description: OID_WDI_GET_ADAPTER_CAPABILITIES is a read-only property that is issued from the host to the adapter during initialization and requests the adapter’s capabilities.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_SUPPORTED_DEVICE_SERVICES
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_SUPPORTED_DEVICE_SERVICES notification to inform the MB Service about the completion of OID_WWAN_ENUMERATE_DEVICE_SERVICES query requests.NDIS_WWAN_SUPPORTED_DEVICE_SERVICES structure.
 ms.date: 07/18/2017
 keywords:

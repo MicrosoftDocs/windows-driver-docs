@@ -1,5 +1,6 @@
 ---
 title: OID_WAN_CO_SET_COMP_INFO
+ms.topic: reference
 description: The OID_WAN_CO_SET_COMP_INFO OID notifies the miniport driver of the PPP compression scheme selected by a protocol to which the miniport driver already returned information with a OID_WAN_CO_GET_COMP_INFO query.
 ms.date: 08/08/2017
 keywords: 

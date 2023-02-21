@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_COMMUNICATION_CAPABILITIES
+ms.topic: reference
 description: WDI_TLV_COMMUNICATION_CAPABILITIES is a TLV that specifies the communication capabilities.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_SMS_STATUS
+ms.topic: reference
 description: OID_WWAN_SMS_STATUS reports the status of the MB device's message store.
 ms.date: 08/08/2017
 keywords: 

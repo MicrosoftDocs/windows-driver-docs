@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_MAC_OPTIONS
+ms.topic: reference
 description: As a query, the OID_GEN_MAC_OPTIONS OID specifies a bitmask that defines optional properties of the underlying driver or a NIC.
 ms.date: 08/08/2017
 keywords: 

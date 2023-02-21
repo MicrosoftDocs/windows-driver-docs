@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_DISCONNECT_DISASSOCIATION_FRAME
+ms.topic: reference
 description: WDI_TLV_DISCONNECT_DISASSOCIATION_FRAME is a TLV that contains the received disassociation frame.
 ms.date: 07/18/2017
 keywords:

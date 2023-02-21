@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CIPHER_KEY_WEP_KEY
+ms.topic: reference
 description: WDI_TLV_CIPHER_KEY_WEP_KEY is a TLV that contains a WEP key.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_CHANNEL_INDICATE_REASON
+ms.topic: reference
 description: WDI_TLV_P2P_CHANNEL_INDICATE_REASON is a TLV that contains a reason for sending an indication.
 ms.date: 07/18/2017
 keywords:

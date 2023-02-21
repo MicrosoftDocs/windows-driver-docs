@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_CREATE_MAC
+ms.topic: reference
 description: OID_WWAN_CREATE_MAC requests the miniport driver to create a new NDIS port.
 ms.date: 08/08/2017
 keywords: 

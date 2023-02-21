@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_DOT11_RESET
+ms.topic: reference
 description: OID_WDI_TASK_DOT11_RESET requests that the IHV component resets the MAC and PHY state on a specified port.
 ms.date: 07/18/2017
 keywords:

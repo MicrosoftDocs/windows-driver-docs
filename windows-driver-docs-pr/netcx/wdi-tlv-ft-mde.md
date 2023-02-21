@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_FT_MDE (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_FT_MDE is a WiFiCx TLV that contains the MDIE of a BSS entry.
 ms.date: 06/17/2021
 keywords:

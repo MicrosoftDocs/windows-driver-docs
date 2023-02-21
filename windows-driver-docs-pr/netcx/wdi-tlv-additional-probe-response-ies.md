@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ADDITIONAL_PROBE_RESPONSE_IES (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_ADDITIONAL_PROBE_RESPONSE_IES is a WiFiCx TLV that contains probe response IEs.
 ms.date: 07/31/2021
 keywords:

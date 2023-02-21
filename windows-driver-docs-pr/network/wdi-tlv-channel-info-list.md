@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CHANNEL_INFO_LIST
+ms.topic: reference
 description: WDI_TLV_CHANNEL_INFO_LIST is a TLV that contains a list of channels.
 ms.date: 07/18/2017
 keywords:

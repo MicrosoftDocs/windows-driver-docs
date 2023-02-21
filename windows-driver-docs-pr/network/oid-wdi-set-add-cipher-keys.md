@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_ADD_CIPHER_KEYS
+ms.topic: reference
 description: OID_WDI_SET_ADD_CIPHER_KEYS adds or overwrites cipher keys in the key table of a port. This is a set-only property.
 ms.date: 07/18/2017
 keywords:

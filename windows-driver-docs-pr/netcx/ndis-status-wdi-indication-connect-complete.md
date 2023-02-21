@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_CONNECT_COMPLETE (dot11wificxintf.h)
+ms.topic: reference
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_CONNECT_COMPLETE to indicate the completion of OID_WDI_TASK_CONNECT.
 ms.date: 06/30/2021
 keywords:

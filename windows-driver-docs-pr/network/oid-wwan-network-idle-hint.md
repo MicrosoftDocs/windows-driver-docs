@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_NETWORK_IDLE_HINT
+ms.topic: reference
 description: OID_WWAN_NETWORK_IDLE_HINT sends a hint to the network interface regarding whether data is expected to be active or idle on the interface.
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: OID_SRIOV_BAR_RESOURCES
+ms.topic: reference
 description: NDIS issues an object identifier (OID) method request of OID_SRIOV_BAR_RESOURCES to determine the memory resources that were allocated to a PCI Express (PCIe) Base Address Register (BAR) of a PCIe Virtual Function (VF).
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_SECONDARY_STA_CONNECTIVITY (dot11wificxintf.h)
+ms.topic: reference
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_SECONDARY_STA_CONNECTIVITY to notify the OS when a secondary STA connection will no longer be usable.
 ms.date: 08/30/2021
 keywords:

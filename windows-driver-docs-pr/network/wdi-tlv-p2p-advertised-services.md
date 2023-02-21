@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_ADVERTISED_SERVICES
+ms.topic: reference
 description: WDI_TLV_P2P_ADVERTISED_SERVICES is a TLV that contains a list of advertised services.
 ms.date: 07/18/2017
 keywords:

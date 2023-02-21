@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_MEDIA_DISCONNECT
+ms.topic: reference
 description: The NDIS_STATUS_MEDIA_DISCONNECT status indicates that the status of a network connection has changed from connected to disconnected.
 ms.date: 07/18/2017
 keywords:

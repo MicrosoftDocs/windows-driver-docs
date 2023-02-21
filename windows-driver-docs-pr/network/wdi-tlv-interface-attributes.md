@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_INTERFACE_ATTRIBUTES
+ms.topic: reference
 description: WDI_TLV_INTERFACE_ATTRIBUTES is a TLV that contains the attributes of an interface.
 ms.date: 07/18/2017
 keywords:

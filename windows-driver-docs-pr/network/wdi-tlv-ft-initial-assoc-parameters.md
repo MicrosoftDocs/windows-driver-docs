@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_FT_INITIAL_ASSOC_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_FT_INITIAL_ASSOC_PARAMETERS is a TLV that contains initial association parameters for Fast Transition.
 ms.date: 07/18/2017
 keywords:

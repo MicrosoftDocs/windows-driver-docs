@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_DEFAULT_KEY_ID (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_SET_DEFAULT_KEY_ID command sets the default key ID for packet transmission on a port.
 ms.date: 07/21/2021
 keywords:

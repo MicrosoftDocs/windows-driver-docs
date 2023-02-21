@@ -29,7 +29,7 @@ This guide includes the following sections:
 
 [Virtualized Networking](virtualized-networking.md)
 
-[Wireless Networking](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide)
+[Wireless Networking](./wdi-miniport-driver-design-guide.md)
 
 [Network Module Registrar](network-module-registrar2.md)
 

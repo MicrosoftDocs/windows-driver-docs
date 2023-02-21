@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_HARDWARE_STATUS
+ms.topic: reference
 description: As a query, the OID_GEN_HARDWARE_STATUS OID specifies the current hardware status of the underlying NIC.
 ms.date: 08/08/2017
 keywords: 

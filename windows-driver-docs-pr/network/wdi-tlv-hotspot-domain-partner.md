@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_HOTSPOT_DOMAIN_PARTNER
+ms.topic: reference
 description: WDI_TLV_HOTSPOT_DOMAIN_PARTNER is an unused TLV.
 ms.date: 07/18/2017
 keywords:

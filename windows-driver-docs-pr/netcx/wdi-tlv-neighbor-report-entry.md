@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_NEIGHBOR_REPORT_ENTRY (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_NEIGHBOR_REPORT_ENTRY is a WiFiCx TLV that contains a neighbor report.
 ms.date: 07/31/2021
 keywords:

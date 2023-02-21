@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_SET_AUTO_POWER_SAVE
+ms.topic: reference
 description: WDI_TLV_SET_AUTO_POWER_SAVE is an unused TLV.
 ms.date: 07/18/2017
 keywords:

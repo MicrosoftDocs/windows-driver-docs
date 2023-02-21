@@ -1,5 +1,6 @@
 ---
 title: OID_CO_ADDRESS_CHANGE
+ms.topic: reference
 description: This topic describes the OID_CO_ADDRESS_CHANGE object identifier (OID).
 keywords:
 - OID_CO_ADDRESS_CHANGE

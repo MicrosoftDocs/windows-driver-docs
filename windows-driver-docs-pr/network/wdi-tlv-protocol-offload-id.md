@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PROTOCOL_OFFLOAD_ID
+ms.topic: reference
 description: WDI_TLV_PROTOCOL_OFFLOAD_ID is a TLV that contains the protocol offload identifier.
 ms.date: 05/07/2021
 keywords:

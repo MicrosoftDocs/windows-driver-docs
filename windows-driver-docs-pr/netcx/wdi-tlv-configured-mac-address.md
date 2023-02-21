@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CONFIGURED_MAC_ADDRESS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_CONFIGURED_MAC_ADDRESS is a WiFiCx TLV that contains a custom MAC address.
 ms.date: 07/31/2021
 keywords:

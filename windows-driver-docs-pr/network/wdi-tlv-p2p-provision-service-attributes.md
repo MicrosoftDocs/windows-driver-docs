@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_PROVISION_SERVICE_ATTRIBUTES
+ms.topic: reference
 description: WDI_TLV_P2P_PROVISION_SERVICE_ATTRIBUTES is a TLV that contains Wi-Fi Direct Provision Service attributes.
 ms.date: 07/18/2017
 keywords:

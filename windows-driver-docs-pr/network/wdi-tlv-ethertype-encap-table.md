@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ETHERTYPE_ENCAP_TABLE
+ms.topic: reference
 description: WDI_TLV_ETHERTYPE_ENCAP_TABLE is a TLV that contains the Ethertype encapsulations for the association.
 ms.date: 07/18/2017
 keywords:

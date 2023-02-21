@@ -1,5 +1,6 @@
 ---
 title: OID_RECEIVE_FILTER_ALLOCATE_QUEUE
+ms.topic: reference
 description: Overlying drivers issue object identifier (OID) method requests of OID_RECEIVE_FILTER_ALLOCATE_QUEUE to allocate a queue that has an initial set of configuration parameters.
 ms.date: 08/08/2017
 keywords: 

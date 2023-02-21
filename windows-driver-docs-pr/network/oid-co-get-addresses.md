@@ -1,5 +1,6 @@
 ---
 title: OID_CO_GET_ADDRESSES
+ms.topic: reference
 description: This topic describes the OID_CO_GET_ADDRESSES object identifier (OID).
 keywords:
 - OID_CO_GET_ADDRESSES

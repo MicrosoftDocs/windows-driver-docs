@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ADAPTER_NLO_SCAN_MODE
+ms.topic: reference
 description: WDI_TLV_ADAPTER_NLO_SCAN_MODE is a TLV that indicates whether scans should be performed in active or passive mode.
 ms.date: 07/18/2017
 keywords:

@@ -28,7 +28,7 @@ DECLARE_HANDLE(SPBREQUEST)
 
 The **SPBREQUEST** object class is derived from the **WDFREQUEST** object class, which represents an I/O request that is dispatched by the I/O manager.
 Thus, **WdfRequestXxx** methods that take **WDFREQUEST** handle values as parameters accept **SPBREQUEST** handle values as valid parameter values.
-For more information about these methods, see [Framework Request Objects](../wdf/framework-request-objects.md).
+For more information about these methods, see [Framework Request Objects](/windows-hardware/drivers/wdf/creating-framework-request-objects).
 
 However, some SpbCx methods and callback functions specifically require **SPBREQUEST** handles as parameters.
 For such a parameter, substituting a **WDFREQUEST** handle that is not also an **SPBREQUEST** handle is an error.
@@ -87,7 +87,7 @@ In addition, this driver can create child objects of the **SPBTARGET** object, s
 * [EvtDestroyCallback](/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy)
 * [EvtSpbTargetConnect](/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_target_connect)
 * [EvtSpbTargetDisconnect](/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_target_disconnect)
-* [Framework Request Objects](../wdf/framework-request-objects.md)
+* [Framework Request Objects](/windows-hardware/drivers/wdf/creating-framework-request-objects)
 * [I/O transfer sequence](./i-o-transfer-sequences.md)
 * [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence)
 * [IRP_MJ_CLOSE](../kernel/irp-mj-close.md)

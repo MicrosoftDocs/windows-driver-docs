@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_CONNECT
+ms.topic: reference
 description: OID_WWAN_CONNECT activates or deactivates a particular packet context and reads the activation state of a context.
 ms.date: 08/08/2017
 keywords: 

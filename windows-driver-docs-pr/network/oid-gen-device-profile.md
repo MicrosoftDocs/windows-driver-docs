@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_DEVICE_PROFILE
+ms.topic: reference
 description: The OID_GEN_DEVICE_PROFILE OID is obsolete. NDIS and NDIS drivers do not use this OID.
 ms.date: 08/08/2017
 keywords: 

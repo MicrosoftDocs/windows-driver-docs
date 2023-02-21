@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_MULTICAST_MGMT_ALGORITHM_LIST (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_MULTICAST_MGMT_ALGORITHM_LIST is a WiFiCx TLV that contains an array of multicast management algorithm pairs.
 ms.date: 09/30/2021
 keywords:

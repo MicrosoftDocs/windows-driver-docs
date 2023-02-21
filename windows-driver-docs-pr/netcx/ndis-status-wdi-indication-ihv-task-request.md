@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_IHV_TASK_REQUEST (dot11wificxintf.h)
+ms.topic: reference
 description: WiFiCx drivers use NDIS_STATUS_WDI_INDICATION_IHV_TASK_REQUEST to request that the Microsoft component queue an IHV task.ObjectPort .
 ms.date: 07/30/2021
 keywords:

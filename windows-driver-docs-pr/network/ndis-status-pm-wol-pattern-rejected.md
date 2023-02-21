@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_PM_WOL_PATTERN_REJECTED
+ms.topic: reference
 description: The NDIS_STATUS_PM_WOL_PATTERN_REJECTED status indicates to overlying drivers that a power management wake on LAN (WOL) pattern was rejected.
 ms.date: 07/18/2017
 keywords:

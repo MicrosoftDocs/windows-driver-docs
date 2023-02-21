@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_IP_ADDRESS_STATE
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_IP_ADDRESS_STATE notification to inform the MB service about changes to the IP configuration for an additional PDP context.
 ms.date: 07/18/2017
 keywords:

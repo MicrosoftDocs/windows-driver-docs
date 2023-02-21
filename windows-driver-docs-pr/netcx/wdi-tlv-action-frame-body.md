@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ACTION_FRAME_BODY (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_ACTION_FRAME_BODY is a WiFiCx TLV that contains the body of an Action Frame.
 ms.date: 07/31/2021
 keywords:

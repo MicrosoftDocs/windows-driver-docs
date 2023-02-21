@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 This topic discusses ACX  device enumeration, startup and shutdown, and power management. For a general overview of ACX, see [ACX Audio Class Extensions Overview](acx-audio-class-extensions-overview.md).
 
-ACX leverages the WDF KMDF PnP power behavior. For more  information about KMDF power management sequences, see [PnP and Power Management Callback Sequences](/windows-hardware/drivers/wdf/pnp-and-power-management-callback-sequences).
+ACX leverages the WDF KMDF PnP power behavior. For more  information about KMDF power management sequences, see [PnP and Power Management Callback Sequences](../wdf/pnp-and-power-management-callback-sequences.md).
 
 ## ACX Device enumeration and startup for static audio devices
 
@@ -31,7 +31,7 @@ The sequence of start up is:
     - Create WDFDRIVER.
     - Call ACX to do any post driver init.
     - Optionally do any post driver init.
-    - For more information, see [DriverEntry for WDF Drivers routine](/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers).
+    - For more information, see [DriverEntry for WDF Drivers routine](../wdf/driverentry-for-kmdf-drivers.md).
 
 - WDF DeviceAdd. Device-scoped.
     - Call ACX to init the device init context.
@@ -109,7 +109,7 @@ The sequence of start up for this scenario is:
 
 ### Circuit dynamic creation (at any time)
 
-- Driver allocates a [WDFDEVICE_INIT structure](/windows-hardware/drivers/wdf/wdfdevice_init) by calling [WdfPdoInitAllocate](/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitallocate).
+- Driver allocates a [WDFDEVICE_INIT structure](../wdf/wdfdevice_init.md) by calling [WdfPdoInitAllocate](/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitallocate).
   The driver is responsible for invoking the [WdfDeviceInitFree](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitfree) if it encounters any failures before successfully creating a device.
 - Driver specifies any PnP/power callbacks it wants to receive.
 - Driver creates a device.
@@ -168,7 +168,7 @@ The power down surprise removal callback sequence is identical to the power down
 - EvtIoStop (purge power-managed queues's)
 - EvtDeviceSelfManagedIoFlush (flush I/O buffers)
 
-For more information, see [PnP and Power Management Callback Sequences](/windows-hardware/drivers/wdf/pnp-and-power-management-callback-sequences).
+For more information, see [PnP and Power Management Callback Sequences](../wdf/pnp-and-power-management-callback-sequences.md).
 
 ## ACX device rebalance
 
@@ -252,14 +252,14 @@ In a multi-stack/circuit scenario, different stacks may have different idle time
 
 Note that WDF does not directly support Fx device/component states. To use these states, the driver must use driver-managed idle timeout. For more information about the use of Fx device component states and driver-managed idle timeout, see the following topics.
 
-- [Component-Level Power Management](/windows-hardware/drivers/kernel/component-level-power-management)
-- [Supporting Multiple-Component Devices with Single or Multiple Functional Power State](/windows-hardware/drivers/wdf/supporting-multiple-functional-power-states-for-multiple-component-devices)
+- [Component-Level Power Management](../kernel/component-level-power-management.md)
+- [Supporting Multiple-Component Devices with Single or Multiple Functional Power State](../wdf/supporting-multiple-functional-power-states-for-multiple-component-devices.md)
 
-Windows provides a run-time power management framework (PoFx) which adds support for component-level power management. A component, or subdevice, is a functional hardware unit in a device that can be turned on or switched to a low-power state independently of the other components in the same device. For more information, see [Overview of the Power Management Framework](/windows-hardware/drivers/kernel/overview-of-the-power-management-framework).
+Windows provides a run-time power management framework (PoFx) which adds support for component-level power management. A component, or subdevice, is a functional hardware unit in a device that can be turned on or switched to a low-power state independently of the other components in the same device. For more information, see [Overview of the Power Management Framework](../kernel/overview-of-the-power-management-framework.md).
 
 ### ACX driver and power managed queues
 
-WDF supports power-managed I/O queues. This type of queue is fully integrated with WDF power management. WDF invokes the queue’s callbacks at various steps in the power up/power down WDF sequence. For more information, see [Using Power-Managed I/O Queues](/windows-hardware/drivers/wdf/using-power-managed-i-o-queues).
+WDF supports power-managed I/O queues. This type of queue is fully integrated with WDF power management. WDF invokes the queue’s callbacks at various steps in the power up/power down WDF sequence. For more information, see [Using Power-Managed I/O Queues](../wdf/using-power-managed-i-o-queues.md).
 
 ACX Drivers can use this type of queue only if the driver is not using single/multi-component with multi-state (Fx) feature. 
 
@@ -285,4 +285,4 @@ WDF knows about the D3Cold capabilities of the driver via the WDF_DEVICE_POWER_P
 
 [ACX Audio Class Extensions overview](acx-audio-class-extensions-overview.md)
 
-[PnP and Power Management Callback Sequences](/windows-hardware/drivers/wdf/pnp-and-power-management-callback-sequences)
+[PnP and Power Management Callback Sequences](../wdf/pnp-and-power-management-callback-sequences.md)

@@ -1,5 +1,6 @@
 ---
 title: OID_TCP6_OFFLOAD_STATS
+ms.topic: reference
 description: This topic describes the OID_TCP6_OFFLOAD_STATS object identifier (OID).
 keywords:
 - OID_TCP6_OFFLOAD_STATS

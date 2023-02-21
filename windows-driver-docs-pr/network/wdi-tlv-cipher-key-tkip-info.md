@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CIPHER_KEY_TKIP_INFO
+ms.topic: reference
 description: WDI_TLV_CIPHER_KEY_TKIP_INFO is a TLV that contains TKIP information.
 ms.date: 07/18/2017
 keywords:

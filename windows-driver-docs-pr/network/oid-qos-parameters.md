@@ -1,5 +1,6 @@
 ---
 title: OID_QOS_PARAMETERS
+ms.topic: reference
 description: The Data Center Bridging (DCB) component (Msdcb.sys) issues an object identifier (OID) method request of OID_QOS_PARAMETERS to configure the local NDIS Quality of Service (QoS) parameters on a network adapter.
 ms.date: 08/08/2017
 keywords: 

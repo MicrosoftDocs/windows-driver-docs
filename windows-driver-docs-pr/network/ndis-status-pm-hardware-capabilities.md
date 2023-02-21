@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_PM_HARDWARE_CAPABILITIES
+ms.topic: reference
 description: The NDIS_STATUS_PM_HARDWARE_CAPABILITIES status indicates to overlying drivers that a change in the power management (PM) hardware capabilities of a network adapter has occurred.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_PROVISIONED_CONTEXTS
+ms.topic: reference
 description: OID_WWAN_PROVISIONED_CONTEXTS reads or updates the provisioned context entries stored on the MB device or the Subscriber Identity Module (SIM).
 ms.date: 08/08/2017
 keywords: 

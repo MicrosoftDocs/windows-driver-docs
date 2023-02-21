@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_GET_AUTO_POWER_SAVE (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_GET_AUTO_POWER_SAVE command gets the power save state of the port.
 ms.date: 07/31/2021
 keywords:

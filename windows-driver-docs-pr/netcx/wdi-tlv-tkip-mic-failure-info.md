@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_TKIP_MIC_FAILURE_INFO (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_TKIP_MIC_FAILURE_INFO is a WiFiCx TLV that contains TKIP-MIC failure information.
 ms.date: 08/30/2021
 keywords:

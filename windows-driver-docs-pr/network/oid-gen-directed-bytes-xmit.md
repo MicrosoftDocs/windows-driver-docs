@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_DIRECTED_BYTES_XMIT
+ms.topic: reference
 description: As a query, the OID_GEN_DIRECTED_BYTES_XMIT OID specifies the number of bytes in directed packets that are transmitted without errors.
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_ABORT_TASK (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_ABORT_TASK command is a property that is sent down to cancel a specific pending task.
 ms.date: 07/31/2021
 keywords:

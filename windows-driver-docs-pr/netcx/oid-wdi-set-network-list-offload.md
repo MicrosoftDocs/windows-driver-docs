@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_SET_NETWORK_LIST_OFFLOAD (dot11wificxintf.h)
+ms.topic: reference
 description: The OID_WDI_SET_NETWORK_LIST_OFFLOAD command sets a list of preferred SSIDs for the firmware to scan for APs.
 ms.date: 07/31/2021
 keywords:

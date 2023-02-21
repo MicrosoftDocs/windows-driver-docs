@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ADDITIONAL_IES
+ms.topic: reference
 description: WDI_TLV_ADDITIONAL_IES is a TLV that contains additional Information Element (IE) settings.
 ms.date: 07/18/2017
 keywords:

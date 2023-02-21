@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_GET_STATISTICS
+ms.topic: reference
 description: OID_WDI_GET_STATISTICS requests that the IHV component returns MAC and PHY layer statistics.
 ms.date: 07/18/2017
 keywords:

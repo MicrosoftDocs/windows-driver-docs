@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_FT_FTE
+ms.topic: reference
 description: WDI_TLV_FT_FTE is a TLV that contains a Fast Transition Element.
 ms.date: 07/18/2017
 keywords:

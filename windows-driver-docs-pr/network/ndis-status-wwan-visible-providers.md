@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_VISIBLE_PROVIDERS
+ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_VISIBLE_PROVIDERS notification to inform the MB Service about the completion of OID_WWAN_VISIBLE_PROVIDERS \ 160;query requests.
 ms.date: 08/08/2017
 keywords: 

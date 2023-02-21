@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SERVICE_TRANSACTION_ID (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_SERVICE_TRANSACTION_ID is a WiFiCx TLV that contains the Service transaction ID to be used for the ANQP query request.
 ms.date: 06/30/2021
 keywords:

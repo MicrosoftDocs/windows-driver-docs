@@ -1,5 +1,6 @@
 ---
 title: OID_RECEIVE_FILTER_CLEAR_FILTER
+ms.topic: reference
 description: Overlying drivers issue OID set requests of OID_RECEIVE_FILTER_CLEAR_FILTER to clear a receive filter on a network adapter.
 ms.date: 08/08/2017
 keywords: 

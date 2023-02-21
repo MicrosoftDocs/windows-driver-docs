@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_HESSID_INFO
+ms.topic: reference
 description: WDI_TLV_HESSID_INFO is a TLV that contains HESSID information, which includes a list of HESSIDs, the Access Network Type, and Hotspot Indication Element.
 ms.date: 07/18/2017
 keywords:

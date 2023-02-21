@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_BSS_SELECTION_PARAMETERS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_BSS_SELECTION_PARAMETERS is a WiFiCx TLV that contains WDI_BSS_SELECTION_FLAGS that are used by host for BSS selection.
 ms.date: 06/25/2021
 keywords:

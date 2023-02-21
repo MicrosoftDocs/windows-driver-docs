@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PHY_TYPE_LIST (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_PHY_TYPE_LIST is a WiFiCx TLV that contains an array of PHY types.
 ms.date: 06/30/2021
 keywords:

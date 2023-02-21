@@ -1,5 +1,6 @@
 ---
 title: OID_PD_QUERY_CURRENT_CONFIG
+ms.topic: reference
 description: An NDIS protocol or filter driver sends an object identifier (OID) method request of OID_PD_QUERY_CURRENT_CONFIG to a PD-capable miniport driver to retrieve the PD status and capabilities. All PD-capable miniport drivers must handle this OID request.
 ms.date: 08/08/2017
 keywords: 

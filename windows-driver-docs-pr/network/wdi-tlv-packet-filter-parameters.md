@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_PACKET_FILTER_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_PACKET_FILTER_PARAMETERS is a TLV that contains packet filter parameters for OID_WDI_SET_RECEIVE_PACKET_FILTER.
 ms.date: 07/18/2017
 keywords:

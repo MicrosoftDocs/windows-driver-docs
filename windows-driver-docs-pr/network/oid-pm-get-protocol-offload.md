@@ -1,5 +1,6 @@
 ---
 title: OID_PM_GET_PROTOCOL_OFFLOAD
+ms.topic: reference
 description: An overlying driver issues an OID method request of OID_PM_GET_PROTOCOL_OFFLOAD to obtain parameter settings for a low power protocol offload from a network adapter.
 ms.date: 08/08/2017
 keywords: 

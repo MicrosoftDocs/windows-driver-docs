@@ -1,5 +1,6 @@
 ---
 title: OID_QOS_OFFLOAD_UPDATE_SQ
+ms.topic: reference
 description: Overlying drivers issue OID set requests of OID_QOS_OFFLOAD_UPDATE_SQ to update a Scheduler Queue (SQ) on the miniport adapter.
 ms.assetid:
 ms.date: 10/30/2020

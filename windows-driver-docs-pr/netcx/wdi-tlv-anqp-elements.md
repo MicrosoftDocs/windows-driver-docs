@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ANQP_ELEMENTS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WiFiCx does not use the WDI_TLV_ANQP_ELEMENTS TLV.
 ms.date: 09/30/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: OID_802_3_MULTICAST_LIST
+ms.topic: reference
 description: As a set request, NDIS and overlying protocol drivers use the OID_802_3_MULTICAST_LIST OID request to replace the current multicast address list on a miniport adapter.
 ms.date: 08/08/2017
 keywords: 

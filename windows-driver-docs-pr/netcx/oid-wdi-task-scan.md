@@ -1,5 +1,6 @@
 ---
 title: OID_WDI_TASK_SCAN (dot11wificxintf.h)
+ms.topic: reference
 description: OID_WDI_TASK_SCAN requests a survey of BSS networks. The port performs a scan according to the IEEE 802.11 specification requirements.
 ms.date: 06/30/2021
 keywords:

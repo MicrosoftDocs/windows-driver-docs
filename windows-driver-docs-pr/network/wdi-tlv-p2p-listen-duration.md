@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_LISTEN_DURATION
+ms.topic: reference
 description: WDI_TLV_P2P_LISTEN_DURATION is a TLV that contains Wi-Fi Direct listen duration information.
 ms.date: 07/18/2017
 keywords:

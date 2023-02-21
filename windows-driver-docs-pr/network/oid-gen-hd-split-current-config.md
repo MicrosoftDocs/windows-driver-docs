@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_HD_SPLIT_CURRENT_CONFIG
+ms.topic: reference
 description: As a query, overlying drivers or administrative utilities can use the OID_GEN_HD_SPLIT_CURRENT_CONFIG OID to determine the current header-data split configuration of a miniport adapter.
 ms.date: 08/08/2017
 keywords: 

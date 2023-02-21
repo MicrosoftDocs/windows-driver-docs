@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_TCP_RSC_STATISTICS_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_TCP_RSC_STATISTICS_PARAMETERS is a TLV that contains TCP RSC statistics for OID_WDI_TCP_RSC_STATISTICS.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_CO_BYTES_XMIT_OUTSTANDING
+ms.topic: reference
 description: This topic describes the OID_GEN_CO_BYTES_XMIT_OUTSTANDING object identifier (OID).
 keywords:
 - OID_GEN_CO_BYTES_XMIT_OUTSTANDING

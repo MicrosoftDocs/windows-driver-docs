@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_BSSID (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_BSSID is a WiFiCx TLV that contains the BSSID of a BSS.
 ms.date: 06/17/2021
 keywords:

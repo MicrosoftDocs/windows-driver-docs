@@ -1,5 +1,6 @@
 ---
 title: OID_NIC_SWITCH_HARDWARE_CAPABILITIES
+ms.topic: reference
 description: An overlying driver issues an object identifier (OID) query request of OID_NIC_SWITCH_HARDWARE_CAPABILITIES to obtain the hardware capabilities of the NIC switch in the network adapter.
 ms.date: 08/08/2017
 keywords: 

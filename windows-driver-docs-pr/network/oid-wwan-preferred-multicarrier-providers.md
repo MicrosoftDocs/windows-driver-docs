@@ -1,5 +1,6 @@
 ---
 title: OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS
+ms.topic: reference
 description: OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS is used to set or query the list of preferred multi-carrier network providers. Multi-carrier providers are ones that can be set as home providers.
 ms.date: 08/08/2017
 keywords: 

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_BSS_ENTRY_DEVICE_CONTEXT (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_BSS_ENTRY_DEVICE_CONTEXT is a WiFiCx TLV that contains device context for the BSS entry.
 ms.date: 06/17/2021
 keywords:

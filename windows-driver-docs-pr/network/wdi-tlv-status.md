@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_STATUS
+ms.topic: reference
 description: WDI_TLV_STATUS is a TLV that contains a status value.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_RTT_VARIANCE
+ms.topic: reference
 description: WDI_TLV_RTT_VARIANCE is a TLV that contains the statistical variance of the measurements used to calculate roundtrip time (RTT) during a Fine Timing Measurement (FTM) request, if more than one measurement was used. 
 ms.date: 02/15/2019
 keywords:

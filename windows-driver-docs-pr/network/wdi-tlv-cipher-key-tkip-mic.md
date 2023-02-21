@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CIPHER_KEY_TKIP_MIC
+ms.topic: reference
 description: WDI_TLV_CIPHER_KEY_TKIP_MIC is a TLV that contains the TKIP MIC material.
 ms.date: 07/18/2017
 keywords:

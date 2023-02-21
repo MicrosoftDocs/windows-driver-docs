@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ADDITIONAL_IES (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_ADDITIONAL_IES is a WiFiCx TLV that contains additional Information Element (IE) settings.
 ms.date: 07/31/2021
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: OID_GEN_MEDIA_SUPPORTED
+ms.topic: reference
 description: As a query, the OID_GEN_MEDIA_SUPPORTED OID specifies the media types that a NIC can support but not necessarily the media types that the NIC currently uses.
 ms.date: 08/08/2017
 keywords: 

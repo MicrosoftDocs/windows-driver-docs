@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CIPHER_KEY_GCMP_KEY
+ms.topic: reference
 description: WDI_TLV_CIPHER_KEY_GCMP_KEY (0x12F) is an unused TLV.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_ASSOCIATION_RESPONSE_FRAME (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_ASSOCIATION_RESPONSE_FRAME is a WiFiCx TLV that contains the received association response.
 ms.date: 06/30/2021
 keywords:

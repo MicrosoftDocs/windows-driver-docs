@@ -1,5 +1,6 @@
 ---
 title: OID_IP6_OFFLOAD_STATS
+ms.topic: reference
 description: This topic describes the OID_IP6_OFFLOAD_STATS object identifier (OID).
 keywords:
 - OID_IP6_OFFLOAD_STATS

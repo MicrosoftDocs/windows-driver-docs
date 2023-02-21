@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_P2P_SEND_ACTION_REQUEST_FRAME_PARAMETERS (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_P2P_SEND_ACTION_REQUEST_FRAME_PARAMETERS is a WiFiCx TLV that contains parameters for sending a Wi-Fi Direct action request frame with OID_WDI_TASK_P2P_SEND_REQUEST_ACTION_FRAME.
 ms.date: 07/31/2021
 keywords:

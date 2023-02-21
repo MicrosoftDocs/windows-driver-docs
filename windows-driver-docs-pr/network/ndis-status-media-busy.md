@@ -1,5 +1,6 @@
 ---
 title: NDIS_STATUS_MEDIA_BUSY
+ms.topic: reference
 description: The NDIS_STATUS_MEDIA_BUSY status indicates that the IRDA media is busy.
 ms.date: 07/18/2017
 keywords:

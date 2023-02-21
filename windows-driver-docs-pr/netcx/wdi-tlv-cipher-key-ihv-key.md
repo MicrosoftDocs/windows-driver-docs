@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_CIPHER_KEY_IHV_KEY (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_CIPHER_KEY_IHV_KEY is a WiFiCx TLV that contains an IHV key.
 ms.date: 08/30/2021
 keywords:

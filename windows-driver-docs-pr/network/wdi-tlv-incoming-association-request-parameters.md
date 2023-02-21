@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_INCOMING_ASSOCIATION_REQUEST_PARAMETERS
+ms.topic: reference
 description: WDI_TLV_INCOMING_ASSOCIATION_REQUEST_PARAMETERS is a TLV that contains association request parameters.
 ms.date: 07/18/2017
 keywords:

@@ -1,5 +1,6 @@
 ---
 title: WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB (dot11wificxtypes.hpp)
+ms.topic: reference
 description: WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB is a WiFiCx TLV that contains information about a device service received from the IHV driver.
 ms.date: 07/31/2021
 keywords:
