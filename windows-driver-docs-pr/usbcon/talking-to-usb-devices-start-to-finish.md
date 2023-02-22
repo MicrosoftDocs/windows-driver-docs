@@ -1,7 +1,7 @@
 ---
 title: Talking to USB devices, start to finish (UWP app)
 description: This article provides an end-to-end walkthrough for creating a UWP app that talks to a USB device.
-ms.date: 02/21/2023
+ms.date: 02/22/2023
 ---
 
 # Talking to USB devices, start to finish (UWP app)
