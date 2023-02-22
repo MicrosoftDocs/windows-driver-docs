@@ -1,238 +1,315 @@
 ---
 title: Windows kernel opaque structures
 description: Windows kernel opaque structures
-ms.date: 07/21/2021
+keywords: ["EPROCESS", "ETHREAD", "EX_RUNDOWN_REF", "EX_TIMER", "FAST_MUTEX", "IO_CSQ", "IO_CSQ_IRP_CONTEXT", "IO_WORKITEM", "KBUGCHECK_CALLBACK_RECORD", "KBUGCHECK_REASON_CALLBACK_RECORD", "KDPC", "KFLOATING_SAVE", "KGUARDED_MUTEX", "KINTERRUPT", "KLOCK_QUEUE_HANDLE", "KTIMER", "LOOKASIDE_LIST_EX", "NPAGED_LOOKASIDE_LIST", "OBJECT_TYPE", "PAGED_LOOKASIDE_LIST", "RTL_BITMAP", "RTL_RUN_ONCE", "SECURITY_SUBJECT_CONTEXT", "SLIST_HEADER", "XSTATE_SAVE"]
+ms.date: 02/23/2023
 ---
 
 # Windows kernel opaque structures
 
-The following table contains Windows kernel opaque structures:
+This article lists and describes Windows kernel opaque structures. For many of these structures, drivers shouldn't access or change any members but should instead use system-supplied routines to access the information. See each structure for details.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Opaque Structure</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>EPROCESS</strong></td>
-<td><p>The <strong>EPROCESS</strong> structure is an opaque structure that serves as the process object for a process.</p>
-<p>Some routines, such as <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetprocesscreatetimequadpart"><strong>PsGetProcessCreateTimeQuadPart</strong></a>, use <strong>EPROCESS</strong> to identify the process to operate on.
-Drivers can use the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentprocess">
-<strong>PsGetCurrentProcess</strong></a> routine to obtain a pointer to the process object for the current process and can use the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle" data-raw-source="[&lt;strong&gt;ObReferenceObjectByHandle&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle)"><strong>ObReferenceObjectByHandle</strong></a> routine to obtain a pointer to the process object that is associated with the specified handle. The <a href="/windows-hardware/drivers/kernel/mm64bitphysicaladdress" data-raw-source="[&lt;strong&gt;PsInitialSystemProcess&lt;/strong&gt;](./mm64bitphysicaladdress.md)"><strong>PsInitialSystemProcess</strong></a> global variable points to the process object for the system process.</p>
-<p>Note that a process object is an Object Manager object. Drivers should use Object Manager routines such as <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject" data-raw-source="[&lt;strong&gt;ObReferenceObject&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject)"><strong>ObReferenceObject</strong></a> and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject" data-raw-source="[&lt;strong&gt;ObDereferenceObject&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject)"><strong>ObDereferenceObject</strong></a> to maintain the object's reference count.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="even">
-<td><strong>ETHREAD</strong></td>
-<td><p>The <strong>ETHREAD</strong> structure is an opaque structure that serves as the thread object for a thread.</p>
-<p>Some routines, such as <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-psissystemthread" data-raw-source="[&lt;strong&gt;PsIsSystemThread&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-psissystemthread)"><strong>PsIsSystemThread</strong></a>, use <strong>ETHREAD</strong> to identify the thread to operate on. Drivers can use the <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetcurrentthread" data-raw-source="[&lt;strong&gt;PsGetCurrentThread&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetcurrentthread)"><strong>PsGetCurrentThread</strong></a> routine to obtain a pointer to the thread object for the current thread and can use the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle" data-raw-source="[&lt;strong&gt;ObReferenceObjectByHandle&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle)"><strong>ObReferenceObjectByHandle</strong></a> routine to obtain a pointer to the thread object that is associated with the specified handle.</p>
-<p>Note that a thread object is an Object Manager object. Drivers should use Object Manager routines such as <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject" data-raw-source="[&lt;strong&gt;ObReferenceObject&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject)"><strong>ObReferenceObject</strong></a> and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject" data-raw-source="[&lt;strong&gt;ObDereferenceObject&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject)"><strong>ObDereferenceObject</strong></a> to maintain the object's reference count.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>EX_RUNDOWN_REF</strong></td>
-<td><p>The <strong>EX_RUNDOWN_REF</strong> structure is an opaque system structure that contains information about the status of run-down protection for an associated shared object.</p>
-<pre class="syntax"><code>typedef struct _EX_RUNDOWN_REF {
+## EPROCESS
+
+The **EPROCESS** structure is an opaque structure that serves as the process object for a process.
+
+Some routines, such as [**PsGetProcessCreateTimeQuadPart**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetprocesscreatetimequadpart), use **EPROCESS** to identify the process to operate on.
+Drivers can use the [**PsGetCurrentProcess**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentprocess) routine to obtain a pointer to the process object for the current process and can use the [**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle) routine to obtain a pointer to the process object that is associated with the specified handle. The [**PsInitialSystemProcess**](mm64bitphysicaladdress.md) global variable points to the process object for the system process.
+
+A process object is an Object Manager object. Drivers should use Object Manager routines such as [**ObReferenceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject) and [**ObDereferenceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject) to maintain the object's reference count.
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## ETHREAD
+
+The **ETHREAD** structure is an opaque structure that serves as the thread object for a thread.
+
+Some routines, such as [**PsIsSystemThread**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-psissystemthread), use **ETHREAD** to identify the thread to operate on. Drivers can use the [**PsGetCurrentThread**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetcurrentthread) routine to obtain a pointer to the thread object for the current thread and can use the [**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle) routine to obtain a pointer to the thread object that is associated with the specified handle.
+
+A thread object is an Object Manager object. Drivers should use Object Manager routines such as [**ObReferenceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject) and [**ObDereferenceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject) to maintain the object's reference count.
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## EX_RUNDOWN_REF
+
+The **EX_RUNDOWN_REF** structure is an opaque system structure that contains information about the status of run-down protection for an associated shared object.
+
+``` syntax
+typedef struct _EX_RUNDOWN_REF {
   
   ...  // opaque
   
-} EX_RUNDOWN_REF, *PEX_RUNDOWN_REF;</code></pre>
-<p>The run-down protection routines all take a pointer to an <strong>EX_RUNDOWN_REF</strong> structure as their first parameter. These routines are listed at the bottom of this page.</p>
-<p>For more information, see <a href="run-down-protection.md" data-raw-source="[Run-Down Protection](run-down-protection.md)">Run-Down Protection</a>.</p>
-<p>Header: Wdm.h. Include Wdm.h.</p></td>
-</tr>
-<tr class="even">
-<td><strong>EX_TIMER</strong></td>
-<td><p>The <strong>EX_TIMER</strong> structure is an opaque structure that is used by the operating system to represent an <strong>EX_TIMER</strong> timer object.</p>
-<pre class="syntax"><code>typedef struct _EX_TIMER *PEX_TIMER;</code></pre>
-<p>All members of this structure are opaque to drivers.</p>
-<p>The following <strong>Ex<em>Xxx</em>Timer</strong> routines require a pointer to a system-allocated <strong>EX_TIMER</strong> structure as an input parameter:</p>
-<ul>
-<li><a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exsettimer" data-raw-source="[&lt;strong&gt;ExSetTimer&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-exsettimer)"><strong>ExSetTimer</strong></a></li>
-<li><a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-excanceltimer" data-raw-source="[&lt;strong&gt;ExCancelTimer&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-excanceltimer)"><strong>ExCancelTimer</strong></a></li>
-<li><a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletetimer" data-raw-source="[&lt;strong&gt;ExDeleteTimer&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletetimer)"><strong>ExDeleteTimer</strong></a></li>
-</ul>
-<p><strong>EX_TIMER</strong>-based timer objects are created by the operating system. To get such a timer object, your driver calls the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatetimer" data-raw-source="[&lt;strong&gt;ExAllocateTimer&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatetimer)"><strong>ExAllocateTimer</strong></a> routine. When this object is no longer needed, the driver is responsible for deleting the object by calling <strong>ExDeleteTimer</strong>.</p>
-<p>For more information, see <a href="exxxxtimer-routines-and-ex-timer-objects.md" data-raw-source="[Ex&lt;em&gt;Xxx&lt;/em&gt;Timer Routines and EX_TIMER Objects](exxxxtimer-routines-and-ex-timer-objects.md)">Ex<em>Xxx</em>Timer Routines and EX_TIMER Objects</a>.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>FAST_MUTEX</strong></td>
-<td><p>A <strong>FAST_MUTEX</strong> structure is an opaque data structure that represents a fast mutex.</p>
-<p>A <strong>FAST_MUTEX</strong> structure is initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializefastmutex" data-raw-source="[&lt;strong&gt;ExInitializeFastMutex&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializefastmutex)"><strong>ExInitializeFastMutex</strong></a> routine.</p>
-<p>For more information about fast mutexes, see <a href="fast-mutexes-and-guarded-mutexes.md" data-raw-source="[Fast Mutexes and Guarded Mutexes](fast-mutexes-and-guarded-mutexes.md)">Fast Mutexes and Guarded Mutexes</a>.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="even">
-<td><strong>IO_CSQ</strong></td>
-<td><p>The <strong>IO_CSQ</strong> structure is an opaque structure used to specify the driver's cancel-safe IRP queue routines. Do not set the members of this structure directly. Use <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinitialize" data-raw-source="[&lt;strong&gt;IoCsqInitialize&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinitialize)"><strong>IoCsqInitialize</strong></a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinitializeex" data-raw-source="[&lt;strong&gt;IoCsqInitializeEx&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinitializeex)"><strong>IoCsqInitializeEx</strong></a> to initialize this structure.</p>
-<p>For an overview of how to use cancel-safe IRP queues, see <a href="cancel-safe-irp-queues.md" data-raw-source="[Cancel-Safe IRP Queues](cancel-safe-irp-queues.md)">Cancel-Safe IRP Queues</a>.</p>
-<p>Available on Microsoft Windows XP and later versions of the Windows operating system.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>IO_CSQ_IRP_CONTEXT</strong></td>
-<td><p>The <strong>IO_CSQ_IRP_CONTEXT</strong> structure is an opaque data structure used to specify the IRP context for an IRP in the driver's cancel-safe IRP queue. It is used as a key by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinsertirp" data-raw-source="[&lt;strong&gt;IoCsqInsertIrp&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinsertirp)"><strong>IoCsqInsertIrp</strong></a>, <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinsertirpex" data-raw-source="[&lt;strong&gt;IoCsqInsertIrpEx&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinsertirpex)"><strong>IoCsqInsertIrpEx</strong></a>, and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqremoveirp" data-raw-source="[&lt;strong&gt;IoCsqRemoveIrp&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqremoveirp)"><strong>IoCsqRemoveIrp</strong></a> routines to identify particular IRPs in the queue.</p>
-<p>For an overview of how to use cancel-safe IRP queues, see <a href="cancel-safe-irp-queues.md" data-raw-source="[Cancel-Safe IRP Queues](cancel-safe-irp-queues.md)">Cancel-Safe IRP Queues</a>.</p>
-<p>Available on Microsoft Windows XP and later versions of the Windows operating system.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="even">
-<td><strong>IO_WORKITEM</strong></td>
-<td><p>The <strong>IO_WORKITEM</strong> structure is an opaque structure that describes a work item for a system worker thread.</p>
-<p>A driver can allocate a work item by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateworkitem" data-raw-source="[&lt;strong&gt;IoAllocateWorkItem&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateworkitem)"><strong>IoAllocateWorkItem</strong></a>. Alternatively, a driver can allocate its own buffer, and then call <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinitializeworkitem" data-raw-source="[&lt;strong&gt;IoInitializeWorkItem&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinitializeworkitem)"><strong>IoInitializeWorkItem</strong></a> to initialize that buffer as a work item.</p>
-<p>Any work item that is allocated by <strong>IoAllocateWorkItem</strong> must be freed by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreeworkitem" data-raw-source="[&lt;strong&gt;IoFreeWorkItem&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreeworkitem)"><strong>IoFreeWorkItem</strong></a>. Any memory that is initialized by <strong>IoInitializeWorkItem</strong> must be uninitialized by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iouninitializeworkitem" data-raw-source="[&lt;strong&gt;IoUninitializeWorkItem&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-iouninitializeworkitem)"><strong>IoUninitializeWorkItem</strong></a> before it can be freed.</p>
-<p>For more information about work items, see <a href="system-worker-threads.md" data-raw-source="[System Worker Threads](system-worker-threads.md)">System Worker Threads</a>.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>KBUGCHECK_CALLBACK_RECORD</strong></td>
-<td><p>The <strong>KBUGCHECK_CALLBACK_RECORD</strong> structure is an opaque structure that is used by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckcallback" data-raw-source="[&lt;strong&gt;KeRegisterBugCheckCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckcallback)"><strong>KeRegisterBugCheckCallback</strong></a> and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckcallback" data-raw-source="[&lt;strong&gt;KeDeregisterBugCheckCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckcallback)"><strong>KeDeregisterBugCheckCallback</strong></a> routines.</p>
-<p>The <strong>KBUGCHECK_CALLBACK_RECORD</strong> structure is used for bookkeeping by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback" data-raw-source="[&lt;strong&gt;KeRegisterBugCheckReasonCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback)"><strong>KeRegisterBugCheckReasonCallback</strong></a> and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback" data-raw-source="[&lt;strong&gt;KeDeregisterBugCheckReasonCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback)"><strong>KeDeregisterBugCheckReasonCallback</strong></a> routines.</p>
-<p>The structure must be allocated in resident memory, such as nonpaged pool. Use the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializecallbackrecord"><strong>KeInitializeCallbackRecord</strong></a> routine to initialize the structure before using it.</p>
-<p>Header: Ntddk.h. Include: Ntddk.h.</p></td>
-</tr>
-<tr class="even">
-<td><strong>KBUGCHECK_REASON_CALLBACK_RECORD</strong></td>
-<td><p>The <strong>KBUGCHECK_REASON_CALLBACK_RECORD</strong> structure is an opaque structure that is used by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback" data-raw-source="[&lt;strong&gt;KeRegisterBugCheckReasonCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback)"><strong>KeRegisterBugCheckReasonCallback</strong></a> and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback" data-raw-source="[&lt;strong&gt;KeDeregisterBugCheckReasonCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback)"><strong>KeDeregisterBugCheckReasonCallback</strong></a> routines.</p>
-<p>The <strong>KBUGCHECK_REASON_CALLBACK_RECORD</strong> structure is used for bookkeeping by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback" data-raw-source="[&lt;strong&gt;KeRegisterBugCheckReasonCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback)"><strong>KeRegisterBugCheckReasonCallback</strong></a> and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback" data-raw-source="[&lt;strong&gt;KeDeregisterBugCheckReasonCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback)"><strong>KeDeregisterBugCheckReasonCallback</strong></a> routines.</p>
-<p>The structure must be allocated in resident memory, such as nonpaged pool. Use the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializecallbackrecord"><strong>KeInitializeCallbackRecord</strong></a> routine to initialize the structure before using it.</p>
-<p>Available on Microsoft Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system.</p>
-<p>Header: Ntddk.h. Include: Ntddk.h.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>KDPC</strong></td>
-<td><p>The <strong>KDPC</strong> structure is an opaque structure that represents a DPC object. Do not set the members of this structure directly. See <a href="/windows-hardware/drivers/kernel/introduction-to-dpc-objects">DPC Objects and DPCs</a>.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="even">
-<td><strong>KFLOATING_SAVE</strong></td>
-<td><p>The <strong>KFLOATING_SAVE</strong> structure is an opaque structure that describes the floating-point state that the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kesavefloatingpointstate" data-raw-source="[&lt;strong&gt;KeSaveFloatingPointState&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesavefloatingpointstate)"><strong>KeSaveFloatingPointState</strong></a> routine saved.</p>
-<p>Use <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestorefloatingpointstate" data-raw-source="[&lt;strong&gt;KeRestoreFloatingPointState&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestorefloatingpointstate)"><strong>KeRestoreFloatingPointState</strong></a> to restore the floating-point state.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>KGUARDED_MUTEX</strong></td>
-<td><p>The <strong>KGUARDED_MUTEX</strong> structure is an opaque structure that represents a guarded mutex.</p>
-<p>Use <strong>KeInitializeGuardedMutex</strong> to initialize a <strong>KGUARDED_MUTEX</strong> structure as a guarded mutex.</p>
-<p>Guarded mutexes must be allocated from non-paged pool.</p>
-<p>For more information about guarded mutexes, see <a href="fast-mutexes-and-guarded-mutexes.md" data-raw-source="[Fast Mutexes and Guarded Mutexes](fast-mutexes-and-guarded-mutexes.md)">Fast Mutexes and Guarded Mutexes</a>.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="even">
-<td><strong>KINTERRUPT</strong></td>
-<td><p>A <strong>KINTERRUPT</strong> structure is an opaque structure that represents an interrupt to the system.</p>
-<p><a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex" data-raw-source="[&lt;strong&gt;IoConnectInterruptEx&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex)"><strong>IoConnectInterruptEx</strong></a> provides a pointer to the <strong>KINTERRUPT</strong> structure for the interrupt when the driver registers an <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine" data-raw-source="[&lt;em&gt;InterruptService&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine)"><em>InterruptService</em></a> or <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-kmessage_service_routine" data-raw-source="[&lt;em&gt;InterruptMessageService&lt;/em&gt;](/windows-hardware/drivers/ddi/wdm/nc-wdm-kmessage_service_routine)"><em>InterruptMessageService</em></a> routine. The driver uses this pointer when acquiring or releasing the interrupt spin lock for the interrupt. The driver also uses this pointer when unregistering an <em>InterruptService</em> routine.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>KLOCK_QUEUE_HANDLE</strong></td>
-<td><p>The <strong>KLOCK_QUEUE_HANDLE</strong> structure is an opaque structure that describes a queued spin lock. The driver allocates the <strong>KLOCK_QUEUE_HANDLE</strong> structure, and passes it to <a href="/previous-versions/windows/hardware/drivers/ff551899(v=vs.85)" data-raw-source="[&lt;strong&gt;KeAcquireInStackQueuedSpinLock&lt;/strong&gt;](/previous-versions/windows/hardware/drivers/ff551899(v=vs.85))"><strong>KeAcquireInStackQueuedSpinLock</strong></a> and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquireinstackqueuedspinlockatdpclevel"><strong>KeAcquireInStackQueuedSpinLockAtDpcLevel</strong></a> to acquire the queued spin lock. Those routines initialize the structure to represent the queued spin lock. The driver passes the structure to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseinstackqueuedspinlock" data-raw-source="[&lt;strong&gt;KeReleaseInStackQueuedSpinLock&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseinstackqueuedspinlock)"><strong>KeReleaseInStackQueuedSpinLock</strong></a> and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseinstackqueuedspinlockfromdpclevel" data-raw-source="[&lt;strong&gt;KeReleaseInStackQueuedSpinLockFromDpcLevel&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseinstackqueuedspinlockfromdpclevel)"><strong>KeReleaseInStackQueuedSpinLockFromDpcLevel</strong></a> when releasing the spin lock.</p>
-<p>For more information, see <a href="queued-spin-locks.md" data-raw-source="[Queued Spin Locks](queued-spin-locks.md)">Queued Spin Locks</a>.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="even">
-<td><strong>KTIMER</strong></td>
-<td><p>The <strong>KTIMER</strong> structure is an opaque structure that represents a timer object. Do not set the members of this structure directly. For more information, see <a href="timer-objects-and-dpcs.md" data-raw-source="[Timer Objects and DPCs](timer-objects-and-dpcs.md)">Timer Objects and DPCs</a>.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>LOOKASIDE_LIST_EX</strong></td>
-<td><p>The <strong>LOOKASIDE_LIST_EX</strong> structure describes a lookaside list.</p>
-<pre class="syntax"><code>typedef struct _LOOKASIDE_LIST_EX {
+} EX_RUNDOWN_REF, *PEX_RUNDOWN_REF;
+```
+
+The run-down protection routines listed at the bottom of this page all take a pointer to an **EX_RUNDOWN_REF** structure as their first parameter.
+
+For more information, see [Run-Down Protection](run-down-protection.md).
+Header: *Wdm.h*. Include Wdm.h.
+
+## EX_TIMER
+
+The **EX_TIMER** structure is an opaque structure that the operating system uses to represent an **EX_TIMER** timer object.
+
+```typedef struct _EX_TIMER *PEX_TIMER;```
+
+All members of this structure are opaque to drivers.
+
+The following **Ex*Xxx*Timer** routines require a pointer to a system-allocated **EX_TIMER** structure as an input parameter:
+
+* [**ExSetTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exsettimer)
+* [**ExCancelTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-excanceltimer)
+* [**ExDeleteTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletetimer)
+
+The operating system creates **EX_TIMER**-based timer objects. To get such a timer object, your driver calls the [**ExAllocateTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatetimer) routine. When this object is no longer needed, the driver is responsible for deleting the object by calling **ExDeleteTimer**.
+
+For more information, see [Ex*Xxx*Timer Routines and EX_TIMER Objects](exxxxtimer-routines-and-ex-timer-objects.md).
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## FAST_MUTEX
+
+A **FAST_MUTEX** structure is an opaque data structure that represents a fast mutex. The [**ExInitializeFastMutex**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializefastmutex) routine initializes this structure.
+
+For more information about fast mutexes, see [Fast Mutexes and Guarded Mutexes](fast-mutexes-and-guarded-mutexes.md).
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## IO_CSQ
+
+The **IO_CSQ** structure is an opaque structure used to specify the driver's cancel-safe IRP queue routines. Don't set the members of this structure directly. Use [**IoCsqInitialize**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinitialize) or [**IoCsqInitializeEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinitializeex) to initialize this structure.
+
+For an overview of how to use cancel-safe IRP queues, see [Cancel-Safe IRP Queues](cancel-safe-irp-queues.md).
+
+Available on Microsoft Windows XP and later versions of the Windows operating system.
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## IO_CSQ_IRP_CONTEXT
+
+The **IO_CSQ_IRP_CONTEXT** structure is an opaque data structure used to specify the IRP context for an IRP in the driver's cancel-safe IRP queue. The [**IoCsqInsertIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinsertirp), [**IoCsqInsertIrpEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinsertirpex), and [**IoCsqRemoveIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqremoveirp) routines use this structure as a key to identify particular IRPs in the queue.
+
+For an overview of how to use cancel-safe IRP queues, see [Cancel-Safe IRP Queues](cancel-safe-irp-queues.md).
+
+Available on Microsoft Windows XP and later versions of the Windows operating system.
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## IO_WORKITEM
+
+The **IO_WORKITEM** structure is an opaque structure that describes a work item for a system worker thread.
+
+A driver can allocate a work item by calling [**IoAllocateWorkItem**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateworkitem). Alternatively, a driver can allocate its own buffer, and then call [**IoInitializeWorkItem**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinitializeworkitem) to initialize that buffer as a work item.
+
+Any work item that **IoAllocateWorkItem** allocates must be freed by [**IoFreeWorkItem**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreeworkitem). Any memory initialized by **IoInitializeWorkItem** must be uninitialized by [**IoUninitializeWorkItem**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iouninitializeworkitem) before it can be freed.
+
+For more information about work items, see [System Worker Threads](system-worker-threads.md).
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## KBUGCHECK_CALLBACK_RECORD
+
+The **KBUGCHECK_CALLBACK_RECORD** structure is an opaque structure that the [**KeRegisterBugCheckCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckcallback) and [**KeDeregisterBugCheckCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckcallback) routines use.
+
+The **KBUGCHECK_CALLBACK_RECORD** structure is used by the [**KeRegisterBugCheckReasonCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback) and [**KeDeregisterBugCheckReasonCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback) routines for bookkeeping.
+
+The structure must be allocated in resident memory, such as nonpaged pool. Use the [**KeInitializeCallbackRecord**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializecallbackrecord) routine to initialize the structure before using it.
+
+Header: *Ntddk.h*. Include: *Ntddk.h*.
+
+## KBUGCHECK_REASON_CALLBACK_RECORD
+
+The **KBUGCHECK_REASON_CALLBACK_RECORD** structure is an opaque structure that the [**KeRegisterBugCheckReasonCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback) and [**KeDeregisterBugCheckReasonCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback) routines use.
+
+The **KBUGCHECK_REASON_CALLBACK_RECORD** structure is used by the [**KeRegisterBugCheckReasonCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback) and [**KeDeregisterBugCheckReasonCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterbugcheckreasoncallback) routines for bookkeeping.
+
+The structure must be allocated in resident memory, such as nonpaged pool. Use the [**KeInitializeCallbackRecord**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializecallbackrecord) routine to initialize the structure before using it.
+
+Available on Microsoft Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system.
+
+Header: *Ntddk.h*. Include: *Ntddk.h*.
+
+## KDPC
+
+The **KDPC** structure is an opaque structure that represents a DPC object. Don't set the members of this structure directly. See [DPC Objects and DPCs](introduction-to-dpc-objects.md).
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## KFLOATING_SAVE
+
+The **KFLOATING_SAVE** structure is an opaque structure that describes the floating-point state that the [**KeSaveFloatingPointState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesavefloatingpointstate) routine saved.
+
+Use [**KeRestoreFloatingPointState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestorefloatingpointstate) to restore the floating-point state.
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## KGUARDED_MUTEX
+
+The **KGUARDED_MUTEX** structure is an opaque structure that represents a guarded mutex.
+
+Use **KeInitializeGuardedMutex** to initialize a **KGUARDED_MUTEX** structure as a guarded mutex.
+
+Guarded mutexes must be allocated from non-paged pool.
+
+For more information about guarded mutexes, see [Fast Mutexes and Guarded Mutexes](fast-mutexes-and-guarded-mutexes.md).
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## KINTERRUPT
+
+A **KINTERRUPT** structure is an opaque structure that represents an interrupt to the system.
+
+[**IoConnectInterruptEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex) provides a pointer to the **KINTERRUPT** structure for the interrupt when the driver registers an [**InterruptService**](/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine) or [**InterruptMessageService**](/windows-hardware/drivers/ddi/wdm/nc-wdm-kmessage_service_routine) routine. The driver uses this pointer when acquiring or releasing the interrupt spin lock for the interrupt. The driver also uses this pointer when unregistering an **InterruptService** routine.
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## KLOCK_QUEUE_HANDLE
+
+The **KLOCK_QUEUE_HANDLE** structure is an opaque structure that describes a queued spin lock. The driver allocates the **KLOCK_QUEUE_HANDLE** structure, and passes it to [**KeAcquireInStackQueuedSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquireinstackqueuedspinlock) and [**KeAcquireInStackQueuedSpinLockAtDpcLevel**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquireinstackqueuedspinlockatdpclevel) to acquire the queued spin lock. Those routines initialize the structure to represent the queued spin lock. The driver passes the structure to [**KeReleaseInStackQueuedSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseinstackqueuedspinlock) and [**KeReleaseInStackQueuedSpinLockFromDpcLevel**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseinstackqueuedspinlockfromdpclevel) when releasing the spin lock.
+
+For more information, see [Queued Spin Locks](queued-spin-locks.md).
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## KTIMER
+
+The **KTIMER** structure is an opaque structure that represents a timer object. Don't set the members of this structure directly. For more information, see [Timer Objects and DPCs](timer-objects-and-dpcs.md).
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## LOOKASIDE_LIST_EX
+
+The **LOOKASIDE_LIST_EX** structure describes a lookaside list.
+
+``` syntax
+typedef struct _LOOKASIDE_LIST_EX {
   ...  // opaque
-} LOOKASIDE_LIST_EX, *PLOOKASIDE_LIST_EX;</code></pre>
-<p>A lookaside list is a pool of fixed-size buffers that the driver can manage locally to reduce the number of calls to system allocation routines and, thereby, to improve performance. The buffers are of uniform size and are stored as entries in the lookaside list.</p>
-<p>Drivers should treat the <strong>LOOKASIDE_LIST_EX</strong> structure as opaque. Drivers that access structure members or that have dependencies on the locations of these members might not remain portable and interoperable with other drivers.</p>
-<p>The following See Also section contains a list of the routines that use this structure.</p>
-<p>For more information about lookaside lists, see <a href="using-lookaside-lists.md" data-raw-source="[Using Lookaside Lists](using-lookaside-lists.md)">Using Lookaside Lists</a>.</p>
-<p>On 64-bit platforms, this structure must be 16-byte aligned.</p>
-<p>Supported starting with Windows Vista.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="even">
-<td><strong>NPAGED_LOOKASIDE_LIST</strong></td>
-<td><p>The <strong>NPAGED_LOOKASIDE_LIST</strong> structure is an opaque structure that describes a lookaside list of fixed-size buffers allocated from nonpaged pool. The system creates new entries and destroys unused entries on the list as necessary. For fixed-size buffers, using a lookaside list is quicker than allocating memory directly.</p>
-<p>Use <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializenpagedlookasidelist" data-raw-source="[&lt;strong&gt;ExInitializeNPagedLookasideList&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializenpagedlookasidelist)"><strong>ExInitializeNPagedLookasideList</strong></a> to initialize the lookaside list. Use <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatefromnpagedlookasidelist" data-raw-source="[&lt;strong&gt;ExAllocateFromNPagedLookasideList&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatefromnpagedlookasidelist)"><strong>ExAllocateFromNPagedLookasideList</strong></a> to allocate a buffer from the list, and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreetonpagedlookasidelist" data-raw-source="[&lt;strong&gt;ExFreeToNPagedLookasideList&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreetonpagedlookasidelist)"><strong>ExFreeToNPagedLookasideList</strong></a> to return a buffer to the list.</p>
-<p>Drivers must always explicitly free any lookaside lists they create before unloading. It is a serious programming error to do otherwise. Use <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletenpagedlookasidelist" data-raw-source="[&lt;strong&gt;ExDeleteNPagedLookasideList&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletenpagedlookasidelist)"><strong>ExDeleteNPagedLookasideList</strong></a> to free the list.</p>
-<p>Drivers can also use lookaside lists for paged pool. Starting with Windows 2000, a <strong>PAGED_LOOKASIDE_LIST</strong> structure describes a lookaside list that contains paged buffers. Starting with Windows Vista, a <strong>LOOKASIDE_LIST_EX</strong> structure can describe a lookaside list that contains either paged or nonpaged buffers. For more information, see <a href="using-lookaside-lists.md" data-raw-source="[Using Lookaside Lists](using-lookaside-lists.md)">Using Lookaside Lists</a>.</p>
-<p>On 64-bit platforms, this structure must be 16-byte aligned.</p>
-<p>Supported starting with Windows 2000.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>OBJECT_TYPE</strong></td>
-<td><p><strong>OBJECT_TYPE</strong> is an opaque structure that specifies the object type of a handle. For more information, see <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle" data-raw-source="[&lt;strong&gt;ObReferenceObjectByHandle&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle)"><strong>ObReferenceObjectByHandle</strong></a>.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="even">
-<td><strong>PAGED_LOOKASIDE_LIST</strong></td>
-<td><p>The <strong>PAGED_LOOKASIDE_LIST</strong> structure is an opaque structure that describes a lookaside list of fixed-size buffers allocated from paged pool. The system creates new entries and destroys unused entries on the list as necessary. For fixed-size buffers, using a lookaside list is quicker than allocating memory directly.</p>
-<p>Use <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializepagedlookasidelist" data-raw-source="[&lt;strong&gt;ExInitializePagedLookasideList&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializepagedlookasidelist)"><strong>ExInitializePagedLookasideList</strong></a> to initialize the lookaside list. Use <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatefrompagedlookasidelist" data-raw-source="[&lt;strong&gt;ExAllocateFromPagedLookasideList&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatefrompagedlookasidelist)"><strong>ExAllocateFromPagedLookasideList</strong></a> to allocate a buffer from the list, and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreetopagedlookasidelist" data-raw-source="[&lt;strong&gt;ExFreeToPagedLookasideList&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreetopagedlookasidelist)"><strong>ExFreeToPagedLookasideList</strong></a> to return a buffer to the list.</p>
-<p>Drivers must always explicitly free any lookaside lists they create before unloading. It is a serious programming error to do otherwise. Use <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletepagedlookasidelist" data-raw-source="[&lt;strong&gt;ExDeletePagedLookasideList&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletepagedlookasidelist)"><strong>ExDeletePagedLookasideList</strong></a> to free the list.</p>
-<p>Drivers can also use lookaside lists for nonpaged pool. Starting with Windows 2000, an <strong>NPAGED_LOOKASIDE_LIST</strong> structure describes a lookaside list that contains nonpaged buffers. Starting with Windows Vista, a <strong>LOOKASIDE_LIST_EX</strong> structure can describe a lookaside list that contains either paged or nonpaged buffers. For more information, see <a href="using-lookaside-lists.md" data-raw-source="[Using Lookaside Lists](using-lookaside-lists.md)">Using Lookaside Lists</a>.</p>
-<p>On 64-bit platforms, this structure must be 16-byte aligned.</p>
-<p>Supported starting with Windows 2000.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>RTL_BITMAP</strong></td>
-<td><p>The <strong>RTL_BITMAP</strong> structure is an opaque structure that describes a bitmap.</p>
-<pre class="syntax"><code>typedef struct _RTL_BITMAP {
+} LOOKASIDE_LIST_EX, *PLOOKASIDE_LIST_EX;
+```
+
+A lookaside list is a pool of fixed-size buffers that the driver can manage locally to reduce the number of calls to system allocation routines, which improves performance. The buffers are of uniform size and are stored as entries in the lookaside list.
+
+Drivers should treat the **LOOKASIDE_LIST_EX** structure as opaque. Drivers that access structure members or that have dependencies on the locations of these members might not remain portable and interoperable with other drivers.
+
+The [Related articles](#related-articles) section contains a list of the routines that use this structure.
+
+For more information about lookaside lists, see [Using Lookaside Lists](using-lookaside-lists.md).
+
+On 64-bit platforms, this structure must be 16-byte aligned.
+
+Supported starting with Windows Vista.
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## NPAGED_LOOKASIDE_LIST
+
+The **NPAGED_LOOKASIDE_LIST** structure is an opaque structure that describes a lookaside list of fixed-size buffers allocated from nonpaged pool. The system creates new entries and destroys unused entries on the list as necessary. For fixed-size buffers, using a lookaside list is quicker than allocating memory directly.
+
+Use [**ExInitializeNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializenpagedlookasidelist) to initialize the lookaside list. Use [**ExAllocateFromNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatefromnpagedlookasidelist) to allocate a buffer from the list, and [**ExFreeToNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreetonpagedlookasidelist) to return a buffer to the list.
+
+Drivers must always explicitly free any lookaside lists they create before unloading. It's a serious programming error to do otherwise. Use [**ExDeleteNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletenpagedlookasidelist) to free the list.
+
+Drivers can also use lookaside lists for paged pool. Starting with Windows 2000, a **PAGED_LOOKASIDE_LIST** structure describes a lookaside list that contains paged buffers. Starting in Windows Vista, a **LOOKASIDE_LIST_EX** structure can describe a lookaside list that contains either paged or nonpaged buffers. For more information, see [Using Lookaside Lists](using-lookaside-lists.md).
+
+On 64-bit platforms, this structure must be 16-byte aligned.
+
+Supported starting with Windows 2000.
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## OBJECT_TYPE
+
+**OBJECT_TYPE** is an opaque structure that specifies the object type of a handle. For more information, see [**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle).
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## PAGED_LOOKASIDE_LIST
+
+The **PAGED_LOOKASIDE_LIST** structure is an opaque structure that describes a lookaside list of fixed-size buffers allocated from paged pool. The system creates new entries and destroys unused entries on the list as necessary. For fixed-size buffers, using a lookaside list is quicker than allocating memory directly.
+
+Use [**ExInitializePagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializepagedlookasidelist) to initialize the lookaside list. Use [**ExAllocateFromPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatefrompagedlookasidelist) to allocate a buffer from the list, and [**ExFreeToPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreetopagedlookasidelist) to return a buffer to the list.
+
+Drivers must always explicitly free any lookaside lists they create before unloading. It's a serious programming error to do otherwise. Use [**ExDeletePagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletepagedlookasidelist) to free the list.
+
+Drivers can also use lookaside lists for nonpaged pool. Starting with Windows 2000, an **NPAGED_LOOKASIDE_LIST** structure describes a lookaside list that contains nonpaged buffers. Starting with Windows Vista, a **LOOKASIDE_LIST_EX** structure can describe a lookaside list that contains either paged or nonpaged buffers. For more information, see [Using Lookaside Lists](using-lookaside-lists.md).
+
+On 64-bit platforms, this structure must be 16-byte aligned.
+
+Supported starting with Windows 2000.
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## RTL_BITMAP
+
+The **RTL_BITMAP** structure is an opaque structure that describes a bitmap.
+
+``` syntax
+typedef struct _RTL_BITMAP {
   // opaque
-} RTL_BITMAP, *PRTL_BITMAP;</code></pre>
-<p>Do not directly access the members of this structure. Drivers that have dependencies on member locations or that access member values directly might not remain compatible with future versions of the Windows operating system.</p>
-<p>The <strong>RTL_BITMAP</strong> structure serves as a header for a general-purpose, one-dimensional bitmap of arbitrary length. A driver can use such a bitmap as an economical way to keep track of a set of reusable items. For example, a file system can use bitmaps to track which clusters and sectors on a hard disk have already been allocated to hold file data.</p>
-<p>For a list of the <strong>Rtl<em>Xxx</em></strong> routines that use <strong>RTL_BITMAP</strong> structures, see the following See Also section. The caller of these <strong>Rtl<em>Xxx</em></strong> routines is responsible for allocating the storage for the <strong>RTL_BITMAP</strong> structure and for the buffer that contains the bitmap. This buffer must begin on a four-byte boundary in memory and must be a multiple of four bytes in length. The bitmap begins at the start of the buffer but can contain any number of bits that will fit in the allocated buffer.</p>
-<p>Before supplying an <strong>RTL_BITMAP</strong> structure as a parameter to an <strong>Rtl<em>Xxx</em></strong> routine, call the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap" data-raw-source="[&lt;strong&gt;RtlInitializeBitMap&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap)"><strong>RtlInitializeBitMap</strong></a> routine to initialize the structure. The input parameters to this routine are a pointer to a buffer that contains the bitmap, and the size, in bits, of the bitmap. <strong>RtlInitializeBitMap</strong> does not change the contents of this buffer.</p>
-<p>If the caller allocates the storage for the <strong>RTL_BITMAP</strong> structure and bitmap in paged memory, the caller must be running at IRQL &lt;= APC_LEVEL when it passes a pointer to this structure as a parameter to any of the <strong>Rtl<em>Xxx</em></strong> routines that are listed in the See Also section. If the caller allocates the storage from nonpaged memory (or, equivalently, from paged memory that is locked), the caller can be running at any IRQL when it calls the <strong>Rtl<em>Xxx</em></strong> routine.</p>
-<p>Supported in Windows 2000 and later versions of Windows.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="even">
-<td><strong>RTL_RUN_ONCE</strong></td>
-<td><p>The <strong>RTL_RUN_ONCE</strong> structure is an opaque structure that stores the information for a one-time initialization.</p>
-<p>Drivers must initialize this structure by calling the <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlrunonceinitialize" data-raw-source="[&lt;strong&gt;RtlRunOnceInitialize&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlrunonceinitialize)"><strong>RtlRunOnceInitialize</strong></a> routine before passing it to any other <strong>RtlRunOnce<em>Xxx</em></strong> routines.</p>
-<p>Available only on Windows Vista and later versions of the Windows operating system.</p>
-<p>Header: Ntddk.h. Include: Ntddk.h.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>SECURITY_SUBJECT_CONTEXT</strong></td>
-<td><p>The <strong>SECURITY_SUBJECT_CONTEXT</strong> structure is an opaque structure that represents the security context within which a particular operation is taking place.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="even">
-<td><strong>SLIST_HEADER</strong></td>
-<td><p>An <strong>SLIST_HEADER</strong> structure is an opaque structure that serves as the header for a sequenced singly linked list. For more information, see <a href="singly-and-doubly-linked-lists.md" data-raw-source="[Singly and Doubly Linked Lists](singly-and-doubly-linked-lists.md)">Singly and Doubly Linked Lists</a>.</p>
-<p>On 64-bit platforms, <strong>SLIST_HEADER</strong> structures must be 16-byte aligned.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>XSTATE_SAVE</strong></td>
-<td><p>The <strong>XSTATE_SAVE</strong> structure is an opaque structure that describes the extended processor state information that a kernel-mode driver saves and restores.</p>
-<pre class="syntax"><code>typedef struct _XSTATE_SAVE {
+} RTL_BITMAP, *PRTL_BITMAP;
+```
+
+Don't directly access the members of this structure. Drivers that have dependencies on member locations or that access member values directly might not remain compatible with future versions of the Windows operating system.
+
+The **RTL_BITMAP** structure serves as a header for a general-purpose, one-dimensional bitmap of arbitrary length. A driver can use such a bitmap as an economical way to keep track of a set of reusable items. For example, a file system can use bitmaps to track which clusters and sectors on a hard disk have already been allocated to hold file data.
+
+For a list of the **Rtl*Xxx*** routines that use **RTL_BITMAP** structures, see the [Related articles](#related-articles) section. The caller of these **Rtl*Xxx*** routines is responsible for allocating the storage for the **RTL_BITMAP** structure and for the buffer that contains the bitmap. This buffer must begin on a four-byte boundary in memory and must be a multiple of four bytes in length. The bitmap begins at the start of the buffer but can contain any number of bits that fit in the allocated buffer.
+
+Before supplying an **RTL_BITMAP** structure as a parameter to an **Rtl*Xxx*** routine, call the [**RtlInitializeBitMap**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap) routine to initialize the structure. The input parameters to this routine are a pointer to a buffer that contains the bitmap, and the size, in bits, of the bitmap. **RtlInitializeBitMap** doesn't change the contents of this buffer.
+
+If the caller allocates the storage for the **RTL_BITMAP** structure and bitmap in paged memory, the caller must be running at IRQL <= APC_LEVEL when it passes a pointer to this structure as a parameter to any of the **Rtl*Xxx*** routines listed in the [Related articles](#related-articles) section. If the caller allocates the storage from nonpaged memory (or, equivalently, from locked paged memory), the caller can be running at any IRQL when it calls the **Rtl*Xxx*** routine.
+
+Supported in Windows 2000 and later versions of Windows.
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## RTL_RUN_ONCE
+
+The **RTL_RUN_ONCE** structure is an opaque structure that stores the information for a one-time initialization.
+
+Drivers must initialize this structure by calling the [**RtlRunOnceInitialize**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlrunonceinitialize) routine before passing it to any other **RtlRunOnce*Xxx*** routines.
+
+Available on Windows Vista and later versions of the Windows operating system.
+
+Header: Ntddk.h. Include: Ntddk.h.
+
+## SECURITY_SUBJECT_CONTEXT
+
+The **SECURITY_SUBJECT_CONTEXT** structure is an opaque structure that represents the security context within which a particular operation is taking place. Drivers must not modify or try to directly access any members of this structure to make security decisions. Instead, to avoid security issues in authorization, pass this opaque structure in calls to [**SeAccessCheck**](/windows-hardware/drivers/wdm/nf-wdm-seaccesscheck) or [**SePrivilegeCheck**](/windows-hardware/drivers/ntifs/nf-ntifs-seprivilegecheck).
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## SLIST_HEADER
+
+An **SLIST_HEADER** structure is an opaque structure that serves as the header for a sequenced singly linked list. For more information, see [Singly and Doubly Linked Lists](singly-and-doubly-linked-lists.md).
+
+On 64-bit platforms, **SLIST_HEADER** structures must be 16-byte aligned.
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## XSTATE_SAVE
+
+The **XSTATE_SAVE** structure is an opaque structure that describes the extended processor state information that a kernel-mode driver saves and restores.
+
+``` syntax
+typedef struct _XSTATE_SAVE {
   ...  // opaque
-} XSTATE_SAVE, *PXSTATE_SAVE;</code></pre>
-<p>All members are opaque.</p>
-<p>This structure is used by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kesaveextendedprocessorstate" data-raw-source="[&lt;strong&gt;KeSaveExtendedProcessorState&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesaveextendedprocessorstate)"><strong>KeSaveExtendedProcessorState</strong></a> and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestoreextendedprocessorstate" data-raw-source="[&lt;strong&gt;KeRestoreExtendedProcessorState&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestoreextendedprocessorstate)"><strong>KeRestoreExtendedProcessorState</strong></a> routines.</p>
-<p>Supported in Windows 7 and later versions of the Windows operating system.</p>
-<p>Header: Wdm.h. Include: Wdm.h, Ntddk.h, Ntifs.h.</p></td>
-</tr>
-</tbody>
-</table>
+} XSTATE_SAVE, *PXSTATE_SAVE;
+```
 
-## Related topics
+All members are opaque.
 
-[**ExAcquireFastMutex**](/previous-versions/windows/hardware/drivers/ff544337(v=vs.85))  
+The [**KeSaveExtendedProcessorState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesaveextendedprocessorstate) and [**KeRestoreExtendedProcessorState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kerestoreextendedprocessorstate) routines use this structure.
 
-[**ExAcquireFastMutexUnsafe**](/previous-versions/windows/hardware/drivers/ff544340(v=vs.85))  
+Supported in Windows 7 and later versions of the Windows operating system.
+
+Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
+
+## Related articles
+
+[**ExAcquireFastMutex**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exacquirefastmutex)  
+
+[**ExAcquireFastMutexUnsafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exacquirefastmutexunsafe)  
 
 [**ExAllocateFromLookasideListEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatefromlookasidelistex)  
 
@@ -276,13 +353,13 @@ Drivers can use the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurre
 
 [**ExQueryDepthSList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exquerydepthslist)  
 
-[**ExReleaseFastMutex**](/previous-versions/windows/hardware/drivers/ff545549(v=vs.85))  
+[**ExReleaseFastMutex**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleasefastmutex)  
 
-[**ExReleaseFastMutexUnsafe**](/previous-versions/windows/hardware/drivers/ff545567(v=vs.85))  
+[**ExReleaseFastMutexUnsafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleasefastmutexunsafe)  
 
 [**ExSetTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exsettimer)  
 
-[**ExTryToAcquireFastMutex**](/previous-versions/windows/hardware/drivers/ff545647(v=vs.85))  
+[**ExTryToAcquireFastMutex**](/windows-hardware/drivers/ddi/wdm/nf-wdm-extrytoacquirefastmutex)  
 
 [*ExTimerCallback*](/windows-hardware/drivers/ddi/wdm/nc-wdm-ext_callback)  
 
@@ -310,15 +387,15 @@ Drivers can use the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurre
 
 [**IoUninitializeWorkItem**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iouninitializeworkitem)  
 
-[**KeAcquireGuardedMutex**](/previous-versions/windows/hardware/drivers/ff551892(v=vs.85))  
+[**KeAcquireGuardedMutex**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquireguardedmutex)  
 
-[**KeAcquireGuardedMutexUnsafe**](/previous-versions/windows/hardware/drivers/ff551894(v=vs.85))  
+[**KeAcquireGuardedMutexUnsafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquireguardedmutexunsafe)  
 
-[**KeAcquireInStackQueuedSpinLock**](/previous-versions/windows/hardware/drivers/ff551899(v=vs.85))  
+[**KeAcquireInStackQueuedSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquireinstackqueuedspinlock)  
 
 [**KeAcquireInStackQueuedSpinLockAtDpcLevel**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquireinstackqueuedspinlockatdpclevel)  
 
-[**KeAcquireInterruptSpinLock**](/previous-versions/windows/hardware/drivers/ff551914(v=vs.85))  
+[**KeAcquireInterruptSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquireinterruptspinlock)  
 
 [**KeCancelTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kecanceltimer)  
 
@@ -374,7 +451,7 @@ Drivers can use the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurre
 
 [**PsGetProcessCreateTimeQuadPart**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetprocesscreatetimequadpart)  
 
-[**PsInitialSystemProcess**](./mm64bitphysicaladdress.md)  
+[**PsInitialSystemProcess**](mm64bitphysicaladdress.md)  
 
 [**PsIsSystemThread**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-psissystemthread)  
 
