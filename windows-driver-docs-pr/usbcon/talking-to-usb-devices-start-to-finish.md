@@ -253,7 +253,7 @@ You can add AutoPlay capabilities so the app launches when the device connects t
 
     ![Screenshot that shows the app manifest with 'Declarations' selected and 'AutoPlay Device' added.](images/autoplay.png)
 
-1. In the OnActivated method of the App class, check if the device activated the app. If it is, then the method receives a DeviceEventArgs parameter value that contains the **[DeviceInformation.Id](/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_Id)** property value. This is the same value described in [Extend the app to open the device for communication](extend-the-app-to-open-the-device-for-communication).
+1. In the OnActivated method of the App class, check if the device activated the app. If it is, then the method receives a DeviceEventArgs parameter value that contains the **[DeviceInformation.Id](/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_Id)** property value. This is the same value described in [Open the device for communication](#open-the-device-for-communication).
 
 **Find it in the sample:** See files named Autoplay. For JavaScript, see default.js.
 
