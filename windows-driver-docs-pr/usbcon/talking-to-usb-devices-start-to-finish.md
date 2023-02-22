@@ -230,7 +230,7 @@ Associate your app with the device by following the steps in the wizard. Enter t
 
 1. On the **App Info** page, in the **Privileged application** group, enter the **Package name**, **Publisher name**, and **UWP app ID**.
 
-    ![device metatdata for privileged apps](images/privileged-app.png)
+    :::image type="content" source="images/privileged-app.png" alt-text="Screenshot of Visual Studio, showing device metatdata for privileged apps.":::
 
     > [!NOTE]
     > Do not check the **Access custom driver** option.
@@ -251,7 +251,7 @@ You can add AutoPlay capabilities so the app launches when the device connects t
 1. In your device metadata package, you must specify how the device should respond to an AutoPlay notification. On the **Windows Info** tab, select the **UWP device app** option and enter app information as shown here:
 1. In the app manifest, add **AutoPlay Device** declaration and launch information as shown here:
 
-    ![Screenshot that shows the app manifest with 'Declarations' selected and 'AutoPlay Device' added.](images/autoplay.png)
+    :::image type="content" source="images/autoplay.png" alt-text="Screenshot that shows the app manifest with 'Declarations' selected and 'AutoPlay Device' added.":::
 
 1. In the OnActivated method of the App class, check if the device activated the app. If it is, then the method receives a DeviceEventArgs parameter value that contains the **[DeviceInformation.Id](/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_Id)** property value. This is the same value described in [Open the device for communication](#open-the-device-for-communication).
 
