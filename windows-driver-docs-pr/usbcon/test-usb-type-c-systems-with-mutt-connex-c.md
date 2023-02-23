@@ -1,22 +1,18 @@
 ---
-description: The MUTT Connection Exerciser Type-C (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board.
 title: Test USB Type-C systems with USB Type-C ConnEx
-ms.date: 06/14/2022
+description: The MUTT Connection Exerciser Type-C (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board.
+ms.date: 02/22/2023
 ---
 
 # Test USB Type-C systems with USB Type-C ConnEx
 
-## Summary
+This topic provides guidelines to automate the testing of systems, devices, docks with USB Type-C connectors and their interoperability with the Windows operating system. You can test hardware that belong to one of the following categories:
 
-- Automated testing by using USB Type-C ConnEx
-- USB Type-C interoperability test procedures in Windows 10: functional testing (FT) and stress testing (ST).
-- Diagnostic procedures and tips to confirm scenarios, such as device addition and removal.
+- System: Desktops, laptops, tablets, servers, or phones running a SKU of a version of the Windows operating system with an exposed USB Type-C port.
+- Dock: Any USB Type-C device that exposes more than one port.
+- Device: Any USB device with a Type-C port that can be attached to a system or dock. This category includes traditional USB devices as well as devices that support the accessory and alternate modes as defined in the USB Type-C specification.
 
-## Applies to
-
-- Windows 10
-
-## Specifications and procedures**
+## Specifications and procedures
 
 - [xHCI interoperability test procedures](https://www.usb.org/document-library/xhci-interoperability-test-procedures-peripherals-hubs-and-hosts-version)
 
@@ -24,12 +20,6 @@ ms.date: 06/14/2022
 > Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The MUTT Connection Exerciser Type-C (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board. The shield provides a four-to-one switch to automate interoperability tests for USB Type-C scenarios.
-
-This topic provides guidelines to automate the testing of systems, devices, docks with USB Type-C connectors and their interoperability with the Windows operating system. You can test hardware that belong to one of the following categories:
-
-- System: Desktops, laptops, tablets, servers, or phones running a SKU of a version of the Windows operating system with an exposed USB Type-C port.
-- Dock: Any USB Type-C device that exposes more than one port.
-- Device: Any USB device with a Type-C port that can be attached to a system or dock. This category includes traditional USB devices as well as devices that support the accessory and alternate modes as defined in the USB Type-C specification.
 
 ## Hardware requirements
 
