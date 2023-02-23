@@ -510,18 +510,18 @@ The following functional tests can be adapted for USB Type-C to improve traditio
 
 | Test case | Description | Category |
 | --- | --- | --- |
-| [System Boot](type.md#ft2) | Confirms that the product does not inhibit normal system boot. | System, Dock, Device |
-| [System Power Transitions](type.md#ft3) | Tests whether the system's power transitions and wake-up capability from lower power states are not affected by the product. | System, Dock, Device |
-| [Selective Suspend](type.md#ft4) | Confirms the selective suspend transitions. | Dock, Device |
+| [System Boot](type.md#ft-case-2-system-boot) | Confirms that the product does not inhibit normal system boot. | System, Dock, Device |
+| [System Power Transitions](type.md#ft-case-3-system-power-transitions) | Tests whether the system's power transitions and wake-up capability from lower power states are not affected by the product. | System, Dock, Device |
+| [Selective Suspend](type.md#ft-case-4-selective-suspend) | Confirms the selective suspend transitions. | Dock, Device |
 
 The following stress tests can be adapted from the SuperMUTT test documentation to expand USB scenarios.
 
 | Test case | Description | Category |
 | --- | --- | --- |
-| [System Power Transitions](type.md#st1) | Tests product reliability after repetitive system power events. | System, Dock, Device |
-| [Transfer Events](type.md#st2) | Generates multiple transfer and connection events. | System, Dock, Device |
-| [Plug and Play (PnP)](type.md#st3) | Generates various PnP sequences. | System, Dock, Device |
-| [Device Topology](type.md#st4) | Tests a range of devices and topologies with the product. | System, Dock, Device |
+| [System Power Transitions](type.md#st-case-1-system-power-transitions) | Tests product reliability after repetitive system power events. | System, Dock, Device |
+| [Transfer Events](type.md#st-case-2-transfer-events) | Generates multiple transfer and connection events. | System, Dock, Device |
+| [Plug and Play (PnP)](type.md#st-case-3-plug-and-play) | Generates various PnP sequences. | System, Dock, Device |
+| [Device Topology](type.md#st-case-4-device-topology) | Tests a range of devices and topologies with the product. | System, Dock, Device |
 
 ## Validating success or failure of the tests
 
