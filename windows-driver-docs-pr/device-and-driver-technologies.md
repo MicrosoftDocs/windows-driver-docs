@@ -1,7 +1,7 @@
 ---
 title: Overview of Driver Technologies
 description: This section contains information about each of the supported Windows driver technologies.
-ms.date: 01/30/2018
+ms.date: 02/22/2023
 ---
 
 # Overview of Driver Technologies
@@ -27,7 +27,7 @@ For information about the tools used to develop desktop drivers, see [Driver Dev
 - [Biometric Drivers](biometric/index.md)
 - [Bluetooth Drivers](bluetooth/index.md)
 - [Component Firmware Update (CFU)](cfu/index.md)
-- [Display drivers](display/index.md)
+- [Display, graphics, and compute accelerator drivers](display/index.md)
 - [File system drivers](ifs/index.md)
 - [Global Navigation Satellite System (GNSS) drivers](gnss/index.md)
 - [GPIO drivers](gpio/index.md)
