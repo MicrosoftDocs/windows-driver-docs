@@ -3,14 +3,17 @@ title: Using an INF File to Install a File System Filter Driver
 description: Using an INF File to Install a File System Filter Driver
 keywords:
 - INF files WDK file system filter driver, installation steps
-ms.date: 08/10/2021
+ms.date: 02/23/2023
 ---
 
 # Using an INF File to Install a File System Filter Driver
 
-This page describes how a Windows file system filter driver developer can use an INF file for driver installation.
+> [!NOTE]
+> For optimal reliability and performance, use [file system minifilter drivers](./filter-manager-concepts.md) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
-After you have created an INF file, you can use it to install, upgrade, and uninstall your file system filter driver. You can use the INF file alone or together with a batch file or a user-mode setup application.
+This article describes how a legacy file system filter driver developer can use an INF file for driver installation.
+
+After you've created an INF file, you can use it to install, upgrade, and uninstall your file system filter driver. You can use the INF file alone or together with a batch file or a user-mode setup application.
 
 ## Right-Click Install
 

@@ -7,18 +7,21 @@ keywords:
 - classes WDK file system
 - filter drivers WDK file system , classes
 - file system filter drivers WDK , classes
-ms.date: 12/02/2021
+ms.date: 02/23/2023
 ---
 
 # File System Filter Driver Classes and Class GUIDs
 
-Microsoft Windows XP and later operating systems provide setup classes for file system filter drivers. These classes provide a subset of the functionality that system-supplied [device setup classes](../install/overview-of-device-setup-classes.md) provide for hardware devices.
+> [!NOTE]
+> For optimal reliability and performance, use [file system minifilter drivers](./filter-manager-concepts.md) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
+
+Microsoft Windows XP and later operating systems provide setup classes for legacy file system filter drivers. These classes provide a subset of the functionality that system-supplied [device setup classes](../install/overview-of-device-setup-classes.md) provide for hardware devices.
 
 Each setup class is associated with a class GUID. The system-defined class GUIDs are defined in *devguid.h*.
 
-This topic lists the setup classes for file system filter drivers. In the definition for each class, the **Class** and **ClassGuid** entries contain the values that you should specify in the [**INF Version section**](../install/inf-version-section.md) of a filter's INF file. Your filter driver should use the class and GUID that match the [load order group](load-order-groups-for-file-system-filter-drivers.md) that is specified in your driver's INF file.
+This article lists the setup classes for file system filter drivers. In the definition for each class, the **Class** and **ClassGuid** entries contain the values that you should specify in the [**INF Version section**](../install/inf-version-section.md) of a filter's INF file. Your filter driver should use the class and GUID that match the [load order group](load-order-groups-for-file-system-filter-drivers.md) that is specified in your driver's INF file.
 
-Supplying the appropriate **ClassGuid** value in the INF file for a device, rather than, or in addition to, the **Class** = *class-name* entry, significantly improves the performance of searching system INF files.
+When your filter driver supplies the appropriate **ClassGuid** value in the INF file for a device, rather than or in addition to the **Class** = *class-name* entry, it significantly improves the performance of searching system INF files.
 
 The following list includes system-defined classes and class GUIDs for file system filter drivers. The entries in this list correspond to the load order groups that were created for file system filter drivers in Windows XP and later operating systems.
 
