@@ -282,5 +282,5 @@ Make sure that the driver package contents meet these requirements:
 [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)  
 [WinUSB Power Management](winusb-power-management.md)  
 [WinUSB Functions for Pipe Policy Modification](winusb-functions-for-pipe-policy-modification.md)  
-[WinUSB Functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb)  
+[WinUSB functions](using-winusb-api-to-communicate-with-a-usb-device.md)  
 [WinUSB](winusb.md)
