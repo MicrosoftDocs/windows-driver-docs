@@ -1,7 +1,8 @@
 ---
 title: EFI_BATTERY_CHARGING_PROTOCOL
 description: This protocol allows a UEFI driver to support charging of the main battery.
-ms.date: 08/20/2021
+ms.date: 02/24/2023
+ms.topic: reference
 ---
 
 # EFI_BATTERY_CHARGING_PROTOCOL

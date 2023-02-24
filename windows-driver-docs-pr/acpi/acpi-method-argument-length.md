@@ -3,7 +3,8 @@ title: ACPI_METHOD_ARGUMENT_LENGTH macro
 description: The ACPI_METHOD_ARGUMENT_LENGTH macro calculates the size, in bytes, of a variable-length ACPI_METHOD_ARGUMENT structure that contains data of a specified size, in bytes.
 keywords: 
 - ACPI_METHOD_ARGUMENT_LENGTH macro ACPI Devices
-ms.date: 08/17/2021
+ms.date: 02/24/2023
+ms.topic: reference
 ---
 
 # ACPI_METHOD_ARGUMENT_LENGTH macro

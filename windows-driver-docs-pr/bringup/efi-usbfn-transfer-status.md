@@ -1,7 +1,8 @@
 ---
 title: EFI_USBFN_TRANSFER_STATUS
 description: The EFI_USBFN_TRANSFER_STATUS enumeration indicates the USB transfer status.
-ms.date: 08/23/2021
+ms.date: 02/24/2023
+ms.topic: reference
 ---
 
 # EFI_USBFN_TRANSFER_STATUS
