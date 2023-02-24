@@ -10,16 +10,15 @@ keywords:
 - propagating DO_BUFFERED_IO flag
 - DO_DIRECT_IO
 - propagating DO_DIRECT_IO flag
-ms.date: 04/20/2017
+ms.date: 02/23/2023
 ---
 
-# Propagating the DO\_BUFFERED\_IO and DO\_DIRECT\_IO Flags
+# Propagating the DO_BUFFERED_IO and DO_DIRECT_IO Flags
 
+> [!NOTE]
+> For optimal reliability and performance, use [file system minifilter drivers](./filter-manager-concepts.md) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
-## <span id="ddk_propagating_the_do_buffered_io_and_do_direct_io_flags_if"></span><span id="DDK_PROPAGATING_THE_DO_BUFFERED_IO_AND_DO_DIRECT_IO_FLAGS_IF"></span>
-
-
-After attaching a filter device object to a file system or volume, always be sure to set or clear the DO\_BUFFERED\_IO and DO\_DIRECT\_IO flags as needed so that they match the values of the next-lower device object on the driver stack. (For more information about these flags, see [Methods for Accessing Data Buffers](../kernel/methods-for-accessing-data-buffers.md).) An example of this follows:
+After attaching a legacy filter device object to a file system or volume, always set or clear the DO_BUFFERED_IO and DO_DIRECT_IO flags as needed so that they match the values of the next-lower device object on the driver stack. For more information about these flags, see [Methods for Accessing Data Buffers](../kernel/methods-for-accessing-data-buffers.md). The following code snippet shows an example, where **DeviceObject** is a pointer to the device object to which the filter device object has been attached and **myLegacyFilterDeviceObject** is a pointer to the filter device object itself.
 
 ```cpp
 if (FlagOn( DeviceObject->Flags, DO_BUFFERED_IO )) {
@@ -29,8 +28,3 @@ if (FlagOn( DeviceObject->Flags, DO_DIRECT_IO )) {
     SetFlag(myLegacyFilterDeviceObject->Flags, DO_DIRECT_IO );
 }
 ```
-
-In the above code snippet, *DeviceObject* is a pointer to the device object to which the filter device object has just been attached; myLegacyFilter *DeviceObject* is a pointer to the filter device object itself.
-
- 
-
