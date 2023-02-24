@@ -1,7 +1,7 @@
 ---
 title: WinUSB power management
 description: WinUSB power management
-ms.date: 01/07/2019
+ms.date: 02/23/2023
 ---
 
 # WinUSB power management
@@ -20,34 +20,34 @@ This feature is controlled by the **SystemWakeEnabled** DWORD registry setting. 
 HKR,,SystemWakeEnabled,0x00010001,1
 ```
 
-- A value of zero, or the absence of this value indicates that the device is not allowed to wake the system.
+- A value of zero, or the absence of this value indicates that the device isn't allowed to wake the system.
 - To allow a device to wake the system, set **SystemWakeEnabled** to a nonzero value. A check box in the device **Properties** page is automatically enabled so that the user can override the setting.
 
 > [!NOTE]
-> Changing the **SystemWakeEnabled** setting has no affect on selective suspend, this registry value only pertains to system suspend.
+> Changing the **SystemWakeEnabled** setting has no effect on selective suspend, this registry value only pertains to system suspend.
 
 ## Selective Suspend
 
-Selective suspend can be disabled by any of several system or WinUSB settings. A single setting cannot force WinUSB to enable selective suspend.
+Selective suspend can be disabled by any of several system or WinUSB settings. A single setting can't force WinUSB to enable selective suspend.
 
 The following power policy settings that are specified in [**WinUsb_SetPowerPolicy**](/windows/win32/api/winusb/nf-winusb-winusb_setpowerpolicy)'s *PolicyType* parameter affect the behavior of selective suspend:
 
-- AUTO_SUSPEND When set to zero, it does not set the device to selective suspend mode.
+- AUTO_SUSPEND When set to zero, it doesn't set the device to selective suspend mode.
 - SUSPEND_DELAY Sets the time between when the device becomes idle and when WinUSB requests the device to go into selective suspend.
 
 The following table shows how the registry keys affect the selective suspend feature.
 
 | Registry key | Description |
 |---|---|
-| **DeviceIdleEnabled** | This is a DWORD value. This registry value indicates whether the device is capable of being powered down when idle (Selective Suspend).<br><ul><li>A value of zero, or the absence of this value indicates that the device does not support being powered down when idle.</li><li>A nonzero value indicates that the device supports being powered down when idle.</li><li>If DeviceIdleEnabled is not set, the value of the AUTO_SUSPEND power policy setting is ignored.</li></ul><br>`HKR,,DeviceIdleEnabled,0x00010001,1` |
-| **DeviceIdleIgnoreWakeEnable** | When set to a nonzero value, it suspends the device even if it does not support RemoteWake. |
-| **UserSetDeviceIdleEnabled** | This value is a DWORD value. This registry value indicates whether a check box should be enabled in the device **Properties** page that allows a user to override the idle defaults. When **UserSetDeviceIdleEnabled** is set to a nonzero value the check box is enabled and the user can disable powering down the device when idle. A value of zero, or the absence of this value indicates that the check box is not enabled.<br><ul><li>If the user disables device power savings, the value of the AUTO_SUSPEND power policy setting is ignored.</li><li>If the user enables device power savings, then the value of AUTO_SUSPEND is used to determine whether to suspend the device when idle.</li></ul><br>The **UserSetDeviceIdleEnabled** is ignored if **DeviceIdleEnabled** is not set.<br><br>`HKR,,UserSetDeviceIdleEnabled,0x00010001,1` |
-| **DefaultIdleState** | This is a DWORD value. This registry value sets the default value of the AUTO_SUSPEND power policy setting. This registry key is used to enable or disable selective suspend when a handle is not open to the device.<br><ul><li>A value of zero or the absence of this value indicates that by default, the device is not suspended when idle. The device be allowed to suspend when idle only when the AUTO_SUSPEND power policy is enabled.</li><li>A nonzero value indicates that by default the device is allowed to be suspended when idle.</li></ul><br>This value is ignored if **DeviceIdleEnabled** is not set.<br><br>`HKR,,DefaultIdleState,0x00010001,1` |
+| **DeviceIdleEnabled** | This is a DWORD value. This registry value indicates whether the device is capable of being powered down when idle (Selective Suspend).<br><ul><li>A value of zero, or the absence of this value indicates that the device doesn't support being powered down when idle.</li><li>A nonzero value indicates that the device supports being powered down when idle.</li><li>If DeviceIdleEnabled isn't set, the value of the AUTO_SUSPEND power policy setting is ignored.</li></ul><br>`HKR,,DeviceIdleEnabled,0x00010001,1` |
+| **DeviceIdleIgnoreWakeEnable** | When set to a nonzero value, it suspends the device even if it doesn't support RemoteWake. |
+| **UserSetDeviceIdleEnabled** | This value is a DWORD value. This registry value indicates whether a check box should be enabled in the device **Properties** page that allows a user to override the idle defaults. When **UserSetDeviceIdleEnabled** is set to a nonzero value the check box is enabled and the user can disable powering down the device when idle. A value of zero, or the absence of this value indicates that the check box isn't enabled.<br><ul><li>If the user disables device power savings, the value of the AUTO_SUSPEND power policy setting is ignored.</li><li>If the user enables device power savings, then the value of AUTO_SUSPEND is used to determine whether to suspend the device when idle.</li></ul><br>The **UserSetDeviceIdleEnabled** is ignored if **DeviceIdleEnabled** isn't set.<br><br>`HKR,,UserSetDeviceIdleEnabled,0x00010001,1` |
+| **DefaultIdleState** | This is a DWORD value. This registry value sets the default value of the AUTO_SUSPEND power policy setting. This registry key is used to enable or disable selective suspend when a handle isn't open to the device.<br><ul><li>A value of zero or the absence of this value indicates that by default, the device isn't suspended when idle. The device be allowed to suspend when idle only when the AUTO_SUSPEND power policy is enabled.</li><li>A nonzero value indicates that by default the device can be suspended when idle.</li></ul><br>This value is ignored if **DeviceIdleEnabled** isn't set.<br><br>`HKR,,DefaultIdleState,0x00010001,1` |
 | **DefaultIdleTimeout** | This is a DWORD value. This registry value sets the default state of the SUSPEND_DELAY power policy setting.<br><br>The value indicates the amount of time in milliseconds to wait before determining that a device is idle.<br><br>`HKR,,DefaultIdleTimeout,0x00010001,100` |
 
 ## Detecting Idle
 
-All writes and control transfers force the device into the **D0** power state and reset the idle timer. The IN endpoint queues are not power managed. Read requests wake the device when they are submitted. However, a device can become idle while a read request waits.
+All writes and control transfers force the device into the **D0** power state and reset the idle timer. The IN endpoint queues aren't power managed. Read requests wake the device when they're submitted. However, a device can become idle while a read request waits.
 
 ## Related topics
 
