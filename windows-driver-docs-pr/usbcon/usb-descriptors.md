@@ -1,6 +1,6 @@
 ---
-description: A USB device provides information about itself in data structures called USB descriptors. This section provides information about various descriptors that a client driver can obtain from a USB device.
 title: USB descriptors
+description: A USB device provides information about itself in data structures called USB descriptors. This section provides information about various descriptors that a client driver can obtain from a USB device.
 ms.date: 02/24/2023
 ---
 
