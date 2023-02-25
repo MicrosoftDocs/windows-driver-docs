@@ -77,10 +77,10 @@ All bytes are received in reverse order. As described in section 9.3, we see the
 
 |Field|Size|Value|Description|
 |---- |--- |---- |---------- |
-|**bmRequestType** (See 9.3.1 bmRequestType)|1|0x80|The data transfer direction is from device to host (D7 is 1)<br/><br/>The request is a standard request (D6…D5 is 0)<br/><br/>The recipient of the request is the DEVICE (D4 is 0)|
+|**bmRequestType** (See 9.3.1 bmRequestType)|1|0x80|The data transfer direction is from device to host (D7 is 1)<br><br>The request is a standard request (D6…D5 is 0)<br><br>The recipient of the request is the DEVICE (D4 is 0)|
 |**bRequest** (See section See 9.3.2 and Table 9-4)|1|0x06|The request type is GET_DESCRIPTOR.|
 |**wValue** (See Table 9-5)|2|0x0100|The request value indicates that the descriptor type is DEVICE.|
-|**wIndex** (See section 9.3.4)|2|0x0000|The direction is from the host to device (D7 is 1)<br/><br/>The endpoint number is 0.|
+|**wIndex** (See section 9.3.4)|2|0x0000|The direction is from the host to device (D7 is 1)<br><br>The endpoint number is 0.|
 |**wLength** (See section 9.3.5)|2|0x0012|The request is to retrieve 18 bytes.|
 
 Thus, we can conclude that in this control (read) transfer, the host sends a request to retrieve the device descriptor and specifies 18 bytes as the transfer length to hold that descriptor. The way the device sends those 18 bytes depends on how much data the default endpoint can send in one transaction. That information is included in the device descriptor returned by the device in the data transaction.

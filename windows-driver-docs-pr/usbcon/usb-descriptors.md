@@ -1,7 +1,7 @@
 ---
 description: A USB device provides information about itself in data structures called USB descriptors. This section provides information about various descriptors that a client driver can obtain from a USB device.
 title: USB descriptors
-ms.date: 04/20/2017
+ms.date: 02/24/2023
 ---
 
 # USB descriptors
@@ -14,12 +14,11 @@ A USB device provides information about itself in data structures called *USB de
 
 The host obtains descriptors from an attached device by sending various standard control requests (GET\_DESCRIPTOR requests) to the default endpoint. Those requests specify the type of descriptor to retrieve. In response to such requests, the device sends descriptors that include information about the device, its configurations, interfaces and the related endpoints. *Device descriptors* contain information about the whole device. *Configuration descriptors* contain information about each device configuration. *String descriptors* contain Unicode text strings.
 
-Every USB device exposes a device descriptor that indicates the device’s class information, vendor and product identifiers, and number of configurations. Each configuration exposes its configuration descriptor that indicates number of interfaces and power characteristics. Each interface exposes an interface descriptor for each of its alternate settings that contains information about the class and the number of endpoints. Each endpoint within each interface exposes endpoint descriptors that indicate the endpoint type and the maximum packet size.
+Every USB device exposes a device descriptor that indicates the device's class information, vendor and product identifiers, and number of configurations. Each configuration exposes its configuration descriptor that indicates number of interfaces and power characteristics. Each interface exposes an interface descriptor for each of its alternate settings that contains information about the class and the number of endpoints. Each endpoint within each interface exposes endpoint descriptors that indicate the endpoint type and the maximum packet size.
 
 For example, consider the OSR FX2 board device layout described in [USB Device Layout](usb-device-layout.md). At device level, the device exposes a device descriptor and an endpoint descriptor for the default endpoint. At configuration level, the device exposes a configuration descriptor for Configuration 0. At interface level, it exposes one interface descriptor for Alternate Setting 0. At the endpoint level, it exposes three endpoint descriptors.
 
 ## In this section
-
 
 <table>
 <colgroup>
