@@ -2,7 +2,7 @@
 title: Windows kernel opaque structures
 description: Windows kernel opaque structures
 keywords: ["EPROCESS", "ETHREAD", "EX_RUNDOWN_REF", "EX_TIMER", "FAST_MUTEX", "IO_CSQ", "IO_CSQ_IRP_CONTEXT", "IO_WORKITEM", "KBUGCHECK_CALLBACK_RECORD", "KBUGCHECK_REASON_CALLBACK_RECORD", "KDPC", "KFLOATING_SAVE", "KGUARDED_MUTEX", "KINTERRUPT", "KLOCK_QUEUE_HANDLE", "KTIMER", "LOOKASIDE_LIST_EX", "NPAGED_LOOKASIDE_LIST", "OBJECT_TYPE", "PAGED_LOOKASIDE_LIST", "RTL_BITMAP", "RTL_RUN_ONCE", "SECURITY_SUBJECT_CONTEXT", "SLIST_HEADER", "XSTATE_SAVE"]
-ms.date: 02/23/2023
+ms.date: 02/26/2023
 ---
 
 # Windows kernel opaque structures
@@ -275,7 +275,7 @@ Header: Ntddk.h. Include: Ntddk.h.
 
 ## SECURITY_SUBJECT_CONTEXT
 
-The **SECURITY_SUBJECT_CONTEXT** structure is an opaque structure that represents the security context within which a particular operation is taking place. Drivers must not modify or try to directly access any members of this structure to make security decisions. Instead, to avoid security issues in authorization, pass this opaque structure in calls to [**SeAccessCheck**](/windows-hardware/drivers/wdm/nf-wdm-seaccesscheck) or [**SePrivilegeCheck**](/windows-hardware/drivers/ntifs/nf-ntifs-seprivilegecheck).
+The **SECURITY_SUBJECT_CONTEXT** structure is an opaque structure that represents the security context within which a particular operation is taking place. Drivers must not modify or try to directly access any members of this structure to make security decisions. Instead, to avoid security issues in authorization, pass this opaque structure in calls to [**SeAccessCheck**](/windows-hardware/drivers/ddi/wdm/nf-wdm-seaccesscheck) or [**SePrivilegeCheck**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seprivilegecheck).
 
 Header: *Wdm.h*. Include: *Wdm.h*, *Ntddk.h*, *Ntifs.h*.
 
