@@ -47,7 +47,7 @@ The device driver uses a shared buffer to communicate to the client which packet
 
 For communicating from the client to the driver, direct IRP calls are used. This reduces the complexities around ensuring WDF requests are handled in a timely manner and has been proven to work well in the existing architecture.
 
-The client may at any time request the current packet count or indicate the current packet count to the device driver. These requests will call the [EvtAcxStreamGetCurrentPacket](/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_current_packet) and [EvtAcxStreamSetRenderPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_set_render_packet) device driver event handlers. The client may also request the current capture packet which will call the [EvtAcxStreamGetCapturePacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_capture_packet) device driver event handler.
+The client may at any time request the current packet count or indicate the current packet count to the device driver. These requests will call the [EvtAcxStreamGetCurrentPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_current_packet) and [EvtAcxStreamSetRenderPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_set_render_packet) device driver event handlers. The client may also request the current capture packet which will call the [EvtAcxStreamGetCapturePacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_capture_packet) device driver event handler.
 
 #### Similarities with PortCls
 
@@ -315,7 +315,7 @@ The driver should continue to increase the CurrentRenderPacket as packets are re
 
 #### EVTACXSTREAMGETCURRENTPACKET
 
-The [EvtAcxStreamGetCurrentPacket](/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_current_packet) tells the driver to indicate which packet (0-based) is currently being rendered to the hardware or is currently being filled by the capture hardware.
+The [EvtAcxStreamGetCurrentPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_current_packet) tells the driver to indicate which packet (0-based) is currently being rendered to the hardware or is currently being filled by the capture hardware.
 
 #### EVTACXSTREAMGETCAPTUREPACKET
 
