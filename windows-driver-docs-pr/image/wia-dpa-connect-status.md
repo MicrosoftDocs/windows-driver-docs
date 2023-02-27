@@ -4,6 +4,7 @@ description: The WIA_DPA_CONNECT_STATUS property contains the current connection
 keywords: ["WIA_DPA_CONNECT_STATUS Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPA_CONNECT_STATUS
 api_location:

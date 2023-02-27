@@ -4,6 +4,7 @@ description: The KSPROPERTY_MEDIASEEKING_AVAILABLE property retrieves the media 
 keywords: ["KSPROPERTY_MEDIASEEKING_AVAILABLE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_MEDIASEEKING_AVAILABLE
 api_location:

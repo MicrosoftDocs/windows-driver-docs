@@ -4,6 +4,7 @@ description: The required MaxValue element specifies the maximum value that the 
 keywords: ["MaxValue element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn MaxValue
 api_type:

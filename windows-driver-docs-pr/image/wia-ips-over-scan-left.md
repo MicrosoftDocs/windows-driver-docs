@@ -4,6 +4,7 @@ description: The WIA\_IPS\_OVER\_SCAN\_LEFT property along with WIA\_IPS\_OVER\_
 keywords: ["WIA_IPS_OVER_SCAN_LEFT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_OVER_SCAN_LEFT
 api_location:

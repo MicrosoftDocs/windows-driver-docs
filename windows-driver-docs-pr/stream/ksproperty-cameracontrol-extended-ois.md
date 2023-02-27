@@ -4,6 +4,7 @@ description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_OIS is a property ID that is u
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_OIS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_OIS
 api_location:

@@ -4,6 +4,7 @@ description: Clients use the KSPROPERTY_PIN_MODEDATAFORMATS property to retrieve
 keywords: ["KSPROPERTY_PIN_MODEDATAFORMATS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_PIN_MODEDATAFORMATS
 api_location:

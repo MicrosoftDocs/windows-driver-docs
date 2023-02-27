@@ -4,6 +4,7 @@ description: The KSPROPERTY_CONNECTION_STATE property sets the current run state
 keywords: ["KSPROPERTY_CONNECTION_STATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CONNECTION_STATE
 api_location:

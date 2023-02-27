@@ -4,6 +4,7 @@ description: Clients use the KSPROPERTY_CLOCK_FUNCTIONTABLE property to retrieve
 keywords: ["KSPROPERTY_CLOCK_FUNCTIONTABLE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CLOCK_FUNCTIONTABLE
 api_location:

@@ -4,6 +4,7 @@ description: The KSPROPERTY_PIN_CONSTRAINEDDATARANGES property specifies the lis
 keywords: ["KSPROPERTY_PIN_CONSTRAINEDDATARANGES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_PIN_CONSTRAINEDDATARANGES
 api_location:

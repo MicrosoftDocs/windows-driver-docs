@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_RF_TUNER_POLARITY to control the polarit
 keywords: ["KSPROPERTY_BDA_RF_TUNER_POLARITY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_RF_TUNER_POLARITY
 api_location:

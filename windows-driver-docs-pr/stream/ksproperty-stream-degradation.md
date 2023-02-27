@@ -4,6 +4,7 @@ description: The KSPROPERTY_STREAM_DEGRADATION property is an optional property 
 keywords: ["KSPROPERTY_STREAM_DEGRADATION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_STREAM_DEGRADATION
 api_location:

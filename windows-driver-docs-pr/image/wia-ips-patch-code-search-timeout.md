@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PATCH\_CODE\_SEARCH\_TIMEOUT property describes the m
 keywords: ["WIA_IPS_PATCH_CODE_SEARCH_TIMEOUT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PATCH_CODE_SEARCH_TIMEOUT
 api_location:

@@ -4,6 +4,7 @@ description: The WIA_IPA_APP_COLOR_MAPPING property is reserved by Microsoft for
 keywords: ["WIA_IPA_APP_COLOR_MAPPING Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_APP_COLOR_MAPPING
 api_location:

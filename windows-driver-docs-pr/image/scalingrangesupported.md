@@ -4,6 +4,7 @@ description: The required ScalingRangeSupported element describes the range of v
 keywords: ["ScalingRangeSupported element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScalingRangeSupported
 api_type:

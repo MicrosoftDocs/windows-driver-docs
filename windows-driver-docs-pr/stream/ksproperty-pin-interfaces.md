@@ -4,6 +4,7 @@ description: This property returns the list of interfaces supported by pins inst
 keywords: ["KSPROPERTY_PIN_INTERFACES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_PIN_INTERFACES
 api_location:

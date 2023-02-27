@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TVAUDIO\_CAPS property retrieves the capabilities o
 keywords: ["KSPROPERTY_TVAUDIO_CAPS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TVAUDIO_CAPS
 api_location:

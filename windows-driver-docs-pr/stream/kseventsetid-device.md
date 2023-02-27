@@ -4,6 +4,7 @@ description: The KSEVENTSETID\_Device event set specifies device events that can
 keywords: ["KSEVENTSETID_Device Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENTSETID_Device
 api_type:

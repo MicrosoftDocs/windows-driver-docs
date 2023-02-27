@@ -4,6 +4,7 @@ description: The scene mode property selects a driver defined mode which represe
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_SCENEMODE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_SCENEMODE
 api_location:

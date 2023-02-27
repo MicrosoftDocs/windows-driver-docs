@@ -4,6 +4,7 @@ description: The KSEVENT\_CONNECTION\_POSITIONUPDATE event allows a client to re
 keywords: ["KSEVENT_CONNECTION_POSITIONUPDATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_CONNECTION_POSITIONUPDATE
 api_type:

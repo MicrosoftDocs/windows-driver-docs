@@ -4,6 +4,7 @@ description: User-mode clients use this property to identify whether the camera'
 keywords: ["KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_PROPERTY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_PROPERTY
 api_type:

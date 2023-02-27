@@ -4,6 +4,7 @@ description: User-mode clients use the KSPROPERTY_CAMERACONTROL_EXPOSURE propert
 keywords: ["KSPROPERTY_CAMERACONTROL_EXPOSURE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXPOSURE
 api_location:

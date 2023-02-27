@@ -4,6 +4,7 @@ description: The required GetScannerElementsRequest element enables a client to 
 keywords: ["GetScannerElementsRequest element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn GetScannerElementsRequest
 api_type:

@@ -4,6 +4,7 @@ description: The required ActiveJobs element contains a list of all currently ac
 keywords: ["ActiveJobs element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ActiveJobs
 api_type:

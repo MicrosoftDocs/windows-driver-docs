@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEODECODER\_VCR\_TIMING property controls whether
 keywords: ["KSPROPERTY_VIDEODECODER_VCR_TIMING Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEODECODER_VCR_TIMING
 api_location:

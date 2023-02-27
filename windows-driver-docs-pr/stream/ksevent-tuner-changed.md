@@ -4,6 +4,7 @@ description: The KSEVENT_TUNER_CHANGED event propagates an action, such as a cha
 keywords: ["KSEVENT_TUNER_CHANGED Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_TUNER_CHANGED
 api_type:

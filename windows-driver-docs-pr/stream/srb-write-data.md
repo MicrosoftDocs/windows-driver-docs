@@ -4,6 +4,7 @@ description: SRB\_WRITE\_DATA
 keywords: ["SRB_WRITE_DATA Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SRB_WRITE_DATA
 api_type:

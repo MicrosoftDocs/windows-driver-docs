@@ -4,6 +4,7 @@ description: The WIA_IPC_THUMBNAIL property contains the 24-bits-per-pixel thumb
 keywords: ["WIA_IPC_THUMBNAIL Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPC_THUMBNAIL
 api_location:

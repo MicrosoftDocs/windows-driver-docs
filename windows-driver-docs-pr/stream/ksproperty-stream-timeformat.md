@@ -4,6 +4,7 @@ description: The KSPROPERTY\_STREAM\_TIMEFORMAT property is used to retrieve the
 keywords: ["KSPROPERTY_STREAM_TIMEFORMAT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_STREAM_TIMEFORMAT
 api_location:

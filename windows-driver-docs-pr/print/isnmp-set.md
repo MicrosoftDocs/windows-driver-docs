@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["Set method Print Devices", "Set method Print Devices , ISNMP interface", "ISNMP interface Print Devices , Set method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ISNMP.Set
 api_location:

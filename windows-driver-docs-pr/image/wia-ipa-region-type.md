@@ -4,6 +4,7 @@ description: The WIA_IPA_REGION_TYPE property is reserved by Microsoft for futur
 keywords: ["WIA_IPA_REGION_TYPE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_REGION_TYPE
 api_location:

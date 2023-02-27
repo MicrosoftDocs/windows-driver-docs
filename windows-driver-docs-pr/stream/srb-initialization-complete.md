@@ -4,6 +4,7 @@ description: SRB\_INITIALIZATION\_COMPLETE
 keywords: ["SRB_INITIALIZATION_COMPLETE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SRB_INITIALIZATION_COMPLETE
 api_type:

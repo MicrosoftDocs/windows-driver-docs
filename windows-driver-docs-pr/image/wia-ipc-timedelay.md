@@ -4,6 +4,7 @@ description: The WIA_IPC_TIMEDELAY property is reserved by Microsoft for future 
 keywords: ["WIA_IPC_TIMEDELAY Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPC_TIMEDELAY
 api_location:

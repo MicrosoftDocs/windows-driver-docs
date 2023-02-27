@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_SIGNAL_STRENGTH to determine the carrier
 keywords: ["KSPROPERTY_BDA_SIGNAL_STRENGTH Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_SIGNAL_STRENGTH
 api_location:

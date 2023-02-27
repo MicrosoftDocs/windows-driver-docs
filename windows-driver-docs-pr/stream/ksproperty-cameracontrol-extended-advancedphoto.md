@@ -4,6 +4,7 @@ description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ADVANCEDPHOTO is used to contr
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_ADVANCEDPHOTO Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_ADVANCEDPHOTO
 api_location:

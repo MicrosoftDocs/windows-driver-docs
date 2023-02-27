@@ -4,6 +4,7 @@ description: The KSPROPERTY_DVDCOPY_DVD_KEY1 property retrieves the first bus ke
 keywords: ["KSPROPERTY_DVDCOPY_DVD_KEY1 Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DVDCOPY_DVD_KEY1
 api_location:

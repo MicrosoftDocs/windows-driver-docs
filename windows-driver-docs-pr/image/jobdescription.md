@@ -4,6 +4,7 @@ description: The required JobDescription element contains basic creation informa
 keywords: ["JobDescription element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobDescription
 api_type:

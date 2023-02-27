@@ -43,7 +43,7 @@ You might *not* need to write a driver if:
 
     Loading WinUSB as the function driver provides a simpler alternative to implementing a custom USB driver. For example, WinUSB is the preferred approach for an electronic weather station that is accessed only by an application that is packaged with the device. It is also useful for diagnostic communication with a device and for flashing firmware.
 
-    To make it easy for applications to send requests to Winusb.sys, we provide a user-mode DLL, Winusb.dll, that exposes [WinUSB functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb). An application can call those functions to access the device, configure it, and transfer data to the device’s endpoints.
+    To make it easy for applications to send requests to Winusb.sys, we provide a user-mode DLL, Winusb.dll, that exposes [WinUSB functions](using-winusb-api-to-communicate-with-a-usb-device.md). An application can call those functions to access the device, configure it, and transfer data to the device’s endpoints.
 
     WinUSB is not an option if:
 

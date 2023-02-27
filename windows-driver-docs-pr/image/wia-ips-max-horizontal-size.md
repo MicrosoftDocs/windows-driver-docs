@@ -4,6 +4,7 @@ description: The WIA\_IPS\_MAX\_HORIZONTAL\_SIZE property contains the physical 
 keywords: ["WIA_IPS_MAX_HORIZONTAL_SIZE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_MAX_HORIZONTAL_SIZE
 api_location:

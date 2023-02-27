@@ -4,6 +4,7 @@ description: The WIA\_IPS\_BLANK\_PAGES property is used to configure blank page
 keywords: ["WIA_IPS_BLANK_PAGES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_BLANK_PAGES
 api_location:

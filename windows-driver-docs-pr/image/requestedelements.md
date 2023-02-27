@@ -4,6 +4,7 @@ description: The required RequestedElements element identifies the elements that
 keywords: ["RequestedElements element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn RequestedElements
 api_type:

@@ -4,6 +4,7 @@ description: The required ADFMaximumSize element specifies the largest size docu
 keywords: ["ADFMaximumSize element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ADFMaximumSize
 api_type:

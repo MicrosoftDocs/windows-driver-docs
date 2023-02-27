@@ -4,6 +4,7 @@ description: The required ConditionClearTime element specifies the date and time
 keywords: ["ConditionClearTime element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ConditionClearTime
 api_type:

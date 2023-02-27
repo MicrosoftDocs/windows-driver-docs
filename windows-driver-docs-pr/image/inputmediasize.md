@@ -4,6 +4,7 @@ description: The required InputMediaSize element specifies the size of the media
 keywords: ["InputMediaSize element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn InputMediaSize
 api_type:

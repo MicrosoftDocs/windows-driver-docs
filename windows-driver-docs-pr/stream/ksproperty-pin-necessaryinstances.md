@@ -4,6 +4,7 @@ description: This property returns the minimum number of pins that the pin facto
 keywords: ["KSPROPERTY_PIN_NECESSARYINSTANCES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_PIN_NECESSARYINSTANCES
 api_location:

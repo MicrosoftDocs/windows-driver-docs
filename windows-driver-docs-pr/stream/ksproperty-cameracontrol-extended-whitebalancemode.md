@@ -4,6 +4,7 @@ description: The white balance mode property specifies the whether auto processi
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE
 api_location:

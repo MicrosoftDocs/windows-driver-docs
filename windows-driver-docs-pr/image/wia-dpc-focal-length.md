@@ -4,6 +4,7 @@ description: The WIA_DPC_FOCAL_LENGTH property contains the 35 millimeter (mm)-e
 keywords: ["WIA_DPC_FOCAL_LENGTH Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_FOCAL_LENGTH
 api_location:

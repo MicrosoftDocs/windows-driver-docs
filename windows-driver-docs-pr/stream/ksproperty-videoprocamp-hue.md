@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOPROCAMP\_HUE property controls the hue setting
 keywords: ["KSPROPERTY_VIDEOPROCAMP_HUE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOPROCAMP_HUE
 api_location:

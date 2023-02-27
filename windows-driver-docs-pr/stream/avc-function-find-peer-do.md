@@ -4,6 +4,7 @@ description: The AVC_FUNCTION_FIND_PEER_DO function code locates a nonvirtual av
 keywords: ["AVC_FUNCTION_FIND_PEER_DO Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVC_FUNCTION_FIND_PEER_DO
 api_type:

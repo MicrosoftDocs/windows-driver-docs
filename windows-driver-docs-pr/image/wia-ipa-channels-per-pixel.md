@@ -4,6 +4,7 @@ description: The WIA_IPA_CHANNELS_PER_PIXEL property contains the number of chan
 keywords: ["WIA_IPA_CHANNELS_PER_PIXEL Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_CHANNELS_PER_PIXEL
 api_location:

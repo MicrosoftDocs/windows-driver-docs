@@ -4,6 +4,7 @@ description: User-mode clients use the KSPROPERTY\_TUNER\_MODE property to get o
 keywords: ["KSPROPERTY_TUNER_MODE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TUNER_MODE
 api_location:

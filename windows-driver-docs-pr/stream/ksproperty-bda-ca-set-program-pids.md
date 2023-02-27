@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_CA_SET_PROGRAM_PIDS to set the list of p
 keywords: ["KSPROPERTY_BDA_CA_SET_PROGRAM_PIDS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_CA_SET_PROGRAM_PIDS
 api_location:

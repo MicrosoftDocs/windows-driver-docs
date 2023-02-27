@@ -4,6 +4,7 @@ description: The optional ScanRegionYOffset element specifies the distance from 
 keywords: ["ScanRegionYOffset element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScanRegionYOffset wscn MustHonor "" wscn Override "" wscn UsedDefault ""
 api_type:

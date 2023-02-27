@@ -4,6 +4,7 @@ description: The field of view property describes the current Field of View (FOV
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW
 api_location:

@@ -4,6 +4,7 @@ description: The KSPROPERTY_NUM_SOURCES property specifies the number of input p
 keywords: ["KSPROPERTY_NUM_SOURCES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_NUM_SOURCES
 api_location:

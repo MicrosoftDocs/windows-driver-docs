@@ -1,7 +1,8 @@
 ---
 title: EFI_RNG_PROTOCOL.GetRNG
 description: Retrieves a Random Number Generation (RNG) value.
-ms.date: 08/20/2021
+ms.date: 02/24/2023
+ms.topic: reference
 ---
 
 # EFI_RNG_PROTOCOL.GetRNG

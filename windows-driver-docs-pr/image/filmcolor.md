@@ -4,6 +4,7 @@ description: The required FilmColor element contains the list of color processin
 keywords: ["FilmColor element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn FilmColor
 api_type:

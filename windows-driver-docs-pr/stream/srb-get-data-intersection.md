@@ -4,6 +4,7 @@ description: SRB\_GET\_DATA\_INTERSECTION
 keywords: ["SRB_GET_DATA_INTERSECTION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SRB_GET_DATA_INTERSECTION
 api_type:

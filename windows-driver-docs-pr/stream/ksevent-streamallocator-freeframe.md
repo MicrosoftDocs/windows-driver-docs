@@ -4,6 +4,7 @@ description: The KSEVENT\_STREAMALLOCATOR\_FREEFRAME event can be used to receiv
 keywords: ["KSEVENT_STREAMALLOCATOR_FREEFRAME Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_STREAMALLOCATOR_FREEFRAME
 api_type:

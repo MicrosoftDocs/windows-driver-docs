@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TUNER\_MODE\_CAPS property describes the capabiliti
 keywords: ["KSPROPERTY_TUNER_MODE_CAPS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TUNER_MODE_CAPS
 api_location:

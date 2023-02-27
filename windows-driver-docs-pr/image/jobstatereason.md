@@ -4,6 +4,7 @@ description: The optional JobStateReason element specifies one reason why a job 
 keywords: ["JobStateReason element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobStateReason
 api_type:

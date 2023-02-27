@@ -4,6 +4,7 @@ description: The optional ScannerInfo element contains any administratively assi
 keywords: ["ScannerInfo element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScannerInfo xml lang "..."
 api_type:

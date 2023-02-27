@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_FORMAT\_SPECIFIERS property
 keywords: ["WIA_IPS_PRINTER_ENDORSER_VALID_FORMAT_SPECIFIERS Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PRINTER_ENDORSER_VALID_FORMAT_SPECIFIERS
 api_location:

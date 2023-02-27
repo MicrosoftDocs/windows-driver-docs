@@ -4,20 +4,18 @@ description: Example Passing the IRP Down Without Setting a Completion Routine
 keywords:
 - IRP dispatch routines WDK file system , passing IRP down
 - passing IRPs down device stack WDK
-ms.date: 04/20/2017
+ms.date: 02/23/2023
 ---
 
 # Example: Passing the IRP Down Without Setting a Completion Routine
 
+> [!NOTE]
+> For optimal reliability and performance, use [file system minifilter drivers](./filter-manager-concepts.md) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
-## <span id="ddk_example_passing_the_irp_down_without_setting_a_completion_routine_"></span><span id="DDK_EXAMPLE_PASSING_THE_IRP_DOWN_WITHOUT_SETTING_A_COMPLETION_ROUTINE_"></span>
+To pass the IRP down to lower-level drivers without setting a completion routine, a dispatch routine must do the following actions:
 
-
-To pass the IRP down to lower-level drivers without setting a completion routine, a dispatch routine must do the following:
-
--   Call [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) to remove the current IRP stack location, so that the I/O Manager will not look for a completion routine there when it performs completion processing on the IRP.
-
--   Call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to pass the IRP down to the next lower-level driver.
+- Call [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) to remove the current IRP stack location, so that the I/O Manager doesn't look for a completion routine there when it performs completion processing on the IRP.
+- Call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to pass the IRP down to the next lower-level driver.
 
 This technique is illustrated in the following code examples:
 
@@ -37,15 +35,12 @@ return status;
 
 In these examples, the first parameter in the call to [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) is a pointer to the next-lower-level filter driver's device object. The second parameter is a pointer to the IRP.
 
-### <span id="Advantages_of_This_Approach"></span><span id="advantages_of_this_approach"></span><span id="ADVANTAGES_OF_THIS_APPROACH"></span>Advantages of This Approach
+## Advantages of This Approach
 
-The technique shown above (calling [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation)) is simple and efficient and should be used in all cases where the driver passes the IRP down the driver stack without registering a completion routine.
+Calling [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) is simple and efficient and should be used in all cases where the driver passes the IRP down the driver stack without registering a completion routine.
 
-### <span id="Disadvantages_of_This_Approach"></span><span id="disadvantages_of_this_approach"></span><span id="DISADVANTAGES_OF_THIS_APPROACH"></span>Disadvantages of This Approach
+## Disadvantages of This Approach
 
-After [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) is called, the IRP pointer that was passed to **IoCallDriver** is no longer valid and cannot safely be dereferenced. If the driver needs to perform further processing or cleanup after the IRP has been processed by lower-level drivers, it must set a completion routine before sending the IRP down the driver stack. For more information about writing and setting completion routines, see [Using Completion Routines](using-irp-completion-routines.md).
+After [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) is called, the IRP pointer that was passed to **IoCallDriver** is no longer valid and can't safely be dereferenced. If the driver needs to perform further processing or cleanup after lower-level drivers have processed the IRP, it must set a completion routine before sending the IRP down the driver stack. For more information about writing and setting completion routines, see [Using Completion Routines](using-irp-completion-routines.md).
 
-If you call [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) for an IRP, you cannot set a completion routine for it.
-
- 
-
+If you call [**IoSkipCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioskipcurrentirpstacklocation) for an IRP, you can't set a completion routine for it.

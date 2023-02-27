@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_NODE_EVENTS to retrieve a list of events
 keywords: ["KSPROPERTY_BDA_NODE_EVENTS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_NODE_EVENTS
 api_location:

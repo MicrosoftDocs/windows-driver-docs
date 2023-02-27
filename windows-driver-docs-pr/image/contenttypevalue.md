@@ -4,6 +4,7 @@ description: The required ContentTypeValue element specifies one document conten
 keywords: ["ContentTypeValue element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ContentTypeValue
 api_type:

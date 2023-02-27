@@ -4,6 +4,7 @@ description: The WIA_DPS_DITHER_PATTERN_DATA property is reserved by Microsoft f
 keywords: ["WIA_DPS_DITHER_PATTERN_DATA Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_DITHER_PATTERN_DATA
 api_location:

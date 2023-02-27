@@ -4,6 +4,7 @@ description: The KSPROPERTY_DVDCOPY_TITLE_KEY property retrieves the title key i
 keywords: ["KSPROPERTY_DVDCOPY_TITLE_KEY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DVDCOPY_TITLE_KEY
 api_location:

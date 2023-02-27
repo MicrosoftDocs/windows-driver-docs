@@ -4,6 +4,7 @@ description: The KSPROPERTY_EXTXPORT_LOAD_MEDIUM property sets or gets an extern
 keywords: ["KSPROPERTY_EXTXPORT_LOAD_MEDIUM Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_EXTXPORT_LOAD_MEDIUM
 api_location:

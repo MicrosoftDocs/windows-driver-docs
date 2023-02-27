@@ -4,6 +4,7 @@ description: The required ADFFront element describes the capabilities of the fro
 keywords: ["ADFFront element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ADFFront
 api_type:

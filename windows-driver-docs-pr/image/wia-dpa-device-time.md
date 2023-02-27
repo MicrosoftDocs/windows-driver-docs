@@ -4,6 +4,7 @@ description: The WIA_DPA_DEVICE_TIME property contains the current clock time th
 keywords: ["WIA_DPA_DEVICE_TIME Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPA_DEVICE_TIME
 api_location:

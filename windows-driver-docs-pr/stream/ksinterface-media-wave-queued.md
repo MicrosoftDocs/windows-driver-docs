@@ -4,6 +4,7 @@ description: The KSINTERFACE_MEDIA_WAVE_QUEUED interface is private for Windows 
 keywords: ["KSINTERFACE_MEDIA_WAVE_QUEUED Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSINTERFACE_MEDIA_WAVE_QUEUED
 api_type:

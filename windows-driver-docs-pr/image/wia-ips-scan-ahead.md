@@ -4,6 +4,7 @@ description: The WIA\_IPS\_SCAN\_AHEAD property is used to enable scan ahead in 
 keywords: ["WIA_IPS_SCAN_AHEAD Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_SCAN_AHEAD
 api_location:

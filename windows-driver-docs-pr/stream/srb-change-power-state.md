@@ -4,6 +4,7 @@ description: SRB_CHANGE_POWER_STATE
 keywords: ["SRB_CHANGE_POWER_STATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SRB_CHANGE_POWER_STATE
 api_type:

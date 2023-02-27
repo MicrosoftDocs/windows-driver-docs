@@ -4,6 +4,7 @@ description: The required ScalingWidth element specifies the document scaling in
 keywords: ["ScalingWidth element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScalingWidth wscn Override "" wscn UsedDefault ""
 api_type:

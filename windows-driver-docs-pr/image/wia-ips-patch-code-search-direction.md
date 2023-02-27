@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PATCH\_CODE\_SEARCH\_DIRECTION property is used to co
 keywords: ["WIA_IPS_PATCH_CODE_SEARCH_DIRECTION Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PATCH_CODE_SEARCH_DIRECTION
 api_location:

@@ -4,6 +4,7 @@ description: The WIA_DPS_ENDORSER_STRING property contains a string that is to b
 keywords: ["WIA_DPS_ENDORSER_STRING Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_ENDORSER_STRING
 api_location:

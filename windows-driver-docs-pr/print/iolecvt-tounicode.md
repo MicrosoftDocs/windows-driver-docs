@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["ToUnicode method Print Devices", "ToUnicode method Print Devices , IOleCvt interface", "IOleCvt interface Print Devices , ToUnicode method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IOleCvt.ToUnicode
 api_type:

@@ -4,6 +4,7 @@ description: The required DocumentDescription element defines all of the descrip
 keywords: ["DocumentDescription element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn DocumentDescription
 api_type:

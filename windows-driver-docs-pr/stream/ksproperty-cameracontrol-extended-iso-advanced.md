@@ -4,6 +4,7 @@ description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO\_ADVANCED is an extended p
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_ISO_ADVANCED Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_ISO_ADVANCED
 api_location:

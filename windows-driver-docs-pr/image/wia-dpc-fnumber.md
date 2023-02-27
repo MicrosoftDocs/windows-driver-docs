@@ -4,6 +4,7 @@ description: The WIA_DPC_FNUMBER property corresponds to the aperture of the len
 keywords: ["WIA_DPC_FNUMBER Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_FNUMBER
 api_location:

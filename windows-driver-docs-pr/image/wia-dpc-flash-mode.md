@@ -4,6 +4,7 @@ description: The WIA_DPC_FLASH_MODE property defines the current flash mode sett
 keywords: ["WIA_DPC_FLASH_MODE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_FLASH_MODE
 api_location:

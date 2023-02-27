@@ -7,6 +7,7 @@ MSHAttr:
 keywords: ["AddNull method Print Devices", "AddNull method Print Devices , IPrinterBidiSchemaResponses interface", "IPrinterBidiSchemaResponses interface Print Devices , AddNull method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IPrinterBidiSchemaResponses.AddNull
 api_type:

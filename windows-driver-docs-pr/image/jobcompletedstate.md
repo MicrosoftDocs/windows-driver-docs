@@ -4,6 +4,7 @@ description: The required JobCompletedState element specifies a job's final job 
 keywords: ["JobCompletedState element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobCompletedState
 api_type:

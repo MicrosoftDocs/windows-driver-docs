@@ -4,6 +4,7 @@ description: The WIA minidriver uses the WIA\_IPS\_SUPPORTED\_PATCH\_CODE\_TYPES
 keywords: ["WIA_IPS_SUPPORTED_PATCH_CODE_TYPES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_SUPPORTED_PATCH_CODE_TYPES
 api_location:

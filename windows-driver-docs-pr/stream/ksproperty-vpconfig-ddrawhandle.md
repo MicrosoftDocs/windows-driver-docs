@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VPCONFIG\_DDRAWHANDLE property returns the Microsof
 keywords: ["KSPROPERTY_VPCONFIG_DDRAWHANDLE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VPCONFIG_DDRAWHANDLE
 api_location:

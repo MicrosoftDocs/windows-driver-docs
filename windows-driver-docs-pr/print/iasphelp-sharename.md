@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_ShareName method Print Devices", "get_ShareName method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_ShareName method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_ShareName
 api_type:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TUNER\_SCAN\_STATUS property describes the status o
 keywords: ["KSPROPERTY_TUNER_SCAN_STATUS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TUNER_SCAN_STATUS
 api_location:

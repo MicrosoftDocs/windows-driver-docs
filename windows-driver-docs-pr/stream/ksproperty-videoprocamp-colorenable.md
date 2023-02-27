@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOPROCAMP\_COLORENABLE property controls the col
 keywords: ["KSPROPERTY_VIDEOPROCAMP_COLORENABLE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOPROCAMP_COLORENABLE
 api_location:

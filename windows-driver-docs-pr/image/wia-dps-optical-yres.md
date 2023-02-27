@@ -4,6 +4,7 @@ description: The WIA_DPS_OPTICAL_YRES property contains the highest-supported ve
 keywords: ["WIA_DPS_OPTICAL_YRES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_OPTICAL_YRES
 api_location:

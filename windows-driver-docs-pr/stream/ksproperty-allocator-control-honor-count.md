@@ -4,6 +4,7 @@ description: The KSPROPERTY_ALLOCATOR_CONTROL_HONOR_COUNT property informs the O
 keywords: ["KSPROPERTY_ALLOCATOR_CONTROL_HONOR_COUNT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_ALLOCATOR_CONTROL_HONOR_COUNT
 api_location:

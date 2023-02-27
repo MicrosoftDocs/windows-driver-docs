@@ -4,6 +4,7 @@ description: The OS uses the KSPROPERTY_PIN_PROPOSEDATAFORMAT2 property to deter
 keywords: ["KSPROPERTY_PIN_PROPOSEDATAFORMAT2 Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_PIN_PROPOSEDATAFORMAT2
 api_location:

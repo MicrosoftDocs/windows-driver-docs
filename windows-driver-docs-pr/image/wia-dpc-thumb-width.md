@@ -4,6 +4,7 @@ description: The WIA_DPC_THUMB_WIDTH property defines the width, in pixels, of a
 keywords: ["WIA_DPC_THUMB_WIDTH Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_THUMB_WIDTH
 api_location:

@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_LongPaperName method Print Devices", "get_LongPaperName method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_LongPaperName method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_LongPaperName
 api_type:

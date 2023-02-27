@@ -4,6 +4,7 @@ description: The WIA_DIP_BAUDRATE property contains the current baud rate settin
 keywords: ["WIA_DIP_BAUDRATE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DIP_BAUDRATE
 api_location:

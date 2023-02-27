@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_SNMPSupported method Print Devices", "get_SNMPSupported method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_SNMPSupported method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_SNMPSupported
 api_type:

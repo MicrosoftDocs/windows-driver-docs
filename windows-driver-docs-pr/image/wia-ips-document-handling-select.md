@@ -4,6 +4,7 @@ description: The WIA\_IPS\_DOCUMENT\_HANDLING\_SELECT property contains the curr
 keywords: ["WIA_IPS_DOCUMENT_HANDLING_SELECT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_DOCUMENT_HANDLING_SELECT
 api_location:

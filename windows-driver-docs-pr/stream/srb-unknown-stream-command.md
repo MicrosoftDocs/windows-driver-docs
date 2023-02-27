@@ -4,6 +4,7 @@ description: SRB\_UNKNOWN\_STREAM\_COMMAND
 keywords: ["SRB_UNKNOWN_STREAM_COMMAND Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SRB_UNKNOWN_STREAM_COMMAND
 api_type:

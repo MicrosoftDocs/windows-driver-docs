@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VPCONFIG\_VIDEOPORTID property returns the Microsof
 keywords: ["KSPROPERTY_VPCONFIG_VIDEOPORTID Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VPCONFIG_VIDEOPORTID
 api_location:

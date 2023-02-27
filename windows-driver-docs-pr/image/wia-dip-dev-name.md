@@ -4,6 +4,7 @@ description: The WIA_DIP_DEV_NAME property contains the name of a device. The WI
 keywords: ["WIA_DIP_DEV_NAME Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DIP_DEV_NAME
 api_location:

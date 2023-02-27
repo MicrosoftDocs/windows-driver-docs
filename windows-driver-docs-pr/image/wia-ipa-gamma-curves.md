@@ -4,6 +4,7 @@ description: The WIA_IPA_GAMMA_CURVES property is reserved by Microsoft for futu
 keywords: ["WIA_IPA_GAMMA_CURVES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_GAMMA_CURVES
 api_location:

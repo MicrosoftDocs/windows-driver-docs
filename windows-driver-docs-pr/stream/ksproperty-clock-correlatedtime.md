@@ -4,6 +4,7 @@ description: Clients use the KSPROPERTY_CLOCK_CORRELATEDTIME property to compare
 keywords: ["KSPROPERTY_CLOCK_CORRELATEDTIME Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CLOCK_CORRELATEDTIME
 api_location:

@@ -4,6 +4,7 @@ description: The TVOT_EDITBOX option type consists of an edit box inside a group
 keywords: ["TVOT_EDITBOX Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TVOT_EDITBOX
 api_location:

@@ -4,6 +4,7 @@ description: The exposure control property specifies the whether auto processing
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE
 api_location:

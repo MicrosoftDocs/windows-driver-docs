@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_Color method Print Devices", "get_Color method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_Color method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_Color
 api_type:

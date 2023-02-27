@@ -4,6 +4,7 @@ description: The AVC_FUNCTION_COMMAND function code is used to send an AV/C requ
 keywords: ["AVC_FUNCTION_COMMAND Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVC_FUNCTION_COMMAND
 api_type:

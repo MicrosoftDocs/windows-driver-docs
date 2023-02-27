@@ -4,6 +4,7 @@ description: The required DocumentSizeAutoDetectSupported element indicates whet
 keywords: ["DocumentSizeAutoDetectSupported element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn DocumentSizeAutoDetectSupported
 api_type:

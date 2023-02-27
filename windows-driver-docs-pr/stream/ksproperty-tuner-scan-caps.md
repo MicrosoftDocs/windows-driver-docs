@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TUNER\_SCAN\_CAPS property describes the scanning c
 keywords: ["KSPROPERTY_TUNER_SCAN_CAPS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TUNER_SCAN_CAPS
 api_location:

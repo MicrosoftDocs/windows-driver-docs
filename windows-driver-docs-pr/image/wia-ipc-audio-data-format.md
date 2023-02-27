@@ -4,6 +4,7 @@ description: The WIA\_IPC\_AUDIO\_DATA\_FORMAT property is obsolete and should n
 keywords: ["WIA_IPC_AUDIO_DATA_FORMAT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPC_AUDIO_DATA_FORMAT
 api_location:

@@ -4,6 +4,7 @@ description: The WIA\_IPS\_ENABLED\_PATCH\_CODE\_TYPES property is used to selec
 keywords: ["WIA_IPS_ENABLED_PATCH_CODE_TYPES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_ENABLED_PATCH_CODE_TYPES
 api_location:

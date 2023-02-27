@@ -4,6 +4,7 @@ description: The WIA_IPA_ITEM_FLAGS property contains the descriptive flags for 
 keywords: ["WIA_IPA_ITEM_FLAGS Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_ITEM_FLAGS
 api_location:

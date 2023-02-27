@@ -7,6 +7,7 @@ MSHAttr:
 keywords: ["AddBool method Print Devices", "AddBool method Print Devices , IPrinterBidiSchemaResponses interface", "IPrinterBidiSchemaResponses interface Print Devices , AddBool method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IPrinterBidiSchemaResponses.AddBool
 api_type:

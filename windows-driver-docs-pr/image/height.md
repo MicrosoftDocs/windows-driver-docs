@@ -4,6 +4,7 @@ description: The Height element specifies a height value that the scan device su
 keywords: ["Height element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Height wscn Override "" wscn UsedDefault ""
 api_type:

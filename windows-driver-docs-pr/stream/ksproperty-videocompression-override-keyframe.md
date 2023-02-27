@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOCOMPRESSION\_OVERRIDE\_KEYFRAME property tempo
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_OVERRIDE_KEYFRAME Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOCOMPRESSION_OVERRIDE_KEYFRAME
 api_location:

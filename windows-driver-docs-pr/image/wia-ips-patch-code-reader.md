@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PATCH\_CODE\_READER property is used to enable patch 
 keywords: ["WIA_IPS_PATCH_CODE_READER Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PATCH_CODE_READER
 api_location:

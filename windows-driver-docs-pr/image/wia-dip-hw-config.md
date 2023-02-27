@@ -4,6 +4,7 @@ description: The WIA_DIP_HW_CONFIG property indicates the type of connection tha
 keywords: ["WIA_DIP_HW_CONFIG Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DIP_HW_CONFIG
 api_location:

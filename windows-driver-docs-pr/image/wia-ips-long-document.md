@@ -4,6 +4,7 @@ description: The WIA\_IPS\_LONG\_DOCUMENT property is used by the WIA minidriver
 keywords: ["WIA_IPS_LONG_DOCUMENT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_LONG_DOCUMENT
 api_location:

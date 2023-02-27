@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_GUARD_INTERVAL to control the setting fo
 keywords: ["KSPROPERTY_BDA_GUARD_INTERVAL Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_GUARD_INTERVAL
 api_location:

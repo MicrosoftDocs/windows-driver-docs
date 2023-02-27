@@ -4,6 +4,7 @@ description: The WIA\_IPS\_MULTI\_FEED\_SENSITIVITY property is used to change t
 keywords: ["WIA_IPS_MULTI_FEED_SENSITIVITY Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_MULTI_FEED_SENSITIVITY
 api_location:

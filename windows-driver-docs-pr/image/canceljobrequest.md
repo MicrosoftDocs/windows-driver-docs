@@ -4,6 +4,7 @@ description: The required CancelJobRequest operation enables a client to cancel 
 keywords: ["CancelJobRequest element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn CancelJobRequest
 api_type:

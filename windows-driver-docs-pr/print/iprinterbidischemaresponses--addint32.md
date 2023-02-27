@@ -7,6 +7,7 @@ MSHAttr:
 keywords: ["AddInt32 method Print Devices", "AddInt32 method Print Devices , IPrinterBidiSchemaResponses interface", "IPrinterBidiSchemaResponses interface Print Devices , AddInt32 method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IPrinterBidiSchemaResponses.AddInt32
 api_type:

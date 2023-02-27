@@ -4,6 +4,7 @@ description: The required JobStatus element contains all information about the s
 keywords: ["JobStatus element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobStatus
 api_type:

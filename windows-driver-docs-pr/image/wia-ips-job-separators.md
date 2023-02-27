@@ -4,6 +4,7 @@ description: The WIA\_IPS\_JOB\_SEPARATORS property is used to enable the detect
 keywords: ["WIA_IPS_JOB_SEPARATORS Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_JOB_SEPARATORS
 api_location:

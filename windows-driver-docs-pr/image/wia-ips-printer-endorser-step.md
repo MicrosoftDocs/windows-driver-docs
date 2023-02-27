@@ -4,6 +4,7 @@ description: By default the imprinter/endorser imprints or endorses on each docu
 keywords: ["WIA_IPS_PRINTER_ENDORSER_STEP Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PRINTER_ENDORSER_STEP
 api_location:

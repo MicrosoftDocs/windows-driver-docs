@@ -4,6 +4,7 @@ description: The required ScannerElementsChangeEvent element informs the client 
 keywords: ["ScannerElementsChangeEvent element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScannerElementsChangeEvent
 api_type:

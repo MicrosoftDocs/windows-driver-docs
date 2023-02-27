@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PREVIEW property indicates the preview mode for a dev
 keywords: ["WIA_IPS_PREVIEW Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PREVIEW
 api_location:

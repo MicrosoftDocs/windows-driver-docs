@@ -1,7 +1,8 @@
 ---
 title: EFI_USBFN_TRANSFER_RESULT
 description: The EFI_USBFN_TRANSFER_RESULT structure contains information about data transmitted to or received from the host.
-ms.date: 08/23/2021
+ms.date: 02/24/2023
+ms.topic: reference
 ---
 
 # EFI_USBFN_TRANSFER_RESULT

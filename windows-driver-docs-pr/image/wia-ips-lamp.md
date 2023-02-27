@@ -4,6 +4,7 @@ description: The WIA\_IPS\_LAMP property contains the current configuration sett
 keywords: ["WIA_IPS_LAMP Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_LAMP
 api_location:

@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_MAX\_WIDTH property alon
 keywords: ["WIA_IPS_PRINTER_ENDORSER_GRAPHICS_MAX_WIDTH Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PRINTER_ENDORSER_GRAPHICS_MAX_WIDTH
 api_location:

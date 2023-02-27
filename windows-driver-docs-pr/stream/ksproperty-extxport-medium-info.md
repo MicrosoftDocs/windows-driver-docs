@@ -4,6 +4,7 @@ description: The KSPROPERTY_EXTXPORT_MEDIUM_INFO property retrieves information 
 keywords: ["KSPROPERTY_EXTXPORT_MEDIUM_INFO Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_EXTXPORT_MEDIUM_INFO
 api_location:

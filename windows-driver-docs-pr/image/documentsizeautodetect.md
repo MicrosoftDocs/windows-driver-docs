@@ -4,6 +4,7 @@ description: The optional DocumentSizeAutoDetect element specifies whether the s
 keywords: ["DocumentSizeAutoDetect element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn DocumentSizeAutoDetect
 api_type:

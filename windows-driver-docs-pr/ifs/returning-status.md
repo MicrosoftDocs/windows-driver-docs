@@ -5,23 +5,14 @@ keywords:
 - status values WDK file system
 - success status values WDK file system
 - returning status WDK file system
-ms.date: 04/20/2017
+ms.date: 02/23/2023
 ---
 
 # Returning Status
 
+> [!NOTE]
+> For optimal reliability and performance, use [file system minifilter drivers](./filter-manager-concepts.md) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
-## <span id="ddk_returning_status_if"></span><span id="DDK_RETURNING_STATUS_IF"></span>
+A legacy file system filter driver's **DriverEntry** routine normally returns STATUS_SUCCESS. However, if driver initialization fails, the **DriverEntry** routine should return an appropriate error status value.
 
-
-A file system filter driver's **DriverEntry** routine normally returns STATUS\_SUCCESS. However, if driver initialization fails, the **DriverEntry** routine should return an appropriate error status value.
-
-If the **DriverEntry** routine returns a status value that is not a success status value, the system responds by unloading the driver. For this reason, the **DriverEntry** routine must always free any memory that was allocated for system resources, such as device objects, before returning a status value that is not a success status value.
-
- 
-
- 
-
-
-
-
+If the **DriverEntry** routine returns a status value that isn't a success status value, the system responds by unloading the driver. For this reason, the **DriverEntry** routine must always free any memory that was allocated for system resources, such as device objects, before returning a status value that isn't a success status value.

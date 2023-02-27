@@ -4,6 +4,7 @@ description: This property selects the ISO setting for the camera. The ISO setti
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_ISO Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_ISO
 api_location:

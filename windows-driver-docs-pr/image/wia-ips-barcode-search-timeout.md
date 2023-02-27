@@ -4,6 +4,7 @@ description: The WIA\_IPS\_BARCODE\_SEARCH\_TIMEOUT property describes the maxim
 keywords: ["WIA_IPS_BARCODE_SEARCH_TIMEOUT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_BARCODE_SEARCH_TIMEOUT
 api_location:

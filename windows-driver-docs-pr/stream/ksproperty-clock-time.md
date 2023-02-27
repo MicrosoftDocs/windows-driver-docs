@@ -4,6 +4,7 @@ description: Clients use the KSPROPERTY_CLOCK_TIME property to determine the cur
 keywords: ["KSPROPERTY_CLOCK_TIME Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CLOCK_TIME
 api_location:

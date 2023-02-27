@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_MibErrorDscp method Print Devices", "get_MibErrorDscp method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_MibErrorDscp method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_MibErrorDscp
 api_type:

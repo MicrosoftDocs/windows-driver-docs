@@ -4,6 +4,7 @@ description: The WIA_IPA_FORMAT property contains the current format of the imag
 keywords: ["WIA_IPA_FORMAT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_FORMAT
 api_location:

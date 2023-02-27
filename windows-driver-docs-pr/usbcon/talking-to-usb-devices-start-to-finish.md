@@ -1,387 +1,328 @@
 ---
-description: Use the Windows Runtime APIs, introduced in Windows 8.1, to write UWP apps that gives users access to their peripheral USB device.
 title: Talking to USB devices, start to finish (UWP app)
-ms.date: 04/20/2017
+description: This article provides an end-to-end walkthrough for creating a UWP app that talks to a USB device.
+ms.date: 02/22/2023
 ---
 
 # Talking to USB devices, start to finish (UWP app)
 
+This article provides an end-to-end walkthrough of creating a UWP app that talks to a USB device.
 
-**Summary**
+Use the Windows Runtime APIs to write UWP apps that give users access to their peripheral USB device. Such apps can connect to a device based on user-specified criteria, get information about the device, send data to the device and conversely get data streams from the device, and poll the device for interrupt data.
 
--   End-to-end walkthrough for creating a UWP app that talks to a USB device
--   **Companion sample**: [Custom USB device access sample](/samples/browse/)
+Here, we describe how your UWP app can implement those tasks, and link to examples that demonstrate the use of classes included in **[Windows.Devices.Usb](/uwp/api/Windows.Devices.Usb)**. We'll go over the device capabilities required in the app manifest and how to launch the app when the device connects. And we'll show how to run a data transfer task in the background even when the app suspends to conserve battery life.
 
-**Important APIs**
+## Walkthrough—Writing a UWP app for USB devices
 
--   [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb)
--   [**Windows.Devices.Enumeration**](/uwp/api/Windows.Devices.Enumeration)
--   [**Windows.Devices.Background**](/uwp/api/Windows.Devices.Background)
+Follow the steps in this article or, skip directly to the [Custom USB device access sample](/samples/browse/). The companion sample implements all the steps here, but to keep things moving, we don't walk through the code. Certain steps have a **Find it in the sample** section to help you find the code quickly. The structure of the sample's source files is simple and flat so you can easily find code without having to drill down through multiple layers of source files. But you may prefer to break up and organize your own project differently.
 
-Use the Windows Runtime APIs, introduced in Windows 8.1, to write UWP apps that gives users access to their peripheral USB device. Such apps can connect to a device based on user-specified criteria, get information about the device, send data to the device and conversely get data streams from the device, and poll the device for interrupt data.
+## Install the Microsoft WinUSB driver
 
-Here we describe, how your UWP app using C++, C#, or Visual Basic app can implement those tasks, and link to examples that demonstrate the use of classes included in [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb). We'll go over the device capabilities required in the app manifest and how to launching the app when the device is connected. And we'll show how to run a data transfer task in the background even when the app is suspended to conserve battery life.
+Install the Microsoft-provided WinUSB driver as function driver for your device.
 
-Follow the steps in this section or, skip directly to the [Custom USB device access sample](/samples/browse/). The companion sample implements all the steps here, but to keep things moving we won't walk through the code. Certain steps have a **Find it in the sample** section to help you find the code quickly. The structure of the sample's source files is simple and flat so you can easily find code without having to drill down through multiple layers of source files. But you may prefer to break up and organize your own project differently.
+**QuickStart:** [WinUSB (Winusb.sys) installation](winusb-installation.md)
 
-## In this section
+You can install Winusb.sys in these ways:
 
+- When you connect your device, you might notice that Windows loads Winusb.sys automatically because the device is a [WinUSB Device](automatic-installation-of-winusb.md).
+- Install the driver by specifying the system-provided device class in Device Manager.
+- Install the driver by using a custom INF. You can get the INF in either of these two ways:
+  - Get the INF from the hardware vendor.
+  - Write a custom INF that references the Microsoft-provided Winusb.inf file. For more information, see [WinUSB (Winusb.sys) installation](winusb-installation.md).
 
--   [**Step 1**—Install the Microsoft-provided WinUSB driver as function driver for your device.](#step1)
--   [**Step 2**—Get the device interface GUID, hardware ID, and device class information about your device.](#step2)
--   [**Step 3**—Determine whether the device class, subclass, and protocol allowed by the Windows Runtime USB API set.](#step3)
--   [**Step 4**—Create a basic Microsoft Visual Studio 2013 project that you can extend in this tutorial.](#step4)
--   [**Step 5**—Add USB device capabilities to the app manifest.](#step5)
--   [**Step 6**—Extend the app to open the device for communication.](#step6)
--   [**Step 7**—Study your USB device layout. (Recommended)](#step7)
--   [**Step 8**—Extend the app to get and show USB descriptors in the UI.](#step8)
--   [**Step 9**—Extend the app to send vendor-defined USB control transfers.](#step9)
--   [**Step 10**—Extend the app to read or write bulk data.](#step10)
--   [**Step 11**—Extend the app to get hardware interrupt data.](#step11)
--   [**Step 12**—Extend the app to select an interface setting that is not currently active.](#step12)
--   [**Step 13**—Close the device.](#step13)
--   [**Step 14**—Create a device metadata package for the app.](#step14)
--   [**Step 15**—Extend the app to implement AutoPlay activation so that the app is launched when the device is connected to the system.](#step15)
--   [**Step 16**—Extend the app to implement a background task that can perform lengthy USB transfers to the device, such as firmware update without the app getting suspended.](#step16)
--   [**Step 17**—Run Windows App Certification Kit.](#step17)
+## Get information about your device
 
-## Walkthrough—Writing UWP app for USB devices
+Get the device interface GUID, hardware ID, and device class information about your device.
 
+You can obtain that information from the device manufacturer.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Step</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="" id="step1"></a>
-<p><strong>Step 1</strong>—Install the Microsoft-provided WinUSB driver as function driver for your device.</p></td>
-<td><p><strong>QuickStart:</strong> <a href="winusb-installation.md" data-raw-source="[WinUSB (Winusb.sys) Installation](winusb-installation.md)">WinUSB (Winusb.sys) Installation</a></p>
-<p>You can install Winusb.sys in these ways:</p>
-<ul>
-<li>When you connect your device, you might notice that Windows loads Winusb.sys automatically because the device is a <a href="automatic-installation-of-winusb.md" data-raw-source="[WinUSB Device](automatic-installation-of-winusb.md)">WinUSB Device</a>.</li>
-<li>Install the driver by specifying the system-provided device class in Device Manager.</li>
-<li>Install the driver by using a custom INF. You can get the INF in either of these two ways:
-<ul>
-<li>Get the INF from the hardware vendor.</li>
-<li>Write a custom INF that references the Microsoft-provided Winusb.inf file. For more information, see <a href="winusb-installation.md" data-raw-source="[WinUSB (Winusb.sys) Installation](winusb-installation.md)">WinUSB (Winusb.sys) Installation</a>.</li>
-</ul></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><a href="" id="step2"></a>
-<p><strong>Step 2</strong>—Get the device interface GUID, hardware ID, and device class information about your device.</p></td>
-<td><p>You can obtain that information from the device manufacturer.</p>
-<ul>
-<li><p><strong>Vendor and product identifiers</strong></p>
-<p>In Device Manager, view the device properties. On the <strong>Details</strong> tab, view the <strong>Hardware Id</strong> property value. That value is a combination of those two identifiers. For example, for the SuperMUTT device, the <strong>Hardware Id</strong> is "USB\VID_045E&PID_F001"; vendor ID is "0x045E" and product ID is "0xF001".</p></li>
-<li><strong>Device class, subclass, and protocol codes</strong></li>
-<li><strong>Device interface GUID</strong></li>
-</ul>
-Alternatively, you can view information the registry. For more information, see <a href="usb-device-specific-registry-settings.md" data-raw-source="[USB Device Registry Entries](usb-device-specific-registry-settings.md)">USB Device Registry Entries</a>.</td>
-</tr>
-<tr class="odd">
-<td><a href="" id="step3"></a>
-<p><strong>Step 3</strong>—Determine whether the device class, subclass, and protocol allowed by the Windows Runtime USB API set.</p></td>
-<td><p>You can write a UWP app, if device class, subclass, and protocol code of the device is one of the following:</p>
-<ul>
-<li><code>name:cdcControl,           classId:02 * *</code></li>
-<li><code>name:physical, classId:05 * *</code></li>
-<li><code>name:personalHealthcare,   classId:0f 00 00</code></li>
-<li><code>name:activeSync,           classId:ef 01 01</code></li>
-<li><code>name:palmSync,             classId:ef 01 02</code></li>
-<li><code>name:deviceFirmwareUpdate, classId:fe 01 01</code></li>
-<li><code>name:irda,                 classId:fe 02 00     </code></li>
-<li><code>name:measurement,          classId:fe 03 *</code></li>
-<li><code>name:vendorSpecific,       classId:ff * *</code></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><a href="" id="step4"></a>
-<p><strong>Step 4</strong>—Create a basic Visual Studio 2013 project that you can extend in this tutorial.</p></td>
-<td>For more information, see <a href="/windows/uwp/get-started/" data-raw-source="[Getting started with UWP apps](/windows/uwp/get-started/)">Getting started with UWP apps</a>.</td>
-</tr>
-<tr class="odd">
-<td><a href="" id="step5"></a>
-<p><strong>Step 5</strong>—Add USB device capabilities to the app manifest.</p></td>
-<td><p><strong>QuickStart:</strong> <a href="updating-the-app-manifest-with-usb-device-capabilities.md" data-raw-source="[How to add USB device capabilities to the app manifest](updating-the-app-manifest-with-usb-device-capabilities.md)">How to add USB device capabilities to the app manifest</a></p>
-<p>Open your Package.appxmanifest file in a text editor and add the <a href="/uwp/schemas/appxpackage/appxmanifestschema/element-devicecapability" data-raw-source="[&lt;strong&gt;DeviceCapability&lt;/strong&gt;](/uwp/schemas/appxpackage/appxmanifestschema/element-devicecapability)"><strong>DeviceCapability</strong></a> element with <strong>Name</strong> attribute set to "usb" as shown in this example.</p>
-<div class="alert">
-<strong>Note</strong>  You cannot modify the USB device capability in Visual Studio 2013. You must select and hold (or right-click) the Package.appxmanifest file in <strong>Solution Explorer</strong> and select <strong>Open With...</strong>, and then <strong>XML (Text) Editor</strong>. The file opens in plain XML.
-</div>
-<div>
- 
-</div>
-<pre class="syntax"><code>&lt;Capabilities&gt;
-      &lt;!--When the device's classId is FF * *, there is a predefined name for the class. 
-          You can use the name instead of the class id. 
-          There are also other predefined names that correspond to a classId.--&gt;
-      &lt;m2:DeviceCapability Name="usb"&gt;
-          &lt;!--SuperMutt Device--&gt;
-          &lt;m2:Device Id="vidpid:045E 0611"&gt;
-              &lt;!--&lt;wb:Function Type="classId:ff * *"/&gt;--&gt;
-              &lt;m2:Function Type="name:vendorSpecific"/&gt;
-          &lt;/m2:Device&gt;
-      &lt;/m2:DeviceCapability&gt;
-  &lt;/Capabilities&gt;</code></pre>
-<div class="code">
+- **Vendor and product identifiers**
 
-</div>
-<p><strong>Find it in the sample:</strong> The USB device capabilities are added in the Package.appxmanifest file.</p></td>
-</tr>
-<tr class="even">
-<td><a href="" id="step6"></a>
-<p><strong>Step 6</strong>— Extend the app to open the device for communication.</p></td>
-<td><p><strong>Quickstart:</strong> <a href="how-to-connect-to-a-usb-device--uwp-app-.md" data-raw-source="[How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--uwp-app-.md)">How to connect to a USB device (UWP app)</a></p>
-<ol>
-<li>Find the device by building an Advanced Query Syntax (AQS) string that contains search criteria for finding the device in the enumerated device collection.</li>
-<li>Open the device in one of two ways:
-<ul>
-<li><p>Passing the AQS to <a href="/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_FindAllAsync_System_String_" data-raw-source="[&lt;strong&gt;FindAllAsync&lt;/strong&gt;](/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_FindAllAsync_System_String_)"><strong>FindAllAsync</strong></a> and get the <a href="/uwp/api/Windows.Devices.Enumeration.DeviceInformation" data-raw-source="[&lt;strong&gt;DeviceInformation&lt;/strong&gt;](/uwp/api/Windows.Devices.Enumeration.DeviceInformation)"><strong>DeviceInformation</strong></a> object for the device.</p>
-<p>For more information, see <a href="/previous-versions/windows/apps/hh872189(v=win.10)" data-raw-source="[Quickstart: enumerating commonly used devices](/previous-versions/windows/apps/hh872189(v=win.10))">Quickstart: enumerating commonly used devices</a>.</p></li>
-<li>By using a <a href="/uwp/api/Windows.Devices.Enumeration.DeviceWatcher" data-raw-source="[&lt;strong&gt;DeviceWatcher&lt;/strong&gt;](/uwp/api/Windows.Devices.Enumeration.DeviceWatcher)"><strong>DeviceWatcher</strong></a> object to detect when the device is added to or removed from the system.
-<ol>
-<li>Pass the AQS to <a href="/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_CreateWatcher" data-raw-source="[&lt;strong&gt;CreateWatcher&lt;/strong&gt;](/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_CreateWatcher)"><strong>CreateWatcher</strong></a> and get a <a href="/uwp/api/Windows.Devices.Enumeration.DeviceWatcher" data-raw-source="[&lt;strong&gt;DeviceWatcher&lt;/strong&gt;](/uwp/api/Windows.Devices.Enumeration.DeviceWatcher)"><strong>DeviceWatcher</strong></a> object.</li>
-<li>Register event handlers on the <a href="/uwp/api/Windows.Devices.Enumeration.DeviceWatcher" data-raw-source="[&lt;strong&gt;DeviceWatcher&lt;/strong&gt;](/uwp/api/Windows.Devices.Enumeration.DeviceWatcher)"><strong>DeviceWatcher</strong></a> object.</li>
-<li>Get the <a href="/uwp/api/Windows.Devices.Enumeration.DeviceInformation" data-raw-source="[&lt;strong&gt;DeviceInformation&lt;/strong&gt;](/uwp/api/Windows.Devices.Enumeration.DeviceInformation)"><strong>DeviceInformation</strong></a> object for the device in your <a href="/uwp/api/Windows.Devices.Enumeration.DeviceWatcher#Windows_Devices_Enumeration_DeviceWatcher_Added" data-raw-source="[&lt;strong&gt;Added&lt;/strong&gt;](/uwp/api/Windows.Devices.Enumeration.DeviceWatcher#Windows_Devices_Enumeration_DeviceWatcher_Added)"><strong>Added</strong></a> event handler.</li>
-<li>Start and stop the <a href="/uwp/api/Windows.Devices.Enumeration.DeviceWatcher" data-raw-source="[&lt;strong&gt;DeviceWatcher&lt;/strong&gt;](/uwp/api/Windows.Devices.Enumeration.DeviceWatcher)"><strong>DeviceWatcher</strong></a> object.</li>
-</ol>
-For more information, see <a href="/previous-versions/windows/apps/hh967756(v=win.10)" data-raw-source="[How to get notifications if devices are added, removed, or changed](/previous-versions/windows/apps/hh967756(v=win.10))">How to get notifications if devices are added, removed, or changed</a>.</li>
-</ul></li>
-<li>Get the device instance from the <a href="/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_Id" data-raw-source="[&lt;strong&gt;DeviceInformation.Id&lt;/strong&gt;](/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_Id)"><strong>DeviceInformation.Id</strong></a> property.</li>
-<li>Call <a href="/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_FromIdAsync_System_String_" data-raw-source="[&lt;strong&gt;FromIdAsync&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_FromIdAsync_System_String_)"><strong>FromIdAsync</strong></a> by passing the device instance string and get the <a href="/uwp/api/Windows.Devices.Usb.UsbDevice" data-raw-source="[&lt;strong&gt;UsbDevice&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbDevice)"><strong>UsbDevice</strong></a> object.</li>
-</ol>
-<p><strong>Find it in the sample:</strong> See files named Scenario1_DeviceConnect.</p></td>
-</tr>
-<tr class="odd">
-<td><a href="" id="step7"></a>
-<p><strong>Step 7</strong>(Recommended)—Study your <a href="usb-device-layout.md" data-raw-source="[USB device layout](usb-device-layout.md)">USB device layout</a>.</p></td>
-<td><p>Review basic USB concepts about configuring the device and performing data transfers: <a href="usb-concepts-for-all-developers.md" data-raw-source="[Concepts for all USB developers](usb-concepts-for-all-developers.md)">Concepts for all USB developers</a>.</p>
-<p>View the device configuration descriptor, interface descriptors for each supported alternate settings, and their endpoint descriptors. By using <a href="/windows-hardware/drivers/debugger/usbview" data-raw-source="[USBView](../debugger/usbview.md)">USBView</a>, you can browse all USB controllers and the USB devices connected to them, and also inspect the device configuration.</p></td>
-</tr>
-<tr class="even">
-<td><a href="" id="step8"></a>
-<p><strong>Step 8</strong>— Extend the app to get and show USB descriptors in the UI.</p></td>
-<td><p><strong>Quickstart:</strong> <a href="how-to-get-usb-descriptors--uwp-app-.md" data-raw-source="[How to get USB descriptors (UWP app)](how-to-get-usb-descriptors--uwp-app-.md)">How to get USB descriptors (UWP app)</a></p>
-<p></p>
-<ul>
-<li>Get the device descriptor by getting the <a href="/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_DeviceDescriptor" data-raw-source="[&lt;strong&gt;UsbDevice.DeviceDescriptor&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_DeviceDescriptor)"><strong>UsbDevice.DeviceDescriptor</strong></a> value.</li>
-<li>Get the configuration descriptor by getting the <a href="/uwp/api/Windows.Devices.Usb.UsbConfiguration#Windows_Devices_Usb_UsbConfiguration_ConfigurationDescriptor" data-raw-source="[&lt;strong&gt;UsbConfiguration.ConfigurationDescriptor&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbConfiguration#Windows_Devices_Usb_UsbConfiguration_ConfigurationDescriptor)"><strong>UsbConfiguration.ConfigurationDescriptor</strong></a> value.
-<ul>
-<li>Get the full configuration descriptor set by getting the <a href="/uwp/api/Windows.Devices.Usb.UsbConfiguration#Windows_Devices_Usb_UsbConfiguration_Descriptors" data-raw-source="[&lt;strong&gt;UsbConfiguration.Descriptors&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbConfiguration#Windows_Devices_Usb_UsbConfiguration_Descriptors)"><strong>UsbConfiguration.Descriptors</strong></a> property.</li>
-</ul></li>
-<li>Get the array of interfaces within the configuration by getting the <a href="/uwp/api/Windows.Devices.Usb.UsbConfiguration#Windows_Devices_Usb_UsbConfiguration_UsbInterfaces" data-raw-source="[&lt;strong&gt;UsbConfiguration.UsbInterfaces&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbConfiguration#Windows_Devices_Usb_UsbConfiguration_UsbInterfaces)"><strong>UsbConfiguration.UsbInterfaces</strong></a> property.</li>
-<li>Get the array of alternate settings by getting <a href="/uwp/api/Windows.Devices.Usb.UsbInterface#Windows_Devices_Usb_UsbInterface_InterfaceSettings" data-raw-source="[&lt;strong&gt;UsbInterface.InterfaceSettings&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbInterface#Windows_Devices_Usb_UsbInterface_InterfaceSettings)"><strong>UsbInterface.InterfaceSettings</strong></a>.</li>
-<li><p>Within the active alternate setting enumerate pipes and get the associated endpoints.</p>
-<p>Endpoint descriptors are represented by these objects:</p>
-<ul>
-<li><a href="/uwp/api/Windows.Devices.Usb.UsbBulkInEndpointDescriptor" data-raw-source="[&lt;strong&gt;UsbBulkInEndpointDescriptor&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbBulkInEndpointDescriptor)"><strong>UsbBulkInEndpointDescriptor</strong></a></li>
-<li><a href="/uwp/api/Windows.Devices.Usb.UsbBulkOutEndpointDescriptor" data-raw-source="[&lt;strong&gt;UsbBulkOutEndpointDescriptor&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbBulkOutEndpointDescriptor)"><strong>UsbBulkOutEndpointDescriptor</strong></a></li>
-<li><a href="/uwp/api/Windows.Devices.Usb.UsbInterruptInEndpointDescriptor" data-raw-source="[&lt;strong&gt;UsbInterruptInEndpointDescriptor&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbInterruptInEndpointDescriptor)"><strong>UsbInterruptInEndpointDescriptor</strong></a></li>
-<li><a href="/uwp/api/Windows.Devices.Usb.UsbInterruptOutEndpointDescriptor" data-raw-source="[&lt;strong&gt;UsbInterruptOutEndpointDescriptor&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbInterruptOutEndpointDescriptor)"><strong>UsbInterruptOutEndpointDescriptor</strong></a></li>
-</ul></li>
-</ul>
-<p><strong>Find it in the sample:</strong> See files named Scenario5_UsbDescriptors.</p></td>
-</tr>
-<tr class="odd">
-<td><a href="" id="step9"></a>
-<p><strong>Step 9</strong>— Extend the app to send vendor-defined USB control transfers.</p></td>
-<td><p><strong>Quickstart:</strong> <a href="how-to-send-a-usb-control-transfer--uwp-app-.md" data-raw-source="[How to send a USB control transfer request (UWP app)](how-to-send-a-usb-control-transfer--uwp-app-.md)">How to send a USB control transfer request (UWP app)</a></p>
-<p></p>
-<ol>
-<li>Get the vendor command from the hardware specification of the device.</li>
-<li>Create a <a href="/uwp/api/Windows.Devices.Usb.UsbSetupPacket" data-raw-source="[&lt;strong&gt;UsbSetupPacket&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbSetupPacket)"><strong>UsbSetupPacket</strong></a> object and populate the setup packet by setting various properties.</li>
-<li>Start an asynchronous operation to send the control transfer by these methods depending on the direction of the transfer:
-<ul>
-<li><a href="/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_SendControlInTransferAsync_Windows_Devices_Usb_UsbSetupPacket_Windows_Storage_Streams_IBuffer_" data-raw-source="[&lt;strong&gt;SendControlInTransferAsync&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_SendControlInTransferAsync_Windows_Devices_Usb_UsbSetupPacket_Windows_Storage_Streams_IBuffer_)"><strong>SendControlInTransferAsync</strong></a></li>
-<li><a href="/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_SendControlOutTransferAsync_Windows_Devices_Usb_UsbSetupPacket_" data-raw-source="[&lt;strong&gt;SendControlOutTransferAsync&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_SendControlOutTransferAsync_Windows_Devices_Usb_UsbSetupPacket_)"><strong>SendControlOutTransferAsync</strong></a></li>
-</ul></li>
-</ol>
-<p><strong>Find it in the sample:</strong> See files named Scenario2_ControlTransfer.</p></td>
-</tr>
-<tr class="even">
-<td><a href="" id="step10"></a>
-<p><strong>Step 10</strong>— Extend the app to read or write bulk data.</p></td>
-<td><p><strong>Quickstart:</strong> <a href="how-to-send-a-usb-bulk-transfer--uwp-app-.md" data-raw-source="[How to send a USB bulk transfer request (UWP app)](how-to-send-a-usb-bulk-transfer--uwp-app-.md)">How to send a USB bulk transfer request (UWP app)</a></p>
-<p></p>
-<ol>
-<li>Get the bulk pipe object (<a href="/uwp/api/Windows.Devices.Usb.UsbBulkOutPipe" data-raw-source="[&lt;strong&gt;UsbBulkOutPipe&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbBulkOutPipe)"><strong>UsbBulkOutPipe</strong></a> or <a href="/uwp/api/Windows.Devices.Usb.UsbBulkInPipe" data-raw-source="[&lt;strong&gt;UsbBulkInPipe&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbBulkInPipe)"><strong>UsbBulkInPipe</strong></a>).</li>
-<li>Configure the bulk pipe to set policy parameters.</li>
-<li>Set up the data stream by using the <a href="/uwp/api/Windows.Storage.Streams.DataReader" data-raw-source="[&lt;strong&gt;DataReader&lt;/strong&gt;](/uwp/api/Windows.Storage.Streams.DataReader)"><strong>DataReader</strong></a> or <a href="/uwp/api/Windows.Storage.Streams.DataWriter" data-raw-source="[&lt;strong&gt;DataWriter&lt;/strong&gt;](/uwp/api/Windows.Storage.Streams.DataWriter)"><strong>DataWriter</strong></a> object.</li>
-<li>Start an asynchronous transfer operation by calling <a href="/uwp/api/Windows.Storage.Streams.DataReader#Windows_Storage_Streams_DataReader_LoadAsync_System_UInt32_" data-raw-source="[&lt;strong&gt;DataReader.LoadAsync&lt;/strong&gt;](/uwp/api/Windows.Storage.Streams.DataReader#Windows_Storage_Streams_DataReader_LoadAsync_System_UInt32_)"><strong>DataReader.LoadAsync</strong></a> or <a href="/uwp/api/Windows.Storage.Streams.DataWriter#Windows_Storage_Streams_DataWriter_StoreAsync" data-raw-source="[&lt;strong&gt;DataWriter.StoreAsync&lt;/strong&gt;](/uwp/api/Windows.Storage.Streams.DataWriter#Windows_Storage_Streams_DataWriter_StoreAsync)"><strong>DataWriter.StoreAsync</strong></a>.</li>
-<li>Get results of the transfer operation.</li>
-</ol>
-<p><strong>Find it in the sample:</strong> See files named Scenario4_BulkPipes.</p></td>
-</tr>
-<tr class="odd">
-<td><a href="" id="step11"></a>
-<p><strong>Step 11</strong>— Extend the app to get hardware interrupt data.</p></td>
-<td><p><strong>Quickstart:</strong> <a href="how-to-send-a-usb-interrupt-transfer--uwp-app-.md" data-raw-source="[How to send a USB interrupt transfer request (UWP app)](how-to-send-a-usb-interrupt-transfer--uwp-app-.md)">How to send a USB interrupt transfer request (UWP app)</a></p>
-<p></p>
-<ol>
-<li>Get the interrupt pipe object (<a href="/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe" data-raw-source="[&lt;strong&gt;UsbInterruptInPipe&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe)"><strong>UsbInterruptInPipe</strong></a> or <a href="/uwp/api/Windows.Devices.Usb.UsbInterruptOutPipe" data-raw-source="[&lt;strong&gt;UsbInterruptOutPipe&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbInterruptOutPipe)"><strong>UsbInterruptOutPipe</strong></a>).</li>
-<li>Implement the interrupt handler for the <a href="/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe#Windows_Devices_Usb_UsbInterruptInPipe_DataReceived" data-raw-source="[&lt;strong&gt;DataReceived&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe#Windows_Devices_Usb_UsbInterruptInPipe_DataReceived)"><strong>DataReceived</strong></a> event.</li>
-<li>Register the event handler to start receiving data.</li>
-<li>Unregister the event handler to stop receiving data.</li>
-</ol>
-<p><strong>Find it in the sample:</strong> See files named Scenario3_InterruptPipes.</p></td>
-</tr>
-<tr class="even">
-<td><a href="" id="step12"></a>
-<p><strong>Step 12</strong>— Extend the app to select an interface setting that is not currently active.</p></td>
-<td><p><strong>Quickstart:</strong> <a href="how-to-select-a-usb-interface-setting--uwp-app-.md" data-raw-source="[How to select a USB interface setting (UWP app)](how-to-select-a-usb-interface-setting--uwp-app-.md)">How to select a USB interface setting (UWP app)</a></p>
-<p>When the device is opened for communication, the default interface and its first setting is selected. If you want to change that setting, follow these steps:</p>
-<ol>
-<li>Get the active setting of a USB interface by using the <a href="/uwp/api/Windows.Devices.Usb.UsbInterfaceSetting#Windows_Devices_Usb_UsbInterfaceSetting_Selected" data-raw-source="[&lt;strong&gt;UsbInterfaceSetting.Selected&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbInterfaceSetting#Windows_Devices_Usb_UsbInterfaceSetting_Selected)"><strong>UsbInterfaceSetting.Selected</strong></a> value.</li>
-<li>Set a USB interface setting by starting an asynchronous operation by calling <a href="/uwp/api/Windows.Devices.Usb.UsbInterfaceSetting#Windows_Devices_Usb_UsbInterfaceSetting_SelectSettingAsync" data-raw-source="[&lt;strong&gt;UsbInterfaceSetting.SelectSettingAsync&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbInterfaceSetting#Windows_Devices_Usb_UsbInterfaceSetting_SelectSettingAsync)"><strong>UsbInterfaceSetting.SelectSettingAsync</strong></a>.</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td><a href="" id="step13"></a>
-<p><strong>Step 13</strong>— Close the device.</p></td>
-<td><p><strong>Quickstart:</strong> <a href="how-to-connect-to-a-usb-device--uwp-app-.md" data-raw-source="[How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--uwp-app-.md)">How to connect to a USB device (UWP app)</a></p>
-<p>After you are finished using the UsbDevice object, close the device.</p>
-<p>C++ apps must release the reference by using the <strong>delete</strong> keyword. C#/VB apps must call the <a href="/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_Dispose" data-raw-source="[&lt;strong&gt;UsbDevice.Dispose&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_Dispose)"><strong>UsbDevice.Dispose</strong></a> method. JavaScript apps must call <a href="/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_Close" data-raw-source="[&lt;strong&gt;UsbDevice.Close&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_Close)"><strong>UsbDevice.Close</strong></a>.</p>
-<p><strong>Find it in the sample:</strong> See files named Scenario1_DeviceConnect.</p></td>
-</tr>
-<tr class="even">
-<td><a href="" id="step14"></a>
-<p><strong>Step 14</strong>—Create a device metadata package for the app.</p></td>
-<td><strong>Tool:</strong> <a href="/windows-hardware/drivers/devtest/device-metadata-authoring-wizard-portal" data-raw-source="[Device Metadata Authoring Wizard](../devtest/device-metadata-authoring-wizard-portal.md)">Device Metadata Authoring Wizard</a>
-<ul>
-<li>If you have the Windows Driver Kit (WDK) installed, open <strong>Driver</strong> &gt; <strong>Device Metadata</strong> &gt; <strong>Authoring</strong>.</li>
-<li>If you have the Standalone SDK installed, the tool is located at <em>&lt;install_path&gt;</em>\bin\x86\DeviceMetadataWizardexe.</li>
-</ul>
-<p>Associate your app with the device by following the steps in the wizard. Enter this information about your device:</p>
-<p></p>
-<ul>
-<li>On the <strong>Device Info</strong> page, enter <strong>Model Name</strong>, <strong>Manufacturer</strong>, and <strong>Description</strong>.</li>
-<li>On the <strong>Hardware Info</strong> page, enter the hardware ID of your device.</li>
-</ul>
-<p><strong>To declare the app as a privileged app for your device, follow these instructions:</strong></p>
-<ol>
-<li><p>On the <strong>App Info</strong> page, in the <strong>Privileged application</strong> group, enter the <strong>Package name</strong>, <strong>Publisher name</strong>, and <strong>UWP app ID</strong>.</p>
-<p><img src="images/privileged-app.png" alt="device metatdata for privileged apps" /></p>
-<div class="alert">
-<strong>Note</strong>  Do not check the <strong>Access custom driver</strong> option.
-</div>
-<div>
- 
-</div></li>
-<li>Open the <strong>Finish</strong> tab. Select the <strong>Copy packages to your system's local metadata store</strong> check box.</li>
-<li>Connect the device, in Control Panel, open <strong>View devices and printers</strong> and verify that the icon of the device is correct.</li>
-</ol>
-<p><strong>Find it in the sample:</strong> See the DeviceMetadata folder.</p></td>
-</tr>
-<tr class="odd">
-<td><a href="" id="step15"></a>
-<p><strong>Step 15</strong>—Extend the app to implement AutoPlay activation so that the app is launched when the device is connected to the system.</p></td>
-<td><p><strong>Quickstart:</strong> <a href="/previous-versions/windows/apps/jj161017(v=win.10)" data-raw-source="[Register an app for an AutoPlay device](/previous-versions/windows/apps/jj161017(v=win.10))">Register an app for an AutoPlay device</a></p>
-<p>You can add AutoPlay capabilities so that app is launched when the device is connected to the system. You can enable Autoplay for all UWP apps (privileged or otherwise).</p>
-<p></p>
-<ol>
-<li>In your device metadata package, you must specify how the device should respond to an AutoPlay notification. On the <strong>Windows Info</strong> tab, select the <strong>UWP device app</strong> option and enter app information as shown here:</li>
-<li><p>In the app manifest, add <strong>AutoPlay Device</strong> declaration and launch information as shown here:</p>
-<p><img src="images/autoplay.png" alt="Screenshot that shows the app manifest with 'Declarations' selected and 'AutoPlay Device' added." /></p></li>
-<li>In the OnActivated method of the App class, check if the app is activated by the device. If it is, then the method receives a DeviceEventArgs parameter value that contains the <a href="/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_Id" data-raw-source="[&lt;strong&gt;DeviceInformation.Id&lt;/strong&gt;](/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_Id)"><strong>DeviceInformation.Id</strong></a> property value. This is the same value described in <a href="#step6" data-raw-source="[&lt;strong&gt;Step 6&lt;/strong&gt;—Extend the app to open the device for communication](#step6)"><strong>Step 6</strong>—Extend the app to open the device for communication</a>.</li>
-</ol>
-<p><strong>Find it in the sample:</strong> See files named Autoplay. For JavaScript, see default.js.</p></td>
-</tr>
-<tr class="even">
-<td><a href="" id="step16"></a>
-<p><strong>Step 16</strong>—Extend the app to implement a background task that can perform length transfers to the device, such as firmware update without the app getting suspended.</p></td>
-<td><p>To implement background task, you need two classes.</p>
-<p>The background task class implements the <a href="/uwp/api/Windows.ApplicationModel.Background.IBackgroundTask" data-raw-source="[&lt;strong&gt;IBackgroundTask&lt;/strong&gt;](/uwp/api/Windows.ApplicationModel.Background.IBackgroundTask)"><strong>IBackgroundTask</strong></a> interface and contains the actual code you create to either sync or update your peripheral device. The background task class is executed when the background task is triggered and from the entry point provided in your app’s application manifest.</p>
-<div class="alert">
-<strong>Note</strong>  The device background tasks infrastructure provided by Windows 8.1. For more information about Windows background tasks see <a href="/previous-versions/windows/apps/hh977056(v=win.10)" data-raw-source="[Supporting your app with background tasks](/previous-versions/windows/apps/hh977056(v=win.10))">Supporting your app with background tasks</a>.
-</div>
-<div>
- 
-</div>
-<p><strong>Background task class</strong></p>
-<ol>
-<li>Implements the <a href="/uwp/api/Windows.ApplicationModel.Background.IBackgroundTask" data-raw-source="[&lt;strong&gt;IBackgroundTask&lt;/strong&gt;](/uwp/api/Windows.ApplicationModel.Background.IBackgroundTask)"><strong>IBackgroundTask</strong></a> interface required by the Windows background task infrastructure.</li>
-<li>Obtains the DeviceUseDetails instance passed to the class in the <strong>Run</strong> method and uses this instance to report progress back to the Microsoft Store app and to register for cancellation events.</li>
-<li>The <strong>Run</strong> method also calls the private OpenDevice and WriteToDeviceAsync methods that implement the background device sync code.</li>
-</ol>
-<p>The UWP app registers and triggers a DeviceUseTrigger background task. The app register, trigger, and handle progress on a background task.</p>
-<div class="alert">
-<strong>Note</strong>  The example code that follows can be applied to the DeviceServicingTrigger background task by use the corresponding objects. The only difference between the two trigger objects and their corresponding APIs are the policy checks made by Windows.
-</div>
-<div>
- 
-</div>
-<ol>
-<li>Creates DeviceUseTrigger and BackgroundTaskRegistration objects.</li>
-<li>Checks to see if any background tasks were previously registered by this sample application and cancels them by calling the Unregister method on the task.</li>
-<li>Registers the background task that will sync with the device. The SetupBackgroundTask method is called from the SyncWithDeviceAsync method in the next step.
-<ol>
-<li>Initializes the DeviceUseTrigger and saves it for later use.</li>
-<li>Creates a BackgroundTaskBuilder object and uses its Name, TaskEntryPoint and SetTrigger properties and method to register the app’s DeviceUseTrigger object and background task name. The BackgroundTaskBuilder object’s TaskEntryPoint property is set to the full name of the background task class that will be run when the background task is triggered.</li>
-<li>Registers for completion and progress events from the background task so the Microsoft Store app can provide completion and progress updates to the user.</li>
-</ol></li>
-<li>The private SyncWithDeviceAsync method registers the background task that will sync with the device and starts the background sync.
-<ol>
-<li>Calls the SetupBackgroundTask method from the previous step and registers the background task that will sync with the device.</li>
-<li>Calls the private StartSyncBackgroundTaskAsync method which starts the background task.</li>
-<li>Closes the app’s handle to the device to ensure that the background task is able to open the device when it starts.
-<div class="alert">
-<strong>Note</strong>  The background task will need to open the device to perform the update so the Microsoft Store app must close its connections to the device before calling RequestAsync
-</div>
-<div>
- 
-</div></li>
-<li>Calls the DeviceUseTrigger object’s RequestAsync method which starts triggers the background task and returns the DeviceTriggerResults object from RequestAsync used to determine if the background task started successfully.
-<div class="alert">
-<strong>Note</strong>  Windows checks to ensure that all necessary task initiation policy checks have been completed. If all policy checks are completed the update operation is now running as a background task outside of the Microsoft Store app, allowing the app to be safely suspended while the operation is in progress. Windows will also enforce any runtime requirements and cancel the background task if those requirements are no longer met.
-</div>
-<div>
- 
-</div></li>
-<li>Uses the DeviceTriggerResults object returned from StartSyncBackgroundTaskAsync to determine if the background task started successfully. A switch statement is used to inspect the result from DeviceTriggerResults.</li>
-</ol></li>
-<li>Implements a private OnSyncWithDeviceProgress event handler that will update the app UI with progress from the background task.</li>
-<li>Implements a private OnSyncWithDeviceCompleted event handler to handle the transition from background tasks to foreground app when the background task has completed.
-<ol>
-<li>Uses the CheckResults method of the BackgroundTaskCompletedEventArgs object to determine if any exceptions were thrown by the background task.</li>
-<li>The app reopens the device for use by the foreground app now that the background task is complete and updates the UI to notify the user.</li>
-</ol></li>
-<li>Implements private button click event handlers from the UI to start and cancel the background task.
-<ol>
-<li>The private Sync_Click event handler calls the SyncWithDeviceAsync method described in the previous steps.</li>
-<li>The private CancelSync_Click event handler calls the private CancelSyncWithDevice method to cancel the background task.</li>
-</ol></li>
-<li>The private CancelSyncWithDevice method unregisters and cancels any active device syncs so the device can be reopened by using the Unregister method on the BackgroundTaskRegistration object.</li>
-</ol>
-<p><strong>Find it in the sample:</strong> See files named Scenario7_Sync files. Background class is implemented in IoSyncBackgroundTask.</p></td>
-</tr>
-<tr class="odd">
-<td><a href="" id="step17"></a>
-<p><strong>Step 17</strong>—Run Windows App Certification Kit.</p></td>
-<td><p><a href="/previous-versions/windows/apps/hh694081(v=win.10)" data-raw-source="[Using the Windows App Certification Kit](/previous-versions/windows/apps/hh694081(v=win.10))">Using the Windows App Certification Kit</a></p>
-<p>Recommended. Running Windows App Certification Kit helps you make sure your app fulfills Microsoft Store requirements, so you should do this when you've added major functionality to your app.</p></td>
-</tr>
-</tbody>
-</table>
+    In Device Manager, view the device properties. On the **Details** tab, view the **Hardware Id** property value. That value is a combination of those two identifiers. For example, for the SuperMUTT device, the **Hardware Id** is "USB\VID_045E&PID_F001"; vendor ID is "0x045E" and product ID is "0xF001".
 
- 
+- **Device class, subclass, and protocol codes**
+- **Device interface GUID**
 
-## Want to know more?
+Alternatively, you can view information the registry. For more information, see [USB device registry entries](usb-device-specific-registry-settings.md).
 
+## Determine if the USB API set allows the device class, subclass, and protocol
 
-Learn more from related samples.
+You can write a UWP app, if device class, subclass, and protocol code of the device is in the following list:
 
-**Related Samples**
+- `name:cdcControl, classId:02 * *`
+- `name:physical, classId:05 * *`
+- `name:personalHealthcare, classId:0f 00 00`
+- `name:activeSync, classId:ef 01 01`
+- `name:palmSync, classId:ef 01 02`
+- `name:deviceFirmwareUpdate, classId:fe 01 01`
+- `name:irda, classId:fe 02 00`
+- `name:measurement, classId:fe 03 *`
+- `name:vendorSpecific, classId:ff * *`
 
--   [USB CDC Control sample](/samples/browse/)
--   [Firmware Update USB Device sample](/samples/browse/)
+## Create a basic Visual Studio project
+
+Create a basic Visual Studio project that you can extend in this tutorial.
+
+For more information, see [Getting started with UWP apps](/windows/uwp/get-started/).
+
+## Add USB device capabilities to the app manifest
+
+Learn how to add USB device capabilities to the app manifest.
+
+**QuickStart:** [How to add USB device capabilities to the app manifest](updating-the-app-manifest-with-usb-device-capabilities.md)
+
+Open your Package.appxmanifest file in a text editor and add the **[DeviceCapability](/uwp/schemas/appxpackage/appxmanifestschema/element-devicecapability)** element with **Name** attribute set to "usb" as shown in this example.
+
+> [!NOTE]
+> You cannot modify the USB device capability in Visual Studio. You must right-click the Package.appxmanifest file in **Solution Explorer** and select **Open With...**, and then **XML (Text) Editor**. The file opens in plain XML.
+
+```xml
+<Capabilities>
+  <!--When the device's classId is FF * *, there is a predefined name for the class. 
+      You can use the name instead of the class id. 
+      There are also other predefined names that correspond to a classId.-->
+  <m2:DeviceCapability Name="usb">
+    <!--SuperMutt Device-->
+    <m2:Device Id="vidpid:045E 0611">
+      <!--<wb:Function Type="classId:ff * *"/>-->
+      <m2:Function Type="name:vendorSpecific"/>
+    </m2:Device>
+  </m2:DeviceCapability>
+</Capabilities>
+```
+
+**Find it in the sample:** The USB device capabilities are in the Package.appxmanifest file.
+
+## Open the device for communication
+
+Extend the app to open the device for communication.
+
+**Quickstart:** [How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--uwp-app-.md)
+
+1. Find the device by building an Advanced Query Syntax (AQS) string that contains search criteria for finding the device in the enumerated device collection.
+1. Open the device in one of two ways:
+    - By passing the AQS to **[FindAllAsync](/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_FindAllAsync_System_String_)** and get the **[DeviceInformation](/uwp/api/Windows.Devices.Enumeration.DeviceInformation)** object for the device.
+
+        For more information, see [Quickstart: enumerating commonly used devices](/previous-versions/windows/apps/hh872189(v=win.10)).
+
+    - By using a **[DeviceWatcher](/uwp/api/Windows.Devices.Enumeration.DeviceWatcher)** object to detect when the device is added or removed from the system.
+
+        1. Pass the AQS to **[CreateWatcher](/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_CreateWatcher)** and get a **[DeviceWatcher](/uwp/api/Windows.Devices.Enumeration.DeviceWatcher)** object.
+        1. Register event handlers on the **[DeviceWatcher](/uwp/api/Windows.Devices.Enumeration.DeviceWatcher)** object.
+        1. Get the **[DeviceInformation](/uwp/api/Windows.Devices.Enumeration.DeviceInformation)** object for the device in your **[Added](/uwp/api/Windows.Devices.Enumeration.DeviceWatcher#Windows_Devices_Enumeration_DeviceWatcher_Added)** event handler.
+        1. Start and stop the **[DeviceWatcher](/uwp/api/Windows.Devices.Enumeration.DeviceWatcher)** object.
+
+        For more information, see [How to get notifications if devices are added, removed, or changed](/previous-versions/windows/apps/hh967756(v=win.10)).
+1. Get the device instance from the **[DeviceInformation.Id](/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_Id)** property.
+1. Call **[FromIdAsync](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_FromIdAsync_System_String_)** by passing the device instance string and get the **[UsbDevice](/uwp/api/Windows.Devices.Usb.UsbDevice)** object.
+
+**Find it in the sample:** See files named Scenario1_DeviceConnect.
+
+## Study your USB device layout
+
+Study your [USB device layout](usb-device-layout.md).
+
+Review basic USB concepts about configuring the device and performing data transfers: [Concepts for all USB developers](usb-concepts-for-all-developers.md).
+
+View the device configuration descriptor, interface descriptors for each supported alternate settings, and their endpoint descriptors. By using [USBView](/windows-hardware/drivers/debugger/usbview), you can browse all USB controllers and the USB devices connected to them, and also inspect the device configuration.
+
+## Get and show USB descriptors in the UI
+
+Extend the app to get and show USB descriptors in the UI.
+
+**Quickstart:** [How to get USB descriptors (UWP app)](how-to-get-usb-descriptors--uwp-app-.md)
+
+- Get the device descriptor by getting the **[UsbDevice.DeviceDescriptor](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_DeviceDescriptor)** value.
+- Get the configuration descriptor by getting the **[UsbConfiguration.ConfigurationDescriptor](/uwp/api/Windows.Devices.Usb.UsbConfiguration#Windows_Devices_Usb_UsbConfiguration_ConfigurationDescriptor)** value.
+  - Get the full configuration descriptor set by getting the **[UsbConfiguration.Descriptors](/uwp/api/Windows.Devices.Usb.UsbConfiguration#Windows_Devices_Usb_UsbConfiguration_Descriptors)** property.
+- Get the array of interfaces within the configuration by getting the **[UsbConfiguration.UsbInterfaces](/uwp/api/Windows.Devices.Usb.UsbConfiguration#Windows_Devices_Usb_UsbConfiguration_UsbInterfaces)** property.
+- Get the array of alternate settings by getting **[UsbInterface.InterfaceSettings](/uwp/api/Windows.Devices.Usb.UsbInterface#Windows_Devices_Usb_UsbInterface_InterfaceSettings)**.
+- Within the active alternate setting, enumerate pipes and get the associated endpoints.
+
+  These objects represent endpoint descriptors:
+
+  - **[UsbBulkInEndpointDescriptor](/uwp/api/Windows.Devices.Usb.UsbBulkInEndpointDescriptor)**
+  - **[UsbBulkOutEndpointDescriptor](/uwp/api/Windows.Devices.Usb.UsbBulkOutEndpointDescriptor)**
+  - **[UsbInterruptInEndpointDescriptor](/uwp/api/Windows.Devices.Usb.UsbInterruptInEndpointDescriptor)**
+  - **[UsbInterruptOutEndpointDescriptor](/uwp/api/Windows.Devices.Usb.UsbInterruptOutEndpointDescriptor)**
+
+**Find it in the sample:** See files named Scenario5\_UsbDescriptors.
+
+## Send vendor-defined USB control transfers
+
+Extend the app to send vendor-defined USB control transfers.
+
+**Quickstart:** [How to send a USB control transfer request (UWP app)](how-to-send-a-usb-control-transfer--uwp-app-.md)
+
+1. Get the vendor command from the hardware specification of the device.
+1. Create a **[UsbSetupPacket](/uwp/api/Windows.Devices.Usb.UsbSetupPacket)** object and populate the setup packet by setting various properties.
+1. Start an asynchronous operation to send the control transfer by these methods depending on the direction of the transfer:
+    - **[SendControlInTransferAsync](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_SendControlInTransferAsync_Windows_Devices_Usb_UsbSetupPacket_Windows_Storage_Streams_IBuffer_)**
+    - **[SendControlOutTransferAsync](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_SendControlOutTransferAsync_Windows_Devices_Usb_UsbSetupPacket_)**
+
+**Find it in the sample:** See files named Scenario2_ControlTransfer.
+
+## Read or write bulk data
+
+Extend the app to read or write bulk data.
+
+**Quickstart:** [How to send a USB bulk transfer request (UWP app)](how-to-send-a-usb-bulk-transfer--uwp-app-.md)
+
+1. Get the bulk pipe object (**[UsbBulkOutPipe](/uwp/api/Windows.Devices.Usb.UsbBulkOutPipe)** or **[UsbBulkInPipe](/uwp/api/Windows.Devices.Usb.UsbBulkInPipe)**).
+1. Configure the bulk pipe to set policy parameters.
+1. Set up the data stream by using the **[DataReader](/uwp/api/Windows.Storage.Streams.DataReader)** or **[DataWriter](/uwp/api/Windows.Storage.Streams.DataWriter)** object.
+1. Start an asynchronous transfer operation by calling **[DataReader.LoadAsync](/uwp/api/Windows.Storage.Streams.DataReader#Windows_Storage_Streams_DataReader_LoadAsync_System_UInt32_)** or **[DataWriter.StoreAsync](/uwp/api/Windows.Storage.Streams.DataWriter#Windows_Storage_Streams_DataWriter_StoreAsync)**.
+1. Get results of the transfer operation.
+
+**Find it in the sample:** See files named Scenario4\_BulkPipes.
+
+## Get hardware interrupt data
+
+Extend the app to get hardware interrupt data.
+
+**Quickstart:** [How to send a USB interrupt transfer request (UWP app)](how-to-send-a-usb-interrupt-transfer--uwp-app-.md)
+
+1. Get the interrupt pipe object (**[UsbInterruptInPipe](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe)** or **[UsbInterruptOutPipe](/uwp/api/Windows.Devices.Usb.UsbInterruptOutPipe)**).
+1. Implement the interrupt handler for the **[DataReceived](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe#Windows_Devices_Usb_UsbInterruptInPipe_DataReceived)** event.
+1. Register the event handler to start receiving data.
+1. Unregister the event handler to stop receiving data.
+
+**Find it in the sample:** See files named Scenario3\_InterruptPipes.
+
+## Select an interface setting that isn't currently active
+
+Extend the app to select an interface setting that isn't currently active.
+
+**Quickstart:** [How to select a USB interface setting (UWP app)](how-to-select-a-usb-interface-setting--uwp-app-.md)
+
+When the device is opened for communication, the default interface and its first setting are selected. If you want to change that setting, follow these steps:
+
+1. Get the active setting of a USB interface by using the **[UsbInterfaceSetting.Selected](/uwp/api/Windows.Devices.Usb.UsbInterfaceSetting#Windows_Devices_Usb_UsbInterfaceSetting_Selected)** value.
+1. Set a USB interface setting by starting an asynchronous operation by calling **[UsbInterfaceSetting.SelectSettingAsync](/uwp/api/Windows.Devices.Usb.UsbInterfaceSetting#Windows_Devices_Usb_UsbInterfaceSetting_SelectSettingAsync)**.
+
+## Close the device
+
+Extend the app to close the device.
+
+**Quickstart:** [How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--uwp-app-.md)
+
+After you finish using the UsbDevice object, close the device.
+
+C++ apps must release the reference by using the **delete** keyword. C#/VB apps must call the **[UsbDevice.Dispose](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_Dispose)** method. JavaScript apps must call **[UsbDevice.Close](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_Close)**.
+
+**Find it in the sample:** See files named Scenario1\_DeviceConnect.
+
+## Create a device metadata package
+
+Create a device metadata package for the app.
+
+**Tool:** [Device Metadata Authoring Wizard](/windows-hardware/drivers/devtest/device-metadata-authoring-wizard-portal)
+
+- If you have the Windows Driver Kit (WDK) installed, open **Driver** > **Device Metadata** > **Authoring**.
+- If you have the Standalone SDK installed, the tool is located at _<install\_path>_\\bin\\x86\\DeviceMetadataWizardexe.
+
+Associate your app with the device by following the steps in the wizard. Enter this information about your device:
+
+- On the **Device Info** page, enter **Model Name**, **Manufacturer**, and **Description**.
+- On the **Hardware Info** page, enter the hardware ID of your device.
+
+**To declare the app as a privileged app for your device, follow these instructions:**
+
+1. On the **App Info** page, in the **Privileged application** group, enter the **Package name**, **Publisher name**, and **UWP app ID**.
+
+    :::image type="content" source="images/privileged-app.png" alt-text="Screenshot of Visual Studio, showing device metatdata for privileged apps.":::
+
+    > [!NOTE]
+    > Do not check the **Access custom driver** option.
+
+1. Open the **Finish** tab. Select the **Copy packages to your system's local metadata store** check box.
+1. Connect the device, in Control Panel, open **View devices and printers** and verify that the icon of the device is correct.
+
+**Find it in the sample:** See the DeviceMetadata folder.
+
+## Implement AutoPlay activation
+
+Extend the app by implementing AutoPlay activation to launch the app when the device connects to the system.
+
+**Quickstart:** [Register an app for an AutoPlay device](/previous-versions/windows/apps/jj161017(v=win.10))
+
+You can add AutoPlay capabilities so the app launches when the device connects to the system. You can enable Autoplay for all UWP apps (privileged or otherwise).
+
+1. In your device metadata package, you must specify how the device should respond to an AutoPlay notification. On the **Windows Info** tab, select the **UWP device app** option and enter app information as shown here:
+1. In the app manifest, add **AutoPlay Device** declaration and launch information as shown here:
+
+    :::image type="content" source="images/autoplay.png" alt-text="Screenshot that shows the app manifest with 'Declarations' selected and 'AutoPlay Device' added.":::
+
+1. In the OnActivated method of the App class, check if the device activated the app. If it is, then the method receives a DeviceEventArgs parameter value that contains the **[DeviceInformation.Id](/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_Id)** property value. This is the same value described in [Open the device for communication](#open-the-device-for-communication).
+
+**Find it in the sample:** See files named Autoplay. For JavaScript, see default.js.
+
+## Implement a background task
+
+Extend the app to implement a background task that can perform length transfers to the device, such as firmware update without the app getting suspended.
+
+To implement background task, you need two classes.
+
+The background task class implements the **[IBackgroundTask](/uwp/api/Windows.ApplicationModel.Background.IBackgroundTask)** interface and contains the actual code you create to either sync or update your peripheral device. The background task class executes when the background task triggers and from the entry point provided in your app's application manifest.
+
+> [!NOTE]
+> The device background tasks infrastructure provided by Windows 8.1. For more information about Windows background tasks, see [Supporting your app with background tasks](/previous-versions/windows/apps/hh977056(v=win.10)).
+
+### Background task class
+
+1. Implements the **[IBackgroundTask](/uwp/api/Windows.ApplicationModel.Background.IBackgroundTask)** interface required by the Windows background task infrastructure.
+1. Obtains the DeviceUseDetails instance passed to the class in the **Run** method and uses this instance to report progress back to the Microsoft Store app and to register for cancellation events.
+1. The **Run** method also calls the private OpenDevice and WriteToDeviceAsync methods that implement the background device sync code.
+
+The UWP app registers and triggers a DeviceUseTrigger background task. The app register, trigger, and handle progress on a background task.
+
+> [!NOTE]
+> The example code that follows can be applied to the DeviceServicingTrigger background task by use the corresponding objects. The only difference between the two trigger objects and their corresponding APIs are the policy checks made by Windows.
+
+1. Creates DeviceUseTrigger and BackgroundTaskRegistration objects.
+1. Checks to see if any background tasks were previously registered by this sample application and cancels them by calling the Unregister method on the task.
+1. Registers the background task that syncs with the device. The SetupBackgroundTask method is called from the SyncWithDeviceAsync method in the next step.
+    1. Initializes the DeviceUseTrigger and saves it for later use.
+    1. Creates a BackgroundTaskBuilder object and uses its Name, TaskEntryPoint and SetTrigger properties and method to register the app's DeviceUseTrigger object and background task name. The BackgroundTaskBuilder object's TaskEntryPoint property is set to the full name of the background task class that will be run when the background task is triggered.
+    1. Registers for completion and progress events from the background task so the Microsoft Store app can provide completion and progress updates to the user.
+1. The private SyncWithDeviceAsync method registers the background task that will sync with the device and starts the background sync.
+    1. Calls the SetupBackgroundTask method from the previous step and registers the background task that will sync with the device.
+    1. Calls the private StartSyncBackgroundTaskAsync method which starts the background task.
+    1. Closes the app's handle to the device to ensure that the background task is able to open the device when it starts.
+
+        > [!NOTE]
+        > The background task will need to open the device to perform the update so the Microsoft Store app must close its connections to the device before calling RequestAsync
+
+    1. Calls the DeviceUseTrigger object's RequestAsync method which starts triggers the background task and returns the DeviceTriggerResults object from RequestAsync used to determine if the background task started successfully.
+
+        > [!NOTE]
+        > Windows checks to ensure that all necessary task initiation policy checks have been completed. If all policy checks are completed the update operation is now running as a background task outside of the Microsoft Store app, allowing the app to be safely suspended while the operation is in progress. Windows will also enforce any runtime requirements and cancel the background task if those requirements are no longer met.
+
+    1. Uses the DeviceTriggerResults object returned from StartSyncBackgroundTaskAsync to determine if the background task started successfully. A switch statement is used to inspect the result from DeviceTriggerResults.
+1. Implements a private OnSyncWithDeviceProgress event handler that will update the app UI with progress from the background task.
+1. Implements a private OnSyncWithDeviceCompleted event handler to handle the transition from background tasks to foreground app when the background task has completed.
+    1. Uses the CheckResults method of the BackgroundTaskCompletedEventArgs object to determine if any exceptions were thrown by the background task.
+    1. The app reopens the device for use by the foreground app now that the background task is complete and updates the UI to notify the user.
+1. Implements private button click event handlers from the UI to start and cancel the background task.
+    1. The private Sync\_Click event handler calls the SyncWithDeviceAsync method described in the previous steps.
+    1. The private CancelSync\_Click event handler calls the private CancelSyncWithDevice method to cancel the background task.
+1. The private CancelSyncWithDevice method unregisters and cancels any active device syncs so the device can be reopened by using the Unregister method on the BackgroundTaskRegistration object.
+
+**Find it in the sample:** See files named Scenario7\_Sync files. Background class is implemented in IoSyncBackgroundTask.
+
+## Run Windows app certification kit
+
+Run the Windows app certification kit.
+
+[Using the Windows App Certification Kit](/previous-versions/windows/apps/hh694081(v=win.10))
+
+Recommended. Running the Windows app certification kit helps you make sure your app fulfills Microsoft Store requirements. You should run it whenever you add major functionality to your app.
+
+## Related Samples
+
+- [Custom USB device access sample](/samples/browse/)
+- [USB CDC Control sample](/samples/browse/)
+- [Firmware Update USB Device sample](/samples/browse/)
 
 [UWP app UI, start to finish (XAML)](/previous-versions/windows/apps/dn263191(v=win.10))
 
@@ -394,3 +335,9 @@ Learn more about creating UWP apps using C++, C#, or Visual Basic in general.
 [Asynchronous programming (UWP apps)](/previous-versions/windows/apps/hh464924(v=win.10))
 
 Learn about how to make your apps stay responsive when they do work that might take an extended amount of time.
+
+## Important APIs
+
+- **[Windows.Devices.Usb](/uwp/api/Windows.Devices.Usb)**
+- **[Windows.Devices.Enumeration](/uwp/api/Windows.Devices.Enumeration)**
+- **[Windows.Devices.Background](/uwp/api/Windows.Devices.Background)**

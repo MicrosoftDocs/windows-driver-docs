@@ -4,6 +4,7 @@ description: The WIA_DIP_DEV_TYPE property contains a device type and device sub
 keywords: ["WIA_DIP_DEV_TYPE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DIP_DEV_TYPE
 api_location:

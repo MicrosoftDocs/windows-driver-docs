@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["GetAsByte method Print Devices", "GetAsByte method Print Devices , ISNMP interface", "ISNMP interface Print Devices , GetAsByte method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ISNMP.GetAsByte
 api_location:

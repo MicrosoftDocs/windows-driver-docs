@@ -4,6 +4,7 @@ description: The required asyncPrintUIRequest element describes a request issued
 keywords: ["asyncPrintUIRequest element Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - asyncPrintUIRequest
 api_type:

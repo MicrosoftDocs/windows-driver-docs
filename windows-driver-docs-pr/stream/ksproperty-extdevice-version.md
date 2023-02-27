@@ -4,6 +4,7 @@ description: The KSPROPERTY_EXTDEVICE_VERSION property retrieves the version of 
 keywords: ["KSPROPERTY_EXTDEVICE_VERSION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_EXTDEVICE_VERSION
 api_location:

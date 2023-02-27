@@ -4,6 +4,7 @@ description: SRB\_GET\_STREAM\_INFO
 keywords: ["SRB_GET_STREAM_INFO Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SRB_GET_STREAM_INFO
 api_type:

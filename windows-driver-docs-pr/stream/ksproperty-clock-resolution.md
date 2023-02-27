@@ -4,6 +4,7 @@ description: Clients use the KSPROPERTY_CLOCK_RESOLUTION property to determine t
 keywords: ["KSPROPERTY_CLOCK_RESOLUTION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CLOCK_RESOLUTION
 api_location:

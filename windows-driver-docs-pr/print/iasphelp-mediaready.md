@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_MediaReady method Print Devices", "get_MediaReady method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_MediaReady method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_MediaReady
 api_type:

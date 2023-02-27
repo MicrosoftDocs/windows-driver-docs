@@ -4,6 +4,7 @@ description: The WIA_DPC_BURST_NUMBER property contains the number of images tha
 keywords: ["WIA_DPC_BURST_NUMBER Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_BURST_NUMBER
 api_location:

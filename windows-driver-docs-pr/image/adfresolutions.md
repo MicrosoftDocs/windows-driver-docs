@@ -4,6 +4,7 @@ description: The required ADFResolutions element contains a list of resolutions 
 keywords: ["ADFResolutions element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ADFResolutions
 api_type:

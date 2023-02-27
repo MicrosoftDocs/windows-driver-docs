@@ -4,6 +4,7 @@ description: The required ConditionHistoryEntry element provides details about o
 keywords: ["ConditionHistoryEntry element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ConditionHistoryEntry wscn Id "..."
 api_type:

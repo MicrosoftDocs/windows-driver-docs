@@ -1,7 +1,8 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpointsEx
 description: Configures endpoints based on supplied list of device and configuration descriptors.
-ms.date: 08/20/2021
+ms.date: 02/24/2023
+ms.topic: reference
 ---
 
 # EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpointsEx

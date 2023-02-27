@@ -4,6 +4,7 @@ description: The required Document element contains the details about one of the
 keywords: ["Document element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Document
 api_type:

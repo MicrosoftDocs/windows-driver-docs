@@ -4,6 +4,7 @@ description: The WIA_IPA_ITEM_TIME property contains the time that an image was 
 keywords: ["WIA_IPA_ITEM_TIME Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_ITEM_TIME
 api_location:

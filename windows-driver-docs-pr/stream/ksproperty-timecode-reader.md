@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TIMECODE\_READER property retrieves the timecode fo
 keywords: ["KSPROPERTY_TIMECODE_READER Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TIMECODE_READER
 api_location:

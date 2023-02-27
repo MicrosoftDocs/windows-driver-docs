@@ -4,6 +4,7 @@ description: The KSPROPERTY_EXTDEVICE_ID property retrieves an external device's
 keywords: ["KSPROPERTY_EXTDEVICE_ID Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_EXTDEVICE_ID
 api_location:

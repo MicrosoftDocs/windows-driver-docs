@@ -4,6 +4,7 @@ description: The optional Platen element describes the capabilities of the flatb
 keywords: ["Platen element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Platen
 api_type:

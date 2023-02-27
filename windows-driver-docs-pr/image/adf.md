@@ -4,6 +4,7 @@ description: The optional ADF element describes the capabilities of the automati
 keywords: ["ADF element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ADF
 api_type:

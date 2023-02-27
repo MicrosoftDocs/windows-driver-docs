@@ -4,6 +4,7 @@ description: The AVC_FUNCTION_GET_EXT_PLUG_COUNTS function code obtains the exte
 keywords: ["AVC_FUNCTION_GET_EXT_PLUG_COUNTS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVC_FUNCTION_GET_EXT_PLUG_COUNTS
 api_type:

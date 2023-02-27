@@ -4,6 +4,7 @@ description: The required Documents element contains the actual scan characteris
 keywords: ["Documents element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Documents
 api_type:

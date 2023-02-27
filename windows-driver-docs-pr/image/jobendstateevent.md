@@ -4,6 +4,7 @@ description: The required JobEndStateEvent element informs the client that the s
 keywords: ["JobEndStateEvent element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobEndStateEvent
 api_type:

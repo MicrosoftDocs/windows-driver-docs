@@ -4,6 +4,7 @@ description: The WIA_DIP_PORT_NAME property contains an installed device's port 
 keywords: ["WIA_DIP_PORT_NAME Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DIP_PORT_NAME
 api_location:

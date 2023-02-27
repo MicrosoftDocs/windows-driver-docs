@@ -4,6 +4,7 @@ description: The optional InputSize element specifies the size of the original s
 keywords: ["InputSize element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn InputSize wscn MustHonor ""
 api_type:

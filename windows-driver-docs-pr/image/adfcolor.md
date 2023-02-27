@@ -4,6 +4,7 @@ description: The required ADFColor element contains the list of color processing
 keywords: ["ADFColor element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ADFColor
 api_type:

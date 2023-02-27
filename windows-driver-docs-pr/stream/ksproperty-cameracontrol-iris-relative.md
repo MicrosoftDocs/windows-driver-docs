@@ -4,6 +4,7 @@ description: The KSPROPERTY_CAMERACONTROL_IRIS_RELATIVE property specifies a cam
 keywords: ["KSPROPERTY_CAMERACONTROL_IRIS_RELATIVE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_IRIS_RELATIVE
 api_location:

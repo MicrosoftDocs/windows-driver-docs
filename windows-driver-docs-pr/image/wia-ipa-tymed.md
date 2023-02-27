@@ -4,6 +4,7 @@ description: The WIA_IPA_TYMED property contains the method setting for image tr
 keywords: ["WIA_IPA_TYMED Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_TYMED
 api_location:

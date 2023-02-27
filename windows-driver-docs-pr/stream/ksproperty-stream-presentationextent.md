@@ -4,6 +4,7 @@ description: The clients sends a KSPROPERTY\_STREAM\_PRESENTATIONEXTENT request 
 keywords: ["KSPROPERTY_STREAM_PRESENTATIONEXTENT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_STREAM_PRESENTATIONEXTENT
 api_location:

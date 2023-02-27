@@ -4,6 +4,7 @@ description: The optional ContentType element specifies the main characteristics
 keywords: ["ContentType element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ContentType wscn MustHonor "" wscn Override "" wscn UsedDefault ""
 api_type:

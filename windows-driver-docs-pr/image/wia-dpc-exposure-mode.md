@@ -4,6 +4,7 @@ description: The WIA_DPC_EXPOSURE_MODE property indicates a camera's current exp
 keywords: ["WIA_DPC_EXPOSURE_MODE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_EXPOSURE_MODE
 api_location:

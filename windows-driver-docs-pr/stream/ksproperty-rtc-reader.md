@@ -4,6 +4,7 @@ description: The KSPROPERTY\_RTC\_READER property retrieves the relative time co
 keywords: ["KSPROPERTY_RTC_READER Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_RTC_READER
 api_location:

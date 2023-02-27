@@ -4,6 +4,7 @@ description: The required JobStateReasons element contains all additional inform
 keywords: ["JobStateReasons element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobStateReasons
 api_type:

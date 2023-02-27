@@ -4,6 +4,7 @@ description: The required Component element identifies the component that the cu
 keywords: ["Component element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Component
 api_type:

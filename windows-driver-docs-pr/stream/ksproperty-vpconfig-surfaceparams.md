@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VPCONFIG\_SURFACEPARAMS property specifies the vide
 keywords: ["KSPROPERTY_VPCONFIG_SURFACEPARAMS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VPCONFIG_SURFACEPARAMS
 api_location:

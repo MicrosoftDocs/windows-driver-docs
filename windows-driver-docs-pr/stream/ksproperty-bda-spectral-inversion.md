@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_SPECTRAL_INVERSION to control the settin
 keywords: ["KSPROPERTY_BDA_SPECTRAL_INVERSION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_SPECTRAL_INVERSION
 api_location:

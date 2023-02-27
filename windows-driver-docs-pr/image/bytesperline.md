@@ -4,6 +4,7 @@ description: The required BytesPerLine element specifies the number of bytes per
 keywords: ["BytesPerLine element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn BytesPerLine
 api_type:

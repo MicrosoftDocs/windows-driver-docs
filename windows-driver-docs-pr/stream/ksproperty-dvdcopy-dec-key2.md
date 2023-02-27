@@ -4,6 +4,7 @@ description: The KSPROPERTY_DVDCOPY_DEC_KEY2 property retrieves the second bus k
 keywords: ["KSPROPERTY_DVDCOPY_DEC_KEY2 Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DVDCOPY_DEC_KEY2
 api_location:

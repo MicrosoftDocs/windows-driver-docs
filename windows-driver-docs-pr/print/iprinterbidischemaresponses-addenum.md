@@ -7,6 +7,7 @@ MSHAttr:
 keywords: ["AddEnum method Print Devices", "AddEnum method Print Devices , IPrinterBidiSchemaResponses interface", "IPrinterBidiSchemaResponses interface Print Devices , AddEnum method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IPrinterBidiSchemaResponses.AddEnum
 api_type:

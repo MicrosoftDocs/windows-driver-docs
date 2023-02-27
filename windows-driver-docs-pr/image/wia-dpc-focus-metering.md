@@ -4,6 +4,7 @@ description: The WIA_DPC_FOCUS_METERING property is reserved by Microsoft for fu
 keywords: ["WIA_DPC_FOCUS_METERING Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_FOCUS_METERING
 api_location:

@@ -4,6 +4,7 @@ description: The required ScalingHeight element contains the range of allowable 
 keywords: ["ScalingHeight element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScalingHeight
 api_type:

@@ -4,6 +4,7 @@ description: The KSPROPERTY_EXTXPORT_RTC_SEARCH property searches to a relative 
 keywords: ["KSPROPERTY_EXTXPORT_RTC_SEARCH Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_EXTXPORT_RTC_SEARCH
 api_location:

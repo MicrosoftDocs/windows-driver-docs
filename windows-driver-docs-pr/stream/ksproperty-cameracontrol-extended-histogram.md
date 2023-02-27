@@ -4,6 +4,7 @@ description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_HISTOGRAM is a property ID tha
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_HISTOGRAM Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_HISTOGRAM
 api_location:

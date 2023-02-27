@@ -4,6 +4,7 @@ description: The required RetrieveImageResponse operation element returns the sc
 keywords: ["RetrieveImageResponse element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn RetrieveImageResponse
 api_type:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_GM\_RENDER\_CLOCK property is not currently support
 keywords: ["KSPROPERTY_GM_RENDER_CLOCK Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_GM_RENDER_CLOCK
 api_type:

@@ -4,6 +4,7 @@ description: The AVC_FUNCTION_GET_UNIQUE_ID function code obtains the unique ID 
 keywords: ["AVC_FUNCTION_GET_UNIQUE_ID Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVC_FUNCTION_GET_UNIQUE_ID
 api_type:

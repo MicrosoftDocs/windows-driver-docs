@@ -4,6 +4,7 @@ description: The optional CompressionQualityFactor element specifies an idealize
 keywords: ["CompressionQualityFactor element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn CompressionQualityFactor wscn MustHonor "" wscn Override "" wscn UsedDefault ""
 api_type:

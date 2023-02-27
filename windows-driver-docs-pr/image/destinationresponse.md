@@ -4,6 +4,7 @@ description: The required DestinationResponse element contains the response info
 keywords: ["DestinationResponse element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn DestinationResponse
 api_type:

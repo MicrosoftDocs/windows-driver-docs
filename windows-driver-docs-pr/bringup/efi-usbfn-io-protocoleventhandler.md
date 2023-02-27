@@ -1,7 +1,8 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.EventHandler
 description: The EventHandler function is called repeatedly to receive updates on USB bus states, receive and transmit status changes on endpoints, and set up packet on endpoint 0.
-ms.date: 08/16/2021
+ms.date: 02/24/2023
+ms.topic: reference
 ---
 
 # EFI_USBFN_IO_PROTOCOL.EventHandler

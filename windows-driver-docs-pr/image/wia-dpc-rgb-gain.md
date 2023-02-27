@@ -4,6 +4,7 @@ description: The WIA_DPC_RGB_GAIN property contains a null-terminated Unicode st
 keywords: ["WIA_DPC_RGB_GAIN Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_RGB_GAIN
 api_location:

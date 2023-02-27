@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PAGE\_HEIGHT property contains the height, in thousan
 keywords: ["WIA_IPS_PAGE_HEIGHT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PAGE_HEIGHT
 api_location:

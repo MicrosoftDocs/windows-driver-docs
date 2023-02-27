@@ -4,6 +4,7 @@ description: Learn about the 'DefaultScanTicket' element. See code examples and 
 keywords: ["DefaultScanTicket element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn DefaultScanTicket
 api_type:

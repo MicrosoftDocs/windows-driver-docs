@@ -4,6 +4,7 @@ description: The required Widths element contains the list of widths at which th
 keywords: ["Widths element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Widths
 api_type:

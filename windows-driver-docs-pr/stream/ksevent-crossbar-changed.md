@@ -4,6 +4,7 @@ description: The KSEVENT_CROSSBAR_CHANGED event propagates an action, such as a 
 keywords: ["KSEVENT_CROSSBAR_CHANGED Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_CROSSBAR_CHANGED
 api_type:

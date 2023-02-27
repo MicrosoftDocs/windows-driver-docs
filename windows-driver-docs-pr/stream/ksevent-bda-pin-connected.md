@@ -4,6 +4,7 @@ description: Clients use KSEVENT_BDA_PIN_CONNECTED to request notification when 
 keywords: ["KSEVENT_BDA_PIN_CONNECTED Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_BDA_PIN_CONNECTED
 api_location:

@@ -4,6 +4,7 @@ description: The WIA_DIP_VEND_DESC property contains a vendor description string
 keywords: ["WIA_DIP_VEND_DESC Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DIP_VEND_DESC
 api_location:

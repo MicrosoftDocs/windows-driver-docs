@@ -4,6 +4,7 @@ description: The KSEVENT\_CONNECTION\_TIMEDISCONTINUITY event allows a client to
 keywords: ["KSEVENT_CONNECTION_TIMEDISCONTINUITY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_CONNECTION_TIMEDISCONTINUITY
 api_type:

@@ -4,6 +4,7 @@ description: The TVOT_CHKBOX option type consists of a check box inside a group 
 keywords: ["TVOT_CHKBOX Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TVOT_CHKBOX
 api_location:

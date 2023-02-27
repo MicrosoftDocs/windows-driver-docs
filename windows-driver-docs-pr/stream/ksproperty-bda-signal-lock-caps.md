@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCK\_CAPS to determine the lo
 keywords: ["KSPROPERTY_BDA_SIGNAL_LOCK_CAPS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_SIGNAL_LOCK_CAPS
 api_location:

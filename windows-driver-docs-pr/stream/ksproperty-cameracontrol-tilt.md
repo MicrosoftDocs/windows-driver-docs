@@ -4,6 +4,7 @@ description: User-mode clients use the KSPROPERTY_CAMERACONTROL_TILT property to
 keywords: ["KSPROPERTY_CAMERACONTROL_TILT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_TILT
 api_location:

@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["ToUtf8 method Print Devices", "ToUtf8 method Print Devices , IOleCvt interface", "IOleCvt interface Print Devices , ToUtf8 method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IOleCvt.ToUtf8
 api_type:

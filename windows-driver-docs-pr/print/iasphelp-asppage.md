@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_AspPage method Print Devices", "get_AspPage method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_AspPage method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_AspPage
 api_type:

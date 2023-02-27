@@ -4,6 +4,7 @@ description: The WIA\_IPS\_AUTO\_DESKEW property indicates if a device should us
 keywords: ["WIA_IPS_AUTO_DESKEW Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_AUTO_DESKEW
 api_location:

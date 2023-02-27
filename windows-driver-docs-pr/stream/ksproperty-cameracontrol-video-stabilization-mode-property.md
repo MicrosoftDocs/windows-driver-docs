@@ -4,6 +4,7 @@ description: User-mode clients use this property to get or set a camera's video 
 keywords: ["KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY
 api_location:

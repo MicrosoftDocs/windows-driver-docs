@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["Print Pipeline Property Bag Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Print Pipeline Property Bag
 api_type:

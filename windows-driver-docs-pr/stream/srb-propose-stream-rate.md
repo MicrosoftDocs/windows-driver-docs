@@ -4,6 +4,7 @@ description: SRB\_PROPOSE\_STREAM\_RATE
 keywords: ["SRB_PROPOSE_STREAM_RATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SRB_PROPOSE_STREAM_RATE
 api_type:

@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_PaperNames method Print Devices", "get_PaperNames method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_PaperNames method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_PaperNames
 api_type:

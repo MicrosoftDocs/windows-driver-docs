@@ -4,6 +4,7 @@ description: The WIA_IPA_PREFERRED_FORMAT property contains the preferred format
 keywords: ["WIA_IPA_PREFERRED_FORMAT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_PREFERRED_FORMAT
 api_location:

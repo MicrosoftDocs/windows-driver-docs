@@ -4,6 +4,7 @@ description: The KSINTERFACE_MEDIA_WAVE_BUFFERED interface is not supported.
 keywords: ["KSINTERFACE_MEDIA_WAVE_BUFFERED Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSINTERFACE_MEDIA_WAVE_BUFFERED
 api_type:

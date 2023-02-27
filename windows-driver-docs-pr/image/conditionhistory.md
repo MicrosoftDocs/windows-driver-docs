@@ -4,6 +4,7 @@ description: The optional ConditionHistory element is a collection of ConditionH
 keywords: ["ConditionHistory element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ConditionHistory
 api_type:

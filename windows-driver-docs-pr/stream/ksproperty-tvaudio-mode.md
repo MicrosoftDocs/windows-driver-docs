@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TVAUDIO\_MODE property sets the audio mode for the 
 keywords: ["KSPROPERTY_TVAUDIO_MODE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TVAUDIO_MODE
 api_location:

@@ -4,6 +4,7 @@ description: The KS_AM_RATE_MaxFullDataRate property retrieves the maximum, full
 keywords: ["KS_AM_RATE_MaxFullDataRate Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KS_AM_RATE_MaxFullDataRate
 api_location:

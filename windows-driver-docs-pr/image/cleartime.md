@@ -4,6 +4,7 @@ description: The required ClearTime element specifies the time at which a condit
 keywords: ["ClearTime element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ClearTime
 api_type:

@@ -4,6 +4,7 @@ description: The required PlatenMinimumSize element specifies the smallest size 
 keywords: ["PlatenMinimumSize element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn PlatenMinimumSize
 api_type:

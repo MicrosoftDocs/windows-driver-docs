@@ -4,6 +4,7 @@ description: The AVCSTRM_ABORT_STREAMING function code cancels all the pending d
 keywords: ["AVCSTRM_ABORT_STREAMING Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVCSTRM_ABORT_STREAMING
 api_type:

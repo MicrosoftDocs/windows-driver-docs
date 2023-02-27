@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VPCONFIG\_GETVIDEOFORMAT property retrieves an arra
 keywords: ["KSPROPERTY_VPCONFIG_GETVIDEOFORMAT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VPCONFIG_GETVIDEOFORMAT
 api_location:

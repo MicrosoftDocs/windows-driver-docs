@@ -4,6 +4,7 @@ description: The required FormatValue element specifies a single supported file 
 keywords: ["FormatValue element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn FormatValue
 api_type:

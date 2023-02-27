@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_NODE_DESCRIPTORS to retrieve a list of n
 keywords: ["KSPROPERTY_BDA_NODE_DESCRIPTORS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_NODE_DESCRIPTORS
 api_location:

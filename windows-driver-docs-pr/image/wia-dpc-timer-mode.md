@@ -4,6 +4,7 @@ description: The WIA_DPC_TIMER_MODE property is reserved by Microsoft for future
 keywords: ["WIA_DPC_TIMER_MODE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_TIMER_MODE
 api_location:

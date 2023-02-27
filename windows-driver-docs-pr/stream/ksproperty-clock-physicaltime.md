@@ -4,6 +4,7 @@ description: Clients use the KSPROPERTY_CLOCK_PHYSICAL_TIME property to determin
 keywords: ["KSPROPERTY_CLOCK_PHYSICALTIME Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CLOCK_PHYSICALTIME
 api_location:

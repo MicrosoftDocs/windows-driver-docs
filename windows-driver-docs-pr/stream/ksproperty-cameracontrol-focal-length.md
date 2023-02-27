@@ -4,6 +4,7 @@ description: The KSPROPERTY\_CAMERACONTROL\_FOCAL\_LENGTH property retrieves foc
 keywords: ["KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH
 api_location:

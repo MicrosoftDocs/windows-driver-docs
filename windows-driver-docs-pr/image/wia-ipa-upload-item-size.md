@@ -4,6 +4,7 @@ description: The WIA\_IPA\_UPLOAD\_ITEM\_SIZE property is used by applications t
 keywords: ["WIA_IPA_UPLOAD_ITEM_SIZE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_UPLOAD_ITEM_SIZE
 api_location:

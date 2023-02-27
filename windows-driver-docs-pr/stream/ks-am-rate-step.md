@@ -4,6 +4,7 @@ description: The KS_AM_RATE_Step property is not yet implemented.
 keywords: ["KS_AM_RATE_Step Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KS_AM_RATE_Step
 api_location:

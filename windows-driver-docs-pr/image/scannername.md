@@ -4,6 +4,7 @@ description: The required ScannerName element specifies the administratively ass
 keywords: ["ScannerName element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScannerName xml lang "..."
 api_type:

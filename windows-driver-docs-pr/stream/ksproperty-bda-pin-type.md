@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_PIN_TYPE to retrieve the value that spec
 keywords: ["KSPROPERTY_BDA_PIN_TYPE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_PIN_TYPE
 api_location:

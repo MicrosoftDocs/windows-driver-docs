@@ -10,7 +10,8 @@ api_name:
 - EFI_RNG_ALGORITHM_LIST
 api_type:
 - NA
-ms.date: 08/20/2021
+ms.date: 02/24/2023
+ms.topic: reference
 ---
 
 # EFI_RNG_ALGORITHM_LIST structure

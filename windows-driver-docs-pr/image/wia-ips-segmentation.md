@@ -4,6 +4,7 @@ description: The WIA\_IPS\_SEGMENTATION property indicates if segmentation is to
 keywords: ["WIA_IPS_SEGMENTATION Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_SEGMENTATION
 api_location:

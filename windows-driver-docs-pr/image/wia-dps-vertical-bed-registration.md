@@ -4,6 +4,7 @@ description: The WIA_DPS_VERTICAL_BED_REGISTRATION property contains the registr
 keywords: ["WIA_DPS_VERTICAL_BED_REGISTRATION Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_VERTICAL_BED_REGISTRATION
 api_location:

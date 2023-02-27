@@ -4,6 +4,7 @@ description: The KSPROPERTY_CAMERACONTROL_EXPOSURE_RELATIVE property specifies t
 keywords: ["KSPROPERTY_CAMERACONTROL_EXPOSURE_RELATIVE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXPOSURE_RELATIVE
 api_location:

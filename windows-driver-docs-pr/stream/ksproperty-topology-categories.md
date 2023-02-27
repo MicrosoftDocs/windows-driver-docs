@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TOPOLOGY\_CATEGORIES property queries for the array
 keywords: ["KSPROPERTY_TOPOLOGY_CATEGORIES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TOPOLOGY_CATEGORIES
 api_location:

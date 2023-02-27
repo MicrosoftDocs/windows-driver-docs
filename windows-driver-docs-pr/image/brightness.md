@@ -4,6 +4,7 @@ description: The optional Brightness element specifies the relative amount to re
 keywords: ["Brightness element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Brightness wscn Override "" wscn UsedDefault ""
 api_type:

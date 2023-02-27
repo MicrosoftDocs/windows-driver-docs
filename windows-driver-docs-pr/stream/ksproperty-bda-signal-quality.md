@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_SIGNAL_QUALITY to determine the amount o
 keywords: ["KSPROPERTY_BDA_SIGNAL_QUALITY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_SIGNAL_QUALITY
 api_location:

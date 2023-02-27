@@ -4,6 +4,7 @@ description: The WIA_DPS_TRANSPARENCY property is obsolete and should not be use
 keywords: ["WIA_DPS_TRANSPARENCY Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_TRANSPARENCY
 api_location:
