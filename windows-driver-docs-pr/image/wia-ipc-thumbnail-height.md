@@ -4,6 +4,7 @@ description: The WIA_IPC_THUMBNAIL_HEIGHT property contains the current height, 
 keywords: ["WIA_IPC_THUMBNAIL_HEIGHT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPC_THUMBNAIL_HEIGHT
 api_location:

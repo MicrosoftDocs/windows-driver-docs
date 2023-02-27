@@ -4,6 +4,7 @@ description: The AVC_FUNCTION_GET_PIN_DESCRIPTOR function code obtains the pin d
 keywords: ["AVC_FUNCTION_GET_PIN_DESCRIPTOR Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVC_FUNCTION_GET_PIN_DESCRIPTOR
 api_type:

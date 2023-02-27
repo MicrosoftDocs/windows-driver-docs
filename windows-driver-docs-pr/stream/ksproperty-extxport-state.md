@@ -4,6 +4,7 @@ description: The KSPROPERTY_EXTXPORT_STATE property sets or gets an external dev
 keywords: ["KSPROPERTY_EXTXPORT_STATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_EXTXPORT_STATE
 api_location:

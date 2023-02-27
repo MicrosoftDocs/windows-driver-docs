@@ -4,6 +4,7 @@ description: The required AutoExposure element specifies that the WSD Scan Servi
 keywords: ["AutoExposure element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn AutoExposure
 api_type:

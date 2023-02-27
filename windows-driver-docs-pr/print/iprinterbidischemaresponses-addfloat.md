@@ -7,6 +7,7 @@ MSHAttr:
 keywords: ["AddFloat method Print Devices", "AddFloat method Print Devices , IPrinterBidiSchemaResponses interface", "IPrinterBidiSchemaResponses interface Print Devices , AddFloat method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IPrinterBidiSchemaResponses.AddFloat
 api_type:

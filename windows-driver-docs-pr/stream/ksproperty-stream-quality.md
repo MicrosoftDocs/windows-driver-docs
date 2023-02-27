@@ -4,6 +4,7 @@ description: The KSPROPERTY\_STREAM\_QUALITY property is an optional property th
 keywords: ["KSPROPERTY_STREAM_QUALITY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_STREAM_QUALITY
 api_location:

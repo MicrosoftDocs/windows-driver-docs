@@ -4,6 +4,7 @@ description: The KSINTERFACE_STANDARD_LOOPED_STREAMING interface is used by clie
 keywords: ["KSINTERFACE_STANDARD_LOOPED_STREAMING Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSINTERFACE_STANDARD_LOOPED_STREAMING
 api_type:

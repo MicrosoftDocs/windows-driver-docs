@@ -4,6 +4,7 @@ description: The WIA_DPC_CONTRAST property indicates the perceived contrast of a
 keywords: ["WIA_DPC_CONTRAST Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_CONTRAST
 api_location:

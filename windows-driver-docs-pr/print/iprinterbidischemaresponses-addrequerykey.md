@@ -7,6 +7,7 @@ MSHAttr:
 keywords: ["AddRequeryKey method Print Devices", "AddRequeryKey method Print Devices , IPrinterBidiSchemaResponses interface", "IPrinterBidiSchemaResponses interface Print Devices , AddRequeryKey method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IPrinterBidiSchemaResponses.AddRequeryKey
 api_type:

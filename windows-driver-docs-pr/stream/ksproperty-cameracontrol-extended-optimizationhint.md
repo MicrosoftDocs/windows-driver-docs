@@ -4,6 +4,7 @@ description: Camera drivers may optimize their capture operation based on hints 
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_OPTIMIZATIONHINT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_OPTIMIZATIONHINT
 api_location:

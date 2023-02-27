@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["GetTree method Print Devices", "GetTree method Print Devices , ISNMP interface", "ISNMP interface Print Devices , GetTree method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ISNMP.GetTree
 api_location:

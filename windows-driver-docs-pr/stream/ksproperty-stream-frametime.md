@@ -4,6 +4,7 @@ description: The KSPROPERTY\_STREAM\_FRAMETIME property allows a client to deter
 keywords: ["KSPROPERTY_STREAM_FRAMETIME Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_STREAM_FRAMETIME
 api_location:

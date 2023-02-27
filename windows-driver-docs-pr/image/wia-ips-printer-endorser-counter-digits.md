@@ -4,6 +4,7 @@ description: The WIA_IPS_PRINTER_ENDORSER_COUNTER_DIGITS property describes the 
 keywords: ["WIA_IPS_PRINTER_ENDORSER_COUNTER_DIGITS Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PRINTER_ENDORSER_COUNTER_DIGITS
 api_location:

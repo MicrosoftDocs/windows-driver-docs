@@ -4,6 +4,7 @@ description: The WIA_DPC_CAPTURE_MODE property sets the image capture mode.
 keywords: ["WIA_DPC_CAPTURE_MODE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_CAPTURE_MODE
 api_location:

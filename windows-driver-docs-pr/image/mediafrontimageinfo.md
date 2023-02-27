@@ -4,6 +4,7 @@ description: The required MediaFrontImageInfo element contains the image informa
 keywords: ["MediaFrontImageInfo element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn MediaFrontImageInfo
 api_type:

@@ -4,6 +4,7 @@ description: The WIA_IPS_XPOS property contains the x-coordinate, in pixels, of 
 keywords: ["WIA_IPS_XPOS Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_XPOS
 api_location:

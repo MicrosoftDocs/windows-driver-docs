@@ -4,6 +4,7 @@ description: The KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT property converts the
 keywords: ["KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT
 api_location:

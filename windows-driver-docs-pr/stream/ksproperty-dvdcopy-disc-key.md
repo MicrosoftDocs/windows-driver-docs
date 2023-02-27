@@ -4,6 +4,7 @@ description: The KSPROPERTY_DVDCOPY_DISC_KEY property retrieves the disc key inf
 keywords: ["KSPROPERTY_DVDCOPY_DISC_KEY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DVDCOPY_DISC_KEY
 api_location:

@@ -4,6 +4,7 @@ description: This extended property control is used to control digital video sta
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOSTABILIZATION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOSTABILIZATION
 api_location:

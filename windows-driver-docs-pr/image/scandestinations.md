@@ -4,6 +4,7 @@ description: The required ScanDestinations element is a collection of all of the
 keywords: ["ScanDestinations element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScanDestinations
 api_type:

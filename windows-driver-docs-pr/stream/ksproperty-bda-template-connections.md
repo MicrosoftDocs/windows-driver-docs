@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_TEMPLATE_CONNECTIONS to retrieve a list 
 keywords: ["KSPROPERTY_BDA_TEMPLATE_CONNECTIONS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_TEMPLATE_CONNECTIONS
 api_location:

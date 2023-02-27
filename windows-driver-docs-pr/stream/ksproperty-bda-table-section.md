@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_TABLE_SECTION to inform nodes about the 
 keywords: ["KSPROPERTY_BDA_TABLE_SECTION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_TABLE_SECTION
 api_location:

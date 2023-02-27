@@ -4,6 +4,7 @@ description: The optional ScanRegion element specifies the area to scan within t
 keywords: ["ScanRegion element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScanRegion
 api_type:

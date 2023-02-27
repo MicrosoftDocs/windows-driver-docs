@@ -4,6 +4,7 @@ description: The WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION property indicates if
 keywords: ["WIA_IPS_SUPPORTS_CHILD_ITEM_CREATION Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_SUPPORTS_CHILD_ITEM_CREATION
 api_location:

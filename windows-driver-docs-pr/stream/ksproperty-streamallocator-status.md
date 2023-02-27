@@ -4,6 +4,7 @@ description: The KSPROPERTY\_STREAMALLOCATOR\_STATUS property retrieves the curr
 keywords: ["KSPROPERTY_STREAMALLOCATOR_STATUS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_STREAMALLOCATOR_STATUS
 api_location:

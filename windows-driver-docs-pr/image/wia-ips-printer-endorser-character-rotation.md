@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PRINTER\_ENDORSER\_CHARACTER\_ROTATION property is us
 keywords: ["WIA_IPS_PRINTER_ENDORSER_CHARACTER_ROTATION Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PRINTER_ENDORSER_CHARACTER_ROTATION
 api_location:

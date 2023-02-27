@@ -4,6 +4,7 @@ description: The KSPROPERTY\_GM\_TIMESTAMP\_CLOCK property is not currently supp
 keywords: ["KSPROPERTY_GM_TIMESTAMP_CLOCK Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_GM_TIMESTAMP_CLOCK
 api_type:

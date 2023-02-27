@@ -4,6 +4,7 @@ description: The required MediaFront element contains all parameters that are sp
 keywords: ["MediaFront element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn MediaFront
 api_type:

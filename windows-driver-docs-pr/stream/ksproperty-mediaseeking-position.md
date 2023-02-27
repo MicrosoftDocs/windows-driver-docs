@@ -4,6 +4,7 @@ description: KSPROPERTY_MEDIASEEKING_POSITION retrieves the media time of a filt
 keywords: ["KSPROPERTY_MEDIASEEKING_POSITION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_MEDIASEEKING_POSITION
 api_location:

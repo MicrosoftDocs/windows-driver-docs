@@ -4,6 +4,7 @@ description: The WIA\_IPS\_OPTICAL\_XRES property contains the highest-supported
 keywords: ["WIA_IPS_OPTICAL_XRES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_OPTICAL_XRES
 api_location:

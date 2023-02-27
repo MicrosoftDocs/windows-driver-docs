@@ -4,6 +4,7 @@ description: The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_SCENEMODE property ID that
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_SCENEMODE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_SCENEMODE
 api_location:

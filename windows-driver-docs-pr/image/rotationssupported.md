@@ -4,6 +4,7 @@ description: The required RotationsSupported element contains the list of rotati
 keywords: ["RotationsSupported element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn RotationsSupported
 api_type:

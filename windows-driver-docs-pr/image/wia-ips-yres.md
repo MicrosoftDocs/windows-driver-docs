@@ -4,6 +4,7 @@ description: The WIA_IPS_YRES property contains the current vertical resolution 
 keywords: ["WIA_IPS_YRES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_YRES
 api_location:

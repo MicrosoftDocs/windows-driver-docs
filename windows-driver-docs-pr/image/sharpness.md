@@ -4,6 +4,7 @@ description: The optional Sharpness element specifies the relative amount to red
 keywords: ["Sharpness element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Sharpness wscn Override "" wscn UsedDefault ""
 api_type:

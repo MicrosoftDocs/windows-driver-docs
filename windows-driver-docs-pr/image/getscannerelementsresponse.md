@@ -4,6 +4,7 @@ description: The required GetScannerElementsResponse element contains the WSD Sc
 keywords: ["GetScannerElementsResponse element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn GetScannerElementsResponse
 api_type:

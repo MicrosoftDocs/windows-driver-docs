@@ -4,6 +4,7 @@ description: The required AutoExposureSupported element specifies whether the sc
 keywords: ["AutoExposureSupported element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn AutoExposureSupported
 api_type:

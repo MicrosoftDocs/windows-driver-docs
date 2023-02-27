@@ -4,6 +4,7 @@ description: Clients use KSMETHOD_BDA_START_CHANGES to reset a change list.
 keywords: ["KSMETHOD_BDA_START_CHANGES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSMETHOD_BDA_START_CHANGES
 api_location:

@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_MAX\_HEIGHT property alo
 keywords: ["WIA_IPS_PRINTER_ENDORSER_GRAPHICS_MAX_HEIGHT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PRINTER_ENDORSER_GRAPHICS_MAX_HEIGHT
 api_location:

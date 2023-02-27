@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["DecodeUnicodeName method Print Devices", "DecodeUnicodeName method Print Devices , IOleCvt interface", "IOleCvt interface Print Devices , DecodeUnicodeName method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IOleCvt.DecodeUnicodeName
 api_type:

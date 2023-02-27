@@ -4,6 +4,7 @@ description: The KSPROPERTY\_WAVE\_COMPATIBLE\_CAPABILITIES property determines 
 keywords: ["KSPROPERTY_WAVE_COMPATIBLE_CAPABILITIES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_WAVE_COMPATIBLE_CAPABILITIES
 api_location:

@@ -4,6 +4,7 @@ description: The KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS property informs the 
 keywords: ["KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS
 api_location:

@@ -4,6 +4,7 @@ description: The required body element provides text that is displayed in the ev
 keywords: ["body element Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - body
 api_type:

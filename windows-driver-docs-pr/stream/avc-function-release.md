@@ -4,6 +4,7 @@ description: The AVC_FUNCTION_RELEASE function code causes avc.sys to release an
 keywords: ["AVC_FUNCTION_RELEASE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVC_FUNCTION_RELEASE
 api_type:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VPCONFIG\_GETCONNECTINFO property retrieves all pos
 keywords: ["KSPROPERTY_VPCONFIG_GETCONNECTINFO Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VPCONFIG_GETCONNECTINFO
 api_location:

@@ -4,6 +4,7 @@ description: ScannerDescription element
 keywords: ["ScannerDescription element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScannerDescription
 api_type:

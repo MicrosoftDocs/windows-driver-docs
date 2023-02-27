@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOCONTROL\_MODE property controls the mode of im
 keywords: ["KSPROPERTY_VIDEOCONTROL_MODE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOCONTROL_MODE
 api_location:

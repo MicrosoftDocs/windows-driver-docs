@@ -4,6 +4,7 @@ description: The WIA_DPS_DOCUMENT_HANDLING_CAPABILITIES property contains the ca
 keywords: ["WIA_DPS_DOCUMENT_HANDLING_CAPABILITIES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_DOCUMENT_HANDLING_CAPABILITIES
 api_location:

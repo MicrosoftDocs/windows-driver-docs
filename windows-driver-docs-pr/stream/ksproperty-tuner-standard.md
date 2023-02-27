@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TUNER\_STANDARD property retrieves the current anal
 keywords: ["KSPROPERTY_TUNER_STANDARD Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TUNER_STANDARD
 api_location:

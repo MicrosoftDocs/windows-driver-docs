@@ -4,6 +4,7 @@ description: The KSMETHOD\_STREAMALLOCATOR\_ALLOC method is used by a client to 
 keywords: ["KSMETHOD_STREAMALLOCATOR_ALLOC Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSMETHOD_STREAMALLOCATOR_ALLOC
 api_type:

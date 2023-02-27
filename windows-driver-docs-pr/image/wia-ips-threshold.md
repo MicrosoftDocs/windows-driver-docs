@@ -4,6 +4,7 @@ description: The WIA_IPS_THRESHOLD property contains the current hardware thresh
 keywords: ["WIA_IPS_THRESHOLD Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_THRESHOLD
 api_location:

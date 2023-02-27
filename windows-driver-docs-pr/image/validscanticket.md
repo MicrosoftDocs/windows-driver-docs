@@ -4,6 +4,7 @@ description: The optional ValidScanTicket element contains a valid ScanTicket.
 keywords: ["ValidScanTicket element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ValidScanTicket
 api_type:

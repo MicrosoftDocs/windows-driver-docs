@@ -4,6 +4,7 @@ description: The WIA_DPS_MAX_SCAN_TIME property contains the maximum time to sca
 keywords: ["WIA_DPS_MAX_SCAN_TIME Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_MAX_SCAN_TIME
 api_location:

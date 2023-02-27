@@ -4,6 +4,7 @@ description: The WIA_IPA_COLOR_PROFILE property is reserved by Microsoft for fut
 keywords: ["WIA_IPA_COLOR_PROFILE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_COLOR_PROFILE
 api_location:

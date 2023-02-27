@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_IsTCPMonSupported method Print Devices", "get_IsTCPMonSupported method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_IsTCPMonSupported method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_IsTCPMonSupported
 api_type:

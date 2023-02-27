@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOCOMPRESSION\_PFRAMES\_PER\_KEYFRAME property c
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_PFRAMES_PER_KEYFRAME Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOCOMPRESSION_PFRAMES_PER_KEYFRAME
 api_location:

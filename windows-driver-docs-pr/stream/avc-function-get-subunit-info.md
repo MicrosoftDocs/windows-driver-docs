@@ -4,6 +4,7 @@ description: The AVC_FUNCTION_GET_SUBUNIT_INFO function code obtains the subunit
 keywords: ["AVC_FUNCTION_GET_SUBUNIT_INFO Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVC_FUNCTION_GET_SUBUNIT_INFO
 api_type:

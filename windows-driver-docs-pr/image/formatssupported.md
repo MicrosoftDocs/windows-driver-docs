@@ -4,6 +4,7 @@ description: The required FormatsSupported element is a collection of elements t
 keywords: ["FormatsSupported element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn FormatsSupported
 api_type:

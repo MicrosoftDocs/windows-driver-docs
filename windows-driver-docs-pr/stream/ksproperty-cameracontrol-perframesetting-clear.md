@@ -4,6 +4,7 @@ description: The KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_CLEAR property ID t
 keywords: ["KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CLEAR Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CLEAR
 api_location:

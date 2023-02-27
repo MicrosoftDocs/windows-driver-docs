@@ -4,6 +4,7 @@ description: The KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE property inform
 keywords: ["KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE
 api_location:

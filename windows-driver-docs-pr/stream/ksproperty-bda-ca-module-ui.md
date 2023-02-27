@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_CA_MODULE_UI to retrieve interface data 
 keywords: ["KSPROPERTY_BDA_CA_MODULE_UI Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_CA_MODULE_UI
 api_location:

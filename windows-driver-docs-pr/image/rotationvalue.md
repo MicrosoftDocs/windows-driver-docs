@@ -4,6 +4,7 @@ description: The required RotationValue element specifies a single rotation valu
 keywords: ["RotationValue element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn RotationValue
 api_type:

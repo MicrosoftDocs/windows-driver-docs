@@ -4,6 +4,7 @@ description: The WIA_IPA_SUPPRESS_PROPERTY_PAGE property specifies whether to su
 keywords: ["WIA_IPA_SUPPRESS_PROPERTY_PAGE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_SUPPRESS_PROPERTY_PAGE
 api_location:

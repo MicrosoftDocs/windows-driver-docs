@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_RF_TUNER_RANGE to control the tuner rang
 keywords: ["KSPROPERTY_BDA_RF_TUNER_RANGE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_RF_TUNER_RANGE
 api_location:

@@ -4,6 +4,7 @@ description: SRB\_CLOSE\_MASTER\_CLOCK
 keywords: ["SRB_CLOSE_MASTER_CLOCK Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SRB_CLOSE_MASTER_CLOCK
 api_type:

@@ -4,6 +4,7 @@ description: The required ScanRegionHeight element specifies the height of the s
 keywords: ["ScanRegionHeight element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScanRegionHeight wscn MustHonor "" wscn Override "" wscn UsedDefault ""
 api_type:

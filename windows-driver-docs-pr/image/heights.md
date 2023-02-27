@@ -4,6 +4,7 @@ description: The required Heights element contains the list of heights at which 
 keywords: ["Heights element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Heights
 api_type:

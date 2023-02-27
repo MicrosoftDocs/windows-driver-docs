@@ -4,6 +4,7 @@ description: KSPROPERTY_CAMERACONTROL_EXTENDED_RELATIVEPANELOPTIMIZATION is a pr
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_RELATIVEPANELOPTIMIZATION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_RELATIVEPANELOPTIMIZATION
 api_location:
@@ -11,7 +12,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 07/07/2020
-ms.topic: article
 ---
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_RELATIVEPANELOPTIMIZATION

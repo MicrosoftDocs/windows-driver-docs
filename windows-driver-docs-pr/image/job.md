@@ -4,6 +4,7 @@ description: The required Job element contains all elements that are associated 
 keywords: ["Job element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Job
 api_type:

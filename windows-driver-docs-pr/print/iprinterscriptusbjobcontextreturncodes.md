@@ -7,6 +7,7 @@ MSHAttr:
 keywords: ["IPrinterScriptUsbJobContextReturnCodes interface Print Devices", "IPrinterScriptUsbJobContextReturnCodes interface Print Devices , described"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IPrinterScriptUsbJobContextReturnCodes
 api_type:

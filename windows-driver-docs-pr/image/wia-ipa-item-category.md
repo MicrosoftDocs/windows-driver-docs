@@ -4,6 +4,7 @@ description: The WIA_IPA_ITEM_CATEGORY property contains grouped categories for 
 keywords: ["WIA_IPA_ITEM_CATEGORY Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_ITEM_CATEGORY
 api_location:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOPROCAMP\_SATURATION property controls the satu
 keywords: ["KSPROPERTY_VIDEOPROCAMP_SATURATION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOPROCAMP_SATURATION
 api_location:

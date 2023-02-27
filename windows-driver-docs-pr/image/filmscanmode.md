@@ -4,6 +4,7 @@ description: The optional FilmScanMode element specifies the exposure type of th
 keywords: ["FilmScanMode element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn FilmScanMode wscn MustHonor "" wscn Override "" wscn UsedDefault ""
 api_type:

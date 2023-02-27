@@ -4,6 +4,7 @@ description: The optional Format element indicates a single file format and comp
 keywords: ["Format element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Format wscn Override "" wscn UsedDefault ""
 api_type:

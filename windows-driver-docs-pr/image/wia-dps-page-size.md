@@ -4,6 +4,7 @@ description: The WIA_DPS_PAGE_SIZE property contains the size of the page that i
 keywords: ["WIA_DPS_PAGE_SIZE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_PAGE_SIZE
 api_location:

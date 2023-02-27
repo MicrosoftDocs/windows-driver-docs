@@ -4,6 +4,7 @@ description: The AVC_FUNCTION_GET_PIN_COUNT function code obtains the number of 
 keywords: ["AVC_FUNCTION_GET_PIN_COUNT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVC_FUNCTION_GET_PIN_COUNT
 api_type:

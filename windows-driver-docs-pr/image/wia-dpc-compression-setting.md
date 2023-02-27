@@ -4,6 +4,7 @@ description: The WIA_DPC_COMPRESSION_SETTING property contains either a range or
 keywords: ["WIA_DPC_COMPRESSION_SETTING Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_COMPRESSION_SETTING
 api_location:

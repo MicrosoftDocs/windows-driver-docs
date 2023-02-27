@@ -4,6 +4,7 @@ description: The required ScannerStatus element contains the current status of t
 keywords: ["ScannerStatus element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScannerStatus
 api_type:

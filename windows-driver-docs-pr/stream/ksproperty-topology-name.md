@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TOPOLOGY\_NAME property provides the localized Unic
 keywords: ["KSPROPERTY_TOPOLOGY_NAME Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TOPOLOGY_NAME
 api_location:

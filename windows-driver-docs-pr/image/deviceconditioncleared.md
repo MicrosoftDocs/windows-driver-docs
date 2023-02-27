@@ -4,6 +4,7 @@ description: The required DeviceConditionCleared element contains information ab
 keywords: ["DeviceConditionCleared element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn DeviceConditionCleared
 api_type:

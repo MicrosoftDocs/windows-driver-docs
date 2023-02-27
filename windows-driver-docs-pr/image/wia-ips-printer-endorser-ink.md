@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PRINTER\_ENDORSER\_INK property is used to report the
 keywords: ["WIA_IPS_PRINTER_ENDORSER_INK Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PRINTER_ENDORSER_INK
 api_location:

@@ -4,6 +4,7 @@ description: The WIA\_IPS\_DITHER\_SELECT property is reserved by Microsoft for 
 keywords: ["WIA_IPS_DITHER_SELECT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_DITHER_SELECT
 api_location:

@@ -4,6 +4,7 @@ description: The WIA\_IPC\_AUDIO\_DATA property is obsolete and should not be us
 keywords: ["WIA_IPC_AUDIO_DATA Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPC_AUDIO_DATA
 api_location:

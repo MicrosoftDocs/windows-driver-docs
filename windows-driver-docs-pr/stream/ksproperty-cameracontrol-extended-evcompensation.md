@@ -4,6 +4,7 @@ description: The EV Compensation property allows adjustment of exposure control 
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_EVCOMPENSATION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_EVCOMPENSATION
 api_location:

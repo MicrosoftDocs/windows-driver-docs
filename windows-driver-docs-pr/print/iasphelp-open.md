@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["Open method Print Devices", "Open method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , Open method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.Open
 api_type:

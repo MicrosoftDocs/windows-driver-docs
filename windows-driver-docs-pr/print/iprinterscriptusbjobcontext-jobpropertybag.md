@@ -7,6 +7,7 @@ MSHAttr:
 keywords: ["JobPropertyBag method Print Devices", "JobPropertyBag method Print Devices , IPrinterScriptUsbJobContext interface", "IPrinterScriptUsbJobContext interface Print Devices , JobPropertyBag method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IPrinterScriptUsbJobContext.JobPropertyBag
 api_type:

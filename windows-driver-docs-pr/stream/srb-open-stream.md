@@ -4,6 +4,7 @@ description: SRB\_OPEN\_STREAM
 keywords: ["SRB_OPEN_STREAM Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SRB_OPEN_STREAM
 api_type:

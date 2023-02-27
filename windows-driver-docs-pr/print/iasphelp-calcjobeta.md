@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["CalcJobETA method Print Devices", "CalcJobETA method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , CalcJobETA method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.CalcJobETA
 api_type:

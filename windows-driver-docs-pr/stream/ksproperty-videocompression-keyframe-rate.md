@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOCOMPRESSION\_KEYFRAME\_RATE property controls 
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_KEYFRAME_RATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOCOMPRESSION_KEYFRAME_RATE
 api_location:

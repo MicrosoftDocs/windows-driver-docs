@@ -4,6 +4,7 @@ description: This property gets the capture frame rate when the photo mode for t
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOFRAMERATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOFRAMERATE
 api_location:

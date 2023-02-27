@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PRINTER\_ENDORSER\_NUM\_LINES property specifies the 
 keywords: ["WIA_IPS_PRINTER_ENDORSER_NUM_LINES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PRINTER_ENDORSER_NUM_LINES
 api_location:

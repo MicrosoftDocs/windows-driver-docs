@@ -4,6 +4,7 @@ description: User-mode clients use this property to get or set a camera's region
 keywords: ["KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY
 api_location:

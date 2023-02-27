@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_SIGNAL_LOCKED to determine whether a sig
 keywords: ["KSPROPERTY_BDA_SIGNAL_LOCKED Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_SIGNAL_LOCKED
 api_location:

@@ -4,6 +4,7 @@ description: The WIA_DPC_TIMELAPSE_NUMBER property contains the number of images
 keywords: ["WIA_DPC_TIMELAPSE_NUMBER Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_TIMELAPSE_NUMBER
 api_location:

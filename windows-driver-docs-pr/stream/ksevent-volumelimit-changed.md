@@ -4,6 +4,7 @@ description: The KSEVENT\_VOLUMELIMIT\_CHANGED event propagates an a volume chan
 keywords: ["KSEVENT_VOLUMELIMIT_CHANGED Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_VOLUMELIMIT_CHANGED
 api_type:

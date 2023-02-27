@@ -4,6 +4,7 @@ description: The KSEVENTSETID\_Connection event set specifies the general events
 keywords: ["KSEVENTSETID_Connection Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENTSETID_Connection
 api_type:

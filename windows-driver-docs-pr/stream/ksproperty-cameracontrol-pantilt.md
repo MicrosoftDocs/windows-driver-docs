@@ -4,6 +4,7 @@ description: The KSPROPERTY_CAMERACONTROL_PANTILT property specifies absolute pa
 keywords: ["KSPROPERTY_CAMERACONTROL_PANTILT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_PANTILT
 api_location:

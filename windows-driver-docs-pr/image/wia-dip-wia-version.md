@@ -4,6 +4,7 @@ description: The WIA_DIP_WIA_VERSION property contains the number (as a string) 
 keywords: ["WIA_DIP_WIA_VERSION Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DIP_WIA_VERSION
 api_location:

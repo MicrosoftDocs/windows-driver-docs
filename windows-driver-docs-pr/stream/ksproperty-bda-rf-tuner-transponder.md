@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_RF_TUNER_TRANSPONDER to inform the tuner
 keywords: ["KSPROPERTY_BDA_RF_TUNER_TRANSPONDER Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_RF_TUNER_TRANSPONDER
 api_location:

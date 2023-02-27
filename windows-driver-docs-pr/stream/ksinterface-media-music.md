@@ -4,6 +4,7 @@ description: The KSINTERFACE_MEDIA_MUSIC interface is not supported.
 keywords: ["KSINTERFACE_MEDIA_MUSIC Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSINTERFACE_MEDIA_MUSIC
 api_type:

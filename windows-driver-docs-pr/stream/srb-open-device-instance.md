@@ -4,6 +4,7 @@ description: SRB\_OPEN\_DEVICE\_INSTANCE
 keywords: ["SRB_OPEN_DEVICE_INSTANCE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SRB_OPEN_DEVICE_INSTANCE
 api_type:

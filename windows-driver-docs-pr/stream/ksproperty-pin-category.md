@@ -4,6 +4,7 @@ description: The client uses the KSPROPERTY_PIN_CATEGORY property to retrieve th
 keywords: ["KSPROPERTY_PIN_CATEGORY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_PIN_CATEGORY
 api_location:

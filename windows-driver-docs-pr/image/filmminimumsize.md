@@ -4,6 +4,7 @@ description: The required FilmMinimumSize element specifies the smallest size or
 keywords: ["FilmMinimumSize element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn FilmMinimumSize
 api_type:

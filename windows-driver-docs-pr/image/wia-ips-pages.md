@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PAGES property contains the current number of pages t
 keywords: ["WIA_IPS_PAGES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PAGES
 api_location:

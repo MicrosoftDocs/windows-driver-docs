@@ -4,6 +4,7 @@ description: The WIA_IPS_ROTATION property contains the current rotation setting
 keywords: ["WIA_IPS_ROTATION Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_ROTATION
 api_location:

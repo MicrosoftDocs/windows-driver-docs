@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PRINTER\_ENDORSER\_YOFFSET property is used to config
 keywords: ["WIA_IPS_PRINTER_ENDORSER_YOFFSET Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PRINTER_ENDORSER_YOFFSET
 api_location:

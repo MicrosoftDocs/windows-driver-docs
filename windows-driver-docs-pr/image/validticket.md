@@ -4,6 +4,7 @@ description: The required ValidTicket element indicates whether a client's ScanT
 keywords: ["ValidTicket element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ValidTicket
 api_type:

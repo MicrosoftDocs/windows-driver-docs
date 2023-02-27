@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOPROCAMP\_BACKLIGHT\_COMPENSATION property cont
 keywords: ["KSPROPERTY_VIDEOPROCAMP_BACKLIGHT_COMPENSATION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOPROCAMP_BACKLIGHT_COMPENSATION
 api_location:

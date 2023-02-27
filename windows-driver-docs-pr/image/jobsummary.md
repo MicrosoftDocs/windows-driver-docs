@@ -4,6 +4,7 @@ description: The optional JobSummary element contains a summary about a scan job
 keywords: ["JobSummary element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobSummary
 api_type:

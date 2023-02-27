@@ -4,6 +4,7 @@ description: The required GetJobHistoryRequest element requests a summary of job
 keywords: ["GetJobHistoryRequest element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn GetJobHistoryRequest
 api_type:

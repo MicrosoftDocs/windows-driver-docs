@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEDECODER\_STATUS property retrieves status infor
 keywords: ["KSPROPERTY_VIDEODECODER_STATUS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEODECODER_STATUS
 api_location:

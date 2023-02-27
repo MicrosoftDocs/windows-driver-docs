@@ -4,6 +4,7 @@ description: In the stream class model, clients use the KSPROPERTY_CONNECTION_AL
 keywords: ["KSPROPERTY_CONNECTION_ALLOCATORFRAMING Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CONNECTION_ALLOCATORFRAMING
 api_location:

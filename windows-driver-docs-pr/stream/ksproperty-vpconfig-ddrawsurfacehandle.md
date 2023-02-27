@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VPCONFIG\_DDRAWSURFACEHANDLE property returns the M
 keywords: ["KSPROPERTY_VPCONFIG_DDRAWSURFACEHANDLE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VPCONFIG_DDRAWSURFACEHANDLE
 api_location:

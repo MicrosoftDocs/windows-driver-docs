@@ -4,6 +4,7 @@ description: AVStream clients use the KSPROPERTY_CONNECTION_ALLOCATORFRAMING_EX 
 keywords: ["KSPROPERTY_CONNECTION_ALLOCATORFRAMING_EX Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CONNECTION_ALLOCATORFRAMING_EX
 api_location:

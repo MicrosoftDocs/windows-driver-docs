@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_TRANSMISSION_MODE to control the setting
 keywords: ["KSPROPERTY_BDA_TRANSMISSION_MODE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_TRANSMISSION_MODE
 api_location:

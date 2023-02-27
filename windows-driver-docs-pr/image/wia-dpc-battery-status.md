@@ -4,6 +4,7 @@ description: The WIA_DPC_BATTERY_STATUS property defines the percentage of batte
 keywords: ["WIA_DPC_BATTERY_STATUS Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_BATTERY_STATUS
 api_location:

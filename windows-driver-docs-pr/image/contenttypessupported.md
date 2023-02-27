@@ -4,6 +4,7 @@ description: The required ContentTypesSupported element contains a list of keywo
 keywords: ["ContentTypesSupported element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ContentTypesSupported
 api_type:

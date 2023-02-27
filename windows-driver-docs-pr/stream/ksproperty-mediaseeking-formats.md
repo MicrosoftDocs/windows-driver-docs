@@ -4,6 +4,7 @@ description: The KSPROPERTY_MEDIASEEKING_FORMATS property retrieves the media ti
 keywords: ["KSPROPERTY_MEDIASEEKING_FORMATS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_MEDIASEEKING_FORMATS
 api_location:

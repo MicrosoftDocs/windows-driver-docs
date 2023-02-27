@@ -4,6 +4,7 @@ description: The WIA_IPA_PIXELS_PER_LINE property contains the number of pixels 
 keywords: ["WIA_IPA_PIXELS_PER_LINE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_PIXELS_PER_LINE
 api_location:

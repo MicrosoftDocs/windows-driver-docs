@@ -4,6 +4,7 @@ description: The WIA_IPA_DEPTH property contains the bit depth setting of an ima
 keywords: ["WIA_IPA_DEPTH Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_DEPTH
 api_location:

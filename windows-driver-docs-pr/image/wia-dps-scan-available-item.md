@@ -4,6 +4,7 @@ description: The WIA_DPS_SCAN_AVAILABLE_ITEM property provides the name of the i
 keywords: ["WIA_DPS_SCAN_AVAILABLE_ITEM Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_SCAN_AVAILABLE_ITEM
 api_location:

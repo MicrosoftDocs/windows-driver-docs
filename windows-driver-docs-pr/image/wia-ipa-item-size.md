@@ -4,6 +4,7 @@ description: The WIA_IPA_ITEM_SIZE property contains the current size, in bytes,
 keywords: ["WIA_IPA_ITEM_SIZE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_ITEM_SIZE
 api_location:

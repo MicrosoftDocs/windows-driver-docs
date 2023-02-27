@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VPCONFIG\_NUMCONNECTINFO property obtains the maxim
 keywords: ["KSPROPERTY_VPCONFIG_NUMCONNECTINFO Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VPCONFIG_NUMCONNECTINFO
 api_location:

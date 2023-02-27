@@ -4,6 +4,7 @@ description: The KSPROPERTY\_WAVE\_VOLUME property specifies a wave device's vol
 keywords: ["KSPROPERTY_WAVE_VOLUME Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_WAVE_VOLUME
 api_location:

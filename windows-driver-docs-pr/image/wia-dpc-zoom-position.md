@@ -4,6 +4,7 @@ description: The WIA_DPC_ZOOM_POSITION property is reserved by Microsoft for fut
 keywords: ["WIA_DPC_ZOOM_POSITION Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_ZOOM_POSITION
 api_location:

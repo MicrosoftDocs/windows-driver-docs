@@ -4,6 +4,7 @@ description: This extended property control is used by the client to control an 
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_IRTORCHMODE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_IRTORCHMODE
 api_location:
@@ -11,8 +12,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 04/03/2019
-ms.topic: article
-ms.custom: 19H1
 ---
 
 # KSPROPERTY_CAMERACONTROL_EXTENDED_IRTORCHMODE

@@ -4,6 +4,7 @@ description: User-mode clients use this property to get or set a camera's flash 
 keywords: ["KSPROPERTY_CAMERACONTROL_FLASH_PROPERTY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_FLASH_PROPERTY
 api_location:

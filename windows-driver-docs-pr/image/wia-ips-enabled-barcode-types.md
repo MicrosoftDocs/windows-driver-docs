@@ -4,6 +4,7 @@ description: The WIA\_IPS\_ENABLED\_BARCODE\_TYPES property is used to select th
 keywords: ["WIA_IPS_ENABLED_BARCODE_TYPES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_ENABLED_BARCODE_TYPES
 api_location:

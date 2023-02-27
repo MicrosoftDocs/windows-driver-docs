@@ -4,6 +4,7 @@ description: The KSPROPERTY_DVDCOPY_CHLG_KEY property transfers the bus challeng
 keywords: ["KSPROPERTY_DVDCOPY_CHLG_KEY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DVDCOPY_CHLG_KEY
 api_location:

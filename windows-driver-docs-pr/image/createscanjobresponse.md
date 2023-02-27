@@ -4,6 +4,7 @@ description: The required CreateScanJobResponse element contains the WSD Scan Se
 keywords: ["CreateScanJobResponse element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn CreateScanJobResponse
 api_type:

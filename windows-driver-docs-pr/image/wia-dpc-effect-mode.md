@@ -4,6 +4,7 @@ description: The WIA_DPC_EFFECT_MODE property specifies the special image acquis
 keywords: ["WIA_DPC_EFFECT_MODE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_EFFECT_MODE
 api_location:

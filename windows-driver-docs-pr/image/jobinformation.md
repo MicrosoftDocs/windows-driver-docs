@@ -4,6 +4,7 @@ description: The optional JobInformation element describes the intended use of t
 keywords: ["JobInformation element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobInformation
 api_type:

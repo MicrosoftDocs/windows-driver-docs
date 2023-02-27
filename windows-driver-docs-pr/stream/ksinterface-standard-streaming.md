@@ -4,6 +4,7 @@ description: The KSINTERFACE_STANDARD_STREAMING interface is used between most K
 keywords: ["KSINTERFACE_STANDARD_STREAMING Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSINTERFACE_STANDARD_STREAMING
 api_type:

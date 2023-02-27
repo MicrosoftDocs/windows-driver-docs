@@ -4,6 +4,7 @@ description: The required JobName element specifies the client-supplied, user-fr
 keywords: ["JobName element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobName
 api_type:

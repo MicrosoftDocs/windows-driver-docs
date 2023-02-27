@@ -4,6 +4,7 @@ description: The required JobCompletedStateReasons element is a collection of al
 keywords: ["JobCompletedStateReasons element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobCompletedStateReasons
 api_type:

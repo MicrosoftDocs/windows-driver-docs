@@ -7,6 +7,7 @@ MSHAttr:
 keywords: ["PRINTERBIDISCHEMAELEMENTTYPE enumeration Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PRINTERBIDISCHEMAELEMENTTYPE
 api_type:

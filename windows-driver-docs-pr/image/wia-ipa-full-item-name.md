@@ -4,6 +4,7 @@ description: The WIA_IPA_FULL_ITEM_NAME property contains the full item name (th
 keywords: ["WIA_IPA_FULL_ITEM_NAME Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_FULL_ITEM_NAME
 api_location:

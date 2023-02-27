@@ -4,6 +4,7 @@ description: The WIA_DIP_UI_CLSID property contains the vendor-supplied class id
 keywords: ["WIA_DIP_UI_CLSID Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DIP_UI_CLSID
 api_location:

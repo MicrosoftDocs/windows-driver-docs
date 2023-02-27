@@ -4,6 +4,7 @@ description: The optional ScanRegionXOffset element specifies the distance from 
 keywords: ["ScanRegionXOffset element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScanRegionXOffset wscn MustHonor "" wscn Override "" wscn UsedDefault ""
 api_type:

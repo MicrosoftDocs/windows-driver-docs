@@ -4,6 +4,7 @@ description: This property controls the trigger time for the camera driver. The 
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOTRIGGERTIME Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOTRIGGERTIME
 api_location:

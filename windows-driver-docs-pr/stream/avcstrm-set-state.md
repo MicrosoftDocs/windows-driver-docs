@@ -4,6 +4,7 @@ description: The AVCSTRM_SET_STATE function code places the specified stream int
 keywords: ["AVCSTRM_SET_STATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVCSTRM_SET_STATE
 api_type:

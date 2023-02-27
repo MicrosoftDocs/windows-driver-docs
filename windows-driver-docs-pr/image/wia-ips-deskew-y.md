@@ -4,6 +4,7 @@ description: The WIA\_IPS\_DESKEW\_Y property, together with the WIA\_IPS\_DESKE
 keywords: ["WIA_IPS_DESKEW_Y Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_DESKEW_Y
 api_location:

@@ -4,6 +4,7 @@ description: The required NumberOfLines element describes the exact height, in p
 keywords: ["NumberOfLines element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn NumberOfLines
 api_type:

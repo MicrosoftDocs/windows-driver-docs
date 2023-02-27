@@ -4,6 +4,7 @@ description: The WIA\_IPS\_MAXIMUM\_BARCODES\_PER\_PAGE property describes the m
 keywords: ["WIA_IPS_MAXIMUM_BARCODES_PER_PAGE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_MAXIMUM_BARCODES_PER_PAGE
 api_location:

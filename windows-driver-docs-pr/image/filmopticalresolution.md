@@ -4,6 +4,7 @@ description: The required FilmOpticalResolution element specifies the maximum op
 keywords: ["FilmOpticalResolution element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn FilmOpticalResolution
 api_type:

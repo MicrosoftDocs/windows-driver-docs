@@ -4,6 +4,7 @@ description: The WIA_DPC_UPLOAD_URL property describes a standard Internet URL.
 keywords: ["WIA_DPC_UPLOAD_URL Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_UPLOAD_URL
 api_location:

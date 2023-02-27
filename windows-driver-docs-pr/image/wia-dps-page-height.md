@@ -4,6 +4,7 @@ description: The WIA_DPS_PAGE_HEIGHT property contains the height, in thousandth
 keywords: ["WIA_DPS_PAGE_HEIGHT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_PAGE_HEIGHT
 api_location:

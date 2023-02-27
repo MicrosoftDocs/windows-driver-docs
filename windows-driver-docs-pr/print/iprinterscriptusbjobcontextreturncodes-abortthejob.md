@@ -7,6 +7,7 @@ MSHAttr:
 keywords: ["AbortTheJob method Print Devices", "AbortTheJob method Print Devices , IPrinterScriptUsbJobContextReturnCodes interface", "IPrinterScriptUsbJobContextReturnCodes interface Print Devices , AbortTheJob method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IPrinterScriptUsbJobContextReturnCodes.AbortTheJob
 api_type:

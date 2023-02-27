@@ -4,6 +4,7 @@ description: The required Time element specifies the time at which a condition o
 keywords: ["Time element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Time
 api_type:

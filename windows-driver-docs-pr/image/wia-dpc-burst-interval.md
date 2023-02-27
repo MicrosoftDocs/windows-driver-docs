@@ -4,6 +4,7 @@ description: The WIA_DPC_BURST_INTERVAL property contains the time, in milliseco
 keywords: ["WIA_DPC_BURST_INTERVAL Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_BURST_INTERVAL
 api_location:

@@ -4,6 +4,7 @@ description: The focus mode property controls the auto, manual, and preset focus
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE
 api_location:

@@ -4,6 +4,7 @@ description: The WIA_IPC_NUM_PICT_PER_ROW property is reserved by Microsoft for 
 keywords: ["WIA_IPC_NUM_PICT_PER_ROW Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPC_NUM_PICT_PER_ROW
 api_location:

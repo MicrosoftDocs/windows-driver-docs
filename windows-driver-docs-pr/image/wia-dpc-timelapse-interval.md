@@ -4,6 +4,7 @@ description: The WIA_DPC_TIMELAPSE_INTERVAL property contains the time, in milli
 keywords: ["WIA_DPC_TIMELAPSE_INTERVAL Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_TIMELAPSE_INTERVAL
 api_location:

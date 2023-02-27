@@ -4,6 +4,7 @@ description: The required JobHistory element contains a list of JobSummary eleme
 keywords: ["JobHistory element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobHistory
 api_type:

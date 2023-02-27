@@ -4,6 +4,7 @@ description: The KSPROPERTY\_WAVE\_FREQUENCY property specifies a wave device's 
 keywords: ["KSPROPERTY_WAVE_FREQUENCY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_WAVE_FREQUENCY
 api_location:

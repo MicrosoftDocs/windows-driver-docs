@@ -4,6 +4,7 @@ description: The WIA\_IPS\_MAXIMUM\_PATCH\_CODES\_PER\_PAGE property describes t
 keywords: ["WIA_IPS_MAXIMUM_PATCH_CODES_PER_PAGE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_MAXIMUM_PATCH_CODES_PER_PAGE
 api_location:

@@ -4,6 +4,7 @@ description: The WIA_IPA_FILENAME_EXTENSION property contains the file name exte
 keywords: ["WIA_IPA_FILENAME_EXTENSION Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_FILENAME_EXTENSION
 api_location:

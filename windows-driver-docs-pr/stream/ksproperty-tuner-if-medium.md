@@ -4,6 +4,7 @@ description: KSPROPERTY\_TUNER\_IF\_MEDIUM describes the medium for the intermed
 keywords: ["KSPROPERTY_TUNER_IF_MEDIUM Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TUNER_IF_MEDIUM
 api_location:

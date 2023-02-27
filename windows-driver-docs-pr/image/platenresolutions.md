@@ -4,6 +4,7 @@ description: The required PlatenResolutions element contains a list of resolutio
 keywords: ["PlatenResolutions element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn PlatenResolutions
 api_type:

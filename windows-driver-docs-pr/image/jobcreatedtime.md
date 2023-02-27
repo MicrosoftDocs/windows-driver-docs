@@ -4,6 +4,7 @@ description: The optional JobCreatedTime element specifies the time at which the
 keywords: ["JobCreatedTime element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobCreatedTime
 api_type:

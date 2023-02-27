@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PRINTER\_ENDORSER\_COUNTER property is used to config
 keywords: ["WIA_IPS_PRINTER_ENDORSER_COUNTER Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PRINTER_ENDORSER_COUNTER
 api_location:

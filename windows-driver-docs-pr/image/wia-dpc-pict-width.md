@@ -4,6 +4,7 @@ description: The WIA_DPC_PICT_WIDTH property describes the width, in pixels, to 
 keywords: ["WIA_DPC_PICT_WIDTH Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_PICT_WIDTH
 api_location:

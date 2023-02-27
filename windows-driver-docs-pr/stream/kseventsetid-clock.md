@@ -4,6 +4,7 @@ description: Clients can request to be notified of clock state events on a clock
 keywords: ["KSEVENTSETID_Clock Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENTSETID_Clock
 api_type:

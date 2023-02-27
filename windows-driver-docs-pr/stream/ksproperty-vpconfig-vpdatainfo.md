@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VPCONFIG\_VPDATAINFO property indicates the initial
 keywords: ["KSPROPERTY_VPCONFIG_VPDATAINFO Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VPCONFIG_VPDATAINFO
 api_location:

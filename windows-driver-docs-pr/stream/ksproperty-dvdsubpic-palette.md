@@ -4,6 +4,7 @@ description: The KSPROPERTY_DVDSUBPIC_PALETTE property specifies the color palet
 keywords: ["KSPROPERTY_DVDSUBPIC_PALETTE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DVDSUBPIC_PALETTE
 api_location:

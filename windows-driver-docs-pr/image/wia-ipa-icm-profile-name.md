@@ -4,6 +4,7 @@ description: The WIA_IPA_ICM_PROFILE_NAME property contains the image color mana
 keywords: ["WIA_IPA_ICM_PROFILE_NAME Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_ICM_PROFILE_NAME
 api_location:

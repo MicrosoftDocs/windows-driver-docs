@@ -4,6 +4,7 @@ description: The required Name element names the current error condition that is
 keywords: ["Name Element for DeviceCondition and ConditionHistoryEntry element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Name
 api_type:

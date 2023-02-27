@@ -4,6 +4,7 @@ description: The KSPROPERTY_CROSSBAR_CAN_ROUTE property retrieves whether the de
 keywords: ["KSPROPERTY_CROSSBAR_CAN_ROUTE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CROSSBAR_CAN_ROUTE
 api_location:

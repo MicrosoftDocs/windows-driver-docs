@@ -4,6 +4,7 @@ description: The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSSTATE property ID tha
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSSTATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSSTATE
 api_location:

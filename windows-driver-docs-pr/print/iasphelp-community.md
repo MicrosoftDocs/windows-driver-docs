@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_Community method Print Devices", "get_Community method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_Community method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_Community
 api_type:

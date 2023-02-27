@@ -7,6 +7,7 @@ MSHAttr:
 keywords: ["Retry method Print Devices", "Retry method Print Devices , IPrinterScriptUsbJobContextReturnCodes interface", "IPrinterScriptUsbJobContextReturnCodes interface Print Devices , Retry method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IPrinterScriptUsbJobContextReturnCodes.Retry
 api_type:

@@ -4,6 +4,7 @@ description: The WIA\_IPS\_TRANSFER\_CAPABILITIES property indicates if a device
 keywords: ["WIA_IPS_TRANSFER_CAPABILITIES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_TRANSFER_CAPABILITIES
 api_location:

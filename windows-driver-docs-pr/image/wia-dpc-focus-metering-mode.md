@@ -4,6 +4,7 @@ description: The WIA_DPC_FOCUS_METERING_MODE property specifies the mode that a 
 keywords: ["WIA_DPC_FOCUS_METERING_MODE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_FOCUS_METERING_MODE
 api_location:

@@ -4,6 +4,7 @@ description: The optional requestClose element is used to close an event notific
 keywords: ["requestClose element Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - requestClose
 api_type:

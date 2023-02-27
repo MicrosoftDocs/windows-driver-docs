@@ -4,6 +4,7 @@ description: The WIA\_IPS\_ ALARM property is used to configure the audible alar
 keywords: ["WIA_IPS_ALARM Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_ALARM
 api_location:

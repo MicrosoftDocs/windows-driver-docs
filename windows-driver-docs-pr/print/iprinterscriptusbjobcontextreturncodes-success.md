@@ -7,6 +7,7 @@ MSHAttr:
 keywords: ["Success method Print Devices", "Success method Print Devices , IPrinterScriptUsbJobContextReturnCodes interface", "IPrinterScriptUsbJobContextReturnCodes interface Print Devices , Success method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IPrinterScriptUsbJobContextReturnCodes.Success
 api_type:

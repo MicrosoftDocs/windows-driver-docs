@@ -4,6 +4,7 @@ description: The required GetActiveJobsResponse element returns a summary of job
 keywords: ["GetActiveJobsResponse element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn GetActiveJobsResponse
 api_type:

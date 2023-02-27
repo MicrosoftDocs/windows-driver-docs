@@ -4,6 +4,7 @@ description: The optional DeviceCondition element provides details about one of 
 keywords: ["DeviceCondition element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn DeviceCondition wscn Id "..."
 api_type:

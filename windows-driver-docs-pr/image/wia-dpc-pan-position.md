@@ -4,6 +4,7 @@ description: The WIA_DPC_PAN_POSITION property is reserved by Microsoft for futu
 keywords: ["WIA_DPC_PAN_POSITION Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_PAN_POSITION
 api_location:

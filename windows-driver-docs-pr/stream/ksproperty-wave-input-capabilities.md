@@ -4,6 +4,7 @@ description: The KSPROPERTY\_WAVE\_INPUT\_CAPABILITIES property returns a wave d
 keywords: ["KSPROPERTY_WAVE_INPUT_CAPABILITIES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_WAVE_INPUT_CAPABILITIES
 api_location:

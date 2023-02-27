@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VPCONFIG\_MAXPIXELRATE property specifies the maxim
 keywords: ["KSPROPERTY_VPCONFIG_MAXPIXELRATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VPCONFIG_MAXPIXELRATE
 api_location:

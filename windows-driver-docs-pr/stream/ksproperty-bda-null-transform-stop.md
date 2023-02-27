@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_NULL_TRANSFORM_STOP to restart the trans
 keywords: ["KSPROPERTY_BDA_NULL_TRANSFORM_STOP Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_NULL_TRANSFORM_STOP
 api_location:

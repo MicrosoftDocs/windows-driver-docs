@@ -4,6 +4,7 @@ description: Clients use KSMETHOD_BDA_CREATE_TOPOLOGY to create a topology struc
 keywords: ["KSMETHOD_BDA_CREATE_TOPOLOGY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSMETHOD_BDA_CREATE_TOPOLOGY
 api_location:

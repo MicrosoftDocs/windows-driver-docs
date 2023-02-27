@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["OIDFromString method Print Devices", "OIDFromString method Print Devices , ISNMP interface", "ISNMP interface Print Devices , OIDFromString method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ISNMP.OIDFromString
 api_location:

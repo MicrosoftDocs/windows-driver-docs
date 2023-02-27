@@ -4,6 +4,7 @@ description: The WIA_IPA_PROP_STREAM_COMPAT_ID property specifies a class identi
 keywords: ["WIA_IPA_PROP_STREAM_COMPAT_ID Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_PROP_STREAM_COMPAT_ID
 api_location:

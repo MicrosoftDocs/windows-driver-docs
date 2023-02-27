@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDECOMPRESSION\_QUALITY property controls the vide
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_QUALITY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOCOMPRESSION_QUALITY
 api_location:

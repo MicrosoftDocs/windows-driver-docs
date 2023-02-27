@@ -4,6 +4,7 @@ description: The WIA_DPS_HORIZONTAL_BED_REGISTRATION property contains the regis
 keywords: ["WIA_DPS_HORIZONTAL_BED_REGISTRATION Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_HORIZONTAL_BED_REGISTRATION
 api_location:

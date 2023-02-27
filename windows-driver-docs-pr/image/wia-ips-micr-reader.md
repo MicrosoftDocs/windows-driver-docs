@@ -4,6 +4,7 @@ description: The WIA minidriver uses the WIA\_IPS\_MICR\_READER property to repo
 keywords: ["WIA_IPS_MICR_READER Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_MICR_READER
 api_location:

@@ -4,6 +4,7 @@ description: The KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE property informs clie
 keywords: ["KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_ALLOCATOR_CONTROL_SURFACE_SIZE
 api_location:

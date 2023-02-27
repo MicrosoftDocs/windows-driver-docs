@@ -4,6 +4,7 @@ description: SRB\_SET\_STREAM\_STATE
 keywords: ["SRB_SET_STREAM_STATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SRB_SET_STREAM_STATE
 api_type:

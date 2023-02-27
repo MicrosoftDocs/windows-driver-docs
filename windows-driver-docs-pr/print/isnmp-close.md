@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["Close method Print Devices", "Close method Print Devices , ISNMP interface", "ISNMP interface Print Devices , Close method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ISNMP.Close
 api_location:

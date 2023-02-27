@@ -4,6 +4,7 @@ description: The required ScanData element contains the binary data that represe
 keywords: ["ScanData element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScanData
 api_type:

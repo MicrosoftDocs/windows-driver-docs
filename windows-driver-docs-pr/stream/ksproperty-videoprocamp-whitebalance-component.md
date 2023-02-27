@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOPROCAMP\_WHITEBALANCE\_COMPONENT property spec
 keywords: ["KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE_COMPONENT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOPROCAMP_WHITEBALANCE_COMPONENT
 api_location:

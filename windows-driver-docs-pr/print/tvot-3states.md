@@ -4,6 +4,7 @@ description: The TVOT_3STATES option type consists of three radio buttons inside
 keywords: ["TVOT_3STATES Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TVOT_3STATES
 api_location:

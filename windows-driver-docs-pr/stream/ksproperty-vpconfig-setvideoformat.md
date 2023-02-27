@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VPCONFIG\_SETVIDEOFORMAT property sets the video fo
 keywords: ["KSPROPERTY_VPCONFIG_SETVIDEOFORMAT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VPCONFIG_SETVIDEOFORMAT
 api_location:

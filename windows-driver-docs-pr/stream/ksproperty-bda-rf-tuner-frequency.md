@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_RF_TUNER_FREQUENCY along with KSPROPERTY
 keywords: ["KSPROPERTY_BDA_RF_TUNER_FREQUENCY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_RF_TUNER_FREQUENCY
 api_location:

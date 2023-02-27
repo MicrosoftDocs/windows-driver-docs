@@ -4,6 +4,7 @@ description: The WIA\_IPC\_AUDIO\_AVAILABLE property is obsolete and should not 
 keywords: ["WIA_IPC_AUDIO_AVAILABLE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPC_AUDIO_AVAILABLE
 api_location:

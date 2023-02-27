@@ -4,6 +4,7 @@ description: The TVOT_PUSHBUTTON option type consists of a push button inside a 
 keywords: ["TVOT_PUSHBUTTON Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TVOT_PUSHBUTTON
 api_location:

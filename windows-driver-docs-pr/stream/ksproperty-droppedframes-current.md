@@ -4,6 +4,7 @@ description: The KSPROPERTY_DROPPED_FRAMES_CURRENT property dynamically retrieve
 keywords: ["KSPROPERTY_DROPPEDFRAMES_CURRENT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DROPPEDFRAMES_CURRENT
 api_location:

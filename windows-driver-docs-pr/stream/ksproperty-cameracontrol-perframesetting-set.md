@@ -4,6 +4,7 @@ description: The KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_SET property ID tha
 keywords: ["KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_SET Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_SET
 api_location:

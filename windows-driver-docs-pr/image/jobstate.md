@@ -4,6 +4,7 @@ description: The required JobState element specifies the current state of the jo
 keywords: ["JobState element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobState
 api_type:

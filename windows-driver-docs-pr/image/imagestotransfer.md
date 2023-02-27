@@ -4,6 +4,7 @@ description: The optional ImagesToTransfer element specifies the number of image
 keywords: ["ImagesToTransfer element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ImagesToTransfer wscn MustHonor "" wscn Override "" wscn UsedDefault ""
 api_type:

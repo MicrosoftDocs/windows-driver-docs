@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS property is used to repor
 keywords: ["WIA_IPS_PRINTER_ENDORSER_GRAPHICS Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PRINTER_ENDORSER_GRAPHICS
 api_location:

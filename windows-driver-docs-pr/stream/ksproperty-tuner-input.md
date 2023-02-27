@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TUNER\_INPUT property describes the input of the tu
 keywords: ["KSPROPERTY_TUNER_INPUT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TUNER_INPUT
 api_location:

@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_AvgJobSizeUnit method Print Devices", "get_AvgJobSizeUnit method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_AvgJobSizeUnit method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_AvgJobSizeUnit
 api_type:

@@ -4,6 +4,7 @@ description: The AVC_FUNCTION_ACQUIRE function code causes avc.sys to establish 
 keywords: ["AVC_FUNCTION_ACQUIRE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVC_FUNCTION_ACQUIRE
 api_type:

@@ -4,6 +4,7 @@ description: This property control sets or retrieves the maximum frame rate poss
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_MAXVIDFPS_PHOTORES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_MAXVIDFPS_PHOTORES
 api_location:

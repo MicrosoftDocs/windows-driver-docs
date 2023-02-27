@@ -4,6 +4,7 @@ description: AVCSTRM_GET_STATE
 keywords: ["AVCSTRM_GET_STATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVCSTRM_GET_STATE
 api_type:

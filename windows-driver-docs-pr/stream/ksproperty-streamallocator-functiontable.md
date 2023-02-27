@@ -4,6 +4,7 @@ description: The KSPROPERTY\_STREAMALLOCATOR\_FUNCTIONTABLE property retrieves t
 keywords: ["KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE
 api_location:

@@ -4,6 +4,7 @@ description: The required ElementData element contains the data that is returned
 keywords: ["ElementData for JobElements element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ElementData Name "" Valid ""
 api_type:

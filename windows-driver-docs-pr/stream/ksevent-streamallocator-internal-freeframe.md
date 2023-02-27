@@ -4,6 +4,7 @@ description: The KSEVENT\_STREAMALLOCATOR\_INTERNAL\_FREEFRAME event is used onl
 keywords: ["KSEVENT_STREAMALLOCATOR_INTERNAL_FREEFRAME Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_STREAMALLOCATOR_INTERNAL_FREEFRAME
 api_type:

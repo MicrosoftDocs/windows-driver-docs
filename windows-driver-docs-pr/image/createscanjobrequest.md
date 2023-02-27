@@ -4,6 +4,7 @@ description: The required CreateScanJobRequest operation prepares a scan device 
 keywords: ["CreateScanJobRequest element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn CreateScanJobRequest
 api_type:

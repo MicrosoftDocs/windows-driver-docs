@@ -4,6 +4,7 @@ description: The optional messageBoxUI element is used to display a message box 
 keywords: ["messageBoxUI element Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - messageBoxUI
 api_type:

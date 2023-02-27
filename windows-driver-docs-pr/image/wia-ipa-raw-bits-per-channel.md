@@ -4,6 +4,7 @@ description: The WIA_IPA_RAW_BITS_PER_CHANNEL property contains the number of bi
 keywords: ["WIA_IPA_RAW_BITS_PER_CHANNEL Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_RAW_BITS_PER_CHANNEL
 api_location:

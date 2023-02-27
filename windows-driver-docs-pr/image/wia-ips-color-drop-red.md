@@ -4,6 +4,7 @@ description: The WIA\_IPS\_COLOR\_DROP\_RED property is used to configure the am
 keywords: ["WIA_IPS_COLOR_DROP_RED Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_COLOR_DROP_RED
 api_location:

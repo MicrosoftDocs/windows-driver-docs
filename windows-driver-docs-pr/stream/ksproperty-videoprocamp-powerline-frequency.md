@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOPROCAMP\_POWERLINE\_FREQUENCY property specifi
 keywords: ["KSPROPERTY_VIDEOPROCAMP_POWERLINE_FREQUENCY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOPROCAMP_POWERLINE_FREQUENCY
 api_location:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEODECODER\_OUTPUT\_ENABLE property controls the 
 keywords: ["KSPROPERTY_VIDEODECODER_OUTPUT_ENABLE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEODECODER_OUTPUT_ENABLE
 api_location:

@@ -4,6 +4,7 @@ description: The WIA_DPS_ENDORSER_CHARACTERS property contains all of the valid 
 keywords: ["WIA_DPS_ENDORSER_CHARACTERS Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_ENDORSER_CHARACTERS
 api_location:
