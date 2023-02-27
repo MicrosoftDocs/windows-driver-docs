@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_SYMBOL_RATE to control the symbol rate o
 keywords: ["KSPROPERTY_BDA_SYMBOL_RATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_SYMBOL_RATE
 api_type:

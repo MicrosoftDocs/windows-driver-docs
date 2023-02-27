@@ -4,6 +4,7 @@ description: The required ColorEntry element describes a single color-processing
 keywords: ["ColorEntry element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ColorEntry
 api_type:

@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_SAMPLE_TIME to determine the sample time
 keywords: ["KSPROPERTY_BDA_SAMPLE_TIME Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_SAMPLE_TIME
 api_location:

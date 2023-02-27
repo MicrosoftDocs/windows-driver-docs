@@ -1,7 +1,8 @@
 ---
 title: EFI_USB_DEVICE_INFO
 description: The EFI_USB_DEVICE_INFO structure is used to define the USB function device.
-ms.date: 08/20/2021
+ms.date: 02/24/2023
+ms.topic: reference
 ---
 
 # EFI_USB_DEVICE_INFO

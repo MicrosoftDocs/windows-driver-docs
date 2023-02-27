@@ -4,6 +4,7 @@ description: The optional ScannerStateReason element specifies one piece of info
 keywords: ["ScannerStateReason element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScannerStateReason
 api_type:

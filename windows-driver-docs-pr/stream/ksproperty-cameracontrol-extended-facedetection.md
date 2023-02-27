@@ -4,6 +4,7 @@ description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEDETECTION is a property ID
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FACEDETECTION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_FACEDETECTION
 api_location:

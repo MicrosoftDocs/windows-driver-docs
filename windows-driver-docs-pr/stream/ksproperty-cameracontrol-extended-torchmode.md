@@ -4,6 +4,7 @@ description: Torch mode determines how a camera’s flash is used in low light c
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_TORCHMODE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_TORCHMODE
 api_location:

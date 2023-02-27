@@ -4,6 +4,7 @@ description: The TVOT_LISTBOX option type consists of a list box inside a group 
 keywords: ["TVOT_LISTBOX Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TVOT_LISTBOX
 api_location:

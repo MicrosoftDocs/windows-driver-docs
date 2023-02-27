@@ -4,6 +4,7 @@ description: The required ScannerStatusSummaryEvent element informs the client t
 keywords: ["ScannerStatusSummaryEvent element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScannerStatusSummaryEvent
 api_type:

@@ -4,6 +4,7 @@ description: The required DestinationToken element contains a device-specific st
 keywords: ["DestinationToken element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn DestinationToken
 api_type:

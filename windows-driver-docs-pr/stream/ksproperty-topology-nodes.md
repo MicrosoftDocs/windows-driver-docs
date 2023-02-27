@@ -4,6 +4,7 @@ description: KSPROPERTY\_TOPOLOGY\_NODES provides a list of the topology nodes a
 keywords: ["KSPROPERTY_TOPOLOGY_NODES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TOPOLOGY_NODES
 api_location:

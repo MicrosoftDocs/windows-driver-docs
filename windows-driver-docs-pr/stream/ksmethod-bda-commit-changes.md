@@ -4,6 +4,7 @@ description: Clients use KSMETHOD_BDA_COMMIT_CHANGES to commit a list of request
 keywords: ["KSMETHOD_BDA_COMMIT_CHANGES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSMETHOD_BDA_COMMIT_CHANGES
 api_location:

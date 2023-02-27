@@ -4,6 +4,7 @@ description: The optional ADFBack element describes the capabilities of the back
 keywords: ["ADFBack element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ADFBack
 api_type:

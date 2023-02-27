@@ -4,6 +4,7 @@ description: The TVOT_2STATES option type consists of two radio buttons inside a
 keywords: ["TVOT_2STATES Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TVOT_2STATES
 api_location:

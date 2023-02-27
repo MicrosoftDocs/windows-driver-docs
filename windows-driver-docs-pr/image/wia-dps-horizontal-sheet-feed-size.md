@@ -4,6 +4,7 @@ description: The WIA_DPS_HORIZONTAL_SHEET_FEED_SIZE property contains the physic
 keywords: ["WIA_DPS_HORIZONTAL_SHEET_FEED_SIZE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_HORIZONTAL_SHEET_FEED_SIZE
 api_location:

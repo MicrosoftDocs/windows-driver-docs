@@ -4,6 +4,7 @@ description: The KSPROPERTY_MEDIASEEKING_TIMEFORMAT property retrieves the curre
 keywords: ["KSPROPERTY_MEDIASEEKING_TIMEFORMAT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_MEDIASEEKING_TIMEFORMAT
 api_location:

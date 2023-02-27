@@ -4,6 +4,7 @@ description: The requestOpen element is used to open an event notification messa
 keywords: ["requestOpen element Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - requestOpen
 api_type:

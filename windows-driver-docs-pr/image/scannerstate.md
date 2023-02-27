@@ -4,6 +4,7 @@ description: The required ScannerState element identifies the current state of t
 keywords: ["ScannerState element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScannerState
 api_type:

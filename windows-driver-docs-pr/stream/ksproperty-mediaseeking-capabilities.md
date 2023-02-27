@@ -4,6 +4,7 @@ description: The KSPROPERTY_MEDIASEEKING_CAPABILITIES property retrieves the med
 keywords: ["KSPROPERTY_MEDIASEEKING_CAPABILITIES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_MEDIASEEKING_CAPABILITIES
 api_location:

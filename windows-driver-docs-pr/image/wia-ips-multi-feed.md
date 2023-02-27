@@ -4,6 +4,7 @@ description: The WIA\_IPS\_MULTI\_FEED property is used to configure the action 
 keywords: ["WIA_IPS_MULTI_FEED Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_MULTI_FEED
 api_location:

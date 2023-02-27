@@ -6,33 +6,24 @@ keywords:
 - status values WDK file system
 - success status values WDK file system
 - returning status WDK file system
-ms.date: 04/20/2017
+ms.date: 02/23/2023
 ---
 
 # Returning Status from Completion Routines
 
+> [!NOTE]
+> For optimal reliability and performance, use [file system minifilter drivers](./filter-manager-concepts.md) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
-## <span id="ddk_returning_status_from_completion_routines_if"></span><span id="DDK_RETURNING_STATUS_FROM_COMPLETION_ROUTINES_IF"></span>
+A legacy file system filter driver's completion routine normally returns one of the following two NTSTATUS values to the caller:
 
+- STATUS_SUCCESS
 
-A file system filter driver completion routine normally returns one of the following two NTSTATUS values to the caller:
+- STATUS_MORE_PROCESSING_REQUIRED
 
--   STATUS\_SUCCESS
+STATUS_SUCCESS indicates that the driver is finished with the IRP and allows the I/O Manager to continue completion processing on the IRP.
 
--   STATUS\_MORE\_PROCESSING\_REQUIRED
+STATUS_MORE_PROCESSING_REQUIRED halts the I/O Manager's completion processing on the IRP.
 
-STATUS\_SUCCESS indicates that the driver is finished with the IRP and allows the I/O Manager to continue completion processing on the IRP.
+If any other NTSTATUS value is returned, the I/O Manager resets it to STATUS_SUCCESS.
 
-STATUS\_MORE\_PROCESSING\_REQUIRED halts the I/O Manager's completion processing on the IRP.
-
-If any other NTSTATUS value is returned, the I/O Manager resets it to STATUS\_SUCCESS.
-
-For more information about returning STATUS\_MORE\_PROCESSING\_REQUIRED, see [Constraints on Completion Routines](constraints-on-completion-routines.md).
-
- 
-
- 
-
-
-
-
+For more information about returning STATUS_MORE_PROCESSING_REQUIRED, see [Constraints on Completion Routines](constraints-on-completion-routines.md).

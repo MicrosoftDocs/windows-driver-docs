@@ -4,6 +4,7 @@ description: The TVOT_SCROLLBAR option type consists of a scroll bar inside a gr
 keywords: ["TVOT_SCROLLBAR Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TVOT_SCROLLBAR
 api_location:

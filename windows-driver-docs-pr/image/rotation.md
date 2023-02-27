@@ -4,6 +4,7 @@ description: The optional Rotation element specifies the amount to rotate each i
 keywords: ["Rotation element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Rotation wscn MustHonor "" wscn Override "" wscn UsedDefault ""
 api_type:

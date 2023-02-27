@@ -4,6 +4,7 @@ description: The WIA_IPA_PLANAR property contains image data packing options. Th
 keywords: ["WIA_IPA_PLANAR Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_PLANAR
 api_location:

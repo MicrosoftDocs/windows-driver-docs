@@ -4,6 +4,7 @@ description: The WIA\_IPS\_COLOR\_DROP property is used to configure color filte
 keywords: ["WIA_IPS_COLOR_DROP Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_COLOR_DROP
 api_location:

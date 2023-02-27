@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_DriverName method Print Devices", "get_DriverName method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_DriverName method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_DriverName
 api_type:

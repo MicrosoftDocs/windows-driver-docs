@@ -4,6 +4,7 @@ description: The KSEVENT\_CONNECTION\_ENDOFSTREAM event allows a client to recei
 keywords: ["KSEVENT_CONNECTION_ENDOFSTREAM Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_CONNECTION_ENDOFSTREAM
 api_type:

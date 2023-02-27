@@ -4,6 +4,7 @@ description: The AVC_FUNCTION_PEER_DO_LIST function code locates all nonvirtual 
 keywords: ["AVC_FUNCTION_PEER_DO_LIST Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVC_FUNCTION_PEER_DO_LIST
 api_type:

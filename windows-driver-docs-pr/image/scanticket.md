@@ -4,6 +4,7 @@ description: The required ScanTicket element defines all of the description and 
 keywords: ["ScanTicket element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScanTicket
 api_type:

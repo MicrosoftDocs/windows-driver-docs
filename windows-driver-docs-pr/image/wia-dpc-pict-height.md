@@ -4,6 +4,7 @@ description: The WIA_DPC_PICT_HEIGHT property contains the height, in pixels, to
 keywords: ["WIA_DPC_PICT_HEIGHT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_PICT_HEIGHT
 api_location:

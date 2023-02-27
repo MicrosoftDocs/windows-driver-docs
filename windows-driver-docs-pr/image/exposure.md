@@ -4,6 +4,7 @@ description: The optional Exposure element specifies the exposure settings of th
 keywords: ["Exposure element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Exposure wscn MustHonor ""
 api_type:

@@ -4,6 +4,7 @@ description: The KSEVENT_DEVICE_PREEMPTED event is triggered when a device has b
 keywords: ["KSEVENT_DEVICE_PREEMPTED Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_DEVICE_PREEMPTED
 api_type:

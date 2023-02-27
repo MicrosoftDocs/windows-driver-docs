@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_PIDFILTER_LIST_PIDS to retrieve from a P
 keywords: ["KSPROPERTY_BDA_PIDFILTER_LIST_PIDS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_PIDFILTER_LIST_PIDS
 api_location:

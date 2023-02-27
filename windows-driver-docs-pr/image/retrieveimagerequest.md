@@ -4,6 +4,7 @@ description: The required RetrieveImageRequest operation element contains the cl
 keywords: ["RetrieveImageRequest element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn RetrieveImageRequest
 api_type:

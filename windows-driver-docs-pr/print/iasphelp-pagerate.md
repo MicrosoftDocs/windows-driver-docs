@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_PageRate method Print Devices", "get_PageRate method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_PageRate method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_PageRate
 api_type:

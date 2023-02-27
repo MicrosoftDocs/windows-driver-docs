@@ -4,6 +4,7 @@ description: Clients use the KSPROPERTY_PIN_CTYPES property to determine how man
 keywords: ["KSPROPERTY_PIN_CTYPES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_PIN_CTYPES
 api_location:

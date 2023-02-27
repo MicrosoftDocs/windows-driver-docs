@@ -4,6 +4,7 @@ description: The optional Contrast element specifies the relative amount to redu
 keywords: ["Contrast element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Contrast wscn Override "" wscn UsedDefault ""
 api_type:

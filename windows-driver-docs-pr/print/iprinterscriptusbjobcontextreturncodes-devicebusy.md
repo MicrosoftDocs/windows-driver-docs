@@ -7,6 +7,7 @@ MSHAttr:
 keywords: ["DeviceBusy method Print Devices", "DeviceBusy method Print Devices , IPrinterScriptUsbJobContextReturnCodes interface", "IPrinterScriptUsbJobContextReturnCodes interface Print Devices , DeviceBusy method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IPrinterScriptUsbJobContextReturnCodes.DeviceBusy
 api_type:

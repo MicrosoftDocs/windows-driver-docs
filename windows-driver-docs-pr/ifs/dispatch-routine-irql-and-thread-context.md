@@ -8,170 +8,41 @@ keywords:
 - thread context WDK file system
 - arbitrary thread context WDK file system
 - IRQLs WDK file system
-ms.date: 01/22/2020
+ms.date: 02/23/2023
 ---
 
 # Dispatch Routine IRQL and Thread Context
 
+> [!NOTE]
+> For optimal reliability and performance, use [file system minifilter drivers](./filter-manager-concepts.md) with Filter Manager support instead of legacy file system filter drivers. To port your legacy driver to a minifilter driver, see [Guidelines for Porting Legacy Filter Drivers](guidelines-for-porting-legacy-filter-drivers.md).
 
-## <span id="ddk_dispatch_routine_irql_and_thread_context_if"></span><span id="DDK_DISPATCH_ROUTINE_IRQL_AND_THREAD_CONTEXT_IF"></span>
+The following table summarizes the IRQL and thread context requirements for legacy file system filter driver dispatch routines.
 
-
-The following table summarizes the IRQL and thread context requirements for file system filter driver dispatch routines.
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Dispatch routine</th>
-<th align="left">Caller's Maximum IRQL:</th>
-<th align="left">Caller's thread context:</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Cleanup</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Nonarbitrary</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Close</p></td>
-<td align="left"><p>APC_LEVEL</p></td>
-<td align="left"><p>Arbitrary</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Create</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Nonarbitrary</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DeviceControl (except paging I/O)</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Nonarbitrary</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>DeviceControl (paging I/O path)</p></td>
-<td align="left"><p>APC_LEVEL</p></td>
-<td align="left"><p>Arbitrary</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DirectoryControl</p></td>
-<td align="left"><p>APC_LEVEL</p></td>
-<td align="left"><p>Arbitrary</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>FlushBuffers</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Nonarbitrary</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>FsControl (except paging I/O)</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Nonarbitrary</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>FsControl (paging I/O path)</p></td>
-<td align="left"><p>APC_LEVEL</p></td>
-<td align="left"><p>Arbitrary</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>LockControl</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Nonarbitrary</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>PnP</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Arbitrary</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>QueryEa</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Nonarbitrary</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>QueryInformation</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Nonarbitrary</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>QueryQuota</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Nonarbitrary</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>QuerySecurity</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Nonarbitrary</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>QueryVolumeInfo</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Nonarbitrary</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Read (except paging I/O)</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Nonarbitrary</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Read (paging I/O path)</p></td>
-<td align="left"><p>APC_LEVEL</p></td>
-<td align="left"><p>Arbitrary</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>SetEa</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Nonarbitrary</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>SetInformation</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Nonarbitrary</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>SetQuota</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Nonarbitrary</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>SetSecurity</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Nonarbitrary</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>SetVolumeInfo</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Nonarbitrary</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Shutdown</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Arbitrary</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Write (except paging I/O)</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-<td align="left"><p>Nonarbitrary</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Write (paging I/O path)</p></td>
-<td align="left"><p>APC_LEVEL</p></td>
-<td align="left"><p>Arbitrary</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
- 
-
-
-
-
+| Dispatch routine | Caller's Maximum IRQL | Caller's thread context |
+| ---------------- | --------------------- | ----------------------- |
+| Cleanup                           | PASSIVE_LEVEL | Nonarbitrary |
+| Close                             | APC_LEVEL | Arbitrary |
+| Create                            | PASSIVE_LEVEL | Nonarbitrary |
+| DeviceControl (except paging I/O) | PASSIVE_LEVEL | Nonarbitrary |
+| DeviceControl (paging I/O path)   | APC_LEVEL | Arbitrary |
+| DirectoryControl                  | APC_LEVEL | Arbitrary |
+| FlushBuffers                      | PASSIVE_LEVEL | Nonarbitrary |
+| FsControl (except paging I/O)     | PASSIVE_LEVEL | Nonarbitrary |
+| FsControl (paging I/O path)       | APC_LEVEL | Arbitrary |
+| LockControl                       | PASSIVE_LEVEL | Nonarbitrary |
+| PnP                               | PASSIVE_LEVEL | Arbitrary |
+| QueryEa                           | PASSIVE_LEVEL | Nonarbitrary |
+| QueryInformation                  | PASSIVE_LEVEL | Nonarbitrary |
+| QueryQuota                        | PASSIVE_LEVEL | Nonarbitrary |
+| QuerySecurity                     | PASSIVE_LEVEL | Nonarbitrary |
+| QueryVolumeInfo                   | PASSIVE_LEVEL | Nonarbitrary |
+| Read (except paging I/O)          | PASSIVE_LEVEL | Nonarbitrary |
+| Read (paging I/O path)            | APC_LEVEL | Arbitrary |
+| SetEa                             | PASSIVE_LEVEL | Nonarbitrary |
+| SetInformation                    | PASSIVE_LEVEL | Nonarbitrary |
+| SetQuota                          | PASSIVE_LEVEL | Nonarbitrary |
+| SetSecurity                       | PASSIVE_LEVEL | Nonarbitrary |
+| SetVolumeInfo                     | PASSIVE_LEVEL | Nonarbitrary |
+| Shutdown                          | PASSIVE_LEVEL | Arbitrary |
+| Write (except paging I/O)         | PASSIVE_LEVEL | Nonarbitrary |
+| Write (paging I/O path)           | APC_LEVEL | Arbitrary |

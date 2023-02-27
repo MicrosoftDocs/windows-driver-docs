@@ -4,6 +4,7 @@ description: The optional balloonUI element is used to display a message balloon
 keywords: ["balloonUI element Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - balloonUI
 api_type:

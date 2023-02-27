@@ -4,6 +4,7 @@ description: The optional parameter element specifies a text string that is subs
 keywords: ["parameter element Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - parameter
 api_type:

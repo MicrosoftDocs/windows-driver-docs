@@ -4,6 +4,7 @@ description: The WIA\_IPS\_FILM\_SCAN\_MODE property contains the current film s
 keywords: ["WIA_IPS_FILM_SCAN_MODE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_FILM_SCAN_MODE
 api_location:

@@ -4,6 +4,7 @@ description: The required DeviceSettings element describes the basic capabilitie
 keywords: ["DeviceSettings element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn DeviceSettings
 api_type:

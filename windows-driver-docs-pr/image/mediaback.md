@@ -4,6 +4,7 @@ description: The optional MediaBack element contains all parameters that are spe
 keywords: ["MediaBack element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn MediaBack
 api_type:

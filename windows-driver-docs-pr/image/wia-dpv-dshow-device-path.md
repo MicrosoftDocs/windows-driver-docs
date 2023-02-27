@@ -4,6 +4,7 @@ description: The WIA_DPV_DSHOW_DEVICE_PATH property is reserved by Microsoft for
 keywords: ["WIA_DPV_DSHOW_DEVICE_PATH Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPV_DSHOW_DEVICE_PATH
 api_location:

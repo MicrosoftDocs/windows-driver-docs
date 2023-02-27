@@ -4,6 +4,7 @@ description: The required ScannerStatusConditionEvent element provides the clien
 keywords: ["ScannerStatusConditionEvent element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScannerStatusConditionEvent
 api_type:

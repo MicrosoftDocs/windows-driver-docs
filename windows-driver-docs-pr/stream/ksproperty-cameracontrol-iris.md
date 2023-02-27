@@ -4,6 +4,7 @@ description: User-mode clients use the KSPROPERTY_CAMERACONTROL_IRIS property to
 keywords: ["KSPROPERTY_CAMERACONTROL_IRIS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_IRIS
 api_location:

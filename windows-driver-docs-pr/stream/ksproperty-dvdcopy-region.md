@@ -4,6 +4,7 @@ description: The KSPROPERTY_DVDCOPY_REGION property specifies the DVD copy-prote
 keywords: ["KSPROPERTY_DVDCOPY_REGION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DVDCOPY_REGION
 api_location:

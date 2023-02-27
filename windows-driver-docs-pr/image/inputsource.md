@@ -4,6 +4,7 @@ description: The optional InputSource element specifies the source of the origin
 keywords: ["InputSource element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn InputSource wscn MustHonor "" wscn Override "" wscn UsedDefault ""
 api_type:

@@ -4,6 +4,7 @@ description: The optional customUI element specifies a custom user interface to 
 keywords: ["customUI element Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - customUI
 api_type:

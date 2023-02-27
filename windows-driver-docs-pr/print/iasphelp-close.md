@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["Close method Print Devices", "Close method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , Close method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.Close
 api_type:

@@ -4,6 +4,7 @@ description: The WIA\_DPS\_SERVICE\_ID property contains the service ID of a web
 keywords: ["WIA_DPS_SERVICE_ID Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_SERVICE_ID
 api_location:

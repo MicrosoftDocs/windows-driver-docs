@@ -4,6 +4,7 @@ description: The KSEVENT_CAMERACONTROL_FOCUS event is triggered when a camera fo
 keywords: ["KSEVENT_CAMERACONTROL_FOCUS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_CAMERACONTROL_FOCUS
 api_type:

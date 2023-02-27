@@ -4,6 +4,7 @@ description: The TVOT_COMBOBOX option type consists of a combo box inside a grou
 keywords: ["TVOT_COMBOBOX Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TVOT_COMBOBOX
 api_location:

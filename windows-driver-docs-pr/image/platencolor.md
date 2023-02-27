@@ -4,6 +4,7 @@ description: The required PlatenColor element contains a list of ColorEntry elem
 keywords: ["PlatenColor element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn PlatenColor
 api_type:

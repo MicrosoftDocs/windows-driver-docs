@@ -41,13 +41,13 @@ To communicate with the driver to signal streaming state, ACX uses events with a
 
 For communicating from the driver to the client, a shared buffer and event are used. This ensures the client does not need to wait or poll, and that the client can determine everything it needs to continue streaming while reducing or eliminating the need for direct IRP calls.
 
-The device driver uses a shared buffer to communicate to the client which packet is being rendered from or captured to. This shared buffer includes the packet count (1-based) of the last completed packet along with the QPC (QueryPerformanceCounter) value of the completion time. For the device driver, it must indicate this information by calling [AcxRtStreamNotifyPacketComplete](/windows-hardware/drivers/ddi/acxstream/nf-acxstream-acxrtstreamnotifypacketcomplete). When the device driver calls AcxRtStreamNotifyPacketComplete, the ACX framework will update the shared buffer with the new packet count and QPC and signal an event shared with the client to indicate that the client may read the new packet count.
+The device driver uses a shared buffer to communicate to the client which packet is being rendered from or captured to. This shared buffer includes the packet count (1-based) of the last completed packet along with the QPC (QueryPerformanceCounter) value of the completion time. For the device driver, it must indicate this information by calling [AcxRtStreamNotifyPacketComplete](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxrtstreamnotifypacketcomplete). When the device driver calls AcxRtStreamNotifyPacketComplete, the ACX framework will update the shared buffer with the new packet count and QPC and signal an event shared with the client to indicate that the client may read the new packet count.
 
 #### Direct IRP calls
 
 For communicating from the client to the driver, direct IRP calls are used. This reduces the complexities around ensuring WDF requests are handled in a timely manner and has been proven to work well in the existing architecture.
 
-The client may at any time request the current packet count or indicate the current packet count to the device driver. These requests will call the [EvtAcxStreamGetCurrentPacket](/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_current_packet) and [EvtAcxStreamSetRenderPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_set_render_packet) device driver event handlers. The client may also request the current capture packet which will call the [EvtAcxStreamGetCapturePacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_capture_packet) device driver event handler.
+The client may at any time request the current packet count or indicate the current packet count to the device driver. These requests will call the [EvtAcxStreamGetCurrentPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_current_packet) and [EvtAcxStreamSetRenderPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_set_render_packet) device driver event handlers. The client may also request the current capture packet which will call the [EvtAcxStreamGetCapturePacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_capture_packet) device driver event handler.
 
 #### Similarities with PortCls
 
@@ -315,7 +315,7 @@ The driver should continue to increase the CurrentRenderPacket as packets are re
 
 #### EVTACXSTREAMGETCURRENTPACKET
 
-The [EvtAcxStreamGetCurrentPacket](/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_current_packet) tells the driver to indicate which packet (0-based) is currently being rendered to the hardware or is currently being filled by the capture hardware.
+The [EvtAcxStreamGetCurrentPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_current_packet) tells the driver to indicate which packet (0-based) is currently being rendered to the hardware or is currently being filled by the capture hardware.
 
 #### EVTACXSTREAMGETCAPTUREPACKET
 

@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_LNB_LOF_HIGH_BAND to inform the RF tuner
 keywords: ["KSPROPERTY_BDA_LNB_LOF_HIGH_BAND Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_LNB_LOF_HIGH_BAND
 api_location:

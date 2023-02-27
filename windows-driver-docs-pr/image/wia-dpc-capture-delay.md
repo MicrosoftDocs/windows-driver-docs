@@ -4,6 +4,7 @@ description: The WIA_DPC_CAPTURE_DELAY property contains a value that represents
 keywords: ["WIA_DPC_CAPTURE_DELAY Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_CAPTURE_DELAY
 api_location:

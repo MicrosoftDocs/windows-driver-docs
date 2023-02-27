@@ -4,6 +4,7 @@ description: Clients use the KSPROPERTY_PIN_DATARANGES property to determine the
 keywords: ["KSPROPERTY_PIN_DATARANGES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_PIN_DATARANGES
 api_location:

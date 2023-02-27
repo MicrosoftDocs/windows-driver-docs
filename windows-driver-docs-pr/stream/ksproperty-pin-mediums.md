@@ -4,6 +4,7 @@ description: This property returns the list of mediums supported by pins instant
 keywords: ["KSPROPERTY_PIN_MEDIUMS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_PIN_MEDIUMS
 api_location:

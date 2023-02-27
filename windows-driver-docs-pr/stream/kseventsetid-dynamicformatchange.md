@@ -4,6 +4,7 @@ description: The KSEVENTSETID\_DynamicFormatChange event set includes a single e
 keywords: ["KSEVENTSETID_DynamicFormatChange Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENTSETID_DynamicFormatChange
 api_type:

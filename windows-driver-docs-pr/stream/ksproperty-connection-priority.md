@@ -4,6 +4,7 @@ description: Clients use the KSPROPERTY_CONNECTION_PRIORITY property to get or s
 keywords: ["KSPROPERTY_CONNECTION_PRIORITY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CONNECTION_PRIORITY
 api_location:

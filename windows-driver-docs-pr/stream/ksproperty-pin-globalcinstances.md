@@ -4,6 +4,7 @@ description: The client uses the KSPROPERTY_PIN_GLOBALCINSTANCES to determine th
 keywords: ["KSPROPERTY_PIN_GLOBALCINSTANCES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_PIN_GLOBALCINSTANCES
 api_location:

@@ -4,6 +4,7 @@ description: The WIA_DIP_STI_GEN_CAPABILITIES property contains the generic STI 
 keywords: ["WIA_DIP_STI_GEN_CAPABILITIES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DIP_STI_GEN_CAPABILITIES
 api_location:

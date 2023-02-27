@@ -4,6 +4,7 @@ description: The KSPROPERTY_PIN_DATAFLOW property specifies the direction of dat
 keywords: ["KSPROPERTY_PIN_DATAFLOW Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_PIN_DATAFLOW
 api_location:

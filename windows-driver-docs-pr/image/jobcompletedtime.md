@@ -4,6 +4,7 @@ description: The optional JobCompletedTime element specifies the time at which t
 keywords: ["JobCompletedTime element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobCompletedTime
 api_type:

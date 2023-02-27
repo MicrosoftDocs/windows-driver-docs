@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEODECODER\_STANDARD property controls the curren
 keywords: ["KSPROPERTY_VIDEODECODER_STANDARD Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEODECODER_STANDARD
 api_location:

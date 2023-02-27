@@ -4,6 +4,7 @@ description: The required ValidateScanTicketRequest operation element enables a 
 keywords: ["ValidateScanTicketRequest element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ValidateScanTicketRequest
 api_type:

@@ -4,6 +4,7 @@ description: The optional Scaling element specifies the scaling of both the widt
 keywords: ["Scaling element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Scaling wscn MustHonor ""
 api_type:

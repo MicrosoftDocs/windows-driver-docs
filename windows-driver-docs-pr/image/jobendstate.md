@@ -4,6 +4,7 @@ description: The required JobEndState element describes the final state of the c
 keywords: ["JobEndState element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobEndState
 api_type:

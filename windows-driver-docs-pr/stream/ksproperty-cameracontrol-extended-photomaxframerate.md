@@ -4,6 +4,7 @@ description: This property provides the maximum capture frame rate for a camera 
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMAXFRAMERATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMAXFRAMERATE
 api_location:

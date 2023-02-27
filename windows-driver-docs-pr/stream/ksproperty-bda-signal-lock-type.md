@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCK\_TYPE to determine the cu
 keywords: ["KSPROPERTY_BDA_SIGNAL_LOCK_TYPE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_SIGNAL_LOCK_TYPE
 api_location:

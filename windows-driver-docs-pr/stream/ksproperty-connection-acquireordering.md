@@ -4,6 +4,7 @@ description: The KSPROPERTY_CONNECTION_ACQUIREORDERING property is an optional p
 keywords: ["KSPROPERTY_CONNECTION_ACQUIREORDERING Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CONNECTION_ACQUIREORDERING
 api_location:

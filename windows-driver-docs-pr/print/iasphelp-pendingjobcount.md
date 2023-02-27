@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_PendingJobCount method Print Devices", "get_PendingJobCount method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_PendingJobCount method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_PendingJobCount
 api_type:

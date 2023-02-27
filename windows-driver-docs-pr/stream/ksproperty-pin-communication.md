@@ -4,6 +4,7 @@ description: The KSPROPERTY_PIN_COMMUNICATION property specifies the direction o
 keywords: ["KSPROPERTY_PIN_COMMUNICATION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_PIN_COMMUNICATION
 api_location:

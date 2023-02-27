@@ -4,6 +4,7 @@ description: The optional Film element describes the capabilities of the film sc
 keywords: ["Film element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Film
 api_type:

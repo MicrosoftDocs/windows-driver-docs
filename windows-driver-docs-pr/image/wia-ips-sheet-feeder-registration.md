@@ -4,6 +4,7 @@ description: The WIA\_IPS\_SHEET\_FEEDER\_REGISTRATION property contains the reg
 keywords: ["WIA_IPS_SHEET_FEEDER_REGISTRATION Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_SHEET_FEEDER_REGISTRATION
 api_location:

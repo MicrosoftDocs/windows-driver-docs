@@ -4,6 +4,7 @@ description: The KSPROPERTY_RAW_AVC_CMD property issues a raw AV/C command. Raw 
 keywords: ["KSPROPERTY_RAW_AVC_CMD Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_RAW_AVC_CMD
 api_location:

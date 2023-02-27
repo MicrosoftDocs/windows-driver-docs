@@ -4,6 +4,7 @@ description: The WIA\_IPS\_BARCODE\_SEARCH\_DIRECTION property is used to config
 keywords: ["WIA_IPS_BARCODE_SEARCH_DIRECTION Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_BARCODE_SEARCH_DIRECTION
 api_location:

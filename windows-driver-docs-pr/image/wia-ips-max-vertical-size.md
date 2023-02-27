@@ -4,6 +4,7 @@ description: The WIA\_IPS\_MAX\_VERTICAL\_SIZE property contains the physical ve
 keywords: ["WIA_IPS_MAX_VERTICAL_SIZE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_MAX_VERTICAL_SIZE
 api_location:

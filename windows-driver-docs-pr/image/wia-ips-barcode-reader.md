@@ -4,6 +4,7 @@ description: The WIA\_IPS\_BARCODE\_READER property is used by the WIA minidrive
 keywords: ["WIA_IPS_BARCODE_READER Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_BARCODE_READER
 api_location:

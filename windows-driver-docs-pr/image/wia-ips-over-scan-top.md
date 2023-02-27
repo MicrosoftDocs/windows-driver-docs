@@ -4,6 +4,7 @@ description: The WIA\_IPS\_OVER\_SCAN\_TOP property along with WIA\_IPS\_OVER\_S
 keywords: ["WIA_IPS_OVER_SCAN_TOP Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_OVER_SCAN_TOP
 api_location:

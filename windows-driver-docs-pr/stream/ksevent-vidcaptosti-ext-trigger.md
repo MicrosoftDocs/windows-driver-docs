@@ -4,6 +4,7 @@ description: The KSEVENT_VIDCAPTOSTI_EXT_TRIGGER event propagates an action, suc
 keywords: ["KSEVENT_VIDCAPTOSTI_EXT_TRIGGER Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_VIDCAPTOSTI_EXT_TRIGGER
 api_type:

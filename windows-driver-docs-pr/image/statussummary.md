@@ -4,6 +4,7 @@ description: The required StatusSummary element contains a summary of the scan d
 keywords: ["StatusSummary element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn StatusSummary
 api_type:

@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PRINTER\_ENDORSER\_FONT\_TYPE property configures the
 keywords: ["WIA_IPS_PRINTER_ENDORSER_FONT_TYPE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PRINTER_ENDORSER_FONT_TYPE
 api_location:

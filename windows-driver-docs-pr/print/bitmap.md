@@ -4,6 +4,7 @@ description: The optional bitmap element is used to display a bitmap image to th
 keywords: ["bitmap element Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - bitmap
 api_type:

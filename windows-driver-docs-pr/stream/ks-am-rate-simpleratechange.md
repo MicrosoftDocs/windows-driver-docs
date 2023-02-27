@@ -4,6 +4,7 @@ description: The KS_AM_RATE_SimpleDataRate property sets the time stamp rate on 
 keywords: ["KS_AM_RATE_SimpleRateChange Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KS_AM_RATE_SimpleRateChange
 api_location:

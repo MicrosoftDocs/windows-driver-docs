@@ -4,6 +4,7 @@ description: The required Width element specifies a width value that the scan de
 keywords: ["Width element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Width wscn Override "" wscn UsedDefault ""
 api_type:

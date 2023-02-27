@@ -4,6 +4,7 @@ description: The KSPROPERTY_AUDDECOUT_MODES property returns the available outpu
 keywords: ["KSPROPERTY_AUDDECOUT_MODES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDDECOUT_MODES
 api_location:

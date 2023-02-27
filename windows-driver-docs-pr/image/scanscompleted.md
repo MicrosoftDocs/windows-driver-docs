@@ -4,6 +4,7 @@ description: The required ScansCompleted element specifies the number of images 
 keywords: ["ScansCompleted element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScansCompleted
 api_type:

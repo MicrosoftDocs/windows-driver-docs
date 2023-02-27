@@ -1,7 +1,8 @@
 ---
 title: EFI_USB_SUPERSPEED_INTERFACE_INFO
 description: The EFI_USB_SUPERSPEED_INTERFACE_INFO structure defines the supported USB SuperSpeed interface to the USB function driver.
-ms.date: 08/23/2021
+ms.date: 02/24/2023
+ms.topic: reference
 ---
 
 # EFI_USB_SUPERSPEED_INTERFACE_INFO

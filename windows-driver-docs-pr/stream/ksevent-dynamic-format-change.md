@@ -4,6 +4,7 @@ description: Clients enable the KSEVENT\_DYNAMIC\_FORMAT\_CHANGE event to signal
 keywords: ["KSEVENT_DYNAMIC_FORMAT_CHANGE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_DYNAMIC_FORMAT_CHANGE
 api_location:

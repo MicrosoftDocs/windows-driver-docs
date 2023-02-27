@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PRINTER\_ENDORSER\_PADDING property configures the va
 keywords: ["WIA_IPS_PRINTER_ENDORSER_PADDING Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PRINTER_ENDORSER_PADDING
 api_location:

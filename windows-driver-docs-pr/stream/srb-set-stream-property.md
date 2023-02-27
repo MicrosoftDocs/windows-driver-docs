@@ -4,6 +4,7 @@ description: SRB\_SET\_STREAM\_PROPERTY
 keywords: ["SRB_SET_STREAM_PROPERTY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SRB_SET_STREAM_PROPERTY
 api_type:

@@ -4,6 +4,7 @@ description: The AVCSTRM_CLOSE function code closes the specified stream and fre
 keywords: ["AVCSTRM_CLOSE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVCSTRM_CLOSE
 api_type:

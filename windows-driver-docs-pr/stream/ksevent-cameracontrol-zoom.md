@@ -4,6 +4,7 @@ description: The KSEVENT_CAMERACONTROL_ZOOM event is triggered when a camera zoo
 keywords: ["KSEVENT_CAMERACONTROL_ZOOM Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_CAMERACONTROL_ZOOM
 api_type:

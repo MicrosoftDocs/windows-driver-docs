@@ -1,7 +1,8 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.DetectPort
 description: The DetectPort function returns the type of device attached to the USB port.
-ms.date: 08/20/2021
+ms.date: 02/24/2023
+ms.topic: reference
 ---
 
 # EFI_USBFN_IO_PROTOCOL.DetectPort

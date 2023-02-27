@@ -4,6 +4,7 @@ description: The WIA_DPS_HORIZONTAL_BED_SIZE property contains the physical dime
 keywords: ["WIA_DPS_HORIZONTAL_BED_SIZE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_HORIZONTAL_BED_SIZE
 api_location:

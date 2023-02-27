@@ -4,6 +4,7 @@ description: The required ScannerStateReasons element is a list of ScannerStateR
 keywords: ["ScannerStateReasons element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScannerStateReasons
 api_type:

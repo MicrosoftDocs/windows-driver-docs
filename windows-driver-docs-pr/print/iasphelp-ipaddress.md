@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_IPAddress method Print Devices", "get_IPAddress method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_IPAddress method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_IPAddress
 api_type:

@@ -4,6 +4,7 @@ description: The optional MediaBackImageInfo element contains the image informat
 keywords: ["MediaBackImageInfo element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn MediaBackImageInfo
 api_type:

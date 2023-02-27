@@ -4,6 +4,7 @@ description: The current number of pins this pin factory has instantiated, as we
 keywords: ["KSPROPERTY_PIN_CINSTANCES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_PIN_CINSTANCES
 api_location:

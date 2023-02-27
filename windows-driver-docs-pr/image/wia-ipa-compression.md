@@ -4,6 +4,7 @@ description: The WIA_IPA_COMPRESSION property contains the current compression t
 keywords: ["WIA_IPA_COMPRESSION Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_COMPRESSION
 api_location:

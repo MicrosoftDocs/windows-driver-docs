@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_LNB_SWITCH_FREQUENCY to inform the RF tu
 keywords: ["KSPROPERTY_BDA_LNB_SWITCH_FREQUENCY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_LNB_SWITCH_FREQUENCY
 api_location:

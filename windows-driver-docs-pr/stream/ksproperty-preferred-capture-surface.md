@@ -4,6 +4,7 @@ description: The KSPROPERTY\_PREFERRED\_CAPTURE\_SURFACE property returns the ca
 keywords: ["KSPROPERTY_PREFERRED_CAPTURE_SURFACE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_PREFERRED_CAPTURE_SURFACE
 api_location:

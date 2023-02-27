@@ -4,6 +4,7 @@ description: The required ActiveConditions element is a collection of all of the
 keywords: ["ActiveConditions element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ActiveConditions
 api_type:

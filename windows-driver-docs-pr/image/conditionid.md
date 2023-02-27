@@ -4,6 +4,7 @@ description: The required ConditionId element uniquely identifies the device con
 keywords: ["ConditionId element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ConditionId
 api_type:

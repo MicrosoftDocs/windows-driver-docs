@@ -4,6 +4,7 @@ description: The required ADFOpticalResolution element specifies the maximum opt
 keywords: ["ADFOpticalResolution element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ADFOpticalResolution
 api_type:

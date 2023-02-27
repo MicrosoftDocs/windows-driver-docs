@@ -4,6 +4,7 @@ description: Clients can use the KSPROPERTY_CONNECTION_PROPOSEDATAFORMAT propert
 keywords: ["KSPROPERTY_CONNECTION_PROPOSEDATAFORMAT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CONNECTION_PROPOSEDATAFORMAT
 api_location:

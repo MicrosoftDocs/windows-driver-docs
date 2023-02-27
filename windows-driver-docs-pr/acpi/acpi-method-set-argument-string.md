@@ -3,7 +3,8 @@ title: ACPI_METHOD_SET_ARGUMENT_STRING macro
 description: The ACPI_METHOD_SET_ARGUMENT_STRING macro sets the members of an ACPI_METHOD_ARGUMENT structure for a string value.
 keywords: 
 - ACPI_METHOD_SET_ARGUMENT_STRING macro ACPI Devices
-ms.date: 08/17/2021
+ms.date: 02/24/2023
+ms.topic: reference
 ---
 
 # ACPI_METHOD_SET_ARGUMENT_STRING macro

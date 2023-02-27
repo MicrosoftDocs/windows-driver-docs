@@ -4,6 +4,7 @@ description: The KSPROPERTY_CAMERACONTROL_AUTO_EXPOSURE_PRIORITY property specif
 keywords: ["KSPROPERTY_CAMERACONTROL_AUTO_EXPOSURE_PRIORITY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_AUTO_EXPOSURE_PRIORITY
 api_location:

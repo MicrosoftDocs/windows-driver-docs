@@ -4,6 +4,7 @@ description: The KSPROPERTY\_WAVE\_BUFFER property describes a wave device's buf
 keywords: ["KSPROPERTY_WAVE_BUFFER Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_WAVE_BUFFER
 api_location:

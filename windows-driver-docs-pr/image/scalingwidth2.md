@@ -4,6 +4,7 @@ description: The required ScalingWidth element contains the range of allowable v
 keywords: ["ScalingWidth element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScalingWidth
 api_type:

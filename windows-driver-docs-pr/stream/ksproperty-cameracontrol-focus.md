@@ -4,6 +4,7 @@ description: User-mode clients use the KSPROPERTY_CAMERACONTROL_FOCUS property t
 keywords: ["KSPROPERTY_CAMERACONTROL_FOCUS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_FOCUS
 api_location:

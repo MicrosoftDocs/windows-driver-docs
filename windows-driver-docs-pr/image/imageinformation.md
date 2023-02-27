@@ -4,6 +4,7 @@ description: The required ImageInformation element contains information about th
 keywords: ["ImageInformation element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ImageInformation
 api_type:

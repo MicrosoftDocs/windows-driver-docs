@@ -4,6 +4,7 @@ description: The KSEVENT_TUNER_INITIATE_SCAN event requests that the driver init
 keywords: ["KSEVENT_TUNER_INITIATE_SCAN Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_TUNER_INITIATE_SCAN
 api_type:

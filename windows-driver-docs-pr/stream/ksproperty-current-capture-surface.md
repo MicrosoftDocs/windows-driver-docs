@@ -4,6 +4,7 @@ description: The KSPROPERTY_CURRENT_CAPTURE_SURFACE property gets or sets the ty
 keywords: ["KSPROPERTY_CURRENT_CAPTURE_SURFACE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CURRENT_CAPTURE_SURFACE
 api_location:

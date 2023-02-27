@@ -4,6 +4,7 @@ description: The KSPROPERTY\_QUALITY\_REPORT property is an optional property th
 keywords: ["KSPROPERTY_QUALITY_REPORT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_QUALITY_REPORT
 api_location:

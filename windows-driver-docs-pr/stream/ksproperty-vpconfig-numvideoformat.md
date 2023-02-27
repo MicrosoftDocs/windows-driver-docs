@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VPCONFIG\_NUMVIDEOFORMAT property obtains the maxim
 keywords: ["KSPROPERTY_VPCONFIG_NUMVIDEOFORMAT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VPCONFIG_NUMVIDEOFORMAT
 api_location:

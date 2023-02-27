@@ -1,7 +1,8 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.Transfer
 description: The Transfer function handles transferring data to or from the host on the specified endpoint.
-ms.date: 08/23/2021
+ms.date: 02/24/2023
+ms.topic: reference
 ---
 
 # EFI_USBFN_IO_PROTOCOL.Transfer

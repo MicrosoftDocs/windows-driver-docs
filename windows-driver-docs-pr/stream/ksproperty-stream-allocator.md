@@ -4,6 +4,7 @@ description: The KSPROPERTY\_STREAM\_ALLOCATOR property is an optional property 
 keywords: ["KSPROPERTY_STREAM_ALLOCATOR Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_STREAM_ALLOCATOR
 api_location:

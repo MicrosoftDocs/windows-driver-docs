@@ -4,6 +4,7 @@ description: The WIA\_IPS\_OPTICAL\_YRES property contains the highest-supported
 keywords: ["WIA_IPS_OPTICAL_YRES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_OPTICAL_YRES
 api_location:

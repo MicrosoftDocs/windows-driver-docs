@@ -4,6 +4,7 @@ description: This extended property control is used by the client to query the d
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_METADATA Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_METADATA
 api_location:

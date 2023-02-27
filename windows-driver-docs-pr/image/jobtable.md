@@ -4,6 +4,7 @@ description: The required JobTable element contains current and historical infor
 keywords: ["JobTable element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobTable
 api_type:

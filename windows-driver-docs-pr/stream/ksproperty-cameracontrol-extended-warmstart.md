@@ -4,6 +4,7 @@ description: The warm start property control provides a hint for the driver to k
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_WARMSTART Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_WARMSTART
 api_type:

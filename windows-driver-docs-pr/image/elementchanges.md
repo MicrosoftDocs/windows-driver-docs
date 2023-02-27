@@ -4,6 +4,7 @@ description: The required ElementChanges element contains the changes to the Sca
 keywords: ["ElementChanges element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ElementChanges
 api_type:

@@ -4,6 +4,7 @@ description: The required PlatenOpticalResolution element specifies the maximum 
 keywords: ["PlatenOpticalResolution element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn PlatenOpticalResolution
 api_type:

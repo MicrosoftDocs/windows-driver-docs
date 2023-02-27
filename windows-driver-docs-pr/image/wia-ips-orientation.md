@@ -4,6 +4,7 @@ description: The WIA_IPS_ORIENTATION property describes the current orientation 
 keywords: ["WIA_IPS_ORIENTATION Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_ORIENTATION
 api_location:

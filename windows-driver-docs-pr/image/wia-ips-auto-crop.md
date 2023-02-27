@@ -4,6 +4,7 @@ description: The WIA\_IPS\_AUTO\_CROP property is used to enable automatic detec
 keywords: ["WIA_IPS_AUTO_CROP Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_AUTO_CROP
 api_location:

@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_IsCluster method Print Devices", "get_IsCluster method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_IsCluster method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_IsCluster
 api_type:

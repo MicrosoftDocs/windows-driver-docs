@@ -4,6 +4,7 @@ description: The optional DocumentParameters element specifies the image process
 keywords: ["DocumentParameters element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn DocumentParameters
 api_type:

@@ -4,6 +4,7 @@ description: The optional customData element specifies a custom data source for 
 keywords: ["customData element Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - customData
 api_type:

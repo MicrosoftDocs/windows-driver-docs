@@ -4,6 +4,7 @@ description: Clients use KSMETHOD_BDA_CREATE_PIN_FACTORY to create a pin factory
 keywords: ["KSMETHOD_BDA_CREATE_PIN_FACTORY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSMETHOD_BDA_CREATE_PIN_FACTORY
 api_location:

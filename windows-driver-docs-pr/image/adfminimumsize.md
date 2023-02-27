@@ -4,6 +4,7 @@ description: The required ADFMinimumSize element specifies the smallest size ori
 keywords: ["ADFMinimumSize element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ADFMinimumSize
 api_type:

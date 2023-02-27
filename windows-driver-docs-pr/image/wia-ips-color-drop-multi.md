@@ -4,6 +4,7 @@ description: The WIA_IPS_COLOR_DROP_MULTI property is used to report when more t
 keywords: ["WIA_IPS_COLOR_DROP_MULTI Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_COLOR_DROP_MULTI
 api_location:

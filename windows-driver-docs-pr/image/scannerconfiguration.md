@@ -4,6 +4,7 @@ description: The required ScannerConfiguration element is a collection of elemen
 keywords: ["ScannerConfiguration element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScannerConfiguration
 api_type:

@@ -4,6 +4,7 @@ description: The KSEVENT\_CONNECTION\_PRIORITY event allows a client to receive 
 keywords: ["KSEVENT_CONNECTION_PRIORITY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_CONNECTION_PRIORITY
 api_type:

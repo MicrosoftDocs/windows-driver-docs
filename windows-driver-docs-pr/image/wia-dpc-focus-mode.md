@@ -4,6 +4,7 @@ description: The WIA_DPC_FOCUS_MODE property defines the current focus mode sett
 keywords: ["WIA_DPC_FOCUS_MODE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_FOCUS_MODE
 api_location:

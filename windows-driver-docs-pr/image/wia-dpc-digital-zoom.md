@@ -4,6 +4,7 @@ description: The WIA_DPC_DIGITAL_ZOOM property contains the effective zoom ratio
 keywords: ["WIA_DPC_DIGITAL_ZOOM Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_DIGITAL_ZOOM
 api_location:

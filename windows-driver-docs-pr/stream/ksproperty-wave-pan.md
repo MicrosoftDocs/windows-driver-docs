@@ -4,6 +4,7 @@ description: The KSPROPERTY\_WAVE\_PAN property specifies a wave device's pan se
 keywords: ["KSPROPERTY_WAVE_PAN Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_WAVE_PAN
 api_location:

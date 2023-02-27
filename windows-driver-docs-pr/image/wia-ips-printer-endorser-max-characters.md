@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PRINTER\_ENDORSER\_MAX\_CHARACTERS property describes
 keywords: ["WIA_IPS_PRINTER_ENDORSER_MAX_CHARACTERS Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PRINTER_ENDORSER_MAX_CHARACTERS
 api_location:

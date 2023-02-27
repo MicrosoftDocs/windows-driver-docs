@@ -4,6 +4,7 @@ description: The WIA_DPA_FIRMWARE_VERSION property contains a device firmware ve
 keywords: ["WIA_DPA_FIRMWARE_VERSION Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPA_FIRMWARE_VERSION
 api_location:

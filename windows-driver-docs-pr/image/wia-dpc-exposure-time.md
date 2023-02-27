@@ -4,6 +4,7 @@ description: The WIA_DPC_EXPOSURE_TIME property corresponds to the shutter speed
 keywords: ["WIA_DPC_EXPOSURE_TIME Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_EXPOSURE_TIME
 api_location:

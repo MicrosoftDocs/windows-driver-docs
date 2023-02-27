@@ -4,6 +4,7 @@ description: The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSPRIORITY property ID 
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSPRIORITY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSPRIORITY
 api_location:

@@ -4,6 +4,7 @@ description: The required FilmResolutions element contains a list of resolutions
 keywords: ["FilmResolutions element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn FilmResolutions
 api_type:

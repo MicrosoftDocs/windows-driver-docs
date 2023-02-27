@@ -4,6 +4,7 @@ description: The KSPROPERTY\_WAVE\_OUTPUT\_CAPABILITIES property returns a wave 
 keywords: ["KSPROPERTY_WAVE_OUTPUT_CAPABILITIES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_WAVE_OUTPUT_CAPABILITIES
 api_location:

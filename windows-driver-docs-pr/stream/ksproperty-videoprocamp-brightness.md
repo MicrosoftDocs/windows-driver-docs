@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOPROCAMP\_BRIGHTNESS property controls the brig
 keywords: ["KSPROPERTY_VIDEOPROCAMP_BRIGHTNESS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOPROCAMP_BRIGHTNESS
 api_location:

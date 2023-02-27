@@ -4,6 +4,7 @@ description: The WIA\_IPS\_COLOR\_DROP\_BLUE property is used to configure the a
 keywords: ["WIA_IPS_COLOR_DROP_BLUE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_COLOR_DROP_BLUE
 api_location:

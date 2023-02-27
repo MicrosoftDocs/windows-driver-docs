@@ -4,6 +4,7 @@ description: The required ClientDisplayName element specifies the string that th
 keywords: ["ClientDisplayName element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ClientDisplayName
 api_type:

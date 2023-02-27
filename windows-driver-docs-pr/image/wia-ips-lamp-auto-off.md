@@ -4,6 +4,7 @@ description: The WIA\_IPS\_LAMP\_AUTO\_OFF property contains the current configu
 keywords: ["WIA_IPS_LAMP_AUTO_OFF Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_LAMP_AUTO_OFF
 api_location:

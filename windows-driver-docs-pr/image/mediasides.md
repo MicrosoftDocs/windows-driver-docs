@@ -4,6 +4,7 @@ description: The optional MediaSides element contains the parameters that are un
 keywords: ["MediaSides element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn MediaSides wscn MustHonor ""
 api_type:

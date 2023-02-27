@@ -4,6 +4,7 @@ description: The WIA_DPS_PAGE_WIDTH property contains the width of the currently
 keywords: ["WIA_DPS_PAGE_WIDTH Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_PAGE_WIDTH
 api_location:

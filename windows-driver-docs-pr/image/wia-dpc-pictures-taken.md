@@ -4,6 +4,7 @@ description: The WIA_DPC_PICTURES_TAKEN property contains the number of pictures
 keywords: ["WIA_DPC_PICTURES_TAKEN Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_PICTURES_TAKEN
 api_location:

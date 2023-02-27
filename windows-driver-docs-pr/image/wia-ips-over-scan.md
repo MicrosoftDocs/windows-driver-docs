@@ -4,6 +4,7 @@ description: The WIA\_IPS\_OVER\_SCAN property is used to enable and configure o
 keywords: ["WIA_IPS_OVER_SCAN Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_OVER_SCAN
 api_location:

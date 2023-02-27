@@ -4,6 +4,7 @@ description: The required ExposureSettings element contains individual adjustmen
 keywords: ["ExposureSettings element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ExposureSettings
 api_type:

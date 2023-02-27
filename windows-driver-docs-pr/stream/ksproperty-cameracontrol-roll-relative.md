@@ -4,6 +4,7 @@ description: The KSPROPERTY_CAMERACONTROL_ROLL_RELATIVE property specifies camer
 keywords: ["KSPROPERTY_CAMERACONTROL_ROLL_RELATIVE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_ROLL_RELATIVE
 api_location:

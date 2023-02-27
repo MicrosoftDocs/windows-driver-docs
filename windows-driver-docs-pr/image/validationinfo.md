@@ -4,6 +4,7 @@ description: The required ValidationInfo element contains all ScanTicket validat
 keywords: ["ValidationInfo element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ValidationInfo
 api_type:

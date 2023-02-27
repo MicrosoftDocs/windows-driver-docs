@@ -4,6 +4,7 @@ description: KSPROPERTY_CONNECTION_STARTAT is an optional property that is imple
 keywords: ["KSPROPERTY_CONNECTION_STARTAT Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CONNECTION_STARTAT
 api_location:

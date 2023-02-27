@@ -4,6 +4,7 @@ description: The required BrightnessSupported element specifies whether the scan
 keywords: ["BrightnessSupported element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn BrightnessSupported
 api_type:

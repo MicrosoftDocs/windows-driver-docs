@@ -4,6 +4,7 @@ description: The required JobId element uniquely identifies a job within a scann
 keywords: ["JobId element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobId
 api_type:

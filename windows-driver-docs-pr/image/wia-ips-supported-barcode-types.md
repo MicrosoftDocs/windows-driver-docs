@@ -4,6 +4,7 @@ description: The WIA\_IPS\_SUPPORTED\_BARCODE\_TYPES property is used by the WIA
 keywords: ["WIA_IPS_SUPPORTED_BARCODE_TYPES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_SUPPORTED_BARCODE_TYPES
 api_location:

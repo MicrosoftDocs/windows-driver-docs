@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_CA_SMART_CARD_STATUS to determine status
 keywords: ["KSPROPERTY_BDA_CA_SMART_CARD_STATUS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_CA_SMART_CARD_STATUS
 api_location:

@@ -4,6 +4,7 @@ description: The WIA_DPC_WHITE_BALANCE property specifies how a digital camera b
 keywords: ["WIA_DPC_WHITE_BALANCE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_WHITE_BALANCE
 api_location:

@@ -4,6 +4,7 @@ description: The required ValidateScanTicketResponse operation notifies the clie
 keywords: ["ValidateScanTicketResponse element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ValidateScanTicketResponse
 api_type:

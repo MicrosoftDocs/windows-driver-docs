@@ -4,6 +4,7 @@ description: The AVCSTRM_READ function code is used to submit a data buffer avcs
 keywords: ["AVCSTRM_READ Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVCSTRM_READ
 api_type:

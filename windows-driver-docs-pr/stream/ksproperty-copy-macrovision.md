@@ -4,6 +4,7 @@ description: The KSPROPERTY_COPY_MACROVISION property indicates the Macrovision 
 keywords: ["KSPROPERTY_COPY_MACROVISION Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_COPY_MACROVISION
 api_location:

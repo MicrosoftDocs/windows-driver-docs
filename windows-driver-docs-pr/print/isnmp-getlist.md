@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["GetList method Print Devices", "GetList method Print Devices , ISNMP interface", "ISNMP interface Print Devices , GetList method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ISNMP.GetList
 api_location:

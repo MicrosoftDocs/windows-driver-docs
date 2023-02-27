@@ -4,6 +4,7 @@ description: The KSPROPERTY_EXTXPORT_CAPABILITIES property retrieves an external
 keywords: ["KSPROPERTY_EXTXPORT_CAPABILITIES Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_EXTXPORT_CAPABILITIES
 api_location:

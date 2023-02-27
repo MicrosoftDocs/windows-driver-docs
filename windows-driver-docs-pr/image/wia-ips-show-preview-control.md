@@ -4,6 +4,7 @@ description: The WIA\_IPS\_SHOW\_PREVIEW\_CONTROL property indicates whether an 
 keywords: ["WIA_IPS_SHOW_PREVIEW_CONTROL Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_SHOW_PREVIEW_CONTROL
 api_location:

@@ -4,6 +4,7 @@ description: The KSEVENT_VIDEODECODER_CHANGED event propagates an action, such a
 keywords: ["KSEVENT_VIDEODECODER_CHANGED Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_VIDEODECODER_CHANGED
 api_type:

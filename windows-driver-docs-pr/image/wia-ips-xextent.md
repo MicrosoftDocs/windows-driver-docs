@@ -4,6 +4,7 @@ description: The WIA_IPS_XEXTENT property contains the current width, in pixels,
 keywords: ["WIA_IPS_XEXTENT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_XEXTENT
 api_location:

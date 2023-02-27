@@ -4,6 +4,7 @@ description: The WIA_DPS_PAGES property contains the current number of pages to 
 keywords: ["WIA_DPS_PAGES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_PAGES
 api_location:

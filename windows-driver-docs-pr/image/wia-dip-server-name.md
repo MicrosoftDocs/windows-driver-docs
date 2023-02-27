@@ -4,6 +4,7 @@ description: The WIA_DIP_SERVER_NAME property contains the name of the server th
 keywords: ["WIA_DIP_SERVER_NAME Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DIP_SERVER_NAME
 api_location:

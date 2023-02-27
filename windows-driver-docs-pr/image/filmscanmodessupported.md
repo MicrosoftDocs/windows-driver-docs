@@ -4,6 +4,7 @@ description: The required FilmScanModesSupported element contains a list of film
 keywords: ["FilmScanModesSupported element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn FilmScanModesSupported
 api_type:

@@ -4,6 +4,7 @@ description: The WIA_IPS_PHOTOMETRIC_INTERP property contains the current settin
 keywords: ["WIA_IPS_PHOTOMETRIC_INTERP Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PHOTOMETRIC_INTERP
 api_location:

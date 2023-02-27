@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PRINTER\_ENDORSER property is used by the WIA minidri
 keywords: ["WIA_IPS_PRINTER_ENDORSER Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PRINTER_ENDORSER
 api_location:

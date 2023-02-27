@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOPROCAMP\_GAMMA property controls a camera's ga
 keywords: ["KSPROPERTY_VIDEOPROCAMP_GAMMA Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOPROCAMP_GAMMA
 api_location:

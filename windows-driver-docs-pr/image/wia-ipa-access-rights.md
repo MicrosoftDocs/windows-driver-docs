@@ -4,6 +4,7 @@ description: The WIA_IPA_ACCESS_RIGHTS property contains the access rights for a
 keywords: ["WIA_IPA_ACCESS_RIGHTS Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_ACCESS_RIGHTS
 api_location:

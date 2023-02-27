@@ -4,6 +4,7 @@ description: The KSPROPERTY_EXTENSION_UNIT_INFO property retrieves the guidExten
 keywords: ["KSPROPERTY_EXTENSION_UNIT_INFO Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_EXTENSION_UNIT_INFO
 api_location:

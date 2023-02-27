@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TUNER\_FREQUENCY property sets or gets the current 
 keywords: ["KSPROPERTY_TUNER_FREQUENCY Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TUNER_FREQUENCY
 api_location:

@@ -4,6 +4,7 @@ description: The AVC_FUNCTION_GET_REQUEST function code is used to register to r
 keywords: ["AVC_FUNCTION_GET_REQUEST Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AVC_FUNCTION_GET_REQUEST
 api_type:

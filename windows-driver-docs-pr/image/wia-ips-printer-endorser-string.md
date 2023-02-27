@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PRINTER\_ENDORSER\_STRING property is used to configu
 keywords: ["WIA_IPS_PRINTER_ENDORSER_STRING Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PRINTER_ENDORSER_STRING
 api_location:

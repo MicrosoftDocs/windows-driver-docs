@@ -4,6 +4,7 @@ description: The flash property control sets flash mode operation for both norma
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FLASHMODE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_FLASHMODE
 api_location:

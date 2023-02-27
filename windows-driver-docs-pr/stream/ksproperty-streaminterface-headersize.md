@@ -4,6 +4,7 @@ description: The KSPROPERTY\_STREAMINTERFACE\_HEADERSIZE property queries a pin 
 keywords: ["KSPROPERTY_STREAMINTERFACE_HEADERSIZE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_STREAMINTERFACE_HEADERSIZE
 api_location:

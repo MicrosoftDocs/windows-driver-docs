@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_OUTER_FEC_RATE to control the binary con
 keywords: ["KSPROPERTY_BDA_OUTER_FEC_RATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_OUTER_FEC_RATE
 api_location:

@@ -4,6 +4,7 @@ description: The WIA_IPC_THUMBNAIL_WIDTH property contains the current width, in
 keywords: ["WIA_IPC_THUMBNAIL_WIDTH Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPC_THUMBNAIL_WIDTH
 api_location:

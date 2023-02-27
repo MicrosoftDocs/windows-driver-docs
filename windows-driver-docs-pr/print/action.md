@@ -4,6 +4,7 @@ description: The optional action element describes an action that will be comple
 keywords: ["action element Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - action
 api_type:

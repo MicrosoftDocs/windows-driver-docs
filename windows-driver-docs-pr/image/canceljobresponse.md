@@ -4,6 +4,7 @@ description: The required CancelJobResponse operation element acknowledges a cli
 keywords: ["CancelJobResponse element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn CancelJobResponse /
 api_type:

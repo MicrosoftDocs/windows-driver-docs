@@ -4,6 +4,7 @@ description: The WIA\_IPS\_FEEDER\_CONTROL property is used to configure manual 
 keywords: ["WIA_IPS_FEEDER_CONTROL Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_FEEDER_CONTROL
 api_location:

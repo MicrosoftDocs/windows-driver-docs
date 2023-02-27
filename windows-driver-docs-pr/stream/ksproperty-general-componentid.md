@@ -4,6 +4,7 @@ description: The KSPROPERTY_GENERAL_COMPONENTID property is an optional property
 keywords: ["KSPROPERTY_GENERAL_COMPONENTID Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_GENERAL_COMPONENTID
 api_location:

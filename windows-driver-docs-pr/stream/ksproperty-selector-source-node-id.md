@@ -4,6 +4,7 @@ description: The KSPROPERTY\_SELECTOR\_SOURCE\_NODE\_ID property specifies the p
 keywords: ["KSPROPERTY_SELECTOR_SOURCE_NODE_ID Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_SELECTOR_SOURCE_NODE_ID
 api_location:

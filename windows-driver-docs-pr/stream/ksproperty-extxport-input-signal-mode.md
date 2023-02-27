@@ -4,6 +4,7 @@ description: The KSPROPERTY_EXTXPORT_INPUT_SIGNAL_MODE property sets or gets an 
 keywords: ["KSPROPERTY_EXTXPORT_INPUT_SIGNAL_MODE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_EXTXPORT_INPUT_SIGNAL_MODE
 api_location:

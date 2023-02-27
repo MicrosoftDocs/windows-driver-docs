@@ -4,6 +4,7 @@ description: The required DocumentFinalParameters element contains the actual Do
 keywords: ["DocumentFinalParameters element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn DocumentFinalParameters
 api_type:

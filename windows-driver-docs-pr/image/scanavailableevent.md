@@ -4,6 +4,7 @@ description: The required ScanAvailableEvent element informs a client that a sca
 keywords: ["ScanAvailableEvent element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScanAvailableEvent
 api_type:

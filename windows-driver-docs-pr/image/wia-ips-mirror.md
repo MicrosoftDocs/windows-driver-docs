@@ -4,6 +4,7 @@ description: The WIA_IPS_MIRROR property is reserved by Microsoft for future use
 keywords: ["WIA_IPS_MIRROR Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_MIRROR
 api_location:

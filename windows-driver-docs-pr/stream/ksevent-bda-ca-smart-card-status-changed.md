@@ -4,6 +4,7 @@ description: Clients use KSEVENT_BDA_CA_SMART_CARD_STATUS_CHANGED to request not
 keywords: ["KSEVENT_BDA_CA_SMART_CARD_STATUS_CHANGED Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_BDA_CA_SMART_CARD_STATUS_CHANGED
 api_location:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VIDEOCONTROL\_CAPS property identifies the video co
 keywords: ["KSPROPERTY_VIDEOCONTROL_CAPS Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VIDEOCONTROL_CAPS
 api_location:

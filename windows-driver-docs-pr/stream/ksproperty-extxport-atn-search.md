@@ -4,6 +4,7 @@ description: The KSPROPERTY_EXTXPORT_ATN_SEARCH property searches to a specific 
 keywords: ["KSPROPERTY_EXTXPORT_ATN_SEARCH Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_EXTXPORT_ATN_SEARCH
 api_location:

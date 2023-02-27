@@ -4,6 +4,7 @@ description: The WIA_DIP_REMOTE_DEV_ID property contains the device identifier (
 keywords: ["WIA_DIP_REMOTE_DEV_ID Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DIP_REMOTE_DEV_ID
 api_location:

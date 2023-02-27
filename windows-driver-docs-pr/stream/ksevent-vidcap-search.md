@@ -4,6 +4,7 @@ description: The KSEVENT_VIDCAP_AUTO_UPDATE event is triggered when a search has
 keywords: ["KSEVENT_VIDCAP_SEARCH Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_VIDCAP_SEARCH
 api_type:

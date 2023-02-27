@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_ComputerName method Print Devices", "get_ComputerName method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_ComputerName method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_ComputerName
 api_type:

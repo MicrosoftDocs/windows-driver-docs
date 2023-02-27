@@ -4,6 +4,7 @@ description: The WIA_IPA_DATATYPE property contains the current data type settin
 keywords: ["WIA_IPA_DATATYPE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_DATATYPE
 api_location:

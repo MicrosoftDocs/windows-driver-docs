@@ -4,6 +4,7 @@ description: The WIA_DPF_MOUNT_POINT property is reserved by Microsoft for futur
 keywords: ["WIA_DPF_MOUNT_POINT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPF_MOUNT_POINT
 api_location:

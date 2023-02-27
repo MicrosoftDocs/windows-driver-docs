@@ -4,6 +4,7 @@ description: The WIA_IPA_NUMBER_OF_LINES property contains the number of lines t
 keywords: ["WIA_IPA_NUMBER_OF_LINES Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPA_NUMBER_OF_LINES
 api_location:

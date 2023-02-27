@@ -4,6 +4,7 @@ description: The WIA_DPC_THUMB_HEIGHT property defines the height, in pixels, of
 keywords: ["WIA_DPC_THUMB_HEIGHT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPC_THUMB_HEIGHT
 api_location:

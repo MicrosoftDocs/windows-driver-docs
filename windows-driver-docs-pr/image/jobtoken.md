@@ -4,6 +4,7 @@ description: The required JobToken element contains the device-created token for
 keywords: ["JobToken element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobToken
 api_type:

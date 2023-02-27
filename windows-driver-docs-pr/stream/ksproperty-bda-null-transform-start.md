@@ -4,6 +4,7 @@ description: Clients use KSPROPERTY_BDA_NULL_TRANSFORM_START to disable any tran
 keywords: ["KSPROPERTY_BDA_NULL_TRANSFORM_START Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_BDA_NULL_TRANSFORM_START
 api_location:

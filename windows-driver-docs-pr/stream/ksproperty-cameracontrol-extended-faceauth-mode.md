@@ -4,6 +4,7 @@ description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FACEAUTH\_MODE is a property I
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FACEAUTH_MODE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_EXTENDED_FACEAUTH_MODE
 api_location:

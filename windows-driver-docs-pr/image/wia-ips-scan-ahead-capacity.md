@@ -4,6 +4,7 @@ description: The WIA\_IPS\_SCAN\_AHEAD\_CAPACITY describes the maximum number of
 keywords: ["WIA_IPS_SCAN_AHEAD_CAPACITY Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_SCAN_AHEAD_CAPACITY
 api_location:

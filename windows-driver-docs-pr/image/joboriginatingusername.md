@@ -4,6 +4,7 @@ description: The required JobOriginatingUserName element specifies the name of t
 keywords: ["JobOriginatingUserName element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn JobOriginatingUserName
 api_type:

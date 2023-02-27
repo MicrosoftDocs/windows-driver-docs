@@ -1,7 +1,8 @@
 ---
 title: EFI_USB_BOS_DESCRIPTOR
 description: Provides information about the Binary Object Store (BOS) to the USB function driver.
-ms.date: 08/20/2021
+ms.date: 02/24/2023
+ms.topic: reference
 ---
 
 # EFI_USB_BOS_DESCRIPTOR

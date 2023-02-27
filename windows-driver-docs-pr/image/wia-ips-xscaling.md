@@ -4,6 +4,7 @@ description: The WIA\_IPS\_XSCALING property indicates if scaling along the x-ax
 keywords: ["WIA_IPS_XSCALING Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_XSCALING
 api_location:

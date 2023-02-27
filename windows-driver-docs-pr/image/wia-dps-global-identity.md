@@ -4,6 +4,7 @@ description: The WIA\_DPS\_GLOBAL\_IDENTITY property contains the SOAP address o
 keywords: ["WIA_DPS_GLOBAL_IDENTITY Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_GLOBAL_IDENTITY
 api_location:

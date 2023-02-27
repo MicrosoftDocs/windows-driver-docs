@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_MaximumResolution method Print Devices", "get_MaximumResolution method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_MaximumResolution method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_MaximumResolution
 api_type:

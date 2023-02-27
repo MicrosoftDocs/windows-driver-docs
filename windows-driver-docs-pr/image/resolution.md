@@ -4,6 +4,7 @@ description: The optional Resolution element specifies the resolution of the sca
 keywords: ["Resolution element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn Resolution wscn MustHonor ""
 api_type:

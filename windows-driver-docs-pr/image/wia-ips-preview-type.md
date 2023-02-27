@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PREVIEW\_TYPE property indicates if WIA\_IPA\_DATATYP
 keywords: ["WIA_IPS_PREVIEW_TYPE Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PREVIEW_TYPE
 api_location:

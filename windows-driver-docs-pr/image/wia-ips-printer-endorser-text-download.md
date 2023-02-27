@@ -4,6 +4,7 @@ description: The WIA\_IPS\_PRINTER\_ENDORSER\_TEXT\_DOWNLOAD property is used to
 keywords: ["WIA_IPS_PRINTER_ENDORSER_TEXT_DOWNLOAD Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_PRINTER_ENDORSER_TEXT_DOWNLOAD
 api_location:

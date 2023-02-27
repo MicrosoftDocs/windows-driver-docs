@@ -4,6 +4,7 @@ description: The required GetJobHistoryResponse element returns a summary of com
 keywords: ["GetJobHistoryResponse element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn GetJobHistoryResponse
 api_type:

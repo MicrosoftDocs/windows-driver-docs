@@ -4,6 +4,7 @@ description: The required FilmScanModeValue element identifies a specific film e
 keywords: ["FilmScanModeValue element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn FilmScanModeValue
 api_type:

@@ -4,6 +4,7 @@ description: The required CompressionQualityFactorSupported element specifies th
 keywords: ["CompressionQualityFactorSupported element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn CompressionQualityFactorSupported
 api_type:

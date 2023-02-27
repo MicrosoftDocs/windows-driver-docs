@@ -10,6 +10,7 @@ MSHAttr:
 keywords: ["get_Status method Print Devices", "get_Status method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_Status method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Iasphelp.get_Status
 api_type:

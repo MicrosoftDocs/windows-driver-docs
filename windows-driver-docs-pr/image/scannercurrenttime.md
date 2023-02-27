@@ -4,6 +4,7 @@ description: The required ScannerCurrentTime element indicates the current date 
 keywords: ["ScannerCurrentTime element Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wscn ScannerCurrentTime
 api_type:

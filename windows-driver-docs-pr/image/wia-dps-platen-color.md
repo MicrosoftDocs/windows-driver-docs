@@ -4,6 +4,7 @@ description: The WIA_DPS_PLATEN_COLOR property contains the current platen color
 keywords: ["WIA_DPS_PLATEN_COLOR Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_DPS_PLATEN_COLOR
 api_location:

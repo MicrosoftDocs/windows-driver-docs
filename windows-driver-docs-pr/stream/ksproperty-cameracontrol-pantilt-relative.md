@@ -4,6 +4,7 @@ description: The KSPROPERTY_CAMERACONTROL_PANTILT_RELATIVE property specifies ho
 keywords: ["KSPROPERTY_CAMERACONTROL_PANTILT_RELATIVE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CAMERACONTROL_PANTILT_RELATIVE
 api_location:

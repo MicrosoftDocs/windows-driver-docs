@@ -4,6 +4,7 @@ description: The KSEVENT_VIDCAP_AUTO_UPDATE event is triggered when a property v
 keywords: ["KSEVENT_VIDCAP_AUTO_UPDATE Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_VIDCAP_AUTO_UPDATE
 api_type:

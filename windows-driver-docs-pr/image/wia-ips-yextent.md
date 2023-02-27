@@ -4,6 +4,7 @@ description: The WIA_IPS_YEXTENT property contains the current height, in pixels
 keywords: ["WIA_IPS_YEXTENT Imaging Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIA_IPS_YEXTENT
 api_location:

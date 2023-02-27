@@ -4,6 +4,7 @@ description: The KSPROPERTY_MEDIASEEKING_PREROLL property retrieves the amount o
 keywords: ["KSPROPERTY_MEDIASEEKING_PREROLL Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_MEDIASEEKING_PREROLL
 api_location:

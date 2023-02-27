@@ -4,6 +4,7 @@ description: The KS_AM_RATE_ExactRateChange property is not yet implemented.
 keywords: ["KS_AM_RATE_ExactRateChange Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KS_AM_RATE_ExactRateChange
 api_location:

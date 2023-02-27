@@ -4,6 +4,7 @@ description: The KSPROPERTY\_VPCONFIG\_SCALEFACTOR property sets the video port 
 keywords: ["KSPROPERTY_VPCONFIG_SCALEFACTOR Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_VPCONFIG_SCALEFACTOR
 api_location:

@@ -4,6 +4,7 @@ description: The TVOT_TRACKBAR option type consists of a track bar inside a grou
 keywords: ["TVOT_TRACKBAR Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TVOT_TRACKBAR
 api_location:

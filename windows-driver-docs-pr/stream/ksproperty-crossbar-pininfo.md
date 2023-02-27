@@ -4,6 +4,7 @@ description: The KSPROPERTY_CROSSBAR_PININFO property retrieves the type of phys
 keywords: ["KSPROPERTY_CROSSBAR_PININFO Streaming Media Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_CROSSBAR_PININFO
 api_location:

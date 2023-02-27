@@ -4,6 +4,7 @@ description: The required button element specifies the characteristics of a butt
 keywords: ["button element Print Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - button
 api_type:
