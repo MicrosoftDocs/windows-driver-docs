@@ -1,20 +1,20 @@
 ---
-description: This topic describes USB device-specific registry entries.
 title: USB device registry entries
-ms.date: 06/06/2022
+description: This article describes USB device-specific registry entries.
+ms.date: 02/27/2023
 ms.custom: contperf-fy22q4
 ---
 
 # USB device registry entries
 
-This topic describes USB device-specific registry entries.
+This article describes USB device-specific registry entries.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer experiencing USB problems, see [Troubleshoot common USB problems](https://support.microsoft.com/help/17614/windows-10-troubleshoot-common-usb-problems)
 
 ## Registry settings for configuring USB driver stack behavior
 
-The registry entries described in this topic are found under this key:
+The registry entries described in this article are found under this key:
 
 ```output
 HKEY_LOCAL_MACHINE
@@ -36,66 +36,15 @@ The vendor ID, product ID, and revision number values are obtained from the [USB
 
 The following table describes the possible registry entries for the ***vvvvpppprrrr*** key. The USB driver stack considers these entries to be read-only values.
 
-<table>
-  <thead>
-    <tr>
-      <th>Registry entry</th>
-      <th>Description</th>
-      <th>Possible values</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <p><strong>osvc</strong></p>
-        <p>REG_BINARY</p>
-      </td>
-      <td>
-        <p>Indicates whether the operating system queried the device for <strong><a href="microsoft-defined-usb-descriptors.md" data-raw-source="[Microsoft-defined USB descriptors](microsoft-defined-usb-descriptors.md)">Microsoft-defined USB descriptors</a></strong>. If the previously-attempted OS descriptor query was successful, the value contains the vendor code from the OS string descriptor.</p>
-      </td>
-      <td>
-        <ul>
-          <li>0x0000: The device did not provide a valid response to the Microsoft OS string descriptor request.</li>
-          <li>0x01xx: The device provided a valid response to the Microsoft OS string descriptor request, where xx is the <strong>bVendorCode</strong> contained in the response.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>IgnoreHWSerNum</strong></p>
-        <p>REG_BINARY</p>
-      </td>
-      <td>
-        <p>Indicates whether the USB driver stack must ignore the serial number of the device.</p>
-      </td>
-      <td>
-        <ul>
-          <li>0x00: The setting is disabled.</li>
-          <li>0x01: Forces the USB driver stack to ignore the serial number of the device. Therefore, the device instance is tied to the port to which the device is attached.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><strong>ResetOnResume</strong></p>
-        <p>REG_BINARY</p>
-      </td>
-      <td>
-        <p>Indicates whether the USB driver stack must reset the device when the port resumes from a sleep cycle.</p>
-      </td>
-      <td>
-        <ul>
-          <li>0x0000: The setting is disabled.</li>
-          <li>0x0001: Forces the USB driver stack to reset a device on port resume.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Registry entry | Description | Possible values |
+|---|---|---|
+| **osvc**<br><br>REG_BINARY | Indicates whether the operating system queried the device for [Microsoft-defined USB descriptors](microsoft-defined-usb-descriptors.md). If the previously attempted OS descriptor query was successful, the value contains the vendor code from the OS string descriptor. | <ul><li>0x0000: The device didn't provide a valid response to the Microsoft OS string descriptor request.</li><li>0x01xx: The device provided a valid response to the Microsoft OS string descriptor request, where xx is the **bVendorCode** contained in the response.</li></ul> |
+| **IgnoreHWSerNum**<br><br>REG_BINARY | Indicates whether the USB driver stack must ignore the serial number of the device. | <ul><li>0x00: The setting is disabled.</li><li>0x01: Forces the USB driver stack to ignore the serial number of the device. Therefore, the device instance is tied to the port to which the device is attached.</li></ul> |
+| **ResetOnResume**<br><br>REG_BINARY | Indicates whether the USB driver stack must reset the device when the port resumes from a sleep cycle. | <ul><li>0x0000: The setting is disabled.</li><li>0x0001: Forces the USB driver stack to reset a device on port resume.</li></ul> |
 
 ## Find device information after it enumerates on Windows
 
-View the device interface GUID, Hardware Id, and [device class](supported-usb-classes.md#usb-device-classes) information about your device
+View the device interface GUID, Hardware ID, and [device class](supported-usb-classes.md#usb-device-classes) information about your device
 
 1. Find this registry key and note the **DeviceInstance** value:
 
