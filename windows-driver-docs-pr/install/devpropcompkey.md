@@ -9,6 +9,7 @@ keywords:
 - devpropdef/DEVPROPCOMPKEY
 - devpropdef/PDEVPROPCOMPKEY
 ms.date: 11/01/2022
+ms.topic: reference
 ---
 
 # DEVPROPCOMPKEY structure

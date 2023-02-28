@@ -11,6 +11,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 07/15/2020
+ms.topic: reference
 ---
 
 # DEVPKEY_Device_DmaRemappingPolicy

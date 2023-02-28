@@ -9,9 +9,6 @@ ms.date: 03/08/2022
 > [!NOTE]
 > Looking for drivers for your Bluetooth audio device? See [Fix connections to Bluetooth audio devices and wireless displays](https://go.microsoft.com/fwlink/p/?LinkID=623629).
 
-> [!NOTE]
-> For information about Bluetooth support in Windows 11, see [Bluetooth Support in Windows 11](general-bluetooth-support-in-windows.md).
-
 ## Which previous versions of Windows support Bluetooth wireless technology?
 
 The following previous versions of Windows include in-box support for Bluetooth wireless technology:
@@ -21,10 +18,9 @@ The following previous versions of Windows include in-box support for Bluetooth 
 
 The following previous versions of Windows **do not** have in-box support for Bluetooth wireless technology:
 
-- All SKUs of Windows Server 2016
-- All SKUs of Windows Server 2012 R2
+- All SKUs of Windows Server
 
-Although these versions of Windows do not have in-box Bluetooth wireless technology support, third-party Bluetooth drivers might be available from independent hardware vendors (IHVs).
+Although Windows Server does not have in-box Bluetooth wireless technology support, third-party Bluetooth drivers might be available from independent hardware vendors (IHVs).
 
 ## Which Bluetooth versions do previous versions of Windows support?
 

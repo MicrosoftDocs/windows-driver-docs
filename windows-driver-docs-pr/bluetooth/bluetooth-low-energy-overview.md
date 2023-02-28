@@ -18,7 +18,7 @@ When a Bluetooth Low Energy device is paired with a Windows 8 machine, the devic
 
 ![device object structure of the windows 8 bluetooth low energy implementation.](images/bthlewin8supt.png)
 
-Each device and its primary services are represented as device objects in Windows and these device objects can be queried and managed using the [device installation functions](/previous-versions/ff549791(v=vs.85)) such as [**SetupDiEnumDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinfo), and [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
+Each device and its primary services are represented as device objects in Windows and these device objects can be queried and managed using the [device installation functions](/windows-hardware/drivers/install/using-device-installation-functions) such as [**SetupDiEnumDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinfo), and [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
 In addition to the standard [Bluetooth Profile Driver functions](bluetooth-profile-driver-functions.md), Windows 8 introduces new [Bluetooth Low Energy functions](bluetooth-low-energy-functions.md) which allows for the development of Bluetooth GATT client applications.
 

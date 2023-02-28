@@ -37,6 +37,7 @@ keywords:
 - devpropdef/DEVPROPERTY
 - devpropdef/PDEVPROPERTY
 ms.date: 11/01/2022
+ms.topic: reference
 ---
 
 # DEVPROPERTY structure

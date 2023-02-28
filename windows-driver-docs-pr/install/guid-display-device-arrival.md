@@ -11,6 +11,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 02/24/2023
+ms.topic: reference
 ---
 
 # GUID_DISPLAY_DEVICE_ARRIVAL

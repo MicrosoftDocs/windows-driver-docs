@@ -2,6 +2,7 @@
 title: DEVPKEY_DeviceInterface_IsWindowsCameraEffectAvailable
 description: The DEVPKEY_DeviceInterface_IsWindowsCameraEffectAvailable device property represents a Boolean flag that indicates whether Windows Camera Effects are available and can be enabled on the device.
 ms.date: 10/03/2022
+ms.topic: reference
 ---
 
 # DEVPKEY_DeviceInterface_IsWindowsCameraEffectAvailable

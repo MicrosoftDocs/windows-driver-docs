@@ -26,7 +26,7 @@ The ComputerHardwareIds tool generates a set of hardware IDs for the computer th
 |Baseboard Manufacturer|Manufacturer (Type 2)| |04h|BYTE|STRING|Number of null-terminated string. This string identifies the Manufacturer of the Baseboard, where the Baseboard – Board Type is 0Ah (Motherboard).|
 |Baseboard Product|Product (Type 2)| |05h|BYTE|STRING|Number of null-terminated string. This string identifies the Product name of the Baseboard, where the Baseboard – Board Type is 0Ah (Motherboard).|
 
-For more information about the *dmiStrucBuffer* array and the SMBIOS fields, see the [System Management BIOS (SMBIOS)](https://go.microsoft.com/fwlink/p/?linkid=145867) specification on the Distributed Management Task Force (DMTF) website.
+For more information about the *dmiStrucBuffer* array and the SMBIOS fields, see the [System Management BIOS (SMBIOS)](https://www.dmtf.org/standards/smbios/) specification on the Distributed Management Task Force (DMTF) website.
 
 When the ComputerHardwareIds tool runs, it creates unique hardware IDs from the SMBIOS information. Each hardware ID is a *GUID* and is created by concatenating the values from the SMBIOS fields.
 
