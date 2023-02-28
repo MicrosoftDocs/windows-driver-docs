@@ -1,7 +1,7 @@
 ---
 title: Overview of Microsoft USB Test Tool (MUTT) devices
 description: The Microsoft USB Test Tool (MUTT) is collection of devices for testing interoperability of your USB hardware with the Microsoft USB driver stack.
-ms.date: 02/14/2023
+ms.date: 02/28/2023
 ---
 
 # Overview of Microsoft USB Test Tool (MUTT) devices
@@ -21,7 +21,7 @@ The manufactures listed in this article sell MUTT hardware boards required to ru
 | MUTT | [JJG Technologies](http://www.jjgtechnologies.com/Mutt20.htm) |
 | MUTT Pack | [JJG Technologies](http://www.jjgtechnologies.com/MuttPack.htm) |
 | SuperMUTT | [JJG Technologies](http://www.jjgtechnologies.com/supermutt.htm) |
-| SuperMUTT Pack | [VIA Labs](https://www.via-labs.com/shop.php?id=2)<br>[JJG Technologies](http://shop.via-labs.com/VLI-shop-SuperMuttPack.html) |
+| SuperMUTT Pack | [VIA Labs](https://www.via-labs.com/shop.php?id=2) |
 | Dual-role (DR) MUTT | [JJG Technologies](http://www.jjgtechnologies.com/drmutt.htm) |
 | Type-C dual-role (DR) connection exerciser | [MCCI](https://mcci.com/usb/dev-tools/3101-type-c-connection-exerciser/)<br>[JJG Technologies](http://www.jjgtechnologies.com/typecconne.htm) |
 
