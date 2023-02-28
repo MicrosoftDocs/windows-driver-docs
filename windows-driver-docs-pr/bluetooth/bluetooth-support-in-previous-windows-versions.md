@@ -21,10 +21,9 @@ The following previous versions of Windows include in-box support for Bluetooth 
 
 The following previous versions of Windows **do not** have in-box support for Bluetooth wireless technology:
 
-- All SKUs of Windows Server 2016
-- All SKUs of Windows Server 2012 R2
+- All SKUs of Windows Server
 
-Although these versions of Windows do not have in-box Bluetooth wireless technology support, third-party Bluetooth drivers might be available from independent hardware vendors (IHVs).
+Although Windows Server does not have in-box Bluetooth wireless technology support, third-party Bluetooth drivers might be available from independent hardware vendors (IHVs).
 
 ## Which Bluetooth versions do previous versions of Windows support?
 

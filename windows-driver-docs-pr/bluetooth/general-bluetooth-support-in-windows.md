@@ -1,7 +1,7 @@
 ---
 title: Bluetooth version and profile support in Windows 11
 description: Provides information about Bluetooth version and profile support in Windows 11
-ms.date: 03/08/2022
+ms.date: 02/28/2023
 ---
 
 # Bluetooth version and profile support in Windows 11
@@ -9,14 +9,11 @@ ms.date: 03/08/2022
 > [!NOTE]
 > Looking for drivers for your Bluetooth audio device? See [Fix connections to Bluetooth audio devices and wireless displays](https://go.microsoft.com/fwlink/p/?LinkID=623629).
 
-> [!NOTE]
-> For information about Bluetooth support prior to Windows 11, see [Bluetooth Support in Previous Windows Versions](bluetooth-support-in-previous-windows-versions.md).
-
 ## Which Bluetooth versions does Windows 11 support?
 
 Windows 11 supports Bluetooth Core Specification version 5.1.
 
-Windows Server 2019 does not support Bluetooth.
+Windows Server **does not** have in-box Bluetooth wireless technology support. Third-party Bluetooth drivers might be available from independent hardware vendors (IHVs).
 
 ## Which Bluetooth profiles have in-box support in Windows 11?
 
@@ -71,4 +68,4 @@ To learn more about the new features and hardware developer recommendations for 
 
 ## Related topics
 
-[Bluetooth Support in Previous Windows Versions](bluetooth-support-in-previous-windows-versions.md)
+- [Bluetooth Support in Previous Windows Versions](bluetooth-support-in-previous-windows-versions.md)
