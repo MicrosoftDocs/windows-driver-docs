@@ -11,6 +11,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 09/16/2022
+ms.topic: reference
 ---
 
 # DEVPKEY_DeviceInterfaceClass_DefaultInterface
