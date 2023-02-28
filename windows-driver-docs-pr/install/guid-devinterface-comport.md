@@ -11,6 +11,7 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 01/17/2023
+ms.topic: reference
 ---
 
 # GUID_DEVINTERFACE_COMPORT
