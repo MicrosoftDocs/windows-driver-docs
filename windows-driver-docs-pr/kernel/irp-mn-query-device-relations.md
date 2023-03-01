@@ -2,6 +2,7 @@
 title: IRP_MN_QUERY_DEVICE_RELATIONS
 description: The PnP manager sends this request to determine certain relationships among devices.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MN_QUERY_DEVICE_RELATIONS Kernel-Mode Driver Architecture
 ---

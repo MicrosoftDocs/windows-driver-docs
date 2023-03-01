@@ -2,6 +2,7 @@
 title: IRP_MJ_SET_INFORMATION
 description: Device drivers can optionally handle an IRP_MJ_SET_INFORMATION request.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MJ_SET_INFORMATION Kernel-Mode Driver Architecture
 ---

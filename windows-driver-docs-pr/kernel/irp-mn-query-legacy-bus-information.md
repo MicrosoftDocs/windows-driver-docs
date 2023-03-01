@@ -2,6 +2,7 @@
 title: IRP_MN_QUERY_LEGACY_BUS_INFORMATION
 description: This IRP is reserved for system use.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MN_QUERY_LEGACY_BUS_INFORMATION Kernel-Mode Driver Architecture
 ---

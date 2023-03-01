@@ -2,6 +2,7 @@
 title: IRP_MJ_CREATE
 description: Every kernel-mode driver must handle IRP_MJ_CREATE requests in a DispatchCreate or DispatchCreateClose routine.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MJ_CREATE Kernel-Mode Driver Architecture
 ---

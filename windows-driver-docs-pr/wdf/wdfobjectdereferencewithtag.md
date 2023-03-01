@@ -4,6 +4,7 @@ description: The WdfObjectDereferenceWithTag macro decrements the reference coun
 keywords:
  - WdfObjectDereferenceWithTag macro
 ms.date: 08/23/2017
+ms.topic: reference
 ---
 
 # WdfObjectDereferenceWithTag macro

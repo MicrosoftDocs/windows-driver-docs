@@ -2,6 +2,7 @@
 title: IRP_MJ_SYSTEM_CONTROL
 description: All drivers must provide a DispatchSystemControl routine that handles IRP_MJ_SYSTEM_CONTROL requests, which are sent by the kernel-mode component of Windows Management Instrumentation (WMI).
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MJ_SYSTEM_CONTROL Kernel-Mode Driver Architecture
 ---

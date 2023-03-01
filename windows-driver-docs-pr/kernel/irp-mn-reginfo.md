@@ -2,6 +2,7 @@
 title: IRP_MN_REGINFO
 description: Drivers that support WMI on Microsoft Windows 98 and Microsoft Windows 2000 must handle this IRP.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MN_REGINFO Kernel-Mode Driver Architecture
 ---

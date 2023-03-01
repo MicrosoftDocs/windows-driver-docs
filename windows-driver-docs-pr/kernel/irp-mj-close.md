@@ -2,6 +2,7 @@
 title: IRP_MJ_CLOSE
 description: Every driver must handle close requests in a DispatchClose routine, with the possible exception of a driver whose device cannot be disabled or removed from the machine without bringing down the system.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MJ_CLOSE Kernel-Mode Driver Architecture
 ---

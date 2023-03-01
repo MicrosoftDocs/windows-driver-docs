@@ -2,6 +2,7 @@
 title: IRP_MN_QUERY_POWER
 description: This IRP queries a device to determine whether the system power state or the device power state can be changed.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MN_QUERY_POWER Kernel-Mode Driver Architecture
 ---

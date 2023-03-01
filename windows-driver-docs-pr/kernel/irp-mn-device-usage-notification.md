@@ -2,6 +2,7 @@
 title: IRP_MN_DEVICE_USAGE_NOTIFICATION
 description: System components send this IRP to ask the drivers for a device whether the device can support a special file.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MN_DEVICE_USAGE_NOTIFICATION Kernel-Mode Driver Architecture
 ---
