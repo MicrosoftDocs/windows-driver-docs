@@ -2,6 +2,7 @@
 title: IRP_MN_EJECT
 description: Bus drivers typically handle this request for their child devices (child PDOs) that support device ejection. Function and filter drivers do not receive this request.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MN_EJECT Kernel-Mode Driver Architecture
 ---

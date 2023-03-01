@@ -4,6 +4,7 @@ description: The WDFVERIFY macro tests a logical expression and, if the expressi
 keywords:
  - WDFVERIFY macro
 ms.date: 08/23/2017
+ms.topic: reference
 ---
 
 # WDFVERIFY macro

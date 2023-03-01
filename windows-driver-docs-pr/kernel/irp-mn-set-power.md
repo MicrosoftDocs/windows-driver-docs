@@ -2,6 +2,7 @@
 title: IRP_MN_SET_POWER
 description: This IRP notifies a driver of a change to the system power state or sets the device power state for a device.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MN_SET_POWER Kernel-Mode Driver Architecture
 ---

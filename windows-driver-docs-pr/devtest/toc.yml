@@ -2936,14 +2936,7 @@
     - name: "Tools for Device Metadata Packages"
       href: tools-for-device-metadata-packages.md
     - name: "ComputerHardwareIds"
-# Auto-expanded node
-      items: 
-      - name: "ComputerHardwareIds"
-        href: computerhardwareids.md
-      - name: "ComputerHardwareIds Overview"
-        href: computerhardwareids-overview.md
-      - name: "ComputerHardwareIds Output"
-        href: computerhardwareids-output.md
+      href: computerhardwareids.md
     - name: "Device Metadata Authoring Wizard"
 # Auto-expanded node
       items: 

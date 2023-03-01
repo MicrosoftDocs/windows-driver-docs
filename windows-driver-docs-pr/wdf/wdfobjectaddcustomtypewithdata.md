@@ -4,6 +4,7 @@ description: The WdfObjectAddCustomTypeWithData macro associates a framework obj
 keywords:
  - WdfObjectAddCustomTypeWithData macro
 ms.date: 08/23/2017
+ms.topic: reference
 ---
 
 # WdfObjectAddCustomTypeWithData macro

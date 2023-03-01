@@ -4,6 +4,7 @@ description: The WdfObjectGetCustomTypeData macro retrieves the data that the dr
 keywords:
  - WdfObjectGetCustomTypeData macro
 ms.date: 08/23/2017
+ms.topic: reference
 ---
 
 # WdfObjectGetCustomTypeData macro

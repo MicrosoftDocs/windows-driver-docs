@@ -8856,6 +8856,16 @@
             "source_path": "windows-driver-docs-pr/debugger/debugging-oca-minidump-files.md",
             "redirect_URL": "//windows-hardware/drivers/debugger/crash-dump-files",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/devtest/computerhardwareids-overview.md",
+            "redirect_URL": "//windows-hardware/drivers/devtest/computerhardwareids",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/devtest/computerhardwareids-output.md",
+            "redirect_URL": "//windows-hardware/drivers/devtest/computerhardwareids",
+            "redirect_document_id": false
         }
 
     ]

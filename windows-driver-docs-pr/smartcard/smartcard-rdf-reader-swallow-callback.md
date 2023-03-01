@@ -5,6 +5,7 @@ keywords:
 - vendor-supplied drivers RDF callback functions
 - WDK smart card
 ms.date: 09/09/2022
+ms.topic: reference
 ---
 
 #  RDF\_READER\_SWALLOW callback function

@@ -2,6 +2,7 @@
 title: IRP_MJ_WRITE
 description: Every device driver that transfers data from the system to its device must handle write requests in a DispatchWrite or DispatchReadWrite routine, as must any higher-level driver layered over such a device driver.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MJ_WRITE Kernel-Mode Driver Architecture
 ---

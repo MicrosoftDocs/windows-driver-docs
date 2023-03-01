@@ -4,6 +4,7 @@ description: The VERIFY_IS_IRQL_PASSIVE_LEVEL macro breaks into the kernel debug
 keywords:
  - VERIFY_IS_IRQL_PASSIVE_LEVEL macro
 ms.date: 08/23/2017
+ms.topic: reference
 ---
 
 # VERIFY_IS_IRQL_PASSIVE_LEVEL macro

@@ -2,6 +2,7 @@
 title: IRP_MN_CHANGE_SINGLE_ITEM
 description: All drivers that support WMI must handle this IRP.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MN_CHANGE_SINGLE_ITEM Kernel-Mode Driver Architecture
 ---

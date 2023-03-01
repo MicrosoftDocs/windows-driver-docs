@@ -4,6 +4,7 @@ description: The WDF_PTR_ADD_OFFSET_TYPE macro adds an offset value to an addres
 keywords:
  - WDF_PTR_ADD_OFFSET_TYPE macro
 ms.date: 08/23/2017
+ms.topic: reference
 ---
 
 # WDF_PTR_ADD_OFFSET_TYPE macro
