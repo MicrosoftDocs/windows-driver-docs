@@ -1,7 +1,7 @@
 ---
 title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
-ms.date: 07/20/2022
+ms.date: 02/28/2023
 ---
 
 # Driver security checklist
@@ -732,13 +732,13 @@ The Reporting Center can scan and analyze Windows drivers built for x86 and x64 
 
 Carnegie Mellon University SEI CERT [C Coding Standard: Rules for Developing Safe, Reliable, and Secure Systems](https://www.securecoding.cert.org/confluence/display/c/SEI+CERT+C+Coding+Standard) (2016 Edition).
 
-CERT - [Build Security In](https://www.us-cert.gov/bsi)
-
 MITRE - [Weaknesses Addressed by the CERT C Secure Coding Standard](https://cwe.mitre.org/data/definitions/734.html)
 
 Building Security In Maturity Model (BSIMM) - [https://www.bsimm.com/](https://www.bsimm.com/)
 
 SAFECode - [https://safecode.org/](https://safecode.org/)
+
+[CISA Resources](https://www.cisa.gov/resources-tools/resources)
 
 #### OSR
 

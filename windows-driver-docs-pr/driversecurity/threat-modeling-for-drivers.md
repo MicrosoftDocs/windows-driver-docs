@@ -345,10 +345,10 @@ See [Windows Hardware Lab Kit](../index.yml) in [Test for performance and compat
 
 To expand your knowledge of software threats, review the available public databases of known threats and software vulnerabilities.
 
--   Common Vulnerabilities and Exposures (CVE): <https://cve.mitre.org/>
--   Common Weakness Enumeration: <https://cwe.mitre.org/>
--   Common Attack Pattern Enumeration and Classification: <https://capec.mitre.org/index.html>
--   NIST maintains a site that describes how vulnerabilities are cataloged: <https://samate.nist.gov/BF/>
+- Common Vulnerabilities and Exposures (CVE): <https://cve.mitre.org/>
+- Common Weakness Enumeration: <https://cwe.mitre.org/>
+- Common Attack Pattern Enumeration and Classification: <https://capec.mitre.org/index.html>
+- NIST maintains a site that describes how vulnerabilities are cataloged: <https://samate.nist.gov/BF/>
 
 ### See Also
 
