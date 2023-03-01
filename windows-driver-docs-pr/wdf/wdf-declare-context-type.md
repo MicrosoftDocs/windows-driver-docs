@@ -4,6 +4,7 @@ description: The WDF_DECLARE_CONTEXT_TYPE macro creates a name and an accessor m
 keywords:
  - WDF_DECLARE_CONTEXT_TYPE macro
 ms.date: 08/23/2017
+ms.topic: reference
 ---
 
 # WDF_DECLARE_CONTEXT_TYPE macro

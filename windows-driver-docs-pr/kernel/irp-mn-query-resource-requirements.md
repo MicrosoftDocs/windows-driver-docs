@@ -2,6 +2,7 @@
 title: IRP_MN_QUERY_RESOURCE_REQUIREMENTS
 description: The PnP manager uses this IRP to get a device's resource requirements list.Bus drivers must handle this request for their child devices that require hardware resources.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MN_QUERY_RESOURCE_REQUIREMENTS Kernel-Mode Driver Architecture
 ---

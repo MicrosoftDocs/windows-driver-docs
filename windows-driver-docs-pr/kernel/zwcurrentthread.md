@@ -2,6 +2,7 @@
 title: ZwCurrentThread macro
 description: ZwCurrentThread macro
 ms.date: 10/17/2018
+ms.topic: reference
 ---
 
 # ZwCurrentThread

@@ -2,6 +2,7 @@
 title: IRP_MJ_POWER
 description: All drivers must be prepared to service IRP_MJ_POWER requests in a DispatchPower routine.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MJ_POWER Kernel-Mode Driver Architecture
 ---

@@ -2,6 +2,7 @@
 title: IRP_MJ_SHUTDOWN
 description: Drivers of mass-storage devices that have internal caches for data must handle this request in a DispatchShutdown routine.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MJ_SHUTDOWN Kernel-Mode Driver Architecture
 ---

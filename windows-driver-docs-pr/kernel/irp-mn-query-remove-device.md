@@ -2,6 +2,7 @@
 title: IRP_MN_QUERY_REMOVE_DEVICE
 description: Learn about the 'IRP_MN_QUERY_REMOVE_DEVICE' kernel-mode driver architecture. All PnP drivers must handle this IRP.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MN_QUERY_REMOVE_DEVICE Kernel-Mode Driver Architecture
 ---

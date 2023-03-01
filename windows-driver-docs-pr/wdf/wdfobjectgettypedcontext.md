@@ -4,6 +4,7 @@ description: The WdfObjectGetTypedContext macro returns a pointer to an object's
 keywords:
  - WdfObjectGetTypedContext macro
 ms.date: 08/23/2017
+ms.topic: reference
 ---
 
 # WdfObjectGetTypedContext macro

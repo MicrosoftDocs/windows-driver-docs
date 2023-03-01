@@ -2,6 +2,7 @@
 title: IRP_MN_WRITE_CONFIG
 description: Bus drivers for buses with configuration space must handle this request for their child devices (child PDOs). Function and filter drivers do not handle this request.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MN_WRITE_CONFIG Kernel-Mode Driver Architecture
 ---

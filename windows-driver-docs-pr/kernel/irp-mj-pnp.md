@@ -2,6 +2,7 @@
 title: IRP_MJ_PNP
 description: All drivers must be prepared to service IRP_MJ_PNP requests in a DispatchPnP routine.
 ms.date: 08/12/2017
+ms.topic: reference
 keywords:
  - IRP_MJ_PNP Kernel-Mode Driver Architecture
 ---
