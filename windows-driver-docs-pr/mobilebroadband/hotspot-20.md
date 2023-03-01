@@ -27,10 +27,10 @@ The following table describes common credential types and EAP method combination
 
 ## Provisioning methods
 
-  - [**From a website**](https://docs.microsoft.com/windows/win32/nativewifi/prov-wifi-profile-via-website)
-  - [**From an app**](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/account-provisioning#wi-fi-information)
-  - [**From COSA, for Mobile Operator SIM based authentication**](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/cosa-apn-database)
-  - **From** [**MDM**](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp) **,** [**Group Policy**](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh994701(v=ws.11)) **,**  **or using** [**provisioning packages**](https://learn.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages)**.**
+  - [**From a website**](/windows/win32/nativewifi/prov-wifi-profile-via-website)
+  - [**From an app**](/windows-hardware/drivers/mobilebroadband/account-provisioning#wi-fi-information)
+  - [**From COSA, for Mobile Operator SIM based authentication**](/windows-hardware/drivers/mobilebroadband/cosa-apn-database)
+  - **From** [**MDM**](/windows/client-management/mdm/wifi-csp) **,** [**Group Policy**](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh994701(v=ws.11)) **,**  **or using** [**provisioning packages**](/windows/configuration/provisioning-packages/provisioning-packages)**.**
   - **Using Online Sign-up (OSU)**
 
     Windows 11 supports OSU as defined in the Wi-Fi Alliance Passpoint specification with certain constraints:
@@ -41,7 +41,7 @@ The following table describes common credential types and EAP method combination
 
 ## Profile format
 
-Except for Online Sign-up, which follows the standard PPS-MO format, all other provisioning methods rely on the [WLANProfile XML](https://docs.microsoft.com/windows/win32/nativewifi/wireless-profile-samples) format. The Passpoint specific details are specified in the [Hotspot2](https://docs.microsoft.com/windows/win32/nativewifi/wlan-profileschema-hotspot2-element) element.
+Except for Online Sign-up, which follows the standard PPS-MO format, all other provisioning methods rely on the [WLANProfile XML](/windows/win32/nativewifi/wireless-profile-samples) format. The Passpoint specific details are specified in the [Hotspot2](/windows/win32/nativewifi/wlan-profileschema-hotspot2-element) element.
 
 ## Older releases
 
