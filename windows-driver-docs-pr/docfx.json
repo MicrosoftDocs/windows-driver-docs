@@ -57,6 +57,7 @@
       "author": "tedhudek",
       "ms.author": "tedhudek",
       "ms.topic": "article",
+      "ms.custom": "UpdateFrequency3",
       "recommendations": true,
       "_op_documentIdPathDepotMapping": {
         "./": {
@@ -228,8 +229,19 @@
         "**/usbcon/*.md": "mhopkins",
         "**/wdf/*.md": "tedhudek",
         "**/wdtf/*.md": "domars",
-        "**/whea/*.md": "tedhudek"      }
-    },
+        "**/whea/*.md": "tedhudek"      },
+      "ms.custom": {
+        "**/biometric/*.md": "UpdateFrequency5",
+        "**/gpio/*.md": "UpdateFrequency5",
+        "**/ieee/*.md": "UpdateFrequency5",
+        "**/parports/*.md": "UpdateFrequency5",
+        "**/pci/*.md": "UpdateFrequency5",
+        "**/pcmcia/*.md": "UpdateFrequency5",
+        "**/portable/*.md": "UpdateFrequency5",
+        "**/sd/*.md": "UpdateFrequency5",
+        "**/whea/*.md": "UpdateFrequency5"      
+       }
+      },
     "externalReference": [],
     "template": "op.html",
     "dest": "windows-driver-docs-pr",
