@@ -10,7 +10,8 @@ api_location:
 - Sensors.h
 api_type:
 - HeaderDef
-ms.date: 12/01/2022
+ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # SENSOR_CATEGORY_LIGHT
@@ -23,7 +24,7 @@ This category includes the following platform-defined sensor types.
 
 | Sensor type | Meaning |
 |---|---|
-| SENSOR_TYPE_AMBIENT_LIGHT | Ambient light sensors. |
+| SENSOR_TYPE_AMBIENT_LIGHT | Ambient light sensors |
 
 ### Platform-defined data fields
 
@@ -42,6 +43,6 @@ This category includes the following platform-defined data fields.
 
 | &nbsp; | &nbsp; |
 |---|---|
-| Minimum supported client | Windows 7 |
-| Minimum supported server | None supported |
-| Header | sensors.h |
+| **Minimum supported client** | Windows 7 |
+| **Minimum supported server** | None supported |
+| **Header** | sensors.h |

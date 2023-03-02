@@ -1,7 +1,8 @@
 ---
 title: Enumeration properties
 description: This article describes the static sensor properties that are available from the PnP Driver Store.
-ms.date: 12/02/2022
+ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # Enumeration properties
@@ -21,7 +22,7 @@ For more information about the data types shown in the **Type** column, see [PRO
 | DEVPKEY_Sensor_Name | **VT_LPWSTR** | Required for custom sensors. | The name of the sensor. |
 | DEVPKEY_Sensor_Manufacturer | **VT_LPWSTR** | Required | The manufacturer for the sensor. |
 | DEVPKEY_Sensor_Model | **VT_LPWSTR** | Required | The model for the sensor. |
-| DEVPKEY_Sensor_PersistentUniqueId | **VT_CLSID**  | Required | A GUID that identifies the sensor. This value must be unique for each sensor of the same model on a device. This requirement applies to both internally and externally connected sensors. |
+| DEVPKEY_Sensor_PersistentUniqueId | **VT_CLSID** | Required | A GUID that identifies the sensor. This value must be unique for each sensor of the same model on a device. This requirement applies to both internally and externally connected sensors. |
 | DEVPKEY_Sensor_VendorDefinedSubType | **VT_CLSID** | Required for custom sensors. | A GUID that identifies a sensor category subtype that was defined by a vendor.</br></br>For non-custom sensors, this key isn't required. |
 | DEVPKEY_SensorData_LightLevel_AutoBrightnessPreferred | **VT_BOOL** | Optional | The light sensor is preferred for auto-brightness. |
 | DEVPKEY_SensorData_LightLevel_ColorCapable | **VT_BOOL** | Optional</br></br>Required if supporting chromaticity and light temperature. | The light sensor supports light temperature and/or chromaticity x/y. |
@@ -30,6 +31,6 @@ For more information about the data types shown in the **Type** column, see [PRO
 
 - [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 - **[SensorConnectionType](/windows-hardware/drivers/ddi/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0002)**
-- [SensorsCxSensorCreate](/windows-hardware/drivers/ddi/sensorscx/nf-sensorscx-sensorscxsensorcreate)
+- **[SensorsCxSensorCreate](/windows-hardware/drivers/ddi/sensorscx/nf-sensorscx-sensorscxsensorcreate)**
 - [Sensor properties](./common-sensor-properties.md)
 - [Sensor type GUIDs](./about-sensor-constants.md)

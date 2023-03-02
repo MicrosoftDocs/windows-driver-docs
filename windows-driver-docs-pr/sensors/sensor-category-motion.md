@@ -10,7 +10,8 @@ api_location:
 - Sensors.h
 api_type:
 - HeaderDef
-ms.date: 12/01/2022
+ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # SENSOR_CATEGORY_MOTION
