@@ -1,13 +1,14 @@
 ---
-title: INF DDInstall.MigrateToDevNode Section
-description: INF DDInstall.MigrateToDevNode Section
+title: INF DDInstall.MigrateToDevNode section
+description: INF DDInstall.MigrateToDevNode section
 keywords:
 - INF files WDK non-HID keyboard/mouse
 - DDInstall.MigrateToDevNode section
-ms.date: 10/11/2022
+ms.date: 03/02/2023
+ms.topic: reference
 ---
 
-# INF DDInstall.MigrateToDevNode Section
+# INF DDInstall.MigrateToDevNode section
 
 \[***install-section-name***.MigrateToDevNode\]
 
@@ -24,7 +25,6 @@ The keyboard and mouse class installers copy the entry values specified by the l
 ## Entries and Values
 
 - *ServiceName*: Specifies the service name associated with a device port (for example, **i8042prt**, **sermouse**, and so on).
-
 - *value-name*: Specifies an entry value under the registry key **HKLM\\System\\CurrentControlSet\\Services\\***ServiceName***\\Parameters**.
 
 ## Remarks
