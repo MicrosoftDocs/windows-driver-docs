@@ -306,7 +306,7 @@ The value specified by the SystemManufacturer attribute must be identical with t
 |----|----|----|----|----|----|----|----|
 |Manufacturer|System Information (Type 1)|2.0+|04h|BYTE|STRING|The index of a null-terminated string within the dmiStrucBuffer array. This string specifies the name of the computer manufacturer.|
 
-For more information about the dmiStrucBuffer array and the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](https://go.microsoft.com/fwlink/p/?LinkId=145867).
+For more information about the dmiStrucBuffer array and the SMBIOS fields, see [System Management BIOS (SMBIOS) Specification](https://www.dmtf.org/standards/smbios/).
 
 ### SystemFamily Attributes
 
@@ -331,7 +331,7 @@ The value specified by the SystemFamily attribute must be identical with the val
 |----|----|----|----|----|----|----|
 |Family|System Information (Type 1)|2.4+|1Ah|BYTE|STRING|The index of a null-terminated string within the dmiStrucBuffer array. This string specifies the family to which a particular computer belongs.A family refers to a set of computers that are similar but not identical from a hardware or software point of view.Typically a family is composed of different computer models, which have different configurations and pricing points. Computers in the same family often have similar branding and cosmetic features.|
 
-For more information about the dmiStrucBuffer array and the SMBIOS fields, refer to [System Management BIOS (SMBIOS) Specification](https://go.microsoft.com/fwlink/p/?LinkId=145867).
+For more information about the dmiStrucBuffer array and the SMBIOS fields, refer to [System Management BIOS (SMBIOS) Specification](https://www.dmtf.org/standards/smbios/).
 
 ### SystemProductName Attributes
 
