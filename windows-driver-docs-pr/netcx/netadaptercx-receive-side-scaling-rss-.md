@@ -71,11 +71,14 @@ In this callback, you move each entry in your NIC's indirection table to the spe
 
 The method of assigning index entries to hardware receive queues depends on the design of your NIC and the number of receive queues it has. For more information and a code example, see *[EvtNetAdapterReceiveScalingSetIndirectionEntries](/windows-hardware/drivers/ddi/netreceivescaling/nc-netreceivescaling-evt_net_adapter_receive_scaling_set_indirection_entries)*.
 
-## Heterogeneous CPU Support
+## Heterogeneous CPU support
+
+> [!IMPORTANT]
+> Heterogeneous CPU Support is a prerelease feature which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 Heterogenous CPU systems use multiple types of cores that have different clock speeds and functionalities. Compared to homogeneous-multiprocessor systems where every core is identical to one another, heterogeneous CPU systems can better adjust to dynamic computing loads and use less energy.
 
-NetAdapterCx offers heterogenous CPU system support by efficiently utilizing the various core types. While RSS is running, the system decides which processor to use depending on the traffic workload received by the client driver. When there is less traffic being received, smaller, more power efficient cores can handle the traffic. When there is more traffic, larger, more performant cores are required to continuously poll the packets being received.
+Starting in WDK preview version 25197, NetAdapterCx offers heterogenous CPU system support by efficiently utilizing the various core types. While RSS is running, the system decides which processor to use depending on the traffic workload received by the client driver. When there is less traffic being received, smaller, more power efficient cores can handle the traffic. When there is more traffic, larger, more performant cores are required to continuously poll the packets being received.
 
 To opt in to heterogenous system support, the system administrator must set the **\*RSSProfile** [standardized INF keyword](../network/standardized-inf-keywords-for-rss.md) to **NdisRssProfileBalanced**. This is the default profile for heterogenous systems. To allow the system to decide the best cores to use, you won't be able to set RSS advanced keywords. 
 
