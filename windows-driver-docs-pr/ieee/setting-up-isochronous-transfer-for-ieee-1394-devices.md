@@ -9,7 +9,7 @@ keywords:
 - buffers WDK IEEE 1394 bus
 - speed WDK IEEE 1394 bus
 - allocating bandwidth
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Setting Up Isochronous Transfer for IEEE 1394 Devices

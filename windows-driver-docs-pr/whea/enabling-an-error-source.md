@@ -8,7 +8,7 @@ keywords:
 - errors WDK WHEA , enabling error sources
 - hardware error sources WDK WHEA , enabling
 - enabling an error source WDK
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Enabling an Error Source

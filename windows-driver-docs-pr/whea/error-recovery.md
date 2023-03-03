@@ -9,7 +9,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , error recovery
 - PSHED plug-ins WDK WHEA , error recovery
 - error recovery WDK WHEA
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Error Recovery

@@ -9,7 +9,7 @@ keywords:
 - errors WDK WHEA , events
 - hardware error events WDK WHEA
 - events WDK WHEA
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # WHEA Hardware Error Events

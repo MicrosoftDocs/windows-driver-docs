@@ -1,7 +1,7 @@
 ---
 description: The MTP Setup Information (.inf) File
 title: The MTP Setup Information (.inf) File
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # The MTP Setup Information (.inf) File

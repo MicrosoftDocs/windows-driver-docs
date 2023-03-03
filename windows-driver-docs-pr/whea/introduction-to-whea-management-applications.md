@@ -6,7 +6,7 @@ keywords:
 - user-mode applications WDK WHEA , management applications
 - WHEA WDK , management applications
 - Windows Hardware Error Architecture WDK , management applications
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Introduction to WHEA Management Applications

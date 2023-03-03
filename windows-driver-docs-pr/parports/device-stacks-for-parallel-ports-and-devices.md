@@ -5,7 +5,7 @@ keywords:
 - system-supplied parallel drivers WDK , device stacks
 - device stacks WDK parallel drivers
 - parallel devices WDK , device stacks
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Device Stacks for Parallel Ports and Devices

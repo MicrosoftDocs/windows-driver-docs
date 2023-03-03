@@ -4,7 +4,7 @@ description: Order of Resources in Start-Device IRP
 keywords:
 - order of resources WDK PCI
 - start-device IRP WDK PCI
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Order of Resources in Start-Device IRP

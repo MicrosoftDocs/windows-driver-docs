@@ -11,7 +11,7 @@ keywords:
 - LLHEHs WDK WHEA
 - platform-specific hardware error drivers WDK WHEA
 - PSHED WDK WHEA
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Components of the Windows Hardware Error Architecture

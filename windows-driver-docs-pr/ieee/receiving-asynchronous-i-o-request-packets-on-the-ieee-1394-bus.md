@@ -6,7 +6,7 @@ keywords:
 - allocating address ranges
 - addresses WDK IEEE 1394 bus
 - backing store WDK IEEE 1394 bus
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Receiving Asynchronous I/O Request Packets on the IEEE 1394 Bus

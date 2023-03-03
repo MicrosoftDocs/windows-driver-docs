@@ -5,7 +5,7 @@ keywords:
 - parallel ports WDK , IEEE 1284 devices
 - IEEE 1284 WDK
 - data link service support WDK parallel ports
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Connecting to an IEEE 1284.3 Data Link Device

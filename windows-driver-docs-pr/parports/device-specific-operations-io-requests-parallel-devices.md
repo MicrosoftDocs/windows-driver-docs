@@ -2,7 +2,7 @@
 title: Device-specific operations for I/O requests for parallel devices
 description: Documents device-specific operations for I/O requests for parallel devices
 keywords: ["Parallel devices WDK", "Parallel drivers WDK", "Parallel IRP codes"]
-ms.date: 10/17/2018
+ms.date: 03/03/2023
 ---
 
 # Device-specific operations for I/O requests for parallel devices

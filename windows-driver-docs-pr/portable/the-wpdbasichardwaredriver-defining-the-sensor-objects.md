@@ -1,7 +1,7 @@
 ---
 description: Defining the Sensor Objects
 title: Defining the Sensor Objects
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Defining the Sensor Objects

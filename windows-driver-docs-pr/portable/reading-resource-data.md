@@ -1,7 +1,7 @@
 ---
 description: Reading Resource Data
 title: Reading Resource Data
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Reading Resource Data

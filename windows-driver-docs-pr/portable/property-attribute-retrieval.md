@@ -1,7 +1,7 @@
 ---
 description: Property-Attribute Retrieval
 title: Property-Attribute Retrieval
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Property-Attribute Retrieval

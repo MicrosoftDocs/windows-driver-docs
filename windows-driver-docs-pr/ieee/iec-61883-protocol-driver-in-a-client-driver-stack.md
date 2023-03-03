@@ -4,7 +4,7 @@ description: IEC-61883 Protocol Driver in a Client Driver Stack
 keywords:
 - IEC-61883 client drivers WDK IEEE 1394 bus
 - 61883 WDK IEEE 1394 bus
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # IEC-61883 Protocol Driver in a Client Driver Stack
