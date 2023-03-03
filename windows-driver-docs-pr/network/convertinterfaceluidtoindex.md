@@ -5,6 +5,7 @@ keywords:
 - ConvertInterfaceLuidToIndex
 - netioapi/ConvertInterfaceLuidToIndex
 ms.date: 10/18/2022
+ms.topic: reference
 ---
 
 # ConvertInterfaceLuidToIndex function

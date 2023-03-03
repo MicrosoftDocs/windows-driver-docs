@@ -5,6 +5,7 @@ keywords:
 - ConvertLengthtoIpv4Mask
 - netioapi/ConvertLengthtoIpv4Mask
 ms.date: 10/18/2022
+ms.topic: reference
 ---
 
 # ConvertLengthtoIpv4Mask function

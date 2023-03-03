@@ -7,6 +7,7 @@ keywords:
 - netioapi/MIB_IPPATH_TABLE
 - netioapi/PMIB_IPPATH_TABLE
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # MIB\_IPPATH\_TABLE structure

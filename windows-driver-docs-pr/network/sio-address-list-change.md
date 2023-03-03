@@ -2,6 +2,7 @@
 title: SIO_ADDRESS_LIST_CHANGE
 description: SIO_ADDRESS_LIST_CHANGE
 ms.date: 08/08/2017
+ms.topic: reference
 keywords: 
  -SIO_ADDRESS_LIST_CHANGE Network Drivers Starting with Windows Vista
 ---

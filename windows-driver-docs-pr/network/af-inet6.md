@@ -2,6 +2,7 @@
 title: AF_INET6
 description: AF_INET6
 ms.date: 08/08/2017
+ms.topic: reference
 keywords: 
  -AF_INET6 Network Drivers Starting with Windows Vista
 ---

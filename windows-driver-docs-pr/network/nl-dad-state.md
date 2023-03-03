@@ -25,6 +25,7 @@ keywords:
 - nldef/NldsDuplicate
 - nldef/NldsInvalid
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # NL\_DAD\_STATE enumeration

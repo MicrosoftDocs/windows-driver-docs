@@ -5,6 +5,7 @@ keywords:
 - GetIpPathTable
 - netioapi/GetIpPathTable
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # GetIpPathTable function

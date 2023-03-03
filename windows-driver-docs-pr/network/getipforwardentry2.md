@@ -5,6 +5,7 @@ keywords:
 - GetIpForwardEntry2
 - netioapi/GetIpForwardEntry2
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # GetIpForwardEntry2 function

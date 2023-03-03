@@ -4,6 +4,7 @@ description: The eHS_UPDATE_RESULT enumeration indicates the result of a “chec
 keywords: 
 - eHS_UPDATE_RESULT enumeration Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
+ms.topic: reference
 ---
 
 # eHS\_UPDATE\_RESULT enumeration

@@ -5,6 +5,7 @@ keywords:
 - HS_SIM_DATA structure Network Drivers Starting with Windows Vista
 - PHS_SIM_DATA structure pointer Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
+ms.topic: reference
 ---
 
 # HS\_SIM\_DATA structure

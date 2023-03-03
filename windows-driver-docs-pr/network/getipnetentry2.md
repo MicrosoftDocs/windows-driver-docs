@@ -5,6 +5,7 @@ keywords:
 - GetIpNetEntry2
 - netioapi/GetIpNetEntry2
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # GetIpNetEntry2 function

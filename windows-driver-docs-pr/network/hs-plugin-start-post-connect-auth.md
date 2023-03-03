@@ -4,6 +4,7 @@ description: The HS_PLUGIN_START_POST_CONNECT_AUTH function is called to perform
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_START_POST_CONNECT_AUTH) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
+ms.topic: reference
 ---
 
 # HS\_PLUGIN\_START\_POST\_CONNECT\_AUTH function

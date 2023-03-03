@@ -7,6 +7,7 @@ keywords:
 - netioapi/MIB_UNICASTIPADDRESS_TABLE
 - netioapi/PMIB_UNICASTIPADDRESS_TABLE
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # MIB\_UNICASTIPADDRESS\_TABLE structure
