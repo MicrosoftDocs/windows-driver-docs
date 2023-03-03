@@ -1,8 +1,7 @@
 ---
 title: Universal camera driver functions for Windows 10
 description: Provides information about universal camera driver functions for Windows 10.
-ms.date: 03/23/2021
-ms.custom: contperf-fy21q3
+ms.date: 03/03/2023
 ---
 
 # Universal camera driver functions for Windows 10

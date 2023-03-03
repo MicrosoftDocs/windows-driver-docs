@@ -1,8 +1,7 @@
 ---
 title: Imaging device driver design guide
 description: Provides information about Windows Image Acquisition (WIA) drivers, Still Image (STI) drivers, and Web Services on Devices (WSD).
-ms.date: 08/13/2021
-ms.topic: article
+ms.date: 03/03/2023
 ---
 
 # Imaging device driver design guide

@@ -1,8 +1,7 @@
 ---
 title: Component Firmware Update (CFU) 
 description: Provides information about Component Firmware Update (CFU)
-ms.date: 10/01/2020
-ms.topic: article
+ms.date: 03/03/2023
 ---
 
 # Component Firmware Update (CFU)

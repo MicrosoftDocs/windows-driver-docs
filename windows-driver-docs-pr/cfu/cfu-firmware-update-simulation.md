@@ -1,8 +1,7 @@
 ---
 title: CFU virtual HID device firmware update simulation
 description: Provides a walkthrough of a simulated firmware update on a virtual HID device.
-ms.date: 04/07/2022
-ms.topic: article
+ms.date: 03/03/2023
 ---
 
 # CFU virtual HID device firmware update simulation
