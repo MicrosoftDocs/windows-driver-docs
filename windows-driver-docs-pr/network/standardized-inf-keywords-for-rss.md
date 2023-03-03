@@ -54,7 +54,7 @@ The following table describes the possible INF entries for the RSS enumeration k
 |||3|**NUMAScaling**: Assign RSS CPUs in a round robin basis across every NUMA node to enable applications that are running on NUMA servers to scale well.|
 |||4 (Default)|**NUMAScalingStatic**: RSS processor selection is the same as for NUMA scalability without dynamic load-balancing.|
 |||5|**ConservativeScaling**: RSS uses as few processors as possible to sustain the load. This option helps reduce the number of interrupts.|
-|||6 (Default on heterogeneous CPU systems)|**NdisRssProfileBalanced**: RSS processor selection is based on traffic workload. Only available in [NetAdapterCx](../netcx/netadaptercx-receive-side-scaling-rss-.md).|
+|||6 (Default on heterogeneous CPU systems)|**NdisRssProfileBalanced**: RSS processor selection is based on traffic workload. Only available in [NetAdapterCx](../netcx/netadaptercx-receive-side-scaling-rss-.md), starting in WDK preview version 25197.|
 
 The following list shows the [standardized INF keywords](standardized-inf-keywords-for-network-devices.md) for RSS that can be edited:
 
