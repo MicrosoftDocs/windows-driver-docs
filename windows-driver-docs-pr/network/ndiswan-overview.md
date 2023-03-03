@@ -6,7 +6,7 @@ keywords:
 - NDIS intermediate drivers WDK , NDISWAN driver
 - intermediate drivers WDK networking , NDISWAN driver
 - architecture WDK WAN , NDISWAN
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # NDISWAN Overview

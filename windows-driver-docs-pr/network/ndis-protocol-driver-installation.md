@@ -5,7 +5,7 @@ keywords:
 - protocol drivers WDK networking , installation
 - NDIS protocol drivers WDK , installation
 - installing NDIS protocol drivers WDK networking
-ms.date: 01/16/2019
+ms.date: 03/02/2023
 ---
 
 # NDIS protocol driver installation

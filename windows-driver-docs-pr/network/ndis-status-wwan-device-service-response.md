@@ -2,7 +2,7 @@
 title: NDIS_STATUS_WWAN_DEVICE_SERVICE_RESPONSE
 ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_DEVICE_SERVICE_RESPONSE indication to implement the transaction completion response for OID_WWAN_DEVICE_SERVICE_COMMAND.NDIS_WWAN_DEVICE_SERVICE_RESPONSE structure.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_WWAN_DEVICE_SERVICE_RESPONSE Network Drivers Starting with Windows Vista
 ---

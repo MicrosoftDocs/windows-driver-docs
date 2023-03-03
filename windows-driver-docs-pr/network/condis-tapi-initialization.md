@@ -6,7 +6,7 @@ keywords:
 - telephonic services WDK WAN , initiliazing
 - CoNDIS TAPI WDK networking , initializing
 - initializing CoNDIS TAPI
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # CoNDIS TAPI Initialization

@@ -1,7 +1,7 @@
 ---
 title: Completing the NDIS Selective Suspend Idle Notification
 description: Completing the NDIS Selective Suspend Idle Notification
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Completing the NDIS Selective Suspend Idle Notification

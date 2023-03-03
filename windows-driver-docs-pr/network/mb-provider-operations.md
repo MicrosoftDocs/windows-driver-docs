@@ -2,6 +2,7 @@
 title: MB Provider Operations
 description: MB Provider Operations
 ms.date: 04/20/2017
+ms.custom: UpdateFrequency3
 ---
 
 # MB Provider Operations

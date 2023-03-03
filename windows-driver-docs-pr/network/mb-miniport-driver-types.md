@@ -2,6 +2,7 @@
 title: MB Miniport Driver Types
 description: MB Miniport Driver Types
 ms.date: 04/20/2017
+ms.custom: UpdateFrequency3
 ---
 
 # MB Miniport Driver Types

@@ -4,6 +4,7 @@ description: MB UICC application and file system access
 keywords:
 - MB UICC application and file system access, Mobile Broadband UICC application and file system access
 ms.date: 03/07/2019
+ms.custom: UpdateFrequency3
 ms.custom: 19H1
 ---
 

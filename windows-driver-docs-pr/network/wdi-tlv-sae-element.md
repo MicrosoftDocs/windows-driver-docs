@@ -2,7 +2,7 @@
 title: WDI_TLV_SAE_ELEMENT
 ms.topic: reference
 description: WDI_TLV_SAE_ELEMENT is a TLV that contains the Encoded Field Element (EFE) for a Simultaneous Authentication of Equals (SAE) Commit request.
-ms.date: 02/15/2019
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_SAE_ELEMENT Network Drivers Starting with Windows Vista
 ms.custom: 19H1

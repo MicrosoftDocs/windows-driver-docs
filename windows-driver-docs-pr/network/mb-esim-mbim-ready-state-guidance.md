@@ -2,6 +2,7 @@
 title: MB eSIM MBIM ready state guidance
 description: MB eSIM MBIM ready state guidance
 ms.date: 08/10/2017
+ms.custom: UpdateFrequency3
 ---
 
 # MB eSIM MBIM ready state guidance

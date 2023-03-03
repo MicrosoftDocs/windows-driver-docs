@@ -5,7 +5,7 @@ keywords:
 - ports WDK NDIS , creating NDIS interfaces
 - NDIS ports WDK , creating NDIS interfaces
 - registering NDIS interface providers
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Creating NDIS Interfaces for NDIS Ports

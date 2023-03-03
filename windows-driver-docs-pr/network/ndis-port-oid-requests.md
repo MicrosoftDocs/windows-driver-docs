@@ -6,7 +6,7 @@ keywords:
 - NDIS ports WDK , OID requests
 - OID requests WDK NDIS ports
 - associating OID requests WDK NDIS ports
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # NDIS Port OID Requests

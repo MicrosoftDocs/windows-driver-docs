@@ -1,7 +1,7 @@
 ---
 title: 'REMOTE_NDIS_RESET_MSG'
 description: 'This message is sent to a Remote NDIS device from a host to reset the device and return status.'
-ms.date: 07/31/2017
+ms.date: 03/02/2023
 ---
 
 # REMOTE\_NDIS\_RESET\_MSG

@@ -5,7 +5,7 @@ keywords:
 - power management WDK NDIS miniport , problems
 - network interface cards WDK networking , power problems
 - NICs WDK networking , power problems
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Avoiding NDIS Power Management Problems

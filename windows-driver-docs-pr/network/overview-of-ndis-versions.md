@@ -6,7 +6,7 @@ keywords:
 - NDIS WDK , versions in network drivers
 - backward compatibility WDK networking
 - compatibility WDK networking
-ms.date: 11/04/2022
+ms.date: 03/02/2023
 ms.custom: contperf-fy21q4
 ---
 

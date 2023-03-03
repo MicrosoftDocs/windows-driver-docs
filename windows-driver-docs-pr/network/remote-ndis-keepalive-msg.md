@@ -1,7 +1,7 @@
 ---
 title: 'REMOTE_NDIS_KEEPALIVE_MSG'
 description: 'The host sends this message periodically when there has been no other control or data traffic from the device to the host for the bus-defined KeepAliveTimeoutPeriod.'
-ms.date: 07/31/2017
+ms.date: 03/02/2023
 ---
 
 # REMOTE\_NDIS\_KEEPALIVE\_MSG

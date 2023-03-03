@@ -2,7 +2,7 @@
 title: WDI_TLV_P2P_SEND_ACTION_FRAME_RESULT_PARAMETERS
 ms.topic: reference
 description: WDI_TLV_P2P_SEND_ACTION_FRAME_RESULT_PARAMETERS is a TLV that contains Wi-Fi Direct send Action Frame result parameters.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_P2P_SEND_ACTION_FRAME_RESULT_PARAMETERS Network Drivers Starting with Windows Vista
 ---

@@ -2,6 +2,7 @@
 title: MB Service Detection and Activation
 description: MB Service Detection and Activation
 ms.date: 04/20/2017
+ms.custom: UpdateFrequency3
 ---
 
 # MB Service Detection and Activation

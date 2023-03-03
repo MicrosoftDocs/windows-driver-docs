@@ -1,7 +1,7 @@
 ---
 title: WDI design guide topics
 description: This section describes requirements and recommendations for supporting features in the WLAN driver.
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # WDI design guide topics

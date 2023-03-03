@@ -1,7 +1,7 @@
 ---
 title: WDI RX path
 description: This section describes the WDI RX path
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # WDI RX path

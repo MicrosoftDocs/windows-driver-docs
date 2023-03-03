@@ -2,6 +2,7 @@
 title: MB Signal Strength Operations
 description: MB Signal Strength Operations
 ms.date: 03/01/2021
+ms.custom: UpdateFrequency3
 ---
 
 # MB Signal Strength Operations

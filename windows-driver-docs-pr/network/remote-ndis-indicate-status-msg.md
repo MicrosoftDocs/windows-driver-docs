@@ -1,7 +1,7 @@
 ---
 title: 'REMOTE_NDIS_INDICATE_STATUS_MSG'
 description: 'This message is sent from a Remote NDIS device to a host to indicate a change in the status of the device.'
-ms.date: 07/31/2017
+ms.date: 03/02/2023
 ---
 
 # REMOTE\_NDIS\_INDICATE\_STATUS\_MSG

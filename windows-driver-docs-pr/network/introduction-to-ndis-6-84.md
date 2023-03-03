@@ -1,7 +1,7 @@
 ---
 title: Introduction to NDIS 6.84
 description: This section introduces NDIS 6.84 and describes changes from NDIS 6.83. NDIS 6.84 is included in Windows 10, version 2004.
-ms.date: 06/03/2022
+ms.date: 03/02/2023
 ---
 
 # Introduction to NDIS 6.84

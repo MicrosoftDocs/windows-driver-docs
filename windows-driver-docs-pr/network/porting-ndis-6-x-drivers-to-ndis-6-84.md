@@ -1,7 +1,7 @@
 ---
 title: Porting NDIS 6.x drivers to NDIS 6.84
 description: NDIS 6.84 is substantially the same as NDIS 6.83.
-ms.date: 03/04/2022
+ms.date: 03/02/2023
 ---
 
 # Porting NDIS 6.x drivers to NDIS 6.84

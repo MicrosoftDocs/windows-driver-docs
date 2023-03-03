@@ -5,7 +5,7 @@ keywords:
 - NDIS 6.20 WDK , power management enhancements
 - power management WDK networking , NDIS 6.20 enhancements
 - power management enhancements WDK NDIS 6.20
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Power Management Enhancements in NDIS 6.20

@@ -1,7 +1,7 @@
 ---
 title: Sending NET_BUFFER Structures from CoNDIS Drivers
 description: Sending NET_BUFFER Structures from CoNDIS Drivers
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Sending NET\_BUFFER Structures from CoNDIS Drivers

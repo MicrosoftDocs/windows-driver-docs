@@ -2,6 +2,7 @@
 title: MB Packet Context Management
 description: MB Packet Context Management
 ms.date: 04/20/2017
+ms.custom: UpdateFrequency3
 ---
 
 # MB Packet Context Management

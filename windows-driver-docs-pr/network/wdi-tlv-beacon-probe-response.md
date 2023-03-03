@@ -2,7 +2,7 @@
 title: WDI_TLV_BEACON_PROBE_RESPONSE
 ms.topic: reference
 description: WDI_TLV_BEACON_PROBE_RESPONSE is a TLV that contains the latest beacon or probe response frame received by the port.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_BEACON_PROBE_RESPONSE Network Drivers Starting with Windows Vista
 ---

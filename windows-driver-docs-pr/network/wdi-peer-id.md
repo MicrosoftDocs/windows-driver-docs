@@ -3,7 +3,7 @@ title: WDI_PEER_ID
 description: This topic describes the WDI_PEER_ID data type for WDI miniport drivers.
 keywords:
 - WDI_PEER_ID, WDK WDI_PEER_ID network drivers
-ms.date: 11/27/2017
+ms.date: 03/02/2023
 ---
 
 # WDI_PEER_ID

@@ -4,7 +4,7 @@ description: Media Extensibility in NDIS 6.20
 keywords:
 - NDIS 6.20 WDK , media extensibility
 - media extensibility WDK NDIS 6.20
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Media Extensibility in NDIS 6.20

@@ -234,6 +234,8 @@
         "**/biometric/*.md": "UpdateFrequency5",
         "**/gpio/*.md": "UpdateFrequency5",
         "**/ieee/*.md": "UpdateFrequency5",
+        "**/mobilebroadband/*.md": "UpdateFrequency5",
+        "**/network/*.md": "UpdateFrequency5",
         "**/parports/*.md": "UpdateFrequency5",
         "**/pci/*.md": "UpdateFrequency5",
         "**/pcmcia/*.md": "UpdateFrequency5",

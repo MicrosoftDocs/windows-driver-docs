@@ -4,7 +4,7 @@ description: Direct OID Request Interface in NDIS 6.1
 keywords:
 - direct OID request interface WDK networking
 - direct OID request path WDK networking
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Direct OID Request Interface in NDIS 6.1

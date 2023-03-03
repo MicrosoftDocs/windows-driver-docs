@@ -2,7 +2,7 @@
 title: NDIS general statistics OIDs
 description: This section describes general statistics OIDs for all NDIS drivers
 keywords: ["NDIS general statistics OIDs", "WDK NDIS general statistics OIDs", "WDK general statistics OIDs"]
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # NDIS general statistics OIDs

@@ -2,7 +2,7 @@
 title: NDIS network interface OIDs
 description: This section describes network interface OIDs for all NDIS drivers
 keywords: ["NDIS network interface OIDs", "WDK NDIS network interface OIDs", "WDK network interface OIDs"]
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # NDIS network interface OIDs

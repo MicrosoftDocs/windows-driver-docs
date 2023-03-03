@@ -2,7 +2,7 @@
 title: OID_WDI_SET_DEFAULT_KEY_ID
 ms.topic: reference
 description: OID_WDI_SET_DEFAULT_KEY_ID sets the default key ID for packet transmission on a port.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - OID_WDI_SET_DEFAULT_KEY_ID Network Drivers Starting with Windows Vista
 ms.custom: 19H1

@@ -2,7 +2,7 @@
 title: WDI_TLV_BSS_ENTRY
 ms.topic: reference
 description: WDI_TLV_BSS_ENTRY is a TLV that contains BSS entry information.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_BSS_ENTRY Network Drivers Starting with Windows Vista
 ---

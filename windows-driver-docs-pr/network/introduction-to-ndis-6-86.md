@@ -1,7 +1,7 @@
 ---
 title: Introduction to NDIS 6.86
 description: This section introduces NDIS 6.86 and describes changes from NDIS 6.85. NDIS 6.86 is included in Windows 11, version 21H2.
-ms.date: 03/04/2022
+ms.date: 03/02/2023
 ---
 
 # Introduction to NDIS 6.86

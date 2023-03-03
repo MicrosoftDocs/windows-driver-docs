@@ -1,7 +1,7 @@
 ---
 title: 'REMOTE_NDIS_QUERY_CMPLT'
 description: 'A Remote NDIS device will respond to a REMOTE_NDIS_QUERY_MSG message with a REMOTE_NDIS_QUERY_CMPLT message.'
-ms.date: 07/31/2017
+ms.date: 03/02/2023
 ---
 
 # REMOTE\_NDIS\_QUERY\_CMPLT

@@ -2,7 +2,7 @@
 title: NDIS_STATUS_PD_CURRENT_CONFIG
 ms.topic: reference
 description: This status indication is a notification that the NDIS_PD_CONFIG structure has changed.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_PD_CURRENT_CONFIG Network Drivers Starting with Windows Vista
 ---
