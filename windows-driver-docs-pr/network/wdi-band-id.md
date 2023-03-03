@@ -4,6 +4,7 @@ description: This topic describes the WDI_BAND_ID data type for WDI miniport dri
 keywords:
 - WDI_BAND_ID, WDK WDI_BAND_ID network drivers
 ms.date: 11/27/2017
+ms.topic: reference
 ---
 
 # WDI_BAND_ID

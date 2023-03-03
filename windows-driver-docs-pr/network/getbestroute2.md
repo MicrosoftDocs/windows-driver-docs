@@ -5,6 +5,7 @@ keywords:
 - GetBestRoute2
 - netioapi/GetBestRoute2
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # GetBestRoute2 function

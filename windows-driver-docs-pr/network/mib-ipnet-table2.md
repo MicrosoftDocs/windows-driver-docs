@@ -7,6 +7,7 @@ keywords:
 - netioapi/MIB_IPNET_TABLE2
 - netioapi/PMIB_IPNET_TABLE2
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # MIB\_IPNET\_TABLE2 structure

@@ -5,6 +5,7 @@ keywords:
 - ConvertInterfaceGuidToLuid
 - netioapi/ConvertInterfaceGuidToLuid
 ms.date: 10/18/2022
+ms.topic: reference
 ---
 
 # ConvertInterfaceGuidToLuid function

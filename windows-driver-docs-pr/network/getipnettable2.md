@@ -5,6 +5,7 @@ keywords:
 - GetIpNetTable2
 - netioapi/GetIpNetTable2
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # GetIpNetTable2 function

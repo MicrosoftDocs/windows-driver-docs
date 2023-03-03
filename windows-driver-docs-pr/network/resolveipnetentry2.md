@@ -5,6 +5,7 @@ keywords:
 - ResolveIpNetEntry2
 - netioapi/ResolveIpNetEntry2
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # ResolveIpNetEntry2 function

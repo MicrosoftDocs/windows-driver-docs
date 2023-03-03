@@ -2,6 +2,7 @@
 title: SO_WSK_EVENT_CALLBACK
 description: SO_WSK_EVENT_CALLBACK
 ms.date: 07/18/2017
+ms.topic: reference
 keywords:
  - SO_WSK_EVENT_CALLBACK Network Drivers Starting with Windows Vista
 ---

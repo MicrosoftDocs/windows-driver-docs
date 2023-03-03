@@ -2,6 +2,7 @@
 title: WSK_TDI_BEHAVIOR
 description: WSK_TDI_BEHAVIOR
 ms.date: 07/18/2017
+ms.topic: reference
 keywords:
  - WSK_TDI_BEHAVIOR Network Drivers Starting with Windows Vista
 ---

@@ -7,6 +7,7 @@ keywords:
 - netioapi/MIB_MULTICASTIPADDRESS_TABLE
 - netioapi/PMIB_MULTICASTIPADDRESS_TABLE
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # MIB\_MULTICASTIPADDRESS\_TABLE structure

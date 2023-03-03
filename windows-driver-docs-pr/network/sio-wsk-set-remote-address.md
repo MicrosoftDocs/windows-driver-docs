@@ -2,6 +2,7 @@
 title: SIO_WSK_SET_REMOTE_ADDRESS
 description: SIO_WSK_SET_REMOTE_ADDRESS
 ms.date: 07/18/2017
+ms.topic: reference
 keywords:
  - SIO_WSK_SET_REMOTE_ADDRESS Network Drivers Starting with Windows Vista
 ---

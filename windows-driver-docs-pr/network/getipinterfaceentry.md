@@ -5,6 +5,7 @@ keywords:
 - GetIpInterfaceEntry
 - netioapi/GetIpInterfaceEntry
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # GetIpInterfaceEntry function

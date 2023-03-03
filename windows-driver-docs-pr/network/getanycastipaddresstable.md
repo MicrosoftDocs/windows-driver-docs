@@ -5,6 +5,7 @@ keywords:
 - GetAnycastIpAddressTable
 - netioapi/GetAnycastIpAddressTable
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # GetAnycastIpAddressTable function
