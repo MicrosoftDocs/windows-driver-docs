@@ -4,6 +4,7 @@ description: The HS_PLUGIN_QUERY_SUPPORTED_SIMS function returns the list of SIM
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_QUERY_SUPPORTED_SIMS) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
+ms.topic: reference
 ---
 
 # HS\_PLUGIN\_QUERY\_SUPPORTED\_SIMS function

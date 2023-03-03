@@ -7,6 +7,7 @@ keywords:
 - netioapi/MIB_IF_TABLE2
 - netioapi/PMIB_IF_TABLE2
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # MIB\_IF\_TABLE2 structure

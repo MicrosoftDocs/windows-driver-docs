@@ -1,7 +1,8 @@
 ---
 title: 'REMOTE_NDIS_PACKET_MSG'
 description: 'REMOTE_NDIS_PACKET_MSG encapsulates NDIS data packets to form a single data message.'
-ms.date: 03/02/2023
+ms.date: 07/31/2017
+ms.topic: reference
 ---
 
 # REMOTE\_NDIS\_PACKET\_MSG

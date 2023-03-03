@@ -1,7 +1,8 @@
 ---
 title: PropVariant helpers
 description: The PropVariant helper functions are used by the v2 sensor drivers for manipulating the PROPVARIANT structures associated with the sensors.
-ms.date: 07/20/2018
+ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # Sensor PropVariant helpers
@@ -11,7 +12,7 @@ The PropVariant helper functions are used by the v2 sensor drivers for manipulat
 The helper functions are used along with the sensor device driver software interface (DDSI).
 
 | Helper Function | Action | Comments |
-| --- | --- | --- |
+|---|---|---|
 | InitPropVariantFromFloat | Initializes a [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) structure. | This function receives a FLOAT, and then based on that variable, it creates and initializes a [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) structure. |
 | PropKeyFindKeyGetPropVariant | Retrieves a [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) structure. | |
 | PropKeyFindKeySetPropVariant | Sets a [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) structure. | |
@@ -36,13 +37,12 @@ The helper functions are used along with the sensor device driver software inter
 
 ## Requirements
 
-**Minimum supported client**: Windows 8.1
-
-**Minimum supported server**: Windows Server 2012 R2
-
-**Header**: Sensorsutils.h
-
+| &nbsp; |&nbsp; |
+|---|---|
+| **Minimum supported client** | Windows 8.1 |
+| **Minimum supported server** | Windows Server 2012 R2 |
+| **Header** | Sensorsutils.h |
 
 ## Related topics
 
-[Marshalling helper functions](marshalling-helper-functions.md)
+- [Marshalling helper functions](marshalling-helper-functions.md)

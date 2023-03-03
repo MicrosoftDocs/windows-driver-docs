@@ -5,6 +5,7 @@ keywords:
 - HS_PLUGIN_HOST_NAME structure Network Drivers Starting with Windows Vista
 - PHS_PLUGIN_HOST_NAME structure pointer Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
+ms.topic: reference
 ---
 
 # HS\_PLUGIN\_HOST\_NAME structure

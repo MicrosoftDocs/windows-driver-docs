@@ -5,6 +5,7 @@ keywords:
 - GetIfEntry2
 - netioapi/GetIfEntry2
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # GetIfEntry2 function

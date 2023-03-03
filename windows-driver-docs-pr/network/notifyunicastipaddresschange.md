@@ -5,6 +5,7 @@ keywords:
 - NotifyUnicastIpAddressChange
 - netioapi/NotifyUnicastIpAddressChange
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # NotifyUnicastIpAddressChange function

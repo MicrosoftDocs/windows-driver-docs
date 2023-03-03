@@ -2,6 +2,7 @@
 title: AF_INET
 description: AF_INET
 ms.date: 08/08/2017
+ms.topic: reference
 keywords: 
  -AF_INET Network Drivers Starting with Windows Vista
 ---

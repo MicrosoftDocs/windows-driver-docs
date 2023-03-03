@@ -1,13 +1,14 @@
 ---
-title: INF SharedDriver Entry
-description: INF SharedDriver Entry
+title: INF SharedDriver entry
+description: INF SharedDriver entry
 keywords:
 - INF files WDK non-HID keyboard/mouse
 - SharedDriver entry WDK non-HID keyboard/mouse
-ms.date: 10/11/2022
+ms.date: 03/02/2023
+ms.topic: reference
 ---
 
-# INF SharedDriver Entry
+# INF SharedDriver entry
 
 **\[ControlFlags\]**
 

@@ -10,7 +10,8 @@ api_location:
 - Sensors.h
 api_type:
 - HeaderDef
-ms.date: 12/01/2022
+ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # SENSOR_CATEGORY_MECHANICAL
@@ -49,7 +50,8 @@ This category includes the following platform-defined data fields.
 
 ## Requirements
 
-| Minimum supported client | Windows 7 |
+| &nbsp; | &nbsp; |
 |---|---|
-| Minimum supported server | None supported |
-| Header | sensors.h |
+| **Minimum supported client** | Windows 7 |
+| **Minimum supported server** | None supported |
+| **Header** | sensors.h |

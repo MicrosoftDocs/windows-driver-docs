@@ -4,6 +4,7 @@ description: The eHS_AUTHENTICATION_RESULT enumeration indicates the result of a
 keywords: 
  - eHS_AUTHENTICATION_RESULT enumeration Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
+ms.topic: reference
 ---
 
 # eHS\_AUTHENTICATION\_RESULT enumeration

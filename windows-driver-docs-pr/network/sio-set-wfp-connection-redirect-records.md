@@ -2,6 +2,7 @@
 title: SIO_SET_WFP_CONNECTION_REDIRECT_RECORDS control code
 description: The SIO_SET_WFP_CONNECTION_REDIRECT_RECORDS socket I/O control operation allows a Winsock client to specify the redirect record to the new TCP socket used for connecting to the final destination.
 ms.date: 08/08/2017
+ms.topic: reference
 keywords: 
  -SIO_SET_WFP_CONNECTION_REDIRECT_RECORDS control code Network Drivers Starting with Windows Vista
 ---

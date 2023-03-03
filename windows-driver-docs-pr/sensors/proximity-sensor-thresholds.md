@@ -1,7 +1,8 @@
 ---
 title: Proximity sensor thresholds
 description: This topic provides information about the proximity sensor thresholds.
-ms.date: 07/20/2018
+ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # Proximity sensor thresholds
@@ -15,5 +16,4 @@ That said, proximity sensor drivers must always report one sample reading immedi
 
 ## Related topics
 
-
-[PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
+- [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)

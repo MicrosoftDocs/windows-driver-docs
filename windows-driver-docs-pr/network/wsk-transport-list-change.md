@@ -2,6 +2,7 @@
 title: WSK_TRANSPORT_LIST_CHANGE
 description: WSK_TRANSPORT_LIST_CHANGE
 ms.date: 07/18/2017
+ms.topic: reference
 keywords:
  - WSK_TRANSPORT_LIST_CHANGE Network Drivers Starting with Windows Vista
 ---

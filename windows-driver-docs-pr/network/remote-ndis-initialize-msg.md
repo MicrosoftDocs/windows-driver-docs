@@ -1,7 +1,8 @@
 ---
 title: 'REMOTE_NDIS_INITIALIZE_MSG'
 description: 'This message is sent by the host to a Remote NDIS device to initialize the network connection.'
-ms.date: 03/02/2023
+ms.date: 07/31/2017
+ms.topic: reference
 ---
 
 # REMOTE\_NDIS\_INITIALIZE\_MSG

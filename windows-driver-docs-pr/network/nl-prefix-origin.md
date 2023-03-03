@@ -17,6 +17,7 @@ keywords:
 - nldef/IpPrefixOriginWellKnown
 - nldef/IpPrefixOriginUnchanged
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # NL\_PREFIX\_ORIGIN enumeration

@@ -7,6 +7,7 @@ keywords:
 - netioapi/IP_ADDRESS_PREFIX
 - netioapi/PIP_ADDRESS_PREFIX
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # IP\_ADDRESS\_PREFIX structure

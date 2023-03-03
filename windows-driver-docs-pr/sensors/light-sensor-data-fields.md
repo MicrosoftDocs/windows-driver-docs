@@ -1,7 +1,8 @@
 ---
 title: Light sensor data fields
 description: This topic provides information about the data fields that are specific to the light sensor.
-ms.date: 12/02/2022
+ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # Light sensor data fields

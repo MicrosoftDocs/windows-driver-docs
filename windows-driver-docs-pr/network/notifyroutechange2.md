@@ -5,6 +5,7 @@ keywords:
 - NotifyRouteChange2
 - netioapi/NotifyRouteChange2
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # NotifyRouteChange2 function

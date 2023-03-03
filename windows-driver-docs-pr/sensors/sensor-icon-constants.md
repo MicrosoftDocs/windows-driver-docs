@@ -8,7 +8,8 @@ api_name:
 - Sensor icon constants
 api_type:
 - NA
-ms.date: 12/01/2022
+ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # Sensor icon constants

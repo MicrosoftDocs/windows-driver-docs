@@ -2,6 +2,7 @@
 title: SIO_LOOPBACK_FAST_PATH control code
 description: The SIO_LOOPBACK_FAST_PATH socket I/O control code allows a WSK application to configure a TCP socket for faster operations on the loopback interface.
 ms.date: 08/08/2017
+ms.topic: reference
 keywords: 
  -SIO_LOOPBACK_FAST_PATH control code Network Drivers Starting with Windows Vista
 ---
