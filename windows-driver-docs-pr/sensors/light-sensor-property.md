@@ -1,7 +1,8 @@
 ---
 title: Light sensor property
 description: The property key for the light sensor.
-ms.date: 01/04/2018
+ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # Light sensor property
@@ -9,7 +10,7 @@ ms.date: 01/04/2018
 The property key for the light sensor.
 
 | Property key | Type | Access (R/O, R/W) | Required/Optional | Description |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 | PKEY_LightSensor_ResponseCurve | VT_VECTOR | R/O | Required | The response curve of the light sensor. |
 | DEVPKEY_SensorData_LightLevel_AutoBrightnessPreferred | VT_BOOL | R/O | Optional | The light sensor is preferred for auto-brightness. |
 | DEVPKEY_SensorData_LightLevel_ColorCapable | VT_BOOL | R/O | Optional | Required if supporting chromaticity and light temperature. The light sensor supports light temperature and/or chromaticity x/y. |
@@ -18,7 +19,7 @@ For more information about the data type shown in the **Type** column, see [PROP
 
 ## Remarks
 
-To use this property key to set the value of its related property, you can use the **InitPropVariantFromUInt32Vector** function. For example, to set the value for the SENSOR\_PROPERTY\_MIN\_DATA\_INTERVAL property using the PKEY\_Sensor\_MinimumDataInterval\_Ms property key, you would use the following syntax:
+To use this property key to set the value of its related property, you can use the **InitPropVariantFromUInt32Vector** function. For example, to set the value for the SENSOR_PROPERTY_MIN_DATA_INTERVAL property using the PKEY_Sensor_MinimumDataInterval_Ms property key, you would use the following syntax:
 
 ```cpp
 // Sensor Properties
@@ -39,4 +40,8 @@ To use this property key to set the value of its related property, you can use t
 
 For a complete example of sensor properties being set by using their related property keys, see the [client.cpp file](https://github.com/microsoft/Windows-driver-samples/blob/main/sensors/ADXL345Acc/client.cpp) in the ADXL345Acc sample driver, and scroll down to the **NTSTATUS ADXL345AccDevice::Initialize(...)** routine.
 
-**Header:** Sensorsdef.h
+## Requirements
+
+| &nbsp; |&nbsp; |
+|---|---|
+| **Header** | Sensorsdef.h |

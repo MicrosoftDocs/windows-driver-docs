@@ -1,11 +1,11 @@
 ---
 title: Accelerometer thresholds
 description: This topic provides information about the accelerometer thresholds.
-ms.date: 07/20/2018
+ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # Accelerometer thresholds
-
 
 This topic provides information about the accelerometer thresholds.
 
@@ -13,9 +13,9 @@ The following table lists the available thresholds values for the accelerometer.
 
 |Property key|Type|Required/Optional|Default value|Description|
 |---|---|---|---|---|
-|PKEY_SensorData_AccelerationX_Gs|VT_R4|Required|0.1f|Minimum amount of acceleration increase or decrease along the x-axis required to reach the threshold, measured in g’s.|
-|PKEY_SensorData_AccelerationY_Gs|VT_R4|Required|0.1f|Minimum amount of acceleration increase or decrease along the y-axis required to reach the threshold, measured in g’s.|
-|PKEY_SensorData_AccelerationZ_Gs|VT_R4|Required|0.1f|Minimum amount of acceleration increase or decrease along the z-axis required to reach the threshold, measured in g’s.|
+|PKEY_SensorData_AccelerationX_Gs|VT_R4|Required|0.1f|Minimum amount of acceleration increase or decrease along the x-axis required to reach the threshold, measured in g's.|
+|PKEY_SensorData_AccelerationY_Gs|VT_R4|Required|0.1f|Minimum amount of acceleration increase or decrease along the y-axis required to reach the threshold, measured in g's.|
+|PKEY_SensorData_AccelerationZ_Gs|VT_R4|Required|0.1f|Minimum amount of acceleration increase or decrease along the z-axis required to reach the threshold, measured in g's.|
 
 Accelerometer drivers must report a sample reading to the sensors class extension by calling [SensorsCxSensorDataReady](/windows-hardware/drivers/ddi/sensorscx/nf-sensorscx-sensorscxsensordataready) when either PKEY_SensorData_AccelerationX_Gs, PKEY_SensorData_AccelerationY_Gs, or PKEY_SensorData_AccelerationZ_Gs thresholds are met. Each threshold must be measured per-axis. Drivers must therefore call SensorsCxSensorDataReady whenever the threshold condition is met on any one of the axis.
 When PKEY_SensorData_AccelerationX_Gs, or PKEY_SensorData_AccelerationY_Gs, or PKEY_SensorData_AccelerationZ_Gs is set to 0.0f, the driver must report sample readings to the sensors class extension at every single interval. This mode is known as *sensor sample streaming*.

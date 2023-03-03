@@ -1,7 +1,8 @@
 ---
 title: Sensor categories
 description: Sensor categories
-ms.date: 07/20/2018
+ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # Sensor categories
@@ -24,4 +25,3 @@ Sensor category GUIDs are defined in SensorsDef.h
 | GUID_SensorCategory_Other | This GUID identifies a category for sensors that are supported, but do not fit into any of the predefined categories. |
 | GUID_SensorCategory_Scanner| This GUID identifies the scanner sensor category. |
 | GUID_SensorCategory_Unsupported| This GUID identifies a category for sensors that are unsupported. |
-
