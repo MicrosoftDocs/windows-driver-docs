@@ -3,7 +3,6 @@ title: Cellular architecture and implementation
 description: The cellular architecture for Windows 10.
 ms.date: 03/01/2021
 ms.custom: UpdateFrequency3
-ms.custom: contperf-fy21q4
 ---
 
 # Cellular architecture

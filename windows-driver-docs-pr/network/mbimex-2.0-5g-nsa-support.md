@@ -5,7 +5,6 @@ keywords:
 - MBIMEx 2.0 – 5G NSA support
 ms.date: 03/01/2021
 ms.custom: UpdateFrequency3
-ms.custom: 19H1
 ---
 
 # MBIMEx 2.0 – 5G NSA support

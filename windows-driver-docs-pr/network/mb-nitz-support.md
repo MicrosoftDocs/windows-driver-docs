@@ -5,7 +5,6 @@ keywords:
 - MB NITZ support, Mobile Broadband NITZ support
 ms.date: 03/01/2021
 ms.custom: UpdateFrequency3
-ms.custom: 19H1
 ---
 
 # MB NITZ support
