@@ -241,7 +241,7 @@
         "**/pcmcia/*.md": "UpdateFrequency5",
         "**/portable/*.md": "UpdateFrequency5",
         "**/sd/*.md": "UpdateFrequency5",
-        "**/whea/*.md": "UpdateFrequency5"
+        "**/whea/*.md": "UpdateFrequency5",
         "**/audio/*.md": "UpdateFrequency3",
         "**/battery/*.md": "UpdateFrequency5",
         "**/debugger/*.md": "UpdateFrequency3",
@@ -250,9 +250,8 @@
         "**/powermeter/*.md": "UpdateFrequency5",
         "**/serports/*.md": "UpdateFrequency5",
         "**/taef/*.md": "UpdateFrequency5",
-        "**/wdtf/*.md": "UpdateFrequency5",
-       }
-      },
+        "**/wdtf/*.md": "UpdateFrequency5"      }
+    },
     "externalReference": [],
     "template": "op.html",
     "dest": "windows-driver-docs-pr",
