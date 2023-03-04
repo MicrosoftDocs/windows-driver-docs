@@ -3,7 +3,7 @@ title: CM_PROB_DRIVER_BLOCKED
 description: CM_PROB_DRIVER_BLOCKED
 keywords:
 - CM_PROB_DRIVER_BLOCKED
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Code 48 - CM_PROB_DRIVER_BLOCKED

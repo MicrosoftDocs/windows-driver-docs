@@ -3,7 +3,7 @@ title: CM_PROB_HELD_FOR_EJECT
 description: CM_PROB_HELD_FOR_EJECT
 keywords:
 - CM_PROB_HELD_FOR_EJECT
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Code 47 - CM_PROB_HELD_FOR_EJECT

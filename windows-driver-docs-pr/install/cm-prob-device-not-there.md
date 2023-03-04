@@ -3,7 +3,7 @@ title: CM_PROB_DEVICE_NOT_THERE
 description: CM_PROB_DEVICE_NOT_THERE
 keywords:
 - CM_PROB_DEVICE_NOT_THERE
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Code 24 - CM_PROB_DEVICE_NOT_THERE
