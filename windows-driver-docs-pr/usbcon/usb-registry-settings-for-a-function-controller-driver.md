@@ -1,7 +1,8 @@
 ---
 description: OEMs must set several registry values to make sure that their device enumerates with the correct metadata when connected to a computer.
 title: USB registry settings for a function controller driver
-ms.date: 06/30/2022
+ms.date: 03/06/2023
+ms.topic: reference
 ---
 
 # USB registry settings for a function controller driver
@@ -21,7 +22,7 @@ Configuration information for the USB device are in the registry under: **HKEY_L
 This table describes its sub-keys. Some of them can be modified by OEMs. More information about the supported values for each sub-key is provided in sections below.
 
 | Sub-key | Description |
-|--|--|
+|---|---|
 | **Alternates** | This sub-key contains additional sub-keys that describe an interface that has one or more alternate settings. |
 | **Associations** | This sub-key defines Interface Association Descriptors (IADs). Each IAD allows multiple interfaces to be grouped into a single function. Each sub-key represents a different IAD and OEMs can modify the values for those sub-keys. |
 | **Default** | This sub-key contains default values that are used to describe device-specific settings such as the VID and PID. This is a Microsoft-owned sub-key whose values are overridden by those in the parent key. |
@@ -34,7 +35,7 @@ This table describes the values that OEMs can define in the **HKEY_LOCAL_MACHINE
 All OEMs must set the **idVendor**, **idProduct**, **ManufacturerString**, and **ProductString** values. OEMs that create and add their own interfaces must also set **CurrentConfiguration** to the name of the sub-key under **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Configurations** that includes their interfaces in the **InterfaceList**.
 
 | Value | Type | Owner | Description|
-|--|--|--|--|
+|---|---|---|---|
 | **IncludeDefaultCfg** | REG_DWORD | OEM | Set to 1 when OEMs want to include the interfaces of the Default configuration such as IpOverUsb or MTP. |
 | **idVendor** | REG_DWORD | OEM | The vendor identifier for the device descriptor that is sent to the host during enumeration. |
 | **idProduct** | REG_DWORD | OEM | The product identifier for the device descriptor that is sent to the host during enumeration. |
@@ -49,8 +50,8 @@ All OEMs must set the **idVendor**, **idProduct**, **ManufacturerString**, and *
 This table describes the values that OEMs can define for sub-keys under **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Configurations**. Each sub-key represents a different USB configuration. If the OEM wants to create their own interface, the OEM must define a new configuration which contains the interfaces to be used. To do this, create a sub-key under **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Configurations** that uses the name of the configuration and populate the sub-key with the values in this table. Additionally, for the USB driver to use the new configuration, the **CurrentConfiguration** value (described in the preceding table) must be set to the name of the configuration sub-key.
 
 | Value | Type | Owner | Description |
-|--|--|--|--|
-| **InterfaceList** | REG_MULTI_SZ | OEM or Microsoft | Contains a list of interface names that correspond to interface sub-keys under **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Interfaces**, the IAD associations defined under **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Associations**, and the alternate interfaces defined under **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Alternates**. Those keys determine the interfaces that are used to describe the composite configuration descriptor.<br/><br/> If the **IncludeDefaultCfg** value under the **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN** key is set to 1, this list is appended to the Microsoft-owned default interface list to create the complete interface list that the device will use to enumerate. |
+|---|---|---|---|
+| **InterfaceList** | REG_MULTI_SZ | OEM or Microsoft | Contains a list of interface names that correspond to interface sub-keys under **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Interfaces**, the IAD associations defined under **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Associations**, and the alternate interfaces defined under **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Alternates**. Those keys determine the interfaces that are used to describe the composite configuration descriptor.<br><br> If the **IncludeDefaultCfg** value under the **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN** key is set to 1, this list is appended to the Microsoft-owned default interface list to create the complete interface list that the device will use to enumerate. |
 | **MSOSCompatIdDescriptor** | REG_BINARY | OEM or Microsoft | Optional. Defines an Extended Compat ID OS Feature Descriptor for the configuration. If the **IncludeDefaultCfg** value under the **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN** key is set to 1, the functions in this descriptor are appended to the functions and interfaces in the default configuration. |
 
 ## USBFN\Interfaces registry key
@@ -60,7 +61,7 @@ This table describes the values that OEMs can modify for sub-keys under **HKEY_L
 Each sub-key represents a different USB interface. To define an interface, create a sub-key under **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Interfaces** using the name of the interface, and populate it with the values in the table below. Additionally, an interface will only be included if the interface is part of the **InterfaceList** of the **CurrentConfiguration**.
 
 | Value | Type | Owner | Description |
-|--|--|--|--|
+|---|---|---|---|
 | **InterfaceDescriptor** | REG_BINARY | OEM or Microsoft | A binary representation of an interface descriptor to send to the host during USB enumeration. The **bInterfaceNumber** and **iInterface** values are automatically populated by the USB function stack after compiling a full configuration descriptor to avoid conflicts with other interface descriptors. |
 | **InterfaceGUID** | REG_SZ | OEM or Microsoft | A GUID that uniquely identifies an interface on the bus. |
 | **InterfaceNumber** | REG_DWORD | OEM or Microsoft | Optional. This value is used to assign a fixed interface number to a function. Interface numbers 0-1F are reserved for legacy functions, 20-3F are reserved for Microsoft, and 40-5F are reserved for use by OEMs. |
@@ -74,7 +75,7 @@ The alternates sub-key is used to define a single interface that has one or more
 Each sub-key represents a different interface. To define an interface with alternate settings, create a sub-key under **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Alternates** by using the name of the interface, and populate it with the values in the table below.
 
 | Value | Type | Owner | Description |
-|--|--|--|--|
+|---|---|---|---|
 | **InterfaceList** | REG_MULTI_SZ | OEM or Microsoft | A list of two of more interface names that correspond to interfaces defined under **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Interfaces**. That key collectively defines an interface with alternate settings. The first interface corresponds to alternate setting 0, the second interface corresponds to alternate setting 1, and so on. |
 | **InterfaceNumber** | REG_DWORD | OEM or Microsoft | Optional. This value is used to assign a fixed interface number to a function. Interface numbers 0-1F are reserved for legacy functions, 20-3F are reserved for Microsoft, and 40-5F are reserved for use by OEMs. |
 | **MSOSExtendedPropertyDescriptor** | REG_BINARY | OEM or Microsoft | Optional. Defines an Extended Property OS Feature Descriptor for the interface. |
@@ -86,7 +87,7 @@ OEMs can specify associations by defining Interface Association Descriptors (IAD
 Each sub-key represents a different IAD. To define an association, create a sub-key under **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\USBFN\Associations** by using the name of the IAD, and populate it with the values in the table below.
 
 | Value | Type | Owner | Description |
-|--|--|--|--|
+|---|---|---|---|
 | **InterfaceList** | REG_MULTI_SZ | OEM or Microsoft | A list of interfaces or alternate interfaces that are associated with a USB function. If the size of the list is less than 2, then the function driver stack fails to load. Other functions or interfaces continue to load. |
 | **bFunctionClass** | REG_DWORD | OEM or Microsoft | The class code of the function, set to 02. |
 | **bFunctionSubClass** | REG_DWORD | OEM or Microsoft | The subclass code of the function, set to 0d. |
@@ -103,7 +104,7 @@ To enable MirrorLink connectivity on Windows 10 Mobile Device, OEM must make th
 - In addition to the registry settings, set this registry value to a non-zero value.
 
    | Value | Type | Owner | Description |
-   |--|--|--|--|
+   |---|---|---|---|
    | **MirrorLink** | REG_DWORD | OEM or Microsoft | A non-zero value indicates the interface supports MirrorLink. The USB function stack does not stall the MirrorLink USB command. |
 
 - Class-specific descriptors can be included in the interface descriptor set that is defined in the registry. The size field must be set in those descriptors so that USB function driver stack can parse them accurately.
