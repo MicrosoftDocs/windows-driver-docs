@@ -29,7 +29,7 @@ For an **IRP\_MJ\_READ** or **IRP\_MJ\_WRITE** request to transfer zero bytes, S
 
 SpbCx and the SPB controller driver also handle these SPB-specific I/O control codes (IOCTLs):
 
-- [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](./spb-ioctls.md#ioctl_spb_execute_sequence)
+- [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](./spb-ioctls.md#ioctl_spb_execute_sequence-control-code)
 - [**IOCTL\_SPB\_LOCK\_CONTROLLER**](./spb-ioctls.md#ioctl_spb_lock_controller-control-code)
 - [**IOCTL\_SPB\_UNLOCK\_CONTROLLER**](./spb-ioctls.md#ioctl_spb_unlock_controller-control-code)
 

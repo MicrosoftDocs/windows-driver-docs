@@ -14,7 +14,7 @@ An example of an I/O transfer sequence is a write-read operation, which is a bus
 
 A client can initiate an I/O transfer sequence in one of these ways:
 
-1. The client can specify the entire sequence in an [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence) I/O control request. This request enables the SPB controller driver to use whatever hardware-specific performance optimizations are available to perform the transfer sequence. For more information, see [Single-Request Sequences](#single-request-sequences).
+1. The client can specify the entire sequence in an [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence-control-code) I/O control request. This request enables the SPB controller driver to use whatever hardware-specific performance optimizations are available to perform the transfer sequence. For more information, see [Single-Request Sequences](#single-request-sequences).
 
 1. The client can send an [IOCTL_SPB_LOCK_CONTROLLER](./spb-ioctls.md#ioctl_spb_lock_controller-control-code) I/O control request to lock the controller at the start of a sequence, and send an [IOCTL_SPB_UNLOCK_CONTROLLER](./spb-ioctls.md#ioctl_spb_unlock_controller-control-code) when the sequence is complete. While the controller is locked, the client sends a separate I/O request ([IRP_MJ_READ](../kernel/irp-mj-read.md) or [IRP_MJ_WRITE](../kernel/irp-mj-write.md)) for each read or write operation in the sequence. For more information, see [Client-Implemented Sequences](#client-implemented-sequences).
 
@@ -22,7 +22,7 @@ Whenever possible, a client should use the **IOCTL_SPB_EXECUTE_SEQUENCE** reques
 
 ## Single-Request Sequences
 
-To improve performance, your SPB controller driver should implement an [EvtSpbControllerIoSequence](/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_controller_sequence) callback function to handle [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence) requests. This approach adds some complexity to the SPB controller driver but avoids requiring the client to perform an I/O transfer sequence as a series of individual read and write operations while other clients are locked out of the bus.
+To improve performance, your SPB controller driver should implement an [EvtSpbControllerIoSequence](/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_controller_sequence) callback function to handle [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence-control-code) requests. This approach adds some complexity to the SPB controller driver but avoids requiring the client to perform an I/O transfer sequence as a series of individual read and write operations while other clients are locked out of the bus.
 
 > [!NOTE]
 > Implementation of an **EvtSpbControllerIoSequence** function is strongly recommended, and might become a requirement for Windows 8.
@@ -41,7 +41,7 @@ SpbCx never precedes an **EvtSpbControllerIoSequence** callback with an [*EvtSpb
 
 A client of an SPB controller driver can explicitly perform an I/O transfer sequence as a series of simple reads and writes. The client can be either a kernel-mode driver or a user-mode driver that controls a peripheral device that is attached to the bus. Before the first transfer in the sequence, the client sends an [IOCTL_SPB_LOCK_CONTROLLER](./spb-ioctls.md#ioctl_spb_lock_controller-control-code) request to the target device to prevent other, unrelated bus accesses from occurring between the transfers in the sequence. Next, the client sends [IRP_MJ_READ](../kernel/irp-mj-read.md) and [IRP_MJ_WRITE](../kernel/irp-mj-write.md) requests to perform the transfers in the sequence. Finally, the client sends an [IOCTL_SPB_UNLOCK_CONTROLLER](./spb-ioctls.md#ioctl_spb_unlock_controller-control-code) request to release the lock.
 
-A client might need to implement this type of I/O transfer sequence if a later transfer in the sequence has a dependency on an earlier transfer. For example, the first read might indicate how many more bytes to subsequently read or write. If no such dependency exists, however, the client should send an [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence) request to the SPB controller driver, which can perform the sequence more efficiently.
+A client might need to implement this type of I/O transfer sequence if a later transfer in the sequence has a dependency on an earlier transfer. For example, the first read might indicate how many more bytes to subsequently read or write. If no such dependency exists, however, the client should send an [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence-control-code) request to the SPB controller driver, which can perform the sequence more efficiently.
 
 Between the **IOCTL_SPB_LOCK_CONTROLLER** request that starts a client-implemented sequence, and the **IOCTL_SPB_UNLOCK_CONTROLLER** request that ends the sequence, the only I/O requests that the client can send to the target device are **IRP_MJ_READ** and **IRP_MJ_WRITE** requests. Any violation of this rule is an error.
 
