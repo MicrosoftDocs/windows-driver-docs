@@ -2,6 +2,7 @@
 title: SIO_QUERY_WFP_CONNECTION_REDIRECT_CONTEXT control code
 description: The SIO_QUERY_WFP_CONNECTION_REDIRECT_CONTEXT socket I/O control operation allows a Winsock client to retrieve the redirect context for a redirect record for a redirected connection.
 ms.date: 08/08/2017
+ms.topic: reference
 keywords: 
  -SIO_QUERY_WFP_CONNECTION_REDIRECT_CONTEXT control code Network Drivers Starting with Windows Vista
 ---

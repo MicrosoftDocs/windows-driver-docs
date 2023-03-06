@@ -7,6 +7,7 @@ keywords:
 - netioapi/MIB_ANYCASTIPADDRESS_TABLE
 - netioapi/PMIB_ANYCASTIPADDRESS_TABLE
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # MIB\_ANYCASTIPADDRESS\_TABLE structure

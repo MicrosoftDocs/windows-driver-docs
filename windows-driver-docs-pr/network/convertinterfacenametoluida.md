@@ -5,6 +5,7 @@ keywords:
 - ConvertInterfaceNameToLuidA
 - netioapi/ConvertInterfaceNameToLuidA
 ms.date: 10/18/2022
+ms.topic: reference
 ---
 
 # ConvertInterfaceNameToLuidA function

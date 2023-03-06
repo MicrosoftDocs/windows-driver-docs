@@ -5,6 +5,7 @@ keywords:
 - DeleteIpNetEntry2
 - netioapi/DeleteIpNetEntry2
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # DeleteIpNetEntry2 function

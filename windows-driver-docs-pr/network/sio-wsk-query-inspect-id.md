@@ -2,6 +2,7 @@
 title: SIO_WSK_QUERY_INSPECT_ID
 description: SIO_WSK_QUERY_INSPECT_ID
 ms.date: 07/18/2017
+ms.topic: reference
 keywords:
  - SIO_WSK_QUERY_INSPECT_ID Network Drivers Starting with Windows Vista
 ---

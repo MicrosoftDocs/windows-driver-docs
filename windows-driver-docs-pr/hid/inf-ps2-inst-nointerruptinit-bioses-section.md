@@ -4,7 +4,8 @@ description: INF PS2_Inst.NoInterruptInit.Bioses section
 keywords:
 - INF files WDK non-HID keyboard/mouse
 - PS2_Inst.NoInterruptInit.Bioses section
-ms.date: 10/11/2022
+ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # INF PS2_Inst.NoInterruptInit.Bioses section

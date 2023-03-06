@@ -12,7 +12,8 @@ api_location:
 - Sensors.h
 api_type:
 - HeaderDef
-ms.date: 12/02/2022
+ms.date: 03/02/2023
+ms.topic: reference
 ---
 
 # Event constants
@@ -33,10 +34,10 @@ The sensor platform defines the following sensor event types identifiers.
 
 The sensor platform defines the following **PROPERTYKEY**s to identify the parameters for sensor events.
 
-|Name|Description|
-|--|--|
-|SENSOR_EVENT_PARAMETER_EVENT_ID|Indicates that the **GUID** value in [IPortableDeviceValues](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues) is an event type ID, such as SENSOR_EVENT_DATA_UPDATED.|
-|SENSOR_EVENT_PARAMETER_STATE|Indicates that the unsigned integer value in [IPortableDeviceValues](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues) is a sensor state, such as SENSOR_STATE_READY. To raise a state changed event, call **[ISensorClassExtension::PostStateChange](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange)**. You do not have to explicitly specify SENSOR_EVENT_PARAMETER_STATE to raise the event.|
+| Name | Description |
+|---|---|
+| SENSOR_EVENT_PARAMETER_EVENT_ID | Indicates that the **GUID** value in [IPortableDeviceValues](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues) is an event type ID, such as SENSOR_EVENT_DATA_UPDATED. |
+| SENSOR_EVENT_PARAMETER_STATE | Indicates that the unsigned integer value in [IPortableDeviceValues](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues) is a sensor state, such as SENSOR_STATE_READY. To raise a state changed event, call **[ISensorClassExtension::PostStateChange](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange)**. You do not have to explicitly specify SENSOR_EVENT_PARAMETER_STATE to raise the event. |
 
 ## Requirements
 

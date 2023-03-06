@@ -2,6 +2,7 @@
 title: WSK_RELEASE_SD
 description: WSK_RELEASE_SD
 ms.date: 07/18/2017
+ms.topic: reference
 keywords:
  - WSK_RELEASE_SD Network Drivers Starting with Windows Vista
 ---

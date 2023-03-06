@@ -5,6 +5,7 @@ keywords:
 - InitializeUnicastIpAddressEntry
 - netioapi/InitializeUnicastIpAddressEntry
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # InitializeUnicastIpAddressEntry function

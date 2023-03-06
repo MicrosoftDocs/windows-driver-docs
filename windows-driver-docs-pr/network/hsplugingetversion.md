@@ -4,6 +4,7 @@ description: The HSPluginGetVersion function is exported by the plugin DLL and i
 keywords: 
 - HSPluginGetVersion function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
+ms.topic: reference
 ---
 
 # HSPluginGetVersion function

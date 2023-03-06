@@ -5,6 +5,7 @@ keywords:
 - HOTSPOT_PLUGIN_APIS structure Network Drivers Starting with Windows Vista
 - PHOTSPOT_PLUGIN_APIS structure pointer Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
+ms.topic: reference
 ---
 
 # HOTSPOT\_PLUGIN\_APIS structure

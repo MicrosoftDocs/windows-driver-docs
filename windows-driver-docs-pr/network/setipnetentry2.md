@@ -5,6 +5,7 @@ keywords:
 - SetIpNetEntry2
 - netioapi/SetIpNetEntry2
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # SetIpNetEntry2 function

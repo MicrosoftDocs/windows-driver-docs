@@ -371,6 +371,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/bluetooth/bluetooth-profile-driver-functions.md",
+            "redirect_URL": "/windows-hardware/drivers/ddi/_bltooth/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/bluetooth/bluetooth-low-energy-functions.md",
+            "redirect_URL": "/windows/win32/api/_bltooth/",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/dashboard/add-or-remove-drivers.md",
             "redirect_URL": "/windows-hardware/drivers/dashboard/manage-your-hardware-submissions",
             "redirect_document_id": false

@@ -2,6 +2,7 @@
 title: WSK_TDI_DEVICENAME_MAPPING
 description: WSK_TDI_DEVICENAME_MAPPING
 ms.date: 07/18/2017
+ms.topic: reference
 keywords:
  - WSK_TDI_DEVICENAME_MAPPING Network Drivers Starting with Windows Vista
 ---

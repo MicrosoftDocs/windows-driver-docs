@@ -5,6 +5,7 @@ keywords:
 - CreateIpNetEntry2
 - netioapi/CreateIpNetEntry2
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # CreateIpNetEntry2 function

@@ -5,6 +5,7 @@ keywords:
 - GetIfTable2Ex
 - netioapi/GetIfTable2Ex
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # GetIfTable2Ex function

@@ -7,6 +7,7 @@ keywords:
 - netioapi/MIB_IFSTACK_ROW
 - netioapi/PMIB_IFSTACK_ROW
 ms.date: 10/25/2022
+ms.topic: reference
 ---
 
 # MIB\_IFSTACK\_ROW structure

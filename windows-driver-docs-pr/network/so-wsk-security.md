@@ -2,6 +2,7 @@
 title: SO_WSK_SECURITY
 description: SO_WSK_SECURITY
 ms.date: 07/18/2017
+ms.topic: reference
 keywords:
  - SO_WSK_SECURITY Network Drivers Starting with Windows Vista
 ---

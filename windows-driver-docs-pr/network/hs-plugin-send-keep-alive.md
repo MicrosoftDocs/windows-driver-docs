@@ -4,6 +4,7 @@ description: The HS_PLUGIN_SEND_KEEP_ALIVE function is called by the host to sen
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_SEND_KEEP_ALIVE) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
+ms.topic: reference
 ---
 
 # HS\_PLUGIN\_SEND\_KEEP\_ALIVE function

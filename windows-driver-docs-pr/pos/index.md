@@ -1,8 +1,7 @@
 ---
 title: POS device driver design guide
 description: This section provides design guidance for point-of-service (POS) device drivers.
-ms.date: 08/13/2021
-ms.topic: article
+ms.date: 03/03/2023
 ---
 
 # POS device driver design guide

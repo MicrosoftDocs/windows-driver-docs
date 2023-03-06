@@ -4,6 +4,7 @@ description: The eHS_NETWORK_STATE enumeration indicates whether a network is a 
 keywords: 
  - eHS_NETWORK_STATE enumeration Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
+ms.topic: reference
 ---
 
 # eHS\_NETWORK\_STATE enumeration

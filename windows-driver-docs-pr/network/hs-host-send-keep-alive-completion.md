@@ -4,6 +4,7 @@ description: The HS_HOST_SEND_KEEP_ALIVE_COMPLETION function indicates the succe
 keywords: 
 - typedef DWORD (WINAPI HS_HOST_SEND_KEEP_ALIVE_COMPLETION) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
+ms.topic: reference
 ---
 
 # HS\_HOST\_SEND\_KEEP\_ALIVE\_COMPLETION function

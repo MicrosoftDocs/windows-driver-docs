@@ -2,6 +2,7 @@
 title: SIO_ADDRESS_LIST_QUERY
 description: SIO_ADDRESS_LIST_QUERY
 ms.date: 08/08/2017
+ms.topic: reference
 keywords: 
  -SIO_ADDRESS_LIST_QUERY Network Drivers Starting with Windows Vista
 ---

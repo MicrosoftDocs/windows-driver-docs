@@ -3,7 +3,7 @@ title: NetAdapterCx receive side scaling (RSS)
 description: NetAdapterCx receive side scaling (RSS)
 keywords:
 - WDF Network Adapter Class Extension Receive Side Scaling, NetAdapterCx receive side scaling, NetAdapterCx RSS, NetAdapter RSS
-ms.date: 07/13/2018
+ms.date: 02/01/2023
 ---
 
 # NetAdapterCx receive side scaling (RSS)
@@ -20,9 +20,9 @@ RSS in NetAdapterCx focuses on ease of configuration, simplicity of enablement a
 2. The driver's datapath queues must be created and ready to accept requests.
 3. The driver must be in the *D0* power state.
 
-The design of RSS in NetAdapterCx guarantees that the system will not call a client's RSS callbacks and enable RSS until the very end of the [power-up sequence](power-up-sequence-for-a-netadaptercx-client-driver.md). Clients do not have to manage indirection table move requests or handle other RSS events until everything they need is ready. 
+The design of RSS in NetAdapterCx guarantees that the system won't call a client's RSS callbacks and enable RSS until the very end of the [power-up sequence](power-up-sequence-for-a-netadaptercx-client-driver.md). Clients don't have to manage indirection table move requests or handle other RSS events until everything they need is ready. 
 
-Later, when the driver is unloading, NetAdapterCx will not call RSS callbacks after datapath queues have been destroyed during the [power-down sequence](power-down-sequence-for-a-netadaptercx-client-driver.md). Since datapath queues are torn down as the first step during power-down, this means that clients do not have to handle possible RSS events at any other stage during power-down.
+Later, when the driver is unloading, NetAdapterCx won't call RSS callbacks after datapath queues have been destroyed during the [power-down sequence](power-down-sequence-for-a-netadaptercx-client-driver.md). Since datapath queues are torn down as the first step during power-down, this means that clients don't have to handle possible RSS events at any other stage during power-down.
 
 ## Setting RSS capabilities
 
@@ -70,3 +70,19 @@ While RSS is running on the system, upper layer protocol drivers monitor process
 In this callback, you move each entry in your NIC's indirection table to the specified receive queue. Each [NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRY](/windows-hardware/drivers/ddi/netreceivescaling/ns-netreceivescaling-_net_adapter_receive_scaling_indirection_entry) structure in the **NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRIES** array contains the hash index for that entry in the table, the new receive queue to which to assign the entry, and a status field indicating if that individual move succeeded or not. 
 
 The method of assigning index entries to hardware receive queues depends on the design of your NIC and the number of receive queues it has. For more information and a code example, see *[EvtNetAdapterReceiveScalingSetIndirectionEntries](/windows-hardware/drivers/ddi/netreceivescaling/nc-netreceivescaling-evt_net_adapter_receive_scaling_set_indirection_entries)*.
+
+## Heterogeneous CPU support
+
+> [!IMPORTANT]
+> Heterogeneous CPU Support is a prerelease feature which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+Heterogenous CPU systems use multiple types of cores that have different clock speeds and functionalities. Compared to homogeneous-multiprocessor systems where every core is identical to one another, heterogeneous CPU systems can better adjust to dynamic computing loads and use less energy.
+
+Starting in WDK preview version 25197, NetAdapterCx offers heterogenous CPU system support by efficiently utilizing the various core types. While RSS is running, the system decides which processor to use depending on the traffic workload received by the client driver. When there's less traffic being received, smaller, more power efficient cores can handle the traffic. When there's more traffic, larger, more performant cores are required to continuously poll the packets being received.
+
+To opt in to heterogenous system support, the system administrator must set the **\*RSSProfile** [standardized INF keyword](../network/standardized-inf-keywords-for-rss.md) to **NdisRssProfileBalanced**. This is the default profile for heterogenous systems. To allow the system to decide the best cores to use, you can't set RSS advanced keywords. 
+
+The other RSS profiles are also supported for heterogenous systems. If you want to control advanced settings like the RSS base processor number and RSS max processor number on the system, you should use a different RSS profile.
+
+You can also use **NdisRssProfileBalanced** on a homogeneous CPU system. In this case, the system decides which processors to use for RSS.
+
