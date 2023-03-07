@@ -36,7 +36,7 @@ PMB consists of the following components:
 <span id="User-Mode_Power_Service__UMPS_"></span><span id="user-mode_power_service__umps_"></span><span id="USER-MODE_POWER_SERVICE__UMPS_"></span>User-Mode Power Service (UMPS)  
 The UMPS is a user-mode service that exposes the system's power metering and budgeting information by using a set of WMI classes. This information is used by applications, such as the Windows Performance Monitor (PerfMon), for power management and reporting.
 
-The PMB WMI classes are provided by the Power WMI Provider component of the UMPS. These WMI classes comply with version *1.1.0 of the Distributed Management Task Force (DMTF) Power Supply Profile*. For more information, see to the [DMTF Power Supply Profile](https://go.microsoft.com/fwlink/p/?linkid=145048).
+The PMB WMI classes are provided by the Power WMI Provider component of the UMPS. These WMI classes comply with version *1.1.0 of the Distributed Management Task Force (DMTF) Power Supply Profile*. For more information, see to the [DMTF Power Supply Profile](https://www.dmtf.org/sites/default/files/standards/documents/DSP1015_1.1.0.pdf).
 
 For more information about UMPS, see [User-Mode Power Service](user-mode-power-service.md).
 

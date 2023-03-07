@@ -1,23 +1,15 @@
 ---
-title: SPB I/O Requests
+title: SPB I/O requests
 description: These IOCTLs are sent by a client (peripheral driver) handled by controller driver.
-ms.date: 11/29/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
 
-# SPB I/O Requests
+# SPB I/O requests
 
-The system-supplied CTL_CODE macro, which is described in Defining I/O Control Codes, is used to define IOCTL_SPB_* control codes in Spb.h.
+The system-supplied CTL_CODE macro, which is described in [Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md), is used to define IOCTL_SPB_\* control codes in Spb.h.
 
-|Topic | Description|
-|------|:----------------|
-|[IOCTL_SPB_EXECUTE_SEQUENCE](#ioctl_spb_execute_sequence) | The IOCTL_SPB_EXECUTE_SEQUENCE I/O control code enables a client (peripheral driver) of the SPB controller driver to perform a sequence of transfers (reads and writes) as a single, atomic operation with one I/O request. The designated device on the bus is the target for all transfers in the sequence.|
-|[IOCTL_SPB_FULL_DUPLEX](#ioctl_spb_full_duplex-control-code) | The IOCTL_SPB_FULL_DUPLEX control code is used by a client (peripheral driver) to request a full-duplex I/O operation. Full-duplex I/O operations are supported by controllers for buses such as SPI that can simultaneously read and write data.|
-|[IOCTL_SPB_LOCK_CONNECTION](#ioctl_spb_lock_connection-control-code) | The IOCTL_SPB_LOCK_CONNECTION control code is used by a client (peripheral driver) to acquire the connection lock on an SPB-connected target device that is shared with another client. While a client holds the connection lock, this client has exclusive access to the device.|
-|[IOCTL_SPB_LOCK_CONTROLLER](#ioctl_spb_lock_controller-control-code) | The IOCTL_SPB_LOCK_CONTROLLER control code is used by a client (peripheral driver) to lock the SPB controller. While the controller is locked, the client has exclusive use of the bus to access the specified target device for the lock.
-|[IOCTL_SPB_UNLOCK_CONNECTION](#ioctl_spb_unlock_connection-control-code) | The I/O control code is used by a client (peripheral driver) to release the connection lock on an SPB-connected target device that is shared with another client. The client previously sent an IOCTL_SPB_LOCK_CONNECTION request to acquire exclusive access to the device.|
-|[IOCTL_SPB_UNLOCK_CONTROLLER](#ioctl_spb_unlock_controller-control-code) |The IOCTL_SPB_UNLOCK_CONTROLLER I/O control code is used by a client (peripheral driver) to unlock the SPB controller. The client previously locked the controller to gain exclusive use of the bus to access a target device on the bus.|
-
-## IOCTL_SPB_EXECUTE_SEQUENCE
+## IOCTL_SPB_EXECUTE_SEQUENCE control code
 
 The IOCTL_SPB_EXECUTE_SEQUENCE I/O control code enables a client (peripheral driver) of the SPB controller driver to perform a sequence of transfers (reads and writes) as a single, atomic operation with one I/O request. The designated device on the bus is the target for all transfers in the sequence.
 
@@ -27,15 +19,15 @@ The client sends this I/O control request to the file object for the target devi
 
 An SPB controller driver registers an EvtSpbControllerIoSequence callback function to perform the bus transfers for an I/O transfer sequence. The SPB framework extension (SpbCx) calls this function to pass an IOCTL_SPB_EXECUTE_SEQUENCE request to the SPB controller driver for processing.
 
-### Input Buffer
+### IOCTL_SPB_EXECUTE_SEQUENCE input buffer
 
 The input buffer is an SPB_TRANSFER_LIST structure, which contains a list of pointers to the client's data buffers. This list contains a data buffer for each transfer (read or write) in the I/O transfer sequence.
 
-### Input Buffer Length
+### IOCTL_SPB_EXECUTE_SEQUENCE input buffer length
 
 The size of an SPB_TRANSFER_LIST structure.
 
-### Status block
+### IOCTL_SPB_EXECUTE_SEQUENCE status block
 
 If the operation is successful, the controller driver sets the Status member to STATUS_SUCCESS, and sets the Information member to the total number of bytes transferred during the sequence.
 
@@ -46,7 +38,7 @@ If the controller driver starts to process the I/O request, but an error occurs 
 ## IOCTL_SPB_FULL_DUPLEX control code
 
 The IOCTL_SPB_FULL_DUPLEX control code is used by a client (peripheral driver) to request a full-duplex I/O operation. Full-duplex I/O operations are supported by controllers for buses such as SPI that can simultaneously read and write data.
-The system-supplied CTL_CODE macro, which is described in Defining I/O Control Codes, is used to define IOCTL_SPB_FULL_DUPLEX as follows.
+The system-supplied CTL_CODE macro, which is described in [Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md), is used to define IOCTL_SPB_FULL_DUPLEX as follows.
 
 The user-mode driver or kernel-mode driver for a device on the bus sends this I/O control request to the file object for the target device.
 
@@ -54,13 +46,13 @@ This IOCTL is supported only by SPB controller drivers for buses, such as SPI, t
 
 The write and read buffers for the full-duplex transfer are described by an SPB_TRANSFER_LIST structure. This structure must use the following format:
 
-* The array of SPB_TRANSFER_LIST_ENTRY structures contains exactly two elements. The first element describes the write buffer (Direction = SpbTransferDirectionToDevice). The second element describes the read buffer (Direction = SpbTransferDirectionFromDevice).
-* The DelayInUs members of the two SPB_TRANSFER_LIST_ENTRY structures must be zero. The buffer formats for the write buffer and read buffer can be any of the following:
+- The array of SPB_TRANSFER_LIST_ENTRY structures contains exactly two elements. The first element describes the write buffer (Direction = SpbTransferDirectionToDevice). The second element describes the read buffer (Direction = SpbTransferDirectionFromDevice).
+- The DelayInUs members of the two SPB_TRANSFER_LIST_ENTRY structures must be zero. The buffer formats for the write buffer and read buffer can be any of the following:
 
-  * SpbTransferBufferFormatSimple
-  * SpbTransferBufferFormatList
-  * SpbTransferBufferFormatSimpleNonPaged
-  * SpbTransferBufferFormatMdl
+  - SpbTransferBufferFormatSimple
+  - SpbTransferBufferFormatList
+  - SpbTransferBufferFormatSimpleNonPaged
+  - SpbTransferBufferFormatMdl
 
   The last two formats in the preceding list can be used only by kernel-mode clients. The formats for the write and read buffers are not required to be the same. For more information about these buffer formats, see SPB_TRANSFER_BUFFER_FORMAT.
 
@@ -72,16 +64,16 @@ If an SPB controller driver registers an EvtSpbControllerIoOther callback functi
 
 For more information about how an SPB controller driver implements support for this IOCTL, see Handling IOCTL_SPB_FULL_DUPLEX Requests.
 
-### Input Buffer
+### IOCTL_SPB_FULL_DUPLEX input buffer
 
 A pointer to an SPB_TRANSFER_LIST structure that contains pointers to the client's input and output data buffers. This structure contains a Transfers array of exactly two elements. The first element describes the buffer that contains the data to write to the device. The second element describes the buffer used to hold the data read from the device.
 For more information about how an SPB controller driver implements a custom I/O control (IOCTL) request that uses SPB_TRANSFER_LIST structures to describe buffers, see Using the SPB_TRANSFER_LIST Structure for Custom IOCTLs.
 
-### Input Buffer Length
+### IOCTL_SPB_FULL_DUPLEX input buffer length
 
 The size of an SPB_TRANSFER_LIST structure.
 
-### Status block
+### IOCTL_SPB_FULL_DUPLEX status block
 
 If the operation is successful, the controller driver sets the Status member to STATUS_SUCCESS, and sets the Information member to the total number of bytes transferred (bytes read plus bytes written) during the full-duplex operation.
 
@@ -90,7 +82,7 @@ This operation might fail for various reasons, which can include low resources, 
 ## IOCTL_SPB_LOCK_CONNECTION control code
 
 The IOCTL_SPB_LOCK_CONNECTION control code is used by a client (peripheral driver) to acquire the connection lock on an SPB-connected target device that is shared with another client. While a client holds the connection lock, this client has exclusive access to the device.
-The system-supplied CTL_CODE macro, which is described in Defining I/O Control Codes, is used to define IOCTL_SPB_LOCK_CONNECTION as follows.
+The system-supplied CTL_CODE macro, which is described in [Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md), is used to define IOCTL_SPB_LOCK_CONNECTION as follows.
 
 The IOCTL_SPB_LOCK_CONNECTION and IOCTL_SPB_UNLOCK_CONNECTION requests acquire and release the connection lock on a target device that is attached to a simple peripheral bus. Most clients do not use these I/O control requests. These requests are used only if two clients share access to the same target device. For more information, see SPB Connection Locks.
 
@@ -100,7 +92,7 @@ A client can simultaneously hold a connection lock on the target device and a co
 
 A connection lock is automatically terminated if an IRP_MJ_CLEANUP request is sent to a target device while the connection is locked on the device. A cleanup request is sent to a target device when a client closes its file handle to the device.
 
-### Status block
+### IOCTL_SPB_LOCK_CONNECTION status block
 
 If the operation is successful, the Status member is set to STATUS_SUCCESS.
 
@@ -111,7 +103,7 @@ If the client already holds either the connection lock on the target device or t
 ## IOCTL_SPB_LOCK_CONTROLLER control code
 
 The IOCTL_SPB_LOCK_CONTROLLER control code is used by a client (peripheral driver) to lock the SPB controller. While the controller is locked, the client has exclusive use of the bus to access the specified target device for the lock.
-The system-supplied CTL_CODE macro, which is described in Defining I/O Control Codes, is used to define IOCTL_SPB_LOCK_CONTROLLER as follows.
+The system-supplied CTL_CODE macro, which is described in [Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md), is used to define IOCTL_SPB_LOCK_CONTROLLER as follows.
 
 To obtain exclusive use of the bus to access a target device, a client (peripheral driver) sends this IOCTL to the file object for the target. After this IOCTL completes, the controller is locked, and all I/O transfers (read or write) on the bus access the designated target. Between transfers, the controller keeps the target device selected but stops the clock.
 
@@ -123,7 +115,7 @@ SPB controllers are not required to support IOCTL_SPB_LOCK_CONTROLLER and IOCTL_
 
 If an SPB controller driver registers an EvtSpbControllerLock callback function, the SPB framework extension (SpbCx) calls this function to pass an IOCTL_SPB_LOCK_CONTROLLER request to the SPB controller driver for processing.
 
-### Status block
+### IOCTL_SPB_LOCK_CONTROLLER status block
 
 If the operation is successful, the Status member is set to STATUS_SUCCESS.
 This IOCTL can return an error status for a number of reasons, including failure to configure the controller to operate in exclusive-access mode. In this mode, the controller keeps the target device selected so that it is the exclusive target for all I/O transfers on the bus. The controller remains in this mode until it is unlocked.
@@ -138,7 +130,7 @@ After a client (peripheral driver) sends a IOCTL_SPB_LOCK_CONNECTION request to 
 
 The client sends an IOCTL_SPB_UNLOCK_CONNECTION request to release the connection lock to the target device when the client no longer requires exclusive access to the device. The connection must be unlocked so that the other client can access the device.
 
-### Status block
+### IOCTL_SPB_UNLOCK_CONNECTION status block
 
 If the operation is successful, the Status member is set to STATUS_SUCCESS.
 
@@ -156,7 +148,8 @@ SPB controllers are not required to support IOCTL_SPB_LOCK_CONTROLLER and IOCTL_
 
 The SPB framework extension (SpbCx) calls an SPB controller driver's optional EvtSpbControllerUnlock callback function to pass an IOCTL_SPB_LOCK_CONTROLLER request to the SPB controller driver for processing.
 
-## Status block
+### IOCTL_SPB_UNLOCK_CONTROLLER status block
 
 If the operation is successful, the Status member is set to STATUS_SUCCESS.
+
 This IOCTL can fail only if it is sent by a client that does not have the controller locked for exclusive access to the designated target.

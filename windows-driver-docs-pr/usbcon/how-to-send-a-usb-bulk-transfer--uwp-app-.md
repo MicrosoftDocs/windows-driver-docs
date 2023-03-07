@@ -1,7 +1,7 @@
 ---
 title: How to send a USB bulk transfer request (UWP app)
 description: Learn about a USB bulk transfer and how to initiate a transfer request from your UWP app that communicates with a USB device.
-ms.date: 01/31/2023
+ms.date: 03/06/2023
 ---
 
 # How to send a USB bulk transfer request (UWP app)
@@ -28,7 +28,7 @@ To initiate a transfer request, you must obtain a reference to the bulk pipe obj
 | If you want to... | Use this property value |
 |---|---|
 | Send data to a bulk pipe, obtain a reference to **[UsbBulkOutPipe](/uwp/api/windows.devices.usb.usbbulkoutpipe)**. | **[UsbDevice.DefaultInterface.BulkOutPipes[n]](/uwp/api/windows.devices.usb.usbinterface.bulkoutpipes)** if your device configuration exposes one USB interface.<br/><br/>**[UsbDevice.Configuration.UsbInterfaces[m].BulkOutPipes[n]](/uwp/api/windows.devices.usb.usbinterface.bulkoutpipes)** for enumerating bulk OUT pipes in multiple interfaces supported by the device.<br/><br/>**[UsbInterface.InterfaceSettings[m].BulkOutEndpoints[n].Pipe](/uwp/api/windows.devices.usb.usbbulkoutendpointdescriptor.pipe)** for enumerating bulk OUT pipes defined by settings in an interface.<br/><br/>**[UsbEndpointDescriptor.AsBulkOutEndpointDescriptor.Pipe](/uwp/api/windows.devices.usb.usbbulkoutendpointdescriptor.pipe)** for getting the pipe object from the endpoint descriptor for the bulk OUT endpoint. |
-| Receive data from a bulk pipe, you can obtain the **[UsbBulkInPipe](/uwp/api/windows.devices.usb.usbbulkinpipe)** object. | **[UsbDevice.DefaultInterface.BulkInPipes[n]](/uwp/api/windows.devices.usb.usbinterface.bulkinpipes)** if your device configuration exposes one USB interface.<br/><br/>**[UsbDevice.Configuration.UsbInterfaces[m].BulkInPipes[n]](/uwp/api/windows.devices.usb.usbinterface.bulkinpipes)** for enumerating bulk IN pipes in multiple interfaces supported by the device.<br/><br/>**[UsbInterface.InterfaceSettings[m].BulkInEndpoints [n].Pipe](/uwp/api/windows.devices.usb.usbbulkinendpointdescriptor.pipe)** for enumerating bulk IN pipes defined by settings in an interface.<br/><br/>**[UsbEndpointDescriptor.AsBulkInEndpointDescriptor.Pipe](/uwp/api/windows.devices.usb.usbbulkinendpointdescriptor.pipe)** for getting the pipe object from the endpoint descriptor for the bulk IN endpoint. |
+| Receive data from a bulk pipe, you can obtain the **[UsbBulkInPipe](/uwp/api/windows.devices.usb.usbbulkinpipe)** object. | **[UsbDevice.DefaultInterface.BulkInPipes[n]](/uwp/api/windows.devices.usb.usbinterface.bulkinpipes)** if your device configuration exposes one USB interface.<br/><br/>**[UsbDevice.Configuration.UsbInterfaces[m].BulkInPipes[n]](/uwp/api/windows.devices.usb.usbinterface.bulkinpipes)** for enumerating bulk IN pipes in multiple interfaces supported by the device.<br/><br/>**[UsbInterface.InterfaceSettings[m].BulkInEndpoints[n].Pipe](/uwp/api/windows.devices.usb.usbbulkinendpointdescriptor.pipe)** for enumerating bulk IN pipes defined by settings in an interface.<br/><br/>**[UsbEndpointDescriptor.AsBulkInEndpointDescriptor.Pipe](/uwp/api/windows.devices.usb.usbbulkinendpointdescriptor.pipe)** for getting the pipe object from the endpoint descriptor for the bulk IN endpoint. |
 
 > [!NOTE]
 > Should be in the active setting or requires a null check.

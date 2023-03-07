@@ -12,7 +12,7 @@ If an SPB controller driver supports I/O requests for full-duplex transfers, the
 
 ## Buffer Requirements
 
-An [IOCTL_SPB_FULL_DUPLEX](./spb-ioctls.md#ioctl_spb_full_duplex-control-code) request is formatted the same as an [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence) request, but with these constraints:
+An [IOCTL_SPB_FULL_DUPLEX](./spb-ioctls.md#ioctl_spb_full_duplex-control-code) request is formatted the same as an [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence-control-code) request, but with these constraints:
 
 * The [SPB_TRANSFER_LIST](/windows-hardware/drivers/ddi/spb/ns-spb-spb_transfer_list) structure in the request must contain exactly two entries. The first entry describes a buffer that contains data to write to the device. The second entry describes a buffer used to hold data read from the device.
 * Each [SPB_TRANSFER_LIST_ENTRY](/windows-hardware/drivers/ddi/spb/ns-spb-spb_transfer_list_entry) structure in the transfer list must specify a **DelayInUs** value of zero.
@@ -31,7 +31,7 @@ If the read buffer is shorter than the write buffer, the count value in the **In
 
 ## Parameter Checking
 
-Although the [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence) and **IOCTL_SPB_FULL_DUPLEX** requests have similar formats, they are handled differently by the SPB framework extension (SpbCx). For the **IOCTL_SPB_EXECUTE_SEQUENCE** request, SpbCx validates the parameter values in the request, and captures the request's buffers in the process context of the request originator. SpbCx passes **IOCTL_SPB_EXECUTE_SEQUENCE** requests to the SPB controller driver through the driver's [EvtSpbControllerIoSequence](/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_controller_sequence) callback function, which is dedicated to these requests.
+Although the [IOCTL_SPB_EXECUTE_SEQUENCE](./spb-ioctls.md#ioctl_spb_execute_sequence-control-code) and **IOCTL_SPB_FULL_DUPLEX** requests have similar formats, they are handled differently by the SPB framework extension (SpbCx). For the **IOCTL_SPB_EXECUTE_SEQUENCE** request, SpbCx validates the parameter values in the request, and captures the request's buffers in the process context of the request originator. SpbCx passes **IOCTL_SPB_EXECUTE_SEQUENCE** requests to the SPB controller driver through the driver's [EvtSpbControllerIoSequence](/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_controller_sequence) callback function, which is dedicated to these requests.
 
 In contrast, SpbCx treats the **IOCTL_SPB_FULL_DUPLEX** request as a custom, driver-defined IOCTL request. SpbCx passes **IOCTL_SPB_FULL_DUPLEX** requests to the SPB controller driver through the driver's [EvtSpbControllerIoOther](/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_controller_other) callback function, which also handles any custom IOCTL requests that the driver supports. SpbCx does no parameter checking or buffer capture for these requests. The driver is responsible for any parameter checking or buffer capture that might be required for the IOCTL requests that the driver receives through its *EvtSpbControllerIoOther* function. To enable buffer capture, the driver must supply an [EvtIoInCallerContext](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_io_in_caller_context) callback function when the driver registers its *EvtSpbControllerIoOther* function. For more information, see [Using the SPB_TRANSFER_LIST Structure for Custom IOCTLs](./using-the-spb-transfer-list-structure.md).
 
