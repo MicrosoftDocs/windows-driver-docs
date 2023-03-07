@@ -24,7 +24,7 @@ In both methods, the reflector can be an upper filter, a lower filter, or the se
 
 ## Referencing WudfRd.inf (Windows 11 and later)
 
-You can find a sample INF that uses this technique at [echoum.inx](https://github.com/microsoft/Windows-driver-samples/blob/develop/general/echo/umdf2/driver/AutoSync/echoum.inx).  Alternatively, use one of the following snippet.
+You can find a sample INF that uses this technique at [echoum.inx](https://github.com/microsoft/Windows-driver-samples/blob/develop/general/echo/umdf2/driver/AutoSync/echoum.inx).  Alternatively, use one of the following snippets.
 
 To install the WudfRd service as the function driver for the device:
 
@@ -117,7 +117,7 @@ HKR,,"LowerFilters",0x00010008,"WUDFRd" ; FLG_ADDREG_TYPE_MULTI_SZ | FLG_ADDREG_
 
 In this case, the mshidumdf service is associated with the FDO for the device stack, and the reflector is a lower filter.
 
-## Providing a service-install-section
+### Providing a service-install-section
 
 
 The **AddService** directive references an service-install-section similar to the following code example. The **ServiceType** entry specifies 1 or 0x00000001, which indicates that the INF installs support for one or more devices. The **StartType** entry specifies when to start the driver. The **ErrorControl** entry specifies the level of error control that the driver provides. The **ServiceBinary** entry specifies the path to the binary (the reflector) for the service.
