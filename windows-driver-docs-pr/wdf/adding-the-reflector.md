@@ -18,7 +18,7 @@ Starting in Windows 11, the recommended way to add the reflector (WUDFRd.sys) to
 > [!NOTE]
 > WudfRd.inf is included only with Windows 11 and later. It is located in the `\windows\inf` folder.
 
-On Windows 10 and earlier, to add the reflector (WUDFRd.sys), the INF file of a UMDF driver must include an [**AddService directive**](../install/inf-addservice-directive.md) in an [**INF DDInstall.Services section**](../install/inf-ddinstall-services-section.md). While this method still works on Windows 11 and later, it is not recommended.
+On Windows 10 and earlier, to add the reflector (WUDFRd.sys), the INF file of a UMDF driver must include an [**AddService directive**](../install/inf-addservice-directive.md) in an [**INF DDInstall.Services section**](../install/inf-ddinstall-services-section.md) as well as a service-install-section. While this method still works on Windows 11 and later, it is not recommended.
 
 In both methods, the reflector can be an upper filter, a lower filter, or the service for the device, depending on the configuration of the user-mode stack.
 
