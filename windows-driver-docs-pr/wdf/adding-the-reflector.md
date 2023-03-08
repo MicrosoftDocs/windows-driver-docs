@@ -16,7 +16,7 @@ ms.date: 03/07/2023
 Starting in Windows 11, the recommended way to add the reflector (WUDFRd.sys) to the kernel-mode device stack is to reference the system-supplied WudfRd.inf file in the INF file of a UMDF driver.
 
 > [!NOTE]
-> WudfRd.inf is included only with Windows 11 and later. It is located in the `\windows\inf` folder.
+> WudfRd.inf is included only with Windows 11 and later.
 
 On Windows 10 and earlier, to add the reflector (WUDFRd.sys), the INF file of a UMDF driver must include an [**AddService directive**](../install/inf-addservice-directive.md) in an [**INF DDInstall.Services section**](../install/inf-ddinstall-services-section.md) as well as a service-install-section. While this method still works on Windows 11 and later, it is not recommended.
 
