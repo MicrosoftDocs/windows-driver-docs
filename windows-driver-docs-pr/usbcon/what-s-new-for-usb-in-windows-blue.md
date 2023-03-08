@@ -12,7 +12,7 @@ Here are the new features and improvements for Universal Serial Bus (USB) in Win
 
 Windows Runtime provides a new namespace: [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb) (see [Writing apps for USB devices (UWP apps using C#/VB/C++)](/previous-versions/windows/apps/dn263144(v=win.10)) for a brief overview). By using the namespace, you can write a UWP app that talks to a custom USB device.
 
-For more information, see these topics:
+For more information, see these articles:
 
 - [Talking to USB devices, start to finish (UWP app)](talking-to-usb-devices-start-to-finish.md)
 - [How to add USB device capabilities to the app manifest](updating-the-app-manifest-with-usb-device-capabilities.md)
@@ -31,15 +31,15 @@ These samples demonstrate the use of the [**Windows.Devices.Usb**](/uwp/api/Wind
 | [USB CDC Control sample](/samples/browse/) | This sample shows how to communicate with a USB CDC (Communications Device Class) device and sends and receives data through serial ports, such as a USB serial converter cable. |
 | [Firmware Update USB Device sample](/samples/browse/) | This sample shows how a UWP app can update the firmware of a USB device. The update operation runs as a background task. |
 
-## Microsoft OS 2.0 descriptors for improved device enumerations 
+## Microsoft OS 2.0 descriptors for improved device enumerations
 
 Microsoft OS 2.0 descriptors improve device identification and driver installation experience.
 
 MS OS 2.0 descriptors specification provides these improvements:
 
-- Defines a new BOS device capability descriptor to allow devices to return platform-specific properties. The BOS descriptor is a standard descriptor defined by the standard USB specification for USB versions 2.1 and greater, so retrieval is a normal and an expected enumeration step that should not lead to unintended device behavior.
+- Defines a new BOS device capability descriptor to allow devices to return platform-specific properties. The BOS descriptor is a standard descriptor defined by the standard USB specification for USB versions 2.1 and greater, so retrieval is a normal and an expected enumeration step that shouldn't lead to unintended device behavior.
 - Allows descriptors to be scoped to an entire device, a specific configuration, or a function.
-- Allows devices to return multiple descriptor sets where each set applies to a specific range of Windows version. This enables devices to enumerate differently depending on the version of Windows on the system to which it is attached.
+- Allows devices to return multiple descriptor sets where each set applies to a specific range of Windows version. This enables devices to enumerate differently depending on the version of Windows on the system to which it's attached.
 - Faster Resume: Device can identify its resume time, which reduces time from suspend state.
 
 For information about the specification, see [Microsoft OS Descriptors for USB Devices](microsoft-defined-usb-descriptors.md).
@@ -63,8 +63,8 @@ The user-mode DLL, Winusb.dll, exposes these [WinUSB functions](using-winusb-api
 
 In Windows 8.1, the performance and reliability of both USB 3.0 and 2.0 driver stacks have been improved.
 
-- For newer platforms that support InstantGo, the overall system power consumption in S0 can be extremely low. For such a system, even the few milliwatts that a USB device consumes while in selective suspend, starts to matter. With the goal of optimizing power for the new systems, we have implemented D3cold for USB 2.0 stack and Usbccgp.sys and improved Windows 8 implementation of USB 3.0 driver stack.
-- Better power management when no driver is installed. The USB driver stack now suspend a USB port that causes the hub to suspend if it's the only device connected to the controller.
+- For newer platforms that support InstantGo, the overall system power consumption in S0 can be low. For such a system, even the few milliwatts that a USB device consumes while in selective suspend, starts to matter. With the goal of optimizing power for the new systems, we have implemented D3cold for USB 2.0 stack and Usbccgp.sys and improved Windows 8 implementation of USB 3.0 driver stack.
+- Better power management when no driver is installed. The USB driver stack now suspends a USB port that causes the hub to suspend if it's the only device connected to the controller.
 - DPC performance has been improved to avoid watchdog timeout crashes.
 - Devices can now recover faster than the default 10 millisecond specified in the USB 2.0 specification. Also, the host controller driver asserts resume signaling for less than the 20 milliseconds required in the USB 2.0 specification.
 - USB 3.0 driver stack is now more reliable when performing control, bulk, and isochronous data transfers.
@@ -81,7 +81,7 @@ In Windows 8.1, the performance and reliability of both USB 3.0 and 2.0 driver 
     - [USB 3.0 Suspend Test](/previous-versions/windows/hardware/hck/jj125210(v=vs.85))
 - MUTT and SuperMUTT devices are now USB-IF compliance devices. The devices and the accompanying software package are integrated in to the HCK suite of USB tests. They provide automated testing that can be used during the development cycle of USB controllers, devices and systems, especially stress testing.
 
-    MUTT hardware can be purchased from [JJG Technologies](http://www.jjgtechnologies.com/mutt.htm). The device does not have installed firmware installed. To install firmware, download the MUTT software package from [this Web site](./index.md) and run MUTTUtil.exe. For more information, see the documentation included with the package.
+    MUTT hardware can be purchased from [JJG Technologies](http://www.jjgtechnologies.com/mutt.htm). The device doesn't have installed firmware installed. To install firmware, download the MUTT software package from [this Web site](./index.md) and run MUTTUtil.exe. For more information, see the documentation included with the package.
 
 ## Improved USB diagnostic tools and debugger extensions
 
