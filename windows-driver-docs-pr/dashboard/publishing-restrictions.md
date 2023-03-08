@@ -103,7 +103,7 @@ Examples of these restrictions include, but are not limited to the list in the f
 <tr class="odd">
 <td><p>Attestation signed drivers</p></td>
 <td><p>Attestation signed drivers must target a test audience by setting one of the following criteria:</p>
-<td><p>CoDev</p>
+<p>CoDev</p>
 <p>Restricted Audience\Test Registry Key</p></td>
 </tr>
 </tbody>
