@@ -2,7 +2,7 @@
 title: Publishing restrictions
 description: The following items are restricted during publication. You can still create a shipping label for them, but the request will require additional Microsoft review.
 ms.topic: article
-ms.date: 04/20/2017
+ms.date: 03/8/2023
 ---
 
 # Publishing restrictions
@@ -99,6 +99,12 @@ Examples of these restrictions include, but are not limited to the list in the f
 <p>Hid\irdevice</p>
 <p>Storage\VolumeSnapshot</p>
 <p>Storage\Volume</p></td>
+</tr>
+<tr class="odd">
+<td><p>Attestation signed drivers</p></td>
+<td><p>Attestation signed drivers must target a test audience by setting one of the following criteria:</p>
+<td><p>CoDev</p>
+<p>Restricted Audience\Test Registry Key</p></td>
 </tr>
 </tbody>
 </table>
