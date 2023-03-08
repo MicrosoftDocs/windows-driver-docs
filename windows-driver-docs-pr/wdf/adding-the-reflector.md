@@ -8,17 +8,94 @@ keywords:
 - function drivers WDK UMDF
 - filter drivers WDK UMDF
 - loading reflectors WDK UMDF
-ms.date: 04/20/2017
+ms.date: 03/07/2023
 ---
 
 # Specifying the Reflector in an INF File
 
+Starting in Windows 11, the recommended way to add the reflector (WUDFRd.sys) to the kernel-mode device stack is to reference the system-supplied WudfRd.inf file in the INF file of a UMDF driver.
 
-To add the reflector (WUDFRd.sys) to the kernel-mode device stack, the INF file of a UMDF driver must include an [**AddService directive**](../install/inf-addservice-directive.md) in an [**INF DDInstall.Services section**](../install/inf-ddinstall-services-section.md). The reflector can be an upper filter, a lower filter, or the service for the device, depending on the configuration of the user-mode stack.
+> [!NOTE]
+> WudfRd.inf is included only with Windows 11 and later. It is located in the `\windows\inf` folder.
+
+On Windows 10 and earlier, to add the reflector (WUDFRd.sys), the INF file of a UMDF driver must include an [**AddService directive**](../install/inf-addservice-directive.md) in an [**INF DDInstall.Services section**](../install/inf-ddinstall-services-section.md) as well as a service-install-section. While this method still works on Windows 11 and later, it is not recommended.
+
+In both methods, the reflector can be an upper filter, a lower filter, or the service for the device, depending on the configuration of the user-mode stack.
+
+## Referencing WudfRd.inf (Windows 11 and later)
+
+You can find a sample INF that uses this technique at [echoum.inx](https://github.com/microsoft/Windows-driver-samples/blob/develop/general/echo/umdf2/driver/AutoSync/echoum.inx).  Alternatively, use one of the following snippets.
+
+To install the WudfRd service as the function driver for the device:
+
+```inf
+[DDInstall]
+Include=WUDFRD.inf
+Needs=WUDFRD.NT
+; also include any existing DDInstall directives
+
+[DDInstall.HW]
+Include=WUDFRD.inf
+Needs=WUDFRD.NT.HW
+; also include any existing DDInstall.HW directives
+
+[DDInstall.Services]
+Include=WUDFRD.inf
+Needs=WUDFRD.NT.Services
+; also include any existing any DDInstall.Services directives
+```
+
+To install the WudfRd service as an upper filter driver:
+
+```inf
+[DDInstall] 
+Include=WUDFRD.inf
+Needs=WUDFRD_UpperFilter.NT
+; also include any existing DDInstall directives
+
+[DDInstall.HW]
+Include=WUDFRD.inf
+Needs=WUDFRD_UpperFilter.NT.HW
+; also include any existing DDInstall.HW directives
+
+[DDInstall.Services]
+Include=WUDFRD.inf
+Needs=WUDFRD_UpperFilter.NT.Services
+; also include any existing any DDInstall.Services directives
+
+[DDInstall.Filters]
+Include=WUDFRD.inf
+Needs=WUDFRD_UpperFilter.NT.Filters
+```
+
+To install the WudfRd service as a lower filter driver:
+
+```inf
+[DDInstall] 
+Include=WUDFRD.inf
+Needs=WUDFRD_LowerFilter.NT
+; also include any existing DDInstall directives
+
+[DDInstall.HW]
+Include=WUDFRD.inf
+Needs=WUDFRD_LowerFilter.NT.HW
+; also include any existing DDInstall.HW directives
+
+[DDInstall.Services]
+Include=WUDFRD.inf
+Needs=WUDFRD_LowerFilter.NT.Services
+; also include any existing any DDInstall.Services directives
+
+[DDInstall.Filters]
+Include=WUDFRD.inf
+Needs=WUDFRD_LowerFilter.NT.Filters
+```
+
+## Using an AddService directive (Windows 10 and earlier)
 
 The following code example shows how the INF file for a UMDF function driver might add the reflector.
 
-```cpp
+```inf
 [Skeleton_Install.Services]
 AddService=WUDFRd,0x000001fa,WUDFRD_ServiceInstall
 ```
@@ -29,7 +106,7 @@ The **AddService** directive also sets the 0x000001f8 flags to prevent overwriti
 
 The following code example, taken from the WUDFVhidmini sample, shows an **AddService** directive for a UMDF filter driver.
 
-```cpp
+```inf
 [hidumdf.win8.NT.Services]
 AddService=WUDFRd,0x000001f8,WUDFRD_ServiceInstall  
 AddService=mshidumdf, 0x000001fa, mshidumdf.AddService
@@ -40,12 +117,12 @@ HKR,,"LowerFilters",0x00010008,"WUDFRd" ; FLG_ADDREG_TYPE_MULTI_SZ | FLG_ADDREG_
 
 In this case, the mshidumdf service is associated with the FDO for the device stack, and the reflector is a lower filter.
 
-## Providing a service-install-section
+### Providing a service-install-section
 
 
 The **AddService** directive references an service-install-section similar to the following code example. The **ServiceType** entry specifies 1 or 0x00000001, which indicates that the INF installs support for one or more devices. The **StartType** entry specifies when to start the driver. The **ErrorControl** entry specifies the level of error control that the driver provides. The **ServiceBinary** entry specifies the path to the binary (the reflector) for the service.
 
-```cpp
+```inf
 [WUDFRD_ServiceInstall]
 DisplayName = "Windows Driver Frameworks - User-mode Driver Framework Reflector"
 ServiceType=1
@@ -53,45 +130,3 @@ StartType=3
 ErrorControl=1
 ServiceBinary=%12%\WUDFRd.sys
 ```
-
-## Specifying a unique service name
-
-
-Although it is not required to do so, a UMDF driver that runs only on Windows 8 and later operating systems can specify a unique service name for the WUDFRd (reflector) service.
-
-The following example shows how to specify a unique service name instead of WUDFRd.
-
-```cpp
-[Echo_Install.NT.Services]
-AddService=WudfEchoDriver,0x00000002,WUDFEchoDriver_ServiceInstall
-
-[WUDFEchoDriver_ServiceInstall]
-DisplayName = %WudfEchoDriverDisplayName%
-ServiceType = 1
-StartType = 3
-ErrorControl = 1
-ServiceBinary = %12%\WUDFRd.sys
-StartName = \Driver\WudfRd
-```
-
-In the above example, the driver specifies a unique value for the service name in the **AddService** directive. (In this case, it's WudfEchoDriver, which is the name of the driver.) Next, the driver specifies a unique **DisplayName** value for the service. Finally, the driver adds the **StartName** entry and sets it to \\Driver\\WudfRd.
-
-UMDF drivers cannot specify a unique service name for the reflector on operating systems earlier than Windows 8. If your driver specifies a unique service name but must also work on operating systems earlier than Windows 8, use operating system specific sections in the INF file, as shown in the following example.
-
-```cpp
-[Manufacturer]
-%MSFT% = Microsoft,NTx86.6.0,NTx86.6.2
-[Microsoft.NTx86.6.0]
-%Sensors.DeviceDesc% = Sensors_Install_VistaWin7,HID_DEVICE_UP:0020_U:0001
-[Microsoft.NTx86.6.2]
-%Sensors.DeviceDesc% = Sensors_Install_Win8,HID_DEVICE_UP:0020_U:0001
-[Sensors_Install_VistaWin7]
---- Install the device this way on Vista/Win7 ---
-[Sensors_Install_Win8]
---- Install the device in a different way on Win8 ---
-```
-
-If the reflector is not added, UMDF is never loaded. The device might start, but the host process is not present and the device will not operate properly.
-
- 
-
