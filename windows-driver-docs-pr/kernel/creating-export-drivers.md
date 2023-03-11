@@ -2,7 +2,7 @@
 title: Creating Export Drivers
 description: Creating Export Drivers
 keywords: ["export drivers WDK kernel", "loading export drivers WDK kernel", "importing export driver functions", "module-definition files WDK kernel", ".def files", "def files", "kernel-mode drivers WDK , export drivers"]
-ms.date: 10/01/2021
+ms.date: 03/10/2023
 ---
 
 # Creating Export Drivers
@@ -26,9 +26,10 @@ Standard drivers can also function as export drivers. For a driver to function i
 To create an export driver in Visual Studio, use the following procedure:
 
 1. Create a new project from a template, such as **Empty WDM Driver**.
-2. In project settings, set **General -> Configuration Type** to **Dynamic Library (.dll)**.
-3. Set **Linker -> Advanced -> No Entry Point** to **Yes (/NOENTRY)**.
-4. Add a module definition file to the project, for example:
+1. In project settings, set **General -> Configuration Type** to **Dynamic Library (.dll)**.
+1. Set **Linker -> Advanced -> No Entry Point** to **Yes (/NOENTRY)**.
+1. Add main.cpp.
+1. Add a module definition (.def) file to the project, for example:
 
   ```
   LIBRARY mydriver
