@@ -2,7 +2,7 @@
 title: Attestation sign Windows 10+ drivers
 description: Attestation sign Windows 10+ drivers
 ms.topic: article
-ms.date: 04/20/2022
+ms.date: 03/13/2023
 ---
 
 # Attestation sign Windows 10+ drivers
@@ -29,8 +29,11 @@ In this section, we'll step through the process of creating a CAB files submissi
 A typical CAB file submission must contain the following:
 
 - The driver itself, for example Echo.sys
+
 - The driver INF file that is used by the dashboard to facilitate the signing process.
-- The symbol file that is used for debugging information. For example, Echo.pdb.
+
+- The symbol file that is used for debugging information. For example, Echo.pdb. The .pdb file is required for Microsoft's automated crash analysis tools.
+
 - Catalog .CAT files are required and used for company verification only. Microsoft regenerates catalog files and replaces any catalog files that were submitted.
 
 > [!NOTE]
