@@ -6,7 +6,7 @@ ms.date: 02/23/2023
 
 # WinUSB power management
 
-WinUSB uses the KMDF state machines for power management. Power policies are managed through calls to [**WinUsb_SetPowerPolicy**](/windows/win32/api/winusb/nf-winusb-winusb_setpowerpolicy).
+WinUSB uses the KMDF state machines for power management. Power policies are managed through calls to **[WinUsb_SetPowerPolicy](/windows/win32/api/winusb/nf-winusb-winusb_setpowerpolicy)**.
 
 In order to modify the power behavior of WinUSB, default registry settings can be modified in the device's INF. These values must be written to the device specific location in the registry by adding the values in the **HW.AddReg** section of the INF.
 
@@ -30,7 +30,7 @@ HKR,,SystemWakeEnabled,0x00010001,1
 
 Selective suspend can be disabled by any of several system or WinUSB settings. A single setting can't force WinUSB to enable selective suspend.
 
-The following power policy settings that are specified in [**WinUsb_SetPowerPolicy**](/windows/win32/api/winusb/nf-winusb-winusb_setpowerpolicy)'s *PolicyType* parameter affect the behavior of selective suspend:
+The following power policy settings that are specified in **[WinUsb_SetPowerPolicy](/windows/win32/api/winusb/nf-winusb-winusb_setpowerpolicy)**'s *PolicyType* parameter affect the behavior of selective suspend:
 
 - AUTO_SUSPEND When set to zero, it doesn't set the device to selective suspend mode.
 - SUSPEND_DELAY Sets the time between when the device becomes idle and when WinUSB requests the device to go into selective suspend.
@@ -58,5 +58,5 @@ All writes and control transfers force the device into the **D0** power state an
 - [WinUSB Functions for Pipe Policy Modification](winusb-functions-for-pipe-policy-modification.md)
 - [WinUSB functions](using-winusb-api-to-communicate-with-a-usb-device.md)
 - [WinUSB](winusb.md)
-- [**WinUsb_GetPowerPolicy**](/windows/win32/api/winusb/nf-winusb-winusb_getpowerpolicy)
-- [**WinUsb_SetPowerPolicy**](/windows/win32/api/winusb/nf-winusb-winusb_setpowerpolicy)
+- **[WinUsb_GetPowerPolicy](/windows/win32/api/winusb/nf-winusb-winusb_getpowerpolicy)**
+- **[WinUsb_SetPowerPolicy](/windows/win32/api/winusb/nf-winusb-winusb_setpowerpolicy)**
