@@ -26,12 +26,10 @@ Standard drivers can also function as export drivers. For a driver to function i
 To create an export driver in Visual Studio, use the following procedure:
 
 1. Create a new project from a template, such as **Empty WDM Driver**.
-2. In project settings, set **General -> Configuration Type** to **Dynamic Library (.dll)**.
-3. Set **Linker -> Advanced -> No Entry Point** to **Yes (/NOENTRY)**.
-4. Add a module definition file to the project, for example:
+2. Add a module definition file to the project, for example:
 
   ```
-  LIBRARY mydriver
+  LIBRARY mydriver.sys
   EXPORTS
     DllInitialize PRIVATE
     DllUnload PRIVATE
