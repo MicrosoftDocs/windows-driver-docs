@@ -10,7 +10,8 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 07/17/2019
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
 # FLT_PARAMETERS for IRP_MJ_ACQUIRE_FOR_SECTION_SYNCHRONIZATION union
@@ -19,7 +20,7 @@ The following union component is used when the **MajorFunction** field of the [*
 
 ## Syntax
 
-```ManagedCPlusPlus
+``` C
 typedef union _FLT_PARAMETERS {
   ...    ;
   struct {
@@ -33,17 +34,11 @@ typedef union _FLT_PARAMETERS {
 
 ## Members
 
-### SyncType  
+- **SyncType**: The type of synchronization requested for the section. This parameter is set to **SyncTypeCreateSection** if a section is being created; otherwise, it is set to **SyncTypeOther**.
 
-The type of synchronization requested for the section. This parameter is set to **SyncTypeCreateSection** if a section is being created; otherwise, it is set to **SyncTypeOther**.
+- **PageProtection**: The type of page protection requested for the section. Must be zero if **SyncType** is SyncTypeOther. Otherwise, this parameter must be one of the defined [memory protection constant values](/windows/win32/memory/memory-protection-constants).
 
-### PageProtection
-
-The type of page protection requested for the section. Must be zero if **SyncType** is SyncTypeOther. Otherwise, this parameter must be one of the defined [memory protection constant values](/windows/win32/memory/memory-protection-constants).
-
-### OutputInformation
-
-A [**FS_FILTER_SECTION_SYNC_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fs_filter_section_sync_output) structure that specifies information describing the attributes of the section that is being created.
+- **OutputInformation**: A [**FS_FILTER_SECTION_SYNC_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fs_filter_section_sync_output) structure that specifies information describing the attributes of the section that is being created.
 
 ## Remarks
 
@@ -59,8 +54,9 @@ For more information about FSFilter callback operations, see the reference entry
 
 **Version**: Available in Windows XP and later versions of the Windows operating system.
 
-**Header**: Fltkernel.h (include Fltkernel.h)
-
+| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Header | *Fltkernel.h* (include *Fltkernel.h*) |
 
 ## See also
 

@@ -1,6 +1,6 @@
 ---
 title: FSCTL_OPBATCH_ACK_CLOSE_PENDING control code
-description: The FSCTL\_OPBATCH\_ACK\_CLOSE\_PENDING control code responds to notification that an exclusive (level 1, batch, or filter) opportunistic lock (oplock) on a file has been broken.
+description: The FSCTL_OPBATCH_ACK_CLOSE_PENDING control code responds to notification that an exclusive (level 1, batch, or filter) opportunistic lock (oplock) on a file has been broken.
 keywords: ["FSCTL_OPBATCH_ACK_CLOSE_PENDING control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -10,13 +10,13 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
-# FSCTL\_OPBATCH\_ACK\_CLOSE\_PENDING control code
+# FSCTL_OPBATCH_ACK_CLOSE_PENDING control code
 
-
-The **FSCTL\_OPBATCH\_ACK\_CLOSE\_PENDING** control code responds to notification that an exclusive (level 1, batch, or filter) opportunistic lock (oplock) on a file has been broken. A client application sends this control code to indicate that it acknowledges the oplock break and it is about to close the file handle.
+The **FSCTL_OPBATCH_ACK_CLOSE_PENDING** control code responds to notification that an exclusive (level 1, batch, or filter) opportunistic lock (oplock) on a file has been broken. A client application sends this control code to indicate that it acknowledges the oplock break and it is about to close the file handle.
 
 For a batch or filter oplock break, the caller must close its file handle after sending this control code. Otherwise, the system will block waiting for the file handle to be closed.
 
@@ -26,94 +26,57 @@ This control code is rarely used. When a client application is notified of an op
 
 To process this control code, a minifilter calls [**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl) with the following parameters. A file system or legacy filter driver calls [**FsRtlOplockFsctrl**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl).
 
-For more information about opportunistic locking and about the FSCTL\_OPBATCH\_ACK\_CLOSE\_PENDING control code, see the Microsoft Windows SDK documentation.
+For more information about opportunistic locking and about the FSCTL_OPBATCH_ACK_CLOSE_PENDING control code, see the Microsoft Windows SDK documentation.
 
-**Parameters**
+## Parameters
 
-<a href="" id="oplock"></a>*Oplock*  
-Opaque oplock object pointer for the file.
+- **Oplock**: Opaque oplock object pointer for the file.
 
-<a href="" id="callbackdata"></a>*CallbackData*  
-[**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl) only. Callback data ([**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure for an IRP\_MJ\_FILE\_SYSTEM\_CONTROL FSCTL request. The *FsControlCode* parameter for the operation must be FSCTL\_OPBATCH\_ACK\_CLOSE\_PENDING.
+- **CallbackData**: [**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl) only. Callback data ([**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure for an IRP_MJ_FILE_SYSTEM_CONTROL FSCTL request. The **FsControlCode** parameter for the operation must be FSCTL_OPBATCH_ACK_CLOSE_PENDING.
 
-<a href="" id="irp"></a>*Irp*  
-[**FsRtlOplockFsctrl**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl) only. IRP for an IRP\_MJ\_FILE\_SYSTEM\_CONTROL FSCTL request. The *FsControlCode* parameter for the operation must be FSCTL\_OPBATCH\_ACK\_CLOSE\_PENDING.
+- **Irp**: [**FsRtlOplockFsctrl**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl) only. IRP for an IRP_MJ_FILE_SYSTEM_CONTROL FSCTL request. The **FsControlCode** parameter for the operation must be FSCTL_OPBATCH_ACK_CLOSE_PENDING.
 
-<a href="" id="opencount"></a>*OpenCount*  
-Not used with this operation; set to zero.
+- **OpenCount**: Not used with this operation; set to zero.
 
 ## Status block
 
-[**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl) always returns FLT\_PREOP\_COMPLETE for this operation.
+[**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl) always returns FLT_PREOP_COMPLETE for this operation.
 
 [**FsRtlOplockFsctrl**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl) returns one of the following NTSTATUS values for this operation:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Term</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>STATUS_SUCCESS</strong></p></td>
-<td align="left"><p>The oplock held by this handle was in the process of being broken.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>STATUS_INVALID_OPLOCK_PROTOCOL</strong></p></td>
-<td align="left"><p>No oplock was held by this handle, or the oplock break is not currently in progress. This is an error code.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Code | Meaning |
+| ---- | ------- |
+| STATUS_SUCCESS | The oplock held by this handle was in the process of being broken. |
+| STATUS_INVALID_OPLOCK_PROTOCOL | No oplock was held by this handle, or the oplock break is not currently in progress. This is an error code. |
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Header</p></td>
-<td align="left">Ntifs.h (include Ntifs.h or Fltkernel.h)</td>
-</tr>
-</tbody>
-</table>
+| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Header | *Ntifs.h* (include *Ntifs.h* or *Fltkernel.h*) |
 
 ## See also
 
+[**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)
 
-[**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)
-
-[**FLT\_PARAMETERS for IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](flt-parameters-for-irp-mj-file-system-control.md)
+[**FLT_PARAMETERS for IRP_MJ_FILE_SYSTEM_CONTROL**](flt-parameters-for-irp-mj-file-system-control.md)
 
 [**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl)
 
-[**FSCTL\_OPLOCK\_BREAK\_ACK\_NO\_2**](fsctl-oplock-break-ack-no-2.md)
+[**FSCTL_OPLOCK_BREAK_ACK_NO_2**](fsctl-oplock-break-ack-no-2.md)
 
-[**FSCTL\_OPLOCK\_BREAK\_ACKNOWLEDGE**](fsctl-oplock-break-acknowledge.md)
+[**FSCTL_OPLOCK_BREAK_ACKNOWLEDGE**](fsctl-oplock-break-acknowledge.md)
 
-[**FSCTL\_OPLOCK\_BREAK\_NOTIFY**](fsctl-oplock-break-notify.md)
+[**FSCTL_OPLOCK_BREAK_NOTIFY**](fsctl-oplock-break-notify.md)
 
-[**FSCTL\_REQUEST\_BATCH\_OPLOCK**](fsctl-request-batch-oplock.md)
+[**FSCTL_REQUEST_BATCH_OPLOCK**](fsctl-request-batch-oplock.md)
 
-[**FSCTL\_REQUEST\_FILTER\_OPLOCK**](fsctl-request-filter-oplock.md)
+[**FSCTL_REQUEST_FILTER_OPLOCK**](fsctl-request-filter-oplock.md)
 
-[**FSCTL\_REQUEST\_OPLOCK\_LEVEL\_1**](fsctl-request-oplock-level-1.md)
+[**FSCTL_REQUEST_OPLOCK_LEVEL_1**](fsctl-request-oplock-level-1.md)
 
-[**FSCTL\_REQUEST\_OPLOCK\_LEVEL\_2**](fsctl-request-oplock-level-2.md)
+[**FSCTL_REQUEST_OPLOCK_LEVEL_2**](fsctl-request-oplock-level-2.md)
 
 [**FsRtlOplockFsctrl**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl)
 
-[**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](irp-mj-file-system-control.md)
-
- 
-
+[**IRP_MJ_FILE_SYSTEM_CONTROL**](irp-mj-file-system-control.md)

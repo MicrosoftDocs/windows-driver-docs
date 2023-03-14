@@ -8863,6 +8863,71 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/ifs/ccistheredirtyloggedpages.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/ccsetloggeddatathreshold.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/ccsetloghandleforfileex.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/ccsetreadaheadgranularityex.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/ccunmapfileoffsetfromsystemcache.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/dual-oplock-key-ecp-context.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/dual-oplock-key-ecp-context",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/exdisableresourceboost.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/exdisableresourceboost",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/file-lock.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/file-lock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/keacquirequeuedspinlock.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/keacquirequeuedspinlock",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/oplock-key-ecp-context.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/oplock-key-ecp-context",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/pcomplete-lock-irp-routine.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/pcomplete-lock-irp-routine",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/punlock-routine.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/punlock-routine",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/wcifs-redirection-ecp-context.md",
+            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/ns-ntifs-create_redirection_ecp_context",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/debugger/debugging-oca-minidump-files.md",
             "redirect_URL": "//windows-hardware/drivers/debugger/crash-dump-files",
             "redirect_document_id": false

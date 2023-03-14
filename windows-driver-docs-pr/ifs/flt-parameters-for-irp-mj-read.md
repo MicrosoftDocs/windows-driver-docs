@@ -10,7 +10,8 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 02/04/2020
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
 # FLT_PARAMETERS for IRP_MJ_READ union
@@ -19,7 +20,7 @@ The following union component is used when the **MajorFunction** field of the [*
 
 ## Syntax
 
-```ManagedCPlusPlus
+``` C
 typedef union _FLT_PARAMETERS {
   ...    ;
   struct {
@@ -35,23 +36,17 @@ typedef union _FLT_PARAMETERS {
 
 ## Members
 
-**Read**  
-Structure containing the following members.
+- **Read**: Structure containing the following members.
 
-**Length**  
-Length, in bytes, of the data to be read.
+- **Length**: Length, in bytes, of the data to be read.
 
-**Key**  
-Key value associated with a byte-range lock on the target file.
+- **Key**: Key value associated with a byte-range lock on the target file.
 
-**ByteOffset**  
-Starting byte offset within the file of the data to be read.
+- **ByteOffset**: Starting byte offset within the file of the data to be read.
 
-**ReadBuffer**  
-Pointer to a buffer that receives the data that is read from the file. This member is optional and can be NULL if a MDL is provided in **MdlAddress**. See **Remarks**.
+- **ReadBuffer**: Pointer to a buffer that receives the data that is read from the file. This member is optional and can be NULL if a MDL is provided in **MdlAddress**. See **Remarks**.
 
-**MdlAddress**  
-Address of a memory descriptor list (MDL) that describes the buffer that the **ReadBuffer** member points to. This member is optional and can be **NULL** if a buffer is provided in **ReadBuffer**. See **Remarks**.
+- **MdlAddress**: Address of a memory descriptor list (MDL) that describes the buffer that the **ReadBuffer** member points to. This member is optional and can be **NULL** if a buffer is provided in **ReadBuffer**. See **Remarks**.
 
 ## Remarks
 
@@ -65,8 +60,9 @@ IRP_MJ_READ can be an IRP-based operation or a fast I/O operation.
 
 ## Requirements
 
-**Header**: Fltkernel.h (include Fltkernel.h)
-
+| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Header | *Fltkernel.h* (include *Fltkernel.h*) |
 
 ## See also
 

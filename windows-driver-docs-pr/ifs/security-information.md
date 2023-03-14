@@ -1,162 +1,161 @@
 ---
-title: SECURITY\_INFORMATION
-description: SECURITY\_INFORMATION
-ms.date: 11/28/2017
+title: SECURITY_INFORMATION
+description: SECURITY_INFORMATION
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
-# SECURITY\_INFORMATION
-
-
-SECURITY\_INFORMATION
+# SECURITY_INFORMATION
 
 ``` syntax
 typedef ULONG SECURITY_INFORMATION, *PSECURITY_INFORMATION;
 ```
 
+A value of type SECURITY_INFORMATION is used to identify the object-related security information being set or queried. This security information includes:
 
+- The owner of an object
+- The primary group of an object
+- The discretionary access-control list (DACL) of an object
+- The system ACL (SACL) of an object
 
+Each item of security information is designated by a bit flag. The following sections specify the bits.
 
-A value of type SECURITY\_INFORMATION is used to identify the object-related security information being set or queried. This security information includes:
+## DACL_SECURITY_INFORMATION
 
--   The owner of an object
+Indicates that the object's DACL is being set or queried.
 
--   The primary group of an object
+For the following items, the DACL is queried:
 
--   The discretionary access-control list (DACL) of an object
+- IRP_MJ_QUERY_SECURITY
+- FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY
+- FltQuerySecurityObject
+- SeQuerySecurityDescriptorInfo
 
--   The system ACL (SACL) of an object
+For the following items, the DACL is set:
 
-Each item of security information is designated by a bit flag. The following values specify the bits.
+- IRP_MJ_SET_SECURITY
+- FLT_PARAMETERS for IRP_MJ_SET_SECURITY
+- FltSetSecurityObject
+- SeSetSecurityDescriptorInfo
+- SeSetSecurityDescriptorInfoEx
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Value</th>
-<th align="left">Meaning</th>
-<th align="left">Access</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>DACL_SECURITY_INFORMATION</p></td>
-<td align="left"><p>Indicates that the object's DACL is being set or queried.</p>
-<p>For the following items, the DACL is queried:</p>
-<p>IRP_MJ_QUERY_SECURITY</p>
-<p>FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY</p>
-<p>FltQuerySecurityObject</p>
-<p>SeQuerySecurityDescriptorInfo</p>
-<p>For the following items, the DACL is set:</p>
-<p>IRP_MJ_SET_SECURITY</p>
-<p>FLT_PARAMETERS for IRP_MJ_SET_SECURITY</p>
-<p>FltSetSecurityObject</p>
-<p>SeSetSecurityDescriptorInfo</p>
-<p>SeSetSecurityDescriptorInfoEx</p></td>
-<td align="left"><p>Requires READ_CONTROL access for:</p>
-<p>IRP_MJ_QUERY_SECURITY</p>
-<p>FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY</p>
-<p>FltQuerySecurityObject</p>
-<p>SeQuerySecurityDescriptorInfo</p>
-<p>Requires WRITE_DAC access for:</p>
-<p>IRP_MJ_SET_SECURITY</p>
-<p>FLT_PARAMETERS for IRP_MJ_SET_SECURITY</p>
-<p>FltSetSecurityObject</p>
-<p>SeSetSecurityDescriptorInfo</p>
-<p>SeSetSecurityDescriptorInfoEx</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>GROUP_SECURITY_INFORMATION</p></td>
-<td align="left"><p>Indicates that the primary group identifier of the object is being set or queried.</p>
-<p>For the following items, the group identifier is queried:</p>
-<p>IRP_MJ_QUERY_SECURITY</p>
-<p>FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY</p>
-<p>FltQuerySecurityObject</p>
-<p>SeQuerySecurityDescriptorInfo</p>
-<p>IRP_MJ_SET_SECURITY</p>
-<p>FLT_PARAMETERS for IRP_MJ_SET_SECURITY</p>
-<p>For the following items, the group identifier is set:</p>
-<p>FltSetSecurityObject</p>
-<p>SeSetSecurityDescriptorInfo</p>
-<p>SeSetSecurityDescriptorInfoEx</p></td>
-<td align="left"><p>Requires READ_CONTROL access for:</p>
-<p>IRP_MJ_QUERY_SECURITY</p>
-<p>FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY</p>
-<p>FltQuerySecurityObject</p>
-<p>SeQuerySecurityDescriptorInfo</p>
-<p>Requires WRITE_OWNER access for:</p>
-<p>IRP_MJ_SET_SECURITY</p>
-<p>FLT_PARAMETERS for IRP_MJ_SET_SECURITY</p>
-<p>FltSetSecurityObject</p>
-<p>SeSetSecurityDescriptorInfo</p>
-<p>SeSetSecurityDescriptorInfoEx</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>OWNER_SECURITY_INFORMATION</p></td>
-<td align="left"><p>Indicates that the owner identifier of the object is being set or queried.</p>
-<p>For the following items, the owner identifier is queried:</p>
-<p>IRP_MJ_QUERY_SECURITY</p>
-<p>FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY</p>
-<p>FltQuerySecurityObject</p>
-<p>SeQuerySecurityDescriptorInfo</p>
-<p>IRP_MJ_SET_SECURITY</p>
-<p>FLT_PARAMETERS for IRP_MJ_SET_SECURITY</p>
-<p>For the following items, the owner identifier is set:</p>
-<p>FltSetSecurityObject</p>
-<p>SeSetSecurityDescriptorInfo</p>
-<p>SeSetSecurityDescriptorInfoEx</p></td>
-<td align="left"><p>Requires READ_CONTROL access for:</p>
-<p>IRP_MJ_QUERY_SECURITY</p>
-<p>FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY</p>
-<p>FltQuerySecurityObject</p>
-<p>SeQuerySecurityDescriptorInfo</p>
-<p>Requires WRITE_OWNER access for:</p>
-<p>IRP_MJ_SET_SECURITY</p>
-<p>FLT_PARAMETERS for IRP_MJ_SET_SECURITY</p>
-<p>FltSetSecurityObject</p>
-<p>SeSetSecurityDescriptorInfo</p>
-<p>SeSetSecurityDescriptorInfoEx</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>SACL_SECURITY_INFORMATION</p></td>
-<td align="left"><p>Indicates that the object's SACL is being set or queried.</p>
-<p>For the following items, the SACL is queried:</p>
-<p>IRP_MJ_QUERY_SECURITY</p>
-<p>FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY</p>
-<p>FltQuerySecurityObject</p>
-<p>SeQuerySecurityDescriptorInfo</p>
-<p>IRP_MJ_SET_SECURITY</p>
-<p>FLT_PARAMETERS for IRP_MJ_SET_SECURITY</p>
-<p>For the following items, the SACL is set:</p>
-<p>FltSetSecurityObject</p>
-<p>SeSetSecurityDescriptorInfo</p>
-<p>SeSetSecurityDescriptorInfoEx</p></td>
-<td align="left"><p>Requires ACCESS_SYSTEM_SECURITY access in all cases.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>PROCESS_TRUST_LABEL_SECURITY_INFORMATION</p></td>
-<td align="left"><p>Reserved.</p></td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
+Requires READ_CONTROL access for:
 
- 
+- IRP_MJ_QUERY_SECURITY
+- FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY
+- FltQuerySecurityObject
+- SeQuerySecurityDescriptorInfo
+
+Requires WRITE_DAC access for:
+
+- IRP_MJ_SET_SECURITY
+- FLT_PARAMETERS for IRP_MJ_SET_SECURITY
+- FltSetSecurityObject
+- SeSetSecurityDescriptorInfo
+- SeSetSecurityDescriptorInfoEx
+
+## GROUP_SECURITY_INFORMATION
+
+Indicates that the primary group identifier of the object is being set or queried.
+
+For the following items, the group identifier is queried:
+
+- IRP_MJ_QUERY_SECURITY
+- FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY
+- FltQuerySecurityObject
+- SeQuerySecurityDescriptorInfo
+- IRP_MJ_SET_SECURITY
+- FLT_PARAMETERS for IRP_MJ_SET_SECURITY
+
+For the following items, the group identifier is set:
+
+- FltSetSecurityObject
+- SeSetSecurityDescriptorInfo
+- SeSetSecurityDescriptorInfoEx
+
+Requires READ_CONTROL access for:
+
+- IRP_MJ_QUERY_SECURITY
+- FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY
+- FltQuerySecurityObject
+- SeQuerySecurityDescriptorInfo
+
+Requires WRITE_OWNER access for:
+
+- IRP_MJ_SET_SECURITY
+- FLT_PARAMETERS for IRP_MJ_SET_SECURITY
+- FltSetSecurityObject
+- SeSetSecurityDescriptorInfo
+- SeSetSecurityDescriptorInfoEx
+
+## OWNER_SECURITY_INFORMATION
+
+Indicates that the owner identifier of the object is being set or queried.
+
+For the following items, the owner identifier is queried:
+
+- IRP_MJ_QUERY_SECURITY
+- FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY
+- FltQuerySecurityObject
+- SeQuerySecurityDescriptorInfo
+- IRP_MJ_SET_SECURITY
+- FLT_PARAMETERS for IRP_MJ_SET_SECURITY
+
+For the following items, the owner identifier is set:
+
+- FltSetSecurityObject
+- SeSetSecurityDescriptorInfo
+- SeSetSecurityDescriptorInfoEx
+
+Requires READ_CONTROL access for:
+
+- IRP_MJ_QUERY_SECURITY
+- FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY
+- FltQuerySecurityObject
+- SeQuerySecurityDescriptorInfo
+
+Requires WRITE_OWNER access for:
+
+- IRP_MJ_SET_SECURITY
+- FLT_PARAMETERS for IRP_MJ_SET_SECURITY
+- FltSetSecurityObject
+- SeSetSecurityDescriptorInfo
+- SeSetSecurityDescriptorInfoEx
+
+## SACL_SECURITY_INFORMATION
+
+Indicates that the object's SACL is being set or queried.
+
+For the following items, the SACL is queried:
+
+- IRP_MJ_QUERY_SECURITY
+- FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY
+- FltQuerySecurityObject
+- SeQuerySecurityDescriptorInfo
+- IRP_MJ_SET_SECURITY
+- FLT_PARAMETERS for IRP_MJ_SET_SECURITY
+
+For the following items, the SACL is set:
+
+- FltSetSecurityObject
+- SeSetSecurityDescriptorInfo
+- SeSetSecurityDescriptorInfoEx
+
+Requires ACCESS_SYSTEM_SECURITY access in all cases.
+
+## PROCESS_TRUST_LABEL_SECURITY_INFORMATION
+
+Reserved.
 
 ## Requirements
 
-
 Wdm.h (include Wdm.h)
 
-## Related topics
-
+## Related articles
 
 [**ACL**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_acl)
 
-[**SECURITY\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff556610(v=vs.85))
+[**SECURITY_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff556610(v=vs.85))
 
 [**SeQuerySecurityDescriptorInfo**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-sequerysecuritydescriptorinfo)
 
@@ -167,6 +166,3 @@ Wdm.h (include Wdm.h)
 [**ZwQuerySecurityObject**](/previous-versions/ff567066(v=vs.85))
 
 [**ZwSetSecurityObject**](/previous-versions/ff567106(v=vs.85))
-
- 
-

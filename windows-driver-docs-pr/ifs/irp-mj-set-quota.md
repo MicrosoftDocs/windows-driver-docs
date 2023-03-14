@@ -1,6 +1,6 @@
 ---
-title: IRP_MJ_SET_QUOTA
-description: IRP\_MJ\_SET\_QUOTA
+title: IRP_MJ_SET_QUOTA (FS and filter drivers)
+description: IRP_MJ_SET_QUOTA
 keywords: ["IRP_MJ_SET_QUOTA Installable File System Drivers"]
 topic_type:
 - apiref
@@ -8,66 +8,53 @@ api_name:
 - IRP_MJ_SET_QUOTA
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
-# IRP\_MJ\_SET\_QUOTA
-
+# IRP_MJ_SET_QUOTA (FS and filter drivers)
 
 ## When Sent
 
-
-The IRP\_MJ\_SET\_QUOTA request is sent by the I/O Manager. It can be sent, for example, when a user-mode application has called a Microsoft Win32 method such as **IDiskQuotaControl::SetQuotaState**.
+The I/O Manager sends the IRP_MJ_SET_QUOTA request. It can be sent, for example, when a user-mode application has called a Win32 method such as **IDiskQuotaControl::SetQuotaState**.
 
 ## Operation: File System Drivers
 
+IRP_MJ_SET_QUOTA and IRP_MJ_QUERY_QUOTA existed in Windows NT 4.0 but weren't used by file systems. On Windows 2000 and later systems, they're used for disk quota support in NTFS. Support for these IRPs by new file systems is optional.
 
-IRP\_MJ\_SET\_QUOTA and IRP\_MJ\_QUERY\_QUOTA existed in Windows NT 4.0 but were not used by file systems. On Windows 2000 and later systems, they are used for disk quota support in NTFS. Support for these IRPs by new file systems is optional.
-
-## Operation: File System Filter Drivers
-
+## Operation: Legacy File System Filter Drivers
 
 The filter driver should pass this IRP down to the next-lower driver on the stack, unless it needs to explicitly override quota behavior.
 
 ## Parameters
 
+A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) for the given IRP to get a pointer to its own stack location in the IRP. In the following parameters, **Irp** points to the [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) and **IrpSp** points to the [**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location). The driver can use the information that is set in the following members of the IRP and the IRP stack location to process a set quota information request:
 
-A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a set quota information request:
+- **DeviceObject** is a pointer to the target device object.
 
-<a href="" id="deviceobject"></a>*DeviceObject*  
-Pointer to the target device object.
+- **DeviceObject->Flags** : If the DO_BUFFERED_IO flag is set, the caller has requested METHOD_BUFFERED I/O. Otherwise, the caller has requested METHOD_NEITHER I/O.
 
-<a href="" id="deviceobject--flags"></a>*DeviceObject-&gt;Flags*  
-If the DO\_BUFFERED\_IO flag is set, the caller has requested METHOD\_BUFFERED I/O. Otherwise, the caller has requested METHOD\_NEITHER I/O.
+- **Irp->AssociatedIrp.SystemBuffer** points to a system-supplied buffer to be used as an intermediate system buffer, if the DO_BUFFERED_IO flag is set in **DeviceObject->Flags**. Otherwise, this member is set to **NULL**.
 
-<a href="" id="irp--associatedirp-systembuffer"></a>*Irp-&gt;AssociatedIrp.SystemBuffer*  
-Pointer to a system-supplied buffer to be used as an intermediate system buffer, if the DO\_BUFFERED\_IO flag is set in *DeviceObject-&gt;Flags*. Otherwise, this member is set to **NULL**.
+- **Irp->IoStatus** points to an [**IO_STATUS_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
 
-<a href="" id="irp--iostatus"></a>*Irp-&gt;IoStatus*  
-Pointer to an [**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
+- **Irp->UserBuffer** points to a caller-supplied buffer that contains the quota entries to be added or modified for the volume.
 
-<a href="" id="irp--userbuffer"></a>*Irp-&gt;UserBuffer*  
-Pointer to a caller-supplied buffer that contains the quota entries to be added or modified for the volume.
+- **IrpSp->FileObject** points to the file object that is associated with **DeviceObject**.
 
-<a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*  
-Pointer to the file object that is associated with *DeviceObject*.
+The *IrpSp->FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE_OBJECT structure. The **RelatedFileObject** field of the FILE_OBJECT structure isn't valid during the processing of IRP_MJ_SET_QUOTA and shouldn't be used.
 
-The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBJECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_SET\_QUOTA and should not be used.
+- **IrpSp->MajorFunction** is set to IRP_MJ_SET_QUOTA.
 
-<a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*  
-Specifies IRP\_MJ\_SET\_QUOTA.
-
-<a href="" id="irpsp--parameters-setquota-length"></a>*IrpSp-&gt;Parameters.SetQuota.Length*  
-Specifies the length, in bytes, of the buffer pointed to by *Irp-&gt;UserBuffer*.
+- **IrpSp->Parameters.SetQuota.Length** is the length, in bytes, of the buffer pointed to by **Irp->UserBuffer**.
 
 ## See also
 
+[**FILE_QUOTA_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_quota_information)
 
-[**FILE\_QUOTA\_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_quota_information)
+[**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 
-[**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
-
-[**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
+[**IO_STATUS_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
 
 [**IoCheckQuotaBufferValidity**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iocheckquotabuffervalidity)
 
@@ -75,7 +62,4 @@ Specifies the length, in bytes, of the buffer pointed to by *Irp-&gt;UserBuffer*
 
 [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
 
-[**IRP\_MJ\_QUERY\_QUOTA**](irp-mj-query-quota.md)
-
- 
-
+[**IRP_MJ_QUERY_QUOTA**](irp-mj-query-quota.md)

@@ -8,7 +8,8 @@ api_name:
 - FSCTL_FIND_FILES_BY_SID
 api_type:
 - NA
-ms.date: 01/04/2022
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
 # FSCTL_FIND_FILES_BY_SID control code
@@ -19,26 +20,19 @@ To perform this operation, minifilter drivers call [**FltFsControlFile**](/windo
 
 ## Parameters
 
-*FileObject*  
-[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. The file object pointer for the directory to search. This parameter is required and cannot be **NULL**.
+- **FileObject** [in]: [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. The file object pointer for the directory to search. This parameter is required and cannot be **NULL**.
 
-*FileHandle*  
-[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. The file handle for the directory to search. This parameter is required and cannot be **NULL**.
+- **FileHandle** [in]: [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. The file handle for the directory to search. This parameter is required and cannot be **NULL**.
 
-*FsControlCode*  
-A control code for the operation. Use FSCTL_FIND_FILES_BY_SID for this operation.
+- **FsControlCode** [in]:  control code for the operation. Use FSCTL_FIND_FILES_BY_SID for this operation.
 
-*InputBuffer*  
-A pointer to an input buffer that is described by the [**FIND_BY_SID_DATA**](/windows/win32/api/winioctl/ns-winioctl-find_by_sid_data) structure.
+- **InputBuffer** [in]: A pointer to an input buffer that is described by the [**FIND_BY_SID_DATA**](/windows/win32/api/winioctl/ns-winioctl-find_by_sid_data) structure.
 
-*InputBufferLength*  
-The length, in bytes, of the buffer at *InputBuffer*.
+- **InputBufferLength** [in]: The length, in bytes, of the buffer at **InputBuffer**.
 
-*OutputBuffer*  
-A pointer to a caller-allocated array of quad-aligned [**FIND_BY_SID_OUTPUT**](/windows/win32/api/winioctl/ns-winioctl-find_by_sid_output) structures that receive the fully qualified path names for each file.
+- **OutputBuffer** [out]: A pointer to a caller-allocated array of quad-aligned [**FIND_BY_SID_OUTPUT**](/windows/win32/api/winioctl/ns-winioctl-find_by_sid_output) structures that receive the fully qualified path names for each file.
 
-*OutputBufferLength*  
-Size, in bytes, of the data returned in the buffer that is pointed to by the *OutputBuffer* parameter.
+- **OutputBufferLength** [out]: Size, in bytes, of the data returned in the buffer that is pointed to by the **OutputBuffer** parameter.
 
 ## Remarks
 
