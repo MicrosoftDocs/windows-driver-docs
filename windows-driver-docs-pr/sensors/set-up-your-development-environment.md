@@ -10,7 +10,7 @@ This article shows you how to set up your development environment using the Shar
 
 Sharks Cove is a development board that has been designed and configured to be the core of an x86-based tablet platform. Additional devices such as cameras, sensors, a display etc. have been left out of the design of the board, so that new versions of these devices can be developed and tested using Sharks Cove.
 
-You can order a Sharks Cove from [Mouser Electronics](https://www.mouser.com/ProductDetail/SharksCove-by-CircuitCo/999-0005112?qs=mkp0qhOQ2tj2iw0Hi9QSNQ%3D%3D).
+You can order a Sharks Cove from [RCS Components](https://www.rcscomponents.com/SharksCove%20by%20CircuitCo) or [Kynix](https://www.kynix.com/Parts/3944717/999-0005112.html).
 
 Before you get started with this exercise, make sure that you have the following hardware:
 
