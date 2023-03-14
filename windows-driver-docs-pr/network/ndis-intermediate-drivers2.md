@@ -6,7 +6,7 @@ keywords:
 - network drivers WDK , intermediate drivers
 - NDIS WDK , intermediate drivers
 - NDIS intermediate drivers WDK
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # NDIS Intermediate Drivers Guide

@@ -1,7 +1,7 @@
 ---
 title: Retrieving the Contents of a IEEE 1394 Node's Configuration ROM
 description: Windows 7 includes 1394ohci.sys, a new IEEE 1394 bus driver, that is implemented by using the kernel-mode driver framework (KMDF).
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Retrieving the Contents of a IEEE 1394 Node's Configuration ROM

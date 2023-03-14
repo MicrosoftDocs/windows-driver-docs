@@ -8,7 +8,7 @@ keywords:
 - system-supplied parallel drivers WDK , callbacks
 - parallel devices WDK , callbacks
 - parallel devices WDK , IOCTLs
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # IOCTL and Callback Support for Parallel Ports and Devices

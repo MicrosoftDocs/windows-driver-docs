@@ -2,7 +2,7 @@
 title: NDIS_STATUS_WWAN_NETWORK_BLACKLIST
 ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_NETWORK_BLACKLIST notification to inform the mobile broadband (MB) service about the completion of a previous OID_WWAN_NETWORK_BLACKLIST Query or Set request.
-ms.date: 08/21/2018
+ms.date: 03/02/2023
 keywords: 
  -NDIS_STATUS_WWAN_NETWORK_BLACKLIST Network Drivers Starting with Windows Vista
 ---

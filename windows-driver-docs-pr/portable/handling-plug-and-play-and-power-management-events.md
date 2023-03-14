@@ -1,7 +1,7 @@
 ---
 description: Handling Plug and Play and Power Management Events
 title: Handling Plug and Play and Power Management Events
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Handling Plug and Play and Power Management Events

@@ -2,7 +2,7 @@
 title: General-Purpose I/O (GPIO) Driver Design Guide
 description: This section describes how to write a driver for a general-purpose I/O (GPIO) controller device.
 ms.assetid: D11E72AC-2B0D-4325-8BD0-9AE9B21AFD8D
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ms.topic: article
 ---
 

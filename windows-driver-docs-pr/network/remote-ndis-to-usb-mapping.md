@@ -4,7 +4,7 @@ description: Remote NDIS To USB Mapping
 keywords:
 - USB WDK networking
 - Remote NDIS WDK networking , mapping to USB
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Remote NDIS To USB Mapping

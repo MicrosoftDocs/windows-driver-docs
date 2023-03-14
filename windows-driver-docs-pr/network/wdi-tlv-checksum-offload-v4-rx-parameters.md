@@ -2,7 +2,7 @@
 title: WDI_TLV_CHECKSUM_OFFLOAD_V4_RX_PARAMETERS (0xD2)
 ms.topic: reference
 description: WDI_TLV_CHECKSUM_OFFLOAD_V4_RX_PARAMETERS is a TLV that contains parameters for Rx checksum offload for IPv4.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_CHECKSUM_OFFLOAD_V4_RX_PARAMETERS (0xD2) Network Drivers Starting with Windows Vista
 ---

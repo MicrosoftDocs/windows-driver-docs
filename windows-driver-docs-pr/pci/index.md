@@ -13,7 +13,7 @@ keywords:
 - power management WDK PCI
 - querying power management capability data
 - headers WDK PCI
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ms.topic: article
 ---
 

@@ -8,7 +8,7 @@ keywords:
 - buses WDK , PCMCIA
 - memory windows WDK PCMCIA bus
 - memory WDK PCMCIA bus
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ms.topic: article
 ---
 

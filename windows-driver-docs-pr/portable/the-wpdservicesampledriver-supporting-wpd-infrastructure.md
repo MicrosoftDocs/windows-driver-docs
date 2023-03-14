@@ -1,7 +1,7 @@
 ---
 description: Support for WPD infrastructure (WpdServiceSampleDriverSample)
 title: Support for WPD infrastructure (WpdServiceSampleDriverSample)
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Support for WPD infrastructure (WpdServiceSampleDriverSample)

@@ -1,7 +1,7 @@
 ---
 title: Resolving Operational NDIS QoS Parameters
 description: Resolving Operational NDIS QoS Parameters
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Resolving Operational NDIS QoS Parameters

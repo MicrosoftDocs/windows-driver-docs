@@ -4,7 +4,7 @@ description: Managing NDIS Network Interfaces
 keywords:
 - NDIS network interfaces WDK , managing
 - network interfaces WDK , managing
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Managing NDIS Network Interfaces

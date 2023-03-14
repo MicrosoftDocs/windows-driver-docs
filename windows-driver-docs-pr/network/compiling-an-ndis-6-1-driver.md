@@ -4,7 +4,7 @@ description: This section explains how to compile an NDIS 6.1 driver
 keywords:
 - NDIS WDK , compile flags
 - compile flags WDK networking
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Compiling an NDIS 6.1 Driver

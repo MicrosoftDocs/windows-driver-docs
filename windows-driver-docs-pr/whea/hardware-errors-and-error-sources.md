@@ -16,7 +16,7 @@ keywords:
 - fatal hardware errors WDK WHEA
 - non-fatal hardware errors WDK WHEA
 - hardware error sources WDK WHEA
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Hardware Errors and Error Sources

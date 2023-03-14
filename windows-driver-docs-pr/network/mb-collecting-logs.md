@@ -2,6 +2,7 @@
 title: MB Collecting Logs
 description: MB Collecting Logs
 ms.date: 03/10/2021
+ms.custom: UpdateFrequency3
 ---
 
 # Mobile Broadband Collecting Logs

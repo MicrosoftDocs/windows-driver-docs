@@ -1,7 +1,7 @@
 ---
 title: How to Manage the PFA Memory List
 description: How to Manage the PFA Memory List
-ms.date: 06/28/2021
+ms.date: 03/03/2023
 ---
 
 # How to Manage the Predictive Failure Analysis (PFA) Memory List

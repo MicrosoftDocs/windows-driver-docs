@@ -1,7 +1,7 @@
 ---
 title: Using NDIS 6.30 Data Structures
 description: Using NDIS 6.30 Data Structures
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Using NDIS 6.30 Data Structures

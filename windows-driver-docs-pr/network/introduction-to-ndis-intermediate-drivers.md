@@ -7,7 +7,7 @@ keywords:
 - stacks WDK networking
 - internal bindings WDK NDIS intermediate
 - bindings WDK NDIS intermediate
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # NDIS Intermediate Drivers Overview

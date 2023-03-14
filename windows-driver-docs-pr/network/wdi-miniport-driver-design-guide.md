@@ -3,7 +3,7 @@ title: WDI Miniport Driver Design Guide
 description: WLAN Device Driver Interface (WDI) is the new WLAN Universal Windows driver model for both Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile.
 keywords:
 - wi-fi drivers, wi-fi drivers Windows 10, wireless drivers, wireless drivers windows 10, wlan drivers, wlan drivers windows 10, wlan driver interface, WDI drivers, WDI network drivers, WDI Windows 10
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # WDI Miniport Driver Design Guide

@@ -2,7 +2,7 @@
 title: OID_WDI_GET_PM_PROTOCOL_OFFLOAD
 ms.topic: reference
 description: OID_WDI_GET_PM_PROTOCOL_OFFLOAD requests a list of protocol offloads for power management.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - OID_WDI_GET_PM_PROTOCOL_OFFLOAD Network Drivers Starting with Windows Vista
 ---

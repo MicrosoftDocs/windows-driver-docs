@@ -2,7 +2,7 @@
 title: OID_WDI_TASK_CHANGE_OPERATION_MODE
 ms.topic: reference
 description: OID_WDI_TASK_CHANGE_OPERATION_MODE configures the operation mode for the port.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - OID_WDI_TASK_CHANGE_OPERATION_MODE Network Drivers Starting with Windows Vista
 ms.custom: 19H1

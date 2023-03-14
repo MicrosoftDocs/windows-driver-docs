@@ -2,7 +2,7 @@
 title: WDI_TLV_FTM_RESPONSE_STATUS
 ms.topic: reference
 description: WDI_TLV_FTM_RESPONSE_STATUS is a TLV that contains the Fine Timing Measurement (FTM) response status from a target BSS.
-ms.date: 02/15/2019
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_FTM_RESPONSE_STATUS Network Drivers Starting with Windows Vista
 ms.custom: 19H1

@@ -4,6 +4,7 @@ description: MBIMEx 4.0 5G SA Phase 2 includes support for end-to-end URSP handl
 keywords:
 - MBIMEx 4.0 – 5G SA Phase 2 support
 ms.date: 05/23/2022
+ms.custom: UpdateFrequency3
 ---
 
 # MBIMEx 4.0 – 5G SA Phase 2 support

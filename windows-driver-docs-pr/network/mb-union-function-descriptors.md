@@ -2,6 +2,7 @@
 title: MB union function descriptors
 description: This section describes union function descriptors and MBIM backwards-compatible functions for MB devices
 ms.date: 04/20/2017
+ms.custom: UpdateFrequency3
 ---
 
 # MB Union Function Descriptors

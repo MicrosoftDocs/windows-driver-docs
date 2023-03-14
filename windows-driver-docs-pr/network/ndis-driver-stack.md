@@ -3,7 +3,7 @@ title: NDIS Driver Stack
 description: NDIS Driver Stack
 keywords:
 - driver stacks WDK networking , NDIS basic configuration
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # NDIS Driver Stack

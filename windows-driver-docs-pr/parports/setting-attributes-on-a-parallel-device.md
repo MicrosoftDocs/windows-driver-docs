@@ -4,7 +4,7 @@ description: Setting Attributes on a Parallel Device
 keywords:
 - parallel devices WDK , attributes
 - attributes WDK parallel devices
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Setting Attributes on a Parallel Device

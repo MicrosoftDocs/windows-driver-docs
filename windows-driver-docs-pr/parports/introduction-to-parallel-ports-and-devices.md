@@ -6,7 +6,7 @@ keywords:
 - ports WDK , parallel
 - parallel ports WDK , about parallel ports
 - parallel devices WDK
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Introduction to Parallel Ports and Devices

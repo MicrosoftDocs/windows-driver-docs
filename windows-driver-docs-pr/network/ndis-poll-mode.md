@@ -3,7 +3,7 @@ title: NDIS Poll Mode
 description: NDIS Poll Mode is an OS controlled polling execution model that drives the network interface datapath.
 keywords:
 - NDIS Poll Mode
-ms.date: 08/26/2022
+ms.date: 03/02/2023
 ms.localizationpriority: medium
 ---
 

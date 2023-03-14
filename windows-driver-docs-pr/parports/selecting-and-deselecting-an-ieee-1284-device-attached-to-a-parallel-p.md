@@ -4,7 +4,7 @@ description: Selecting and Deselecting an IEEE 1284 Device Attached to a Paralle
 keywords:
 - IEEE 1284 WDK
 - parallel ports WDK , IEEE 1284 devices
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Selecting and Deselecting an IEEE 1284 Device Attached to a Parallel Port

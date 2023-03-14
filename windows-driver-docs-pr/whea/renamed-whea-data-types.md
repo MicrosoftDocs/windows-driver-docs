@@ -6,7 +6,7 @@ keywords:
 - WHEA WDK , renamed data types
 - hardware errors WDK WHEA , renamed data types
 - renamed data types WDK WHEA
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Renamed WHEA Data Types

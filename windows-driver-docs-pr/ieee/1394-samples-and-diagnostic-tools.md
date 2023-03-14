@@ -7,7 +7,7 @@ keywords:
 - IEEE 1394 WDK buses , diagnostic tools
 - 1394 WDK buses , diagnostic tools
 - sample drivers WDK IEEE 1394 bus
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # 1394 Samples and Diagnostic Tools

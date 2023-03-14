@@ -4,7 +4,7 @@ description: Using NDIS 6.1 Data Structures
 keywords:
 - data structures WDK networking
 - NDIS WDK , structures
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Using NDIS 6.1 Data Structures

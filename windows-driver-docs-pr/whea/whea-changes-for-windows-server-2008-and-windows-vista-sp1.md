@@ -10,7 +10,7 @@ keywords:
 - Windows Server 2008 WDK WHEA , WHEA changes
 - Windows Vista SP1 WDK WHEA
 - Windows Vista SP1 WDK WHEA , WHEA changes
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # WHEA Changes for Windows Server 2008 and Windows Vista SP1

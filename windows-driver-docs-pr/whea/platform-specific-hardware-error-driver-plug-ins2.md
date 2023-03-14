@@ -8,7 +8,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA
 - hardware error driver plug-ins WDK WHEA
 - PSHED plug-ins WDK WHEA
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Platform-Specific Hardware Error Driver Plug-Ins

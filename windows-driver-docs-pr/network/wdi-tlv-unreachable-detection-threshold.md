@@ -2,7 +2,7 @@
 title: WDI_TLV_UNREACHABLE_DETECTION_THRESHOLD
 ms.topic: reference
 description: WDI_TLV_UNREACHABLE_DETECTION_THRESHOLD is a TLV that contains the unreachable detection threshold.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_UNREACHABLE_DETECTION_THRESHOLD Network Drivers Starting with Windows Vista
 ---

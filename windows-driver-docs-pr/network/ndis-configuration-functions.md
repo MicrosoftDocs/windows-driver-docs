@@ -3,7 +3,7 @@ title: NDIS Configuration Functions
 description: NDIS Configuration Functions
 keywords:
 - configuration functions WDK NDIS
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # NDIS Configuration Functions

@@ -6,7 +6,7 @@ keywords:
 - NDIS ports WDK , deactivating
 - deactivating NDIS ports WDK NDIS
 - deactivation PnP events WDK NDIS ports
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Deactivating an NDIS Port

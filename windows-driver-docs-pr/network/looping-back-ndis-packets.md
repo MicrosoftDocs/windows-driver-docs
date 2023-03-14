@@ -1,7 +1,7 @@
 ---
 title: Looping Back NDIS Packets
 description: Looping Back NDIS Packets
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Looping Back NDIS Packets

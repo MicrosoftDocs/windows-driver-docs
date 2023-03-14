@@ -1,7 +1,7 @@
 ---
 title: Managing SD Cards in User-Mode Applications (Windows Drivers)
 description: Learn more about Managing SD Cards in User-Mode Applications.
-ms.date: 10/17/2022
+ms.date: 03/03/2023
 ---
 
 # Managing SD Cards in User-Mode Applications

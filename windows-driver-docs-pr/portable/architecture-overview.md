@@ -1,7 +1,7 @@
 ---
 description: Architecture overview of Windows portable devices
 title: Architecture Overview
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Architecture Overview

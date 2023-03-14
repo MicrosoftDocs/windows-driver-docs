@@ -11,7 +11,7 @@ keywords:
 - host controllers WDK SD bus
 - hardware WDK SD bus
 - software WDK SD bus
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # SD Card Driver Stack

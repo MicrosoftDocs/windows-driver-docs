@@ -2,7 +2,7 @@
 title: NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG
 ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG status indication to report the current timestamping configuration of the NIC hardware.
-ms.date: 01/31/2021
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG Network Drivers Starting with Windows Vista
 ---

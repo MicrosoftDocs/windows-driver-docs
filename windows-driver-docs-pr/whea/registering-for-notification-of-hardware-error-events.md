@@ -7,7 +7,7 @@ keywords:
 - notifications WDK WHEA
 - WHEA WDK , registering for event notifications
 - Windows Hardware Error Architecture WDK , registering for event notifications
-ms.date: 02/03/2022
+ms.date: 03/03/2023
 ---
 
 # Registering for Notification of Hardware Error Events

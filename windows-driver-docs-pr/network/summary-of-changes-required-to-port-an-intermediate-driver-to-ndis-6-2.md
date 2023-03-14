@@ -6,7 +6,7 @@ keywords:
 - porting intermediate drivers to NDIS 6.20 WDK
 - intermediate drivers WDK
 - intermediate drivers WDK , porting to NDIS 6.20
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Summary of Changes Required to Port an Intermediate Driver to NDIS 6.20

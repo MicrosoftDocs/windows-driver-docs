@@ -7,7 +7,7 @@ keywords:
 - IRQLs WDK SD bus
 - hardware interrupts WDK SD bus
 - interrupt notifications WDK SD bus
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Handling SD Card Interrupts

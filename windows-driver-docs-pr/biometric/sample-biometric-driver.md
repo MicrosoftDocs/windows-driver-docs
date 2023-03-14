@@ -3,7 +3,7 @@ title: Sample Biometric Driver
 description: Sample Biometric Driver
 keywords:
 - biometric drivers WDK , sample drivers
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Sample Biometric Driver

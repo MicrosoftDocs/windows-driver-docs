@@ -4,7 +4,7 @@ description: Installing Parallel Ports and Devices
 keywords:
 - parallel devices WDK , installing
 - parallel ports WDK , installing
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Installing Parallel Ports and Devices

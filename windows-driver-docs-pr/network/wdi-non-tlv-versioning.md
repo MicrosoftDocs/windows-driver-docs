@@ -1,7 +1,7 @@
 ---
 title: WDI non-TLV versioning
 description: This section describes WDI non-TLV versioning
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # WDI non-TLV versioning

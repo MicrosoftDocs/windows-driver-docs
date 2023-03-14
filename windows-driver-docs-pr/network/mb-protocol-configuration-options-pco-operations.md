@@ -4,6 +4,7 @@ description: MB Protocol Configuration Options (PCO) operations
 keywords:
 - MB PCO options, Mobile Broadband PCO options, MB Protocol Configuration Options, Mobile Broadband Protocol Configuration Options, WDK network drivers, MBB miniport drivers
 ms.date: 03/01/2021
+ms.custom: UpdateFrequency3
 ---
 
 # MB Protocol Configuration Options (PCO) operations

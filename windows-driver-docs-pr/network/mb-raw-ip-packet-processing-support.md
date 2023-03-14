@@ -2,6 +2,7 @@
 title: MB Raw IP Packet Processing Support
 description: MB Raw IP Packet Processing Support
 ms.date: 04/20/2017
+ms.custom: UpdateFrequency3
 ---
 
 # MB Raw IP Packet Processing Support

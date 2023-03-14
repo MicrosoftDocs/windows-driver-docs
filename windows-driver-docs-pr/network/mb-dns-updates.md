@@ -2,6 +2,7 @@
 title: MB DNS Updates
 description: MB DNS Updates
 ms.date: 04/20/2017
+ms.custom: UpdateFrequency3
 ---
 
 # MB DNS Updates

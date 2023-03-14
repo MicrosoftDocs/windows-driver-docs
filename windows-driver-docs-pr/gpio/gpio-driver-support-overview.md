@@ -1,7 +1,7 @@
 ---
 title: GPIO Driver Support Overview
 description: Starting with Windows 8, the GPIO framework extension (GpioClx) simplifies the task of writing a driver for a GPIO controller device.
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # GPIO Driver Support Overview

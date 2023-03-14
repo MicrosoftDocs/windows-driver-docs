@@ -7,7 +7,7 @@ keywords:
 - driver stacks WDK IEEE 1394 bus
 - stacks WDK IEEE 1394 bus
 - device stacks WDK IEEE 1394 bus
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # The IEEE 1394 Driver Stack

@@ -1,7 +1,7 @@
 ---
 title: Indicating NDIS QoS Parameter Status
 description: Indicating NDIS QoS Parameter Status
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Indicating NDIS QoS Parameter Status

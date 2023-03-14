@@ -2,7 +2,7 @@
 title: NDIS_STATUS_LINK_SPEED_CHANGE
 ms.topic: reference
 description: The NDIS_STATUS_LINK_SPEED_CHANGE status indicates a link speed change.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_LINK_SPEED_CHANGE Network Drivers Starting with Windows Vista
 ---

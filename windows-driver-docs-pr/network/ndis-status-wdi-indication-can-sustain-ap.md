@@ -2,7 +2,7 @@
 title: NDIS_STATUS_WDI_INDICATION_CAN_SUSTAIN_AP
 ms.topic: reference
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_CAN_SUSTAIN_AP to indicate that the port is ready to receive a OID_WDI_TASK_START_AP request, after previously indicating NDIS_STATUS_WDI_INDICATION_STOP_AP.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_WDI_INDICATION_CAN_SUSTAIN_AP Network Drivers Starting with Windows Vista
 ---

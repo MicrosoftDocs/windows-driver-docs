@@ -1,7 +1,7 @@
 ---
 title: Develop and validate WDI drivers for Reset Recovery
 description: The UE has a built-in hook for stressing reset and recovery by simulating firmware hangs.
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Develop and validate WDI drivers for Reset Recovery

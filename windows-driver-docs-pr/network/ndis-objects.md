@@ -4,7 +4,7 @@ description: NDIS Objects
 keywords:
 - allocating generic NDIS objects
 - generic NDIS objects WDK networking
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # NDIS Objects

@@ -1,7 +1,7 @@
 ---
 title: Originating NDIS status indications from physical net adapters
 description: Originating NDIS Status Indications from Physical Network Adapters
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Originating NDIS Status Indications from Physical Network Adapters

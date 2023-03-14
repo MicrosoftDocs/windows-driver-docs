@@ -3,7 +3,7 @@ title: Remote NDIS Device Control
 description: Remote NDIS Device Control
 keywords:
 - Remote NDIS WDK networking , device control
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Remote NDIS Device Control

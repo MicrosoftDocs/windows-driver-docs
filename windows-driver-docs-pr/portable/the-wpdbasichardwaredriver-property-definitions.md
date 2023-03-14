@@ -1,7 +1,7 @@
 ---
 description: Defining the Sensor Properties
 title: Defining the Sensor Properties
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Defining the Sensor Properties

@@ -7,7 +7,7 @@ keywords:
 - OIDs WDK networking , WMI
 - GUIDs WDK networking
 - Windows Management Instrumentation WDK networking , GUIDs
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Filling in an NDIS\_GUID Structure

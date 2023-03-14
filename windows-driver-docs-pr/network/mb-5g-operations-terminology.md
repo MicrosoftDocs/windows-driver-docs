@@ -4,7 +4,7 @@ description: MB 5G Operations Terminology
 keywords:
 - MB 5G Operations Terminology, Mobile Broadband 5G Operations Terminology
 ms.date: 03/01/2021
-ms.custom: 19H1
+ms.custom: UpdateFrequency3
 ---
 
 # MB 5G Operations Terminology

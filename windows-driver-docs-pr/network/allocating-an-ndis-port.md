@@ -11,7 +11,7 @@ keywords:
 - port states WDK NDIS
 - allocated port state WDK NDIS
 - port numbers
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Allocating an NDIS Port
