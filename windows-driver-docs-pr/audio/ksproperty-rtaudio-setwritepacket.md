@@ -4,6 +4,7 @@ description: KSPROPERTY\_RTAUDIO\_SETWRITEPACKET informs the driver that the OS 
 keywords: ["KSPROPERTY_RTAUDIO_SETWRITEPACKET Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_RTAUDIO_SETWRITEPACKET
 api_location:

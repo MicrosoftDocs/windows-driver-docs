@@ -4,6 +4,7 @@ description: KSNODETYPE\_SRC
 keywords: ["KSNODETYPE_SRC Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_SRC
 api_type:

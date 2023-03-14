@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xBC NETWORK_BOOT_DUPLICATE_ADDRESS", "NETWORK_BOOT_DUPLIC
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - NETWORK_BOOT_DUPLICATE_ADDRESS
 api_type:

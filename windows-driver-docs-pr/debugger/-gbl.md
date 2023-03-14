@@ -5,6 +5,7 @@ keywords: ["ACPI (Advanced Configuration and Power Interface), RSDT header infor
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - gbl
 api_type:

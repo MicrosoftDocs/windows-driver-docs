@@ -5,6 +5,7 @@ keywords: ["CTRL+C (Break) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CTRL+C (Break)
 api_type:

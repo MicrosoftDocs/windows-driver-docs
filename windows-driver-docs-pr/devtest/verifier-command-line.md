@@ -5,6 +5,7 @@ keywords:
 - Driver Verifier Command Syntax Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Driver Verifier Command Syntax
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x6D SESSION1_INITIALIZATION_FAILED", "SESSION1_INITIALIZA
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SESSION1_INITIALIZATION_FAILED
 api_type:

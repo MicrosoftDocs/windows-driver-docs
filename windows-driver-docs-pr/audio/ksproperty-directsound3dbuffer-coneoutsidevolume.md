@@ -4,6 +4,7 @@ description: The KSPROPERTY\_DIRECTSOUND3DBUFFER\_CONEOUTSIDEVOLUME property spe
 keywords: ["KSPROPERTY_DIRECTSOUND3DBUFFER_CONEOUTSIDEVOLUME Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DIRECTSOUND3DBUFFER_CONEOUTSIDEVOLUME
 api_location:

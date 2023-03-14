@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x3A SYSTEM_UNWIND_PREVIOUS_USER", "SYSTEM_UNWIND_PREVIOUS
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SYSTEM_UNWIND_PREVIOUS_USER
 api_type:

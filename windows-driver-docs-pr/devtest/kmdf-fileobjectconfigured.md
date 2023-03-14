@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["FileObjectConfigured rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - FileObjectConfigured
 api_type:

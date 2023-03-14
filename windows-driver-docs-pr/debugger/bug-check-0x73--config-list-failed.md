@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x73 CONFIG_LIST_FAILED", "CONFIG_LIST_FAILED"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CONFIG_LIST_FAILED
 api_type:

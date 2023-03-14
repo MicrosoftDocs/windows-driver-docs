@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x199 KERNEL_STORAGE_SLOT_IN_USE", "KERNEL_STORAGE_SLOT_IN
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KERNEL_STORAGE_SLOT_IN_USE
 api_type:

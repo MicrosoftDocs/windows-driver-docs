@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x8B MBR_CHECKSUM_MISMATCH", "MBR_CHECKSUM_MISMATCH"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MBR_CHECKSUM_MISMATCH
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xE NO_USER_MODE_CONTEXT", "NO_USER_MODE_CONTEXT"]
 ms.date: 06/21/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - NO_USER_MODE_CONTEXT
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x100000EA THREAD_STUCK_IN_DEVICE_DRIVER_M", "THREAD_STUCK
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - THREAD_STUCK_IN_DEVICE_DRIVER_M
 api_type:

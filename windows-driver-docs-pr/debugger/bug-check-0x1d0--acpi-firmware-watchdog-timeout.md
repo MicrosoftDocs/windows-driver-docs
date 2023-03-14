@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1D0 ACPI_FIRMWARE_WATCHDOG_TIMEOUT",  "ACPI_FIRMWARE_WAT
 ms.date: 04/19/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ACPI_FIRMWARE_WATCHDOG_TIMEOUT 
 api_type:

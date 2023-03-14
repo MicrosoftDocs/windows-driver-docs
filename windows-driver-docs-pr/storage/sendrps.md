@@ -4,6 +4,7 @@ description: The SendRPS WMI method sends a read port status block (RPS) request
 keywords: ["SendRPS function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SendRPS
 api_location:

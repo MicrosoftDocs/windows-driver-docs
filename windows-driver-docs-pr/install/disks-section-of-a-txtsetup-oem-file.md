@@ -4,6 +4,7 @@ description: The Disks section identifies the disks in the device installation k
 keywords: ["Disks Section of a TxtSetup.oem File Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Disks Section of a TxtSetup.oem File
 api_type:

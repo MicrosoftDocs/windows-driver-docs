@@ -5,6 +5,7 @@ keywords: ["ndiskd.netring Windows Debugging"]
 ms.date: 10/11/2021
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ndiskd.netring
 api_type:

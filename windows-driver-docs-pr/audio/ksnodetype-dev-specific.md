@@ -4,6 +4,7 @@ description: KSNODETYPE\_DEV\_SPECIFIC
 keywords: ["KSNODETYPE_DEV_SPECIFIC Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_DEV_SPECIFIC
 api_type:

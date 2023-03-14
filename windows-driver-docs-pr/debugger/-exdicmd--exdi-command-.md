@@ -5,6 +5,7 @@ keywords: ["EXDI", "command", ".exdicmd (EXDI Command) Windows Debugging"]
 ms.date: 04/29/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .exdicmd (EXDI Command)
 api_type:

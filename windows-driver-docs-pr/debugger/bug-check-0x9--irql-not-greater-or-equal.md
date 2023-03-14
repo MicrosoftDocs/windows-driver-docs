@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x9 IRQL_NOT_GREATER_OR_EQUAL", "IRQL_NOT_GREATER_OR_EQUAL
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IRQL_NOT_GREATER_OR_EQUAL
 api_type:

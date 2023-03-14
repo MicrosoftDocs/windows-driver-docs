@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["IoBuildSynchronousFsdRequestWait rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IoBuildSynchronousFsdRequestWait
 api_type:

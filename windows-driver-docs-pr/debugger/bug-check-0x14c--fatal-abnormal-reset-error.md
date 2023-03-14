@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x14C FATAL_ABNORMAL_RESET_ERROR", "FATAL_ABNORMAL_RESET_E
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - FATAL_ABNORMAL_RESET_ERROR
 api_type:

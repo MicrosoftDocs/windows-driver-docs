@@ -5,6 +5,7 @@ keywords: ["; (Command Separator) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ; (Command Separator)
 api_type:

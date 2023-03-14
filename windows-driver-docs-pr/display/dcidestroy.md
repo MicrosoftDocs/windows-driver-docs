@@ -4,6 +4,7 @@ description: DCIDestroy
 keywords: ["DCIDestroy Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DCIDestroy
 api_type:

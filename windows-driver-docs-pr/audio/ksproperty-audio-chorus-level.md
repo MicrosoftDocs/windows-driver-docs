@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_CHORUS\_LEVEL property specifies the chorus 
 keywords: ["KSPROPERTY_AUDIO_CHORUS_LEVEL Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_CHORUS_LEVEL
 api_location:

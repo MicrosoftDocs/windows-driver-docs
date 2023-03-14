@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["TargetRelationNeedsRef rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TargetRelationNeedsRef
 api_type:

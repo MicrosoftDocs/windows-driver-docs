@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x130 DYNAMIC_ADD_PROCESSOR_MISMATCH", "DYNAMIC_ADD_PROCES
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DYNAMIC_ADD_PROCESSOR_MISMATCH
 api_type:

@@ -4,6 +4,7 @@ description: The DXGK\_ALLOCATIONGROUPOUT structure is reserved for system use. 
 keywords: ["_DXGK_ALLOCATIONGROUPOUT structure Display Devices", "DXGK_ALLOCATIONGROUPOUT structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGK_ALLOCATIONGROUPOUT
 api_location:

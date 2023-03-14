@@ -4,6 +4,7 @@ description: The DXGKARG\_CREATEALLOCATION2 structure is reserved for system use
 keywords: ["_DXGKARG_CREATEALLOCATION2 structure Display Devices", "DXGKARG_CREATEALLOCATION2 structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGKARG_CREATEALLOCATION2
 api_location:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x38 SERIAL_DRIVER_INTERNAL", "SERIAL_DRIVER_INTERNAL"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SERIAL_DRIVER_INTERNAL
 api_type:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_COPY\_PROTECTION property specifies the copy
 keywords: ["KSPROPERTY_AUDIO_COPY_PROTECTION Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_COPY_PROTECTION
 api_location:

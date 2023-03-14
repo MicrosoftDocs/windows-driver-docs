@@ -4,6 +4,7 @@ description: The EXT\_TDOP\_SET\_FROM\_TYPE\_ID\_AND\_U64 sub-operation of the D
 keywords: ["EXT_TDOP_SET_FROM_TYPE_ID_AND_U64 Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EXT_TDOP_SET_FROM_TYPE_ID_AND_U64
 api_type:

@@ -5,6 +5,7 @@ keywords: ["List Debugging Servers (.servers) command", "remote debugging throug
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .servers (List Debugging Servers)
 api_type:

@@ -4,6 +4,7 @@ description: Reserved for system use. Do not use it in your driver.Note  This 
 keywords: ["_DXGK_MULTIPLANE_OVERLAY_FILTER structure Display Devices", "DXGK_MULTIPLANE_OVERLAY_FILTER structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGK_MULTIPLANE_OVERLAY_FILTER
 api_location:

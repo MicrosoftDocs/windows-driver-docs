@@ -4,6 +4,7 @@ description: Learn about the D3DKMT\_OUTPUTDUPL\_GET\_POINTER\_SHAPE\_DATA struc
 keywords: ["D3DKMT_OUTPUTDUPL_GET_POINTER_SHAPE_DATA structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DKMT_OUTPUTDUPL_GET_POINTER_SHAPE_DATA
 api_location:

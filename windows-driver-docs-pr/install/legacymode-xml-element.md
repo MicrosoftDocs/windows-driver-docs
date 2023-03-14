@@ -4,6 +4,7 @@ description: The legacyMode XML element is an empty element that sets the legacy
 keywords: ["legacyMode XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - legacyMode XML Element
 api_type:

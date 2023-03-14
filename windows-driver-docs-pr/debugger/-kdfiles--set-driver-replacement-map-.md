@@ -5,6 +5,7 @@ keywords: ["Set Driver Replacement Map (.kdfiles) command", "driver replacement 
 ms.date: 08/11/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .kdfiles (Set Driver Replacement Map)
 api_type:

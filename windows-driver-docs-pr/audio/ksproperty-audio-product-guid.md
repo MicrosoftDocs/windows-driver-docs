@@ -4,6 +4,7 @@ description: Learn about the KSPROPERTY\_AUDIO\_PRODUCT\_GUID parameter. This pa
 keywords: ["KSPROPERTY_AUDIO_PRODUCT_GUID Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_PRODUCT_GUID
 api_type:

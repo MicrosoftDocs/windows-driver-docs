@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1E9 ILLEGAL_ATS_INITIALIZATION", "ILLEGAL_ATS_INITIALIZA
 ms.date: 08/03/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ILLEGAL_ATS_INITIALIZATION
 api_type:

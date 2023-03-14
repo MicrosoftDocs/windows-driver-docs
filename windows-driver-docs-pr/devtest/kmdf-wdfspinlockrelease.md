@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["WdfSpinlockRelease rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WdfSpinlockRelease
 api_type:

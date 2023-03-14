@@ -4,6 +4,7 @@ description: The KSPROPERTY\_SYSAUDIO\_DEVICE\_COUNT property retrieves a count 
 keywords: ["KSPROPERTY_SYSAUDIO_DEVICE_COUNT Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_SYSAUDIO_DEVICE_COUNT
 api_location:

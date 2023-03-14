@@ -4,6 +4,7 @@ description: The KSPROPERTY\_SYSAUDIO\_DEVICE\_INSTANCE property specifies the c
 keywords: ["KSPROPERTY_SYSAUDIO_DEVICE_INSTANCE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_SYSAUDIO_DEVICE_INSTANCE
 api_location:

@@ -4,6 +4,7 @@ description: KSNODETYPE\_SUM
 keywords: ["KSNODETYPE_SUM Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_SUM
 api_type:

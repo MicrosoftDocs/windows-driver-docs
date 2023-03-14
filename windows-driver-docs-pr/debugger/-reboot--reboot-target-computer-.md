@@ -5,6 +5,7 @@ keywords: ["Reboot Target Computer (.reboot) command", "controlling the target, 
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .reboot (Reboot Target Computer)
 api_type:

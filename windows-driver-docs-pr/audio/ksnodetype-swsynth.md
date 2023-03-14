@@ -4,6 +4,7 @@ description: KSNODETYPE\_SWSYNTH
 keywords: ["KSNODETYPE_SWSYNTH Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_SWSYNTH
 api_type:

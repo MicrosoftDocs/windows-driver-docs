@@ -4,6 +4,7 @@ description: watermarkPath XML Element
 keywords: ["watermarkPath XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - watermarkPath XML Element
 api_type:

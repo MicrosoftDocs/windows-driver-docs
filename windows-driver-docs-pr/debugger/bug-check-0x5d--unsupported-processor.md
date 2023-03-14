@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x5D UNSUPPORTED_PROCESSOR", "UNSUPPORTED_PROCESSOR"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - UNSUPPORTED_PROCESSOR
 api_type:

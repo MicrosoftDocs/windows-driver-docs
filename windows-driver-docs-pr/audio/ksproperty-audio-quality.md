@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_QUALITY property specifies the quality level
 keywords: ["KSPROPERTY_AUDIO_QUALITY Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_QUALITY
 api_location:

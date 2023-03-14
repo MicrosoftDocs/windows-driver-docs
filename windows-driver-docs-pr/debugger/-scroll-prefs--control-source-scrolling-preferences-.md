@@ -5,6 +5,7 @@ keywords: [".scroll_prefs (Control Source Scrolling Preferences) Windows Debuggi
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .scroll_prefs (Control Source Scrolling Preferences)
 api_type:

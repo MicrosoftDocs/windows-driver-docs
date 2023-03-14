@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x138 GPIO_CONTROLLER_DRIVER_ERROR", "GPIO_CONTROLLER_DRIV
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - GPIO_CONTROLLER_DRIVER_ERROR
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Set Local Context (.frame) command", "memory, Set Local Context (.fr
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .frame (Set Local Context)
 api_type:

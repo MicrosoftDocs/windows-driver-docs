@@ -4,6 +4,7 @@ description: KSNODETYPE\_DAC
 keywords: ["KSNODETYPE_DAC Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_DAC
 api_type:

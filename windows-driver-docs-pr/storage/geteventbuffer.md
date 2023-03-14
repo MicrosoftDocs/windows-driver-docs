@@ -4,6 +4,7 @@ description: The GetEventBuffer WMI method retrieves the next events in the HBA'
 keywords: ["GetEventBuffer function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - GetEventBuffer
 api_location:

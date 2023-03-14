@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x122 WHEA_INTERNAL_ERROR", "WHEA_INTERNAL_ERROR"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WHEA_INTERNAL_ERROR
 api_type:

@@ -4,6 +4,7 @@ description: DCIDraw
 keywords: ["DCIDraw Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DCIDraw
 api_type:

@@ -4,6 +4,7 @@ description: DIF_INSTALLWIZARD
 keywords: ["DIF_INSTALLWIZARD Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_INSTALLWIZARD
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x7F UNEXPECTED_KERNEL_MODE_TRAP", "UNEXPECTED_KERNEL_MODE
 ms.date: 02/16/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - UNEXPECTED_KERNEL_MODE_TRAP
 api_type:

@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["IoBuildDeviceControlNoFree rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IoBuildDeviceControlNoFree
 api_type:

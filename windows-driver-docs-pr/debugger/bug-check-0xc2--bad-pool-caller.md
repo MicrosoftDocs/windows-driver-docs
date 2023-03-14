@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xC2 BAD_POOL_CALLER", "BAD_POOL_CALLER"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BAD_POOL_CALLER
 api_type:

@@ -4,6 +4,7 @@ description: DCISendCommand
 keywords: ["DCISendCommand Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DCISendCommand
 api_type:

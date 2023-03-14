@@ -4,6 +4,7 @@ description: A HwComponent section lists the drivers available for a particular 
 keywords: ["HwComponent Section of a TxtSetup.oem File Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - HwComponent Section of a TxtSetup.oem File
 api_type:

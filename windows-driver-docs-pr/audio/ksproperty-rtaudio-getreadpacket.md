@@ -4,6 +4,7 @@ description: KSPROPERTY\_RTAUDIO\_GETREADPACKET returns information about captur
 keywords: ["KSPROPERTY_RTAUDIO_GETREADPACKET Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_RTAUDIO_GETREADPACKET
 api_location:

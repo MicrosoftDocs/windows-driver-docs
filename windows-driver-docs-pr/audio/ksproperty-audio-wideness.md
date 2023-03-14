@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_WIDENESS property specifies the wideness (ap
 keywords: ["KSPROPERTY_AUDIO_WIDENESS Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_WIDENESS
 api_location:

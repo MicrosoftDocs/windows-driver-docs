@@ -5,6 +5,7 @@ keywords: [".urestart (Unregister for Restart) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .urestart (Unregister for Restart)
 api_type:

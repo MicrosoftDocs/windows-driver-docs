@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xF6 PCI_VERIFIER_DETECTED_VIOLATION", "PCI_VERIFIER_DETEC
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PCI_VERIFIER_DETECTED_VIOLATION
 api_type:

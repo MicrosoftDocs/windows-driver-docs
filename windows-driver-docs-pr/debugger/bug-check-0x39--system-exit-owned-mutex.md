@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x39 SYSTEM_EXIT_OWNED_MUTEX", "SYSTEM_EXIT_OWNED_MUTEX"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SYSTEM_EXIT_OWNED_MUTEX
 api_type:

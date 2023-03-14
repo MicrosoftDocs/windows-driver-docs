@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x42 ATDISK_DRIVER_INTERNAL", "ATDISK_DRIVER_INTERNAL"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ATDISK_DRIVER_INTERNAL
 api_type:

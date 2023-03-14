@@ -5,6 +5,7 @@ keywords: ["Bug Check 17C PDC_LOCK_WATCHDOG_LIVEDUMP", "PDC_LOCK_WATCHDOG_LIVEDU
 ms.date: 01/04/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PDC_LOCK_WATCHDOG_LIVEDUMP
 api_type:

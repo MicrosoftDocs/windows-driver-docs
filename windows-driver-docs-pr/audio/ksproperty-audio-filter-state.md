@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_FILTER\_STATE property is used to query a GF
 keywords: ["KSPROPERTY_AUDIO_FILTER_STATE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_FILTER_STATE
 api_location:

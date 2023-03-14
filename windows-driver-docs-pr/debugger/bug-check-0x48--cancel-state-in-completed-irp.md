@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x48 CANCEL_STATE_IN_COMPLETED_IRP", "CANCEL_STATE_IN_COMP
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CANCEL_STATE_IN_COMPLETED_IRP
 api_type:

@@ -5,6 +5,7 @@ keywords: [".rrestart (Register for Restart) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .rrestart (Register for Restart)
 api_type:

@@ -5,6 +5,7 @@ keywords: ["usbkd.usblist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - usbkd.usblist
 api_type:

@@ -4,6 +4,7 @@ description: The properties contained in the KSPROPSETID\_AudioEngine property s
 keywords: ["KSPROPERTY_AUDIOENGINE enumeration Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOENGINE
 api_location:

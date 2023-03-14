@@ -4,6 +4,7 @@ description: Union component used when the MajorFunction field of the FLT_IO_PAR
 keywords: ["FLT_PARAMETERS for IRP_MJ_QUERY_QUOTA union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - FLT_PARAMETERS
 api_location:

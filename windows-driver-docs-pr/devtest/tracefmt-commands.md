@@ -5,6 +5,7 @@ keywords:
 - Tracefmt Commands Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Tracefmt Commands
 api_type:

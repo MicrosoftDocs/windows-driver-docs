@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AEC\_NOISE\_FILL\_ENABLE property is used to enable
 keywords: ["KSPROPERTY_AEC_NOISE_FILL_ENABLE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AEC_NOISE_FILL_ENABLE
 api_location:

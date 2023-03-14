@@ -4,6 +4,7 @@ description: The KSPROPERTY\_SYSAUDIO\_DEVICE\_FRIENDLY\_NAME property retrieves
 keywords: ["KSPROPERTY_SYSAUDIO_DEVICE_FRIENDLY_NAME Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_SYSAUDIO_DEVICE_FRIENDLY_NAME
 api_location:

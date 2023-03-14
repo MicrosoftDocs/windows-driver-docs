@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xEF CRITICAL_PROCESS_DIED", "CRITICAL_PROCESS_DIED"]
 ms.date: 12/16/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CRITICAL_PROCESS_DIED
 api_type:

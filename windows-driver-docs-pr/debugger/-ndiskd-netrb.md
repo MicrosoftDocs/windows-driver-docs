@@ -5,6 +5,7 @@ keywords: ["ndiskd.netrb Windows Debugging"]
 ms.date: 06/17/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ndiskd.netrb
 api_type:

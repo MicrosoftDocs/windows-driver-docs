@@ -4,6 +4,7 @@ description: DCIBeginAccess
 keywords: ["DCIBeginAccess Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DCIBeginAccess
 api_type:

@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["DeviceInitAPI rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DeviceInitAPI
 api_type:

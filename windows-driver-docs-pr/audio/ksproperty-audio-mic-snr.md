@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_MIC\_SNR property specifies the microphone s
 keywords: ["KSPROPERTY_AUDIO_MIC_SNR Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_MIC_SNR
 api_location:

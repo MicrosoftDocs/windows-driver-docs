@@ -4,6 +4,7 @@ description: DIF_SELECTBESTCOMPATDRV
 keywords: ["DIF_SELECTBESTCOMPATDRV Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_SELECTBESTCOMPATDRV
 api_location:

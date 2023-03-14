@@ -4,6 +4,7 @@ description: KSNODETYPE\_MUX
 keywords: ["KSNODETYPE_MUX Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_MUX
 api_type:

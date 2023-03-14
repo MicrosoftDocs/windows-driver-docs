@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x189 BAD_OBJECT_HEADER", "BAD_OBJECT_HEADER"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BAD_OBJECT_HEADER
 api_type:

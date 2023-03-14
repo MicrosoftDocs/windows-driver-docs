@@ -5,6 +5,7 @@ description: "Learn more about: IrqlKeDispatchLte rule (wdm)"
 keywords: ["IrqlKeDispatchLte rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IrqlKeDispatchLte
 api_type:

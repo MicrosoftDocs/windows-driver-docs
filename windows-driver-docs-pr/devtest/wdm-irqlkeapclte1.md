@@ -5,6 +5,7 @@ description: "Learn more about: IrqlKeApcLte1 rule (wdm)"
 keywords: ["IrqlKeApcLte1 rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IrqlKeApcLte1
 api_type:

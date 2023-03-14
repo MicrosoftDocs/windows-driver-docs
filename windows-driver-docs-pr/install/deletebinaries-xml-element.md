@@ -4,6 +4,7 @@ description: The deleteBinaries XML element is an empty element that sets the de
 keywords: ["deleteBinaries XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - deleteBinaries XML Element
 api_type:

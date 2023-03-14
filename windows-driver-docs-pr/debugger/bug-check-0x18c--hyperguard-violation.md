@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x18C HYPERGUARD_VIOLATION", "HYPERGUARD_VIOLATION"]
 ms.date: 01/04/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - HYPERGUARD_VIOLATION
 api_type:

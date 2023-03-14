@@ -5,6 +5,7 @@ keywords: ["PCI IRQ routing table", "peripheral component interconnect (PCI)", "
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - pciir
 api_type:

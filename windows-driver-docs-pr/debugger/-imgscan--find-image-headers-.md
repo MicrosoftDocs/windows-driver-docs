@@ -5,6 +5,7 @@ keywords: ["Find Image Headers (.imgscan) command", ".imgscan (Find Image Header
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .imgscan (Find Image Headers)
 api_type:

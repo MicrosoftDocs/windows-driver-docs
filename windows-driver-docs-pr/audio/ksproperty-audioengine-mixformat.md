@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIOENGINE\_MIXFORMAT property request retrieves t
 keywords: ["KSPROPERTY_AUDIOENGINE_MIXFORMAT Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOENGINE_MIXFORMAT
 api_location:

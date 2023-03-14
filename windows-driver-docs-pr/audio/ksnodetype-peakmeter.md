@@ -4,6 +4,7 @@ description: KSNODETYPE\_PEAKMETER
 keywords: ["KSNODETYPE_PEAKMETER Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_PEAKMETER
 api_type:

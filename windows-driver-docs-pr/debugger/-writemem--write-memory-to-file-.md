@@ -5,6 +5,7 @@ keywords: [".writemem (Write Memory to File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .writemem (Write Memory to File)
 api_type:

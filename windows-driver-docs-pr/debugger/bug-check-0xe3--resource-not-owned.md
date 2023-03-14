@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xE3 RESOURCE_NOT_OWNED", "RESOURCE_NOT_OWNED"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - RESOURCE_NOT_OWNED
 api_type:

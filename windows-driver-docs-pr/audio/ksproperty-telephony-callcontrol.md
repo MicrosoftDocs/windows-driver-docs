@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TELEPHONY\_CALLCONTROL property is used to start an
 keywords: ["KSPROPERTY_TELEPHONY_CALLCONTROL Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TELEPHONY_CALLCONTROL
 api_location:

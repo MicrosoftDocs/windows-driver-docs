@@ -5,6 +5,7 @@ keywords: ["strings", "UNICODE_STRING structure", "ustr Windows Debugging"]
 ms.date: 09/12/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ustr
 api_type:

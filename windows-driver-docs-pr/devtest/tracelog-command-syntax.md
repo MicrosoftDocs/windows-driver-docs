@@ -5,6 +5,7 @@ keywords:
 - Tracelog Command Syntax Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Tracelog Command Syntax
 api_type:

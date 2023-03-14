@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIOENGINE\_LFXENABLE property request retrieves o
 keywords: ["KSPROPERTY_AUDIOENGINE_LFXENABLE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOENGINE_LFXENABLE
 api_location:

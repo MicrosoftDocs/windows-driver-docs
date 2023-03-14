@@ -4,6 +4,7 @@ description: Sets the current video session to protected mode.
 keywords: ["IOCTL_COPP_StartSequence control code Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IOCTL_COPP_StartSequence
 api_type:

@@ -5,6 +5,7 @@ keywords: ["ndiskd.filter Windows Debugging"]
 ms.date: 06/15/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ndiskd.filter
 api_type:

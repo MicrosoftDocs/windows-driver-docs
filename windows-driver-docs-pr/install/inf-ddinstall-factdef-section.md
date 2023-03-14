@@ -5,6 +5,7 @@ keywords:
 - INF DDInstall.FactDef Section Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF DDInstall.FactDef Section
 api_type:

@@ -5,6 +5,7 @@ keywords: [".crash (Force System Crash) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .crash (Force System Crash)
 api_type:

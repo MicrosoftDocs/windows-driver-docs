@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x3B SYSTEM_SERVICE_EXCEPTION", "SYSTEM_SERVICE_EXCEPTION"
 ms.date: 03/14/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SYSTEM_SERVICE_EXCEPTION
 api_type:

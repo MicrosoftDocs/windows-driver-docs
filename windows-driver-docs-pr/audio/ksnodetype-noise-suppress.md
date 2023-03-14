@@ -4,6 +4,7 @@ description: KSNODETYPE\_NOISE\_SUPPRESS
 keywords: ["KSNODETYPE_NOISE_SUPPRESS Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_NOISE_SUPPRESS
 api_type:

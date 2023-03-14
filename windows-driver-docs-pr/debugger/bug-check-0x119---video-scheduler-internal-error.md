@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x119 VIDEO_SCHEDULER_INTERNAL_ERROR", "VIDEO_SCHEDULER_IN
 ms.date: 02/22/2023
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VIDEO_SCHEDULER_INTERNAL_ERROR
 api_type:

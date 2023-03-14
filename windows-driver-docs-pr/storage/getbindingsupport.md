@@ -4,6 +4,7 @@ description: The GetBindingSupport method retrieves the binding capabilities tha
 keywords: ["GetBindingSupport function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - GetBindingSupport
 api_location:

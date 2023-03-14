@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["CtlDeviceFinishInitDrEntry rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CtlDeviceFinishInitDrEntry
 api_type:

@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["IoBuildFsdComplete rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IoBuildFsdComplete
 api_type:

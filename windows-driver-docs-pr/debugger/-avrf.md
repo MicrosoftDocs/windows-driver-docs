@@ -5,6 +5,7 @@ keywords: ["avrf Windows Debugging"]
 ms.date: 06/24/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - avrf
 api_type:

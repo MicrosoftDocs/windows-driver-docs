@@ -5,6 +5,7 @@ keywords:
 - /Export Switch Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - /Export
 api_type:

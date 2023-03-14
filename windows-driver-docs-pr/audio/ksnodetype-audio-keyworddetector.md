@@ -4,6 +4,7 @@ description: The KSNODETYPE\_AUDIO\_KEYWORDDETECTOR audio endpoint is a new endp
 keywords: ["KSNODETYPE_AUDIO_KEYWORDDETECTOR Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_AUDIO_KEYWORDDETECTOR
 api_type:

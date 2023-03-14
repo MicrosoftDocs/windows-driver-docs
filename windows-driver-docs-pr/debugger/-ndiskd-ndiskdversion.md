@@ -5,6 +5,7 @@ keywords: ["ndiskd.ndiskdversion Windows Debugging"]
 ms.date: 06/11/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ndiskd.ndiskdversion
 api_type:

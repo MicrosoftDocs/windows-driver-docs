@@ -5,6 +5,7 @@ keywords: ["Set Process Context (.process) command", "addresses, Set Process Con
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .process (Set Process Context)
 api_type:

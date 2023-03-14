@@ -3,9 +3,9 @@ title: blackboxscm
 description: The blackboxscmextension displays service control manager (scm) secondary boot data.
 keywords: ["blackboxscm Windows Debugging"]
 ms.date: 01/02/2019
-ms.topic: article
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - blackboxscm
 api_type:

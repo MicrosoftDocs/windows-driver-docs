@@ -5,6 +5,7 @@ keywords: ["ppmsettings Windows Debugging"]
 ms.date: 06/08/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ppmsettings
 api_type:

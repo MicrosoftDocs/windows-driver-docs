@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES property returns the l
 keywords: ["KSPROPERTY_AUDIOSIGNALPROCESSING_MODES Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOSIGNALPROCESSING_MODES
 api_location:

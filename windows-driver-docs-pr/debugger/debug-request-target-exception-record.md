@@ -4,6 +4,7 @@ description: DEBUG\_REQUEST\_TARGET\_EXCEPTION\_RECORD
 keywords: ["DEBUG_REQUEST_TARGET_EXCEPTION_RECORD Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_REQUEST_TARGET_EXCEPTION_RECORD
 api_type:

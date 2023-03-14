@@ -4,6 +4,7 @@ description: DriverEntry initializes a tape miniclass driver. This routine is re
 keywords: ["DriverEntry routine Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DriverEntry
 api_location:

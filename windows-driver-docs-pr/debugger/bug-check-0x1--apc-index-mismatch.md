@@ -5,6 +5,7 @@ keywords: ["Bug check 0x1 APC_INDEX_MISMATCH", "APC_INDEX_MISMATCH"]
 ms.date: 12/15/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - APC_INDEX_MISMATCH
 api_type:

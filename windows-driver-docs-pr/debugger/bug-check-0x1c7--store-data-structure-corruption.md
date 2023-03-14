@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1C7 STORE_DATA_STRUCTURE_CORRUPTION", "STORE_DATA_STRUCT
 ms.date: 01/28/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - STORE_DATA_STRUCTURE_CORRUPTION
 api_type:

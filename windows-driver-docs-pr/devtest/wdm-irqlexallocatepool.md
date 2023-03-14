@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["IrqlExAllocatePool rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IrqlExAllocatePool
 api_type:

@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["IoAllocateIrpSignalEventInCompletion rule"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IoAllocateIrpSignalEventInCompletion
 api_type:

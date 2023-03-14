@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x57 XNS_INTERNAL_ERROR", "XNS_INTERNAL_ERROR"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - XNS_INTERNAL_ERROR
 api_type:

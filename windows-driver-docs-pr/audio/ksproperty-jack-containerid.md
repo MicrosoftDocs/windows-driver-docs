@@ -4,6 +4,7 @@ description: The KSPROPERTY\_JACK\_CONTAINERID property is implemented as a pin-
 keywords: ["KSPROPERTY_JACK_CONTAINERID Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_JACK_CONTAINERID
 api_location:

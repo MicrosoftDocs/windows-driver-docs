@@ -4,6 +4,7 @@ description: KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL
 keywords: ["KSNODETYPE_ACOUSTIC_ECHO_CANCEL Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_ACOUSTIC_ECHO_CANCEL
 api_type:

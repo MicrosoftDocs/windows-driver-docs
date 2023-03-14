@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x120 BITLOCKER_FATAL_ERROR", "BITLOCKER_FATAL_ERROR"]
 ms.date: 01/30/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BITLOCKER_FATAL_ERROR
 api_type:

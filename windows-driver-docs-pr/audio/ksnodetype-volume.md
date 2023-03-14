@@ -4,6 +4,7 @@ description: KSNODETYPE\_VOLUME
 keywords: ["KSNODETYPE_VOLUME Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_VOLUME
 api_type:

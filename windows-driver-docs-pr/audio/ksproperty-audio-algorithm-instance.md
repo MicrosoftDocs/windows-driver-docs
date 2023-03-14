@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_ALGORITHM\_INSTANCE property specifies the d
 keywords: ["KSPROPERTY_AUDIO_ALGORITHM_INSTANCE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_ALGORITHM_INSTANCE
 api_location:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x80 NMI_HARDWARE_FAILURE", "NMI_HARDWARE_FAILURE"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - NMI_HARDWARE_FAILURE
 api_type:

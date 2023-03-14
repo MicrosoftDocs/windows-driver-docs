@@ -5,6 +5,7 @@ keywords:
 - INF UnregisterDlls Directive Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF UnregisterDlls Directive
 api_type:

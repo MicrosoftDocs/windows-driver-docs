@@ -5,6 +5,7 @@ keywords: [".allow_image_mapping (Allow Image Mapping) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .allow_image_mapping (Allow Image Mapping)
 api_type:

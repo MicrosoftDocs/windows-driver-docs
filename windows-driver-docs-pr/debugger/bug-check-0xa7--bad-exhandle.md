@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xA7 BAD_EXHANDLE", "BAD_EXHANDLE"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BAD_EXHANDLE
 api_type:

@@ -5,6 +5,7 @@ keywords: ["rm (Register Mask) Windows Debugging"]
 ms.date: 07/12/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - rm (Register Mask)
 api_type:

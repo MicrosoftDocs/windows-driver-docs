@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x11E TOO_MANY_RECURSIVE_FAULTS", "TOO_MANY_RECURSIVE_FAUL
 ms.date: 01/30/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TOO_MANY_RECURSIVE_FAULTS
 api_type:

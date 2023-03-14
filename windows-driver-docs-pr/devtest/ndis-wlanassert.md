@@ -5,6 +5,7 @@ ms.date: 04/08/2020
 keywords: ["WlanAssert rule (ndis)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WlanAssert
 api_type:

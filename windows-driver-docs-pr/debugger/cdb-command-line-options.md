@@ -5,6 +5,7 @@ keywords: ["CDB Command-Line Options Windows Debugging"]
 ms.date: 08/01/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CDB Command-Line Options
 api_type:

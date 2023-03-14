@@ -4,6 +4,7 @@ description: DIF_FIRSTTIMESETUP
 keywords: ["DIF_FIRSTTIMESETUP Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_FIRSTTIMESETUP
 api_location:

@@ -4,6 +4,7 @@ description: The RemovePersistentEntry method removes a binding from the list of
 keywords: ["RemovePersistentEntry function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - RemovePersistentEntry
 api_location:

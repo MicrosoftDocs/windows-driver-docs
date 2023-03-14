@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_DYNAMIC\_SAMPLING\_RATE property is used to 
 keywords: ["KSPROPERTY_AUDIO_DYNAMIC_SAMPLING_RATE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_DYNAMIC_SAMPLING_RATE
 api_location:

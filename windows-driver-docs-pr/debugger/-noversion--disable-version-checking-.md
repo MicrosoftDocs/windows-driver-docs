@@ -5,6 +5,7 @@ keywords: ["Disable Version Checking (.noversion) command", ".noversion (Disable
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .noversion (Disable Version Checking)
 api_type:

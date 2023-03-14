@@ -4,6 +4,7 @@ description: KSNODETYPE\_MUTE
 keywords: ["KSNODETYPE_MUTE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_MUTE
 api_type:

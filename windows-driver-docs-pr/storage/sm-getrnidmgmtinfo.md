@@ -4,6 +4,7 @@ description: The SM\_GetRNIDMgmtInfo WMI method retrieves FC3 management informa
 keywords: ["SM_GetRNIDMgmtInfo function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SM_GetRNIDMgmtInfo
 api_location:

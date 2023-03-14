@@ -8,6 +8,7 @@ keywords:
 - MSFT_StorageSubSystem class Windows Storage Management API , GetSecurityDescriptor method
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MSFT_StorageSubSystem.GetSecurityDescriptor
 api_location:
@@ -15,7 +16,6 @@ api_location:
 api_type:
 - COM
 ms.author: windowssdkdev
-ms.topic: article
 ms.date: 05/31/2018
 ---
 

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x19 BAD_POOL_HEADER", "BAD_POOL_HEADER"]
 ms.date: 12/07/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BAD_POOL_HEADER
 api_type:

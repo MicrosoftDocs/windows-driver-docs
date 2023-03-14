@@ -5,6 +5,7 @@ keywords: [".exptr (Display Exception Pointers) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .exptr (Display Exception Pointers)
 api_type:

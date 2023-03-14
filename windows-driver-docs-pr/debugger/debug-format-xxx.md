@@ -4,6 +4,7 @@ description: The DEBUG_FORMAT_XXX bit-flags are used by WriteDumpFile2 and Write
 ms.date: 08/20/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_FORMAT_XXX
 api_location:

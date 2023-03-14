@@ -5,6 +5,7 @@ description: "Learn more about: IrqlIoPassive2 rule (wdm)"
 keywords: ["IrqlIoPassive2 rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IrqlIoPassive2
 api_type:

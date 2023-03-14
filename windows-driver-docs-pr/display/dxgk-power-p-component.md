@@ -4,6 +4,7 @@ description: Learn about the DXGK\_POWER\_P\_COMPONENT structure, which is reser
 keywords: ["DXGK_POWER_P_COMPONENT structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGK_POWER_P_COMPONENT
 api_location:

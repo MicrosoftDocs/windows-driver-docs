@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TELEPHONY\_PROVIDERCHANGE property is used to commu
 keywords: ["KSPROPERTY_TELEPHONY_PROVIDERCHANGE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TELEPHONY_PROVIDERCHANGE
 api_location:

@@ -5,6 +5,7 @@ keywords: ["hidkd.hidfdo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - hidkd.hidfdo
 api_type:

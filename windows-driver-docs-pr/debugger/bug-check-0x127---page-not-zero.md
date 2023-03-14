@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x127 PAGE_NOT_ZERO", "PAGE_NOT_ZERO"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PAGE_NOT_ZERO
 api_type:

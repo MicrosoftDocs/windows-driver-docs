@@ -4,6 +4,7 @@ description: The KSPROPERTY\_RTAUDIO\_POSITIONREGISTER property maps the positio
 keywords: ["KSPROPERTY_RTAUDIO_POSITIONREGISTER Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_RTAUDIO_POSITIONREGISTER
 api_location:

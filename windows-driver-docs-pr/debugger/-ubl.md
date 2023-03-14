@@ -5,6 +5,7 @@ keywords: ["breakpoints, user-space breakpoints", "ubl Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ubl
 api_type:

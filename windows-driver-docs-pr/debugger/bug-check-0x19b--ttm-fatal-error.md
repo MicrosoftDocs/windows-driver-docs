@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x19B TTM_FATAL_ERROR", "TTM_FATAL_ERROR"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TTM_FATAL_ERROR
 api_type:

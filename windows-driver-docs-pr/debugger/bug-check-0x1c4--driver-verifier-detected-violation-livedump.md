@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1C4 DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP", "DRIVE
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP
 api_type:

@@ -4,6 +4,7 @@ description: The DsmSetLoadBalancePolicyALUA method is used to set the DSM ALUA 
 keywords: ["DsmSetLoadBalancePolicyALUA function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DsmSetLoadBalancePolicyALUA
 api_location:

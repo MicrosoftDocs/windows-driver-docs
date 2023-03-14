@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x125 NMR_INVALID_STATE", "NMR_INVALID_STATE"]
 ms.date: 01/30/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - NMR_INVALID_STATE
 api_type:

@@ -5,6 +5,7 @@ keywords: ["network messages", "net_send Windows Debugging"]
 ms.date: 09/12/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - net_send
 api_type:

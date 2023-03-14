@@ -4,6 +4,7 @@ description: The KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT property holds the resul
 keywords: ["KSPROPERTY_SOUNDDETECTOR_MATCHRESULT Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_SOUNDDETECTOR_MATCHRESULT
 api_location:

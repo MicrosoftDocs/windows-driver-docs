@@ -5,6 +5,7 @@ keywords: ["usb3kd.xhci_findowner Windows Debugging"]
 ms.date: 10/18/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - usb3kd.xhci_findowner
 api_type:

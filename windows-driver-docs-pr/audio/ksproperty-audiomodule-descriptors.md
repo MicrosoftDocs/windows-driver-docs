@@ -4,6 +4,7 @@ description: KSPROPERTY\_AUDIOMODULE\_DESCRIPTORS is used to retrieves the stati
 keywords: ["KSPROPERTY_AUDIOMODULE_DESCRIPTORS Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOMODULE_DESCRIPTORS
 api_type:

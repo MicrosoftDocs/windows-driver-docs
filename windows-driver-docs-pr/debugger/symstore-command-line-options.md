@@ -5,6 +5,7 @@ keywords: ["SymStore Command-Line Options Windows Debugging"]
 ms.date: 03/12/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SymStore Command-Line Options
 api_type:

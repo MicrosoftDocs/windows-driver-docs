@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["CheckDeviceObjectFlags rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CheckDeviceObjectFlags
 api_type:

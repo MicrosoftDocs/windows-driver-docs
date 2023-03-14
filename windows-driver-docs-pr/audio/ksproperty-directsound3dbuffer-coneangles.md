@@ -4,6 +4,7 @@ description: The KSPROPERTY\_DIRECTSOUND3DBUFFER\_CONEANGLES property specifies 
 keywords: ["KSPROPERTY_DIRECTSOUND3DBUFFER_CONEANGLES Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DIRECTSOUND3DBUFFER_CONEANGLES
 api_location:

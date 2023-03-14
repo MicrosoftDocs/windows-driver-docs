@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIOENGINE\_GFXENABLE property request allows the 
 keywords: ["KSPROPERTY_AUDIOENGINE_GFXENABLE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOENGINE_GFXENABLE
 api_location:

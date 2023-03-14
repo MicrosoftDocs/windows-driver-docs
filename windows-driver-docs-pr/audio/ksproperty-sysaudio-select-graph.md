@@ -4,6 +4,7 @@ description: The KSPROPERTY\_SYSAUDIO\_SELECT\_GRAPH property is used to explici
 keywords: ["KSPROPERTY_SYSAUDIO_SELECT_GRAPH Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_SYSAUDIO_SELECT_GRAPH
 api_location:

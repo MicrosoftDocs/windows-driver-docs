@@ -5,6 +5,7 @@ keywords: ["Change Current Processor (~s) command", "multiprocessor computer, Ch
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ~s (Change Current Processor)
 api_type:

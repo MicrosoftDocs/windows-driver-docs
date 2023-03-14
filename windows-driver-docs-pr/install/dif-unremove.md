@@ -4,6 +4,7 @@ description: DIF_UNREMOVE
 keywords: ["DIF_UNREMOVE Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_UNREMOVE
 api_location:

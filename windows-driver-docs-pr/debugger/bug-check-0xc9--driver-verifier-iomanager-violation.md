@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xC9 DRIVER_VERIFIER_IOMANAGER_VIOLATION", "DRIVER_VERIFIE
 ms.date: 05/07/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_VERIFIER_IOMANAGER_VIOLATION
 api_type:

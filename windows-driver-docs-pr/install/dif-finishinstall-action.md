@@ -4,6 +4,7 @@ description: DIF_FINISHINSTALL_ACTION
 keywords: ["DIF_FINISHINSTALL_ACTION Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_FINISHINSTALL_ACTION
 api_location:

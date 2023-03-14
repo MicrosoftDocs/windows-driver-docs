@@ -5,6 +5,7 @@ keywords: ["process Windows Debugging"]
 ms.date: 08/02/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - process
 api_type:

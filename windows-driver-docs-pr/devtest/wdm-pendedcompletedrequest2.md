@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["PendedCompletedRequest2 rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PendedCompletedRequest2
 api_type:

@@ -4,6 +4,7 @@ description: The EXT\_TDOP\_OUTPUT\_SIMPLE\_VALUE sub-operation of the DEBUG\_RE
 keywords: ["EXT_TDOP_OUTPUT_SIMPLE_VALUE Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EXT_TDOP_OUTPUT_SIMPLE_VALUE
 api_type:

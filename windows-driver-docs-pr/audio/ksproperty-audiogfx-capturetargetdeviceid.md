@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIOGFX\_CAPTURETARGETDEVICEID property is used to
 keywords: ["KSPROPERTY_AUDIOGFX_CAPTURETARGETDEVICEID Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOGFX_CAPTURETARGETDEVICEID
 api_location:

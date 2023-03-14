@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["Cleanup4CtlDeviceRegistered rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Cleanup4CtlDeviceRegistered
 api_type:

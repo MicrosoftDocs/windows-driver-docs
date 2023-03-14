@@ -5,6 +5,7 @@ keywords: [".scriptproviders (List Script Providers) Windows Debugging"]
 ms.date: 02/02/2021
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .scriptproviders (List Script Providers)
 api_type:

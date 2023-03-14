@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x59 PINBALL_FILE_SYSTEM", "PINBALL_FILE_SYSTEM"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PINBALL_FILE_SYSTEM
 api_type:

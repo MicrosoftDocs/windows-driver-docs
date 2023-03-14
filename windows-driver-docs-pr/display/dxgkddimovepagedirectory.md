@@ -4,6 +4,7 @@ description: The DxgkDdiMovePageDirectory function is reserved for system use. D
 keywords: ["DxgkDdiMovePageDirectory function Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DxgkDdiMovePageDirectory
 api_location:

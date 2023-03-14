@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x52 MAILSLOT_FILE_SYSTEM", "MAILSLOT_FILE_SYSTEM"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MAILSLOT_FILE_SYSTEM
 api_type:

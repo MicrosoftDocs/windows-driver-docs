@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1A3 CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP", "C
 ms.date: 05/25/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP
 api_type:

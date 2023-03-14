@@ -5,6 +5,7 @@ keywords: ["Unload All Extension DLLs (.unloadall) command", "extension commands
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .unloadall (Unload All Extension DLLs)
 api_type:

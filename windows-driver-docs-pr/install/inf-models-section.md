@@ -5,6 +5,7 @@ keywords:
 - INF Models Section Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF Models Section
 api_type:

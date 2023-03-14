@@ -5,6 +5,7 @@ keywords: ["Show CPU Number (.echocpunum) command", "multiprocessor computer, Sh
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .echocpunum (Show CPU Number)
 api_type:

@@ -4,6 +4,7 @@ description: Specific Exceptions
 keywords: ["Specific Exceptions Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Specific Exceptions
 api_type:

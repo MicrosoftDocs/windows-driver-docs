@@ -4,6 +4,7 @@ description: The GetFC3MgmtInfo WMI method retrieves FC3 management information 
 keywords: ["GetFC3MgmtInfo function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - GetFC3MgmtInfo
 api_location:

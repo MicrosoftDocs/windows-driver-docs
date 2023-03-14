@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_POSITION property re
 keywords: ["KSPROPERTY_AUDIO_WAVERT_CURRENT_WRITE_POSITION Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_WAVERT_CURRENT_WRITE_POSITION
 api_location:

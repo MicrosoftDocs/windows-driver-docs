@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_MID property specifies the mid-frequency lev
 keywords: ["KSPROPERTY_AUDIO_MID Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_MID
 api_location:

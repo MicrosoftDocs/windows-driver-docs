@@ -4,6 +4,7 @@ description: The KSPROPERTY\_JACK\_SINK\_INFO property is implemented as a pin-w
 keywords: ["KSPROPERTY_JACK_SINK_INFO Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_JACK_SINK_INFO
 api_location:

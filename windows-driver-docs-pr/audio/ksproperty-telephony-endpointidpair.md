@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TELEPHONY\_ENDPOINTIDPAIR property contains the ren
 keywords: ["KSPROPERTY_TELEPHONY_ENDPOINTIDPAIR Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TELEPHONY_ENDPOINTIDPAIR
 api_location:

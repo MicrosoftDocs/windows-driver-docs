@@ -4,6 +4,7 @@ description: Learn about the DXGKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FLIP\_MODE enu
 keywords: ["DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE enumeration Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGKMT_MULTIPLANE_OVERLAY_STEREO_FLIP_MODE
 api_location:

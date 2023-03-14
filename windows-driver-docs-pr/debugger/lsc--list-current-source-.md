@@ -5,6 +5,7 @@ keywords: ["lsc (List Current Source) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - lsc (List Current Source)
 api_type:

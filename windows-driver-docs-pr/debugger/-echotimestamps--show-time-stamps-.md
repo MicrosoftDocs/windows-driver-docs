@@ -5,6 +5,7 @@ keywords: ["Show Time Stamps (.echotimestamps) command", "time stamps", "DbgPrin
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .echotimestamps (Show Time Stamps)
 api_type:

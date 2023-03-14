@@ -4,6 +4,7 @@ description: DriverEntry is the initial entry point into the video miniport driv
 keywords: ["DriverEntry function Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DriverEntry
 api_location:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x3D INTERRUPT_EXCEPTION_NOT_HANDLED", "INTERRUPT_EXCEPTIO
 ms.date: 10/18/2021
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INTERRUPT_EXCEPTION_NOT_HANDLED
 api_type:

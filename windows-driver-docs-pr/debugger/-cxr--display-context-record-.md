@@ -5,6 +5,7 @@ keywords: ["Display Context Record (.cxr) command", "context record", ".cxr (Dis
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .cxr (Display Context Record)
 api_type:

@@ -4,6 +4,7 @@ description: This parameter name is reserved for future use.
 keywords: ["KSPROPERTY_AUDIO_WIDE_MODE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_WIDE_MODE
 api_type:

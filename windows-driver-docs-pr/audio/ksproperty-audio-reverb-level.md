@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_REVERB\_LEVEL property specifies the current
 keywords: ["KSPROPERTY_AUDIO_REVERB_LEVEL Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_REVERB_LEVEL
 api_location:

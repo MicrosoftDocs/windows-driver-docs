@@ -5,6 +5,7 @@ ms.date: 12/07/2017
 keywords: ["HRESULT Values Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - HRESULT Values
 api_location:

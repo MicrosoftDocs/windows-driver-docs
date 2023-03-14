@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["SyncReqSend2 rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SyncReqSend2
 api_type:

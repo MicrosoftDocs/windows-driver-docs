@@ -5,6 +5,7 @@ keywords: ["amli r Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - amli r
 api_type:

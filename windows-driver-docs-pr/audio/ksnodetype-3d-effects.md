@@ -4,6 +4,7 @@ description: KSNODETYPE\_3D\_EFFECTS
 keywords: ["KSNODETYPE_3D_EFFECTS Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_3D_EFFECTS
 api_type:

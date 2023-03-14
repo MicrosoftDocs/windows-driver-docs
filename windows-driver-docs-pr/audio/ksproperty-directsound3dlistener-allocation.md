@@ -4,6 +4,7 @@ description: The KSPROPERTY\_DIRECTSOUND3DLISTENER\_ALLOCATION property is used 
 keywords: ["KSPROPERTY_DIRECTSOUND3DLISTENER_ALLOCATION Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DIRECTSOUND3DLISTENER_ALLOCATION
 api_location:

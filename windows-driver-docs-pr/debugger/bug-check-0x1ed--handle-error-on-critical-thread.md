@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1ED HANDLE_ERROR_ON_CRITICAL_THREAD", "HANDLE_ERROR_ON_C
 ms.date: 09/13/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - HANDLE_ERROR_ON_CRITICAL_THREAD
 api_type:

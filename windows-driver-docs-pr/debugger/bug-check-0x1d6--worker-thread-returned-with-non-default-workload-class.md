@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1D6 WORKER_THREAD_RETURNED_WITH_NON_DEFAULT_WORKLOAD_CLA
 ms.date: 01/11/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WORKER_THREAD_RETURNED_WITH_NON_DEFAULT_WORKLOAD_CLASS
 api_type:

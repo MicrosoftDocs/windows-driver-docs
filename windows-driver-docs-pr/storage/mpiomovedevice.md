@@ -4,6 +4,7 @@ description: The MPIOMoveDevice method is used to set the active path on the dev
 keywords: ["MPIOMoveDevice function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MPIOMoveDevice
 api_location:

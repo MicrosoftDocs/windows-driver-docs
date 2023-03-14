@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x2E DATA_BUS_ERROR", "DATA_BUS_ERROR"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DATA_BUS_ERROR
 api_type:

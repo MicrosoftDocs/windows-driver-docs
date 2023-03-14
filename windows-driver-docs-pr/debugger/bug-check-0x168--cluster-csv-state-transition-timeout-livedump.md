@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x168 CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP", "CLU
 ms.date: 01/03/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP
 api_type:

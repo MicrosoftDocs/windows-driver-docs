@@ -5,6 +5,7 @@ keywords: ["Command Shell (.shell) command", "MS-DOS Shell (.shell) command", "D
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .shell (Command Shell)
 api_type:

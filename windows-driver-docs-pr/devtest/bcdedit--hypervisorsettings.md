@@ -5,6 +5,7 @@ ms.date: 10/01/2020
 keywords: ["BCDEdit /hypervisorsettings Driver Development Tools"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BCDEdit /hypervisorsettings
 api_type:

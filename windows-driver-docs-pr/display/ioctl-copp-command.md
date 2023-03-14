@@ -4,6 +4,7 @@ description: Performs an operation on a COPP DirectX VA device.
 keywords: ["IOCTL_COPP_Command control code Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IOCTL_COPP_Command
 api_type:

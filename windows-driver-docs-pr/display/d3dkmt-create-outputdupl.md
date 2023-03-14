@@ -4,6 +4,7 @@ description: Learn about the D3DKMT\_CREATE\_OUTPUTDUPL structure, which is rese
 keywords: ["D3DKMT_CREATE_OUTPUTDUPL structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DKMT_CREATE_OUTPUTDUPL
 api_location:

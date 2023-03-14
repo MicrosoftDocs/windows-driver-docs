@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x5F SECURITY_INITIALIZATION_FAILED", "SECURITY_INITIALIZA
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SECURITY_INITIALIZATION_FAILED
 api_type:

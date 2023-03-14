@@ -4,6 +4,7 @@ description: The sample DXVA\_ProcAmpControlDeviceClass::ProcAmpCloseStream func
 keywords: ["ProcAmpControlCloseStream method Display Devices", "ProcAmpControlCloseStream method Display Devices , DXVA_ProcAmpControlDeviceClass interface", "DXVA_ProcAmpControlDeviceClass interface Display Devices , ProcAmpControlCloseStream method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXVA_ProcAmpControlDeviceClass.ProcAmpControlCloseStream
 api_type:

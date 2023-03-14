@@ -4,6 +4,7 @@ description: The DXGK\_VIRTUALADDRESSCAPS structure is reserved for system use. 
 keywords: ["_DXGK_VIRTUALADDRESSCAPS structure Display Devices", "DXGK_VIRTUALADDRESSCAPS structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGK_VIRTUALADDRESSCAPS
 api_location:

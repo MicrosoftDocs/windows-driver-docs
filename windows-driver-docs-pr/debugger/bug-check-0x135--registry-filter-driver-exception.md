@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x135 REGISTRY_FILTER_DRIVER_EXCEPTION", "REGISTRY_FILTER_
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - REGISTRY_FILTER_DRIVER_EXCEPTION
 api_type:

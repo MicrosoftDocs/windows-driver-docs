@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x99 INVALID_REGION_OR_SEGMENT", "INVALID_REGION_OR_SEGMEN
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INVALID_REGION_OR_SEGMENT
 api_type:

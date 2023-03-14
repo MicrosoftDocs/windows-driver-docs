@@ -4,6 +4,7 @@ description: KSNODETYPE\_REVERB
 keywords: ["KSNODETYPE_REVERB Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_REVERB
 api_type:

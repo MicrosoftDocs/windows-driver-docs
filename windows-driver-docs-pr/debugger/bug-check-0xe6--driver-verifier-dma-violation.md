@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xE6 DRIVER_VERIFIER_DMA_VIOLATION", "DRIVER_VERIFIER_DMA_
 ms.date: 05/07/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_VERIFIER_DMA_VIOLATION
 api_type:

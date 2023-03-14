@@ -4,6 +4,7 @@ description: DCISetSrcDestClip
 keywords: ["DCISetSrcDestClip Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DCISetSrcDestClip
 api_type:

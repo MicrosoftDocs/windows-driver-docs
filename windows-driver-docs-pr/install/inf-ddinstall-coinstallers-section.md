@@ -5,6 +5,7 @@ keywords:
 - INF DDInstall.CoInstallers Section Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF DDInstall.CoInstallers Section
 api_type:

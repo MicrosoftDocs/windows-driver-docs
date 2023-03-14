@@ -4,6 +4,7 @@ description: eulaNoButton XML Element
 keywords: ["eulaNoButton XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - eulaNoButton XML Element
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xE9 ACTIVE_EX_WORKER_THREAD_TERMINATION", "ACTIVE_EX_WORK
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ACTIVE_EX_WORKER_THREAD_TERMINATION
 api_type:

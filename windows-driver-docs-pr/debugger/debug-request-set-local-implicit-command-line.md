@@ -4,6 +4,7 @@ description: DEBUG\_REQUEST\_SET\_LOCAL\_IMPLICIT\_COMMAND\_LINE
 keywords: ["DEBUG_REQUEST_SET_LOCAL_IMPLICIT_COMMAND_LINE Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_REQUEST_SET_LOCAL_IMPLICIT_COMMAND_LINE
 api_type:

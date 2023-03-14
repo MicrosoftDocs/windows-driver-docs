@@ -5,6 +5,7 @@ ms.date: 09/23/2020
 keywords: ["BCDEdit /ems Driver Development Tools"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BCDEdit /ems
 api_type:

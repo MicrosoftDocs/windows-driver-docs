@@ -5,6 +5,7 @@ keywords: ["ndiskd.oid Windows Debugging"]
 ms.date: 06/26/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ndiskd.oid
 api_type:

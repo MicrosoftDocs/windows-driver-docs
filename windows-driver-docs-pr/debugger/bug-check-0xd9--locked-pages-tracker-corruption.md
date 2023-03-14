@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xD9 LOCKED_PAGES_TRACKER_CORRUPTION", "LOCKED_PAGES_TRACK
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - LOCKED_PAGES_TRACKER_CORRUPTION
 api_type:

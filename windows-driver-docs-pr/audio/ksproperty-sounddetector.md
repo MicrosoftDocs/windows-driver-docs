@@ -4,6 +4,7 @@ description: The KSPROPERTY\_SOUNDDETECTOR enumeration defines constants that ar
 keywords: ["KSPROPERTY_SOUNDDETECTOR enumeration Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_SOUNDDETECTOR
 api_location:

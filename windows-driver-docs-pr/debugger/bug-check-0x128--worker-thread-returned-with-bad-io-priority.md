@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x128 WORKER_THREAD_RETURNED_WITH_BAD_IO_PRIORITY", "WORKE
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WORKER_THREAD_RETURNED_WITH_BAD_IO_PRIORITY
 api_type:

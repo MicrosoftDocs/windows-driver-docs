@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x2 DEVICE_QUEUE_NOT_BUSY", "DEVICE_QUEUE_NOT_BUSY"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEVICE_QUEUE_NOT_BUSY
 api_type:

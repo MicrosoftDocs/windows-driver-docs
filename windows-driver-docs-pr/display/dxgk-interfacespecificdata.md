@@ -4,6 +4,7 @@ description: The DXGK\_INTERFACESPECIFICDATA structure is reserved for system us
 keywords: ["DXGK_INTERFACESPECIFICDATA structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGK_INTERFACESPECIFICDATA
 api_location:

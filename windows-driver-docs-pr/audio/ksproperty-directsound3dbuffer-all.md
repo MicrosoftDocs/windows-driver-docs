@@ -4,6 +4,7 @@ description: The KSPROPERTY\_DIRECTSOUND3DBUFFER\_ALL property is used to get or
 keywords: ["KSPROPERTY_DIRECTSOUND3DBUFFER_ALL Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DIRECTSOUND3DBUFFER_ALL
 api_location:

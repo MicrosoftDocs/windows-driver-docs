@@ -4,6 +4,7 @@ description: The GetDiscoveredPortAttributes WMI method retrieves the attributes
 keywords: ["GetDiscoveredPortAttributes function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - GetDiscoveredPortAttributes
 api_location:

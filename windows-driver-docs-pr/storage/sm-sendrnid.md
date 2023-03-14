@@ -4,6 +4,7 @@ description: The SM\_SendRNID WMI method sends a request node identification dat
 keywords: ["SM_SendRNID function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SM_SendRNID
 api_location:

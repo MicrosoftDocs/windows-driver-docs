@@ -4,6 +4,7 @@ description: The KSEVENT\_VOLUMELIMIT\_CHANGED event indicates to the audio stac
 keywords: ["KSEVENT_VOLUMELIMIT_CHANGED Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_VOLUMELIMIT_CHANGED
 api_type:

@@ -5,6 +5,7 @@ keywords: ["vercommand (Show Debugger Command Line) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - vercommand (Show Debugger Command Line)
 api_type:

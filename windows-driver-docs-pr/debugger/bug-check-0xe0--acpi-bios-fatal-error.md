@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xE0 ACPI_BIOS_FATAL_ERROR", "ACPI_BIOS_FATAL_ERROR"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ACPI_BIOS_FATAL_ERROR
 api_type:

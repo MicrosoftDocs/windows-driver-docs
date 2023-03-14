@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x13A KERNEL_MODE_HEAP_CORRUPTION", "KERNEL_MODE_HEAP_CORR
 ms.date: 02/23/2023
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KERNEL_MODE_HEAP_CORRUPTION
 api_type:

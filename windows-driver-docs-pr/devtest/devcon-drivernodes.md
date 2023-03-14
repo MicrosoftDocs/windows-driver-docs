@@ -5,6 +5,7 @@ keywords:
 - DevCon DriverNodes Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DevCon DriverNodes
 api_type:

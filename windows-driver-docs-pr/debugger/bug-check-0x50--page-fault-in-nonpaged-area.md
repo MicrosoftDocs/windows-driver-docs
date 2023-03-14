@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x50 PAGE_FAULT_IN_NONPAGED_AREA", "PAGE_FAULT_IN_NONPAGED
 ms.date: 03/15/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PAGE_FAULT_IN_NONPAGED_AREA
 api_type:

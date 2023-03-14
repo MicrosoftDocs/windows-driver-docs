@@ -4,6 +4,7 @@ description: \_RxCheckMemoryBlock checks a memory block for a special RX\_POOL\_
 keywords: ["_RxCheckMemoryBlock routine Installable File System Drivers"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - _RxCheckMemoryBlock
 api_location:

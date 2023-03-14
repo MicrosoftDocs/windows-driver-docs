@@ -4,6 +4,7 @@ description: The SM\_GetBindingCapability method retrieves the binding capabilit
 keywords: ["SM_GetBindingCapability function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SM_GetBindingCapability
 api_location:

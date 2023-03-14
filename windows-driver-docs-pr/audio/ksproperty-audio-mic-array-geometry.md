@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_MIC\_ARRAY\_GEOMETRY property specifies the 
 keywords: ["KSPROPERTY_AUDIO_MIC_ARRAY_GEOMETRY Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_MIC_ARRAY_GEOMETRY
 api_location:

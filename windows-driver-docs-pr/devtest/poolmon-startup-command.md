@@ -5,6 +5,7 @@ keywords:
 - PoolMon Startup Command Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PoolMon Startup Command
 api_type:

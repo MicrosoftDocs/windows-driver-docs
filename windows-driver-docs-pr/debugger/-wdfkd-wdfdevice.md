@@ -5,6 +5,7 @@ keywords: ["wdfkd.wdfdevice Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wdfkd.wdfdevice
 api_type:

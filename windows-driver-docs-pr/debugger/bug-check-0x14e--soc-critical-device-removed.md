@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x14E SOC_CRITICAL_DEVICE_REMOVED", "SOC_CRITICAL_DEVICE_R
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SOC_CRITICAL_DEVICE_REMOVED
 api_type:

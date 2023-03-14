@@ -4,6 +4,7 @@ description: The SM\_SetPersistentBinding method sets the bindings that are used
 keywords: ["SM_SetPersistentBinding function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SM_SetPersistentBinding
 api_location:

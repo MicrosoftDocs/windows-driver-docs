@@ -4,6 +4,7 @@ description: Learn about the D3DKMT\_OUTPUTDUPL\_METADATATYPE enumeration, which
 keywords: ["D3DKMT_OUTPUTDUPL_METADATATYPE enumeration Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DKMT_OUTPUTDUPL_METADATATYPE
 api_location:

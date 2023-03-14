@@ -4,6 +4,7 @@ description: The KSEVENT\_CONTROL\_CHANGE event indicates that a change in contr
 keywords: ["KSEVENT_CONTROL_CHANGE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_CONTROL_CHANGE
 api_location:

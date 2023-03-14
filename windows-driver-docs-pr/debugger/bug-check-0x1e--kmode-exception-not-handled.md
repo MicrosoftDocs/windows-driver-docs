@@ -5,6 +5,7 @@ keywords: ["Bug check 0x1E KMODE_EXCEPTION_NOT_HANDLED", "KMODE_EXCEPTION_NOT_HA
 ms.date: 12/08/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KMODE_EXCEPTION_NOT_HANDLED
 api_type:

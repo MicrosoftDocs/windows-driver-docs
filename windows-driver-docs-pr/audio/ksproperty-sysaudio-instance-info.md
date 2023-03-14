@@ -4,6 +4,7 @@ description: The KSPROPERTY\_SYSAUDIO\_INSTANCE\_INFO property opens a virtual a
 keywords: ["KSPROPERTY_SYSAUDIO_INSTANCE_INFO Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_SYSAUDIO_INSTANCE_INFO
 api_location:

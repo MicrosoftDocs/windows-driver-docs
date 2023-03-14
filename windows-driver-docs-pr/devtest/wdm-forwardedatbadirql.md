@@ -5,6 +5,7 @@ description: "Learn more about: ForwardedAtBadIrql rule (wdm)"
 keywords: ["ForwardedAtBadIrql rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ForwardedAtBadIrql
 api_type:

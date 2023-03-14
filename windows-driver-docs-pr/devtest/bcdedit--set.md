@@ -5,6 +5,7 @@ ms.date: 03/16/2022
 keywords: ["BCDEdit /set Driver Development Tools"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BCDEdit /set
 api_type:

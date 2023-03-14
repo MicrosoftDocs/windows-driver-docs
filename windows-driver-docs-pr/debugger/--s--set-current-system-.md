@@ -5,6 +5,7 @@ keywords: ["s (Set Current System) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - s (Set Current System)
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Display Exception Context Record (.cxr) command", "exceptions, excep
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .ecxr (Display Exception Context Record)
 api_type:

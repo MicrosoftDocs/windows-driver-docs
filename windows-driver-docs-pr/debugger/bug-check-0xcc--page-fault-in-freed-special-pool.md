@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xCC PAGE_FAULT_IN_FREED_SPECIAL_POOL", "PAGE_FAULT_IN_FRE
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PAGE_FAULT_IN_FREED_SPECIAL_POOL
 api_type:

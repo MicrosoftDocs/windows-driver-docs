@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x4 INVALID_DATA_ACCESS_TRAP", "INVALID_DATA_ACCESS_TRAP"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INVALID_DATA_ACCESS_TRAP
 api_type:

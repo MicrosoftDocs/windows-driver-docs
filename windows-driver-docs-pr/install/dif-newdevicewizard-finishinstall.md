@@ -4,6 +4,7 @@ description: DIF_NEWDEVICEWIZARD_FINISHINSTALL
 keywords: ["DIF_NEWDEVICEWIZARD_FINISHINSTALL Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_NEWDEVICEWIZARD_FINISHINSTALL
 api_location:

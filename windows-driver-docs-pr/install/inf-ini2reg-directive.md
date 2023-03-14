@@ -5,6 +5,7 @@ keywords:
 - INF Ini2Reg Directive Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF Ini2Reg Directive
 api_type:

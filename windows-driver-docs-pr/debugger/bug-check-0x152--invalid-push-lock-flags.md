@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x152 INVALID_PUSH_LOCK_FLAGS", "INVALID_PUSH_LOCK_FLAGS"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INVALID_PUSH_LOCK_FLAGS
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xDEADDEAD MANUALLY_INITIATED_CRASH1", "MANUALLY_INITIATED
 ms.date: 02/24/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MANUALLY_INITIATED_CRASH1
 api_type:

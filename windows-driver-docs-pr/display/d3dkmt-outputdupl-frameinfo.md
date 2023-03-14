@@ -4,6 +4,7 @@ description: Learn about the D3DKMT\_OUTPUTDUPL\_FRAMEINFO structure, which is r
 keywords: ["D3DKMT_OUTPUTDUPL_FRAMEINFO structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DKMT_OUTPUTDUPL_FRAMEINFO
 api_location:

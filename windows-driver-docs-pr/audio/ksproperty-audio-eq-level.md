@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_EQ\_LEVEL property specifies the equalizatio
 keywords: ["KSPROPERTY_AUDIO_EQ_LEVEL Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_EQ_LEVEL
 api_location:

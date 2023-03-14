@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x173 COREMSGCALL_INTERNAL_ERROR", "COREMSGCALL_INTERNAL_E
 ms.date: 01/04/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - COREMSGCALL_INTERNAL_ERROR
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1000007F UNEXPECTED_KERNEL_MODE_TRAP_M", "UNEXPECTED_KER
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - UNEXPECTED_KERNEL_MODE_TRAP_M
 api_type:

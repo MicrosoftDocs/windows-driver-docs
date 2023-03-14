@@ -4,6 +4,7 @@ description: The KSPROPERTY\_SYSAUDIO\_ATTACH\_VIRTUAL\_SOURCE property attaches
 keywords: ["KSPROPERTY_SYSAUDIO_ATTACH_VIRTUAL_SOURCE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_SYSAUDIO_ATTACH_VIRTUAL_SOURCE
 api_location:

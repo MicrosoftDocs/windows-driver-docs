@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["StorPortVirtualDevice rule (storport)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - StorPortVirtualDevice
 api_type:

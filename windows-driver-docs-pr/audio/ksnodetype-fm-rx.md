@@ -4,6 +4,7 @@ description: KSNODETYPE\_FM\_RX
 keywords: ["KSNODETYPE_FM_RX Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_FM_RX
 api_type:

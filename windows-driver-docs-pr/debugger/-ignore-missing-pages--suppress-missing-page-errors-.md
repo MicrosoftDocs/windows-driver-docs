@@ -5,6 +5,7 @@ keywords: ["Suppress Missing Page Errors (.ignore_missing_pages) command", ".ign
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .ignore_missing_pages (Suppress Missing Page Errors)
 api_type:

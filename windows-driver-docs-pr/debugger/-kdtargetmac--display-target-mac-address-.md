@@ -5,6 +5,7 @@ keywords: [".kdtargetmac (Display Target MAC Address) Windows Debugging"]
 ms.date: 05/21/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .kdtargetmac (Display Target MAC Address)
 api_type:

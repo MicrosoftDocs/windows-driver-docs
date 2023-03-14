@@ -5,6 +5,7 @@ keywords: ["drvobj Windows Debugging"]
 ms.date: 11/16/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - drvobj
 api_type:

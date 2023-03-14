@@ -4,6 +4,7 @@ description: KSNODETYPE\_ADC
 keywords: ["KSNODETYPE_ADC Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_ADC
 api_type:

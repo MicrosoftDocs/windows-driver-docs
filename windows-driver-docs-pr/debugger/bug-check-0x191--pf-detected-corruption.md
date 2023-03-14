@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x191 PF_DETECTED_CORRUPTION", "PF_DETECTED_CORRUPTION"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PF_DETECTED_CORRUPTION
 api_type:

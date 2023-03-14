@@ -4,6 +4,7 @@ description: Learn about the DXGK\_POWER\_P\_STATE structure, which is reserved 
 keywords: ["DXGK_POWER_P_STATE structure Display Devices", "PDXGK_POWER_P_STATE structure pointer Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGK_POWER_P_STATE
 api_location:

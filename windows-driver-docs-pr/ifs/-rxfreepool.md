@@ -4,6 +4,7 @@ description: \_RxFreePool releases memory that was previously allocated using \_
 keywords: ["_RxFreePool function Installable File System Drivers"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - _RxFreePool
 api_location:

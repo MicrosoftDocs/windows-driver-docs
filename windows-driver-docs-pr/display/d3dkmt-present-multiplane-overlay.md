@@ -4,6 +4,7 @@ description: Learn about the D3DKMT\_PRESENT\_MULTIPLANE\_OVERLAY structure, whi
 keywords: ["D3DKMT_PRESENT_MULTIPLANE_OVERLAY structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DKMT_PRESENT_MULTIPLANE_OVERLAY
 api_location:

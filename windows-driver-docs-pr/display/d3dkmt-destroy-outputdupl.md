@@ -4,6 +4,7 @@ description: Learn about the D3DKMT\_DESTROY\_OUTPUTDUPL structure, which is res
 keywords: ["D3DKMT_DESTROY_OUTPUTDUPL structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DKMT_DESTROY_OUTPUTDUPL
 api_location:

@@ -4,6 +4,7 @@ description: The DEBUG\_ENGOPT\_XXX constants are global options that affect the
 ms.date: 08/10/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_ENGOPT_XXX
 api_location:

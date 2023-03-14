@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_NUM\_EQ\_BANDS property is used to retrieve 
 keywords: ["KSPROPERTY_AUDIO_NUM_EQ_BANDS Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_NUM_EQ_BANDS
 api_location:
