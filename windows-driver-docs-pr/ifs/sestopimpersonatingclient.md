@@ -1,6 +1,6 @@
 ---
 title: SeStopImpersonatingClient routine
-description: The SeStopImpersonatingClient routine ends the calling thread's impersonation of a user.
+description: Learn more about the SeStopImpersonatingClient routine.
 keywords: ["SeStopImpersonatingClient routine Installable File System Drivers"]
 topic_type:
 - apiref
@@ -10,11 +10,11 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
 # SeStopImpersonatingClient routine
-
 
 The **SeStopImpersonatingClient** routine ends the calling thread's impersonation of a user.
 
@@ -38,35 +38,12 @@ A server thread can impersonate a user by calling the [**SeImpersonateClientEx**
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Target platform</p></td>
-<td align="left">Desktop</td>
-</tr>
-<tr class="even">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows XP and later versions of the Windows operating systems.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Header</p></td>
-<td align="left">Ntifs.h (include Ntifs.h)</td>
-</tr>
-<tr class="even">
-<td align="left"><p>IRQL</p></td>
-<td align="left"><p>PASSIVE_LEVEL</p></td>
-</tr>
-</tbody>
-</table>
+| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Minimum supported client | Windows XP |
+| Header                   | *Ntifs.h* (include *Ntifs.h*) |
+| IRQL                     | PASSIVE_LEVEL |
 
 ## See also
 
-
 [**SeImpersonateClientEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seimpersonateclientex)
-
- 
-

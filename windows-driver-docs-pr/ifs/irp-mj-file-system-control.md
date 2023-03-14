@@ -1,6 +1,6 @@
 ---
-title: IRP_MJ_FILE_SYSTEM_CONTROL (IFS)
-description: IRP\_MJ\_FILE\_SYSTEM\_CONTROL
+title: IRP_MJ_FILE_SYSTEM_CONTROL (FS and filter drivers)
+description: IRP_MJ_FILE_SYSTEM_CONTROL
 keywords: ["IRP_MJ_FILE_SYSTEM_CONTROL Installable File System Drivers"]
 topic_type:
 - apiref
@@ -8,162 +8,94 @@ api_name:
 - IRP_MJ_FILE_SYSTEM_CONTROL
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
-# IRP\_MJ\_FILE\_SYSTEM\_CONTROL (IFS)
-
+# IRP_MJ_FILE_SYSTEM_CONTROL (FS and filter drivers)
 
 ## When Sent
 
-
-The IRP\_MJ\_FILE\_SYSTEM\_CONTROL request is sent by the I/O Manager and other operating system components, as well as other kernel-mode drivers. It can be sent, for example, when a user-mode application has called the Microsoft Win32 [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function to send a file system I/O control (FSCTL) request.
+The I/O Manager, other operating system components, and other kernel-mode drivers send IRP_MJ_FILE_SYSTEM_CONTROL requests. It can be sent, for example, when a user-mode application has called the Win32 [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function to send a file system I/O control (FSCTL) request.
 
 ## Operation: File System Drivers
-
 
 The file system driver or recognizer should check the minor function code to determine which file system control operation is requested.
 
 File system drivers should handle the following minor function codes:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Code</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>IRP_MN_KERNEL_CALL</p></td>
-<td align="left"><p>This request is the same as IRP_MN_USER_FS_REQUEST (described following), except that the source of the request is a trusted kernel component.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>IRP_MN_MOUNT_VOLUME</p></td>
-<td align="left"><p>Indicates a volume mount request. If a file system driver receives this IRP for a volume whose format does not match that of the file system, the file system driver should return STATUS_UNRECOGNIZED_VOLUME.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>IRP_MN_USER_FS_REQUEST</p></td>
-<td align="left"><p>Indicates an FSCTL request, possibly on behalf of a user-mode application that has called the Microsoft Win32 DeviceIoControl function or on behalf of a kernel-mode component that has called <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwdeviceiocontrolfile" data-raw-source="[&lt;strong&gt;ZwDeviceIoControlFile&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwdeviceiocontrolfile)"><strong>ZwDeviceIoControlFile</strong></a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest" data-raw-source="[&lt;strong&gt;IoBuildDeviceIoControlRequest&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest)"><strong>IoBuildDeviceIoControlRequest</strong></a>.</p>
-<p>For detailed information about FSCTL requests, see "Device Input and Output Control Codes" in the Microsoft Windows SDK documentation.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>IRP_MN_VERIFY_VOLUME</p></td>
-<td align="left"><p>Indicates a volume verification request. For removable media, the file system must verify the volume when it detects that the media has been removed and returned to ensure that it is still the same volume that the file system was previously working with. If the volume has changed, the file system should invalidate all outstanding handles. It will also return an error if the file system on this new media has changed. This request is most often used for floppy drives.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Code | Description |
+| ---- | ----------- |
+| IRP_MN_KERNEL_CALL | This request is the same as IRP_MN_USER_FS_REQUEST (described following), except that the source of the request is a trusted kernel component. |
+| IRP_MN_MOUNT_VOLUME | Indicates a volume mount request. If a file system driver receives this IRP for a volume whose format doesn't match that of the file system, the file system driver should return STATUS_UNRECOGNIZED_VOLUME. |
+| IRP_MN_USER_FS_REQUEST | Indicates an FSCTL request, possibly on behalf of a user-mode application that has called the Microsoft Win32 DeviceIoControl function or on behalf of a kernel-mode component that has called [**ZwDeviceIoControlFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwdeviceiocontrolfile) or [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest). For detailed information about FSCTL requests, see "Device Input and Output Control Codes" in the Windows SDK documentation. |
+| IRP_MN_VERIFY_VOLUME | Indicates a volume verification request. For removable media, the file system must verify the volume when it detects that the media has been removed and returned to ensure that it's still the same known volume. If the volume has changed, the file system should invalidate all outstanding handles. It should also return an error if the file system on this new media has changed. This request is most often used for floppy drives.
 
 File system recognizers must handle the following minor function code:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Code</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>IRP_MN_LOAD_FILE_SYSTEM</p></td>
-<td align="left"><p>Indicates a load-file system request.</p></td>
-</tr>
-</tbody>
-</table>
+| Code | Description |
+| ---- | ----------- |
+| IRP_MN_LOAD_FILE_SYSTEM | Indicates a load-file system request. |
 
- 
+The file system driver or recognizer should perform the requested operation and then complete the IRP.
 
-After performing the requested operation, the file system driver or recognizer should complete the IRP.
-
-## Operation: Files System Filter Drivers
-
+## Operation: Legacy Files System Filter Drivers
 
 The filter driver should pass this IRP down to the next-lower driver on the stack.
 
 ## Parameters
 
+A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) for the given IRP to get a pointer to its own stack location in the IRP. In the following parameters, **Irp** points to the [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) and **IrpSp** points to the [**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location). The driver can use the information set in the following members of the IRP and IRP stack location to process a file system control request:
 
-A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a file system control request:
+- **DeviceObject** is a pointer to the target device object.
 
-<a href="" id="deviceobject"></a>*DeviceObject*  
-Pointer to the target device object.
+- **Irp->AssociatedIrp.SystemBuffer** points to a system-supplied input buffer to be passed to the file system or file system filter driver for the target volume. Used for METHOD_BUFFERED or METHOD_DIRECT I/O. Whether this parameter is required depends on the specific file system control code.
 
-<a href="" id="irp--associatedirp-systembuffer"></a>*Irp-&gt;AssociatedIrp.SystemBuffer*  
-Pointer to a system-supplied input buffer to be passed to the file system or file system filter driver for the target volume. Used for METHOD\_BUFFERED or METHOD\_DIRECT I/O. Whether this parameter is required depends on the specific file system control code.
+- **Irp->IoStatus** points to an [**IO_STATUS_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
 
-<a href="" id="irp--iostatus"></a>*Irp-&gt;IoStatus*  
-Pointer to an [**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
+- **Irp->MdlAddress** is the address of a memory descriptor list (MDL) describing an output buffer to be passed to the file system or file system filter driver for the target volume. Used for METHOD_DIRECT I/O. Whether this parameter is required depends on the specific I/O control code.
 
-<a href="" id="irp--mdladdress"></a>*Irp-&gt;MdlAddress*  
-Address of a memory descriptor list (MDL) describing an output buffer to be passed to the file system or file system filter driver for the target volume. Used for METHOD\_DIRECT I/O. Whether this parameter is required depends on the specific I/O control code.
+- **Irp->UserBuffer** points to a caller-supplied output buffer to be passed to the file system or file system filter driver for the target volume. Used for METHOD_BUFFERED or METHOD_NEITHER I/O. Whether this parameter is optional or required depends on the specific I/O control code.
 
-<a href="" id="irp--userbuffer"></a>*Irp-&gt;UserBuffer*  
-Pointer to a caller-supplied output buffer to be passed to the file system or file system filter driver for the target volume. Used for METHOD\_BUFFERED or METHOD\_NEITHER I/O. Whether this parameter is optional or required depends on the specific I/O control code.
+- **IrpSp->FileObject** points to the file object that is associated with *DeviceObject*.
 
-<a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*  
-Pointer to the file object that is associated with *DeviceObject*.
+  The **IrpSp->FileObject** parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE_OBJECT structure. The **RelatedFileObject** field of the FILE_OBJECT structure isn't valid during the processing of IRP_MJ_FILE_SYSTEM_CONTROL and shouldn't be used.
 
-The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBJECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_FILE\_SYSTEM\_CONTROL and should not be used.
+- **IrpSp->Flags** can be set to SL_ALLOW_RAW_MOUNT for IRP_MN_VERIFY_VOLUME.
 
-<a href="" id="irpsp--flags"></a>*IrpSp-&gt;Flags*  
-The following flag can be set for IRP\_MN\_VERIFY\_VOLUME:
+- **IrpSp->MajorFunction** is set to IRP_MJ_FILE_SYSTEM_CONTROL.
 
-SL\_ALLOW\_RAW\_MOUNT
+- **IrpSp->MinorFunction** can be set to one of the following values.
 
-<a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*  
-Specifies IRP\_MJ\_FILE\_SYSTEM\_CONTROL.
+  - IRP_MN_KERNEL_CALL
+  - IRP_MN_LOAD_FILE_SYSTEM
+  - IRP_MN_MOUNT_VOLUME
+  - IRP_MN_USER_FS_REQUEST
+  - IRP_MN_VERIFY_VOLUME
 
-<a href="" id="irpsp--minorfunction"></a>*IrpSp-&gt;MinorFunction*  
-One of the following:
+- **IrpSp->Parameters.FileSystemControl.FsControlCode** is the FSCTL function code to be passed to the file system or file system filter driver for the target volume. For use with IRP_MN_USER_FS_REQUEST only.
 
--   IRP\_MN\_KERNEL\_CALL
--   IRP\_MN\_LOAD\_FILE\_SYSTEM
--   IRP\_MN\_MOUNT\_VOLUME
--   IRP\_MN\_USER\_FS\_REQUEST
--   IRP\_MN\_VERIFY\_VOLUME
+  For detailed information about IOCTL and FSCTL requests, see [Using I/O Control Codes](../kernel/introduction-to-i-o-control-codes.md) and "Device Input and Output Control Codes" in the Windows SDK documentation.
 
-<a href="" id="irpsp--parameters-filesystemcontrol-fscontrolcode"></a>*IrpSp-&gt;Parameters.FileSystemControl.FsControlCode*  
-FSCTL function code to be passed to the file system or file system filter driver for the target volume. For use with IRP\_MN\_USER\_FS\_REQUEST only.
+- **IrpSp->Parameters.FileSystemControl.InputBufferLength** is the size in bytes of the buffer pointed to by **Irp->AssociatedIrp.SystemBuffer**.
 
-For detailed information about IOCTL and FSCTL requests, see [Using I/O Control Codes](../kernel/introduction-to-i-o-control-codes.md) in the *Kernel Mode Architecture Guide* and "Device Input and Output Control Codes" in the Microsoft Windows SDK documentation.
+- **IrpSp->Parameters.FileSystemControl.OutputBufferLength** is the size in bytes of the buffer pointed to by **Irp->UserBuffer**.
 
-<a href="" id="irpsp--parameters-filesystemcontrol-inputbufferlength"></a>*IrpSp-&gt;Parameters.FileSystemControl.InputBufferLength*  
-Size in bytes of the buffer pointed to by *Irp-&gt;AssociatedIrp.SystemBuffer*.
+- **IrpSp->Parameters.FileSystemControl.Type3InputBuffer** is the input buffer for kernel-mode requests using METHOD_NEITHER.
 
-<a href="" id="irpsp--parameters-filesystemcontrol-outputbufferlength"></a>*IrpSp-&gt;Parameters.FileSystemControl.OutputBufferLength*  
-Size in bytes of the buffer pointed to by *Irp-&gt;UserBuffer*.
+- **IrpSp->Parameters.MountVolume.DeviceObject** points to the device object for the actual device on which the volume is to be mounted. File system filter drivers shouldn't use this parameter.
 
-<a href="" id="irpsp--parameters-filesystemcontrol-type3inputbuffer"></a>*IrpSp-&gt;Parameters.FileSystemControl.Type3InputBuffer*  
-Input buffer for kernel-mode requests using METHOD\_NEITHER.
+- **IrpSp->Parameters.MountVolume.Vpb** points to the volume parameter block (VPB) for the volume to be mounted. File systems that support removable media might substitute a previously used VPB for the one passed in this parameter. On such file systems, after the volume is mounted, this pointer can no longer be assumed to be valid. File system filter drivers that filter these file systems should use this parameter as follows: The filter should save the value of **IrpSp->Parameters.MountVolume.Vpb->RealDevice** before it sends the IRP down to lower-level drivers. After the volume is successfully mounted, the filter can use this pointer to the storage device object to obtain the correct VPB pointer.
 
-<a href="" id="irpsp--parameters-mountvolume-deviceobject"></a>*IrpSp-&gt;Parameters.MountVolume.DeviceObject*  
-Pointer to the device object for the actual device on which the volume is to be mounted. File system filter drivers should not use this parameter.
+- **IrpSp->Parameters.VerifyVolume.DeviceObject** points to the device object for the volume to be verified.
 
-<a href="" id="irpsp--parameters-mountvolume-vpb"></a>*IrpSp-&gt;Parameters.MountVolume.Vpb*  
-Pointer to the volume parameter block (VPB) for the volume to be mounted. File systems that support removable media might substitute a previously used VPB for the one passed in this parameter. On such file systems, after the volume is mounted, this pointer can no longer be assumed to be valid. File system filter drivers that filter these file systems should use this parameter as follows: Before sending the IRP down to lower-level drivers, the filter should save the value of *IrpSp-&gt;Parameters.MountVolume.Vpb-&gt;RealDevice*. After the volume is successfully mounted, the filter can use this pointer to the storage device object to obtain the correct VPB pointer.
-
-<a href="" id="irpsp--parameters-verifyvolume-deviceobject"></a>*IrpSp-&gt;Parameters.VerifyVolume.DeviceObject*  
-Pointer to the device object for the volume to be verified.
-
-<a href="" id="irpsp--parameters-verifyvolume-vpb"></a>*IrpSp-&gt;Parameters.VerifyVolume.Vpb*  
-Pointer to the VPB for the volume to be verified.
+- **IrpSp->Parameters.VerifyVolume.Vpb** points to the VPB for the volume to be verified.
 
 ## See also
 
+[**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 
-[**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
-
-[**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
+[**IO_STATUS_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
 
 [**IoBuildAsynchronousFsdRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildasynchronousfsdrequest)
 

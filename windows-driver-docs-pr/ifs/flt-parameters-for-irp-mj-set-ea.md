@@ -10,7 +10,8 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 02/04/2020
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
 # FLT_PARAMETERS for IRP_MJ_SET_EA union
@@ -19,7 +20,7 @@ Union component used when the **MajorFunction** field of the [**FLT_IO_PARAMETER
 
 ## Syntax
 
-```ManagedCPlusPlus
+``` C
 typedef union _FLT_PARAMETERS {
   ...    ;
   struct {
@@ -33,17 +34,13 @@ typedef union _FLT_PARAMETERS {
 
 ## Members
 
-**SetEa**  
-Structure containing the following members.
+- **SetEa**: Structure containing the following members.
 
-**Length**  
-Length, in bytes, of the buffer that **EaBuffer** points to.
+- **Length**: Length, in bytes, of the buffer that **EaBuffer** points to.
 
-**EaBuffer**  
-Pointer to a caller-supplied, [**FILE_FULL_EA_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_full_ea_information)-structured input buffer that contains the extended attribute (EA) values to be set. This member is optional and can be NULL if a MDL is provided in **MdlAddress**. See **Remarks**.
+- **EaBuffer**: Pointer to a caller-supplied, [**FILE_FULL_EA_INFORMATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_full_ea_information)-structured input buffer that contains the extended attribute (EA) values to be set. This member is optional and can be NULL if a MDL is provided in **MdlAddress**. See **Remarks**.
 
-**MdlAddress**  
-Address of a memory descriptor list (MDL) describing the buffer that **EaBuffer** points to. This member is optional and can be **NULL** if a buffer is provided in **EaBuffer**. See **Remarks**.
+- **MdlAddress**: Address of a memory descriptor list (MDL) describing the buffer that **EaBuffer** points to. This member is optional and can be **NULL** if a buffer is provided in **EaBuffer**. See **Remarks**.
 
 ## Remarks
 
@@ -57,8 +54,9 @@ IRP_MJ_SET_EA is an IRP-based operation.
 
 ## Requirements
 
-**Header**: Fltkernel.h (include Fltkernel.h)
-
+| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Header | *Fltkernel.h* (include *Fltkernel.h*) |
 
 ## See also
 

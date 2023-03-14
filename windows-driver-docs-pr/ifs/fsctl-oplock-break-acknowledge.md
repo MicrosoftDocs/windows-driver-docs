@@ -1,6 +1,6 @@
 ---
 title: FSCTL_OPLOCK_BREAK_ACKNOWLEDGE control code
-description: The FSCTL\_OPLOCK\_BREAK\_ACKNOWLEDGE control code responds to notification that an exclusive (level 1, batch, or filter) opportunistic lock (oplock) on a file has been broken.
+description: The FSCTL_OPLOCK_BREAK_ACKNOWLEDGE control code responds to notification that an exclusive (level 1, batch, or filter) opportunistic lock (oplock) on a file has been broken.
 keywords: ["FSCTL_OPLOCK_BREAK_ACKNOWLEDGE control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -10,112 +10,72 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
-# FSCTL\_OPLOCK\_BREAK\_ACKNOWLEDGE control code
+# FSCTL_OPLOCK_BREAK_ACKNOWLEDGE control code
 
-
-The **FSCTL\_OPLOCK\_BREAK\_ACKNOWLEDGE** control code responds to notification that an exclusive (level 1, batch, or filter) opportunistic lock (oplock) on a file has been broken.
+The **FSCTL_OPLOCK_BREAK_ACKNOWLEDGE** control code responds to notification that an exclusive (level 1, batch, or filter) opportunistic lock (oplock) on a file has been broken.
 
 A client application sends this control code to indicate that it acknowledges the oplock break and that, if the oplock is a level 1 oplock that was broken to level 2, it does want the level 2 oplock.
 
 To process this control code, a minifilter calls [**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl) with the following parameters. A file system or legacy filter driver calls [**FsRtlOplockFsctrl**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl).
 
-For more information about opportunistic locking and about the **FSCTL\_OPLOCK\_BREAK\_ACKNOWLEDGE** control code, see the Microsoft Windows SDK documentation.
+For more information about opportunistic locking and about the **FSCTL_OPLOCK_BREAK_ACKNOWLEDGE** control code, see the Microsoft Windows SDK documentation.
 
-**Parameters**
+## Parameters
 
-<a href="" id="oplock"></a>*Oplock*  
-Opaque oplock object pointer for the file.
+- **Oplock**: Opaque oplock object pointer for the file.
 
-<a href="" id="callbackdata"></a>*CallbackData*  
-[**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl) only. Callback data ([**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure for an IRP\_MJ\_FILE\_SYSTEM\_CONTROL FSCTL request. The *FsControlCode* parameter for the operation must be FSCTL\_OPLOCK\_BREAK\_ACKNOWLEDGE.
+- **CallbackData**: [**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl) only. Callback data ([**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure for an IRP_MJ_FILE_SYSTEM_CONTROL FSCTL request. The **FsControlCode** parameter for the operation must be FSCTL_OPLOCK_BREAK_ACKNOWLEDGE.
 
-<a href="" id="irp"></a>*Irp*  
-[**FsRtlOplockFsctrl**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl) only. IRP for an IRP\_MJ\_FILE\_SYSTEM\_CONTROL FSCTL request. The *FsControlCode* parameter for the operation must be FSCTL\_OPLOCK\_BREAK\_ACKNOWLEDGE.
+- **Irp**: [**FsRtlOplockFsctrl**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl) only. IRP for an IRP_MJ_FILE_SYSTEM_CONTROL FSCTL request. The **FsControlCode** parameter for the operation must be FSCTL_OPLOCK_BREAK_ACKNOWLEDGE.
 
-<a href="" id="opencount"></a>*OpenCount*  
-Not used with this operation; set to zero.
+- **OpenCount**: Not used with this operation; set to zero.
 
 ## Status block
 
-[**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl) returns FLT\_PREOP\_PENDING for this operation when a level 1 oplock is broken to level 2, and the level 2 oplock has been granted. Otherwise, it returns FLT\_PREOP\_COMPLETE.
+[**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl) returns FLT_PREOP_PENDING for this operation when a level 1 oplock is broken to level 2, and the level 2 oplock has been granted. Otherwise, it returns FLT_PREOP_COMPLETE.
 
 [**FsRtlOplockFsctrl**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl) returns one of the following NTSTATUS values for this operation:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Term</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>STATUS_SUCCESS</strong></p></td>
-<td align="left"><p>The oplock break is acknowledged. No remaining oplocks are held.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>STATUS_INVALID_OPLOCK_PROTOCOL</strong></p></td>
-<td align="left"><p>No oplock was held by this handle, or the oplock break is not currently in progress. This is an error code.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>STATUS_PENDING</strong></p></td>
-<td align="left"><p>The oplock break is acknowledged. On return, the sender of the <strong>FSCTL_OPLOCK_BREAK_ACKNOWLEDGE</strong> control code holds a level 2 oplock. This is a success code.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Code | Meaning |
+| ---- | ------- |
+| STATUS_SUCCESS | The oplock break is acknowledged. No remaining oplocks are held. |
+| STATUS_INVALID_OPLOCK_PROTOCOL | No oplock was held by this handle, or the oplock break is not currently in progress. This is an error code. |
+| STATUS_PENDING | The oplock break is acknowledged. On return, the sender of the **FSCTL_OPLOCK_BREAK_ACKNOWLEDGE** control code holds a level 2 oplock. This is a success code. |
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Header</p></td>
-<td align="left">Ntifs.h (include Ntifs.h or Fltkernel.h)</td>
-</tr>
-</tbody>
-</table>
+| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Header | *Ntifs.h* (include *Ntifs.h* or *Fltkernel.h*) |
 
 ## See also
 
+[**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)
 
-[**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)
+[**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters)
 
-[**FLT\_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters)
-
-[**FLT\_PARAMETERS for IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](flt-parameters-for-irp-mj-file-system-control.md)
+[**FLT_PARAMETERS for IRP_MJ_FILE_SYSTEM_CONTROL**](flt-parameters-for-irp-mj-file-system-control.md)
 
 [**FltOplockFsctrl**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltoplockfsctrl)
 
-[**FSCTL\_OPBATCH\_ACK\_CLOSE\_PENDING**](fsctl-opbatch-ack-close-pending.md)
+[**FSCTL_OPBATCH_ACK_CLOSE_PENDING**](fsctl-opbatch-ack-close-pending.md)
 
-[**FSCTL\_OPLOCK\_BREAK\_ACK\_NO\_2**](fsctl-oplock-break-ack-no-2.md)
+[**FSCTL_OPLOCK_BREAK_ACK_NO_2**](fsctl-oplock-break-ack-no-2.md)
 
-[**FSCTL\_OPLOCK\_BREAK\_NOTIFY**](fsctl-oplock-break-notify.md)
+[**FSCTL_OPLOCK_BREAK_NOTIFY**](fsctl-oplock-break-notify.md)
 
-[**FSCTL\_REQUEST\_BATCH\_OPLOCK**](fsctl-request-batch-oplock.md)
+[**FSCTL_REQUEST_BATCH_OPLOCK**](fsctl-request-batch-oplock.md)
 
-[**FSCTL\_REQUEST\_FILTER\_OPLOCK**](fsctl-request-filter-oplock.md)
+[**FSCTL_REQUEST_FILTER_OPLOCK**](fsctl-request-filter-oplock.md)
 
-[**FSCTL\_REQUEST\_OPLOCK\_LEVEL\_1**](fsctl-request-oplock-level-1.md)
+[**FSCTL_REQUEST_OPLOCK_LEVEL_1**](fsctl-request-oplock-level-1.md)
 
-[**FSCTL\_REQUEST\_OPLOCK\_LEVEL\_2**](fsctl-request-oplock-level-2.md)
+[**FSCTL_REQUEST_OPLOCK_LEVEL_2**](fsctl-request-oplock-level-2.md)
 
 [**FsRtlOplockFsctrl**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl)
 
-[**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](irp-mj-file-system-control.md)
-
- 
-
+[**IRP_MJ_FILE_SYSTEM_CONTROL**](irp-mj-file-system-control.md)

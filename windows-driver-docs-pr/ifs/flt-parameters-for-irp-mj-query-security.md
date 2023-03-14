@@ -10,7 +10,8 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 02/04/2020
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
 # FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY union
@@ -19,7 +20,7 @@ Union component used when the **MajorFunction** field of the [**FLT_IO_PARAMETER
 
 ## Syntax
 
-```ManagedCPlusPlus
+``` C
 typedef union _FLT_PARAMETERS {
   ...    ;
   struct {
@@ -34,27 +35,22 @@ typedef union _FLT_PARAMETERS {
 
 ## Members
 
-**QuerySecurity**  
-Structure containing the following members.
+- **QuerySecurity**: Structure containing the following members.
 
-**SecurityInformation**  
-Pointer to a caller-supplied [**SECURITY_INFORMATION**](security-information.md) value that specifies the security information to be queried. One of the following:
+- **SecurityInformation**: Pointer to a caller-supplied [**SECURITY_INFORMATION**](security-information.md) value that specifies the security information to be queried. One of the following:
 
-| SecurityInformation Value | Meaning |
-| ------------------------- | ------- |
-| OWNER_SECURITY_INFORMATION | The owner identifier of the object is being queried. Requires READ_CONTROL access. |
-| GROUP_SECURITY_INFORMATION | The primary group identifier of the object is being queried. Requires READ_CONTROL access. |
-| DACL_SECURITY_INFORMATION | The discretionary access control list (DACL) of the object is being queried. Requires READ_CONTROL access. |
-| SACL_SECURITY_INFORMATION | The system ACL (SACL) of the object is being queried. Requires ACCESS_SYSTEM_SECURITY access. |
+  | SecurityInformation Value | Meaning |
+  | ------------------------- | ------- |
+  | OWNER_SECURITY_INFORMATION | The owner identifier of the object is being queried. Requires READ_CONTROL access. |
+  | GROUP_SECURITY_INFORMATION | The primary group identifier of the object is being queried. Requires READ_CONTROL access. |
+  | DACL_SECURITY_INFORMATION | The discretionary access control list (DACL) of the object is being queried. Requires READ_CONTROL access. |
+  | SACL_SECURITY_INFORMATION | The system ACL (SACL) of the object is being queried. Requires ACCESS_SYSTEM_SECURITY access. |
 
-**Length**  
-Length, in bytes, of the buffer that **SecurityBuffer** points to.
+- **Length**: Length, in bytes, of the buffer that **SecurityBuffer** points to.
 
-**SecurityBuffer**  
-Pointer to a caller-supplied output buffer that receives a copy of the security descriptor of the specified object. The calling process must have the right to view the specified aspects of the object's security status. The [**SECURITY_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff556610(v=vs.85)) structure is returned in self-relative format. This member is optional and can be NULL if a MDL is provided in **MdlAddress**. See **Remarks**.
+- **SecurityBuffer**: Pointer to a caller-supplied output buffer that receives a copy of the security descriptor of the specified object. The calling process must have the right to view the specified aspects of the object's security status. The [**SECURITY_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff556610(v=vs.85)) structure is returned in self-relative format. This member is optional and can be NULL if a MDL is provided in **MdlAddress**. See **Remarks**.
 
-**MdlAddress**  
-Address of a memory descriptor list (MDL) that describes the buffer that **SecurityBuffer** points to. This member is optional and can be **NULL** if a buffer is provided in **SecurityBuffer**. See **Remarks**.
+- **MdlAddress**: Address of a memory descriptor list (MDL) that describes the buffer that **SecurityBuffer** points to. This member is optional and can be **NULL** if a buffer is provided in **SecurityBuffer**. See **Remarks**.
 
 ## Remarks
 
@@ -70,8 +66,9 @@ IRP_MJ_QUERY_SECURITY is an IRP-based operation.
 
 ## Requirements
 
-**Header**: Fltkernel.h (include Fltkernel.h)
-
+| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Header | *Fltkernel.h* (include *Fltkernel.h*) |
 
 ## See also
 

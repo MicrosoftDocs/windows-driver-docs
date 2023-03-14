@@ -1,6 +1,6 @@
 ---
-title: IRP_MJ_LOCK_CONTROL
-description: IRP\_MJ\_LOCK\_CONTROL
+title: IRP_MJ_LOCK_CONTROL (FS and filter drivers)
+description: IRP_MJ_LOCK_CONTROL
 keywords: ["IRP_MJ_LOCK_CONTROL Installable File System Drivers"]
 topic_type:
 - apiref
@@ -8,142 +8,79 @@ api_name:
 - IRP_MJ_LOCK_CONTROL
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
-# IRP\_MJ\_LOCK\_CONTROL
-
+# IRP_MJ_LOCK_CONTROL (FS and filter drivers)
 
 ## When Sent
 
-
-The IRP\_MJ\_LOCK\_CONTROL request is sent by the I/O Manager and other operating system components, as well as other kernel-mode drivers.
+The I/O Manager, other operating system components, and other kernel-mode drivers send IRP_MJ_LOCK_CONTROL requests.
 
 ## Operation: File System Drivers
 
-
-The file system driver should extract and decode the file object to determine whether the target device object is the file system's control device object. If this is the case, the file system driver should complete the IRP as appropriate without processing the lock request.
+The file system driver should extract and decode the file object to determine whether the target device object is the file system's control device object. If so, the file system driver should complete the IRP as appropriate without processing the lock request.
 
 Otherwise, if the request has been issued on a handle that represents a user file open, the file system driver should perform the operation indicated by the minor function code and complete the IRP. If not, the driver should fail the IRP.
 
 The following are the valid minor function codes:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Code</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>IRP_MN_LOCK</p></td>
-<td align="left"><p>Indicates a byte-range lock request, possibly on behalf of a user-mode application that has called the Microsoft Win32 <strong>LockFile</strong> function.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>IRP_MN_UNLOCK_ALL</p></td>
-<td align="left"><p>Indicates a request to release all byte-range locks for a file, usually because the last outstanding handle to a file object is being closed.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>IRP_MN_UNLOCK_ALL_BY_KEY</p></td>
-<td align="left"><p>Indicates a request to release all byte-range locks with a specified key value.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>IRP_MN_UNLOCK_SINGLE</p></td>
-<td align="left"><p>Indicates a request to release a single byte-range lock, possibly on behalf of a user-mode application that has called the Microsoft Win32 <strong>UnlockFile</strong> function.</p></td>
-</tr>
-</tbody>
-</table>
+| Code | Description |
+| ---- | ----------- |
+| IRP_MN_LOCK  | Indicates a byte-range lock request, possibly on behalf of a user-mode application that has called the Win32 [**LockFile**](/windows/win32/api/fileapi/nf-fileapi-lockfile) function. |
+| IRP_MN_UNLOCK_ALL        | Indicates a request to release all byte-range locks for a file, usually because the last outstanding handle to a file object is being closed. |
+| IRP_MN_UNLOCK_ALL_BY_KEY | Indicates a request to release all byte-range locks with a specified key value. |
+| IRP_MN_UNLOCK_SINGLE     | Indicates a request to release a single byte-range lock, possibly on behalf of a user-mode application that has called the Win32 [**UnlockFile**](/windows/win32/api/fileapi/nf-fileapi-unlockfile) function. |
 
- 
-
-## Operation: File System Filter Drivers
-
+## Operation: Legacy File System Filter Drivers
 
 File system filter drivers should pass the IRP down to the next-lower driver on the stack after performing any needed processing.
 
 ## Parameters
 
-
 A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a lock control request:
 
-<a href="" id="deviceobject"></a>*DeviceObject*  
-Pointer to the target device object.
+- **DeviceObject** is a pointer to the target device object.
 
-<a href="" id="irp--iostatus"></a>*Irp-&gt;IoStatus*  
-Pointer to an [**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
+- **Irp->IoStatus** points to an [**IO_STATUS_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
 
-<a href="" id="irpsp--fileobject"></a>*IrpSp-&gt;FileObject*  
-Pointer to the file object that is associated with *DeviceObject*.
+- **IrpSp->FileObject** points to the file object that is associated with *DeviceObject*.
 
-The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBJECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_LOCK\_CONTROL and should not be used.
+  The **IrpSp->FileObject** parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE_OBJECT structure. The **RelatedFileObject** field of the FILE_OBJECT structure isn't valid during the processing of IRP_MJ_LOCK_CONTROL and shouldn't be used.
 
-<a href="" id="irpsp--flags"></a>*IrpSp-&gt;Flags*  
-One or more of the following:
+- **IrpSp->Flags** can be one or more of the following values:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Flag</th>
-<th align="left">Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>SL_EXCLUSIVE_LOCK</p></td>
-<td align="left"><p>If this flag is set, an exclusive byte-range lock is requested. Otherwise, a shared lock is requested.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>SL_FAIL_IMMEDIATELY</p></td>
-<td align="left"><p>If this flag is set, the lock request should fail if it cannot be granted immediately.</p></td>
-</tr>
-</tbody>
-</table>
+| Flag | Meaning |
+| ---- | ------- |
+| SL_EXCLUSIVE_LOCK   | If this flag is set, an exclusive byte-range lock is requested. Otherwise, a shared lock is requested. |
+| SL_FAIL_IMMEDIATELY | If this flag is set, the lock request should fail if it can't be granted immediately. |
 
- 
+- **IrpSp->MajorFunction** is set to IRP_MJ_LOCK_CONTROL.
 
-<a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*  
-Specifies IRP\_MJ\_LOCK\_CONTROL.
+- **IrpSp->MinorFunction** is set to one of the following values:
 
-<a href="" id="irpsp--minorfunction"></a>*IrpSp-&gt;MinorFunction*  
-Specifies one of the following:
+  - IRP_MN_LOCK
+  - IRP_MN_UNLOCK_ALL
+  - IRP_MN_UNLOCK_ALL_BY_KEY
+  - IRP_MN_UNLOCK_SINGLE
 
--   IRP\_MN\_LOCK
--   IRP\_MN\_UNLOCK\_ALL
--   IRP\_MN\_UNLOCK\_ALL\_BY\_KEY
--   IRP\_MN\_UNLOCK\_SINGLE
+- **IrpSp->Parameters.LockControl.ByteOffset** is the starting byte offset within the file of the byte range to be locked or unlocked.
 
-<a href="" id="irpsp--parameters-lockcontrol-byteoffset"></a>*IrpSp-&gt;Parameters.LockControl.ByteOffset*  
-Starting byte offset within the file of the byte range to be locked or unlocked.
+- **IrpSp->Parameters.LockControl.Key** is the key for the byte-range lock.
 
-<a href="" id="irpsp--parameters-lockcontrol-key"></a>*IrpSp-&gt;Parameters.LockControl.Key*  
-Key for the byte-range lock.
-
-<a href="" id="irpsp--parameters-lockcontrol-length"></a>*IrpSp-&gt;Parameters.LockControl.Length*  
-Length, in bytes, of the byte range to be locked or unlocked.
+- **IrpSp->Parameters.LockControl.Length** is the length, in bytes, of the byte range to be locked or unlocked.
 
 ## See also
-
 
 [**FltProcessFileLock**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltprocessfilelock)
 
 [**FsRtlProcessFileLock**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlprocessfilelock)
 
-[**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
+[**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 
-[**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
+[**IO_STATUS_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
 
 [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation)
 
 [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
-
- 
-
