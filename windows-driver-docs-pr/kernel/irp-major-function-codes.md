@@ -1,7 +1,7 @@
 ---
 title: IRP Major Function Codes
 description: IRP Major Function Codes
-ms.date: 03/09/2020
+ms.date: 03/13/2020
 ---
 
 # IRP Major Function Codes
@@ -12,7 +12,7 @@ The specific operations a driver carries out for a given **IRP_MJ_*XXX*** code d
 
 Every higher-level driver must set up the appropriate I/O stack location in IRPs for the next-lower-level driver and call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver), either with each input IRP, or with a driver-created IRP (if the higher-level driver holds on to the input IRP). Consequently, every intermediate driver must supply a dispatch routine for each major function code that the underlying device driver handles. Otherwise, a new intermediate driver will "break the chain" whenever an application or still higher-level driver attempts to send an I/O request down to the underlying device driver.
 
-File system drivers and legacy file system filter drivers also handle a required subset of system-defined **IRP_MJ_*XXX*** function codes, some with subordinate **IRP_MN_*XXX*** function codes. For more information on how to handle these IRPs, see [IRP major function codes for file system drivers and legacy FS filter drivers](../irp-major-function-codes-fs-filters.md).
+File system drivers and legacy file system filter drivers also handle a required subset of system-defined **IRP_MJ_*XXX*** function codes, some with subordinate **IRP_MN_*XXX*** function codes. For more information on how to handle these IRPs, see [IRP major function codes for file system drivers and legacy FS filter drivers](../ifs/irp-major-function-codes-fs-filters.md).
 
 Drivers handle IRPs set with some or all of the following major function codes:
 
