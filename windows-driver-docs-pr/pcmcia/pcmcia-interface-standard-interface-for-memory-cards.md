@@ -4,7 +4,7 @@ description: PCMCIA_INTERFACE_STANDARD Interface for Memory Cards
 keywords:
 - PCMCIA WDK buses , PCMCIA_INTERFACE_STANDARD interface
 - PCMCIA_INTERFACE_STANDARD
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # PCMCIA\_INTERFACE\_STANDARD Interface for Memory Cards

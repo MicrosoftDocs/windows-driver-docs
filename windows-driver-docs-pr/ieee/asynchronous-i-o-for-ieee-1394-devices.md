@@ -10,7 +10,7 @@ keywords:
 - IRPs WDK IEEE 1394 bus
 - transferring data WDK IEEE 1394 bus
 - PDOs WDK IEEE 1394 bus
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Asynchronous I/O for IEEE 1394 Devices

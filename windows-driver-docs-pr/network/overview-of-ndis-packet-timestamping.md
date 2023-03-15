@@ -1,7 +1,7 @@
 ---
 title: Overview of NDIS packet timestamping
 description: NDIS packet timestamping supports NICs' hardware timestamping capabilities
-ms.date: 01/31/2021
+ms.date: 03/02/2023
 ---
 
 # Overview of NDIS packet timestamping

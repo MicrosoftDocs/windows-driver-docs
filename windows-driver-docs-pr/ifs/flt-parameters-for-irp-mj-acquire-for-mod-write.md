@@ -10,7 +10,8 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 07/17/2019
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
 # FLT_PARAMETERS for IRP_MJ_ACQUIRE_FOR_MOD_WRITE union
@@ -19,7 +20,7 @@ The following union component is used when the **MajorFunction** field of the [*
 
 ## Syntax
 
-```ManagedCPlusPlus
+``` C
 typedef union _FLT_PARAMETERS {
   ...    ;
   struct {
@@ -32,17 +33,11 @@ typedef union _FLT_PARAMETERS {
 
 ## Members
 
-```AcquireForModifiedPageWriter```
+- **AcquireForModifiedPageWriter**: Structure containing the following members.
 
-Structure containing the following members.
+- **EndingOffset**: Pointer to a variable that contains the offset of the last byte being written plus one.
 
-```EndingOffset```
-
-Pointer to a variable that contains the offset of the last byte being written plus one.
-
-```ResourceToRelease```
-
-Pointer to a pointer to the resource ([ERESOURCE](../kernel/eresource-structures.md)) to be acquired.
+- **ResourceToRelease**: Pointer to a pointer to the resource ([ERESOURCE](../kernel/eresource-structures.md)) to be acquired.
 
 ## Remarks
 
@@ -54,8 +49,9 @@ For more information about FSFilter callback operations, see the reference entry
 
 ## Requirements
 
-**Header**: *Fltkernel.h* (include *Fltkernel.h*)
-
+| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Header | *Fltkernel.h* (include *Fltkernel.h*) |
 
 ## See also
 

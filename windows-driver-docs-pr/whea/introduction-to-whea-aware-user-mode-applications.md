@@ -13,7 +13,7 @@ keywords:
 - WHEA WDK , events
 - hardware errors WDK WHEA , events
 - errors WDK WHEA , events
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Introduction to WHEA-Aware User-Mode Applications

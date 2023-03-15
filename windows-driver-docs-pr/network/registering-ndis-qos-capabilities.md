@@ -1,7 +1,7 @@
 ---
 title: Registering NDIS QoS Capabilities
 description: Registering NDIS QoS Capabilities
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Registering NDIS QoS Capabilities

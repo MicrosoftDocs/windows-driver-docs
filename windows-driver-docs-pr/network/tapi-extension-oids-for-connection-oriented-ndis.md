@@ -3,7 +3,7 @@ title: TAPI extension OIDs for connection-oriented NDIS
 description: This topic describes TAPI extension OIDs for connection-oriented NDIS.
 keywords:
 - TAPI extension OIDs connection-oriented NDIS
-ms.date: 11/03/2017
+ms.date: 03/02/2023
 ---
 
 # TAPI extension OIDs for connection-oriented NDIS

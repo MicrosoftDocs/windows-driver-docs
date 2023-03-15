@@ -5,7 +5,7 @@ keywords:
 - biometric drivers WDK , supporting IOCTLs
 - supporting IOCTLs WDK biometric
 - IOCTLs WDK biometric
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Supporting Biometric IOCTL Calling Sequence

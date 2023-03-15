@@ -3,7 +3,7 @@ title: NDIS Interface Types
 description: This topic describes types for NDIS Interfaces.
 keywords:
 - NDIS Interface Types, WDK NDIS Interface Types network drivers
-ms.date: 11/27/2017
+ms.date: 03/02/2023
 ---
 
 # NDIS Interface Types

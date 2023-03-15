@@ -6,7 +6,7 @@ keywords:
 - configuration space WDK buses
 - IRP_MN_READ_CONFIG
 - IRP_MN_WRITE_CONFIG
-ms.date: 09/13/2021
+ms.date: 03/03/2023
 ---
 
 # Accessing PCI Device Configuration Space

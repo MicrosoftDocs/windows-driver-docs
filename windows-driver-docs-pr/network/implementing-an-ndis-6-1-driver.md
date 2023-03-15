@@ -3,7 +3,7 @@ title: Implementing an NDIS 6.1 Driver
 description: Implementing an NDIS 6.1 Driver
 keywords:
 - NDIS WDK , versions in network drivers
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Implementing an NDIS 6.1 Driver

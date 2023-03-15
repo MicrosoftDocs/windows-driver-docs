@@ -5,7 +5,7 @@ keywords:
 - NDIS network interfaces WDK , interface providers
 - network interfaces WDK , interface providers
 - interface providers WDk network interface
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Handling OID Query and Set Requests in an NDIS Interface Provider

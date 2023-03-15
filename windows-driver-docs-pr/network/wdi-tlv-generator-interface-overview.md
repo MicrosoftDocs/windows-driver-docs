@@ -1,7 +1,7 @@
 ---
 title: WDI TLV generator interface overview
 description: This section describes an overview of function models for the WDI TLV generator interface
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # WDI TLV generator interface overview

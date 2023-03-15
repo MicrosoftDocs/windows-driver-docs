@@ -2,7 +2,7 @@
 title: WDI_TLV_SAE_CONFIRM
 ms.topic: reference
 description: WDI_TLV_SAE_CONFIRM is a TLV that contains the Confirm field for a Simultaneous Authentication of Equals (SAE) Confirm request.
-ms.date: 02/15/2019
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_SAE_CONFIRM Network Drivers Starting with Windows Vista
 ms.custom: 19H1

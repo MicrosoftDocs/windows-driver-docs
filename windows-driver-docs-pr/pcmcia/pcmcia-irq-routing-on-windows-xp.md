@@ -10,7 +10,7 @@ keywords:
 - ISA-to-PCI interrupt routing WDK PCMCIA bus
 - PCI interrupts WDK PCMCIA bus
 - ISA interrupts WDK PCMCIA bus
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # PCMCIA IRQ Routing on Windows XP

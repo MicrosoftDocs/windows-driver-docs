@@ -7,7 +7,7 @@ keywords:
 - OID_WAN_CO_GET_LINK_INFO
 - OID_WAN_CO_GET_STATS_INFO
 - queries WDK CoNDIS WAN
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Handling Queries in a CoNDIS WAN Miniport Driver

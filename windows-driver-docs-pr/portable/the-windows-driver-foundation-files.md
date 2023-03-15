@@ -1,7 +1,7 @@
 ---
 description: The Windows Driver Frameworks Files
 title: The Windows Driver Frameworks Files
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # The Windows Driver Frameworks Files

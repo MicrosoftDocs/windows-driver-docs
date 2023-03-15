@@ -10,7 +10,8 @@ api_location:
 - mrx.h
 api_type:
 - UserDefined
-ms.date: 11/28/2017
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
 # MRxQuerySdInfo routine

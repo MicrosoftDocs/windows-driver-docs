@@ -2,6 +2,7 @@
 title: MB eSIM Operations
 description: MB eSIM Operations
 ms.date: 03/01/2021
+ms.custom: UpdateFrequency3
 ---
 
 # MB eSIM Operations

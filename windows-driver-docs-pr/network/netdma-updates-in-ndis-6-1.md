@@ -3,7 +3,7 @@ title: NetDMA Updates in NDIS 6.1
 description: NetDMA Updates in NDIS 6.1
 keywords:
 - NetDMA WDK networking , about NetDMA interface
-ms.date: 01/09/2019
+ms.date: 03/02/2023
 ---
 
 # NetDMA Updates in NDIS 6.1

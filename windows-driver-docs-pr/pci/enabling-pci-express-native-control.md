@@ -3,7 +3,7 @@ title: Enabling PCI Express Native Control in Windows
 description: PCI Express features that can be controlled by the PCI Express Native Control feature in Windows
 ms:assetid: 0E3A4408-CBF7-494F-9F25-7C78E04526B4
 keywords: ACPI, ACPI \_OSC method
-ms.date: 06/01/2017
+ms.date: 03/03/2023
 ---
 
 # Enabling PCI Express Native Control in Windows

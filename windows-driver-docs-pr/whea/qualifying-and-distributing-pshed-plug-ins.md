@@ -5,7 +5,7 @@ keywords:
 - digital signatures WDK WHEA), PSHED plug-ins
 - PSHED plug-ins WDK WHEA , qualifying
 - PSHED plug-ins WDK WHEA , distributing
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Qualifying and Distributing PSHED Plug-Ins

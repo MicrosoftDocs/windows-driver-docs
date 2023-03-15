@@ -4,7 +4,7 @@ description: CoNDIS Call Manager Registration
 keywords:
 - call managers WDK networking , CoNDIS
 - registering call managers
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # CoNDIS Call Manager Registration

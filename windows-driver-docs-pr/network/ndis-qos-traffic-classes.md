@@ -1,7 +1,7 @@
 ---
 title: NDIS QoS Traffic Classes
 description: NDIS QoS Traffic Classes
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # NDIS QoS Traffic Classes

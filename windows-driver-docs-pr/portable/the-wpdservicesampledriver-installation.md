@@ -1,7 +1,7 @@
 ---
 description: Installing the WpdServiceSampleDriver Sample
 title: Installing the WpdServiceSampleDriver Sample
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Installing the WpdServiceSampleDriver Sample

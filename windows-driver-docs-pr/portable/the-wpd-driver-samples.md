@@ -1,7 +1,7 @@
 ---
 description: The WPD Driver Samples
 title: The WPD Driver Samples
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # The WPD Driver Samples

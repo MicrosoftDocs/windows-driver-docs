@@ -7,7 +7,7 @@ keywords:
 - unlocking parallel ports
 - uninterrupted operations WDK parallel devices
 - freeing parallel ports
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Locking and Unlocking a Parallel Port for Use by a Parallel Device

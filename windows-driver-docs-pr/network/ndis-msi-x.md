@@ -10,7 +10,7 @@ keywords:
 - interrupts WDK networking
 - interrupt affinity WDK networking
 - interrupts WDK net
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Overview of NDIS MSI-X

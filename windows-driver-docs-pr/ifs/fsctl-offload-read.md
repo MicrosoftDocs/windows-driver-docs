@@ -1,6 +1,6 @@
 ---
 title: FSCTL_OFFLOAD_READ control code
-description: The FSCTL\_OFFLOAD\_READ control code initiates an offload read for a block of data in a storage system that supports offload read primitives.
+description: The FSCTL_OFFLOAD_READ control code initiates an offload read for a block of data in a storage system that supports offload read primitives.
 keywords: ["FSCTL_OFFLOAD_READ control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -10,164 +10,83 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
-# FSCTL\_OFFLOAD\_READ control code
+# FSCTL_OFFLOAD_READ control code
 
-
-The **FSCTL\_OFFLOAD\_READ** control code initiates an offload read for a block of data in a storage system that supports offload read primitives.
+The **FSCTL_OFFLOAD_READ** control code initiates an offload read for a block of data in a storage system that supports offload read primitives.
 
 To perform this operation, call [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) with the following parameters.
 
-**Parameters**
+## Parameters
 
-<a href="" id="instance--in-"></a>*Instance \[in\]*  
-[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. An opaque instance pointer for the caller. This parameter is required and cannot be NULL.
+- **Instance** [in]: [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. An opaque instance pointer for the caller. This parameter is required and cannot be NULL.
 
-<a href="" id="fileobject--in-"></a>*FileObject \[in\]*  
-[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. The file pointer object specifying the file to read from. This parameter is required and cannot be NULL.
+- **FileObject** [in]: [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. The file pointer object specifying the file to read from. This parameter is required and cannot be NULL.
 
-<a href="" id="filehandle--in-"></a>*FileHandle \[in\]*  
-[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. The file handle of the file to read from. This parameter is required and cannot be NULL.
+- **FileHandle** [in]: [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. The file handle of the file to read from. This parameter is required and cannot be NULL.
 
-<a href="" id="fscontrolcode--in-"></a>*FsControlCode \[in\]*  
-The control code for the operation. Use **FSCTL\_OFFLOAD\_READ** for this operation.
+- **FsControlCode** [in]: The control code for the operation. Use **FSCTL_OFFLOAD_READ** for this operation.
 
-<a href="" id="inputbuffer"></a>*InputBuffer*  
-A pointer to a [**FSCTL\_OFFLOAD\_READ\_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input) structure, which contains the size and offset of a data block to read.
+- **InputBuffer** [in]: A pointer to a [**FSCTL_OFFLOAD_READ_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input) structure, which contains the size and offset of a data block to read.
 
-<a href="" id="inputbufferlength--in-"></a>*InputBufferLength \[in\]*  
-The size, in bytes, of the buffer pointed to by *InputBuffer*. This value is **sizeof**(FSCTL\_OFFLOAD\_READ\_INPUT).
+- **InputBufferLength** [in]: The size, in bytes, of the buffer pointed to by **InputBuffer**. This value is **sizeof**(FSCTL_OFFLOAD_READ_INPUT).
 
-<a href="" id="outputbuffer--out-"></a>*OutputBuffer \[out\]*  
-A pointer to a [**FSCTL\_OFFLOAD\_READ\_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output) structure, which receives the results of the offload read operation.
+- **OutputBuffer** [out]: A pointer to a [**FSCTL_OFFLOAD_READ_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output) structure, which receives the results of the offload read operation.
 
-<a href="" id="outputbufferlength--out-"></a>*OutputBufferLength \[out\]*  
-The size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter. This value must be at least **sizeof**(FSCTL\_OFFLOAD\_READ\_OUTPUT).
+- **OutputBufferLength** [out]: The size, in bytes, of the buffer pointed to by the **OutputBuffer** parameter. This value must be at least **sizeof**(FSCTL_OFFLOAD_READ_OUTPUT).
 
 ## Status block
 
-[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Term</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>STATUS_INVALID_DEVICE_REQUEST</strong></p></td>
-<td align="left"><p>The handle specified is not a valid file handle.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p> <strong>STATUS_INVALID_PARAMETER</strong></p></td>
-<td align="left"><p>File size is less than PAGE_SIZE.</p>
-<p>-or-</p>
-<p><em>InputBufferLength</em> &lt; <strong>sizeof</strong>(FSCTL_OFFLOAD_READ_INPUT).</p>
-<p>-or-</p>
-<p>One or more of these members of <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_READ_INPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input)"><strong>FSCTL_OFFLOAD_READ_INPUT</strong></a> are incorrect:</p>
-<strong>FileOffset</strong> is not a multiple of the logical sector size of the volume.
-<strong>CopyLength</strong> is not a multiple of the logical sector size of the volume.
-<strong>Size</strong> is not the size of the <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_READ_INPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input)"><strong>FSCTL_OFFLOAD_READ_INPUT</strong></a> structure.
-<strong>FileOffset</strong> + <strong>CopyLength</strong> &gt; <strong>MAXULONGLONG</strong>.</td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>STATUS_VOLUME_DISMOUNTED</strong></p></td>
-<td align="left"><p>The file system volume is dismounted.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>STATUS_NOT_SUPPORTED</strong></p></td>
-<td align="left"><p>Offload read operations are not supported on this volume.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>STATUS_OFFLOAD_READ_FILE_NOT_SUPPORTED</strong></p></td>
-<td align="left"><p>The requested file type is not supported. Offload operations are not supported on these file types:</p>
-<ul>
-<li>A transacted file (TxF)</li>
-<li>Non-user files</li>
-<li>Compressed files</li>
-<li>Encrypted files</li>
-<li>Sparse files</li>
-<li>NTFS Metatdata files</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>STATUS_FILE_DELETED</strong></p></td>
-<td align="left"><p>The data stream for this file is invalid.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>STATUS_FILE_CLOSED</strong></p></td>
-<td align="left"><p>The file handle is closed.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>STATUS_INVALID_HANDLE</strong></p></td>
-<td align="left"><p>The file handle specified is invalid.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>STATUS_FILE_LOCK_CONFLICT</strong></p></td>
-<td align="left"><p>Insufficient read access due to the current file locking state.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>STATUS_END_OF_FILE</strong></p></td>
-<td align="left"><p>The<strong>FileOffset</strong> member of <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_READ_INPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input)"><strong>FSCTL_OFFLOAD_READ_INPUT</strong></a> begins after end-of-file (EOF).</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>STATUS_DISMOUNTED_VOLUME</strong></p></td>
-<td align="left"><p>An offload read cannot occur on a dismounted volume.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>STATUS_INSUFFICIENT_RESOUCES</strong></p></td>
-<td align="left"><p>Insufficient resources are available to complete the request.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>STATUS_BUFFER_TOO_SMALL</strong></p></td>
-<td align="left"><p><em>OutputBufferLength</em> is too small for <em>OutputBuffer</em> to receive an <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output" data-raw-source="[&lt;strong&gt;FSCTL_OFFLOAD_READ_OUTPUT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output)"><strong>FSCTL_OFFLOAD_READ_OUTPUT</strong></a> structure.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Code | Meaning |
+| ---- | ------- |
+| STATUS_INVALID_DEVICE_REQUEST | The handle specified is not a valid file handle |
+| STATUS_INVALID_PARAMETER | A parameter is invalid. See Remarks. |
+| STATUS_VOLUME_DISMOUNTED | The file system volume is dismounted. |
+| STATUS_NOT_SUPPORTED | Offload read operations are not supported on this volume. |
+| STATUS_OFFLOAD_READ_FILE_NOT_SUPPORTED | The requested file type is not supported. Offload operations are not supported on these file types: A transacted file (TxF); Non-user files; Compressed files; Encrypted files; Sparse files; NTFS Metatdata files. |
+| STATUS_FILE_DELETED | The data stream for this file is invalid. |
+| STATUS_FILE_CLOSED | The file handle is closed. |
+| STATUS_INVALID_HANDLE | The file handle specified is invalid. |
+| STATUS_FILE_LOCK_CONFLICT | Insufficient read access due to the current file locking state. |
+| STATUS_END_OF_FILE | The **FileOffset** member of [**FSCTL_OFFLOAD_READ_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input) begins after end-of-file (EOF). |
+| STATUS_DISMOUNTED_VOLUME | An offload read cannot occur on a dismounted volume. |
+| STATUS_INSUFFICIENT_RESOUCES | Insufficient resources are available to complete the request. |
+| STATUS_BUFFER_TOO_SMALL | **OutputBufferLength** is too small for **OutputBuffer** to receive an [**FSCTL_OFFLOAD_READ_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output) structure. |
 
 ## Remarks
 
-Offload read is available for normal files only. See the description for **STATUS\_OFFLOAD\_READ\_FILE\_NOT\_SUPPORTED** for a list of unsupported file types.
+Offload read is available for normal files only. See the description for **STATUS_OFFLOAD_READ_FILE_NOT_SUPPORTED** for a list of unsupported file types.
 
 It is possible for reads to start beyond the Valid Data Length (VDL), but not beyond EOF.
 
+When STATUS_INVALID_PARAMETER is returned, the error could be one of the following invalid parameters:
+
+- File size is less than PAGE_SIZE.
+- **InputBufferLength** < ```sizeof(FSCTL_OFFLOAD_READ_INPUT)```.
+- One or more of these members of [**FSCTL_OFFLOAD_READ_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input) are incorrect:
+  - **FileOffset** is not a multiple of the logical sector size of the volume.
+  - **CopyLength** is not a multiple of the logical sector size of the volume.
+  - **Size** is not the size of the [**FSCTL_OFFLOAD_READ_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input) structure.
+  - **FileOffset** + **CopyLength** > **MAXULONGLONG**.
+
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available starting with Windows 8.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Ntifs.h (include Ntifs.h or Fltkernel.h)</td>
-</tr>
-</tbody>
-</table>
+| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Minimum supported client | Windows 8 |
+| Header | *Ntifs.h* (include *Ntifs.h* or *Fltkernel.h*) |
 
 ## See also
-
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
 
 [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))
 
-[**FSCTL\_OFFLOAD\_READ\_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input)
+[**FSCTL_OFFLOAD_READ_INPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_input)
 
-[**FSCTL\_OFFLOAD\_READ\_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output)
-
+[**FSCTL_OFFLOAD_READ_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsctl_offload_read_output)

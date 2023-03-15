@@ -1,7 +1,7 @@
 ---
 title: WDI message structure
 description: This section describes the structure for WDI command messages
-ms.date: 05/07/2021
+ms.date: 03/02/2023
 ---
 
 # WDI message structure

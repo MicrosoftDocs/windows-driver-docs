@@ -2,7 +2,7 @@
 title: NDIS_STATUS_WDI_INDICATION_ROAMING_NEEDED
 ms.topic: reference
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_DISASSOCIATION to indicate that the host should try to find a better peer to connect to.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_WDI_INDICATION_ROAMING_NEEDED Network Drivers Starting with Windows Vista
 ---

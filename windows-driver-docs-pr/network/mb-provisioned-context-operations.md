@@ -2,6 +2,7 @@
 title: MB Provisioned Context Operations
 description: MB Provisioned Context Operations
 ms.date: 03/01/2021
+ms.custom: UpdateFrequency3
 ---
 
 # MB Provisioned Context Operations

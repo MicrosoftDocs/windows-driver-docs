@@ -1,7 +1,7 @@
 ---
 description: The COM Component Files
 title: The COM Component Files
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # The COM Component Files

@@ -1,7 +1,7 @@
 ---
 description: Support for base-driver commands (WpdBasicHardwareDriverSample)
 title: Support for base-driver commands (WpdBasicHardwareDriverSample)
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Support for base-driver commands (WpdBasicHardwareDriverSample)

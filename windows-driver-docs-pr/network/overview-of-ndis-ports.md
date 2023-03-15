@@ -4,7 +4,7 @@ description: Overview of NDIS Ports
 keywords:
 - ports WDK NDIS , about NDIS ports
 - NDIS ports WDK , about NDIS ports
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Overview of NDIS Ports

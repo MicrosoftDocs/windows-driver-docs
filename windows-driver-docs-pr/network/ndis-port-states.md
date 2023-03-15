@@ -8,7 +8,7 @@ keywords:
 - authentication states WDK NDIS ports
 - link states WDK NDIS ports
 - initialization states WDK NDIS ports
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # NDIS Port States

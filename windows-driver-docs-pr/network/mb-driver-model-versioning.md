@@ -2,6 +2,7 @@
 title: MB Driver Model Versioning
 description: MB Driver Model Versioning
 ms.date: 04/20/2017
+ms.custom: UpdateFrequency3
 ---
 
 # MB Driver Model Versioning

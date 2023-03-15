@@ -4,7 +4,7 @@ description: Installing a Biometric Driver
 keywords:
 - biometric drivers WDK , installing
 - installing biometric drivers WDK biometric
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Installing a Biometric Driver

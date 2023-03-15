@@ -1,6 +1,6 @@
 ---
-title: IRP_MJ_SHUTDOWN (IFS)
-description: IRP\_MJ\_SHUTDOWN
+title: IRP_MJ_SHUTDOWN (FS and filter drivers)
+description: IRP_MJ_SHUTDOWN
 keywords: ["IRP_MJ_SHUTDOWN Installable File System Drivers"]
 topic_type:
 - apiref
@@ -8,53 +8,42 @@ api_name:
 - IRP_MJ_SHUTDOWN
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
-# IRP\_MJ\_SHUTDOWN (IFS)
-
+# IRP_MJ_SHUTDOWN (FS and filter drivers)
 
 ## When Sent
 
-
-The IRP\_MJ\_SHUTDOWN request is sent by the I/O Manager or by a file system driver when the system is being shut down.
+The I/O Manager or a file system driver sends the IRP_MJ_SHUTDOWN request when the system is being shut down.
 
 ## Operation: File System Drivers
 
+The file system should perform any necessary cleanup and complete the IRP with STATUS_SUCCESS.
 
-The file system should perform any necessary cleanup and complete the IRP with STATUS\_SUCCESS.
-
-## Operation: File System Filter Drivers
-
+## Operation: Legacy File System Filter Drivers
 
 The filter driver should pass this IRP down to the next-lower driver on the stack.
 
 ## Parameters
 
+A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) for the given IRP to get a pointer to its own stack location in the IRP. In the following parameters, **Irp** points to the [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) and **IrpSp** points to the [**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location). The driver can use the information that is set in the following members of the IRP and the IRP stack location to process a shutdown request:
 
-A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information that is set in the following members of the IRP and the IRP stack location in processing a shutdown request:
+- **DeviceObject** is a pointer to the target device object.
 
-<a href="" id="deviceobject"></a>*DeviceObject*  
-Pointer to the target device object.
+- **Irp->IoStatus** points to an [**IO_STATUS_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
 
-<a href="" id="irp--iostatus"></a>*Irp-&gt;IoStatus*  
-Pointer to an [**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation.
-
-<a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*  
-Specifies IRP\_MJ\_SET\_SHUTDOWN.
+- **IrpSp->MajorFunction** is set to IRP_MJ_SET_SHUTDOWN.
 
 ## See also
 
+[**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 
-[**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
-
-[**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
+[**IO_STATUS_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
 
 [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation)
 
 [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
 
-[**IRP\_MJ\_SHUTDOWN (WDK Kernel Reference)**](../kernel/irp-mj-shutdown.md)
-
- 
-
+[**IRP_MJ_SHUTDOWN (WDK Kernel Reference)**](../kernel/irp-mj-shutdown.md)

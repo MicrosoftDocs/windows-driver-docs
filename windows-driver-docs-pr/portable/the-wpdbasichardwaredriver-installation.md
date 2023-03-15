@@ -1,7 +1,7 @@
 ---
 description: Installing the Sample Driver
 title: Installing the Sample Driver
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Installing the Sample Driver

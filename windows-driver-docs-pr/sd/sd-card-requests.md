@@ -9,7 +9,7 @@ keywords:
 - asynchronous requests WDK SD bus
 - SdBusSubmitRequest
 - SdBusSubmitRequestAsync
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # SD Card Requests

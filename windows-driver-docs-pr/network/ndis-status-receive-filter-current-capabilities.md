@@ -2,7 +2,7 @@
 title: NDIS_STATUS_RECEIVE_FILTER_CURRENT_CAPABILITIES
 ms.topic: reference
 description: The miniport driver issues an NDIS_STATUS_RECEIVE_FILTER_CURRENT_CAPABILITIES status indication when its currently enabled receive filtering capabilities change.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_RECEIVE_FILTER_CURRENT_CAPABILITIES Network Drivers Starting with Windows Vista
 ---

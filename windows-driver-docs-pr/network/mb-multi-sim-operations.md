@@ -2,6 +2,7 @@
 title: MB Multi-SIM Operations
 description: MB Multi-SIM Operations
 ms.date: 03/01/2021
+ms.custom: UpdateFrequency3
 ---
 
 # MB Multi-SIM operations

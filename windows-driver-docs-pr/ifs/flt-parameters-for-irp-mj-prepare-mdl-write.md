@@ -1,6 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_PREPARE_MDL_WRITE union
-description: The following union component is used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_PREPARE\_MDL\_WRITE.
+description: The following union component is used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_PREPARE_MDL_WRITE.
 keywords: ["FLT_PARAMETERS for IRP_MJ_PREPARE_MDL_WRITE union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref
@@ -10,17 +10,17 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
-# FLT\_PARAMETERS for IRP\_MJ\_PREPARE\_MDL\_WRITE union
+# FLT_PARAMETERS for IRP_MJ_PREPARE_MDL_WRITE union
 
-
-The following union component is used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is IRP\_MJ\_PREPARE\_MDL\_WRITE.
+The following union component is used when the **MajorFunction** field of the [**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is IRP_MJ_PREPARE_MDL_WRITE.
 
 ## Syntax
 
-```ManagedCPlusPlus
+``` C
 typedef union _FLT_PARAMETERS {
   ...    ;
   struct {
@@ -35,58 +35,40 @@ typedef union _FLT_PARAMETERS {
 
 ## Members
 
-**PrepareMdlWrite**  
-Structure containing the following members.
+- **PrepareMdlWrite**: Structure containing the following members.
 
-**FileOffset**  
-Starting byte within the cached file.
+- **FileOffset**: Starting byte within the cached file.
 
-**Length**  
-Length, in bytes, of the data to be written to the cached file.
+- **Length**: Length, in bytes, of the data to be written to the cached file.
 
-**Key**  
-Key value associated with a byte-range lock on the target file. If the range to be written overlaps or is a subrange of an exclusively locked range within the file, this parameter must be the key for that exclusive lock,. The exclusive lock must be held by the parent process of the calling thread; otherwise, this parameter is ignored.
+- **Key**: Key value associated with a byte-range lock on the target file. If the range to be written overlaps or is a subrange of an exclusively locked range within the file, this parameter must be the key for that exclusive lock,. The exclusive lock must be held by the parent process of the calling thread; otherwise, this parameter is ignored.
 
-**MdlChain**  
-Pointer to a variable that receives a pointer to a chain of one or more memory descriptor lists (MDL) that describe the pages containing the data to be written.
+- **MdlChain**: Pointer to a variable that receives a pointer to a chain of one or more memory descriptor lists (MDL) that describe the pages containing the data to be written.
 
 ## Remarks
 
-The [**FLT\_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP\_MJ\_PREPARE\_MDL\_WRITE operations contains the parameters for a fast I/O **PrepareMdlWrite** operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT\_IO\_PARAMETER\_BLOCK structure.
+The [**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP_MJ_PREPARE_MDL_WRITE operations contains the parameters for a fast I/O **PrepareMdlWrite** operation represented by a callback data ([**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT_IO_PARAMETER_BLOCK structure.
 
-If a fast I/O IRP\_MJ\_PREPARE\_MDL\_WRITE request fails, the issuer of the I/O determines how to reissue the request. A minifilter may not always get an IRP-based IRP\_MJ\_MDL\_WRITE. For instance, the IRP request could be reissued as IRP\_MJ\_WRITE/IRP\_MN\_MDL.
+If a fast I/O IRP_MJ_PREPARE_MDL_WRITE request fails, the issuer of the I/O determines how to reissue the request. A minifilter may not always get an IRP-based IRP_MJ_MDL_WRITE. For instance, the IRP request could be reissued as IRP_MJ_WRITE/IRP_MN_MDL.
 
-IRP\_MJ\_PREPARE\_MDL\_WRITE is a fast I/O operation.
+IRP_MJ_PREPARE_MDL_WRITE is a fast I/O operation.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Header</p></td>
-<td align="left">Fltkernel.h (include Fltkernel.h)</td>
-</tr>
-</tbody>
-</table>
+| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Header | *Fltkernel.h* (include *Fltkernel.h*) |
 
 ## See also
 
+[**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)
 
-[**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)
+[**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block)
 
-[**FLT\_IO\_PARAMETER\_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block)
+[**FLT_IS_FASTIO_OPERATION**](/windows-hardware/drivers/ddi/index)
 
-[**FLT\_IS\_FASTIO\_OPERATION**](/windows-hardware/drivers/ddi/index)
+[**FLT_IS_FS_FILTER_OPERATION**](/previous-versions/ff544648(v=vs.85))
 
-[**FLT\_IS\_FS\_FILTER\_OPERATION**](/previous-versions/ff544648(v=vs.85))
+[**FLT_IS_IRP_OPERATION**](/previous-versions/ff544654(v=vs.85))
 
-[**FLT\_IS\_IRP\_OPERATION**](/previous-versions/ff544654(v=vs.85))
-
-[**FLT\_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters)
-
- 
-
+[**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters)

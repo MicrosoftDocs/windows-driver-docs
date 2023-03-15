@@ -2,6 +2,7 @@
 title: MB Analyzing Logs
 description: MB Analyzing Logs
 ms.date: 03/01/2021
+ms.custom: UpdateFrequency3
 ---
 
 # Mobile Broadband Analyzing Logs

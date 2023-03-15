@@ -6,7 +6,7 @@ keywords:
 - system-supplied parallel drivers WDK
 - parallel drivers WDK
 - parallel devices WDK , system supplied drivers
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # System-Supplied Parallel Drivers

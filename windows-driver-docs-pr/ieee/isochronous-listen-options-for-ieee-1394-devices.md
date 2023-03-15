@@ -10,7 +10,7 @@ keywords:
 - packet DMA WDK IEEE 1394 bus
 - stripping packet headers
 - headers WDK IEEE 1394 bus
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Isochronous Listen Options for IEEE 1394 Devices

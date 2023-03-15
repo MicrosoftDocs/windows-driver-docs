@@ -1,7 +1,7 @@
 ---
 title: WDI Extended channel switch announcement (ECSA)
 description: This section provides suggested driver/firmware changes to implement Extended Channel Switch Announcement (ECSA)
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # WDI Extended channel switch announcement (ECSA)

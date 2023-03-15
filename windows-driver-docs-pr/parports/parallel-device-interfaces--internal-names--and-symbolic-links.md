@@ -14,7 +14,7 @@ keywords:
 - device objects WDK parallel drivers
 - parallel devices WDK , internal names
 - parallel devices WDK , symbolic links
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Parallel Device Interfaces, Internal Names, and Symbolic Links

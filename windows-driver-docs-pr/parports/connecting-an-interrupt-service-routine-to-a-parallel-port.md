@@ -5,7 +5,7 @@ keywords:
 - parallel ports WDK , interrupt service routines
 - interrupt service routines WDK parallel ports
 - deferred port check routines WDK parallel ports
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Connecting an Interrupt Service Routine to a Parallel Port

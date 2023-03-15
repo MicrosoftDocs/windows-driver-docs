@@ -4,7 +4,7 @@ description: MBIMEx 2.0 – 5G NSA support
 keywords:
 - MBIMEx 2.0 – 5G NSA support
 ms.date: 03/01/2021
-ms.custom: 19H1
+ms.custom: UpdateFrequency3
 ---
 
 # MBIMEx 2.0 – 5G NSA support

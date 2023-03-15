@@ -5,7 +5,7 @@ keywords:
 - miniport drivers WDK networking , types
 - NDIS miniport drivers WDK , types
 - serialized NDIS miniport drivers WDK networking
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Serialized NDIS Miniport Drivers

@@ -2,7 +2,7 @@
 title: NDIS_STATUS_WWAN_UE_POLICY_STATE
 ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_UE_POLICY_STATE notification to inform the MB Service of device UE policies
-ms.date: 06/24/2022
+ms.date: 03/02/2023
 keywords: 
  -NDIS_STATUS_WWAN_UE_POLICY_STATE
 ms.localizationpriority: medium

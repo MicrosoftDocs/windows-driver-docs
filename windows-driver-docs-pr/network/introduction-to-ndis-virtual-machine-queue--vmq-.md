@@ -1,7 +1,7 @@
 ---
 title: Introduction to NDIS Virtual Machine Queue (VMQ)
 description: Introduction to NDIS Virtual Machine Queue (VMQ)
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Introduction to NDIS Virtual Machine Queue (VMQ)

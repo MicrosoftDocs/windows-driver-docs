@@ -6,7 +6,7 @@ keywords:
 - porting filter drivers to NDIS 6.20 WDK
 - filter drivers WDK
 - filter drivers WDK , porting to NDIS 6.20
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Summary of Changes Required to Port a Filter Driver to NDIS 6.20

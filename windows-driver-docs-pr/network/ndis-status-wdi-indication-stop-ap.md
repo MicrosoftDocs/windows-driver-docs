@@ -2,7 +2,7 @@
 title: NDIS_STATUS_WDI_INDICATION_STOP_AP
 ms.topic: reference
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_STOP_AP to indicate that the adapter cannot sustain 802.11 Access Point (AP) functionality on any of the PHYs.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_WDI_INDICATION_STOP_AP Network Drivers Starting with Windows Vista
 ---

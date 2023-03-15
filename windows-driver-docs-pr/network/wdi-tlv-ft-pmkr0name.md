@@ -2,7 +2,7 @@
 title: WDI_TLV_FT_PMKR0NAME
 ms.topic: reference
 description: WDI_TLV_FT_PMKR0NAME is a TLV that contains a PMKR0Name or PMKR1Name (802.11r).
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_FT_PMKR0NAME Network Drivers Starting with Windows Vista
 ---

@@ -10,7 +10,8 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.date: 11/25/2020
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
 # FSCTL_SET_REPARSE_POINT_EX control code
@@ -25,23 +26,17 @@ For more information about reparse points and the FSCTL_SET_REPARSE_POINT_EX con
 
 ## Parameters
 
-*FileHandle*  
-File handle for the file or directory on which to set a reparse point. This parameter is required and cannot be **NULL**.
+- **FileHandle**: File handle for the file or directory on which to set a reparse point. This parameter is required and cannot be **NULL**.
 
-*FsControlCode*  
-Control code for the operation. Use FSCTL_SET_REPARSE_POINT_EX for this operation.
+- **FsControlCode**: Control code for the operation. Use FSCTL_SET_REPARSE_POINT_EX for this operation.
 
-*InputBuffer*  
-Pointer to a caller-allocated [**REPARSE_GUID_DATA_BUFFER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_guid_data_buffer) or [**REPARSE_DATA_BUFFER_EX**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_data_buffer_ex) structure that contains the reparse point data.
+- **InputBuffer**: Pointer to a caller-allocated [**REPARSE_GUID_DATA_BUFFER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_guid_data_buffer) or [**REPARSE_DATA_BUFFER_EX**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_data_buffer_ex) structure that contains the reparse point data.
 
-*InputBufferLength*  
-Size, in bytes, of the buffer pointed to by the *InputBuffer* parameter. For a REPARSE_GUID_DATA_BUFFER structure, this value must be at least REPARSE_GUID_DATA_BUFFER_HEADER_SIZE, plus the size of the user-defined data, and it must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE. For a REPARSE_DATA_BUFFER_EX structure, this value must be at least REPARSE_DATA_BUFFER_HEADER_SIZE, plus the size of the user-defined data, and it must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE.
+- **InputBufferLength**: Size, in bytes, of the buffer pointed to by the *InputBuffer* parameter. For a REPARSE_GUID_DATA_BUFFER structure, this value must be at least REPARSE_GUID_DATA_BUFFER_HEADER_SIZE, plus the size of the user-defined data, and it must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE. For a REPARSE_DATA_BUFFER_EX structure, this value must be at least REPARSE_DATA_BUFFER_HEADER_SIZE, plus the size of the user-defined data, and it must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE.
 
-*OutputBuffer*  
-Not used with this operation; set to **NULL**.
+- **OutputBuffer**: Not used with this operation; set to **NULL**.
 
-*OutputBufferLength*  
-Not used with this operation; set to zero.
+- **OutputBufferLength**: Not used with this operation; set to zero.
 
 ## Status block
 
@@ -51,14 +46,16 @@ Not used with this operation; set to zero.
 | ----- | ----------- |
 | STATUS_DIRECTORY_NOT_EMPTY | A reparse point cannot be set on a nonempty directory. This is an error code.|
 | STATUS_EAS_NOT_SUPPORTED | A reparse point cannot be set on a file if this request is in a transaction. This is an error code.|
- | STATUS_IO_REPARSE_DATA_INVALID | One of the specified parameter values was invalid. This is an error code.|
+| STATUS_IO_REPARSE_DATA_INVALID | One of the specified parameter values was invalid. This is an error code.|
 | STATUS_IO_REPARSE_TAG_MISMATCH | The reparse tag specified by the caller did not match the tag of the reparse point to be modified. This is an error code.|
- | STATUS_NOT_A_REPARSE_POINT | The file or directory is not a reparse point. This is an error code.|
+| STATUS_NOT_A_REPARSE_POINT | The file or directory is not a reparse point. This is an error code.|
 | STATUS_REPARSE_ATTRIBUTE_CONFLICT | The reparse point is a third-party reparse point, and the reparse GUID specified by the caller did not match the GUID of the reparse point to be modified. This is an error code.|
 
 ### Requirements
 
-* Header: Ntifs.h (include Ntifs.h or Fltkernel.h)
+| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Header | *Ntifs.h* (include *Ntifs.h* or *Fltkernel.h*) |
 
 ## See also
 

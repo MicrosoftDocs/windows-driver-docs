@@ -1,7 +1,7 @@
 ---
 title: WDI TLV parser interface overview
 description: This section describes an overview of the WDI TLV parser interface
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # WDI TLV parser interface overview

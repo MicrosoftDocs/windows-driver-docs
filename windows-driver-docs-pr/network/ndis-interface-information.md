@@ -5,7 +5,7 @@ keywords:
 - management information base WDK networking
 - MIBs WDK networking
 - NDIS WDK , interfaces
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # NDIS Interface Information

@@ -1,7 +1,7 @@
 ---
 title: Managing IRP Resources for NDIS Selective Suspend
 description: Managing IRP Resources for NDIS Selective Suspend
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Managing IRP Resources for NDIS Selective Suspend

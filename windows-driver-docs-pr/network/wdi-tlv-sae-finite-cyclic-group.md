@@ -2,7 +2,7 @@
 title: WDI_TLV_SAE_FINITE_CYCLIC_GROUP
 ms.topic: reference
 description: WDI_TLV_SAE_FINITE_CYCLIC_GROUP is a TLV that contains the Finite Cyclic Group used in a Commit request for Simultaneous Authentication of Equals (SAE) authentication.
-ms.date: 02/15/2019
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_SAE_FINITE_CYCLIC_GROUP Network Drivers Starting with Windows Vista
 ms.custom: 19H1

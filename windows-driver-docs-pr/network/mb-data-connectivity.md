@@ -2,6 +2,7 @@
 title: MB Data Connectivity
 description: MB Data Connectivity
 ms.date: 03/01/2021
+ms.custom: UpdateFrequency3
 ---
 
 # MB Data Connectivity

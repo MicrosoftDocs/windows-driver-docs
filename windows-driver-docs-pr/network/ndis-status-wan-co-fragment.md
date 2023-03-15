@@ -2,7 +2,7 @@
 title: NDIS_STATUS_WAN_CO_FRAGMENT
 ms.topic: reference
 description: The NDIS_STATUS_WAN_CO_FRAGMENT status indicates that a CoNDIS WAN miniport driver has received a partial packet from the endpoint of a VC.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_WAN_CO_FRAGMENT Network Drivers Starting with Windows Vista
 ---

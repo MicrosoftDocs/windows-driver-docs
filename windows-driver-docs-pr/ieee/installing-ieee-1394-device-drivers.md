@@ -4,7 +4,7 @@ description: Installing IEEE 1394 Device Drivers
 keywords:
 - IEEE 1394 WDK buses , driver installations
 - 1394 WDK buses , driver installations
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Installing IEEE 1394 Device Drivers

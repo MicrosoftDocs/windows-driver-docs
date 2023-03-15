@@ -2,7 +2,7 @@
 title: NDIS_STATUS_MEDIA_SPECIFIC_INDICATION
 ms.topic: reference
 description: The NDIS_STATUS_MEDIA_SPECIFIC_INDICATION status indicates a media-specific status.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_MEDIA_SPECIFIC_INDICATION Network Drivers Starting with Windows Vista
 ---
