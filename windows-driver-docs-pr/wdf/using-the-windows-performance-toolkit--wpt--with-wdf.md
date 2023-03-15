@@ -24,7 +24,7 @@ You can use WPT to obtain performance insights or troubleshoot performance issue
 ## Getting started
 
 
-The WPT is part of the Windows Assessment and Deployment Kit (ADK). You can install the ADK from the [Windows hardware tools](https://developer.microsoft.com/windows/featured/hardware/windows-10-hardware-preview-tools) site.
+The WPT is part of the Windows Assessment and Deployment Kit (ADK). You can install the ADK from [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
 
 The WPT consists of two separate tools: Windows Performance Recorder and Windows Performance Analyzer (WPA). In this topic, we use WPR to record a trace, and then WPA to view the trace in a configurable GUI format.
 
