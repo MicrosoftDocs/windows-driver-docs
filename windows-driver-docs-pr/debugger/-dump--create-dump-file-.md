@@ -5,6 +5,7 @@ keywords: ["Create Dump File (.dump) command", "dump file, Create Dump File (.du
 ms.date: 07/17/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .dump (Create Dump File)
 api_type:

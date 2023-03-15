@@ -7,6 +7,7 @@ keywords:
 - MSFT_DiskToStorageReliabilityCounter class Windows Storage Management API , described
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MSFT_DiskToStorageReliabilityCounter
 - MSFT_DiskToStorageReliabilityCounter.Disk
@@ -14,7 +15,6 @@ api_name:
 api_type:
 - NA
 ms.author: windowssdkdev
-ms.topic: article
 ms.date: 05/31/2018
 api_location: 
 ---

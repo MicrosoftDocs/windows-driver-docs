@@ -4,6 +4,7 @@ description: DIF_POWERMESSAGEWAKE
 keywords: ["DIF_POWERMESSAGEWAKE Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_POWERMESSAGEWAKE
 api_location:

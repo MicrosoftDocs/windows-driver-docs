@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xC0000218 STATUS_CANNOT_LOAD_REGISTRY_FILE", "STATUS_CANN
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - STATUS_CANNOT_LOAD_REGISTRY_FILE
 api_type:

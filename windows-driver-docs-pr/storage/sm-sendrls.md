@@ -4,6 +4,7 @@ description: The SM\_SendRLS WMI method sends a read link status (RLS) through t
 keywords: ["SM_SendRLS function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SM_SendRLS
 api_location:

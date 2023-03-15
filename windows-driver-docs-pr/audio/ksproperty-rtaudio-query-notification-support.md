@@ -4,6 +4,7 @@ description: The client application uses the KSPROPERTY\_RTAUDIO\_QUERY\_NOTIFIC
 keywords: ["KSPROPERTY_RTAUDIO_QUERY_NOTIFICATION_SUPPORT Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_RTAUDIO_QUERY_NOTIFICATION_SUPPORT
 api_location:

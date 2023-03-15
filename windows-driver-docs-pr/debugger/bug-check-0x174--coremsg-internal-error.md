@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x174 COREMSG_INTERNAL_ERROR", "COREMSG_INTERNAL_ERROR"]
 ms.date: 01/04/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - COREMSG_INTERNAL_ERROR
 api_type:

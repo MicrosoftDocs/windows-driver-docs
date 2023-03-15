@@ -5,6 +5,7 @@ keywords: ["sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions) Windows Debugging"
 ms.date: 12/13/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions)
 api_type:

@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["WdfWaitlockRelease rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WdfWaitlockRelease
 api_type:

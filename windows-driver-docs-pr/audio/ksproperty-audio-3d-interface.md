@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_3D\_INTERFACE property specifies the 3D algo
 keywords: ["KSPROPERTY_AUDIO_3D_INTERFACE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_3D_INTERFACE
 api_location:

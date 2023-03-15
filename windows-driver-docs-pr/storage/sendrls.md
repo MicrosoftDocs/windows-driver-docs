@@ -4,6 +4,7 @@ description: The SendRLS WMI method sends a read link error status block (RLS) t
 keywords: ["SendRLS function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SendRLS
 api_location:

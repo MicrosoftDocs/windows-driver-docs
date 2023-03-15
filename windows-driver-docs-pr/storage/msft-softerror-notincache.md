@@ -7,6 +7,7 @@ keywords:
 - MSFT_SoftError_NotInCache class Windows Storage Management API , described
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MSFT_SoftError_NotInCache
 - MSFT_SoftError_NotInCache.MessageID
@@ -16,7 +17,6 @@ api_location:
 api_type:
 - Schema
 ms.author: windowssdkdev
-ms.topic: article
 ms.date: 05/31/2018
 ---
 

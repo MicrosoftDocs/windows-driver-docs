@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x142 VIDEO_TDR_APPLICATION_BLOCKED", "VIDEO_TDR_APPLICATI
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VIDEO_TDR_APPLICATION_BLOCKED
 api_type:

@@ -4,6 +4,7 @@ description: The DxgkDdiUpdatePageTable function is reserved for system use. Do 
 keywords: ["DxgkDdiUpdatePageTable callback function Display Devices", "DXGKDDI_UPDATEPAGETABLE"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DxgkDdiUpdatePageTable
 api_location:

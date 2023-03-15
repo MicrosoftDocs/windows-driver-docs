@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["RequestGetStatusValid rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - RequestGetStatusValid
 api_type:

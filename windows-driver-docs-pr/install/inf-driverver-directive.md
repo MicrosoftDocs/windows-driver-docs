@@ -5,6 +5,7 @@ keywords:
 - INF DriverVer Directive Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF DriverVer Directive
 api_type:

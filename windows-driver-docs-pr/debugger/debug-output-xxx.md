@@ -4,6 +4,7 @@ description: The DEBUG\_OUTPUT\_XXX constants are output flags. The output flags
 ms.date: 11/13/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_OUTPUT_NORMAL
 - DEBUG_OUTPUT_ERROR

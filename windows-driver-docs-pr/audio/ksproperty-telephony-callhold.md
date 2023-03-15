@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TELEPHONY\_CALLHOLD property is used to control the
 keywords: ["KSPROPERTY_TELEPHONY_CALLHOLD Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TELEPHONY_CALLHOLD
 api_location:

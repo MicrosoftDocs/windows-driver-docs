@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xC000021A WINLOGON_FATAL_ERROR", "WINLOGON_FATAL_ERROR"]
 ms.date: 09/12/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WINLOGON_FATAL_ERROR
 api_type:

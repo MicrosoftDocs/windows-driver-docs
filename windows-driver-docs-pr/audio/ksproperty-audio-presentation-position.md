@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_PRESENTATION\_POSITION property request retr
 keywords: ["KSPROPERTY_AUDIO_PRESENTATION_POSITION Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_PRESENTATION_POSITION
 api_location:

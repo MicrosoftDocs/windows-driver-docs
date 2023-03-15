@@ -5,6 +5,7 @@ keywords: ["Use Radix for Integers (.force_radix_output) command", ".force_radix
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .force_radix_output (Use Radix for Integers)
 api_type:

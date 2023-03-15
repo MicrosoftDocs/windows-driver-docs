@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIOGFX\_RENDERTARGETDEVICEID property is used to 
 keywords: ["KSPROPERTY_AUDIOGFX_RENDERTARGETDEVICEID Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOGFX_RENDERTARGETDEVICEID
 api_location:

@@ -4,6 +4,7 @@ description: The DXGKARG\_UPDATEPAGETABLE structure is reserved for system use. 
 keywords: ["_DXGKARG_UPDATEPAGETABLE structure Display Devices", "DXGKARG_UPDATEPAGETABLE structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGKARG_UPDATEPAGETABLE
 api_location:

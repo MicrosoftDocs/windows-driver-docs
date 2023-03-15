@@ -5,6 +5,7 @@ keywords: ["Set Symbol Store Path (.symfix) command", "SymSrv, Set Symbol Store 
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .symfix (Set Symbol Store Path)
 api_type:

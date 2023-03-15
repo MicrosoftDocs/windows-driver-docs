@@ -5,6 +5,7 @@ keywords: ["br (Breakpoint Renumber) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - br (Breakpoint Renumber)
 api_type:

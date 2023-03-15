@@ -4,6 +4,7 @@ description: The CPixel ComputeSurfaceOffset method determines the subrectangula
 keywords: ["ComputeSurfaceOffset method Display Devices", "ComputeSurfaceOffset method Display Devices , CPixel interface", "CPixel interface Display Devices , ComputeSurfaceOffset method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CPixel.ComputeSurfaceOffset
 api_location:

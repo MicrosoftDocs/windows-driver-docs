@@ -4,6 +4,7 @@ description: The KSPROPERTY\_SOUNDDETECTOR\_RESET property resets the detector t
 keywords: ["KSPROPERTY_SOUNDDETECTOR_RESET Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_SOUNDDETECTOR_RESET
 api_location:

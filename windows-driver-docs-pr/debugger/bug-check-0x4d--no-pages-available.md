@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x4D NO_PAGES_AVAILABLE", "NO_PAGES_AVAILABLE"]
 ms.date: 12/27/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - NO_PAGES_AVAILABLE
 api_type:

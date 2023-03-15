@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xC8 IRQL_UNEXPECTED_VALUE", "IRQL_UNEXPECTED_VALUE"]
 ms.date: 12/07/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IRQL_UNEXPECTED_VALUE
 api_type:

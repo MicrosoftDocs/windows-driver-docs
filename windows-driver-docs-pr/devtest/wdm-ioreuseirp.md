@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["IoReuseIrp rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IoReuseIrp
 api_type:

@@ -5,6 +5,7 @@ keywords: [".eventlog (Display Recent Events) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .eventlog (Display Recent Events)
 api_type:

@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["QueuedSpinLockRelease rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - QueuedSpinLockRelease
 api_type:

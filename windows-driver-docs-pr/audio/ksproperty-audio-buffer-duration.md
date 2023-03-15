@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_BUFFER\_DURATION property allows the size of
 keywords: ["KSPROPERTY_AUDIO_BUFFER_DURATION Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_BUFFER_DURATION
 api_location:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x164 WIN32K_CRITICAL_FAILURE", "WIN32K_CRITICAL_FAILURE"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIN32K_CRITICAL_FAILURE
 api_type:

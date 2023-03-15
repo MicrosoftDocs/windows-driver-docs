@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1D NO_SPIN_LOCK_AVAILABLE", "NO_SPIN_LOCK_AVAILABLE"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - NO_SPIN_LOCK_AVAILABLE
 api_type:

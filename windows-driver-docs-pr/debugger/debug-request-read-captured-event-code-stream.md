@@ -4,6 +4,7 @@ description: DEBUG\_REQUEST\_READ\_CAPTURED\_EVENT\_CODE\_STREAM
 keywords: ["DEBUG_REQUEST_READ_CAPTURED_EVENT_CODE_STREAM Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_REQUEST_READ_CAPTURED_EVENT_CODE_STREAM
 api_type:

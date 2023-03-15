@@ -5,6 +5,7 @@ keywords: ["CTRL+F (Break to KD) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CTRL+F (Break to KD)
 api_type:

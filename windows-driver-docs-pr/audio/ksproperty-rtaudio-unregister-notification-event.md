@@ -4,6 +4,7 @@ description: The KSPROPERTY\_RTAUDIO\_UNREGISTER\_NOTIFICATION\_EVENT property u
 keywords: ["KSPROPERTY_RTAUDIO_UNREGISTER_NOTIFICATION_EVENT Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_RTAUDIO_UNREGISTER_NOTIFICATION_EVENT
 api_location:

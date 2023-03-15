@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x5C HAL_INITIALIZATION_FAILED", "HAL_INITIALIZATION_FAILE
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - HAL_INITIALIZATION_FAILED
 api_type:

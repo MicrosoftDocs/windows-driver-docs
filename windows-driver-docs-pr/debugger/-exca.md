@@ -5,6 +5,7 @@ keywords: ["PCIC (PC Card Interrupt Controller)", "ExCA registers", "exca Window
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - exca
 api_type:

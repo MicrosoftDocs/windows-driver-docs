@@ -5,6 +5,7 @@ keywords: ["symbols, noisy symbol loading", "symbols, prompts", "sym Windows Deb
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - sym
 api_type:

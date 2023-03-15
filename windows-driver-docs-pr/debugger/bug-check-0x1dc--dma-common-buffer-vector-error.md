@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1DC DMA_COMMON_BUFFER_VECTOR_ERROR", "DMA_COMMON_BUFFER_
 ms.date: 01/30/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DMA_COMMON_BUFFER_VECTOR_ERROR
 api_type:

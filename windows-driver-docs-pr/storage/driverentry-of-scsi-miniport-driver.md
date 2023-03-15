@@ -4,6 +4,7 @@ description: Each miniport driver must have a routine explicitly named DriverEnt
 keywords: ["DriverEntry routine Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DriverEntry
 api_type:

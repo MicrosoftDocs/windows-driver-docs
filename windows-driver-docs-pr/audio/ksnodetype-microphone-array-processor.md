@@ -4,6 +4,7 @@ description: KSNODETYPE\_MICROPHONE\_ARRAY\_PROCESSOR
 keywords: ["KSNODETYPE_MICROPHONE_ARRAY_PROCESSOR Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_MICROPHONE_ARRAY_PROCESSOR
 api_type:

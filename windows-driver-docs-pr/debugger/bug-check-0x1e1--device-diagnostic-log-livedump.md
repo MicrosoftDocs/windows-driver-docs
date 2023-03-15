@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1E1 DEVICE_DIAGNOSTIC_LOG_LIVEDUMP", "DEVICE_DIAGNOSTIC_
 ms.date: 08/24/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEVICE_DIAGNOSTIC_LOG_LIVEDUMP
 api_type:

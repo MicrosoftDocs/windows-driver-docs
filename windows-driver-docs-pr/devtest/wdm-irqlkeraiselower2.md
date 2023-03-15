@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["IrqlKeRaiseLower2 rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IrqlKeRaiseLower2
 api_type:

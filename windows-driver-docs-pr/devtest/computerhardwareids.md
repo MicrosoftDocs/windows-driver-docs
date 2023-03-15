@@ -5,6 +5,7 @@ keywords:
 - ComputerHardwareIds Overview Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ComputerHardwareIds Overview
 api_type:

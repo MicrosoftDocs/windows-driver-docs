@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TELEPHONY\_PROVIDERID property is used by the audio
 keywords: ["KSPROPERTY_TELEPHONY_PROVIDERID Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TELEPHONY_PROVIDERID
 api_location:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x37 FLOPPY_INTERNAL_ERROR", "FLOPPY_INTERNAL_ERROR"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - FLOPPY_INTERNAL_ERROR
 api_type:

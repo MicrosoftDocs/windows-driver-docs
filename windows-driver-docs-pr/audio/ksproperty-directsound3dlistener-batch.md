@@ -4,6 +4,7 @@ description: The KSPROPERTY\_DIRECTSOUND3DLISTENER\_BATCH property specifies the
 keywords: ["KSPROPERTY_DIRECTSOUND3DLISTENER_BATCH Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DIRECTSOUND3DLISTENER_BATCH
 api_location:

@@ -5,6 +5,7 @@ keywords: ["ndiskd.netqueue Windows Debugging"]
 ms.date: 06/17/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ndiskd.netqueue
 api_type:

@@ -5,6 +5,7 @@ keywords: ["d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory) Windows D
 ms.date: 1/06/2023
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)
 api_type:

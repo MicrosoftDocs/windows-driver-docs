@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xDE POOL_CORRUPTION_IN_FILE_AREA", "POOL_CORRUPTION_IN_FI
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - POOL_CORRUPTION_IN_FILE_AREA
 api_type:

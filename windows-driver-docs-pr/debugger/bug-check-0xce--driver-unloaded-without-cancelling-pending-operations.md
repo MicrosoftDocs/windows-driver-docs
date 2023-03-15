@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xCE DRIVER_UNLOADED_WITHOUT_CANCELLING_PENDING_OPERATIONS
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_UNLOADED_WITHOUT_CANCELLING_PENDING_OPERATIONS
 api_type:

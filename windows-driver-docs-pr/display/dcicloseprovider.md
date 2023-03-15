@@ -4,6 +4,7 @@ description: DCICloseProvider
 keywords: ["DCICloseProvider Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DCICloseProvider
 api_type:

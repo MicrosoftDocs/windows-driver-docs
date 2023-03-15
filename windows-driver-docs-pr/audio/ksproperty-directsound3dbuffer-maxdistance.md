@@ -4,6 +4,7 @@ description: The KSPROPERTY\_DIRECTSOUND3DBUFFER\_MAXDISTANCE property specifies
 keywords: ["KSPROPERTY_DIRECTSOUND3DBUFFER_MAXDISTANCE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DIRECTSOUND3DBUFFER_MAXDISTANCE
 api_location:

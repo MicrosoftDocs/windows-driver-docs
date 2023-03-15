@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AC3\_LANGUAGE\_CODE property specifies the language
 keywords: ["KSPROPERTY_AC3_LANGUAGE_CODE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AC3_LANGUAGE_CODE
 api_location:

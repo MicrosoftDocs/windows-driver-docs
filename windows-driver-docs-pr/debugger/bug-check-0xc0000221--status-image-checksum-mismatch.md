@@ -5,6 +5,7 @@ keywords: ["Bug check 0xC0000221 STATUS_IMAGE_CHECKSUM_MISMATCH", "STATUS_IMAGE_
 ms.date: 12/08/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - STATUS_IMAGE_CHECKSUM_MISMATCH
 api_type:

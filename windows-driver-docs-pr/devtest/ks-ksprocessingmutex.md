@@ -5,6 +5,7 @@ description: "Learn more about: KsProcessingMutex rule ()"
 keywords: ["KsProcessingMutex rule ()"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KsProcessingMutex
 api_type:

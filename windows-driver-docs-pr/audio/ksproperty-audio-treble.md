@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_TREBLE property specifies the treble level f
 keywords: ["KSPROPERTY_AUDIO_TREBLE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_TREBLE
 api_location:

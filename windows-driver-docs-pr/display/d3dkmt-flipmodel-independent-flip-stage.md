@@ -4,6 +4,7 @@ description: Learn about the D3DKMT\_FLIPMODEL\_INDEPENDENT\_FLIP\_STAGE enumera
 keywords: ["D3DKMT_FLIPMODEL_INDEPENDENT_FLIP_STAGE enumeration Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DKMT_FLIPMODEL_INDEPENDENT_FLIP_STAGE
 api_location:

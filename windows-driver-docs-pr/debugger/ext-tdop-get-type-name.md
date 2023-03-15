@@ -4,6 +4,7 @@ description: The EXT\_TDOP\_GET\_TYPE\_NAME sub-operation of the DEBUG\_REQUEST\
 keywords: ["EXT_TDOP_GET_TYPE_NAME Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EXT_TDOP_GET_TYPE_NAME
 api_type:

@@ -4,6 +4,7 @@ description: KSPROPERTY\_AUDIO\_VOLUMELIMIT\_ENGAGED, is a new KS property that 
 keywords: ["KSPROPERTY_AUDIO_VOLUMELIMIT_ENGAGED Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_VOLUMELIMIT_ENGAGED
 api_location:

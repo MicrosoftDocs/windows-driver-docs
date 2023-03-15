@@ -4,6 +4,7 @@ description: KSNODETYPE\_SWMIDI
 keywords: ["KSNODETYPE_SWMIDI Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_SWMIDI
 api_type:

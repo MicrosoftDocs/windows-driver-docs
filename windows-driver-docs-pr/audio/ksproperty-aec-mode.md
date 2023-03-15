@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AEC\_MODE property is used to control an AEC node's
 keywords: ["KSPROPERTY_AEC_MODE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AEC_MODE
 api_location:

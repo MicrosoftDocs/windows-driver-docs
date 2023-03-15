@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIOSIGNALPROCESSING enumeration defines a constan
 keywords: ["KSPROPERTY_AUDIOSIGNALPROCESSING enumeration Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOSIGNALPROCESSING
 api_location:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x150 TCPIP_AOAC_NIC_ACTIVE_REFERENCE_LEAK", "TCPIP_AOAC_N
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TCPIP_AOAC_NIC_ACTIVE_REFERENCE_LEAK
 api_type:

@@ -4,6 +4,7 @@ description: KSNODETYPE\_EQUALIZER
 keywords: ["KSNODETYPE_EQUALIZER Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_EQUALIZER
 api_type:

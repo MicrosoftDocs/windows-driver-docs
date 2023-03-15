@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xD2 BUGCODE_ID_DRIVER", "BUGCODE_ID_DRIVER"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BUGCODE_ID_DRIVER
 api_type:

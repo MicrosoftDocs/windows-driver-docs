@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TOPOLOGYNODE\_ENABLE property is used to turn on or
 keywords: ["KSPROPERTY_TOPOLOGYNODE_ENABLE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TOPOLOGYNODE_ENABLE
 api_location:

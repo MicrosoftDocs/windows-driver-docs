@@ -5,6 +5,7 @@ keywords: ["Attach to Process (.attach) command", "process, Attach to Process (.
 ms.date: 09/17/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .attach (Attach to Process)
 api_type:

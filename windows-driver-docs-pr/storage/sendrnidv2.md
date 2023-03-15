@@ -4,6 +4,7 @@ description: The SendRNIDV2 WMI method sends a version 2 RNID command to the ind
 keywords: ["SendRNIDV2 function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SendRNIDV2
 api_location:

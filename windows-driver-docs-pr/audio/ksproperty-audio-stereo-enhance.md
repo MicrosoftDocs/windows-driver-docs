@@ -4,6 +4,7 @@ description: Learn about the KSPROPERTY\_AUDIO\_STEREO\_ENHANCE parameter. This 
 keywords: ["KSPROPERTY_AUDIO_STEREO_ENHANCE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_STEREO_ENHANCE
 api_type:

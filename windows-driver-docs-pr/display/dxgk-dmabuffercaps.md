@@ -4,6 +4,7 @@ description: The DXGK\_DMABUFFERCAPS structure is reserved for system use. Do no
 keywords: ["_DXGK_DMABUFFERCAPS structure Display Devices", "DXGK_DMABUFFERCAPS structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGK_DMABUFFERCAPS
 api_location:

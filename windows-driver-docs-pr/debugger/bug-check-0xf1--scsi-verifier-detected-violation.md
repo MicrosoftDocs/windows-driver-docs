@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xF1 SCSI_VERIFIER_DETECTED_VIOLATION", "SCSI_VERIFIER_DET
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SCSI_VERIFIER_DETECTED_VIOLATION
 api_type:

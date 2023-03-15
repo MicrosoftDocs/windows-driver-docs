@@ -5,6 +5,7 @@ keywords: ["thread, ready threads", "ready Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ready
 api_type:

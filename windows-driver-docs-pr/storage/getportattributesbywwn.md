@@ -4,6 +4,7 @@ description: The GetPortAttributesByWWN method retrieves the attributes for the 
 keywords: ["GetPortAttributesByWWN function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - GetPortAttributesByWWN
 api_location:

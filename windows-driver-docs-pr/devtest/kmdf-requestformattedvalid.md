@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["RequestFormattedValid rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - RequestFormattedValid
 api_type:

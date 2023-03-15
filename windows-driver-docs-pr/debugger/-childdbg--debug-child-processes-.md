@@ -5,6 +5,7 @@ keywords: [".childdbg (Debug Child Processes) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .childdbg (Debug Child Processes)
 api_type:

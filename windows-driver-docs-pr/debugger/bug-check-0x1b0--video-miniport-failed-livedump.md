@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1B0 VIDEO_MINIPORT_FAILED_LIVEDUMP", "VIDEO_MINIPORT_FAI
 ms.date: 01/08/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VIDEO_MINIPORT_FAILED_LIVEDUMP
 api_type:

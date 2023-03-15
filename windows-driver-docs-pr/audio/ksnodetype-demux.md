@@ -4,6 +4,7 @@ description: KSNODETYPE\_DEMUX
 keywords: ["KSNODETYPE_DEMUX Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_DEMUX
 api_type:

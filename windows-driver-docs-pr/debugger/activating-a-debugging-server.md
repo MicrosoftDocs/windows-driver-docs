@@ -5,6 +5,7 @@ keywords: ["Activating a Debugging Server Windows Debugging"]
 ms.date: 03/02/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Activating a Debugging Server
 api_type:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_VOLUMELEVEL property specifies the volume le
 keywords: ["KSPROPERTY_AUDIO_VOLUMELEVEL Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_VOLUMELEVEL
 api_location:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x98 END_OF_NT_EVALUATION_PERIOD", "END_OF_NT_EVALUATION_P
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - END_OF_NT_EVALUATION_PERIOD
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x154 UNEXPECTED_STORE_EXCEPTION", "UNEXPECTED_STORE_EXCEP
 ms.date: 12/12/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - UNEXPECTED_STORE_EXCEPTION
 api_type:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_LATENCY property is used to report the delay
 keywords: ["KSPROPERTY_AUDIO_LATENCY Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_LATENCY
 api_location:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION property specif
 keywords: ["KSPROPERTY_RTAUDIO_BUFFER_WITH_NOTIFICATION Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_RTAUDIO_BUFFER_WITH_NOTIFICATION
 api_location:

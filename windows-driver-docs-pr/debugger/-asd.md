@@ -5,6 +5,7 @@ keywords: ["failure analysis entries, display from data cache", "asd Windows Deb
 ms.date: 09/17/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - asd
 api_type:

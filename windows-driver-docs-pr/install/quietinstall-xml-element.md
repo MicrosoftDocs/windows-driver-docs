@@ -4,6 +4,7 @@ description: quietInstall XML Element
 keywords: ["quietInstall XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - quietInstall XML Element
 api_type:

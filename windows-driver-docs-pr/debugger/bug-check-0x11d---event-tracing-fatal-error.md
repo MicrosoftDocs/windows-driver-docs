@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x11D EVENT_TRACING_FATAL_ERROR", "EVENT_TRACING_FATAL_ERR
 ms.date: 12/08/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EVENT_TRACING_FATAL_ERROR
 api_type:

@@ -5,6 +5,7 @@ keywords: ["be (Breakpoint Enable) Windows Debugging"]
 ms.date: 09/18/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - be (Breakpoint Enable)
 api_type:

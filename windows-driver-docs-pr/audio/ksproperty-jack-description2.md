@@ -4,6 +4,7 @@ description: The KSPROPERTY\_JACK\_DESCRIPTION2 property is implemented as a pin
 keywords: ["KSPROPERTY_JACK_DESCRIPTION2 Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_JACK_DESCRIPTION2
 api_location:

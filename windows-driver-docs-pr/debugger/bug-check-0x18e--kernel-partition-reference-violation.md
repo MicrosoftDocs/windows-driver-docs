@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x18E KERNEL_PARTITION_REFERENCE_VIOLATION",  "KERNEL_PART
 ms.date: 05/23/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KERNEL_PARTITION_REFERENCE_VIOLATION
 api_type:

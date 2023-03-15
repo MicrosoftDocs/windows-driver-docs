@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x171 CRYPTO_LIBRARY_INTERNAL_ERROR", "CRYPTO_LIBRARY_INTE
 ms.date: 02/16/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CRYPTO_LIBRARY_INTERNAL_ERROR
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x11A EM_INITIALIZATION_FAILURE", "EM_INITIALIZATION_FAILU
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EM_INITIALIZATION_FAILURE
 api_type:

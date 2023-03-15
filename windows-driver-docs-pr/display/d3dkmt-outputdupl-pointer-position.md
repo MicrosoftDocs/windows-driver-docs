@@ -4,6 +4,7 @@ description: Learn about the D3DKMT\_OUTPUTDUPL\_POINTER\_POSITION structure, wh
 keywords: ["D3DKMT_OUTPUTDUPL_POINTER_POSITION structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DKMT_OUTPUTDUPL_POINTER_POSITION
 api_location:

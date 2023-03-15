@@ -4,6 +4,7 @@ description: The sample DXVA_DeinterlaceBobDeviceClass::DeinterlaceOpenStream fu
 keywords: ["DeinterlaceOpenStream method Display Devices", "DeinterlaceOpenStream method Display Devices , DXVA_DeinterlaceBobDeviceClass interface", "DXVA_DeinterlaceBobDeviceClass interface Display Devices , DeinterlaceOpenStream method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXVA_DeinterlaceBobDeviceClass.DeinterlaceOpenStream
 api_type:

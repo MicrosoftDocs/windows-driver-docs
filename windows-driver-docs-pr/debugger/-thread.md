@@ -5,6 +5,7 @@ keywords: ["thread Windows Debugging"]
 ms.date: 07/19/2021
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - thread
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Display System Time (.time) command", ".time (Display System Time) W
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .time (Display System Time)
 api_type:

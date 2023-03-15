@@ -5,6 +5,7 @@ keywords: ["k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace) Windows Debuggin
 ms.date: 12/16/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)
 api_type:

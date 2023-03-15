@@ -5,6 +5,7 @@ keywords: ["thread, error value", "error value", "gle Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - gle
 api_type:

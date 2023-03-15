@@ -5,6 +5,7 @@ keywords: ["ndiskd.protocol Windows Debugging"]
 ms.date: 06/26/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ndiskd.protocol
 api_type:

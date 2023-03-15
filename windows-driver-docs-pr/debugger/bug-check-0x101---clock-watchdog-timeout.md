@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x101 CLOCK_WATCHDOG_TIMEOUT", "CLOCK_WATCHDOG_TIMEOUT"]
 ms.date: 02/24/2023
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CLOCK_WATCHDOG_TIMEOUT
 api_type:

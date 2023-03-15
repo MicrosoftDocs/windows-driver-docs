@@ -5,6 +5,7 @@ keywords: ["Open Log File (.logopen) command", "log file, Open Log File (.logope
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .logopen (Open Log File)
 api_type:

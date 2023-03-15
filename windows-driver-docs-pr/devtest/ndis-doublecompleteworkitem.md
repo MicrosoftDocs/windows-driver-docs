@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["DoubleCompleteWorkItem rule (ndis)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DoubleCompleteWorkItem
 api_type:

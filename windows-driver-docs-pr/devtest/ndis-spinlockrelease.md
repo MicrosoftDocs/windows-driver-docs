@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["SpinLockRelease rule (ndis)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SpinLockRelease
 api_type:

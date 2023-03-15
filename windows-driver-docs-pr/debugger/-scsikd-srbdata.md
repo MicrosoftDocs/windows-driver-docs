@@ -5,6 +5,7 @@ keywords: ["scsikd.srbdata Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - scsikd.srbdata
 api_type:

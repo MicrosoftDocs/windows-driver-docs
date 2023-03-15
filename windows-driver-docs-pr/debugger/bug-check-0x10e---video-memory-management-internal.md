@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x10E VIDEO_MEMORY_MANAGEMENT_INTERNAL", "VIDEO_MEMORY_MAN
 ms.date: 10/14/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VIDEO_MEMORY_MANAGEMENT_INTERNAL
 api_type:

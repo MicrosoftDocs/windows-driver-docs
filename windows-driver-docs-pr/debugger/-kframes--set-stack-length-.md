@@ -5,6 +5,7 @@ keywords: ["Set Stack Length (.kframes) command", ".kframes (Set Stack Length) W
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .kframes (Set Stack Length)
 api_type:

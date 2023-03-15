@@ -4,6 +4,7 @@ description: The KSNODETYPE\_TELEPHONY\_BIDI node represents both sides (bi-dire
 keywords: ["KSNODETYPE_TELEPHONY_BIDI Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_TELEPHONY_BIDI
 api_type:

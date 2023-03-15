@@ -4,6 +4,7 @@ description: The SetPersistentEntry method adds a binding to the list of binding
 keywords: ["SetPersistentEntry function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SetPersistentEntry
 api_location:

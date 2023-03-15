@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_BASS\_BOOST property enables and disables ba
 keywords: ["KSPROPERTY_AUDIO_BASS_BOOST Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_BASS_BOOST
 api_location:

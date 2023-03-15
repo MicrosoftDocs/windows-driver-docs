@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x17E MICROCODE_REVISION_MISMATCH", "MICROCODE_REVISION_MI
 ms.date: 01/14/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MICROCODE_REVISION_MISMATCH
 api_type:

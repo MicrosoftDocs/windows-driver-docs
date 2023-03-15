@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["RemoveLockCheck rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - RemoveLockCheck
 api_type:

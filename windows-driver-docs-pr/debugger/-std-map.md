@@ -5,6 +5,7 @@ keywords: ["std_map Windows Debugging"]
 ms.date: 09/12/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - std_map
 api_type:

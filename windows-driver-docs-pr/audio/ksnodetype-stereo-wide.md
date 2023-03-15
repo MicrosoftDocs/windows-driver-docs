@@ -4,6 +4,7 @@ description: KSNODETYPE\_STEREO\_WIDE
 keywords: ["KSNODETYPE_STEREO_WIDE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_STEREO_WIDE
 api_type:

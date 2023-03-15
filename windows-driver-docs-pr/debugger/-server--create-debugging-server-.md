@@ -5,6 +5,7 @@ keywords: ["Create Debugging Server (.server) command", "remote debugging throug
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .server (Create Debugging Server)
 api_type:

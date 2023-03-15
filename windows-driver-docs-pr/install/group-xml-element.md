@@ -4,6 +4,7 @@ description: group XML Element
 keywords: ["group XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - group XML Element
 api_type:

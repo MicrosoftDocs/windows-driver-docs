@@ -5,6 +5,7 @@ keywords: ["tt (Trace to Next Return) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - tt (Trace to Next Return)
 api_type:

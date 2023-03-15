@@ -4,6 +4,7 @@ description: The SM\_SetRNIDMgmtInfo WMI method sets FC3 management information 
 keywords: ["SM_SetRNIDMgmtInfo function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SM_SetRNIDMgmtInfo
 api_location:

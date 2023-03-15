@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1000007E SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M", "SYSTEM
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M
 api_type:

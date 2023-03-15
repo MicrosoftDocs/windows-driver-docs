@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIOENGINE\_VOLUMELEVEL property specifies the vol
 keywords: ["KSPROPERTY_AUDIOENGINE_VOLUMELEVEL Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOENGINE_VOLUMELEVEL
 api_location:

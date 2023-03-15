@@ -4,6 +4,7 @@ description: Learn about the DXGKDDISETPOWERPSTATE callback function, which is r
 keywords: ["DxgkDdiSetPowerPState callback function Display Devices", "DXGKDDISETPOWERPSTATE"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DxgkDdiSetPowerPState
 api_location:

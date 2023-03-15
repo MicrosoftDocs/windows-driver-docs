@@ -5,6 +5,7 @@ keywords: [".flash_on_break (Flash on Break) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .flash_on_break (Flash on Break)
 api_type:

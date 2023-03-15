@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x93 INVALID_KERNEL_HANDLE", "INVALID_KERNEL_HANDLE"]
 ms.date: 10/10/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INVALID_KERNEL_HANDLE
 api_type:

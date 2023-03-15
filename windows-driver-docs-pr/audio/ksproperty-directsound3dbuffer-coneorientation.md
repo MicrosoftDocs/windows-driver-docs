@@ -4,6 +4,7 @@ description: The KSPROPERTY\_DIRECTSOUND3DBUFFER\_CONEORIENTATION property speci
 keywords: ["KSPROPERTY_DIRECTSOUND3DBUFFER_CONEORIENTATION Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DIRECTSOUND3DBUFFER_CONEORIENTATION
 api_location:

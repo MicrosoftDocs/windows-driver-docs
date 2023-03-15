@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1E4 VIDEO_DXGKRNL_SYSMM_FATAL_ERROR", "VIDEO_DXGKRNL_SYS
 ms.date: 08/02/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VIDEO_DXGKRNL_SYSMM_FATAL_ERROR
 api_type:

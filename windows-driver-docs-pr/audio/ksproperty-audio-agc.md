@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_AGC property specifies the state of the AGC 
 keywords: ["KSPROPERTY_AUDIO_AGC Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_AGC
 api_location:

@@ -4,6 +4,7 @@ description: DCISetDestination
 keywords: ["DCISetDestination Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DCISetDestination
 api_type:

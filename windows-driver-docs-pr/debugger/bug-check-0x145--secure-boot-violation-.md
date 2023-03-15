@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x145 SECURE_BOOT_VIOLATION", "SECURE_BOOT_VIOLATION"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SECURE_BOOT_VIOLATION
 api_type:

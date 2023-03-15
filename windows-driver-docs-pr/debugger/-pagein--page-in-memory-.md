@@ -5,6 +5,7 @@ keywords: ["Page In Memory (.pagein) command", "memory, Page In Memory (.pagein)
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .pagein (Page In Memory)
 api_type:

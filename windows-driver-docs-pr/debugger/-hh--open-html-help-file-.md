@@ -5,6 +5,7 @@ keywords: [".hh (Open HTML Help File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .hh (Open HTML Help File)
 api_type:

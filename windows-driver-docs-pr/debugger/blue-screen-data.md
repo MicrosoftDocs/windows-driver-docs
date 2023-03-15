@@ -5,6 +5,7 @@ keywords: ["Blue Screen Data Windows Debugging"]
 ms.date: 12/14/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Blue Screen Data
 api_type:

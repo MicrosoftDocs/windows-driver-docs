@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x112 MSRPC_STATE_VIOLATION", "MSRPC_STATE_VIOLATION"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MSRPC_STATE_VIOLATION
 api_type:

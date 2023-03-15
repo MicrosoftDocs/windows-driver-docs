@@ -5,6 +5,7 @@ keywords: ["Set User-Mode Address Context (.context) command", "addresses, Set U
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .context (Set User-Mode Address Context)
 api_type:

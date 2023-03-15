@@ -4,6 +4,7 @@ description: Learn about the KSPROPERTY\_AUDIO\_MANUFACTURE\_GUID parameter. Thi
 keywords: ["KSPROPERTY_AUDIO_MANUFACTURE_GUID Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_MANUFACTURE_GUID
 api_type:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_SURROUND\_ENCODE property specifies whether 
 keywords: ["KSPROPERTY_AUDIO_SURROUND_ENCODE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_SURROUND_ENCODE
 api_location:

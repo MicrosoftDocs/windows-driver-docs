@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x8 IRQL_NOT_DISPATCH_LEVEL", "IRQL_NOT_DISPATCH_LEVEL"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IRQL_NOT_DISPATCH_LEVEL
 api_type:

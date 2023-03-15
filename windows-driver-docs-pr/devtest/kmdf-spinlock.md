@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["Spinlock rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Spinlock
 api_type:

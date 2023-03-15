@@ -4,6 +4,7 @@ description: The KSPROPERTY\_SOUNDDETECTOR\_STREAMINGSUPPORT property indicates 
 keywords: ["KSPROPERTY_SOUNDDETECTOR_STREAMINGSUPPORT Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_SOUNDDETECTOR_STREAMINGSUPPORT
 api_location:

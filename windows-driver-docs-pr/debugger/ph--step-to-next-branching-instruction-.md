@@ -5,6 +5,7 @@ keywords: ["ph (Step to Next Branching Instruction) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ph (Step to Next Branching Instruction)
 api_type:

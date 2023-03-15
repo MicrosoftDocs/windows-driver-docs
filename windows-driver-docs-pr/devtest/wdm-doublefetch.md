@@ -5,6 +5,7 @@ ms.date: 10/21/2020
 keywords: ["DoubleFetch rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - doublefetch
 api_type:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TELEPHONY\_MUTE\_TX property is used to control whe
 keywords: ["KSPROPERTY_TELEPHONY_MUTE_TX Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TELEPHONY_MUTE_TX
 api_location:

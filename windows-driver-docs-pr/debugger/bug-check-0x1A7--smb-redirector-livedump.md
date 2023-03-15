@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1A7 SMB_REDIRECTOR_LIVEDUMP", "SMB_REDIRECTOR_LIVEDUMP"]
 ms.date: 01/10/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SMB_REDIRECTOR_LIVEDUMP
 api_type:

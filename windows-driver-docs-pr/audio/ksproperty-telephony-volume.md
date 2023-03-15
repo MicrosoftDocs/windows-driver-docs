@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TELEPHONY\_VOLUME property is used to control the v
 keywords: ["KSPROPERTY_TELEPHONY_VOLUME Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TELEPHONY_VOLUME
 api_location:

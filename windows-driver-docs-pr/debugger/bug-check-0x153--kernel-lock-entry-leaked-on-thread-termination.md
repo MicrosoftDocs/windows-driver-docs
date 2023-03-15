@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x153 KERNEL_LOCK_ENTRY_LEAKED_ON_THREAD_TERMINATION", "KE
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KERNEL_LOCK_ENTRY_LEAKED_ON_THREAD_TERMINATION
 api_type:

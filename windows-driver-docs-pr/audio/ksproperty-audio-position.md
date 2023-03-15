@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_POSITION property specifies the current posi
 keywords: ["KSPROPERTY_AUDIO_POSITION Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_POSITION
 api_location:

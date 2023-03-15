@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_DELAY property indicates the time lag that a
 keywords: ["KSPROPERTY_AUDIO_DELAY Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_DELAY
 api_location:

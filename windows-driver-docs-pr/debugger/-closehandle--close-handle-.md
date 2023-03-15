@@ -5,6 +5,7 @@ keywords: [".closehandle (Close Handle) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .closehandle (Close Handle)
 api_type:

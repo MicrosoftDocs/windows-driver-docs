@@ -5,6 +5,7 @@ keywords: ["Filter Target Output (.ofilter) command", ".ofilter (Filter Target O
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .ofilter (Filter Target Output)
 api_type:

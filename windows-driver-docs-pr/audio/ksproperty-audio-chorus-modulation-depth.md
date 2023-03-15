@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_CHORUS\_MODULATION\_DEPTH property specifies
 keywords: ["KSPROPERTY_AUDIO_CHORUS_MODULATION_DEPTH Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_CHORUS_MODULATION_DEPTH
 api_location:

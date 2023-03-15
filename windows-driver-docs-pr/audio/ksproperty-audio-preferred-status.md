@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_PREFERRED\_STATUS property informs a device 
 keywords: ["KSPROPERTY_AUDIO_PREFERRED_STATUS Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_PREFERRED_STATUS
 api_location:

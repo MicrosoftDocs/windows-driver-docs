@@ -5,6 +5,7 @@ keywords: ["Create Remote.exe Server (.remote) command", "remote debugging throu
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .remote (Create Remote.exe Server)
 api_type:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_HRTF3D\_FILTER\_FORMAT property retrieves the filte
 keywords: ["KSPROPERTY_HRTF3D_FILTER_FORMAT Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_HRTF3D_FILTER_FORMAT
 api_location:

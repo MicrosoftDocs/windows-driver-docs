@@ -4,6 +4,7 @@ description: The SendLIRR WMI method sends a link incident record registration (
 keywords: ["SendLIRR function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SendLIRR
 api_location:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x7D INSTALL_MORE_MEMORY", "INSTALL_MORE_MEMORY"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INSTALL_MORE_MEMORY
 api_type:

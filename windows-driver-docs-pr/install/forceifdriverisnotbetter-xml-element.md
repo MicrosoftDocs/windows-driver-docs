@@ -4,6 +4,7 @@ description: forceIfDriverIsNotBetter XML Element
 keywords: ["forceIfDriverIsNotBetter XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - forceIfDriverIsNotBetter XML Element
 api_type:

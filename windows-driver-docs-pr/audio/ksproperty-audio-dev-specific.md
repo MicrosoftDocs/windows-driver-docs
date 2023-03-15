@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_DEV\_SPECIFIC property is used to access a d
 keywords: ["KSPROPERTY_AUDIO_DEV_SPECIFIC Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_DEV_SPECIFIC
 api_location:

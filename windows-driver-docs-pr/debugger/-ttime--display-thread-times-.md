@@ -5,6 +5,7 @@ keywords: [".ttime (Display Thread Times) Windows Debugging"]
 ms.date: 08/01/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .ttime (Display Thread Times)
 api_type:

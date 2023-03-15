@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1EA SECURE_PCI_CONFIG_SPACE_ACCESS_VIOLATION", "SECURE_P
 ms.date: 08/03/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SECURE_PCI_CONFIG_SPACE_ACCESS_VIOLATION
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x6C REFMON_INITIALIZATION_FAILED", "REFMON_INITIALIZATION
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - REFMON_INITIALIZATION_FAILED
 api_type:

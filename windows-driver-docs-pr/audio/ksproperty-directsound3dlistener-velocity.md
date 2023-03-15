@@ -4,6 +4,7 @@ description: The KSPROPERTY\_DIRECTSOUND3DLISTENER\_VELOCITY property specifies 
 keywords: ["KSPROPERTY_DIRECTSOUND3DLISTENER_VELOCITY Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DIRECTSOUND3DLISTENER_VELOCITY
 api_location:

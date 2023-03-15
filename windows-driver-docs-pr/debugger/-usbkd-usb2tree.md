@@ -5,6 +5,7 @@ keywords: ["usbkd.usb2tree Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - usbkd.usb2tree
 api_type:

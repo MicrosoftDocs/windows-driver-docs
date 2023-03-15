@@ -5,6 +5,7 @@ keywords:
 - INF ClassInstall32 Section Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF ClassInstall32 Section
 api_type:

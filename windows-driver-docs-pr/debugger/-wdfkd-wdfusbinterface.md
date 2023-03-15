@@ -5,6 +5,7 @@ keywords: ["wdfkd.wdfusbinterface Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wdfkd.wdfusbinterface
 api_type:

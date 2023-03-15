@@ -5,6 +5,7 @@ keywords: ["Hold and Compare Memory (.holdmem) command", "memory, Hold and Compa
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .holdmem (Hold and Compare Memory)
 api_type:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_DIRECTSOUND3DLISTENER\_ORIENTATION property specifi
 keywords: ["KSPROPERTY_DIRECTSOUND3DLISTENER_ORIENTATION Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DIRECTSOUND3DLISTENER_ORIENTATION
 api_location:

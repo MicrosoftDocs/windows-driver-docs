@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1DB IPI_WATCHDOG_TIMEOUT", "IPI_WATCHDOG_TIMEOUT"]
 ms.date: 01/14/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IPI_WATCHDOG_TIMEOUT
 api_type:

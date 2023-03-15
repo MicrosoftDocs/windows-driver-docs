@@ -4,6 +4,7 @@ description: The SM\_ScsiInquiry WMI method sends a SCSI inquiry command to the 
 keywords: ["SM_ScsiInquiry function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SM_ScsiInquiry
 api_location:

@@ -5,6 +5,7 @@ keywords: ["comment line token", "Comment Line Specifier Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - (Comment Line Specifier)
 api_type:

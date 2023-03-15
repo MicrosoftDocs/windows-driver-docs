@@ -4,6 +4,7 @@ description: The KSPROPERTY\_RTAUDIO\_REGISTER\_NOTIFICATION\_EVENT property reg
 keywords: ["KSPROPERTY_RTAUDIO_REGISTER_NOTIFICATION_EVENT Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_RTAUDIO_REGISTER_NOTIFICATION_EVENT
 api_location:

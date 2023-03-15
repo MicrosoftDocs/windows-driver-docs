@@ -4,6 +4,7 @@ description: The EXT\_TDOP\_SET\_FROM\_EXPR sub-operation of the DEBUG\_REQUEST\
 keywords: ["EXT_TDOP_SET_FROM_EXPR Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EXT_TDOP_SET_FROM_EXPR
 api_type:

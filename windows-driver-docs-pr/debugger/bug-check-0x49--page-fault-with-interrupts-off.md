@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x49 PAGE_FAULT_WITH_INTERRUPTS_OFF", "PAGE_FAULT_WITH_INT
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PAGE_FAULT_WITH_INTERRUPTS_OFF
 api_type:

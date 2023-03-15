@@ -4,6 +4,7 @@ description: DEBUG\_REQUEST\_GET\_WIN32\_MAJOR\_MINOR\_VERSIONS
 keywords: ["DEBUG_REQUEST_GET_WIN32_MAJOR_MINOR_VERSIONS Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_REQUEST_GET_WIN32_MAJOR_MINOR_VERSIONS
 api_type:

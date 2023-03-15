@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xE7 INVALID_FLOATING_POINT_STATE", "INVALID_FLOATING_POIN
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INVALID_FLOATING_POINT_STATE
 api_type:

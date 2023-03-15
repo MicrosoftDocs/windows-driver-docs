@@ -4,6 +4,7 @@ description: The KSPROPERTY\_HRTF3D\_INITIALIZE property specifies the parameter
 keywords: ["KSPROPERTY_HRTF3D_INITIALIZE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_HRTF3D_INITIALIZE
 api_location:

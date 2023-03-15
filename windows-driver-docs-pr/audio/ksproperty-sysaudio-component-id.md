@@ -4,6 +4,7 @@ description: The KSPROPERTY\_SYSAUDIO\_COMPONENT\_ID property retrieves the comp
 keywords: ["KSPROPERTY_SYSAUDIO_COMPONENT_ID Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_SYSAUDIO_COMPONENT_ID
 api_location:

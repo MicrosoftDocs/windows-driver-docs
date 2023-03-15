@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_SAMPLING\_RATE property specifies the rate a
 keywords: ["KSPROPERTY_AUDIO_SAMPLING_RATE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_SAMPLING_RATE
 api_location:

@@ -4,6 +4,7 @@ description: installHeaderTitle XML Element
 keywords: ["installHeaderTitle XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - installHeaderTitle XML Element
 api_type:

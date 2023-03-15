@@ -5,6 +5,7 @@ keywords: [".opendump (Open Dump File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .opendump (Open Dump File)
 api_type:

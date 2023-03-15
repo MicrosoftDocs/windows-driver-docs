@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["KsIrqlFilterCallbacks rule ()"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KsIrqlFilterCallbacks
 api_type:

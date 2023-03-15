@@ -4,6 +4,7 @@ description: Learn about the D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER structure, whic
 keywords: ["D3DDDI_MULTIPLANE_OVERLAY_FILTER structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DDDI_MULTIPLANE_OVERLAY_FILTER
 api_location:

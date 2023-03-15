@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AC3\_DOWNMIX property specifies whether the program
 keywords: ["KSPROPERTY_AC3_DOWNMIX Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AC3_DOWNMIX
 api_location:

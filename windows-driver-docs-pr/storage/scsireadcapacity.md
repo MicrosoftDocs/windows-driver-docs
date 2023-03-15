@@ -4,6 +4,7 @@ description: The ScsiReadCapacity WMI method sends a SCSI read capacity command 
 keywords: ["ScsiReadCapacity function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ScsiReadCapacity
 api_location:

@@ -4,6 +4,7 @@ description: Learn about the OUTPUTDUPL\_CONTEXT\_DEBUG\_INFO structure, which i
 keywords: ["OUTPUTDUPL_CONTEXT_DEBUG_INFO structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - OUTPUTDUPL_CONTEXT_DEBUG_INFO
 api_location:

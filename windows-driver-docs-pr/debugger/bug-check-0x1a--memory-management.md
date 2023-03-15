@@ -5,6 +5,7 @@ keywords: ["Bug check 0x1A MEMORY_MANAGEMENT", "MEMORY_MANAGEMENT"]
 ms.date: 12/09/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MEMORY_MANAGEMENT
 api_type:

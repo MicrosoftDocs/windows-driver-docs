@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG property specifies the actua
 keywords: ["KSPROPERTY_AUDIO_CHANNEL_CONFIG Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_CHANNEL_CONFIG
 api_location:

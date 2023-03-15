@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["SpReturnValue rule (storport)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SpReturnValue
 api_type:

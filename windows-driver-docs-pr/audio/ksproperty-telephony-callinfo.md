@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TELEPHONY\_CALLINFO property is used to retrieve cu
 keywords: ["KSPROPERTY_TELEPHONY_CALLINFO Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TELEPHONY_CALLINFO
 api_location:

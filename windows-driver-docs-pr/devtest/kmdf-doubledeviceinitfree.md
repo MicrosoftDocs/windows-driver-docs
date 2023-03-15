@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["DoubleDeviceInitFree rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DoubleDeviceInitFree
 api_type:

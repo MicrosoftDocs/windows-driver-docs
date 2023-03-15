@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x10 SPIN_LOCK_NOT_OWNED", "SPIN_LOCK_NOT_OWNED"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SPIN_LOCK_NOT_OWNED
 api_type:

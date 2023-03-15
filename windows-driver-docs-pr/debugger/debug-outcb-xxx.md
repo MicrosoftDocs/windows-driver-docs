@@ -4,6 +4,7 @@ description: The DEBUG\_OUTPUTCB\_XXX constants are output flags. The output fla
 ms.date: 11/28/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_OUTCB_TEXT
 - DEBUG_OUTCB_DML

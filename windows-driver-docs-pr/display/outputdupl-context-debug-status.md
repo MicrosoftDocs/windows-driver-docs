@@ -4,6 +4,7 @@ description: Learn about the OUTPUTDUPL\_CONTEXT\_DEBUG\_STATUS enumeration, whi
 keywords: ["OUTPUTDUPL_CONTEXT_DEBUG_STATUS enumeration Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - OUTPUTDUPL_CONTEXT_DEBUG_STATUS
 api_location:

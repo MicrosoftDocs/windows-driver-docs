@@ -5,6 +5,7 @@ keywords: ["interrupt history record", "ihs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ihs
 api_type:

@@ -4,6 +4,7 @@ description: Learn about the D3DKMT\_OUTDUPL\_POINTER\_SHAPE\_TYPE enumeration, 
 keywords: ["D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE enumeration Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DKMT_OUTDUPL_POINTER_SHAPE_TYPE
 api_location:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS property is used t
 keywords: ["KSPROPERTY_SOUNDDETECTOR_SUPPORTEDPATTERNS Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_SOUNDDETECTOR_SUPPORTEDPATTERNS
 api_location:

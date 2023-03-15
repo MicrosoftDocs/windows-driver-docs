@@ -5,6 +5,7 @@ keywords:
 - TraceView -process Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TraceView -process
 api_type:

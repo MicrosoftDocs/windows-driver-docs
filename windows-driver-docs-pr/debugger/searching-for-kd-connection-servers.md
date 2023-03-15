@@ -5,6 +5,7 @@ keywords: ["Searching for KD Connection Servers Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Searching for KD Connection Servers
 api_type:

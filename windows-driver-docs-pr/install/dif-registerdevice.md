@@ -4,6 +4,7 @@ description: DIF_REGISTERDEVICE
 keywords: ["DIF_REGISTERDEVICE Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_REGISTERDEVICE
 api_location:

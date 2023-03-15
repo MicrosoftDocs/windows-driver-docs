@@ -5,6 +5,7 @@ keywords: ["arbiter", "arbinst Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - arbinst
 api_type:

@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["KsIrqlDeviceCallbacks rule ()"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KsIrqlDeviceCallbacks
 api_type:

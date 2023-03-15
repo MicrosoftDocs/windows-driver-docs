@@ -5,6 +5,7 @@ keywords:
 - TraceView Control Commands Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TraceView Control Commands
 api_type:

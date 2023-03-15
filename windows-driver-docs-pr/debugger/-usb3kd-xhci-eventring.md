@@ -5,6 +5,7 @@ keywords: ["usb3kd.xhci_eventring Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - usb3kd.xhci_eventring
 api_type:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_CPU\_RESOURCES property specifies whether a 
 keywords: ["KSPROPERTY_AUDIO_CPU_RESOURCES Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_CPU_RESOURCES
 api_location:

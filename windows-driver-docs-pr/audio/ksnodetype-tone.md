@@ -4,6 +4,7 @@ description: KSNODETYPE\_TONE
 keywords: ["KSNODETYPE_TONE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_TONE
 api_type:

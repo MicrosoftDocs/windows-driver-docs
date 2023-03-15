@@ -4,6 +4,7 @@ description: The KSPROPERTY\_RTAUDIO\_HWLATENCY property retrieves a description
 keywords: ["KSPROPERTY_RTAUDIO_HWLATENCY Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_RTAUDIO_HWLATENCY
 api_location:

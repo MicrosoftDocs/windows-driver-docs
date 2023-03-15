@@ -5,6 +5,7 @@ keywords: ["PDBCopy Command-Line Options Windows Debugging"]
 ms.date: 04/10/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PDBCopy Command-Line Options
 api_type:

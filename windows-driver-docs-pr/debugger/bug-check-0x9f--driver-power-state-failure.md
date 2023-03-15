@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x9F DRIVER_POWER_STATE_FAILURE", "DRIVER_POWER_STATE_FAIL
 ms.date: 07/27/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_POWER_STATE_FAILURE
 api_type:

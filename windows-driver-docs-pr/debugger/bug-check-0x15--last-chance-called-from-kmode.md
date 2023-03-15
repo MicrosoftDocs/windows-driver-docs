@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x15 LAST_CHANCE_CALLED_FROM_KMODE", "LAST_CHANCE_CALLED_F
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - LAST_CHANCE_CALLED_FROM_KMODE
 api_type:

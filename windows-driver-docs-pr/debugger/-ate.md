@@ -5,6 +5,7 @@ keywords: ["ate Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ate
 api_type:

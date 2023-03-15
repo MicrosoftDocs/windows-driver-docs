@@ -4,6 +4,7 @@ description: The KSPROPERTY\_DIRECTSOUND3DLISTENER\_DOPPLERFACTOR property speci
 keywords: ["KSPROPERTY_DIRECTSOUND3DLISTENER_DOPPLERFACTOR Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DIRECTSOUND3DLISTENER_DOPPLERFACTOR
 api_location:

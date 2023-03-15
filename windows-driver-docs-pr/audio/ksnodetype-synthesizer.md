@@ -4,6 +4,7 @@ description: KSNODETYPE\_SYNTHESIZER
 keywords: ["KSNODETYPE_SYNTHESIZER Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_SYNTHESIZER
 api_type:

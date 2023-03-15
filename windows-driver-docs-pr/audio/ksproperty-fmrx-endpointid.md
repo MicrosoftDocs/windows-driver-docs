@@ -4,6 +4,7 @@ description: The KSTOPOLOGY\_ENDPOINTID property contains the endpoint ID for th
 keywords: ["KSPROPERTY_FMRX_ENDPOINTID Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_FMRX_ENDPOINTID
 api_location:

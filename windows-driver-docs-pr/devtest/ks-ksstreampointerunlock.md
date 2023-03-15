@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["KsStreamPointerUnlock rule ()"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KsStreamPointerUnlock
 api_type:

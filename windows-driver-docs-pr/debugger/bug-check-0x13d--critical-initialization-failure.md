@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x13D CRITICAL_INITIALIZATION_FAILURE", "CRITICAL_INITIALI
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CRITICAL_INITIALIZATION_FAILURE
 api_type:

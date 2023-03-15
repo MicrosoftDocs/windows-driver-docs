@@ -4,6 +4,7 @@ description: KSNODETYPE\_PROLOGIC\_DECODER
 keywords: ["KSNODETYPE_PROLOGIC_DECODER Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_PROLOGIC_DECODER
 api_type:

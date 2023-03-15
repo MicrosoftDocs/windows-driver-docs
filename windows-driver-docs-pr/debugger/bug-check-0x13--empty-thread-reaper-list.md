@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x13 EMPTY_THREAD_REAPER_LIST", "EMPTY_THREAD_REAPER_LIST"
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EMPTY_THREAD_REAPER_LIST
 api_type:

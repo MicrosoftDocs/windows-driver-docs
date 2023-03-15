@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x158 ILLEGAL_IOMMU_PAGE_FAULT", "ILLEGAL_IOMMU_PAGE_FAULT
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ILLEGAL_IOMMU_PAGE_FAULT
 api_type:

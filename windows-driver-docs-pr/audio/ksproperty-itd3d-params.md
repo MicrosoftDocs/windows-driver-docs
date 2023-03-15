@@ -4,6 +4,7 @@ description: The KSPROPERTY\_ITD3D\_PARAMS property is used to set the parameter
 keywords: ["KSPROPERTY_ITD3D_PARAMS Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_ITD3D_PARAMS
 api_location:

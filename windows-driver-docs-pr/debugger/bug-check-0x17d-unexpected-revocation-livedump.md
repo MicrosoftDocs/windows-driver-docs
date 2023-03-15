@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x17D PDC_UNEXPECTED_REVOCATION_LIVEDUMP", "PDC_UNEXPECTED
 ms.date: 01/04/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PDC_UNEXPECTED_REVOCATION_LIVEDUMP
 api_type:

@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["MiniportPause_Return rule (ndis)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MiniportPause_Return
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x4000008A THREAD_TERMINATE_HELD_MUTEX", "THREAD_TERMINATE
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - THREAD_TERMINATE_HELD_MUTEX
 api_type:

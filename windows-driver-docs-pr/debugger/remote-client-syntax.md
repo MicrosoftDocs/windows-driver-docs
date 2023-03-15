@@ -5,6 +5,7 @@ keywords: ["Remote Client Syntax Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Remote Client Syntax
 api_type:

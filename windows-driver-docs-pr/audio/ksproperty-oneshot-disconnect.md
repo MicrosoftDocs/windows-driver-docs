@@ -4,6 +4,7 @@ description: The KSPROPERTY\_ONESHOT\_DISCONNECT property is used to prompt the 
 keywords: ["KSPROPERTY_ONESHOT_DISCONNECT Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_ONESHOT_DISCONNECT
 api_location:

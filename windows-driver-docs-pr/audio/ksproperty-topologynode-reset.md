@@ -4,6 +4,7 @@ description: The KSPROPERTY\_TOPOLOGYNODE\_RESET property resets the node comple
 keywords: ["KSPROPERTY_TOPOLOGYNODE_RESET Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_TOPOLOGYNODE_RESET
 api_location:

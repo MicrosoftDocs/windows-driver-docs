@@ -5,6 +5,7 @@ keywords:
 - /Initialize Switch Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - /Initialize
 api_type:

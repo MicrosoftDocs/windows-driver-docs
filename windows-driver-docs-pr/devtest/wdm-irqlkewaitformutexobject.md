@@ -5,6 +5,7 @@ description: "Learn more about: IrqlKeWaitForMutexObject rule (wdm)"
 keywords: ["IrqlKeWaitForMutexObject rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IrqlKeWaitForMutexObject
 api_type:

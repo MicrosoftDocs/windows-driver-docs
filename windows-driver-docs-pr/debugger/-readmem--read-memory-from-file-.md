@@ -5,6 +5,7 @@ keywords: [".readmem (Read Memory from File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .readmem (Read Memory from File)
 api_type:

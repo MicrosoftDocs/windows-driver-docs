@@ -4,6 +4,7 @@ description: The KSPROPERTY\_RTAUDIO\_CLOCKREGISTER property maps the wall clock
 keywords: ["KSPROPERTY_RTAUDIO_CLOCKREGISTER Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_RTAUDIO_CLOCKREGISTER
 api_location:

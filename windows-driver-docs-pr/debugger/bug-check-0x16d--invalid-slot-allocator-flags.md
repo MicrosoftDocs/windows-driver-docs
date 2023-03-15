@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x16D INVALID_SLOT_ALLOCATOR_FLAGS", "INVALID_SLOT_ALLOCAT
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INVALID_SLOT_ALLOCATOR_FLAGS
 api_type:

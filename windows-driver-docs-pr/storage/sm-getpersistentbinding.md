@@ -4,6 +4,7 @@ description: The SM\_GetPersistentBinding method retrieves the bindings that an 
 keywords: ["SM_GetPersistentBinding function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SM_GetPersistentBinding
 api_location:

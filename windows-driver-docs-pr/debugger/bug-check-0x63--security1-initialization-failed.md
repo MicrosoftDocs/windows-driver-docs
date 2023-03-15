@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x63 SECURITY1_INITIALIZATION_FAILED", "SECURITY1_INITIALI
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SECURITY1_INITIALIZATION_FAILED
 api_type:

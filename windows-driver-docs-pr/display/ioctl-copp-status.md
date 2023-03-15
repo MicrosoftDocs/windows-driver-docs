@@ -4,6 +4,7 @@ description: Returns status on a protected video session.
 keywords: ["IOCTL_COPP_Status control code Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IOCTL_COPP_Status
 api_type:

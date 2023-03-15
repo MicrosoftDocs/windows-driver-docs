@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["IrqlIoDispatch rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IrqlIoDispatch
 api_type:

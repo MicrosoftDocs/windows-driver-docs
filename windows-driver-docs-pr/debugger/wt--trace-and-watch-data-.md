@@ -5,6 +5,7 @@ keywords: ["wt (Trace and Watch Data) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wt (Trace and Watch Data)
 api_type:

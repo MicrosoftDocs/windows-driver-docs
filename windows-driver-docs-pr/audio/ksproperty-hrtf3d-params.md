@@ -4,6 +4,7 @@ description: The KSPROPERTY\_HRTF3D\_PARAMS property applies a set of 3-D parame
 keywords: ["KSPROPERTY_HRTF3D_PARAMS Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_HRTF3D_PARAMS
 api_location:

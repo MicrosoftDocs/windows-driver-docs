@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x14A KERNEL_WMI_INTERNAL", "KERNEL_WMI_INTERNAL"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KERNEL_WMI_INTERNAL
 api_type:

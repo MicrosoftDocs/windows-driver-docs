@@ -4,6 +4,7 @@ description: The KSPROPERTY\_DIRECTSOUND3DLISTENER\_ROLLOFFFACTOR property speci
 keywords: ["KSPROPERTY_DIRECTSOUND3DLISTENER_ROLLOFFFACTOR Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_DIRECTSOUND3DLISTENER_ROLLOFFFACTOR
 api_location:

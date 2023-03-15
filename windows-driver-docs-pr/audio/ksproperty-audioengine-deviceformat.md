@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIOENGINE\_DEVICEFORMAT property request retrieve
 keywords: ["KSPROPERTY_AUDIOENGINE_DEVICEFORMAT Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOENGINE_DEVICEFORMAT
 api_location:

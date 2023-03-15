@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x44 MULTIPLE_IRP_COMPLETE_REQUESTS", "MULTIPLE_IRP_COMPLE
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MULTIPLE_IRP_COMPLETE_REQUESTS
 api_type:

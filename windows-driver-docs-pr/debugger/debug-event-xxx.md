@@ -4,6 +4,7 @@ description: The DEBUG\_EVENT\_XXX constants are event flags that are generated 
 ms.date: 08/13/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_EVENT_XXX
 api_location:

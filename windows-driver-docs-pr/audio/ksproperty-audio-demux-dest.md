@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_DEMUX\_DEST property specifies the destinati
 keywords: ["KSPROPERTY_AUDIO_DEMUX_DEST Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_DEMUX_DEST
 api_location:

@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["BCDEdit /deletevalue Driver Development Tools"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BCDEdit /deletevalue
 api_type:

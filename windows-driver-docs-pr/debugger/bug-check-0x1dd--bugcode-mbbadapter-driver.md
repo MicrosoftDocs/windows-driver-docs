@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1DD BUGCODE_MBBADAPTER_DRIVER", "BUGCODE_MBBADAPTER_DRIV
 ms.date: 10/05/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BUGCODE_MBBADAPTER_DRIVER
 api_type:

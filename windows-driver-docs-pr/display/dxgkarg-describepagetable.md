@@ -4,6 +4,7 @@ description: The DXGKARG\_DESCRIBEPAGETABLE structure is reserved for system use
 keywords: ["_DXGKARG_DESCRIBEPAGETABLE structure Display Devices", "DXGKARG_DESCRIBEPAGETABLE structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGKARG_DESCRIBEPAGETABLE
 api_location:

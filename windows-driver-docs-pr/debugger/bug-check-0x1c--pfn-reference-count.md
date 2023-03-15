@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1C PFN_REFERENCE_COUNT", "PFN_REFERENCE_COUNT"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PFN_REFERENCE_COUNT
 api_type:

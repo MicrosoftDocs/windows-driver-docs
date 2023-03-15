@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["StorPortDDIsPortOnly rule (storport)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - StorPortDDIsPortOnly
 api_type:

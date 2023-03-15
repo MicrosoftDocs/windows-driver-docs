@@ -4,6 +4,7 @@ description: The DxgkDdiUpdatePageDirectory function is reserved for system use.
 keywords: ["DxgkDdiUpdatePageDirectory function Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DxgkDdiUpdatePageDirectory
 api_location:

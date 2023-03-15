@@ -5,6 +5,7 @@ keywords: ["APIC (Advanced Programmable Interrupt Controller)", "apicerr Windows
 ms.date: 09/17/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - apicerr
 api_type:

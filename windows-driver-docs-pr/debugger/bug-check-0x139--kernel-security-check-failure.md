@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x139 KERNEL_SECURITY_CHECK_FAILURE", "Bug Check 0x139 KER
 ms.date: 03/10/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Bug Check 0x139 KERNEL_SECURITY_CHECK_FAILURE
 api_type:

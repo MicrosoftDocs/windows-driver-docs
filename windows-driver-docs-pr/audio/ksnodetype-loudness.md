@@ -4,6 +4,7 @@ description: KSNODETYPE\_LOUDNESS
 keywords: ["KSNODETYPE_LOUDNESS Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_LOUDNESS
 api_type:

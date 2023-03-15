@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x137 WIN32K_HANDLE_MANAGER", "WIN32K_HANDLE_MANAGER"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIN32K_HANDLE_MANAGER
 api_type:

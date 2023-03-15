@@ -5,6 +5,7 @@ keywords:
 - DevCon Status Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DevCon Status
 api_type:

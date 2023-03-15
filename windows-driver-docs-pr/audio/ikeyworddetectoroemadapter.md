@@ -4,6 +4,7 @@ description: IKeywordDetectorOemAdapter is a Component Object Model (COM) interf
 keywords: ["IKeywordDetectorOemAdapter interface Audio Devices", "IKeywordDetectorOemAdapter interface Audio Devices , described"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IKeywordDetectorOemAdapter
 api_type:

@@ -5,6 +5,7 @@ keywords: ["sq (Set Quiet Mode) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - sq (Set Quiet Mode)
 api_type:

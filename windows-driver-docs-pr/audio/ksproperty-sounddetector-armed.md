@@ -4,6 +4,7 @@ description: The KSPROPERTY\_SOUNDDETECTOR\_ARMED property is the current arming
 keywords: ["KSPROPERTY_SOUNDDETECTOR_ARMED Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_SOUNDDETECTOR_ARMED
 api_location:

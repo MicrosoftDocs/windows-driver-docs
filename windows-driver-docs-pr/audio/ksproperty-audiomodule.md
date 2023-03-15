@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIOMODULE enumeration defines constants that are 
 keywords: ["KSPROPERTY_AUDIOMODULE enumeration Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOMODULE
 api_location:

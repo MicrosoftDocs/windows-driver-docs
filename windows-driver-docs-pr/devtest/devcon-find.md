@@ -5,6 +5,7 @@ keywords:
 - DevCon Find Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DevCon Find
 api_type:

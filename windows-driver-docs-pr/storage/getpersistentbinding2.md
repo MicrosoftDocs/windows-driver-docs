@@ -4,6 +4,7 @@ description: The GetPersistentBinding2 method retrieves the bindings that an HBA
 keywords: ["GetPersistentBinding2 function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - GetPersistentBinding2
 api_location:

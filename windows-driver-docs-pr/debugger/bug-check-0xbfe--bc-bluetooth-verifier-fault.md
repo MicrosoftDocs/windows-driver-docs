@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xBFE BC_BLUETOOTH_VERIFIER_FAULT", "BC_BLUETOOTH_VERIFIER
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BC_BLUETOOTH_VERIFIER_FAULT
 api_type:

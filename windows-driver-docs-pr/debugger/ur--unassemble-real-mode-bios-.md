@@ -5,6 +5,7 @@ keywords: ["ur (Unassemble Real Mode BIOS) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ur (Unassemble Real Mode BIOS)
 api_type:

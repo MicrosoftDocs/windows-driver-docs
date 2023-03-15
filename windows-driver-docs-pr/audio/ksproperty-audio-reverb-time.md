@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_REVERB\_TIME property specifies the reverber
 keywords: ["KSPROPERTY_AUDIO_REVERB_TIME Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_REVERB_TIME
 api_location:

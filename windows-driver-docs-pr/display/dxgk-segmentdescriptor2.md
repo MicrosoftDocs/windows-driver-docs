@@ -4,6 +4,7 @@ description: The DXGK\_SEGMENTDESCRIPTOR2 structure is reserved for system use. 
 keywords: ["DXGK_SEGMENTDESCRIPTOR2 structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGK_SEGMENTDESCRIPTOR2
 api_location:

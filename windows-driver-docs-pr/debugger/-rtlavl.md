@@ -5,6 +5,7 @@ keywords: ["avl tables", "rtlavl Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - rtlavl
 api_type:

@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_LINEAR\_BUFFER\_POSITION property request re
 keywords: ["KSPROPERTY_AUDIO_LINEAR_BUFFER_POSITION Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_LINEAR_BUFFER_POSITION
 api_location:

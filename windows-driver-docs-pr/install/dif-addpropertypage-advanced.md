@@ -4,6 +4,7 @@ description: DIF_ADDPROPERTYPAGE_ADVANCED
 keywords: ["DIF_ADDPROPERTYPAGE_ADVANCED Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_ADDPROPERTYPAGE_ADVANCED
 api_location:

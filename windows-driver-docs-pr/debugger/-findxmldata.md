@@ -5,6 +5,7 @@ keywords: ["XML data in CAB files", "sysdata.xml", "findxmldata Windows Debuggin
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - findxmldata
 api_type:

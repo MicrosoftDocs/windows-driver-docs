@@ -5,6 +5,7 @@ keywords: ["usbhub extension (obsolete)", "hidfdo extension (obsolete)", "hidpdo
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - devext
 api_type:

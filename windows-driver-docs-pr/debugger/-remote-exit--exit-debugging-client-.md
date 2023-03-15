@@ -5,6 +5,7 @@ keywords: ["Exit Debugging Client (.remote_exit) command", "remote debugging thr
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .remote_exit (Exit Debugging Client)
 api_type:

@@ -4,6 +4,7 @@ description: DriverEntry initializes the minidriver.
 keywords: ["DriverEntry function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DriverEntry
 api_location:

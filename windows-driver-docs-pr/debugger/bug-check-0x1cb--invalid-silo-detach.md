@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1CB INVALID_SILO_DETACH", "INVALID_SILO_DETACH"]
 ms.date: 02/21/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INVALID_SILO_DETACH
 api_type:

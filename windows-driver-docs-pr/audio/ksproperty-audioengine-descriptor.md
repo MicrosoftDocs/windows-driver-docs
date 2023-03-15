@@ -4,6 +4,7 @@ description: The audio driver for the offload-capable hardware solution uses KSP
 keywords: ["KSPROPERTY_AUDIOENGINE_DESCRIPTOR Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOENGINE_DESCRIPTOR
 api_location:

@@ -4,6 +4,7 @@ description: DIF_DETECT
 keywords: ["DIF_DETECT Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_DETECT
 api_location:

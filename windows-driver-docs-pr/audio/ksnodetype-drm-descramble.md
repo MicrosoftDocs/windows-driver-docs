@@ -4,6 +4,7 @@ description: KSNODETYPE\_DRM\_DESCRAMBLE
 keywords: ["KSNODETYPE_DRM_DESCRAMBLE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_DRM_DESCRAMBLE
 api_type:

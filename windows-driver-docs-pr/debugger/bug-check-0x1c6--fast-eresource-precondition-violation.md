@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1C6 FAST_ERESOURCE_PRECONDITION_VIOLATION", "FAST_ERESOU
 ms.date: 01/11/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - FAST_ERESOURCE_PRECONDITION_VIOLATION
 api_type:

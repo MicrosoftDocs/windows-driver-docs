@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x162 KERNEL_AUTO_BOOST_INVALID_LOCK_RELEASE", "KERNEL_AUT
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KERNEL_AUTO_BOOST_INVALID_LOCK_RELEASE
 api_type:

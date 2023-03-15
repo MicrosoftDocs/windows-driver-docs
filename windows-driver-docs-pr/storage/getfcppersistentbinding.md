@@ -4,6 +4,7 @@ description: The GetFcpPersistentBinding method retrieves the bindings that an H
 keywords: ["GetFcpPersistentBinding function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - GetFcpPersistentBinding
 api_location:

@@ -5,6 +5,7 @@ keywords: [".extmatch (Display All Matching Extensions) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .extmatch (Display All Matching Extensions)
 api_type:

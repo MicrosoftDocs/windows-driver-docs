@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x66 CACHE_INITIALIZATION_FAILED", "CACHE_INITIALIZATION_F
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CACHE_INITIALIZATION_FAILED
 api_type:

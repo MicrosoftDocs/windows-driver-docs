@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xF2 HARDWARE_INTERRUPT_STORM", "HARDWARE_INTERRUPT_STORM"
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - HARDWARE_INTERRUPT_STORM
 api_type:

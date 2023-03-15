@@ -4,6 +4,7 @@ description: DEBUG\_REQUEST\_GET\_CAPTURED\_EVENT\_CODE\_OFFSET
 keywords: ["DEBUG_REQUEST_GET_CAPTURED_EVENT_CODE_OFFSET Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_REQUEST_GET_CAPTURED_EVENT_CODE_OFFSET
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x54 LM_SERVER_INTERNAL_ERROR", "LM_SERVER_INTERNAL_ERROR"
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - LM_SERVER_INTERNAL_ERROR
 api_type:

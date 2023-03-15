@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AC3\_ERROR\_CONCEALMENT property specifies the mann
 keywords: ["KSPROPERTY_AC3_ERROR_CONCEALMENT Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AC3_ERROR_CONCEALMENT
 api_location:
