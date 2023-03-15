@@ -300,3 +300,141 @@ The above INF entries result in the following registry keys being entered:
 "FriendlyName"="USB Video Device"
 "CameraDeviceMftClsid"="{3456A71B-ECD7-11D0-B908-00A0C9223196}"<<< Device MFT CoClass ID >>>
 ```
+
+## Device MFT Chaining
+
+Device MFT is the recommended user mode plugin mechanism for IHVs and OEMs to extend the camera functionality on Windows.
+
+Prior to Windows 10, version 1703, the camera pipeline supported only one DMFT extension plugin.
+
+Starting with Windows 10, version 1703, the Windows camera pipeline supports an optional chain of DMFTs with maximum of two DMFTs.
+
+Starting in Windows 11, version 22H2, the Windows camera pipeline supports an optional chain of DMFTs with maximum of four DMFTs.
+
+This provides greater flexibility for OEMs and IHVs to provide value-add in the form of post processing camera streams. For example, a device could use PDMFT along with an IHV DMFT and an OEM DMFT.
+
+The following figure illustrates the architecture involving a chain of DMFTs.
+
+![DMFT chain.](images/dmft-chain.png)
+
+Capture samples flow from camera driver to DevProxy, then go through the DMFT chains. Every DMFT in the chain has a chance to process the sample. If the DMFT doesn't want to process the sample, it can act as a pass-through just pass the sample to next DMFT.
+
+For controls like KsProperty, the call will go up stream – the last DMFT in the chain will get the call first, the call can be handled there or get passed to previous DMFT in the chain.
+
+Errors will be propagated from DMFT to DTM then to applications. For IHV/OEM DMFTs, any one of the DMFT fails to instantiate will be a fatal error for DTM.
+
+Requirements on DMFTs:
+
+- The input pin count of the DMFT must match with the output pin count of previous DMFT, otherwise DTM would fail during initialization. However, the input and output pin counts of same DMFT do not need to match.
+
+- DMFT needs to support interfaces - IMFDeviceTransform, IMFShutdown, IMFRealTimeClientEx, IKsControl and IMFMediaEventGenerator; IMFTransform may need to be supported if there is MFT0 configured or the next DMFT in the chain requires IMFTransform support.
+
+- On 64-bit systems that do not make use of Frame Server, both 32-bit and 64-bit DMFTs must be registered. Given that a USB camera might get plugged into an arbitrary system, for "external" (or non-inbox) USB cameras, the USB camera vendor should supply both 32-bit and 64-bit DMFTs.
+
+## Configuring the DMFT chain
+
+A camera device can optionally supply a DMFT COM object in a DLL using a custom INF file that uses sections of the inbox USBVideo.INF.
+
+In the custom .INF file's "Interface AddReg" section, specify the DMFT CLSIDs by adding following registry entry:
+
+**CameraDeviceMftCLSIDChain** (REG_MULTI_SZ) %Dmft0.CLSID%,%Dmft.CLSID%,%Dmft2.CLSID%
+
+As shown in the sample INF settings below (replace the %Dmft0.CLSID% and % Dmft1.CLSID% with the actual CLSID strings you are using for your DMFTs), there are maximum of 2 CLSIDs allowed in Windows 10, version 1703, and the first one is closest to DevProxy and the last one is the last DMFT in the chain.
+
+Platform DMFT CLSID is {3D096DDE-8971-4AD5-98F9-C74F56492630}.
+
+Some example **CameraDeviceMftCLSIDChain** settings:
+
+- *No IHV/OEM DMFT or Platform DMFT*
+
+  - CameraDeviceMftCLSIDChain = "" (or no need to specify this registry entry)
+
+- *IHV/OEM DMFT*
+
+  - CameraDeviceMftCLSIDChain = %Dmft.CLSID%
+
+- *Platform DMFT &lt;-&gt; IHV/OEM DMFT*
+
+  - CameraDeviceMftCLSIDChain = "{3D096DDE-8971-4AD5-98F9-C74F56492630}",%Dmft.CLSID%
+
+  - Here is a screen shot of the result registry key for an USB camera with Platform DMFT and an DMFT (with GUID {D671BE6C-FDB8-424F-81D7-03F5B1CE2CC7}) in the chain.
+
+![Registry editor DMFT chain.](images/dmft-registry-editor.png)
+
+- *IHV/OEM DMFT0 &lt;-&gt; IHV/OEM DMFT1*
+
+  - CameraDeviceMftCLSIDChain = %Dmft0.CLSID%,%Dmft1.CLSID%,
+
+> [!NOTE]
+> The **CameraDeviceMftCLSIDChain** can have a maximum 2 of CLSIDs.
+
+If **CameraDeviceMftCLSIDChain** is configured, the legacy CameraDeviceMftCLSID settings will be skipped by DTM.
+
+If **CameraDeviceMftCLSIDChain** is not configured and the legacy CameraDeviceMftCLSID is configured, then the chain would look like (if its USB camera and supported by Platform DMFT and Platform DMFT is enabled) DevProxy &lt;–&gt; Platform DMFT &lt;–&gt; OEM/IHV DMFT or (if the camera is not supported by Platform DMFT or Platform DMFT is disabled) DevProxy &lt;-&gt; OEM/IHV DMFT.
+
+Example INF file settings:
+
+```inf
+[USBVideo.Interface.AddReg]
+HKR,,CLSID,,%ProxyVCap.CLSID%
+HKR,,FriendlyName,,%USBVideo.DeviceDesc%
+HKR,,RTCFlags,0x00010001,0x00000010
+HKR,,EnablePlatformDmft,0x00010001,0x00000001
+HKR,,DisablePlatformDmftFeatures,0x00010001,0x00000001
+HKR,,CameraDeviceMftCLSIDChain, 0x00010000,%Dmft0.CLSID%,%Dmft1.CLSID%
+```
+
+## Com Object and MFT Registration of Device MFTs
+Rather than registering the driver COM object globally, the driver COM object will now be registered under the device key. This allows MFT COM registration from within the container and prevents global registry keys being created, thus preserving driver package isolation. MFTs will now be registered under the device key as well for similar reasons. 
+
+
+#### Changes to Driver INF
+Upon device driver installation, the INF must now make all COM object and MFT registrations under the device key. MFT and COM registrations must change as seen below:
+
+##### MFT Registrations:
+| Before | After |
+|---|---|
+|INF AddReg: <br><br> HKCR,MediaFoundation\Transforms\\{clsid}\\... |Per-Instance device software INF AddReg: <br><br> HKR,MediaFoundation\Transforms\\{clsid}\\... |
+|Registry Location: <br><br> HKLM\SOFTWARE\Classes\MediaFoundation\Transforms\\{clsid}\\... |Registry Locations (_AdapterKey_ location is subject to change): <br><br> _AdapterKey_\MediaFoundation\Transforms\\{clsid}\\... |
+
+##### COM Registrations:
+| Before | After |
+|---|---|
+|INF AddReg: <br><br> HKLM,Software\\Classes\\CLSID\\{clsid}\\... <br> HKCR,CLSID\\{clsid}\\... <br> HKCR,Wow6432Node\CLSID\\{clsid}\\... <br> HKCR,WowAA32Node\CLSID\\{clsid}\\... |Per-Instance device software INF AddReg: <br><br> HKR,Classes\CLSID\\{clsid}\\... <br> HKR,Classes\CLSID\\{clsid}\\... <br> HKR,Classes\Wow6432Node\CLSID\\{clsid}\\... <br> HKR,Classes\WowAA32Node\CLSID\\{clsid}\\... |
+|Registry Locations: <br><br> HKLM\SOFTWARE\Classes\CLSID\\{clsid}\\... <br> HKLM\SOFTWARE\Classes\Wow6432Node\CLSID\\{clsid}\\... <br> HKLM\SOFTWARE\Classes\WowAA32Node\CLSID\\{clsid}\\... |Registry Location (_AdapterKey_ location is subject to change): <br><br> _AdapterKey_\Classes\\... |
+
+The INF syntax for differentiating based on OS version can be found on [MSDN here](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/combining-platform-extensions-with-operating-system-versions). Starting in Nickel, the INF must conform to these new registry keys. Older OS versions will still use the traditional registry keys for compatibility. The INF must setup these registry keys in the old location on older OS builds and create the new keys in their new location for newer OS builds. For example, for an MFT registration on an old build the INF will create the key under: 
+
+```
+HKLM\SOFTWARE\Classes\MediaFoundation\Transforms\{clsid}\ 
+```
+ 
+For an MFT registration on a new WCOS build, the INF will create the key under: 
+
+```
+HKLM\DEVICES\CurrentControlSet\Enum\<device instance>\Driver Parameters\MediaFoundation\Transforms\{clsid}\ 
+```
+ 
+
+A syntax example of targeting different OS versions can be seen below: 
+
+```
+[Manufacturer] 
+%Msft% = Msft, nt.10.0...22000 
+
+; -------------- ; 
+; Models Section ; 
+; -------------- ; 
+
+; Targets old builds
+[Msft] 
+
+; INF work for older build here
+
+
+; Windows 10 build with build number equal to or greater than 18500 
+[msft.nt.10.0...22000]  
+
+; INF work for newer build here
+``` 
+More information and other examples can be found at MSDN. 
