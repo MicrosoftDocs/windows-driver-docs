@@ -3,7 +3,7 @@ title: Constraints on Dispatch Routines
 description: Constraints on Dispatch Routines
 keywords:
 - IRP dispatch routines WDK file system , constraints
-ms.date: 02/23/2023
+ms.date: 03/15/2023
 ---
 
 # Constraints on Dispatch Routines
@@ -13,13 +13,15 @@ ms.date: 02/23/2023
 
 The following guidelines briefly discuss how legacy file system filter drivers can avoid common programming errors in dispatch routines.
 
-## IRQL-Related Constraints
-
 For information about which types of IRPs are used in paging I/O, see [Dispatch Routine IRQL and Thread Context](dispatch-routine-irql-and-thread-context.md).
 
-- Dispatch routines in the paging I/O path should never call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) at any IRQL above APC_LEVEL. If a dispatch routine raises IRQL, it must lower it before calling **IoCallDriver**.
+## IRQL-Related Constraints
 
-- Dispatch routines in the paging path, such as read and write, can't safely call any kernel-mode routines that require callers to be running at IRQL PASSIVE_LEVEL.
+- Dispatch routines in the paging I/O path should never call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) at any IRQL above APC_LEVEL. You can't do paging I/O (or any I/O) at DISPATCH_LEVEL because the system uses APCs to process I/O completion, so you'd never see the operation complete. If a dispatch routine raises IRQL, it must lower it before calling **IoCallDriver**.
+
+- It is not necessarily safe for a dispatch routine to call **IoCallDriver** at APC_LEVEL in all situations. See [Dispatch Routine IRQL and Thread Context](dispatch-routine-irql-and-thread-context.md) to determine whether you can be at APC_LEVEL or must be at PASSIVE_LEVEL.
+
+- Dispatch routines in the paging I/O path, such as read and write, can't safely call any kernel-mode routines that require callers to be running at IRQL PASSIVE_LEVEL.
 
 - Dispatch routines that are in the paging file I/O path can't safely call any kernel-mode routines that require a caller to be running at IRQL < DISPATCH_LEVEL.
 
@@ -32,6 +34,8 @@ For information about which types of IRPs are used in paging I/O, see [Dispatch 
 - Additionally, if the IRP contains an IOCTL or FSCTL buffer that was sent from a 32-bit platform to a 64-bit platform, the buffer contents may need to be thunked. For more information, see [Supporting 32-Bit I/O in Your 64-Bit Driver](../kernel/supporting-32-bit-i-o-in-your-64-bit-driver.md).
 
 - Unlike file systems, file system filter drivers should never call [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md) or [**FsRtlExitFileSystem**](./fsrtlexitfilesystem.md) except before calling [**ExAcquireFastMutexUnsafe**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exacquirefastmutexunsafe) or [**ExAcquireResourceExclusiveLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exacquireresourceexclusivelite). **FsRtlEnterFileSystem** and **FsRtlExitFileSystem** disable normal kernel APCs, which are needed by most file systems.
+
+- You can't issue other IRPs from a paging I/O path. You can queue a worker thread that issues I/O, but you must not wait synchronously for that worker thread to complete because waiting causes deadlocks.
 
 ## Constraints on Completing IRPs
 
