@@ -4,7 +4,7 @@ description: Opening and Using a Parallel Device
 keywords:
 - parallel devices WDK , opening
 - parallel devices WDK , sharing
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Opening and Using a Parallel Device

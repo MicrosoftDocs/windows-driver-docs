@@ -4,7 +4,7 @@ description: Default NDIS Port
 keywords:
 - ports WDK NDIS , default
 - NDIS ports WDK , default NDIS ports
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Default NDIS Port

@@ -10,7 +10,7 @@ keywords:
 - detecting hardware errors WDK
 - reporting hardware errors WDK
 - recovering from hardware errors WDK WHEA
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ms.topic: article
 ---
 

@@ -2,7 +2,7 @@
 title: WDI_TLV_DELETE_PEER_STATE_PARAMETERS
 ms.topic: reference
 description: WDI_TLV_DELETE_PEER_STATE_PARAMETERS is an unused TLV.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_DELETE_PEER_STATE_PARAMETERS Network Drivers Starting with Windows Vista
 ---

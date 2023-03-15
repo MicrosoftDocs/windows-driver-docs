@@ -1,7 +1,7 @@
 ---
 title: Modifying the Default Behavior of the IEEE 1394 Bus Driver
 description: Windows 7 includes 1394ohci.sys, a new IEEE 1394 bus driver that is implemented by using the kernel-mode driver framework (KMDF).
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Modifying the Default Behavior of the IEEE 1394 Bus Driver

@@ -4,7 +4,7 @@ description: RNDIS eliminates the need for hardware vendors to write an NDIS min
 keywords:
 - Remote NDIS WDK networking , architecture
 - Remote NDIS WDK networking , USB transport
-ms.date: 08/06/2021
+ms.date: 03/02/2023
 ---
 
 # Overview of Remote NDIS (RNDIS)

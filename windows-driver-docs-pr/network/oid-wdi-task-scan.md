@@ -2,7 +2,7 @@
 title: OID_WDI_TASK_SCAN
 ms.topic: reference
 description: OID_WDI_TASK_SCAN requests a survey of BSS networks. The port performs a scan according to the requirements of the IEEE 802.11 specification.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - OID_WDI_TASK_SCAN Network Drivers Starting with Windows Vista
 ms.custom: 19H1

@@ -2,7 +2,7 @@
 title: WDI_TLV_GET_AUTO_POWER_SAVE
 ms.topic: reference
 description: WDI_TLV_GET_AUTO_POWER_SAVE is a TLV that contains auto power save information for OID_WDI_GET_AUTO_POWER_SAVE.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_GET_AUTO_POWER_SAVE Network Drivers Starting with Windows Vista
 ---

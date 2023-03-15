@@ -10,7 +10,8 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 02/04/2020
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
 # FLT_PARAMETERS for IRP_MJ_SET_QUOTA union
@@ -19,7 +20,7 @@ Union component used when the **MajorFunction** field of the [**FLT_IO_PARAMETER
 
 ## Syntax
 
-```ManagedCPlusPlus
+``` C
 typedef union _FLT_PARAMETERS {
   ...    ;
   struct {
@@ -33,17 +34,13 @@ typedef union _FLT_PARAMETERS {
 
 ## Members
 
-**SetQuota**  
-Structure containing the following members.
+- **SetQuota**: Structure containing the following members.
 
-**Length**  
-Length, in bytes, of the buffer that **QuotaBuffer** points to.
+- **Length**: Length, in bytes, of the buffer that **QuotaBuffer** points to.
 
-**QuotaBuffer**  
-Pointer to a caller-supplied, [**FILE_QUOTA_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_quota_information)-structured input buffer that contains the quota information to be set. This member is optional and can be NULL if a MDL is provided in **MdlAddress**. See **Remarks**.
+- **QuotaBuffer**: Pointer to a caller-supplied, [**FILE_QUOTA_INFORMATION**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_quota_information)-structured input buffer that contains the quota information to be set. This member is optional and can be NULL if a MDL is provided in **MdlAddress**. See **Remarks**.
 
-**MdlAddress**  
-Address of a memory descriptor list (MDL) that describes the buffer that **QuotaBuffer** points to. This member is optional and can be **NULL** if a buffer is provided in **QuotaBuffer**. See **Remarks**.
+- **MdlAddress**: Address of a memory descriptor list (MDL) that describes the buffer that **QuotaBuffer** points to. This member is optional and can be **NULL** if a buffer is provided in **QuotaBuffer**. See **Remarks**.
 
 ## Remarks
 
@@ -57,8 +54,9 @@ IRP_MJ_SET_QUOTA is an IRP-based operation.
 
 ## Requirements
 
-**Header**: Fltkernel.h (include Fltkernel.h)
-
+| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Header | *Fltkernel.h* (include *Fltkernel.h*) |
 
 ## See also
 

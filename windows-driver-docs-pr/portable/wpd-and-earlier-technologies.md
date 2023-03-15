@@ -1,7 +1,7 @@
 ---
 description: WPD and Earlier Technologies
 title: WPD and Earlier Technologies
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # WPD and Earlier Technologies

@@ -2,7 +2,7 @@
 title: WDI_TLV_DISCONNECT_DISASSOCIATION_FRAME
 ms.topic: reference
 description: WDI_TLV_DISCONNECT_DISASSOCIATION_FRAME is a TLV that contains the received disassociation frame.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_DISCONNECT_DISASSOCIATION_FRAME Network Drivers Starting with Windows Vista
 ---

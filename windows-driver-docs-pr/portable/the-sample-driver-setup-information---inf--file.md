@@ -1,7 +1,7 @@
 ---
 description: The Sample Driver Setup Information (.inf) File
 title: The Sample Driver Setup Information (.inf) File
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # The Sample Driver Setup Information (.inf) File

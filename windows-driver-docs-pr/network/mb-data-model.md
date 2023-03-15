@@ -2,6 +2,7 @@
 title: MB Data Model
 description: MB Data Model
 ms.date: 04/20/2017
+ms.custom: UpdateFrequency3
 ---
 
 # MB Data Model

@@ -1,7 +1,7 @@
 ---
 description: Supported Content-Type Retrieval
 title: Supported Content-Type Retrieval
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Supported Content-Type Retrieval

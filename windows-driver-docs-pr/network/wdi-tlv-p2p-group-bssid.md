@@ -2,7 +2,7 @@
 title: WDI_TLV_P2P_GROUP_BSSID
 ms.topic: reference
 description: WDI_TLV_P2P_GROUP_BSSID is a TLV that contains the Group BSSID for local Wi-Fi Direct GO.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_P2P_GROUP_BSSID Network Drivers Starting with Windows Vista
 ---

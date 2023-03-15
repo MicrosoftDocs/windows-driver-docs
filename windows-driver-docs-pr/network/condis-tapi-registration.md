@@ -6,7 +6,7 @@ keywords:
 - telephonic services WDK WAN , registering
 - CoNDIS TAPI WDK networking , registering
 - registering CoNDIS TAPI
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # CoNDIS TAPI Registration

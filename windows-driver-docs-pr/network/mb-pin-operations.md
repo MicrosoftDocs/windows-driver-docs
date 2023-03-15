@@ -2,6 +2,7 @@
 title: MB PIN Operations
 description: MB PIN Operations
 ms.date: 03/05/2021
+ms.custom: UpdateFrequency3
 ---
 
 # MB PIN Operations

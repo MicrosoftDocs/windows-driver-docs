@@ -1,7 +1,7 @@
 ---
 title: Native WLAN to WDI OID mapping
 description: The following table contains the mappings between Native 802.11 WLAN and WDI OIDs.
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Native WLAN to WDI OID mapping

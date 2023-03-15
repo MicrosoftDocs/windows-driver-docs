@@ -4,7 +4,7 @@ description: Functional Areas
 keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , functional areas
 - PSHED plug-ins WDK WHEA , functional areas
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Functional Areas

@@ -2,6 +2,7 @@
 title: MB Device Readiness
 description: MB Device Readiness
 ms.date: 03/01/2021
+ms.custom: UpdateFrequency3
 ---
 
 # MB Device Readiness

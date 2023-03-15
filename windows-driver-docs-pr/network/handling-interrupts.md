@@ -4,7 +4,7 @@ description: Discusses the calls that an NDIS miniport driver uses when a NIC or
 keywords:
 - interrupts WDK networking , handling
 - MiniportInterrupt
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Handling interrupts for NDIS miniport drivers

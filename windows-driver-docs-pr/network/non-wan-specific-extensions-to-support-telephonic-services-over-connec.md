@@ -7,7 +7,7 @@ keywords:
 - CoNDIS TAPI WDK networking , non-WAN-specific extensions
 - NDIS/TAPI translation OIDs WDK networking
 - connection-oriented NDIS WDK
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Non-WAN-Specific Extensions to Support Telephonic Services Over Connection-Oriented NDIS

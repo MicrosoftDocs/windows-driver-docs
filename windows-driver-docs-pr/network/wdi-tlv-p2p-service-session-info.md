@@ -2,7 +2,7 @@
 title: WDI_TLV_P2P_SERVICE_SESSION_INFO
 ms.topic: reference
 description: WDI_TLV_P2P_SERVICE_SESSION_INFO is a TLV that contains Service Session information.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_P2P_SERVICE_SESSION_INFO Network Drivers Starting with Windows Vista
 ---

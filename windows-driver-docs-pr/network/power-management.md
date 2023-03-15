@@ -1,7 +1,7 @@
 ---
 title: USB Remote NDIS power management
 description: USB Remote NDIS power management
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # USB Remote NDIS power management

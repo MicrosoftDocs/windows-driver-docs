@@ -4,7 +4,7 @@ description: Restrictions on Memory Windows
 keywords:
 - PCMCIA WDK buses , memory windows
 - memory windows WDK PCMCIA bus
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Restrictions on Memory Windows

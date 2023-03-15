@@ -9,7 +9,7 @@ keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , error injection
 - PSHED plug-ins WDK WHEA , error injection
 - error injection WDK WHEA
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Participating in Error Injection

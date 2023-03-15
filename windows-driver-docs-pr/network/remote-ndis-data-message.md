@@ -1,7 +1,7 @@
 ---
 title: Remote NDIS Data Message
 description: Remote NDIS Data Message
-ms.date: 07/31/2017
+ms.date: 03/02/2023
 ---
 
 # Remote NDIS Data Message

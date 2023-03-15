@@ -3,7 +3,7 @@ title: Benefits of Remote NDIS
 description: Benefits of Remote NDIS
 keywords:
 - Remote NDIS WDK networking , advantages
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Benefits of Remote NDIS

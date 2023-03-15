@@ -1,7 +1,7 @@
 ---
 title: Connecting a KMDF Driver to GPIO I/O Pins
 description: How a kernel-mode driver framework (KMDF) driver for a peripheral device can obtain a description of the GPIO I/O resource. 
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Connecting a KMDF Driver to GPIO I/O Pins

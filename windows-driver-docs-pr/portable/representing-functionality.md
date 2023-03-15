@@ -1,7 +1,7 @@
 ---
 description: Representing Functionality
 title: Representing Functionality
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Representing Functionality

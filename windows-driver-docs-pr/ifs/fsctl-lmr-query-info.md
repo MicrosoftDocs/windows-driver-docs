@@ -10,7 +10,8 @@ api_location:
 - Ntifs.h
 api_type:
 - HeaderDef
-ms.date: 06/22/2022
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
 # FSCTL_LMR_QUERY_INFO control code
@@ -21,63 +22,50 @@ To perform this operation, call [**FltFsControlFile**](/windows-hardware/drivers
 
 ## Parameters
 
-### *FileObject*
+- **FileObject** [in]: Parameter for [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. A file object pointer for the remote volume. This parameter is required and cannot be **NULL**.
 
-Parameter for [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. A file object pointer for the remote volume. This parameter is required and cannot be **NULL**.
+- **FileHandle** [in]: Parameter for [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. A handle for the remote volume. This parameter is required and cannot be **NULL**.
 
-### *FileHandle*
+- **FsControlCode** [in]: A control code for the operation. Use **FSCTL_LMR_QUERY_INFO** for this operation.
 
-Parameter for [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. A handle for the remote volume. This parameter is required and cannot be **NULL**.
+- **InputBuffer** [in]: Pointer to a **LMR_QUERY_INFO_PARAM** structure that contains the type of information to be queried. The **LMR_QUERY_INFO_PARAM** structure is defined as follows:
 
-### *FsControlCode*
+  ``` syntax
+  typedef struct _LMR_QUERY_INFO_PARAM { 
+  
+      LMR_QUERY_INFO_CLASS Operation; 
+  
+  } LMR_QUERY_INFO_PARAM, *PLMR_QUERY_INFO_PARAM;
+  
+  ```
+  
+  where **Operation** is a **LMR_QUERY_INFO_CLASS** enumeration value that specifies the type of information to be queried. **LMR_QUERY_INFO_CLASS** is defined as follows:
+  
+  ``` syntax
+  typedef enum _LMR_QUERY_INFO_CLASS {
+      LMRQuerySessionInfo = 1,
+  } LMR_QUERY_INFO_CLASS, *PLMR_QUERY_INFO_CLASS;
+  ```
+  
+  | Value | Meaning |
+  | ----- | ------- |
+  | **LMRQuerySessionInfo** (1) | Query the session ID information for the file or directory. This information is returned in a **LMR_QUERY_SESSION_INFO** structure via *OutputBuffer*. |
+  
+  The **LMR_QUERY_SESSION_INFO** structure is defined as follows:
+  
+  ``` syntax
+  typedef struct _LMR_QUERY_SESSION_INFO { 
+  
+      UINT64 SessionId; 
+  
+  } LMR_QUERY_SESSION_INFO, *PLMR_QUERY_SESSION_INFO;
+  ```
 
-A control code for the operation. Use **FSCTL_LMR_QUERY_INFO** for this operation.
+- **InputBufferLength** [in]: The size, in bytes, of the buffer pointed to by **InputBuffer**. This value is ```sizeof(LMR_QUERY_INFO_PARAM)```.
 
-### *InputBuffer*
+- **OutputBuffer** [out]: A pointer to a buffer that receives the desired information about the file or directory. The structure of the information returned in the buffer is defined by the **Operation** specified in **InputBuffer**'s **LMR_QUERY_INFO_CLASS** structure.
 
-Pointer to a **LMR_QUERY_INFO_PARAM** structure that contains the type of information to be queried. The **LMR_QUERY_INFO_PARAM** structure is defined as follows:
-
-``` syntax
-typedef struct _LMR_QUERY_INFO_PARAM { 
-
-    LMR_QUERY_INFO_CLASS Operation; 
-
-} LMR_QUERY_INFO_PARAM, *PLMR_QUERY_INFO_PARAM;
-
-```
-
-where **Operation** is a **LMR_QUERY_INFO_CLASS** enumeration value that specifies the type of information to be queried. **LMR_QUERY_INFO_CLASS** is defined as follows:
-
-``` syntax
-typedef enum _LMR_QUERY_INFO_CLASS {
-    LMRQuerySessionInfo = 1,
-} LMR_QUERY_INFO_CLASS, *PLMR_QUERY_INFO_CLASS;
-```
-
-| Value | Meaning |
-| ----- | ------- |
-| **LMRQuerySessionInfo** (1) | Query the session ID information for the file or directory. This information is returned in a **LMR_QUERY_SESSION_INFO** structure via *OutputBuffer*. |
-
-The **LMR_QUERY_SESSION_INFO** structure is defined as follows:
-
-``` syntax
-typedef struct _LMR_QUERY_SESSION_INFO { 
-
-    UINT64 SessionId; 
-
-} LMR_QUERY_SESSION_INFO, *PLMR_QUERY_SESSION_INFO;
-```
-
-*InputBufferLength*  
-The size, in bytes, of the buffer pointed to by *InputBuffer*. This value is ```sizeof(LMR_QUERY_INFO_PARAM)```.
-
-### *OutputBuffer*
-
- A pointer to a buffer that receives the desired information about the file or directory. The structure of the information returned in the buffer is defined by the **Operation** specified in *InputBuffer*'s **LMR_QUERY_INFO_CLASS** structure.
-
-### *OutputBufferLength*
-
-The size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter.
+- **OutputBufferLength** [out]: The size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter.
 
 ## Status block
 
@@ -85,21 +73,8 @@ The size, in bytes, of the buffer pointed to by the *OutputBuffer* parameter.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Header</p></td>
-<td align="left">Ntifs.h (include Ntifs.h)</td>
-<tr class="even">
-<td align="left"><p>Minimum supported client</p></td>
-<td align="left">Windows 10 version 1809, and Windows 10 version 2004 and above versions </td>
-<tr class="odd">
-<td align="left"><p>Minimum supported server</p></td>
-<td align="left">Windows Server 2019</td>
-</tr>
-</tbody>
-</table>
+| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Minimum supported client | Windows 10 version 1809, and Windows 10 version 2004 and above versions |
+| Minimum supported server | Windows Server 2019 |
+| Header | *Ntifs.h* (include *Ntifs.h*) |

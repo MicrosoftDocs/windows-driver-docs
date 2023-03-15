@@ -2,7 +2,7 @@
 title: WDI_TLV_BAND_CHANNEL
 ms.topic: reference
 description: WDI_TLV_BAND_CHANNEL is a TLV that contains the channels to scan for a specified band.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_BAND_CHANNEL Network Drivers Starting with Windows Vista
 ---

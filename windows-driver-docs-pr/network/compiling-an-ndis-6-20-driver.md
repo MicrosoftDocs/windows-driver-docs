@@ -4,7 +4,7 @@ description: This section explains how to compile an NDIS 6.20 driver
 keywords:
 - NDIS 6.20 WDK , compiling a driver
 - compiling an NDIS 6.20 driver WDK
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Compiling an NDIS 6.20 Driver

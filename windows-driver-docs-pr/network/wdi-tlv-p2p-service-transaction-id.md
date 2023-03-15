@@ -2,7 +2,7 @@
 title: WDI_TLV_P2P_SERVICE_TRANSACTION_ID
 ms.topic: reference
 description: WDI_TLV_P2P_SERVICE_TRANSACTION_ID is a TLV that contains the Service transaction ID to be used for the ANQP query request.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_P2P_SERVICE_TRANSACTION_ID Network Drivers Starting with Windows Vista
 ---

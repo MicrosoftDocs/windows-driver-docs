@@ -4,7 +4,7 @@ description: Setting and Clearing the Communication Mode on a Parallel Port
 keywords:
 - parallel ports WDK , communication modes
 - communication modes WDK parallel ports
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Setting and Clearing the Communication Mode on a Parallel Port

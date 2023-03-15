@@ -4,7 +4,7 @@ description: Parallel Device Driver Design Guide
 ms.assetid: ef52c450-6073-4836-b3c8-bc0050328f97
 keywords:
 - ports WDK
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ms.topic: article
 ---
 

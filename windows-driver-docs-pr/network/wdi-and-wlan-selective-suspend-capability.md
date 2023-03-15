@@ -1,7 +1,7 @@
 ---
 title: WDI and WLAN Selective Suspend capability
 description: This section describes how to enable USB Selective Suspend support for WDI drivers
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # WDI and WLAN Selective Suspend capability

@@ -3,7 +3,7 @@ title: Obtaining Information about a Parallel Device
 description: Obtaining Information about a Parallel Device
 keywords:
 - parallel devices WDK , obtaining information
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Obtaining Information about a Parallel Device

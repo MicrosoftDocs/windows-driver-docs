@@ -1,7 +1,7 @@
 ---
 title: Remote NDIS OIDs
 description: Remote NDIS OIDs
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Remote NDIS OIDs

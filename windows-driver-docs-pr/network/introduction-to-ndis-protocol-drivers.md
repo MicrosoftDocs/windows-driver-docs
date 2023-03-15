@@ -1,7 +1,7 @@
 ---
 title: Introduction to NDIS Protocol Drivers
 description: Introduction to NDIS Protocol Drivers
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Introduction to NDIS Protocol Drivers

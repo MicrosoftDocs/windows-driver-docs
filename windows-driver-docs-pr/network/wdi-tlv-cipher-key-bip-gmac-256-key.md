@@ -2,7 +2,7 @@
 title: WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY
 ms.topic: reference
 description: WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY is a TLV that contains GMAC 256 cipher algorithm key data for OID_WDI_SET_ADD_CIPHER_KEYS.
-ms.date: 05/07/2021
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY Network Drivers Starting with Windows 10, Version 2004
 ---

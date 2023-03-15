@@ -9,7 +9,7 @@ keywords:
 - variable-size data packets WDK IEEE 1394 bus
 - header elements WDK IEEE 1394 bus
 - buffers WDK IEEE 1394 bus
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Isochronous Talk Options for IEEE 1394 Devices

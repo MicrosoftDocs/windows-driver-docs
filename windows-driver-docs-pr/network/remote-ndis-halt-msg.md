@@ -1,7 +1,7 @@
 ---
 title: 'REMOTE_NDIS_HALT_MSG'
 description: 'This message is sent by the host to terminate the network connection.'
-ms.date: 07/31/2017
+ms.date: 03/02/2023
 ms.topic: reference
 ---
 

@@ -2,7 +2,7 @@
 title: NDIS_STATUS_WWAN_SMS_STATUS
 ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_SMS_STATUS notification to inform the MB Service about the following events The MB device's message store is full.A new SMS text message has arrived, with the new message corresponding to MessageIndex.Miniport drivers can also send unsolicited events with this notification.This notification uses the NDIS_WWAN_SMS_STATUS structure.
-ms.date: 08/08/2017
+ms.date: 03/02/2023
 keywords: 
  -NDIS_STATUS_WWAN_SMS_STATUS Network Drivers Starting with Windows Vista
 ---

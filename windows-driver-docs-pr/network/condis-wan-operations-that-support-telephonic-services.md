@@ -9,7 +9,7 @@ keywords:
 - telephonic services WDK WAN , about telephonic services
 - WAN miniport drivers WDK networking , telephonic services
 - TAPI WDK networking
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # CoNDIS WAN Operations that Support Telephonic Services

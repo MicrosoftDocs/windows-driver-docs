@@ -4,6 +4,7 @@ description: MB hang detection
 keywords:
 - MB hang detection, Mobile Broadband hang detection, Mobile Broadband miniport driver hang detection
 ms.date: 08/09/2018
+ms.custom: UpdateFrequency3
 ---
 
 # MB hang detection

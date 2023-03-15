@@ -1,6 +1,6 @@
 ---
 title: FSCTL_IS_VOLUME_DIRTY control code
-description: The FSCTL\_IS\_VOLUME\_DIRTY control code determines whether the specified volume is dirty.
+description: The FSCTL_IS_VOLUME_DIRTY control code determines whether the specified volume is dirty.
 keywords: ["FSCTL_IS_VOLUME_DIRTY control code Installable File System Drivers"]
 topic_type:
 - apiref
@@ -10,134 +10,65 @@ api_location:
 - ntifs.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
-# FSCTL\_IS\_VOLUME\_DIRTY control code
+# FSCTL_IS_VOLUME_DIRTY control code
 
+The **FSCTL_IS_VOLUME_DIRTY** control code determines whether the specified volume is dirty.
 
-The **FSCTL\_IS\_VOLUME\_DIRTY** control code determines whether the specified volume is dirty.
-
-If the volume information file is corrupted, NTFS will return STATUS\_FILE\_CORRUPT\_ERROR.
+If the volume information file is corrupted, NTFS will return STATUS_FILE_CORRUPT_ERROR.
 
 To perform this operation, minifilter drivers call [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) with the following parameters, and file systems, redirectors, and legacy file system filter drivers call [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) with the following parameters.
 
-**Parameters**
+## Parameters
 
-<a href="" id="fileobject"></a>*FileObject*  
-[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. File object pointer for the volume. This parameter must represent a user volume open of a mounted file system volume. This parameter is required and cannot be **NULL**.
+- **FileObject** [in]: [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. File object pointer for the volume. This parameter must represent a user volume open of a mounted file system volume. This parameter is required and cannot be **NULL**.
 
-<a href="" id="filehandle"></a>*FileHandle*  
-[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. Handle for the volume. This parameter must be a handle for a user volume open of a mounted file system volume. This parameter is required and cannot be **NULL**.
+- **FileHandle** [in]: [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. Handle for the volume. This parameter must be a handle for a user volume open of a mounted file system volume. This parameter is required and cannot be **NULL**.
 
-<a href="" id="fscontrolcode"></a>*FsControlCode*  
-Control code for the operation. Use FSCTL\_IS\_VOLUME\_DIRTY for this operation.
+- **FsControlCode** [in]: Control code for the operation. Use FSCTL_IS_VOLUME_DIRTY for this operation.
 
-<a href="" id="inputbuffer"></a>*InputBuffer*  
-Not used with this operation; set to **NULL**.
+- **InputBuffer** [in]: Not used with this operation; set to **NULL**.
 
-<a href="" id="inputbufferlength"></a>*InputBufferLength*  
-Not used with this operation; set to zero.
+- **InputBufferLength** [in]: Not used with this operation; set to zero.
 
-<a href="" id="outputbuffer"></a>*OutputBuffer*  
-Pointer to a caller-allocated, 32-bit-aligned buffer that receives a ULONG bitmask of flags that indicate whether the volume is currently dirty. One or more of the flags in the following table can be set.
+- **OutputBuffer** [out]: Pointer to a caller-allocated, 32-bit-aligned buffer that receives a ULONG bitmask of flags that indicate whether the volume is currently dirty. One or more of the flags in the following table can be set.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Value</th>
-<th align="left">Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>VOLUME_IS_DIRTY</p></td>
-<td align="left"><p>The volume is dirty.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>VOLUME_UPGRADE_SCHEDULED</p></td>
-<td align="left"><p>This value is not currently used.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>All other values</p></td>
-<td align="left"><p>Reserved for future use.</p></td>
-</tr>
-</tbody>
-</table>
+  | Value | Meaning |
+  | ----- | ------- |
+  | VOLUME_IS_DIRTY | The volume is dirty. |
+  | VOLUME_UPGRADE_SCHEDULED | This value is not currently used. |
+  | All other values | Reserved for future use. |
 
- 
-
-<a href="" id="outputbufferlength"></a>*OutputBufferLength*  
-Size, in bytes, of the buffer that is pointed to by the *OutputBuffer* parameter. This size must be at least sizeof(ULONG).
+- **OutputBufferLength** [out]: Size, in bytes, of the buffer that is pointed to by the *OutputBuffer* parameter. This size must be at least sizeof(ULONG).
 
 ## Status block
 
-[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values:
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS_SUCCESS if the operation succeeds. Otherwise, the appropriate function might return one of the following NTSTATUS values:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Term</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>STATUS_INSUFFICIENT_RESOURCES</strong></p></td>
-<td align="left"><p>The file system encountered a pool allocation failure. This is an error code.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>STATUS_INVALID_PARAMETER</strong></p></td>
-<td align="left"><p>The buffer that the <em>OutputBuffer</em> parameter points to is <strong>NULL</strong>, or the <em>FileHandle</em> or <em>FileObject</em> parameter does not represent a user volume open. This is an error code.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>STATUS_INVALID_USER_BUFFER</strong></p></td>
-<td align="left"><p>The buffer that the <em>OutputBuffer</em> parameter points to is not large enough to hold the reparse point data, or the <em>FileHandle</em> or <em>FileObject</em> parameter does not represent a user volume open. This is an error code.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>STATUS_VOLUME_DISMOUNTED</strong></p></td>
-<td align="left"><p>The volume is not mounted. This is an error code.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Code | Meaning |
+| ---- | ------- |
+| STATUS_INSUFFICIENT_RESOURCES | The file system encountered a pool allocation failure. This is an error code. |
+| STATUS_INVALID_PARAMETER | The buffer that the **OutputBuffer** parameter points to is NULL, or the **FileHandle** or **FileObject** parameter does not represent a user volume open. This is an error code. |
+| STATUS_INVALID_USER_BUFFER | The buffer that the **OutputBuffer** parameter points to is not large enough to hold the reparse point data, or the **FileHandle** or **FileObject** parameter does not represent a user volume open. This is an error code. |
+| STATUS_VOLUME_DISMOUNTED | The volume is not mounted. This is an error code. |
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Header</p></td>
-<td align="left">Ntifs.h (include Ntifs.h or Fltkernel.h)</td>
-</tr>
-</tbody>
-</table>
+| Requirement type | Requirement |
+| ---------------- | ----------- |
+| Header | *Ntifs.h* (include *Ntifs.h* or *Fltkernel.h*) |
 
 ## See also
 
+[**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)
 
-[**FLT\_CALLBACK\_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)
-
-[**FLT\_PARAMETERS for IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](flt-parameters-for-irp-mj-file-system-control.md)
+[**FLT_PARAMETERS for IRP_MJ_FILE_SYSTEM_CONTROL**](flt-parameters-for-irp-mj-file-system-control.md)
 
 [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
 
-[**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](irp-mj-file-system-control.md)
+[**IRP_MJ_FILE_SYSTEM_CONTROL**](irp-mj-file-system-control.md)
 
 [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))
-
- 
-

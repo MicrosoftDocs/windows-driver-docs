@@ -9,7 +9,7 @@ keywords:
 - error record format WDK WHEA
 - error record header WDK WHEA
 - error record section WDK WHEA
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Error Records

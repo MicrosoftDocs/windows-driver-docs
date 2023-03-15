@@ -2,6 +2,7 @@
 title: MB SAR Platform Support
 description: MB SAR Platform Support
 ms.date: 03/01/2021
+ms.custom: UpdateFrequency3
 ---
 
 # MB SAR Platform Support

@@ -1,7 +1,7 @@
 ---
 description: Supporting Client Contexts
 title: Supporting Client Contexts
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Supporting Client Contexts

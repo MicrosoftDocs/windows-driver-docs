@@ -10,7 +10,8 @@ api_location:
 - rxcontx.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
 # \_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock function

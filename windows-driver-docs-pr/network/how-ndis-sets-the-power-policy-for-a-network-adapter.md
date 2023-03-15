@@ -11,7 +11,7 @@ keywords:
 - power management WDK NDIS miniport , power policy
 - user input WDK power management
 - power management WDK NDIS miniport , user input
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # How NDIS Sets the Power Policy for a Network Adapter

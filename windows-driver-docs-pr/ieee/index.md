@@ -6,7 +6,7 @@ keywords:
 - IEEE 1394 WDK buses
 - buses WDK , IEEE 1394
 - 1394 WDK buses
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ms.topic: article
 ---
 

@@ -1,7 +1,7 @@
 ---
 description: Retrieving a list of Supported Resources
 title: Retrieving a list of Supported Resources
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Retrieving a list of Supported Resources

@@ -1,7 +1,7 @@
 ---
 description: Opening a Resource and Retrieving an IStream object
 title: Opening a Resource and Retrieving an IStream object
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Opening a Resource and Retrieving an IStream object

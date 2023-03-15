@@ -6,7 +6,7 @@ keywords:
 - 1394 WDK buses , bridges
 - bridges WDK IEEE 1394 bus
 - 1394 bridges WDK IEEE 1394 bus
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # 1394 Bridges

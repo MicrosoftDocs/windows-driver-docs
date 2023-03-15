@@ -1,7 +1,7 @@
 ---
 title: Obtaining a PCMCIA_INTERFACE_STANDARD Interface
 description: Obtaining a PCMCIA_INTERFACE_STANDARD Interface
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Obtaining a PCMCIA\_INTERFACE\_STANDARD Interface

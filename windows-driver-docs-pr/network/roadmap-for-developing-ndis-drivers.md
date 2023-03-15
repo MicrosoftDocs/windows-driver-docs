@@ -6,7 +6,7 @@ keywords:
 - NDIS WDK , drivers, developing
 - developing NDIS drivers WDK
 - Network Driver Interface Specification (NDIS) WDK
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Roadmap for Developing NDIS Drivers

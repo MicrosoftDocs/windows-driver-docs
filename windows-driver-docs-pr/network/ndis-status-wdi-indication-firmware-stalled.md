@@ -2,7 +2,7 @@
 title: NDIS_STATUS_WDI_INDICATION_FIRMWARE_STALLED
 ms.topic: reference
 description: NDIS_STATUS_WDI_INDICATION_FIRMWARE_STALLED is used to indicate that the firmware stalled.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - NDIS_STATUS_WDI_INDICATION_FIRMWARE_STALLED Network Drivers Starting with Windows Vista
 ---

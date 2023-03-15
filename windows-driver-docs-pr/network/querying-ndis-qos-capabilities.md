@@ -1,7 +1,7 @@
 ---
 title: Querying NDIS QoS Capabilities
 description: Querying NDIS QoS Capabilities
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # Querying NDIS QoS Capabilities

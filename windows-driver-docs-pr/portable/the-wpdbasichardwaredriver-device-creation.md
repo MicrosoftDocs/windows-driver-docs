@@ -1,7 +1,7 @@
 ---
 description: Creating the Sensor Devices
 title: Creating the Sensor Devices
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Creating the Sensor Devices

@@ -4,7 +4,7 @@ ms.topic: reference
 description: This topic describes the OID_CO_TAPI_TRANSLATE_NDIS_CALLPARAMS object identifier (OID).
 keywords:
 - OID_CO_TAPI_TRANSLATE_NDIS_CALLPARAMS
-ms.date: 11/03/2017
+ms.date: 03/02/2023
 ---
 
 # OID_CO_TAPI_TRANSLATE_NDIS_CALLPARAMS

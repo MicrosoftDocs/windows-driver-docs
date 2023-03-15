@@ -2,7 +2,7 @@
 title: WDI_TLV_P2P_INTERFACE_ADDRESS_LIST
 ms.topic: reference
 description: WDI_TLV_P2P_INTERFACE_ADDRESS_LIST is a TLV that contains an address list for a Wi-Fi Direct interface.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_P2P_INTERFACE_ADDRESS_LIST Network Drivers Starting with Windows Vista
 ---

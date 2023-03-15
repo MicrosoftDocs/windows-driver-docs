@@ -8,16 +8,10 @@ api_name:
 - FsRtlAllocatePool
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 03/13/2023
+ms.topic: reference
 ---
 
 # FsRtlAllocatePool
 
-
-
-
-
 The **FsRtlAllocatePool** routine is obsolete, but is exported to support existing driver binaries. Use [**FsRtlAllocatePoolWithTag**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlallocatepoolwithtag) instead.
-
- 
-

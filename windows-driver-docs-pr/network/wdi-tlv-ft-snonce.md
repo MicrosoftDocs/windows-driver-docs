@@ -2,7 +2,7 @@
 title: WDI_TLV_FT_SNONCE
 ms.topic: reference
 description: WDI_TLV_FT_SNONCE is an unused TLV.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_FT_SNONCE Network Drivers Starting with Windows Vista
 ---

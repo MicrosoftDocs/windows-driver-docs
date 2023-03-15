@@ -2,6 +2,7 @@
 title: MB Registration Operations
 description: MB Registration Operations
 ms.date: 04/20/2017
+ms.custom: UpdateFrequency3
 ---
 
 # MB Registration Operations

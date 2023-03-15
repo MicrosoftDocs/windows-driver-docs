@@ -2,7 +2,7 @@
 title: NDIS_STATUS_WWAN_PROVISIONED_CONTEXTS
 ms.topic: reference
 description: Miniport drivers use the NDIS_STATUS_WWAN_PROVISIONED_CONTEXTS notification to inform the MB Service about updates to the list of provisioned contexts as a result of a network update.
-ms.date: 08/08/2017
+ms.date: 03/02/2023
 keywords: 
  -NDIS_STATUS_WWAN_PROVISIONED_CONTEXTS Network Drivers Starting with Windows Vista
 ---

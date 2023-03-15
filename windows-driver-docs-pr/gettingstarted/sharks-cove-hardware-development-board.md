@@ -1,7 +1,7 @@
 ---
 title: Sharks Cove hardware development board
 description: Sharks Cove is a hardware development board that you can use to develop hardware and drivers for Windows.
-ms.date: 04/20/2017
+ms.date: 03/14/2023
 ---
 
 # Sharks Cove hardware development board
@@ -17,7 +17,7 @@ The Intel Sharks Cove board supports driver development for devices that use a v
 
 The instructions given here require that you are running Windows 10, Windows 8.1, or Windows 7. These instructions do not work if you are running Windows 8.
 
-If you are running Windows 7, you need to install [PowerShell 4.0](https://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0/rss.aspx) and the[Windows Assessment and Deployment Kit (ADK) for Windows 8.1 Update](/windows-hardware/get-started/adk-install). Then on the **Start** menu, go to **All Programs &gt; Windows Kits &gt; Windows ADK &gt; Deployment and Imaging Tools Environment**. Open this Command Prompt window as Administrator. Use this Command Prompt window when you enter the commands given in these instructions.
+If you are running Windows 7, you need to install [PowerShell 4.0](https://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0/rss.aspx) and the [Download and install the Windows ADK](/windows-hardware/get-started/adk-install). Then on the **Start** menu, go to **All Programs &gt; Windows Kits &gt; Windows ADK &gt; Deployment and Imaging Tools Environment**. Open this Command Prompt window as Administrator. Use this Command Prompt window when you enter the commands given in these instructions.
 
 ## Step 1: Get the board and related hardware
 
@@ -30,7 +30,7 @@ You will need this hardware:
 - USB network adapter
 - Monitor and HDMI cable (and possibly adapters)
 
-You can get a Sharks Cove board at [Mouser Electronics](https://www.mouser.com/ProductDetail/CircuitCo/999-0005112/?qs=%2Fha2pyFadujHMsjnM70kKGG23vMNVMdDa094WOKuFgB8eIBF6%252bBXww%3D%3D).
+You can get a Sharks Cove board at [RCS Components](https://www.rcscomponents.com/SharksCove%20by%20CircuitCo) or [Kynix](https://www.kynix.com/Parts/3944717/999-0005112.html).
 
 ## Step 2: Download kits and tools
 
@@ -66,7 +66,7 @@ If you intend to install the evaluation version, read this amendment to the lice
 
 If the use of this software is in support of the Hardware Developer Program the following terms shall apply:
 
-- You agree to the terms of the Microsoft Evaluation Software License Terms for Windows Embedded 8.1 Industry Pro (“Evaluation Software License Terms”) in its entirety except for:
+- You agree to the terms of the Microsoft Evaluation Software License Terms for Windows Embedded 8.1 Industry Pro ("Evaluation Software License Terms") in its entirety except for:
   - Section 1.b. (Demonstration Rights) of the Evaluation Software License Terms is amended in part, as:
         -   You may demonstrate or deliver for demonstration use to potential customers, a number reasonably necessary for demonstration purposes, Windows Embedded 8.1 Industry Pro devices developed by you through your use of the software ("Demonstration Device"). You may demonstrate and deliver Demonstration Devices to customers that are not under non-disclosure obligations.
   - All provisions in Section 1.b. that do not directly conflict with the amended section above, shall apply.

@@ -2,6 +2,7 @@
 title: Enabling, disabling, and updating VMMQ on a VPort
 description: After creating a VPort, an upper layer driver can enable, disable, or update the RSS parameters of the VPort. 
 ms.date: 02/28/2021
+ms:custom: UpdateFrequency3
 ---
 
 

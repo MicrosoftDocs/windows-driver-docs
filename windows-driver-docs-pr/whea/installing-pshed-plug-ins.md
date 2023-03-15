@@ -5,7 +5,7 @@ keywords:
 - PSHED plug-ins WDK WHEA , installing
 - platform-specific hardware error driver plug-ins WDK WHEA , installing
 - WHEA WDK , installing PSHED plug-ins
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Installing PSHED Plug-Ins

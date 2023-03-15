@@ -4,7 +4,7 @@ description: NDIS driver types
 keywords:
 - network drivers WDK , NDIS drivers
 - NDIS WDK , driver types supported
-ms.date: 11/26/2018
+ms.date: 03/02/2023
 ---
 
 # Overview of NDIS driver types

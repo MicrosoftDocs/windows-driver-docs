@@ -1,7 +1,7 @@
 ---
 title: USB Remote NDIS overview
 description: USB Remote NDIS overview
-ms.date: 04/20/2017
+ms.date: 03/02/2023
 ---
 
 # USB Remote NDIS overview

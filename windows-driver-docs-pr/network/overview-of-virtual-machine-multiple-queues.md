@@ -2,6 +2,7 @@
 title: Overview of Virtual Machine Multiple Queues (VMMQ)
 description: Overview of Virtual Machine Multiple Queues (VMMQ)
 ms.date: 02/28/2021
+ms:custom: UpdateFrequency3
 ---
 
 # Overview of Virtual Machine Multiple Queues (VMMQ)

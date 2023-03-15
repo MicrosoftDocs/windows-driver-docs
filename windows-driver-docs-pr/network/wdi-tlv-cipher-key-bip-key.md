@@ -2,7 +2,7 @@
 title: WDI_TLV_CIPHER_KEY_BIP_KEY
 ms.topic: reference
 description: WDI_TLV_CIPHER_KEY_BIP_KEY is a TLV that contains BIP cipher algorithm key data for OID_WDI_SET_ADD_CIPHER_KEYS.
-ms.date: 07/18/2017
+ms.date: 03/02/2023
 keywords:
  - WDI_TLV_CIPHER_KEY_BIP_KEY Network Drivers Starting with Windows Vista
 ---

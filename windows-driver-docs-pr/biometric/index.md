@@ -2,7 +2,7 @@
 title: Biometric Devices Design Guide
 description: Biometric Devices Design Guide
 ms.assetid: 78270890-4ea2-403e-bbd7-84a22581bbb7
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ms.topic: article
 ---
 

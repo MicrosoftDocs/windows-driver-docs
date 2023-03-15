@@ -6,7 +6,7 @@ keywords:
 - parallel ports WDK , device configurations
 - daisy chain devices WDK
 - parallel devices WDK , physical configurations
-ms.date: 04/20/2017
+ms.date: 03/03/2023
 ---
 
 # Physical Configuration of Devices Attached to a Parallel Port

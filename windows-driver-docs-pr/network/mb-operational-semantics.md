@@ -2,6 +2,7 @@
 title: MB Operational Semantics
 description: MB Operational Semantics
 ms.date: 04/20/2017
+ms.custom: UpdateFrequency3
 ---
 
 # MB Operational Semantics
