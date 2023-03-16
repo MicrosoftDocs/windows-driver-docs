@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1D9 HAL_IOMMU_INTERNAL_ERROR", "HAL_IOMMU_INTERNAL_ERROR
 ms.date: 01/14/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - HAL_IOMMU_INTERNAL_ERROR
 api_type:

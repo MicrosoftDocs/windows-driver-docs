@@ -4,6 +4,7 @@ description: DIF_SELECTCLASSDRIVERS
 keywords: ["DIF_SELECTCLASSDRIVERS Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_SELECTCLASSDRIVERS
 api_type:

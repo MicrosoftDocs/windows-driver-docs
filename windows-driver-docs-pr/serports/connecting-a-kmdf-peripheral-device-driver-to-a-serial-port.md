@@ -6,7 +6,6 @@ ms.date: 04/20/2017
 
 # Connecting a KMDF Peripheral Driver to a Serial Port
 
-
 The KMDF driver for a peripheral device on a SerCx2-managed serial port requires certain hardware resources to operate the device. Included in these resources is the information that the driver needs to open a logical connection to the serial port. Additional resources might include an interrupt, and one or more GPIO input or output pins.
 
 This driver implements a set of Plug and Play and power management event callback functions. To register these functions with KMDF, the driver's [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) event callback function calls the [**WdfDeviceInitSetPnpPowerEventCallbacks**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks) method. The framework calls the power management event callback functions to notify the driver of changes in the power state of the peripheral device. Included in these functions is the [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) function, which performs any operations that are needed to make the device accessible to the driver.
@@ -172,6 +171,3 @@ The preceding code example does the following:
 3.  The call to the **WdfIoTargetSendWriteSynchronously** method sends the write request to the peripheral device. The method returns synchronously, after the write operation completes or times out. If necessary, another driver thread can call [**WdfRequestCancelSentRequest**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcancelsentrequest) to cancel the request.
 
 In the **WdfIoTargetSendWriteSynchronously** call, the driver supplies a variable named `SerialRequest`, which is a handle to a framework request object that the driver previously created. After the **WdfIoTargetSendWriteSynchronously** call, the driver should typically call the [**WdfRequestReuse**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestreuse) method to prepare the framework request object to be used again.
-
- 
-

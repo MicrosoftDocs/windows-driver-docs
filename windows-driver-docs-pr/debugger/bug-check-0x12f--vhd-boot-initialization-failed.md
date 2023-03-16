@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x12F VHD_BOOT_INITIALIZATION_FAILED", "VHD_BOOT_INITIALIZ
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VHD_BOOT_INITIALIZATION_FAILED
 api_type:

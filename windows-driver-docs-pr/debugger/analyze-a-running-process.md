@@ -5,6 +5,7 @@ keywords: ["Analyze a Running Process Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Analyze a Running Process
 api_type:

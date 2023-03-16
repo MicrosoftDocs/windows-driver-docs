@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["IrqlKeSetEvent rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IrqlKeSetEvent
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xA4 CNSS_FILE_SYSTEM_FILTER", "CNSS_FILE_SYSTEM_FILTER"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CNSS_FILE_SYSTEM_FILTER
 api_type:

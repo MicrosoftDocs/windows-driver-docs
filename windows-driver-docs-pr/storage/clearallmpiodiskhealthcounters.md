@@ -4,6 +4,7 @@ description: The ClearAllMpioDiskHealthCounters method is used to clear all gath
 keywords: ["ClearAllMpioDiskHealthCounters function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ClearAllMpioDiskHealthCounters
 api_location:

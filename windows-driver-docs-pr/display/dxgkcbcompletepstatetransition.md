@@ -4,6 +4,7 @@ description: Learn about the DXGKCB\_COMPLETEPSTATETRANSITION callback function,
 keywords: ["DxgkCbCompletePStateTransition callback function Display Devices", "DXGKCB_COMPLETEPSTATETRANSITION"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DxgkCbCompletePStateTransition
 api_location:

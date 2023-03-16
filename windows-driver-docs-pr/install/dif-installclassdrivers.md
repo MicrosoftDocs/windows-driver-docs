@@ -4,6 +4,7 @@ description: DIF_INSTALLCLASSDRIVERS
 keywords: ["DIF_INSTALLCLASSDRIVERS Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_INSTALLCLASSDRIVERS
 api_type:

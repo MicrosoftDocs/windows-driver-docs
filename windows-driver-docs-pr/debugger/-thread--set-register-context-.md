@@ -5,6 +5,7 @@ keywords: ["Set Register Context (.thread) command", "context, Set Register Cont
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .thread (Set Register Context)
 api_type:

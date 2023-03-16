@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x5A CRITICAL_SERVICE_FAILED", "CRITICAL_SERVICE_FAILED"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CRITICAL_SERVICE_FAILED
 api_type:

@@ -4,6 +4,7 @@ description: A HardwareIds.scsi.ID section specifies the hardware IDs of the dev
 keywords: ["HardwareIds.scsi.ID Section of a TxtSetup.oem File Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - HardwareIds.scsi.ID Section of a TxtSetup.oem File
 api_type:

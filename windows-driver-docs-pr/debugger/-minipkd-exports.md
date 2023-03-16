@@ -5,6 +5,7 @@ keywords: ["minipkd.exports Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - minipkd.exports
 api_type:

@@ -5,6 +5,7 @@ keywords:
 - /Clear Switch Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - /Clear
 api_type:

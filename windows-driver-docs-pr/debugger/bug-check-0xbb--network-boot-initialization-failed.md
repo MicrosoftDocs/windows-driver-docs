@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xBB NETWORK_BOOT_INITIALIZATION_FAILED", "NETWORK_BOOT_IN
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - NETWORK_BOOT_INITIALIZATION_FAILED
 api_type:

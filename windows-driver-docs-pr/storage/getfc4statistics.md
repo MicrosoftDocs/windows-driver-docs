@@ -4,6 +4,7 @@ description: The GetFC4Statistics WMI method reports traffic statistics on a por
 keywords: ["GetFC4Statistics function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - GetFC4Statistics
 api_location:

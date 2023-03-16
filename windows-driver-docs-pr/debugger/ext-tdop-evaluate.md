@@ -4,6 +4,7 @@ description: The EXT\_TDOP\_EVALUATE sub-operation of the DEBUG\_REQUEST\_EXT\_T
 keywords: ["EXT_TDOP_EVALUATE Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EXT_TDOP_EVALUATE
 api_type:

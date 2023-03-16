@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["StorPortAllocatePool2 rule (storport)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - StorPortAllocatePool2
 api_type:

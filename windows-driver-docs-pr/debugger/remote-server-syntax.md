@@ -5,6 +5,7 @@ keywords: ["Remote Server Syntax Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Remote Server Syntax
 api_type:

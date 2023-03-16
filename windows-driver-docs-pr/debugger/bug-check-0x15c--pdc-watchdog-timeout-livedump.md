@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x15C PDC_WATCHDOG_TIMEOUT_LIVEDUMP", "PDC_WATCHDOG_TIMEOU
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PDC_WATCHDOG_TIMEOUT_LIVEDUMP
 api_type:

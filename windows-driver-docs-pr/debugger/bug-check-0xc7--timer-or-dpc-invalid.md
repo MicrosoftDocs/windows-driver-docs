@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xC7 TIMER_OR_DPC_INVALID", "TIMER_OR_DPC_INVALID"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TIMER_OR_DPC_INVALID
 api_type:

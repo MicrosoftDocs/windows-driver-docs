@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x4A IRQL_GT_ZERO_AT_SYSTEM_SERVICE", "IRQL_GT_ZERO_AT_SYS
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IRQL_GT_ZERO_AT_SYSTEM_SERVICE
 api_type:

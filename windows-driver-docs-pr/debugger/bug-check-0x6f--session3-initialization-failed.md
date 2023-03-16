@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x6F SESSION3_INITIALIZATION_FAILED", "SESSION3_INITIALIZA
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SESSION3_INITIALIZATION_FAILED
 api_type:

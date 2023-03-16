@@ -5,6 +5,7 @@ keywords:
 - Place File Syntax Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Place File Syntax
 api_type:

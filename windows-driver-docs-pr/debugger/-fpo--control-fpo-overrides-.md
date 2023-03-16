@@ -5,6 +5,7 @@ keywords: [".fpo (Control FPO Overrides) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .fpo (Control FPO Overrides)
 api_type:

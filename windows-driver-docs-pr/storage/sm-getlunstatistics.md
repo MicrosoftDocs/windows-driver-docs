@@ -4,6 +4,7 @@ description: The SMHBA\_GetLUNStatistics method returns traffic statistics for a
 keywords: ["SM_GetLUNStatistics function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SM_GetLUNStatistics
 api_location:

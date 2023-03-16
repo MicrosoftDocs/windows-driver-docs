@@ -4,6 +4,7 @@ description: The SM\_AddLink WMI method configures the WMI provider to inform th
 keywords: ["SM_AddLink function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SM_AddLink
 api_location:

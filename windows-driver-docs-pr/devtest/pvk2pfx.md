@@ -5,6 +5,7 @@ keywords:
 - Pvk2Pfx Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Pvk2Pfx
 api_type:

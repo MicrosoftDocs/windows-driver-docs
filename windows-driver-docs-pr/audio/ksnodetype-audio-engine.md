@@ -4,12 +4,14 @@ description: The KSNODETYPE\_AUDIO\_ENGINE audio endpoint is a new endpoint that
 keywords: ["KSNODETYPE_AUDIO_ENGINE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_AUDIO_ENGINE
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSNODETYPE\_AUDIO\_ENGINE
 

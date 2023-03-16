@@ -4,6 +4,7 @@ description: The CPixel ComputeSurfaceSize method determines the amount of memor
 keywords: ["ComputeSurfaceSize method Display Devices", "ComputeSurfaceSize method Display Devices , CPixel interface", "CPixel interface Display Devices , ComputeSurfaceSize method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CPixel.ComputeSurfaceSize
 api_location:

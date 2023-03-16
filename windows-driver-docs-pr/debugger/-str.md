@@ -5,6 +5,7 @@ keywords: ["strings", "ANSI_STRING structure", "str Windows Debugging"]
 ms.date: 09/12/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - str
 api_type:

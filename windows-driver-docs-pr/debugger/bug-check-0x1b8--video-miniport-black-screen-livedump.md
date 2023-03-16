@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1B8 VIDEO_MINIPORT_BLACK_SCREEN_LIVEDUMP", "VIDEO_MINIPO
 ms.date: 02/20/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VIDEO_MINIPORT_BLACK_SCREEN_LIVEDUMP
 api_type:

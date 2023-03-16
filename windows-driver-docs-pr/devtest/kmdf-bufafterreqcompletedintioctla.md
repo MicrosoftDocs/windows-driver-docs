@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["BufAfterReqCompletedIntIoctlA rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BufAfterReqCompletedIntIoctlA
 api_type:

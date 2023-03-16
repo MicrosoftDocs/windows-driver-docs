@@ -5,6 +5,7 @@ keywords:
 - DevCon Install Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DevCon Install
 api_type:

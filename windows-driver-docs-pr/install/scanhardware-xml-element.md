@@ -4,6 +4,7 @@ description: scanHardware XML Element
 keywords: ["scanHardware XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - scanHardware XML Element
 api_type:

@@ -4,6 +4,7 @@ description: The sample DXVA\_ProcAmpControlDeviceClass::ProcAmpControlBlt funct
 keywords: ["ProcAmpControlBlt method Display Devices", "ProcAmpControlBlt method Display Devices , DXVA_ProcAmpControlDeviceClass interface", "DXVA_ProcAmpControlDeviceClass interface Display Devices , ProcAmpControlBlt method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXVA_ProcAmpControlDeviceClass.ProcAmpControlBlt
 api_type:

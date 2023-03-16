@@ -4,6 +4,7 @@ description: DIF_PROPERTIES
 keywords: ["DIF_PROPERTIES Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_PROPERTIES
 api_type:

@@ -5,6 +5,7 @@ keywords:
 - BinPlace Command-Line Syntax Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BinPlace Command-Line Syntax
 api_type:

@@ -4,6 +4,7 @@ description: DIF_TROUBLESHOOTER
 keywords: ["DIF_TROUBLESHOOTER Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_TROUBLESHOOTER
 api_location:

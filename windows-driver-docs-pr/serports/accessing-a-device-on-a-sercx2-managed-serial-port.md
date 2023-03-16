@@ -6,7 +6,6 @@ ms.date: 01/20/2023
 
 # Accessing a Device on a SerCx2-Managed Serial Port
 
-
 SerCx2 and a serial controller driver jointly manage a serial port to which a peripheral device is permanently connected. To access a peripheral device on a SerCx2-managed serial port, your peripheral driver opens a logical connection to the serial port and obtains a file handle to represent this connection. Then the driver uses this handle to send I/O requests to the port.
 
 ## In this section

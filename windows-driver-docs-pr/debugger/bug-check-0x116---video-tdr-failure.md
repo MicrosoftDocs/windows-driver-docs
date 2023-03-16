@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x116 VIDEO_TDR_FAILURE","VIDEO_TDR_FAILURE", "VIDEO_TDR_E
 ms.date: 12/08/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VIDEO_TDR_FAILURE
 api_type:

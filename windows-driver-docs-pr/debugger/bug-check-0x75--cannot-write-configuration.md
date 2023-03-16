@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x75 CANNOT_WRITE_CONFIGURATION", "CANNOT_WRITE_CONFIGURAT
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CANNOT_WRITE_CONFIGURATION
 api_type:

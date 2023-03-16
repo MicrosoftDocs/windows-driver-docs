@@ -5,6 +5,7 @@ keywords:
 - INF CopyINF Directive Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF CopyINF directive
 api_type:

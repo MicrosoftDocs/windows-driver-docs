@@ -1,7 +1,7 @@
 ---
 title: Container IDs for eSATA Devices
 description: Container IDs for eSATA Devices
-ms.date: 04/20/2017
+ms.date: 03/15/2023
 ---
 
 # Container IDs for eSATA Devices
@@ -70,7 +70,7 @@ The ATA bus driver marks any device that is attached to the eSATA port as remova
 
  
 
-For more information about the SATA and eSATA interface, refer to the [Serial ATA Advanced Host Controller Interface (AHCI) 1.3 specification](https://go.microsoft.com/fwlink/p/?linkid=148284).
+For more information about the SATA and eSATA interface, refer to the [Serial ATA Advanced Host Controller Interface (AHCI) 1.3 specification](https://www.intel.com/content/www/us/en/io/serial-ata/serial-ata-ahci-spec-rev1-3-1.html).
 
  
 

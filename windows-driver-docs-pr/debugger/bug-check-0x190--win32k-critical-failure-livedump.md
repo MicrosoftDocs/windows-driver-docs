@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x190 WIN32K_CRITICAL_FAILURE_LIVEDUMP", "WIN32K_CRITICAL_
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIN32K_CRITICAL_FAILURE_LIVEDUMP
 api_type:

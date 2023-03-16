@@ -4,6 +4,7 @@ description: The FltReleaseResource routine releases a specified resource owned 
 keywords: ["FltReleaseResource routine Installable File System Drivers"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - FltReleaseResource
 api_location:

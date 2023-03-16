@@ -5,6 +5,7 @@ keywords: ["Display Task State Segment (.tss) command", "task state segment (TSS
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .tss (Display Task State Segment)
 api_type:

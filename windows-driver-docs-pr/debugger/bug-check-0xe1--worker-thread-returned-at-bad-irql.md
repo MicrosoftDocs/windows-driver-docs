@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xE1 WORKER_THREAD_RETURNED_AT_BAD_IRQL", "WORKER_THREAD_R
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WORKER_THREAD_RETURNED_AT_BAD_IRQL
 api_type:

@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["StorPortNotification2 rule (storport)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - StorPortNotification2
 api_type:

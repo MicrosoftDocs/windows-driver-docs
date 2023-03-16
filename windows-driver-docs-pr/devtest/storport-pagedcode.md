@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["PagedCode rule (storport)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PagedCode
 api_type:

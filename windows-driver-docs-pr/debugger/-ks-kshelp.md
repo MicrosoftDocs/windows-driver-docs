@@ -5,6 +5,7 @@ keywords: ["ks.kshelp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ks.kshelp
 api_type:

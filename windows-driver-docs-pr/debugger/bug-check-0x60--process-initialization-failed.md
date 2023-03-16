@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x60 PROCESS_INITIALIZATION_FAILED", "PROCESS_INITIALIZATI
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PROCESS_INITIALIZATION_FAILED
 api_type:

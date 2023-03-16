@@ -5,6 +5,7 @@ keywords: ["handle", "handle, handle extension", "handle Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - handle
 api_type:

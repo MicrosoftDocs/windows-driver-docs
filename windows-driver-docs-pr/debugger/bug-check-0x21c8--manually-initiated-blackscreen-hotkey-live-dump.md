@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x21C8 MANUALLY_INITIATED_BLACKSCREEN_HOTKEY_LIVE_DUMP", "
 ms.date: 11/01/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MANUALLY_INITIATED_BLACKSCREEN_HOTKEY_LIVE_DUMP
 api_type:

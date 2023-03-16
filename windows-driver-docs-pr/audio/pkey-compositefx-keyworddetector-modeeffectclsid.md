@@ -1,7 +1,8 @@
 ---
 title: PKEY\_CompositeFX\_KeywordDetector\_ModeEffectClsid
 description: In Windows 10 Version 1803 and later, the PKEY\_CompositeFX\_KeywordDetector\_ModeEffectClsid property key identifies the mode effect (MFX) supported by the driver for the keyword detector pin.
-ms.date: 11/15/2018
+ms.date: 03/06/2023
+ms.topic: reference
 ---
 
 # PKEY\_CompositeFX\_KeywordDetector\_ModeEffectClsid

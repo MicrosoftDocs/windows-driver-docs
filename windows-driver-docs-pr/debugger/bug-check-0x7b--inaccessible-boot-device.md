@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x7B INACCESSIBLE_BOOT_DEVICE", "INACCESSIBLE_BOOT_DEVICE"
 ms.date: 02/22/2023
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INACCESSIBLE_BOOT_DEVICE
 api_type:

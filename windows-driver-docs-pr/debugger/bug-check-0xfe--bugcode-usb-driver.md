@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xFE BUGCODE_USB_DRIVER", "BUGCODE_USB_DRIVER"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BUGCODE_USB_DRIVER
 api_type:

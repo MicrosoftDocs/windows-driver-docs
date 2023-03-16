@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xA3 ACPI_DRIVER_INTERNAL", "ACPI_DRIVER_INTERNAL"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ACPI_DRIVER_INTERNAL
 api_type:

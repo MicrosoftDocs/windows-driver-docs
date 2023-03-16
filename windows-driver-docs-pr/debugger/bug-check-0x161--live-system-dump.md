@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x161 LIVE_SYSTEM_DUMP", "LIVE_SYSTEM_DUMP"]
 ms.date: 01/30/2023
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - LIVE_SYSTEM_DUMP
 api_type:

@@ -5,6 +5,7 @@ keywords:
 - INF LogConfig Directive Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF LogConfig Directive
 api_type:

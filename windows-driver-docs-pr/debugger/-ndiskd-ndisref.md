@@ -5,6 +5,7 @@ keywords: ["ndiskd.ndisref Windows Debugging"]
 ms.date: 06/18/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ndiskd.ndisref
 api_type:

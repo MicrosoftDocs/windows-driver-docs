@@ -5,6 +5,7 @@ keywords: ["r (Registers) Windows Debugging"]
 ms.date: 07/11/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - r (Registers)
 api_type:

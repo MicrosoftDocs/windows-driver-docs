@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["MarkIrpPending2 rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MarkIrpPending2
 api_type:

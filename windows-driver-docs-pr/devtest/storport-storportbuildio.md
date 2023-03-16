@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["StorPortBuildIo rule (storport)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - StorPortBuildIo
 api_type:

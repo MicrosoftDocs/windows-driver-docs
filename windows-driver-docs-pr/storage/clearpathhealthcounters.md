@@ -4,6 +4,7 @@ description: The ClearPathHealthCounters method is used to clear all gathered MP
 keywords: ["ClearPathHealthCounters function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ClearPathHealthCounters
 api_location:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x3 INVALID_AFFINITY_SET", "INVALID_AFFINITY_SET"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INVALID_AFFINITY_SET
 api_type:

@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["ForwardedAtBadIrqlFsdAsync rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ForwardedAtBadIrqlFsdAsync
 api_type:

@@ -5,6 +5,7 @@ keywords:
 - INF RenFiles Directive Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF RenFiles Directive
 api_type:

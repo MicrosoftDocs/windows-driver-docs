@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xD1 DRIVER_IRQL_NOT_LESS_OR_EQUAL", "DRIVER_IRQL_NOT_LESS
 ms.date: 03/14/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_IRQL_NOT_LESS_OR_EQUAL
 api_type:

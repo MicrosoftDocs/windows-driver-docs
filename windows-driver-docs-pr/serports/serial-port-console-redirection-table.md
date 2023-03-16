@@ -86,4 +86,4 @@ This table must be located in system memory with other ACPI tables, and it must 
 | 6/5/2020  | 1.05 | Edited formatting |
 | 9/1/2020  | 1.06 | Edited formatting and updated link to DBG2 specification |
 | 2/17/2021 | 1.07 | Fixed incorrect description in Stop Bits field. Undo accidental removal of Flow Control field. Edited formatting. |
-| 10/7/2021 | 1.08 | Changed Table Revision to 3 and created field for UART Clock Frequency. Edited formatting. | 
+| 10/7/2021 | 1.08 | Changed Table Revision to 3 and created field for UART Clock Frequency. Edited formatting. |

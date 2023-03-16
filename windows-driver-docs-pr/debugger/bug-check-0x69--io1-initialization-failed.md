@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x69 IO1_INITIALIZATION_FAILED", "IO1_INITIALIZATION_FAILE
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IO1_INITIALIZATION_FAILED
 api_type:

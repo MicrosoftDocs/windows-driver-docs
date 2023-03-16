@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xD8 DRIVER_USED_EXCESSIVE_PTES", "DRIVER_USED_EXCESSIVE_P
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_USED_EXCESSIVE_PTES
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x11 THREAD_NOT_MUTEX_OWNER", "THREAD_NOT_MUTEX_OWNER"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - THREAD_NOT_MUTEX_OWNER
 api_type:

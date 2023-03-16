@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xC MAXIMUM_WAIT_OBJECTS_EXCEEDED", "MAXIMUM_WAIT_OBJECTS_
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MAXIMUM_WAIT_OBJECTS_EXCEEDED
 api_type:

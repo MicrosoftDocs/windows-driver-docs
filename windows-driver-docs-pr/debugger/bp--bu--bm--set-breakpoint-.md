@@ -5,6 +5,7 @@ keywords: ["bp, bu, bm (Set Breakpoint) Windows Debugging"]
 ms.date: 05/13/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - bp, bu, bm (Set Breakpoint)
 api_type:

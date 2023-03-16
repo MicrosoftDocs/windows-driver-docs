@@ -5,6 +5,7 @@ keywords: ["page table entry (PTE)", "PTE (page table entry)", "page directory e
 ms.date: 05/13/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - pte
 api_type:

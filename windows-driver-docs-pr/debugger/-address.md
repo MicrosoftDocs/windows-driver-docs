@@ -5,6 +5,7 @@ keywords: ["address Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - address
 api_type:

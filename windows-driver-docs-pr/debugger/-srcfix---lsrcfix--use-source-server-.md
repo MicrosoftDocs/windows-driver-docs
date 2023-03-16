@@ -5,6 +5,7 @@ keywords: [".srcfix, .lsrcfix (Use Source Server) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .srcfix, .lsrcfix (Use Source Server)
 api_type:

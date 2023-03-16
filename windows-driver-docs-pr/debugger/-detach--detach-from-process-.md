@@ -5,6 +5,7 @@ keywords: [".detach (Detach from Process) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .detach (Detach from Process)
 api_type:

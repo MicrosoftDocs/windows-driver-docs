@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["StorPortSpinLock rule (storport)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - StorPortSpinLock
 api_type:

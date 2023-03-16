@@ -2728,6 +2728,8 @@
       href: bug-check-0x1dc--dma-common-buffer-vector-error.md
     - name: "Bug Check 0x1DD: BUGCODE_MBBADAPTER_DRIVER"
       href: bug-check-0x1dd--bugcode-mbbadapter-driver.md      
+    - name: "Bug Check 0x1DE: BUGCODE_WIFIADAPTER_DRIVER"
+      href: bug-check-0x1de--bugcode-wifiadapter-driver.md      
     - name: "Bug Check 0x1E4: VIDEO_DXGKRNL_SYSMM_FATAL_ERROR"
       href: bug-check-0x1e4--video-dxgkrnl-sysmm-fatal-error.md      
     - name: "Bug Check 0x1E9: ILLEGAL_ATS_INITIALIZATION"

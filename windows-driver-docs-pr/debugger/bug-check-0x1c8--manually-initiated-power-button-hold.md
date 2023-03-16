@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1C8 MANUALLY_INITIATED_POWER_BUTTON_HOLD", "MANUALLY_INI
 ms.date: 03/09/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MANUALLY_INITIATED_POWER_BUTTON_HOLD
 api_type:

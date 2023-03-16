@@ -4,6 +4,7 @@ description: The ScsiReportLuns WMI method sends a SCSI report LUNs command to t
 keywords: ["ScsiReportLuns function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ScsiReportLuns
 api_location:

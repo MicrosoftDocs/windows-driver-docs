@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["IoAllocateComplete rule"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IoAllocateComplete
 api_type:

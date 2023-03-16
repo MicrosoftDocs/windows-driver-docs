@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x28 CORRUPT_ACCESS_TOKEN", "CORRUPT_ACCESS_TOKEN"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CORRUPT_ACCESS_TOKEN
 api_type:

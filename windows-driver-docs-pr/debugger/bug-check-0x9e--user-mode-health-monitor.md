@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x9E USER_MODE_HEALTH_MONITOR", "USER_MODE_HEALTH_MONITOR"
 ms.date: 12/22/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - USER_MODE_HEALTH_MONITOR
 api_type:

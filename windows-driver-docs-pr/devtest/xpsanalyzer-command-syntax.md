@@ -5,6 +5,7 @@ keywords:
 - XpsAnalyzer Command Syntax Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - XpsAnalyzer Command Syntax
 api_type:

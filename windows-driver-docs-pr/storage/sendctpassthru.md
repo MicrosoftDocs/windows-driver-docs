@@ -4,6 +4,7 @@ description: The SendCTPassThru WMI method sends a common transport (CT) passthr
 keywords: ["SendCTPassThru function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SendCTPassThru
 api_location:

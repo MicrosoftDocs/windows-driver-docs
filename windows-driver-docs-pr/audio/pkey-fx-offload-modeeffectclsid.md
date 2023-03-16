@@ -1,8 +1,10 @@
 ---
 title: PKEY\_FX\_Offload\_ModeEffectClsid
 description: In Windows 10, version 1511 and later, the PKEY\_FX\_Offload\_ModeEffectClsid key identifies the mode effect (MFX) supported by the driver that will be loaded during offload playback.
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # PKEY\_FX\_Offload\_ModeEffectClsid
 

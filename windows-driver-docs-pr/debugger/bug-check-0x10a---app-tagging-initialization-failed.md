@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x10A APP_TAGGING_INITIALIZATION_FAILED", "APP_TAGGING_INI
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - APP_TAGGING_INITIALIZATION_FAILED
 api_type:

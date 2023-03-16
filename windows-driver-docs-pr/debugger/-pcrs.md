@@ -5,6 +5,7 @@ keywords: ["processor control register (PCR)", "PCR (processor control register)
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - pcrs
 api_type:

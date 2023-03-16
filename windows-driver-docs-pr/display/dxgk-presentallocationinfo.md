@@ -4,6 +4,7 @@ description: The DXGK\_PRESENTALLOCATIONINFO structure is reserved for system us
 keywords: ["DXGK_PRESENTALLOCATIONINFO structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGK_PRESENTALLOCATIONINFO
 api_location:

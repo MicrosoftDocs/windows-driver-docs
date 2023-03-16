@@ -4,6 +4,7 @@ description: Learn about the DXGKCB\_PRESENT\_DISPLAYONLY\_PROGRESS callback fun
 keywords: ["pfnPresentDisplayOnlyProgress callback function Display Devices", "DXGKCB_PRESENT_DISPLAYONLY_PROGRESS"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - pfnPresentDisplayOnlyProgress
 api_location:

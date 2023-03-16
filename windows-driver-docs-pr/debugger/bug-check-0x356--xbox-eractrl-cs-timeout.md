@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x356 XBOX_ERACTRL_CS_TIMEOUT", "XBOX_ERACTRL_CS_TIMEOUT"]
 ms.date: 07/02/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - XBOX_ERACTRL_CS_TIMEOUT 
 api_type:

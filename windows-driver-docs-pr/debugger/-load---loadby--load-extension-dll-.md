@@ -5,6 +5,7 @@ keywords: [".load (Load Extension DLL) command", "loadby (Load Extension DLL) co
 ms.date: 01/30/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .load, .loadby (Load Extension DLL)
 api_type:

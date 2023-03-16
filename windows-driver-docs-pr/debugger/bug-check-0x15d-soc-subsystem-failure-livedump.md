@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x15D SOC_SUBSYSTEM_FAILURE_LIVEDUMP", "Bug Check 0x14B SO
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Bug Check 0x14B SOC_SUBSYSTEM_FAILURE
 api_type:

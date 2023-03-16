@@ -3,9 +3,9 @@ title: blackboxbsd
 description: The blackboxbsd extension displays the secondary boot information for Boot Status Data (BSD).
 keywords: ["blackboxbsd Windows Debugging"]
 ms.date: 12/06/2018
-ms.topic: article
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - blackboxbsd
 api_type:

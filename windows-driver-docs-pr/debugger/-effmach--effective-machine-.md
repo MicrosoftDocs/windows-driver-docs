@@ -5,6 +5,7 @@ keywords: ["Effective Machine (.effmach) command", ".effmach (Effective Machine)
 ms.date: 01/24/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .effmach (Effective Machine)
 api_type:

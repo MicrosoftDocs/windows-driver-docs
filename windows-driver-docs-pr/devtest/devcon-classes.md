@@ -5,6 +5,7 @@ keywords:
 - DevCon Classes Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DevCon Classes
 api_type:

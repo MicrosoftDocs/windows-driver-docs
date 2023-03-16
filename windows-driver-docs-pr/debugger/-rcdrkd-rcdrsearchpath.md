@@ -5,6 +5,7 @@ keywords: ["rcdrkd.rcdrsearchpath Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - rcdrkd.rcdrsearchpath
 api_type:

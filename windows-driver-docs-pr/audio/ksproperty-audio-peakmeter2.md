@@ -4,6 +4,7 @@ description: Windows 8 introduces the KSPROPERTY\_AUDIO\_PEAKMETER2 property th
 keywords: ["KSPROPERTY_AUDIO_PEAKMETER2 Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_PEAKMETER2
 api_location:

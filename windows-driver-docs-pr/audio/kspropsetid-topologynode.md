@@ -2,8 +2,10 @@
 title: KSPROPSETID\_TopologyNode
 description: KSPROPSETID\_TopologyNode
 keywords: ["KSPROPSETID_TopologyNode"]
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # KSPROPSETID\_TopologyNode
 

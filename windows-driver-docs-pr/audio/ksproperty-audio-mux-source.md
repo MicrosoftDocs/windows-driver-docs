@@ -4,14 +4,16 @@ description: The KSPROPERTY\_AUDIO\_MUX\_SOURCE property specifies the source fo
 keywords: ["KSPROPERTY_AUDIO_MUX_SOURCE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_MUX_SOURCE
 api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSPROPERTY\_AUDIO\_MUX\_SOURCE
 

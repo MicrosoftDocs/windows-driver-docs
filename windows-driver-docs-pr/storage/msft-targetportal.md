@@ -7,6 +7,7 @@ keywords:
 - MSFT_TargetPortal class Windows Storage Management API , described
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MSFT_TargetPortal
 - MSFT_TargetPortal.IPv4Address
@@ -18,7 +19,6 @@ api_location:
 api_type:
 - Schema
 ms.author: windowssdkdev
-ms.topic: article
 ms.date: 05/31/2018
 ---
 

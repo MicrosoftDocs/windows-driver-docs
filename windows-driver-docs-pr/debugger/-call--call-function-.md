@@ -5,6 +5,7 @@ keywords: [".call (Call Function) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .call (Call Function)
 api_type:

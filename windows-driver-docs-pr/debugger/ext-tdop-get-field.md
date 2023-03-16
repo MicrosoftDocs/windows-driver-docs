@@ -4,6 +4,7 @@ description: The EXT\_TDOP\_GET\_FIELD sub-operation of the DEBUG\_REQUEST\_EXT\
 keywords: ["EXT_TDOP_GET_FIELD Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EXT_TDOP_GET_FIELD
 api_type:

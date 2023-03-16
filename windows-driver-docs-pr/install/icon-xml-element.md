@@ -4,6 +4,7 @@ description: icon XML Element
 keywords: ["icon XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - icon XML Element
 api_type:

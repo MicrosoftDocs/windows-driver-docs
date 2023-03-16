@@ -5,6 +5,7 @@ keywords:
 - DevCon SetHwID Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DevCon SetHwID
 api_type:

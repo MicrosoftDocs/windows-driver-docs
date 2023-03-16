@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x106 AGP_ILLEGALLY_REPROGRAMMED", "AGP_ILLEGALLY_REPROGRA
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - AGP_ILLEGALLY_REPROGRAMMED
 api_type:

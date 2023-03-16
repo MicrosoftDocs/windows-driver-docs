@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xAD VIDEO_DRIVER_DEBUG_REPORT_REQUEST", "VIDEO_DRIVER_DEB
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VIDEO_DRIVER_DEBUG_REPORT_REQUEST
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x82 DFS_FILE_SYSTEM", "DFS_FILE_SYSTEM"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DFS_FILE_SYSTEM
 api_type:

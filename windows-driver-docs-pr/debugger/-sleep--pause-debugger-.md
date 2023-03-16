@@ -5,6 +5,7 @@ keywords: ["Pause Debugger (.sleep) command", "controlling the user-mode debugge
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .sleep (Pause Debugger)
 api_type:

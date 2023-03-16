@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["WithinCriticalRegion rule (storport)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WithinCriticalRegion
 api_type:

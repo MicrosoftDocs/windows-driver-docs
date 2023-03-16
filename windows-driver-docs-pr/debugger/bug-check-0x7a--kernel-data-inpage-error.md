@@ -5,6 +5,7 @@ keywords: ["Bug check 0x7A KERNEL_DATA_INPAGE_ERROR", "KERNEL_DATA_INPAGE_ERROR"
 ms.date: 02/24/2023
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KERNEL_DATA_INPAGE_ERROR
 api_type:

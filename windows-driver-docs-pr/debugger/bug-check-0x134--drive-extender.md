@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x134 DRIVE_EXTENDER", "DRIVE_EXTENDER"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVE_EXTENDER
 api_type:

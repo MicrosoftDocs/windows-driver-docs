@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xF0 STORAGE_MINIPORT_ERROR", "STORAGE_MINIPORT_ERROR"]
 ms.date: 01/24/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - STORAGE_MINIPORT_ERROR
 api_type:

@@ -4,6 +4,7 @@ description: The sample DXVA\_DeinterlaceBobDeviceClass::DeinterlaceCloseStream 
 keywords: ["DeinterlaceCloseStream method Display Devices", "DeinterlaceCloseStream method Display Devices , DXVA_DeinterlaceBobDeviceClass interface", "DXVA_DeinterlaceBobDeviceClass interface Display Devices , DeinterlaceCloseStream method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXVA_DeinterlaceBobDeviceClass.DeinterlaceCloseStream
 api_type:

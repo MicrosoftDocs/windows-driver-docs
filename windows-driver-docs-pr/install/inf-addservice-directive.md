@@ -5,6 +5,7 @@ keywords:
 - INF AddService Directive Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF AddService Directive
 api_type:

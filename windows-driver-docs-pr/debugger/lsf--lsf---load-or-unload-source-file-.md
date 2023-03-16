@@ -5,6 +5,7 @@ keywords: ["lsf, lsf- (Load or Unload Source File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - lsf, lsf- (Load or Unload Source File)
 api_type:

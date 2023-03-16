@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x12D VOLSNAP_OVERLAPPED_TABLE_ACCESS", "VOLSNAP_OVERLAPPE
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VOLSNAP_OVERLAPPED_TABLE_ACCESS
 api_type:

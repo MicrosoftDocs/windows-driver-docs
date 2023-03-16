@@ -5,6 +5,7 @@ keywords:
 - INF Manufacturer Section Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF Manufacturer Section
 api_type:

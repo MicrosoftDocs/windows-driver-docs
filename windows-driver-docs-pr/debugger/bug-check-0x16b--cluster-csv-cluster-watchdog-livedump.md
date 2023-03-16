@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x16B CLUSTER_CSV_CLUSTER_WATCHDOG_LIVEDUMP", "CLUSTER_CSV
 ms.date: 01/03/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CLUSTER_CSV_CLUSTER_WATCHDOG_LIVEDUMP
 api_type:

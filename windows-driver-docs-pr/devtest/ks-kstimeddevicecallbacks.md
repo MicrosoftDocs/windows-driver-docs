@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["KsTimedDeviceCallbacks rule ()"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KsTimedDeviceCallbacks
 api_type:

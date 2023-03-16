@@ -5,6 +5,7 @@ keywords:
 - INF DDInstall.Services Section Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF DDInstall.Services Section
 api_type:

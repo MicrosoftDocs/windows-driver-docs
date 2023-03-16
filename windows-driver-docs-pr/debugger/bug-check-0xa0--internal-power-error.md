@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xA0 INTERNAL_POWER_ERROR", "INTERNAL_POWER_ERROR"]
 ms.date: 12/09/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INTERNAL_POWER_ERROR
 api_type:

@@ -5,6 +5,7 @@ keywords:
 - INF DefaultInstall.Services Section Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF DefaultInstall.Services Section
 api_type:

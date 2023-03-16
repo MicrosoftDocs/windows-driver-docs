@@ -4,6 +4,7 @@ description: The ClearMpioDiskHealthCounters method is used to clear the gathere
 keywords: ["ClearMpioDiskHealthCounters function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ClearMpioDiskHealthCounters
 api_location:

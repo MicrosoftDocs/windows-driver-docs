@@ -5,6 +5,7 @@ keywords: ["Use JIT_DEBUG_INFO (.jdinfo) command ----- Appendix", "JIT_DEBUG_INF
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .jdinfo (Use JIT_DEBUG_INFO)
 api_type:

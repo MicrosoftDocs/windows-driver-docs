@@ -4,6 +4,7 @@ description: The CPixel ComputeMipVolumeOffset method determines the subvolume o
 keywords: ["ComputeMipVolumeOffset method Display Devices", "ComputeMipVolumeOffset method Display Devices , CPixel interface", "CPixel interface Display Devices , ComputeMipVolumeOffset method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CPixel.ComputeMipVolumeOffset
 api_location:

@@ -4,6 +4,7 @@ description: The sample DXVA\_DeinterlaceContainerDeviceClass::ProcAmpControlQue
 keywords: ["ProcAmpControlQueryCaps method Display Devices", "ProcAmpControlQueryCaps method Display Devices , DXVA_DeinterlaceContainerDeviceClass interface", "DXVA_DeinterlaceContainerDeviceClass interface Display Devices , ProcAmpControlQueryCaps method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXVA_DeinterlaceContainerDeviceClass.ProcAmpControlQueryCaps
 api_location:

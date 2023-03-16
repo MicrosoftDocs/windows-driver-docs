@@ -26,7 +26,7 @@ For more information about SerCx2, see [Using Version 2 of the Serial Framework 
 
 ## In this section
 
--   [Using Version 2 of the Serial Framework Extension (SerCx2)](using-version-2-of-the-serial-framework-extension.md)
+- [Using Version 2 of the Serial Framework Extension (SerCx2)](using-version-2-of-the-serial-framework-extension.md)
 - [Previous Versions of Windows - Serial Controller Drivers](serial-drivers-overview.md)
 - [Serial IRP major function codes](serial-irp-major-function-codes.md)
 - [Serial Port Console Redirection Table (SPCR)](serial-port-console-redirection-table.md)

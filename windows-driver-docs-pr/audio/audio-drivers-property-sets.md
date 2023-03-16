@@ -1,8 +1,10 @@
 ---
 title: Audio Drivers Property Sets
 description: Audio Drivers Property Sets
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # Audio Drivers Property Sets
 

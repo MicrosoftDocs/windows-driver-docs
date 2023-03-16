@@ -6,7 +6,6 @@ ms.date: 04/20/2017
 
 # Overview of SerCx2 I/O Transactions
 
-
 SerCx2 handles a read or write request from a client by issuing one or more I/O transactions to the serial controller driver. This driver treats each transaction as a self-contained I/O operation that transfers data between the serial controller and the data buffer in the request.
 
 System on a Chip (SoC) integrated circuits frequently include serial controllers (or UARTs) to enable high-speed serial communication with other integrated circuits that are soldered to the same printed circuit board. The processors on these SoCs can use programmed I/O (PIO) to directly transfer data to or from the memory-mapped data registers in these serial controllers. In addition, these SoCs typically provide advanced DMA hardware to move data between the serial controllers and memory.
@@ -15,12 +14,11 @@ PIO might be sufficient for short data transfers, but using PIO for longer trans
 
 ## Types of I/O transactions
 
-
 SerCx2 defines the following three general types of I/O transactions:
 
--   PIO
--   System DMA
--   Custom
+- PIO
+- System DMA
+- Custom
 
 All serial controller drivers must support I/O transactions that use PIO to transfer data. A serial controller driver might also support I/O transactions that use system DMA or a custom data transfer mechanism, depending on the capabilities of the serial controller and associated hardware. The driver can support either system DMA transactions or custom transactions, but not both.
 
@@ -38,12 +36,11 @@ SerCx2 can intelligently decide whether to use PIO or DMA to satisfy a read or w
 
 ## Breaking a read or write request into multiple transactions
 
-
 Some system DMA controllers might have limitations that require SerCx2 to break a longer read or write request into two or more I/O transactions. For example, if a system DMA controller requires DMA transfers to start and end on even byte boundaries in memory, but the data buffer in a read request starts and ends on odd byte boundaries, SerCx2 might use PIO to transfer the first and last bytes to the buffer, and use system DMA to transfer all the data between the first and last bytes. For this example, SerCx2 issues the following three I/O transactions to the serial controller driver in the order shown:
 
-1.  A PIO-receive transaction for the first byte.
-2.  A system-DMA-receive transaction for the in-between bytes.
-3.  A PIO-receive transaction for the last byte.
+1. A PIO-receive transaction for the first byte.
+2. A system-DMA-receive transaction for the in-between bytes.
+3. A PIO-receive transaction for the last byte.
 
 Similarly, if a custom data-transfer mechanism can start and end a custom-transmit transaction on an arbitrary byte boundary in memory, but the buffer size in a write request exceeds the maximum transfer length of a custom-transmit transaction, SerCx2 partitions the write request into two (or more) custom-transmit transactions, each of which does not exceed the maximum transfer length.
 
@@ -52,6 +49,3 @@ If SerCx2 needs to split a read or write request into two or more I/O transactio
 When the serial controller driver registers a set of callback functions to support system-DMA transactions or custom transactions, the driver supplies parameter values that describe the capabilities of the hardware that will be performing these transactions. For example, for system-DMA transactions, the parameters include the alignment requirements, and the minimum and maximum transfer lengths that the system DMA controller supports. SerCx2 uses these parameters to decide whether to process a read or write request as a PIO transaction or a system-DMA transaction, and whether to split the request into two or more I/O transactions.
 
 However, a serial controller might have special hardware capabilities that cannot adequately be described by the parameters that the serial controller driver supplies to SerCx2. Thus, the driver might have access to hardware-dependent information that enables the driver to make better decisions than SerCx2 about how to partition a read or write request into one or more I/O transactions. As an option, such a driver can implement [*EvtSerCx2SelectNextReceiveTransactionType*](/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_select_next_receive_transaction_type) and [*EvtSerCx2SelectNextTransmitTransactionType*](/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_select_next_transmit_transaction_type) event callback functions. SerCx2 calls these functions, if they are implemented, to let the driver decide what I/O transactions to use to satisfy a read or write request.
-
- 
-

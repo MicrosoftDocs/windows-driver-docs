@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x16A CLUSTER_CSV_VOLUME_REMOVAL_LIVEDUMP", "CLUSTER_CSV_V
 ms.date: 01/03/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CLUSTER_CSV_VOLUME_REMOVAL_LIVEDUMP
 api_type:

@@ -4,14 +4,16 @@ description: The KSPROPERTY\_SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE property creates 
 keywords: ["KSPROPERTY_SYSAUDIO_CREATE_VIRTUAL_SOURCE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_SYSAUDIO_CREATE_VIRTUAL_SOURCE
 api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSPROPERTY\_SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE
 

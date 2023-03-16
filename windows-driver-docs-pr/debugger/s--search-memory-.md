@@ -5,6 +5,7 @@ keywords: ["s (Search Memory) Windows Debugging"]
 ms.date: 02/21/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - s (Search Memory)
 api_type:

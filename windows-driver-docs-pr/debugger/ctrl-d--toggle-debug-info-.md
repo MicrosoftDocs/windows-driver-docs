@@ -5,6 +5,7 @@ keywords: ["CTRL+D (Toggle Debug Info) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CTRL+D (Toggle Debug Info)
 api_type:

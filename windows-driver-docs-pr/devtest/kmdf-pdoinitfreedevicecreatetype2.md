@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["PdoInitFreeDeviceCreateType2 rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PdoInitFreeDeviceCreateType2
 api_type:

@@ -5,6 +5,7 @@ keywords: [".lines (Toggle Source Line Support) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .lines (Toggle Source Line Support)
 api_type:

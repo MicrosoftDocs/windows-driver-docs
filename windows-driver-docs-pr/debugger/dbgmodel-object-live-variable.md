@@ -1,12 +1,17 @@
 ---
 title: Debugger Data Model - Live Variable Objects
 description: Collection of information about the variables which are live at that particular instruction and where they are located
-ms.date: 12/12/2018
+ms.date: 03/10/2023
+ms.topic: reference
 ---
-# Live Variable Objects 
+# Live Variable Objects
+
 ## Summary
+
 When operating with full symbolic information, each instruction contains a collection of information about the variables which are live at that particular instruction and where they are located.
+
 ## Object Properties
+
 |Name|Description|
 |--- |--- |
 |LocationKind|A string describing what kind of location the variable is stored in (e.g.: "Register", "RegisterRelative", etc...)|

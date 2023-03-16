@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x5 INVALID_PROCESS_ATTACH_ATTEMPT", "INVALID_PROCESS_ATTA
 ms.date: 09/04/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INVALID_PROCESS_ATTACH_ATTEMPT
 api_type:

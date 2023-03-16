@@ -5,6 +5,7 @@ keywords: ["Append Log File (.logappend) command", "log file, Append Log File (.
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .logappend (Append Log File)
 api_type:

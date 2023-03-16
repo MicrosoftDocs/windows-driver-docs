@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xCF TERMINAL_SERVER_DRIVER_MADE_INCORRECT_MEMORY_REFERENC
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TERMINAL_SERVER_DRIVER_MADE_INCORRECT_MEMORY_REFERENCE
 api_type:

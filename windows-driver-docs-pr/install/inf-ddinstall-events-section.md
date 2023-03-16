@@ -5,6 +5,7 @@ keywords:
 - INF DDInstall.Events Section Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF DDInstall.Events Section
 api_type:

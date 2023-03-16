@@ -5,6 +5,7 @@ keywords: ["vertarget (Show Target Computer Version) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - vertarget (Show Target Computer Version)
 api_type:

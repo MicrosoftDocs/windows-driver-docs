@@ -5,6 +5,7 @@ description: "Learn more about: OutputBufferAPI rule (kmdf)"
 keywords: ["OutputBufferAPI rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - OutputBufferAPI
 api_type:

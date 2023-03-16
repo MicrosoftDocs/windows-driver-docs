@@ -4,6 +4,7 @@ description: The DXGKARG\_MOVEPAGEDIRECTORY structure is reserved for system use
 keywords: ["_DXGKARG_MOVEPAGEDIRECTORY structure Display Devices", "DXGKARG_MOVEPAGEDIRECTORY structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGKARG_MOVEPAGEDIRECTORY
 api_location:

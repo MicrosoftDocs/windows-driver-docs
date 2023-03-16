@@ -4,6 +4,7 @@ description: The DxgkDdiCreateAllocation2 function is reserved for system use. D
 keywords: ["DxgkDdiCreateAllocation2 callback function Display Devices", "DXGKDDI_CREATEALLOCATION2"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DxgkDdiCreateAllocation2
 api_location:

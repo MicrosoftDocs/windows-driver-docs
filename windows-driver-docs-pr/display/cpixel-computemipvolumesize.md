@@ -4,6 +4,7 @@ description: The CPixel ComputeMipVolumeSize method determines the amount of mem
 keywords: ["ComputeMipVolumeSize method Display Devices", "ComputeMipVolumeSize method Display Devices , CPixel interface", "CPixel interface Display Devices , ComputeMipVolumeSize method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CPixel.ComputeMipVolumeSize
 api_location:

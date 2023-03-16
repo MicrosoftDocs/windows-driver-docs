@@ -4,6 +4,7 @@ description: The DsmSetLoadBalancePolicy method is used to set the DSM load bala
 keywords: ["DsmSetLoadBalancePolicy function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DsmSetLoadBalancePolicy
 api_location:

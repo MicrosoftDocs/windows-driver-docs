@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1AB UNWIND_ON_INVALID_STACK", "UNWIND_ON_INVALID_STACK"]
 ms.date: 07/29/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - UNWIND_ON_INVALID_STACK
 api_type:

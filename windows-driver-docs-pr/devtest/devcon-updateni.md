@@ -5,6 +5,7 @@ keywords:
 - DevCon UpdateNI Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DevCon UpdateNI
 api_type:

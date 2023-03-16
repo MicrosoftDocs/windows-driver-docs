@@ -4,6 +4,7 @@ description: The type options affect how the engine formats numbers and strings 
 ms.date: 12/07/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_TYPEOPTS_UNICODE_DISPLAY
 - DEBUG_TYPEOPTS_LONGSTATUS_DISPLAY

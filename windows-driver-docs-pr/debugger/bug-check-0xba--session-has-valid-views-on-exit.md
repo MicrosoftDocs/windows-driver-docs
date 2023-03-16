@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xBA SESSION_HAS_VALID_VIEWS_ON_EXIT", "SESSION_HAS_VALID_
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SESSION_HAS_VALID_VIEWS_ON_EXIT
 api_type:

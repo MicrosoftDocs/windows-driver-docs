@@ -4,6 +4,7 @@ description: promptIfDriverIsNotBetter XML Element
 keywords: ["promptIfDriverIsNotBetter XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - promptIfDriverIsNotBetter XML Element
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xFD DIRTY_NOWRITE_PAGES_CONGESTION", "DIRTY_NOWRITE_PAGES
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIRTY_NOWRITE_PAGES_CONGESTION
 api_type:

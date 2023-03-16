@@ -5,6 +5,7 @@ keywords: ["p (Step) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - p (Step)
 api_type:

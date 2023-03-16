@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x65 MEMORY1_INITIALIZATION_FAILED", "MEMORY1_INITIALIZATI
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MEMORY1_INITIALIZATION_FAILED
 api_type:

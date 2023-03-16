@@ -5,6 +5,7 @@ keywords: ["acl Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - acl
 api_type:

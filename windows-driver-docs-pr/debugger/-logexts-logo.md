@@ -5,6 +5,7 @@ keywords: ["logexts.logo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - logexts.logo
 api_type:

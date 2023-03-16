@@ -4,6 +4,7 @@ description: headerPath XML Element
 keywords: ["headerPath XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - headerPath XML Element
 api_type:

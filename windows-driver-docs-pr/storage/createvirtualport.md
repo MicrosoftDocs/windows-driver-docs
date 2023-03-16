@@ -4,6 +4,7 @@ description: The CreateVirtualPort method creates a virtual port with a specific
 keywords: ["CreateVirtualPort method Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CreateVirtualPort
 api_type:

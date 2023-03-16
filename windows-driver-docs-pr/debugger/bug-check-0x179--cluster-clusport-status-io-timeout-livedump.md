@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x179 CLUSTER_CLUSPORT_STATUS_IO_TIMEOUT_LIVEDUMP", "CLUST
 ms.date: 01/03/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CLUSTER_CLUSPORT_STATUS_IO_TIMEOUT_LIVEDUMP
 api_type:

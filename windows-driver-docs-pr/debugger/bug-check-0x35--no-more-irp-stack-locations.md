@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x35 NO_MORE_IRP_STACK_LOCATIONS", "NO_MORE_IRP_STACK_LOCA
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - NO_MORE_IRP_STACK_LOCATIONS
 api_type:

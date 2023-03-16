@@ -4,6 +4,7 @@ description: The SM\_RemovePersistentBinding method removes one or more persiste
 keywords: ["SM_RemovePersistentBinding function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SM_RemovePersistentBinding
 api_location:

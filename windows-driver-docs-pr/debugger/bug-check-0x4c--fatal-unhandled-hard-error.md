@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x4C FATAL_UNHANDLED_HARD_ERROR", "FATAL_UNHANDLED_HARD_ER
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - FATAL_UNHANDLED_HARD_ERROR
 api_type:

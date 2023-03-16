@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x33 UNEXPECTED_INITIALIZATION_CALL", "UNEXPECTED_INITIALI
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - UNEXPECTED_INITIALIZATION_CALL
 api_type:

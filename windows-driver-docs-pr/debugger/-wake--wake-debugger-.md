@@ -5,6 +5,7 @@ keywords: ["Wake Debugger (.wake) command", "controlling the user-mode debugger 
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .wake (Wake Debugger)
 api_type:

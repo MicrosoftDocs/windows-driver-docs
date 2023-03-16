@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1D7 EFS_FATAL_ERROR", "EFS_FATAL_ERROR"]
 ms.date: 01/22/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EFS_FATAL_ERROR
 api_type:

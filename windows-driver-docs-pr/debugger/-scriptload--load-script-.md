@@ -5,6 +5,7 @@ keywords: [".scriptload (Load Script) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .scriptload (Load Script)
 api_type:

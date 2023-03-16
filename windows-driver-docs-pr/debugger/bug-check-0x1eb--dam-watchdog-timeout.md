@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1EB DAM_WATCHDOG_TIMEOUT", "DAM_WATCHDOG_TIMEOUT"]
 ms.date: 04/07/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DAM_WATCHDOG_TIMEOUT
 api_type:

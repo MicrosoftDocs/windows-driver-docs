@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1F SHARED_RESOURCE_CONV_ERROR", "SHARED_RESOURCE_CONV_ER
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SHARED_RESOURCE_CONV_ERROR
 api_type:

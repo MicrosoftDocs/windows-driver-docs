@@ -5,6 +5,7 @@ keywords: [".expr (Choose Expression Evaluator) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .expr (Choose Expression Evaluator)
 api_type:

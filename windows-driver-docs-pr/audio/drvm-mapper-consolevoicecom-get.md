@@ -4,7 +4,8 @@ description: Learn more about the DRVM_MAPPER_CONSOLEVOICECOM_GET function.
 keywords:
 - mmddk/xxxMessage
 - xxxMessage
-ms.date: 10/27/2022
+ms.date: 03/06/2023
+ms.topic: reference
 ---
 
 # DRVM\_MAPPER\_CONSOLEVOICECOM\_GET function

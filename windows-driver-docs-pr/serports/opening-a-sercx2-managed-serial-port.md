@@ -6,13 +6,11 @@ ms.date: 04/20/2017
 
 # Opening a SerCx2-Managed Serial Port
 
-
 Starting with Windows 8.1, version 2 of the serial framework extension (SerCx2) works together with a serial controller driver to manage a serial port on a serial controller. If your peripheral driver controls a device on a serial port that is jointly managed by SerCx2 and a serial controller driver, your driver can open a logical connection to this port and then send I/O requests to the device through the port.
 
 A serial controller is a 16550 universal asynchronous receiver/transmitter (UART) or compatible device. For more information, see [Serial Controller Drivers Overview](serial-drivers-overview.md).
 
 ## In this section
-
 
 <table>
 <colgroup>
@@ -40,13 +38,3 @@ A serial controller is a 16550 universal asynchronous receiver/transmitter (UART
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-

@@ -5,6 +5,7 @@ keywords: ["bsc (Update Conditional Breakpoint) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - bsc (Update Conditional Breakpoint)
 api_type:

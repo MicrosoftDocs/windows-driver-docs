@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["SpNoWait rule (storport)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SpNoWait
 api_type:

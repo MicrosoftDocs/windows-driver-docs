@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1D8 UCMUCSI_FAILURE", "UCMUCSI_FAILURE"]
 ms.date: 01/11/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - UCMUCSI_FAILURE
 api_type:

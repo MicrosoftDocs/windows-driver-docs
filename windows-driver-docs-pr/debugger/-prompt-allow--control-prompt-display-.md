@@ -5,6 +5,7 @@ keywords: [".prompt_allow (Control Prompt Display) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .prompt_allow (Control Prompt Display)
 api_type:

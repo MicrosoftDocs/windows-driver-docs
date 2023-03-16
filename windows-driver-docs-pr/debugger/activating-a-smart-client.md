@@ -5,6 +5,7 @@ keywords: ["Activating a Smart Client Windows Debugging"]
 ms.date: 02/28/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Activating a Smart Client
 api_type:

@@ -4,14 +4,16 @@ description: The KSPROPERTY\_ONESHOT\_RECONNECT property is used to prompt the a
 keywords: ["KSPROPERTY_ONESHOT_RECONNECT Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_ONESHOT_RECONNECT
 api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSPROPERTY\_ONESHOT\_RECONNECT
 

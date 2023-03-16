@@ -5,6 +5,7 @@ keywords: [".wtitle (Set Window Title) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .wtitle (Set Window Title)
 api_type:

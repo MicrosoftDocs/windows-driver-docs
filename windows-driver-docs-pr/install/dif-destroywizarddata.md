@@ -4,6 +4,7 @@ description: DIF_DESTROYWIZARDDATA
 keywords: ["DIF_DESTROYWIZARDDATA Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_DESTROYWIZARDDATA
 api_type:

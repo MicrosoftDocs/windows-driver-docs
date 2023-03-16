@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1D1 TELEMETRY_ASSERTS_LIVEDUMP", "TELEMETRY_ASSERTS_LIVE
 ms.date: 04/19/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TELEMETRY_ASSERTS_LIVEDUMP
 api_type:

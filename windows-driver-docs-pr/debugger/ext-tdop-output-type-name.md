@@ -4,6 +4,7 @@ description: The EXT\_TDOP\_OUTPUT\_TYPE\_NAME sub-operation of the DEBUG\_REQUE
 keywords: ["EXT_TDOP_OUTPUT_TYPE_NAME Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EXT_TDOP_OUTPUT_TYPE_NAME
 api_type:

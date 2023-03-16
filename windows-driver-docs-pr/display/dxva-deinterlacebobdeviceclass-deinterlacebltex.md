@@ -4,6 +4,7 @@ description: The sample DeinterlaceBltEx function performs deinterlace or frame-
 keywords: ["DeinterlaceBltEx method Display Devices", "DeinterlaceBltEx method Display Devices , DXVA_DeinterlaceBobDeviceClass interface", "DXVA_DeinterlaceBobDeviceClass interface Display Devices , DeinterlaceBltEx method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXVA_DeinterlaceBobDeviceClass.DeinterlaceBltEx
 api_type:

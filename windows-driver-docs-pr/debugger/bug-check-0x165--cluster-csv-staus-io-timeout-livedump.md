@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x165 CLUSTER_CSV_STATUS_IO_TIMEOUT_LIVEDUMP", "CLUSTER_CS
 ms.date: 01/03/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CLUSTER_CSV_STATUS_IO_TIMEOUT_LIVEDUMP
 api_type:

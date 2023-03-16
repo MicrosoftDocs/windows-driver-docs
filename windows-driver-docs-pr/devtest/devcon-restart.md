@@ -5,6 +5,7 @@ keywords:
 - DevCon Restart Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DevCon Restart
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xDB DRIVER_CORRUPTED_SYSPTES", "DRIVER_CORRUPTED_SYSPTES"
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_CORRUPTED_SYSPTES
 api_type:

@@ -5,6 +5,7 @@ keywords: ["driver-locked pages", "lockedpages Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - lockedpages
 api_type:

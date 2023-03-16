@@ -4,6 +4,7 @@ description: The DXGKARG\_UPDATEPAGETABLEFLAGS structure is reserved for system 
 keywords: ["_DXGKARG_UPDATEPAGETABLEFLAGS structure Display Devices", "DXGKARG_UPDATEPAGETABLEFLAGS structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGKARG_UPDATEPAGETABLEFLAGS
 api_location:

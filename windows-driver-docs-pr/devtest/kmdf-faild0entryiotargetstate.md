@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["FailD0EntryIoTargetState rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - FailD0EntryIoTargetState
 api_type:

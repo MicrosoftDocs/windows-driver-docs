@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1A0 TTM_WATCHDOG_TIMEOUT", "TTM_WATCHDOG_TIMEOUT"]
 ms.date: 01/04/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TTM_WATCHDOG_TIMEOUT
 api_type:

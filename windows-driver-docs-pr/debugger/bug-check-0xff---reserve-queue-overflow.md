@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xFF RESERVE_QUEUE_OVERFLOW", "RESERVE_QUEUE_OVERFLOW"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - RESERVE_QUEUE_OVERFLOW
 api_type:

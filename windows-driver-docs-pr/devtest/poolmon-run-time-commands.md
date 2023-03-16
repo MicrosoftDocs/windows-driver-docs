@@ -5,6 +5,7 @@ keywords:
 - PoolMon Run-time Commands Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PoolMon Run-time Commands
 api_type:

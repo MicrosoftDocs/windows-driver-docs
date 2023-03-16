@@ -4,6 +4,7 @@ description: The suppressWizard XML element is an empty element that sets the su
 keywords: ["suppressWizard XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - suppressWizard XML Element
 api_type:

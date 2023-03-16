@@ -23,7 +23,5 @@ Use the following best practices to design your DPC routines:
 
 -   Use the performance analysis tools that are documented in the WDK to evaluate the execution times of DPC routines.
 
-For more information about performance analysis tools, see [Measuring System Resume Performance on Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=69964).
-
  
 

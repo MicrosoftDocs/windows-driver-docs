@@ -5,6 +5,7 @@ keywords: ["Restore Debugger State (.pop) command", ".pop (Restore Debugger Stat
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .pop (Restore Debugger State)
 api_type:

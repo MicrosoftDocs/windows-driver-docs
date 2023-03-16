@@ -4,6 +4,7 @@ description: The DXGK\_PDE structure is reserved for system use. Do not use it i
 keywords: ["_DXGK_PDE structure Display Devices", "DXGK_PDE structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGK_PDE
 api_location:

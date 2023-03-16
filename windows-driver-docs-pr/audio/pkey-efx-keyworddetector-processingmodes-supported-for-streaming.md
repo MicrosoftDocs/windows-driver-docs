@@ -1,8 +1,10 @@
 ---
 title: PKEY\_EFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming
 description: In Windows 10 and later, the PKEY\_EFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming property key identifies the end point keyword detector processing modes supported for streaming supported by the driver.
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # PKEY\_EFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming
 

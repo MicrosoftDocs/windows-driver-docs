@@ -4,6 +4,7 @@ description: KSPROPERTY\_RTAUDIO\_PRESENTATION\_POSITION returns stream presenta
 keywords: ["KSPROPERTY_RTAUDIO_PRESENTATION_POSITION Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_RTAUDIO_PRESENTATION_POSITION
 api_location:

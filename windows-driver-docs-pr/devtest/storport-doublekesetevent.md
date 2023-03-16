@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["DoubleKeSetEvent rule (storport)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DoubleKeSetEvent
 api_type:

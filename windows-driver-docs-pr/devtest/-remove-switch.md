@@ -5,6 +5,7 @@ keywords:
 - /Remove Switch Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - /Remove
 api_type:

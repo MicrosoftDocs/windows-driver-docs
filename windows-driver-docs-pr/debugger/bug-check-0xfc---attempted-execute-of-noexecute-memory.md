@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xFC ATTEMPTED_EXECUTE_OF_NOEXECUTE_MEMORY", "ATTEMPTED_EX
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ATTEMPTED_EXECUTE_OF_NOEXECUTE_MEMORY
 api_type:

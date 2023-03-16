@@ -5,6 +5,7 @@ keywords: ["gn, gN (Go with Exception Not Handled) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - gn, gN (Go with Exception Not Handled)
 api_type:

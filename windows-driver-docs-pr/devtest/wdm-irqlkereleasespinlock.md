@@ -5,6 +5,7 @@ ms.date: 07/21/2021
 keywords: ["IrqlKeReleaseSpinLock rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IrqlKeReleaseSpinLock
 api_type:

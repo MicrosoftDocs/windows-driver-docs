@@ -4,6 +4,7 @@ description: Learn about the DXGI\_DDI\_MULTIPLANE\_OVERLAY\_STEREO\_CAPS enumer
 keywords: ["DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS enumeration Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS
 api_location:

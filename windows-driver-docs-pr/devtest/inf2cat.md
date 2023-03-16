@@ -5,6 +5,7 @@ keywords:
 - Inf2Cat Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Inf2Cat
 api_type:

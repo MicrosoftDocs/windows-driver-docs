@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x7 INVALID_SOFTWARE_INTERRUPT", "INVALID_SOFTWARE_INTERRU
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INVALID_SOFTWARE_INTERRUPT
 api_type:

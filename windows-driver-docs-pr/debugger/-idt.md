@@ -5,6 +5,7 @@ keywords: ["ISR (interrupt service routine)", "IDT (interrupt dispatch table)", 
 ms.date: 05/13/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - idt
 api_type:

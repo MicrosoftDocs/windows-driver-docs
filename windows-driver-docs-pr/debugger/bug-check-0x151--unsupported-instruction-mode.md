@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x151 UNSUPPORTED_INSTRUCTION_MODE", "UNSUPPORTED_INSTRUCT
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - UNSUPPORTED_INSTRUCTION_MODE
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x113 VIDEO_DXGKRNL_FATAL_ERROR", "VIDEO_DXGKRNL_FATAL_ERR
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VIDEO_DXGKRNL_FATAL_ERROR
 api_type:

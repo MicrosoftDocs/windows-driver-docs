@@ -5,6 +5,7 @@ keywords: ["ppmidlepolicy Windows Debugging"]
 ms.date: 06/08/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ppmidlepolicy
 api_type:

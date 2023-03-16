@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xF8 RAMDISK_BOOT_INITIALIZATION_FAILED", "RAMDISK_BOOT_IN
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - RAMDISK_BOOT_INITIALIZATION_FAILED
 api_type:

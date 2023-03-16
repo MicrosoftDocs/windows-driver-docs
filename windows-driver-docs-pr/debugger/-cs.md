@@ -5,6 +5,7 @@ keywords: ["cs Windows Debugging"]
 ms.date: 11/15/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - cs
 api_type:

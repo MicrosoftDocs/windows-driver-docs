@@ -4,6 +4,7 @@ description: Learn about the D3DKMT\_PINDIRECTFLIPRESOURCES structure, which is 
 keywords: ["D3DKMT_PINDIRECTFLIPRESOURCES structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DKMT_PINDIRECTFLIPRESOURCES
 api_location:

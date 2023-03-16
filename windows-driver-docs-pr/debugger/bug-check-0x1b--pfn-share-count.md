@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1B PFN_SHARE_COUNT", "PFN_SHARE_COUNT"]
 ms.date: 09/14/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PFN_SHARE_COUNT
 api_type:

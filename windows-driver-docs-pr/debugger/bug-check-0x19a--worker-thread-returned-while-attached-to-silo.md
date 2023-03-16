@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x19A WORKER_THREAD_RETURNED_WHILE_ATTACHED_TO_SILO", "WOR
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WORKER_THREAD_RETURNED_WHILE_ATTACHED_TO_SILO
 api_type:

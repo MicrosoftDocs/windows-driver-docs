@@ -4,6 +4,7 @@ description: The DEBUG\_ATTACH\_*XXX* bit-flags described in this topic control 
 ms.date: 08/10/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_ATTACH_XXX
 api_location:

@@ -30,7 +30,6 @@ However, the peripheral driver might not know in advance how much data to expect
 
 ## Interval time-out details
 
-
 To set the time-out parameters for read and write requests, a peripheral driver can send an [**IOCTL\_SERIAL\_SET\_TIMEOUTS**](/windows-hardware/drivers/ddi/ntddser/ni-ntddser-ioctl_serial_set_timeouts) request to the serial port. Time-outs for reads are controlled by the **ReadIntervalTimeout**, **ReadTotalTimeoutMultiplier**, and **ReadTotalTimeoutConstant** parameter values in this request. **ReadIntervalTimeout** specifies the maximum time interval allowed between two consecutive bytes in a receive transaction. If **ReadTotalTimeoutMultiplier** and **ReadTotalTimeoutConstant** are both zero, and the serial controller's receive FIFO is empty when a read request is sent to the serial port, this request does not time out (and so remains pending in the SerCx2 I/O queue) until after the port receives at least one byte of new data. For more information, see [**SERIAL\_TIMEOUTS**](/windows-hardware/drivers/ddi/ntddser/ns-ntddser-_serial_timeouts).
 
 A serial port on a System on a Chip (SoC) integrated circuit might be able to receive data from a peripheral device at peak rates of several megabits per second or greater. The developer of the peripheral driver for this device might be tempted to set the interval time-out value (as specified by the **ReadIntervalTimeout** parameter) to a millisecond or less, but this value is unlikely to have the desired effect. That's because the accuracy of the timer that is used to detect interval time-outs is limited by the granularity of the system clock.
@@ -40,7 +39,6 @@ For example, if the system clock period is 15 milliseconds, and the driver sets 
 For more information about how timer accuracy depends on the system clock, see [Timer Accuracy](../kernel/timer-accuracy.md).
 
 ## Flow control details
-
 
 As a best practice, peripheral drivers that use SerCx2-managed serial ports should configure these ports to use hardware flow control to prevent the receive FIFO from overflowing. In the absence of a pending read request, SerCx2 provides no software buffering of receive data that exceeds the capacity of the receive FIFO. If this FIFO is allowed to overflow, data is lost.
 

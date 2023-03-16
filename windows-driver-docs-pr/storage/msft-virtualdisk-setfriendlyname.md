@@ -8,6 +8,7 @@ keywords:
 - MSFT_VirtualDisk class Windows Storage Management API , SetFriendlyName method
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MSFT_VirtualDisk.SetFriendlyName
 api_location:
@@ -15,7 +16,6 @@ api_location:
 api_type:
 - COM
 ms.author: windowssdkdev
-ms.topic: article
 ms.date: 05/31/2018
 ---
 

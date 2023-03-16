@@ -5,6 +5,7 @@ keywords: ["registers, floating-point register save area", "npx Windows Debuggin
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - npx
 api_type:

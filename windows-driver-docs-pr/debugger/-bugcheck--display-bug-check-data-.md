@@ -5,6 +5,7 @@ keywords: [".bugcheck (Display Bug Check Data) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .bugcheck (Display Bug Check Data)
 api_type:

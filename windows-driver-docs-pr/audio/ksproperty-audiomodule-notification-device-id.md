@@ -4,12 +4,14 @@ description: The KSPROPERTY\_AUDIOMODULE\_NOTIFICATION\_DEVICE\_ID retrieves the
 keywords: ["KSPROPERTY_AUDIOMODULE_NOTIFICATION_DEVICE_ID Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOMODULE_NOTIFICATION_DEVICE_ID
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSPROPERTY\_AUDIOMODULE\_NOTIFICATION\_DEVICE\_ID
 

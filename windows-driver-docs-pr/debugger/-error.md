@@ -5,6 +5,7 @@ keywords: ["error codes", "Win32 error codes", "WinSock error codes", "error Win
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - error
 api_type:

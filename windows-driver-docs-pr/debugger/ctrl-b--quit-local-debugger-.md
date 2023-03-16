@@ -5,6 +5,7 @@ keywords: ["CTRL+B (Quit Local Debugger) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CTRL+B (Quit Local Debugger)
 api_type:

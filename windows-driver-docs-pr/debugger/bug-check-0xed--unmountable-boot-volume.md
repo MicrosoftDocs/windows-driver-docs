@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xED UNMOUNTABLE_BOOT_VOLUME", "UNMOUNTABLE_BOOT_VOLUME"]
 ms.date: 06/26/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - UNMOUNTABLE_BOOT_VOLUME
 api_type:

@@ -4,6 +4,7 @@ description: DEBUG\_REQUEST\_SOURCE\_PATH\_HAS\_SOURCE\_SERVER
 keywords: ["DEBUG_REQUEST_SOURCE_PATH_HAS_SOURCE_SERVER Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_REQUEST_SOURCE_PATH_HAS_SOURCE_SERVER
 api_type:

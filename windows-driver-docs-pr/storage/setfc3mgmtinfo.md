@@ -4,6 +4,7 @@ description: The SetFC3MgmtInfo WMI method sets FC3 management information that 
 keywords: ["SetFC3MgmtInfo function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SetFC3MgmtInfo
 api_location:

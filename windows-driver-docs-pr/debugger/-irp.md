@@ -5,6 +5,7 @@ keywords: ["IRP", "IRP", "IO Request Packet", "irp Windows Debugging"]
 ms.date: 08/23/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - irp
 api_type:

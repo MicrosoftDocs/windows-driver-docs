@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1A4 DRIPS_SW_HW_DIVERGENCE_LIVEDUMP",  "DRIPS_SW_HW_DIVE
 ms.date: 05/25/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIPS_SW_HW_DIVERGENCE_LIVEDUMP
 api_type:

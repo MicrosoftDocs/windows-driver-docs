@@ -5,6 +5,7 @@ keywords: [DebugBaseEventCallbacks]
 ms.date: 01/10/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - debugbaseeventcallbacks
 api_type:

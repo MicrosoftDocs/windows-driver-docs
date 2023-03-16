@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xC1 SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION", "SPECIAL_PO
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION
 api_type:

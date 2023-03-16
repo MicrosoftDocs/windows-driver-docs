@@ -5,6 +5,7 @@ keywords:
 - Enhanced Storage Certificate Management Tool Command Syntax Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Enhanced
 api_type:

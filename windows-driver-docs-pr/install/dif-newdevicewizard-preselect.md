@@ -4,6 +4,7 @@ description: DIF_NEWDEVICEWIZARD_PRESELECT
 keywords: ["DIF_NEWDEVICEWIZARD_PRESELECT Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_NEWDEVICEWIZARD_PRESELECT
 api_location:

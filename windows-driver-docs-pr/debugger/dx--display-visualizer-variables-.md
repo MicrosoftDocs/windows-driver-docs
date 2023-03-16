@@ -5,6 +5,7 @@ keywords: ["dx (Display Debugger Object Model Expression) Windows Debugging"]
 ms.date: 05/28/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - dx (Display Debugger Object Model Expression)
 api_type:

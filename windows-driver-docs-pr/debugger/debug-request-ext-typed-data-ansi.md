@@ -4,6 +4,7 @@ description: DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI
 keywords: ["DEBUG_REQUEST_EXT_TYPED_DATA_ANSI Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_REQUEST_EXT_TYPED_DATA_ANSI
 api_type:

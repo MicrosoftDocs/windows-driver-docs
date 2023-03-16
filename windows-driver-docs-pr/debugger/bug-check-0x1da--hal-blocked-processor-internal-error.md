@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1DA HAL_BLOCKED_PROCESSOR_INTERNAL_ERROR", "HAL_BLOCKED_
 ms.date: 02/20/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - HAL_BLOCKED_PROCESSOR_INTERNAL_ERROR
 api_type:
