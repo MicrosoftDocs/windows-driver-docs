@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xB9 CHIPSET_DETECTED_ERROR", "CHIPSET_DETECTED_ERROR"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CHIPSET_DETECTED_ERROR
 api_type:

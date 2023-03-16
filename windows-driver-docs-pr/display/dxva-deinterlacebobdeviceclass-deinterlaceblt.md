@@ -4,6 +4,7 @@ description: The sample DeinterlaceBlt function performs deinterlace or frame-ra
 keywords: ["DeinterlaceBlt method Display Devices", "DeinterlaceBlt method Display Devices , DXVA_DeinterlaceBobDeviceClass interface", "DXVA_DeinterlaceBobDeviceClass interface Display Devices , DeinterlaceBlt method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXVA_DeinterlaceBobDeviceClass.DeinterlaceBlt
 api_type:

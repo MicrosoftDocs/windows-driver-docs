@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x121 DRIVER_VIOLATION", "DRIVER_VIOLATION"]
 ms.date: 10/08/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_VIOLATION
 api_type:

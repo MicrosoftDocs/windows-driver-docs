@@ -5,6 +5,7 @@ keywords: ["Unload Extension DLL (.unload) command", "extension commands ( comma
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .unload (Unload Extension DLL)
 api_type:

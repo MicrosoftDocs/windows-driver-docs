@@ -1,8 +1,10 @@
 ---
 title: KSPROPSETID\_TelephonyTopology
 description: The KSPROPSETID\_TelephonyTopology property set is used access endpoints associated with cellular audio routing as well as the cellular call volume.
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # KSPROPSETID\_TelephonyTopology
 

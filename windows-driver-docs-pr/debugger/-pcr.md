@@ -5,6 +5,7 @@ keywords: ["processor control region (PCR)", "pcr Windows Debugging"]
 ms.date: 10/07/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - pcr
 api_type:

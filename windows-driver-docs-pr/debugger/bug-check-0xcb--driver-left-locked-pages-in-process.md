@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xCB DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS", "DRIVER_LEFT_LO
 ms.date: 10/04/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS
 api_type:

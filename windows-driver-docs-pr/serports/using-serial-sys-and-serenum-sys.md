@@ -20,7 +20,7 @@ ms.date: 01/18/2023
 
 The following system components are available for use with serial controller devices that have hardware interfaces that are compatible with the 16550 universal asynchronous receiver-transmitter (UART):
 
--   Serial and Serenum drivers
+- Serial and Serenum drivers
 
     Serial.sys (Serial) is a system-supplied function driver for serial devices. You can also use Serial as a lower-level device filter driver for any type of Plug and Play device that requires a 16550 UART-compatible interface.
 
@@ -37,8 +37,6 @@ The following system components are available for use with serial controller dev
     - [Serial Driver Reference](/windows-hardware/drivers/ddi/_serports)
     - [Serenum Driver Reference](/windows-hardware/drivers/ddi/ntddser)
     - Data definitions in the Ntddser.h header file in the WDK.
-
-<!-- -->
 
 - Ports [device setup class](../install/overview-of-device-setup-classes.md)
 
@@ -63,4 +61,4 @@ These samples demonstrates serial drivers.
 - The [Serial](https://github.com/Microsoft/Windows-driver-samples/tree/main/serial/serial) sample builds a function driver for serial devices.
 - The [Serenum](https://github.com/Microsoft/Windows-driver-samples/tree/main/serial/serenum) sample provides Plug and Play functionality of a bus driver for an RS-232 port.
 - A simple virtual serial driver (ComPort) and a controller-less modem driver (FakeModem).
-    -   [The Virtual serial2 driver sample (KMDF)](https://github.com/Microsoft/Windows-driver-samples/tree/main/serial/VirtualSerial2)
+    - [The Virtual serial2 driver sample (KMDF)](https://github.com/Microsoft/Windows-driver-samples/tree/main/serial/VirtualSerial2)

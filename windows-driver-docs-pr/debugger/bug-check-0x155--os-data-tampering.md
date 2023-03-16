@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x155 OS_DATA_TAMPERING", "OS_DATA_TAMPERING"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - OS_DATA_TAMPERING
 api_type:

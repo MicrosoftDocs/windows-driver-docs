@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x16E ERESOURCE_INVALID_RELEASE", "ERESOURCE_INVALID_RELEA
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ERESOURCE_INVALID_RELEASE
 api_type:

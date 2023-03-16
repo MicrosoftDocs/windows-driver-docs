@@ -4,6 +4,7 @@ description: suppressAddRemovePrograms XML Element
 keywords: ["suppressAddRemovePrograms XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - suppressAddRemovePrograms XML Element
 api_type:

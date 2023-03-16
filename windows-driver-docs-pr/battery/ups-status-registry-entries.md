@@ -6,10 +6,6 @@ ms.date: 04/20/2017
 
 # UPS\\Status Registry Entries
 
-
-## <span id="ddk_ups_status_registry_entries_kg"></span><span id="DDK_UPS_STATUS_REGISTRY_ENTRIES_KG"></span>
-
-
 The following registry entries, under the **UPS**\\**Status** key, must be set by UPS minidrivers.
 
 ### <span id="BatteryCapacity"></span><span id="batterycapacity"></span><span id="BATTERYCAPACITY"></span>BatteryCapacity
@@ -63,9 +59,6 @@ The current status of the UPS batteries. Values are listed in the following tabl
 </tr>
 </tbody>
 </table>
-
- 
-
 <span id="Default_Value"></span><span id="default_value"></span><span id="DEFAULT_VALUE"></span>Default Value  
 0
 
@@ -106,9 +99,6 @@ The status of the communication path to the UPS. Values are listed in the follow
 </tr>
 </tbody>
 </table>
-
- 
-
 <span id="Default_Value"></span><span id="default_value"></span><span id="DEFAULT_VALUE"></span>Default Value  
 1
 
@@ -191,14 +181,8 @@ Reports the status of utility-supplied power into the UPS. Values are listed in 
 </tr>
 </tbody>
 </table>
-
- 
-
 <span id="Default_Value"></span><span id="default_value"></span><span id="DEFAULT_VALUE"></span>Default Value  
 0
-
- 
-
  
 
 

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xAC HAL_MEMORY_ALLOCATION", "HAL_MEMORY_ALLOCATION"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - HAL_MEMORY_ALLOCATION
 api_type:

@@ -4,6 +4,7 @@ description: DCICreatePrimary
 keywords: ["DCICreatePrimary Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DCICreatePrimary
 api_type:

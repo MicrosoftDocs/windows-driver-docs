@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1CA SYNTHETIC_WATCHDOG_TIMEOUT", "SYNTHETIC_WATCHDOG_TIM
 ms.date: 01/29/2021
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SYNTHETIC_WATCHDOG_TIMEOUT
 api_type:

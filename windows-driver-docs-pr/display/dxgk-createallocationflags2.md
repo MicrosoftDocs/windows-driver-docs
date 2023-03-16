@@ -4,6 +4,7 @@ description: The DXGK\_CREATEALLOCATIONFLAGS2 structure is reserved for system u
 keywords: ["_DXGK_CREATEALLOCATIONFLAGS2 structure Display Devices", "DXGK_CREATEALLOCATIONFLAGS2 structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGK_CREATEALLOCATIONFLAGS2
 api_location:

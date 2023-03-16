@@ -4,14 +4,16 @@ description: The KSPROPERTY\_AUDIOENGINE\_LOOPBACK\_PROTECTION property request 
 keywords: ["KSPROPERTY_AUDIOENGINE_LOOPBACK_PROTECTION Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOENGINE_LOOPBACK_PROTECTION
 api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSPROPERTY\_AUDIOENGINE\_LOOPBACK\_PROTECTION
 

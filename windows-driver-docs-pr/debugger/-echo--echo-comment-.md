@@ -5,6 +5,7 @@ keywords: [".echo (Echo Comment) Windows Debugging"]
 ms.date: 11/19/2021
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .echo (Echo Comment)
 api_type:

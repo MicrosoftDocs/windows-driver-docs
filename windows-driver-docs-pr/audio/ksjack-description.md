@@ -4,14 +4,16 @@ description: The KSJACK\_DESCRIPTION structure specifies the physical attributes
 keywords: ["KSJACK_DESCRIPTION structure Audio Devices", "PKSJACK_DESCRIPTION structure pointer Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSJACK_DESCRIPTION
 api_location:
 - ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSJACK\_DESCRIPTION structure
 

@@ -4,6 +4,7 @@ description: Learn about the D3DKMT\_MULTIPLANE\_OVERLAY\_YCbCr\_FLAGS enumerati
 keywords: ["D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAGS enumeration Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAGS
 api_location:

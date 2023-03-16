@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x123 CRYPTO_SELF_TEST_FAILURE", "CRYPTO_SELF_TEST_FAILURE
 ms.date: 01/30/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CRYPTO_SELF_TEST_FAILURE
 api_type:

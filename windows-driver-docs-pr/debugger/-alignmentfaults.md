@@ -5,6 +5,7 @@ keywords: ["alignmentfaults Windows Debugging"]
 ms.date: 12/17/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - alignmentfaults
 api_type:

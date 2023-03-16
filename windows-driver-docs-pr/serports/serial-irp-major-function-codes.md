@@ -6,6 +6,7 @@ ms.date: 10/17/2018
 ---
 
 # Serial IRP major function codes
+
 This topic documents the serial IRP major function codes.
 
 Header: Wdm.h (include Wdm.h or Ntddk.h)

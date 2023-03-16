@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1CD INVALID_CALLBACK_STACK_ADDRESS",  "INVALID_CALLBACK_
 ms.date: 05/23/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INVALID_CALLBACK_STACK_ADDRESS
 api_type:

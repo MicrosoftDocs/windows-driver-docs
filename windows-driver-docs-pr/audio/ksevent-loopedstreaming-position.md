@@ -4,14 +4,16 @@ description: The KSEVENT\_LOOPEDSTREAMING\_POSITION event indicates that the aud
 keywords: ["KSEVENT_LOOPEDSTREAMING_POSITION Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSEVENT_LOOPEDSTREAMING_POSITION
 api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSEVENT\_LOOPEDSTREAMING\_POSITION
 

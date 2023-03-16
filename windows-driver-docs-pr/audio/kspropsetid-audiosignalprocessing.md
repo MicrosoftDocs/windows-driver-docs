@@ -1,8 +1,10 @@
 ---
 title: KSPROPSETID\_AudioSignalProcessing
 description: The KSPROPSETID\_AudioSignalProcessing property set is used by the audio driver to retrieve the list of audio signal processing modes supported by a pin factory.
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # KSPROPSETID\_AudioSignalProcessing
 

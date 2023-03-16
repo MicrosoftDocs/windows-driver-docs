@@ -4,6 +4,7 @@ description: The EXT\_TDOP\_GET\_FIELD\_OFFSET sub-operation of the DEBUG\_REQUE
 keywords: ["EXT_TDOP_GET_FIELD_OFFSET Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EXT_TDOP_GET_FIELD_OFFSET
 api_type:

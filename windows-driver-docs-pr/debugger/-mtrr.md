@@ -5,6 +5,7 @@ keywords: ["MTRR register", "registers, MTRR register", "mtrr Windows Debugging"
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - mtrr
 api_type:

@@ -4,6 +4,7 @@ description: The EXT\_TDOP\_COPY sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED
 keywords: ["EXT_TDOP_COPY Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EXT_TDOP_COPY
 api_type:

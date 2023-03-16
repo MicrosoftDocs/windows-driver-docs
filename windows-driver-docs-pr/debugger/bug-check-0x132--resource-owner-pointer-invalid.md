@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x132 RESOURCE_OWNER_POINTER_INVALID", "RESOURCE_OWNER_POI
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - RESOURCE_OWNER_POINTER_INVALID
 api_type:

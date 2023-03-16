@@ -4,6 +4,7 @@ description: Learn about the D3DKMT\_MULTIPLANE\_OVERLAY\_ATTRIBUTES structure, 
 keywords: ["D3DKMT_MULTIPLANE_OVERLAY_ATTRIBUTES structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DKMT_MULTIPLANE_OVERLAY_ATTRIBUTES
 api_location:

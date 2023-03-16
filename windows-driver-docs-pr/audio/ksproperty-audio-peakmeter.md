@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIO\_PEAKMETER property retrieves the maximum aud
 keywords: ["KSPROPERTY_AUDIO_PEAKMETER Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_PEAKMETER
 api_location:

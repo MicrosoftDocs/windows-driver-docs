@@ -5,6 +5,7 @@ keywords: ["DbgRpc Command-Line Options Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DbgRpc Command-Line Options
 api_type:
@@ -12,7 +13,6 @@ api_type:
 ---
 
 # DbgRpc Command-Line Options
-
 
 The DbgRpc command line must always contain exactly one of the -l, -e, -t, -c, or -a switches. The options following these switches depend on the switch used. The -s, -p, and -r options can be used with any other options.
 

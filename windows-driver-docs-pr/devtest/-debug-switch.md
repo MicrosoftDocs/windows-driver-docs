@@ -5,6 +5,7 @@ keywords:
 - /Debug Switch Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - /Debug
 api_type:

@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["ZwRegistryOpen rule (storport)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ZwRegistryOpen
 api_type:

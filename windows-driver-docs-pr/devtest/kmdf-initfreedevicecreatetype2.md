@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["InitFreeDeviceCreateType2 rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - InitFreeDeviceCreateType2
 api_type:

@@ -5,6 +5,7 @@ keywords: ["(Search for Disassembly Pattern) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - (Search for Disassembly Pattern)
 api_type:

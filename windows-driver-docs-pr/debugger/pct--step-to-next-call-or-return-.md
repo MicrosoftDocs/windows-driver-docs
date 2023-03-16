@@ -5,6 +5,7 @@ keywords: ["pct (Step to Next Call or Return) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - pct (Step to Next Call or Return)
 api_type:

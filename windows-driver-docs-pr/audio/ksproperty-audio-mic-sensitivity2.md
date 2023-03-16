@@ -4,6 +4,7 @@ description: The KSPROPERTY_AUDIO_MIC_SENSITIVITY property specifies the microph
 keywords: ["KSPROPERTY_AUDIO_MIC_SENSITIVITY2 Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIO_MIC_SENSITIVITY2
 api_location:

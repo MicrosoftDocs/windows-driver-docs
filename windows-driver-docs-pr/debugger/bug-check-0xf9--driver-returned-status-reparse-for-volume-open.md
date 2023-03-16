@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xF9 DRIVER_RETURNED_STATUS_REPARSE_FOR_VOLUME_OPEN", "DRI
 ms.date: 07/21/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_RETURNED_STATUS_REPARSE_FOR_VOLUME_OPEN
 api_type:

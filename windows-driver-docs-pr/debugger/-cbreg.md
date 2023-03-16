@@ -5,6 +5,7 @@ keywords: ["CardBus", "ExCA registers", "cbreg Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - cbreg
 api_type:

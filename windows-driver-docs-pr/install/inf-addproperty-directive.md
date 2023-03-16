@@ -5,6 +5,7 @@ keywords:
 - INF AddProperty Directive Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF AddProperty Directive
 api_type:

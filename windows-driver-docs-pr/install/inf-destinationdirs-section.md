@@ -5,6 +5,7 @@ keywords:
 - INF DestinationDirs Section Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF DestinationDirs Section
 api_type:

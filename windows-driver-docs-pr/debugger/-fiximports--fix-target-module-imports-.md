@@ -5,6 +5,7 @@ keywords: ["Fix Target Module Imports (.fiximports) command", ".fiximports (Fix 
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .fiximports (Fix Target Module Imports)
 api_type:

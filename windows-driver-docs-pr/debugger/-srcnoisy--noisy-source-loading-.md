@@ -5,6 +5,7 @@ keywords: [".srcnoisy (Noisy Source Loading) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .srcnoisy (Noisy Source Loading)
 api_type:

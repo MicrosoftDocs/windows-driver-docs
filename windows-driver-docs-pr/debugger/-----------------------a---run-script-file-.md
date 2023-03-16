@@ -5,6 +5,7 @@ keywords: ["$ (Run Script File) command", "$$ (Run Script File) command", "$$ (R
 ms.date: 09/17/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - $ , $ , $$ , $$ , $$ a (Run Script File)
 api_type:

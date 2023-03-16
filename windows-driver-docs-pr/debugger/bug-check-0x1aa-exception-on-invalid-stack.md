@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1AA EXCEPTION_ON_INVALID_STACK", "EXCEPTION_ON_INVALID_S
 ms.date: 07/29/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EXCEPTION_ON_INVALID_STACK
 api_type:

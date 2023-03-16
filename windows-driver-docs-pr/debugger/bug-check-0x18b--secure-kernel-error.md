@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x18B SECURE_KERNEL_ERROR", "SECURE_KERNEL_ERROR"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SECURE_KERNEL_ERROR
 api_type:

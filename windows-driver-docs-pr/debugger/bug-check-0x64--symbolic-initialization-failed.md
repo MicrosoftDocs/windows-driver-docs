@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x64 SYMBOLIC_INITIALIZATION_FAILED", "SYMBOLIC_INITIALIZA
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SYMBOLIC_INITIALIZATION_FAILED
 api_type:

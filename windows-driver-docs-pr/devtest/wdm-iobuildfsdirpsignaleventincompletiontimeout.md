@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["IoBuildFsdIrpSignalEventInCompletionTimeout rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IoBuildFsdIrpSignalEventInCompletionTimeout
 api_type:

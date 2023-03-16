@@ -5,6 +5,7 @@ keywords: ["ob, ow, od (Output to Port) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ob, ow, od (Output to Port)
 api_type:

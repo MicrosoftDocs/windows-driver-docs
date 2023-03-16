@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x15F CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP", "CONNE
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP
 api_type:

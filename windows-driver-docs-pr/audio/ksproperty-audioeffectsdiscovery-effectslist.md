@@ -4,6 +4,7 @@ description: The KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST property specifi
 keywords: ["KSPROPERTY_AUDIOEFFECTSDISCOVERY_EFFECTSLIST Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOEFFECTSDISCOVERY_EFFECTSLIST
 api_location:

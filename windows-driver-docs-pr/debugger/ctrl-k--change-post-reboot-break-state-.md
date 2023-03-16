@@ -5,6 +5,7 @@ keywords: ["CTRL+K (Change Post-Reboot Break State) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CTRL+K (Change Post-Reboot Break State)
 api_type:

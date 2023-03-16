@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xAB SESSION_HAS_VALID_POOL_ON_EXIT", "SESSION_HAS_VALID_P
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SESSION_HAS_VALID_POOL_ON_EXIT
 api_type:

@@ -5,6 +5,7 @@ keywords: ["version (Show Debugger Version) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - version (Show Debugger Version)
 api_type:

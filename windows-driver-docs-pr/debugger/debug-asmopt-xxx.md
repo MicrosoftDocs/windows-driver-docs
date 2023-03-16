@@ -4,6 +4,7 @@ description: The DEBUG\_ASMOPT\_XXX constants affect how the debugger engine ass
 ms.date: 08/10/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_ASMOPT_XXX
 api_location:

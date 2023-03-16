@@ -5,6 +5,7 @@ keywords: [".exepath (Set Executable Path) Windows Debugging"]
 ms.date: 05/05/2021
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .exepath (Set Executable Path)
 api_type:

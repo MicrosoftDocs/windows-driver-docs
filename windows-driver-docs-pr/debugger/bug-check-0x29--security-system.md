@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x29 SECURITY_SYSTEM", "SECURITY_SYSTEM"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SECURITY_SYSTEM
 api_type:

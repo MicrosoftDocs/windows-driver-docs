@@ -5,6 +5,7 @@ keywords: ["Enable Branch Recording (.record_branches) command", ".record_branch
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .record_branches (Enable Branch Recording)
 api_type:

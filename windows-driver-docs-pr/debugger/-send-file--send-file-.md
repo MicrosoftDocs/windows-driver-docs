@@ -5,6 +5,7 @@ keywords: [".send_file (Send File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .send_file (Send File)
 api_type:

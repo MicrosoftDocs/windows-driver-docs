@@ -5,6 +5,7 @@ keywords:
 - CertMgr Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CertMgr
 api_type:

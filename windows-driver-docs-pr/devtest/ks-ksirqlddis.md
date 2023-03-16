@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["KsIrqlDDIs rule ()"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KsIrqlDDIs
 api_type:

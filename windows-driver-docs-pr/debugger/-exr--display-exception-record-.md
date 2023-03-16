@@ -5,6 +5,7 @@ keywords: ["Display Exception Record (.exr) command", "exception record", ".exr 
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .exr (Display Exception Record)
 api_type:

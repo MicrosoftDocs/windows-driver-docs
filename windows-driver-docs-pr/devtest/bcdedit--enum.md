@@ -5,6 +5,7 @@ ms.date: 09/24/2020
 keywords: ["BCDEdit /enum Driver Development Tools"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BCDEdit /enum
 api_type:

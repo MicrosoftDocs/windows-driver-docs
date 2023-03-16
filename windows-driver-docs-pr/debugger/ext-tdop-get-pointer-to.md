@@ -4,6 +4,7 @@ description: The EXT\_TDOP\_GET\_POINTER\_TO sub-operation of the DEBUG\_REQUEST
 keywords: ["EXT_TDOP_GET_POINTER_TO Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EXT_TDOP_GET_POINTER_TO
 api_type:

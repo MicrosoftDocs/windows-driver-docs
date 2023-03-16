@@ -5,6 +5,7 @@ keywords: [".catch Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .catch
 api_type:

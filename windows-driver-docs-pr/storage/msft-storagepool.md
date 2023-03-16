@@ -7,6 +7,7 @@ keywords:
 - MSFT_StoragePool class Windows Storage Management API , described
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MSFT_StoragePool
 - MSFT_StoragePool.FriendlyName
@@ -44,7 +45,6 @@ api_location:
 api_type:
 - Schema
 ms.author: windowssdkdev
-ms.topic: article
 ms.date: 05/31/2018
 ---
 

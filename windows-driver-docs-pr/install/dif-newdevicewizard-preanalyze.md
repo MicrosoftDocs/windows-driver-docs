@@ -4,6 +4,7 @@ description: DIF_NEWDEVICEWIZARD_PREANALYZE
 keywords: ["DIF_NEWDEVICEWIZARD_PREANALYZE Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_NEWDEVICEWIZARD_PREANALYZE
 api_location:

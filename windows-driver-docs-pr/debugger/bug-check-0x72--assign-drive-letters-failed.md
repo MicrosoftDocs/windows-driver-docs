@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x72 ASSIGN_DRIVE_LETTERS_FAILED", "ASSIGN_DRIVE_LETTERS_F
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ASSIGN_DRIVE_LETTERS_FAILED
 api_type:

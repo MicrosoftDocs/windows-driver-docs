@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x81 SPIN_LOCK_INIT_FAILURE", "SPIN_LOCK_INIT_FAILURE"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SPIN_LOCK_INIT_FAILURE
 api_type:

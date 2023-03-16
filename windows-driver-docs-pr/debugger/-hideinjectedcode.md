@@ -5,6 +5,7 @@ keywords: [".hideinjectedcode (Hide Injected Code) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .hideinjectedcode (Hide Injected Code)
 api_type:

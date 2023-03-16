@@ -4,6 +4,7 @@ description: A Files.HwComponent.ID section lists the files to be copied if the 
 keywords: ["Files.HwComponent.ID Section of a TxtSetup.oem File Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Files.HwComponent.ID Section of a TxtSetup.oem File
 api_type:

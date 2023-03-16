@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x126 NETIO_INVALID_POOL_CALLER", "NETIO_INVALID_POOL_CALL
 ms.date: 01/30/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - NETIO_INVALID_POOL_CALLER
 api_type:

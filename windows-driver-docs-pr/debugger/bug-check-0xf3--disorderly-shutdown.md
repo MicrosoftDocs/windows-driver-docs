@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xF3 DISORDERLY_SHUTDOWN", "DISORDERLY_SHUTDOWN"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DISORDERLY_SHUTDOWN
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Driver Verifier", "verifier Windows Debugging"]
 ms.date: 05/03/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - verifier
 api_type:

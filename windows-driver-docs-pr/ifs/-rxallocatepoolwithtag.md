@@ -4,6 +4,7 @@ description: \_RxAllocatePoolWithTag allocates memory from a pool with a four-by
 keywords: ["_RxAllocatePoolWithTag function Installable File System Drivers"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - _RxAllocatePoolWithTag
 api_location:

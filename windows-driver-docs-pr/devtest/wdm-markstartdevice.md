@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["MarkStartDevice rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MarkStartDevice
 api_type:

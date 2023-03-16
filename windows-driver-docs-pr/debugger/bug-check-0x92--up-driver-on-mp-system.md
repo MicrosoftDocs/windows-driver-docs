@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x92 UP_DRIVER_ON_MP_SYSTEM", "UP_DRIVER_ON_MP_SYSTEM"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - UP_DRIVER_ON_MP_SYSTEM
 api_type:

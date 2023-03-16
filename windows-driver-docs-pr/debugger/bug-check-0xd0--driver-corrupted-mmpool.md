@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xD0 DRIVER_CORRUPTED_MMPOOL", "DRIVER_CORRUPTED_MMPOOL"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_CORRUPTED_MMPOOL
 api_type:

@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["StartDeviceWait3 rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - StartDeviceWait3
 api_type:

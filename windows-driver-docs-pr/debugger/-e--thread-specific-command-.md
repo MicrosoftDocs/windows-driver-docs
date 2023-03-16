@@ -5,6 +5,7 @@ keywords: ["Thread-Specific Command (~e) command", "thread, Thread-Specific Comm
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ~e (Thread-Specific Command)
 api_type:

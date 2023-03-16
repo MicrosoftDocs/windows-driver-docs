@@ -4,6 +4,7 @@ description: The enableNotListedLanguages XML element is an empty element that s
 keywords: ["enableNotListedLanguages XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - enableNotListedLanguages XML Element
 api_type:

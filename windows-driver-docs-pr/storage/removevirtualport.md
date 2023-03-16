@@ -4,6 +4,7 @@ description: The RemoveVirtualPort method removes a virtual port for a specific 
 keywords: ["RemoveVirtualPort method Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - RemoveVirtualPort
 api_type:

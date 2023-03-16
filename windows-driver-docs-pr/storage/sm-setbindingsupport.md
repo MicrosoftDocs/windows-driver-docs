@@ -4,6 +4,7 @@ description: The SM\_SetBindingSupport method sets the binding capabilities for 
 keywords: ["SM_SetBindingSupport function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SM_SetBindingSupport
 api_location:

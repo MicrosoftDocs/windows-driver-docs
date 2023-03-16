@@ -5,6 +5,7 @@ keywords: [".srcpath, .lsrcpath (Set Source Path) Windows Debugging"]
 ms.date: 11/05/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .srcpath, .lsrcpath (Set Source Path)
 api_type:

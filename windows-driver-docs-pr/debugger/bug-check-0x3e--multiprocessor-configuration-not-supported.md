@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x3E MULTIPROCESSOR_CONFIGURATION_NOT_SUPPORTED", "MULTIPR
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MULTIPROCESSOR_CONFIGURATION_NOT_SUPPORTED
 api_type:

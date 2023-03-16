@@ -3,9 +3,9 @@ title: WinDbg Command-Line Options
 description: First-time users of WinDbg should begin with the Debugging Using WinDbg section.
 keywords: ["WinDbg Command-Line Options Windows Debugging"]
 ms.date: 02/28/2022
-ms.topic: article
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WinDbg Command-Line Options
 api_type:

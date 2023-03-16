@@ -10,10 +10,6 @@ ms.date: 04/20/2017
 
 # Registry Settings for a Plug and Play Serial Device
 
-
-
-
-
 This topic describes the registry settings that Serial uses as a function driver for a Plug and Play serial device. Serial also uses these settings as a lower-level device filter driver for a device that requires a 16550 UART-compatible interface.
 
 Serial queries these registry entry values when it adds the device. If a device-specific entry value is not present, Serial uses a Serial service value.
@@ -64,11 +60,3 @@ Boolean flag that specifies whether to permit the system to share the interrupt 
 
 <a href="" id="serialioresourcesindex--reg-dword-"></a>**SerialIoResourcesIndex** (REG\_DWORD)  
 Specifies the index of the partial resource descriptor that Serial uses to determine the I/O addresses of the serial register set for the device. The default value of **SerialIoResourceIndex** is 0x00000000.
-
- 
-
- 
-
-
-
-

@@ -5,6 +5,7 @@ keywords: ["wudfext.wudfusbpipe Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - wudfext.wudfusbpipe
 api_type:

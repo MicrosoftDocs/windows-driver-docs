@@ -4,12 +4,14 @@ description: KSNODETYPE\_MUTE
 keywords: ["KSNODETYPE_MUTE Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSNODETYPE_MUTE
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSNODETYPE\_MUTE
 

@@ -5,6 +5,7 @@ keywords: ["DbgSrv Command-Line Options Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DbgSrv Command-Line Options
 api_type:
@@ -12,7 +13,6 @@ api_type:
 ---
 
 # DbgSrv Command-Line Options
-
 
 The DbgSrv command line uses the following syntax.
 

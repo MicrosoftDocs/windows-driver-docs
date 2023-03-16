@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x17 CID_HANDLE_DELETION", "CID_HANDLE_DELETION"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CID_HANDLE_DELETION
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x12A MUI_NO_VALID_SYSTEM_LANGUAGE", "MUI_NO_VALID_SYSTEM_
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MUI_NO_VALID_SYSTEM_LANGUAGE
 api_type:

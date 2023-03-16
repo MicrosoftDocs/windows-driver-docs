@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1C9 USER_MODE_HEALTH_MONITOR_LIVEDUMP", "USER_MODE_HEALT
 ms.date: 01/10/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - USER_MODE_HEALTH_MONITOR_LIVEDUMP
 api_type:

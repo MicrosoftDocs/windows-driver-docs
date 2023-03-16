@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x8F PP0_INITIALIZATION_FAILED", "PP0_INITIALIZATION_FAILE
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PP0_INITIALIZATION_FAILED
 api_type:

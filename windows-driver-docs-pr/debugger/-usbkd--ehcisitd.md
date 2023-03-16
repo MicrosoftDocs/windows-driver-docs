@@ -5,6 +5,7 @@ keywords: ["usbkd._ehcisitd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - usbkd._ehcisitd
 api_type:

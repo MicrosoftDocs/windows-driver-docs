@@ -5,6 +5,7 @@ keywords: [".logfile (Display Log File Status) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .logfile (Display Log File Status)
 api_type:

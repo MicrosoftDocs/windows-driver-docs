@@ -4,6 +4,7 @@ description: The KSJACK\_DESCRIPTION3 structure specifies the capabilities and t
 keywords: ["KSJACK_DESCRIPTION3 structure Audio Devices", "PKSJACK_DESCRIPTION3 structure pointer Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSJACK_DESCRIPTION3
 api_location:

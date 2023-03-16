@@ -5,6 +5,7 @@ keywords: ["ds, dS (Display String) Windows Debugging"]
 ms.date: 05/03/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ds, dS (Display String)
 api_type:

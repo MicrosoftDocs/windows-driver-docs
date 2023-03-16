@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1D5 DRIVER_PNP_WATCHDOG", "DRIVER_PNP_WATCHDOG"]
 ms.date: 01/11/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_PNP_WATCHDOG
 api_type:

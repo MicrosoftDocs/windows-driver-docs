@@ -5,6 +5,7 @@ keywords: ["eb extension", "ed extension", "memory, Write Physical ( e ) extensi
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - eb, ed
 api_type:

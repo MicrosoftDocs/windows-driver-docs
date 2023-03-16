@@ -1,7 +1,8 @@
 ---
 title: Debugger Data Model - Instruction Objects
 description: Instruction Objects describe a single machine instruction.
-ms.date: 12/12/2018
+ms.date: 03/10/2023
+ms.topic: reference
 ---
 # Instruction Objects
 

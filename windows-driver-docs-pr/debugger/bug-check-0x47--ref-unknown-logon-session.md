@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x47 REF_UNKNOWN_LOGON_SESSION", "REF_UNKNOWN_LOGON_SESSIO
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - REF_UNKNOWN_LOGON_SESSION
 api_type:

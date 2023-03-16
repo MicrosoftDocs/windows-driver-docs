@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xB NO_EXCEPTION_HANDLING_SUPPORT", "NO_EXCEPTION_HANDLING
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - NO_EXCEPTION_HANDLING_SUPPORT
 api_type:

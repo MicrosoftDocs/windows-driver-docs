@@ -5,6 +5,7 @@ ms.date: 12/07/2017
 keywords: ["DBG_DUMP_XXX Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DBG_DUMP_XXX
 api_location:

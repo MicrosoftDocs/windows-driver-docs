@@ -1,8 +1,10 @@
 ---
 title: Audio Drivers Event Sets
 description: Learn about audio drivers event sets, such as 'KSEVENTSETID\_AudioControlChange' and 'KSEVENTSETID\_LoopedStreaming'.
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # Audio Drivers Event Sets
 

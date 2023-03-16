@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1A1 WIN32K_CALLOUT_WATCHDOG_LIVEDUMP", "WIN32K_CALLOUT_W
 ms.date: 07/19/2021
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIN32K_CALLOUT_WATCHDOG_LIVEDUMP
 api_type:

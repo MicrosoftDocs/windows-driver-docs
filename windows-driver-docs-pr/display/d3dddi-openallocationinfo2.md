@@ -4,6 +4,7 @@ description: Learn about the D3DDDI\_OPENALLOCATIONINFO2 structure, which is res
 keywords: ["D3DDDI_OPENALLOCATIONINFO2 structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DDDI_OPENALLOCATIONINFO2
 api_location:

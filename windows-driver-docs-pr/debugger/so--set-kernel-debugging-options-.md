@@ -5,6 +5,7 @@ keywords: ["so (Set Kernel Debugging Options) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - so (Set Kernel Debugging Options)
 api_type:

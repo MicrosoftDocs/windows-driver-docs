@@ -2,8 +2,10 @@
 title: KSPROPSETID\_Acoustic\_Echo\_Cancel
 description: KSPROPSETID\_Acoustic\_Echo\_Cancel
 keywords: ["KSPROPSETID_Acoustic_Echo_Cancel"]
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # KSPROPSETID\_Acoustic\_Echo\_Cancel
 

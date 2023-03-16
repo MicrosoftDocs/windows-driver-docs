@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["NsRemoveLockMnRemove rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - NsRemoveLockMnRemove
 api_type:

@@ -1,8 +1,9 @@
 ---
 title: KSEVENTSETID\_PinCapsChange
 description: KSEVENTSETID\_PinCapsChange
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSEVENTSETID\_PinCapsChange
 

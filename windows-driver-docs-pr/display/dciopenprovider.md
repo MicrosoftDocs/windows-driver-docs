@@ -4,6 +4,7 @@ description: DCIOpenProvider
 keywords: ["DCIOpenProvider Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DCIOpenProvider
 api_type:

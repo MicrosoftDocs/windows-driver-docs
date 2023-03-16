@@ -1,8 +1,10 @@
 ---
 title: Port Class Audio Driver Reference
 description: Port Class Audio Driver Reference
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # Port Class Audio Driver Reference
 

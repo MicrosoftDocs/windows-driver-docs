@@ -4,6 +4,7 @@ description: The ExtExtension class is the base class for the C++ class that rep
 keywords: ["ExtExtension Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ExtExtension
 api_type:

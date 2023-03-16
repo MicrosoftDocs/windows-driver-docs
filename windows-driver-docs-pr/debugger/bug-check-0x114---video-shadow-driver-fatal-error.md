@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x114 VIDEO_SHADOW_DRIVER_FATAL_ERROR", "VIDEO_SHADOW_DRIV
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VIDEO_SHADOW_DRIVER_FATAL_ERROR
 api_type:

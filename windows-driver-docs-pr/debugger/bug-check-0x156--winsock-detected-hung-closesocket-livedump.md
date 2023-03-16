@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x156 WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP", "WINSOC
 ms.date: 04/18/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WINSOCK_DETECTED_HUNG_CLOSESOCKET_LIVEDUMP
 api_type:

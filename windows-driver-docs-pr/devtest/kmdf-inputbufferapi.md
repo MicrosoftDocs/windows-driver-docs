@@ -5,6 +5,7 @@ description: "Learn more about: InputBufferAPI rule (kmdf)"
 keywords: ["InputBufferAPI rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - InputBufferAPI
 api_type:

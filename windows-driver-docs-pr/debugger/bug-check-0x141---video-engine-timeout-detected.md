@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x141 VIDEO_ENGINE_TIMEOUT_DETECTED", "VIDEO_ENGINE_TIMEOU
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VIDEO_ENGINE_TIMEOUT_DETECTED
 api_type:

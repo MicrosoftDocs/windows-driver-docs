@@ -5,6 +5,7 @@ keywords:
 - Creating Certificates for USB Storage Devices Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Creating
 api_type:

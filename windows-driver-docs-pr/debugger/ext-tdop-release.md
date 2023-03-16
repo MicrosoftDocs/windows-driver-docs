@@ -4,6 +4,7 @@ description: The EXT\_TDOP\_RELEASE sub-operation of the DEBUG\_REQUEST\_EXT\_TY
 keywords: ["EXT_TDOP_RELEASE Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EXT_TDOP_RELEASE
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xBE ATTEMPTED_WRITE_TO_READONLY_MEMORY", "ATTEMPTED_WRITE
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ATTEMPTED_WRITE_TO_READONLY_MEMORY
 api_type:

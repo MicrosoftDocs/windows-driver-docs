@@ -5,6 +5,7 @@ keywords: ["CTRL+R (Re-synchronize) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CTRL+R (Re-synchronize)
 api_type:

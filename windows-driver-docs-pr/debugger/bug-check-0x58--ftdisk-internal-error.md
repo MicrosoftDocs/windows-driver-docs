@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x58 FTDISK_INTERNAL_ERROR", "FTDISK_INTERNAL_ERROR"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - FTDISK_INTERNAL_ERROR
 api_type:

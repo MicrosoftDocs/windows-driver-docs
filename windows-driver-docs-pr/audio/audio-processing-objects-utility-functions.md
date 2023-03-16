@@ -1,7 +1,8 @@
 ---
 title: Audio Processing Objects Utility Functions (Windows Drivers)
 description: Learn more about the Audio Processing Objects Utility Functions.
-ms.date: 10/27/2022
+ms.date: 03/06/2023
+ms.topic: reference
 ---
 
 # Audio Processing Objects Utility Functions

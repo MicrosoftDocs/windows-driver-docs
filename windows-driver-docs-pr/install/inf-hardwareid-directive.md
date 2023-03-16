@@ -5,6 +5,7 @@ keywords:
 - INF HardwareId Directive Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF HardwareId Directive
 api_type:

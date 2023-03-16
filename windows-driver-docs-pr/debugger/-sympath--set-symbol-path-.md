@@ -5,6 +5,7 @@ keywords: ["Set Symbol Path (.sympath) command", "symbol files and paths, Set Sy
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .sympath (Set Symbol Path)
 api_type:

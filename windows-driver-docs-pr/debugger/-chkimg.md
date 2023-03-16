@@ -5,6 +5,7 @@ keywords: ["executable files and paths, corruption", "chkimg Windows Debugging"]
 ms.date: 05/07/2021
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - chkimg
 api_type:

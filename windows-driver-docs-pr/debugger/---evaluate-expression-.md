@@ -5,6 +5,7 @@ keywords: ["(Evaluate Expression) Windows Debugging"]
 ms.date: 04/26/2021
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - (Evaluate Expression)
 api_type:

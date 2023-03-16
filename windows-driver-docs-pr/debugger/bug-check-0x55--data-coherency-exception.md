@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x55 DATA_COHERENCY_EXCEPTION", "DATA_COHERENCY_EXCEPTION"
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DATA_COHERENCY_EXCEPTION
 api_type:

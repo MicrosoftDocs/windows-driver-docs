@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x170 CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG", "CLUSTER_C
 ms.date: 01/03/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG
 api_type:

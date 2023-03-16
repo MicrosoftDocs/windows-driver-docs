@@ -12,10 +12,6 @@ ms.date: 04/20/2017
 
 # Responding to Battery Class Driver Queries
 
-
-## <span id="ddk_responding_to_battery_class_driver_queries_dg"></span><span id="DDK_RESPONDING_TO_BATTERY_CLASS_DRIVER_QUERIES_DG"></span>
-
-
 The miniclass driver must provide the following three [BatteryMini*Xxx*](/windows-hardware/drivers/ddi/_battery/) routines, which report battery status:
 
 [*BatteryMiniQueryTag*](/windows/win32/api/batclass/nc-batclass-bclass_query_tag_callback)
@@ -25,6 +21,3 @@ The miniclass driver must provide the following three [BatteryMini*Xxx*](/window
 [*BatteryMiniQueryStatus*](/windows/win32/api/batclass/nc-batclass-bclass_query_status_callback)
 
 The [**BatteryClassIoctl**](/windows/win32/api/batclass/nf-batclass-batteryclassioctl) routine in the class driver calls these miniclass driver routines when it receives IOCTLs requesting information about the batteries.
-
- 
-

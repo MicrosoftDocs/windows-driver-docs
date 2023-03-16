@@ -5,6 +5,7 @@ keywords: ["Change Disassembly Options (.asm) command", "assembly debugging, Cha
 ms.date: 09/17/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .asm (Change Disassembly Options)
 api_type:

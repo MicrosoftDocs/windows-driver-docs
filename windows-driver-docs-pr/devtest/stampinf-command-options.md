@@ -5,6 +5,7 @@ keywords:
 - Stampinf Command Options Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Stampinf
 api_type:

@@ -4,6 +4,7 @@ description: The DXGK\_QUERYSEGMENTOUT2 structure is reserved for system use. Do
 keywords: ["DXGK_QUERYSEGMENTOUT2 structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGK_QUERYSEGMENTOUT2
 api_location:

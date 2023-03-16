@@ -4,6 +4,7 @@ description: The Defaults section lists the default driver(s) for each hardware 
 keywords: ["Defaults Section of a TxtSetup.oem File Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Defaults Section of a TxtSetup.oem File
 api_type:

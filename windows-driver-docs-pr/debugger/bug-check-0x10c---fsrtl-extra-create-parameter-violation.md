@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x10C FSRTL_EXTRA_CREATE_PARAMETER_VIOLATION", "FSRTL_EXTR
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - FSRTL_EXTRA_CREATE_PARAMETER_VIOLATION
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1D2 WORKER_THREAD_INVALID_STATE", "WORKER_THREAD_INVALID
 ms.date: 05/23/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WORKER_THREAD_INVALID_STATE
 api_type:

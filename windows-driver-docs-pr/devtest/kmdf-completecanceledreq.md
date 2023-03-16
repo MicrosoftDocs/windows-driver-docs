@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["CompleteCanceledReq rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CompleteCanceledReq
 api_type:

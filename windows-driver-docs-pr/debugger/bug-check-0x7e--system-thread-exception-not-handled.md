@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x7E SYSTEM_THREAD_EXCEPTION_NOT_HANDLED", "SYSTEM_THREAD_
 ms.date: 12/08/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SYSTEM_THREAD_EXCEPTION_NOT_HANDLED
 api_type:

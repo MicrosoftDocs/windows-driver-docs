@@ -7,6 +7,7 @@ keywords:
 - MSFT_StorageProvider class Windows Storage Management API , described
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MSFT_StorageProvider
 - MSFT_StorageProvider.Type
@@ -24,7 +25,6 @@ api_location:
 api_type:
 - Schema
 ms.author: windowssdkdev
-ms.topic: article
 ms.date: 05/31/2018
 ---
 

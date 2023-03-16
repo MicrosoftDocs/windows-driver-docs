@@ -5,6 +5,7 @@ keywords: ["Enable Unicode Display (.enable_unicode) command", "UNICODE_STRING s
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .enable_unicode (Enable Unicode Display)
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x3F NO_MORE_SYSTEM_PTES", "NO_MORE_SYSTEM_PTES"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - NO_MORE_SYSTEM_PTES
 api_type:

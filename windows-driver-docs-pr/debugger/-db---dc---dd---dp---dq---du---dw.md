@@ -5,6 +5,7 @@ keywords: ["db extension", "dc extension", "dd extension", "dp extension", "dq e
 ms.date: 01/18/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - db, dc, dd, dp, dq, du, dw
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xBFF BC_BTHMINI_VERIFIER_FAULT", "BC_BTHMINI_VERIFIER_FAU
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - BC_BTHMINI_VERIFIER_FAULT
 api_type:

@@ -6,15 +6,11 @@ ms.date: 04/20/2017
 
 # Differences Between SerCx2.sys and Serial.sys
 
-
 Although the inbox Sercx2.sys and Serial.sys driver components both implement the [serial I/O request interface](serial-i-o-request-interface.md), these components are not interchangeable. They are designed to meet different sets of requirements.
 
 **Note**  Sercx2.sys replaces an earlier version of the serial framework extension, Sercx.sys, that was introduced in Windows 8. For more information, see [Serial Controller Drivers Overview](serial-drivers-overview.md).
 
- 
-
 ## Serial.sys: Dynamic serial connections to external devices
-
 
 Serial.sys is designed to control named COM ports that are driven by 16550A or similar UARTs. External peripheral devices can be dynamically plugged into and removed from these ports. Serial.sys is present in all supported versions of Windows, and many existing applications and drivers that use COM ports depend on the known behavior of Serial.sys. A client opens a COM port by name (for example, "COM1") and releases the port when it is no longer needed.
 
@@ -23,7 +19,6 @@ Serial.sys uses programmed I/O (PIO) instead of DMA to transmit and receive data
 Data transmission through a COM port on a PC is relatively slow and can be adequately handled by PIO. The speed at which the COM ports managed by Serial.sys can be driven is limited by the impedance and other electrical properties of the connectors and external cables that attach to these ports.
 
 ## Sercx2.sys: Dedicated serial connections between integrated circuits
-
 
 Serial interfaces are now widely used to provide low-pin-count communication between integrated circuits on a printed circuit board. Data transmission rates through these interfaces can be relatively high due to the low impedance and short path lengths involved. Using PIO to move data to and from serial ports at these high data rates places too great a burden on the processor. Instead, DMA is needed to offload this work from the processor.
 

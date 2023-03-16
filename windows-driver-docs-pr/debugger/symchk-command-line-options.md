@@ -5,6 +5,7 @@ keywords: ["SymChk Command-Line Options Windows Debugging"]
 ms.date: 03/13/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SymChk Command-Line Options
 api_type:

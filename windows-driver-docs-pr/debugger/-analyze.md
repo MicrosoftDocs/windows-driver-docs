@@ -5,6 +5,7 @@ keywords: ["analyze Windows Debugging"]
 ms.date: 12/16/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - analyze
 api_type:

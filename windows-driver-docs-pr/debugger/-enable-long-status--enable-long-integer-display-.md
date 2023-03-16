@@ -5,6 +5,7 @@ keywords: ["Enable Long Integer Display (.enable_long_status) command", ".enable
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .enable_long_status (Enable Long Integer Display)
 api_type:

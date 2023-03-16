@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x159 HAL_ILLEGAL_IOMMU_PAGE_FAULT", "HAL_ILLEGAL_IOMMU_PA
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - HAL_ILLEGAL_IOMMU_PAGE_FAULT
 api_type:

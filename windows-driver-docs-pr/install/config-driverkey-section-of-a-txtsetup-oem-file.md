@@ -4,6 +4,7 @@ description: A Config.DriverKey section specifies values to be set in the regist
 keywords: ["Config.DriverKey Section of a TxtSetup.oem File Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Config.DriverKey Section of a TxtSetup.oem File
 api_type:

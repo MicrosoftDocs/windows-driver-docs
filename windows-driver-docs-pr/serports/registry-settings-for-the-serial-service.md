@@ -33,11 +33,3 @@ Specifies a Boolean flag that indicates whether to permit the system to share th
 
 <a href="" id="breakonentry--debuglevel--and-logfifo"></a>**BreakOnEntry**, **DebugLevel**, and **LogFifo**  
 Specify entry values that are used for debugging. For more information about these entry values, see the Serial sample code that is included in the WDK.
-
- 
-
- 
-
-
-
-

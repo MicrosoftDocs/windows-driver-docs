@@ -4,6 +4,7 @@ description: DIF_ENABLECLASS
 keywords: ["DIF_ENABLECLASS Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_ENABLECLASS
 api_type:

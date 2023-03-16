@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xDC DRIVER_INVALID_STACK_ACCESS", "DRIVER_INVALID_STACK_A
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_INVALID_STACK_ACCESS
 api_type:

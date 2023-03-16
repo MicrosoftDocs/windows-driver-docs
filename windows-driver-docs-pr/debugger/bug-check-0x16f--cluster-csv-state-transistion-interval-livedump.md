@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x16F CLUSTER_CSV_STATE_TRANSITION_INTERVAL_TIMEOUT_LIVEDU
 ms.date: 01/03/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CLUSTER_CSV_STATE_TRANSITION_INTERVAL_TIMEOUT_LIVEDUMP
 api_type:

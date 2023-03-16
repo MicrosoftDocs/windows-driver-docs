@@ -4,6 +4,7 @@ description: search XML Element
 keywords: ["search XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - search XML Element
 api_type:

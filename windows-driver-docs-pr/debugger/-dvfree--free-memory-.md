@@ -5,6 +5,7 @@ keywords: [".dvfree (Free Memory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .dvfree (Free Memory)
 api_type:

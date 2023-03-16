@@ -4,6 +4,7 @@ description: The FltAcquireResourceExclusive routine acquires the given resource
 keywords: ["FltAcquireResourceExclusive routine Installable File System Drivers"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - FltAcquireResourceExclusive
 api_location:

@@ -5,6 +5,7 @@ keywords:
 - /List Switch Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - /List
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x85 SETUP_FAILURE", "SETUP_FAILURE"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SETUP_FAILURE
 api_type:

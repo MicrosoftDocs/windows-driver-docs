@@ -5,6 +5,7 @@ keywords:
 - INF DelProperty Directive Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF DelProperty Directive
 api_type:

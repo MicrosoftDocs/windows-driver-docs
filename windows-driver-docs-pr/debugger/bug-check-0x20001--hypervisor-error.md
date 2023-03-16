@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x20001 HYPERVISOR_ERROR", "HYPERVISOR_ERROR"]
 ms.date: 05/15/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - HYPERVISOR_ERROR
 api_type:

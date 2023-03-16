@@ -5,6 +5,7 @@ keywords: ["e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values) Windows De
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - e, ea, eb, ed, eD, ef, ep, eq, eu, ew, eza (Enter Values)
 api_type:

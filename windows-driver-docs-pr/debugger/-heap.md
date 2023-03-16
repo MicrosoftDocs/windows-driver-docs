@@ -5,6 +5,7 @@ keywords: ["heap usage", "GFlags, enabling page heap", "heap Windows Debugging"]
 ms.date: 08/23/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - heap
 api_type:

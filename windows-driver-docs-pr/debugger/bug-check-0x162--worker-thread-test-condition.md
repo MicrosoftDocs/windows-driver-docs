@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x163 WORKER_THREAD_TEST_CONDITION", "WORKER_THREAD_TEST_C
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WORKER_THREAD_TEST_CONDITION
 api_type:

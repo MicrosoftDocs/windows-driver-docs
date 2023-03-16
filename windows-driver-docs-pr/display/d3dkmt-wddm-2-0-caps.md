@@ -4,6 +4,7 @@ description: Learn about the D3DKMT\_WDDM\_2\_0\_CAPS structure, which is reserv
 keywords: ["D3DKMT_WDDM_2_0_CAPS structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DKMT_WDDM_2_0_CAPS
 api_location:

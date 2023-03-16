@@ -5,6 +5,7 @@ keywords: ["amli ds Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - amli ds
 api_type:

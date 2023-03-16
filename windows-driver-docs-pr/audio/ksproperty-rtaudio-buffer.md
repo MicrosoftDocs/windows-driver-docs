@@ -4,14 +4,16 @@ description: The KSPROPERTY\_RTAUDIO\_BUFFER property specifies a driver-allocat
 keywords: ["KSPROPERTY_RTAUDIO_BUFFER Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_RTAUDIO_BUFFER
 api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSPROPERTY\_RTAUDIO\_BUFFER
 

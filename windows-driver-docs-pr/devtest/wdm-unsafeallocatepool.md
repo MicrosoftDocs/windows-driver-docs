@@ -5,6 +5,7 @@ ms.date: 01/15/2021
 keywords: ["UnSafeAllocatePool rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - UnSafeAllocate
 api_type:

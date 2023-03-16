@@ -4,6 +4,7 @@ description: eula XML Element
 keywords: ["eula XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - eula XML Element
 api_type:

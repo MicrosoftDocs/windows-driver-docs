@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x4E PFN_LIST_CORRUPT", "PFN_LIST_CORRUPT"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PFN_LIST_CORRUPT
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x160 WIN32K_ATOMIC_CHECK_FAILURE", "WIN32K_ATOMIC_CHECK_F
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIN32K_ATOMIC_CHECK_FAILURE
 api_type:

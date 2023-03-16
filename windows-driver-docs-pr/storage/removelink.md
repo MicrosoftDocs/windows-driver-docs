@@ -4,6 +4,7 @@ description: The RemoveLink WMI method configures the WMI provider so that it st
 keywords: ["RemoveLink function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - RemoveLink
 api_location:

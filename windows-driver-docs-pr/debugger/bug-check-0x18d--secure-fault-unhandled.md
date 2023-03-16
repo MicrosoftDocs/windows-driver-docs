@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x18D SECURE_FAULT_UNHANDLED", "SECURE_FAULT_UNHANDLED"]
 ms.date: 01/04/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SECURE_FAULT_UNHANDLED
 api_type:

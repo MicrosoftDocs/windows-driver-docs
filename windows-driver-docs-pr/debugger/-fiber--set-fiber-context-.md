@@ -5,6 +5,7 @@ keywords: ["Set Fiber Context (.fiber) command", "context, Set Fiber Context (.f
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .fiber (Set Fiber Context)
 api_type:

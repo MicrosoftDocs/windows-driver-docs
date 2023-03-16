@@ -4,6 +4,7 @@ description: Learn about the D3DKMT\_TDRDBGCTRL\_ESCAPE structure, which is rese
 keywords: ["D3DKMT_TDRDBGCTRL_ESCAPE structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DKMT_TDRDBGCTRL_ESCAPE
 api_location:

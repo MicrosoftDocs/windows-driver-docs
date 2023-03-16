@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x18 REFERENCE_BY_POINTER", "REFERENCE_BY_POINTER"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - REFERENCE_BY_POINTER
 api_type:

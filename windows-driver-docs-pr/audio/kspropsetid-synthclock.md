@@ -2,8 +2,10 @@
 title: KSPROPSETID\_SynthClock
 description: KSPROPSETID\_SynthClock
 keywords: ["KSPROPSETID_SynthClock"]
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # KSPROPSETID\_SynthClock
 

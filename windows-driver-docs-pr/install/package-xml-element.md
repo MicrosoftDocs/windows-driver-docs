@@ -4,6 +4,7 @@ description: The package XML element specifies an INF file for a driver package.
 keywords: ["package XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - package XML Element
 api_type:

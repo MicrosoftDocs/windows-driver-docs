@@ -14,21 +14,17 @@ ms.date: 04/20/2017
 
 # Writing UPS Minidrivers
 
-
-## <span id="ddk_writing_ups_minidrivers_kg"></span><span id="DDK_WRITING_UPS_MINIDRIVERS_KG"></span>
-
-
 If an uninterruptible power supply (UPS) is connected to a Microsoft Windows system, the **UPS** tab for **Power Options** in Control Panel provides information about the UPS. On Windows Server 2003, Windows XP, and Windows 2000, a system-supplied UPS service provides support for UPS units that are connected to COM ports and that support "simple signaling," which provides very limited control capabilities and status information.
 
 On Windows Server 2003, Windows XP, and Windows 2000, if your UPS model is connected to a COM port and supports "smart signaling," you should provide a UPS minidriver. This minidriver, which is a user-mode DLL called by the system's UPS service, performs the following operations:
 
--   Initializes the communication path to the UPS.
+- Initializes the communication path to the UPS.
 
--   Updates registry entries that **Power Options** uses to obtain model-specific information to display.
+- Updates registry entries that **Power Options** uses to obtain model-specific information to display.
 
--   Turns off the UPS power upon request.
+- Turns off the UPS power upon request.
 
--   Monitors the UPS unit for state changes.
+- Monitors the UPS unit for state changes.
 
 For more information about UPS minidrivers, see the following topics:
 
@@ -41,8 +37,3 @@ For more information about UPS minidrivers, see the following topics:
 [Installing UPS Minidrivers](installing-ups-minidrivers.md)
 
 **Note**   Windows Vista and later versions of Windows do not support UPS units that are connected to COM ports. These Windows versions continue to support UPS units connected over [USB](../index.yml).
-
- 
-
- 
-

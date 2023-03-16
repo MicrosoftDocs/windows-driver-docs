@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xC4 DRIVER_VERIFIER_DETECTED_VIOLATION", "DRIVER_VERIFIER
 ms.date: 04/10/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_VERIFIER_DETECTED_VIOLATION
 api_type:

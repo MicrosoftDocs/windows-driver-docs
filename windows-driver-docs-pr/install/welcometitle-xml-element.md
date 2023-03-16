@@ -4,6 +4,7 @@ description: welcomeTitle XML Element
 keywords: ["welcomeTitle XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - welcomeTitle XML Element
 api_type:

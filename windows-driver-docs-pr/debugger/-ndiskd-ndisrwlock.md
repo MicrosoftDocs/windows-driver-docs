@@ -5,6 +5,7 @@ keywords: ["ndiskd.ndisrwlock Windows Debugging"]
 ms.date: 06/18/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ndiskd.ndisrwlock
 api_type:

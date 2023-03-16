@@ -5,6 +5,7 @@ ms.date: 04/01/2020
 keywords: ["KsInvalidStreamPointer rule (ks)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KsInvalidStreamPointer
 api_type:

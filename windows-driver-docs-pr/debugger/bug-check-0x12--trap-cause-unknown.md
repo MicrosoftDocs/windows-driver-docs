@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x12 TRAP_CAUSE_UNKNOWN", "TRAP_CAUSE_UNKNOWN"]
 ms.date: 06/26/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TRAP_CAUSE_UNKNOWN
 api_type:

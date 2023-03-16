@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1000008E KERNEL_MODE_EXCEPTION_NOT_HANDLED_M", "KERNEL_M
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KERNEL_MODE_EXCEPTION_NOT_HANDLED_M
 api_type:

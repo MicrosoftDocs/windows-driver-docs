@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xCD PAGE_FAULT_BEYOND_END_OF_ALLOCATION", "PAGE_FAULT_BEY
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PAGE_FAULT_BEYOND_END_OF_ALLOCATION
 api_type:

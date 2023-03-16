@@ -5,6 +5,7 @@ keywords: ["bthkd.l2capinterface Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - bthkd.l2capinterface
 api_type:

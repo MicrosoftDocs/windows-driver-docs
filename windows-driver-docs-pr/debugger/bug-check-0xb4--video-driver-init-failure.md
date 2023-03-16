@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xB4 VIDEO_DRIVER_INIT_FAILURE", "VIDEO_DRIVER_INIT_FAILUR
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - VIDEO_DRIVER_INIT_FAILURE
 api_type:

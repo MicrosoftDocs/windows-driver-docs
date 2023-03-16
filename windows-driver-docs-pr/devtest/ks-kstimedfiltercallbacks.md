@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["KsTimedFilterCallbacks rule ()"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KsTimedFilterCallbacks
 api_type:

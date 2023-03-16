@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x175 PREVIOUS_FATAL_ABNORMAL_RESET_ERROR", "PREVIOUS_FATA
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PREVIOUS_FATAL_ABNORMAL_RESET_ERROR
 api_type:

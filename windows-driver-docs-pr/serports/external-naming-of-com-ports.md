@@ -13,10 +13,6 @@ ms.date: 04/20/2017
 
 # External Naming of COM Ports
 
-
-
-
-
 By default, the Serial function driver creates a symbolic link name for a serial port and registers a GUID\_DEVINTERFACE\_COMPORT *device interface* for the port. By definition, a serial port is a [COM port](configuration-of-com-ports.md) only if it has a COM port device interface associated with it.
 
 For a Plug and Play serial device, external naming is controlled by a **SerialSkipExternalNaming** entry value under the hardware key of the device. If the **SerialSkipExternalNaming** entry value does not exist, or its value is zero, Serial creates a COM port device interface; otherwise, Serial does not create a COM port interface. Serial does not support this entry value for a legacy COM port and always creates a COM port device interface for a legacy COM port.
@@ -36,11 +32,3 @@ Serial performs the following tasks to create a COM port device interface:
   Clients can register for notification of the arrival of a COM port interface, or can obtain the symbolic link names of all registered COM port interfaces.
 
 For more information about how Serial uses registry entry values, see [Registry Settings for Serial](registry-settings-for-serial.md).
-
- 
-
- 
-
-
-
-

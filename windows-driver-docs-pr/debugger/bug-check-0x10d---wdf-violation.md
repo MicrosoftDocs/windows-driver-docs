@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x10D WDF_VIOLATION", "WDF_VIOLATION"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WDF_VIOLATION
 api_type:

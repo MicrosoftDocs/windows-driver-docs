@@ -4,6 +4,7 @@ description: read-ahead parameters for  read-ahead granularity and pipelined rea
 keywords: ["read-ahead parameters"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - read_ahead_parameters
 api_location:

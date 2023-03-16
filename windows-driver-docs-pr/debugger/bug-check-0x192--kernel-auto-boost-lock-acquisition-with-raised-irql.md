@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x192 KERNEL_AUTO_BOOST_LOCK_ACQUISITION_WITH_RAISED_IRQL"
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KERNEL_AUTO_BOOST_LOCK_ACQUISITION_WITH_RAISED_IRQL
 api_type:

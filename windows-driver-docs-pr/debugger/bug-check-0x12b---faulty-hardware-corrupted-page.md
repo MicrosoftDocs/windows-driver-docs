@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x12B FAULTY_HARDWARE_CORRUPTED_PAGE", "FAULTY_HARDWARE_CO
 ms.date: 12/15/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - FAULTY_HARDWARE_CORRUPTED_PAGE
 api_type:

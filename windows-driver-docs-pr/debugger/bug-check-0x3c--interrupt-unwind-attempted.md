@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x3C INTERRUPT_UNWIND_ATTEMPTED", "INTERRUPT_UNWIND_ATTEMP
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INTERRUPT_UNWIND_ATTEMPTED
 api_type:

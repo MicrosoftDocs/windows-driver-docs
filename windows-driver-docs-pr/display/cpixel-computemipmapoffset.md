@@ -4,6 +4,7 @@ description: The CPixel ComputeMipMapOffset method determines the sublevel offse
 keywords: ["ComputeMipMapOffset method Display Devices", "ComputeMipMapOffset method Display Devices , CPixel interface", "CPixel interface Display Devices , ComputeMipMapOffset method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CPixel.ComputeMipMapOffset
 api_location:

@@ -5,6 +5,7 @@ keywords: ["Assemble (a) command", "assembly debugging, Assemble (a) command", "
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - a (Assemble)
 api_type:

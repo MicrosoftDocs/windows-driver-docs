@@ -4,6 +4,7 @@ description: Learn about the D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER\_RANGE structur
 keywords: ["D3DDDI_MULTIPLANE_OVERLAY_FILTER_RANGE structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DDDI_MULTIPLANE_OVERLAY_FILTER_RANGE
 api_location:

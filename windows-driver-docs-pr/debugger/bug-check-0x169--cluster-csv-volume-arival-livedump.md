@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x169 CLUSTER_CSV_VOLUME_ARRIVAL_LIVEDUMP", "CLUSTER_CSV_V
 ms.date: 01/03/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CLUSTER_CSV_VOLUME_ARRIVAL_LIVEDUMP
 api_type:

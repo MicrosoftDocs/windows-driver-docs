@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x40 TARGET_MDL_TOO_SMALL", "TARGET_MDL_TOO_SMALL"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - TARGET_MDL_TOO_SMALL
 api_type:

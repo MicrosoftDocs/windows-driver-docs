@@ -4,6 +4,7 @@ description: The FltAcquireResourceShared routine acquires the given resource fo
 keywords: ["FltAcquireResourceShared routine Installable File System Drivers"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - FltAcquireResourceShared
 api_location:

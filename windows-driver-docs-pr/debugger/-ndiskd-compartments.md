@@ -5,6 +5,7 @@ keywords: ["ndiskd.compartments Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ndiskd.compartments
 api_type:

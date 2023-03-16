@@ -4,6 +4,7 @@ description: Learn about the D3DKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FORMAT enumera
 keywords: ["D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT enumeration Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT
 api_location:

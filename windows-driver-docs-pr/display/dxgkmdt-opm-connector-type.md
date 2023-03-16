@@ -4,6 +4,7 @@ description: Learn about the DXGKMDT\_OPM\_CONNECTOR\_TYPE enumeration, which is
 keywords: ["DXGKMDT_OPM_CONNECTOR_TYPE enumeration Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGKMDT_OPM_CONNECTOR_TYPE
 api_location:

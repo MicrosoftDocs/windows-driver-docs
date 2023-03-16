@@ -4,6 +4,7 @@ description: DCICreateOffscreen
 keywords: ["DCICreateOffscreen Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DCICreateOffscreen
 api_type:

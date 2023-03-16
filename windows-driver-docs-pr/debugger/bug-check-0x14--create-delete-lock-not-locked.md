@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x14 CREATE_DELETE_LOCK_NOT_LOCKED", "CREATE_DELETE_LOCK_N
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CREATE_DELETE_LOCK_NOT_LOCKED
 api_type:

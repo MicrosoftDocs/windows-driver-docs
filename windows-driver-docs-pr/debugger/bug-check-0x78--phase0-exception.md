@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x78 PHASE0_EXCEPTION", "PHASE0_EXCEPTION"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PHASE0_EXCEPTION
 api_type:

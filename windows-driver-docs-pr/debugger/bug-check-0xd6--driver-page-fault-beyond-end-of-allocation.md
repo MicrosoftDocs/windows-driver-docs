@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xD6 DRIVER_PAGE_FAULT_BEYOND_END_OF_ALLOCATION", "DRIVER_
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_PAGE_FAULT_BEYOND_END_OF_ALLOCATION
 api_type:

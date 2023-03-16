@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x197 WIN32K_SECURITY_FAILURE", "WIN32K_SECURITY_FAILURE"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIN32K_SECURITY_FAILURE
 api_type:

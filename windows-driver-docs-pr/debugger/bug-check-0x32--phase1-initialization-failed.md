@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x32 PHASE1_INITIALIZATION_FAILED", "PHASE1_INITIALIZATION
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PHASE1_INITIALIZATION_FAILED
 api_type:

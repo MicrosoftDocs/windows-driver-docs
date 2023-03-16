@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x157 KERNEL_THREAD_PRIORITY_FLOOR_VIOLATION", "KERNEL_THR
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KERNEL_THREAD_PRIORITY_FLOOR_VIOLATION
 api_type:

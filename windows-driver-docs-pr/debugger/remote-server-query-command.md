@@ -5,6 +5,7 @@ keywords: ["Remote Server Query Command Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Remote Server Query Command
 api_type:

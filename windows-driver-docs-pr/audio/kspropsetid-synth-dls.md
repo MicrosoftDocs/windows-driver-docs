@@ -2,8 +2,10 @@
 title: KSPROPSETID\_Synth\_Dls
 description: KSPROPSETID\_Synth\_Dls
 keywords: ["KSPROPSETID_Synth_Dls"]
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # KSPROPSETID\_Synth\_Dls
 

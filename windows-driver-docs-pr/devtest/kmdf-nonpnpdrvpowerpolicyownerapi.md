@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["NonPnPDrvPowerPolicyOwnerAPI rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - NonPnPDrvPowerPolicyOwnerAPI
 api_type:

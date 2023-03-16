@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x133 DPC_WATCHDOG_VIOLATION", "DPC_WATCHDOG_VIOLATION"]
 ms.date: 03/14/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DPC_WATCHDOG_VIOLATION
 api_type:

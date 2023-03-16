@@ -4,6 +4,7 @@ description: Learn about the DXGK\_POWER\_COMPONENT\_P\_FLAGS structure, which i
 keywords: ["DXGK_POWER_COMPONENT_P_FLAGS structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGK_POWER_COMPONENT_P_FLAGS
 api_location:

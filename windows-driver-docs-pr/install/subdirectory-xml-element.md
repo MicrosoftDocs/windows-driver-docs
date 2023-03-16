@@ -4,6 +4,7 @@ description: subDirectory XML Element
 keywords: ["subDirectory XML Element Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - subDirectory XML Element
 api_type:

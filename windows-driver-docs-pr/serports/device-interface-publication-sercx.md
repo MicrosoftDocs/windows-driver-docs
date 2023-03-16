@@ -14,12 +14,12 @@ When using this feature for SerCx/SerCx2 managed serial ports, a COM port number
 
 Using the device interface (`GUID_DEVINTERFACE_COMPORT`) is the recommended way to discover and access a COM port. Using legacy COM port names is prone to name collisions and doesn't provide state change notifications to a client. Using the legacy COM port names is not recommended and not supported with SerCx2 and SerCx.
 
-
 ## Enabling device interface creation
 
 Below are the instructions to enable device interface creation. Note that serial ports are **exclusive**, meaning if the serial port is accessible as a device interface, a connection resource in ACPI should **not** be provided to any other devices - e.g. no `UARTSerialBusV2` resource should be provided to any other devices on the system; the port should be made **exclusively** accessible via the device interface.
 
-### ACPI Configuration
+### ACPI configuration
+
 A system manufacturer or integrator may enable this behavior by modifying the ACPI (ASL) definition of the **existing** SerCx/SerCx2 device to add a `_DSD` definition for key-value device properties with UUID `daffd814-6eba-4d8c-8a91-bc9bbf4aa301`. Inside this definition, the property `SerCx-FriendlyName` is defined with a system specific description of the serial port, for example, `UART0`, `UART1`, etc.
 
 Example device definition (excluding vendor specific information necessary to define the device):
@@ -39,15 +39,18 @@ Example device definition (excluding vendor specific information necessary to de
 
 The specified UUID (`daffd814-6eba-4d8c-8a91-bc9bbf4aa301`) **must** be used, and the entry `SerCx-FriendlyName` must be defined for SerCx/SerCx2 to create the device interface.
 
-### Registry Key
+### Registry key
+
 For development purposes, the `SerCxFriendlyName` may also be configured as a property in the device's hardware key in the registry. The `CM_Open_DevNode_Key` method may be used to access the device's [hardware key](../install/opening-a-device-s-hardware-key.md) and add the property `SerCxFriendlyName` to the device, which is used by SerCx/SerCx2 to retrieve the friendly name for the device interface.
 
 It is not recommended to set this key via an extension INF - it is provided primarily for testing and development purposes. The recommended approach is to enable the feature via ACPI as documented above.
 
-## Device Interface
+## Device interface
+
 If a `FriendlyName` is defined using the methods above, SerCx/SerCx2 will publish a `GUID_DEVINTERFACE_COMPORT` *device interface* for the controller. This device interface will have the `DEVPKEY_DeviceInterface_Serial_PortName` property set to the specified friendly name, which may be used by applications to locate a specific controller/port.
 
 ### Enabling unprivileged access
+
 By default, the controller/port will be accessible only to privileged users and applications. If access from unprivileged applications is required, the SerCx/SerCx2 client must override the default security descriptor after calling `SerCx2InitializeDeviceInit()` or `SerCxDeviceInitConfig()`, but before calling `SerCx2InitializeDevice()` or `SerCxInitialize()`, at which time the applied security descriptor is propogated to the controller PDO.
 
 An example of how to enable unprivileged access on SerCx2 from within the SerCx2 client controller driver's `EvtDeviceAdd` is below.
@@ -84,14 +87,15 @@ SampleControllerEvtDeviceAdd(
 ```
 
 ### Behavior changes when using a Device Interface
+
 Opting in to this feature results in the following behavioral changes in SerCx/SerCx2 (as opposed to [accessing the SerCx/SerCx2 controller via a connection ID](opening-a-sercx2-managed-serial-port.md)):
 
 - No default configuration is applied to the port (speed, parity, etc). As there is no connection resource in ACPI to describe this, the port begins in an uninitialized state. Software that interacts with the device interface is required to configure the port using the defined [serial IOCTL interface](/windows-hardware/drivers/ddi/ntddser/).
 
 - Calls from the SerCx/SerCx2 client driver to query or apply the default configuration will return a failure status. Additionally, `IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION` requests to the device interface will be failed as there is no default configuration specified to apply.
 
-
 ## Accessing the Serial Port Device Interface
+
 For UWP applications, the published interface may be accessed using the `Windows.Devices.SerialCommunication` namespace APIs like any other compliant serial port.
 
 For Win32 applications, the device interface is located and accessed using the following process:

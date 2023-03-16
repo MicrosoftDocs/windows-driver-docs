@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["SpinLockDpc rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SpinLockDpc
 api_type:

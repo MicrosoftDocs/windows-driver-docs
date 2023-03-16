@@ -4,14 +4,16 @@ description: The KSPROPERTY\_AUDIOGFX\_CAPTURETARGETDEVICEID property is used to
 keywords: ["KSPROPERTY_AUDIOGFX_CAPTURETARGETDEVICEID Audio Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - KSPROPERTY_AUDIOGFX_CAPTURETARGETDEVICEID
 api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSPROPERTY\_AUDIOGFX\_CAPTURETARGETDEVICEID
 

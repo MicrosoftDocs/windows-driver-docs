@@ -4,6 +4,7 @@ description: The DXGKARG\_SUBMITRENDER structure is reserved for system use. Do 
 keywords: ["_DXGKARG_SUBMITRENDER structure Display Devices", "DXGKARG_SUBMITRENDER structure Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DXGKARG_SUBMITRENDER
 api_location:

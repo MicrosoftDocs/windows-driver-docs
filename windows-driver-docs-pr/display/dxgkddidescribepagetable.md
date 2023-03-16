@@ -4,6 +4,7 @@ description: The DxgkDdiDescribePageTable function is reserved for system use. D
 keywords: ["DxgkDdiDescribePageTable callback function Display Devices", "DXGKDDI_DESCRIBEPAGETABLE"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DxgkDdiDescribePageTable
 api_location:

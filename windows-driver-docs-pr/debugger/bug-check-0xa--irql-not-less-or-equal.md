@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xA IRQL_NOT_LESS_OR_EQUAL", "IRQL_NOT_LESS_OR_EQUAL"]
 ms.date: 12/08/2022
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IRQL_NOT_LESS_OR_EQUAL
 api_type:

@@ -5,6 +5,7 @@ description: "Learn more about: NoIoQueuePurgeSynchronously rule (kmdf)"
 keywords: ["NoIoQueuePurgeSynchronously rule (kmdf)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - NoIoQueuePurgeSynchronously
 api_type:

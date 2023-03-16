@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1A2 WIN32K_CALLOUT_WATCHDOG_BUGCHECK", "WIN32K_CALLOUT_W
 ms.date: 02/12/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - WIN32K_CALLOUT_WATCHDOG_BUGCHECK
 api_type:

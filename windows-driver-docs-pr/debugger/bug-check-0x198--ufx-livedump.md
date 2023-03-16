@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x198 UFX_LIVEDUMP", "UFX_LIVEDUMP"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - UFX_LIVEDUMP
 api_type:

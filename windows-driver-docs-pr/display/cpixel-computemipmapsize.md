@@ -4,6 +4,7 @@ description: The CPixel ComputeMipMapSize method determines the amount of memory
 keywords: ["ComputeMipMapSize method Display Devices", "ComputeMipMapSize method Display Devices , CPixel interface", "CPixel interface Display Devices , ComputeMipMapSize method"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - CPixel.ComputeMipMapSize
 api_location:

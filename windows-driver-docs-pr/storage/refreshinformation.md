@@ -4,6 +4,7 @@ description: The RefreshInformation WMI method updates all tables for the HBA th
 keywords: ["RefreshInformation function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - RefreshInformation
 api_type:

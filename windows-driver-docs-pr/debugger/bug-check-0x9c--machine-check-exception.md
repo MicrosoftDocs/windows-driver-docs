@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x9C MACHINE_CHECK_EXCEPTION", "MACHINE_CHECK_EXCEPTION"]
 ms.date: 05/13/2020
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - MACHINE_CHECK_EXCEPTION
 api_type:

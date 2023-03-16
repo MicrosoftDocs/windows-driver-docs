@@ -5,6 +5,7 @@ keywords: ["processor state parameter (PSP)", "PSP register", "psp Windows Debug
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - psp
 api_type:

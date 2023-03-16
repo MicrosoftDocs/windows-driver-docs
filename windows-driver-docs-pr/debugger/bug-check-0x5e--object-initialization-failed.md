@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x5E OBJECT_INITIALIZATION_FAILED", "OBJECT_INITIALIZATION
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - OBJECT_INITIALIZATION_FAILED
 api_type:

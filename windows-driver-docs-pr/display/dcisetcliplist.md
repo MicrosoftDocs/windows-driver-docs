@@ -4,6 +4,7 @@ description: DCISetClipList
 keywords: ["DCISetClipList Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DCISetClipList
 api_type:

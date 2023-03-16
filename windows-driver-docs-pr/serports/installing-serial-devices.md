@@ -24,10 +24,7 @@ There are no other serial-specific requirements for installing serial devices.
 
 For general information about installing devices, see the [Device Installation Design Guide](../install/index.md) section.
 
-For more information about serial devices, see [Serial Devices and Drivers](using-serial-sys-and-serenum-sys.md).
-
-
-## In This Topic
+For more information about serial devices, see [Serial Devices and Drivers](using-serial-sys-and-serenum-sys.md).## In This Topic
 
 This topic includes the following legacy COM port topics.
 
@@ -37,7 +34,6 @@ This topic includes the following legacy COM port topics.
 
 [Programming Installation for Legacy COM Ports](#programming-installation-for-legacy-com-ports)
 
-
 ## Programming Installation for Serial Devices that Use a 16550 UART-Compatible Interface
 
 To install a Plug and Play device that uses Serial as a lower-level device filter driver, do the following:
@@ -46,7 +42,6 @@ To install a Plug and Play device that uses Serial as a lower-level device filte
 
 - Set the **SerialSkipExternalNaming** entry value for the device to a nonzero value -- see [Registry Settings for a Plug and Play Serial Device](registry-settings-for-a-plug-and-play-serial-device.md).
 
-
 ## Programming Installation for Serenum Devices
 
 To install a device that is enumerated by Serenum, use the following *hardware ID* format for the device:
@@ -54,7 +49,6 @@ To install a device that is enumerated by Serenum, use the following *hardware I
 Serenum\\*XxxxYyyy*
 
 Where: *Xxxx* is a field of four ASCII characters that specify the EISA Manufacturing ID; *Yyyy* is a field of four ASCII characters that specify the Product ID. Serenum IDs are documented in the [Plug and Play External COM Device Specification](/previous-versions/windows/hardware/design/dn614609(v=vs.85))
-
 
 ## Programming Installation for Legacy COM Ports
 

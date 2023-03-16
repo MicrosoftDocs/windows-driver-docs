@@ -4,6 +4,7 @@ description: The DEBUG\_REQUEST\_GET\_ADDITIONAL\_CREATE\_OPTIONS Request operat
 keywords: ["DEBUG_REQUEST_GET_ADDITIONAL_CREATE_OPTIONS control code Windows Debugging"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DEBUG_REQUEST_GET_ADDITIONAL_CREATE_OPTIONS
 api_type:

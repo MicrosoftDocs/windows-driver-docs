@@ -4,6 +4,7 @@ description: The ScsiInquiry WMI method sends a SCSI inquiry command to the indi
 keywords: ["ScsiInquiry function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ScsiInquiry
 api_location:

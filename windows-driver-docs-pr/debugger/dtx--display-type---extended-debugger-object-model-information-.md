@@ -5,6 +5,7 @@ keywords: ["dtx (Display Type - Extended Debugger Object Model Information) Wind
 ms.date: 09/17/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - dtx (Display Type - Extended Debugger Object Model Information)
 api_type:

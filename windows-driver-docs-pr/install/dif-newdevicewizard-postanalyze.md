@@ -4,6 +4,7 @@ description: DIF_NEWDEVICEWIZARD_POSTANALYZE
 keywords: ["DIF_NEWDEVICEWIZARD_POSTANALYZE Device and Driver Installation"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DIF_NEWDEVICEWIZARD_POSTANALYZE
 api_location:

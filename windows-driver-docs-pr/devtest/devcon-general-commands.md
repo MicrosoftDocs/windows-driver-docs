@@ -5,6 +5,7 @@ keywords:
 - Device Console (DevCon.exe) Commands Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Device Console (DevCon.exe) Commands
 api_type:

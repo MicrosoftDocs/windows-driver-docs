@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xA5 ACPI_BIOS_ERROR", "ACPI_BIOS_ERROR"]
 ms.date: 09/12/2019
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - ACPI_BIOS_ERROR
 api_type:

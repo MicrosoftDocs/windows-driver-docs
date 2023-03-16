@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xDA SYSTEM_PTE_MISUSE", "SYSTEM_PTE_MISUSE"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SYSTEM_PTE_MISUSE
 api_type:

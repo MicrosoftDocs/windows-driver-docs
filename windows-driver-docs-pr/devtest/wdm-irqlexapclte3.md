@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["IrqlExApcLte3 rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - IrqlExApcLte3
 api_type:

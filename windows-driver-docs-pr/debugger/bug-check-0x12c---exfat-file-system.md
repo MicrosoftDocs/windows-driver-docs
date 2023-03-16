@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x12C EXFAT_FILE_SYSTEM", "EXFAT_FILE_SYSTEM"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EXFAT_FILE_SYSTEM
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0xD5 DRIVER_PAGE_FAULT_IN_FREED_SPECIAL_POOL", "DRIVER_PAG
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DRIVER_PAGE_FAULT_IN_FREED_SPECIAL_POOL
 api_type:

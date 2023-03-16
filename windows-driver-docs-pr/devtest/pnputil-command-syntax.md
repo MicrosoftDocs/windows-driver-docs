@@ -5,6 +5,7 @@ keywords:
 - PnPUtil Command Syntax Driver Development Tools
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PnPUtil
 api_type:

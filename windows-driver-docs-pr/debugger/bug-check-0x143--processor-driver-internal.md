@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x143 PROCESSOR_DRIVER_INTERNAL", "PROCESSOR_DRIVER_INTERN
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PROCESSOR_DRIVER_INTERNAL
 api_type:

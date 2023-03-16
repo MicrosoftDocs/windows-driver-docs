@@ -9,6 +9,7 @@ keywords:
 - NFP
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - NFC_CX_SEQUENCE_PRE_INIT_FLAG_SKIP_CONFIG
 - NFC_CX_SEQUENCE_PRE_INIT_FLAG_FORCE_CONFIG

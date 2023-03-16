@@ -5,6 +5,7 @@ keywords: ["GFlags Commands Windows Debugging"]
 ms.date: 06/12/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - GFlags Commands
 api_type:

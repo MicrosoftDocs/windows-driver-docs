@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["Init_NdisAllocateIoWorkItem rule (ndis)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - Init_NdisAllocateIoWorkItem
 api_type:

@@ -5,6 +5,7 @@ keywords: [".noshell (Prohibit Shell Commands) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - .noshell (Prohibit Shell Commands)
 api_type:

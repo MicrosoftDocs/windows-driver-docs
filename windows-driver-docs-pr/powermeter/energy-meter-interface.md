@@ -40,9 +40,6 @@ For more information see these topics.
 
 [EMI IOCTLs](/previous-versions/windows/hardware/drivers/dn957425(v=vs.85)) - 
  This section describes the I/O control codes (IOCTLs) that are supported by the Energy Measurement Interface (EMI).
- 
+
 [EMI Enumerations and Structures](/previous-versions/windows/hardware/drivers/dn957424(v=vs.85)) -
  This section describes the enumerations and structures that are supported by the Energy Measurement Interface (EMI).
- 
-
-

@@ -5,6 +5,7 @@ ms.date: 05/21/2018
 keywords: ["PnpSurpriseRemove rule (wdm)"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PnpSurpriseRemove
 api_type:

@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x2B PANIC_STACK_SWITCH", "PANIC_STACK_SWITCH"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - PANIC_STACK_SWITCH
 api_type:

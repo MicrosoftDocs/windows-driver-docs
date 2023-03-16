@@ -4,6 +4,7 @@ description: The SendRPL WMI method sends a read port list (RPL) command through
 keywords: ["SendRPL function Storage Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - SendRPL
 api_location:

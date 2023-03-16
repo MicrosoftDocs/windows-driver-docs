@@ -1,7 +1,8 @@
 ---
 title: Ks.h
 description: This section contains reference topics for the Ks.h header.
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
 
 # Ks.h

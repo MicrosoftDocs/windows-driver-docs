@@ -4,6 +4,7 @@ description: DCIEndAccess
 keywords: ["DCIEndAccess Display Devices"]
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - DCIEndAccess
 api_type:

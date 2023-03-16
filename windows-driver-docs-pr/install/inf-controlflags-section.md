@@ -5,6 +5,7 @@ keywords:
 - INF ControlFlags Section Device and Driver Installation
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - INF ControlFlags Section
 api_type:

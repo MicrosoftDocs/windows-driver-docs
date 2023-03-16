@@ -5,6 +5,7 @@ keywords: ["f, fp (Fill Memory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - f, fp (Fill Memory)
 api_type:

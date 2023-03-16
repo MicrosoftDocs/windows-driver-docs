@@ -1,9 +1,11 @@
 ---
 title: Debugger Data Model - The Collections Namespace
 description: Provides methods that allow for the creation and manipulation of collections of objects.
-ms.date: 12/13/2018
+ms.date: 03/10/2023
+ms.topic: reference
 ---
 # The Collections Namespace
+
 ## Summary
 The Collections namespace provides methods that allow for the creation and manipulation of collections of objects (e.g.: iterables). The API extension extends the existing Collections namespace with the following properties and methods:
 

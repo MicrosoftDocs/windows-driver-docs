@@ -5,6 +5,7 @@ keywords: ["Bug Check 0x1CC EXRESOURCE_TIMEOUT_LIVEDUMP", "EXRESOURCE_TIMEOUT_LI
 ms.date: 04/19/2018
 topic_type:
 - apiref
+ms.topic: reference
 api_name:
 - EXRESOURCE_TIMEOUT_LIVEDUMP
 api_type:
