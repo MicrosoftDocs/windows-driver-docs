@@ -17,15 +17,15 @@ For information about which types of IRPs are used in paging I/O, see [Dispatch 
 
 ## IRQL-Related Constraints
 
-- Dispatch routines in the paging I/O path should never call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) at any IRQL above APC_LEVEL. You can't do paging I/O (or any I/O) at DISPATCH_LEVEL because the system uses APCs to process I/O completion, so you'd never see the operation complete. If a dispatch routine raises IRQL, it must lower it before calling **IoCallDriver**.
+- Dispatch routines in the paging I/O path should never call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) at any IRQL greater than APC_LEVEL. You can't do paging I/O (or any I/O) at DISPATCH_LEVEL because the system uses APCs to process I/O completion, so you'd never see the operation completed. If a dispatch routine raises IRQL, it must lower it before calling **IoCallDriver**.
 
-- It is not necessarily safe for a dispatch routine to call **IoCallDriver** at APC_LEVEL in all situations. See [Dispatch Routine IRQL and Thread Context](dispatch-routine-irql-and-thread-context.md) to determine whether you can be at APC_LEVEL or must be at PASSIVE_LEVEL.
+- It isn't necessarily safe for a dispatch routine to call **IoCallDriver** at APC_LEVEL in all situations. See [Dispatch Routine IRQL and Thread Context](dispatch-routine-irql-and-thread-context.md) to determine whether you can be at APC_LEVEL or must be at PASSIVE_LEVEL.
 
 - Dispatch routines in the paging I/O path, such as read and write, can't safely call any kernel-mode routines that require callers to be running at IRQL PASSIVE_LEVEL.
 
 - Dispatch routines that are in the paging file I/O path can't safely call any kernel-mode routines that require a caller to be running at IRQL < DISPATCH_LEVEL.
 
-- Dispatch routines that aren't in the paging I/O path should never call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) at any IRQL above PASSIVE_LEVEL. If a dispatch routine raises IRQL, it must lower it before calling **IoCallDriver**.
+- Dispatch routines that aren't in the paging I/O path should never call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) at any IRQL greater than PASSIVE_LEVEL. If a dispatch routine raises IRQL, it must lower it before calling **IoCallDriver**.
 
 ## Constraints on Processing IRPs
 
