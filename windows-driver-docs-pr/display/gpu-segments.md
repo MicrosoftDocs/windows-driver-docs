@@ -6,16 +6,16 @@ ms.date: 04/20/2017
 
 # GPU segments
 
-Graphics Processing Unit (GPU) access to physical memory is abstracted in the Device Driver Interface (DDI) by a segmentation model. The [kernel-mode](https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode) driver expresses the physical memory resources available to a GPU by enumerating a set of segments, which are then managed by the video memory manager.
+Graphics Processing Unit (GPU) access to physical memory is abstracted in the Device Driver Interface (DDI) by a segmentation model. The [kernel-mode](/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode) driver expresses the physical memory resources available to a GPU by enumerating a set of segments, which are then managed by the video memory manager.
 
 There are three types of segments in Windows Display Driver Model (WDDM) v2:
 
 ### <span id="Memory_Segment"></span><span id="memory_segment"></span><span id="MEMORY_SEGMENT"></span>Memory Segment  
 A memory segment represents memory, dedicated to a GPU. This may be VRAM on a discrete GPU or firmware/driver reserved memory on an integrated GPU. There can be multiple memory segments enumerated.
 
-New in WDDM v2, a memory segment is managed as a pool of physical pages which are either 4KB or 64KB in size. Surface data is copied into and out of a memory segment using *Fill*/*Transfer*/*Discard*/*FillVirtuall*/*TransferVirtual* paging operations.
+New in WDDM v2, a memory segment is managed as a pool of physical pages which are either 4KB or 64KB in size. Surface data is copied into and out of a memory segment using *Fill*/*Transfer*/*Discard*/*FillVirtual*/*TransferVirtual* paging operations.
 
-The CPU may access the content of a memory segment in one of two ways. First, a memory segment may be visible in the physical address space of the CPU, in which case the video memory manager simply maps CPU virtual addresses directly to allocations within the segment. New in WDDM v2, the video memory manager also supports accessing the content of a memory segment through a programmable CPU host aperture associated with that segment.
+The CPU may access the content of a memory segment in one of two ways. First, a memory segment may be visible in the physical address space of the CPU, in which case the video memory manager simply maps CPU virtual addresses directly to allocations within the segment. Introduced in WDDM v2, the video memory manager also supports accessing the content of a memory segment through a programmable CPU host aperture associated with that segment.
 
 ### <span id="Aperture__Segment"></span><span id="aperture__segment"></span><span id="APERTURE__SEGMENT"></span>Aperture Segment  
 An aperture segment is a global page table used to make discontinuous system memory pages appears contiguous from the perspective of a GPU engine.
