@@ -9,7 +9,7 @@ api_name:
 - IAudioSystemEffects2
 api_type:
 - COM
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
 
 # IAudioSystemEffects2 interface

@@ -14,7 +14,6 @@ api_type:
 
 # DbgSrv Command-Line Options
 
-
 The DbgSrv command line uses the following syntax.
 
 ```console

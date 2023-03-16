@@ -1,8 +1,10 @@
 ---
 title: PKEY\_AudioEngine\_OEMPeriod
 description: PKEY\_AudioEngine\_OEMPeriod
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # PKEY\_AudioEngine\_OEMPeriod
 

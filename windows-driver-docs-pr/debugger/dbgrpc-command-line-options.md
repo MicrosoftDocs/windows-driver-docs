@@ -14,7 +14,6 @@ api_type:
 
 # DbgRpc Command-Line Options
 
-
 The DbgRpc command line must always contain exactly one of the -l, -e, -t, -c, or -a switches. The options following these switches depend on the switch used. The -s, -p, and -r options can be used with any other options.
 
 ```console

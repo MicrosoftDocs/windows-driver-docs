@@ -10,12 +10,12 @@ ms.date: 11/09/2017
 # Software Defined Battery
 
 >[!NOTE]
-> Some information relates to pre-released product which may be substantially modified before it's commercially released. 
+> Some information relates to pre-released product which may be substantially modified before it's commercially released.
 > Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## Introduction
 
-The goal of this topic is to introduce Software Defined Batteries (SDB), describe Windows SDB architecture and detail the Windows API and DDI contracts for this feature. 
+The goal of this topic is to introduce Software Defined Batteries (SDB), describe Windows SDB architecture and detail the Windows API and DDI contracts for this feature.
 
 The topic starts by introducing the Simple Age Balancing SDB algorithm for a hypothetical two battery system. This is followed by architecture layout and API contract needed to implement the SDB algorithm.
 
@@ -38,11 +38,12 @@ The topic starts by introducing the Simple Age Balancing SDB algorithm for a hyp
 - Non-Swappable Batteries - Batteries that are not designed and meant to be removed by the end user
 
 ## SDB Overview
-The MSR research paper on Software Defined Batteries can be found here: [https://www.microsoft.com/research/wp-content/uploads/2016/02/multibattery_sosp2015.pdf](https://www.microsoft.com/research/wp-content/uploads/2016/02/multibattery_sosp2015.pdf). 
 
-This topic reprises select ideas described in this paper and presents them with a view of productizing software based battery age balancing feature in laptops and other mobile devices. 
+The MSR research paper on Software Defined Batteries can be found here: [https://www.microsoft.com/research/wp-content/uploads/2016/02/multibattery_sosp2015.pdf](https://www.microsoft.com/research/wp-content/uploads/2016/02/multibattery_sosp2015.pdf).
 
-Imagine a two battery system. Where one battery is a non removable battery, situated next to the SOC – let’s call this *internal battery*. The other battery is hot swappable battery, situated next to a removable keyboard – let’s call this *external battery*. 
+This topic reprises select ideas described in this paper and presents them with a view of productizing software based battery age balancing feature in laptops and other mobile devices.
+
+Imagine a two battery system. Where one battery is a non removable battery, situated next to the SOC – let’s call this *internal battery*. The other battery is hot swappable battery, situated next to a removable keyboard – let’s call this *external battery*.
 
 *A Multi-Battery System*
 
@@ -68,27 +69,26 @@ The simple age balancing algorithm may be put to use only when there is enough c
 
 The OEM is free to choose the constraints and conditions when the simple age balancing algorithm is not put into effect, besides when either internal or external batteries are out of power. For example the OEM may choose to not perform any age balancing when:
 
-1.  The SOC/Processor is running in high performance mode
-2.  The system is thermally unstable
+1. The SOC/Processor is running in high performance mode
+2. The system is thermally unstable
 
 When the simple age balancing algorithm is not put in use (because of one or more conditions described above), the logic will revert back to OEM’s proprietary battery usage policy as depicted by process box (3) in the above flowchart. Process box (3) is the logic OEM would have put into effect if SDB was not supported.
 
-
-## <span id="adapting-sdb"></span><span id="ADAPTING-SDB"></span>Adapting SDB Algorithm for use with Hot Swappable Batteries
+## Adapting SDB Algorithm for use with Hot Swappable Batteries
 
 The simple age balancing SDB algorithm attempts to use the battery that is healthiest, although this strategy is works well to improve the long term battery life, it may severely impact the short term usability of the system as described in the following scenario.
 
 In the two battery system described above, consider the following situation:
 
-1.  The user is expected to use the system long enough until charge in both internal and external Batteries is exhausted.
+1. The user is expected to use the system long enough until charge in both internal and external Batteries is exhausted.
 
-2.  The external battery has aged more compared to the internal battery.
+2. The external battery has aged more compared to the internal battery.
 
 When the simple age balancing algorithm is exercised on this system it will attempt to deplete the charge stored in the internal battery first (based on condition #1 and #2 listed above). When user decides to detach the external battery after a while, it would result in a bad user experience because the battery capacity made available for use would dramatically decrease once external battery is detached as the internal battery would be used up.
 
 On a non-SDB system, this problem generally does not occur, because in most cases the external battery is depleted before the internal battery is put to use.
 
-It is therefore desired to selectively disable the simple age balancing algorithm when above scenario is likely to happen. 
+It is therefore desired to selectively disable the simple age balancing algorithm when above scenario is likely to happen.
 
 To summarize, whenever the user is expected to use the system for long duration with external battery removed, it is optimal to disable the SDB Algorithm and revert to using the OEM battery usage policy (which generally favors using the external battery first).
 
@@ -98,8 +98,7 @@ Windows calculates the battery availability and produces a “Preserve Non-Hot S
 
 ![Simple Age Balancing SDB Algorithm Adapted for Hot Swappable Batteries.](images/powermeter-simple-age-balancing-algorithm-hot-swap.png)
 
-
-## <span id="implementing-sdb"></span><span id="IMPLEMENTING-SDB"></span>Implementing SDB Algorithm in Firmware
+## Implementing SDB Algorithm in Firmware
 
 This section depicts the full battery discharge control logic implemented in the system firmware. This builds on the battery age balancing logic described above to demonstrate how an existing multi-battery discharge logic (marked in (Y) block) would be incorporated with it.
 
@@ -110,13 +109,11 @@ Note that this is not a prescription of how the SDB algorithm should be implemen
 
 ![Full Firmware Implemenation of Simple Age Balancing SDB Algorithm.](images/powermeter-firmware-age-balancing-algorithm-hot-swap.png)
 
-
 ## Power Stack Architecture
 
 This section describes the component layout for all components participating in the power stack and their relative relationship with each other.
 
 ![Power stack architecture showing HPMI.](images/powermeter-hpmi-stack-architecture.png)
-
 
 ### Battery Miniport
 
@@ -124,7 +121,7 @@ The battery miniport interfaces remain the same.
 
 SDB interfaces do not affect or influence OEM’s desire to rely on ACPI/CmBatt mechanism or to develop their proprietary miniport.
 
-Note: Windows forwards all [IOCTL_BATTERY_SET_INFORMATION](/windows/desktop/Power/ioctl-battery-set-information) commands to all battery devices enumerated on the system.
+Windows forwards all [IOCTL_BATTERY_SET_INFORMATION](/windows/desktop/Power/ioctl-battery-set-information) commands to all battery devices enumerated on the system.
 
 ### HPMI
 
@@ -136,9 +133,9 @@ HPMI has intimate knowledge of the underlying hardware configuration and state, 
 
 To implement the SDB feature, the HPMI driver will:
 
-1.  Register itself with Windows.
-2.  Advertise SDB Support.
-3.  Consume SDB control parameters provided by Windows.
+1. Register itself with Windows.
+2. Advertise SDB Support.
+3. Consume SDB control parameters provided by Windows.
 
 Multi-battery systems that support SDB are required to implement HPMI interface going forward. The HPMI API protocol is a new standard for implementing multiple battery systems.
 
@@ -159,10 +156,9 @@ The following diagram illustrates two examples of how the SDB algorithm may be i
 
 ![HPMI and firmware example SDB algorithm stack examples.](images/powermeter-firmware-and-hpmi-implementation.png)
 
-
 ### HPMI Implements SDB Algorithm
 
-HPMI may choose to implement the SDB Algorithm, this will require HPMI to forward charge/discharge hints to the firmware. 
+HPMI may choose to implement the SDB Algorithm, this will require HPMI to forward charge/discharge hints to the firmware.
 
 ### Firmware Implements SDB Algorithm
 
@@ -172,9 +168,7 @@ Alternatively, HPMI may act as a forwarder and simply forward the Windows batter
 
 2. SDB algorithm is an extension to discharge logic already implemented in the multi battery systems
 
-A full flow-chart model depicting how SDB Algorithm is implemented is shown in [Implementing SDB Algorithm in Firmware](#IMPLEMENTING-SDB).
-
-
+A full flow-chart model depicting how SDB Algorithm is implemented is shown in [Implementing SDB Algorithm in Firmware](#implementing-sdb-algorithm-in-firmware).
 
 ## Interface Definitions
 
@@ -201,7 +195,6 @@ Note that the device index should be set to zero.
 [IOCTL_HPMI_QUERY_CAPABILITIES](/windows-hardware/drivers/ddi/hpmi/ni-hpmi-ioctl_hpmi_query_capabilities) is used to discover features supported by HPMI. IOCTL_HPMI_QUERY_CAPABILITIES is a required IOCTL.
 
 Windows will issue this IOCL to HPMI once after a new HPMI driver instance is discovered. 
-
 
 ```cpp
 //
@@ -269,15 +262,13 @@ typedef struct _HPMI_QUERY_CAPABILITIES_RESPONSE {
     //
 ```
 
-
 ### Command Format
 
 Windows issues this IOCTL with [HPMI_QUERY_CAPABILITIES](/windows-hardware/drivers/ddi/hpmi/ns-hpmi-_hpmi_query_capabilities).
 
 The Version is set to HPMI_QUERY_CAPABILITIES_VERSION_1.
 
-
-### Response Format 
+### Response Format
 
 HPMI must return STATUS_SUCCESS code.
 
@@ -287,12 +278,11 @@ HPMI responds by setting the following values in [HPMI_QUERY_CAPABILITIES_RESPON
 - RequestService is set to HPMI_REQUEST_SERVICE_BATTERY_UTILIZATION_HINTS to ensure HPMI driver receives [IOCTL_HPMI_BATTERY_UTILIZATION_HINT](/windows-hardware/drivers/ddi/hpmi/ni-hpmi-ioctl_hpmi_battery_utilization_hint).
 - SdbCapabilities is set to HPMI_CAPABILITY_SDB_OEM_SIMPLE_AGE_BALANCING to indicate battery age balancing support.
 
-
 #### Battery Utilization
 
 Windows issues [IOCTL_HPMI_BATTERY_UTILIZATION_HINT](/windows-hardware/drivers/ddi/hpmi/ni-hpmi-ioctl_hpmi_battery_utilization_hint) to HPMI to provide most updated battery utilization hints. IOCTL_HPMI_BATTERY_UTILIZATION_HINT is a required IOCTL.
 
-HPMI may utilize the PreserveNonHotSwappableBatteries hint as described in [Adapting SDB Algorithm for use with Hot Swappable Batteries](#ADAPTING-SDB) to conserve the internal batteries.
+HPMI may utilize the PreserveNonHotSwappableBatteries hint as described in [Adapting SDB Algorithm for use with Hot Swappable Batteries](#adapting-sdb-algorithm-for-use-with-hot-swappable-batteries) to conserve the internal batteries.
 
 ```cpp
 //
@@ -368,8 +358,7 @@ typedef struct _HPMI_BATTERY_UTILIZATION_HINT {
     sizeof(HPMI_BATTERY_UTILIZATION_HINT)
 ```
 
-
-### Command Format 
+### Command Format
 
 Windows issues this IOCTL with HPMI_BATTERY_UTILIZATION_HINT. Version is set to *HPMI_BATTERY_UTILIZATION_HINT_VERSION_1*.
 
@@ -387,12 +376,9 @@ HPMI must return STATUS_SUCCESS code.
 
 No data is returned in the response.
 
-
 ## Sample Interface Contract
 
 Refer to [HMPI.h](/windows-hardware/drivers/ddi/hpmi/index) for a full (sample) API contract for the interface definitions described here.
-
-
 
 >[!NOTE]
 > Contents of this document are subject to change without notice.

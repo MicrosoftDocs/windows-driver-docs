@@ -13,10 +13,6 @@ ms.date: 04/20/2017
 
 # Writing Battery Miniclass Drivers
 
-
-## <span id="ddk_writing_battery_miniclass_drivers_dg"></span><span id="DDK_WRITING_BATTERY_MINICLASS_DRIVERS_DG"></span>
-
-
 A battery typically has a pair of drivers: the generic battery class driver that Microsoft provides, and a miniclass driver written specifically for that individual type of battery.
 
 The class driver defines the overall functionality of the batteries in the system and interacts with the power manager.
@@ -46,11 +42,3 @@ Information about writing battery miniclass drivers is organized as follows:
 [Unload Routine of a Battery Miniclass Driver](unload-routine-of-a-battery-miniclass-driver.md)
 
 [Installing a Battery Driver](installing-a-battery-driver.md)
-
- 
-
- 
-
-
-
-

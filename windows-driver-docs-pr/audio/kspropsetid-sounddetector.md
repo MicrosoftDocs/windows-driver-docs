@@ -1,8 +1,10 @@
 ---
 title: KSPROPSETID\_SoundDetector
 description: Learn about the 'KSPROPSETID_SoundDetector' property set. This set includes 'KSPROPERTY\_SOUNDDETECTOR\_ARMED' and '\_PATTERNS', and \_MATCHRESULT properties.
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # KSPROPSETID\_SoundDetector
 

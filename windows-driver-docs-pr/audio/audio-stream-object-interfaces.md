@@ -1,8 +1,10 @@
 ---
 title: Audio Stream Object Interfaces
 description: Audio Stream Object Interfaces
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # Audio Stream Object Interfaces
 

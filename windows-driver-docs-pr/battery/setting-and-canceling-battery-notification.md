@@ -13,10 +13,6 @@ ms.date: 04/20/2017
 
 # Setting and Canceling Battery Notification
 
-
-## <span id="ddk_setting_and_canceling_battery_notification_dg"></span><span id="DDK_SETTING_AND_CANCELING_BATTERY_NOTIFICATION_DG"></span>
-
-
 A miniclass driver provides a [*BatteryMiniSetStatusNotify*](/windows/win32/api/batclass/nc-batclass-bclass_set_status_notify_callback) routine so that the class driver can request notification of specific conditions. The routine is declared as follows:
 
 ```cpp
@@ -48,6 +44,3 @@ NTSTATUS
 The *Context* parameter is a pointer to the context area allocated by the miniclass driver and passed to the class driver in the BATTERY\_MINIPORT\_INFO structure at device initialization.
 
 Miniclass drivers can omit functionality for both routines and return STATUS\_NOT\_SUPPORTED. However, a miniclass driver that provides a *BatteryMiniSetStatusNotify* routine must provide a corresponding *BatteryMiniDisableStatusNotify* routine, and vice versa.
-
- 
-

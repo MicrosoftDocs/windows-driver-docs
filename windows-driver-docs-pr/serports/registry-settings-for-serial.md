@@ -24,16 +24,10 @@ This section describes the following registry settings that Serial uses to confi
 
 Serial uses the registry settings to configure a serial device in the following way:
 
--   If a device-specific entry value is present, Serial uses it.
+- If a device-specific entry value is present, Serial uses it.
 
--   If a device-specific entry value is not present, but there is a corresponding Serial service entry value, Serial uses the service entry value.
+- If a device-specific entry value is not present, but there is a corresponding Serial service entry value, Serial uses the service entry value.
 
--   If a device-specific entry value is not present and there is no corresponding Serial service entry value, Serial uses a default service value that is statically defined in *serial.sys*.
+- If a device-specific entry value is not present and there is no corresponding Serial service entry value, Serial uses a default service value that is statically defined in *serial.sys*.
 
-For general information on how to locate and work with Windows drivers registry keys, see [Registry Trees for Devices and Drivers](../install/overview-of-registry-trees-and-keys.md). 
-
- 
-
-
-
-
+For general information on how to locate and work with Windows drivers registry keys, see [Registry Trees for Devices and Drivers](../install/overview-of-registry-trees-and-keys.md).

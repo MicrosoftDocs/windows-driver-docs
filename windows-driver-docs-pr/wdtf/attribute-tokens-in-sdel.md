@@ -5,6 +5,7 @@ keywords:
 - SDEL
 - attribute tokens
 ms.date: 09/03/2020
+ms.topic: reference
 ---
 
 # Attribute Tokens in SDEL

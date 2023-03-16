@@ -9,8 +9,9 @@ api_name:
 - KSPROPERTY_AUDIO_STEREO_ENHANCE
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSPROPERTY\_AUDIO\_STEREO\_ENHANCE
 

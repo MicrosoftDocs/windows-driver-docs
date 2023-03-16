@@ -25,6 +25,3 @@ The Ports class installer performs the following tasks when it installs a serial
 3. Sets the device friendly name for the device. You obtain the name using the SPDRP\_FRIENDLYNAME flag with **SetupDiGetDeviceRegistryProperty**.
 
 You can supply a co-installer to set [Registry settings for a Plug and Play serial device](registry-settings-for-a-plug-and-play-serial-device.md). If an entry value is not present in the registry, Serial uses a default value for the port.
-
- 
-

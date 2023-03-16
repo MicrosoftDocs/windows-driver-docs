@@ -2,7 +2,7 @@
 title: SerCx I/O Control Requests
 description: A list of the serial I/O control requests that SerCx supports.
 keywords:
--    SerCx IOCTLs
+-  SerCx IOCTLs
 ms.date: 11/30/2017
 ---
 

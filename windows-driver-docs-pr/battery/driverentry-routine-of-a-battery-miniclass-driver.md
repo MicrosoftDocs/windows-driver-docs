@@ -9,29 +9,25 @@ ms.date: 04/20/2017
 
 # DriverEntry Routine of a Battery Miniclass Driver
 
-
-## <span id="ddk_driverentry_routine_of_battery_miniclass_driver_dg"></span><span id="DDK_DRIVERENTRY_ROUTINE_OF_BATTERY_MINICLASS_DRIVER_DG"></span>
-
-
 The [*DriverEntry*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine initializes the miniclass driver.
 
 The miniclass driver's [*DriverEntry*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine sets up the following driver-specific entry points:
 
--   The [*Unload*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) routine in *DriverObject*-&gt;**DriverUnload**
+- The [*Unload*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) routine in *DriverObject*-&gt;**DriverUnload**
 
--   The driver's [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine in *DriverObject*-&gt;**DriverExtension**-&gt;**AddDevice**
+- The driver's [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine in *DriverObject*-&gt;**DriverExtension**-&gt;**AddDevice**
 
--   The [*DRIVER_DISPATCH*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_POWER**](../kernel/irp-mj-power.md)\]
+- The [*DRIVER_DISPATCH*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_POWER**](../kernel/irp-mj-power.md)\]
 
--   The [*DRIVER_DISPATCH*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_PNP**](../kernel/irp-mj-pnp.md)\]
+- The [*DRIVER_DISPATCH*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_PNP**](../kernel/irp-mj-pnp.md)\]
 
--   The [*DRIVER_DISPATCH*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_CREATE**](../kernel/irp-mj-create.md)\]
+- The [*DRIVER_DISPATCH*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_CREATE**](../kernel/irp-mj-create.md)\]
 
--   The [*DRIVER_DISPATCH*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_CLOSE**](../kernel/irp-mj-close.md)\]
+- The [*DRIVER_DISPATCH*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_CLOSE**](../kernel/irp-mj-close.md)\]
 
--   The [*DRIVER_DISPATCH*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_DEVICE\_CONTROL**](../kernel/irp-mj-device-control.md)\]
+- The [*DRIVER_DISPATCH*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_DEVICE\_CONTROL**](../kernel/irp-mj-device-control.md)\]
 
--   The [*DRIVER_DISPATCH*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_SYSTEM\_CONTROL**](../kernel/irp-mj-system-control.md)\].
+- The [*DRIVER_DISPATCH*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) callback function in *DriverObject*-&gt;**MajorFunction**\[[**IRP\_MJ\_SYSTEM\_CONTROL**](../kernel/irp-mj-system-control.md)\].
 
 The following sample code initializes these entry points for a hypothetical NewBatt miniclass driver:
 
@@ -65,6 +61,3 @@ For additional routine-specific requirements, see the following topics:
 [*DRIVER_DISPATCH*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
 [*DispatchClose*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
-
- 
-

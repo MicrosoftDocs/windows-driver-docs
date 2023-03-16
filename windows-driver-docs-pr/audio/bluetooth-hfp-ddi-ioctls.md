@@ -1,8 +1,10 @@
 ---
 title: Bluetooth HFP DDI IOCTLs
 description: Windows 8 introduces a set of I/O control codes (IOCTLs) as part of a DDI that allows the audio driver to work with the Hands-free profile (HFP) class driver, to operate a Bluetooth audio bypass connection.
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # Bluetooth HFP DDI IOCTLs
 

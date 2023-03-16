@@ -1,12 +1,17 @@
 ---
 title: Debugger Data Model - Basic Block Objects
 description: Basic Blocks are regions of code with (typically) one entry point and one exit point.
-ms.date: 12/12/2018
+ms.date: 03/10/2023
+ms.topic: reference
 ---
-# Basic Block Objects 
+# Basic Block Objects
+
 ## Summary
+
 Basic Blocks are regions of code with (typically) one entry point and one exit point. The [disassembler](dbgmodel-object-disassembler.md)'s  DisassembleBlocks and DisassembleFunction methods both return collections of basic blocks. The DisassembleBlocks method does a simple analysis for basic blocks and may result in blocks with multiple entry points. DisassembleFunction will perform a complete flow analysis of the function resulting in basic blocks with a single entry and single exit.
+
 ## Object Properties
+
 |Name|Description|
 |--- |--- |
 |StartAddress|The starting address of the basic block.|

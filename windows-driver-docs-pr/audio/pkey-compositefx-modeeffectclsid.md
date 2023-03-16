@@ -1,7 +1,8 @@
 ---
 title: PKEY\_CompositeFX\_ModeEffectClsid
 description: In Windows 10 Version 1803 later, the PKEY\_Compositefx\_ModeEffectClsid property key identifies the mode effect (MFX) supported by the driver. The driver developer should specify the list of supported processing modes that their driver supports.
-ms.date: 11/15/2018
+ms.date: 03/06/2023
+ms.topic: reference
 ---
 
 # PKEY\_CompositeFX\_ModeEffectClsid

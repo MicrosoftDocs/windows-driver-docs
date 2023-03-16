@@ -8,10 +8,6 @@ ms.date: 04/20/2017
 
 # Responding to Battery Information Queries
 
-
-## <span id="ddk_responding_to_battery_information_queries_dg"></span><span id="DDK_RESPONDING_TO_BATTERY_INFORMATION_QUERIES_DG"></span>
-
-
 The battery class driver calls the [*BatteryMiniQueryInformation*](/windows/win32/api/batclass/nc-batclass-bclass_query_information_callback) routine to get a variety of information about the current battery. This routine is declared as follows:
 
 ```cpp
@@ -34,23 +30,20 @@ The *Level* parameter specifies the kind of information requested. The miniclass
 
 A miniclass driver should be prepared to handle requests for the following:
 
--   Battery capabilities, chemistry, capacity, low-capacity alert levels, and reserve charge
+- Battery capabilities, chemistry, capacity, low-capacity alert levels, and reserve charge
 
--   Temperature, in tenths of a degree Kelvin
+- Temperature, in tenths of a degree Kelvin
 
--   Estimated remaining run time, in seconds
+- Estimated remaining run time, in seconds
 
--   Device name
+- Device name
 
--   Manufacturer's battery model name
+- Manufacturer's battery model name
 
--   Date of manufacture
+- Date of manufacture
 
--   Unique ID
+- Unique ID
 
--   Serial number
+- Serial number
 
 Some batteries are not capable of reporting all this information. A miniclass driver should return STATUS\_INVALID\_DEVICE\_REQUEST for any information that its device cannot supply.
-
- 
-

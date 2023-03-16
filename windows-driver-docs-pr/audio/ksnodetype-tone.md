@@ -9,8 +9,9 @@ api_name:
 - KSNODETYPE_TONE
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSNODETYPE\_TONE
 

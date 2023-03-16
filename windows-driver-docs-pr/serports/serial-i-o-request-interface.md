@@ -257,10 +257,7 @@ SerCx2, SerCx, and Serial.sys support many of the same serial IOCTLs. However, S
 <td><p>Yes</p></td>
 </tr>
 </tbody>
-</table>
-
-
-**Notes**
+</table>**Notes**
 
 1. SerCx2 may or may not support this IOCTL depending on the implementation of the serial controller driver and the capabilities of the serial controller hardware.
 

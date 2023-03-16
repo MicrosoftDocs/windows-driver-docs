@@ -2,8 +2,9 @@
 title: KSPROPSETID\_AC3
 description: KSPROPSETID\_AC3
 keywords: ["KSPROPSETID_AC3"]
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSPROPSETID\_AC3
 

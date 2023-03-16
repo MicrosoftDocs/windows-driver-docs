@@ -1,8 +1,10 @@
 ---
 title: PKEY\_AudioDevice\_NeverSetAsDefaultEndpoint
 description: PKEY\_AudioDevice\_NeverSetAsDefaultEndpoint
-ms.date: 11/28/2017
+ms.date: 03/06/2023
+ms.topic: reference
 ---
+
 
 # PKEY\_AudioDevice\_NeverSetAsDefaultEndpoint
 

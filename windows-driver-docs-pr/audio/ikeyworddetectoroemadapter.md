@@ -9,11 +9,11 @@ api_name:
 - IKeywordDetectorOemAdapter
 api_type:
 - COM
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
 
-# IKeywordDetectorOemAdapter interface
 
+# IKeywordDetectorOemAdapter interface
 
 **IKeywordDetectorOemAdapter** is a Component Object Model (COM) interface for interacting with the Voice Activation Driver Interface. The **IKeywordDetectorOemAdapter** interface is supported in Windows 10 and later versions of Windows.
 

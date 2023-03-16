@@ -4,7 +4,8 @@ description: Learn more about the DRV_QUERYDEVNODE function.
 keywords:
 - mmddk/xxxMessage
 - xxxMessage
-ms.date: 10/27/2022
+ms.date: 03/06/2023
+ms.topic: reference
 ---
 
 # DRV\_QUERYDEVNODE function

@@ -9,8 +9,9 @@ api_name:
 - KSNODETYPE_MICROPHONE_ARRAY_PROCESSOR
 api_type:
 - NA
-ms.date: 11/28/2017
+ms.date: 03/06/2023
 ---
+
 
 # KSNODETYPE\_MICROPHONE\_ARRAY\_PROCESSOR
 

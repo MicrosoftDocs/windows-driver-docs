@@ -12,16 +12,4 @@ ms.date: 04/20/2017
 
 # Removing a Plug and Play RS-232 Port
 
-
-
-
-
 The Plug and Play manager removes an RS-232 port by sending a remove request to the top of the RS-232 port stack. Serenum passes the request down the device stack, removes the filter DO in the port stack, and removes an associated PDO, if one exists. Removal of the RS-232 port also removes the serial device attached to the port.
-
- 
-
- 
-
-
-
-

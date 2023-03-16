@@ -26,21 +26,21 @@ For general information on how to locate and work with Windows drivers registry 
 
 The following entry values are the same as described for a [Plug and Play serial device](registry-settings-for-a-plug-and-play-serial-device.md):
 
--   **ClockRate**
+- **ClockRate**
 
--   **PortIndex**
+- **PortIndex**
 
--   **Indexed**
+- **Indexed**
 
--   **RxFIFO**
+- **RxFIFO**
 
--   **TxFIFO**
+- **TxFIFO**
 
--   **MaskInverted**
+- **MaskInverted**
 
--   **DisablePort**
+- **DisablePort**
 
--   **ForceFifoEnable**
+- **ForceFifoEnable**
 
 The following additional entry values are used with legacy COM ports:
 
@@ -73,11 +73,3 @@ Specifies a Plug and Play device identifier for a Plug and Play device. Serial r
 
 <a href="" id="legacydiscovered--reg-dword-"></a>**LegacyDiscovered** (REG\_DWORD)  
 Boolean flag that indicates whether Serial has previously reported the device to the Plug and Play manager. Serial reads and sets this value. If **LegacyDiscovered** is nonzero, Serial has previously reported the device and does not report the device again. Otherwise, Serial reports the device and sets the entry value to 0x00000001.
-
- 
-
- 
-
-
-
-

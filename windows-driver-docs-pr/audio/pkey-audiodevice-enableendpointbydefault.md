@@ -1,7 +1,8 @@
 ---
 title: PKEY\_AudioDevice\_EnableEndpointByDefault
 description: PKEY\_AudioDevice\_EnableEndpointByDefault
-ms.date: 01/15/2020
+ms.date: 03/06/2023
+ms.topic: reference
 ---
 
 # PKEY\_AudioDevice\_EnableEndpointByDefault
