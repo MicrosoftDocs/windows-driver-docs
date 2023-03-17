@@ -1,7 +1,7 @@
 ---
 title: Output keywords
 description: These keywords are used to describe the actual output processes for a given 3D manufacturing job.
-ms.date: 08/17/2021
+ms.date: 03/17/2023
 ---
 
 # Output keywords

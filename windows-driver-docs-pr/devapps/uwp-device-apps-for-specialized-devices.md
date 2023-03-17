@@ -1,15 +1,14 @@
 ---
 title: UWP device apps for internal devices
 description: This topic introduces the ways that UWP device apps can access internal devices.
-ms.date: 08/12/2021
+ms.date: 03/17/2023
 ---
 
 # UWP device apps for internal devices
 
 This topic introduces the ways that UWP device apps can access internal devices. *Internal devices* are devices that reside inside or are integrated with the PC enclosure.
 
-> [!NOTE]
-> Some APIs that are mentioned in this topic can be used to access external devices too. This topic focuses specifically on accessing internal devices. For more info about each API, see the [Windows API reference](/uwp/api/).
+Some APIs that are mentioned in this topic can be used to access external devices too. This topic focuses specifically on accessing internal devices. For more info about each API, see the [Windows API reference](/uwp/api/).
 
 ## Accessing internal devices
 

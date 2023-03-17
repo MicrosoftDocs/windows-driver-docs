@@ -1,7 +1,7 @@
 ---
 title: Identifying the location of internal cameras
 description: This topic provides info about supporting internal cameras on systems in Windows 8.1.
-ms.date: 08/12/2021
+ms.date: 03/17/2023
 ---
 
 # Identifying the location of internal cameras (UWP device apps)
@@ -160,7 +160,7 @@ The PLD_Panel value provided in ACPI tables enables cameras to be distinguished 
 > [!NOTE]
 > The PLD_Panel setting in the registry key is optional. Windows determines the camera's physical location by the settings in the ACPI table.
 
-The PLD\_Panel registry value is defined as _PLD (Physical Device Location) in the ACPI specification. This value, which indicates the camera's physical location in its enclosure, must be one of the following.
+The PLD_Panel registry value is defined as _PLD (Physical Device Location) in the ACPI specification. This value, which indicates the camera's physical location in its enclosure, must be one of the following.
 
 | Value | Description |
 |--|--|

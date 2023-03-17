@@ -1,7 +1,7 @@
 ---
 title: Step 1 Create a UWP device app
 description: This topic describes the basic process for creating a UWP device app by using Microsoft Visual Studio. Learn about the tasks that are common to all UWP device apps.
-ms.date: 08/12/2021
+ms.date: 03/17/2023
 ---
 
 # Step 1: Create a UWP device app
@@ -12,8 +12,7 @@ This topic describes the basic process for creating a UWP device app by using Mi
 
 A UWP device app is a special kind of UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more info about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-> [!NOTE]
-> This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
+This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 
 ## Before you begin
 
@@ -59,8 +58,7 @@ After you've created a Microsoft Store account and selected a publisher name, as
 
 - Publisher display name
 
-> [!NOTE]
-> If you've already developed device metadata, after you associate the app with the Microsoft Store, you'll need to update the device metadata with the values from the app manifest.
+If you've already developed device metadata, after you associate the app with the Microsoft Store, you'll need to update the device metadata with the values from the app manifest.
 
 ### To associate your app with the Microsoft Store
 
@@ -86,8 +84,7 @@ After you associate your app with the Microsoft Store, review your app's package
 
 1. After the file opens in Manifest Designer, click the **Packaging** tab to see the Package and Publisher information.
 
-    > [!NOTE]
-    > To see the same information in XML, right-click **package.appxmanifest** and select **Open With &gt; XML (Text) Editor**.
+    To see the same information in XML, right-click **package.appxmanifest** and select **Open With &gt; XML (Text) Editor**.
 
 1. Take note of your Package Name, Publisher Name, and App ID. You'll need them for the next step, [Step 2: Create device metadata](step-2--create-device-metadata.md).
 

@@ -8,7 +8,7 @@ keywords:
 - WDM function drivers WDK ACPI , operation regions
 - operation region memory buffer WDK ACPI
 - memory buffers WDK ACPI
-ms.date: 08/17/2021
+ms.date: 03/17/2023
 ---
 
 # Maintaining an Operation Region Memory Buffer

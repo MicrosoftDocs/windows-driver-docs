@@ -1,7 +1,7 @@
 ---
 title: Component Firmware Update (CFU) firmware implementation guide
 description: Provides detailed guidance on implementing the Component Firmware Update (CFU) protocol and creating new firmware images to install on the target device.
-ms.date: 03/03/2023
+ms.date: 03/17/2023
 ---
 
 # Component Firmware Update (CFU) firmware implementation guide

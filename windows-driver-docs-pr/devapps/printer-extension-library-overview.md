@@ -1,7 +1,7 @@
 ---
 title: Printer extension library overview for UWP device apps
 description: This topic introduces the printer extension library, a library that helps device manufacturers write UWP device apps for their printer.
-ms.date: 08/13/2021
+ms.date: 03/17/2023
 ---
 
 # Printer extension library overview for UWP device apps
@@ -38,8 +38,7 @@ In order to convert the C# interfaces, classes and methods to something supporte
 
 - **PrinterNotificationHelper.cs** demonstrates how to show toast UI for notifications.
 
-> [!NOTE]
-> The **Output type** for the PrinterExtensionHelperLibrary assembly is specified on **Application** page of the project properties window.
+The **Output type** for the PrinterExtensionHelperLibrary assembly is specified on **Application** page of the project properties window.
 
 ## Related topics
 

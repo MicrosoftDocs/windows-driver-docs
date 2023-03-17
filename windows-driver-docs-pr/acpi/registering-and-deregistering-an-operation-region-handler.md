@@ -8,7 +8,7 @@ keywords:
 - WDM function drivers WDK ACPI , operation regions
 - registering operation region handlers
 - deregistering operation region handlers
-ms.date: 08/17/2021
+ms.date: 03/17/2023
 ---
 
 # Registering and Deregistering an Operation Region Handler

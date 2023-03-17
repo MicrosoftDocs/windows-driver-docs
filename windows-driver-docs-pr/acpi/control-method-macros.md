@@ -3,7 +3,7 @@ title: Control Method Macros
 description: Provides information about control method macros
 keywords:
 - ACPI control methods WDK, macros
-ms.date: 08/17/2021
+ms.date: 03/17/2023
 ---
 
 # Control Method Macros

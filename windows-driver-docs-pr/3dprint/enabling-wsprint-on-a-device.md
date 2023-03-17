@@ -1,7 +1,7 @@
 ---
 title: Enable WSPrint 2.0 on a device
 description: Use these settings to enable WSPrint 2.0 on a device
-ms.date: 08/17/2021
+ms.date: 03/17/2023
 ---
 
 # Enable WSPrint 2.0 on a device

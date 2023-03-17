@@ -3,7 +3,7 @@ title: Creating Standard Resource Maps
 description: Provides information on creating standard resource maps.
 keywords:
 - standard resource maps WDK multifunction devices
-ms.date: 08/13/2021
+ms.date: 03/17/2023
 ---
 
 # Creating Standard Resource Maps

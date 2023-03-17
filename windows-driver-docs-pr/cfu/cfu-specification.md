@@ -1,7 +1,7 @@
 ---
 title: Component Firmware Update (CFU) protocol specification
 description: Provides detailed information on the Component Firmware Update (CFU) protocol offer, content, and firmware update command sequence.
-ms.date: 03/03/2023
+ms.date: 03/17/2023
 ---
 
 # Component Firmware Update (CFU) protocol specification
@@ -256,7 +256,7 @@ Some of the features of the protocol are:
 
 - The flexibility to support in-development firmware/in-market firmware.
 
-- The ability to segment a large firmware image into smaller segments to make it easier for the component to accept the firmware image. 
+- The ability to segment a large firmware image into smaller segments to make it easier for the component to accept the firmware image.
 
 ### 1.2.2 Non-Goals
 

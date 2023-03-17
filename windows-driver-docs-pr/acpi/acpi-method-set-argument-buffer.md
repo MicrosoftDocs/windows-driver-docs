@@ -3,7 +3,7 @@ title: ACPI_METHOD_SET_ARGUMENT_BUFFER macro
 description: The ACPI_METHOD_SET_ARGUMENT_BUFFER macro sets the members of an ACPI_METHOD_ARGUMENT structure for custom data that is supplied in a data buffer.
 keywords: 
 - ACPI_METHOD_SET_ARGUMENT_BUFFER macro ACPI Devices
-ms.date: 02/24/2023
+ms.date: 03/17/2023
 ms.topic: reference
 ---
 

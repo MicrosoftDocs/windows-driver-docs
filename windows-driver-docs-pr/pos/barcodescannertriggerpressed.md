@@ -1,14 +1,12 @@
 ---
 title: BarcodeScannerTriggerPressed
 description: The BarcodeScannerTriggerPressed event occurs when the barcode scanner trigger is pressed.
-ms.date: 09/07/2018
+ms.date: 03/17/2023
 ---
 
 # BarcodeScannerTriggerPressed
 
-This event occurs when the barcode scanner trigger is pressed.
-
-The data buffer for this event is as follows.
+This event occurs when the barcode scanner trigger is pressed. The data buffer for this event is as follows.
 
 ## Syntax
 
@@ -25,10 +23,10 @@ typedef struct _PosEventDataHeader
 
 The following table shows the memory layout of the data buffer for this event.
 
-| Memory value          | Description                                                               |
-|-----------------------|---------------------------------------------------------------------------|
+| Memory value | Description |
+|---|---|
 | 0x00000003 | **EventType** = **PosEventType::BarcodeScannerTriggerPressed** |
-| 0x00000008 | sizeof(**PosEventDataHeader**)                                 |
+| 0x00000008 | sizeof(**PosEventDataHeader**) |
 
 ## Requirements
 

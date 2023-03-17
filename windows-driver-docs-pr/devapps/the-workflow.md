@@ -1,7 +1,7 @@
 ---
 title: Building UWP device apps
 description: Device manufacturers can create a UWP device app that serves as a companion to their device.
-ms.date: 08/11/2021
+ms.date: 03/17/2023
 ---
 
 # Building UWP device apps
@@ -34,15 +34,13 @@ There are six steps to creating a UWP device app, assuming you've already create
 
 [Step 3: Add an experience ID to the app](step-3--add-an-experience-id-to-the-app.md). Incorporate the StoreManifest.xml file into your app.
 
-> [!NOTE]
-> If your app is a privileged app and is not configured for automatic installation, step 3 is not required.
+If your app is a privileged app and is not configured for automatic installation, step 3 is not required.
 
 [Step 4: Test the device metadata (locally)](step-4--test-device-metadata.md). Use the Device Metadata Authoring Wizard to validate and deploy the device metadata to your local development workstation.
 
 [Step 5: Submit the app to the Microsoft Store dashboard](step-5--submit-the-app.md). Use the dashboard to confirm selling details and indicate to testers that the app is a UWP device app.
 
-> [!NOTE]
-> If your app is a privileged app and is not configured for automatic installation, you can submit your app to the Microsoft Store dashboard after step 6. For more info, see [Privileged app submission sequence](#privileged-app-submission-sequence).
+If your app is a privileged app and is not configured for automatic installation, you can submit your app to the Microsoft Store dashboard after step 6. For more info, see [Privileged app submission sequence](#privileged-app-submission-sequence).
 
 [Step 6: Submit device metadata to the Windows Dev Center hardware dashboard](step-6--submit-device-metadata.md). Submit device metadata packages manually, or use the Device Metadata Authoring Wizard to create a bulk submission package that you can submit to the hardware dashboard.
 
@@ -67,8 +65,7 @@ In some cases, UWP device apps do not need to be live in the Microsoft Store bef
 
 If this is true about your app, you can submit the device metadata to the hardware dashboard before you submit your UWP device app to the Microsoft Store dashboard. In such cases, you do not need to add the Experience ID to your app; specifying your app as a privileged app in the device metadata is sufficient for privileges to take effect.
 
-> [!NOTE]
-> UWP device apps for printers and cameras automatically install. Therefore, these types of UWP device apps must follow the standard submission sequence and be submitted to the Microsoft Store before the device metadata is submitted.
+UWP device apps for printers and cameras automatically install. Therefore, these types of UWP device apps must follow the standard submission sequence and be submitted to the Microsoft Store before the device metadata is submitted.
 
 ## UWP device app limits
 
