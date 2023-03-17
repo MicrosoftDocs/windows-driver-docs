@@ -18,7 +18,7 @@ When a Bluetooth LE device is paired with a Windows machine, the device becomes 
 
 :::image type="content" source="images/bthlewin8supt.png" alt-text="Diagram of the device object structure of the Windows Bluetooth LE implementation.":::
 
-Each device and its primary services are represented as device objects in Windows and these device objects can be queried and managed using the [device installation functions](/windows-hardware/drivers/install/using-device-installation-functions) such as **[SetupDiEnumDeviceInfo](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinfo)**, and **[SetupDiGetDeviceProperty](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)**.
+Each device and its primary services are represented as device objects in Windows and these device objects can be queried and managed using the [device installation functions](../install/using-device-installation-functions.md) such as **[SetupDiEnumDeviceInfo](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinfo)**, and **[SetupDiGetDeviceProperty](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)**.
 
 In addition to standard [Bluetooth profile driver functions](/windows-hardware/drivers/ddi/_bltooth/), [Bluetooth LE functions](/windows/win32/api/_bltooth/) provide functionality for the development of Bluetooth GATT client applications.
 

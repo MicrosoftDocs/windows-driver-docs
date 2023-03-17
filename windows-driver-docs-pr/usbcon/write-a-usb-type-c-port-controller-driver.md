@@ -56,7 +56,7 @@ The UcmTcpciCx class extension is itself a client driver of UcmCx. The policy de
   - [Simple Peripheral Bus (SPB) Driver Design Guide]
   - [SPB driver programming reference]
 
-- Familiarize yourself with Windows Driver Foundation (WDF). Recommended reading: [Developing Drivers with Windows Driver Foundation](/windows-hardware/drivers/wdf/developing-drivers-with-wdf), written by Penny Orwick and Guy Smith.
+- Familiarize yourself with Windows Driver Foundation (WDF). Recommended reading: [Developing Drivers with Windows Driver Foundation](../wdf/developing-drivers-with-wdf.md), written by Penny Orwick and Guy Smith.
 
 ## Behavior of the UcmTcpci class extension
 
