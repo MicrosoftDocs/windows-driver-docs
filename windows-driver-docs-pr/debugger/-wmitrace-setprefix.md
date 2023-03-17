@@ -108,7 +108,7 @@ Each %n variable represents a parameter that is described in the following table
 <p>Displays the name of the function that generated the trace message.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>%!FLAGS%</p></td>
+<td align="left"><p>%!FLAGS!</p></td>
 <td align="left"><p>string</p></td>
 <td align="left"><p>Displays the name of the trace flags that enable the trace message.</p></td>
 </tr>
