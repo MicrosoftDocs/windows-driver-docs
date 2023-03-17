@@ -1,30 +1,29 @@
 ---
 title: GPU segments
-description: graphics processing unit (GPU) access to physical memory is abstracted in the device driver interface (DDI) by a segmentation model.
+description: Graphics Processing Unit (GPU) access to physical memory is abstracted in the Device Driver Interface (DDI) by a segmentation model.
 ms.date: 04/20/2017
 ---
 
 # GPU segments
 
-
-graphics processing unit (GPU) access to physical memory is abstracted in the device driver interface (DDI) by a segmentation model. The kernel mode driver expresses the physical memory resources available to a GPU by enumerating a set of segments, which are then managed by the video memory manager.
+Graphics Processing Unit (GPU) access to physical memory is abstracted in the Device Driver Interface (DDI) by a segmentation model. The [kernel-mode](/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode) driver expresses the physical memory resources available to a GPU by enumerating a set of segments, which are then managed by the video memory manager.
 
 There are three types of segments in Windows Display Driver Model (WDDM) v2:
 
-<span id="Memory_Segment"></span><span id="memory_segment"></span><span id="MEMORY_SEGMENT"></span>Memory Segment  
+### <span id="Memory_Segment"></span><span id="memory_segment"></span><span id="MEMORY_SEGMENT"></span>Memory Segment  
 A memory segment represents memory, dedicated to a GPU. This may be VRAM on a discrete GPU or firmware/driver reserved memory on an integrated GPU. There can be multiple memory segments enumerated.
 
-New in WDDM v2, a memory segment is managed as a pool of physical pages which are either 4KB or 64KB in size. Surface data is copied into and out of a memory segment using *Fill*/*Transfer*/*Discard*/*FillVirtuall*/*TransferVirtual* paging operations.
+New in WDDM v2, a memory segment is managed as a pool of physical pages which are either 4KB or 64KB in size. Surface data is copied into and out of a memory segment using *Fill*/*Transfer*/*Discard*/*FillVirtual*/*TransferVirtual* paging operations.
 
-The CPU may access the content of a memory segment in one of two ways. First, a memory segment may be visible in the physical address space of the CPU, in which case the video memory manager simply maps CPU virtual addresses directly to allocations within the segment. New in WDDM v2, the video memory manager also supports accessing the content of a memory segment through a programmable CPU host aperture associated with that segment.
+The CPU may access the content of a memory segment in one of two ways. First, a memory segment may be visible in the physical address space of the CPU, in which case the video memory manager simply maps CPU virtual addresses directly to allocations within the segment. Introduced in WDDM v2, the video memory manager also supports accessing the content of a memory segment through a programmable CPU host aperture associated with that segment.
 
-<span id="Aperture__Segment"></span><span id="aperture__segment"></span><span id="APERTURE__SEGMENT"></span>Aperture Segment  
+### <span id="Aperture__Segment"></span><span id="aperture__segment"></span><span id="APERTURE__SEGMENT"></span>Aperture Segment  
 An aperture segment is a global page table used to make discontinuous system memory pages appears contiguous from the perspective of a GPU engine.
 
 In WDDM v2, a single aperture segment must be reported.
 
-<span id="System_Memory_Segment"></span><span id="system_memory_segment"></span><span id="SYSTEM_MEMORY_SEGMENT"></span>System Memory Segment  
-The system memory segment is an implicit segment representing system memory references (i.e. a guest physical address). The system memory segment is not directly enumerated by the kernel mode driver. It is implicitly enumerated by the video memory manager and always gets assigned `SegmentId==0`. To place an allocation in the system memory segment, the kernel mode driver needs to use the aperture segment ID.
+### <span id="System_Memory_Segment"></span><span id="system_memory_segment"></span><span id="SYSTEM_MEMORY_SEGMENT"></span>System Memory Segment  
+The system memory segment is an implicit segment representing system memory references (*i.e.* a guest physical address). The system memory segment is not directly enumerated by the kernel mode driver. It is implicitly enumerated by the video memory manager and always gets assigned `SegmentId==0`. To place an allocation in the system memory segment, the kernel-mode driver needs to use the aperture segment ID.
 
 ## <span id="Physical_memory_reference"></span><span id="physical_memory_reference"></span><span id="PHYSICAL_MEMORY_REFERENCE"></span>Physical memory reference
 

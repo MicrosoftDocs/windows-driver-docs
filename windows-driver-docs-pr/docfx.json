@@ -236,6 +236,7 @@
         "**/ieee/*.md": "UpdateFrequency5",
         "**/mobilebroadband/*.md": "UpdateFrequency5",
         "**/network/*.md": "UpdateFrequency5",
+        "**/nfc/*.md": "UpdateFrequency5",
         "**/parports/*.md": "UpdateFrequency5",
         "**/pci/*.md": "UpdateFrequency5",
         "**/pcmcia/*.md": "UpdateFrequency5",
@@ -249,6 +250,7 @@
         "**/driversecurity/*.md": "UpdateFrequency3",
         "**/powermeter/*.md": "UpdateFrequency5",
         "**/serports/*.md": "UpdateFrequency5",
+        "**/spb.md": "UpdateFrequency5",
         "**/taef/*.md": "UpdateFrequency5",
         "**/wdtf/*.md": "UpdateFrequency5"      }
     },
