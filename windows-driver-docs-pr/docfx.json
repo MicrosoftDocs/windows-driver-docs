@@ -250,7 +250,11 @@
         "**/powermeter/*.md": "UpdateFrequency5",
         "**/serports/*.md": "UpdateFrequency5",
         "**/taef/*.md": "UpdateFrequency5",
-        "**/wdtf/*.md": "UpdateFrequency5"      }
+        "**/wdtf/*.md": "UpdateFrequency5"
+      },
+      "adobe-target": {
+        "**/*/*.md": true
+      }
     },
     "externalReference": [],
     "template": "op.html",
