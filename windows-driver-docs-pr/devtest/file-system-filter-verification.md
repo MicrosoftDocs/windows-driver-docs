@@ -1,3 +1,13 @@
+---
+title: File System Filter Verification
+description: Details on the Filter Verifier
+keywords:
+- File System Filter Verification feature WDK Driver Verifier
+- Minifilter verification WDK Driver Verifier
+- Filter Verifier WDK Driver Verifier
+ms.date: 03/17/2023
+---
+
 # File System Filter Verification
 
 ### Usage Validation
