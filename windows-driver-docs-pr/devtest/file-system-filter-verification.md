@@ -64,19 +64,19 @@ To proceed, type one of four one-letter commands:
 
 You can activate the File System Filter Verification feature for one or more drivers by using the `verifier.exe` command line. For details, see [Selecting Driver Verifier Options](selecting-driver-verifier-options.md).
 
-The recommended way to start Filter Verifier is with the **/standard** option of `verifier.exe`, since it provides additional useful features such as special pool and pool tracking:
+The recommended way to start Filter Verifier is with the **/standard** option of `verifier.exe`, since it provides additional useful features such as [special pool](special-pool.md) and [pool tracking](pool-tracking.md):
 ```
 verifier.exe /standard /driver MyFilter.sys
 ```
 Verification starts when the minifilter driver registers with the filter anager.
-- **Enabling Only Filter Verifier in Windows 11 and Later Versions of indows**
+- **Enabling Only Filter Verifier in Windows 11 and Later Versions of Windows**
     To enable the minimal set of Filter Verifier checks, enable the [I/O Verification](../devtest/i-o-verification.md) and [File System Filter Verification](../devtest/file-system-filter-verification.md) options in Driver Verifier (*verifier.exe*). For example:
 
     ```
     verifier.exe /ruleclasses 5 37 /driver MyFilter.sys
     ```
 
-- **Enabling Only Filter Verifier in Windows 10 and Prior Versions of indows**
+- **Enabling Only Filter Verifier in Windows 10 and Prior Versions of Windows**
     To enable the minimal set of Filter Verifier checks, specify the minifilter driver's name and enable the [I/O Verification](../devtest/i-o-verification.md) option in Driver Verifier (*verifier.exe*). For example:
 
     ```
