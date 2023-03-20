@@ -12,7 +12,6 @@ api_location:
 api_type:
 - HeaderDef
 ms.date: 03/13/2023
-md.topic: reference
 ---
 
 # FLT_PARAMETERS for IRP_MJ_QUERY_QUOTA union
