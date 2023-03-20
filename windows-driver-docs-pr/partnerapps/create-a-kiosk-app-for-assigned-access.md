@@ -1,7 +1,7 @@
 ---
 title: Kiosk apps for assigned access Best practices
 description: Describes how to implement a kiosk app using best practices.
-ms.date: 08/12/2021
+ms.date: 03/17/2023
 ---
 
 # Kiosk apps for assigned access: Best practices
@@ -18,8 +18,7 @@ There are two different experiences that assigned access provides:
 
     You can assign one or more apps to an account. When a user logs in, the device will start in a restricted shell experience with access to only your selected apps. See [Create a Windows 10 kiosk that runs multiple apps](/windows/configuration/lock-down-windows-10-to-specific-apps) for more information.
 
-> [!NOTE]
-> This article describes the single-app kiosk experience only. In the multi-app experience, selected apps run in a regular desktop context and require no special handling or modification.
+This article describes the single-app kiosk experience only. In the multi-app experience, selected apps run in a regular desktop context and require no special handling or modification.
 
 ## Terms
 
@@ -50,13 +49,11 @@ If the app does not have the **windows.aboveLockScreen** extension, no secondary
 
 Regardless of whether your app uses the extension, be sure to secure its data. See the [guidelines for assigned access apps](/windows/configuration/guidelines-for-assigned-access-app#secure-your-information) for more information.
 
-> [!NOTE]
-> Starting in Windows 10, version 1607, there is no longer a restriction on the Universal Windows Platform (UWP) extension, so most apps can be shown in **Settings** when user configures assigned access.
+Starting in Windows 10, version 1607, there is no longer a restriction on the Universal Windows Platform (UWP) extension, so most apps can be shown in **Settings** when user configures assigned access.
 
 ## Best practices
 
-> [!NOTE]
-> This section applies to a Kiosk application that uses the **windows.aboveLockScreen** extension.
+This section applies to a Kiosk application that uses the **windows.aboveLockScreen** extension.
 
 ### Secure your information
 
@@ -214,8 +211,7 @@ Windows.ApplicationModel.Core.CoreApplication.CreateNewView(); //causes exceptio
 
 The following sample application manifest uses the **windows.aboveLockScreen**UWP extension.
 
-> [!NOTE]
-> Starting in Windows 10, version 1607, there is no longer a restriction on the Universal Windows Platform (UWP) extension, so most apps can be shown in **Settings** when user configures assigned access.
+Starting in Windows 10, version 1607, there is no longer a restriction on the Universal Windows Platform (UWP) extension, so most apps can be shown in **Settings** when user configures assigned access.
 
 ```xml
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">

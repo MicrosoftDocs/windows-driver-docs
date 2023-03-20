@@ -23,7 +23,12 @@ You can type several options on the same single line. For example:
 verifier /flags 7 /driver beep.sys disksdd.sys
 ```
 
-**Windows 11**
+**Windows 11 Syntax**
+
+You can use the **/volatile** parameter with some Driver Verifier **/flags** options. For details, see [Using Volatile Settings](using-volatile-settings.md).
+
+> [!NOTE]
+> The **/volatile** parameter will be deprecated in a future version of Windows. In Windows 11 the replacement option is the **/dif** *DifEnabledRule* **/now** option. See the section *Windows 11 Rule Classes* below for the rule classes that can be enabled using this option.
 
 ```
   verifier /standard /all
@@ -53,50 +58,8 @@ verifier /flags 7 /driver beep.sys disksdd.sys
   verifier /help
 ```
 
-Starting in Windows 11, these driver interception framework (DIF) enabled options can be enabled using the /dif option.
 
-The **/dif** command automatically includes rule class 36, DIF mode, but **/ruleclasses** and **/rc** do not. Flags marked with (!) in the help text require DIF mode to be enabled. All Standard rule classes can be enabled without also enabling DIF mode.
-
-Rules marked with (^) in the help text can be enabled without reboot using the **/dif [<ruleclass_1> <ruleclass_2> <ruleclass_k>] /now** command.
-
-**Standard Rule Classes**
-
- Value | Rule | /now
-|------|------|-----|
-1 | Special pool | yes
-2 | Force IRQL checking | no
-4 | Pool tracking | yes
-5 | I/O verification | yes
-6 | Deadlock detection | no
-8 | DMA checking | no
-9 | Security checks | yes
-12 | Miscellaneous checks | yes
-18 | DDI compliance checking | yes
-34 | WDF verification | no
-
-
-**Additional Rule Classes**
-
- Value | Rule | /now | Needs DIF Mode?
-|------|------|------|-------|
-3 | Randomized low resources simulation | no | no
-10 | Force pending I/O requests | no | no
-11 | IRP logging | no | no
-14 | Invariant MDL checking for stack | no | no
-15 | Invariant MDL checking for driver | no | no
-16 | Power framework delay fuzzing | no | no
-17 | Port/miniport interface checking | no | no
-19 | Systematic low resources simulation | yes | yes
-20 | DDI compliance checking (additional) | yes | no
-22 | NDIS/WIFI verification | no | no
-24 | Kernel synchronization delay fuzzing | no | no
-25 | VM switch verification | no | no
-26 | Code integrity checks | no | no
-33 | Driver isolation checks | no | yes
-35 | DDI checking (additional IRQL rules) | yes | yes
-36 | DIF mode | yes | n/a
-
-**Windows 10**
+**Windows 10 Syntax**
 
 You can use the **/volatile** parameter with some Driver Verifier **/flags** options and with **/standard**. You cannot use **/volatile** with the **/flags** options for [DDI compliance checking](ddi-compliance-checking.md), [Power Framework Delay Fuzzing](concurrency-stress-test.md) or [Storport Verification](dv-storport-verification.md). For details, see [Using Volatile Settings](using-volatile-settings.md).
 
@@ -125,7 +88,7 @@ You can use the **/volatile** parameter with some Driver Verifier **/flags** opt
   verifier /help
 ```
 
-**Windows 8.1**
+**Windows 8.1 Syntax**
 
 You can use the **/volatile** parameter with some Driver Verifier **/flags** options and with **/standard**. You cannot use **/volatile** with the **/flags** options for [DDI compliance checking](ddi-compliance-checking.md), [Power Framework Delay Fuzzing](concurrency-stress-test.md), [Storport Verification](dv-storport-verification.md). For details, see [Using Volatile Settings](using-volatile-settings.md).
 
@@ -213,10 +176,10 @@ Controls whether the settings for Driver Verifier are enabled after a reboot. To
 </table>
 
 **/dif** *DifEnabledRule*
-Enable checking using a Dif enabled rule. Checking will take effect the next time the system is rebooted. Added in Windows 11.
+Enable checking using a DIF enabled rule. Checking will take effect the next time the system is rebooted. Added in Windows 11.
 
-**/dif /now** *DifEnabledRule*
-Immediately enable checking using a Dif enabled rule. Enables the rule classes immediately without needing reboot. This option
+**/dif** *DifEnabledRule* **/now**
+Immediately enable checking using a DIF enabled rule. Enables the rule classes immediately without needing reboot. This option
 is only valid if no rule classes are already running. See the Windows 11 rule class descriptions for the rule classes capable of immediate activation.
 
 **/driver** *DriverList*
@@ -542,7 +505,7 @@ Any combination of the following values is permitted.
 
 The ruleclasses parameter is available starting with Windows Version 1803.
 
-The ruleclasses parameter encompasses a larger set of verification classes than the '/flags' parameter above. While '/flags' is limited to a 32 bit bitmap expression, this option can include more than 32 verification classes. Each positive decimal integer represents a verification class. Multiple classes can be expressed by separating each class id with a space character. The following rule classes IDs are available.
+The ruleclasses parameter encompasses a larger set of verification classes than the **/flags** parameter above. While **/flags** is limited to a 32 bit bitmap expression, this option can include more than 32 verification classes. Each positive decimal integer represents a verification class. Multiple classes can be expressed by separating each class id with a space character. The following rule classes IDs are available.
 
 **Standard Rule Classes**
 
@@ -558,10 +521,11 @@ The ruleclasses parameter encompasses a larger set of verification classes than 
 12 | Miscellaneous checks
 18 | DDI compliance checking
 34 | WDF Verification
+37 | File System Filter verification (5)
 
 **Additional Rule Classes**
 
-These rule classes are intended for specific scenario testing. Rule classes are marked with `(*)` require I/O Verification (5) that will be automatically enabled. Flags marked with `(**)` support disabling of individual rules. Flags marked with `(***)` are in logging mode by default and require /onecheck in order to crash upon violation.
+These rule classes are intended for specific scenario testing. Rule classes marked with `(*)` require I/O Verification (5) and automatically enable it. Rule classes marked with `(**)` support disabling of individual rules. Rule classes marked with `(***)` are in logging mode by default and require **/onecheck** in order to crash upon violation.
 
 Flags marked with `(!)` require DIF mode (rule class 36) to be enabled.
 
@@ -586,50 +550,55 @@ Flags marked with `(!)` require DIF mode (rule class 36) to be enabled.
 
 ### Windows 11 Rule Classes
 
-Starting with Windows 11 the following rule classes are available.
+Starting with Windows 11 the following standard rule classes are available. These rule classes are all enabled when using the **/standard** option.
+
+The **/now** column indicates which rule classes can be enabled without a reboot using the **/dif** *DifEnabledRule* **/now** option.
 
 
 **Standard Rule Classes**
 
- Value | Rule
-|------|------|
-1 | Special pool (^)
-2 | Force IRQL checking (^)
-4 | Pool tracking (^)
-5 | I/O verification (^)
-6 | Deadlock detection
-8 | DMA checking
-9 | Security checks (^)
-12 | Miscellaneous checks (^)
-18 | DDI compliance checking (^)
-34 | WDF Verification
+ Value | Rule | /now
+|------|------|------|
+1 | Special pool | yes
+2 | Force IRQL checking | yes
+4 | Pool tracking | yes
+5 | I/O verification | yes
+6 | Deadlock detection | no
+8 | DMA checking | no
+9 | Security checks  | yes
+12 | Miscellaneous checks | yes
+18 | DDI compliance checking | yes
+34 | WDF Verification | no
+37 | File System Filter verification | no
 
-The '/dif' command automatically includes rule class 36, DIF mode, but
-/ruleclasses and /rc do not. Flags marked with (!) require DIF mode to
-be enabled. Flags marked with (^) can be enabled without reboot using
-the '/dif [<ruleclass_1> <ruleclass_2> <ruleclass_k>] /now' command.
+Note that rule class 37 (File System Filter verification) requires that rule class 5 (I/O verification) also be enabled. Please see [File System Filter verification](file-system-filter-verification.md) for more information about this rule class.
 
 **Additional Rule Classes**
 
-Flags marked with `(!)` require DIF mode (rule class 36) to be enabled.
+The following additional rule classes are available. 
 
- Value | Rule
-|------|------|
-3 | Randomized low resources simulation
-10 | Force pending I/O requests (*)
-11 | IRP logging (*)
-14 | Invariant MDL checking for stack (*)
-15 | Invariant MDL checking for driver (*)
-16 | Power framework delay fuzzing
-17 | Port/miniport interface checking
-19 | Systematic low resources simulation (!, ^)
-20 | DDI compliance checking - additional (^)
-22 | NDIS/WIFI verification (**)
-24 | Kernel synchronization delay fuzzing
-25 | VM switch verification
-26 | Code integrity checks
-33 | Driver isolation checks (***, !)
-36 | DIF mode
+* The **/now** column indicates which rule classes can be enabled without a reboot using the **/dif** *DifEnabledRule* **/now** option.
+* The **Rule classes required** column indicates which rule classes must also be enabled to use the given rule class. Note that the **/dif** command automatically includes rule class 36 (DIF mode) but **/ruleclasses** and **/rc** do not.
+* Rule classes marked with `(**)` support disabling of individual rules.
+* Rule classes marked with `(***)` are in logging mode by default and require the **/onecheck** option to crash upon violation.
+
+ Value | Rule | /now | Rule classes required
+|------|------|------|------|
+3 | Randomized low resources simulation | no | none
+10 | Force pending I/O requests | no | 5
+11 | IRP logging | no | 5
+14 | Invariant MDL checking for stack | no | 5
+15 | Invariant MDL checking for driver | no | 5
+16 | Power framework delay fuzzing | no | none
+17 | Port/miniport interface checking | no | none
+19 | Systematic low resources simulation | yes | 36
+20 | DDI compliance checking - additional | yes | none
+22 | NDIS/WIFI verification `(**)` | no | none
+24 | Kernel synchronization delay fuzzing | no | none
+25 | VM switch verification | no | none
+26 | Code integrity checks | no | none
+33 | Driver isolation checks `(***)` | no | 36
+36 | DIF mode | yes | none
 
 
 **/log** *LogFileName* \[**/interval**|*Seconds*\]

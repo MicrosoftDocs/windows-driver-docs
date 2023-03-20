@@ -1,7 +1,7 @@
 ---
 title: Sample configuration XML
 description: Use the sample configuration XML in this topic to develop configuration files for your device.
-ms.date: 08/17/2021
+ms.date: 03/17/2023
 ---
 
 # Sample configuration XML

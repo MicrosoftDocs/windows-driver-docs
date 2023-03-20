@@ -8,7 +8,7 @@ keywords:
 - FDOs WDK multifunction devices
 - physical device objects WDK multifunction devices
 - PDOs WDK multifunction devices
-ms.date: 08/13/2021
+ms.date: 03/17/2023
 ---
 
 # Supporting Multifunction PCI Devices

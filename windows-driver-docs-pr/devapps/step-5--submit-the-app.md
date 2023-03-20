@@ -1,7 +1,7 @@
 ---
 title: Step 5 Submit the Microsoft Store device app
 description: This topic describes how to submit your UWP device app to the Microsoft Store dashboard.
-ms.date: 08/12/2021
+ms.date: 03/17/2023
 ---
 
 # Step 5: Submit the Microsoft Store device app
@@ -10,8 +10,7 @@ ms.date: 08/12/2021
 
 This topic describes how to submit your UWP device app to the Microsoft Store dashboard. Before submitting your app, review the submission sequence section in [Building UWP device apps](the-workflow.md). This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 
-> [!NOTE]
-> If your app is specified as a privileged app and it is not configured for automatic installation, you can submit your device metadata to the Windows Dev Center hardware dashboard before you submit your privileged app to the Microsoft Store. In this case, this step 5 can take place after [step 6](step-6--submit-device-metadata.md).
+If your app is specified as a privileged app and it is not configured for automatic installation, you can submit your device metadata to the Windows Dev Center hardware dashboard before you submit your privileged app to the Microsoft Store. In this case, this step 5 can take place after [step 6](step-6--submit-device-metadata.md).
 
 A UWP device app is a special kind of UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations, such as device update. For more info about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
@@ -21,7 +20,7 @@ This topic assumes that you've finished developing your app and the device metad
 
 ## Start app submission
 
-Go to the [Microsoft Store dashboard](https://go.microsoft.com/fwlink/p/?LinkId=273050) and click **Submit a new app**.
+Go to the [Microsoft Store dashboard](https://partner.microsoft.com/dashboard) to submit your app.
 
 ## Add instructions for testers
 
@@ -39,7 +38,7 @@ Check the following before you submit your app:
 
 - The **package name** should be the same as the one you specified when you created the app in [step 1](step-1--create-a-uwp-device-app.md). Note that the package name expires if the app is not submitted within one year.
 
-- The app must be fully compliant with all the [Microsoft Store Certification Requirements](/windows/uwp/publish/the-app-certification-process).
+- The app must be fully compliant with [Microsoft Store Policies](/windows/apps/publish/store-policies).
 
 - The app must be suitable for all ages.
 

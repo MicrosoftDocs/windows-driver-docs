@@ -1,7 +1,7 @@
 ---
 title: Evaluating a Control Method That Takes Input Arguments
 description: Provides information about evaluating a control method that takes input arguments
-ms.date: 08/17/2021
+ms.date: 03/17/2023
 ---
 
 # Evaluating a Control Method That Takes Input Arguments

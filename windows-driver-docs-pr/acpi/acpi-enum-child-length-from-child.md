@@ -3,7 +3,7 @@ title: ACPI_ENUM_CHILD_LENGTH_FROM_CHILD macro
 description: The ACPI_ENUM_CHILD_LENGTH_FROM_CHILD macro calculates the size, in bytes, of a variable-length ACPI_ENUM_CHILD structure.
 keywords: 
 - ACPI_ENUM_CHILD_LENGTH_FROM_CHILD macro ACPI Devices
-ms.date: 02/24/2023
+ms.date: 03/17/2023
 ms.topic: reference
 ---
 

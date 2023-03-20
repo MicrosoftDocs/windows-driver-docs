@@ -1,7 +1,7 @@
 ---
 title: Print support app design guide
 description: Provides guidance and examples for printer OEMs and IHVs that are implementing a print support app (PSA) for their device.
-ms.date: 01/24/2023
+ms.date: 03/17/2023
 ms.custom: contperf-fy22q4
 ---
 
@@ -12,10 +12,10 @@ ms.custom: contperf-fy22q4
 
 This topic provides guidance and examples for printer OEMs and IHVs to develop a print support app (PSA) that can enhance a Windows user's print experience in several ways.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Starting with the release of Windows 11 SDK (22000.1), Print Support Apps (PSA) are the recommended method of developing UWP apps for printers. To develop a Print Support App for your print device, download and install the Windows 11 SDK for the Windows version you are targeting.
 
-> [!NOTE]
+> [!IMPORTANT]
 > This topic contains sections that describe PSA functionality that is available starting in Windows 11, version 22H2. Those sections contain a note indicating that it applies to that version.
 
 Some printer features are not presented in print dialogs shown by Windows as they are special features that need help from a manufacturer app to be configured correctly. They may also be features that are not provided in the default capabilities of the printer.
@@ -914,7 +914,7 @@ namespace winrt
 
 ## Display name localization and PDL Passthrough API integration
 
-> [!NOTE]
+> [!IMPORTANT]
 > This section describes PSA functionality available starting in Windows 11, version 22H2.
 
 In this scenario, the PSA customizes the Print Device Capabilities (PDC) and provides Print Device Resources (PDR) for string localization.
@@ -946,7 +946,7 @@ The PSA also sets the supported PDL Passthrough API content types (PDL formats).
 
 ## Page level feature support and operation attributes
 
-> [!NOTE]
+> [!IMPORTANT]
 > This section describes PSA functionality available starting in Windows 11, version 22H2.
 
 The page level feature support and operation attributes scenarios are grouped because they are addressed by making changes in the same place in the sample code.
@@ -989,7 +989,7 @@ private void OnPdlModificationRequested(PrintWorkflowJobBackgroundSession sessio
 
 ## Enhancing the print dialog with PSA
 
-> [!NOTE]
+> [!IMPORTANT]
 > This section describes PSA functionality available starting in Windows 11, version 22H2.
 
 In this scenario, using the print dialog with PSA integration enables the following:
@@ -1075,7 +1075,7 @@ public IAdaptiveCard GetCustomAdaptiveCard(IppPrintDevice ippPrinter, AppInfo ap
 
 ## PDL conversion with host-based processing flags
 
-> [!NOTE]
+> [!IMPORTANT]
 > This section describes PSA functionality available starting in Windows 11, version 22H2.
 
 The current PDL conversion API, **PrintWorkflowPdlConverter.ConvertPdlAsync**, does host-based processing by default. This means that the host/printing computer will do the rotation, page order, and so on, so that printer does not need to perform these operations. However, printer IHVs may want PDL conversion without host-based processing as their printer can do this better. The **ConvertPdlAsync** function takes in host-based processing flags to address this requirement. The PSA can skip all host-based processing or a particular host-based processing operation using this flag.
@@ -1131,7 +1131,7 @@ private HostBaseProcessingRequirements ReadHostBasedProcessingRequirements(IppPr
 
 ## Set Print Device Capabilities (PDC) update policy
 
-> [!NOTE]
+> [!IMPORTANT]
 > This section describes PSA functionality available starting in Windows 11, version 22H2.
 
 Printer IHVs may different requirements on when Print Device Capabilities (PDC) needs to be updated. To address these requirement, **PrintSupportPrintDeviceCapabilitiesUpdatePolicy** can set an update policy for the PDC. PSA can set the PDC update policy based on time or the number of print jobs using this API.

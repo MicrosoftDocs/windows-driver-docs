@@ -1,7 +1,7 @@
 ---
 title: Storage Firmware Update (SFU)
 description: Provides information about Storage Firmware Update (SFU)
-ms.date: 03/03/2023
+ms.date: 03/17/2023
 ---
 
 # Storage Firmware Update (SFU)

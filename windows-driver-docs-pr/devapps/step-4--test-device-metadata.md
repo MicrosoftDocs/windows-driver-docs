@@ -1,7 +1,7 @@
 ---
 title: Step 4 Test the device metadata for your UWP device app
 description: This topic describes how you can test device metadata for your UWP device app locally before you submit it to the Windows Dev Center Dashboard.
-ms.date: 08/12/2021
+ms.date: 03/17/2023
 ---
 
 # Step 4: Test the device metadata for your UWP device app
@@ -12,8 +12,7 @@ This topic describes how you can test device metadata for your UWP device app lo
 
 A UWP device app is a special kind of UWP app that device manufacturers create to serve as a companion to their internal or peripheral device. By using device metadata, device apps can run privileged operations and automatically install when a device is plugged in. For more info about UWP device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-> [!NOTE]
-> This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
+This topic is part of a step-by-step series. See [Build a UWP device app step-by-step](build-a-uwp-device-app-step-by-step.md) for the introduction.
 
 ## Before you begin
 

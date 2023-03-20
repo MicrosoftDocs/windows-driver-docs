@@ -1,7 +1,7 @@
 ---
 title: ReleaseDeviceRequested
 description: The ReleaseDeviceRequested event occurs when another client attempts to claim a device.
-ms.date: 09/28/2018
+ms.date: 03/17/2023
 ---
 
 # ReleaseDeviceRequested
@@ -23,10 +23,10 @@ typedef struct _PosEventDataHeader
 
 The following table shows the memory layout of the data buffer for this event.
 
-| Memory value          | Description                               |
-|-----------------------|-------------------------------------------|
+| Memory value | Description |
+|---|---|
 | 0x00000001 | **EventType = PosEventType::ReleaseDeviceRequested** |
-| 0x00000008 | sizeof(**PosEventDataHeader**)                       |
+| 0x00000008 | sizeof(**PosEventDataHeader**) |
 
 ## Remarks
 

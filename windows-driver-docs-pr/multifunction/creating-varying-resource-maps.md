@@ -3,7 +3,7 @@ title: Creating Varying Resource Maps
 description: Varying resource maps let you subdivide a parent resource among children enumerated by mf.sys.
 keywords:
 - varying resource maps WDK multifunction devices
-ms.date: 08/13/2021
+ms.date: 03/17/2023
 ---
 
 # Creating Varying Resource Maps
