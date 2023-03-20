@@ -41,25 +41,6 @@ In WinDbg, type **!fltkd.help** for a full list of commands.
 
 ## Filter Verifier
 
-Filter Verifier is an [I/O Verification](../devtest/i-o-verification.md) option in [Driver Verifier](../devtest/driver-verifier.md) that validates minifilter driver usage of filter manager functions. Filter Verifier is installed with the filter manager. Developers should always develop minifilter drivers with Driver Verifier and Filter Verifier enabled.
+Filter Verifier is an option in [Driver Verifier](../devtest/driver-verifier.md) that validates minifilter driver usage of filter manager functions. Filter Verifier is installed with the filter manager. Developers are strongly recommended to always develop minifilter drivers with Filter Verifier enabled.
 
-To use Filter Verifier, specify the minifilter driver's name and enable the I/O Verification option in Driver Verifier (*Verifier.exe*). Verification starts when the minifilter driver registers with the filter manager.
-
-Filter Verifier validates the following usage in a minifilter driver:
-
-* Correct use of parameters and calling context
-* Correct return values from preoperation and postoperation callback routines
-* Consistent and coherent changes to parameters in callback data
-
-Filter Verifier tracks the following filter manager objects:
-
-* Contexts
-* Callback Data structures
-* Queued Work Items
-* NameInformation structures
-* File Objects
-* Filter Objects
-* Instance Objects
-* Volume Objects
-
-In a command prompt, type ```verifier /?``` to see syntax and a full list of parameters.
+For information on how to enable Filter Verifier and what it validates, please see [File System Filter Verification](../devtest/file-system-filter-verification.md).

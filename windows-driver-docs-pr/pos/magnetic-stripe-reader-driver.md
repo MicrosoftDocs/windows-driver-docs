@@ -1,7 +1,7 @@
 ---
 title: Magnetic stripe reader driver sample
 description: This sample demonstrates how to create a universal driver for a magnetic stripe reader and is intended as a template for creating a new driver.
-ms.date: 09/07/2018
+ms.date: 03/17/2023
 ---
 
 # Magnetic stripe reader driver sample
@@ -18,8 +18,7 @@ The magnetic stripe reader driver sample demonstrates how to create a universal 
 
 The Windows Software Development Kit (SDK) 10 is also required, but this is installed as part of Microsoft Visual Studio.
 
-> [!NOTE]
-> The sample driver does not require any magnetic stripe reader hardware to function because it operates on a software device. If you have a hardware device you wish to use with the sample, you can still use the driver by adding the device's hardware ID to the INF file.
+The sample driver does not require any magnetic stripe reader hardware to function because it operates on a software device. If you have a hardware device you wish to use with the sample, you can still use the driver by adding the device's hardware ID to the INF file.
 
 ## Download and extract the sample
 
@@ -41,10 +40,7 @@ The [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples
 
 ## Build the sample using Visual Studio
 
-1. From the *Standard* toolbar in Visual Studio, select the *Solution Platform* that matches your operating system platform. For example, if you are using a 64-bit version of Windows, select x64.
-
-    > [!NOTE]
-    > If targeting the Arm platform, you will need to use the configuration manager to add Arm to your list of targets.
+1. From the *Standard* toolbar in Visual Studio, select the *Solution Platform* that matches your operating system platform. For example, if you are using a 64-bit version of Windows, select x64. If targeting the Arm platform, you will need to use the configuration manager to add Arm to your list of targets.
 
 1. Select **Build Solution** from the **Build** menu.
 

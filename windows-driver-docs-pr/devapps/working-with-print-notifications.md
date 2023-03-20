@@ -1,7 +1,7 @@
 ---
 title: Working with print notifications in a UWP device app
 description: This topic introduces print notifications, and shows how the C# version of the Print settings and print notifications sample uses a background task to respond to print notification.
-ms.date: 08/12/2021
+ms.date: 03/17/2023
 ---
 
 # Working with print notifications in a UWP device app
@@ -10,15 +10,13 @@ In Windows 8.1, UWP device apps can respond to bidirectional communication (Bid
 
 The C# version of the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample demonstrates the background portion of the app (*the background task*) in the **BackgroundTask** project. The code for the background task is in the **PrintBackgroundTask.cs** file. The *foreground app*, the full-screen app that can be launched from Start, is in the **DeviceAppForPrinters** project. The **InkLevel.xaml.cs** file shows one way that notification details can be accessed from the foreground app. To work with print notifications, the sample uses the printer extension library in the **PrinterExtensionLibrary** project. The printer extension library provides a convenient way to access the printer extension interfaces of the v4 print driver. For more info, see the [Printer extension library overview](printer-extension-library-overview.md).
 
-> [!NOTE]
-> The code examples shown in this topic are based on the C# version of the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample. This sample is also available in JavaScript and C++. Note that because C++ can access COM directly, the C++ version of the sample does not include code library projects. Download the samples to see the latest versions of the code.
+The code examples shown in this topic are based on the C# version of the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample. This sample is also available in JavaScript and C++. Note that because C++ can access COM directly, the C++ version of the sample does not include code library projects. Download the samples to see the latest versions of the code.
 
 ## Print notifications
 
 Print notifications let your UWP device app inform the user of important printer events while printing, such as a paper jam, open printer door, low ink levels, or printer out-of-paper errors. When a printer triggers a notification, the system event broker runs the background task of your app. From there, the background task can save the notification details, send a toast, update a tile, update a badge, or do nothing. By saving notification details, your app can provide an experience that helps users understand and fix their printer problems.
 
-> [!NOTE]
-> Printer manufacturers must implement Bidi and the DriverEvent XML file in their v4 print driver to use print notifications with their UWP device apps. For more info, see [Bidirectional Communications](../print/bidirectional-communication.md).
+Printer manufacturers must implement Bidi and the DriverEvent XML file in their v4 print driver to use print notifications with their UWP device apps. For more info, see [Bidirectional Communications](../print/bidirectional-communication.md).
 
 When a DriverEvent occurs, and the background task of a UWP device app is started, the app has several options as to how it can proceed. For more details about the flow that leads to the launch of the task, see [Driver Support for Customized UI](../print/driver-support-for-customized-ui.md).
 
@@ -52,8 +50,7 @@ Before you get started:
 
 1. If you're writing you're writing your app with C# or JavaScript, add the **PrinterExtensionLibrary** and **DeviceAppForPrintersLibrary** projects to your UWP device app solution. You can find each of these projects in the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample.
 
-> [!NOTE]
-> Because C++ can access COM directly, C++ apps do not require a separate library to work with the COM-based printer device context.
+Because C++ can access COM directly, C++ apps do not require a separate library to work with the COM-based printer device context.
 
 ## Step 1: Register background task
 
@@ -138,8 +135,7 @@ For the main page of your app, keep in mind that Windows 8.1 can display multip
 
 If your app registers a background task for print notifications, it must supply a handler for the background task activation. In the [Print settings and print notifications](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Print%20settings%20and%20print%20notifications) sample, the `PrintBackgroundTask` class handles the print notifications.
 
-> [!NOTE]
-> If your printer status doesn't require immediate user intervention, update a tile rather than show a toast. For example, for a low ink condition, a tile update is sufficient. But if the printer is completely out of ink, the app may show a toast notification.
+If your printer status doesn't require immediate user intervention, update a tile rather than show a toast. For example, for a low ink condition, a tile update is sufficient. But if the printer is completely out of ink, the app may show a toast notification.
 
 ### Saving notification details
 
@@ -354,8 +350,7 @@ Before you can test your UWP device app, it must be linked to your printer using
 
 You need a copy of the device metadata package for your printer, to add the device app info to it. If you don't have device metadata, you can build it using the **Device Metadata Authoring Wizard** as described in the topic [Create device metadata for your UWP device app](./step-2--create-device-metadata.md).
 
-> [!NOTE]
-> To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](https://developer.microsoft.com/windows/hardware/), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
+To use the **Device Metadata Authoring Wizard**, you must install Microsoft Visual Studio Professional, Microsoft Visual Studio Ultimate, or the [standalone SDK for Windows 8.1](https://developer.microsoft.com/windows/hardware/), before completing the steps in this topic. Installing Microsoft Visual Studio Express for Windows installs a version of the SDK that doesn't include the wizard.
 
 The following steps build your app and install the device metadata.
 
@@ -373,8 +368,7 @@ The following steps build your app and install the device metadata.
 
 1. Edit and save device metadata. To link the device app to your device, you must associate the device app with your device.
 
-    > [!NOTE]
-    > If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](./step-2--create-device-metadata.md).
+    If you haven't created your device metadata yet, see [Create device metadata for your UWP device app](./step-2--create-device-metadata.md).
 
     1. If the **Device Metadata Authoring Wizard** is not open yet, start it from *%ProgramFiles(x86)%*\\Windows Kits\\8.1\\bin\\x86, by double-clicking **DeviceMetadataWizard.exe**.
 

@@ -1,7 +1,7 @@
 ---
 title: Wi-Fi Direct
 description: Provides information on the use of Wi-Fi Direct WinRT APIs in Windows applications.
-ms.date: 04/18/2022
+ms.date: 03/17/2023
 ---
 
 # Wi-Fi Direct
@@ -18,8 +18,7 @@ Mobile Hotspots are supported starting in Windows 10, version 1607. A Mobile Hot
 
 Developers of desktop applications can use this sample to see how to replace the deprecated WlanHostedNetwork\* API's with the new WinRT API's without modifying the application to become a Universal Windows Application. These API's let an application start a Wi-Fi Direct Group Owner (GO) that acts as an Access Point (AP). This allows devices that do not support Wi-Fi Direct to connect to the Windows device running this application and communicate over TCP/UDP. The API's allow the developer to optionally specify an SSID and passphrase, or use randomly generated ones.
 
-> [!NOTE]
-> In Classic Windows apps, you don't need to set the WinRT device capabilities because there is no Package.appxmanifest file.
+In Classic Windows apps, you don't need to set the WinRT device capabilities because there is no Package.appxmanifest file.
 
 ## See also
 

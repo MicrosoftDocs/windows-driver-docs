@@ -6,7 +6,7 @@ keywords:
 - vendor-supplied function drivers WDK ACPI
 - function drivers WDK ACPI , operation
 - WDM function drivers WDK ACPI , operation
-ms.date: 08/17/2021
+ms.date: 03/17/2023
 ---
 
 # Operation of an ACPI Device Function Driver

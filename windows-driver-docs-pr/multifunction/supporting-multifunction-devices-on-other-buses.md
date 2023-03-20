@@ -7,7 +7,7 @@ keywords:
 - ISA WDK multifunction devices
 - USB WDK multifunction devices
 - IEEE 1394 WDK multifunction devices
-ms.date: 08/13/2021
+ms.date: 03/17/2023
 ---
 
 # Supporting Multifunction Devices On Other Buses

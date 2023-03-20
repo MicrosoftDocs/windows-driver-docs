@@ -3,7 +3,7 @@ title: ACPI_METHOD_NEXT_ARGUMENT macro
 description: The ACPI_METHOD_NEXT_ARGUMENT structure returns a pointer to the next ACPI_METHOD_ARGUMENT structure in an array of ACPI_METHOD_ARGUMENT structures.
 keywords: 
 - ACPI_METHOD_NEXT_ARGUMENT macro ACPI Devices
-ms.date: 02/24/2023
+ms.date: 03/17/2023
 ms.topic: reference
 ---
 

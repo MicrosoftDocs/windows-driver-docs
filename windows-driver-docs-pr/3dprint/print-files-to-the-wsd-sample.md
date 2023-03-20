@@ -1,7 +1,7 @@
 ---
 title: Print files to the WSD sample
 description: This section describes how to print to the WSD sample.
-ms.date: 08/17/2021
+ms.date: 03/17/2023
 ---
 
 # Print files to the WSD sample

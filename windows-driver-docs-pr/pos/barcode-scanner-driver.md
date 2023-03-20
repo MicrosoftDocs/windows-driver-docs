@@ -1,7 +1,7 @@
 ---
 title: Barcode scanner driver sample
 description: The barcode scanner driver sample demonstrates how to create a universal driver for a barcode scanner and is intended to be used as a template for creating a new barcode scanner driver.
-ms.date: 03/21/2022
+ms.date: 03/17/2023
 ---
 
 # Barcode scanner driver sample
@@ -18,8 +18,7 @@ The barcode scanner driver sample demonstrates how to create a universal driver 
 
 The Windows Software Development Kit (SDK) 10 is also required, but this is installed as part of Microsoft Visual Studio.
 
-> [!NOTE]
-> The sample driver does not require any barcode scanner hardware to function because it operates on a software device. If you have a hardware device you wish to use with the sample, you can still use the driver by adding the device hardware ID to the INF file.
+The sample driver does not require any barcode scanner hardware to function because it operates on a software device. If you have a hardware device you wish to use with the sample, you can still use the driver by adding the device hardware ID to the INF file.
 
 ## Download and extract the sample
 
@@ -41,10 +40,7 @@ The [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples
 
 ## Build the sample using Visual Studio
 
-1. From the *Standard* toolbar in Visual Studio, select the *Solution Platform* that matches your operating system platform. For example, if you are using a 64-bit version of Windows, select x64.
-
-    > [!NOTE]
-    > If targeting the Arm platform, you will need to use the configuration manager to add Arm to your list of targets.
+1. From the *Standard* toolbar in Visual Studio, select the *Solution Platform* that matches your operating system platform. For example, if you are using a 64-bit version of Windows, select x64. If targeting the Arm platform, you will need to use the configuration manager to add Arm to your list of targets.
 
 1. Select **Build Solution** from the **Build** menu.
 
@@ -54,10 +50,7 @@ The [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples
 
     `bcdedit.exe /set TESTSIGNING on`
 
-1. Reboot your machine.
-
-    > [!NOTE]
-    > If test-signing had been enabled previously, a reboot is not necessary.
+1. Reboot your machine. If test-signing had been enabled previously, a reboot is not necessary.
 
 1. From an elevated command prompt, navigate to the folder where your project was built. If you created an x64 debug build, this folder will be `<project_root>\x64\Debug\SampleBarcodeScannerDrv`.
 

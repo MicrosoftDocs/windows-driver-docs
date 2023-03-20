@@ -1,7 +1,7 @@
 ---
 title: UWP device apps for printers
 description: This section introduces UWP device apps for printers.
-ms.date: 07/30/2021
+ms.date: 03/17/2023
 ---
 
 # UWP device apps for printers

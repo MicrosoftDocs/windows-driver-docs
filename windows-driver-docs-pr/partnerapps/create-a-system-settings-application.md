@@ -1,7 +1,7 @@
 ---
 title: Create a partner settings app
 description: Create a partner settings app
-ms.date: 08/12/2021
+ms.date: 03/17/2023
 ---
 
 # Create a partner settings app
@@ -56,8 +56,7 @@ Partner settings apps have the following characteristics:
 
 ## Creating system settings applications
 
-> [!NOTE]
-> Settings applications are Universal Windows Platform apps and should conform to all UWP programming guidelines. See [Guidelines for Universal Windows Platform (UWP) apps](https://developer.microsoft.com/windows/apps/design) for more information.
+Settings applications are Universal Windows Platform apps and should conform to all UWP programming guidelines. See [Guidelines for Universal Windows Platform (UWP) apps](https://developer.microsoft.com/windows/apps/design) for more information.
 
 1. Use the Windows Software Development Kit (SDK) to create a Windows Universal app. For more information on creating a Windows Universal app, see [Build UWP apps with Visual Studio](/windows/uwp/get-started/create-uwp-apps).
 
@@ -86,7 +85,7 @@ Partner settings apps have the following characteristics:
     </Extensions>
     ```
 
-   Note that this package cannot have an entry in the all apps list. To accomplish this, set the [AppListEntry](/uwp/api/windows.applicationmodel.core.applistentry) property to **none**.
+   This package cannot have an entry in the all apps list. To accomplish this, set the [AppListEntry](/uwp/api/windows.applicationmodel.core.applistentry) property to **none**.
 
     ```xml
      <uap:VisualElements AppListEntry="none" DisplayName="OptionalPackage"
