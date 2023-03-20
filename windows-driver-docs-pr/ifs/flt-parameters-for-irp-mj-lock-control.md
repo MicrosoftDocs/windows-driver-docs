@@ -99,4 +99,4 @@ IRP_MJ_LOCK_CONTROL can be an IRP-based I/O operation or a fast I/O operation.
 
 [**PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_complete_lock_callback_data_routine)
 
-[**PUNLOCK_ROUTINE**](/windows-hardware/drivers/ifs/windows-hardware/drivers/ddi/ntifs/punlock-routine)
+[**PUNLOCK_ROUTINE**](/windows-hardware/drivers/ddi/ntifs/nc-ntifs-punlock_routine)
