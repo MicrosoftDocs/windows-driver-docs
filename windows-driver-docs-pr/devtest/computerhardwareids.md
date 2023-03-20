@@ -19,7 +19,7 @@ ComputerHardwareIds (ComputerHardwareIds.exe) is a Windows Driver Kit (WDK) comm
 
 The ComputerHardwareIds tool is supported on systems that run Windows 7 or later versions of the Windows operating system. This tool is included in the Windows Driver Kit (WDK) under the `bin` directory. There are separate versions for 32-bit Windows platforms (x86) and 64-bit Windows platforms (x64).
 
-For information on downloading and installing the WDK, see [Download the Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
+For information on downloading and installing the WDK, see [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
 
 ## Run ComputerHardwareIds
 
@@ -76,4 +76,4 @@ For more information about device metadata packages, see [Device Metadata Packag
 
 [Specifying Hardware IDs for a Computer](../install/specifying-hardware-ids-for-a-computer.md)
 
-[Download the Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)
+[Download the Windows Driver Kit (WDK)](../download-the-wdk.md)

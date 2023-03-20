@@ -236,7 +236,7 @@ Once the stream is created and the resources are allocated, the application will
 
 When the stream is running, the source circuit fills the capture packet with audio data. Once the first packet is filled, the source circuit releases the packet to the ACX framework. At this point the ACX framework signals the stream notification event.  
 
-Once the stream notification has been signaled, the client can send [KSPROPERTY_RTAUDIO_GETREADPACKET](/windows-hardware/drivers/audio/ksproperty-rtaudio-getreadpacket) to get the index (0-based) of the packet that’s finished capturing. When the client has sent GETCAPTUREPACKET, the driver can assume all previous packets have been processed and are available for filling.  
+Once the stream notification has been signaled, the client can send [KSPROPERTY_RTAUDIO_GETREADPACKET](./ksproperty-rtaudio-getreadpacket.md) to get the index (0-based) of the packet that’s finished capturing. When the client has sent GETCAPTUREPACKET, the driver can assume all previous packets have been processed and are available for filling.  
 
 For Burst capture, the source circuit can release a new packet to the ACX framework as soon as GETREADPACKET has been called.
 

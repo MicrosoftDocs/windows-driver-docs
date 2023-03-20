@@ -6,7 +6,7 @@ ms.date: 04/20/2017
 
 # GPU segments
 
-Graphics Processing Unit (GPU) access to physical memory is abstracted in the Device Driver Interface (DDI) by a segmentation model. The [kernel-mode](/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode) driver expresses the physical memory resources available to a GPU by enumerating a set of segments, which are then managed by the video memory manager.
+Graphics Processing Unit (GPU) access to physical memory is abstracted in the Device Driver Interface (DDI) by a segmentation model. The [kernel-mode](../gettingstarted/user-mode-and-kernel-mode.md) driver expresses the physical memory resources available to a GPU by enumerating a set of segments, which are then managed by the video memory manager.
 
 There are three types of segments in Windows Display Driver Model (WDDM) v2:
 
@@ -78,8 +78,6 @@ Primary surfaces are understood to be accessed physically by the display control
 </tr>
 </tbody>
 </table>
-
- 
 
  
 
