@@ -1,7 +1,7 @@
 ---
 title: Barcode scanner Bluetooth service UUIDs
 description: This topic describes UUIDs for use with the Bluetooth Service Discovery Protocol (SDP) for barcode scanners.
-ms.date: 02/14/2018
+ms.date: 03/17/2023
 ---
 
 # Barcode scanner Bluetooth service UUIDs
@@ -29,8 +29,3 @@ The following UUID is not supported in Windows 10, version 1703, but is reserve
 DEFINE_GUID(BarcodeScannerIntermecScannerCommunicationProtocolServiceClass_UUID, 
 0xccb06baf, 0xdca9, 0x483f, 0x84, 0xd9, 0x36, 0x23, 0x24, 0xce, 0xd, 0x97)
 ```
-
-
-
-
-

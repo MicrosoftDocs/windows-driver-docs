@@ -1,7 +1,7 @@
 ---
 title: Device control keywords
 description: These keywords are used to provide control over the 3D manufacturing device.
-ms.date: 08/23/2021
+ms.date: 03/17/2023
 ---
 
 # Device control keywords

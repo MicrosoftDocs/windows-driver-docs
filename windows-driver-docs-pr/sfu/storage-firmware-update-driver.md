@@ -1,7 +1,7 @@
 ---
 title: Storage Firmware Update (SFU) driver
 description: Provides implementation details for the Storage Firmware Update (SFU) driver.
-ms.date: 03/03/2023
+ms.date: 03/17/2023
 ---
 
 # Storage Firmware Update (SFU) driver

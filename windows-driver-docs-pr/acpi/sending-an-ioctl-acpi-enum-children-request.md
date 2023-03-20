@@ -1,7 +1,7 @@
 ---
 title: Sending an IOCTL_ACPI_ENUM_CHILDREN Request
 description: Provides information about sending an IOCTL_ACPI_ENUM_CHILDREN request
-ms.date: 08/17/2021
+ms.date: 03/17/2023
 ---
 
 # Sending an IOCTL_ACPI_ENUM_CHILDREN Request

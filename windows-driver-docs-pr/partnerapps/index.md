@@ -1,7 +1,7 @@
 ---
 title: Partner app development
 description: Learn about Partner app development scenarios that require functionality such as access to system APIs.
-ms.date: 03/03/2023
+ms.date: 03/17/2023
 ---
 
 # Partner app development

@@ -1,7 +1,7 @@
 ---
 title: StatusUpdated
 description: The device-specific StatusUpdated event represents events such as a power change notification.
-ms.date: 09/07/2018
+ms.date: 03/17/2023
 ---
 
 # StatusUpdated
@@ -23,12 +23,12 @@ typedef struct _PosStatusUpdatedEventData
 
 The following table shows the memory layout of the data buffer for this event.
 
-| Memory value    | Description |
-|-----------------| -------------------------------------------|
-| 0x00000002 | **Header.EventType = PosEventType::StatusUpdated**  |
-| 0x00000010 | **Header.DataLength** = sizeof(**PosEventDataHeader**) + sizeof(**PosStatusUpdatedEventData.Status** + sizeof(**PosStatusUpdatedEventData.ExtendedStatus**) |
-| UINT32     | **Status**. See [BarcodeStatus](/windows-hardware/drivers/ddi/pointofservicecommontypes/ne-pointofservicecommontypes-_barcodestatus).   |
-| UINT32     | **ExtendedStatus** |
+| Memory value | Description |
+|---|---|
+| 0x00000002 | **Header.EventType = PosEventType::StatusUpdated** |
+| 0x00000010 | **Header.DataLength** = sizeof(**PosEventDataHeader**) + sizeof(**PosStatusUpdatedEventData.Status**) + sizeof(**PosStatusUpdatedEventData.ExtendedStatus**) |
+| UINT32 | **Status**. See [BarcodeStatus](/windows-hardware/drivers/ddi/pointofservicecommontypes/ne-pointofservicecommontypes-_barcodestatus). |
+| UINT32 | **ExtendedStatus** |
 
 ## Requirements
 

@@ -1,7 +1,7 @@
 ---
 title: Print schema references
 description: Provides references and links to industry standards, specifications, and technical articles.
-ms.date: 12/13/2021
+ms.date: 03/17/2023
 ---
 
 # Print schema references

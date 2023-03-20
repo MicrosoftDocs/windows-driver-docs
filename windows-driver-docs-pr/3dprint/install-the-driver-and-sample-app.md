@@ -1,7 +1,7 @@
 ---
 title: Install the driver and sample app
 description: This section provides information on installing the driver and the WSD sample app.
-ms.date: 08/17/2021
+ms.date: 03/17/2023
 ---
 
 # Install the driver and sample app

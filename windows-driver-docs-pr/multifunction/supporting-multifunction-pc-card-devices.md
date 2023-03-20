@@ -8,7 +8,7 @@ keywords:
 - 16-bit PC Card multifunction devices WDK
 - configuration registers WDK multifunction devices
 - registers WDK multifunction devices
-ms.date: 08/13/2021
+ms.date: 03/17/2023
 ---
 
 # Supporting Multifunction PC Card Devices

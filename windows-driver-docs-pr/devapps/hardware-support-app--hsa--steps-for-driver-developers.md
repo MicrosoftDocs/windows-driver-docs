@@ -7,7 +7,7 @@ keywords:
 - custom capabilities
 - UWP
 - Hardware
-ms.date: 08/13/2021
+ms.date: 03/17/2023
 ---
 
 # Hardware Support App (HSA): Steps for Driver Developers

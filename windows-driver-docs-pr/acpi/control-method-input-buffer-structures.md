@@ -1,7 +1,7 @@
 ---
 title: Control Method Input Buffer Structures
 description: Provides information about control method input buffer structures
-ms.date: 08/17/2021
+ms.date: 03/17/2023
 ---
 
 # Control Method Input Buffer Structures

@@ -241,6 +241,7 @@
         "**/ieee/*.md": "UpdateFrequency5",
         "**/mobilebroadband/*.md": "UpdateFrequency5",
         "**/network/*.md": "UpdateFrequency5",
+        "**/nfc/*.md": "UpdateFrequency5",
         "**/parports/*.md": "UpdateFrequency5",
         "**/pci/*.md": "UpdateFrequency5",
         "**/pcmcia/*.md": "UpdateFrequency5",
@@ -248,10 +249,15 @@
         "**/powermeter/*.md": "UpdateFrequency5",
         "**/sd/*.md": "UpdateFrequency5",
         "**/serports/*.md": "UpdateFrequency5",
+        "**/spb.md": "UpdateFrequency5",
         "**/storage/*.md": "UpdateFrequency5",
         "**/taef/*.md": "UpdateFrequency5",
         "**/wdtf/*.md": "UpdateFrequency5",
-        "**/whea/*.md": "UpdateFrequency5"      }
+        "**/whea/*.md": "UpdateFrequency5"
+      },
+      "adobe-target": {
+        "**/*/*.md": true
+      }
     },
     "externalReference": [],
     "template": "op.html",

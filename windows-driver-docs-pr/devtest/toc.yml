@@ -640,6 +640,8 @@
       href: code-integrity-checking.md
     - name: "WDF verification"
       href: wdf-verification.md
+    - name: "File System Filter verification"
+      href: file-system-filter-verification.md
     - name: "Driver Verifier: What's new"
       href: driver-verifier--what-s-new.md
     - name: "Using Driver Verifier"
@@ -2819,6 +2821,8 @@
         href: bcdedit--dbgsettings.md
       - name: "BCDEdit /debug"
         href: bcdedit--debug.md
+      - name: "BCDEdit /default"
+        href: bcdedit--default.md
       - name: "BCDEdit /deletevalue"
         href: bcdedit--deletevalue.md
       - name: "BCDEdit /displayorder"

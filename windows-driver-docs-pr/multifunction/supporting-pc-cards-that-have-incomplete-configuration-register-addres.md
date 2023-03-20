@@ -5,7 +5,7 @@ keywords:
 - incomplete configuration registers WDK multifunction devices
 - system-supplied multifunction bus drivers WDK
 - mf.sys
-ms.date: 08/13/2021
+ms.date: 03/17/2023
 ---
 
 # PC cards with incomplete configuration register addresses

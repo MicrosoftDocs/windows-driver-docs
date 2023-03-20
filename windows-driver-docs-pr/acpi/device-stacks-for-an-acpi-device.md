@@ -10,7 +10,7 @@ keywords:
 - root bus drivers WDK ACPI
 - function drivers WDK ACPI , device stacks
 - WDM function drivers WDK ACPI , device stacks
-ms.date: 08/17/2021
+ms.date: 03/17/2023
 ---
 
 # Device Stacks for an ACPI Device

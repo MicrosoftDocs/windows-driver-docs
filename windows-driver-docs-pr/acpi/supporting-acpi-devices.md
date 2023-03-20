@@ -10,7 +10,7 @@ keywords:
 - operation region handlers WDK ACPI
 - function drivers WDK ACPI
 - WDM function drivers WDK ACPI
-ms.date: 08/17/2021
+ms.date: 03/17/2023
 ---
 
 # Supporting ACPI Devices
