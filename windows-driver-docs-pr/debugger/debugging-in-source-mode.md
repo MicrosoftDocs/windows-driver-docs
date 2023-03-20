@@ -58,9 +58,7 @@ If you are in source mode, the appropriate Source window moves to the foreground
 
 As you move through the application, WinDbg highlights your location in the Source window and the Disassembly window. Lines at which breakpoints are set are also highlighted. The source code is colored according to the parsing of the language. If the Source window has been selected, you can hover over a symbol with the mouse to evaluate it. For more information about these features and how to control them, see [Source Windows](source-window.md).
 
-To activate source mode in WinDbg, use the [**l+t**](l---l---set-source-options-.md) command, click **source mode** on the **debug** menu, or click the **source mode on** button (![screen shot of the source mode on button.](images/tbsrc.png)) on the toolbar.
-
-When source mode is active, the **ASM** indicator appears unavailable on the status bar.
+To activate source mode in WinDbg, use the [**l+t**](l---l---set-source-options-.md) command, click **source mode** on the **debug** menu, or click the **source mode on** button. When source mode is active, the **ASM** indicator appears unavailable on the status bar.
 
 You can view or alter the values of any local variables as you step through a function in source mode. For more information, see [Reading and Writing Memory](reading-and-writing-memory.md).
 
