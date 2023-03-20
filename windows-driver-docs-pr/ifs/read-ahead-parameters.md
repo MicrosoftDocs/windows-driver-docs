@@ -87,7 +87,7 @@ None
 ## See also
 
 
-[**CcSetReadAheadGranularityEx**](/windows-hardware/drivers/ddi/ntifs/index)
+[**CcSetReadAheadGranularityEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccsetreadaheadgranularity)
 
 [**CcReadAhead**](/previous-versions/ff539191(v=vs.85))
 
