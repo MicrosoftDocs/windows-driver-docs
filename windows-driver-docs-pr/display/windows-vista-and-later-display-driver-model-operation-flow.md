@@ -8,7 +8,7 @@ keywords:
 - command buffers WDK display , operation flow
 - DMA buffers WDK display , operation flow
 - buffers WDK display
-ms.date: 01/06/2023
+ms.date: 03/20/2023
 ---
 
 # Windows Display Driver Model (WDDM) operation flow
@@ -21,7 +21,7 @@ The following diagram shows the flow of WDDM operations that occur from when a r
 
   After an application requests to create a rendering device:
 
-  * **1**: The DirectX Graphics Kernel Subsystem (DXGK) calls the display miniport driver's (KMD) [**DxgkDdiCreateDevice**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createdevice) function.
+  * **1**: The DirectX Graphics Kernel Subsystem (*Dxgkrnl*) calls the display miniport driver's (KMD) [**DxgkDdiCreateDevice**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createdevice) function.
 
     KMD initializes direct memory access (DMA) by returning a pointer to a filled [**DXGK_DEVICEINFO**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_deviceinfo) structure in the **pInfo** member of the [**DXGKARG_CREATEDEVICE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_createdevice) structure.
 
@@ -45,7 +45,7 @@ The following diagram shows the flow of WDDM operations that occur from when a r
 
   * **7**: The Direct3D runtime calls the UMD function related to the drawing operation, for example, [**DrawPrimitive2**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_drawprimitive2).
 
-  * **8**: The Direct3D runtime calls either the UMD's [**Present**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_present) or [**Flush**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_flush) function to cause the command buffer to be submitted to kernel-mode. Note: UMD will also submit the command buffer if the command buffer is full.
+  * **8**: The Direct3D runtime calls either the UMD's [**Present**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_present) or [**Flush**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_flush) function to cause the command buffer to be submitted to kernel-mode. Note: UMD also submits the command buffer when the command buffer is full.
 
   * **9**: In response to Step 8, UMD calls one of the following runtime-supplied functions:
 
@@ -56,13 +56,13 @@ The following diagram shows the flow of WDDM operations that occur from when a r
 
 * **Submitting the DMA Buffer to Hardware**
 
-  * **11**: DXGK calls KMD's [**DxgkDdiBuildPagingBuffer**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_buildpagingbuffer) function to create special purpose DMA buffers that move the allocations specified in the allocation list to and from GPU-accessible memory. These special DMA buffers are known as paging buffers. [**DxgkDdiBuildPagingBuffer**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_buildpagingbuffer) is not called for every frame.
+  * **11**: *Dxgkrnl* calls KMD's [**DxgkDdiBuildPagingBuffer**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_buildpagingbuffer) function to create special purpose DMA buffers that move the allocations specified in the allocation list to and from GPU-accessible memory. These special DMA buffers are known as paging buffers. [**DxgkDdiBuildPagingBuffer**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_buildpagingbuffer) isn't called for every frame.
 
-  * **12**: DXGK calls KMD's [**DxgkDdiSubmitCommand**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_submitcommand) function to queue the paging buffers to the GPU execution unit.
+  * **12**: *Dxgkrnl* calls KMD's [**DxgkDdiSubmitCommand**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_submitcommand) function to queue the paging buffers to the GPU execution unit.
 
-  * **13**: DXGK calls KMD's [**DxgkDdiPatch**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_patch) function to assign physical addresses to the resources in the DMA buffer.
+  * **13**: *Dxgkrnl* calls KMD's [**DxgkDdiPatch**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_patch) function to assign physical addresses to the resources in the DMA buffer.
 
-  * **14**: DXGK calls KMD's [**DxgkDdiSubmitCommand**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_submitcommand) function to queue the DMA buffer to the GPU execution unit. Each DMA buffer submitted to the GPU contains a fence identifier, which is a number. After the GPU finishes processing the DMA buffer, the GPU generates an interrupt.
+  * **14**: *Dxgkrnl* calls KMD's [**DxgkDdiSubmitCommand**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_submitcommand) function to queue the DMA buffer to the GPU execution unit. Each DMA buffer submitted to the GPU contains a fence identifier, which is a number. After the GPU finishes processing the DMA buffer, the GPU generates an interrupt.
 
   * **15**: KMD is notified of the interrupt in its [**DxgkDdiInterruptRoutine**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_interrupt_routine) function. KMD should read, from the GPU, the fence identifier of the DMA buffer that just completed.
 

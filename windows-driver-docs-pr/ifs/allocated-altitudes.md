@@ -5,7 +5,7 @@ ms.date: 09/09/2022
 keywords:
 - filter driver altitude
 - minifilter driver altitude
-ms.custom: contperf-fy21q1
+ms.custom: UpdateFrequency1
 ---
 
 # Allocated filter altitudes

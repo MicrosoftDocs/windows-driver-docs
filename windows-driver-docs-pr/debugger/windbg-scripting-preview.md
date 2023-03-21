@@ -16,7 +16,7 @@ Use the ribbon buttons to:
 - Create a new script
 - Open an existing script
 - Execute a script
-- Save a script 
+- Save a script
 - Unlink a script
 
 You can also automatically execute scripts by right-clicking in the script window and selecting *Execute Script on Save*. When you successfully load a script, a green check box will appear on the script title bar. If there are errors in the script, a red x will be displayed.
@@ -50,7 +50,6 @@ Use **New Script** > **NatVis** to open the following blank NatVis template.
 
 For more information about working with NatVis, see [Debugger Objects in NatVis](native-debugger-objects-in-natvis.md).
 
- 
 ---
 
 ## See Also

@@ -231,7 +231,12 @@
         "**/wdtf/*.md": "domars",
         "**/whea/*.md": "tedhudek"      },
       "ms.custom": {
+        "**/audio/*.md": "UpdateFrequency3",
+        "**/battery/*.md": "UpdateFrequency5",
         "**/biometric/*.md": "UpdateFrequency5",
+        "**/debugger/*.md": "UpdateFrequency3",
+        "**/devtest/*.md": "UpdateFrequency5",
+        "**/driversecurity/*.md": "UpdateFrequency3",
         "**/gpio/*.md": "UpdateFrequency5",
         "**/ieee/*.md": "UpdateFrequency5",
         "**/mobilebroadband/*.md": "UpdateFrequency5",
@@ -241,18 +246,14 @@
         "**/pci/*.md": "UpdateFrequency5",
         "**/pcmcia/*.md": "UpdateFrequency5",
         "**/portable/*.md": "UpdateFrequency5",
-        "**/sd/*.md": "UpdateFrequency5",
-        "**/whea/*.md": "UpdateFrequency5",
-        "**/audio/*.md": "UpdateFrequency3",
-        "**/battery/*.md": "UpdateFrequency5",
-        "**/debugger/*.md": "UpdateFrequency3",
-        "**/devtest/*.md": "UpdateFrequency5",
-        "**/driversecurity/*.md": "UpdateFrequency3",
         "**/powermeter/*.md": "UpdateFrequency5",
+        "**/sd/*.md": "UpdateFrequency5",
         "**/serports/*.md": "UpdateFrequency5",
         "**/spb.md": "UpdateFrequency5",
+        "**/storage/*.md": "UpdateFrequency5",
         "**/taef/*.md": "UpdateFrequency5",
-        "**/wdtf/*.md": "UpdateFrequency5"
+        "**/wdtf/*.md": "UpdateFrequency5",
+        "**/whea/*.md": "UpdateFrequency5"
       },
       "adobe-target": {
         "**/*/*.md": true

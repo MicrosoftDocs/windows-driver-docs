@@ -13,7 +13,7 @@ api_type:
 
 # Bug Check 0x1DE: BUGCODE\_WIFIADAPTER\_DRIVER
 
-The BUGCODE\_WIFIADAPTER\_DRIVER bug check has a value of 0x000001DE. This indicates that the operating system encountered an error caused by a networking driver managed by WiFiCx. The Wi-Fi WDF class extensions (WiFiCx) supports KMDF-based Wi-Fi client driver for Wi-Fi devices.  For more information, see [Introduction to the Wi-Fi WDF class extension (WiFiCx)](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx).
+The BUGCODE\_WIFIADAPTER\_DRIVER bug check has a value of 0x000001DE. This indicates that the operating system encountered an error caused by a networking driver managed by WiFiCx. The Wi-Fi WDF class extensions (WiFiCx) supports KMDF-based Wi-Fi client driver for Wi-Fi devices.  For more information, see [Introduction to the Wi-Fi WDF class extension (WiFiCx)](../netcx/wifi-wdf-class-extension-wificx.md).
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
@@ -102,6 +102,6 @@ Parameter 1 describes the type of violation. Look at the call stack to determine
 
 ## See also
 
-[Introduction to the Wi-Fi WDF class extension (WiFiCx)](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx)
+[Introduction to the Wi-Fi WDF class extension (WiFiCx)](../netcx/wifi-wdf-class-extension-wificx.md)
 
 [Bug Check Code Reference](bug-check-code-reference2.md)

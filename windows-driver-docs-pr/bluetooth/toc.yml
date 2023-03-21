@@ -13,13 +13,14 @@
   - name: "Bluetooth Registry Entries"
     href: bluetooth-registry-entries.md
   - name: "Bluetooth Profile Driver Functions"
-    href: bluetooth-profile-driver-functions.md
+    href: /windows-hardware/drivers/ddi/_bltooth/
 - name: "Bluetooth Low Energy Overview"
   href: bluetooth-low-energy-overview.md
 - name: "Bluetooth Low Energy Functions"
   href: bluetooth-low-energy-functions.md
 - name: "Bluetooth Low Energy Audio"
   href: bluetooth-low-energy-audio.md
+  href: /windows/win32/api/_bltooth/
 - name: "Using the Bluetooth Driver Stack"
   items: 
   - name: "How to use the Bluetooth Driver Stack"
@@ -160,4 +161,3 @@
         href: testing-BTP-tools-btvs.md
 - name: "Bluetooth Radio Reset and Recovery"
   href: bluetooth-radio-error-recovery.md
-  
