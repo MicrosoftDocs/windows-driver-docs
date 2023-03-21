@@ -157,7 +157,7 @@ The **Value name** and **Value data** in the **Edit Multi-String** dialog:
 You can associate PSA with printers that natively support Universal Print.
 
 > [!IMPORTANT]
-> Printers using [Universal Print Connector](/universal-print/fundamentals/universal-print-connector-overview#:~:text=The%20Universal%20Print%20connector%20is%20a%20component%20that,use%20a%20connector.%20Connect%20printers%20to%20Universal%20Print) are not supported for use with PSA.
+> Printers using [Universal Print Connector](/universal-print/fundamentals/universal-print-connector-overview#:~:text=The%20Universal%20Print%20connector%20is%20a%20component%20that,use%20a%20connector.%20Connect%20printers%20to%20Universal%20Print) are not supported by Microsoft for use with PSA. However, in some instances, printers using Universal Print Connector may be supported by the original equipment manufacturer (“OEM”) that provides the PSA and printer hardware.  Please check with your OEM.  The OEM, and not Microsoft, will be responsible for issues related to this OEM enablement and support.
 
 You can find the Hardware Id of a Universal Print printer in **Control Panel**, similar to a local IPP printer:
 
