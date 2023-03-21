@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Low Energy (LE) audio
 description: This article provides an overview of Bluetooth LE audio introduced in Windows 11.
-ms.date: 02/15/2023
+ms.date: 03/21/2023
 ---
 
 # Bluetooth Low Energy (LE) audio
@@ -218,9 +218,9 @@ The PC is connected to a single audio device that supports mono streams. The sin
 
 | Use Case Examples | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
-| Media playback | **Render**:<br/>Signal Processing Mode: Default<br/>Channel Count: 1<br/>**Capture**: None | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: High reliability |
-| Voice call with no microphone on audio device | **Render**:<br/>Signal Processing Mode: Communications<br/>Channel Count: 1<br/>**Capture**: None | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: Low latency |
-| Video game playback | **Render**:<br/>Signal Processing Mode: Default<br/>Channel Count: 1<br/>**Capture**: None | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: Low latency |
+| Media playback | **Render**:<br>Signal Processing Mode: Default<br>Channel Count: 1<br>**Capture**: None | CIS Count: 1<br>CIG Count: 1<br>BAP QoS Settings: High reliability |
+| Voice call with no microphone on audio device | **Render**:<br>Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture**: None | CIS Count: 1<br>CIG Count: 1<br>BAP QoS Settings: Low latency |
+| Video game playback | **Render**:<br>Signal Processing Mode: Default<br>Channel Count: 1<br>**Capture**: None | CIS Count: 1<br>CIG Count: 1<br>BAP QoS Settings: Low latency |
 
 ###### Basic audio profile configuration 4
 
@@ -232,9 +232,9 @@ The PC is connected to a single audio device that supports stereo streams. The a
 
 | Use Case Examples | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
-| Media playback | **Render**: Signal Processing Mode: Default<br/>Channel Count: 2<br/>**Capture**: None | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: High reliability Audio Channel Allocation: Front left and front right |
-| Voice call with no microphone on audio device | **Render**:<br/>Signal Processing Mode: Communications<br/>Channel Count: 1<br/>**Capture**: None | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: Low latency<br/>Audio Channel Allocation: Either front left or front right |
-| Video game playback | Signal Processing Mode: Default<br/>Channel Count: 2<br/>**Capture**: None | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: Low latency<br/>Audio Channel Allocation: Front left and front right |
+| Media playback | **Render**: Signal Processing Mode: Default<br>Channel Count: 2<br>**Capture**: None | CIS Count: 1<br>CIG Count: 1<br>BAP QoS Settings: High reliability Audio Channel Allocation: Front left and front right |
+| Voice call with no microphone on audio device | **Render**:<br>Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture**: None | CIS Count: 1<br>CIG Count: 1<br>BAP QoS Settings: Low latency<br>Audio Channel Allocation: Either front left or front right |
+| Video game playback | Signal Processing Mode: Default<br>Channel Count: 2<br>**Capture**: None | CIS Count: 1<br>CIG Count: 1<br>BAP QoS Settings: Low latency<br>Audio Channel Allocation: Front left and front right |
 
 ###### Basic audio profile configuration 6(i)
 
@@ -246,10 +246,10 @@ The PC is connected to a single audio device that supports stereo streams. The a
 
 | Use Case Examples | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
-| Media playback | Signal Processing Mode: Default<br/>Channel Count: 2<br/>**Capture**: None | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: High reliability |
-| Voice call with no microphone on audio device | Signal Processing Mode: Communications<br/>Channel Count: 1<br/>**Capture**: None | CIS Count: 1<br/>
-CIG Count: 1<br/>BAP QoS Settings: Low latency<br/>Audio Channel Allocation: Either front left or front right |
-| Video game playback | Signal Processing Mode: Default<br/>Channel Count: 2<br/>**Capture**: None | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: Low latency<br/>Audio Channel Allocation: Front left and front right |
+| Media playback | Signal Processing Mode: Default<br>Channel Count: 2<br>**Capture**: None | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: High reliability |
+| Voice call with no microphone on audio device | Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture**: None | CIS Count: 1<br>
+CIG Count: 1<br>BAP QoS Settings: Low latency<br>Audio Channel Allocation: Either front left or front right |
+| Video game playback | Signal Processing Mode: Default<br>Channel Count: 2<br>**Capture**: None | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low latency<br>Audio Channel Allocation: Front left and front right |
 
 ###### Basic audio profile configuration 6(ii)
 
@@ -261,9 +261,9 @@ The PC is connected to a coordinated set of audio devices. The set is capable of
 
 | Use Case Examples | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
-| Media playback | Signal Processing Mode: Default<br/>Channel Count: 2<br/>**Capture**: None | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: High reliability |
-| Voice call with no microphone on either device | Signal Processing Mode: Communications<br/>Channel Count: 1<br/>**Capture**: None | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: Low latency |
-| Video game playback | Signal Processing Mode: Default<br/>Channel Count: 2<br/>**Capture**: None | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: Low latency |
+| Media playback | Signal Processing Mode: Default<br>Channel Count: 2<br>**Capture**: None | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: High reliability |
+| Voice call with no microphone on either device | Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture**: None | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low latency |
+| Video game playback | Signal Processing Mode: Default<br>Channel Count: 2<br>**Capture**: None | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low latency |
 
 ##### Bidirectional configurations
 
@@ -279,8 +279,8 @@ The PC is connected to a single audio device with a bidirectional mono stream es
 
 | Use Case | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
-| Voice call | **Render:**<br/>Signal Processing Mode: Communications<br/>Channel Count: 1<br/>**Capture:**<br/>Signal Processing Mode: Default<br/>Channel Count: 1 | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency |
-| Video game playback with voice chat | **Render:**<br/>Signal Processing Mode: Communications<br/>Channel Count: 1<br/>**Capture:**<br/>Signal Processing Mode: Default<br/>Channel Count: 1 | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency |
+| Voice call | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 1<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
+| Video game playback with voice chat | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 1<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
 
 ###### Basic audio profile configuration 7(i)
 
@@ -292,8 +292,8 @@ The PC is connected to a single audio device with a bidirectional mono stream es
 
 | Use Case | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
-| Voice call | **Render:**<br/>Signal Processing Mode: Communications<br/>Channel Count: 1<br/>**Capture:**<br/>Signal Processing Mode: Default<br/>Channel Count: 1 | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency |
-| Video game playback with voice chat | **Render:**<br/>Signal Processing Mode: Communications<br/>Channel Count: 1<br/>**Capture:**<br/>Signal Processing Mode: Default<br/>Channel Count: 1 | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency |
+| Voice call | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
+| Video game playback with voice chat | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
 
 ###### Basic audio profile configuration 5
 
@@ -305,7 +305,7 @@ The PC is connected to a single audio device with a stereo render stream and mon
 
 | Use Case | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
-| Video game playback with voice chat | **Render:**<br/>Signal Processing Mode: Communications<br/>Channel Count: 2<br/>**Capture:**<br/>Signal Processing Mode: Default<br/>Channel Count: 1 | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency<br/>Render audio channel allocation: Front left and front right |
+| Video game playback with voice chat | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 2<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 1<br>CIG Count: 1<br>BAP QoS Settings: Low Latency<br>Render audio channel allocation: Front left and front right |
 
 ###### Basic audio profile configuration 8(i)
 
@@ -317,7 +317,7 @@ The PC is connected to a single audio device that supports stereo render streams
 
 | Use Case | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
-| Video game playback with voice chat | **Render:**<br/>Signal Processing Mode: Communications<br/>Channel Count: 2<br/>**Capture:**<br/>Signal Processing Mode: Default<br/>Channel Count: 1 | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency |
+| Video game playback with voice chat | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 2<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
 
 ###### Basic audio profile configuration 8(ii)
 
@@ -329,8 +329,8 @@ The PC is connected to a coordinated set of audio devices. Each set member is re
 
 | Use Case | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
-| Voice call | **Render:**<br/>Signal Processing Mode: Communications<br/>Channel Count: 1<br/>**Capture:**<br/>Signal Processing Mode: Default<br/>Channel Count: 1 | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency |
-| Video game playback with voice chat | **Render:**<br/>Signal Processing Mode: Communications<br/>Channel Count: 2<br/>**Capture:**<br/>Signal Processing Mode: Default<br/>Channel Count: 1 | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency |
+| Voice call | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
+| Video game playback with voice chat | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 2<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
 
 ##### Capture-only configurations
 
@@ -344,7 +344,7 @@ The PC is connected to a single audio device that supports mono capture streams.
 
 | Use Case | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
-| Voice call with no speaker on device | Render: None<br/>Capture:<br/>Signal Processing Mode: Default<br/>Channel Count: 1 | CIS Count: 1<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency |
+| Voice call with no speaker on device | Render: None<br>Capture:<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 1<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
 
 ###### Basic audio profile configuration 9(i)
 
@@ -356,7 +356,7 @@ The PC is connected to a single audio device that supports sending stereo audio 
 
 | Use Case | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
-| Multi channel microphone capture | Render: None<br/>Capture:<br/>Signal Processing Mode: Default<br/>Channel Count: 1<br/> | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency |
+| Multi channel microphone capture | Render: None<br>Capture:<br>Signal Processing Mode: Default<br>Channel Count: 1<br> | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
 
 ###### Basic audio profile configuration 9(ii)
 
@@ -370,7 +370,7 @@ The PC is connected to a set of audio devices. Each set member sends 1 channel o
 
 | Use Case | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
-| Multi channel microphone capture | Render: None<br/>Capture:<br/>Signal Processing Mode: Default<br/>Channel Count: 1 | CIS Count: 2<br/>CIG Count: 1<br/>BAP QoS Settings: Low Latency |
+| Multi channel microphone capture | Render: None<br>Capture:<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
 
 If the remote device or device set supports bidirectional audio, then the configurations for a capture only stream are the same as bidirectional configurations. This allows transitions from capture only scenarios to bidirectional scenarios without needing to re-create the streams.
 
