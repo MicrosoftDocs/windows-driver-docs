@@ -1,7 +1,7 @@
 ---
 title: ACX Audio Class Extensions Overview
 description: This topic provides a high level overview of the ACX Audio Class Extensions.
-ms.date: 01/19/2023
+ms.date: 03/20/2023
 ms.localizationpriority: medium
 ---
 
@@ -20,17 +20,17 @@ ACX is built using the Kernel Mode Driver Framework (KMDF) and not the User Mode
 
 The use of the ACX framework makes it easy to create working audio drivers ‘out of the box’. For example, ACX  supports default completion for most of its settings. This makes it easier for the driver to use the correct setting, yet still allows for customization.
 
-The ACX framework exposes audio concepts as WDF objects that driver can interact with (stream, format, etc.). This allows for a consistent programming experience and enables a larger community of audio driver developers. 
+The ACX framework exposes audio concepts as WDF objects that driver can interact with (stream, format, etc.). This allows for a consistent programming experience and enables a larger community of audio driver developers.
 
 ### ACX goals
 
 The audio class extensions (ACX) have the following goals.
 
-- Simplify the effort and know-how required to develop simple stand-alone audio drivers. 
+- Simplify the effort and know-how required to develop simple stand-alone audio drivers.
 - Reduce the amount of code that a 3rd party needs to develop. Fewer lines of code decreases maintenance and makes debugging easier.
 - Allows existing upper user-mode clients (services and apps) to run as is.
 - Simplify the power-pnp management of the audio stack drivers.
-- No impact the overall performance, i.e., no additional/noticeable latency. 
+- No impact the overall performance, i.e., no additional/noticeable latency.
 - Simplify the effort required to develop multi-stack audio drivers.
 - Allow 3rd party driver to specify the locking mechanism to be used when streaming.
 - Uses the Microsoft component deployment isolation solution that makes drivers/APOs modules self-contained and reusable.
@@ -47,21 +47,21 @@ ACX is designed to co-exist with existing audio drivers, to allow for a flexible
 
 - Binary compatibility of exiting, unchanged (WDM-based) audio miniport drivers is maintained by existing legacy Windows class drivers. 
 - Only WaveRT based streaming is currently supported by ACX.
-- Legacy PortCls/Ks and new ACX stacks run side-by-side. Using ACX does not force 3rd party to port their current audio drivers to the new model. As the model offers many advantages, 3rd parties may voluntarily opt to use it for their future audio development. 
+- Legacy PortCls/Ks and new ACX stacks run side-by-side. Using ACX does not force 3rd party to port their current audio drivers to the new model. As the model offers many advantages, 3rd parties may voluntarily opt to use it for their future audio development.
 
 ## ACX common definitions
 
-*Circuit* - A driver component representing a partial or full audio path. The circuit represents an existing endpoint and its capabilities. 
+*Circuit* - A driver component representing a partial or full audio path. The circuit represents an existing endpoint and its capabilities.
 
 *Stream* -  A driver component that’s created to represent an audio stream, created by a Circuit. The Stream is composed of a list of Elements created based on the parent Circuit’s Elements.  
 
-*Stream Circuit* - the circuit in a multi-stack architecture (partial audio path) that directly interface with upper user-mode streaming service. 
+*Stream Circuit* - the circuit in a multi-stack architecture (partial audio path) that directly interface with upper user-mode streaming service.
 
 *Core Circuit* - The circuit in a multi-stack architecture (partial audio path) that gives the identity of the audio endpoint device.
 
 *Element* - A subcomponent of a Circuit or Stream, representing an audio capability of the underline hardware. This could be a Volume, or Mute, or Jack element, or a Module element on a DSP circuit, etc. 
 
-*Endpoint Audio Path* - A single or group of Circuit objects connected together to represent a single audio endpoint. The Circuit objects must come from different device stacks belonging to the same or different drivers. 
+*Endpoint Audio Path* - A single or group of Circuit objects connected together to represent a single audio endpoint. The Circuit objects must come from different device stacks belonging to the same or different drivers.
 
 ## Summary of ACX Objects
 
@@ -69,7 +69,7 @@ For a summary of the base ACX objects, see [Summary of ACX Objects](acx-summary-
 
 ## Sample ACX driver
 
-The sample audio driver, SYSVAD will be updated to make use of ACX. When this sample is available, it will be linked here.
+A simple ACX sample driver is available to view and download on GitHub in the develop branch - [https://github.com/microsoft/Windows-driver-samples/tree/develop/audio/Acx/Samples](https://github.com/microsoft/Windows-driver-samples/tree/develop/audio/Acx/Samples).
 
 ## ACX Driver Logging
 
