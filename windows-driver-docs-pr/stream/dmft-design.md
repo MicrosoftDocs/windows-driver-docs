@@ -403,7 +403,7 @@ Upon device driver installation, the INF must now make all COM object and MFT re
 |INF AddReg: <br><br> HKLM,Software\\Classes\\CLSID\\{clsid}\\... <br> HKCR,CLSID\\{clsid}\\... <br> HKCR,Wow6432Node\CLSID\\{clsid}\\... <br> HKCR,WowAA32Node\CLSID\\{clsid}\\... |Per-Instance device software INF AddReg: <br><br> HKR,Classes\CLSID\\{clsid}\\... <br> HKR,Classes\CLSID\\{clsid}\\... <br> HKR,Classes\Wow6432Node\CLSID\\{clsid}\\... <br> HKR,Classes\WowAA32Node\CLSID\\{clsid}\\... |
 |Registry Locations: <br><br> HKLM\SOFTWARE\Classes\CLSID\\{clsid}\\... <br> HKLM\SOFTWARE\Classes\Wow6432Node\CLSID\\{clsid}\\... <br> HKLM\SOFTWARE\Classes\WowAA32Node\CLSID\\{clsid}\\... |Registry Location (_AdapterKey_ location is subject to change): <br><br> _AdapterKey_\Classes\\... |
 
-The INF syntax for differentiating based on OS version can be found in [Combining platform extensions with operating system versions](/windows-hardware/drivers/install/combining-platform-extensions-with-operating-system-versions). Starting in Window 11 22H2, the INF must conform to these new registry keys. Older OS versions will still use the traditional registry keys for compatibility. The INF must setup these registry keys in the old location on older OS builds and create the new keys in their new location for newer OS builds. For example, for an MFT registration on an old build the INF will create the key under: 
+The INF syntax for differentiating based on OS version can be found in [Combining platform extensions with operating system versions](../install/combining-platform-extensions-with-operating-system-versions.md). Starting in Window 11 22H2, the INF must conform to these new registry keys. Older OS versions will still use the traditional registry keys for compatibility. The INF must setup these registry keys in the old location on older OS builds and create the new keys in their new location for newer OS builds. For example, for an MFT registration on an old build the INF will create the key under: 
 
 ```
 HKLM\SOFTWARE\Classes\MediaFoundation\Transforms\{clsid}\ 
@@ -437,4 +437,4 @@ A syntax example of targeting different OS versions can be seen below:
 
 ; INF work for newer build here
 ``` 
-More information and other examples can be found at MSDN. 
+More information and other examples can be found at MSDN.

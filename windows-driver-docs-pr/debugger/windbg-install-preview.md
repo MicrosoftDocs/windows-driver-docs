@@ -8,7 +8,7 @@ ms.date: 12/16/2022
 
 ## Installation
 
-![Small logo on windbg preview.](images/windbgx-preview-logo.png)
+![Small logo of windbg preview.](images/windbgx-preview-logo.png)
 
 This section describes how to install the WinDbg Preview debugger.
 
@@ -17,6 +17,7 @@ The WinDbg Preview debugger is available in the Microsoft Store. It requires Win
 Once the app is located, select it to download and install.
 
 ## Check for Windows 10 updates
+
 1. Open the Store app.
 
 2. Select **More... >**  **Downloads and Updates** to check for updates.

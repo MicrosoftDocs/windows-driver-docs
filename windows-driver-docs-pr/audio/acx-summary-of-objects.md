@@ -31,7 +31,7 @@ An audio endpoint in the ACX frameworks is a collection of one or more ACX circu
 
 - An AcxCircuit may have one or more streams.
 
-- An AcxCircuit has a dedicated WDF queue. For more information about WDF queues, see [Framework Queue Objects](/windows-hardware/drivers/wdf/creating-i-o-queues).
+- An AcxCircuit has a dedicated WDF queue. For more information about WDF queues, see [Framework Queue Objects](../wdf/creating-i-o-queues.md).
 
 The DDIs for ACX circuits are described in the [acxcircuit.h](/windows-hardware/drivers/ddi/acxcircuit) header.
 
@@ -45,7 +45,7 @@ The DDIs for Pin are described in the [acxpin.h](/windows-hardware/drivers/ddi/a
 
 An AcxStream represents an audio stream on a specific circuit’s hardware.  An AcxStream may aggregate one or more AcxElements-like objects. By default, AcxElements are ‘connected’ in the same order of assembly. An AcxStream is associated with only one ACX circuit. 
 
-- An AcxStream has a dedicated WDF queue.  For more information about WDF queues, see [Framework Queue Objects](/windows-hardware/drivers/wdf/creating-i-o-queues)
+- An AcxStream has a dedicated WDF queue.  For more information about WDF queues, see [Framework Queue Objects](../wdf/creating-i-o-queues.md)
 - An AcxStream support different states. These states indicate when audio is flowing (RUN state) or not flowing (PAUSE or STOP state).
 - Currently ACX supports two types of streams: basic ACX stream objects used by non-streaming circuits, and ACX RT stream objects used by streaming circuits.
 

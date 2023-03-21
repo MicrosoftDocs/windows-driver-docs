@@ -2821,6 +2821,8 @@
         href: bcdedit--dbgsettings.md
       - name: "BCDEdit /debug"
         href: bcdedit--debug.md
+      - name: "BCDEdit /default"
+        href: bcdedit--default.md
       - name: "BCDEdit /deletevalue"
         href: bcdedit--deletevalue.md
       - name: "BCDEdit /displayorder"

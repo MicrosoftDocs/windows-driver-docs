@@ -7,7 +7,7 @@ ms.date: 03/03/2023
 # Requirements
 
 
-To create a Windows Portable Devices (WPD) driver, you must have the latest [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk) installed on your computer. The required header and library files are shown in the following list and are included in the WDK:
+To create a Windows Portable Devices (WPD) driver, you must have the latest [Windows Driver Kit (WDK)](../download-the-wdk.md) installed on your computer. The required header and library files are shown in the following list and are included in the WDK:
 
 -   *PortableDeviceGuids.lib*
 -   *PortableDeviceClassExtension.h*
@@ -40,10 +40,4 @@ Of these files, *BridgeDeviceService.h* and *DeviceService.h* are required for a
 [**WPD Drivers**](wpd-drivers.md)
 
  
-
- 
-
-
-
-
 

@@ -32,7 +32,7 @@ When you create a WDF driver, you will typically do the following:
 
     All drivers that receive read, write, or device I/O control requests from applications or other drivers must call [**WdfIoQueueCreate**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuecreate) to create framework queue objects that represent I/O queues. Typically, drivers register one or more [request handlers](request-handlers.md) for each I/O queue. When the I/O manager sends an I/O request to the driver, the framework creates a framework request object for the request, places the request object in an I/O queue, and calls one of the driver's request handlers to inform the driver that a request is available. The driver obtains the I/O request and can requeue, complete, cancel, or forward the request.
 
-    For more information about using the framework's queue objects and request objects, see [Framework Queue Objects](/windows-hardware/drivers/wdf/creating-i-o-queues) and [Framework Request Objects](/windows-hardware/drivers/wdf/creating-framework-request-objects).
+    For more information about using the framework's queue objects and request objects, see [Framework Queue Objects](./creating-i-o-queues.md) and [Framework Request Objects](./creating-framework-request-objects.md).
 
 -   Use *framework interrupt objects* to handle device interrupts.
 
@@ -50,7 +50,7 @@ When you create a WDF driver, you will typically do the following:
 
     To pass I/O requests to other drivers (typically the next lower driver in the driver stack), your driver sends the request to a I/O target object.
 
-    For more information about I/O target objects, see [Using I/O Targets](/windows-hardware/drivers/wdf/introduction-to-i-o-targets).
+    For more information about I/O target objects, see [Using I/O Targets](./introduction-to-i-o-targets.md).
 
 -   A KMDF driver can use the framework's *WMI provider objects* and *WMI instance objects* to support Windows Management Instrumentation (WMI) capabilities.
 

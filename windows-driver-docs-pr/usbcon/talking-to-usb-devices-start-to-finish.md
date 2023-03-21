@@ -124,7 +124,7 @@ Study your [USB device layout](usb-device-layout.md).
 
 Review basic USB concepts about configuring the device and performing data transfers: [Concepts for all USB developers](usb-concepts-for-all-developers.md).
 
-View the device configuration descriptor, interface descriptors for each supported alternate settings, and their endpoint descriptors. By using [USBView](/windows-hardware/drivers/debugger/usbview), you can browse all USB controllers and the USB devices connected to them, and also inspect the device configuration.
+View the device configuration descriptor, interface descriptors for each supported alternate settings, and their endpoint descriptors. By using [USBView](../debugger/usbview.md), you can browse all USB controllers and the USB devices connected to them, and also inspect the device configuration.
 
 ## Get and show USB descriptors in the UI
 
@@ -216,7 +216,7 @@ C++ apps must release the reference by using the **delete** keyword. C#/VB apps 
 
 Create a device metadata package for the app.
 
-**Tool:** [Device Metadata Authoring Wizard](/windows-hardware/drivers/devtest/device-metadata-authoring-wizard-portal)
+**Tool:** [Device Metadata Authoring Wizard](../devtest/device-metadata-authoring-wizard-portal.md)
 
 - If you have the Windows Driver Kit (WDK) installed, open **Driver** > **Device Metadata** > **Authoring**.
 - If you have the Standalone SDK installed, the tool is located at _<install\_path>_\\bin\\x86\\DeviceMetadataWizardexe.

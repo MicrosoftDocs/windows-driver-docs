@@ -18,7 +18,7 @@ ms.date: 04/20/2017
 # Power Management for I/O Queues
 
 
-When the framework receives an I/O request that is directed to one of your driver's devices, the framework puts the request in an I/O queue. The driver can obtain I/O requests from the I/O queue by providing request handlers or by polling the queue. For more information about I/O queues, see [Framework Queue Objects](/windows-hardware/drivers/wdf/creating-i-o-queues).
+When the framework receives an I/O request that is directed to one of your driver's devices, the framework puts the request in an I/O queue. The driver can obtain I/O requests from the I/O queue by providing request handlers or by polling the queue. For more information about I/O queues, see [Framework Queue Objects](./creating-i-o-queues.md).
 
 As you are designing your driver, you should group the I/O requests that your driver will receive into two categories:
 
@@ -52,4 +52,3 @@ To support these two types of requests, the framework provides two types of I/O 
 For more information about power-managed I/O queues, see [Using Power-Managed I/O Queues](using-power-managed-i-o-queues.md).
 
 A few drivers require some direct control over Plug and Play (PnP) and power management operations. These drivers can use *self-managed I/O*. For more information, see [Using Self-Managed I/O](using-self-managed-i-o.md).
-

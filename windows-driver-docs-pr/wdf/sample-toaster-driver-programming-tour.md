@@ -1,20 +1,13 @@
 ---
 title: Sample Toaster Driver Programming Tour
 description: This topic provides a code walkthrough of the Toaster sample, which contains Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) drivers designed for learning purposes.
-ms.date: 04/20/2017
+ms.date: 03/20/2023
 ---
 
 # Sample Toaster Driver Programming Tour
 
 
-This topic provides a code walkthrough of the [Toaster](https://go.microsoft.com/fwlink/p/?LinkId=618939) sample, which contains Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) drivers designed for learning purposes.
-
-## Class installer and Coinstaller
-
-
-The tostrcls project demonstrates how to write a class installer DLL. This DLL provides a custom icon for the Toaster class and a custom property sheet in **Device Manager** to change the friendly name of the device. This DLL is referenced in the INF file for the toaster.
-
-The tostrco1 project demonstrates how to write a coinstaller DLL. This DLL shows how to create a friendly name based on the instance number of the device and also how to parse a custom section in an INF file. This DLL is referenced in the INF file for the toaster.
+This topic provides a code walkthrough of the [Toaster](https://github.com/microsoft/Windows-driver-samples/tree/main/general/toaster) sample, which contains Kernel-Mode Driver Framework (KMDF) and User-Mode Driver Framework (UMDF) drivers designed for learning purposes.
 
 ## Applications
 
@@ -52,13 +45,15 @@ The KMDF bus driver services the toaster bus controller, enumerates devices that
 
   Because drivers should only use static child lists for device configurations that are predetermined and permanent, a driver does not typically modify a static child list after creating it. If the driver determines that a child device has become inaccessible, the driver can call [**WdfPdoMarkMissing**](/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdomarkmissing). (If a child device is accessible but unresponsive, the driver should set the **Failed** member of the [**WDF\_DEVICE\_STATE**](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_state) structure to **WdfTrue** and then call [**WdfDeviceSetDeviceState**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdevicestate).)
 
-  In order to statically enumerate child devices every time the bus driver starts, you can set a registry value in the Toaster Bus driver's device parameter key.
+  In order to statically enumerate child devices every time the bus driver starts, configure this value through the Toaster Bus Inf file. The maximum number of child devices that can be enumerated using this registry setting is 10.
 
-  **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Enum\\Root\\SYSTEM\\&lt;InstanceNumber&gt;\\Device Parameters**
-
-  **NumberOfToasters: REG\_DWORD: 2**
-
-  The maximum number of child devices that can be enumerated using this registry setting is 10. You can also configure this value through the Toaster Bus Inf file.
+  ```inf
+  [ToasterStatBus_Device.NT.HW]
+  AddReg=ToasterStatBus_Device.NT.AddReg
+  
+  [ToasterStatBus_Device.NT.AddReg]
+  HKR,,NumberOfToasters,0x10001,2
+  ```
 
 - **Dynamic**
 
