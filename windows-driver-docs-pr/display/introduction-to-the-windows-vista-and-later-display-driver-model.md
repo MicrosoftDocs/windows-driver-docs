@@ -1,30 +1,17 @@
 ---
-title: Introduction to the Windows Display Driver Model (WDDM)
+title: Introduction to WDDM
 description: Introduction to the Windows Display Driver Model (WDDM)
-ms.date: 04/20/2017
+ms.date: 03/20/2023
 ---
 
-# Introduction to the Windows Display Driver Model (WDDM)
+# Introduction to WDDM
 
+The following articles introduce the display driver model for Windows Display Driver Model (WDDM) and explain some benefits of creating display drivers for Windows Vista and later:
 
-## <span id="ddk_introduction_to_the_windows_codename_longhorn_display_driver_model"></span><span id="DDK_INTRODUCTION_TO_THE_WINDOWS_CODENAME_LONGHORN_DISPLAY_DRIVER_MODEL"></span>
+* [Windows Display Driver Model (WDDM) Architecture](windows-vista-and-later-display-driver-model-architecture.md)
 
+* [Windows Display Driver Model (WDDM) Operation Flow](windows-vista-and-later-display-driver-model-operation-flow.md)
 
-The following topics introduce the display driver model for Windows Display Driver Model (WDDM) and explain some benefits of creating display drivers for Windows Vista and later:
+* [Benefits of the Windows Display Driver Model (WDDM)](benefits-of-the-windows-vista-and-later-display-driver-model.md)
 
-[Windows Display Driver Model (WDDM) Architecture](windows-vista-and-later-display-driver-model-architecture.md)
-
-[Benefits of the Windows Display Driver Model (WDDM)](benefits-of-the-windows-vista-and-later-display-driver-model.md)
-
-[Migrating to the Windows Display Driver Model (WDDM)](migrating-to-the-windows-vista-and-later-display-driver-model.md)
-
-[Windows Display Driver Model (WDDM) Operation Flow](windows-vista-and-later-display-driver-model-operation-flow.md)
-
- 
-
- 
-
-
-
-
-
+* [Migrating to the Windows Display Driver Model (WDDM)](migrating-to-the-windows-vista-and-later-display-driver-model.md)
