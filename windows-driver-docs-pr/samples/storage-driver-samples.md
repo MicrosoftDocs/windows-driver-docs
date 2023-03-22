@@ -1,7 +1,7 @@
 ---
 title: Storage driver samples
 description: The storage driver samples in this directory provide a starting point for writing a custom driver for your device.
-ms.date: 12/02/2019
+ms.date: 03/22/2023
 ---
 
 # Storage driver samples

@@ -16,7 +16,7 @@ The sample includes applications that interact with the toaster bus driver and f
 
 -   Enum.exe is a user-mode enumerator, a simple console application. Because the toaster bus is not a physical bus, you can use this application to cause the bus driver to plug in, unplug, and eject devices from the system. Type Enum.exe for usage tips.
 -   Toast.exe: This is a user-mode console application to control the toaster. This application enumerates toaster devices, opens the last enumerated device, and sends a read request to it.
--   Notify.exe: This GUI application combines the functionality of Enum.exe and toast.exe and also shows how to handle PnP notifications in user mode. For example, install the toaster's coinstaller using toastco.inf and use this app to view PnP notifications. You can also use Notify.exe to specify a different hardware ID (other than the default toaster device ID) to cause a different driver to be loaded as a function driver.
+-   Notify.exe: This GUI application combines the functionality of Enum.exe and toast.exe and also shows how to handle PnP notifications in user mode. You can also use Notify.exe to specify a different hardware ID (other than the default toaster device ID) to cause a different driver to be loaded as a function driver.
 
 ## KMDF Bus Driver
 

@@ -1,7 +1,7 @@
 ---
 title: Geolocation sample driver file list
 description: The source file of the geolocation driver sample includes the following categories of files.
-ms.date: 08/25/2021
+ms.date: 03/21/2023
 ---
 
 # Geolocation sample driver file list
@@ -19,7 +19,7 @@ The following table describes the general files that are common to a UMDF sensor
 
 | File name | Contents |
 |--|--|
-| Device.cpp | Contains an implementation of the CMyDevice member functions. This includes the **OnPrepareHardware** method which creates and initializes the sensor class extension. |
+| Device.cpp | Contains an implementation of the CMyDevice member functions. This includes the **OnPrepareHardware** method that creates and initializes the sensor class extension. |
 | Device.h | Contains a definition for the CMyDevice class. |
 | Dllsup.cpp | Contains the driver DLL's entry point (DLLMain). |
 | Driver.cpp | Contains an implementation of the CMyDriver member functions. This includes the **OnDeviceAdd** method that creates an instance of the CMyDevice class (see description of Device.cpp). |
@@ -48,6 +48,6 @@ The following table lists the files that implement the simulated geolocation sen
 | Geolocation.cpp | Contains an implementation of the CGeolocation class. The methods in this class initialize the simulated sensor, retrieve readable properties, and set writable properties. |
 | Geolocation.h | Contains the definition of the CGeolocation class. |
 
-## Related topics
+## Related articles
 
 [The Sensors Geolocation Driver Sample](sensors-geolocation-driver-sample.md)  

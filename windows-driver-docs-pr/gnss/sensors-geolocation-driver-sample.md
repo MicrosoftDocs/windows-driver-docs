@@ -9,7 +9,7 @@ keywords:
 - radio-state change
 - sensor driver
 - UMDF sensor driver
-ms.date: 08/25/2021
+ms.date: 03/21/2023
 ---
 
 # Geolocation driver sample for Windows 8.1

@@ -22,6 +22,16 @@
   items: 
   - name: "Network camera design guide"
     href: network-camera-design-guide.md
+  - name: "KSPROPERTYSETID_NetworkCameraControl"
+    href: kspropertysetid-networkcameracontrol.md
+  - name: "KSPROPERTY_NETWORKCAMERACONTROL_EVENTTOPICS_XML"
+    href: ksproperty-networkcameracontrol-eventtopics-xml.md
+  - name: "KSPROPERTY_NETWORKCAMERACONTROL_METADATA"
+    href: ksproperty-networkcameracontrol-metadata.md
+  - name: "KSPROPERTY_NETWORKCAMERACONTROL_NTP"
+    href: ksproperty-networkcameracontrol-ntp.md
+  - name: "KSPROPERTY_NETWORKCAMERACONTROL_URI"
+    href: ksproperty-networkcameracontrol-uri.md
 - name: "Digital Window overview"
 # Auto-expanded node
   items: 

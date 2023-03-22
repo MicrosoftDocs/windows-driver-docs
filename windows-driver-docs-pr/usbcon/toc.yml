@@ -242,6 +242,8 @@
     href: hardware-design-of-a-usb-type-c-system.md
   - name: "OEM tasks for USB Type-C systems"
     href: oem-tasks-for-usb-type-c-systems-running-windows.md
+  - name: USB Type-C slow charging notification requirements
+    href: usb-type-c-slow-charging-notification-requirements.md
   - name: "USB Type-C Connector System Software Interface (UCSI) driver"
     href: ucsi.md
   - name: "FAQ: USB Type-C connector on a Windows system"

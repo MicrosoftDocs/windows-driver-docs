@@ -1,7 +1,7 @@
 ---
 title: Global Navigation Satellite System (GNSS) driver samples
 description: The Global Navigation Satellite System (GNSS) driver sample in this directory provides a starting point for writing a custom GNSS driver for your device.
-ms.date: 11/19/2019
+ms.date: 03/22/2023
 ---
 
 # Global Navigation Satellite System (GNSS) driver samples
