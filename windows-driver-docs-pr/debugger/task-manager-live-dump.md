@@ -8,7 +8,7 @@ ms.date: 02/15/2023
 
 ## Overview
 
-Starting in Windows 22H2, version 25276, Task Manager can be used to create a live kernel memory dump. This is in addition to the existing capability of using Task Manager to create a memory dump of a specific process.
+Now available in Windows Insider Preview builds in the Canary Channel (Build 25276 and higher) and Dev Channel (Build 23419 and higher), Task Manager can be used to create a live kernel memory dump. This is in addition to the existing capability of using Task Manager to create a memory dump of a specific process.
 
 A live kernel memory dump contains a consistent snapshot of kernel memory (and optionally, other types of memory) and saves it to a dump file. Unlike other methods to manually generate a kernel memory dump, this method does not cause a system crash.
 
