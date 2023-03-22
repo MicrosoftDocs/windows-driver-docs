@@ -1,7 +1,7 @@
 ---
 title: Installing the geolocation driver sample
 description: Because the geolocation driver sample simulates hardware, there is no Plug-n-Play functionality to automate the installation. Instead, must use a Windows utility, devcon.exe, to install the sample.
-ms.date: 08/25/2021
+ms.date: 03/21/2023
 ---
 
 # Installing the geolocation driver sample
@@ -25,8 +25,7 @@ The following steps outline the installation process.
 
     `devcon.exe install WDKExample.inf "Sensors\WDKExample"`
 
-    > [!NOTE]
-    > Do not use Devcon.exe to install released drivers. This recommendation is for testing only.
+    Do not use Devcon.exe to install released drivers. This recommendation is for testing only.
 
 ## Related topics
 

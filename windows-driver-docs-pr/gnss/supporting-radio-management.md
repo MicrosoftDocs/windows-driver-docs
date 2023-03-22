@@ -7,7 +7,7 @@ keywords:
 - radio management, example
 - GPS radio management
 - radio management, GPS
-ms.date: 08/25/2021
+ms.date: 03/21/2023
 ---
 
 # Supporting radio management

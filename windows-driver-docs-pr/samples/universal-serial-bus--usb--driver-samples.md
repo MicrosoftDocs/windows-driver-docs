@@ -1,7 +1,7 @@
 ---
 title: Universal Serial Bus (USB) driver samples
 description: The driver samples in this directory provide a starting point for writing a custom USB driver for your device.
-ms.date: 03/03/2023
+ms.date: 03/22/2023
 ---
 
 # Universal Serial Bus (USB) driver samples

@@ -1,7 +1,7 @@
 ---
 title: Security driver samples
 description: The early launch anti-malware driver sample in this directory provides a starting point for writing a custom driver for your device.
-ms.date: 11/21/2019
+ms.date: 03/22/2023
 ---
 
 # Security driver samples

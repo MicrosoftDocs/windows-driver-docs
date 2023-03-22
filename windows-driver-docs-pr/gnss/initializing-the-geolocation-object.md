@@ -1,7 +1,7 @@
 ---
 title: Initializing the geolocation object
 description: Geolocation.cpp contains an Initialize method that initializes the settable property keys and data-field keys for the simulated geolocation-sensor.
-ms.date: 08/25/2021
+ms.date: 03/21/2023
 ---
 
 # Initializing the geolocation object
@@ -22,7 +22,7 @@ const PROPERTYKEY g_SettableGeolocationProperties[] =
 };
 ```
 
-For more information about change sensitivity and the report interval, refer to the [Filtering data](../sensors/filtering-data.md) topic.
+For more information about change sensitivity and the report interval, see the [Filtering data](../sensors/filtering-data.md) article.
 
 A data-field key is a **PROPERTYKEY** that the driver uses to identify each unique data field that it supports. In the case of the pseudo geolocation-sensor there are eight supported data fields that include data such as the timestamp of the reading, current latitude (in degrees), current longitude (in degrees), and so on. These keys are also defined in the file geolocation.cpp.
 
@@ -44,7 +44,7 @@ The **CSensorManager::Start** method invokes **CGeolocation::Initialize** immedi
 
 The **Initialize** method, in turn, invokes an **InitializeGeolocation** method. This latter method invokes **CGeolocation::AddGeolocationSettablePropertyKeys** to initialize the property keys for the writeable properties supported by the pseudo-sensor. After adding the property keys, the **InitializeGeolocation** method invokes **CGeolocation::AddGeolocationDataFieldKeys** to initialize the data field keys for the supported data fields.
 
-## Related topics
+## Related articles
 
 [Defining the geolocation object](defining-the-geolocation-object.md)  
 
