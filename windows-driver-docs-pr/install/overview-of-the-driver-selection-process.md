@@ -1,11 +1,10 @@
 ---
 title: Overview of the Driver Package Selection Process
 description: Overview of the Driver Package Selection Process
-ms.date: 12/03/2021
+ms.date: 03/23/2023
 ---
 
 # Overview of the Driver Package Selection Process
-
 
 Windows represents a [driver package](driver-packages.md) as a *driver node*, which includes all the software support for a device, such as any file, services, and registry entries. The services for a device include a function driver and any upper-level and lower-level device filter drivers.
 
@@ -35,7 +34,8 @@ Starting with Windows Vista, Windows also ranks driver packages based on whether
 
 -   If the [**AllSignersEqual** Group Policy](./allsigningequal-group-policy.md) is enabled, Windows ranks all digitally signed driver packages equally.
 
-**Note**  Starting with Windows 7, the [AllSignersEqual Group Policy](./allsigningequal-group-policy.md) is enabled by default. In Windows Vista and Windows Server 2008, the **AllSignersEqual** Group Policy is disabled by default. IT departments can override the default ranking behavior by enabling or disabling the **AllSignersEqual** Group Policy.
+> [!NOTE]
+> Starting with Windows 7, the [AllSignersEqual Group Policy](./allsigningequal-group-policy.md) is enabled by default. In Windows Vista and Windows Server 2008, the **AllSignersEqual** Group Policy is disabled by default. IT departments can override the default ranking behavior by enabling or disabling the **AllSignersEqual** Group Policy.
 
 Signatures from a Windows signing authority include the following:
 
@@ -62,3 +62,6 @@ Windows uses the following criteria to select a driver package match for a devic
 -   For the driver packages that have equal rank and date, Windows selects the driver package that has the highest version.
 
 -   For driver packages that have equal rank, date, and version, Windows can select any driver package.
+
+> [!CAUTION]
+> Even though the date in the driver package has higher precedence in ranking than the version, it is recommended that both the version and the date is updated anytime there is a change in the driver package. See [Best practices for naming and versioning your INF file](./general-guidelines-for-inf-files.md#best-practices-for-naming-and-versioning-your-inf-file) for more information.
