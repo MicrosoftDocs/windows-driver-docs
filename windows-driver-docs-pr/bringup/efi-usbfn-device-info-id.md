@@ -1,7 +1,7 @@
 ---
 title: EFI_USBFN_DEVICE_INFO_ID
 description: The EFI_USBFN_DEVICE_INFO_ID enumeration is used to identify a specific string in a request to the driver.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 

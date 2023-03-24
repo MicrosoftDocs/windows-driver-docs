@@ -1,7 +1,7 @@
 ---
 title: User experience for UEFI firmware updates
 description: This section describes how to implement a basic user experience during UEFI firmware updates.
-ms.date: 08/20/2021
+ms.date: 03/23/2023
 ---
 
 # User experience for UEFI firmware updates

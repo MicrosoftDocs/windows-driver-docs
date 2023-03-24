@@ -1,7 +1,7 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.GetMaxTransferSize
 description: The GetMaxTransferSize function returns the maximum transfer size as supported by the underlying controller.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 

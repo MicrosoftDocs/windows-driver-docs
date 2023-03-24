@@ -1,7 +1,7 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.AbortTransfer
 description: The AbortTransfer function aborts transfer on the specified endpoint.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 

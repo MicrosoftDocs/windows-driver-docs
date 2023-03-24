@@ -1,7 +1,7 @@
 ---
 title: Fixed ComBuffer and Windows SMM Security Mitigation Table (WSMT)
 description: Windows SMM Security Mitigation Table (WSMT) is a static table described in ACPI namespace that contains flags indicating that specific security features have been implemented.
-ms.date: 08/18/2021
+ms.date: 03/23/2023
 ---
 
 # Fixed ComBuffer and Windows SMM Security Mitigation Table (WSMT)

@@ -1,7 +1,7 @@
 ---
 title: Device I/O from the UEFI environment
 description: When the Windows OS loader calls the UpdateCapsule function, each capsule contained in the CapsuleHeaderArray is executed.
-ms.date: 05/21/2020
+ms.date: 03/22/2023
 ---
 
 # Device I/O from the UEFI environment

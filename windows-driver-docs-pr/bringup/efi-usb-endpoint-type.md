@@ -1,7 +1,7 @@
 ---
 title: EFI_USB_ENDPOINT_TYPE
 description: The EFI_USB_ENDPOINT_TYPE enumeration contains values used to indicate the type of endpoint.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Trusted Platform Module (TPM) Considerations
 description: Provides information about Trusted Platform Module (TPM) considerations.
-ms.date: 05/07/2018
+ms.date: 03/23/2023
 ---
 
 # Trusted Platform Module (TPM) Considerations

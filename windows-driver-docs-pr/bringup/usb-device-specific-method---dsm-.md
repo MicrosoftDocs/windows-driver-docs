@@ -1,7 +1,7 @@
 ---
 title: USB Device-Specific Method (_DSM)
 description: To support device-class-specific configuration of the USB subsystem, Windows defines a Device-Specific Method (_DSM) that has the functions that are described in this article.
-ms.date: 07/14/2022
+ms.date: 03/23/2023
 ---
 
 # USB Device-Specific Method (_DSM)
@@ -42,27 +42,9 @@ The _DSM control method parameters for identifying the USB port type are as foll
 
 An integer containing one of the following values:
 
-<table>
-  <thead>
-    <th>Element</th>
-    <th>Object type</th>
-    <th>Description</th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Port type</td>
-      <td>Integer (BYTE)</td>
-      <td><p>Specifies the type of the USB port:</p>
-        <ul>
-          <li>0x00 – Regular USB</li>
-          <li>0x01 – HSIC</li>
-          <li>0x02 – SSIC</li>
-          <li>0x03 – 0xff reserved</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Element | Object type | Description |
+|--|--|--|
+| Port type | Integer (BYTE) | Specifies the type of the USB port:<br><br>0x00 – Regular USB<br><br>0x01 – HSIC<br><br>0x02 – SSIC<br><br>0x03 – 0xff reserved |
 
 When this function is used, the _DSM method must appear under the USB port device.
 
@@ -85,26 +67,9 @@ The _DSM control method parameters are as follows:
 
 An integer containing one of the following values:
 
-<table>
-  <thead>
-    <th>Element</th>
-    <th>Object type</th>
-    <th>Description</th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Disable U1 and U2?</td>
-      <td>Integer (BYTE)</td>
-      <td><p>Specifies the U1 and U2 behavior:</p>
-        <ul>
-          <li>0x00 – The USB bus driver will fall back to its default heuristics for U1 and U2.</li>
-          <li>0x01 – U1 and U2 transitions will be disabled.</li>
-          <li>0x02 – 0xff reserved</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Element | Object type | Description |
+|--|--|--|
+| Disable U1 and U2? | Integer (BYTE) | Specifies the U1 and U2 behavior:<br><br>0x00 – The USB bus driver will fall back to its default heuristics for U1 and U2.<br><br>0x01 – U1 and U2 transitions will be disabled.<br><br>0x02 – 0xff reserved |
 
 ## Function 6: Query controller register access type
 
@@ -123,28 +88,10 @@ The _DSM control method parameters for querying the register access type for com
 
 An Integer containing one of the following values:
 
-<table>
-  <thead>
-    <th>Element</th>
-    <th>Object type</th>
-    <th>Description</th>
-  </thead>
-  <tbody>
-    <tr>
-      <td>RegisterAccessType</td>
-      <td>4-byte (32-bit) unsigned long</td>
-      <td><p>Specifies the type of the USB controller register access:</p>
-        <ul>
-          <li>0x00 – Undefined register access</li>
-          <li>0x01 – Must use 32bit register access</li>
-          <li>0x02 – 0xffffffff reserved</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Element | Object type | Description |
+|--|--|--|
+| RegisterAccessType | 4-byte (32-bit) unsigned long | Specifies the type of the USB controller register access:<br><br>0x00 – Undefined register access<br><br>0x01 – Must use 32bit register access<br><br>0x02 – 0xffffffff reserved |
 
 When this function is used, the _DSM method must appear under the USB controller device.
 
-> [!NOTE]
-> Function index 0 of every _DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://uefi.org/specifications).
+Function index 0 of every _DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://uefi.org/specifications).

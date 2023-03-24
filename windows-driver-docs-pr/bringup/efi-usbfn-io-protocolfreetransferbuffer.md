@@ -1,7 +1,7 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.FreeTransferBuffer
 description: The FreeTransferBuffer function de-allocates the memory allocated for the transfer buffer by the EFI_USBFN_IO_PROTOCOL.AllocateTransferBuffer function.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 

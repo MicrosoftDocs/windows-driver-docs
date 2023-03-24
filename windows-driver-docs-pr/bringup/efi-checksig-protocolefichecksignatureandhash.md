@@ -1,7 +1,7 @@
 ---
 title: EFI_CHECKSIG_PROTOCOL.EfiCheckSignatureAndHash
 description: Provides information about EFI_CHECKSIG_PROTOCOL.EfiCheckSignatureAndHash.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 

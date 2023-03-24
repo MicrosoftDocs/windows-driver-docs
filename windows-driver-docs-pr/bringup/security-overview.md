@@ -1,7 +1,7 @@
 ---
 title: Security
 description: Use the topics in this section to learn more about security in Windows 10 Mobile.
-ms.date: 08/19/2021
+ms.date: 03/23/2023
 ---
 
 # Security

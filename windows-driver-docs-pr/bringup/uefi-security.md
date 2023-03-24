@@ -1,7 +1,7 @@
 ---
 title: UEFI security
 description: Provides guidance and pointers to information to enable you to implement and validate security features in the firmware for Windows operating systems.
-ms.date: 06/28/2022
+ms.date: 03/23/2023
 ---
 
 # UEFI security

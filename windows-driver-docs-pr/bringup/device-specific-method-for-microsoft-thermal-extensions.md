@@ -1,7 +1,7 @@
 ---
 title: Device-Specific Method for Microsoft thermal extensions
 description: To support more flexible design of thermal zones and thermal sensors, Windows supports extensions to the ACPI thermal zone model.
-ms.date: 08/18/2021
+ms.date: 03/22/2023
 ---
 
 # Device-Specific Method for Microsoft thermal extensions
@@ -52,5 +52,4 @@ A reference to the device that will return the temperature of this thermal zone.
 
 If a temperature sensor device is reported via \_DSM function index 2, the thermal zone is additionally required to include a \_DEP object that identifies the thermal zone's dependence on the temperature sensor device.
 
-> [!NOTE]
-> Function index 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "\_DSM (Device Specific Method)", of the ACPI 5.0 specification.
+Function index 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For more information, see section 9.14.1, "\_DSM (Device Specific Method)", of the ACPI 5.0 specification.

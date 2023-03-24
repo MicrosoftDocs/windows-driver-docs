@@ -1,7 +1,7 @@
 ---
 title: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.GetMaxPacketSize
 description: Returns the maximum number of bytes that can be accommodated in a single read or write operation.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 

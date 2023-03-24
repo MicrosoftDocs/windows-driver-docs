@@ -1,7 +1,7 @@
 ---
 title: Bring up
 description: This section of the partner documentation is designed for hardware engineers and developers who need to understand how to get started with bringing up hardware on Windows.
-ms.date: 05/26/2022
+ms.date: 03/23/2023
 ---
 
 # Bring up guide

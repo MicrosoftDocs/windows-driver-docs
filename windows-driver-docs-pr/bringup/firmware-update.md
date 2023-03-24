@@ -1,7 +1,7 @@
 ---
 title: Firmware update
 description: Describes supports for delivering system and device firmware updates using Microsoft Windows Update( WU) and the UEFI UpdateCapsule function.
-ms.date: 08/18/2021
+ms.date: 03/23/2023
 ---
 
 # Firmware update
@@ -12,8 +12,7 @@ This ability has been available as early as Windows 8.1. However, some recent ch
 
 A unique ID {UNIQUE ID} in the ESRT is critical. The purpose of the UNIQUE ID+CHID is so the firmware provider will be able to create a firmware update package/BIOS that will be deployed via Windows Update (WU) to all the systems that match the UNIQUE ID+CHID. Microsoft does not have a mechanism to validate the firmware package, and is dependent on the firmware provider (creator of package) to verify the payload has not been tampered with. It should be cryptographically verified; Checksum or other CRCs are not validation. If the payload fails validation it should fail and record status in ESRT as described in [ESRT table definition](./esrt-table-definition.md).
 
-> [!NOTE]
-> If the OEM, ODM, or persons tasked with populating the ESRT {UNIQUE ID} were to discover that the ESRT was pre-populated with a {Unique ID}, do not assume that this is unique. Populate the ESRT with your {UNIQUE ID} and record this for later use. Microsoft has guidance on how to create a UNIQUE ID, for these scenarios. This guidance is in the downloadable document for [Driver Publishing Workflow for Windows 10](https://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx).
+If the OEM, ODM, or persons tasked with populating the ESRT {UNIQUE ID} were to discover that the ESRT was pre-populated with a {Unique ID}, do not assume that this is unique. Populate the ESRT with your {UNIQUE ID} and record this for later use. Microsoft has guidance on how to create a UNIQUE ID, for these scenarios. This guidance is in the downloadable document for [Driver Publishing Workflow for Windows 10](https://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx).
 
 ## In this section
 

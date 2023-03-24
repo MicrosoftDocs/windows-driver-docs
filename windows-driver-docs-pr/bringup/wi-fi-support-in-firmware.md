@@ -1,7 +1,7 @@
 ---
 title: Wi-Fi support in firmware 
 description: Wi-Fi support in firmware 
-ms.date: 05/07/2018
+ms.date: 03/23/2023
 ---
 
 # Wi-Fi support in firmware

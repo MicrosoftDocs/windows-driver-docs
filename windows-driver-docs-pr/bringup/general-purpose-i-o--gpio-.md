@@ -1,7 +1,7 @@
 ---
 title: General-purpose I/O (GPIO)
 description: System on a Chip (SoC) integrated circuits make extensive use of general-purpose I/O (GPIO) pins.
-ms.date: 08/18/2021
+ms.date: 03/23/2023
 ---
 
 # General-purpose I/O (GPIO)
@@ -30,8 +30,7 @@ Logically, ActiveBoth signals have both an asserted and unasserted state, whethe
 
 1. To establish a deterministic initial state for ActiveBoth interrupt signals, the Windows GPIO device stack guarantees that the first interrupt generated after connection of the interrupt by the driver will always be for the signal's asserted state. The stack further assumes that the asserted state of all ActiveBoth interrupt lines is logic level low (the ActiveLow edge) by default. If this is not the case on your platform, you can override the default by including the GPIO controller Device-Specific Method (\_DSM) in the controller's namespace. For more information about this method, see [GPIO Controller Device-Specific Method (\_DSM)](gpio-controller-device-specific-method---dsm-.md).
 
-> [!NOTE]
-> The third requirement in the preceding list implies that the driver for a device that uses ActiveBoth might receive an interrupt immediately after initializing (connecting to) the interrupt, if the signal at the GPIO pin is in the asserted state at that time. This is possible, and even likely for some devices (for example, headphones), and must be supported in the driver.
+The third requirement in the preceding list implies that the driver for a device that uses ActiveBoth might receive an interrupt immediately after initializing (connecting to) the interrupt, if the signal at the GPIO pin is in the asserted state at that time. This is possible, and even likely for some devices (for example, headphones), and must be supported in the driver.
 
 To support emulated ActiveBoth, the GPIO controller driver must enable ("opt-in to") ActiveBoth emulation by implementing a [*CLIENT\_ReconfigureInterrupt*](/windows-hardware/drivers/ddi/gpioclx/nc-gpioclx-gpio_client_reconfigure_interrupt) callback function, and by setting the **EmulateActiveBoth** flag in the basic information structure that the driver's [*CLIENT\_QueryControllerBasicInformation*](/windows-hardware/drivers/ddi/gpioclx/nc-gpioclx-gpio_client_query_controller_basic_information) callback function supplies to **GpioClx**. For more information, see [General-Purpose I/O (GPIO) Drivers](../gpio/index.md).
 
@@ -43,15 +42,15 @@ GPIO controllers, and the peripherals that connect to them, are enumerated by AC
 
 A GPIO controller device's ACPI namespace includes the following:
 
-- A vendor-assigned ACPI-compliant Hardware ID (\_HID) object.
-- A set of resources consumed (\_CRS) object.
-- A Unique ID (\_UID) object, if there is more than one instance of the GPIO controller in the namespace (that is, two or more namespace nodes that have the same device identification objects).
+- A vendor-assigned ACPI-compliant Hardware ID (_HID) object.
+- A set of resources consumed (_CRS) object.
+- A Unique ID (_UID) object, if there is more than one instance of the GPIO controller in the namespace (that is, two or more namespace nodes that have the same device identification objects).
 
 The GPIO controller's \_CRS contains all of the resources (address space for registers, system interrupts, and so on) consumed by all of the banks in the GPIO controller. The interrupt resource-to-bank mapping is represented in the order in which the interrupt resources are listed in the \_CRS—that is, the first interrupt listed is assigned to bank 0, the next one listed is assigned to bank 1, and so on. Banks can share interrupt resources, in which case the interrupt is listed once for each bank connected to it, in bank order, and is configured as Shared.
 
 ### GPIO connection resource descriptors
 
-The relationship between peripherals and the GPIO pins to which they are connected is described to the operating system by GPIO connection resource descriptors. These resource descriptors can define two types of GPIO Connections: GPIO interrupt connections and GPIO I/O connections. Peripherals include GPIO connection descriptors in their \_CRS for all GPIO I/O and interrupt pins connected. If a connected interrupt is wake-capable (capable of waking the system from a low-power idle state, then it must be configured as ExclusiveAndWake or SharedAndWake; for more information, see [Device Power Management](device-power-management.md).
+The relationship between peripherals and the GPIO pins to which they are connected is described to the operating system by GPIO connection resource descriptors. These resource descriptors can define two types of GPIO Connections: GPIO interrupt connections and GPIO I/O connections. Peripherals include GPIO connection descriptors in their \_CRS for all GPIO I/O and interrupt pins connected. If a connected interrupt is wake-capable (capable of waking the system from a low-power idle state), then it must be configured as ExclusiveAndWake or SharedAndWake. For more information, see [Device Power Management](device-power-management.md).
 
 The descriptors are defined in section 6.4.3.8.1, "GPIO Connection Descriptor", of the ACPI 5.0 specification. The ASL Resource Template Macros for these descriptors are described in section 19.5.53, "GpioInt (GPIO Interrupt Connection Resource Descriptor Macro)", of the ACPI 5.0 specification.
 
@@ -78,5 +77,4 @@ GeneralPurposeIO OpRegions (see section 5.5.2.4.4 of the ACPI 5.0 specification)
 
 Fields in an OpRegion can be declared anywhere in the namespace and accessed from any method in the namespace. The direction of accesses to a GeneralPurposeIO OpRegion is determined by the first access (read or write) and cannot be changed.
 
-> [!NOTE]
-> Because OpRegion access is provided by the GPIO controller device driver (the "OpRegion Handler"), methods must take care not to access an OpRegion until the driver is available. ASL code can track the state of the OpRegion handler by including a Region (\_REG) method under the GPIO controller device (see section 6.5.4 of the ACPI 5.0 specification). Additionally, the OpRegion Dependencies (\_DEP) object (see section 6.5.8 of the ACPI 5.0 specification) can be used under any device that has a method accessing GPIO OpRegion fields, if needed. See the **Device dependencies** section in the [Device management namespace objects](device-management-namespace-objects.md) topic for a discussion of when to use \_DEP. It is important that drivers are not assigned GPIO I/O resources that are also assigned to GeneralPurposeIO OpRegions. Opregions are for the exclusive use of ASL control methods.
+Because OpRegion access is provided by the GPIO controller device driver (the "OpRegion Handler"), methods must take care not to access an OpRegion until the driver is available. ASL code can track the state of the OpRegion handler by including a Region (\_REG) method under the GPIO controller device (see section 6.5.4 of the ACPI 5.0 specification). Additionally, the OpRegion Dependencies (\_DEP) object (see section 6.5.8 of the ACPI 5.0 specification) can be used under any device that has a method accessing GPIO OpRegion fields, if needed. See the **Device dependencies** section in the [Device management namespace objects](device-management-namespace-objects.md) topic for a discussion of when to use \_DEP. It is important that drivers are not assigned GPIO I/O resources that are also assigned to GeneralPurposeIO OpRegions. Opregions are for the exclusive use of ASL control methods.

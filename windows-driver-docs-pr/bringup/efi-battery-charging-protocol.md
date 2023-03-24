@@ -1,7 +1,7 @@
 ---
 title: EFI_BATTERY_CHARGING_PROTOCOL
 description: This protocol allows a UEFI driver to support charging of the main battery.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 
@@ -44,27 +44,9 @@ Returns information about the current state of the main battery. This function i
 
 The following table lists the functions that are supported in each version of the EFI_BATTERY_CHARGING_PROTOCOL protocol.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Revision 0x00010002</th>
-<th>Revision 0x00010001</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>GetBatteryInformation</strong></p>
-<p><strong>GetBatteryStatus</strong></p>
-<p><strong>ChargeBattery</strong></p></td>
-<td><p><strong>GetBatteryStatus</strong></p>
-<p><strong>ChargeBattery</strong></p></td>
-</tr>
-</tbody>
-</table>
+| Revision 0x00010002 | Revision 0x00010001 |
+|--|--|
+| GetBatteryInformation<br><br>GetBatteryStatus<br><br>ChargeBattery | GetBatteryStatus<br><br>ChargeBattery |
 
 ## Requirements
 

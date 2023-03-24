@@ -1,7 +1,7 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.AllocateTransferBuffer
 description: The AllocateTransferBuffer function allocates a transfer buffer of the specified size that satisfies controller requirements.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 
@@ -39,7 +39,7 @@ A pointer to a pointer to the allocated buffer if the call succeeds; undefined o
 This function returns the following values:
 
 | Return value | Description |
-| -- | -- |
+|--|--|
 | EFI_SUCCESS | The function returned successfully. |
 | EFI_INVALID_PARAMETER | A parameter is invalid. |
 | EFI_OUT_OF_RESOURCES | The requested transfer buffer could not be allocated. |

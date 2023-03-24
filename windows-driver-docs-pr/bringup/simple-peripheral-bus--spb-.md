@@ -1,7 +1,7 @@
 ---
 title: Simple peripheral bus (SPB)
 description: SoC integrated circuits make extensive use of simple, low-pin-count, and low-power serial interconnects for connecting to platform peripherals.
-ms.date: 08/19/2021
+ms.date: 03/23/2023
 ---
 
 # Simple peripheral bus (SPB)
@@ -10,7 +10,7 @@ System on a Chip (SoC) integrated circuits make extensive use of simple, low-pin
 
 ## SPB controller devices
 
-A SPB controller device is identified in the namespace together with a vendor-assigned Hardware ID (\_HID) and a set of resources that are consumed (\_CRS).
+A SPB controller device is identified in the namespace together with a vendor-assigned Hardware ID (_HID) and a set of resources that are consumed (_CRS).
 
 ### SPB namespace objects
 

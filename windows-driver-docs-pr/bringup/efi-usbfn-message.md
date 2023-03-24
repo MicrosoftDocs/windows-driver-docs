@@ -1,7 +1,7 @@
 ---
 title: EFI_USBFN_MESSAGE
 description: The EFI_USBFN_MESSAGE enumeration is used to indicate the event that initiated a message notification.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 

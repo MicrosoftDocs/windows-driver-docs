@@ -1,36 +1,36 @@
 ---
 title: GPIO controller Device-Specific Method (_DSM)
 description: To support a variety of device-class-specific communications between the general-purpose I/O (GPIO) driver stack in Windows and the platform firmware, Microsoft defines a Device-Specific Method (_DSM) that can be included under a GPIO controller in the ACPI namespace.
-ms.date: 08/18/2021
+ms.date: 03/23/2023
 ---
 
-# GPIO controller Device-Specific Method (\_DSM)
+# GPIO controller Device-Specific Method (_DSM)
 
 To support a variety of device-class-specific communications between the general-purpose I/O (GPIO) driver stack in Windows and the platform firmware, Microsoft defines a Device-Specific Method (\_DSM) that can be included under a GPIO controller in the ACPI namespace.
 
 Currently, this method defines two functions:
 
-- **Function Index 0**: The Standard Query Function that all \_DSM methods are required to provide.
+- **Function Index 0**: The Standard Query Function that all _DSM methods are required to provide.
 
 - **Function Index 1**: The ActiveBoth Polarity Function, which informs the GPIO stack of any ActiveBoth pins on the controller that are not asserted logic low. The GPIO stack assumes that ActiveBoth pins are asserted logic low, so this function allows the platform to override that default for specific pins.
 
 ## GUID definition
 
-The GUID for the GPIO controller \_DSM method is defined to be:
+The GUID for the GPIO controller _DSM method is defined to be:
 
 `{4F248F40-D5E2-499F-834C-27758EA1CD3F}`
 
 ## Function 0
 
-Function 0 of every \_DSM is a query function that returns the set of supported function indexes, and is always required. For the definition of Function 0, see section 9.14.1, "\_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://uefi.org/specifications).
+Function 0 of every _DSM is a query function that returns the set of supported function indexes, and is always required. For the definition of Function 0, see section 9.14.1, "_DSM (Device Specific Method)", in the [ACPI 5.0 specification](https://uefi.org/specifications).
 
 ## Function 1
 
-The parameters for Function 1 of the GPIO controller \_DSM method are defined as follows:
+The parameters for Function 1 of the GPIO controller _DSM method are defined as follows:
 
 ### Arguments
 
-- **Arg0:** UUID for GPIO controller \_DSM
+- **Arg0:** UUID for GPIO controller _DSM
 
     `// GUID: {4F248F40-D5E2-499F-834C-27758EA1CD3F}`
 

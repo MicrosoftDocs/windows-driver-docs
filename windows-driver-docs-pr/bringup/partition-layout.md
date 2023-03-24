@@ -1,7 +1,7 @@
 ---
 title: Partition Layout
 description: Provides information about partition layout for Windows 10 Mobile.
-ms.date: 09/28/2021
+ms.date: 03/23/2023
 ---
 
 # Windows 10 Mobile partition layout
@@ -10,8 +10,7 @@ In Windows 10 Mobile, Microsoft and the silicon vendor (SV) configure the stora
 
 The storage subsystem for a phone must conform to the requirements specified in [section 2.2: Memory, of the Windows 10 Mobile minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview#section_2.0_-_minimum_hardware_requirements_for_windows_10_mobile).
 
-> [!NOTE]
-> OEMs may not add, remove, or modify partitions in the layout designed by Microsoft and the SV. This helps to ensure that all the software and configuration data on the phone can be serviced by phone updates. OEM components typically are built into the main OS partition (for preloaded applications and native services), the data partition (for data such as preloaded maps), or the device provisioning partition (for device-specific read-only configuration data).
+OEMs may not add, remove, or modify partitions in the layout designed by Microsoft and the SV. This helps to ensure that all the software and configuration data on the phone can be serviced by phone updates. OEM components typically are built into the main OS partition (for preloaded applications and native services), the data partition (for data such as preloaded maps), or the device provisioning partition (for device-specific read-only configuration data).
 
 ## Partition list
 
@@ -23,104 +22,15 @@ The following diagram shows the required storage partitions.
 
 The following table summarizes the requirements for each partition. All sizes are logical; actual space consumed on storage media may differ. When defining the size of the system partition (which consists of all partitions except the user data partition and the SD card), the silicon vendor must adhere to the free space requirements for each individual partition. This includes, but is not limited to, software assets such as additional languages. This requirement is mandatory and necessary in order to ensure that a phone can be updated over its lifetime.
 
-<table>
-<colgroup>
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Partition</th>
-<th align="left">Contents</th>
-<th align="left">File system</th>
-<th align="left">Mount point</th>
-<th align="left">Encrypted</th>
-<th align="left">Size</th>
-<th align="left">Free space reserved for future updates</th>
-<th align="left">Owner</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>DPP</p></td>
-<td align="left"><p>Device provisioning data</p></td>
-<td align="left"><p>FAT</p></td>
-<td align="left"><p>C:\DPP</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>8 MB</p></td>
-<td align="left"><p>N/A</p></td>
-<td align="left"><p>Microsoft</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>SV partitions</p></td>
-<td align="left"><p>UEFI firmware and other SV-specific partitions</p></td>
-<td align="left"><p>N/A</p></td>
-<td align="left"><p>No mount point</p></td>
-<td align="left"><p>Maybe</p></td>
-<td align="left"><p>Variable</p></td>
-<td align="left"><p>N/A</p></td>
-<td align="left"><p>SV/OEM</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>EFI system partition</p></td>
-<td align="left"><p>Boot manager, boot configuration database, UEFI applications</p></td>
-<td align="left"><p>FAT</p></td>
-<td align="left"><p>C:\ESP</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>32 MB (minimum)</p></td>
-<td align="left"><p>N/A</p></td>
-<td align="left"><p>Microsoft</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Crash dump partition (exists on non-retail images only)</p></td>
-<td align="left"><p>Data from crash dumps</p></td>
-<td align="left"><p>NTFS</p></td>
-<td align="left"><p>C:\CrashDump</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Variable - the size of this partition depends on the value of the <strong>SOC</strong> element in the OEMInput file that was used to build the image.</p></td>
-<td align="left"><p>N/A</p></td>
-<td align="left"><p>Microsoft</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Main OS (boot partition)</p></td>
-<td align="left"><p>OS, update OS, system registry hives, OEM preloaded applications</p></td>
-<td align="left"><p>NTFS</p></td>
-<td align="left"><p>C:&lt;/p&gt;</td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Approximately 1.5 GB</p>
-</td>
-<td align="left"><p>250 MB</p>
-</td>
-<td align="left"><p>Microsoft</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Data partition</p></td>
-<td align="left"><p>User data, user registry hives, applications, application data, page file.</p></td>
-<td align="left"><p>NTFS</p></td>
-<td align="left"><p>C:\Data</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Remainder of eMMC storage not used by other partitions. Approximately 256 MB is used for the page file.</p></td>
-<td align="left"><p>N/A</p></td>
-<td align="left"><p>Microsoft</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>SD card</p></td>
-<td align="left"><p>User data (music, pictures, etc.)</p></td>
-<td align="left"><p>FAT/exFAT</p></td>
-<td align="left"><p>Variable</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Variable</p></td>
-<td align="left"><p>N/A</p></td>
-<td align="left"><p>Microsoft</p></td>
-</tr>
-</tbody>
-</table>
+| Partition | Contents | File system | Mount point | Encrypted | Size | Free space reserved for future updates | Owner |
+|--|--|--|--|--|--|--|--|
+| DPP | Device provisioning data | FAT | C:\DPP | No | 8 MB | N/A | Microsoft |
+| SV partitions | UEFI firmware and other SV-specific partitions | N/A | No mount point | Maybe | Variable | N/A | SV/OEM |
+| EFI system partition | Boot manager, boot configuration database, UEFI applications | FAT | C:\ESP | No | 32 MB (minimum) | N/A | Microsoft |
+| Crash dump partition (exists on non-retail images only) | Data from crash dumps | NTFS | C:\CrashDump | Yes | Variable - the size of this partition depends on the value of the **SOC** element in the OEMInput file that was used to build the image. | N/A | Microsoft |
+| Main OS (boot partition) | OS, update OS, system registry hives, OEM preloaded applications | NTFS | C:\ | Yes | Approximately 1.5 GB | 250 MB | Microsoft |
+| Data partition | User data, user registry hives, applications, application data, page file. | NTFS | C:\Data | Yes | Remainder of eMMC storage not used by other partitions. Approximately 256 MB is used for the page file. | N/A | Microsoft |
+| SD card | User data (music, pictures, etc.) | FAT/exFAT | Variable | No | Variable | N/A | Microsoft |
 
 ### Device provisioning partition
 
@@ -167,8 +77,7 @@ In general, the number of writable files in this partition should be limited to 
 
 - On phones with more than 4 GB of storage and an uncompressed Main OS partition, this partition has approximately 250 MB of reserved space.
 
-> [!NOTE]
-> OEMs can add additional free space for future updates by using the **AdditionalMainOSFreeSectorsRequest** element in the device platform XML file.
+OEMs can add additional free space for future updates by using the **AdditionalMainOSFreeSectorsRequest** element in the device platform XML file.
 
 ### Data partition
 

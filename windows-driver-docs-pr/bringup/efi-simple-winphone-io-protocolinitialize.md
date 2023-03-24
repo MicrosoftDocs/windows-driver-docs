@@ -1,7 +1,7 @@
 ---
 title: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Initialize
 description: Waits for a connection from the host computer for the specified number of seconds.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 

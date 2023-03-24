@@ -1,7 +1,7 @@
 ---
 title: EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery
 description: Charges the main battery to the specified target level with a maximum charge current.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 

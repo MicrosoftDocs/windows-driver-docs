@@ -1,20 +1,20 @@
 ---
 title: ACPI namespace hierarchy
 description: The ACPI namespace hierarchy must accurately model the platform's hardware topology, starting with the processor's system bus.
-ms.date: 08/17/2021
+ms.date: 03/22/2023
 ---
 
 # ACPI namespace hierarchy
 
-The ACPI namespace hierarchy must accurately model the platform's hardware topology, starting with the processor's system bus ("\\\_SB"). In general, a device that connects to a bus or controller appears as a child of that bus or controller device in the namespace.
+The ACPI namespace hierarchy must accurately model the platform's hardware topology, starting with the processor's system bus ("_SB"). In general, a device that connects to a bus or controller appears as a child of that bus or controller device in the namespace.
 
 The following rules apply specifically to SoC-based platforms:
 
-- Memory-mapped functional blocks (including processors) appear directly under the \\\_SB node.
+- Memory-mapped functional blocks (including processors) appear directly under the _SB node.
 
 - Peripheral devices that connect to some combination of simple peripheral bus (SPB) controllers and/or GPIO controllers describe their connections to these controllers as connection resources. For more information, see [General Purpose I/O (GPIO)](general-purpose-i-o--gpio-.md) and [Simple Peripheral Bus (SPB)](simple-peripheral-bus--spb-.md).
 
-    Peripherals that are connected in this way might appear directly under the \\\_SB node, or under a parent SPB or GPIO controller. The latter is preferred, when possible, because it indicates the device relationship directly in the namespace itself, instead of requiring the decoding of resources to discover the relationship.
+    Peripherals that are connected in this way might appear directly under the _SB node, or under a parent SPB or GPIO controller. The latter is preferred, when possible, because it indicates the device relationship directly in the namespace itself, instead of requiring the decoding of resources to discover the relationship.
 
 - Any functional blocks or peripherals that are connected through a standard bus that supports hardware enumeration (for example, SDIO and USB) do not need to appear in the namespace at all.
 
