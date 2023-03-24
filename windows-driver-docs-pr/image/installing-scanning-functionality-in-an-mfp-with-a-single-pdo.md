@@ -1,14 +1,14 @@
 ---
 title: Installing Scanning Functionality in an MFP with a Single PDO
 description: Installing Scanning Functionality in an MFP with a Single PDO
-ms.date: 04/20/2017
+ms.date: 03/24/2023
 ---
 
 # Installing Scanning Functionality in an MFP with a Single PDO
 
-
-
-
+> [!IMPORTANT]
+> Starting with the WDK for Windows 11, version 22H2, WDF redistributable co-installers are no longer supported.
+> To learn how to work around this change, see [WDF redistributable co-installers don't work](/windows-hardware/drivers/wdk-known-issues#wdf-redistributable-co-installers-dont-work) in the *WDK known issues* article.
 
 A special procedure is required to install scanning functionality in multifunction printers having only a single physical device object (PDO). If the device identifies itself as a printer, the printer's INF file can call the WIA co-installer in order to install the scanning functionality.
 
@@ -18,17 +18,17 @@ If you register the WIA co-installer as the co-installer of your device, Setup a
 
 **HKLM\\SYSTEM\\CurrentControlSet\\Control\\DeviceClasses\\{6bdd1fc6-810f-11d0-bec7-08002be2092f}\\&lt;*device symbolic link*&gt;**
 
-This key is not guaranteed to remain in this location In future operating system versions. To open this key, call [**SetupDiOpenDeviceInterfaceRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendeviceinterfaceregkey).
+This key isn't guaranteed to remain in this location In future operating system versions. To open this key, call [**SetupDiOpenDeviceInterfaceRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendeviceinterfaceregkey).
 
-The WIA service enumerates all Image class PDOs and device interfaces. Therefore, the newly created device interface will be enumerated as a WIA device.
+The WIA service enumerates all Image class PDOs and device interfaces. Therefore, the newly created device interface is enumerated as a WIA device.
 
-The Windows DDK ships with an example INF that installs scanning functionality in a multifunction printer with only a single PDO. The name of this file is *mfpoemprn.inf*, and it is located in the *\\src\\print\\infs* directory.
+The Windows DDK ships with an example INF that installs scanning functionality in a multifunction printer with only a single PDO. The name of this file is *mfpoemprn.inf*, and it's located in the *\\src\\print\\infs* directory.
 
-**To install scanning functionality in an MFP**
+## To install scanning functionality in an MFP
 
-1.  1.Specify *sti\_ci.dll* as the entry value for the **CoInstallerEntry** entry.
+1. Specify *sti\_ci.dll* as the entry value for the **CoInstallerEntry** entry.
 
-    The INF for your device must have an [**INF DDInstall.CoInstallers Section**](../install/inf-ddinstall-coinstallers-section.md) to be able to register the co-installer for device installation. This section should appear similar to the following:
+    The INF for your device must have an [**INF DDInstall.CoInstallers Section**](../install/inf-ddinstall-coinstallers-section.md) to be able to register the co-installer for device installation. This section should appear similar to the following example:
 
     ```INF
     [OEMMFP.GPD.CoInstallers]
@@ -38,7 +38,7 @@ The Windows DDK ships with an example INF that installs scanning functionality i
     HKR,,CoInstallers32,0x00010000,"sti_ci.dll, CoInstallerEntry"
     ```
 
-2.  2.Include a **WIASection** entry in the [**INF DDInstall Section**](../install/inf-ddinstall-section.md) that refers to the section containing all of the WIA-related settings. The section containing the WIA-related settings must appear in the same INF file.
+1. Include a **WIASection** entry in the [**INF DDInstall Section**](../install/inf-ddinstall-section.md) that refers to the section containing all of the WIA-related settings. The section containing the WIA-related settings must appear in the same INF file.
 
     ```INF
     [OEMMFP.GPD]
@@ -56,18 +56,16 @@ The Windows DDK ships with an example INF that installs scanning functionality i
     USDClass="{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}"
     ```
 
-    By including a **WIASection** entry, the Image class installer does not create a devnode for the device, but instead creates an additional device interface. Accordingly, it uses the previously mentioned device interface registry key to store STI-/WIA-related information.
+    By including a **WIASection** entry, the Image class installer doesn't create a devnode for the device, but instead creates an additional device interface. Accordingly, it uses the previously mentioned device interface registry key to store STI-/WIA-related information.
 
-3.  3.Make sure that the [**INF DDInstall section**](../install/inf-ddinstall-section.md) copies all required files.
+1. Make sure that the [**INF DDInstall section**](../install/inf-ddinstall-section.md) copies all required files.
 
-    Alternatively, you can list the files to copy in the **WIASection**, but they will not be listed in Device Manager.
+    Alternatively, you can list the files to copy in the **WIASection**, but they won't be listed in Device Manager.
 
-**Note**   The **Include** and **Needs** entries cannot be used in the **WIASection** section.
+The **Include** and **Needs** entries can't be used in the **WIASection** section.
+
 All kernel-mode portions must be installed by the original [**INF DDInstall Section**](../install/inf-ddinstall-section.md).
 
-If the device is hot-pluggable, and requires its own kernel-mode component, it must create and enable an Image class device interface (in addition to any other class device interfaces, such as the Print class device interface). The kernel-mode component enables an Image class device interface on the device's devnode by means of a call to the [**IoSetDeviceInterfaceState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacestate) function. When the Image class device interface is enabled, a Plug and Play event is fired, notifying the WIA service that the device is connected.
+If the device is hot-pluggable, and requires its own kernel-mode component, it must create and enable an Image class device interface. This interface is in addition to any other class device interfaces, such as the Print class device interface.
 
- 
-
- 
-
+The kernel-mode component enables an Image class device interface on the device's devnode with a call to the [**IoSetDeviceInterfaceState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacestate) function. When the Image class device interface is enabled, a Plug and Play event is fired, notifying the WIA service that the device is connected.
