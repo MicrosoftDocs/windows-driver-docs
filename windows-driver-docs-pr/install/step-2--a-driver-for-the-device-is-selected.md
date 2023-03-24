@@ -1,7 +1,7 @@
 ---
 title: Step 2 A Driver for the Device is Selected
 description: Step 2 A Driver for the Device is Selected
-ms.date: 11/18/2021
+ms.date: 03/23/2023
 ---
 
 # Step 2: A Driver Package for the Device is Selected
@@ -24,7 +24,8 @@ As an example, on Windows 8 and later, if a user plugs a WLAN adapter into a por
 
 For more information about the [driver package](driver-packages.md) search process, see [Where Windows Searches for Drivers](./how-windows-selects-a-driver-for-a-device.md).
 
-**Note**  Starting with Windows Vista, the operating system always installs a [driver package](driver-packages.md) from the [driver store](driver-store.md). If a matching driver package is found in another location, Windows first stages the package to the driver store before it installs the driver package on a device.
+> [!NOTE]
+> Starting with Windows Vista, the operating system always installs a [driver package](driver-packages.md) from the [driver store](driver-store.md). If a matching driver package is found in another location, Windows first stages the package to the driver store before it installs the driver package on a device.
 
 ### Selecting the Driver
 

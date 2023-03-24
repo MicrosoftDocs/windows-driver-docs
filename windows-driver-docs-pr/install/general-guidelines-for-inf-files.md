@@ -3,7 +3,7 @@ title: General guidelines for INF files
 description: Provides general guidelines for INF files.
 keywords:
 - INF files WDK device installations, general guidelines
-ms.date: 02/10/2023
+ms.date: 03/23/2023
 ---
 
 # General guidelines for INF files
@@ -32,9 +32,9 @@ INF files have many common parts and follow a single set of syntax rules. Howeve
 
 - The components of a driver package must never directly copy or delete INF files directly in a system's *%SystemRoot%/Inf* directory.
 
-You can create or modify an INF file by using any text editor in which you can control the insertion of line breaks. If your INF contains non-ASCII characters, save the file as a Unicode (UTF-16 LE) file.
+## Editing INF files and file encodings
 
-Do not arbitrarily modify the time stamps of your INF files, as a version control mechanism. Version control of INF files should be based on a date and version number that is specified via the *DriverVer* directive in an [**INF Version section**](inf-version-section.md).
+You can create or modify an INF file by using any text editor in which you can control the insertion of line breaks. The file must be saved with an ANSI or Unicode (UTF-16 LE) file encoding. Unicode (UTF-16 LE) is preferred since it allows the INF to support localizing the [INF Strings section](./inf-strings-section.md) in a wide variety of languages. If your INF contains non-ASCII characters, you must save the file as a Unicode (UTF-16 LE) file.
 
 ## Best practices for naming and versioning your INF file
 
@@ -42,4 +42,6 @@ Do not arbitrarily modify the time stamps of your INF files, as a version contro
 
 - If you have two different variants of the same driver package differing in aspects such as branding strings, settings, and so on, those two driver packages should have unique names.
 
-- Each time you update an INF or any file the INF references, you should update the date and version in the INF.
+- Do not arbitrarily modify the time stamps of your INF files as a version control mechanism. Version control of INF files should be based on a date and version number that is specified via the [**INF DriverVer directive**](inf-driverver-directive.md) directive in an [**INF Version section**](inf-version-section.md).
+
+- Each time you update an INF or any file the INF references, you should update the date and version in the [**INF DriverVer directive**](inf-driverver-directive.md) directive in the INF.

@@ -10,12 +10,12 @@ api_name:
 - INF DriverVer Directive
 api_type:
 - NA
-ms.date: 07/08/2022
+ms.date: 03/23/2023
 ---
 
 # INF DriverVer directive
 
-A **DriverVer** directive specifies version information for drivers installed by this INF.
+A **DriverVer** directive specifies date and version information for drivers installed by this INF.
 
 ```inf
 [Version] |
@@ -42,8 +42,10 @@ The following point applies to this value for Windows 2000, and Windows XP:
 
 - You should consider this value to be required for input drivers (such as mouse or keyboard drivers). If you do not include the version value, input drivers might not update programmatically. Typically, you should specify version information in all [driver packages](driver-packages.md) because the operating system uses version information as a criteria to determine the newest driver.
 
-> [!NOTE]
+> [!CAUTION]
 > A *w.x.y.z* value of 0.0.0.0 is not valid.
+>
+> Whenever anything in the driver package is changed, including changes to binary files and not just changes in the INF, it is recommended that both the date and the version number is updated. See [Best practices for naming and versioning your INF file](./general-guidelines-for-inf-files.md#best-practices-for-naming-and-versioning-your-inf-file) for more information.
 
 ## Remarks
 
