@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 # Co-installer Functionality
 
 > [!NOTE]
-> Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
+> Features described in this section are not supported and driver packages containing them will no longer receive a Microsoft signature. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
 A co-installer is a user-mode Win32 DLL that typically writes additional configuration information to the registry, or performs other installation tasks that require information that is not available when an INF is written.
 
