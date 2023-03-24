@@ -1,7 +1,7 @@
 ---
 description: This topic provides installation information about Netmon and the USB ETW parsers.
 title: How to install Netmon and USB ETW Parsers
-ms.date: 09/16/2021
+ms.date: 03/24/2023
 ---
 
 # How to install Netmon and USB ETW Parsers
@@ -38,7 +38,7 @@ Install Netmon from the Microsoft Download Center, and then install USB ETW pars
     1. Open a PowerShell window (you don't need to **Run as administrator**) and run the following commands. Adjust the path if you installed the kit to a different location:
 
         ```syntax
-        cd "C:\Program Files (x86)\Windows Kits\8.0\Tools\x86\Network Monitor Parsers\usb"
+        cd "C:\Program Files (x86)\Windows Kits\10\Tools\10.0.22621.0\x86\Network Monitor Parsers\usb"
         ..\NplAutoProfile.ps1
         ```
 

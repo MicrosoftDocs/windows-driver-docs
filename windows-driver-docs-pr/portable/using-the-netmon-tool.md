@@ -16,7 +16,7 @@ To install and configure the Network Monitor tool, complete the following steps.
 2. Download and install [the Windows Driver Kit](../download-the-wdk.md).
 3. Install the WPD parsers on your development machine by starting an instance of *Powershell.exe* with *Administrator* permissions and running the following sequence of commands.
    1. PowerShell -ExecutionPolicy RemoteSigned
-   2. cd “\\Program Files (x86)\\Windows Kits\\8.0\\Tools\\x86\\Network Monitor Parsers\\usb”
+   2. cd “C:\\Program Files (x86)\\Windows Kits\\10\\Tools\\10.0.22621.0\\x86\\Network Monitor Parsers\\usb”
    3. ..\\NplAutoProfile.ps1
    4. cd ..\\wpd
    5. ..\\NplAutoProfile.ps1
