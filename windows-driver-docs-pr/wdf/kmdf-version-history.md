@@ -5,7 +5,7 @@ keywords:
 - kernel-mode drivers WDK KMDF , revision history
 - KMDF WDK , revision history
 - Kernel-Mode Driver Framework WDK , revision history
-ms.date: 02/03/2023
+ms.date: 03/24/2023
 ---
 
 # KMDF Version History
@@ -16,7 +16,7 @@ The following table shows the release history of the KMDF library. You can use t
 
 | KMDF version | Release method               | Included in this version of Windows                          | Drivers using it run on                                 |
 |--------------|------------------------------|--------------------------------------------------------------|---------------------------------------------------------|
-| 1.33         | WDK for Windows Server 2022, Windows 11 WDK | Windows 11, version 21H2; Windows Server 2022                              | Windows 11, version 21H2; Windows Server 2022 and later               |
+| 1.33         | Windows 11 WDK; WDK for Windows Server 2022 | Windows 11, version 21H2 (Cobalt); Windows Server 2022 (Iron)                              | Windows 11, version 21H2; Windows Server 2022 and later               |
 | 1.31         | Windows 10, version 2004 WDK | Windows 10, version 2004 (May 2020 Update, Vibranium)        | Windows 10, version 2004 and later                      |
 | 1.29         | Not released in WDK          | Windows 10, version 1903 (March 2019 Update, 19H1)           | Windows 10, version 1903 and later                      |
 | 1.27         | Windows 10, version 1809 WDK | Windows 10, version 1809 (October 2018 Update, Redstone 5)   | Windows 10, version 1809 and later                      |
