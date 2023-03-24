@@ -1,18 +1,17 @@
 ---
 title: UEFI simple I/O protocol
 description: UEFI simple I/O protocol
-ms.date: 08/20/2021
+ms.date: 03/23/2023
 ---
 
 # UEFI simple I/O protocol
 
-> [!NOTE]
+> [!IMPORTANT]
 > Some information in this section may apply only to Windows 10 Mobile and certain processor architectures.
 
 The simple I/O protocol is used by flashing tools to enable communication between the device and a host computer in the pre-boot environment.
 
-> [!NOTE]
-> Information about flashing tools will be provided in a future release of this documentation.
+Information about flashing tools will be provided in a future release of this documentation.
 
 ## EFI_SIMPLE_WINPHONE_IO_PROTOCOL
 

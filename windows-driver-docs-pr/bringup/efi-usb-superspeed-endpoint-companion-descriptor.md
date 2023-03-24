@@ -1,7 +1,7 @@
 ---
 title: EFI_USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
 description: The EFI_USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR structure provides the SuperSpeed Endpoint Companion descriptor to the USB function driver.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 

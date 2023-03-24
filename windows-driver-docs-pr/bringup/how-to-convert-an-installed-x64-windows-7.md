@@ -1,7 +1,7 @@
 ---
 title: How to convert an installed x64 Windows 7 system
 description: Provides information about how to convert an installed x64 Windows 7 system.
-ms.date: 08/19/2021
+ms.date: 03/23/2023
 ---
 
 # How to convert an installed x64 Windows 7 system
@@ -18,8 +18,7 @@ Installed in BIOS mode to Legacy MBR boot disk with CSM enabled, and you know or
 
 1. The security features that you are interested in (Secure boot, HVCI, and Credential Guard) have all the correct components already configured on the system.
 
-    > [!NOTE]
-    > Microsoft does not currently have a mechanism to convert Legacy MBR boot disks to GPT disks without first wiping or cleaning an existing file system and creating the new file system on the clean disk.
+    Microsoft does not currently have a mechanism to convert Legacy MBR boot disks to GPT disks without first wiping or cleaning an existing file system and creating the new file system on the clean disk.
 
 For example, you will need to use Diskpart.exe to **clean** the existing partition before running the **convert GPT** command on that disk. The **clean** command will wipe the entire disk.
 
@@ -63,8 +62,7 @@ For example, you will need to use Diskpart.exe to **clean** the existing partiti
 
     1. BCDboot c:\\windows /s s: /f UEFI
 
-       > [!NOTE]
-       > This is the drive letter identified in step c and d above
+       This is the drive letter identified in step c and d above
 
     1. dir /a
 

@@ -1,7 +1,7 @@
 ---
 title: EFI_BATTERY_CHARGING_STATUS
 description: Provides information about the EFI_BATTERY_CHARGING_STATUS enumeration.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 
@@ -34,52 +34,52 @@ typedef enum _EFI_BATTERY_CHARGING_STATUS {
 
 ## Elements
 
-EfiBatteryChargingStatusNone  
+**EfiBatteryChargingStatusNone**  
 Charging status is unavailable.
 
-EfiBatteryChargingStatusSuccess  
+**EfiBatteryChargingStatusSuccess**  
 The operation completed successfully.
 
-EfiBatteryChargingStatusOverheat  
+**EfiBatteryChargingStatusOverheat**  
 The battery is getting too hot to charge.
 
-EfiBatteryChargingStatusVoltageOutOfRange  
+**EfiBatteryChargingStatusVoltageOutOfRange**  
 Charging logic detected the voltage to be out of the operational range.
 
-EfiBatteryChargingStatusCurrentOutOfRange  
+**EfiBatteryChargingStatusCurrentOutOfRange**  
 Charging logic detected the current to be out of the operational range.
 
-EfiBatteryChargingStatusTimeout  
+**EfiBatteryChargingStatusTimeout**  
 Charging logic detected that the battery is not getting charged within a reasonable time.
 
-EfiBatteryChargingStatusAborted  
+**EfiBatteryChargingStatusAborted**  
 The operation was aborted.
 
-EfiBatteryChargingStatusDeviceError  
+**EfiBatteryChargingStatusDeviceError**  
 The physical device reported an error.
 
-EfiBatteryChargingStatusExtremeCold  
+**EfiBatteryChargingStatusExtremeCold**  
 The battery is too cold to continue charging.
 
-EfiBatteryChargingStatusBatteryChargingNotSupported  
+**EfiBatteryChargingStatusBatteryChargingNotSupported**  
 The battery does not support the charging operation.
 
-EfiBatteryChargingStatusBatteryNotDetected  
+**EfiBatteryChargingStatusBatteryNotDetected**  
 The battery is not detected.
 
-EfiBatteryChargingSourceNotDetected  
+**EfiBatteryChargingSourceNotDetected**  
 The device is not attached to a charging source and therefore cannot continue with the charging operation.
 
-EfiBatteryChargingSourceVoltageInvalid  
+**EfiBatteryChargingSourceVoltageInvalid**  
 The charging source supplied an invalid voltage.
 
-EfiBatteryChargingSourceCurrentInvalid  
+**EfiBatteryChargingSourceCurrentInvalid**  
 The charging source supplied an invalid current.
 
-EfiBatteryChargingErrorRequestShutdown  
+**EfiBatteryChargingErrorRequestShutdown**  
 The driver requested a system shutdown.
 
-EfiBatteryChargingErrorRequestReboot  
+**EfiBatteryChargingErrorRequestReboot**  
 The driver requested a system reboot.
 
 ## Remarks

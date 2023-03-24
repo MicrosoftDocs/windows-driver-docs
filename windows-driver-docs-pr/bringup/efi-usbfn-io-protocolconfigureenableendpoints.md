@@ -1,7 +1,7 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpoints
 description: The ConfigureEnableEndpoints function initializes endpoints based on supplied device and configuration descriptors.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 
@@ -33,7 +33,7 @@ A pointer to an [EFI_USB_DEVICE_INFO](efi-usb-device-info.md) structure.
 The function returns the following values:
 
 | Return value | Description |
-| -- | -- |
+|--|--|
 | EFI_SUCCESS | The function returned successfully. |
 | EFI_INVALID_PARAMETER | A parameter is invalid. |
 | EFI_DEVICE_ERROR | The physical device reported an error. |

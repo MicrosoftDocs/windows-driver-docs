@@ -1,12 +1,12 @@
 ---
 title: UEFI in Windows
 description: Provides information about UEFI requirements for running Windows on SoC platforms.
-ms.date: 08/04/2021
+ms.date: 03/23/2023
 ---
 
 # UEFI in Windows
 
-> [!NOTE]
+> [!IMPORTANT]
 > Some information in this section may apply only to Windows 10 Mobile and certain processor architectures.
 
 Windows utilizes the Unified Extensible Firmware Interface (UEFI) to support the handoff of system control from the SoC firmware boot loader to the OS. The UEFI environment is a minimal boot OS upon which Windows devices are booted and the OS runs.

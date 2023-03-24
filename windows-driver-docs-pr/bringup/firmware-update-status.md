@@ -1,7 +1,7 @@
 ---
 title: Firmware update status
 description: It is expected that all firmware updates will be applied, and the results of all updates reflected in the ESRT on the subsequent invocation of the Windows OS loader.
-ms.date: 07/21/2020
+ms.date: 03/23/2023
 ---
 
 # Firmware update status
@@ -38,8 +38,7 @@ Although the standard update policy enforces that firmware versions can only inc
 
 A system reset allows end-users to revert their systems back to factory settings. It achieves this by re-installing the Windows image pre-loaded on to a system during the manufacturing process. The entire OS, including drivers and applications, will be reinstalled.
 
-> [!NOTE]
-> Due to security requirements which **prevent firmware rollback** across security boundaries, system reset is unable to roll back firmware versions to match the original firmware deployed in the factory. This means that all versions of firmware must be backwards compatible with all driver and operating system versions shipped on that platform. If firmware is not compatible, this could result in a user returning their system to the manufacturer.
+Due to security requirements which **prevent firmware rollback** across security boundaries, system reset is unable to roll back firmware versions to match the original firmware deployed in the factory. This means that all versions of firmware must be backwards compatible with all driver and operating system versions shipped on that platform. If firmware is not compatible, this could result in a user returning their system to the manufacturer.
 
 ## Rolling back firmware updates
 

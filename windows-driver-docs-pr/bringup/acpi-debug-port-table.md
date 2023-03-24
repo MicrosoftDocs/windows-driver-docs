@@ -7,7 +7,7 @@ keywords:
 - KDCOM
 - Serial
 - UART
-ms.date: 08/13/2021
+ms.date: 03/22/2023
 ---
 
 # Microsoft Debug Port Table 2 (DBG2)

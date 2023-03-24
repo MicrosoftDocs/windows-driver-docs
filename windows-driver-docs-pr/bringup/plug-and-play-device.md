@@ -1,7 +1,7 @@
 ---
 title: Plug and play device
 description: The presence of an ESRT configuration table will direct Windows to enumerate a separate PnP device instance for each firmware resource.
-ms.date: 08/19/2021
+ms.date: 03/23/2023
 ---
 
 # Plug and play device
@@ -13,7 +13,9 @@ The presence of an ESRT configuration table will direct Windows to enumerate a s
 | UEFI\RES_{SYSTEM_FIRMWARE}\0 | UEFI\RES_{SYSTEM_FIRMWARE}&REV_1, UEFI\RES_{SYSTEM_FIRMWARE} |
 | UEFI\RES_{DEVICE_FIRMWARE}\0 | UEFI\RES_{DEVICE_FIRMWARE}&REV_1, UEFI\RES_{DEVICE_FIRMWARE} |
 
-Notice that two hardware IDs are reported by each firmware resource device; the first hardware ID includes the current firmware resource version, while the second one does not. Since the firmware resource version is expected to change as a result of applying a firmware update, it is important that a driver be targeted for the second un-versioned hardware ID so that it can be applicable for installation across all firmware resource versions, no matter which version is currently present on a given system.
+Notice that two hardware IDs are reported by each firmware resource device. The first hardware ID includes the current firmware resource version, while the second one does not. 
+
+Since the firmware resource version is expected to change as a result of applying a firmware update, it is important that a driver be targeted for the second un-versioned hardware ID so that it can be applicable for installation across all firmware resource versions, no matter which version is currently present on a given system.
 
 ## Related topics
 

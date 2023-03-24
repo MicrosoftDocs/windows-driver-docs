@@ -1,7 +1,7 @@
 ---
 title: EFI_DISPLAY_POWER_STATE
 description: Provides information about the EFI_DISPLAY_POWER_STATE enumeration.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 
@@ -21,13 +21,13 @@ typedef enum _EFI_DISPLAY_POWER_STATE {
 
 ## Elements
 
-EfiDisplayPowerStateUnknown  
+**EfiDisplayPowerStateUnknown**  
 The power state is not initialized. This value can only be used for variable initialization; it cannot be passed to or returned by any [EFI_DISPLAY_POWER_PROTOCOL](efi-display-power-protocol.md) function.
 
-EfiDisplayPowerStateOff  
+**EfiDisplayPowerStateOff**  
 When used with [EFI_DISPLAY_POWER_PROTOCOL.GetDisplayPowerState](efi-display-power-protocolgetdisplaypowerstate.md), indicates that power to the display and backlight are turned off. When used with [EFI_DISPLAY_POWER_PROTOCOL.SetDisplayPowerState](efi-display-power-protocolsetdisplaypowerstate.md), turns off power to the display and backlight.
 
-EfiDisplayPowerStateMaximum  
+**EfiDisplayPowerStateMaximum**  
 When used with [EFI_DISPLAY_POWER_PROTOCOL.GetDisplayPowerState](efi-display-power-protocolgetdisplaypowerstate.md), indicates that the display and backlight have full power. When used with [EFI_DISPLAY_POWER_PROTOCOL.SetDisplayPowerState](efi-display-power-protocolsetdisplaypowerstate.md), turns on full power to the display and backlight.
 
 ## Requirements

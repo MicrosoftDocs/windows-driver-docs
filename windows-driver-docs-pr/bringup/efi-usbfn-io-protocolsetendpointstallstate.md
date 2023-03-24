@@ -1,7 +1,7 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.SetEndpointStallState
 description: The SetEndpointStallState function sets or clears the stall state on the specified endpoint.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 

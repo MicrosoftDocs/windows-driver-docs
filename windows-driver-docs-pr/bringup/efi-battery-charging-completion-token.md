@@ -1,7 +1,7 @@
 ---
 title: EFI_BATTERY_CHARGING_COMPLETION_TOKEN
 description: This structure defines the completion token used by EFI_BATTERY_CHARGING_PROTOCOL.ChargeBattery.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 

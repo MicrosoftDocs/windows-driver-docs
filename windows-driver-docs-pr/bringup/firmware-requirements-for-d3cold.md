@@ -1,7 +1,7 @@
 ---
 title: Firmware requirements for D3cold
 description: Starting with Windows 8, devices can enter the D3cold power sub-state even when the system stays in the S0 power state.
-ms.date: 08/18/2021
+ms.date: 03/23/2023
 ---
 
 # Firmware requirements for D3cold
@@ -144,7 +144,7 @@ Scope (\_SB)
                                //  if there are power resources required only for wake.
                Name(_CRS, ...) // If the event is signaled via a wake-capable interrupt.
                 
-               Method(_DSW, 3) {...) // Can be used with either of the above, if wake enablement
+               Method(_DSW, 3) {...} // Can be used with either of the above, if wake enablement
                                      // varies depending on the target S-state and D-state.
                */
      }  // End of Device EMBD
@@ -273,7 +273,7 @@ Scope (_SB)
                                     //  if there are power resources required only for wake.
                     Name(_CRS, ...) // If the event is signaled via a wake-capable interrupt.
 
-                    Method(_DSW, 3) {...) // Can be used with both of the above, if wake
+                    Method(_DSW, 3) {...} // Can be used with both of the above, if wake
                                           //  enablement varies depending on the target 
                                           //  S-state and D-state.
                     */
@@ -323,7 +323,7 @@ Scope (_SB)
                                     //  if there are power resources required only for wake.
                     Name(_CRS, ...) // If the event is signaled via a wake-capable interrupt.
 
-                    Method(_DSW, 3) {...) // Can be used with both of the above, if wake
+                    Method(_DSW, 3) {...} // Can be used with both of the above, if wake
                                           //  enablement varies depending on the target
                                           //  S-state and D-state.
                     */

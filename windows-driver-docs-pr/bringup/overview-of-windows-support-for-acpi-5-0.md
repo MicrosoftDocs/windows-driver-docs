@@ -1,7 +1,7 @@
 ---
 title: Overview of Windows support for ACPI 5.0
 description: The ACPI 5.0 specification enables support of SoC-based mobile platforms that run Windows 8 and later, but continues to support many useful features that were introduced in earlier versions Windows.
-ms.date: 12/17/2020
+ms.date: 03/23/2023
 ---
 
 # Overview of Windows support for ACPI 5.0
@@ -18,8 +18,7 @@ This design guidance specifically targets hardware-reduced ACPI platforms that s
 
 Windows supports firmware revisions based on the [ACPI 5.0 specification](https://uefi.org/specifications).
 
-> [!NOTE]
-> Windows supports a subset of functionality defined in the ACPI 5.0 specification. Windows does not have an explicit check against higher revisions of the firmware. Windows will support firmware that conforms to higher revisions of the ACPI specification if this firmware contains the necessary support, as described in this design guide.
+Windows supports a subset of functionality defined in the ACPI 5.0 specification. Windows does not have an explicit check against higher revisions of the firmware. Windows will support firmware that conforms to higher revisions of the ACPI specification if this firmware contains the necessary support, as described in this design guide.
 
 ## In this section
 

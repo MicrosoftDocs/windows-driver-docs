@@ -1,7 +1,7 @@
 ---
 title: Switch Legacy BIOS boot and CSM to UEFI and GPT
 description: Provides information about switching Legacy BIOS boot and CSM to UEFI and GPT
-ms.date: 06/20/2018
+ms.date: 03/23/2023
 ---
 
 # Switch Legacy BIOS boot and CSM to UEFI and GPT

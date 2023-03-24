@@ -1,7 +1,7 @@
 ---
 title: Generate ACPI tables by using AcpiGenFx
 description: Use the ACPI Generation Framework (AcpiGenFx) library to write an app that generates ACPI tables.
-ms.date: 09/23/2020
+ms.date: 03/23/2023
 ---
 
 # Generate ACPI tables by using AcpiGenFx
@@ -37,8 +37,7 @@ AcpiGenFx is declarative in nature: its output is static data only, and it is no
 
 Locate the following files in the **AcpiGenFx** folder of your WDK installation.
 
-> [!NOTE]
-> AcpiGenFx.dll and associated samples are available in the Tools folder of the WDK. In the Tools directory, navigate to the target architecture folder, then to the AcpiGenFx folder. For example, the x86 version is located in C:\Program Files (x86)\Windows Kits\10\Tools\x86\ACPIGenFx.
+AcpiGenFx.dll and associated samples are available in the Tools folder of the WDK. In the Tools directory, navigate to the target architecture folder, then to the AcpiGenFx folder. For example, the x86 version is located in C:\Program Files (x86)\Windows Kits\10\Tools\x86\ACPIGenFx.
 
 - AcpiGenFx.dll
 
@@ -124,121 +123,24 @@ Compile the ASL code files to an ACPI Machine Language (AML) binary by using the
 
 You can add components to the platform. Typically, those components include processors, bus controllers, power resources, and so on. Here are some components that are used in DSDTSamples.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Object type</th>
-<th>Creation method</th>
-<th>Component</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>ACAdapter</strong></td>
-<td><strong>Platform.AddACAdapter</strong></td>
-<td>Add an AC adapter.</td>
-</tr>
-<tr class="even">
-<td><strong>BatteryDevice</strong></td>
-<td><p><strong>Platform.AddBatteryDevice</strong></p>
-<p><strong>BatteryDevice.ThermalLimit</strong></p></td>
-<td>Add a battery device and specify its thermal limit.</td>
-</tr>
-<tr class="odd">
-<td><strong>ButtonArrayDevice</strong></td>
-<td><p><strong>Platform.AddButtonArrayDevice</strong></p>
-<p><strong>ButtonArrayDevice.AddBackButton</strong></p>
-<p><strong>ButtonArrayDevice.AddCameraShutterButton</strong></p>
-<p><strong>ButtonArrayDevice.AddCameraAutofocusButton</strong></p>
-<p><strong>ButtonArrayDevice.AddGenericButton</strong></p>
-<p><strong>ButtonArrayDevice.AddPowerButton</strong></p>
-<p><strong>ButtonArrayDevice.AddRotationLockButton</strong></p>
-<p><strong>ButtonArrayDevice.AddSearchButton</strong></p>
-<p><strong>ButtonArrayDevice.AddVolumeDownButton</strong></p>
-<p><strong>ButtonArrayDevice.AddVolumeUpButton</strong></p>
-<p><strong>ButtonArrayDevice.AddWindowsHomeButton</strong></p></td>
-<td>Add buttons such as Windows Home, Back, Volume +/-, Power, Rotation Lock, and Search.</td>
-</tr>
-<tr class="even">
-<td><strong>DisplaySensor</strong></td>
-<td><strong>Platform.AddDisplaySensor</strong></td>
-<td>Add a display sensor.</td>
-</tr>
-<tr class="odd">
-<td><strong>GenericDevice</strong></td>
-<td><strong>Platform.AddGenericDevice</strong></td>
-<td>Add a generic device that can be used to replace any type of internally supported device in the framework.</td>
-</tr>
-<tr class="even">
-<td><strong>GpioController</strong></td>
-<td><strong>Platform.AddGpioController</strong></td>
-<td>Add GPIO controllers and associated resources such as interrupts, I/O, and events.</td>
-</tr>
-<tr class="odd">
-<td><strong>HidOverI2C</strong></td>
-<td><strong>Platform.AddHidI2CDevice</strong></td>
-<td>Add a HID device connected to the I<sup>2</sup>C bus.</td>
-</tr>
-<tr class="even">
-<td><strong>I2CController</strong></td>
-<td><strong>Platform.AddI2CController</strong></td>
-<td>Add I<sup>2</sup>C controllers and associated resources such as interrupts, I/O, and events.</td>
-</tr>
-<tr class="odd">
-<td><strong>KDNet2Usb</strong></td>
-<td><strong>Platform.AddKDNet2Usb</strong></td>
-<td>Add support for kernel debugging by using Kdnet over USB.</td>
-</tr>
-<tr class="even">
-<td><strong>PEPDevice</strong></td>
-<td><strong>Platform.AddPepDevice</strong></td>
-<td>Add PEP devices and their resources and methods that return packages and static types.</td>
-</tr>
-<tr class="odd">
-<td><p><strong>Processor</strong></p>
-<p><strong>ProcessorAggregator</strong></p></td>
-<td><p><strong>Platform.AddProcessor</strong></p>
-<p><strong>Platform.AddProcessorAggregator</strong></p></td>
-<td>Add processors and processor aggregators.</td>
-</tr>
-<tr class="even">
-<td><strong>RTCDevice</strong></td>
-<td><strong>Platform.AddRTCDevice</strong></td>
-<td>Add ACPI time and alarm devices.</td>
-</tr>
-<tr class="odd">
-<td><strong>SdHostController</strong></td>
-<td><strong>Platform.AddSdHostController</strong></td>
-<td>Add SD host controllers.</td>
-</tr>
-<tr class="even">
-<td><strong>SerialPort</strong></td>
-<td><strong>Platform.AddSerialPort</strong></td>
-<td>Add support for serial and UART devices.</td>
-</tr>
-<tr class="odd">
-<td><strong>ThermalZone</strong></td>
-<td><strong>Platform.AddThermalZone</strong></td>
-<td>Add thermal zones and associated sampling and polling periods.</td>
-</tr>
-<tr class="even">
-<td><p><strong>XhciUsbController</strong></p>
-<p><strong>EhciUsbController</strong></p>
-<p><strong>UsbDevice</strong></p></td>
-<td><p><strong>Platform.AddEhciUsbController</strong></p>
-<p><strong>Platform.AddXhciUsbController</strong></p>
-<p><strong>EhciUsbController.AddUsbDevice</strong></p>
-<p><strong>XhciUsbController.AddUsbDevice</strong></p>
-<p><strong>UsbDevice.AddUsbDevice</strong></p></td>
-<td>Add USB host controllers and the child devices (including hubs).</td>
-</tr>
-</tbody>
-</table>
+| Object type | Creation method | Component |
+|--|--|--|
+| ACAdapter | Platform.AddACAdapter | Add an AC adapter. |
+| BatteryDevice | Platform.AddBatteryDevice<br><br>BatteryDevice.ThermalLimit | Add a battery device and specify its thermal limit. |
+| ButtonArrayDevice | Platform.AddButtonArrayDevice<br><br>ButtonArrayDevice.AddBackButton<br><br>ButtonArrayDevice.AddCameraShutterButton<br><br>ButtonArrayDevice.AddCameraAutofocusButton<br><br>ButtonArrayDevice.AddGenericButton<br><br>ButtonArrayDevice.AddPowerButton<br><br>ButtonArrayDevice.AddRotationLockButton<br><br>ButtonArrayDevice.AddSearchButton<br><br>ButtonArrayDevice.AddVolumeDownButton<br><br>ButtonArrayDevice.AddVolumeUpButton<br><br>ButtonArrayDevice.AddWindowsHomeButton | Add buttons such as Windows Home, Back, Volume +/-, Power, Rotation Lock, and Search. |
+| DisplaySensor | Platform.AddDisplaySensor | Add a display sensor. |
+| GenericDevice | Platform.AddGenericDevice | Add a generic device that can be used to replace any type of internally supported device in the framework. |
+| GpioController | Platform.AddGpioController | Add GPIO controllers and associated resources such as interrupts, I/O, and events. |
+| HidOverI2C | Platform.AddHidI2CDevice | Add a HID device connected to the I<sup>2</sup>C bus. |
+| I2CController | Platform.AddI2CController | Add I<sup>2</sup>C controllers and associated resources such as interrupts, I/O, and events. |
+| KDNet2Usb | Platform.AddKDNet2Usb | Add support for kernel debugging by using Kdnet over USB. |
+| PEPDevice | Platform.AddPepDevice | Add PEP devices and their resources and methods that return packages and static types. |
+| Processor<br><br>ProcessorAggregator | Platform.AddProcessor<br><br>Platform.AddProcessorAggregator | Add processors and processor aggregators. |
+| RTCDevice | Platform.AddRTCDevice | Add ACPI time and alarm devices. |
+| SdHostController | Platform.AddSdHostController | Add SD host controllers. |
+| SerialPort | Platform.AddSerialPort | Add support for serial and UART devices. |
+| ThermalZone | Platform.AddThermalZone | Add thermal zones and associated sampling and polling periods. |
+| XhciUsbController<br><br>EhciUsbController<br><br>UsbDevice | Platform.AddEhciUsbController<br><br>Platform.AddXhciUsbController<br><br>EhciUsbController.AddUsbDevice<br><br>XhciUsbController.AddUsbDevice<br><br>UsbDevice.AddUsbDevice | Add USB host controllers and the child devices (including hubs). |
 
 To view the complete list, open AcpiGenFx in **Object Browser**. Use IntelliSense to determine the methods (and the parameters) and properties exposed by the objects. For example code that shows how to add the classes and set properties that are listed in the preceding table, refer to the DSDTSamples project.
 

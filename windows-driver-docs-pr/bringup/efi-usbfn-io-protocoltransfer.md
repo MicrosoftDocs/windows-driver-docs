@@ -1,7 +1,7 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.Transfer
 description: The Transfer function handles transferring data to or from the host on the specified endpoint.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 
@@ -45,8 +45,7 @@ If Direction is **EfiUsbEndpointDirectionDeviceRx**: On input, the size of the b
 *Buffer*  
 If Direction is **EfiUsbEndpointDirectionDeviceRx**:The buffer to return the received data. If Direction is **EfiUsbEndpointDirectionDeviceTx**: The buffer that contains the data to be transmitted.
 
-> [!NOTE]
-> This buffer is allocated and freed by using the AllocateTransferBuffer and FreeTransferBuffer functions. The caller of this function must not free or reuse the buffer until an **EfiUsbMsgEndpointStatusChangedRx** or **EfiUsbMsgEndpointStatusChangedTx** message was received along with the address of the transfer buffer as part of the message payload. See [EFI_USBFN_IO_PROTOCOL.EventHandler](efi-usbfn-io-protocoleventhandler.md) for more information on various messages and their payloads.
+This buffer is allocated and freed by using the AllocateTransferBuffer and FreeTransferBuffer functions. The caller of this function must not free or reuse the buffer until an **EfiUsbMsgEndpointStatusChangedRx** or **EfiUsbMsgEndpointStatusChangedTx** message was received along with the address of the transfer buffer as part of the message payload. See [EFI_USBFN_IO_PROTOCOL.EventHandler](efi-usbfn-io-protocoleventhandler.md) for more information on various messages and their payloads.
 
 ## Return values
 

@@ -1,7 +1,7 @@
 ---
 title: SMBIOS
 description: The SMBIOS specification defines data structures and information that will go into the data structures pertinent to a system.
-ms.date: 08/02/2021
+ms.date: 03/23/2023
 ---
 
 # SMBIOS
@@ -31,10 +31,9 @@ The following table contains information about the BIOS fields.
 | BIOS Major Release | BIOS Information (Type 0) | Byte | 14h | Varies | &nbsp; | &nbsp; |
 | BIOS Minor Release | BIOS Information (Type 0) | Byte | 15h | Varies | &nbsp; | &nbsp; |
 
-**Example scenario:**  Contoso, Inc. manufactures 2 product lines: 1) "A" series, and 2) "B" series. The "A" series of devices include the Contoso "A11" and "A13" device sub-brands, each of which have different screen sizes and both support physically detachable keyboards (though the keyboards are sold as an option). The "A11" has three models: 1) the base model (the a110001) 2) a midsize model with a premium audio package (the a110002) and 3) a high-end model with a higher resolution touch panel (the a110003). Each model has gone through several generations of baseboard revisions, which are identified internally with codes bb01 through bb04. Each of the "A11" models can be further customized with different storage and memory configurations. To separate different production runs on their manufacturing floor, Contoso uses an internal identification system that combines the Family, Product Name, market region, and production run number.
+**Example scenario:**  Contoso, Inc. manufactures 2 product lines: (1) "A" series, and (2) "B" series. The "A" series of devices include the Contoso "A11" and "A13" device sub-brands, each of which have different screen sizes and both support physically detachable keyboards (though the keyboards are sold as an option). The "A11" has three models: (1) the base model (the a110001) (2) a midsize model with a premium audio package (the a110002) and (3) a high-end model with a higher resolution touch panel (the a110003). Each model has gone through several generations of baseboard revisions, which are identified internally with codes bb01 through bb04. Each of the "A11" models can be further customized with different storage and memory configurations. To separate different production runs on their manufacturing floor, Contoso uses an internal identification system that combines the Family, Product Name, market region, and production run number.
 
-> [!NOTE]
-> SMBIOS fields starting with **BIOS** may be considered optional or recommended. These are used to build the **Computer Hardware ID (CHID)** and ensure additional levels of uniqueness in the resulting CHID.
+SMBIOS fields starting with **BIOS** may be considered optional or recommended. These are used to build the **Computer Hardware ID (CHID)** and ensure additional levels of uniqueness in the resulting CHID.
 
 The following table describes hierarchy level indicators for end users.
 

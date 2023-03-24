@@ -2,7 +2,7 @@
 title: Download Debugging Tools for Windows - WinDbg
 description: This page provides downloads for the Windows Debugging tools, such as WinDbg.
 keywords: ["Windows Debugging Downloads", "WinDbg", "Download"]
-ms.date: 03/10/2022
+ms.date: 03/22/2023
 ---
 
 # Download Debugging Tools for Windows
@@ -15,9 +15,8 @@ To get started with Windows debugging, see [Getting Started with Windows Debuggi
 
 WinDbg Preview is a new version of WinDbg with more modern visuals, faster windows, and a full-fledged scripting experience. It is built with the extensible object-orientated debugger data model front and center. WinDbg Preview is using the same underlying engine as WinDbg today, so all the commands, extensions, and workflows still work as they did before.
 
- - Download WinDbg Preview from the Microsoft Store: [WinDbg Preview](https://www.microsoft.com/store/p/windbg/9pgjgd53tn86).
-
- - Learn more about installation and configuration in [WinDbg Preview - Installation](./windbg-install-preview.md).
+- Download WinDbg Preview from the Microsoft Store: [WinDbg Preview](https://apps.microsoft.com/store/detail/windbg-preview/9PGJGD53TN86).
+- Learn more about installation and configuration in [WinDbg Preview - Installation](./windbg-install-preview.md).
 
 ## ![Small classic windbg preview logo.](images/windbg-classic-logo.png) Debugging Tools for Windows (WinDbg)
 
@@ -33,8 +32,6 @@ In the SDK installation wizard, select **Debugging Tools for Windows**, and dese
 
 If the Windows SDK is already installed, open **Settings**, navigate to **Apps & features**, select **Windows Software Development Kit**, and then select **Modify** to change the installation to add **Debugging Tools for Windows**.
 
--------------------
-
 ## Looking for the debugging tools for earlier versions of Windows?
 
 To download the debugger tools for previous versions of Windows, you need to download the Windows SDK for the version you are debugging from the
@@ -47,11 +44,7 @@ Learn more about WinDbg and other debuggers in [Debugging Tools for Windows (Win
 ## Looking for related downloads?
 
 - [Download the Windows Driver Kit (WDK)](../download-the-wdk.md)
-
-- [Windows Symbol Packages](debugger-download-symbols.md)  
-
+- [Windows Symbol Packages](debugger-download-symbols.md)
 - [Windows Hardware Lab Kit](/windows-hardware/test/hlk/windows-hardware-lab-kit)
-
 - [Download and install the Windows Assessment and Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install)
-
 - [Windows Insider - Windows Preview builds](https://insider.windows.com/)

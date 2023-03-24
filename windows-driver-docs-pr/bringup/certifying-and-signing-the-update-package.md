@@ -1,15 +1,14 @@
 ---
 title: Certify and sign the update package
 description: The firmware update is delivered as a driver package and must go through the same verification and signing processes as a regular driver package.
-ms.date: 10/26/2022
+ms.date: 03/22/2023
 ---
 
 # Certify and sign the update package
 
 Because the firmware update is delivered as a driver package, it will need to go through all of the same verification and signing processes as a regular driver package. The driver package will need to pass Windows Hardware Lab Kit (Windows HLK) tests, and will need to be submitted to the Partner Center for signing. Once signed, the driver package will be distributed back to the submitter.
 
-> [!NOTE]
-> Signing of the driver package is different from signing the UEFI firmware or device firmware itself. The signature on the driver package, delivered via security catalog, is used by Windows to verify the integrity of firmware.bin before handing it to the UEFI. Windows does not provide the security catalog to the firmware. The signature on the UEFI firmware or device firmware update is validated by the platform firmware, and is not checked by Windows. The IHV/OEM is responsible for ensuring the integrity and security of the firmware through signature verification, encryption or other means.
+Signing of the driver package is different from signing the UEFI firmware or device firmware itself. The signature on the driver package, delivered via security catalog, is used by Windows to verify the integrity of firmware.bin before handing it to the UEFI. Windows does not provide the security catalog to the firmware. The signature on the UEFI firmware or device firmware update is validated by the platform firmware, and is not checked by Windows. The IHV/OEM is responsible for ensuring the integrity and security of the firmware through signature verification, encryption or other means.
 
 ## Firmware update signing process and requirements for UEFI secure boot
 
@@ -53,8 +52,7 @@ Submitting the firmware update package to the Partner Center for signing:
 
 1. Create a firmware update package that includes the capsule, and test sign the firmware update package. For more information, see [Authoring an update driver package](authoring-an-update-driver-package.md).
 
-   > [!NOTE]
-   > Starting in Windows 8, Windows does not allow OEM Verisign-signed firmware update packages, even in test environments.
+   Starting in Windows 8, Windows does not allow OEM Verisign-signed firmware update packages, even in test environments.
 
 1. Update the firmware by installing the firmware update package.
 
@@ -62,8 +60,7 @@ Submitting the firmware update package to the Partner Center for signing:
 
 1. Submit the HLK logs and the driver to the Partner Center for signature.
 
-> [!NOTE]
-> While submitting the firmware update driver package, make sure to select Windows 8 or later as the applicable OS. If you choose any down-level OS, then the Partner Center will sign the catalog in the driver package with SHA1 algorithm. Starting in Windows 8, all firmware update driver packages must be SHA256 signed.
+While submitting the firmware update driver package, make sure to select Windows 8 or later as the applicable OS. If you choose any down-level OS, then the Partner Center will sign the catalog in the driver package with SHA1 algorithm. Starting in Windows 8, all firmware update driver packages must be SHA256 signed.
 
 ## Related articles
 

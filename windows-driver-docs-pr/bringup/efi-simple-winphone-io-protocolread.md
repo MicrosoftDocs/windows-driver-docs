@@ -1,7 +1,7 @@
 ---
 title: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Read
 description: The Read function reads data from the device.
-ms.date: 02/24/2023
+ms.date: 03/23/2023
 ms.topic: reference
 ---
 
