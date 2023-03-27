@@ -1,3 +1,9 @@
+---
+title: Removing Co-installers from Driver Packages
+description: This page addresses common reasons for co-installers to be present in a driver package, and mechanisms to perform the same task without a co-installer.
+ms.date: 03/27/2023
+---
+
 # Removing Co-installers from Driver Packages
 Driver packages containing a co-installer will no longer be signed by Microsft, although most functionality can be accomplished in other ways. This page addresses common reasons for co-installers to be present in a driver package, and mechanisms to perform the same task without a co-installer.
 
@@ -7,7 +13,7 @@ The WDF co-installer and WinUsb co-installer are not required on any Win10+ devi
 [WinUsb driver package guidance](../usbcon/winusb-installation.md)
 
 ## Showing UI to the user
-Rather than launching an application during an installation, the application should be installed using an [AddSoftware](../install/inf-addsoftware-directive) directive in the [DDInstall.Software](../install/inf-ddinstall-software-section) section of the driver package INF. For additional details, see [Installing Associated Software](./removing-coinstallers.md#installing-associated-software) below.
+Rather than launching an application during an installation, the application should be installed using an [AddSoftware](../install/inf-addsoftware-directive.md) directive in the [DDInstall.Software](../install/inf-ddinstall-software-section) section of the driver package INF. For additional details, see [Installing Associated Software](#installing-associated-software) below.
 
 ## Setting device friendly names
 ### INF File
@@ -22,13 +28,14 @@ HKR,,FriendlyName,, "Device Friendly Name"
 
 ### Runtime
 The friendly name can be set by the driver during the start IRP or the PrepareHardware phase by setting the DEVPKEY_Device_FriendlyName property with one of the following APIs:  
-[IoSetDevicePropertyData](../drivers/ddi/wdm/nf-wdm-iosetdevicepropertydata.md)  
-[WdfAssignProperty](../ddi/wdfdevice/nf-wdfdevice-wdfdeviceassignproperty.md)
+
+[IoSetDevicePropertyData](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdevicepropertydata)  
+[WdfAssignProperty](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassignproperty)
 
 ## Other device settings/configurations:
 When possible, the driver can change the device settings and configuration within the driver Start IRP or the PrepareHardware phase. When modifying state at runtime, the driver should follow the [driver package isolation requirements](./driver-isolation.md). These requirements contain the guidance on driver configuration and state layout and help future-proof the driver by making it more resilient to external changes, easier to update, and more straightforward to install.
   
-For settings and configuration that cannot be set within the driver itself, a driver package may also include user-mode runtime components that alter the settings and configuration. This can be a user-facing app or a Win32 service that updates the configuration. If a persistent component such as a service is used, ensure that its functionality is necessary and cannot be performed in a less resource-intensive manner, such as within a driver package INF or within the driver itself. Great care should be taken to ensure that any service is only running when the relevant devices are connected (see [Service Triggers](../../windows/win32/services/service-trigger-events.md), [Win32 services interacting with devices](../install/best-practices-win32services-interacting-with-devices.md), and [Registering for device interface notifications](../drivers/install/registering-for-notification-of-device-interface-arrival-and-device-removal.md)), and the service meets the latest requirements (for instance, passing [API Validator](./validating-windows-drivers.md#apivalidator)).
+For settings and configuration that cannot be set within the driver itself, a driver package may also include user-mode runtime components that alter the settings and configuration. This can be a user-facing app or a Win32 service that updates the configuration. If a persistent component such as a service is used, ensure that its functionality is necessary and cannot be performed in a less resource-intensive manner, such as within a driver package INF or within the driver itself. Great care should be taken to ensure that any service is only running when the relevant devices are connected (see [Service Triggers](/windows/win32/services/service-trigger-events), [Win32 services interacting with devices](../install/best-practices-win32services-interacting-with-devices.md), and [Registering for device interface notifications](../install/registering-for-notification-of-device-interface-arrival-and-device-removal.md)), and the service meets the latest requirements (for instance, passing [API Validator](./validating-windows-drivers.md#apivalidator)).
 
 ## Installing Associated Software
 The 'Componentized' portion of the [DCH driver requirements](../develop/dch-principles-best-practices.md) introduced a concept called the SoftwareComponent, which is a mechanism to decouple the install of a device driver from it associated software. When a software component is created by the INF, it will automatically create a child device that maps to the software component. This child device will exist for the purpose of installing the software associated to the parent device. This software can be installed and updated independently of the main device and driver.
