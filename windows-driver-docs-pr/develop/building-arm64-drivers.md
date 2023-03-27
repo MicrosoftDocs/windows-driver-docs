@@ -15,9 +15,13 @@ Windows 10 can run on machines that are powered by Arm64 processors.  However, b
 ![Selecting Desktop development with C++ from Windows options on Workloads tile.](images/VS-workloads.png)
 
 2. On the **Individual Components** tab, select the following options:
-    *  **Visual C++ compilers and libraries for Arm**
-    *  **Visual C++ compilers and libraries for Arm64**  
-![Selecting Arm-specific components to install.](images/VS-individual-components.png)
+
+    * MSVC v142 - VS 2019 C++ ARM build tools (latest)
+    * MSVC v142 - VS 2019 C++ ARM64 build tools (latest)
+    * C++ ATL for latest v142 build tools (ARM)
+    * C++ ATL for latest v142 build tools (ARM64)
+    * C++ MFC for latest v142 build tools (ARM)
+    * C++ MFC for latest v142 build tools (ARM64)
 
 3.	Install and restart Visual Studio.
 4.  Download the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).  Ensure that you have SDK version 16299 (Windows 10, version 1709) or later.
