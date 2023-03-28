@@ -1,7 +1,7 @@
 ---
 title: About item properties
 description: About item properties
-ms.date: 07/06/2020
+ms.date: 03/27/2023
 ---
 
 # About item properties
@@ -12,5 +12,4 @@ Drivers specify the properties they support and define the initial values of tho
 
 Certain properties are mandatory for some device types. For example, a device with an automatic document feeder (ADF) must support the ADF properties.
 
-> [!NOTE]
-> If you are more familiar with TWAIN than you are with WIA, it may be helpful to know that WIA properties are synonymous with TWAIN capabilities.
+If you are more familiar with TWAIN than you are with WIA, it may be helpful to know that WIA properties are synonymous with TWAIN capabilities.

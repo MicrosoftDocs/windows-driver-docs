@@ -9,11 +9,10 @@ api_name:
 - wscn AutoExposure
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 03/27/2023
 ---
 
 # AutoExposure element
-
 
 The required **AutoExposure** element specifies that the WSD Scan Service should automatically determine the exposure settings for the document.
 
@@ -35,27 +34,13 @@ Required. A Boolean value that must be 0, false, 1, or true.**falsetrue**
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="exposure.md" data-raw-source="[&lt;strong&gt;Exposure&lt;/strong&gt;](exposure.md)"><strong>Exposure</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**Exposure**](exposure.md) |
 
 ## Remarks
 
@@ -65,15 +50,4 @@ When the value is 0 or **false**, the device should use the default settings for
 
 ## See also
 
-
 [**Exposure**](exposure.md)
-
- 
-
- 
-
-
-
-
-
-

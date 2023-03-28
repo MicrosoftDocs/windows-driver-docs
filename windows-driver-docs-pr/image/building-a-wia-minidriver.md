@@ -1,80 +1,32 @@
 ---
-title: Building a WIA Minidriver
-description: Building a WIA Minidriver
-ms.date: 04/20/2017
+title: Building a WIA minidriver
+description: Building a WIA minidriver
+ms.date: 03/27/2023
 ---
 
-# Building a WIA Minidriver
-
-
-
-
+# Building a WIA minidriver
 
 The following header files and library files are required by all WIA minidrivers.
 
-### Header Files
+## Header files
 
 All WIA minidrivers must include the header files that are shown in the following table.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Header File</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><em>sti.h</em></p></td>
-<td><p>Defines the STI interfaces, structures, and event GUIDs that WIA minidrivers can use.</p></td>
-</tr>
-<tr class="even">
-<td><p><em>stiusd.h</em></p></td>
-<td><p>Defines the <a href="/windows-hardware/drivers/ddi/_image/index" data-raw-source="[IStiUSD](/windows-hardware/drivers/ddi/_image/index)">IStiUSD</a> interface that all WIA minidrivers must implement.</p></td>
-</tr>
-<tr class="odd">
-<td><p><em>wiamindr.h</em></p></td>
-<td><p>Defines the <a href="/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv" data-raw-source="[IWiaMiniDrv](/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv)">IWiaMiniDrv</a> interface that all WIA minidrivers must implement. Other interfaces used by the WIA minidriver are defined here as well.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Header file | Description |
+|--|--|
+| *sti.h* | Defines the STI interfaces, structures, and event GUIDs that WIA minidrivers can use. |
+| *stiusd.h* | Defines the [IStiUSD](/windows-hardware/drivers/ddi/_image/index) interface that all WIA minidrivers must implement. |
+| *wiamindr.h* | Defines the [IWiaMiniDrv](/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv) interface that all WIA minidrivers must implement. Other interfaces used by the WIA minidriver are defined here as well. |
 
 WIA minidrivers may require additional header files. The headers that are required depend on the device type and the functionality that is implemented. These requirements are noted in the reference section.
 
-### Library Files
+## Library files
 
 WIA uses the library files that are shown in the following table. All minidrivers require these libraries.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Library File</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><em>wiaguid.lib</em></p></td>
-<td><p>Exports class identifiers (CLSIDs) and interface identifiers (IIDs).</p></td>
-</tr>
-<tr class="even">
-<td><p><em>wiaservc.lib</em></p></td>
-<td><p>Exports the WIA service helper functions.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Library file | Description |
+|--|--|
+| *wiaguid.lib* | Exports class identifiers (CLSIDs) and interface identifiers (IIDs). |
+| *wiaservc.lib* | Exports the WIA service helper functions. |
 
 In your build environment, the WDK *Include* and *Lib* directories should be the first directories in the search path. This ensures that you are using the most recent versions of headers and library files.
-

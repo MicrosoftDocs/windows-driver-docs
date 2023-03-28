@@ -1,30 +1,26 @@
 ---
-title: Changing the WIA Item Tree Structure
-description: Changing the WIA Item Tree Structure
-ms.date: 04/20/2017
+title: Change the WIA item tree structure
+description: Change the WIA item tree structure
+ms.date: 03/28/2023
 ---
 
-# Changing the WIA Item Tree Structure
-
-
-
-
+# Change the WIA item tree structure
 
 A WIA minidriver has the ability to change the WIA item tree structure at any time. When the minidriver makes a change to the WIA item tree, the minidriver must notify the WIA service. The WIA service then notifies all connected WIA applications. After the notification is received, the WIA application must enumerate the WIA item tree to determine the result of any changes.
 
 A minidriver uses the WIA service utility function, [**wiasQueueEvent**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiasqueueevent), to communicate changes in the tree structure to the WIA service. A WIA minidriver can queue only those events that were reported in [**IWiaMiniDrv::drvGetCapabilities**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetcapabilities). For more information about reporting WIA events, see [Event Reporting](event-reporting.md).
 
-### Explanation of the IWiaMiniDrv::drvDeleteItem Implementation
+## Explanation of the IWiaMiniDrv::drvDeleteItem Implementation
 
 The WIA service calls the [**IWiaMiniDrv::drvDeleteItem**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvdeleteitem) method when a WIA application calls the **IWiaItem::DeleteItem** method (described in the Microsoft Windows SDK documentation) to delete a WIA item.
 
 The WIA service verifies the following before calling this method:
 
--   The item is not a root item.
+- The item is not a root item.
 
--   The item is has no children.
+- The item is has no children.
 
--   The access rights of the item allow deletion.
+- The access rights of the item allow deletion.
 
 Because the WIA service verifies these criteria, it is not necessary for the WIA driver to do so as well.
 
@@ -95,6 +91,3 @@ HRESULT _stdcall CWIADevice::drvDeleteItem(BYTE *pWiasContext,
     return hr;
 }
 ```
-
- 
-

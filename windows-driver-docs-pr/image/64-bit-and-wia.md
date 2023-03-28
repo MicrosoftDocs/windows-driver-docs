@@ -1,7 +1,7 @@
 ---
 title: 64-bit and WIA
 description: Provides information about writing WIA drivers for the Microsoft Windows 64-Bit Edition for Extended Processors family of operating systems.
-ms.date: 03/21/2022
+ms.date: 03/27/2023
 ---
 
 # 64-bit and WIA

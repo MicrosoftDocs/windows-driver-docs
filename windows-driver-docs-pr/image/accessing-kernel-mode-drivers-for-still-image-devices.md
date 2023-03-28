@@ -1,14 +1,10 @@
 ---
-title: Accessing Kernel-Mode Drivers for Still Image Devices
-description: Accessing Kernel-Mode Drivers for Still Image Devices
-ms.date: 04/20/2017
+title: Access Kernel-Mode Drivers for Still Image Devices
+description: Access Kernel-Mode Drivers for Still Image Devices
+ms.date: 03/27/2023
 ---
 
-# Accessing Kernel-Mode Drivers for Still Image Devices
-
-
-
-
+# Access Kernel-Mode Drivers for Still Image Devices
 
 Microsoft provides WDM-based kernel-mode drivers to support still image devices connected to SCSI and USB buses. Both drivers support Plug and Play devices and provide services for adding, removing, starting, stopping, and creating registry entries for Plug and Play devices. Additionally, both drivers provide suspend and resume operations for devices that support power management.
 
@@ -19,6 +15,3 @@ Before calling **ReadFile**, **Writefile** or [**DeviceIoControl**](/windows/win
 [SCSI Driver](scsi-driver.md)
 
 [USB Driver](usb-driver.md)
-
- 
-

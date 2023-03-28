@@ -9,11 +9,10 @@ api_name:
 - wscn ClientDisplayName
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 03/28/2023
 ---
 
 # ClientDisplayName element
-
 
 The required **ClientDisplayName** element specifies the string that the scanner should display in its user interface.
 
@@ -35,27 +34,13 @@ Required. Any valid character string.
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="scandestination.md" data-raw-source="[&lt;strong&gt;ScanDestination&lt;/strong&gt;](scandestination.md)"><strong>ScanDestination</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ScanDestination**](scandestination.md) |
 
 ## Remarks
 
@@ -63,17 +48,6 @@ The displayed name enables a user to select the requesting client as a scan dest
 
 ## See also
 
-
 [**ScanAvailableEvent**](scanavailableevent.md)
 
 [**ScanDestination**](scandestination.md)
-
- 
-
- 
-
-
-
-
-
-

@@ -1,24 +1,15 @@
 ---
-title: Building, Troubleshooting and Debugging WIA Minidrivers
-description: Building, Troubleshooting and Debugging WIA Minidrivers
-ms.date: 01/24/2018
+title: Building, troubleshooting and debugging WIA minidrivers
+description: Building, troubleshooting and debugging WIA minidrivers
+ms.date: 03/27/2023
 ---
 
-# Building, Troubleshooting and Debugging WIA Minidrivers
-
+# Building, troubleshooting and debugging WIA minidrivers
 
 This section discusses the basic build environment needed for WIA driver development, WIA minidriver troubleshooting, and WIA minidriver debugging. The following topics are covered:
 
-[Setting Up the WIA Build Environment](setting-up-the-wia-build-environment.md)
+[Setting up the WIA build environment](setting-up-the-wia-build-environment.md)
 
-[WIA Minidriver Troubleshooting](wia-minidriver-troubleshooting.md)
+[WIA Minidriver troubleshooting](wia-minidriver-troubleshooting.md)
 
-[WIA Minidriver Debugging](wia-minidriver-debugging.md)
-
- 
-
- 
-
-
-
-
+[WIA minidriver debugging](wia-minidriver-debugging.md)

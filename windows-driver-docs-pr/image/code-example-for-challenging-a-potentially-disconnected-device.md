@@ -1,13 +1,13 @@
 ---
-title: Code Example for Challenging a Potentially Disconnected Device
-description: Code Example for Challenging a Potentially Disconnected Device
-ms.date: 04/20/2017
+title: Code example for challenging a potentially disconnected device
+description: Code example for challenging a potentially disconnected device
+ms.date: 03/28/2023
 ---
 
-# Code Example for Challenging a Potentially Disconnected Device
+# Code example for challenging a potentially disconnected device
 
-> [!IMPORTANT]  
-> WSD Challenger functionality has been deprecated and all WSD Challenger-related documentation will be removed in 2018.
+> [!IMPORTANT]
+> WSD Challenger functionality has been deprecated and all WSD Challenger-related documentation will be archived to previous versions documentation.
 
 The following code example shows a call to the **RegisterDeviceToChallenge** function (which is listed in the code example in [Sample Code for Implementing Helper Methods](code-example-for-implementing-helper-methods.md)) to challenge a potentially disconnected device.
 
@@ -50,11 +50,3 @@ if (SUCCEEDED(hr))
     }
 }
 ```
-
- 
-
- 
-
-
-
-

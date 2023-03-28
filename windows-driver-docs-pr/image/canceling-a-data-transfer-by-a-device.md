@@ -1,21 +1,9 @@
 ---
-title: Canceling a Data Transfer by a Device
-description: Canceling a Data Transfer by a Device
-ms.date: 04/20/2017
+title: Cancel a data transfer by a device
+description: Cancel a data transfer by a device
+ms.date: 03/28/2023
 ---
 
-# Canceling a Data Transfer by a Device
-
-
-
-
+# Cancel a data transfer by a device
 
 In the USB Still Image Capture Device Definition (SICDD), the device is allowed to cancel an operation at any time by returning less data than the host is expecting.
-
- 
-
- 
-
-
-
-

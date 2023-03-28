@@ -1,14 +1,10 @@
 ---
-title: Calling Order for Minidriver Functions
-description: Calling Order for Minidriver Functions
-ms.date: 04/20/2017
+title: Call order for minidriver functions
+description: Call order for minidriver functions
+ms.date: 03/27/2023
 ---
 
-# Calling Order for Minidriver Functions
-
-
-
-
+# Call order for minidriver functions
 
 When a minidriver is started, it calls some of the older STI entry points, such as [**IStiUSD::Initialize**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-initialize), and [**IStiUSD::GetStatus**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-getstatus). As soon as the first application attempts to communicate with the device, the WIA service calls [**IWiaMiniDrv::drvInitializeWia**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvinitializewia). It is in this function that the minidriver should construct the item tree.
 
@@ -21,6 +17,3 @@ To transfer data, the WIA service calls [**IWiaMiniDrv::drvLockWiaDevice**](/win
 For cameras, if an application wants to display thumbnails for the images, the WIA service calls [**IWiaMiniDrv::drvReadItemProperties**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvreaditemproperties) on each image. The minidriver should read the thumbnail at that point and cache it in the driver item context. It is important to cache the thumbnail, because multiple applications might ask for the thumbnail, resulting in multiple calls to **IWiaMiniDrv::drvReadItemProperties**. If the minidriver reads the thumbnail each time an application asks for it, performance suffers.
 
 One other special consideration for cameras is root item properties that affect settings on the camera (shutter speed, for example). When the application changes these properties, the WIA service calls [**IWiaMiniDrv::drvValidateItemProperties**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvvalidateitemproperties). The minidriver can communicate with the camera, if necessary, to validate the property settings. This function, however, is not the best place to change settings on the camera, because another application also can change the properties. The minidriver should update all of the camera settings from the root item properties when the [**IWiaMiniDrv::drvDeviceCommand**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvdevicecommand) function is called to capture a new image.
-
- 
-

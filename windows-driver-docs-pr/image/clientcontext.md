@@ -9,11 +9,10 @@ api_name:
 - wscn ClientDisplayName
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 03/28/2023
 ---
 
 # ClientContext element
-
 
 The required **ClientContext** element specifies a client-specific string.
 
@@ -35,33 +34,15 @@ Required. Any valid character string.
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="destinationresponse.md" data-raw-source="[&lt;strong&gt;DestinationResponse&lt;/strong&gt;](destinationresponse.md)"><strong>DestinationResponse</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="scanavailableevent.md" data-raw-source="[&lt;strong&gt;ScanAvailableEvent&lt;/strong&gt;](scanavailableevent.md)"><strong>ScanAvailableEvent</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="scandestination.md" data-raw-source="[&lt;strong&gt;ScanDestination&lt;/strong&gt;](scandestination.md)"><strong>ScanDestination</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DestinationResponse**](destinationresponse.md) |
+| [**ScanAvailableEvent**](scanavailableevent.md) |
+| [**ScanDestination**](scandestination.md) |
 
 ## Remarks
 
@@ -75,19 +56,8 @@ The **&lt;wse:Subscribe&gt;** and **&lt;wse:SubscribeResponse&gt;** elements are
 
 ## See also
 
-
 [**DestinationResponse**](destinationresponse.md)
 
 [**ScanAvailableEvent**](scanavailableevent.md)
 
 [**ScanDestination**](scandestination.md)
-
- 
-
- 
-
-
-
-
-
-

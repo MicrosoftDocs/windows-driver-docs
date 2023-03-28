@@ -9,11 +9,10 @@ api_name:
 - wscn CancelJobRequest
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 03/28/2023
 ---
 
 # CancelJobRequest element
-
 
 The required **CancelJobRequest** operation enables a client to cancel a scan job.
 
@@ -35,25 +34,11 @@ None
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="jobid.md" data-raw-source="[&lt;strong&gt;JobId&lt;/strong&gt;](jobid.md)"><strong>JobId</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**JobId**](jobid.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 
@@ -71,21 +56,10 @@ This operation can return all of the [**common WSD Scan Service operation error 
 
 **CancelJobRequest** can also return the following error code:
 
--   **ClientErrorJobIdNotFound**
+- **ClientErrorJobIdNotFound**
 
 ## See also
-
 
 [**CancelJobResponse**](canceljobresponse.md)
 
 [**JobId**](jobid.md)
-
- 
-
- 
-
-
-
-
-
-
