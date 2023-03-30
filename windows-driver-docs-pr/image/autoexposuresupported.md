@@ -9,11 +9,10 @@ api_name:
 - wscn AutoExposureSupported
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 03/27/2023
 ---
 
 # AutoExposureSupported element
-
 
 The required **AutoExposureSupported** element specifies whether the scan device supports automatic adjustment of the various exposure settings.
 
@@ -35,27 +34,13 @@ Required. A Boolean value that must be 0, 1, false, or true.**falsetrue**
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="devicesettings.md" data-raw-source="[&lt;strong&gt;DeviceSettings&lt;/strong&gt;](devicesettings.md)"><strong>DeviceSettings</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DeviceSettings**](devicesettings.md) |
 
 ## Remarks
 
@@ -67,17 +52,6 @@ You cannot extend the allowed values for this element.
 
 ## See also
 
-
 [**DeviceSettings**](devicesettings.md)
 
 [**Exposure**](exposure.md)
-
- 
-
- 
-
-
-
-
-
-

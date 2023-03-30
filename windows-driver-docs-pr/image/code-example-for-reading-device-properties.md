@@ -1,11 +1,10 @@
 ---
-title: Code Example for Reading Device Properties
-description: Code Example for Reading Device Properties
-ms.date: 04/20/2017
+title: Code example for reading device properties
+description: Code example for reading device properties
+ms.date: 03/28/2023
 ---
 
-# Code Example for Reading Device Properties
-
+# Code example for reading device properties
 
 The following code example shows how to read device properties from a Property Store. For an example of how to open a Property Store for the current Function Instance object, see [Code Example for Opening a Property Store](code-example-for-opening-a-property-store.md).
 
@@ -23,7 +22,7 @@ The following code example shows how to read device properties from a Property S
 *                            (if not specified a new property store
 *                            Is opened and closed for each call)
 *    pPropertyKey          - property key (for example, PKEY_PNPX_FirmwareVersion)
-*    pbstrPropertyValue    - Returns the property value; this valuemust be 
+*    pbstrPropertyValue    - Returns the property value; this value must be 
 *                            freed by caller using SysFreeString
 *
 * Return Value:
@@ -125,11 +124,3 @@ CWSDDevice::ReadDeviceProperty(
     return hr;
 }
 ```
-
- 
-
- 
-
-
-
-

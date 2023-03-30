@@ -1,11 +1,10 @@
 ---
-title: Code Example for Opening a Property Store
-description: Code Example for Opening a Property Store
-ms.date: 04/20/2017
+title: Code example for opening a Property Store
+description: Code example for opening a Property Store
+ms.date: 03/28/2023
 ---
 
-# Code Example for Opening a Property Store
-
+# Code example for opening a Property Store
 
 The following code example shows how to open a Property Store for the current Function Instance object. The procedure for obtaining the current Function Instance object is described in [Obtaining a Function Instance Object](obtaining-a-function-instance-object.md).
 
@@ -61,11 +60,3 @@ CWSDDevice::OpenPropertyStore(
     return hr;
 }
 ```
-
- 
-
- 
-
-
-
-

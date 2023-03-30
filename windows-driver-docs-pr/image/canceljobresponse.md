@@ -9,11 +9,10 @@ api_name:
 - wscn CancelJobResponse /
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 03/28/2023
 ---
 
 # CancelJobResponse element
-
 
 The required **CancelJobResponse** operation element acknowledges a client's job cancelation request.
 
@@ -34,11 +33,9 @@ None
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
-
 
 There are no parent elements.
 
@@ -50,15 +47,4 @@ The WSD Scan Service sends a **CancelJobResponse** operation to a client when it
 
 ## See also
 
-
 [**CancelJobRequest**](canceljobrequest.md)
-
- 
-
- 
-
-
-
-
-
-

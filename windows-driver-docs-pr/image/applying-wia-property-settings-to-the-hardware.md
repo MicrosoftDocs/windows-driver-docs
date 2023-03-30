@@ -1,18 +1,14 @@
 ---
-title: Applying WIA Property Settings to the Hardware
-description: Applying WIA Property Settings to the Hardware
-ms.date: 04/20/2017
+title: Apply WIA Property Settings to the Hardware
+description: Apply WIA Property Settings to the Hardware
+ms.date: 03/27/2023
 ---
 
-# Applying WIA Property Settings to the Hardware
-
-
-
-
+# Apply WIA Property Settings to the Hardware
 
 When a WIA application initiates a data transfer, the WIA service gives the WIA minidriver the opportunity to apply current WIA property settings, and to apply any device-specific settings to the hardware. The WIA service then calls the [**IWiaMiniDrv::drvWriteItemProperties**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvwriteitemproperties) method before it calls the [**IWiaMiniDrv::drvAcquireItemData**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) method. The latter method is called only when a WIA application initiates a data transfer. The WIA minidriver should use the WIA service functions to read the properties in its own driver item tree.
 
-### <a href="" id="implementing-iwiaminidrv-drvwriteitemproperties"></a>Implementing IWiaMiniDrv::drvWriteItemProperties
+## Implement IWiaMiniDrv::drvWriteItemProperties
 
 The WIA service calls the **IWiaMiniDrv::drvWriteItemProperties** method after the client requests a data transfer. The WIA service calls this method before it makes a call to [**IWiaMiniDrv::drvAcquireItemData**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata). The WIA minidriver should commit any settings it needs to the hardware before returning from this method.
 
@@ -93,6 +89,3 @@ HRESULT _stdcall CWIADevice::drvWriteItemProperties(
   return hr;
 }
 ```
-
- 
-

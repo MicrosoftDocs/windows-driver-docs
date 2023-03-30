@@ -1,13 +1,13 @@
 ---
-title: Code Example for Implementing Helper Methods
-description: Code Example for Implementing Helper Methods
-ms.date: 04/20/2017
+title: Code example for implementing helper methods
+description: Code example for implementing helper methods
+ms.date: 03/28/2023
 ---
 
-# Code Example for Implementing Helper Methods
+# Code example for implementing helper methods
 
-> [!IMPORTANT]  
-> WSD Challenger functionality has been deprecated and all WSD Challenger-related documentation will be removed in 2018.
+> [!IMPORTANT]
+> WSD Challenger functionality has been deprecated and all WSD Challenger-related documentation will be archived to previous versions documentation.
 
 The following code example shows the implementation of the helper methods that are used to initialize the WSD Challenge interface and register the device challenge.
 
@@ -257,11 +257,3 @@ CWSDDevice::RegisterDeviceToChallenge()
     return hr;
 }
 ```
-
- 
-
- 
-
-
-
-

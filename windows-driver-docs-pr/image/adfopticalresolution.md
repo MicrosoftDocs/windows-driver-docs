@@ -9,11 +9,10 @@ api_name:
 - wscn ADFOpticalResolution
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 03/27/2023
 ---
 
 # ADFOpticalResolution element
-
 
 The required **ADFOpticalResolution** element specifies the maximum optical resolution at which the front or back side of the automatic document feeder (ADF) can scan.
 
@@ -31,47 +30,17 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="height.md" data-raw-source="[&lt;strong&gt;Height&lt;/strong&gt;](height.md)"><strong>Height</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="width.md" data-raw-source="[&lt;strong&gt;Width&lt;/strong&gt;](width.md)"><strong>Width</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**Height**](height.md) |
+| [**Width**](width.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="adfback.md" data-raw-source="[&lt;strong&gt;ADFBack&lt;/strong&gt;](adfback.md)"><strong>ADFBack</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="adffront.md" data-raw-source="[&lt;strong&gt;ADFFront&lt;/strong&gt;](adffront.md)"><strong>ADFFront</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ADFBack**](adfback.md) |
+| [**ADFFront**](adffront.md) |
 
 ## Remarks
 
@@ -81,7 +50,6 @@ If the parent element of the **ADFOpticalResolution** element is [**ADFFront**](
 
 ## See also
 
-
 [**ADFBack**](adfback.md)
 
 [**ADFFront**](adffront.md)
@@ -89,13 +57,3 @@ If the parent element of the **ADFOpticalResolution** element is [**ADFFront**](
 [**Height**](height.md)
 
 [**Width**](width.md)
-
- 
-
- 
-
-
-
-
-
-

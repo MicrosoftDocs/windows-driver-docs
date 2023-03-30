@@ -1,11 +1,10 @@
 ---
-title: ADF Configuration Elements
-description: ADF Configuration Elements
-ms.date: 11/28/2017
+title: ADF configuration elements
+description: This section describes the automatic document feeder (ADF) configuration elements of the Web Services for Devices (WSD) Scan Service schema.
+ms.date: 03/27/2023
 ---
 
-# ADF Configuration Elements
-
+# ADF configuration elements
 
 This section describes the automatic document feeder (ADF) configuration elements of the Web Services for Devices (WSD) Scan Service schema. The ADF configuration elements describe the capabilities of the ADF that is attached to the scanner.
 
@@ -28,12 +27,3 @@ The schema contains the following ADF configuration elements:
 [**ADFResolutions**](adfresolutions.md)
 
 [**ADFSupportsDuplex**](adfsupportsduplex.md)
-
- 
-
- 
-
-
-
-
-

@@ -9,11 +9,10 @@ api_name:
 - wscn ActiveConditions
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 03/27/2023
 ---
 
 # ActiveConditions element
-
 
 The required **ActiveConditions** element is a collection of all of the currently active conditions or errors on the scan device.
 
@@ -31,41 +30,15 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="devicecondition.md" data-raw-source="[&lt;strong&gt;DeviceCondition&lt;/strong&gt;](devicecondition.md)"><strong>DeviceCondition</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DeviceCondition**](devicecondition.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="scannerstatus.md" data-raw-source="[&lt;strong&gt;ScannerStatus&lt;/strong&gt;](scannerstatus.md)"><strong>ScannerStatus</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ScannerStatus**](scannerstatus.md) |
 
 ## Remarks
 
@@ -73,17 +46,6 @@ The **ActiveConditions** element is a list of [**DeviceCondition**](devicecondit
 
 ## See also
 
-
 [**DeviceCondition**](devicecondition.md)
 
 [**ScannerStatus**](scannerstatus.md)
-
- 
-
- 
-
-
-
-
-
-

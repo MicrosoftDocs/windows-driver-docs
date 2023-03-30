@@ -9,11 +9,10 @@ api_name:
 - wscn ClearTime
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 03/28/2023
 ---
 
 # ClearTime element
-
 
 The required **ClearTime** element specifies the time at which a condition was cleared.
 
@@ -35,27 +34,13 @@ Required. Any valid value for the dateTime type. For more information about date
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="conditionhistoryentry.md" data-raw-source="[&lt;strong&gt;ConditionHistoryEntry&lt;/strong&gt;](conditionhistoryentry.md)"><strong>ConditionHistoryEntry</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ConditionHistoryEntry**](conditionhistoryentry.md) |
 
 ## Remarks
 
@@ -63,15 +48,4 @@ The specified time is according to the internal clock of the scanner.
 
 ## See also
 
-
 [**ConditionHistoryEntry**](conditionhistoryentry.md)
-
- 
-
- 
-
-
-
-
-
-
