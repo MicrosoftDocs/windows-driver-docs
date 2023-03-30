@@ -759,7 +759,7 @@
             - name: RemoveInitiatorId Method
               href: msft-maskingset-removeinitiatorid.md
             - name: RemoveTargetPort Method
-              href: msft-maskingset-addtargetport.md
+              href: msft-maskingset-removetargetport.md
             - name: RemoveVirtualDisk Method
               href: msft-maskingset-removevirtualdisk.md
             - name: SetFriendlyName Method
@@ -951,7 +951,7 @@
             - name: GetSupportedSize method
               href: msft-storagepool-getsupportedsize.md
             - name: Optimize method
-              href: msft-storagepool-setfriendlyname.md
+              href: msft-storagepool-optimize.md
             - name: RemovePhysicalDisk Method
               href: removephysicaldisk-msft-storagepool.md
             - name: SetAttributes method
