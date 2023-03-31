@@ -41,11 +41,12 @@ by Richard McDougall, Jim Mauro and Brendan Gregg
 
 ## Providing feedback on Windows DTrace
 
-Use the feedback hub to request new features or to report any problems or bugs with Windows DTrace.
+Use Feedback Hub to request new features or to report any problems or bugs with Windows DTrace.
 
-1. Launch the feedback hub. Go to search, enter the word *feedback*, and then select **Feedback Hub**.
-2. Select either *Suggest a feature* or *Report a problem*.
-3. Provide a detailed, specific description of the issue or suggestion.
+1. Launch Feedback Hub. Go to search, enter the word *feedback*, and then select **Feedback Hub**.
+2. Provide a detailed, specific description of the issue or suggestion.
+3. Select either *Suggest a feature* or *Report a problem*.
+4. Choose the category Developer Platform > DTrace on Windows
 
 ## DTrace Windows Extensions
 
