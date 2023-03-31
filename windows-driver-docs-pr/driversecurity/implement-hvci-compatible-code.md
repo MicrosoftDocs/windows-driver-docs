@@ -1,14 +1,17 @@
 ---
-title: Implement HVCI compatible code
-description: Follow these steps to use to evaluate HVCI driver compatibility of your driver code.
+title: Implement memory integrity compatible code
+description: Follow these steps to use to evaluate memory integrity driver compatibility of your driver code.
 ms.date: 07/20/2022
 ---
 
-# Implement HVCI compatible code
+# Implement memory integrity compatible code
 
-This section describes how to implement Hypervisor-protected Code Integrity (HVCI) compatible code.
+This section describes how to implement memory integrity compatible code.
 
-To implement HVCI compatible code, make sure your driver code does the following:
+> [!NOTE]
+> Memory integrity is sometimes referred to as *hypervisor-protected code integrity (HVCI)* or *hypervisor enforced code integrity*, and was originally released as part of *Device Guard*. Device Guard is no longer used except to locate memory integrity and VBS settings in Group Policy or the Windows registry.
+
+To implement compatible code, make sure your driver code does the following:
 
 - Opts in to NX by default
 - Uses NX APIs/flags for memory allocation (NonPagedPoolNx)
@@ -76,14 +79,13 @@ The following list of DDIs that are not reserved for system use may be impacted:
 | [**WdfIoTargetAllocAndQueryTargetProperty**](/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetallocandquerytargetproperty)             |
 | [**WdfRegistryQueryMemory**](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistryquerymemory)                                             |
 
+## Use the code integrity tests in the HLK to test memory integrity driver compatibility
 
-## Use the code integrity tests in the HLK to test HVCI driver compatibility:
-
-For more information about the related system fundamentals security test, see [HyperVisor Code Integrity Readiness Test](/windows-hardware/test/hlk/testref/b972fc52-2468-4462-9799-6a1898808c86) and [Hypervisor-Protected Code Integrity (HVCI)](/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard).
+For more information about the related system fundamentals security test, see [HyperVisor Code Integrity Readiness Test](/windows-hardware/test/hlk/testref/b972fc52-2468-4462-9799-6a1898808c86) and [Memory integrity and VBS](/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard).
 
 For more information about the related device fundamentals test, see [Device.DevFund tests](/windows-hardware/test/hlk/testref/device-devfund-tests).
 
-Use the following table to interpret the output and determine what driver code changes are needed to fix the different types of HVCI incompatibilities.
+Use the following table to interpret the output and determine what driver code changes are needed to fix the different types of memory integrity incompatibilities.
 
 <table>
 <colgroup>

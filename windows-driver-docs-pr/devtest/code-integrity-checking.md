@@ -8,7 +8,12 @@ ms.date: 09/14/2017
 
 # Code integrity checking
 
-[Hypervisor-Protected Code Integrity](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) can use hardware technology and virtualization to isolate the Code Integrity (CI) decision-making function from the rest of the Windows operating system. When using virtualization-based security to isolate Code Integrity, the only way kernel memory can become executable is through a Code Integrity verification. This means that kernel memory pages can never be Writable and Executable (W+X) and executable code cannot be directly modified. The code integrity checks ensure compatibility of these code integrity rules, and detects the following violations:
+**Memory integrity** is a **virtualization-based security (VBS)** feature available in Windows 10, Windows 11, and Windows Server 2016 and later. Memory integrity and VBS improve the threat model of Windows and provide stronger protections against malware trying to exploit the Windows kernel. VBS uses the Windows hypervisor to create an isolated virtual environment that becomes the root of trust of the OS that assumes the kernel can be compromised. Memory integrity is a critical component that protects and hardens Windows by running kernel mode code integrity within the isolated virtual environment of VBS. Memory integrity also restricts kernel memory allocations that could be used to compromise the system, ensuring that kernel memory pages are only made executable after passing code integrity checks inside the secure runtime environment, and executable pages themselves are never writable.
+
+> [!NOTE]
+> Memory integrity is sometimes referred to as *hypervisor-protected code integrity (HVCI)* or *hypervisor enforced code integrity*, and was originally released as part of *Device Guard*. Device Guard is no longer used except to locate memory integrity and VBS settings in Group Policy or the Windows registry.
+
+The code integrity checks ensure compatibility with memory integrity's kernel memory usage requirements, and detects the following violations:
 
 <table>
   <tr>
@@ -85,4 +90,4 @@ You can activate code integrity checking for one or more drivers by using Driver
 
 ## Related topics
 
-[Implement HVCI compatibile code](../driversecurity/implement-hvci-compatible-code.md)
+[Implement memory integrity compatible code](../driversecurity/implement-hvci-compatible-code.md)
