@@ -17,4 +17,4 @@ ms.date: 03/22/2023
 
 [Hypervisor Code Integrity Readiness Test](/windows-hardware/test/hlk/testref/b972fc52-2468-4462-9799-6a1898808c86)
 
-[Driver compatibility with memory integrity and VBS](windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard)
+[Driver compatibility with memory integrity and VBS](/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard)
