@@ -8,12 +8,12 @@ ms.date: 03/31/2023
 
 WiFiCx allows you to build a driver once and use the resulting binary on multiple versions of Windows. Your driver can both run on future versions of Windows and  run on past versions, back to Windows 11, version 21H2.
 
-To run your driver on older versions of Windows you must:
+To run your driver on older versions of Windows, you must:
  
 1. Specify the minimum version required.
 1. Perform a runtime check before invoking an API or accessing a structure or field that may or may not be present.
 
-**Note:** This feature is optional and a driver should only enable it to build a driver that uses the latest WiFiCx functionality while remaining loadable on earlier versions of Windows that do not have the latest WiFiCx functionality.
+**Note:** This feature is optional. It should only be enabled for drivers that use the latest WiFiCx functionality while remaining loadable on earlier versions of Windows that don't have the latest WiFiCx functionality.
 
 
 ## WiFiCx version overview
@@ -35,7 +35,7 @@ C_DEFINES=$(C_DEFINES) -DRPC_NO_WINDOWS_H /DWIFI_MINIMUM_VERSION_REQUIRED=0
 
 ## Check if functionality is present
 
-Prior to every use of an API, structure, or member that may or may not be present, you must call one of the following macros, which are defined in WifiFuncEnum.h:
+Prior to every use of an API, structure, or member that may or may not be present, you must call one of the following macros. They're defined in WifiFuncEnum.h.
 
 ```cpp
 BOOLEAN
