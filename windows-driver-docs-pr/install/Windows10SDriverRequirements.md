@@ -20,7 +20,6 @@ To install on Windows 10 in S mode, driver packages must meet the following requ
 -   Drivers does not include any user interface components, apps, or settings.  Instead, use Universal applications from the Microsoft Store, for example:
     *  [Hardware Support Apps](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md)
     *  [UWP device apps](../devapps/meet-uwp-device-apps.md)
-    *  [Centennial Apps](https://developer.microsoft.com/windows/bridges/desktop)
 -   Driver and firmware servicing uses Windows Update and not an updater app.
 
 Finally, we recommend using a Universal Windows driver where possible.  For more info, see:

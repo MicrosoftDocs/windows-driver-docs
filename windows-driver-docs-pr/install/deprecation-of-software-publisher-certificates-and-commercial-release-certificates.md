@@ -133,7 +133,7 @@ For Windows 10, use either WHCP or [attestation signing](../dashboard/code-signi
 If you have challenges signing your driver with WHCP, please report the specifics using one of the following:
 
 * Use the Microsoft Collaborate portal, available through the [Microsoft Partner Center Dashboard](https://partner.microsoft.com/dashboard/collaborate), to create a feedback bug.
-* Go to [Windows hardware engineering support](https://developer.microsoft.com/windows/hardware/support), select the **Contact us** tab, and in the **Developer support topic** dropdown, select **HLK/HCK**. Then select **Submit an incident**.
+* Go to [Windows developer support](https://developer.microsoft.com/windows/support), select the **Contact us** tab, and in the **Technical support** box, next to **Driver Development and Testing/Certification**, select **Submit an incident**.
 
 ## Related information
 
