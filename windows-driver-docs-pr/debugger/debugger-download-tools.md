@@ -20,7 +20,7 @@ WinDbg Preview is a new version of WinDbg with more modern visuals, faster windo
 
 ## ![Small classic windbg preview logo.](images/windbg-classic-logo.png) Debugging Tools for Windows (WinDbg)
 
-Get Debugging Tools for Windows (WinDbg) from the SDK: [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk). Use the download link on the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) page, as the Debugging Tools for Windows are not available as part of Visual Studio.
+Get Debugging Tools for Windows (WinDbg) from the SDK: [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk). Use the download link on the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk) page, as the Debugging Tools for Windows are not available as part of Visual Studio.
 
 If you just need the Debugging Tools for Windows, and not the Windows Driver Kit (WDK) for Windows, you can install the debugging tools as a standalone component from the Windows Software Development Kit (SDK).
 
