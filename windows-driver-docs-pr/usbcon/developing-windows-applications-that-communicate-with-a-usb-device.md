@@ -28,7 +28,7 @@ If you install [Winusb.sys](winusb-installation.md), here are the programming mo
 
 - [UWP app for a USB device](writing-usb-device-companion-apps-for-microsoft-store.md)
 
-  Windows 8.1 provides the **[Windows.Devices.Usb](/uwp/api/Windows.Devices.Usb)** namespace that can't be used in earlier versions of Windows. For other Microsoft Store resources, see the [Universal Windows Platform documentation](/windows/uwp/).
+  Windows 8.1 provides the **[Windows.Devices.Usb](/uwp/api/Windows.Devices.Usb)** namespace, which can't be used in earlier versions of Windows. For other Microsoft Store resources, see the [Universal Windows Platform documentation](/windows/uwp/).
 
 - [Windows desktop app for a USB device](windows-desktop-app-for-a-usb-device.md)
 
