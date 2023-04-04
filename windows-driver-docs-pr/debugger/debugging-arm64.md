@@ -17,7 +17,7 @@ In rare cases where you need to debug system code – such as WOW64 or CHPE – 
 
 ## Getting Arm  Debugging Tools for Windows 
 
-You can get debugging tools for Arm64 by downloading the [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) (version 10.0.16299 or later).  During the installation, select the *Debugging Tools for Windows* box. 
+You can get debugging tools for Arm64 by downloading the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk/) (version 10.0.16299 or later).  During the installation, select the *Debugging Tools for Windows* box. 
 
 The debugging tools are located in the `Debuggers` folder in the kit installation directory.  The x86 tools are under `Debuggers\x86`, the ARM32 tools are under `Debuggers\Arm`, and the Arm64 tools are under `Debuggers\Arm64`. 
 

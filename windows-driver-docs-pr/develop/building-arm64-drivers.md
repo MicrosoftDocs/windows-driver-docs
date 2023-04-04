@@ -24,7 +24,7 @@ Windows 10 can run on machines that are powered by Arm64 processors.  However, b
     * C++ MFC for latest v142 build tools (ARM64)
 
 3.	Install and restart Visual Studio.
-4.  Download the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).  Ensure that you have SDK version 16299 (Windows 10, version 1709) or later.
+4.  Download the [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk).  Ensure that you have SDK version 16299 (Windows 10, version 1709) or later.
 5.	Download the [WDK](../download-the-wdk.md).  Ensure that you have WDK version 16299 or later.
 
 ## Building an Arm64 Driver with the WDK
