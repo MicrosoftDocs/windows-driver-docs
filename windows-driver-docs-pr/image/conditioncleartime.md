@@ -9,11 +9,10 @@ api_name:
 - wscn ConditionClearTime
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 03/29/2023
 ---
 
 # ConditionClearTime element
-
 
 The required **ConditionClearTime** element specifies the date and time at which a scan device condition was cleared.
 
@@ -35,39 +34,14 @@ Required. Any valid value for the dateTime type. For more information about date
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="deviceconditioncleared.md" data-raw-source="[&lt;strong&gt;DeviceConditionCleared&lt;/strong&gt;](deviceconditioncleared.md)"><strong>DeviceConditionCleared</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DeviceConditionCleared**](deviceconditioncleared.md) |
 
 ## See also
 
-
 [**DeviceConditionCleared**](deviceconditioncleared.md)
-
- 
-
- 
-
-
-
-
-
-

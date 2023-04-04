@@ -9,11 +9,10 @@ api_name:
 - wscn CompressionQualityFactorSupported
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 03/29/2023
 ---
 
 # CompressionQualityFactorSupported element
-
 
 The required **CompressionQualityFactorSupported** element specifies the range of compression quality factors that the scan device supports.
 
@@ -31,44 +30,16 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="maxvalue.md" data-raw-source="[&lt;strong&gt;MaxValue&lt;/strong&gt;](maxvalue.md)"><strong>MaxValue</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="minvalue.md" data-raw-source="[&lt;strong&gt;MinValue&lt;/strong&gt;](minvalue.md)"><strong>MinValue</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**MaxValue**](maxvalue.md) |
+| [**MinValue**](minvalue.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="devicesettings.md" data-raw-source="[&lt;strong&gt;DeviceSettings&lt;/strong&gt;](devicesettings.md)"><strong>DeviceSettings</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DeviceSettings**](devicesettings.md) |
 
 ## Remarks
 
@@ -80,19 +51,8 @@ The minimum and maximum compression quality factors that the scan device support
 
 ## See also
 
-
 [**DeviceSettings**](devicesettings.md)
 
 [**MaxValue**](maxvalue.md)
 
 [**MinValue**](minvalue.md)
-
- 
-
- 
-
-
-
-
-
-

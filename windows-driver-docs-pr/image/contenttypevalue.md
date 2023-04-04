@@ -9,7 +9,7 @@ api_name:
 - wscn ContentTypeValue
 api_type:
 - Schema
-ms.date: 09/27/2021
+ms.date: 03/29/2023
 ---
 
 # ContentTypeValue element
@@ -35,9 +35,9 @@ Required. One of the following values:
 | Term | Description |
 |--|--|
 | Auto | The device will automatically detect the original document type. |
-| Text | The original document is mainly composed of distinct text that contrasts strongly with the background. |
-| Photo | The original document is mainly composed of photographic images, where shades change gradually and edges are not distinct. |
-| Halftone | The original is mainly composed of halftoned images. |
+| Text | The original document is composed of distinct text that contrasts strongly with the background. |
+| Photo | The original document is composed of photographic images, where shades change gradually and edges aren't distinct. |
+| Halftone | The original is composed of halftoned images. |
 | Mixed | The original document is a multi-page document with characteristics of more than one specific document content type. |
 
 ## Child elements
