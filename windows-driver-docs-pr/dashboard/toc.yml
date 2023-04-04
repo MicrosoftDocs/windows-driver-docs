@@ -138,6 +138,8 @@
         href: pct-machine-endpoints-with-at-least-one-audio-crash.md
       - name: "Audio Reliability: Percentage of machine endpoints with at least one audio hang"
         href: pct-machine-endpoints-with-at-least-one-audio-hang.md
+      - name: "Percent of devices with at least one APO disablement in past 7 days"
+        href: pct-machines-with-at-least-one-APO-disablement-in-past-7-days.md
     - name: "Camera"
       items:
       - name: "Camera measures"
@@ -214,6 +216,8 @@
           href: pct-devices-winml-runtime-error.md
         - name: "PresentAT Netflix app SDRM machines hitting one or more media engine errors"
           href: presentat-netflix-app-sdrm-machines-hitting-one-or-more-media-engine-errors.md
+        - name: "Percent of devices with SWDRM playback that triggered the Catalog reload event"
+          href: pct-devices-with-SWDRM-playback-that-triggered-the-catalog-reload-event.md
       - name: "Ecosystem audience measures"
         items:
         - name: "Myriad of machines that had a stop error caused by a graphics driver crash (ecosystem)"
@@ -255,11 +259,6 @@
       - name: "Percentage of Wi-Fi sessions ending in a disconnection with more than 50% signal quality"
         href: pct-wi-fi-sessions-ending-in-unexpected-disconnect.md
     - name: "Experimental Measures"
-      items:
-      - name: "Graphics - Percent of devices with SWDRM playback that triggered the Catalog reload event"
-        href: pct-devices-with-SWDRM-playback-that-triggered-the-catalog-reload-event.md
-      - name: "Audio - Percent of devices with at least one APO disablement in past 7 days"
-        href: pct-machines-with-at-least-one-APO-disablement-in-past-7-days.md
   - name: "Appendix"
     href: measure-appendix.md
   - name: "Glossary"

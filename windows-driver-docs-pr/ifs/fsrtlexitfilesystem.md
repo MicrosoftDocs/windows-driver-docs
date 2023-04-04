@@ -42,7 +42,7 @@ Every successful call to [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md) mus
 
 Unlike local file systems and network redirectors, file system filter drivers should never disable delivery of normal kernel APCs (by calling [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md) or [**KeEnterCriticalRegion**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keentercriticalregion) or by raising to IRQL APC_LEVEL) across a call to [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
-The only time when a file system filter driver should disable normal kernel APCs is immediately before calling [**ExAcquireResourceExclusive**](../kernel/mmcreatemdl.md), [**ExAcquireResourceExclusiveLite**](/previous-versions/ff544351(v=vs.85)), [**ExAcquireResourceShared**](../kernel/mmcreatemdl.md), [**ExAcquireResourceSharedLite**](/previous-versions/ff544363(v=vs.85)), or [**ExAcquireSharedStarveExclusive**](/previous-versions/ff544367(v=vs.85)). After the filter driver calls [**ExReleaseResource**](../kernel/mmcreatemdl.md) or [**ExReleaseResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleaseresourcelite), it should immediately re-enable delivery of normal kernel APCs. As an alternative to [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md), minifilter drivers can use the [**FltAcquireResourceExclusive**](fltacquireresourceexclusive.md), [**FltAcquireResourceShared**](fltacquireresourceshared.md), and [**FltReleaseResource**](fltreleaseresource.md) routines, which properly handle APCs when acquiring and releasing a resource.
+The only time when a file system filter driver should disable normal kernel APCs is immediately before calling [**ExAcquireResourceExclusive**](../kernel/mmcreatemdl.md), [**ExAcquireResourceExclusiveLite**](/previous-versions/ff544351(v=vs.85)), [**ExAcquireResourceShared**](../kernel/mmcreatemdl.md), [**ExAcquireResourceSharedLite**](/previous-versions/ff544363(v=vs.85)), or [**ExAcquireSharedStarveExclusive**](/previous-versions/ff544367(v=vs.85)). After the filter driver calls [**ExReleaseResource**](../kernel/mmcreatemdl.md) or [**ExReleaseResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleaseresourcelite), it should immediately re-enable delivery of normal kernel APCs. As an alternative to [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md), minifilter drivers can use the [**FltAcquireResourceExclusive**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltacquireresourceexclusive), *FltAcquireResourceShared**](/windows-hardware/drivers/ddi/fltkernel/fltacquireresourceshared), and [**FltReleaseResource**](/windows-hardware/drivers/ddi/fltkernel/fltreleaseresource) routines, which properly handle APCs when acquiring and releasing a resource.
 
 It isn't necessary to disable normal kernel APCs before calling [**ExAcquireSharedWaitForExclusive**](/previous-versions/ff544370(v=vs.85)) because this routine calls [**KeRaiseIrqlToDpcLevel**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keraiseirqltodpclevel), which disables both normal and special kernel APCs. It's also not necessary to do so before calling [**ExAcquireFastMutex**](/previous-versions/windows/hardware/drivers/ff544337(v=vs.85)) or [**ExAcquireResourceExclusive**](../kernel/mmcreatemdl.md), because these routines disable normal kernel APCs.
 
@@ -75,11 +75,11 @@ It isn't necessary to disable normal kernel APCs before calling [**ExAcquireShar
 
 [**ExTryToAcquireFastMutex**](/previous-versions/windows/hardware/drivers/ff545647(v=vs.85))
 
-[**FltAcquireResourceExclusive**](fltacquireresourceexclusive.md)
+[**FltAcquireResourceExclusive**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltacquireresourceexclusive)
 
-[**FltAcquireResourceShared**](fltacquireresourceshared.md)
+[**FltAcquireResourceShared**](/windows-hardware/drivers/ddi/fltkernel/fltacquireresourceshared)
 
-[**FltReleaseResource**](fltreleaseresource.md)
+[**FltReleaseResource**](/windows-hardware/drivers/ddi/fltkernel/fltreleaseresource)
 
 [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md)
 
