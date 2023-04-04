@@ -15,7 +15,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 ### Upper driver (Render filter)
 
 - Implements the slicer. The driver takes [3MF](https://3mf.io/) as input and produces G-Code or other similar machine level data.
-- Creates the print queue. The device appears under **Devices and Printers** and in the **3D Print Dialog** for compatible [3D Printing](https://learn.microsoft.com/en-us/windows/uwp/devices-sensors/3d-printing) applications.
+- Creates the print queue. The device appears under **Devices and Printers** and in the **3D Print Dialog** for compatible [3D Printing](/windows/uwp/devices-sensors/3d-printing) applications.
 
 ### Lower driver (USB driver)
 
