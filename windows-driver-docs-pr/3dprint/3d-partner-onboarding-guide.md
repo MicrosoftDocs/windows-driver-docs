@@ -1,6 +1,6 @@
 ---
 title: 3D print partner onboarding guide
-description: This topic describes how to implement 3D printer drivers that are then published on Windows Update.
+description: This article describes how to implement 3D printer drivers that are then published on Windows Update.
 ms.date: 03/17/2023
 ---
 
@@ -15,7 +15,7 @@ A plug-and-play 3D printer on Windows 10 is implemented through a pair of driver
 ### Upper driver (Render filter)
 
 - Implements the slicer. The driver takes [3MF](https://3mf.io/) as input and produces G-Code or other similar machine level data.
-- Creates the print queue. The device appears under **Devices and Printers** and in the **3D Print Dialog** for compatible [3D Printing applications](https://developer.microsoft.com/windows/hardware/3d-print/software-partners).
+- Creates the print queue. The device appears under **Devices and Printers** and in the **3D Print Dialog** for compatible [3D Printing](/windows/uwp/devices-sensors/3d-printing) applications.
 
 ### Lower driver (USB driver)
 

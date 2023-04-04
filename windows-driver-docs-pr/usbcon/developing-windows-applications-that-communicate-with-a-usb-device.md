@@ -28,11 +28,11 @@ If you install [Winusb.sys](winusb-installation.md), here are the programming mo
 
 - [UWP app for a USB device](writing-usb-device-companion-apps-for-microsoft-store.md)
 
-  Windows 8.1 provides a new namespace: [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb). The namespace can't be used in earlier version of Windows. Other Microsoft Store resources are here: [UWP app](/windows/uwp/).
+  Windows 8.1 provides the **[Windows.Devices.Usb](/uwp/api/Windows.Devices.Usb)** namespace, which can't be used in earlier versions of Windows. For other Microsoft Store resources, see the [Universal Windows Platform documentation](/windows/uwp/).
 
 - [Windows desktop app for a USB device](windows-desktop-app-for-a-usb-device.md)
 
-  Before Windows 8.1, apps that were communicating through [Winusb.sys](winusb-installation.md), were desktop apps written by using [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md). In Windows 8.1, the API set has been extended. Other Windows desktop app resources are here: [Windows desktop app](https://developer.microsoft.com/windows/desktop).
+  Before Windows 8.1, apps that were communicating through [Winusb.sys](winusb-installation.md), were desktop apps written by using [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md). In Windows 8.1, the API set was extended. For more information on Windows app development, see [Develop for Windows](https://developer.microsoft.com/windows/).
 
 The strategy for choosing the best programming model depends on various factors.
 
