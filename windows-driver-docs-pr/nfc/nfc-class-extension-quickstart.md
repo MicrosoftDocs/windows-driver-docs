@@ -1,6 +1,6 @@
 ---
 title: NFC CX quick start guide
-description: A quick start guide for writing a NFC functional driver using the NFC Class Extension.
+description: A quick start guide for writing an NFC functional driver using the NFC Class Extension.
 keywords:
 - NFC
 - near field communications
@@ -14,7 +14,7 @@ ms.topic: article
 
 # NFC CX quick start guide
 
-This guide demonstrates how to write a NFC functional driver using the NFC Class Extension (NFC CX) driver.
+This guide demonstrates how to write an NFC functional driver using the NFC Class Extension (NFC CX) driver.
 
 > [!NOTE]
 > A driver that uses a class extension driver in its implementation is known as a 'client driver'. That is to say, a client of the class extension driver.
@@ -30,7 +30,7 @@ This guide demonstrates how to write a NFC functional driver using the NFC Class
 
 The NFC CX driver is responsible for handling I/O requests sent to the driver and creating the relevant NCI command packets. The client driver is responsible for sending those NCI packets to the NFC Controller and sending back the NCI response packets to the NFC CX driver.
 
-It is up to the client driver to determine how to send the NCI packets to the NFC Controller. This will vary depending on what type of hardware bus is used. Common buses used by NFC Controllers include I<sup>2</sup>C, SPI and USB.
+It's up to the client driver to determine how to send the NCI packets to the NFC Controller. This process varies depending on what type of hardware bus is used. Common buses used by NFC Controllers include I<sup>2</sup>C, SPI and USB.
 
 ## Complete project code
 
@@ -40,7 +40,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
 
 1. In Visual Studio, create a new "User Mode Driver, Empty (UMDF V2)" project.
 
-    On the **File** menu, point to **New**, and then click **Project**. In the **Visual C++** node, under **Windows Drivers**, click **WDF**, and then click **User Mode Driver, Empty (UMDF V2)**
+    On the **File** menu, point to **New**, and then select **Project**. In the **Visual C++** node, under **Windows Drivers**, select **WDF**, and then select **User Mode Driver, Empty (UMDF V2)**
 
     ![Screenshot showing the Visual Studio "New Project" dialog with "User Mode Driver, Empty (UMDF V2)" selected.](images/quick-start-new-project.png)
 
@@ -81,7 +81,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
     ...
     ```
 
-1. In the INF file, add a reference to the NFC Class Extension. Doing this ensures that Windows Driver Framework (WDF) will load the NFC CX driver when the client driver loads.
+1. In the INF file, add a reference to the NFC Class Extension. Doing this ensures that Windows Driver Framework (WDF) loads the NFC CX driver when the client driver loads.
   
     1. Find the `<project-name>_Install` section.
     1. Add `UmdfExtensions=NfcCx0102`.
