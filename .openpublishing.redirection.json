@@ -8864,67 +8864,112 @@
         },
         {
             "source_path": "windows-driver-docs-pr/ifs/ccistheredirtyloggedpages.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/index",
+            "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/index",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/ifs/ccsetloggeddatathreshold.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/index",
+            "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/index",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/ifs/ccsetloghandleforfileex.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/index",
+            "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/index",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/ifs/ccsetreadaheadgranularityex.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/index",
+            "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/index",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/ifs/ccunmapfileoffsetfromsystemcache.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/index",
+            "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/index",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/ifs/dual-oplock-key-ecp-context.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/ns-ntifs-dual_oplock_key_ecp_context",
+            "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/ns-ntifs-dual_oplock_key_ecp_context",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/ifs/exdisableresourceboost.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/nf-ntifs-exdisableresourceboostlite",
+            "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/nf-ntifs-exdisableresourceboostlite",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/ifs/file-lock.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/ns-ntifs-file_lock",
+            "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/ns-ntifs-file_lock",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/ifs/keacquirequeuedspinlock.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/nf-ntifs-keacquirequeuedspinlock",
+            "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/nf-ntifs-keacquirequeuedspinlock",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/ifs/oplock-key-ecp-context.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/ns-ntifs-oplock_key_ecp_context",
+            "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/ns-ntifs-oplock_key_ecp_context",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/ifs/pcomplete-lock-irp-routine.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/nc-ntifs-pcomplete_lock_irp_routine",
+            "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/nc-ntifs-pcomplete_lock_irp_routine",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/ifs/punlock-routine.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/nc-ntifs-punlock_routine",
+            "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/nc-ntifs-punlock_routine",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/fltacquireresourceexclusive.md",
+            "redirect_URL": "/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltacquireresourceexclusive",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/fltacquireresourceshared.md",
+            "redirect_URL": "/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltacquireresourceshared",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/fltreleaseresource.md",
+            "redirect_URL": "/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltreleaseresource",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/read-ahead-parameters.md",
+            "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/ns-ntifs-read_ahead_parameters",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/nf-fltkernel-fltgetcopyinformationfromcallbackdata.md",
+            "redirect_URL": "/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetcopyinformationfromcallbackdata",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/nf-ntifs-iocheckfileobjectopenedascopydestination.md",
+            "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iocheckfileobjectopenedascopydestination",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/nf-ntifs-iocheckfileobjectopenedascopysource.md",
+            "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iocheckfileobjectopenedascopysource",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/ns-ntifs-copy_information.md",
+            "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/ns-ntifs-copy_information",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/ifs/ns-ntifs-extended_create_information.md",
+            "redirect_URL": "/windows-hardware/drivers/ddi/wdm/ns-wdm-extended_create_information",
             "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/ifs/wcifs-redirection-ecp-context.md",
-            "redirect_URL": "windows-hardware/drivers/ddi/ntifs/ns-ntifs-create_redirection_ecp_context",
+            "redirect_URL": "/windows-hardware/drivers/ddi/ntifs/ns-ntifs-create_redirection_ecp_context",
             "redirect_document_id": false
         },
         {

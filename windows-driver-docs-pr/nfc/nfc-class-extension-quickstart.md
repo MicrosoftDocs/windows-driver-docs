@@ -1,6 +1,6 @@
 ---
 title: NFC CX quick start guide
-description: A quick start guide for writing a NFC functional driver using the NFC Class Extension.
+description: A quick start guide for writing an NFC functional driver using the NFC Class Extension.
 keywords:
 - NFC
 - near field communications
@@ -14,7 +14,7 @@ ms.topic: article
 
 # NFC CX quick start guide
 
-This guide demonstrates how to write a NFC functional driver using the NFC Class Extension (NFC CX) driver.
+This guide demonstrates how to write an NFC functional driver using the NFC Class Extension (NFC CX) driver.
 
 > [!NOTE]
 > A driver that uses a class extension driver in its implementation is known as a 'client driver'. That is to say, a client of the class extension driver.
@@ -23,14 +23,14 @@ This guide demonstrates how to write a NFC functional driver using the NFC Class
 
 - Your NFC Controller's firmware must implement the NFC Forum's [NFC Controller Interface (NCI)](https://nfc-forum.org/our-work/specification-releases/specifications/) protocol.
 - [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_content=download+vs2017) (or later).
-- The [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
-- The [Windows 10 Driver Kit (WDK)](../download-the-wdk.md).
+- The [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk/).
+- The [Windows Driver Kit (WDK)](../download-the-wdk.md).
 
 ## Client driver responsibilities
 
 The NFC CX driver is responsible for handling I/O requests sent to the driver and creating the relevant NCI command packets. The client driver is responsible for sending those NCI packets to the NFC Controller and sending back the NCI response packets to the NFC CX driver.
 
-It is up to the client driver to determine how to send the NCI packets to the NFC Controller. This will vary depending on what type of hardware bus is used. Common buses used by NFC Controllers include I<sup>2</sup>C, SPI and USB.
+It's up to the client driver to determine how to send the NCI packets to the NFC Controller. This process varies depending on what type of hardware bus is used. Common buses used by NFC Controllers include I<sup>2</sup>C, SPI and USB.
 
 ## Complete project code
 
@@ -40,7 +40,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
 
 1. In Visual Studio, create a new "User Mode Driver, Empty (UMDF V2)" project.
 
-    On the **File** menu, point to **New**, and then click **Project**. In the **Visual C++** node, under **Windows Drivers**, click **WDF**, and then click **User Mode Driver, Empty (UMDF V2)**
+    On the **File** menu, point to **New**, and then select **Project**. In the **Visual C++** node, under **Windows Drivers**, select **WDF**, and then select **User Mode Driver, Empty (UMDF V2)**
 
     ![Screenshot showing the Visual Studio "New Project" dialog with "User Mode Driver, Empty (UMDF V2)" selected.](images/quick-start-new-project.png)
 
@@ -81,7 +81,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
     ...
     ```
 
-1. In the INF file, add a reference to the NFC Class Extension. Doing this ensures that Windows Driver Framework (WDF) will load the NFC CX driver when the client driver loads.
+1. In the INF file, add a reference to the NFC Class Extension. Doing this ensures that Windows Driver Framework (WDF) loads the NFC CX driver when the client driver loads.
   
     1. Find the `<project-name>_Install` section.
     1. Add `UmdfExtensions=NfcCx0102`.
@@ -94,7 +94,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
 
 1. In the driver build settings, link to the NFC Class Extension. Doing this ensures that the NFC CX API is available during code compilation.
 
-    1. In **Solution Explorer**, right-click the project, and click **Properties**. In **Configuration Properties**, under **Driver Settings**, click **NFC**.
+    1. In **Solution Explorer**, right-click the project, and select **Properties**. In **Configuration Properties**, under **Driver Settings**, select **NFC**.
     1. Ensure that **Configuration** is set to `All Configurations`.
     1. Ensure that **Platform** is to set to `All Platforms`.
     1. Set **Link to NFC Class Extension** to `Yes`.
@@ -309,7 +309,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
 
 1. Implement the [`PrepareHardware`](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) and [`ReleaseHardware`](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware) callback functions.
 
-    These two functions are used to initialize and uninitialize the hardware resources assigned to the NFC Controller's device instance. Their implementation will depend on what type of bus the device is connected to (e.g. I<sup>2</sup>C, SPI and USB).
+    These two functions are used to initialize and uninitialize the hardware resources assigned to the NFC Controller's device instance. Their implementation depends on what type of bus the device is connected to (for example, I<sup>2</sup>C, SPI and USB).
 
     ```cpp
     NTSTATUS DeviceContext::PrepareHardware(
