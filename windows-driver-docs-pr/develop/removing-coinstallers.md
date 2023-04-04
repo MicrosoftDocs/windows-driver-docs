@@ -72,9 +72,7 @@ Alternatively, the device stack can be created in such a way that there is a cus
 
 ### Driver package install dependencies
 
-The CopyInf directive can be used to also install an additional driver package during the same install API call as another driver. The driver package passed to the install API will be installed before any CopyInf-referenced driver packages, but driver packages referenced by CopyInf are not guaranteed to be installed in any particular order.
-  
-[CopyInf Directive](../install/inf-copyinf-directive.md)
+The [CopyInf Directive](../install/inf-copyinf-directive.md) can be used to also install an additional driver package during the same install API call as another driver. The driver package passed to the install API will be installed before any CopyInf-referenced driver packages, but driver packages referenced by CopyInf are not guaranteed to be installed in any particular order.
 
 ## Configuring components from multiple vendors bundled in single driver package
 
