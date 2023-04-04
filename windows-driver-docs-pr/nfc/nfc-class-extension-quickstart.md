@@ -94,7 +94,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
 
 1. In the driver build settings, link to the NFC Class Extension. Doing this ensures that the NFC CX API is available during code compilation.
 
-    1. In **Solution Explorer**, right-click the project, and click **Properties**. In **Configuration Properties**, under **Driver Settings**, click **NFC**.
+    1. In **Solution Explorer**, right-click the project, and select **Properties**. In **Configuration Properties**, under **Driver Settings**, select **NFC**.
     1. Ensure that **Configuration** is set to `All Configurations`.
     1. Ensure that **Platform** is to set to `All Platforms`.
     1. Set **Link to NFC Class Extension** to `Yes`.
@@ -309,7 +309,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
 
 1. Implement the [`PrepareHardware`](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) and [`ReleaseHardware`](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware) callback functions.
 
-    These two functions are used to initialize and uninitialize the hardware resources assigned to the NFC Controller's device instance. Their implementation will depend on what type of bus the device is connected to (e.g. I<sup>2</sup>C, SPI and USB).
+    These two functions are used to initialize and uninitialize the hardware resources assigned to the NFC Controller's device instance. Their implementation depends on what type of bus the device is connected to (for example, I<sup>2</sup>C, SPI and USB).
 
     ```cpp
     NTSTATUS DeviceContext::PrepareHardware(

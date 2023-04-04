@@ -7,12 +7,12 @@ ms.date: 07/17/2018
 
 # Debugging on Arm64
 
-This topic describes debugging Windows 10 on Arm Processors. For general information about Windows 10 on Arm, see
+This article describes debugging Windows 10 on ARM processors. For general information about Windows 10 on Arm, see
 [Windows 10 desktop on Arm64](/windows/uwp/porting/apps-on-arm).
 
 In general, developers debugging user mode apps should use the version of the debugger that matches the architecture of the target app. Use the Arm64 version of WinDbg to debug user mode Arm64 applications and use the Arm version of WinDbg to debug user mode ARM32 applications. Use the x86 version of WinDbg to debug user mode x86 applications running on Arm64 processors.  
 
-In rare cases where you need to debug system code – such as WOW64 or CHPE – you can use the Arm64 version of WinDbg. If you are debugging the Arm64 kernel from another machine, use the version of WinDbg that matches the architecture of that other machine.  
+In rare cases where you need to debug system code – such as WOW64 or CHPE – you can use the Arm64 version of WinDbg. If you're debugging the Arm64 kernel from another machine, use the version of WinDbg that matches the architecture of that other machine.  
 
 ## Getting Arm  Debugging Tools for Windows
 
@@ -25,9 +25,9 @@ The debugging tools are located in the `Debuggers` folder in the kit installatio
 Arm64 WinDbg is required to debug Arm64 code. The debugging experience is similar to debugging x86 applications with x86 WinDbg on x86 Windows, except for the following differences.
 
 - There are 32 general purpose registers - x0 to x28 and fp, lr, sp.
-- Program counter register, pc, is not a general purpose register.
+- Program counter register, pc, isn't a general purpose register.
 - All general purpose registers and pc register are 64-bit in width.
-- At most 2 active data breakpoints for execution and 2 active data breakpoints for read/write memory. For more information, see [Processor Breakpoints](./processor-breakpoints---ba-breakpoints-.md).
+- At most two active data breakpoints for execution and two active data breakpoints for read/write memory. For more information, see [Processor Breakpoints](./processor-breakpoints---ba-breakpoints-.md).
 
 ## Debugging x86 User Mode Code
 
@@ -39,13 +39,13 @@ In the rare cases that you need to use Arm64 WinDbg to debug your x86 user mode 
 
 For more information about the .effmach, see [.effmach (Effective Machine)](-effmach--effective-machine-.md).
 
-When debugging x86 apps in user mode, regardless of which WinDbg version you are using, be aware of these considerations.
+When debugging x86 apps in user mode, regardless of which WinDbg version you're using, be aware of these considerations.
 
-- If a thread is not being actively debugged (e.g. single-stepped, encountered a breakpoint), not reporting an exception, and not in a system call, the register context may not be up-to-date.
-- The emulator internally generates Data misaligned, Illegal instruction, In-page I/O error exceptions and handles the ones it generates. When you are using WinDbg, consider configuring these exceptions as *Ignored* under the Debug / Event Filters… menu item.  
-- If using Arm64 WinDbg in user mode, single-stepping across x86 & CHPE function boundaries is not supported. To work around this, set breakpoints on the target code.
+- If a thread isn't being actively debugged (for example, single-stepped, encountered a breakpoint), not reporting an exception, and not in a system call, the register context may not be up-to-date.
+- The emulator internally generates Data misaligned, Illegal instruction, In-page I/O error exceptions and handles the ones it generates. When you're using WinDbg, consider configuring these exceptions as *Ignored* under the Debug / Event Filters… menu item.  
+- If using Arm64 WinDbg in user mode, single-stepping across x86 & CHPE function boundaries isn't supported. To work around this, set breakpoints on the target code.
 
-For general information about Arm64 and WOW64 see [Running 32-bit Applications](/windows/desktop/WinProg64/running-32-bit-applications) in the 64-bit Windows programming guide.
+For general information about ARM64 and WOW64, see [Running 32-bit Applications](/windows/desktop/WinProg64/running-32-bit-applications) in the 64-bit Windows programming guide.
 
 For information on debugging applications running under WOW64, see [Debugging WOW64](/windows/desktop/WinProg64/debugging-wow64).
 
