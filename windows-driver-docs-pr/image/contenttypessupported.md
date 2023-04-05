@@ -9,11 +9,10 @@ api_name:
 - wscn ContentTypesSupported
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 03/29/2023
 ---
 
 # ContentTypesSupported element
-
 
 The required **ContentTypesSupported** element contains a list of keywords that describe the different document content types that the scanner supports.
 
@@ -31,41 +30,15 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="contenttypevalue.md" data-raw-source="[&lt;strong&gt;ContentTypeValue&lt;/strong&gt;](contenttypevalue.md)"><strong>ContentTypeValue</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ContentTypeValue**](contenttypevalue.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="devicesettings.md" data-raw-source="[&lt;strong&gt;DeviceSettings&lt;/strong&gt;](devicesettings.md)"><strong>DeviceSettings</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DeviceSettings**](devicesettings.md) |
 
 ## Remarks
 
@@ -73,15 +46,4 @@ Each [**ContentTypeValue**](contenttypevalue.md) element that is listed in a **C
 
 ## See also
 
-
 [**ScanTicket**](scanticket.md)
-
- 
-
- 
-
-
-
-
-
-

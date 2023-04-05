@@ -15,9 +15,9 @@ Drivers (other than file systems and file-system filter drivers) do not use APCs
 
 The Windows operating system uses four kinds of APCs:
 
--   *Special user-mode APCs* run strictly in user mode and always execute, even if the target thread is not in an alertable wait state. The operating system uses user APCs to implement mechanisms such as [overlapped I/O](./handling-overlapped-i-o-operations.md) and the [**QueueUserApc**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-queueuserapc) Win32 routine. For additional information on special user-mode APCs, see [**QueueUserAPC2**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-queueuserapc2).
+-   *Special user-mode APCs* run strictly in user mode and always execute, even if the target thread is not in an alertable wait state. For additional information on special user-mode APCs, see [**QueueUserAPC2**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-queueuserapc2).
 
--   *Regular user-mode APCs* run strictly in user mode and only when the target thread is in an alertable wait state. The operating system uses user APCs to implement mechanisms such as [overlapped I/O](./handling-overlapped-i-o-operations.md) and the [**QueueUserApc**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-queueuserapc) Win32 routine.
+-   *Regular user-mode APCs* run strictly in user mode and only when the target thread is in an alertable wait state. The operating system uses regular user APCs to implement mechanisms such as [overlapped I/O](./handling-overlapped-i-o-operations.md) and the [**QueueUserApc**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-queueuserapc) Win32 routine.
 
 -   *Normal kernel APCs* run in kernel mode at IRQL = PASSIVE\_LEVEL. A normal kernel APC preempts all user-mode code, including user APCs. Normal kernel APCs are generally used by file systems and file-system filter drivers.
 
