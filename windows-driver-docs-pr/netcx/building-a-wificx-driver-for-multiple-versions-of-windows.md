@@ -1,7 +1,7 @@
 ---
 title: Building a WiFiCx driver for multiple versions of Windows
 description: Describes how to build a WiFiCx driver for multiple versions of Windows.
-ms.date: 03/31/2023
+ms.date: 04/05/2023
 ---
 
 # Building a WiFiCx driver for multiple versions of Windows
@@ -21,7 +21,7 @@ To run your driver on older versions of Windows, you must:
 | Operating system | KMDF version | Supported NetAdapterCx version | Supported WiFiCx version |
 | --- | --- | --- | --- |
 | Windows 11, versions 21H2 and 22H2 | 1.33 | 2.2 | Supports WiFiCx 1.0 |
-| Windows 11 22H2, Moment 3 | 1.33 | 2.2+ | Supports WiFiCx 1.0, WiFiCx 1.1, WiFiCx 1.2 |
+| Starting with Windows 11 Insider Preview Build 25330 | 1.33 | 2.2+ | Supports WiFiCx 1.0, WiFiCx 1.1, WiFiCx 1.2 |
 
 
 ## Specify the minimum version required
