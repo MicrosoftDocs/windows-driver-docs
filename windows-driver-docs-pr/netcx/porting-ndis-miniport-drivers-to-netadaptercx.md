@@ -78,7 +78,7 @@ Next, replace calls to [**NdisOpenConfigurationEx**](/windows-hardware/drivers/d
 
 For more info, see [Accessing configuration information](accessing-configuration-information.md).
 
-## Receiving I/O control codes (IOTCLs) from user mode
+## Receiving I/O control codes (IOCTLs) from user mode
 
 Read this section if your NDIS driver calls [**NdisRegisterDeviceEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisregisterdeviceex), a routine used to create a control device object (CDO) to receive IOCTLs from user mode.
 
