@@ -134,7 +134,7 @@ After new firmware and EEPROM is installed, make sure JP33 jumper is removed and
 
 After settings are verified, simply connect a Micro-B USB cable between P3 (labeled *UART* on the EVB) and the test machine. Optionally, 3.5mm jack headphones or speakers can be connected to P7 (labeled *SPK* on the EVB) for audio output if enabled in the EEPROM. If external speakers are to be used, the board must have the 15V barrel jack for powering the audio amp.
 
-To run BTP using the BM-64-EVB, make sure the software is correctly installed following [Setting up BTP Software](testing-BTP-setup.md#software-setup). Additionally, refer to the
+To run BTP using the BM-64-EVB, make sure the software is correctly installed following [Setting up BTP Software](testing-btp-setup-software.md). Additionally, refer to the
 [pairing tests](testing-BTP-tests-pairing.md) and [audio test](testing-BTP-tests-audio.md) for running the tests that are currently supported by BTP for the BM-64-EVB.
 
 ## (Optional) Installing Firmware for the PIC Microcontroller

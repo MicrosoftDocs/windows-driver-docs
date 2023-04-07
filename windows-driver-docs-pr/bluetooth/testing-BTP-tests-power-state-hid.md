@@ -11,7 +11,7 @@ The BTP Power State HID tests verify the ability of the local system to transiti
 
 ## Setting up for testing
 
-When using a Pmod device with the Traduci, first check that the green power indicator, an optional yellow test LED, and 3 orange LEDs on the Traduci are on. Confirm that the system under test's Bluetooth radio is powered on and that the appropriate device(s) are correctly plugged in to the Traduci or directly connected to the SUT when appropriate.  More detailed information on setting up can be found in [Setting up BTP](testing-BTP-setup.md).
+When using a Pmod device with the Traduci, first check that the green power indicator, an optional yellow test LED, and 3 orange LEDs on the Traduci are on. Confirm that the system under test's Bluetooth radio is powered on and that the appropriate device(s) are correctly plugged in to the Traduci or directly connected to the SUT when appropriate.  More detailed information on setting up can be found in [BTP overview](testing-btp-overview.md).
 
 Features and purchasing information for supported devices can be found in [Supported BTP hardware](testing-BTP-hw.md).
 
