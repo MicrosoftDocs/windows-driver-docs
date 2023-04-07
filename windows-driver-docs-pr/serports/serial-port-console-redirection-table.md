@@ -1,6 +1,6 @@
 ---
 title: Serial Port Console Redirection Table (SPCR)
-description: The Serial Port Console Redirection Table that is used to indicate whether a serial port or a non-legacy UART interface is available for use with Microsoft® Windows® Emergency Management Services (EMS).
+description: The Serial Port Console Redirection Table that is used to indicate whether a serial port or a non-legacy UART interface is available for use with Microsoft&reg; Windows&reg; Emergency Management Services (EMS).
 keywords:
 - SPCR
 - EMS
@@ -10,7 +10,7 @@ ms.date: 09/23/2021
 
 # Serial Port Console Redirection Table  (SPCR)
 
-This document defines the content of the Serial Port Console Redirection Table. This table is used to indicate whether a serial port or a non-legacy UART interface is available for use with Microsoft® Windows® Emergency Management Services (EMS).
+This document defines the content of the Serial Port Console Redirection Table. This table is used to indicate whether a serial port or a non-legacy UART interface is available for use with Microsoft&reg; Windows&reg; Emergency Management Services (EMS).
 
 The table provides information about the configuration and use of the serial port or non-legacy UART interface. On a system where the BIOS or system firmware uses the serial port for console input/output, this table should be used to convey information about the settings, to ensure a seamless transition between the firmware console output and Windows EMS output.
 
@@ -19,14 +19,14 @@ This table must be located in system memory with other ACPI tables, and it must 
 > Patent Notice:
 > Microsoft is making certain patent rights available for implementations of this specification under two options:
 >
->1. Microsoft’s Community Promise, available at <https://www.microsoft.com/openspecifications/en/us/programs/community-promise/default.aspx>; or
+>1. Microsoft's Community Promise, available at <https://www.microsoft.com/openspecifications/en/us/programs/community-promise/default.aspx>; or
 >2. The Open Web Foundation Final Specification Agreement Version 1.0 ("OWF 1.0") as of October 1, 2012, available on the [Open Web Foundation](https://sites.google.com/site/openwebfoundation/welcome) web site.
 
 | **Field**            | **Byte Length** | **Byte Offset** | **Description** |
 |----------------------|-----------------|-----------------|-----------------|
 | Header               |                 |                 |                 |
 | Signature            | 4               | 0               | 'SPCR'. Signature for the Serial Port Console Redirection Table. |
-| Length               | 4               | 4               | Length, in bytes, of the entire Serial Port Console Redirection Table. |
+| Length               | 4               | 4               | Length, in bytes, of the entire Serial Port Console Redirection Table, including NamespaceString. |
 | Revision             | 1               | 8               | The current table revision is 3. |
 | Checksum             | 1               | 9               | Entire table must sum to zero. |
 | OEM ID               | 6               | 10              | Original equipment manufacturer (OEM) ID. |
@@ -39,8 +39,8 @@ This table must be located in system memory with other ACPI tables, and it must 
 | Base Address         | 12              | 40              | The base address of the Serial Port register set described using the ACPI Generic Address Structure, or 0 if console redirection is disabled.<br><br>**Note:**<br>COM1 (0x3F8) would be:<ul><li>Integer Form: 0x 01 08 00 00 00000000000003F8</li><li>Viewed in Memory: 0x01080000F803000000000000</li></ul>COM2 (0x2F8) would be:<ul><li>Integer Form: 0x 01 08 00 00 00000000000002F8</li><li>Viewed in Memory: 0x01080000F802000000000000</li></ul> |
 | Interrupt Type       | 1               | 52              | Interrupt type(s) used by the UART:<ul><li>Bit[0]: PC-AT-compatible dual-8259 IRQ interrupt</li><li>Bit[1]: I/O APIC interrupt (Global System Interrupt)</li><li>Bit[2]: I/O SAPIC interrupt (Global System Interrupt)</li><li>Bit[3]: ARMH GIC interrupt (Global System Interrupt)</li><li>Bit[4]: RISC-V PLIC/APLIC interrupt (Global System Interrupt)</li><li>Bit[5:7]: Reserved (must be set to 0)</li></ul> Where <ul><li>0 = Not supported</li><li>1 = Supported</li></ul>Bit[0:7] may be 0 if the described interface only supports polled operation.<br>Platforms with both a dual-8259 and an I/O APIC or I/O SAPIC must set the IRQ bit (Bit[0]) and the corresponding Global System Interrupt bit (e.g. a system that supported 8259 and SAPIC would be 5). |
 | IRQ                  | 1               | 53              | The PC-AT-compatible IRQ used by the UART: <ul><li>2-7, 9-12, 14-15 = Valid IRQs respectively</li><li>0-1, 8, 13, 16-255 = Reserved</li></ul>Valid only if Bit[0] of the Interrupt Type field is set. |
-| Global System Interrupt | 4            | 54              | The Global System Interrupt (GSIV) used by the UART.<br>Not valid if Bit[1:7] of the Interrupt Type field is 0. |
-| Baud Rate            | 1               | 58              | The baud rate the BIOS used for redirection: <ul><li>0 = As is, operating system relies on the current configuration of serial port until the full featured driver will be initialized.</li><li>3 = 9600</li><li>4 = 19200</li><li>6 = 57600</li><li>7 = 115200</li><li>1-2, 5, 8-255 = Reserved</li></ul> |
+| Global System Interrupt | 4            | 54              | The Global System Interrupt (GSIV) used by the UART.<br>Not valid if Bit[0] is the only bit set in the Interrupt Type field. |
+| Baud Rate            | 1               | 58              | The baud rate the BIOS used for redirection: <ul><li>0 = As is, operating system relies on the current configuration of serial port until the full featured driver will be initialized.</li><li>3 = 9600</li><li>4 = 19200</li><li>6 = 57600</li><li>7 = 115200</li><li>8 = 230400</li><li>9 = 460800</li><li>10 = 500000</li><li>11 = 576000</li><li>12 = 921600</li><li>13 = 1000000</li><li>14 = 1152000</li><li>15 = 1500000</li><li>16 = 2000000</li><li>17 = 2500000</li><li>18 = 3000000</li><li>19 = 3500000</li><li>20 = 4000000</li><li>1-2, 5, 21-255 = Reserved</li></ul> |
 | Parity               | 1               | 59              | <ul><li>0 = No Parity</li><li>1-255 = Reserved</li></ul> |
 | Stop Bits            | 1               | 60              | <ul><li>1 = 1 Stop bit</li><li>0, 2-255 = Reserved</li></ul> |
 | Flow Control         | 1               | 61              | <ul><li>Bit[0]: DCD required for transmit</li><li>Bit[1]: RTS/CTS hardware flow control</li><li>Bit[2]: XON/XOFF software control</li><li>Bit[3:7]: Reserved, must be 0</li></ul> |
@@ -54,13 +54,16 @@ This table must be located in system memory with other ACPI tables, and it must 
 | PCI Flags            | 4               | 71              | PCI Compatibility flags bitmask. Should be zero by default.<ul><li>Bit[0]: Operating System should NOT suppress PNP device enumeration or disable power management for this device. Must be 0 if it is not a PCI device.</li><li>Bit[1-31]: Reserved, must be 0.</li></ul> |
 | PCI Segment          | 1               | 75              | PCI segment number. <p>For systems with fewer than 255 PCI buses, this number must be 0.</p> |
 | UART Clock Frequency | 4               | 76              | For Revision 2 or lower:<ul><li>Must be 0.</li></ul>For Revision 3:<ul><li>Zero, indicating that the UART clock frequency is indeterminate.</li><li>A non-zero value indicating the UART clock frequency in Hz.</li></ul> |
+| NameSpaceStringLength | 2 | 80 | Length, in bytes, of NamespaceString, including NUL characters. |
+| NameSpaceStringOffset | 2 | 82 | Offset, in bytes, from the beginning of this structure to the field NamespaceString[]. This value must be valid because this string must be present. |
+| NamespaceString[] | NameSpaceStringLength | NameSpaceStringOffset | NUL-terminated ASCII string to uniquely identify this device. This string consists of a fully qualified reference to the object that represents this device in the ACPI namespace. If no namespace device exists, NamespaceString[] must must only contain a single '.' (ASCII period) character. |
 
 ## Revision History
 
 | Date      | Rev  | Description |
 |-----------|------|-------------|
 | 2/15/00   | .10  | Created |
-| 3/1/00    | .50  | ‘SPCR’. Signature Data added |
+| 3/1/00    | .50  | 'SPCR'. Signature Data added |
 | 3/20/00   | .55  | Data revised to include port and irq |
 | 3/22/00   | .56  | Clarified port identification Added ability to disable redirection. Added pointer to the Generic Register Address Structure |
 | 3/23/00   | .56a | Formatting, disclaimer, copy editing |
@@ -69,11 +72,11 @@ This table must be located in system memory with other ACPI tables, and it must 
 | 5/25/00   | .61  | Correction to BASE_ADDRESS description |
 | 5/25/00   | .61  | Public review draft published |
 | 5/31/00   | .7   | Correction to BASE_ADDRESS description examples. Added 16540 interface. |
-| 5/31/00   | .71  | Changed the info on the GRAS from a note to a “\*” |
+| 5/31/00   | .71  | Changed the info on the GRAS from a note to a "\*" |
 | 5/31/00   | .71  | Public review draft published |
 | 6/1/00    | .72  | Changed GRAS COM port examples to be little-endian. Added text to the end of the line |
 | 7/12/00   | .75  | Fixed IRQ Description. Fixed various format issues Added PCI bus information. |
-| 7/26/00   | .76  | Update to PCI field name “Device Number”. Changed intro language to include non-legacy UART. |
+| 7/26/00   | .76  | Update to PCI field name "Device Number". Changed intro language to include non-legacy UART. |
 | 8/10/00   | .77  | Changed interrupt information, adding APIC and SAPIC Added flow control |
 | 9/22/00   | .78  | Added PCI Segment |
 | 10/25/00  | .80  | Fixed PCI Flags section. Added Terminal Types Added 16450 FCR info |
