@@ -26,7 +26,7 @@ This table must be located in system memory with other ACPI tables, and it must 
 |----------------------|-----------------|-----------------|-----------------|
 | Header               |                 |                 |                 |
 | Signature            | 4               | 0               | 'SPCR'. Signature for the Serial Port Console Redirection Table. |
-| Length               | 4               | 4               | Length, in bytes, of the entire Serial Port Console Redirection Table. |
+| Length               | 4               | 4               | Length, in bytes, of the entire Serial Port Console Redirection Table, including NamespaceString. |
 | Revision             | 1               | 8               | The current table revision is 3. |
 | Checksum             | 1               | 9               | Entire table must sum to zero. |
 | OEM ID               | 6               | 10              | Original equipment manufacturer (OEM) ID. |
@@ -54,6 +54,9 @@ This table must be located in system memory with other ACPI tables, and it must 
 | PCI Flags            | 4               | 71              | PCI Compatibility flags bitmask. Should be zero by default.<ul><li>Bit[0]: Operating System should NOT suppress PNP device enumeration or disable power management for this device. Must be 0 if it is not a PCI device.</li><li>Bit[1-31]: Reserved, must be 0.</li></ul> |
 | PCI Segment          | 1               | 75              | PCI segment number. <p>For systems with fewer than 255 PCI buses, this number must be 0.</p> |
 | UART Clock Frequency | 4               | 76              | For Revision 2 or lower:<ul><li>Must be 0.</li></ul>For Revision 3:<ul><li>Zero, indicating that the UART clock frequency is indeterminate.</li><li>A non-zero value indicating the UART clock frequency in Hz.</li></ul> |
+| NameSpaceStringLength | 2 | 80 | Length, in bytes, of NamespaceString, including NUL characters. |
+| NameSpaceStringOffset | 2 | 82 | Offset, in bytes, from the beginning of this structure to the field NamespaceString[]. This value must be valid because this string must be present. |
+| NamespaceString[] | NameSpaceStringLength | NameSpaceStringOffset | NUL-terminated ASCII string to uniquely identify this device. This string consists of a fully qualified reference to the object that represents this device in the ACPI namespace. If no namespace device exists, NamespaceString[] must must only contain a single '.' (ASCII period) character. |
 
 ## Revision History
 
