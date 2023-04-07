@@ -75,7 +75,7 @@ Table 1 defines the fields in DBG2.
 | Revision | 1 | 0 | Revision of the Debug Device Information structure. For this version of the specification, this must be 0. |
 | Length | 2 | 1 | Length, in bytes, of this structure, including NamespaceString and OEMData. |
 | NumberofGenericAddressRegisters | 1 | 3 | Number of generic address registers in use. |
-| NameSpaceStringLength | 2 | 4 | Length, in bytes, of NamespaceString, including NUL characters. |
+| NameSpaceStringLength | 2 | 4 | Length, in bytes, of NamespaceString, including null characters. |
 | NameSpaceStringOffset | 2 | 6 | Offset, in bytes, from the beginning of this structure to the field NamespaceString[]. This value must be valid because this string must be present. |
 | OemDataLength | 2 | 8 | Length, in bytes, of the OEM data block. |
 | OemDataOffset | 2 | 10 | Offset, in bytes, to the field OemData[] from the beginning of this structure. This value will be 0 if no OEM data is present. |
@@ -86,7 +86,7 @@ Table 1 defines the fields in DBG2.
 | AddressSizeOffset | 2 | 20 | Offset, in bytes, from beginning of this structure to the field AddressSize[]. |
 | BaseAddressRegister[] | (NumberofGenericAddressRegisters) * 12 | BaseAddressRegisterOffset | Array of generic addresses. |
 | AddressSize[] | (NumberofGenericAddressRegisters) * 4 | AddressSizeOffset | Array of address sizes corresponding to each generic address above. |
-| NamespaceString[] | NameSpaceStringLength | NameSpaceStringOffset | NUL-terminated ASCII string to uniquely identify this device. This string consists of a fully qualified reference to the object that represents this device in the ACPI namespace. If no namespace device exists, NamespaceString[] must must only contain a single '.' (ASCII period) character. |
+| NamespaceString[] | NameSpaceStringLength | NameSpaceStringOffset | Null-terminated ASCII string to uniquely identify this device. This string consists of a fully qualified reference to the object that represents this device in the ACPI namespace. If no namespace device exists, NamespaceString[] must contain a period ".". |
 | OemData[] | OemDataLength | OemDataOffset | Optional, variable-length OEM-specific data. |
 
 ### Table 3. Debug port types and subtypes
@@ -115,8 +115,7 @@ Table 1 defines the fields in DBG2.
 |  |  | 0x0012 | 16550-compatible with parameters defined in Generic Address Structure |
 |  |  | 0x0013 | SDM845 with clock rate of 7.372 MHz |
 |  |  | 0x0014 | Intel LPSS |
-|  |  | 0x0015 | RISC-V SBI console (any supported SBI mechanism) |
-|  |  | 0x0016 – 0xFFFF | Reserved (For Future Use) |
+|  |  | 0x0015 – 0xFFFF | Reserved (For Future Use) |
 | 1394 | 0x8001 | 0x0000 | IEEE1394 Standard Host Controller Interface |
 |  |  | 0x0001 – 0xFFFF | Reserved (For Future Use) |
 | USB | 0x8002 | 0x0000 | XHCI-compliant controller with debug interface |
