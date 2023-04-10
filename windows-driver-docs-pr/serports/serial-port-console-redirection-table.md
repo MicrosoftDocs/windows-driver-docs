@@ -8,7 +8,7 @@ keywords:
 ms.date: 09/23/2021
 ---
 
-# Serial Port Console Redirection Table  (SPCR)
+# Serial Port Console Redirection Table (SPCR)
 
 This document defines the content of the Serial Port Console Redirection Table. This table is used to indicate whether a serial port or a non-legacy UART interface is available for use with Microsoft® Windows® Emergency Management Services (EMS).
 
@@ -40,7 +40,7 @@ This table must be located in system memory with other ACPI tables, and it must 
 | Interrupt Type       | 1               | 52              | Interrupt type(s) used by the UART:<ul><li>Bit[0]: PC-AT-compatible dual-8259 IRQ interrupt</li><li>Bit[1]: I/O APIC interrupt (Global System Interrupt)</li><li>Bit[2]: I/O SAPIC interrupt (Global System Interrupt)</li><li>Bit[3]: ARMH GIC interrupt (Global System Interrupt)</li><li>Bit[4]: RISC-V PLIC/APLIC interrupt (Global System Interrupt)</li><li>Bit[5:7]: Reserved (must be set to 0)</li></ul> Where <ul><li>0 = Not supported</li><li>1 = Supported</li></ul>Bit[0:7] may be 0 if the described interface only supports polled operation.<br>Platforms with both a dual-8259 and an I/O APIC or I/O SAPIC must set the IRQ bit (Bit[0]) and the corresponding Global System Interrupt bit (e.g. a system that supported 8259 and SAPIC would be 5). |
 | IRQ                  | 1               | 53              | The PC-AT-compatible IRQ used by the UART: <ul><li>2-7, 9-12, 14-15 = Valid IRQs respectively</li><li>0-1, 8, 13, 16-255 = Reserved</li></ul>Valid only if Bit[0] of the Interrupt Type field is set. |
 | Global System Interrupt | 4            | 54              | The Global System Interrupt (GSIV) used by the UART.<br>Not valid if Bit[1:7] of the Interrupt Type field is 0. |
-| Baud Rate            | 1               | 58              | The baud rate the BIOS used for redirection: <ul><li>0 = As is, operating system relies on the current configuration of serial port until the full featured driver will be initialized.</li><li>3 = 9600</li><li>4 = 19200</li><li>6 = 57600</li><li>7 = 115200</li><li>1-2, 5, 8-254 = Reserved</li><li>255 = See Baud Rate Extended field.</li></ul> |
+| Configured Baud Rate | 1               | 58              | The baud rate the BIOS used for redirection: <ul><li>0 = As is, operating system relies on the current configuration of serial port until the full featured driver will be initialized.</li><li>3 = 9600</li><li>4 = 19200</li><li>6 = 57600</li><li>7 = 115200</li><li>1-2, 5, 8-255 = Reserved</li></ul> |
 | Parity               | 1               | 59              | <ul><li>0 = No Parity</li><li>1-255 = Reserved</li></ul> |
 | Stop Bits            | 1               | 60              | <ul><li>1 = 1 Stop bit</li><li>0, 2-255 = Reserved</li></ul> |
 | Flow Control         | 1               | 61              | <ul><li>Bit[0]: DCD required for transmit</li><li>Bit[1]: RTS/CTS hardware flow control</li><li>Bit[2]: XON/XOFF software control</li><li>Bit[3:7]: Reserved, must be 0</li></ul> |
@@ -54,10 +54,14 @@ This table must be located in system memory with other ACPI tables, and it must 
 | PCI Flags            | 4               | 71              | PCI Compatibility flags bitmask. Should be zero by default.<ul><li>Bit[0]: Operating System should NOT suppress PNP device enumeration or disable power management for this device. Must be 0 if it is not a PCI device.</li><li>Bit[1-31]: Reserved, must be 0.</li></ul> |
 | PCI Segment          | 1               | 75              | PCI segment number. <p>For systems with fewer than 255 PCI buses, this number must be 0.</p> |
 | UART Clock Frequency | 4               | 76              | For Revision 2 or lower:<ul><li>Must be 0.</li></ul>For Revision 3:<ul><li>Zero, indicating that the UART clock frequency is indeterminate.</li><li>A non-zero value indicating the UART clock frequency in Hz.</li></ul> |
-| Baud Rate Extended   | 4               | 80              | Baud rate value. |
+| Preferred Baud Rate  | 4               | 80              | Contains a specific non-zero baud rate which overrides the value of the Configured Baud Rate field. If this field is zero or not present, Configured Baud Rate is used. See note below. |
 | NameSpaceStringLength| 2               | 84              | Length, in bytes, of NamespaceString, including NUL characters. |
 | NameSpaceStringOffset| 2               | 82              | Offset, in bytes, from the beginning of this structure to the field NamespaceString[]. This value must be valid because this string must be present. |
 | NamespaceString[]    | NameSpaceStringLength | NameSpaceStringOffset | NUL-terminated ASCII string to uniquely identify this device. This string consists of a fully qualified reference to the object that represents this device in the ACPI namespace. If no namespace device exists, NamespaceString[] must only contain a single '.' (ASCII period) character. |
+
+## Note on the Baud Rate Fields
+
+The Configured Baud Rate field has existed as a single-byte field since the creation of the SPCR table and is widely supported by operating systems. However, because it is an enumeration, it is limited in its ability to precisely describe non-traditional baud rates, such as those used by high speed UARTs. Thus, the Preferred Baud Rate field was added to enable firmware to provide a DWORD which precisely describes a specific baud rate (e.g. 115200 or 1500000). When used with a compatible operating system, a non-zero value in the new Preferred Baud Rate field overrides any value in the legacy Configured Baud Rate field. For backward compatibility, a valid fallback should still be provided in the Configured Baud Rate field for operating systems that do not support the new Preferred Baud Rate field. If the UART does not support any of the traditional baud rates in the enumeration, the fallback value must be zero.
 
 ## Revision History
 
@@ -91,3 +95,4 @@ This table must be located in system memory with other ACPI tables, and it must 
 | 9/1/2020  | 1.06 | Edited formatting and updated link to DBG2 specification |
 | 2/17/2021 | 1.07 | Fixed incorrect description in Stop Bits field. Undo accidental removal of Flow Control field. Edited formatting. |
 | 10/7/2021 | 1.08 | Changed Table Revision to 3 and created field for UART Clock Frequency. Edited formatting. |
+| 4/10/2023 | 1.09 | Added new fields: Preferred Baud Rate, NameSpaceStringLength, NameSpaceStringOffset, and NamespaceString[]. |

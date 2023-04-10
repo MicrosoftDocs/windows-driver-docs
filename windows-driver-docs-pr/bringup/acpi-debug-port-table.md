@@ -26,7 +26,7 @@ References and resources discussed here are listed at the end of this paper.
 ## Document History
 
 | Date | Change |
-|--|--|
+|------|--------|
 | November 29, 2011 | First publication. |
 | May 22, 2012 | Updates to Table 3 per final supported platforms for Windows 8. |
 | August 10, 2015 | Updated patent notice. |
@@ -36,7 +36,8 @@ References and resources discussed here are listed at the end of this paper.
 | June 11, 2020 | Added new serial debugging subtype (SDM845v2) |
 | September 1, 2020 | Converted document to Markdown syntax and formatting changes. |
 | September 21, 2020 | Added new serial debugging subtype (IALPSS) |
-| February 17, 2021 | Document all known serial debugging subtypes |  
+| February 17, 2021 | Document all known serial debugging subtypes |
+| April 10, 2023 | Added new serial debugging subtype (RISC-V) and added clarifying information on 16550-compatible subtypes |
 
 ## Introduction
 
@@ -51,7 +52,7 @@ The DBG2 table replaces the ACPI Debug Port Table (DBGP) on platforms whose debu
 Table 1 defines the fields in DBG2.
 
 | Field | Byte length | Byte offset | Description |
-|--|--|--|--|
+|-------|-------------|-------------|-------------|
 | Header |  |  |  |
 | Signature | 4 | 0 | 'DBG2'. Signature for Debug Port Table 2. |
 | Length | 4 | 4 | Length, in bytes, of the entire Debug Port Table 2. |
@@ -71,7 +72,7 @@ Table 1 defines the fields in DBG2.
 ### Table 2. Debug Device Information structure format
 
 | Field | Byte length | Byte offset | Description |
-|--|--|--|--|
+|-------|-------------|-------------|-------------|
 | Revision | 1 | 0 | Revision of the Debug Device Information structure. For this version of the specification, this must be 0. |
 | Length | 2 | 1 | Length, in bytes, of this structure, including NamespaceString and OEMData. |
 | NumberofGenericAddressRegisters | 1 | 3 | Number of generic address registers in use. |
@@ -92,7 +93,7 @@ Table 1 defines the fields in DBG2.
 ### Table 3. Debug port types and subtypes
 
 | Port | Type | Subtype | Description |
-|--|--|--|--|
+|------|------|---------|-------------|
 | Reserved | 0x0000 – 0x7FFF and 0xFFFF | All | Reserved (Do Not Use) |
 | Serial | 0x8000 | 0x0000 | Fully 16550-compatible |
 |  |  | 0x0001 | 16550 subset compatible with DBGP Revision 1 |
@@ -136,6 +137,16 @@ Table 1 defines the fields in DBG2.
 - The Register Bit Width field contains the register stride and must be a power of 2 that is at least as large as the access size. On 32-bit platforms this value cannot exceed 32. On 64-bit platforms this value cannot exceed 64.
 
 - The Access Size field is used to determine whether byte, WORD, DWORD, or QWORD accesses are to be used. QWORD accesses are only valid on 64-bit architectures.
+
+## Note on 16550-based UARTs
+
+There are three interface subtypes which can be used for 16550-based UARTs. The differences between them are subtle yet important.
+
+- Interface subtype 0x0 refers to a "legacy" port I/O as seen on x86-based platforms. This type should be avoided on platforms that use memory-mapped I/O, such as ARM or RISC-V.
+
+- Interface subtype 0x1 supports memory mapped UARTs, but only ones that are describable in the DBGP ACPI table. OS implementations may treat this as equivalent to a DBGP-provided debug port and not honor all the fields in the Generic Address Structure.
+
+- Interface subtype 0x12 is the most flexible choice and is recommended when running compatible operating systems on new platforms. This subtype supports all scenarios covered by the subtypes 0x0 and 0x1 as well as new ones, such as those using nontraditional access sizes and bit widths, which can be described in the Generic Address Structure.
 
 ## Resources
 
