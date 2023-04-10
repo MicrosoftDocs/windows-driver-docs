@@ -95,4 +95,4 @@ The Configured Baud Rate field has existed as a single-byte field since the crea
 | 9/1/2020  | 1.06 | Edited formatting and updated link to DBG2 specification |
 | 2/17/2021 | 1.07 | Fixed incorrect description in Stop Bits field. Undo accidental removal of Flow Control field. Edited formatting. |
 | 10/7/2021 | 1.08 | Changed Table Revision to 3 and created field for UART Clock Frequency. Edited formatting. |
-| 4/10/2023 | 1.09 | Changed Table Revision to 4 and added new fields: Preferred Baud Rate, NameSpaceStringLength, NameSpaceStringOffset, and NamespaceString[]. |
+| 4/10/2023 | 1.09 | Changed Table Revision to 4 and added new fields: Precise Baud Rate, NameSpaceStringLength, NameSpaceStringOffset, and NamespaceString[]. |
