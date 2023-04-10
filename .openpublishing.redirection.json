@@ -371,6 +371,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/bluetooth/testing-BTP-setup.md",
+            "redirect_URL": "/windows-hardware/drivers/bluetooth/testing-BTP-Overview.md",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/bluetooth/bluetooth-profile-driver-functions.md",
             "redirect_URL": "/windows-hardware/drivers/ddi/_bltooth/",
             "redirect_document_id": false
@@ -8510,6 +8515,16 @@
         {
             "source_path": "windows-driver-docs-pr/sensors/sensor-properties2.md",
             "redirect_url": "/windows-hardware/drivers/sensors/common-sensor-properties",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/overview-of-converged-sensor-driver-model.md",
+            "redirect_url": "/windows-hardware/drivers/sensors/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/testing-MALT-system-color.md",
+            "redirect_url": "/windows-hardware/drivers/sensors/testing-malt-system-brightness-and-color",
             "redirect_document_id": false
         },
         {
