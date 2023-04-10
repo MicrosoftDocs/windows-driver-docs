@@ -55,9 +55,9 @@ This table must be located in system memory with other ACPI tables, and it must 
 | PCI Segment          | 1               | 75              | PCI segment number. <p>For systems with fewer than 255 PCI buses, this number must be 0.</p> |
 | UART Clock Frequency | 4               | 76              | For Revision 2 or lower:<ul><li>Must be 0.</li></ul>For Revision 3:<ul><li>Zero, indicating that the UART clock frequency is indeterminate.</li><li>A non-zero value indicating the UART clock frequency in Hz.</li></ul> |
 | Precise Baud Rate    | 4               | 80              | Contains a specific non-zero baud rate which overrides the value of the Configured Baud Rate field. If this field is zero or not present, Configured Baud Rate is used. See note below. |
-| NameSpaceStringLength| 2               | 82              | Length, in bytes, of NamespaceString, including NUL characters. |
-| NameSpaceStringOffset| 2               | 84              | Offset, in bytes, from the beginning of this structure to the field NamespaceString[]. This value must be valid because this string must be present. |
-| NamespaceString[]    | NameSpaceStringLength | NameSpaceStringOffset | NUL-terminated ASCII string to uniquely identify this device. This string consists of a fully qualified reference to the object that represents this device in the ACPI namespace. If no namespace device exists, NamespaceString[] must only contain a single '.' (ASCII period) character. |
+| NamespaceStringLength| 2               | 82              | Length, in bytes, of NamespaceString, including NUL characters. |
+| NamespaceStringOffset| 2               | 84              | Offset, in bytes, from the beginning of this structure to the field NamespaceString[]. This value must be valid because this string must be present. |
+| NamespaceString[]    | NamespaceStringLength | NamespaceStringOffset | NUL-terminated ASCII string to uniquely identify this device. This string consists of a fully qualified reference to the object that represents this device in the ACPI namespace. If no namespace device exists, NamespaceString[] must only contain a single '.' (ASCII period) character. |
 
 ## Note on the Baud Rate Fields
 
@@ -95,4 +95,4 @@ The Configured Baud Rate field has existed as a single-byte field since the crea
 | 9/1/2020  | 1.06 | Edited formatting and updated link to DBG2 specification |
 | 2/17/2021 | 1.07 | Fixed incorrect description in Stop Bits field. Undo accidental removal of Flow Control field. Edited formatting. |
 | 10/7/2021 | 1.08 | Changed Table Revision to 3 and created field for UART Clock Frequency. Edited formatting. |
-| 4/10/2023 | 1.09 | Changed Table Revision to 4 and added new fields: Precise Baud Rate, NameSpaceStringLength, NameSpaceStringOffset, and NamespaceString[]. |
+| 4/10/2023 | 1.09 | Changed Table Revision to 4 and added new fields: Precise Baud Rate, NamespaceStringLength, NamespaceStringOffset, and NamespaceString[]. |
