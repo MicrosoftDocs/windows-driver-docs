@@ -27,7 +27,7 @@ This table must be located in system memory with other ACPI tables, and it must 
 | Header               |                 |                 |                 |
 | Signature            | 4               | 0               | 'SPCR'. Signature for the Serial Port Console Redirection Table. |
 | Length               | 4               | 4               | Length, in bytes, of the entire Serial Port Console Redirection Table, including NamespaceString. |
-| Revision             | 1               | 8               | The current table revision is 3. |
+| Revision             | 1               | 8               | The current table revision is 4. |
 | Checksum             | 1               | 9               | Entire table must sum to zero. |
 | OEM ID               | 6               | 10              | Original equipment manufacturer (OEM) ID. |
 | OEM Table ID         | 8               | 16              | For the Serial Port Console Redirection Table, the table ID is the manufacturer model ID. |
@@ -54,14 +54,14 @@ This table must be located in system memory with other ACPI tables, and it must 
 | PCI Flags            | 4               | 71              | PCI Compatibility flags bitmask. Should be zero by default.<ul><li>Bit[0]: Operating System should NOT suppress PNP device enumeration or disable power management for this device. Must be 0 if it is not a PCI device.</li><li>Bit[1-31]: Reserved, must be 0.</li></ul> |
 | PCI Segment          | 1               | 75              | PCI segment number. <p>For systems with fewer than 255 PCI buses, this number must be 0.</p> |
 | UART Clock Frequency | 4               | 76              | For Revision 2 or lower:<ul><li>Must be 0.</li></ul>For Revision 3:<ul><li>Zero, indicating that the UART clock frequency is indeterminate.</li><li>A non-zero value indicating the UART clock frequency in Hz.</li></ul> |
-| Preferred Baud Rate  | 4               | 80              | Contains a specific non-zero baud rate which overrides the value of the Configured Baud Rate field. If this field is zero or not present, Configured Baud Rate is used. See note below. |
-| NameSpaceStringLength| 2               | 84              | Length, in bytes, of NamespaceString, including NUL characters. |
-| NameSpaceStringOffset| 2               | 82              | Offset, in bytes, from the beginning of this structure to the field NamespaceString[]. This value must be valid because this string must be present. |
+| Precise Baud Rate    | 4               | 80              | Contains a specific non-zero baud rate which overrides the value of the Configured Baud Rate field. If this field is zero or not present, Configured Baud Rate is used. See note below. |
+| NameSpaceStringLength| 2               | 82              | Length, in bytes, of NamespaceString, including NUL characters. |
+| NameSpaceStringOffset| 2               | 84              | Offset, in bytes, from the beginning of this structure to the field NamespaceString[]. This value must be valid because this string must be present. |
 | NamespaceString[]    | NameSpaceStringLength | NameSpaceStringOffset | NUL-terminated ASCII string to uniquely identify this device. This string consists of a fully qualified reference to the object that represents this device in the ACPI namespace. If no namespace device exists, NamespaceString[] must only contain a single '.' (ASCII period) character. |
 
 ## Note on the Baud Rate Fields
 
-The Configured Baud Rate field has existed as a single-byte field since the creation of the SPCR table and is widely supported by operating systems. However, because it is an enumeration, it is limited in its ability to precisely describe non-traditional baud rates, such as those used by high speed UARTs. Thus, the Preferred Baud Rate field was added to enable firmware to provide a DWORD which precisely describes a specific baud rate (e.g. 115200 or 1500000). When used with a compatible operating system, a non-zero value in the new Preferred Baud Rate field overrides any value in the legacy Configured Baud Rate field. For backward compatibility, a valid fallback should still be provided in the Configured Baud Rate field for operating systems that do not support the new Preferred Baud Rate field. If the UART does not support any of the traditional baud rates in the enumeration, the fallback value must be zero.
+The Configured Baud Rate field has existed as a single-byte field since the creation of the SPCR table and is widely supported by operating systems. However, because it is an enumeration, it is limited in its ability to precisely describe non-traditional baud rates, such as those used by high speed UARTs. Thus, the Precise Baud Rate field was added to enable firmware to provide supporting operating systems a DWORD which describes a specific baud rate (e.g. 1500000). When the Precise Baud Rate field contains a non-zero value, the legacy Configured Baud Rate field shall be zero.
 
 ## Revision History
 
@@ -95,4 +95,4 @@ The Configured Baud Rate field has existed as a single-byte field since the crea
 | 9/1/2020  | 1.06 | Edited formatting and updated link to DBG2 specification |
 | 2/17/2021 | 1.07 | Fixed incorrect description in Stop Bits field. Undo accidental removal of Flow Control field. Edited formatting. |
 | 10/7/2021 | 1.08 | Changed Table Revision to 3 and created field for UART Clock Frequency. Edited formatting. |
-| 4/10/2023 | 1.09 | Added new fields: Preferred Baud Rate, NameSpaceStringLength, NameSpaceStringOffset, and NamespaceString[]. |
+| 4/10/2023 | 1.09 | Changed Table Revision to 4 and added new fields: Preferred Baud Rate, NameSpaceStringLength, NameSpaceStringOffset, and NamespaceString[]. |
