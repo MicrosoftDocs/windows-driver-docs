@@ -138,7 +138,7 @@ Table 1 defines the fields in DBG2.
 
 - The Access Size field is used to determine whether byte, WORD, DWORD, or QWORD accesses are to be used. QWORD accesses are only valid on 64-bit architectures.
 
-## Note on 16550-based UARTs
+### Note on 16550-based UARTs
 
 There are three interface subtypes which can be used for 16550-based UARTs. The differences between them are subtle yet important.
 
