@@ -10,7 +10,7 @@ The BTP HID tests verify the ability of the local system to pair with a remote r
 
 ## Setting Up
 
-First check that the green power indicator, an optional yellow test LED, and 3 orange LEDs on the Traduci are on. Confirm that the SUT's Bluetooth radio is powered on and that the appropriate device(s) are correctly plugged in to the Traduci. Currently the RN42 device can **only** be plugged into JB. Similarly, the Bluefruit device can **only** be plugged into JC. More detailed information on setting up can be found at [Setting up BTP](testing-BTP-setup.md).
+First check that the green power indicator, an optional yellow test LED, and 3 orange LEDs on the Traduci are on. Confirm that the SUT's Bluetooth radio is powered on and that the appropriate device(s) are correctly plugged in to the Traduci. Currently the RN42 device can **only** be plugged into JB. Similarly, the Bluefruit device can **only** be plugged into JC. More detailed information on setting up can be found at [BTP overview](testing-btp-overview.md).
 
 Information and purchasing information for supported devices can be found [Supported BTP Hardware](testing-BTP-hw.md).
 

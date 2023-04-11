@@ -371,6 +371,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/bluetooth/testing-BTP-setup.md",
+            "redirect_URL": "/windows-hardware/drivers/bluetooth/testing-BTP-Overview.md",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/bluetooth/bluetooth-profile-driver-functions.md",
             "redirect_URL": "/windows-hardware/drivers/ddi/_bltooth/",
             "redirect_document_id": false
@@ -4703,6 +4708,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/network/dual-sim.md",
+            "redirect_URL": "/windows-hardware/drivers/network/mb-multi-sim-operations",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/network/enabling-authentication-algorithms.md",
             "redirect_URL": "/previous-versions/windows/hardware/wireless/enabling-authentication-algorithms",
             "redirect_document_id": false
@@ -8513,6 +8523,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/sensors/overview-of-converged-sensor-driver-model.md",
+            "redirect_url": "/windows-hardware/drivers/sensors/index",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/sensors/testing-MALT-system-color.md",
+            "redirect_url": "/windows-hardware/drivers/sensors/testing-malt-system-brightness-and-color",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/spb/testing-with-multi-interface-test-tool--mitt-.md",
             "redirect_url": "/windows-hardware/drivers/spb/multi-interface-test-tool--mitt--",
             "redirect_document_id": false
@@ -8770,6 +8790,26 @@
         {
             "source_path": "windows-driver-docs-pr/whea/persistence-of-pfa-results.md",
             "redirect_URL": "/windows-hardware/drivers/whea/how-to-manage-the-pfa-memory-list",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/bug-management.md",
+            "redirect_URL": "/collaborate/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/pct-machines-wu-success-download.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/pct-machines-where-driver-install-completes-successfully",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/pct-machines-wu-success-install.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/pct-machines-where-driver-install-completes-successfully",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/percent-of-youtube-video-playback-failures-in-microsoft-edge-and-internet-explorer.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/graphics-user-mode-crashes-edge-chromium-ecosystem",
             "redirect_document_id": false
         },
         {
