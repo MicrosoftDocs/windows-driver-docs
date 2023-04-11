@@ -142,11 +142,11 @@ Table 1 defines the fields in DBG2.
 
 There are three interface subtypes which can be used for 16550-based UARTs. The differences between them are subtle yet important.
 
-- Interface subtype 0x0 refers to a "legacy" port I/O as seen on x86-based platforms. This type should be avoided on platforms that use memory-mapped I/O, such as ARM or RISC-V.
+- Interface subtype 0x0 refers to a serial port which uses "legacy" port I/O as seen on x86-based platforms. This type should be avoided on platforms that use memory-mapped I/O, such as ARM or RISC-V.
 
-- Interface subtype 0x1 supports memory mapped UARTs, but only ones that are describable in the DBGP ACPI table. OS implementations may treat this as equivalent to a DBGP-provided debug port and not honor all the fields in the Generic Address Structure.
+- Interface subtype 0x1 supports memory mapped UARTs, but only ones that are describable in the DBGP ACPI table. Operating system implementations may treat this as equivalent to a DBGP-provided debug port and honor only the Base Address field of the Generic Address Structure.
 
-- Interface subtype 0x12 is the most flexible choice and is recommended when running compatible operating systems on new platforms. This subtype supports all scenarios covered by the subtypes 0x0 and 0x1 as well as new ones, such as those using nontraditional access sizes and bit widths, which can be described in the Generic Address Structure.
+- Interface subtype 0x12 is the most flexible choice and is recommended when running compatible operating systems on new platforms. This subtype supports all serial ports which can be described by the subtypes 0x0 and 0x1, as well as new ones, such as those requiring non-traditional access sizes and bit widths in the Generic Address Structure.
 
 ## Resources
 
