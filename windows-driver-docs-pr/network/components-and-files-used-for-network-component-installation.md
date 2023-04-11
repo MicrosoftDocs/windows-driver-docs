@@ -62,7 +62,7 @@ To use DIRID 12, include the following section in the INF file:
 %NDISPROT_Desc%=Install_NC, MS_NDISPROT
 ```
 
-To allow your driver to install using DIRID 12 or DIRID 13 depending on the OS build number that the driver is being installed on, include both sections in the INF file. For an example INF file that installs differently depending on the OS build number, see [NDIS Protocol Driver INF File sample](https://github.com/microsoft/Windows-driver-samples/blob/develop/network/ndis/ndisprot/6x/sys/630/ndisprot630.inf).
+To allow your driver to install using DIRID 12 or DIRID 13 depending on the OS build number that the driver is being installed on, include both sections in the INF file. For an example INF file that installs differently depending on the OS build number, see [NDIS Protocol Driver INF File](https://github.com/microsoft/Windows-driver-samples/blob/develop/network/ndis/ndisprot/6x/sys/630/ndisprot630.inf).
 
 ## INetCfg
 
