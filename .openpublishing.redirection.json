@@ -4708,6 +4708,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/network/dual-sim.md",
+            "redirect_URL": "/windows-hardware/drivers/network/mb-multi-sim-operations",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/network/enabling-authentication-algorithms.md",
             "redirect_URL": "/previous-versions/windows/hardware/wireless/enabling-authentication-algorithms",
             "redirect_document_id": false
@@ -8785,6 +8790,26 @@
         {
             "source_path": "windows-driver-docs-pr/whea/persistence-of-pfa-results.md",
             "redirect_URL": "/windows-hardware/drivers/whea/how-to-manage-the-pfa-memory-list",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/bug-management.md",
+            "redirect_URL": "/collaborate/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/pct-machines-wu-success-download.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/pct-machines-where-driver-install-completes-successfully",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/pct-machines-wu-success-install.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/pct-machines-where-driver-install-completes-successfully",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/dashboard/percent-of-youtube-video-playback-failures-in-microsoft-edge-and-internet-explorer.md",
+            "redirect_URL": "/windows-hardware/drivers/dashboard/graphics-user-mode-crashes-edge-chromium-ecosystem",
             "redirect_document_id": false
         },
         {
