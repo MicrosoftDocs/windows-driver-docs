@@ -62,7 +62,7 @@ To use DIRID 12, include the following section in the INF file:
 %NDISPROT_Desc%=Install_NC, MS_NDISPROT
 ```
 
-To allow your driver to install using DIRID 12 or DIRID 13 depending on the OS build number that the driver is being installed on, include both sections. For an example INF file that installs differently depending on the OS build number, see [NDIS Protocol Driver INF File sample](https://github.com/microsoft/Windows-driver-samples/blob/develop/network/ndis/ndisprot/6x/sys/630/ndisprot630.inf).
+To allow your driver to install using DIRID 12 or DIRID 13 depending on the OS build number that the driver is being installed on, include both sections in the INF file. For an example INF file that installs differently depending on the OS build number, see [NDIS Protocol Driver INF File sample](https://github.com/microsoft/Windows-driver-samples/blob/develop/network/ndis/ndisprot/6x/sys/630/ndisprot630.inf).
 
 ## INetCfg
 
@@ -80,7 +80,7 @@ A software component, such as a network protocol, client, or service, can have a
 
 A network adapter cannot have a notify object. It can have co-installers. For more information about co-installers, see [Writing a Co-installer](../install/writing-a-co-installer.md).
 
-If you want to create a driver package that can be executed from the [Driver Store](../install/driver-store.md), you can't install it with notify objects and use the driver store feature on older Windows versions. To successfully install the driver package in this scenario, you need to have a minimum OS build number of 25341. 
+If you want to create a driver package that can be executed from the [Driver Store](../install/driver-store.md), you can't install it with notify objects on older Windows versions. To successfully install the driver package in this scenario, you need to have a minimum OS build number of 25341. 
 
 ## Vendor-supplied files
 
