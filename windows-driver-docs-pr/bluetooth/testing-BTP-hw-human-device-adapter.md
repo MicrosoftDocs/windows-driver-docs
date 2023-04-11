@@ -10,7 +10,7 @@ The Human Device Adapter (HDA) is a do-it-yourself way to manually interact with
 
 ## HDA set-up
 
-Install the software as described in [BTP Software Setup](testing-BTP-setup.md#software-setup) to support the HDA.
+Install the software as described in [BTP Software Setup](testing-btp-setup-software.md) to support the HDA.
 
 ## HDA configuration file
 
@@ -94,7 +94,7 @@ If problems are encountered Bluetooth logs can be captured Bluetooth logs by fol
 
 [Bluetooth Test Platform Homepage](testing-BTP-Overview.md)
 
-[Bluetooth Test Platform Software Setup](testing-BTP-setup.md#software-setup)
+[Bluetooth Test Platform Software Setup](testing-btp-setup-software.md)
 
 [Bluetooth Test Platform Available Tests](testing-btp-tests.md)
 
