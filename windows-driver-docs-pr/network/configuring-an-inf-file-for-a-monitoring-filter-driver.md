@@ -105,11 +105,11 @@ The following NDIS filter driver installation issues are associated with monitor
 
     For more information about controlling the driver bindings, see [Specifying Filter Driver Binding Relationships](specifying-filter-driver-binding-relationships.md).
 
--   
-    > [!CAUTION]
-> Specifying common parameters in a monitoring filter INF file is not recommended and will result in a compliance violation.
- 
-    A monitoring filter INF file can specify common parameter definitions for the filter driver, parameters that are associated with a specific adapter, and parameters that are associated with a particular instance (filter module). The following example shows some common parameter definitions.
+- A monitoring filter INF file can specify common parameter definitions for the filter driver, parameters that are associated with a specific adapter, and parameters that are associated with a particular instance (filter module). The following example shows some common parameter definitions.
+
+> [!CAUTION]
+> Specifying common parameters in a modifying filter INF file is not recommended and will result in a compliance violation.
+
     ```INF
     [Common.Params.reg]
 

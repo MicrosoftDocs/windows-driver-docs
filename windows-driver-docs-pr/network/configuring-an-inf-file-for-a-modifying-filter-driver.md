@@ -197,11 +197,11 @@ HKR, Ndi,FilterClass,, compression
 
   For more information about controlling the driver bindings, see [Specifying Filter Driver Binding Relationships](specifying-filter-driver-binding-relationships.md).
 
--   
-    > [!CAUTION]
+- A modifying filter INF file can specify common parameter definitions for the driver and parameters that are associated with a specific adapter. The following example shows some common parameter definitions.
+
+> [!CAUTION]
 > Specifying common parameters in a modifying filter INF file is not recommended and will result in a compliance violation.
 
-    A modifying filter INF file can specify common parameter definitions for the driver and parameters that are associated with a specific adapter. The following example shows some common parameter definitions.
   ```INF
   [Common.Params.reg]
 
