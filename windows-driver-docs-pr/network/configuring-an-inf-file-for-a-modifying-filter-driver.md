@@ -72,7 +72,7 @@ The following NDIS filter driver installation issues are associated with modifyi
     ServiceType     = 1 ;SERVICE_KERNEL_DRIVER
     StartType       = 1 ;SERVICE_SYSTEM_START
     ErrorControl    = 1 ;SERVICE_ERROR_NORMAL
-    ServiceBinary   = %12%\ndislwf.sys
+    ServiceBinary   = %13%\ndislwf.sys
     LoadOrderGroup  = NDIS
     Description     = %NdisLwf_Desc%
     AddReg          = Common.Params.reg
@@ -197,7 +197,11 @@ HKR, Ndi,FilterClass,, compression
 
   For more information about controlling the driver bindings, see [Specifying Filter Driver Binding Relationships](specifying-filter-driver-binding-relationships.md).
 
-- A modifying filter INF file should specify common parameter definitions for the driver and parameters that are associated with a specific adapter. The following example shows some common parameter definitions.
+-   
+    > [!CAUTION]
+> Specifying common parameters in a modifying filter INF file is not recommended and will result in a compliance violation.
+
+    A modifying filter INF file can specify common parameter definitions for the driver and parameters that are associated with a specific adapter. The following example shows some common parameter definitions.
   ```INF
   [Common.Params.reg]
 

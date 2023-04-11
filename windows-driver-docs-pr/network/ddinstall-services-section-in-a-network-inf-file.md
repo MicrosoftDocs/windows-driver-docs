@@ -39,7 +39,7 @@ DisplayName = %Adapter1.DispName%
 ServiceType = 1 ;SERVICE_KERNEL_DRIVER
 StartType = 2 ;SERVICE_AUTO_START
 ErrorControl = 1 ;SERVICE_ERROR_NORMAL
-ServiceBinary = %12%\a1.sys
+ServiceBinary = %13%\a1.sys
 LoadOrderGroup = NDIS
  
 [a1.AddEventLog]

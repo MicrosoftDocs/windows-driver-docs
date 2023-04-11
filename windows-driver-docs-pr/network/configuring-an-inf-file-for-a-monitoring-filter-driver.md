@@ -79,7 +79,7 @@ The following NDIS filter driver installation issues are associated with monitor
     ServiceType     = 1 ;SERVICE_KERNEL_DRIVER
     StartType       = 1 ;SERVICE_SYSTEM_START
     ErrorControl    = 1 ;SERVICE_ERROR_NORMAL
-    ServiceBinary   = %12%\ndisMon.sys
+    ServiceBinary   = %13%\ndisMon.sys
     LoadOrderGroup  = NDIS
     Description     = %NdisMon_Desc%
     AddReg          = Common.Params.Reg
@@ -105,7 +105,11 @@ The following NDIS filter driver installation issues are associated with monitor
 
     For more information about controlling the driver bindings, see [Specifying Filter Driver Binding Relationships](specifying-filter-driver-binding-relationships.md).
 
--   A monitoring filter INF file should specify common parameter definitions for the filter driver, parameters that are associated with a specific adapter, and parameters that are associated with a particular instance (filter module). The following example shows some common parameter definitions.
+-   
+    > [!CAUTION]
+> Specifying common parameters in a monitoring filter INF file is not recommended and will result in a compliance violation.
+ 
+    A monitoring filter INF file can specify common parameter definitions for the filter driver, parameters that are associated with a specific adapter, and parameters that are associated with a particular instance (filter module). The following example shows some common parameter definitions.
     ```INF
     [Common.Params.reg]
 

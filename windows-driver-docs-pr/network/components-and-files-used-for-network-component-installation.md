@@ -43,6 +43,27 @@ Each network component must have an information (INF) file that the network clas
 
 For detailed information about creating INF files for network components, see [Creating Network INF Files](creating-network-inf-files.md).
 
+Starting with Windows OS build version 25319, you can create a network driver package that can be executed from the [Driver Store](../develop/run-from-driver-store.md). An INF that is using 'run from Driver Store' means that the INF uses [**DIRID 13**](../install/using-dirids.md) to specify the location for [driver package](../install/driver-packages.md) files on install.
+
+You can't install a driver package through the network configuration interfaces and use the driver store feature on older Windows versions. To successfully install the driver package in this scenario, you need to have a minimum OS build number of 25319.
+
+
+To use DIRID 13, include the following section in the INF file:
+
+```cpp
+[Standard.NT$ARCH$.10.0...25319]
+%NDISPROT_Desc%=Install, MS_NDISPROT
+```
+
+To use DIRID 12, include the following section in the INF file:
+
+```cpp
+[Standard.NT$ARCH$]
+%NDISPROT_Desc%=Install_NC, MS_NDISPROT
+```
+
+To allow your driver to install using DIRID 12 or DIRID 13 depending on the OS build number that the driver is being installed on, include both sections. For an example INF file that installs differently depending on the OS build number, see [NDIS Protocol Driver INF File sample](https://github.com/microsoft/Windows-driver-samples/blob/develop/network/ndis/ndisprot/6x/sys/630/ndisprot630.inf).
+
 ## INetCfg
 
 Currently, NDIS protocol and filter drivers are installed by calling into the `INetCfg` family of [Network Configuration Interfaces](/previous-versions/windows/hardware/network/ff559080(v=vs.85)). For example, to install or remove network components, a driver writer calls into the [INetCfgClassSetup](/previous-versions/windows/hardware/network/ff547709(v=vs.85)) interface. 
@@ -58,6 +79,8 @@ For more information about filter driver installation, see [NDIS Filter Driver I
 A software component, such as a network protocol, client, or service, can have a *notify object*. A notify object can display a user interface, notify the component of binding events so that the component can exercise some control over the binding process, and conditionally install or remove software components. For more information about notify objects, see [Notify Objects for Network Components](notify-objects-for-network-components.md).
 
 A network adapter cannot have a notify object. It can have co-installers. For more information about co-installers, see [Writing a Co-installer](../install/writing-a-co-installer.md).
+
+If you want to create a driver package that can be executed from the [Driver Store](../install/driver-store.md), you can't install it with notify objects and use the driver store feature on older Windows versions. To successfully install the driver package in this scenario, you need to have a minimum OS build number of 25341. 
 
 ## Vendor-supplied files
 
