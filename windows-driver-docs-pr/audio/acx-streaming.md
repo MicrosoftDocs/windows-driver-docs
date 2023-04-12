@@ -1,7 +1,7 @@
 ---
 title: ACX streaming
 description: This topic provides a summary of the ACX streaming and the associated buffering, which is critical to a glitch free audio experience.
-ms.date: 02/17/2023
+ms.date: 04/12/2023
 ms.localizationpriority: medium
 ---
 
@@ -254,16 +254,16 @@ Each time the streaming circuit completes a packet, it calls [AcxRtStreamNotifyP
 
 After a stream has been created, ACX will transition the stream to different states using the following callbacks:
 
-- EvtAcxStreamPrepareHardware will transition the stream from the AcxStreamStateStop state to the AcxStreamStatePause state. The driver should reserve required hardware such as DMA Engines when it receives EvtAcxStreamPrepareHardware.
-- EvtAcxStreamRun will transition the stream from the AcxStreamStatePause state to the AcxStreamStateRun state.
-- EvtAcxStreamPause will transition the stream from the AcxStreamStateRun state to the AcxStreamStatePause state.
-- EvtAcxStreamReleaseHardware will transition the stream from the AcxStreamStatePause state to the AcxStreamStateStop state. The driver should release required hardware such as DMA engines when it receives EvtAcxStreamReleaseHardware.
+- [EvtAcxStreamPrepareHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_prepare_hardware) will transition the stream from the AcxStreamStateStop state to the AcxStreamStatePause state. The driver should reserve required hardware such as DMA Engines when it receives EvtAcxStreamPrepareHardware.
+- [EvtAcxStreamRun](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_run) will transition the stream from the AcxStreamStatePause state to the AcxStreamStateRun state.
+- [EvtAcxStreamPause](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_pause) will transition the stream from the AcxStreamStateRun state to the AcxStreamStatePause state.
+- [EvtAcxStreamReleaseHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware) will transition the stream from the AcxStreamStatePause state to the AcxStreamStateStop state. The driver should release required hardware such as DMA engines when it receives EvtAcxStreamReleaseHardware.
 
 The stream can receive the EvtAcxStreamPrepareHardware callback after it has received the EvtAcxStreamReleaseHardware callback. This will transition the stream back to the AcxStreamStatePause state.
 
 Packet allocation with EvtAcxStreamAllocateRtPackets will normally happen before the first call to EvtAcxStreamPrepareHardware. The allocated packets will normally be freed with EvtAcxStreamFreeRtPackets after the last call to EvtAcxStreamReleaseHardware. This ordering is not guaranteed.
 
-The AcxStreamStateAcquire state is not used.
+The AcxStreamStateAcquire state is not used. ACX removes the need for the driver to have the acquire state, as this state is implicit with the prepare hardware ([EvtAcxStreamPrepareHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_prepare_hardware)) and release hardware ([EvtAcxStreamReleaseHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware)) callbacks.
 
 #### Stream close
 
