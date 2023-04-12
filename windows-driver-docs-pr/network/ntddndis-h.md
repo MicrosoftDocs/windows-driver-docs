@@ -164,7 +164,6 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 * [OID_GEN_STATISTICS](oid-gen-statistics.md)
 * [OID_GEN_SUPPORTED_GUIDS](oid-gen-supported-guids.md)
 * [OID_GEN_SUPPORTED_LIST](oid-gen-supported-list.md)
-* [OID_GEN_SUPPORTED_PACKET_FILTERS](oid-gen-supported-packet-filters.md)
 * [OID_GEN_TRANSMIT_BLOCK_SIZE](oid-gen-transmit-block-size.md)
 * [OID_GEN_TRANSMIT_BUFFER_SPACE](oid-gen-transmit-buffer-space.md)
 * [OID_GEN_TRANSMIT_QUEUE_LENGTH](oid-gen-transmit-queue-length.md)
