@@ -10,7 +10,7 @@ api_name:
 - INF CopyFiles Directive
 api_type:
 - NA
-ms.date: 07/08/2022
+ms.date: 04/10/2023
 ---
 
 # INF CopyFiles directive
@@ -160,7 +160,7 @@ Starting with Windows Vista, the following points also apply to the INF **CopyFi
 
 ## Examples
 
-This example shows how the [**SourceDisksNames**](inf-sourcedisksnames-section.md), [**SourceDisksFiles**](inf-sourcedisksfiles-section.md), and [**DestinationDirs**](inf-destinationdirs-section.md) sections specify the paths for copy-file operations that occur in processing a simple device-driver INF. (The same INF was also used previously as examples of [**Version**](inf-version-section.md), **SourceDisksNames**, and **SourceDisksFiles** sections.)
+This example shows how the [**SourceDisksNames**](inf-sourcedisksnames-section.md), [**SourceDisksFiles**](inf-sourcedisksfiles-section.md), and [**DestinationDirs**](inf-destinationdirs-section.md) sections specify the paths for copy-file operations that occur in processing a simple device-driver INF.
 
 ```inf
 [SourceDisksNames]
@@ -170,8 +170,7 @@ This example shows how the [**SourceDisksNames**](inf-sourcedisksnames-section.m
 aha154x.sys = 2,\x86 ; on distribution disk 2, in subdir \WinNT\x86
 
 [DestinationDirs]
-DefaultDestDir = 12  ; DIRID_DRIVERS 
-                     ; == \System32\Drivers on Windows platforms
+DefaultDestDir = 13
 
 ; ... Manufacturer and Models sections omitted here
 

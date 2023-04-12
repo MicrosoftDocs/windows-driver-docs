@@ -1,7 +1,7 @@
 ---
 title: Using a Component INF File
 description: Describes how to use software components to include user-mode software that is specific to a device.
-ms.date: 10/17/2018
+ms.date: 04/10/2023
 ---
 
 # Using a Component INF File
@@ -101,6 +101,7 @@ ExtensionId = {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} ; replace with your own GUI
 Provider    = %CONTOSO%
 DriverVer   = 06/21/2006,1.0.0.0
 CatalogFile = ContosoGrfx.cat
+PnpLockdown = 1
 
 [Manufacturer]
 %CONTOSO%=Contoso,NTx86
@@ -132,6 +133,7 @@ ClassGuid   = {5c4c3332-344d-483c-8739-259e934c9cc8}
 Provider    = %CONTOSO%
 DriverVer   = 06/21/2006,1.0.0.0
 CatalogFile = ContosoCtrlPnl.cat
+PnpLockdown = 1
 
 [SourceDisksNames]
 1 = %Disk%,,,""

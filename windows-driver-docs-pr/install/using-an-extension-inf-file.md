@@ -1,7 +1,7 @@
 ---
 title: Using an Extension INF File
 description: Starting in Windows 10, you can extend a driver package's functionality by providing an additional INF file called an extension INF.
-ms.date: 01/14/2022
+ms.date: 04/10/2023
 ---
 
 # Using an Extension INF File
@@ -167,13 +167,14 @@ To access this file online, see [`osrfx2_DCHU_extension.inx`](https://github.com
 ;--*/
 
 [Version]
-Signature = "$WINDOWS NT$"
-Class = Extension
-ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
-Provider = %ManufacturerName%
+Signature   = "$WINDOWS NT$"
+Class       = Extension
+ClassGuid   = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+Provider    = %ManufacturerName%
 ExtensionId = {3846ad8c-dd27-433d-ab89-453654cd542a}
 CatalogFile = osrfx2_DCHU_extension.cat
-DriverVer = 05/16/2017,15.14.36.721
+DriverVer   = 05/16/2017,15.14.36.721
+PnpLockdown = 1
 
 [Manufacturer]
 %ManufacturerName% = OsrFx2Extension, NT$ARCH$
