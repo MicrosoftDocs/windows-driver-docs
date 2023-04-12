@@ -54,9 +54,9 @@ Configures Inf2Cat to verify that a [driver package's](../install/driver-package
 |Windows 11, version 21H2 Arm64 Edition|10_CO_ARM64|
 |Windows Server 2022 x64 Edition|ServerFE_X64|
 |Windows Server 2022 Arm64 Edition|ServerFE_ARM64|
-|Windows 10, version 21H2, 21H1, 20H2, 2004 x86 Edition|10_VB_X86|
-|Windows 10, version 21H2, 21H1, 20H2, 2004 x64 Edition|10_VB_X64|
-|Windows 10, version 21H2, 21H1, 20H2, 2004 Arm64 Edition|10_VB_ARM64|
+|Windows 10, version 22H2, 21H2, 21H1, 20H2, 2004 x86 Edition|10_VB_X86|
+|Windows 10, version 22H2, 21H2, 21H1, 20H2, 2004 x64 Edition|10_VB_X64|
+|Windows 10, version 22H2, 21H2, 21H1, 20H2, 2004 Arm64 Edition|10_VB_ARM64|
 |Windows 10, version 1909, 1903 x86 Edition|10_19H1_X86|
 |Windows 10, version 1909, 1903 x64 Edition|10_19H1_X64|
 |Windows 10, version 1909, 1903 Arm64 Edition|10_19H1_ARM64|
