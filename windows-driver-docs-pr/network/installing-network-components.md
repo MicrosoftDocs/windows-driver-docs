@@ -26,6 +26,8 @@ Network components are installed by the network configuration subsystem.
 
     The class installer calls the DLL's entry-point function to register the notify object. The network configuration subsystem creates an instance of the notify object and calls the object's [**INetCfgComponentControl::Initialize**](/previous-versions/windows/hardware/network/ff547729(v=vs.85)) method. This method initializes the object and provides access to the component and all aspects of network configuration.
 
+    On older versions of Windows you can't create a driver package with a notify object that is executed from the [Driver Store](../install/driver-store.md). To successfully install a driver package in this scenario, you need to have a minimum OS build number of 25341.
+
 2.  To perform operations required to install the component, the network configuration subsystem calls the notify object's [**INetCfgComponentSetup::Install**](/previous-versions/windows/hardware/network/ff547762(v=vs.85)) method.
 
     If installation of the component is unattended, the network configuration subsystem calls the notify object's [**INetCfgComponentSetup::ReadAnswerFile**](/previous-versions/windows/hardware/network/ff547765(v=vs.85)) method. This method opens and retrieves the component's parameters from a file for unattended setup that is known as an *answer file*.
