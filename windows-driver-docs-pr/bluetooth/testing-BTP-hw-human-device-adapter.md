@@ -1,12 +1,12 @@
 ---
 title: Microsoft Bluetooth Test Platform - Human Device Adapter
 description: Bluetooth Test Platform (BTP) Human Device Adapter (HDA) Setup and Pairing 
-ms.date: 11/13/2020
+ms.date: 04/11/2023
 ---
 
 # Human Device Adapter
 
-The Human Device Adapter (HDA) is a do-it-yourself way to manually interact with [Bluetooth Test Platform (BTP)](testing-BTP-Overview.md), allowing use of devices with BTP that have not yet been automated. For example, the HDA would make it possible to interact with a purchased headset that otherwise has no clear way to connect to BTP. The HDA enables manual user testing between a Windows Device and your prototyping hardware without the use of external hardware, such as Traduci. As such, all that is required to set up is a PC that supports Bluetooth and your own test device.  
+The Human Device Adapter (HDA) is a do-it-yourself way to manually interact with [Bluetooth Test Platform (BTP)](testing-BTP-Overview.md), allowing use of devices with BTP that haven't yet been automated. For example, the HDA would make it possible to interact with a purchased headset that otherwise has no clear way to connect to BTP. The HDA enables manual user testing between a Windows Device and your prototyping hardware without the use of external hardware, such as Traduci. As such, all that is required to set up is a PC that supports Bluetooth and your own test device.  
 
 ## HDA set-up
 
@@ -14,7 +14,7 @@ Install the software as described in [BTP Software Setup](testing-btp-setup-soft
 
 ## HDA configuration file
 
-Create a configuration file as below named after your test device, for example: *mytestdevice.txt*. Note that the filename and extension are not important.
+Create a configuration file named after your test device, for example: *mytestdevice.txt*. The filename and extension aren't important. The configuration file should contain the following information:
 
 ```console
 name=myTestDevice
@@ -24,7 +24,7 @@ br_address=B4:F1:DA:96:C0:A4
 
 ## HDA pairing tests
 
-Navigate to the folder where the BTP software package was extracted, typically `C:\BTP`. The scripts referenced below will be in a subfolder of the package directory. Run the appropriate script for the desired command environment:
+Navigate to the folder where the BTP software package was extracted, typically `C:\BTP`. The scripts are in a subfolder of the package directory. Run the appropriate script for the desired command environment:
 
 | Command environment | Script |
 | --- | --- |
@@ -35,7 +35,7 @@ The optional parameter `-VerboseLogs` can be added to provide a more verbose out
 
 ## HDA manual pairing
 
-1. The script will respond as below and ask if the device has been paired before. If 'y' is entered it will delete the pairing; if 'n' is entered the process will continue with no action.
+1. The script asks if the device has been paired before. If you respond with **y**, the script deletes the pairing. If you respond with **n**, the process continues with no action.
 
     ```console
     Verify: SUCCEEDED(WEX::TestExecution::RuntimeParameters::TryGetValue(deviceParameterName.c_str(), deviceParametersStr)): Getting required runtime parameter 'central'
@@ -50,7 +50,7 @@ The optional parameter `-VerboseLogs` can be added to provide a more verbose out
     Enter (y/n): y
     ```
 
-    Below is an example of the HDA deleting the pairing. It will prompt also delete any pairing information on the device (here named “MyTestDevice”). Press any key to continue once any pairing information has been deleted.
+    The following example shows the HDA deleting the pairing. It also prompts you to delete any pairing information on the device (here named "MyTestDevice"). Press any key to continue once any pairing information has been deleted.
 
     ```console
     [BluetoothTestHelpers::Pairing::Unpair]: Unpairing device with address D83BBFAC35607 Public from the device with address D83BBFAC35607 Public
@@ -58,7 +58,7 @@ The optional parameter `-VerboseLogs` can be added to provide a more verbose out
     Press any key to continue
     ```
 
-2. The script then begins the pairing process by running checks, then prompting the user to enter their device (here named “MyTestDevice”) into “*Band* Pairing Mode”. Press any key to continue once this has been done.
+2. The script then begins the pairing process by running checks, then prompting the user to enter their device (here named "MyTestDevice") into "*Band* Pairing Mode". After putting the device in pairing mode, press any key to continue.
 
     ```console
     StartGroup: BluetoothTests::TaefPairingTests::OutgoingJustWorksPairingTest
@@ -71,7 +71,7 @@ The optional parameter `-VerboseLogs` can be added to provide a more verbose out
     Press any key to continue . . .
     ```
 
-3. The script will then initiate pairing. If pairing was successful the output will look exactly as below. Respond to any notifications on the device or on the test PC to confirm and finish pairing. The test then prompts to take the device out of pairing mode. Press any key to continue once this has been done.
+3. The script initiates pairing. If pairing is successful, you see the following the output. Respond to any notifications on the device or on the test PC to confirm and finish pairing. The test then prompts you to take the device out of pairing mode. After you to take the device out of pairing mode, press any key to continue.
 
     ```console
     [BluetoothTestHelpers::Pairing::Pair]: Initiating pairing request from device with address D83BBFAC35607 to device with address B4F1DA96C0A4
@@ -84,7 +84,7 @@ The optional parameter `-VerboseLogs` can be added to provide a more verbose out
     Press any key to continue . . .
     ```
 
-4. After pairing is complete the script continues onto the tests available in the test suite. Documentation on available tests and how to run them can be found in [Currently supported BTP tests](testing-BTP-Tests.md)
+4. After pairing is complete, the script continues onto the tests available in the test suite. Documentation on available tests and how to run them can be found in [Currently supported BTP tests](testing-BTP-Tests.md)
 
 ## HDA log capture
 
