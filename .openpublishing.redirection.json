@@ -6356,6 +6356,11 @@
             "source_path": "windows-driver-docs-pr/network/offloading-the-segmentation-of-large-tcp-packets-in-ndis-6-0.md",
             "redirect_URL": "/previous-versions/windows/hardware/network/offloading-the-segmentation-of-large-tcp-packets-in-ndis-6-0",
             "redirect_document_id": false
+        },        
+        {
+            "source_path": "windows-driver-docs-pr/network/oid-gen-supported-packet-filters.md",
+            "redirect_URL": "/windows-hardware/drivers/network/ntddndis-h",
+            "redirect_document_id": false
         },
         {
             "source_path": "windows-driver-docs-pr/network/oid-dot11-active-phy-list.md",
