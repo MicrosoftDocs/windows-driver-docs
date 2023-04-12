@@ -45,7 +45,7 @@ For detailed information about creating INF files for network components, see [C
 
 Starting with Windows OS build version 25319, you can create a network driver package that can be executed from the [Driver Store](../develop/run-from-driver-store.md). An INF that is using 'run from Driver Store' means that the INF uses [**DIRID 13**](../install/using-dirids.md) to specify the location for [driver package](../install/driver-packages.md) files on install.
 
-You can't install a driver package through the network configuration interfaces and use the driver store feature on older Windows versions. To successfully install the driver package in this scenario, you need to have a minimum OS build number of 25319.
+You can't install a driver package through the network configuration interfaces and use the driver store feature on older Windows versions. To successfully install the driver package in this scenario, you need to have a minimum OS build number of 25319. For more information, see [Manufacturer Section in a Network INF File](manufacturer-section-in-a-network-inf-file.md).
 
 ## INetCfg
 
