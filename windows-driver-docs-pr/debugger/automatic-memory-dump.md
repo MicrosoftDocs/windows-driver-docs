@@ -32,7 +32,7 @@ The Automatic Memory Dump is available in Windows 8 and later.
 
  
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md)
 

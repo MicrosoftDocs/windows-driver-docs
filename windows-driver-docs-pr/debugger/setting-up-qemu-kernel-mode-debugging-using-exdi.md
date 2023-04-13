@@ -207,7 +207,7 @@ info usernet
 
 ## Download and install the Windows debugging tools on the host system
 
-Install the Windows Debugging Tools on the host system. For information on downloading and installing the debugger tools, see [Download Debugging Tools for Windows](debugger-download-tools.md).
+Install the Windows Debugging Tools on the host system. For information on downloading and installing the debugger tools, see [Debugging Tools for Windows](debugger-download-tools.md).
 
 ## Download, build and register the EXDI Server DLL
 
@@ -358,7 +358,7 @@ For more information and a description of the GDBServer Tags and attributes defi
 
 Refer to the troubleshooting information in [Configuring the EXDI Debugger Transport](configuring-the-exdi-debugger-transport.md#troubleshooting).
 
-## Related topics
+## See also
 
 [Configuring the EXDI Debugger Transport](configuring-the-exdi-debugger-transport.md)
 

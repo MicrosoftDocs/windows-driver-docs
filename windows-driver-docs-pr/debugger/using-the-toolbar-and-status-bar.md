@@ -1,11 +1,11 @@
 ---
-title: Using the Toolbar and Status Bar
-description: Using the Toolbar and Status Bar
+title: Using the Toolbar and Status Bar - WinDbg (Classic)
+description: Using the Toolbar and Status Bar - WinDbg (Classic)
 keywords: ["toolbar (WinDbg)", "toolbar (WinDbg), overview", "buttons (WinDbg Toolbar)", "buttons (WinDbg Toolbar), overview", "status bar", "status bar, overview", "WinDbg, toolbar", "WinDbg, status bar", "WinDbg, buttons"]
 ms.date: 05/23/2017
 ---
 
-# Using the Toolbar and Status Bar
+# Using the Toolbar and Status Bar - WinDbg (Classic)
 
 
 ## <span id="ddk_using_the_toolbar_and_status_bar_dbg"></span><span id="DDK_USING_THE_TOOLBAR_AND_STATUS_BAR_DBG"></span>
@@ -21,7 +21,7 @@ The following screen shot shows the WinDbg toolbar.
 
 The toolbar buttons have various effects. Most of them are equivalent to menu commands. To execute the command that is associated with a toolbar button, click the toolbar button. When you cannot use a button, it appears unavailable.
 
-For more information about each button, see [Toolbar Buttons](toolbar-buttons.md).
+For more information about each button, see [Toolbar Buttons - WinDBg (Classic)](toolbar-buttons.md).
 
 ### <span id="using_the_status_bar"></span><span id="USING_THE_STATUS_BAR"></span>Using the Status Bar
 
@@ -86,7 +86,7 @@ The following table describes the sections of the WinDbg status bar.
 
 ### <span id="hiding_the_toolbar_or_status_bar"></span><span id="HIDING_THE_TOOLBAR_OR_STATUS_BAR"></span>Hiding the Toolbar or Status Bar
 
-To display or hide the toolbar, select or clear [Toolbar](view---toolbar.md) on the **View** menu. To display or hide the status bar, select or clear [Status Bar](view---status-bar.md) on the **View** menu.
+To display or hide the toolbar, select or clear **Toolbar** on the **View** menu. To display or hide the status bar, select or clear **Status Bar** on the **View** menu.
 
 If you hide the toolbar or the status bar, you have more space for debugging information windows in the WinDbg display area.
 

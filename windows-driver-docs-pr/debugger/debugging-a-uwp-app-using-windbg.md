@@ -497,8 +497,6 @@ Finally, decrement the debug reference count for the package.
 .disablepackagedebug e24caf14-8483-4743-b80c-ca46c28c75df_1.0.0.0_x86__97ghe447vaan8
 ```
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
-
-[Debugging Using WinDbg](debugging-using-windbg.md)
 

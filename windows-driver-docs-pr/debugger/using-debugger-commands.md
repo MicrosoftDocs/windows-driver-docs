@@ -87,11 +87,11 @@ The maximum command length is 4096 characters. However, if you are [controlling 
 
 In CDB and KD, press the ENTER key by itself to repeat the previous command. In WinDbg, you can enable or disable this behavior. For more information about this behavior, see [**ENTER (Repeat Last Command)**](enter--repeat-last-command-.md).
 
-If the last command that you issued presents a long display and you want to cut it off, use the [**CTRL+C**](ctrl-c--break-.md) key in CDB or KD. In WinDbg, use [Debug | Break](debug---break.md) or press CTRL+BREAK.
+If the last command that you issued presents a long display and you want to cut it off, use the [**CTRL+C**](ctrl-c--break-.md) key in CDB or KD. In WinDbg, use **Debug | Break** or press CTRL+BREAK.
 
 In kernel-mode debugging, you can cancel commands from the keyboard of the target computer by pressing [**CTRL+C**](ctrl-c--break-.md).
 
-You can use the [**.cls (Clear Screen)**](-cls--clear-screen-.md) command to clear all of the text from the [Debugger Command window](debugger-command-window.md). This command clears the whole command history. In WinDbg, you can clear the command history by using the [Edit | Clear Command Output](edit---clear-command-output.md) command or by selecting **Clear command output** on the shortcut menu of the Debugger Command window.
+You can use the [**.cls (Clear Screen)**](-cls--clear-screen-.md) command to clear all of the text from the [Debugger Command window](debugger-command-window.md). This command clears the whole command history. In WinDbg, you can clear the command history by using the **Edit | Clear Command Output** command or by selecting **Clear command output** on the shortcut menu of the Debugger Command window.
 
 ### <span id="expression_syntax"></span><span id="EXPRESSION_SYNTAX"></span>Expression Syntax
 
@@ -121,7 +121,7 @@ You can use the scrollbar to view your previous commands and their output.
 
 When you are using CDB or KD, any keyboard entry automatically scrolls down the Debugger Command window back to the bottom.
 
-In WinDbg, the display automatically scrolls down to the bottom whenever a command produces output or you press the ENTER key. If you want to disable this automatic scrolling, select the [Options](view---options.md) on the **View** menu and then clear the **Automatically scroll** check box.
+In WinDbg, the display automatically scrolls down to the bottom whenever a command produces output or you press the ENTER key. If you want to disable this automatic scrolling, select the **Options** on the **View** menu and then clear the **Automatically scroll** check box.
 
 ### <span id="windbg_text_features"></span><span id="WINDBG_TEXT_FEATURES"></span>WinDbg Text Features
 
@@ -129,11 +129,11 @@ In WinDbg, you can use several additional features to change how text is display
 
 -   The **Word wrap** command on the shortcut menu turns on and off the word wrap status. This command affects the whole window, not only commands that you use after this state is changed. Because many commands and extensions produce formatted displays, we typically do not recommend word wrap.
 
--   The [Edit | Add to Command Output](edit---add-to-command-output.md) menu command adds a comment in the Debugger Command window. The **Add to command output** command on the shortcut menu has the same effect.
+-   The **Edit | Add to Command Output** menu command adds a comment in the Debugger Command window. The **Add to command output** command on the shortcut menu has the same effect.
 
--   You can customize the colors that are used for the text and the background of the Debugger Command window. You can specify different colors for different kinds of text. For example, you can display the automatic register output in one color, error messages in another color, and **DbgPrint** messages in a third color. For more information about this customization, see [View | Options](view---options.md).
+-   You can customize the colors that are used for the text and the background of the Debugger Command window. You can specify different colors for different kinds of text. For example, you can display the automatic register output in one color, error messages in another color, and **DbgPrint** messages in a third color.
 
--   You can use all of the features common to WinDbg's debugging information windows, such as customizing the fonts and using special editing commands. For more information about these features, see [Using Debugging Information Windows](using-debugging-information-windows.md).
+-   You can use all of the features common to WinDbg's debugging information windows, such as customizing the fonts and using special editing commands. 
 
 ### <span id="remote_debugging"></span><span id="REMOTE_DEBUGGING"></span>Remote Debugging
 

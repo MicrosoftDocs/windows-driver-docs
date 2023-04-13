@@ -48,7 +48,7 @@ To use this technique, you must do the following:
     windbg [-y KernelSymbolPath] [-k ConnectionOptions] 
     ```
 
-    For more information about this step, see [Live Kernel-Mode Debugging Using WinDbg](performing-kernel-mode-debugging-using-windbg.md)
+    For more information about this step, see [Live Kernel-Mode Debugging Using WinDbg (Classic)](performing-kernel-mode-debugging-using-windbg.md)
 
     .
 

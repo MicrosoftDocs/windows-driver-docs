@@ -136,6 +136,6 @@ The following tables show how null-modem cables are wired.
 
 For complete documentation of the **bcdedit** command, see [BCDEdit Options Reference](../devtest/bcd-boot-options-reference.md).
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)

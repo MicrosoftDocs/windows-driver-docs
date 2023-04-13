@@ -27,7 +27,7 @@ Logger and LogViewer are included in [Debugging Tools for Windows](index.md).
 
 [The Logger Manifest](the-logger-manifest.md)
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)

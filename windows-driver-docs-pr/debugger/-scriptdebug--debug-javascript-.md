@@ -56,7 +56,7 @@ Specifies the name of the debugger JavaScript script to debug.
 For an overview of JavaScript debugging, see  [JavaScript Debugger Scripting - JavaScript Debugging](javascript-debugger-scripting.md#DEBUGGING).
 
 >[!NOTE] 
-> To use JavaScript Debugging with WinDbg Preview, run the debugger as Administrator.
+> To use JavaScript Debugging with WinDbg, run the debugger as Administrator.
 >
 
 

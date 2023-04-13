@@ -37,7 +37,7 @@ Then use the following procedure:
 
 6.  Use [**g (Go)**](g--go-.md) or another execution command to resume the execution of the service application.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [DebugBreak function](/windows/win32/api/debugapi/nf-debugapi-debugbreak)

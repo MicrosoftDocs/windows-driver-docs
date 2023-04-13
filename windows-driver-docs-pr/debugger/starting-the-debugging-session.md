@@ -34,7 +34,7 @@ To begin using this technique, you must do the following. You can do steps 1 and
 
    **windbg \[-y** <em>KernelSymbolPath</em>**\] \[-k** <em>ConnectionOptions</em>**\]**
 
-   For more information about this step, see [Live Kernel-Mode Debugging Using WinDbg](performing-kernel-mode-debugging-using-windbg.md).
+   For more information about this step, see [Live Kernel-Mode Debugging Using WinDbg (Classic)](performing-kernel-mode-debugging-using-windbg.md).
 
    **Note**  If you use WinDbg as the kernel debugger, many of the familiar features of WinDbg are not available in this scenario. For example, you cannot use the Locals window, the Disassembly window, or the Call Stack window, and you cannot step through source code. This is because WinDbg is only acting as a viewer for the debugger (NTSD or CDB) running on the target computer.
 

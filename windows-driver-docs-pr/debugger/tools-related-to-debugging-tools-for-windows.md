@@ -14,7 +14,7 @@ Monitor application actions while the application runs, subject the application 
 [Windows Error Reporting](windows-error-reporting.md)  
 You can configure Windows Error Reporting (WER) to write user-mode dump files when exceptions and other errors occur in user-mode code. WER is included in Windows Vista and later versions of Windows.
 
-## Related topics
+## See also
 
 - [Tools Included in Debugging Tools for Windows](extra-tools.md)
 - [Debugging Tools for Windows](index.md)

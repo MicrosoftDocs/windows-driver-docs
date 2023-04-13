@@ -1,16 +1,14 @@
 ---
-title: Debugging a User-Mode Process Using WinDbg
-description: You can use WinDbg to attach to a running process or to spawn and attach to a new process.
+title: LDebugging a User-Mode Process Using WinDbg
+description: You can use WinDbg Classic to attach to a running process or to spawn and attach to a new process.
 ms.date: 11/28/2017
 ---
 
-# <span id="debugger.debugging_a_user-mode_process_using_windbg"></span>Debugging a User-Mode Process Using WinDbg
-
+# <span id="debugger.debugging_a_user-mode_process_using_windbg"></span>Debugging a User-Mode Process Using WinDbg Classic
 
 You can use WinDbg to attach to a running process or to spawn and attach to a new process.
 
 ## <span id="Attaching_to_a_Running_Process"></span><span id="attaching_to_a_running_process"></span><span id="ATTACHING_TO_A_RUNNING_PROCESS"></span>Attaching to a Running Process
-
 
 There are several ways you can use WinDbg to attach to a running process. Regardless of the method you choose, you will need the process ID or the process name. The process ID is a number assigned by the operating system. For more information about how to determine the process ID and the process name, see [Finding the Process ID](finding-the-process-id.md).
 

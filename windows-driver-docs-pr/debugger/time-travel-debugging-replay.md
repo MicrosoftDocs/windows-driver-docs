@@ -26,7 +26,7 @@ For more information, see [Time Travel Debugging - Navigation commands](time-tra
 
 Alternatively, use the ribbon buttons to navigate in the trace.
 
-![Screen shot of WinDbg Preview showing start recording checkbox.](images/ttd-ribbon-buttons.png)
+![Screen shot of WinDbg showing start recording checkbox.](images/ttd-ribbon-buttons.png)
 
 ## Example TTD Trace Replay
 

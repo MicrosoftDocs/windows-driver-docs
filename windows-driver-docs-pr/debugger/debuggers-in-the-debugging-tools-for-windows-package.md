@@ -2,15 +2,15 @@
 title: Debugging Environments
 description: Starting with Windows Driver Kit (WDK) 8.0, the driver development environment and the Windows debugger are integrated into Microsoft Visual Studio.
 keywords: ["WinDbg", "KD", "CDB", "NTSD"]
-ms.date: 02/20/2020
+ms.date: 12/08/2022
 ---
 
 # Debugging Environments
 
 There are six available debugging environments:
 
-- WinDbg Preview
-- Windows Debugger (WinDbg)
+- WinDbg
+- WinDbg (Classic)
 - Kernel Debugger (KD)
 - NTKD
 - Console Debugger (CDB)
@@ -18,15 +18,15 @@ There are six available debugging environments:
 
 The following sections describe the debugging environments.
 
-### <span id="WinDbgPreview"></span><span id="windbgpreview"></span><span id="WINDBGPREVIEW"></span>WinDbg Preview
+### <span id="WinDbgPreview"></span><span id="windbgpreview"></span><span id="WINDBGPREVIEW"></span>WinDbg
 
-WinDbg Preview is the latest version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg Preview is using the same underlying engine as WinDbg today, so all the commands, extensions, and workflows you're used to will still work as they did before.
+WinDbg is the latest version of WinDbg with modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg is using the same underlying engine as WinDbg (Classic), so all the commands, extensions, and workflows you're used to will still work as they did before.
 
-For more information, see [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+For more information, see [WinDbg Features](debugging-using-windbg-preview.md)
 
-### <span id="WinDbg"></span><span id="windbg"></span><span id="WINDBG"></span>WinDbg
+### <span id="WinDbg"></span><span id="windbg"></span><span id="WINDBG"></span>WinDbg (Classic)
 
-Microsoft Windows Debugger (WinDbg) is a Windows-based debugger that is capable of both user-mode and kernel-mode debugging. WinDbg provides debugging for the Windows kernel, kernel-mode drivers, and system services, as well as user-mode applications and drivers.
+Microsoft Windows Debugger WinDbg (Classic) is a Windows-based debugger that is capable of both user-mode and kernel-mode debugging. WinDbg provides debugging for the Windows kernel, kernel-mode drivers, and system services, as well as user-mode applications and drivers.
 
 WinDbg uses the Visual Studio debug symbol formats for source-level debugging. It can access any symbol or variable from a module that has PDB symbol files, and can access any public function's name that is exposed by modules that were compiled with COFF symbol files (such as Windows .dbg files).
 
@@ -71,8 +71,8 @@ ntsd parameters
 
 It is possible to redirect the input and output from NTSD (or CDB) so that it can be controlled from a kernel debugger (either Visual Studio, WinDbg, or KD). If this technique is used with NTSD, no console window will appear at all. Controlling NTSD from the kernel debugger is therefore especially useful, since it results in an extremely light-weight debugger that places almost no burden on the computer containing the target application. This combination can be used to debug system processes, shutdown, and the later stages of boot up. See [Controlling the User-Mode Debugger from the Kernel Debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md) for details.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 [Windows Debugging](index.md)
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Features](debugging-using-windbg-preview.md)

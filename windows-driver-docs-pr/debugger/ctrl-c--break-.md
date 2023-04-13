@@ -109,7 +109,7 @@ create a value named **BreakOnSysRq**, and set it equal to DWORD 0x0. Then reboo
 
 If you are debugging KD with CDB, then CTRL+C will be intercepted by the host debugger (CDB). To break into the target debugger (KD), you should use [**CTRL+F**](ctrl-f--break-to-kd-.md) instead.
 
-**Note**   Note that in WinDbg, CTRL+C is a [shortcut key](keyboard-shortcuts.md) that is used to copy text from a window. To issue a break command in WinDbg, use [CTRL+BREAK](debug---break.md) or select Debug | Break from the menu.
+**Note**   Note that in WinDbg, CTRL+C is a [shortcut key](keyboard-shortcuts.md) that is used to copy text from a window. To issue a break command in WinDbg, use **CTRL+BREAK** or select Debug | Break from the menu.
 
  
 

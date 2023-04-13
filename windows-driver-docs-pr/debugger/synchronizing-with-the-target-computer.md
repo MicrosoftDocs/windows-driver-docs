@@ -13,7 +13,7 @@ ms.date: 05/23/2017
 
 Sometimes during kernel-mode debugging, the target computer stops responding to the debugger.
 
-In KD, you can press [**CTRL+R (Re-synchronize)**](ctrl-r--re-synchronize-.md) and then press ENTER to synchronize with the target computer. In WinDbg, use [CTRL+ALT+R](debug---kernel-connection---resynchronize.md) or Debug | Kernel Connection | Resynchronize.
+In KD, you can press [**CTRL+R (Re-synchronize)**](ctrl-r--re-synchronize-.md) and then press ENTER to synchronize with the target computer. In WinDbg, use **CTRL+ALT+R** or Debug | Kernel Connection | Resynchronize.
 
 These commands frequently restore communication between the host and the target. However, resynchronization might not always be successful, especially if you are using a 1394 kernel connection.
 

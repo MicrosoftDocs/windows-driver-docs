@@ -63,7 +63,7 @@ CTRL+ALT+W
 
 This has the same effect as the [**version (Show Debugger Version)**](version--show-debugger-version-.md) command, except that the latter command displays the Windows operating system version as well.
 
-In WinDbg, this can also be accomplished by selecting [View | Show Version](view---show-version.md).
+In WinDbg, this can also be accomplished by selecting **View | Show Version**.
 
 ## <span id="see_also"></span>See also
 

@@ -47,7 +47,7 @@ Use `tasklist /?` to display command line help.
 
 ## TList utility
 
-Task List Viewer (TList), or tlist.exe, is a command-line utility that displays the list of tasks, or user-mode processes, currently running on the local computer. TList is included in the Debugging Tools for Windows. For information on how to download and install the debugging tools, see [Download Debugging Tools for Windows](debugger-download-tools.md).
+Task List Viewer (TList), or tlist.exe, is a command-line utility that displays the list of tasks, or user-mode processes, currently running on the local computer. TList is included in the Debugging Tools for Windows. For information on how to download and install the debugging tools, see [Debugging Tools for Windows](debugger-download-tools.md).
 
 If you installed the Windows Driver Kit in the default directory on a 64 bit PC, the debugging tools are located here:
 

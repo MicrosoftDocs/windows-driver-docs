@@ -42,7 +42,7 @@ g
 
 The application is then loaded and stops when the **main** function is entered. (Of course, you can use any entry point, not only **main**.)
 
-If the application throws an exception, it breaks into the debugger. Source information is available at this point. However, if you issue a break by using the [**CTRL+C**](ctrl-c--break-.md), [CTRL+BREAK](debug---break.md), or Debug | Break command, the debugger creates a new thread, so you cannot see your source code.
+If the application throws an exception, it breaks into the debugger. Source information is available at this point. However, if you issue a break by using the [**CTRL+C**](ctrl-c--break-.md), **CTRL+BREAK**, or Debug | Break command, the debugger creates a new thread, so you cannot see your source code.
 
 After you have reached a thread that you have source files for, you can use the Debugger Command window to execute source debugging commands. If you are using WinDbg, the [Source window](source-window.md) appears. If you have already opened a Source window by clicking **Open Source File** on the **File** menu, WinDbg typically create a new window for the source. You can close the previous window without affecting the debugging process.
 

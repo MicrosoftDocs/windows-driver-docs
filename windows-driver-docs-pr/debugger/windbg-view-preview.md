@@ -1,14 +1,14 @@
 ---
-title: WinDbg Preview - View Menu 
+title: WinDbg - View Menu 
 description: This section describes how work with the view menu.
 ms.date: 07/02/2020
 ---
 
-# WinDbg Preview - View Menu
+# WinDbg - View Menu
 
-![Small logo on windbg preview.](images/windbgx-preview-logo.png)
+![Small logo on WinDbg.](images/windbgx-preview-logo.png)
 
-This section describes how work with the view menu in WinDbg Preview.
+This section describes how work with the view menu in WinDbg.
 
 ![View menu in debugger.](images/windbgx-view-menu.png)
 
@@ -22,7 +22,7 @@ The command Window allows you to enter debugger commands. For more information a
 
 The watch Window allows you to watch local variables and registers. 
 
-The locals and watch windows are both based off of the data model that is used by the dx command. This means the locals and watch windows will benefit from any NatVis or JavaScript extensions you have loaded, and support full LINQ queries, just like the dx command. For more information about the data model, see [WinDbg Preview - Data Model](windbg-data-model-preview.md).
+The locals and watch windows are both based off of the data model that is used by the dx command. This means the locals and watch windows will benefit from any NatVis or JavaScript extensions you have loaded, and support full LINQ queries, just like the dx command. For more information about the data model, see [WinDbg - Data Model](windbg-data-model-preview.md).
 
 ## Locals
 
@@ -32,7 +32,7 @@ The locals window displays information about all of the local variables in the c
 
 ## Registers
 
-Registers displays the contents of the processors registers when they are available. For more information about registers, see [Registers](registers.md) and [Viewing and Editing Registers in WinDbg](registers-window.md).
+Registers displays the contents of the processors registers when they are available. For more information about registers, see [Registers](registers.md) and [Viewing and Editing Registers in WinDbg (Classic)](registers-window.md).
 
 ## Memory
 
@@ -60,7 +60,7 @@ Use the breakpoints window to view, enable and clear breakpoints.
 
 ## Logs
 
- This log is of the WinDbg Preview internals. It can be viewed to monitor long running processes and for troubleshooting the debugger itself.
+ This log is of the WinDbg internals. It can be viewed to monitor long running processes and for troubleshooting the debugger itself.
 
  You can continue to create a traditional debugger command log, using the .logopen command. For more information on that, see [Keeping a Log File in WinDbg](keeping-a-log-file-in-windbg.md).
 
@@ -70,7 +70,7 @@ Use the Notes option to open a note taking window.
 
 ## Timelines
 
-Use Timelines to open or bring focus to the timelines window. For more information on timelines, see [WinDbg Preview - Timelines](windbg-timeline-preview.md).
+Use Timelines to open or bring focus to the timelines window. For more information on timelines, see [WinDbg - Timelines](windbg-timeline-preview.md).
 
 ## Modules
 
@@ -97,4 +97,4 @@ Use the pull down menu to set the accent color for the debugger.
 
 ## See Also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Features](debugging-using-windbg-preview.md)

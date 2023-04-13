@@ -46,7 +46,7 @@ This extension only works with time travel traces. For more information about ti
 
 ### DLL
 
-The time travel debugger extension commands are implemented in ttdext.dll. The time travel command dll is loaded automatically in WinDbg Preview. You don't need to use the load command to manually load the ttdext.dll.
+The time travel debugger extension commands are implemented in ttdext.dll. The time travel command dll is loaded automatically in WinDbg. You don't need to use the load command to manually load the ttdext.dll.
  
 ## See Also
 

@@ -15,7 +15,7 @@ A variety of RPC debugger extensions are exported from Rpcexts.dll.
 
 The RPC extensions used to display RPC state information will only run in user mode. They can be used from CDB (or NTSD) or from user-mode WinDbg.
 
-The user-mode debugger must have a target application, but the target is irrelevant to the RPC extensions. If the debugger is not already running, you can simply start it with an uninteresting target (for example, **windbg notepad** or **cdb winmine**). Then, use [**CTRL+C**](ctrl-c--break-.md) in CDB or [Debug | Break](debug---break.md) in WinDbg to stop the target and access the Debugger Command window.
+The user-mode debugger must have a target application, but the target is irrelevant to the RPC extensions. If the debugger is not already running, you can simply start it with an uninteresting target (for example, **windbg notepad** or **cdb winmine**). Then, use [**CTRL+C**](ctrl-c--break-.md) in CDB or **Debug | Break** in WinDbg to stop the target and access the Debugger Command window.
 
 If you need to analyze RPC state information from a remote computer, you should start the user-mode debugger on the computer that needs to be analyzed, and then use [Remote Debugging](remote-debugging.md).
 

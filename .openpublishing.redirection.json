@@ -9023,8 +9023,673 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "windows-driver-docs-pr/devtest/computerhardwareids-overview.md",
-            "redirect_URL": "//windows-hardware/drivers/devtest/computerhardwareids",
+            "source_path": "windows-driver-docs-pr/debugger/debugging-using-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/setting-up-user-mode-debugging-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debugging-a-user-mode-process-using-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/opening-a-crash-dump-file-using-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/performing-kernel-mode-debugging-using-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/ending-a-debugging-session-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/setting-symbol-and-source-paths-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/remote-debugging-using-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/entering-debugger-commands-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/setting-breakpoints-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/viewing-the-call-stack-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/viewing-source-and-assembly-code-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/viewing-memory--variables--and-registers-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/viewing-threads-and-processes-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/configuring-exceptions-and-events-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/keeping-a-log-file-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/setting-up-kernel-mode-debugging-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/setting-up-a-network-debugging-connection-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/setting-up-a-1394-cable-connection-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/setting-up-a-usb-3-0-cable-connection-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/setting-up-a-usb-2-0-cable-connection-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/setting-up-a-null-modem-cable-connection-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/setting-up-kernel-mode-debugging-using-serial-over-usb-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/setting-up-a-connection-to-a-virtual-machine-in-visual-studio.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/window-menu.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/window---close-all-source-windows.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/window---close-all-error-windows.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/window---open-dock.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/window---dock-all.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/window---undock-all.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/window---mdi-emulation.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/window---automatically-open-disassembly.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/list-of-open-windows.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/help-menu.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/help---contents.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/help---index.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/help---search.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/help---about.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view-menu.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view---command.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view---watch.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view---locals.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view---registers.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view---memory.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view---call-stack.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view---disassembly.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view---scratch-pad.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view---processes-and-threads.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view---command-browser.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view---verbose-output.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view---show-version.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view---toolbar.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view---status-bar.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view---font.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view---options.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view---source-language-file-extensions.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/view---windbg-command-line.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file-menu.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---open-source-file.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---close-current-window.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---open-executable.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---attach-to-a-process.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---open-crash-dump.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---connect-to-remote-session.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---connect-to-remote-stub.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---kernel-debug.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---symbol-file-path.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---source-file-path.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---image-file-path.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---open-workspace.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---save-workspace.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---save-workspace-as.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/file---clear-workspace.md",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---delete-workspaces.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---open-workspace-in-file.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---save-workspace-to-file.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---map-network-drive.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---disconnect-network-drive.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---recent-files.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/file---exit.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/edit-menu.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/edit---cut.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/edit---copy.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/edit---paste.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/edit---select-all.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/edit---write-window-text-to-file.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/edit---add-to-command-output.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/edit---clear-command-output.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/edit---evaluate-selection.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/edit---display-selected-type.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/edit---find.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/edit---find-next.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/edit---go-to-address.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/edit---go-to-line.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/edit---go-to-current-instruction.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/edit---set-current-instruction.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/edit---breakpoints.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/edit---open-clse-log-file.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug-menu.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug---go.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug---break.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug---restart.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug---go-unhandled-exception.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug---go-handled-exception.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug---stop-debugging.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug---detach-debuggee.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug---step-into.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug---step-over.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug---step-out.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug---run-to-cursor.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug---source-mode.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug---resolve-unqualified-symbols.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug---event-filters.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug---modules.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug---kernel-connection---cycle-baud-rate.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug---kernel-connection---cycle-initial-break.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debug---kernel-connection---resynchronize.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/using-debugging-information-windows.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/opening-a-window.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/closing-a-window.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/configuring-a-window.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/moving-through-a-window.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/cutting-and-pasting-text.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/changing-text-properties.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/positioning-the-windows.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debugging-with-floating-and-docked-windows.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/docking-a-window.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/tabbing-a-window.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/undocking-a-window.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/creating-a-new-dock.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/resizing-and-moving-a-window.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/windbg-graphical-interface-features.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/the-debugger-command-window.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debugging-tools-for-windows--what-s-new.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
             "redirect_document_id": false
         },
         {
@@ -9033,11 +9698,38 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/devtest/computerhardwareids-overview.md",
+            "redirect_URL": "//windows-hardware/drivers/devtest/computerhardwareids",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/debugger/symsrv.md",
             "redirect_URL": "//windows-hardware/drivers/debugger/symbols",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/debugging-using-windbg-preview.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/windbg-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/windbg-what-is-new-preview.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/windbg-release-notes",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/arranging-windows.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },        {
+            "source_path": "windows-driver-docs-pr/debugger/edit---open-close-log-file.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/windbg-install-preview.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/",
+            "redirect_document_id": false
         }
-        
-
-    ]
+     ]
 }

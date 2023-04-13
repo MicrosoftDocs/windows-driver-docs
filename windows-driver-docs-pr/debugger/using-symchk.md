@@ -22,7 +22,7 @@ There are many more command-line options. For a full listing, see [SymChk Comman
 
 ### Obtaining symchk
 
-Symchk, like other debugging tools, ship as part of the debugger. For more information, see [Download Debugging Tools for Windows](debugger-download-tools.md).
+Symchk, like other debugging tools, ship as part of the debugger. For more information, see [Debugging Tools for Windows](debugger-download-tools.md).
 
 Once the debugging tools are installed, symchk is available in this directory for 64 bit Windows.
 

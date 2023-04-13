@@ -2,7 +2,7 @@
 title: Debug Windows drivers step-by-step lab (echo kernel mode)
 description: This lab introduces the WinDbg kernel debugger. Use WinDbg to debug the echo kernel mode sample driver code.
 keywords: ["debug lab", "step-by-step", "ECHO"]
-ms.date: 01/26/2023
+ms.date: 03/07/2023
 ---
 
 # Debug Windows drivers step-by-step lab (echo kernel mode)
@@ -804,6 +804,31 @@ On the host system, to display variables, use the **view** > **local** menu item
 
 To find the location of a global variable address, enter `? <variable name>`.
 
+- Step out (Shift+F11) – This command causes execution to run to and exit from the current routine (current place in the call stack). This is useful if you've seen enough of the routine.
+
+For more information, see [Source Code Debugging in WinDbg (Classic)](source-window.md) in the debugging reference documentation.
+
+## Section 8: Viewing variables and call stacks
+
+*In Section 8, you will display information about variables and call stacks.*
+
+This lab assumes that you are stopped at the [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine using the process described earlier. To view the output show here, repeat the steps described previously, if necessary.
+
+**&lt;- On the host system**
+
+**Display variables**
+
+Use the **view**&gt; **local** menu item to display local variables.
+
+![windbg local variables window.](images/debuglab-image-display-variables.png)
+
+**Global variables**
+
+You can find the location of a global variable address by typing *? &lt;variable name&gt;*.
+
+**Local variables**
+
+You can display the names and values of all local variables for a given frame by typing the **dv** command.
 To display the names and values of all local variables for a specific frame, enter the `dv` command:
 
 ```dbgcmd

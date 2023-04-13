@@ -30,7 +30,7 @@ Debugger -QR \\Server
 
 *Debugger* can be either KD or CDB -- the display will be the same in either case. The two backslashes (**\\\\**) preceding *Server* are optional.
 
-In WinDbg, you can use the **Connect to Remote Stub Server** dialog box to browse a list of available KD connection servers. See [File | Connect to Remote Stub](file---connect-to-remote-stub.md) for more details.
+In WinDbg, you can use the **Connect to Remote Stub Server** dialog box to browse a list of available KD connection servers.
 
 **Note**  For a KD connection server to be discoverable, it must be activated with elevated privileges. For more information, see [Activating a KD Connection Server](activating-a-kd-connection-server.md).
 

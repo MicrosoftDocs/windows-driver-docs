@@ -15,7 +15,7 @@ The names of global variables are stored in the symbol files that are created wh
 
 In addition, you can use the [**? (Evaluate Expression)**](---evaluate-expression-.md) command to display the address that is associated with any symbol.
 
-WinDbg provides user interface elements that you can use (in addition to commands) to view and edit global variables. See [Viewing and Editing Global Variables in WinDbg](viewing-and-editing-global-variables-in-windbg.md).
+WinDbg provides user interface elements that you can use (in addition to commands) to view and edit global variables. See [Viewing and Editing Global Variables in WinDbg (Classic)](viewing-and-editing-global-variables-in-windbg.md).
 
 Consider the following example. Suppose that you want to examine the `MyCounter` global variable, which is a 32-bit integer. Also suppose that the default radix is 10.
 

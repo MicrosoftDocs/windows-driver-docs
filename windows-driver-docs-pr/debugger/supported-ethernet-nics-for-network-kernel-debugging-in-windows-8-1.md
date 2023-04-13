@@ -382,7 +382,7 @@ For vendor ID 15B3, these device IDs are supported:
 676E
 6778
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 

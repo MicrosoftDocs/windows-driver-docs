@@ -17,7 +17,7 @@ When the symbol path is changed, for example by using the [**.sympath (Set Symbo
 
 When deferred symbol loading is disabled, process startup can be much slower, because all symbols are read whenever a module is loaded.
 
-In WinDbg, the deferred symbol loading behavior can be modified for symbols that have no module prefix by using the [Resolve Unqualified Symbols](debug---resolve-unqualified-symbols.md) option on the **Debug** menu.
+In WinDbg, the deferred symbol loading behavior can be modified for symbols that have no module prefix by using the **Resolve Unqualified Symbols** option on the **Debug** menu.
 
 You can override deferred symbol loading by using the [**ld (Load Symbols)**](ld--load-symbols-.md) command or the [**.reload (Reload Module)**](-reload--reload-module-.md) command with the **/f** option. These force the specified symbols to be loaded immediately, although the loading of other symbols is deferred.
 

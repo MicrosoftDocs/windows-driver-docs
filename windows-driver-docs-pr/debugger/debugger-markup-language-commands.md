@@ -51,7 +51,7 @@ When color mode is enabled the debugger can produce colored output. By default m
 
 In Windows 10 and later Windbg the command browser window parses and displays DML. All tags such as &lt;link&gt;, &lt;exec&gt; and appearance modifications, are fully supported.
 
-To start a command browser session using the menu in WinDbg, select **View**, **Command Browser**. The .browse &lt;command&gt; in the command window will open a new command browser window and execute the given command. For more information see [Using the Command Browser Window in WinDbg](command-browser-window.md). A new command browser window can also be opened with Ctrl+N.
+To start a command browser session using the menu in WinDbg, select **View**, **Command Browser**. The .browse &lt;command&gt; in the command window will open a new command browser window and execute the given command. For more information see [Using the Command Browser Window in WinDbg (Classic)](command-browser-window.md). A new command browser window can also be opened with Ctrl+N.
 
 The command browser window deliberately mimics the behavior of a web browser, with a drop-down history and previous/next buttons. The history drop-down only displays the last twenty commands but full history is kept so by going back in the commands you can get the drop-down to display older history.
 

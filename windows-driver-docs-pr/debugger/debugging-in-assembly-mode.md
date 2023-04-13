@@ -33,7 +33,7 @@ You can display the resulting code (known as *disassembly code*) in several diff
 
 -   The [**ux (Unassemble x86 BIOS)**](ux--unassemble-x86-bios-.md) command disassembles and displays the x86-based BIOS code instruction set at a specified address.
 
--   (WinDbg only) The [disassembly window](view---disassembly.md) disassembles and displays a specified section of machine language. this window is automatically active if you select the **automatically open disassembly** command on the **window** menu. you can also open this window by selecting **disassembly** on the **view** menu, pressing alt+7, or pressing the **disassembly (alt+7)** button (![screen shot of the disassembly button.](images/tbdisasm2.png)) on the WinDbg toolbar.
+-   (WinDbg only) The disassembly window disassembles and displays a specified section of machine language. this window is automatically active if you select the **automatically open disassembly** command on the **window** menu. you can also open this window by selecting **disassembly** on the **view** menu, pressing alt+7, or pressing the **disassembly (alt+7)** button (![screen shot of the disassembly button.](images/tbdisasm2.png)) on the WinDbg toolbar.
 
 The disassembly display appears in four columns: address offset, binary code, assembly language mnemonic, and assembly language details. The following example shows this display.
 

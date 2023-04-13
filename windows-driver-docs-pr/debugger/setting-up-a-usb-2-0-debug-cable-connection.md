@@ -138,6 +138,6 @@ In a case like this, you might still be able to establish kernel-mode debugging 
 
 For troubleshooting tips and other information see the [Microsoft USB Blog](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/bg-p/MicrosoftUSBBlog).
 
-## Related topics
+## See also
 
 [Setting Up Kernel-Mode Debugging Manually](setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md)

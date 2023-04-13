@@ -1,12 +1,7 @@
-- name: "Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)"
+- name: "Install WinDbg"
   href: index.md
-- name: "Download Debugging Tools for Windows - WinDbg"
-# Auto-expanded node
-  items: 
-  - name: "Download Debugging Tools for Windows - WinDbg"
-    href: debugger-download-tools.md
-  - name: "Download  Windows Symbol Packages for Debugging"
-    href: debugger-download-symbols.md
+- name: "Debugging Tools for Windows"
+  href: debugger-download-tools.md
 - name: "Getting Started with Windows Debugging"
 # Auto-expanded node
   items: 
@@ -89,50 +84,45 @@
     href: debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md
   - name: "Debug Drivers - Step by Step Lab (Sysvad Kernel-Mode)"
     href: debug-universal-drivers--kernel-mode-.md
-- name: "WinDbg Preview"
+- name: "WinDbg"
 # Auto-expanded node
   items: 
-  - name: "Debugging Using WinDbg Preview"
-    href: debugging-using-windbg-preview.md
-  - name: "WinDbg Preview - What's New"
-    href: windbg-what-is-new-preview.md
-  - name: "WinDbg Preview - Installation"
-    href: windbg-install-preview.md
-  - name: "WinDbg Preview - Command line startup options"
+  - name: "WinDbg - Overview"
+    href: windbg-overview.md
+  - name: "WinDbg - Release notes"
+    href: windbg-release-notes.md
+  - name: "WinDbg - Command line startup options"
     href: windbg-command-line-preview.md
-  - name: "WinDbg Preview – Settings and workspaces"
+  - name: "WinDbg – Settings and workspaces"
     href: windbg-setup-preview.md
-  - name: "WinDbg Preview – Keyboard shortcuts"
+  - name: "WinDbg – Keyboard shortcuts"
     href: windbg-keyboard-shortcuts-preview.md
-  - name: "WinDbg Preview - Start a user-mode session"
+  - name: "WinDbg - Start a user-mode session"
     href: windbg-user-mode-preview.md
-  - name: "WinDbg Preview - Start a kernel mode session"
+  - name: "WinDbg - Start a kernel mode session"
     href: windbg-kernel-mode-preview.md
-  - name: "WinDbg Preview - Start a remote, process or dump file session"
+  - name: "WinDbg - Start a remote, process or dump file session"
     href: windbg-remote-preview.md
-  - name: "WinDbg Preview – File menu"
+  - name: "WinDbg – File menu"
     href: windbg-file-preview.md
-  - name: "WinDbg Preview – Home menu"
+  - name: "WinDbg – Home menu"
     href: windbg-home-preview.md
-  - name: "WinDbg Preview – View menu"
+  - name: "WinDbg – View menu"
     href: windbg-view-preview.md
-  - name: "WinDbg Preview – Breakpoints menu"
+  - name: "WinDbg – Breakpoints menu"
     href: windbg-breakpoints-preview.md
-  - name: "WinDbg Preview – Time Travel menu"
+  - name: "WinDbg – Time Travel menu"
     href: windbg-timetravel-preview.md
-  - name: "WinDbg Preview – Data Model menu"
+  - name: "WinDbg – Data Model menu"
     href: windbg-data-model-preview.md
-  - name: "WinDbg Preview – Scripting menu"
+  - name: "WinDbg – Scripting menu"
     href: windbg-scripting-preview.md
-  - name: "WinDbg Preview – Notes, Command, Memory and Source menus"
+  - name: "WinDbg – Notes, Command, Memory and Source menus"
     href: windbg-notes-etc-preview.md
-  - name: "WinDbg Preview - Restricted Mode"
+  - name: "WinDbg - Restricted Mode"
     href: windbg-restricted-mode-preview.md
-  - name: "WinDbg Preview Basics"
-# Auto-expanded node
-    items: 
-    - name: "WinDbg Preview Basics"
-      href: windbg-preview-basics.md
+  - name: "WinDbg Basics"
+    href: windbg-preview-basics.md
   - name: "Time Travel Debugging"
 # Auto-expanded node
     items: 
@@ -142,7 +132,7 @@
       href: time-travel-debugging-record.md
     - name: "Time Travel Debugging - Replay a trace"
       href: time-travel-debugging-replay.md
-    - name: "WinDbg Preview - Timelines"
+    - name: "WinDbg - Timelines"
       href: windbg-timeline-preview.md
     - name: "Time Travel Debugging - Working with trace files"
       href: time-travel-debugging-trace-file-information.md
@@ -195,8 +185,6 @@
   items: 
   - name: "Debugging Resources"
     href: debugging-resources.md
-  - name: "Debugging Tools for Windows: New for Windows 10"
-    href: debugging-tools-for-windows--new-for-windows-10.md
   - name: "Tools Included in Debugging Tools for Windows"
 # Auto-expanded node
     items: 
@@ -1069,44 +1057,14 @@
       href: debugging-a-uwp-app-using-windbg.md
     - name: "Opening a Dump File Using WinDbg"
       href: opening-a-crash-dump-file-using-windbg.md
-    - name: "Live Kernel-Mode Debugging Using WinDbg"
-      href: performing-kernel-mode-debugging-using-windbg.md
-    - name: "Ending a Debugging Session in WinDbg"
-      href: ending-a-debugging-session-in-windbg.md
     - name: "Setting Symbol and Executable Image Paths in WinDbg"
       href: setting-symbol-and-source-paths-in-windbg.md
     - name: "Remote Debugging Using WinDbg"
       href: remote-debugging-using-windbg.md
-    - name: "Entering Debugger Commands in WinDbg"
-      href: debugger-command-window.md
-    - name: "Using the Command Browser Window in WinDbg"
-      href: command-browser-window.md
-    - name: "Setting Breakpoints in WinDbg"
-      href: setting-breakpoints-in-windbg.md
-    - name: "Viewing the Call Stack in WinDbg"
-      href: calls-window.md
-    - name: "Assembly Code Debugging in WinDbg"
-      href: disassembly-window.md
-    - name: "Source Code Debugging in WinDbg"
-      href: source-window.md
-    - name: "Viewing and Editing Memory in WinDbg"
-      href: memory-window.md
-    - name: "Viewing and Editing Global Variables in WinDbg"
-      href: viewing-and-editing-global-variables-in-windbg.md
-    - name: "Viewing and Editing Local Variables in WinDbg"
-      href: locals-window.md
-    - name: "Viewing and Editing Registers in WinDbg"
-      href: registers-window.md
-    - name: "Controlling Processes and Threads in WinDbg"
-      href: processes-and-threads-window.md
     - name: "Configuring Exceptions and Events in WinDbg"
       href: configuring-exceptions-and-events-in-windbg.md
     - name: "Keeping a Log File in WinDbg"
       href: keeping-a-log-file-in-windbg.md
-    - name: "Using the Watch Window"
-      href: watch-window.md
-    - name: "Using the Scratch Pad"
-      href: scratch-pad.md
   - name: "Debugging Using KD and NTKD"
 # Auto-expanded node
     items: 
@@ -1159,19 +1117,17 @@
       href: configuring-exceptions-and-events-in-cdb.md
     - name: "Keeping a Log File in CDB"
       href: keeping-a-log-file-in-cdb.md
-  - name: "Local Kernel-Mode Debugging"
-    href: performing-local-kernel-debugging.md
-  - name: "Controlling the Target"
-    href: controlling-the-target.md
-  - name: "Enabling Postmortem Debugging"
-    href: enabling-postmortem-debugging.md
-  - name: "Open Enclave debugging"
-    href: open-enclave-debugging.md
-  - name: "Using the Debugger Command Window"
+    - name: "Local Kernel-Mode Debugging"
+      href: performing-local-kernel-debugging.md
+    - name: "Controlling the Target"
+      href: controlling-the-target.md
+    - name: "Enabling Postmortem Debugging"
+      href: enabling-postmortem-debugging.md
+    - name: "Open Enclave debugging"
+      href: open-enclave-debugging.md
+  - name: "Using Debugger Commands"
 # Auto-expanded node
     items: 
-    - name: "Using the Debugger Command Window"
-      href: the-debugger-command-window.md
     - name: "Using Debugger Commands"
       href: using-debugger-commands.md
     - name: "Evaluating Expressions"
@@ -1195,71 +1151,6 @@
         href: executing-a-debugger-command-program.md
       - name: "Debugger Command Program Examples"
         href: debugger-command-program-examples.md
-  - name: "Using the WinDbg Graphical Interface"
-# Auto-expanded node
-    items: 
-    - name: "Using the WinDbg Graphical Interface"
-      href: windbg-graphical-interface.md
-    - name: "Using Debugging Information Windows"
-# Auto-expanded node
-      items: 
-      - name: "Using Debugging Information Windows"
-        href: using-debugging-information-windows.md
-      - name: "Opening a Window"
-        href: opening-a-window.md
-      - name: "Closing a Window"
-        href: closing-a-window.md
-      - name: "Configuring a Window"
-        href: configuring-a-window.md
-      - name: "Moving Through a Window"
-        href: moving-through-a-window.md
-      - name: "Cutting and Pasting Text"
-        href: cutting-and-pasting-text.md
-      - name: "Changing Text Properties"
-        href: changing-text-properties.md
-      - name: "Positioning the Windows"
-# Auto-expanded node
-        items: 
-        - name: "Positioning the Windows"
-          href: positioning-the-windows.md
-        - name: "Debugging with Floating and Docked Windows"
-          href: debugging-with-floating-and-docked-windows.md
-        - name: "Docking a Window"
-          href: docking-a-window.md
-        - name: "Tabbing a Window"
-          href: tabbing-a-window.md
-        - name: "Undocking a Window"
-          href: undocking-a-window.md
-        - name: "Creating a New Dock"
-          href: creating-a-new-dock.md
-        - name: "Resizing and Moving a Window"
-          href: resizing-and-moving-a-window.md
-        - name: "Arranging Windows"
-          href: arranging-windows.md
-    - name: "Using Workspaces"
-# Auto-expanded node
-      items: 
-      - name: "Using Workspaces"
-        href: using-workspaces.md
-      - name: "Creating and Opening a Workspace"
-        href: creating-and-opening-a-workspace.md
-      - name: "Workspace Contents"
-        href: workspace-contents.md
-      - name: "Using and Customizing WinDbg Themes"
-# Auto-expanded node
-        items: 
-        - name: "Using and Customizing WinDbg Themes"
-          href: using-and-customizing-windbg-themes.md
-        - name: "Loading a Theme"
-          href: loading-a-theme.md
-        - name: "Customizing a Theme"
-          href: customizing-a-theme.md
-        - name: "Using Themes Provided in Debugging Tools for Windows"
-          href: using-themes-provided-in-debugging-tools-for-windows.md
-    - name: "Using the Toolbar and Status Bar"
-      href: using-the-toolbar-and-status-bar.md
-    - name: "Using the Help Documentation"
-      href: using-the-help-documentation.md
   - name: "Using Debugger Extensions"
 # Auto-expanded node
     items: 
@@ -1371,78 +1262,84 @@
         href: two-firewalls.md
     - name: "Remote Debugging on Workgroup Computers"
       href: remote-debugging-on-workgroup-computers.md
+  - name: "Using the WinDbg Graphical Interface (Classic)"
+# Auto-expanded node
+    items: 
+    - name: "Using the WinDbg Graphical Interface (Classic)"
+      href: windbg-graphical-interface.md
+    - name: "Live Kernel-Mode Debugging Using WinDbg (Classic)"
+      href: performing-kernel-mode-debugging-using-windbg.md
+    - name: "Ending a Debugging Session in WinDbg (Classic)"
+      href: ending-a-debugging-session-in-windbg.md
+    - name: "Entering Debugger Commands in WinDbg (Classic)"
+      href: debugger-command-window.md
+    - name: "Using the Command Browser Window in WinDbg (Classic)"
+      href: command-browser-window.md
+    - name: "Setting Breakpoints in WinDbg (Classic)"
+      href: setting-breakpoints-in-windbg.md
+    - name: "Viewing the Call Stack in WinDbg (Classic)"
+      href: calls-window.md
+    - name: "Assembly Code Debugging in WinDbg (Classic)"
+      href: disassembly-window.md
+    - name: "Source Code Debugging in WinDbg (Classic)"
+      href: source-window.md
+    - name: "Viewing and Editing Memory in WinDbg (Classic)"
+      href: memory-window.md
+    - name: "Viewing and Editing Global Variables in WinDbg (Classic)"
+      href: viewing-and-editing-global-variables-in-windbg.md
+    - name: "Viewing and Editing Local Variables in WinDbg (Classic)"
+      href: locals-window.md
+    - name: "Viewing and Editing Registers in WinDbg (Classic)"
+      href: registers-window.md
+    - name: "Controlling Processes and Threads in WinDbg (Classic)"
+      href: processes-and-threads-window.md
+    - name: "Using the Watch Window - WinDbg (Classic)"
+      href: watch-window.md
+    - name: "Using the Scratch Pad - WinDbg (Classic) - WinDbg (Classic)"
+      href: scratch-pad.md
+    - name: "Using Workspaces - WinDbg (Classic)"
+# Auto-expanded node
+      items: 
+      - name: "Using Workspaces - WinDbg (Classic)"
+        href: using-workspaces.md
+      - name: "Creating and Opening a Workspace"
+        href: creating-and-opening-a-workspace.md
+      - name: "Workspace Contents"
+        href: workspace-contents.md
+      - name: "Using and Customizing WinDbg Themes - WinDbg (Classic)"
+# Auto-expanded node
+        items: 
+        - name: "Using and Customizing WinDbg Themes - WinDbg (Classic)"
+          href: using-and-customizing-windbg-themes.md
+        - name: "Loading a Theme"
+          href: loading-a-theme.md
+        - name: "Customizing a Theme"
+          href: customizing-a-theme.md
+        - name: "Using Themes Provided in Debugging Tools for Windows"
+          href: using-themes-provided-in-debugging-tools-for-windows.md
+    - name: "Using the Toolbar and Status Bar - WinDbg (Classic)"
+      href: using-the-toolbar-and-status-bar.md
+    - name: "Toolbar Buttons - WinDbg (Classic)"
+      href: toolbar-buttons.md
+    - name: "Keyboard Shortcuts - WinDbg (Classic)"
+      href: keyboard-shortcuts.md
+    - name: "Using the Help Documentation - WinDbg (Classic)"
+      href: using-the-help-documentation.md
   - name: "Debugging Previous Versions of Windows"
 # Auto-expanded node
     items: 
-    - name: "Debugging Previous Versions of Windows"
-      href: debugging-previous-versions-of-windows.md
-    - name: "Debugging Tools For Windows: What's New"
-# Auto-expanded node
-      items: 
-      - name: "Debugging Tools For Windows: What's New"
-        href: debugging-tools-for-windows--what-s-new.md
-      - name: "Debugging Tools for Windows: New for Windows 8.1"
-        href: debugging-tools-for-windows--new-for-windows-8-1.md
-      - name: "Debugging Tools for Windows: New for Windows 8"
-        href: debugging-tools-for-windows--new-for-windows-8.md
-    - name: "Debugging Tools For Windows8 Release Notes"
+    - name: "Debugging Tools for Windows: New for Windows 10 - WinDbg (Classic)"
+      href: debugging-tools-for-windows--new-for-windows-10.md
+    - name: "Debugging Tools for Windows: New for Windows 8.1"
+      href: debugging-tools-for-windows--new-for-windows-8-1.md
+    - name: "Debugging Tools for Windows: New for Windows 8"
+      href: debugging-tools-for-windows--new-for-windows-8.md
+    - name: "Debugging Tools For Windows 8 Release Notes"
       href: debugging-tools-for-windows8-release-notes.md
+    - name: "Windows 7 Debugging Tools for Windows"
+      href: debugging-previous-versions-of-windows.md
     - name: "Debugging Windows Vista"
       href: debugging-windows-vista.md
-    - name: "Debugging Using Visual Studio"
-      href: debugging-using-visual-studio.md
-    - name: "Setting Up User-Mode Debugging in Visual Studio"
-# Auto-expanded node
-      items: 
-      - name: "Setting Up User-Mode Debugging in Visual Studio"
-        href: setting-up-user-mode-debugging-in-visual-studio.md
-      - name: "Debugging a User-Mode Process Using Visual Studio"
-        href: debugging-a-user-mode-process-using-visual-studio.md
-      - name: "Opening a Dump File Using Visual Studio"
-        href: opening-a-crash-dump-file-using-visual-studio.md
-      - name: "Kernel-Mode Debugging in Visual Studio"
-        href: performing-kernel-mode-debugging-using-visual-studio.md
-      - name: "Ending a Debugging Session in Visual Studio"
-        href: ending-a-debugging-session-in-visual-studio.md
-      - name: "Setting Symbol and Executable Image Paths in Visual Studio"
-        href: setting-symbol-and-source-paths-in-visual-studio.md
-      - name: "Remote Debugging Using Visual Studio"
-        href: remote-debugging-using-visual-studio.md
-      - name: "Entering Debugger Commands in Visual Studio"
-        href: entering-debugger-commands-in-visual-studio.md
-      - name: "Setting Breakpoints in Visual Studio"
-        href: setting-breakpoints-in-visual-studio.md
-      - name: "Viewing the Call Stack in Visual Studio"
-        href: viewing-the-call-stack-in-visual-studio.md
-      - name: "Source Code Debugging in Visual Studio"
-        href: viewing-source-and-assembly-code-in-visual-studio.md
-      - name: "Viewing and Editing Memory and Registers in Visual Studio"
-        href: viewing-memory--variables--and-registers-in-visual-studio.md
-      - name: "Controlling Threads and Processes in Visual Studio"
-        href: viewing-threads-and-processes-in-visual-studio.md
-      - name: "Configuring Exceptions and Events in Visual Studio"
-        href: configuring-exceptions-and-events-in-visual-studio.md
-      - name: "Keeping a Log File in Visual Studio"
-        href: keeping-a-log-file-in-visual-studio.md
-    - name: "Setting Up Kernel-Mode Debugging in Visual Studio"
-# Auto-expanded node
-      items: 
-      - name: "Setting Up Kernel-Mode Debugging in Visual Studio"
-        href: setting-up-kernel-mode-debugging-in-visual-studio.md
-      - name: "Setting Up Kernel-Mode Debugging over a Network Cable in Visual Studio"
-        href: setting-up-a-network-debugging-connection-in-visual-studio.md
-      - name: "Setting Up Kernel-Mode Debugging over a 1394 Cable in Visual Studio"
-        href: setting-up-a-1394-cable-connection-in-visual-studio.md
-      - name: "Setting Up Kernel-Mode Debugging over a USB 3.0 Cable in Visual Studio"
-        href: setting-up-a-usb-3-0-cable-connection-in-visual-studio.md
-      - name: "Setting Up Kernel-Mode Debugging over a USB 2.0 Cable in Visual Studio"
-        href: setting-up-a-usb-2-0-cable-connection-in-visual-studio.md
-      - name: "Setting Up Kernel-Mode Debugging over a Serial Cable in Visual Studio"
-        href: setting-up-a-null-modem-cable-connection-in-visual-studio.md
-      - name: "Setting Up Kernel-Mode Debugging using Serial over USB in Visual Studio"
-        href: setting-up-kernel-mode-debugging-using-serial-over-usb-in-visual-studio.md
-      - name: "Setting Up Kernel-Mode Debugging of a Virtual Machine in Visual Studio"
-        href: setting-up-a-connection-to-a-virtual-machine-in-visual-studio.md
 - name: "Debugging Techniques"
 # Auto-expanded node
   items: 
@@ -1789,13 +1686,15 @@
         href: debugging-the-service-application-automatically.md
       - name: "Debugging the Service Application Manually"
         href: debugging-the-service-application-manually.md
-- name: "Symbols for Windows Debugging (WinDbg, KD, CDB, NTSD)"
+- name: "Symbols for Windows Debugging"
 # Auto-expanded node
   items: 
-  - name: "Symbols for Windows Debugging (WinDbg, KD, CDB, NTSD)"
+  - name: "Symbols for Windows Debugging"
     href: symbols.md
   - name: "Microsoft public symbol server"
     href: microsoft-public-symbols.md
+  - name: "Download  Windows Symbol Packages for Debugging"
+    href: debugger-download-symbols.md
   - name: "Symbol path for Windows debuggers"
     href: symbol-path.md
   - name: "Using a Symbol Server"
@@ -4916,216 +4815,3 @@
       href: stack-unwind-information-not-available.md
     - name: "No Header Information Available"
       href: no-header-information-available.md
-  - name: "WinDbg Graphical Interface Features"
-# Auto-expanded node
-    items: 
-    - name: "WinDbg Graphical Interface Features"
-      href: windbg-graphical-interface-features.md
-    - name: "File Menu"
-# Auto-expanded node
-      items: 
-      - name: "File Menu"
-        href: file-menu.md
-      - name: "File | Open Source File"
-        href: file---open-source-file.md
-      - name: "File | Close Current Window"
-        href: file---close-current-window.md
-      - name: "File | Open Executable"
-        href: file---open-executable.md
-      - name: "File | Attach to a Process"
-        href: file---attach-to-a-process.md
-      - name: "File | Open Crash Dump"
-        href: file---open-crash-dump.md
-      - name: "File | Connect to Remote Session"
-        href: file---connect-to-remote-session.md
-      - name: "File | Connect to Remote Stub"
-        href: file---connect-to-remote-stub.md
-      - name: "File | Kernel Debug"
-        href: file---kernel-debug.md
-      - name: "File | Symbol File Path"
-        href: file---symbol-file-path.md
-      - name: "File | Source File Path"
-        href: file---source-file-path.md
-      - name: "File | Image File Path"
-        href: file---image-file-path.md
-      - name: "File | Open Workspace"
-        href: file---open-workspace.md
-      - name: "File | Save Workspace"
-        href: file---save-workspace.md
-      - name: "File | Save Workspace As"
-        href: file---save-workspace-as.md
-      - name: "File | Clear Workspace"
-        href: file---clear-workspace.md
-      - name: "File | Delete Workspaces"
-        href: file---delete-workspaces.md
-      - name: "File | Open Workspace in File"
-        href: file---open-workspace-in-file.md
-      - name: "File | Save Workspace to File"
-        href: file---save-workspace-to-file.md
-      - name: "File | Map Network Drive"
-        href: file---map-network-drive.md
-      - name: "File | Disconnect Network Drive"
-        href: file---disconnect-network-drive.md
-      - name: "File | Recent Files"
-        href: file---recent-files.md
-      - name: "File | Exit"
-        href: file---exit.md
-    - name: "Edit Menu"
-# Auto-expanded node
-      items: 
-      - name: "Edit Menu"
-        href: edit-menu.md
-      - name: "Edit | Cut"
-        href: edit---cut.md
-      - name: "Edit | Copy"
-        href: edit---copy.md
-      - name: "Edit | Paste"
-        href: edit---paste.md
-      - name: "Edit | Select All"
-        href: edit---select-all.md
-      - name: "Edit | Write Window Text to File"
-        href: edit---write-window-text-to-file.md
-      - name: "Edit | Add to Command Output"
-        href: edit---add-to-command-output.md
-      - name: "Edit | Clear Command Output"
-        href: edit---clear-command-output.md
-      - name: "Edit | Evaluate Selection"
-        href: edit---evaluate-selection.md
-      - name: "Edit | Display Selected Type"
-        href: edit---display-selected-type.md
-      - name: "Edit | Find"
-        href: edit---find.md
-      - name: "Edit | Find Next"
-        href: edit---find-next.md
-      - name: "Edit | Go to Address"
-        href: edit---go-to-address.md
-      - name: "Edit | Go to Line"
-        href: edit---go-to-line.md
-      - name: "Edit | Go to Current Instruction"
-        href: edit---go-to-current-instruction.md
-      - name: "Edit | Set Current Instruction"
-        href: edit---set-current-instruction.md
-      - name: "Edit | Breakpoints"
-        href: edit---breakpoints.md
-      - name: "Edit | Open/Close Log File"
-        href: edit---open-close-log-file.md
-    - name: "View Menu"
-# Auto-expanded node
-      items: 
-      - name: "View Menu"
-        href: view-menu.md
-      - name: "View | Command"
-        href: view---command.md
-      - name: "View | Watch"
-        href: view---watch.md
-      - name: "View | Locals"
-        href: view---locals.md
-      - name: "View | Registers"
-        href: view---registers.md
-      - name: "View | Memory"
-        href: view---memory.md
-      - name: "View | Call Stack"
-        href: view---call-stack.md
-      - name: "View | Disassembly"
-        href: view---disassembly.md
-      - name: "View | Scratch Pad"
-        href: view---scratch-pad.md
-      - name: "View | Processes and Threads"
-        href: view---processes-and-threads.md
-      - name: "View | Command Browser"
-        href: view---command-browser.md
-      - name: "View | Verbose Output"
-        href: view---verbose-output.md
-      - name: "View | Show Version"
-        href: view---show-version.md
-      - name: "View | Toolbar"
-        href: view---toolbar.md
-      - name: "View | Status Bar"
-        href: view---status-bar.md
-      - name: "View | Font"
-        href: view---font.md
-      - name: "View | Options"
-        href: view---options.md
-      - name: "View | Source language file extensions"
-        href: view---source-language-file-extensions.md
-      - name: "View | WinDbg Command Line"
-        href: view---windbg-command-line.md
-    - name: "Debug Menu"
-# Auto-expanded node
-      items: 
-      - name: "Debug Menu"
-        href: debug-menu.md
-      - name: "Debug | Go"
-        href: debug---go.md
-      - name: "Debug | Go Unhandled Exception"
-        href: debug---go-unhandled-exception.md
-      - name: "Debug | Go Handled Exception"
-        href: debug---go-handled-exception.md
-      - name: "Debug | Restart"
-        href: debug---restart.md
-      - name: "Debug | Stop Debugging"
-        href: debug---stop-debugging.md
-      - name: "Debug | Detach Debuggee"
-        href: debug---detach-debuggee.md
-      - name: "Debug | Break"
-        href: debug---break.md
-      - name: "Debug | Step Into"
-        href: debug---step-into.md
-      - name: "Debug | Step Over"
-        href: debug---step-over.md
-      - name: "Debug | Step Out"
-        href: debug---step-out.md
-      - name: "Debug | Run to Cursor"
-        href: debug---run-to-cursor.md
-      - name: "Debug | Source Mode"
-        href: debug---source-mode.md
-      - name: "Debug | Resolve Unqualified Symbols"
-        href: debug---resolve-unqualified-symbols.md
-      - name: "Debug | Event Filters"
-        href: debug---event-filters.md
-      - name: "Debug | Modules"
-        href: debug---modules.md
-      - name: "Debug | Kernel Connection | Cycle Baud Rate"
-        href: debug---kernel-connection---cycle-baud-rate.md
-      - name: "Debug | Kernel Connection | Cycle Initial Break"
-        href: debug---kernel-connection---cycle-initial-break.md
-      - name: "Debug | Kernel Connection | Resynchronize"
-        href: debug---kernel-connection---resynchronize.md
-    - name: "Window Menu"
-# Auto-expanded node
-      items: 
-      - name: "Window Menu"
-        href: window-menu.md
-      - name: "Window | Close All Source Windows"
-        href: window---close-all-source-windows.md
-      - name: "Window | Close All Error Windows"
-        href: window---close-all-error-windows.md
-      - name: "Window | Open Dock"
-        href: window---open-dock.md
-      - name: "Window | Dock All"
-        href: window---dock-all.md
-      - name: "Window | Undock All"
-        href: window---undock-all.md
-      - name: "Window | MDI Emulation"
-        href: window---mdi-emulation.md
-      - name: "Window | Automatically Open Disassembly"
-        href: window---automatically-open-disassembly.md
-      - name: "List of Open Windows"
-        href: list-of-open-windows.md
-    - name: "Help Menu"
-# Auto-expanded node
-      items: 
-      - name: "Help Menu"
-        href: help-menu.md
-      - name: "Help | Contents"
-        href: help---contents.md
-      - name: "Help | Index"
-        href: help---index.md
-      - name: "Help | Search"
-        href: help---search.md
-      - name: "Help | About"
-        href: help---about.md
-    - name: "Toolbar Buttons"
-      href: toolbar-buttons.md
-    - name: "Keyboard Shortcuts"
-      href: keyboard-shortcuts.md

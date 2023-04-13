@@ -14,7 +14,7 @@ api_type:
 
 # WinDbg Command-Line Options
 
-First-time users of WinDbg should begin with the [Debugging Using WinDbg](debugging-using-windbg.md) section.
+First-time users of WinDbg should begin with the [Debugging Using WinDbg (Classic)](debugging-using-windbg.md) section.
 
 The WinDbg command line uses the following syntax:
 
@@ -111,7 +111,7 @@ Specifies the location of the executables that generated the fault. If the path 
 Allow journaling.
 
 <span id="_______-k__ConnectType_"></span><span id="_______-k__connecttype_"></span><span id="_______-K__CONNECTTYPE_"></span> **-k** \[*ConnectType*\]  
-(Kernel mode only) Starts a kernel debugging session. For details, see [Live Kernel-Mode Debugging Using WinDbg](performing-kernel-mode-debugging-using-windbg.md). If **-k** is used without any *ConnectType* options following it, it must be the final entry on the command line.
+(Kernel mode only) Starts a kernel debugging session. For details, see [Live Kernel-Mode Debugging Using WinDbg (Classic)](performing-kernel-mode-debugging-using-windbg.md). If **-k** is used without any *ConnectType* options following it, it must be the final entry on the command line.
 
 <span id="_______-kl______"></span><span id="_______-KL______"></span> **-kl**   
 (Kernel mode only) Starts a kernel debugging session on the same machine as the debugger.
@@ -150,7 +150,7 @@ Specifies the decimal process ID to be debugged. This is used to debug a process
 (User mode only) Prevents the debugger from requesting an initial break-in when attaching to a target process. This can be useful if the application is already suspended, or if you wish to avoid creating a break-in thread in the target.
 
 <span id="_______-pd______"></span><span id="_______-PD______"></span> **-pd**   
-(User mode only) Causes the target application not to be terminated at the end of the debugging session. See [Ending a Debugging Session in WinDbg](ending-a-debugging-session-in-windbg.md) for details.
+(User mode only) Causes the target application not to be terminated at the end of the debugging session. See [Ending a Debugging Session in WinDbg (Classic)](ending-a-debugging-session-in-windbg.md) for details.
 
 <span id="_______-pe______"></span><span id="_______-PE______"></span> **-pe**   
 (User mode only) Indicates that the target application is already being debugged. See [Re-attaching to the Target Application](reattaching-to-the-target-application.md) for details.
@@ -171,7 +171,7 @@ Specifies the break timeout, in seconds. The default is 30. See [Controlling the
 (User mode only) Specifies that the debugger should attach to the target process noninvasively. For details, see [Noninvasive Debugging (User Mode)](noninvasive-debugging--user-mode-.md).
 
 <span id="_______-Q______"></span><span id="_______-q______"></span> **-Q**   
-Suppresses the "Save Workspace?" dialog box. Workspaces are not automatically saved. See [Using Workspaces](using-workspaces.md) for details.
+Suppresses the "Save Workspace?" dialog box. Workspaces are not automatically saved. See [Using Workspaces - WinDbg (Classic)](using-workspaces.md) for details.
 
 <span id="_______-QS______"></span><span id="_______-qs______"></span> **-QS**   
 Suppresses the "Reload Source?" dialog box. Source files are not automatically reloaded.
@@ -180,7 +180,7 @@ Suppresses the "Reload Source?" dialog box. Source files are not automatically r
 Suppresses the "Reload Source?" dialog box and automatically reloads source files.
 
 <span id="_______-QY______"></span><span id="_______-qy______"></span> **-QY**   
-Suppresses the "Save Workspace?" dialog box and automatically saves workspaces. See [Using Workspaces](using-workspaces.md) for details.
+Suppresses the "Save Workspace?" dialog box and automatically saves workspaces. See [Using Workspaces - WinDbg (Classic)](using-workspaces.md) for details.
 
 <span id="_______-robp______"></span><span id="_______-ROBP______"></span> **-robp**   
 This allows CDB to set a breakpoint on a read-only memory page. (The default is for such an operation to fail.)
@@ -222,13 +222,13 @@ Sets WinDbg window title.
 Enables verbose output from debugger.
 
 <span id="_______-W_______Workspace______"></span><span id="_______-w_______workspace______"></span><span id="_______-W_______WORKSPACE______"></span> **-W** *Workspace*   
-Loads the given named workspace. If the workspace name contains spaces, enclose it in quotation marks. If no workspace of this name exists, you will be given the option of creating a new workspace with this name or abandoning the load attempt. For details, see [Using Workspaces](using-workspaces.md).
+Loads the given named workspace. If the workspace name contains spaces, enclose it in quotation marks. If no workspace of this name exists, you will be given the option of creating a new workspace with this name or abandoning the load attempt. For details, see [Using Workspaces - WinDbg (Classic)](using-workspaces.md).
 
 <span id="_______-WF_______Filename______"></span><span id="_______-wf_______filename______"></span><span id="_______-WF_______FILENAME______"></span> **-WF** *Filename*   
-Loads the workspace from the given file. *Filename* should include the file and the extension (usually .wew). If the workspace name contains spaces, enclose it in quotation marks. If no workspace file with this name exists, you will be given the option of creating a new workspace file with this name or abandoning the load attempt. For details, see [Using Workspaces](using-workspaces.md).
+Loads the workspace from the given file. *Filename* should include the file and the extension (usually .wew). If the workspace name contains spaces, enclose it in quotation marks. If no workspace file with this name exists, you will be given the option of creating a new workspace file with this name or abandoning the load attempt. For details, see [Using Workspaces - WinDbg (Classic)](using-workspaces.md).
 
 <span id="_______-WX______"></span><span id="_______-wx______"></span> **-WX**   
-Disables automatic workspace loading. For details, see [Using Workspaces](using-workspaces.md).
+Disables automatic workspace loading. For details, see [Using Workspaces - WinDbg (Classic)](using-workspaces.md).
 
 <span id="_______-y_______SymbolPath______"></span><span id="_______-y_______symbolpath______"></span><span id="_______-Y_______SYMBOLPATH______"></span> **-y** *SymbolPath*   
 Specifies the symbol search path. Separate multiple paths with a semicolon (**;**). If the path contains spaces, it should be enclosed in quotation marks. For details, and for other ways to change this path, see [Symbol Path](symbol-path.md).

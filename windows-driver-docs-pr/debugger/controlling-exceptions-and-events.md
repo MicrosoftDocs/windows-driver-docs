@@ -57,7 +57,7 @@ You can control the break status and handling status by doing one of the followi
 
 -   (CDB, NTSD, and KD) Use the **sxe** or **sxd** keyword in the [Tools.ini](configuring-tools-ini.md) file.
 
--   (WinDbg only) Select [Event Filters](debug---event-filters.md) on the **Debug** menu to open the **Event Filters** dialog box, and then choose the options that you want.
+-   (WinDbg only) Select **Event Filters** on the **Debug** menu to open the **Event Filters** dialog box, and then choose the options that you want.
 
 The **SX\\*** command, the **-x\\*** command-line option, and the **sx\\*** Tools.ini keyword typically set the break status of the specified event. You can add the **-h** option to cause the handling status to be set instead.
 
@@ -125,7 +125,7 @@ or
 
 If an exception is not anticipated by an **SX**\* setting, the target application breaks into the debugger on the second chance. The default status for events is listed in the following "Event Definitions and Defaults" section of this topic.
 
-To set break status by using the WinDbg graphical interface, [Event Filters](debug---event-filters.md) on the **Debug** menu select the event that you want from the list in the **Event Filters** dialog box, and then select **Enabled**, **Disabled**, **Output**, or **Ignore**.
+To set break status by using the WinDbg graphical interface, **Event Filters** on the **Debug** menu select the event that you want from the list in the **Event Filters** dialog box, and then select **Enabled**, **Disabled**, **Output**, or **Ignore**.
 
 ### <span id="controlling_handling_status"></span><span id="CONTROLLING_HANDLING_STATUS"></span>Controlling Handling Status
 
@@ -168,11 +168,11 @@ When you use the **SX**\* command on **cc**, **hc**, **bpec**, and **ssec** even
 
  
 
-To set handling status by using the WinDbg graphical interface, select [Event Filters](debug---event-filters.md) on the **Debug** menu, select the event that you want from the list in the **Event Filters** dialog box, and then select **Handled** or **Not Handled**.
+To set handling status by using the WinDbg graphical interface, select **Event Filters** on the **Debug** menu, select the event that you want from the list in the **Event Filters** dialog box, and then select **Handled** or **Not Handled**.
 
 ### <span id="automatic_commands"></span><span id="AUTOMATIC_COMMANDS"></span>Automatic Commands
 
-The debugger also enables you to set commands that are automatically executed if the event or exception causes a break into the debugger. You can set a command string for the first-chance break and a command string for the second-chance break. You can set these strings with the [**SX\\***](sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md) command or the [Debug | Event Filters](debug---event-filters.md) command. Each command string can contain multiple commands that are separated with semicolons.
+The debugger also enables you to set commands that are automatically executed if the event or exception causes a break into the debugger. You can set a command string for the first-chance break and a command string for the second-chance break. You can set these strings with the [**SX\\***](sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-.md) command or the **Debug | Event Filters** command. Each command string can contain multiple commands that are separated with semicolons.
 
 These commands are executed regardless of the break status. That is, if the break status is "Ignore," the command is still executed. If the break status is "Second-chance break," the first-chance command is executed when the exception first occurs, before any other exception handlers are involved. The command string can end with an execution command such as [**g (Go)**](g--go-.md), [**gh (Go with Exception Handled)**](gh--go-with-exception-handled-.md), or [**gn (Go with Exception Not Handled)**](gn--gn--go-with-exception-not-handled-.md).
 

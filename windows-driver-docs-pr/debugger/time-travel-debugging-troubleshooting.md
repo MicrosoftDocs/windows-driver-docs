@@ -14,11 +14,11 @@ This section describes how to troubleshoot time travel traces.
 
 ### I get an error message that says "WinDbg must be run elevated to support Time Travel Debugging"
 
-As the message indicates, running the debugger elevated is a requirement. In order to run the debugger elevated, right-click on the **WinDbg Preview** icon in the start menu and then select **More** > **Run as Administrator**.
+As the message indicates, running the debugger elevated is a requirement. In order to run the debugger elevated, right-click on the **WinDbg** icon in the start menu and then select **More** > **Run as Administrator**.
 
-### I installed WinDbg Preview with an account that does not have administrator privileges and I get an error message that says "WinDbg must be run elevated to support Time Travel Debugging"
+### I installed WinDbg with an account that does not have administrator privileges and I get an error message that says "WinDbg must be run elevated to support Time Travel Debugging"
 
-Re-install WinDbg Preview using an account that has administrator privileges and use that account when recording in the debugger.
+Re-install WinDbg using an account that has administrator privileges and use that account when recording in the debugger.
 
 ### I can't launch and record a UWP application
 
@@ -59,7 +59,7 @@ To do this you may run `!index -force`. If that fails:
 
 1. Close the debugger.
 2. Delete the existing IDX file, it will have the same name as the .RUN trace file and be located in the same directory that the .RUN file is.
-3. Open the trace .RUN file in WinDbg Preview. This will run the `!index` command to re-create the index.
+3. Open the trace .RUN file in WinDbg. This will run the `!index` command to re-create the index.
 4. Use the `!index -status` command to confirm that the trace index is functional.
 
 Ensure that there's enough space for the index file in the same location where the trace file resides.

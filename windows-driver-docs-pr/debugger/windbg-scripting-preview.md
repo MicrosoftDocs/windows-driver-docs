@@ -1,16 +1,16 @@
 ---
-title: WinDbg Preview - Scripting Menu
-description: This section describes how to use scripting in the WinDbg preview debugger.
+title: WinDbg - Scripting Menu
+description: This section describes how to use scripting in the WinDbg debugger.
 ms.date: 01/20/2020
 ---
 
-# WinDbg Preview - Scripting Menu
+# WinDbg - Scripting Menu
 
-This section describes how to use the scripting support in the WinDbg Preview.
+This section describes how to use the scripting support in the WinDbg.
 
 ![Screen shot of scripting menu in debugger.](images/windbgx-javascript-new-script.png)
 
-The WinDbg Preview script window features basic syntax highlighting, IntelliSense, and error recognition. 
+The WinDbg script window features basic syntax highlighting, IntelliSense, and error recognition.
 
 Use the ribbon buttons to:
 - Create a new script
@@ -37,7 +37,7 @@ For more information about working with JavaScript, see these topics:
 
 [JavaScript Debugger Example Scripts](javascript-debugger-example-scripts.md)
 
-## NatVis Scripting 
+## NatVis Scripting
 
 Use **New Script** > **NatVis** to open the following blank NatVis template.
 
@@ -54,4 +54,4 @@ For more information about working with NatVis, see [Debugger Objects in NatVis]
 
 ## See Also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Features](debugging-using-windbg-preview.md)

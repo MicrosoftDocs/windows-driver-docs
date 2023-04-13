@@ -1,12 +1,12 @@
 ---
-title: WinDbg Preview - File Menu
-description: This section describes how to use the file menu in the WinDbg preview debugger.
+title: WinDbg - File Menu
+description: This section describes how to use the file menu in the WinDbg debugger.
 ms.date: 01/10/2020
 ---
 
-# WinDbg Preview - File Menu
+# WinDbg - File Menu
 
-![Small logo of windbg preview with bit pattern.](images/windbgx-preview-logo.png)
+![Small logo of WinDbg with bit pattern.](images/windbgx-preview-logo.png)
 
 This topic describes how to how to use the file menu.
 
@@ -16,7 +16,7 @@ When you first open the file menu, you'll see *Start debugging* and your recent 
 
 #### Recent
 
-The recent list contains a list of your recent workspaces and debugger connections. For more information on working settings an workspaces see [WinDbg Preview Setup – Settings and workspaces](windbg-setup-preview.md).
+The recent list contains a list of your recent workspaces and debugger connections. For more information on working settings an workspaces see [WinDbg Setup – Settings and workspaces](windbg-setup-preview.md).
 
 You can use the right click menu to manage your workspaces, like pinning, renaming and moving them. As well as editing them in notepad.
 
@@ -24,8 +24,8 @@ You can use the right click menu to manage your workspaces, like pinning, renami
 
 #### Start a new session
 
-Use the other tabs in the *Start debugging* section to start a new debugger session, like attaching or launching a process. For more information on starting a new session see [WinDbg Preview - Start a user-mode session](windbg-user-mode-preview.md)
-and [WinDbg Preview - Start a kernel mode session](windbg-kernel-mode-preview.md)
+Use the other tabs in the *Start debugging* section to start a new debugger session, like attaching or launching a process. For more information on starting a new session see [WinDbg - Start a user-mode session](windbg-user-mode-preview.md)
+and [WinDbg - Start a kernel mode session](windbg-kernel-mode-preview.md)
 
 ### Save workspace
 
@@ -41,15 +41,15 @@ C:\Users\*UserName*\AppData\Local\DBG\targets
 
 ### Open source file
 
-Use *Open source file* to open a source file. Do this when you want to work with additional source files that have not been loaded because of code execution. For more information on working with source files, see [Source Code Debugging in WinDbg](source-window.md)
+Use *Open source file* to open a source file. Do this when you want to work with additional source files that have not been loaded because of code execution. For more information on working with source files, see [Source Code Debugging in WinDbg (Classic)](source-window.md)
 
 ### Open script
 
-Use *Open script* to open an existing Javascript or NatVis script. For more information on working with scripts see [WinDbg Preview - Scripting Menu](windbg-scripting-preview.md).
+Use *Open script* to open an existing Javascript or NatVis script. For more information on working with scripts see [WinDbg - Scripting Menu](windbg-scripting-preview.md).
 
 ### Settings
 
-Use the settings menu to set the source and symbol path as well as choose the light and dark theme for the debugger. For more information on settings see [WinDbg Preview Setup – settings and workspaces](windbg-setup-preview.md).
+Use the settings menu to set the source and symbol path as well as choose the light and dark theme for the debugger. For more information on settings see [WinDbg Setup – settings and workspaces](windbg-setup-preview.md).
 
 ### About
 
@@ -63,4 +63,4 @@ Use *Exit* to exit the debugger.
 
 ## See Also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Features](debugging-using-windbg-preview.md)

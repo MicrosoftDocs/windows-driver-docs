@@ -61,8 +61,6 @@ This command is available only in WinDbg and cannot be used in script files.
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For information about debugging information windows, see [Using Debugging Information Windows](using-debugging-information-windows.md).
-
 ## Remarks
 
 Without any parameters, **.suspend\_ui** displays whether debugging information windows are currently suspended.

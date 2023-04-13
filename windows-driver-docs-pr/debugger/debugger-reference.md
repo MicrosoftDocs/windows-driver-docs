@@ -23,7 +23,6 @@ This reference section includes:
 
 [Debugger Error and Warning Messages](debugger-error-and-warning-messages.md)
 
-[WinDbg Graphical Interface Features](windbg-graphical-interface-features.md)
 
  
 

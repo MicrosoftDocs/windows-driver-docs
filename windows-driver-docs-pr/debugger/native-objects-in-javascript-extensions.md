@@ -448,7 +448,7 @@ Debugger.Sessions.First().Processes.First().Threads.Duplicate(2),d              
 
 
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 [Native Debugger Objects in JavaScript Extensions - Debugger Object Details](native-objects-in-javascript-extensions-debugger-objects.md)
 

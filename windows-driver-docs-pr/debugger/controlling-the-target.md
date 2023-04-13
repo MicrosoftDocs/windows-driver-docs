@@ -1,15 +1,13 @@
 ---
-title: Controlling the Target
-description: Controlling the Target
+title: Controlling the Target using WinDbg Classic
+description: Controlling the Target using WinDbg Classic
 keywords: ["controlling the target", "controlling the target, overview", "starting and stopping the target", "execution of the target"]
 ms.date: 05/23/2017
 ---
 
 # Controlling the Target
 
-
 ## <span id="ddk_controlling_the_target_dbg"></span><span id="DDK_CONTROLLING_THE_TARGET_DBG"></span>
-
 
 While you are debugging a target application in user mode or a target computer in kernel mode, the target can be *running* or *stopped*.
 
@@ -70,7 +68,7 @@ You can use the commands in the following forms.
 <tr class="odd">
 <td align="left"></td>
 <td align="left"><img src="images/tbcursor.png" alt="Screen shot of the Run to Cursor button" /></td>
-<td align="left"><p><a href="debug---run-to-cursor.md" data-raw-source="[Debug | Run to Cursor](debug---run-to-cursor.md)">Debug | Run to Cursor</a></p></td>
+<td align="left"><p>Debug | Run to Cursor</p></td>
 <td align="left"><p>F7</p>
 <p>CTRL + F10</p></td>
 <td align="left"><p>(WinDbg only) Executes until it reaches the line that the cursor marks.</p></td>
@@ -78,28 +76,28 @@ You can use the commands in the following forms.
 <tr class="even">
 <td align="left"></td>
 <td align="left"><img src="images/tbstop.png" alt="Screen shot of the Stop Debugging button" /></td>
-<td align="left"><p><a href="debug---stop-debugging.md" data-raw-source="[Debug | Stop Debugging](debug---stop-debugging.md)">Debug | Stop Debugging</a></p></td>
+<td align="left"><p>Debug | Stop Debugging</p></td>
 <td align="left"><p>SHIFT + F5</p></td>
 <td align="left"><p>Stops all debugging and closes the target.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>(CDB/KD only) <strong><a href="ctrl-c--break-.md" data-raw-source="[CTRL+C](ctrl-c--break-.md)">CTRL+C</a></strong></p></td>
 <td align="left"><img src="images/tbbreak.png" alt="Screen shot of the Break button" /></td>
-<td align="left"><p><a href="debug---break.md" data-raw-source="[Debug | Break](debug---break.md)">Debug | Break</a></p></td>
+<td align="left"><p>Debug | Break</p></td>
 <td align="left"><p>CTRL + BREAK</p></td>
 <td align="left"><p>Execution stops, and the debugger breaks into the target.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong><a href="-restart--restart-target-application-.md" data-raw-source="[.restart (Restart Target Application)](-restart--restart-target-application-.md)">.restart (Restart Target Application)</a></strong></p></td>
 <td align="left"><img src="images/tbrestart.png" alt="Screen shot of the Restart button" /></td>
-<td align="left"><p><a href="debug---restart.md" data-raw-source="[Debug | Restart](debug---restart.md)">Debug | Restart</a></p></td>
+<td align="left"><p>Debug | Restart</p></td>
 <td align="left"><p>CTRL + SHIFT + F5</p></td>
 <td align="left"><p>(User mode only) Restarts the target application.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong><a href="g--go-.md" data-raw-source="[g (Go)](g--go-.md)">g (Go)</a></strong></p></td>
 <td align="left"><img src="images/tbgo.png" alt="Screen shot of the Go button" /></td>
-<td align="left"><p><a href="debug---go.md" data-raw-source="[Debug | Go](debug---go.md)">Debug | Go</a></p></td>
+<td align="left"><p>Debug | Go</p></td>
 <td align="left"><p>F5</p></td>
 <td align="left"><p>Target executes freely.</p></td>
 </tr>
@@ -113,28 +111,28 @@ You can use the commands in the following forms.
 <tr class="odd">
 <td align="left"><p><strong><a href="gh--go-with-exception-handled-.md" data-raw-source="[gh (Go with Exception Handled)](gh--go-with-exception-handled-.md)">gh (Go with Exception Handled)</a></strong></p></td>
 <td align="left"></td>
-<td align="left"><p><a href="debug---go-handled-exception.md" data-raw-source="[Debug | Go Handled Exception](debug---go-handled-exception.md)">Debug | Go Handled Exception</a></p></td>
+<td align="left"><p>Debug | Go Handled Exception</p></td>
 <td align="left"></td>
 <td align="left"><p>Same as <strong>g (Go)</strong>, except that the current exception is treated as handled.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong><a href="gn--gn--go-with-exception-not-handled-.md" data-raw-source="[gn (Go with Exception Not Handled)](gn--gn--go-with-exception-not-handled-.md)">gn (Go with Exception Not Handled)</a></strong></p></td>
 <td align="left"></td>
-<td align="left"><p><a href="debug---go-unhandled-exception.md" data-raw-source="[Debug | Go Unhandled Exception](debug---go-unhandled-exception.md)">Debug | Go Unhandled Exception</a></p></td>
+<td align="left"><p>Debug | Go Unhandled Exception</p></td>
 <td align="left"></td>
 <td align="left"><p>Same as <strong>g (Go)</strong>, except that the current exception is treated as unhandled.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong><a href="gu--go-up-.md" data-raw-source="[gu (Go Up)](gu--go-up-.md)">gu (Go Up)</a></strong></p></td>
 <td align="left"><img src="images/tbout.png" alt="Screen shot of the Step Out button" /></td>
-<td align="left"><p><a href="debug---step-out.md" data-raw-source="[Debug | Step Out](debug---step-out.md)">Debug | Step Out</a></p></td>
+<td align="left"><p>Debug | Step Out</p></td>
 <td align="left"><p>SHIFT + F11</p></td>
 <td align="left"><p>Target executes until the current function is complete.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong><a href="p--step-.md" data-raw-source="[p (Step)](p--step-.md)">p (Step)</a></strong></p></td>
 <td align="left"><img src="images/tbover.png" alt="Screen shot of the Step Over button" /></td>
-<td align="left"><p><a href="debug---step-over.md" data-raw-source="[Debug | Step Over](debug---step-over.md)">Debug | Step Over</a></p></td>
+<td align="left"><p>Debug | Step Over</p></td>
 <td align="left"><p>F10</p></td>
 <td align="left"><p>Target executes one instruction. If this instruction is a function call, that function is executed as a single step.</p></td>
 </tr>
@@ -176,7 +174,7 @@ You can use the commands in the following forms.
 <tr class="even">
 <td align="left"><p><strong><a href="t--trace-.md" data-raw-source="[t (Trace)](t--trace-.md)">t (Trace)</a></strong></p></td>
 <td align="left"><img src="images/tbinto.png" alt="Screen shot of the Step Into button" /></td>
-<td align="left"><p><a href="debug---step-into.md" data-raw-source="[Debug | Step Into](debug---step-into.md)">Debug | Step Into</a></p></td>
+<td align="left"><p>Debug | Step Into</p></td>
 <td align="left"><p>F11</p>
 <p>F8</p></td>
 <td align="left"><p>Target executes one instruction. If this instruction is a function call, debugger traces into that call.</p></td>

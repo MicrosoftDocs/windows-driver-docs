@@ -29,7 +29,7 @@ The settings that you select will apply to any kernel-mode dump file created by 
 
 However, these settings do not affect dump files created by the [**.dump**](-dump--create-dump-file-.md) command. See [Creating a Dump File Without a System Crash](creating-a-dump-file-without-a-system-crash.md) for details on using this command.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [Kernel-Mode Dump Files](kernel-mode-dump-files.md)

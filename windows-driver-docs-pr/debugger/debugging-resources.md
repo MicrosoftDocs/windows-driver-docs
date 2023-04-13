@@ -1,7 +1,7 @@
 ---
 title: Debugging Resources
 description: Use Debugging Tools for Windows to debug drivers, applications, and services on Windows systems.
-ms.date: 02/09/2023
+ms.date: 03/07/2023
 ---
 
 # Debugging resources
@@ -30,7 +30,7 @@ Use Debugging Tools for Windows to debug drivers, applications, and services on 
 
 - [Defrag Tools Show](/shows/defrag-tools/)  - WinDbg Episodes 13-29
 
-- [Defrag Tools #182](/shows/defrag-tools/182-windbg-preview-part-1) and [Defrag Tools #183](/shows/defrag-tools/183-windbg-preview-part-2) that cover WinDbg Preview.
+- [Defrag Tools #182](/shows/defrag-tools/182-windbg-preview-part-1) and [Defrag Tools #183](/shows/defrag-tools/183-windbg-preview-part-2) that cover WinDbg.
 
 - [Defrag Tools #175 - Debugging the Network Stack](/shows/defrag-tools/175-debugging-network-stack) that covers NDIS debugging.
 

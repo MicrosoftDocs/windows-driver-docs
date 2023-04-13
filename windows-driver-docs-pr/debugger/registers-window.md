@@ -1,11 +1,11 @@
 ---
-title: Viewing and Editing Registers in WinDbg
+title: Viewing and Editing Registers in WinDbg (Classic)
 description: In WinDbg, you can view and edit registers by entering commands, by using the Registers window, or by using the Watch Window.
 keywords: ["debugging information windows, Registers window", "Registers window", "registers, Registers window"]
 ms.date: 05/23/2017
 ---
 
-# Viewing and Editing Registers in WinDbg
+# Viewing and Editing Registers in WinDbg (Classic)
 
 
 Registers are small volatile memory units that are located on the CPU. Many registers are dedicated to specific uses, and other registers are available for user-mode applications to use. The x86-based and x64-based processors have different collections of registers available. For more information about the registers on each processor, see [Processor Architecture](processor-architecture.md).
@@ -63,7 +63,7 @@ The Registers window has a toolbar that contains a **Customize** button and has 
 
 -   (Menu only) **Always floating** causes the window to remain undocked even if it is dragged to a docking location.
 
--   (Menu only) **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked. For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md).
+-   (Menu only) **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked. 
 
 -   (Menu only) **Help** opens this topic in the Debugging Tools for Windows documentation.
 
