@@ -1,12 +1,12 @@
 ---
-title: WinDbg Preview -  Notes, Command, Memory and Source Menus
+title: WinDbg -  Notes, Command, Memory and Source Menus
 description: This section describes how work with the Notes, Command, Memory and Source menus.
 ms.date: 01/10/2020
 ---
 
-# WinDbg Preview - Notes, Command, Memory and Source Menus
+# WinDbg - Notes, Command, Memory and Source Menus
 
-This section describes how work with the Notes, Command, Memory and Source menus in WinDbg Preview.
+This section describes how work with the Notes, Command, Memory and Source menus in WinDbg.
 
 ## Notes
 
@@ -44,4 +44,4 @@ Use the source menu to:
 
 ## See Also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Features](debugging-using-windbg-preview.md)

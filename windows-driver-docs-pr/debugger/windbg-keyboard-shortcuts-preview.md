@@ -1,14 +1,14 @@
 ---
-title: WinDbg Preview - keyboard shortcuts
-description: This section provides the keyboard shortcuts for the WinDbg preview debugger.
+title: WinDbg - keyboard shortcuts
+description: This section provides the keyboard shortcuts for the WinDbg debugger.
 ms.date: 01/09/2019
 ---
 
-# WinDbg Preview keyboard shortcuts
+# WinDbg keyboard shortcuts
 
-![Small logo on windbg preview.](images/windbgx-preview-logo.png)
+![Small logo on WinDbg.](images/windbgx-preview-logo.png)
 
-This section summarizes the keyboard shortcuts for the  WinDbg preview debugger.
+This section summarizes the keyboard shortcuts for the  WinDbg debugger.
 
 All of the ribbon menu options are available using the **Alt +** the first letter of the option. For example **Alt + H** to go to the home menu, **Alt + H + S** to stop debugging.
 
@@ -94,4 +94,4 @@ Ctrl+Alt+V      |       Toggle Verbose Mode
 
 ## See Also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Features](debugging-using-windbg-preview.md)

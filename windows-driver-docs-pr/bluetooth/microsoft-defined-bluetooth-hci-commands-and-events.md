@@ -69,7 +69,7 @@ The controller shall always complete this command promptly with a Command Comple
 
 #### Command_parameters
 
-**Subcommand_opcode** (1 octet):
+**Subcommand_opcode** (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -77,14 +77,14 @@ The controller shall always complete this command promptly with a Command Comple
 
 #### Return_parameters
 
-**Status** (1 octet):
+**Status** (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0x00 | The command succeeded. |
 | 0x01&nbsp;to&nbsp;0xFF | The command failed. See *Error Codes* in the Bluetooth Core specification for details. |
 
-**Subcommand_opcode** (1 octet):
+**Subcommand_opcode** (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -146,38 +146,38 @@ If the *RSSI_sampling_period* is 0x00 or 0xFF, the controller shall **not** noti
 
 #### Command_parameters
 
-Subcommand_opcode (1 octet):
+Subcommand_opcode (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0x01 | The subcommand opcode for [HCI_VS_MSFT_Monitor_Rssi][ref_HCI_VS_MSFT_Monitor_Rssi]. |
 
-Connection_Handle (2 octets):
+Connection_Handle (two octets):
 
 | Value | Parameter description |
 |--|--|
 | 0xXXXX | The handle for the connection whose RSSI must be monitored. |
 
-RSSI_threshold_high (1 octet):
+RSSI_threshold_high (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0xXX | The maximum expected RSSI value. The controller generates an event if the observed RSSI becomes greater than or equal to this value.<br>Unit: dBm<br>BR/EDR Range: -128&nbsp;to&nbsp;127 (signed integer)<br>LE Range: -127&nbsp;to&nbsp;20 (signed integer) |
 
-RSSI_threshold_low (1 octet):
+RSSI_threshold_low (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0xXX | The minimum expected RSSI value. The controller generates an event if the observed RSSI becomes less than or equal to this value.<br>Unit: dBm<br>BR/EDR Mandatory Range: -128&nbsp;to&nbsp;127 (signed integer)<br>LE Mandatory Range: -127&nbsp;to&nbsp;20 (signed integer) |
 
-RSSI_threshold_low_time_interval (1 octet):
+RSSI_threshold_low_time_interval (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0x00 | Reserved value. |
 | *N*&nbsp;=&nbsp;0xXX | The time in seconds over which the RSSI value should be below *RSSI_threshold_low* before an [HCI_VS_MSFT_Rssi_Event][ref_HCI_VS_MSFT_Rssi_Event] is generated.<br>Time period = *N* * 1 second<br>Mandatory Range: 0x01&nbsp;to&nbsp;0x3C |
 
-RSSI_sampling_period (1 octet):
+RSSI_sampling_period (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -187,7 +187,7 @@ RSSI_sampling_period (1 octet):
 
 #### Return_parameters
 
-Status (1 octet):
+Status (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -196,7 +196,7 @@ Status (1 octet):
 | 0x07 | The controller shall return *Memory Capacity Exceeded* if it doesn't have enough memory to process the command. |
 | *Error&nbsp;code* | The command failed. See *Error Codes* in the Bluetooth Core specification for details. |
 
-Subcommand_opcode (1 octet):
+Subcommand_opcode (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -225,7 +225,7 @@ The controller shall promptly generate a Command Completed event in response to 
 
 #### Command_parameters
 
-Subcommand_opcode (1 octet):
+Subcommand_opcode (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -239,14 +239,14 @@ Connection_Handle (2 octets):
 
 #### Return_parameters
 
-Status (1 octet):
+Status (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0x00 | The command succeeded. |
 | 0x01&nbsp;to&nbsp;0xFF | The command failed. See *Error Codes* in the Bluetooth Core specification for details. |
 
-Subcommand_opcode (1 octet):
+Subcommand_opcode (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -344,32 +344,32 @@ The controller may also refuse the command for other reasons such as resource ex
 
 #### Command_parameters
 
-Subcommand_opcode (1 octet):
+Subcommand_opcode (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0x03 | The subcommand opcode for [HCI_VS_MSFT_LE_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. |
 
-RSSI_threshold_high (1 octet):
+RSSI_threshold_high (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0xXX | The maximum expected RSSI value. The controller generates an event if the observed RSSI becomes greater than or equal to this value.<br>Unit: dBm<br>Mandatory Range: -127 to 20 (signed integer) |
 
-RSSI_threshold_low (1 octet):
+RSSI_threshold_low (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0xXX | The minimum expected RSSI value. The controller generates an event if the observed RSSI becomes less than or equal to this value.<br>Unit: dBm<br>Mandatory Range: -127 to 20 (signed integer) |
 
-RSSI_threshold_low_time_interval (1 octet):
+RSSI_threshold_low_time_interval (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0x00 | Reserved value. |
 | *N*&nbsp;=&nbsp;0xXX | The time in seconds over which the RSSI value should be below *RSSI_threshold_low* before an [HCI_VS_MSFT_Rssi_Event][ref_HCI_VS_MSFT_Rssi_Event] is generated<br>Time period = *N* * 1 second<br>Mandatory Range: 0x01&nbsp;to&nbsp;0x3C. |
 
-RSSI_sampling_period (1 octet):
+RSSI_sampling_period (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -377,7 +377,7 @@ RSSI_sampling_period (1 octet):
 | *N*&nbsp;=&nbsp;0xXX | The sampling interval in milliseconds.<br>Time period = *N* * 100 milliseconds.<br>Mandatory Range: 0x01&nbsp;to&nbsp;0xFE |
 | 0xFF | The controller shall not propagate any of the received advertisements to the host. |
 
-Condition_type (1 octet):
+Condition_type (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -389,7 +389,7 @@ Condition_type (1 octet):
 Condition:
 The applicable fields for Condition depend on the value of Condition_type. See the Condition_type and Condition parameters section for more information.
 
-Number_of_patterns (1 octet):
+Number_of_patterns (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -404,7 +404,7 @@ Pattern_data (>3 octets):
 | Start byte | Starting position of the pattern to be matched for the specified Data Type. |
 | Pattern | Pattern to be matched (size of Length – 0x2 bytes). |
 
-UUID_type (1 octet):
+UUID_type (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -424,7 +424,7 @@ IRK (16 octets):
 |--|--|
 | 0xXXXXXXXX&nbsp;XXXXXXXX&nbsp;XXXXXXXX&nbsp;XXXXXXXX | The IRK to be used to resolve the private address. |
 
-Address_type (1 octet):
+Address_type (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -432,7 +432,7 @@ Address_type (1 octet):
 | 0x01 | Random Device Address. |
 | 0x02&nbsp;to&nbsp;0xFF | Reserved values for future use. |
 
-BD_ADDR (6 octets):
+BD_ADDR (six octets):
 
 | Value | Parameter description |
 |--|--|
@@ -440,7 +440,7 @@ BD_ADDR (6 octets):
 
 #### Return_parameters
 
-Status (1 octet):
+Status (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -448,13 +448,13 @@ Status (1 octet):
 | 0x07 | The controller shall return Memory Capacity Exceeded if it doesn't have enough memory to process the command. |
 | Error code | The command failed. See *Error Codes* in the Bluetooth Core specification for details. |
 
-Subcommand_opcode (1 octet):
+Subcommand_opcode (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0x03 | The subcommand opcode for [HCI_VS_MSFT_LE_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. |
 
-Monitor_handle (1 octet):
+Monitor_handle (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -478,13 +478,13 @@ The controller shall promptly generate a Command Completed event in response to 
 
 #### Command_parameters
 
-Subcommand_opcode (1 octet):
+Subcommand_opcode (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0x04 | The subcommand opcode for [HCI_VS_MSFT_LE_Cancel_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Cancel_Monitor_Advertisement]. |
 
-Connection_Handle (1 octet):
+Connection_Handle (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -492,7 +492,7 @@ Connection_Handle (1 octet):
 
 #### Return_parameters
 
-Status (1 octet):
+Status (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -500,7 +500,7 @@ Status (1 octet):
 | 0x07 | The controller shall return Memory Capacity Exceeded if it doesn't have enough memory to process the command. |
 | Error code | The command failed. See *Error Codes* in the Bluetooth Core specification for details. |
 
-Subcommand_opcode (1 octet):
+Subcommand_opcode (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -532,13 +532,13 @@ The controller shall promptly generate a Command Completed event in response to 
 
 #### Command_parameters
 
-Subcommand_opcode (1 octet):
+Subcommand_opcode (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0x05 | The subcommand opcode for [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable][ref_HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable]. |
 
-Enable (1 octet):
+Enable (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -547,7 +547,7 @@ Enable (1 octet):
 
 #### Return_parameter
 
-Status (1 octet):
+Status (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -555,7 +555,7 @@ Status (1 octet):
 | 0x0C | The controller shall return *Command Disallowed* if the controller rejected the command because it previously saw an [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable][ref_HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable] command with *Enable* set to the same value as this command. |
 | Error&nbsp;code | The command failed. See *Error Codes* in the Bluetooth Core specification for details. |
 
-Subcommand_opcode (1 octet):
+Subcommand_opcode (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -580,13 +580,13 @@ The controller shall always complete this command promptly with a Command Comple
 
 #### Command_parameters
 
-Subcommand_opcode (1 octet):
+Subcommand_opcode (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0x06 | The subcommand opcode for HCI_VS_MSFT_Read_Absolute_RSSI. |
 
-Connection_Handle (2 octets):
+Connection_Handle (two octets):
 
 | Value | Parameter description |
 |--|--|
@@ -594,26 +594,26 @@ Connection_Handle (2 octets):
 
 #### Return_parameters
 
-Status (1 octet):
+Status (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0x00 | The command succeeded. |
 | 0x01&nbsp;to&nbsp;0xFF | The command failed. See *Error Codes* in the Bluetooth Core specification for details. |
 
-Subcommand_opcode (1 octet):
+Subcommand_opcode (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0x06 | The subcommand opcode for [HCI_VS_MSFT_Read_Absolute_RSSI][ref_HCI_VS_MSFT_Read_Absolute_RSSI]. |
 
-Connection_Handle (2 octets):
+Connection_Handle (two octets):
 
 | Value | Parameter description |
 |--|--|
 | 0xXXXX | The handle for the BR/EDR connection whose RSSI was read. |
 
-RSSI (1 octet):
+RSSI (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -651,26 +651,26 @@ Event_prefix (variable size):
 |--|--|
 | Event prefix | The event prefix that flags this event as Microsoft-defined. The size and value are as returned by the [HCI_VS_MSFT_Read_Supported_Features][ref_HCI_VS_MSFT_Read_Supported_Features] command. |
 
-Microsoft_event_code (1 octet):
+Microsoft_event_code (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0x01 | The event code for [HCI_VS_MSFT_RSSI_Event][ref_HCI_VS_MSFT_RSSI_Event]. |
 
-Status (1 octet):
+Status (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0x00 | Success. The RSSI value of the connection has met one of the following conditions. The RSSI reached or exceeded *RSSI_threshold_high*.<br>The RSSI reached or dropped below *RSSI_threshold_low* over *RSSI_threshold_low_time_interval* seconds.<br>The *RSSI_sampling_period* has expired and this event was generated to notify the host of the RSSI value. |
 | 0x01&nbsp;to&nbsp;0xFF | Failure. The RSSI value of the connection can no longer be monitored. The error code is usually one of codes that describes why the underlying ACL connection was lost. |
 
-Connection_Handle (2 octets):
+Connection_Handle (two octets):
 
 | Value | Parameter description |
 |--|--|
 | 0xXXXX | The handle for the connection whose RSSI is to be monitored. |
 
-RSSI (1 octet):
+RSSI (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -698,13 +698,13 @@ Event_prefix (variable size):
 |--|--|
 | Event prefix | The event prefix that flags this event as Microsoft-defined. The size and value are as returned by the [HCI_VS_MSFT_Read_Supported_Features][ref_HCI_VS_MSFT_Read_Supported_Features] command. |
 
-Microsoft_event_code (1 octet):
+Microsoft_event_code (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0x02 | The event code for [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event]. |
 
-Address_type (1 octet):
+Address_type (one octet):
 
 | Value | Parameter description |
 |--|--|
@@ -712,19 +712,19 @@ Address_type (1 octet):
 | 0x01 | Random Device Address. |
 | 0x02&nbsp;to&nbsp;0xFF | Reserved values for future use. |
 
-BD_ADDR (6 octets):
+BD_ADDR (six octets):
 
 | Value | Parameter description |
 |--|--|
 | 0xXXXXXXXXXXXX | The Bluetooth address of the device. |
 
-Monitor_handle (1 octet):
+Monitor_handle (one octet):
 
 | Value | Parameter description |
 |--|--|
 | 0xXX | The handle to the filter that was specified for the [HCI_VS_MSFT_LE_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Monitor_Advertisement] command. |
 
-Monitor_state (1 octet):
+Monitor_state (one octet):
 
 | Value | Parameter description |
 |--|--|

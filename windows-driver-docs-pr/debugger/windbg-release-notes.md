@@ -1,25 +1,38 @@
 ---
-title: WinDbg Preview - What's New 
-description: This topic provides information on what's new in WinDbg preview debugger.
-ms.date: 10/10/2022
+title: WinDbg Release notes
+description: This topic provides information on what's new in WinDbg.
+ms.date: 04/13/2023
 ms.topic: article
 ---
 
-# WinDbg Preview - What's New
+# Release notes
 
-![Small logo on windbg preview.](images/windbgx-preview-logo.png)
+![Small logo for windbg.](images/windbgx-preview-logo.png)
 
-This topic provides information on what's new in the WinDbg Preview debugger.
+This topic provides information on what's new in WinDbg. Earlier versions were released as *WinDbg Preview*.
 
-## 1.2107.13001.0
+## 1.2303.30001.0
 
-### Regex search 
+> [!NOTE]
+> The debugger has been renamed from *WinDbg Preview* to *WinDbg*.
+>
+> The legacy debugger released with [Debugging Tools for Windows](debugger-download-tools.md) will be referenced as *WinDbg (classic)*.
 
-WinDbgNext search now includes the option to search using regular expressions - Regex. Enable Regex in the window you'd like to search by doing Ctrl+F, then toggle the button labelled `.*` next to the search box.
+### Time Travel Debugging on ARM64
+
+Not only does WinDbg run natively on ARM64, we also enabled Time Travel Debugging (TTD) of native ARM64 processes as well. You can now record native ARM64 processes (and x86 and ARM32 processes) and debug them easily, even on your x64 machine. Support for x64 or x64-enabled (ARM64EC) processes on ARM64 devices isn't yet available.
+
+Overall TTD performance has also been improved, with recording overhead substantially reduced for processes that use common SIMD instructions. In total 65 new instructions were optimized, ranging from MMX through SSE 4.2, AVX and AVX2.
+
+## 1.2107.13001.0 - WinDbg Preview
+
+### Regex search
+
+WinDbg Preview search now includes the option to search using regular expressions - Regex. Enable Regex in the window you'd like to search by doing Ctrl+F, then toggle the button labeled `.*` next to the search box.
 
 ### Restricted Mode
 
-Restricted Mode is an optional setting that can limit the type of debugging sessions WinDbg Preview can start to remote debugging sessions and dump files only.  For more information, see [WinDbg Preview - Restricted Mode](windbg-restricted-mode-preview.md).
+Restricted Mode is an optional setting that can limit the type of debugging sessions WinDbg Preview can start to remote debugging sessions and dump files only.  For more information, see [WinDbg - Restricted Mode](windbg-restricted-mode-preview.md).
 
 ### Shadowed variable support
 
@@ -31,7 +44,7 @@ This change will also be reflected in the Locals window. Previously, only the ne
 
 ### Smart number selection and search
 
-A convenient productivity feature of WinDbgNext is the ability to detect patterns in the command window. To do this, select any text, and all other instances of that text highlighted. Because this highlighting is useful when looking at memory patterns, it now will also highlight equivalent numbers in other radixes,  no matter how the number is formatted in hex, decimal, or scientific notation. For more information about numbering schemes, see [n (Set Number Base)](n--set-number-base-.md)).
+A convenient productivity feature of WinDbg Preview is the ability to detect patterns in the command window. To do this, select any text, and all other instances of that text highlighted. Because this highlighting is useful when looking at memory patterns, it now will also highlight equivalent numbers in other radixes,  no matter how the number is formatted in hex, decimal, or scientific notation. For more information about numbering schemes, see [n (Set Number Base)](n--set-number-base-.md).
 
 Example:
 
@@ -72,7 +85,7 @@ Javascript loaded in the UI can now be directly debugged within the console usin
 
 ### Accessibility improvements
 
-With WinDbgNext we are committed to building a debugger that is inclusive to engineers with disabilities, we are continuously improving accessibility. The following improvements have been made.
+With WinDbg Preview we are committed to building a debugger that is inclusive to engineers with disabilities, we are continuously improving accessibility. The following improvements have been made.
 
 - Command window links can now be clicked via the keyboard (Shift+Enter)
 - Improved keyboard navigation of main menu
@@ -228,7 +241,7 @@ This version includes these updates.
 Other changes and bug fixes:
 
 - WinDbg Preview will now more intelligently handle bringing source windows or the disassembly window to the foreground when stepping.
-- Re-arranged WinDbgNext's window title to have more important information at the start when kernel debugging.
+- Re-arranged WinDbg Preview's window title to have more important information at the start when kernel debugging.
 - The alternating background contrast in the command window should be slightly more noticeable.
 
 ## 1.0.1810.2001
@@ -284,7 +297,7 @@ Minor changes and bug fixes:
 - Fixed issues around symbol caching
 - Fixed some cases where toggle initial break wasn’t usable when the target isn't broken in
 - If you hit tab in the command window with nothing available, the cursor will now stay in the input field
-- WinDbgNext will now auto-detect bitness when opening CAB files
+- WinDbg Preview will now auto-detect bitness when opening CAB files
 
 ## 1.0.1804.18003
 
@@ -407,10 +420,10 @@ This version adds Time Travel Tracing. Time Travel Debugging, allows you to reco
 
 ## 1.0.12.0
 
-This version was the first release of WinDbg Preview. For general information on the features available in WinDbg Preview, [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md).
+This version was the first release of WinDbg Preview. For general information on the features available in WinDbg Preview, [Major Features of WinDbg](debugging-using-windbg-preview.md).
 
 ## See Also
 
-[WinDbg Preview – Installation](windbg-install-preview.md)
+[WinDbg – Installation](index.md)
 
-[WinDbg Preview – Command line startup options](windbg-command-line-preview.md)
+[WinDbg – Command line startup options](windbg-command-line-preview.md)

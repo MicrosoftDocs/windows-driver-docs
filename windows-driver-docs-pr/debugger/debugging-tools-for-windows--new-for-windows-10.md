@@ -1,15 +1,14 @@
 ---
-title: Debugging Tools for Windows New for Windows 10
+title: Debugging Tools for Windows New for Windows 10 - WinDbg (Classic)
 description: For Windows 10, Debugging Tools for Windows includes these new features.
 ms.date: 01/22/2019
 ---
 
-# Debugging Tools for Windows: New for Windows 10
+# Debugging Tools for Windows: New for Windows 10 - WinDbg (Classic)
 
-## <span id="Windbg_Preview"></span><span id="windbg_preview"></span><span id="WINDBG_PREVIEW"></span>Windbg Preview
+## Updated WinDbg information
 
-For the lastest news on Windows Debugging tools, see [WinDbg Preview - What's New](windbg-what-is-new-preview.md).
-
+For the latest news on Windows Debugging tools, see [WinDbg - Release notes](windbg-release-notes.md).
 
 ## <span id="Windows_10__version_1703"></span><span id="windows_10__version_1703"></span><span id="WINDOWS_10__VERSION_1703"></span>Windows 10, version 1703
 
@@ -61,7 +60,7 @@ This section describes new debugging tools in Windows 10, version 1607.
  
 ## Looking to download the Debugging Tools?
 
-For information on downloading the debugging tools, see [Download Debugging Tools for Windows](debugger-download-tools.md).
+For information on downloading the debugging tools, see [Debugging Tools for Windows](debugger-download-tools.md).
 
 
 

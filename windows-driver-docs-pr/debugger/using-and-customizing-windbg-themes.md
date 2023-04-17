@@ -1,11 +1,11 @@
 ---
-title: Using and Customizing WinDbg Themes
-description: Using and Customizing WinDbg Themes
+title: Using and Customizing WinDbg Themes - WinDbg (Classic)
+description: Using and Customizing WinDbg Themes - WinDbg (Classic)
 keywords: ["themes", "workspaces, themes"]
 ms.date: 05/23/2017
 ---
 
-# Using and Customizing WinDbg Themes
+# Using and Customizing WinDbg Themes - WinDbg (Classic)
 
 
 A theme is a preconfigured WinDbg workspace that contains a useful configuration of debugging information windows.

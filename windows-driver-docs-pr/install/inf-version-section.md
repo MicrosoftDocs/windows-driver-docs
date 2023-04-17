@@ -10,7 +10,7 @@ api_name:
 - INF Version Section
 api_type:
 - NA
-ms.date: 06/08/2022
+ms.date: 04/10/2023
 ---
 
 # INF Version section
@@ -166,6 +166,7 @@ ClassGUID={4D36E97B-E325-11CE-BFC1-08002BE10318}
 Provider=%INF_Provider%
 CatalogFile=example.cat
 DriverVer=01/29/2010,1.2.3.4
+PnpLockdown=1
 
 [SourceDisksNames]
 ;

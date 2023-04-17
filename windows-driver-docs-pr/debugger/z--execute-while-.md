@@ -76,7 +76,7 @@ If there are several semicolons to the left of the "z", all commands to the left
 
 If you add another semicolon and additional commands after the **z** command, these additional commands are executed after the loop is complete. We do not typically recommend a line that begins with "z" because it generates uninteresting output forever unless the condition becomes false because of some other action. Note that you can nest **z** commands.
 
-To break a loop that is continuing for too long, use [**CTRL+C**](ctrl-c--break-.md) in CDB or KD, or use [Debug | Break](debug---break.md) or CTRL+BREAK in WinDbg.
+To break a loop that is continuing for too long, use [**CTRL+C**](ctrl-c--break-.md) in CDB or KD, or use **Debug | Break** from the menu, or CTRL+BREAK in WinDbg.
 
 The following code example shows an unnecessarily complex way to zero the **eax** register.
 

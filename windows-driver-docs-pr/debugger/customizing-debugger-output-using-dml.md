@@ -628,7 +628,7 @@ Note that an output object can register for both text and DML content if it can 
 
 The dbgeng will automatically convert between plain text and DML as necessary. For example, if a caller sends DML content to the engine the engine will convert it to plain text for all output clients which only accept plain text. Alternately, the engine will convert plain text to DML for all output callbacks which only accept DML.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [Using Debugger Markup Language](debugger-markup-language-commands.md)

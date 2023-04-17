@@ -80,7 +80,7 @@ To start debugging a GPIO issue, enter the [**!gpiokd.clientlist**](-gpiokd-clie
 
  
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [Specialized Extension Commands](specialized-extensions.md)

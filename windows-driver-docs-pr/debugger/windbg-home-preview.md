@@ -1,12 +1,12 @@
 ---
-title: WinDbg Preview - Home Menu
-description: This section describes how to use the home menu in the WinDbg preview debugger.
-ms.date: 09/10/2019
+title: WinDbg - Home Menu
+description: This section describes how to use the home menu in the WinDbg debugger.
+ms.date: 04/13/2023
 ---
 
-# WinDbg Preview - Home Menu
+# WinDbg - Home Menu
 
-![Small logo of windbg preview with bit pattern.](images/windbgx-preview-logo.png)
+![Small logo of WinDbg with bit pattern.](images/windbgx-preview-logo.png)
 
 This topic describes how to work with the home menu.
 
@@ -34,11 +34,10 @@ Use *Help* buttons to do the following:
 - Review Local Help - Offline
 - Online Help - Most up to date
 
-### Feedback Hub
+## GitHub Feedback
 
-- Send Feedback (For more information on sending feedback to improve WinDbg, see [Providing feedback](debugging-using-windbg-preview.md#providing-feedback).) 
+- If you find any bugs or have a feature request, you can follow the feedback button in the ribbon to go to the [GitHub page](https://aka.ms/windbg/feedback) where you can file a new issue.
 
- 
 ## See Also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Features](debugging-using-windbg-preview.md)

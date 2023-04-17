@@ -10,7 +10,6 @@ ms.date: 03/03/2023
 
 # Windows Hardware Error Architecture Debugger Extensions
 
-
 Microsoft provides the following debugger extensions to help debug the Windows Hardware Error Architecture (WHEA).
 
 [!whea](../debugger/-whea.md)  
@@ -22,4 +21,4 @@ Displays the contents of a hardware error packet.
 [!errrec](../debugger/-errrec.md)
 Displays the contents of an error record.
 
-The WHEA kernel debugger extensions are included in the *Kdexts.dll* file. For more information about the Windows Debugger, see [Getting Started with WinDbg (Kernel-Mode)](../debugger/getting-started-with-windbg--kernel-mode-.md). For information on downloading the Windbg Preview, see [WinDbg Preview - Installation](../debugger/windbg-install-preview.md).
+The WHEA kernel debugger extensions are included in the *Kdexts.dll* file. For more information about the Windows Debugger, see [Getting Started with WinDbg (Kernel-Mode)](../debugger/getting-started-with-windbg--kernel-mode-.md). For information on downloading the Windbg, see [Download and install the WinDbg Windows debugger](../debugger/index.md).

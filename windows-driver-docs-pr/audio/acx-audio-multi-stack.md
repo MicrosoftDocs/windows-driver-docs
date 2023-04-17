@@ -1,5 +1,5 @@
 ---
-title: ACX Audio multi stack cross driver communications
+title: ACX multi stack cross driver communications
 description: This topic provides a high level summary of the multi stack cross driver communications.
 ms.date: 08/17/2022
 ms.localizationpriority: medium

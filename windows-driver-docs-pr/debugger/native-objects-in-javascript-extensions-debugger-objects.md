@@ -536,7 +536,7 @@ class myNativeModel
 }
 ```
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
 

@@ -17,7 +17,7 @@ Some of the examples shown here use the dx command, for more information about w
 
 ## Using function alias as extension commands
 
-All function aliases created in WinDbg Preview can be invoked as if they were debug extension **!** "bang" commands. If the function takes no arguments, simply invoking !aliasName will cause the function to be called and the result value to be displayed. As an example (created with JavaScript extensibility)
+All function aliases created in WinDbg can be invoked as if they were debug extension **!** "bang" commands. If the function takes no arguments, simply invoking !aliasName will cause the function to be called and the result value to be displayed. As an example (created with JavaScript extensibility)
 
 As an example, this function provides two constant values, *pi* and *e*.
 

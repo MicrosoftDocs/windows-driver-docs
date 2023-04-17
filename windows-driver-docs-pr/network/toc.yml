@@ -5296,8 +5296,6 @@
       href: oid-gen-supported-guids.md
     - name: "OID_GEN_SUPPORTED_LIST"
       href: oid-gen-supported-list.md
-    - name: "OID_GEN_SUPPORTED_PACKET_FILTERS"
-      href: oid-gen-supported-packet-filters.md
     - name: "OID_GEN_TRANSMIT_BLOCK_SIZE"
       href: oid-gen-transmit-block-size.md
     - name: "OID_GEN_TRANSMIT_BUFFER_SPACE"

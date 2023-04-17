@@ -63,7 +63,7 @@ However, if the application is running and the debugger is later attached to the
 
 After the process is restarted, it immediately breaks into the debugger.
 
-In WinDbg, use the [View | WinDbg Command Line](view---windbg-command-line.md) command if you started your target from the WinDbg command prompt and you want to review this command line before you decide whether to use **.restart**.
+In WinDbg, use the **View | WinDbg Command Line** command if you started your target from the WinDbg command prompt and you want to review this command line before you decide whether to use **.restart**.
 
  
 

@@ -30,6 +30,6 @@ If your host computer uses an x64-based processor and is running a 64-bit versio
 
 - If you are debugging live 32-bit user-mode code that is running on a separate target computer, use the 32-bit debugging tools.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 [Windows Debugging](index.md)

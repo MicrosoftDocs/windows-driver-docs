@@ -1,18 +1,18 @@
 ---
-title: WinDbg Preview - Restricted Mode
-description: Restricted Mode limits the types of debugging sessions WinDbg Preview can start to remote debugging sessions and dump files only. 
+title: WinDbg - Restricted Mode
+description: Restricted Mode limits the types of debugging sessions WinDbg can start to remote debugging sessions and dump files only. 
 ms.date: 08/09/2021
 ---
 
-# WinDbg Preview - Restricted Mode
+# WinDbg - Restricted Mode
 
 ## Restricted Mode
 
-![Small logo on windbg preview.](images/windbgx-preview-logo.png)
+![Small logo on WinDbg.](images/windbgx-preview-logo.png)
 
 This section describes how to enable the restricted mode feature that restricts the type of debugging sessions that can be started.  
 
-WinDbg Preview provides you the ability to start a variety of debugging session types. However, in some circumstances you may not want WinDbg Preview to be able to start certain debugging sessions. Restricted Mode limits the types of debugging sessions WinDbg Preview can start to only remote debugging sessions and loading dump files. 
+WinDbg provides you the ability to start a variety of debugging session types. However, in some circumstances you may not want WinDbg to be able to start certain debugging sessions. Restricted Mode limits the types of debugging sessions WinDbg can start to only remote debugging sessions and loading dump files. 
 
 Restricted mode can be enabled by Windows Defender Application Control (WDAC) policy or by registry key.
 
@@ -44,6 +44,6 @@ The operation completed successfully.
 
 ## See Also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Features](debugging-using-windbg-preview.md)
 
-[WinDbg Preview – Command line startup options](windbg-command-line-preview.md)
+[WinDbg – Command line startup options](windbg-command-line-preview.md)

@@ -1,11 +1,11 @@
 ---
-title: Using Workspaces
-description: Using Workspaces
+title: Using Workspaces - WinDbg (Classic)
+description: Using Workspaces - WinDbg (Classic)
 keywords: ["workspaces", "workspaces, overview", "WinDbg, workspaces"]
 ms.date: 05/23/2017
 ---
 
-# Using Workspaces
+# Using Workspaces - WinDbg (Classic)
 
 
 ## <span id="ddk_using_workspaces_dbg"></span><span id="DDK_USING_WORKSPACES_DBG"></span>
@@ -19,7 +19,7 @@ This section includes the following topics:
 
 [Workspace Contents](workspace-contents.md)
 
-[Using and Customizing WinDbg Themes](using-and-customizing-windbg-themes.md)
+[Using and Customizing WinDbg Themes - WinDbg (Classic)](using-and-customizing-windbg-themes.md)
 
  
 

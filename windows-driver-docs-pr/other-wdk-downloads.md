@@ -5,7 +5,7 @@ keywords:
 - Windows Driver Kit
 - previous versions
 - WDK
-ms.date: 10/25/2021
+ms.date: 12/12/2022
 ms.custom: 19H1
 ---
 
@@ -38,7 +38,6 @@ The WDK requires Visual Studio. For more information about system requirements f
 
 > [!NOTE]
 > Visual Studio 2022 is not supported by the Windows 11, version 21H2 WDK. To use Visual Studio 2022 to develop and test drivers, download the Windows 11, version 22H2 WDK. For details, see [Download the Windows Driver Kit (WDK)](./download-the-wdk.md).
-
 
 The following table indicates which Visual Studio version is required for the different releases of the WDK.
 
@@ -144,11 +143,11 @@ To work with HAL Extensions, prepare your development system, running Windows 10
 
 For more information about using this updated certificate, see [Update for "Windows OEM HAL Extension Test Cert 2017 (TEST ONLY)" test certificate](https://support.microsoft.com/help/4131991/update-for-windows-oem-hal-extension-test-cert-2017-test-only-test-cer) on Windows Support.
 
-## Optional: Install WinDbg Preview
+## Optional: Install WinDbg
 
-WinDbg Preview is a new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. WinDbg Preview supports debugging every version of Windows 10.
+WinDbg is the latest version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, built with the extensible debugger data model front and center. Formerly known as *WinDbg Preview*, it supports Windows 10 and Windows 11.
 
-For download links and more information about WinDbg Preview, see [Download WinDbg Preview](./debugger/debugger-download-tools.md#small-windbg-preview-logo-download-windbg-preview).
+For download links and more information about WinDbg, see [Download and install the WinDbg Windows debugger](./debugger/index.md) and [Debugging Tools for Windows](./debugger/debugger-download-tools.md).
 
 ## Standalone tools for debugging Windows XP and Windows Vista
 

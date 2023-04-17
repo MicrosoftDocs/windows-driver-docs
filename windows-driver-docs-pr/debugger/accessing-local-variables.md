@@ -13,7 +13,7 @@ ms.date: 05/23/2017
 
 Local variables, like global variables, are stored in the symbol files. And as with global variables, the debugger interprets their names as addresses. They can be read and written in the same manner as global variables. However, if you need to indicate to a command that a symbol is local, precede the symbol with a dollar sign ( $ ) and an exclamation point ( ! ), as in `$!var`.
 
-Visual Studio and WinDbg provide user interface elements that you can use (in addition to commands) to view and edit local variables. For more information, see [Viewing and Editing Memory and Registers in Visual Studio](viewing-memory--variables--and-registers-in-visual-studio.md) and [Viewing and Editing Local Variables in WinDbg](locals-window.md).
+Visual Studio and WinDbg provide user interface elements that you can use (in addition to commands) to view and edit local variables. For more information, see [Viewing and Editing Local Variables in WinDbg (Classic)](locals-window.md).
 
 You can also use the following methods to display, change, and use local variables:
 

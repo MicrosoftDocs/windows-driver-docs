@@ -5,7 +5,7 @@ keywords:
 - INF files WDK device installations , structure
 - INF files WDK device installations , sections
 - sections WDK INF files
-ms.date: 01/13/2022
+ms.date: 04/10/2023
 ---
 
 # Looking at an INF File
@@ -18,11 +18,11 @@ Signature   = "$Windows NT$"
 Class       = Mouse
 ClassGUID   = {4D36E96F-E325-11CE-BFC1-08002BE10318}
 Provider    = %Provider% ; defined later in Strings section
-DriverVer   = 09/28/1999,5.00.2136.1
+DriverVer   = 09/28/1999,5.0.2136.1
 PnpLockdown = 1
 
 [DestinationDirs]
-DefaultDestDir = 12 ; DIRID_DRIVERS
+DefaultDestDir = 13
  
 ; ... [ControlFlags] section omitted here
  
@@ -40,7 +40,7 @@ DefaultDestDir = 12 ; DIRID_DRIVERS
  
 ; per-Models DDInstall (Ser_Inst, Inp_Inst, etc.) sections also omitted here
 
- 
+
 [Strings] 
 ; where INF %strkey% tokens are defined as user-visible (and
 ; possibly as locale-specific) strings.
@@ -51,8 +51,6 @@ MSMfg    = "Microsoft"
 ; ...
 *pnp0f0c.DeviceDesc = "Standard Serial Mouse"
 *pnp0f0d.DeviceDesc = "InPort Adapter Mouse"
-; ... 
-HID\Vid_045E&Pid_0009.DeviceDesc = "Microsoft USB Intellimouse"
 ; ... 
 ```
 

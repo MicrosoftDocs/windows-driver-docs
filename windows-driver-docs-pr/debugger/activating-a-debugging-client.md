@@ -55,7 +55,7 @@ ssl:proto=Protocol,{certuser=Cert|machuser=Cert},server=Server,port=Socket[,pass
 ssl:proto=Protocol,{certuser=Cert|machuser=Cert},clicon=Server,port=Socket[,password=Password] 
 ```
 
-Alternatively, you can use the **Browse** button to locate active debugging servers. See [File | Connect to Remote Session](file---connect-to-remote-session.md) for details.
+Alternatively, you can use the **Browse** button to locate active debugging servers.
 
 ## <span id="ddk_activating_a_debugging_client_dbg"></span><span id="DDK_ACTIVATING_A_DEBUGGING_CLIENT_DBG"></span>
 

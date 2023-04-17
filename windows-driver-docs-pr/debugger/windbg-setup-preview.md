@@ -1,14 +1,14 @@
 ---
-title: WinDbg Preview - Settings and workspaces
-description: This section describes how to setup the WinDbg preview debugger.
+title: WinDbg - Settings and workspaces
+description: This section describes how to setup the WinDbg debugger.
 ms.date: 01/16/2020
 ---
 
-# WinDbg Preview - Settings and workspaces
+# WinDbg - Settings and workspaces
 
-![Small logo of windbg preview with bit pattern.](images/windbgx-preview-logo.png)
+![Small logo of WinDbg with bit pattern.](images/windbgx-preview-logo.png)
 
-This section describes how to setup and configure the WinDbg Preview debugger.
+This section describes how to setup and configure the WinDbg debugger.
 
 ## Settings
 
@@ -25,7 +25,7 @@ There are currently six settings dialog panels:
 - Events & exceptions
 - Source window
 
-For more information on setting the paths, see [Symbol path for Windows debugger](symbol-path.md) and [Source Code Debugging in WinDbg](source-window.md).
+For more information on setting the paths, see [Symbol path for Windows debugger](symbol-path.md) and [Source Code Debugging in WinDbg (Classic)](source-window.md).
 
 ## Workspaces
 
@@ -116,10 +116,10 @@ The following file, shows an example workspaces configuration file.
 </TargetConfig>
 ```
 
-Note that this file format continues to evolve as more features are added to the WinDbg Preview debugger.
+Note that this file format continues to evolve as more features are added to the WinDbg debugger.
 
 ---
 
 ## See Also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Features](debugging-using-windbg-preview.md)

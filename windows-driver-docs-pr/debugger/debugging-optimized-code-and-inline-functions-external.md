@@ -167,7 +167,7 @@ Because there are no explicit call or return instructions for inline functions, 
 
  
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [Standard Debugging Techniques](standard-debugging-techniques.md)

@@ -38,7 +38,7 @@ D:\SymStore\Symbols\ke\kernel32.pdb\...\
 
 If you want to convert the structure after the symbol store is populated, use the convertstore.exe application in the debugger folder. To allow the tool to work, create a folder called 000Admin in the root folder. This folder is required by convertstore.exe so that it can control the locking of the symbol store.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [HTTP Symbol Stores](http-symbol-stores.md)

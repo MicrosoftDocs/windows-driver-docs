@@ -1,10 +1,10 @@
 ---
-title: Ending a Debugging Session in WinDbg
-description: Ending a Debugging Session in WinDbg
+title: Ending a Debugging Session in WinDbg (Classic)
+description: Ending a Debugging Session in WinDbg (Classic)
 ms.date: 11/28/2017
 ---
 
-# Ending a Debugging Session in WinDbg
+# Ending a Debugging Session in WinDbg (Classic)
 
 
 ## <span id="Exiting_WinDbg"></span><span id="exiting_windbg"></span><span id="EXITING_WINDBG"></span>Exiting WinDbg

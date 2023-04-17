@@ -1,14 +1,14 @@
 ---
-title: WinDbg Preview - Time Travel 
+title: WinDbg - Time Travel 
 description: This section describes how work with the time travel menu.
 ms.date: 01/10/2020
 ---
 
-# WinDbg Preview - Time Travel Menu
+# WinDbg - Time Travel Menu
 
-![Small logo on windbg preview.](images/windbgx-preview-logo.png)
+![Small logo on WinDbg.](images/windbgx-preview-logo.png)
 
-This section describes how work with the time travel menu in WinDbg Preview.
+This section describes how work with the time travel menu in WinDbg.
 
 ![View menu in debugger.](images/windbgx-timetravel-menu.png)
 
@@ -42,8 +42,8 @@ Use Information to display information about the trace, such as size and number 
 
 ### Timelines
 
-Use the to Timelines option to access debugger timelines. For more information see [WinDbg Preview Timelines](windbg-timeline-preview.md).
+Use the to Timelines option to access debugger timelines. For more information see [WinDbg Timelines](windbg-timeline-preview.md).
 
 ## See Also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Features](debugging-using-windbg-preview.md)

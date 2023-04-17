@@ -63,7 +63,7 @@ In this topic, we will describe the process to configure an EXDI connection. For
 
 ## Download and install the Windows debugging tools
 
-Install the Windows Debugging Tools on the host system. For information on downloading and installing the debugger tools, see [Download Debugging Tools for Windows](debugger-download-tools.md).
+Install the Windows Debugging Tools on the host system. For information on downloading and installing the debugger tools, see [Debugging Tools for Windows](debugger-download-tools.md).
 
 ## Download, build and register the EXDI server DLL
 
@@ -963,7 +963,7 @@ Start-Process -FilePath "$DebuggerPath" -ArgumentList ($DebuggerArgs + $ExtraDeb
 #endregion
 ```
 
-## Related topics
+## See also
 
 [Setting Up QEMU Kernel-Mode Debugging using EXDI](setting-up-qemu-kernel-mode-debugging-using-exdi.md)
 

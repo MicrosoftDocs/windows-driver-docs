@@ -1,12 +1,12 @@
 ---
-title: WinDbg Preview - Timelines 
-description: This section describes how work with the time travel timelines feature in WinDbg Preview.
+title: WinDbg - Timelines 
+description: This section describes how work with the time travel timelines feature in WinDbg.
 ms.date: 07/02/2020
 ---
 
-# WinDbg Preview - Timelines
+# WinDbg - Timelines
 
-![Small logo of windbg preview with bit pattern.](images/windbgx-preview-logo.png)
+![Small logo of WinDbg with bit pattern.](images/windbgx-preview-logo.png)
 
 Time Travel Debugging (TTD) allows users to record traces, which are recordings of the execution of a program. Timelines  are a visual representation of events that happen during the execution. These events can be locations of: breakpoints, memory read/writes, function calls and returns, and exceptions.
 
@@ -251,6 +251,6 @@ You can right click the bookmark to travel to that position, rename or delete th
 
 ### See Also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Features](debugging-using-windbg-preview.md)
 
 [Time Travel Debugging Walkthrough](time-travel-debugging-walkthrough.md)

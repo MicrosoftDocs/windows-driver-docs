@@ -1,11 +1,11 @@
 ---
-title: Using the Scratch Pad
-description: Using the Scratch Pad
+title: Using the Scratch Pad - WinDbg (Classic) - WinDbg (Classic)
+description: Using the Scratch Pad - WinDbg (Classic) - WinDbg (Classic)
 keywords: ["debugging information windows, Scratch Pad", "Scratch Pad"]
 ms.date: 05/23/2017
 ---
 
-# Using the Scratch Pad
+# Using the Scratch Pad - WinDbg (Classic) - WinDbg (Classic)
 
 
 ## <span id="ddk_scratch_pad_dbg"></span><span id="DDK_SCRATCH_PAD_DBG"></span>
@@ -21,7 +21,7 @@ The following screen shot shows an example of a Scratch Pad window.
 
 ![screen shot of the scratch pad window.](images/window-scratchpad.png)
 
-### <span id="using_the_scratch_pad_window"></span><span id="USING_THE_SCRATCH_PAD_WINDOW"></span>Using the Scratch Pad Window
+### <span id="using_the_scratch_pad_window"></span><span id="USING_THE_SCRATCH_PAD_WINDOW"></span>Using the Scratch Pad - WinDbg (Classic) - WinDbg (Classic) Window
 
 In the Scratch Pad window, you can do the following:
 
@@ -43,15 +43,12 @@ The Scratch Pad window has a shortcut menu with additional commands. To access t
 
 -   **Always floating** causes the window to remain undocked even if it is dragged to a docking location.
 
--   **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked. For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md).
+-   **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked. 
 
 -   **Help** opens this topic in the Debugging Tools for Windows documentation.
 
 -   **Close** closes this window.
 
-### <span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
-
-For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md). For more information about all techniques that you can use to control debugging information windows, see [Using Debugging Information Windows](using-debugging-information-windows.md).
 
  
 

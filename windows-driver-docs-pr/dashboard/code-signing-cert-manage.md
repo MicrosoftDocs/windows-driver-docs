@@ -35,7 +35,7 @@ To get a new code signing certificate:
 
 1. Once the certificate authority has verified your contact information and your certificate purchase is approved, follow their directions to retrieve the certificate.
 
-1. Go to [Partner Center](https://partner.microsoft.com/dashboard) and sign in using with administrator credentials.
+1. Go to [Partner Center](https://partner.microsoft.com/dashboard) and sign in using administrator credentials.
 
 1. Select the gear icon in the upper right, then select **Developer settings**, then **Manage Certificates** on the left pane.
 
@@ -47,7 +47,7 @@ To get a new code signing certificate:
 
 ## Retire a code signing certificate
 
-1. Go to [Partner Center](https://partner.microsoft.com/dashboard) and sign in using with administrator credentials.
+1. Go to [Partner Center](https://partner.microsoft.com/dashboard) and sign in using administrator credentials.
 
 1. Select the gear icon in the upper right, then select **Developer settings**, then **Manage Certificates** on the left pane.
 

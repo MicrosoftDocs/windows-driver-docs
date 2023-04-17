@@ -2,7 +2,7 @@
 title: Set up KDNET network kernel debugging automatically
 description: Learn how to use KDNET to configure network kernel debugging automatically for the Windows debugging tools.
 keywords: ["Network debugging", "Ethernet debugging", "WinDbg", "KDNET"]
-ms.date: 01/20/2023
+ms.date: 03/08/2023
 ---
 
 # Set up KDNET network kernel debugging automatically
@@ -36,7 +36,7 @@ IPv4 Address. . . . . . . . . . . : <YourHostIPAddress>
 
 Use the kdnet.exe utility to automatically configure the debugger settings on the target PC by following these steps.
 
-1. Confirm that the Windows Debugging Tools are installed on the host system. For information on downloading and installing the debugger tools, see [Download Debugging Tools for Windows](debugger-download-tools.md).
+1. Confirm that the Windows Debugging Tools are installed on the host system. For information on downloading and installing the debugger tools, see [Debugging Tools for Windows](debugger-download-tools.md). 
 
 2. Locate the kdnet.exe and *VerifiedNICList.xml* files. By default, the files are located in the following location:
 
@@ -128,9 +128,9 @@ Use the Control Panel to allow access through the firewall.
 
 1. Open **Control Panel > System and Security** and select **Allow an app through Windows Firewall**.
 
-   - (WinDbg Preview) In the list of applications, locate *WinDbg engine process (TCP) (all)*.
+   - (WinDbg) In the list of applications, locate *WinDbg engine process (TCP) (all)*.
 
-   - (Classic WinDbg) In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*.
+   - (WinDbg (Clasic)) In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*.
 
 3. Use the checkboxes to allow those two applications through **all three** of the different network types.
 

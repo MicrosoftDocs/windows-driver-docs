@@ -66,6 +66,6 @@ The following extension commands display information from data structures mainta
 -   [**!usb3kd.usbdstatus**](-usb3kd-usbdstatus.md)
 -   [**!usb3kd.urb**](-usb3kd-urb.md)
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 [RCDRKD Extensions](rcdrkd-extensions.md)

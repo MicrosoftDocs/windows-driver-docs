@@ -27,7 +27,7 @@ If a second bug check occurs and another Kernel Memory Dump (or Complete Memory 
 
 To suppress missing page error messages when debugging a Kernel Memory Dump, use the [**.ignore\_missing\_pages**](-ignore-missing-pages--suppress-missing-page-errors-.md) command.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [Varieties of Kernel-Mode Dump Files](varieties-of-kernel-mode-dump-files.md)

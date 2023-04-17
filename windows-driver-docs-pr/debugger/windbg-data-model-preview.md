@@ -1,12 +1,12 @@
 ---
-title: WinDbg Preview - Data Model Menu
-description: This section describes how to work with the data model menu in the WinDbg preview debugger.
+title: WinDbg - Data Model Menu
+description: This section describes how to work with the data model menu in the WinDbg debugger.
 ms.date: 01/10/2020
 ---
 
-# WinDbg Preview - Data Model Menu
+# WinDbg - Data Model Menu
 
-This section describes how to work with the data model menu in the WinDbg Preview debugger.
+This section describes how to work with the data model menu in the WinDbg debugger.
 
 ## New Model Query
 
@@ -60,4 +60,4 @@ Use change query to change the query that is used in the active data model windo
 
 [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md)
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Features](debugging-using-windbg-preview.md)

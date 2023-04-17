@@ -12,15 +12,15 @@ This section describes the time travel navigation commands.
 
 ## </span><span id="P"></span> p- (Step Back)
 
-The *p-* command executes the previous single instruction or source line. When subroutine calls or interrupts occur, they are treated as a single step. You can invoke this command using the **Step Over Back**  button on the **Home** ribbon in WinDbg Preview.
+The *p-* command executes the previous single instruction or source line. When subroutine calls or interrupts occur, they are treated as a single step. You can invoke this command using the **Step Over Back**  button on the **Home** ribbon in WinDbg.
 
 ## </span><span id="T"></span> t- (Trace Back)
 
-The *t-* command executes the previous single instruction or source line. When subroutine calls or interrupts occur, each of their steps is also traced. You can invoke this command using the **Step Into Back**  button on the **Home** ribbon in WinDbg Preview.
+The *t-* command executes the previous single instruction or source line. When subroutine calls or interrupts occur, each of their steps is also traced. You can invoke this command using the **Step Into Back**  button on the **Home** ribbon in WinDbg.
 
 ## </span><span id="Go"></span> g- (Go Back)
 
-The *g-* command starts executing the current process in reverse. Execution will halt at the end of the program, when BreakAddress is hit, or when another event causes the debugger to stop. You can invoke this command using the **Go Back**  button on the **Home** ribbon in WinDbg Preview.
+The *g-* command starts executing the current process in reverse. Execution will halt at the end of the program, when BreakAddress is hit, or when another event causes the debugger to stop. You can invoke this command using the **Go Back**  button on the **Home** ribbon in WinDbg.
 
 ## </span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 

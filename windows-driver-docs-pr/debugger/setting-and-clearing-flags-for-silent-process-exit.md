@@ -30,7 +30,7 @@ Settings that you specify in the **Silent Process Exit** tab are saved in the re
 
 4.  When you specified all of your preferences, click **Apply**.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [Monitoring Silent Process Exit](registry-entries-for-silent-process-exit.md)

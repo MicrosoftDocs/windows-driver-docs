@@ -140,7 +140,7 @@ If you restart the virtual machine by using the VMWare facilities (for example, 
 
  
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 [Setting Up Network Debugging of a Virtual Machine with KDNET](setting-up-network-debugging-of-a-virtual-machine-host.md)
 

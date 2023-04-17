@@ -8,7 +8,7 @@ keywords:
 ms.date: 09/23/2021
 ---
 
-# Serial Port Console Redirection Table  (SPCR)
+# Serial Port Console Redirection Table (SPCR)
 
 This document defines the content of the Serial Port Console Redirection Table. This table is used to indicate whether a serial port or a non-legacy UART interface is available for use with Microsoft® Windows® Emergency Management Services (EMS).
 
@@ -26,21 +26,21 @@ This table must be located in system memory with other ACPI tables, and it must 
 |----------------------|-----------------|-----------------|-----------------|
 | Header               |                 |                 |                 |
 | Signature            | 4               | 0               | 'SPCR'. Signature for the Serial Port Console Redirection Table. |
-| Length               | 4               | 4               | Length, in bytes, of the entire Serial Port Console Redirection Table. |
-| Revision             | 1               | 8               | The current table revision is 3. |
+| Length               | 4               | 4               | Length, in bytes, of the entire Serial Port Console Redirection Table, including NamespaceString. |
+| Revision             | 1               | 8               | The current table revision is 4. |
 | Checksum             | 1               | 9               | Entire table must sum to zero. |
 | OEM ID               | 6               | 10              | Original equipment manufacturer (OEM) ID. |
 | OEM Table ID         | 8               | 16              | For the Serial Port Console Redirection Table, the table ID is the manufacturer model ID. |
 | OEM Revision         | 4               | 24              | OEM revision of Serial Port Console Redirection Table for supplied OEM Table ID. |
 | Creator ID           | 4               | 28              | Vendor ID of utility that created the table. |
 | Creator Revision     | 4               | 32              | Revision of utility that created the table. |
-| Interface Type       | 1               | 36              | Indicates the type of the register interface:<br>For Revision 1:<ul><li>0 = Full 16550 interface</li><li>1 = Full 16450 interface (must also accept writing to the 16550 FCR register)</li><li>2-255 = Reserved</li></ul>For Revision 2 or higher:<br>See the Serial Port Subtypes in Table 3 of the [DBG2 Specification](../bringup/acpi-debug-port-table.md) |
+| Interface Type       | 1               | 36              | Indicates the type of the register interface:<br>For Revision 1:<ul><li>0 = Full 16550 interface</li><li>1 = Full 16450 interface (must also accept writing to the 16550 FCR register)</li><li>2-255 = Reserved</li></ul>For Revision 2 or higher:<br>See the Serial Port Subtypes in Table 3 of the [DBG2 Specification](../bringup/acpi-debug-port-table.md). |
 | Reserved             | 3               | 37              | Must be 0. |
 | Base Address         | 12              | 40              | The base address of the Serial Port register set described using the ACPI Generic Address Structure, or 0 if console redirection is disabled.<br><br>**Note:**<br>COM1 (0x3F8) would be:<ul><li>Integer Form: 0x 01 08 00 00 00000000000003F8</li><li>Viewed in Memory: 0x01080000F803000000000000</li></ul>COM2 (0x2F8) would be:<ul><li>Integer Form: 0x 01 08 00 00 00000000000002F8</li><li>Viewed in Memory: 0x01080000F802000000000000</li></ul> |
-| Interrupt Type       | 1               | 52              | Interrupt type(s) used by the UART:<ul><li>Bit[0]: PC-AT-compatible dual-8259 IRQ interrupt</li><li>Bit[1]: I/O APIC interrupt (Global System Interrupt)</li><li>Bit[2]: I/O SAPIC interrupt (Global System Interrupt)</li><li>Bit[3]: ARMH GIC interrupt (Global System Interrupt)</li><li>Bit[4:7]: Reserved (must be set to 0)</li></ul> Where <ul><li>0 = Not supported</li><li>1 = Supported</li></ul>Platforms with both a dual-8259 and an I/O APIC or I/O SAPIC must set the IRQ bit (Bit[0]) and the corresponding Global System Interrupt bit (e.g. a system that supported 8259 and SAPIC would be 5). |
+| Interrupt Type       | 1               | 52              | Interrupt type(s) used by the UART:<ul><li>Bit[0]: PC-AT-compatible dual-8259 IRQ interrupt</li><li>Bit[1]: I/O APIC interrupt (Global System Interrupt)</li><li>Bit[2]: I/O SAPIC interrupt (Global System Interrupt)</li><li>Bit[3]: ARMH GIC interrupt (Global System Interrupt)</li><li>Bit[4]: RISC-V PLIC/APLIC interrupt (Global System Interrupt)</li><li>Bit[5:7]: Reserved (must be set to 0)</li></ul> Where <ul><li>0 = Not supported</li><li>1 = Supported</li></ul>Set this field to zero if the described interface only supports polled operation.<br>Platforms with both a dual-8259 and an I/O APIC or I/O SAPIC must set the IRQ bit (Bit[0]) and the corresponding Global System Interrupt bit (e.g. a system that supported 8259 and SAPIC would be 5). |
 | IRQ                  | 1               | 53              | The PC-AT-compatible IRQ used by the UART: <ul><li>2-7, 9-12, 14-15 = Valid IRQs respectively</li><li>0-1, 8, 13, 16-255 = Reserved</li></ul>Valid only if Bit[0] of the Interrupt Type field is set. |
-| Global System Interrupt | 4            | 54              | The Global System Interrupt (GSIV) used by the UART.<br>Not valid if Bit[0] is the only bit set in the Interrupt Type field. |
-| Baud Rate            | 1               | 58              | The baud rate the BIOS used for redirection: <ul><li>0 = As is, operating system relies on the current configuration of serial port until the full featured driver will be initialized.</li><li>3 = 9600</li><li>4 = 19200</li><li>6 = 57600</li><li>7 = 115200</li><li>1-2, 5, 8-255 = Reserved</li></ul> |
+| Global System Interrupt | 4            | 54              | The Global System Interrupt (GSIV) used by the UART.<br>Not valid if Bit[1:7] of the Interrupt Type field is 0. |
+| Configured Baud Rate | 1               | 58              | The baud rate the BIOS used for redirection: <ul><li>0 = As is, operating system relies on the current configuration of serial port until the full featured driver will be initialized.</li><li>3 = 9600</li><li>4 = 19200</li><li>6 = 57600</li><li>7 = 115200</li><li>1-2, 5, 8-255 = Reserved</li></ul> |
 | Parity               | 1               | 59              | <ul><li>0 = No Parity</li><li>1-255 = Reserved</li></ul> |
 | Stop Bits            | 1               | 60              | <ul><li>1 = 1 Stop bit</li><li>0, 2-255 = Reserved</li></ul> |
 | Flow Control         | 1               | 61              | <ul><li>Bit[0]: DCD required for transmit</li><li>Bit[1]: RTS/CTS hardware flow control</li><li>Bit[2]: XON/XOFF software control</li><li>Bit[3:7]: Reserved, must be 0</li></ul> |
@@ -54,6 +54,14 @@ This table must be located in system memory with other ACPI tables, and it must 
 | PCI Flags            | 4               | 71              | PCI Compatibility flags bitmask. Should be zero by default.<ul><li>Bit[0]: Operating System should NOT suppress PNP device enumeration or disable power management for this device. Must be 0 if it is not a PCI device.</li><li>Bit[1-31]: Reserved, must be 0.</li></ul> |
 | PCI Segment          | 1               | 75              | PCI segment number. <p>For systems with fewer than 255 PCI buses, this number must be 0.</p> |
 | UART Clock Frequency | 4               | 76              | For Revision 2 or lower:<ul><li>Must be 0.</li></ul>For Revision 3:<ul><li>Zero, indicating that the UART clock frequency is indeterminate.</li><li>A non-zero value indicating the UART clock frequency in Hz.</li></ul> |
+| Precise Baud Rate    | 4               | 80              | Contains a specific non-zero baud rate which overrides the value of the Configured Baud Rate field. If this field is zero or not present, Configured Baud Rate is used. See note below. |
+| NamespaceStringLength| 2               | 82              | Length, in bytes, of NamespaceString, including NUL characters. |
+| NamespaceStringOffset| 2               | 84              | Offset, in bytes, from the beginning of this structure to the field NamespaceString[]. This value must be valid because this string must be present. |
+| NamespaceString[]    | NamespaceStringLength | NamespaceStringOffset | NUL-terminated ASCII string to uniquely identify this device. This string consists of a fully qualified reference to the object that represents this device in the ACPI namespace. If no namespace device exists, NamespaceString[] must only contain a single '.' (ASCII period) character. |
+
+## Note on the Baud Rate Fields
+
+The Configured Baud Rate field has existed as a single-byte field since the creation of the SPCR table and is widely supported by operating systems. However, because it is an enumeration, it is limited in its ability to precisely describe non-traditional baud rates, such as those used by high speed UARTs. Thus, the Precise Baud Rate field was added to enable firmware to provide supporting operating systems a DWORD value which describes a specific baud rate (e.g. 1500000). When the Precise Baud Rate field contains a non-zero value, the Configured Baud Rate field shall be zero.
 
 ## Revision History
 
@@ -87,3 +95,4 @@ This table must be located in system memory with other ACPI tables, and it must 
 | 9/1/2020  | 1.06 | Edited formatting and updated link to DBG2 specification |
 | 2/17/2021 | 1.07 | Fixed incorrect description in Stop Bits field. Undo accidental removal of Flow Control field. Edited formatting. |
 | 10/7/2021 | 1.08 | Changed Table Revision to 3 and created field for UART Clock Frequency. Edited formatting. |
+| 4/10/2023 | 1.09 | Changed Table Revision to 4. Added RISC-V and polled support to Interrupt Type field. Added new fields: Precise Baud Rate, NamespaceStringLength, NamespaceStringOffset, and NamespaceString[]. |

@@ -214,7 +214,7 @@ pControl->Output(DEBUG_OUTPUT_NORMAL, "The name is %s\n", name);
 pControl->Output(DEBUG_OUTPUT_NORMAL, "The description is %s\n", desc);
 ```
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [Writing Custom Analysis Debugger Extensions](writing-custom-analysis-debugger-extensions.md)

@@ -727,7 +727,7 @@ Then run commands in the kernel debugger and make sure it works, and then let th
 
 In addition to KDNET extensibility, KDNET supports kernel debugging using multiple Physical Functions (PFs) on the supported NICs by partitioning the PCI configuration space. Network card vendors are encouraged to enable support for this feature. For more information, see [Debugger 2PF KDNET Miniport Network Driver Support](../network/debugger-2pf-kdnet-support.md).
 
-## Related topics
+## See also
 
 [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
 

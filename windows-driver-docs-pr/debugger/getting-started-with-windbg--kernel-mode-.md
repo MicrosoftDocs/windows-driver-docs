@@ -1,14 +1,14 @@
 ---
 title: Get started with WinDbg (kernel-mode)
 description: Learn how to set up and establish a WinDbg kernel-mode debugging session. The WinDbg kernel-mode debugger is included in Debugging Tools for Windows.
-ms.date: 12/09/2022
+ms.date: 03/08/2023
 ---
 
 # Get started with WinDbg (kernel-mode)
 
 WinDbg is a kernel-mode and user-mode debugger that's included in Debugging Tools for Windows. This article provides exercises to help you get started using WinDbg as a kernel-mode debugger.
 
-For information about how to get Debugging Tools for Windows, see [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](index.md). After you install the debugging tools, locate the installation directories for 64-bit (x64) and 32-bit (x86) versions of the tools. For example:
+For information about how to get Debugging Tools for Windows, see [Download and install the WinDbg Windows debugger](index.md). After you have installed the debugging tools, locate the installation directories for 64-bit (x64) and 32-bit (x86) versions of the tools. For example:
 
 - C:\Program Files (x86)\Windows Kits\10\Debuggers\x64
 - C:\Program Files (x86)\Windows Kits\10\Debuggers\x86
@@ -404,7 +404,7 @@ After you set up your host and target computer and connect them with a debug cab
 - [!drvobj](-drvobj.md)
 - [qd (Quit and detach)](qd--quit-and-detach-.md)
 
-## Related topics
+## See also
 
 - [Getting started with WinDbg (user-mode)](getting-started-with-windbg.md)
 
@@ -414,6 +414,6 @@ After you set up your host and target computer and connect them with a debug cab
 
 - [Debugging techniques](debugging-techniques.md)
 
-- [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](./index.md)
+- [Download and install the WinDbg Windows debugger](./index.md)
 
-- [Debugging using WinDbg Preview](debugging-using-windbg-preview.md)
+- [WinDbg Features](debugging-using-windbg-preview.md)

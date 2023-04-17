@@ -42,7 +42,7 @@ Vendors such as NVIDIA Mellanox and Cisco provide NICs that support 2PF network 
 
 Use the kdnet.exe utility to display the parameter information for controllers that support KDNET 2PF transport debugging.
 
-1. Confirm that the Windows Debugging Tools are installed on the host system. For information on downloading and installing the debugger tools, see [Download Debugging Tools for Windows](debugger-download-tools.md).
+1. Confirm that the Windows Debugging Tools are installed on the host system. For information on downloading and installing the debugger tools, see [Debugging Tools for Windows](debugger-download-tools.md).
 
 2. Locate the kdnet.exe and VerifiedNICList.xml files. By default, they are located here.
 
@@ -377,7 +377,7 @@ Pci Bus:28.0.0
 
 - It is not recommended to use bcdedit.exe to modify/change the debug device (dbgsettings) after adding a new PF. The kdnet -addpf/removepf command line options will configure the debug device and will also add/remove automatically the `NO_KDNIC` token to/from the `{default}::loadoptions`.
 
-## Related topics
+## See also
 
 [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
 

@@ -15,7 +15,7 @@ Each workspace preserves the following information about the current debugging s
 
 -   All break and handling information for exceptions and events. For more information about the break and handling information, see Breakpoints in Workspaces.
 
--   All open source files. If a source file is not found, an error message appears. You can close these error messages individually or by using the [Window | Close All Error Windows](window---close-all-error-windows.md) command.
+-   All open source files. If a source file is not found, an error message appears. You can close these error messages individually or by using the **Window | Close All Error Windows** command.
 
 -   All user-defined aliases.
 
@@ -41,7 +41,7 @@ All default workspaces and named workspaces preserve the following information a
 
 -   The title of the WinDbg window
 
--   The [Automatically Open Disassembly](window---automatically-open-disassembly.md) setting
+-   The Automatically Open Disassembly setting
 
 -   The default font
 

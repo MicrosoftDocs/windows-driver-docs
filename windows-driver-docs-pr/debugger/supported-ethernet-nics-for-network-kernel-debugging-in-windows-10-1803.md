@@ -452,7 +452,7 @@ The list of supported adapters is for the following versions of Windows.
 </SupportedNetworkInterfaceCards>
 ```
 
-## Related topics
+## See also
 
 [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
 

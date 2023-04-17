@@ -60,7 +60,7 @@ To start debugging a HID issue, enter the [**!hidtree**](-hidkd-hidtree.md) comm
 
  
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [RCDRKD Extensions](rcdrkd-extensions.md)

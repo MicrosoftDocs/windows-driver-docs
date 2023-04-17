@@ -50,6 +50,6 @@ When the USB 3.0 core stack receives a transfer request from a USB client driver
 
 An Endpoint Context structure holds context information for a single endpoint. It also has **Dequeue** and **Enqueue** members, which are used to track where TRBs are being consumed by the hardware and where TRBs are being added by software.
 
-## Related topics
+## See also
 
 [USB Debugging Innovations in Windows 8](/events/build-build2011/hw-258p)

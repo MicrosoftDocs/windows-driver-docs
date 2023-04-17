@@ -64,7 +64,7 @@ If **.createdir** is used with no parameters, the current starting directory and
 
 If **.createdir** has never been used, any created process will use its usual default directory as its starting directory. If you have already set a path with **.createdir** and want to return to the default status, use **.createdir ""** with nothing inside the quotation marks.
 
-The **.createdir** setting affects all processes created by [**.create (Create Process)**](-create--create-process-.md). It also affects processes created by WinDbg's [File | Open Executable](file---open-executable.md) menu command, unless the **Start directory** text box is used to override this setting.
+The **.createdir** setting affects all processes created by [**.create (Create Process)**](-create--create-process-.md). It also affects processes created by WinDbg's **File | Open Executable** menu command, unless the **Start directory** text box is used to override this setting.
 
  
 

@@ -1,11 +1,11 @@
 ---
-title: Using the Help Documentation
-description: Using the Help Documentation
+title: Using the Help Documentation - WinDbg (Classic)
+description: Using the Help Documentation - WinDbg (Classic)
 keywords: ["HTML Help", "searching the Help file", "index of the Help file", "favorites in the Help file", "printing topics from the Help file", "hh.exe", "help file", "help file, overview", "help file, searching"]
 ms.date: 05/23/2017
 ---
 
-# Using the Help Documentation
+# Using the Help Documentation - WinDbg (Classic)
 
 
 ## <span id="ddk_using_the_help_file_dbg"></span><span id="DDK_USING_THE_HELP_FILE_DBG"></span>

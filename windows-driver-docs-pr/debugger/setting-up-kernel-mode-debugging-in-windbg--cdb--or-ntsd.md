@@ -37,7 +37,7 @@ This section describes how to set up kernel-mode debugging.
 
 - [Setting Up Kernel-Mode Debugging over a 1394 Cable Manually](setting-up-a-1394-cable-connection.md)
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 [Setting Up Debugging (Kernel-Mode and User-Mode)](getting-set-up-for-debugging.md)
 

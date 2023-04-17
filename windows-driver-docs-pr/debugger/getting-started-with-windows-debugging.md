@@ -58,7 +58,7 @@ Whether you need a 32-bit or 64-bit debugger depends on the version of Windows t
 
 ## 6. Configure symbols
 
-To use all of the advanced functionality that WinDbg provides, you must load the proper symbols. Symbol files hold data that could be useful in the debugging process. If the symbols aren't properly configured, they're not available when you attempt to use functionality that's dependent on symbols. For more information, see [Symbols for Windows debugging (WinDbg, KD, CDB, NTSD)](symbols.md).
+To use all of the advanced functionality that WinDbg provides, you must load the proper symbols. If you do not have symbols properly configured, you will receive messages indicating that symbols are not available when you attempt to use functionality that is dependent on symbols. For more information, see [Symbols for Windows debugging](symbols.md).
 
 ## 7. Configure source code
 
@@ -66,7 +66,7 @@ If your goal is to debug your own source code, you need to configure a path to y
 
 ## 8. Become familiar with debugger operation
 
-To learn about debugger operations for various tasks, see [Debugger operation](debugger-operation-win8.md). For example, [Loading debugger extension DLLs](loading-debugger-extension-dlls.md) explains how to load debugger extensions. To learn more about working with WinDbg, see [Debugging using WinDbg](debugging-using-windbg.md).
+The [Debugger operation](debugger-operation-win8.md) section of this documentation describes debugger operation for various tasks. For example, [Loading debugger extension DLLs](loading-debugger-extension-dlls.md) explains how to load debugger extensions. 
 
 ## 9. Become familiar with debugging techniques
 

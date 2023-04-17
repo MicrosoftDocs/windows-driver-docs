@@ -83,7 +83,7 @@ The **!list** extension will go through the linked list and issue the specified 
 
 The pseudo-register **$extret** is set to the value of the list-entry address for each list element. For each element, the command string *Commands* is executed. This command string can reference this pseudo-register using the **$extret** syntax. If this does not appear in the command string, the value of the list-entry address is appended to the end of the command string before execution. If you need to specify where this value should appear in your command, you must specify this pseudo-register explicitly.
 
-This command sequence will run until the list terminates in a null pointer, or terminates by looping back onto the first element. If the list loops back onto a later element, this command will not stop. However, you can stop this command at any time by using [**CTRL+C**](ctrl-c--break-.md) in KD and CDB, or [Debug | Break](debug---break.md) or CTRL+BREAK in WinDbg.
+This command sequence will run until the list terminates in a null pointer, or terminates by looping back onto the first element. If the list loops back onto a later element, this command will not stop. However, you can stop this command at any time by using [**CTRL+C**](ctrl-c--break-.md) in KD and CDB, or **Debug | Break** or CTRL+BREAK in WinDbg.
 
 Each time a command is executed, the address of the current structure will be used as the *default address* if the command being used has optional address parameters.
 

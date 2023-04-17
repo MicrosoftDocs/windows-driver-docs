@@ -1,14 +1,14 @@
 ---
-title: WinDbg Preview - Start a user mode session
-description: This section describes how to start a user mode session with the WinDbg preview debugger.
-ms.date: 01/09/2020
+title: WinDbg - Start a user mode session
+description: This section describes how to start a user mode session with the WinDbg debugger.
+ms.date: 11/23/2022
 ---
 
-# WinDbg Preview - Start a user mode session
+# WinDbg - Start a user mode session
 
-![Small logo on windbg preview.](images/windbgx-preview-logo.png)
+![Small logo for windbg.](images/windbgx-preview-logo.png)
 
-This section describes how to start a user mode session with the WinDbg preview debugger.
+This section describes how to start a user mode session with the WinDbg debugger.
 
 Select *File*, *Start debugging*, and select either of these four options:
 
@@ -64,4 +64,4 @@ Use this option to launch and attach to an app package using either the Applicat
 
 ## See Also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Features](debugging-using-windbg-preview.md)

@@ -14,7 +14,7 @@ This section describes how to use the data model to query time travel traces. Th
 * When were threads created/terminated in the trace?
 * What are the longest running threads in the trace?
 
-There are TTD extensions that add data to the *Session* and *Process* data model objects. The TTD data model objects can be accessed through  the [dx  (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) command, WinDbg Preview's model windows, JavaScript and C++. The TTD extensions are automatically loaded when debugging a time travel trace.
+There are TTD extensions that add data to the *Session* and *Process* data model objects. The TTD data model objects can be accessed through  the [dx  (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) command, WinDbg's model windows, JavaScript and C++. The TTD extensions are automatically loaded when debugging a time travel trace.
 
 ## Process Objects
 

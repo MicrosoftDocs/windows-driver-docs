@@ -26,7 +26,7 @@ dbgControl.ExecuteCommand("!tt 0",false);
 host.diagnostics.debugLog(">>> Sent command to move to the start of the TTD file \n");
 ```
 
-We can make this into a ResetTrace function, and save it as ResetTrace.js, using the JavaScript UI in WinDbg Preview.
+We can make this into a ResetTrace function, and save it as ResetTrace.js, using the JavaScript UI in WinDbg.
 
 ```javascript
 // WinDbg TTD JavaScript ResetTraceCmd Sample
@@ -41,7 +41,7 @@ function ResetTraceCmd()
 }
 ```
 
-After a TTD file is loaded in WinDbg Preview, call the function ResetTraceCmd() function using the dx command in the debugger command window.
+After a TTD file is loaded in WinDbg, call the function ResetTraceCmd() function using the dx command in the debugger command window.
 
 ```dbgcmd
 0:000> dx Debugger.State.Scripts.ResetTrace.Contents.ResetTraceCmd()

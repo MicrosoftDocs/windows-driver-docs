@@ -91,7 +91,7 @@ Arg3: 0000000000000000, 0
 Arg4: 0000000000000000, 0
 ```
 
-To download WinDbg, see [Download Debugging Tools for Windows](debugger-download-tools.md). To learn more about the WinDbg development tools, see [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md).
+To download WinDbg, see [Debugging Tools for Windows](debugger-download-tools.md). To learn more about the WinDbg development tools, see [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md).
 
 ## Live dump file locations
 

@@ -129,7 +129,7 @@ If the program counter is at a point that corresponds to a symbol (such as the b
 
 If the **wt** command is issued somewhere other than the beginning of a function, the command behaves like the [**p (Step)**](p--step-.md) command. However, if you specify *EndAddress*, execution continues until that address is reached, even if this execution involves many program steps and function calls.
 
-When you are debugging in source mode, you should trace into the function only to the point where you see the opening bracket of the function body. Then, you can use the **wt** command. (It is typically easier to insert a breakpoint at the first line of the function, or use [Debug | Run to Cursor](debug---run-to-cursor.md), and then use the **wt** command.)
+When you are debugging in source mode, you should trace into the function only to the point where you see the opening bracket of the function body. Then, you can use the **wt** command. (It is typically easier to insert a breakpoint at the first line of the function, or use **Debug | Run to Cursor**, and then use the **wt** command.)
 
 Because the output from **wt** can be long, you might want to use a log file to record your output.
 

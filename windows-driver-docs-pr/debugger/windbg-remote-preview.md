@@ -1,14 +1,14 @@
 ---
-title: WinDbg Preview - Remote, Process Server and Dump file Sessions
-description: This section describes how to start a remote, process server and dump file session with the WinDbg preview debugger.
+title: WinDbg - Remote, Process Server and Dump file Sessions
+description: This section describes how to start a remote, process server and dump file session with the WinDbg debugger.
 ms.date: 01/10/2020
 ---
 
-# WinDbg Preview - Start a remote, process server and dump file session
+# WinDbg - Start a remote, process server and dump file session
 
-![Small logo on windbg preview.](images/windbgx-preview-logo.png)
+![Small logo on WinDbg.](images/windbgx-preview-logo.png)
 
-This section describes how to start a  remote, process server and dump file session with the WinDbg preview debugger.
+This section describes how to start a  remote, process server and dump file session with the WinDbg debugger.
 
 ## Remote Debug Server
 
@@ -18,7 +18,7 @@ Use this option to connect to a remote debugging server.
 
 Remote debugging involves two debuggers running at two different locations. The debugger that performs the debugging is called the debugging server. The second debugger, called the debugging client, controls the debugging session from a remote location. To establish a remote session, you must set up the debugging server first and then connect to it with the debugging client.
 
-For more information about remote sessions, see [Remote Debugging Using WinDbg](remote-debugging-using-windbg.md).
+For more information about remote sessions, see [Remote WinDbg Features](remote-debugging-using-windbg.md).
 
 ## Process Debug Server
 
@@ -36,4 +36,4 @@ For more information about the different types of dump files, see [Analyze crash
 
 ## See Also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Features](debugging-using-windbg-preview.md)

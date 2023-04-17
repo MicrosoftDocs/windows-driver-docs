@@ -37,7 +37,7 @@ You can also change the break state after the debugger is running:
 
 -   Control the initial module load and kernel initialization breakpoints like all exceptions and events. You can break into the debugger when these events occur, or ignore them. You can also have a specified command automatically execute when these breakpoints are hit. For more information, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
--   Use the [**CTRL+K**](ctrl-k--change-post-reboot-break-state-.md) shortcut keys in KD, the [CTRL+ALT+K](debug---kernel-connection---cycle-initial-break.md) shortcut keys in WinDbg, and the Debug | Kernel Connection | Cycle Initial Break command in WinDbg to change the break state. Every time that you use these commands, the debugger switches between three states: no automatic break, break upon kernel initialization, and break on first kernel module load. This method cannot activate both automatic breakpoints at the same time.
+-   Use the [**CTRL+K**](ctrl-k--change-post-reboot-break-state-.md) shortcut keys in KD, the **CTRL+ALT+K** shortcut keys in WinDbg, and the **Debug | Kernel Connection | Cycle Initial Break** command in WinDbg to change the break state. Every time that you use these commands, the debugger switches between three states: no automatic break, break upon kernel initialization, and break on first kernel module load. This method cannot activate both automatic breakpoints at the same time.
 
  
 
