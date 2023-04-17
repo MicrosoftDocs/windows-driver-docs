@@ -412,10 +412,10 @@ HKLM\SOFTWARE\Classes\MediaFoundation\Transforms\{clsid}\
 For an MFT registration on a new build, the INF will create the key under: 
 
 ```
-<software key>\MediaFoundation\Transforms\{clsid}\ 
+**software key**\MediaFoundation\Transforms\{clsid}\ 
 ```
  
- Where <software key> represents a device's software key. See [Opening a device's software key](../install/opening-a-device-s-software-key.md).
+ Where **software key** represents a device's software key. See [Opening a device's software key](../install/opening-a-device-s-software-key.md).
 
 A syntax example of targeting different OS versions can be seen below: 
 
