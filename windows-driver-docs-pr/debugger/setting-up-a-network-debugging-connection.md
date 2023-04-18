@@ -28,7 +28,7 @@ The host computer can use any network adapter, but the target computer must use 
 
 ## Install Debugging Tools for Windows
 
-Confirm that Debugging Tools for Windows are installed on the host system. For information on downloading and installing the debugger tools, see [Download Debugging Tools for Windows](debugger-download-tools.md).
+Confirm that the Debugging Tools for Windows are installed on the host system. For information on downloading and installing the debugger tools, see [Debugging Tools for Windows](debugger-download-tools.md).
 
 ## Determine the IP address of the host computer
 
@@ -139,7 +139,7 @@ When you first attempt to establish a network debugging connection, you might be
 
 If you don't get the prompt or if you didn't check the boxes when the prompt was available, you must use the Control Panel to allow access through the firewall on the host PC where the debugger is running. Open **Control Panel > System and Security** and select **Allow an app through Windows Firewall**. 
 
-   - (WinDbg Preview) In the list of applications, locate *WinDbg engine process (TCP) (all)*.
+   - (WinDbg) In the list of applications, locate *WinDbg engine process (TCP) (all)*.
 
    - (Classic WinDbg) In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*.
 
@@ -167,9 +167,9 @@ When you first attempt to establish a network debugging connection, you might be
 
 If you don't get the prompt or if you didn't check the boxes when the prompt was available, you must use Control Panel to allow access through the firewall. Open **Control Panel > System and Security** and select **Allow an app through Windows Firewall**. 
 
-   - (WinDbg Preview) In the list of applications, locate *WinDbg engine process (TCP) (all)*.
+   - (WinDbg) In the list of applications, locate *WinDbg engine process (TCP) (all)*.
 
-   - (Classic WinDbg) In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*.
+   - (WinDbg (Clasic)) In the list of applications, locate *Windows GUI Symbolic Debugger* and *Windows Kernel Debugger*.
 
 Use the checkboxes to allow those applications through the firewall. Scroll down and select **OK** to save the firewall changes. Restart the debugger.
 

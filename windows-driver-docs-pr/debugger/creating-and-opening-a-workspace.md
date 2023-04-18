@@ -19,7 +19,7 @@ WinDbg has several different kinds of default workspaces:
 
 -   The *base workspace* is used when WinDbg is in a dormant state.
 
--   The *default user-mode workspace* is used when you are attaching to a user-mode process (by using the **-p**[**command-line option**](windbg-command-line-options.md) or by using the [File | Attach to a Process](file---attach-to-a-process.md) command).
+-   The *default user-mode workspace* is used when you are attaching to a user-mode process (by using the **-p**[**command-line option**](windbg-command-line-options.md) or by using the **File | Attach to a Process** command).
 
 -   The *remote default workspace* is used when you are connecting to a debugging server.
 
@@ -39,9 +39,7 @@ For greatest efficiency, you should save settings in lower-level workspaces if y
 
 **Note**   The layout of the debugging information windows is one exception to the cumulative behavior of workspaces. The position, docking status, and size of each window are determined by only the most recent workspace that you opened. This behavior includes the contents of the Watch window and the locations that you viewed in each [Memory window](memory-window.md). The command history in the [Debugger Command window](debugger-command-window.md) is not cleared when a new workspace is opened, but all other window states are reset.
 
- 
-
-To access the base workspace, start WinDbg with no target, or click [Stop Debugging](debug---stop-debugging.md) on the **Debug** menu after your session is complete. You can then make any edits that are allowed in the base workspace.
+To access the base workspace, start WinDbg with no target, or click **Stop Debugging** on the **Debug** menu after your session is complete. You can then make any edits that are allowed in the base workspace.
 
 ### <span id="named_workspaces"></span><span id="NAMED_WORKSPACES"></span>Named Workspaces
 
@@ -59,19 +57,19 @@ To control workspaces, you can do the following:
 
 -   Disable all automatic workspace loading by using the **-WX** [**command-line option**](windbg-command-line-options.md). Only explicit workspace commands cause workspaces to be saved or loaded.
 
--   Open and load a named workspace by clicking [Open Workspace](file---open-workspace.md) on the **File** menu or pressing CTRL+W.
+-   Open and load a named workspace by clicking **Open Workspace** on the **File** menu or pressing CTRL+W.
 
--   Save the current default workspace or the current named workspace by clicking [Save Workspace](file---save-workspace.md) on the **File** menu.
+-   Save the current default workspace or the current named workspace by clicking **Save Workspace** on the **File** menu.
 
--   Assign a name to the current workspace and save it by clicking [Save Workspace As](file---save-workspace-as.md) on the **File** menu.
+-   Assign a name to the current workspace and save it by clicking **Save Workspace As** on the **File** menu.
 
--   Delete specific items and settings from the current workspace by clicking [Clear Workspace](file---clear-workspace.md) on the **File** menu.
+-   Delete specific items and settings from the current workspace by clicking **Clear Workspace** on the **File** menu.
 
--   Delete workspaces by clicking [Delete Workspaces](file---delete-workspaces.md) on the **File** menu.
+-   Delete workspaces by clicking **Delete Workspaces** on the **File** menu.
 
--   Open and load a workspace from a file by clicking [Open Workspace in File](file---open-workspace-in-file.md) on the **File** menu.
+-   Open and load a workspace from a file by clicking **Open Workspace in File** on the **File** menu.
 
--   Save a workspace to a file by clicking [Save Workspace to File](file---save-workspace-to-file.md) on the **File** menu.
+-   Save a workspace to a file by clicking **Save Workspace to File** on the **File** menu.
 
  
 

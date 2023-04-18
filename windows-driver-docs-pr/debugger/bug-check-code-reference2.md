@@ -32,7 +32,7 @@ Arg3: 0000000000000000, nt!_TRIAGE_9F_POWER on Win7 and higher, otherwise the Fu
 Arg4: 0000000000000000, The blocked IRP
 ```
 
-To download WinDbg, see [Download Debugging Tools for Windows](debugger-download-tools.md). To learn more about the WinDbg development tools, see [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md).
+To download WinDbg, see [Debugging Tools for Windows](debugger-download-tools.md). To learn more about the WinDbg development tools, see [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md).
 
 ## Bug check dump files
 

@@ -1,11 +1,11 @@
 ---
-title: Summary of ACX Objects
+title: Summary of ACX objects
 description: This topic provides a high level summary of ACX Objects that form the base of an ACX audio driver.
 ms.date: 09/14/2022
 ms.localizationpriority: medium
 ---
 
-# Summary of ACX Objects
+# Summary of ACX objects
 
 >[!IMPORTANT]
 > Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.

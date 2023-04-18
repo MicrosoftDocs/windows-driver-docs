@@ -1,17 +1,17 @@
 ---
-title: WinDbg Preview - Command line startup options
-description: This section covers the command line startup options for the WinDbg Preview debugger.
+title: WinDbg - Command line startup options
+description: This section covers the command line startup options for the WinDbg debugger.
 ms.date: 09/11/2019
 ms.topic: article
 ---
 
-# WinDbg Preview - Command line startup options
+# WinDbg - Command line startup options
 
-![Small logo on windbg preview.](images/windbgx-preview-logo.png)
+![Small logo on WinDbg.](images/windbgx-preview-logo.png)
 
-## Starting WinDbg Preview
+## Starting WinDbg
 
-After WinDbg Preview is installed, WinDbgX.exe is available to run from any directory location.
+After WinDbg is installed, WinDbgX.exe is available to run from any directory location.
 
 ## Command line startup options
 
@@ -113,8 +113,8 @@ For a list of exceptions that can be specified, see [Event Definitions and Defau
 
 Option  | Description
 |------ | -----------|
--I     | Sets WinDbg Preview as the default post-mortem debugger for the system.
--IS    | Sets WinDbg Preview as the default post-mortem debugger for the system silently, with only errors being reported.
+-I     | Sets WinDbg as the default post-mortem debugger for the system.
+-IS    | Sets WinDbg as the default post-mortem debugger for the system silently, with only errors being reported.
 
 **Deprecated Options**
 
@@ -134,4 +134,4 @@ You can use -? to list the supported command line options.
 
 ## See Also
 
-[Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Features](debugging-using-windbg-preview.md)

@@ -59,7 +59,7 @@ In CDB, the [**q (Quit)**](q--qq--quit-.md) command should be used to exit. CTRL
 
 In KD, the **q** command will end the debugging session and leave the target computer locked. If you need to preserve the debugging session (so a new debugger can connect to it), or if you need to leave the target computer running, you should use CTRL+B.
 
-In WinDbg, the equivalent command is [File | Exit](file---exit.md) or ALT+F4.
+In WinDbg, the equivalent command is **File | Exit** or ALT+F4.
 
  
 

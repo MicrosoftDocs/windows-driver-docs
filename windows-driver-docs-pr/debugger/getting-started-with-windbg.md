@@ -1,14 +1,14 @@
 ---
 title: Get started with WinDbg (user mode)
 description: Get started using WinDbg in Debugging Tools for Windows with hands-on, user-mode debugger exercises.
-ms.date: 12/07/2022
+ms.date: 03/08/2023
 ---
 
 # Get started with WinDbg (user mode)
 
 WinDbg is a kernel-mode and user-mode debugger that's included in Debugging Tools for Windows. The following hands-on exercises can help you get started using WinDbg as a user-mode debugger.
 
-To learn how to get the tools, see [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](index.md).
+For information about how to get Debugging Tools for Windows, see [Download and install the WinDbg Windows debugger](index.md).
 
 After you install the debugging tools, find the installation directories for the 64-bit (x64) and 32-bit (x86) versions of the tools. For example:
 
@@ -340,6 +340,6 @@ For this exercise, assume that the built application (MyApp.exe) and the symbol 
 
 [Debugging techniques](debugging-techniques.md)
 
-[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](./index.md)
+[Download and install the WinDbg Windows debugger](./index.md)
 
-[Debug by using WinDbg Preview](debugging-using-windbg-preview.md)
+[WinDbg Features](debugging-using-windbg-preview.md)

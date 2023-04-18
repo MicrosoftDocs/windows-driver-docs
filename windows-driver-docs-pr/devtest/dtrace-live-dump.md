@@ -15,7 +15,7 @@ ms.date: 11/04/2019
 
 # DTrace Live Dump
 
-DTrace provides a facility to capture live dump from within the D-script using lkd(). Memory dump files are used for debugging complex problems in Windows using the Windows Debugger. For more information, see [Analyze crash dump files by using WinDbg](../debugger/crash-dump-files.md). To download the debugger, see [WinDbg Preview - Installation](../debugger/windbg-install-preview.md).
+DTrace provides a facility to capture live dump from within the D-script using lkd(). Memory dump files are used for debugging complex problems in Windows using the Windows Debugger. For more information, see [Analyze crash dump files by using WinDbg](../debugger/crash-dump-files.md). To download the debugger, see [Download and install the WinDbg Windows debugger](../debugger/index.md).
 
  DTrace live dump provides the ability to trigger the dump at the exact point where the error occurred. For instance, the error could be a function returning an error. You can use DTrace to hook into this function return and trigger a live dump when the return value is "error".
 

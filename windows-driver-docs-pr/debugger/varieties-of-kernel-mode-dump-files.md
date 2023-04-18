@@ -37,7 +37,7 @@ After a Complete Memory Dump or Kernel Memory Dump has been created, it is possi
 
  
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [Kernel-Mode Dump Files](kernel-mode-dump-files.md)

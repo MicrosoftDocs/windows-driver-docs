@@ -1,10 +1,10 @@
 ---
-title: Viewing and Editing Global Variables in WinDbg
-description: Viewing and Editing Global Variables in WinDbg
+title: Viewing and Editing Global Variables in WinDbg (Classic)
+description: Viewing and Editing Global Variables in WinDbg (Classic)
 ms.date: 11/28/2017
 ---
 
-# Viewing and Editing Global Variables in WinDbg
+# Viewing and Editing Global Variables in WinDbg (Classic)
 
 
 ## <span id="ddk_debugging_bios_code_dbg"></span><span id="DDK_DEBUGGING_BIOS_CODE_DBG"></span>

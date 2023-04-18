@@ -131,7 +131,7 @@ Open the Performance Monitor and view the Symbol Proxy counters.
 
 Open the Event Viewer and view the Microsoft\\Windows\\SymProxy events.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [Installing SymProxy](installing-symproxy.md)

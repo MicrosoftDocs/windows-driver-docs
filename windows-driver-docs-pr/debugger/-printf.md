@@ -28,7 +28,7 @@ The **.printf** token behaves like the **printf** statement in C.
 Specifies that the format string contains [Debugger Markup Language](debugger-markup-language-commands.md) (DML).
 
 <span id="_______Option______"></span><span id="_______option______"></span><span id="_______OPTION______"></span> *Option*   
-(WinDbg only) Specifies the type of text message that WinDbg should interpret the FormatString as. WinDbg assigns each type of Debugger Command window message a background and text color; choosing one of these options causes the message to be displayed in the appropriate colors. The default is to display the text as a normal-level message. For more information on message colors and how to set them, see [View | Options](view---options.md).
+(WinDbg only) Specifies the type of text message that WinDbg should interpret the FormatString as. WinDbg assigns each type of Debugger Command window message a background and text color; choosing one of these options causes the message to be displayed in the appropriate colors. The default is to display the text as a normal-level message.
 
 The following options are available.
 
@@ -181,7 +181,7 @@ For information about other control flow tokens and their use in debugger comman
 
 ## Remarks
 
-The color settings that you can choose by using the *Options* parameter are by default all set to black text on a white background. To make best use of these options, you must first use [View | Options](view---options.md) to open the Options dialog box and change the color settings for Debugger Command window messages.
+The color settings that you can choose by using the *Options* parameter are by default all set to black text on a white background. To make best use of these options, you must first use **View | Options** to open the Options dialog box and change the color settings for Debugger Command window messages.
 
 The following example shows how to include a DML tag in the format string.
 

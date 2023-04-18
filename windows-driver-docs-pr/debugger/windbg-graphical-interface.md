@@ -1,31 +1,46 @@
 ---
-title: Using the WinDbg Graphical Interface
-description: This section covers using the WinDbg Graphical Interface
+title: Using the WinDbg Graphical Interface (Classic)
+description: This section covers using the WinDbg Graphical Interface (Classic)
 keywords: WinDbg, graphical interface, GUI, graphical interface
-ms.date: 05/23/2017
+ms.date: 12/12/2022
 ---
 
-# Using the WinDbg Graphical Interface
+# Using the WinDbg Graphical Interface (Classic)
 
+This section describes how to perform basic debugging tasks using the WinDbg debugger.
 
-## <span id="ddk_the_windbg_graphical_interface_dbg"></span><span id="DDK_THE_WINDBG_GRAPHICAL_INTERFACE_DBG"></span>
+Details are given in the following topics:
 
+[Using Workspaces - WinDbg (Classic)](using-workspaces.md)
 
-This section includes the following topics:
+[Using the Toolbar and Status Bar - WinDbg (Classic)](using-the-toolbar-and-status-bar.md)
 
-[Using Debugging Information Windows](using-debugging-information-windows.md)
+[Live Kernel-Mode Debugging Using WinDbg (Classic)](performing-kernel-mode-debugging-using-windbg.md)
 
-[Using Workspaces](using-workspaces.md)
+[Ending a Debugging Session in WinDbg (Classic)](ending-a-debugging-session-in-windbg.md)
 
-[Using the Toolbar and Status Bar](using-the-toolbar-and-status-bar.md)
+[Entering Debugger Commands in WinDbg (Classic)](debugger-command-window.md)
 
-[Using the Help Documentation](using-the-help-documentation.md)
+[Using the Command Browser Window in WinDbg (Classic)](command-browser-window.md)
 
+[Setting Breakpoints in WinDbg (Classic)](setting-breakpoints-in-windbg.md)
+
+[Viewing the Call Stack in WinDbg (Classic)](calls-window.md)
+
+[Assembly Code Debugging in WinDbg (Classic)](disassembly-window.md)
+
+[Source Code Debugging in WinDbg (Classic)](source-window.md)
+
+[Viewing and Editing Memory in WinDbg (Classic)](memory-window.md)
+
+[Viewing and Editing Global Variables in WinDbg (Classic)](viewing-and-editing-global-variables-in-windbg.md)
+
+[Viewing and Editing Local Variables in WinDbg (Classic)](locals-window.md)
+
+[Viewing and Editing Registers in WinDbg (Classic)](registers-window.md)
+
+[Controlling Processes and Threads in WinDbg (Classic)](processes-and-threads-window.md)
  
-
+[Using the Watch Window - WinDbg (Classic)](watch-window.md)
  
-
-
-
-
-
+[Using the Scratch Pad - WinDbg (Classic)](scratch-pad.md)

@@ -10,7 +10,7 @@ api_name:
 - INF DestinationDirs Section
 api_type:
 - NA
-ms.date: 06/08/2022
+ms.date: 04/10/2023
 ---
 
 # INF DestinationDirs section
@@ -57,14 +57,14 @@ This example sets the default target directory for all copy-file, delete-file, a
 
 ```inf
 [DestinationDirs]
-DefaultDestDir = 12 ; dirid = %windir%\system32\Drivers on WinNT platforms
+DefaultDestDir = 13
 ```
 
-This example shows a fragment of the **DestinationDirs** section of the INF for display/video drivers.
+This example shows a fragment of the **DestinationDirs** section of the INF for a display/video driver.
 
 ```inf
 [DestinationDirs]
-DefaultDestDir     = 11 ; dirid = \system32 on WinNT platforms
+DefaultDestDir     = 13
 
 ; ... 
 
@@ -72,13 +72,10 @@ DefaultDestDir     = 11 ; dirid = \system32 on WinNT platforms
 ; CopyFiles-referenced xxx.Miniport/xxx.Display sections omitted here
 ; along with several other miniport/display paired drivers
 ; ...
-vga.Miniport     = 12
-vga.Display      = 11
-xga.Miniport     = 12
-xga.Display      = 11
-
-; all video miniports copied into \system32\drivers on WinNT platforms
-; all paired display drivers copied into \system32
+vga.Miniport     = 13
+vga.Display      = 13
+xga.Miniport     = 13
+xga.Display      = 13
 ```
 
 ## See also

@@ -15,11 +15,11 @@ Once the remote session has been started, the smart client can be used as if it 
 
 ### <span id="using_windbg_as_a_smart_client"></span><span id="USING_WINDBG_AS_A_SMART_CLIENT"></span>Using WinDbg as a Smart Client
 
-After WinDbg is started as a smart client for a KD connection server, you can use the [Debug | Stop Debugging](debug---stop-debugging.md) command to end the debugging session. At that point, WinDbg will enter dormant mode and will no longer be connected to the KD connection server. All subsequent debugging will be done on the computer where WinDbg is running. You cannot reattach to the KD connection serve by using [File | Kernel Debug](file---kernel-debug.md) -- this can only be done from the command line.
+After WinDbg is started as a smart client for a KD connection server, you can use the **Debug | Stop Debugging** command to end the debugging session. At that point, WinDbg will enter dormant mode and will no longer be connected to the KD connection server. All subsequent debugging will be done on the computer where WinDbg is running. You cannot reattach to the KD connection serve by using **File | Kernel Debug** -- this can only be done from the command line.
 
 ### <span id="ending_the_session"></span><span id="ENDING_THE_SESSION"></span>Ending the Session
 
-KD or WinDbg can exit or end the debugging session in the normal fashion. See [Ending a Debugging Session in WinDbg](ending-a-debugging-session-in-windbg.md)
+KD or WinDbg can exit or end the debugging session in the normal fashion. See [Ending a Debugging Session in WinDbg (Classic)](ending-a-debugging-session-in-windbg.md)
 
 for details. The KD connection server will remain in operation and can be re-used as many times as desired. (It can also be used by for any number of simultaneous debugging sessions.)
 

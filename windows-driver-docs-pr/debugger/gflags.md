@@ -2,7 +2,7 @@
 title: GFlags
 description: Learn how GFlags (the Global Flags Editor), gflags.exe, enables and disables advanced debugging, diagnostic, and troubleshooting features. 
 keywords: GFlags, Global Flags Editor, gflags.exe
-ms.date: 12/16/2022
+ms.date: 03/08/2023
 ---
 
 # GFlags
@@ -59,11 +59,11 @@ This section includes:
 
 [GFlags and PageHeap](gflags-and-pageheap.md)
 
-[Global flags dialog box](global-flags-dialog-box.md)
+[Global Flags Dialog Box](global-flags-dialog-box.md)
 
-[GFlags examples](gflags-examples.md)
+[GFlags Examples](gflags-examples.md)
 
-[Global flag reference](global-flag-reference.md)
+[Global Flag Reference](global-flag-reference.md)
 
 > [!NOTE]
 > Incorrect use of this tool can degrade system performance or prevent Windows from starting, requiring you to reinstall Windows.
@@ -73,4 +73,10 @@ This section includes:
 
 ## See also
 
-- [Tools included in Debugging Tools for Windows](extra-tools.md)
+[Tools Included in Debugging Tools for Windows](extra-tools.md)
+
+[GFlags examples](gflags-examples.md)
+
+[Global flag reference](global-flag-reference.md)
+
+[Tools included in Debugging Tools for Windows](extra-tools.md)

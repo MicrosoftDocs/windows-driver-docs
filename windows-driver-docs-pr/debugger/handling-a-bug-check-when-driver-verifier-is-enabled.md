@@ -154,6 +154,6 @@ FAILURE_BUCKET_ID:  0xc4_IrqlExApcLte1_XDV_VRF_MyDriver!OnInterrupt
 BUCKET_ID:  0xc4_IrqlExApcLte1_XDV_VRF_MyDriver!OnInterrupt
 ```
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 [Static Driver Verifier](../devtest/static-driver-verifier.md)

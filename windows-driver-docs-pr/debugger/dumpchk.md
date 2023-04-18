@@ -2,7 +2,7 @@
 title: DumpChk
 description: Learn about DumpChk (the Microsoft Crash Dump File Checker tool), which is a program that performs a quick analysis of a crash dump file.
 keywords: ["DumpChk"]
-ms.date: 12/12/2022
+ms.date: 03/07/2023
 ---
 
 # DumpChk

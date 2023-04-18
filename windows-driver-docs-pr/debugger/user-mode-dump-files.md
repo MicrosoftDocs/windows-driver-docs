@@ -83,7 +83,7 @@ For information about creating a user-mode dump file by using the Sysinternals P
 
 ### CDB and WinDbg
 
-Console Debugger (CDB) and Windows Debugger (WinDbg) are debugging tools that are included in Windows Software Development Kit and Windows Driver Kit. See options to [install Windows debugger tools](index.md#install-debugging-tools-for-windows).
+Console Debugger (CDB) and Windows Debugger (WinDbg) are debugging tools that are included in Windows Software Development Kit and Windows Driver Kit. See the install options in [Download and install the WinDbg Windows debugger](index.md).
 
 You can use CDB or WinDbg to create user-mode dump files in multiple ways:
 
@@ -91,7 +91,7 @@ You can use CDB or WinDbg to create user-mode dump files in multiple ways:
 - Create dump files when you debug.
 - Shrink an existing dump file.
 
-For more information about the tools, see [Debug by using CDB](debugging-using-cdb-and-ntsd.md) and [Download debugger tools for Windows](debugger-download-tools.md).
+For more information about the tools, see [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md) and [Debug by using CDB](debugging-using-cdb-and-ntsd.md).
 
 ## Create a dump file automatically
 

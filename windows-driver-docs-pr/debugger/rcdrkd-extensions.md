@@ -33,7 +33,7 @@ The following auxiliary commands provide services related to displaying and savi
 
 The [**!rcdrkd.rcdrhelp**](-rcdrkd-rcdrhelp.md) displays help for the RCDRKD commands in the debugger.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [WPP Software Tracing](../devtest/wpp-software-tracing.md)

@@ -81,7 +81,7 @@ TagDesc         0xA0000000  SAMPLE_PLUGIN_DEBUG_TEXT    {Sample debug help text 
 #
 ```
 
-## Related topics
+## See also
 
 
 [Writing an Analysis Extension Plug-in to Extend !analyze](writing-an-analysis-extension-to-extend--analyze.md)

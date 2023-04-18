@@ -1,7 +1,7 @@
 ---
 title: Tools included in Debugging Tools for Windows
 description: Learn about the tools that are included in Debugging Tools for Windows in addition to the debugging engine and debugging environments.
-ms.date: 12/30/2022
+ms.date: 03/08/2023
 ---
 
 # Tools included in Debugging Tools for Windows
@@ -50,7 +50,6 @@ Debugging Tools for Windows includes several tools in addition to the debugging 
 | KdSrv | A KD connection server used for remote debugging. See [KD connection servers (kernel mode)](kd-connection-servers--kernel-mode-.md). |
 | RTList (Remote Task List Viewer) | List running processes via a DbgSrv process server. For help, open a Command Prompt window, go to the [installation directory](#installation-directories), and enter `rtlist /?`. |
 | [Remote](remote-tool.md) | Remotely control any console program, including KD, CDB, and NTSD. See [Remote debugging by using Remote.exe](remote-debugging-through-remote-exe.md). |
-
 
 <a name="installation-directories"></a>
 

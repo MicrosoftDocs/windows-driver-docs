@@ -33,7 +33,7 @@ You can use the preceding commands even if the processes are on different system
 
 When debugging begins, the current system is the one that the debugger most recently attached to. If an exception occurs, the current system switches to the system that this exception occurred on.
 
-To close one target and continue to debug the other targets, use the [**.kill (Kill Process)**](-kill--kill-process-.md) command. You can use the [**.detach (Detach from Process)**](-detach--detach-from-process-.md) command or WinDbg's [Debug | Detach Debuggee](debug---detach-debuggee.md) menu command instead. These commands detach the debugger from the target but leave the target running.
+To close one target and continue to debug the other targets, use the [**.kill (Kill Process)**](-kill--kill-process-.md) command. You can use the [**.detach (Detach from Process)**](-detach--detach-from-process-.md) command or WinDbg's **Debug | Detach Debuggee** menu command instead. These commands detach the debugger from the target but leave the target running.
 
 To control the debugging of multiple systems, you can use the following methods:
 

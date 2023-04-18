@@ -1,11 +1,11 @@
 ---
-title: Viewing and Editing Local Variables in WinDbg
+title: Viewing and Editing Local Variables in WinDbg (Classic)
 description: In WinDbg, you can view local variables by entering commands, by using the Locals window, or by using the Watch window.
 keywords: ["debugging information windows, Locals window", "Locals window", "memory, Locals window"]
 ms.date: 05/23/2017
 ---
 
-# Viewing and Editing Local Variables in WinDbg
+# Viewing and Editing Local Variables in WinDbg (Classic)
 
 
 In WinDbg, you can view local variables by entering commands, by using the Locals window, or by using the Watch window.
@@ -84,7 +84,7 @@ The Locals window has a toolbar that contains two buttons (**Typecast** and **Lo
 
 -   (Menu only) **Always floating** causes the window to remain undocked even if it is dragged to a docking location.
 
--   (Menu only) **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked. For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md).
+-   (Menu only) **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked.
 
 -   (Menu only) **Help** opens this topic in the Debugging Tools for Windows documentation.
 

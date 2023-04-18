@@ -1,7 +1,7 @@
 ---
 title: Setting Up Network Debugging of a Virtual Machine with KDNET
 description: This topic describes how to configure a kernel debugging connection to a Hyper-V virtual machine.
-ms.date: 02/15/2023
+ms.date: 03/08/2023
 ---
 
 # Setting Up Network Debugging of a Virtual Machine - KDNET
@@ -44,7 +44,7 @@ You can re-enable Secure Boot once you’re done debugging and you’ve disabled
 
 **4. Install the Debugging Tools for Windows**
 
-The debugging tools are used for the debugger and the kdnet utility and must be installed. For information on how to download and install the debugging tools, see [Download Debugging Tools for Windows](debugger-download-tools.md).
+The debugging tools are used for the debugger and the kdnet utility and must be installed. For information on how to download and install the debugging tools, see [Debugging Tools for Windows](debugger-download-tools.md).
 
 ## Setting Up Network Debugging of a Virtual Machine - KDNET
 
@@ -189,7 +189,7 @@ The best approach is to set up network debugging on the target computer before y
 
 If you decide to set up network debugging after the Hyper-V role has been installed on the target computer, you must change the network settings for your virtual machines to bridge them to the Microsoft Kernel Network Debug Adapter. Otherwise, the virtual machines will not have access to the network.
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 [Setting Up Kernel-Mode Debugging of a Virtual Machine Manually using a Virtual COM Port](attaching-to-a-virtual-machine--kernel-mode-.md)
 

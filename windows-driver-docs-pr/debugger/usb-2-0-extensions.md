@@ -85,7 +85,7 @@ To start debugging a USB 2.0 issue, enter the [**!usb2tree**](-usbkd-usb2tree.md
 -   [**!usbkd.usbusb2tt**](-usbkd-usbusb2tt.md)
 -   [**!usbkd.usbver**](-usbkd-usbver.md)
 
-## Related topics
+## See also
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 

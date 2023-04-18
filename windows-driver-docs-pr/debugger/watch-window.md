@@ -1,11 +1,11 @@
 ---
-title: Using the Watch Window
-description: Using the Watch Window
+title: Using the Watch Window - WinDbg (Classic)
+description: Using the Watch Window - WinDbg (Classic)
 keywords: ["debugging information windows, Watch window", "Watch window", "memory, Watch window"]
 ms.date: 05/23/2017
 ---
 
-# Using the Watch Window
+# Using the Watch Window - WinDbg (Classic)
 
 
 ## <span id="ddk_watch_window_dbg"></span><span id="DDK_WATCH_WINDOW_DBG"></span>
@@ -27,7 +27,7 @@ The following screen shot shows an example of a Watch window.
 
 The Watch window can contain four columns. The **Name** and **Value** columns are always displayed, and the **Type** and **Location** columns are optional. To display the **Type** and **Location** columns, click the **Typecast** and **Locations** buttons, respectively, on the toolbar.
 
-### <span id="using_the_watch_window"></span><span id="USING_THE_WATCH_WINDOW"></span>Using the Watch Window
+### <span id="using_the_watch_window"></span><span id="USING_THE_WATCH_WINDOW"></span>Using the Watch Window - WinDbg (Classic)
 
 In the Watch window, you can do the following:
 
@@ -95,7 +95,7 @@ The toolbar and menu contain the following buttons and commands:
 
 -   (Menu only) **Always floating** causes the window to remain undocked even if it is dragged to a docking location.
 
--   (Menu only) **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked. For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md).
+-   (Menu only) **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked.
 
 -   (Menu only) **Help** opens this topic in the Debugging Tools for Windows documentation.
 
@@ -103,8 +103,7 @@ The toolbar and menu contain the following buttons and commands:
 
 ### <span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For more information about controlling variables and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md). For more information about registers and their manipulation, see [Viewing and Editing Registers in WinDbg](registers-window.md). For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md). For more information about all techniques that you can use to control debugging information windows, see [Using Debugging Information Windows](using-debugging-information-windows.md).
-
+For more information about controlling variables and a description of other memory-related commands, see [Reading and Writing Memory](reading-and-writing-memory.md). For more information about registers and their manipulation, see [Viewing and Editing Registers in WinDbg (Classic)](registers-window.md). 
  
 
  

@@ -1,12 +1,12 @@
 ---
-title: Symbols for Windows debugging (WinDbg, KD, CDB, NTSD)
+title: Symbols for Windows debugging
 description: Symbols for the Windows debuggers (WinDbg, KD, CDB, and NTSD) are available from a public symbol server. 
 keywords: ["symbols", "setup, symbols", "symbols, setup"]
 ms.custom: contperf-fy22q2
-ms.date: 10/28/2021
+ms.date: 12/20/2022
 ---
 
-# Symbols for Windows debugging (WinDbg, KD, CDB, NTSD)
+# Symbols for Windows debugging
 
 Symbol files hold a variety of data which are not actually needed when running the binaries, but which could be very useful in the debugging process.
 
@@ -24,6 +24,8 @@ If you are performing user-mode debugging, you will need symbols for your target
 These topics explain how to access symbols during a debugging session, how to control the debugger's symbol options and symbol matching.
 
 [Microsoft public symbol server](microsoft-public-symbols.md)
+
+[Windows Symbol Packages](debugger-download-symbols.md)
 
 [Symbol path for Windows debuggers](symbol-path.md)
 

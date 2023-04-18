@@ -46,7 +46,7 @@ Arm devices use ACPI DBG2 table for configuring the debugger, where the busparam
 
 Use the kdnet.exe utility to display the parameter information for controllers that support KDNET-EEM-USB transport debugging.
 
-1. Confirm that the Windows Debugging Tools are installed on the host system. For information on downloading and installing the debugger tools, see [Download Debugging Tools for Windows](debugger-download-tools.md).
+1. Confirm that the Windows Debugging Tools are installed on the host system. For information on downloading and installing the debugger tools, see [Debugging Tools for Windows](debugger-download-tools.md).
 
 2. Locate the kdnet.exe and VerifiedNICList.xml files. By default, they are located here.
 
@@ -149,7 +149,7 @@ On the host the KDNET-EEM connection using the USB Type A port is shown.
 
 ![device manager showing the network node with a node for Windows KDNET USB-EEM network adapter.](images/kdnet-usb-eem-device-manager-host-adapter.png)
 
-## Related topics
+## See also
 
 [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)
 

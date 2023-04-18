@@ -25,8 +25,6 @@ This screen shot shows an example of the output of the **!hidtree** command.
 
 ![output of the hidtree command.](images/hidkd01.png)
 
-O
-
 In this example, there are two device nodes that have a HID function driver. A functional device object (FDO) represents the HID driver in those two nodes. The first FDO node has two child nodes, and the second FDO node has one child node. In the debugger output, the child nodes have the PDO heading.
 
 **Note**  This set of device nodes does not form a tree that has a single root node. The device nodes that have HID function drivers can be isolated from each other.

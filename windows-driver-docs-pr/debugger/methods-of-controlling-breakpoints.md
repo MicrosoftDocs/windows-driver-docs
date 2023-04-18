@@ -50,7 +50,7 @@ To control or display breakpoints, you can use the following methods:
 
 -   Use the [**bsc (Update Conditional Breakpoint)**](bsc--update-conditional-breakpoint-.md) command to change the condition under which an existing conditional breakpoint occurs.
 
-In Visual Studio and WinDbg, there are several user interface elements that facilitate controlling and displaying breakpoints. See [Setting Breakpoints in Visual Studio](setting-breakpoints-in-visual-studio.md) and [Setting Breakpoints in WinDbg](setting-breakpoints-in-windbg.md).
+In WinDbg, there are several user interface elements that facilitate controlling and displaying breakpoints. See [Setting Breakpoints in WinDbg (Classic)](setting-breakpoints-in-windbg.md).
 
 Each breakpoint has a decimal number called the breakpoint ID associated with it. This number identifies the breakpoint in various commands.
 

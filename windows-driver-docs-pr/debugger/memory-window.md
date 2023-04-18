@@ -1,11 +1,11 @@
 ---
-title: Viewing and Editing Memory in WinDbg
+title: Viewing and Editing Memory in WinDbg (Classic)
 description: In WinDbg, you can view and edit memory by entering commands or by using a Memory window.
 keywords: ["debugging information windows, Memory window", "Memory window", "memory, Memory window"]
 ms.date: 05/23/2017
 ---
 
-# Viewing and Editing Memory in WinDbg
+# Viewing and Editing Memory in WinDbg (Classic)
 
 
 In WinDbg, you can view and edit memory by entering commands or by using a Memory window.
@@ -70,8 +70,8 @@ The Memory window has a toolbar that contains two buttons, a menu, and a box and
 
 -   (Menu only) **Always floating** causes the window to remain undocked even if it is dragged to a docking location.
 
--   (Menu only) **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked. For more information about docked, tabbed, and floating windows, see [Positioning the Windows](positioning-the-windows.md).
-
+-   (Menu only) **Move with frame** causes the window to move when the WinDbg frame is moved, even if the window is undocked. 
+- 
 -   (Menu only) **Properties** opens the **Memory Options** dialog box, which is described in the following section within this topic.
 
 -   (Menu only) **Help** opens this topic in the Debugging Tools for Windows documentation.

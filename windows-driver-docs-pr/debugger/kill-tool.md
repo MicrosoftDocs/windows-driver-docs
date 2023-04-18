@@ -54,6 +54,6 @@ The following command terminates processes whose names begin with "my\*." It doe
 kill /f my*
 ```
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)

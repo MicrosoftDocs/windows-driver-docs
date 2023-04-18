@@ -2,7 +2,7 @@
 title: Symbol path for Windows debuggers
 description: Learn how the symbol path specifies locations where Windows debuggers, such as WinDbg, KD, CDB, and NTST, look for symbol files. 
 keywords: symbol files and paths, symbols, lazy symbol loading, deferred symbol loading, symbol path
-ms.date: 12/29/2022
+ms.date: 03/08/2023
 ---
 
 # Symbol path for Windows debuggers
@@ -133,7 +133,7 @@ To control the symbol path, you can select one of the following methods:
 * Use the [.sympath command](-sympath--set-symbol-path-.md) to display, set, change, or append to the path. 
 
 * Before you start the debugger, use the `_NT_SYMBOL_PATH` and `_NT_ALT_SYMBOL_PATH` [environment variables](environment-variables.md) to set the path. The symbol path is created by appending `_NT_SYMBOL_PATH` after `_NT_ALT_SYMBOL_PATH`. Typically, the path is set through the `_NT_SYMBOL_PATH`. However, you might want to use `_NT_ALT_SYMBOL_PATH` to override these settings in special cases, such as if you have private versions of shared symbol files. If you try to add an invalid directory through these environment variables, the debugger ignores this directory.
-
+ 
 * When you start the debugger, use the [-y command-line option](command-line-options.md) to set the path.
 
 * In WinDbg only, you can use the [File | Symbol File Path command](file---symbol-file-path.md) or press `CTRL+S` to display, set, change, or append to the path.

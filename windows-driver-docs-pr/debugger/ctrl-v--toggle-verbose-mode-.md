@@ -65,7 +65,7 @@ CTRL+ALT+V
 
 When verbose mode is turned on, some display commands (such as register dumping) produce more detailed output. Every MODULE LOAD operation that is sent to the debugger will be displayed. And every time a driver or DLL is loaded by the operating system, the debugger will be notified.
 
-In WinDbg, this can also be accomplished by selecting [View | Verbose Output](view---verbose-output.md).
+In WinDbg, this can also be accomplished by selecting **View | Verbose Output**.
 
  
 

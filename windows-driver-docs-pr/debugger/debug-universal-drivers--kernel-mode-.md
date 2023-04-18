@@ -1070,7 +1070,7 @@ It can be easier to step through UI rather than from the command line so this me
 
 -   p - Execute one source line.
 
-For more information, see [Source Code Debugging in WinDbg](source-window.md) in the debugging reference documentation.
+For more information, see [Source Code Debugging in WinDbg (Classic)](source-window.md) in the debugging reference documentation.
 
 **Set breakpoints in code**
 
@@ -2075,7 +2075,7 @@ To end the debugging session, on the host system, break into the debugger and en
 0: kd> qd
 ```
 
-For more information, see [Ending a Debugging Session in WinDbg](ending-a-debugging-session-in-windbg.md) in the debugging reference documentation.
+For more information, see [Ending a Debugging Session in WinDbg (Classic)](ending-a-debugging-session-in-windbg.md) in the debugging reference documentation.
 
 ## <span id="windowsdebuggingresources"></span>Section 14: Windows debugging resources
 

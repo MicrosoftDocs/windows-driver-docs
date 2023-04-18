@@ -767,7 +767,7 @@ Calling the LINQ version, findTitleWithLINQ() also returns notepad.exe
 Debugger.State.Scripts.titleFinder.Contents.findTitleWithLINQ() : C:\Windows\System32\notepad.exe
 ```
 
-## <span id="related_topics"></span>Related topics
+## <span id="related_topics"></span>See also
 
 
 [JavaScript Debugger Scripting](javascript-debugger-scripting.md)

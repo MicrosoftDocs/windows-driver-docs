@@ -21,7 +21,7 @@ First, use the [**lm (List Loaded Modules)**](lm--list-loaded-modules-.md) comma
 0:000> lml 
 ```
 
-If you are using WinDbg, the [Debug | Modules](debug---modules.md) menu command will let you see this information as well.
+If you are using WinDbg, the **Debug | Modules** menu command will let you see this information as well.
 
 Pay particular attention to any notes or abbreviations you may see in these displays. For an interpretation of these, see [Symbol Status Abbreviations](symbol-status-abbreviations.md).
 
