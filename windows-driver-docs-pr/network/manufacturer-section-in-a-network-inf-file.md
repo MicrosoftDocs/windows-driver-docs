@@ -21,17 +21,17 @@ The following example shows how to create an OS-specific INF Manufacturer sectio
 %ManufacturerName%=Standard,NT$ARCH$,NT$ARCH$.10.0...25319 
 
 [Standard.NT$ARCH$.10.0...25319]
-%NDISPROT_Desc%=Install, MS_NDISPROT
+%NDISPROT_Desc%=InstallA, MS_NDISPROT
 
 [Standard.NT$ARCH$]
-%NDISPROT_Desc%=Install_Generic, MS_NDISPROT
+%NDISPROT_Desc%=InstallB, MS_NDISPROT
 
-[Install]    ; OS build numbers 25319 and higher
+[InstallA]    ; OS build numbers 25319 and higher
 AddReg=Inst_Ndi
 Characteristics=0x0 ; 
 CopyFiles=CpyFiles_Sys
 
-[Install_NC]    ; OS build numbers lower than 25319
+[InstallB]    ; OS build numbers lower than 25319
 AddReg=Inst_Ndi
 Characteristics=0x0 ; 
 CopyFiles=CpyFiles_Sys_NC
