@@ -395,46 +395,50 @@ Upon device driver installation, the INF must now make all COM object and MFT re
 | Before | After |
 |---|---|
 |INF AddReg: <br><br> HKCR,MediaFoundation\Transforms\\{clsid}\\... |Per-Instance device software INF AddReg: <br><br> HKR,MediaFoundation\Transforms\\{clsid}\\... |
-|Registry Location: <br><br> HKLM\SOFTWARE\Classes\MediaFoundation\Transforms\\{clsid}\\... |Registry Locations (_AdapterKey_ location is subject to change): <br><br> _AdapterKey_\MediaFoundation\Transforms\\{clsid}\\... |
+|Registry Location: <br><br> HKLM\SOFTWARE\Classes\MediaFoundation\Transforms\\{clsid}\\... |Registry Locations: <br><br> HKLM\DEVICES\CurrentControlSet\Enum\<device instance>\Driver Parameters\MediaFoundation\Transforms\\{clsid}\\... |
 
 ##### COM Registrations:
 | Before | After |
 |---|---|
 |INF AddReg: <br><br> HKLM,Software\\Classes\\CLSID\\{clsid}\\... <br> HKCR,CLSID\\{clsid}\\... <br> HKCR,Wow6432Node\CLSID\\{clsid}\\... <br> HKCR,WowAA32Node\CLSID\\{clsid}\\... |Per-Instance device software INF AddReg: <br><br> HKR,Classes\CLSID\\{clsid}\\... <br> HKR,Classes\CLSID\\{clsid}\\... <br> HKR,Classes\Wow6432Node\CLSID\\{clsid}\\... <br> HKR,Classes\WowAA32Node\CLSID\\{clsid}\\... |
-|Registry Locations: <br><br> HKLM\SOFTWARE\Classes\CLSID\\{clsid}\\... <br> HKLM\SOFTWARE\Classes\Wow6432Node\CLSID\\{clsid}\\... <br> HKLM\SOFTWARE\Classes\WowAA32Node\CLSID\\{clsid}\\... |Registry Location (_AdapterKey_ location is subject to change): <br><br> _AdapterKey_\Classes\\... |
 
-The INF syntax for differentiating based on OS version can be found in [Combining platform extensions with operating system versions](../install/combining-platform-extensions-with-operating-system-versions.md). Starting in Window 11 22H2, the INF must conform to these new registry keys. Older OS versions will still use the traditional registry keys for compatibility. The INF must setup these registry keys in the old location on older OS builds and create the new keys in their new location for newer OS builds. For example, for an MFT registration on an old build the INF will create the key under: 
+
+The INF syntax for differentiating based on OS version can be found in [Combining platform extensions with operating system versions](../install/combining-platform-extensions-with-operating-system-versions.md). Starting in Window 11 25300, the INF must conform to these new registry keys. Older OS versions will still use the traditional registry keys for compatibility. The INF must setup these registry keys in the old location on older OS builds and create the new keys in their new location for newer OS builds. For example, for an MFT registration on an old build the INF will create the key under: 
 
 ```
 HKLM\SOFTWARE\Classes\MediaFoundation\Transforms\{clsid}\ 
 ```
  
-For an MFT registration on a new WCOS build, the INF will create the key under: 
+For an MFT registration on a new build, the INF will create the key under: 
 
 ```
-HKLM\DEVICES\CurrentControlSet\Enum\<device instance>\Driver Parameters\MediaFoundation\Transforms\{clsid}\ 
+**software key**\MediaFoundation\Transforms\{clsid}\ 
 ```
  
+ Where **software key** represents a device's software key. See [Opening a device's software key](../install/opening-a-device-s-software-key.md).
 
 A syntax example of targeting different OS versions can be seen below: 
 
 ```
 [Manufacturer] 
-%Msft% = Msft, nt.10.0...22000 
+%Msft% = Msft, NTamd64,NTamd64.10.0...25300 
 
 ; -------------- ; 
 ; Models Section ; 
 ; -------------- ; 
 
 ; Targets old builds
-[Msft] 
+[Msft.NTamd64] 
+ AddReg = MFT_Registration_Old
 
+[MFT_Registration_Old]
 ; INF work for older build here
 
 
-; Windows 10 build with build number equal to or greater than 18500 
-[msft.nt.10.0...22000]  
+; Windows 10 build with build number equal to or greater than 25300 
+[msft.nt.10.0...25300]  
+AddReg = MFT_Registration_new
 
+[MFT_Registration_new]
 ; INF work for newer build here
 ``` 
-More information and other examples can be found at MSDN.
