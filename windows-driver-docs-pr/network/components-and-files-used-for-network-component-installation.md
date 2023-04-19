@@ -59,9 +59,9 @@ For more information about filter driver installation, see [NDIS Filter Driver I
 
 ## Notify object
 
-A software component, such as a network protocol, client, or service, can have a *notify object*. A notify object can display a user interface, notify the component of binding events so that the component can exercise some control over the binding process, and conditionally install or remove software components. For more information about notify objects, see [Notify Objects for Network Components](notify-objects-for-network-components.md).
+A software component, such as a network protocol, client, or service, can have a *notify object*. A notify object can display a user interface, notify the component of binding events so that the component can exercise some control over the binding process, and conditionally install or remove software components.  On older versions of Windows you can't create a driver package with a notify object that is executed from the [Driver Store](../install/driver-store.md). To successfully install a driver package in this scenario, you need to have a minimum OS build number of 25341. For more information about notify objects, see [Notify Objects for Network Components](notify-objects-for-network-components.md).
 
-A network adapter can't have a notify object. It can have co-installers. On older versions of Windows you can't create a driver package with a notify object that is executed from the [Driver Store](../install/driver-store.md). To successfully install a driver package in this scenario, you need to have a minimum OS build number of 25341. For more information about co-installers, see [Writing a Co-installer](../install/writing-a-co-installer.md).
+A network adapter can't have a notify object. It can have co-installers. For more information about co-installers, see [Writing a Co-installer](../install/writing-a-co-installer.md).
 
 ## Vendor-supplied files
 
