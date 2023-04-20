@@ -52,7 +52,7 @@ File system filter drivers should disable normal kernel APCs before acquiring an
 * [**ExAcquireSharedStarveExclusive**](/previous-versions/ff544367(v=vs.85))
 * [**ExAcquireSharedWaitForExclusive**](/previous-versions/ff544370(v=vs.85))
 
-As an alternative to **FsRtlEnterFileSystem**, minifilter drivers can use the [[**FltAcquireResourceExclusive**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltacquireresourceexclusive), [**FltAcquireResourceShared**](/windows-hardware/drivers/ddi/fltkernel/fltacquireresourceshared), and [**FltReleaseResource**](/windows-hardware/drivers/ddi/fltkernel/fltreleaseresource) routines, which properly handle APCs when acquiring and releasing a resource.
+As an alternative to **FsRtlEnterFileSystem**, minifilter drivers can use the [**FltAcquireResourceExclusive**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltacquireresourceexclusive), [**FltAcquireResourceShared**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltacquireresourceshared), and [**FltReleaseResource**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltreleaseresource) routines, which properly handle APCs when acquiring and releasing a resource.
 
 ## Requirements
 
@@ -83,9 +83,9 @@ As an alternative to **FsRtlEnterFileSystem**, minifilter drivers can use the [[
 
 [**FltAcquireResourceExclusive**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltacquireresourceexclusive)
 
-[**FltAcquireResourceShared**](/windows-hardware/drivers/ddi/fltkernel/fltacquireresourceshared)
+[**FltAcquireResourceShared**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltacquireresourceshared)
 
-[**FltReleaseResource**](/windows-hardware/drivers/ddi/fltkernel/fltreleaseresource)
+[**FltReleaseResource**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltreleaseresource)
 
 [**FsRtlExitFileSystem**](fsrtlexitfilesystem.md)
 
