@@ -395,7 +395,7 @@ Upon device driver installation, the INF must now make all COM object and MFT re
 | Before | After |
 |---|---|
 |INF AddReg: <br><br> HKCR,MediaFoundation\Transforms\\{clsid}\\... |Per-Instance device software INF AddReg: <br><br> HKR,MediaFoundation\Transforms\\{clsid}\\... |
-|Registry Location: <br><br> HKLM\SOFTWARE\Classes\MediaFoundation\Transforms\\{clsid}\\... |Registry Locations: <br><br> HKLM\DEVICES\CurrentControlSet\Enum\<device instance>\Driver Parameters\MediaFoundation\Transforms\\{clsid}\\... |
+|Registry Location: <br><br> HKLM\SOFTWARE\Classes\MediaFoundation\Transforms\\{clsid}\\... |Registry Locations: <br><br> **software key**\MediaFoundation\Transforms\\{clsid}\\... |
 
 ##### COM Registrations:
 | Before | After |
@@ -429,6 +429,9 @@ A syntax example of targeting different OS versions can be seen below:
 
 ; Targets old builds
 [Msft.NTamd64] 
+%DeviceDesc% = ExampleDDInstall_Old, ExampleHardwareId
+
+[ExampleDDInstall_Old]
  AddReg = MFT_Registration_Old
 
 [MFT_Registration_Old]
@@ -436,7 +439,10 @@ A syntax example of targeting different OS versions can be seen below:
 
 
 ; Windows 10 build with build number equal to or greater than 25300 
-[msft.nt.10.0...25300]  
+[msft.ntamd64.10.0...25300]  
+%DeviceDesc% = ExampleDDInstall_New, ExampleHardwareId
+
+[ExampleDDInstall_new]
 AddReg = MFT_Registration_new
 
 [MFT_Registration_new]
