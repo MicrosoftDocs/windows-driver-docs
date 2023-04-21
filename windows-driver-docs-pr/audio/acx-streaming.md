@@ -1,7 +1,7 @@
 ---
 title: ACX streaming
 description: This topic provides a summary of the ACX streaming and the associated buffering, which is critical to a glitch free audio experience.
-ms.date: 04/12/2023
+ms.date: 04/19/2023
 ms.localizationpriority: medium
 ---
 
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 >[!IMPORTANT]
 > Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-This topic discusses ACX streaming and the associated buffering, which is critical to a glitch free audio experience. It describes the the mechanisms used by the driver to communicate about the stream state and manage the buffer for the stream. For a list of common ACX audio terms and an introduction to ACX, see [ACX Audio Class Extensions Overview](acx-audio-class-extensions-overview.md).
+This topic discusses ACX streaming and the associated buffering, which is critical to a glitch free audio experience. It describes the the mechanisms used by the driver to communicate about the stream state and manage the buffer for the stream. For a list of common ACX audio terms and an introduction to ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md).
 
 ## ACX streaming types
 
@@ -102,7 +102,7 @@ When an endpoint is composed of more than one circuit created by one or more dev
 
 The streaming circuit should use [AcxRtStreamCreate](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxrtstreamcreate) to create an RT Packet Stream in response to [EvtAcxCircuitCreateStream](/windows-hardware/drivers/ddi/acxcircuit/nc-acxcircuit-evt_acx_circuit_create_stream). The ACXSTREAM created with AcxRtStreamCreate will allow the streaming circuit driver to allocate the buffer used for streaming and to control the streaming flow in response to the client and hardware needs.
 
-Following circuits in the endpoint should use AcxStreamCreate to create a Basic Stream in response to EvtAcxCircuitCreateStream. The ACXSTREAM objects created with AcxStreamCreate by the following circuits will allow the drivers to configure hardware in response to stream state changes such as Pause or Run.
+Following circuits in the endpoint should use [AcxStreamCreate](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxstreamcreate) to create a Basic Stream in response to EvtAcxCircuitCreateStream. The ACXSTREAM objects created with AcxStreamCreate by the following circuits will allow the drivers to configure hardware in response to stream state changes such as Pause or Run.
 
 The streaming ACXCIRCUIT is the first circuit to receive the requests to create a stream. The request includes the device, the pin, and the data format (including mode).
 
@@ -118,9 +118,9 @@ For each circuit following the streaming circuit, the AcxPinTypeSink bridge pin 
 
 #### Stream format negotiation  
 
-The driver advertises the supported formats for stream creation by adding the supported formats per mode to the ACXPIN used for stream creation with [AcxPinAssignModeDataFormatList](/windows-hardware/drivers/ddi/acxpin/nf-acxpin-acxpinassignmodedataformatlist) and [AcxPinGetRawDataFormatList](/windows-hardware/drivers/ddi/acxpin/nf-acxpin-acxpingetrawdataformatlist). For multi-circuit endpoints, an ACXSTREAMBRIDGE can be used to coordinate mode and format support between ACX Circuits. The supported stream formats for the endpoint are determined by the streaming ACXPINs created by the streaming circuit. The formats used by the following circuits are determined by the bridge pin of the previous circuit in the endpoint.
+The driver advertises the supported formats for stream creation by adding the supported formats per mode to the ACXPIN used for stream creation with [AcxPinAssignModeDataFormatList](/windows-hardware/drivers/ddi/acxpin/nf-acxpin-acxpinassignmodedataformatlist) and [AcxPinGetRawDataFormatList](/windows-hardware/drivers/ddi/acxpin/nf-acxpin-acxpingetrawdataformatlist). For multi circuit endpoints, an ACXSTREAMBRIDGE can be used to coordinate mode and format support between ACX Circuits. The supported stream formats for the endpoint are determined by the streaming ACXPINs created by the streaming circuit. The formats used by the following circuits are determined by the bridge pin of the previous circuit in the endpoint.
 
-By default, the ACX framework will create an ACXSTREAMBRIDGE between each circuit in a multi-circuit endpoint. The default ACXSTREAMBRIDGE will use the RAW mode's default format of the bridge pin of the upstream circuit when forwarding the stream creation request to the downstream circuit. If the upstream circuit's bridge pin has no formats, the original stream format will be used. If the connected pin of the downstream circuit does not support the format being used, stream creation will fail.
+By default, the ACX framework will create an ACXSTREAMBRIDGE between each circuit in a multi circuit endpoint. The default ACXSTREAMBRIDGE will use the RAW mode's default format of the bridge pin of the upstream circuit when forwarding the stream creation request to the downstream circuit. If the upstream circuit's bridge pin has no formats, the original stream format will be used. If the connected pin of the downstream circuit does not support the format being used, stream creation will fail.
 
 If a device circuit is performing a stream format change, the device driver should add the downstream format to the downstream bridge pin.
   
@@ -244,7 +244,7 @@ The client can also use [KSPROPERTY_RTAUDIO_PACKETVREGISTER](/windows-hardware/d
   
 #### Stream position  
 
-The ACX framework will call the EvtAcxStreamGetPosition callback to get the current stream position. The current stream position will include the PlayOffset and the WriteOffset.  
+The ACX framework will call the [EvtAcxStreamGetPresentationPosition](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_presentation_position)   callback to get the current stream position. The current stream position will include the PlayOffset and the WriteOffset.  
 
 The WaveRT streaming model allows the audio driver to expose a HW Position register to the client. The ACX streaming model will not support exposing any HW registers since these would prevent a rebalance from happening.  
 
@@ -353,6 +353,8 @@ The driver calls this ACX API when a packet has completed. The packet completion
 
 ## See also
 
-[ACX Audio Class Extensions overview](acx-audio-class-extensions-overview.md)
+[ACX audio class extensions overview](acx-audio-class-extensions-overview.md)
+
+[ACX reference documentation](acx-reference.md)
 
 [Summary of ACX Objects](acx-summary-of-objects.md)

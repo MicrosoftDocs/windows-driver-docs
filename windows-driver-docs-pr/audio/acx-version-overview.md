@@ -1,7 +1,7 @@
 ---
-title: ACX version overview
+title: ACX version information
 description: This topic provides a summary of the ACX and KMDF version information 
-ms.date: 09/15/2022
+ms.date: 04/19/2023
 ms.localizationpriority: medium
 ---
 
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 >[!IMPORTANT]
 > Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-This topic discusses ACX and KMDF version information. For a general overview of ACX, see [ACX Audio Class Extensions Overview](acx-audio-class-extensions-overview.md).
+This topic discusses ACX and KMDF version information. For a general overview of ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md).
 
 ## ACX version information
 
@@ -21,7 +21,6 @@ Windows OS support for ACX versions are described in the following table.
 | Operating system         | KMDF version | Supported ACX version | Version notes           |
 |--------------------------|--------------|-----------------------|-------------------------|
 | Windows 10, version 2004 | 1.31         | 1.1                   | Initial public release. |
-
 
 ## KMDF version information
 
@@ -41,7 +40,7 @@ ACX Binds to a specific version of KMDF at runtime. When Windows loads a kernel-
 
 When you build the audio driver, you specify the maximum and minimum version of the ACX framework you want to use at compilation time. Thus, the audio driver at run time can assume that the max/min version of DDI is available, else the audio driver fails to load.
 
-ACX drivers can be written to run on multiple versions of ACX and at run-time make the call if a specific ACX DDI, structure, etc. is present or not in that version.  The **ACX_IS_FUNCTION_AVAILABLE(FunctionName)** function can be used to see if a specific function in available in a specific version of ACX.
+ACX drivers can be written to run on multiple versions of ACX and at run-time make the call if a specific ACX DDI, structure, etc. is present or not in that version.  **ACX_IS_FUNCTION_AVAILABLE(FunctionName)** can be used to see if a specific function in available in a specific version of ACX. For more information, see [ACX_IS_FUNCTION_AVAILABLE macro](/windows-hardware/drivers/ddi/acxfuncenum/nf-acxfuncenum-acx_is_function_available).
 
 The following code, provides an example on how to check if a function is available.
 
@@ -58,9 +57,9 @@ The following code, provides an example on how to check if a function is availab
 
 Also available are these similar functions.
 
-**ACX_IS_STRUCTURE_AVAILABLE(StructName)**
+**ACX_IS_STRUCTURE_AVAILABLE(StructName)** described in [ACX_IS_STRUCTURE_AVAILABLE macro](/windows-hardware/drivers/ddi/acxfuncenum/nf-acxfuncenum-acx_is_structure_available).
 
-**ACX_IS_FIELD_AVAILABLE(StructName, FieldName)**
+**ACX_IS_FIELD_AVAILABLE(StructName, FieldName)** described in [ACX_IS_FIELD_AVAILABLE macro](/windows-hardware/drivers/ddi/acxfuncenum/nf-acxfuncenum-acx_is_field_available).
 
 ACX also supports the [ACX_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function](/windows-hardware/drivers/ddi/acxdriver/nf-acxdriver-acx_driver_version_available_params_init) which can be used to check version information of the audio driver as shown in the following code sample.
 
@@ -75,4 +74,8 @@ ACX also supports the [ACX_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function](/windo
 
 ## See also
 
-[ACX Audio Class Extensions overview](acx-audio-class-extensions-overview.md)
+[ACX_IS_FUNCTION_AVAILABLE macro](/windows-hardware/drivers/ddi/acxfuncenum/nf-acxfuncenum-acx_is_function_available)
+
+[ACX audio class extensions overview](acx-audio-class-extensions-overview.md)
+
+[ACX reference documentation](acx-reference.md)

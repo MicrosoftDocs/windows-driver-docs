@@ -1,16 +1,34 @@
 ---
-title: ACX multi-circuit composition
-description: This topic provides a summary of multi-circuit composition 
-ms.date: 02/16/2023
+title: ACX multi circuit composition
+description: This topic provides a summary of multi circuit composition 
+ms.date: 04/19/2023
 ms.localizationpriority: medium
 ---
 
-# ACX multi-circuit composition
+# ACX multicircuit composition
 
 >[!IMPORTANT]
 > Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-This topic discusses ACX multi-circuit composition. For a general overview of ACX and list of ACX terms, see [ACX Audio Class Extensions Overview](acx-audio-class-extensions-overview.md).
+This topic discusses ACX multi circuit composition. For a general overview of ACX and list of ACX terms, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md).
+
+As described in [Summary of ACX objects](acx-summary-of-objects.md), an AcxCircuit represents a partial or full audio path to a user perceived audio device (speakers, mic, etc.). An AcxCircuit has at least one input pin and one output pin (ACXPIN), and it may aggregate one or more AcxElements-like objects.
+
+## ACX circuit identification
+
+Every ACX circuit has a circuit identifier. ACX defines the following:
+
+- *Name (str)*, uniquely identifies this circuit audio device type. It is used to locate INF’s setting, and it is part of the symbolic link used to access this circuit from a remote device. Example: “Render0”, “Render1” or “Capture0”.
+
+- *Symbolic link*. A symbolic link is associated with all the exposed circuits. Clients use this symbolic link to open a communication path with the device/circuit.
+
+- *Circuit’s component ID (guid)*. Uniquely identifies the circuit instance (vendor specific). It cannot be used in the AcxCircuitTemplate bindings if the Circuit URI was specified.
+
+- *Circuit’s component URI (str)*. Uniquely identifies the circuit instance (vendor specific). It cannot be used in the AcxCircuitTemplate bindings if the Circuit ID was specified.
+
+- *Circuit Factory’s component ID (guid)*. Uniquely identifies the circuit factory instance (vendor specific). It cannot be used in the AcxCircuitTemplate bindings if the Circuit Factory URI was specified.
+
+- *Circuit Factory’s component URI (str)*. Uniquely identifies the circuit factory instance (vendor specific). It cannot be used in the AcxCircuitTemplate bindings if the Circuit Factory ID was specified.
 
 ## ACX circuit composition
 
@@ -41,9 +59,9 @@ The following sequence diagram shows how two ACX circuits (Circuit A and B) are 
 
 ![diagram showing columns labeled driver a and driver b, acx interface b, circuit manager and and b and ACX composite and ACX manager with flow arrows shown below showing calling sequence](images/audio-acx-multi-stack-multi-circuit-driver-sequence.png)
 
-## Multi-Circuit format negotiation
+## Multi circuit format negotiation
 
-This section describes the format negotiation taking places when the audio endpoint is composed by two or more circuits.  For general information about ACX Circuits, see [ACX multi stack cross driver communications](acx-audio-multi-stack.md).
+This section describes the format negotiation taking places when the audio endpoint is composed by two or more circuits.  For general information about ACX Circuits, see [ACX multi stack cross driver communications](acx-multi-stack.md).
 
 ### Downlevel bridge pins
 
@@ -140,7 +158,7 @@ The current sound control panel logic shows the device format list as follows:
 - If the audio device supports an audio engine element, the list of data-formats displayed in the control panel is the device data-format list, i.e., the data-format list attached to the downlevel pin (which is connected to the audio engine element output pin).
 - If the audio device doesn’t support an audio engine element, the list of data-formats displayed in the control panel is the streaming pin data-format list, i.e., the data-format list attacked to the uplevel pin.
 
-## Multi-Circuit automatic downlevel stream creation
+## Multi circuit automatic downlevel stream creation
 
 ACX uses ACXSTREAMBRIDGE object(s) associated with a downlevel bridge pin to automatically propagate create-stream(s) request to remote circuits.
 
@@ -182,7 +200,7 @@ For more information about stream bridge creation, see:
 - [AcxPinAddStreamBridges function](/windows-hardware/drivers/ddi/acxpin/nf-acxpin-acxpinaddstreambridges)
 - [AcxStreamBridgeAddStream function](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxstreambridgeaddstream)
 
-## Multi-Circuit Automatic stream state propagation to downlevel streams
+## Multi circuit automatic stream state propagation to downlevel streams
 
 ACXSTREAMBRIDGE automatically propagates a stream-state request down-level to remote circuits. When the state of a stream changes, the ACXSTREAMBRIDGE computes the mixed state of the out-stream and sends that new ‘stream-state’ request to the remote stream using the ACXTARGETSTREAM.
 
@@ -205,8 +223,8 @@ Drivers have an option to reverse this order via a config setting.
 
 ## See also
 
-[ACX Audio Class Extensions overview](acx-audio-class-extensions-overview.md)
+[ACX audio class extensions overview](acx-audio-class-extensions-overview.md)
 
-[ACX multi stack cross driver communications](acx-audio-multi-stack.md)
+[ACX multi stack cross driver communications](acx-multi-stack.md)
 
 [Summary of ACX Objects](acx-summary-of-objects.md)

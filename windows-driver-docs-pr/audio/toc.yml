@@ -7,20 +7,30 @@
 - name: "ACX - Audio Class Extensions"
 # Auto-expanded node
   items: 
-  - name: "ACX Audio Class Extensions overview"
+  - name: "ACX audio class extensions overview"
     href: acx-audio-class-extensions-overview.md
+  - name: "ACX version information"
+    href: acx-version-overview.md
   - name: "ACX summary of ACX objects"
     href: acx-summary-of-objects.md
-  - name: "ACX multi stack cross driver communications"
-    href: acx-audio-multi-stack.md
-  - name: "ACX multi-circuit composition"
-    href: acx-multi-circuit-composition.md    
-  - name: "ACX device enumeration and power management"
-    href: acx-power-management.md
+  - name: "ACX reference documentation"
+    href: acx-reference.md
   - name: "ACX streaming"
     href: acx-streaming.md
-  - name: "ACX version overview"
-    href: acx-version-overview.md
+  - name: "ACX targets and synchronization"
+    href: acx-targets.md
+  - name: "ACX IO request packet IRPs"
+    href: acx-irps.md
+  - name: "ACX device enumeration"
+    href: acx-device-enumeration.md
+  - name: "ACX power management"
+    href: acx-power-management.md
+  - name: "ACX multi circuit composition"
+    href: acx-multi-circuit-composition.md
+  - name: "ACX multi stack cross driver communications"
+    href: acx-multi-stack.md
+  - name: "ACX logging and debugging"
+    href: acx-logging-and-debugging.md
 - name: "WDM Audio Drivers Overview"
 # Auto-expanded node
   items: 
