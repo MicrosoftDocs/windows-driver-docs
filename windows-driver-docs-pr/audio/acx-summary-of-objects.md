@@ -1,7 +1,7 @@
 ---
 title: Summary of ACX objects
-description: This topic provides a high level summary of ACX Objects that form the base of an ACX audio driver.
-ms.date: 09/14/2022
+description: This topic provides a high level summary of ACX objects that form the base of an ACX audio driver.
+ms.date: 04/19/2023
 ms.localizationpriority: medium
 ---
 
@@ -10,12 +10,11 @@ ms.localizationpriority: medium
 >[!IMPORTANT]
 > Some information relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-This topic provides a high level summary of Audio Class Extensions (ACX) Objects that form the base of an ACX audio driver. For a general overview of ACX, see [ACX Audio Class Extensions Overview](acx-audio-class-extensions-overview.md).
+This topic provides a high level summary of Audio Class Extensions (ACX) objects that form the base of an ACX audio driver. For a general overview of ACX, see [ACX audio class extensions overview](acx-audio-class-extensions-overview.md).
 
 ACX objects are Windows Driver Framework (WDF) objects - WDFOBJECT. For more information about WDF see [Introduction to Framework Objects](../wdf/introduction-to-framework-objects.md). For a summary of WDF objects see [Summary of Framework Objects](../wdf/summary-of-framework-objects.md).
 
-
-## ACX Object Hierarchy
+## ACX object hierarchy
 
 In ACX (as in WDF), the driver object is the root object, and all other objects are its children/descendants. All ACX objects are children of the driver object directly or indirectly via other ACX or WDF objects. An ACX driver can specify the parent of an ACX object during creation time. If the parent is not specified, ACX uses a default parent as described in these sections.
 
@@ -23,11 +22,11 @@ In ACX (as in WDF), the driver object is the root object, and all other objects 
 
 ## ACX Circuit
 
-An AcxCircuit represents a partial or full audio path to a user perceived audio device (speakers, mic, etc.). An AcxCircuit has at least one input pin and one output pin (ACXPIN), and it may aggregate one or more AcxElements-like objects. By default, AcxElements are ‘connected’ in the same order of assembly. 
+An AcxCircuit represents a partial or full audio path to a user perceived audio device (speakers, mic, etc.). An AcxCircuit has at least one input pin and one output pin (ACXPIN), and it may aggregate one or more AcxElements-like objects. By default, AcxElements are ‘connected’ in the same order of assembly.
 
 The audio circuit is the core building block of ACX. In the new ACX framework, an audio driver creates one or more ACX circuit objects to represent a partial or complete audio data/control path. ACX assembles these ACX circuit objects together to create a complete audio path which represents an audio endpoint. ACX is responsible for managing the ACX circuits and their dependencies. The order on how these circuits are assembled can be statically defined at initialization time or dynamically defined at run time.
 
-An audio endpoint in the ACX frameworks is a collection of one or more ACX circuits. Each ACX circuit in a multi-circuit audio path must belong to a different PnP device stack. An ACX driver may create one or more circuits at initialization time, or it may create circuits at run time, as side effect of an external event, such as after detecting a new audio component, or because it registered itself with ACX as a factory for a specific circuit type, and ACX framework asked the factory component to create a new circuit of that type (see ACX circuit manager/factory described later in this topic).
+An audio endpoint in the ACX frameworks is a collection of one or more ACX circuits. Each ACX circuit in a multi circuit audio path must belong to a different PnP device stack. An ACX driver may create one or more circuits at initialization time, or it may create circuits at run time, as side effect of an external event, such as after detecting a new audio component, or because it registered itself with ACX as a factory for a specific circuit type, and ACX framework asked the factory component to create a new circuit of that type (see ACX circuit manager/factory described later in this topic).
 
 - An AcxCircuit may have one or more streams.
 
@@ -67,11 +66,11 @@ The DDIs for targets are defined in the [acxtargets.h](/windows-hardware/drivers
 
 ## ACX Stream Bridge
 
-The AcxStreamBridge object is used by a circuit to propagate a stream creation, stream’s states transitions and DRM settings between circuit segments. This object is only used in a multi-circuit (audio composite) scenario. A driver may associate one or more ACXSTREAMBRIDGE objects to a bridge pin. A bridge pin is the ACXPIN that logically connects to the correspoinding ACXPIN on the other circuit.
+The AcxStreamBridge object is used by a circuit to propagate a stream creation, stream’s states transitions and DRM settings between circuit segments. This object is only used in a multi circuit (audio composite) scenario. A driver may associate one or more ACXSTREAMBRIDGE objects to a bridge pin. A bridge pin is the ACXPIN that logically connects to the correspoinding ACXPIN on the other circuit.
 
 The DDIs for Stream are described in the [acxstreams.h](/windows-hardware/drivers/ddi/acxstreams) header.
 
-## Example of ACX Audio Engine Node Circuit layout 
+## Example of ACX audio engine node circuit layout
 
 The following diagram illustrates an ACX circuit. The host and offload pins are inputs to the circuit with a loopback pin that could be used for echo cancellation. The output could be a bridge pin that routes to a speaker.
 
@@ -89,7 +88,7 @@ The ACX manager is used for system tasks such as supporting composite audio endp
 
 The ACX Object Bag is used to store various data types. ACXOBJECTBAG can be passed as argument in various DDIs.  The DDIs for Object Bag are described in the [acxmisc.h](/windows-hardware/drivers/ddi/acxmisc/) header.
 
-## ACX Object Summary  
+## ACX object summary  
 
 The following table lists all of the ACX objects and provides some basic information about each object. 
 
@@ -120,14 +119,13 @@ The following table lists all of the ACX objects and provides some basic informa
 | ACXTARGETSTREAM         | Target Stream          | Used to communicate with a remote circuit’s stream exposed by a different stack.                                  |
 | ACXTARGETFACTORYCIRCUIT | Target Circuit Factory | Used to communicate with a remote circuit's factory.                                                              |
 | ACXSTREAMBRIDGE         | Stream Bridge          | Used by a circuit to propagate a stream creation, states transitions and DRM between circuit segments.            |
-| ACXCOMPOSITE            | Composite              | Used to represent multi-circuit/multi-stack/multiple-vendors stream architectures.                                |
+| ACXCOMPOSITE            | Composite              | Used to represent multi circuit/multi-stack/multiple-vendors stream architectures.                                |
 | ACXCOMPOSITEFACTORY     | Composite Factory      | A factory that creates composite audio circuits.                                                                  |
 | ACXFACTORYCIRCUIT       | Factory Circuit        | A factory that creates circuits using a specific template.                                                        |
 | ACXCIRCUITMANAGER       | Circuit Manager        | A circuit provider that is used for dynamic circuit creation.                                                     |
 | ACXCOMPOSITETEMPLATE    | Composite Template     | A composite template represents a partial or complete audio binding. A composite template can have one or more circuit templates. |
 | ACXCIRCUITTEMPLATE      | Circuit Template       | A circuit template represent a partial audio path.                                                                |
 | ACXAUDIOMODULE          | Audio Module           | For custom 3rd party add on functionality.                                                                        |
-
 
 The following ACX objects are used to store circuit, stream and circuit factory information.
 
@@ -137,9 +135,10 @@ The following ACX objects are used to store circuit, stream and circuit factory 
 | ACXSTREAM_INIT         | Stores ACX stream initialization data                      |  
 | ACXFACTORYCIRCUIT_INIT | Stores initialization data used by an ACX circuit  factory |
 
-
 ## See also
 
-[ACX Audio Class Extensions overview](acx-audio-class-extensions-overview.md)
+[ACX audio class extensions overview](acx-audio-class-extensions-overview.md)
 
-[ACX multi stack cross driver communications](acx-audio-multi-stack.md)
+[ACX reference documentation](acx-reference.md)
+
+[ACX multi stack cross driver communications](acx-multi-stack.md)
