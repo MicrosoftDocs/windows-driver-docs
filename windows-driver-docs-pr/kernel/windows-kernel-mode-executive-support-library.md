@@ -19,7 +19,7 @@ The Windows operating system uses the term *executive layer* to refer to kernel-
 
 -   Configuration management
 
-Each of the above managers provides direct interfaces to their individual technologies, as do several libraries. However, routines that are grouped together as a generic interface to the Executive Library are usually prefixed with "**Ex**", for example, **ExGetCurrentResourceThread**. For a list of executive library routines, see [Executive Library Support Routines](/windows-hardware/drivers/ddi/_kernel/#executive-library-support-routines).
+Each of the above managers provides direct interfaces to their individual technologies, as do several libraries. However, routines that are grouped together as a generic interface to the Executive Library are usually prefixed with "**Ex**", for example, **ExCreatePool**. For a list of executive library routines, see [Executive Library Support Routines](/windows-hardware/drivers/ddi/_kernel/#executive-library-support-routines).
 
 Note that the executive layer components are part of Ntoskrnl.exe, but that drivers and the HAL are not part of the executive layer.
 
