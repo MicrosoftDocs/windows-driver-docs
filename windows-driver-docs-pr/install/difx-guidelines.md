@@ -1,7 +1,7 @@
 ---
 title: DIFx Guidelines
 description: DIFx Guidelines
-ms.date: 05/24/2018
+ms.date: 05/01/2023
 ---
 
 # DIFx Guidelines
@@ -16,6 +16,7 @@ If you choose to use DIFx anyway, you must use an older WDK to get the right too
 * Starting in Windows 8.1, applications that link to `Difxapi.dll` must contain an app manifest targeting the OS version on which the application is intended to run.  This is due to DIFxAPI's dependency on [**GetVersionEx**](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa), an API that changed starting in Windows 8.1.  For more on changes to **GetVersionEx** in Windows 8.1, see [Targeting your application for Windows](/windows/desktop/SysInfo/targeting-your-application-at-windows-8-1).
 * If your driver package uses the ***BuildNumber*** part of **TargetOSVersion** (introduced in Windows 10, version 1607 (Build 14310 and later)), you cannot use the DIFx tools with that driver package.  The DIFx tools do not support BuildNumber targeting.
 * Use DIFx version 2.1, which is available in the Windows 7 WDK through the Windows 10 Version 1511 WDK.  Although a DIFx version of 2.1 was available in earlier versions of the WDK, it was not compatible with Windows 7 and later versions of Windows.
+* The older WDKs only contain x86 and amd64 versions of the DIFx binaries. The DIFx binaries are not available for other architectures.
 
 Although it's no longer being updated, you can find API reference documentation for DIFx at [Difxapi.h](/previous-versions/windows/hardware/difxapi/). If you are using the DriverPackagePreinstall, DriverPackageInstall, and DriverPackageUninstall APIs, consider switching to [**DiInstallDriver**](/windows/win32/api/newdev/nf-newdev-diinstalldriverw) and [**DiUninstallDriver**](/windows/win32/api/newdev/nf-newdev-diuninstalldriverw).
 
