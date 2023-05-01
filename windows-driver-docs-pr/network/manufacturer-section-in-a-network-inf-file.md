@@ -37,4 +37,4 @@ Characteristics=0x0 ;
 CopyFiles=CpyFiles_Sys_B
 ```
 
-For an example of how an OS-specific Manufacturer section can allow for installation using DIRID 13 for new builds and DIRID 12 for older builds, see the [Sample NDIS Protocol Driver](https://github.com/microsoft/Windows-driver-samples/blob/main/network/ndis/ndisprot/6x/sys/630/ndisprot630.inf).
+For an example of how an OS-specific Manufacturer section can allow for installation using DIRID 13 for new builds and DIRID 12 for older builds, see the [Sample NDIS Protocol Driver](https://github.com/microsoft/Windows-driver-samples/blob/10a103a40e75f4b98092c99e6f1b9ff9c3b20504/network/ndis/ndisprot/6x/sys/630/ndisprot630.inf). 
