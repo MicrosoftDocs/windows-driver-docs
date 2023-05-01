@@ -53,7 +53,7 @@ This table must be located in system memory with other ACPI tables, and it must 
 | PCI Function Number  | 1               | 70              | PCI Function Number if table describes a PCI device.<br>Must be 0x00 if it is not a PCI device. |
 | PCI Flags            | 4               | 71              | PCI Compatibility flags bitmask. Should be zero by default.<ul><li>Bit[0]: Operating System should NOT suppress PNP device enumeration or disable power management for this device. Must be 0 if it is not a PCI device.</li><li>Bit[1-31]: Reserved, must be 0.</li></ul> |
 | PCI Segment          | 1               | 75              | PCI segment number. <p>For systems with fewer than 255 PCI buses, this number must be 0.</p> |
-| UART Clock Frequency | 4               | 76              | For Revision 2 or lower:<ul><li>Must be 0.</li></ul>For Revision 3:<ul><li>Zero, indicating that the UART clock frequency is indeterminate.</li><li>A non-zero value indicating the UART clock frequency in Hz.</li></ul> |
+| UART Clock Frequency | 4               | 76              | For Revision 2 or lower:<ul><li>Must be 0.</li></ul>For Revision 3 or higher:<ul><li>Zero, indicating that the UART clock frequency is indeterminate.</li><li>A non-zero value indicating the UART clock frequency in Hz.</li></ul> |
 | Precise Baud Rate    | 4               | 80              | Contains a specific non-zero baud rate which overrides the value of the Configured Baud Rate field. If this field is zero or not present, Configured Baud Rate is used. See note below. |
 | NamespaceStringLength| 2               | 82              | Length, in bytes, of NamespaceString, including NUL characters. |
 | NamespaceStringOffset| 2               | 84              | Offset, in bytes, from the beginning of this structure to the field NamespaceString[]. This value must be valid because this string must be present. |
@@ -96,4 +96,4 @@ The Configured Baud Rate field has existed as a single-byte field since the crea
 | 2/17/2021 | 1.07 | Fixed incorrect description in Stop Bits field. Undo accidental removal of Flow Control field. Edited formatting. |
 | 10/7/2021 | 1.08 | Changed Table Revision to 3 and created field for UART Clock Frequency. Edited formatting. |
 | 4/10/2023 | 1.09 | Changed Table Revision to 4. Added RISC-V and polled support to Interrupt Type field. Added new fields: Precise Baud Rate, NamespaceStringLength, NamespaceStringOffset, and NamespaceString[]. |
-| 5/1/2023  | 1.10 | Clarified that when an Arm GIC interrupt controller is used, it is forbidden for the GSIV to be a SGI or PPI. |
+| 5/1/2023  | 1.10 | Clarified wording in Global System Interrupt and UART Clock Frequency fields. |
