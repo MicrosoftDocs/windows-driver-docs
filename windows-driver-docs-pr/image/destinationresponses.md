@@ -9,11 +9,10 @@ api_name:
 - wscn DestinationResponses
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/21/2023
 ---
 
 # DestinationResponses element
-
 
 The required **DestinationResponses** element is a collection of all of the responses to a client's scan destination requests.
 
@@ -31,41 +30,15 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="destinationresponse.md" data-raw-source="[&lt;strong&gt;DestinationResponse&lt;/strong&gt;](destinationresponse.md)"><strong>DestinationResponse</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DestinationResponse**](destinationresponse.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>&lt;wse:SubscribeResponse&gt;</p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| &lt;wse:SubscribeResponse&gt; |
 
 ## Remarks
 
@@ -73,17 +46,6 @@ A WSD Scan Service must specify one [**DestinationResponse**](destinationrespons
 
 ## See also
 
-
 [**DestinationResponse**](destinationresponse.md)
 
 [**ScanDestination**](scandestination.md)
-
- 
-
- 
-
-
-
-
-
-

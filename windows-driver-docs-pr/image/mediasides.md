@@ -9,11 +9,10 @@ api_name:
 - wscn MediaSides wscn MustHonor ""
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/01/2023
 ---
 
 # MediaSides element
-
 
 The optional **MediaSides** element contains the parameters that are unique to each physical side of the scanned media.
 
@@ -28,75 +27,23 @@ The optional **MediaSides** element contains the parameters that are unique to e
 
 ## Attributes
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong><strong>MustHonor</strong></strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>No</p></td>
-<td><p></p>
-<p>Optional. A Boolean value that must be 0, false, 1, or true.<strong>falsetrue</strong></p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Type | Required | Description |
+|--|--|--|--|
+| **MustHonor** | xs:string | No | Optional. A Boolean value that must be 0, false, 1, or true.**falsetrue** |
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="mediaback.md" data-raw-source="[&lt;strong&gt;MediaBack&lt;/strong&gt;](mediaback.md)"><strong>MediaBack</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="mediafront.md" data-raw-source="[&lt;strong&gt;MediaFront&lt;/strong&gt;](mediafront.md)"><strong>MediaFront</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**MediaBack**](mediaback.md) |
+| [**MediaFront**](mediafront.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="documentfinalparameters.md" data-raw-source="[&lt;strong&gt;DocumentFinalParameters&lt;/strong&gt;](documentfinalparameters.md)"><strong>DocumentFinalParameters</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="documentparameters.md" data-raw-source="[&lt;strong&gt;DocumentParameters&lt;/strong&gt;](documentparameters.md)"><strong>DocumentParameters</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DocumentFinalParameters**](documentfinalparameters.md) |
+| [**DocumentParameters**](documentparameters.md) |
 
 ## Remarks
 
@@ -112,7 +59,6 @@ The WSD Scan Service can specify the optional **Override** and **UsedDefault** a
 
 ## See also
 
-
 [**CreateScanJobRequest**](createscanjobrequest.md)
 
 [**DocumentFinalParameters**](documentfinalparameters.md)
@@ -124,13 +70,3 @@ The WSD Scan Service can specify the optional **Override** and **UsedDefault** a
 [**MediaBack**](mediaback.md)
 
 [**MediaFront**](mediafront.md)
-
- 
-
- 
-
-
-
-
-
-

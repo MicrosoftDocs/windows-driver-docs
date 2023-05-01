@@ -9,11 +9,10 @@ api_name:
 - wscn GetJobElementsRequest
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/25/2023
 ---
 
 # GetJobElementsRequest element
-
 
 The required **GetJobElementsRequest** element requests information that is related to the job that the [**JobId**](jobid.md) element identifies.
 
@@ -31,28 +30,12 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="jobid.md" data-raw-source="[&lt;strong&gt;JobId&lt;/strong&gt;](jobid.md)"><strong>JobId</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="requestedelements.md" data-raw-source="[&lt;strong&gt;RequestedElements&lt;/strong&gt;](requestedelements.md)"><strong>RequestedElements</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**JobId**](jobid.md) |
+| [**RequestedElements**](requestedelements.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 
@@ -66,7 +49,7 @@ This operation can return all of the [**common WSD Scan Service operation error 
 
 **GetJobElementsRequest** might also return the following errors.
 
--   **ClientErrorJobIdNotFound**
+- **ClientErrorJobIdNotFound**
 
     The scanner cannot find a job that matches the JobId value or the JobId value is not within the defined range.
 
@@ -76,8 +59,6 @@ This operation can return all of the [**common WSD Scan Service operation error 
     | \[Subcode\]    | wscn:ClientErrorJobIdNotFound      |
     | \[Reason\]     | The specified JobId was not found. |
     | \[Detail\]     | JobId: Incorrect JobId             |
-
-     
 
 ## Examples
 
@@ -112,19 +93,8 @@ The following code example requests the status of the scan job that Fault proper
 
 ## See also
 
-
 [**GetJobElementsResponse**](getjobelementsresponse.md)
 
 [**JobId**](jobid.md)
 
 [**RequestedElements**](requestedelements.md)
-
- 
-
- 
-
-
-
-
-
-

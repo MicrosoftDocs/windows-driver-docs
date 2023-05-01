@@ -9,11 +9,10 @@ api_name:
 - wscn JobEndStateEvent
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/28/2023
 ---
 
 # JobEndStateEvent element
-
 
 The required **JobEndStateEvent** element informs the client that the scanner has finished processing a job.
 
@@ -31,25 +30,11 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="jobendstate.md" data-raw-source="[&lt;strong&gt;JobEndState&lt;/strong&gt;](jobendstate.md)"><strong>JobEndState</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**JobEndState**](jobendstate.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 
@@ -97,15 +82,4 @@ The following code example shows how the scan device notifies the client of the 
 
 ## See also
 
-
 [**JobEndState**](jobendstate.md)
-
- 
-
- 
-
-
-
-
-
-

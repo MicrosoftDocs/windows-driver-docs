@@ -1,42 +1,18 @@
 ---
-title: Debugging Still Image Components
-description: Debugging Still Image Components
-ms.date: 07/18/2018
+title: Debugging still image components
+description: Debugging still image components
+ms.date: 04/21/2023
 ---
 
-# Debugging Still Image Components
+# Debugging still image components
 
 To aid the debugging of vendor-supplied still image components, the still image event monitor's behavior can be modified with command-line options, using the **Run** option of the **Start** menu. The following options are available:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Command Line Option</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>stimon /h</strong></p></td>
-<td><p>Hides the message window.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Stimon /r</strong></p></td>
-<td><p>Refreshes the event monitor's device list.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Stimon /t</strong><em>number</em></p></td>
-<td><p>Modifies the polling interval to the number of seconds specified by <em>number</em>. Typically used for increasing the polling interval.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Stimon /v</strong></p></td>
-<td><p>Makes a window visible that displays event monitor messages.</p></td>
-</tr>
-</tbody>
-</table>
+| Command line option | Definition |
+|--|--|
+| **stimon /h** | Hides the message window. |
+| **Stimon /r** | Refreshes the event monitor's device list. |
+| **Stimon /t***number* | Modifies the polling interval to the number of seconds specified by *number*. Typically used for increasing the polling interval. |
+| **Stimon /v** | Makes a window visible that displays event monitor messages. |
 
 The event monitor can be stopped and started by using the Computer Management window. The event monitor is listed as the "Still Image Service".

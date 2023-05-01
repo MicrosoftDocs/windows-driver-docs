@@ -9,11 +9,10 @@ api_name:
 - wscn JobId
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/28/2023
 ---
 
 # JobId element
-
 
 The required **JobId** element uniquely identifies a job within a scanner.
 
@@ -35,45 +34,19 @@ Required. An integer value from 1 through 2147483648.
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="canceljobrequest.md" data-raw-source="[&lt;strong&gt;CancelJobRequest&lt;/strong&gt;](canceljobrequest.md)"><strong>CancelJobRequest</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="createscanjobresponse.md" data-raw-source="[&lt;strong&gt;CreateScanJobResponse&lt;/strong&gt;](createscanjobresponse.md)"><strong>CreateScanJobResponse</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="getjobelementsrequest.md" data-raw-source="[&lt;strong&gt;GetJobElementsRequest&lt;/strong&gt;](getjobelementsrequest.md)"><strong>GetJobElementsRequest</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="jobendstate.md" data-raw-source="[&lt;strong&gt;JobEndState&lt;/strong&gt;](jobendstate.md)"><strong>JobEndState</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="jobstatus.md" data-raw-source="[&lt;strong&gt;JobStatus&lt;/strong&gt;](jobstatus.md)"><strong>JobStatus</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="jobsummary.md" data-raw-source="[&lt;strong&gt;JobSummary&lt;/strong&gt;](jobsummary.md)"><strong>JobSummary</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="retrieveimagerequest.md" data-raw-source="[&lt;strong&gt;RetrieveImageRequest&lt;/strong&gt;](retrieveimagerequest.md)"><strong>RetrieveImageRequest</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**CancelJobRequest**](canceljobrequest.md) |
+| [**CreateScanJobResponse**](createscanjobresponse.md) |
+| [**GetJobElementsRequest**](getjobelementsrequest.md) |
+| [**JobEndState**](jobendstate.md) |
+| [**JobStatus**](jobstatus.md) |
+| [**JobSummary**](jobsummary.md) |
+| [**RetrieveImageRequest**](retrieveimagerequest.md) |
 
 ## Remarks
 
@@ -84,7 +57,6 @@ The WSD Scan Service returns a **JobId** element to a client through a [**Create
 You cannot extend the allowed values for the **JobId** element.
 
 ## See also
-
 
 [**CancelJobRequest**](canceljobrequest.md)
 
@@ -99,13 +71,3 @@ You cannot extend the allowed values for the **JobId** element.
 [**JobSummary**](jobsummary.md)
 
 [**RetrieveImageRequest**](retrieveimagerequest.md)
-
- 
-
- 
-
-
-
-
-
-

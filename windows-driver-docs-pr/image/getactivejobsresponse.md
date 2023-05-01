@@ -9,11 +9,10 @@ api_name:
 - wscn GetActiveJobsResponse
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/25/2023
 ---
 
 # GetActiveJobsResponse element
-
 
 The required **GetActiveJobsResponse** element returns a summary of job-related variables for all currently active scan jobs.
 
@@ -31,25 +30,11 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="activejobs.md" data-raw-source="[&lt;strong&gt;ActiveJobs&lt;/strong&gt;](activejobs.md)"><strong>ActiveJobs</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ActiveJobs**](activejobs.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 
@@ -144,17 +129,6 @@ The following code example reports two active scan jobs.
 
 ## See also
 
-
 [**ActiveJobs**](activejobs.md)
 
 [**GetActiveJobsRequest**](getactivejobsrequest.md)
-
-
-
-
-
-
-
-
-
-

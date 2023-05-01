@@ -9,11 +9,10 @@ api_name:
 - wscn DeviceCondition wscn Id "..."
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/21/2023
 ---
 
 # DeviceCondition element
-
 
 The optional **DeviceCondition** element provides details about one of the scanner's currently active conditions.
 
@@ -28,78 +27,24 @@ The optional **DeviceCondition** element provides details about one of the scann
 
 ## Attributes
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong><strong>Id</strong></strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>No</p></td>
-<td><p></p>
-<p>Required. An integer from 1 through 2147483648.</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Type | Required | Description |
+|--|--|--|--|
+| **Id** | xs:string | No | Required. An integer from 1 through 2147483648. |
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="component.md" data-raw-source="[&lt;strong&gt;Component&lt;/strong&gt;](component.md)"><strong>Component</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="name-element-for-devicecondition-and-conditionhistoryentry.md" data-raw-source="[&lt;strong&gt;Name Elementfor DeviceCondition and ConditionHistoryEntry&lt;/strong&gt;](name-element-for-devicecondition-and-conditionhistoryentry.md)"><strong>Name Elementfor DeviceCondition and ConditionHistoryEntry</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="severity.md" data-raw-source="[&lt;strong&gt;Severity&lt;/strong&gt;](severity.md)"><strong>Severity</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="time.md" data-raw-source="[&lt;strong&gt;Time&lt;/strong&gt;](time.md)"><strong>Time</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**Component**](component.md) |
+| [**Name Elementfor DeviceCondition and ConditionHistoryEntry**](name-element-for-devicecondition-and-conditionhistoryentry.md) |
+| [**Severity**](severity.md) |
+| [**Time**](time.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="activeconditions.md" data-raw-source="[&lt;strong&gt;ActiveConditions&lt;/strong&gt;](activeconditions.md)"><strong>ActiveConditions</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ActiveConditions**](activeconditions.md) |
 
 ## Remarks
 
@@ -108,7 +53,6 @@ The WSD Scan Service specifies a unique identifier in the **Id** attribute for t
 The WSD Scan Service informs a client about changes to the scanner's status by sending a [**ScannerStatusConditionEvent**](scannerstatusconditionevent.md) event. A client can directly query the scanner's state by calling the [**GetScannerElementsRequest**](getscannerelementsrequest.md) operation.
 
 ## See also
-
 
 [**ActiveConditions**](activeconditions.md)
 
@@ -123,13 +67,3 @@ The WSD Scan Service informs a client about changes to the scanner's status by s
 [**Severity**](severity.md)
 
 [**Time**](time.md)
-
- 
-
- 
-
-
-
-
-
-

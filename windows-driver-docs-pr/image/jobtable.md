@@ -9,11 +9,10 @@ api_name:
 - wscn JobTable
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/01/2023
 ---
 
 # JobTable element
-
 
 The required **JobTable** element contains current and historical information about scan jobs.
 
@@ -31,28 +30,12 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="activejobs.md" data-raw-source="[&lt;strong&gt;ActiveJobs&lt;/strong&gt;](activejobs.md)"><strong>ActiveJobs</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="jobhistory2.md" data-raw-source="[&lt;strong&gt;JobHistory&lt;/strong&gt;](jobhistory2.md)"><strong>JobHistory</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ActiveJobs**](activejobs.md) |
+| [**JobHistory**](jobhistory2.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 
@@ -62,17 +45,6 @@ The WSD Scan Service uses a **JobTable** element to track all current and finish
 
 ## See also
 
-
 [**ActiveJobs**](activejobs.md)
 
 [**JobHistory**](jobhistory2.md)
-
- 
-
- 
-
-
-
-
-
-

@@ -9,11 +9,10 @@ api_name:
 - wscn DocumentName
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/24/2023
 ---
 
 # DocumentName element
-
 
 The required **DocumentName** element contains the name of the document that the client supplies.
 
@@ -35,27 +34,13 @@ Required. Any character string.
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="documentdescription.md" data-raw-source="[&lt;strong&gt;DocumentDescription&lt;/strong&gt;](documentdescription.md)"><strong>DocumentDescription</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DocumentDescription**](documentdescription.md) |
 
 ## Remarks
 
@@ -63,15 +48,4 @@ The WSD Scan Service must supply a value to store the document on the client.
 
 ## See also
 
-
 [**DocumentDescription**](documentdescription.md)
-
- 
-
- 
-
-
-
-
-
-
