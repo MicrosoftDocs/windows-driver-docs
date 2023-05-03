@@ -10,7 +10,7 @@ api_name:
 - INF DefaultInstall Section
 api_type:
 - NA
-ms.date: 06/03/2022
+ms.date: 05/03/2023
 ---
 
 # INF DefaultInstall section
@@ -149,7 +149,7 @@ For more information, see [**INF UnregisterDlls Directive**](inf-unregisterdlls-
 If using **DefaultInstall** on Windows 10 version 1903 and later versions of Windows, it is recommended that the INF file meets the requirements of a [primitive driver](../develop/creating-a-primitive-driver.md).
 
 > [!NOTE]
-> The INF file of a [driver package](driver-packages.md) must not contain an INF **DefaultInstall** section if the driver package is to be digitally signed. For more information about signing driver packages, see [Driver Signing](driver-signing.md).
+> The INF file of a [driver package](driver-packages.md) that has a [**Manufacturer**](inf-manufacturer-section.md) section must not contain an INF **DefaultInstall** section if the driver package is to be digitally signed. For more information about signing driver packages, see [Driver Signing](driver-signing.md).
 
 > [!NOTE]
 > Unlike a [**_DDInstall_**](inf-ddinstall-section.md) section, a **DefaultInstall** section cannot contain [**DriverVer**](inf-driverver-directive.md) or [**LogConfig**](inf-logconfig-directive.md) directives.
