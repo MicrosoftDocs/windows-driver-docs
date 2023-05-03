@@ -9,11 +9,10 @@ api_name:
 - wscn ScanData
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/02/2023
 ---
 
 # ScanData element
-
 
 The required **ScanData** element contains the binary data that represents the scanned image.
 
@@ -29,27 +28,13 @@ There are no attributes.
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="retrieveimageresponse.md" data-raw-source="[&lt;strong&gt;RetrieveImageResponse&lt;/strong&gt;](retrieveimageresponse.md)"><strong>RetrieveImageResponse</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**RetrieveImageResponse**](retrieveimageresponse.md) |
 
 ## Remarks
 
@@ -57,15 +42,4 @@ The **ScanData** element contains an **xop:Include** element that specifies the 
 
 ## See also
 
-
 [**RetrieveImageResponse**](retrieveimageresponse.md)
-
- 
-
- 
-
-
-
-
-
-

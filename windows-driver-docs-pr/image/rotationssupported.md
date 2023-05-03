@@ -9,11 +9,10 @@ api_name:
 - wscn RotationsSupported
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/01/2023
 ---
 
 # RotationsSupported element
-
 
 The required **RotationsSupported** element contains the list of rotation values that the scanner supports for rotating each image of a scanned document.
 
@@ -31,41 +30,15 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="rotationvalue.md" data-raw-source="[&lt;strong&gt;RotationValue&lt;/strong&gt;](rotationvalue.md)"><strong>RotationValue</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**RotationValue**](rotationvalue.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="devicesettings.md" data-raw-source="[&lt;strong&gt;DeviceSettings&lt;/strong&gt;](devicesettings.md)"><strong>DeviceSettings</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DeviceSettings**](devicesettings.md) |
 
 ## Remarks
 
@@ -73,17 +46,6 @@ The WSD Scan Service must apply all rotation values to the scan data after data 
 
 ## See also
 
-
 [**DeviceSettings**](devicesettings.md)
 
 [**RotationValue**](rotationvalue.md)
-
- 
-
- 
-
-
-
-
-
-

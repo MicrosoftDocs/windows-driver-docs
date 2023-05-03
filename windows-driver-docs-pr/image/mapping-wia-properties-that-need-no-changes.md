@@ -1,323 +1,47 @@
 ---
-title: Mapping WIA Properties That Need No Changes
-description: Mapping WIA Properties That Need No Changes
-ms.date: 04/20/2017
+title: Mapping WIA properties that need no changes
+description: Mapping WIA properties that need no changes
+ms.date: 05/03/2023
 ---
 
-# Mapping WIA Properties That Need No Changes
+# Mapping WIA properties that need no changes
 
+> [!IMPORTANT]
+> This article contains information that applies to obsolete Windows operating systems.
 
 There are Windows XP properties that have the same property IDs and property names as their Windows Vista counterparts. These properties are translated with appropriate Windows XP context selection only; there are no other changes. The following is a table of these Windows XP root properties and the FLATBED and FEEDER (ADF) properties that they are translated to in Windows Vista.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Windows XP property</strong></p></td>
-<td><p><strong>Windows XP item / context</strong></p></td>
-<td><p><strong>Windows Vista property</strong></p></td>
-<td><p><strong>Windows Vista</strong> <strong>item</strong></p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_IPS_CUR_INTENT</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FLATBED</p>
-<p>See note: b</p></td>
-<td><p>WIA_IPS_CUR_INTENT</p>
-<p>Read/Write access</p></td>
-<td><p>FLATBED</p>
-<p>See note: b</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_IPS_CUR_INTENT</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_CUR_INTENT</p>
-<p>Read/Write access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_IPS_XRES</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FLATBED</p>
-<p>See note: b</p></td>
-<td><p>WIA_IPS_XRES</p>
-<p>Read/Write access</p></td>
-<td><p>FLATBED</p>
-<p>See note: b</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_IPS_XRES</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_XRES</p>
-<p>Read/Write access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_IPS_YRES</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FLATBED</p>
-<p>See note: b</p></td>
-<td><p>WIA_IPS_YRES</p>
-<p>Read/Write access</p></td>
-<td><p>FLATBED</p>
-<p>See note: b</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_IPS_YRES</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_YRES</p>
-<p>Read/Write access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_IPS_XPOS</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FLATBED</p>
-<p>See note: b</p></td>
-<td><p>WIA_IPS_XPOS</p>
-<p>Read/Write access</p></td>
-<td><p>FLATBED</p>
-<p>See note: b</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_IPS_XPOS</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_XPOS</p>
-<p>Read/Write access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_IPS_YPOS</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FLATBED</p>
-<p>See note: b</p></td>
-<td><p>WIA_IPS_YPOS</p>
-<p>Read/Write access</p></td>
-<td><p>FLATBED</p>
-<p>See note: b</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_IPS_YPOS</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_YPOS</p>
-<p>Read/Write access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_IPS_XEXTENT</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FLATBED</p>
-<p>See note: b</p></td>
-<td><p>WIA_IPS_XEXTENT</p>
-<p>Read/Write access</p></td>
-<td><p>FLATBED</p>
-<p>See note: b</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_IPS_XEXTENT</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_XEXTENT</p>
-<p>Read/Write access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_IPS_YEXTENT</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FLATBED</p>
-<p>See note: b</p></td>
-<td><p>WIA_IPS_YEXTENT</p>
-<p>Read/Write access</p></td>
-<td><p>FLATBED</p>
-<p>See note: b</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_IPS_YEXTENT</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_YEXTENT</p>
-<p>Read/Write access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_IPS_PHOTOMETRIC_INTERP</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FLATBED</p>
-<p>See note: b</p></td>
-<td><p>WIA_IPS_PHOTOMETRIC_INTERP</p>
-<p>Read/Write access</p></td>
-<td><p>FLATBED</p>
-<p>See note: b</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_IPS_PHOTOMETRIC_INTERP</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_PHOTOMETRIC_INTERP</p>
-<p>Read/Write access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_IPS_BRIGHTNESS</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FLATBED</p>
-<p>See note: b</p></td>
-<td><p>WIA_IPS_BRIGHTNESS</p>
-<p>Read/Write access</p></td>
-<td><p>FLATBED</p>
-<p>See note: b</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_IPS_BRIGHTNESS</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_BRIGHTNESS</p>
-<p>Read/Write access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_IPS_CONTRAST</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FLATBED</p>
-<p>See note: b</p></td>
-<td><p>WIA_IPS_CONTRAST</p>
-<p>Read/Write access</p></td>
-<td><p>FLATBED</p>
-<p>See note: b</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_IPS_CONTRAST</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_CONTRAST</p>
-<p>Read/Write access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_IPS_ORIENTATION</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FLATBED</p>
-<p>See note: b</p></td>
-<td><p>WIA_IPS_ORIENTATION</p>
-<p>Read/Write access</p></td>
-<td><p>FLATBED</p>
-<p>See note: b</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_IPS_ORIENTATION</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_ORIENTATION</p>
-<p>Read/Write access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_IPS_ROTATION</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FLATBED</p>
-<p>See note: b</p></td>
-<td><p>WIA_IPS_ROTATION</p>
-<p>Read/Write access</p></td>
-<td><p>FLATBED</p>
-<p>See note: b</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_IPS_ROTATION</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_ROTATION</p>
-<p>Read/Write access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_IPS_THRESHOLD</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FLATBED</p>
-<p>See note: b</p></td>
-<td><p>WIA_IPS_THRESHOLD</p>
-<p>Read/Write access</p></td>
-<td><p>FLATBED</p>
-<p>See note: b</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_IPS_THRESHOLD</p>
-<p>Read/Write access</p></td>
-<td><p>Child / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_THRESHOLD</p>
-<p>Read/Write access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_IPS_WARM_UP_TIME</p>
-<p>Read-only access</p></td>
-<td><p>Child / FLATBED</p>
-<p>See note: b</p></td>
-<td><p>WIA_IPS_WARM_UP_TIME</p>
-<p>Read-only access</p></td>
-<td><p>FLATBED</p>
-<p>See note: b</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_IPS_WARM_UP_TIME</p>
-<p>Read-only access</p></td>
-<td><p>Child / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_WARM_UP_TIME</p>
-<p>Read-only access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-</tbody>
-</table>
+| Windows XP property | >Windows XP item / context | Windows Vista property | Windows Vista |
+|--|--|--|--|
+| WIA_IPS_CUR_INTENT<br><br>Read/Write access | Child / FLATBED<br><br>See Note 2 below | WIA_IPS_CUR_INTENT<br><br>Read/Write access | FLATBED<br><br>See Note 2 below |
+| WIA_IPS_CUR_INTENT<br><br>Read/Write access | Child / FEEDER<br><br>See Note 1 below | WIA_IPS_CUR_INTENT<br><br>Read/Write access | FEEDER<br><br>See Note 1 below |
+| WIA_IPS_XRES<br><br>Read/Write access | Child / FLATBED<br><br>See Note 2 below | WIA_IPS_XRES<br><br>Read/Write access | FLATBED<br><br>See Note 2 below |
+| WIA_IPS_XRES<br><br>Read/Write access | Child / FEEDER<br><br>See Note 1 below | WIA_IPS_XRES<br><br>Read/Write access | FEEDER<br><br>See Note 1 below |
+| WIA_IPS_YRES<br><br>Read/Write access | Child / FLATBED<br><br>See Note 2 below | WIA_IPS_YRES<br><br>Read/Write access | FLATBED<br><br>See Note 2 below |
+| WIA_IPS_YRES<br><br>Read/Write access | Child / FEEDER<br><br>See Note 1 below | WIA_IPS_YRES<br><br>Read/Write access | FEEDER<br><br>See Note 1 below |
+| WIA_IPS_XPOS<br><br>Read/Write access | Child / FLATBED<br><br>See Note 2 below | WIA_IPS_XPOS<br><br>Read/Write access | FLATBED<br><br>See Note 2 below |
+| WIA_IPS_XPOS<br><br>Read/Write access | Child / FEEDER<br><br>See Note 1 below | WIA_IPS_XPOS<br><br>Read/Write access | FEEDER<br><br>See Note 1 below |
+| WIA_IPS_YPOS<br><br>Read/Write access | Child / FLATBED<br><br>See Note 2 below | WIA_IPS_YPOS<br><br>Read/Write access | FLATBED<br><br>See Note 2 below |
+| WIA_IPS_YPOS<br><br>Read/Write access | Child / FEEDER<br><br>See Note 1 below | WIA_IPS_YPOS<br><br>Read/Write access | FEEDER<br><br>See Note 1 below |
+| WIA_IPS_XEXTENT<br><br>Read/Write access | Child / FLATBED<br><br>See Note 2 below | WIA_IPS_XEXTENT<br><br>Read/Write access | FLATBED<br><br>See Note 2 below |
+| WIA_IPS_XEXTENT<br><br>Read/Write access | Child / FEEDER<br><br>See Note 1 below | WIA_IPS_XEXTENT<br><br>Read/Write access | FEEDER<br><br>See Note 1 below |
+| WIA_IPS_YEXTENT<br><br>Read/Write access | Child / FLATBED<br><br>See Note 2 below | WIA_IPS_YEXTENT<br><br>Read/Write access | FLATBED<br><br>See Note 2 below |
+| WIA_IPS_YEXTENT<br><br>Read/Write access | Child / FEEDER<br><br>See Note 1 below | WIA_IPS_YEXTENT<br><br>Read/Write access | FEEDER<br><br>See Note 1 below |
+| WIA_IPS_PHOTOMETRIC_INTERP<br><br>Read/Write access | Child / FLATBED<br><br>See Note 2 below | WIA_IPS_PHOTOMETRIC_INTERP<br><br>Read/Write access | FLATBED<br><br>See Note 2 below |
+| WIA_IPS_PHOTOMETRIC_INTERP<br><br>Read/Write access | Child / FEEDER<br><br>See Note 1 below | WIA_IPS_PHOTOMETRIC_INTERP<br><br>Read/Write access | FEEDER<br><br>See Note 1 below |
+| WIA_IPS_BRIGHTNESS<br><br>Read/Write access | Child / FLATBED<br><br>See Note 2 below | WIA_IPS_BRIGHTNESS<br><br>Read/Write access | FLATBED<br><br>See Note 2 below |
+| WIA_IPS_BRIGHTNESS<br><br>Read/Write access | Child / FEEDER<br><br>See Note 1 below | WIA_IPS_BRIGHTNESS<br><br>Read/Write access | FEEDER<br><br>See Note 1 below |
+| WIA_IPS_CONTRAST<br><br>Read/Write access | Child / FLATBED<br><br>See Note 2 below | WIA_IPS_CONTRAST<br><br>Read/Write access | FLATBED<br><br>See Note 2 below |
+| WIA_IPS_CONTRAST<br><br>Read/Write access | Child / FEEDER<br><br>See Note 1 below | WIA_IPS_CONTRAST<br><br>Read/Write access | FEEDER<br><br>See Note 1 below |
+| WIA_IPS_ORIENTATION<br><br>Read/Write access | Child / FLATBED<br><br>See Note 2 below | WIA_IPS_ORIENTATION<br><br>Read/Write access | FLATBED<br><br>See Note 2 below |
+| WIA_IPS_ORIENTATION<br><br>Read/Write access | Child / FEEDER<br><br>See Note 1 below | WIA_IPS_ORIENTATION<br><br>Read/Write access | FEEDER<br><br>See Note 1 below |
+| WIA_IPS_ROTATION<br><br>Read/Write access | Child / FLATBED<br><br>See Note 2 below | WIA_IPS_ROTATION<br><br>Read/Write access | FLATBED<br><br>See Note 2 below |
+| WIA_IPS_ROTATION<br><br>Read/Write access | Child / FEEDER<br><br>See Note 1 below | WIA_IPS_ROTATION<br><br>Read/Write access | FEEDER<br><br>See Note 1 below |
+| WIA_IPS_THRESHOLD<br><br>Read/Write access | Child / FLATBED<br><br>See Note 2 below | WIA_IPS_THRESHOLD<br><br>Read/Write access | FLATBED<br><br>See Note 2 below |
+| WIA_IPS_THRESHOLD<br><br>Read/Write access | Child / FEEDER<br><br>See Note 1 below | WIA_IPS_THRESHOLD<br><br>Read/Write access | FEEDER<br><br>See Note 1 below |
+| WIA_IPS_WARM_UP_TIME<br><br>Read-only access | Child / FLATBED<br><br>See Note 2 below | WIA_IPS_WARM_UP_TIME<br><br>Read-only access | FLATBED<br><br>See Note 2 below |
+| WIA_IPS_WARM_UP_TIME<br><br>Read-only access | Child / FEEDER<br><br>See Note 1 below | WIA_IPS_WARM_UP_TIME<br><br>Read-only access | FEEDER<br><br>See Note 1 below |
 
- 
+**Note 1**: FEEDER item (ADF) or FEEDER context on the Windows XP root or child item (WIA_DPS_DOCUMENT_HANDLING_SELECT is set to FEEDER).
 
-<a href="" id="note-a-"></a>Note a:  
-FEEDER item (ADF) or FEEDER context on the Windows XP root or child item (WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT is set to FEEDER).
-
-<a href="" id="note-b-"></a>Note b:  
-FLATBED item or FLATBED context on the Windows XP root or child item (WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT is set to FLATBED).
-
- 
-
- 
-
-
-
-
+**Note 2**: FLATBED item or FLATBED context on the Windows XP root or child item (WIA_DPS_DOCUMENT_HANDLING_SELECT is set to FLATBED).
