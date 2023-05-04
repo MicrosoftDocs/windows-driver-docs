@@ -24,6 +24,10 @@ Not only does WinDbg run natively on ARM64, we also enabled Time Travel Debuggin
 
 Overall TTD performance has also been improved, with recording overhead substantially reduced for processes that use common SIMD instructions. In total 65 new instructions were optimized, ranging from MMX through SSE 4.2, AVX and AVX2.
 
+### Ambiguous Breakpoint Resolution
+
+Ambiguous breakpoints allow for the debugger to set breakpoints in certain scenarios where a breakpoint expression resolves to multiple locations. For more information, see the documentation here (TBD, link once documentation is publicly available).
+
 ## 1.2107.13001.0 - WinDbg Preview
 
 ### Regex search
