@@ -22,7 +22,7 @@ This measure is normalized by usage, which is less than or equal to the baseline
 |**Measurement criteria**|Aggregation of instances|
 |**Minimum population**|1,000 hours of creative application runtime|
 |**Passing criteria**|<= 10 crashes per year of runtime|
-|**Measure ID**|20240835|
+|**Measure ID**|20240835 (Legacy)|
 
 ## Calculation
 

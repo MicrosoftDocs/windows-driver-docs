@@ -22,7 +22,7 @@ This is the ecosystem counterpart of [Myriad of machines that had a stop error c
 | **Measurement criteria** | Aggregation of machines |
 | **Minimum population** | 20,000 machines |
 | **Passing criteria** | <= 3/10,000 machines experience a stop error |
-| **Measure ID** | 23253402 |
+| **Measure ID** | 23253402 (Legacy)|
 
 ## Calculation
 

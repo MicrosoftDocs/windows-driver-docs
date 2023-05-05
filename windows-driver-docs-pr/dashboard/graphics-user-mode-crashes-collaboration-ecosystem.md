@@ -42,7 +42,7 @@ This is the ecosystem counterpart of [Crashes in communication and collaboration
 | **Measurement criteria** | Aggregation of communication and collaboration application runtime in Years |
 | **Minimum population** | 10,000 hours of communication and collaboration application runtime |
 | **Passing criteria** | <= 1 crash per Year of cumulative runtime |
-| **Measure ID** | 25912731 |
+| **Measure ID** | 25912731 (Legacy)|
 
 ## Calculation
 

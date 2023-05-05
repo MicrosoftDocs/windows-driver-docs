@@ -22,7 +22,7 @@ This is the ecosystem counterpart of [Myriad of drivers that were rolled back or
 |**Measurement criteria**|Machine count|
 |**Minimum population**|5,000 Devices|
 |**Passing criteria**|<= 10 rollbacks per 10,000 devices that installed the driver|
-|**Measure ID**|26124773|
+|**Measure ID**|26124773 (Legacy)|
 
 ## Calculation
 
