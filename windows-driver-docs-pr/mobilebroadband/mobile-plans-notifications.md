@@ -31,7 +31,7 @@ The notification content can be customized by the mobile operator using a templa
 
 Field name | Description | Example
 ---------- | ----------- | -------
-Notification type | Several pre-defined types of SMS-notifications are supported. Each type behaves the same. Only the strings shown for the `<accept>` and `<decline>` buttons change depending on the type. | Low Balance, Zero Balance, New Offer, Trial Offer, Trial Ending, Trial Ended
+Notification type | Several pre-defined types of SMS-notifications are supported. Each type behaves the same. Only the strings shown for the `<accept>` and `<decline>` buttons change depending on the type. | LowBalance, ZeroBalance, NewOffer, TrialOffer, TrialEnding, TrialEnded
 Title | One line call to action | "You're almost out of data"
 Body | Short message highlighting the offering value to the end user | "There's less than 5MB left for your current data plan. Take action now to make sure you stay connected."
 Image | A lifestyle oriented photo with the PC as the centerpiece. Image dimensions are 364x180 pixels at 100% scaling. | https://picsum.photos/id/1/364/180
