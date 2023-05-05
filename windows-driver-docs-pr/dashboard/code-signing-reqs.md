@@ -49,7 +49,7 @@ Windows device installation uses digital signatures to verify the integrity of d
 
 For testing purposes only, you can submit your drivers for attestation signing, which doesn't require HLK testing.
 
-Attestation signing has the following restrictions:
+Attestation signing has the following restrictions and requirements:
 
 - Attestation signed drivers cannot be published to Windows Update for retail audiences. To publish a driver to Windows Update for retail audiences, you must submit your driver through the [Windows Hardware Compatibility Program (WHCP)](/windows-hardware/design/compatibility/). Publishing attestation signed drivers to Windows Update for testing purposes is supported by selecting *CoDev* or *Test Registry Key / Surface SSRK* options. 
 
