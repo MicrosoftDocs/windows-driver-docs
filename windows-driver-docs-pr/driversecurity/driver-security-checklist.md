@@ -168,10 +168,9 @@ Handle zero-length buffers correctly. For more information, see [Errors in Direc
 
 - Validate any address in the user space before trying to use it, using APIs such as [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) when appropriate.
 
-
 #### MSR model-specific register reads and writes
- 
-Compiler intrinsics, such as [__readmsr](/cpp/intrinsics/readmsr) and [__writemsr](/cpp/intrinsics/writemsr) can be used to access the model-specific registers. If this access is required, the driver must always check that the register to read or write to is constrained to the expected index or range. 
+
+Compiler intrinsics, such as [__readmsr](/cpp/intrinsics/readmsr) and [__writemsr](/cpp/intrinsics/writemsr) can be used to access the model-specific registers. If this access is required, the driver must always check that the register to read or write to is constrained to the expected index or range.
 
 For more information, and code examples, see [Providing the ability to read/write MSRs](driver-security-dev-best-practices.md#providing-the-ability-to-read-and-write-msrs) in [Development Security Best Practices for Windows driver developers](driver-security-dev-best-practices.md).
 
@@ -464,7 +463,7 @@ For general information on SAL, refer to this article available from OSR.
 Static Driver Verifier (SDV) uses a set of interface rules and a model of the operating system to determine whether the driver interacts correctly with the Windows operating system. SDV finds defects in driver code that could point to potential bugs in drivers.
 
 For more information, see [Introducing Static Driver Verifier](../devtest/introducing-static-driver-verifier.md)
- and [Static Driver Verifier](../devtest/static-driver-verifier.md). 
+ and [Static Driver Verifier](../devtest/static-driver-verifier.md).
 
 Note that only certain types of drivers are supported by SDV. For more information about the drivers that SDV can verify, see [Supported Drivers](../devtest/supported-drivers.md). Refer to the following pages for information on the SDV tests available for the driver type you are working with.
 
@@ -519,16 +518,18 @@ Follow these steps to validate that the security compile options are properly co
 
 3. There are a number of options to download BinSkim, such as a NuGet package. In this example we will use the git clone option to download from here: <https://github.com/microsoft/binskim> and install it on a 64 bit Windows PC.
 
-4. Open a Visual Studio Developer Command Prompt window and create a directory, for example `C:\binskim-master`. 
+4. Open a Visual Studio Developer Command Prompt window and create a directory, for example `C:\binskim-master`.
 
    ```console
    C:\> Md \binskim-master
    ```
+
 5. Move to that directory that you just created.  
 
    ```console
    C:\> Cd \binskim-master
    ```
+
 6. Use the git clone command to download all of the needed files.  
 
    ```console
@@ -541,7 +542,7 @@ Follow these steps to validate that the security compile options are properly co
    C:\> Cd \binskim-master\binskim
    ```
 
-7. Run **BuildAndTest.cmd** to ensure that release build succeeds, and that all tests pass.
+8. Run **BuildAndTest.cmd** to ensure that release build succeeds, and that all tests pass.
 
    ```console
    C:\binskim-master\binskim> BuildAndTest.cmd
@@ -561,13 +562,13 @@ Follow these steps to validate that the security compile options are properly co
 
    ```
 
-8. The build process creates a set of directories with the BinSkim executables. Move to the win-x64 build output directory.  
+9. The build process creates a set of directories with the BinSkim executables. Move to the win-x64 build output directory.  
 
    ```console
    C:\binskim-master\binskim> Cd \binskim-master\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64>
    ```
 
-9. Display help for the analyze option.
+10. Display help for the analyze option.
 
    ```console
    C:\binskim-master\binskim\bld\bin\AnyCPU_Release\Publish\netcoreapp2.0\win-x64> BinSkim help analyze
@@ -714,7 +715,7 @@ The !sd extension displays the security descriptor at the specified address. For
 
 Anyone can submit a questionable driver using the Microsoft Vulnerable and Malicious Driver Reporting Center. Refer to this blog entry for information on how  drivers are submitted for analysis - [Improve kernel security with the new Microsoft Vulnerable and Malicious Driver Reporting Center](https://www.microsoft.com/security/blog/2021/12/08/improve-kernel-security-with-the-new-microsoft-vulnerable-and-malicious-driver-reporting-center/)
 
-The Reporting Center can scan and analyze Windows drivers built for x86 and x64 architectures. Vulnerable and malicious scanned drivers are flagged for analysis and investigation by Microsoft’s Vulnerable Driver team. After vulernable drivers are confirmed, an appropriate notification occurs, they are added to the vulnerable driver blocklist. For more information about that, see [Microsoft recommended driver block rules](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules). These rules are aplied by default to Hypervisor-protected code integrity (HVCI) enabled devices and Windows 10 in S mode. 
+The Reporting Center can scan and analyze Windows drivers built for x86 and x64 architectures. Vulnerable and malicious scanned drivers are flagged for analysis and investigation by Microsoft’s Vulnerable Driver team. After vulernable drivers are confirmed, an appropriate notification occurs, they are added to the vulnerable driver blocklist. For more information about that, see [Microsoft recommended driver block rules](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules). These rules are aplied by default to Hypervisor-protected code integrity (HVCI) enabled devices and Windows 10 in S mode.
 
 ## Review secure coding resources
 
@@ -780,9 +781,9 @@ Windows driver classroom training is available from vendors such as the followin
 - [Winsider](https://www.windows-internals.com/)
 - [Azius](https://azius.com/)
 
-Secure coding online training is available from a variety of sources. For example, this course is available from coursera:
+Secure coding online training is available from a variety of sources. For example, this course is available from coursera on:
 
-[https://www.coursera.org/learn/software-security](https://www.coursera.org/learn/software-security).
+[Identifying Security Vulnerabilities in C/C++ Programming](https://www.coursera.org/learn/identifying-security-vulnerabilities-c-programming).
 
 SAFECode offers free training as well:
 
