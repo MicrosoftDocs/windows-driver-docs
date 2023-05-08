@@ -24,7 +24,7 @@ This is the Ecosystem counterpart of [Percent of devices with WinML Runtime Erro
 |**Measurement criteria**|Machine|
 |**Minimum population**|30 devices, using confidence intervals|
 |**Passing criteria**|Less than 1%|
-|**Measure ID**|27057557|
+|**Measure ID**|27057557(Legacy)|
 
 ## Calculation
 
