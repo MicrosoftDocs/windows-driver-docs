@@ -7,7 +7,7 @@ ms.date: 03/27/2023
 # Removing Co-installers from Driver Packages
 
 > [!CAUTION]
-> Starting in January 2023, [driver packages](../install/driver-packages.md) containing a co-installer are no longer signed by the [Hardware Developer Center portal](https://partner.microsoft.com/en-us/dashboard). For details of the requirement, please refer to [Windows Hardware Compatibility Program Specifications and Policies](/windows-hardware/design/compatibility/whcp-specifications-policies), specifically version 22H2 policies, section **Device.DevFund.INF.Declarative**.
+> Starting in January 2023, [driver packages](../install/driver-packages.md) containing a co-installer are no longer signed by the [Hardware Developer Center portal](https://partner.microsoft.com/dashboard). For details of the requirement, please refer to [Windows Hardware Compatibility Program Specifications and Policies](/windows-hardware/design/compatibility/whcp-specifications-policies), specifically version 22H2 policies, section **Device.DevFund.INF.Declarative**.
 
 This page addresses common reasons for co-installers to be present in a driver package, and offers mechanisms to perform the same task without a co-installer.
 
