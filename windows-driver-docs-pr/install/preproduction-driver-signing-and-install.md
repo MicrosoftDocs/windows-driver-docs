@@ -78,10 +78,10 @@ Use of the EnableUefiSbTest tool is strongly recommended. Alternatively, you can
     >[!NOTE]
     > EnableUefiSbTest.exe will not output/return anything after successfully running.
 	
-	Optionally, specify the `thirdParty` command to provision the Microsoft UEFI CA certificate alongside the default keys in the Secure Boot DB. This will allow trust for Microsoft UEFI CA-signed EFI executables like option ROMs and non-Windows bootloaders. 
+	Optionally, specify the `thirdparty` command to provision the Microsoft UEFI CA certificate alongside the default keys in the Secure Boot DB. This will allow trust for Microsoft UEFI CA-signed EFI executables like option ROMs and non-Windows bootloaders. 
 	
 	```PowerShell
-    EnableUefiSbTest.exe /thirdParty
+    EnableUefiSbTest.exe /thirdparty
     ```
 
 
