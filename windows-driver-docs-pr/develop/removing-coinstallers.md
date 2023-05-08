@@ -1,7 +1,7 @@
 ---
 title: Removing Co-installers from Driver Packages
 description: This page addresses common reasons for co-installers to be present in a driver package, and mechanisms to perform the same task without a co-installer.
-ms.date: 03/27/2023
+ms.date: 05/07/2023
 ---
 
 # Removing Co-installers from Driver Packages
@@ -19,7 +19,11 @@ The WDF co-installer and WinUSB co-installer are not required on any system runn
 
 ## Installing software that presents user interface
 
-Rather than launching an application during an installation, the application should be installed using an [AddSoftware](../install/inf-addsoftware-directive.md) directive in the [DDInstall.Software](../install/inf-ddinstall-software-section.md) section of the driver package INF. For additional details, see [Installing Associated Software](#installing-associated-software) below.
+Rather than launching an application during an installation, provide a Universal Windows Platform application that is installed using an [AddSoftware directive](../install/inf-addsoftware-directive.md) from a [DDInstall.Software section](../install/inf-ddinstall-software-section.md) of the driver package INF.
+
+For more information, see [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md). An [AddSoftware directive](../install/inf-addsoftware-directive.md) is supported on Windows 10, version 1703 and later versions of Windows.
+
+For additional details, see [Installing Associated Software](#installing-associated-software) below.
 
 ## Setting device friendly names
 
