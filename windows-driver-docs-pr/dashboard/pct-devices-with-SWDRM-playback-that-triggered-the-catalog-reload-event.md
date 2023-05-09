@@ -22,7 +22,7 @@ DRM (Digital Rights Management) techniques (Software or Hardware) are used durin
 | **Measurement criteria** | Percent of machines hitting the catalog reload event |
 | **Minimum population** | 200 machines |
 | **Passing criteria** | >=99% of devices do not have a catalog reload event during playback|
-| **Measure ID** | 41328752 |
+| **Measure ID** | 41328752 (Legacy), 43952484 |
 
 ## Calculation
 
