@@ -2,10 +2,10 @@
 title: Session based SWDRM Driver measure for Video playback on Netflix 
 description: This session-based Software DRM Driver measure is used to capture the percentage of sessions that have an error during video playback on Netflix while using software DRM.
 ms.topic: article
-ms.date: 01/19/2023
+ms.date: 05/09/2023
 ---
 
-#  Percentage of devices with SWDRM playback that triggered the Catalog reload event
+#  Session based SWDRM Driver measure for Video playback on Netflix 
 
 ## Description
 

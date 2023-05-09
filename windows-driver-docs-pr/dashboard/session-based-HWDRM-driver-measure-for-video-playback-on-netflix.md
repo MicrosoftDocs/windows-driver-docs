@@ -5,7 +5,7 @@ ms.topic: article
 ms.date: 05/09/2023
 ---
 
-#  Percentage of devices with SWDRM playback that triggered the Catalog reload event
+#  Percentage of devices with HWDRM playback that triggered the Catalog reload event
 
 ## Description
 
