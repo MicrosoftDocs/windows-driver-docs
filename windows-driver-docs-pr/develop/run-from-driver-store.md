@@ -1,7 +1,7 @@
 ---
 title: Run From Driver Store
 description: This page describes how to make use of 'run from Driver Store' concepts in a driver package.
-ms.date: 06/20/2022
+ms.date: 05/10/2023
 ---
 
 # Run From Driver Store
@@ -118,6 +118,22 @@ When developing a driver package, if there is a need to replace a particular exe
 ## Porting an INF to use run from Driver Store
 
 If you have an existing driver package with an INF that does not use run from Driver Store and are porting it to use run from Driver Store, the following examples show some common file usage in INFs and patterns on updating those files to be run from DriverStore.
+
+### Quick reference for destination directory updates
+
+The following table provides a quick reference for finding the appropriate guidance based on the current destination directory [**DIRID**](../install/using-dirids.md) a driver package INF is using for a file.
+
+| DIRID | Sub-directory | Details |
+| -- | -- | -- |
+| 13 | | The file is already using run from Driver Store. No further work is needed. |
+|  1 | | DIRID 1 should not be used. There is no guarantee that the source directory will be available when a reference to the file needs to be resolved. Instead, any files that components in the driver package depend on should be part of the driver package and be run from Driver Store. |
+| 10 | Firmware | Please see [Authoring an update driver package](../bringup/authoring-an-update-driver-package.md) for how to use DIRID 13 with a firmware update driver package to make it use run from Driver Store. |
+| 10 | | Please see [Other files](#other-files) for guidance. |
+| 11 | | Please see [Other files](#other-files) for guidance. |
+| 12 | UMDF | Please see [UMDF driver binary](#umdf-driver-binary) for guidance. |
+| 12 | | Most files with a destination of DIRID 12 represent driver service binaries. Please see [Service binary](#service-binary) for guidance. |
+| 16422, 16426, 16427, 16428 | | Most files with a destination of these DIRIDs represent installing an application. Instead, please provide a Universal Windows Platform application that is installed using an [AddSoftware directive](../install/inf-addsoftware-directive.md) from a [DDInstall.Software section](../install/inf-ddinstall-software-section.md) of the driver package INF. For more information, see [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md). |
+
 
 ### Service binary
 
