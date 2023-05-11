@@ -1,6 +1,6 @@
 ---
-title: WIA\_DPS\_SERVICE\_ID
-description: The WIA\_DPS\_SERVICE\_ID property contains the service ID of a web services scanner device. The WIA minidriver creates and maintains this property.
+title: WIA_DPS_SERVICE_ID
+description: The WIA_DPS_SERVICE_ID property contains the service ID of a web services scanner device. The WIA minidriver creates and maintains this property.
 keywords: ["WIA_DPS_SERVICE_ID Imaging Devices"]
 topic_type:
 - apiref
@@ -11,52 +11,29 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 05/04/2023
 ---
 
-# WIA\_DPS\_SERVICE\_ID
+# WIA_DPS_SERVICE_ID
 
+The WIA_DPS_SERVICE_ID property contains the service ID of a web services scanner device. The WIA minidriver creates and maintains this property.
 
-The WIA\_DPS\_SERVICE\_ID property contains the service ID of a web services scanner device. The WIA minidriver creates and maintains this property.
+Property Type: VT_BSTR
 
-Property Type: VT\_BSTR
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
 ## Remarks
 
-The WIA minidriver initializes this property at run time by reading the PKEY\_PNPX\_ServiceId device property from the Function Instance object.
+The WIA minidriver initializes this property at run time by reading the PKEY_PNPX_ServiceId device property from the Function Instance object.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
+[**WIA_DPS_DEVICE_ID**](wia-dps-device-id.md)
 
-[**WIA\_DPS\_DEVICE\_ID**](wia-dps-device-id.md)
-
-[**WIA\_DPS\_GLOBAL\_IDENTITY**](wia-dps-global-identity.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_DPS_GLOBAL_IDENTITY**](wia-dps-global-identity.md)

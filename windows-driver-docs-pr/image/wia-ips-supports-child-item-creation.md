@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION
-description: The WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION property indicates if a device supports the creation of child items.
+title: WIA_IPS_SUPPORTS_CHILD_ITEM_CREATION
+description: The WIA_IPS_SUPPORTS_CHILD_ITEM_CREATION property indicates if a device supports the creation of child items.
 keywords: ["WIA_IPS_SUPPORTS_CHILD_ITEM_CREATION Imaging Devices"]
 topic_type:
 - apiref
@@ -11,54 +11,27 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 05/08/2023
 ---
 
-# WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION
+# WIA_IPS_SUPPORTS_CHILD_ITEM_CREATION
 
+The WIA_IPS_SUPPORTS_CHILD_ITEM_CREATION property indicates if a device supports the creation of child items. The WIA minidriver creates and maintains this property
 
-The WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION property indicates if a device supports the creation of child items. The WIA minidriver creates and maintains this property
+Property Type: VT_I4
 
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
 ## Remarks
 
-Items that support the [**WIA\_IPS\_SEGMENTATION**](wia-ips-segmentation.md) property and the WIA\_USE\_SEGMENTATION\_FILTER value must also support the WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION property and have it set to **TRUE**.
+Items that support the [**WIA_IPS_SEGMENTATION**](wia-ips-segmentation.md) property and the WIA_USE_SEGMENTATION_FILTER value must also support the WIA_IPS_SUPPORTS_CHILD_ITEM_CREATION property and have it set to **TRUE**.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Available in Windows Vista and later operating systems.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
-
-[**WIA\_IPS\_SEGMENTATION**](wia-ips-segmentation.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_IPS_SEGMENTATION**](wia-ips-segmentation.md)

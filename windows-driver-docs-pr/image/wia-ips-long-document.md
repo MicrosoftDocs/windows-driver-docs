@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPS\_LONG\_DOCUMENT
-description: The WIA\_IPS\_LONG\_DOCUMENT property is used by the WIA minidriver to report whether long document scanning is supported and by the WIA client application to enable this feature. The WIA minidriver creates and maintains this property.
+title: WIA_IPS_LONG_DOCUMENT
+description: The WIA_IPS_LONG_DOCUMENT property is used by the WIA minidriver to report whether long document scanning is supported and by the WIA client application to enable this feature. The WIA minidriver creates and maintains this property.
 keywords: ["WIA_IPS_LONG_DOCUMENT Imaging Devices"]
 topic_type:
 - apiref
@@ -11,78 +11,31 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 05/05/2023
 ---
 
-# WIA\_IPS\_LONG\_DOCUMENT
+# WIA_IPS_LONG_DOCUMENT
 
+The **WIA_IPS_LONG_DOCUMENT** property is used by the WIA minidriver to report whether long document scanning is supported and by the WIA client application to enable this feature. The WIA minidriver creates and maintains this property.
 
-The **WIA\_IPS\_LONG\_DOCUMENT** property is used by the WIA minidriver to report whether long document scanning is supported and by the WIA client application to enable this feature. The WIA minidriver creates and maintains this property.
+Property Type: VT_I4
 
-
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_LIST
+Valid Values: WIA_PROP_LIST
 
 Access Rights: Read/Write
 
 ## Remarks
 
-The following table describes the valid values for the **WIA\_IPS\_LONG\_DOCUMENT** property.
+The following table describes the valid values for the **WIA_IPS_LONG_DOCUMENT** property.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>WIA_LONG_DOCUMENT_DISABLED</p></td>
-<td><p>Long document scanning is disabled. This is the required default value if the property is supported.</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_LONG_DOCUMENT_ENABLED</p></td>
-<td><p>The device scans long documents up to the device's maximum possible length. The <a href="wia-ips-page-size.md" data-raw-source="[&lt;strong&gt;WIA_IPS_PAGE_SIZE&lt;/strong&gt;](wia-ips-page-size.md)"><strong>WIA_IPS_PAGE_SIZE</strong></a> property must be set to WIA_PAGE_AUTO for this value to be accepted.</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_LONG_DOCUMENT_SPLIT</p></td>
-<td><p>Long documents are automatically split (and transferred as separate images) at current <a href="wia-ips-page-size.md" data-raw-source="[&lt;strong&gt;WIA_IPS_PAGE_SIZE&lt;/strong&gt;](wia-ips-page-size.md)"><strong>WIA_IPS_PAGE_SIZE</strong></a> length. The last scanned page can be shorter.</p></td>
-</tr>
-</tbody>
-</table>
+| Value | Definition |
+|--|--|
+| WIA_LONG_DOCUMENT_DISABLED | Long document scanning is disabled. This is the required default value if the property is supported. |
+| WIA_LONG_DOCUMENT_ENABLED | The device scans long documents up to the device's maximum possible length.[**WIA_IPS_PAGE_SIZE**](wia-ips-page-size.md) property must be set to WIA_PAGE_AUTO for this value to be accepted. |
+| WIA_LONG_DOCUMENT_SPLIT | Long documents are automatically split (and transferred as separate images) at current [**WIA_IPS_PAGE_SIZE**](wia-ips-page-size.md) length. The last scanned page can be shorter. |
 
- 
-
-This property is optional, and is valid only for the Feeder data source item (represented in the [**WIA\_IPA\_ITEM\_CATEGORY**](wia-ipa-item-category.md) property as WIA\_CATEGORY\_FEEDER).
+This property is optional, and is valid only for the Feeder data source item (represented in the [**WIA_IPA_ITEM_CATEGORY**](wia-ipa-item-category.md) property as WIA_CATEGORY_FEEDER).
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

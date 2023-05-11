@@ -1,207 +1,72 @@
 ---
-title: Mapping WIA Properties with the Same IDs but Different Names
-description: Mapping WIA Properties with the Same IDs but Different Names
-ms.date: 04/20/2017
+title: Mapping WIA properties with the same IDs but different names
+description: Mapping WIA properties with the same IDs but different names
+ms.date: 05/10/2023
 ---
 
-# Mapping WIA Properties with the Same IDs but Different Names
+# Mapping WIA properties with the same IDs but different names
 
+> [!IMPORTANT]
+> This article contains information that applies to obsolete Windows operating systems.
 
 There are Windows XP properties that have the same property IDs but different property names than their Windows Vista counterparts. The following is a table of these Windows XP root properties and the FLATBED and FEEDER (ADF) properties that they are translated to in Windows Vista.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Windows XP property</strong></p></td>
-<td><p><strong>Windows XP</strong></p>
-<p><strong>item / context</strong></p></td>
-<td><p><strong>Windows Vista property</strong></p></td>
-<td><p><strong>Windows Vista</strong> <strong>item</strong></p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_DPS_DOCUMENT_HANDLING_SELECT</p>
-<p>Read/Write access See note: d</p></td>
-<td><p>Root</p>
-<p>See note: c</p></td>
-<td><p>WIA_IPS_DOCUMENT_HANDLING_SELECT</p>
-<p>Read/Write access See note: d</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_DPS_SHEET_FEEDER_REGISTRATION</p>
-<p>Read-only access</p></td>
-<td><p>Root / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_SHEET_FEEDER_REGISTRATION</p>
-<p>Read-only access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_DPS_OPTICAL_XRES</p>
-<p>Read-only access</p></td>
-<td><p>Root / FLATBED</p>
-<p>See note: b</p></td>
-<td><p>WIA_IPS_OPTICAL_XRES</p>
-<p>Read-only access</p></td>
-<td><p>FLATBED</p>
-<p>See note: b</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_DPS_OPTICAL_XRES</p>
-<p>Read-only access</p></td>
-<td><p>Root / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_OPTICAL_XRES</p>
-<p>Read-only access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_DPS_OPTICAL_YRES</p>
-<p>Read-only access</p></td>
-<td><p>Root / FLATBED</p>
-<p>See note: b</p></td>
-<td><p>WIA_IPS_OPTICAL_YRES</p>
-<p>Read-only access</p></td>
-<td><p>FLATBED</p>
-<p>See note: b</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_DPS_OPTICAL_YRES</p>
-<p>Read-only access</p></td>
-<td><p>Root / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_OPTICAL_YRES</p>
-<p>Read-only access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_DPS_PAGES</p>
-<p>Read/Write access</p></td>
-<td><p>Root / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_PAGES</p>
-<p>Read/Write access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_DPS_PAGE_SIZE</p>
-<p>Read/Write access See note:e</p></td>
-<td><p>Root / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_PAGE_SIZE</p>
-<p>Read/Write access See note:e</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_DPS_PAGE_WIDTH</p>
-<p>Read-only access</p></td>
-<td><p>Root / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_PAGE_WIDTH</p>
-<p>Read-only access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_DPS_PAGE_HEIGHT</p>
-<p>Read-only access</p></td>
-<td><p>Root / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_PAGE_WIDTH</p>
-<p>Read-only access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_DPS_PREVIEW</p>
-<p>Read/Write access</p></td>
-<td><p>Root / FLATBED</p>
-<p>See note: b</p></td>
-<td><p>WIA_IPS_PREVIEW</p>
-<p>Read-only access</p></td>
-<td><p>FLATBED</p>
-<p>See note: b</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_DPS_PREVIEW</p>
-<p>Read/Write access</p></td>
-<td><p>Root / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_PREVIEW</p>
-<p>Read/Write access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_DPS_SHOW_PREVIEW_CONTROL</p>
-<p>Read-only access</p></td>
-<td><p>Root / FLATBED</p>
-<p>See note: c</p></td>
-<td><p>WIA_IPS_SHOW_PREVIEW_CONTROL</p>
-<p>Read-only access</p></td>
-<td><p>FLATBED</p>
-<p>See note: c</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_DPS_SHOW_PREVIEW_CONTROL</p>
-<p>Read-only access</p></td>
-<td><p>Root / FEEDER</p>
-<p>See note: a</p></td>
-<td><p>WIA_IPS_SHOW_PREVIEW_CONTROL</p>
-<p>Read-only access</p></td>
-<td><p>FEEDER</p>
-<p>See note: a</p></td>
-</tr>
-</tbody>
-</table>
+| Windows XP property | Windows XP item/context | Windows Vista property | Windows Vista item |
+|--|--|--|--|
+| WIA_DPS_DOCUMENT_HANDLING_SELECT | Root | WIA_IPS_DOCUMENT_HANDLING_SELECT | FEEDER |
+| Read/write access See note: d | See note: c | Read/write access See note: d | See note: a |
+| WIA_DPS_SHEET_FEEDER_REGISTRATION | Root / FEEDER | WIA_IPS_SHEET_FEEDER_REGISTRATION | FEEDER |
+| Read-only access | See note: a | Read-only access | See note: a |
+| WIA_DPS_OPTICAL_XRES | Root / FLATBED | WIA_IPS_OPTICAL_XRES | FLATBED |
+| Read-only access | See note: b | Read-only access | See note: b |
+| WIA_DPS_OPTICAL_XRES | Root / FEEDER | WIA_IPS_OPTICAL_XRES | FEEDER |
+| Read-only access | See note: a | Read-only access | See note: a |
+| WIA_DPS_OPTICAL_YRES | Root / FLATBED | WIA_IPS_OPTICAL_YRES | FLATBED |
+| Read-only access | See note: b | Read-only access | See note: b |
+| WIA_DPS_OPTICAL_YRES | Root / FEEDER | WIA_IPS_OPTICAL_YRES | FEEDER |
+| Read-only access | See note: a | Read-only access | See note: a |
+| WIA_DPS_PAGES | Root / FEEDER | WIA_IPS_PAGES | FEEDER |
+| Read/write access | See note: a | Read/write access | See note: a |
+| WIA_DPS_PAGE_SIZE | Root / FEEDER | WIA_IPS_PAGE_SIZE | FEEDER |
+| Read/write access, see note:e | See note: a | Read/write access, see note:e | See note: a |
+| WIA_DPS_PAGE_WIDTH | Root / FEEDER | WIA_IPS_PAGE_WIDTH | FEEDER |
+| Read/write access | See note: a | Read/write access | See note: a |
+| WIA_DPS_PAGE_HEIGHT | Root / FEEDER | WIA_IPS_PAGE_HEIGHT | FEEDER |
+| Read/write access | See note: a | Read/write access | See note: a |
+| WIA_DPS_PREVIEW | Root / FLATBED | WIA_IPS_PREVIEW | FLATBED |
+| Read/write access | See note: b | Read/write access | See note: b |
+| WIA_DPS_PREVIEW | Root / FEEDER | WIA_IPS_PREVIEW | FEEDER |
+| Read/write access | See note: a | Read/write access | See note: a |
+| WIA_DPS_SHOW_PREVIEW_CONTROL | Root / FLATBED | WIA_IPS_SHOW_PREVIEW_CONTROL | FLATBED |
+| Read/write access | See note: c | Read/write access | See note: c |
+| WIA_DPS_SHOW_PREVIEW_CONTROL | Root / FEEDER | WIA_IPS_SHOW_PREVIEW_CONTROL | FEEDER |
+| Read/write access | See note: a | Read/write access | See note: a |
 
- 
+**Note a:**
+FEEDER item (ADF) or FEEDER context on the Windows XP root or child item (WIA_DPS_DOCUMENT_HANDLING_SELECT is set to FEEDER)
 
-<a href="" id="note-a-"></a>Note a:  
-FEEDER item (ADF) or FEEDER context on the Windows XP root or child item (WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT is set to FEEDER)
+**Note b:**
+FLATBED item or FLATBED context on the Windows XP root or child item (WIA_DPS_DOCUMENT_HANDLING_SELECT is set to FLATBED)
 
-<a href="" id="note-b-"></a>Note b:  
-FLATBED item or FLATBED context on the Windows XP root or child item (WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT is set to FLATBED)
-
-<a href="" id="note-c-"></a>Note c:  
+**Note c:**
 Root item, no context specified for Windows XP
 
-<a href="" id="note-d-"></a>Note d:  
+**Note d:**
 For Windows XP to Windows Vista translation only:
 
-BACK\_FIRST
+BACK_FIRST
 
-BACK\_ONLY
+BACK_ONLY
 
 DUPLEX
 
-FRONT\_FIRST
+FRONT_FIRST
 
-FRONT\_ONLY
+FRONT_ONLY
 
-FRONT\_ONLY is the default if this property is not implemented.
+FRONT_ONLY is the default if this property is not implemented.
 
-Note e:
-Translate all values, not just the legacy ones (WIA\_PAGE\_CUSTOM, WIA\_PAGE\_A4, WIA\_PAGE\_LETTER)
+**Note e:**
+Translate all values, not just the legacy ones (WIA_PAGE_CUSTOM, WIA_PAGE_A4, WIA_PAGE_LETTER)
 
-Note that the Windows XP root item must be configured into the appropriate FLATBED/FEEDER context set (through WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT) before accessing context-dependent property (both for read and write access).
-
- 
-
- 
-
-
-
-
+The Windows XP root item must be configured into the appropriate FLATBED/FEEDER context set (through WIA_DPS_DOCUMENT_HANDLING_SELECT) before accessing context-dependent property (both for read and write access).
