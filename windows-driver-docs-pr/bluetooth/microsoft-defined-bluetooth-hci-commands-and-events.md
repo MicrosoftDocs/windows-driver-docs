@@ -99,11 +99,13 @@ The controller shall always complete this command promptly with a Command Comple
 | 0x00000000&nbsp;00000004 | Controller supports the RSSI Monitoring of LE legacy advertisements. |
 | 0x00000000&nbsp;00000008 | Controller supports Advertising Monitoring of LE legacy advertisements. |
 | 0x00000000&nbsp;00000010 | Controller supports verifying the validity of the public X and Y coordinates on the curve during the Secure Simple pairing process for P-192 and P-256. <br>For more information, see [Bluetooth Core Specification Erratum 10734](https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=447440). |
-| 0x00000000&nbsp;00000020 | Controller supports Continuous Advertising Monitoring of LE legacy advertisements performed concurrently with other radio activities. |
+| 0x00000000&nbsp;00000020 | Controller supports Continuous Advertising Monitoring of LE advertisements performed concurrently with other radio activities, using HCI_VS_MSFT_LE_Monitor_Advertisement [v1]. |
 | 0x00000000&nbsp;00000040 | Reserved. |
 | 0x00000000&nbsp;00000080 | Reserved. |
 | 0x00000000&nbsp;00000100 | Reserved. |
-| 0xFFFFFFFF&nbsp;FFFFFFF0 | Bits reserved for future definition. Must be zero. |
+| 0x00000000&nbsp;00000200 | Reserved. |
+| 0x00000000&nbsp;00000400 | Controller supports HCI_VS_MSFT_LE_Monitor_Advertisement [v2]. Additionally, the Controller supports Continuous Advertising Monitoring of LE advertisements performed concurrently with other radio activities, using HCI_VS_MSFT_LE_Monitor_Advertisement [v2]. |
+| 0xFFFFFFFF&nbsp;FFFFF800 | Bits reserved for future definition. Must be zero. |
 
 **Microsoft_event_prefix_length** (1 octet):
 
@@ -269,7 +271,8 @@ HCI_VS_MSFT_LE_Monitor_Advertisement requests that the controller starts monitor
 
 | Command | Code | Command parameters | Return parameters |
 |--|--|--|--|
-| HCI_VS_MSFT_LE_Monitor_Advertisement | Chosen base code | Subcommand_opcode,<br>RSSI_threshold_high,<br>RSSI_threshold_low,<br>RSSI_threshold_low_time_interval,<br>RSSI_sampling_period,<br>Condition_type,<br>\<Condition Parameters\> | Status,<br>Subcommand_opcodee,<br>Monitor_Handle |
+| HCI_VS_MSFT_LE_Monitor_Advertisement [v2] | Chosen base code | Subcommand_opcode_v2,<br>RSSI_threshold_high,<br>RSSI_threshold_low,<br>RSSI_threshold_low_time_interval,<br>RSSI_sampling_period,<br>Monitor_options,<br>Advertisement_report_filtering_options,<br>Peer_device_address,<br>Peer_device_address_type,<br>Peer_device_IRK,<br>Condition_type,<br>\<Condition Parameters\> | Status,<br>Subcommand_opcode,<br>Monitor_Handle |
+| HCI_VS_MSFT_LE_Monitor_Advertisement [v1] | Chosen base code | Subcommand_opcode_v1,<br>RSSI_threshold_high,<br>RSSI_threshold_low,<br>RSSI_threshold_low_time_interval,<br>RSSI_sampling_period,<br>Condition_type,<br>\<Condition Parameters\> | Status,<br>Subcommand_opcode,<br>Monitor_Handle |
 
 The controller shall generate a Command Complete event in response to this command. The status value should be set to zero if the controller can begin monitoring, or a nonzero status otherwise.
 If the controller doesn't support RSSI monitoring for LE Advertisements, it shall ignore the *RSSI_threshold_high*, *RSSI_threshold_low*, *RSSI_threshold_low_time_interval*, and *RSSI_sampling_period* parameter values.
@@ -282,7 +285,51 @@ The controller shall propagate the first advertisement packet to the host only w
 The controller shall stop monitoring for *Condition* if the RSSI of the received advertisements equals or falls below  *RSSI_threshold_low* over *RSSI_threshold_low_interval* for the particular device. The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with *Monitor_state* set to 0 to notify the host that the controller has stopped monitoring the particular device for the *Condition*. After the controller specifies the HCI_VS_MSFT_LE_Monitor_Device_Event with *Monitor_state* set to 0, the controller shall not allow further advertisement packets to flow to the host for the device until the controller has notified the host that the RSSI for the particular device has risen to or above *RSSI_threshold_high* for the particular device for the *Condition*.
 Additionally, the controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with *Monitor_state* set to 0 to notify the host that the controller has stopped monitoring the device for the *Condition* if the specified *RSSI_threshold_low_time_interval* expires without receiving any advertising packets from the device. If the controller is monitoring a device for a particular condition, the following statements are true.
 
+An advertising PDU shall be monitored if:
+
+**MatchesCondition** = (PDU Matches Condition Parameters)
+
+**IsAdvAMatch** = ((Monitor_options bit 0 is set) && ((AdvA == Peer_device_address) && (TxAdd == Peer_device_address_type))) ||
+    ((Monitor_options bit 1 is set) && (AdvA resolvable with Peer_device_IRK))
+
+**IsDirectedAdvAMatch** = (TargetA is permitted based on the Scanning Filter Policy) &&
+    (((Monitor_options bit 2 is set) && ((AdvA == Peer_device_address) && (TxAdd == Peer_device_address_type))) ||
+        ((Monitor_options bit 3 is set) && (AdvA resolvable with Peer_device_IRK)))
+
+**IsDirectedTargetAMatch** = (Monitor_options bit 4 is set) &&
+    (TargetA is permitted based on the Scanning Filter Policy)
+
+**ShouldMonitorPDU** = (**MatchesCondition** && **IsAdvAMatch**) ||
+    **IsDirectedAdvAMatch** ||
+    **IsDirectedTargetAMatch** ||
+    ((Monitor_options bit 5 is set) && **MatchesCondition**)
+
+And then, for a monitored advertising PDU, generate an Advertising Report if (note: doesn’t take into account sampling periods other than 0x00):
+
+**IsDuplicateFilterSatisfied** = (Advertisement_report_filter_options bit 0 is NOT set || PDU is not a duplicate)
+
+**ShouldGenerateLegacyReport** = (Advertisement_report_filter_options bit 1 is set) &&
+    (PDU is Legacy) &&
+    **ShouldMonitorPDU**
+
+**ShouldGenerateExtendedReport** = (Advertisement_report_filter_options bit 2 is set) &&
+    (PDU is Extended) &&
+    **ShouldMonitorPDU**
+
+**ShouldGenerateDirectedReport** = (Advertisement_report_filter_options bit 3 is set) &&
+    (PDU is Directed) &&
+    **ShouldMonitorPDU**
+
+**ShouldGenerateAdvReport** = **IsDuplicateFilterSatisfied** &&
+    (**ShouldGenerateLegacyReport** || **ShouldGenerateExtendedReport** || **ShouldGenerateDirectedReport**)
+
 If the controller supports the RSSI monitoring of LE extended advertisements without sampling, the controller shall propagate anonymous advertisement packets to the host if the RSSI value for the packet is greater than or equal to *RSSI_threshold_high*. Anonymous advertisements shall not be tracked and the [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] event shall not be generated.
+
+If the controller supports the RSSI monitoring of LE advertisements without sampling, the controller shall generate a truncated advertising report in the case where the received fragment(s) of the advertisement are matching, but where the entire advertisement was not received successfully.
+
+The Controller shall support a minimum of 30 simultaneous Monitor_handles, a minimum of 30 simultaneous tracked devices, and a minimum of 20 simultaneous tracked duplicate advertisements. The Controller shall also be capable of performing a continuous LE scan at 10% duty cycle.
+
+If Address Resolution is enabled in the Controller and the Host intends to monitor a remote device with its IRK successfully stored in the Controller’s resolving list, then the Host shall provide the Peer_Identity_Address and Peer_Identity_Address_Type parameters from the remote device’s resolving list entry as the Peer_device_address and Peer_device_address_type parameters, respectively.
 
 | *RSSI_sampling_period* | Legacy Advertisements | Extended Advertisements (Non-Anonymous) | Extended Advertisements (Anonymous) |
 |--|--|--|--|
@@ -320,7 +367,7 @@ If there are multiple patterns specified, the controller shall ensure that at le
 
 If the controller supports the RSSI monitoring of LE extended advertisements without sampling:
 
-- The controller shall only look for the pattern in the first extended advertisement PDU. If the ad section extends beyond the first PDU, the controller shall look for the pattern within the part of the ad section that is in the first PDU.
+- The controller shall look for the pattern in the first 251 octets of the Host Advertising Data and may look in any remaining octets of the Host Advertising Data. If the AD section extends beyond the first 251 octets of the Host Advertising Data, the controller shall look for the pattern within the part of the AD section that is in the first 251 octets of the Host Advertising Data and may look in any remaining octets of the Host Advertising Data. Note: based on fragmentation by the advertiser, the first 251 octets of the Host Advertising Data may extend across the AdvData of multiple advertising PDUs. Scanners should take care to limit the number of AuxPtrs that they follow, to avoid following excessively long chains of PDUs.
 
 - The controller shall track based on a per device address per advertising set basis. The controller shall propagate a [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] for each advertising set that matches the pattern even if the advertisement comes from the same device address.
 
@@ -328,7 +375,7 @@ If the *Condition_type* parameter specifies a UUID, the *Condition* parameter co
 
 If the controller supports the RSSI monitoring of LE extended advertisements without sampling:
 
-- The controller shall only look for the Service UUID in the first extended advertisement PDU. If the ad section extends beyond the first PDU, the controller shall look for the Service UUID within the part of the ad section that is in the first PDU.
+- The controller shall look for the Service UUID in the 251 octets of the Host Advertising Data and may look in any remaining octets of the Host Advertising Data. If the AD section extends beyond the first 251 octets of the Host Advertising Data, the controller shall look for the Service UUID within the part of the ad section that is in the first 251 octets of the Host Advertising Data and may look in any remaining octets of the Host Advertising Data. Note: based on fragmentation by the advertiser, the first 251 octets of the Host Advertising Data may span the AdvData of multiple advertising PDUs. Scanners should take care to limit the number of AuxPtrs that they follow, to avoid following excessively long chains of PDUs.
 
 - The controller shall track based on a per device address per advertising set basis. The controller shall propagate a [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] for each advertising set that matches the Service UUID even if the advertisement comes from the same device.
 
@@ -341,6 +388,14 @@ When active scanning is enabled, the scan response for an advertisement matching
 
 If the controller receives a HCI_VS_MSFT_LE_Monitor_Advertisement command when the filters are disabled (due to  a previously received [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable][ref_HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable] command with *Enable* set to 0x00), the controller shall accept the command if it can, but set it to a disabled state.
 The controller may also refuse the command for other reasons such as resource exhaustion.
+
+If all bits of Monitor_options are clear, the Controller should return the error code _Invalid HCI Command Parameters (0x12)_.
+
+If bit 1 or bit 3 of Monitor_options is set and Peer_device_IRK is set to an invalid IRK, or none of the bits of Monitor_options is set, the Controller should return the error code _Invalid HCI Command Parameters (0x12)_.
+
+If bit 0 or bit 1 or bit 2 or bit 3 of Monitor_options is set and Condition_type is set to 0x03 or 0x04 , then the Controller should return the error code _Invalid HCI Command Parameters (0x12)_.
+
+If bit 0 of Advertisement_report_filter_options is set and RSSI_sampling_period is any value other than 0x00, the Controller should return the error code _Invalid HCI Command Parameters (0x12)_.
 
 #### Command_parameters
 
