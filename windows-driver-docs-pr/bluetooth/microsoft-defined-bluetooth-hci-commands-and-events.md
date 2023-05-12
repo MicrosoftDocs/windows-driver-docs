@@ -99,12 +99,12 @@ The controller shall always complete this command promptly with a Command Comple
 | 0x00000000&nbsp;00000004 | Controller supports the RSSI Monitoring of LE legacy advertisements. |
 | 0x00000000&nbsp;00000008 | Controller supports Advertising Monitoring of LE legacy advertisements. |
 | 0x00000000&nbsp;00000010 | Controller supports verifying the validity of the public X and Y coordinates on the curve during the Secure Simple pairing process for P-192 and P-256. <br>For more information, see [Bluetooth Core Specification Erratum 10734](https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=447440). |
-| 0x00000000&nbsp;00000020 | Controller supports Continuous Advertising Monitoring of LE advertisements performed concurrently with other radio activities, using HCI_VS_MSFT_LE_Monitor_Advertisement [v1]. |
+| 0x00000000&nbsp;00000020 | Controller supports Continuous Advertising Monitoring of LE advertisements performed concurrently with other radio activities, using [HCI_VS_MSFT_LE_Monitor_Advertisement [v1]][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. |
 | 0x00000000&nbsp;00000040 | Reserved. |
 | 0x00000000&nbsp;00000080 | Reserved. |
 | 0x00000000&nbsp;00000100 | Reserved. |
 | 0x00000000&nbsp;00000200 | Reserved. |
-| 0x00000000&nbsp;00000400 | Controller supports HCI_VS_MSFT_LE_Monitor_Advertisement [v2]. Additionally, the Controller supports Continuous Advertising Monitoring of LE advertisements performed concurrently with other radio activities, using HCI_VS_MSFT_LE_Monitor_Advertisement [v2]. |
+| 0x00000000&nbsp;00000400 | Controller supports [HCI_VS_MSFT_LE_Monitor_Advertisement [v2]][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. Additionally, the Controller supports Continuous Advertising Monitoring of LE advertisements performed concurrently with other radio activities, using [HCI_VS_MSFT_LE_Monitor_Advertisement [v2]][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. |
 | 0xFFFFFFFF&nbsp;FFFFF800 | Bits reserved for future definition. Must be zero. |
 
 **Microsoft_event_prefix_length** (1 octet):
@@ -329,7 +329,7 @@ If the controller supports the RSSI monitoring of LE advertisements without samp
 
 The Controller shall support a minimum of 30 simultaneous Monitor_handles, a minimum of 30 simultaneous tracked devices, and a minimum of 20 simultaneous tracked duplicate advertisements. The Controller shall also be capable of performing a continuous LE scan at 10% duty cycle.
 
-If Address Resolution is enabled in the Controller and the Host intends to monitor a remote device with its IRK successfully stored in the Controller’s resolving list, then the Host shall provide the Peer_Identity_Address and Peer_Identity_Address_Type parameters from the remote device’s resolving list entry as the Peer_device_address and Peer_device_address_type parameters, respectively.
+If Address Resolution is enabled in the Controller and the Host intends to monitor a remote device with its IRK successfully stored in the Controller's resolving list, then the Host shall provide the Peer_Identity_Address and Peer_Identity_Address_Type parameters from the remote device’s resolving list entry as the Peer_device_address and Peer_device_address_type parameters, respectively.
 
 | *RSSI_sampling_period* | Legacy Advertisements | Extended Advertisements (Non-Anonymous) | Extended Advertisements (Anonymous) |
 |--|--|--|--|
@@ -375,7 +375,7 @@ If the *Condition_type* parameter specifies a UUID, the *Condition* parameter co
 
 If the controller supports the RSSI monitoring of LE extended advertisements without sampling:
 
-- The controller shall look for the Service UUID in the 251 octets of the Host Advertising Data and may look in any remaining octets of the Host Advertising Data. If the AD section extends beyond the first 251 octets of the Host Advertising Data, the controller shall look for the Service UUID within the part of the ad section that is in the first 251 octets of the Host Advertising Data and may look in any remaining octets of the Host Advertising Data. Note: based on fragmentation by the advertiser, the first 251 octets of the Host Advertising Data may span the AdvData of multiple advertising PDUs. Scanners should take care to limit the number of AuxPtrs that they follow, to avoid following excessively long chains of PDUs.
+- The controller shall look for the Service UUID in the first 251 octets of the Host Advertising Data and may look in any remaining octets of the Host Advertising Data. If the AD section extends beyond the first 251 octets of the Host Advertising Data, the controller shall look for the Service UUID within the part of the AD section that is in the first 251 octets of the Host Advertising Data and may look in any remaining octets of the Host Advertising Data. Note: based on fragmentation by the advertiser, the first 251 octets of the Host Advertising Data may span the AdvData of multiple advertising PDUs. Scanners should take care to limit the number of AuxPtrs that they follow, to avoid following excessively long chains of PDUs.
 
 - The controller shall track based on a per device address per advertising set basis. The controller shall propagate a [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] for each advertising set that matches the Service UUID even if the advertisement comes from the same device.
 
@@ -389,13 +389,13 @@ When active scanning is enabled, the scan response for an advertisement matching
 If the controller receives a HCI_VS_MSFT_LE_Monitor_Advertisement command when the filters are disabled (due to  a previously received [HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable][ref_HCI_VS_MSFT_LE_Set_Advertisement_Filter_Enable] command with *Enable* set to 0x00), the controller shall accept the command if it can, but set it to a disabled state.
 The controller may also refuse the command for other reasons such as resource exhaustion.
 
-If all bits of Monitor_options are clear, the Controller should return the error code _Invalid HCI Command Parameters (0x12)_.
+If all bits of Monitor_options are clear, the Controller should return the error code _Invalid HCI Command Parameters_ (0x12).
 
-If bit 1 or bit 3 of Monitor_options is set and Peer_device_IRK is set to an invalid IRK, or none of the bits of Monitor_options is set, the Controller should return the error code _Invalid HCI Command Parameters (0x12)_.
+If bit 1 or bit 3 of Monitor_options is set and Peer_device_IRK is set to an invalid IRK, or none of the bits of Monitor_options is set, the Controller should return the error code _Invalid HCI Command Parameters_ (0x12).
 
-If bit 0 or bit 1 or bit 2 or bit 3 of Monitor_options is set and Condition_type is set to 0x03 or 0x04 , then the Controller should return the error code _Invalid HCI Command Parameters (0x12)_.
+If bit 0 or bit 1 or bit 2 or bit 3 of Monitor_options is set and Condition_type is set to 0x03 or 0x04, then the Controller should return the error code _Invalid HCI Command Parameters_ (0x12).
 
-If bit 0 of Advertisement_report_filter_options is set and RSSI_sampling_period is any value other than 0x00, the Controller should return the error code _Invalid HCI Command Parameters (0x12)_.
+If bit 0 of Advertisement_report_filter_options is set and RSSI_sampling_period is any value other than 0x00, the Controller should return the error code _Invalid HCI Command Parameters_ (0x12).
 
 #### Missing parameters
 
@@ -405,7 +405,7 @@ When a version of this command is issued that does not include all the parameter
 |--|--|
 | Monitor_options | Bit 5 set; all other bits cleared |
 | Advertisement_report_filter_options | Bits 1 and 2 set; all other bits cleared |
-| Peer_device_IRK | 0x00000000000000000000000000000000 |
+| Peer_device_IRK | 0x0000000000000000&nbsp;0000000000000000 |
 | Peer_device_address | 0x000000000000 |
 | Peer_device_address_type | 0x00 |
 
@@ -487,8 +487,8 @@ Peer_device_address_type (1 octet):
 Peer_device_IRK (16 octets):
 | Value | Parameter description |
 |--|--|
-| 0x0000000000000000 0000000000000000 | Invalid IRK. Shall not be the value when Monitor_options bit 1 is set or when Monitor_options bit 3 is set. |
-| 0xXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX | IRK of the device to match. Peer_device_address and Peer_device_address_type shall be populated. |
+| 0x0000000000000000&nbsp;0000000000000000 | Invalid IRK. Shall not be the value when Monitor_options bit 1 is set or when Monitor_options bit 3 is set. |
+| 0xXXXXXXXXXXXXXXXX&nbsp;XXXXXXXXXXXXXXXX | IRK of the device to match. Peer_device_address and Peer_device_address_type shall be populated. |
 
 
 Condition_type (1 octet):
@@ -996,7 +996,7 @@ When the periodic timer expires at time 13, the average of the advertisement RSS
 
 When *RSSI_threshold_low_time_interval* expires at instant 15, an advertisement is propagated to the host with RSSI of -85dB. No further advertisements are sent to the host in this example.
 
-### Example: Tracking BAP Announcements from a device
+### Example: Monitoring BAP Announcements from a device
 
 While bonded with a CAP Acceptor, but not connected, a Host could monitor BAP Announcements from that device.
 
@@ -1016,7 +1016,7 @@ While bonded with a CAP Acceptor, but not connected, a Host could monitor BAP An
 | Number_of_patterns | 0x01 |
 | Pattern_data | 0x04 (length)<br>0x16 (Service Data – 16 bit UUID)<br>0x00 (Start byte)<br>0x4E (low byte of ASCS UUID)<br>0x18 (high byte of ASCS UUID) |
 
-### Example: Tracking CAP Announcements from a device
+### Example: Monitoring CAP Announcements from a device
 
 While bonded with a CAP Commander, but not connected, a Host could monitor CAP Announcements from that device.
 
