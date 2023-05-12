@@ -11,7 +11,7 @@ ms.date: 05/12/2023
 
 
 
-*Queued spin locks* are a variant of spin locks that are a better choice for highly contended locks.  Unqueued spinlocks are a better choice for lightly contended locks.
+*Queued spin locks* are a variant of spin locks that work well for highly contended locks.  Unqueued spinlocks are a better choice for lightly contended locks.
 
 The driver supplies storage for the spin lock, and initializes it with [**KeInitializeSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializespinlock). The driver uses [**KeAcquireInStackQueuedSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquireinstackqueuedspinlock) to acquire the queued spin lock, and [**KeReleaseInStackQueuedSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleaseinstackqueuedspinlock) to release it.
 
