@@ -397,13 +397,31 @@ If bit 0 or bit 1 or bit 2 or bit 3 of Monitor_options is set and Condition_type
 
 If bit 0 of Advertisement_report_filter_options is set and RSSI_sampling_period is any value other than 0x00, the Controller should return the error code _Invalid HCI Command Parameters (0x12)_.
 
+#### Missing parameters
+
+When a version of this command is issued that does not include all the parameters, the following shall be used:
+
+| Parameter | Value |
+|--|--|
+| Monitor_options | Bit 5 set; all other bits cleared |
+| Advertisement_report_filter_options | Bits 1 and 2 set; all other bits cleared |
+| Peer_device_IRK | 0x00000000000000000000000000000000 |
+| Peer_device_address | 0x000000000000 |
+| Peer_device_address_type | 0x00 |
+
 #### Command_parameters
 
-Subcommand_opcode (1 octet):
+Subcommand_opcode_v1 (1 octet):
 
 | Value | Parameter description |
 |--|--|
-| 0x03 | The subcommand opcode for [HCI_VS_MSFT_LE_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. |
+| 0x03 | The subcommand opcode for [HCI_VS_MSFT_LE_Monitor_Advertisement [v1]][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. |
+
+Subcommand_opcode_v2 (1 octet):
+
+| Value | Parameter description |
+|--|--|
+| 0x0F | The subcommand opcode for [HCI_VS_MSFT_LE_Monitor_Advertisement [v2]][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. |
 
 RSSI_threshold_high (1 octet):
 
@@ -432,14 +450,55 @@ RSSI_sampling_period (1 octet):
 | *N*&nbsp;=&nbsp;0xXX | The sampling interval in milliseconds.<br>Time period = *N* * 100 milliseconds.<br>Mandatory Range: 0x01&nbsp;to&nbsp;0xFE |
 | 0xFF | The controller shall not propagate any of the received advertisements to the host. |
 
+Monitor_options (1 octet):
+
+| Bit number | Parameter description |
+|--|--|
+| 0 | The Controller shall monitor advertising PDUs where AdvA or its resolved Identity Address matches Peer_device_address and Peer_device_address_type and where TargetA is not present or, if it is present, the TargetA is permitted based on the Scanning Filter Policy, if those PDUs match the condition specified in Condition_Type. |
+| 1 | The Controller shall monitor advertising PDUs where AdvA is resolvable with Peer_device_IRK and where TargetA is not present or, if it is present, the TargetA is permitted based on the Scanning Filter Policy, if those PDUs match the condition specified in Condition_Type. This bit shall not be set if Link Layer Privacy is in use in the Controller. |
+| 2 | The Controller shall monitor directed advertising PDUs where the TargetA is permitted based on the Scanning Filter Policy and where AdvA or its resolved Identity Address matches Peer_device_address and Peer_device_address_type. This is regardless of whether the PDU matches the condition specified in Condition_Type. |
+| 3 | The Controller shall monitor directed advertising PDUs where the TargetA is permitted based on the Scanning Filter Policy and where AdvA is resolvable with Peer_device_IRK. This is regardless of whether the PDU matches the condition specified in Condition_Type. This bit shall not be set if Link Layer Privacy is in use in the Controller. |
+| 4 | The Controller shall monitor directed advertising PDUs where the TargetA is permitted based on the Scanning Filter Policy, regardless of the value of Peer_device_address and Peer_device_address_type or  Peer_device_IRK and regardless of whether the PDU matches the condition specified in Condition_Type. |
+| 5 | The Controller shall monitor advertising PDUs from any AdvA where TargetA is not present or, if it is present, the TargetA is permitted based on the Scanning Filter Policy, if those PDUs match the condition specified in Condition_Type. |
+| All other bits | Reserved for future use |
+
+Advertisement_report_filtering_options (1 octet):
+
+| Bit number | Parameter description |
+|--|--|
+| 0 | Filter duplicate advertising PDUs. This bit shall only be set if RSSI_sampling_period is 0x00. |
+| 1 | The Controller shall generate HCI_LE_Advertising_Report events or HCI_LE_Directed_Advertising_Report events or HCI_LE_Extended_Advertising_Report events for Legacy advertising PDUs, if those PDUs match the specified Monitor_options. |
+| 2 | The Controller shall generate HCI_LE_Extended_Advertising_Report events for Extended advertising PDUs, if those PDUs match the specified Monitor_options. |
+| 3 | The Controller shall generate HCI_LE_Advertising_Report events or HCI_LE_Directed_Advertising_Report events or HCI_LE_Extended_Advertising_Report events for directed advertising PDUs, if those PDUs match the specified Monitor_options. |
+| All other bits | Reserved for future use |
+
+Peer_device_address (6 octets):
+| Value | Parameter description |
+|--|--|
+| 0xXXXXXXXXXXXX | Public Device Address or Random Device Address to match. |
+
+Peer_device_address_type (1 octet):
+| Value | Parameter description |
+|--|--|
+| 0x00 | Public Device Address |
+| 0x01 | Random Device Address |
+| All other values | Reserved for future use |
+
+Peer_device_IRK (16 octets):
+| Value | Parameter description |
+|--|--|
+| 0x0000000000000000 0000000000000000 | Invalid IRK. Shall not be the value when Monitor_options bit 1 is set or when Monitor_options bit 3 is set. |
+| 0xXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXX | IRK of the device to match. Peer_device_address and Peer_device_address_type shall be populated. |
+
+
 Condition_type (1 octet):
 
 | Value | Parameter description |
 |--|--|
 | 0x01 | The condition is a pattern that has to be matched on the advertisement. |
 | 0x02 | The condition is a UUID Type and a UUID. |
-| 0x03 | The condition is the resolution of an IRK. |
-| 0x04 | The condition is a Bluetooth address Type and a Bluetooth address. |
+| 0x03 | The condition is the resolution of an IRK.  Excluded if any of Monitor_options bits 0, 1, 2, or 3 are set. |
+| 0x04 | The condition is a Bluetooth address Type and a Bluetooth address. Excluded if any of Monitor_options bits 0, 1, 2, or 3 are set. |
 
 Condition:
 The applicable fields for Condition depend on the value of Condition_type. See the Condition_type and Condition parameters section for more information.
@@ -507,7 +566,7 @@ Subcommand_opcode (1 octet):
 
 | Value | Parameter description |
 |--|--|
-| 0x03 | The subcommand opcode for [HCI_VS_MSFT_LE_Monitor_Advertisement][ref_HCI_VS_MSFT_LE_Monitor_Advertisement]. |
+| 0x03 or 0x0F | The subcommand opcode for [HCI_VS_MSFT_LE_Monitor_Advertisement [v1]][ref_HCI_VS_MSFT_LE_Monitor_Advertisement] or [HCI_VS_MSFT_LE_Monitor_Advertisement [v2]][ref_HCI_VS_MSFT_LE_Monitor_Advertisement], depending on which command was submitted. |
 
 Monitor_handle (1 octet):
 
@@ -866,7 +925,7 @@ Verdict: **PASS** (both patterns match)
 
 Verdict: **PASS** (only first pattern matches)
 
-### Evaluating match for Advertisement packet [C]
+#### Evaluating match for Advertisement packet [C]
 
 | Description | Value |
 |--|--|
@@ -881,7 +940,7 @@ Verdict: **PASS** (only first pattern matches)
 
 Verdict: **PASS** (only second pattern matches)
 
-### Evaluating match for Advertisement packet [D]
+#### Evaluating match for Advertisement packet [D]
 
 | Description | Value |
 |--|--|
@@ -936,6 +995,46 @@ When the periodic timer expires at time 5, the average of the advertisement RSSI
 When the periodic timer expires at time 13, the average of the advertisement RSSIs received during this timeframe is below *RSSI_threshold_low* (-80dB). The average of the advertisement RSSI (-85 dB) should be propagated to the host.
 
 When *RSSI_threshold_low_time_interval* expires at instant 15, an advertisement is propagated to the host with RSSI of -85dB. No further advertisements are sent to the host in this example.
+
+### Example: Tracking BAP Announcements from a device
+
+While bonded with a CAP Acceptor, but not connected, a Host could monitor BAP Announcements from that device.
+
+| Parameter | Value |
+|--|--|
+| Subcommand_opcode_v2 | 0x0F |
+| RSSI_threshold_high | -127 |
+| RSSI_threshold_low | -127 |
+| RSSI_threshold_low_time_interval | 0x05 |
+| RSSI_sampling_period | 0x00 |
+| Monitor_options | Bit 0 set; Bit 1 set if the device distributed an IRK |
+| Advertisement_report_filtering_options | Bit 0, 1, and 2 set |
+| Peer_device_address | \<address\> |
+| Peer_device_address_type | \<address type\> |
+| Peer_device_IRK | \<IRK, if bit 1 is set\> |
+| Condition_type | 0x01 |
+| Number_of_patterns | 0x01 |
+| Pattern_data | 0x04 (length)<br>0x16 (Service Data – 16 bit UUID)<br>0x00 (Start byte)<br>0x4E (low byte of ASCS UUID)<br>0x18 (high byte of ASCS UUID) |
+
+### Example: Tracking CAP Announcements from a device
+
+While bonded with a CAP Commander, but not connected, a Host could monitor CAP Announcements from that device.
+
+| Parameter | Value |
+|--|--|
+| Subcommand_opcode_v2 | 0x0F |
+| RSSI_threshold_high | -127 |
+| RSSI_threshold_low | -127 |
+| RSSI_threshold_low_time_interval | 0x05 |
+| RSSI_sampling_period | 0x00 |
+| Monitor_options | Bit 0 set; Bit 1 set if the device distributed an IRK |
+| Advertisement_report_filtering_options | Bit 0, 1, and 2 set |
+| Peer_device_address | \<address\> |
+| Peer_device_address_type | \<address type\> |
+| Peer_device_IRK | \<IRK, if bit 1 is set\> |
+| Condition_type | 0x01 |
+| Number_of_patterns | 0x01 |
+| Pattern_data | 0x04 (length)<br>0x16 (Service Data – 16 bit UUID)<br>0x00 (Start byte)<br>0x53 (low byte of CAS UUID)<br>0x18 (high byte of CAS UUID) |
 
 ### Flowchart: Advertisement and filter accept list filtering
 
