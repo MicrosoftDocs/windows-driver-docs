@@ -269,6 +269,8 @@ HCI_VS_MSFT_LE_Monitor_Advertisement requests that the controller starts monitor
 - A specified Identity Resolution Key (IRK) can be used to resolve the private address of the device from which the advertisement packet originated.
 - A specified Bluetooth Address can be matched to the received advertisement packet.
 
+The v2 command permits the Host to combine some of the above conditions with options governing the source of the advertisement and the target of a directed advertisement, to further refine which advertisements are monitored. The v2 command also permits the Host to filter which monitored advertisements cause the Controller to generate advertisement reports.
+
 | Command | Code | Command parameters | Return parameters |
 |--|--|--|--|
 | HCI_VS_MSFT_LE_Monitor_Advertisement [v2] | Chosen base code | Subcommand_opcode_v2,<br>RSSI_threshold_high,<br>RSSI_threshold_low,<br>RSSI_threshold_low_time_interval,<br>RSSI_sampling_period,<br>Monitor_options,<br>Advertisement_report_filtering_options,<br>Peer_device_address,<br>Peer_device_address_type,<br>Peer_device_IRK,<br>Condition_type,<br>\<Condition Parameters\> | Status,<br>Subcommand_opcode,<br>Monitor_Handle |
@@ -279,49 +281,51 @@ If the controller doesn't support RSSI monitoring for LE Advertisements, it shal
 
 This state diagram shows the transition states on the controller when monitoring RSSI for an advertisement.
 
-:::image type="content" source="images/HCI_VS_MSFT_LE_Monitor_Advertisement_State_Diagram.png" alt-text="State diagram for HCI_VS_MSFT_LE_Monitor_Advertisement.":::
+:::image type="content" source="images/HCI_VS_MSFT_LE_Monitor_Advertisement_State_Diagram.svg" alt-text="State diagram for HCI_VS_MSFT_LE_Monitor_Advertisement.":::
 
-The controller shall propagate the first advertisement packet to the host only when the received RSSI is greater than or equal to *RSSI_threshold_high* for a particular device. The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with *Monitor_state* set to 1 and *Monitor_handle* set to the handle for this *Condition*, to notify the host that the controller is monitoring this particular device for *Condition*.
+The controller shall begin monitoring an advertisement only when the received RSSI is greater than or equal to *RSSI_threshold_high* for a particular device and the *Monitor_options* match (see below).  The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with *Monitor_state* set to 1 and *Monitor_handle* set to the handle for this *Condition*, to notify the host that the controller is monitoring this particular device for *Condition*. Additionally, the Controller shall propagate the first advertisement report of a monitored advertisement to the Host only when the *Advertisement_report_filter_options* match (see below).
+
+The *Monitor_options* for a filter are considered a match based on the following logic:
+
+    MatchesCondition = (PDU Matches Condition Parameters)
+
+    IsAdvAMatch = ((_Monitor_options_ bit 0 is set) && ((AdvA == _Peer_device_address_) && (TxAdd == _Peer_device_address_type_))) ||
+        ((_Monitor_options_ bit 1 is set) && (AdvA resolvable with _Peer_device_IRK_))
+
+    IsDirectedAdvAMatch = (TargetA is permitted based on the Scanning Filter Policy) &&
+        (((Monitor_options bit 2 is set) && ((AdvA == Peer_device_address) && (TxAdd == Peer_device_address_type))) ||
+            ((Monitor_options bit 3 is set) && (AdvA resolvable with Peer_device_IRK)))
+
+    IsDirectedTargetAMatch = (Monitor_options bit 4 is set) &&
+        (TargetA is permitted based on the Scanning Filter Policy)
+
+    MonitorOptionsMatch = (MatchesCondition && IsAdvAMatch) ||
+        IsDirectedAdvAMatch ||
+        IsDirectedTargetAMatch ||
+        ((Monitor_options bit 5 is set) && MatchesCondition)
+
+And for a monitored advertisement, the *Advertisement_report_filter_options* are considered a match based on the following logic:
+
+    IsDuplicateFilterSatisfied = (Advertisement_report_filter_options bit 0 is NOT set || PDU is not a duplicate)
+
+    ShouldGenerateLegacyReport = (Advertisement_report_filter_options bit 1 is set) &&
+        (PDU is Legacy) &&
+        MonitorOptionsMatch
+
+    ShouldGenerateExtendedReport = (Advertisement_report_filter_options bit 2 is set) &&
+        (PDU is Extended) &&
+        MonitorOptionsMatch
+
+    ShouldGenerateDirectedReport = (Advertisement_report_filter_options bit 3 is set) &&
+        (PDU is Directed) &&
+        MonitorOptionsMatch
+
+    AdvertisementReportFilterOptionsMatch = IsDuplicateFilterSatisfied &&
+        (ShouldGenerateLegacyReport || ShouldGenerateExtendedReport || ShouldGenerateDirectedReport)
+
 The controller shall stop monitoring for *Condition* if the RSSI of the received advertisements equals or falls below  *RSSI_threshold_low* over *RSSI_threshold_low_interval* for the particular device. The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with *Monitor_state* set to 0 to notify the host that the controller has stopped monitoring the particular device for the *Condition*. After the controller specifies the HCI_VS_MSFT_LE_Monitor_Device_Event with *Monitor_state* set to 0, the controller shall not allow further advertisement packets to flow to the host for the device until the controller has notified the host that the RSSI for the particular device has risen to or above *RSSI_threshold_high* for the particular device for the *Condition*.
+
 Additionally, the controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with *Monitor_state* set to 0 to notify the host that the controller has stopped monitoring the device for the *Condition* if the specified *RSSI_threshold_low_time_interval* expires without receiving any advertising packets from the device. If the controller is monitoring a device for a particular condition, the following statements are true.
-
-An advertising PDU shall be monitored if:
-
-**MatchesCondition** = (PDU Matches Condition Parameters)
-
-**IsAdvAMatch** = ((Monitor_options bit 0 is set) && ((AdvA == Peer_device_address) && (TxAdd == Peer_device_address_type))) ||
-    ((Monitor_options bit 1 is set) && (AdvA resolvable with Peer_device_IRK))
-
-**IsDirectedAdvAMatch** = (TargetA is permitted based on the Scanning Filter Policy) &&
-    (((Monitor_options bit 2 is set) && ((AdvA == Peer_device_address) && (TxAdd == Peer_device_address_type))) ||
-        ((Monitor_options bit 3 is set) && (AdvA resolvable with Peer_device_IRK)))
-
-**IsDirectedTargetAMatch** = (Monitor_options bit 4 is set) &&
-    (TargetA is permitted based on the Scanning Filter Policy)
-
-**ShouldMonitorPDU** = (**MatchesCondition** && **IsAdvAMatch**) ||
-    **IsDirectedAdvAMatch** ||
-    **IsDirectedTargetAMatch** ||
-    ((Monitor_options bit 5 is set) && **MatchesCondition**)
-
-And then, for a monitored advertising PDU, generate an Advertising Report if (note: doesn’t take into account sampling periods other than 0x00):
-
-**IsDuplicateFilterSatisfied** = (Advertisement_report_filter_options bit 0 is NOT set || PDU is not a duplicate)
-
-**ShouldGenerateLegacyReport** = (Advertisement_report_filter_options bit 1 is set) &&
-    (PDU is Legacy) &&
-    **ShouldMonitorPDU**
-
-**ShouldGenerateExtendedReport** = (Advertisement_report_filter_options bit 2 is set) &&
-    (PDU is Extended) &&
-    **ShouldMonitorPDU**
-
-**ShouldGenerateDirectedReport** = (Advertisement_report_filter_options bit 3 is set) &&
-    (PDU is Directed) &&
-    **ShouldMonitorPDU**
-
-**ShouldGenerateAdvReport** = **IsDuplicateFilterSatisfied** &&
-    (**ShouldGenerateLegacyReport** || **ShouldGenerateExtendedReport** || **ShouldGenerateDirectedReport**)
 
 If the controller supports the RSSI monitoring of LE extended advertisements without sampling, the controller shall propagate anonymous advertisement packets to the host if the RSSI value for the packet is greater than or equal to *RSSI_threshold_high*. Anonymous advertisements shall not be tracked and the [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] event shall not be generated.
 
