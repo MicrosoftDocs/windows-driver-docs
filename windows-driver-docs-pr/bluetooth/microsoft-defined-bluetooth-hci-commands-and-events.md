@@ -285,13 +285,13 @@ This state diagram shows the transition states on the controller when monitoring
 
 The controller shall begin monitoring an advertisement only when the received RSSI is greater than or equal to *RSSI_threshold_high* for a particular device and the *Monitor_options* match (see below).  The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with *Monitor_state* set to 1 and *Monitor_handle* set to the handle for this *Condition*, to notify the host that the controller is monitoring this particular device for *Condition*. Additionally, the Controller shall propagate the first advertisement report of a monitored advertisement to the Host only when the *Advertisement_report_filter_options* match (see below).
 
-The *Monitor_options* for a filter are considered a match based on the following logic:
+The *Monitor_options* for a filter are considered a match based on the following logic (in pseudocode):
 
 ```
 MatchesCondition = (PDU Matches Condition Parameters)
 
-IsAdvAMatch = ((_Monitor_options_ bit 0 is set) && ((AdvA == _Peer_device_address_) && (TxAdd == _Peer_device_address_type_))) ||
-    ((_Monitor_options_ bit 1 is set) && (AdvA resolvable with _Peer_device_IRK_))
+IsAdvAMatch = ((Monitor_options bit 0 is set) && ((AdvA == Peer_device_address) && (TxAdd == Peer_device_address_type))) ||
+    ((Monitor_options bit 1 is set) && (AdvA resolvable with Peer_device_IRK))
 
 IsDirectedAdvAMatch = (TargetA is permitted based on the Scanning Filter Policy) &&
     (((Monitor_options bit 2 is set) && ((AdvA == Peer_device_address) && (TxAdd == Peer_device_address_type))) ||
@@ -306,7 +306,7 @@ MonitorOptionsMatch = (MatchesCondition && IsAdvAMatch) ||
     ((Monitor_options bit 5 is set) && MatchesCondition)
 ```
 
-And for a monitored advertisement, the *Advertisement_report_filter_options* are considered a match based on the following logic:
+And for a monitored advertisement, the *Advertisement_report_filter_options* are considered a match based on the following logic (in pseudocode):
 
 ```
 IsDuplicateFilterSatisfied = (Advertisement_report_filter_options bit 0 is NOT set || PDU is not a duplicate)
