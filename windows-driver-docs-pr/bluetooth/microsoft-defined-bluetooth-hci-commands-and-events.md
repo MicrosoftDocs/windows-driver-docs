@@ -287,41 +287,45 @@ The controller shall begin monitoring an advertisement only when the received RS
 
 The *Monitor_options* for a filter are considered a match based on the following logic:
 
-    MatchesCondition = (PDU Matches Condition Parameters)
+```
+MatchesCondition = (PDU Matches Condition Parameters)
 
-    IsAdvAMatch = ((_Monitor_options_ bit 0 is set) && ((AdvA == _Peer_device_address_) && (TxAdd == _Peer_device_address_type_))) ||
-        ((_Monitor_options_ bit 1 is set) && (AdvA resolvable with _Peer_device_IRK_))
+IsAdvAMatch = ((_Monitor_options_ bit 0 is set) && ((AdvA == _Peer_device_address_) && (TxAdd == _Peer_device_address_type_))) ||
+    ((_Monitor_options_ bit 1 is set) && (AdvA resolvable with _Peer_device_IRK_))
 
-    IsDirectedAdvAMatch = (TargetA is permitted based on the Scanning Filter Policy) &&
-        (((Monitor_options bit 2 is set) && ((AdvA == Peer_device_address) && (TxAdd == Peer_device_address_type))) ||
-            ((Monitor_options bit 3 is set) && (AdvA resolvable with Peer_device_IRK)))
+IsDirectedAdvAMatch = (TargetA is permitted based on the Scanning Filter Policy) &&
+    (((Monitor_options bit 2 is set) && ((AdvA == Peer_device_address) && (TxAdd == Peer_device_address_type))) ||
+        ((Monitor_options bit 3 is set) && (AdvA resolvable with Peer_device_IRK)))
 
-    IsDirectedTargetAMatch = (Monitor_options bit 4 is set) &&
-        (TargetA is permitted based on the Scanning Filter Policy)
+IsDirectedTargetAMatch = (Monitor_options bit 4 is set) &&
+    (TargetA is permitted based on the Scanning Filter Policy)
 
-    MonitorOptionsMatch = (MatchesCondition && IsAdvAMatch) ||
-        IsDirectedAdvAMatch ||
-        IsDirectedTargetAMatch ||
-        ((Monitor_options bit 5 is set) && MatchesCondition)
+MonitorOptionsMatch = (MatchesCondition && IsAdvAMatch) ||
+    IsDirectedAdvAMatch ||
+    IsDirectedTargetAMatch ||
+    ((Monitor_options bit 5 is set) && MatchesCondition)
+```
 
 And for a monitored advertisement, the *Advertisement_report_filter_options* are considered a match based on the following logic:
 
-    IsDuplicateFilterSatisfied = (Advertisement_report_filter_options bit 0 is NOT set || PDU is not a duplicate)
+```
+IsDuplicateFilterSatisfied = (Advertisement_report_filter_options bit 0 is NOT set || PDU is not a duplicate)
 
-    ShouldGenerateLegacyReport = (Advertisement_report_filter_options bit 1 is set) &&
-        (PDU is Legacy) &&
-        MonitorOptionsMatch
+ShouldGenerateLegacyReport = (Advertisement_report_filter_options bit 1 is set) &&
+    (PDU is Legacy) &&
+    MonitorOptionsMatch
 
-    ShouldGenerateExtendedReport = (Advertisement_report_filter_options bit 2 is set) &&
-        (PDU is Extended) &&
-        MonitorOptionsMatch
+ShouldGenerateExtendedReport = (Advertisement_report_filter_options bit 2 is set) &&
+    (PDU is Extended) &&
+    MonitorOptionsMatch
 
-    ShouldGenerateDirectedReport = (Advertisement_report_filter_options bit 3 is set) &&
-        (PDU is Directed) &&
-        MonitorOptionsMatch
+ShouldGenerateDirectedReport = (Advertisement_report_filter_options bit 3 is set) &&
+    (PDU is Directed) &&
+    MonitorOptionsMatch
 
-    AdvertisementReportFilterOptionsMatch = IsDuplicateFilterSatisfied &&
-        (ShouldGenerateLegacyReport || ShouldGenerateExtendedReport || ShouldGenerateDirectedReport)
+AdvertisementReportFilterOptionsMatch = IsDuplicateFilterSatisfied &&
+    (ShouldGenerateLegacyReport || ShouldGenerateExtendedReport || ShouldGenerateDirectedReport)
+```
 
 The controller shall stop monitoring for *Condition* if the RSSI of the received advertisements equals or falls below  *RSSI_threshold_low* over *RSSI_threshold_low_interval* for the particular device. The controller shall generate an [HCI_VS_MSFT_LE_Monitor_Device_Event][ref_HCI_VS_MSFT_LE_Monitor_Device_Event] with *Monitor_state* set to 0 to notify the host that the controller has stopped monitoring the particular device for the *Condition*. After the controller specifies the HCI_VS_MSFT_LE_Monitor_Device_Event with *Monitor_state* set to 0, the controller shall not allow further advertisement packets to flow to the host for the device until the controller has notified the host that the RSSI for the particular device has risen to or above *RSSI_threshold_high* for the particular device for the *Condition*.
 
@@ -477,11 +481,13 @@ Advertisement_report_filtering_options (1 octet):
 | All other bits | Reserved for future use |
 
 Peer_device_address (6 octets):
+
 | Value | Parameter description |
 |--|--|
 | 0xXXXXXXXXXXXX | Public Device Address or Random Device Address to match. |
 
 Peer_device_address_type (1 octet):
+
 | Value | Parameter description |
 |--|--|
 | 0x00 | Public Device Address |
@@ -489,6 +495,7 @@ Peer_device_address_type (1 octet):
 | All other values | Reserved for future use |
 
 Peer_device_IRK (16 octets):
+
 | Value | Parameter description |
 |--|--|
 | 0x0000000000000000&nbsp;0000000000000000 | Invalid IRK. Shall not be the value when Monitor_options bit 1 is set or when Monitor_options bit 3 is set. |
