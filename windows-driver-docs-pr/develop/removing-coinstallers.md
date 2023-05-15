@@ -1,7 +1,7 @@
 ---
 title: Removing Co-installers from Driver Packages
 description: This page addresses common reasons for co-installers to be present in a driver package, and mechanisms to perform the same task without a co-installer.
-ms.date: 05/07/2023
+ms.date: 05/15/2023
 ---
 
 # Removing Co-installers from Driver Packages
@@ -72,7 +72,7 @@ To the extent possible, inter-device dependencies or start ordering requirements
 
 For ACPI-enumerated devices, the dependency object (_DEP) may be used in the ACPI firmware to enforce device start ordering. For more info, see [Device Management Namespace](../bringup/device-management-namespace-objects.md).
 
-Drivers can respond to the IRP_MN_QUERY_DEVICE_RELATIONS IRP to define relationships between devices, such as removal relations. For more info, see [IRP_MN_QUERY_DEVICE_RELATIONS](/windows-hardware/drivers/kernel/irp-mn-query-device-relations.md).
+Drivers can respond to the IRP_MN_QUERY_DEVICE_RELATIONS IRP to define relationships between devices, such as removal relations. For more info, see [IRP_MN_QUERY_DEVICE_RELATIONS](/windows-hardware/drivers/kernel/irp-mn-query-device-relations).
 
 ### Driver package install dependencies
 
