@@ -125,9 +125,9 @@ The following table provides a quick reference for finding the appropriate guida
 
 | DIRID | Subdirectory | Details |
 | -- | -- | -- |
-| 13 | | The file is already using `run from Driver Store`. No further work is needed. |
-|  1 | | DIRID 1 shouldn't be used. There's no guarantee that the source directory will be available when a reference to the file needs to be resolved. Instead, if components in the driver package depend on specific files, include those files in the driver package and run them from Driver Store. |
-| 10 | Firmware | For info on how to use DIRID 13 with a firmware update driver package to make it use `run from Driver Store`, see [Authoring an update driver package](../bringup/authoring-an-update-driver-package.md) for.|
+| 13 | | The file is already using 'run from Driver Store'. No further work is needed. |
+|  1 | | DIRID 1 shouldn't be used. There's no guarantee that the source directory will be available when a reference to the file needs to be resolved. Instead, if components in the driver package depend on specific files, include those files in the driver package and run them from the Driver Store. |
+| 10 | Firmware | For info on how to use DIRID 13 with a firmware update driver package to make it use 'run from Driver Store', see [Authoring an update driver package](../bringup/authoring-an-update-driver-package.md) for.|
 | 10 | | See [Other files](#other-files). |
 | 11 | | See [Other files](#other-files). |
 | 12 | UMDF | See [UMDF driver binary](#umdf-driver-binary).|
