@@ -121,18 +121,18 @@ If you have an existing driver package with an INF that does not use run from Dr
 
 ### Quick reference for destination directory updates
 
-The following table provides a quick reference for finding the appropriate guidance based on the current destination directory [**DIRID**](../install/using-dirids.md) a driver package INF is using for a file.
+The following table provides a quick reference for finding the appropriate guidance based on the current destination directory [**DIRID**](../install/using-dirids.md) that a driver package INF specifies for a file.
 
 | DIRID | Sub-directory | Details |
 | -- | -- | -- |
-| 13 | | The file is already using run from Driver Store. No further work is needed. |
-|  1 | | DIRID 1 should not be used. There is no guarantee that the source directory will be available when a reference to the file needs to be resolved. Instead, any files that components in the driver package depend on should be part of the driver package and be run from Driver Store. |
-| 10 | Firmware | Please see [Authoring an update driver package](../bringup/authoring-an-update-driver-package.md) for how to use DIRID 13 with a firmware update driver package to make it use run from Driver Store. |
-| 10 | | Please see [Other files](#other-files) for guidance. |
-| 11 | | Please see [Other files](#other-files) for guidance. |
-| 12 | UMDF | Please see [UMDF driver binary](#umdf-driver-binary) for guidance. |
-| 12 | | Most files with a destination of DIRID 12 represent driver service binaries. Please see [Service binary](#service-binary) for guidance. |
-| 16422, 16426, 16427, 16428 | | Most files with a destination of these DIRIDs represent installing an application. Instead, please provide a Universal Windows Platform application that is installed using an [AddSoftware directive](../install/inf-addsoftware-directive.md) from a [DDInstall.Software section](../install/inf-ddinstall-software-section.md) of the driver package INF. For more information, see [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md). |
+| 13 | | The file is already using `run from Driver Store`. No further work is needed. |
+|  1 | | DIRID 1 should not be used. There is no guarantee that the source directory will be available when a reference to the file needs to be resolved. Instead, if components in the driver package depend on specific files, include those files in the driver package and run them from Driver Store. |
+| 10 | Firmware | For info on how to use DIRID 13 with a firmware update driver package to make it use `run from Driver Store`, see [Authoring an update driver package](../bringup/authoring-an-update-driver-package.md) for.|
+| 10 | | See [Other files](#other-files). |
+| 11 | | See [Other files](#other-files). |
+| 12 | UMDF | See [UMDF driver binary](#umdf-driver-binary).|
+| 12 | | Most files with a destination of DIRID 12 represent driver service binaries. See [Service binary](#service-binary). |
+| 16422, 16426, 16427, 16428 | | Most files with a destination of these DIRIDs represent installing an application. Instead, provide a Universal Windows Platform (UWP) application and install it using an [AddSoftware directive](../install/inf-addsoftware-directive.md) from a [DDInstall.Software section](../install/inf-ddinstall-software-section.md) of the driver package INF. For details, see [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md). |
 
 
 ### Service binary
