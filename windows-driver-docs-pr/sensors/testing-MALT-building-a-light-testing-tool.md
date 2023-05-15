@@ -24,8 +24,8 @@ This guide assumes that you have basic knowledge in electronics, programming, an
 You will need the following components.
 
 - [Microcontroller](https://store.arduino.cc/mega-2560-r3)
-- [Calibrated light source of sufficient range / spectrum](https://www.superbrightleds.com/12v-led-panel-light-for-vehicles-trailers-1x1-2-500-lumens-35w-even-glowr-light-fixture-natural-white)
-- [Power supply for light source](https://www.superbrightleds.com/12v-led-panel-light-for-vehicles-trailers-1x1-2-500-lumens-35w-even-glowr-light-fixture-natural-white#tab-powersupply)
+- [Calibrated light source of sufficient range / spectrum](https://www.superbrightleds.com/square-12v-led-panel-light-fixture-for-vehiclestrailers-1ft-x-1ft-35w-lp-nw3030-35-12v)
+- [Power supply for light source](https://www.superbrightleds.com/square-12v-led-panel-light-fixture-for-vehiclestrailers-1ft-x-1ft-35w-lp-nw3030-35-12v#accessories_power_supplies)
 - [Digital to analog converter (DAC)](https://www.microchip.com/wwwproducts/en/MCP4821)
 - Two [Ambient light sensors (ex TI OPT3001 or better)](https://www.ti.com/product/OPT3001)
 - Two [Color sensors](https://www.digikey.com/product-detail/en/ams/AS73211-AQFT/AS73211-AQFT-ND/7802175)
