@@ -16,7 +16,7 @@ Communicate with the test rig via the following serial commands. Each command wi
 
 Adjusts the light level based on the given input.
 
-The [light panel](https://www.superbrightleds.com/12v-led-panel-light-for-vehicles-trailers-1x1-2-500-lumens-35w-even-glowr-light-fixture-natural-white) used in the reference supports between .25 and 1.3 volts of input.
+The [light panel](https://www.superbrightleds.com/square-12v-led-panel-light-fixture-for-vehiclestrailers-1ft-x-1ft-35w-lp-nw3030-35-12v) used in the reference supports between .25 and 1.3 volts of input.
 
 Using the data sheet for the reference DAC [Microchip MCP4821](https://www.microchip.com/wwwproducts/en/MCP4821), we can solve for the maximum *Vout* to send to the light panel.
 
