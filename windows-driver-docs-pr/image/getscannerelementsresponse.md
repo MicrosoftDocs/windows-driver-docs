@@ -9,11 +9,10 @@ api_name:
 - wscn GetScannerElementsResponse
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/25/2023
 ---
 
 # GetScannerElementsResponse element
-
 
 The required **GetScannerElementsResponse** element contains the WSD Scan Service's response to a client's request for information about the scanner.
 
@@ -31,25 +30,11 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="scannerelements.md" data-raw-source="[&lt;strong&gt;ScannerElements&lt;/strong&gt;](scannerelements.md)"><strong>ScannerElements</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ScannerElements**](scannerelements.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 
@@ -371,17 +356,6 @@ The following code example shows a response to a GetScannerElementsRequest opera
 
 ## See also
 
-
 [**GetScannerElementsRequest**](getscannerelementsrequest.md)
 
 [**ScannerElements**](scannerelements.md)
-
- 
-
- 
-
-
-
-
-
-

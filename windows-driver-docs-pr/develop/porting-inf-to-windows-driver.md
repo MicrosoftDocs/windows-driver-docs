@@ -149,7 +149,7 @@ ExampleCoInstall.dll
 HKR,,CoInstallers32,0x00010000,"ExampleCoInstall.dll,ExampleCoInstallEntryPoint"
 ```
 
-Instead, your application should be a Universal Windows Platform application and installed using an [AddSoftware directive](../install/inf-addsoftware-directive.md) from a [DDInstall.Software section](../install/inf-ddinstall-software-section.md). For more information, see [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md). An [AddSoftware directive](../install/inf-addsoftware-directive.md) is supported on Windows 10 1703 and later versions of Windows.
+For information on how to handle this situation, see [Removing Co-installers from Driver Packages](./removing-coinstallers.md).
 
 ## Using AddReg to modify a service that isn't added by the INF
 

@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPS\_PRINTER\_ENDORSER\_MAX\_GRAPHICS
-description: The WIA\_IPS\_PRINTER\_ENDORSER\_MAX\_GRAPHICS property describes the maximum number of images that the Imprinter/Endorser item can print or endorse on each page.
+title: WIA_IPS_PRINTER_ENDORSER_MAX_GRAPHICS
+description: The WIA_IPS_PRINTER_ENDORSER_MAX_GRAPHICS property describes the maximum number of images that the Imprinter/Endorser item can print or endorse on each page.
 keywords: ["WIA_IPS_PRINTER_ENDORSER_MAX_GRAPHICS Imaging Devices"]
 topic_type:
 - apiref
@@ -11,52 +11,29 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 05/08/2023
 ---
 
-# WIA\_IPS\_PRINTER\_ENDORSER\_MAX\_GRAPHICS
+# WIA_IPS_PRINTER_ENDORSER_MAX_GRAPHICS
 
+The **WIA_IPS_PRINTER_ENDORSER_MAX_GRAPHICS** property describes the maximum number of images that the Imprinter/Endorser item can print or endorse on each page. This property is useful when the Imprinter/Endorser item supports graphics upload via multi-page (TYMED_MULTIPAGE_FILE) file format transfers. This property is initialized and maintained by the WIA mini-driver, and is available with Windows 8 and later versions of Windows.
 
-The **WIA\_IPS\_PRINTER\_ENDORSER\_MAX\_GRAPHICS** property describes the maximum number of images that the Imprinter/Endorser item can print or endorse on each page. This property is useful when the Imprinter/Endorser item supports graphics upload via multi-page (TYMED\_MULTIPAGE\_FILE) file format transfers. This property is initialized and maintained by the WIA mini-driver, and is available with Windows 8 and later versions of Windows.
+Property Type: VT_UI4
 
-Property Type: VT\_UI4
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
 ## Remarks
 
-The **WIA\_IPS\_PRINTER\_ENDORSER\_MAX\_GRAPHICS** property is optional for the Imprinter/Endorser items that support graphics upload. When implemented, the property value **must be** greater than zero (0).
+The **WIA_IPS_PRINTER_ENDORSER_MAX_GRAPHICS** property is optional for the Imprinter/Endorser items that support graphics upload. When implemented, the property value **must be** greater than zero (0).
 
-For more information about the TYMED\_MULTIPAGE\_FILE constant, see [**WIA\_IPA\_TYMED**](wia-ipa-tymed.md).
+For more information about the TYMED_MULTIPAGE_FILE constant, see [**WIA_IPA_TYMED**](wia-ipa-tymed.md).
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
-
-[**WIA\_IPA\_TYMED**](wia-ipa-tymed.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_IPA_TYMED**](wia-ipa-tymed.md)

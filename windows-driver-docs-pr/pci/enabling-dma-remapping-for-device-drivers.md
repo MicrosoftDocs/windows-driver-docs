@@ -41,8 +41,10 @@ When testing your driver, enable Driver Verifier. For testing purposes under Dri
 
 Use the latest Windows 10 build with VT-d/AMD-Vi enabled to test driver functionality on Intel x64 and AMD64 systems.
 
-> [!NOTE]
+> [!WARNING]
 > DMA remapping is not supported for graphics device drivers.
+> 
+> Support for version 3 is only available on Windows 11.  On Windows 10, if you specify 3 in the INF, the system falls back to a value of 2.
 
 ## Validating that DMA remapping is enabled for a specific device driver instance
 

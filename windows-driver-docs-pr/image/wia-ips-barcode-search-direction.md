@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPS\_BARCODE\_SEARCH\_DIRECTION
-description: The WIA\_IPS\_BARCODE\_SEARCH\_DIRECTION property is used to configure the direction (relative to the scan direction) in which the device searches for barcodes on each scanned document page.
+title: WIA_IPS_BARCODE_SEARCH_DIRECTION
+description: The WIA_IPS_BARCODE_SEARCH_DIRECTION property is used to configure the direction (relative to the scan direction) in which the device searches for barcodes on each scanned document page.
 keywords: ["WIA_IPS_BARCODE_SEARCH_DIRECTION Imaging Devices"]
 topic_type:
 - apiref
@@ -11,86 +11,33 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 05/04/2023
 ---
 
-# WIA\_IPS\_BARCODE\_SEARCH\_DIRECTION
+# WIA_IPS_BARCODE_SEARCH_DIRECTION
 
+The **WIA_IPS_BARCODE_SEARCH_DIRECTION** property is used to configure the direction (relative to the scan direction) in which the device searches for barcodes on each scanned document page.
 
-The **WIA\_IPS\_BARCODE\_SEARCH\_DIRECTION** property is used to configure the direction (relative to the scan direction) in which the device searches for barcodes on each scanned document page.
+Property Type: VT_I4
 
-
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_LIST
+Valid Values: WIA_PROP_LIST
 
 Access Rights: Read/Write
 
 ## Remarks
 
-The following table describes the valid values for the **WIA\_IPS\_BARCODE\_SEARCH\_DIRECTION** property.
+The following table describes the valid values for the **WIA_IPS_BARCODE_SEARCH_DIRECTION** property.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>WIA_BARCODE_HORIZONTAL_SEARCH</p></td>
-<td><p>Device searches for barcodes horizontally.</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_BARCODE_VERTICAL_SEARCH</p></td>
-<td><p>Device searches for barcodes vertically.</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_BARCODE_HORIZONTAL_VERTICAL_SEARCH</p></td>
-<td><p>Device searches for barcodes first horizontally then vertically.</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_BARCODE_VERTICAL_HORIZONTAL_SEARCH</p></td>
-<td><p>Device searches for barcodes first vertically then horizontally.</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_BARCODE_AUTO_SEARCH</p></td>
-<td><p>Device searches for barcodes in its own direction that is automatically detected at run time or predefined.</p></td>
-</tr>
-</tbody>
-</table>
+| Value | Definition |
+|--|--|
+| WIA_BARCODE_HORIZONTAL_SEARCH | Device searches for barcodes horizontally. |
+| WIA_BARCODE_VERTICAL_SEARCH | Device searches for barcodes vertically. |
+| WIA_BARCODE_HORIZONTAL_VERTICAL_SEARCH | Device searches for barcodes first horizontally then vertically. |
+| WIA_BARCODE_VERTICAL_HORIZONTAL_SEARCH | Device searches for barcodes first vertically then horizontally. |
+| WIA_BARCODE_AUTO_SEARCH | Device searches for barcodes in its own direction that is automatically detected at run time or predefined. |
 
- 
-
-This property is required for all Barcode Reader items, but it can be implemented to support only the WIA\_BARCODE\_AUTO\_SEARCH value.
+This property is required for all Barcode Reader items, but it can be implemented to support only the WIA_BARCODE_AUTO_SEARCH value.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

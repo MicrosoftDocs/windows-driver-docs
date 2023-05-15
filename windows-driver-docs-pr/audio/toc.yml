@@ -411,7 +411,7 @@
         href: related-design-guidelines.md
       - name: "Setting Properties and Registry Values"
         href: setting-properties-and-registry-values.md
-      - name: "Setting Friendly Names, Registering APOs"
+      - name: "Setting Friendly Names,Sideband SCO Transport and Registering APOs"
         href: setting-friendly-name--registering-apos.md
       - name: "Obtaining Bluetooth Address of HF Device"
         href: obtaining-bluetooth-address-of-hf-device.md

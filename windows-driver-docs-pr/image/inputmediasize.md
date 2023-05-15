@@ -9,11 +9,10 @@ api_name:
 - wscn InputMediaSize
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/28/2023
 ---
 
 # InputMediaSize element
-
 
 The required **InputMediaSize** element specifies the size of the media to be scanned for the current job.
 
@@ -31,44 +30,16 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="height.md" data-raw-source="[&lt;strong&gt;Height&lt;/strong&gt;](height.md)"><strong>Height</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="width.md" data-raw-source="[&lt;strong&gt;Width&lt;/strong&gt;](width.md)"><strong>Width</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**Height**](height.md) |
+| [**Width**](width.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="inputsize.md" data-raw-source="[&lt;strong&gt;InputSize&lt;/strong&gt;](inputsize.md)"><strong>InputSize</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**InputSize**](inputsize.md) |
 
 ## Remarks
 
@@ -78,19 +49,8 @@ The **Width** element contains the width of the original media in the fast scan 
 
 ## See also
 
-
 [**Height**](height.md)
 
 [**InputSize**](inputsize.md)
 
 [**Width**](width.md)
-
- 
-
- 
-
-
-
-
-
-

@@ -22,7 +22,7 @@ This is the ecosystem counterpart of [User mode crashes in Microsoft Edge Chromi
 | **Measurement criteria** | Aggregation of instances |
 | **Minimum population** | 30,000 hours of Microsoft Edge Chromium runtime |
 | **Passing criteria** | <= 1 crash per year |
-| **Measure ID** | 25389120 |
+| **Measure ID** | 25389120 (Legacy)|
 
 ## Calculation
 

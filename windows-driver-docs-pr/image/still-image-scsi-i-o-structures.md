@@ -1,41 +1,16 @@
 ---
-title: Still Image SCSI I/O Structures
-description: Still Image SCSI I/O Structures
-ms.date: 04/20/2017
+title: Still image SCSI I/O structures
+description: Still image SCSI I/O structures
+ms.date: 05/04/2023
 ---
 
-# Still Image SCSI I/O Structures
-
-
-
-
+# Still image SCSI I/O structures
 
 The following table lists and describes all of the structures associated with the I/O Control Codes recognized by the kernel-mode still image driver for SCSI buses.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Structure</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="/windows-hardware/drivers/ddi/scsiscan/ns-scsiscan-_scsiscan_cmd" data-raw-source="[&lt;strong&gt;SCSISCAN_CMD&lt;/strong&gt;](/windows-hardware/drivers/ddi/scsiscan/ns-scsiscan-_scsiscan_cmd)"><strong>SCSISCAN_CMD</strong></a></p></td>
-<td><p>Used as a parameter to <a href="/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol" data-raw-source="[&lt;strong&gt;DeviceIoControl&lt;/strong&gt;](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol)"><strong>DeviceIoControl</strong></a>, when the specified I/O control code is <a href="/windows-hardware/drivers/ddi/scsiscan/ni-scsiscan-ioctl_scsiscan_cmd" data-raw-source="[&lt;strong&gt;IOCTL_SCSISCAN_CMD&lt;/strong&gt;](/windows-hardware/drivers/ddi/scsiscan/ni-scsiscan-ioctl_scsiscan_cmd)"><strong>IOCTL_SCSISCAN_CMD</strong></a>.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="/windows-hardware/drivers/ddi/scsiscan/ns-scsiscan-_scsiscan_info" data-raw-source="[&lt;strong&gt;SCSISCAN_INFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/scsiscan/ns-scsiscan-_scsiscan_info)"><strong>SCSISCAN_INFO</strong></a></p></td>
-<td><p>Used as a parameter to <a href="/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol" data-raw-source="[&lt;strong&gt;DeviceIoControl&lt;/strong&gt;](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol)"><strong>DeviceIoControl</strong></a>, when the specified I/O control code is <a href="/windows-hardware/drivers/ddi/scsiscan/ni-scsiscan-ioctl_scsiscan_get_info" data-raw-source="[&lt;strong&gt;IOCTL_SCSISCAN_GET_INFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/scsiscan/ni-scsiscan-ioctl_scsiscan_get_info)"><strong>IOCTL_SCSISCAN_GET_INFO</strong></a>.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Structure | Description |
+|--|--|
+| [**SCSISCAN_CMD**](/windows-hardware/drivers/ddi/scsiscan/ns-scsiscan-_scsiscan_cmd) | Used as a parameter to [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol), when the specified I/O control code is [**IOCTL_SCSISCAN_CMD**](/windows-hardware/drivers/ddi/scsiscan/ni-scsiscan-ioctl_scsiscan_cmd). |
+| [**SCSISCAN_INFO**](/windows-hardware/drivers/ddi/scsiscan/ns-scsiscan-_scsiscan_info) | Used as a parameter to "[**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol), when the specified I/O control code is "[**IOCTL_SCSISCAN_GET_INFO**](/windows-hardware/drivers/ddi/scsiscan/ni-scsiscan-ioctl_scsiscan_get_info). |
 
 These structures are defined in *scsiscan.h*.
-

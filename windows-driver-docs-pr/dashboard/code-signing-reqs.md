@@ -43,29 +43,29 @@ Once the certificate authority has verified your contact information and your ce
 
  A dashboard signed driver that has passed the HLK tests will work on Windows Vista through Windows 10, including Windows Server editions.  HLK testing is the recommended method for driver signing, because it will sign a driver for all OS versions. In addition, HLK tested drivers demonstrate that a manufacturer has rigorously tested their hardware to meet all of Microsoft's requirements with regards to reliability, security, power efficiency, serviceability, and performance, so as to provide a great Windows experience. This includes compliance with industry standards and adherence with Microsoft specifications for technology-specific features, helping to ensure correct installation, deployment, connectivity and interoperability. To learn how to create an HLK tested driver for your dashboard submission see [Windows HLK Getting Started](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
 
-## Windows 10 attestation signed drivers
+## Windows 10 attestation signed drivers for testing scenarios
 
-Windows device installation uses digital signatures to verify the integrity of driver packages and to verify the identity of the software publisher who provided the driver packages. For Windows 10 Desktop and later systems, you can submit your drivers for attestation signing, which doesn't require HLK testing. However, attestation signing will only work on Windows 10 Desktop and later versions of Windows. An attestation signed driver won't work for other versions of Windows, such as Windows Server 2016, Windows 8, or Windows 7. Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers don't need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers. For drivers that need to run on previous versions of Windows, you should [submit HLK/HCK test logs for Windows certification](./hardware-submission-create.md).
+Windows device installation uses digital signatures to verify the integrity of driver packages and the identity of the software publisher who provides the driver packages.
 
-Attestation signing has the following properties.
+For testing purposes only, you can submit your drivers for attestation signing, which doesn't require HLK testing.
 
-- Attestation signing supports Windows 10 kernel mode and user mode drivers. Although user mode drivers do not need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers.
+Attestation signing has the following restrictions and requirements:
+
+- Attestation signed drivers cannot be published to Windows Update for retail audiences. To publish a driver to Windows Update for retail audiences, you must submit your driver through the [Windows Hardware Compatibility Program (WHCP)](/windows-hardware/design/compatibility/). Publishing attestation signed drivers to Windows Update for testing purposes is supported by selecting *CoDev* or *Test Registry Key / Surface SSRK* options. 
+
+- Attestation signing only works on Windows 10 Desktop and later versions of Windows. An attestation signed driver won't work for other versions of Windows, such as Windows Server 2016, Windows 8, or Windows 7.
+
+- Attestation signing supports Windows 10 Desktop kernel mode and user mode drivers. Although user mode drivers don't need to be signed by Microsoft for Windows 10, the same attestation process can be used for both user and kernel mode drivers. For drivers that need to run on previous versions of Windows, you should [submit HLK/HCK test logs for Windows certification](./hardware-submission-create.md).
 
 - Attestation signing won't return the proper PE Level for **ELAM** or **Windows Hello** PE binaries.  These must be tested and submitted as .hlkx packages to receive the additional signature attributes.
 
 - Attestation signing requires the use of an [extended validation (EV) Certificate](code-signing-reqs.md#ev-certificate-signed-drivers) to submit the driver to the Partner Center (Hardware Dev Center Dashboard).
 
-- An attestation signed driver works on Windows 10. It doesn't work on earlier versions of Windows, such as Windows 8.1 and Windows 7, and isn't supported for Windows Server 2016 and later.
-
 - Attestation signing requires driver folder names to contain no special characters, no UNC file share paths, and to be less than 40 characters long.
 
-- When a driver receives attestation signing, it's not Windows Certified. An attestation signature from Microsoft indicates that the driver can be trusted by Windows, but because the driver has not been tested in HLK Studio, there are no assurances made around compatibility, functionality, and so on.
+- When a driver receives attestation signing, it's not Windows Certified. An attestation signature from Microsoft indicates that the driver can be trusted by Windows, but because the driver has not been tested in HLK Studio, there are no assurances made around compatibility, functionality, and so on. A driver that receives attestation signing cannot be published to retail audiences through Windows Update. If you wish to publish your driver to retail audiences, you must submit your driver through the [Windows Hardware Compatibility Program (WHCP)](/windows-hardware/design/compatibility/). 
 
 - DUA (Driver Update Acceptable) doesn't support drivers signed using attestation.
-
-- To get your driver Windows Certified, you'll need to submit an .hlkx package generated by HLK Studio to the Partner Center.
-
-- To get your driver attestation signed, you need to create and submit a CAB file.
 
 - The following PE levels and binaries can be processed through Attestation:
 
@@ -79,7 +79,6 @@ Attestation signing has the following properties.
    - .msi
    - .xpi
    - .xap
-
 
 For information on how to create an attestation signed driver for Windows 10+ drivers, see [Attestation sign Windows 10+ drivers](code-signing-attestation.md).
 

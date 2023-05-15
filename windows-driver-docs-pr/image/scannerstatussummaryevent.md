@@ -9,11 +9,10 @@ api_name:
 - wscn ScannerStatusSummaryEvent
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/02/2023
 ---
 
 # ScannerStatusSummaryEvent element
-
 
 The required **ScannerStatusSummaryEvent** element informs the client that the scan device's status has changed.
 
@@ -31,25 +30,11 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="statussummary.md" data-raw-source="[&lt;strong&gt;StatusSummary&lt;/strong&gt;](statussummary.md)"><strong>StatusSummary</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**StatusSummary**](statussummary.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 
@@ -94,15 +79,4 @@ The following code example indicates that the scan device is stopped because of 
 
 ## See also
 
-
 [**StatusSummary**](statussummary.md)
-
- 
-
- 
-
-
-
-
-
-

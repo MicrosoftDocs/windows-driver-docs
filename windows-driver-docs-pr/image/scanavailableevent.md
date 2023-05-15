@@ -9,11 +9,10 @@ api_name:
 - wscn ScanAvailableEvent
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/02/2023
 ---
 
 # ScanAvailableEvent element
-
 
 The required **ScanAvailableEvent** element informs a client that a scan device to which the client is subscribed is ready to scan a job.
 
@@ -31,28 +30,12 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="clientcontext.md" data-raw-source="[&lt;strong&gt;ClientContext&lt;/strong&gt;](clientcontext.md)"><strong>ClientContext</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="scanidentifier.md" data-raw-source="[&lt;strong&gt;ScanIdentifier&lt;/strong&gt;](scanidentifier.md)"><strong>ScanIdentifier</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ClientContext**](clientcontext.md) |
+| [**ScanIdentifier**](scanidentifier.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 
@@ -176,7 +159,6 @@ The following code example shows how the WSD Scan Service sends a ScanAvailableE
 
 ## See also
 
-
 [**ClientContext**](clientcontext.md)
 
 [**DestinationResponses**](destinationresponses.md)
@@ -184,13 +166,3 @@ The following code example shows how the WSD Scan Service sends a ScanAvailableE
 [**ScanDestinations**](scandestinations.md)
 
 [**ScanIdentifier**](scanidentifier.md)
-
- 
-
- 
-
-
-
-
-
-

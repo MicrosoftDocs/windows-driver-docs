@@ -9,11 +9,10 @@ api_name:
 - wscn Documents
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/24/2023
 ---
 
 # Documents element
-
 
 The required **Documents** element contains the actual scan characteristics that are used during image acquisition, plus a collection of all **Document** elements that the scan job contains.
 
@@ -31,60 +30,21 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="document.md" data-raw-source="[&lt;strong&gt;Document&lt;/strong&gt;](document.md)"><strong>Document</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="documentfinalparameters.md" data-raw-source="[&lt;strong&gt;DocumentFinalParameters&lt;/strong&gt;](documentfinalparameters.md)"><strong>DocumentFinalParameters</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**Document**](document.md) |
+| [**DocumentFinalParameters**](documentfinalparameters.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="job.md" data-raw-source="[&lt;strong&gt;Job&lt;/strong&gt;](job.md)"><strong>Job</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**Job**](job.md) |
 
 ## See also
-
 
 [**Document**](document.md)
 
 [**DocumentFinalParameters**](documentfinalparameters.md)
 
 [**Job**](job.md)
-
- 
-
- 
-
-
-
-
-
-

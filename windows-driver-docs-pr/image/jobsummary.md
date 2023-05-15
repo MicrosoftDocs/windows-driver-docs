@@ -9,11 +9,10 @@ api_name:
 - wscn JobSummary
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/28/2023
 ---
 
 # JobSummary element
-
 
 The optional **JobSummary** element contains a summary about a scan job.
 
@@ -31,59 +30,21 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="jobid.md" data-raw-source="[&lt;strong&gt;JobId&lt;/strong&gt;](jobid.md)"><strong>JobId</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="jobname.md" data-raw-source="[&lt;strong&gt;JobName&lt;/strong&gt;](jobname.md)"><strong>JobName</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="joboriginatingusername.md" data-raw-source="[&lt;strong&gt;JobOriginatingUserName&lt;/strong&gt;](joboriginatingusername.md)"><strong>JobOriginatingUserName</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="jobstate.md" data-raw-source="[&lt;strong&gt;JobState&lt;/strong&gt;](jobstate.md)"><strong>JobState</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="jobstatereasons.md" data-raw-source="[&lt;strong&gt;JobStateReasons&lt;/strong&gt;](jobstatereasons.md)"><strong>JobStateReasons</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="scanscompleted.md" data-raw-source="[&lt;strong&gt;ScansCompleted&lt;/strong&gt;](scanscompleted.md)"><strong>ScansCompleted</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**JobId**](jobid.md) |
+| [**JobName**](jobname.md) |
+| [**JobOriginatingUserName**](joboriginatingusername.md) |
+| [**JobState**](jobstate.md) |
+| [**JobStateReasons**](jobstatereasons.md) |
+| [**ScansCompleted**](scanscompleted.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="activejobs.md" data-raw-source="[&lt;strong&gt;ActiveJobs&lt;/strong&gt;](activejobs.md)"><strong>ActiveJobs</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="jobhistory.md" data-raw-source="[&lt;strong&gt;JobHistory&lt;/strong&gt;](jobhistory.md)"><strong>JobHistory</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ActiveJobs**](activejobs.md) |
+| [**JobHistory**](jobhistory.md) |
 
 ## Remarks
 
@@ -92,7 +53,6 @@ If the parent element of the **JobSummary** element is [**ActiveJobs**](activejo
 If the parent element is [**JobHistory**](jobhistory.md), **JobSummary** contains a summary of information about a single, recently completed job within the scan device.
 
 ## See also
-
 
 [**ActiveJobs**](activejobs.md)
 
@@ -109,13 +69,3 @@ If the parent element is [**JobHistory**](jobhistory.md), **JobSummary** contain
 [**JobStateReasons**](jobstatereasons.md)
 
 [**ScansCompleted**](scanscompleted.md)
-
- 
-
- 
-
-
-
-
-
-

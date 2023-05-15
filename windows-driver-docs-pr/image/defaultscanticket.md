@@ -9,11 +9,10 @@ api_name:
 - wscn DefaultScanTicket
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/21/2023
 ---
 
 # DefaultScanTicket element
-
 
 ## Usage
 
@@ -29,47 +28,17 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="documentparameters.md" data-raw-source="[&lt;strong&gt;DocumentParameters&lt;/strong&gt;](documentparameters.md)"><strong>DocumentParameters</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="jobdescription.md" data-raw-source="[&lt;strong&gt;JobDescription&lt;/strong&gt;](jobdescription.md)"><strong>JobDescription</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DocumentParameters**](documentparameters.md) |
+| [**JobDescription**](jobdescription.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="elementchanges.md" data-raw-source="[&lt;strong&gt;ElementChanges&lt;/strong&gt;](elementchanges.md)"><strong>ElementChanges</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="elementdata-for-scannerelements-element.md" data-raw-source="[&lt;strong&gt;ElementData Element for ScannerElements&lt;/strong&gt;](elementdata-for-scannerelements-element.md)"><strong>ElementData Element for ScannerElements</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ElementChanges**](elementchanges.md) |
+| [**ElementData Element for ScannerElements**](elementdata-for-scannerelements-element.md) |
 
 ## Remarks
 
@@ -130,7 +99,6 @@ The following code example shows a sample DefaultScanTicket.
 
 ## See also
 
-
 [**CreateScanJobRequest**](createscanjobrequest.md)
 
 [**DocumentParameters**](documentparameters.md)
@@ -144,13 +112,3 @@ The following code example shows a sample DefaultScanTicket.
 [**JobDescription**](jobdescription.md)
 
 [**ScanTicket**](scanticket.md)
-
- 
-
- 
-
-
-
-
-
-

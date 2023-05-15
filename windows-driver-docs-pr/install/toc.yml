@@ -524,6 +524,8 @@
         href: identifiers-for-pcmcia-devices.md
       - name: "Identifiers for ISAPNP Devices"
         href: identifiers-for-isapnp-devices.md
+      - name: "Identifiers for High Definition Audio (HDAudio) Devices"
+        href: identifiers-for-hdaudio-devices.md
       - name: "Identifiers for 1394 Devices"
         href: identifiers-for-1394-devices.md
       - name: "Identifiers for Secure Digital (SD) Devices"

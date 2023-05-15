@@ -9,11 +9,10 @@ api_name:
 - wscn Widths
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/02/2023
 ---
 
 # Widths element
-
 
 The required **Widths** element contains the list of widths at which the scanner can scan images.
 
@@ -31,48 +30,17 @@ There are no attributes.
 
 ## Child elements
 
-
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="width.md" data-raw-source="[&lt;strong&gt;Width&lt;/strong&gt;](width.md)"><strong>Width</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**Width**](width.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="adfresolutions.md" data-raw-source="[&lt;strong&gt;ADFResolutions&lt;/strong&gt;](adfresolutions.md)"><strong>ADFResolutions</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="filmresolutions.md" data-raw-source="[&lt;strong&gt;FilmResolutions&lt;/strong&gt;](filmresolutions.md)"><strong>FilmResolutions</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="platenresolutions.md" data-raw-source="[&lt;strong&gt;PlatenResolutions&lt;/strong&gt;](platenresolutions.md)"><strong>PlatenResolutions</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ADFResolutions**](adfresolutions.md) |
+| [**FilmResolutions**](filmresolutions.md) |
+| [**PlatenResolutions**](platenresolutions.md) |
 
 ## Remarks
 
@@ -81,7 +49,6 @@ Each [**Width**](width.md) child element specifies a valid number of horizontal 
 The [**Heights**](heights.md) element contains the list of heights that the scanner supports.
 
 ## See also
-
 
 [**ADFResolutions**](adfresolutions.md)
 
@@ -94,13 +61,3 @@ The [**Heights**](heights.md) element contains the list of heights that the scan
 [**PlatenResolutions**](platenresolutions.md)
 
 [**Width**](width.md)
-
- 
-
- 
-
-
-
-
-
-

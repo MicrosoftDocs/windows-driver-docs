@@ -9,11 +9,10 @@ api_name:
 - wscn JobElements
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/28/2023
 ---
 
 # JobElements element
-
 
 The required **JobElements** element contains all of the job-related elements that a client requests through a call to [**GetJobElementsRequest**](getjobelementsrequest.md).
 
@@ -31,41 +30,15 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="elementdata-for-jobelements-element.md" data-raw-source="[&lt;strong&gt;ElementData for parent JobElements&lt;/strong&gt;](elementdata-for-jobelements-element.md)"><strong>ElementData for parent JobElements</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ElementData for parent JobElements**](elementdata-for-jobelements-element.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="getjobelementsresponse.md" data-raw-source="[&lt;strong&gt;GetJobElementsResponse&lt;/strong&gt;](getjobelementsresponse.md)"><strong>GetJobElementsResponse</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**GetJobElementsResponse**](getjobelementsresponse.md) |
 
 ## Remarks
 
@@ -73,19 +46,8 @@ The WSD Scan Service returns the **JobElements** element in [**GetJobElementsRes
 
 ## See also
 
-
 [**ElementData for parent JobElements**](elementdata-for-jobelements-element.md)
 
 [**GetJobElementsRequest**](getjobelementsrequest.md)
 
 [**GetJobElementsResponse**](getjobelementsresponse.md)
-
- 
-
- 
-
-
-
-
-
-

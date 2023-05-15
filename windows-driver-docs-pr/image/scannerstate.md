@@ -9,11 +9,10 @@ api_name:
 - wscn ScannerState
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/02/2023
 ---
 
 # ScannerState element
-
 
 The required **ScannerState** element identifies the current state of the scanning portion of the scan device.
 
@@ -33,40 +32,22 @@ There are no attributes.
 
 Required. One of the following string values.
 
-| Value      | Description                                                  |
-|------------|--------------------------------------------------------------|
-| Idle       | The scanner is available and can start processing a new job. |
-| Processing | The scanner is currently processing jobs.                    |
-| Stopped    | No jobs can be processed and intervention is needed.         |
-
- 
+| Value | Description |
+|--|--|
+| Idle | The scanner is available and can start processing a new job. |
+| Processing | The scanner is currently processing jobs. |
+| Stopped | No jobs can be processed and intervention is needed. |
 
 ## Child elements
-
 
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="scannerstatus.md" data-raw-source="[&lt;strong&gt;ScannerStatus&lt;/strong&gt;](scannerstatus.md)"><strong>ScannerStatus</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="statussummary.md" data-raw-source="[&lt;strong&gt;StatusSummary&lt;/strong&gt;](statussummary.md)"><strong>StatusSummary</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ScannerStatus**](scannerstatus.md) |
+| [**StatusSummary**](statussummary.md) |
 
 ## Remarks
 
@@ -78,7 +59,6 @@ You can both extend and subset the allowed values for this element.
 
 ## See also
 
-
 [**GetScannerElementsRequest**](getscannerelementsrequest.md)
 
 [**ScannerStatus**](scannerstatus.md)
@@ -86,13 +66,3 @@ You can both extend and subset the allowed values for this element.
 [**ScannerStatusSummaryEvent**](scannerstatussummaryevent.md)
 
 [**StatusSummary**](statussummary.md)
-
- 
-
- 
-
-
-
-
-
-

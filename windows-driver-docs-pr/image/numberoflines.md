@@ -9,11 +9,10 @@ api_name:
 - wscn NumberOfLines
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/01/2023
 ---
 
 # NumberOfLines element
-
 
 The required **NumberOfLines** element describes the exact height, in pixels, of the final output image.
 
@@ -35,30 +34,14 @@ Required. An integer value in the range from 1 through 2147483647.
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="mediabackimageinfo.md" data-raw-source="[&lt;strong&gt;MediaBackImageInfo&lt;/strong&gt;](mediabackimageinfo.md)"><strong>MediaBackImageInfo</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="mediafrontimageinfo.md" data-raw-source="[&lt;strong&gt;MediaFrontImageInfo&lt;/strong&gt;](mediafrontimageinfo.md)"><strong>MediaFrontImageInfo</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**MediaBackImageInfo**](mediabackimageinfo.md) |
+| [**MediaFrontImageInfo**](mediafrontimageinfo.md) |
 
 ## Remarks
 
@@ -66,19 +49,8 @@ The specified value describes the exact height, in pixels, or the number of line
 
 ## See also
 
-
 [**MediaBackImageInfo**](mediabackimageinfo.md)
 
 [**MediaFrontImageInfo**](mediafrontimageinfo.md)
 
 [**ScanTicket**](scanticket.md)
-
- 
-
- 
-
-
-
-
-
-

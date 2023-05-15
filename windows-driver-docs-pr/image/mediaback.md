@@ -9,11 +9,10 @@ api_name:
 - wscn MediaBack
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/01/2023
 ---
 
 # MediaBack element
-
 
 The optional **MediaBack** element contains all parameters that are specific to the scanning of the back side of the physical media.
 
@@ -31,47 +30,17 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="colorprocessing.md" data-raw-source="[&lt;strong&gt;ColorProcessing&lt;/strong&gt;](colorprocessing.md)"><strong>ColorProcessing</strong></a></p></td>
-</tr>
-<tr class="even">
-<td><p><a href="resolution.md" data-raw-source="[&lt;strong&gt;Resolution&lt;/strong&gt;](resolution.md)"><strong>Resolution</strong></a></p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="scanregion.md" data-raw-source="[&lt;strong&gt;ScanRegion&lt;/strong&gt;](scanregion.md)"><strong>ScanRegion</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**ColorProcessing**](colorprocessing.md) |
+| [**Resolution**](resolution.md) |
+| [**ScanRegion**](scanregion.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="mediasides.md" data-raw-source="[&lt;strong&gt;MediaSides&lt;/strong&gt;](mediasides.md)"><strong>MediaSides</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**MediaSides**](mediasides.md) |
 
 ## Remarks
 
@@ -82,7 +51,6 @@ If the **MediaBack** element does not contain a [**ScanRegion**](scanregion.md) 
 If the input source is **ADFDuplex** and the **MediaBack** element is missing, all parameters that are specified in [**MediaFront**](mediafront.md) will apply to the back side scanning as well.
 
 ## See also
-
 
 [**ColorProcessing**](colorprocessing.md)
 
@@ -97,13 +65,3 @@ If the input source is **ADFDuplex** and the **MediaBack** element is missing, a
 [**Resolution**](resolution.md)
 
 [**ScanRegion**](scanregion.md)
-
- 
-
- 
-
-
-
-
-
-

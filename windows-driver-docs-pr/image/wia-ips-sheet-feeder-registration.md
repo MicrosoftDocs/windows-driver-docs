@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPS\_SHEET\_FEEDER\_REGISTRATION
-description: The WIA\_IPS\_SHEET\_FEEDER\_REGISTRATION property contains the registration, or alignment and edge detection, for documents that are placed on the flatbed of a scanner. The WIA minidriver creates and maintains this property.
+title: WIA_IPS_SHEET_FEEDER_REGISTRATION
+description: The WIA_IPS_SHEET_FEEDER_REGISTRATION property contains the registration, or alignment and edge detection, for documents that are placed on the flatbed of a scanner. The WIA minidriver creates and maintains this property.
 keywords: ["WIA_IPS_SHEET_FEEDER_REGISTRATION Imaging Devices"]
 topic_type:
 - apiref
@@ -11,87 +11,37 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 05/08/2023
 ---
 
-# WIA\_IPS\_SHEET\_FEEDER\_REGISTRATION
+# WIA_IPS_SHEET_FEEDER_REGISTRATION
 
+The WIA_IPS_SHEET_FEEDER_REGISTRATION property contains the registration, or alignment and edge detection, for documents that are placed on the flatbed of a scanner. The WIA minidriver creates and maintains this property.
 
-The WIA\_IPS\_SHEET\_FEEDER\_REGISTRATION property contains the registration, or alignment and edge detection, for documents that are placed on the flatbed of a scanner. The WIA minidriver creates and maintains this property.
+Property Type: VT_I4
 
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
 ## Remarks
 
-The WIA\_IPS\_SHEET\_FEEDER\_REGISTRATION property indicates how a document is horizontally positioned on the scanning head of a handheld or sheet-fed scanner. You can use WIA\_IPS\_SHEET\_FEEDER\_REGISTRATION to predict where across the scanning head a document is placed.
+The WIA_IPS_SHEET_FEEDER_REGISTRATION property indicates how a document is horizontally positioned on the scanning head of a handheld or sheet-fed scanner. You can use WIA_IPS_SHEET_FEEDER_REGISTRATION to predict where across the scanning head a document is placed.
 
-The following table describes the constants that are valid with WIA\_IPS\_SHEET\_FEEDER\_REGISTRATION.
+The following table describes the constants that are valid with WIA_IPS_SHEET_FEEDER_REGISTRATION.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Constant</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>LEFT_JUSTIFIED</p></td>
-<td><p>The document is positioned to the left with respect to the scanning head.</p></td>
-</tr>
-<tr class="even">
-<td><p>CENTERED</p></td>
-<td><p>The document is centered on the scanning head.</p></td>
-</tr>
-<tr class="odd">
-<td><p>RIGHT_JUSTIFIED</p></td>
-<td><p>The document is positioned to the right with respect to the scanning head.</p></td>
-</tr>
-</tbody>
-</table>
+| Constant | Description |
+|--|--|
+| LEFT_JUSTIFIED | The document is positioned to the left with respect to the scanning head. |
+| CENTERED | The document is centered on the scanning head. |
+| RIGHT_JUSTIFIED | The document is positioned to the right with respect to the scanning head. |
 
- 
-
-For scanners that support more than one scanning head, the WIA\_IPS\_SHEET\_FEEDER\_REGISTRATION property is relative to the topmost scanning head. This property is mandatory for sheet-fed, scroll-fed, and handheld scanners.
+For scanners that support more than one scanning head, the WIA_IPS_SHEET_FEEDER_REGISTRATION property is relative to the topmost scanning head. This property is mandatory for sheet-fed, scroll-fed, and handheld scanners.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Available in Windows Vista and later operating systems. For Windows XP, use the WIA_DPS_SHEET_FEEDER_REGISTRATION property instead.</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
+**Header:** wiadef.h (include Wiadef.h)
 
 ## See also
 
-
-[**WIA\_DPS\_SHEET\_FEEDER\_REGISTRATION**](wia-dps-sheet-feeder-registration.md)
-
- 
-
- 
-
-
-
-
-
-
+[**WIA_DPS_SHEET_FEEDER_REGISTRATION**](wia-dps-sheet-feeder-registration.md)

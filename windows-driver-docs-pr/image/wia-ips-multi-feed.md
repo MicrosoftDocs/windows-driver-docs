@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPS\_MULTI\_FEED
-description: The WIA\_IPS\_MULTI\_FEED property is used to configure the action to be performed by the WIA minidriver when a multiple feed condition is detected at the device. The WIA minidriver creates and maintains this property.
+title: WIA_IPS_MULTI_FEED
+description: The WIA_IPS_MULTI_FEED property is used to configure the action to be performed by the WIA minidriver when a multiple feed condition is detected at the device. The WIA minidriver creates and maintains this property.
 keywords: ["WIA_IPS_MULTI_FEED Imaging Devices"]
 topic_type:
 - apiref
@@ -11,76 +11,34 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 05/05/2023
 ---
 
-# WIA\_IPS\_MULTI\_FEED
+# WIA_IPS_MULTI_FEED
 
+The **WIA_IPS_MULTI_FEED** property is used to configure the action to be performed by the WIA minidriver when a multiple feed condition is detected at the device. The WIA minidriver creates and maintains this property.
 
-The **WIA\_IPS\_MULTI\_FEED** property is used to configure the action to be performed by the WIA minidriver when a multiple feed condition is detected at the device. The WIA minidriver creates and maintains this property.
+Property Type: VT_I4
 
-
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_LIST
+Valid Values: WIA_PROP_LIST
 
 Access Rights: Read/Write
 
 ## Remarks
 
-The following table describes the valid values for the **WIA\_IPS\_MULTI\_FEED** property.
+The following table describes the valid values for the **WIA_IPS_MULTI_FEED** property.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>WIA_MULTI_FEED_DETECT_DISABLED</p></td>
-<td><p>Multi-feed detection is disabled. This is the required default value if the property is supported.</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_MULTI_FEED_DETECT_STOP_ERROR</p></td>
-<td><p>The device detects multi-feed, stops scanning, sets the MULTIPLE_FEED bit for <a href="wia-dps-document-handling-status.md" data-raw-source="[&lt;strong&gt;WIA_DPS_DOCUMENT_HANDLING_STATUS&lt;/strong&gt;](wia-dps-document-handling-status.md)"><strong>WIA_DPS_DOCUMENT_HANDLING_STATUS</strong></a>, and returns WIA_ERROR_MULTI_FEED to <a href="/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvAcquireItemData&lt;/strong&gt;](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata)"><strong>IWiaMiniDrv::drvAcquireItemData</strong></a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>WIA_MULTI_FEED_DETECT_STOP_SUCCESS</p></td>
-<td><p>The device detects multi-feed, stops scanning, sets the MULTIPLE_FEED bit for <a href="wia-dps-document-handling-status.md" data-raw-source="[&lt;strong&gt;WIA_DPS_DOCUMENT_HANDLING_STATUS&lt;/strong&gt;](wia-dps-document-handling-status.md)"><strong>WIA_DPS_DOCUMENT_HANDLING_STATUS</strong></a>, and <a href="/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvAcquireItemData&lt;/strong&gt;](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata)"><strong>IWiaMiniDrv::drvAcquireItemData</strong></a> returns and does not fail because of the multi-feed.</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_MULTI_FEED_DETECT_CONTINUE</p></td>
-<td><p>The device detects multi-feed, beeps or produces an audible or visible signal at the hardware device (recommended but not required), and continues scanning.</p></td>
-</tr>
-</tbody>
-</table>
+| Value | Definition |
+|--|--|
+| WIA_MULTI_FEED_DETECT_DISABLED | Multi-feed detection is disabled. This is the required default value if the property is supported. |
+| WIA_MULTI_FEED_DETECT_STOP_ERROR | The device detects multi-feed, stops scanning, sets the MULTIPLE_FEED bit for [**WIA_DPS_DOCUMENT_HANDLING_STATUS**](wia-dps-document-handling-status.md), and returns WIA_ERROR_MULTI_FEED to [**IWiaMiniDrv::drvAcquireItemData**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata). |
+| WIA_MULTI_FEED_DETECT_STOP_SUCCESS | The device detects multi-feed, stops scanning, sets the MULTIPLE_FEED bit for [**WIA_DPS_DOCUMENT_HANDLING_STATUS**](wia-dps-document-handling-status.md), and [**IWiaMiniDrv::drvAcquireItemData**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) returns and does not fail because of the multi-feed. |
+| WIA_MULTI_FEED_DETECT_CONTINUE | The device detects multi-feed, beeps or produces an audible or visible signal at the hardware device (recommended but not required), and continues scanning. |
 
- 
+This property is optional, and is valid only for the Feeder data source item (represented in the [**WIA_IPA_ITEM_CATEGORY**](wia-ipa-item-category.md) property as WIA_CATEGORY_FEEDER).
 
-This property is optional, and is valid only for the Feeder data source item (represented in the [**WIA\_IPA\_ITEM\_CATEGORY**](wia-ipa-item-category.md) property as WIA\_CATEGORY\_FEEDER).
-
-When the WIA minidriver sets the MULTIPLE\_FEED bit for the [**WIA\_DPS\_DOCUMENT\_HANDLING\_STATUS**](wia-dps-document-handling-status.md) property, the minidriver should clear this bit (flag) as soon as the minidriver detects that the feeder is unloaded, is reloaded, or a new scan job begins.
+When the WIA minidriver sets the MULTIPLE_FEED bit for the [**WIA_DPS_DOCUMENT_HANDLING_STATUS**](wia-dps-document-handling-status.md) property, the minidriver should clear this bit (flag) as soon as the minidriver detects that the feeder is unloaded, is reloaded, or a new scan job begins.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
+**Header:** wiadef.h (include Wiadef.h)

@@ -9,11 +9,10 @@ api_name:
 - wscn GetScannerElementsRequest
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/25/2023
 ---
 
 # GetScannerElementsRequest element
-
 
 The required **GetScannerElementsRequest** element enables a client to request information about the scanner.
 
@@ -31,25 +30,11 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="requestedelements.md" data-raw-source="[&lt;strong&gt;RequestedElements&lt;/strong&gt;](requestedelements.md)"><strong>RequestedElements</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**RequestedElements**](requestedelements.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 
@@ -153,17 +138,6 @@ In the following code example, a client specifies two QName values. The first QN
 
 ## See also
 
-
 [**GetScannerElementsResponse**](getscannerelementsresponse.md)
 
 [**RequestedElements**](requestedelements.md)
-
- 
-
- 
-
-
-
-
-
-

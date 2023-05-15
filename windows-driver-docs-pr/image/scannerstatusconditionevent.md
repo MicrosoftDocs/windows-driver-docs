@@ -9,11 +9,10 @@ api_name:
 - wscn ScannerStatusConditionEvent
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/02/2023
 ---
 
 # ScannerStatusConditionEvent element
-
 
 The required **ScannerStatusConditionEvent** element provides the client with detailed information about a single status change in the scan device.
 
@@ -31,25 +30,11 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="devicecondition.md" data-raw-source="[&lt;strong&gt;DeviceCondition&lt;/strong&gt;](devicecondition.md)"><strong>DeviceCondition</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DeviceCondition**](devicecondition.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 

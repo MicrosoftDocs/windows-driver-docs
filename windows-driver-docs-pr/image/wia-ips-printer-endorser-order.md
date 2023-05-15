@@ -1,6 +1,6 @@
 ---
-title: WIA\_IPS\_PRINTER\_ENDORSER\_ORDER
-description: The WIA\_IPS\_PRINTER\_ENDORSER\_ORDER property is used to configure the order in which the scan and imprinting/endorsing operations are to be executed relative to each other. The WIA minidriver creates and maintains this property.
+title: WIA_IPS_PRINTER_ENDORSER_ORDER
+description: The WIA_IPS_PRINTER_ENDORSER_ORDER property is used to configure the order in which the scan and imprinting/endorsing operations are to be executed relative to each other. The WIA minidriver creates and maintains this property.
 keywords: ["WIA_IPS_PRINTER_ENDORSER_ORDER Imaging Devices"]
 topic_type:
 - apiref
@@ -11,74 +11,30 @@ api_location:
 - Wiadef.h
 api_type:
 - HeaderDef
-ms.date: 05/22/2018
+ms.date: 05/08/2023
 ---
 
-# WIA\_IPS\_PRINTER\_ENDORSER\_ORDER
+# WIA_IPS_PRINTER_ENDORSER_ORDER
 
+The **WIA_IPS_PRINTER_ENDORSER_ORDER** property is used to configure the order in which the scan and imprinting/endorsing operations are to be executed relative to each other. The WIA minidriver creates and maintains this property.
 
-The **WIA\_IPS\_PRINTER\_ENDORSER\_ORDER** property is used to configure the order in which the scan and imprinting/endorsing operations are to be executed relative to each other. The WIA minidriver creates and maintains this property.
+Property Type: VT_I4
 
-
-
-
-Property Type: VT\_I4
-
-Valid Values: WIA\_PROP\_NONE
+Valid Values: WIA_PROP_NONE
 
 Access Rights: Read-only
 
 ## Remarks
 
-The following table describes the constants that are valid with the [**WIA\_IPS\_PREVIEW\_TYPE**](wia-ips-preview-type.md) property.
+The following table describes the constants that are valid with the [**WIA_IPS_PREVIEW_TYPE**](wia-ips-preview-type.md) property.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>WIA_PRINTER_ENDORSER_BEFORE_SCAN</p></td>
-<td><p>Printing/endorsing is performed on a document page before this document page is scanned.</p></td>
-</tr>
-<tr class="even">
-<td><p>WIA_PRINTER_ENDORSER_AFTER_SCAN</p></td>
-<td><p>Printing/endorsing is performed on a document page after this document page is scanned.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Value | Definition |
+|--|--|
+| WIA_PRINTER_ENDORSER_BEFORE_SCAN | Printing/endorsing is performed on a document page before this document page is scanned. |
+| WIA_PRINTER_ENDORSER_AFTER_SCAN | Printing/endorsing is performed on a document page after this document page is scanned. |
 
 This property must be supported by all Imprinter/Endorser data source items. There is no required default value.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Wiadef.h (include Wiadef.h)</td>
-</tr>
-</tbody>
-</table>
-
- 
-
- 
-
-
-
-
-
+**Header:** wiadef.h (include Wiadef.h)

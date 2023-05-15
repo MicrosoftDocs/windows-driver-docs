@@ -9,11 +9,10 @@ api_name:
 - wscn FormatsSupported
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/25/2023
 ---
 
 # FormatsSupported element
-
 
 The required **FormatsSupported** element is a collection of elements that list the document file formats that the scanner supports.
 
@@ -31,41 +30,15 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="formatvalue.md" data-raw-source="[&lt;strong&gt;FormatValue&lt;/strong&gt;](formatvalue.md)"><strong>FormatValue</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**FormatValue**](formatvalue.md) |
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="devicesettings.md" data-raw-source="[&lt;strong&gt;DeviceSettings&lt;/strong&gt;](devicesettings.md)"><strong>DeviceSettings</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**DeviceSettings**](devicesettings.md) |
 
 ## Remarks
 
@@ -73,17 +46,6 @@ Each [**FormatValue**](formatvalue.md) element specifies a file format that desc
 
 ## See also
 
-
 [**DeviceSettings**](devicesettings.md)
 
 [**FormatValue**](formatvalue.md)
-
- 
-
- 
-
-
-
-
-
-

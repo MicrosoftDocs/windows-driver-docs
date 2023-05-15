@@ -9,11 +9,10 @@ api_name:
 - wscn RotationValue
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 05/01/2023
 ---
 
 # RotationValue element
-
 
 The required **RotationValue** element specifies a single rotation value supported by the scan device.
 
@@ -35,27 +34,13 @@ Required. A numeric value that must be 0, 90, 180, or 270.
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="rotationssupported.md" data-raw-source="[&lt;strong&gt;RotationsSupported&lt;/strong&gt;](rotationssupported.md)"><strong>RotationsSupported</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**RotationsSupported**](rotationssupported.md) |
 
 ## Remarks
 
@@ -65,15 +50,4 @@ All WSD Scan Services must support the value of 0. You can both extend and subse
 
 ## See also
 
-
 [**RotationsSupported**](rotationssupported.md)
-
- 
-
- 
-
-
-
-
-
-

@@ -22,7 +22,7 @@ This is the ecosystem counterpart of [Myriad of machines with integrated GPU tha
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum instances**|20000 machines|
 |**Passing criteria**|<= 60/10000 of machines encountering TDR|
-|**Measure ID**|24633147|
+|**Measure ID**|24633147 (Legacy)|
 
 ## Calculation
 

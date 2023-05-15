@@ -22,7 +22,7 @@ In some cases, you might need to retrieve symbols for files that are on an isola
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
-Suppose yourApp.exe is running on an isolated computer. The following command creates a manifest file that describes all the symbols needed to debug the yourApp.exe pocess.
+Suppose yourApp.exe is running on an isolated computer. The following command creates a manifest file that describes all the symbols needed to debug the yourApp.exe process.
 
 ```dbgcmd
 C:\>SymChk /om c:\Manifest\man.txt /ie yourApp.exe

@@ -22,7 +22,7 @@ This is the ecosystem counterpart of [Myriad of machines that had a TDR caused b
 | **Measurement criteria** | Aggregation of machines |
 | **Minimum population** | 20,000 machines |
 | **Passing criteria** | <= 65/10,000 machines experience a TDR |
-| **Measure ID** | 20350972 |
+| **Measure ID** | 20350972 (Legacy)|
 
 ## Calculation
 

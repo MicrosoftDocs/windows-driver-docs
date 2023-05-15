@@ -9,11 +9,10 @@ api_name:
 - wscn GetJobElementsResponse
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 04/25/2023
 ---
 
 # GetJobElementsResponse element
-
 
 The required **GetJobElementsResponse** element returns the job-related information that a client requests.
 
@@ -31,25 +30,11 @@ There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="jobelements.md" data-raw-source="[&lt;strong&gt;JobElements&lt;/strong&gt;](jobelements.md)"><strong>JobElements</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**JobElements**](jobelements.md) |
 
 ## Parent elements
-
 
 There are no parent elements.
 
@@ -103,19 +88,8 @@ In the following code example, the Scan Service returns the job status for the j
 
 ## See also
 
-
 [**GetJobElementsRequest**](getjobelementsrequest.md)
 
 [**JobElements**](jobelements.md)
 
 [**JobId**](jobid.md)
-
-
-
-
-
-
-
-
-
-
