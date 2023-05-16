@@ -42,7 +42,7 @@ Miniport drivers advertise RSSv2 support by setting the **CapabilitiesFlags** me
 
 If a miniport adapter does not advertise RSSv2 capability, all VMQ-enabled VPorts stay in static spreading mode even if these VPorts are requested to perform dynamic spreading. The RSSv1 OID for configuration of RSS parameters, [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md), is used for these VPorts that are still in static spreading mode.
 
-Miniport drivers only need to implement one RSS control mechanism - either RSSv1 or RSSv2. If the driver advertises RSSv2 support, NDIS will convert RSSv1 OIDs to RSSv2 OIDs if necessary to congifure per-VPort spreading. The miniport driver must support the two new OIDs and modify the behavior of the RSSv1 OID_GEN_RECEIVE_SCALE_PARAMETERS OID as follows:
+Miniport drivers only need to implement one RSS control mechanism - either RSSv1 or RSSv2. If the driver advertises RSSv2 support, NDIS will convert RSSv1 OIDs to RSSv2 OIDs if necessary to configure per-VPort spreading. The miniport driver must support the two new OIDs and modify the behavior of the RSSv1 OID_GEN_RECEIVE_SCALE_PARAMETERS OID as follows:
 
 - [OID_GEN_RECEIVE_SCALE_PARAMETERS](oid-gen-receive-scale-parameters.md) is used only for Query requests in RSSv2 and not for setting RSS parameters.
 - [OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md) is a Query and a Set OID used for configuring the scaling entity's parameters such as the number of queues, the number of ITEs, RSS enablement/disablement, and hash key updates.
