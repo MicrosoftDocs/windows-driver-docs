@@ -4,7 +4,7 @@ description: PoolMon Display
 keywords:
 - PoolMon WDK , displays
 - Memory Pool Monitor WDK , displays
-ms.date: 04/20/2017
+ms.date: 05/16/2023
 ---
 
 # PoolMon Display
@@ -28,7 +28,7 @@ The following table describes the columns in the PoolMon display.
 |**Bytes**|The size of the allocations, in bytes used.|
 |**( )**|The change in the allocation size since the last update.|
 |**Per Alloc**|The value of Bytes divided by the value of Diff.|
-|**Mapped_Driver**|The local drivers (**/c**) and other commonly used drivers and system components (**/g**) that assign the pool tag value. This column appears only when you use the **/c** or **/g** parameters.|
+|**Mapped_Driver**|The local drivers other commonly used drivers and system components (**/g**) that assign the pool tag value. This column appears only when you use the **/g** parameter.|
 
 The following sample PoolMon output is sorted by number of allocations. (To sort your display this way, start PoolMon with the **/a** parameter.)
 

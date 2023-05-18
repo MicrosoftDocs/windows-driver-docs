@@ -24,8 +24,6 @@ The version of PoolMon included in the Windows Driver Kit (WDK) and described in
 
 ### <span id="Pool_Tagging_Requirement"></span><span id="pool_tagging_requirement"></span><span id="POOL_TAGGING_REQUIREMENT"></span>Pool Tagging Requirement
 
-Before running any version of PoolMon on Windows XP or earlier versions of Windows, you must enable pool tagging. Pool tagging is permanently enabled on Windows Server 2003 and later versions of Windows.
-
 The pool tagging feature collects and calculates statistics about pool memory sorted by the tag value of the allocation.
 
 To enable pool tagging, use GFlags, a tool included in Debugging Tools for Windows. Open the **Global Flags** dialog box, check the **Enable Pool Tagging** check box, and then restart the computer.
@@ -35,10 +33,6 @@ To enable pool tagging, use GFlags, a tool included in Debugging Tools for Windo
 PoolMon displays allocations from the Terminal Services session pools only on Windows Server 2003 and later versions of Windows.
 
 Windows allocates memory from Terminal Services session pools only when the computer is configured as a Terminal Server. On Terminal Servers, the kernel-mode portions of the Win32 subsystem allocate memory from the session pools. Otherwise, Windows allocates pool memory for Terminal Services from the system pool.
-
-### <span id="Requirements_for_Generating_a_Local_Tag_File"></span><span id="requirements_for_generating_a_local_tag_file"></span><span id="REQUIREMENTS_FOR_GENERATING_A_LOCAL_TAG_FILE"></span>Requirements for Generating a Local Tag File
-
-The **/c** parameter, which creates a localtag.txt file of pool tags used by drivers on the local machine, is supported only on 32-bit versions of Windows.
 
 ### <span id="Display_Requirements"></span><span id="display_requirements"></span><span id="DISPLAY_REQUIREMENTS"></span>Display Requirements
 
@@ -55,12 +49,3 @@ msvcp70.dll
 msvcr70.dll
 
 pooltag.txt
-
- 
-
- 
-
-
-
-
-
