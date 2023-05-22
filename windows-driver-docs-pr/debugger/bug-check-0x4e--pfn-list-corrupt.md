@@ -2,7 +2,7 @@
 title: Bug Check 0x4E PFN_LIST_CORRUPT
 description: The PFN_LIST_CORRUPT bug check has a value of 0x0000004E. This indicates that the page frame number (PFN) list is corrupted.
 keywords: ["Bug Check 0x4E PFN_LIST_CORRUPT", "PFN_LIST_CORRUPT"]
-ms.date: 05/18/2023
+ms.date: 05/22/2023
 topic_type:
 - apiref
 ms.topic: reference
@@ -56,8 +56,8 @@ The PFN\_LIST\_CORRUPT bug check has a value of 0x0000004E. This indicates that 
 <td align="left"><p>0x06</p></td>
 <td align="left"><p>The page frame number</p></td>
 <td align="left"><p>The prototype PTE</p></td>
-<td align="left"><p>The PTE</p></td>
-<td align="left"><p>The hardware PTE and the prototype PTE PFN data structures have been corrupted. This can be caused by hardware single bit errors, broken DMA transfers, etc. </p></td>
+<td align="left"><p>The PTE contents</p></td>
+<td align="left"><p>The hardware PTE and/or the prototype PTE data structures have been corrupted. This can be caused by hardware single bit errors, broken DMA transfers, etc. </p></td>
 </tr>
 <td align="left"><p>0x07</p></td>
 <td align="left"><p>The page frame number</p></td>
