@@ -6,7 +6,7 @@ ms.date: 04/05/2023
 
 # Building a WiFiCx driver for multiple versions of Windows
 
-WiFiCx allows you to build a driver once and use the resulting binary on multiple versions of Windows. Your driver can both run on future versions of Windows and  run on past versions, back to Windows 11, version 21H2.
+WiFiCx allows you to build a driver once and use the resulting binary on multiple versions of Windows. Your driver can both run on future versions of Windows and run on past versions, back to Windows 11, version 21H2.
 
 To run your driver on older versions of Windows, you must:
  
@@ -29,9 +29,8 @@ To run your driver on older versions of Windows, you must:
 IHVs have the choice to control the **WIFI_MINIMUM_VERSION_REQUIRED**. For example, to run your WiFiCx 1.1 or 1.2 version driver with WiFiCx 1.0, set **WIFI_MINIMUM_VERSION_REQUIRED** to **0**.
 
 ```cpp
-C_DEFINES=$(C_DEFINES) -DRPC_NO_WINDOWS_H /DWIFI_MINIMUM_VERSION_REQUIRED=0
+C_DEFINES=$(C_DEFINES) -DRPC_NO_WINDOWS_H -DWIFI_MINIMUM_VERSION_REQUIRED=0
 ```
-
 
 ## Check if functionality is present
 
