@@ -200,7 +200,7 @@ HKR, Ndi,FilterClass,, compression
 - A modifying filter INF file can specify common parameter definitions for the driver and parameters that are associated with a specific adapter. The following example shows some common parameter definitions.
 
 > [!CAUTION]
-> Specifying common parameters in a modifying filter INF file is not recommended and will result in a compliance violation.
+> Do not use **HKR** **AddReg** to add keys directly under the service state. This is a compliance violation. You must add these keys under the Parameters key of the service to be compliant.
 
   ```INF
   [Common.Params.reg]

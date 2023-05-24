@@ -14,6 +14,8 @@ ms.date: 01/07/2019
 
 Network components are installed by the network configuration subsystem.
 
+To create a driver package with a notify object that is executed from the [Driver Store](../install/driver-store.md), you must have a minimum OS build number of 25341. You can't successfully install a driver package in this scenario on older versions of Windows.
+
 **To install a network component**
 
 1.  The network configuration subsystem calls the class installer for the particular component type. The class installer then calls the Setup API to retrieve information from the component's INF file and to install the component.
@@ -25,8 +27,6 @@ Network components are installed by the network configuration subsystem.
     ```
 
     The class installer calls the DLL's entry-point function to register the notify object. The network configuration subsystem creates an instance of the notify object and calls the object's [**INetCfgComponentControl::Initialize**](/previous-versions/windows/hardware/network/ff547729(v=vs.85)) method. This method initializes the object and provides access to the component and all aspects of network configuration.
-
-    On older versions of Windows you can't create a driver package with a notify object that is executed from the [Driver Store](../install/driver-store.md). To successfully install a driver package in this scenario, you need to have a minimum OS build number of 25341.
 
 2.  To perform operations required to install the component, the network configuration subsystem calls the notify object's [**INetCfgComponentSetup::Install**](/previous-versions/windows/hardware/network/ff547762(v=vs.85)) method.
 
