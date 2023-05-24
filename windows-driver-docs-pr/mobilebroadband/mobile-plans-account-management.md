@@ -214,6 +214,8 @@ A certificate with the following Subject Name will be passed during the call to 
 C=US, ST=WA, L=Redmond, O=Microsoft Corporation, CN=partners.datamart.windows.com
 ```
 
+The certificate chains to this CA: [DigiCert Global Root G2](https://crt.sh/?d=8656329).
+
 We recommend that all Mobile Operators validate that the Subject Name of the certificate matches the one above.
 
 ### How to enable Get Balance in Windows COSA
