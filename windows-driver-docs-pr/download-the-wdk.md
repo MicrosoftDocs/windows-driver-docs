@@ -6,7 +6,7 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 11/21/2022
+ms.date: 05/24/2023
 ---
 
 # Download the Windows Driver Kit (WDK)
@@ -90,9 +90,9 @@ The EWDK is a standalone, self-contained command-line environment for building d
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
-### ![download icon.](images/download-install.png) Windows 11 (updated May 2023), version 22H2 EWDK with Visual Studio Build Tools
+### ![download icon.](images/download-install.png) Windows 11, version 22H2 (updated May 2023) EWDK with Visual Studio Build Tools
 
-* [Download the Windows 11 (updated May 2023), version 22H2 EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
+* [Download the Windows 11, version 22H2 (updated May 2023) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
 
 > You can use the Visual Studio interface with the build tools provided in the EWDK.
 >
