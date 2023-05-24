@@ -32,15 +32,19 @@ To create a Network Driver Interface Specification (NDIS) miniport driver packag
 
   Building a driver differs from building a user-mode application. For more information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) testing, see [Building, Debugging, and Testing Drivers](/windows-hardware/drivers). For more information about building, testing, verifying, and debugging tools, see [Driver Development Tools](../devtest/index.md).
 
-- Step 5: Read the miniport driver introduction topics.
+- Step 5: Read the miniport driver introduction topics:
+
   [Types of NDIS Miniport Drivers](deserialized-ndis-miniport-drivers.md)
+
   [Network Interface Card Support](network-interface-card-support.md)
+
   [Sample NDIS Miniport Drivers](sample-ndis-miniport-drivers.md)
+
 - Step 6: Read the [writing miniport drivers section](./initializing-a-miniport-driver.md).
 
   This section provides an overview of the primary miniport driver interfaces. These interfaces included functions that miniport drivers provide (*MiniportXxx* functions) and NDIS calls to initiate operations. NDIS provides **Ndis*Xxx*** functions that miniport drivers call to perform NDIS operations.
 
-- Step 7: Review the [NDIS miniport driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617918) in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+- Step 7: Review the [NDIS miniport driver sample](https://github.com/microsoft/Windows-driver-samples/tree/95037b3f77f3a745f7682f991ac80e81f91f5362/network/ndis/netvmini/6x) in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
 - Step 8: (optional reading) Additional considerations for Miniport Drivers.
 

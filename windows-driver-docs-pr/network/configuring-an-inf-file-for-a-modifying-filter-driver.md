@@ -13,7 +13,7 @@ ms.date: 04/20/2017
 
 
 
-The following NDIS filter driver installation issues are associated with modifying filter drivers. To create your own modifying filter driver INF file, you can also adapt the [sample NDIS 6.0 filter driver](https://go.microsoft.com/fwlink/p/?LinkId=618052).
+The following NDIS filter driver installation issues are associated with modifying filter drivers. To create your own modifying filter driver INF file, you can also adapt the [sample NDIS 6.0 filter driver](https://github.com/microsoft/Windows-driver-samples/tree/95037b3f77f3a745f7682f991ac80e81f91f5362/network/ndis/filter).
 
 -   Set the **Class** INF file entry to **NetService** in the INF file. The following example shows a sample **Class** entry for the INF file.
     ```INF
