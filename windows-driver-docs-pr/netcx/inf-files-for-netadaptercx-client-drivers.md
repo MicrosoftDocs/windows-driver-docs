@@ -12,6 +12,8 @@ INF files for NetAdapterCx client drivers build on top of standard network INF f
 
 For more information about standard network INF files, see [Creating Network INF Files](../network/creating-network-inf-files.md). For more information about base INF files, see [Overview of INF files](../install/overview-of-inf-files.md).
 
+**Note**: Selective Suspend related keywords are deprecated in NetAdapterCx and must not be used by its client drivers.
+
 The following table describes the new INF keywords in NetAdapterCx.
 
 | New network keyword | INF file section | Optional or required | Description |
