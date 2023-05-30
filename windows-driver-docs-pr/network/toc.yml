@@ -1498,6 +1498,8 @@
         items: 
         - name: "Version Section in a Network INF File"
           href: version-section-in-a-network-inf-file.md
+        - name: "Manufacturer Section in a Network INF File"
+          href: manufacturer-section-in-a-network-inf-file.md          
         - name: "Models Section in a Network INF File"
           href: models-section-in-a-network-inf-file.md
         - name: "DDInstall Section in a Network INF File"

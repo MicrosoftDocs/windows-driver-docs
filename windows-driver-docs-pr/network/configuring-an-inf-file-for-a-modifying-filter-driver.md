@@ -13,7 +13,7 @@ ms.date: 04/20/2017
 
 
 
-The following NDIS filter driver installation issues are associated with modifying filter drivers. To create your own modifying filter driver INF file, you can also adapt the [sample NDIS 6.0 filter driver](https://go.microsoft.com/fwlink/p/?LinkId=618052).
+The following NDIS filter driver installation issues are associated with modifying filter drivers. To create your own modifying filter driver INF file, you can also adapt the [sample NDIS 6.0 filter driver](https://github.com/microsoft/Windows-driver-samples/tree/95037b3f77f3a745f7682f991ac80e81f91f5362/network/ndis/filter).
 
 -   Set the **Class** INF file entry to **NetService** in the INF file. The following example shows a sample **Class** entry for the INF file.
     ```INF
@@ -72,7 +72,7 @@ The following NDIS filter driver installation issues are associated with modifyi
     ServiceType     = 1 ;SERVICE_KERNEL_DRIVER
     StartType       = 1 ;SERVICE_SYSTEM_START
     ErrorControl    = 1 ;SERVICE_ERROR_NORMAL
-    ServiceBinary   = %12%\ndislwf.sys
+    ServiceBinary   = %13%\ndislwf.sys
     LoadOrderGroup  = NDIS
     Description     = %NdisLwf_Desc%
     AddReg          = Common.Params.reg
@@ -197,7 +197,11 @@ HKR, Ndi,FilterClass,, compression
 
   For more information about controlling the driver bindings, see [Specifying Filter Driver Binding Relationships](specifying-filter-driver-binding-relationships.md).
 
-- A modifying filter INF file should specify common parameter definitions for the driver and parameters that are associated with a specific adapter. The following example shows some common parameter definitions.
+- A modifying filter INF file can specify common parameter definitions for the driver and parameters that are associated with a specific adapter. The following example shows some common parameter definitions.
+
+> [!CAUTION]
+> Using **HKR AddReg** to put keys directly under the service state is a compliance violation. These keys need to be added under the Parameters key of the service to be compliant.
+
   ```INF
   [Common.Params.reg]
 

@@ -18,7 +18,7 @@ ms.date: 04/20/2017
 
 An intermediate driver must handle requests to set power to the working state (a network device power state of D0) and to sleeping states (a network device power state of D1, D2, or D3). The intermediate driver should also maintain power state variables and a StandBy flag. These issues are discussed further in this topic.
 
-For examples of intermediate driver power management, see the [NDIS MUX Intermediate Driver and Notify Object](https://go.microsoft.com/fwlink/p/?LinkId=617916) driver sample in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+For examples of intermediate driver power management, see the [NDIS MUX Intermediate Driver and Notify Object](https://github.com/microsoft/Windows-driver-samples/tree/develop/network/ndis/mux) driver sample in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples/tree/develop) repository on GitHub.
 
 ### Handling a Set Power Request to a Sleeping State
 
