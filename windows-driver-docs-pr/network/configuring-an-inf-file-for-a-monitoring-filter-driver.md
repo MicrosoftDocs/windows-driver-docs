@@ -108,7 +108,7 @@ The following NDIS filter driver installation issues are associated with monitor
 - A monitoring filter INF file can specify common parameter definitions for the filter driver, parameters that are associated with a specific adapter, and parameters that are associated with a particular instance (filter module). The following example shows some common parameter definitions.
 
     > [!CAUTION]
-    > Do not use **HKR** **AddReg** to add keys directly under the service state. This is a compliance violation. You must add these keys under the Parameters key of the service to be compliant.
+    > Using **HKR AddReg** to put keys directly under the service state is a compliance violation. These keys need to be added under the Parameters key of the service to be compliant.
 
     ```INF
     [Common.Params.reg]
