@@ -10,7 +10,7 @@ api_name:
 - Inf2Cat
 api_type:
 - NA
-ms.date: 06/10/2022
+ms.date: 05/31/2023
 ---
 
 # Inf2Cat
@@ -24,10 +24,16 @@ Inf2Cat (Inf2Cat.exe) is a command-line tool that determines whether a [driver p
     WindowsVersionList [/nocat] [/verbose] [/?] [other switches]
 ```
 
-> [!TIP]
-> If you see `DriverVer set to a date in the future` when building your driver, change your driver package project settings so that Inf2Cat sets `/uselocaltime`. To do so, use **Configuration Properties->Inf2Cat->General->Use Local Time**. Now both [Stampinf](stampinf-command-options.md) and Inf2Cat use local time.
-
 The Inf2Cat tool is located in the Program Files\\Windows Kits\\8.0\\bin\\x86 or Program Files (x86)\\Windows Kits\\8.0\\bin\\x86 folder of the WDK.
+
+## Troubleshooting
+
+If you see `DriverVer set to a date in the future` when building your driver, change your driver package project settings so that Inf2Cat sets `/uselocaltime`. To do so, use **Configuration Properties->Inf2Cat->General->Use Local Time**. Now both [Stampinf](stampinf-command-options.md) and Inf2Cat use local time.
+
+If you see `An attempt was made to load a program with an incorrect format. (Exception from HRESULT: 0x8007000B) Signability test failed.`, try one of these workarounds:
+
+1. Set the project's inf2cat settings to `/nocat` and run inf2cat manually.
+2. Delete `inf2cat.exe.manifest` from the `\x86` folder of the active WDK to cause the tool to run in Visual Studio.
 
 ## Switches and Arguments
 
