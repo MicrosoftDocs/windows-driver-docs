@@ -1,7 +1,7 @@
 ---
 title: ACX streaming
 description: This topic provides a summary of the ACX streaming and the associated buffering, which is critical to a glitch free audio experience.
-ms.date: 04/19/2023
+ms.date: 05/26/2023
 ms.localizationpriority: medium
 ---
 
@@ -202,7 +202,162 @@ When exposing support for Large Buffers, the driver will also provide a callback
   
 The packet size for stream buffer allocation is determined based on the minimum and maximum.
 
-Since the minimum and maximum buffer sizes may be volatile, the driver can fail the packet allocation call if the minimum and maximum have changed.  
+Since the minimum and maximum buffer sizes may be volatile, the driver can fail the packet allocation call if the minimum and maximum have changed.
+
+### Specifying ACX buffer constraints
+
+To specify ACX buffer constraints, ACX drivers can use the KS/PortCls properties setting - [KSAUDIO_PACKETSIZE_CONSTRAINTS2](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints2) and the [KSAUDIO_PACKETSIZE_PROCESSINGMODE_CONSTRAINT structure](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_signalprocessingmode_constraint).
+
+The following code sample shows how to set buffer size constraints for WaveRT buffers for different signal processing modes.
+
+```cpp
+//
+// Describe buffer size constraints for WaveRT buffers
+// Note: 10msec for each of the Modes is the default system behavior.
+//
+static struct
+{
+    KSAUDIO_PACKETSIZE_CONSTRAINTS2                 TransportPacketConstraints;         // 1
+    KSAUDIO_PACKETSIZE_PROCESSINGMODE_CONSTRAINT    AdditionalProcessingConstraints[4]; // + 4 = 5
+} DspR_RtPacketSizeConstraints =
+{
+    {
+        10 * HNSTIME_PER_MILLISECOND,                           // 10 ms minimum processing interval
+        FILE_BYTE_ALIGNMENT,                                    // 1 byte packet size alignment
+        0,                                                      // no maximum packet size constraint
+        5,                                                      // 5 processing constraints follow
+        {
+            STATIC_AUDIO_SIGNALPROCESSINGMODE_RAW,              // constraint for raw processing mode
+            0,                                                  // NA samples per processing frame
+            10 * HNSTIME_PER_MILLISECOND,                       // 100000 hns (10ms) per processing frame
+        },
+    },
+    {
+        {
+            STATIC_AUDIO_SIGNALPROCESSINGMODE_DEFAULT,          // constraint for default processing mode
+            0,                                                  // NA samples per processing frame
+            10 * HNSTIME_PER_MILLISECOND,                       // 100000 hns (10ms) per processing frame
+        },
+        {
+            STATIC_AUDIO_SIGNALPROCESSINGMODE_COMMUNICATIONS,   // constraint for movie communications mode
+            0,                                                  // NA samples per processing frame
+            10 * HNSTIME_PER_MILLISECOND,                       // 100000 hns (10ms) per processing frame
+        },
+        {
+            STATIC_AUDIO_SIGNALPROCESSINGMODE_MEDIA,            // constraint for default media mode
+            0,                                                  // NA samples per processing frame
+            10 * HNSTIME_PER_MILLISECOND,                       // 100000 hns (10ms) per processing frame
+        },
+        {
+            STATIC_AUDIO_SIGNALPROCESSINGMODE_MOVIE,            // constraint for movie movie mode
+            0,                                                  // NA samples per processing frame
+            10 * HNSTIME_PER_MILLISECOND,                       // 100000 hns (10ms) per processing frame
+        },
+    }
+};
+```
+
+A DSP_DEVPROPERTY structure is used to store the constraints.
+
+```cpp
+typedef struct _DSP_DEVPROPERTY {
+    const DEVPROPKEY   *PropertyKey;
+    DEVPROPTYPE Type;
+    ULONG BufferSize;
+    __field_bcount_opt(BufferSize) PVOID Buffer;
+} DSP_DEVPROPERTY, PDSP_DEVPROPERTY;
+```
+
+And an array of those structures is created.
+
+```cpp
+const DSP_DEVPROPERTY DspR_InterfaceProperties[] =
+{
+    {
+        &DEVPKEY_KsAudio_PacketSize_Constraints2,       // Key
+        DEVPROP_TYPE_BINARY,                            // Type
+        sizeof(DspR_RtPacketSizeConstraints),           // BufferSize
+        &DspR_RtPacketSizeConstraints,                  // Buffer
+    },
+};
+```
+
+Later in the EvtCircuitCompositeCircuitInitialize function, the AddPropertyToCircuitInterface helper function is used to add the array of interface properties to the circuit.
+
+```cpp
+   // Set RT buffer constraints.
+    //
+    status = AddPropertyToCircuitInterface(Circuit, ARRAYSIZE(DspC_InterfaceProperties), DspC_InterfaceProperties);
+```
+
+The AddPropertyToCircuitInterface helper function takes the [AcxCircuitGetSymbolicLinkName](/windows-hardware/drivers/ddi/acxcircuit/nf-acxcircuit-acxcircuitgetsymboliclinkname) for the circuit and then calls [IoGetDeviceInterfaceAlias](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfacealias) to locate the audio interface used by the circuit.
+
+Then the SetDeviceInterfacePropertyDataMultiple function calls [IoSetDeviceInterfacePropertyData function](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacepropertydata) to modify the current value of the device interface property - the KS audio property values on the audio interface for the ACXCIRCUIT.
+
+```cpp
+PAGED_CODE_SEG
+NTSTATUS AddPropertyToCircuitInterface(
+    _In_ ACXCIRCUIT                                         Circuit,
+    _In_ ULONG                                              PropertyCount,
+    _In_reads_opt_(PropertyCount) const DSP_DEVPROPERTY   * Properties
+)
+{
+    PAGED_CODE();
+
+    NTSTATUS        status      = STATUS_UNSUCCESSFUL;
+    UNICODE_STRING  acxLink     = {0};
+    UNICODE_STRING  audioLink   = {0};
+    WDFSTRING       wdfLink     = AcxCircuitGetSymbolicLinkName(Circuit);
+    bool            freeStr     = false;
+
+    // Get the underline unicode string.
+    WdfStringGetUnicodeString(wdfLink, &acxLink);
+
+    // Make sure there is a string.
+    if (!acxLink.Length || !acxLink.Buffer)
+    {
+        status = STATUS_INVALID_DEVICE_STATE;
+        DrvLogError(g_BthLeVDspLog, FLAG_INIT,
+            L"AcxCircuitGetSymbolicLinkName failed, Circuit: %p, %!STATUS!",
+            Circuit, status);
+        goto exit;
+    }
+
+    // Get the audio interface.
+    status = IoGetDeviceInterfaceAlias(&acxLink, &KSCATEGORY_AUDIO, &audioLink);
+    if (!NT_SUCCESS(status))
+    {
+        DrvLogError(g_BthLeVDspLog, FLAG_INIT,
+            L"IoGetDeviceInterfaceAlias failed, Circuit: %p, symbolic link name: %wZ, %!STATUS!",
+            Circuit, &acxLink, status);
+        goto exit;
+    }
+
+    freeStr = true;
+
+    // Set specified properties on the audio interface for the ACXCIRCUIT.
+    status = SetDeviceInterfacePropertyDataMultiple(&audioLink, PropertyCount, Properties);
+    if (!NT_SUCCESS(status))
+    {
+        DrvLogError(g_BthLeVDspLog, FLAG_INIT,
+            L"SetDeviceInterfacePropertyDataMultiple failed, Circuit: %p, symbolic link name: %wZ, %!STATUS!",
+            Circuit, &audioLink, status);
+        goto exit;
+    }
+
+    status = STATUS_SUCCESS;
+
+exit:
+
+    if (freeStr)
+    {
+        RtlFreeUnicodeString(&audioLink);
+        freeStr = false;
+    }
+
+    return status;
+}
+```
   
 ### Stream state changes
 
@@ -241,7 +396,44 @@ Once the stream notification has been signaled, the client can send [KSPROPERTY_
 For Burst capture, the source circuit can release a new packet to the ACX framework as soon as GETREADPACKET has been called.
 
 The client can also use [KSPROPERTY_RTAUDIO_PACKETVREGISTER](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_packetvregister_property) to get a pointer to the RTAUDIO_PACKETVREGISTER structure for the stream. This structure will be updated by the ACX framework before signaling packet complete.
-  
+
+##### Legacy KS kernel streaming behavior
+
+There can be situations, such as when a driver implements burst capture (as in a key word spotter implementation), where the legacy kernel streaming packet handling behavior needs to be used instead of the PacketVRegister. To use the previous packet-based behavior, the driver should return STATUS_NOT_SUPPORTED for [KSPROPERTY_RTAUDIO_PACKETVREGISTER](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_packetvregister_property).
+
+The following sample shows how to do this in the [AcxStreamInitAssignAcxRequestPreprocessCallback](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxstreaminitassignacxrequestpreprocesscallback) for an ACXSTREAM. For more information see [AcxStreamDispatchAcxRequest](/windows-hardware/drivers/ddi/acxstreams/nf-acxstreams-acxstreamdispatchacxrequest).
+
+```cpp
+Circuit_EvtStreamRequestPreprocess(
+    _In_  ACXOBJECT  Object,
+    _In_  ACXCONTEXT DriverContext,
+    _In_  WDFREQUEST Request)
+{
+    ACX_REQUEST_PARAMETERS params;
+    PCIRCUIT_STREAM_CONTEXT streamCtx;
+
+    streamCtx = GetCircuitStreamContext(Object);
+    // The driver would define the pin type to track which pin is the keyword pin.
+    // The driver would add this to the driver-defined context when the stream is created.
+    // The driver would use AcxStreamInitAssignAcxRequestPreprocessCallback to set
+    // the Circuit_EvtStreamRequestPreprocess callback for the stream.
+    if (streamCtx && streamCtx->PinType == CapturePinTypeKeyword)
+    {
+        if (IsEqualGUID(params.Parameters.Property.Set, KSPROPSETID_RtAudio) &&
+            params.Parameters.Property.Id == KSPROPERTY_RTAUDIO_PACKETVREGISTER)
+        {
+            status = STATUS_NOT_SUPPORTED;
+            outDataCb = 0;
+
+            WdfRequestCompleteWithInformation(Request, status, outDataCb);
+            return;
+        }
+    }
+
+    (VOID)AcxStreamDispatchAcxRequest((ACXSTREAM)Object, Request);
+}
+```
+
 #### Stream position  
 
 The ACX framework will call the [EvtAcxStreamGetPresentationPosition](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_presentation_position)   callback to get the current stream position. The current stream position will include the PlayOffset and the WriteOffset.  
@@ -293,19 +485,19 @@ This structure identifies the driver callbacks for streaming to the ACX framewor
 
 ### Streaming callbacks
 
-#### EVTACXSTREAMALLOCATERTPACKETS
+#### EvtAcxStreamAllocateRtPackets
 
 The [EvtAcxStreamAllocateRtPackets](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_allocate_rtpackets) event tells the driver to allocate RtPackets for streaming. An AcxRtStream will receive PacketCount = 2 for event driven streaming or PacketCount = 1 for timer based streaming. If the driver uses a single buffer for both packets, the second RtPacketBuffer should have a [WDF_MEMORY_DESCRIPTOR](/windows-hardware/drivers/ddi/wdfmemory/ns-wdfmemory-_wdf_memory_descriptor) with Type = WdfMemoryDescriptorTypeInvalid with an RtPacketOffset that aligns with the end of the first packet (packet[2].RtPacketOffset = packet[1].RtPacketOffset+packet[1].RtPacketSize).
 
-#### EVTACXSTREAMFREERTPACKETS
+#### EvtAcxStreamFreeRtPackets
 
 The [EvtAcxStreamFreeRtPackets](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_free_rtpackets) event tells the driver to free the RtPackets that were allocated in a previous call to EvtAcxStreamAllocateRtPackets. The same packets from that call are included.
 
-#### EVTACXSTREAMGETHWLATENCY
+#### EvtAcxStreamGetHwLatency
 
 The [EvtAcxStreamGetHwLatency](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_hw_latency) event tells the driver to provide stream latency for the specific circuit of this stream (overall latency will be a sum of the latency of the different circuits). The FifoSize is in bytes and the Delay is in 100-nanosecond units.
 
-#### EVTACXSTREAMSETRENDERPACKET
+#### EvtAcxStreamSetRenderPacket
 
 The [EvtAcxStreamSetRenderPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_set_render_packet) event tells the driver which packet was just released by the client. If there are no glitches, this packet should be (CurrentRenderPacket + 1), where CurrentRenderPacket is the packet the driver is currently streaming from.
 
@@ -313,15 +505,15 @@ Flags can be 0 or AcxStreamSetRenderPacketEndOfStream, indicating the Packet is 
 
 The driver should continue to increase the CurrentRenderPacket as packets are rendered instead of changing its CurrentRenderPacket to match this value.
 
-#### EVTACXSTREAMGETCURRENTPACKET
+#### EvtAcxStreamGetCurrentPacket
 
 The [EvtAcxStreamGetCurrentPacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_current_packet) tells the driver to indicate which packet (0-based) is currently being rendered to the hardware or is currently being filled by the capture hardware.
 
-#### EVTACXSTREAMGETCAPTUREPACKET
+#### EvtAcxStreamGetCapturePacket
 
 The [EvtAcxStreamGetCapturePacket](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_capture_packet) tells the driver to indicate which packet (0-based) was completely filled most recently, including the QPC value at the time the driver started filling the packet.
 
-#### EVTACXSTREAMGETPRESENTATIONPOSITION
+#### EvtAcxStreamGetPresentationPosition
 
 The [EvtAcxStreamGetPresentationPosition](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_get_presentation_position) tells the driver to indicate the current position along with the QPC value at the time the current position was calculated.
 
