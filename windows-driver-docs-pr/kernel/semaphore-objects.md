@@ -2,7 +2,7 @@
 title: Semaphore Objects
 description: Semaphore Objects
 keywords: ["kernel dispatcher objects WDK , semaphore objects", "dispatcher objects WDK kernel , semaphore objects", "semaphore objects WDK kernel", "KeInitializeSemaphore", "waiting on semaphore objects", "KeReleaseSemaphore", "counting semaphores WDK kernel", "binary semaphores WDK kernel", "wait states WDK kernel"]
-ms.date: 06/16/2017
+ms.date: 05/31/2023
 ---
 
 # Semaphore Objects
@@ -51,11 +51,7 @@ After a driver with an initialized semaphore is loaded, it can synchronize opera
 
     By using a counting semaphore in this manner, such a driver thread "knows" there is an IRP to be removed from the interlocked queue whenever that thread is run.
 
-Calling [**KeReleaseSemaphore**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasesemaphore) with the *Wait* parameter set to **TRUE** indicates the caller's intention to immediately call a **KeWait*Xxx*Object**(s) support routine on return from **KeReleaseSemaphore**.
-
-Consider the following guidelines for setting the *Wait* parameter to KeReleaseSemaphore:
-
-A pageable thread or pageable driver routine that runs at IRQL PASSIVE\_LEVEL should never call **KeReleaseSemaphore** with the *Wait* parameter set to **TRUE**. Such a call causes a fatal page fault if the caller happens to be paged out between the calls to **KeReleaseSemaphore** and **KeWait*Xxx*Object**(s).
+For info specific to managing IRQL when calling **KeReleaseSemaphore**, see the Remarks section of [**KeReleaseSemaphore**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasesemaphore).
 
 Any standard driver routine that runs at an IRQL greater than PASSIVE\_LEVEL cannot wait for a nonzero interval on any dispatcher objects without bringing down the system; see [Kernel Dispatcher Objects](./introduction-to-kernel-dispatcher-objects.md) for details. However, such a routine can call **KeReleaseSemaphore** while running at an IRQL less than or equal to DISPATCH\_LEVEL.
 
