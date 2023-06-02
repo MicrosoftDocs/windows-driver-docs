@@ -50,6 +50,8 @@ The INF file for a miniport driver that supports Network Direct kernel (NDK) mus
 
 The **\*NetworkDirectRoCEFrameSize** keyword specifies the administrator requested maximum transmission unit for NetworkDirect communications. **\*NetworkDirectRoCEFrameSize** isn't currently required. However, in future releases, adapters that support the **\*NetworkDirect** keyword with **RoCE** or **RoCEv2** may be required to support this keyword. 
 
+The INF file for a miniport driver that supports **\*NetworkDirectRoCEFrameSize** must meet the following requirements:
+
 - The acceptable registry values for **\*NetworkDirectRoCEFrameSize** are 256, 512, 1024, 2048, and 4096. The value of 1024 is required. 
 
 - The adapter must use the largest supported size for **\*NetworkDirectRoCEFrameSize** that doesn't exceed **\*JumboPacket**.
