@@ -46,17 +46,19 @@ The INF file for a miniport driver that supports Network Direct kernel (NDK) mus
 
     For more information about advanced properties, see [Specifying Configuration Parameters for the Advanced Properties Page](specifying-configuration-parameters-for-the-advanced-properties-page.md).
 
--  The **\*NetworkDirectRoCEFrameSize** keyword specifies the administrator requested maximum transmission unit for NetworkDirect communications. **\*NetworkDirectRoCEFrameSize** isn't currently required. However, in future releases, adapters that support the **\*NetworkDirect** keyword with **RoCE** or **RoCEv2** may be required to support this keyword. 
+## *NetworkDirectRoCEFrameSize INF keyword 
 
-    The acceptable registry values for this keyword are 256, 512, 1024, 2048, and 4096. The value of 1024 is required. 
+The **\*NetworkDirectRoCEFrameSize** keyword specifies the administrator requested maximum transmission unit for NetworkDirect communications. **\*NetworkDirectRoCEFrameSize** isn't currently required. However, in future releases, adapters that support the **\*NetworkDirect** keyword with **RoCE** or **RoCEv2** may be required to support this keyword. 
 
-    The adapter must use the largest supported size for **\*NetworkDirectRoCEFrameSize** that doesn't exceed **\*JumboPacket**.
+- The acceptable registry values for **\*NetworkDirectRoCEFrameSize** are 256, 512, 1024, 2048, and 4096. The value of 1024 is required. 
 
-    If the configured value of **\*NetworkDirectRoCEFrameSize** differs from the operational (active) RoCE MTU, the driver must log an event in the system event log indicating operational (active) RoCE MTU. 
+- The adapter must use the largest supported size for **\*NetworkDirectRoCEFrameSize** that doesn't exceed **\*JumboPacket**.
 
-    **Note**: The miniport driver is automatically restarted after a change is made in the advanced property page for the adapter unless the change can be made effective without the restart. 
+- If the configured value of **\*NetworkDirectRoCEFrameSize** differs from the operational (active) RoCE MTU, the driver must log an event in the system event log indicating operational (active) RoCE MTU. 
 
-    The following table describes the **\*NetworkDirectRoCEFrameSize** keyword and values that can be edited. The min and max values define the required limits for supported values. An individual adapter can support a lower minimum value or higher maximum value but must support at least these values.
+**Note**: The miniport driver is automatically restarted after a change is made in the advanced property page for the adapter unless the change can be made effective without the restart. 
+
+The following table describes the **\*NetworkDirectRoCEFrameSize** keyword and values that can be edited. The min and max values define the required limits for supported values. An individual adapter can support a lower minimum value or higher maximum value but must support at least these values.
 
 
     | SubkeyName | ParamDesc | Type | Default value | Min | Max |
