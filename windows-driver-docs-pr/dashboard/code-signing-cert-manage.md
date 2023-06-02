@@ -32,6 +32,7 @@ To get a new code signing certificate:
     * [IdenTrust EV code signing certificate](https://www.identrust.com/digital-certificates/trustid-ev-code-signing)
     * [Sectigo (formerly Comodo) EV code signing certificate](https://sectigo.com/ssl-certificates-tls/code-signing)
     * [SSL.com EV code signing certificate](https://www.ssl.com/certificates/ev-code-signing/)
+    * [Certera EV Code Signing Certificate](https://certerassl.com/ev-code-signing-certificates)
 
 1. Once the certificate authority has verified your contact information and your certificate purchase is approved, follow their directions to retrieve the certificate.
 
