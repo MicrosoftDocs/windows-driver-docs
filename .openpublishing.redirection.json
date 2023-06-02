@@ -1553,6 +1553,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/display/ne-d3d10umddi-d3d10ddiresource_type.md",
+            "redirect_URL": "/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d10ddiresource_type",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/display/performing-copp-operations.md",
             "redirect_URL": "/windows-hardware/drivers/display/performing-copp-operations-example",
             "redirect_document_id": false
