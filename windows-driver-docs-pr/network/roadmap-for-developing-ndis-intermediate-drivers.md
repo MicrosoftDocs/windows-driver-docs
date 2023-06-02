@@ -40,7 +40,7 @@ To create a Network Driver Interface Specification (NDIS) intermediate driver pa
 
     Intermediate drivers use a combination of protocol driver and miniport driver interfaces in addition to some intermediate driver specific interfaces. As an option, you can also read the miniport driver and protocol driver design guides.
 
-- Step 7: Review the [NDIS intermediate driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617916) in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+- Step 7: Review the [NDIS intermediate driver sample](https://github.com/microsoft/Windows-driver-samples/tree/95037b3f77f3a745f7682f991ac80e81f91f5362/network/ndis/mux) in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples/tree/develop) repository on GitHub.
 
 - Step 8: Develop (or port), build, test, and debug your NDIS driver.
 

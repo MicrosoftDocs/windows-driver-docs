@@ -38,7 +38,7 @@ To create a Network Driver Interface Specification (NDIS) filter driver package,
 
   This section provides an overview of the primary protocol driver interfaces. These interfaces included functions that protocol drivers provide (*ProtocolXxx* functions) and NDIS calls to initiate operations. NDIS provides **Ndis*Xxx*** functions that protocol drivers call to perform NDIS operations.
 
-- Step 7: Review the [NDIS filter driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617915) in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub..
+- Step 7: Review the [NDIS filter driver sample](https://github.com/microsoft/Windows-driver-samples/tree/95037b3f77f3a745f7682f991ac80e81f91f5362/network/ndis/filter) in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples/tree/develop) repository on GitHub.
 
 - Step 8: Develop (or port), build, test, and debug your NDIS driver.
 

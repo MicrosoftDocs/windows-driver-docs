@@ -5,14 +5,12 @@ keywords:
 - PoolMon WDK , examples
 - Memory Pool Monitor WDK , examples
 - examples WDK PoolMon
-ms.date: 05/06/2022
+ms.date: 05/16/2023
 ---
 
 # PoolMon Examples
 
-
 ## <span id="ddk_poolmon_examples_tools"></span><span id="DDK_POOLMON_EXAMPLES_TOOLS"></span>
-
 
 This topic includes the following examples of PoolMon use:
 
@@ -127,7 +125,7 @@ The resulting display lists allocations with tags beginning in **NtF**. The righ
  NtFv Paged       551 (   0)       551 (   0)     0       0 (     0)      0 [ntfs.sys  -  ViewSup.c]
 ```
 
-Pooltag.txt is extensive, but it is not a complete list of all tags used in Windows. When a tag that appears in the display is not included in pooltag.txt, PoolMon displays "Unknown driver" in the Mapped\_Driver column for the tag. When this occurs, you can use the **/c** parameter to search the drivers (on a 32 bit system) and determine whether they assign the tag. (PoolMon cannot generate a local tag file on 64-bit versions of Windows and the -c option is not available.)
+Pooltag.txt is extensive, but it is not a complete list of all tags used in Windows. When a tag that appears in the display is not included in pooltag.txt, PoolMon displays "Unknown driver" in the Mapped\_Driver column for the tag.
 
 The following examples demonstrate this method on a 32 bit system.
 
@@ -147,42 +145,19 @@ The resulting display lists the allocations with tags ending in MEM. However, be
  3MEM Nonp       3 (   0)         0 (   0)     3     248 (     0)     82   Unknown Driver
 ```
 
-In this case, you can use the **/c** parameter to compile a list of local drivers and the tags they assign, and then display the names of local drivers in the Mapped\_Driver column.
-
-The following command starts PoolMon. It uses the **/i** parameter to list allocations with tags ending in MEM, and the **/c** parameter to display the local drivers that assign the tags.
+The following command starts PoolMon. It uses the **/i** parameter to list allocations with tags ending in MEM.
 
 ```
-poolmon /i?MEM /c
+poolmon /i?MEM 
 ```
 
-If you do not specify a local tag file and PoolMon cannot find a localtag.txt file , it creates one, as shown in the following screen messages. 
+The following command lists allocations for tags beginning with **Ip**. It uses the **/g** parameter, which uses the contents of the pooltag.txt file in the Mapped\_Driver column.
 
 ```
-d:\tools\poolmon>poolmon /?MEM /c
-PoolMon: No localtag.txt in current directory
-PoolMon: Creating localtag.txt in current directory......
+poolmon /iIp* /g
 ```
 
-The resulting display, which uses the content from the newly created localtag.txt file, shows the local driver names in the Mapped\_Driver column.
-
-```
- Memory:  260620K Avail:   57840K  PageFlts:   162   InRam Krnl: 2116K P:19448K
- Commit: 244580K Limit: 640916K Peak: 265416K            Pool N: 8496K P:32904K
- System pool information
- Tag  Type     Allocs            Frees            Diff   Bytes      Per Alloc  Mapped_Driver
-
- 1MEM Nonp          1 (   0)         0 (   0)        1    3344 (     0)   3344 [el90xbc5]
- 2MEM Nonp          1 (   0)         0 (   0)        1    3944 (     0)   3944 [el90xbc5]
- 3MEM Nonp          3 (   0)         0 (   0)        3     248 (     0)     82 [el90xbc5]
-```
-
-For a comprehensive driver name display, you can combine the **/c** and **/g** parameters in a command. (The order of parameters does not change the output.) The following command lists allocations for tags beginning with **Ip**. It uses the **/c** parameter, which uses the contents of the localtag.txt file in the Mapped\_Driver column, and the **/g** parameter, which uses the contents of the pooltag.txt file in the Mapped\_Driver column.
-
-```
-poolmon /iIp* /c /g
-```
-
-In the resulting display, the Mapped\_Driver column contains data from both the localtag.txt and pooltag.txt files.
+In the resulting display, the Mapped\_Driver column contains data from the pooltag.txt files.
 
 ```
  Memory:  130616K Avail:   23692K  PageFlts:   146   InRam Krnl: 2108K P: 9532K
@@ -455,7 +430,6 @@ poolmon
 </tbody>
 </table>
 
- 
 
 Only systems configured as a Terminal Server allocate memory from the session pool. If you use PoolMon to display the session pool on a computer that is not a Terminal Server, or if you type a session ID that does not exist on Windows, PoolMon does not display any allocations. Instead, it displays only the headings with general memory data.
 
@@ -473,12 +447,3 @@ The following figure shows the PoolMon display that would result if the **/s** c
  All sessions pool information
  Tag  Type     Allocs            Frees            Diff   Bytes       Per Alloc
 ```
-
- 
-
- 
-
-
-
-
-

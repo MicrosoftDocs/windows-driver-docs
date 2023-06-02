@@ -14,7 +14,7 @@ keywords:
 - migration DLL WDK networking
 - vendor-supplied installation files WDK networking
 - files WDK network component installs
-ms.date: 01/16/2019
+ms.date: 04/12/2023
 ---
 
 # Components and Files Used for Network Component Installation
@@ -43,6 +43,10 @@ Each network component must have an information (INF) file that the network clas
 
 For detailed information about creating INF files for network components, see [Creating Network INF Files](creating-network-inf-files.md).
 
+Starting with Windows OS build version 25319, you can create a network driver package that can be executed from the [Driver Store](../develop/run-from-driver-store.md). An INF that is using 'run from Driver Store' means that the INF uses [**DIRID 13**](../install/using-dirids.md) to specify the location for [driver package](../install/driver-packages.md) files on install.
+
+You can't install a driver package through the network configuration interfaces and use the driver store feature on older Windows versions. To successfully install the driver package in this scenario, you need to have a minimum OS build number of 25319. For more information, see [Manufacturer Section in a Network INF File](manufacturer-section-in-a-network-inf-file.md).
+
 ## INetCfg
 
 Currently, NDIS protocol and filter drivers are installed by calling into the `INetCfg` family of [Network Configuration Interfaces](/previous-versions/windows/hardware/network/ff559080(v=vs.85)). For example, to install or remove network components, a driver writer calls into the [INetCfgClassSetup](/previous-versions/windows/hardware/network/ff547709(v=vs.85)) interface. 
@@ -55,9 +59,9 @@ For more information about filter driver installation, see [NDIS Filter Driver I
 
 ## Notify object
 
-A software component, such as a network protocol, client, or service, can have a *notify object*. A notify object can display a user interface, notify the component of binding events so that the component can exercise some control over the binding process, and conditionally install or remove software components. For more information about notify objects, see [Notify Objects for Network Components](notify-objects-for-network-components.md).
+A software component, such as a network protocol, client, or service, can have a *notify object*. A notify object can display a user interface, notify the component of binding events so that the component can exercise some control over the binding process, and conditionally install or remove software components.  On older versions of Windows you can't create a driver package with a notify object that is executed from the [Driver Store](../install/driver-store.md). To successfully install a driver package in this scenario, you need to have a minimum OS build number of 25341. For more information about notify objects, see [Notify Objects for Network Components](notify-objects-for-network-components.md).
 
-A network adapter cannot have a notify object. It can have co-installers. For more information about co-installers, see [Writing a Co-installer](../install/writing-a-co-installer.md).
+A network adapter can't have a notify object. It can have co-installers. For more information about co-installers, see [Writing a Co-installer](../install/writing-a-co-installer.md).
 
 ## Vendor-supplied files
 
