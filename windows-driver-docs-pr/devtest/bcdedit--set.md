@@ -402,7 +402,7 @@ Enables kernel Emergency Management Services. The BCDEdit /ems option enables or
 The BCDEdit /emssettings option sets the global Emergency Management Services (EMS) settings for the computer. For more information, see  For more information, see [BCDEdit /emssettings](bcdedit--emssettings.md).
 
 ## Virtual Secure Mode
-**vmslaunchtype** \[ **Off** | **Auto**\]  
+**vsmlaunchtype** \[ **Off** | **Auto**\]  
 Controls the Virtual Secure Mode launch type. Can be Off or Auto. For more information, see [Manage Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage).
 
 ## Event Logging
