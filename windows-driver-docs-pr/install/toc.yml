@@ -910,6 +910,8 @@
     href: inf-controlflags-section.md
   - name: "INF DDInstall Section"
     href: inf-ddinstall-section.md
+  - name: "INF DDInstall.COM Section"
+    href: inf-ddinstall-com-section.md
   - name: "INF DDInstall.Components Section"
     href: inf-ddinstall-components-section.md
   - name: "INF DDInstall.Events Section"
@@ -962,6 +964,8 @@
     href: inf-addupdateautologger-directive.md
   - name: "INF AddComponent Directive"
     href: inf-addcomponent-directive.md
+  - name: "INF AddComServer Directive"
+    href: inf-addcomserver-directive.md
   - name: "INF AddEventProvider Directive"
     href: inf-addeventprovider-directive.md
   - name: "INF AddFilter Directive"
