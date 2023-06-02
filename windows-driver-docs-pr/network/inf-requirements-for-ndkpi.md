@@ -61,9 +61,9 @@ The **\*NetworkDirectRoCEFrameSize** keyword specifies the administrator request
 The following table describes the **\*NetworkDirectRoCEFrameSize** keyword and values that can be edited. The min and max values define the required limits for supported values. An individual adapter can support a lower minimum value or higher maximum value but must support at least these values.
 
 
-    | SubkeyName | ParamDesc | Type | Default value | Min | Max |
-    | --- | --- | --- | --- | --- | --- |
-    | **\*NetworkDirectRoCEFrameSize** | Network Direct Maximum Transmission Unit | enum | 1024 | 256 | 4096 |
+| SubkeyName | ParamDesc | Type | Default value | Min | Max |
+| --- | --- | --- | --- | --- | --- |
+| **\*NetworkDirectRoCEFrameSize** | Network Direct Maximum Transmission Unit | enum | 1024 | 256 | 4096 |
 
 
 
