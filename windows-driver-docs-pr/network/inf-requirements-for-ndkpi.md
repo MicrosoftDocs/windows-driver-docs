@@ -11,11 +11,11 @@ The INF file for a miniport driver that supports Network Direct kernel (NDK) mus
 
 ## NDIS upper range value
 
--   The miniport driver's INF file must specify an NDIS upper range value of "ndis5" in order for Windows components to discover and use the NDK-capable miniport adapters that are serviced by the driver. This value is specified as follows:
+The miniport driver's INF file must specify an NDIS upper range value of "ndis5" in order for Windows components to discover and use the NDK-capable miniport adapters that are serviced by the driver. This value is specified as follows:
 
-    ```INF
-    HKR, Ndi\Interfaces, UpperRange, 0, "ndis5"
-    ```
+```INF
+HKR, Ndi\Interfaces, UpperRange, 0, "ndis5"
+```
 
 ## *NetworkDirect INF keyword 
 
