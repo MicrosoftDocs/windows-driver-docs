@@ -25,13 +25,13 @@ The INF file must specify the **\*NetworkDirect** keyword value as follows:
 
 **Note**: The miniport driver is automatically restarted after a change is made in the **Advanced** property page for the adapter.
 
-    ```INF
-    HKR, Ndi\Params\*NetworkDirect,        ParamDesc,  0, "NetworkDirect Functionality"
-    HKR, Ndi\Params\*NetworkDirect,        Type,       0, "enum"
-    HKR, Ndi\Params\*NetworkDirect,        Default,    0, "1"
-    HKR, Ndi\Params\*NetworkDirect\enum,   "0",        0, "Disabled"
-    HKR, Ndi\Params\*NetworkDirect\enum,   "1",        0, "Enabled"
-    ```
+```INF
+HKR, Ndi\Params\*NetworkDirect,        ParamDesc,  0, "NetworkDirect Functionality"
+HKR, Ndi\Params\*NetworkDirect,        Type,       0, "enum"
+HKR, Ndi\Params\*NetworkDirect,        Default,    0, "1"
+HKR, Ndi\Params\*NetworkDirect\enum,   "0",        0, "Disabled"
+HKR, Ndi\Params\*NetworkDirect\enum,   "1",        0, "Enabled"
+```
 
 ## *NetworkDirectTechnology INF keyword 
 
@@ -43,16 +43,16 @@ The INF file must specify the **\*NetworkDirectTechnology** keyword value as fol
 
 **Note**: The miniport driver is automatically restarted after a change is made in the **Advanced** property page for the adapter.
 
-    ```INF
-    HKR, Ndi\Params\*NetworkDirectTechnology,        ParamDesc,  0,  "NetworkDirect Technology"
-    HKR, Ndi\Params\*NetworkDirectTechnology,        Default,    0,  "1"
-    HKR, Ndi\Params\*NetworkDirectTechnology,        Type,       0,  "enum"
-    HKR, Ndi\Params\*NetworkDirectTechnology\enum,   1,          0,  "iWARP"
-    HKR, Ndi\Params\*NetworkDirectTechnology\enum,   2,          0,  "InfiniBand"
-    HKR, Ndi\Params\*NetworkDirectTechnology\enum,   3,          0,  "RoCE"
-    HKR, Ndi\Params\*NetworkDirectTechnology\enum,   4,          0,  "RoCEv2"
-    HKR, Ndi\Params\*NetworkDirectTechnology,        Optional,   0,  "0"
-    ```
+```INF
+HKR, Ndi\Params\*NetworkDirectTechnology,        ParamDesc,  0,  "NetworkDirect Technology"
+HKR, Ndi\Params\*NetworkDirectTechnology,        Default,    0,  "1"
+HKR, Ndi\Params\*NetworkDirectTechnology,        Type,       0,  "enum"
+HKR, Ndi\Params\*NetworkDirectTechnology\enum,   1,          0,  "iWARP"
+HKR, Ndi\Params\*NetworkDirectTechnology\enum,   2,          0,  "InfiniBand"
+HKR, Ndi\Params\*NetworkDirectTechnology\enum,   3,          0,  "RoCE"
+HKR, Ndi\Params\*NetworkDirectTechnology\enum,   4,          0,  "RoCEv2"
+HKR, Ndi\Params\*NetworkDirectTechnology,        Optional,   0,  "0"
+```
 
 ## *NetworkDirectRoCEFrameSize INF keyword 
 
