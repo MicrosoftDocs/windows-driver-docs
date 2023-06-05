@@ -94,17 +94,17 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 
 * [Download the Windows 11, version 22H2 (updated May 2023) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
 
-> You can use the Visual Studio interface with the build tools provided in the EWDK.
->
->1.    Mount the EWDK ISO.
->2.    Run `LaunchBuildEnv.cmd`.
->3.    In the environment created in step 2, type **SetupVSEnv**, and then press **Enter**.
->4.    Launch devenv.exe from the same environment, using the full file path. 
->Example: `"C:\Program Files\Microsoft Visual Studio\2022\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`
->
->Note that the Visual Studio major version should match with the version in the EWDK. For example, Visual Studio 2022 works with the EWDK that contain VS17.X build tools. For a list of Visual Studio 2022 version numbers, see [Visual Studio 2022 Releases](/visualstudio/releases/2022/release-history).
+Once you have downloaded the ISO, use these steps every time you want to build a driver:
 
-<br>
+1. Right click the file and mount the EWDK ISO.
+2. Run `LaunchBuildEnv.cmd`.
+3. In the environment created in step 2, type **SetupVSEnv**, and then press **Enter**.
+4. Launch devenv.exe from the same environment, using the full file path. Example: `"C:\Program Files\Microsoft Visual Studio\2022\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`
+5. Optionally, right click and unmount the ISO.
+
+You can use the Visual Studio interface with the build tools provided in the EWDK.
+
+Note that the Visual Studio major version should match with the version in the EWDK. For example, Visual Studio 2022 works with the EWDK that contain VS17.X build tools. For a list of Visual Studio 2022 version numbers, see [Visual Studio 2022 Releases](/visualstudio/releases/2022/release-history).
 
 
 ## Driver samples for Windows
