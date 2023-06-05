@@ -962,6 +962,8 @@
   items: 
   - name: "INF AddAutoLogger and UpdateAutoLogger Directives"
     href: inf-addupdateautologger-directive.md
+  - name: "INF AddComClass Directive"
+    href: inf-addcomclass-directive.md
   - name: "INF AddComponent Directive"
     href: inf-addcomponent-directive.md
   - name: "INF AddComServer Directive"

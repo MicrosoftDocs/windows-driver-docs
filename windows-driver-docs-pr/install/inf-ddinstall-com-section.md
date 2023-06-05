@@ -1,10 +1,10 @@
 ---
-title: INF DDInstall.COM Section
+title: INF DDInstall.COM section
 description: The DDInstall.COM section contains one or more INF AddComServer directives that reference additional INF-writer-defined sections in an INF file.
-ms.date: 06/02/2023
+ms.date: 06/05/2023
 ---
 
-# INF DDInstall.COM Section
+# INF DDInstall.COM section
 
 Each per-Models DDInstall.COM section contains one or more [INF AddComServer directives](inf-addcomserver-directive.md) that reference additional INF-writer-defined sections in an INF file. This section is supported for Windows 11 version \<TBD\> and later.
 
@@ -69,3 +69,5 @@ ThreadingModel = Neutral
 
 - [Using a Component INF File](using-a-component-inf-file.md)
 - [INF AddComServer directive](inf-addcomserver-directive.md)
+- [INF AddComClass directive](inf-addcomclass-directive.md)
+- [INF AddInterface directive](inf-addinterface-directive.md)

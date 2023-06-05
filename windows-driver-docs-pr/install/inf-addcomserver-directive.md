@@ -1,10 +1,10 @@
 ---
-title: INF AddComServer Directive
+title: INF AddComServer directive
 description: An AddComServer directive is used within a DDInstall.COM section and registers a COM server.
-ms.date: 06/02/2023
+ms.date: 06/05/2023
 ---
 
-# INF AddComServer Directive
+# INF AddComServer directive
 
 An AddComServer directive is used within a DDInstall.COM section and registers a COM server. One or more COM servers must be defined in a DDInstall.COM section. This section is supported for Windows 11 version \<TBD\> and later.
 
@@ -106,6 +106,7 @@ ThreadingModel = Apartment
 
 ## See also
 
-- [Using a Component INF File](using-a-component-inf-file.md).
-- [*DDInstall*.**Components**](inf-ddinstall-components-section.md)
-- [INF AddSoftware Directive](inf-addsoftware-directive.md)
+- [Using a Component INF File](using-a-component-inf-file.md)
+- [INF DDInstall.COM section](inf-ddinstall-com-section.md)
+- [INF AddComClass directive](inf-addcomclass-directive.md)
+- [INF AddInterface directive](inf-addinterface-directive.md)
