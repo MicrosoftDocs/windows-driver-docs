@@ -100,7 +100,7 @@ Once you have downloaded the ISO, use these steps to set up your build environme
 2. Run `LaunchBuildEnv.cmd`.
 3. In the environment created in step 2, type **SetupVSEnv**, and then press **Enter**.
 4. Launch devenv.exe from the same environment, using the full file path. For example: `"C:\Program Files\Microsoft Visual Studio\2022\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`
-5. Optionally eject the ISO.
+5. When you're done with the build environment, you may want to eject the ISO.
 
 You can use the Visual Studio interface with the build tools provided in the EWDK.
 
