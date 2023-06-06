@@ -86,7 +86,9 @@ The WDK Visual Studio extension is included in the default WDK installation.
 
 ## Enterprise WDK (EWDK)
 
-As an alternative to downloading Visual Studio, the SDK, and the WDK, you can download the EWDK, which is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.  You can also use the Visual Studio interface with the build tools provided in the EWDK.
+As an alternative to downloading Visual Studio, the SDK, and the WDK, you can download the EWDK, which is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.
+
+You can also use the Visual Studio interface with the build tools provided in the EWDK.
 
 The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17.1.5 and MSVC toolset v14.31.
 
