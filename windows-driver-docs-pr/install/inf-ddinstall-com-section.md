@@ -6,7 +6,7 @@ ms.date: 06/05/2023
 
 # INF DDInstall.COM section
 
-Each per-Models DDInstall.COM section contains one or more [INF AddComServer directives](inf-addcomserver-directive.md) that reference additional INF-writer-defined sections in an INF file. This section is supported for Windows 11 version \<TBD\> and later.
+Each per-Models DDInstall.COM section contains one or more [INF AddComServer directives](inf-addcomserver-directive.md) that reference additional INF-writer-defined sections in an INF file. This section is supported for Windows 11 version `<TBD>` and later.
 
 ```inf
 [install-section-name.COM] |

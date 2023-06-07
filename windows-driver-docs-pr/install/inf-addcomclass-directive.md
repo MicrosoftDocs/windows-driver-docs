@@ -6,7 +6,7 @@ ms.date: 06/05/2023
 
 # INF AddComClass directive
 
-An AddComClass is used within a com-server-install-section and registers a COM class. A COM server must define one or more classes. This section is supported for Windows 11 version \<TBD\> and later.
+An AddComClass is used within a com-server-install-section and registers a COM class. A COM server must define one or more classes. This section is supported for Windows 11 version `<TBD>` and later.
 
 ```inf
 [com-server-install-section]

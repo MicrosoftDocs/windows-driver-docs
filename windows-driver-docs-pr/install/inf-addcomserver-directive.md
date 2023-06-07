@@ -6,7 +6,7 @@ ms.date: 06/05/2023
 
 # INF AddComServer directive
 
-An AddComServer directive is used within a DDInstall.COM section and registers a COM server. One or more COM servers must be defined in a DDInstall.COM section. This section is supported for Windows 11 version \<TBD\> and later.
+An AddComServer directive is used within a DDInstall.COM section and registers a COM server. One or more COM servers must be defined in a DDInstall.COM section. This section is supported for Windows 11 version `<TBD>` and later.
 
 ```inf
 [DDInstall.COM]
