@@ -1,7 +1,7 @@
 ---
 title: Authoring an update driver package
 description: This topic provides information about authoring an update driver package and provides example INF file settings and configurations.
-ms.date: 03/22/2023
+ms.date: 05/05/2023
 ---
 
 # Authoring an update driver package
@@ -21,9 +21,9 @@ CatalogFile = catalog.cat
 PnpLockdown = 1
 
 [Manufacturer]
-%MfgName% = Firmware,NTarm
+%MfgName% = Firmware,NTarm64
 
-[Firmware.NTarm]
+[Firmware.NTarm64]
 %FirmwareDesc% = Firmware_Install,UEFI\RES_{6bd4efb9-23cc-4b4a-ac37-016517413e9a}
 
 [Firmware_Install.NT]
@@ -75,12 +75,12 @@ CatalogFile --> Name of the catalog file
 firmware.bin --> Change all instances of firmware.bin with the name of the firmware image name
 
 [Manufacturer]
-%MfgName% = Firmware,NTarm
-[Firmware.NTarm] --> Change the architecture. 
+%MfgName% = Firmware,NTarm64
+[Firmware.NTarm64] --> Change the architecture.
 For x86, it should be NTx86
 For AMD64, it should be NTamd64
 
-[Firmware.NTarm]
+[Firmware.NTarm64]
 %FirmwareDesc% = Firmware_Install,UEFI\RES_{6bd4efb9-23cc-4b4a-ac37-016517413e9a} --> The GUID of the firmware resource
 
 [Firmware_AddReg]
@@ -111,8 +111,8 @@ The following table describes the various driver package INF sections and fields
 | PnpLockdown | 1 | Enables the PnP driver file lockdown mechanism in order to protect installed driver files from being modified externally by unrelated applications. For firmware resource updates, this setting should always be enabled to ensure that firmware resource image files cannot be tampered with outside of the control of the PnP system |
 | **[Manufacturer]** |  | Lists all distinct driver manufacturers/vendors that define firmware resource updates. Each manufacturer line specifies an [\<Models\>] section and identifies its supported target platform. |
 | %MfgName% | Fabrikam Inc.<br><br>(localized in [Strings] section) | Identifies the manufacturer/vendor of the firmware resource update. This may be the same as the Provider field. |
-|  | Firmware,<br><br>NTarm | Identifies the [\<Models\>] section that defines the firmware resource devices supported by this driver package, including their target driver platforms. In this example, the drivers are only targeted for the Arm-based NT platform and the [\<Models\>] section is [Firmware.NTarm]. |
-| **[Firmware.NTarm]** |  | [\<Models\>] section for the Arm-based NT platform that lists all firmware resource devices for which updates are defined. Each hardware model line specifies a [\<DDInstall\>] section and its associated hardware ID match. |
+|  | Firmware,<br><br>NTarm64 | Identifies the [\<Models\>] section that defines the firmware resource devices supported by this driver package, including their target driver platforms. In this example, the drivers are only targeted for the Arm64-based NT platform and the [\<Models\>] section is [Firmware.NTarm64]. |
+| **[Firmware.NTarm64]** |  | [\<Models\>] section for the Arm64-based NT platform that lists all firmware resource devices for which updates are defined. Each hardware model line specifies a [\<DDInstall\>] section and its associated hardware ID match. |
 | %FirmwareDesc% | Fabrikam System Firmware 2.0<br><br>(localized in [Strings] section) | Describes the firmware resource update. This is the primary description string used to present the associated firmware resource device instance in Device Manager and other device related UI. For this reason, the description may include the firmware vendor and version. |
 |  | Firmware_Install,<br><br>UEFI\RES_{RESOURCE_GUID} | Identifies the [\<DDInstall\] section containing the installation steps for the firmware resource update that targets the device instance identified by the UEFI\RES_{RESOURCE_GUID} hardware ID. Where RESOURCE_GUID is the GUID of the firmware resource that is being updated. |
 | **[Firmware_Install.NT]**<br><br>CopyFiles = Firmware_CopyFiles<br><br>**[Firmware_CopyFiles]**<br><br>... |  | [\<DDInstall\>] section that contains the installation steps for the firmware resource update. For firmware resource updates, this only defines the firmware resource image file to copy into place for a firmware resource update. In this example, the [\<DDInstall\>] section is [Firmware_Install.NT]. |
@@ -240,14 +240,14 @@ After the next reboot, the OS Loader will call into UpdateCapsule() with the pay
 
 ## Related topics
 
-[ESRT table definition](esrt-table-definition.md)  
+[ESRT table definition](esrt-table-definition.md)
 
-[Plug and play device](plug-and-play-device.md)  
+[Plug and play device](plug-and-play-device.md)
 
-[Processing updates](processing-updates.md)  
+[Processing updates](processing-updates.md)
 
-[Device I/O from the UEFI environment](device-i-o-from-the-uefi-environment.md)  
+[Device I/O from the UEFI environment](device-i-o-from-the-uefi-environment.md)
 
-[Seamless crisis prevention and recovery](seamless-crisis-prevention-and-recovery.md)  
+[Seamless crisis prevention and recovery](seamless-crisis-prevention-and-recovery.md)
 
 [Firmware update status](firmware-update-status.md)

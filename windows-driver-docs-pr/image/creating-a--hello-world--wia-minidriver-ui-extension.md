@@ -1,41 +1,34 @@
 ---
 title: Creating a "Hello World" WIA Minidriver UI Extension
 description: Creating a "Hello World" WIA Minidriver UI Extension
-ms.date: 05/29/2020
+ms.date: 05/08/2023
 ---
 
 # Creating a "Hello World" WIA Minidriver UI Extension
 
 A WIA minidriver UI extension is a simple DLL that exports a few functions and implements at least one of the four following COM interface identifiers (IID):
 
-**IID\_IWiaUIExtension**
-
+**IID_IWiaUIExtension**
 The interface identifier (IID) for the **IWiaUIExtension** interface. This is the standard WIA interface used to replace the minidriver device icon in My Computer and in Control Panel, and replace the Microsoft common minidriver UI dialogs.
 
-**IID\_IShellExtInit**
-
+**IID_IShellExtInit**
 The IID for the **IShellExtInit** interface. This is the standard Windows Shell interface used to initialize Shell extensions for property sheets, shortcut menus, and drag-and-drop handlers (extensions that add items to shortcut menus during non-default drag-and-drop operations).
 
-**IID\_IContextMenu**
-
+**IID_IContextMenu**
 The IID for the **ContextMenu** interface. This is the standard Windows Shell interface used to create or merge a shortcut menu associated with a Shell object (the WIA minidriver icon in My Computer and in Control Panel).
 
-**IID\_IShellPropSheet**
-
+**IID_IShellPropSheet**
 The IID for the **IShellPropSheet** interface. This is the standard Windows Shell interface used to add or replace pages in the property sheet displayed for a Shell object (the WIA minidriver icon in My Computer and Control Panel).
 
 The "Hello World" WIA minidriver UI extension consists of the following files:
 
 *hellowld.inf*
-
 This is the installation file (modified to install this UI extension with the original *hellowld* sample).
 
 *hellowldui.def*
-
 This is the definition file containing the two COM exports, **DllGetClassObject** and **DllCanUnloadNow** (both are described in the Windows SDK documentation).
 
 *hellowldui.cpp*
-
 This is the WIA UI extension implementation.
 
 ## Installing WIA UI extensions
@@ -44,9 +37,9 @@ To install a WIA UI extension DLL, add **UI Class ID=**{&lt;CLSID of the DLL of 
 
 The following example INF snippet is derived from the WIA minidriver sample in [Creating a 'Hello World' WIA Minidriver](creating-a---hello-world---wia-minidriver.md). The CLSID used by default should be the Microsoft-supplied CLSID for common dialogs, icons, and property pages.
 
-It is recommended that all WIA UI extension DLLs should be self-registering COM objects, to promote easier installation. This sample does not contain a self-registering COM object.
+It's recommended that all WIA UI extension DLLs should be self-registering COM objects, to promote easier installation. This sample doesn't contain a self-registering COM object.
 
-```INF
+```inf
 [WIADevice.DeviceData]
 Server=local
 UI DLL=sti.dll
@@ -55,7 +48,7 @@ UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
 
 The following sample is a complete INF file that sets the **UI Class ID** subkey to the CLSID of the *hellowldui* sample UI Extension.
 
-```INF
+```inf
 ; HELLOWLD.INF  -- Hello World WIA Minidriver setup file (with a WIA UI extension DLL)
 ; Copyright (c) 2002 Hello World Company
 ; Manufacturer:  Hello World Company
@@ -67,14 +60,15 @@ ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
 Provider=%Mfg%
 DriverVer=06/26/2001,1.0
 CatalogFile=wia.cat
+PnpLockdown=1
 
 [DestinationDirs]
 DefaultDestDir=11
 
 [Manufacturer]
-%Mfg%=Models
+%Mfg%=Models,NTx86
 
-[Models]
+[Models.NTx86]
 %WIADevice.DeviceDesc% = WIADevice.Scanner, HELLOWORLD_PNP_ID
 
 [WIADevice.Scanner]
@@ -124,6 +118,7 @@ hellowldui.dll=1
 [SourceDisksFiles.IA64]
 hellowld.dll=1
 hellowldui.dll=1
+
 [SourceDisksNames.IA64]
 1=%Location%,,,
 
@@ -133,7 +128,7 @@ WIADevice.DeviceDesc="Hello World WIA Minidriver"
 Location="Hello World WIA Minidriver Installation Source"
 ```
 
-The *hellowldui.def* file should contain the following:
+The *hellowldui.def* file should contain the following code:
 
 ```make
 LIBRARY HELLOWLDUI
@@ -143,7 +138,7 @@ EXPORTS
         DllCanUnloadNow     PRIVATE
 ```
 
-The *hellowldui.cpp* file should contain the following:
+The *hellowldui.cpp* file should contain the following code:
 
 ```cpp
 #ifndef WIN32_LEAN_AND_MEAN
@@ -350,4 +345,4 @@ extern "C" STDAPI DllGetClassObject(REFCLSID rclsid,REFIID riid,LPVOID *ppv)
 
 ## Adding a Custom Device Icon
 
-The preceding sample is an example of how to replace the default icon for your device. Replacing the default icon can be an ideal way to guide the user in using the correct device if there is more than one device installed. It will be more intuitive for the user if the icon resembles the attached device.
+The preceding sample is an example of how to replace the default icon for your device. Replacing the default icon can be an ideal way to guide the user in using the correct device if there's more than one device installed. It will be more intuitive for the user if the icon resembles the attached device.

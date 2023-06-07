@@ -1,11 +1,10 @@
 ---
 title: Selective suspend for HID over USB devices
 description: Revision 2.0 of the Universal Serial Bus Specification specifies a USB selective suspend feature.
-ms.date: 04/20/2017
+ms.date: 05/05/2023
 ---
 
 # Selective suspend for HID over USB devices
-
 
 Revision 2.0 of the *Universal Serial Bus Specification* specifies a USB selective suspend feature. By using this feature, the Windows operating system can selectively suspend idle USB devices. This allows Windows to efficiently manage the power requirements of the overall system. For more information about how Windows supports the USB selective suspend feature, see [USB selective suspend](../usbcon/usb-selective-suspend.md). (This resource may not be available in some languages and countries.)
 
@@ -33,10 +32,10 @@ Microsoft recommends that hardware vendors and PC manufacturers use the first op
 
 However, hardware vendors and PC manufacturers who wish to still use the INF approach, can use the example below. The following is a sample INF file that shows how to enable this USB feature for HID devices in Windows:
 
-```ManagedCPlusPlus
+```inf
 ; Vendor INF File for USB HID devices
 ;
-; A sample INF for a stand-alone USB HID device that supports 
+; A sample INF for a stand-alone USB HID device that supports
 ; selective suspend
 
 [Version]
@@ -46,6 +45,7 @@ ClassGuid   ={745a17a0-74d3-11d0-b6fe-00a0c90f57da}
 Provider    =%VendorName%
 DriverVer   =09/19/2008,6.0.0.0
 CatalogFile =VendorXYZ.cat
+PnpLockdown =1
 
 ; ================= Class section =====================
 [ControlFlags]
@@ -71,7 +71,7 @@ ExcludeFromSelect=*
 %VendorXYZ.DeviceDesc% = VendorXYZDevice_Install, USB\VID_045E&PID_00B4
 
 
-[VendorXYZDevice_Install.NT] 
+[VendorXYZDevice_Install.NT]
 include     = input.inf
 needs       = HID_SelSus_Inst.NT
 
@@ -97,15 +97,12 @@ Where:
 
     -   The **DriverVer** directive must have a value that has a newer date and greater version number than the value specified by the **DriverVer** directive in Input.inf.
 
-2.  2. The VendorXYZDevice\* sections specify the hardware identifier (ID) for the vendor's HID device. The hardware ID consists of a vendor identifier (VID) and product identifier (PID). Each hardware ID for a device must have VID/PID values that are unique to the vendor and device. This ensures that the same hardware ID does not correspond to multiple names and settings
+2.  The VendorXYZDevice\* sections specify the hardware identifier (ID) for the vendor's HID device. The hardware ID consists of a vendor identifier (VID) and product identifier (PID). Each hardware ID for a device must have VID/PID values that are unique to the vendor and device. This ensures that the same hardware ID does not correspond to multiple names and settings
 
-3.  3. The VendorXYZDevice\_Install.NT and VendorXYZDevice\_Install.NT.HW sections are [**INF DDInstall sections**](../install/inf-ddinstall-section.md). In this example, these sections contain INF **Include** and **Needs** directives.
+3.  The VendorXYZDevice\_Install.NT and VendorXYZDevice\_Install.NT.HW sections are [**INF DDInstall sections**](../install/inf-ddinstall-section.md). In this example, these sections contain INF **Include** and **Needs** directives.
 
     The **Include** directives reference the system-supplied Input.inf file, which contains INF sections needed to enable the USB selective suspend feature for the vendor's HID device.
 
     The **Needs** directives indicate which sections from Input.inf should be processed during device installation. In this case, the HID\_SelSus\_Inst section is selected instead of the default HID\_Inst section, which does not support selective suspend.
 
-4.  4. The VendorXYZDevice\_Install.NT.Services section is an [**INF DDInstall.HW section**](../install/inf-ddinstall-hw-section.md). In this example, the section also contains the same values for the INF **Include** and **Needs** directives.
-
- 
-
+4.  The VendorXYZDevice\_Install.NT.Services section is an [**INF DDInstall.HW section**](../install/inf-ddinstall-hw-section.md). In this example, the section also contains the same values for the INF **Include** and **Needs** directives.

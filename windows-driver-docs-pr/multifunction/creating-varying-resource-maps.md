@@ -3,7 +3,7 @@ title: Creating Varying Resource Maps
 description: Varying resource maps let you subdivide a parent resource among children enumerated by mf.sys.
 keywords:
 - varying resource maps WDK multifunction devices
-ms.date: 03/17/2023
+ms.date: 05/08/2023
 ---
 
 # Creating Varying Resource Maps
@@ -29,8 +29,8 @@ Based on these assumptions, mf.sys will return a resource requirements list for 
 Vendors use INF file directives to specify the sharing of these resources among the card's 16550 UART functions. For each function that requires a segment of the device's resources, you must use a **VaryingResourceMap** entry in the INF to create a registry entry. Following is an excerpt from the INF file for this device:
 
 ```inf
-[DDInstall.RegHW] 
-; for each "child" function list hardware ID and resource map 
+[DDInstall.RegHW]
+; for each "child" function list hardware ID and resource map
 ; and/or varying resource map
 HKR,Child0002,HardwareID,, child0002-hardware ID
 HKR,Child0002,VaryingResourceMap,1,04, 10,00,00,00, 08,00,00,00
@@ -57,14 +57,17 @@ Signature="$Windows NT$"
 Class=MultiFunction
 ClassGUID={4d36e971-e325-11ce-bfc1-08002be10318}
 Provider=%MYCOMPANY%
-LayoutFile=layout.inf
 DriverVer=1/20/2000
+CatalogFile=ExampleCatalog.cat
+PnpLockdown=1
+
 [ControlFlags]
 ExcludeFromSelect=*
-[Manufacturer]
-%MYCOMPANY%=MYCOMPANY
 
-[MYCOMPANY]
+[Manufacturer]
+%MYCOMPANY%=MYCOMPANY,NTamd64
+
+[MYCOMPANY.NTamd64]
 %MYCOMPANY_4PORT%=MYCOMPANY4PORT_inst, PCI\VEN_10B5&DEV_9050&SUBSYS_003112E0
 
 [MYCOMPANY4PORT_inst]
@@ -78,7 +81,7 @@ AddReg=MYCOMPANY4PORT_inst.RegHW
 Include = mf.inf
 Needs = MFINSTALL.mf.Services
 
-[MYCOMPANY4PORT_inst.RegHW] 
+[MYCOMPANY4PORT_inst.RegHW]
 HKR,Child0000,HardwareID,,*PNP0501
 HKR,Child0000,VaryingResourceMap,1,04, 00,00,00,00, 08,00,00,00
 HKR,Child0000,ResourceMap,1,06

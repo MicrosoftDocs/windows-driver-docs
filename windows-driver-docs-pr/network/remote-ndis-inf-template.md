@@ -3,14 +3,10 @@ title: Remote NDIS INF Template
 description: Remote NDIS INF Template
 keywords:
 - Remote NDIS WDK networking , INF template
-ms.date: 03/02/2023
+ms.date: 05/08/2023
 ---
 
 # Remote NDIS INF Template
-
-
-
-
 
 Microsoft provides an NDIS miniport driver, Rndismp.sys, which implements the Remote NDIS message set and communicates with generic bus transport drivers, which in turn communicate with the appropriate bus driver. This NDIS miniport driver is implemented and maintained by Microsoft and is distributed as part of all supported Windows versions. You can find it in the %SystemRoot%\\System32\\drivers directory.
 
@@ -25,12 +21,12 @@ To use the Remote NDIS driver with a USB device, an IHV must provide an INF file
 ; Remote NDIS template device setup file
 ; Copyright (c) Microsoft Corporation
 ;
-; This is the template for the INF installation script 
+; This is the template for the INF installation script
 ; for the RNDIS-over-USB host driver.
-; This INF works for Windows XP SP2, Windows XP x64, 
-; Windows Server 2003 SP1 x86, x64, and ia64, and 
+; This INF works for Windows XP SP2, Windows XP x64,
+; Windows Server 2003 SP1 x86, x64, and ia64, and
  ; Windows Vista x86 and x64.
-; This INF will work with Windows XP, Windows XP SP1, 
+; This INF will work with Windows XP, Windows XP SP1,
 ; and Windows 2003 after applying specific hotfixes.
 
 [Version]
@@ -38,8 +34,9 @@ Signature           = "$Windows NT$"
 Class               = Net
 ClassGUID           = {4d36e972-e325-11ce-bfc1-08002be10318}
 Provider            = %Microsoft%
-DriverVer           =06/21/2006,6.0.6000.16384
+DriverVer           = 06/21/2006,6.0.6000.16384
 ;CatalogFile        = device.cat
+PnpLockdown         = 1
 
 [Manufacturer]
 %Microsoft%         = RndisDevices,NTx86,NTamd64,NTia64
@@ -76,7 +73,7 @@ include     = netrndis.inf
 needs       = Usb_Rndis.ndi.Services
 
 ; Optional registry settings. You can modify as needed.
-[RNDIS_AddReg_Vista] 
+[RNDIS_AddReg_Vista]
 HKR, NDI\params\VistaProperty, ParamDesc,  0, %Vista_Property%
 HKR, NDI\params\VistaProperty, type,       0, "edit"
 HKR, NDI\params\VistaProperty, LimitText,  0, "12"
@@ -84,7 +81,7 @@ HKR, NDI\params\VistaProperty, UpperCase,  0, "1"
 HKR, NDI\params\VistaProperty, default,    0, " "
 HKR, NDI\params\VistaProperty, optional,   0, "1"
 
-; No sys copyfiles - the sys files are already in-build 
+; No sys copyfiles - the sys files are already in-build
 ; (part of the operating system).
 
 ; Modify these strings for your device as needed.
@@ -112,6 +109,7 @@ ClassGUID           = {4d36e972-e325-11ce-bfc1-08002be10318}
 Provider            = %Microsoft%
 DriverVer           = 07/21/2008,6.0.6000.16384
 ;CatalogFile        = device.cat
+PnpLockdown         = 1
 
 [Manufacturer]
 %Microsoft%         = RndisDevices,NTx86,NTamd64,NTia64
@@ -151,7 +149,7 @@ include     = netrndis.inf
 needs       = usbrndis6.ndi.Services
 
 ; Optional registry settings. You can modify as needed.
-[RNDIS_AddReg] 
+[RNDIS_AddReg]
 HKR, NDI\params\RndisProperty, ParamDesc,  0, %Rndis_Property%
 HKR, NDI\params\RndisProperty, type,       0, "edit"
 HKR, NDI\params\RndisProperty, LimitText,  0, "12"
@@ -159,7 +157,7 @@ HKR, NDI\params\RndisProperty, UpperCase,  0, "1"
 HKR, NDI\params\RndisProperty, default,    0, " "
 HKR, NDI\params\RndisProperty, optional,   0, "1"
 
-; No sys copyfiles - the sys files are already in-build 
+; No sys copyfiles - the sys files are already in-build
 ; (part of the operating system).
 
 ; Modify these strings for your device as needed.
@@ -171,8 +169,6 @@ Rndis_Property         = "Optional RNDIS Property"
 
 ## Related topics
 
-
 [Overview of Remote NDIS (RNDIS)](overview-of-remote-ndis--rndis-.md)
 
 [USB class drivers included in Windows](../usbcon/supported-usb-classes.md)
-

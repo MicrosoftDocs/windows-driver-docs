@@ -6,7 +6,7 @@ keywords:
 - UVC INF files WDK USB Video Class
 - UVC INF files WDK USB Video Class , sample code
 - sample code WDK USB Video Class , UVC INF files
-ms.date: 09/17/2021
+ms.date: 05/08/2023
 ---
 
 # Providing a UVC INF File
@@ -28,10 +28,10 @@ To do so, include the following code in the INF file, here arbitrarily named *Xu
 ; Copyright (c) CompanyName. All rights reserved.
 
 [Version]
-Signature="$Windows NT$"
+...
 Class=Camera
 ClassGuid={ca3e7ab9-b4c3-4ae6-8251-579ef933890f}
-Provider=%CompanyName%
+...
 
 [SourceDisksNames]
 1=%Package%
@@ -126,7 +126,7 @@ AddInterface=%KSCATEGORY_VIDEO%,<Custom GUID/Global>,MyDevice.Interface
 
 [MyDevice.Interface]
 AddReg=MyDevice.Interface.AddReg
- 
+
 [MyDevice.Interface.AddReg]
 HKR,,CLSID,,%ProxyVCap.CLSID%
 HKR,,FriendlyName,,%MyDevice.DeviceDesc%

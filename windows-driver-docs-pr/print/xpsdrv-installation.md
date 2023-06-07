@@ -4,7 +4,7 @@ description: XPSDrv Installation
 keywords:
 - XPSDrv printer drivers WDK , installing
 - INF files WDK print , XPSDrv printer drivers
-ms.date: 01/31/2023
+ms.date: 05/08/2023
 ---
 
 # XPSDrv Installation
@@ -25,22 +25,23 @@ The following code example illustrates an INF file with the preceding changes.
 [Version]
 Signature="$Windows NT$"
 Provider=%MS%
-ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
 Class=Printer
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
 CatalogFile=ntprint.cat
 DriverVer=10/11/2005,6.0.5242.0
+PnpLockdown=1
 
 [Manufacturer]
-Microsoft
+%MS% = Microsoft,NTamd64
 
-[Microsoft]
+[Microsoft.NTamd64]
 "XPSDrv Sample Driver" = INSTALL_XDSMPL_FILTERS
 
 [INSTALL_XDSMPL_FILTERS]
 CopyFiles=XPSDrvSample,ConfigPlugin,COLORPROFILES
 DriverFile=mxdwdrv.dll
 ConfigFile=unidrvui.dll
-HelpFile=unidrv.HLP 
+HelpFile=unidrv.HLP
 DataFile=XDSmpl.GPD
 Include=NTPRINT.INF
 Needs=UNIDRV.OEM, XPSGPD.OEM, XPSDRV.OEM

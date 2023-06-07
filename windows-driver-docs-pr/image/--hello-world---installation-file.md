@@ -1,16 +1,18 @@
 ---
-title: Hello World' Installation File
-description: Hello World' Installation File
-ms.date: 04/20/2017
+title: Hello World installation file
+description: Hello World installation file
+ms.date: 05/05/2023
 ---
 
-# 'Hello World' Installation File
+# Hello World installation file
 
-A minidriver requires a setup information (INF) file to be installed. An INF file is a text file containing all of the information needed to install the device. For information about INF files, see the [INF Files for WIA Devices](inf-files-for-wia-devices.md) and [Creating an INF File](../install/overview-of-inf-files.md) section.
+A minidriver requires a setup information (INF) file to be installed. An INF file is a text file containing all of the information needed to install the device.
+
+For more information about INF files, see [INF Files for WIA Devices](inf-files-for-wia-devices.md) and [Creating an INF File](../install/overview-of-inf-files.md).
 
 The *hellowld.inf* file should contain the following:
 
-```INF
+```inf
 ; HELLOWLD.INF  -- Hello World WIA Minidriver setup file
 ; Copyright (c) 2002-2003 Hello World Company
 ; Manufacturer:  Hello World Company
@@ -22,14 +24,15 @@ ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
 Provider=%Mfg%
 DriverVer=06/26/2001,1.0
 CatalogFile=wia.cat
+PnpLockdown=1
 
 [DestinationDirs]
 DefaultDestDir=11
 
 [Manufacturer]
-%Mfg%=Models
+%Mfg%=Models,NTamd64
 
-[Models]
+[Models.NTamd64]
 %WIADevice.DeviceDesc% = WIADevice.Scanner, HELLOWORLD_PNP_ID
 
 [WIADevice.Scanner]
@@ -78,6 +81,3 @@ Mfg="Hello World Company"
 WIADevice.DeviceDesc="Hello World WIA Minidriver"
 Location="Hello World WIA Minidriver Installation Source"
 ```
-
- 
-

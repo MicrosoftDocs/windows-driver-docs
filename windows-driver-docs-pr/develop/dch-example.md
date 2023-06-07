@@ -1,16 +1,16 @@
 ---
 title: DCH Example
 description: Describes how the DCHU driver sample applies the DCH design principles (Declarative, Componentized, Hardware Support Apps [HSA]).
-ms.date: 07/23/2021
+ms.date: 05/05/2023
 ---
 
 # DCH-Compliant Driver Package Example
 
-This topic describes how the [DCHU driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU) applies [DCH design principles](dch-principles-best-practices.md).  You can use it as a model to apply DCH design principles to your own driver package.  
+This article describes how the [DCHU driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU) applies [DCH design principles](dch-principles-best-practices.md).  You can use it as a model to apply DCH design principles to your own driver package.
 
 If you would like a local copy of the sample repo, clone from [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples).
 
-Some portions of the sample may use directives and APIs that are only available on certain versions of Windows 10 and above.  Please refer to [Device and Driver Installation](../install/index.md) to see what OS version a given directive is supported on.
+Some portions of the sample may use directives and APIs that are only available on certain versions of Windows 10 and above.  Refer to [Device and Driver Installation](../install/index.md) to see what OS version a given directive is supported on.
 
 ## Prerequisites
 
@@ -22,9 +22,9 @@ The sample provides example scenarios where two hardware partners, Contoso (a sy
 
 ## Use declarative sections/directives and properly isolate INF
 
-First, Fabrikam reviews the [list of INF sections and directives](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file) that are invalid in DCH-compliant driver packages.  During this exercise, Fabrikam notices that they're using many of these sections and directives in their driver package.  
+First, Fabrikam reviews the [list of INF sections and directives](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file) that are invalid in DCH-compliant driver packages.  During this exercise, Fabrikam notices that they're using many of these sections and directives in their driver package.
 
-Their driver INF registers a co-installer that applies platform-dependent settings and files.  This means that the driver package is larger than it should be, and it is harder to service the driver when a bug affects only a subset of the OEM systems that ship the driver.  Also, most of the OEM-specific modifications are related to branding, so Fabrikam needs to update the driver package every time an OEM is added or when a minor issue affects a subset of OEM systems.
+Their driver INF registers a co-installer that applies platform-dependent settings and files.  This means that the driver package is larger than it should be, and it's harder to service the driver when a bug affects only a subset of the OEM systems that ship the driver.  Also, most of the OEM-specific modifications are related to branding, so Fabrikam needs to update the driver package every time an OEM is added or when a minor issue affects a subset of OEM systems.
 
 Fabrikam removes the non-declarative sections and directives and uses the [InfVerif](../devtest/infverif.md) tool to verify that the new driver package's INF file follows the declarative INF requirement.
 
@@ -32,14 +32,16 @@ Fabrikam removes the non-declarative sections and directives and uses the [InfVe
 
 Next, Fabrikam separates customizations that are specific to OEM partners (such as Contoso) from the base driver package into an [extension INF](../install/using-an-extension-inf-file.md).
 
-The following snippet, updated from [`osrfx2_DCHU_extension.inx`], specifies the `Extension` class and identifies Contoso as the provider since they will own the extension driver package:
+The following snippet, updated from [`osrfx2_DCHU_extension.inx`], specifies the `Extension` class and identifies Contoso as the provider since they'll own the extension driver package:
 
 ```inf
 [Version]
+...
 Class       = Extension
 ClassGuid   = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
 Provider    = Contoso
 ExtensionId = {zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz} ; replace with your own GUID
+...
 ```
 
 In [`osrfx2_DCHU_base.inx`], Fabrikam specifies the following entries:
@@ -58,7 +60,7 @@ HKR, OSR, "OperatingParams",, "-Extended"
 HKR, OSR, "OperatingExceptions",, "x86"
 ```
 
-Note that extensions are always processed after the base INF but in no definite order. If a base INF is updated to a newer version, then the extensions will still be re-applied after the new base INF is installed.
+Extensions are always processed after the base INF but in no definite order. If a base INF is updated to a newer version, then the extensions will still be re-applied after the new base INF is installed.
 
 ## Install a service from an INF file
 
@@ -92,7 +94,7 @@ osrfx2_DCHU_filter.dll
 osrfx2_DCHU_usersvc.exe
 ```
 
-Note that such a service could also be installed in a component or extension INF, depending on the scenario.
+Such a service could also be installed in a component or extension INF, depending on the scenario.
 
 ## Use a component to install legacy software from a driver package
 
@@ -127,11 +129,11 @@ osrfx2_DCHU_componentsoftware.exe
 
 The [source code for the Win32 app](https://github.com/Microsoft/Windows-driver-samples/tree/main/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_componentsoftware) is included in the sample.
 
-Note that the component driver package is only distributed on Desktop SKUs due to targeting set in the [Windows Hardware Dev Center dashboard](https://partner.microsoft.com/dashboard/Registration/Hardware).  For more info, see [Publish a driver to Windows Update](../dashboard/publish-a-driver-to-windows-update.md).
+The component driver package is only distributed on Desktop SKUs due to targeting set in the [Windows Hardware Dev Center dashboard](https://partner.microsoft.com/dashboard/Registration/Hardware).  For more info, see [Publish a driver to Windows Update](../dashboard/publish-a-driver-to-windows-update.md).
 
 ## Allow communication with a hardware support app
 
-Fabrikam would like to provide a GUI-based companion app as part of the Windows Driver package.  Because Win32-based companion applications cannot be part of a Windows Driver package, they port their Win32 app to the Universal Windows Platform (UWP) and [pair the app with the device](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).
+Fabrikam would like to provide a GUI-based companion app as part of the Windows Driver package.  Because Win32-based companion applications can't be part of a Windows Driver package, they port their Win32 app to the Universal Windows Platform (UWP) and [pair the app with the device](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).
 
 The following snippet from [`osrfx2_DCHU_base/device.c`](https://github.com/microsoft/Windows-driver-samples/blob/main/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_base/device.c) shows how the base driver package adds a custom capability to the device interface instance:
 
@@ -167,29 +169,29 @@ Ideally, there should be strong versioning contracts between base, extensions, a
 CopyInf=osrfx2_DCHU_component.inf
 ```
 
-This directive can also be used to coordinate installation of INF files in multifunction devices.  For more details, see [Copying INF files](../install/copying-inf-files.md).
+This directive can also be used to coordinate installation of INF files in multifunction devices.  For more information, see [Copying INF files](../install/copying-inf-files.md).
 
 > [!NOTE]
 > While a base driver can payload an extension (and target the base driver in the shipping label), an extension bundled with another driver cannot be published to the extension hardware ID.
 
 ## Run from the Driver Store
 
-To make it easier to update the driver, Fabrikam specifies the [Driver Store](../install/driver-store.md) as the destination to copy the driver files by using [**dirid 13**](../install/using-dirids.md) where possible.  Using a destination directory value of 13 can result in improved stability during the driver update process.  Here is an example from [`osrfx2_DCHU_base.inx`]:
+To make it easier to update the driver, Fabrikam specifies the [Driver Store](../install/driver-store.md) as the destination to copy the driver files by using [**dirid 13**](../install/using-dirids.md) where possible.  Using a destination directory value of 13 can result in improved stability during the driver update process.  Here's an example from [`osrfx2_DCHU_base.inx`]:
 
 ```inf
 [DestinationDirs]
 OsrFx2_CopyFiles = 13 ; copy to Driver Store
 ```
 
-See the [run from Driver Store](./run-from-driver-store.md) page for more details regarding how to dynamically find and load files from the Driver Store.  
+See the [run from Driver Store](./run-from-driver-store.md) page for more details regarding how to dynamically find and load files from the Driver Store.
 
 ## Summary
 
-The following diagram shows the driver packages that Fabrikam and Contoso created for their DCH-compliant driver.  In the loosely coupled example, they will make three separate submissions on the [Windows Hardware Dev Center dashboard](https://partner.microsoft.com/dashboard/Registration/Hardware): one for the base, one for the extension, and one for the component.  In the tightly coupled example, they will make two submissions: base and extension/component.
+The following diagram shows the driver packages that Fabrikam and Contoso created for their DCH-compliant driver.  In the loosely coupled example, they'll make three separate submissions on the [Windows Hardware Dev Center dashboard](https://partner.microsoft.com/dashboard/Registration/Hardware): one for the base, one for the extension, and one for the component.  In the tightly coupled example, they'll make two submissions: base and extension/component.
 
 ![Extension, base, and component driver packages.](images/universal-scenarios.png)
 
-Note that the component INF will match on the component hardware ID, whereas the base and extensions will match on the board's hardware ID.
+The component INF will match on the component hardware ID, whereas the base and extensions will match on the board's hardware ID.
 
 ## See also
 

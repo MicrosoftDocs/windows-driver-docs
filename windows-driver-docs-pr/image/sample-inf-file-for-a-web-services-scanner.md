@@ -1,7 +1,7 @@
 ---
 title: Sample INF File for a Web Services Scanner
 description: The Sti.inf file shows how to install a WIA driver.
-ms.date: 08/13/2021
+ms.date: 05/08/2023
 ---
 
 # Sample INF File for a Web Services Scanner
@@ -23,6 +23,8 @@ Class=Image
 ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
 Provider=%Mfg%
 DriverVer=1/17/2006,1.0.0.0 ; replace with the actual driver date
+CatalogFile=ExampleCatalog.cat
+PnpLockdown=1
 ; and version
 
 [SourceDisksFiles.x86]

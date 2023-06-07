@@ -1,11 +1,10 @@
 ---
 title: Modified INF for MSVAD Micarray
 description: Modified INF for MSVAD Micarray
-ms.date: 04/20/2017
+ms.date: 05/05/2023
 ---
 
 # Modified INF for MSVAD Micarray
-
 
 This topic shows how to modify the Micarray.inf sample file to provide setup information about how to install the sample microphone array described in [Microphone Array Geometry Property](microphone-array-geometry-property.md).
 
@@ -14,12 +13,13 @@ Navigate to Src\\Audio\\Msvad to locate Micarray.inf. Make a copy of the origina
 ```inf
 // Modified micarray.inf file tailored for a microphone array
 [Version]
-Signature="$CHICAGO$"
+Signature="$Windows NT$"
 Class=MEDIA
 Provider=%MSFT%
 ClassGUID={4d36e96c-e325-11ce-bfc1-08002be10318}
 DriverVer = 02/22/2007, 6.0.6000.1
 CatalogFile=msvad.cat
+PnpLockdown=1
 
 [SourceDisksNames]
 222="MSVAD Driver Disk","",222
@@ -137,25 +137,12 @@ MSVAD_MIDI="MSVAD -> WDM Midi Device"
 
 Proxy.CLSID="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
 KSCATEGORY_AUDIO="{6994AD04-93EF-11D0-A3CC-00A0C9223196}"
-KSCATEGORY_RENDER="{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
 KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
 
 KSNAME_Wave="Wave"
 KSNAME_Topology="Topology"
 
 msvad_micarray.SvcDesc="Sample Virtual Audio Device (Mic Array) (WDM)"
-
-MediaCategories="SYSTEM\CurrentControlSet\Control\MediaCategories"
-Simple.NameGuid="{946A7B1A-EBBC-422a-A81F-F07C8D40D3B4}"
-Simple.Name="MSVAD (Simple)"
 ```
 
 After you modify the file as shown in the preceding example, save it in its original location. For more information about how to build the microphone array sample driver, see [Microphone Array Geometry Property](microphone-array-geometry-property.md).
-
- 
-
- 
-
-
-
-
