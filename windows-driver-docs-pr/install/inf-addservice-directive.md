@@ -89,7 +89,7 @@ Do not overwrite the delayed auto start value for the given service if this serv
 **0x00020000** (SPSVCINST_NOCLOBBER_FAILUREACTIONS) (Windows 11 version 22H2 and later versions of Windows)  
 Do not overwrite the failure actions for the given service if this service already exists in the system and has existing failure actions. See the FailureActions directive below for more information on failure actions.
 
-**0x00040000** (SPSVCINST_NOCLOBBER_BOOTFLAGS) (Windows 11 Version `<TBD>` and later versions of Windows) Do not overwrite the boot flags value for the given service if this service already exists in the system and has an existing value. See the **BootFlags** directive below for more information.
+**0x00040000** (SPSVCINST_NOCLOBBER_BOOTFLAGS) (Windows 11 version `<TBD>` and later versions of Windows) Do not overwrite the boot flags value for the given service if this service already exists in the system and has an existing value. See the **BootFlags** directive below for more information.
 
 *service-install-section*  
 References an INF-writer-defined section that contains information for installing the named service for this device (or devices). For more information, see the following **Remarks** section.
@@ -126,7 +126,7 @@ ServiceBinary=path-to-service
 [AddReg=add-registry-section[, add-registry-section] ...]
 [DelReg=del-registry-section[, del-registry-section] ...]
 [BitReg=bit-registry-section[,bit-registry-section] ...]
-[BootFlags=value] (Windows 11 build Version <TBD> and later versions of Windows)
+[BootFlags=value] (Windows 11 build version <TBD> and later versions of Windows)
 [LoadOrderGroup=load-order-group-name]
 [Dependencies=depend-on-item-name[,depend-on-item-name]
 [Security="security-descriptor-string"]...]
@@ -229,7 +229,7 @@ This directive is almost never used in a *service-install-section*, but it might
 Is valid in a *service-install-section* but almost never used.
 
 **BootFlags**=value
-This value can only be used with kernel-mode driver services and is only available with Windows 11 Version `<TBD>` and above
+This value can only be used with kernel-mode driver services and is only available with Windows 11 version `<TBD>` and above.
 
 Optionally specifies when the operating system should promote a driver's StartType value to 0x0 (SERVICE_BOOT_START). You can specify one or more (ORed) of the following numeric values, expressed as hexadecimal values.
 
