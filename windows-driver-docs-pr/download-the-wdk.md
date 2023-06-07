@@ -6,7 +6,7 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 05/24/2023
+ms.date: 06/06/2023
 ---
 
 # Download the Windows Driver Kit (WDK)
@@ -86,7 +86,11 @@ The WDK Visual Studio extension is included in the default WDK installation.
 
 ## Enterprise WDK (EWDK)
 
-The EWDK is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17.1.5 and MSVC toolset v14.31.  To get started, mount the ISO and run **LaunchBuildEnv**.
+As an alternative to downloading Visual Studio, the SDK, and the WDK, you can download the EWDK, which is a standalone, self-contained command-line environment for building drivers. It includes Visual Studio Build Tools, the SDK, and the WDK.
+
+You can also use the Visual Studio interface with the build tools provided in the EWDK.
+
+The latest public version of the EWDK contains Visual Studio 2022 Build Tools 17.1.5 and MSVC toolset v14.31.
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
@@ -94,18 +98,15 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 
 * [Download the Windows 11, version 22H2 (updated May 2023) EWDK](/legal/windows/hardware/enterprise-wdk-license-2022)
 
-> You can use the Visual Studio interface with the build tools provided in the EWDK.
->
->1.    Mount the EWDK ISO.
->2.    Run `LaunchBuildEnv.cmd`.
->3.    In the environment created in step 2, type **SetupVSEnv**, and then press **Enter**.
->4.    Launch devenv.exe from the same environment, using the full file path. 
->Example: `"C:\Program Files\Microsoft Visual Studio\2022\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`
->
->Note that the Visual Studio major version should match with the version in the EWDK. For example, Visual Studio 2022 works with the EWDK that contain VS17.X build tools. For a list of Visual Studio 2022 version numbers, see [Visual Studio 2022 Releases](/visualstudio/releases/2022/release-history).
+Once you have downloaded the ISO, use these steps to set up your build environment:
 
-<br>
+1. Mount the EWDK ISO.
+2. Run `LaunchBuildEnv.cmd`.
+3. In the environment created in step 2, type **SetupVSEnv**, and then press **Enter**.
+4. Launch devenv.exe from the same environment, using the full file path. For example: `"C:\Program Files\Microsoft Visual Studio\2022\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`
+5. When you're done with the build environment, you may want to eject the ISO.
 
+Note that the Visual Studio major version should match with the version in the EWDK. For example, Visual Studio 2022 works with the EWDK that contain VS17.X build tools. For a list of Visual Studio 2022 version numbers, see [Visual Studio 2022 Releases](/visualstudio/releases/2022/release-history).
 
 ## Driver samples for Windows
 
