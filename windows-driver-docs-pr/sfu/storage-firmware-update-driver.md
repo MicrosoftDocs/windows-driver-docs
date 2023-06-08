@@ -1,7 +1,7 @@
 ---
 title: Storage Firmware Update (SFU) driver
 description: Provides implementation details for the Storage Firmware Update (SFU) driver.
-ms.date: 03/17/2023
+ms.date: 05/08/2023
 ---
 
 # Storage Firmware Update (SFU) driver
@@ -259,10 +259,11 @@ The following is an example extension INF file:
 Signature="$Windows NT$"
 Class = Extension
 ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
-Provider=%ManufacturerName%
+Provider = %ManufacturerName%
 ExtensionId = {D91908BD-43FA-411B-92A1-C378AE5AF9FA}
-CatalogFile=delta.cat
+CatalogFile = delta.cat
 DriverVer = 08/26/2019,1.0.0.0
+PnpLockdown = 1
 
 [SourceDisksNames]
 1 = %DiskName%
@@ -360,7 +361,7 @@ Class=Firmware
 ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
 Provider=%ManufacturerName%
 CatalogFile=delta.cat
-DriverVer = 08/26/2019,11.37.9.948
+DriverVer=08/26/2019,11.37.9.948
 PnPLockDown=1
 
 [SourceDisksNames]

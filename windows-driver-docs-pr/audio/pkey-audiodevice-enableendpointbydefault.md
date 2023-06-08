@@ -1,7 +1,7 @@
 ---
 title: PKEY\_AudioDevice\_EnableEndpointByDefault
 description: PKEY\_AudioDevice\_EnableEndpointByDefault
-ms.date: 03/06/2023
+ms.date: 05/05/2023
 ms.topic: reference
 ---
 
@@ -169,9 +169,9 @@ The following INF file snippet shows how to use **PKEY\_AudioDevice\_EnableEndpo
 
 ```inf
 [Version]
-Signature="$Windows NT$"
+...
 Class=MEDIA
-ClassGuid= {4d36e96c-e325-11ce-bfc1-08002be10318}
+ClassGuid={4d36e96c-e325-11ce-bfc1-08002be10318}
 ...
 
 [USBAudio]
@@ -204,9 +204,9 @@ The following INF file snippet shows how a CD player is set up so that it is ena
 
 ```inf
 [Version]
-Signature="$Windows NT$"
+...
 Class=MEDIA
-ClassGuid= {4d36e96c-e325-11ce-bfc1-08002be10318}
+ClassGuid={4d36e96c-e325-11ce-bfc1-08002be10318}
 ...
 
 [USBAudio]

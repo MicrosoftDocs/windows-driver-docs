@@ -1,7 +1,7 @@
 ---
 title: Manufacturer override of monitor EDIDs
 description: Manufacturers can write an INF file to update or override the Extended Display Identification Data (EDID) of any monitor.
-ms.date: 03/30/2021
+ms.date: 05/05/2023
 ms.custom: contperf-fy21q3
 ---
 
@@ -86,18 +86,19 @@ For more information on INFs in general, and **AddReg** and **DDInstall** in par
 ;
 ; Copyright (c) Microsoft Corporation.  All rights reserved.
 ;
-; This is a generic INF file for overriding EDIDs 
+; This is a generic INF file for overriding EDIDs
 ; of any monitors, starting with Windows Vista.
 ;
 
 [Version]
-signature="$WINDOWS NT$"
+Signature="$WINDOWS NT$"
 Class=Monitor
 ClassGuid={4D36E96E-E325-11CE-BFC1-08002BE10318}
 Provider="MS_EDID_OVERRIDE"
 DriverVer=04/18/2006, 1.0.0.0
+PnpLockdown=1
 
-; Be sure to add the directive below with the proper catalog file after 
+; Be sure to add the directive below with the proper catalog file after
 ; WHQL certification.
 ;CatalogFile=Sample.cat
 
@@ -157,7 +158,7 @@ HKR,,MaxResolution
 HKR,,DPMS
 HKR,,ICMProfile
 
-; Pre-defined AddReg sections. These can be used for default settings 
+; Pre-defined AddReg sections. These can be used for default settings
 ; when a given standard resolution is used.
 
 [1024]

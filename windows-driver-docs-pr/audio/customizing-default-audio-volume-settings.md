@@ -7,49 +7,49 @@ keywords:
 - adapter drivers WDK audio , volume settings
 - customize audio volume settings
 - Port Class audio adapters WDK , volume settings
-ms.date: 04/20/2017
+ms.date: 05/05/2023
 ---
 
 # Customizing HD Audio Driver Volume Settings
 
-
 The ability to customize the in box HD audio default audio volume and microphone boost levels to suit a specific PC, provides OEMs with some flexibility in their audio adapter installation parameters.
 
-**Note**  The process described here can only be used if the default Microsoft HD Audio driver is being used.
+> [!NOTE]
+> The process described here can only be used if the default Microsoft HD Audio driver is being used.
 
-By default, the HD Audio class function driver sets the audio volume and the microphone boost levels at predetermined values to ensure a pleasant “out of the box” experience for the user.
+By default, the HD Audio class function driver sets the audio volume and the microphone boost levels at predetermined values to ensure a pleasant "out of the box" experience for the user.
 
-The HD Audio class function driver, which I shall now refer to as the Audio Class driver, uses various hard-coded default values that cannot be customized for any particular PC. As such, OEMs are not able to override these values to meet their own requirements. And one of the most important settings to adjust is the volume level, as users are sensitive to the loudness or quietness of their audio systems, especially during first-time use.
+The HD Audio class function driver, which is referred to here as the Audio Class driver, uses various hard-coded default values that can't be customized for any particular PC. As such, OEMs aren't able to override these values to meet their own requirements. And one of the most important settings to adjust is the volume level, as users are sensitive to the loudness or quietness of their audio systems, especially during first-time use.
 
-The Audio Class driver has been redesigned to allow you to override the hard-coded default values. The mechanism for overriding the Audio Class driver’s hard-coded values involves writing an INF file that wraps the Audio Class driver’s inbox INF file (hdaudio.inf), and using this wrapper INF to specify the desired values.
+The Audio Class driver has been redesigned to allow you to override the hard-coded default values. The mechanism for overriding the Audio Class driver's hard-coded values involves writing an INF file that wraps the Audio Class driver's inbox INF file (hdaudio.inf), and using this wrapper INF to specify the desired values.
 
-The following diagram which shows a sample HD Audio codec topology. Note that there are IDs for the individual nodes, as well as IDs for the pin complexes.![sample audio codec topology showing pin complexes that represent the physical connectors. the mic and line input nodes, and the speaker output node show pin complex ids.](images/pin-complexid2.png)
+The following diagram shows a sample HD Audio codec topology. There are IDs for the individual nodes, and IDs for the pin complexes.![sample audio codec topology showing pin complexes that represent the physical connectors. the mic and line input nodes, and the speaker output node show pin complex ids.](images/pin-complexid2.png)
 
-The pin complexes represent the physical connectors for the associated device (e.g. speaker, mic, or line).
+The pin complexes represent the physical connectors for the associated device (for example, speaker, mic, or line).
 
 To specify a custom audio volume level or microphone boost level, use the wrapper INF file to specify custom levels per pin complex ID. The levels are expressed as DWORDs that represent the default kernel streaming (KS) decibel levels that the class driver should return.
 
-When the HD Audio class driver receives a GET request for KSPROPERTY\_AUDIO\_VOLUMELEVEL, the driver determines whether or not there is a default volume (or Mic boost) value in the registry for the path that contains the node that received the request. If there is a value in the registry, but there is no previously cached value, the default value in the registry will be applied to the device, and also returned in the KSPROPERTY\_AUDIO\_VOLUMELEVEL response. If there is no value in the registry, the HD Audio class driver retrieves a default value from the sub-device graph implementation.
+When the HD Audio class driver receives a GET request for KSPROPERTY_AUDIO_VOLUMELEVEL, the driver determines whether or not there's a default volume (or Mic boost) value in the registry for the path that contains the node that received the request. If there's a value in the registry, but there's no previously cached value, the default value in the registry will be applied to the device, and also returned in the KSPROPERTY_AUDIO_VOLUMELEVEL response. If there's no value in the registry, the HD Audio class driver retrieves a default value from the sub-device graph implementation.
 
 Starting with Windows Vista, the default values are as follows:
 
--   Endpoint volume defaults to max minus 6 dB for all device types.
+- Endpoint volume defaults to max minus 6 dB for all device types.
 
--   Microphone boost defaults to 0 dB.
+- Microphone boost defaults to 0 dB.
 
-The following steps summarize the algorithm that is used by the Audio Class driver to determine the default values to return in response to a GET request for KSPROPERTY\_AUDIO\_VOLUMELEVEL:
+The following steps summarize the algorithm that is used by the Audio Class driver to determine the default values to return in response to a GET request for KSPROPERTY_AUDIO_VOLUMELEVEL:
 
 1. Determine the pin complex at which the path containing the queried volume node terminates.
 
-2. Perform a registry lookup to see if a volume or microphone boost default value has been provided for the pin complex found in step 1.
+1. Perform a registry lookup to see if a volume or microphone boost default value has been provided for the pin complex found in step 1.
 
-3. If a value is found in the registry, then the driver sets that value to the minimum, if it falls below the minimum value supported by the amplifier. Otherwise the value is set to the maximum, if it falls above the maximum value supported by the amplifier. If the value found in the registry is within the range supported by the amplifier, then the value is returned in response to the GET request. In addition, the driver programs the associated HD Audio amplifier widget with this value when rendering to or capturing from the pin complex.
+1. If a value is found in the registry, then the driver sets that value to the minimum, if it falls below the minimum value supported by the amplifier. Otherwise the value is set to the maximum, if it falls above the maximum value supported by the amplifier. If the value found in the registry is within the range supported by the amplifier, then the value is returned in response to the GET request. In addition, the driver programs the associated HD Audio amplifier widget with this value when rendering to or capturing from the pin complex.
 
 The following folder tree shows the layout for the driver instance key that holds the default values.
 
 &lt;Driver Key&gt;
 DefaultVolumeLevels
-Pin Complex (2 digit HEX, not preceded by “0x”)
+Pin Complex (2 digit HEX, not preceded by "0x")
 Volume (DWORD in KS DB steps)
 Boost (DWORD in KS DB steps)
 
@@ -60,7 +60,7 @@ The KS DB stepping values are defined as follows:
 
 +2147483647 is +32767.99998474 decibels (gain)
 
-For more information on the unit of measurement that is used (1/65536 dB), see [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](./ksproperty-audio-volumelevel.md).
+For more information on the unit of measurement that is used (1/65536 dB), see [**KSPROPERTY_AUDIO_VOLUMELEVEL**](./ksproperty-audio-volumelevel.md).
 
 To override the wdmudio.inf file, use the Include and Needs directives as shown in this code segment from the *Microsoft Virtual Audio Device Driver Sample* available as part of the [Windows Driver Kit (WDK) 8.1 Samples](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Driver%20Kit%20Sample/Windows%20Driver%20Kit%20(WDK)%208.1%20Samples).
 
@@ -78,7 +78,7 @@ For more information about the Include and Needs directives, see [**INF DDInstal
 
 The following is a sample INF wrapper that wraps the INF file for the Audio Class driver.
 
-```text
+```inf
 ;Copyright (c) Microsoft Corporation. All rights reserved.
 ;
 ;Module Name:
@@ -95,6 +95,7 @@ ClassGuid={4d36e96c-e325-11ce-bfc1-08002be10318}
 Provider=Microsoft
 DriverVer=07/28/2012,6.2.9201.0
 CatalogFile=hdaudvol.cat
+PnpLockdown=1
 
 [Manufacturer]
 Microsoft = Microsoft,ntamd64,ntarm
@@ -145,9 +146,10 @@ HKR,DefaultVolumeLevels\18,Boost,1,00,00,0A,00 ; Set to 0x000A0000 to set to 10d
 HdAudModel_DefaultVolume_DeviceDesc = "High Definition Audio Device"
 ```
 
-Because an HKR relative path is specified, the exact driver registry path will be determined based on the specific INF file section that is used. For more information about HKR relative paths, see [**INF AddReg Directive (Windows Drivers)**](../install/inf-addreg-directive.md). 
+Because an HKR relative path is specified, the exact driver registry path will be determined based on the specific INF file section that is used. For more information about HKR relative paths, see [**INF AddReg Directive (Windows Drivers)**](../install/inf-addreg-directive.md).
 
-## <span id="related_topics"></span>Related topics
+## Related articles
 
-[Default Audio Volume Settings](default-audio-volume-settings.md)  
-[**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](./ksproperty-audio-volumelevel.md)
+[Default Audio Volume Settings](default-audio-volume-settings.md)
+
+[**KSPROPERTY_AUDIO_VOLUMELEVEL**](./ksproperty-audio-volumelevel.md)

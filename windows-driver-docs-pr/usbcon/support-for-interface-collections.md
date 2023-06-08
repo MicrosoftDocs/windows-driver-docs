@@ -1,7 +1,7 @@
 ---
 title: Overview of enumeration of interface collections on USB composite devices
 description: Interfaces on a composite USB device can be grouped in collections. The USB generic parent driver (Usbccgp.sys) can enumerate interface collections in four ways.
-ms.date: 02/15/2023
+ms.date: 05/08/2023
 ---
 
 # Overview of enumeration of interface collections on USB composite devices
@@ -149,19 +149,21 @@ The following example INF file loads the USB generic parent driver to manage a W
 
 ```inf
 [Version]
-signature="$Windows NT$"
+Signature="$Windows NT$"
 Class=USB
 ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
 Provider=%MSFT%
 DriverVer=07/01/2001,5.1.2600.0
+CatalogFile=ExampleCatalog.cat
+PnpLockdown=1
 
 [ControlFlags]
 ExcludeFromSelect=*
 
 [Manufacturer]
-CompanyName=CompanyName
+CompanyName=CompanyName,NTamd64
 
-[CompanyName]
+[CompanyName.NTamd64]
 %COMPANYNAME.DeviceDesc%=CCGPDriverInstall,USB\Vid_????&Pid_????
 
 [CCGPDriverInstall.NT]

@@ -1,7 +1,7 @@
 ---
 description: Install WinUSB (Winusb.sys) in the device's kernel-mode stack as the USB device's function driver instead of implementing a driver.
 title: WinUSB (Winusb.sys) installation for developers
-ms.date: 05/16/2022
+ms.date: 05/08/2023
 ms.custom: contperf-fy22q4
 ---
 
@@ -59,19 +59,20 @@ The following INF installs WinUSB as the OSR USB FX2 board's function driver on 
 
 > Starting in Windows 10, version 1709, the Windows Driver Kit provides [InfVerif.exe](../devtest/infverif.md) that you can use to test a driver INF file to make sure there are no syntax issues and the INF file is universal. We recommend that you provide a universal INF. For more information, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
 
-``` syntax
+```inf
 ;
 ;
 ; Installs WinUsb
 ;
 
 [Version]
-Signature = "$Windows NT$"
-Class     = USBDevice
-ClassGUID = {88BAE032-5A81-49f0-BC3D-A4FF138216D6}
-Provider  = %ManufacturerName%
+Signature   = "$Windows NT$"
+Class       = USBDevice
+ClassGUID   = {88BAE032-5A81-49f0-BC3D-A4FF138216D6}
+Provider    = %ManufacturerName%
 CatalogFile = WinUSBInstallation.cat
-DriverVer=09/04/2012,13.54.20.543
+DriverVer   = 09/04/2012,13.54.20.543
+PnpLockdown = 1
 
 ; ========== Manufacturer/Models sections ===========
 
@@ -115,7 +116,7 @@ KmdfLibraryVersion=1.11
 HKR,,DeviceInterfaceGUIDs,0x10000,"{9f543223-cede-4fa3-b376-a25ce9a30e74}"
 
 ; [DestinationDirs]
-; If your INF needs to copy files, you must not use the DefaultDestDir directive here.  
+; If your INF needs to copy files, you must not use the DefaultDestDir directive here.
 ; You must explicitly reference all file-list-section names in this section.
 
 ; =================== Strings ===================
@@ -139,19 +140,20 @@ Except for device-specific values and several issues that are noted in the follo
 
 The following INF installs WinUSB as the OSR USB FX2 board's function driver on a x64-based system. The example shows INF with WDF co-installers.
 
-``` syntax
+```inf
 ;
 ;
 ; Installs WinUsb
 ;
 
 [Version]
-Signature = "$Windows NT$"
-Class     = USBDevice
-ClassGUID = {88BAE032-5A81-49f0-BC3D-A4FF138216D6}
-Provider  = %ManufacturerName%
+Signature   = "$Windows NT$"
+Class       = USBDevice
+ClassGUID   = {88BAE032-5A81-49f0-BC3D-A4FF138216D6}
+Provider    = %ManufacturerName%
 CatalogFile = WinUSBInstallation.cat
-DriverVer=09/04/2012,13.54.20.543
+DriverVer   = 09/04/2012,13.54.20.543
+PnpLockdown = 1
 
 ; ========== Manufacturer/Models sections ===========
 
@@ -200,7 +202,7 @@ WinUsbCoInstaller2.dll
 WdfCoInstaller01011.dll
 
 [DestinationDirs]
-; If your INF needs to copy files, you must not use the DefaultDestDir directive here.  
+; If your INF needs to copy files, you must not use the DefaultDestDir directive here.
 CoInstallers_CopyFiles=11
 ; ================= Source Media Section =====================
 

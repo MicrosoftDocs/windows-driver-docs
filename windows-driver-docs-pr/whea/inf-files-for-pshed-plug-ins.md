@@ -5,11 +5,10 @@ keywords:
 - PSHED plug-ins WDK WHEA , INF files
 - platform-specific hardware error driver plug-ins WDK WHEA , INF files
 - INF files WDK WHEA
-ms.date: 03/03/2023
+ms.date: 05/08/2023
 ---
 
 # INF Files for PSHED Plug-Ins
-
 
 A PSHED plug-in is installed by an [information (INF) file](../install/overview-of-inf-files.md). INF files for PSHED plug-ins contain the following standard INF file sections:
 
@@ -37,16 +36,19 @@ A PSHED plug-in's INF file must also include an [**AddReg**](../install/inf-addr
 
 For example:
 
-```cpp
+```inf
 ;
 ; Example PSHED plug-in INF file
 ;
 
 [Version]
 Signature = "$Windows NT$"
+Class = System ; Specify appropriate Class
+ClassGuid = {4d36e97d-e325-11ce-bfc1-08002be10318} ; Specify appropriate ClassGuid
 Provider = %Msft%
 CatalogFile = "ExamplePSHEDPlugin.cat"
 DriverVer = 01/01/06,1.0
+PnpLockdown = 1
 
 [SourceDiskNames]
 1 = %DiskName%
@@ -59,9 +61,9 @@ DefaultDestDir = 12 ; %SystemRoot%\system32\drivers
 ExamplePSHEDPlugin.DriverFiles = 12 ; %SystemRoot%\system32\drivers
 
 [Manufacturer]
-%Msft% = Microsoft
+%Msft% = Microsoft,NTamd64
 
-[Microsoft]
+[Microsoft.NTamd64]
 %DeviceDesc% = ExamplePSHEDPluginInstall,%DeviceId%
 
 [ExamplePSHEDPluginInstall]
@@ -97,4 +99,3 @@ ServiceBinary = %12%\%FileName%
 %ServiceDesc% = "Example PSHED Plug-In"
 %PSHEDControlPath% = "System\CurrentControlSet\Control\PSHED\Plugins"
 ```
-

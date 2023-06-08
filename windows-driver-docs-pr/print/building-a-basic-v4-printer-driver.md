@@ -1,7 +1,7 @@
 ---
 title: Build a basic v4 printer driver
 description: Build a basic v4 printer driver by using the driver development wizard in Microsoft Visual Studio 2019 to select the minimum set of features to create a functional printer driver.
-ms.date: 01/25/2023
+ms.date: 05/08/2023
 ms.custom: contperf-fy22q1
 ---
 
@@ -193,6 +193,7 @@ Provider=%ManufacturerName%
 CatalogFile=MyV4PrintDriver.cat
 ClassVer=4.0
 DriverVer=03/17/2014,1.0.0.0
+PnpLockdown=1
 
 [Manufacturer]
 %ManufacturerName%=Standard,NT$ARCH$

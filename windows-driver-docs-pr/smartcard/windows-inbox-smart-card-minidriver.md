@@ -1,7 +1,7 @@
 ---
 title: Windows Inbox Smart Card Minidriver
 description: Windows Inbox Smart Card Minidriver
-ms.date: 04/20/2017
+ms.date: 05/08/2023
 ---
 
 # Windows Inbox Smart Card Minidriver
@@ -299,7 +299,7 @@ Smart card vendors can use the inbox minidriver without the need to ship a drive
 
 The following is a sample INF file that can be used with the inbox minidriver. This INF file is decorated for installation in x86 and amd64 CPU platforms.
 
-``` syntax
+```inf
 ;
 ;FabrikamVendor Smartcard Minidriver for an x86 and x64 based package.
 ;
@@ -311,6 +311,7 @@ ClassGuid={990A2BD7-E738-46c7-B26F-1CF8FB9F1391}
 Provider=%ProviderName%
 CatalogFile=delta.cat
 DriverVer=10/03/2009,10.0.0.1
+PnpLockdown=1
 
 [Manufacturer]
 %ProviderName%=Minidriver,NTamd64,NTamd64.6.1,NTx86,NTx86.6.1

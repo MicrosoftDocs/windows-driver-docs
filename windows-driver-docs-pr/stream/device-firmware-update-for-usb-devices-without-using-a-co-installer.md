@@ -1,7 +1,7 @@
 ---
 title: Device firmware update For USB devices without using a co-installer
 description: Outlines a recommended method to update USB device firmware without a co-installer.
-ms.date: 03/24/2023
+ms.date: 05/08/2023
 ms.custom: contperf-fy22q3
 ---
 
@@ -142,9 +142,10 @@ Signature="$WINDOWS NT$"
 Class=Extension
 ClassGUID={e2f84ce7-8efa-411c-aa69-97454ca4cb57}
 Provider=%CONTOSO%
-ExtensionId = {BC6EE554-271C-48C8-B713-8078833962BD} ; replace with your own GUID
-CatalogFile.NT = SampleExtension.cat
+ExtensionId={BC6EE554-271C-48C8-B713-8078833962BD} ; replace with your own GUID
+CatalogFile.NT=SampleExtension.cat
 DriverVer=08/28/2017,10.0.1700.000
+PnpLockdown=1
 
 [SourceDisksFiles]
 ContosoFirmwareUpdateFilterDriver.dll=1
