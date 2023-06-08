@@ -89,7 +89,8 @@ Do not overwrite the delayed auto start value for the given service if this serv
 **0x00020000** (SPSVCINST_NOCLOBBER_FAILUREACTIONS) (Windows 11 version 22H2 and later versions of Windows)  
 Do not overwrite the failure actions for the given service if this service already exists in the system and has existing failure actions. See the FailureActions directive below for more information on failure actions.
 
-**0x00040000** (SPSVCINST_NOCLOBBER_BOOTFLAGS) (Windows 11 version `<TBD>` and later versions of Windows) Do not overwrite the boot flags value for the given service if this service already exists in the system and has an existing value. See the **BootFlags** directive below for more information.
+**0x00040000** (SPSVCINST_NOCLOBBER_BOOTFLAGS) (Windows 11 version 25381  and later versions of Windows)
+Do not overwrite the boot flags value for the given service if this service already exists in the system and has an existing value. See the **BootFlags** directive below for more information.
 
 *service-install-section*  
 References an INF-writer-defined section that contains information for installing the named service for this device (or devices). For more information, see the following **Remarks** section.
@@ -126,7 +127,6 @@ ServiceBinary=path-to-service
 [AddReg=add-registry-section[, add-registry-section] ...]
 [DelReg=del-registry-section[, del-registry-section] ...]
 [BitReg=bit-registry-section[,bit-registry-section] ...]
-[BootFlags=value] (Windows 11 build version <TBD> and later versions of Windows)
 [LoadOrderGroup=load-order-group-name]
 [Dependencies=depend-on-item-name[,depend-on-item-name]
 [Security="security-descriptor-string"]...]
@@ -135,6 +135,7 @@ ServiceBinary=path-to-service
 [DelayedAutoStart=value] (Windows 10 Version 2004 and later versions of Windows)
 [AddTrigger=service-trigger-install-section[, service-trigger-install-section, ...]] (Windows 10 Version 2004 and later versions of Windows)
 [FailureActions=service-failure-actions-install-section] (Windows 11 version 22H2 and later versions of Windows)
+[BootFlags=value] (Windows 11 build version 25381 and later versions of Windows)
 ```
 
 Each *service-install-section* must have at least the **ServiceType**, **StartType**, **ErrorControl**, and **ServiceBinary** entries as shown here. However, the remaining entries are optional.
@@ -228,35 +229,6 @@ This directive is almost never used in a *service-install-section*, but it might
 **BitReg**=*bit-registry-section*[**,**_bit-registry-section_]...  
 Is valid in a *service-install-section* but almost never used.
 
-**BootFlags**=value
-This value can only be used with kernel-mode driver services and is only available with Windows 11 version `<TBD>` and above.
-
-Optionally specifies when the operating system should promote a driver's StartType value to 0x0 (SERVICE_BOOT_START). You can specify one or more (ORed) of the following numeric values, expressed as hexadecimal values.
-
-- 0x1 (CM_SERVICE_NETWORK_BOOT_LOAD)
-  Indicates the driver should be promoted if booting from the network.
-
-- 0x2 (CM_SERVICE_VIRTUAL_DISK_BOOT_LOAD)
-  Indicates the driver should be promoted if booting from a VHD.
-
-- 0x4 (CM_SERVICE_USB_DISK_BOOT_LOAD)  
-  Indicates the driver should be promoted to if booting from a USB disk.
-
-- 0x8 (CM_SERVICE_SD_DISK_BOOT_LOAD)  
-  Indicates the driver should be promoted if booting from SD storage.
-
-- 0x10 (CM_SERVICE_USB3_DISK_BOOT_LOAD)  
-  Indicates the driver should be promoted if booting from a disk on a USB 3.0 controller.
-
-- 0x20 (CM_SERVICE_MEASURED_BOOT_LOAD) 
-  Indicates the driver should be promoted if booting while measured boot is enabled.
-
-- 0x40 (CM_SERVICE_VERIFIER_BOOT_LOAD)  
-  Indicates the driver should be promoted if booting with verifier boot enabled.
-
-- 0x80 (CM_SERVICE_WINPE_BOOT_LOAD)  
-  Indicates the driver should be promoted if booting to WinPE.
-
 **LoadOrderGroup**=*load-order-group-name*  
 This optional entry identifies the load order group of which this driver is a member. It can be one of the "standard" load order groups, such as **SCSI** class or **NDIS**.
 
@@ -264,7 +236,7 @@ In general, this entry is unnecessary for devices with WDM drivers or for exclus
 
 For more information about **LoadOrderGroup**, see [Specifying Driver Load Order](specifying-driver-load-order.md).
 
-**Dependencies**=*depend-on-item-name*[**,**_depend-on-item-name_]...  
+**Dependencies**=*depend-on-item-name*[**,**_depend-on-item-name_]...
 Each *depend-on-item-name* item in a dependencies list specifies the name of a service or load-order group on which the device/driver depends.
 
 If the *depend-on-item-name* specifies a service, the service that must be running before this driver is started. For example, the INF for the system-supplied Win32 TCP/IP print services depends on the support of the underlying (kernel-mode) TCP/IP transport stack. Consequently, the INF for the TCP/IP print services specifies this entry as **Dependencies=TCPIP**.
@@ -320,6 +292,36 @@ SubType=trigger-subtype
 [DataItem=data-type,data]
 ...
 ```
+
+**BootFlags**=*value*
+> [!NOTE]
+> This value can only be used with kernel-mode driver services and is only available with Windows 11 version 25381 and above.
+
+Optionally specifies when the operating system should promote a driver's StartType value to 0x0 (SERVICE_BOOT_START). You can specify one or more (ORed) of the following numeric values, expressed as hexadecimal values.
+
+- 0x1 (CM_SERVICE_NETWORK_BOOT_LOAD)
+  Indicates the driver should be promoted if booting from the network.
+
+- 0x2 (CM_SERVICE_VIRTUAL_DISK_BOOT_LOAD)
+  Indicates the driver should be promoted if booting from a VHD.
+
+- 0x4 (CM_SERVICE_USB_DISK_BOOT_LOAD)  
+  Indicates the driver should be promoted to if booting from a USB disk.
+
+- 0x8 (CM_SERVICE_SD_DISK_BOOT_LOAD)  
+  Indicates the driver should be promoted if booting from SD storage.
+
+- 0x10 (CM_SERVICE_USB3_DISK_BOOT_LOAD)  
+  Indicates the driver should be promoted if booting from a disk on a USB 3.0 controller.
+
+- 0x20 (CM_SERVICE_MEASURED_BOOT_LOAD) 
+  Indicates the driver should be promoted if booting while measured boot is enabled.
+
+- 0x40 (CM_SERVICE_VERIFIER_BOOT_LOAD)  
+  Indicates the driver should be promoted if booting with verifier boot enabled.
+
+- 0x80 (CM_SERVICE_WINPE_BOOT_LOAD)  
+  Indicates the driver should be promoted if booting to WinPE.
 
 ### Service-Trigger-Install-Section Entries and Values
 
@@ -441,7 +443,7 @@ HKR,,BootFlags,0x00010003,0x14 ; CM_SERVICE_USB3_DISK_BOOT_LOAD|CM_SERVICE_USB_D
 ```
 
 > [!NOTE]
-> This syntax should be used only in Windows 11, versions older than `<TBD>`, for all others use **BootFlags** directive.
+> This syntax should be used only in Windows 11, versions older than 25381, for all others use **BootFlags** directive.
 
 ### Registering for Event Logging
 
