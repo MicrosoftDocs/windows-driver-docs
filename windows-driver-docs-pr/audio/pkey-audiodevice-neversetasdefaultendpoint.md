@@ -1,7 +1,7 @@
 ---
 title: PKEY\_AudioDevice\_NeverSetAsDefaultEndpoint
 description: PKEY\_AudioDevice\_NeverSetAsDefaultEndpoint
-ms.date: 03/06/2023
+ms.date: 05/05/2023
 ms.topic: reference
 ---
 
@@ -15,9 +15,9 @@ The following INF file excerpt shows how to use **PKEY\_AudioDevice\_NeverSetAsD
 
 ```inf
 [Version]
-Signature="$Windows NT$"
+...
 Class=MEDIA
-ClassGuid= {4d36e96c-e325-11ce-bfc1-08002be10318}
+ClassGuid={4d36e96c-e325-11ce-bfc1-08002be10318}
 ...
 
 [USBAudio]
@@ -51,9 +51,9 @@ The following INF file snippet shows how an undefined output device (KSNODETYPE\
 
 ```inf
 [Version]
-Signature="$Windows NT$"
+...
 Class=MEDIA
-ClassGuid= {4d36e96c-e325-11ce-bfc1-08002be10318}
+ClassGuid={4d36e96c-e325-11ce-bfc1-08002be10318}
 ...
 
 [USBAudio]
@@ -113,14 +113,3 @@ In the preceding example, 0x00000305 is the bitwise OR combination of all the fl
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-

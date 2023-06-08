@@ -1,7 +1,7 @@
 ---
 title: Implementing Audio Processing Objects
 description: This topic describes how to implement an audio processing object (APO). For general information about APOs, see Audio Processing Object Architecture.
-ms.date: 01/05/2023
+ms.date: 05/05/2023
 ---
 
 # Implementing Audio Processing Objects
@@ -222,7 +222,7 @@ Disable Use of an Embedded Manifest by setting project properties for your APO p
 
 ## Packaging your APO with a Driver
 
-When you develop your own audio driver and wrap or replace the system-supplied APOs, you must provide a driver package for installing the driver and APOs. For Windows 10, please see [Universal Windows Drivers for Audio](audio-universal-drivers.md). Your audio related driver packages should follow the policies and packaging model detailed there.  
+When you develop your own audio driver and wrap or replace the system-supplied APOs, you must provide a driver package for installing the driver and APOs. For Windows 10, please see [Universal Windows Drivers for Audio](audio-universal-drivers.md). Your audio related driver packages should follow the policies and packaging model detailed there.
 
 The custom APO is packaged as a DLL, and any configuration UI is packaged as a separate UWP or Desktop Bridge app. The APO device INF copies the DLLs to the system folders that are indicated in the associated INF CopyFile directive. The DLL that contains the APOs must register itself by including an AddReg section in the INF file.
 
@@ -321,9 +321,10 @@ This APO component triggers the second part, the installation of the APO INF, in
 
 ```inf
 [Version]
-Signature   = "$WINDOWS NT$"
+...
 Class       = AudioProcessingObject
 ClassGuid   = {5989fce8-9cd0-467d-8a6a-5419e31529d4}
+...
 
 [ApoComponents.NT$ARCH$]
 %Apo.ComponentDesc% = ApoComponent_Install,APO\VEN_SMPL&CID_APO
@@ -333,7 +334,7 @@ ClassGuid   = {5989fce8-9cd0-467d-8a6a-5419e31529d4}
 HKR,Classes\CLSID\%SWAP_FX_STREAM_CLSID%,,,%SFX_FriendlyName%
 HKR,Classes\CLSID\%SWAP_FX_STREAM_CLSID%\InProcServer32,,0x00020000,%%SystemRoot%%\System32\swapapo.dll
 HKR,Classes\CLSID\%SWAP_FX_STREAM_CLSID%\InProcServer32,ThreadingModel,,"Both"
-…
+...
 ;Audio engine registration
 HKR,AudioEngine\AudioProcessingObjects\%SWAP_FX_STREAM_CLSID%,"FriendlyName",,%SFX_FriendlyName%
 ...
@@ -341,13 +342,13 @@ HKR,AudioEngine\AudioProcessingObjects\%SWAP_FX_STREAM_CLSID%,"FriendlyName",,%S
 
 When this INF installs the componentized APO, on a desktop system "Audio Processing Objects" will be shown in Windows Device Manager.
 
-### Updates to CLSIDs when a new APO version is released 
+### Updates to CLSIDs when a new APO version is released
 
 When a new APO version is released, it is a good practice and generally recommended to update the COM class CLSID. Use tools such as GUIDGEN to create new GUIDs.
 
 #### Requirement to Update CLSIDs when moving from HKCR to HKR
 
-It is a requirement when making the switch from global COM registrations (HKCR) to device relative HKR COM registrations to change the COM class GUID. This approach reduces the possibility that the new COM objects will not be registered properly and will fail to load. 
+It is a requirement when making the switch from global COM registrations (HKCR) to device relative HKR COM registrations to change the COM class GUID. This approach reduces the possibility that the new COM objects will not be registered properly and will fail to load.
 
 ### Bluetooth Audio Sample APO INF Sample
 

@@ -1,7 +1,7 @@
 ---
 title: V4 Driver INF
 description: The v4 print driver setup model continues to use INF files, but also employs a new manifest file to capture the printer specific setup directives.
-ms.date: 03/24/2023
+ms.date: 05/08/2023
 ---
 
 # V4 Driver INF
@@ -24,11 +24,12 @@ The following sample INF file assumes that a fictional company, Fabrikam, has ma
 [Version]
 Signature="$Windows NT$"
 Provider="Fabrikam"
-ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
 Class=Printer
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
 CatalogFile=prnfa999.CAT
 DriverVer=09/12/2010,6.2.8060.4
 ClassVer=4.0 ;This causes v4 setup to take place
+PnpLockdown=1
 
 [Manufacturer]
 "Fabrikam"=Fabrikam,NTamd64

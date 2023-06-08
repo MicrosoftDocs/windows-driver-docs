@@ -1,7 +1,7 @@
 ---
 title: Print support app association
 description: Provides guidance and examples for associating a print support app with a printer.
-ms.date: 03/17/2023
+ms.date: 05/05/2023
 ---
 
 # Print support app association
@@ -9,12 +9,12 @@ ms.date: 03/17/2023
 > [!IMPORTANT]
 > Some information relates to prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Follow the guidance in this topic to setup and associate a print support app with a printer.
+Follow the guidance in this article to setup and associate a print support app with a printer.
 
 > [!IMPORTANT]
 > Starting with the release of Windows 11 SDK (22000.1), Print Support Apps (PSA) are the recommended method of developing UWP apps for printers. To develop a Print Support App for your print device, download and install the [Windows 11 SDK (22000.1)](https://go.microsoft.com/fwlink/?linkid=2166460).
 
-This topic discusses the following tasks:
+This article discusses the following tasks:
 
 - Find a Hardware Id or a Compatible Id for your printer
 
@@ -32,23 +32,23 @@ A print support app (PSA) is associated with a printer queue, using a Hardware I
 
 To find out the Hardware Id and Compatible Id for your printer, follow these steps:
 
-1. Connect a IPP printer to the Windows 10 PC.
+1. Connect an IPP printer to the Windows 10 PC.
 
 1. From **Control Panel**, select **View Devices and Printers**.
 
 1. Right-click on your printer and select **Properties** from the context menu.
 
-1. On the **Hardware** tab, select **Microsoft IPP Class Driver** in the list of **Device Functions** and click the **Properties** button.
+1. On the **Hardware** tab, select **Microsoft IPP Class Driver** in the list of **Device Functions** and select the **Properties** button.
 
 1. In the **Properties** dialog, select **Details**, then select **Hardware Ids** (or Compatible Id).
 
-1. Copy the Hardware ID string (it starts with "PSA\_"). You will need this for extension INF, or alternatively, the Compatible Id (which does not start with "PSA\_").
+1. Copy the Hardware ID string (it starts with "PSA\_"). You need this for extension INF, or alternatively, the Compatible Id (which doesn't start with "PSA\_").
 
 ### Prepare the PSA extension INF file
 
 A PSA is associated with a printer by using an [extension INF](../install/using-an-extension-inf-file.md) file.
 
-These are steps to create and test an extension INF file:
+The following steps create and test an extension INF file:
 
 1. Copy the psa.inf sample extension INF shown below as a starting point for your INF file.
 
@@ -71,6 +71,7 @@ Provider = %ManufacturerName%
 ExtensionId = {D4D9196A-105B-4B76-B693-84BD33A7A703}
 CatalogFile = psa.cat
 DriverVer = 05/19/2020,16.35.13.542
+PnpLockdown = 1
 
 [Manufacturer]
 %ManufacturerName% = Microsoft, NTamd64.6.3
@@ -119,11 +120,11 @@ PrinterHardwareId3 = "PSA_BrotherMFC-J775DWF678"
 
 For consumer and home users, PSA is downloaded from the Microsoft Store and installed based on the printer's hardware ID or compatible ID. This is supported for enterprise and business customers as well, if they choose to use the PSA from their printer manufacturer. Association is controlled by the extension INF published on Windows Update by printer manufacturers.
 
-Enterprise and business customers may need to override extension INF association, if they choose to use a business logic PSA (for example, a line of business app). They will need to deploy and associate a custom PSA which has built-in business logic. Examples of the business logic are managing print quota and cost, or print policy (no color or no single side printing).
+Enterprise and business customers may need to override extension INF association, if they choose to use a business logic PSA (for example, a line of business app). They need to deploy and associate a custom PSA that has built-in business logic. Examples of the business logic are managing print quota and cost, or print policy (no color or no single side printing).
 
 A registry key can be used to override a PSA association from an extension INF. This registry key method can be used for enterprise customers with Windows Print Server (Point and Print) and Universal Print.
 
-Here is a ranking of how PSA is associated:
+Here's a ranking of how PSA is associated:
 
 1. Printer manufacturers' custom v3/v4 driver is downloaded from Windows Update (no PSA is used)
 
@@ -157,7 +158,7 @@ The **Value name** and **Value data** in the **Edit Multi-String** dialog:
 You can associate PSA with printers that natively support Universal Print.
 
 > [!IMPORTANT]
-> Printers using [Universal Print Connector](/universal-print/fundamentals/universal-print-connector-overview#:~:text=The%20Universal%20Print%20connector%20is%20a%20component%20that,use%20a%20connector.%20Connect%20printers%20to%20Universal%20Print) are not supported by Microsoft for use with PSA. However, in some instances, printers using Universal Print Connector may be supported by the original equipment manufacturer (“OEM”) that provides the PSA and printer hardware.  Please check with your OEM.  The OEM, and not Microsoft, will be responsible for issues related to this OEM enablement and support.
+> Printers using [Universal Print Connector](/universal-print/fundamentals/universal-print-connector-overview#:~:text=The%20Universal%20Print%20connector%20is%20a%20component%20that,use%20a%20connector.%20Connect%20printers%20to%20Universal%20Print) are not supported by Microsoft for use with PSA. However, in some instances, printers using Universal Print Connector may be supported by the original equipment manufacturer ("OEM") that provides the PSA and printer hardware.  Please check with your OEM.  The OEM, and not Microsoft, will be responsible for issues related to this OEM enablement and support.
 
 You can find the Hardware Id of a Universal Print printer in **Control Panel**, similar to a local IPP printer:
 
@@ -165,7 +166,7 @@ You can find the Hardware Id of a Universal Print printer in **Control Panel**, 
 
 1. Right-click on your printer and select **Properties** from the context menu.
 
-1. On the **Hardware** tab, select **Universal Print Class Driver** in the list of **Device Functions** and click the **Properties** button.
+1. On the **Hardware** tab, select **Universal Print Class Driver** in the list of **Device Functions** and select the **Properties** button.
 
 1. In the **Properties** dialog, select **Details**, then select **Hardware Ids**.
 
