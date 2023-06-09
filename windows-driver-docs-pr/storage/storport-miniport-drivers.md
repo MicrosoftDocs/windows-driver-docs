@@ -1,24 +1,24 @@
 ---
-title: Introduction to Storport Miniport Drivers
+title: About Storport miniport drivers
 description: Storport Miniport Drivers
 keywords:
 - Storport miniport drivers WDK
 - Storport miniport drivers WDK , routines listed
 - storage miniport drivers WDK , Storport miniport drivers
 - miniport drivers WDK storage , Storport miniport drivers
-ms.date: 12/15/2019
+ms.date: 06/08/2023
 ---
 
-# Introduction to Storport Miniport Drivers
+# About Storport miniport drivers
 
-Storport miniport drivers work with the [Storport Driver](storport-driver-overview.md). The following sections describe Storport miniport drivers and the routines that they call:
+A Storport miniport driver is a vendor-supplied module that works with the system-supplied [Storport driver](storport-driver-overview.md) to support that vendor's storage device on Windows. A Storport driver is more efficient and higher performing than a SCSI port driver and is the recommended model for vendors.
 
-[Storport Miniport Driver Routines](storport-miniport-driver-routines.md)
+Storport miniport drivers are typically implemented as dynamic-link libraries (DLLs) that the Storport driver loads. The Storport driver calls routines in the miniport driver to perform operations on the storage device. The Storport miniport driver is responsible for managing the hardware and for implementing the routines that the Storport driver calls.
 
-[Storport Driver Support Routines](storport-driver-support-routines.md)
+The following articles provide information about how to implement a Storport miniport driver:
 
-This section includes the following topics:
+* [Storport miniport driver routines](storport-miniport-driver-routines.md) lists the routines that a Storport miniport driver implements.
 
-[Error Handling in Storport Miniport Drivers](error-handling-in-storport-miniport-drivers.md)
+* [Storport driver support routines](storport-driver-support-routines.md) lists many of the routines that the Storport driver provides to support Storport miniport drivers.
 
-[Interlocked Operations in Storport Miniport Drivers](interlocked-operations-in-storport-miniport-drivers.md)
+For more Storport miniport driver implementation information, see the subtopics of this article.
