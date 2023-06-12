@@ -12,7 +12,7 @@ INF files for NetAdapterCx client drivers build on top of standard network INF f
 
 For more information about standard network INF files, see [Creating Network INF Files](../network/creating-network-inf-files.md). For more information about base INF files, see [Overview of INF files](../install/overview-of-inf-files.md).
 
-**Note**: Starting in Windows 10, version 2004, Selective Suspend keywords are deprecated and must not be used by NetAdapterCx client drivers.
+**Note**: Starting in Windows 11, version 21H2, Selective Suspend keywords are deprecated and must not be used by NetAdapterCx client drivers.
 
 The following table describes the new INF keywords in NetAdapterCx.
 
