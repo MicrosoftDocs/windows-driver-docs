@@ -27,6 +27,7 @@ Class drivers for CD-ROM devices handle additional public I/O control codes, alo
 |[IOCTL_CDROM_GET_LAST_SESSION](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_get_last_session)|Queries the device for the first complete session number, the last complete session number, and the last complete session starting address.|
 |[IOCTL_CDROM_GET_PERFORMANCE](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_get_performance)|Retrieves the supported speeds from the device. The **IOCTL_CDROM_GET_PERFORMANCE** I/O control request is a wrapper over the MMC command, GET PERFORMANCE.|
 |[IOCTL_CDROM_LOAD_MEDIA](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_load_media)|Draws a protruding CDROM tray back into the drive.|
+|[IOCTL_CDROM_RAW_READ](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_raw_read)|Reads data from the CD-ROM in raw mode.|
 |[IOCTL_CDROM_READ_Q_CHANNEL](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_read_q_channel)|Returns the current position (obsolete), media catalog, or ISRC track data.|
 |[IOCTL_CDROM_READ_TOC](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_read_toc)|Obsolete. Returns the table of contents of the media.|
 |[IOCTL_CDROM_READ_TOC_EX](/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_read_toc_ex)|Queries the target device for the table of contents (TOC), the program memory area (PMA), and the absolute time in pregroove (ATIP).|
