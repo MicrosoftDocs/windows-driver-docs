@@ -5,7 +5,7 @@ keywords:
 - PSHED plug-ins WDK WHEA , INF files
 - platform-specific hardware error driver plug-ins WDK WHEA , INF files
 - INF files WDK WHEA
-ms.date: 05/08/2023
+ms.date: 06/13/2023
 ---
 
 # INF Files for PSHED Plug-Ins
@@ -57,8 +57,7 @@ PnpLockdown = 1
 %FileName% = 1
 
 [DestinationDirs]
-DefaultDestDir = 12 ; %SystemRoot%\system32\drivers
-ExamplePSHEDPlugin.DriverFiles = 12 ; %SystemRoot%\system32\drivers
+ExamplePSHEDPlugin.DriverFiles = 13
 
 [Manufacturer]
 %Msft% = Microsoft,NTamd64
@@ -86,7 +85,7 @@ Description = %ServiceDesc%
 ServiceType = 1  ; SERVICE_KERNEL_DRIVER
 StartType = 3    ; SERVICE_DEMAND_START
 ErrorControl = 1 ; SERVICE_ERROR_NORMAL
-ServiceBinary = %12%\%FileName%
+ServiceBinary = %13%\%FileName%
 
 [Strings]
 %Msft% = "Microsoft Corporation"
