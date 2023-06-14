@@ -3,7 +3,7 @@ title: BypassIO for storage drivers
 description: About BypassIO for storage drivers
 keywords:
 - storage drivers WDK , BypassIO
-ms.date: 08/11/2021
+ms.date: 06/13/2023
 prerelease: false
 ---
 
@@ -13,13 +13,13 @@ prerelease: false
 
 Starting in Windows 11, BypassIO was added as an optimized I/O path for reading from files. The goal of this path is to reduce the CPU overhead of doing reads, which helps to meet the I/O demands of loading and running next-generation games on Windows. BypassIO is a part of the infrastructure to support DirectStorage on Windows.  
 
-It is important that storage drivers implement support for BypassIO, and that you keep BypassIO enabled as much as possible. Without storage stack support, game performance will be degraded, resulting in a poor gaming experience for end users.
+It's important that storage drivers implement support for BypassIO, and that you keep BypassIO enabled as much as possible. Without storage stack support, game performance is degraded, resulting in a poor gaming experience for end users.
 
 There will be broader application uses beyond gaming in future Windows releases.
 
 [**IOCTL_STORAGE_MANAGE_BYPASS_IO**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_manage_bypass_io) and an equivalent [**FSCTL_MANAGE_BYPASS_IO**](/windows-hardware/drivers/ddi/ntifs/ni-ntifs-fsctl_manage_bypass_io) were added as a part of this infrastructure. **IOCTL_STORAGE_MANAGE_BYPASS_IO** is sent by file systems to the volume/storage stacks, while minifilters process **FSCTL_MANAGE_BYPASS_IO**. These control codes are designed to be diagnosable: they both return the identity of the driver that failed the BypassIO request, and the reason for vetoing it.
 
-See [BypassIO in filter drivers](../ifs/bypassio.md) for BypassIO system architecture details across the file system filter and storage stacks, and to learn more about how BypassIO works in the file system filter stack.
+See [BypassIO in filter drivers](../ifs/bypassio.md) for BypassIO system architecture details across the file system filter and storage stacks.
 
 ## Scope of BypassIO support
 
@@ -31,7 +31,7 @@ Starting in Windows 11, BypassIO is supported as follows:
 
 * On the NTFS file system only. Support for other file systems will be added in a future release.
 
-* Only non-cached reads are supported. Support for non-cached writes will be added in a future release.
+* Only noncached reads are supported. Support for noncached writes will be added in a future release.
 
 * Only supported on files (not supported on directory or volume handles).
 
@@ -49,17 +49,19 @@ The following DDIs relevant to storage drivers were added to provide BypassIO su
 
 ## What storage stack drivers need to do to support BypassIO
 
-Starting in Windows 11, storage driver developers need to update their driver's .INF or MANIFEST files to add the **StorageSupportedFeatures** infrastructure with **STORAGE_SUPPORTED_FEATURES_BYPASS_IO** for BypassIO as follows:
+Starting in Windows 11, storage driver developers need to update their driver's INF or MANIFEST files to add the **StorageSupportedFeatures** infrastructure with **STORAGE_SUPPORTED_FEATURES_BYPASS_IO** for BypassIO as follows:
 
 * Define a "Parameters" key under your Service definition
 * Add a DWORD value named "**StorageSupportedFeatures**", and set this value to 0x1 to indicate BypassIO support.
 
-The driver then processes [**IOCTL_STORAGE_MANAGE_BYPASS_IO**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_manage_bypass_io) as needed. The **FS_BPIO_OP_QUERY** operation will fail if there is a storage stack driver that has not opted in.
+This registry key indicates to the system that the driver understands bypass I/O. The driver must also call [**StorPortSetUnitAttributes**](/windows-hardware/drivers/ddi/storport/nf-storport-storportsetunitattributes) with [**BypassIOSupported**](/windows-hardware/drivers/ddi/storport/ns-storport-_stor_unit_attributes) set to 1 to indicate which logical unit (disk) supports bypass I/O.
+
+The driver then processes [**IOCTL_STORAGE_MANAGE_BYPASS_IO**](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_manage_bypass_io) as needed. The **FS_BPIO_OP_QUERY** operation fails if there's a storage stack driver that hasn't opted in.
 
 > [!NOTE]
 > A driver that can never support BypassIO should still add the **StorageSupportedFeatures** state to the INF and then veto appropriately inside the driver, specifying the reason.
 
-If a storage driver does not update its INF or MANIFEST file as described above to indicate BypassIO support, all BypassIO operations on that volume or storage driver are immediately blocked, falling back to the traditional I/O path, resulting in degraded game performance.
+If a storage driver doesn't update its INF or MANIFEST file to indicate BypassIO support, all BypassIO operations on that volume or storage driver are immediately blocked. The system falls back to the traditional I/O path, which results in degraded game performance.
 
 ## IOCTL_STORAGE_MANAGE_BYPASS_IO implementation details
 
@@ -67,4 +69,4 @@ The file system (currently NTFS) generates an [**IOCTL_STORAGE_MANAGE_BYPASS_IO*
 
 Input to **IOCTL_STORAGE_MANAGE_BYPASS_IO** is similar to its **FSCTL_MANAGE_BYPASS_IO** counterpart, but only supports BypassIO enabling, disabling, and querying.
 
-Output from **IOCTL_STORAGE_MANAGE_BYPASS_IO** is similar to its **FSCTL_MANAGE_BYPASS_IO** counterpart, identifying the failing driver's name and reason, and operation status as to why the driver vetoed BypassIO. The file system will propagate the **IOCTL_STORAGE_MANAGE_BYPASS_IO** output from the volume and storage stacks up to **FSCTL_MANAGE_BYPASS_IO**.
+Output from **IOCTL_STORAGE_MANAGE_BYPASS_IO** is similar to its **FSCTL_MANAGE_BYPASS_IO** counterpart, identifying the failing driver's name and reason, and operation status as to why the driver vetoed BypassIO. The file system propagates the **IOCTL_STORAGE_MANAGE_BYPASS_IO** output from the volume and storage stacks up to **FSCTL_MANAGE_BYPASS_IO**.
