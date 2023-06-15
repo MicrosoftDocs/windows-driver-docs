@@ -16,7 +16,7 @@ NDIS 6.85 is a minor version update to NDIS 6.84. For more information about por
 
 NDIS 6.85 introduces NDIS Poll Mode, an OS controlled polling execution model that drives the network interface datapath. Previously, NDIS drivers typically relied on Deferred Procedure Calls (DPCs) to implement their execution model. NDIS Poll Mode moves the complexity of scheduling decisions away from NIC drivers and into NDIS. For more information, see [NDIS Poll Mode](ndis-poll-mode.md).
 
-### UDP Segmentation Offload (USO) Offload
+### Network Virtualization using Generic Routing Encapsulation (NVGRE) with UDP segmentation offload (USO)
 
 NDIS 6.85 introduces [Supporting NVGRE in UDP Segmentation Offload (USO)](nvgre-support-with-udp-segmentation-offload.md). NDIS miniport, protocol, and filter drivers, as well as NICs that perform USO, should support NVGRE and VXLAN encapsulations.
  
