@@ -18,7 +18,7 @@ NDIS 6.85 introduces NDIS Poll Mode, an OS controlled polling execution model th
 
 ### UDP Segmentation Offload (USO) Offload
 
-NDIS 6.85 introduces [NVGRE Support with UDP Segmentation Offload (USO)](nvgre-support-with-udp-segmentation-offload.md). NDIS miniport, protocol, and filter drivers, as well as NICs that perform USO, should support NVGRE and VXLAN encapsulations.
+NDIS 6.85 introduces [Supporting NVGRE in UDP Segmentation Offload (USO)](nvgre-support-with-udp-segmentation-offload.md). NDIS miniport, protocol, and filter drivers, as well as NICs that perform USO, should support NVGRE and VXLAN encapsulations.
  
 ## Implementing an NDIS 6.85 driver
 
