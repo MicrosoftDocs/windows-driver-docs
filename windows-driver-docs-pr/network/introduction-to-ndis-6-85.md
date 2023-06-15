@@ -1,7 +1,7 @@
 ---
 title: Introduction to NDIS 6.85
 description: This section introduces NDIS 6.85 and describes changes from NDIS 6.84. NDIS 6.85 is included in Windows 10, version 21H2.
-ms.date: 03/02/2023
+ms.date: 06/14/2023
 ---
 
 # Introduction to NDIS 6.85
@@ -12,8 +12,14 @@ NDIS 6.85 is a minor version update to NDIS 6.84. For more information about por
 
 ## Feature updates
 
-NDIS 6.85 is an incremental update to NDIS 6.84 and does not contain any major new features.
+### NDIS Poll mode
 
+NDIS 6.85 introduces NDIS Poll Mode, an OS controlled polling execution model that drives the network interface datapath. Previously, NDIS drivers typically relied on Deferred Procedure Calls (DPCs) to implement their execution model. NDIS Poll Mode moves the complexity of scheduling decisions away from NIC drivers and into NDIS. For more information, see [NDIS Poll Mode](ndis-poll-mode.md).
+
+### UDP Segmentation Offload (USO) Offload
+
+NDIS 6.85 introduces [NVGRE Support with UDP Segmentation Offload (USO)](nvgre-support-with-udp-segmentation-offload.md). NDIS miniport, protocol, and filter drivers, as well as NICs that perform USO, should support NVGRE and VXLAN encapsulations.
+ 
 ## Implementing an NDIS 6.85 driver
 
 An NDIS 6.85 driver must follow the requirements that are defined in [Implementing an NDIS 6.30 driver](implementing-an-ndis-6-30-driver.md).
