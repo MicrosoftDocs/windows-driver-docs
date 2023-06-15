@@ -36,7 +36,12 @@ For more information about reparse points and the FSCTL_GET_REPARSE_POINT contro
 
 - **OutputBuffer** [out]: Pointer to a caller-allocated [**REPARSE_GUID_DATA_BUFFER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_guid_data_buffer) or [**REPARSE_DATA_BUFFER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_data_buffer) structure that receives the reparse point data.
 
-- **OutputBufferLength** [out]: Size, in bytes, of the buffer pointed to by the **OutputBuffer** parameter. For a REPARSE_GUID_DATA_BUFFER structure, this value must be at least REPARSE_GUID_DATA_BUFFER_HEADER_SIZE, plus the size of the expected user-defined data, and it must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE. For a REPARSE_DATA_BUFFER structure, this value must be at least REPARSE_DATA_BUFFER_HEADER_SIZE, plus the size of the expected user-defined data, and it must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE.
+- **OutputBufferLength** [out]: Size, in bytes, of the buffer pointed to by the **OutputBuffer** parameter. The number of bytes is calculated as follows:
+
+  | Structure | OutputBufferLength |
+  | --------- | ------------------ |
+  | **REPARSE_GUID_DATA_BUFFER** | Must be at least REPARSE_GUID_DATA_BUFFER plus the size of the expected user-defined data; and must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE. |
+  | **REPARSE_DATA_BUFFER**      | Must be at least REPARSE_DATA_BUFFER_HEADER_SIZE plus the size of the expected user-defined data; and must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE. |
 
 ## Status block
 
