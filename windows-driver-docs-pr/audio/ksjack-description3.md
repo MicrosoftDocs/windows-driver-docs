@@ -20,7 +20,7 @@ In version 22H2 and later Windows operating systems, the `KSJACK_DESCRIPTION3` s
 
 ## Syntax
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _tagKSJACK_DESCRIPTION3
 {
   ULONG              ConfigId; 

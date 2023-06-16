@@ -54,4 +54,6 @@ HKR,"EPFX\\0",%PKEY_FX_EndpointEffectClsid%,,%FX_DISCOVER_EFFECTS_APO_CLSID%
 
 ## Related topics
 
-- [Related Design Guidelines](related-design-guidelines.md)
+[Audio Processing Object Architecture](audio-processing-object-architecture.md)
+
+[Implementing Audio Processing Objects](implementing-audio-processing-objects.md)

@@ -14,15 +14,13 @@ api_type:
 ms.date: 03/06/2023
 ---
 
-
 # KSPROPERTY\_SOUNDDETECTOR enumeration
-
 
 The **KSPROPERTY\_SOUNDDETECTOR** enumeration defines constants that are used to register a filter for an audio capture device that also supports a detector.
 
 ## Syntax
 
-```ManagedCPlusPlus
+```cpp
 typedef enum  { 
   KSPROPERTY_SOUNDDETECTOR_SUPPORTEDPATTERNS  = 1,
   KSPROPERTY_SOUNDDETECTOR_PATTERNS,
@@ -68,10 +66,9 @@ Specifies the ID for the [**KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT**](ksproperty
 </tbody>
 </table>
 
-## <span id="see_also"></span>See also
+## See also
 
-
-[KSPROPSETID\_SoundDetector](kspropsetid-sounddetector.md)
+[**KSPROPSETID\_SoundDetector**](kspropsetid-sounddetector.md)
 
 [**KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS**](ksproperty-sounddetector-supportedpatterns.md)
 
@@ -80,13 +77,3 @@ Specifies the ID for the [**KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT**](ksproperty
 [**KSPROPERTY\_SOUNDDETECTOR\_ARMED**](ksproperty-sounddetector-armed.md)
 
 [**KSPROPERTY\_SOUNDDETECTOR\_MATCHRESULT**](ksproperty-sounddetector-matchresult.md)
-
- 
-
- 
-
-
-
-
-
-

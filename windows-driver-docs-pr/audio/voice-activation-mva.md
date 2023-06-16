@@ -112,7 +112,7 @@ The audio stack external interfaces for enabling Voice Activation serves as the 
 
 Audio endpoint graph building occurs normally. The graph is prepared to handle faster than real time capture. Timestamps on captured buffers remain true. Specifically, the timestamps will correctly reflect data that was captured in the past and buffered, and is now bursting.
 
-### Theory of Operation
+### Theory of Bluetooth bypass audio streaming
 
 The driver exposes a KS filter for its capture device as usual. This filter supports several KS properties and a KS event to configure, enable and signal a detection event. The filter also includes an additional pin factory identified as a keyword spotter (KWS) pin. This pin is used to stream audio from the keyword spotter.
 
