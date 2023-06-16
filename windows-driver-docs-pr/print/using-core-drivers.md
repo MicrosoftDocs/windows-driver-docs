@@ -1,7 +1,7 @@
 ---
 title: Using Core Drivers
 description: Using Core Drivers
-ms.date: 01/31/2023
+ms.date: 05/08/2023
 ---
 
 # Using Core Drivers
@@ -15,16 +15,17 @@ For example:
 ```inf
 [Version]
 Signature="$Windows NT$"
-ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
 Class=Printer
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
 Provider="OEM Company"
 CatalogFile=PackageAware.cat     ; Single Catalog file for all OS versions
 DriverVer=10/10/2005, 1.2.3.4
+PnpLockdown=1
 
 [Manufacturer]
 "OEM Company" = Company, NTx86.6.0
 
-;Models section for installation of x86 driver on 
+;Models section for installation of x86 driver on
 ; Windows Vista and later
 
 [Company.NTx86.6.0]

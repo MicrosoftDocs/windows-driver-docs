@@ -9,7 +9,7 @@ keywords:
 - FDOs WDK multifunction devices
 - physical device objects WDK multifunction devices
 - PDOs WDK multifunction devices
-ms.date: 03/17/2023
+ms.date: 05/08/2023
 ---
 
 # Using the System-Supplied Multifunction Bus Driver
@@ -36,40 +36,39 @@ The following skeleton of a custom multifunction INF illustrates the required sy
 
 ```inf
 [Version]
-Signature = "$Windows NT$"
 ; ...
 Class = Multifunction   ; the system-defined class for MF devices
 ClassGUID  = {4d36e971-e325-11ce-bfc1-08002be10318} ; GUID for MF
 ; ...
 ; ...
 [ControlFlags]
-ExcludeFromSelect = *   ; don't include PnP devices in a displayed list of 
+ExcludeFromSelect = *   ; don't include PnP devices in a displayed list of
                         ; devices available for manual installation
 [Manufacturer]
 ; ...
 ; ...
-[ModelsSection]         ; models section
+[ModelsSection.NTamd64]         ; models section
 ; ...
 ; ...
 [DDInstall.NT]          ; install section
 Include = mf.inf        ; specify that this device requires mf.sys
 Needs = MFINSTALL.mf
 ; ...
- 
+
 [DDinstall.NT.Services]
 Include = mf.inf
 Needs = MFINSTALL.mf.Services
 
 [DDInstall.NT.HW]
 AddReg=DDInstall.RegHW
- 
+
 [DDInstall.RegHW]
 ; put entries with child function hardware IDs here
 ; ...
- 
+
 ; put override sections here...
 ; ...
- 
+
 [Strings]
 ; ...
 ```

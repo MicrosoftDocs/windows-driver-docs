@@ -10,7 +10,7 @@ keywords:
 - ServiceInstall section WDK file system
 - DefaultInstall section WDK file system
 - AddRegistry section WDK file system
-ms.date: 02/25/2022
+ms.date: 05/05/2023
 ---
 
 # Creating an INF file for a minifilter driver
@@ -45,7 +45,7 @@ An INF file for a file system filter driver generally contains the following sec
 
 The [**Version**](../install/inf-version-section.md) section specifies a class and GUID that are determined by the type of minifilter driver, as shown in the following code example.
 
-```cpp
+```inf
 [Version]
 Signature   = "$WINDOWS NT$"
 Class       = "ActivityMonitor"
@@ -53,6 +53,7 @@ ClassGuid   = {b86dff51-a31e-4bac-b3cf-e8cfe75c9fc2}
 Provider    = %Msft%
 DriverVer   = 10/09/2001,1.0.0.0
 CatalogFile =
+PnpLockdown = 1
 ```
 
 The following table shows the values that file system minifilter drivers should specify in the [**Version**](../install/inf-version-section.md) section.
@@ -72,7 +73,7 @@ The [**DestinationDirs**](../install/inf-destinationdirs-section.md) section spe
 
 In this section and in the **ServiceInstall** section, you can specify well-known system directories by system-defined numeric values. For a list of these values, see [INF DestinationDirs Section](../install/inf-destinationdirs-section.md). In the following code example, the value 12 refers to the Drivers directory (%windir%\\system32\\drivers), and the value 10 refers to the Windows directory (%windir%).
 
-```cpp
+```inf
 [DestinationDirs]
 DefaultDestDir = 12
 Minispy.DriverFiles = 12
@@ -91,7 +92,7 @@ You can create a single INF file to install your driver on multiple versions of 
 
 The following code example shows a typical [**DefaultInstall**](../install/inf-defaultinstall-section.md) section.
 
-```cpp
+```inf
 [DefaultInstall.NTamd64]
 OptionDesc = %MinispyServiceDesc%
 CopyFiles = Minispy.DriverFiles, Minispy.UserFiles
@@ -101,7 +102,7 @@ CopyFiles = Minispy.DriverFiles, Minispy.UserFiles
 
 The [**DefaultInstall.Services**](../install/inf-defaultinstall-services-section.md) section contains an [**AddService**](../install/inf-addservice-directive.md) directive that controls how and when the services of a particular driver are loaded, as shown in the following code example.
 
-``` cpp
+```inf
 [DefaultInstall.NTamd64.Services]
 AddService = %MinispyServiceName%,,Minispy.Service
 ```
@@ -110,7 +111,7 @@ AddService = %MinispyServiceName%,,Minispy.Service
 
 The **ServiceInstall** section contains information used for loading the driver service. In the [MiniSpy sample driver](/samples/microsoft/windows-driver-samples/minispy-file-system-minifilter-driver/), this section is named "Minispy.Service", as shown in the following code example. The name of the **ServiceInstall** section must appear in an [**AddService**](../install/inf-addservice-directive.md) directive in the [**DefaultInstall.Services**](../install/inf-defaultinstall-services-section.md) section.
 
-```cpp
+```inf
 [Minispy.Service]
 DisplayName    = %MinispyServiceName%
 Description    = %MinispyServiceDesc%
@@ -161,7 +162,7 @@ The **AddRegistry** section adds keys and values to the registry. Minifilter dri
 
 In the [MiniSpy sample driver](/samples/microsoft/windows-driver-samples/minispy-file-system-minifilter-driver/), the following **AddRegistry** section, together with the %strkey% token definitions in the [**Strings**](../install/inf-strings-section.md) section, defines three instances, one of which is named as the MiniSpy sample driver's default instance.
 
-```cpp
+```inf
 [Minispy.AddRegistry]
 HKR,%RegInstancesSubkeyName%,%RegDefaultInstanceValueName%,0x00000000,%DefaultInstance%
 HKR,%RegInstancesSubkeyName%"\"%Instance1.Name%,%RegAltitudeValueName%,0x00000000,%Instance1.Altitude%
@@ -180,7 +181,7 @@ You can create a single international INF file by creating additional locale-spe
 
 The following code example shows a typical [**Strings**](../install/inf-strings-section.md) section.
 
-```cpp
+```inf
 [Strings]
 Msft               = "Microsoft Corporation"
 MinispyServiceDesc = "Minispy mini-filter driver"
@@ -215,7 +216,7 @@ In Windows 10 prior to version 1903, the **DefaultUninstall** and **DefaultUnins
 
 The following example shows typical **DefaultUninstall** and **DefaultUninstall.Services** sections prior to Windows 10, version 1903.
 
-```cpp
+```inf
 [DefaultUninstall.NTamd64]
 DelFiles   = Minispy.DriverFiles, Minispy.UserFiles
 DelReg     = Minispy.DelRegistry

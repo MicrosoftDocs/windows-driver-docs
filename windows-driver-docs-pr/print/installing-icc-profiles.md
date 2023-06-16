@@ -4,7 +4,7 @@ description: Installing ICC Profiles
 keywords:
 - color management WDK print , installing ICC profiles
 - ICC profiles WDK print
-ms.date: 01/27/2023
+ms.date: 05/08/2023
 ---
 
 # Installing ICC Profiles
@@ -17,12 +17,12 @@ Following is an example of an .inf file that causes two ICC profile files to be 
 
 ```inf
 [Version]
-Signature="$Windows NT$"
-Provider="My Company" 
-ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+...
 Class=Printer
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+...
 
-[My Company]
+[My Company.NTamd64]
 "My printer model" = MYDRIVER,My_Printer_Model
 
 [MYDRIVER]

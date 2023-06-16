@@ -6,7 +6,7 @@ keywords:
 - RSS WDK networking , standardized INF keywords
 - standardized INF keywords WDK RSS
 - INF entries WDK RSS
-ms.date: 02/01/2023
+ms.date: 06/14/2023
 ---
 
 # Standardized INF Keywords for RSS
@@ -129,7 +129,7 @@ The following table describes all of the RSS keywords that can be edited.
 |SubkeyName|ParamDesc|Type|Default value|Min|Max|
 |--- |--- |--- |--- |--- |--- |
 |**\*RssBaseProcGroup**|RSS Base Processor Group|Int|0|0|MAXIMUM_GROUPS-1|
-|**\*NumaNodeId**|Preferred NUMA node|Int|65535 (Any node)|0|System specific - cannot exceed 65534|
+|**\*NumaNodeId**|Preferred NUMA node|Int|65535 (Any node)|0|System specific - cannot exceed 65535|
 |**\*RssBaseProcNumber**|RSS Base Processor Number|Int|0|0|MAXIMUM_PROC_PER_GROUP-1|
 |**\*MaxRssProcessors**|Maximum number of RSS Processors|Int|16|1|MAXIMUM_PROC_PER_SYSTEM|
 |**\*RssMaxProcNumber**|Maximum RSS Processor Number|Int|MAXIMUM_PROC_PER_GROUP-1 (Default)|0|MAXIMUM_PROC_PER_GROUP-1|

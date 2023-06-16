@@ -1,7 +1,7 @@
 ---
 title: WinUSB device
 description: In this topic, you will learn about how a WinUSB device is recognized by Windows. The information in this article applies to you if you are an OEM or independent hardware vendor (IHV) developing a device for which you want to use Winusb.sys as the function driver and want to load the driver automatically without having to provide a custom INF.
-ms.date: 01/18/2023
+ms.date: 05/08/2023
 ---
 
 # WinUSB device
@@ -28,7 +28,7 @@ In Windows 8, the in-box Winusb.inf file has been updated. The INF includes an 
 
 ```inf
 [Generic.Section.NTamd64]
-%USB\MS_COMP_WINUSB.DeviceDesc%=WINUSB,USB\MS_COMP_WINUSB 
+%USB\MS_COMP_WINUSB.DeviceDesc%=WINUSB,USB\MS_COMP_WINUSB
 ```
 
 The updated INF also includes a new setup class called "USBDevice".
@@ -42,9 +42,9 @@ Do not use the "USB" setup class for unclassified devices. That class is reserve
 In Windows 8, to use "USBDevice" device class, simply add this to your INF:
 
 ```inf
+  [Version]
   ...
-  [Version] 
-  Class=USBDevice 
+  Class=USBDevice
   ClassGuid={88BAE032-5A81-49f0-BC3D-A4FF138216D6}
   ...
 ```
@@ -55,10 +55,10 @@ In Windows 7, in addition to the preceding lines, you need to create these regis
 
 ```inf
   ;---------- Add Registry Section ----------
-  [USBDeviceClassReg] 
+  [USBDeviceClassReg]
   HKR,,,,"Universal Serial Bus devices"
   HKR,,NoInstallClass,,1
-  HKR,,SilentInstall,,1 
+  HKR,,SilentInstall,,1
   HKR,,IconPath,%REG_MULTI_SZ%,"%systemroot%\system32\setupapi.dll,-20"
 ```
 
