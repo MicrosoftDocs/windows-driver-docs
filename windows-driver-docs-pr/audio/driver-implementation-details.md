@@ -13,12 +13,11 @@ In other words, this topic explains what Microsoft has done (starting with Windo
 
 ## <span id="A__new_Type_GUID_for_node_descriptors"></span><span id="a__new_type_guid_for_node_descriptors"></span><span id="A__NEW_TYPE_GUID_FOR_NODE_DESCRIPTORS"></span>*Type* GUID for node descriptors
 
-
 If an audio adapter is capable of processing offloaded audio streams, the adapter’s audio driver exposes this capability by using a node in the KS-filter for the adapter.
 
 Each node in the path of the audio stream has a node descriptor, so for this node the driver must set the *Type* GUID to [**KSNODETYPE\_AUDIO\_ENGINE**](./ksnodetype-audio-engine.md). Here’s an example of how the driver could configure the node descriptor for this new node:
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _KSNODE_DESCRIPTOR {
   const KSAUTOMATION_TABLE *AutomationTable;    // drv specific
   const GUID               *Type;       // must be set to KSNODETYPE_AUDIO_ENGINE
@@ -30,7 +29,7 @@ If the Name GUID is set to **KSNODETYPE\_AUDIO\_ENGINE**, then you must create a
 
 The definition of the GUID for the new node type, **KSNODETYPE\_AUDIO\_ENGINE**, is as follows:
 
-```ManagedCPlusPlus
+```cpp
 Code style
 #define STATIC_KSNODETYPE_AUDIO_ENGINE\
     0x35caf6e4, 0xf3b3, 0x4168, 0xbb, 0x4b, 0x55, 0xe7, 0x7a, 0x46, 0x1c, 0x7e
@@ -42,7 +41,7 @@ For more information, see the *ksmedia.h* header file.
 
 And based on the preceding information, a descriptor for a miniport node could look like the following:
 
-```ManagedCPlusPlus
+```cpp
 PCNODE_DESCRIPTOR MiniportNodes[] =
 {
     // KSNODE_WAVE_AUDIO_ENGINE
@@ -61,7 +60,7 @@ Starting with Windows 8, the [KSPROPSETID\_AudioEngine](./kspropsetid-audioengi
 
 The new property set, **KSPROPSETID\_AudioEngine**, is defined as follows:
 
-```ManagedCPlusPlus
+```cpp
 #define STATIC_KSPROPSETID_AudioEngine\
     0x3A2F82DCL, 0x886F, 0x4BAA, 0x9E, 0xB4, 0x8, 0x2B, 0x90, 0x25, 0xC5, 0x36
 DEFINE_GUIDSTRUCT("3A2F82DC-886F-4BAA-9EB4-082B9025C536", KSPROPSETID_AudioEngine);

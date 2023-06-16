@@ -22,7 +22,7 @@ The properties contained in the [KSPROPSETID\_AudioEngine](kspropsetid-audioengi
 
 ## Syntax
 
-```ManagedCPlusPlus
+```cpp
 typedef enum  { 
   KSPROPERTY_AUDIOENGINE_LFXENABLE               = 0,
   KSPROPERTY_AUDIOENGINE_GFXENABLE               = 1,

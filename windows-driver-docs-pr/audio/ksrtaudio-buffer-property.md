@@ -22,7 +22,7 @@ The KSRTAUDIO\_BUFFER\_PROPERTY structure appends a buffer base address and requ
 
 ## Syntax
 
-```ManagedCPlusPlus
+```cpp
 typedef struct {
   KSPROPERTY Property;
   PVOID      BaseAddress;

@@ -6,16 +6,15 @@ ms.date: 04/20/2017
 
 # Obtaining Bluetooth Address of HF Device
 
-
 The Obtaining Bluetooth Address of HF Device topic demonstrate how the audio driver can obtain the Bluetooth address of a paired Hands-free (HF) device.
 
 The address string can be useful for uniquely identifying a particular paired HF device. For example, the address string can be used as the *ReferenceString* parameter that is passed to IoRegisterDeviceInterface, the *RefString* parameter that is passed to KsCreateFilterFactory, or the *Name* parameter that is passed to PcRegisterSubdevice.
 
-Note that the GUID\_DEVINTERFACE\_BLUETOOTH\_HFP\_SCO\_HCIBYPASS device interface symbolic link is also unique for each paired HF device, but this string can be too long for some purposes.
+Note that the GUID_DEVINTERFACE_BLUETOOTH_HFP_SCO_HCIBYPASS device interface symbolic link is also unique for each paired HF device, but this string can be too long for some purposes.
 
 The IoHelperGetDevicePdo routine shown in the following code example is a utility function used by IoHelperGetDeviceBluetoothAddress. Such functions can be called while the audio driver is handling a PnP interface arrival notification. The audio driver gets the device object from IoGetDeviceObjectPointer and passes it to IoHelperGetDeviceBluetoothAddress.
 
-```ManagedCPlusPlus
+```cpp
 _IRQL_requires_(PASSIVE_LEVEL)
 NTSTATUS
 IoHelperGetDevicePdo(
@@ -198,9 +197,4 @@ Exit:
     return status;
 }
 ```
-
-## <span id="related_topics"></span>Related topics
-[Related Design Guidelines](related-design-guidelines.md)  
-
-
 
