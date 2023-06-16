@@ -1854,6 +1854,8 @@
       href: overview-of-network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md
     - name: "Supporting NVGRE in Large Send Offload (LSO)"
       href: supporting-nvgre-in-large-send-offload--lso-.md
+    - name: "Supporting NVGRE in UDP Segmentation Offload (USO)"
+      href: nvgre-support-with-udp-segmentation-offload.md
     - name: "Supporting NVGRE in Checksum Offload"
       href: supporting-nvgre-in-checksum-offload.md
     - name: "Supporting NVGRE in RSS and VMQ Receive Task Offloads"

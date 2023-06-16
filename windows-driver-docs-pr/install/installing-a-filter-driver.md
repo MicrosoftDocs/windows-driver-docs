@@ -11,7 +11,7 @@ keywords:
 - SetupInstallFilesFromInfSection
 - UpperFilters
 - LowerFilters
-ms.date: 08/29/2022
+ms.date: 06/13/2023
 ---
 
 # Install a filter driver
@@ -27,16 +27,16 @@ For earlier versions of Windows, to register a device-specific filter driver, cr
 ```inf
 [Example_install]
 CopyFiles=Filter_copyfiles, Function_copyfiles
- 
+
 [Example_install.HW]
 AddReg=Filter_addreg
- 
+
 [Example_install.Services]
 AddService=ExampleFunctionDriver,0x00000002,Function_ServiceInstallSection
 AddService=ExampleFilterDriver,,Filter_ServiceInstallSection
 
-[Filter_addreg] 
-HKR,,"UpperFilters",0x00010000,"ExampleFilterDriver" ; REG_MULTI_SZ value 
+[Filter_addreg]
+HKR,,"UpperFilters",0x00010000,"ExampleFilterDriver" ; REG_MULTI_SZ value
 
 [Filter_ServiceInstallSection]
 DisplayName    = %Filter_ServiceDesc%
@@ -52,7 +52,7 @@ To install a class-wide upper- or lower-filter for a [device setup class](overvi
 
 ```inf
 [DestinationDirs]
-upperfilter_copyfiles = 12
+upperfilter_copyfiles = 13
 
 [upperfilter_inst]
 CopyFiles = upperfilter_copyfiles
@@ -63,7 +63,7 @@ upperfilt.sys,,,0x00004000  ; COPYFLG_IN_USE_RENAME
 
 [upperfilter_addreg]
 ; append this service to existing REG_MULTI_SZ list, if any
-HKR,,"UpperFilters",0x00010008,"upperfilt" 
+HKR,,"UpperFilters",0x00010008,"upperfilt"
 
 [upperfilter_inst.Services]
 AddService = upperfilt,,upperfilter_service
@@ -73,7 +73,7 @@ DisplayName   = %upperfilter_ServiceDesc%
 ServiceType   = 1   ; SERVICE_KERNEL_DRIVER
 StartType     = 3   ; SERVICE_DEMAND_START
 ErrorControl  = 1   ; SERVICE_ERROR_NORMAL
-ServiceBinary = %12%\upperfilt.sys
+ServiceBinary = %13%\upperfilt.sys
 ```
 
 The device installation application would:
