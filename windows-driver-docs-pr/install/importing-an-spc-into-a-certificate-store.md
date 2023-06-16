@@ -33,4 +33,4 @@ The arguments used are:
 
 Once the *.pfx* file is imported into the Personal certificate store on the signing computer, you can use [**SignTool**](../devtest/signtool.md) to release-sign [driver packages](driver-packages.md).
 
-Alternatively, you can use Certlm.msc, which provides a graphical interface for installing or managing certificates. To open certlm.msc, type the name in the Run dialog box or the command prompt.
+Alternatively, you can use certlm.msc, which provides a graphical interface for installing or managing certificates. To open certlm.msc, type the name in the Run dialog box or the command prompt.
