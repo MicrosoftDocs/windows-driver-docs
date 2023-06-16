@@ -1,7 +1,7 @@
 ---
 title: Importing an SPC into a Certificate Store
 description: Importing an SPC into a Certificate Store
-ms.date: 04/20/2017
+ms.date: 06/16/2023
 ---
 
 # Importing an SPC into a Certificate Store
@@ -23,7 +23,7 @@ Starting with Windows Vista, an alternative way to import the *.pfx* file into t
 certutil -user -p pfxpassword -importPFX abc.pfx
 ```
 
-Where:
+The arguments used are:
 
 -   The **-user** option specifies "Current User" Personal store.
 
@@ -32,3 +32,5 @@ Where:
 -   The **-importPFX** option specifies name of the *.pfx* file (*abc.pfx*).
 
 Once the *.pfx* file is imported into the Personal certificate store on the signing computer, you can use [**SignTool**](../devtest/signtool.md) to release-sign [driver packages](driver-packages.md).
+
+Alternatively, you can use Certlm.msc, which provides a graphical interface for installing or managing certificates. To open certlm.msc, type the name in the Run dialog box or the command prompt.
