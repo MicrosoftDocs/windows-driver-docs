@@ -6,7 +6,7 @@ keywords:
 - registering device interfaces WDK KMDF
 - receiving device interface access requests WDK KMDF
 - device interface classes WDK KMDF
-ms.date: 04/20/2017
+ms.date: 06/14/2023
 ---
 
 # Using Device Interfaces (WDF)
@@ -17,7 +17,7 @@ Each device interface belongs to a *device interface class*. For example, a driv
 
 ### Registering a Device Interface
 
-To register an instance of a device interface class, a framework-based driver can call [**WdfDeviceCreateDeviceInterface**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatedeviceinterface) from within its [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function. If the driver supports multiple instances of the interface, it can assign a unique reference string to each instance.
+To register an instance of a device interface class, a framework-based driver can call [**WdfDeviceCreateDeviceInterface**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatedeviceinterface) either before or after the device starts. If the driver supports multiple instances of the interface, it can assign a unique reference string to each instance.
 
 After the driver has registered a device interface, the driver can call [**WdfDeviceRetrieveDeviceInterfaceString**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceretrievedeviceinterfacestring) to obtain the symbolic link name that the system has assigned to the device interface.
 
@@ -25,11 +25,11 @@ For information about other ways that drivers can register device interfaces, se
 
 ### Enabling and Disabling a Device Interface
 
-After a driver calls [**WdfDeviceCreateDeviceInterface**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreatedeviceinterface) from [*EVT_WDF_DRIVER_DEVICE_ADD*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add), the framework automatically enables all of a device's interfaces when the device goes through PnP enumeration and disables the interfaces when the device undergoes PnP removal. 
+Interfaces created before the device starts (for example from [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add), [*EvtChildListCreateDevice*](/windows-hardware/drivers/ddi/wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_create_device), or [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware)) are automatically enabled by the framework when the device goes through PnP enumeration and starts. To prevent the interface from being automatically enabled during PnP start, call [**WdfDeviceSetDeviceInterfaceStateEx**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestateex) from the same callback function (set the *EnableInterface* parameter to FALSE) for that interface before PnP start.
 
-Note that any device power state changes or PnP resource rebalance does not change the interface's state. To prevent the interface from being automatically enabled during PnP start, call [**WdfDeviceSetDeviceInterfaceStateEx**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestateex) (set the *EnableInterface* parameter to FALSE) for that interface. 
- 
-Interfaces created after the device already starts won't be automatically enabled. The driver must call [**WdfDeviceSetDeviceInterfaceState**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestate) or [**WdfDeviceSetDeviceInterfaceStateEx**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestateex) to enable such interfaces. 
+Interfaces created after the device already starts won't be automatically enabled. The driver must call [**WdfDeviceSetDeviceInterfaceState**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestate) or [**WdfDeviceSetDeviceInterfaceStateEx**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestateex) to enable such interfaces.
+
+All interfaces are automatically disabled when the device undergoes PnP removal. Note that any device power state changes or PnP resource rebalance do not change the interface's state.
 
 A driver can disable and re-enable a device interface if necessary. For example, if a driver determines that its device has stopped responding, the driver can call [**WdfDeviceSetDeviceInterfaceState**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestate) or [**WdfDeviceSetDeviceInterfaceStateEx**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestateex) to disable the device's interfaces and prohibit applications from obtaining new handles to the interface. (Existing handles to the interface are not affected.) If the device later becomes available, the driver can call **WdfDeviceSetDeviceInterfaceState** or **WdfDeviceSetDeviceInterfaceStateEx** again to reenable the interfaces.
 

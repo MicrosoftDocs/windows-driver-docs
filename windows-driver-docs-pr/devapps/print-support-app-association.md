@@ -1,15 +1,12 @@
 ---
 title: Print support app association
 description: Provides guidance and examples for associating a print support app with a printer.
-ms.date: 05/05/2023
+ms.date: 06/12/2023
 ---
 
 # Print support app association
 
-> [!IMPORTANT]
-> Some information relates to prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-Follow the guidance in this article to setup and associate a print support app with a printer.
+Follow the guidance in this article to set up and associate a print support app with a printer.
 
 > [!IMPORTANT]
 > Starting with the release of Windows 11 SDK (22000.1), Print Support Apps (PSA) are the recommended method of developing UWP apps for printers. To develop a Print Support App for your print device, download and install the [Windows 11 SDK (22000.1)](https://go.microsoft.com/fwlink/?linkid=2166460).
@@ -42,7 +39,7 @@ To find out the Hardware Id and Compatible Id for your printer, follow these ste
 
 1. In the **Properties** dialog, select **Details**, then select **Hardware Ids** (or Compatible Id).
 
-1. Copy the Hardware ID string (it starts with "PSA\_"). You need this for extension INF, or alternatively, the Compatible Id (which doesn't start with "PSA\_").
+1. Copy the Hardware Id string (it starts with "PSA\_"). You need this for extension INF, or alternatively, the Compatible Id (which doesn't start with "PSA\_").
 
 ### Prepare the PSA extension INF file
 
@@ -118,7 +115,7 @@ PrinterHardwareId3 = "PSA_BrotherMFC-J775DWF678"
 
 ## PSA association override for enterprise and business customers
 
-For consumer and home users, PSA is downloaded from the Microsoft Store and installed based on the printer's hardware ID or compatible ID. This is supported for enterprise and business customers as well, if they choose to use the PSA from their printer manufacturer. Association is controlled by the extension INF published on Windows Update by printer manufacturers.
+For consumer and home users, PSA is downloaded from the Microsoft Store and installed based on the printer's hardware Id or compatible Id. This feature is supported for enterprise and business customers as well, if they choose to use the PSA from their printer manufacturer. Association is controlled by the extension INF published on Windows Update by printer manufacturers.
 
 Enterprise and business customers may need to override extension INF association, if they choose to use a business logic PSA (for example, a line of business app). They need to deploy and associate a custom PSA that has built-in business logic. Examples of the business logic are managing print quota and cost, or print policy (no color or no single side printing).
 
@@ -174,7 +171,7 @@ The Hardware Id is the printer-device-id IPP attribute from the printer.
 
 ![printer device id I P P attribute from the printer properties dialog](images/psa-association-3.png)
 
-## See also
+## Related articles
 
 [Print support app design guide](./print-support-app-design-guide.md)
 

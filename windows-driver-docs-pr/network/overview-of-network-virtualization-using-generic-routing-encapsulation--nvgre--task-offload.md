@@ -17,6 +17,7 @@ On the send path, the following task offloads need to account for encapsulation:
 
 -   Checksum computation of IPv4 and TCP or UDP payload
 -   Large Send Offload version 1 (LSO\_v1) and Large Send Offload version 2 (LSO\_v2)
+- UDP Segmentation Offload (USO)
 
 For send-side offloads, the miniport must perform corresponding operations on the tunnel (outer) IP header, the transport (inner) IP header, and the TCP header.
 

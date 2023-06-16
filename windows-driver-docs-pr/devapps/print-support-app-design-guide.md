@@ -1,16 +1,12 @@
 ---
 title: Print support app design guide
 description: Provides guidance and examples for printer OEMs and IHVs that are implementing a print support app (PSA) for their device.
-ms.date: 03/17/2023
-ms.custom: contperf-fy22q4
+ms.date: 06/12/2023
 ---
 
 # Print support app design guide
 
-> [!IMPORTANT]
-> Some information relates to prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-This topic provides guidance and examples for printer OEMs and IHVs to develop a print support app (PSA) that can enhance a Windows user's print experience in several ways.
+This article provides guidance and examples for printer OEMs and IHVs to develop a print support app (PSA) that can enhance a Windows user's print experience in several ways.
 
 > [!IMPORTANT]
 > Starting with the release of Windows 11 SDK (22000.1), Print Support Apps (PSA) are the recommended method of developing UWP apps for printers. To develop a Print Support App for your print device, download and install the Windows 11 SDK for the Windows version you are targeting.
@@ -18,11 +14,11 @@ This topic provides guidance and examples for printer OEMs and IHVs to develop a
 > [!IMPORTANT]
 > This topic contains sections that describe PSA functionality that is available starting in Windows 11, version 22H2. Those sections contain a note indicating that it applies to that version.
 
-Some printer features are not presented in print dialogs shown by Windows as they are special features that need help from a manufacturer app to be configured correctly. They may also be features that are not provided in the default capabilities of the printer.
+Some printer features aren't presented in print dialogs shown by Windows as they're special features that need help from a manufacturer app to be configured correctly. They may also be features that aren't provided in the default capabilities of the printer.
 
 Printer specific features can be grouped in a way that makes it easy for the user to pick an option and trust that all the features that are involved in that scenario are automatically set to the correct values. An example of this could be a choice between ink-saver, paper-saver and highest quality modes what could manipulate various print features automatically based on one selection from the user. Windows is unable to automatically group them as that requires understanding all the custom features of every printer model.
 
-This need for showing custom print preferences is addressed by this API with an optional UWP extension contract that can be activated by the user from all Windows print dialogs and custom print dialogs that use API provided by Windows. Manufacturers will be able to tailor their UI to provide the best print experience for the specific printer the user owns.
+This need for showing custom print preferences is addressed by this API with an optional UWP extension contract that can be activated by the user from all Windows print dialogs and custom print dialogs that use API provided by Windows. Manufacturers are able to tailor their UI to provide the best print experience for the specific printer the user owns.
 
 Another area where the printer manufacturers can improve and differentiate is print quality. Manufacturers can improve print quality after rendering by optimizing the content for the specific printer. They can also present a high-fidelity preview that better represents the final output as it could take printer specific features into consideration.
 
@@ -32,23 +28,23 @@ Another area where the printer manufacturers can improve and differentiate is pr
 
 | Term | Definition |
 |--|--|
-| PSA | Print Support Application. A UWP app that uses the API described in this topic. |
+| PSA | Print Support Application. A UWP app that uses the API described in this article. |
 | MPD | Modern Print Dialog. This is shown to the user when an app is printing using Windows.Graphics.Printing API. |
-| CPD | Common Print Dialog. This is shown to the user when app is printing using win32 API. Apps that need to show print preview do not trigger this dialog and implement a version of dialog themselves. Office apps are a prime example of this. |
-| IPP | Internet Printing Protocol. Used from a client device to interact with the printer to retrieve and set printing preferences as well as to send the document to be printed. |
+| CPD | Common Print Dialog. This is shown to the user when app is printing using win32 API. Apps that need to show print preview don't trigger this dialog and implement a version of dialog themselves. Office apps are a prime example of this. |
+| IPP | Internet Printing Protocol. Used from a client device to interact with the printer to retrieve and set printing preferences and to send the document to be printed. |
 | Print Support Associated Printer | Printer that is linked to PSA. |
 | IPP Printer | Printer that supports IPP protocol. |
-| More Settings | Link that opens partner provided app UI in MPD. Defaults to opening built in print preferences UI when there is no PSA installed. |
+| More Settings | Link that opens partner provided app UI in MPD. Defaults to opening built in print preferences UI when there's no PSA installed. |
 | Printer Preferences UI | Dialog used to set default printer options that are applied at print time. For example: orientation, paper size, color, print on both sides, and so on. |
-| PDL | Page Description Language. The format in which a document is sent to printer. |
+| PDL | Page Description Language. The format in which a document is sent to the printer. |
 | Associated PSA Printer | Physical IPP printer associated with a PSA application. |
-| PrintDeviceCapabilities | XML document format for defining printer capabilities. See [Print Ticket and Print Capabilities Technologies](../print/print-ticket-and-print-capabilities-technologies.md) for more information. |
+| PrintDeviceCapabilities | XML document format for defining printer capabilities. For more information, see [Print Ticket and Print Capabilities Technologies](../print/print-ticket-and-print-capabilities-technologies.md). |
 | PrintTicket | Collection of various print related features and their values used to capture the user's intent for a given print job. |
 | PrintSupportExtension | PSA background task responsible for providing printer constraint extension capabilities. |
 
 ## Print support namespace
 
-The samples below reference a **printsupport** namespace, which is defined as:
+These samples reference a **printsupport** namespace, which is defined as:
 
 ```xml
     xmlns:printsupport="http://schemas.microsoft.com/appx/manifest/printsupport/windows10"
@@ -58,7 +54,7 @@ The samples below reference a **printsupport** namespace, which is defined as:
 
 When a user is about to print a document, they often would like to set some preferences with which to print it. For example, they may choose to print a document in landscape orientation. They may also take advantage of a custom feature that their printer supports. Windows provides default UI to show custom preferences, but the user may not understand them as there are no appropriate icons or descriptions. Windows may also be using the wrong UI control to present it. Such a custom feature is best presented by an app that understands the feature completely. This is the motivation behind offering an API that lets the printer manufacturers create apps tailored to the various printer models they make.
 
-A new UAP extension contract will be created with a new category named "windows.printSupportSettingsUI". Apps activated with this contract will receive a new ActivationKind called PrintSupportSettingsUI. This contract does not require any new capability.
+A new UAP extension contract is created with a new category named "windows.printSupportSettingsUI". Apps activated with this contract receive a new ActivationKind called PrintSupportSettingsUI. This contract doesn't require any new capability.
 
 ```xml
 <Extensions>
@@ -67,9 +63,9 @@ A new UAP extension contract will be created with a new category named "windows.
 </Extensions>
 ```
 
-This contract is invoked when the user clicks **More Settings** in MPD or **Preferences** in CPD. This contract can also be invoked from **Printing Preferences** in the Settings app. When the contract is activated, the app receives a **PrintSupportSettingsUISession** object which can be used to get the current **PrintTicket** and **PrintDevice** objects. The **PrintDevice** object can be used for communicating with the printer to receive printer and job attributes. The app can then show UI with appropriate options of the printer to the user. When the user makes the choices and clicks **OK**, the application may then modify the print ticket, validate it, and then submit back using **PrintSupportPrintTicketTarget** object. If the user chooses to cancel the preferences window, changes should be discarded, and the application should exit by completing the deferral taken from the **PrintSupportSettingsUISession** object.
+This contract is invoked when the user select **More Settings** in MPD or **Preferences** in CPD. This contract can also be invoked from **Printing Preferences** in the Settings app. When the contract is activated, the app receives a **PrintSupportSettingsUISession** object that can be used to get the current **PrintTicket** and **PrintDevice** objects. The **PrintDevice** object can be used for communicating with the printer to receive printer and job attributes. The app can then show UI with appropriate options of the printer to the user. When the user makes the choices and select **OK**, the application may then modify the print ticket, validate it, and then submit back using **PrintSupportPrintTicketTarget** object. If the user chooses to cancel the preferences window, changes should be discarded, and the application should exit by completing the deferral taken from the **PrintSupportSettingsUISession** object.
 
-The Print Support App is expected to handle multiple simultaneous activations for different print jobs, so such an app must support multiple instances using the **SupportsMultipleInstances** element in the package.appxmanifest file. Failure to do so might result in situations where confirming preferences of one print job might close other preferences windows that may be open. The user will be required to open those preferences windows again.
+The Print Support App is expected to handle multiple simultaneous activations for different print jobs, so such an app must support multiple instances using the **SupportsMultipleInstances** element in the package.appxmanifest file. Failure to do so might result in situations where confirming preferences of one print job might close other preferences windows that may be open. The user is required to open those preferences windows again.
 
 The following sequence diagram represents the concept of Settings UI print ticket manipulation:
 
@@ -342,7 +338,7 @@ private async void SetPrinterAttributes()
 
 ## Extending printer constraints
 
-The Print Support App supports custom PrintTicket validation and defining the default PrintTicket. The section describes how we intend to support these features for Print Support App.
+The Print Support App supports custom PrintTicket validation and defining the default PrintTicket. This section describes how we support these features.
 
 To support printer extension constraints, a new background task type, PrintSupportExtension, has been implemented. The Package.appxmanifest has an extensibility entry for the Print Support Extension as shown here:
 
@@ -357,7 +353,7 @@ This service can run at any point in a print job for the associated IPP printer.
 
 1. `event Windows.Foundation.TypedEventHandler<PrintSupportExtensionSession, PrintSupportPrintTicketValidationRequestedEventArgs>; PrintTicketValidationRequested;`
 
-    If the Print Support Extension intends to provide its own PrintTicket validation mechanism, it can register for this event. Whenever a PrintTicket needs to be validated, the print system will raise this event. PrintSupportExtension will then get the current PrintTicket that needs to be validated within the EventArgs. The PrintSupportExtension background class can then check the PrintTicket for validity and modify it to resolve any conflicts. The PrintSupportExtension background class should then set the result for validation using the function SetPrintTicketResult to indicate if the PrintTicket has been resolved, has conflicts, or is invalid. This event can be raised anytime during the lifetime of a print job. If the PrintSupportExtension class does not register for this event, the print system performs its own validation of the PrintTicket.
+    If the Print Support Extension provides its own PrintTicket validation mechanism, it can register for this event. Whenever a PrintTicket needs to be validated, the print system raises this event. PrintSupportExtension will then get the current PrintTicket that needs to be validated within the EventArgs. The PrintSupportExtension background class can then check the PrintTicket for validity and modify it to resolve any conflicts. The PrintSupportExtension background class should then set the result for validation using the function SetPrintTicketResult to indicate if the PrintTicket has been resolved, has conflicts, or is invalid. This event can be raised anytime during the lifetime of a print job. If the PrintSupportExtension class doesn't register for this event, the print system performs its own validation of the PrintTicket.
 
 1. `event Windows.Foundation.TypedEventHandler<PrintSupportExtensionSession, PrintSupportPrintDeviceCapabilitiesChangedEventArgs>; PrintDeviceCapabilitiesChanged;`
 
@@ -423,23 +419,23 @@ private void OnPdcChanged(PrintSupportExtensionSession session, PrintSupportPrin
 
 ## Enhancement of print quality
 
-Once the user has committed to print by pressing the print button on print dialog, the document to be printed is sent to the print stack from the app that is printing. This document then undergoes transformation (rendering to PDL) to make it suitable for the target printer. Windows will determine what transformation to choose based on attributes queried from the printer. The transformed document is then sent to the printer. While this works well for majority of printers, there are cases where the quality of print could be improved by allowing a partner app to participate in the transformation. To facilitate this, the current printing Workflow API will be extended to include calls to the app at additional points from the print stack. This API will support two new events which PSA app can register for. These are the only entry points into the PSA API surface:
+Once the user has committed to print by pressing the print button on print dialog, the document to be printed is sent to the print stack from the app that is printing. This document then undergoes transformation (rendering to PDL) to make it suitable for the target printer. Windows will determine what transformation to choose based on attributes queried from the printer. The transformed document is then sent to the printer. While this works well for most printers, there are cases where the quality of print could be improved by allowing a partner app to participate in the transformation. To facilitate this, the current printing Workflow API is extended to include calls to the app at additional points from the print stack. This API supports two new events which PSA app can register for. These are the only entry points into the PSA API surface:
 
 1. **JobStarting**
 
-    - This event will be raised when a print job is started by any application. When the event is raised a Print Support App can chose to skip system rendering by calling SetSkipSystemRendering on PrintWorkflowJobStartingEventArgs. If skip system rendering is chosen, the print system will not convert the XPS document into the PDL format that is required by the printer. Instead, the XPS generated by the printing application will be directly given to the PSA which is then responsible for converting XPS to PDL format.
+    - This event is raised when a print job is started by any application. When the event is raised, a Print Support App can chose to skip system rendering by calling SetSkipSystemRendering on PrintWorkflowJobStartingEventArgs. If skip system rendering is chosen, the print system won't convert the XPS document into the PDL format that is required by the printer. Instead, the XPS generated by the printing application will be directly given to the PSA that is then responsible for converting XPS to PDL format.
 
 1. **PdlModificationRequested**
 
-    - This event will be raised when Windows starts the conversion of the XPS stream to the PDL format indicated by the printer. Runtime class PrintWorkflowPdlModificationRequestedEventArgs is provided as an argument for this event. This event class provides PDL source and target objects for reading and writing the print job content. If the App determines that it needs user input, it can launch UI using PrintWorkflowUILauncher from the EventArgs. This API will use the Tester-Doer pattern. PrintWorkflowUILauncher will not be able to invoke the UI if the function IsUILaunchEnabled returns false . This function will return false if the PSA session is running in silent mode (headless or kiosk mode). The Print Support App should not try to launch UI if the function returns false.
+    - This event is raised when Windows starts the conversion of the XPS stream to the PDL format indicated by the printer. Runtime class PrintWorkflowPdlModificationRequestedEventArgs is provided as an argument for this event. This event class provides PDL source and target objects for reading and writing the print job content. If the App determines that it needs user input, it can launch UI using PrintWorkflowUILauncher from the EventArgs. This API uses the Tester-Doer pattern. PrintWorkflowUILauncher won't be able to invoke the UI if the function IsUILaunchEnabled returns false. This function returns false if the PSA session is running in silent mode (headless or kiosk mode). The Print Support App shouldn't try to launch UI if the function returns false.
 
-    An OutputStream will be available as part of PrintWorkflowPdlTargetStream which is returned by the function GetStreamTargetAsync. Content written to the target OutputStream will be passed along to the printer as document content.
+    An OutputStream is available as part of PrintWorkflowPdlTargetStream that is returned by the function GetStreamTargetAsync. Content written to the target OutputStream is passed along to the printer as document content.
 
 Sequence diagram for the PDL modification event:
 
 ![sequence diagram for the source stream P D L modification event](images/psa-api-4.png)
 
-The PSA foreground application will be launched when the PSA background task requests launching UI. The PSA can use the foreground contract to get user input and/or to show a preview print preview to the user.
+The PSA foreground application is launched when the PSA background task requests launching UI. The PSA can use the foreground contract to get user input and/or to show a preview print preview to the user.
 
 ### Print support workflow background task
 
@@ -452,11 +448,11 @@ A new **printSupportWorkflow** background task type has been defined. The Packag
 </Extensions>
 ```
 
-On activation of the contract **PrintWorkflowJobTriggerDetails** will be given as **IBackgroundTaskInstance->TriggerDetails**. **PrintWorkflowJobTriggerDetails** internally provides **PrintWorkflowJobBackgroundSession** as part of its properties. The app can use **PrintWorkflowJobBackgroundSession** to register for events related to various injection points in the print job workflow. After the event registration is done, the app must call **PrintWorkflowJobBackgroundSession::Start** for the print system to start firing events related to various injection points.
+On activation of the contract, **PrintWorkflowJobTriggerDetails** is given as **IBackgroundTaskInstance->TriggerDetails**. **PrintWorkflowJobTriggerDetails** internally provides **PrintWorkflowJobBackgroundSession** as part of its properties. The app can use **PrintWorkflowJobBackgroundSession** to register for events related to various injection points in the print job workflow. After the event registration is done, the app must call **PrintWorkflowJobBackgroundSession::Start** for the print system to start firing events related to various injection points.
 
 ### Print workflow job UI
 
-A new **ActivationKind** called **PrintSupportJobUI** is defined. This does not require a new capability.
+A new **ActivationKind** called **PrintSupportJobUI** is defined. This doesn't require a new capability.
 
 ```xml
 <Extensions>
@@ -465,7 +461,7 @@ A new **ActivationKind** called **PrintSupportJobUI** is defined. This does not 
 </Extensions>
 ```
 
-This is a UI contract that can be launched from either the Print Support Workflow background contract, or when the user clicks on a print job error toast. On activation, **PrintWorkflowJobActivatedEventArgs** is provided, which has a **PrintWorkflowJobUISession** object. Using **PrintWorkflowJobUISession**, the foreground application should register for the **PdlDataAvailable** event if it wants to access the PDL data. If the foreground application would like to show custom error messages for any errors that can occur during the job, it should register for the **JobNotification** event. Once the events are registered, the application should call the **PrintWorkflowJobUISession::Start** function in order for the print system to start firing events.
+This is a UI contract that can be launched from either the Print Support Workflow background contract, or when the user select on a print job error toast. On activation, **PrintWorkflowJobActivatedEventArgs** is provided, which has a **PrintWorkflowJobUISession** object. Using **PrintWorkflowJobUISession**, the foreground application should register for the **PdlDataAvailable** event if it wants to access the PDL data. If the foreground application would like to show custom error messages for any errors that can occur during the job, it should register for the **JobNotification** event. Once the events are registered, the application should call the **PrintWorkflowJobUISession::Start** function in order for the print system to start firing events.
 
 ### Skipping system rendering
 
@@ -722,7 +718,7 @@ private async void SetJobColorModeToMonochrome(PrintWorkflowPrinterJob printerJo
 }
 ```
 
-Some IPP printers do not support getting/setting job attributes after the job is created. For those printers, **PrintJob** will have the **JobId** property set to "0" and **GetJobAttributes**/**SetJobAttributes** will fail immediately with an exception.
+Some IPP printers don't support getting/setting job attributes after the job is created. For those printers, **PrintJob** has the **JobId** property set to "0" and **GetJobAttributes**/**SetJobAttributes** will fail immediately with an exception.
 
 ### Providing storage file access to PDL content
 
@@ -829,7 +825,7 @@ public sealed partial class JobUIPage : Page
 
 ### Create job with initial job attributes
 
-Currently, some IPP printers do not support set-attribute operation. The **CreateJobOnPrinterWithAttributes** function and CreateJobOnPrinterWithAttributesBuffer function on **PrintWorkflowPdlDataAvailableEventArgs** are provided to mitigate this issue. Using these APIs, a PSA developer can provide job attributes that will be passed to printer when job is created on the printer.
+Currently, some IPP printers don't support set-attribute operation. The **CreateJobOnPrinterWithAttributes** function and CreateJobOnPrinterWithAttributesBuffer function on **PrintWorkflowPdlDataAvailableEventArgs** are provided to mitigate this issue. Using these APIs, a PSA developer can provide job attributes that is passed to printer when job is created on the printer.
 
 ```csharp
 public sealed partial class JobUIPage : Page
@@ -919,7 +915,7 @@ namespace winrt
 
 In this scenario, the PSA customizes the Print Device Capabilities (PDC) and provides Print Device Resources (PDR) for string localization.
 
-The PSA also sets the supported PDL Passthrough API content types (PDL formats). If the PSA does not subscribe to the event or does not call **SetSupportedPdlPassthroughContentTypes** explicitly, the PDL Passthrough will be disabled for the printers associated with this PSA app.
+The PSA also sets the supported PDL Passthrough API content types (PDL formats). If the PSA doesn't subscribe to the event or doesn't call **SetSupportedPdlPassthroughContentTypes** explicitly, the PDL Passthrough is disabled for the printers associated with this PSA app.
 
 ```csharp
 // Event handler called every time PrintSystem updates PDC or BindPrinter is called
@@ -949,9 +945,9 @@ The PSA also sets the supported PDL Passthrough API content types (PDL formats).
 > [!IMPORTANT]
 > This section describes PSA functionality available starting in Windows 11, version 22H2.
 
-The page level feature support and operation attributes scenarios are grouped because they are addressed by making changes in the same place in the sample code.
+The page level feature support and operation attributes scenarios are grouped because they're addressed by making changes in the same place in the sample code.
 
-- **Page level feature support:** In this scenario, the PSA application specifies the page level attribute, which should not be overridden by an IPP attribute parsed from the PrintTicket.
+- **Page level feature support:** In this scenario, the PSA application specifies the page level attribute, which shouldn't be overridden by an IPP attribute parsed from the PrintTicket.
 
 - **Separate collection for operation attributes support (PIN printing):** In this scenario, PSA application specifies custom IPP operation attributes (for example, PIN).
 
@@ -1078,7 +1074,7 @@ public IAdaptiveCard GetCustomAdaptiveCard(IppPrintDevice ippPrinter, AppInfo ap
 > [!IMPORTANT]
 > This section describes PSA functionality available starting in Windows 11, version 22H2.
 
-The current PDL conversion API, **PrintWorkflowPdlConverter.ConvertPdlAsync**, does host-based processing by default. This means that the host/printing computer will do the rotation, page order, and so on, so that printer does not need to perform these operations. However, printer IHVs may want PDL conversion without host-based processing as their printer can do this better. The **ConvertPdlAsync** function takes in host-based processing flags to address this requirement. The PSA can skip all host-based processing or a particular host-based processing operation using this flag.
+The current PDL conversion API, **PrintWorkflowPdlConverter.ConvertPdlAsync**, does host-based processing by default. This means that the host/printing computer does the rotation, page order, and so on, so that printer doesn't need to perform these operations. However, printer IHVs may want PDL conversion without host-based processing as their printer can do this better. The **ConvertPdlAsync** function takes in host-based processing flags to address this requirement. The PSA can skip all host-based processing or a particular host-based processing operation using this flag.
 
 ```csharp
 class HostBaseProcessingRequirements
@@ -1134,7 +1130,7 @@ private HostBaseProcessingRequirements ReadHostBasedProcessingRequirements(IppPr
 > [!IMPORTANT]
 > This section describes PSA functionality available starting in Windows 11, version 22H2.
 
-Printer IHVs may different requirements on when Print Device Capabilities (PDC) needs to be updated. To address these requirement, **PrintSupportPrintDeviceCapabilitiesUpdatePolicy** can set an update policy for the PDC. PSA can set the PDC update policy based on time or the number of print jobs using this API.
+Printer IHVs may have different requirements on when Print Device Capabilities (PDC) needs to be updated. To address these requirements, **PrintSupportPrintDeviceCapabilitiesUpdatePolicy** can set an update policy for the PDC. PSA can set the PDC update policy based on time or the number of print jobs using this API.
 
 ### Set PDC update policy based on number of jobs
 
@@ -1168,15 +1164,15 @@ private void OnPdcChanged(PrintSupportExtensionSession session, PrintSupportPrin
 
 ## General print support app (PSA) design guidance
 
-When designing a print support app, it is important to include these aspects in the design:
+When designing a print support app, it's important to include these aspects in the design:
 
 - Both foreground and background contracts should be marked as supporting multiple instances, for example, **SupportsMultipleInstance** should be present in the package manifest. This is to ensure that the lifetime of the contracts can be managed reliably for multiple simultaneous jobs.
 
-- Treat launching UI for PDL modification as an optional step. Make a best effort to complete the print job successfully even if launching of UI was not allowed. Print jobs should only be aborted if there is no way to complete them successfully without user input during PDL modification. Consider sending the PDL unmodified in such cases.
+- Treat launching UI for PDL modification as an optional step. Make a best effort to complete the print job successfully even if launching of UI wasn't allowed. Print jobs should only be aborted if there's no way to complete them successfully without user input during PDL modification. Consider sending the PDL unmodified in such cases.
 
-- When launching UI for PDL modification, call **IsUILaunchEnabled** before calling **LaunchAndCompleteUIAsync**. This is to ensure that scenarios that cannot show UI at the current time will continue to print correctly. These scenarios could be on a headless device or a device that is currently in kiosk mode or do not disturb mode.
+- When launching UI for PDL modification, call **IsUILaunchEnabled** before calling **LaunchAndCompleteUIAsync**. This is to ensure that scenarios that can't show UI at the current time continue to print correctly. These scenarios could be on a headless device or a device that is currently in kiosk mode or don't disturb mode.
 
-## See also
+## Related articles
 
 [Print support app association](./print-support-app-association.md)
 
