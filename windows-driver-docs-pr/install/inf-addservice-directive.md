@@ -89,7 +89,7 @@ Do not overwrite the delayed auto start value for the given service if this serv
 **0x00020000** (SPSVCINST_NOCLOBBER_FAILUREACTIONS) (Windows 11 version 22H2 and later versions of Windows)  
 Do not overwrite the failure actions for the given service if this service already exists in the system and has existing failure actions. See the FailureActions directive below for more information on failure actions.
 
-**0x00040000** (SPSVCINST_NOCLOBBER_BOOTFLAGS) (Windows 11 version 25381  and later versions of Windows)
+**0x00040000** (SPSVCINST_NOCLOBBER_BOOTFLAGS) (Windows 11 build 25381  and later versions of Windows)
 Do not overwrite the boot flags value for the given service if this service already exists in the system and has an existing value. See the **BootFlags** directive below for more information.
 
 *service-install-section*  
@@ -135,7 +135,7 @@ ServiceBinary=path-to-service
 [DelayedAutoStart=value] (Windows 10 Version 2004 and later versions of Windows)
 [AddTrigger=service-trigger-install-section[, service-trigger-install-section, ...]] (Windows 10 Version 2004 and later versions of Windows)
 [FailureActions=service-failure-actions-install-section] (Windows 11 version 22H2 and later versions of Windows)
-[BootFlags=value] (Windows 11 build version 25381 and later versions of Windows)
+[BootFlags=value] (Windows 11 build 25381 and later versions of Windows)
 ```
 
 Each *service-install-section* must have at least the **ServiceType**, **StartType**, **ErrorControl**, and **ServiceBinary** entries as shown here. However, the remaining entries are optional.
@@ -295,7 +295,7 @@ SubType=trigger-subtype
 
 **BootFlags**=*value*
 > [!NOTE]
-> This value can only be used with kernel-mode driver services and is only available with Windows 11 version 25381 and above.
+> This value can only be used with kernel-mode driver services and is only available with Windows 11 build 25381 and above.
 
 Optionally specifies when the operating system should promote a driver's StartType value to 0x0 (SERVICE_BOOT_START). You can specify one or more (ORed) of the following numeric values, expressed as hexadecimal values.
 
@@ -443,7 +443,7 @@ HKR,,BootFlags,0x00010003,0x14 ; CM_SERVICE_USB3_DISK_BOOT_LOAD|CM_SERVICE_USB_D
 ```
 
 > [!NOTE]
-> This syntax should be used only in Windows 11, versions older than 25381, for all others use **BootFlags** directive.
+> This syntax should be used only in Windows 11, builds older than 25381, for all others use **BootFlags** directive.
 
 ### Registering for Event Logging
 
