@@ -219,7 +219,21 @@ If your driver package payloads a [User-Mode Driver Framework (UMDF)](../wdf/get
 If your INF uses an AddReg directive to add an upper or lower filter to a device stack, then the INF isn't compliant with driver package isolation. For example, your INF may have:
 
 ```inf
+[ExampleDDInstall.HW]
+AddReg = FilterAddReg
+
+[FilterAddReg]
 HKR,,"UpperFilters",0x00010000,"ExampleFilterDriver" ; REG_MULTI_SZ value
 ```
 
-Instead, the filter should be added to the device stack using the [AddFilter](../install/inf-addfilter-directive.md) directive.
+Instead, the filter should be added to the device stack using the [AddFilter](../install/inf-addfilter-directive.md) directive. For example:
+
+```inf
+[ExampleDDInstall.Filters]
+AddFilter = ExampleFilterDriver,, ExampleFilterSection
+
+[ExampleFilterSection]
+FilterPosition = Upper
+```
+
+See [Device filter driver ordering](device-filter-driver-ordering.md) for more details on adding device filters.
