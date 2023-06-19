@@ -1,7 +1,7 @@
 ---
-title: Hotspot 2.0
-description: Hotspot 2.0
-ms.date: 02/28/2023
+title: Passpoint
+description: Overview of Passpoint (Hotspot 2.0) in Windows
+ms.date: 06/19/2023
 ---
 
 # Passpoint
@@ -48,3 +48,7 @@ Except for Online Sign-up, which follows the standard PPS-MO format, all other p
 Windows 8 and Windows 8.1 do not support the discovery or online sign-up portions of Passpoint, but they do support WPA2-Enterprise and all EAP methods that are required by the Passpoint specification. Therefore, Windows 8 and Windows 8.1 can connect to a Passpoint network when the user already has credentials. Because Windows 8 and Windows 8.1 do not support 802.11u discovery, operators must provision Windows 8 or Windows 8.1 with wireless profiles that contain the applicable SSIDs for their networks.
 
 Windows 10 fully supports Passpoint Release 1, including discovery and profile creation, but does not support Online Sign-Up.
+
+## Additional resources
+
+- [Extensible Authentication Protocol (EAP) for network access](/windows-server/networking/technologies/extensible-authentication-protocol/network-access)
