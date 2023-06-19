@@ -17,7 +17,7 @@ api_type:
 The DRIVER\_PNP\_WATCHDOG bug check has a value of 0x000001D5. This indicates that a driver has failed to complete a PnP operation within a specific time.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
  
 

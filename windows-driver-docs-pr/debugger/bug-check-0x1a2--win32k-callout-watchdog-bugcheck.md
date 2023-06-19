@@ -15,7 +15,7 @@ api_type:
 # Bug Check 0x1A2: WIN32K\_CALLOUT\_WATCHDOG\_BUGCHECK
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 The WIN32K\_CALLOUT\_WATCHDOG\_BUGCHECK live dump has a value of 0x000001A2. It indicates that a callout to Win32k did not return promptly.
 

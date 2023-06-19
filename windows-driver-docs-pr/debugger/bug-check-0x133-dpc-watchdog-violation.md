@@ -21,7 +21,7 @@ The value of Parameter 1 indicates whether a single DPC exceeded a timeout, or w
 For more information about DPCs, see [Introduction to DPC Objects](../kernel/introduction-to-dpc-objects.md) and [Windows Internals 7th Edition Part 1](/sysinternals/resources/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## DPC\_WATCHDOG\_VIOLATION Parameters
 

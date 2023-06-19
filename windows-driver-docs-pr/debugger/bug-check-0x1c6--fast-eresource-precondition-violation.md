@@ -17,7 +17,7 @@ api_type:
 The FAST\_ERESOURCE\_PRECONDITION\_VIOLATION bug check has a value of 0x000001C6. It indicates that a current thread is performing an invalid call to a fast resource routine.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
  
 

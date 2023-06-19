@@ -18,7 +18,7 @@ api_type:
 The TCPIP\_AOAC\_NIC\_ACTIVE\_REFERENCE\_LEAK bug check has a value of 0x00000150. This indicates that the NIC active reference should have been released when the send queue was fully drained.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## TCPIP\_AOAC\_NIC\_ACTIVE\_REFERENCE\_LEAK Parameters
