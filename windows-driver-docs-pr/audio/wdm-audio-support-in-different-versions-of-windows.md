@@ -18,8 +18,6 @@ This section describes the operating system support for audio devices and driver
 
 -----------------------------------------------------------------------------------------------
 
-[Bluetooth Bypass Guidelines for Audio Drivers](bluetooth-bypass-guidelines-for-audio-drivers.md)
-
 [Hardware-Offloaded Audio Processing](hardware-offloaded-audio-processing.md)
 
 [WDM Audio Platform Differences](wdm-audio-platform-differences.md)

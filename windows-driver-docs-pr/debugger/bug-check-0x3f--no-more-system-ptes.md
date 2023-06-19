@@ -18,7 +18,7 @@ api_type:
 The NO\_MORE\_SYSTEM\_PTES bug check has a value of 0x0000003F. This is the result of a system which has performed too many I/O actions. This has resulted in fragmented system page table entries (PTE).
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## NO\_MORE\_SYSTEM\_PTES Parameters

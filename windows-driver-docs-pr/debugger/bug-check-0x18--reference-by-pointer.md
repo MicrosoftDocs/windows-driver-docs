@@ -18,7 +18,7 @@ api_type:
 The REFERENCE\_BY\_POINTER bug check has a value of 0x00000018. This indicates that the reference count of an object is illegal for the current state of the object.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## REFERENCE\_BY\_POINTER Parameters

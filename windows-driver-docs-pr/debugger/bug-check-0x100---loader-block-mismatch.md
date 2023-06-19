@@ -18,7 +18,7 @@ api_type:
 The LOADER\_BLOCK\_MISMATCH bug check has a value of 0x00000100. This indicates that either the loader block is invalid, or it does not match the system that is being loaded.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## LOADER\_BLOCK\_MISMATCH Parameters

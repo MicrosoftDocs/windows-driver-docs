@@ -17,7 +17,7 @@ api_type:
 The MICROCODE\_REVISION\_MISMATCH bug check has a value of 0x0000017E. It indicates that one or more processors in the multiprocessor configuration have inconsistent microcode loaded.  
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
  
 

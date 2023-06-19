@@ -18,7 +18,7 @@ api_type:
 The UNSUPPORTED\_PROCESSOR bug check has a value of 0x0000005D. This indicates that the computer is attempting to run Windows on an unsupported processor.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## UNSUPPORTED\_PROCESSOR Parameters

@@ -18,7 +18,7 @@ api_type:
 The TRAP\_CAUSE\_UNKNOWN bug check has a value of 0x00000012. This indicates that an unknown exception has occurred.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## TRAP\_CAUSE\_UNKNOWN Parameters

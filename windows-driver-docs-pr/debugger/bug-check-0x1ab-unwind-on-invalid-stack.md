@@ -20,7 +20,7 @@ corrupted during exception dispatch or unwind (e.g. due to stack corruption of a
 At the time the invalid access occurred, the exception record was not available. 
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## UNWIND\_ON\_INVALID\_STACK Parameters

@@ -18,7 +18,7 @@ api_type:
 The REGISTRY\_FILTER\_DRIVER\_EXCEPTION bug check has a value of 0x00000135. This bugcheck is caused by an unhandled exception in a registry filtering driver.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## REGISTRY\_FILTER\_DRIVER\_EXCEPTION Parameters

@@ -33,7 +33,7 @@ HKR,FX\0,%PKEY_CompositeFX_Offload_ModeEffectClsid%,0x00010000,%SWAP_FX_MODE_CLS
 
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Media-Class INF Extensions](media-class-inf-extensions.md)

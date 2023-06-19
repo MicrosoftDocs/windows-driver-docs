@@ -100,7 +100,7 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 
 Once you have downloaded the ISO, use these steps to set up your build environment:
 
-1. Mount the EWDK ISO.
+1. Mount the EWDK ISO from a drive volume. Network share paths are not currently supported.
 2. Run `LaunchBuildEnv.cmd`.
 3. In the environment created in step 2, type **SetupVSEnv**, and then press **Enter**.
 4. Launch devenv.exe from the same environment, using the full file path. For example: `"C:\Program Files\Microsoft Visual Studio\2022\%Community|Professional|Enterprise%\Common7\IDE\devenv.exe"`

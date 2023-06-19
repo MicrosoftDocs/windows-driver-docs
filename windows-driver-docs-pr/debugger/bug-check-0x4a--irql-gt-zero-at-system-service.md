@@ -18,7 +18,7 @@ api_type:
 The IRQL\_GT\_ZERO\_AT\_SYSTEM\_SERVICE bug check has a value of 0x0000004A. This indicates that a thread is returning to user mode from a system call when its IRQL is still above PASSIVE\_LEVEL.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## IRQL\_GT\_ZERO\_AT\_SYSTEM\_SERVICE Parameters

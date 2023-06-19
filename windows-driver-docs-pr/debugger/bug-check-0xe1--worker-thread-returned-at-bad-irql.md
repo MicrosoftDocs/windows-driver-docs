@@ -18,7 +18,7 @@ api_type:
 The WORKER\_THREAD\_RETURNED\_AT\_BAD\_IRQL bug check has a value of 0x000000E1. This indicates that a worker thread completed and returned with IRQL &gt;= DISPATCH\_LEVEL.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## WORKER\_THREAD\_RETURNED\_AT\_BAD\_IRQL Parameters

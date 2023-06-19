@@ -20,7 +20,7 @@ The VIDEO\_DXGKRNL\_FATAL\_ERROR bug check has a value of 0x00000113. This indic
 This bug check appears very infrequently.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
  

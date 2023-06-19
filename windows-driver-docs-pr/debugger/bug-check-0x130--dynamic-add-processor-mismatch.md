@@ -18,7 +18,7 @@ api_type:
 The DYNAMIC\_ADD\_PROCESSOR\_MISMATCH bug check has a value of 0x00000130. This bugcheck indicates that a new processor added to the system is incompatible with the current configuration.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## DYNAMIC\_ADD\_PROCESSOR\_MISMATCH Parameters

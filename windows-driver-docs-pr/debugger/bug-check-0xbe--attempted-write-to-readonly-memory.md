@@ -18,7 +18,7 @@ api_type:
 The ATTEMPTED\_WRITE\_TO\_READONLY\_MEMORY bug check has a value of 0x000000BE. This is issued if a driver attempts to write to a read-only memory segment.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## ATTEMPTED\_WRITE\_TO\_READONLY\_MEMORY Parameters

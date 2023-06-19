@@ -29,7 +29,7 @@ FX_KEYWORD_STREAM_CLSID      = "{00000000-0000-0000-0000-000000000000}"
 HKR,"FX\\0",%PKEY_FX_KeywordDetector_StreamEffectClsid%,,%FX_KEYWORD_STREAM_CLSID%
 ```
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
 
 [Media-Class INF Extensions](media-class-inf-extensions.md)

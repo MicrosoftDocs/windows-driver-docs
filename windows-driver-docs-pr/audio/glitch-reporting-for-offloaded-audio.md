@@ -13,7 +13,7 @@ When an audio driver detects glitching errors, it must raise an Event Tracing fo
 
 The following enum shows the events that have been defined for the audio driver to use for glitch error reporting.
 
-```ManagedCPlusPlus
+```cpp
 typedef enum 
 {
     eMINIPORT_IHV_DEFINED = 0, 
@@ -30,6 +30,3 @@ typedef enum
 For more information about this enum, see [**EPcMiniportEngineEvent**](/windows-hardware/drivers/ddi/portcls/ne-portcls-epcminiportengineevent).
 
 And for more information about how to develop a driver that can handle hardware-offloaded audio streams, see [Driver Implementation Details](driver-implementation-details.md).
-
- 
-

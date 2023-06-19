@@ -22,7 +22,7 @@ The KSJACK\_DESCRIPTION structure specifies the physical attributes of an audio 
 
 ## Syntax
 
-```ManagedCPlusPlus
+```cpp
 typedef struct {
   DWORD              ChannelMapping;
   DWORD              Color;

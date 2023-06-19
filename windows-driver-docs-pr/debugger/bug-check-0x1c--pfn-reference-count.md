@@ -17,7 +17,7 @@ api_type:
 The PFN\_REFERENCE\_COUNT bug check has a value of 0x0000001C. This indicates that a reference count error was detected. It can be caused by counter overflows, underflows, or an object that is used after it has been freed. Examine the stack to determine the fault. Note: This bug check code is used to report multiple types of reference count errors, not necessarily related to Memory Manager Page Frame Numbers (PFNs).
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## PARAMETERS
 

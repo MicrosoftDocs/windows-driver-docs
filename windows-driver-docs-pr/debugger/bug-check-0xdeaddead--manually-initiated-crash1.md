@@ -17,7 +17,7 @@ api_type:
 The MANUALLY\_INITIATED\_CRASH1 bug check has a value of 0xDEADDEAD. This indicates that a manually initiated crash occurred.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## MANUALLY\_INITIATED\_CRASH1 Parameters
 

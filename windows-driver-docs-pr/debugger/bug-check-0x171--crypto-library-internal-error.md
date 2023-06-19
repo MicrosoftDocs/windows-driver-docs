@@ -17,7 +17,7 @@ api_type:
 The CRYPTO\_LIBRARY\_INTERNAL\_ERROR  bug check has a value of 0x00000171. It indicates that an internal error in the crypto libraries occurred.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 
