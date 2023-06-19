@@ -13,7 +13,6 @@ The following additional requirements apply to Windows Drivers:
 - Compliant with [DCH Design Principles](dch-principles-best-practices.md).
 - Follow the principles of [Driver Package Isolation](driver-isolation.md).
 - Follow [API Layering Requirements](api-layering.md).
-- Certified with [Windows Hardware Compatibility Program Certification Process](/windows-hardware/design/compatibility/whcp-certification-process) using the [Hardware Lab Kit](/windows-hardware/test/hlk/). WHCP Certification Process requirements apply to both KMDF and UMDF drivers.
 
 The following table summarizes the distinctions between the two classifications:
 
@@ -21,7 +20,6 @@ The following table summarizes the distinctions between the two classifications:
 | --------------------------------------------------------------------|:-------------:|:----------------------:|
 | Runs on Windows Desktop                                              | Yes           | Yes                    |
 | Runs on non-Desktop variants of Windows                              | Yes           | No                     |
-| Must be certified with WHCP                                         | Yes           | No                     |
 | WDK & HLK are primary vehicles for developing and certifying drivers| Yes           | Yes                    |
 | Adhere to stricter reliability and serviceability requirements (e.g. driver package isolation)     | Yes           | No                     |
 

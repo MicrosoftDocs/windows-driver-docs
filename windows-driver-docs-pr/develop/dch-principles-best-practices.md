@@ -6,11 +6,11 @@ ms.date: 03/18/2022
 
 # DCH Design Principles and Best Practices
 
-This page describes design principles and best practices for Windows Drivers.
+This page describes design principles and best practices for DCH-compliant driver packages.
 
 ## DCH Design Principles
 
-There are three design principles to consider for a Windows Driver to be DCH-compliant:
+There are three design principles to consider for a driver package to be DCH-compliant:
 
 - Declarative **(D)**: Install the driver by using only declarative INF directives. Don't include co-installers or RegisterDll functions.
 
@@ -46,18 +46,17 @@ To create a driver package that follows DCH design principles, follow these step
 
 *  Create an INF file for your driver:
     1.  Review the [list of INF sections and directives that are valid in Windows Driver packages](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file).
-    2.  Use the [InfVerif](../devtest/infverif.md) tool to verify that your driver package's INF file follows Declarative (D) requirements for Windows Drivers.  It should pass `infverif /w`.
+    2.  Use the [InfVerif](../devtest/infverif.md) tool to verify that your driver package's INF file follows Declarative (D) requirements for Windows Drivers.  It should pass `infverif /k`.
 *  Ensure that any optional component packages that do not contain core driver functionality are separated from the base driver package.    
 *  Hardware support applications associated with your driver package must be distributed through the Microsoft Store.
 
 ## Best practices
 
-*  If you're using the Windows Driver Kit (WDK) with the latest available Visual Studio, set the **Target Platform** value in the driver project properties to `Windows Driver`.  This automatically adds the correct libraries, and it runs the proper INF validation and ApiValidator as a part of build.  To do this:
+*  If you're using the Windows Driver Kit (WDK) with the latest available Visual Studio, set the **Target Platform** value in the driver project properties to `Universal Driver`.  This automatically adds the correct libraries, and it runs the proper INF validation and ApiValidator as a part of build.  To do this:
 
     1. Open the driver project properties.
     2. Select **Driver Settings**.
-    3. Use the drop-down menu to set **Target Platform** to `Windows Driver`.
+    3. Use the drop-down menu to set **Target Platform** to `Universal Driver`.
    
 *  If your INF performs any custom setup actions that depend on the target platform, consider separating them out into an extension INF. You can update an extension INF independently from the base driver package to make it more robust and serviceable. For more information, see [Using an extension INF file](../install/using-an-extension-inf-file.md).
 *  If you want to provide an application that works with your device, include a UWP app. For more information, see [Hardware Support App (HSA): Steps for driver developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).  An OEM can preload such an app by using [DISM - Deployment Image Servicing and Management](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows). Or, users can manually download the app from the Microsoft Store.
-*  In the [**INF DestinationDirs section**](../install/inf-destinationdirs-section.md), set the destination directories to [dirid 13](../install/using-dirids.md) to make the driver [run from the driver store](./run-from-driver-store.md). This setting won't work for some devices.
