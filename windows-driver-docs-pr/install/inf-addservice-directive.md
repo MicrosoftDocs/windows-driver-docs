@@ -89,7 +89,7 @@ Do not overwrite the delayed auto start value for the given service if this serv
 **0x00020000** (SPSVCINST_NOCLOBBER_FAILUREACTIONS) (Windows 11 version 22H2 and later versions of Windows)  
 Do not overwrite the failure actions for the given service if this service already exists in the system and has existing failure actions. See the FailureActions directive below for more information on failure actions.
 
-**0x00040000** (SPSVCINST_NOCLOBBER_BOOTFLAGS) (Windows 11 build 25381  and later versions of Windows)
+**0x00040000** (SPSVCINST_NOCLOBBER_BOOTFLAGS) (Windows 11 build 25381 and later versions of Windows)
 Do not overwrite the boot flags value for the given service if this service already exists in the system and has an existing value. See the **BootFlags** directive below for more information.
 
 *service-install-section*  
@@ -444,7 +444,7 @@ HKR,,BootFlags,0x00010003,0x14 ; CM_SERVICE_USB3_DISK_BOOT_LOAD|CM_SERVICE_USB_D
 ```
 
 > [!NOTE]
-> This syntax should be used only in Windows 11, builds older than 25381, for all others use **BootFlags** directive.
+> This syntax should be used only in Windows versions and builds older than Windows 11 build 25381; for Windows 11 build 25381 and later, use the **BootFlags** directive.
 
 ### Registering for Event Logging
 
