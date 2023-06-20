@@ -12,7 +12,7 @@ This page describes design principles and best practices for DCH-compliant drive
 
 There are three design principles to consider for a driver package to be DCH-compliant:
 
-- Declarative **(D)**: Install the driver by using only declarative INF directives. Don't include co-installers or RegisterDll functions.
+- Declarative **(D)**: Install the driver package by using only declarative INF directives. Don't include co-installers or RegisterDll functions.
 
 - Componentized **(C)**: Edition-specific, OEM-specific, and optional customizations to the driver package are separate from the base driver package. As a result, the base driver package, which provides only core device functionality, can be targeted, flighted, and serviced independently from the customizations.
 
