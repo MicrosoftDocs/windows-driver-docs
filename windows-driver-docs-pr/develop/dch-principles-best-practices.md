@@ -52,11 +52,11 @@ To create a driver package that follows DCH design principles, follow these step
 
 ## Best practices
 
-*  If you're using the Windows Driver Kit (WDK) with the latest available Visual Studio, set the **Target Platform** value in the driver project properties to `Universal Driver`.  This automatically adds the correct libraries, and it runs the proper INF validation and ApiValidator as a part of build.  To do this:
+*  If you're using the Windows Driver Kit (WDK) with the latest available Visual Studio, set the **Target Platform** value in the driver project properties to `Universal`.  This automatically adds the correct libraries, and it runs the proper INF validation and ApiValidator as a part of build.  To do this:
 
     1. Open the driver project properties.
     2. Select **Driver Settings**.
-    3. Use the drop-down menu to set **Target Platform** to `Universal Driver`.
+    3. Use the drop-down menu to set **Target Platform** to `Universal`.
    
 *  If your INF performs any custom setup actions that depend on the target platform, consider separating them out into an extension INF. You can update an extension INF independently from the base driver package to make it more robust and serviceable. For more information, see [Using an extension INF file](../install/using-an-extension-inf-file.md).
 *  If you want to provide an application that works with your device, include a UWP app. For more information, see [Hardware Support App (HSA): Steps for driver developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).  An OEM can preload such an app by using [DISM - Deployment Image Servicing and Management](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows). Or, users can manually download the app from the Microsoft Store.
