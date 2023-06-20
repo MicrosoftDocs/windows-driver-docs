@@ -82,7 +82,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | vmwflstor.sys | 400700 | VMware, Inc. |
 | TsQBDrv.sys | 400600 | Tencent Technology |
 | PolyPortFlt.sys | 400490 | PolyPort Inc |
-| Dscdriver.sys | 400300 | Dell Technologies Inc.  Gokul.Tv@dell.com |
+| Dscdriver.sys | 400300 | Dell Technologies Inc. |
 
 ## 360000 - 389999: FSFilter Activity Monitor
 
@@ -489,7 +489,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | zqFilter.sys | 382800 | magrasoft Ltd |
 | ntps_fa.sys | 382700 | DefendX Software |
 | ancfunc.sys | 382650 | Aunaki |
-| sConnect.sys | 382600 | I-O DATA DEVICE, INC> |
+| sConnect.sys | 382600 | I-O DATA DEVICE, INC |
 | AdaptivaClientCache32.sys | 382500 | Adaptiva |
 | AdaptivaclientCache64.sys | 382500 | Adaptiva |
 | phantomd.sys | 382440 | Veramine Inc |
