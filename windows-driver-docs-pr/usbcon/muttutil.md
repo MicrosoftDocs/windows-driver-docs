@@ -17,6 +17,9 @@ MuttUtil performs various tasks on [MUTT devices](microsoft-usb-test-tool--mutt-
 
 MuttUtil is embedded in the installation section of the included test scripts to ensure that the test device is properly upgraded to latest firmware. The tool is included in the [MUTT Software Package](./index.md).
 
+> [!NOTE]
+> Use CMUTTUtil.exe for CMUTT (SuperMUTT) devices. For example, run `CMuttUtil.exe -updatefirmware` to update the image on the CMUTT. CMuttUtil.exe can be installed from the MUTT software package described in [Overview of Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md). For details, see TypeCSuperMUTT.pdf in the installation folder.
+
 ## How to run MuttUtil
 
 ### MuttUtil Help
