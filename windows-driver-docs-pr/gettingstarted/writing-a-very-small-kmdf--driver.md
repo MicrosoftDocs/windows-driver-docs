@@ -229,7 +229,7 @@ Next, you'll build your driver.
 
 1. To build your driver, choose **Build Solution** from the **Build** menu. Visual Studio shows the build progress in the **Output** window. (If the **Output** window isn't visible, choose **Output** from the **View** menu.) When you've verified that the solution built successfully, you can close Visual Studio.
 
-1. To see the built driver, in File Explorer, go to your **KmdfHelloWorld** folder, and then to **C:\\KmdfHelloWorld\\x64\\Debug\KmdfHelloWorld**. The folder includes:
+1. To see the built driver, in File Explorer, go to your **KmdfHelloWorld** folder, and then to **x64\\Debug\KmdfHelloWorld**. The folder includes:
 
     - KmdfHelloWorld.sys -- the kernel-mode driver file
     - KmdfHelloWorld.inf -- an information file that Windows uses when you install the driver
