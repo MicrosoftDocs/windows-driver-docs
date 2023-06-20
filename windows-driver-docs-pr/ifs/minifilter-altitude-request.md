@@ -1,7 +1,7 @@
 ---
 title: Request a filter altitude identifier
 description: Describes how to request a file system filter altitude, report a fractional altitude, or update information associated with an identifier
-ms.date: 05/27/2021
+ms.date: 06/19/2023
 keywords:
 - filter altitude request
 - minifilter altitude request
@@ -11,14 +11,21 @@ keywords:
 
 # Request a filter altitude identifier
 
-> [!NOTE]
-> Microsoft will issue one "integer" altitude for each product type (by load order group). A company that already has a Microsoft-issued altitude can [create its own new altitude](load-order-groups-and-altitudes-for-minifilter-drivers.md#create-an-altitude) based on its Microsoft-assigned altitude to place a new filter in the same load order group.
->
-> Microsoft will consider issuing multiple integer altitudes in the same load order group on a case-by-case basis.
->
-> Previously issued altitudes will not change.
+This article describes the process to follow to request a new file system filter altitude. Some things to keep in mind when requesting a new altitude:
 
-To request a [filter altitude identifier](load-order-groups-and-altitudes-for-minifilter-drivers.md), send email in an ASCII text e-mail message to [fsfcomm@microsoft.com](mailto:fsfcomm@microsoft.com?subject=Filter%20altitude%20request) with the subject: “Filter altitude request”, and the following fields and corresponding information:
+* Microsoft issues one "integer" altitude for each product type (that is, by load order group). If you already have a Microsoft-issued altitude, you can use it to [create a new, fractional altitude](load-order-groups-and-altitudes-for-minifilter-drivers.md#create-an-altitude) to place a new filter in the same load order group.
+
+* Microsoft can consider issuing multiple integer altitudes in the same load order group on a case-by-case basis.
+
+* Previously issued altitudes don't change.
+
+* Allow Microsoft 30 business days to process and assign altitudes. There is no mechanism to request an altitude outside of the process described here, regardless of urgency.
+
+* The assigned altitude will eventually be listed in the [Allocated filter altitudes](allocated-altitudes.md) table, which is updated 1-2 times per year.
+
+* All fields in your email request must be filled out. Any missing information might delay the assignment.
+
+To request a [filter altitude identifier](load-order-groups-and-altitudes-for-minifilter-drivers.md), send email in an ASCII text e-mail message to [fsfcomm@microsoft.com](mailto:fsfcomm@microsoft.com?subject=Filter%20altitude%20request) with the subject: “Filter altitude request”, and the following fields and corresponding information in the message.
 
 | Field | Comment |
 | ----- | ------- |
@@ -59,11 +66,3 @@ Thanks,
 
 FilterDev
 ```
-
-> [!NOTE]
->
-> * All fields must be filled out. Any missing information might delay the assignment.
->
-> * Allow Microsoft 30 business days to process and assign altitudes.
->
-> * The assigned altitude will eventually be listed in the [Allocated filter altitudes](allocated-altitudes.md) table, which is updated 1-2 times per year.
