@@ -45,7 +45,7 @@ The OEM validates only the optional customizations that it provides for the OEM 
 To create a driver package that follows DCH design principles, follow these steps:
 
 *  Create an INF file for your driver package:
-    1.  Review the [list of INF sections and directives that are valid in Windows Driver packages](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file).
+    1.  Review the [list of INF sections and directives that are valid in Universal driver packages](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file).
     2.  Use the [InfVerif](../devtest/infverif.md) tool to verify that your driver package's INF file follows Declarative (D) requirements.  It should pass `infverif /k`.
 *  Ensure that any optional component packages that do not contain core driver functionality are separated from the base driver package.    
 *  Hardware support applications associated with your driver package must be distributed through the Microsoft Store.
