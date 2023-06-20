@@ -34,7 +34,7 @@ DCH-compliant driver packages consist of the following parts:
 
 The base driver package contains all the core functionality and shared code. The optional component packages can contain customizations and additional settings.
 
-Typically, a device manufacturer, or independent hardware vendor (IHV), writes the base driver. Then, a system builder, or original equipment manufacturer (OEM), provides any optional component packages.
+Typically, a device manufacturer, or independent hardware vendor (IHV), writes the base driver package. Then, a system builder, or original equipment manufacturer (OEM), provides any optional component packages.
 
 After an IHV has certified the base driver package, it can be deployed on all OEM systems. Because a base driver package can be used across all systems that share a hardware part, Microsoft can test the base driver package broadly via Windows Insider flighting, rather than limiting distribution to specific machines.
 
