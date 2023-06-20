@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Windows Drivers
 description: Windows Drivers allow you to create one driver that will run on all Windows variants.
-ms.date: 05/16/2022
+ms.date: 06/20/2023
 ---
 
 # Getting Started with 'Windows Drivers'

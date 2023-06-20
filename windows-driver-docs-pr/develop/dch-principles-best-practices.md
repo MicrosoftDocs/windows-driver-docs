@@ -1,7 +1,7 @@
 ---
 title: DCH Design Principles and Best Practices
-description: Describes DCH principles for Windows drivers.
-ms.date: 03/18/2022
+description: Describes DCH principles and best practices, including Declarative, Componentized, and Hardware Support App concepts.
+ms.date: 06/20/2023
 ---
 
 # DCH Design Principles and Best Practices
