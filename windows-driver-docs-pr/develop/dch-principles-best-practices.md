@@ -14,9 +14,9 @@ There are three design principles to consider for a driver package to be DCH-com
 
 - Declarative **(D)**: Install the driver by using only declarative INF directives. Don't include co-installers or RegisterDll functions.
 
-- Componentized **(C)**: Edition-specific, OEM-specific, and optional customizations to the driver are separate from the base driver package. As a result, the base driver, which provides only core device functionality, can be targeted, flighted, and serviced independently from the customizations.
+- Componentized **(C)**: Edition-specific, OEM-specific, and optional customizations to the driver package are separate from the base driver package. As a result, the base driver package, which provides only core device functionality, can be targeted, flighted, and serviced independently from the customizations.
 
-- Hardware Support App **(H)**: Any user interface (UI) component associated with a Windows Driver must be packaged as a Hardware Support App (HSA) or preinstalled on the OEM device. An HSA is an optional device-specific app that's paired with a driver. The application can be a [Universal Windows Platform (UWP)](/windows/uwp/get-started/universal-application-platform-guide) or [Desktop Bridge app](/windows/uwp/porting/desktop-to-uwp-root). You must distribute and update an HSA through the Microsoft Store. For details, see [Hardware Support App (HSA): Steps for driver developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md) and [Hardware Support App (HSA): Steps for app developers](../devapps/hardware-support-app--hsa--steps-for-app-developers.md).
+- Hardware Support App **(H)**: Any user interface (UI) component associated with a driver package must be packaged as a Hardware Support App (HSA) or preinstalled on the OEM device. An HSA is an optional device-specific app that's paired with a driver package. The application can be a [Universal Windows Platform (UWP)](/windows/uwp/get-started/universal-application-platform-guide) or [Desktop Bridge app](/windows/uwp/porting/desktop-to-uwp-root). You must distribute and update an HSA through the Microsoft Store. For details, see [Hardware Support App (HSA): Steps for driver developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md) and [Hardware Support App (HSA): Steps for app developers](../devapps/hardware-support-app--hsa--steps-for-app-developers.md).
 
 The acronym "DCH" refers to the principles listed above. Please refer to the [DCH-Compliant Driver Package Example](dch-example.md) page to see how a driver sample can apply DCH design principles.
 
@@ -26,13 +26,13 @@ Driver packages that are DCH-compliant contain an INF file and binaries that ins
 
 DCH-compliant driver binaries can use [KMDF](../wdf/index.md), [UMDF 2](../wdf/getting-started-with-umdf-version-2.md), or the Windows Driver Model (WDM).
 
-DCH-compliant drivers consist of the following parts:
+DCH-compliant driver packages consist of the following parts:
 
-- A base driver
+- A base driver package
 - Optional component packages
 - An optional hardware support app
 
-The base driver contains all the core functionality and shared code. The optional component packages can contain customizations and additional settings.
+The base driver package contains all the core functionality and shared code. The optional component packages can contain customizations and additional settings.
 
 Typically, a device manufacturer, or independent hardware vendor (IHV), writes the base driver. Then, a system builder, or original equipment manufacturer (OEM), provides any optional component packages.
 
@@ -59,4 +59,4 @@ To create a driver package that follows DCH design principles, follow these step
     3. Use the drop-down menu to set **Target Platform** to `Universal`.
    
 *  If your INF performs any custom setup actions that depend on the target platform, consider separating them out into an extension INF. You can update an extension INF independently from the base driver package to make it more robust and serviceable. For more information, see [Using an extension INF file](../install/using-an-extension-inf-file.md).
-*  If you want to provide an application that works with your device, include a UWP app. For more information, see [Hardware Support App (HSA): Steps for driver developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).  An OEM can preload such an app by using [DISM - Deployment Image Servicing and Management](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows). Or, users can manually download the app from the Microsoft Store.
+*  If you want to provide an application that works with your device, include a Hardware Support App. For more information, see [Hardware Support App (HSA): Steps for driver developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).  An OEM can preload such an app by using [DISM - Deployment Image Servicing and Management](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows). Or, users can manually download the app from the Microsoft Store.
