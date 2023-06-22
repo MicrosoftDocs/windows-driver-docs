@@ -58,12 +58,12 @@ Signature="$WINDOWS NT$"
 Class=Image
 ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
 Provider=%Mfg%
-DriverVer=06/26/2001,1.0
+DriverVer=06/26/2001,1.0.0.0
 CatalogFile=wia.cat
 PnpLockdown=1
 
 [DestinationDirs]
-DefaultDestDir=11
+DefaultDestDir=13
 
 [Manufacturer]
 %Mfg%=Models,NTx86
@@ -100,7 +100,7 @@ HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C6}\InProcServer32,,,%11%\hellowld
 HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C6}\InProcServer32,ThreadingModel,,Both
 
 HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C7},,,"Hello World WIA Minidriver UI Extension"
-HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C7}\InProcServer32,,,%11%\hellowldui.dll
+HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C7}\InProcServer32,,,%%SystemRoot%%\hellowldui.dll
 HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C7}\InProcServer32,ThreadingModel,,Both
 HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C7}\shellex\WiaDialogExtensionHandlers\{7C1E2309-A535-45b1-94B3-9A020EE600C7}
 
@@ -113,13 +113,6 @@ hellowld.dll=1
 hellowldui.dll=1
 
 [SourceDisksNames.x86]
-1=%Location%,,,
-
-[SourceDisksFiles.IA64]
-hellowld.dll=1
-hellowldui.dll=1
-
-[SourceDisksNames.IA64]
 1=%Location%,,,
 
 [Strings]
