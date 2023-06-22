@@ -22,12 +22,12 @@ Signature=$WINDOWS NT$
 Class=Image
 ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
 Provider=%Mfg%
-DriverVer=06/26/2001,1.0
+DriverVer=06/26/2001,1.0.0.0
 CatalogFile=wia.cat
 PnpLockdown=1
 
 [DestinationDirs]
-DefaultDestDir=11
+DefaultDestDir=13
 
 [Manufacturer]
 %Mfg%=Models,NTamd64
@@ -60,7 +60,7 @@ UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
 HKR,,HardwareConfig,1,1
 HKR,,USDClass,,"{7C1E2309-A535-45b1-94B3-9A020EE600C6}"
 HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C6},,,"Hello World WIA Minidriver"
-HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C6}\InProcServer32,,,%11%\hellowld.dll
+HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C6}\InProcServer32,,,%%SystemRoot%%\hellowld.dll
 HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C6}\InProcServer32,ThreadingModel,,Both
 
 [WIADevice.CopyFiles]
@@ -69,11 +69,6 @@ hellowld.dll
 [SourceDisksFiles.x86]
 hellowld.dll=1
 [SourceDisksNames.x86]
-1=%Location%,,,
-
-[SourceDisksFiles.IA64]
-hellowld.dll=1
-[SourceDisksNames.IA64]
 1=%Location%,,,
 
 [Strings]
