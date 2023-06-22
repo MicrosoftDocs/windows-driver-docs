@@ -65,7 +65,9 @@ If the driver responsible for the error can be identified, its name is printed o
 This driver failed to cancel lookaside lists, DPCs, worker threads, or other such items before unload.
 
  
+## Resolution
 
+The [!analyze](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
 
 
