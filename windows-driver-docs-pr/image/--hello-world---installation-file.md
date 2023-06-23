@@ -1,7 +1,7 @@
 ---
 title: Hello World installation file
 description: Hello World installation file
-ms.date: 05/05/2023
+ms.date: 06/23/2023
 ---
 
 # Hello World installation file
@@ -60,15 +60,15 @@ UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
 HKR,,HardwareConfig,1,1
 HKR,,USDClass,,"{7C1E2309-A535-45b1-94B3-9A020EE600C6}"
 HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C6},,,"Hello World WIA Minidriver"
-HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C6}\InProcServer32,,,%%SystemRoot%%\hellowld.dll
+HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C6}\InProcServer32,,,%13%\hellowld.dll
 HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C6}\InProcServer32,ThreadingModel,,Both
 
 [WIADevice.CopyFiles]
 hellowld.dll
 
-[SourceDisksFiles.x86]
+[SourceDisksFiles.amd64]
 hellowld.dll=1
-[SourceDisksNames.x86]
+[SourceDisksNames.amd64]
 1=%Location%,,,
 
 [Strings]
