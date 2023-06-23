@@ -108,11 +108,11 @@ HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C7}\shellex\WiaDialogExtensionHand
 hellowld.dll
 hellowldui.dll
 
-[SourceDisksFiles.amd64]
+[SourceDisksFiles.x86]
 hellowld.dll=1
 hellowldui.dll=1
 
-[SourceDisksNames.amd64]
+[SourceDisksNames.x86]
 1=%Location%,,,
 
 [Strings]
