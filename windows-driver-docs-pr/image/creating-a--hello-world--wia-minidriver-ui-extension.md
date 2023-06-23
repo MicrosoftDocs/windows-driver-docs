@@ -1,7 +1,7 @@
 ---
 title: Creating a "Hello World" WIA Minidriver UI Extension
 description: Creating a "Hello World" WIA Minidriver UI Extension
-ms.date: 05/08/2023
+ms.date: 06/23/2023
 ---
 
 # Creating a "Hello World" WIA Minidriver UI Extension
@@ -96,11 +96,11 @@ UI Class ID={7C1E2309-A535-45b1-94B3-9A020EE600C7}
 HKR,,HardwareConfig,1,1
 HKR,,USDClass,,"{7C1E2309-A535-45b1-94B3-9A020EE600C6}"
 HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C6},,,"Hello World WIA Minidriver"
-HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C6}\InProcServer32,,,%11%\hellowld.dll
+HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C6}\InProcServer32,,,%13%\hellowld.dll
 HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C6}\InProcServer32,ThreadingModel,,Both
 
 HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C7},,,"Hello World WIA Minidriver UI Extension"
-HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C7}\InProcServer32,,,%%SystemRoot%%\hellowldui.dll
+HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C7}\InProcServer32,,,%13%\hellowldui.dll
 HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C7}\InProcServer32,ThreadingModel,,Both
 HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C7}\shellex\WiaDialogExtensionHandlers\{7C1E2309-A535-45b1-94B3-9A020EE600C7}
 
@@ -108,11 +108,11 @@ HKCR,CLSID\{7C1E2309-A535-45b1-94B3-9A020EE600C7}\shellex\WiaDialogExtensionHand
 hellowld.dll
 hellowldui.dll
 
-[SourceDisksFiles.x86]
+[SourceDisksFiles.amd64]
 hellowld.dll=1
 hellowldui.dll=1
 
-[SourceDisksNames.x86]
+[SourceDisksNames.amd64]
 1=%Location%,,,
 
 [Strings]
