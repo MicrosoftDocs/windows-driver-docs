@@ -33,12 +33,6 @@ YourWIADriver.dll=1
 [SourceDisksNames.x86]
 1=%Location%,,,
 
-[SourceDisksFiles.ia64]
-YourWIADriver.dll=1
-
-[SourceDisksNames.ia64]
-1=%Location%,,,
-
 [SourceDisksFiles.amd64]
 YourWIADriver.dll=1
 
@@ -46,10 +40,10 @@ YourWIADriver.dll=1
 1=%Location%,,,
 
 [DestinationDirs]
-DefaultDestDir = 11
+DefaultDestDir = 13
 
 [Manufacturer]
-%Mfg%=Models,NTx86,NTamd64,NTia64
+%Mfg%=Models,NTx86,NTamd64
 
 ;
 ; Replace UMB\PnPX_YourDevice_HardwareID in the three Models
@@ -63,9 +57,6 @@ DefaultDestDir = 11
 %WSDScanDriver.DeviceDesc% = WSDScanDriver.Device, UMB\PnPX_YourDevice_HardwareID
 
 [Models.NTamd64]
-%WSDScanDriver.DeviceDesc% = WSDScanDriver.Device, UMB\PnPX_YourDevice_HardwareID
-
-[Models.NTia64]
 %WSDScanDriver.DeviceDesc% = WSDScanDriver.Device, UMB\PnPX_YourDevice_HardwareID
 
 [WSDScanDriver.Device]
@@ -82,7 +73,7 @@ CopyFiles=WSDScanDriver.CopyFiles
 ICMProfiles="sRGB Color Space Profile.icm"
 
 [WSDScanDriver.CopyFiles]
-MyWIADriver.dll
+YourWIADriver.dll
 
 ;
 ; Do not forget to replace 00000000-0000-0000-0000-000000000000
@@ -92,11 +83,9 @@ MyWIADriver.dll
 
 [WSDScanDriver.AddReg]
 HKR,,HardwareConfig,1,1 ; generic WDM device
-HKR,,USDClass,,"{00000000-0000-0000-0000-000000000000}"
-; the GUID for the WIA mini-driver
-HKCR,CLSID\{00000000-0000-0000-0000-000000000000},,,"<Description
-of your Web Services scanner WIA device>"
-HKCR,CLSID\{00000000-0000-0000-0000-000000000000}\InProcServer32,,,%11%\YourWIADriver.dll
+HKR,,USDClass,,"{00000000-0000-0000-0000-000000000000}"; the GUID for the WIA mini-driver
+HKCR,CLSID\{00000000-0000-0000-0000-000000000000},,,"<Description of your Web Services scanner WIA device>"
+HKCR,CLSID\{00000000-0000-0000-0000-000000000000}\InProcServer32,,,%13%\YourWIADriver.dll
 HKCR,CLSID\{00000000-0000-0000-0000-000000000000}\InProcServer32,ThreadingModel,,"Both"
 
 [WSDScanDriver.DeviceData]
