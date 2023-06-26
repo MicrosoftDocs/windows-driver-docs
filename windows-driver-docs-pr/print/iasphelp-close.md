@@ -2,8 +2,8 @@
 title: Iasphelp Close method
 description: The Close method enables an ASP Web page to close access to a printer.
 MS-HAID:
-- 'webfnc\_62b91ac5-2f01-44d6-9289-ee2136acacc4.xml'
-- 'print.iasphelp\_close'
+- 'webfnc_62b91ac5-2f01-44d6-9289-ee2136acacc4.xml'
+- 'print.iasphelp_close'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -15,11 +15,10 @@ api_name:
 - Iasphelp.Close
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/23/2023
 ---
 
 # Iasphelp::Close method
-
 
 The **Close** method enables an ASP Web page to close access to a printer.
 
@@ -35,8 +34,7 @@ This method has no parameters.
 
 ## Return value
 
-The return value is always S\_OK.
-
+The return value is always S_OK.
 
 ## VBScript Example
 
@@ -53,18 +51,7 @@ objPrinter.Close
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
 
 ## See also
 

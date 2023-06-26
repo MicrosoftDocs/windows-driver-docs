@@ -1,7 +1,7 @@
 ---
 title: Driver Support for Protected Printing
 description: Windows 8.1 includes support for protected printing, which allows users to specify a personal identification number (PIN) that is then used at the printer, prior to the job being printed out.
-ms.date: 01/25/2023
+ms.date: 06/22/2023
 ---
 
 # Driver Support for Protected Printing
@@ -49,85 +49,19 @@ You indicate support for protected printing in the DataFile for your v4 print dr
 
 If your driver uses a GPD file, add the following new keywords using this syntax:
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Keyword</th>
-<th>Description</th>
-<th>Level</th>
-<th>Allowed value</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong><em>JobPasscodeMinLength</strong></td>
-<td><p>Minimum length of the supported PIN numeric string.</p>
-<p>This value must be at least 4 and no greater than 15.</p></td>
-<td>Root</td>
-<td>Any <a href="numeric-values.md" data-raw-source="[GPD numeric value](numeric-values.md)">GPD numeric value</a></td>
-<td></em>JobPasscodeMinLength: 4</td>
-</tr>
-<tr class="even">
-<td><strong><em>JobPasscodeMaxLength</strong></td>
-<td><p>Maximum length of the supported PIN numeric string.</p>
-<p>This value must be at least 4 and no greater than 15. It must be greater than or equal to the <strong></em>JobPasscodeMinLength</strong> value.</p></td>
-<td>Root</td>
-<td>Any <a href="numeric-values.md" data-raw-source="[GPD numeric value](numeric-values.md)">GPD numeric value</a></td>
-<td>*JobPasscodeMaxLength: 9</td>
-</tr>
-</tbody>
-</table>
+| Keyword | Description | Level | Allowed value | Example |
+|--|--|--|--|--|
+| **\*JobPasscodeMinLength** | Minimum length of the supported PIN numeric string.<br><br>This value must be at least 4 and no greater than 15. | Root | Any [GPD numeric value](numeric-values.md) | \*JobPasscodeMinLength: 4 |
+| **\*JobPasscodeMaxLength** | Maximum length of the supported PIN numeric string.<br><br>This value must be at least 4 and no greater than 15. It must be greater than or equal to the **\*JobPasscodeMinLength** value. | Root | Any [GPD numeric value](numeric-values.md) | \*JobPasscodeMaxLength: 9 |
 
 ## What to add to a PPD file
 
 If your driver uses a PPD file, add the following new keywords using this syntax:
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Keyword</th>
-<th>Description</th>
-<th>Level</th>
-<th>Allowed value</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong><em>MSJobPasscodeMinLength</strong></td>
-<td><p>Minimum length of the supported PIN numeric string.</p>
-<p>This value must be at least 4 and no greater than 15.</p></td>
-<td>Root</td>
-<td><p>"int" (QuotedValue)</p>
-<p>In other words, the integer value must be expressed in quotation marks.</p></td>
-<td></em>MSJobPasscodeMinLength: "4"</td>
-</tr>
-<tr class="even">
-<td><strong><em>MSJobPasscodeMaxLength</strong></td>
-<td><p>Maximum length of the supported PIN numeric string.</p>
-<p>This value must be at least 4 and no greater than 15. It must be greater than or equal to the <b>MSJobPasscodeMinLength</b> value.</p></td>
-<td>Root</td>
-<td><p>"int" (QuotedValue)</p>
-<p>In other words, the integer value must be expressed in quotation marks.</p></td>
-<td>*MSJobPasscodeMaxLength: "9"</td>
-</tr>
-</tbody>
-</table>
+| Keyword | Description | Level | Allowed value | Example |
+|--|--|--|--|--|
+| **MSJobPasscodeMinLength** | Minimum length of the supported PIN numeric string.<br><br>This value must be at least 4 and no greater than 15. | Root | "int" (QuotedValue)<br><br>In other words, the integer value must be expressed in quotation marks. | \*MSJobPasscodeMinLength: "4" |
+| **MSJobPasscodeMaxLength** | Maximum length of the supported PIN numeric string.<br><br>This value must be at least 4 and no greater than 15. It must be greater than or equal to the **\*MSJobPasscodeMinLength** value. | Root | "int" (QuotedValue)<br><br>In other words, the integer value must be expressed in quotation marks. | \*MSJobPasscodeMaxLength: "9" |
 
 ### Specifying hardware constraints
 

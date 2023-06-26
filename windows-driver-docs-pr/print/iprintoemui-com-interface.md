@@ -76,7 +76,7 @@ The following table lists and describes all the methods that the `IPrintOemUI` i
 </tr>
 <tr class="odd">
 <td><p><a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-updateexternalfonts" data-raw-source="[&lt;strong&gt;IPrintOemUI::UpdateExternalFonts&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-updateexternalfonts)"><strong>IPrintOemUI::UpdateExternalFonts</strong></a></p></td>
-<td><p>Enables a printer interface DLL to update a printer's <a href="customized-font-management.md#ddk-unidrv-font-format-files-gg" data-raw-source="[Unidrv font format files](customized-font-management.md#ddk-unidrv-font-format-files-gg)">Unidrv font format files</a>.</p></td>
+<td><p>Enables a printer interface DLL to update a printer's <a href="customized-font-management.md#unidrv-font-format-files">Unidrv font format files</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-upgradeprinter" data-raw-source="[&lt;strong&gt;IPrintOemUI::UpgradePrinter&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-upgradeprinter)"><strong>IPrintOemUI::UpgradePrinter</strong></a></p></td>
