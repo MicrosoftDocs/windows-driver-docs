@@ -140,5 +140,3 @@ The following ACX objects are used to store circuit, stream and circuit factory 
 [ACX audio class extensions overview](acx-audio-class-extensions-overview.md)
 
 [ACX reference documentation](acx-reference.md)
-
-[ACX multi stack cross driver communications](acx-multi-stack.md)

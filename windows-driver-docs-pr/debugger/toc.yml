@@ -1365,6 +1365,8 @@
         href: processor-breakpoints---ba-breakpoints-.md
       - name: "Initial Breakpoint"
         href: initial-breakpoint.md
+      - name: "Ambiguous Breakpoint Resolution"
+        href: ambiguous-breakpoint-resolution.md
       - name: "User Space and System Space"
         href: user-space-and-system-space.md
       - name: "Risks Entailed When Setting Breakpoints"
