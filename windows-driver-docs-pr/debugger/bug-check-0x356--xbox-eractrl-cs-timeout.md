@@ -15,7 +15,7 @@ api_type:
 # Bug Check 0x356: XBOX\_ERACTRL\_CS\_TIMEOUT
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 The XBOX_ERACTRL_CS_TIMEOUT  bug check has a value of 0x00000356. 

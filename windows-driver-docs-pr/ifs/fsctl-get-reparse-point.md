@@ -40,7 +40,7 @@ For more information about reparse points and the FSCTL_GET_REPARSE_POINT contro
 
   | Structure | OutputBufferLength |
   | --------- | ------------------ |
-  | **REPARSE_GUID_DATA_BUFFER** | Must be at least REPARSE_GUID_DATA_BUFFER plus the size of the expected user-defined data; and must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE. |
+  | **REPARSE_GUID_DATA_BUFFER** | Must be at least REPARSE_GUID_DATA_BUFFER_HEADER_SIZE plus the size of the expected user-defined data; and must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE. |
   | **REPARSE_DATA_BUFFER**      | Must be at least REPARSE_DATA_BUFFER_HEADER_SIZE plus the size of the expected user-defined data; and must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE. |
 
 ## Status block
@@ -49,8 +49,8 @@ For more information about reparse points and the FSCTL_GET_REPARSE_POINT contro
 
 | Code | Meaning |
 | ---- | ------- |
-| STATUS_BUFFER_OVERFLOW | The buffer that the **OutputBuffer** parameter points to is large enough to hold the fixed portion of the REPARSE_GUID_DATA_BUFFER or REPARSE_DATA_BUFFER structure but not the user-defined data. In this case, only the fixed portion of the reparse point data is returned in the **OutputBuffer** buffer. The **LengthReturned** parameter to [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) receives the actual length, in bytes, of data returned. This is a warning code. |
-| STATUS_BUFFER_TOO_SMALL | The buffer that the **OutputBuffer** parameter points to is not large enough to hold the reparse point data. The **LengthReturned** parameter to [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) (or the **Information** member of the **IoStatus** parameter to [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))) receives the required buffer size. In this case, no reparse point data is returned. This is an error code. |
+| STATUS_BUFFER_OVERFLOW | The buffer that the **OutputBuffer** parameter points to is large enough to hold the fixed portion of the REPARSE_GUID_DATA_BUFFER or REPARSE_DATA_BUFFER structure but not the user-defined data. In this case, only **OutputBufferLength** bytes are returned in the **OutputBuffer** buffer. The **LengthReturned** parameter to [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) receives the actual length, in bytes, of data returned. This is a warning code. |
+| STATUS_BUFFER_TOO_SMALL | The buffer that **OutputBuffer** points to is less than ```sizeof(REPARSE_GUID_DATA_BUFFER)``` and is not large enough to hold the reparse point data. The **LengthReturned** parameter to [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) (or the **Information** member of the **IoStatus** parameter to [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))) receives the required buffer size. In this case, no reparse point data is returned. This is an error code. |
 | STATUS_IO_REPARSE_DATA_INVALID | One of the specified parameter values was invalid. This is an error code. |
 | STATUS_NOT_A_REPARSE_POINT | The file or directory is not a reparse point. This is an error code. |
 

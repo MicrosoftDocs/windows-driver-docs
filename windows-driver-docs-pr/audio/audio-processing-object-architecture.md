@@ -124,5 +124,6 @@ This diagram illustrates a DSP equipped system that implements effects in hardwa
 
 ![diagram that shows a dsp equipped system that implements effects in hardware.](images/audio-apo-dsp-equipped-system-with-hardware-effects-3.png)
 
-## <span id="related_topics"></span>Related topics
+## Related topics
+
 [Windows Audio Processing Objects](windows-audio-processing-objects.md)

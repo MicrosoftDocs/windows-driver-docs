@@ -24,7 +24,7 @@ For more information about audio modules, see [Implementing Audio Module Discove
 
 ## Syntax
 
-```ManagedCPlusPlus
+```cpp
 typedef enum  { 
   KSPROPERTY_AUDIOMODULE_DESCRIPTORS             = 1,
   KSPROPERTY_AUDIOMODULE_COMMAND                 = 2,

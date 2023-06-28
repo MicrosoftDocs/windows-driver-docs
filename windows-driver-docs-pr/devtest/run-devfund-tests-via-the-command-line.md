@@ -45,11 +45,11 @@ Add this directory to the system PATH environment variable and restart the eleva
 **Step 3** : Install [WDTF](../wdtf/index.md) by navigating to the location of the WDTF MSI (```%PROGRAMFILES(X86)%\Windows Kits\10\Testing\Runtimes\```) and installing the package for the desired architecture. Specify a location and name for the installation log file, **%USERPROFILE%\Desktop\WDTFInstall.log** in this example:
 
  
-``` 
+```console
 cd %PROGRAMFILES(X86)%\Windows Kits\10\Testing\Runtimes\
 ```
 
-```
+```console
 msiexec /i "Windows Driver Testing Framework (WDTF) Runtime Libraries-x64\_en-us.msi" /l\* "%USERPROFILE%\Desktop\WDTFInstall.log"
 ```
 

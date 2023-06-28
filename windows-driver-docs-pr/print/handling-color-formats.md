@@ -1,6 +1,6 @@
 ---
-title: Handling Color Formats
-description: Handling Color Formats
+title: Handling color formats
+description: Handling color formats
 keywords:
 - Unidrv, color formats
 - color formats WDK Unidrv
@@ -8,53 +8,23 @@ keywords:
 - printer color formats WDK Unidrv
 - color management WDK print , formats
 - Unidrv WDK print
-ms.date: 01/27/2023
+ms.date: 06/22/2023
 ---
 
-# Handling Color Formats
+# Handling color formats
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
 Each color format that a printer supports is specified as an option to the ColorMode feature. By using [option attributes for the ColorMode feature](option-attributes-for-the-colormode-feature.md), you can describe each color format that your printer accepts. The following table illustrates the color data formats that Unidrv can handle.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Number of Color Planes</th>
-<th>Number of Bits per Pixel</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>in Device (<em>DevNumOfPlanes)</td>
-<td>in Device (</em>DevBPP)</td>
-</tr>
-<tr class="even">
-<td><p>1</p></td>
-<td><p>1 (Black and white)</p></td>
-</tr>
-<tr class="odd">
-<td><p>1</p></td>
-<td><p>8</p></td>
-</tr>
-<tr class="even">
-<td><p>1</p></td>
-<td><p>24</p></td>
-</tr>
-<tr class="odd">
-<td><p>3</p></td>
-<td><p>1 (CMY and RGB)</p></td>
-</tr>
-<tr class="even">
-<td><p>4</p></td>
-<td><p>1 (<a href="/windows-hardware/drivers/#wdkgloss-cmyk" data-raw-source="&lt;em&gt;CMYK&lt;/em&gt;"><em>CMYK</em></a>)</p></td>
-</tr>
-</tbody>
-</table>
+| Number of color planes | Number of bits per pixel |
+|--|--|
+| in Device (\*DevNumOfPlanes) | in Device (\*DevBPP) |
+| 1 | 1 (Black and white) |
+| 1 | 8 |
+| 1 | 24 |
+| 3 | 1 (CMY and RGB) |
+| 4 | 1 (CMYK) |
 
 For these formats, Unidrv can convert *device-independent bitmap (DIB)* data into the proper format and send it to the printer. (Halftoning operations that can be performed on this data are described in [Halftoning with Unidrv](halftoning-with-unidrv.md).)
 
@@ -74,7 +44,7 @@ The [**IPrintOemUni ImageProcessing**](/windows-hardware/drivers/ddi/prcomoem/nf
 
 For more information about providing an [**IPrintOemUni ImageProcessing**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) function, see [Customized Color Formats](customized-color-formats.md).
 
-### Rendering High Quality Images
+## Rendering High Quality Images
 
 For each color format, you specify both the bits per pixel that the printer hardware accepts and the bits per pixel you want Unidrv to use when creating DIBs. These values are specified with the \*DevBPP and \*DrvBPP attributes, respectively. Sometimes, it is desirable for images to be rendered as bitmaps having a higher number of bits per pixel than the printer can handle (in order, for example, to attempt reproducing high-quality photographs). Therefore, it is allowable to specify a \***DrvBPP** value that is larger than the result of multiplying the \***DevBPP** value by the \*DevNumOfPlanes value.
 

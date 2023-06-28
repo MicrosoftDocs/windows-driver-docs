@@ -2,27 +2,26 @@
 title: Methods of Controlling Breakpoints
 description: Methods of Controlling Breakpoints
 keywords: ["breakpoints, controlling"]
-ms.date: 05/23/2017
+ms.date: 06/26/2023
 ---
 
 # Methods of Controlling Breakpoints
-
 
 You can specify the location of a breakpoint by virtual address, module and routine offsets, or source file and line number (when in source mode). If you put a breakpoint on a routine without an offset, the breakpoint is activated when that routine is entered.
 
 There are several additional kinds of breakpoints:
 
--   A breakpoint can be associated with a certain thread.
+- A breakpoint can be associated with a certain thread.
 
--   A breakpoint can enable a fixed number of passes through an address before it is triggered.
+- A breakpoint can enable a fixed number of passes through an address before it is triggered.
 
--   A breakpoint can automatically issue certain commands when it is triggered.
+- A breakpoint can automatically issue certain commands when it is triggered.
 
--   A breakpoint can be set on non-executable memory and watch for that location to be read or written to.
+- A breakpoint can be set on non-executable memory and watch for that location to be read or written to.
 
 If you are debugging more than one process in user mode, the collection of breakpoints depends on the current process. To view or change a process' breakpoints, you must select the process as the current process. For more information about the current process, see [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
-### <span id="methods_of_controlling_and_displaying_breakpoints"></span><span id="METHODS_OF_CONTROLLING_AND_DISPLAYING_BREAKPOINTS"></span>Debugger Commands for Controlling and Displaying Breakpoints
+### Debugger Commands for Controlling and Displaying Breakpoints
 
 To control or display breakpoints, you can use the following methods:
 
@@ -54,7 +53,7 @@ In WinDbg, there are several user interface elements that facilitate controlling
 
 Each breakpoint has a decimal number called the breakpoint ID associated with it. This number identifies the breakpoint in various commands.
 
-### <span id="breakpoint_commands"></span><span id="BREAKPOINT_COMMANDS"></span>Breakpoint Commands
+### Breakpoint Commands
 
 You can include a command in a breakpoint that is automatically executed when the breakpoint is hit. For example, the following command breaks at MyFunction+0x47, writes a dump file, and then resumes execution.
 
@@ -64,23 +63,26 @@ You can include a command in a breakpoint that is automatically executed when th
 
 **Note**  If you are controlling the user-mode debugger from the kernel debugger, do not use [**g (Go)**](g--go-.md) in the breakpoint command string. The serial interface might be unable to keep up with this command, and you will be unable to break back into CDB. For more information about this situation, see [Controlling the User-Mode Debugger from the Kernel Debugger](controlling-the-user-mode-debugger-from-the-kernel-debugger.md).
 
- 
-
-### <span id="number_of_breakpoints"></span><span id="NUMBER_OF_BREAKPOINTS"></span>Number of Breakpoints
+### Number of Breakpoints
 
 In kernel mode, you can use a maximum of 32 software breakpoints. In user mode, you can use any number of software breakpoints.
 
 The number of processor breakpoints that are supported depends on the target processor architecture.
 
-### <span id="conditional_breakpoints"></span><span id="CONDITIONAL_BREAKPOINTS"></span>Conditional Breakpoints
+### Conditional Breakpoints
 
 You can set a breakpoint that is triggered only under certain conditions. For more information about these kinds of breakpoints, see [Setting a Conditional Breakpoint](setting-a-conditional-breakpoint.md).
 
- 
+### Ambiguous Breakpoints
 
- 
+In version 10.0.25310.1001 and later of the debugger engine, ambiguous breakpoint resolution is now supported. Ambiguous breakpoints allow for the debugger to set breakpoints in certain scenarios where a breakpoint expression resolves to multiple locations. For more information, see [Ambiguous breakpoint resolution](ambiguous-breakpoint-resolution.md).
 
+## See also
 
+[Using Breakpoints](using-breakpoints.md)
 
+[Breakpoint Syntax](breakpoint-syntax.md)
 
+[bp, bu, bm (Set Breakpoint)](bp--bu--bm--set-breakpoint-.md)
 
+[Unresolved Breakpoints (bu Breakpoints)](unresolved-breakpoints---bu-breakpoints-.md)

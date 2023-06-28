@@ -18,7 +18,7 @@ api_type:
 The DRIVER\_UNLOADED\_WITHOUT\_CANCELLING\_PENDING\_OPERATIONS bug check has a value of 0x000000CE. This indicates that a driver failed to cancel pending operations before unloading.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## DRIVER\_UNLOADED\_WITHOUT\_CANCELLING\_PENDING\_OPERATIONS Parameters
@@ -65,7 +65,9 @@ If the driver responsible for the error can be identified, its name is printed o
 This driver failed to cancel lookaside lists, DPCs, worker threads, or other such items before unload.
 
  
+## Resolution
 
+The [!analyze](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
  
 
 

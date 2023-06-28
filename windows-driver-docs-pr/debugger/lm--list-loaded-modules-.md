@@ -2,7 +2,7 @@
 title: lm (List Loaded Modules)
 description: The lm command displays the specified loaded modules. The output includes the status and the path of the module.
 keywords: ["lm (List Loaded Modules) Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/16/2023
 topic_type:
 - apiref
 ms.topic: reference
@@ -110,13 +110,13 @@ Specifies a pattern that the image path must match. Pattern can contain a variet
 </tbody>
 </table>
 
- 
-
 ## Remarks
 
 The **lm** command lists all of the modules and the status of symbols for each module.
 
-Microsoft Windows Server 2003 and later versions of Windows maintain an unloaded module list for user-mode processes. When you are debugging a user-mode process or dump file, the **lm** command also shows these unloaded modules.
+Windows maintains an unloaded module list for user-mode processes. When you are debugging a user-mode process or dump file, the **lm** command also shows these unloaded modules.
+
+The modules displayed depends on how you are debugging, for example user or kernel mode, and the specific context you are looking at. For more information about the process context and other context settings, see [Changing Contexts](changing-contexts.md) and [Controlling Processes and Threads](controlling-processes-and-threads.md).
 
 This command shows several columns or fields, each with a different title. Some of these titles have specific meanings:
 
@@ -180,11 +180,9 @@ start    end        module name
 01000000 0100d000   stst       (deferred)
 ```
 
- 
+## See also
 
- 
-
-
-
-
-
+- [Changing Contexts](changing-contexts.md)
+- [Controlling Processes and Threads](controlling-processes-and-threads.md).
+- [Standard debugging techniques](standard-debugging-techniques.md)
+- [Get started with Windows Debugging](getting-started-with-windows-debugging.md)

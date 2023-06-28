@@ -18,7 +18,7 @@ api_type:
 The SOC\_CRITICAL\_DEVICE\_REMOVED bug check has a value of 0x0000014E. This indicates that a critical SOC device has been unexpectedly removed or failed.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## SOC\_CRITICAL\_DEVICE\_REMOVED Parameters

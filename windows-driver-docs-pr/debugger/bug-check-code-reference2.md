@@ -373,13 +373,13 @@ The following table provides links to bug check codes.
 | 0x00000173 | [**COREMSGCALL\_INTERNAL\_ERROR**](bug-check-0x173--coremsgcall-internal-error.md)                                                                |
 | 0x00000174 | [**COREMSG\_INTERNAL\_ERROR**](bug-check-0x174--coremsg-internal-error.md)                                                                        |
 | 0x00000178 | [**ELAM\_DRIVER\_DETECTED\_FATAL\_ERROR**](bug-check-0x178--elam-driver-detected-fatal-error.md)                                                  |
-| 0x0000017B | [**PROFILER\_CONFIGURATION\_ILLEGAL**](bug-check-0x17b--profiler-configuration-illegal.md)                                                        | 
-| 0x0000017E | [**MICROCODE\_REVISION\_MISMATCH**](bug-check-0x17e--microcode-revision-mismatch.md)                                                              | 
+| 0x0000017B | [**PROFILER\_CONFIGURATION\_ILLEGAL**](bug-check-0x17b--profiler-configuration-illegal.md)                                                        |
+| 0x0000017E | [**MICROCODE\_REVISION\_MISMATCH**](bug-check-0x17e--microcode-revision-mismatch.md)                                                              |
 | 0x00000187 | [**VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD**](bug-check-0x187--video-dwminit-timeout-fallback-bdd.md)                                              |
 | 0x00000189 | [**BAD\_OBJECT\_HEADER**](bug-check-0x189--bad-object-header.md)                                                                                  |
 | 0x0000018B | [**SECURE\_KERNEL\_ERROR**](bug-check-0x18b--secure-kernel-error.md)                                                                              |
-| 0x0000018C | [**HYPERGUARD\_VIOLATION**](bug-check-0x18c--hyperguard-violation.md)                                                                             |   
-| 0x0000018D | [**SECURE\_FAULT\_UNHANDLED**](bug-check-0x18d--secure-fault-unhandled.md)                                                                        | 
+| 0x0000018C | [**HYPERGUARD\_VIOLATION**](bug-check-0x18c--hyperguard-violation.md)                                                                             |
+| 0x0000018D | [**SECURE\_FAULT\_UNHANDLED**](bug-check-0x18d--secure-fault-unhandled.md)                                                                        |
 | 0x0000018E | [**KERNEL\_PARTITION\_REFERENCE\_VIOLATION**](bug-check-0x18e--kernel-partition-reference-violation.md)                                           |
 | 0x00000191 | [**PF\_DETECTED\_CORRUPTION**](bug-check-0x191--pf-detected-corruption.md)                                                                        |
 | 0x00000192 | [**KERNEL\_AUTO\_BOOST\_LOCK\_ACQUISITION\_WITH\_RAISED\_IRQL**](bug-check-0x192--kernel-auto-boost-lock-acquisition-with-raised-irql.md)         |
@@ -413,7 +413,8 @@ The following table provides links to bug check codes.
 | 0x000001DB | [**IPI\_WATCHDOG\_TIMEOUT**](bug-check-0x1db--ipi-watchdog-timeout.md)                                                                            |
 | 0x000001DC | [**DMA_COMMON_BUFFER_VECTOR_ERROR**](bug-check-0x1dc--dma-common-buffer-vector-error.md)                                                          |
 | 0x000001DD | [**BUGCODE\_MBBADAPTER\_DRIVER**](bug-check-0x1dd--bugcode-mbbadapter-driver.md)                                                                  |
-| 0x000001DE | [**BUGCODE\_WIFIADAPTER\_DRIVER**](bug-check-0x1de--bugcode-wifiadapter-driver.md)                                                                  |
+| 0x000001DE | [**BUGCODE\_WIFIADAPTER\_DRIVER**](bug-check-0x1de--bugcode-wifiadapter-driver.md)                                                                |
+| 0x000001DF | [**PROCESSOR\_START\_TIMEOUT**](bug-check-0x1df--processor-start-timeout.md)                                                                      |
 | 0x000001E4 | [**VIDEO\_DXGKRNL\_SYSMM_FATAL_ERROR**](bug-check-0x1e4--video-dxgkrnl-sysmm-fatal-error.md)                                                      |
 | 0x000001E9 | [**ILLEGAL\_ATS\_INITIALIZATION**](bug-check-0x1e9--illegal-ats-initialization.md)                                                                |
 | 0x000001EA | [**SECURE\_PCI\_CONFIG\_SPACE\_ACCESS\_VIOLATION**](bug-check-0x1ea--secure-pci-config-space-access-violation.md)                                 |
@@ -429,7 +430,7 @@ The following table provides links to bug check codes.
 | 0x100000EA | [**THREAD\_STUCK\_IN\_DEVICE\_DRIVER\_M**](bug-check-0x100000ea--thread-stuck-in-device-driver-m.md)                                              |
 | 0x4000008A | [**THREAD\_TERMINATE\_HELD\_MUTEX**](bug-check-0x4000008a--thread-terminate-held-mutex.md)                                                        |
 | 0xC0000218 | [**STATUS\_CANNOT\_LOAD\_REGISTRY\_FILE**](bug-check-0xc0000218--status-cannot-load-registry-file.md)                                             |
-| 0xC000021A | [**WINLOGON\_FATAL\_ERROR**](bug-check-0xc000021a--winlogin-fatal-error.md)                                              |
+| 0xC000021A | [**WINLOGON\_FATAL\_ERROR**](bug-check-0xc000021a--winlogin-fatal-error.md)                                                                       |
 | 0xC0000221 | [**STATUS\_IMAGE\_CHECKSUM\_MISMATCH**](bug-check-0xc0000221--status-image-checksum-mismatch.md)                                                  |
 | 0xDEADDEAD | [**MANUALLY\_INITIATED\_CRASH1**](bug-check-0xdeaddead--manually-initiated-crash1.md)                                                             |
 

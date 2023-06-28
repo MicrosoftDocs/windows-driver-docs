@@ -20,7 +20,7 @@ The THREAD\_STUCK\_IN\_DEVICE\_DRIVER\_M bug check has a value of 0x100000EA. Th
 Bug check 0x100000EA has the same meaning and parameters as [**bug check 0xEA**](bug-check-0xea--thread-stuck-in-device-driver.md) (THREAD\_STUCK\_IN\_DEVICE\_DRIVER).
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
  

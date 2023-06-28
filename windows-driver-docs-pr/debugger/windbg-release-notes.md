@@ -1,7 +1,7 @@
 ---
 title: WinDbg Release notes
 description: This topic provides information on what's new in WinDbg.
-ms.date: 04/13/2023
+ms.date: 06/26/2023
 ms.topic: article
 ---
 
@@ -24,6 +24,10 @@ Not only does WinDbg run natively on ARM64, we also enabled Time Travel Debuggin
 
 Overall TTD performance has also been improved, with recording overhead substantially reduced for processes that use common SIMD instructions. In total 65 new instructions were optimized, ranging from MMX through SSE 4.2, AVX and AVX2.
 
+### Ambiguous Breakpoint Resolution
+
+Ambiguous breakpoints allow for the debugger to set breakpoints in certain scenarios where a breakpoint expression resolves to multiple locations. For more information, see [Ambiguous breakpoint resolution](ambiguous-breakpoint-resolution.md).
+
 ## 1.2107.13001.0 - WinDbg Preview
 
 ### Regex search
@@ -39,7 +43,7 @@ Restricted Mode is an optional setting that can limit the type of debugging sess
 In past versions, WinDbg throws "Ambiguous Symbol" errors when trying to evaluate (??) or display (dx) a variable that shares its name with another variable in scope. Windbg will now disambiguate variables that share the same name by appending `@n` to the variable name. For example: foo`@0`, foo`@1`
 
 This change will also be reflected in the Locals window. Previously, only the nearest variable in scope would be displayed.
- 
+
 ## 1.2104.13002.0
 
 ### Smart number selection and search
@@ -77,7 +81,6 @@ When debugging a 32-bit WOW process from a 64-bit context, users can now access 
 `dx @$curthread.NativeEnvironment`
 
 `dx @$curthread.NativeStack`
-
 
 #### Javascript Debugging Improvements
 

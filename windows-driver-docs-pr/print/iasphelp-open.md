@@ -2,8 +2,8 @@
 title: Iasphelp Open method
 description: The Open method enables an ASP Web page to open access to a printer.
 MS-HAID:
-- 'webfnc\_7fa3a36d-4bf6-46d2-9336-e024d3aa1eec.xml'
-- 'print.iasphelp\_open'
+- 'webfnc_7fa3a36d-4bf6-46d2-9336-e024d3aa1eec.xml'
+- 'print.iasphelp_open'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -15,7 +15,7 @@ api_name:
 - Iasphelp.Open
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/26/2023
 ---
 
 # Iasphelp::Open method
@@ -39,32 +39,11 @@ Caller-supplied pointer to a string containing a printer name.
 
 Win32 error codes can also be returned.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>ERROR_INVALID_PRINTER_NAME</strong></td>
-<td><p>Invalid printer name.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>ERROR_NOT_ENOUGH_MEMORY</strong></td>
-<td><p>Out of memory.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| **S_OK** | The operation succeeded. |
+| **ERROR_INVALID_PRINTER_NAME** | Invalid printer name. |
+| **ERROR_NOT_ENOUGH_MEMORY** | Out of memory. |
 
 ## VBScript Example
 
@@ -81,18 +60,7 @@ objPrinter.Open strPrinter
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
 
 ## See also
 

@@ -37,6 +37,37 @@
   items: 
   - name: "Digital Window overview"
     href: digital-window-overview.md
+- name: "Camera Profile V2 developer specification"
+# Auto-expanded node
+  items: 
+  - name: "Camera Profile V2 developer specification"
+    href: camera-profile-v2-specification.md
+  - name: "Architectural overview"
+    href: camera-profile-v2-architectural-overview.md
+  - name: "Detailed design for IHVs and OEMs"
+    href: camera-profile-v2-detailed-design-for-ihvs-and-oems.md
+  - name: "Sample profile declaration"
+    href: camera-profile-v2-sample-profile-declaration.md
+  - name: "Legacy profile"
+    href: camera-profile-v2-legacy-profile.md
+  - name: "Sensor group generation"
+    href: camera-profile-v2-sensor-group-generation.md
+  - name: "Sensor group configuration"
+    href: camera-profile-v2-sensor-group-configuration.md
+  - name: "Device MFT support"
+    href: camera-profile-v2-device-mft-support.md
+  - name: "Sensor group transforms"
+    href: camera-profile-v2-sensor-group-transforms.md
+  - name: "Constraint match logic"
+    href: camera-profile-v2-constraint-match-logic.md
+  - name: "Detailed design for ISVs"
+    href: camera-profile-v2-detailed-design-for-isvs.md
+  - name: "Profile discovery"
+    href: camera-profile-v2-profile-discovery.md
+  - name: "Interfaces and interactions"
+    href: camera-profile-v2-interfaces-and-interactions.md
+  - name: "Sample code"
+    href: camera-profile-v2-sample-code.md
 - name: "USB Video Class (UVC) camera implementation guide"
 # Auto-expanded node
   items: 

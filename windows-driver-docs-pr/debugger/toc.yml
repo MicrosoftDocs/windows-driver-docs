@@ -1365,6 +1365,8 @@
         href: processor-breakpoints---ba-breakpoints-.md
       - name: "Initial Breakpoint"
         href: initial-breakpoint.md
+      - name: "Ambiguous Breakpoint Resolution"
+        href: ambiguous-breakpoint-resolution.md
       - name: "User Space and System Space"
         href: user-space-and-system-space.md
       - name: "Risks Entailed When Setting Breakpoints"
@@ -2628,7 +2630,9 @@
     - name: "Bug Check 0x1DD: BUGCODE_MBBADAPTER_DRIVER"
       href: bug-check-0x1dd--bugcode-mbbadapter-driver.md      
     - name: "Bug Check 0x1DE: BUGCODE_WIFIADAPTER_DRIVER"
-      href: bug-check-0x1de--bugcode-wifiadapter-driver.md      
+      href: bug-check-0x1de--bugcode-wifiadapter-driver.md
+    - name: "Bug Check 0x1DF: PROCESSOR_START_TIMEOUT"
+      href: bug-check-0x1df--processor-start-timeout.md               
     - name: "Bug Check 0x1E4: VIDEO_DXGKRNL_SYSMM_FATAL_ERROR"
       href: bug-check-0x1e4--video-dxgkrnl-sysmm-fatal-error.md      
     - name: "Bug Check 0x1E9: ILLEGAL_ATS_INITIALIZATION"

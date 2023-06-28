@@ -1,12 +1,12 @@
 ---
-title: Installation Constraints
-description: Installation Constraints
+title: Installation constraints
+description: Installation constraints
 keywords:
 - installation constraints WDK Unidrv
-ms.date: 01/27/2023
+ms.date: 06/26/2023
 ---
 
-# Installation Constraints
+# Installation constraints
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
@@ -16,16 +16,7 @@ To specify combinations of printer options that can't be simultaneously installe
 
 The \*InvalidInstallableCombination entry has the following format:
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>*InvalidInstallableCombination: LIST (</strong><em>FeatureName</em> <strong>.</strong> <em>OptionName</em><strong>,</strong> <em>FeatureName</em> <strong>.</strong> <em>OptionName</em><strong>,</strong> ...<strong>)</strong></p></td>
-</tr>
-</tbody>
-</table>
+\***InvalidInstallableCombination: LIST** (*FeatureName*.*OptionName*,*FeatureName*.*OptionName*, ...)
 
 where *FeatureName* is the name of a feature and *OptionName* is the name of an option associated with the feature. This list can include features as well as options, in which case the period and *OptionName* aren't included.
 

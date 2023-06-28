@@ -1,9 +1,9 @@
 ---
-title: Iasphelp get\_IsHTTP method
+title: Iasphelp get_IsHTTP method
 description: The IsHTTP property enables an ASP Web page to determine whether the printer is connected to an HTTP port.
 MS-HAID:
-- 'webfnc\_e3e58eea-498f-4e85-8072-2c49ac50d733.xml'
-- 'print.iasphelp\_ishttp'
+- 'webfnc_e3e58eea-498f-4e85-8072-2c49ac50d733.xml'
+- 'print.iasphelp_ishttp'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -15,10 +15,10 @@ api_name:
 - Iasphelp.get_IsHTTP
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/23/2023
 ---
 
-# Iasphelp::get\_IsHTTP method
+# Iasphelp::get_IsHTTP method
 
 The **IsHTTP** property enables an ASP Web page to determine whether the printer is connected to an HTTP port.
 
@@ -39,32 +39,11 @@ A caller-supplied pointer to a memory location that receives **TRUE** if the pri
 
 The property return one of the values in the following table.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_HANDLE</strong></td>
-<td><p>The <a href="iasphelp-open.md" data-raw-source="[&lt;strong&gt;Iasphelp::Open&lt;/strong&gt;](iasphelp-open.md)"><strong>Iasphelp::Open</strong></a> method has not been called.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>E_OUTOFMEMORY</strong></td>
-<td><p>Out of memory.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| **S_OK** | The operation succeeded. |
+| **E_HANDLE** | The [**Iasphelp::Open**](iasphelp-open.md) method has not been called. |
+| **E_OUTOFMEMORY** | Out of memory. |
 
 ## VBScript Example
 
@@ -80,18 +59,7 @@ IsHTTPPort = objPrinter.IsHTTP
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
 
 ## See also
 

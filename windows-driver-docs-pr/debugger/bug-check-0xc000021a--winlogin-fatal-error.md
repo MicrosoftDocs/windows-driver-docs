@@ -17,7 +17,7 @@ api_type:
 The WINLOGON\_FATAL\_ERROR bug check has a value of 0xC000021A. This means that that the Winlogon process terminated unexpectedly.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 ## WINLOGON\_FATAL\_ERROR Parameters
 

@@ -17,7 +17,7 @@ api_type:
 The HAL\_IOMMU\_INTERNAL\_ERROR bug check has a value of 0x000001D9. It indicates that an internal error was detected in the HAL IOMMU library.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
  
 ## HAL\_IOMMU\_INTERNAL\_ERROR Parameters

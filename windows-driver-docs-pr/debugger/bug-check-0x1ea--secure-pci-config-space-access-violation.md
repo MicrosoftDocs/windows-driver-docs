@@ -17,7 +17,7 @@ api_type:
 The SECURE\_PCI\_CONFIG\_SPACE\_ACCESS\_VIOLATION bug check has a value of 0x000001EA. This indicates that the access to the PCI config space region from VTL0 by directly mapping the PCI MCFG range is prohibited because secure PCI is enabled.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## SECURE_PCI_CONFIG\_SPACE\_ACCESS\_VIOLATION Parameters

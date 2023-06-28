@@ -9,7 +9,7 @@ keywords:
 - Device Console WDK , commands
 - commands WDK DevCon
 ms.custom: contperf-fy22q3
-ms.date: 10/28/2022
+ms.date: 06/19/2023
 ---
 
 # Replacing Device Console (DevCon.exe)
@@ -23,6 +23,8 @@ DevCon was originally and always has been a code sample intended as an example, 
 PnPUtil is an inbox tool that allows the user to view information on and change the state of devices and drivers. See [PnPUtil](pnputil.md) for an in-depth usage guide.
 
 ## Table of Equivalencies
+
+PnPUtil command support varies by Windows version. For information on minimum version support for each command, see [PnPUtil Command Syntax](pnputil-command-syntax.md).
 
 | Devcon Command | Description | Alternative |
 |---|---|---|

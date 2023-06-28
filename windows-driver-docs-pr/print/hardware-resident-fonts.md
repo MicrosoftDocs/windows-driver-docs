@@ -1,19 +1,19 @@
 ---
-title: Hardware-Resident Fonts
-description: Hardware-Resident Fonts
+title: Hardware-resident fonts
+description: Hardware-resident fonts
 keywords:
 - printer font descriptions WDK Unidrv , hardware-resident fonts
 - hardware-resident fonts WDK Unidrv
-ms.date: 01/27/2023
+ms.date: 06/23/2023
 ---
 
-# Hardware-Resident Fonts
+# Hardware-resident fonts
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
-If your printer contains hardware-resident fonts, you must provide specifications of font metrics for these fonts within .ufm or .ifi files.
+If your printer contains hardware-resident fonts, you must provide specifications of font metrics for these fonts in .ufm or .ifi files.
 
-Each hardware resident font is described in a separate .ufm or .ifi file. To make the these files available to Unidrv, do the following:
+Each hardware resident font is described in a separate .ufm or .ifi file. To make these files available to Unidrv, do the following steps:
 
 - In the printer's resource DLL, specify .ufm files by using the RC\_UFM resource type, and specify .ifi files by using the RC\_FONT resource type.
 
@@ -23,16 +23,7 @@ Each hardware resident font is described in a separate .ufm or .ifi file. To mak
 
 The format of the \*DeviceFonts entry is as follows:
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>*DeviceFonts: LIST (</strong><em>FontResourceID</em><strong>,</strong> <em>FontResourceID</em><strong>,</strong> ...<strong>)</strong></p></td>
-</tr>
-</tbody>
-</table>
+**\*DeviceFonts: LIST** (*FontResourceID*, *FontResourceID*, ...)
 
 where *FontResourceID* is the RC\_UFM resource identifier associated with a .ufm file, or the RC\_FONT resource identifier associated with an .ifi file.
 

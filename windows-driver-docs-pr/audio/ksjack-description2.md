@@ -22,7 +22,7 @@ The `KSJACK_DESCRIPTION2` structure specifies the capabilities and the current s
 
 ## Syntax
 
-```ManagedCPlusPlus
+```cpp
 typedef struct _tagKSJACK_DESCRIPTION2 {
   DWORD DeviceStateInfo;
   DWORD JackCapabilities;

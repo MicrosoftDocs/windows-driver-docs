@@ -17,7 +17,7 @@ api_type:
 The DAM\_WATCHDOG\_TIMEOUT bug check has a value of 0x000001EB. This indicates that the Desktop Activity Moderator (DAM) was unable to unfreeze non-exempt user session processes within the allocated time period after the device resumed from modern standby.
 
 > [!IMPORTANT]
-> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+> This article is for programmers. If you're a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
 
 ## DAM\_WATCHDOG\_TIMEOUT Parameters
