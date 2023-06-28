@@ -10,7 +10,7 @@ keywords:
 - Audio Settings, Audio Notifications
 - Windows 11 audio 
 - CAPX, Core Audio Processing Object Extensions
-ms.date: 09/29/2022
+ms.date: 06/28/2023
 ---
 
 # Windows 11 APIs for Audio Processing Objects
@@ -248,6 +248,97 @@ This is the recommended buffer behavior for AEC.
 - Buffers obtained in the call to IApoAuxiliaryInputRT::AcceptInput should be written to a circular buffer without locking the main thread.
 - On the call to IAudioProcessingObjectRT::APOProcess, the circular buffer should be read for the latest audio packet from the reference stream, and this packet should be used for running through the echo cancellation algorithm.
 - Timestamps on the reference and microphone data may be used to line up the speaker and mic data.
+
+## Reference Loopback Stream
+
+By default, the loopback stream "taps into" (listens to) the audio stream prior to any volume or muting being applied.  A loopback stream tapped before volume has been applied is known as a pre-volume loopback stream.  An advantage of having a pre-volume loopback stream is a clear and uniform audio stream, regardless of the current volume setting.
+
+Prior to Windows 2024, the loopback stream provided by Windows to the AEC APOs is the pre-volume loopback. Some AEC algorithms may prefer obtaining a loopback stream that has been connected after any volume processing (including being muted).  This configuration is known as post-volume loopback.
+
+Starting in Windows 2024, AEC APOs can request post-volume loopback on supported endpoints.
+
+### Limitations
+
+Unlike pre-volume loopback streams, which are available for all render endpoints, post-volume loopback streams may not be available on all endpoints.
+
+### Requesting Post-Volume Loopback
+
+AEC APOs that wish to use post-volume loopback should implement the [IApoAcousticEchoCancellation2](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iapoacousticechocancellation2) interface.
+
+An AEC APO can request post-volume loopback by returning the [APO_REFERENCE_STREAM_PROPERTIES_POST_VOLUME_LOOPBACK](/windows/win32/api/audioenginebaseapo/ne-audioenginebaseapo-apo_reference_stream_properties) flag via the pProperties parameter in its implementation of [IApoAcousticEchoCancellation2::GetDesiredReferenceStreamProperties](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iapoacousticechocancellation2-getdesiredreferencestreamproperties).
+
+Depending on the render endpoint currently being used, post-volume loopback may not be available.  An AEC APO is notified if post-volume loopback is being used when its [IApoAuxiliaryInputConfiguration::AddAuxiliaryInput](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iapoauxiliaryinputconfiguration-addauxiliaryinput) method is called. If the [AcousticEchoCanceller_Reference_Input](/windows/win32/api/audioengineextensionapo/ns-audioengineextensionapo-acousticechocanceller_reference_input) streamPropertes field contains [APO_REFERENCE_STREAM_PROPERTIES_POST_VOLUME_LOOPBACK](/windows/win32/api/audioenginebaseapo/ne-audioenginebaseapo-apo_reference_stream_properties), post-volume loopback is in use.
+
+The following code from the AEC APO sample header- AecAPO.h shows the three new public methods being added.
+
+```cpp
+public:
+  // IApoAcousticEchoCancellation2
+  STDMETHOD(GetDesiredReferenceStreamProperties)(
+    _Out_ APO_REFERENCE_STREAM_PROPERTIES * properties) override;
+
+  // IApoAuxiliaryInputConfiguration
+  STDMETHOD(AddAuxiliaryInput)(
+    DWORD dwInputId,
+    UINT32 cbDataSize,
+    _In_ BYTE* pbyData,
+    _In_ APO_CONNECTION_DESCRIPTOR *pInputConnection
+    ) override;
+```
+
+The following code snippet is from the AEC APO MFX sample - AecApoMfx.cpp and shows the implementation of GetDesiredReferenceStreamProperties, and relevant portion of AddAuxiliaryInput.
+
+```cpp
+STDMETHODIMP SampleApo::GetDesiredReferenceStreamProperties(
+  _Out_ APO_REFERENCE_STREAM_PROPERTIES * properties)
+{
+  RETURN_HR_IF_NULL(E_INVALIDARG, properties);
+
+  // Always request that a post-volume loopback stream be used, if
+  // available. We will find out which type of stream was actually
+  // created when AddAuxiliaryInput is invoked.
+  *properties = APO_REFERENCE_STREAM_PROPERTIES_POST_VOLUME_LOOPBACK;
+  return S_OK;
+}
+
+STDMETHODIMP
+CAecApoMFX::AddAuxiliaryInput(
+    DWORD dwInputId,
+    UINT32 cbDataSize,
+    BYTE *pbyData,
+    APO_CONNECTION_DESCRIPTOR * pInputConnection
+)
+{
+   // Parameter checking skipped for brevity, please see sample for 
+   // full implementation.
+
+  AcousticEchoCanceller_Reference_Input* referenceInput = nullptr;
+  APOInitSystemEffects3* papoSysFxInit3 = nullptr;
+
+  if (cbDataSize == sizeof(AcousticEchoCanceller_Reference_Input))
+  {
+    referenceInput = 
+      reinterpret_cast<AcousticEchoCanceller_Reference_Input*>(pbyData);
+
+    if (WI_IsFlagSet(
+          referenceInput->streamProperties,
+          APO_REFERENCE_STREAM_PROPERTIES_POST_VOLUME_LOOPBACK))
+    {
+      // Post-volume loopback is being used.
+      m_bUsingPostVolumeLoopback = TRUE;
+        
+      // Note that we can get to the APOInitSystemEffects3 from     
+      // AcousticEchoCanceller_Reference_Input.
+      papoSysFxInit3 = (APOInitSystemEffects3*)pbyData;
+    }
+    else  if (cbDataSize == sizeof(APOInitSystemEffects3))
+    {
+      // Post-volume loopback is not supported.
+      papoSysFxInit3 = (APOInitSystemEffects3*)pbyData;
+    }
+
+    // Remainder of method skipped for brevity.
+```
 
 ## Settings Framework
 
