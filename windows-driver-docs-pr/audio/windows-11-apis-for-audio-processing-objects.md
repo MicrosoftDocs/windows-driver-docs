@@ -253,7 +253,7 @@ This is the recommended buffer behavior for AEC.
 
 By default, the loopback stream "taps into" (listens to) the audio stream prior to any volume or muting being applied.  A loopback stream tapped before volume has been applied is known as a pre-volume loopback stream.  An advantage of having a pre-volume loopback stream is a clear and uniform audio stream, regardless of the current volume setting.
 
-Prior to Windows 2024, the loopback stream provided by Windows to the AEC APOs is the pre-volume loopback. Some AEC algorithms may prefer obtaining a loopback stream that has been connected after any volume processing (including being muted).  This configuration is known as post-volume loopback.
+Some AEC algorithms may prefer obtaining a loopback stream that has been connected after any volume processing (including being muted).  This configuration is known as post-volume loopback.
 
 In the next major version of Windows AEC APOs can request post-volume loopback on supported endpoints.
 
