@@ -1,19 +1,15 @@
 ---
-title: Breakpoint Syntax
+title: Breakpoint syntax
 description: This topic covers breakpoint syntax
 keywords: debugger, breakpoints on methods, breakpoints, syntax rules for commands, b (breakpoint identifier), literal MASM identifier, templated functions
-ms.date: 05/23/2017
+ms.date: 06/26/2023
 ---
 
 # Breakpoint Syntax
 
-
-## <span id="ddk_debugging_bios_code_dbg"></span><span id="DDK_DEBUGGING_BIOS_CODE_DBG"></span>
-
-
 The following syntax elements can be used when creating a [breakpoint](using-breakpoints.md), either through the Debugger Command window or through the WinDbg graphical interface.
 
-### <span id="addresses_in_breakpoints"></span><span id="ADDRESSES_IN_BREAKPOINTS"></span>Addresses in Breakpoints
+## Addresses in breakpoints
 
 Breakpoints support many kinds of address syntax, including virtual addresses, function offsets, and source line numbers. For example, you can use any of the following commands to set breakpoints:
 
@@ -25,18 +21,18 @@ Breakpoints support many kinds of address syntax, including virtual addresses, f
 
 For more information about this syntax, see [Numerical Expression Syntax](numerical-expression-syntax.md), [Source Line Syntax](source-line-syntax.md), and the individual command topics.
 
-### <span id="breakpoints_on_methods"></span><span id="BREAKPOINTS_ON_METHODS"></span>Breakpoints on Methods
+## Breakpoints on methods
 
 If you want to put a breakpoint on the *MyMethod* method in the *MyClass* class, you can use two different syntaxes:
 
--   In MASM expression syntax, you can indicate a method by a double colon or by a double underscore.
+- In MASM expression syntax, you can indicate a method by a double colon or by a double underscore.
 
     ```dbgcmd
     0:000> bp MyClass::MyMethod 
     0:000> bp MyClass__MyMethod 
     ```
 
--   In C++ expression syntax, you must indicate a method by a double colon.
+- In C++ expression syntax, you must indicate a method by a double colon.
 
     ```dbgcmd
     0:000> bp @@( MyClass::MyMethod ) 
@@ -44,7 +40,7 @@ If you want to put a breakpoint on the *MyMethod* method in the *MyClass* class,
 
 If you want to use a more complex breakpoint command, you should use MASM expression syntax. For more information about expression syntax, see [Evaluating Expressions](evaluating-expressions.md).
 
-### Breakpoints Using Complicated MASM expressions
+## Breakpoints using complicated MASM expressions
 
 To set a breakpoint on complicated functions, including functions that contain spaces, as well as a member of a C++ public class, enclose the expression in parentheses. For example, use **bp (??MyPublic)** or **bp (operator new)**.
 
@@ -60,7 +56,7 @@ This escape syntax is more useful for C++ (for example, overloaded operators) in
 
 To set a breakpoint on arbitrary text in C++ syntax, use <strong>bu @@c++(</strong><em>text</em>**)** for C++-compatible symbols.
 
-### Breakpoints in Scripts
+## Breakpoints in scripts
 
 Breakpoint IDs do not have to be referred to explicitly. Instead, you can use a numerical expression that resolves to an integer that corresponds to a breakpoint ID. To indicate that the expression should be interpreted as a breakpoint, use the following syntax.
 
@@ -76,15 +72,20 @@ This syntax allows debugger scripts to programmatically select a breakpoint. In 
 b?[@$t0]
 ```
 
-### >Breakpoint Pseudo-Registers
+## Breakpoint pseudo-registers
 
 If you want to refer to a breakpoint address in an expression, you can use a [pseudo-register](pseudo-register-syntax.md) with the **$bp**_Number_ syntax, where *Number* is the breakpoint ID. For more information about this syntax, see Pseudo-Register Syntax.
 
- 
+## Ambiguous breakpoint resolution
 
- 
+In version 10.0.25310.1001 and later of the debugger engine, ambiguous breakpoint resolution is now supported. Ambiguous breakpoints allow for the debugger to set breakpoints in certain scenarios where a breakpoint expression resolves to multiple locations. For more information, see [Ambiguous breakpoint resolution](ambiguous-breakpoint-resolution.md).
 
+## See also
 
+[Using Breakpoints](using-breakpoints.md)
 
+[Breakpoint Syntax](breakpoint-syntax.md)
 
+[bp, bu, bm (Set Breakpoint)](bp--bu--bm--set-breakpoint-.md)
 
+[Unresolved Breakpoints (bu Breakpoints)](unresolved-breakpoints---bu-breakpoints-.md)

@@ -2,11 +2,10 @@
 title: Initial Breakpoint
 description: Initial Breakpoint
 keywords: ["initial breakpoint", "breakpoints, initial breakpoint"]
-ms.date: 05/23/2017
+ms.date: 06/26/2023
 ---
 
 # Initial Breakpoint
-
 
 When the debugger starts a new target application, an initial breakpoint automatically occurs after the main image and all statically-linked DLLs are loaded before any DLL initialization routines are called.
 
@@ -18,11 +17,14 @@ If you want to start a new target and break into it when the execution of the ac
 
 For more information about automatic breakpoints in kernel mode, see [Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md).
 
- 
+## See also
 
- 
+[Using Breakpoints](using-breakpoints.md)
 
+[Breakpoint Syntax](breakpoint-syntax.md)
 
+[bp, bu, bm (Set Breakpoint)](bp--bu--bm--set-breakpoint-.md)
 
+[Ambiguous breakpoint resolution](ambiguous-breakpoint-resolution.md)
 
-
+[Unresolved Breakpoints (bu Breakpoints)](unresolved-breakpoints---bu-breakpoints-.md)

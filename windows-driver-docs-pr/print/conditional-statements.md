@@ -16,38 +16,28 @@ ms.date: 01/26/2023
 
 The GPD language provides C-like conditional statements that allow you to describe dependencies that some printer attributes can have on a printer's configuration. For example, the margins and cursor origin for a page might depend on the page's orientation. The **\*Switch** and **\*Case** statements allow you to express such dependencies. The format of these statements is as follows:
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p></p>
-*Switch <em>FeatureName</em>
+\*Switch *FeatureName*
 {
-*Case <em>Option1_Name</em>
+\*Case *Option1_Name*
 {
 }
-*Case <em>Option2_Name</em>
+\*Case *Option2_Name*
 {
 }
-<em>etc.</em>
-*Case <em>OptionN_Name</em>
+*etc.*
+\*Case *OptionN_Name*
 {
 }
-*Default
+\*Default
 {
 }
-}</td>
-</tr>
-</tbody>
-</table>
+}
 
 *FeatureName* must be the name of a feature that is specified within the GPD file with a **\*Feature** entry. The option names used must be options that are associated with the specified feature.
 
 To express the case in which page margins and cursor origin are dependent on the page's orientation, the following entries could be used:
 
-```cpp
+```GPD
 *Feature: Orientation
 {
     *DefaultOption: Portrait
@@ -95,7 +85,7 @@ If you do not list all of a feature's options as **\*Case** statement arguments,
 
 You can include **\*Switch** statements inside **\*Case** and **\*Default** statements. This allows you to specify multiple dependencies, as follows:
 
-```cpp
+```GPD
 *Feature: feature1 {*Option: optionA {...} *Option: optionB {...}}
 *Feature: feature2 {*Option: optionC {...} *Option: optionD {...}}
 *Feature: feature3 

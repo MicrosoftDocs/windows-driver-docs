@@ -1,9 +1,9 @@
 ---
-title: Iasphelp get\_Color method
+title: Iasphelp get_Color method
 description: The Color property enables an ASP Web page to determine if a printer supports color printing.
 MS-HAID:
-- 'webfnc\_1eb57c03-7aa3-4acb-8a2c-3327a37e019d.xml'
-- 'print.iasphelp\_color'
+- 'webfnc_1eb57c03-7aa3-4acb-8a2c-3327a37e019d.xml'
+- 'print.iasphelp_color'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -15,10 +15,10 @@ api_name:
 - Iasphelp.get_Color
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/23/2023
 ---
 
-# Iasphelp::get\_Color method
+# Iasphelp::get_Color method
 
 The **Color** property enables an ASP Web page to determine if a printer supports color printing.
 
@@ -39,32 +39,11 @@ Caller-supplied pointer to a location to receive **TRUE** if the printer support
 
 Win32 error codes can also be returned.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_HANDLE</strong></td>
-<td><p>The <strong>Iasphelp::Open</strong> method has not been called.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>E_OUTOFMEMORY</strong></td>
-<td><p>Out of memory.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| **S_OK** | The operation succeeded. |
+| **E_HANDLE** | The **Iasphelp::Open** method has not been called. |
+| **E_OUTOFMEMORY** | Out of memory. |
 
 ## VBScript Example
 
@@ -80,18 +59,7 @@ HasColor = objPrinter.Color
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
 
 ## See also
 

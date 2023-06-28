@@ -2,8 +2,8 @@
 title: IOleCvt ToUnicode method
 description: The ToUnicode property enables an ASP Web page to convert one Unicode string to another using a specified code page.
 MS-HAID:
-- 'webfnc\_37f4684f-4af9-4e25-8c5e-6ad63748cf5d.xml'
-- 'print.iolecvt\_tounicode'
+- 'webfnc_37f4684f-4af9-4e25-8c5e-6ad63748cf5d.xml'
+- 'print.iolecvt_tounicode'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -15,7 +15,7 @@ api_name:
 - IOleCvt.ToUnicode
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 06/26/2023
 ---
 
 # IOleCvt::ToUnicode method
@@ -45,28 +45,10 @@ Caller-supplied pointer to a location to receive the converted Unicode string.
 
 ## Return value
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_POINTER</strong></td>
-<td><p>At least one of the parameters does not point to a valid memory location.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| **S_OK** | The operation succeeded. |
+| **E_POINTER** | At least one of the parameters does not point to a valid memory location. |
 
 ## VBScript Example
 
@@ -88,15 +70,4 @@ End If
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop

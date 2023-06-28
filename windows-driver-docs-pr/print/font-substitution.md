@@ -1,13 +1,13 @@
 ---
-title: Font Substitution
-description: Font Substitution
+title: Font substitution
+description: Font substitution
 keywords:
 - printer font descriptions WDK Unidrv , substitutions
 - substitution font table WDK Unidrv
-ms.date: 01/27/2023
+ms.date: 06/22/2023
 ---
 
-# Font Substitution
+# Font substitution
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
@@ -15,21 +15,7 @@ For printers that provide hardware-resident or cartridge fonts, a font substitut
 
 You can create a default font substitution table by using a series of \*TTFS entries. The format of each entry is:
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p></p>
-*TTFS: <em>FontName</em>
-{
-*TTFontName: "<em>TTFontNameString</em>"
-*DevFontName: "<em>DeviceFontNameString</em>"
-<strong>}</strong></td>
-</tr>
-</tbody>
-</table>
+\*TTFS: FontName { \*TTFontName: "*TTFontNameString*" *DevFontName: "*DeviceFontNameString*" }
 
 where *FontName* is a symbol specifying the entry name, *TTFontNameString* is a text string identifying the TrueType font to be replaced, and *DeviceFontNameString* is a text string identifying the hardware-resident or cartridge font to be used. Following is an example table:
 
@@ -59,16 +45,7 @@ All \*TTFS entries must be located at the GPD file's root level (that is, not wi
 
 To control whether or not font substitution is enabled by default, use the \*TTFSEnabled? entry. This entry's format is:
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>*TTFSEnabled?: <em>BooleanValue</em></p></td>
-</tr>
-</tbody>
-</table>
+\*TTFSEnabled?: *BooleanValue*
 
 where *BooleanValue* is **TRUE** or **FALSE**. If *BooleanValue* is **TRUE**, Unidrv enables font substitution. If *BooleanValue* is **FALSE**, or if you do not include a \*TTFSEnabled? entry in the GPD file, Unidrv disables font substitution until it is enabled by a user.
 

@@ -1,6 +1,6 @@
 ---
-title: Customized Font Installers for Unidrv
-description: Customized Font Installers for Unidrv
+title: Customized font installers for Unidrv
+description: Customized font installers for Unidrv
 keywords:
 - printer driver customizing WDK , installing components
 - customizing printer drivers WDK , installing components
@@ -8,14 +8,14 @@ keywords:
 - font installers WDK Unidrv
 - .uff files
 - UFF files
-ms.date: 01/27/2023
+ms.date: 06/16/2023
 ---
 
-# Customized Font Installers for Unidrv
+# Customized font installers for Unidrv
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
-Vendor-supplied font installation software is required for cartridge fonts that aren't described by [font cartridge](font-cartridges.md) entries in a printer's *GPD* file. These fonts must be described using [Unidrv font format files](customized-font-management.md#ddk-unidrv-font-format-files-gg) (.uff files). Creating .uff files is the responsibility of vendor-supplied font installers.
+Vendor-supplied font installation software is required for cartridge fonts that aren't described by [font cartridge](font-cartridges.md) entries in a printer's *GPD* file. These fonts must be described using [Unidrv font format files](customized-font-management.md#unidrv-font-format-files) (.uff files). Creating .uff files is the responsibility of vendor-supplied font installers.
 
 Vendor-supplied font installers should also provide support for downloadable *PCL* soft fonts.
 

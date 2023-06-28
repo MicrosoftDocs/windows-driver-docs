@@ -453,8 +453,8 @@
           href: handling-large-numbers-of-ssids.md
         - name: "Handling the hotspot authentication event"
           href: handling-the-hotspot-authentication-event.md
-      - name: "Hotspot 2.0"
-        href: hotspot-20.md
+      - name: "Passpoint (Hotspot 2.0)"
+        href: passpoint.md
   - name: "Provisioning Windows using a website"
     href: provisioning-windows-using-a-website.md
   - name: "Understanding and configuring Windows Connection Manager"

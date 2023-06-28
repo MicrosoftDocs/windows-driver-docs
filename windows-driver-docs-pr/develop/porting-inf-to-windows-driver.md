@@ -212,3 +212,28 @@ Instead, the APO registration information should be in a section referenced by a
 ## UMDF driver version is less than 2
 
 If your driver package payloads a [User-Mode Driver Framework (UMDF)](../wdf/getting-started-with-umdf-version-2.md) driver that uses a UMDF version earlier than version 2, then it isn't compliant with "Windows Drivers". For more information on how to move your UMDF driver to a more recent UMDF version, see [Porting a Driver from UMDF 1 to UMDF 2](../wdf/porting-a-driver-from-umdf-1-to-umdf-2.md).
+
+
+## Using AddReg to add an upper or lower filter to a device stack
+
+If your INF uses an AddReg directive to add an upper or lower filter to a device stack, then the INF isn't compliant with driver package isolation. For example, your INF may have:
+
+```inf
+[ExampleDDInstall.HW]
+AddReg = FilterAddReg
+
+[FilterAddReg]
+HKR,,"UpperFilters",0x00010000,"ExampleFilterDriver" ; REG_MULTI_SZ value
+```
+
+Instead, the filter should be added to the device stack using the [AddFilter](../install/inf-addfilter-directive.md) directive. For example:
+
+```inf
+[ExampleDDInstall.Filters]
+AddFilter = ExampleFilterDriver,, ExampleFilterSection
+
+[ExampleFilterSection]
+FilterPosition = Upper
+```
+
+See [Device filter driver ordering](device-filter-driver-ordering.md) for more details on adding device filters.

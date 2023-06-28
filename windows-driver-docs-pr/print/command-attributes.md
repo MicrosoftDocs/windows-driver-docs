@@ -1,6 +1,6 @@
 ---
-title: Command Attributes
-description: Command Attributes
+title: Command attributes
+description: Command attributes
 keywords:
 - printer attributes WDK Unidrv , commands
 - commands WDK Unidrv
@@ -10,10 +10,10 @@ keywords:
 - NoPageEject
 - Order
 - Params
-ms.date: 01/26/2023
+ms.date: 06/16/2023
 ---
 
-# Command Attributes
+# Command attributes
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
@@ -27,48 +27,12 @@ When specifying a printer command, you use attributes to provide Unidrv with the
 
 The following table lists the command attributes in alphabetic order and describes their parameters.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute Name</th>
-<th>Attribute Parameter</th>
-<th>Comments</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong><em>CallbackID</strong></p></td>
-<td><p>Positive numeric value, passed to the rendering plug-in's <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-commandcallback" data-raw-source="[&lt;strong&gt;IPrintOemUni::CommandCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-commandcallback)"><strong>IPrintOemUni::CommandCallback</strong></a> method as its <em>dCmdCbID</em> argument.</p></td>
-<td><p>Required for <a href="dynamically-generated-printer-commands.md" data-raw-source="[dynamically generated printer commands](dynamically-generated-printer-commands.md)">dynamically generated printer commands</a>. Not valid if <strong></em>Cmd</strong> is specified.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong><em>Cmd</strong></p></td>
-<td><p>Text string containing a printer command escape sequence, specified using the <a href="command-string-format.md" data-raw-source="[command string format](command-string-format.md)">command string format</a>.</p></td>
-<td><p>Required unless <strong></em>CallbackID</strong> is specified.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong><em>NoPageEject?</strong></p></td>
-<td><p><strong>TRUE</strong> or <strong>FALSE</strong>, indicating whether executing the command causes the printer to eject the current physical page.</p>
-<p>Used only if <strong></em>Order</strong> specifies the DOC_SETUP section and if DUPLEX printing is enabled. To avoid premature page ejection between duplexed document pages, Unidrv only issues commands with this attribute set to <strong>TRUE</strong>, if possible.</p></td>
-<td><p>Optional. If not specified, the default value is <strong>FALSE</strong>, meaning the command might cause page ejection.</p>
-<p>Must not be <strong>TRUE</strong> if a command causes side effects (that is, if the command modifies printer settings outside of those controlled by commands with <strong><em>NoPageEject?</strong> set to <strong>TRUE</strong>).</p></td>
-</tr>
-<tr class="even">
-<td><p><strong></em>Order</strong></p></td>
-<td><p>Section name and order number, as described in <a href="command-execution-order.md" data-raw-source="[Command Execution Order](command-execution-order.md)">Command Execution Order</a>.</p></td>
-<td><p>Valid only with configuration commands and customized option commands, unless stated in the command description.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong><em>Params</strong></p></td>
-<td><p><a href="lists.md" data-raw-source="[List](lists.md)">List</a> of <a href="standard-variables.md" data-raw-source="[standard variables](standard-variables.md)">standard variables</a>, passed to the rendering plug-in's IPrintOemUni::CommandCallback method in the EXTRAPARAM structure that is passed as its <em>pdwParams</em> argument.</p></td>
-<td><p>Valid only if <strong></em>CallbackID</strong> is also specified.</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute name | Attribute parameter | Comments |
+|--|--|--|
+| ***CallbackID*** | Positive numeric value, passed to the rendering plug-in's [**IPrintOemUni::CommandCallback**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-commandcallback) method as its *dCmdCbID* argument. | Required for [dynamically generated printer commands](dynamically-generated-printer-commands.md). Not valid if ***Cmd*** is specified. |
+| ***Cmd*** | Text string containing a printer command escape sequence, specified using the [command string format](command-string-format.md). | Required unless ***CallbackID*** is specified. |
+| ***NoPageEject?*** | **TRUE** or **FALSE**, indicating whether executing the command causes the printer to eject the current physical page.<br><br>Used only if ***Order*** specifies the DOC_SETUP section and if DUPLEX printing is enabled. To avoid premature page ejection between duplexed document pages, Unidrv only issues commands with this attribute set to **TRUE**, if possible. | Optional. If not specified, the default value is **FALSE**, meaning the command might cause page ejection.<br><br>Must not be **TRUE** if a command causes side effects (that is, if the command modifies printer settings outside of those controlled by commands with ***NoPageEject?*** set to **TRUE**). |
+| ***Order*** | Section name and order number, as described in [Command Execution Order](command-execution-order.md). | Valid only with configuration commands and customized option commands, unless stated in the command description. |
+| ***Params*** | [List](lists.md) of [standard variables](standard-variables.md), passed to the rendering plug-in's IPrintOemUni::CommandCallback method in the **EXTRAPARAM** structure that is passed as its *pdwParams* argument. | Valid only if ***CallbackID*** is also specified. |
 
 For examples, see the [sample GPD files](sample-gpd-files.md).

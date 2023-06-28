@@ -9,7 +9,7 @@ ms.date: 04/20/2017
 
 The source code in this topic demonstrates how to use TraceLogging.
 
-```
+```cpp
 #include <windows.h>
 #include <TraceLoggingProvider.h>
 #include <winmeta.h>
