@@ -103,7 +103,7 @@ When you install a driver package on a device, Windows follows these steps to pr
 
 When determining the applicable [**INF *Models* sections**](inf-models-section.md), the evaluation is performed per-line within the [**INF Manufacturer section**](inf-manufacturer-section.md), where, for a given OS version, each line may have up to one applicable section.
 
-The below INF excerpt shows an example where [ExampleModelsSection_1.NTamd64.10.0...17134] will be selected on a Windows 10 build equal to or greater than 17134, and *both* [ExampleModelsSection_1.NTamd64.10.0...17134] and [ExampleModelsSection_2.NTamd64.10.0...22000] will be selected on a Windows 10 build equal to or greater than 22000.
+The below INF excerpt shows an example where [ExampleModelsSection_1.NTamd64.10.0...17134] will be selected on a Windows build number equal to or greater than 17134 , and *both* [ExampleModelsSection_1.NTamd64.10.0...17134] and [ExampleModelsSection_2.NTamd64.10.0...22000] will be selected on a Windows build number equal to or greater than 22000.
 
 ```inf
 [Manufacturer]
@@ -111,7 +111,7 @@ The below INF excerpt shows an example where [ExampleModelsSection_1.NTamd64.10.
 %ManufacturerName% = ExampleModelsSection_2,NTamd64.10.0...22000
 ```
 
-The below INF excerpt shows an example where [ExampleModelsSection_1.NTamd64.10.0...17134] will be selected on a Windows 10 build equal to or greater than 17134, and [ExampleModelsSection_1.NTamd64.10.0...22000] will be selected on a Windows 10 build equal to or greater than 22000.
+The below INF excerpt shows an example where [ExampleModelsSection_1.NTamd64.10.0...17134] will be selected on a Windows build number equal to or greater than 17134, and [ExampleModelsSection_1.NTamd64.10.0...22000] will be selected on a Windows build number equal to or greater than 22000.
 
 ```inf
 [Manufacturer]
