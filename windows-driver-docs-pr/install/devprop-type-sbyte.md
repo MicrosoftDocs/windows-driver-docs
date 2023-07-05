@@ -25,9 +25,9 @@ DEVPROP_TYPE_SBYTE can be combined only with the [**DEVPROP_TYPEMOD_ARRAY**](dev
 
 **Setting a Property of this Type**
 
-To set a property whose data type is DEVPROP_TYPE_BYTE, call the corresponding **SetupDiSet*Xxx*** property function, and set the function parameters as follows:
+To set a property whose data type is DEVPROP_TYPE_SBYTE, call the corresponding **SetupDiSet*Xxx*** property function, and set the function parameters as follows:
 
-- Set the *PropertyType* parameter to DEVPROP_TYPE_BYTE, set the *PropertyBuffer* parameter to a pointer to a buffer that can contain at least one BYTE value, and set the *PropertyBufferSize* parameter to <strong>sizeof(</strong>BYTE<strong>)</strong>.
+- Set the *PropertyType* parameter to DEVPROP_TYPE_SBYTE, set the *PropertyBuffer* parameter to a pointer to a buffer that can contain at least one SBYTE value, and set the *PropertyBufferSize* parameter to <strong>sizeof(</strong>SBYTE<strong>)</strong>.
 
 - Set the other function input parameters as appropriate to set the property.
 
