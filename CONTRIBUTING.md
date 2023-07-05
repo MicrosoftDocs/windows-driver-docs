@@ -36,8 +36,3 @@ If you would like to provide feedback rather than suggesting a change to documen
 
 Be sure to include the topic title and the URL for the page.
 
-## Resources
-
-You can use your favorite text editor to edit Markdown.  We recommend [Visual Studio Code](https://code.visualstudio.com/), a free lightweight open source editor from Microsoft.
-
-You can learn the basics of Markdown in just a few minutes.  To get started, check out [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
