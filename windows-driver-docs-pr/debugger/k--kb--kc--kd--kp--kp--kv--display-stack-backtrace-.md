@@ -2,7 +2,7 @@
 title: k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)
 description: Learn how the k* commands display the stack frame of the given thread, together with related information.
 keywords: ["k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace) Windows Debugging"]
-ms.date: 12/16/2022
+ms.date: 07/05/2023
 topic_type:
 - apiref
 ms.topic: reference
@@ -106,7 +106,7 @@ M
 Displays the output using [Debugger markup language](debugger-markup-language-commands.md). Each frame number in the display is a link that you can select to set the local context and display local variables. For information about the local context, see [.frame](-frame--set-local-context-.md).
 
 *FrameCount*  
-Specifies the number of stack frames to display. You should specify this number in hexadecimal format unless you've changed the radix by using the [n (set number base)](n--set-number-base-.md) command. The default value is 20 (0x14), unless you've changed the default value by using the [.kframes (set stack length)](-kframes--set-stack-length-.md) command.
+Specifies the number of stack frames to display. You should specify this number in hexadecimal format unless you've changed the radix by using the [n (set number base)](n--set-number-base-.md) command. Use the [.kframes (set stack length)](-kframes--set-stack-length-.md) command to display the default and to change the value.
 
 *BasePtr*  
 Specifies the base pointer for the stack trace. The `BasePtr` parameter is available only if there's an equal sign (=) after the command.
@@ -118,7 +118,7 @@ Specifies the stack pointer for the stack trace. If you omit `StackPtr` and `Ins
 Specifies the instruction pointer for the stack trace. If you omit `StackPtr` and `InstructionPtr`, the command uses the stack pointer that the rsp (or esp) register specifies and the instruction pointer that the rip (or eip) register specifies.
 
 *WordCount*  
-Specifies the number of DWORD_PTR values in the stack to dump. The default value is 20 (0x14), unless you changed the default value by using the [.kframes (Set Stack Length)](-kframes--set-stack-length-.md) command.
+Specifies the number of DWORD_PTR values in the stack to dump.
 
 | Environment | &nbsp; |
 |---|---|
