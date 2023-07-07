@@ -1,11 +1,15 @@
 ---
 title: Build a basic v4 printer driver
 description: Build a basic v4 printer driver by using the driver development wizard in Microsoft Visual Studio 2019 to select the minimum set of features to create a functional printer driver.
-ms.date: 05/08/2023
-ms.custom: contperf-fy22q1
+ms.date: 07/07/2023
 ---
 
 # Build a basic v4 printer driver
+
+[!include[Print Support Apps](../includes/print-support-apps.md)]
+
+> [!WARNING]
+> This printer driver tutorial contains multiple errors and is not usable at this time.
 
 Build a basic v4 printer driver by using the driver development wizard in Microsoft Visual Studio 2019 to select the minimum set of features to create a functional printer driver.
 
