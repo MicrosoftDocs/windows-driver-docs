@@ -1,7 +1,7 @@
 ---
 title: Time Travel Debugging - Overview
 description: This section describes time travel debugging.
-ms.date: 03/09/2022
+ms.date: 07/06/2023
 ---
 
 # Time Travel Debugging - Overview
@@ -10,9 +10,9 @@ ms.date: 03/09/2022
 
 ## What is Time Travel Debugging?
 
-Time Travel Debugging is a tool that allows you to capture a trace of your process as it executes and then replay it later both forwards and backwards. Time Travel Debugging (TTD) can help you debug issues easier by letting you "rewind" your debugger session, instead of having to reproduce the issue until you find the bug. 
+Time Travel Debugging is a tool that allows you to capture a trace of your process as it executes and then replay it later both forwards and backwards. Time Travel Debugging (TTD) can help you debug issues easier by letting you "rewind" your debugger session, instead of having to reproduce the issue until you find the bug.
 
-TTD allows you to go back in time to better understand the conditions that lead up to the bug and replay it multiple times to learn how best to fix the problem. 
+TTD allows you to go back in time to better understand the conditions that lead up to the bug and replay it multiple times to learn how best to fix the problem.
 
 TTD can have advantages over crash dump files, which often miss the state and execution path that led to the ultimate failure.  
 
@@ -29,6 +29,12 @@ TTD includes a set of debugger data model objects to allow you to query the trac
 Time Travel Debugging is available on WinDbg version 1.0.13.0 and newer.
 
 To use TTD, you need to run the debugger elevated. Install WinDbg using an account that has administrator privileges and use that account when recording in the debugger. In order to run the debugger elevated, select and hold (or right-click) the WinDbg icon in the Start menu, and then select More > Run as Administrator.
+
+## TTD.exe command line recording utility
+
+In addition to recording traces in the WinDbg UI, there is a TTD.exe command line utility available to record a trace.
+
+You may have scenarios where only the TTD command line recorder is required: recording on a PC without installing the debugger, advanced recording scenarios, test automation, etc. In these scenarios you can install just the TTD command line recorder through a URL. For more information, see [Time Travel Debugging - TTD.exe command line utility](time-travel-debugging-ttd-exe-command-line-util.md).
 
 ## Comparison of Debugging Tools
 
@@ -88,13 +94,13 @@ For more information on working the trace files, see [Time Travel Debugging - Wo
 
 You may encounter incompatibilities because of how TTD hooks into process to record them. Typically issues arise with anti-virus or other system software that is attempting to track and shadow system memory calls. If you run into issues of with recording, such as an insufficient permission message, try temporarily disabling any anti-virus software.  
 
-Other utilities that attempt to block memory access, can also be problematic, for example, the Microsoft Enhanced Mitigation Experience Toolkit. 
+Other utilities that attempt to block memory access, can also be problematic, for example, the Microsoft Enhanced Mitigation Experience Toolkit.
 
 Another example of an environment that conflicts with TTD, would be the electron application framework. In this case the trace may record, but a deadlock or crash of the process being recorded is also possible.
 
 ### User mode only
 
-TTD currently supports only user mode operation, so tracing a kernel mode process is not possible. 
+TTD currently supports only user mode operation, so tracing a kernel mode process is not possible.
 
 ### Read-only playback
 
@@ -128,10 +134,13 @@ For general information about the debugger data model, see [WinDbg - Data model]
 
 ### Scripting support  
 
-- **Scripting Automation** - Scripting support for JavaScript and NatVis allows for the automation of problem investigation. For more information, see 
-[Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md).
+- **Scripting Automation** - Scripting support for JavaScript and NatVis allows for the automation of problem investigation. For more information, see [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md).
 
 For general information about working with JavaScript and NatVis, see [WinDbg - Scripting](windbg-scripting-preview.md).
+
+### TTD.exe Command line utility
+
+The TTD.exe command line utility to record traces is available. For more information, see [Time Travel Debugging - TTD.exe command line utility](time-travel-debugging-ttd-exe-command-line-util.md).
 
 ### Managed code TTD support
 

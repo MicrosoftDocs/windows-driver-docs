@@ -4,7 +4,7 @@ description: This section describes how to record time travel traces.
 ms.date: 12/09/2022
 ---
 
-#  Time Travel Debugging - Record a trace
+# Time Travel Debugging - Record a trace
 
 ![Small time travel logo showing clock.](images/ttd-time-travel-debugging-logo.png)
 
