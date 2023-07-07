@@ -180,6 +180,8 @@
         href: time-travel-debugging-collection-objects.md
     - name: "Time Travel Debugging - JavaScript Automation"
       href: time-travel-debugging-javascript-automation.md
+    - name: "Time Travel Debugging - TTD.exe command line utility"
+      href: time-travel-debugging-ttd-exe-command-line-util.md
 - name: "Debugging Resources"
 # Auto-expanded node
   items: 
