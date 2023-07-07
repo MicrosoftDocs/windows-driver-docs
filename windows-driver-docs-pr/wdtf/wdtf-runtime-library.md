@@ -58,19 +58,17 @@ You can also install the WDTF runtime library manually.
 
 1. On the test computer, open a Command Prompt window using elevated permission (**Run as administrator**) and navigate to the directory that contains the WDTF installation files. Run either of the following commands to install WDTF.
 
-    
 ```cmd
 msiexec /i "OneCoreUap_WDTF_Desktop_Kit_Content-x64_en-us.msi"
 msiexec /i "WDTF_Desktop_Kit_Product-x64_en-us.msi"
-    ```
+```
 
-    -Or-
-
+-Or-
     
 ```cmd
 msiexec /i "OneCoreUap_WDTF_Desktop_Kit_Content-x86_en-us.msi"
 msiexec /i "WDTF_Desktop_Kit_Product-x86_en-us.msi"
-    ```
+```
 
 The following table describes the options you can use with the **msiexec** command.
 
@@ -82,7 +80,6 @@ The following table describes the options you can use with the **msiexec** comma
 |**/?**|Shows help for msiexec.exe options.|
 
 ### Example
-
 
 ```cmd
 msiexec /i "OneCoreUap_WDTF_Desktop_Kit_Content-x64_en-us.msi" /l* OneCoreUap_WDTFInstall.log WDTFDir=c:\wdtf WDTF_SKIP_MACHINE_CONFIG=1
