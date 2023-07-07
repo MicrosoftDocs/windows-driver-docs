@@ -56,16 +56,20 @@ You can also install the WDTF runtime library manually.
 
 2. Copy the WDTF installation files from the computer where you installed the WDK to the test computer. The WDTF installation files (*.msi and *.cab files) are located in the %programfiles%\Windows Kits\10\Testing\Runtimes directory on your development system. Copy the all the files in the directory that matches the architecture of the test computer.
 
-3. On the test computer, open a Command Prompt window using elevated permission (**Run as administrator**) and navigate to the directory that contains the WDTF installation files. Run either of the following commands to install WDTF.
+1. On the test computer, open a Command Prompt window using elevated permission (**Run as administrator**) and navigate to the directory that contains the WDTF installation files. Run either of the following commands to install WDTF.
 
-    ```cmd
-    msiexec /i "Windows Driver Testing Framework (WDTF) Runtime Libraries-x64_en-us.msi"
+    
+```cmd
+msiexec /i "OneCoreUap_WDTF_Desktop_Kit_Content-x64_en-us.msi"
+msiexec /i "WDTF_Desktop_Kit_Product-x64_en-us.msi"
     ```
 
     -Or-
 
-    ```cmd
-    msiexec /i "Windows Driver Testing Framework (WDTF) Runtime Libraries-x86_en-us.msi"
+    
+```cmd
+msiexec /i "OneCoreUap_WDTF_Desktop_Kit_Content-x86_en-us.msi"
+msiexec /i "WDTF_Desktop_Kit_Product-x86_en-us.msi"
     ```
 
 The following table describes the options you can use with the **msiexec** command.
@@ -79,8 +83,10 @@ The following table describes the options you can use with the **msiexec** comma
 
 ### Example
 
+
 ```cmd
-msiexec /i "Windows Driver Testing Framework (WDTF) Runtime Libraries-x64_en-us.msi" /l* WDTFInstall.log WDTFDir=c:\wdtf WDTF_SKIP_MACHINE_CONFIG=1
+msiexec /i "OneCoreUap_WDTF_Desktop_Kit_Content-x64_en-us.msi" /l* OneCoreUap_WDTFInstall.log WDTFDir=c:\wdtf WDTF_SKIP_MACHINE_CONFIG=1
+msiexec /i "WDTF_Desktop_Kit_Product-x64_en-us.msi" /l* WDTFInstall.log WDTFDir=c:\wdtf WDTF_SKIP_MACHINE_CONFIG=1
 ```
 
 ## How to determine if the WDTF runtime library is installed on a computer
@@ -106,3 +112,5 @@ You can also uninstall the WDTF runtime library manually.
 1. On the test computer, go to **Settings** and then select **Apps**.
 
 2. In **Programs and Features**, locate the Windows Driver Testing Framework (WDTF) Runtime Libraries, select and hold (or right-click), and select **Uninstall**.
+
+
