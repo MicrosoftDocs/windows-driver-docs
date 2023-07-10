@@ -608,8 +608,10 @@
       - name: "Oplocks and network redirectors"
 # Auto-expanded node
         items:
-        - name: "Using oplocks for network redirector performance"
+        - name: "Oplock overview"
           href: oplock-overview.md
+        - name: "Types of oplocks"
+          href: oplock-types.md
         - name: "Granting oplocks"
           href: granting-oplocks.md
         - name: "Breaking oplocks"
