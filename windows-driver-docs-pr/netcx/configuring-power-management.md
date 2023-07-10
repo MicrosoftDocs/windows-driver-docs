@@ -208,3 +208,5 @@ The OS makes power policy decisions based on a broad set of factors, including s
 - When the PC enters Modern Standby and the networking device has been idling, the OS asks the NIC go to Dx and arms it for Bitmap, MediaChange and Magic Packet wake.
 
 - When the PC goes to Hibernation, the OS asks the NIC to go to Dx and arms it for Magic Packet wake.
+
+**Note**: NetAdapterCx client drivers control the visibility of the power management tab. For more information, see [User Control of Device Idle and Wake Behavior](../wdf/user-control-of-device-idle-and-wake-behavior.md).
