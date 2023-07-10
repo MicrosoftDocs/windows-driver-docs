@@ -341,7 +341,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | scensemon.sys | 387950 | AppiXoft |
 | ruaff.sys | 387940 | RUNEXY |
 | bbfilter.sys | 387930 | derivo GmbH |
-| Bfmon.sys | 387920 | Baidu (Hong Kong) Limited |
+| Bfmon.sys | 387920 | Baidu (Hong Kong Special Administrative Region) Limited |
 | bdsysmon.sys | 387912 | Baidu Online Network |
 | BdRdFolder.sys | 387910 | Baidu (beijing) |
 | mlsaff.sys | 387901 | RUNEXY |
@@ -994,7 +994,7 @@ To see how a driver uses its altitude number in its INF file, see [Creating an I
 | BDFileDefend.sys | 326916 | Baidu (beijing) |
 | BDsdKit.sys | 326914 | Baidu online network technology (beijing)Co., Ltd |
 | bd0003.sys | 326912 | Baidu online network technology (beijing)Co., Ltd |
-| Bfilter.sys | 326910 | Baidu (Hong Kong) Limited |
+| Bfilter.sys | 326910 | Baidu (Hong Kong SAR) Limited |
 | NeoKerbyFilter | 326900 | NeoAutus |
 | egnfsflt.sys | 326830 | Egnyte Inc |
 | RsFlt.sys | 326820 | Redstor Limited |
