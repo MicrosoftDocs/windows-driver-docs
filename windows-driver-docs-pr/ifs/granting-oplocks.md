@@ -8,7 +8,7 @@ ms.date: 07/07/2023
 
 When the network redirector accesses files on remote servers, it requests the oplock from the remote server. Client applications directly request oplocks only when the lock is intended for a file on the local server.
 
-[Oplocks](oplock-overview.md) are requested through [FSCTLs](about-fsctls). The following FSCTLs are used for the different [oplock types](oplock-types.md), which both user-mode applications and kernel-mode drivers can issue:
+[Oplocks](oplock-overview.md) are requested through [FSCTLs](about-fsctls.md). The following FSCTLs are used for the different [oplock types](oplock-types.md), which both user-mode applications and kernel-mode drivers can issue:
 
 * To request legacy oplocks:
   * [FSCTL_REQUEST_OPLOCK_LEVEL_1](fsctl-request-oplock-level-1.md)

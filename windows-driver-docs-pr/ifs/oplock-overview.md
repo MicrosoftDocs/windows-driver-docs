@@ -6,7 +6,7 @@ ms.date: 07/07/2023
 
 # Oplocks
 
-The articles about oplocks found in this section pertain primarily to network redirectors, although some information is provided for client applications. You can find more oplock information for client applications in the Windows SDK's [Opportunistic Locks](/windows/win32/fileio/opportunistic-locks).
+The articles about oplocks found in this section pertain primarily to network redirectors, although some information is provided for client applications. You can find more oplock information for client applications in the Windows SDK's [Opportunistic Locks](/windows/win32/fileio/opportunistic-locks) articles.
 
 ## Oplock overview
 
