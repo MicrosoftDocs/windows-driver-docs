@@ -42,7 +42,7 @@ The following table describes common credential types and EAP method combination
 
 ## Profile format
 
-Except for Online Sign-up, which follows the standard PPS-MO format, all other provisioning methods rely on the [WLANProfile XML](/windows/win32/nativewifi/wireless-profile-samples) format. The Passpoint specific details are specified in the [Hotspot2](/windows/win32/nativewifi/wlan-profileschema-hotspot2-element) element.
+Except for Online Sign-up, which follows the standard PPS-MO format, all other provisioning methods rely on the [WLANProfile XML](/windows/win32/nativewifi/wireless-profile-samples) format. The Passpoint specific details are specified in the [Hotspot2](/windows/win32/nativewifi/wlan-profileschema-hotspot2-wlanprofile-element) element.
 
 ## Older releases
 

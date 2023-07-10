@@ -47,7 +47,7 @@ The following table lists the character encodings supported by the text-mode API
 |CDMA|7-bit ASCII|160 (can vary by network)| |
 |CDMA|Unicode|70 (can vary by network)| |
 
-GSM character sets are defined [3GPP TS 23.038: "Alphabets and language-specific information"](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=745). CDMA character sets are defined in [3GPP2 C.R1001-D](http://www.3gpp2.org/Public_html/).
+GSM character sets are defined [3GPP TS 23.038: "Alphabets and language-specific information"](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=745).
 
 ## Related topics
 
