@@ -10,7 +10,7 @@ ms.date: 06/12/2020
 
 All NetAdapterCx client drivers are Windows Driver Framework (WDF) drivers with power management functionality similar to all WDF drivers. NetAdapterCx drivers require additional networking-specific power configurations as detailed in this article.
 
-A typical networking device supports 3 common power management features:
+A typical networking device supports three common power management features:
 
 - The networking device can enter a lower-power (Dx) state when instructed by the OS.
   - The client driver registers optional WDF event callbacks to receive notification of power transitions, as described in [Supporting PnP and Power Management in Function Drivers](../wdf/supporting-pnp-and-power-management-in-function-drivers.md).
@@ -20,9 +20,9 @@ A typical networking device supports 3 common power management features:
 - When the networking device is in the Dx state, it can trigger a wake-up signal if a pre-configured wake condition has occurred.
   - For details on how a WDF device can wake the system from a system-wide low-power state see [Supporting System Wake-Up](../wdf/supporting-system-wake-up.md).
 
-  - NetAdapterCx provides APIs for the client driver to declare which network events its hardware has wake support for. See the [Setting power capabilities of the network adapter](#setting-power-capabilities-of-the-network-adapter) section below.
+  - NetAdapterCx provides APIs for the client driver to declare which network events its hardware has wake support for. See [Setting power capabilities of the network adapter](#setting-power-capabilities-of-the-network-adapter).
 
-- When the networking device is in the Dx state it can still respond to some commonly used network requests to maintain the host system's presence on the network without waking up the host system. See the [Setting power capabilities of the network adapter](#setting-power-capabilities-of-the-network-adapter) section below.
+- When the networking device is in the Dx state, it can still respond to some commonly used network requests to maintain the host system's presence on the network without waking up the host system. See [Setting power capabilities of the network adapter](#setting-power-capabilities-of-the-network-adapter).
 
 ## Setting power capabilities of the network adapter
 
@@ -48,19 +48,19 @@ Client drivers call any of the following methods to set the wake capabilities th
 
 ### Power consumption and resume latency
 
-When the networking device is in Dx it still consumes power to perform offload and arm for wake. After the device initiates wake-up from Dx there is a delay before the device can transfer packets again. The deeper the internal power state the device goes into the less power it consumes while in Dx, but the longer the resume latency.
+When the networking device is in Dx, it still consumes power to perform offload and arm for wake. After the device initiates wake-up from Dx, there's a delay before the device can transfer packets again. The deeper the internal power state the device goes into the less power it consumes while in Dx, but the longer the resume latency.
 
-The table below describes the general guidelines regarding the trade-off between power consumption and resume latency for each wake capability.
+The following table describes the general guidelines regarding the trade-off between power consumption and resume latency for each wake capability.
 
 > [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided. Please refer to media-specific documentation and the [Windows Hardware Compatibility Program (WHCP)](/windows-hardware/design/compatibility/) for more information about a specific device type.
+> Some information relates to prereleased product which may be substantially modified before commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided. For more information about a specific device type, refer to media-specific documentation and the [Windows Hardware Compatibility Program (WHCP)](/windows-hardware/design/compatibility/).
   
 | Wake Capability | Wake Events | Power Consumption | Resume Latency
 |-|-|-|-|
-| PacketFilter | Any packet matches configured ReceivePacketFilter | Should be lower than when in D0, and the device needs to be kept in an appropriate state so that the resume latency is very small  | <= 10 ms
-| Bitmap |Any packet matches configured bitmap pattern | Should be lower than when armed for PacketFilter because it has more latitude in resume latency | <= 300 ms
-| MagicPacket | Magic packet | Similar to Bitmap | <= 300 ms
-| MediaChange | Media connected or disconnected | Similar to Bitmap | <= 300 ms
+| PacketFilter | Any packet matches configured ReceivePacketFilter | Should be lower than when in D0, and the device needs to be kept in an appropriate state so that the resume latency is very small  | <= 10 ms |
+| Bitmap |Any packet matches configured bitmap pattern | Should be lower than when armed for PacketFilter because it has more latitude in resume latency | <= 300 ms |
+| MagicPacket | Magic packet | Similar to Bitmap | <= 300 ms |
+| MediaChange | Media connected or disconnected | Similar to Bitmap | <= 300 ms |
 
 The following example illustrates how a client driver might initialize its power capabilities. It does this while starting the net adapter but before calling [**NetAdapterStart**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterstart). In this example, the client driver sets its bitmap, media change, and packet filter wake capabilities.
 
@@ -106,7 +106,7 @@ The client can optionally register [*EVT_NET_DEVICE_PREVIEW_POWER_OFFLOAD*](/win
 
 ## Programming protocol power offload and wake patterns
 
-During the device's [powering down sequence](../wdf/power-down-and-removal-sequence-for-a-function-or-filter-driver.md) the driver iterates through the enabled wake patterns and protocol power offloads and programs them into the hardware. The driver does this in its [*EvtDeviceArmWakeFromS0*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_s0) and [*EvtDeviceArmWakeFromSx*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_sx) callback functions.
+During the device's [powering down sequence](../wdf/power-down-and-removal-sequence-for-a-function-or-filter-driver.md), the driver iterates through the enabled wake patterns and protocol power offloads and programs them into the hardware. The driver does this in its [*EvtDeviceArmWakeFromS0*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_s0) and [*EvtDeviceArmWakeFromSx*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_arm_wake_from_sx) callback functions.
 
 The following example shows how a client driver might iterate over the wake pattern list to check for a wake on magic packet entry, then iterate over the power offload list to process IPv4 ARP protocol offload:
 
@@ -201,7 +201,7 @@ The OS is responsible for networking device's power policy decisions. For exampl
 The OS makes power policy decisions based on a broad set of factors, including system-wide power policies and user choices. The following are some common power policies used for networking devices on a Modern Standby system:
 
 > [!IMPORTANT]
-> These power policies may change with OS updates and the information below is provided as an example. Dependencies on specific end-to-end behavior of the OS should be avoided.
+> These power policies may change with OS updates and the following information is provided as an example. Dependencies on specific end-to-end behavior of the OS should be avoided.
 
 - When the PC screen is on and the networking device has been idling, the OS asks the device to go to Dx and arms it for PacketFilter and MediaChange wake.
 
