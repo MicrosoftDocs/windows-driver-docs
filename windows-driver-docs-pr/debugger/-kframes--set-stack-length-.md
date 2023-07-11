@@ -14,43 +14,25 @@ api_type:
 
 # .kframes (Set Stack Length)
 
-
 The **.kframes** command sets the default length of a stack trace display.
 
 ```dbgcmd
 .kframes FrameCountDefault 
 ```
 
-## <span id="ddk_meta_set_stack_length_dbg"></span><span id="DDK_META_SET_STACK_LENGTH_DBG"></span>Parameters
+## Parameters
 
+*FrameCountDefault*
 
-<span id="_______FrameCountDefault______"></span><span id="_______framecountdefault______"></span><span id="_______FRAMECOUNTDEFAULT______"></span> *FrameCountDefault*   
 Specifies the number of stack frames to display when a stack trace command is used.
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+### Environment
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Modes</strong></p></td>
-<td align="left"><p>User mode, kernel mode</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Targets</strong></p></td>
-<td align="left"><p>Live, crash dump</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Platforms</strong></p></td>
-<td align="left"><p>All</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Environment | &nbsp;                 |
+|-------------|------------------------|
+| Modes       | User mode, kernel mode |
+| Targets     | Live, crash dump       |
+| Platforms   | All                    |
 
 ## Remarks
 
@@ -58,19 +40,50 @@ You can use the **.kframes** command to set the default length of a stack trace 
 
 You can override this default length by using the *FrameCount* or *WordCount* parameters for these commands.
 
-If you never issue the **.kframes** command, the default count is 20 (0x14).
+Use the **.kframes** command, without any parameters to see current value.
 
-## <span id="see_also"></span>See also
+```dbgcmd
+.kframes
+Default stack trace depth is 0n256 frames
+```
 
+Use the following command to set the stack trace depth to 0x2.
+
+```dbgcmd
+.kframes 0x2
+Default stack trace depth is 0n2 frames
+```
+
+Using the k command to display two stack and two raw stack values.
+
+```dbgcmd
+k
+ # Child-SP          RetAddr               Call Site
+00 00000054`b71ffb78 00007ffe`1ee672ae     ntdll!DbgBreakPoint
+01 00000054`b71ffb80 00007ffe`1e2a3e2d     ntdll!DbgUiRemoteBreakin+0x4e
+
+kd
+00000054`b71ffb70  00000000
+00000054`b71ffb74  00000000
+```
+
+Specify the *FrameCount* and *WordCount*  to display additional values.
+
+```dbgcmd
+k 3
+ # Child-SP          RetAddr               Call Site
+00 00000054`b71ffb78 00007ffe`1ee672ae     ntdll!DbgBreakPoint
+01 00000054`b71ffb80 00007ffe`1e2a3e2d     ntdll!DbgUiRemoteBreakin+0x4e
+02 00000054`b71ffbb0 00007ffe`1eddef48     KERNEL32!BaseThreadInitThunk+0x1d
+
+kd 5
+00000054`b71ffb70  00000000
+00000054`b71ffb74  00000000
+00000054`b71ffb78  1ee672ae
+00000054`b71ffb7c  00007ffe
+00000054`b71ffb80  00000000
+```
+
+## See also
 
 [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)
-
- 
-
- 
-
-
-
-
-
-

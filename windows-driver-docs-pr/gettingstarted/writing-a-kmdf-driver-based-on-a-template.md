@@ -146,7 +146,7 @@ Now that you have installed your KMDF driver on the target computer, you'll atta
     - [lm](./device-nodes-and-device-stacks.md)
     - [.sympath](../debugger/-sympath--set-symbol-path-.md)
     - [.reload](../debugger/-reload--reload-module-.md)
-    - [x KmdfHelloWorld!\*](../debugger/x--examine-symbols-.md)
+    - [x KmdfDriver!\*](../debugger/x--examine-symbols-.md)
 
 1. To let the target computer run again, choose **Go** from the **Debug** menu or press "g," then press "enter."
 
