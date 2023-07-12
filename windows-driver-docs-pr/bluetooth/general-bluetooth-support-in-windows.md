@@ -1,7 +1,9 @@
 ---
 title: Bluetooth version and profile support in Windows 11
 description: Provides information about Bluetooth version and profile support in Windows 11
-ms.date: 07/11/2023
+ms.date: 07/12/2023
+content_well_notification: 
+  - AI-contribution
 ---
 
 # Bluetooth version and profile support in Windows 11
