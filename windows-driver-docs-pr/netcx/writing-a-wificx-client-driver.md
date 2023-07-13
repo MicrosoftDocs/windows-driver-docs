@@ -41,7 +41,7 @@ auto peerVersion = WifiDeviceGetOsWdiVersion(wdfDevice);
 
 This message flow diagram shows the initialization process.
 
-![Diagram showing the WiFiCx client driver initialization process.](images/wificx_initialization.png)
+:::image type="content" source="images/wificx_initialization.png" alt-text="Diagram showing the WiFiCx client driver initialization process.":::
 
 ### Default adapter (station) creation flow
 
@@ -63,7 +63,7 @@ If this succeeds, WiFiCx will send initialization commands for the device/adapte
 
 For a code example of *EvtWifiDeviceCreateAdapter*, see [Event callback for adapter creation](#event-callback-for-adapter-creation).
 
-![Flow chart showing WiFiCx client driver station adapter creation.](images/wificx_station.png)
+:::image type="content" source="images/wificx_station.png" alt-text="Flow chart showing WiFiCx client driver station adapter creation.":::
 
 ## Handling WiFiCx command messages
 
@@ -83,7 +83,7 @@ Commands are exchanged through a set of callback functions provided by the clien
 
 - Unsolicited indications are also notified via **WifiDeviceReceiveIndication**, but with the **TransactionId** member of [**WDI_MESSAGE_HEADER**](/windows-hardware/drivers/ddi/dot11wificxintf/ns-dot11wificxintf-wdi_message_header) set to **0**.
 
-![Flow chart showing WiFiCx driver command message handling.](images/wificx_command1.png)
+:::image type="content" source="images/wificx_command1.png" alt-text="Flow chart showing WiFiCx driver command message handling.":::
 
 ## Wi-Fi Direct (P2P) support
 

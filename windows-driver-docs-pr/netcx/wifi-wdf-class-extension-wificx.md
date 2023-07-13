@@ -18,7 +18,7 @@ WiFiCx drivers run on Windows 11 only.
 
 The following block diagram illustrates the WiFiCx architecture:
 
-![WiFiCx architecture](images/wificx.png)
+:::image type="content" source="images/wificx.png" alt-text="Diagram that shows the WiFiCx architecture with relationships between WDF, NetAdapterCx, and WiFiCx APIs.":::
 
 A WiFiCx client driver performs three categories of tasks based on its relationships with the framework:
 
