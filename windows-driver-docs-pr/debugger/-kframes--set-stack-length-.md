@@ -2,7 +2,7 @@
 title: .kframes (Set Stack Length)
 description: The .kframes command sets the default length of a stack trace display.
 keywords: ["Set Stack Length (.kframes) command", ".kframes (Set Stack Length) Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 07/13/2023
 topic_type:
 - apiref
 ms.topic: reference
@@ -54,7 +54,7 @@ Use the following command to set the stack trace depth to 0x2.
 Default stack trace depth is 0n2 frames
 ```
 
-Using the k command to display two stack and two raw stack values.
+Use the following commands to display two stack and two raw stack values.
 
 ```dbgcmd
 k
