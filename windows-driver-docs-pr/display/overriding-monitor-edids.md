@@ -1,7 +1,7 @@
 ---
 title: Manufacturer override of monitor EDIDs
 description: Manufacturers can write an INF file to update or override the Extended Display Identification Data (EDID) of any monitor.
-ms.date: 05/05/2023
+ms.date: 07/14/2023
 ms.custom: contperf-fy21q3
 ---
 
@@ -38,19 +38,7 @@ Each block is numbered, starting with 0 for the initial block. To update EDID in
 To update an EDID by using an INF:
 
 1. The monitor manufacturer implements an INF that contains the updated EDID information and downloads the file to the user’s computer. This can be done through Windows Update or by shipping a CD with the monitor.
-2. The monitor class installer extracts the updated EDID information from the INF and stores the information as values under this registry key:
-
-   ```registry
-   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY
-   ```
-
-   Each EDID override is stored under a separate key. For example:
-
-    ```registry
-    HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\DISPLAY\DELA007\
-          5&1608c50f&0&10000090&01&20\Device Parameters\EDID_Override
-    ```
-
+2. Device installation will the updated EDID information from the INF and stores the information as values under the [hardware key](../install/opening-a-device-s-hardware-key.md) of the monitor device. Each EDID override is stored under a separate key under the hardware key of the device.
 3. The monitor driver checks the registry during initialization and uses any EDID information that's stored there instead of the corresponding information on EEPROM. EDID information that has been added to the registry always takes precedence over EEPROM EDID info.
 4. Windows components and user-mode apps use the updated EDID info.
 
@@ -94,7 +82,7 @@ For more information on INFs in general, and **AddReg** and **DDInstall** in par
 Signature="$WINDOWS NT$"
 Class=Monitor
 ClassGuid={4D36E96E-E325-11CE-BFC1-08002BE10318}
-Provider="MS_EDID_OVERRIDE"
+Provider=%MS_EDID_OVERRIDE%
 DriverVer=04/18/2006, 1.0.0.0
 PnpLockdown=1
 
