@@ -90,7 +90,7 @@ Protocol independent multicast
 Pragmatic general multicast
 
 <a href="" id="ipproto-l2tp"></a>IPPROTO\_L2TP  
-Level 2 tunneling protocol
+Layer 2 tunneling protocol
 
 <a href="" id="ipproto-sctp"></a>IPPROTO\_SCTP  
 Stream control transmission protocol
