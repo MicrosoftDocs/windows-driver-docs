@@ -221,7 +221,7 @@ The `%ProgramData%` user-mode environment variable is available for user-mode co
 
 #### Temporary files
 
-Temporary files are files that are temporary and typically used as part of intermediate operations.  These can be written to a sub-path under the `%TEMP%` or `%TMP%` environment variables.  Since these locations are accessed through environment variables, this ability is limited to user mode components.  There are no guarantees on the lifetime or persistence of these temporary files after handles to them are closed.  The operating system or user may choose to clean them up at any time and they may or may not persist across a reboot.
+Temporary files are typically used in intermediate operations.  These can be written to a sub-path under the `%TEMP%` or `%TMP%` environment variables.  Since these locations are accessed through environment variables, this ability is limited to user mode components.  There are no guarantees on the lifetime or persistence of these temporary files after handles to them are closed.  The operating system or user may remove them at any time and they may not persist across a reboot.
 
 Avoid writing files in the root of the `%TEMP%` or `%TMP%` directories. Instead, create a subdirectory with your company name and then write files and further subdirectories within that directory.
 
