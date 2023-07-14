@@ -13,9 +13,9 @@ For information on how to use and modify *Monsamp.inf*, see [Monitor INF File Se
 
 ## Approaches to correcting EDIDs
 
-All monitors, analog or digital, must support EDID, which contains information such as the monitor identifier, manufacturer data, hardware identifier, timing info, and so on. This data is stored in the monitor’s EEPROM in a format that is specified by [VESA](https://vesa.org/).
+All monitors, analog or digital, must support EDID, which contains information such as the monitor identifier, manufacturer data, hardware identifier, timing info, and so on. This data is stored in the monitor's EEPROM in a format that is specified by [VESA](https://vesa.org/).
 
-Monitors provide the EDID to Microsoft Windows components, display drivers, and some user-mode applications. For example, during initialization the monitor driver queries the Windows Display Driver Model (WDDM) driver for its brightness query interface and device driver interface (DDI) support, which is in the EDID. Incorrect or invalid EDID information on the monitor’s EEPROM can therefore lead to problems such as setting incorrect display modes.
+Monitors provide the EDID to Microsoft Windows components, display drivers, and some user-mode applications. For example, during initialization the monitor driver queries the Windows Display Driver Model (WDDM) driver for its brightness query interface and device driver interface (DDI) support, which is in the EDID. Incorrect or invalid EDID information on the monitor's EEPROM can therefore lead to problems such as setting incorrect display modes.
 
 There are two approaches to correcting EDIDs:
 
@@ -31,14 +31,14 @@ EDID data is formatted as one or more 128-byte blocks:
 - EDID version 1.0 through 1.2 consists of a single block of data, per the VESA specification.
 - With EDID version 1.3 or enhanced EDID (E-EDID), manufacturers can specify one or more extension blocks in addition to the primary block.
 
-Each block is numbered, starting with 0 for the initial block. To update EDID info, the manufacturer’s INF specifies the number of the block to be updated and provides 128 bytes of EDID data to replace the original block. The monitor driver obtains the updated data for the corrected blocks from the registry and uses the EEPROM data for the remaining blocks.
+Each block is numbered, starting with 0 for the initial block. To update EDID info, the manufacturer's INF specifies the number of the block to be updated and provides 128 bytes of EDID data to replace the original block. The monitor driver obtains the updated data for the corrected blocks from the registry and uses the EEPROM data for the remaining blocks.
 
 ## Updating an EDID
 
 To update an EDID by using an INF:
 
-1. The monitor manufacturer implements an INF that contains the updated EDID information and downloads the file to the user’s computer. This can be done through Windows Update or by shipping a CD with the monitor.
-2. Device installation will the updated EDID information from the INF and stores the information as values under the [hardware key](../install/opening-a-device-s-hardware-key.md) of the monitor device. Each EDID override is stored under a separate key under the hardware key of the device.
+1. The monitor manufacturer implements an INF that contains the updated EDID information and downloads the file to the user's computer. This can be done through Windows Update or by shipping a CD with the monitor.
+2. Device installation reads the updated EDID information from the INF and stores the information as values under the [hardware key](../install/opening-a-device-s-hardware-key.md) of the monitor device. Each EDID override is stored under a separate key under the hardware key of the device.
 3. The monitor driver checks the registry during initialization and uses any EDID information that's stored there instead of the corresponding information on EEPROM. EDID information that has been added to the registry always takes precedence over EEPROM EDID info.
 4. Windows components and user-mode apps use the updated EDID info.
 
