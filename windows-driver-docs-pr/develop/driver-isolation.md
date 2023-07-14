@@ -1,7 +1,7 @@
 ---
 title: Driver package isolation
 description: This page describes driver isolation, a requirement for a Windows Driver.
-ms.date: 04/15/2022
+ms.date: 07/14/2023
 ---
 
 # Driver package isolation
@@ -151,6 +151,10 @@ This section contains the following subsections:
 
 - [Service file state](#service-file-state)
 
+- [DriverData and ProgramData](#driverdata-and-programdata)
+
+- [Temporary files](#temporary-files)
+
 #### Device file state
 
 If files related to a device need to be written at runtime, those files should be stored relative to a handle or file path provided via OS API's. Configuration files specific to that device is one example of what types of files to be stored here. To access the location of this state, use one of these functions from the service:
@@ -195,7 +199,7 @@ Shared service file state is state that is written at runtime and can be shared 
 
 #### DriverData and ProgramData
 
-Files that are to be used as part of intermediate operations that can be shared with other components can be written to either `DriverData` or `ProgramData` locations.
+Files that can be shared with other components but that do not fit into the [shared service file state](#shared-service-file-state) paradigm can be written to either `DriverData` or `ProgramData` locations.
 
 These locations offer components a location to write temporary state or state that is meant to be consumed by other components and potentially collected and copied from a system to be processed by another system.  For example, custom log files or crash dumps fit this description.
 
@@ -214,6 +218,12 @@ User-mode programs access the `DriverData` directory by using the environment va
 ##### ProgramData
 
 The `%ProgramData%` user-mode environment variable is available for user-mode components to use when storing data.
+
+#### Temporary files
+
+Temporary files are files that are temporary and typically used as part of intermediate operations.  These can be written to a sub-path under the `%TEMP%` or `%TMP%` environment variables.  Since these locations are accessed through environment variables, this ability is limited to user mode components.  There are no guarantees on the lifetime or persistence of these temporary files after handles to them are closed.  The operating system or user may choose to clean them up at any time and they may or may not persist across a reboot.
+
+Avoid writing files in the root of the `%TEMP%` or `%TMP%` directories. Instead, create a subdirectory with your company name and then write files and further subdirectories within that directory.
 
 ### Property state
 
