@@ -15,7 +15,7 @@ NetAdapterCx client drivers receive network data when the framework invokes thei
 
 The following animation illustrates how a client driver for a simple PCI network interface card (NIC) performs post and drain operations for a receive (Rx) queue. Fragment buffers in this example scenario are allocated and attached to the fragment ring by the OS. This example assumes a one-to-one relationship between the hardware receive queue and the OS receive queue.
 
-![Net ring post and drain operations for receive (Rx).](images/net_ring_post_and_drain_operations_rx.gif "Net ring post and drain operations for receive (Rx)")
+:::image type="content" source="images/net_ring_post_and_drain_operations_rx.gif" alt-text="Animation illustrating net ring post and drain operations for receive for a PCI network interface card.":::
 
 In this animation, the packets owned by the client driver are highlighted in light blue and dark blue, and fragments owned by the client driver are highlighted in yellow and orange. The lighter colors represent the *drain* subsection of the elements the driver owns, while the darker colors represent the *post* subsection of the elements the driver owns.
 
