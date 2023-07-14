@@ -10,7 +10,7 @@ api_name:
 - INF Models Section
 api_type:
 - NA
-ms.date: 06/08/2022
+ms.date: 07/12/2023
 ---
 
 # INF Models section
@@ -85,6 +85,8 @@ This example shows a per-manufacturer _Models_ section with some representative 
 %*pnp0f0d.DeviceDesc%= Inp_Inst,*PNP0F0D
 ; ... more StdMfg entries 
 ```
+
+For more examples of OS-specific INF Models sections, see the [Examples](./inf-manufacturer-section.md#examples) section of [INF Manufacturer section](./inf-manufacturer-section.md), and also [Combining platform extensions with operating system versions](./combining-platform-extensions-with-operating-system-versions.md).
 
 ## See also
 
