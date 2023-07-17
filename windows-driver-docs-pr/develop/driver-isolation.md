@@ -199,7 +199,7 @@ Shared service file state is state that is written at runtime and can be shared 
 
 #### DriverData and ProgramData
 
-Files that can be shared with other components but that do not fit into the [shared service file state](#shared-service-file-state) paradigm can be written to either `DriverData` or `ProgramData` locations.
+Files that can be shared with other components but that do not fit into the [shared service file state](#shared-service-file-state) category can be written to either `DriverData` or `ProgramData` locations.
 
 These locations offer components a location to write temporary state or state that is meant to be consumed by other components and potentially collected and copied from a system to be processed by another system.  For example, custom log files or crash dumps fit this description.
 
