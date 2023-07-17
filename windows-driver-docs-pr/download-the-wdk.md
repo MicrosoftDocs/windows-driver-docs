@@ -71,9 +71,11 @@ MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
 
 ### ![download icon.](images/download-install.png) Step 2: Install Windows 11, version 22H2 SDK
 
-After you've successfully installed Visual Studio, your next step is to download the Software Development Kit (SDK). The SDK version number must match the WDK version number, which is the result you will get when you use the provided links.
+After you've successfully installed Visual Studio, your next step is to download the Software Development Kit (SDK).
 
 * [Download Windows 11, version 22H2 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
+
+The provided links for the SDK and the WDK have matching build numbers, which is always required for the kits to work together. If you decide to install your own SDK/WDK pair, perhaps for a different Windows version, ensure that the build numbers match.
 
 ### ![download icon.](images/download-install.png) Step 3: Install Windows 11, version 22H2 WDK
 
