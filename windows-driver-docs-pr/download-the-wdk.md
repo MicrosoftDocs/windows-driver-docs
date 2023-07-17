@@ -6,7 +6,7 @@ keywords:
 - WDK
 - Download
 - drivers
-ms.date: 06/06/2023
+ms.date: 07/17/2023
 ---
 
 # Download the Windows Driver Kit (WDK)
@@ -48,7 +48,7 @@ The following editions of Visual Studio 2022 support driver development for this
 * [Download Visual Studio Professional 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=17)
 * [Download Visual Studio Enterprise 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=17)
 
-When you install Visual Studio 2022, select the **Desktop development with C++** workload. The Windows 11, version 22H2 Software Development Kit (SDK) that is compatible with the Windows 11, version 22H2 WDK is not included in Visual Studio. Please use the SDK download link in step 2 below.
+When you install Visual Studio 2022, select the **Desktop development with C++** workload. Don't worry about the SDK at this point; you'll install this in step 2 below.
 
 WDK has Spectre mitigation enabled by default but requires Spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for. Additionally, developing drivers for Arm/Arm64/Arm64EC require the build tools for these architectures to also be installed with Visual Studio. To locate these items, you will need to know the latest version of MSVC installed on your system.
 
@@ -71,9 +71,11 @@ MSVC v143 - VS 2022 C++ x64/x86 Spectre-mitigated libs (Latest)
 
 ### ![download icon.](images/download-install.png) Step 2: Install Windows 11, version 22H2 SDK
 
+After you've successfully installed Visual Studio, your next step is to download the Windows Software Development Kit (SDK).
+
 * [Download Windows 11, version 22H2 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
 
-This SDK must be installed separately until available through Visual Studio
+The provided links for the SDK and the WDK have matching build numbers, which is always required for the kits to work together. If you decide to install your own SDK/WDK pair, perhaps for a different Windows version, ensure that the build numbers match.
 
 ### ![download icon.](images/download-install.png) Step 3: Install Windows 11, version 22H2 WDK
 
