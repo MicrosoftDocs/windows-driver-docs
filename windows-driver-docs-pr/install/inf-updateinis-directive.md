@@ -16,6 +16,9 @@ ms.date: 07/11/2022
 # INF UpdateInis directive
 
 > [!CAUTION]
+> Starting with Windows 11 version 22H2, a driver package using this directive will no longer be able to receive a signature from Hardware Developer Center.
+ 
+> [!CAUTION]
 > If you are building a universal or Windows Driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md) and [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md).
 
 An **UpdateInis** directive references one or more named sections, specifying an INI file from which a particular section or line is to be read and applied to an existing INI file of the same name on the target computer. Optionally, line-by-line modifications from and to such INI files can be specified in the *update-ini-section*.
