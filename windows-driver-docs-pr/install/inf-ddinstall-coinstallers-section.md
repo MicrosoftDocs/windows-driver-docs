@@ -1,6 +1,6 @@
 ---
 title: INF DDInstall.CoInstallers section
-description: The CoInstallers section registers one or more device-specific co-installers to supplement the operations of existing device class installers.
+description: The Co-Installers section registers one or more device-specific co-installers to supplement the operations of existing device class installers.
 keywords:
 - INF DDInstall.CoInstallers Section Device and Driver Installation
 topic_type:
@@ -61,7 +61,7 @@ However, system INF files that install co-installers never use this directive in
 For more information, see [**INF CopyFiles Directive**](inf-copyfiles-directive.md).
 
 **Include=**_filename_.**inf**[,_filename2_.**inf**]...  
-Specifies one or more additional system-supplied INF files that contain sections needed to install the co-installers for this device or [device setup class](./overview-of-device-setup-classes.md). If this entry is specified, usually so is a **Needs** entry.
+Specifies one or more system-supplied INF files that contain sections needed to install the co-installers for this device or [device setup class](./overview-of-device-setup-classes.md). An INF file with this entry should usually specify **Needs**.
 
 **Needs=**_inf-section-name_[,_inf-section-name_]...  
 Specifies the particular sections that must be processed during the installation of this device. Typically, such a named section is a _DDInstall_**.CoInstallers** section within a system-supplied INF file that is listed in an **Include** entry. However, it can be any section that is referenced within such a _DDInstall_**.CoInstallers** section of the included INF.
@@ -77,7 +77,7 @@ References a file-list section specifying files on the destination to be renamed
 For more information, see [**INF RenFiles Directive**](inf-renfiles-directive.md).
 
 **DelReg=**_del-registry-section_[,_del-registry-section_]...  
-References one or more INF-writer-define *delete-registry-section*s. Such a section specifies stale registry information about the co-installers for a previous installation of the same devices that should be removed from the registry. An **HKR** specified in such a delete-registry section designates the same registry subkey as already described for the **AddReg** entry. This directive is very rarely used in a _DDInstall_**.CoInstallers** section.
+References one or more INF-writer-define *delete-registry-section*s. Such a section specifies stale registry information about the co-installers for a previous installation of the same devices that should be removed from the registry. An **HKR** specified in such a delete-registry section designates the same registry subkey as already described for the **AddReg** entry. This directive is rarely used in a _DDInstall_**.CoInstallers** section.
 
 For more information, see [**INF DelReg Directive**](inf-delreg-directive.md).
 
@@ -111,7 +111,7 @@ Each directive in a _DDInstall_.**CoInstallers** section can reference more than
 
 Each directive-created section name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
-A co-installer is a Win32 DLL that typically writes additional configuration information to the registry or performs other installation tasks that require dynamically generated, system-specific information that is not available when an INF is created. A device-specific co-installer supplements the installation operations either of the OS's device installer or of the appropriate class installer when that device is installed.
+A co-installer is a Win32 DLL that typically writes extra configuration information to the registry or performs other installation tasks that require dynamically generated, system-specific information that isn't available when an INF is created. A device-specific co-installer supplements the installation operations either of the OS's device installer or of the appropriate class installer when that device is installed.
 
 For more information about how to write and using co-installers, see [Writing a Co-installer](writing-a-co-installer.md).
 
@@ -139,7 +139,7 @@ For more information, see [Registering a Device-Specific Co-installer](registeri
 
 ### Registering Device-Class Co-installers
 
-To add a value entry (and setup-class subkey, if it does not exist already) for one or more device-class co-installers to the registry, an _add-registry-section_ referenced by the [**AddReg**](inf-addreg-directive.md) directive has the following general form:
+To add a value entry (and setup-class subkey, if it doesn't exist already) for one or more device-class co-installers to the registry, an _add-registry-section_ referenced by the [**AddReg**](inf-addreg-directive.md) directive has the following general form:
 
 ```inf
 [DDInstall.CoInstallers_ClassAddReg]
@@ -207,7 +207,7 @@ The preceding PNP.**NT.CoInstallers** section only referenced a co-installer-spe
 
 It has no [**CopyFiles**](inf-copyfiles-directive.md) directive because this system-supplied INF installs a set of IrDA network devices. Like all system INF files, this INF file uses the **LayoutFile** entry in its [**Version**](inf-version-section.md) section to transfer the co-installer file to the destination.
 
-Be aware that any _DDInstall_**.CoInstallers** section in an INF supplied by an IHV or OEM also has a **CopyFiles** directive, along with [**SourceDisksNames**](inf-sourcedisksnames-section.md) and [**SourceDisksFiles**](inf-sourcedisksfiles-section.md) sections.
+Any _DDInstall_**.CoInstallers** section in an INF supplied by an IHV or OEM requires a **CopyFiles** directive and also [**SourceDisksNames**](inf-sourcedisksnames-section.md) and [**SourceDisksFiles**](inf-sourcedisksfiles-section.md) sections.
 
 ## See also
 
