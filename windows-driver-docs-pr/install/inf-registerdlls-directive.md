@@ -18,7 +18,7 @@ ms.date: 07/17/2023
 [!INCLUDE [Caution invalid INF directive](../includes/inf-directive-invalid-22h2.md)]
  
 > [!NOTE]
-> You can use the [Reg2inf tool](../devtest/reg2inf.md) to convert existing [INF RegisterDlls directives](../install/inf-registerdlls-directive.md) into [INF AddReg directives](../install/inf-addreg-directive.md) in order to make a driver package universal.
+> You can use the [Reg2inf tool](../devtest/reg2inf.md) to convert existing [INF RegisterDlls directives](../install/inf-registerdlls-directive.md) into [INF AddReg directives](../install/inf-addreg-directive.md) in order to make a driver package Universal.
 
 A **RegisterDlls** directive references one or more INF sections used to specify files that are OLE controls and require self-registration.
 
