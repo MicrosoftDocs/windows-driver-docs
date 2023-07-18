@@ -15,7 +15,7 @@ ms.date: 07/17/2023
 
 # INF DDInstall.FactDef section
 
-[!INCLUDE [Caution invalid INF directive](../includes/inf-directive-invalid-22h2.md)]
+[!INCLUDE [Caution invalid INF directive](../includes/inf-section-invalid-22h2.md)]
 
 This section should be used in an INF for any manually installed non-PnP device that an end-user might install. This section specifies the factory-default hardware configuration settings, such as the bus-relative I/O ports and IRQ (if any), for such a card.
 

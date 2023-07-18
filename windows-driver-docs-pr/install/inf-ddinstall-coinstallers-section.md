@@ -15,7 +15,7 @@ ms.date: 07/17/2023
 
 # INF DDInstall.CoInstallers section
 
-[!INCLUDE [Caution invalid INF directive](../includes/inf-directive-invalid-22h2.md)]
+[!INCLUDE [Caution invalid INF directive](../includes/inf-section-invalid-22h2.md)]
 
 This optional section registers one or more device-specific co-installers supplied on the distribution media to supplement the operations of existing device class installers.
 
