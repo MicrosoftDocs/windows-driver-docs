@@ -10,13 +10,12 @@ api_name:
 - INF UnregisterDlls Directive
 api_type:
 - NA
-ms.date: 07/11/2022
+ms.date: 07/17/2023
 ---
 
 # INF UnregisterDlls directive
 
-> [!CAUTION]
-> If you are building a universal or Windows Driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md) and [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md).
+[!INCLUDE [Caution invalid INF directive](../includes/inf-directive-invalid-22h2.md)]
 
 An **UnregisterDlls** directive references one or more INF sections used to specify files that are OLE controls and require self-unregistration (self-removal).
 

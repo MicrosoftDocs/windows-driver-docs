@@ -10,13 +10,12 @@ api_name:
 - INF DDInstall.LogConfigOverride Section
 api_type:
 - NA
-ms.date: 06/02/2022
+ms.date: 07/17/2023
 ---
 
 # INF DDInstall.LogConfigOverride section
 
-> [!CAUTION]
-> If you are building a universal or Windows Driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md) and [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md).
+[!INCLUDE [Caution invalid INF section](../includes/inf-section-invalid-22h2.md)]
 
 _DDInstall_.**LogConfigOverride** sections are used to create an [override configuration](../kernel/hardware-resources.md#logical-configuration-types-for-resource-requirements-lists), which overrides the hardware resource requirements that a Plug and Play device's bus driver reports.
 
