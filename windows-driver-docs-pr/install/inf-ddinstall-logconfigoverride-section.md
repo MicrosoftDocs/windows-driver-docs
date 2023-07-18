@@ -15,7 +15,7 @@ ms.date: 07/17/2023
 
 # INF DDInstall.LogConfigOverride section
 
-[!INCLUDE [Caution invalid INF directive](../includes/inf-section-invalid-22h2.md)]
+[!INCLUDE [Caution invalid INF section](../includes/inf-section-invalid-22h2.md)]
 
 _DDInstall_.**LogConfigOverride** sections are used to create an [override configuration](../kernel/hardware-resources.md#logical-configuration-types-for-resource-requirements-lists), which overrides the hardware resource requirements that a Plug and Play device's bus driver reports.
 
