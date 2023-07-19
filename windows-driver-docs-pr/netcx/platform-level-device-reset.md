@@ -110,4 +110,4 @@ When the OS or the client driver triggers PLDR, the following sequence occurs:
 
 The following diagram illustrates the NetAdapterCx reset and recover sequence:
 
-![Illustration of the NetAdapterCx reset and recover sequence outlined above.](images/pldr_flowchart.png)
+:::image type="content" source="images/pldr_flowchart.png" alt-text="Flowchart illustrating the NetAdapterCx reset and recover sequence.":::

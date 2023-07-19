@@ -10,7 +10,7 @@ api_name:
 - INF Manufacturer Section
 api_type:
 - NA
-ms.date: 01/24/2023
+ms.date: 07/14/2023
 ---
 
 # INF Manufacturer section
@@ -268,9 +268,9 @@ This example shows a **Manufacturer** section typical to an INF for a single IHV
 
 ```inf
 [Manufacturer]
-%Mfg%=Contoso        ; Models section == Contoso
+%Mfg%=Contoso,NTamd64        ; Models section == Contoso
 
-[Contoso]
+[Contoso.NTamd64]
 
 ; ...
 [Strings]
@@ -281,10 +281,10 @@ The next example shows part of a **Manufacturer** section typical to an INF for 
 
 ```inf
 [Manufacturer]
-%CONTOSO%=Contoso_Section
+%CONTOSO%=Contoso_Section,NTamd64
 ; several entries omitted here for brevity
-%FABRIKAM%=Fabrikam_Section
-%ADATUM%=Adatum_Section
+%FABRIKAM%=Fabrikam_Section,NTamd64
+%ADATUM%=Adatum_Section,NTamd64
 ```
 
 The following example shows a **Manufacturer** section that is specific to x86 platforms, Windows XP and later:

@@ -10,13 +10,12 @@ api_name:
 - INF ProfileItems Directive
 api_type:
 - NA
-ms.date: 07/06/2022
+ms.date: 07/17/2023
 ---
 
 # INF ProfileItems directive
 
-> [!CAUTION]
-> If you are building a universal or Windows Driver package, this directive is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md) and [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md).
+[!INCLUDE [Caution invalid INF directive](../includes/inf-directive-invalid-22h2.md)]
 
 A **ProfileItems** directive is used in an [**INF *DDInstall* section**](inf-ddinstall-section.md) to list one or more *profile-items-sections* that contain items or groups to be added to, or removed from, the Start menu.
 
