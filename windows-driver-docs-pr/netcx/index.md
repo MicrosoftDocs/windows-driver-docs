@@ -19,7 +19,7 @@ In previous versions of Windows, WDF and NDIS had individual advantages, but did
 
 With the NetAdapterCx model, conversely, you write a real WDF driver for your NIC. This means that your NetAdapterCx driver has access to full WDF functionality, as well as networking-specific APIs and I/O support from the NetAdapter class extension. As shown in the block diagram below, NetAdapterCx still works behind the scenes with NDIS, but it handles all the interaction with NDIS on your behalf.
 
-<img src="images/netcx-architecture.png" alt="Diagram of the NetAdapterCx architecture." title="NetAdapterCx architecture" width="600"/>
+:::image type="content" source="images/netcx-architecture.png" alt-text="Diagram that shows the NetAdapterCx architecture.":::
 
 ## Additional info
 

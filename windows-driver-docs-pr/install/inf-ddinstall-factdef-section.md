@@ -10,13 +10,12 @@ api_name:
 - INF DDInstall.FactDef Section
 api_type:
 - NA
-ms.date: 06/01/2022
+ms.date: 07/17/2023
 ---
 
 # INF DDInstall.FactDef section
 
-> [!CAUTION]
-> If you are building a universal or Windows Driver package, this section is not valid. See [Using a Universal INF File](using-a-universal-inf-file.md) and [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md).
+[!INCLUDE [Caution invalid INF section](../includes/inf-section-invalid-22h2.md)]
 
 This section should be used in an INF for any manually installed non-PnP device that an end-user might install. This section specifies the factory-default hardware configuration settings, such as the bus-relative I/O ports and IRQ (if any), for such a card.
 

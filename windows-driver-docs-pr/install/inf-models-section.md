@@ -10,7 +10,7 @@ api_name:
 - INF Models Section
 api_type:
 - NA
-ms.date: 07/12/2023
+ms.date: 07/14/2023
 ---
 
 # INF Models section
@@ -74,15 +74,13 @@ This example shows a per-manufacturer _Models_ section with some representative 
 
 ```inf
 [Manufacturer]
-%StdMfg% = StdMfg         ; (Standard types)
-%MSMfg%  = MSMfg          ; Microsoft
+%StdMfg% = StdMfg,NTamd64         ; (Standard types)
+%MSMfg%  = MSMfg,NTamd64          ; Microsoft
 ; ... %otherMfg% omitted here
 
-[StdMfg]  ; per-Manufacturer Models section 
-  ; Std serial mouse
+[StdMfg.NTamd64]  ; per-Manufacturer Models section 
+; Std serial mouse
 %*pnp0f0c.DeviceDesc%= Ser_Inst,*PNP0F0C,SERENUM\PNP0F0C,SERIAL_MOUSE
-  ; Std InPort mouse
-%*pnp0f0d.DeviceDesc%= Inp_Inst,*PNP0F0D
 ; ... more StdMfg entries 
 ```
 
