@@ -1,12 +1,12 @@
 ---
 title: Bluetooth Low Energy (LE) Audio
-description: This article provides an overview of Bluetooth LE Audio introduced in Windows 11 version 22H2.
+description: This article provides an overview of Bluetooth LE Audio introduced in Windows 11 version 22H2 (KB5026446).
 ms.date: 07/11/2023
 ---
 
 # Bluetooth Low Energy (LE) Audio
 
-This article provides an overview of Bluetooth LE Audio introduced in Windows 11 version 22H2.
+This article provides an overview of Bluetooth LE Audio introduced in Windows 11 version 22H2 (KB5026446).
 
 ## Introduction
 
@@ -22,6 +22,7 @@ In addition to the terms defined in this table, this document also references te
 | Classic audio | Bluetooth audio streaming that uses the hands-free profile (HFP) and advanced audio distribution profile (A2DP) |
 | Audio Device | A single remote Bluetooth LE Audio device or set of Bluetooth LE Audio devices that together compose a single audio endpoint from the perspective of Windows. |
 | BAP | Acronym for the [Basic Audio Profile](https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=522996) defined by the Bluetooth SIG. |
+| TMAP | Acronym for the [Telephony and Media Audio Profile](https://www.bluetooth.com/specifications/tmap-1-0/) defined by the Bluetooth SIG. |
 | ASCS | The [Audio Stream Control Service](https://www.bluetooth.com/specifications/specs/audio-stream-control-service/) defines a standard way for Bluetooth LE Audio devices to configure and establish unicast audio streams. |
 | PACS | The [Published Audio Capabilities Service](https://www.bluetooth.com/specifications/specs/published-audio-capabilities-service/) defines a standard way for Bluetooth LE Audio devices to report its supported audio codec capabilities. |
 | CIS | The Connected Isochronous Streams transport is used to send and receive unicast audio data between Bluetooth LE devices. |
@@ -191,8 +192,6 @@ Bluetooth LE Audio requires capture audio formats to be declared for the Default
 
 **Use case**: Voice recorder, VOIP calls, or video game audio with voice chat.
 
-**Signal processing mode**: Default
-
 Audio formats are ordered from most preferred to least preferred.
 
 | Sampling Frequency | Channel Count | Bit Depth | Frame Duration | Audio Data Rate | BAP Codec Configuration ID (Table 3.11 of the BAP Specification) |
@@ -247,7 +246,7 @@ The PC is connected to a single audio device that supports stereo streams. The a
 | Use Case Examples | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
 | Media playback | Signal Processing Mode: Default<br>Channel Count: 2<br>**Capture**: None | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: High reliability |
-| Voice call with no microphone on audio device | Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture**: None | CIS Count: 1<br>
+| Voice call with no microphone on audio device | Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture**: None | CIS Count: 2<br>
 CIG Count: 1<br>BAP QoS Settings: Low latency<br>Audio Channel Allocation: Either front left or front right |
 | Video game playback | Signal Processing Mode: Default<br>Channel Count: 2<br>**Capture**: None | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low latency<br>Audio Channel Allocation: Front left and front right |
 
@@ -281,31 +280,6 @@ The PC is connected to a single audio device with a bidirectional mono stream es
 |---|---|---|
 | Voice call | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 1<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
 | Video game playback with voice chat | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 1<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
-
-###### Basic audio profile configuration 7(i)
-
-The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
-
-:::image type="content" source="images/bap-configuration-7-i.png" alt-text="Diagram of basic audio profile configuration 7 I.":::
-
-The PC is connected to a single audio device with a bidirectional mono stream established on 2 separate CISes.
-
-| Use Case | Windows Audio Settings | Bluetooth Controller Settings |
-|---|---|---|
-| Voice call | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
-| Video game playback with voice chat | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
-
-###### Basic audio profile configuration 5
-
-The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
-
-:::image type="content" source="images/bap-configuration-5.png" alt-text="Diagram of basic audio profile configuration 5.":::
-
-The PC is connected to a single audio device with a stereo render stream and mono capture stream established on a single CIS. The device is capable of processing two channels of audio on a single CIS.
-
-| Use Case | Windows Audio Settings | Bluetooth Controller Settings |
-|---|---|---|
-| Video game playback with voice chat | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 2<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 1<br>CIG Count: 1<br>BAP QoS Settings: Low Latency<br>Render audio channel allocation: Front left and front right |
 
 ###### Basic audio profile configuration 8(i)
 
@@ -403,7 +377,7 @@ Field values are defined in tables 3.2 and 3.4 of the [Published Audio Capabilit
 
 This property is set by the audio driver to indicate the data path ID used as the parameter for the commands HCI_LE_Setup_ISO_Data_Path and HCI_Configure_Data_Path. The property value is set using the **[AcxObjectBagAddUI8](/windows-hardware/drivers/ddi/acxmisc/nf-acxmisc-acxobjectbagaddui8)** DDI.
 
-The Bluetooth LE Audio profile reads and uses this property is as a parameter in HCI_Configure_Data_Path and HCI_LE_Setup_ISO_Data_Path commands. This ID is applied for all isochronous streams created for the **ACXSTREAM** associated with the object bag. To assign a different data path ID for each stream connection, IHV audio drivers should use [KSPROPERTY_BtLeAudio_DATAPATH_ID](#ksproperty_btleaudio_datapath_id) instead.
+The Bluetooth LE Audio profile reads and uses this property is as a parameter in HCI_Configure_Data_Path and HCI_LE_Setup_ISO_Data_Path commands. This ID is applied for all isochronous streams created for the **ACXSTREAM** associated with the object bag.
 
 | Field | Octet |
 |---|---|
@@ -413,7 +387,7 @@ If the property isn't set by the audio driver, then the OS uses the value 1 as t
 
 ###### Bluetooth_DatapathConfiguration
 
-This property is set by the audio driver to provide vendor specific configurations to the Bluetooth controller via the HCI_Configure_Data_Path command. It shall not be larger than 255 bytes, which is the largest payload that a Bluetooth controller accepts for an HCI command. The property value is set using the DDI **[AcxObjectBagAddBlob](/windows-hardware/drivers/ddi/acxmisc/nf-acxmisc-acxobjectbagaddblob)**. This configuration is applied for everything data path ID set by the audio driver. To assign a different data path configuration for each datapath ID, IHV audio driver should use [KSPROPERTY_BtLeAudio_DATAPATH_CONFIG](#ksproperty_btleaudio_datapath_config) instead.
+This property is set by the audio driver to provide vendor specific configurations to the Bluetooth controller via the HCI_Configure_Data_Path command. It shall not be larger than 255 bytes, which is the largest payload that a Bluetooth controller accepts for an HCI command. The property value is set using the **[AcxObjectBagAddBlob](/windows-hardware/drivers/ddi/acxmisc/nf-acxmisc-acxobjectbagaddblob)** DDI. This configuration is applied for everything data path ID set by the audio driver.
 
 ###### BluetoothLEAudio_CodecConfiguration
 
@@ -432,47 +406,6 @@ This property shall be set by the Bluetooth LE Audio profile using the DDI **[Ac
 Field values are defined in table 4.3 of the [Bluetooth Audio Stream Control Service Specification](https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=522995).
 
 The vendor specific audio driver stack should read this property if the LC3 codec is in the ACX streaming driver or audio DSP.
-
-###### BluetoothLEAudio_StreamConnectionHandles
-
-This property shall be set by the Bluetooth LE Audio profile to inform the audio driver of the list of BIS or CIS handles created for a BIG or CIG. The order of the handles matches the order returned by the Bluetooth controller to the HCI command LE_Set_CIG_Parameters or the HCI event LE_Create_BIG_Complete. The structure of the value is:
-
-| Field | Size | Octet |
-|---|---|---|
-| Connection Handle Count | 1 | 0 |
-| Connection Handle[i] | 2 | 1-n |
-
-##### Bluetooth LE Audio KS properties
-
-KS properties allow the IHV ACX audio driver to set or update audio stream settings after the stream is created. This is useful for audio drivers to set configuration settings based on properties set by the Bluetooth profile circuit in the create stream procedure.
-
-###### KS property definitions
-
-```cpp
-#define STATIC_KSPROPSETID_BtLeAudio\
-    0x1159b79, 0xea6, 0x4923, 0x80, 0xf5, 0x32, 0x58, 0xd1, 0xfd, 0x91, 0x56
-DEFINE_GUIDSTRUCT("01159B79-0EA6-4923-80F5-3258D1FD9156", KSPROPSETID_BtLeAudio);
-#define KSPROPSETID_BtLeAudio DEFINE_GUIDNAMED(KSPROPSETID_BtLeAudio)
-
-typedef enum {
-    KSPROPERTY_BtLeAudio_DATAPATH_ID,
-    KSPROPERTY_BtLeAudio_DATAPATH_CONFIG,
-} KSPROPERTY_BtLeAudio;
-```
-
-###### KSPROPERTY_BtLeAudio_DATAPATH_ID
-
-This KSProperty allows IHV ACX audio drivers to set or update the value set by *Bluetooth_DatapathID* after the create stream callback is invoked. This property also allows IHV audio drivers to assign a different data path ID for each codec configuration entry in *[BluetoothLEAudio_CodecConfiguration](#bluetoothleaudio_codecconfiguration)*. The value of this property shall either be set to a single byte value to represent the data path ID used for all codec configurations, or n bytes where n is equal to the Configuration Count value set in the *[BluetoothLEAudio_CodecConfiguration](#bluetoothleaudio_codecconfiguration)* property. If the value contains multiple data path IDs, then the order of the IDs shall be used for the codec configuration as ordered in the *[BluetoothLEAudio_CodecConfiguration](#bluetoothleaudio_codecconfiguration)* property.
-
-###### KSPROPERTY_BtLeAudio_DATAPATH_CONFIG
-
-This KSProperty allows IHV ACX audio drivers to set or update the data path configuration as defined in Bluetooth_DatapathConfiguration. The KSProperty shall be sent by the audio driver to the Bluetooth profile before the start audio stream callback is invoked. This property may be used to set a single configuration for all data paths in a single direction or to set a specific data path configuration for each codec configuration entry set in *[BluetoothLEAudio_CodecConfiguration](#bluetoothleaudio_codecconfiguration)*. If the value contains multiple data path IDs, then the order of the IDs shall be used for the codec configuration entry as ordered in the *[BluetoothLEAudio_CodecConfiguration](#bluetoothleaudio_codecconfiguration)* property.
-
-| Field | Size | Octet |
-|---|---|---|
-| Configuration Count | 1 byte | 1 or Codec Configuration Count set in *[BluetoothLEAudio_CodecConfiguration](#bluetoothleaudio_codecconfiguration)* |
-| Configuration Size[i] | 1 byte | Shall not exceed 255
-| Configuration[i] | Configuration Size[i] | &nbsp; |
 
 ### Interfaces
 
@@ -522,7 +455,6 @@ When the IHV ACX Streaming driver loads and determines that it supports Bluetoot
 1. When a request to create a circuit is received, the IHV ACX streaming driver:
    1. Creates **ACXCIRCUIT**, [ACXPIN](/windows-hardware/drivers/audio/acx-summary-of-objects#acx-pin), [ACXOBJECTBAG](/windows-hardware/drivers/audio/acx-summary-of-objects#acx-object-bag), and [ACXSTREAMBRIDGE](/windows-hardware/drivers/audio/acx-summary-of-objects#acx-stream-bridge) objects.
    1. If the LC3 or vendor specific codec is hosted in the audio driver or DSP, then the IHV ACX streaming driver sets the *BluetoothLEAudio_CodecCapabilities* property on the **ACXOBJECTBAG**.
-   1. If the VSAP variant used is inband, then the IHV ACX streaming driver should set the *Bluetooth_RequiresHciTransportInD0ForStreaming* property on the **ACXOBJECTBAG**
    1. The IHV ACX streaming driver may set Bluetooth_DatapathID or Bluetooth_DatapathConfiguration on the **ACXOBJECTBAG** if it's known at this time.
 1. After both circuits are created, ACX invokes the **[EvtAcxPinConnected](/windows-hardware/drivers/ddi/acxpin/nc-acxpin-evt_acx_pin_connected)** callback on the IHV ACX driver's bridge pin.
 1. When it's **EvtAcxPinConnected** callback is invoked, the IHV ACX streaming driver:
@@ -570,7 +502,6 @@ When its **[EvtAcxStreamPrepareHardware](/windows-hardware/drivers/ddi/acxstream
 1. Allocates resources for a unicast stream by:
    1. Configuring a CIG with the HCI_LE_Set_CIG_Parameters command if it wasn't already configured in the create stream callback.
    1. Sending the ASCS config QoS operation to synchronize settings with the remote device.
-1. Allocates resources for a broadcast stream by performing the BAP broadcast audio stream configuration procedure defined in the BAP specification.
 
 :::image type="content" source="images/btle-audio-stream-perparation-profile-circuit.png" alt-text="Diagram of the Bluetooth LE Audio stream preparation of a profile circuit.":::
 

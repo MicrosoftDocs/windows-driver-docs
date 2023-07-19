@@ -54,26 +54,26 @@ Windows 11 version 22H2 supports Bluetooth version 5.3 and the following Bluetoo
 | Audio/Video Control Transport Protocol      | AVCTP        | 1.4     |
 | Audio Video Distribution Transport Protocol | AVDTP        | 1.3     |
 | A/V Remote Control Profile                  | AVRCP        | 1.6.2   |
-| Basic Audio Profile                         | BAP          | 1.1     |
+| Basic Audio Profile                         | BAP          | 1.0.1   |
 | Bluetooth Network Encapsulation Protocol    | BNEP         | 1.0     |
-| Call Control Profile                        | CIP          | 1.1     |
-| Common Audio Profile                        | CAP          | 1.1     |
-| Coordinated Set Identification Profile      | CSIP         | 1.0     |
+| Call Control Profile                        | CCP          | 1.0     |
+| Common Audio Profile                        | CAP          | 1.0     |
+| Coordinated Set Identification Profile      | CSIP         | 1.0.1   |
 | Device ID                                   | DID          | 1.3     |
 | Dial Up Networking Profile                  | DUN          | 1.1     |
 | Generic A/V Distribution Profile            | GAVDP        | 1.3     |
 | Hands-Free Profile                          | HFP          | 1.7.2   |
 | Hard Copy Replacement Profile 1.2           | HRCP         | 1.1     |
-| Hearing Access Profile                      | HAP          | 1.1     |
+| Hearing Access Profile                      | HAP          | 1.0     |
 | Human Interface Device                      | HID          | 1.1.1   |
-| Media Control Profile                       | MCP          | 1.1     |
-| Microphone Control Profile                  | MCAP         | 1.1     |
+| Media Control Profile                       | MCP          | 1.0     |
+| Microphone Control Profile                  | MICP         | 1.0     |
 | Object Push Profile                         | OPP          | 1.1     |
 | Personal Area Network Profile               | PAN          | 1.0     |
 | Radio Frequency Communication               | RFCOMM       | 1.1     |
 | Serial Port Profile                         | SPP          | 1.2     |
-| Telephony and Media Audio Profile           | TMAP         | 1.1     |
-| Volume Control Profile                      | VCP          | 1.1     |
+| Telephony and Media Audio Profile           | TMAP         | 1.0     |
+| Volume Control Profile                      | VCP          | 1.0     |
 
 ## New features and recommendations for Windows 11 version 22H2 and later
 
