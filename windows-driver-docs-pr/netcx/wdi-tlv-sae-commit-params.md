@@ -1,17 +1,15 @@
 ---
-title: WDI_TLV_SAE_COMMIT_REQUEST (dot11wificxtypes.hpp)
+title: WDI_TLV_SAE_COMMIT_PARAMS (dot11wificxtypes.hpp)
 ms.topic: reference
-description: WDI_TLV_SAE_COMMIT_REQUEST is a WiFiCx TLV that contains parameters for a Simultaneous Authentication of Equals (SAE) Commit request. 
-ms.date: 07/31/2021
-keywords:
- - WDI_TLV_SAE_COMMIT_REQUEST Network Drivers Starting with Windows Vista
+description: WDI_TLV_SAE_COMMIT_PARAMS is a WiFiCx TLV that contains parameters for a Simultaneous Authentication of Equals (SAE) Commit request. 
+ms.date: 07/19/2023
 ---
 
-# WDI_TLV_SAE_COMMIT_REQUEST (dot11wificxtypes.hpp)
+# WDI_TLV_SAE_COMMIT_PARAMS (dot11wificxtypes.hpp)
 
 [!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
-**WDI_TLV_SAE_COMMIT_REQUEST** is a TLV that contains parameters for a Simultaneous Authentication of Equals (SAE) Commit request. 
+**WDI_TLV_SAE_COMMIT_PARAMS** is a TLV that contains parameters for a Simultaneous Authentication of Equals (SAE) Commit request. 
 
 This TLV is used in the command parameters for [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md).
 

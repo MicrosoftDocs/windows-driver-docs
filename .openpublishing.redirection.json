@@ -4363,6 +4363,26 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "windows-driver-docs-pr/netcx/wdi-tlv-sae-commit-response.md",
+            "redirect_URL": "/windows-hardware/drivers/netcx/wdi-tlv-sae-commit-frame",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/netcx/wdi-tlv-sae-commit-request.md",
+            "redirect_URL": "/windows-hardware/drivers/netcx/wdi-tlv-sae-commit-params",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/netcx/wdi-tlv-sae-confirm-request.md",
+            "redirect_URL": "/windows-hardware/drivers/netcx/wdi-tlv-sae-confirm-params",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/netcx/wdi-tlv-sae-confirm-response.md",
+            "redirect_URL": "/windows-hardware/drivers/netcx/wdi-tlv-sae-confirm-frame",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "windows-driver-docs-pr/network/-ndis-status-dot11-wfd-group-operating-channel.md",
             "redirect_URL": "/previous-versions/windows/hardware/wireless/-ndis-status-dot11-wfd-group-operating-channel",
             "redirect_document_id": false

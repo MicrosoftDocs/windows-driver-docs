@@ -13,7 +13,7 @@ keywords:
 
 **WDI_TLV_SAE_SCALAR** is a TLV that contains the Finite Field Element (FFE) for a Simultaneous Authentication of Equals (SAE) Commit request.
 
-This TLV is used in [WDI_TLV_SAE_COMMIT_REQUEST](wdi-tlv-sae-commit-request.md).
+This TLV is used in [WDI_TLV_SAE_COMMIT_PARAMS](wdi-tlv-sae-commit-params.md).
 
 ## TLV Type
 

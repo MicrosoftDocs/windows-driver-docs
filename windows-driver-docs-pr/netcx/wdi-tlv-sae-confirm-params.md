@@ -1,17 +1,15 @@
 ---
-title: WDI_TLV_SAE_CONFIRM_REQUEST (dot11wificxtypes.hpp)
+title: WDI_TLV_SAE_CONFIRM_PARAMS (dot11wificxtypes.hpp)
 ms.topic: reference
-description: WDI_TLV_SAE_CONFIRM_REQUEST is a WiFiCx TLV that contains parameters for a SAE Confirm request. 
-ms.date: 07/31/2021
-keywords:
- - WDI_TLV_SAE_CONFIRM_REQUEST Network Drivers Starting with Windows Vista
+description: WDI_TLV_SAE_CONFIRM_PARAMS is a WiFiCx TLV that contains parameters for a SAE Confirm request. 
+ms.date: 07/19/2023
 ---
 
-# WDI_TLV_SAE_CONFIRM_REQUEST (dot11wificxtypes.hpp)
+# WDI_TLV_SAE_CONFIRM_PARAMS (dot11wificxtypes.hpp)
 
 [!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
-**WDI_TLV_SAE_CONFIRM_REQUEST** is a TLV that contains parameters for a Simultaneous Authentication of Equals (SAE) Confirm request. 
+**WDI_TLV_SAE_CONFIRM_PARAMS** is a TLV that contains parameters for a Simultaneous Authentication of Equals (SAE) Confirm request. 
 
 This TLV is used in the command parameters for [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md).
 

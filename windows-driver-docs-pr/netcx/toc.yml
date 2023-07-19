@@ -532,16 +532,16 @@
       href: wdi-tlv-rtt-variance.md
     - name: "WDI_TLV_ANTI_CLOGGING_TOKEN"
       href: wdi-tlv-sae-anti-clogging-token.md
-    - name: "WDI_TLV_SAE_COMMIT_REQUEST"
-      href: wdi-tlv-sae-commit-request.md
-    - name: "WDI_TLV_SAE_COMMIT_RESPONSE"
-      href: wdi-tlv-sae-commit-response.md
+    - name: "WDI_TLV_SAE_COMMIT_FRAME"
+      href: wdi-tlv-sae-commit-frame.md
+    - name: "WDI_TLV_SAE_COMMIT_PARAMS"
+      href: wdi-tlv-sae-commit-params.md
     - name: "WDI_TLV_SAE_CONFIRM"
       href: wdi-tlv-sae-confirm.md
-    - name: "WDI_TLV_SAE_CONFIRM_REQUEST"
-      href: wdi-tlv-sae-confirm-request.md
-    - name: "WDI_TLV_SAE_CONFIRM_RESPONSE"
-      href: wdi-tlv-sae-confirm-response.md
+    - name: "WDI_TLV_SAE_CONFIRM_FRAME"
+      href: wdi-tlv-sae-confirm-frame.md
+    - name: "WDI_TLV_SAE_CONFIRM_PARAMS"
+      href: wdi-tlv-sae-confirm-params.md
     - name: "WDI_TLV_SAE_ELEMENT"
       href: wdi-tlv-sae-element.md
     - name: "WDI_TLV_SAE_FINITE_CYCLIC_GROUP"

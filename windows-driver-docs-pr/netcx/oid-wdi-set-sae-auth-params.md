@@ -23,8 +23,8 @@ For more information about SAE authentication, see [WiFiCx WPA3 SAE authenticati
 | --- | --- | --- | --- | --- |
 | [WDI_TLV_BSSID](wdi-tlv-bssid.md) | [**WDI_MAC_ADDRESS**](/windows-hardware/drivers/ddi/dot11wificxintf/ns-dot11wificxintf-wdi_mac_address) |  |  | The BSSID of the AP. |
 | [WDI_TLV_SAE_REQUEST_TYPE](wdi-tlv-sae-request-type.md) | [**WDI_SAE_REQUEST_TYPE**](/windows-hardware/drivers/ddi/dot11wificxtypes/ne-dot11wificxtypes-wdi_sae_request_type) |   |   | The type of SAE request frame to send to the BSSID. |
-| [WDI_TLV_SAE_COMMIT_REQUEST](wdi-tlv-sae-commit-request.md) | WDI_SAE_COMMIT_REQUEST |  | X | The SAE Commit request parameters. |
-| [WDI_TLV_SAE_CONFIRM_REQUEST](wdi-tlv-sae-confirm-request.md) | WDI_SAE_CONFIRM_REQUEST |  | X | The SAE Confirm request parameters. |
+| [WDI_TLV_SAE_COMMIT_PARAMS](wdi-tlv-sae-commit-params.md) | WDI_SAE_COMMIT_REQUEST |  | X | The SAE Commit request parameters. |
+| [WDI_TLV_SAE_CONFIRM_PARAMS](wdi-tlv-sae-confirm-params.md) | WDI_SAE_CONFIRM_REQUEST |  | X | The SAE Confirm request parameters. |
 | [WDI_TLV_SAE_STATUS](wdi-tlv-sae-status.md) | [**WDI_SAE_STATUS**](/windows-hardware/drivers/ddi/dot11wificxtypes/ne-dot11wificxtypes-wdi_sae_status) |   | X | SAE authentication failure error status. |
 
 ## Requirements

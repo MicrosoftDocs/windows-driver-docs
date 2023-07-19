@@ -1,17 +1,15 @@
 ---
-title: WDI_TLV_SAE_CONFIRM_RESPONSE (dot11wificxtypes.hpp)
+title: WDI_TLV_SAE_CONFIRM_FRAME (dot11wificxtypes.hpp)
 ms.topic: reference
-description: WDI_TLV_SAE_CONFIRM_RESPONSE is a WiFiCx TLV that contains the Simultaneous Authentication of Equals (SAE) Confirm response frame.
-ms.date: 07/31/2021
-keywords:
- - WDI_TLV_SAE_CONFIRM_RESPONSE Network Drivers Starting with Windows Vista
+description: WDI_TLV_SAE_CONFIRM_FRAME is a WiFiCx TLV that contains the Simultaneous Authentication of Equals (SAE) Confirm response frame.
+ms.date: 07/19/2023
 ---
 
-# WDI_TLV_SAE_CONFIRM_RESPONSE (dot11wificxtypes.hpp)
+# WDI_TLV_SAE_CONFIRM_FRAME (dot11wificxtypes.hpp)
 
 [!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
-**WDI_TLV_SAE_CONFIRM_RESPONSE** is a TLV that contains the Simultaneous Authentication of Equals (SAE) Confirm response frame.
+**WDI_TLV_SAE_CONFIRM_FRAME** is a TLV that contains the Simultaneous Authentication of Equals (SAE) Confirm response frame.
 
 This TLV is used in the payload data of [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](ndis-status-wdi-indication-sae-auth-params-needed.md).
 
