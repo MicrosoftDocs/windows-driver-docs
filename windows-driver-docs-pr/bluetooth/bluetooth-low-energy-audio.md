@@ -528,7 +528,7 @@ When its **EvtAcxStreamRun** callback is invoked, the IHV ACX streaming driver s
 
 When its **[EvtAcxStreamPause](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_pause)** callback is invoked, the Bluetooth LE Audio profile:
 
-1. Performs the BAP unicast stream disable procedure, depending on transport used for streaming.
+1. Performs the BAP unicast stream disable procedure.
 1. Removes the ISO data path using the HCI_LE_Remove_ISO_Data_Path command.
 1. Performs the ASCS receiver stop ready procedure if the audio stream is a unicast capture stream.
 
@@ -540,12 +540,11 @@ When its **EvtAcxStreamPause** callback is invoked, the IHV ACX streaming driver
 
 #### Release stream
 
-When its **[EvtAcxStreamReleaseHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware)** callback is invoked, the Bluetooth LE Audio Profile either:
+When its **[EvtAcxStreamReleaseHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_release_hardware)** callback is invoked, the Bluetooth LE Audio Profile performs the BAP unicast stream release procedure by:
 
-1. Performs the BAP unicast stream release procedure by:
-   1. Sending the ASCS Release operation to the remote Bluetooth LE Audio device
-   1. Disconnecting the CIS if it isn't used by another active stream.
-   1. Removing the CIG if all CISes are disconnected.
+1. Sending the ASCS Release operation to the remote Bluetooth LE Audio device
+1. Disconnecting the CIS if it isn't used by another active stream.
+1. Removing the CIG if all CISes are disconnected.
 
 :::image type="content" source="images/btle-audio-stream-release-profile-circuit.png" alt-text="Diagram of the Bluetooth LE Audio stream releasing of a profile circuit.":::
 
