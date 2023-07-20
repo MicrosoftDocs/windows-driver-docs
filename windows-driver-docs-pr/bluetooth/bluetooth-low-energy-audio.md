@@ -21,10 +21,10 @@ In addition to the terms defined in this table, this document also references te
 | LE audio | Short for Bluetooth LE Audio |
 | Classic audio | Bluetooth audio streaming that uses the hands-free profile (HFP) and advanced audio distribution profile (A2DP) |
 | Audio Device | A single remote Bluetooth LE Audio device or set of Bluetooth LE Audio devices that together compose a single audio endpoint from the perspective of Windows. |
-| BAP | Acronym for the [Basic Audio Profile](https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=522996) defined by the Bluetooth SIG. |
-| TMAP | Acronym for the [Telephony and Media Audio Profile](https://www.bluetooth.com/specifications/tmap-1-0/) defined by the Bluetooth SIG. |
+| BAP | The [Basic Audio Profile](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/) defines how devices can distribute and consume audio using Bluetooth Low Energy (LE) communications. |
+| TMAP | The [Telephony and Media Audio Profile](https://www.bluetooth.com/specifications/tmap-1-0/) specifies interoperable configurations of the lower-level audio services and profiles. |
 | ASCS | The [Audio Stream Control Service](https://www.bluetooth.com/specifications/specs/audio-stream-control-service/) defines a standard way for Bluetooth LE Audio devices to configure and establish unicast audio streams. |
-| PACS | The [Published Audio Capabilities Service](https://www.bluetooth.com/specifications/specs/published-audio-capabilities-service/) defines a standard way for Bluetooth LE Audio devices to report its supported audio codec capabilities. |
+| PACS | The [Published Audio Capabilities Service](https://www.bluetooth.com/specifications/specs/published-audio-capabilities-service-1-0-1/) defines a standard way for Bluetooth LE Audio devices to report its supported audio codec capabilities. |
 | CIS | The Connected Isochronous Streams transport is used to send and receive unicast audio data between Bluetooth LE devices. |
 | BIS | The Broadcast Isochronous Stream transport is used for connectionless audio data transfers. |
 | ACX | Short for audio class extensions, which is the driver model required by all audio drivers to support for Bluetooth LE Audio on Windows. |
@@ -64,11 +64,11 @@ This vendor specific component is responsible for sending and receiving Bluetoot
 
 #### Windows Bluetooth LE Audio profile
 
-This component contains the implementation of the Basic Audio Profile, Volume Control Profile, and Microphone Control Profile. It's responsible for creating the head **[ACXCIRCUIT](/windows-hardware/drivers/audio/acx-summary-of-objects#acx-circuit)** for each Bluetooth LE Audio device or set of devices paired to Windows, reporting audio formats reported by the remote device and Bluetooth controller, and manages the state of isochronous channels and groups.
+This component contains the implementation of the Basic Audio Profile (BAP), Volume Control Profile, and Microphone Control Profile. It's responsible for creating the head **[ACXCIRCUIT](/windows-hardware/drivers/audio/acx-summary-of-objects#acx-circuit)** for each Bluetooth LE Audio device or set of devices paired to Windows, reporting audio formats reported by the remote device and Bluetooth controller, and manages the state of isochronous channels and groups.
 
 #### Windows Bluetooth core stack
 
-This component provides an interface to allow the Windows Bluetooth LE Audio Profile to do query supported codec capabilities from the local Bluetooth controller and manage the state of isochronous channels and groups.
+This component provides an interface to allow the Windows Bluetooth LE Audio Profile to query supported codec capabilities from the local Bluetooth controller and manage the state of isochronous channels and groups.
 
 #### LC3 codec
 
@@ -122,7 +122,7 @@ The following diagram shows a vendor specific inband Bluetooth LE Audio architec
 
 #### Audio frame durations
 
-The Bluetooth LE Audio profiles allow implementations to support audio streaming with audio frame durations of either 7.5 milliseconds or 10 milliseconds. Windows requires the codecs provided by IHVs to support both frame durations for the formats previously defined to ensure interoperability with Bluetooth LE Audio accessory devices and quality coexistence with other Bluetooth LE devices connected to the system.
+The Bluetooth LE Audio profiles allow implementations to support audio streaming with audio frame durations of either 7.5 milliseconds or 10 milliseconds. Windows requires the codecs provided by IHVs to support both frame durations to ensure interoperability with Bluetooth LE Audio accessory devices and quality coexistence with other Bluetooth LE devices connected to the system.
 
 #### Signal processing mode definitions
 
@@ -137,13 +137,11 @@ Bluetooth LE Audio requires render audio formats to be declared for the followin
 - Communications (AUDIO_SIGNALPROCESSINGMODE_COMMUNICATIONS)
   - This mode is used for bidirectional scenarios, such as voice calls.
 
-The following tables are lists of formats for each use case and signal processing mode.
+The following tables are lists of formats for each use case and signal processing mode. Audio formats are ordered from most preferred to least preferred.
 
-**Use case**: System sounds, music playback, and video game audio when connected to a stereo device or coordinated set of devices.
+###### System sounds, music playback, and video game audio when connected to a stereo device or coordinated set of devices
 
-**Signal processing mode**: Default
-
-Audio formats are ordered from most preferred to least preferred.
+Signal processing mode: **Default**
 
 | Sampling Frequency | Channel Count | Bit Depth | Frame Duration | Audio Data Rate | BAP Codec Configuration ID (Table 3.11 of the BAP Specification) |
 |---|---|---|---|---|---|
@@ -154,11 +152,9 @@ Audio formats are ordered from most preferred to least preferred.
 | 24 kHz | 2 | 16 | 7.5 ms | 48 kbps | 24_1 |
 | 24 kHz | 2 | 16 | 10 ms | 48 kbps | 24_2 |
 
-**Use case**: System sounds, music playback, and video game audio when connected to a single member of a coordinated set (single earbud or hearing aid).
+###### System sounds, music playback, and video game audio when connected to a single member of a coordinated set (single earbud or hearing aid)
 
-**Signal processing mode**: Default
-
-Audio formats are ordered from most preferred to least preferred.
+Signal processing mode: **Default**
 
 | Sampling Frequency | Channel Count | Bit Depth | Frame Duration | Audio Data Rate | BAP Codec Configuration ID (Table 3.11 of the BAP Specification) |
 |---|---|---|---|---|---|
@@ -171,11 +167,9 @@ Audio formats are ordered from most preferred to least preferred.
 | 16 kHz | 1 | 16 | 7.5 ms | 32 kbps | 16_1 |
 | 16 kHz | 1 | 16 | 10 ms | 32 kbps | 16_2 |
 
-**Use case**: Voice recorder, VOIP calls, or video game audio with voice chat.
+###### Render voice recorder, VOIP calls, or video game audio with voice chat
 
-**Signal processing mode**: Communications
-
-Audio formats are ordered from most preferred to least preferred.
+Signal processing mode: **Communications**
 
 | Sampling Frequency | Channel Count | Bit Depth | Frame Duration | Audio Data Rate | BAP Codec Configuration ID (Table 3.11 of the BAP Specification) |
 |---|---|---|---|---|---|
@@ -190,9 +184,11 @@ Audio formats are ordered from most preferred to least preferred.
 
 Bluetooth LE Audio requires capture audio formats to be declared for the Default (AUDIO_SIGNALPROCESSINGMODE_DEFAULT) signal processing mode. The list of supported capture formats is in the following table.
 
-**Use case**: Voice recorder, VOIP calls, or video game audio with voice chat.
-
 Audio formats are ordered from most preferred to least preferred.
+
+###### Capture voice recorder, VOIP calls, or video game audio with voice chat
+
+Signal processing mode: **Default**
 
 | Sampling Frequency | Channel Count | Bit Depth | Frame Duration | Audio Data Rate | BAP Codec Configuration ID (Table 3.11 of the BAP Specification) |
 |---|---|---|---|---|---|
@@ -209,7 +205,7 @@ Audio formats are ordered from most preferred to least preferred.
 
 ###### Basic audio profile configuration 1
 
-The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
 :::image type="content" source="images/bap-configuration-1.png" alt-text="Diagram of basic audio profile configuration 1.":::
 
@@ -223,7 +219,7 @@ The PC is connected to a single audio device that supports mono streams. The sin
 
 ###### Basic audio profile configuration 4
 
-The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
 :::image type="content" source="images/bap-configuration-4.png" alt-text="Diagram of basic audio profile configuration 4.":::
 
@@ -236,7 +232,7 @@ The PC is connected to a single audio device that supports stereo streams. The a
 
 ###### Basic audio profile configuration 6(i)
 
-The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
 :::image type="content" source="images/bap-configuration-6-i.png" alt-text="Diagram of basic audio profile configuration 6 I.":::
 
@@ -250,7 +246,7 @@ The PC is connected to a single audio device that supports stereo streams. The a
 
 ###### Basic audio profile configuration 6(ii)
 
-The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
 :::image type="content" source="images/bap-configuration-6-ii.png" alt-text="Diagram of basic audio profile configuration 6 II.":::
 
@@ -268,7 +264,7 @@ Bidirectional configurations are used when the Bluetooth LE Audio profile detect
 
 ###### Basic audio profile configuration 3
 
-The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
 :::image type="content" source="images/bap-configuration-3.png" alt-text="Diagram of basic audio profile configuration 3.":::
 
@@ -281,7 +277,7 @@ The PC is connected to a single audio device with a bidirectional mono stream es
 
 ###### Basic audio profile configuration 8(i)
 
-The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
 :::image type="content" source="images/bap-configuration-8-i.png" alt-text="Diagram of basic audio profile configuration 8 I.":::
 
@@ -294,7 +290,7 @@ The PC is connected to a single audio device that supports stereo render streams
 
 ###### Basic audio profile configuration 8(ii)
 
-The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
 :::image type="content" source="images/bap-configuration-8-ii.png" alt-text="Diagram of basic audio profile configuration 8 II.":::
 
@@ -309,7 +305,7 @@ The PC is connected to a coordinated set of audio devices. Each set member is re
 
 ###### Basic audio profile configuration 2
 
-The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
 :::image type="content" source="images/bap-configuration-2.png" alt-text="Diagram of basic audio profile configuration 2.":::
 
@@ -321,7 +317,7 @@ The PC is connected to a single audio device that supports mono capture streams.
 
 ###### Basic audio profile configuration 9(i)
 
-The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
 :::image type="content" source="images/bap-configuration-9-i.png" alt-text="Diagram of basic audio profile configuration 9 I.":::
 
@@ -335,7 +331,7 @@ The PC is connected to a single audio device that supports sending stereo audio 
 
 The PC is connected to a single audio device that supports mono capture streams.
 
-The following audio configuration is defined in table 4.1 of the [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+The following audio configuration is defined in table 4.1 of the [Bluetooth BAP specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 
 :::image type="content" source="images/bap-configuration-9-ii.png" alt-text="Diagram of basic audio profile configuration 9 II.":::
 
@@ -357,7 +353,7 @@ The following properties are shared between the vendor specific audio driver sta
 
 ###### BluetoothLEAudio_CodecCapabilities
 
-This property is set by the audio driver to indicate support for audio streaming capabilities that are supported in the audio driver or audio DSP. The property value is set using the DDI **[AcxObjectBagAddBlob](/windows-hardware/drivers/ddi/acxmisc/nf-acxmisc-acxobjectbagaddblob)** and the format of the value is the same as a PAC record as defined in the [Published Audio Capabilities Service Specification](https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=523003).
+This property is set by the audio driver to indicate support for audio streaming capabilities that are supported in the audio driver or audio DSP. The property value is set using the DDI **[AcxObjectBagAddBlob](/windows-hardware/drivers/ddi/acxmisc/nf-acxmisc-acxobjectbagaddblob)** and the format of the value is the same as a PAC record as defined in the [PACS specification](https://www.bluetooth.com/specifications/specs/published-audio-capabilities-service-1-0-1/).
 
 The Windows Bluetooth LE Audio profile reads the property to determine the possible codec configurations and stream composition to use.
 
@@ -370,7 +366,7 @@ The Windows Bluetooth LE Audio profile reads the property to determine the possi
 | Metadata Length (m) | n + 1 |
 | Metadata | n+2... m |
 
-Field values are defined in tables 3.2 and 3.4 of the [Published Audio Capabilities Service Specification](https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=523003).
+Field values are defined in tables 3.2 and 3.4 of the PACS specification.
 
 ###### Bluetooth_DatapathID
 
@@ -474,7 +470,7 @@ When the IHV ACX Streaming driver loads and determines that it supports Bluetoot
 1. When its **[EvtAcxCircuitCreateStream](/windows-hardware/drivers/ddi/acxcircuit/nc-acxcircuit-evt_acx_circuit_create_stream)** callback is invoked, the Bluetooth LE Audio profile:
    1. Saves the properties locally from the **ACXOBJECTBAG** set by the IHV ACX streaming driver for future stream transition callbacks.
    1. If the audio endpoint is for unicast streaming the Bluetooth LE Audio profile:
-      1. Performs the Config Codec Operation as defined in the Basic Audio Profile specification. The parameters for the operation are derived from the **ACXDATAFORMAT** specified in the **EvtAcxCircuitCreateStream** callback and either the other stream parameters in the **ACXOBJECTBAG** or the codec capabilities supported by the Bluetooth Controller.
+      1. Performs the Config Codec Operation as defined in the BAP specification. The parameters for the operation are derived from the **ACXDATAFORMAT** specified in the **EvtAcxCircuitCreateStream** callback and either the other stream parameters in the **ACXOBJECTBAG** or the codec capabilities supported by the Bluetooth Controller.
       1. Sets the *BluetoothLEAudio_CodecConfiguration* property on the **ACXOBJECTBAG** with the value used to configure the remote audio devices.
 1. If the IHV ACX streaming driver needs to update its data path ID or data path configuration based on the object bag values set by the profile, then it may invoke the KSPROPERTY set operations to update the value stored by the profile circuit.
     1. Creates an **ACXSTREAM** with callbacks set for stream state transitions.
@@ -602,9 +598,8 @@ Bluetooth LE Audio doesn't have any power management requirements or flows outsi
 ## Related topics
 
 - [ACX audio class extensions](../audio/acx-audio-class-extensions-overview.md)
-- [Bluetooth Basic Audio Profile v1.0 specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0/)
+- [Bluetooth Basic Audio Profile specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
 - [Bluetooth Core Specification](https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=521059)
-- [Bluetooth Basic Audio Profile Specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile/)
 - [Bluetooth Published Audio Capabilities Service Specification](https://www.bluetooth.com/specifications/specs/published-audio-capabilities-service/)
 - [Bluetooth Audio Stream Control Service Specification](https://www.bluetooth.com/specifications/specs/audio-stream-control-service/)
 - [Bluetooth Assigned Numbers](https://www.bluetooth.com/specifications/assigned-numbers/)
