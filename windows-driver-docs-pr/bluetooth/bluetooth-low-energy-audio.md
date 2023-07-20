@@ -503,11 +503,11 @@ When its **[EvtAcxStreamPrepareHardware](/windows-hardware/drivers/ddi/acxstream
    1. Configuring a CIG with the HCI_LE_Set_CIG_Parameters command if it wasn't already configured in the create stream callback.
    1. Sending the ASCS config QoS operation to synchronize settings with the remote device.
 
-:::image type="content" source="images/btle-audio-stream-perparation-profile-circuit.png" alt-text="Diagram of the Bluetooth LE Audio stream preparation of a profile circuit.":::
+:::image type="content" source="images/btle-audio-stream-preparation-profile-circuit.png" alt-text="Diagram of the Bluetooth LE Audio stream preparation of a profile circuit.":::
 
 When its **EvtAcxStreamPrepareHardware** callback is invoked, the IHV ACX streaming driver allocates the necessary streaming resources and initializes the audio pipeline to be in the acquired state.
 
-:::image type="content" source="images/btle-audio-stream-perparation-streaming-circuit.png" alt-text="Diagram of the Bluetooth LE Audio stream preparation of a streaming circuit":::
+:::image type="content" source="images/btle-audio-stream-preparation-streaming-circuit.png" alt-text="Diagram of the Bluetooth LE Audio stream preparation of a streaming circuit":::
 
 #### Start stream
 
