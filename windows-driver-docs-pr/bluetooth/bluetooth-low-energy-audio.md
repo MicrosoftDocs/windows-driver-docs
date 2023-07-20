@@ -232,7 +232,6 @@ The PC is connected to a single audio device that supports stereo streams. The a
 | Use Case Examples | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
 | Media playback | **Render**: Signal Processing Mode: Default<br>Channel Count: 2<br>**Capture**: None | CIS Count: 1<br>CIG Count: 1<br>BAP QoS Settings: High reliability Audio Channel Allocation: Front left and front right |
-| Voice call with no microphone on audio device | **Render**:<br>Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture**: None | CIS Count: 1<br>CIG Count: 1<br>BAP QoS Settings: Low latency<br>Audio Channel Allocation: Either front left or front right |
 | Video game playback | Signal Processing Mode: Default<br>Channel Count: 2<br>**Capture**: None | CIS Count: 1<br>CIG Count: 1<br>BAP QoS Settings: Low latency<br>Audio Channel Allocation: Front left and front right |
 
 ###### Basic audio profile configuration 6(i)
@@ -246,8 +245,7 @@ The PC is connected to a single audio device that supports stereo streams. The a
 | Use Case Examples | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
 | Media playback | Signal Processing Mode: Default<br>Channel Count: 2<br>**Capture**: None | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: High reliability |
-| Voice call with no microphone on audio device | Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture**: None | CIS Count: 2<br>
-CIG Count: 1<br>BAP QoS Settings: Low latency<br>Audio Channel Allocation: Either front left or front right |
+| Voice call with no microphone on audio device | Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture**: None | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low latency<br>Audio Channel Allocation: Either front left or front right |
 | Video game playback | Signal Processing Mode: Default<br>Channel Count: 2<br>**Capture**: None | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low latency<br>Audio Channel Allocation: Front left and front right |
 
 ###### Basic audio profile configuration 6(ii)
@@ -291,6 +289,7 @@ The PC is connected to a single audio device that supports stereo render streams
 
 | Use Case | Windows Audio Settings | Bluetooth Controller Settings |
 |---|---|---|
+| Voice call | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 1<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
 | Video game playback with voice chat | **Render:**<br>Signal Processing Mode: Communications<br>Channel Count: 2<br>**Capture:**<br>Signal Processing Mode: Default<br>Channel Count: 1 | CIS Count: 2<br>CIG Count: 1<br>BAP QoS Settings: Low Latency |
 
 ###### Basic audio profile configuration 8(ii)
@@ -396,7 +395,6 @@ This property shall be set by the Bluetooth LE Audio profile using the DDI **[Ac
 | Field | Octet |
 |---|---|
 | Configuration Count | 0 |
-| Stream Connection Handle[i] | 1-2 |
 | Coding Format[i] | 3 |
 | Company ID[i] | 1-2 |
 | Vendor Specific Codec ID[i] | 3-4 |
@@ -455,7 +453,7 @@ When the IHV ACX Streaming driver loads and determines that it supports Bluetoot
 1. When a request to create a circuit is received, the IHV ACX streaming driver:
    1. Creates **ACXCIRCUIT**, [ACXPIN](/windows-hardware/drivers/audio/acx-summary-of-objects#acx-pin), [ACXOBJECTBAG](/windows-hardware/drivers/audio/acx-summary-of-objects#acx-object-bag), and [ACXSTREAMBRIDGE](/windows-hardware/drivers/audio/acx-summary-of-objects#acx-stream-bridge) objects.
    1. If the LC3 or vendor specific codec is hosted in the audio driver or DSP, then the IHV ACX streaming driver sets the *BluetoothLEAudio_CodecCapabilities* property on the **ACXOBJECTBAG**.
-   1. The IHV ACX streaming driver may set Bluetooth_DatapathID or Bluetooth_DatapathConfiguration on the **ACXOBJECTBAG** if it's known at this time.
+   1. The IHV ACX streaming driver may set *Bluetooth_DatapathID* or *Bluetooth_DatapathConfiguration* on the **ACXOBJECTBAG** if it's known at this time.
 1. After both circuits are created, ACX invokes the **[EvtAcxPinConnected](/windows-hardware/drivers/ddi/acxpin/nc-acxpin-evt_acx_pin_connected)** callback on the IHV ACX driver's bridge pin.
 1. When it's **EvtAcxPinConnected** callback is invoked, the IHV ACX streaming driver:
    1. Retrieves the bridge pin of the profile circuit with **[AcxTarget...](/windows-hardware/drivers/ddi/acxtargets/)** APIs to retrieve the formats supported by the profile circuit.
@@ -477,9 +475,6 @@ When the IHV ACX Streaming driver loads and determines that it supports Bluetoot
    1. Saves the properties locally from the **ACXOBJECTBAG** set by the IHV ACX streaming driver for future stream transition callbacks.
    1. If the audio endpoint is for unicast streaming the Bluetooth LE Audio profile:
       1. Performs the Config Codec Operation as defined in the Basic Audio Profile specification. The parameters for the operation are derived from the **ACXDATAFORMAT** specified in the **EvtAcxCircuitCreateStream** callback and either the other stream parameters in the **ACXOBJECTBAG** or the codec capabilities supported by the Bluetooth Controller.
-      1. If the VSAP architecture on the system has its codec in the audio driver or audio DSP, the Bluetooth LE Audio profile:
-         1. Allocates stream resources by sending the HCI LE Set CIG Parameters command.
-         1. Sets the *BluetoothLEAudio_StreamConnectionHandles* property with the list of CIS connection handles returned by the Bluetooth controller.
       1. Sets the *BluetoothLEAudio_CodecConfiguration* property on the **ACXOBJECTBAG** with the value used to configure the remote audio devices.
 1. If the IHV ACX streaming driver needs to update its data path ID or data path configuration based on the object bag values set by the profile, then it may invoke the KSPROPERTY set operations to update the value stored by the profile circuit.
     1. Creates an **ACXSTREAM** with callbacks set for stream state transitions.
@@ -497,10 +492,10 @@ ACX decides the circuit order of stream state transitions based on the audio flo
 
 #### Prepare stream
 
-When its **[EvtAcxStreamPrepareHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_prepare_hardware)** callback is invoked, the Bluetooth LE Audio profile either:
+When its **[EvtAcxStreamPrepareHardware](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_prepare_hardware)** callback is invoked, the Bluetooth LE Audio profile:
 
 1. Allocates resources for a unicast stream by:
-   1. Configuring a CIG with the HCI_LE_Set_CIG_Parameters command if it wasn't already configured in the create stream callback.
+   1. Configuring a CIG with the HCI_LE_Set_CIG_Parameters command.
    1. Sending the ASCS config QoS operation to synchronize settings with the remote device.
 
 :::image type="content" source="images/btle-audio-stream-preparation-profile-circuit.png" alt-text="Diagram of the Bluetooth LE Audio stream preparation of a profile circuit.":::
@@ -514,11 +509,10 @@ When its **EvtAcxStreamPrepareHardware** callback is invoked, the IHV ACX stream
 When its **[EvtAcxStreamRun](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_run)** callback is invoked, the Bluetooth LE Audio profile:
 
 1. Applies any data path configuration settings set by the ACX streaming driver in the stream creation procedure using the HCI_Configure_Data_Path command.
-1. Begins the stream start procedure by either:
+1. Begins the stream start procedure by:
    1. Performing the BAP unicast stream Enable procedure for a unicast stream:
       1. Sending the Enable operation to the remote endpoints.
       1. Creating CISes if they aren't already created using the HCI_LE_Create_CIS command.
-   1. Performing the BAP establish broadcast audio stream procedure for a broadcast stream.
 1. If the data path isn't already configured, the Bluetooth LE Audio profile:
    1. Establishes the ISO data paths using the HCI_LE_Setup_ISO_Data_Path command
       1. If the IHV ACX streaming driver sets the *BluetoothLEAudio_CodecCapabilities* property, the value of the Codec_ID field in HCI_LE_Setup_ISO_Data_Path shall be set to transparent (0x3) as defined in the Bluetooth Assigned Numbers. Otherwise, the value shall be the same as the Codec ID used in the config codec operation in the stream creation procedure.
@@ -534,7 +528,7 @@ When its **EvtAcxStreamRun** callback is invoked, the IHV ACX streaming driver s
 
 When its **[EvtAcxStreamPause](/windows-hardware/drivers/ddi/acxstreams/nc-acxstreams-evt_acx_stream_pause)** callback is invoked, the Bluetooth LE Audio profile:
 
-1. Performs either the BAP unicast or broadcast stream disable procedure, depending on transport used for streaming.
+1. Performs the BAP unicast stream disable procedure, depending on transport used for streaming.
 1. Removes the ISO data path using the HCI_LE_Remove_ISO_Data_Path command.
 1. Performs the ASCS receiver stop ready procedure if the audio stream is a unicast capture stream.
 
@@ -552,7 +546,6 @@ When its **[EvtAcxStreamReleaseHardware](/windows-hardware/drivers/ddi/acxstream
    1. Sending the ASCS Release operation to the remote Bluetooth LE Audio device
    1. Disconnecting the CIS if it isn't used by another active stream.
    1. Removing the CIG if all CISes are disconnected.
-1. Performs the BAP broadcast stream release procedure.
 
 :::image type="content" source="images/btle-audio-stream-release-profile-circuit.png" alt-text="Diagram of the Bluetooth LE Audio stream releasing of a profile circuit.":::
 
