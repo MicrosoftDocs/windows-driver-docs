@@ -320,6 +320,10 @@
       href: wdi-tlv-lci-report-status.md
     - name: "WDI_TLV_LIMITED_CONNECTIVITY"
       href: wdi-tlv-limited-connectivity.md
+    - name: "WDI_TLV_LINK_ID"
+      href: wdi-tlv-link-id.md
+    - name: "WDI_TLV_LINK_INFO"
+      href: wdi-tlv-link-info.md
     - name: "WDI_TLV_LINK_QUALITY_BAR_MAP"
       href: wdi-tlv-link-quality-bar-map.md
     - name: "WDI_TLV_LINK_STATE_CHANGE_PARAMETERS"
@@ -524,6 +528,8 @@
       href: wdi-tlv-retry-after.md
     - name: "WDI_TLV_ROAMING_NEEDED_PARAMETERS"
       href: wdi-tlv-roaming-needed-parameters.md
+    - name: "WDI_TLV_RSNA_AKM_SUITE"
+      href: wdi-tlv-rsna-akm-suite.md
     - name: "WDI_TLV_RTT"
       href: wdi-tlv-rtt.md
     - name: "WDI_TLV_RTT_ACCURACY"

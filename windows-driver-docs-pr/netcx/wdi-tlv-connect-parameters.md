@@ -2,7 +2,7 @@
 title: WDI_TLV_CONNECT_PARAMETERS (dot11wificxtypes.hpp)
 ms.topic: reference
 description: WDI_TLV_CONNECT_PARAMETERS is a WiFiCx TLV that contains parameters for OID_WDI_TASK_CONNECT and OID_WDI_TASK_ROAM.
-ms.date: 06/30/2021
+ms.date: 07/21/2023
 keywords:
  - WDI_TLV_CONNECT_PARAMETERS Network Drivers Starting with Windows Vista
 ---
@@ -37,6 +37,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_ALLOWED\_BSSIDS\_LIST**](wdi-tlv-allowed-bssids-list.md) |   | X | The list of BSSIDs that are allowed to be used for association. If WDI specifies 255.255.255.255 then all BSSIDs are allowed. |
 | [**WDI\_TLV\_OWE\_DH\_IE**](wdi-tlv-owe-dh-ie.md) |   | X | Diffie-Hellman Extension IE blob that must be included in the association request sent by the station when auth type is OWE. This is applicable to any BSSID that the device would associate with and should be included in addition to the other associated req vendor IEs. |
 | [**WDI_TLV_UNAVAILABLE_BAND_LIST**](wdi-tlv-unavailable-band-list.md) |   | X | The list of bands on which the driver should not connect as they are used for Primary Sta connectivity. |
+| [**WDI_TLV_RSNA_AKM_SUITE**](wdi-tlv-rsna-akm-suite.md) |   | X | The list of RSNA AKMs that the driver supports. |
 
 ## Requirements
 
