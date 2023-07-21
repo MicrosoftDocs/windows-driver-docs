@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Low Energy (LE) Audio
 description: This article provides an overview of Bluetooth LE Audio introduced in Windows 11 version 22H2 (KB5026446).
-ms.date: 07/11/2023
+ms.date: 07/21/2023
 ---
 
 # Bluetooth Low Energy (LE) Audio
@@ -31,7 +31,7 @@ In addition to the terms defined in this table, this document also references te
 | Streaming circuits | One or more **ACXCIRCUIT** objects created by the Vendor Specific Audio Driver Stack for its streaming path. |
 | Profile circuit | An **ACXCIRCUIT** object created by the Bluetooth LE Audio profile implementation on Windows. This **ACXCIRCUIT** serves as the head circuit as defined in the ACX specification and isn't a streaming circuit. |
 
-This document assumes familiarity with the previously defined terms and the following HCI commands defined in the [Bluetooth Core 5.3 specification](https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=521059):
+This document assumes familiarity with the previously defined terms and the following HCI commands defined in the [Bluetooth Core 5.3 specification](https://www.bluetooth.com/specifications/specs/core-specification-5-3/):
 
 - HCI_Read_Local_Supported_Codecs (v2)
 - HCI_Read_Local_Supported_Codec_Capabilities
@@ -397,7 +397,7 @@ This property shall be set by the Bluetooth LE Audio profile using the DDI **[Ac
 | Codec Specific Configuration Length[i] | 5 |
 | Codec Specific Configuration[i] | 6... n |
 
-Field values are defined in table 4.3 of the [Bluetooth Audio Stream Control Service Specification](https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=522995).
+Field values are defined in table 4.3 of the [Bluetooth Audio Stream Control Service Specification](https://www.bluetooth.com/specifications/specs/audio-stream-control-service/).
 
 The vendor specific audio driver stack should read this property if the LC3 codec is in the ACX streaming driver or audio DSP.
 
@@ -599,7 +599,7 @@ Bluetooth LE Audio doesn't have any power management requirements or flows outsi
 
 - [ACX audio class extensions](../audio/acx-audio-class-extensions-overview.md)
 - [Bluetooth Basic Audio Profile specification](https://www.bluetooth.com/specifications/specs/basic-audio-profile-1-0-1/)
-- [Bluetooth Core Specification](https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=521059)
+- [Bluetooth Core 5.3 specification](https://www.bluetooth.com/specifications/specs/core-specification-5-3/)
 - [Bluetooth Published Audio Capabilities Service Specification](https://www.bluetooth.com/specifications/specs/published-audio-capabilities-service/)
 - [Bluetooth Audio Stream Control Service Specification](https://www.bluetooth.com/specifications/specs/audio-stream-control-service/)
 - [Bluetooth Assigned Numbers](https://www.bluetooth.com/specifications/assigned-numbers/)
