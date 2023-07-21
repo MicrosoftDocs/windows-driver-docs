@@ -9,7 +9,7 @@ api_name:
 - messageBoxUI
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 07/18/2023
 ---
 
 # messageBoxUI element
@@ -38,62 +38,18 @@ There are no attributes.
 
 ## Child elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="bitmap.md" data-raw-source="[&lt;strong&gt;bitmap&lt;/strong&gt;](bitmap.md)"><strong>bitmap</strong></a></p></td>
-<td><p></p>
-<p>An optional element that is used to display a bitmap image to the left of the body text in a message box.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="body.md" data-raw-source="[&lt;strong&gt;body&lt;/strong&gt;](body.md)"><strong>body</strong></a></p></td>
-<td><p></p>
-<p>A required element that provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="buttons.md" data-raw-source="[&lt;strong&gt;buttons&lt;/strong&gt;](buttons.md)"><strong>buttons</strong></a></p></td>
-<td><p></p>
-<p>A required element that specifies one or more buttons that are displayed in the event notification message box on the client computer.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="title.md" data-raw-source="[&lt;strong&gt;title&lt;/strong&gt;](title.md)"><strong>title</strong></a></p></td>
-<td><p></p>
-<p>A required element that provides text that is displayed in the title of the event notification message.</p></td>
-</tr>
-</tbody>
-</table>
+| Element | Description |
+|--|--|
+| [**bitmap**](bitmap.md) | An optional element that is used to display a bitmap image to the left of the body text in a message box. |
+| [**body**](body.md) | A required element that provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event. |
+| [**buttons**](buttons.md) | A required element that specifies one or more buttons that are displayed in the event notification message box on the client computer. |
+| [**title**](title.md) | A required element that provides text that is displayed in the title of the event notification message. |
 
 ## Parent elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="requestopen.md" data-raw-source="[&lt;strong&gt;requestOpen&lt;/strong&gt;](requestopen.md)"><strong>requestOpen</strong></a></p></td>
-<td><p></p>
-<p>An element that is used to open an event notification message on the client computer.</p></td>
-</tr>
-</tbody>
-</table>
+| Element | Description |
+|--|--|
+| [**requestOpen**](requestopen.md) | An element that is used to open an event notification message on the client computer. |
 
 ## Remarks
 

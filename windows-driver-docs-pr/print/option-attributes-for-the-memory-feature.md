@@ -1,48 +1,22 @@
 ---
-title: Option Attributes for the Memory Feature
-description: Option Attributes for the Memory Feature
+title: Option attributes for the Memory feature
+description: Option attributes for the Memory feature
 keywords:
 - Memory Feature WDK print
-ms.date: 01/27/2023
+ms.date: 07/19/2023
 ---
 
-# Option Attributes for the Memory Feature
+# Option attributes for the Memory feature
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
 The following table lists the attributes associated with the Memory feature. For more information about the Memory feature, see [Standard Features](standard-features.md).
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute Name</th>
-<th>Attribute Parameter</th>
-<th>Comments</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><em><strong>MemConfigKB</strong></p></td>
-<td><p>PAIR of numeric values indicating the total and available printer-resident memory, in kilobytes. For example, PAIR (1024, 450) indicates 1024 kilobytes total, 450 kilobytes available, with a GPD-generated option name of "1024KB".</p></td>
-<td><p>Optional. See <a href="describing-printer-memory-configurations.md" data-raw-source="[Describing Printer Memory Configurations](describing-printer-memory-configurations.md)">Describing Printer Memory Configurations</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p></em><strong>MemConfigMB</strong></p></td>
-<td><p>PAIR of numeric values indicating the total and available printer-resident memory, in megabytes. For example, PAIR (2, 1) indicates 2 megabytes total, 1 megabyte available, with a GPD-generated option name of "2MB".</p></td>
-<td><p>Optional. See <a href="describing-printer-memory-configurations.md" data-raw-source="[Describing Printer Memory Configurations](describing-printer-memory-configurations.md)">Describing Printer Memory Configurations</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>*<strong>MemoryConfigKB</strong></p></td>
-<td><p>PAIR of numeric values indicating the total and available printer-resident memory, in kilobytes. For example, PAIR (1024, 450) indicates 1024 kilobytes total, 450 kilobytes available.</p></td>
-<td><p>Optional. See <a href="describing-printer-memory-configurations.md" data-raw-source="[Describing Printer Memory Configurations](describing-printer-memory-configurations.md)">Describing Printer Memory Configurations</a>.</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute name | Attribute parameter | Comments |
+|--|--|--|
+| \***MemConfigKB** | PAIR of numeric values indicating the total and available printer-resident memory, in kilobytes. For example, PAIR (1024, 450) indicates 1024 kilobytes total, 450 kilobytes available, with a GPD-generated option name of "1024KB". | Optional. For more information, see [Describing Printer Memory Configurations](describing-printer-memory-configurations.md). |
+| \***MemConfigMB** | PAIR of numeric values indicating the total and available printer-resident memory, in megabytes. For example, PAIR (2, 1) indicates 2 megabytes total, 1 megabyte available, with a GPD-generated option name of "2MB". | Optional. For more information, see [Describing Printer Memory Configurations](describing-printer-memory-configurations.md). |
+| \***MemoryConfigKB** | PAIR of numeric values indicating the total and available printer-resident memory, in kilobytes. For example, PAIR (1024, 450) indicates 1024 kilobytes total, 450 kilobytes available. | Optional. For more information, see [Describing Printer Memory Configurations](describing-printer-memory-configurations.md). |
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
