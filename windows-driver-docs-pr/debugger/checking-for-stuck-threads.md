@@ -7,10 +7,6 @@ ms.date: 05/23/2017
 
 # Checking for Stuck Threads
 
-
-## <span id="ddk_checking_for_stuck_threads_dbg"></span><span id="DDK_CHECKING_FOR_STUCK_THREADS_DBG"></span>
-
-
 RPC needs its worker threads available in order to perform normally. A common problem is that some component in the same process will deadlock while holding one of the global critical sections (for example, loader lock or heap lock). This will cause many threads to hang -- very possibly including some RPC worker threads.
 
 If this occurs, the RPC server will not respond to the outside world. RPC calls to it will return RPC\_S\_SERVER\_UNAVAILABLE or RPC\_S\_SERVER\_TOO\_BUSY.
@@ -36,12 +32,3 @@ Searching for thread info ...
 The TID column gives the thread ID for each thread. The LASTTIME column contains the time stamp of the last change in state for each thread.
 
 Whenever the server receives a request, at least one thread will change state, and its time stamp will be updated. Therefore, if an RPC request is made to the server and the request fails but none of the time stamps change, this indicates that the request is not actually reaching the RPC Run-Time. You should investigate the cause of this.
-
- 
-
- 
-
-
-
-
-
