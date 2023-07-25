@@ -1,6 +1,6 @@
 ---
 title: IPrinterScriptUsbJobContextReturnCodes DeviceBusy method
-description: Returns a value of '3' to inform USBMon that the device communication channel is not accepting data at this time.
+description: Returns a value of '3' to inform USBMon that the device communication channel isn't accepting data at this time.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -12,12 +12,12 @@ api_name:
 - IPrinterScriptUsbJobContextReturnCodes.DeviceBusy
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 07/13/2023
 ---
 
 # IPrinterScriptUsbJobContextReturnCodes::DeviceBusy method
 
-Returns a value of '3' to inform USBMon that the device communication channel is not accepting data at this time.
+Returns a value of '3' to inform USBMon that the device communication channel isn't accepting data at this time.
 
 ## Syntax
 
@@ -30,7 +30,7 @@ HRESULT DeviceBusy(
 ## Parameters
 
 *value* \[out, retval\]  
-Value that indicates that the communication channel is not accepting data at this time.
+Value that indicates that the communication channel isn't accepting data at this time.
 
 ## Return value
 
@@ -38,30 +38,15 @@ This method returns an **HRESULT** value.
 
 ## Remarks
 
-**DeviceBusy** is a read-only method. A returned value of '3' does not indicate a failure, and USBMon should inform the print spooler that the device is busy. USBMon can then call the function again at a later time. The number of bytes processed from the print data stream (printData) is returned in the writePrintDataProgress object.
+**DeviceBusy** is a read-only method. A returned value of '3' doesn't indicate a failure, and USBMon should inform the print spooler that the device is busy. USBMon can then call the function again at a later time. The number of bytes processed from the print data stream (printData) is returned in the writePrintDataProgress object.
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 8.1</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2012 R2</p></td>
-</tr>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-</tbody>
-</table>
+**Minimum supported client:** Windows 8.1
+
+**Minimum supported server:** Windows Server 2012 R2
+
+**Target platform:** Desktop
 
 ## See also
 

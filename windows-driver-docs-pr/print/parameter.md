@@ -9,7 +9,7 @@ api_name:
 - parameter
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 07/18/2023
 ---
 
 # parameter element
@@ -35,45 +35,11 @@ This resource may not be available in some languages and countries.
 
 ## Attributes
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>resourceDll</strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>No</p></td>
-<td><p></p>
-<p>An optional attribute that specifies a resource DLL that contains the text to display in the event notification message. This DLL should be a dependent file of the printer driver and must be present in the driver resource folder (for example, %SYSTEMROOT%\system32\spool\drivers\w32x86\3).</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>stringID</strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>Yes</p></td>
-<td><p></p>
-<p>A required attribute that specifies the text to display at the location of the percentage (%) character in the text of the event notification message. The attribute value specifies the location of the text string in the resource DLL.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>type</strong></p></td>
-<td><p>xs:string</p></td>
-<td><p>No</p></td>
-<td><p></p>
-<p>An optional attribute that specifies the name of the printer or document. This attribute can take one of the following values:DocumentThe name of the document being printed.PrinterNameThe name of the printer, as listed in the Printers and Faxes folder in Control Panel, for example, "Fabrikam 5000 on \printserver" or "Printer in upstairs bedroom."</p></td>
-</tr>
-</tbody>
-</table>
+| Attribute | Type | Required | Description |
+|--|--|--|--|
+| **resourceDll** | xs:string | No | An optional attribute that specifies a resource DLL that contains the text to display in the event notification message. This DLL should be a dependent file of the printer driver and must be present in the driver resource folder (for example, %SYSTEMROOT%\system32\spool\drivers\w32x86\3). |
+| **stringID** | xs:string | Yes | A required attribute that specifies the text to display at the location of the percentage (%) character in the text of the event notification message. The attribute value specifies the location of the text string in the resource DLL. |
+| **type** | xs:string | No | An optional attribute that specifies the name of the printer or document. This attribute can take one of the following values:DocumentThe name of the document being printed.PrinterNameThe name of the printer, as listed in the Printers and Faxes folder in Control Panel, for example, "Fabrikam 5000 on \printserver" or "Printer in upstairs bedroom." |
 
 ## Child elements
 
@@ -81,30 +47,10 @@ There are no child elements.
 
 ## Parent elements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="body.md" data-raw-source="[&lt;strong&gt;body&lt;/strong&gt;](body.md)"><strong>body</strong></a></p></td>
-<td><p></p>
-<p>A required element that provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="title.md" data-raw-source="[&lt;strong&gt;title&lt;/strong&gt;](title.md)"><strong>title</strong></a></p></td>
-<td><p></p>
-<p>The required title element provides text that is displayed in the title of the event notification message.</p></td>
-</tr>
-</tbody>
-</table>
+| Element | Description |
+|--|--|
+| [**body**](body.md) | A required element that provides text that is displayed in the event notification message. This text should provide the user specific details about the printer event. |
+| [**title**](title.md) | The required title element provides text that is displayed in the title of the event notification message. |
 
 ## Remarks
 

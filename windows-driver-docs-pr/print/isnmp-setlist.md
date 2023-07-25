@@ -2,8 +2,8 @@
 title: ISNMP SetList method
 description: The SetList method enables an ASP Web page to associate values with an array of SNMP OIDs.
 MS-HAID:
-- 'webfnc\_56e01eeb-9b33-4f32-b209-cde82d78e2d5.xml'
-- 'print.isnmp\_setlist'
+- 'webfnc_56e01eeb-9b33-4f32-b209-cde82d78e2d5.xml'
+- 'print.isnmp_setlist'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -17,7 +17,7 @@ api_location:
 - olesnmp.h
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 07/14/2023
 ---
 
 # ISNMP::SetList method
@@ -45,40 +45,16 @@ Caller-supplied pointer to an array of OID values.
 
 Win32 error codes can also be returned.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_FAIL</strong></td>
-<td><p>The <strong>ISNMP::Open</strong> method has not been called.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>E_INVALIDARG</strong></td>
-<td><p>The specified SNMP OID is not valid.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_OUTOFMEMORY</strong></td>
-<td><p>Out of memory.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| S_OK | The operation succeeded. |
+| E_FAIL | The **ISNMP::Open** method has not been called. |
+| E_INVALIDARG | The specified SNMP OID is not valid. |
+| E_OUTOFMEMORY | Out of memory. |
 
-## VBScript Example
+## VBScript example
 
-This method calls the **SnmpMgrRequest** function to set the SNMP OID values. For more information about this function, see the Windows SDK Documentation.
+This method calls the **SnmpMgrRequest** function to set the SNMP OID values.
 
 The [**ISNMP::Open**](isnmp-open.md) method must be called before the `ISNMP::SetList` method can be called.
 
@@ -97,22 +73,9 @@ OIDValueArray = objSNMP.SetList (OIDArray)
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Olesnmp.h</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
+
+**Header:** Olesnmp.h
 
 ## See also
 

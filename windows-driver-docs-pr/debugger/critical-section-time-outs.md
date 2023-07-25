@@ -2,22 +2,22 @@
 title: Critical Section Time Outs
 description: Critical Section Time Outs
 keywords: ["critical section, debugging critical section time outs"]
-ms.date: 05/23/2017
+ms.date: 07/24/2023
 ---
 
 # Critical Section Time Outs
 
+Some types of critical section time outs can be identified when the stack trace that shows the routine **RtlpWaitForCriticalSection** near the top of the stack. Another variety of critical section time outs is a possible deadlock application error.
 
-## <span id="ddk_critical_section_time_outs_dbg"></span><span id="DDK_CRITICAL_SECTION_TIME_OUTS_DBG"></span>
-
-
-Critical section time outs can be identified by the stack trace that shows the routine **RtlpWaitForCriticalSection** near the top of the stack. Another variety of critical section time out is a possible deadlock application error. To debug critical section time outs properly, CDB or WinDbg is necessary.
-
-As with resource time outs, the **!ntsdexts.locks** extension will give a list of locks currently held and the threads that own them. Unlike resource time outs, the thread IDs given are not immediately useful. These are system IDs that do not map directly to the thread numbers used by CDB.
+As with resource time outs, the **!ntsdexts.locks** extension will give a list of locks currently held and the threads that own them. Unlike resource time outs, the thread IDs given are not immediately useful. These are system IDs that do not map directly to the thread numbers.
 
 Just as with <strong>ExpWaitForResource*Xxx</strong><em>, the lock identifier is the first parameter to **RtlpWaitForCriticalSection</em>*. Continue tracing the chain of waits until either a loop is found or the final thread is not waiting for a critical section time out.
 
-### <span id="example_of_debugging_a_critical_time_out"></span><span id="EXAMPLE_OF_DEBUGGING_A_CRITICAL_TIME_OUT"></span>Example of Debugging a Critical Time Out
+### Additional Information
+
+For other commands and extensions that can display critical section information, see [Displaying a Critical Section](displaying-a-critical-section.md). For more information about critical sections, see the Microsoft Windows SDK documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
+
+### Example of Debugging a Critical Time Out
 
 Start by displaying the stack:
 
@@ -127,13 +127,28 @@ ChildEBP RetAddr  Args to Child
 01ecfff4 00000000 00000000 00000024 00000024 csrsrv!_CsrApiRequestThread+0x4ff 
 ```
 
-Thread 21 has **RtlpWaitForCriticalSection** near the top of its stack. Thread 6 does not. So thread 21 is the culprit.
+Thread 21 has **RtlpWaitForCriticalSection** near the top of its stack. Thread 6 does not. So thread 21 should be investigated further to determine what it is waiting on. Examine the source code associated with  the locked threads, to see that locks are held and released properly.
 
- 
+## Application Verifier
 
- 
+Application verifier can intercept and wrap calls to detect incorrect lock usage. Application verifier can help locate the following issues.
 
+- Using un-initialized Critical Sections.
+- Thread releasing a Critical Section it doesn’t own.
+- Re-initialization of a Critical Section.
+- Over-releasing a Critical Section.
+- Thread in a state where it shouldn’t own locks (ExitThread, TerminateThread, ThreadPool, RPC Threads) but it actually owns locks.
 
+For more information, see [Application Verifier - Overview](../devtest/application-verifier.md).
 
+## See also
 
+For a code sample and example debugging session of an orphaned critical section, see *Advanced Windows Debugging* by Mario Hewardt and Daniel Pravat.
 
+[Displaying a Critical Section](displaying-a-critical-section.md)
+
+[Critical Section Time Outs](critical-section-time-outs.md) (user mode)
+
+[**!ntsdexts.locks**](-locks---ntsdexts-locks-.md) 
+
+[!cs ](-cs.md)

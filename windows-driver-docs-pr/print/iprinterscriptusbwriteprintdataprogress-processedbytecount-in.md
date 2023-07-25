@@ -12,7 +12,7 @@ api_name:
 - IPrinterScriptUsbWritePrintDataProgress.ProcessedByteCount
 api_type:
 - COM
-ms.date: 07/07/2020
+ms.date: 07/14/2023
 ---
 
 # IPrinterScriptUsbWritePrintDataProgress::ProcessedByteCount method (in)

@@ -1,7 +1,7 @@
 ---
 title: Component Firmware Update (CFU) firmware implementation guide
 description: Provides detailed guidance on implementing the Component Firmware Update (CFU) protocol and creating new firmware images to install on the target device.
-ms.date: 03/17/2023
+ms.date: 07/24/2023
 ---
 
 # Component Firmware Update (CFU) firmware implementation guide
@@ -96,9 +96,9 @@ Byte(s)    Value
         |  (PR)  Protocol Revision  2-bit register
 11:8    |  (VM)  Hardware Variant Mask 32-bit register
 7:4     |  (VN)  Version 32-bit register
-3       |  (TK)  Token byte 8-bit register
+3       |  (TK)  Token 8-bit register
 2       |  (CI)  Component ID 8-bit register
-1       |  (FV)  Force version bit  1-bit register
+1       |  (FV)  Force Ignore Version 1-bit register
         |  (FR)  Force Immediate Reset  1-bit register
         |  (R0)  Reserved0 6-bit register
 0       |  (SN)  Segment Number 8-bit register

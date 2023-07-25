@@ -2,8 +2,8 @@
 title: ISNMP Set method
 description: The Set method enables an ASP Web page to associate a value with an SNMP OID.
 MS-HAID:
-- 'webfnc\_b0392f7d-7d17-41ce-97fe-8f8baa691c78.xml'
-- 'print.isnmp\_set'
+- 'webfnc_b0392f7d-7d17-41ce-97fe-8f8baa691c78.xml'
+- 'print.isnmp_set'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -17,7 +17,7 @@ api_location:
 - olesnmp.h
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 07/14/2023
 ---
 
 # ISNMP::Set method
@@ -45,40 +45,16 @@ Caller-supplied location containing the OID's value.
 
 Win32 error codes can also be returned.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_FAIL</strong></td>
-<td><p>The <strong>ISNMP::Open</strong> method has not been called.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>E_INVALIDARG</strong></td>
-<td><p>The specified SNMP OID is not valid.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_OUTOFMEMORY</strong></td>
-<td><p>Out of memory.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| S_OK | The operation succeeded. |
+| E_FAIL | The **ISNMP::Open** method has not been called. |
+| E_INVALIDARG | The specified SNMP OID is not valid. |
+| E_OUTOFMEMORY | Out of memory. |
 
-## VBScript Example
+## VBScript example
 
-This method calls the **SnmpMgrRequest** function to set SNMP OID values. For more information, see the Windows SDK Documentation.
+This method calls the **SnmpMgrRequest** function to set SNMP OID values.
 
 The [**ISNMP::Open**](isnmp-open.md) method must be called before the `ISNMP::Set` method can be called.
 
@@ -96,22 +72,9 @@ objSNMP.Set ("43.18.1.1.2", OIDValue)
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Olesnmp.h</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
+
+**Header:** Olesnmp.h
 
 ## See also
 

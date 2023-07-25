@@ -3,7 +3,7 @@ title: How Windows selects a driver package for a device
 description: How Windows selects a driver package for a device
 keywords:
 - driver selections WDK device installations , where Device setupsearches
-ms.date: 12/03/2021
+ms.date: 07/19/2023
 ---
 
 # How Windows selects a driver package for a device
@@ -13,6 +13,7 @@ When a device is attached, Windows needs to find a matching [driver package](dri
 In Windows 10, this matching process happens in two phases. First, Windows 10 installs the best matching driver package in the [driver store](driver-store.md), allowing the device to begin operation quickly. After that driver package is installed, Windows 10 also:
 
 * Downloads any matching [driver packages](driver-packages.md) from Windows Update that are a better match for the device than what is currently on the system and puts them in the [driver store](driver-store.md).
+  * Starting in Windows 10 version 1703, when you plug in a device, if there is already a matching driver package for the device in the driver store, the system does not search Windows Update until the next regularly scheduled daily scan, which could be up to 24 hours from when the device is plugged in.
 * Searches for driver packages that were preloaded in the locations specified by the **DevicePath** registry value.  The **DevicePath** registry value is located under the following subkey: `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion`.  By default, the **DevicePath** value specifies the %SystemRoot%\\INF directory.
 
 If Windows 10 finds a better matching driver package in those locations than was initially installed, Windows replaces the driver package it installed from the driver store with the better match.

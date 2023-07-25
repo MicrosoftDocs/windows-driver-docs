@@ -1,5 +1,5 @@
 ---
-title: cs (WinDbg)
+title: !cs (WinDbg)
 description: The cs extension displays one or more critical sections or the whole critical section tree.
 keywords: ["cs Windows Debugging"]
 ms.date: 11/15/2018
@@ -13,7 +13,6 @@ api_type:
 ---
 
 # !cs
-
 
 The **!cs** extension displays one or more critical sections or the whole critical section tree.
 
@@ -45,15 +44,14 @@ Parameter | Description
 ### DLL
 
 Exts.dll
- 
 
 ### Additional Information
 
-For other commands and extensions that can display critical section information, see [Displaying a Critical Section](displaying-a-critical-section.md). For more information about critical sections, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. 
+For other commands and extensions that can display critical section information, see [Displaying a Critical Section](displaying-a-critical-section.md). For more information about critical sections, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
 #### Remarks
 
-The **!cs** extension requires full symbols (including type information) for the process that is being debugged and for Ntdll.dll. 
+The **!cs** extension requires full symbols (including type information) for the process that is being debugged and for Ntdll.dll.
 
 The following examples shows you how to use **!cs**. The following command displays information about the critical section at address 0x7803B0F8 and shows its initialization stack trace.
 
@@ -150,19 +148,24 @@ Level     Node       CS    Debug  InitThr EnterThr  WaitThr TryEnThr LeaveThr En
 
 The following items appear in this **!cs -t** display:
 
--   **InitThr** is the thread ID for the thread that initialized the CS.
+- **InitThr** is the thread ID for the thread that initialized the CS.
 
--   **EnterThr** is the ID of the thread that called **EnterCriticalSection** last time.
+- **EnterThr** is the ID of the thread that called **EnterCriticalSection** last time.
 
--   **WaitThr** is the ID of the thread that found the critical section that another thread owned and waited for it last time.
+- **WaitThr** is the ID of the thread that found the critical section that another thread owned and waited for it last time.
 
--   **TryEnThr** is the ID of the thread that called **TryEnterCriticalSection** last time.
+- **TryEnThr** is the ID of the thread that called **TryEnterCriticalSection** last time.
 
--   **LeaveThr** is the ID of the thread that called **LeaveCriticalSection** last time
+- **LeaveThr** is the ID of the thread that called **LeaveCriticalSection** last time
 
--   **EnterCnt** is the count of **EnterCriticalSection**.
+- **EnterCnt** is the count of **EnterCriticalSection**.
 
--   **WaitCnt** is the contention count.
+- **WaitCnt** is the contention count.
 
+## See also
 
+[**!ntsdexts.locks**](-locks---ntsdexts-locks-.md) 
 
+[Displaying a Critical Section](displaying-a-critical-section.md)
+
+[Critical Section Time Outs](critical-section-time-outs.md) (user mode)

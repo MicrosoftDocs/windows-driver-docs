@@ -19,7 +19,7 @@ Kernel-mode deadlocks arise when multiple threads (from the same process or from
 
 The procedure used to debug a deadlock depends on whether the deadlock occurs in user mode or in kernel mode.
 
-### <span id="debugging_a_user_mode_deadlock"></span><span id="DEBUGGING_A_USER_MODE_DEADLOCK"></span>Debugging a User-Mode Deadlock
+### Debugging a User-Mode Deadlock
 
 When a deadlock occurs in user mode, use the following procedure to debug it:
 
@@ -131,7 +131,7 @@ This is the deadlock. Thread 4, which owns the second critical section, is waiti
 
 Having confirmed the nature of this deadlock, you can use the usual debugging techniques to analyze threads 4 and 6.
 
-### <span id="debugging_a_kernel_mode_deadlock"></span><span id="DEBUGGING_A_KERNEL_MODE_DEADLOCK"></span>Debugging a Kernel-Mode Deadlock
+### Debugging a Kernel-Mode Deadlock
 
 There are several debugger extensions that are useful for debugging deadlocks in kernel mode:
 

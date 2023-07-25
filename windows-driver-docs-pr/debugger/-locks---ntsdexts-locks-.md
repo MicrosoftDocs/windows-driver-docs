@@ -14,7 +14,6 @@ api_type:
 
 # !locks (!ntsdexts.locks)
 
-
 The **!locks** extension in Ntsdexts.dll displays a list of critical sections associated with the current process.
 
 This extension command should not be confused with the [**!kdext\*.locks**](-locks---kdext--locks-.md) extension command.
@@ -23,10 +22,10 @@ This extension command should not be confused with the [**!kdext\*.locks**](-loc
     !locks [Options] 
 ```
 
-## <span id="ddk__ntsdexts_locks_dbg"></span><span id="DDK__NTSDEXTS_LOCKS_DBG"></span>Parameters
+## Parameters
 
+*Options*
 
-<span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
 Specifies the amount of information to be displayed. Any combination of the following options can be used:
 
 <span id="-v"></span><span id="-V"></span>**-v**  
@@ -35,30 +34,13 @@ Causes the display to include all critical sections, even those that are not cur
 <span id="-o"></span><span id="-O"></span>**-o**  
 Causes the display to only include orphaned information (pointers that do not actually point to valid critical sections).
 
-### <span id="DLL"></span><span id="dll"></span>DLL
+### DLL
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Windows 2000</strong></p></td>
-<td align="left"><p>Ntsdexts.dll</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Windows XP and later</strong></p></td>
-<td align="left"><p>Ntsdexts.dll</p></td>
-</tr>
-</tbody>
-</table>
+Ntsdexts.dll
 
- 
+### Additional Information
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
-
-For other commands and extensions that can display critical section information, see [Displaying a Critical Section](displaying-a-critical-section.md). For information about critical sections, see the Microsoft Windows SDK documentation, the Windows Driver Kit (WDK) documentation, and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
+For other commands and extensions that can display critical section information, see [Displaying a Critical Section](displaying-a-critical-section.md). For information about critical sections, see the Microsoft Windows SDK documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
 ## Remarks
 
@@ -86,11 +68,8 @@ ContentionCount    0
 *** Locked
 ```
 
- 
+## See also
 
- 
+[Displaying a Critical Section](displaying-a-critical-section.md)
 
-
-
-
-
+[Critical Section Time Outs](critical-section-time-outs.md) (user mode)

@@ -2,7 +2,7 @@
 title: ISNMP GetList method
 description: The GetList method enables an ASP Web page to obtain the values associated with an array of SNMP OIDs.
 MS-HAID:
-- 'webfnc\_44ada708-01e2-42c3-8080-bd7cf0e46b0e.xml'
+- 'webfnc_44ada708-01e2-42c3-8080-bd7cf0e46b0e.xml'
 - 'print.isnmp\_getlist'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
@@ -17,7 +17,7 @@ api_location:
 - olesnmp.h
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 07/14/2023
 ---
 
 # ISNMP::GetList method
@@ -45,38 +45,14 @@ Caller-supplied pointer to a location that receives the address of an array of S
 
 Win32 error codes can also be returned.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_FAIL</strong></td>
-<td><p>The <strong>ISNMP::Open</strong> method has not been called.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>E_INVALIDARG</strong></td>
-<td><p>The specified SNMP OID is not valid.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_OUTOFMEMORY</strong></td>
-<td><p>Out of memory.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| S_OK | The operation succeeded. |
+| E_FAIL | The **ISNMP::Open** method has not been called. |
+| E_INVALIDARG | The specified SNMP OID is not valid. |
+| E_OUTOFMEMORY | Out of memory. |
 
-## VBScript Example
+## VBScript example
 
 This method calls the **SnmpMgrRequest** function to obtain SNMP OID values. For more information about this function, see the Windows SDK Documentation.
 
@@ -94,22 +70,9 @@ OIDValueArray = objSNMP.GetList (OIDArray)
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Olesnmp.h</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
+
+**Header:** Olesnmp.h
 
 ## See also
 

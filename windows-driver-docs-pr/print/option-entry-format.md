@@ -1,28 +1,19 @@
 ---
-title: Option Entry Format
-description: Option Entry Format
+title: Option entry format
+description: Option entry format
 keywords:
 - printer options WDK Unidrv , entry format
 - formats WDK printer options
-ms.date: 01/30/2023
+ms.date: 07/18/2023
 ---
 
-# Option Entry Format
+# Option entry format
 
 [!include[Print Support Apps](../includes/print-support-apps.md)]
 
 To specify a printer option entry in a GPD file, use the following format:
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>*<strong>Option</strong>: <em>OptionName</em> { <em>OptionAttributes</em> }</p></td>
-</tr>
-</tbody>
-</table>
+\***Option**: *OptionName* { *OptionAttributes* }
 
 where *OptionName* is either the name of one of the predefined [standard options](standard-options.md) or a customized option name, and *OptionAttributes* is a set of [option attributes](option-attributes.md).
 

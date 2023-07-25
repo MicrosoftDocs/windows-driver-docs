@@ -2,8 +2,8 @@
 title: ISNMP Open method
 description: The Open method enables an ASP Web page to create a communication path to a specified SNMP agent.
 MS-HAID:
-- 'webfnc\_2be497fa-98d8-4fb3-997c-fa1345ed4648.xml'
-- 'print.isnmp\_open'
+- 'webfnc_2be497fa-98d8-4fb3-997c-fa1345ed4648.xml'
+- 'print.isnmp_open'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -17,7 +17,7 @@ api_location:
 - olesnmp.h
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 07/14/2023
 ---
 
 # ISNMP::Open method
@@ -53,36 +53,15 @@ Optional, caller-supplied time-out value, in milliseconds. If not specified, a d
 
 Win32 error codes can also be returned.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>S_OK</strong></td>
-<td><p>The operation succeeded.</p></td>
-</tr>
-<tr class="even">
-<td><strong>E_INVALIDARG</strong></td>
-<td><p>Either the <em>varRetry</em> or <em>varTimeOut</em> value could not be converted to a short integer.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>E_FAIL</strong></td>
-<td><p>The call to <strong>SnmpMgrOpen</strong> failed.</p></td>
-</tr>
-</tbody>
-</table>
+| Return code | Description |
+|--|--|
+| S_OK | The operation succeeded. |
+| E_FAIL | The call to **SnmpMgrOpen** failed. |
+| E_INVALIDARG | Either the *varRetry* or *varTimeOut* value could not be converted to a short integer. |
 
-## VBScript Example
+## VBScript example
 
-This method calls the **SnmpMgrOpen** function, which has the same parameters as `ISNMP::Open`. For more information about this function, see the Windows SDK Documentation.
+This method calls the **SnmpMgrOpen** function, which has the same parameters as `ISNMP::Open`.
 
 After the `ISNMP::Open` call, the communication path to the SNMP agent remains open until the [**ISNMP::Close**](isnmp-close.md) method is called, or until `ISNMP::Open` is called again.
 
@@ -96,22 +75,9 @@ objSNMP.Open strIP, strCommunity, 2, 1000
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Olesnmp.h</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
+
+**Header:** Olesnmp.h
 
 ## See also
 

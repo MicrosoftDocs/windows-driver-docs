@@ -12,7 +12,7 @@ api_name:
 - IPrinterScriptUsbJobContextReturnCodes
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 07/14/2023
 ---
 
 # IPrinterScriptUsbJobContextReturnCodes interface
@@ -25,62 +25,22 @@ This interface is returned by the [**IPrinterScriptUsbJobContext::ReturnCodes**]
 
 The **IPrinterScriptUsbJobContextReturnCodes** interface inherits from the [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterScriptUsbJobContextReturnCodes** also has these types of members:
 
--   [Methods](#methods)
+- [Methods](#methods)
 
 ### Methods
 
-The **IPrinterScriptUsbJobContextReturnCodes** interface has these methods.
+The **IPrinterScriptUsbJobContextReturnCodes** interface has these methods:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Method</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="iprinterscriptusbjobcontextreturncodes-abortthejob.md" data-raw-source="[&lt;strong&gt;AbortTheJob&lt;/strong&gt;](iprinterscriptusbjobcontextreturncodes-abortthejob.md)"><strong>AbortTheJob</strong></a></td>
-<td><p>Returns a value of '4' to inform USBMon that the print job must be aborted.</p></td>
-</tr>
-<tr class="even">
-<td><a href="iprinterscriptusbjobcontextreturncodes-devicebusy.md" data-raw-source="[&lt;strong&gt;DeviceBusy&lt;/strong&gt;](iprinterscriptusbjobcontextreturncodes-devicebusy.md)"><strong>DeviceBusy</strong></a></td>
-<td><p>Returns a value of '3' to inform USBMon that the device communication channel is not accepting data at this time.</p></td>
-</tr>
-<tr class="odd">
-<td><a href="iprinterscriptusbjobcontextreturncodes-failure.md" data-raw-source="[&lt;strong&gt;Failure&lt;/strong&gt;](iprinterscriptusbjobcontextreturncodes-failure.md)"><strong>Failure</strong></a></td>
-<td><p>Returns a value of '1' to inform USBMon that the method call failed.</p></td>
-</tr>
-<tr class="even">
-<td><a href="iprinterscriptusbjobcontextreturncodes-retry.md" data-raw-source="[&lt;strong&gt;Retry&lt;/strong&gt;](iprinterscriptusbjobcontextreturncodes-retry.md)"><strong>Retry</strong></a></td>
-<td><p>Returns a value of '2' to inform USBMon that the method call was successful, with more work to be completed.</p></td>
-</tr>
-<tr class="odd">
-<td><a href="iprinterscriptusbjobcontextreturncodes-success.md" data-raw-source="[&lt;strong&gt;Success&lt;/strong&gt;](iprinterscriptusbjobcontextreturncodes-success.md)"><strong>Success</strong></a></td>
-<td><p>Returns a value of zero (0) to inform USBMon that the function call completed successfully.</p></td>
-</tr>
-</tbody>
-</table>
+| Method | Description |
+|--|--|
+| [**AbortTheJob**](iprinterscriptusbjobcontextreturncodes-abortthejob.md) | Returns a value of '4' to inform USBMon that the print job must be aborted. |
+| [**DeviceBusy**](iprinterscriptusbjobcontextreturncodes-devicebusy.md) | Returns a value of '3' to inform USBMon that the device communication channel is not accepting data at this time. |
+| [**Failure**](iprinterscriptusbjobcontextreturncodes-failure.md) | Returns a value of '1' to inform USBMon that the method call failed. |
+| [**Retry**](iprinterscriptusbjobcontextreturncodes-retry.md) | Returns a value of '2' to inform USBMon that the method call was successful, with more work to be completed. |
+| [**Success**](iprinterscriptusbjobcontextreturncodes-success.md) | Returns a value of zero (0) to inform USBMon that the function call completed successfully. |
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>Windows 8.1</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>Windows Server 2012 R2</p></td>
-</tr>
-</tbody>
-</table>
+**Minimum supported client:** Windows 8.1
+
+**Minimum supported server:** Windows Server 2012 R2

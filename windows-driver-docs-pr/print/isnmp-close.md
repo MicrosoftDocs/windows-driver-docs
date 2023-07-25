@@ -2,8 +2,8 @@
 title: ISNMP Close method
 description: The Close method enables an ASP Web page to close a communication path to an SNMP agent.
 MS-HAID:
-- 'webfnc\_e925ae51-c717-4b4f-8ab2-b18e9d770c63.xml'
-- 'print.isnmp\_close'
+- 'webfnc_e925ae51-c717-4b4f-8ab2-b18e9d770c63.xml'
+- 'print.isnmp_close'
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
@@ -17,7 +17,7 @@ api_location:
 - olesnmp.h
 api_type:
 - COM
-ms.date: 04/20/2017
+ms.date: 07/14/2023
 ---
 
 # ISNMP::Close method
@@ -36,9 +36,9 @@ This method has no parameters.
 
 ## Return value
 
-The method always returns S\_OK.
+The method always returns S_OK.
 
-## VBScript Example
+## VBScript example
 
 This method calls the **SnmpMgrClose** function, which is described in the Windows SDK documentation, to close the communication path that was created by the previous call to the [**ISNMP::Open**](isnmp-open.md) method.
 
@@ -54,22 +54,9 @@ objSNMP.Close
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Target platform</p></td>
-<td>Desktop</td>
-</tr>
-<tr class="odd">
-<td><p>Header</p></td>
-<td>Olesnmp.h</td>
-</tr>
-</tbody>
-</table>
+**Target platform:** Desktop
+
+**Header:** Olesnmp.h
 
 ## See also
 
