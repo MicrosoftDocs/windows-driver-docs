@@ -1,7 +1,7 @@
 ---
 title: Bluetooth bypass guidelines for audio drivers
 description: Learn how to reroute audio data past the Bluetooth host controller interface (HCI) for processing in system-on-a-chip (SoC) solutions.
-ms.date: 06/14/2023
+ms.date: 07/27/2023
 ---
 
 # Bluetooth bypass guidelines for audio drivers
@@ -30,4 +30,6 @@ For detailed information about the DDI members, see [Bluetooth HFP DDI Reference
 
 ## Related topics
 
-[Theory of Bluetooth bypass audio streaming](theory-of-operation.md)
+- [Bluetooth bypass guidelines for audio drivers](bluetooth-bypass-guidelines-for-audio-drivers.md)
+- [Theory of Bluetooth bypass audio streaming](theory-of-operation.md)
+- [Bluetooth Low Energy (LE) Audio](../bluetooth/bluetooth-low-energy-audio.md)

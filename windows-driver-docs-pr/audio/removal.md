@@ -1,7 +1,7 @@
 ---
 title: HFP device removal
 description: Learn about the process and consequences of removing a Bluetooth hands-free profile (HFP) device from an audio system.
-ms.date: 04/20/2017
+ms.date: 07/27/2023
 ---
 
 # HFP device removal
@@ -18,4 +18,5 @@ To remove the registered device interface for a paired HFP device, follow these 
 
 ## Related topics
 
-[Theory of Bluetooth bypass audio streaming](theory-of-operation.md)
+- [Theory of Bluetooth bypass audio streaming](theory-of-operation.md)
+- [Bluetooth Low Energy (LE) Audio](../bluetooth/bluetooth-low-energy-audio.md)

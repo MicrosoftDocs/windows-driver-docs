@@ -1,7 +1,7 @@
 ---
 title: Bluetooth Low Energy (LE) Audio
 description: This article provides an overview of Bluetooth LE Audio introduced in Windows 11 version 22H2 (KB5026446).
-ms.date: 07/21/2023
+ms.date: 07/27/2023
 ---
 
 # Bluetooth Low Energy (LE) Audio
@@ -603,3 +603,8 @@ Bluetooth LE Audio doesn't have any power management requirements or flows outsi
 - [Bluetooth Published Audio Capabilities Service Specification](https://www.bluetooth.com/specifications/specs/published-audio-capabilities-service/)
 - [Bluetooth Audio Stream Control Service Specification](https://www.bluetooth.com/specifications/specs/audio-stream-control-service/)
 - [Bluetooth Assigned Numbers](https://www.bluetooth.com/specifications/assigned-numbers/)
+- [Bluetooth bypass guidelines for audio drivers](../audio/bluetooth-bypass-guidelines-for-audio-drivers.md)
+- [Theory of Bluetooth bypass audio streaming](../audio/theory-of-operation.md)
+- [HFP device startup](../audio/startup.md)
+- [HFP device connection](../audio/hfp-device-connection.md)
+- [HFP device removal](../audio/removal.md)

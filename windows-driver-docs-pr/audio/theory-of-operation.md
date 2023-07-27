@@ -1,7 +1,7 @@
 ---
 title: Theory of Bluetooth bypass audio streaming
 description: This article explains the operation and theory of Bluetooth bypass audio streaming.
-ms.date: 06/15/2023
+ms.date: 07/27/2023
 ---
 
 # Theory of Bluetooth bypass audio streaming
@@ -42,3 +42,4 @@ The following topics provide more information about the connection life cycle an
 - [HFP device removal](removal.md)
 - [Kernel streaming considerations](kernel-streaming-considerations.md)
 - [Audio endpoint container ID](audio-endpoint-container-id.md)
+- [Bluetooth Low Energy (LE) Audio](../bluetooth/bluetooth-low-energy-audio.md)
