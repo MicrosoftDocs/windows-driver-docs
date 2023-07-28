@@ -37,14 +37,14 @@ The following acronyms are used in this section:
 - **WwanSvc:** WWAN Service
 
 ### High Level Design for Firmware Patch Update
-![High Level Design for Firmware Patch Update.](images\mb-fw-upgrade-esim-high-level-design.png "High Level Design for Firmware Patch Update")
+:::image type="content" source="images\mb-fw-upgrade-esim-high-level-design.png" alt-text="Diagram that shows the high level design for firmware patch update.":::
 
 ### High Level Design for Firmware OS Update
-![High Level Design for Firmware OS Update.](images\mb-fw-upgrade-esim-high-level-os-update.png "High Level Design for Firmware OS Update")
+:::image type="content" source="images\mb-fw-upgrade-esim-high-level-os-update.png" alt-text="Diagram that shows the high level design for firmware OS update.":::
 
 ## Firmware Upgrade Architecture
 
-![FW Upgrade for eSIM Block Diagram.](images\mb-fw-upgrade-esim-block-diag.png "FW Upgrade for eSIM Block Diagram")
+:::image type="content" source="images\mb-fw-upgrade-esim-block-diag.png" alt-text="Block diagram illustrating the firmware upgrade process for eSIM.":::
 
 For Windows 10, version 1703 the card vendor will deliver firmware updates on APDUs over the ISO interface. Updates for full images (PBL HCP) on HCP packets over the SPI interface are planned for the Windows 10, version 1709 time frame. 
 
@@ -87,7 +87,7 @@ The ISO UMDF driver sets additional custom dev properties on the Smart Card read
 
 These properties are used to uniquely name the smart card readers and identify the reader that is attached to the correct eSIM card. For example: IsEmbedded=True and SlotId=1.
 
-![Additional Custom Properties for UICC ISO SC Driver DevNode.](images\mb-fw-upgrade-esim-Additional-Custom-Properties-for-UICCISOSCDriver-DevNode.png "Additional Custom Properties For UICC ISO SC Driver DevNode")
+:::image type="content" source="images\mb-fw-upgrade-esim-Additional-Custom-Properties-for-UICCISOSCDriver-DevNode.png" alt-text="Diagram displaying additional custom properties for UICC ISO Smart Card Driver DevNode.":::
 
 The TRC Image Update Agent is required to have sharedUserCertificates capability which allows access to the Smart Card WinRT API. The sharedUserCertificates capability is a restricted capability that is only given to enterprises with certain credentials. Once the access is granted, the app can connect to the TRC on the device via the Smart Card API and send commands to the card.
 
@@ -102,15 +102,19 @@ During a full firmware OS update it is important that the UICC apps that are inv
 
 ## Flow Diagrams
 ### Connect
-![Flow diagram for connecting to SC WinRT.](images\mb-fw-upgrade-esim-connect.png "Connect")
+:::image type="content" source="images\mb-fw-upgrade-esim-connect.png" alt-text="Flowchart that demonstrates the process of connecting to Smart Card Windows Runtime.":::
+
 ### Transmit (Open Channel)
-![Flow diagram for transmit (open channel).](images\mb-fw-upgrade-esim-transmit-open-channel.png "trans open channel")
+:::image type="content" source="images\mb-fw-upgrade-esim-transmit-open-channel.png" alt-text="Flowchart that demonstrates the process of opening a channel.":::
+
 ### Transmit (send APDU and Close Channel)
-![Flow diagram for transmit (send APDU and close channel).](images\mb-fw-upgrade-esim-transmit-sendapdu-close-channel.png "Transmit send apdu & close channel")
+:::image type="content" source="images\mb-fw-upgrade-esim-transmit-sendapdu-close-channel.png" alt-text="Flowchart that demonstrates the process of transmitting data, sending APDU, and closing the channel.":::
+
 ### Get ATR
-![Flow diagram for Get ATR.](images\mb-fw-upgrade-esim-getatr.png "Get ATR")
+:::image type="content" source="images\mb-fw-upgrade-esim-getatr.png" alt-text="Flowchart that demonstrates the process of getting the ATR.":::
+
 ### Pass-through mode
-![Flow diagram for Pass-through Mode.](images\mb-fw-upgrade-esim-passthru.png "pass through")
+:::image type="content" source="images\mb-fw-upgrade-esim-passthru.png" alt-text="Flowchart that demonstrates the process of operating in pass-through mode.":::
 
 ## Related 
 [Preinstall Apps Using DISM Published](/previous-versions/windows/it-pro/windows-8.1-and-8/dn387084(v=win.10)?redirectedfrom=MSDN)
@@ -120,6 +124,5 @@ During a full firmware OS update it is important that the UICC apps that are inv
 [Preinstallable apps for mobile devices](/windows-hardware/customize/preinstall/preinstallable-apps-for-window-10-for-phones)
 
 [Preinstall Task](/windows-hardware/customize/preinstall/preinstall-tasks)
-
 
 
