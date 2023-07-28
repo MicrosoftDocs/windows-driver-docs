@@ -42,5 +42,5 @@ This procedure allows time for a VoIP application to receive an audio transfer c
 
 ## Related topics
 
-- [Theory of Bluetooth bypass audio streaming](theory-of-operation.md)
+- [Bluetooth HFP bypass audio streaming](bluetooth-hfp-bypass-audio-streaming.md)
 - [Bluetooth Low Energy (LE) Audio](../bluetooth/bluetooth-low-energy-audio.md)

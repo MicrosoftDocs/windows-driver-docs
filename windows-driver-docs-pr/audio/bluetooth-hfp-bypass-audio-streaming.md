@@ -1,12 +1,12 @@
 ---
-title: Theory of Bluetooth bypass audio streaming
-description: This article explains the operation and theory of Bluetooth bypass audio streaming.
+title: Bluetooth hands-free profile (HFP) bypass audio streaming
+description: This article explains the operation and theory of Bluetooth hands-free profile (HFP) bypass audio streaming.
 ms.date: 07/27/2023
 ---
 
-# Theory of Bluetooth bypass audio streaming
+# Bluetooth HFP bypass audio streaming
 
-This article explains the operation and theory of Bluetooth bypass audio streaming.
+This article explains the operation and theory of Bluetooth hands-free profile (HFP) bypass audio streaming.
 
 In bypass mode, Bluetooth audio control path flows through a hardware connection other than the host controller interface (HCI), such as I2S, to the Bluetooth controller. This other hardware connection is often I2S, but can be any interface determined by the Bluetooth host controller. This connection is referred to as a "bypass" or "sideband" connection.
 

@@ -378,12 +378,12 @@
     href: windows-11-apis-for-audio-processing-objects.md
   - name: "Audio Hardware Resource Management"
     href: audio-hardware-resource-management.md
-  - name: "Bluetooth Bypass Guidelines for Audio Drivers"
+  - name: "Bluetooth HFP Bypass Guidelines for Audio Drivers"
 # Auto-expanded node
     items: 
-    - name: "Bluetooth Bypass Guidelines for Audio Drivers"
+    - name: "Bluetooth HFP Bypass Guidelines for Audio Drivers"
       href: bluetooth-bypass-guidelines-for-audio-drivers.md
-    - name: "Theory of Bluetooth bypass audio streaming"
+    - name: "Bluetooth HFP bypass audio streaming"
       href: theory-of-operation.md
     - name: "HFP Device Startup"
       href: startup.md

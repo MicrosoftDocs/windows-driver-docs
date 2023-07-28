@@ -603,5 +603,5 @@ Bluetooth LE Audio doesn't have any power management requirements or flows outsi
 - [Bluetooth Published Audio Capabilities Service Specification](https://www.bluetooth.com/specifications/specs/published-audio-capabilities-service/)
 - [Bluetooth Audio Stream Control Service Specification](https://www.bluetooth.com/specifications/specs/audio-stream-control-service/)
 - [Bluetooth Assigned Numbers](https://www.bluetooth.com/specifications/assigned-numbers/)
-- [Bluetooth bypass guidelines for audio drivers](../audio/bluetooth-bypass-guidelines-for-audio-drivers.md)
-- [Theory of Bluetooth bypass audio streaming](../audio/theory-of-operation.md)
+- [Bluetooth HFP bypass guidelines for audio drivers](../audio/bluetooth-bypass-guidelines-for-audio-drivers.md)
+- [Bluetooth HFP bypass audio streaming](../audio/bluetooth-hfp-bypass-audio-streaming.md)

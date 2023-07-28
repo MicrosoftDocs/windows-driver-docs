@@ -63,6 +63,6 @@ The audio driver sends the get volume status IOCTL to get information about any 
 ## Related topics
 
 - **[IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR](/windows-hardware/drivers/ddi/bthhfpddi/ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor)**  
-- [Theory of Bluetooth bypass audio streaming](theory-of-operation.md)  
+- [Bluetooth HFP bypass audio streaming](bluetooth-hfp-bypass-audio-streaming.md)  
 - [Obtaining Bluetooth Address of HF Device](obtaining-bluetooth-address-of-hf-device.md)
 - [Bluetooth Low Energy (LE) Audio](../bluetooth/bluetooth-low-energy-audio.md)
