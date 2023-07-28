@@ -12,7 +12,7 @@ The Network Monitor tool (*NetMon.exe*) is an archived Windows-based application
 
 To install and configure the Network Monitor tool, complete the following steps.
 
-1. Download and install [*NetMon.exe*](https://go.microsoft.com/fwlink/p/?linkid=248501).
+1. Download and install [*NetMon.exe*](https://www.microsoft.com/download/details.aspx?id=4865).
 2. Download and install [the Windows Driver Kit](../download-the-wdk.md).
 3. Install the WPD parsers on your development machine by starting an instance of *Powershell.exe* with *Administrator* permissions and running the following sequence of commands.
    1. PowerShell -ExecutionPolicy RemoteSigned
@@ -103,3 +103,4 @@ The Network Monitor tool provides several filtering capabilities.
 - Similarly, the following filter would retrieve the same method calls:
 
     WPDMTP.CorrespondingCommand.MTPOpcode == MTP\_OPCODE\_GETSERVICEPROPERTIES
+
