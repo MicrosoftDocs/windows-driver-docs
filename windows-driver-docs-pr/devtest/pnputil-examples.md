@@ -1,7 +1,7 @@
 ---
 title: PnPUtil Examples
 description: PnPUtil Examples
-ms.date: 11/09/2022
+ms.date: 07/31/2023
 ---
 
 # PnPUtil Examples
@@ -40,40 +40,6 @@ Force delete driver package
 
 ```console
 pnputil /delete-driver oem1.inf /force
-```
-
-## /export-driver
-
-Export driver package
-
-```console
-pnputil /export-driver oem6.inf .
-```
-
-Export all driver packages
-
-```console
-pnputil /export-driver * c:\backup
-```
-
-## /enum-drivers
-
-Enumerate OEM driver packages
-
-```console
-pnputil /enum-drivers
-```
-
-Enumerate all OEM driver packages of a specific class
-
-```console
-pnputil /enum-drivers /class "System"
-```
-
-Enumerate all OEM driver packages and display driver files
-
-```console
-pnputil /enum-drivers /files
 ```
 
 ## /disable-device
@@ -116,55 +82,27 @@ Enable all devices of a specific class on a specific bus
 pnputil /enable-device /class "USB" /bus "PCI"
 ```
 
-## /restart-device
+## /enum-classes
 
-Restart device specified by device instance ID
+Enumerate all device setup classes on the system
 
 ```console
-pnputil /restart-device "USB\VID_045E&PID_00DB\6&870CE29&0&1"
+pnputil /enum-classes
 ```
 
-Restart all devices with specific hardware/compatible ID
+Enumerate information for a specific device setup class
 
 ```console
-pnputil /restart-device /deviceid "USB\Class_03"
-```
-
-Restart all devices of a specific class on a specific bus
-
-```console
-pnputil /restart-device /class "USB" /bus "PCI"
-```
-
-## /remove-device
-
-Remove device specified by device instance ID
-
-```console
-pnputil /remove-device "USB\VID_045E&PID_00DB\6&870CE29&0&1"
-```
-
-Remove all devices with specific hardware/compatible ID
-
-```console
-pnputil /remove-device /deviceid "USB\Class_03"
-```
-
-Remove all devices of a specific class on a specific bus
-
-```console
-pnputil /remove-device /class "USB" /bus "PCI"
-```
-
-## /scan-devices
-
-Scan the system for any device hardware changes
-
-```console
-pnputil /scan-devices
+pnputil /enum-classes /class "Display"
 ```
 
 ## /enum-devices
+
+Enumerate devices on the system. An enabled device appears with status **Started**; a disabled device appears as **Disabled**.
+
+```console
+pnputil /enum-devices
+```
 
 Enumerate only connected devices on the system
 
@@ -208,6 +146,26 @@ Enumerate all devices with specific bus
 pnputil /enum-devices /bus "PCI"
 ```
 
+## /enum-drivers
+
+Enumerate OEM driver packages
+
+```console
+pnputil /enum-drivers
+```
+
+Enumerate all OEM driver packages of a specific class
+
+```console
+pnputil /enum-drivers /class "System"
+```
+
+Enumerate all OEM driver packages and display driver files
+
+```console
+pnputil /enum-drivers /files
+```
+
 ## /enum-interfaces
 
 Enumerate only enabled interfaces on the system
@@ -222,16 +180,65 @@ Enumerate all interfaces with specific interface class GUID
 pnputil /enum-interfaces /class "{884b96c3-56ef-11d1-bc8c-00a0c91405dd}"
 ```
 
-## /enum-classes
+## /export-driver
 
-Enumerate all device setup classes on the system
-
-```console
-pnputil /enum-classes
-```
-
-Enumerate information for a specific device setup class
+Export driver package
 
 ```console
-pnputil /enum-classes /class "Display"
+pnputil /export-driver oem6.inf .
 ```
+
+Export all driver packages
+
+```console
+pnputil /export-driver * c:\backup
+```
+
+## /remove-device
+
+Remove device specified by device instance ID
+
+```console
+pnputil /remove-device "USB\VID_045E&PID_00DB\6&870CE29&0&1"
+```
+
+Remove all devices with specific hardware/compatible ID
+
+```console
+pnputil /remove-device /deviceid "USB\Class_03"
+```
+
+Remove all devices of a specific class on a specific bus
+
+```console
+pnputil /remove-device /class "USB" /bus "PCI"
+```
+
+## /restart-device
+
+Restart device specified by device instance ID
+
+```console
+pnputil /restart-device "USB\VID_045E&PID_00DB\6&870CE29&0&1"
+```
+
+Restart all devices with specific hardware/compatible ID
+
+```console
+pnputil /restart-device /deviceid "USB\Class_03"
+```
+
+Restart all devices of a specific class on a specific bus
+
+```console
+pnputil /restart-device /class "USB" /bus "PCI"
+```
+
+## /scan-devices
+
+Scan the system for any device hardware changes
+
+```console
+pnputil /scan-devices
+```
+
