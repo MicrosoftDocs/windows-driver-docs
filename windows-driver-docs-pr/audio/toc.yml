@@ -378,28 +378,28 @@
     href: windows-11-apis-for-audio-processing-objects.md
   - name: "Audio Hardware Resource Management"
     href: audio-hardware-resource-management.md
-  - name: "Bluetooth Bypass Guidelines for Audio Drivers"
+  - name: "Bluetooth HFP Bypass Guidelines for Audio Drivers"
 # Auto-expanded node
     items: 
-    - name: "Bluetooth Bypass Guidelines for Audio Drivers"
+    - name: "Bluetooth HFP bypass guidelines for audio drivers"
       href: bluetooth-bypass-guidelines-for-audio-drivers.md
-    - name: "Theory of Bluetooth bypass audio streaming"
-      href: theory-of-operation.md
-    - name: "HFP Device Startup"
+    - name: "Bluetooth HFP bypass audio streaming"
+      href: bluetooth-hfp-bypass-audio-streaming.md
+    - name: "HFP device startup"
       href: startup.md
-    - name: "HFP Device Connection"
+    - name: "HFP device connection"
       href: hfp-device-connection.md
-    - name: "HFP Device Removal"
+    - name: "HFP device removal"
       href: removal.md
-    - name: "Kernel Streaming Considerations"
+    - name: "Kernel streaming considerations"
       href: kernel-streaming-considerations.md
-    - name: "Audio Endpoint Container ID"
+    - name: "Audio endpoint container ID"
       href: audio-endpoint-container-id.md
-    - name: "Setting Properties and Registry Values"
+    - name: "Setting properties and registry values"
       href: setting-properties-and-registry-values.md
-    - name: "Setting Friendly Names,Sideband SCO Transport and Registering APOs"
+    - name: "Setting friendly names, sideband SCO transport and registering APOs"
       href: setting-friendly-name--registering-apos.md
-    - name: "Obtaining Bluetooth Address of HF Device"
+    - name: "Obtaining bluetooth address of HF device"
       href: obtaining-bluetooth-address-of-hf-device.md
   - name: "Hardware-Offloaded Audio Processing"
 # Auto-expanded node
