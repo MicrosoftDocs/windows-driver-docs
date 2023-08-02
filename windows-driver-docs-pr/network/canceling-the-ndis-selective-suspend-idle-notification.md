@@ -54,7 +54,7 @@ NDIS and the miniport driver follow these steps when an idle notification is can
 
 The following figure shows the steps that are involved when NDIS cancels an idle notification that was issued to a miniport driver for a USB network adapter.
 
-![diagram showing the idle notification resume process.](images/ndis-ss-idle-notification-resume.png)
+:::image type="content" source="images/ndis-ss-idle-notification-resume.png" alt-text="Diagram that shows the idle notification resume process for a USB network adapter.":::
 
 ## Canceling the Idle Notification Because of Wake-up Events
 
@@ -73,4 +73,4 @@ NDIS and the miniport driver follow these steps when NDIS cancels an idle notifi
 
 For example, the following figure shows the steps that are involved when NDIS cancels an idle notification because of a wake-up event signaled by a USB network adapter.
 
-![diagram showing the idle notification wake-up process.](images/ndis-ss-idle-notification-resume-wake.png)
+:::image type="content" source="images/ndis-ss-idle-notification-resume-wake.png" alt-text="Diagram that shows NDIS idle notification wake-up process for a USB network adapter.":::
