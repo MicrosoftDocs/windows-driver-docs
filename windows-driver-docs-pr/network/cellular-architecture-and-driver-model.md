@@ -11,7 +11,7 @@ This section describes the elements of the cellular architecture for Windows 10 
 
 ## Windows 10 cellular architecture
 
-![Windows 10 cellular architecture.](images/CellularArchitecture.png)
+:::image type="content" source="images/CellularArchitecture.png" alt-text="Diagram illustrating Windows 10 cellular architecture with user mode and kernel mode components.":::
 
 The following describes the elements shown in the Windows 10 cellular architecture:
 
@@ -74,7 +74,7 @@ The IHV-implemented "lower edge" cellular device driver implements all of the ad
 
 ### MBB and MBIM Driver Interactions
 
-![windows 10 cellular architecture.](images/cellular_mbb_driver_architecture.png)
+:::image type="content" source="images/cellular_mbb_driver_architecture.png" alt-text="Diagram showing MBB and MBIM driver interactions in Windows 10 cellular architecture.":::
 
 ## Windows 10 cellular implementation requirements
 
