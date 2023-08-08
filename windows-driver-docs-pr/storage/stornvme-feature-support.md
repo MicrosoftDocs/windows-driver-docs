@@ -1,7 +1,7 @@
 ---
 title: NVMe feature and extended capability support
 description: Describes NVMe features supported by StorNVMe
-ms.date: 05/20/2022
+ms.date: 08/08/2023
 ---
 
 # NVMe feature and extended capability support
@@ -10,14 +10,14 @@ The following table lists Features and Extended Capabilities defined in the NVM 
 
 * The columns with specification references indicate the section(s) in the NVM Express specification that describe the Feature or Extended Capability ("Caps"):
   * *NVMe 1.4 (Features)* – NVM Express Revision 1.4, June 10, 2019
-  * *NVMe 2.0 (Caps) Base* – NVM Express Base Specification 2.0a, July 23rd, 2021
-  * *NVMe 2.0 (Caps) NVM* – NVM Express NVM Command Set Specification 1.0a, July 23rd, 2021
-  * *NVMe 2.0 (Caps) ZNS* – Zoned Namespace Command Set Specification 1.1a, July 23rd, 2021
+  * *NVMe 2.0 (Caps) Base* – NVM Express Base Specification 2.0a, July 23, 2021
+  * *NVMe 2.0 (Caps) NVM* – NVM Express NVM Command Set Specification 1.0a, July 23, 2021
+  * *NVMe 2.0 (Caps) ZNS* – Zoned Namespace Command Set Specification 1.1a, July 23, 2021
 * StorNVMe Supported – Indicates support in the StorNVMe device driver on Windows 10 version 1903 and later.
-* Comments – Any additional relevant information; for example, whether supported as part of an IOCTL operation. "WinPE Only" indicates support only in WinPE editions of Windows.
+* Comments – Any extra relevant information; for example, whether supported as part of an IOCTL operation. "WinPE Only" indicates support only in WinPE editions of Windows.
 
 | Feature or Extended Capability | NVMe 1.4 (Features) | NVMe 2.0 (Caps) Base | NVMe 2.0 (Caps) NVM | NVMe 2.0 (Caps) ZNS | StorNVMe Supported | Comments |
-| -- | -- | -- | -- | -- | -- | -- |
+| ------------------------------ | ------------------- | --------------------- | ------------------- | ------------------- | ------------------ | -------- |
 | Asymmetric Namespace Access Reporting | 8.20 | 8.1 | 5.1 |  |  |  |
 | Boot Partitions                       | 8.13 | 8.2 |     |  |  |  |
 | Capacity Management                   |      | 8.3 |     |  |  |  |
@@ -33,14 +33,14 @@ The following table lists Features and Extended Capabilities defined in the NVM 
 | Get LBA Status               | 8.22 |  | 5.8.1 |  |  |  |
 | Host Memory Buffer | 8.9 | 8.9 |  |  | Yes |  |
 | Host Operation with Asymmetric Namespace Access Reporting (Informative) | 8.21 | 8.10 |  |  |  |  |
-| Improving Performance through I/O Size and Alignment Adherence | 8.25 |  | 5.8.2 |  | Yes | Supports Namespace Optimal IO Boundary (NOIOB). Currently does not support NPWG, NPWA, NPDG, NPDA, or NOWS. |
+| Improving Performance through I/O Size and Alignment Adherence | 8.25 |  | 5.8.2 |  | Yes | Supports Namespace Optimal IO Boundary (NOIOB). NPWG, NPWA, NPDG, NPDA, and NOWS are supported starting in Windows 11 and Windows Server 2022. The driver also uses the Optimal Write Size value reported in the NVM Set Attributes Entries. |
 | Metadata Handling | 8.2 |  | 5.8.3 |  |  |  |
 | Namespace Management   | 8.12 | 8.11 | 5.3 |  | Yes | WinPE only. Available through [IOCTL_STORAGE_PROTOCOL_COMMAND](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command) |
 | Namespace Write Protection | 8.19 | 8.12 |  |  |  |  |
 | NVM Command Set Media and Data Error Handling |  |  | 5.4 |  |  |  |
 | NVMe over Fabrics In-band Authentication |  | 8.13 |  |  |  |  |
 | Persistent Memory Region |  | 8.14 |  |  |  |  |
-| Power Management | 8.4 | 8.15 |  |  | Yes | Supports non-operational power states. Autonomous power state transitions are disabled by default. Runtime D3 transitions are enabled by default for selected platforms in Modern Stand-by. Host controlled thermal management Get/Set features supported through [IOCTL_STORAGE_QUERY_PROPERTY](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property) and [IOCTL_STORAGE_SET_PROPERTY](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_set_property). |
+| Power Management | 8.4 | 8.15 |  |  | Yes | Supports nonoperational power states. Autonomous power state transitions are disabled by default. Runtime D3 transitions are enabled by default for selected platforms in Modern Stand-by. Host controlled thermal management Get/Set features supported through [IOCTL_STORAGE_QUERY_PROPERTY](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property) and [IOCTL_STORAGE_SET_PROPERTY](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_set_property). |
 | Predictable Latency Mode      | 8.18 | 8.16 |     |     |  |  |
 | Read Recovery Level           | 8.16 | 8.17 |     |     |  |  |
 | Replay Protected Memory Block | 8.10 | 8.18 |     |     |  |  |
@@ -57,6 +57,4 @@ The following table lists Features and Extended Capabilities defined in the NVM 
 | Zone Active Excursions |  |  |  | 5.6 |  | From Windows 11, Windows Server 2022. Reserved for Microsoft internal use. |
 | Zone Descriptor Extension |  |  |  | 5.3 |  | From Windows 11, Windows Server 2022. Reserved for Microsoft internal use. |
 
-See [Working with NVMe drives](/windows/win32/fileio/working-with-nvme-devices#protocol-specific-queries) for additional information.
-
-*Subject to change. See [Working with NVMe Devices](/windows/win32/fileio/working-with-nvme-devices) for additional information.*
+For more information, see [Working with NVMe drives](/windows/win32/fileio/working-with-nvme-devices).
