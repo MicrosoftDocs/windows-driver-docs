@@ -19,7 +19,7 @@ For information about KMDF and bus-master DMA, see [Handling I/O Requests in a K
 
 The following figure shows the event callback functions that your driver uses to support system-mode DMA:
 
-![system-mode dma implementation in kmdf drivers.](images/sys-mode-dma-in-kmdf.png)
+:::image type="content" source="images/sys-mode-dma-in-kmdf.png" alt-text="Flowchart that shows event callback functions for system-mode DMA implementation in KMDF drivers.":::
 
 ## Creating a System-Mode DMA Enabler
 
@@ -37,7 +37,6 @@ Creating a system-mode DMA profile is a two-step process. The following steps re
 ## Providing Optional Callback Functions
 
 
-### <a href="" id="configuring-a-system-mode-dma-enabler"></a>Configuring a DMA Channel
 
 Typically, KMDF drivers do not configure DMA channels. However, in certain circumstances, drivers may need to perform channel-specific configuration. For example, a driver might call a custom function that is implemented by the DMA controller by using the following steps:
 
