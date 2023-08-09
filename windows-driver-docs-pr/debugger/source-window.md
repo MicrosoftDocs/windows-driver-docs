@@ -11,7 +11,7 @@ ms.date: 05/23/2017
 ## <span id="ddk_source_path_dbg"></span><span id="DDK_SOURCE_PATH_DBG"></span>Source Path
 
 
-The source path specifies the directories where the C and C++ source files are located. For more information about viewing source code in the debugger, see [Source Code](source-code.md).
+The source path specifies the directories where the C and C++ source files are located. For more information about viewing source code in the debugger, see [Source path](source-path.md).
 
 **Note**   If you are connected to a corporate network, the most efficient way to access source files is to use a source server. You can use a source server by using the srv\* string within your source path. For more information about source servers, see [Using a Source Server](using-a-source-server.md).
 

@@ -1,15 +1,13 @@
 ---
-title: Source Path
+title: Source Code Path
 description: This topic covers how to set the source path or load the individual source files.
 keywords: source files and paths, source path
 ms.date: 05/23/2017
 ---
 
-# Source Path
-
+# Source Code Path
 
 ## <span id="ddk_source_path_dbg"></span><span id="DDK_SOURCE_PATH_DBG"></span>
-
 
 The *source path* specifies the directories where the C and C++ source files are located.
 
