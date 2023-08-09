@@ -17,11 +17,11 @@ A client requests a change in quality of service (QoS) on an active virtual conn
 
 The following figure shows the client of a call manager requesting a change in quality of service.
 
-![diagram illustrating the client of a call manager requesting a change in quality of service.](images/cm-15.png)
+:::image type="content" source="images/cm-15.png" alt-text="Diagram showing a client of a call manager requesting a QoS change on an active VC.":::
 
 The following figure shows the client of an MCM driver requesting a change in quality of service.
 
-![diagram illustrating the client of an mcm driver requesting a change in quality of service.](images/fig1-15.png)
+:::image type="content" source="images/fig1-15.png" alt-text="Diagram illustrating a client of an MCM driver requesting a QoS change on an active VC.":::
 
 In the call to **NdisClModifyCallQoS**, the client supplies:
 

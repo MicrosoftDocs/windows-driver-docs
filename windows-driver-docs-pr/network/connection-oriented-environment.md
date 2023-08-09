@@ -34,11 +34,11 @@ NDIS supports the following connection-oriented drivers:
 
 The following figure shows a configuration of connection-oriented clients, a call manager, and a miniport driver.
 
-![diagram illustrating a configuration of connection-oriented clients, a call manager, and a miniport driver.](images/conormed.png)
+:::image type="content" source="images/conormed.png" alt-text="Diagram illustrating a configuration of connection-oriented clients, a call manager, and a miniport driver.":::
 
 The following figure shows a configuration of connection-oriented clients and an integrated MCM driver.
 
-![connection-oriented environment with integrated mcm driver.](images/conorcli.png)
+:::image type="content" source="images/conorcli.png" alt-text="Diagram showing a connection-oriented environment with an integrated MCM driver.":::
 
 A *connection-oriented miniport driver* controls one or more network interface cards (NICs) and provides an interface between connection-oriented protocol drivers (connection-oriented clients and call managers) and the NIC hardware.
 
