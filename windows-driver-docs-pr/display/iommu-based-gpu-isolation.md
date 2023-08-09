@@ -1,6 +1,6 @@
 ---
 title: IOMMU-based GPU isolation
-description: IOMMU-based GPU isolation allows *Dxgkrnl* to restrict access to system memory from the GPU by making use of IOMMU hardware.
+description: IOMMU-based GPU isolation allows Dxgkrnl to restrict access to system memory from the GPU by making use of IOMMU hardware.
 ms.date: 03/20/2023
 ---
 
@@ -82,7 +82,7 @@ The following DDI changes were made to support IOMMU-based GPU isolation:
 * The [**DXGKQAITYPE_FRAMEBUFFERSAVESIZE**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_queryadapterinfotype) enum value and [**DXGK_FRAMEBUFFERSAVEAREA**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_framebuffersavearea) structure were added
 * The [**DXGKQAITYPE_HARDWARERESERVEDRANGES**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_queryadapterinfotype) enum value and [**DXGK_HARDWARERESERVEDRANGE**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_hardwarereservedranges) structure were added
 * The [**DXGK_MEMORY_CACHING_TYPE**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_memory_caching_type) was added
-* The following [*Dxgkrnl* callbacks](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgkrnl_interface) and callback parameter structures were added:
+* The following [*Dxgkrnl* callbacks](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgkrnl_interface) and callback parameter structures were added. Callback functions must be called at IRQL <= APC_LEVEL. Starting in WDDM 3.2, drivers that call any of these functions are validated against this requirement and bugcheck if the IRQL is DISPATCH_LEVEL or higher.
 
   | Callback | Associated callback structure |
   | -------- | ----------------------------- |
