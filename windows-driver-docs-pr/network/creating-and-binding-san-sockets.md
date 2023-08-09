@@ -33,7 +33,7 @@ The companion socket also has the same IP address and TCP port as the socket tha
 
 The following figure shows an overview of how the Windows Sockets switch creates a companion socket. The sequence in the sections that follow describe creating a companion socket in more detail.
 
-![diagram overview of how the windows sockets switch creates a companion socket.](images/apiflow2.png)
+:::image type="content" source="images/apiflow2.png" alt-text="Diagram that shows an overview of how the Windows Sockets switch creates a companion socket.":::
 
 ### Initiating Creation of a TCP/IP Socket
 
