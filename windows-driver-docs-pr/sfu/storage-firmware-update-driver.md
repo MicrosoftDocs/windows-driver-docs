@@ -55,7 +55,7 @@ For additional details, see the Windows device COMPAT requirements for NVMe: [De
 
 ## SCSI identifiers for NVMe storage disk drives
 
-Starting with Windows 10, version 2004 (OS build 19041.488 or higher), two new identifiers are available for NVMe storage disk drives using drivers that support the [STOR_RICH_DEVICE_DESCRIPTION](/windows-hardware/drivers/ddi/storport/ns-storport-stor_rich_device_description) structure:
+Starting with Windows 10, version 2004 (OS build 19041.488 or higher), two new identifiers are available for NVMe storage disk drives using drivers that support the [STOR_RICH_DEVICE_DESCRIPTION](/windows-hardware/drivers/ddi/storport/ns-storport-_stor_rich_device_description) structure:
 
 `SCSI\t*v(8)p(40)`
 
@@ -76,7 +76,7 @@ Where:
 
 The `SCSI\t*v(8)p(40)r(80` identifier provides a full product name (aligned with the NVME 1.4 spec) and allows creation of a software component (SWC) node for firmware updates for NVME drives matching this name (up to 40 characters and 8 character firmware revision).
 
-For more information, see [Identifiers for SCSI Devices](../install/identifiers-for-scsi-devices.md) and [STOR_RICH_DEVICE_DESCRIPTION](/windows-hardware/drivers/ddi/storport/ns-storport-stor_rich_device_description)
+For more information, see [Identifiers for SCSI Devices](../install/identifiers-for-scsi-devices.md) and [STOR_RICH_DEVICE_DESCRIPTION](/windows-hardware/drivers/ddi/storport/ns-storport-_stor_rich_device_description)
 
 ## Storage Firmware Update (SFU) solution details
 
@@ -421,4 +421,4 @@ FwUpdateFriendlyName= "StorageIHV3 Firmware Update"
 
 [Identifiers for SCSI Devices](../install/identifiers-for-scsi-devices.md)
 
-[STOR_RICH_DEVICE_DESCRIPTION](/windows-hardware/drivers/ddi/storport/ns-storport-stor_rich_device_description)
+[STOR_RICH_DEVICE_DESCRIPTION](/windows-hardware/drivers/ddi/storport/ns-storport-_stor_rich_device_description)
