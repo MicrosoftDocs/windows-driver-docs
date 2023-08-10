@@ -82,7 +82,7 @@ A [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_li
 None of these segments generates an exception.
 The 6th segment is a pure ACK that is a window update with SEG.WND = 65535 as shown in the following flowchart.
 
-![flowchart describing rules for coalescing segments with tcp timestamp option.](images/rsc-rules2.png)
+:::image type="content" source="images/rsc-rules2.png" alt-text="Flowchart that shows rules for coalescing segments with TCP timestamp option.":::
 
 The 7th segment is a pure ACK that is a window update with SEG.WND = 131070 as shown in the same flowchart.
 

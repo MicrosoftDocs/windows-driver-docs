@@ -21,7 +21,7 @@ An NDIS driver can create a fragmented [**NET\_BUFFER\_LIST**](/windows-hardware
 
 The following figure shows the relationship between a parent NET\_BUFFER\_LIST structure and a fragmented child.
 
-![diagram illustrating the relationship between a parent net\-buffer\-list structure and a fragmented child structure.](images/netbufferlistfragment.png)
+:::image type="content" source="images/netbufferlistfragment.png" alt-text="Diagram showing the relationship between a parent NET_BUFFER_LIST structure and its fragmented child structure.":::
 
 The preceding figure contains a parent [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure and a child structure that was derived from that parent. The parent structure has one [**NET\_BUFFER\_LIST\_CONTEXT**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list_context) structure and one [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure with MDLs attached. The parent structure's parent pointer is **NULL** indicating that it is not a derived structure.
 

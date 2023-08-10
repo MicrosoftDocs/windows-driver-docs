@@ -15,11 +15,11 @@ ms.date: 04/20/2017
 
 The following figure shows a client making an outgoing call through a call manager.
 
-![diagram illustrating a client making an outgoing call through a call manager.](images/cm-11.png)
+:::image type="content" source="images/cm-11.png" alt-text="Diagram showing a client making an outgoing call via a call manager.":::
 
 The following figure shows a client making an outgoing call through an MCM driver.
 
-![diagram illustrating a client making an outgoing call through an mcm driver.](images/fig1-11.png)
+:::image type="content" source="images/fig1-11.png" alt-text="Diagram depicting a client making an outgoing call using an MCM driver.":::
 
 Before making an outgoing call, a connection-oriented client must:
 

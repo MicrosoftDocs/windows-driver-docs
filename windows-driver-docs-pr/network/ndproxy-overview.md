@@ -16,7 +16,7 @@ NDPROXY is a system-provided driver that interfaces NDISWAN and CoNDIS WAN drive
 
 The following figure shows how NDPROXY interfaces with other components in the RAS architecture.
 
-![diagram illustrating how ndproxy interfaces with other components in the ras architecture.](images/ndproxy.png)
+:::image type="content" source="images/ndproxy.png" alt-text="Diagram illustrating how NDPROXY interfaces with other components in the RAS architecture.":::
 
 NDPROXY provides the kernel-mode component of the service provider interface (SPI) for CoNDIS WAN. TAPI-aware applications make user-mode TAPI requests and the TAPI service routes these requests to NDPTSP. NDPTSP converts the user-mode TAPI service requests to kernel-mode SPI requests and passes the SPI requests to NDPROXY.
 

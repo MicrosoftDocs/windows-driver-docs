@@ -29,7 +29,7 @@ A SAN network interface controller (NIC), a transport driver for the SAN NIC, or
 
 The following figure shows the architecture required to support a SAN. The shaded areas represent components that a SAN NIC vendor supplies to enable using a SAN.
 
-![diagram illustrating the architecture required to support a system area network (san).](images/wsdpsan.png)
+:::image type="content" source="images/wsdpsan.png" alt-text="Diagram illustrating the architecture required to support a System Area Network (SAN).":::
 
 The following is a description of the components shown in this figure.
 

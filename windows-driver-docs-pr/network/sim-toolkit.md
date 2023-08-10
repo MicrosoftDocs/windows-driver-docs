@@ -24,7 +24,7 @@ Both the SIM toolkit service and user interface are provided by Microsoft.
 
 The following diagram illustrates the main components of SIM toolkit.
 
-![sim toolkit components.](images/sim-toolkit-components.png)
+:::image type="content" source="images/sim-toolkit-components.png" alt-text="Diagram showing main components of SIM toolkit: modem, RIL software, service, and user interface.":::
 
 ### SIM toolkit service
 

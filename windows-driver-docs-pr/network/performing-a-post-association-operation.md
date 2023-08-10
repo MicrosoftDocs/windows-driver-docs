@@ -57,7 +57,7 @@ After the data port has been authenticated, the IHV Extensions DLL must call [**
 
 The following figure shows the steps involved during the post-association operation.
 
-![diagram illustrating the steps involved during the post-association operation.](images/ihv-ext-postassoc.png)
+:::image type="content" source="images/ihv-ext-postassoc.png" alt-text="Diagram showing the steps in the post-association operation for WLAN adapters and APs.":::
 
 The IHV Extensions DLL must follow these guidelines when performing the post-association operation.
 

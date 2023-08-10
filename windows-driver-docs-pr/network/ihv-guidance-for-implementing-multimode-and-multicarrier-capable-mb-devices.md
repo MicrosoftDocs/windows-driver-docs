@@ -63,7 +63,7 @@ The device uses this CID to report the current and previously added preferred mu
 
 The following figure provides a sequence diagram of the steps involved in switching a device from its current mode based on a location hint specified by the host. The operation requires the use of a device service described below to get/set additional information from the device. One specific requirement is that the device should ensure that the host has had a chance to recover the pending notification from the device prior to it falling off the bus. The diagram also specifies the time bounds and performance expectations of the various operations.
 
-![the steps involved in switching a device from its current mode based on a location hint specified by the host.](images/cid-mbim-multicarrier-providers.png)
+:::image type="content" source="images/cid-mbim-multicarrier-providers.png" alt-text="Flowchart that shows the steps involved in switching a device from its current mode based on a location hint specified by the host.":::
 
 ## MULTI-CARRIER DEVICE SERVICE
 

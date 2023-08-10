@@ -17,7 +17,7 @@ A header-data split provider improves network performance by splitting the heade
 
 The following figure shows the header-data split architecture.
 
-![diagram illustrating the header-data split architecture.](images/hdsplitarchitecture.png)
+:::image type="content" source="images/hdsplitarchitecture.png" alt-text="Diagram illustrating the header-data split architecture with a NIC and an NDIS 6.1 or later miniport driver.":::
 
 The miniport driver receives configuration information from NDIS to set up the NIC for header-data split receive operations. Also, the miniport driver exposes the NIC's services to NDIS for run-time operations such as send and receive operations.
 
@@ -29,7 +29,7 @@ For header-data split, the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/n
 
 The following figure shows the received frame, the split buffers, and the memory layout of the header buffers.
 
-![diagram illustrating the received frame, the split buffers, and the memory layout of the header buffers.](images/hdspllitbuffers.png)
+:::image type="content" source="images/hdspllitbuffers.png" alt-text="Diagram showing the received Ethernet frame, split buffers for header and data, and memory layout of header buffers.":::
 
 The header buffers should all be in a contiguous block of storage.
 
