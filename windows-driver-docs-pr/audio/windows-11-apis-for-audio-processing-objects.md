@@ -10,7 +10,7 @@ keywords:
 - Audio Settings, Audio Notifications
 - Windows 11 audio 
 - CAPX, Core Audio Processing Object Extensions
-ms.date: 06/28/2023
+ms.date: 08/11/2023
 ---
 
 # Windows 11 APIs for Audio Processing Objects
@@ -263,11 +263,11 @@ Unlike pre-volume loopback streams, which are available for all render endpoints
 
 ### Requesting Post-Volume Loopback
 
-AEC APOs that wish to use post-volume loopback should implement the [IApoAcousticEchoCancellation2](/windows/win32/api/audioenginebaseapo/) interface.
+AEC APOs that wish to use post-volume loopback should implement the [IApoAcousticEchoCancellation2](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iapoacousticechocancellation2) interface.
 
-An AEC APO can request post-volume loopback by returning the [APO_REFERENCE_STREAM_PROPERTIES_POST_VOLUME_LOOPBACK](/windows/win32/api/audioenginebaseapo/) flag via the pProperties parameter in its implementation of [IApoAcousticEchoCancellation2::GetDesiredReferenceStreamProperties](/windows/win32/api/audioenginebaseapo/).
+An AEC APO can request post-volume loopback by returning the **APO_REFERENCE_STREAM_PROPERTIES_POST_VOLUME_LOOPBACK** flag via the Properties parameter in its implementation of [IApoAcousticEchoCancellation2::GetDesiredReferenceStreamProperties](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iapoacousticechocancellation2-getdesiredreferencestreamproperties).
 
-Depending on the render endpoint currently being used, post-volume loopback may not be available.  An AEC APO is notified if post-volume loopback is being used when its [IApoAuxiliaryInputConfiguration::AddAuxiliaryInput](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iapoauxiliaryinputconfiguration-addauxiliaryinput) method is called. If the [AcousticEchoCanceller_Reference_Input](/windows/win32/api/audioengineextensionapo/) streamProperties field contains **APO_REFERENCE_STREAM_PROPERTIES_POST_VOLUME_LOOPBACK**, post-volume loopback is in use.
+Depending on the render endpoint currently being used, post-volume loopback may not be available.  An AEC APO is notified if post-volume loopback is being used when its [IApoAuxiliaryInputConfiguration::AddAuxiliaryInput](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iapoauxiliaryinputconfiguration-addauxiliaryinput) method is called. If the [AcousticEchoCanceller_Reference_Input](/windows/win32/api/audioengineextensionapo/ns-audioengineextensionapo-acousticechocanceller_reference_input) streamProperties field contains **APO_REFERENCE_STREAM_PROPERTIES_POST_VOLUME_LOOPBACK**, post-volume loopback is in use.
 
 The following code from the AEC APO sample header- AecAPO.h shows the three new public methods being added.
 
