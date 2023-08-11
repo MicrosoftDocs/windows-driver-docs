@@ -19,7 +19,6 @@ When handling a GUID\_DEVICE\_INTERFACE\_ARRIVAL event, a notification callback 
 
 When handling a GUID\_DEVICE\_INTERFACE\_REMOVAL event, a notification callback routine should:
 
--   Undo whatever operations it performed when the interface was enabled. Close any files handles that were opened in response to the interface arrival event.
+-   Undo whatever operations it performed when the interface was enabled. Close any file handles that were opened in response to the interface arrival event.
 
-In addition to **EventCategoryDeviceInterfaceChange**, the driver must also register for [**EventCategoryTargetDeviceChange**](using-pnp-target-device-change-notification.md), and close the file handle during [**GUID\_TARGET\_DEVICE\_QUERY\_REMOVE**](handling-a-guid-target-device-query-remove-event.md
-) event callback. Keeping the file handle open will veto the removal process and cause the orderly removal to be canceled.
+In addition to **EventCategoryDeviceInterfaceChange**, the driver must also register for [**EventCategoryTargetDeviceChange**](using-pnp-target-device-change-notification.md), and close the file handle from the [**GUID\_TARGET\_DEVICE\_QUERY\_REMOVE**](handling-a-guid-target-device-query-remove-event.md) event callback. Keeping the file handle open will veto the removal process and cause the orderly removal to be canceled.
