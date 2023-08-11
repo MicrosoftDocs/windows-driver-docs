@@ -62,9 +62,8 @@ The **.srcpath** command is available on all debuggers. The **.lsrcpath** comman
 
 For details and other ways to change this path, see [Source Path](source-path.md). For more information about commands that can be used while performing remote debugging through the debugger, see [Controlling a Remote Debugging Session](controlling-a-remote-debugging-session.md).
 
->[!NOTE] 
-> Starting with version x.y.z, released in April 2021, additional source code formats are supported including source link 1 and source link 2, using the DebugInfoD path element. For more information, see [Source Code Extended Access](source-code-extended-access.md).
-> 
+>[!NOTE]
+> The source path in WinDbg supports file retrieval using Source Link 1.0, and starting version 1.2104, file retrieval using Source Link 2.0 or DebugInfoD servers. For more information on source path syntax, see [Source Code Extended Access](source-code-extended-access.md).
 
 ## Remarks
 

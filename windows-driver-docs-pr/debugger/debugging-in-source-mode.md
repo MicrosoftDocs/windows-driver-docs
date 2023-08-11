@@ -25,7 +25,7 @@ If it is possible, the compiler and linker should not optimize your code. Source
 
 ### <span id="locating_the_symbol_files_and_source_files"></span><span id="LOCATING_THE_SYMBOL_FILES_AND_SOURCE_FILES"></span>Locating the Symbol Files and Source Files
 
-To debug in source mode, the debugger must be able to find the source files and the symbol files. For more information, see [Source Code](source-code.md).
+To debug in source mode, the debugger must be able to find the source files and the symbol files. For more information, see [Source path](source-path.md).
 
 ### <span id="beginning_source_debugging"></span><span id="BEGINNING_SOURCE_DEBUGGING"></span>Beginning Source Debugging
 

@@ -457,12 +457,10 @@
       href: tools-related-to-debugging-tools-for-windows.md
     - name: "Windows Error Reporting"
       href: windows-error-reporting.md
-  - name: "Source Code"
+  - name: "Source Code Path"
 # Auto-expanded node
     items: 
-    - name: "Source Code"
-      href: source-code.md
-    - name: "Source Path"
+    - name: "Source Code Path"
       href: source-path.md
     - name: "Source Code Extended Access"
       href: source-code-extended-access.md

@@ -9761,9 +9761,20 @@
             "redirect_URL": "//windows-hardware/drivers/audio/bluetooth-bypass-guidelines-for-audio-drivers",
             "redirect_document_id": false
         },
+
+        {
+            "source_path": "windows-driver-docs-pr/audio/theory-of-operation.md",
+            "redirect_URL": "//windows-hardware/drivers/audio/bluetooth-hfp-bypass-audio-streaming",
+            "redirect_document_id": false
+        },
         {
             "source_path": "windows-driver-docs-pr/mobilebroadband/hotspot-20.md",
             "redirect_URL": "//windows-hardware/drivers/mobilebroadband/passpoint",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/debugger/source-code.md",
+            "redirect_URL": "//windows-hardware/drivers/debugger/source-path",
             "redirect_document_id": false
         }
      ]
