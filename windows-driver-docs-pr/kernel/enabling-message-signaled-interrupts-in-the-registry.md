@@ -16,7 +16,7 @@ You can also use the registry to specify the maximum number of MSIs to allocate 
 
 Use an [**INF AddReg Directive**](../install/inf-addreg-directive.md) in your driver's INF file to set registry keys under the device's hardware key. For more information, see [**INF DDInstall.HW Section**](../install/inf-ddinstall-hw-section.md).
 
-The following code example shows how to set the **MSISupported** entry under **Interrupt Management\\MessageSignaledInterruptProperties** for the device. Note that **Interrupt Management** and **Interrupt Management\\MessageSignaledInterruptProperties** keys are automatically created by the AddReg directive when adding the **MSISupported** value.
+The following code example shows how to set the **MSISupported** entry under **Interrupt Management\\MessageSignaledInterruptProperties** for the device. Note that **Interrupt Management** and **Interrupt Management\\MessageSignaledInterruptProperties** keys are automatically created by the **AddReg** directive when adding the **MSISupported** value.
 
 ```cpp
 [mydevice.HW]
