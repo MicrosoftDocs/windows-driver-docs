@@ -46,25 +46,18 @@ The following table describes the possible registry entries for the ***vvvvppppr
 
 View the device interface GUID, Hardware ID, and [device class](supported-usb-classes.md#usb-device-classes) information about your device
 
-1. Find the device that exposes the device interface you are interested in and make note of the instance ID:
+1. Find the device that exposes the device interface you are interested in and make note of the instance ID. For example, if the device interface belongs to class {A5DCBF10-6530-11D2-901F-00C04FB951ED} you could find the right device interface and device with the following:
 
     ```cmd
     >pnputil /enum-interfaces /class {A5DCBF10-6530-11D2-901F-00C04FB951ED} /instanceid
     
     Microsoft PnP Utility
-    
-    Interface Path:         \\?\USB#VID_1395&PID_005A#0000000000#{a5dcbf10-6530-11d2-901f-00c04fb951ed}
-    Interface Description:  Unknown
-    Interface Class GUID:   {a5dcbf10-6530-11d2-901f-00c04fb951ed}
-    Device Instance ID:     USB\VID_1395&PID_005A\0000000000
-    Interface Status:       Enabled
-     
+
     Interface Path:         \\?\USB#VID_045E&PID_0840#0C33CG9212501N0#{a5dcbf10-6530-11d2-901f-00c04fb951ed}
     Interface Description:  Unknown
     Interface Class GUID:   {a5dcbf10-6530-11d2-901f-00c04fb951ed}
     Device Instance ID:     USB\VID_045E&PID_0840\0C33CG9212501N0
     Interface Status:       Enabled
-     
     Interface Path:         \\?\USB#VID_045E&PID_07A5#5&109d12e&0&1#{a5dcbf10-6530-11d2-901f-00c04fb951ed}
     Interface Description:  Unknown
     Interface Class GUID:   {a5dcbf10-6530-11d2-901f-00c04fb951ed}
@@ -80,22 +73,14 @@ View the device interface GUID, Hardware ID, and [device class](supported-usb-cl
     Microsoft PnP Utility
     
     Instance ID:                USB\VID_045E&PID_0840\0C33CG9212501N0
-
     Device Description:         USB Composite Device
-
     Class Name:                 USB
-
     Class GUID:                 {36fc9e60-c465-11cf-8056-444553540000}
-
     Manufacturer Name:          (Standard USB Host Controller)
-
     Status:                     Started
-
     Driver Name:                usb.inf
-
     Hardware IDs:               USB\VID_045E&PID_0840&REV_0215
                                 USB\VID_045E&PID_0840
-
     Compatible IDs:             USB\COMPAT_VID_045E&DevClass_00&SubClass_00&Prot00
                                 USB\COMPAT_VID_045E&DevClass_00&SubClass_00
                                 USB\COMPAT_VID_045E&DevClass_00
