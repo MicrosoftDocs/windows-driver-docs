@@ -58,6 +58,7 @@ View the device interface GUID, Hardware ID, and [device class](supported-usb-cl
     Interface Class GUID:   {a5dcbf10-6530-11d2-901f-00c04fb951ed}
     Device Instance ID:     USB\VID_045E&PID_0840\0C33CG9212501N0
     Interface Status:       Enabled
+
     Interface Path:         \\?\USB#VID_045E&PID_07A5#5&109d12e&0&1#{a5dcbf10-6530-11d2-901f-00c04fb951ed}
     Interface Description:  Unknown
     Interface Class GUID:   {a5dcbf10-6530-11d2-901f-00c04fb951ed}
