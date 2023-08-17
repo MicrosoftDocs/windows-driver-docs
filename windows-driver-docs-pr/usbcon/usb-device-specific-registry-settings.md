@@ -1,7 +1,7 @@
 ---
 title: USB device registry entries
 description: This article describes USB device-specific registry entries.
-ms.date: 02/27/2023
+ms.date: 08/17/2023
 ms.custom: contperf-fy22q4
 ---
 
@@ -46,23 +46,50 @@ The following table describes the possible registry entries for the ***vvvvppppr
 
 View the device interface GUID, Hardware ID, and [device class](supported-usb-classes.md#usb-device-classes) information about your device
 
-1. Find this registry key and note the **DeviceInstance** value:
+1. Find the device that exposes the device interface you are interested in and make note of the instance ID. For example, if the device interface belongs to class {A5DCBF10-6530-11D2-901F-00C04FB951ED} you could find the right device interface and device with the following:
 
-    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\`
+    ```cmd
+    >pnputil /enum-interfaces /class {A5DCBF10-6530-11D2-901F-00C04FB951ED} /instanceid
+    
+    Microsoft PnP Utility
 
-    :::image type="content" source="images/deviceinstance.png" alt-text="Screenshot of USB hardware ID in Windows RegEdit.":::
+    Interface Path:         \\?\USB#VID_045E&PID_0840#0C33CG9212501N0#{a5dcbf10-6530-11d2-901f-00c04fb951ed}
+    Interface Description:  Unknown
+    Interface Class GUID:   {a5dcbf10-6530-11d2-901f-00c04fb951ed}
+    Device Instance ID:     USB\VID_045E&PID_0840\0C33CG9212501N0
+    Interface Status:       Enabled
 
-1. Find the device instance registry key and get the device interface GUID:
+    Interface Path:         \\?\USB#VID_045E&PID_07A5#5&109d12e&0&1#{a5dcbf10-6530-11d2-901f-00c04fb951ed}
+    Interface Description:  Unknown
+    Interface Class GUID:   {a5dcbf10-6530-11d2-901f-00c04fb951ed}
+    Device Instance ID:     USB\VID_045E&PID_07A5\5&109d12e&0&1
+    Interface Status:       Enabled
+    ```
 
-    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\<hardware id>\<instance id>\Device Parameters`
+1. Retrieve a list of the compatible IDs for the device and note the device class, subclass, and protocol codes:
 
-    :::image type="content" source="images/device-interface-guid2.png" alt-text="Screenshot of USB device interface GUID in Windows RegEdit.":::
-
-1. Under the device instance key, note the [device class](supported-usb-classes.md#usb-device-classes), subclass, and protocol codes:
-
-    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB`
-
-    :::image type="content" source="images/deviceclass.png" alt-text="Screenshot of USB device class subclass protocol codes in Windows RegEdit.":::
+    ```cmd
+    >pnputil /enum-devices /instanceid "USB\VID_045E&PID_0840\0C33CG9212501N0" /ids
+    
+    Microsoft PnP Utility
+    
+    Instance ID:                USB\VID_045E&PID_0840\0C33CG9212501N0
+    Device Description:         USB Composite Device
+    Class Name:                 USB
+    Class GUID:                 {36fc9e60-c465-11cf-8056-444553540000}
+    Manufacturer Name:          (Standard USB Host Controller)
+    Status:                     Started
+    Driver Name:                usb.inf
+    Hardware IDs:               USB\VID_045E&PID_0840&REV_0215
+                                USB\VID_045E&PID_0840
+    Compatible IDs:             USB\COMPAT_VID_045E&DevClass_00&SubClass_00&Prot00
+                                USB\COMPAT_VID_045E&DevClass_00&SubClass_00
+                                USB\COMPAT_VID_045E&DevClass_00
+                                USB\DevClass_00&SubClass_00&Prot_00
+                                USB\DevClass_00&SubClass_00
+                                USB\DevClass_00
+                                USB\COMPOSITE
+    ```
 
 ## Related topics
 
