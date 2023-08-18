@@ -44,7 +44,7 @@ Bus.dev.fun0.0).
 
 - The kdnet.exe user mode tool configures the 2PF feature using the Windows inbox driver by adding specific IOCTL codes to add/remove KDNET PF.
 
-![system diagram showing two network stacks one supporting 2pf using a combined pci card setup.](images/kdnet-2pf-system-diagram.png)
+:::image type="content" source="images/kdnet-2pf-system-diagram.png" alt-text="Diagram that shows two network stacks, one supporting 2PF using a combined PCI card setup.":::
 
 ## Multiple PFs feature design requirements
 

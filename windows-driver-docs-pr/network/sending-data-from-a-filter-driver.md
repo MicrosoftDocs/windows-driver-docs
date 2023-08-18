@@ -18,7 +18,7 @@ Filter drivers can initiate send requests or filter send requests that overlying
 
 The following figure illustrates a send operation that is initiated by a filter driver.
 
-![diagram illustrating a send operation initiated by a filter driver.](images/filtersend.png)
+:::image type="content" source="images/filtersend.png" alt-text="Diagram showing a send operation initiated by a filter driver with NdisFSendNetBufferLists function.":::
 
 Filter drivers call the [**NdisFSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlists) function to send the network data that is defined in a list of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures.
 
@@ -48,7 +48,7 @@ A filter driver can request loopback for send requests that it originates. To re
 
 The following figure illustrates filtering a send request that is initiated by an overlying driver.
 
-![diagram illustrating filtering a send request that is initiated by an overlying driver.](images/sendfilter.png)
+:::image type="content" source="images/sendfilter.png" alt-text="Diagram depicting the process of filtering a send request initiated by an overlying driver using FilterSendNetBufferLists function.":::
 
 NDIS calls a filter driver's [*FilterSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_send_net_buffer_lists) function to filter the send request of an overlying driver.
 

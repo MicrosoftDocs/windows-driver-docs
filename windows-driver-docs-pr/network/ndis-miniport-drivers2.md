@@ -43,7 +43,7 @@ NDIS supports miniport drivers for both connectionless environments and connecti
 
 An NDIS miniport driver can have a non-NDIS lower edge (see the following figure).
 
-![ndis miniport driver with non-ndis lower edge.](images/nonndslo.png)
+:::image type="content" source="images/nonndslo.png" alt-text="Diagram showing an NDIS miniport driver with a non-NDIS lower edge.":::
 
 Through its non-NDIS lower edge, a miniport driver uses the class interface for a bus, such as the Universal Serial Bus (USB) to control a device on the bus. The miniport driver communicates with the device by sending I/O request packets (IRPs) either to the bus or directly to remote devices that are attached to the bus. At its upper edge, the miniport driver exposes a standard NDIS miniport driver interface, which enables the miniport driver to communicate with overlying NDIS drivers.
 

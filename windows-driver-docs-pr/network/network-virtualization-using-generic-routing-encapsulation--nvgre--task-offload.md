@@ -10,7 +10,7 @@ Hyper-V Network Virtualization supports Network Virtualization using Generic Rou
 
 The following figure shows a GRE-encapsulated packet. On the wire, NVGRE-encapsulated packets look like IP-over-Ethernet packets, except that the payload of the outer IP header is a GRE-encapsulated IP packet (including the Ethernet header).
 
-![comparison between original packet and packet with gre encapsulation. both contain mac (gre contains inner mac), ip header (gre contains inner ip header), tcp header, and tcp user data. in addition, packet with gre encapsulation contains outer mac, outer ip header, and gre.](images/nvgre.png)
+:::image type="content" source="images/nvgre.png" alt-text="Diagram comparing original packet and GRE-encapsulated packet. Both have MAC, IP header, TCP header, and TCP user data. GRE-encapsulated packet also has outer MAC, outer IP header, and GRE.":::
 
 NDIS 6.30 (available in Windows Server 2012 and later) introduces NVGRE Task Offload, which makes it possible to use NVGRE-formatted packets with:
 

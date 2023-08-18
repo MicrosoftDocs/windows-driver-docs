@@ -25,7 +25,7 @@ Network data consists of packets of data that are sent or received over the netw
 
 The following figure illustrates the relationships between these structures.
 
-![diagram illustrating ndis 6.0 network data structures.](images/netbufferstructures.png)
+:::image type="content" source="images/netbufferstructures.png" alt-text="Diagram illustrating NDIS 6.0 network data structures, including NET_BUFFER, NET_BUFFER_LIST, and NET_BUFFER_LIST_CONTEXT.":::
 
 In NDIS 6.0 and later, the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) is the basic building block for packaging network data. Each NET\_BUFFER structure has an MDL chain. The MDLs map the addresses of data buffers to the data space that the NET\_BUFFER structures specify. This data mapping is identical to the MDL chains that NDIS 5.*x* and earlier drivers use in the [**NDIS\_PACKET**](/previous-versions/windows/hardware/network/ff557086(v=vs.85)) structure. NDIS provides functions to manipulate the MDL chain.
 
