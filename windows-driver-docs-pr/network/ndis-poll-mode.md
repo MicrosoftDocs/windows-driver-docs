@@ -27,7 +27,7 @@ NDIS Poll Mode is available to NDIS 6.85 and later miniport drivers.
 
 The following sequence diagram illustrates a typical example of how an NDIS miniport driver handles a burst of Rx packets using a DPC. In this example the hardware is standard in terms of PCIe NICs. It has a receive hardware queue and an interrupt mask for that queue. 
 
-:::image type="content" source="./images/ndis-traditional-dpc-diagram.png" alt-text="Diagram illustrating the NDIS DPC model.":::
+:::image type="content" source="./images/ndis-traditional-dpc-diagram.png" alt-text="Diagram showing the NDIS DPC model with Rx packets and a receive hardware queue.":::
 
 When there's no network activity the hardware has the Rx interrupt enabled. When an Rx packet arrives:
 1. The hardware generates an interrupt and NDIS calls the driver’s [*MiniportInterrupt*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_isr) function (ISR).
@@ -64,7 +64,7 @@ A Poll object offers the following:
 
 The following sequence diagram illustrates how the same hypothetical PCIe NIC driver handles a burst of Rx packets using a Poll object instead of a DPC. 
 
-:::image type="content" source="./images/ndis-poll-mode-sequence-diagram.png" alt-text="Diagram illustrating NDIS Poll Mode.":::
+:::image type="content" source="./images/ndis-poll-mode-sequence-diagram.png" alt-text="Diagram showing NDIS Poll Mode with Rx packets and a receive hardware queue.":::
 
 Like the DPC model, when an Rx packet arrives the hardware generates an interrupt, NDIS calls the driver’s ISR, and the driver disables the interrupt from the ISR. At this point the Poll Mode model diverges:
 

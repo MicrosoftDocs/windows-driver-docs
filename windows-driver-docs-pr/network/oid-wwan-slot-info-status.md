@@ -18,7 +18,7 @@ Query requests specify [**NDIS\_WWAN\_GET\_SLOT\_INFO**](/windows-hardware/drive
 
 The following diagram illustrates a query request.
 
-![slot status query.](images/multi-SIM_9_slotStatusQuery.png)
+:::image type="content" source="images/multi-SIM_9_slotStatusQuery.png" alt-text="Diagram that shows the process of a slot status query.":::
 
 Set requests are not applicable.
 

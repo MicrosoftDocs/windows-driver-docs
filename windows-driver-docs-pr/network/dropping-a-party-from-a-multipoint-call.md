@@ -27,11 +27,11 @@ A client's call to **NdisClDropParty** causes NDIS to call the [**ProtocolCmDrop
 
 The following figure shows the client of a call manager requesting to drop a party from a multipoint call.
 
-![diagram illustrating the client of a call manager requesting to drop a party from a multipoint call.](images/cm-18.png)
+:::image type="content" source="images/cm-18.png" alt-text="Diagram showing the client of a call manager requesting to drop a party from a multipoint call.":::
 
 The next figure shows the client of an MCM driver requesting to drop a party from a multipoint call.
 
-![diagram illustrating the client of an mcm driver requesting to drop a party from a multipoint call.](images/fig1-18.png)
+:::image type="content" source="images/fig1-18.png" alt-text="Diagram showing the client of an MCM driver requesting to drop a party from a multipoint call.":::
 
 *ProtocolCmDropParty* communicates with network control devices to drop a party from an existing multipoint call. NDIS can pass to *ProtocolCmDropParty* a pointer to a buffer that contains data (supplied to the client in the call to **NdisClDropParty**). *ProtocolCmDropParty* must send any such data across the network before the connection is dropped.
 
