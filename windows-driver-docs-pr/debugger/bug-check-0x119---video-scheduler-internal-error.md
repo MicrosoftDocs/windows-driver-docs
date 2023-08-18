@@ -2,7 +2,7 @@
 title: Bug Check 0x119 VIDEO_SCHEDULER_INTERNAL_ERROR
 description: The VIDEO_SCHEDULER_INTERNAL_ERROR bug check has a value of 0x00000119. This indicates that the video scheduler has detected a fatal violation.
 keywords: ["Bug Check 0x119 VIDEO_SCHEDULER_INTERNAL_ERROR", "VIDEO_SCHEDULER_INTERNAL_ERROR"]
-ms.date: 05/24/2023
+ms.date: 08/17/2023
 topic_type:
 - apiref
 api_name:
@@ -31,7 +31,7 @@ Parameter 1 is the only parameter of interest. It identifies the exact violation
 |0x5| Driver failed a system or a paging command. (DRIVER_FAULTED_SYSTEM_COMMAND)|
 |0x6| Driver reports NULL PhysicalAdapterMask for interrupt raised on multi-adapter GPU. (DRIVER_INVALID_ADAPTER_MASK)|
 |0x7| Driver reports display VSync on render only adapter. (REPORT_VSYNC_ON_RENDER_ONLY_ADAPTER) |
-|0x8| Driver reported incorrect PageFaultFlags in DMA Page Faulted interrupt. (INVALID_NODE_MASK) |
+|0x8| Driver node that is causing the reset did not have have its corresponding bit set. (INVALID_NODE_MASK) |
 |0x9| Driver failed on a cancel command. (FAILED_CANCEL_COMMAND) |
 |0xA| Driver reported and invalid out of range aborted fence. (REPORTED_INVALID_ABORTED_FENCE) |
 |0xB| Driver failed the SetVidPnSourceAddressWithMultiPlaneOverlay command. (FAILED_SETVIDPNSOURCEMPO_COMMAND)|
@@ -41,6 +41,8 @@ Parameter 1 is the only parameter of interest. It identifies the exact violation
 |0xF| Not used. (FAILED_POSTMPOPRESENT_COMMAND) |
 |0x10| Driver reported an unexpected interrupt after engine reset and before OS resumed engine. (UNEXPECTED_INTERRUPT_AFTER_RESET) |
 |0x11| Driver reports a suspend context completed fence value which OS has not generated yet. (INCORRECT_SUSPEND_FENCE) |
+|0x12| Driver failed to update a native fence monitored value. (FAILED_UPDATE_MONITORED_VALUE)|
+|0x13| Driver failed to update the native fence current value. (FAILED_UPDATE_CURRENT_VALUE)|
 |0x400| This is an internal OS state error, typically caused by a memory corruption or bad hardware.|
 |0xE00 | The OS ran out of memory for pre-allocated packets to handle passive flip requests.|
 |0x1000| This is an internal OS state error, typically caused by a memory corruption or bad hardware.|
