@@ -50,7 +50,7 @@ To address this security issue, when using VM shared memory for a VM queue, the 
 
 The following illustration shows the relationships for the network data structures when the incoming data is split into lookahead and post-lookahead shared memory buffers.
 
-![diagram illustrating vmq packet structures with lookahead and post-lookahead data.](images/vmqpacket.png)
+:::image type="content" source="images/vmqpacket.png" alt-text="Diagram illustrating VMQ packet structures, showing lookahead and post-lookahead data in separate shared memory buffers.":::
 
 The summary requirements for VMQ shared memory are as follows:
 

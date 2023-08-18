@@ -16,7 +16,7 @@ ms.date: 04/20/2017
 
 The Windows Sockets switch initializes a SAN service provider as described in the following figure.
 
-![diagram illustrating how the windows sockets switch initializes a system area network (san) service provider .](images/apiflow1.png)
+:::image type="content" source="images/apiflow1.png" alt-text="Diagram illustrating how the windows sockets switch initializes a SAN service provider.":::
 
 After Windows loads the Windows Sockets switch DLL into an application's process, the following sequence of events occur.
 

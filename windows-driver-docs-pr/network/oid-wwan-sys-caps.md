@@ -16,7 +16,7 @@ Miniport drivers must process query requests asynchronously, initially returning
 
 The following diagram illustrates a query request.
 
-![system capability query.](images/multi-SIM_5_systemCapabilityQuery.png)
+:::image type="content" source="images/multi-SIM_5_systemCapabilityQuery.png" alt-text="Diagram that shows the process of a system capability query.":::
 
 Set requests are not applicable.
 

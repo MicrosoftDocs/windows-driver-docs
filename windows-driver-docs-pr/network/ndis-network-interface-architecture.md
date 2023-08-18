@@ -13,7 +13,7 @@ NDIS provides a set of services to support network interfaces and interface stac
 
 The following figure shows the NDISIF architecture for NDIS 6.0 and later.
 
-![diagram illustrating the ndis 6.0 network interfaces architecture.](images/ifarch.png)
+:::image type="content" source="images/ifarch.png" alt-text="Diagram illustrating the NDIS 6.0 network interfaces architecture.":::
 
 The NDISIF components of the architecture include:
 
