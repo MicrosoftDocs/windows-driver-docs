@@ -13,7 +13,7 @@ WDI_TLV_LINK_INFO is a WiFiCx TLV that contains the Robust Security Network Asso
 
 ## TLV Type
 
-0x205
+0x204
 
 ## Length
 

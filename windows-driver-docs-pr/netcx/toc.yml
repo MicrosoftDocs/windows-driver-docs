@@ -206,6 +206,8 @@
       href: wdi-tlv-cipher-key-wep-key.md
     - name: "WDI_TLV_CONFIGURED_MAC_ADDRESS"
       href: wdi-tlv-configured-mac-address.md
+    - name: "WDI_TLV_CONFIGURED_MLO_LINK_MAC_ADDRESS"
+      href: wdi-tlv-configured-mlo-link-mac-address.md
     - name: "WDI_TLV_CONNECT_BSS_ENTRY"
       href: wdi-tlv-connect-bss-entry.md
     - name: "WDI_TLV_CONNECT_PARAMETERS"
@@ -334,6 +336,8 @@
       href: wdi-tlv-low-latency-connection-quality-parameters.md
     - name: "WDI_TLV_MAC_STATISTICS"
       href: wdi-tlv-mac-statistics.md
+    - name: "WDI_TLV_MLO_LINK_BSSID"
+      href: wdi-tlv-mlo-link-bssid.md
     - name: "WDI_TLV_MULTICAST_CIPHER_ALGO_LIST"
       href: wdi-tlv-multicast-cipher-algo-list.md
     - name: "WDI_TLV_MULTICAST_DATA_ALGORITHM_LIST"

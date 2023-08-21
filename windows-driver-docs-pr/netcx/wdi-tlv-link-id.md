@@ -13,7 +13,7 @@ WDI_TLV_LINK_ID is a WiFiCx TLV that contains the Robust Security Network Associ
 
 ## TLV Type
 
-0x205
+0x203
 
 ## Length
 
