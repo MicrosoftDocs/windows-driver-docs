@@ -351,22 +351,22 @@
       href: code-analysis-for-drivers-overview.md
     - name: "How to run Code Analysis for drivers"
       href: how-to-run-code-analysis-for-drivers.md
-    - name: "SAL 2 Annotations for Windows Drivers"
+    - name: "SAL 2 annotations for Windows Drivers"
 # Auto-expanded node
       items: 
-      - name: "SAL 2 Annotations for Windows Drivers"
+      - name: "SAL 2 annotations for Windows Drivers"
         href: sal-2-annotations-for-windows-drivers.md
       - name: "IRQL annotations for drivers"
         href: irql-annotations-for-drivers.md
-      - name: "Floating Point Annotations for drivers"
+      - name: "Floating Point annotations for drivers"
         href: floating-point-annotations-for-drivers.md
-      - name: "DO_DEVICE_INITIALIZING Annotation for drivers"
+      - name: "DO_DEVICE_INITIALIZING annotation for drivers"
         href: do-device-initializing-annotation-for-drivers.md
-      - name: "_Kernel_IoGetDmaAdapter_ Annotation for drivers"
+      - name: "DMA IO Misue _Kernel_IoGetDmaAdapter_ annotation for drivers"
         href: -kernel-iogetdmaadapter--annotation-for-drivers.md
       - name: "Driver annotations for interlocked operands"
         href: driver-annotations-for-interlocked-operands.md
-      - name: "_Flt_CompletionContext_Outptr_ Annotation"
+      - name: "File System Minifilter _Flt_CompletionContext_Outptr_ annotation"
         href: -flt-completioncontext-outptr--annotation.md
     - name: "Code Analysis for Drivers Warnings"
 # Auto-expanded node
@@ -2666,8 +2666,6 @@
     items: 
     - name: "Kernel Mode Performance Monitoring"
       href: kernel-mode-performance-monitoring.md
-    - name: "About Kernel Mode Performance Counters"
-      href: about-kernel-mode-performance-counters.md
     - name: "Using Kernel Mode Performance Counters"
       href: using-kernel-mode-performance-counters.md
 - name: "Additional Driver Tools"

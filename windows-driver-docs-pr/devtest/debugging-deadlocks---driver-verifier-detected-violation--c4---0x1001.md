@@ -140,7 +140,7 @@ extern KSPIN_LOCK BravoLock;
 
 Inside of function *SystemControlIrpWorker*, there exists a path where AlphaLock (Lock A in the **!deadlock** output) is acquired and held when BravoLock (Lock B) is acquired. It is also worth noting that the locks are properly released in the reverse order in which they’re acquired. (The following code is heavily edited to show only the elements required to generate this scenario).
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS SystemControlIrpWorker(_In_ PIRP Irp)
 {
     KIRQL IrqlAlpha;
@@ -166,7 +166,7 @@ NTSTATUS SystemControlIrpWorker(_In_ PIRP Irp)
 
 If you review the following *DeviceControlIrpWorker* example function, you can see that it’s possible to acquire the locks in reverse order. That is, BravoLock can be acquired and held when attempting to acquire AlphaLock. The following example is simplified, but it shows that there is a possible path where a violation could occur.
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS DeviceControlIrpWorker(_In_ PIRP Irp, 
                                 _In_ BOOLEAN bSomeCondition)
 {
