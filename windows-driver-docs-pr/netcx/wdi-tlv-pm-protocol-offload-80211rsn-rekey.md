@@ -1,11 +1,11 @@
 ---
-title: WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY
+title: WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY (dot11wificxtypes.hpp)
 ms.topic: reference
 description: WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY is a WiFiCx TLV that contains RSN Rekey protocol offload parameters.
 ms.date: 08/23/2023
 ---
 
-# WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_80211RSN\_REKEY
+# WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_80211RSN\_REKEY (dot11wificxtypes.hpp)
 
 [!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 

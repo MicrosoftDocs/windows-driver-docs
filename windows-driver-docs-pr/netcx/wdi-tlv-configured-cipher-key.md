@@ -1,11 +1,11 @@
 ---
-title: WDI_TLV_CONFIGURED_CIPHER_KEY
+title: WDI_TLV_CONFIGURED_CIPHER_KEY (dot11wificxtypes.hpp)
 ms.topic: reference
 description: WDI_TLV_CONFIGURED_CIPHER_KEY is a WiFiCx TLV that contains a list of configured ciphers to be set in OID_WDI_GET_PM_PROTOCOL_OFFLOAD.
 ms.date: 08/23/2023
 ---
 
-# WDI_TLV_CONFIGURED_CIPHER_KEY
+# WDI_TLV_CONFIGURED_CIPHER_KEY (dot11wificxtypes.hpp)
 
 [!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 

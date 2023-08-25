@@ -1,7 +1,7 @@
 ---
 title: OID_WDI_SET_ADD_PM_PROTOCOL_OFFLOAD (dot11wificxintf.h)
 ms.topic: reference
-description: OID_WDI_SET_ADD_PM_PROTOCOL_OFFLOAD adds a list of one or more protocol offloads for power management.
+description: The OID_WDI_SET_ADD_PM_PROTOCOL_OFFLOAD OID adds a list of one or more protocol offloads for power management.
 ms.date: 08/23/2023
 ---
 
@@ -25,9 +25,9 @@ This property provides information to enable the device/firmware to implement th
 
 | TLV                                                                                                         | Multiple TLV instances allowed | Optional | Description                            |
 |-------------------------------------------------------------------------------------------------------------|--------------------------------|----------|----------------------------------------|
-| [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_IPv4ARP**](./wdi-tlv-pm-protocol-offload-ipv4arp.md)                |                                | X        | IPv4 ARP protocol offload parameters.  |
-| [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_IPv6NS**](./wdi-tlv-pm-protocol-offload-ipv6ns.md)                  |                                | X        | IPv6 NS protocol offload parameters.   |
-| [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_80211RSN\_REKEY**](./wdi-tlv-pm-protocol-offload-80211rsn-rekey.md) |                                | X        | RSN Rekey protocol offload parameters. |
+| [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_IPv4ARP**](wdi-tlv-pm-protocol-offload-ipv4arp.md)                |                                | X        | IPv4 ARP protocol offload parameters.  |
+| [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_IPv6NS**](wdi-tlv-pm-protocol-offload-ipv6ns.md)                  |                                | X        | IPv6 NS protocol offload parameters.   |
+| [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_80211RSN\_REKEY**](wdi-tlv-pm-protocol-offload-80211rsn-rekey.md) |                                | X        | RSN Rekey protocol offload parameters. |
 
  
 

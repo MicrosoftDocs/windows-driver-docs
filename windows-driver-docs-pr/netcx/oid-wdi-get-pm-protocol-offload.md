@@ -1,7 +1,7 @@
 ---
 title: OID_WDI_GET_PM_PROTOCOL_OFFLOAD (dot11wificxintf.h)
 ms.topic: reference
-description: OID_WDI_GET_PM_PROTOCOL_OFFLOAD requests a list of protocol offloads for power management.
+description: The OID_WDI_GET_PM_PROTOCOL_OFFLOAD OID requests a list of protocol offloads for power management.
 ms.date: 08/23/2023
 ---
 
@@ -22,7 +22,7 @@ OID\_WDI\_GET\_PM\_PROTOCOL\_OFFLOAD requests a list of protocol offloads for po
 
 | TLV                                                                                  | Multiple TLV instances allowed | Optional | Description          |
 |--------------------------------------------------------------------------------------|--------------------------------|----------|----------------------|
-| [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_GET**](./wdi-tlv-pm-protocol-offload-get.md) |                                |          | Protocol offload ID. |
+| [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_GET**](wdi-tlv-pm-protocol-offload-get.md) |                                |          | Protocol offload ID. |
 
  
 
@@ -31,9 +31,9 @@ OID\_WDI\_GET\_PM\_PROTOCOL\_OFFLOAD requests a list of protocol offloads for po
 
 | TLV                                                                                                         | Multiple TLV instances allowed | Optional | Description                            |
 |-------------------------------------------------------------------------------------------------------------|--------------------------------|----------|----------------------------------------|
-| [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_IPv4ARP**](./wdi-tlv-pm-protocol-offload-ipv4arp.md)                |                                | X        | IPv4 ARP protocol offload parameters.  |
-| [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_IPv6NS**](./wdi-tlv-pm-protocol-offload-ipv6ns.md)                  |                                | X        | IPv6 NS protocol offload parameters.   |
-| [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_80211RSN\_REKEY**](./wdi-tlv-pm-protocol-offload-80211rsn-rekey.md) |                                | X        | RSN Rekey protocol offload parameters. |
+| [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_IPv4ARP**](wdi-tlv-pm-protocol-offload-ipv4arp.md)                |                                | X        | IPv4 ARP protocol offload parameters.  |
+| [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_IPv6NS**](wdi-tlv-pm-protocol-offload-ipv6ns.md)                  |                                | X        | IPv6 NS protocol offload parameters.   |
+| [**WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_80211RSN\_REKEY**](wdi-tlv-pm-protocol-offload-80211rsn-rekey.md) |                                | X        | RSN Rekey protocol offload parameters. |
 
  
 
