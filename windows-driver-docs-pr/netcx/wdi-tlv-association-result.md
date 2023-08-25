@@ -37,6 +37,7 @@ The sum (in bytes) of the sizes of all contained TLVs.
 | [**WDI\_TLV\_BEACON\_PROBE\_RESPONSE**](wdi-tlv-beacon-probe-response.md)                 |                                | X        | The latest beacon or probe response frame received by the port. This does not include the 802.11 MAC header. In the case of DMG phy (802.11ad), only ProbeResponse frames should be included.                                                                                               |
 | [**WDI\_TLV\_ETHERTYPE\_ENCAP\_TABLE**](wdi-tlv-ethertype-encap-table.md)                 |                                | X        | The Ethertype encapsulations for the association.                                                                                                                                                           |
 | [**WDI\_TLV\_PHY\_TYPE\_LIST**](wdi-tlv-phy-type-list.md)                                 |                                |          | The list of PHY identifiers that the 802.11 station uses to send or receive packets on the BSS network connection.                                                                                          |
+| [**WDI_TLV_MLO_LINK_BSSID**](wdi-tlv-mlo-link-bssid.md) |   | X | The local Link MAC address. |
 
  
 

@@ -178,6 +178,8 @@
       href: wdi-tlv-channel-number.md
     - name: "WDI_TLV_CHANNEL_WIDTH_LIST"
       href: wdi-tlv-channel-width-list.md
+    - name: "WDI_TLV_CIPHER_ALGORITHM"
+      href: wdi-tlv-cipher-algorithm.md
     - name: "WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY"
       href: wdi-tlv-cipher-key-bip-gmac-256-key.md
     - name: "WDI_TLV_CIPHER_KEY_BIP_KEY"
@@ -204,6 +206,8 @@
       href: wdi-tlv-cipher-key-type-info.md
     - name: "WDI_TLV_CIPHER_KEY_WEP_KEY"
       href: wdi-tlv-cipher-key-wep-key.md
+    - name: "WDI_TLV_CONFIGURED_CIPHER_KEY"
+      href: wdi-tlv-configured-cipher-key.md
     - name: "WDI_TLV_CONFIGURED_MAC_ADDRESS"
       href: wdi-tlv-configured-mac-address.md
     - name: "WDI_TLV_CONFIGURED_MLO_LINK_MAC_ADDRESS"
@@ -510,6 +514,8 @@
       href: wdi-tlv-phy-type-list.md
     - name: "WDI_TLV_PLDR_SUPPORT"
       href: wdi-tlv-pldr-support.md
+    - name: "WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY"
+      href: wdi-tlv-pm-protocol-offload-80211rsn-rekey.md
     - name: "WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS"
       href: wdi-tlv-pm-protocol-rsn-offload-keys.md
     - name: "WDI_TLV_PMKID"
@@ -654,6 +660,8 @@
       href: oid-wdi-get-bss-entry-list.md
     - name: "OID_WDI_GET_NEXT_ACTION_FRAME_DIALOG_TOKEN"
       href: oid-wdi-get-next-action-frame-dialog-token.md
+    - name: "OID_WDI_GET_PM_PROTOCOL_OFFLOAD"
+      href: oid-wdi-get-pm-protocol-offload.md
     - name: "OID_WDI_GET_STATISTICS"
       href: oid-wdi-get-statistics.md
     - name: "OID_WDI_GET_SUPPORTED_DEVICE_SERVICES"
@@ -664,6 +672,8 @@
       href: oid-wdi-set-adapter-configuration.md
     - name: "OID_WDI_SET_ADD_CIPHER_KEYS"
       href: oid-wdi-set-add-cipher-keys.md
+    - name: "OID_WDI_SET_ADD_PM_PROTOCOL_OFFLOAD"
+      href: oid-wdi-set-add-pm-protocol-offload.md
     - name: "OID_WDI_SET_ADVERTISEMENT_INFORMATION"
       href: oid-wdi-set-advertisement-information.md
     - name: "OID_WDI_SET_ASSOCIATION_PARAMETERS"
@@ -686,6 +696,8 @@
       href: oid-wdi-set-neighbor-report-entries.md
     - name: "OID_WDI_SET_NETWORK_LIST_OFFLOAD"
       href: oid-wdi-set-network-list-offload.md
+    - name: "OID_WDI_SET_OWE_DH_IE"
+      href: oid-wdi-set-owe-dh-ie.md
     - name: "OID_WDI_SET_P2P_LISTEN_STATE"
       href: oid-wdi-set-p2p-listen-state.md
     - name: "OID_WDI_SET_P2P_START_BACKGROUND_DISCOVERY"

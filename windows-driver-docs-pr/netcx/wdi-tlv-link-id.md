@@ -1,7 +1,7 @@
 ---
 title: WDI_TLV_LINK_ID (dot11wificxtypes.hpp)
 ms.topic: reference
-description: WDI_TLV_LINK_ID is a WiFiCx TLV that contains the RSNA AKM suites that the driver supports.
+description: WDI_TLV_LINK_ID is a WiFiCx TLV that contains an AP's link ID .
 ms.date: 07/21/2023
 ---
 
@@ -9,7 +9,7 @@ ms.date: 07/21/2023
 
 [!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
-WDI_TLV_LINK_ID is a WiFiCx TLV that contains the Robust Security Network Association (RSNA) authentication and key management (AKM) suites that the driver supports.
+WDI_TLV_LINK_ID is a WiFiCx TLV that contains an AP's link ID that is used when setting or querying the link-specific keys on a multi-link connection.
 
 ## TLV Type
 
@@ -17,13 +17,13 @@ WDI_TLV_LINK_ID is a WiFiCx TLV that contains the Robust Security Network Associ
 
 ## Length
 
-The size (in bytes) of the array of [**RSNA_AKM_SUITE**](/windows-hardware/drivers/ddi/windot11/ne-windot11-rsna_akm_suite) enums. 
+The size (in bytes) of a UINT32.
 
 ## Values
 
 | Type | Description |
 |-----------------|-----------------|
-| [**RSNA_AKM_SUITE**](/windows-hardware/drivers/ddi/windot11/ne-windot11-rsna_akm_suite) | An array of RSNA AKMs. |
+| UINT32 | An ID that identifies an AP's link. |
 
 ## Requirements
 

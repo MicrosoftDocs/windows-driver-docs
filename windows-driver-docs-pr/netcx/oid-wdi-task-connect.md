@@ -20,13 +20,13 @@ OID\_WDI\_TASK\_CONNECT requests that the IHV component connects to an Access Po
 
  
 
-As part of the connect, the IHV component must synchronize with, authenticate to, and associate to the BSS. The host provides the BSS entries that the IHV component can attempt to connect to. Once the IHV component has successfully connected to one of those entries, it should complete the connect process. If it is unable to connect to any of the BSS entries, it should complete the connect process with a failure.
+As part of the connect, the IHV component must synchronize with, authenticate to, and associate to the BSS. The host provides the BSS entries that the IHV component can attempt to connect to. Once the IHV component has successfully connected to one of those entries, it should complete the connect process. If it's unable to connect to any of the BSS entries, it should complete the connect process with a failure.
 
-The IHV component does not need to perform a scan to find candidate BSS entries. It can use the list provided by the host for the connect. It can attempt to connect to each one, one after another. The host sorts the networks by RSSI, but the IHV component can use its own order for connection. If the adapter does not specify "Connect BSS Selection Override", it must only use the entries provided by the host for the connect. The host may issue an abort on an outstanding connect. On receiving the abort, the port must end the connection attempts and report a completion to the host.
+The IHV component doesn't need to perform a scan to find candidate BSS entries. It can use the list provided by the host for the connect. It can attempt to connect to each one, one after another. The host sorts the networks by RSSI, but the IHV component can use its own order for connection. If the adapter doesn't specify "Connect BSS Selection Override", it must only use the entries provided by the host for the connect. The host may issue an abort on an outstanding connect. On receiving the abort, the port must end the connection attempts and report a completion to the host.
 
 If the adapter specifies "Connect BSS Selection Override", it can perform scans on its own to find candidate BSS entries. It can connect to any BSS entry it finds as long as it meets the parameters configured by the host. It should optimize this selection to ensure that it meets any configured connection quality requirements. This could include optimizing roam scan, optimize AP selection, optimize association process, and minimize the security handshake needed. During a scan, if the device needs additional association parameters for a found BSS entry (for example, PMKID for roaming), it can send a [NDIS\_STATUS\_WDI\_INDICATION\_ASSOCIATION\_PARAMETERS\_REQUEST](ndis-status-wdi-indication-association-parameters-request.md) indication to get the parameters. When available, the host configures these parameters with [OID\_WDI\_SET\_ASSOCIATION\_PARAMETERS](oid-wdi-set-association-parameters.md).
 
-If the connect fails or is aborted, the port should not reset any settings that may have been configured outside of the connect command. It must support the host issuing a second connect call on the same port.
+If the connect fails or is aborted, the port shouldn't reset any settings that may have been configured outside of the connect command. It must support the host issuing a second connect call on the same port.
 
 The status of the connect attempt for each BSS entry must be reported by the port at the end of the association attempt. This includes the successful attempt and also any failed attempts. At any time, the port must be associated with no more than one Access Point or Wi-Fi Direct GO.
 
@@ -45,7 +45,14 @@ If **HostFIPSModeEnabled** is set to **1**, the following rules apply.
 -   The port must not negotiate TSpec and must not perform transmit MSDU aggregation.
 -   The port must ensure that the SPP A-MSDU capable bit (bit 10) of the RSN capabilities IE it transmits is set to zero. Only PP A-MSDU are supported in this mode.
 
-The connection parameters must not have **MFPEnabled** and **HostFIPSModeEnabled** both set to **1**. Management Frame Protection (802.11w) requires the port to encrypt/decrypt certain management and action frames, so it cannot be enabled for a connection using Host FIPS mode. In addition, Wake on Wireless LAN features are not applicable in Host-FIPS mode.
+The connection parameters must not have **MFPEnabled** and **HostFIPSModeEnabled** both set to **1**. Management Frame Protection (802.11w) requires the port to encrypt/decrypt certain management and action frames, so it can't be enabled for a connection using Host FIPS mode. In addition, Wake on Wireless LAN features aren't applicable in Host-FIPS mode.
+
+## WiFi 7 / MLO requirements
+
+Windows provides the **MloConnectionSupported** setting in [**WDI_TLV_CONNECTION_SETTINGS**](wdi-tlv-connection-settings.md) to indicate whether the driver can connect using MLO. When **MloConnectionSupported** is **true**, the driver can only use the AKMs specified by [**WDI_TLV_RSNA_AKM_SUITE**](wdi-tlv-rsna-akm-suite.md). When **MloConnectionSupported** is **false**, the driver should only expect to connect without the multi-link connectivity.
+
+For more information, see [WiFiCx Wi-Fi 7 feature requirements](wificx-wi-fi-7.md).
+
 
 ## Task parameters
 
@@ -53,7 +60,7 @@ The connection parameters must not have **MFPEnabled** and **HostFIPSModeEnabled
 | TLV                                                                      | Multiple TLV instances allowed | Optional | Description                                                                                                                                                                                                                                                                                                                                                                                                  |
 |--------------------------------------------------------------------------|--------------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**WDI\_TLV\_CONNECT\_PARAMETERS**](./wdi-tlv-connect-parameters.md) |                                |          | The connection parameters.                                                                                                                                                                                                                                                                                                                                                                                   |
-| [**WDI\_TLV\_CONNECT\_BSS\_ENTRY**](./wdi-tlv-connect-bss-entry.md)  | X                              |          | The preferred list of candidate connect BSS entries. The port should attempt to connect to any of these BSS entries until the list is exhausted or the connection completed successfully. The port can reprioritize the entries if needed. If the adapter has set the Connect BSS Selection Override bit, then it can pick a BSS that is not in this list as long as it follows the Allowed/Disallowed list. |
+| [**WDI\_TLV\_CONNECT\_BSS\_ENTRY**](./wdi-tlv-connect-bss-entry.md)  | X                              |          | The preferred list of candidate connect BSS entries. The port should attempt to connect to any of these BSS entries until the list is exhausted or the connection completed successfully. The port can reprioritize the entries if needed. If the adapter has set the Connect BSS Selection Override bit, then it can pick a BSS that isn't in this list as long as it follows the Allowed/Disallowed list. |
 
  
 

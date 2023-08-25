@@ -40,6 +40,7 @@ If the port being reset was operating as a STA, AP, or a Wi-Fi Direct Client or 
 |-----------------------------------------------------------------------------------|--------------------------------|----------|---------------------------------------------------|
 | [**WDI\_TLV\_DOT11\_RESET\_PARAMETERS**](./wdi-tlv-dot11-reset-parameters.md) |                                |          | Parameters for the dot11 reset.                   |
 | [**WDI\_TLV\_CONFIGURED\_MAC\_ADDRESS**](./wdi-tlv-configured-mac-address.md) |                                | X        | The MAC address that should be used for the port. |
+| [**WDI_TLV_CONFIGURED_MLO_LINK_MAC_ADDRESS**](wdi-tlv-configured-mlo-link-mac-address.md) |                                | X        | An array of Multi-Link Operation (MLO) link MAC address. |
 
  
 

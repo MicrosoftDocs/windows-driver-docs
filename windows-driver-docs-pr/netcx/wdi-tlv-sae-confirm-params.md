@@ -1,7 +1,7 @@
 ---
 title: WDI_TLV_SAE_CONFIRM_PARAMS (dot11wificxtypes.hpp)
 ms.topic: reference
-description: WDI_TLV_SAE_CONFIRM_PARAMS is a WiFiCx TLV that contains parameters for a SAE Confirm request. 
+description: WDI_TLV_SAE_CONFIRM_PARAMS is a WiFiCx TLV that contains parameters for a SAE confirm request or response. 
 ms.date: 07/19/2023
 ---
 
@@ -9,7 +9,7 @@ ms.date: 07/19/2023
 
 [!INCLUDE [WiFiCx topic note](../includes/wificx-version-warning.md)]
 
-**WDI_TLV_SAE_CONFIRM_PARAMS** is a TLV that contains parameters for a Simultaneous Authentication of Equals (SAE) Confirm request. 
+**WDI_TLV_SAE_CONFIRM_PARAMS** is a TLV that contains parameters for a Simultaneous Authentication of Equals (SAE) confirm request or confirm response.
 
 This TLV is used in the command parameters for [OID_WDI_SET_SAE_AUTH_PARAMS](oid-wdi-set-sae-auth-params.md).
 
