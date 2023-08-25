@@ -40,7 +40,7 @@ Drivers that have errors related to IRQL can cause serious problems and could ca
 
 The following code violates this rule:
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS
 DispatchRequest (
     _In_ PDEVICE_REQUEST DeviceRequest

@@ -231,7 +231,7 @@ In the instrumentation manifest, you defined the names of the event provider and
 
 2. Add the macros that register and unregister the driver as an event provider. For example, in the header file for the [Eventdrv sample](/samples/microsoft/windows-driver-samples/eventdrv/) (evntdrvEvents.h), the message compiler creates macros based upon the name of the provider. In the manifest, the [Eventdrv sample](/samples/microsoft/windows-driver-samples/eventdrv/) uses the name "Sample Driver" as the name of the provider. The message compiler combines the name of the provider with the event macro to register the provider, in this case, **EventRegisterSample\_Driver**.
 
-   ```ManagedCPlusPlus
+   ```cpp
    //  This is the generated header file envtdrvEvents.h
    //
    //  ...
@@ -246,7 +246,7 @@ In the instrumentation manifest, you defined the names of the event provider and
 
    Add the **EventRegister\<*provider*\>** macro to your [*DriverEntry*](../wdf/driverentry-for-kmdf-drivers.md) function. Add this function after the code that creates and initializes the device object. Note that you must match the call to the **EventRegister\<*provider*\>** function with a call to **EventUnregister\<*provider*\>**. You can unregister the driver in your driver's [</em>*Unload**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) routine.
 
-   ```ManagedCPlusPlus
+   ```cpp
       // DriverEntry function
       // ...
 
@@ -260,7 +260,7 @@ In the instrumentation manifest, you defined the names of the event provider and
 
    The macros to write these events are called: `EventWriteStartEvent`, `EventWriteSampleEventA`, and `EventWriteUnloadEvent`. As you can see in the definition of these macros, the macro definition automatically includes an **EventEnabled\<*event*\>** macro that checks if the event is enabled. The check eliminate the need to build the payload if the event is not enabled.
 
-   ```ManagedCPlusPlus
+   ```cpp
 
    ///
    // This is the generated header file envtdrvEvents.h
@@ -312,7 +312,7 @@ In the instrumentation manifest, you defined the names of the event provider and
 
    Add the **EventWrite\<*event*\>** macros into your source code for the events you are raising. For example, the following code snippet shows the [*DriverEntry*](../wdf/driverentry-for-kmdf-drivers.md) routine from the [Eventdrv sample](/samples/microsoft/windows-driver-samples/eventdrv/). The *DriverEntry* includes the macros to register the driver with ETW (*EventRegisterSample\_Driver*) and the macro to write the driver event to ETW (*EventWriteStartEvent*).
 
-   ```ManagedCPlusPlus
+   ```cpp
    NTSTATUS
    DriverEntry(
        IN PDRIVER_OBJECT DriverObject,
@@ -427,7 +427,7 @@ Add the all of **EventWrite\<*event*\>** macros into your source code for the ev
 
    Place this function call in your driver unload routine. No tracing calls should be made after the **EventUnregister\<*provider*\>** macro is called. Failure to unregister the event provider can cause errors when the process is unloaded because any callback functions associated with the process are no longer valid.
 
-   ```ManagedCPlusPlus
+   ```cpp
        // DriverUnload function
        // ...
        //

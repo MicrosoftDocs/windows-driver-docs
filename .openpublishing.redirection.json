@@ -9776,6 +9776,11 @@
             "source_path": "windows-driver-docs-pr/debugger/source-code.md",
             "redirect_URL": "//windows-hardware/drivers/debugger/source-path",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "windows-driver-docs-pr/devtest/about-kernel-mode-performance-counters.md",
+            "redirect_URL": "//windows-hardware/devtest/kernel-mode-performance-monitoring",
+            "redirect_document_id": false
         }
      ]
 }

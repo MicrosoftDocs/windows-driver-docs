@@ -29,7 +29,7 @@ A caller executing at DISPATCH\_LEVEL must specify a NonPaged*Xxx* value for *Po
 
 In the following example, the [**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) routine is called after the [**KeAcquireSpinLock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keacquirespinlock) routine, which sets IRQL to DISPATCH\_LEVEL. The **ExAllocatePoolWithTag** routine is called with **PagedPool**, which violates the rule.
 
-```ManagedCPlusPlus
+```cpp
 NTSTATUS
 DispatchRequest (
     __in PDEVICE_REQUEST DeviceRequest

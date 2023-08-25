@@ -15,7 +15,7 @@ C/C++ allows the compiler to generate code to evaluate actual parameters in any 
 
 A common mistake is with the use of smart pointers where the address-of operator **&** has side effects, in calls like this:
 
-```ManagedCPlusPlus
+```cpp
 sp->Foo(&sp);
 ```
 
@@ -26,13 +26,13 @@ The calls to member access operator **-&gt;** and operator **&** might happen in
 
 The code following example generates this warning.
 
-```ManagedCPlusPlus
+```cpp
 sp->Foo(&sp)
 ```
 
 The following code example avoids this warning.
 
-```ManagedCPlusPlus
+```cpp
 SmartPtr spTemp;
 sp->Foo(&spTemp);
 sp = spTemp;

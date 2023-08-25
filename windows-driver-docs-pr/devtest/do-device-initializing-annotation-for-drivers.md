@@ -1,17 +1,16 @@
 ---
-title: DO_DEVICE_INITIALIZING Annotation for drivers
+title: DO_DEVICE_INITIALIZING annotation for drivers
 description: Use to specify whether the annotated function is expected to clear the DO_DEVICE_INITIALIZING bit in the Flags field of the device object.
-ms.date: 04/20/2017
+ms.date: 08/25/2023
 ---
 
-# DO\_DEVICE\_INITIALIZING Annotation for drivers
-
+# DO\_DEVICE\_INITIALIZING annotation for drivers
 
 Use the \_Kernel\_clear\_do\_init\_ annotation to specify whether the annotated function is expected to clear the DO\_DEVICE\_INITIALIZING bit in the Flags field of the device object.
 
 This annotation has the following syntax:
 
-```
+```cpp
 _Kernel_clear_do_init_(yes|no)
 ```
 
@@ -19,7 +18,7 @@ Calling a function that is annotated with \_Kernel\_clear\_do\_init\_(yes) exemp
 
 The annotation should almost always be used in a conditional context when the function returns success, unless the annotation is applied to a function type definition. For example, in the following function type definition for the DRIVER\_ADD\_DEVICE function class, the annotations specify that the function cannot raise the IRQL and that the function is expected to clear the DO\_DEVICE\_INITIALIZING bit.
 
-```
+```cpp
 typedef
 _IRQL_always_function_max_(PASSIVE_LEVEL)
 _IRQL_requires_same_
@@ -35,15 +34,4 @@ typedef DRIVER_ADD_DEVICE *PDRIVER_ADD_DEVICE;
 
 ## <span id="related_topics"></span>Related topics
 
-
 [SAL 2.0 Annotations for Windows Drivers](sal-2-annotations-for-windows-drivers.md)
-
-
-
-
-
-
-
-
-
-
