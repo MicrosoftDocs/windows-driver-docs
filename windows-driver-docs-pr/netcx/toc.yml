@@ -516,6 +516,12 @@
       href: wdi-tlv-pldr-support.md
     - name: "WDI_TLV_PM_PROTOCOL_OFFLOAD_80211RSN_REKEY"
       href: wdi-tlv-pm-protocol-offload-80211rsn-rekey.md
+    - name: "WDI_TLV_PM_PROTOCOL_OFFLOAD_GET"
+      href: wdi-tlv-pm-protocol-offload-get.md
+    - name: "WDI_TLV_PM_PROTOCOL_OFFLOAD_IPv4ARP"
+      href: wdi-tlv-pm-protocol-offload-ipv4arp.md
+    - name: "WDI_TLV_PM_PROTOCOL_OFFLOAD_IPv6NS"
+      href: wdi-tlv-pm-protocol-offload-ipv6ns.md
     - name: "WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS"
       href: wdi-tlv-pm-protocol-rsn-offload-keys.md
     - name: "WDI_TLV_PMKID"
@@ -710,6 +716,8 @@
       href: oid-wdi-set-p2p-wps-enabled.md
     - name: "OID_WDI_SET_PRIVACY_EXEMPTION_LIST"
       href: oid-wdi-set-privacy-exemption-list.md
+    - name: "OID_WDI_SET_REMOVE_PM_PROTOCOL_OFFLOAD"
+      href: oid-wdi-set-remove-pm-protocol-offload.md
     - name: "OID_WDI_SET_SAE_AUTH_PARAMS"
       href: oid-wdi-set-sae-auth-params.md
   - name: "WiFiCx unsolicited status indications"
