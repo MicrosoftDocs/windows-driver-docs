@@ -814,6 +814,8 @@
       href: wificx-extended-channel-switch-announcement-ecsa.md
     - name: "WiFiCx IHV extensible types"
       href: wificx-ihv-extensible-types.md
-  - name: "Dual STA connectivity"
+  - name: "Dual STA connectivity"WiFiCx Wi-Fi 7 feature requirements
     href: dual-sta-connectivity.md
+  - name: "WiFiCx Wi-Fi 7 feature requirements"
+    href: wificx-wi-fi-7.md
 
