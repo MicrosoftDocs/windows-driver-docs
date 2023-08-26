@@ -522,6 +522,8 @@
       href: wdi-tlv-pm-protocol-offload-ipv4arp.md
     - name: "WDI_TLV_PM_PROTOCOL_OFFLOAD_IPv6NS"
       href: wdi-tlv-pm-protocol-offload-ipv6ns.md
+    - name: "WDI_TLV_PM_PROTOCOL_OFFLOAD_REMOVE"
+      href: wdi-tlv-pm-protocol-offload-remove.md
     - name: "WDI_TLV_PM_PROTOCOL_RSN_OFFLOAD_KEYS"
       href: wdi-tlv-pm-protocol-rsn-offload-keys.md
     - name: "WDI_TLV_PMKID"
