@@ -1,12 +1,12 @@
 ---
 title: ACPI system description tables
-description: Implementation of the Advanced Configuration and Power Interface (ACPI) Hardware Specification is not required on SoC-based platforms, but much of the ACPI Software Specification can be required.
+description: Implementation of the Advanced Configuration and Power Interface (ACPI) Hardware Specification isn't required on SoC-based platforms, but much of the ACPI Software Specification can be required.
 ms.date: 03/22/2023
 ---
 
 # ACPI system description tables
 
-Implementation of the Advanced Configuration and Power Interface (ACPI) Hardware Specification is not required on SoC-based platforms, but much of the ACPI Software Specification is (or can be) required. ACPI defines a generic, extensible table-passing mechanism, plus specific tables for describing the platform to the operating system.
+Implementation of the Advanced Configuration and Power Interface (ACPI) Hardware Specification isn't required on SoC-based platforms, but much of the ACPI Software Specification is (or can be) required. ACPI defines a generic, extensible table-passing mechanism, plus specific tables for describing the platform to the operating system.
 
 Table structures and headers, including ID and checksum fields, are defined in the [ACPI 5.0 specification](https://uefi.org/specifications). Windows utilizes this table-passing mechanism, in addition to the specific tables that are described in this article.
 
@@ -14,11 +14,11 @@ The idea behind these tables is to enable generic software to support standard i
 
 ## Root System Description Pointer (RSDP)
 
-Windows depends on UEFI firmware to boot up the hardware platform. Hence, Windows will use the EFI system table to locate the RSDP, as described in section 5.2.5.2, "Finding the RSDP on UEFI Enabled Systems", of the [ACPI 5.0 specification](https://uefi.org/specifications). The platform firmware fills in the address of either the RSDT or XSDT in the RSDP. (If both table addresses are provided, Windows will prefer the XSDT.)
+Windows depends on UEFI firmware to boot up the hardware platform. Hence, Windows will use the EFI system table to locate the RSDP, as described in section 5.2.5.2, "Finding the RSDP on UEFI Enabled Systems", of the [ACPI 5.0 specification](https://uefi.org/specifications). The platform firmware fills in the address of either the RSDT or XSDT in the RSDP. (If both table addresses are provided, Windows prefers the XSDT.)
 
 ## Root System Description Table (RSDT)
 
-The RSDT (or XSDT) includes pointers to any other system description tables provided on the platform. Specifically, this table contains pointers to the following:
+The RSDT (or XSDT) includes pointers to any other system description tables provided on the platform. Specifically, this table contains pointers to the following tables:
 
 - The Fixed ACPI Hardware Table (FADT)
 
@@ -43,13 +43,13 @@ The Fixed ACPI Hardware Table (FADT) contains important information about the va
 - The Flags field within the FADT (offset 112) has two new flags:
 
     HARDWARE_REDUCED_ACPI
-    Bit offset 20. Indicates that ACPI hardware is not available on this platform. This flag must be set if the ACPI Fixed Hardware Programming Model is not implemented.
+    Bit offset 20. Indicates that ACPI hardware isn't available on this platform. This flag must be set if the ACPI Fixed Hardware Programming Model isn't implemented.
 
     LOW_POWER_S0_IDLE_CAPABLE
-    Bit offset 21. Indicates that the platform supports low-power idle states within the ACPI S0 system power state that are more energy efficient than any Sx sleep state. If this flag is set, Windows will not try to sleep and resume, but will instead use platform idle states and connected standby.
+    Bit offset 21. Indicates that the platform supports low-power idle states within the ACPI S0 system power state that are more energy efficient than any Sx sleep state. If this flag is set, Windows won't try to sleep and resume, but will instead use platform idle states and connected standby.
 
 - The FADT Preferred_PM_Profile field (byte offset 45) has a new role entry, "Tablet". This role influences power management policy for the display and input, and affects the display of on-screen keyboards.
-- The "IA-PC Boot Architecture Flags" field (offset 109) has a new "CMOS RTC Not Present" flag (bit offset 5) to indicate that the PC's CMOS RTC is either not implemented, or does not exist at the legacy addresses. If this flag is set, the platform must implement the ACPI Time and Alarm Control Method device. For more information, see the **Control Method Time and Alarm device** section in the [ACPI defined devices](acpi-defined-devices.md) topic.
+- The "IA-PC Boot Architecture Flags" field (offset 109) has a new "CMOS RTC Not Present" flag (bit offset 5) to indicate that the PC's CMOS RTC is either not implemented, or doesn't exist at the legacy addresses. If this flag is set, the platform must implement the ACPI Time and Alarm Control Method device. For more information, see the **Control Method Time and Alarm device** section in the [ACPI defined devices](acpi-defined-devices.md) article.
 - New fields are added to support traditional PC sleep/resume on hardware-reduced ACPI platforms. These fields are ignored by Windows, but must be present in the table for compliance.
 - If the HARDWARE_REDUCED_ACPI flag is set, all fields relating to the ACPI Hardware Specification are ignored by the operating system.
 
@@ -63,19 +63,17 @@ The interrupt controller descriptor structures are listed immediately after the 
 
 ## Generic Timer Description Table (GTDT)
 
-As with the interrupt controller, there is a standard timer description table in ACPI. For Arm systems that utilize the GIT timer, ACPI's GTDT can be used to leverage the built-in support for the GIT in Windows.
+As with the interrupt controller, there's a standard timer description table in ACPI. For Arm systems that utilize the GIT timer, ACPI's GTDT can be used to leverage the built-in support for the GIT in Windows.
 
 ## Core System Resources Table (CSRT)
 
-Core System Resources (CSRs) are shared hardware functions such as interrupt controllers, timers and DMA controllers to which the operating system must serialize access. Where industry standards exist for features such as timers and interrupt controllers (on both x86 and Arm architectures), Windows builds in support for these features based on the standard tables described in ACPI (for example, MADT and GTDT). However, until the industry converges on DMA controller interface standards, there is a need to support some non-standard devices in the operating system.
+Core System Resources (CSRs) are shared hardware functions such as interrupt controllers, timers and DMA controllers to which the operating system must serialize access. Where industry standards exist for features such as timers and interrupt controllers (on both x86 and Arm architectures), Windows builds in support for these features based on the standard tables described in ACPI (for example, MADT and GTDT). However, until the industry converges on DMA controller interface standards, there's a need to support some non-standard devices in the operating system.
 
 Windows supports the concept of HAL extensions to address this issue. HAL extensions are SoC-specific modules, implemented as DLLs, that adapt the Windows HAL to a specific hardware interface of a specific class of CSR required by Windows. In order to identify and load these non-standard CSR modules, Microsoft has defined a new ACPI table. This table, which has a reserved signature of "CSRT" in the ACPI specification, must be included in the RSDT if non-standard CSRs are used on the platform.
 
-The CSRT describes resource groups of CSRs, where each resource group identifies hardware of a particular type. Windows uses the identifier provided for the resource group to find and load the required HAL extension for this group. Resource groups within the CSRT might also contain individual resource descriptors, depending on the CSR type and the needs of the HAL extension. The format and use of these resource descriptors is defined by the HAL extension writer, who can make the extension much more portable and thereby support a variety of different SoC platforms simply by changing the resource descriptors contained in the CSRT.
+The CSRT describes resource groups of CSRs, where each resource group identifies hardware of a particular type. Windows uses the identifier provided for the resource group to find and load the required HAL extension for this group. Resource groups within the CSRT might also contain individual resource descriptors, depending on the CSR type and the needs of the HAL extension. The format and use of these resource descriptors is defined by the HAL extension writer, who can make the extension much more portable and thereby support various different SoC platforms simply by changing the resource descriptors contained in the CSRT.
 
-To support maintenance of HAL extensions, and to manage the system resources used by these extensions, each resource group described in the CSRT must also be represented as a device within the platform's ACPI namespace. For more information, see the following "Differentiated System Description Table (DSDT)" section. The device identifiers used in the resource group header must match the identifiers used in the device's namespace node. For more information, see the **Device Identification in ACPI** section in the [Device management namespace objects](device-management-namespace-objects.md) topic. The existence of these resource group namespace devices allows the HAL extension to be serviced by the Windows Update Service.
-
-For more information, see the [Core System Resources Table (CSRT) specification](https://acpica.org/related-documents).
+To support maintenance of HAL extensions, and to manage the system resources used by these extensions, each resource group described in the CSRT must also be represented as a device within the platform's ACPI namespace. For more information, see the following "Differentiated System Description Table (DSDT)" section. The device identifiers used in the resource group header must match the identifiers used in the device's namespace node. For more information, see the **Device Identification in ACPI** section in the [Device management namespace objects](device-management-namespace-objects.md) article. The existence of these resource group namespace devices allows the HAL extension to be serviced by the Windows Update Service.
 
 ## Debug Port Table 2 (DBG2)
 
