@@ -1,20 +1,25 @@
 ---
-title: Other Policies
-description: Other policies for publishing drivers
+title: Deploying Audio Processing Objects
+description: Instructions for deploying Audio Processing Object drivers to Windows 10 and Windows 11
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 08/28/2023
 ---
 
-# Overview of Driver Policies
-Driver Flighting and Gradual Rollout works to ensure that drivers being published are high quality and assists in limiting the chance a driver will negatively impact Windows customers.  To accomplish this, there are a set of measures that are used to ensure quality. There are also policies that are put in place that ensure success in the ecosystem.
+# Deploying Audio Processing Objects
 
-Some existing policies that lead to the driver submission being rejected include:
-* Drivers targeting previous versions of Windows cannot be included in the same submission with drivers for Windows 10.
-* Some device class have specific CHID targeting requirements. For example Firmware and Display classes forbid the use of CHID.
-* OEMs can only target hardware IDs that target their own systems.
+The Windows audio engine supports third-party user-mode plugins for processing audio.
+These are called "audio processing objects." The correct .inf class to use for drivers that install audio processing objects is different depending on the version of Windows.
 
-## Other Policies
-* [Deploying Audio Processing Objects](./deploying-audio-processing-objects.md)
-* [Driver Release Cadence](./driver-release-cadence.md)
-* [Establish HWID or CHID targeting relationship](./establish-relationship-for-chid-targeting.md)
-* [Extension INF Targeting Rules](./extension-inf-targeting-rules.md)
+## Deploying to Windows 11 and later
+
+For Windows 11 21H2 (Sun Valley, build 22000) and later, all audio processing objects must be marked as `Class=AudioProcessingObject`. Shipping labels which deploy audio processing objects to Windows 11 21H2 and later with an incorrect .inf class are subject to rejection.
+
+## Deploying to Windows 10
+
+For Windows 10, all audio processing objects must be marked as `Class=SoftwareComponent`. Shipping labels which deploy audio processing objects to Windows 10 with an incorrect .inf class are subject to rejection.
+
+Because users have the option to upgrade their Windows 10 machines to Windows 11, any shipping label that deploys an audio processing object to Windows 10 machines must have an OS ceiling to prevent it from being installed on Windows 11 machines. It must also have a corresponding shipping label for Windows 11 machines with an OS floor of Windows 11 21H2, which deploys a `Class=AudioProcessingObject` driver package to the same HWIDs and CHIDs.
+
+## What to do if your shipping label is rejected
+
+If your shipping label was rejected for one of the above reasons, please contact to the Windows audio team at audio-partners@microsoft.com.
