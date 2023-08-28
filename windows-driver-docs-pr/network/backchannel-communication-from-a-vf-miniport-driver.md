@@ -21,7 +21,7 @@ VF miniport drivers initiate the read or write operation on a specified VF confi
 
 -   [**NdisMReadConfigBlock**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismreadconfigblock), which reads data from a specified VF configuration block. When the VF miniport driver calls this function, it specifies the block identifier and length of the data to be read. The driver also passes a pointer to the buffer that will contain the requested data.
 
--   [**NdisMWriteConfigBlock**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismreadconfigblock), which writes data to a specified VF configuration block. When the VF miniport driver calls this function, it specifies the block identifier and length of the data to be written. The driver also passes a pointer to the buffer from which the data is to be written.
+-   [**NdisMWriteConfigBlock**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismwriteconfigblock), which writes data to a specified VF configuration block. When the VF miniport driver calls this function, it specifies the block identifier and length of the data to be written. The driver also passes a pointer to the buffer from which the data is to be written.
 
 The PF miniport driver manages access to the specified VF configuration block in the following ways:
 
@@ -29,9 +29,9 @@ The PF miniport driver manages access to the specified VF configuration block in
 
     The PF miniport driver performs the read operation and returns the requested data when the driver completes the OID request. After the OID request is completed, NDIS returns from the call to [**NdisMReadConfigBlock**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismreadconfigblock).
 
--   When the VF miniport driver calls [**NdisMWriteConfigBlock**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismreadconfigblock), NDIS issues an OID method request of [OID\_SRIOV\_WRITE\_VF\_CONFIG\_BLOCK](./oid-sriov-write-vf-config-block.md) to the PF miniport driver. This OID request contains the parameter data that was passed by the VF miniport driver in the function call.
+-   When the VF miniport driver calls [**NdisMWriteConfigBlock**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismwriteconfigblock), NDIS issues an OID method request of [OID\_SRIOV\_WRITE\_VF\_CONFIG\_BLOCK](./oid-sriov-write-vf-config-block.md) to the PF miniport driver. This OID request contains the parameter data that was passed by the VF miniport driver in the function call.
 
-    The PF miniport driver performs the write operation and completes the OID request. After the OID request is completed, NDIS returns from the call to [**NdisMWriteConfigBlock**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismreadconfigblock).
+    The PF miniport driver performs the write operation and completes the OID request. After the OID request is completed, NDIS returns from the call to [**NdisMWriteConfigBlock**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismwriteconfigblock).
 
 The following figure shows the process involved in reading and writing VF configuration blocks over the SR-IOV backchannel interface.
 
