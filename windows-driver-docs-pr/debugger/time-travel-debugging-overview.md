@@ -26,7 +26,7 @@ TTD includes a set of debugger data model objects to allow you to query the trac
 
 ### Requirements
 
-Time Travel Debugging is available on WinDbg version 1.0.13.0 and newer.
+Time Travel Debugging is integrated with [WinDbg](https://aka.ms/windbg), providing seamless recording and replay experience.
 
 To use TTD, you need to run the debugger elevated. Install WinDbg using an account that has administrator privileges and use that account when recording in the debugger. In order to run the debugger elevated, select and hold (or right-click) the WinDbg icon in the Start menu, and then select More > Run as Administrator.
 
