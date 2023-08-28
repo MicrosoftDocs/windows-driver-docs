@@ -22,4 +22,4 @@ Because users have the option to upgrade their Windows 10 machines to Windows 11
 
 ## What to do if your shipping label is rejected
 
-If your shipping label was rejected for one of the above reasons, please contact to the Windows audio team at audio-partners@microsoft.com.
+If your shipping label was rejected for one of the above reasons, please contact the Windows audio team at audio-partners@microsoft.com.
